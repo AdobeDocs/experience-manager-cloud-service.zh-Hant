@@ -1,8 +1,8 @@
 ---
-sub-product: Implementing AEM as a Cloud Service
-user-guide-title: Implementing AEM as a Cloud Service
+sub-product: Implementing for AEM as a Cloud Service
+user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 0a12db0d58203c8313638106c0e2dc658a2607d4
 
 ---
 
@@ -14,8 +14,8 @@ source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
    + [管理環境](cloud-manager/manage-environments.md)
    + [配置CI/CD管道](cloud-manager/configure-pipeline.md)
    + [部署程式碼](cloud-manager/deploy-code.md)
-   + [瞭解測試結果](cloud-manager/understand-test-results.md)
-   + [瞭解自訂代碼品質規則](cloud-manager/custom-code-quality-rules.md)
+   + [Understanding your Test Results](cloud-manager/understand-test-results.md)
+   + [Understanding Custom Code Quality Rules](cloud-manager/custom-code-quality-rules.md)
    + [訪問和管理日誌](cloud-manager/manage-logs.md)
    + [瞭解通知](cloud-manager/notifications.md)
 + 管理您的程式碼 {#managing-code}
