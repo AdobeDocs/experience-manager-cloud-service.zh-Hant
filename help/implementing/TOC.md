@@ -2,7 +2,7 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 0a12db0d58203c8313638106c0e2dc658a2607d4
+source-git-commit: 44df22ace403c962ffbabac5eec9302d98fc94f2
 
 ---
 
@@ -14,8 +14,8 @@ source-git-commit: 0a12db0d58203c8313638106c0e2dc658a2607d4
    + [管理環境](cloud-manager/manage-environments.md)
    + [配置CI/CD管道](cloud-manager/configure-pipeline.md)
    + [部署程式碼](cloud-manager/deploy-code.md)
-   + [Understanding your Test Results](cloud-manager/understand-test-results.md)
-   + [Understanding Custom Code Quality Rules](cloud-manager/custom-code-quality-rules.md)
+   + [瞭解測試結果](cloud-manager/understand-test-results.md)
+   + [瞭解自訂代碼品質規則](cloud-manager/custom-code-quality-rules.md)
    + [訪問和管理日誌](cloud-manager/manage-logs.md)
    + [瞭解通知](cloud-manager/notifications.md)
 + 管理您的程式碼 {#managing-code}
@@ -25,6 +25,7 @@ source-git-commit: 0a12db0d58203c8313638106c0e2dc658a2607d4
 + 針對AEM的雲端服務開發 {#developing}
    + [AEM Project Package Structure](developing/introduction/aem-project-content-package-structure.md)
    + [開發儲存庫結構包](developing/introduction/repository-structure-package.md)
+   + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM雲端服務開發准則](developing/introduction/development-guidelines.md)
    + [開始開發AEM網站- WKND教學課程](developing/introduction/develop-wknd-tutorial.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
