@@ -2,7 +2,7 @@
 title: IMS支援Adobe Experience Manager雲端服務
 description: 'IMS支援Adobe Experience Manager雲端服務 '
 translation-type: tm+mt
-source-git-commit: 7ece752a5f59966e0c6be638c37bcaaf238b629a
+source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
 
 ---
 
@@ -26,7 +26,7 @@ AEM做為雲端服務，僅針對作者、管理員和開發人員使用者提�
 
 ## 建築 {#architecture}
 
-IMS驗證可在AEM和Adobe IMS端點之間使用OAuth通訊協定運作。 當使用者新增至IMS並擁有Adobe Identity後，他們就可以使用IMS憑證登入AEM Managed services例項。
+IMS驗證可在AEM和Adobe IMS端點之間使用OAuth通訊協定運作。 當使用者新增至IMS並擁有Adobe Identity後，他們就可以使用IMS憑證登入AEM作者服務。
 
 使用者登入流程如下所示，使用者將被重新導向至IMS，並可選擇性地重新導向至SSO的客戶IDP，然後重新導向回AEM。
 
