@@ -2,7 +2,7 @@
 title: Adobe Experience manager雲端服務的不同與新功能
 description: '不同與新功能- Adobe Experience Manager(AEM)雲端服務。 '
 translation-type: tm+mt
-source-git-commit: b9a32b3ac4c296f4bb02e9a590c1b3e22d53f562
+source-git-commit: 38503961d0d7437511533d122ac1f4e7c8f9f042
 
 ---
 
@@ -136,7 +136,7 @@ Cloud Manager是：
 
 具體而言，可從Cloud manager建立的AEM程式數目和類型可衍生為：
 
-* 根據客戶授權合約， [Shankari —— 我們無法提及點數]
+* 從客戶授權合約，
 
 * 當AEM作為雲端服務用於實作或訓練時，從內部導向的演員傳授意見，
 
