@@ -2,7 +2,7 @@
 title: Adobe Experience manager雲端服務的不同與新功能
 description: '不同與新功能- Adobe Experience Manager(AEM)雲端服務。 '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: 1548efb4c63c3c5dbd47b1b92a9e8bb998c42267
 
 ---
 
@@ -118,27 +118,10 @@ Adobe會主動將服務的所有營運執行個體更新為最新版本的AEM程
 
 >[!NOTE]
 >
->這是使用 [Cloud Manager實現的](#cloud-manager)。
+>如需詳細資訊，請參閱 [部署架構](/help/core-concepts/architecture.md#deployment-architecture)。
 
 ## Cloud Manager {#cloud-manager}
 
->[!NOTE]
->
->如需詳細資訊，請參閱 [部署架構](/help/core-concepts/architecture.md#deployment-architecture)。
-
-### 先前版本 {#previous-versions-cloud-manager}
-
-Cloud Manager曾用作AEM的Managed services例項的部署工具。
-
-AMS版與雲端服務版Cloud manager的主要差異在於，當建立租用戶時，會根據客戶購買的SKU填入點數。
-
->[!NOTE]
->雖然從營運角度來說很重要，但 *點數* (credits)的概念並不會直接出現在Cloud Manager UI。
-
-建立常規程式不會衝減任何信用，但必須存在核心信用才能建立一個信用。
-要詳細瞭解如何建立不同程式，請參閱 [建立程式](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)。
-
-### AEM As a Cloud Service {#aem-as-a-cloud-service-cloud-manager}
 
 Adobe Cloud manager是AEM雲端服務持續升級方法的一環，因為它可控制您例項的所有更新——這是必備的。
 
@@ -243,7 +226,7 @@ Cloud manager已發展為自助服務入口網站，可在其中建立並設定A
 * 應用程式碼和配置必須儲存在關聯的Cloud manager程式的Git代碼儲存庫中。
 * 應用程式碼和設定必須與最新版的基準AEM影像相容（可能每天都會變更）。
    * 客戶應用程式必須使用與Cloud manager環境關聯的Cloud manager管道構建和部署。
-* 客戶應用程式必須傳遞管道中強制執行的所有程式碼品質、安全性和效能閘道。
+* 客戶應用程式必須傳遞管道中強制執行的所有程式碼品質、安全性和效能門檻。
 * 為客戶應用程式構建的映像必須由Cloud manager管道部署。
 
 <!-- duration of what? -->
