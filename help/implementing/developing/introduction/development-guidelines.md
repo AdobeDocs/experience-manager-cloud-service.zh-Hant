@@ -2,7 +2,7 @@
 title: AEM雲端服務開發准則
 description: '待完成 '
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 13c0a670330532f574c2b38823b8a924c609e8e4
 
 ---
 
@@ -58,7 +58,7 @@ Adobe建議使用提供的 [Apache httpComponents Client 4.x程式庫來建立HT
 
 Developer console中提供一組工具，可讓您將AEM除錯為Cloud Service開發人員環境，以用於開發、階段和生產環境。 可依下列方式調整作者或發佈服務URL來判斷URL:
 
-`https://dev-console>-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 作為捷徑，可使用下列Cloud Manager CLI命令，根據下述環境參數啟動開發人員主控台：
 
