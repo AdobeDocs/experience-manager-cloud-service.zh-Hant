@@ -2,7 +2,7 @@
 title: Adobe Experience Manager雲端服務的運作與維護
 description: Adobe Experience Manager做為雲端服務運作和維護自助資源與檔案連結
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 
 ---
 
@@ -16,7 +16,6 @@ source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
 * [內容複製](replication.md)
 * [維護任務](maintenance.md)
 * [備份和恢復](backup.md)
-* [索引](indexing.md)
 
 ## Experience Manager雲端服務指南 {#aem-guides}
 
