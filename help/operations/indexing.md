@@ -1,13 +1,13 @@
 ---
-title: 索引
-description: '索引 '
+title: 內容搜尋與索引
+description: '內容搜尋與索引 '
 translation-type: tm+mt
-source-git-commit: 83d2abd5b75e644be97de1d5420e7bca6b13e0d9
+source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ---
 
 
-# 索引 {#indexing}
+# 內容搜尋與索引 {#indexing}
 
 ## AEM As a Cloud Service的變更 {#changes-in-aem-as-a-cloud-service}
 
