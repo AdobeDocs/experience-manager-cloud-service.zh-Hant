@@ -2,7 +2,7 @@
 title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -88,7 +88,7 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
    此外，還可以從Pipeline Options中設定部署觸發器和重要故障行為。
 
-   ![](assets/set-up-pipeline7.png)
+   ![](assets/non-prod-pipe1.png)
 
 1. 按一 **下「儲存** 」(Save)，主畫面上的資訊卡上會顯示管線，並有三個動作，如下所示：
 
@@ -97,8 +97,6 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
    * **編輯** -允許編輯管線設定
    * **Build** —— 導航到執行頁，可從中執行管線
    * **管理Git** —— 允許用戶獲取訪問Cloud Manager Git儲存庫所需的資訊
-
-
 
 ## 後續步驟 {#the-next-steps}
 
