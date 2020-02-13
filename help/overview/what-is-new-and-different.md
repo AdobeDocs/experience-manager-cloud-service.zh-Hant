@@ -2,7 +2,7 @@
 title: Adobe Experience manager雲端服務的不同與新功能
 description: '不同與新功能- Adobe Experience Manager(AEM)雲端服務。 '
 translation-type: tm+mt
-source-git-commit: 78c48e3a669a3142661436f8b996dcbc5c9730d6
+source-git-commit: b8eed5bd68d961a95d0ed15a4e88cee327a82594
 
 ---
 
@@ -37,8 +37,6 @@ source-git-commit: 78c48e3a669a3142661436f8b996dcbc5c9730d6
 >[!NOTE]
 >
 >如需內部部署和受管理服務版本的詳細資訊，請參閱 [AEM 6.5的檔案集](https://helpx.adobe.com/support/experience-manager/6-5.html)。
-
-<!-- * [Miscellaneous](#miscellaneous) -->
 
 ## 建築 {#architecture}
 
@@ -88,11 +86,9 @@ AEM即雲端服務現已具備：
 
 ## 升級 {#upgrades}
 
-<!--
 >[!NOTE]
 >
->For further details see the [Deploying Introduction](/help/sites/deploying/introduction.md).
--->
+>有關詳細資訊，請參 [閱部署簡介](/help/implementing/deploying/overview.md)。
 
 <!--
 ### Previous Versions {#previous-versions-upgrades}
@@ -166,11 +162,9 @@ Cloud manager已發展為自助服務入口網站，可在其中建立並設定A
 
 ## 入門 {#onboarding}
 
-<!--
 >[!NOTE]
 >
->For further details see [Onboarding - An Overview](/help/onboarding/overview.md).
--->
+>如需詳細資訊，請參 [閱入門](/help/onboarding/home.md)。
 
 <!--
 ### Previous Versions {#previous-versions-onboarding}
@@ -208,13 +202,7 @@ Starting and managing an AEM project is significantly easier when using AEM as a
 
 >[!NOTE]
 >
->如需詳細資訊，請從開發指 [南檔案開始](/help/implementing/developing/introduction/development-guidelines.md) 。
-
-<!--
->[!NOTE]
->
->For further details start with [The Developing Experience](/help/sites/developing/introduction/developer-experience.md, [Developing - The Basics](/help/sites/developing/introduction/the-basics.md) and [Developing Best Practices](/help/sites/best-practices/developing.md).
--->
+>如需詳細資訊，您可從開 [發方針](/help/implementing/developing/introduction/development-guidelines.md) - WKND [教學課程開始](/help/implementing/developing/introduction/develop-wknd-tutorial.md)。
 
 <!--
 ### Previous Versions {#previous-versions-developing}
@@ -303,11 +291,9 @@ AEM雲端服務的運作也受到新的監控、報告和警報基礎架構的�
 
 ## 身分識別管理 {#identity-management}
 
-<!--
 >[!NOTE]
 >
->For further details see [Security - Single Sign-On](/help/sites/security/single-sign-on.md).
--->
+>如需詳細資訊，請 [參閱安全性- IMS支援](/help/security/ims-support.md)。
 
 <!--
 ### Previous Versions {#previous-versions-identity-management}
@@ -336,11 +322,9 @@ AEM雲端服務的重大變更，是完全整合使用Adobe ID來存取作者層
 
 ## 編寫使用者介面 {#authoring-user-interface}
 
-<!--
 >[!NOTE]
 >
->For further details, the [Basic Handling](/help/sites/authoring/getting-started/basic-handling.md) and [Best Practices](/help/sites/best-practices/authoring.md) are good starting points.
--->
+>有關更多細節，「基 [本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) 」是一個很好的起點。
 
 <!--
 ### Previous Versions {#previous-versions-authoring}
