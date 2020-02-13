@@ -2,7 +2,7 @@
 title: 版本2020.2.0的發行說明
 description: 版本2020.2.0的發行說明
 translation-type: tm+mt
-source-git-commit: 157809fb4aacf45358db6412dea04398a7f12495
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -11,9 +11,9 @@ source-git-commit: 157809fb4aacf45358db6412dea04398a7f12495
 
 以下章節概述Experience manager雲端服務2020.2.0的一般發行說明。
 
-發行日期為2020年2月13日。
-
 ## Cloud Manager {#cloud-manager}
+
+Cloud Manager 2020.2.0版的發行日期為2020年2月13日。
 
 請依照本節瞭解Cloud Manager 2020.2.0版的新增功能和更新。
 
