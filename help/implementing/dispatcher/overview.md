@@ -2,7 +2,7 @@
 title: Dispatcher in the Cloud
 description: 'Dispatcher in the Cloud '
 translation-type: tm+mt
-source-git-commit: b7f3122db5b55d515965b638c2b4aa4bc2a67fe6
+source-git-commit: 2ab8a4fb492b85c1a9b42442d868cdbc329756cf
 
 ---
 
@@ -806,9 +806,9 @@ AEM提供三個選項：
 AEM作為雲端服務會在服務層級運作，而非個別節點層級運作，因此 [Dispatcher Help](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) documentation中的失效指示不再正確。
 而應使用複製刷新代理。這可以使用複製API完成。 此處提供複製API文 [檔](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) ，有關刷新快取的示例，請參見 [API示例頁](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) ，具體是 `CustomStep` 向所有可用代理髮出類型為ACTIVATE的複製操作的示例。 刷新代理端點不可配置，但已預先配置為指向與運行刷新代理的發佈服務匹配的調度程式。 刷新代理通常可由OSGi事件或工作流觸發。
 
-下圖說明了這一點。
+<!--The diagram below illustrates this.
 
-![](assets/cdn.png "CDNCDN")
+![CDN](assets/cdn.png "CDN")-->
 
 如果擔心調度程式快取未清除，請與客戶支援聯繫，如有必要，客戶支援可以刷新調度程式快取。
 
@@ -818,7 +818,7 @@ Adobe管理的CDN會遵守TTL，因此不需要將它清除。 如果懷疑有�
 
 和舊版AEM一樣，發佈或取消發佈頁面會清除分派程式快取中的內容。 如果懷疑發生快取問題，客戶應重新發佈相關頁面。
 
-當發佈實例從作者處收到頁面或資產的新版本時，它使用刷新代理使其調度程式上的適當路徑失效。 更新的路徑將連同其父代一起從調度器快取中刪除，最高級別為(可以使用statfiles級別配置 [此路徑](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
+當發佈實例從作者處收到頁面或資產的新版本時，它使用刷新代理使其調度程式上的適當路徑失效。 更新的路徑將連同其父代一起從調度器快取中刪除，最高可達一個級別(您可以使用statfiles級別 [配置此路徑](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
 
 ### 內容新鮮感與版本一致性 {#content-consistency}
 
