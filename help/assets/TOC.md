@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 2b53420aeb1358f8475902648b1a49a4c5bdd207
 
 ---
 
@@ -47,6 +47,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
    + [搜尋Facet](search-facets.md)
    + [擴充資產編輯器](extend-asset-editor.md)
    + [資產HTTP API](mac-api-assets.md)
+   + [連線資產](use-assets-across-connected-assets-instances.md)
    + [資產報表](asset-reports.md)
    + [階層式中繼資料](cascading-metadata.md)
    + [XMP中繼資料](xmp-metadata.md)
