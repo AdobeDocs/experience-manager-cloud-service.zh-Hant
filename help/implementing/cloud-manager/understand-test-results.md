@@ -2,7 +2,7 @@
 title: 瞭解您的測試結果——雲端服務
 description: 瞭解測試結果——雲端服務
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: a0630410d281913f35caa5ba33807496e612ef3d
 
 ---
 
@@ -117,7 +117,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 例如，將執行名為 `com.myco.tests.aem.ExampleIT` 的類，但不執行名 `com.myco.tests.aem.ExampleTest` 為的類。
 
-測試類必須是常規JUnit測試。 測試基礎架構的設計與設定可與aem-testing-clients測試程式庫所使用的慣例相容。 強烈建議開發人員使用此程式庫並遵循其最佳實務。
+測試類必須是常規JUnit測試。 測試基礎架構的設計與設定可與aem-testing-clients測試程式庫所使用的慣例相容。 強烈建議開發人員使用此程式庫並遵循其最佳實務。 請參閱 [Git連結](https://github.com/adobe/aem-testing-clients) ，以取得詳細資訊。
 
 ## 自訂功能測試 {#custom-functional-test}
 
@@ -126,7 +126,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 但是，如果構建版本未生成測試JAR，則預設情況下測試通過。 此步驟是在階段部署後立即執行的。
 
 > 注意:
->「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。 這些記錄檔不包含實際AEM執行階段程式的記錄檔——這些記錄檔可使用上述的一般下載或尾隨記錄檔功能加以存取。
+>「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。 這些記錄檔不包含實際AEM執行階段程式的記錄檔——這些記錄檔可使用一般的「下載」或「尾部記錄檔」功能來存取。 如需詳細 [資訊，請參閱「存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md) 」。
 
 ## 本地測試執行 {#local-test-execution}
 
