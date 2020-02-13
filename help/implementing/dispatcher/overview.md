@@ -2,7 +2,7 @@
 title: Dispatcher in the Cloud
 description: 'Dispatcher in the Cloud '
 translation-type: tm+mt
-source-git-commit: ddc1b21dd14dcded72465e727ce740d481520170
+source-git-commit: b7f3122db5b55d515965b638c2b4aa4bc2a67fe6
 
 ---
 
@@ -818,7 +818,7 @@ Adobe管理的CDN會遵守TTL，因此不需要將它清除。 如果懷疑有�
 
 和舊版AEM一樣，發佈或取消發佈頁面會清除分派程式快取中的內容。 如果懷疑發生快取問題，客戶應重新發佈相關頁面。
 
-當發佈實例從作者處收到頁面或資產的新版本時，它使用刷新代理使其調度程式上的適當路徑失效。 更新的路徑將連同其父代一起從調度器快取中刪除，最高可達一個級別(您可以使用statfiles級別 [配置此路徑](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
+當發佈實例從作者處收到頁面或資產的新版本時，它使用刷新代理使其調度程式上的適當路徑失效。 更新的路徑將連同其父代一起從調度器快取中刪除，最高級別為(可以使用statfiles級別配置 [此路徑](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
 
 ### 內容新鮮感與版本一致性 {#content-consistency}
 
