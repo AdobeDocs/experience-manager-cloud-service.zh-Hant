@@ -2,7 +2,7 @@
 title: Dispatcher in the Cloud
 description: 'Dispatcher in the Cloud '
 translation-type: tm+mt
-source-git-commit: 2ab8a4fb492b85c1a9b42442d868cdbc329756cf
+source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
 
 ---
 
@@ -806,9 +806,9 @@ AEM提供三個選項：
 AEM作為雲端服務會在服務層級運作，而非個別節點層級運作，因此 [Dispatcher Help](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) documentation中的失效指示不再正確。
 而應使用複製刷新代理。這可以使用複製API完成。 此處提供複製API文 [檔](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) ，有關刷新快取的示例，請參見 [API示例頁](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) ，具體是 `CustomStep` 向所有可用代理髮出類型為ACTIVATE的複製操作的示例。 刷新代理端點不可配置，但已預先配置為指向與運行刷新代理的發佈服務匹配的調度程式。 刷新代理通常可由OSGi事件或工作流觸發。
 
-<!--The diagram below illustrates this.
+下圖說明了這一點。
 
-![CDN](assets/cdn.png "CDN")-->
+![](assets/cdnb.png "CDNCDN")
 
 如果擔心調度程式快取未清除，請與客戶支援聯繫，如有必要，客戶支援可以刷新調度程式快取。
 
