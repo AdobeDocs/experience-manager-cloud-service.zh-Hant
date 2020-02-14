@@ -2,7 +2,7 @@
 title: Adobe Experience manager雲端服務的不同與新功能
 description: '不同與新功能- Adobe Experience Manager(AEM)雲端服務。 '
 translation-type: tm+mt
-source-git-commit: b8eed5bd68d961a95d0ed15a4e88cee327a82594
+source-git-commit: e6465e018ff45638865f9ca2172a8e72e12612a9
 
 ---
 
@@ -32,8 +32,6 @@ source-git-commit: b8eed5bd68d961a95d0ed15a4e88cee327a82594
 >
 >這些概述並非詳盡無遺，但旨在作一介紹。
 
-<!-- change link when 6.5 hub page migrated -->
-
 >[!NOTE]
 >
 >如需內部部署和受管理服務版本的詳細資訊，請參閱 [AEM 6.5的檔案集](https://helpx.adobe.com/support/experience-manager/6-5.html)。
@@ -43,25 +41,6 @@ source-git-commit: b8eed5bd68d961a95d0ed15a4e88cee327a82594
 >[!NOTE]
 >
 >如需詳細資訊，請參閱 [架構](/help/core-concepts/architecture.md)。
-
-<!--
-### Previous Versions {#previous-versions-architecture}
-
-Both AEM on-premise, and AEM under Managed Services used a static architecture comprised of a fixed number of machines and instances. 
-
-![Static architecture](assets/introduction-01.png "Static architecture")
-
-These:
-
-* Were sized for *peak* traffic (internet) and *peak* activity (marketing), which resulted in them being idle for significant periods of time:
-![Static structure must cater for varying usage patterns](assets/introduction-02.png "Static structure must cater for varying usage patterns")
-
-* Were monolithic applications (the quickstart).
-
-* Had a single author instance; which was subject to downtime during maintenance windows.
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-architecture}
--->
 
 AEM即雲端服務現已具備：
 
@@ -89,16 +68,6 @@ AEM即雲端服務現已具備：
 >[!NOTE]
 >
 >有關詳細資訊，請參 [閱部署簡介](/help/implementing/deploying/overview.md)。
-
-<!--
-### Previous Versions {#previous-versions-upgrades}
-
-Both AEM on-premise, and AEM under Managed Services were subject to a fixed pattern of a yearly major release augmented by service packs, feature packs and hot-fixes. Often instances would run a major version for two or more years. 
-
-Depending on the upgrade type, the process could require significant preparation consisting of analysis, development and testing, followed with a window of downtime for the actual upgrade.
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-upgrades}
--->
 
 AEM作為雲端服務，現在使用「持續整合與持續傳送」(CI/CD)來確保您的專案具備最新狀態。 這表示所有升級作業都完全自動化，因此使用者不需要中斷任何服務。
 
@@ -166,16 +135,6 @@ Cloud manager已發展為自助服務入口網站，可在其中建立並設定A
 >
 >如需詳細資訊，請參 [閱入門](/help/onboarding/home.md)。
 
-<!--
-### Previous Versions {#previous-versions-onboarding}
-
-Implementing an AEM project basically followed traditional project management methods.  
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-onboarding}
-
-Starting and managing an AEM project is significantly easier when using AEM as a Cloud service as Adobe is responsible for many aspects:
--->
-
 當將AEM當做雲端服務使用時，啟動和管理AEM專案很簡單，因為Adobe負責許多方面：
 
 * 基準AEM影像會針對特定使用案例最佳化。
@@ -204,22 +163,7 @@ Starting and managing an AEM project is significantly easier when using AEM as a
 >
 >如需詳細資訊，您可從開 [發方針](/help/implementing/developing/introduction/development-guidelines.md) - WKND [教學課程開始](/help/implementing/developing/introduction/develop-wknd-tutorial.md)。
 
-<!--
-### Previous Versions {#previous-versions-developing}
--->
-
-<!-- needs more detail -->
-
-<!-- 
-Development was an intensive task performed locally, followed by deployment to the production instance. 
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-developing}
--->
-
-<!-- Will need information for new customers -->
 支援AEM為雲端服務的全新架構包含對整體開發人員體驗的一些重要變更。 AEM做為雲端服務的主要目標之一，是讓經驗豐富的客戶（在內部部署或在Adobe Managed Services中使用AEM）盡快移轉至AEM做為雲端服務，而不需重寫其大量自訂程式碼。 不過，可能仍需要進行一些調整。
-
-<!-- adjusting title level -->
 
 ### 雲端開發 {#aem-as-a-cloud-service-developing-cloud-development}
 
@@ -231,10 +175,8 @@ Development was an intensive task performed locally, followed by deployment to t
 * 客戶應用程式必須傳遞管道中強制執行的所有程式碼品質、安全性和效能閘道。
 * 為客戶應用程式構建的映像必須由Cloud manager管道部署。
 
-<!-- duration of what? -->
 此程式通常稱為雲端開發。 由於端對端持續時間預計需要幾分鐘（視應用程式的複雜性而定，從20到50），因此在雲端嘗試進行擱置中的程式碼和組態變更之前，必須採用快速開發方法。
 
-<!-- is this really relevant at this point? -->
 AEM的使用者不再可直接存取Web Console，因為Web Console會管理OSGI組合及其相關的組態，而且先前也是AEM quickStart的一部分。 此介面仍可透過使用新的開發人員主控台，以唯讀模式存取。 使用此主控台，開發人員可直接選擇並登入作者或發佈服務的任何特定節點，然後存取預設封鎖的區域。
 
 開發人員的另一個常見需求是快速存取各種環境的記錄檔。 以AEM為雲端服務，作者和發佈節點中不同節點的記錄檔可透過Cloud manager取得，可以是可下載的檔案，也可以是透過API取得。
@@ -248,8 +190,6 @@ AEM的使用者不再可直接存取Web Console，因為Web Console會管理OSGI
 * ACL和權限
 
 * 服務使用者和使用者群組
-
-<!-- adjusting title level -->
 
 ### 地方開發 {#aem-as-a-cloud-service-developing-local-development}
 
@@ -269,14 +209,6 @@ AEM的使用者不再可直接存取Web Console，因為Web Console會管理OSGI
 >
 >有關詳細資訊，請從 [備份](/help/operations/backup.md)、索引 [和其](/help/operations/indexing.md)他維護任務開始 [](/help/operations/maintenance.md)。
 
-<!--
-### Previous Versions {#previous-versions-operations-and-performance}
-
-In the past, especially on the author side, there was a need to periodically stop an instance; for routine maintenance operations, as well as upgrades and updates. For some customers, this resulted in hours of scheduled downtime on a weekly basis. 
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-operatioms-and-performance}
--->
-
 以AEM為雲端服務，此類作業會自動化，因此不再需要任何服務中斷。
 
 在這些領域：
@@ -295,21 +227,6 @@ AEM雲端服務的運作也受到新的監控、報告和警報基礎架構的�
 >
 >如需詳細資訊，請 [參閱安全性- IMS支援](/help/security/ims-support.md)。
 
-<!--
-### Previous Versions {#previous-versions-identity-management}
-
-By default, identity management was internal to AEM.
-
->[!NOTE]
->
->AEM 6.4.3.0 introduced:
->
->* Admin Console support for AEM instances. 
->* Adobe IMS (Identity Management System) based authentication for AEM Managed Services customers.
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-identity-management}
--->
-
 AEM雲端服務的重大變更，是完全整合使用Adobe ID來存取作者層。
 
 這需要使用 [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) ，來管理使用者和使用者群組。 使用者帳戶可讓您的使用者存取Adobe產品和服務，因為使用者個人檔案資訊會集中在Adobe Identity Management System(IMS)中，以便在所有雲端服務間共用。 一旦指派AEM的存取權後，使用者帳戶就可在AEM中以雲端服務的身分被參照（如先前）;例如，用於從AEM Security使用者介面定義角色和權限。
@@ -325,14 +242,6 @@ AEM雲端服務的重大變更，是完全整合使用Adobe ID來存取作者層
 >[!NOTE]
 >
 >有關更多細節，「基 [本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) 」是一個很好的起點。
-
-<!--
-### Previous Versions {#previous-versions-authoring}
-
-The user interface of the author instance (UI), for both Sites and Assets, was progressively developed and optimized to cater for all use-cases, using both the touch-enabled and classic UIs.
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-authoring}
--->
 
 過去使用過AEM的人將十分熟悉網站和資產的製作使用者介面(UI)的基本原則。
 
