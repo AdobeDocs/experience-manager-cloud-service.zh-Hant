@@ -2,7 +2,7 @@
 title: 將AEM部署為雲端服務
 description: '將AEM部署為雲端服務 '
 translation-type: tm+mt
-source-git-commit: 6bf4d9d106a35ead10be235237986a60f2bf1148
+source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
 
 ---
 
@@ -35,7 +35,7 @@ Health checks are used to monitor the health of the application. 如果這些檢
 
 ### 複合節點儲存 {#composite-node-store}
 
-如上所述，在大多數情況下，更新將導致零停機，包括作者（即節點群集）。 由於Oak中的「複合節點儲存區」功能，因此可進行滾動更新。 此功能可讓AEM同時參考多個儲存庫。 在滾動部署中，新的綠色AEM版本包含其自己的 `/libs` (以TarMK為基礎的不可變儲存庫)，與舊版Blue AEM不同，不過兩者都參照共用的DocumentMK可變儲存庫，其中包含 `/content`、 `/conf``/etc` 和其他區域。 由於藍色和綠色都有各自的版本 `/libs`，因此在滾動更新期間，兩者都可以處於活動狀態，在藍色完全被綠色取代之前都會進行流量。
+如上所述，在大多數情況下，更新將導致零停機，包括作者（即節點群集）。 由於Oak中的「複合節點儲存區」功能，因此可進行滾動更新。 此功能可讓AEM同時參考多個儲存庫。 在滾動部署中，新的綠色AEM版本包含其自己的 `/libs` (以TarMK為基礎的不可變儲存庫)，與舊版Blue AEM不同，不過兩者都參照共用的DocumentMK可變儲存庫，其中包含 `/content`、 `/conf``/etc` 和其他區域。 由於藍色和綠色都有各自的版本 `/libs`，因此在滾動更新期間，兩者都可以處於活動狀態，在藍色完全被綠色取代之前，都會進行流量。
 
 ## 客戶發行 {#customer-releases}
 
@@ -48,7 +48,7 @@ Health checks are used to monitor the health of the application. 如果這些檢
 > [!注意}
 >應用程式在本機電腦上的運作方式與Adobe cloud有細微的操作差異。 這些架構差異必須在本機開發期間得到尊重，並可能導致在雲端基礎架構上部署時產生不同的行為。 由於這些差異，在生產中推出新的自訂程式碼之前，請務必先對開發與階段環境執行詳盡的測試。
 
-為了開發內部版本的自訂程式碼，應下載並安裝 [AEM(Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) )的相關版本。 有關使用作為Cloud Service Dispatcher工具的其他資訊，請參 [閱此頁](/help/implementing/dispatcher/overview.md)。
+為了開發內部版本的自訂程式碼，應下載並安裝 [AEM(Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) )的相關版本。 如需將AEM當做Cloud Service Dispatcher Tools的其他資訊，請參閱 [本頁](/help/implementing/dispatcher/overview.md)。
 
 ## 透過Cloud manager和Package Manager部署內容套件 {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -257,7 +257,7 @@ above appears to be internal, to confirm with Brian -->
 
 ### 服務用戶和ACL更改 {#service-users-and-acl-changes}
 
-變更存取內容或程式碼所需的服務使用者或ACL，可能會導致舊版AEM中發生錯誤，導致對過時服務使用者的內容或程式碼存取。 為瞭解決此行為，建議您至少在2個版本中進行變更，第一個版本在後續版本中先充當橋梁。
+變更存取內容或程式碼所需的服務使用者或ACL，可能會導致舊版AEM中發生錯誤，導致對過時服務使用者的內容或程式碼存取。 為瞭解決此行為，建議您至少在2個版本間進行變更，第一個版本在後續版本進行清理之前，先充當橋梁。
 
 ### 索引更改 {#index-changes}
 
