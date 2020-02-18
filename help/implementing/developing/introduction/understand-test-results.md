@@ -2,7 +2,7 @@
 title: 瞭解您的測試結果——雲端服務
 description: 瞭解測試結果——雲端服務
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
 
 ---
 
@@ -125,7 +125,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 但是，如果構建版本未生成測試JAR，則預設情況下測試通過。 此步驟是在階段部署後立即執行的。
 
-> 注意:
+>[!NOTE]
 >「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。 這些記錄檔不包含實際AEM執行階段程式的記錄檔——這些記錄檔可使用一般的「下載」或「尾部記錄檔」功能來存取。 如需詳細 [資訊，請參閱「存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md) 」。
 
 ## 本地測試執行 {#local-test-execution}
