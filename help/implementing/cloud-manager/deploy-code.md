@@ -2,7 +2,7 @@
 title: 部署您的程式碼——雲端服務
 description: 部署您的程式碼——雲端服務
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
 ---
 
@@ -39,15 +39,15 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
    * 驗證：此步驟確保將管線配置為使用當前可用資源，例如，已配置的分支存在，環境可用。
    * 構建和單元測試：此步驟會執行容器化的建立程式。 如需 [建立環境的詳細資訊，請參閱「建立AEM應用程式專案](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) 」。
-   * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](understand-test-results.md) ，請參閱瞭解測試結果。
+   * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](/help/implementing/developing/introduction/understand-test-results.md) ，請參閱瞭解測試結果。
    * 建立影像：此步驟包含用於構建映像的進程的日誌檔案。 此程式負責將構建步驟生成的內容和調度程式包轉換為Docker映像和Kubernetes配置。
    * 部署至舞台
 
       ![](assets/stage-deployment.png)
    測試 **階段**，包括下列步驟：
 
-   * 產品功能測試：Cloud Manager管道執行將支援對舞台環境運行的測試的執行。 如需 [測試程式的詳細資訊](understand-test-results.md) ，請參閱瞭解測試結果。
-   * 自訂功能測試：管線中的此步驟始終存在，不能跳過。 但是，如果構建版本未生成測試JAR，則預設情況下測試通過。 如需 [測試程式的詳細資訊](understand-test-results.md) ，請參閱瞭解測試結果。
+   * 產品功能測試：Cloud Manager管道執行將支援對舞台環境運行的測試的執行。 如需 [測試程式的詳細資訊](/help/implementing/developing/introduction/understand-test-results.md) ，請參閱瞭解測試結果。
+   * 自訂功能測試：管線中的此步驟始終存在，不能跳過。 但是，如果構建版本未生成測試JAR，則預設情況下測試通過。 如需 [測試程式的詳細資訊](/help/implementing/developing/introduction/understand-test-results.md) ，請參閱瞭解測試結果。
 
       ![](assets/stage-testing.png)
 
