@@ -2,7 +2,7 @@
 title: 將AEM部署為雲端服務
 description: '將AEM部署為雲端服務 '
 translation-type: tm+mt
-source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
+source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 
 ---
 
@@ -14,6 +14,10 @@ source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
 與AEM On Premise和Managed services解決方案相比，AEM中程式碼開發的基礎與雲端服務類似。 開發人員可編寫程式碼並在本機進行測試，然後將它推送至遠端AEM做為雲端服務環境。 Cloud manager是Managed services的選用內容傳送工具，是必要項。 現在，這是將程式碼部署至AEM做為雲端服務環境的唯一機制。
 
 AEM版本的更新永遠是個別的部署事件，與推送自訂代碼不同。 以另一種方式檢視，自訂程式碼版本應針對生產中的AEM版本進行測試，因為它將部署在的上方。 此後發生的AEM版本更新（與現今的Managed Services相比，此更新會很頻繁）會自動套用。 這些程式碼會向後相容於已部署的客戶程式碼。
+
+以下影片提供如何將程式碼部署至AEM做為雲端服務的高階概觀：
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 本檔案的其餘部分將說明開發人員如何調整其實務，以便搭配AEM搭配Cloud service的版本更新和客戶更新。
 
@@ -45,7 +49,7 @@ Health checks are used to monitor the health of the application. 如果這些檢
 
 和現有的非雲端AEM版本一樣，支援以特定快速入門為基礎的本機離線開發，並預期在大多數情況下都是除錯的首選工具。
 
-> [!注意}
+>[!NOTE]
 >應用程式在本機電腦上的運作方式與Adobe cloud有細微的操作差異。 這些架構差異必須在本機開發期間得到尊重，並可能導致在雲端基礎架構上部署時產生不同的行為。 由於這些差異，在生產中推出新的自訂程式碼之前，請務必先對開發與階段環境執行詳盡的測試。
 
 為了開發內部版本的自訂程式碼，應下載並安裝 [AEM(Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) )的相關版本。 如需將AEM當做Cloud Service Dispatcher Tools的其他資訊，請參閱 [本頁](/help/implementing/dispatcher/overview.md)。
@@ -107,7 +111,8 @@ Health checks are used to monitor the health of the application. 如果這些檢
 
 可將可變內容安裝限制為製作或發佈，方法是將套件內嵌在install.author或install.publish檔案夾中，位於 `/apps`。 如需建議專案重組的詳細 [資訊](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) ，請參閱AEM檔案。
 
->[!NOTE] 內容包部署到所有環境類型(dev、stage、prod)。 無法將部署限制在特定環境。 此限制是為了確保自動執行測試執行的選項。 特定於環境的內容需要通過Package manager手動安裝。
+>[!NOTE]
+>內容包部署到所有環境類型(dev、stage、prod)。 無法將部署限制在特定環境。 此限制是為了確保自動執行測試執行的選項。 特定於環境的內容需要通過Package manager手動安裝。
 
 此外，在套用可變內容包更改後，沒有回滾這些更改的機制。 如果客戶發現問題，可以選擇在下次代碼發行中修正問題，或作為最後手段，將整個系統還原到部署之前的某個時間點。
 
@@ -123,7 +128,8 @@ Health checks are used to monitor the health of the application. 如果這些檢
 * 建立／刪除群組
 * 建立／刪除使用者
 * 添加ACL
-   > [!NOTE] 定義ACL要求節點結構已存在。 因此，可能需要在建立路徑語句之前執行。
+   > [!NOTE]
+   >定義ACL要求節點結構已存在。 因此，可能需要在建立路徑語句之前執行。
 * 添加路徑（例如根資料夾結構）
 * 新增CND（nodetype定義）
 
