@@ -2,12 +2,12 @@
 title: 將動態媒體視訊或影像檢視器內嵌在網頁上
 description: 瞭解如何將動態媒體視訊或影像內嵌在網頁上
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# 將動態媒體視訊或影像檢視器內嵌至網頁 {#embedding-the-video-or-image-viewer-on-a-web-page}
+# 將動態媒體視訊或影像檢視器內嵌在網頁上 {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 當您想 **** 要播放視訊或檢視內嵌在網頁上的資產時，請使用「內嵌代碼」功能。 您可將內嵌代碼複製到剪貼簿，以便貼到網頁中。 「內嵌代碼」對話方塊中不允許編 **[!UICONTROL 輯代碼]** 。
 
@@ -49,4 +49,4 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 HTTP/2是全新、更新的Web通訊協定，可改善瀏覽器和伺服器的通訊方式。 它提供更快速的資訊傳輸，並降低所需的處理能力。 動態媒體資產的傳送現在可透過HTTP/2，提供更佳的回應和載入時間。
 
-如需 [您的動態媒體帳戶開始使用HTTP/2的完整詳細資訊，請參閱HTTP2內容傳送](http2.md) 。
+如需 [您的動態媒體帳戶開始使用HTTP/2的完整詳細資訊，請參閱HTTP2內容傳送](http2faq.md) 。
