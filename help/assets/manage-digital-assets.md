@@ -4,12 +4,12 @@ description: 瞭解各種資產管理和編輯方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Manage assets {#manag-assets}
+# Manage assets {#manage-assets}
 
 本文說明如何在Adobe Experience Manager(AEM)Assets中管理和編輯資產。 若要管理內容片段，請參 [閱內容片段](content-fragments/content-fragments.md) 。
 
@@ -32,32 +32,7 @@ source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 ## Upload assets {#uploading-assets}
 
-請參 [閱將數位資產新增至Experience Manager](add-assets.md)。
-
-### 串流上傳 {#streamed-uploads}
-
-如果您將許多資產上傳至AEM，則伺服器的I/O要求會大幅增加，這會降低上傳效率，甚至會造成某些上傳工作逾時。 AEM Assets支援串流上傳資產。 串流上傳可避免在將磁碟複製到儲存庫之前，先將資產儲存在伺服器上的臨時資料夾中，從而減少上傳操作期間的磁碟I/O。 而是直接將資料傳輸到儲存庫。 這樣，上傳大型資產的時間和逾時的可能性就會減少。 AEM Assets預設會啟用串流上傳。
-
->[!NOTE]
->
->在JEE伺服器上執行的AEM，若servlet-api版本低於3.1，則會停用串流上傳。
-
-### 解壓縮包含資產的ZIP封存 {#extractzip}
-
-您可以像上傳任何其他支援的資產一樣，上傳ZIP封存。 相同的檔案名稱規則適用於ZIP檔案。 AEM可讓您將ZIP封存解壓縮至DAM位置。 如果封存檔未包含副檔名為ZIP，請啟用使用內容的檔案類型偵測。
-
-一次選擇一個ZIP存檔，按一下「解 **[!UICONTROL 壓存檔]**」，然後選擇目標資料夾。 選擇一個選項來處理衝突（如果有）。 如果ZIP檔案中的資產已存在於目標檔案夾中，您可以選取下列其中一個選項：略過擷取、取代現有檔案、透過重新命名保留兩個資產，或建立新版本。
-
-摘取完成後，AEM會在通知區中通知您。 當AEM擷取ZIP時，您可以回到您的工作中，而不會中斷擷取。
-
-![郵遞區號擷取通知](assets/zip_extract_notification.png)
-
-此功能的一些限制包括：
-
-* 如果目的地存在同名的資料夾，ZIP檔案中的資產會解壓縮在現有資料夾中。
-* 如果您取消擷取，則不會刪除已擷取的資產。
-* 您不能同時選擇兩個ZIP檔案並解壓縮它們。 一次只能解壓縮一個ZIP檔案。
-* 上傳ZIP封存時，如果上傳對話方塊顯示500伺服器錯誤，請在安裝最新的Service Pack後重試。
+如需詳 [細資訊，請參閱將數位資產新增至Experience Manager](add-assets.md)。
 
 ## 預覽資產 {#previewing-assets}
 
@@ -94,19 +69,13 @@ source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 在「標 **[!UICONTROL 記]** 」欄位中，選取一或多個標籤。 若要新增自訂標籤，請在方塊中輸入標籤名稱，然後按Enter。 新標籤會儲存在AEM中。
+1. 在「標 **[!UICONTROL 記]** 」欄位中，選取一或多個標籤。 若要新增自訂標籤，請在方塊中輸入標籤名稱，然後按Enter鍵。 新標籤會儲存在AEM中。
 
    YouTube需要「標籤」才能發佈，並有YouTube的連結（如果找到適當的連結）。
 
    >[!NOTE]
    >
-   >要建立標籤，需要在CRX存 `/content/cq:tags/default` 儲庫中具有寫入權限。
-
-1. 若要提供資產評等，請點選／按一下「進階 **** 」標籤，然後點選／按一下適當位置的星號，以指派所要的評等。
-
-   ![評等](assets/ratings.png)
-
-   您指派給資產的評分分數會顯示在「您的評 **[!UICONTROL 分」下]**。 從對資產評分的使用者收到的資產平均評分，會顯示在「評 **[!UICONTROL 分」下]**。 此外，「分級劃分」下方會顯示對平均分級分數貢獻的分 **[!UICONTROL 級分數]**。 您可以根據平均評分分數來搜尋資產。
+   >要建立標籤，您必須在CRX儲存庫的路 `/content/cq:tags/default` 徑上具有寫權限。
 
 1. 若要檢視資產的使用情況統計資料，請按一下／點選「 **[!UICONTROL 前瞻分析]** 」標籤。
 
@@ -118,7 +87,8 @@ source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
    如需詳細資訊，請參 [閱資產分析](assets-insights.md)。
 
 1. 點選／按一下「 **[!UICONTROL 儲存並關閉]**」。
-1. 導覽至「資產」使用者介面。 編輯的中繼資料屬性（包括標題、說明、評分等）會顯示在資產卡片的「卡片」檢視中，以及「清單」檢視中相關欄下。
+
+1. 導覽至「資產」使用者介面。 編輯的中繼資料屬性（包括標題、說明和標籤）會顯示在資產卡片的「卡片」檢視中，以及「清單」檢視中相關欄下。
 
 ## 複製資產 {#copying-assets}
 
@@ -238,28 +208,6 @@ source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
    >[!NOTE]
    >
    >只有採用HTML5相容視訊格式的瀏覽器才支援視訊註解。 此外，視瀏覽器而定，支援不同的視訊格式。
-
-### View subassets {#viewing-subassets}
-
-在AEM中，可針對支援多頁格式的資產產生子資產，例如PDF、AI、Powerpoint/Apple Keynote和InDesign。 這些子資產與一般資產類似，但會連結至其父資產，並有助於在Touch UI中檢視多頁。
-
-子資產產生預設會停用。 若要啟用子資產產生，請將「 **[!UICONTROL 建立子資產]** 」步驟新增至「DAM更新資產」工作流程。
-
-對於Word文檔，DAM分析Word文檔工作流程會從Word `cq:Page` 文檔的內容生成一個元件。 從文檔提取的影像從元件中參 `cq:Page` 考。 即使子資產產生已停用，這些影像也會擷取。
-
-1. 若要檢視子資產，請導覽至資產所在的位置並開啟其資產頁面。
-
-1. 點選／按一下GlobalNav圖示，然後從清 **[!UICONTROL 單中選]** 擇子資產
-
-   ![chlimage_1-223](assets/chlimage_1-223.png)
-
-   >[!NOTE]
-   >
-   >只有 **在資產可用** /已產生子資產時，才會顯示子資產選項。
-
-   當您從清單 **中選取子資產** ，子資產頁面 **** 會顯示連結至父資產的子資產。
-
-   ![chlimage_1-224](assets/chlimage_1-224.png)
 
 ## Delete assets {#delete-assets}
 
@@ -564,43 +512,11 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   >[!NOTE]
-   >
-   >如果資產有子資產，您可以列印所有子資產及其特定頁面註解。
-
    要修改渲染的PDF檔案的外觀，例如注釋和狀態的字型顏色、大小和樣式、背景顏色，請從「配置管理器」(Configuration Manager)開啟「注釋 **[!UICONTROL PDF」(]** Annotation PDF)配置，並修改所需的選項。 例如，要更改批准狀態的顯示顏色，請修改相應欄位中的顏色代碼。 有關更改批注的字型顏色的資訊，請參 [閱注釋](/help/assets/manage-digital-assets.md#annotating)。
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
    返回轉譯的PDF檔案並重新整理它。 重新整理的PDF會反映您所做的變更。
-
-如果資產包含外語（尤其是非拉丁語言）的註解，您必須先在AEM伺服器上設定CQ-DAM-Handler-Gibson Font Manager Service，才能列印這些註解。 在設定CQ-DAM-Handler-Gibson Font Manager服務時，請提供所需語言字型所在的路徑。
-
-1. 從URL開啟「CQ-DAM-Handler-Gibson字型管理員服務」設定頁面 `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`。
-1. 要配置CQ-DAM-Handler-Gibson Font Manager服務，請執行下列操作之一：
-
-   * 在「系統字型」目錄選項中，指定系統上字型目錄的完整路徑。 例如，如果您是Mac使用者，可以在「系統字型」目錄選項中將路徑指定為 */Library/Fonts* 。 AEM會從此目錄擷取字型。
-   * 在資料夾內建立 `fonts` 名為的 ``crx-quickstart`` 目錄。 CQ-DAM-Handler-Gibson Font Manager Service會自動擷取位置的字型 `crx-quickstart/fonts`。 您可以從Adobe Server Fonts目錄選項中覆寫此預設路徑。
-
-   * 在您的系統中為字型建立新的檔案夾，並將所要的字型儲存在檔案夾中。 然後，在「客戶字型」目錄選項中指定該資料夾的完整路徑。
-
-1. 從URL存取「註解PDF」設定 `https://[aem_server]:[4502]/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig`。
-1. 使用正確的字型系列設定注釋PDF，如下所示：
-
-   * 在font-family選 `<font_family_name_of_custom_font, sans-serif>` 項中包含字串。 例如，如果要在CJK（中文、日文和韓文）中打印注釋，請在font-family選 `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` 項中包括字串。 如果要用印地文打印注釋，請下載相應的字型並將該字型系列配置為Arial Unicode MS、Noto Sans、Noto Sans CJK JP、Noto Sans Devanagari、sans-serif。
-
-1. 重新啟動AEM例項。
-
-以下是如何設定AEM以列印CJK（中文、日文和韓文）註解的範例：
-
-1. 從下列連結下載Google Noto CJK字型，並將其儲存在Font Manager service中設定的字型目錄中。
-
-   * 全部整合在一個超級CJK字型中： [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-   * Noto Sans（歐洲語言版）: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * 您所選語言的Noto字型： [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-
-1. 將font-family參數設定為，以配置注釋PDF檔案 `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`。 此配置預設可用，適用於所有歐洲語言和CJK語言。
-1. 如果您選擇的語言與步驟2中提及的語言不同，請在預設的字型系列中附加適當（以逗號分隔）的項目。
 
 ## 資產版本控制 {#asset-versioning}
 
