@@ -3,7 +3,7 @@ title: Adobe Experience Manager Assets中的數位版權管理
 description: 瞭解如何在AEM中管理授權資產的資產到期狀態和資訊。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -32,9 +32,9 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 您可以在「搜尋」面板中搜尋過期的資產，包括過期的子資產。
 
-1. 在「資產」主控台中，按一下工具列中的「搜尋」圖示，以顯示「全方位搜尋」方塊。
+1. 在「資產」控制台中，按一下工具列中的「搜尋」圖示，以顯示「搜尋」欄位。
 
-1. 在「全方位搜尋」方塊中，按一下「傳回」索引鍵以顯示「搜尋結果」頁面。
+1. 在「Omnisearch」（搜索）框中，按Enter鍵可顯示搜索結果頁。
 
 1. 按一下GlobalNav圖示以顯示「搜尋」面板。
 
@@ -42,13 +42,13 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 1. 選擇「 **[!UICONTROL 過期]**」。 過期的資產會顯示在搜尋結果中。
 
-當您選擇「已過 **期** 」選項時，「資產」主控台只會顯示複合資產所參照的已到期資產和子資產。 在子資產到期後，不會立即顯示參照已到期子資產的複合資產。 而是在AEM Assets偵測到他們在下次排程器執行時參考過期子資產後，才會顯示子資產。
+當您選擇「已過 **[!UICONTROL 期]** 」選項時，「資產」主控台只會顯示複合資產所參照的已到期資產和子資產。 在子資產到期後，不會立即顯示參照已到期子資產的複合資產。 而是在AEM Assets偵測到他們在下次排程器執行時參考過期子資產後，才會顯示子資產。
 
 如果您將已發佈資產的到期日修改為早於目前排程器週期的日期，則排程仍會在下次執行時將此資產偵測為已到期資產，並據以反映狀態。
 
 此外，如果故障或錯誤導致調度程式無法檢測當前週期中的過期資產，則調度程式會在下一個週期重新檢查這些資產並檢測其過期狀態。
 
-若要啟用「資產」主控台以顯示參照的複合資產以及過期的子資產，請在AEM Configuration manager中設定 **Adobe CQ DAM Expiry Notification** （AEM設定管理員）工作流程。
+若要啟用「資產」主控台以顯示參照的複合資產以及過期的子資產，請在AEM Configuration manager中設定 **[!UICONTROL Adobe CQ DAM Expiry Notification]** （AEM設定管理員）工作流程。
 
 1. 開啟AEM Configuration Manager。
 1. 選擇 **[!UICONTROL Adobe CQ DAM到期通知]**。 依預設， **[!UICONTROL 會選取「時間型排程器]** 」，此排程器會將工作排程在特定時間檢查資產是否已過期子資產。 作業完成後，已過期子資產和參考資產的資產會在搜尋結果中顯示為過期。
@@ -90,7 +90,7 @@ Adobe Experience Manager(AEM)Assets的Assets主控台可顯示資產的各種狀
 
 1. 若要根據資產狀態來搜尋資產，請按一下／點選「 **[!UICONTROL 搜尋]** 」圖示以顯示Omnisearch列。
 
-1. 按一下Return鍵，然後按一下／點選 **[!UICONTROL GlobalNav]** 圖示以顯示「搜尋」面板。
+1. 按Enter鍵，然後按一下／點選AEM圖示以顯示「搜尋」面板。
 1. 在「搜尋」面板中，點選／按一 **[!UICONTROL 下「發佈狀態]** 」，然後選取「 **[!UICONTROL 發佈]** 」以在「AEM資產」中搜尋已發佈的資產。
 
 1. 點選／按一 **[!UICONTROL 下「核准狀態]** 」，然後按一下適當的選項以搜尋已核准或已拒絕的資產。
