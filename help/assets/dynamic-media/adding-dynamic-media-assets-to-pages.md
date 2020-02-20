@@ -2,7 +2,7 @@
 title: 新增動態媒體資產至頁面
 description: 如何在AEM中將Dynamic media元件新增至頁面
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 
 若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360全景媒體元件。 若要這麼做，請進入「版面」模式並啟用「動態媒體」元件。 然後，您可以將這些元件新增至頁面，並新增資產至元件。 動態媒體元件是智慧型的——他們知道您是新增影像還是視訊，而可用的設定選項也會隨之變更。
 
-如果您使用AEM做為WCM，請直接將動態媒體資產新增至頁面。 如果您使用協力廠商來處理WCM，請連結 [或](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[內嵌資](/help/assets/dynamic-media/embed-code.md) 產。 如需多方互動網站，請參閱將最佳化 [的影像傳送至多方互動網站](/help/assets/dynamic-media/responsive-site.md)。
+如果您使用AEM做為WCM，請直接將Dynamic media資產新增至頁面。 如果您使用協力廠商來處理WCM，請連結 [或](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[內嵌資](/help/assets/dynamic-media/embed-code.md) 產。 如需多方互動網站，請參閱將最佳化 [的影像傳送至多方互動網站](/help/assets/dynamic-media/responsive-site.md)。
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 >如果您的網頁有下列項目：
 >
 >* 在相同頁面上使用多個動態媒體元件例項。
->* 每個例項都使用相同的資產類型。
+>* 每個實例都使用相同的資產類型。
 >
 >
 請注意，不支援為該頁面上的每個動態媒體元件指派不同的檢視器預設集。
@@ -156,7 +156,7 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-按一下元件中的「編輯」，即可編輯下列 **[!UICONTROL 動態媒體]** 「設定」。
+按一下元件中的「編輯」，即可編輯下列 **[!UICONTROL 動態媒體]** 設定。
 
 >[!NOTE]
 >
@@ -266,7 +266,7 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 >如果您的網頁有下列項目：
 >
 >* 在相同頁面上 **[!UICONTROL 使用Panoramic Media]** （全景媒體）元件的多個例項。
->* 每個例項都使用相同的資產類型。
+>* 每個實例都使用相同的資產類型。
 >
 >
 請注意，不支援為該頁面上的每個 **[!UICONTROL Panoramic Media]** （全景媒體）元件指派不同的檢視器預設集。
@@ -301,7 +301,7 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 
 HTTP/2是全新、更新的Web通訊協定，可改善瀏覽器和伺服器的通訊方式。 它提供更快速的資訊傳輸，並降低所需的處理能力。 動態媒體資產的傳送現在可透過HTTP/2，提供更佳的回應和載入時間。
 
-如需 [您的動態媒體帳戶開始使用HTTP/2的完整詳細資訊，請參閱HTTP2內容傳送](/help/assets/dynamic-media/http2.md) 。
+如需 [您的動態媒體帳戶開始使用HTTP/2的完整詳細資訊，請參閱HTTP2內容傳送](/help/assets/dynamic-media/http2faq.md) 。
 
 >[!MORELIKETHIS]
 >
