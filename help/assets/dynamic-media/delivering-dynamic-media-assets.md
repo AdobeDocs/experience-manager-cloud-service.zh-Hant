@@ -2,7 +2,7 @@
 title: 提供動態媒體資產
 description: 瞭解如何提供動態媒體資產
 translation-type: tm+mt
-source-git-commit: 5b55a339f466a7a0ffb4900c72e7d95995b28e83
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 5b55a339f466a7a0ffb4900c72e7d95995b28e83
 * [在動態媒體中啟用熱連結保護](/help/assets/dynamic-media/hotlink-protection.md)
 * [將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [為互動式網站提供最佳化影像](/help/assets/dynamic-media/responsive-site.md)
-* [HTTP2內容傳送](/help/assets/dynamic-media/http2.md)
+* [HTTP2內容傳送](/help/assets/dynamic-media/http2faq.md)
 * [使CDN快取內容無效](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
 * [使用規則集轉換URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
@@ -39,4 +39,4 @@ source-git-commit: 5b55a339f466a7a0ffb4900c72e7d95995b28e83
 
 AEM現在支援透過HTTP/2傳送所有動態媒體內容（影像和視訊）。 也就是說，影像或視訊的已發佈URL或內嵌程式碼可與任何接受代管資產的應用程式整合。 然後，該已發佈資產會透過HTTP/2通訊協定傳送。 此傳送方式改善了瀏覽器和伺服器通訊的方式，讓您的所有動態媒體資產都能獲得較佳的回應和載入時間。
 
-如需 [詳細資訊，請參閱HTTP/2內容傳送常見問題](/help/assets/dynamic-media/scene7-http2faq.md) 。
+如需 [詳細資訊，請參閱HTTP/2內容傳送常見問題](/help/assets/dynamic-media/http2faq.md) 。
