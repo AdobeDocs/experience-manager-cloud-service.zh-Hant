@@ -3,7 +3,7 @@ title: 從AEM下載資產
 description: 瞭解如何從AEM下載資產並啟用或停用下載功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -61,8 +61,6 @@ AEM中的預設servlet可讓已驗證的使用者發出任意大型的並行下�
 1. 若要透過分派器設定封鎖資產下載請求，請編 `dispatcher.any` 輯設定，並新增規則至篩 [選區段](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)。
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
-
-1. 您可以在Publish實例上手動禁用OSGi元件，方法是導航到位於的OSGi控制台 `<aem-host>/system/console/components`。 找到並 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` 按一下「 **[!UICONTROL Disable]**（禁用）」。
 
 >[!MORELIKETHIS]
 >
