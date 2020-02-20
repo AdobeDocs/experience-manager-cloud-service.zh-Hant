@@ -2,7 +2,7 @@
 title: 發佈動態媒體資產
 description: 如何發佈動態媒體資產
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
@@ -39,5 +39,5 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 AEM現在支援透過HTTP/2傳送所有動態媒體內容（影像和視訊）。 也就是說，影像或視訊的已發佈URL或內嵌程式碼可與任何接受代管資產的應用程式整合。 然後，該已發佈資產會透過HTTP/2通訊協定傳送。 此傳送方式改善了瀏覽器和伺服器通訊的方式，讓您的所有動態媒體資產都能獲得較佳的回應和載入時間。
 
-請參 [閱HTTP/2內容傳送常見問題](/help/assets/dynamic-media/scene7-http2faq.md) ，以進一步瞭解。
+請參 [閱HTTP/2內容傳送常見問題](/help/assets/dynamic-media/http2faq.md) ，以進一步瞭解。
 <!--this md file used to reside under sites-administering-->
