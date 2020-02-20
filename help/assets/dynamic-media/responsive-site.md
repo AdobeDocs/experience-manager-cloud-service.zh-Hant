@@ -2,7 +2,7 @@
 title: 為互動式網站提供最佳化影像
 description: 如何使用回應式程式碼功能來提供最佳化的影像
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -44,4 +44,4 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 HTTP/2是全新、更新的Web通訊協定，可改善瀏覽器和伺服器的通訊方式。 它提供更快速的資訊傳輸，並降低所需的處理能力。 使用HTTP/2支援傳送動態媒體資產，提供更佳的回應和載入時間。
 
-如需 [您的動態媒體帳戶開始使用HTTP/2的完整詳細資訊，請參閱HTTP2內容傳送](http2.md) 。
+如需 [您的動態媒體帳戶開始使用HTTP/2的完整詳細資訊，請參閱HTTP2內容傳送](http2faq.md) 。
