@@ -2,14 +2,14 @@
 title: 將Adobe Experience manager實作雲端服務
 description: Adobe Experience Manager雲端服務實作自助資源與檔案連結
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
 
 ---
 
 
 # 將AEM的應用程式實作為雲端服務 {#aem-implementation-guide}
 
-本頁列出有關實作Experience manager的自助資源，作為雲端服務。
+本頁列出有關Experience Manager雲端服務實作的自助資源。 瞭解如何將Experience Manager自訂為雲端服務部署。
 
 ## 主要實作文章 {#key-articles}
 
