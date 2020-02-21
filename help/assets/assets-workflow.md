@@ -3,14 +3,14 @@ title: 將工作流程套用至資產
 description: 瞭解如何將工作流程套用至Adobe Experience Manager Assets中的資產、檔案夾和系列。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
 
 # 將工作流程套用至資產 {#applying-workflows-to-assets}
 
-您可在數位資產中使用工作流程來啟用資產或建立浮水印。 資產的部分工作流程會設定成根據特定條件自動執行。 例如，自動建立轉譯的工作流程會在編輯影像後自動執行。
+您可在數位資產中使用工作流程來啟動資產。 資產的部分工作流程會設定成根據特定條件自動執行。 例如，自動建立轉譯的工作流程會在編輯影像後自動執行。
 
 ## 將工作流程套用至AEM資產 {#apply-a-workflow-to-an-aem-asset}
 
