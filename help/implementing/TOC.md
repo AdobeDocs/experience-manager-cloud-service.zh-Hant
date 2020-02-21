@@ -2,7 +2,7 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
 
 ---
 
@@ -30,8 +30,8 @@ source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
    + [開始開發AEM網站- WKND教學課程](developing/introduction/develop-wknd-tutorial.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [瞭解測試結果](/help/implementing/developing/introduction/understand-test-results.md)
-+ 將AEM擴充為雲端服務 {#extending}
-   + [體驗片段](developing/extending/experience-fragments.md)
++ 將AEM設定為雲端服務並加以擴充 {#configuring-and-extending}
+   + [擴充體驗片段](developing/extending/experience-fragments.md)
 + 將AEM部署為雲端服務 {#deploying}
    + [將AEM部署為雲端服務](deploying/overview.md)
 + Dispatcher in the Cloud {#dispatcher}
