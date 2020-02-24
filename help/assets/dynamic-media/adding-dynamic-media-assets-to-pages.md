@@ -2,20 +2,20 @@
 title: 新增動態媒體資產至頁面
 description: 如何在AEM中將Dynamic media元件新增至頁面
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 ---
 
 
-# 新增動態媒體資產至頁面{#adding-dynamic-media-assets-to-pages}
+# Adding Dynamic Media Assets to Pages{#adding-dynamic-media-assets-to-pages}
 
 若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360全景媒體元件。 若要這麼做，請進入「版面」模式並啟用「動態媒體」元件。 然後，您可以將這些元件新增至頁面，並新增資產至元件。 動態媒體元件是智慧型的——他們知道您是新增影像還是視訊，而可用的設定選項也會隨之變更。
 
-如果您使用AEM做為WCM，請直接將Dynamic media資產新增至頁面。 如果您使用協力廠商來處理WCM，請連結 [或](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[內嵌資](/help/assets/dynamic-media/embed-code.md) 產。 如需多方互動網站，請參閱將最佳化 [的影像傳送至多方互動網站](/help/assets/dynamic-media/responsive-site.md)。
+如果您使用AEM做為WCM，請直接將動態媒體資產新增至頁面。 如果您使用協力廠商來處理WCM，請連結 [或](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[內嵌資](/help/assets/dynamic-media/embed-code.md) 產。 如需多方互動網站，請參閱將最佳化 [的影像傳送至多方互動網站](/help/assets/dynamic-media/responsive-site.md)。
 
 >[!NOTE]
 >
->您必須先發佈資產，才能將資產新增至AEM中的頁面。 請參閱 [發佈動態媒體資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+>您必須先發佈資產，才能將資產新增至AEM中的頁面。 See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## 新增動態媒體元件至頁面 {#adding-a-dynamic-media-component-to-a-page}
 
@@ -199,6 +199,8 @@ source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
    按一下元件中的「編輯」(Edit **** )可編輯以下「高級設定」(Advanced Settings)。
+
+* **[!UICONTROL 啟用外觀比例比對]**-在您選取智慧型裁切轉譯時，符合原始影像的外觀比例。
 
 * **[!UICONTROL 標題]**-更改「智慧裁切」影像的標題。
 
