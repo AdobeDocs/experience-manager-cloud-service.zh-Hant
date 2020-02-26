@@ -664,9 +664,7 @@ Dependent on the predicate a selection of settings are available for configurati
    >1. 在 `/apps.`
 
 
-1. 開啟「 **搜尋表單** 」主控台，並選取您要更新的組態。 例如，「網 **站管理搜尋邊欄」**。
-
-   然後按一下／點選「編 **輯搜尋表單** 」圖示。
+1. 開啟「 **搜尋表單** 」主控台，並選取您要更新的組態。 例如，「網 **站管理搜尋邊欄」**。 然後選擇 **編輯**。
 
 1. 視配置而定，將「選 **項** 」 **或「選項屬性** 」添加到配置。
 1. 更新欄位，尤其是：
@@ -685,11 +683,10 @@ Dependent on the predicate a selection of settings are available for configurati
    ![選項謂語](assets/csf-options-predicate-02.png)
 
 1. 選擇 **完成** ，保存配置。
-1. 導覽至適當的主控台(在此範例中 **為Sites**)，並開啟 **Search邊欄** 。 新定義的搜尋表單以及各種選項將會顯示。 選擇所需選項以查看搜索結果。
+1. 導覽至適當的主控台(在此範例中 **為Sites**)，並開啟 **「搜尋——篩選」邊欄** 。 新定義的搜尋表單以及各種選項將會顯示。 選擇所需選項以查看搜索結果。
 
-<!--
-   ![options being used](assets/csf-options-usage.png)
--->
+   ![使用的選項](assets/csf-options-usage.png)
+
 
 ## 使用者權限 {#user-permissions}
 
