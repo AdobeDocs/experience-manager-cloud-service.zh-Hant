@@ -2,18 +2,32 @@
 title: 配置搜索表單
 description: 將Search Forms for Adobe Experience Manager設定為雲端服務。
 translation-type: tm+mt
-source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
+source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
 
 ---
 
 
 # 配置搜索表單 {#configuring-search-forms}
 
-使用 **搜尋表單** ，自訂作者環境中各種搜尋面板中可用的搜尋刻面和篩選器。 自訂這些面板可讓搜尋功能根據您的特定需求而變得多功能。
+Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/help/sites-cloud/authoring/getting-started/search.md) 機制。
 
-預 [測語](#predicates-and-their-settings)的範圍是現成可用的。
+此外，還有一組預先定義的選項可協助您篩選內容。 這些Facet會保留預先定義的Facet, **例如「修改日期**」、「發佈狀態 **」或「** Livecopy狀態」 **** ，以協助您快速下鑽至所需的資源。
 
-您可以 [設定各種控制台和資產瀏覽器](#configuring-your-search-forms) （編輯頁面時）中使用的搜尋表單。 可 [以通過以下方式訪問用於配置這些表單](#configuring-your-search-forms) 的對話框：
+![搜尋和篩選使用](assets/csf-usage.png)
+
+這些功能的結合，可協助您快速輕鬆地從下列位置找到內容：
+
+* [搜尋與篩選](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [軌道選擇器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* 資產 [瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) （編輯頁面時）
+
+>[!NOTE]
+>
+>您可以設定基礎的 [內容搜尋和索引](/help/operations/indexing.md) 服務。
+
+使用 **搜尋表單**，您可以根據您的特定需求自訂和擴充這些面板。
+
+「搜 **尋表單** 」提供可結合和定義的預 [算](#predicates-and-their-settings) ，即開即用選擇。 可 [以通過以下方式訪問用於配置這些表單](#configuring-your-search-forms) 的對話框：
 
 * **工具**
 
@@ -21,73 +35,48 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
 
       * **搜尋表單**
 
-首次訪問此控制台時，您可以看到所有配置都有掛鎖符號。 這表示適當的組態是預設（現成可用）組態——且無法刪除。 在您自訂配置後，鎖定將消失——除非您刪 [除自訂配置](#deleting-a-configuration-to-reinstate-the-default)，否則將恢復預設（和掛鎖指示器）。
+## 預設表格 {#default-forms}
+
+當您第一次存取 **Search Forms** Console時，您會看到所有組態都有掛鎖符號。 這表示對應的組態是預設（現成可用）組態——且無法刪除。 在您自訂並儲存後，鎖定將消失。 當您刪除自訂設 [定時](#deleting-a-configuration-to-reinstate-the-default)，系統會重新顯示它，此時會恢復預設值（和掛鎖指示器）。
 
 ![配置搜索表單概述](assets/csf-overview.png)
-
-## 設定 {#configurations}
 
 可用的預設配置（按字母順序列出）包括：
 
 * **資產管理搜尋邊欄:**
 
-   此設定定義使用「資產」控制台時，使用者可使用的搜尋選項。
-
 * **頁面編輯器 (文件搜尋):**
-
-   此設定會定義在資產瀏覽器中搜尋檔案時（在編輯頁面時）可用的選項。
 
 * **頁面編輯器 (體驗片段搜尋):**
 
-   此設定會定義在資產瀏覽器（編輯頁面時）中搜尋「體驗片段」時可用的選項。
-
 * **頁面編輯器 (影像搜尋):**
-
-   此設定會定義在資產瀏覽器中搜尋影像時（在編輯頁面時）可用的選項。
 
 * **頁面編輯器 (手稿搜尋):**
 
-   此設定會定義在資產瀏覽器中搜尋手稿時（在編輯頁面時）可用的選項。
-
 * **頁面編輯器 (頁面搜尋):**
-
-   此設定會定義在資產瀏覽器中搜尋頁面時（在編輯頁面時）可用的選項。
 
 * **頁面編輯器 (段落搜尋):**
 
-   此設定會定義在資產瀏覽器中搜尋段落時（在編輯頁面時）可用的選項。
-
 * **頁面編輯器 (產品搜尋):**
-
-   此設定會定義在資產瀏覽器中搜尋產品時（在編輯頁面時）可用的選項。
 
 * **頁面編輯器 (Scene7 搜尋)**:
 
-   此設定會定義在資產瀏覽器中搜尋Scene7資源時（在編輯頁面時）可用的選項。
-
 * **頁面編輯器 (視訊搜尋)**:
-
-   此設定會定義在資產瀏覽器中搜尋影片（在編輯頁面時）時可用的選項。
 
 * **專案管理搜尋邊欄:**
 
-   此配置定義了用戶在搜索項目時可用的搜索選項。
-
 * **專案翻譯搜尋邊欄:**
-
-   此配置定義了搜索項目翻譯時用戶可用的搜索選項。
 
 * **網站管理搜尋邊欄**:
 
-   此配置定義了當使用站點控制台的搜索邊欄時用戶可用的搜索選項。
-
 * **代碼片段管理搜尋邊欄**:
-
-   此配置定義了搜索代碼片段時用戶可用的搜索選項。
 
 * **Stock 管理搜尋邊欄**:
 
-   此配置定義了搜索Stock時用戶可用的搜索選項。
+>[!NOTE]
+>
+> 如需與資產相關的搜尋表單的詳細資訊，請參閱「 [資產——搜尋面」](/help/assets/search-facets.md)
+
 
 ## 謂語及其設定 {#predicates-and-their-settings}
 
@@ -168,7 +157,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>日期範圍</td>
-   <td>搜尋在指定範圍內建立的日期屬性資產。 在「搜尋」面板中，您可以指定開始和結束日期。</td>
+   <td>搜尋在指定範圍內為日期屬性建立的資源。 在「搜尋」面板中，您可以指定開始和結束日期。</td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -181,7 +170,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>到期狀態</td>
-   <td>根據到期狀態搜尋資產。</td>
+   <td>根據到期狀態搜尋資源。</td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -191,7 +180,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>檔案大小</td>
-   <td>根據資產大小搜尋資產。</td>
+   <td>根據資源大小篩選資源。</td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -205,7 +194,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
    <td>根據檔案/MIME類型搜尋資產。</td>
    <td>
     <ul>
-     <li>欄位標籤</li>
+     <li>欄位標籤</li> 
      <li>屬性名稱*</li>
      <li>MIME 類型路徑</li>
      <li>說明</li>
@@ -214,7 +203,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>全文</td>
-   <td>Search predicate for full-text searches.</td>
+   <td>Search predicate for full-text searches. 它會與'jcr:contains´運算子映射。</td>
    <td>
     <ul>
      <li>預留位置</li>
@@ -304,7 +293,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>頁面狀態</td>
-   <td>根據頁面狀態搜尋頁面。</td>
+   <td>根據頁面狀態篩選頁面。</td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -315,7 +304,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>路徑</td>
-   <td>搜尋位於特定路徑下的資產。</td>
+   <td>根據特定路徑進行篩選。 您可以指定多個路徑作為選項。</td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -325,7 +314,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>路徑瀏覽器</td>
-   <td>提供要搜尋的路徑瀏覽器。</td>
+   <td>提供路徑瀏覽器，以在預先定義的根路徑下進行搜尋。</td>
    <td>
     <ul>
      <li>預留位置</li>
@@ -360,7 +349,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>發佈狀態</td>
-   <td>根據資產的發佈狀態搜尋資產</td>
+   <td>根據資源的發佈狀態篩選資源。</td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -380,7 +369,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>評等</td>
-   <td>根據資產的評分搜尋資產。<br /> </td>
+   <td>根據資源的平均分級搜尋資源。<br /> </td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -391,7 +380,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>相對日期</td>
-   <td>根據資產建立的相對日期來搜尋資產<br /> </td>
+   <td>根據資源建立的相對日期篩選資源。 例如，1週前，1個月前。</td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -497,23 +486,24 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
 -->
 
-<!--
 >[!NOTE]
 >
->* The common search predicates are defined in:
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>* 常見搜索謂語定義於：
+   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >
+此資訊僅供參考，您不得變更 `/libs`。
+
+<!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
 > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * These are deprecated and only available for backward compatibility.
 >
->This information is for reference only, you must not make changes to `/libs`.
 -->
 
 ### 謂詞設定 {#predicate-settings}
 
-Dependent on the predicate a selection of settings are available for configuration:
+Dependent on the predicate a selection of settings are available for configuration, including:
 
 * **欄位標籤**
 
@@ -659,22 +649,19 @@ Dependent on the predicate a selection of settings are available for configurati
 
    * `jcr:title` -要在搜索邊欄中顯示的欄位標籤
    * `value` -要搜索的屬性值
+   ![謂詞定義](assets/csf-options-predicate-01.png)
 
-<!--
-   ![chlimage_1-379](assets/chlimage_1-379.png)
--->
-
->[!NOTE]
->
->您 ***不得*** 更改路徑中的任 `/libs` 何內容。
->
->這是因為下次升級 `/libs` 實例時會覆寫的內容（套用修補程式或功能套件時可能會覆寫）。
->
->配置和其他更改的建議方法為：
->
->1. 重新建立所需項目，如其中 `/libs`所存在 `/apps`。 在本例中，來源為：
->1. `/libs/cq/gui/content/common/options/predicates`
->1. 在 `/apps.`
+   >[!NOTE]
+   >
+   >您 ***不得*** 更改路徑中的任 `/libs` 何內容。
+   >
+   >這是因為下次升級 `/libs` 實例時會覆寫的內容（套用修補程式或功能套件時可能會覆寫）。
+   >
+   >配置和其他更改的建議方法為：
+   >
+   >1. 重新建立所需項目，如其中 `/libs`所存在 `/apps`。 在本例中，來源為：
+   >1. `/libs/cq/gui/content/common/options/predicates`
+   >1. 在 `/apps.`
 
 
 1. 開啟「 **搜尋表單** 」主控台，並選取您要更新的組態。 例如，「網 **站管理搜尋邊欄」**。
@@ -695,16 +682,13 @@ Dependent on the predicate a selection of settings are available for configurati
       選取您的選項所在的路徑。 例如：
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-
-<!--
-   ![chlimage_1-380](assets/chlimage_1-380.png)
--->
+   ![選項謂語](assets/csf-options-predicate-02.png)
 
 1. 選擇 **完成** ，保存配置。
-1. 導覽至適當的主控台(在此範例中 **為Sites**)，並開啟 **Search邊欄** 。 新定義的搜尋表單以及各種選項將會顯示。 選擇所需選項以查看搜索結果：
+1. 導覽至適當的主控台(在此範例中 **為Sites**)，並開啟 **Search邊欄** 。 新定義的搜尋表單以及各種選項將會顯示。 選擇所需選項以查看搜索結果。
 
 <!--
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![options being used](assets/csf-options-usage.png)
 -->
 
 ## 使用者權限 {#user-permissions}
