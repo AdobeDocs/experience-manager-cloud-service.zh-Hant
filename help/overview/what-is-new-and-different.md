@@ -2,12 +2,12 @@
 title: Adobe Experience manager雲端服務的不同與新功能
 description: '不同與新功能- Adobe Experience Manager(AEM)雲端服務。 '
 translation-type: tm+mt
-source-git-commit: e6465e018ff45638865f9ca2172a8e72e12612a9
+source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
 
 ---
 
 
-# 新增功能與不同功能 {#what-is-new-and-what-is-different}
+# 新增功能與不同之處 {#what-is-new-and-what-is-different}
 
 多年來，AEM已推出兩種功能：
 
@@ -17,7 +17,7 @@ source-git-commit: e6465e018ff45638865f9ca2172a8e72e12612a9
 
 以前的這些方式與AEM（雲端服務）之間有內在的差異：
 
-* [建築](#architecture)
+* [架構](#architecture)
 * [升級](#upgrades)
 * [Cloud Manager](#cloud-manager)
 * [入門](#onboarding)
@@ -36,7 +36,7 @@ source-git-commit: e6465e018ff45638865f9ca2172a8e72e12612a9
 >
 >如需內部部署和受管理服務版本的詳細資訊，請參閱 [AEM 6.5的檔案集](https://helpx.adobe.com/support/experience-manager/6-5.html)。
 
-## 建築 {#architecture}
+## 架構 {#architecture}
 
 >[!NOTE]
 >
@@ -172,12 +172,16 @@ Cloud manager已發展為自助服務入口網站，可在其中建立並設定A
 * 應用程式碼和配置必須儲存在關聯的Cloud manager程式的Git代碼儲存庫中。
 * 應用程式碼和設定必須與最新版的基準AEM影像相容（可能每天都會變更）。
    * 客戶應用程式必須使用與Cloud manager環境關聯的Cloud manager管道構建和部署。
-* 客戶應用程式必須傳遞管道中強制執行的所有程式碼品質、安全性和效能閘道。
+* 客戶應用程式必須傳遞管道中強制執行的所有程式碼品質、安全性和效能門檻。
 * 為客戶應用程式構建的映像必須由Cloud manager管道部署。
 
 此程式通常稱為雲端開發。 由於端對端持續時間預計需要幾分鐘（視應用程式的複雜性而定，從20到50），因此在雲端嘗試進行擱置中的程式碼和組態變更之前，必須採用快速開發方法。
 
 AEM的使用者不再可直接存取Web Console，因為Web Console會管理OSGI組合及其相關的組態，而且先前也是AEM quickStart的一部分。 此介面仍可透過使用新的開發人員主控台，以唯讀模式存取。 使用此主控台，開發人員可直接選擇並登入作者或發佈服務的任何特定節點，然後存取預設封鎖的區域。
+
+>[!NOTE]
+>
+>另請參閱 [OSGi配置](/help/implementing/deploying/overview.md#osgi-configuration)
 
 開發人員的另一個常見需求是快速存取各種環境的記錄檔。 以AEM為雲端服務，作者和發佈節點中不同節點的記錄檔可透過Cloud manager取得，可以是可下載的檔案，也可以是透過API取得。
 
