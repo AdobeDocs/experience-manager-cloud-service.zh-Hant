@@ -2,12 +2,12 @@
 title: 新增使用者和角色——必要項目
 description: 新增使用者和角色——必要項目
 translation-type: tm+mt
-source-git-commit: 1d2d39ba3dd84b79420da94c985b00aa1bb5b806
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
 
-# 新增使用者和角色——必要項目 {#add-users-roles}
+# 新增使用者和角色 {#add-users-roles}
 
 
 Cloud Manager中的許 [!UICONTROL 多功能] ，都需要特定的權限才能運作。 例如，僅允許某些用戶為程式設定關鍵績效指標(KPI)。 這些權限在邏輯上分組為角色。
