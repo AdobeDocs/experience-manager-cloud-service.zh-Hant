@@ -3,7 +3,7 @@ title: 在Adobe Experience Manager Sites製作工作流程中，使用連結的�
 description: 在其他Experience Manager網站部署中建立網頁時，請使用遠端Adobe Experience Manager Assets部署中的可用資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45371da5617a0d87105dbf2f574de15bf0698d98
+source-git-commit: 70ac4bdc284f14012f2e0730f52fb932d04e2a0e
 
 ---
 
@@ -27,9 +27,9 @@ AEM Sites提供建立網頁的功能，而AEM Assets是數位資產管理(DAM)�
 * 使用者是每個部署中適當使用者群組的一部分。
 * 對於Adobe Experience manager部署類型，符合其中一項支援的標準。
 
-   |  | AEM Sites as a Cloud Service | AMS上的AEM 6.5網站 | AEM 6.5內部部署網站 |
+   |  | AEM Sites 雲端服務 | AMS上的AEM 6.5網站 | AEM 6.5內部部署網站 |
    |---|---|---|---|
-   | **AEM Assets as a Cloud Service** | 支援 | 支援 | 支援 |
+   | **AEM Assets 雲端服務** | 支援 | 支援 | 支援 |
    | **AEM 6.5 Assets on AMS** | 不支援 | 支援 | 支援 |
    | **AEM 6.5內部部署資產** | 不支援 | 不支援 | 不支援 |
 
@@ -37,14 +37,10 @@ AEM Sites提供建立網頁的功能，而AEM Assets是數位資產管理(DAM)�
 
 作者可在Content Finder中搜尋影像和下列類型的檔案，並在「頁面編輯器」中使用搜尋的資產。 可將檔案新增至元 `Download` 件，並將影像新增至元 `Image` 件。 作者也可以在任何可延伸預設或元件的自訂AEM元件中新增遠 `Download` 端資 `Image` 產。
 
-* Microsoft Word（DOC和DOCX）
-* Microsoft Excel（XLS和XLSX）
-* Microsoft powerPoint（PPT和PPTX）
-* Adobe PDF(PDF)
-* OpenDocument Text(ODT)
-* RTF格式
-* 純文字(TXT)
-* 網頁(HTML)
+支援的格式清單包括：
+
+* **影像格式**:支援影像元件所支 [援的影像](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) 格式。 不支援動態媒體元件。
+* **檔案格式**:請參 [閱Connected Assets支援的檔案格式](file-format-support.md#supported-document-formats)。
 
 ### Users and groups involved {#users-and-groups-involved}
 
