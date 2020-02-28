@@ -3,7 +3,7 @@ title: 在Adobe Experience Manager Sites製作工作流程中，使用連結的�
 description: 在其他Experience Manager網站部署中建立網頁時，請使用遠端Adobe Experience Manager Assets部署中的可用資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70ac4bdc284f14012f2e0730f52fb932d04e2a0e
+source-git-commit: 8b638539dcaee3df8676176c22e1dd0c900b9b65
 
 ---
 
@@ -35,9 +35,7 @@ AEM Sites提供建立網頁的功能，而AEM Assets是數位資產管理(DAM)�
 
 ### 支援的檔案格式 {#mimetypes}
 
-作者可在Content Finder中搜尋影像和下列類型的檔案，並在「頁面編輯器」中使用搜尋的資產。 可將檔案新增至元 `Download` 件，並將影像新增至元 `Image` 件。 作者也可以在任何可延伸預設或元件的自訂AEM元件中新增遠 `Download` 端資 `Image` 產。
-
-支援的格式清單包括：
+作者可在Content Finder中搜尋影像和下列類型的檔案，並在「頁面編輯器」中使用搜尋的資產。 可將檔案新增至元 `Download` 件，並將影像新增至元 `Image` 件。 作者也可以在任何可延伸預設或元件的自訂AEM元件中新增遠 `Download` 端資 `Image` 產。 支援的格式清單包括：
 
 * **影像格式**:支援影像元件所支 [援的影像](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) 格式。 不支援動態媒體元件。
 * **檔案格式**:請參 [閱Connected Assets支援的檔案格式](file-format-support.md#supported-document-formats)。
@@ -115,7 +113,7 @@ AEM管理員可以建立此整合。 在建立後，使用它所需的權限會�
 
 作者可以在單一網頁中使用本機DAM和遠端DAM例項兩者上的可用資產。 使用內容搜尋器可在搜尋本機DAM或搜尋遠端DAM之間切換。
 
-只有那些具有與本地Sites實例相同分類層次結構的完全對應標籤的遠程資產的標籤才會被讀取。 會捨棄任何其他標籤。 作者可以使用遠端AEM部署上所有顯示的標籤來搜尋遠端資產，因為AEM提供全文搜尋。
+只有那些具有與本地Sites實例相同分類層次結構的完全對應標籤的遠程資產的標籤才會被讀取。 會捨棄任何其他標籤。 作者可以使用遠端AEM部署上的所有標籤來搜尋遠端資產，因為AEM提供全文搜尋。
 
 ### 使用的逐步介紹 {#walk-through-of-usage}
 
