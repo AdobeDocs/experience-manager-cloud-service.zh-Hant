@@ -3,7 +3,7 @@ title: 瞭解資產微服務如何在雲端處理您的數位資產
 description: 使用雲端原生和可擴充的資產處理微服務來處理您的數位資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 ---
 
@@ -26,7 +26,7 @@ Asset microservices使用雲端服務提供可擴充且具彈性的資產處理�
 * 改善資產處理的彈性。 處理非典型檔案（如損壞的檔案或極大的檔案）時的潛在問題不會再影響部署的效能。
 * 簡化管理員的資產處理設定。
 * Adobe負責管理和維護資產處理設定，以針對各種檔案類型提供處理轉譯、中繼資料和文字擷取的最知名設定
-* 在適用情況下會使用原生的Adobe檔案處理服務，提供高精確輸出並有效率地處理Adobe專屬格式。
+* 在適用情況下會使用原生Adobe檔案處理服務，提供高精確輸出，並 [有效率地處理Adobe專屬格式](file-format-support.md)。
 * 能夠設定後處理工作流程，以新增使用者專屬的動作和整合。
 
 Asset microservices可協助您避免需要協力廠商轉換工具（例如ImageMagick）並簡化系統的組態，同時為一般檔案類型提供現成可用的功能。
