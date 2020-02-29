@@ -3,7 +3,7 @@ title: 使用媒體處理常式和工作流程處理資產
 description: 瞭解各種媒體處理常式，以及如何在工作流程中使用它們來執行資產上的工作。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -116,7 +116,7 @@ AEM有一些處理資產的預設工作流程。 要查看它們，請開啟「�
 
 可擴充現有的工作流程，並建立新的工作流程，以根據特定需求處理資產。
 
-下列範例說明如何增強 **[!UICONTROL AEM Assets Synchronization]** （AEM Assets同步化）工作流程，以便為除PDF檔案外的所有資產產生子資產。
+下列範例說明如何增強 **[!UICONTROL AEM Assets Synchronization]**  (AEM Assets同步化) 工作流程，以便為除PDF檔案外的所有資產產生子資產。
 
 ### 禁用／啟用媒體處理程式 {#disabling-enabling-a-media-handler}
 
@@ -125,7 +125,7 @@ AEM有一些處理資產的預設工作流程。 要查看它們，請開啟「�
 要啟用／禁用媒體處理程式：
 
 1. 在瀏覽器中，導覽至 `https://<host>:<port>/system/console/components`。
-1. 按一下 **[!UICONTROL 媒體處理程式名稱旁邊的「禁用]** 」。 例如： `com.day.cq.dam.handler.standard.mp3.Mp3Handler`。
+1. 按一下 **[!UICONTROL 媒體處理程式名稱旁邊的「禁用]** 」。 For example: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. 重新整理頁面：媒體處理常式旁會顯示圖示，指出其已停用。
 1. 若要啟用媒體處理常式，請按一 **[!UICONTROL 下媒體處理常式]** 名稱旁的「啟用」。
 
@@ -151,9 +151,9 @@ AEM有一些處理資產的預設工作流程。 要查看它們，請開啟「�
 
 介面和類包括：
 
-* `com.day.cq.dam.api.handler.AssetHandler` 介面：此介面說明為特定MIME類型添加支援的服務。 要添加新的MIME類型，必須實施此介面。 介麵包含匯入和匯出特定檔案、建立縮圖和擷取中繼資料的方法。
+* `com.day.cq.dam.api.handler.AssetHandler` 介面：此介面說明新增支援特定MIME類型的服務。 要添加新的MIME類型，必須實施此介面。 介麵包含匯入和匯出特定檔案、建立縮圖和擷取中繼資料的方法。
 * `com.day.cq.dam.core.AbstractAssetHandler` 類別：此類別可做為所有其他資產處理常式實作的基礎，並提供常用的功能。
-* `com.day.cq.dam.core.AbstractSubAssetHandler` 類別:
+* `com.day.cq.dam.core.AbstractSubAssetHandler` 類別：
    * 此類別可做為所有其他資產處理常式實作的基礎，並提供常用功能以及子資產擷取的常用功能。
    * 開始實施的最佳方式是繼承所提供的抽象實施，以處理大部分事物並提供合理的預設行為：com.day.cq.dam.core.AbstractAssetHandler類別。
    * 此類已提供抽象服務描述符。 因此，如果您繼承此類別並使用maven-sling-plugin，請確定您將inherit標幟設為true。
@@ -170,7 +170,7 @@ AEM有一些處理資產的預設工作流程。 要查看它們，請開啟「�
 
 介面和類包括：
 
-* `com.day.cq.dam.api.handler.AssetHandler` 介面：此介面說明為特定MIME類型添加支援的服務。 要添加新的MIME類型，必須實施此介面。 介麵包含匯入和匯出特定檔案、建立縮圖和擷取中繼資料的方法。
+* `com.day.cq.dam.api.handler.AssetHandler` 介面：此介面說明新增支援特定MIME類型的服務。 要添加新的MIME類型，必須實施此介面。 介麵包含匯入和匯出特定檔案、建立縮圖和擷取中繼資料的方法。
 * `com.day.cq.dam.core.AbstractAssetHandler` 類別：此類別可做為所有其他資產處理常式實作的基礎，並提供常用的功能。
 * `com.day.cq.dam.core.AbstractSubAssetHandler` 類別：此類別可做為所有其他資產處理常式實作的基礎，並提供常用功能以及子資產擷取的常用功能。
 
@@ -415,7 +415,7 @@ AEM可讓您在工作流程中執行任何命令列工具，以轉換資產（�
 
    >[!NOTE]
    >
-   >在某些Windows版本（例如Windows SE）中，轉換命令可能無法運行，因為它與Windows安裝中的本機轉換實用程式衝突。 在這種情況下，請提及將影像檔案轉換為縮圖的ImageMagick公用程式的完整路徑。 例如， `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`。
+   >在某些Windows版本（例如Windows SE）中，轉換命令可能無法運行，因為它與Windows安裝中的本機轉換實用程式衝突。 在這種情況下，請提及將影像檔案轉換為縮圖的ImageMagick公用程式的完整路徑。 For example, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
 1. 若要查看工具是否正常運行，請將。jpg影像新增至工作目錄，然後在命令列上執 `<image-name>.jpg -flip <image-name>-flipped.jpg` 行命令convert。
 
@@ -453,7 +453,7 @@ AEM可讓您在工作流程中執行任何命令列工具，以轉換資產（�
   </tr>
   <tr>
    <td> mime:&lt;mime-type&gt;</td>
-   <td><p>可選引數。 如果資產與其中一個引數具有相同mime類型，則會套用此程式。</p> <p>可定義數種MIME類型。</p> </td>
+   <td><p>可選引數。 如果資產與其中一個引數的MIME類型相同，則會套用此程式。</p> <p>可定義數種MIME類型。</p> </td>
   </tr>
   <tr>
    <td> tn:&lt;width&gt;:&lt;height&gt;</td>
@@ -461,7 +461,7 @@ AEM可讓您在工作流程中執行任何命令列工具，以轉換資產（�
   </tr>
   <tr>
    <td> cmd:&lt;command&gt;</td>
-   <td><p>定義將執行的命令。 語法取決於命令行工具。</p> <p>只能定義一個命令。</p> <p>以下變數可用於建立命令：<br/></p> <p><code>${filename}</code>:輸入檔案的名稱，例如original.jpg<br/><code>${file}</code>:輸入檔案的完整路徑名稱，例如/tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>:輸入檔案的目錄，例如/tmp/cqdam0816.tmp。<br/> <code>${basename}</code>:未加上副檔名的輸入檔案名稱，例如原始<br/><code>${extension}</code>:輸入檔案的副檔名，例如jpg<br/></p></td>
+   <td><p>定義將執行的命令。 語法取決於命令行工具。</p> <p>只能定義一個命令。</p> <p>以下變數可用於建立命令：<br/></p> <p><code>${filename}</code>:輸入檔案的名稱，例如「original.jpg」<br/><code>${file}</code>:輸入檔的完整路徑名稱，例如「/tmp/cqdam0816.tmp/original.jpg'<br/><code>${directory}</code>:輸入檔案的目錄，例如「/tmp/cqdam0816.tmp」。<br/> <code>${basename}</code>:未加上副檔名的輸入檔案名稱，例如原始<br/><code>${extension}</code>:輸入檔案的副檔名，例如JPG<br/></p></td>
   </tr>
  </tbody>
 </table>
