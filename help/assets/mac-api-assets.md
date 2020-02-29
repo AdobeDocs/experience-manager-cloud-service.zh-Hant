@@ -1,14 +1,14 @@
 ---
-title: 資產HTTP API
+title: Assets HTTP API
 description: 瞭解Assets HTTP API的實作、資料模型和功能。 使用資產HTTP API來執行資產相關的各種工作。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3db5a1d668ad88e340a1580900d222c370b8d3e8
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# 資產HTTP API {#assets-http-api}
+# Assets HTTP API {#assets-http-api}
 
 ## 概覽 {#overview}
 
