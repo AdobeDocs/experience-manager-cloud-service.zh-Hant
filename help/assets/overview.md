@@ -1,14 +1,14 @@
 ---
-title: 資產雲端服務簡介
+title: Assets 雲端服務簡介
 description: 資產即雲端服務的新增功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# 將資產作為雲端服務簡介 {#assets-cloud-service-introduction}
+# Assets 雲端服務簡介 {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -18,7 +18,7 @@ Adobe Experience Manager Assets as a Cloud Service為企業提供雲端原生Paa
 
 企業需要針對多裝置、跨地理位置和多語言使用案例，支援各種檔案格式和內容解析度。 資產處理和儲存需求需要資源和功能，這些資源和功能可能會使傳統解決方案負擔過重。 有時，資產處理的技術限制無法產生預期結果，有時儲存成本會阻礙利潤率。
 
-首先，請瞭解雲 [端原生產品的優點](#solution-benefits)。 查看AEM的Cloud Service [顯著變更](/help/release-notes/aem-cloud-changes.md) ，這些變更也會影響Assets，接著Assets的顯 [著變更](/help/assets/assets-cloud-changes.md)。
+首先，請瞭解雲 [端原生產品的優點](#solution-benefits)。 查看AEM的Cloud Service [顯著變更](/help/release-notes/aem-cloud-changes.md) ，這些變更也會影響Experience Manager Assets，然後是資產 [的顯著變更](/help/assets/assets-cloud-changes.md)。
 
 閱讀以瞭解新 [Assets功能的詳細資訊](#whats-new-assets) ，以及 [已知問題](/help/release-notes/known-issues.md)。 查看已過時 [或已移除的功能清單](/help/release-notes/deprecated-removed-features.md) ，以瞭解本版本中已移除的功能，並查看此 [即將推出的功能清單](/help/release-notes/known-issues.md#upcoming-assets-capabilities) ，以瞭解近期即將推出的功能。 最後，請透過此辭彙表瞭解AEM [詞語](/help/overview/terminology.md)。
 
