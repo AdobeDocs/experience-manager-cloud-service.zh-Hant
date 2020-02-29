@@ -3,7 +3,7 @@ title: 中繼資料圖式參考
 description: '瞭解描述資產中繼資料的標準慣例，包括Dublin Core、IPTC和其他中繼資料結構。 '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
