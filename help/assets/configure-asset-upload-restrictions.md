@@ -3,7 +3,7 @@ title: 設定資產上傳限制
 description: 瞭解如何設定Adobe Experience Manager(AEM)Assets，以限制使用者可上傳的資產（檔案）類型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -21,5 +21,4 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
-1. 按一下／點選「 **[!UICONTROL 儲存]** 」以儲存變更。 如果您為允許的MIME類型指定MIME字串，則對於任何MIME類型不符合這些欄位中已設定之MIME字串的資產，上傳作業會失敗。
-
+1. 按一下/點選「 **[!UICONTROL 儲存]** 」以儲存變更。如果您為允許的MIME類型指定MIME字串，則對於任何MIME類型不符合這些欄位中已設定之MIME字串的資產，上傳作業會失敗。
