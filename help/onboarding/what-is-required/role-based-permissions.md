@@ -2,7 +2,7 @@
 title: 基於角色的權限
 description: 基於角色的權限
 translation-type: tm+mt
-source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
+source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
 
 ---
 
@@ -26,9 +26,7 @@ source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
 | 更新環境 | 更新Prod+Stage、Dev、Playround環境。 | x | x |  |  |
 | 刪除環境 | 刪除非生產、開發、操場環境。 | x | x |  |  |
 | 刪除環境 | 刪除Prod+舞台環境。 |  |  |  |  |
-| Hibernate環境 | Hibernate非生產、開發、操場環境。 | x | x |  |  |
 | 方案設定 | 設定方案（包括KPI）。 | x |  |  |  |
-| 方案設定 | 配置擴展策略(一般：配置最大層數和按需橫向擴展：選擇加入)。 | x |  |  |  |
 | 方案設定 | Git Commit Access（Git提交訪問）。 |  | x |  | x |
 | 管線設定 | 設定或編輯管線。 |  | x |  |  |
 | 管線執行 | 啟動管線。 | x | x |  |  |
@@ -36,10 +34,7 @@ source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
 | 管線執行 | 提供GoLive Approval。 | x | x | x |  |
 | 管線執行 | 排程生產部署。 | x | x | x |  |
 | 管線執行 | 恢復生產管線。 |  |  |  |  |
-| 選擇加入（或退出）布建 | 從「計畫設定」螢幕選擇加入按需水準設定。 配置最大「允許」P-D段，該段可在PROD和非PROD環境上水準縮小。 | x |  |  |  |
 | 管理環境 | 從「管理環境」畫面新增「發佈——分派器」區段。 | x | x |  |  |  |
-| 產品更新 | AEM Update Card已顯示，並帶使用者進入「更新精靈」。 | x | x | x | x |
-| 產品更新 | 產品更新精靈可供操作。 | x | x |  |  |
 | 推播更新 | 啟動推送更新管線。 |  |  |  |  |
 | 產生個人存取Token | 產生個人存取Token。 |  | x |  | x |
 
