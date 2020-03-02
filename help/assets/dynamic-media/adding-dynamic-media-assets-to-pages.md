@@ -2,16 +2,16 @@
 title: 新增動態媒體資產至頁面
 description: 如何在AEM中將Dynamic media元件新增至頁面
 translation-type: tm+mt
-source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
+source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
 
 ---
 
 
 # Adding Dynamic Media Assets to Pages{#adding-dynamic-media-assets-to-pages}
 
-若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360全景媒體元件。 若要這麼做，請進入「版面」模式並啟用「動態媒體」元件。 然後，您可以將這些元件新增至頁面，並新增資產至元件。 動態媒體元件是智慧型的——他們知道您是新增影像還是視訊，而可用的設定選項也會隨之變更。
+若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360全景媒體元件。若要這麼做，請進入「版面」模式並啟用「動態媒體」元件。然後，您可以將這些元件新增至頁面，並新增資產至元件。動態媒體元件是智慧型的——他們知道您是新增影像還是視訊，而可用的設定選項也會隨之變更。
 
-如果您使用AEM做為WCM，請直接將動態媒體資產新增至頁面。 如果您使用協力廠商來處理WCM，請連結 [或](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[內嵌資](/help/assets/dynamic-media/embed-code.md) 產。 如需多方互動網站，請參閱將最佳化 [的影像傳送至多方互動網站](/help/assets/dynamic-media/responsive-site.md)。
+如果您使用AEM做為WCM，請直接將動態媒體資產新增至頁面。如果您使用協力廠商來處理WCM，請連結 [或](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[內嵌資](/help/assets/dynamic-media/embed-code.md) 產。如需多方互動網站，請參閱將最佳化 [的影像傳送至多方互動網站](/help/assets/dynamic-media/responsive-site.md)。
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 您可透過下列兩種方式將Dynamic media元件當地語系化：
 
-* 在「網站」的網頁中，開啟「屬 **[!UICONTROL 性]** 」並選 **[!UICONTROL 取「進階]** 」標籤。 選擇所要的本地化語言。
+* 在「網站」的網頁中，開啟「屬 **[!UICONTROL 性]** 」並選 **[!UICONTROL 取「進階]** 」標籤。選擇所要的本地化語言。
 
    ![chlimage_1-172](assets/chlimage_1-538.png)
 
@@ -90,7 +90,7 @@ source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 >如果您的網頁有下列項目：
 >
 >* 在相同頁面上使用多個動態媒體元件例項。
->* 每個實例都使用相同的資產類型。
+>* 每個例項都使用相同的資產類型。
 >
 >
 請注意，不支援為該頁面上的每個動態媒體元件指派不同的檢視器預設集。
@@ -113,7 +113,7 @@ source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 >[!NOTE]
 >
->依預設，動態媒體影像元件是可調式的。 如果要使其成為固定大小，請在「高級」( **[!UICONTROL Advanced]** )頁籤的元件中使用「寬度」( **[!UICONTROL Width)和「高度」(Height]** )設定它 ****。
+>依預設，動態媒體影像元件是可調式的。如果要使其成為固定大小，請在「高級」( **[!UICONTROL Advanced]** )頁籤的元件中使用「寬度」( **[!UICONTROL Width)和「高度」(Height]** )設定它 ****。
 
 * **[!UICONTROL 檢視器預設]**-從下拉式選單中選取現有的檢視器預設。 如果您所尋找的檢視器預設集不可見，您可能需要將它顯示。 請參閱管理檢視器預設集。 如果您使用影像預設集，則無法選取檢視器預設集，反之亦然。
 
@@ -133,7 +133,7 @@ source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
-   您可以點選元件中的「編輯」，編輯下列 **[!UICONTROL 進階設定]** 。
+   You can edit the following Advanced Settings by tapping **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL 標題]**-更改影像的標題。
 
@@ -156,7 +156,7 @@ source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-按一下元件中的「編輯」，即可編輯下列 **[!UICONTROL 動態媒體]** 設定。
+You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
    * 將標題檔案與視訊關聯：標 [題](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * 將導覽檔案與視訊建立關聯：導 [覽](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
-   按一下元件中的「編輯」(Edit **** )可編輯以下「高級設定」(Advanced Settings)。
+   You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONCONTROL標題**-更改視頻的標題。
 
@@ -188,19 +188,19 @@ source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 ![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
 
-按一下元件中的「編輯」，即可編輯下列 **[!UICONTROL 動態媒體]** 設定。
+You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
->依預設，動態媒體影像元件是可調式的。 如果要使其成為固定大小，請在「高級」( **[!UICONTROL Advanced]** )頁籤的元件中使用「寬度」( **[!UICONTROL Width)和「高度」(Height]** )設定它 ****。
+>依預設，動態媒體影像元件是可調式的。如果要使其成為固定大小，請在「高級」( **[!UICONTROL Advanced]** )頁籤的元件中使用「寬度」( **[!UICONTROL Width)和「高度」(Height]** )設定它 ****。
 
 * **[!UICONTROL 影像修飾元]**-您可以提供其他影像指令來套用影像效果。 這些說明在「影像預設集」和「影像伺服命令」參考中。
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
-   按一下元件中的「編輯」(Edit **** )可編輯以下「高級設定」(Advanced Settings)。
+   You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL 啟用外觀比例比對]**-在您選取智慧型裁切轉譯時，符合原始影像的外觀比例。
+* **[!UICONTROL 啟用外觀比例比對]**-選取此選項，讓動態媒體挑選外觀比例最符合原始影像外觀比例的智慧型裁切轉譯。
 
 * **[!UICONTROL 標題]**-更改「智慧裁切」影像的標題。
 
@@ -236,7 +236,7 @@ source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 ![chlimage_1-174](assets/chlimage_1-541.png)
 
-您可以點選元件中的「編 **[!UICONTROL 輯]** 」( **[!UICONTROL Edit]** )，編輯下列「一般」(General)設定。
+You can edit the following **[!UICONTROL General]** settings by tapping **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL 檢視器預設]**-從下拉式選單中選取現有的檢視器預設。 如果您所尋找的檢視器預設集不可見，您可能需要將它顯示。 檢視器預設集必須先發佈，才能使用。 請參閱管理檢視器預設集。
 
@@ -246,7 +246,7 @@ source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 * **[!UICONTROL 高度]**-如果希望影像為固定大小，請以像素輸入值。 將此值留空可讓資產具有適應性。
 
-   您可以按一下元件 **[!UICONTROL 中的「編輯」]** ，編輯下列「新 **** 增至購物車」設定。
+   You can edit the following **[!UICONTROL Add To Cart]** settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL 顯示產品資產]**-預設情況下，此值為選定值。 產品資產會依「商務」模組中的定義，顯示產品的影像。 清除核取標籤，不會顯示產品資產。
 
@@ -268,10 +268,10 @@ source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 >如果您的網頁有下列項目：
 >
 >* 在相同頁面上 **[!UICONTROL 使用Panoramic Media]** （全景媒體）元件的多個例項。
->* 每個實例都使用相同的資產類型。
+>* 每個例項都使用相同的資產類型。
 >
 >
-請注意，不支援為該頁面上的每個 **[!UICONTROL Panoramic Media]** （全景媒體）元件指派不同的檢視器預設集。
+請注意，不支援為該頁面上的每個 **[!UICONTROL Panoramic Media]**  (全景媒體) 元件指派不同的檢視器預設集。
 >
 >但是，您可以針對頁面內使用相同類型資產的所有全景媒體元件使用相同的檢視器預設集。
 
