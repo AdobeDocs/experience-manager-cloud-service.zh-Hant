@@ -2,7 +2,7 @@
 title: 基於角色的權限
 description: 基於角色的權限
 translation-type: tm+mt
-source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
+source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
 
 ---
 
@@ -17,12 +17,8 @@ source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
 
 | 權限 | 說明 | 企業負責人 | 部署管理員 | 計畫經理 | 開發人員 |
 |--- |--- |--- |--- |--- |--- |
-| 建立租用戶 | 建立新租用戶。 |  |  |  |  |
-| 更新租用戶 | 更新租用戶。 |  |  |  |  |
 | 添加程式 | 新增計畫。 | x |  |  |  |
 | 建立環境 | 建立Prod+Stage、開發、操場環境。 | x | x |  |  |
-| 配置環境變數 | 配置環境變數和機密。 |  | x |  | x |
-| 添加或刪除自定義域名、上傳或更新SSL證書 | 新增／移除自訂網域名稱、上傳／更新SSL憑證。 | x | x |  |  |
 | 更新環境 | 更新Prod+Stage、Dev、Playround環境。 | x | x |  |  |
 | 刪除環境 | 刪除非生產、開發、操場環境。 | x | x |  |  |
 | 刪除環境 | 刪除Prod+舞台環境。 |  |  |  |  |
