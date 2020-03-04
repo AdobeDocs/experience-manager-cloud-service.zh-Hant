@@ -1,6 +1,6 @@
 ---
 title: 新增動態媒體資產至頁面
-description: 如何在AEM中將Dynamic media元件新增至頁面
+description: 如何在AEM中將Dynamic Media元件新增至頁面
 translation-type: tm+mt
 source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
 
@@ -52,7 +52,7 @@ source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
 
 ## 本地化動態媒體元件 {#localizing-dynamic-media-components}
 
-您可透過下列兩種方式將Dynamic media元件當地語系化：
+您可透過下列兩種方式將Dynamic Media元件當地語系化：
 
 * 在「網站」的網頁中，開啟「屬 **[!UICONTROL 性]** 」並選 **[!UICONTROL 取「進階]** 」標籤。選擇所要的本地化語言。
 
@@ -208,7 +208,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
-* **[!UICONTROL URL, Open in]**- You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟它。
+* **[!UICONTROL URL, Open in]**- You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟該URL。
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
@@ -307,10 +307,10 @@ HTTP/2是全新、更新的Web通訊協定，可改善瀏覽器和伺服器的�
 
 >[!MORELIKETHIS]
 >
->* [在AEM Dynamic media中使用視訊播放器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [搭配AEM Dynamic media使用互動式視訊](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [使用AEM Dynamic media瞭解資產檢視器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [搭配AEM Dynamic media使用自訂視訊縮圖](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [瞭解使用AEM Dynamic media進行色彩管理](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [搭配AEM Dynamic media使用影像銳利化](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [在AEM Dynamic Media中使用視訊播放器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [搭配AEM Dynamic Media使用互動式視訊](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [使用AEM Dynamic Media瞭解資產檢視器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [搭配AEM Dynamic Media使用自訂視訊縮圖](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [瞭解使用AEM Dynamic Media進行色彩管理](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [搭配AEM Dynamic Media使用影像銳利化](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
