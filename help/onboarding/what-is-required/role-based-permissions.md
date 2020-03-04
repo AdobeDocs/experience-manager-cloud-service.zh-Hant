@@ -2,7 +2,7 @@
 title: 基於角色的權限
 description: 基於角色的權限
 translation-type: tm+mt
-source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
+source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
 
 ---
 
@@ -32,5 +32,5 @@ source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
 | 管線執行 | 恢復生產管線。 |  |  |  |  |
 | 管理環境 | 從「管理環境」畫面新增「發佈——分派器」區段。 | x | x |  |  |  |
 | 推播更新 | 啟動推送更新管線。 |  |  |  |  |
-| 產生個人存取Token | 產生個人存取Token。 |  | x |  | x |
+| 產生個人存取Token | 存取Git。 |  | x |  | x |
 
