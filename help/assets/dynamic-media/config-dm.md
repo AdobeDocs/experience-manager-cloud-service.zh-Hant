@@ -1,25 +1,25 @@
 ---
 title: 設定動態媒體雲端服務
-description: 有關如何在Adobe Experience Manager Cloud service中設定動態媒體的資訊。
+description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: ad621c24e58fba6bcc873e36544505cc50385509
 
 ---
 
 
-# 設定動態媒體 {#configuring-dynamic-media-scene-mode}
+# 設定 Dynamic Media {#configuring-dynamic-media-scene-mode}
 
 如果您針對不同環境（例如開發環境、測試環境和即時生產環境）使用Adobe Experience Manager設定，您必須針對每個環境設定Dynamic Media Cloud Services。
 
 ## 動態媒體的架構圖 {#architecture-diagram-of-dynamic-media-scene-mode}
 
-下列架構圖說明Dynamic media的運作方式。
+下列架構圖說明Dynamic Media的運作方式。
 
-有了新的架構，AEM負責主要資產並與Dynamic media同步，以處理和發佈資產：
+有了新的架構，AEM負責主要資產並與Dynamic Media同步，以處理和發佈資產：
 
-1. 當主資產上傳至AEM時，它會複製至Dynamic Media。 此時，Dynamic media會處理所有資產處理和轉譯產生，例如影像的視訊編碼和動態變數。
+1. 當主資產上傳至AEM時，它會複製至Dynamic Media。 此時，Dynamic Media會處理所有資產處理和轉譯產生，例如影像的視訊編碼和動態變數。
 1. 產生轉譯後，AEM可以安全地存取和預覽遠端的Dynamic Media轉譯（不會將二進位檔傳回至AEM例項）。
-1. 內容準備好發佈及核准後，它會觸發Dynamic media服務將內容推出至傳送伺服器，並在CDN快取內容。
+1. 內容準備好發佈及核准後，它會觸發Dynamic Media服務將內容推出至傳送伺服器，並在CDN快取內容。
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -45,7 +45,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## 設定動態媒體雲端服務 {#configuring-dynamic-media-cloud-services}
 
-**在您設定Dynamic Media cloud服務之前**:在您收到具有動態媒體憑證的布建電子郵件後， [您必須登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud Service。
+**在您設定Dynamic Media Cloud服務之前**:在您收到具有動態媒體憑證的布建電子郵件後， [您必須登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud Service。
 
 若要設定動態媒體雲端服務：
 
@@ -57,9 +57,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    >[!NOTE]
    >
-   >在您收到具有動態媒體憑證的布建電子郵件後，請 [登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media cloud服務。
+   >在您收到具有動態媒體憑證的布建電子郵件後，請 [登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud服務。
 
-1. 連接成功時，請設定以下內容：
+1. 連接成功後，可以設定以下內容：
 
    * **[!UICONTROL 公司]** -動態媒體帳戶的名稱。 您可能會針對不同子品牌、部門或不同的測試／生產環境擁有多個動態媒體帳戶。
 
@@ -75,13 +75,13 @@ To migrate any custom viewer presets and configurations that you have created fr
    * **[!UICONTROL Dynamic Media 同步處理模式]**
       * **[!UICONTROL 預設啟用]** -預設情況下，配置將應用於所有資料夾，除非您專門標籤要導出的資料夾。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 預設禁用]** -在您明確標籤選定資料夾以同步到動態媒體之前，配置不會應用於任何資料夾。
-若要將選取的檔案夾標示為同步至動態媒體，請開啟資產檔案夾的「屬性」頁面。 點選「 **[!UICONTROL Details]** 」（詳細資訊）標籤，然後從「 **[!UICONTROL Dynamic Media sync mode]** 」（動態媒體同步模式）下拉式清單中，從下列三個選項中選擇，然後儲存點選「 **[!UICONTROL Save]**」。
+若要將選取的檔案夾標示為同步至動態媒體，請開啟資產檔案夾的「屬性」頁面。Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
          * **[!UICONTROL 繼承]** -資料夾上沒有明確的同步值；相反，資料夾會繼承其上級資料夾或雲配置中預設模式中的同步值。 繼承的詳細狀態會透過工具提示顯示。
          * **[!UICONTROL 啟用子資料夾]** -包含此子樹狀結構中的所有項目，以同步至動態媒體。 資料夾特定的設定會覆寫雲端設定中的預設模式。
          * **[!UICONTROL 子資料夾停用]** -排除此子樹狀結構中的所有項目，以免同步至動態媒體。
    >[!NOTE]
    >
-   >動態媒體中不支援版本修訂。 此外，延遲啟動僅適用於在「編輯動態媒體設定」頁面中的「發佈資產 ********」設定為「啟動時」，然後只適用於在首次啟動資產時。
+   >動態媒體中不支援版本修訂。此外，延遲啟動僅適用於在「編輯動態媒體設定」頁面中的「發佈資產 ********」設定為「啟動時」，然後只適用於在首次啟動資產時。
    >
    >
    >啟動資產後，任何更新都會立即即時發佈至S7傳送。
@@ -161,14 +161,14 @@ To migrate any custom viewer presets and configurations that you have created fr
    >
    >若要與AEM維持一致性，請一律選擇下列設定：在目 **前資料夾中覆寫基本影像名稱／副檔名相同**
 
-* **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱／副檔名]** -要求取代影像的副檔名與原始影像相同（例如，chair.jpg必須取代chair.jpg，而非chair.tif）。 不過，您可以將取代的影像上傳到原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中；在其原始位置中無法再找到檔案
+* **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱／副檔名]** -要求取代影像的副檔名與原始影像相同（例如，chair.jpg必須取代chair.jpg，而非chair.tif）。 不過，您可以將取代影像上傳至原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中；在其原始位置中無法再找到檔案
 * **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱(不論副檔名為何]** )-此選項是最包含的取代規則。 您可以將取代影像上傳至原始檔案夾以外的其他檔案夾、以不同副檔名上傳檔案，並取代原始檔案。 如果原始檔案位於不同的檔案夾中，則取代影像會位於上傳檔案的新檔案夾中。
 
 * **[!UICONTROL 預設色彩描述檔]** -如需詳細 [資訊，請參閱設定](#configuring-color-management) 色彩管理。
 
 >[!NOTE]
 >
->依預設，當您選取「轉譯」時，系統會顯示15個轉譯，當您在資產的詳細資料檢視中選取「檢視器 ******** 」時，系統會顯示15個檢視器預設集。 您可以提高此限制。 請參 [閱增加或減少顯示的影像預設集數目](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) , [或增加或減少顯示的檢視器預設集數目](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)。
+>依預設，當您選取「轉譯」時，系統會顯示15個轉譯，當您在資產的詳細資料檢視中選取「檢視器 ******** 」時，系統會顯示15個檢視器預設集。您可以提高此限制。請參 [閱增加或減少顯示的影像預設集數目](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) , [或增加或減少顯示的檢視器預設集數目](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)。
 
 
 #### 設定色彩管理 {#configuring-color-management}
@@ -178,7 +178,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 若要設定預設顏色屬性，以在請求影像時啟用色彩校正：
 
 1. [使用布建期間提供的憑證](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) ，登入Dynamic Media Classic。 定位至「 **[!UICONTROL 設定」>「應用程式設定」]**。
-1. 展開「發 **[!UICONTROL 布設定]** 」區域並選 **[!UICONTROL 取「影像伺服器」]**。 設定發 **[!UICONTROL 布例項的預設值]** ，將「發佈內容」設 **** 定為「影像伺服」。
+1. 展開「發 **[!UICONTROL 布設定]** 」區域並選 **[!UICONTROL 取「影像伺服器」]**。設定發 **[!UICONTROL 布例項的預設值]** ，將「發佈內容」設 **** 定為「影像伺服」。
 1. 捲動至您需要變更的屬性，例如「色彩管理屬性」區 **[!UICONTROL 域中的屬性]** 。
 
    您可以設定下列色彩校正屬性：
@@ -186,7 +186,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    * **[!UICONTROL CMYK預設色域]** -預設CMYK色彩描述檔的名稱
    * **[!UICONTROL 灰階預設色域]** -預設灰階色彩描述檔的名稱
    * **[!UICONTROL RGB預設色域]** -預設RGB色彩描述檔的名稱
-   * **[!UICONTROL 顏色轉換渲染方式]** -指定渲染方式。 可接受的值為：感 **[!UICONTROL 知]**，相 **[!UICONTROL 對冷]**&#x200B;藏飽和度 **[!UICONTROL ，絕]******&#x200B;對冷藏。 Adobe建議 **[!UICONTROL 以相對]]**為預設值。
+   * **[!UICONTROL 顏色轉換渲染方式]** -指定渲染方式。 Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]]**as the default.
 
 1. 點選「 **[!UICONTROL 儲存]**」。
 
@@ -202,7 +202,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 #### 設定資產處理 {#configuring-asset-processing}
 
-您可以定義Dynamic media應處理哪些資產類型，並自訂進階資產處理參數。 例如，您可以指定資產處理參數以執行下列動作：
+您可以定義Dynamic Media應處理哪些資產類型，並自訂進階資產處理參數。 例如，您可以指定資產處理參數以執行下列動作：
 
 * 將Adobe PDF轉換為eCatalog資產。
 * 將Adobe Photoshop檔案(.PSD)轉換為橫幅範本資產，以利個人化。
@@ -236,11 +236,11 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 #### 為不支援的格式添加自定義MIME類型 {#adding-custom-mime-types-for-unsupported-formats}
 
-您可以針對AEM Assets中不支援的格式新增自訂MIME類型。 為確保AEM不會刪除您在CRXDE Lite中新增的任何新節點，您必須確定您先移動MIME類型， `image_` 且其啟用值設為 **[!UICONTROL false]**。
+您可以針對AEM Assets中不支援的格式新增自訂MIME類型。為確保AEM不會刪除您在CRXDE Lite中新增的任何新節點，您必須確定您先移動MIME類型， `image_` 且其啟用值設為 **[!UICONTROL false]**。
 
 **要為不支援的格式添加自定義MIME類型**
 
-1. 在AEM中，點選「工 **[!UICONTROL 具>作業> Web Console]**」。
+1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -248,7 +248,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. 在頁面上，向下捲動至名稱 *Adobe CQ Scene7 Asset MIME類型Service* ，如下列螢幕擷取所示。 在名稱的右側，點選「 **[!UICONTROL Edit the configuration values]** (pencil icon)(編輯配置值（鉛筆圖示）」。
+1. 在頁面上，向下捲動至名稱 *Adobe CQ Scene7 Asset MIME類型Service* ，如下列螢幕擷取所示。在名稱的右側，點選「 **[!UICONTROL Edit the configuration values]** (pencil icon)(編輯配置值 (鉛筆圖示) 」。
 
    ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
 
@@ -262,12 +262,12 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
-1. 在頁面的右下角，點選「儲存 **[!UICONTROL 」]**。
+1. In the lower-right corner of the page, tap **[!UICONTROL Save]**.
 
    此時，您可以關閉已開啟「Adobe Experience Manager Web Console設定」頁面的瀏覽器標籤。
 
 1. 返回開啟AEM主控台的瀏覽器標籤。
-1. 從AEM點選「工 **[!UICONTROL 具>一般> CRXDE Lite]**」。
+1. From AEM, tap **[!UICONTROL Tools > General > CRXDE Lite]**.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -353,9 +353,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. 在「批次集類型」下拉式功能表中，選取預設類型。
 1. 執行下列任一項作業：
 
-   * 如果您使用先前在「應用程式設定」>「批次集預設集」>「預設命名」下設定的預設命名慣例 **[!UICONTROL ，請展開「]** Asset Naming Contriences **[!UICONTROL 」，然後在「File Naming」（檔案命名）下拉式清單中，點選「]** Default ****」。
+   * If you are using a default naming convention that you previously set up under **[!UICONTROL Application Setup > Batch Set Presets > Default Naming]**, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, tap **[!UICONTROL Default]**.
 
-   * 若要在設定預設時定義新的命名慣例，請展開「 **[!UICONTROL Asset Naming Conventions]**」，然後在「File Naming」（檔案命名）下拉式清單中，按一下「 **[!UICONTROL Custom]**」。
+   * To define a new naming convention as you set up the preset, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, click **[!UICONTROL Custom]**.
 
 1. 在「序列」順序中，定義在動態媒體中將影像組合在一起後顯示影像的順序。
 
@@ -386,11 +386,11 @@ spin-01-01
  spin-03-12
 ```
 
-有了此資訊，您可以按如下方式建立批集類型處方：
+使用此資訊，您可以按如下方式建立批集類型處方：
 
 ![chlimage_1-560](assets/chlimage_1-560.png)
 
-對spinset的共用資產名稱部分進行分組將添加到「匹 **配** 」欄位（如突出顯示）。 包含行和列的資產名稱的變數部分將分別添加到 **行** 和 **列欄位中** 。
+對spinset的共用資產名稱部分進行分組將添加到「匹 **配** 」欄位 (如突出顯示)。包含行和列的資產名稱的變數部分將分別添加到 **行** 和 **列欄位中** 。
 
 上傳和發佈回轉集時，您會啟用「上傳工作選項」對話方塊中「批次集預設集」下方所列的2D回轉集 **方式名稱****** 。
 
@@ -409,7 +409,7 @@ spin-01-01
 1. 在「批集類型」下拉式功能表中，選擇「資產 **[!UICONTROL 集」]**。
 1. 在「子類型」(Sub Type)下拉清單中，選擇「 **[!UICONTROL 多軸回轉集」(Multi-Axis Spin Set]**)。
 1. 展開 **[!UICONTROL 資產命名慣例]**，然後在「檔案命名」下拉式清單中按一下「自 **[!UICONTROL 訂」]**。
-1. 使用「 **[!UICONTROL 比對]** 」(Match **[!UICONTROL )和（可選）「基本名稱]** 」(Base Name)屬性，定義組成群組之影像資產的命名規則運算式。
+1. 使用「 **[!UICONTROL 比對]** 」(Match **[!UICONTROL )和 (可選) 「基本名稱]** 」(Base Name)屬性，定義組成群組之影像資產的命名規則運算式。
 
    例如，您的常值「符合」規則運算式可能如下所示：
 
