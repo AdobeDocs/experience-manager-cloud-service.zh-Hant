@@ -3,7 +3,7 @@ title: 在Adobe Experience Manager Sites製作工作流程中，使用連結的�
 description: 在其他Experience Manager網站部署中建立網頁時，請使用遠端Adobe Experience Manager Assets部署中的可用資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 64aab464c2d5de0c837ee465a088107a78ba9374
+source-git-commit: 188917fe677a88142c702b9637600db872853974
 
 ---
 
@@ -38,7 +38,7 @@ AEM Sites提供建立網頁的功能，而AEM Assets是數位資產管理(DAM)�
 作者可在Content Finder中搜尋影像和下列類型的檔案，並在「頁面編輯器」中使用搜尋的資產。 可將檔案新增至元 `Download` 件，並將影像新增至元 `Image` 件。 作者也可以在任何可延伸預設或元件的自訂AEM元件中新增遠 `Download` 端資 `Image` 產。 支援的格式清單包括：
 
 * **影像格式**:支援影像元件所支 [援的影像](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) 格式。 不支援動態媒體影像。
-* **檔案格式**:請參閱 [「連接的資產」支援的檔案格式](file-format-support.md#supported-document-formats)。
+* **檔案格式**:請參閱 [「連接的資產」支援的檔案格式](file-format-support.md#doc-formats)。
 
 ### Users and groups involved {#users-and-groups-involved}
 
