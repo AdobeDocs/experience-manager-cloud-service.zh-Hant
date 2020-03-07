@@ -127,7 +127,7 @@ AEM有一些處理資產的預設工作流程。 要查看它們，請開啟「�
 1. 在瀏覽器中，導覽至 `https://<host>:<port>/system/console/components`。
 1. 按一下 **[!UICONTROL 媒體處理程式名稱旁邊的「禁用]** 」。 For example: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. 重新整理頁面：媒體處理常式旁會顯示圖示，指出其已停用。
-1. 若要啟用媒體處理常式，請按一 **[!UICONTROL 下媒體處理常式]** 名稱旁的「啟用」。
+1. 若要啟用媒體處理常式，請按一 **[!UICONTROL 下媒體處理常式名稱旁的]** 「啟用」。
 
 ### 建立新的媒體處理常式 {#creating-a-new-media-handler}
 
