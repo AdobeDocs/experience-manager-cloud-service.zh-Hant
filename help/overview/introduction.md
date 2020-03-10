@@ -1,76 +1,76 @@
 ---
-title: Adobe Experience manager雲端服務簡介
-description: 'Adobe Experience Manager(AEM)雲端服務簡介。 '
-translation-type: tm+mt
+title: Adobe Experience Manager 雲端服務簡介
+description: 'Adobe Experience Manager (AEM) 雲端服務簡介。 '
+translation-type: ht
 source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
 
 ---
 
 
-# Adobe Experience manager雲端服務簡介 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
+# Adobe Experience Manager 雲端服務簡介 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-[Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html) (AEM)現已提供雲端服務。
+[Adobe Experience Manager](https://www.adobe.com/tw/marketing/experience-manager.html) (AEM) 現在能以雲端服務形式使用。
 
-Adobe Experience Manager雲端服務：
+Adobe Experience Manager 雲端服務：
 
-* 是運用AEM應用程式的雲端原生方式。
+* 以雲端原生方式使用 AEM 應用程式。
 
-* 結合AEM內容管理系統與AEM數位資產管理的強大功能，讓您為客戶提供個人化、內容導向的體驗。
+* 結合 AEM 內容管理系統與 AEM 數位資產管理的強大功能，協助您為客戶提供內容導向的個人化體驗。
 
-* 提供持續交付和持續整合，以實現零停機時間更新。
+* 持續傳送並持續整合，實現零停機更新。
 
-* 基於可自動擴展的動態體系結構，從而消除了基礎架構考慮因素。
+* 以可自動擴展的動態架構為基礎，免除基礎架構相關考量。
 
-* 以安全性為重點，使用自動化測試來掃描常見弱點。
+* 著重安全性，以自動化測試掃描常見弱點。
 
-* 使用自動化測試來驗證客戶程式碼。
+* 以自動化測試驗證客戶程式碼。
 
-* 具有優化的效能拓撲，以實現最大的恢復能力和效率。
+* 配備高效能拓撲，將系統最佳化以發揮最大彈性和效率。
 
-* 顯著減少所需的手動配置。
+* 大幅減少手動設定。
 
-* 已與Adobe Experience cloud深入整合。
+* 與 Adobe Experience Cloud 深度整合。
 
-* 推出新一代的Adobe Experience Manager產品系列，以過去的投資和創新為基礎，保留並擴充所有使用案例和功能。
+* 推出新一代 Adobe Experience Manager 產品系列，以過去的投資和創新為基礎，保留及擴充所有使用案例和功能。
 
-這些協助：
+上述特色有助於：
 
-* 開發人員專注於設定和擴充AEM，並遵循與AEM目前已成功擴展的新雲端開發模式相同的模式。
+* 開發人員遵循 AEM 目前以新雲端開發模式成功擴展的相同模式，專注於設定及擴充 AEM。
 
-* 作者會喜歡定期提供的最新創新。
+* 作者使用定期上線的最新創新功能。
 
-* 簡化系統管理員的配置和基礎架構。
+* 簡化系統管理員的設定和基礎架構。
 
-* 行銷專業人員體驗更快速的價值實現。
+* 行銷專業人員更快實現價值。
 
 >[!NOTE]
 >
->請參 [閱](terminology.md) 「術語」，以取得AEM為雲端服務所引進的部分新詞。
+>若要了解 AEM 雲端服務的新詞彙，請參閱[術語](terminology.md)。
 
-## 以雲端服務的形式新增值 {#value-added-as-a-cloud-service}
+## 以雲端服務的形式創造附加價值 {#value-added-as-a-cloud-service}
 
-AEM採用現代雲端服務的主要特性，來達成這些目標：
+AEM 採用現代化雲端服務的主要特色來達成下列目標：
 
-* 它始終開啟：
+* 隨時待命：
 
-   * 已重新審視整個服務體系結構，以免您遇到任何停機；內容管理和內容傳送功能。
+   * 我們已重新審視整個服務架構，無論是內容管理或內容傳送功能，都不發生停機問題。
 
-* 它總是規模化的：
+* 調整規模：
 
-   * AEM做為雲端服務的所有例項都會建立相同；因此，服務架構會根據您的需求自動上下擴展。
+   * AEM 雲端服務的所有例項一律平等，因此服務架構會根據您的需求自動縮減或擴大規模。
 
-* 它始終是最新的：
+* 永遠最新：
 
-   * AEM As a Cloud Service為AEM程式碼基底建置了新的連續傳送管道，每月可自動更新多達數次。 這可解決AEM應用程式的主要挑戰之一，讓您隨時掌握最新版本。
+   * AEM 雲端服務為 AEM 程式碼基底實作新的持續傳送管道，每月可自動多次更新。這可讓您隨時使用最新版本，解決 AEM 應用程式的其中一個主要挑戰。
 
-* 它始終在不斷發展：
+* 不斷進化：
 
-   * AEM作為雲端服務，會根據客戶實作的專案，每日不斷進化。 內容、程式碼和組態會根據最佳實務不斷進行審查和審查，讓我們指導您如何達成您的業務目標。
+   * AEM 雲端服務會根據客戶實作的專案，每日不斷改進。依據最佳作法持續審視內容、程式碼和設定，引導您達成業務目標。
 
-## 瞭解Adobe Experience manager的雲端服務 {#getting-to-know-aem-as-cloud-service}
+## 了解 Adobe Experience Manager 雲端服務 {#getting-to-know-aem-as-cloud-service}
 
-* [Adobe Experience manager雲端服務與舊版的新增功能](/help/overview/what-is-new-and-different.md) 、新功能與不同之處
-* Adobe [](/help/core-concepts/architecture.md) Experience manager雲端服務架構
-* [AEM中AEM Sites的Cloud Service顯著變更](/help/sites-cloud/sites-cloud-changes.md)
-* [將資產作為雲端服務簡介](/help/assets/overview.md)
-* [Adobe Experience Manager雲端服務教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* Adobe Experience Manager 雲端服務與舊版的[新增功能與不同之處](/help/overview/what-is-new-and-different.md)
+* Adobe Experience Manager 雲端服務[架構](/help/core-concepts/architecture.md)
+* [AEM 雲端服務中 AEM Sites 重大變更](/help/sites-cloud/sites-cloud-changes.md)
+* [Assets 雲端服務簡介](/help/assets/overview.md)
+* [Adobe Experience Manager 雲端服務教學課程](https://docs.adobe.com/content/help/zh-Hant/experience-manager-learn/cloud-service/overview.html)
