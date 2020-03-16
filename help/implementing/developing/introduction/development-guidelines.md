@@ -2,7 +2,7 @@
 title: AEM 雲端服務開發方針
 description: '待完成 '
 translation-type: tm+mt
-source-git-commit: 9777dd5772ab443b5b3dabbc74ed0d362e52df60
+source-git-commit: a95944055d74a14b2b35649105f284df6afc7e7b
 
 ---
 
@@ -83,10 +83,33 @@ AEM中不支援從「發佈」到「作者」的反向複製，做為雲端服�
 
 ### 記錄檔 {#logs}
 
-* 為進行本端開發，記錄項目會寫入本端檔案
-   * `./crx-quickstart/logs`
-* 在雲端環境中，開發人員可以透過Cloud Manager下載記錄檔，或使用命令列工具來追蹤記錄檔。 <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
-* 若要變更雲端環境的記錄層級，Sling Logging OSGI組態應加以修改，然後進行完整重新部署。 由於這並非瞬時，請務必小心在接收大量流量的生產環境中啟用詳細記錄。 在未來，可能會有更快速變更記錄層級的機制。
+在本地開發中，日誌條目將寫入資料夾中的本地 `/crx-quickstart/logs` 檔案。
+
+在雲端環境中，開發人員可以透過Cloud Manager下載記錄檔，或使用命令列工具來追蹤記錄檔。 <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+
+**設定日誌級別**
+
+若要變更雲端環境的記錄層級，Sling Logging OSGI組態應加以修改，然後進行完整重新部署。 由於這並非瞬時，請務必小心在接收大量流量的生產環境中啟用詳細記錄。 在未來，可能會有更快速變更記錄層級的機制。
+
+**啟用DEBUG日誌級別**
+
+預設日誌級別為INFO，即不記錄DEBUG消息。
+若要啟用DEBUG記錄檔層級，請使用CRX檔案總管來設定
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+屬性進行除錯。 請勿將記錄檔保留在DEBUG記錄檔層級，因為它會產生許多記錄檔。
+除錯檔案中的一行通常以DEBUG開頭，然後提供記錄檔層級、安裝程式動作和記錄檔訊息。 例如：
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+日誌級別如下：
+
+| 0 | 致命錯誤 | 動作失敗，安裝程式無法繼續。 |
+|---|---|---|
+| 1 | 錯誤 | 動作失敗。 安裝將繼續，但CRX的某部分安裝不正確，因此無法正常工作。 |
+| 2 | 警告 | 行動成功，但遇到問題。 CRX可能正常工作，也可能無法正常工作。 |
+| 3 | 資訊 | 動作成功。 |
 
 ### 線程轉儲 {#thread-dumps}
 
