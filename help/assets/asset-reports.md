@@ -3,12 +3,12 @@ title: 資產報表
 description: 本文說明AEM Assets中有關資產的各種報表，以及如何產生報表。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
 
-# 資產報表 {#asset-reports}
+# Asset Reports {#asset-reports}
 
 資產報告是評估Adobe Experience Manager(AEM)資產部署公用程式的重要工具。 有了AEM Assets，您就可以針對數位資產產生多種報表。 這些報表提供您系統使用情況、使用者與資產的互動方式，以及哪些資產被下載和共用的實用資訊。
 
@@ -18,7 +18,7 @@ AEM Assets報告架構運用Sling工作以有序方式非同步處理報表請�
 
 報表管理介面是直覺式的，包含存取已封存報表及檢視報表執行狀態（成功、失敗和佇列）的精細選項和控制項。
 
-產生報表時，您會透過電子郵件（可選）和收件匣通知收到通知。 您可以從報表清單頁面檢視、下載或刪除報表，其中會顯示所有先前產生的報表。
+產生報表時，收件匣通知 <!-- through an email (optional) and --> 您。 您可以從報表清單頁面檢視、下載或刪除報表，其中會顯示所有先前產生的報表。
 
 ## 產生報表 {#generate-reports}
 
@@ -36,7 +36,7 @@ AEM Assets會為您產生下列標準報表：
 
 AEM管理員可輕鬆產生並自訂這些報表，以供您實作。 管理員可依照下列步驟產生報表：
 
-1. 點選／按一下AEM標誌，然後前往「工 **[!UICONTROL 具]** >資 **[!UICONTROL 產]** > **[!UICONTROL 報表]**」。
+1. 點選/按一下AEM標誌，然後前往「工 **[!UICONTROL 具]** >資 **[!UICONTROL 產]** > **[!UICONTROL 報表]**」。
 
    ![導覽](assets/navigation.png)
 
@@ -47,7 +47,7 @@ AEM管理員可輕鬆產生並自訂這些報表，以供您實作。 管理員�
 
    >[!NOTE]
    >
-   >在您產生「已下載 **[!UICONTROL 資產」報表]** ，請確定已啟用「資產下載」服務。 從Web主控台(`https://[aem_server]:[port]/system/console/configMgr`)開啟「 **[!UICONTROL Day CQ DAM Event Recorder」（日CQ DAM事件記錄器）設定，並在「事件類型」中選取「]** Asset Downloaded(DOWNLOADED) **** 」選項（如果尚未選取）。
+   >在您產生「已下載 **[!UICONTROL 資產」報表]** ，請確定已啟用「資產下載」服務。從Web主控台(`https://[aem_server]:[port]/system/console/configMgr`)開啟「 **[!UICONTROL Day CQ DAM Event Recorder」 (日CQ DAM事件記錄器)]**&#x200B;設定，並在「事件類型」中選取「**[!UICONTROL Asset Downloaded(DOWNLOADED)]**」選項 (如果尚未選取)。
 
    >[!NOTE]
    >
@@ -79,7 +79,7 @@ AEM管理員可輕鬆產生並自訂這些報表，以供您實作。 管理員�
 
    ![files_report](assets/files_report.png)
 
-   「連 **[!UICONTROL 結共用]** 」報表會顯示資產的URL，這些資產是從AEM Assets內與外部使用者共用的。 它包含共用資產之使用者的電子郵件ID、共用資產之使用者的電子郵件ID、連結的共用日期和到期日。 欄無法自訂。
+   「連 **[!UICONTROL 結共用]** 」報表會顯示資產的URL，這些資產是從AEM Assets內與外部使用者共用的。<!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. -->欄無法自訂。
 
    「連 **[!UICONTROL 結共用]** 」報表不包含子檔案夾和轉譯的選項，因為它只會發佈顯示在 */var/dam/share下的共用URL*。
 
@@ -95,7 +95,7 @@ AEM管理員可輕鬆產生並自訂這些報表，以供您實作。 管理員�
 
    ![custom_columns](assets/custom_columns.png)
 
-1. 從工具列點選/ **[!UICONTROL 按一下]** 「建立」。 訊息會通知報表產生已開始。
+1. Tap/click **[!UICONTROL Create]** from the toolbar. 訊息會通知報表產生已開始。
 1. 在「資產報表」頁面中，報表產生狀態是根據報表工作的目前狀態，例如「成功」、「失敗」、「已佇列」或「已排程」。 通知收件匣中會顯示相同的狀態。
 
    若要檢視報表頁面，請點選／按一下報表連結。 或者，選取報表，並從工具列點選／按一下「檢視」圖示。
@@ -116,7 +116,7 @@ AEM管理員可輕鬆產生並自訂這些報表，以供您實作。 管理員�
 * 品牌入口網站發佈
 * 檔案
 
-1. 點選／按一下AEM標誌，然後前往「工 **[!UICONTROL 具]** >資 **[!UICONTROL 產]** > **[!UICONTROL 報表]**」。
+1. 點選/按一下AEM標誌，然後前往「工 **[!UICONTROL 具]** >資 **[!UICONTROL 產]** > **[!UICONTROL 報表]**」。
 1. 在「資產報表」頁面中，點選／按一下工 **[!UICONTROL 具列中]** 的「建立」。
 
 1. 從「建 **[!UICONTROL 立報表]** 」頁面，選擇您要建立的報表，並點選／按「下一 **[!UICONTROL 步」]**。
@@ -136,7 +136,7 @@ AEM管理員可輕鬆產生並自訂這些報表，以供您實作。 管理員�
 
    若要新增更多自訂欄，請點選／按 **[!UICONTROL 一下]** 「新增」，然後重複步驟5和6。
 
-1. 從工具列點選/ **[!UICONTROL 按一下]** 「建立」。 訊息會通知報表產生已開始。
+1. Tap/click **[!UICONTROL Create]** from the toolbar. 訊息會通知報表產生已開始。
 
 ## 配置清除服務 {#configure-purging-service}
 
