@@ -1,17 +1,17 @@
 ---
-title: '開發儲存庫結構包   '
+title: 'AEM Project Repository結構套件  '
 description: Adobe Experience Manager作為雲端服務Maven專案需要「資料庫結構子套件」定義，其唯一目的是定義JCR資料庫根目錄，專案的程式碼子套件會部署在此目錄中。
 translation-type: tm+mt
-source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
+source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
 
 
-# 開發儲存庫結構包
+# AEM Project Repository結構套件
 
-將Adobe Experience Manager專案當作雲端服務時，需要儲存庫結構子套件定義，其唯一目的是定義專案程式碼子套件所部署的JCR儲存庫根目錄。 這可確保在Experience manager中安裝包，因為Cloud Service是由JCR資源相依性自動排序的。 缺少相關性可能導致子結構安裝在其父結構之前，因此意外地被刪除，從而破壞部署。
+將Adobe Experience Manager專案當作雲端服務時，需要儲存庫結構子套件定義，其唯一目的是定義專案程式碼子套件所部署的JCR儲存庫根目錄。 這可確保在Experience Manager中安裝包，因為Cloud Service是由JCR資源相依性自動排序的。 缺少相關性可能導致子結構安裝在其父結構之前，因此意外地被刪除，從而破壞部署。
 
-如果您的代碼包部署到代碼包 **未涵蓋的位置** ，則必須在儲存庫結構包中列舉任何上階資源（靠近JCR根的JCR資源），以建立這些依賴項。
+如果您的代碼包部署到代碼包 **未涵蓋的位置** ，則必須在儲存庫結構包中列舉任何上階資源 (靠近JCR根的JCR資源)，以建立這些依賴項。
 
 ![儲存庫結構包](./assets/repository-structure-packages.png)
 
@@ -95,7 +95,7 @@ source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
 
 ## 引用儲存庫結構包
 
-要使用儲存庫結構包，請通過所有代碼包(部署到的子包 `/apps`)引用它，通過FileVault內容包Maven插件配置Maven項目 `<repositoryStructurePackage>` 。
+要使用儲存庫結構包，請通過所有代碼包(部署到的子包 `/apps`)引用它，通過FileVault內容包Maven插件配置來Maven項 `<repositoryStructurePackage>` 目。
 
 在和其 `ui.apps/pom.xml``pom.xml`它任何代碼包中，將對項目的儲存庫結構包(#repository-structure-package)配置的引用添加到FileVault包Maven插件中。
 
