@@ -2,7 +2,7 @@
 title: AEM專案結構
 description: 瞭解如何定義封裝結構以部署至Adobe Experience Manager Cloud Service。
 translation-type: tm+mt
-source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
+source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
 
 ---
 
@@ -394,7 +394,7 @@ OSGi `scripts` 屬性包含 [Apache Sling&#39;s Repo Init語言所定義的指�
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>repository-structure-pkg</artifactId>
+              <artifactId>ui.apps.structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
