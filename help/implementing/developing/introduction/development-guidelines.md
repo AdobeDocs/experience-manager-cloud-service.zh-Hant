@@ -2,7 +2,7 @@
 title: AEM 雲端服務開發方針
 description: '待完成 '
 translation-type: tm+mt
-source-git-commit: a95944055d74a14b2b35649105f284df6afc7e7b
+source-git-commit: 7f4e27d10da1b9cb074223c1c43fc7798942dbe4
 
 ---
 
@@ -91,10 +91,14 @@ AEM中不支援從「發佈」到「作者」的反向複製，做為雲端服�
 
 若要變更雲端環境的記錄層級，Sling Logging OSGI組態應加以修改，然後進行完整重新部署。 由於這並非瞬時，請務必小心在接收大量流量的生產環境中啟用詳細記錄。 在未來，可能會有更快速變更記錄層級的機制。
 
+> [!NOTE]
+> 
+> 若要執行下列的設定變更，您必須在本機開發環境上建立這些變更，然後將它們推送至AEM做為雲端服務例項。 如需如何執行此動作的詳細資訊，請參 [閱「部署至AEM as a Cloud Service](/help/implementing/deploying/overview.md)」。
+
 **啟用DEBUG日誌級別**
 
 預設日誌級別為INFO，即不記錄DEBUG消息。
-若要啟用DEBUG記錄檔層級，請使用CRX檔案總管來設定
+若要啟用DEBUG記錄檔層級，請設定
 
 ``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
 
