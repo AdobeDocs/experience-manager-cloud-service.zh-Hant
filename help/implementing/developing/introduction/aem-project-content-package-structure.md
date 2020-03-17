@@ -1,13 +1,13 @@
 ---
-title: 瞭解專案的內容套件結構
-description: 瞭解如何正確定義封裝結構以部署至Adobe Experience Manager Cloud Service。
+title: AEM專案結構
+description: 瞭解如何定義封裝結構以部署至Adobe Experience Manager Cloud Service。
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
 
 
-# 瞭解Adobe Experience Manager cloud服務中的專案內容套件結構 {#understand-cloud-service-package-structure}
+# AEM專案結構
 
 >[!TIP]
 >
@@ -17,7 +17,7 @@ source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
 
 AEM應用程式部署必須由單一AEM套件組成。 此套件應包含子套件，這些子套件包含應用程式運作所需的一切，包括程式碼、組態和任何支援的基準內容。
 
-AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**&#x200B;部署至 ********`/apps` Runtime可寫區域（例如，可寫區域）。 `/content`、 `/conf`、 `/home`或其他非 `/apps`)。 而應用程式必須將程式碼和內容分隔為獨立套件，以便部署至AEM。
+AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**&#x200B;部署至 ********`/apps` Runtime可寫區域 (例如，可寫區域)。`/content`、 `/conf`、 `/home`或其他非 `/apps`)。而應用程式必須將程式碼和內容分隔為獨立套件，以便部署至AEM。
 
 本檔案中概述的套件結構與本機開 **發部署** 和AEM cloud服務部署都相容。
 
@@ -27,9 +27,9 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
 
 ## 儲存庫的可變區與不可變區 {#mutable-vs-immutable}
 
-`/apps` and `/libs` are consed **inmumable areas of AEM** as they cannot be changed(create, update, delete)after AEM starts(i.e. at runtime)。 在運行時更改不可變區域的任何嘗試都將失敗。
+`/apps` and `/libs` are consed **inmumable areas of AEM** as they cannot be changed(create, update, delete)after AEM starts(i.e. at runtime)。在運行時更改不可變區域的任何嘗試都將失敗。
 
-儲存庫中的其他所有 `/content`內容 `/conf`, 、 `/var`、 `/home`、 `/etc``/oak:index``/system``/tmp`、等。 皆為可 **變區** ，也就是說可在執行時期變更。
+儲存庫中的其 `/content`它所有 `/conf`內容 `/var`、 、 `/etc`、 `/oak:index`、 `/system``/tmp`、等。 皆為可 **變區** ，也就是說可在執行時期變更。
 
 >[!WARNING]
 >
@@ -58,24 +58,29 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
       + `/apps/settings`
    + ACL（權限）
       + 任 `rep:policy` 何路徑 `/apps`
+   + 回購初始化OSGi配置指令（及隨附的指令碼）
+      + [回購初始](#repo-init) (Repo Init)是部署（可變）AEM應用程式邏輯部分內容的建議方式。 回購初始化應用於定義：
+         + 基線內容結構
+            + `/conf/my-app`
+            + `/content/my-app`
+            + `/content/dam/my-app`
+         + 使用者
+         + 服務使用者
+         + 群組
+         + ACL（權限）
+            + 任何 `rep:policy` 路徑（可變或不可變）
 + 套件 `ui.content` 或程式碼套件包含所有內容和設定。 包的常見元 `ui.content` 素包括，但不限於：
    + 內容感知配置
       + `/conf`
-   + 基準內容結構（資產資料夾、站點根頁）
+   + 必要、複雜的內容結構(即 內容構建以回購初始化中定義的基線內容結構為基礎，並將其擴展到基線內容結構之上。
       + `/content`、 `/content/dam`等。
    + 受管理的標籤分類
       + `/content/cq:tags`
-   + 服務使用者
-      + `/home/users`
-   + 使用者群組
-      + `/home/groups`
    + Oak索引
-      + `/oak:indexes`
+      + `/oak:index`
    + Etc legacy nodes
       + `/etc`
-   + ACL（權限）
-      + 任何 `rep:policy` 路徑，不 **在**`/apps`
-+ 包 `all` 裝是容器包裝，僅包含 `ui.apps` 和 `ui.content` 包作為內嵌。 包 `all` 不得具有 **任何內容** ，而是將所有部署委派給儲存庫的子包。
++ 包 `all` 裝是容器包裝，僅包含 `ui.apps` 和 `ui.content` 包作為內嵌。包 `all` 不得具有 **任何內容** ，而是將所有部署委派給儲存庫的子包。
 
    現在，軟體包是使用Maven [FileVault Package Maven插件的嵌入式配置](#embeddeds)，而不是使用配置 `<subPackages>` 的。
 
@@ -104,13 +109,42 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
 >
 >請參閱下 [面的POM XML程式碼片段](#xml-package-types) ，以取得完整的程式碼片段。
 
-## 由Adobe Cloud manager標籤要部署的套件 {#marking-packages-for-deployment-by-adoube-cloud-manager}
+## 由Adobe Cloud Manager標籤要部署的套件 {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-依預設，Adobe Cloud manager會收集由Maven組建版本產生的所有套件，但是，由於容器(`all`)套件是包含所有程式碼和內容套件的單一部署工件，因此我們必須確保僅部署容器( ****`all`)套件。 為確保此，Maven構建版本生成的其他軟體包必須用的FileVault Content Package Maven插件配置進行標籤 `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`。
+依預設，Adobe Cloud manager會收集由Maven組建版本產生的所有套件，但是，由於容器(`all`)套件是包含所有程式碼和內容套件的單一部署工件，因此我們必須確保僅部署容器( ****`all`)套件。為確保此，Maven構建版本生成的其他軟體包必須用的FileVault Content Package Maven插件配置進行標籤 `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`。
 
 >[!TIP]
 >
 >請參閱下 [面的POM XML程式碼片段](#pom-xml-snippets) ，以取得完整的程式碼片段。
+
+## 回購初始化{#repo-init}
+
+Repo Init提供了定義JCR結構的指令或指令碼，這些結構從常見的節點結構（如資料夾樹）到用戶、服務用戶、組和ACL定義。
+
+回購初始化的主要優點是，它們具有執行其指令碼定義的所有操作的隱式權限，並且在部署生命週期的早期被調用，以確保在執行時間代碼時存在所有必需的JCR結構。
+
+雖然Repo Init指令碼本身作為指令碼 `ui.apps` 在項目中生存，但它們可以而且應該用於定義以下可變結構：
+
++ 基線內容結構
+   + 範例： `/content/my-app`、 `/content/dam/my-app`、 `/conf/my-app/settings`
++ 服務使用者
++ 使用者
++ 群組
++ ACL
+
+回購初始化指令碼會儲存為 `scripts``RepositoryInitializer` OSGi工廠組態的項目，因此可透過執行模式隱式定位，允許AEM Author和AEM Publish Services的回購初始化指令碼之間，或甚至是Envs（Dev、Stage和Prod）之間的差異。
+
+請注意，在定義「使用者」和「群組」時，只有群組會視為應用程式的一部分，而且應在此處定義其功能的整數。 「組織使用者」和「群組」仍應在AEM的執行時期中定義；例如，如果自訂工作流程將工作指派給指名的群組，則該群組應透過AEM應用程式中的回購初始化定義，但是，如果群組僅是組織性的，例如「Wendy&#39;s Team」和「Sean&#39;s Team」，則這些工作是最佳定義，並在AEM的執行時期進行管理。
+
+>[!TIP]
+>
+>回購初始化 *指令碼必須在內* 嵌欄位中定義 `scripts` ，並且配置將 `references` 無法運行。
+
+Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)。
+
+>[!TIP]
+>
+>請參閱下 [面的「回購初始化代碼片段](#snippet-repo-init) 」一節，以取得完整的程式碼片段。
 
 ## 儲存庫結構包 {#repository-structure-package}
 
@@ -151,7 +185,7 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
    + `/apps/vendor-packages`
    >[!WARNING]
    >
-   >根據慣例，子包嵌入資料夾的名稱為尾碼為 `-packages`。 這可確保部署代碼和內容包 **未部署** ，而是不會部署任何子包的目標資料夾， `/apps/<app-name>/...` 從而導致破壞性和循環安裝行為。
+   >根據慣例，子包嵌入資料夾的名稱為尾碼為 `-packages`。這可確保部署代碼和內容包 **未部署** ，而是不會部署任何子包的目標資料夾， `/apps/<app-name>/...` 從而導致破壞性和循環安裝行為。
 
 + 第3級資料夾必須是
    `application` 或 `content`
@@ -190,7 +224,7 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
 
 如果第三方套件位於 **Adobe的公用Maven工件存放庫**，則Adobe Cloud manager無需進一步設定即可解析工件。
 
-如果第三方包位於公 **用的第三方Maven對象儲存庫**，則必須按照上述方法在項目中註冊並嵌入此存 `pom.xml` 儲庫 [](#embeddeds)。 如果第三方應用程式／連接器同時需要程式碼和內容封裝，則每個應用程式／連接器都必須嵌入到容器(`all`)封裝中的正確位置。
+如果第三方包位於公 **用的第三方Maven對象儲存庫**，則必須按照上述方法在項目中註冊並嵌入此存 `pom.xml` 儲庫 [](#embeddeds)。如果第三方應用程式/連接器同時需要程式碼和內容封裝，則每個應用程式/連接器都必須嵌入到容器(`all`)封裝中的正確位置。
 
 添加Maven依賴項遵循標準Maven做法，上面概述了嵌入第三方對象(代碼和內容 [包)](#embedding-3rd-party-packages)。
 
@@ -212,7 +246,7 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
 
 ### 簡單部署包依賴項 {#simple-deployment-package-dependencies}
 
-簡單案例將可變內 `ui.content` 容包設定為依賴於不可變 `ui.apps` 代碼包。
+簡單案例將可變內 `ui.content` 容包設定為依賴於不可 `ui.apps` 變代碼包。
 
 + `all` 沒有依賴性
    + `ui.apps` 沒有依賴性
@@ -239,7 +273,7 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
 
 ### 包類型 {#xml-package-types}
 
-程式碼和內容封裝（部署為子封裝）必須依其包含的內容來宣告 **應用****程式或內容**&#x200B;的封裝類型。
+程式碼和內容封裝 (部署為子封裝) 必須依其包含的內容來宣告 **應用****程式或內容**&#x200B;的封裝類型。
 
 #### 容器封裝類型 {#container-package-types}
 
@@ -299,9 +333,9 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
     ...
 ```
 
-### 標籤Adobe Cloud manager部署的套件 {#cloud-manager-target}
+### 標籤Adobe Cloud Manager部署的套件 {#cloud-manager-target}
 
-在每個產生套件的專 **案中** ，除容器(`all`)專案外，將外掛程式聲明的 `<cloudManagerTarget>none</cloudManagerTarget>` 組態新增至外掛程式宣告的組態，以確 `<properties>``filevault-package-maven-plugin`**** 保Adobe Cloud Manager不會部署它們。 THe容器(`all`)套件應是透過Cloud manager部署的單一套件，而Cloud manager又內嵌所有必要的程式碼和內容套件。
+在每個產生套件的專 **案中** ，除容器(`all`)專案外，將外掛程式聲明的 `<cloudManagerTarget>none</cloudManagerTarget>` 組態新增至外掛程式宣告的組態，以確 `<properties>``filevault-package-maven-plugin`**** 保Adobe Cloud Manager不會部署它們。THe容器(`all`)套件應是透過Cloud manager部署的單一套件，而Cloud manager又內嵌所有必要的程式碼和內容套件。
 
 ```xml
 ...
@@ -320,6 +354,28 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
     </plugin>
     ...
 ```
+
+### 回購初始化{#snippet-repo-init}
+
+包含回購初始化指令碼的回購初始化指令碼是通過屬性在 `RepositoryInitializer` OSGi工廠配置中定 `scripts` 義的。 請注意，由於這些指令碼是在OSGi配置中定義的，因此可以使用常規資料夾語義，通過運行模式輕鬆 `../config.<runmode>` 地確定其範圍。
+
+請注意，由於指令碼通常是多行聲明，因此在檔案中定義它們比在XML `.config` 基礎格式中更容 `sling:OsgiConfig` 易。
+
+`/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
+
+```plain
+scripts=["
+    create service user my-data-reader-service
+
+    set ACL on /var/my-data
+        allow jcr:read for my-data-reader-service
+    end
+
+    create path (sling:Folder) /conf/my-app/settings
+"]
+```
+
+OSGi `scripts` 屬性包含 [Apache Sling&#39;s Repo Init語言所定義的指令](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)。
 
 ### 儲存庫結構包 {#xml-repository-structure-package}
 
@@ -429,6 +485,9 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
 如果嵌入 `/apps/*-packages` 目標中使用了多個，則必須在此處列舉這些目標。
 
 ### 第三方Maven儲存庫 {#xml-3rd-party-maven-repositories}
+
+>[!WARNING]
+> 添加更多Maven儲存庫可能會延長Maven構建時間，因為將檢查其他Maven儲存庫是否有派駐服務。
 
 在反應堆項目的中，添 `pom.xml`加任何必要的第三方公共Maven儲存庫指令。 完整配 `<repository>` 置應可從第三方儲存庫提供方獲得。
 
