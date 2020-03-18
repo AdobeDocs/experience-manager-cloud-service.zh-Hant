@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 0dd6ffe72297ffb2e260039c3cce23499b61d62b
+source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
 
 ---
 
@@ -40,7 +40,6 @@ source-git-commit: 0dd6ffe72297ffb2e260039c3cce23499b61d62b
    + [資產的數位版權管理](drm.md)
 + 設定、管理及擴充 Assets {#admin}
    + [API 和參考資料](developer-reference-material-apis.md)
-   + [資產移轉指南](assets-migration-guide.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
    + [處理設定檔](/help/assets/dynamic-media/processing-profiles.md)
    + [多語言資產和資產翻譯](translate-assets.md)
