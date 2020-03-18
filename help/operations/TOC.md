@@ -1,16 +1,16 @@
 ---
 sub-product: Operations and Maintenance on AEM as a Cloud Service
 user-guide-title: Operations and Maintenance on AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 
 ---
 
 
-# 作業 {#operations}
+# 運作 {#operations}
 
-+ [AEM雲端服務的運作與維護](/help/operations/home.md)
-+ [內容複製服務](replication.md)
++ [AEM 雲端服務之運作與維護](/help/operations/home.md)
++ [內容複寫服務](replication.md)
 + [維護任務](maintenance.md)
 + [備份和還原](backup.md)
 
