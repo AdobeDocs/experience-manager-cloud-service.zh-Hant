@@ -2,8 +2,8 @@
 title: 在 Adobe Experience Manager Sites 編寫工作流程中使用「連線資產」共用 DAM 資產
 description: 在其他 Experience Manager 網站的部署工作中建立網頁時，使用遠端 Adobe Experience Manager Assets 部署的可用資產。
 contentOwner: AG
-translation-type: ht
-source-git-commit: 188917fe677a88142c702b9637600db872853974
+translation-type: tm+mt
+source-git-commit: e3835cd4363a01fdf773831aa6f145a62dda6ae3
 
 ---
 
@@ -18,7 +18,7 @@ AEM Sites 提供建立網頁的功能，而 AEM Assets 是可為網站提供必�
 
 在「頁面編輯器」中編輯頁面時，作者可從不同 AEM Assets 部署順暢地搜尋、瀏覽及內嵌資產。若要管理 AEM，請對 AEM Sites 本機部署與 AEM Assets 不同 (遠端) 部署執行一次性整合。
 
-Sites 作者可以唯讀本機資產的形式取得遠端資產。此功能可支援順暢的搜尋作業，並允許一次使用數個遠端資產。若要在本機部署中一次提供多個遠端資產，不妨考慮大量移轉資產。請參閱[資產移轉指南](/help/assets/assets-migration-guide.md)。
+Sites 作者可以唯讀本機資產的形式取得遠端資產。此功能可支援順暢的搜尋作業，並允許一次使用數個遠端資產。若要在本機部署中一次提供多個遠端資產，不妨考慮大量移轉資產。
 
 ### 先決條件和支援的部署 {#prerequisites}
 
@@ -37,7 +37,7 @@ Sites 作者可以唯讀本機資產的形式取得遠端資產。此功能可�
 
 作者可在「內容尋找器」中搜尋影像和下列類型的文件，並在「頁面編輯器」中使用找到的資產。文件可新增至 `Download` 元件，且影像可新增至 `Image` 元件。作者也可以在任何可延伸預設 `Download` 或 `Image` 元件的自訂 AEM 元件中新增遠端資產。支援格式包括：
 
-* **影像格式**：支援[影像元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/components/image.translate.html)所支援的影像格式。不支援動態媒體影像。
+* **影像格式**：支援[影像元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)所支援的影像格式。不支援動態媒體影像。
 * **文件格式**：請參閱[連線資產支援的文件格式](file-format-support.md#doc-formats)。
 
 ### 相關使用者和群組 {#users-and-groups-involved}
