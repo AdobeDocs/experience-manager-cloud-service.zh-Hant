@@ -1,21 +1,21 @@
 ---
-title: 工具控制台
-description: 瞭解AEM中的不同工具主控台。
-translation-type: tm+mt
+title: 工具主控台
+description: 了解 AEM 中各種不同的工具主控台。
+translation-type: ht
 source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 
 ---
 
 
-# 工具控制台{#tools-consoles}
+# 工具主控台{#tools-consoles}
 
-「工 **具** 」主控台可讓您存取許多專業工具，以協助您管理網站、數位資產和內容存放庫的其他方面。
+**「工具」**&#x200B;主控台可供存取多種特殊工具，協助您管理網站、數位資產和內容存放庫的其他方面。
 
-這些控制台可從全域導 [覽的「工具面板」存取](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel)。
+這些主控台可從[全域導覽的「工具面板」](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel)存取。
 
 >[!NOTE]
 >
->由於UI中的卡片提供了每個選項用途的詳細資訊，因此此表格只提供有關「工具」面板中功能位置的快速參考。
+>由於 UI 中的卡片提供已各選項用途的詳細資訊，因此此表格僅簡單提供「工具」面板功能位置的參考資料。
 
 <table>
  <tbody>
@@ -129,7 +129,7 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
   </tr>
   <tr>
    <td> </td>
-   <td>分析設定</td>
+   <td>Insights 設定</td>
   </tr>
   <tr>
    <td> </td>
@@ -169,11 +169,11 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
   </tr>
   <tr>
    <td> </td>
-   <td>封裝</td>
+   <td>套件</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Package Share</td>
+   <td>套件共用</td>
   </tr>
   <tr>
    <td>安全性</td>
@@ -249,7 +249,7 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
   </tr>
   <tr>
    <td> </td>
-   <td>Web 控制台<br /> </td>
+   <td>Web 主控台<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -265,7 +265,7 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
   </tr>
   <tr>
    <td> </td>
-   <td>健康狀況報告</td>
+   <td>健全狀態報表</td>
   </tr>
   <tr>
    <td> </td>
