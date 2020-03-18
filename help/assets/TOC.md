@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 0dd6ffe72297ffb2e260039c3cce23499b61d62b
 
 ---
 
@@ -40,7 +40,9 @@ source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
    + [資產的數位版權管理](drm.md)
 + 設定、管理及擴充 Assets {#admin}
    + [API 和參考資料](developer-reference-material-apis.md)
+   + [資產移轉指南](assets-migration-guide.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
+   + [處理設定檔](/help/assets/dynamic-media/processing-profiles.md)
    + [多語言資產和資產翻譯](translate-assets.md)
    + [搜尋 Facet](search-facets.md)
    + [擴充資產編輯器](extend-asset-editor.md)
@@ -55,7 +57,7 @@ source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
    + [使用內容片段](content-fragments/content-fragments.md)
    + [管理內容片段](content-fragments/content-fragments-managing.md)
    + [內容片段模型](content-fragments/content-fragments-models.md)
-   + [變化 - 製作片段內容](content-fragments/content-fragments-variations.md)
+   + [變化 - 編寫片段內容](content-fragments/content-fragments-variations.md)
    + [內容片段關聯內容](content-fragments/content-fragments-assoc-content.md)
    + [中繼資料 - 片段屬性](content-fragments/content-fragments-metadata.md)
    + [內容片段 - 刪除考量事項](content-fragments/content-fragments-delete.md)
