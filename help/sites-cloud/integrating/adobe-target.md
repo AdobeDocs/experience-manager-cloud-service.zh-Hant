@@ -2,7 +2,7 @@
 title: 整合 Adobe Target
 description: '整合 Adobe Target '
 translation-type: tm+mt
-source-git-commit: 5a7f2d603952b2c5f92363888efedb482d8efea3
+source-git-commit: 94ba99acf2d14219d63485e3443b7080b8ba32bd
 
 ---
 
@@ -42,7 +42,7 @@ source-git-commit: 5a7f2d603952b2c5f92363888efedb482d8efea3
 
 >[!CAUTION]
 >
->「在AEM中，以雲端服務的形式，將選件和活動從AEM同步至Adobe Target的複製代理預設會停用。 如果需 [要重新啟用複製代理](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) ，請與Adobe支援聯絡。」
+>在AEM中，將選件和活動從AEM同步至Adobe Target的複製代理預設會停用。 如果需 [要重新啟用複製代理](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) ，請與Adobe支援聯絡。
 
 >[!NOTE]
 >
