@@ -1,7 +1,7 @@
 ---
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
@@ -22,17 +22,17 @@ source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
    + [存取 Git](cloud-manager/accessing-git.md)
    + [整合 Git 與 Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
 + 為 AEM 雲端服務開發 {#developing}
-   + [AEM專案結構](developing/introduction/aem-project-content-package-structure.md)
-   + [AEM Project Repository結構套件](developing/introduction/repository-structure-package.md)
-   + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
+   + [AEM 專案結構](developing/introduction/aem-project-content-package-structure.md)
+   + [AEM 專案存放庫結構套件](developing/introduction/repository-structure-package.md)
+   + [AEM 雲端服務 SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [內容搜尋與索引](/help/operations/indexing.md)
    + [AEM 雲端服務開發方針](developing/introduction/development-guidelines.md)
    + [開始開發 AEM Sites - WKND 教學課程](developing/introduction/develop-wknd-tutorial.md)
    + [AEM 雲端服務 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-   + [瞭解測試結果](/help/implementing/developing/introduction/understand-test-results.md)
-+ Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
+   + [了解測試結果](/help/implementing/developing/introduction/understand-test-results.md)
++ 設定和擴充 AEM 雲端服務 {#configuring-and-extending}
    + [擴充體驗片段](developing/extending/experience-fragments.md)
-   + [配置搜索表單](developing/extending/search-forms.md)
+   + [設定搜尋表單](developing/extending/search-forms.md)
 + 部署至 AEM 雲端服務 {#deploying}
    + [部署至 AEM 雲端服務](deploying/overview.md)
 + 雲端中的 Dispatcher {#dispatcher}
