@@ -2,7 +2,7 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ---
 
@@ -181,6 +181,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * **定位組態**
 
    * 選取品 [牌以指定定位範圍](/help/sites-cloud/authoring/personalization/targeted-content.md)。
+   >[!NOTE]
+   >此選項要求使用者帳戶位於群 `Target Adminstrators`組中。
 
 ### 權限 {#permissions}
 
@@ -236,14 +238,14 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 開啟您要編輯其屬性的頁面。
 1. 選擇「頁 **面資訊** 」圖示以開啟選取功能表：
-1. 選擇 **開啟屬性** ，將開啟一個對話框，允許您按相應頁籤進行編輯。 工具列右側也提供下列按鈕：
+1. 選擇 **開啟屬性** ，將開啟一個對話框，允許您按相應頁籤進行編輯。工具列右側也提供下列按鈕：
    * **取消**
    * **儲存並關閉**
 1. 使用「 **儲存並關閉** 」按鈕儲存變更。
 
 ### 從Sites Console —— 多頁 {#from-the-sites-console-multiple-pages}
 
-從Sites **** Console中，您可以選取數個頁面，然後使用 **View Properties** （檢視屬性）來檢視和／或編輯頁面屬性。 這稱為頁面屬性的大量編輯。
+從Sites **** Console中，您可以選取數個頁面，然後使用 **View Properties**  (檢視屬性) 來檢視和/或編輯頁面屬性。這稱為頁面屬性的大量編輯。
 
 >[!NOTE]
 >
