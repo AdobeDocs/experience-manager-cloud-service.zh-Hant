@@ -2,14 +2,14 @@
 title: 內容傳送
 description: '內容傳送 '
 translation-type: tm+mt
-source-git-commit: d1c953e1caf440f18e488f07a32bcf5bc3880f67
+source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
 
 ---
 
 
 # AEM中的「雲端服務」內容傳送 {#content-delivery}
 
-發佈服務內容傳送包括：
+目前的頁面詳細資訊會在AEM中以Cloud Service的形式發佈服務內容傳送。 發佈服務內容傳送包括：
 
 * CDN（通常由Adobe管理）
 * AEM Dispatcher
@@ -108,7 +108,7 @@ AEM提供三個選項：
 ### HTML/文字 {#html-text}
 
 * 依預設，會根據apache圖層所發出的快取控制標題，由瀏覽器快取5分鐘。 CDN也尊重此值。
-* 可以覆寫所有HTML/Text內容，方法是在使用AEM `EXPIRATION_TIME` 做 `global.vars` 為Cloud Service SDK Dispatcher工具中定義變數。
+* 可以在使用AEM做為Cloud Service SDK Dispatcher工具中定義變數， `EXPIRATION_TIME` 覆寫所 `global.vars` 有HTML/Text內容的變數。
 
 您必須確保檔案下 `src/conf.dispatcher.d/cache` 有以下規則：
 
@@ -225,5 +225,5 @@ HTML頁面上的預設clientlib包含如下範例：
 1. 尋找Adobe Granite HTML Library Manager的OSGi Config:
    * 勾選核取方塊以啟用「嚴格版本控制」
    * 在標有「長期客戶端快取密鑰」的欄位中，輸入值/。*；雜湊
-1. 儲存變更。請注意，不需將此組態儲存在來源控制項中，因為AEM將會自動在開發、階段和生產環境中啟用此組態，因此AEM會是雲端服務。
+1. 儲存變更。請注意，不需將此組態儲存在原始碼控制項中，因為AEM將會自動在開發、階段和生產環境中啟用此組態。
 1. 每當用戶端程式庫的內容變更時，就會產生新的雜湊金鑰，並更新HTML參考。
