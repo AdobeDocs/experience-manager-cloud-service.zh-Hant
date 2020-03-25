@@ -1,13 +1,13 @@
 ---
-title: AEM專案結構
+title: AEM 專案結構
 description: 瞭解如何定義封裝結構以部署至Adobe Experience Manager Cloud Service。
 translation-type: tm+mt
-source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
+source-git-commit: 36860ba390b1ba695188746ba9659b920191026b
 
 ---
 
 
-# AEM專案結構
+# AEM 專案結構
 
 >[!TIP]
 >
@@ -43,7 +43,7 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
 
 建議的應用程式部署結構如下：
 
-+ 套 `ui.apps` 件（或內容套件）包含所有要部署的程式碼，且僅部署至 `/apps`。 包的常見元 `ui.apps` 素包括，但不限於：
++ 該包 `ui.apps` 或代碼包包含要部署的所有代碼，並且僅部署到 `/apps`。 包的常見元 `ui.apps` 素包括，但不限於：
    + OSGi組合
       + `/apps/my-app/install`
    + OSGi配置
@@ -69,7 +69,7 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
          + 群組
          + ACL（權限）
             + 任何 `rep:policy` 路徑（可變或不可變）
-+ 套件 `ui.content` 或程式碼套件包含所有內容和設定。 包的常見元 `ui.content` 素包括，但不限於：
++ 套件 `ui.content` 或內容套件包含所有內容和設定。 包的常見元 `ui.content` 素包括，但不限於：
    + 內容感知配置
       + `/conf`
    + 必要、複雜的內容結構(即 內容構建以回購初始化中定義的基線內容結構為基礎，並將其擴展到基線內容結構之上。
@@ -210,7 +210,7 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
 
 ### 容器套件的篩選定義 {#container-package-filter-definition}
 
-由於容器封裝中內嵌了程式碼和內容子封裝，因此必須將內嵌的目標路徑新增至容器專案，以確保內嵌的封裝在容器封裝中 `filter.xml` ，當建立時。
+由於容器封裝中內嵌了程式碼和內容子封裝，因此必須將內嵌的目標路徑新增至容器專案，以確保內嵌的封裝在建立時 `filter.xml` ，會包含在容器封裝中。
 
 只需為包 `<filter root="/apps/<my-app>-packages"/>` 含要部署的子包的任何2級資料夾添加條目。
 
@@ -236,7 +236,7 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
 
 為了確保軟體包的正確安裝，建議建立軟體包間相關性。
 
-一般規則是包含可變內容(`ui.content`)的包，應取決於支援可變內容的轉換和使用的不可變內容(`ui.apps`)。
+一般規則是包含可變內容(`ui.content`)的包，應該取決於支援可變內容的轉換和使用的不可變內容(`ui.apps`)。
 
 >[!TIP]
 >
@@ -246,7 +246,7 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
 
 ### 簡單部署包依賴項 {#simple-deployment-package-dependencies}
 
-簡單案例將可變內 `ui.content` 容包設定為依賴於不可 `ui.apps` 變代碼包。
+簡單案例將可變內 `ui.content` 容包設定為依賴於不可變 `ui.apps` 代碼包。
 
 + `all` 沒有依賴性
    + `ui.apps` 沒有依賴性
