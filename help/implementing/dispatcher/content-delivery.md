@@ -2,7 +2,7 @@
 title: 內容傳送
 description: '內容傳送 '
 translation-type: tm+mt
-source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
+source-git-commit: 0284a23051bf10cd0b6455492a709f1b9d2bd8c7
 
 ---
 
@@ -31,43 +31,54 @@ source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
 
 有關從作者服務複製到發佈服務的資訊，請參 [閱](/help/operations/replication.md)。
 
->[!NOTE]
->流量會通過apache Web伺服器，該伺服器支援包括調度器在內的模組。 調度器主要用作快取，以限制對發佈節點的處理，以提高效能。
-
 ## CDN {#cdn}
 
-AEM提供三個選項：
+AEM as Cloud Service隨附預設CDN。 其主要目的是透過從邊緣的CDN節點（在瀏覽器附近）傳送可快取的內容，來減少延遲。 它已完全管理並設定，以提供最佳的AEM應用程式效能。
 
-1. Adobe Managed CDN - AEM的現成可用CDN。 這是建議的選項，因為它已完全整合。
-1. 客戶CDN指向Adobe Managed CDN —— 客戶將自己的CDN指向AEM的現成可用CDN。 如果第一個選項不可行，這是下一個偏好的選項，因為它仍會運用AEM與其預設CDN的整合。 客戶仍須負責管理其CDN。
-1. 客戶管理的CDN —— 客戶自行攜帶CDN，並負責管理它。
+AEM總共提供兩個選項：
 
->[!CAUTION]
->強烈建議使用第一個選項。 如果您選擇第二個選項，Adobe不能因任何錯誤設定而負責。
+1. AEM Managed CDN - AEM的現成可用CDN。 它是緊密整合的選項，不需要大量客戶投資來支援與AEM的CDN整合。
+1. 客戶管理的CDN指向AEM Managed CDN —— 客戶將自己的CDN指向AEM的現成可用的CDN。 客戶仍需要管理其自己的CDN，但是與AEM整合的投資並不大。
 
-第二和第三種選擇將逐案允許。 這包括滿足某些先決條件，包括但不限於與其CDN廠商舊有整合且難以復原的客戶。
+第一個選項應滿足大多數客戶效能和安全性要求。 此外，它需要最少的客戶投資和持續維護。
 
-### Adobe Managed CDN {#adobe-managed-cdn}
+第二個選項將逐個允許。 此決定是基於符合某些先決條件，包括但不限於與其CDN廠商舊有整合且難以放棄的客戶。
+
+以下是比較兩個選項的決策矩陣。 詳細資訊請參閱下列章節。
+
+| 詳細資料 | AEM Managed CDN | 客戶管理的CDN指向AEM CDN |
+|---|---|---|
+| **客戶工作** | 沒有，它完全整合。 只需將CNAME指向AEM Managed CDN。 | 適度的客戶投資。 客戶必須管理自己的CDN。 |
+| **先決條件** | 無 | 需要替換的現有CDN十分繁雜。 上線前必須先示範成功的負載測試。 |
+| **CDN專業知識** | 無 | 需要至少一次兼職的工程資源及能夠設定客戶CDN的詳細CDN知識。 |
+| **安全性** | 由 Adobe 管理. | 由Adobe管理（也可由客戶在自己的CDN管理）。 |
+| **效能** | 由Adobe最佳化。 | 將受益於某些AEM CDN功能，但由於額外的跳數，可能會造成小幅效能點擊。 **注意**:從客戶CDN跳至Emply CDN可能會很有效)。 |
+| **快取** | 支援在調度器級別應用的快取標頭。 | 支援在調度器級別應用的快取標頭。 |
+| **影像和視訊壓縮功能** | 可與Adobe Dynamic Media搭配使用。 | 可搭配Adobe Dynamic Media或客戶管理的CDN影像／視訊解決方案使用。 |
+
+### AEM Managed CDN {#aem-managed-cdn}
 
 使用Adobe現成可用的CDN來準備內容傳送很簡單，如下所述：
 
 1. 您將透過共用包含此資訊之安全表單的連結，將已簽署的SSL憑證和機密金鑰提供給Adobe。 請與客戶支援協調此項工作。
-注意：Aem作為雲端服務不支援「已驗證網域(DV)」憑證。
+   **注意：** Aem作為雲端服務不支援「已驗證網域(DV)」憑證。
 1. 然後，客戶支援將與您協調CNAME DNS記錄的時間，並將其FQDN指向 `adobe-aem.map.fastly.net`。
 1. 當SSL憑證即將到期時，您會收到通知，因此您可以重新提交新的SSL憑證。
 
+**限制流量**
+
 依預設，對於Adobe Managed CDN設定，所有公開流量都可以進入發佈服務，適用於生產與非生產（開發與階段）環境。 如果您希望限制特定環境的發佈服務流量（例如，限制IP位址範圍的轉移），您應與客戶支援合作設定這些限制。
 
-### 客戶CDN指向Adobe Managed CDN {#point-to-point-CDN}
+### 客戶CDN指向AEM Managed CDN {#point-to-point-CDN}
 
 如果您想要使用現有的CDN，但無法滿足客戶管理的CDN的需求，則支援此功能。 在這種情況下，您可以管理自己的CDN，但指向Adobe的受管CDN。
 
-請注意，您必須：
+請注意：
 
 1. 您必須有現有的CDN。
-1. 你會搞定的。
+1. 你必須管好它。
 1. 您必須能夠設定CDN以搭配Aem做為雲端服務使用——請參閱下方的設定指示。
-1. 您有工程CDN專家隨時待命，以防相關問題出現。
+1. 您必須有工程CDN專家隨時待命，以防相關問題出現。
 1. 您必須先執行並成功通過負載測試，才能開始生產。
 
 配置說明：
@@ -76,28 +87,6 @@ AEM提供三個選項：
 1. 使用原始網域（即Adobe的CDN入口）設定主機標題。 價值應來自Adobe。
 1. 將SNI報頭髮送到源。 與主機標頭一樣， sni標頭必須是源域。
 1. 設定 `X-Edge-Key`要將流量正確路由至AEM伺服器所需的。 價值應來自Adobe。
-
-### 客戶管理的CDN {#customer-managed-cdn}
-
-如果您需要使用現有的CDN，則支援此功能。  在這種情況下，您會管理自己的CDN，並將它指向AEM。
-
-您可以管理自己的CDN，但需：
-
-1. 您有現有的CDN。
-1. 它必須是支援的CDN。 目前支援Akamai。 如果您的組織想要管理目前不支援的CDN，請聯絡客戶支援。
-1. 你會搞定的。
-1. 您必須能夠設定CDN以搭配Aem做為雲端服務使用——請參閱下方的設定指示。
-1. 您有工程CDN專家隨時待命，以防相關問題出現。
-1. 您必須依設定指示中所述，將CDN節點的白名單提供給Cloud Manager。
-1. 您必須先執行並成功通過負載測試，才能開始生產。
-
-配置說明：
-
-1. 借由呼叫環境建立／更新API，將CIDR清單加入白名單，將CDN廠商的白名單提供給Adobe。
-1. 使用網 `X-Forwarded-Host` 域名稱設定標題。
-1. 使用原始網域（即Aem為雲端服務入口）設定主機標題。 價值應來自Adobe。
-1. 將SNI報頭髮送到源。 SNI標頭必須是源域。
-1. 設定 `X-Edge-Key` 將流量正確路由至AEM伺服器所需的項目。 價值應來自Adobe。
 
 在接受即時流量之前，您應向Adobe客戶支援驗證端對端流量路由是否正常運作。
 
@@ -108,7 +97,7 @@ AEM提供三個選項：
 ### HTML/文字 {#html-text}
 
 * 依預設，會根據apache圖層所發出的快取控制標題，由瀏覽器快取5分鐘。 CDN也尊重此值。
-* 可以在使用AEM做為Cloud Service SDK Dispatcher工具中定義變數， `EXPIRATION_TIME` 覆寫所 `global.vars` 有HTML/Text內容的變數。
+* 可以覆寫所有HTML/Text內容，方法是在使用AEM `EXPIRATION_TIME` 做 `global.vars` 為Cloud Service SDK Dispatcher工具中定義變數。
 
 您必須確保檔案下 `src/conf.dispatcher.d/cache` 有以下規則：
 
@@ -181,21 +170,20 @@ HTML/文字類型的內容會以快取標題設定，對應於300秒（5分鐘�
 1. 調用複製代理，指定發佈調度器刷新代理
 2. 直接呼 `invalidate.cache` 叫API(例如 `POST /dispatcher/invalidate.cache`)
 
-此方 `invalidate.cache` 法不再受支援，因為它只處理特定的調度器節點。
-AEM作為Cloud Service會在服務層級運作，而非個別節點層級運作，因此「從AEM [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) Pages取消驗證快取頁面」頁面中的失效指示對AEM作為Cloud Service無效。
+不再支援Dispatcher的 `invalidate.cache` API方法，因為它只處理特定的Dispatcher節點。 AEM作為Cloud Service會在服務層級運作，而非個別節點層級運作，因此「從AEM [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) Pages取消驗證快取頁面」頁面中的失效指示對於AEM作為Cloud Service不再有效。
 而應使用複製刷新代理。 這可以使用複製API完成。 此處提供複製API文 [檔](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) ，有關刷新快取的示例，請參見 [API示例頁](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) ，具體是 `CustomStep` 向所有可用代理髮出類型為ACTIVATE的複製操作的示例。 刷新代理端點不可配置，但已預先配置為指向與運行刷新代理的發佈服務匹配的調度程式。 刷新代理通常可由OSGi事件或工作流觸發。
 
-下圖說明了這一點。
+下圖說明這一點。
 
 ![](assets/cdnc.png "CDNCDN")
 
-如果擔心調度程式快取未清除，請與客戶支援聯繫，如有必要，客戶支援可以刷新調度程式快取。
+如果擔心調度器快取未清除，請與客戶支援聯 [系](https://helpx.adobe.com/support.ec.html) ，如有需要，客戶支援可以刷新調度器快取。
 
-Adobe管理的CDN會遵守TTL，因此不需要將它清除。 如果懷疑有問題，請連絡客戶支援，以視需要清除Adobe管理的CDN快取。
+Adobe管理的CDN會遵守TTL，因此不需要將它清除。 如果懷疑有問題，請聯 [絡客戶支援](https://helpx.adobe.com/support.ec.html) ，以視需要清除Adobe管理的CDN快取。
 
 ## 用戶端程式庫與版本一致性 {#content-consistency}
 
-網頁當然由HTML、Javascript、CSS和影像組成。 建議客戶運用用戶端資料庫(clientlibs)架構，將Javascript和CSS資源匯入HTML頁面，並考慮到JS資料庫之間的相依性。
+頁面由HTML、Javascript、CSS和影像組成。 建議客戶運用用戶端資料庫(clientlibs)架構，將Javascript和CSS資源匯入HTML頁面，並考慮到JS資料庫之間的相依性。
 
 clientlibs架構提供自動版本管理，這表示開發人員可以在來源控制中籤入JS程式庫的變更，而且當客戶推出最新版本時，就會提供最新版本。 若沒有這個功能，開發人員將需要手動變更參照新版程式庫的HTML，如果許多HTML範本共用相同的程式庫，這特別麻煩。
 
