@@ -3,12 +3,12 @@ title: 'Adobe Experience Manager雲端服務中用於數位資產管理的資產
 description: 資產API可讓基本的建立——讀取——更新——刪除(CRUD)操作來管理資產，包括二進位、中繼資料、轉譯、註解和內容片段。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
 
 ---
 
 
-# 資產即雲端服務API {#assets-cloud-service-apis}
+# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -20,7 +20,7 @@ Give a list of and overview of all reference information available.
 
 ## 資產上傳 {#asset-upload-technical}
 
-Experience manager雲端服務提供將資產上傳至儲存庫的新方式——將二進位上傳至二進位雲端儲存空間。 本節提供其技術概觀。
+Experience Manager雲端服務提供將資產上傳至儲存庫的新方式——將二進位上傳至二進位雲端儲存空間。 本節提供其技術概觀。
 
 ### 直接二進位上傳概觀 {#overview-binary-upload}
 
@@ -129,7 +129,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 ### 不建議使用的資產上傳API {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 對於Experience Manager作為雲端服務，僅支援新的上傳API。 Experience Manager 6.5的API已過時。
@@ -155,7 +155,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 >[!NOTE]
 本節內容主要適用於從舊版AEM以雲端服務形式更新至AEM的客戶。
 
-由於Experience Manager以Cloud Service的身分引入了新的部署模型，因此在推出資產微型服務之前，工作流程中使用的某些工作流程步驟可能不再支援後處理工作流程。 `DAM Update Asset` 請注意，大部分服務都會以更簡單的方式取代，以設定和使用資產微型服務。
+由於Experience Manager以Cloud Service的身分引入了新的部署模型，因此在推出資產微服務之前，工作流程中使用的某些工作流程步驟可能不再支援後處理工作流程。 `DAM Update Asset` 請注意，大部分服務都會以更簡單的方式取代，以設定和使用資產微型服務。
 
 以下是AEM雲端服務中的技術工作流程模型及其支援等級清單：
 
