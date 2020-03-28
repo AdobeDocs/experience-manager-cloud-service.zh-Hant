@@ -2,7 +2,7 @@
 title: 將您的數位資產新增至Adobe Experience Manager
 description: 將您的數位資產新增至Adobe Experience Manager做為雲端服務
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -11,17 +11,17 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 
 將您的數位檔案上傳至Adobe Experience Manager，會利用豐富的中繼資料、智慧標籤、轉譯和其他數位資產管理(DAM)服務豐富檔案的二進位內容。 您可以從本機資料夾或網路磁碟機上傳各種檔案類型（包括影像、PDF檔案、原始檔案等）至Experience Manager Assets。
 
-提供了多種上載方法。 除了最常用的瀏覽器上傳外，還有其他將資產新增至Experience manager儲存庫的方法，包括案頭用戶端（例如Adobe Asset Link或Experience manager案頭應用程式）、上傳和擷取指令碼，以及自動擷取整合（新增為AEM擴充功能）。
+提供了多種上載方法。 除了最常用的瀏覽器上傳外，還有其他將資產新增至Experience Manager儲存庫的方法，包括案頭用戶端（例如Adobe Asset Link或Experience Manager案頭應用程式）、上傳和擷取指令碼，以及自動擷取整合（新增為AEM擴充功能）。
 
 我們將著重在此處為使用者上傳方法，並提供文章連結，說明使用Experience Manager API和SDK進行資產上傳和擷取的技術層面。
 
-雖然您可以在Experience manager中上傳和管理任何二進位檔案，但最常用的檔案格式支援其他服務，例如中繼資料擷取或預覽／轉譯產生。 請參閱支 [援的檔案格式](file-format-support.md) ，以取得詳細資訊。
+雖然您可以在Experience Manager中上傳和管理任何二進位檔案，但最常用的檔案格式支援其他服務，例如中繼資料擷取或預覽／轉譯產生。 請參閱支 [援的檔案格式](file-format-support.md) ，以取得詳細資訊。
 
 您也可以選擇對已上傳的資產進行其他處理。 可在上傳資產的資料夾上設定多個資產處理設定檔，以新增特定中繼資料、轉譯或影像處理服務。 如需詳 [細資訊](#additional-processing) ，請參閱以下的其他處理。
 
 > [!NOTE]
 >
-> Experience manager作為雲端服務，運用了新的上傳資產方式——直接二進位上傳。 預設會支援立即可用的產品功能和用戶端，例如AEM使用者介面、Adobe Asset Link、AEM案頭應用程式，因此對一般使用者是透明的。
+> Experience Manager作為雲端服務，運用了新的上傳資產方式——直接二進位上傳。 預設會支援立即可用的產品功能和用戶端，例如AEM使用者介面、Adobe Asset Link、AEM案頭應用程式，因此對一般使用者是透明的。
 >
 > 上傳由技術團隊自訂或擴充的程式碼，客戶需要使用新的上傳API和通訊協定。
 
@@ -64,7 +64,7 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 
 > [!NOTE]
 >
-> 如果您需要將巢狀資料夾階層上傳至AEM，請參閱「大量 [上傳資產」](#bulk-upload)
+> 若要將巢狀資料夾階層上傳至AEM，請參閱 [大量上傳資產](#bulk-upload)。
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -132,13 +132,13 @@ AEM Assets會防止您上傳檔案名稱中包含禁止字元的資產。 如果
 
 > [!NOTE]
 >
-> 在設定和部署至Experience manager時，若要從其他系統進行內容移轉，就必須仔細規劃、考慮和選擇工具，才能大量上傳。 請參閱部 [署指南](/help/implementing/deploying/overview.md) ，以取得內容移轉方法的指引。
+> 在設定和部署至Experience Manager時，若要從其他系統進行內容移轉，就必須仔細規劃、考慮和選擇工具，才能進行大量上傳。 請參閱部 [署指南](/help/implementing/deploying/overview.md) ，以取得內容移轉方法的指引。
 
 ## 使用案頭用戶端上傳資產 {#upload-assets-desktop-clients}
 
-除了網頁瀏覽器使用者介面外，Experience manager還支援案頭上的其他用戶端。 它們也提供上傳體驗，而不需前往網頁瀏覽器。
+除了網頁瀏覽器使用者介面外，Experience Manager還支援案頭上的其他用戶端。 它們也提供上傳體驗，而不需前往網頁瀏覽器。
 
-* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 可讓您存取Adobe Photoshop、Adobe Illustrator和Adobe inDesign案頭應用程式中AEM的資產。 您可以直接從這些案頭應用程式中的Adobe Asset Link使用者介面，將目前開啟的檔案上傳至AEM。
+* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 可讓您存取Adobe Photoshop、Adobe Illustrator和Adobe InDesign案頭應用程式中AEM的資產。 您可以直接從這些案頭應用程式中的Adobe Asset Link使用者介面，將目前開啟的檔案上傳至AEM。
 * [Experience Manager案頭應用程式](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，可簡化在案頭上處理資產的作業，不受檔案類型或處理資產的原生應用程式所限。 從本機檔案系統上傳巢狀檔案夾階層中的檔案特別有用，因為瀏覽器上傳僅支援上傳平面檔案清單。
 
 ## 其他處理 {#additional-processing}
