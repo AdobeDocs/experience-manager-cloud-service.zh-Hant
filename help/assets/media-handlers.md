@@ -3,7 +3,7 @@ title: 使用媒體處理常式和工作流程處理資產
 description: 瞭解各種媒體處理常式，以及如何在工作流程中使用它們來執行資產上的工作。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -18,11 +18,11 @@ Adobe Experience Manager(AEM)Assets隨附一組預設工作流程和媒體處理
 
 >[!NOTE]
 >
->請參閱「資 [產支援的格式](file-format-support.md) 」頁面，以取得AEM Assets支援的所有格式以及每種格式支援的功能的說明。
+>如需 [AEM Assets支援的所有格式說明](file-format-support.md) ，以及每種格式支援的功能，請參閱「資產」支援的檔案格式文章。
 
 ## 預設媒體處理常式 {#default-media-handlers}
 
-AEM Assets中提供下列媒體處理常式，並處理最常見的MIME類型：
+AEM Assets中提供下列媒體處理常式，並可處理最常見的MIME類型：
 
 <!-- TBD: Apply correct formatting once table is moved to MD.
 -->
@@ -127,7 +127,7 @@ AEM有一些處理資產的預設工作流程。 要查看它們，請開啟「�
 1. 在瀏覽器中，導覽至 `https://<host>:<port>/system/console/components`。
 1. 按一下 **[!UICONTROL 媒體處理程式名稱旁邊的「禁用]** 」。 For example: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. 重新整理頁面：媒體處理常式旁會顯示圖示，指出其已停用。
-1. 若要啟用媒體處理常式，請按一 **[!UICONTROL 下媒體處理常式名稱旁的]** 「啟用」。
+1. 若要啟用媒體處理常式，請按一 **[!UICONTROL 下媒體處理常式]** 名稱旁的「啟用」。
 
 ### 建立新的媒體處理常式 {#creating-a-new-media-handler}
 
@@ -166,7 +166,7 @@ AEM有一些處理資產的預設工作流程。 要查看它們，請開啟「�
 
 以下是範例範本：
 
-封裝my.own.stuff;/&amp;ast;&amp;ast;&amp;ast;@scr.component inherit=&quot;true&quot; &amp;ast;@scr.service &amp;ast;/ public class myMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement relevant parts }
+封裝my.own.stuff;/&amp;ast;&amp;ast;&amp;ast;@scr.component inherit=&quot;true&quot; &amp;ast;@scr.service &amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement relevant parts }
 
 介面和類包括：
 
@@ -376,7 +376,7 @@ After you perform the following procedure, when you upload a txt file into AEM, 
 
 ## 基於命令行的媒體處理程式 {#command-line-based-media-handler}
 
-AEM可讓您在工作流程中執行任何命令列工具，以轉換資產（例如ImageMagick）並將新的轉譯新增至資產。 您只需要在AEM伺服器所在的磁碟上安裝命令列工具，並新增及設定工作流程的程式步驟。 調用的程式( `CommandLineProcess`稱為)也可以根據特定MIME類型進行篩選，並根據新轉譯建立多個縮圖。
+AEM可讓您在工作流程中執行任何命令列工具，以轉換資產（例如ImageMagick），並將新的轉譯新增至資產。 您只需要在AEM伺服器所在的磁碟上安裝命令列工具，並新增及設定工作流程的程式步驟。 調用的程式( `CommandLineProcess`稱為)也可以根據特定MIME類型進行篩選，並根據新轉譯建立多個縮圖。
 
 下列轉換可自動執行並儲存在AEM Assets中：
 
@@ -407,7 +407,7 @@ AEM可讓您在工作流程中執行任何命令列工具，以轉換資產（�
 
 首先在AEM伺服器所在的磁碟上安裝ImageMagick:
 
-1. 安裝ImageMagick:請參閱 [ImageMagick檔案](https://www.imagemagick.org/script/download.php)。
+1. 安裝ImageMagick:請參 [閱ImageMagick檔案](https://www.imagemagick.org/script/download.php)。
 1. 設定工具，以便在命令行上運行轉換。
 1. 要查看工具是否已正確安裝，請在命令行上運 `convert -h` 行以下命令。
 
@@ -417,7 +417,7 @@ AEM可讓您在工作流程中執行任何命令列工具，以轉換資產（�
    >
    >在某些Windows版本（例如Windows SE）中，轉換命令可能無法運行，因為它與Windows安裝中的本機轉換實用程式衝突。 在這種情況下，請提及將影像檔案轉換為縮圖的ImageMagick公用程式的完整路徑。 For example, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. 若要查看工具是否正常運行，請將。jpg影像新增至工作目錄，然後在命令列上執 `<image-name>.jpg -flip <image-name>-flipped.jpg` 行命令convert。
+1. 若要查看工具是否正常運行，請將。jpg影像添加到工作目錄並在命令行上運行 `<image-name>.jpg -flip <image-name>-flipped.jpg` 命令convert。
 
    翻轉的影像會新增至目錄。
 
