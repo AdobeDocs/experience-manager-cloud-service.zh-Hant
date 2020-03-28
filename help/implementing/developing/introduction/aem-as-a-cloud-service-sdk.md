@@ -1,13 +1,13 @@
 ---
-title: AEM as a Cloud Service SDK
+title: AEM 雲端服務 SDK
 description: '待完成 '
 translation-type: tm+mt
-source-git-commit: a7dc007230632bf8343004794b2bc4c5baaf4e05
+source-git-commit: 2142bce6296e671fd1039dec8b0686c609611d98
 
 ---
 
 
-# AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
+# The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
 AEM as a Cloud Service SDK由下列物件組成：
 
@@ -24,9 +24,9 @@ AEM as a Cloud Service SDK由下列物件組成：
 ## 以雲端服務SDK形式存取AEM {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * 您可以勾選AEM Admin Console的「關於 **Adobe Experience Manager** 」圖示，以瞭解您正在生產環境中執行的AEM版本。
-* 快速啟動jar和Dispatcher Tools可從軟體分發入口網站下載為 [zip檔案](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)。 請注意，SDK清單的存取權限僅限於AEM Managed Services或AEM做為雲端服務環境的使用者。
-* Java API jar和Javadoc Jar可通過任意工具（命令行或首選IDE）下載。
-* 主要專案應參考下列API jar套件。 在任何子包中也應引用此相關性。
+* 快速啟動jar和Dispatcher Tools可從軟體分發入口網站下載為 [zip檔案](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。 請注意，SDK清單的存取權限僅限於AEM Managed Services或AEM做為雲端服務環境的使用者。
+* Java API Jar和Javadoc Jar可通過任意工具（命令行或首選IDE）下載。
+* 主要專案應參考下列API Jar套件。 在任何子包中也應引用此相關性。
 
 ```
 <dependency>
@@ -67,12 +67,12 @@ AEM as a Cloud Service SDK由下列物件組成：
 以下是刷新本地環境的建議過程：
 
 1. 請確定任何有用的內容已提交至來源控制中的專案，或是可變內容套件中的可用內容，以供稍後匯入
-1. 本端開發測試內容需要個別儲存，以免部署在Cloud manager管道建置中。 因為只要用於地方開發
+1. 本端開發測試內容需要個別儲存，以免部署在Cloud Manager管道建置中。 因為只要用於地方開發
 1. 停止當前正在運行的快速啟動
 1. 將資料 `crx-quickstart` 夾移至其他資料夾以保全
-1. 請注意Cloud manager中已注明的新AEM版本（此版本將用於識別要進一步下載的新QuickStart jar版本）
+1. 請注意Cloud Manager中已注明的新AEM版本（此版本將用於識別要進一步下載的新QuickStart Jar版本）
 1. 從軟體散發入口網站下載其版本與Production AEM版本相符的QuickStart JAR
-1. 建立全新資料夾，並將新的QuickStart jar放入
+1. 建立全新資料夾，並將新的QuickStart Jar放入
 1. 以所需的執行模式（重新命名檔案或透過傳入執行模式）啟動新的快速 `-r`啟動。
    * 請確定資料夾中沒有舊快速啟動的殘餘部分。
 1. 建立您的AEM應用程式
@@ -84,7 +84,7 @@ AEM as a Cloud Service SDK由下列物件組成：
 
 建議您頻繁更新SDK（例如每週兩次），並每日處置完整的本機狀態，以免意外依賴應用程式中的狀態資料。
 
-如果您依賴CryptoSupport([透過在AEM中設定Cloudservices或SMTP mail服務的憑證，或在應用程式中使用CryptoSupport API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html))，加密的屬性將會以在AEM環境的第一個啟動時自動產生的金鑰加密。 在雲設定負責自動重用特定環境的CryptoKey的同時，還需要將密鑰注入到本地開發環境中。
+如果您依賴CryptoSupport([透過在AEM中設定Cloudservices或SMTP Mail服務的憑證，或在應用程式中使用CryptoSupport API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html))，加密的屬性將會以在AEM環境的第一個啟動時自動產生的金鑰加密。 在雲設定負責自動重用特定環境的CryptoKey的同時，還需要將密鑰注入到本地開發環境中。
 
 依預設，AEM會設定為將關鍵資料儲存在資料夾的資料夾中，但為方便在開發中重複使用，AEM程式可在首次啟動時以「`-Dcom.adobe.granite.crypto.file.disable=true`」初始化。 這將在&quot;`/etc/key`&quot;生成加密資料。
 
