@@ -3,7 +3,7 @@ title: 設定並使用資產微服務進行資產處理
 description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
@@ -11,7 +11,6 @@ source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 # 開始使用資產微服務 {#get-started-using-asset-microservices}
 
 <!--
-
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
@@ -19,14 +18,13 @@ source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 * How to create new config or request for new provisioning/purchase.
 
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
-
 -->
 
-Asset microservices使用雲端服務提供可擴充且具彈性的資產處理，由Adobe管理，以最佳化處理不同的資產類型和處理選項。
+資產微服務使用雲端服務提供資產的可擴充且彈性化處理。 Adobe管理服務，以最佳化處理不同的資產類型和處理選項。
 
-資產處理是根據「處理設定檔」中 **[!UICONTROL 的設定進行]**，此設定提供預設設定，並允許管理員新增更特定的資產處理設定。 為了允許擴充性和完全自訂，資產處理允許對後置處理工作流程進行選用設定，然後由管理員建立和維護。
+資產處理取決於處理設定檔 **[!UICONTROL 中的設定]**，此設定提供預設設定，並允許管理員新增更特定的資產處理設定。 管理員可以建立和維護後處理工作流程的設定，包括選擇性自訂。 自訂工作流程可讓您擴充性和完全自訂。
 
-以下是Experience Manager雲端服務中資產處理的高階流程。
+資產處理的高階流程如下。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -37,7 +35,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> 對於從舊版Experience Manager更新的客戶——本節所述的資產處理會取代以前用於資產擷取處理的「DAM更新資產」工作流程模型。 大部分的標準轉譯產生和中繼資料相關步驟會由資產microservices處理取代，而剩下的步驟（如果有的話）則可由後處理工作流程設定取代。
+> 此處所述的資產處理會取代 `DAM Update Asset` 舊版Experience Manager中的工作流程模型。 大部分的標準轉譯產生和中繼資料相關步驟會由資產microservices處理取代，而剩下的步驟（如果有的話）則可由後處理工作流程設定取代。
 
 ## 開始處理資產 {#get-started}
 
@@ -77,17 +75,18 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 
 每個處理設定檔設定都包含轉譯清單。 您可以針對每個轉譯指定下列項目：
 
-* 轉譯名稱
-* 轉譯格式（支援JPEG、PNG或GIF）
-* 轉譯寬度和高度（以像素為單位，如果未指定，則會假設原始影像的完整像素大小）
-* 轉譯品質（針對JPEG）（百分比）
-* 已包含和排除的MIME類型已定義，處理設定檔會套用哪些資產類型
+* 轉譯名稱。
+* 支援的轉譯格式，例如JPEG、PNG或GIF。
+* 轉譯寬度和高度（以像素為單位）。 如果未指定，則會使用原始影像的全像素大小。
+* JPEG的轉譯品質（百分比）。
+* 包含和排除的MIME類型，以定義描述檔的適用性。
 
 ![processing-profiles-adding](assets/processing-profiles-adding.png)
 
-儲存新的處理設定檔時，會將其新增至已設定的處理設定檔清單。 然後，這些處理設定檔可套用至資料夾階層中的資料夾，讓這些處理設定檔對資產上傳和資產上傳有效。
+當您建立並儲存新的處理設定檔時，它會新增至已設定的處理設定檔清單。 您可以將這些處理設定檔套用至資料夾階層中的資料夾，讓這些設定檔對資產上傳和資產處理有效。
 
-![processing-profiles-list](assets/processing-profiles-list.png)
+<!-- Removed per cqdoc-15624 request by engineering.
+ ![processing-profiles-list](assets/processing-profiles-list.png) -->
 
 #### 轉譯寬度和高度 {#rendition-width-height}
 
