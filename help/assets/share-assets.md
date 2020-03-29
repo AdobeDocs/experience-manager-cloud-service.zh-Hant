@@ -3,20 +3,20 @@ title: 將資產、檔案夾和系列共用為連結
 description: 本文說明如何在Experience Manager Assets中以超連結的形式共用資產、檔案夾和系列。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # 分享和分發在Experience Manager中管理的資產 {#share-assets-from-aem}
 
-Adobe Experience Manager(AEM)Assets可讓您與組織成員及外部實體（包括合作夥伴和廠商）共用資產、資料夾和系列。 您可以使用下列方法，將Experience Manager Assets中的資產共用為雲端服務：
+Adobe Experience Manager(AEM)Assets可讓您與組織成員及外部實體（包括合作夥伴和廠商）共用資產、資料夾和系列。 使用下列方法，將Experience Manager Assets中的資產共用為雲端服務：
 
-* 以連結的形式分享
-* 下載資產
-* 透過AEM案頭應用程式分享
-* 透過Adobe Asset Link分享
-* （近期功能）使用品牌入口網站分享
+* 以連結的形式分享。
+* 下載資產並個別分享。
+* 透過AEM案頭應用程式分享。
+* 透過Adobe Asset Link分享。
+* （即將推出的功能）使用品牌入口網站分享。
 
 ## 以連結方式共用資產 {#sharelink}
 
@@ -110,11 +110,13 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 行銷人員和業務線使用者可以使用、
 
-* **AEM案頭應用程式**:應用程式可在Windows和Mac上運作。 請參閱桌 [面應用程式概觀](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參 [閱瀏覽、搜尋和預覽資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立新資產，並與AEM使用者的對應人員共用，例如上傳新影像。 請參閱 [使用案頭應用程式上傳資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* **AEM案頭應用程式**:應用程式可在Windows和Mac上運作。 請參閱桌 [面應用程式概觀](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參 [閱瀏覽、搜尋和預覽資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立資產，並與AEM使用者的對應人員共用資產，例如上傳新影像。 請參閱 [使用案頭應用程式上傳資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
 
 * **Adobe Asset Link**:創意專業人員可直接在Adobe InDesign、Adobe Illustrator和Adobe Photoshop中搜尋及使用資產。
 
 ## 設定資產共用 {#configure-sharing}
+
+共用資產的不同選項需要特定的設定，並具備特定的先決條件。
 
 ### 設定資產連結共用 {#asset-link-sharing}
 
@@ -162,7 +164,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 啟用案頭動作以搭配案頭應用程式使用 {#desktop-actions}
 
-在瀏覽器的「資產」使用者介面中，您可以探索資產位置或結帳並開啟資產，以便在案頭應用程式中編輯。 這些選項稱為「案頭動作」，如果未啟用，請參閱「在AEM [網頁介面中啟用案頭動作」](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
+在瀏覽器的「資產」使用者介面中，您可以探索資產位置或結帳並開啟資產，以便在案頭應用程式中編輯。 這些選項稱為案頭動作，若要啟用它，請參閱「在 [AEM網頁介面中啟用案頭動作」](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
 
 ![使用案頭應用程式時，啟用案頭動作做為捷徑](assets/enable_desktop_actions.png)
 
