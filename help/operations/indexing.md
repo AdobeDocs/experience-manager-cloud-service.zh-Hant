@@ -2,7 +2,7 @@
 title: 內容搜尋與索引
 description: '內容搜尋與索引 '
 translation-type: tm+mt
-source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
+source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
 
 1. 在AEM雲端服務的高階層，隨著 [Blue-Green部署模型的推出](#index-management-using-blue-green-deployments) ，將會有兩組索引：一組是舊版（藍色），另一組是新版（綠色）。
 
-使用的索引版本是使用索引定義中的標誌通過標誌配置的 `useIfExist` 。 索引只能用於應用程式的一個版本（例如，僅藍色或綠色），或同時用於兩個版本。 使用藍綠部署的索 [引管理提供詳細的檔案](#index-management-using-blue-green-deployments)。
+<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. 客戶可以在Cloud Manager構建頁面上查看索引作業是否已完成，並在新版本準備好接收流量時收到通知。
 
