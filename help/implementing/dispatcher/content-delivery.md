@@ -2,7 +2,7 @@
 title: 內容傳送
 description: '內容傳送 '
 translation-type: tm+mt
-source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
+source-git-commit: b1666e7715e8f5715be7a88001869c1042c6c994
 
 ---
 
@@ -101,14 +101,6 @@ AEM總共提供兩個選項：
 
 * 依預設，會根據apache圖層所發出的快取控制標題，由瀏覽器快取5分鐘。 CDN也尊重此值。
 * 可以覆寫所有HTML/Text內容，方法是在使用AEM `EXPIRATION_TIME` 做 `global.vars` 為Cloud Service SDK Dispatcher工具中定義變數。
-
-您必須確保檔案下 `src/conf.dispatcher.d/cache` 有以下規則：
-
-```
-/0000
-{ /glob "*" /type "allow" }
-```
-
 * 可以由以下apache mod_headers指令在更精細的級別上覆蓋：
 
 ```
