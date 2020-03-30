@@ -2,7 +2,7 @@
 title: 內容傳送
 description: '內容傳送 '
 translation-type: tm+mt
-source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
+source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
 
 ---
 
@@ -100,7 +100,7 @@ AEM總共提供兩個選項：
 ### HTML/文字 {#html-text}
 
 * 依預設，會根據apache圖層所發出的快取控制標題，由瀏覽器快取5分鐘。 CDN也尊重此值。
-* 可以在使用AEM做為Cloud Service SDK Dispatcher工具中定義變數， `EXPIRATION_TIME` 覆寫所 `global.vars` 有HTML/Text內容的變數。
+* 可以覆寫所有HTML/Text內容，方法是在使用AEM `EXPIRATION_TIME` 做 `global.vars` 為Cloud Service SDK Dispatcher工具中定義變數。
 
 您必須確保檔案下 `src/conf.dispatcher.d/cache` 有以下規則：
 
@@ -221,7 +221,7 @@ HTML頁面上的預設clientlib包含如下範例：
 
 若要在本機SDK快速入門中啟用嚴格的clientlib版本控制，請執行下列動作：
 
-1. 導覽至OSGi Configuration Manager <host>/system/console/configMgr
+1. 導覽至OSGi Configuration Manager `<host>/system/console/configMgr`
 1. 尋找Adobe Granite HTML Library Manager的OSGi Config:
    * 勾選核取方塊以啟用「嚴格版本控制」
    * 在標有「長期客戶端快取密鑰」的欄位中，輸入值/。*；雜湊
