@@ -2,7 +2,7 @@
 title: 內容傳送
 description: '內容傳送 '
 translation-type: tm+mt
-source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
+source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
 
 ---
 
@@ -187,7 +187,7 @@ AEM總共提供兩個選項：
 
 下圖說明這一點。
 
-![](assets/cdnc.png "CDNCDN")
+![](assets/cdnd.png "CDNCDN")
 
 如果擔心調度器快取未清除，請與客戶支援聯 [系](https://helpx.adobe.com/support.ec.html) ，如有需要，客戶支援可以刷新調度器快取。
 
