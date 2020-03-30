@@ -2,7 +2,7 @@
 title: 內容傳送
 description: '內容傳送 '
 translation-type: tm+mt
-source-git-commit: 0284a23051bf10cd0b6455492a709f1b9d2bd8c7
+source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
 
 ---
 
@@ -27,20 +27,20 @@ source-git-commit: 0284a23051bf10cd0b6455492a709f1b9d2bd8c7
 
 內容類型HTML/text設定為在分派程式層的300秒（5分鐘）後過期，分派程式快取和CDN都會遵守此臨界值。 在重新部署發佈服務期間，會清除調度器快取，然後在新的發佈節點接受通信之前預熱。
 
-以下各節提供內容傳送的更詳細資訊，包括CDN設定和Dispatcher快取。
+以下各節提供內容傳送的更詳細資訊，包括CDN設定和快取。
 
 有關從作者服務複製到發佈服務的資訊，請參 [閱](/help/operations/replication.md)。
 
 ## CDN {#cdn}
 
-AEM as Cloud Service隨附預設CDN。 其主要目的是透過從邊緣的CDN節點（在瀏覽器附近）傳送可快取的內容，來減少延遲。 它已完全管理並設定，以提供最佳的AEM應用程式效能。
+AEM as Cloud Service隨附內建CDN。 其主要目的是透過從邊緣的CDN節點（在瀏覽器附近）傳送可快取的內容，來減少延遲。 它已完全管理並設定，以提供最佳的AEM應用程式效能。
 
 AEM總共提供兩個選項：
 
 1. AEM Managed CDN - AEM的現成可用CDN。 它是緊密整合的選項，不需要大量客戶投資來支援與AEM的CDN整合。
 1. 客戶管理的CDN指向AEM Managed CDN —— 客戶將自己的CDN指向AEM的現成可用的CDN。 客戶仍需要管理其自己的CDN，但是與AEM整合的投資並不大。
 
-第一個選項應滿足大多數客戶效能和安全性要求。 此外，它需要最少的客戶投資和持續維護。
+第一個選項應滿足大多數客戶效能和安全性要求。 此外，它需要客戶的最小努力。
 
 第二個選項將逐個允許。 此決定是基於符合某些先決條件，包括但不限於與其CDN廠商舊有整合且難以放棄的客戶。
 
@@ -53,7 +53,7 @@ AEM總共提供兩個選項：
 | **CDN專業知識** | 無 | 需要至少一次兼職的工程資源及能夠設定客戶CDN的詳細CDN知識。 |
 | **安全性** | 由 Adobe 管理. | 由Adobe管理（也可由客戶在自己的CDN管理）。 |
 | **效能** | 由Adobe最佳化。 | 將受益於某些AEM CDN功能，但由於額外的跳數，可能會造成小幅效能點擊。 **注意**:從客戶CDN跳至Emply CDN可能會很有效)。 |
-| **快取** | 支援在調度器級別應用的快取標頭。 | 支援在調度器級別應用的快取標頭。 |
+| **快取** | 支援在調度器上應用的快取標頭。 | 支援在調度器上應用的快取標頭。 |
 | **影像和視訊壓縮功能** | 可與Adobe Dynamic Media搭配使用。 | 可搭配Adobe Dynamic Media或客戶管理的CDN影像／視訊解決方案使用。 |
 
 ### AEM Managed CDN {#aem-managed-cdn}
@@ -62,6 +62,9 @@ AEM總共提供兩個選項：
 
 1. 您將透過共用包含此資訊之安全表單的連結，將已簽署的SSL憑證和機密金鑰提供給Adobe。 請與客戶支援協調此項工作。
    **注意：** Aem作為雲端服務不支援「已驗證網域(DV)」憑證。
+1. 您應通知客戶支援：
+   * 哪個自定義域應與給定環境關聯，如程式ID和環境ID所定義。
+   * 如果需要任何IP白名單來限制特定環境的流量。
 1. 然後，客戶支援將與您協調CNAME DNS記錄的時間，並將其FQDN指向 `adobe-aem.map.fastly.net`。
 1. 當SSL憑證即將到期時，您會收到通知，因此您可以重新提交新的SSL憑證。
 
@@ -90,14 +93,14 @@ AEM總共提供兩個選項：
 
 在接受即時流量之前，您應向Adobe客戶支援驗證端對端流量路由是否正常運作。
 
-### 快取 {#caching}
+## 快取 {#caching}
 
-快取程式遵循下列規則。
+您可使用Dispatcher規則來設定CDN的快取。 請注意，如果在分派器配置中啟用，則分派器也會遵守產生的快取過期標 `enableTTL` 題，這表示即使在重新發佈內容以外，也會重新整理特定內容。
 
 ### HTML/文字 {#html-text}
 
 * 依預設，會根據apache圖層所發出的快取控制標題，由瀏覽器快取5分鐘。 CDN也尊重此值。
-* 可以覆寫所有HTML/Text內容，方法是在使用AEM `EXPIRATION_TIME` 做 `global.vars` 為Cloud Service SDK Dispatcher工具中定義變數。
+* 可以在使用AEM做為Cloud Service SDK Dispatcher工具中定義變數， `EXPIRATION_TIME` 覆寫所 `global.vars` 有HTML/Text內容的變數。
 
 您必須確保檔案下 `src/conf.dispatcher.d/cache` 有以下規則：
 
@@ -106,15 +109,15 @@ AEM總共提供兩個選項：
 { /glob "*" /type "allow" }
 ```
 
-* 可以通過apache mod_headers指令在更精細的級別上覆蓋。 例如：
+* 可以由以下apache mod_headers指令在更精細的級別上覆蓋：
 
 ```
 <LocationMatch "\.(html)$">
-        Header set Cache-Control "max-age=200 s-maxage=200"
+        Header set Cache-Control "max-age=200"
 </LocationMatch>
 ```
 
-您必須確保檔案下 `src/conf.dispatcher.d/cache` 有以下規則：
+您必須確保檔案下 `src/conf.dispatcher.d/cache` 有以下規則（預設配置中）:
 
 ```
 /0000
@@ -128,32 +131,41 @@ AEM總共提供兩個選項：
 * 借由使用AEM的用戶端程式庫架構，JavaScript和CSS程式碼的產生方式，讓瀏覽器可以無限期地快取它，因為任何變更都會以具有唯一路徑的新檔案的形式顯示。  換言之，將視需要產生參照用戶端程式庫的HTML，讓客戶在發佈新內容時可體驗新內容。 對於不尊重「不可變」值的舊版瀏覽器，快取控制項會設為「不可變」或30天。
 * 如需詳細資 [訊，請參閱「用戶端程式庫與版本一致性](#content-consistency) 」一節。
 
-### 影像 {#images}
+### 影像和任何儲存在點滴儲存空間中的大型內容 {#images}
 
-* 未快取
-
-### 其他內容類型 {#other-content}
-
-* 無預設快取
-* 可以由apache覆蓋 `mod_headers`。 例如：
+* 依預設，未快取
+* 可以通過以下apache指令在更精細的級別上 `mod_headers` 設定：
 
 ```
-<LocationMatch "\.(css|js)$">
-    Header set Cache-Control "max-age=500 s-maxage=500"
+<LocationMatch "^.*.jpeg$">
+    Header set Cache-Control "max-age=222"
 </LocationMatch>
 ```
 
-*其他設定快取標題的方法也可能奏效
+必須確保src/conf.dispatcher.d/cache下的檔案具有以下規則（預設配置中）:
 
-在接受即時流量之前，客戶應向Adobe客戶支援驗證端對端流量路由是否正常運作。
+```
+/0000
+{ /glob "*" /type "allow" }
+```
+
+請確定要保留為私密而非快取的資產不屬於LocationMatch指令篩選器。
+
+* 請注意，其他方法(包括 [dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))將無法成功覆寫值。
+
+### 節點儲存中的其他內容檔案類型 {#other-content}
+
+* 無預設快取
+* default cannot set with `EXPIRATION_TIME` variable used for html/text file types
+* 透過指定適當的regex，可使用html/text區段中所述的相同LocationMatch策略來設定快取到期時間
 
 ## Dispatcher {#disp}
 
 流量會通過apache Web伺服器，該伺服器支援包括調度器在內的模組。 調度器主要用作快取，以限制對發佈節點的處理，以提高效能。
 
-HTML/文字類型的內容會以快取標題設定，對應於300秒（5分鐘）的過期。
+如CDN的快取區段所述，規則可套用至分派器設定，以修改任何預設快取到期設定。
 
-本節的其餘部分介紹與調度程式快取失效相關的注意事項。
+本節的其餘部分介紹與調度程式快取失效相關的注意事項。 對於大部分客戶，不必使分派器快取失效，而是依賴於在重新發佈內容時重新整理其快取的分派器，以及與快取到期標題相關的CDN。
 
 ### 啟動／停用期間的Dispatcher快取失效 {#cache-activation-deactivation}
 
@@ -213,5 +225,5 @@ HTML頁面上的預設clientlib包含如下範例：
 1. 尋找Adobe Granite HTML Library Manager的OSGi Config:
    * 勾選核取方塊以啟用「嚴格版本控制」
    * 在標有「長期客戶端快取密鑰」的欄位中，輸入值/。*；雜湊
-1. 儲存變更。請注意，不需將此組態儲存在原始碼控制項中，因為AEM將會自動在開發、階段和生產環境中啟用此組態。
+1. 儲存變更。請注意，不需將此組態儲存在來源控制項中，因為AEM將會自動在開發、階段和生產環境中啟用此組態，因此AEM會是雲端服務。
 1. 每當用戶端程式庫的內容變更時，就會產生新的雜湊金鑰，並更新HTML參考。
