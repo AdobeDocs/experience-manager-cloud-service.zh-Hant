@@ -1,13 +1,13 @@
 ---
-title: Dispatcher in the Cloud
-description: 'Dispatcher in the Cloud '
+title: 雲端中的 Dispatcher
+description: '雲端中的 Dispatcher '
 translation-type: tm+mt
-source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
+source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
 
 ---
 
 
-# Dispatcher in the Cloud {#Dispatcher-in-the-cloud}
+# 雲端中的 Dispatcher {#Dispatcher-in-the-cloud}
 
 ## Apache和Dispatcher組態與測試 {#apache-and-dispatcher-configuration-and-testing}
 
@@ -21,7 +21,7 @@ source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
 Dispatcher Tools是整體AEM的一部分，做為Cloud Service SDK，並提供：
 
 * 一種Vanilla檔案結構，其中包含要包含在調度器的Maven項目中的配置檔案；
-* 為客戶在本機驗證調度程式配置提供工具；
+* 為客戶在本地驗證調度程式配置提供工具；
 * 將調度程式本地化的Docker映像。
 
 ## 下載並擷取工具 {#extracting-the-sdk}
@@ -102,7 +102,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.d/variables/custom.vars`
 
-此檔案會從您的檔案中包 `.vhost` 含。 您可在此位置放入Apache變數的定義。
+此檔案會從您的檔案中包 `.vhost` 含。 您可以在此位置放入Apache變數的定義。
 
 * `conf.d/variables/global.vars`
 
@@ -183,11 +183,11 @@ Uncompressing DispatcherSDKv<version>  100%
 >[!NOTE]
 >AEM（Cloud Service，雲端服務）主要原型將產生相同的分派程式設定檔案結構。
 
-以下各節說明如何在本機驗證配置，以便在部署內部版本時，在Cloud manager中傳遞相關的品質門。
+以下各節說明如何在本機驗證配置，以便在部署內部版本時，在Cloud Manager中傳遞相關的品質門。
 
 ## Dispatcher配置的本地驗證 {#local-validation-of-dispatcher-configuration}
 
-驗證工具可在SDK中以Mac OS、Linux或Windows二進位格式取得，讓客戶執行與Cloud manager在建立和部署版本時所執行的驗證相同。 `bin/validator`
+驗證工具可在SDK中以Mac OS、Linux或Windows二進位格式取得，讓客戶執行與Cloud Manager在建立和部署版本時所執行的驗證相同。 `bin/validator`
 
 它被調用為： `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
@@ -230,9 +230,9 @@ Whitelisted directives:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-客戶不能添加任意模組，但是將來可能會考慮將附加模組包括在產品中。 如Dispatcher Tools文檔中所述，客戶可以在SDK中執行「驗證器白名單」，以查找指定Dispatcher版本可用的指令清單。
+客戶不能添加任意模組，但是將來可能會考慮將其他模組加入產品中。 如Dispatcher Tools文檔中所述，客戶可以在SDK中執行「驗證器白名單」，以查找指定Dispatcher版本可用的指令清單。
 
-白名單包含客戶配置中允許的Apache指令清單。 如果指令未列入白名單，則工具會記錄錯誤並傳回非零的退出代碼。 如果命令行上沒有提供白名單（這是調用白名單的方式），則該工具會使用預設白名單，Cloud manager將在部署到雲環境之前用於驗證。
+白名單包含客戶配置中允許的Apache指令清單。 如果指令未列入白名單，則工具會記錄錯誤並傳回非零的退出代碼。 如果命令行上沒有提供白名單（這是調用白名單的方式），則該工具會使用預設白名單，Cloud Manager將在部署到雲環境之前用於驗證。
 
 此外，它還會進一步掃描所有具有模式的 `conf.dispatcher.d/enabled_farms/*.farm` 檔案並檢查：
 
@@ -258,7 +258,7 @@ Cloud manager validator 1.0.4
 
 **在存檔中找`conf.dispatcher.d`不到子資料夾**
 
-您的封存應包含資料 `conf.d` 夾和 `conf.dispatcher.d`。 請注意，您不 **應**&#x200B;在封 `etc/httpd` 存中使用首碼。
+您的封存應包含資料 `conf.d` 夾和 `conf.dispatcher.d`。請注意，您不 **應**&#x200B;在封 `etc/httpd` 存中使用首碼。
 
 **找不到`conf.dispatcher.d/enabled_farms`**
 
@@ -293,7 +293,7 @@ Cloud manager validator 1.0.4
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-或者，您也可以包含 **這些檔案的預設版本** ，其名稱會以字詞 `default_`為前置詞，例如。 `../filters/default_filters.any`。
+或者，您也可以包含 **這些檔案的預設版本** ，其名稱會以字詞 `default_`為前置詞，例如。`../filters/default_filters.any`。
 
 **在任何已知位置之外包含語句(...):...**
 
@@ -307,7 +307,7 @@ Cloud manager validator 1.0.4
 
 **允許的客戶端／呈現不包括於：...**
 
-當您未在區段中指定包含時，就會 `/renders` 產生 `/allowedClients` 此 `/cache` 錯誤。 **請參閱**&#x200B;包含的檔案(...)必須命名：...的子菜單。
+當您未在區段中指定包含時，就會 `/renders` 產生 `/allowedClients` 此 `/cache` 錯誤。 請參閱&#x200B;**包含的檔案(...)必須命名：...** 的子菜單。
 
 **篩選不得使用全域模式以允許請求**
 
@@ -393,7 +393,7 @@ Starting httpd server
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-雲端環境的記錄檔將透過Cloud manager中提供的記錄服務公開。
+雲端環境的記錄檔將透過Cloud Manager中提供的記錄服務公開。
 
 ## 每個環境的不同Dispatcher配置 {#different-dispatcher-configurations-per-environment}
 
@@ -464,7 +464,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 將Dispatcher組態從AMS移轉至AEM做為雲端服務的准則
 
-Dispatcher配置結構在Managed services和AEM（即雲服務）之間有差異。 以下是如何從AMS Dispatcher設定第2版移轉至AEM做為雲端服務的逐步指南。
+Dispatcher配置結構在Managed Services和AEM（即雲服務）之間有差異。 以下是如何從AMS Dispatcher設定第2版移轉至AEM做為雲端服務的逐步指南。
 
 ## 如何將AMS轉換為AEM做為Cloud服務分派程式設定
 
@@ -694,135 +694,3 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 恭喜！ 如果驗證器不再報告任何問題，而docker容器啟動時沒有出現任何故障或警告，則您已準備好將配置移動到git儲存庫 `dispatcher/src` 的子目錄。
 
 **使用AMS Dispatcher配置第1版的客戶應聯繫客戶支援以幫助他們從第1版遷移到第2版，以便遵循上述說明。**
-
-## Dispatcher和CDN {#dispatcher-cdn}
-
-發佈服務內容傳送包括：
-
-* CDN（通常由Adobe管理）
-* AEM Dispatcher
-* AEM發佈
-
-資料流程如下：
-
-1. URL會新增至瀏覽器
-1. 對DNS中對應至該網域的CDN提出請求
-1. 如果內容已完全快取到CDN,CDN會將內容提供給瀏覽器
-1. 如果內容未完全快取，CDN會呼叫（反向proxy）給分派程式
-1. 如果內容已完全快取在Dispatcher上，則Dispatcher會將內容提供給CDN
-1. 如果內容未完全快取，則分派程式會呼叫（反向proxy）至AEM發佈
-1. 內容由瀏覽器轉譯，瀏覽器也會快取內容，視標題而定
-
-大部分內容設定在五分鐘後過期，這是分派程式快取和CDN都會遵循的臨界值。 在重新部署發佈服務期間，會清除調度器快取，然後在新的發佈節點接受通信之前預熱。
-
-以下各節提供內容傳送的更詳細資訊，包括CDN設定和Dispatcher快取。
-
-有關從作者服務複製到發佈服務的資訊，請參 [閱](/help/operations/replication.md)。
-
->[!NOTE]
->流量會通過apache web伺服器，該伺服器支援包括調度器在內的模組。 調度器主要用作快取，以限制對發佈節點的處理，以提高效能。
-
-### CDN {#cdn}
-
-AEM提供三個選項：
-
-1. Adobe Managed CDN - AEM的現成可用CDN。 這是建議的選項，因為它已完全整合。
-1. 客戶管理的CDN —— 客戶自行攜帶CDN，並負責管理它。
-1. 指向Adobe Managed CDN —— 客戶將CDN指向AEM的現成可用CDN。
-
->[!CAUTION]
->強烈建議使用第一個選項。 如果您選擇第二個選項，Adobe不能因任何錯誤設定而負責。
-
-第二和第三種選擇將逐案允許。 這包括滿足某些先決條件，包括但不限於與其CDN廠商舊有整合且難以復原的客戶。
-
-#### Adobe Managed CDN {#adobe-managed-cdn}
-
-使用Adobe現成可用的CDN來準備內容傳送很簡單，如下所述：
-
-1. 您將透過共用包含此資訊之安全表單的連結，將已簽署的SSL憑證和機密金鑰提供給Adobe。 請與客戶支援協調此項工作。
-注意：Aem作為雲端服務不支援「已驗證網域(DV)」憑證。
-1. 然後，客戶支援將與您協調CNAME DNS記錄的時間，並將其FQDN指向 `adobe-aem.map.fastly.net`。
-1. 當SSL憑證即將到期時，您會收到通知，因此您可以重新提交新的SSL憑證。
-
-依預設，對於Adobe Managed CDN設定，所有公開流量都可以進入發佈服務，適用於生產與非生產（開發與階段）環境。 如果您希望限制特定環境的發佈服務流量（例如，限制IP位址範圍的轉移），您應與客戶支援合作設定這些限制。
-
-#### 客戶管理的CDN {#customer-managed-cdn}
-
-您可以管理自己的CDN，但需：
-
-1. 您有現有的CDN。
-1. 它必須是支援的CDN。 目前支援Akamai。 如果您的組織想要管理目前不支援的CDN，請聯絡客戶支援。
-1. 你會搞定的。
-1. 您必須能夠設定CDN以搭配Aem做為雲端服務使用——請參閱下方的設定指示。
-1. 您有工程CDN專家隨時待命，以防相關問題出現。
-1. 您必須依設定指示中所述，將CDN節點的白名單提供給Cloud Manager。
-1. 您必須先執行並成功通過負載測試，才能開始生產。
-
-配置說明：
-
-1. 借由呼叫環境建立／更新API，將CIDR清單加入白名單，將CDN廠商的白名單提供給Adobe。
-1. 使用網 `X-Forwarded-Host` 域名稱設定標題。
-1. 使用原始網域（即Aem為雲端服務入口）設定主機標題。 價值應來自Adobe。
-1. 將SNI報頭髮送到源。 sni標頭必須是源域。
-1. 設定 `X-Edge-Key` 將流量正確路由至AEM伺服器所需的項目。 價值應來自Adobe。
-
-在接受即時流量之前，您應向Adobe客戶支援驗證端對端流量路由是否正常運作。
-
-#### 指向Adobe Managed CDN {#point-to-point-CDN}
-
-如果您想要使用現有的CDN，但無法滿足客戶管理的CDN的需求，則支援此功能。 在這種情況下，您可以管理自己的CDN，但指向Adobe的受管CDN。
-
-客戶必須先執行並成功通過負載測試，才能開始生產。
-
-配置說明：
-
-1. 使用網 `X-Forwarded-Host` 域名稱設定標題。
-1. 使用原始網域（即Adobe的CDN入口）設定主機標題。 價值應來自Adobe。
-1. 將SNI報頭髮送到源。 與主機標頭一樣， sni標頭必須是源域。
-1. 設定 `X-Edge-Key`要將流量正確路由至AEM伺服器所需的。 價值應來自Adobe。
-
-#### CDN快取失效 {#CDN-cache-invalidation}
-
-快取失效遵循下列規則：
-
-* 一般而言，HTML內容會根據分派程式所發出的快取控制標題，在CDN中快取5分鐘。
-* 對於不尊重不可變值的舊版瀏覽器，使用設定為不可變或30天的快取控制項，可無限期快取用戶端程式庫（JavaScript和CSS）。 請注意，客戶機庫服務在唯一路徑上，當客戶機庫更改時，該路徑會更改。 換言之，將視需要產生參照用戶端程式庫的HTML，讓您在發佈新內容時體驗新內容。
-* 依預設，影像不會快取。
-
-在接受即時流量之前，客戶應向Adobe客戶支援驗證端對端流量路由是否正常運作。
-
-## 顯式調度器快取失效 {#explicit-invalidation}
-
-如前所述，流量通過apache web伺服器，該伺服器支援包括調度器在內的模組。 調度器主要用作快取，以限制對發佈節點的處理，以提高效能。
-
-一般而言，不需要手動使調度程式中的內容無效，但如有需要，則可能如下所述。
-
-在AEM成為雲端服務之前，有兩種方式會使分派程式快取失效。
-
-1. 調用複製代理，指定發佈調度器刷新代理
-2. 直接呼叫 `invalidate.cache` API(例如POST /dispatcher/invalidate.cache)
-
-此方 `invalidate.cache` 法不再受支援，因為它只處理特定的調度器節點。
-AEM作為雲端服務會在服務層級運作，而非個別節點層級運作，因此 [Dispatcher Help](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) documentation中的失效指示不再正確。
-而應使用複製刷新代理。這可以使用複製API完成。 此處提供複製API文 [檔](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) ，有關刷新快取的示例，請參見 [API示例頁](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) ，具體是 `CustomStep` 向所有可用代理髮出類型為ACTIVATE的複製操作的示例。 刷新代理端點不可配置，但已預先配置為指向與運行刷新代理的發佈服務匹配的調度程式。 刷新代理通常可由OSGi事件或工作流觸發。
-
-下圖說明了這一點。
-
-![](assets/cdnb.png "CDNCDN")
-
-如果擔心調度程式快取未清除，請與客戶支援聯繫，如有必要，客戶支援可以刷新調度程式快取。
-
-Adobe管理的CDN會遵守TTL，因此不需要將它清除。 如果懷疑有問題，請連絡客戶支援，以視需要清除Adobe管理的CDN快取。
-
-### 啟動／停用期間的Dispatcher快取失效 {#cache-activation-deactivation}
-
-和舊版AEM一樣，發佈或取消發佈頁面會清除分派程式快取中的內容。 如果懷疑發生快取問題，客戶應重新發佈相關頁面。
-
-當發佈實例從作者處收到頁面或資產的新版本時，它使用刷新代理使其調度程式上的適當路徑失效。 更新的路徑將連同其父代一起從調度器快取中刪除，最高可達一個級別(您可以使用statfiles級別 [配置此路徑](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
-
-### 內容新鮮感與版本一致性 {#content-consistency}
-
-* 頁面由HTML、Javascript、CSS和影像組成。
-* 我們建議您運用clientlibs架構，將Javascript和CSS資源匯入HTML頁面，並考量JS程式庫之間的相依性。
-* 提供自動版本管理，這表示開發人員可在來源控制項中籤入JS程式庫的變更，並在推送版本時提供最新版本。 若沒有這個功能，開發人員將需要手動變更參照新版程式庫的HTML，如果許多HTML範本共用相同的程式庫，這特別麻煩。
-* 當新版程式庫發佈至生產版本時，參考的HTML頁面會更新，並包含這些更新程式庫版本的新連結。 一旦指定HTML頁面的瀏覽器快取過期，就不必擔心舊程式庫會從瀏覽器快取載入，因為重新整理的頁面（從AEM）現在可保證會參照新版本的程式庫。 換言之，重新整理的HTML頁面將包含所有最新的程式庫版本。
