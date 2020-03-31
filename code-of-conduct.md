@@ -1,5 +1,5 @@
 ---
-source-git-commit: 06351c5fa81d9841f47c086cdbc66c0c1d1cb5cc
+source-git-commit: 3162a65d19d5ccba5671c40f5184ab4882f77ecb
 translation-type: tm+mt
 
 ---
@@ -31,7 +31,7 @@ translation-type: tm+mt
 
 項目維護人員負責澄清可接受行為的標準，並預期會針對任何不可接受行為的情況採取適當和公平的糾正行動。
 
-專案維護人員有權利且有責任移除、編輯或拒絕註解、提交、編碼、Wiki編輯、問題和其他不符合本行為准則的貢獻，或暫時或永久禁止任何參與者從事其認為不適當、具威脅性、冒犯性或有害的其他行為。
+專案維護人員有權利且有責任移除、編輯或拒絕註解、提交、編碼、Wiki編輯、問題和其他不符合本行為准則的貢獻，或暫時或永久禁止任何因其認為不適當、具威脅性、冒犯性或有害的行為而撰稿人。
 
 ## 範圍
 
@@ -45,4 +45,4 @@ translation-type: tm+mt
 
 ## 歸因
 
-本行為規則改編自《投稿人盟 [約》](https://contributor-covenant.org)1.4版，網址為 [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+本行為准則自《投稿人盟約》( [Contributor Covenat](https://contributor-covenant.org)，第1.4版)修訂，網址為 [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
