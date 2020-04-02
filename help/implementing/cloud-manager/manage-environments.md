@@ -2,7 +2,7 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
 
 ---
 
@@ -38,9 +38,12 @@ source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 
 1. 用戶按一下「添加環 **境」按鈕** ，添加環境。
 
+   >[!NOTE]
+   >您也可以從「環境」頁面或「環境」卡存取此按鈕。 身為使用者，您只會在您擁有必要權限時看到此選項。 如果您有任何疑問，請連絡您的Adobe代表。
+
    ![](assets/add-environment.png)
 
-1. 出現「 **Add environment** 」(添加環境 **)對話框。用戶需要提交諸如「Environment type** 」（環境類型）和「 **Environment name** 」（環境名稱）和「 **** Environment description」（環境描述）等詳細資訊（取決於用戶在特定租用戶可用內容範圍內建立環境的目標）。
+1. 出現「 **Add environment** 」(添加環境 **)對話框。用戶需要提交諸如「Environment type** 」 (環境類型) 和「 **Environment name** 」 (環境名稱) 和「 **** Environment description」 (環境描述) 等詳細資訊 (取決於用戶在特定租用戶可用內容範圍內建立環境的目標)。
 
    ![](assets/add-environment2.png)
 
@@ -49,7 +52,7 @@ source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 
    ![](assets/add-environment-image1.png)
 
-1. 按一下 **保存** ，以添加具有已填入標準的環境。  現在，「 *概述* 」畫面會顯示卡片，您可從其中設定管道。
+1. 按一下 **保存** ，以添加具有已填充標準的環境。  現在，「 *概述* 」畫面會顯示卡片，您可從其中設定管道。
 
    >[!NOTE]
    >如果您尚未設定非生產管道，「概述」畫面會顯示卡片，您可從中建立非生產管道。 **
@@ -64,7 +67,7 @@ Adobe會自動管理Stage和生產環境的更新。
 ![](assets/manage-environments2.png)
 )
 
-當顯示此狀態時，如果按一下「 **ENVIRONMENTS** 」卡的「Details **」（詳細資訊），則「Update** 」（更新）選項將可從「Environments Card」（環境卡）和「 **Manage****** 」（管理）菜單中使用。
+當顯示此狀態時，如果按一下「 **ENVIRONMENTS** 」卡的「Details **」 (詳細資訊)，則「Update** 」 (更新) 選項將可從「Environments Card」 (環境卡) 和「 **Manage****** 」 (管理) 菜單中使用。
 
 ![](assets/add-environment4.png)
 
