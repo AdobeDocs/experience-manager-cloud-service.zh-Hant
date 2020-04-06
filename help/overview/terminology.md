@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 雲端服務簡介 - 術語
 description: 'Adobe Experience Manager 雲端服務簡介 - 術語。 '
 translation-type: tm+mt
-source-git-commit: bdda0ab15fa2cac40aefa5f60809ca96302fcabb
+source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
 
 ---
 
@@ -38,7 +38,6 @@ source-git-commit: bdda0ab15fa2cac40aefa5f60809ca96302fcabb
 | 資產微服務 | 雲端數位資產處理服務，適用於多種資產處理使用案例，例如產生轉譯成品、排列 PDF、處理子資產、提取文字等。如需詳細資訊，請參閱[資產微服務概覽](/help/assets/asset-microservices-overview.md)。 |
 | Cloud Manager Git 儲存庫 | 客戶儲存程式碼和組態設定的位置。 |
 | 雲端服務供應商 | AEM 雲端服務將 Azure 和 AWS 視為雲端服務供應商予以支援。 |
-| 內容傳送網路(CDN) | AEM as Cloud Service隨附預設CDN。 其主要用途是透過在瀏覽器附近的邊緣傳送可快取的CDN節點內容，來減少延遲。 它已完全管理並設定，以提供最佳的AEM應用程式效能。 |
 | 內容儲存庫 | 保存內容的位置。 |
 | 企業隔離 | AEM 雲端服務的每個例項均與其他例項隔離。 |
 | Golden Master | AEM 發佈階層。 |
