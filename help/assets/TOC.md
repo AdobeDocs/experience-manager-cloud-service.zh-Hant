@@ -2,7 +2,7 @@
 sub-product: AEM Assets 雲端服務
 user-guide-title: AEM Assets 雲端服務
 translation-type: tm+mt
-source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
+source-git-commit: 4206534b0f3020b2136729d866eb753eb06d95b1
 
 ---
 
@@ -53,7 +53,7 @@ source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
    + [匯入和匯出資產中繼資料](metadata-import-export.md)
 + 分享及分發資產 {#brandportal}
    + [使用品牌入口網站設定AEM資產](configure-aem-assets-with-brand-portal.md)
-   + [將AEM資產發佈至品牌入口網站](publish-to-brand-portal.md)
+   + [將資產發佈至品牌入口網站](publish-to-brand-portal.md)
 + 內容片段 {#content-fragments}
    + [使用內容片段](content-fragments/content-fragments.md)
    + [管理內容片段](content-fragments/content-fragments-managing.md)
