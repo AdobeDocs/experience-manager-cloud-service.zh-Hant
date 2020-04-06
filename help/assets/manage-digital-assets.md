@@ -4,7 +4,7 @@ description: 瞭解各種資產管理和編輯方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a5853626d61e6e7ea34514f4a5797ae47ce121bf
+source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
 
 ---
 
@@ -19,9 +19,7 @@ source-git-commit: a5853626d61e6e7ea34514f4a5797ae47ce121bf
 
 >[!NOTE]
 >
->* 共用至Marketing Cloud時不 `sling:OrderedFolder`支援共用類型的「資產」檔案夾。 如果要共用資料夾，在建立資料夾時不 [!UICONTROL 要選擇] 「有序」。
->* Experience Manager不允許將 `subassets` Word用作資料夾的名稱。 它是為節點保留的關鍵字，其中包含複合資產的子資產
-
+>共用至Marketing Cloud時不 `sling:OrderedFolder`支援共用類型的「資產」檔案夾。 如果要共用資料夾，在建立資料夾時不 [!UICONTROL 要選擇] 「有序」。
 
 1. 導覽至您要建立新資料夾的數位資產檔案夾。 在功能表中，按一下「 **[!UICONTROL 建立]**」。 選擇「 **[!UICONTROL 新建資料夾]**」。
 1. 在「標 **[!UICONTROL 題]** 」欄位中，提供檔案夾名稱。 依預設，DAM會使用您提供的標題作為檔案夾名稱。 建立資料夾後，您可以覆寫預設資料夾，並指定另一個資料夾名稱。
@@ -417,15 +415,13 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
-<!--
-1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
--->
+1. 若要通知使用者註解的相關資訊，請指定使用者的電子郵件地址並新增註解。 例如，若要通知Aaron MacDonald有關註解的資訊，請輸入@aa。 所有相符使用者的提示會顯示在清單中。 從清單中選取Aaron的電子郵件地址，以便用注釋標籤她。 同樣地，您可以在注釋內或注釋之前或之後的任何地方標籤更多用戶。
 
->[!NOTE]
->
->對於非管理員使用者，只有當使用者具有CRXDE中的「讀取」權限時，才會顯 `/home` 示建議。
+   >[!NOTE]
+   >
+   >對於非管理員使用者，只有當使用者具有Crx-de中的「在 */home讀取* 」權限時，才會顯示建議。
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+   ![chlimage_1-235](assets/chlimage_1-235.png)
 
 1. 添加註釋後，按一下「 **[!UICONTROL 添加]** 」(Add)保存注釋。 註解通知會傳送給Aaron。
 
