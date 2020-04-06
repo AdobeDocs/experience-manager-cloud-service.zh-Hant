@@ -2,7 +2,7 @@
 title: 管理記錄檔——雲端服務
 description: 管理記錄檔——雲端服務
 translation-type: tm+mt
-source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
+source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 
 ---
 
@@ -66,10 +66,3 @@ Environment Id Service    Name
 
 >[!Note]
 >雖 **然「記錄下載** 」將可透過UI和API使用，但 **「記錄追蹤** 」僅限API/CLI。
-
-### 其他資源 {#resources}
-
-請參閱下列其他資源，以進一步瞭解Cloud Manager API和Adobe I/O CLI:
-
-* [Cloud Manager API檔案](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
