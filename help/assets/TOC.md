@@ -1,15 +1,14 @@
 ---
-sub-product: AEM Assets as a Cloud Service
-user-guide-title: AEM Assets as a Cloud Service
-translation-type: ht
-source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
+sub-product: AEM Assets 雲端服務
+user-guide-title: AEM Assets 雲端服務
+translation-type: tm+mt
+source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
 
 ---
 
 
-# Assets {#assets}
+# 資產 {#assets}
 
-+ [AEM Assets 雲端服務](/help/assets/home.md)
 + [概覽與新增功能](overview.md)
 + [AEM Assets 雲端服務的重大變更](assets-cloud-changes.md)
 + [架構](architecture.md)
@@ -40,8 +39,8 @@ source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
    + [資產的數位版權管理](drm.md)
 + 設定、管理及擴充 Assets {#admin}
    + [API 和參考資料](developer-reference-material-apis.md)
+   + [設定資產共用](configure-asset-sharing.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
-   + [處理設定檔](/help/assets/dynamic-media/processing-profiles.md)
    + [多語言資產和資產翻譯](translate-assets.md)
    + [搜尋 Facet](search-facets.md)
    + [擴充資產編輯器](extend-asset-editor.md)
@@ -52,6 +51,9 @@ source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
    + [XMP 中繼資料](xmp-metadata.md)
    + [MediaLibrary 功能](medialibrary.md)
    + [匯入和匯出資產中繼資料](metadata-import-export.md)
++ 分享及分發資產 {#brandportal}
+   + [使用品牌入口網站設定AEM資產](configure-aem-assets-with-brand-portal.md)
+   + [將AEM資產發佈至品牌入口網站](publish-to-brand-portal.md)
 + 內容片段 {#content-fragments}
    + [使用內容片段](content-fragments/content-fragments.md)
    + [管理內容片段](content-fragments/content-fragments-managing.md)
