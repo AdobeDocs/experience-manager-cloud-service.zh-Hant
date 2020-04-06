@@ -1,8 +1,8 @@
 ---
-sub-product: Adobe Experience Manager as a Cloud Service Help
-user-guide-title: Adobe Experience Manager as a Cloud Service Help
+sub-product: Adobe Experience Manager雲端服務說明
+user-guide-title: Adobe Experience Manager雲端服務說明
 translation-type: tm+mt
-source-git-commit: b4147948c28a7aad277eda24f9c80f99b9f39d32
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
@@ -10,13 +10,13 @@ source-git-commit: b4147948c28a7aad277eda24f9c80f99b9f39d32
 # Experience Manager 雲端服務說明 {#landing}
 
 + [Experience Manager 雲端服務](/help/landing/home.md)
-+ [概覽](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/overview/home.html)
-+ [發行說明](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/home.html)
-+ [AEM 雲端服務核心概念](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/home.html)
-+ [AEM 雲端服務安全性](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/home.html)
-+ [AEM 雲端服務入門](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/home.html)
-+ [AEM Sites 雲端服務](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html)
-+ [AEM Assets 雲端服務](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/home.html)
-+ [為 AEM 雲端服務實作應用程式](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/home.html)
-+ [為 AEM 雲端服務實作連接器](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/connectors/home.html)
-+ [AEM 雲端服務之運作與維護](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/operations/home.html)
++ [概覽](/help/overview/home.md)
++ [發行說明](/help/release-notes/home.md)
++ [AEM 雲端服務核心概念](/help/core-concepts/home.md)
++ [AEM 雲端服務安全性](/help/security/home.md)
++ [AEM 雲端服務入門](/help/onboarding/home.md)
++ [AEM Sites 雲端服務](/help/sites-cloud/home.md)
++ [AEM Assets 雲端服務](/help/assets/home.md)
++ [為 AEM 雲端服務實作應用程式](/help/implementing/home.md)
++ [為 AEM 雲端服務實作連接器](/help/connectors/home.md)
++ [AEM 雲端服務之運作與維護](/help/operations/home.md)
