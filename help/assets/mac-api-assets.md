@@ -3,7 +3,7 @@ title: Assets HTTP API
 description: 瞭解Assets HTTP API的實作、資料模型和功能。 使用資產HTTP API來執行資產相關的各種工作。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -25,7 +25,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 >[!NOTE]
 >
->所有與上傳或更新一般資產或二進位檔（類似轉譯）相關的API呼叫都會針對AEM進行雲端服務部署。 若是上傳二進位檔，請 [改用直接二進位上傳API](developer-reference-material-apis.md#asset-upload-technical) 。
+>所有與上傳或更新一般資產或二進位檔（類似轉譯）相關的API呼叫都會針對AEM進行雲端服務部署。 若要上傳二進位檔案，請改 [用直接二進位上傳API](developer-reference-material-apis.md#asset-upload-technical) 。
 
 ## 內容片段 {#content-fragments}
 
@@ -51,7 +51,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 >[!NOTE]
 >
->資料夾或資產的某些屬性會對應至不同的首碼。 首碼 `jcr` 為、 `jcr:title`和的 `jcr:description`前置詞將被 `jcr:language` 前置詞 `dc` 替換。 因此，在傳回的JSON `dc:title` 中， `dc:description` 並分別 `jcr:title` 包含值和 `jcr:description`。
+>資料夾或資產的某些屬性會對應至不同的首碼。 首碼 `jcr` 為、 `jcr:title`和的 `jcr:description`前置詞將被 `jcr:language` 前置詞 `dc` 替換。 因此，在傳回的JSON `dc:title` 中， `dc:description` 並分別 `jcr:title` 包含值和 `jcr:description`值。
 
 **「連結** 」檔案夾會公開三個連結：
 * `self`:連結到自己
