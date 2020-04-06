@@ -3,7 +3,7 @@ title: 非同步操作
 description: AEM Assets會以非同步方式完成一些耗資龐大的工作，以最佳化效能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 非同步處理包括將多個作業入隊並最終以串列方式運行這些作業（取決於系統資源的可用性）。
 
-您可以從「非同步作業狀態」頁面查看非 **[!UICONTROL 同步作業的狀態]** 。
+您可以從「非同步作業狀態」頁面查看非同步 **[!UICONTROL 作業的狀態]** 。
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ## 監視非同步操作的狀態 {#monitoring-the-status-of-asynchronous-operations}
 
-每當AEM Assets以非同步方式處理作業時，您都會在收件匣中收到通知 <!-- and through email -->。
+每當AEM Assets以非同步方式處理作業時，您都會在收件匣及透過電子郵件收到通知。
 
 要詳細查看非同步操作的狀態，請定位至「非同步作業狀 **[!UICONTROL 態」頁]** 。
 
