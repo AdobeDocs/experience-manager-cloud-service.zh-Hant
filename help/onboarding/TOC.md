@@ -1,15 +1,14 @@
 ---
-sub-product: Onboarding to AEM as a Cloud Service
-user-guide-title: Onboarding to AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
+sub-product: AEM 雲端服務入門
+user-guide-title: AEM 雲端服務入門
+translation-type: tm+mt
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # 入門 {#onboarding}
 
-+ [AEM 雲端服務入門](/help/onboarding/home.md)
 + 必要條件 {#what-is-required}
    + [授予的存取權限](what-is-required/access-rights-granted.md)
    + [新增使用者和角色](what-is-required/add-users-roles.md)
