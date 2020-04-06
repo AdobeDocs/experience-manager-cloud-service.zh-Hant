@@ -2,7 +2,7 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 translation-type: tm+mt
-source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
+source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
@@ -181,8 +181,6 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 * **定位組態**
 
    * 選取品 [牌以指定定位範圍](/help/sites-cloud/authoring/personalization/targeted-content.md)。
-   >[!NOTE]
-   >此選項要求使用者帳戶位於群 `Target Adminstrators`組中。
 
 ### 權限 {#permissions}
 
