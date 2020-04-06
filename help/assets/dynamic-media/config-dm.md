@@ -2,7 +2,7 @@
 title: 設定動態媒體雲端服務
 description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
 translation-type: tm+mt
-source-git-commit: 50ebc2187cff4d35c93e25da9d2f62f6a86f12ad
+source-git-commit: ad621c24e58fba6bcc873e36544505cc50385509
 
 ---
 
@@ -65,17 +65,15 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    * **[!UICONTROL 公司根資料夾路徑]**
 
-   * **[!UICONTROL 發佈資產]** -您可以從下列三個選項中選擇：
-      * **[!UICONTROL 立即]** ：當資產上傳時，系統會立即收錄資產並提供URL/內嵌。 發佈資產不需要使用者干預。
-      * **[!UICONTROL 啟動後]** ，表示您必須先明確發佈資產，才能提供URL/內嵌連結。
-      * **[!UICONTROL 選擇性發佈]** ：表示資產會自動發佈，僅供安全預覽使用，而且可明確發佈至AEM，而不需發佈至DMS7以便在公共網域中傳送。 未來，Adobe將增強此選項，將資產發佈至AEM，並將資產發佈至Dynamic Media，彼此互斥。 也就是說，您可以將資產發佈到DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您可以在AEM中獨家發佈資產以進行預覽；這些相同的資產不會發佈在DMS7中，以便在公共域中交付。
+   * **[!UICONTROL 發佈資產]** -選項「立 **[!UICONTROL 即]** 」表示資產上傳時，系統會收錄資產並立即提供URL/內嵌。 發佈資產不需要使用者干預。 「啟 **[!UICONTROL 動時]** （預設值）」選項表示您必須先明確發佈資產，才能提供URL/內嵌連結。
+
    * **[!UICONTROL 安全預覽伺服器]** -可讓您指定安全轉譯預覽伺服器的URL路徑。 也就是說，在產生轉譯後，AEM可以安全地存取和預覽遠端的「動態媒體」轉譯（不會將二進位檔傳回至AEM例項）。
 除非您有特殊安排可使用您公司的伺服器或特殊伺服器，否則Adobe Systems建議您依指定的方式保留此設定。
 
    * **[!UICONTROL 同步所有內容]** -預設為選取。 如果您想要選擇性地包含或排除同步至動態媒體的資產，請取消選取此選項。 取消選取此選項可讓您從下列兩種動態媒體同步模式中選擇：
 
    * **[!UICONTROL Dynamic Media 同步處理模式]**
-      * **[!UICONTROL 預設啟用]** -預設情況下，配置將應用於所有資料夾，除非您專門為排除標籤資料夾。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL 預設啟用]** -預設情況下，配置將應用於所有資料夾，除非您專門標籤要導出的資料夾。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 預設禁用]** -在您明確標籤選定資料夾以同步到動態媒體之前，配置不會應用於任何資料夾。
 若要將選取的檔案夾標示為同步至動態媒體，請開啟資產檔案夾的「屬性」頁面。Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
          * **[!UICONTROL 繼承]** -資料夾上沒有明確的同步值；相反，資料夾會繼承其上級資料夾或雲配置中預設模式中的同步值。 繼承的詳細狀態會透過工具提示顯示。
