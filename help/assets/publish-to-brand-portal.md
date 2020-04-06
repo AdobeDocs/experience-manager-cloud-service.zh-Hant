@@ -10,12 +10,12 @@ topic-tags: brand-portal
 content-type: reference
 discoiquuid: null
 translation-type: tm+mt
-source-git-commit: 7e0375b6ebdf0959dbe50ad3ae2cd0b77709b4c1
+source-git-commit: abc98974f5507c71e75cdd864a98281f7cdba7f3
 
 ---
 
 
-# Publish AEM Assets to Brand Portal {#publish-aem-assets-to-brand-portal}
+# 將資產、檔案夾和系列發佈至品牌入口網站 {#publish-aem-assets-to-brand-portal}
 
 身為Adobe Experience Manager(AEM)Assets管理員，您可以將資產、檔案夾和系列發佈至AEM Assets品牌入口網站例項。 此外，您也可以將資產或資料夾的發佈工作流程排程到稍後的日期或時間。 發佈後，品牌入口網站的使用者可以存取資產、檔案夾和系列，並進一步將它們分發給其他使用者。
 
