@@ -1,15 +1,14 @@
 ---
-sub-product: Authoring Content in AEM as a Cloud Service
-user-guide-title: Authoring Content in AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+sub-product: 在AEM中以雲端服務形式製作內容
+user-guide-title: 在AEM中以雲端服務形式製作內容
+translation-type: tm+mt
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # 網站 {#sites}
 
-+ [AEM Sites 雲端服務](/help/sites-cloud/home.md)
 + [AEM 雲端服務中 AEM Sites 的重大變更](sites-cloud-changes.md)
 + 製作 {#authoring}
    + 快速入門 {#getting-started}
