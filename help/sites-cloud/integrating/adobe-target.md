@@ -2,7 +2,7 @@
 title: 整合 Adobe Target
 description: '整合 Adobe Target '
 translation-type: tm+mt
-source-git-commit: ed8cfc564e198552ae4efabee1ff48950470790a
+source-git-commit: 518c3156b2ee1f6431ea11333c57548a42133aa9
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: ed8cfc564e198552ae4efabee1ff48950470790a
 
 >[!NOTE]
 >
->Adobe Experience Manager是Cloud Service客戶，如果客戶目前沒有Target帳戶，可以要求存取Target Foundation Pack for Experience Cloud。  Foundation Pack提供對Target的卷有限使用。
+>Adobe Experience Manager是Cloud Service客戶，如果客戶目前沒有Target帳戶，可以要求存取Target Foundation Pack for Experience Cloud。  Foundation Pack提供Target的卷限制使用。
 
 
 若要與Target整合，請執行下列工作：
@@ -34,15 +34,11 @@ source-git-commit: ed8cfc564e198552ae4efabee1ff48950470790a
    * [透過Adobe I/O將AEM與Adobe Launch整合](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
    * [瞭解AEM與Launch By Adobe、Analytics和Target的整合](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
+1. [設定活動](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html):將您的活動與Target雲端設定關聯。
+
 >[!NOTE]
 >
 >Launch by Adobe的IMS設定（技術帳戶）已在AEM中預先設定為雲端服務。 使用者不必建立此設定。
-
-1. [設定活動](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html):將您的活動與Target雲端設定關聯。
-
->[!CAUTION]
->
->在AEM中，將選件和活動從AEM同步至Adobe Target的複製代理預設會停用。 如果您需 [要重新啟用複製代理](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) ，請與Adobe支援團隊聯絡。
 
 >[!NOTE]
 >
