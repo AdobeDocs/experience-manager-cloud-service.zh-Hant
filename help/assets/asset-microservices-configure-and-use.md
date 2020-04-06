@@ -3,7 +3,7 @@ title: 設定並使用資產微服務進行資產處理
 description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -11,6 +11,7 @@ source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 # 開始使用資產微服務 {#get-started-using-asset-microservices}
 
 <!--
+
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
@@ -18,13 +19,14 @@ source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 * How to create new config or request for new provisioning/purchase.
 
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
+
 -->
 
-資產微服務使用雲端服務提供資產的可擴充且彈性化處理。 Adobe管理服務，以最佳化處理不同的資產類型和處理選項。
+Asset microservices使用雲端服務提供可擴充且具彈性的資產處理，由Adobe管理，以最佳化處理不同的資產類型和處理選項。
 
-資產處理取決於處理設定檔 **[!UICONTROL 中的設定]**，此設定提供預設設定，並允許管理員新增更特定的資產處理設定。 管理員可以建立和維護後處理工作流程的設定，包括選擇性自訂。 自訂工作流程可讓您擴充性和完全自訂。
+資產處理是根據「處理設定檔」中 **[!UICONTROL 的設定進行]**，此設定提供預設設定，並允許管理員新增更特定的資產處理設定。 為了允許擴充性和完全自訂，資產處理允許對後置處理工作流程進行選用設定，然後由管理員建立和維護。
 
-資產處理的高階流程如下。
+以下是Experience Manager雲端服務中資產處理的高階流程。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -35,7 +37,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> 此處所述的資產處理會取代 `DAM Update Asset` 舊版Experience Manager中的工作流程模型。 大部分的標準轉譯產生和中繼資料相關步驟會由資產microservices處理取代，而剩下的步驟（如果有的話）則可由後處理工作流程設定取代。
+> 對於從舊版Experience Manager更新的客戶——本節所述的資產處理會取代以前用於資產擷取處理的「DAM更新資產」工作流程模型。 大部分的標準轉譯產生和中繼資料相關步驟會由資產microservices處理取代，而剩下的步驟（如果有的話）則可由後處理工作流程設定取代。
 
 ## 開始處理資產 {#get-started}
 
@@ -54,9 +56,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ### 預設設定 {#default-config}
 
-使用預設設定時，只會設定標準處理設定檔。 標準處理設定檔在使用者介面上不可見，您無法加以修改。 它一律會執行以處理上傳的資產。 標準處理設定檔可確保Experience Manager所需的所有基本處理都已完成。
+在預設設定中，僅設定 [!UICONTROL 標準] 處理設定檔。 它是內建的，無法修改。 它一律會執行，以確保應用程式所需的所有處理都已執行。
 
-<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
+![processing-profiles-standard](assets/processing-profiles-standard.png)
 
 標準處理設定檔提供下列處理設定：
 
@@ -75,18 +77,17 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 
 每個處理設定檔設定都包含轉譯清單。 您可以針對每個轉譯指定下列項目：
 
-* 轉譯名稱。
-* 支援的轉譯格式，例如JPEG、PNG或GIF。
-* 轉譯寬度和高度（以像素為單位）。 如果未指定，則會使用原始影像的全像素大小。
-* JPEG的轉譯品質（百分比）。
-* 包含和排除的MIME類型，以定義描述檔的適用性。
+* 轉譯名稱
+* 轉譯格式（支援JPEG、PNG或GIF）
+* 轉譯寬度和高度（以像素為單位，如果未指定，則會假設原始影像的完整像素大小）
+* 轉譯品質（針對JPEG）（百分比）
+* 已包含和排除的MIME類型已定義，處理設定檔會套用哪些資產類型
 
 ![processing-profiles-adding](assets/processing-profiles-adding.png)
 
-當您建立並儲存新的處理設定檔時，它會新增至已設定的處理設定檔清單。 您可以將這些處理設定檔套用至資料夾階層中的資料夾，讓這些設定檔對資產上傳和資產處理有效。
+儲存新的處理設定檔時，會將其新增至已設定的處理設定檔清單。 然後，這些處理設定檔可套用至資料夾階層中的資料夾，讓這些處理設定檔對資產上傳和資產上傳有效。
 
-<!-- Removed per cqdoc-15624 request by engineering.
- ![processing-profiles-list](assets/processing-profiles-list.png) -->
+![processing-profiles-list](assets/processing-profiles-list.png)
 
 #### 轉譯寬度和高度 {#rendition-width-height}
 
@@ -102,13 +103,13 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 
 #### 特殊FPO轉譯 {#special-fpo-rendition}
 
-當將AEM中的大型資產放入Adobe InDesign檔案時，創意專業人員在放置資產後必須等 [待相當長時間](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同時，使用者也無法使用InDesign。 這會中斷創意流程，並對使用者體驗造成負面影響。 Adobe可讓InDesign檔案中暫時放置小型轉譯，以開始，稍後可以以隨選取代為完整解析度的資產。 Experience Manager提供僅用於放置(FPO)的轉譯。 這些FPO轉譯檔案大小較小，但外觀比例相同。
+處理設定檔可包含特殊的「FPO轉譯」，當 [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) 與Adobe InDesign搭配使用時，會使用此轉譯來將Experience Manager中資產的直接連結置入InDesign檔案。
 
-處理設定檔可包含FPO（僅限放置）轉譯。 請參閱Adobe Asset Link [檔案](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) ，瞭解您是否需要為處理設定檔開啟它。 如需詳細資訊，請參 [閱Adobe Asset Link完整檔案](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)。
+請參閱Adobe Asset Link文 [件](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html) ，瞭解您是否需要開啟處理設定檔。
 
 ## 使用資產微服務處理資產 {#use-asset-microservices}
 
-建立其他自訂處理設定檔並套用至特定資料夾，讓Experience Manager處理上傳至或更新至這些資料夾的資產。 預設的內建標準處理設定檔一律會執行，但在使用者介面上不可見。 如果您新增自訂的描述檔，則這兩個描述檔都會用來處理上傳的資產。
+在建立其他處理設定檔後，這些設定檔必須套用至Experience Manager的特定資料夾，才能用於這些資料夾中已上傳或更新的資產處理。 內建的標準處理設定檔一律會執行。
 
 有兩種方式可讓處理設定檔套用至資料夾：
 
@@ -148,15 +149,15 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 * 此類模型的最後一步必須是步 `DAM Update Asset Workflow Completed Process` 驟。 這是必要項目，以確保AEM知道處理已結束，且資產可標示為已處理（「新」）
 * 建立自訂工作流程執行者服務的設定，允許依路徑（資料夾位置）或規則運算式來設定後處理工作流程模型的執行
 
-### 建立後處理工作流程模型 {#create-post-processing-workflow-models}
+### 建立後處理工作流程模型
 
-後處理工作流程模型是一般的AEM工作流程模型。 如果您需要針對不同儲存庫位置或資產類型進行不同的處理，請建立不同的模型。
+後處理工作流程模型是一般的AEM工作流程模型。 如果您需要針對不同的儲存庫位置或資產類型進行不同的處理，請建立不同的儲存庫位置或資產類型。
 
-應根據需求新增處理步驟。 您可以使用任何支援的步驟，以及任何自訂實作的工作流程步驟。
+應根據需求新增處理步驟。 您可以使用任何支援的現成可用步驟，以及任何自訂實作的工作流程步驟。
 
-請確定每個後處理工作流程的最後一個步驟是 `DAM Update Asset Workflow Completed Process`。 最後一個步驟有助於確保Experience Manager知道資產處理何時完成。
+每個後處理工作流程的最後一個步驟必須是 `DAM Update Asset Workflow Completed Process`。 這可確保資產正確標示為「處理完成」。
 
-### 設定後處理工作流程執行 {#configure-post-processing-workflow-execution}
+### 設定後處理工作流程執行
 
 若要設定在資產微型服務處理完成後，系統中上傳或更新的資產所執行的後處理工作流程模型，必須設定自訂工作流程執行者服務。
 
@@ -170,4 +171,4 @@ Custom Workflow Runner服務(`com.adobe.cq.dam.processor.nui.impl.workflow.Custo
 >「自訂工作流程執行者」的設定是OSGi服務的設定。 如需 [如何部署OSGi組態的詳細資訊，請參閱部署至Experience Manager](/help/implementing/deploying/overview.md) 。
 > OSGi Web主控台與AEM的內部部署和受管理服務部署不同，不直接在雲端服務部署中提供。
 
-如需後處理工作流程中可使用哪些標準工作流程步驟的詳細資訊，請參閱開發 [人員參考中後處理工作流程中的工作流程](developer-reference-material-apis.md#post-processing-workflows-steps) 。
+如需詳細資訊，請參閱開發人員參考中後置處理工作流程中的 [Workflow steps](developer-reference-material-apis.md#post-processing-workflows-steps) 。
