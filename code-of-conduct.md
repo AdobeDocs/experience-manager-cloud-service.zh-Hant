@@ -1,5 +1,5 @@
 ---
-source-git-commit: b5380858e0887da017657c653b05529066d95fd8
+source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
 translation-type: tm+mt
 
 ---
@@ -45,4 +45,5 @@ translation-type: tm+mt
 
 ## 歸因
 
-本行為准則是根據《投稿人盟約》( [Contributor Covenat](https://contributor-covenant.org),1.4版)修訂的，可從https://contributor-covenant.org/version/1/4 [上取得](https://contributor-covenant.org/version/1/4/)。
+本行為規則改編自《投稿人盟 [約》](https://contributor-covenant.org)1.4版，網址為 [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+
