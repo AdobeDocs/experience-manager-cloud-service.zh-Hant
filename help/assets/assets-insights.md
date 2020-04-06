@@ -3,14 +3,16 @@ title: 資產 Insights
 description: 瞭解「資產前瞻分析」功能如何讓您追蹤第三方網站、行銷宣傳和Adobe創意解決方案所使用影像的使用者評分和使用統計資料。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 ---
 
 
-# 資產 Insights {#asset-insights}
+# 資產 Insights{#asset-insights}
 
-Asset Insights會追蹤使用者評分和使用統計資料，這些資料會用於協力廠商網站、行銷宣傳和Adobe的創意解決方案。 它可協助您深入瞭解影像的效能與人氣。
+<!-- TBD: Add uicontrol tags  -->
+
+「資產前瞻分析」功能可讓您追蹤使用者評分和使用統計資料，這些資料用於協力廠商網站、行銷活動和Adobe的創意解決方案。 它有助於獲得有關其效能與人氣的見解。
 
 Assets Insights會擷取使用者活動詳細資訊，例如影像被評等、點按和曝光（影像在網站上載入的次數）。 它會根據這些統計資料來指派分數給影像。 您可以使用分數和績效統計資料來選取要納入目錄、行銷活動等的熱門影像。 您甚至可以根據這些統計資料來制定封存和授權續約政策。
 
@@ -36,10 +38,10 @@ Assets Insights會擷取使用者活動詳細資訊，例如影像被評等、�
 
 1. 檢閱「使 **[!UICONTROL 用統計資料]** 」區段，瞭解資產所屬的實體以及最近使用該資產的創意解決方案。 使用率越高，資產在使用者中受歡迎的機率就越高。 使用資料會顯示在下列標題下：
 
-   * **[!UICONTROL 資產]**:資產屬於系列或複合資產的次數。
-   * **[!UICONTROL 網頁與行動裝置]**:資產加入網站和應用程式的次數。
-   * **[!UICONTROL Social]**:資產在解決方案（例如Adobe Social和Adobe Campaign）中使用的次數。
-   * **[!UICONTROL 電子郵件]**:資產用於電子郵件促銷活動的次數。
+   * **資產**:資產屬於系列或複合資產的次數
+   * **網頁與行動裝置**:資產加入網站和應用程式的次數
+   * **Social**:資產在解決方案（例如Adobe Social和Adobe Campaign）中使用的次數
+   * **電子郵件**:資產用於電子郵件促銷活動的次數
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
@@ -93,7 +95,6 @@ Adobe Experience Manager(AEM)Assets會從Adobe Analytics擷取協力廠商網站
 1. 在精靈中，選取資料中心並提供您的認證，包括您的組織名稱、使用者名稱和共用密碼。
 
    ![在AEM中設定Adobe Analytics的資產見解](assets/insights_config2.png)
-
    *圖：在AEM中設定Adobe Analytics的資產見解*
 
 1. 按一下/點選「 **[!UICONTROL 驗證]**」。在AEM驗證您的認證後，從「報表套裝」清單 **[!UICONTROL 中]** ，選擇Adobe Analytics報表套裝，讓您從中擷取資產分析。 按一下&#x200B;**[!UICONTROL 「新增」]**。
