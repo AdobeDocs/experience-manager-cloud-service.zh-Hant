@@ -3,7 +3,7 @@ title: 使用媒體處理常式和工作流程處理資產
 description: 瞭解各種媒體處理常式，以及如何在工作流程中使用它們來執行資產上的工作。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -18,11 +18,11 @@ Adobe Experience Manager(AEM)Assets隨附一組預設工作流程和媒體處理
 
 >[!NOTE]
 >
->如需 [AEM Assets支援的所有格式說明](file-format-support.md) ，以及每種格式支援的功能，請參閱「資產」支援的檔案格式文章。
+>請參閱「資 [產支援的格式](file-format-support.md) 」頁面，以取得AEM Assets支援的所有格式以及每種格式支援的功能的說明。
 
 ## 預設媒體處理常式 {#default-media-handlers}
 
-AEM Assets中提供下列媒體處理常式，並可處理最常見的MIME類型：
+AEM Assets中提供下列媒體處理常式，並處理最常見的MIME類型：
 
 <!-- TBD: Apply correct formatting once table is moved to MD.
 -->
@@ -407,7 +407,7 @@ AEM可讓您在工作流程中執行任何命令列工具，以轉換資產（�
 
 首先在AEM伺服器所在的磁碟上安裝ImageMagick:
 
-1. 安裝ImageMagick:請參 [閱ImageMagick檔案](https://www.imagemagick.org/script/download.php)。
+1. 安裝ImageMagick:請參閱 [ImageMagick檔案](https://www.imagemagick.org/script/download.php)。
 1. 設定工具，以便在命令行上運行轉換。
 1. 要查看工具是否已正確安裝，請在命令行上運 `convert -h` 行以下命令。
 
