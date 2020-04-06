@@ -3,18 +3,18 @@ title: 從 AEM 下載資產
 description: 瞭解如何從AEM下載資產並啟用或停用下載功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
 # 從 AEM 下載資產 {#download-assets-from-aem}
 
-您可以下載資產，包括靜態和動態轉譯。 已下載的資產會整合在ZIP檔案中。 壓縮的ZIP檔案對於匯出工作的檔案大小上限為1 GB。 每個匯出工作最多可獲得500個資產。
+您可以下載資產，包括靜態和動態轉譯。 或者，您也可以直接從AEM Assets傳送包含資產連結的電子郵件。 已下載的資產會整合在ZIP檔案中。 壓縮的ZIP檔案對於匯出工作的檔案大小上限為1 GB。 每個匯出工作最多可獲得500個資產。
 
 >[!NOTE]
 >
->若要下載資產，成員必須擁有啟動觸發資產下載的工作流程的權限。
+>電子郵件的收件者必須是群組的 `dam-users` 成員，才能存取電子郵件訊息中的ZIP下載連結。 若要下載資產，成員必須擁有啟動觸發資產下載的工作流程的權限。
 
 若要下載資產，請導覽至資產、選取資產，然後點選／按一下工具列中的「 **[!UICONTROL 下載]** 」圖示。 在產生的對話方塊中，指定您的下載選項。
 
@@ -29,6 +29,7 @@ source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 | [!UICONTROL 資產] | 選取此選項，以原始格式下載資產，而不需任何轉譯。 |
 | [!UICONTROL 轉譯] | 轉譯是資產的二進位表示法。資產具有主要表示法——已上傳檔案的主要表示法。 它們可以有任意數量的表示。 <br> 使用這個選項，您可以選取您要下載的轉譯。 可用的轉譯取決於您選擇的資產。 |
 | [!UICONTROL 動態轉譯] | 動態轉譯會即時產生其他轉譯。 當您選取此選項時，也可以從影像預設集清單中選取您要動態建立的轉譯。 此外，您還可以選取尺寸和單位、格式、色域、解析度和任何影像修飾元（例如反轉影像） |
+| [!UICONTROL 電子郵件] | 系統會傳送電子郵件通知給使用者。 標準電子郵件範本可在下列位置取得：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> 您在部署期間自訂的範本應位於下列位置： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>您可以在下列位置儲存租用戶特定的自訂範本：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> |
 | [!UICONTROL 為每一個資產建立個別的資料夾] | 選取此選項，可在下載資產時保留資料夾階層。 依預設，檔案夾階層會被忽略，而所有資產都會下載到您本機系統的一個檔案夾中。 |
 
 如果資產有任何轉譯，則可使用選項轉譯選項。 如果資產包含子資產，則可使用子資產選項。
@@ -65,69 +66,5 @@ AEM中的預設servlet可讓已驗證的使用者發出任意大型的並行下�
 >
 >* [下載受DRM保護的資產](drm.md)
 >* [在Win或Mac案頭上使用AEM案頭應用程式下載資產](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
->* [從支援的Adobe Creative Cloud應用程式使用Adobe Assets Link下載資產](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [從支援的Adobe Creative Cloud應用程式使用Adobe Assets Link下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
-
-<!-- FULL ARTICLE ARCHIVE IS BELOW 
-
-You can download assets including static and dynamic renditions. Alternatively, you can send emails with links to assets directly from AEM Assets. Downloaded assets are bundled in a ZIP file. The compressed ZIP file has a maximum file size of 1 GB for the export job. You are allowed a maximum of 500 total assets per export job.
-
->[!NOTE]
->
->Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
-
-To download assets, navigate to an asset, select the asset, and tap/click the **[!UICONTROL Download]** icon from the toolbar. In the resulting dialog, specify your download options.
-
-The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets cannot be downloaded.
-
-![Available options when downloading assets from AEM Assets](assets/asset_download_dialog.png)
-*Figure: Available options when downloading assets from AEM Assets*
-
-The following are the Export/Download options. Dynamic renditions are unique to Dynamic Media and let you generate renditions on-the-fly in addition to the asset you selected - that option is only available if you have Dynamic Media enabled.
-
-|Export or download options|Descriptions|
-|---|---|
-| [!UICONTROL Assets]| Select this to download the asset in its original form without any renditions.|
-| [!UICONTROL Renditions] |A rendition is the binary representation of an asset. Assets have a primary representation - that of the uploaded file. They can have any number of representations. <br> With this option, you can select the renditions you want downloaded. The renditions available depend on the asset you select.|
-| [!UICONTROL Dynamic Renditions] |A dynamic rendition generates other renditions on-the-fly. When you select this option, you also select the renditions you want to create dynamically by selecting from the image presets list. In addition, you can select the size and unit of measurement, format, color space, resolution, and any image modifiers (for example to invert the image)|
-| [!UICONTROL Email] |An email notification is sent to the user. Standard emails templates are available at the following locations:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> Templates that you customize during deployment should be present at these locations: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>You can store tenant-specific custom templates at these locations:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>|
-| [!UICONTROL Create separate folder for each asset] |Select this to preserve the folder hierarchy while downloading assets. By default, the folder hierarchy is ignored and all assets are downloaded in one folder in your local system.|
-
-The option renditions option is available if the asset has any renditions. The subassets option is available if the asset includes subassets.
-
-When you select a folder to download, the complete asset hierarchy under the folder is downloaded. To include each asset you download (including assets in child folders nested under the parent folder) in an individual folder, select **[!UICONTROL Create separate folder for each asset]**.
-
-## Enable asset download servlet {#enable-asset-download-servlet}
-
-The default servlet in AEM allows authenticated users to issue arbitrarily-large, concurrent download requests for creating ZIP files of assets visible to them that can overload the server and the network. To mitigate potential DoS risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled by default for publish instances.
-
-To allow downloading assets from your DAM, say when using something like Asset Share Commons or other portal-like implementation, manually enable the servlet via an OSGi configuration. Adobe recommends setting the permissible download size as low as possible without affecting the day-to-day download requirements. A high value may impact performance.
-
-1. Create a folder with a naming convention that targets the publish runmode, that is, `config.publish`:
-
-   `/apps/<your-app-name>/config.publish`
-
-1. In the config folder, create a new file of type `nt:file` named `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. Populate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` with the following. Sets a maximum size (in bytes) for the download as value of `asset.download.prezip.maxcontentsize`. The below sample configures the maximum size of the ZIP download to not exceed 100 kB.
-
-   ```
-   enabled=B"true"
-   asset.download.prezip.maxcontentsize=I"102400"
-   ```
-
-## Disable asset download servlet {#disable-asset-download-servlet}
-
-The `Asset Download Servlet` can be disabled on an AEM Publish instances by updating the dispatcher configuration to block any asset download requests. The servlet can also be manually disabled via the OSGi console directly.
-
-1. To block asset download requests via a dispatcher configuration edit the `dispatcher.any` configuration and add a new rule to the [filter section](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter).
-
-   `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
-
->[!MORELIKETHIS]
->
->* [Download DRM protected assets](drm.md)
->* [Download assets using AEM desktop app on Win or Mac desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
->* [Download assets using Adobe Assets Link from within the supported Adobe Creative Cloud apps](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
-
-
--->
