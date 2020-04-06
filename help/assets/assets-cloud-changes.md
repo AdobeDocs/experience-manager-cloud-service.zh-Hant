@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Manager資產雲端服務的顯著變更
-description: AEM Cloud服務中的Adobe Experience Manager Assets與Adobe Experience Manager 6.5相比有顯著變更。
+description: AEM Cloud服務中的Adobe Experience Manager資產與Experience Manager 6.5相比有顯著變更
 translation-type: tm+mt
-source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
@@ -22,15 +22,15 @@ Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功�
 
 ## 資產擷取 {#asset-ingestion}
 
-資產上傳已最佳化，因為可以更佳地縮放資產擷取，並加快上傳速度。 產品功能（網路使用者介面、案頭用戶端）已更新。 不過，這可能會影響到一些現有的自訂。
+資產上傳已最佳化，可提高效率，讓資產擷取的縮放效果更佳，而上傳的速度也更快。 產品功能（網路使用者介面、案頭用戶端）已更新。 不過，這可能會影響一些現有的自訂程式碼。
 
-* Experience Manager使用直接二進位存取原則來上傳和下載資產，並使用資產微服務來處理資產。 請參 [閱資產擷取概觀](/help/assets/asset-microservices-overview.md)。
-   * 直接二進位 [存取的資產上傳](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)。
-   * 如需技術詳細資訊，請參 [閱直接二進位上傳通訊協定和API](/help/assets/developer-reference-material-apis.md#overview-binary-upload)。
-* 舊版 AEM 已不提供預設的工作流程 **[!UICONTROL DAM Asset Update]**。相反，資產微服務提供可擴充、可立即使用的服務，涵蓋大部分預設資產處理（轉譯、中繼資料擷取、文字擷取以建立索引）。
+* Experience Manager使用直接二進位存取原則來上傳和下載資產，並使用資產微服務來處理資產。 請參閱 [資產擷取概觀](/help/assets/asset-microservices-overview.md)
+   * 直接二進位 [存取的資產上傳](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)
+   * 如需技術詳細資訊，請參閱 [直接二進位上傳通訊協定和API](/help/assets/developer-reference-material-apis.md#overview-binary-upload)
+* 舊版 AEM 已不提供預設的工作流程 **[!UICONTROL DAM Asset Update]**。相反，資產微服務提供可擴充、可立即使用的服務，涵蓋大部分預設資產處理（轉譯、中繼資料擷取、文字擷取以建立索引）
    * 請參 [閱配置和使用資產微服務](/help/assets/asset-microservices-configure-and-use.md)
-   * 若要在處理中自訂工作流程步驟， [可使用後處理工](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) 作流程。
-* Assets that come in via Package Manager require manual reprocessing using the **[!UICONTROL Reprocess Asset]** action in the Assets interface.
+   * 若要在處理中自訂工作流程步驟， [可使用後處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) 。
+* 若是透過封裝管理程式傳入資產，須使用 Assets 介面中的&#x200B;**[!UICONTROL 「重新處理資產」]**&#x200B;動作，手動重新處理。
 
 使用資產微服務產生的標準轉譯會以向後相容的方式儲存在資產儲存庫節點中（相同的命名慣例）。
 
