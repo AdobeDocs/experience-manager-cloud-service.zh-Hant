@@ -3,14 +3,14 @@ title: Experience Manager Assets作為雲端服務支援的檔案格式和MIME�
 description: Experience Manager Assets作為雲端服務支援的檔案格式和MIME類型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
+source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
 
 ---
 
 
 # Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager雲端服務支援基本的內容管理功能— 儲存、線上管理中繼資料、版本修訂、上傳和下載等等— 任何二進位檔案，不受其格式影響。 Adobe Experience Manager Assets支援多種檔案格式，而每種產品功能都支援不同格式。
+Adobe Experience Manager雲端服務支援基本的內容管理功能— 儲存、線上管理中繼資料、版本控制、上傳和下載等等— 任何二進位檔案，不受其格式影響。 Adobe Experience Manager Assets支援多種檔案格式，而每種產品功能都支援不同格式。
 
 此外，Experience Manager Assets還提供延伸支援，可產生預覽和轉譯，並擷取中繼資料和文字以建立全文索引。 此延伸支援是使用資產微 [型服務](asset-microservices-configure-and-use.md)。
 
