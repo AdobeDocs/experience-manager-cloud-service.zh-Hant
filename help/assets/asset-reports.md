@@ -3,7 +3,7 @@ title: 資產報表
 description: 本文說明AEM Assets中有關資產的各種報表，以及如何產生報表。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
@@ -18,7 +18,7 @@ AEM Assets報告架構運用Sling工作以有序方式非同步處理報表請�
 
 報表管理介面是直覺式的，包含存取已封存報表及檢視報表執行狀態（成功、失敗和佇列）的精細選項和控制項。
 
-產生報表時，收件匣通知 <!-- through an email (optional) and --> 您。 您可以從報表清單頁面檢視、下載或刪除報表，其中會顯示所有先前產生的報表。
+產生報表時，您會透過電子郵件（可選）和收件匣通知收到通知。 您可以從報表清單頁面檢視、下載或刪除報表，其中會顯示所有先前產生的報表。
 
 ## 產生報表 {#generate-reports}
 
@@ -79,7 +79,7 @@ AEM管理員可輕鬆產生並自訂這些報表，以供您實作。 管理員�
 
    ![files_report](assets/files_report.png)
 
-   「連 **[!UICONTROL 結共用]** 」報表會顯示資產的URL，這些資產是從AEM Assets內與外部使用者共用的。<!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. -->欄無法自訂。
+   「連 **[!UICONTROL 結共用]** 」報表會顯示資產的URL，這些資產是從AEM Assets內與外部使用者共用的。它包含共用資產之使用者的電子郵件ID、共用資產之使用者的電子郵件ID、連結的共用日期和到期日。欄無法自訂。
 
    「連 **[!UICONTROL 結共用]** 」報表不包含子檔案夾和轉譯的選項，因為它只會發佈顯示在 */var/dam/share下的共用URL*。
 
