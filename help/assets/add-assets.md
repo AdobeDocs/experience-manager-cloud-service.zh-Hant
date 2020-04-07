@@ -2,14 +2,14 @@
 title: 將您的數位資產新增至Adobe Experience Manager
 description: 將您的數位資產新增至Adobe Experience Manager做為雲端服務
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # 將數位資產新增至Adobe Experience Manager {#add-assets-to-experience-manager}
 
-將您的數位檔案上傳至Adobe Experience Manager，會利用豐富的中繼資料、智慧標籤、轉譯和其他數位資產管理(DAM)服務豐富檔案的二進位內容。 您可以從本機資料夾或網路磁碟機上傳各種檔案類型（包括影像、PDF檔案、原始檔案等）至Experience Manager Assets。
+Adobe Experience Manager運用豐富的中繼資料、智慧標籤、轉譯和其他數位資產管理(DAM)服務，豐富上傳數位檔案的二進位內容。 您可以從本機資料夾或網路磁碟將各種檔案類型（例如影像、檔案和原始影像檔）上傳至Experience Manager Assets。
 
 提供了多種上載方法。 除了最常用的瀏覽器上傳外，還有其他將資產新增至Experience Manager儲存庫的方法，包括案頭用戶端（例如Adobe Asset Link或Experience Manager案頭應用程式）、上傳和擷取指令碼，以及自動擷取整合（新增為AEM擴充功能）。
 
@@ -64,7 +64,7 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 
 > [!NOTE]
 >
-> 如果您需要將巢狀資料夾階層上傳至AEM，請參閱「大量 [上傳資產」](#bulk-upload)
+> 若要將巢狀資料夾階層上傳至AEM，請參閱 [大量上傳資產](#bulk-upload)。
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
