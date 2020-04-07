@@ -2,7 +2,7 @@
 sub-product: AEM Assets 雲端服務
 user-guide-title: AEM Assets 雲端服務
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
 
 ---
 
@@ -52,6 +52,17 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [XMP 中繼資料](xmp-metadata.md)
    + [MediaLibrary 功能](medialibrary.md)
    + [匯入和匯出資產中繼資料](metadata-import-export.md)
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD======
++ 分享及分發資產 {#brandportal}
+   + [使用品牌入口網站設定AEM資產](configure-aem-assets-with-brand-portal.md)
+   + [將AEM資產發佈至品牌入口網站](publish-to-brand-portal.md)
+>>>>>>>>>>733b637的母公司……更新目錄
+
+
+
+
+
+> 
 + 內容片段 {#content-fragments}
    + [使用內容片段](content-fragments/content-fragments.md)
    + [管理內容片段](content-fragments/content-fragments-managing.md)
