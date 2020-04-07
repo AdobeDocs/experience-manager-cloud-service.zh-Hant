@@ -22,14 +22,14 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 1. 如果內容已完全快取到CDN,CDN會將內容提供給瀏覽器
 1. 如果內容未完全快取，CDN會呼叫（反向proxy）給分派程式
 1. 如果內容已完全快取在Dispatcher上，則Dispatcher會將其提供給CDN
-1. 如果內容未完全快取，則分派程式會呼叫（反向proxy）至AEM發佈
+1. If content is not fully cached, the dispatcher calls out (reverse proxy) to the AEM publish
 1. 內容由瀏覽器轉譯，瀏覽器也會快取內容，視標題而定
 
 內容類型HTML/text設定為在分派程式層的300秒（5分鐘）後過期，分派程式快取和CDN都會遵守此臨界值。 在重新部署發佈服務期間，會清除調度器快取，然後在新的發佈節點接受通信之前預熱。
 
-以下各節提供內容傳送的更詳細資訊，包括CDN設定和快取。
+The sections below provide greater detail about content delivery, including CDN configuration and caching.
 
-有關從作者服務複製到發佈服務的資訊，請參 [閱](/help/operations/replication.md)。
+Information about replication from the author service to the publish service is available [here](/help/operations/replication.md).
 
 ## CDN {#cdn}
 
@@ -49,7 +49,7 @@ AEM總共提供兩個選項：
 | 詳細資料 | AEM Managed CDN | 客戶管理的CDN指向AEM CDN |
 |---|---|---|
 | **客戶工作** | 沒有，它完全整合。 只需將CNAME指向AEM Managed CDN。 | 適度的客戶投資。 客戶必須管理自己的CDN。 |
-| **先決條件** | 無 | 需要替換的現有CDN十分繁雜。 上線前必須先示範成功的負載測試。 |
+| **Pre-requisites** | 無 | 需要替換的現有CDN十分繁雜。 上線前必須先示範成功的負載測試。 |
 | **CDN專業知識** | 無 | 需要至少一次兼職的工程資源及能夠設定客戶CDN的詳細CDN知識。 |
 | **安全性** | 由 Adobe 管理. | 由Adobe管理（也可由客戶在自己的CDN管理）。 |
 | **效能** | 由Adobe最佳化。 | 將受益於某些AEM CDN功能，但由於額外的跳數，可能會造成小幅效能點擊。 **注意**:從客戶CDN跳至Emply CDN可能會很有效)。 |
