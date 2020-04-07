@@ -2,7 +2,7 @@
 title: 內容搜尋與索引
 description: '內容搜尋與索引 '
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 1. 在AEM雲端服務的高階層，隨著 [Blue-Green部署模型的推出](#index-management-using-blue-green-deployments) ，將會有兩組索引：一組是舊版（藍色），另一組是新版（綠色）。
 
-使用的索引版本是使用索引定義中的標誌通過標誌配置的 `useIfExist` 。 索引只能用於應用程式的一個版本（例如，僅藍色或綠色），或同時用於兩個版本。 使用藍綠部署的索 [引管理提供詳細的檔案](#index-management-using-blue-green-deployments)。
+<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. 客戶可以在Cloud Manager構建頁面上查看索引作業是否已完成，並在新版本準備好接收流量時收到通知。
 
@@ -61,7 +61,7 @@ AS NOTE: the above is internal for now.
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-那就得下去 `ui.content/src/main/content/jcr_root`。 目前不支援子根資料夾。
+那就得下去 `ui.apps/src/main/content/jcr_root`。 目前不支援子根資料夾。
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -69,11 +69,15 @@ AS NOTE: the above is internal for now.
 
 ### 部署索引定義 {#deploying-index-definitions}
 
+> [!NOTE]
+>
+> Jackrabbit Filevault Maven Package Plugin **1.1.0版有已知問題，不允許您新增** 至的模組 `oak:index``<packageType>application</packageType>`。 若要解決這個問題，請使 **用1.0.4版**。
+
 索引定義現在已標示為自訂和版本化：
 
-* 索引定義本身(例如 `/oak:index/ntBaseLucene-custom-1`)是MUTABLE內容
+* 索引定義本身(例如 `/oak:index/ntBaseLucene-custom-1`)
 
-因此，為了部署索引，索引定義(`/oak:index/definitionname`)應透過可變套件 **傳遞**，通常 `ui.content` 是透過Git和Cloud Manager部署程式。
+因此，為了部署索引，索引定義(`/oak:index/definitionname`)必須透過Git和Cloud Manager部 `ui.apps` 署程式傳遞。
 
 新增索引定義後，新應用程式需要透過Cloud Manager部署。 部署時，會啟動兩個工作，負責將索引定義新增（並視需要合併）至MongoDB和Azure區段商店，以供作者和發佈。 在Blue-Green交換機開始使用之前，正在使用新的索引定義重新建立基礎儲存庫的索引。
 
