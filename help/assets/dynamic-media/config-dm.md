@@ -1,6 +1,6 @@
 ---
 title: 設定動態媒體雲端服務
-description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
+description: Information on how to configure Dynamic Media in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
@@ -315,7 +315,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. 在頁面頂端的導覽列上，點選「設定>應用程 **[!UICONTROL 式設定>批次集預設集>預設命名]**」。
 1. 選擇 **[!UICONTROL 「查看表單]** 」或「 **[!UICONTROL 查看代碼」]** ，以指定要查看的方式並輸入有關每個元素的資訊。
 
-   您可以選取「檢 **[!UICONTROL 視程式碼]** 」核取方塊，以檢視表格選擇旁邊建立的規則運算式值。 如果表單視圖因任何原因限制您，您可以輸入或更改這些值，以幫助定義命名約定的元素。 如果無法在表單檢視中解析您的值，表單欄位會變為非作用中。
+   您可以選取「檢 **[!UICONTROL 視程式碼]** 」核取方塊，以檢視表格選擇旁邊建立的規則運算式值。 You are able to enter or alter these values to help define the elements of the naming convention, if the form view limits you for any reason. If your values are unable to be parsed in the form view, the form fields become inactive.
 
    >[!NOTE]
    >
@@ -336,7 +336,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 動態媒體使用批次集預設集將資產組織成一組影像（替代影像、顏色選項、360回轉），以便在檢視器中顯示。 批次集預設集會自動在動態媒體中與資產上傳程式一起執行。
 
-您可以建立、編輯和管理批次集預設集。 批集預設定義有兩種形式：一個代表您可能已設定的預設命名慣例，另一個代表您即時建立的自訂命名慣例。
+You can create, edit, and manage your batch set presets. 批集預設定義有兩種形式：一個代表您可能已設定的預設命名慣例，另一個代表您即時建立的自訂命名慣例。
 
 您可以使用表單欄位方法來定義批次集預設集，或使用程式碼方法來使用規則運算式。 如同在預設命名中，您可以在表單檢視中定義的同時選擇檢視程式碼，並使用規則運算式來建立定義。 或者，您可以取消選中任一視圖以獨佔使用一個視圖或另一個視圖。
 
