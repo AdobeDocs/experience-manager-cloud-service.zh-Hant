@@ -3,7 +3,7 @@ title: Assets HTTP API
 description: 瞭解Assets HTTP API的實作、資料模型和功能。 使用資產HTTP API來執行資產相關的各種工作。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -25,7 +25,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 >[!NOTE]
 >
->所有與上傳或更新一般資產或二進位檔（類似轉譯）相關的API呼叫都會針對AEM進行雲端服務部署。 若要上傳二進位檔案，請改 [用直接二進位上傳API](developer-reference-material-apis.md#asset-upload-technical) 。
+>所有與上傳或更新一般資產或二進位檔（類似轉譯）相關的API呼叫都會針對AEM進行雲端服務部署。 若是上傳二進位檔，請 [改用直接二進位上傳API](developer-reference-material-apis.md#asset-upload-technical) 。
 
 ## 內容片段 {#content-fragments}
 
@@ -127,7 +127,7 @@ GET /api/assets/myFolder.json
 
 ## 建立資料夾 {#create-a-folder}
 
-建立新 `sling`:在 `OrderedFolder` 給定路徑。 如果給定*而不是節點名稱，則servlet將使用參數名稱作為節點名稱。 接受為請求資料是新資料夾的Siren表示法或一組名稱——值配對，編碼為 `application/www-form-urlencoded` 或 `multipart`/ `form``data`-，對直接從HTML表單建立資料夾非常有用。 此外，資料夾的屬性可指定為URL查詢參數。
+建立新 `sling`:在 `OrderedFolder` 給定路徑。 如果給定*而非節點名稱，則servlet將使用參數名稱作為節點名稱。 接受為請求資料是新資料夾的Siren表示法或一組名稱——值配對，編碼為 `application/www-form-urlencoded` 或 `multipart`/ `form``data`-，對直接從HTML表單建立資料夾非常有用。 此外，資料夾的屬性可指定為URL查詢參數。
 
 如果給定路徑的父節 `500` 點不存在，操作將失敗，並帶有響應代碼。 如果資料夾已存在，則會傳 `409` 回回應代碼。
 
