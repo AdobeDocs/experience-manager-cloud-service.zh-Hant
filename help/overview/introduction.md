@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 雲端服務簡介
 description: 'Adobe Experience Manager (AEM) 雲端服務簡介。 '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,6 +18,8 @@ Adobe Experience Manager 雲端服務：
 * 結合 AEM 內容管理系統與 AEM 數位資產管理的強大功能，協助您為客戶提供內容導向的個人化體驗。
 
 * 持續傳送並持續整合，實現零停機更新。
+
+* 運用內建的內容傳遞網路 (CDN) 和其他網路層最佳實務，快速、有效率地傳遞內容。
 
 * 以可自動擴展的動態架構為基礎，免除基礎架構相關考量。
 
