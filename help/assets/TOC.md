@@ -2,7 +2,7 @@
 sub-product: AEM Assets 雲端服務
 user-guide-title: AEM Assets 雲端服務
 translation-type: tm+mt
-source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
+source-git-commit: 5fe598192f80496bd176804796dbce96c35fc67e
 
 ---
 
@@ -52,17 +52,24 @@ source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
    + [XMP 中繼資料](xmp-metadata.md)
    + [MediaLibrary 功能](medialibrary.md)
    + [匯入和匯出資產中繼資料](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;頭&lt;&lt;&lt;&lt;&lt;&lt;頭&lt;&lt;&lt;&lt;&lt;&lt;頭=======
-+ 分享及分發資產 {#brandportal}
-   + [使用品牌入口網站設定AEM資產](configure-aem-assets-with-brand-portal.md)
-   + [將AEM資產發佈至品牌入口網站](publish-to-brand-portal.md)
->>>>>>>>>>733b637的母公司……更新toc=======da6a8ae的父項……在Cloud上使用AEM資產設定品牌入口網站======da6a8ae的父項……在Cloud上使用AEM資產設定品牌入口網站
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD=====================
+>>>>>>>>>>733b637的母公司……更新目錄
 
 
 
 
 
 > 
++ 分享及分發資產 {#brandportal}
+   + [使用品牌入口網站設定AEM資產](configure-aem-assets-with-brand-portal.md)
+   + [將AEM資產發佈至品牌入口網站](publish-to-brand-portal.md)
+>>>>>>>733b637的母公司……更新toc=======da6a8ae的父項……在Cloud上使用AEM資產設定品牌入口網站======da6a8ae的父項……在Cloud上使用AEM資產設定品牌入口網站
+
+
+
+
+
+
 + 內容片段 {#content-fragments}
    + [使用內容片段](content-fragments/content-fragments.md)
    + [管理內容片段](content-fragments/content-fragments-managing.md)
