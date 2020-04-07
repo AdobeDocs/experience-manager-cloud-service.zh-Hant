@@ -4,7 +4,7 @@ description: 瞭解各種資產管理和編輯方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -19,7 +19,9 @@ source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
 
 >[!NOTE]
 >
->共用至Marketing Cloud時不 `sling:OrderedFolder`支援共用類型的「資產」檔案夾。 如果要共用資料夾，在建立資料夾時不 [!UICONTROL 要選擇] 「有序」。
+>* 共用至Marketing Cloud時不 `sling:OrderedFolder`支援共用類型的「資產」檔案夾。 如果要共用資料夾，在建立資料夾時不 [!UICONTROL 要選擇] 「有序」。
+>* Experience Manager does not allow using `subassets` word as the name of a folder. It is a keyword reserved for node that contain subassets for compound assets
+
 
 1. 導覽至您要建立新資料夾的數位資產檔案夾。 在功能表中，按一下「 **[!UICONTROL 建立]**」。 選擇「 **[!UICONTROL 新建資料夾]**」。
 1. 在「標 **[!UICONTROL 題]** 」欄位中，提供檔案夾名稱。 依預設，DAM會使用您提供的標題作為檔案夾名稱。 建立資料夾後，您可以覆寫預設資料夾，並指定另一個資料夾名稱。
@@ -45,7 +47,7 @@ source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
 
    若要縮放資產，請點選／按一 `+` 下（或點選／按一下資產上的放大鏡）。 若要縮小，請點選／按一下 `-`。 當您放大時，可以透過平移來仔細檢視影像的任何區域。 重設縮放箭頭會將您帶回原始檢視。
 
-   點選 **[!UICONTROL 「重設]** 」，將檢視重設為原始大小。
+   Tap **[!UICONTROL Reset]** to reset the view to the original size.
 
 ## 編輯屬性 {#editing-properties}
 
@@ -96,13 +98,13 @@ source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
 
 不會結轉資產特定副本的少數屬性。 例如：
 
-* 資產ID、建立日期和時間，以及版本和版本記錄。 有些屬性由屬性、 `jcr:uuid`和 `jcr:created`指示 `cq:name`。
+* 資產ID、建立日期和時間，以及版本和版本記錄。 Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
 
-* 每個資產及其每個轉譯的建立時間和參考路徑都是唯一的。
+* Creation time and referenced paths are unique for each asset and each of its rendition.
 
-保留其他屬性和元資料資訊。 複製資產時不會建立部分復本。
+The other properties and metadata information is retained. A partial copy is not created when copying an asset.
 
-1. 從「資產」使用者介面中，選取一或多個資產，然後點選／按一下工具列 **[!UICONTROL 中的]** 「複製」圖示。 或者，從資 **[!UICONTROL 產卡]** 中選擇 ![Copy](assets/copy_icon.png) _copy_icon快速操作。
+1. From the Assets UI, select one or more assets, and then tap/click the **[!UICONTROL Copy]** icon from the toolbar. 或者，從資 **[!UICONTROL 產卡]** 中選擇 ![Copy](assets/copy_icon.png) _copy_icon快速操作。
 
    >[!NOTE]
    >
@@ -136,12 +138,12 @@ source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
    >[!NOTE]
    >
    >* 如果新位置沒有同名的資產，您可以指定該資產的相同名稱。 但是，如果您將資產移至同名資產所在的位置，則應使用不同的名稱。 如果您使用相同的名稱，系統會自動產生名稱的變化。 例如，如果您的資產名稱為Square，系統會為其副本產生名稱Square1。
-   >* 重新命名時，檔案名稱中不允許空格。
+   >* When renaming, whitespace is not allowed in the file name.
 
 
 1. 在「選 **[!UICONTROL 擇目標]** 」對話框中，執行下列操作之一：
 
-   * 導覽至資產的新位置，然後點選／按「下一 **[!UICONTROL 步]** 」繼續。
+   * Navigate to the new location for the assets, and then tap/click **[!UICONTROL Next]** to proceed.
 
    * 點選／按一 **[!UICONTROL 下「上]** 」，返回「重新 **[!UICONTROL 命名]** 」畫面。
 
@@ -155,13 +157,13 @@ source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
    * 點選／按一 **[!UICONTROL 下「上]** 」，返回「 **[!UICONTROL 選取目標]** 」畫面。
 
    * 點選／按一 **[!UICONTROL 下「取消]** 」以停止移動作業。
-   如果您不更新參照，則參照會繼續指向資產的先前路徑。 如果您調整參照，它們會更新為新資產路徑。
+   如果您不更新參照，則參照會繼續指向資產的先前路徑。 If you adjust the references, they are updated to the new asset path.
 
 ### 管理轉譯 {#managing-renditions}
 
-1. 您可以新增或移除資產的轉譯，但原始的轉譯除外。 導覽至您要新增或移除轉譯的資產位置。
+1. You can add or remove renditions for an asset, except the original. 導覽至您要新增或移除轉譯的資產位置。
 
-1. 點選／按一下資產以開啟其資產頁面。
+1. Tap/click the asset to open its asset page.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
@@ -169,13 +171,13 @@ source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. 在「轉 **[!UICONTROL 譯]** 」面板中，檢視為資產產生的轉譯清單。
+1. In the **[!UICONTROL Renditions]** panel, view the list of renditions generated for the asset.
 
    ![renditions_panel](assets/renditions_panel.png)
 
    >[!NOTE]
    >
-   >依預設，AEM Assets不會在預覽模式中顯示資產的原始轉譯。 如果您是管理員，可以使用覆蓋來設定AEM Assets，以在預覽模式中顯示原始轉譯。
+   >By default, AEM Assets does not display the original rendition of the asset in the preview mode. If you are an administrator, you can use overlays to configure AEM Assets to display original renditions in the preview mode.
 
 1. 選取要檢視或刪除轉譯的轉譯。
 
@@ -254,7 +256,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 1. 導覽至您要發佈的資產／資料夾的位置。
 
 1. 從資產卡 **[!UICONTROL 中選取「發佈]** 」快速動作，或選取資產，然後點選/按一下工具列中的「 **[!UICONTROL 快速發佈]** 」圖示。
-1. 如果資產引用其他資產，其引用將列在嚮導中。 只會顯示自上次發佈／未發佈後未發佈或已修改的參照。 選擇要發佈的參照。
+1. 如果資產引用其他資產，其引用將列在嚮導中。 只會顯示自上次發佈／未發佈後未發佈或已修改的參照。 Choose the references you want to publish.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
 
@@ -415,13 +417,15 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
-1. 若要通知使用者註解的相關資訊，請指定使用者的電子郵件地址並新增註解。 例如，若要通知Aaron MacDonald有關註解的資訊，請輸入@aa。 所有相符使用者的提示會顯示在清單中。 從清單中選取Aaron的電子郵件地址，以便用注釋標籤她。 同樣地，您可以在注釋內或注釋之前或之後的任何地方標籤更多用戶。
+<!--
+1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
+-->
 
-   >[!NOTE]
-   >
-   >對於非管理員使用者，只有當使用者具有Crx-de中的「在 */home讀取* 」權限時，才會顯示建議。
+>[!NOTE]
+>
+>對於非管理員使用者，只有當使用者具有CRXDE中的「讀取」權限時，才會顯 `/home` 示建議。
 
-   ![chlimage_1-235](assets/chlimage_1-235.png)
+![chlimage_1-235](assets/chlimage_1-235.png)
 
 1. 添加註釋後，按一下「 **[!UICONTROL 添加]** 」(Add)保存注釋。 註解通知會傳送給Aaron。
 
