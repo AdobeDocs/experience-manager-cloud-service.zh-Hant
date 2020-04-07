@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
+source-git-commit: 1eb3d121d5d52f7212017b3cd3cc200517377aa9
 translation-type: tm+mt
 
 ---
@@ -45,13 +45,4 @@ translation-type: tm+mt
 
 ## 歸因
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADT其行為准則是從《投稿人盟約》( [Contributor Convent](https://contributor-covenant.org),1.4版)修訂，網址為 [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)。
-=======
-本行為准則系根據《投稿人盟約》( [Contributor Convent](https://contributor-covenant.org))第1.4版所修訂， [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD)
->>>>>>>>>>f6e5291的父代……將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支&#39;staging&#39;合併到staging======f6e5291的parent...將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支&#39;staging&#39;合併到staging======f6e5291的parent...將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支&#39;staging&#39;合併到staging======190577c的parent...將分支&#39;master&#39;合併到測試中
-
-
-
-
-
-> 
+本行為准則自《投稿人盟約》( [Contributor Covenat](https://contributor-covenant.org)，第1.4版)修訂，網址為 [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
