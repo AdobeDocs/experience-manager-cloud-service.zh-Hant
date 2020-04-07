@@ -2,7 +2,7 @@
 title: AEM 雲端服務 SDK
 description: '待完成 '
 translation-type: tm+mt
-source-git-commit: a7dc007230632bf8343004794b2bc4c5baaf4e05
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -24,7 +24,7 @@ AEM as a Cloud Service SDK由下列物件組成：
 ## 以雲端服務SDK形式存取AEM {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * 您可以勾選AEM Admin Console的「關於 **Adobe Experience Manager** 」圖示，以瞭解您正在生產環境中執行的AEM版本。
-* 快速啟動jar和Dispatcher Tools可從軟體分發入口網站下載為 [zip檔案](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)。 請注意，SDK清單的存取權限僅限於AEM Managed Services或AEM做為雲端服務環境的使用者。
+* 快速啟動jar和Dispatcher Tools可從軟體分發入口網站下載為 [zip檔案](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。 請注意，SDK清單的存取權限僅限於AEM Managed Services或AEM做為雲端服務環境的使用者。
 * Java API Jar和Javadoc Jar可通過任意工具（命令行或首選IDE）下載。
 * 主要專案應參考下列API Jar套件。 在任何子包中也應引用此相關性。
 
