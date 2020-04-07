@@ -246,7 +246,7 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
 
 ### 簡單部署包依賴項 {#simple-deployment-package-dependencies}
 
-簡單案例將可變內 `ui.content` 容包設定為依賴於不可變 `ui.apps` 代碼包。
+簡單案例將可變內 `ui.content` 容包設定為依賴於不可 `ui.apps` 變代碼包。
 
 + `all` 沒有依賴性
    + `ui.apps` 沒有依賴性
