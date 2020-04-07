@@ -3,7 +3,7 @@ title: Adobe Experience Manager Assets中的數位版權管理
 description: 瞭解如何在AEM中管理授權資產的資產到期狀態和資訊。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -54,11 +54,13 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 1. 選擇 **[!UICONTROL Adobe CQ DAM到期通知]**。 依預設， **[!UICONTROL 會選取「時間型排程器]** 」，此排程器會將工作排程在特定時間檢查資產是否已過期子資產。 作業完成後，已過期子資產和參考資產的資產會在搜尋結果中顯示為過期。
 
 1. 要定期運行作業，請清除「基於時 **[!UICONTROL 間的調度程式規則]** 」欄位，並在「定期調度程式」欄位中以秒為單 **[!UICONTROL 位修改時間]** 。例如，示例表達式&#39;0 0 0 &amp;ast;&amp;ast;?&#39;會在00小時觸發工作。
-1. 選擇 **[!UICONTROL 在資產過期]** 時傳送電子郵件以接收電子郵件。
+
+<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
    >
-   >只有資產建立者（上傳特定資產至AEM Assets的人員）會在資產過期時收到電子郵件。 瞭解如何設定電子郵件通知，以取得在整體AEM層級設定電子郵件通知的詳細資訊。
+   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
+-->
 
 1. 在「先 **[!UICONTROL 前通知的秒數]** 」欄位中，指定當您想要收到有關過期的通知時，資產到期前的秒數。 如果您是管理員或資產建立者，在資產到期前會收到訊息，通知您資產將在指定時間後到期。
 
@@ -77,7 +79,7 @@ Adobe Experience Manager(AEM)Assets的Assets主控台可顯示資產的各種狀
 1. 從功 **[!UICONTROL 能表選擇]** 「發佈」，然後關閉確認對話框。
 1. 退出選擇模式。 資產的出版物狀態會顯示在卡片檢視中資產縮圖的底部。 在清單檢視中，「已發佈」欄會顯示資產發佈的時間。
 
-1. 在「資產」使用者介面中，選取資產，然後點選／按一下「屬 **[!UICONTROL 性]** 」圖示以顯示其資產詳細資料頁面。
+1. 在「資產」使用者介面中，選取資產，然後點選／按一下「屬 **[!UICONTROL 性]** 」圖示以顯示其資產詳細資訊頁面。
 
 1. 在「進階」索引標籤中，並從下方的「過期」欄位設定資產的 **[!UICONTROL 到期]** 日。
 
@@ -103,7 +105,7 @@ Adobe Experience Manager(AEM)Assets的Assets主控台可顯示資產的各種狀
 
 這項功能會強制您接受授權合約，您才能從Adobe Experience Manager(AEM)Assets下載授權資產。
 
-如果您選取受保護的資產並按一下「 **[!UICONTROL 下載]** 」圖示，則會將您重新導向至您接受授權合約的授權頁面。 如果您不接受授權合約，則會停 **[!UICONTROL 用「下載]** 」按鈕。
+如果您選取受保護的資產並按一下「 **[!UICONTROL 下載]** 」圖示，則會將您重新導向至您接受授權合約的授權頁面。 如果您不接受授權合約，則會停 **[!UICONTROL 用]** 「下載」按鈕。
 
 如果選擇包含多個受保護的資產，請一次選取一個資產、接受授權合約，然後繼續下載資產。
 
