@@ -104,7 +104,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## 下載及分享資產 {#download-and-share-assets}
 
-使用者可以下載一些資產，並在Experience manager之外共用這些資產。如需詳細資訊，請 [參閱如何搜尋資產](/help/assets/search-assets.md)[、如何下載資產](/help/assets/download-assets-from-aem.md), [以及如何下載系列](manage-collections.md#download-a-collection)
+使用者可以下載一些資產，並在Experience manager之外共用這些資產。如需詳細資訊，請 [參閱如何搜尋資產](/help/assets/search-assets.md)[、如何下載資產](/help/assets/download-assets-from-aem.md)，以及 [如何下載系列](manage-collections.md#download-a-collection)
 
 ## 與創意專業人員共用資產 {#share-with-creatives}
 
