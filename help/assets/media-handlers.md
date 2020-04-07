@@ -22,7 +22,7 @@ Adobe Experience Manager(AEM)Assets隨附一組預設工作流程和媒體處理
 
 ## 預設媒體處理常式 {#default-media-handlers}
 
-AEM Assets中提供下列媒體處理常式，並可處理最常見的MIME類型：
+AEM Assets中提供下列媒體處理常式，並處理最常見的MIME類型：
 
 <!-- TBD: Apply correct formatting once table is moved to MD.
 -->
