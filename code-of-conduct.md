@@ -47,8 +47,8 @@ translation-type: tm+mt
 
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADT其行為准則是從《投稿人盟約》( [Contributor Convent](https://contributor-covenant.org),1.4版)修訂，網址為 [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)。
 =======
-本行為准則系根據《投稿人 [盟約](https://contributor-covenant.org)》第1.4版修訂， [網址為https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
->>>>>>>>>>f6e5291的父代……將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支&#39;staging&#39;合併到staging======f6e5291的parent...將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支「測試」合併到測試中
+本行為准則系根據《投稿人盟約》( [Contributor Convent](https://contributor-covenant.org))第1.4版所修訂， [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD)
+>>>>>>>>>>f6e5291的父代……將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支&#39;staging&#39;合併到staging======f6e5291的parent...將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支&#39;staging&#39;合併到staging======f6e5291的parent...將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支&#39;staging&#39;合併到staging======190577c的parent...將分支&#39;master&#39;合併到測試中
 
 
 
