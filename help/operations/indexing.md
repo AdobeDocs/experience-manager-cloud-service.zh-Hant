@@ -51,7 +51,7 @@ AS NOTE: the above is internal for now.
 
 1. 添加新客戶索引定義
 1. 更新現有索引定義。 這實際上意味著添加現有索引定義的新版本
-1. 刪除冗餘或過時的現有索引。
+1. Removing an existing index that is redundant or obsolete.
 
 對於上述第1點和第2點，您需要在各自的Cloud Manager發行排程中，建立新的索引定義，作為自訂程式碼庫的一部分。 如需詳細資訊，請參 [閱「部署至AEM as a Cloud Service」檔案](/help/implementing/deploying/overview.md)。
 
@@ -75,13 +75,13 @@ AS NOTE: the above is internal for now.
 
 索引定義現在已標示為自訂和版本化：
 
-* 索引定義本身(例如 `/oak:index/ntBaseLucene-custom-1`)
+* The index definition itself (for example `/oak:index/ntBaseLucene-custom-1`)
 
 因此，為了部署索引，索引定義(`/oak:index/definitionname`)必須透過Git和Cloud Manager部 `ui.apps` 署程式傳遞。
 
 新增索引定義後，新應用程式需要透過Cloud Manager部署。 部署時，會啟動兩個工作，負責將索引定義新增（並視需要合併）至MongoDB和Azure區段商店，以供作者和發佈。 在Blue-Green交換機開始使用之前，正在使用新的索引定義重新建立基礎儲存庫的索引。
 
-## 使用藍綠部署的索引管理 {#index-management-using-blue-green-deployments}
+## Index Management using Blue-Green Deployments {#index-management-using-blue-green-deployments}
 
 ### 什麼是索引管理 {#what-is-index-management}
 
@@ -131,7 +131,7 @@ AS NOTE: the above is internal for now.
 
 每次變更索引時，版本號碼都會遞增。 為避免自訂索引名稱與產品本身的索引名稱衝突，自訂索引以及對現成可用索引的變更必須以結尾 `-custom-<number>`。
 
-### 對現成可用索引的更改 {#changes-to-out-of-the-box-indexes}
+### Changes to Out-of-the-Box Indexes {#changes-to-out-of-the-box-indexes}
 
 一旦Adobe變更現成可用的索引（例如「damAssetLucene」或「cqPageLucene」），就會建立名為 `damAssetLucene-2``cqPageLucene-2` 或的新索引，或者，如果已自訂索引，則自訂的索引定義會與現成可用索引中的變更合併，如下所示。 合併變更會自動進行。 這表示，如果現成可用的索引發生變更，您不需要執行任何動作。 不過，以後可以再次自定義索引。
 
@@ -148,7 +148,7 @@ AS NOTE: the above is internal for now.
 
 ### 刪除索引 {#removing-an-index}
 
-如果要在應用程式的較新版本中刪除索引，則可以定義一個空索引（一個沒有要索引的資料的索引），並使用新名稱。 例如，您可以為它命名 `/oak:index/acmeProduct-custom-3`。 這將替換索引 `/oak:index/acmeProduct-custom-2`。 系統 `/oak:index/acmeProduct-custom-2` 刪除後，也可以刪除空 `/oak:index/acmeProduct-custom-3` 索引。
+If an index is to be removed in a later version of the application, you can define an empty index (an index with no data to index), with a new name. 例如，您可以為它命名 `/oak:index/acmeProduct-custom-3`。 這將替換索引 `/oak:index/acmeProduct-custom-2`。 系統 `/oak:index/acmeProduct-custom-2` 刪除後，也可以刪除空 `/oak:index/acmeProduct-custom-3` 索引。
 
 ### 添加索引 {#adding-an-index}
 
