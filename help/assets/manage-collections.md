@@ -4,7 +4,7 @@ description: 瞭解Adobe Experience Manager Assets中的收集概念。 瞭解�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -170,7 +170,7 @@ source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
 
 1. 從「系列」主控台中，選取一或多個要下載的系列。
 1. 在工具列中點選／按一下下載圖示。
-1. 在「下 **[!UICONTROL 載]** 」對話方塊中，點選／按 **[!UICONTROL 下「下載]**」。 如果您想要下載系列中資產的轉譯，請選取「轉 **[!UICONTROL 譯」]**。 選取「 **[!UICONTROL 電子郵件]** 」選項，以傳送電子郵件通知給系列的擁有者。
+1. 在「下 **[!UICONTROL 載]** 」對話方塊中，點選／按 **[!UICONTROL 下「下載]**」。 如果您想要下載系列中資產的轉譯，請選取「轉 **[!UICONTROL 譯」]**。 <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
 
    當您選取要下載的系列時，系列下方的完整檔案夾階層會下載。 若要將您下載的每個系列（包括父系列下巢狀的子系列中的資產）包含在個別檔案夾中，請為每個資產選取「 **[!UICONTROL 建立個別檔案夾」]**。
 
