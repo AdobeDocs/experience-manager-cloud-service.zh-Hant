@@ -338,9 +338,9 @@ Apache虛擬主機配置中有兩種類型的檔案可指定為包括：重寫�
 
 此消息表示您的配置具有不建議使用的1版佈局，其中包含完整的Apache配置和帶前置詞的 `ams_` 檔案。 雖然這仍受支援，但是您應切換至新版面。
 
-## 在本機測試您的Apache和Dispatcher配置 {#testing-apache-and-dispatcher-configuration-locally}
+## Testing your Apache and Dispatcher configuration locally {#testing-apache-and-dispatcher-configuration-locally}
 
-您也可以在本機測試Apache和Dispatcher配置。 它要求本機安裝Docker，而您的組態必須如上所述通過驗證。
+It is also possible to test drive your Apache and Dispatcher configuration locally. 它要求本機安裝Docker，而您的組態必須如上所述通過驗證。
 
 通過使用&quot;`-d`&quot;參數，驗證器將輸出包含調度程式所需的所有配置檔案的資料夾。
 
@@ -470,7 +470,7 @@ Dispatcher配置結構在Managed Services和AEM（即雲服務）之間有差異
 
 下節提供如何轉換AMS配置的逐步說明。 假定您的存檔具有類似於 [Cloud Manager Dispatcher配置中所述的結構](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
-### 提取存檔並刪除最終的前置詞
+### 解壓縮封存並移除最終首碼
 
 將檔案解壓縮至檔案夾，並確定立即的子檔案夾以 `conf`、 `conf.d``conf.dispatcher.d` 、和開頭 `conf.modules.d`。 如果他們沒有，請在階層中向上移動。
 
@@ -558,9 +558,11 @@ Enter directory `conf.dispatcher.d/cache`.
 
 移除任何具有尾碼的檔案 `_invalidate_allowed.any`。
 
-將Cloud Dispatcher `conf.dispatcher.d/cache/default_invalidate_any` 設定中的預設AEM檔案複製至該位置。
+Copy the file `conf.dispatcher.d/cache/default_invalidate_any` from the default
+AEM in the Cloud dispatcher configuration to that location.
 
-在每個群檔案中，刪除該部分中的任 `cache/allowedClients` 何內容，並將其替換為：
+In each farm file, remove any contents in the `cache/allowedClients` section and replace it
+with:
 
 ```
 $include "../cache/default_invalidate.any"
@@ -623,7 +625,8 @@ Enter directory `conf.dispatcher.d/renders`.
 
 將預設AEM `conf.dispatcher.d/renders/default_renders.any` 的檔案複製為Cloud Service分派程式設定至該位置。
 
-在每個群檔案中，刪除該部分中的任 `renders` 何內容，並將其替換為：
+In each farm file, remove any contents in the `renders` section and replace it
+with:
 
 ```
 $include "../renders/default_renders.any"
@@ -631,7 +634,7 @@ $include "../renders/default_renders.any"
 
 ### 檢查虛擬主機
 
-將目錄重 `conf.dispatcher.d/vhosts` 命名 `conf.dispatcher.d/virtualhosts` 並輸入。
+Rename the directory `conf.dispatcher.d/vhosts` to `conf.dispatcher.d/virtualhosts` and enter it.
 
 移除任何前置詞的檔案 `ams_`。
 
