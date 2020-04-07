@@ -3,7 +3,7 @@ title: 'Adobe Experience Manager雲端服務中用於數位資產管理的資產
 description: 資產API可讓基本的建立——讀取——更新——刪除(CRUD)操作來管理資產，包括二進位、中繼資料、轉譯、註解和內容片段。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -55,9 +55,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 * `(string) fileName`: 必要. 資產在例項中顯示的名稱。
 * `(number) fileSize`: 必要. 要上載的二進位檔案的總長度（以位元組為單位）。
 
-請注意，只要每個二進位檔包含必要欄位，就可以使用單一請求來啟動多個二進位檔的上傳。
-
-如果成功，請求會以201狀態碼和包含下列格式的JSON資料的內文回應：
+只要每個二進位檔包含必要欄位，單一請求就可用來啟動多個二進位檔的上傳。 如果成功，請求會以狀態碼 `201` 和包含下列格式JSON資料的內文回應：
 
 ```
 {
@@ -74,17 +72,17 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
         }
     ]
 }
-````
+```
 
-* `(string) completeURI`:在二進位檔完成上傳時應叫用的URI。 這可以是絕對或相對URI，客戶端也可以處理它們。 亦即，值可能是或(請參 `"https://author.acme.com/content/dam.completeUpload.json"` 閱 `"/content/dam.completeUpload.json"` 完 [整上傳](#complete-upload))。
-* `(string) folderPath`:上傳二進位檔的資料夾完整路徑。
-* `(array) (files)`:元素的清單，其長度和順序將與啟動請求中提供的二進位資訊清單的長度和順序相匹配。
-* `(string) fileName`:相應二進位檔案的名稱，如啟動請求中提供的。 此值應包含在完整請求中。
-* `(string) mimeType`:相應二進位的MIME類型，如initiate請求中提供。 此值應包含在完整請求中。
-* `(string) uploadToken`:對應二進位碼的上傳Token。 此值應包含在完整請求中。
-* `(array) uploadURIs`:字串的清單，其值為應上傳二進位檔內容的完整URI(請參 [閱上傳二進位](#upload-binary))。
-* `(number) minPartSize`:如果有多個URI，則可提供給任何一個uploadURI的資料的最小長度（以位元組為單位）。
-* `(number) maxPartSize`:如果有多個URI，則可提供給上載URI中任何一個的資料的最大長度（以位元組為單位）。
+* `completeURI` （字串）:當二進位檔完成上傳時叫用此URI。 URI可以是絕對或相對URI，客戶端也可以處理它們。 即，值可以是或查 `"https://author.acme.com/content/dam.completeUpload.json"` 看完 `"/content/dam.completeUpload.json"` 整 [上載](#complete-upload)。
+* `folderPath` （字串）:上傳二進位檔的資料夾完整路徑。
+* `(files)` （陣列）:元素的清單，其長度和順序將與啟動請求中提供的二進位資訊清單的長度和順序相匹配。
+* `fileName` （字串）:相應二進位檔案的名稱，如啟動請求中提供的。 此值應包含在完整請求中。
+* `mimeType` （字串）:相應二進位的MIME類型，如initiate請求中提供。 此值應包含在完整請求中。
+* `uploadToken` （字串）:對應二進位碼的上傳Token。 此值應包含在完整請求中。
+* `uploadURIs` （陣列）:字串的清單，其值為應上傳二進位檔內容的完整URI(請參 [閱上傳二進位](#upload-binary))。
+* `minPartSize` （數字）:如果有多個URI，則可提供給任何一個uploadURI的資料的最小長度（以位元組為單位）。
+* `maxPartSize` （數字）:如果有多個URI，則可提供給上載URI中任何一個的資料的最大長度（以位元組為單位）。
 
 ### 上傳二進位檔 {#upload-binary}
 
@@ -129,7 +127,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 ### 不建議使用的資產上傳API {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 對於Experience Manager作為雲端服務，僅支援新的上傳API。 Experience Manager 6.5的API已過時。
