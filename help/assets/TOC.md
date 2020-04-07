@@ -52,11 +52,11 @@ source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
    + [XMP 中繼資料](xmp-metadata.md)
    + [MediaLibrary 功能](medialibrary.md)
    + [匯入和匯出資產中繼資料](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD======
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;HEAD=======
 + 分享及分發資產 {#brandportal}
    + [使用品牌入口網站設定AEM資產](configure-aem-assets-with-brand-portal.md)
    + [將AEM資產發佈至品牌入口網站](publish-to-brand-portal.md)
->>>>>>>>>>733b637的母公司……更新目錄
+>>>>>>>>>>733b637的母公司……更新toc=======da6a8ae的父項……在Cloud上使用AEM資產設定品牌入口網站
 
 
 
