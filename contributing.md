@@ -19,10 +19,10 @@ translation-type: tm+mt
 
 ## Contribute的方式
 
-&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADe希望盡可能輕鬆地提交您的稿件。 您可以以兩種方式貢獻：
+&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;HEAD&lt;&lt;&lt;&lt;&lt;&lt;HEADe希望盡可能輕鬆地提交您的稿件。 您可以以兩種方式貢獻：
 =======
 =======
->>>>>>>>>>f6e5291的父代……將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支「測試」合併到測試中您的貢獻方式取決於您的身分，以及您要貢獻的變更類型：
+>>>>>>>>>>f6e5291的父代……將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支&#39;staging&#39;合併到staging======f6e5291的parent...將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支&#39;staging&#39;合併到staging======190577c的parent...將分支「主版」合併到測試中您的貢獻方式取決於您的身分，以及您要貢獻的變更類型：
 
 
 
@@ -55,15 +55,15 @@ translation-type: tm+mt
 
 ### 建立提取請求 {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD如果您發現問題並確切知道如何修復它，請考慮建立拉式請求。 提取請求可讓您對檔案進行自己的編輯，然後由AEM Docs團隊成員審核檔案以納入。 只要按一下任 **何頁面右側導覽面板頂端的「編輯此頁面** 」連結，即可進行建議的變更並建立提取請求。
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD如果您發現問題並確切知道如何修復它，請考慮建立拉式請求。 提取請求可讓您對檔案進行自己的編輯，然後由AEM Docs團隊成員審核檔案以納入。 只要按一下任 **何頁面右側導覽面板頂端的「編輯此頁面** 」連結，即可進行建議的變更並建立提取請求。
 =======
-=======
->>>>>>>f6e5291的父代……將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支「測試」合併到測試中
+>=======>
+>>>>>>>>f6e5291的父代……將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支&#39;staging&#39;合併到staging======f6e5291的parent...將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支&#39;staging&#39;合併到staging======190577c的parent...將分支&#39;master&#39;合併到測試中
 
 
 
 
-
+>> 
 
 ### Adobe員工的重大變更
 >>>>>>>f6e5291的父代……將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支「測試」合併到測試中
@@ -85,17 +85,17 @@ translation-type: tm+mt
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;頭
 ### Adobe員工的貢獻
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADI如果您是Adobe員工並有貢獻，請使用 `AdobeDocs` 公司Git中的組織。
+&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD如果您是Adobe員工並有貢獻，請使用公司 `AdobeDocs` Git中的組織。
 
 當然，我們對任何貢獻都很滿意，如果您的貢獻是在公開存放庫中提供，我們將會審查您的貢獻。不過，從Adobe員工取得的請求更容易處理，而且可在公司回購協定中更快地獲得核准。 請確定公司回購協定中只討論任何專有資訊。
 =======
-=======
->>>>>>>f6e5291的父代……將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支「測試」合併到測試中
+>=======>
+>>>>>>>>f6e5291的父代……將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支&#39;staging&#39;合併到staging======f6e5291的parent...將https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en的分支&#39;staging&#39;合併到staging======190577c的parent...將分支&#39;master&#39;合併到測試中
 
 
 
 
-
+>> 
 
 ## 工具與設定
 
