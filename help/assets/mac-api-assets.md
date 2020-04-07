@@ -127,7 +127,7 @@ GET /api/assets/myFolder.json
 
 ## 建立資料夾 {#create-a-folder}
 
-建立新 `sling`:在 `OrderedFolder` 給定路徑。 如果給定*而非節點名稱，則servlet將使用參數名稱作為節點名稱。 接受為請求資料是新資料夾的Siren表示法或一組名稱——值配對，編碼為 `application/www-form-urlencoded` 或 `multipart`/ `form``data`-，對直接從HTML表單建立資料夾非常有用。 此外，資料夾的屬性可指定為URL查詢參數。
+建立新 `sling`:在 `OrderedFolder` 給定路徑。 如果給定*而不是節點名稱，則servlet將使用參數名稱作為節點名稱。 接受為請求資料是新資料夾的Siren表示法或一組名稱——值配對，編碼為 `application/www-form-urlencoded` 或 `multipart`/ `form``data`-，對直接從HTML表單建立資料夾非常有用。 此外，資料夾的屬性可指定為URL查詢參數。
 
 如果給定路徑的父節 `500` 點不存在，操作將失敗，並帶有響應代碼。 如果資料夾已存在，則會傳 `409` 回回應代碼。
 
