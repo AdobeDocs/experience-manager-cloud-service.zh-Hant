@@ -2,13 +2,14 @@
 sub-product: 在AEM中以雲端服務形式製作內容
 user-guide-title: 在AEM中以雲端服務形式製作內容
 translation-type: tm+mt
-source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # 網站 {#sites}
 
++ [AEM Sites 雲端服務](/help/sites-cloud/home.md)
 + [AEM 雲端服務中 AEM Sites 的重大變更](sites-cloud-changes.md)
 + 製作 {#authoring}
    + 快速入門 {#getting-started}
