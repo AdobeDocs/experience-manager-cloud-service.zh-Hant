@@ -20,7 +20,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >[!NOTE]
 >
 >* 共用至Marketing Cloud時不 `sling:OrderedFolder`支援共用類型的「資產」檔案夾。 如果要共用資料夾，在建立資料夾時不 [!UICONTROL 要選擇] 「有序」。
->* Experience Manager does not allow using `subassets` word as the name of a folder. It is a keyword reserved for node that contain subassets for compound assets
+>* Experience Manager不允許將 `subassets` Word用作資料夾的名稱。 它是為節點保留的關鍵字，其中包含複合資產的子資產
 
 
 1. 導覽至您要建立新資料夾的數位資產檔案夾。 在功能表中，按一下「 **[!UICONTROL 建立]**」。 選擇「 **[!UICONTROL 新建資料夾]**」。
@@ -47,7 +47,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
    若要縮放資產，請點選／按一 `+` 下（或點選／按一下資產上的放大鏡）。 若要縮小，請點選／按一下 `-`。 當您放大時，可以透過平移來仔細檢視影像的任何區域。 重設縮放箭頭會將您帶回原始檢視。
 
-   Tap **[!UICONTROL Reset]** to reset the view to the original size.
+   點選 **[!UICONTROL 「重設]** 」，將檢視重設為原始大小。
 
 ## 編輯屬性 {#editing-properties}
 
@@ -98,13 +98,13 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 不會結轉資產特定副本的少數屬性。 例如：
 
-* 資產ID、建立日期和時間，以及版本和版本記錄。 Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
+* 資產ID、建立日期和時間，以及版本和版本記錄。 有些屬性由屬性、 `jcr:uuid`和 `jcr:created`指示 `cq:name`。
 
-* Creation time and referenced paths are unique for each asset and each of its rendition.
+* 每個資產及其每個轉譯的建立時間和參考路徑都是唯一的。
 
-The other properties and metadata information is retained. A partial copy is not created when copying an asset.
+保留其他屬性和元資料資訊。 複製資產時不會建立部分復本。
 
-1. From the Assets UI, select one or more assets, and then tap/click the **[!UICONTROL Copy]** icon from the toolbar. 或者，從資 **[!UICONTROL 產卡]** 中選擇 ![Copy](assets/copy_icon.png) _copy_icon快速操作。
+1. 從「資產」使用者介面中，選取一或多個資產，然後點選／按一下工具列 **[!UICONTROL 中的]** 「複製」圖示。 或者，從資 **[!UICONTROL 產卡]** 中選擇 ![Copy](assets/copy_icon.png) _copy_icon快速操作。
 
    >[!NOTE]
    >
@@ -138,12 +138,12 @@ The other properties and metadata information is retained. A partial copy is not
    >[!NOTE]
    >
    >* 如果新位置沒有同名的資產，您可以指定該資產的相同名稱。 但是，如果您將資產移至同名資產所在的位置，則應使用不同的名稱。 如果您使用相同的名稱，系統會自動產生名稱的變化。 例如，如果您的資產名稱為Square，系統會為其副本產生名稱Square1。
-   >* When renaming, whitespace is not allowed in the file name.
+   >* 重新命名時，檔案名稱中不允許空格。
 
 
 1. 在「選 **[!UICONTROL 擇目標]** 」對話框中，執行下列操作之一：
 
-   * Navigate to the new location for the assets, and then tap/click **[!UICONTROL Next]** to proceed.
+   * 導覽至資產的新位置，然後點選／按「下一 **[!UICONTROL 步]** 」繼續。
 
    * 點選／按一 **[!UICONTROL 下「上]** 」，返回「重新 **[!UICONTROL 命名]** 」畫面。
 
@@ -157,13 +157,13 @@ The other properties and metadata information is retained. A partial copy is not
    * 點選／按一 **[!UICONTROL 下「上]** 」，返回「 **[!UICONTROL 選取目標]** 」畫面。
 
    * 點選／按一 **[!UICONTROL 下「取消]** 」以停止移動作業。
-   如果您不更新參照，則參照會繼續指向資產的先前路徑。 If you adjust the references, they are updated to the new asset path.
+   如果您不更新參照，則參照會繼續指向資產的先前路徑。 如果您調整參照，它們會更新為新資產路徑。
 
 ### 管理轉譯 {#managing-renditions}
 
-1. You can add or remove renditions for an asset, except the original. 導覽至您要新增或移除轉譯的資產位置。
+1. 您可以新增或移除資產的轉譯，但原始的轉譯除外。 導覽至您要新增或移除轉譯的資產位置。
 
-1. Tap/click the asset to open its asset page.
+1. 點選／按一下資產以開啟其資產頁面。
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
@@ -171,13 +171,13 @@ The other properties and metadata information is retained. A partial copy is not
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. In the **[!UICONTROL Renditions]** panel, view the list of renditions generated for the asset.
+1. 在「轉 **[!UICONTROL 譯]** 」面板中，檢視為資產產生的轉譯清單。
 
    ![renditions_panel](assets/renditions_panel.png)
 
    >[!NOTE]
    >
-   >By default, AEM Assets does not display the original rendition of the asset in the preview mode. If you are an administrator, you can use overlays to configure AEM Assets to display original renditions in the preview mode.
+   >依預設，AEM Assets不會在預覽模式中顯示資產的原始轉譯。 如果您是管理員，可以使用覆蓋來設定AEM Assets，以在預覽模式中顯示原始轉譯。
 
 1. 選取要檢視或刪除轉譯的轉譯。
 
@@ -256,7 +256,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 1. 導覽至您要發佈的資產／資料夾的位置。
 
 1. 從資產卡 **[!UICONTROL 中選取「發佈]** 」快速動作，或選取資產，然後點選/按一下工具列中的「 **[!UICONTROL 快速發佈]** 」圖示。
-1. 如果資產引用其他資產，其引用將列在嚮導中。 只會顯示自上次發佈／未發佈後未發佈或已修改的參照。 Choose the references you want to publish.
+1. 如果資產引用其他資產，其引用將列在嚮導中。 只會顯示自上次發佈／未發佈後未發佈或已修改的參照。 選擇要發佈的參照。
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
 
