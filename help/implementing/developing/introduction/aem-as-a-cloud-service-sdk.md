@@ -58,7 +58,7 @@ AEM as a Cloud Service SDK由下列物件組成：
 
 ## 使用新的SDK版本重新整理本機專案 {#refreshing-a-local-prokect-with-a-new-skd-version}
 
-建議何時使用新SDK重新整理本機專案？
+建議何時使用新的SDK重新整理本機專案？
 
 建議您 *至少在每月* 維護髮行後重新整理它。
 
