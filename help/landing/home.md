@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 雲端服務使用手冊
 description: Adobe Experience Manager 雲端服務自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 587e60678bf92e2a0124da13d3c7fb492a5a7d4e
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -24,8 +24,6 @@ source-git-commit: 587e60678bf92e2a0124da13d3c7fb492a5a7d4e
 | [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager 雲端服務部署，包括開發部署主題。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將解決方案與 Experience Manager 雲端服務整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager 雲端服務後端的操作方式，例如索引和維護任務。 |
-| [移至AEM做為雲端服務](/help/move-to-cloud-service/home.md) | 瞭解可協助您以雲端服務的方式改用AEM的自助資源和工具。 |
-
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
