@@ -58,7 +58,7 @@ These software are open source and covered by the [Apache v2 license](https://ad
 
 #### 推送HTTP {#pushing-through-http}
 
-Adobe的「受管理服務」團隊使用名為Glutton的工具，將資料載入客戶環境。 Glutton是小型Java應用程式，可從一個目錄將所有資產載入AEM例項上的另一個目錄。 您也可以使用諸如Perl指令碼之類的工具將資產發佈到儲存庫中，而不是Glutton。
+Adobe的「受管理服務」團隊使用名為Glutton的工具，將資料載入客戶環境。 Glutton是小型Java應用程式，可從一個目錄將所有資產載入AEM例項上的另一個目錄。 您也可以使用諸如Perl指令碼之類的工具將資產發佈到儲存庫，而不是Glutton。
 
 使用推送https的方法有兩個主要的缺點：
 
