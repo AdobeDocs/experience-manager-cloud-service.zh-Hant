@@ -2,7 +2,7 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
+source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 
 ---
 
@@ -37,9 +37,6 @@ source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
 
 
 1. 用戶按一下「添加環 **境」按鈕** ，添加環境。
-
-   >[!NOTE]
-   >您也可以從「環境」頁面或「環境」卡存取此按鈕。 身為使用者，您只會在您擁有必要權限時看到此選項。 如果您有任何疑問，請連絡您的Adobe代表。
 
    ![](assets/add-environment.png)
 
