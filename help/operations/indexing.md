@@ -1,8 +1,8 @@
 ---
 title: 內容搜尋與索引
-description: '內容搜尋與索引 '
+description: 內容搜尋與索引
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -39,7 +39,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings. 
+AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
 
 AS NOTE: the above is internal for now.
 
@@ -51,7 +51,7 @@ AS NOTE: the above is internal for now.
 
 1. 添加新客戶索引定義
 1. 更新現有索引定義。 這實際上意味著添加現有索引定義的新版本
-1. Removing an existing index that is redundant or obsolete.
+1. 刪除冗餘或過時的現有索引。
 
 對於上述第1點和第2點，您需要在各自的Cloud Manager發行排程中，建立新的索引定義，作為自訂程式碼庫的一部分。 如需詳細資訊，請參 [閱「部署至AEM as a Cloud Service」檔案](/help/implementing/deploying/overview.md)。
 
@@ -69,19 +69,19 @@ AS NOTE: the above is internal for now.
 
 ### 部署索引定義 {#deploying-index-definitions}
 
-> [!NOTE]
+>[!NOTE]
 >
 > Jackrabbit Filevault Maven Package Plugin **1.1.0版有已知問題，不允許您新增** 至的模組 `oak:index``<packageType>application</packageType>`。 若要解決這個問題，請使 **用1.0.4版**。
 
 索引定義現在已標示為自訂和版本化：
 
-* The index definition itself (for example `/oak:index/ntBaseLucene-custom-1`)
+* 索引定義本身(例如 `/oak:index/ntBaseLucene-custom-1`)
 
 因此，為了部署索引，索引定義(`/oak:index/definitionname`)必須透過Git和Cloud Manager部 `ui.apps` 署程式傳遞。
 
 新增索引定義後，新應用程式需要透過Cloud Manager部署。 部署時，會啟動兩個工作，負責將索引定義新增（並視需要合併）至MongoDB和Azure區段商店，以供作者和發佈。 在Blue-Green交換機開始使用之前，正在使用新的索引定義重新建立基礎儲存庫的索引。
 
-## Index Management using Blue-Green Deployments {#index-management-using-blue-green-deployments}
+## 使用藍綠部署的索引管理 {#index-management-using-blue-green-deployments}
 
 ### 什麼是索引管理 {#what-is-index-management}
 
@@ -118,7 +118,8 @@ AS NOTE: the above is internal for now.
 下表顯示5個索引定義：索引 `cqPageLucene` 在兩個版本中都使用，而索引 `damAssetLucene-custom-1` 僅在版本2中使用。
 
 
-> [!NOTE]
+>[!NOTE]
+>
 > `<indexName>-custom-<customerVersionNumber>` AEM需要做為Cloud服務，才能將它標示為現有索引的取代。
 
 | 索引 | 現成可用的索引 | 用於第1版 | 用於第2版 |
@@ -131,7 +132,7 @@ AS NOTE: the above is internal for now.
 
 每次變更索引時，版本號碼都會遞增。 為避免自訂索引名稱與產品本身的索引名稱衝突，自訂索引以及對現成可用索引的變更必須以結尾 `-custom-<number>`。
 
-### Changes to Out-of-the-Box Indexes {#changes-to-out-of-the-box-indexes}
+### 對現成可用索引的更改 {#changes-to-out-of-the-box-indexes}
 
 一旦Adobe變更現成可用的索引（例如「damAssetLucene」或「cqPageLucene」），就會建立名為 `damAssetLucene-2``cqPageLucene-2` 或的新索引，或者，如果已自訂索引，則自訂的索引定義會與現成可用索引中的變更合併，如下所示。 合併變更會自動進行。 這表示，如果現成可用的索引發生變更，您不需要執行任何動作。 不過，以後可以再次自定義索引。
 
@@ -148,7 +149,7 @@ AS NOTE: the above is internal for now.
 
 ### 刪除索引 {#removing-an-index}
 
-If an index is to be removed in a later version of the application, you can define an empty index (an index with no data to index), with a new name. 例如，您可以為它命名 `/oak:index/acmeProduct-custom-3`。 這將替換索引 `/oak:index/acmeProduct-custom-2`。 系統 `/oak:index/acmeProduct-custom-2` 刪除後，也可以刪除空 `/oak:index/acmeProduct-custom-3` 索引。
+如果要在應用程式的較新版本中刪除索引，則可以定義一個空索引（一個沒有要索引的資料的索引），並使用新名稱。 例如，您可以為它命名 `/oak:index/acmeProduct-custom-3`。 這將替換索引 `/oak:index/acmeProduct-custom-2`。 系統 `/oak:index/acmeProduct-custom-2` 刪除後，也可以刪除空 `/oak:index/acmeProduct-custom-3` 索引。
 
 ### 添加索引 {#adding-an-index}
 
