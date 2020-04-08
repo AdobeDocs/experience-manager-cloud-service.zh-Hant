@@ -2,12 +2,12 @@
 title: 建立可存取的內容（WCAG 2.0符合性）
 description: 協助殘障人士存取和使用網頁內容
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
 
-# 建立可存取的內容（WCAG 2.0符合性） {#creating-accessible-content-wcag-conformance}
+# Creating Accessible Content (WCAG 2.0 Conformance) {#creating-accessible-content-wcag-conformance}
 
 WCAG 2.0包含一套技術獨立的准則和成功標準，可協助殘障人士存取和使用網頁內容。
 
@@ -18,15 +18,17 @@ WCAG 2.0包含一套技術獨立的准則和成功標準，可協助殘障人士
 >* 我們的WCAG 2.0快速指南，以取得詳細資訊
 >* 設定Rich Text Editor，以製作可存取的內容
 
-<!--
->* our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
->* [Configuring the Rich Text Editor for producing accessible content](/help/sites-administering/rte-accessible-content.md)
+
+<!-- 
+>* See our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
+>* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
 -->
+
 這些級別按三個一致性級別進行分級：A級（最低）、AA級和AAA級（最高）。 簡單地說，這些級別的定義如下：
 
-* **** A級：您的網站達到基本的最低協助功能等級。 要達到此級別，將滿足所有A級成功標準。
-* **** AA級：這是您努力追求的最佳無障礙環境支援等級，其中您的網站可達到更高的無障礙環境支援等級，因此大部分使用者都可使用大部分的技術。 要達到此級別，將滿足所有A級和A級成功標準。
-* **** AAA級：您的網站可達到非常高的協助功能。 要達到此級別，將滿足所有A級、AA級和AAA級成功標準。
+* **** A級：您的網站達到基本的最低協助功能等級。要達到此級別，將滿足所有A級成功標準。
+* **** AA級：這是您努力追求的最佳無障礙環境支援等級，其中您的網站可達到更高的無障礙環境支援等級，因此大部分使用者都可使用大部分的技術。要達到此級別，將滿足所有A級和A級成功標準。
+* **** AAA級：您的網站可達到非常高的協助功能。要達到此級別，將滿足所有A級、AA級和AAA級成功標準。
 
 在建立網站時，您應決定網站要符合的整體層級。
 
@@ -72,12 +74,13 @@ WCAG 2.0包含一套技術獨立的准則和成功標準，可協助殘障人士
 
 >[!NOTE]
 >
->有些現成可用的元件(例如 **Carousel** 和 **Slideshow** )不提供將替代文字說明新增至影像的方式。 當針對您的AEM例項實作這些版本時，您的開發團隊將需要設定這些元件以支援屬性，讓作者可以將其新增至內容（請參閱新增支援其他HTML元素和屬性）。 `alt`
+>有些現成可用的元件(例如 **Carousel** 和 **Slideshow** )不提供將替代文字說明新增至影像的方式。當針對您的AEM例項實作這些版本時，您的開發團隊將需要設定這些元件以支援屬性，讓作者可以將其新增至內容 (請參閱新增支援其他HTML元素和屬性)。`alt`
+
 <!--
 >Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
-AEM要求依預 **設填入「替代文字** 」欄位。 如果影像純粹是裝飾性的，而替代文字則是無意義的，則可 **以檢查「影像是裝飾** 」選項。
+AEM需要依預 **設填入「替代文字** 」欄位。 如果影像純粹是裝飾性的，而替代文字則是無意義的，則可 **以檢查「影像是裝飾** 」選項。
 
 #### 建立好的替代文字 {#creating-good-text-alternatives}
 
@@ -99,7 +102,7 @@ W3C [草稿：HTML5提供實用文字替代項目的技巧](https://dev.w3.org/h
 * 說明性像片：這些是人物、物件或地點的影像。 想想像片在頁面中的角色；適當的文字等同項目可能 `Photo of [object]`是，但可能取決於周圍的文字。
 * 圖示：這些是傳達特定資訊的小型圖片（圖形）。 必須在頁面和網站上一致使用這些變數。 頁面或網站上的圖示所有例項都應有相同的簡短文字替代項目，除非這麼做會造成相鄰文字的不必要複製。
 * 圖表和圖形：這些通常代表數值資料。 因此，提供文字替代選擇的一個選項可能是包含圖表或圖形中主要趨勢的簡短摘要。 如有必要，也可使用「進階影像屬性」索引標籤中的「說 **明** 」欄位，在文字中提供更詳 **細的說明** 。 此外，您也可以在頁面或網站的其他地方以表格形式提供來源資料。
-* 地圖、圖表、流程圖：用於提供空間資料的圖形(例如。 若要支援描述物件或程式之間的關係)，請確定關鍵訊息是以文字格式提供。 對於地圖，提供等同全文的地圖可能不切實際，但如果提供地圖以幫助人們找到特定位置的方式，則地圖影像的替代文字可以簡短地標示 *X*，然後在頁面其他地方的文字或透過 **Image元件的「** Advanced **」（進階）索引標籤中的「** Description **** 」（說明）欄位，提供指向該位置的指示。
+* 地圖、圖表、流程圖：用於提供空間資料的圖形(例如。若要支援描述物件或程式之間的關係)，請確定關鍵訊息是以文字格式提供。對於地圖，提供等同全文的地圖可能不切實際，但如果提供地圖以幫助人們找到特定位置的方式，則地圖影像的替代文字可以簡短地標示 *X*，然後在頁面其他地方的文字或透過 **Image元件的「** Advanced **」 (進階) 索引標籤中的「** Description **** 」 (說明) 欄位，提供指向該位置的指示。
 * 驗證碼：驗證碼是完全自 *動化的公共圖靈測試，可區分電腦和人*。 它是用於網頁上的安全檢查，用於區分人類和惡意軟體，但會造成無障礙環境支援。 這些影像需要使用者描述他們所看到的內容，才能通過安全性測試。 為影像提供替代文字顯然不可能，因此您需要考慮其他非圖形解決方案。 W3C提供了一些建議，如：
    * 邏輯謎題
    * 使用音效輸出而非影像
@@ -291,7 +294,7 @@ W3C [草稿：HTML5提供實用文字替代項目的技巧](https://dev.w3.org/h
 
 #### 用途——資訊與關係(1.3.1) {#purpose-info-and-relationships}
 
-許多殘障人士使用的輔助技術都依賴結構資訊，以有效顯示或輸出內容。 此結構資訊可以採用頁標題、表行和列標題以及清單類型的形式。 例如，螢幕閱讀程式可讓使用者從標題到標題瀏覽頁面。 但是，當頁面內容只看起來是透過視覺樣式而非基礎HTML來呈現結構時，輔助技術就無法使用結構資訊，限制了其支援更輕鬆瀏覽的能力。
+許多殘障人士使用的輔助技術都依賴結構資訊，以有效顯示或輸出內容。 此結構資訊可以採用頁標題、表行和列標題以及清單類型的形式。 例如，螢幕閱讀程式可讓使用者從標題到標題瀏覽頁面。 不過，當頁面內容只看起來是透過視覺樣式而非基礎HTML來呈現結構時，輔助技術就無法使用結構資訊，限制了其支援更輕鬆瀏覽的能力。
 
 此成功標準的存在，是為了確保此類結構性資訊是透過HTML提供，讓瀏覽器和輔助技術能夠存取並運用這些資訊。
 
@@ -301,8 +304,8 @@ AEM可讓您輕鬆使用適當的HTML元素來建構網頁。 在RTE（文本元
 
 您可以透過下列方式，確保您的網頁具有適當的結構：
 
-* **** 使用標題：只要您已啟用RTE的協助功能，AEM就會提供3層頁面標題。 您可以使用這些項目來識別內容的區段和子區段。 標題1是標題的最高級別，標題3是最低級別。 系統管理員可以配置系統以允許使用更多標題級別。
-* **強調的文字**:使用或 `<strong>` 元素 `<em>` 來指示強調。 請勿使用標題來反白標示段落中的文字。
+* **** 使用標題：只要您已啟用RTE的協助功能，AEM就會提供3層頁面標題。您可以使用這些項目來識別內容的區段和子區段。標題1是標題的最高級別，標題3是最低級別。系統管理員可以配置系統以允許使用更多標題級別。
+* **強調的文字**:使用或 `<strong>` 元素 `<em>` 來指示強調。請勿使用標題來反白標示段落中的文字。
    * 反白標示您要強調的文字；
    * 按一下「屬性」面板中顯示的 **B** 表徵圖( `<strong>`for)或「屬性」面板中顯示 **的「I** 」表徵圖(for `<em>`)(請確定已選 **** 中HTML)。
 
@@ -317,11 +320,11 @@ AEM可讓您輕鬆使用適當的HTML元素來建構網頁。 在RTE（文本元
 
 
 * **使用清單**:您可以使用HTML來指定三種不同的清單類型：
-   * 元素 `<ul>` 用於無序 *列* （項目符號）清單。 使用元素來識別個別清 `<li>` 單項目。在RTE中，使用「項目符號列 **表」表徵圖** 。
-   * 元素 `<ol>` 用於編號 *清單* 。 使用元素來識別個別清單 `<li>` 項目。 在RTE中，使用「編號列 **表」表徵圖** 。
+   * 元素 `<ul>` 用於無序 *列*  (項目符號) 清單。使用元素來識別個別清 `<li>` 單項目。在RTE中，使用「項目符號列 **表」表徵圖** 。
+   * The `<ol>` element is used for *numbered* lists. 使用元素來識別個別清單 `<li>` 項目。 在RTE中，使用「編號列 **表」表徵圖** 。
    如果要將現有內容變更為特定的清單類型，請反白標示適當的文字並選取適當的清單類型。 如先前顯示如何輸入段落文字的範例，適當的清單元素會自動新增至您的HTML。
 
-   在全螢幕模式中，會顯示個別 **的「項目符號清單** 」和「 **** 編號清單」圖示。 當未處於全螢幕模式時，單一「清單」圖示後面會提供這兩個 **選項** 。
+   在全螢幕模式中，會顯示個別 **的「項目符號清單** 」和「 **** 編號清單」圖示。當未處於全螢幕模式時，單一「清單」圖示後面會提供這兩個 **選項** 。
 * **使用表格**:必須使用HTML表格元素來識別資料表格：
    * 一個元 `<table>` 素
    * 表 `<tr>` 中每一行的元素
@@ -334,19 +337,20 @@ AEM可讓您輕鬆使用適當的HTML元素來建構網頁。 在RTE（文本元
    * 元 `scope` 素的屬性用 `<th>` 於指示儲存格代表特定列或特定欄的標題。 類似的方法是在複雜表格中使用標題和id屬性，其中資料儲存格可與一或多個標題相關聯。
    >[!NOTE]
    >
-   >預設情況下，這些元素和屬性不直接可用，但系統管理員可以在「表屬性」對話框中添加對這些值的支援（請參閱添加對其他HTML元素和屬性的支援）。 ****
-<!--
->By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+   >預設情況下，這些元素和屬性不直接可用，但系統管理員可以在「表屬性」對話框中添加對這些值的支援 (請參閱添加對其他HTML元素和屬性的支援)。****
+
+<!-- removed link syntax for ExL
+>By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
 -->
 
 要開啟「表 **」(Table** )對話框 **，可以在其中選擇「表** 屬性」(Table Properties)頁籤：
 
 * 定義適當的 **標題**。
-* 理想情況下，請移除「寬 **度」、「邊框高度」、「邊框高度」、「邊框高度**」、「單元格間距」、「單元格間距 **」、「單元格**************&#x200B;間距」的預設值。 因為這些屬性可以在全局樣式表中設定。
+* 理想情況下，請移除「寬 **度」、「邊框高度」、「邊框高度」、「邊框高度**」、「單元格間距」、「單元格間距 **」、「單元格**************&#x200B;間距」的預設值。因為這些屬性可以在全局樣式表中設定。
 
 然後，您可以使用 **儲存格屬性** ，選擇儲存格是資料或標題儲存格：
 
-* **複雜的資料表**:在某些情況下，如果有具有兩個或多個標題級別的複雜表，則基本表屬性可能不足以提供所有必要的結構資訊。 對於這些類型的複雜表格，需要使用header和 **id屬性在標題及其相關儲存格之間建** 立直 **接** 關係。 例如，在下表的標題和ID中，會對輔助技術使用者進行程式化關聯。
+* **複雜的資料表**:在某些情況下，如果有具有兩個或多個標題級別的複雜表，則基本表屬性可能不足以提供所有必要的結構資訊。對於這些類型的複雜表格，需要使用header和 **id屬性在標題及其相關儲存格之間建** 立直 **接** 關係。例如，在下表的標題和ID中，會對輔助技術使用者進行程式化關聯。
 
    >[!NOTE]
    >
@@ -400,7 +404,7 @@ AEM可讓您輕鬆使用適當的HTML元素來建構網頁。 在RTE（文本元
 
 設計人員通常會專注在視覺設計功能上，例如顏色、形狀、文字樣式，或內容在呈現資訊時的絕對或相對位置。 這些設計技巧在傳達資訊時十分強大，但盲人或視障人士可能無法存取需要視覺識別位置、顏色或形狀等屬性的資訊。
 
-同樣地，如果需要區分不同聲音（例如男性或女性口語內容）的資訊沒有反映在音頻內容的任何文本替代內容中，則對聽力有障礙的人會造成無障礙。
+同樣地，如果需要區分不同聲音（例如男性或女性口語內容）的資訊沒有反映在音頻內容的任何文本替代中，則對聽力有障礙的人會造成無障礙。
 
 >[!NOTE]
 >
@@ -538,7 +542,7 @@ AEM可讓您輕鬆使用適當的HTML元素來建構網頁。 在RTE（文本元
 
 1. 有關閃爍或閃爍內容的要求，請參閱「Do not Design Content in a Way that is Know to Cause Countude(2.3)（以已知導致癲癇的方式設計內容）」。
 1. 由於任何不符合此成功標準的內容都可能干擾使用者使用整個頁面的能力，因此網頁上的所有內容（無論是否用於符合其他成功標準）都必須符合此成功標準。 請參 [閱符合性要求5:不干涉](https://www.w3.org/TR/WCAG20/#cc5)。
-1. 由軟體定期更新或流向用戶代理的內容不需要保留或呈現在暫停開始和恢復演示之間生成或接收的資訊，因為這在技術上可能不可能，在許多情況下可能會誤導這樣做。
+1. 由軟體定期更新或流向用戶代理的內容不需要保留或呈現在暫停開始和恢復演示之間生成或接收的資訊，因為這在技術上可能不可能，在許多情況下可能會誤導。
 1. 如果在預先載入階段或類似情況中發生的動畫，對於所有使用者而言，在該階段無法進行互動，且若未指出進度，可能會混淆使用者，或導致使用者認為內容已凍結或中斷，則視為必要。
 
 #### 用途——暫停、停止、隱藏(2.2.2) {#purpose-pause-stop-hide}
@@ -663,7 +667,7 @@ John Smith’s publications
 * 從前款（非下款）項文 *本中* ，可以明確連結目的的。
 * 如果連結包含在資料表中，因此可以從關聯的標題中清楚地確定目的。
 * 其中，連結清單包含在一組標題中，標題本身提供了合適的上下文。
-* 其中，連結清單包含在巢狀連結中，而巢狀連結上方的父清單項目則提供適當的內容。
+* 其中，連結清單包含在巢狀連結中，而巢狀連結上方的上層清單項目則提供適當的內容。
 
 在某些情況下，如果頁面上有數個連結（其中每個連結以複雜但必要的詳細資訊提供連結的方向），則可以提供網頁的替代版本，以顯示完全相同的內容，但連結文字未如此詳細。
 
@@ -779,17 +783,18 @@ To add the span element, with an appropriate language, you can manually edit you
 
 此「 **標題** 」欄位必須用於欄位元素，因為它提供可用於輔助技術的標籤。 僅僅在欄位旁的文字中加上標籤是不夠的。
 
-對於某些表單元件，您也可以使用「隱藏標題」核取方塊以視覺化方式 **隱藏標籤** 。 以此方式隱藏的標籤仍適用於輔助技術，但無法顯示在螢幕上。 雖然這在某些情況下是個好方法，但通常最好盡可能加入視覺標籤，因為有些使用者可能會看到畫面的一小部分（一次看一個欄位），並需要標籤來正確識別欄位。
+對於某些表單元件，您也可以使用「隱藏標題」核取方塊以視覺化方式 **隱藏標籤** 。以此方式隱藏的標籤仍適用於輔助技術，但無法顯示在螢幕上。雖然這在某些情況下是個好方法，但通常最好盡可能加入視覺標籤，因為有些使用者可能會看到畫面的一小部分 (一次看一個欄位)，並需要標籤來正確識別欄位。
 
 #### 影像按鈕 {#image-buttons}
 
-其中使用影像按鈕(例如 **Image Button** 元件)時，編輯對話方塊的「標題」和「文字」索引標籤中的「標題 ******** 」欄位實際上會提供影像的替代文字，而非標籤。 因此，在以下範例中，包含文字的影像 `Submit` 的alt文字為 `Submit`，使用編輯對話方塊中的 **Title** 欄位新增。
+其中使用影像按鈕(例如 **Image Button** 元件)時，編輯對話方塊的「標題」和「文字」索引標籤中的「標題 ******** 」欄位實際上會提供影像的替代文字，而非標籤。因此，在以下範例中，包含文字的影像 `Submit` 的alt文字為 `Submit`，使用編輯對話方塊中的 **Title** 欄位新增。
 
 #### 表單欄位群組 {#groups-of-form-fields}
 
-如果有一組相關控制項，例如 **Radio Group**，則可能需要該群組的標題以及個別控制項。 在AEM中新增一組選項按鈕時，「標題 **」欄位會提供此群組標題，而個別標題會指定為選項按鈕(** Items ****)。
+如果有一組相關控制項，例如 **Radio Group**，則可能需要該群組的標題以及個別控制項。在AEM中新增一組選項按鈕時，「標題 **」欄位會提供此群組標題，而個別標題會指定為選項按鈕(** Items ****)。
 
-不過，群組標題和選項按鈕本身之間沒有程式化關聯。 範本編輯人員必須將標題包住必要 `fieldset` 和 `legend` 標籤，才能建立此關聯，而這只能透過編輯頁面原始碼來完成。 或者，系統管理員可以添加對這些元素的支援，使這些元素顯示在「 **Field Properties** 」（欄位屬性）對話框中（請參閱添加對其他HTML元素和屬性的支援）。
+不過，群組標題和選項按鈕本身之間沒有程式化關聯。範本編輯人員必須將標題包住必要 `fieldset` 和 `legend` 標籤，才能建立此關聯，而這只能透過編輯頁面原始碼來完成。或者，系統管理員可以添加對這些元素的支援，使這些元素顯示在「 **Field Properties** 」 (欄位屬性) 對話框中 (請參閱添加對其他HTML元素和屬性的支援)。
+
 <!--
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
@@ -798,14 +803,14 @@ However, there is no programmatic association between the group title and the ra
 
 如果要以特定格式輸入資料，請在標籤文本中明確說明這一點。 例如，如果必須以格式輸入日期，請特 `DD-MM-YYYY` 別指出這是標籤的一部分。 這表示當螢幕閱讀程式使用者遇到欄位時，標籤會自動宣佈，以及格式的其他資訊。
 
-如果表單欄位的輸入是必填的，請使用標籤中的必要字詞來清楚說明。 AEM在需要欄位時新增星號，但最好將字詞加入標 `required`簽本身(在編輯對話方塊的「 **Title** 」欄位中)。
+如果表單欄位的輸入是必填的，請使用標籤中的必要字詞來清楚說明。AEM在需要欄位時新增星號，但最好將字詞加入標 `required`簽本身(在編輯對話方塊的「 **Title** 」欄位中)。
 
 標籤的定位也很重要，因為它可協助標籤找到適當的欄位。 當使用者面對複雜的表單時，這尤其重要。 遵守以下公約：
 
 * 核取方塊或選項按鈕：標籤會立即置於欄位右側。
 * 所有其他表單元件（例如文字方塊、組合方塊）:標籤會立即置於欄位的上方或左側。
 
-在功能非常有限的簡單表單中，適當標 `Submit` 記按鈕可當成相鄰欄位的標籤(例如 `Search`)。 當尋找標籤文字的空間時，這項功能會很有用。
+在功能非常有限的簡單表單中，適當標 `Submit` 記按鈕可當成相鄰欄位的標籤(例如 `Search`)。 在尋找標籤文字的空間可能比較困難的情況下，此功能很實用。
 
 #### 詳細資訊——標籤或指示(3.3.2) {#more-information-labels-or-instructions}
 
