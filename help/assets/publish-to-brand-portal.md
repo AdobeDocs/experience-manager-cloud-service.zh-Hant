@@ -3,7 +3,7 @@ title: 將資產、檔案夾和系列發佈至品牌入口網站
 description: 將資產、檔案夾和系列發佈至品牌入口網站。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4194f089f87deeb62095703614947a295235edbf
+source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
 
 ---
 
@@ -21,7 +21,9 @@ source-git-commit: 4194f089f87deeb62095703614947a295235edbf
 * [將系列發佈至品牌入口網站](#publish-collections-to-brand-portal)
 
 >[!NOTE]
->>Adobe建議交錯排版，最好是在非尖峰時段進行，如此AEM作者就不會佔用過多的資源。>
+>
+>Adobe建議交錯排版，最好是在非尖峰時段進行，如此AEM作者就不會佔用過多的資源。
+
 
 ## Publish assets to Brand Portal {#publish-assets-to-bp}
 
