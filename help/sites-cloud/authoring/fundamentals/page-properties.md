@@ -2,7 +2,7 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -104,6 +104,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    >例如：如果為節點節點定 `latin-lang` 義別名， `/content/we-retail/spanish` 則可通過 `/content/we-retail/latin-language`
    >
    >如需詳細資訊，請參閱「SEO與URL管理最佳實務」下的「本地化頁面名稱」。
+
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -170,13 +171,17 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 * **雲端服務**
 
-   * 定義雲端服務的屬性。 <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
+   * 定義雲端服務的屬性。
+   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
+  -->
 
 ### 個性化 {#personalization}
 
 * **ContextHub 組態**
 
-   * 選擇ContextHub設定和區段路徑。 <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+   * 選擇ContextHub設定和區段路徑。
+   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
+  -->
 
 * **定位組態**
 
@@ -188,16 +193,24 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 * **權限**
 
-   * 新增權限 <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-   * 編輯已關閉的使用者群組 <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-   * 檢視有效權限 <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * 新增權限
+   * 編輯已關閉的使用者群組
+   * 檢視有效權限
+   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
+
+   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
+
+   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-   * 在多網站管理中定義Blueprint頁面的屬性。 <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+   * 在多網站管理中定義Blueprint頁面的屬性。
+   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+
    * 控制修改將傳播至即時副本的情況。
+
 
 ### 即時副本 {#live-copy}
 
@@ -252,6 +265,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >Assets也提供大量屬性編輯功能。 很相似，但有幾點不同。 如需詳細資訊，請參閱編輯多個資產的屬性。
 >
 >此外還有「批量編輯器」，可讓您使用GQL（Google查詢語言）從多個頁面搜尋內容，然後在將變更儲存至原始頁面之前，直接在批量編輯器中編輯內容。
+
 <!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
@@ -299,6 +313,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >[!NOTE]
 >
 >頁面元件可設定為指定可進行大量編輯的欄位。 請參閱設定您的頁面以大量編輯頁面屬性。
+
 <!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
 -->
