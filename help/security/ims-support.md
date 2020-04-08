@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Manager 雲端服務的 IMS 支援
-description: 'Adobe Experience Manager 雲端服務的 IMS 支援 '
-translation-type: ht
-source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
+description: Adobe Experience Manager 雲端服務的 IMS 支援
+translation-type: tm+mt
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -106,7 +106,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 ## Adobe Experience 雲端服務設定 {#aem-configuration}
 
-> [!NOTE]
+>[!NOTE]
 >
 >佈建 AEM 環境和例項時，系統會自動設定所需的 AEM IMS 設定。不過，管理員可透過[此處](/help/implementing/deploying/overview.md)所述方法，依需求適度修改。
 
