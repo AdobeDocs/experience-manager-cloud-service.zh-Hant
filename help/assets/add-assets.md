@@ -2,7 +2,7 @@
 title: 將您的數位資產新增至Adobe Experience Manager
 description: 將您的數位資產新增至Adobe Experience Manager做為雲端服務
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Experience Manager運用豐富的中繼資料、智慧標籤、轉譯和�
 
 您也可以選擇對已上傳的資產進行其他處理。 可在上傳資產的資料夾上設定多個資產處理設定檔，以新增特定中繼資料、轉譯或影像處理服務。 如需詳 [細資訊](#additional-processing) ，請參閱以下的其他處理。
 
-> [!NOTE]
+>[!NOTE]
 >
 > Experience Manager作為雲端服務，運用了新的上傳資產方式——直接二進位上傳。 預設會支援立即可用的產品功能和用戶端，例如AEM使用者介面、Adobe Asset Link、AEM案頭應用程式，因此對一般使用者是透明的。
 >
@@ -75,7 +75,7 @@ Adobe Experience Manager運用豐富的中繼資料、智慧標籤、轉譯和�
 
 此外，「資產」使用者介面會顯示您上傳的最近資產或您先建立的檔案夾。
 
-> [!NOTE]
+>[!NOTE]
 >
 > 若要將巢狀資料夾階層上傳至AEM，請參閱 [大量上傳資產](#bulk-upload)。
 
@@ -130,7 +130,7 @@ AEM Assets會防止您上傳檔案名稱中包含禁止字元的資產。 如果
 * 使用自訂的上傳指令碼或工具，以利 [用資產上傳API](developer-reference-material-apis.md#asset-upload-technical)。 此類自訂工具可視需要新增對資產的額外處理（例如，翻譯中繼資料或重新命名檔案）。
 * 使用 [Experience Manager案頭應用程式](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，上傳巢狀資料夾階層。
 
-> [!NOTE]
+>[!NOTE]
 >
 > 在設定和部署至Experience Manager時，若要從其他系統進行內容移轉，就必須仔細規劃、考慮和選擇工具，才能進行大量上傳。 請參閱部 [署指南](/help/implementing/deploying/overview.md) ，以取得內容移轉方法的指引。
 
@@ -157,7 +157,7 @@ AEM Assets會防止您上傳檔案名稱中包含禁止字元的資產。 如果
 * [影像設定檔](dynamic-media/image-profiles.md) ，可讓您套用特定的裁切(**[!UICONTROL 智慧型裁切和像素裁切]** )和銳利化設定至上傳的資產
 * [視訊設定檔](dynamic-media/video-profiles.md) ，可讓您套用特定的視訊編碼設定檔（解析度、格式、參數）
 
-> [!NOTE]
+>[!NOTE]
 >
 > 動態媒體裁切和資產的其他操作不具破壞性，即不會變更上傳的原始內容，而是提供在傳送資產時要進行裁切或媒體轉換的參數
 
