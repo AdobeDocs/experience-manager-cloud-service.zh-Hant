@@ -2,7 +2,7 @@
 title: Adobe Experience Manager雲端服務版本注意事項2020.4.0
 description: Experience Manager 2020.4.0發行說明
 translation-type: tm+mt
-source-git-commit: b05fe7e9150649b49fc5dae2e33955afc6a1acab
+source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
 
 ---
 
