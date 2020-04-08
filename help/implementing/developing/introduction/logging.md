@@ -2,7 +2,7 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: 73813dd87e3eebfe26673640125ea64916e14789
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -122,13 +122,13 @@ AEM as a Cloud Service使用下列功能將記錄訊息寫入檔案：
 
 若要變更雲端環境的記錄層級，Sling Logging OSGI組態應加以修改，然後進行完整重新部署。 由於這並非瞬時，請務必小心在接收大量流量的生產環境中啟用詳細記錄。 在未來，可能會有更快速變更記錄層級的機制。
 
-> [!NOTE]
-> 
+>[!NOTE]
+>
 > 若要執行下列的設定變更，您必須在本機開發環境上建立這些變更，然後將它們推送至AEM做為雲端服務例項。 如需如何執行此動作的詳細資訊，請參 [閱「部署至AEM as a Cloud Service](/help/implementing/deploying/overview.md)」。
 
 ### 啟用DEBUG日誌級別 {#activating-the-debug-log-level}
 
-> [!WARNING]
+>[!WARNING]
 >
 > 全局激活DEBUG日誌級別將產生大量難以篩選的資訊。 建議您僅針對需要除錯的服務啟用它。 如需詳細資訊，請參 [閱「個別服務的記錄員和撰寫者」](logging.md#loggers-and-writers-for-individual-services)。
 
