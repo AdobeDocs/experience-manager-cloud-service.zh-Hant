@@ -2,7 +2,7 @@
 title: 搜尋
 description: 透過完整的搜尋功能，更快找到您的內容
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
@@ -64,6 +64,7 @@ AEM的作者環境提供多種搜尋內容的機制，視資源類型而定。
    >
    >* 視您選擇的資源類型而定；例如，資產和社群標準是可理解的專業標準。
    >* 您可自訂您的「搜尋表單」例項（適合AEM中的位置）。
+
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
