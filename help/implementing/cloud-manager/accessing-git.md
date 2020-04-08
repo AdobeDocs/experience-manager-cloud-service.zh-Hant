@@ -1,15 +1,15 @@
 ---
-title: 訪問Git
-seo-title: 訪問Git
+title: 存取 Git
+seo-title: 存取 Git
 description: 本頁介紹如何訪問和管理Git儲存庫。
 seo-description: 請依照本頁瞭解如何存取和管理您的Git儲存庫。
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
 
-# 訪問Git {#accessing-git}
+# 存取 Git {#accessing-git}
 
 您可以使用Cloud Manager UI中的自助服務Git帳戶管理來存取和管理您的Git儲存庫。
 
@@ -32,13 +32,14 @@ source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 
 ![](assets/manage-git3.png)
 
-在Cloud manager中管理Git的重要考量事項包括：
+在Cloud Manager中管理Git的重要考量事項包括：
 
 * **URL**:儲存庫URL
 * **使用者名稱**:用戶名
 * **密碼**:按一下「生成密碼」 **按鈕時顯示** 的值。
 
 
-> [!NOTE]
-> 使用者可以取出其程式碼的副本，並在本機程式碼儲存庫中進行變更。 當使用者準備就緒後，就可以將其程式碼變更提交回Cloud manager的遠端程式碼儲存庫。
+>[!NOTE]
+>
+>使用者可以取出其程式碼的副本，並在本機程式碼儲存庫中進行變更。 當使用者準備就緒後，就可以將其程式碼變更提交回Cloud Manager的遠端程式碼儲存庫。
 
