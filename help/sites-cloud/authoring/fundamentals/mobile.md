@@ -2,14 +2,14 @@
 title: 製作行動裝置的頁面
 description: 在製作行動裝置專用的內容時，您可以切換數個模擬器，以檢視使用者所看到的內容
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
 
 # 製作行動裝置的頁面 {#authoring-a-page-for-mobile-devices}
 
-Adobe Experience manager頁面是以互動式版面為基礎。 自適應版面會自動調整您的內容，以符合目標裝置，毋需針對特定裝置製作內容。
+Adobe Experience Manager頁面是以互動式版面為基礎。 自適應版面會自動調整您的內容，以符合目標裝置，毋需針對特定裝置製作內容。
 
 製作行動頁面時，頁面的顯示方式會模擬行動裝置。 在編寫頁面時，您可以在多個模擬器之間切換，以查看使用者在存取頁面時看到的內容。
 
@@ -20,6 +20,7 @@ Adobe Experience manager頁面是以互動式版面為基礎。 自適應版面�
 >若要根據現有的標準網站建立行動網站，請建立標準網站的即時副本。 請參閱建立適用於不同渠道的即時副本。
 >
 >AEM開發人員可以建立新的裝置群組。 請參閱建立裝置群組篩選。
+
 <!--
 >To create a mobile site based on an existing standard site, create a live copy of the standard site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
 >
