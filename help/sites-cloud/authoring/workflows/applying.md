@@ -2,7 +2,7 @@
 title: 將工作流程套用至頁面
 description: 撰寫時，您可以叫用工作流程，在頁面上採取行動；您也可以套用多個工作流程。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 應用工作流時，您指定以下資訊：
 
 * 要套用的工作流程。
-   * 您可以套用您有權存取的任何工作流程（由AEM管理員指派）。
+   * 您可以套用您有權存取的任何工作流程 (由AEM管理員指派)。
 * （可選）幫助標識用戶收件箱中工作流實例的標題。
 * 工作流負載；這可以是一或多個頁面。
 
@@ -28,9 +28,10 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >另請參閱:
 >
 >* 如何將工作流程套用至DAM資產。
->* [使用專案工作流程](/help/sites-cloud/authoring/projects/workflows.md)。
+>* [使用專案工作流程](/help/sites-cloud/authoring/projects/workflows.md).
 
-<!--
+
+<!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
 >* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 -->
@@ -38,7 +39,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >[!NOTE]
 >
 >AEM管理員可使用數種其他方法來啟動工作流程。
-<!--
+
+<!-- 
 >AEM administrators can [start workflows using several other methods](/help/sites-administering/workflows-starting.md).
 -->
 
@@ -53,7 +55,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * [在「建立工作流嚮導」中指定「工作流詳細資訊」](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
-### 從「站點」工具欄啟動工作流 {#starting-a-workflow-from-the-sites-toolbar}
+### 從Sites工具列啟動工作流程 {#starting-a-workflow-from-the-sites-toolbar}
 
 您可以從Sites主控台的工具列啟動工 **作流程** :
 
@@ -102,6 +104,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    >[!NOTE]
    >
    >當為「 **** 多資源支援」配置了工作流且已選擇多個資源時，「保留工作流包」選項可用。
+
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
    -->
