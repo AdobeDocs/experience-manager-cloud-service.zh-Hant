@@ -2,7 +2,7 @@
 title: 2020.4.0 版發行說明
 description: 2020.4.0 版發行說明
 translation-type: tm+mt
-source-git-commit: 77163877bea36f854ac8ea6fbc78cbcf4d58ccc0
+source-git-commit: c6c0e93d881762a2b501abb3d8c8356046a5f082
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 77163877bea36f854ac8ea6fbc78cbcf4d58ccc0
 # AEM 雲端服務 2020.4.0 版發行說明 {#release-notes}
 
 以下章節概述 Experience Manager 雲端服務 2020.4.0 版的一般發行說明。
+
+## Release Date {#release-date}
+
+Experience Manager作為Cloud Service 2020.4.0的發行日期為2020年4月9日。
 
 ## 資產 {#assets}
 
