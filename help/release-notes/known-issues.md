@@ -1,8 +1,8 @@
 ---
 title: 已知問題
 description: Adobe Experience Manager 雲端服務已知問題的發行說明
-translation-type: ht
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+translation-type: tm+mt
+source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 ---
 
@@ -25,17 +25,12 @@ source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 部分已知問題包括：
 
-* **中繼資料結構**：資產評等工具集可能造成 JSP 編譯錯誤。因應辦法是從中繼資料結構中移除資產評等元件。<!-- CQ-4282865 -->
-
-Assets 功能的部分限制包括：
-
-* 有了 AEM Assets 雲端服務，只要 AEM 6.5 Sites 部署於 AMS，連線資產的功能即可運作。
+* **中繼資料結構**:資產分級介面工具集，用於造成JSP編譯錯誤。 它已從中繼資料結構中移除。 <!-- CQ-4282865, CQ-4284633 -->
 
 ### 即將推出的 Assets 功能 {#upcoming-assets-capabilities}
 
 Adobe Experience Manager Assets 的少數功能需仰賴基礎功能，這些基礎功能尚無法在 Experience Manager 雲端服務部署架構中使用，預計之後會啟用：
 
-* 目前未啟用發佈至 Brand Portal 的功能。您可以為資產散佈使用案例擴充及部署 [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) 實作。
 * 目前尚不提供運用 Adobe I/O AI 服務的增強智慧型標記功能。
 * 目前仍仰賴 Commerce Integration Framework API 而未啟用的功能：
    * 拍攝工作流程模型。
