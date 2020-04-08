@@ -2,7 +2,7 @@
 title: 發佈頁面
 description: 如何使用AEM發佈和取消發佈頁面
 translation-type: tm+mt
-source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
@@ -43,6 +43,7 @@ source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
 >* 系統會觸發工作流程，通知您發佈請求的適當人員。
 >* 您的開發團隊可能已自訂此工作流程。
 >* 系統會短暫顯示訊息，通知您工作流程已觸發。
+
 
 <!--
 >* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
@@ -94,7 +95,7 @@ source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
 
    ![選擇發佈頁面](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. 在「快速發佈」對話方塊中，按一下「發佈」以確認出版物，或按一 **下** 「取消」以 **取消出版物**。 請記住，任何未發佈的參照也會自動發佈。
+1. 在「快速發佈」對話方塊中，按一下「發佈」以確認出版物，或按一 **下** 「取消」以 **取消出版物**。 請記住，任何未發佈的參考也會自動發佈。
 
    ![快速發佈確認](/help/sites-cloud/authoring/assets/publishing-quick-publish.png)
 
@@ -114,7 +115,7 @@ source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
 
    ![選擇發佈頁面](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. 「管 **理出版物** 」嚮導將啟動。 第一個步驟 **Options**&#x200B;可讓您：
+1. 「管 **理出版物** 」嚮導將啟動。第一個步驟 **Options**&#x200B;可讓您：
 
    * 選擇發佈或取消發佈所選頁面。
    * 選擇立即或稍後採取該動作。
@@ -134,7 +135,7 @@ source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
 
    按一下「新增內容」按鈕會啟動路 [徑瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) ，以允許選取內容。
 
-   選擇所需頁面，然後按一下「選 **擇** 」將內容添加到嚮導，或按一下「取消」**取消選擇並返回嚮導。
+   選擇所需頁面，然後按一下「 **Select** （選擇）」將內容添加到嚮導中，或按一下「**Cancel **」取消選擇並返回嚮導。
 
    回到精靈中，您可以選取清單中的項目，以設定其他選項，例如：
 
@@ -150,7 +151,7 @@ source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
    * 僅包含已發佈的頁面.
    按一 **下「新增** 」，根據選取選項，將子頁面新增至要發佈或未發佈的頁面清單。 按一下 **取消** ，取消選擇並返回嚮導。
 
-   ![管理出版物，包括子項](/help/sites-cloud/authoring/assets/publishing-include-children.png)
+   ![管理出版物，包括子系](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
    返回到嚮導時，您會根據您在「包含子項」對話框中選擇的選項看到添加的頁。
 
@@ -182,7 +183,10 @@ source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
    資源會依觸發的工作流程和每個指定選項分組，以：
 
    * 定義工作流的標題。
-   * 保留工作流包，前提是工作流支援多資源。 <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).-->
+   * 保留工作流包，前提是工作流支援多資源。
+   <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+    -->
+
    * 如果選擇了保留工作流包的選項，則定義工作流包的標題。
    按一 **下「發佈** 」或「 **稍後發佈** 」以完成出版。
 
@@ -204,7 +208,7 @@ source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
 就像您使 [用「管理出版物」選項發佈](#manage-publication)，您也可以使用它取消發佈。
 
 1. 在站點控制台中選擇頁或頁，然後按一下「管理 **出版物** 」按鈕。
-1. 「管 **理出版物** 」嚮導將啟動。 在第一個步驟中， **選項**，選擇「取消發佈」(Unpublish **)，而非「發佈」(Publish)的預設** 選項 ****。
+1. 「管 **理出版物** 」嚮導將啟動。在第一個步驟中， **選項**，選擇「取消發佈」(Unpublish **)，而非「發佈」(Publish)的預設** 選項 ****。
 
    ![取消發佈](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
@@ -212,7 +216,7 @@ source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
 
    如果您想稍後取消發佈／取消發佈，請前往「工作流程控制台」以終止對應的工作流程。 <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
 
-1. 要完成取消發佈，請繼續執行嚮導，就像發佈頁 [面一樣](#manage-publication)。
+1. 要完成取消發佈，請繼續執行嚮導，如同發 [布頁面一樣](#manage-publication)。
 
 ## 發佈和取消發佈樹狀結構 {#publishing-and-unpublishing-a-tree}
 
@@ -221,7 +225,7 @@ source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
 您可以使用站 [點控制台上的](#manage-publication) 「管理出版物」選項來執行此操作。
 
 1. 在站點控制台中，選擇要發佈或取消發佈的樹的根頁面，然後選擇「管 **理出版物」**。
-1. 「管 **理出版物** 」嚮導將啟動。 選擇發佈或取消發佈，並選擇「下一步」以繼 **續** 。
+1. 「管 **理出版物** 」嚮導將啟動。選擇發佈或取消發佈，並選擇「下一步」以繼 **續** 。
 1. 在「范 **圍** 」步驟中，選擇根頁面，然後選擇「包 **含子項」**。
 
    ![管理出版物選擇頁面](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
