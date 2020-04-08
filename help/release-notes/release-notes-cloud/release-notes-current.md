@@ -1,38 +1,45 @@
 ---
-title: 2020.4.0 版發行說明
-description: 2020.4.0 版發行說明
+title: Adobe Experience Manager雲端服務版本注意事項2020.4.0
+description: Experience Manager 2020.4.0發行說明
 translation-type: tm+mt
-source-git-commit: c6c0e93d881762a2b501abb3d8c8356046a5f082
+source-git-commit: b05fe7e9150649b49fc5dae2e33955afc6a1acab
 
 ---
 
 
-# AEM 雲端服務 2020.4.0 版發行說明 {#release-notes}
+# Release Notes for Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
 
-以下章節概述 Experience Manager 雲端服務 2020.4.0 版的一般發行說明。
+The following section outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
 ## Release Date {#release-date}
 
-Experience Manager作為Cloud Service 2020.4.0的發行日期為2020年4月9日。
+雲端服務2020.4.0 [!DNL Experience Manager] 的發行日期為2020年4月9日。
 
-## 資產 {#assets}
+## What&#39;s New in Assets {#assets}
 
-請依照本節內容，瞭解AEM中Experience Manager Assets和Dynamic Media的新增功能和更新，即雲端服務版本2020.4.0。
+瞭解目前版本的新功能、增強功能 [!DNL Experience Manager Assets] 和 [!DNL Dynamic Media] 錯誤修正。
 
-### 新功能 {#assets-what-is-new}
+* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 支援Experience Manager Assets的資產分發使用案例。 [!DNL Brand Portal] 藉由安全方式向外部機構、合作夥伴、內部團隊和經銷商散佈經過核准的品牌和產品資產以供下載，協助組織滿足其行銷需求。
+   * [!DNL Brand Portal] 配置通過控制台 [!DNL Adobe I/O] 完成。
+   * Experience Manager作為雲 [!DNL Brand Portal] 端服務尚不支 [!DNLE] 援中的資產採購。
 
-* [品牌入口網站](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) (Brand Portal)是以雲端服務資產形式提供給AEM，可支援資產散發使用案例。 Brand Portal 藉由安全方式向外部機構、合作夥伴、內部團隊和經銷商散佈經過核准的品牌和產品資產以供下載，協助組織滿足其行銷需求。
-   * 品牌入口網站的設定是透過Adobe I/O主控台完成
-   * AEM雲端服務尚未支援品牌入口網站中的資產採購
-* AEM雲端服務 [支援新版Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) 2.0。 Adobe Asset Link透過應用程式內資產連結面板，將AEM Assets與Creative Cloud案頭應用程式Photoshop、Illustrator和InDesign連接，簡化了創意人員與行銷人員在內容建立程式中的協作。
-   * AEM為雲端服務已預先設定為Adobe Asset Link，可簡化 [設定](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)。
-   * Asset Link現在支援 [AEM環境切換器](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)，讓創意使用者更輕鬆地連線至不同的AEM環境（例如，當機構設計人員與多個客戶搭配使用AEM資產時）
-* 在資料夾屬性UI中 [可針對特定資料夾階層](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) ，設定後處理工作流程的自動啟動。
-   * 資料夾屬性UI已經簡化，新的「資產處理」標籤包含中繼資料設定檔、處理設定檔和新的「自動啟動工作流程」設定
-* 資產重新處理對話框允許選擇特定的處理配置檔案並決定在子資料夾中重新處理
-* 動態媒體：新增「選擇性發佈」設定，這表示資產會自動發佈，僅提供安全預覽，而且可明確發佈至AEM，而不需發佈至DMS7，以便在公共網域中傳送。
+* [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) v2.0可搭配雲 [!DNL Experience Manager] 端服務運作。 [!DNL Adobe Asset Link] 透過連接案頭應用程式和應用程式內面板，簡化創意人員與行銷人員 [!DNL Experience Manager Assets] 在內容建 [!DNL Creative Cloud] 立程式 [!DNL Adobe Photoshop]中的協作 [!DNL Adobe Illustrator]作業，並 [!DNL Adobe InDesign] 簡化應用程式內 [!DNL Asset Link] 面板。
+   * [!DNL Experience Manager] 已預先設定， [!DNL Adobe Asset Link]可讓您輕鬆 [設定](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) ，並更快速地向創意專業人員推展。
+   * [!DNL Asset Link] 現在支援 [Experience Manager環境切換器](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) ，讓創意使用者輕鬆連接至不同的 [!DNL Experience Manager] 環境。 此功能有用的範例是，對於使用不同部署與多個客戶合作的機構設計 [!DNL Experience Manager Assets] 人員。
 
-### 錯誤修正 {#assets-bug-fixes}
+* 使用者可以 [設定後處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) ，以在特定資料夾階層的資料夾  屬性使用者介面中自動啟動。
+   * 資料夾 [!UICONTROL 「屬性] 」使用者介面已簡化，新的「資產處理」標籤包含中繼資料描述檔、處理描述檔，以及新的自動啟動工作流程設定。
+   * 資產重新處理對話框允許選擇特定的處理配置檔案並決定在子資料夾中重新處理。
+   * [!DNL Dynamic Media]:已新增選擇性發佈設定，如此資產就會自動發佈，以便僅安全預覽。 此外，資產可明確發佈至Experience Manager，而不發佈至DMS7，以便在公共網域中傳送。
 
-* 資產處理中的修正
-* 動態媒體設定中的修正，以及將資產發佈至動態媒體傳送服務
+* 已解決下列問題：
+   * 資產處理問題的修正。
+   * 設定和 [!DNL Dynamic Media] 發佈資產至傳送服務 [!DNL Dynamic Media] 的修正。
+
+>[!MORELIKETHIS]
+>
+>* [關於Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [設定品牌入口網站](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [設定Experience Manager以搭配資產連結運作](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [在Experience Manager中使用Assets microservices建立工作流程](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+
