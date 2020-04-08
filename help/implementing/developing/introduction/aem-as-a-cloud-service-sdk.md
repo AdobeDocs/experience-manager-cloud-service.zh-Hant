@@ -1,8 +1,8 @@
 ---
 title: AEM 雲端服務 SDK
-description: '待完成 '
+description: 待完成
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -32,12 +32,12 @@ AEM as a Cloud Service SDK由下列物件組成：
 <dependency>
   <groupId>com.adobe.aem</groupId>
   <artifactId>aem-sdk-api</artifactId>
-  <version>2019.11.3006.20191108T223635Z-191201</version> 
+  <version>2019.11.3006.20191108T223635Z-191201</version>
   <scope>provided</scope>
 </dependency>
 ```
 
-> [!NOTE] SDK的版本項目應符合AEM的雲端服務版本。 您可以登入AEM，然後移至畫面右上角的問號並選取「關於 **[!UICONTROL Adobe Experience Manager」，以瞭解您使用的版本]**
+>[!NOTE] SDK的版本項目應符合AEM的雲端服務版本。 您可以登入AEM，然後移至畫面右上角的問號並選取「關於 **[!UICONTROL Adobe Experience Manager」，以瞭解您使用的版本]**
 
 * 裝載包的主儲存庫的遠程協調應包括在pom檔案中。
 
