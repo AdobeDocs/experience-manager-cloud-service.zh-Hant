@@ -3,7 +3,7 @@ title: 將資產、檔案夾和系列發佈至品牌入口網站
 description: 將資產、檔案夾和系列發佈至品牌入口網站。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -221,8 +221,13 @@ source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
 1. 在對話方塊中，按一下「 **[!UICONTROL 解除發佈]**」。
 1. 關閉確認消息。 系列會從品牌入口網站介面中移除。
 
-如需資產 [、檔案夾和系列散發給使用者的詳細資訊](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) ，請參閱品牌入口網站檔案。
+除了上述外，您也可以將中繼資料結構描述、影像預設集、搜尋刻面和標籤從AEM Assets發佈至品牌入口網站。
 
+* [將預設集、結構描述和刻面發佈至品牌入口網站](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [將標記發佈至 Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+如需詳細 [資訊，請參閱品牌入口網站](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) (Brand Portal)檔案。
 
 
 <!--
