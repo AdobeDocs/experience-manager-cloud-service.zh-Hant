@@ -3,7 +3,7 @@ title: 將資產、檔案夾和系列發佈至品牌入口網站
 description: 將資產、檔案夾和系列發佈至品牌入口網站。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -215,7 +215,7 @@ source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 1. 從AEM Assets例項的 **Collections** Console中，選取您要解除發佈的系列。
 
-   ![select_collection-1](assets/select_collection-1.png)
+   ![select_collection](assets/select_collection-1.png)
 
 1. 在工具列中，按一下「從 **[!UICONTROL 品牌入口網站移除]** 」圖示。
 1. 在對話方塊中，按一下「 **[!UICONTROL 解除發佈]**」。
