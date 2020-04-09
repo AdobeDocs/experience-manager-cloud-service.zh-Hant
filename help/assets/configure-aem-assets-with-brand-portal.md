@@ -3,7 +3,7 @@ title: 使用品牌入口網站設定AEM Assets雲端服務
 description: 使用品牌入口網站設定AEM Assets雲端服務。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -102,7 +102,7 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
    ![建立整合](assets/create-new-integration2.png)
 
-1. 指定整合的名稱和說明。 按一 **[!UICONTROL 下「從電腦選取檔案]** 」，並上傳 `AEM-Adobe-IMS.crt` 在「取得公用憑證」區 [段中下載的檔案](#public-certificate) 。
+1. 指定整合的名稱和說明。 按一 **[!UICONTROL 下「從電腦選取檔案」]** ，並上傳 `AEM-Adobe-IMS.crt` 在「取得公用憑證」區 [段中下載的檔案](#public-certificate) 。
 
 1. 選擇組織的配置檔案。
 
@@ -204,8 +204,6 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
    分發代理包含兩個隊列：
    * 將資產分發至品牌入口網站的處理佇列。
    * 發佈失敗之資產的錯誤佇列。
-   您可以測試個別佇列或整體設定。
-
    ![](assets/test-bpconfig3.png)
 
 1. 若要驗證AEM Assets和品牌入口網站之間的連線，請按一下「 **[!UICONTROL 測試連線」]**。
@@ -218,11 +216,20 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
    >
    >請避免停用散發代理，因為這可能導致資產的散發（在佇列中執行）失敗。
 
-您的AEM Assets雲端例項已成功設定品牌入口網站。 您現在可以：
+
+在您的AEM Assets雲端例項成功設定品牌入口網站後，您可以：
 
 * [將資產從AEM Assets發佈至品牌入口網站](publish-to-brand-portal.md)
 * [將資料夾從AEM Assets發佈至品牌入口網站](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [將系列從AEM Assets發佈至品牌入口網站](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+
+除了上述外，您也可以將中繼資料結構描述、影像預設集、搜尋刻面和標籤從AEM Assets發佈至品牌入口網站。
+
+* [將預設集、結構描述和刻面發佈至品牌入口網站](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [將標記發佈至 Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+如需詳細 [資訊，請參閱品牌入口網站](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) (Brand Portal)檔案。
 
 
 ## 散發記錄檔 {#distribution-logs}
@@ -233,7 +240,7 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
 1. 請依照測試連線中顯示的步驟(步驟1 **[!UICONTROL 至]** 4)，並導覽至散發代理頁面。
 
-1. 選擇分發隊列 **[!UICONTROL queue-bpdistributionagent0]** ，然後按一下 **[!UICONTROL Logs]** 以查看分發日誌。
+1. 按一 **[!UICONTROL 下「記錄]** 」以檢視散發記錄檔。 您可在此處看到處理和錯誤記錄。
 
    ![](assets/test-bpconfig5.png)
 
@@ -254,12 +261,8 @@ Distribution Agent會生成以下日誌：
 
 在上述範例中，會觸發額外的請求和回應。 系統無法在品牌入口網站中找到父資料夾（亦即新增路徑），因為資產是首次發佈，因此會觸發其他要求，在發佈資產的品牌入口網站中建立同名的父資料夾。
 
-如果存在相同名稱的父資料夾(如新增路徑)時，不會觸發其他請求。
-
 >[!NOTE]
->
->要查看錯誤日誌，請選擇分發隊列 **[!UICONTROL error-queue-bpdistributionagent0]** ，然後按一下 **[!UICONTROL Logs]**。
-
+>>當父資料夾不存在於品牌入口網站（在上例中），或父資料夾已在AEM Assets中修改時，會產生其他請求。>
 
 ## 其他資訊 {#additional-information}
 
@@ -274,6 +277,7 @@ Distribution Agent會生成以下日誌：
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
+
 
 
 <!--
