@@ -2,7 +2,7 @@
 title: Adobe Experience Manager雲端服務版本注意事項2020.4.0
 description: Experience Manager 2020.4.0發行說明
 translation-type: tm+mt
-source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
+source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
 
 ---
 
@@ -43,3 +43,25 @@ The following section outlines the general release notes for [!DNL Experience Ma
 >* [設定Experience Manager以搭配資產連結運作](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [在Experience Manager中使用Assets microservices建立工作流程](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
+
+## Cloud Manager更新 {#cloud-manager}
+
+## Cloud Manager的新增功能 {#whats-new-cloud-manager}
+
+* Cloud Manager UI的「環境」頁面現在提供發佈者URL。
+* 對導覽的變更，可讓使用者從Cloud Manager概述頁面編輯、切換或新增程式。
+* 變更可讓使用者從Cloud Manager登陸頁面上的程式卡編輯程式。
+* 新管線狀 **態「管線運行** 」(Pipeline Running)對其關聯的環境顯示。
+* 管道執行頁面的增強功能。 這包括顯示管線名稱（僅限非生產管線）和類型，以及指示管線狀態為「進行中／已取消／失敗」的徽章。
+* 工具提示，可改善使用者體驗，並瞭解為何停用「新增程式／環境」按鈕。
+* 現在可以透過UI和API刪除失敗的環境。
+* 用來產生Git密碼的程式對底層服務層中的問題具有更強的適應能力。
+
+## 錯誤修正 {#bug-fixes-cloud-manager}
+
+* 管線執行詳細資訊頁面上到舞台環境的連結不能始終導航到正確的位置。
+* 環境建立進程中的各個步驟將比需要的時間提前超時，導致進程失敗。
+* 已更新建置容器中使用的Maven組態，以避免在下載對象中繼資料時造成死鎖。
+* 在某些情況下，「建立影像」步驟將無法成功下載客戶套件。
+* 某些不常發生的情況將阻止刪除環境。
+* 未一致收到Experience Cloud通知。
