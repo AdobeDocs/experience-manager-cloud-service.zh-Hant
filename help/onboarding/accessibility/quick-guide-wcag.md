@@ -2,7 +2,7 @@
 title: WCAG 2.1快速指南
 seo-title: WCAG 2.1快速指南
 translation-type: tm+mt
-source-git-commit: 11f0509334ebe4456612789fd415a3099687dc64
+source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 ---
 
@@ -87,7 +87,7 @@ WCAG 2.1包含四項主要的無障礙設計原則，有時簡稱 **POUR**。 �
 
 [WCAG 2.1的新增功能](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) ，提供有關WCAG和2.0和WCAG 2.1之間增量的有價資訊。
 
-[WCAG 2.0和2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 進一步釐清其關係狀況。
+第 [WCAG 2.0及2.1節進一步釐清](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) ，彼等之關係之狀況。
 
 ### WCAG 2.1的技巧 {#techniques-for-wcag}
 
