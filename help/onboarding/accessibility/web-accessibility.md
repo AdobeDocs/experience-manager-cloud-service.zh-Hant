@@ -2,7 +2,7 @@
 title: Adobe Experience Manager雲端服務與網頁協助工具准則
 seo-title: Adobe Experience Manager雲端服務與網頁協助工具准則
 translation-type: tm+mt
-source-git-commit: 11f0509334ebe4456612789fd415a3099687dc64
+source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Experience Manager即雲端服務，符合 [World Wide Web Consortium](#wc
 
 World [Wide Web Consortium(W3C)](https://www.w3.org/) ，是致力於開發Web標準的國際社群。 其網 [路協助工具計畫(WAI)](https://www.w3.org/WAI/) 發佈 [網路內容協助工具指引](#wcag-accessibility-guidelines)。
 
-## WCAG 2.1網頁內容協助工具准則 {#wcag-accessibility-guideslines}
+## 網頁內容協助工具准則(WCAG)2.1 {#wcag-accessibility-guideslines}
 
 為協助網頁設計人員和開發人員製作具協助功能的網站， [Web Accessibility Initiative(WAI)](https://www.w3.org/WAI/) (Web Content Accessibility Guidelines,WCAG)2.1 [](https://www.w3.org/TR/WCAG/) )於2018年6月出版。
 
