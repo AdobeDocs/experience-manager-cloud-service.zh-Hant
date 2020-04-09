@@ -2,7 +2,7 @@
 title: Adobe Experience Manager雲端服務版本注意事項2020.4.0
 description: Experience Manager 2020.4.0發行說明
 translation-type: tm+mt
-source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
+source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
 
 ---
 
@@ -44,8 +44,6 @@ The following section outlines the general release notes for [!DNL Experience Ma
 >* [在Experience Manager中使用Assets microservices建立工作流程](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
-## Cloud Manager更新 {#cloud-manager}
-
 ## Cloud Manager的新增功能 {#whats-new-cloud-manager}
 
 * Cloud Manager UI的「環境」頁面現在提供發佈者URL。
@@ -57,7 +55,7 @@ The following section outlines the general release notes for [!DNL Experience Ma
 * 現在可以透過UI和API刪除失敗的環境。
 * 用來產生Git密碼的程式對底層服務層中的問題具有更強的適應能力。
 
-## 錯誤修正 {#bug-fixes-cloud-manager}
+### 錯誤修正 {#bug-fixes-cloud-manager}
 
 * 管線執行詳細資訊頁面上到舞台環境的連結不能始終導航到正確的位置。
 * 環境建立進程中的各個步驟將比需要的時間提前超時，導致進程失敗。
