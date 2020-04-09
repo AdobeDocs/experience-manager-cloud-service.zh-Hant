@@ -2,7 +2,7 @@
 title: Adobe Experience Manager雲端服務版本注意事項2020.4.0
 description: Experience Manager 2020.4.0發行說明
 translation-type: tm+mt
-source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
+source-git-commit: 49137535f4f6a6b62e697de6a7a9934f5b861bbc
 
 ---
 
@@ -32,9 +32,10 @@ The following section outlines the general release notes for [!DNL Experience Ma
    * 資產重新處理對話框允許選擇特定的處理配置檔案並決定在子資料夾中重新處理。
    * [!DNL Dynamic Media]:已新增選擇性發佈設定，如此資產就會自動發佈，以便僅安全預覽。 此外，資產可明確發佈至Experience Manager，而不發佈至DMS7，以便在公共網域中傳送。
 
-* 已解決下列問題：
-   * 資產處理問題的修正。
-   * 設定和 [!DNL Dynamic Media] 發佈資產至傳送服務 [!DNL Dynamic Media] 的修正。
+### 錯誤修正 {#assets-bug-fixes}
+
+* 資產處理問題的修正。
+* 設定和 [!DNL Dynamic Media] 發佈資產至傳送服務 [!DNL Dynamic Media] 的修正。
 
 >[!MORELIKETHIS]
 >
