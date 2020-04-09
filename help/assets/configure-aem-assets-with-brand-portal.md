@@ -3,7 +3,7 @@ title: 使用品牌入口網站設定AEM Assets雲端服務
 description: 使用品牌入口網站設定AEM Assets雲端服務。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -48,7 +48,7 @@ IMS配置包括兩個步驟：
 
 1. 登入您的AEM Assets雲端例項
 
-1. 從「 **Security** ![Tools](assets/tools.png)**[!UICONTROL 」面板，導覽至「]** Security **[!UICONTROL >]** Adobe IMS Configurations」（安全性>> IMS工具）。
+1. 從「 **Security** ![Tools](assets/tools.png) ( **[!UICONTROL 安全性工具)」面板，導覽至「]** Adobe IMS設定工具(Security **[!UICONTROL >]** Adobe IMS Configurations Tools)」。
 
    ![Adobe IMS帳戶設定UI](assets/ims-configuration1.png)
 
@@ -102,7 +102,7 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
    ![建立整合](assets/create-new-integration2.png)
 
-1. 指定整合的名稱和說明。 按一 **[!UICONTROL 下「從電腦選取檔案」]** ，並上傳 `AEM-Adobe-IMS.crt` 在「取得公用憑證」區 [段中下載的檔案](#public-certificate) 。
+1. 指定整合的名稱和說明。 按一 **[!UICONTROL 下「從電腦選取檔案]** 」，並上傳 `AEM-Adobe-IMS.crt` 在「取得公用憑證」區 [段中下載的檔案](#public-certificate) 。
 
 1. 選擇組織的配置檔案。
 
@@ -163,7 +163,7 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
 1. 登入您的AEM Assets雲端例項
 
-1. 從「工 **具** 」 ![「工具」面板，導覽至「](assets/tools.png) 雲端服務>> AEM品牌入口網站」 ****。
+1. 從「工 **具**![」面板，導覽至「雲端服務](assets/tools.png) >品 ********&#x200B;牌入口工具」。
 
    品牌入口網站設定頁面隨即開啟。
 
@@ -217,7 +217,7 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
    >請避免停用散發代理，因為這可能導致資產的散發（在佇列中執行）失敗。
 
 
-在您的AEM Assets雲端例項成功設定品牌入口網站後，您可以：
+您的AEM Assets雲端例項已成功設定為品牌入口網站，您現在可以：
 
 * [將資產從AEM Assets發佈至品牌入口網站](publish-to-brand-portal.md)
 * [將資料夾從AEM Assets發佈至品牌入口網站](publish-to-brand-portal.md#publish-folders-to-brand-portal)
@@ -262,7 +262,9 @@ Distribution Agent會生成以下日誌：
 在上述範例中，會觸發額外的請求和回應。 系統無法在品牌入口網站中找到父資料夾（亦即新增路徑），因為資產是首次發佈，因此會觸發其他要求，在發佈資產的品牌入口網站中建立同名的父資料夾。
 
 >[!NOTE]
->>當父資料夾不存在於品牌入口網站（在上例中），或父資料夾已在AEM Assets中修改時，會產生其他請求。>
+>
+>如果父資料夾不存在於品牌入口網站（在上例中），或父資料夾已在AEM Assets中修改，則會產生其他請求。
+
 
 ## 其他資訊 {#additional-information}
 
