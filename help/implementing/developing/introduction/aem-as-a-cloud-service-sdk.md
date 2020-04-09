@@ -2,7 +2,7 @@
 title: AEM 雲端服務 SDK
 description: 待完成
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: f15d5087a1bcb7691e159db1a595f6cc20f2b2c6
 
 ---
 
@@ -56,9 +56,9 @@ AEM as a Cloud Service SDK由下列物件組成：
 </repository>
 ```
 
-## 使用新的SDK版本重新整理本機專案 {#refreshing-a-local-prokect-with-a-new-skd-version}
+## 使用新的SDK版本重新整理本機專案 {#refreshing-a-local-project-with-a-new-skd-version}
 
-建議何時使用新的SDK重新整理本機專案？
+建議何時使用新SDK重新整理本機專案？
 
 建議您 *至少在每月* 維護髮行後重新整理它。
 
@@ -92,5 +92,5 @@ AEM as a Cloud Service SDK由下列物件組成：
 
 * 當您最初啟動本地quickstart.jar時，請確保添加以下參數：「`-Dcom.adobe.granite.crypto.file.disable=true`」。 建議您隨時新增，但選購。
 * 您第一次啟動例項時，會建立包含根&quot;`/etc/key`&quot;篩選的套件。 這將保留機密，以便在您希望重新使用的所有環境中重複使用
-* 匯出任何包含機密的可變內容，或透過查找加密值，將 `/crx/de` 其新增至將在安裝後重複使用的套件
+* 匯出任何包含機密的可變內容，或透過查找加密值，將 `/crx/de` 其新增至將在安裝期間重複使用的套件
 * 每當您啟動新執行個體（要取代為新版本或多個開發環境應共用測試憑證）時，請安裝步驟2和3中產生的套件，以便能夠重複使用內容，而不需手動重新設定。 這是因為現在加密密鑰正在同步。
