@@ -1,72 +1,66 @@
 ---
-title: WCAG 2.0快速指南
-seo-title: WCAG 2.0快速指南
+title: WCAG 2.1快速指南
+seo-title: WCAG 2.1快速指南
 translation-type: tm+mt
-source-git-commit: 039b926ca0775979430c70c96ae77d0eaa5662b3
+source-git-commit: 11f0509334ebe4456612789fd415a3099687dc64
 
 ---
 
 
-# WCAG 2.0快速指南{#quick-guide-to-wcag}
+# WCAG 2.1快速指南{#quick-guide-to-wcag}
 
-AEM的開發目的，是要充份符合「網頁內容協助工具准則」:
+Adobe Experience Manager(AEM)是雲端服務，旨在最大限度地符合「網頁內容協助工具准則」。
 
-網 [頁內容協助工具准則第2.0版(WCAG2)](https://www.w3.org/TR/WCAG/) ，是由 [World Wide Web Consortium(W3C)](https://www.w3.org/) (Web Accessibility Initiative(WAI))所制定的一組國際公認的准則 [](https://www.w3.org/WAI/)。
+網 [頁內容協助工具准則第2.1版(WCAG)](https://www.w3.org/TR/WCAG/) ，是由 [World Wide Web Consortium(W3C)](https://www.w3.org/) (Web Accessibility Initiative(WAI))所制定的一組國際公認的准則 [](https://www.w3.org/WAI/)。
 
-WCAG 2.0包含一套技術獨立的准則和成功標準，可協助殘障人士存取和使用網頁內容。 他們為網頁內容作者、設計人員和開發人員提供建議，確保他們製作的資源能盡可能讓盡可能多的人存取，而不論他們有何殘疾；例如，視障、聽力損失、學習困難、年齡限制等。
+WCAG 2.1包含一套技術獨立的准則和成功標準，以協助讓殘障人士可存取和使用網頁內容。 他們為網頁內容作者、設計人員和開發人員提供建議，確保他們製作的資源能盡可能讓盡可能多的人存取，而不論他們有何殘疾；例如，視障、聽力損失、學習困難、年齡限制等。
 
 例如，使用HTML中的屬性來描述影像（或任何其他非文字內容）, `alt` 對盲人或部分視力的人大有裨益。 屬性中的文本描 `alt` 述可以轉換為語音輸出，或者傳輸到電子可刷新的盲文顯示器。
 
-此外，WCAG 2.0可為其他受益人帶來好處，包括可能被認為處於殘疾狀 *況的人*。 由於瀏覽技術、網路連線速度或瀏覽環境等情況，可能會遇到與殘障人士類似的障礙的人。
+此外，WCAG 2.1可為其他受益人帶來好處，包括可能被認為處於殘疾狀 *況的人*。 由於瀏覽技術、網路連線速度或瀏覽環境等情況，可能會遇到與殘障人士類似的障礙的人。
 
-使用Adobe Experience Manager，內容作者和／或網站擁有者可建立符合相關WCAG 2.0 A級和AA級成功標準的網頁內容。
+使用Adobe Experience Manager，內容作者和／或網站擁有者可建立符合相關WCAG 2.1 A級和AA級成功標準的網頁內容。
 
-因此，瞭解WCAG 2.0的目標以及准則的結構是瞭解Web無障礙環境支援以及准則如何協助建立無障礙環境支援的Web內容的重要部分。
+因此，瞭解WCAG 2.1的目標以及准則的結構是瞭解Web無障礙環境支援以及准則如何協助建立無障礙環境支援的Web內容的重要部分。
 
-WCAG 2.0旨在提供以下准則：
+WCAG 2.1的目的是提供以下准則：
 
-* 技術 **不可知：**
+* 技術 **不可知：**&#x200B;換言之，可套用至多種網頁內容格式（而不只是HTML）的准則。 因此，WCAG 2.1可涵蓋由PDF、Flash、JavaScript和其他目前和未來網頁技術產生或提供的內容。 <!-- This aims to address a recognized weakness of WCAG 1.0, in that it was focused on HTML at the expense of other web content formats. -->
 
-換言之，可套用至多種網頁內容格式（而不只是HTML）的准則。 因此，WCAG 2.0可涵蓋由PDF、Flash、JavaScript和其他目前和未來網頁技術產生或提供的內容。 這旨在解決WCAG 1.0的公認弱點，因為它以HTML為主，而犧牲其他網頁內容格式。
-
-* 可測 **試：**
-
-每項准則的編寫方式都是客觀的，以確保一組無障礙環境問題專家一般都同意該准則已經得到滿足。 無障礙准則的挑戰之一是，雖然一些准則可以在技術上得到檢驗，但另一些准則則需要人為判斷，以確定准則是否成功地得到滿足。 編寫《世界婦女大會2.0》的目的是減少《世界婦女大會1.0》的某些准則和檢查站存在的主觀性。
+* 可測 **試：**&#x200B;每項准則的編寫方式都是客觀的，以確保一組無障礙環境問題專家一般都同意該准則已經得到滿足。 無障礙准則的挑戰之一是，雖然一些准則可以在技術上得到檢驗，但另一些准則則需要人為判斷，以確定准則是否成功地得到滿足。 <!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
 
 * 支援優 **先化和情境式實作：**
+   <!-- As with WCAG 1.0, --> WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
 
-與WCAG 1.0一樣，WCAG 2.0准則也被賦予優先權，涉及不遵守關於特定殘疾使用者群體的准則的可能影響。 這使得作者能夠就其具體情況的最重要准則作出知情決定。 此外，還介紹了支援無 *障礙環境* 的概念。 這可讓作者決定如何最佳地使用可能沒有完整協助工具支援的Web技術，或要求使用者具備特定協助工具技術和／或瀏覽器，以從協助工具功能獲益。
-
-這些目標對WCAG 2.0的結構有顯著影響。
-
->[!NOTE]
->
->不可能建立能夠滿足各種可能殘疾或人類類型需求的網站。 WCAG 2.0的目的，是協助網頁作者建立可在特定條件和合理範圍內盡可能存取的網站。
+這些目標對WCAG 2.1的結構有顯著影響。
 
 >[!NOTE]
 >
->如果您熟悉WCAG 1.0，您將會注意到WCAG 2.0中的一些變更。這與範圍、組織和目標有關。
+>不可能建立能夠滿足各種可能殘疾或人類類型需求的網站。 WCAG 2.1的目的，是協助網頁作者建立可在特定條件和合理範圍內盡可能存取的網站。
+
+<!--
+>[!NOTE]
+>
+>If you are familiar with WCAG 1.0, you will notice some changes in WCAG 2.1. These relate to scope, organization and aim.
+-->
 
 ## 結構 {#structure}
 
-WCAG 2.0的結構方式是逐步引入可存取網頁內容建立的概念。 這可能給人以一種印象，即WCAG 2.0是一組非常複雜的相互關聯的檔案，但其目的是（逐步）在作者需要時提供更詳細的資訊，而不是在一份非常大的檔案中提供所有資訊。
+WCAG 2.1的結構方式是逐步引入可存取網頁內容建立的概念。 這可能給人以一種印象，即WCAG 2.1是一組非常複雜的相互關聯的檔案，但其目的是（逐步）在作者需要時提供更詳細的資訊，而不是在一份非常大的檔案中提供所有資訊。
 
-WCAG 2.0包含4項可存取設計的主要原則。 以下是：
+WCAG 2.1包含四項主要的無障礙設計原則，有時簡稱 **POUR**。 以下是：
 
 1. **可感知**:使用者是否可感知有問題的網頁內容？
 1. **可操作**:使用者是否可導覽、輸入資料，或與網頁內容互動？
 1. **可以理解**:使用者是否可處理並理解提供給他們的Web內容？
 1. **強穩**:Web內容是否可在適當種類的瀏覽環境（包括舊版和新興的瀏覽環境）中以預定方式提供？
 
-這些原則有時由縮寫POUR提及。
-
+詳細說明：
 * 每個 **原則** ，都包含一或多個 **准則**。
 
 * 准則的措辭為指示，其為正面(Do this...)或負面(Do not do this...)。
 * 准則編號為1.1到4.1，其中第一個數字與父項原則相對應。
-
 * 每個准則都包含一或多個成 **功准則**。
-
 * 成功准則會以陳述式形式寫入，這些陳述式可 `True` 供任何 `False` 指定網頁使用。
 * 成功標準可能包含／或選擇，或可能包含例外；不符合成功條件的情況。
 * 成功標準按照父准則和原則編號，從1.1.1到4.1.1。它們還有一個簡短的名稱，用於匯總標準的意圖，以便更容易參考。 例如，成功標準1.1.1是非文字替代。
@@ -74,21 +68,32 @@ WCAG 2.0包含4項可存取設計的主要原則。 以下是：
 
 ## 支援資源 {#supporting-resources}
 
-除了《原則、准則和成功標準》的核心WCAG 2.0元件外，還有一系列支援檔案。 其中有些提供如何符合准則各方面的特定建議，有些則提供更一般的參考，以協助網頁作者、設計人員和各種能力的開發人員盡可能有效地瞭解和使用WCAG 2.0。
+除了《原則、准則和成功標準》的核心WCAG 2.1元件外，還有一系列支援檔案。 其中有些提供如何符合准則各方面的特定建議，而其他則提供更一般的參考，以協助具備各種能力的網頁作者、設計人員和開發人員盡可能有效地瞭解和使用WCAG 2.1。
 
-雖然WCAG 2.0是一個穩定的文檔，而且不會改變，但這些支援資源大多是動態文檔；隨著新技術的出現，它們會隨著時間而改變和成長，並會找到新的範例，說明如何達成網頁存取功能。
+雖然WCAG 2.1是一個穩定的文檔，不會改變，但這些支援資源大多是動態文檔；隨著新技術的出現，它們會隨著時間而改變和成長，並會找到新的範例，說明如何達成網頁存取功能。
 
-### WCAG 2.0資源 {#wcag-resources}
+### WCAG 2.1資源 {#wcag-resources}
 
-* [WCAG 2.0所有相關檔案概要](https://www.w3.org/WAI/intro/wcag.php);
-* [說明不同組成部分之間的相互關係](https://www.w3.org/WAI/intro/wcag20);
-* [WCAG 2.0常見問題](https://www.w3.org/WAI/WCAG20/wcag2faq.html);
+這份清單並非完整無遺，它提供可用資源的簡介：
+* [WCAG所有相關檔案的概述](https://www.w3.org/WAI/standards-guidelines/wcag/)
+* [不同檔案的摘要](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
+* [網頁內容協助工具准則(WCAG)2.1](https://www.w3.org/TR/WCAG21/)
+* [WCAG 2.1的新功能](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
+* [如何符合WCAG 2.1的快速參考指南](https://www.w3.org/WAI/WCAG21/quickref/)
+* [WCAG 2常見問題](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)
 
-### WCAG 2.0的技巧 {#techniques-for-wcag}
 
-「WCAG 2.0的技巧」頁面提供 [WCAG 2.0的技巧](https://www.w3.org/TR/WCAG20-TECHS/) 。
+### WCAG 2.1的新增功能 {#what-is-new}
 
-**技巧** ，在WCAG 2.0階層中會形成低於成功標準的層級。 它們被WAI歸為資訊豐富，而非規範。 換言之，資源符合WCAG 2.0不需要遵循特定技術。
+[WCAG 2.1的新增功能](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) ，提供有關WCAG和2.0和WCAG 2.1之間增量的有價資訊。
+
+[WCAG 2.0和2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 進一步釐清其關係狀況。
+
+### WCAG 2.1的技巧 {#techniques-for-wcag}
+
+「WCAG 2.1的技巧」頁面提供WCAG 2.1 [的技巧](https://www.w3.org/WAI/WCAG21/Techniques/) 。
+
+**技巧** ，在WCAG 2.1階層中會形成低於成功標準的層級。 它們被WAI歸為資訊豐富，而非規範。 換言之，資源符合WCAG 2.1不需要遵循特定技術。
 
 由於技術比成功標準更具體，因此通常指特定技術或內容類型（例如HTML或視訊）或情況（例如電子商務或遠距教學應用程式）。 您可以將技巧想成是如何符合特定准則和成功准則的實證範例，因此這些技巧對於在特定情境下工作的作者和開發人員而言，是有幫助的。
 
@@ -109,9 +114,9 @@ WCAG 2.0包含4項可存取設計的主要原則。 以下是：
 
 技術清單不完整，WAI不斷以新範例更新清單，反映網路技術、設計方式和研究結果的發展。 因此，定期檢查新增內容的技巧清單非常值得。
 
-### 瞭解WCAG 2.0 {#understanding-wcag}
+### 瞭解WCAG 2.1 {#understanding-wcag}
 
-這是指一系列檔案，為讀者瞭解具體准則和成功標準的目的提供了建議。 您可以 [下載簡介，以及更多詳細資訊的連結](https://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/Overview.html)。
+這是指一系列檔案，為讀者瞭解具體准則和成功標準的目的提供了建議。 您可以 [下載簡介，以及更多詳細資訊的連結](https://www.w3.org/WAI/WCAG21/Understanding/)。
 
 每個個別准則和成功標準也有自己的「瞭解」頁面，提供以下資訊：
 
@@ -127,11 +132,11 @@ WCAG 2.0包含4項可存取設計的主要原則。 以下是：
 * 技巧與失敗：如何符合成功標準的特定和詳細範例（詳細說明如下）
 * 關鍵術語——對於瞭解成功標準而言重要的術語辭彙表。
 
-例如：了 [解成功准則1.1.1（「非文字內容」）](https://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/text-equiv-all.html)。
+例如：了 [解成功准則1.1.1（「非文字內容」）](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content)。
 
-### 如何符合WCAG 2.0 {#how-to-meet-wcag}
+### 如何符合WCAG 2.1 {#how-to-meet-wcag}
 
-如何符合WCAG 2.0頁面上 [提供「如何符合](https://www.w3.org/WAI/WCAG20/quickref/) 」。 本節提供WCAG的替代簡報，讓您將准則內容精簡至與讀者自身興趣或環境最相關的內容。 讀者可以透過指定特定網頁內容技術（例如階層式樣式表或指令碼）或指定特定優先順序等級，來篩選他們想要檢視的成功准則技術。
+如何符合WCAG 2.1頁面上 [提供「如何符合](https://www.w3.org/WAI/WCAG21/quickref/) 」。 本節提供WCAG的替代簡報，讓您將准則內容精簡至與讀者自身興趣或環境最相關的內容。 讀者可以透過指定特定網頁內容技術（例如階層式樣式表或指令碼）或指定特定優先順序等級，來篩選他們想要檢視的成功准則技術。
 
 如果不進行篩選，此資源將提供按准則分組的所有成功標準。 對於每個成功標準，將提供以下內容：
 
