@@ -2,7 +2,7 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
+source-git-commit: 95511543b3393d422e2cfa23f9af246365d3a993
 
 ---
 
@@ -13,7 +13,7 @@ AEM做為雲端服務，可讓您設定：
 
 * 中央記錄服務的全局參數
 * 要求資料記錄；要求資訊的專用記錄設定
-* 個別服務的特定設定；例如，日誌消息的單個日誌檔案和格式
+* 個別服務的特定設定
 
 在本地開發中，日誌條目將寫入資料夾中的本地 `/crx-quickstart/logs` 檔案。
 
@@ -55,23 +55,27 @@ AEM as a Cloud Service使用下列功能將記錄訊息寫入檔案：
 
    定義生成消息的服務。
 
-* **記錄檔（記錄檔）**
+<!-- * **Log File (Logging Logger)**
 
-   定義用於儲存日誌消息的物理檔案。
+  Define the physical file for storing the log messages.
 
-   This is used to link a Logging Logger with a Logging Writer. 該值必須與要建立的連接的記錄寫入器配置中的相同參數相同。
+  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
 
-* **日誌檔案（記錄寫入器）**
+* **Log File (Logging Writer)**
 
-   定義日誌消息將寫入的物理檔案。
+  Define the physical file that the log messages will be written to.
 
-   此參數必須與記錄寫入器配置中的相同參數相同，否則不會進行匹配。 如果沒有匹配項，則將使用預設配置（每日日誌旋轉）建立隱式寫入器。
+  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
+-->
 
 ### 標準記錄工具和作者 {#standard-loggers-and-writers}
 
+> [!IMPORTANT]
+> 如果需要，可自訂這些設定，但標準組態適合大部分安裝。 但是，如果您需要自訂標準記錄設定，請務必只在環境中 `dev` 執行。
+
 標準AEM中包含某些記錄檔和撰寫程式，做為雲端服務安裝。
 
-第一個是特殊情況，因為它同時控制 `request.log` 和文 `access.log` 件：
+第一個是特殊情況，因為它同時控制 `request` 和記 `access` 錄：
 
 * The Logger:
 
@@ -88,8 +92,6 @@ AEM as a Cloud Service使用下列功能將記錄訊息寫入檔案：
       (org.apache.sling.engine.impl.log.RequestLogger)
 
    * 將消息寫入或 `request.log` 中 `access.log`。
-
-如果需要，可自訂這些設定，但標準組態適合大部分安裝。
 
 其他配對遵循標準配置：
 
@@ -114,6 +116,56 @@ AEM as a Cloud Service使用下列功能將記錄訊息寫入檔案：
    * 將消 `Warning` 息寫入 `../logs/error.log` 服務的消息 `org.apache.pdfbox`。
 
 * 不連結到特定寫入器，因此將建立並使用具有預設配置的隱式寫入器（每日日誌旋轉）。
+
+除了AEM上以Cloud Service例項(`request`和 `access``error` logs)形式顯示的三種記錄檔外，還有另一種記錄檔用於除錯Dispatcher問題。 如需詳細資訊，請參 [閱除錯您的Apache和Dispatcher設定](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html#debugging-apache-and-dispatcher-configuration)。
+
+就最早的實務而言，建議您與AEM中目前存在的組態一致，成為Cloud Service Maven原型。 這些設定為特定環境類型設定不同的日誌設定和級別：
+
+* for `local dev` and `dev` environments, set the logger to **DEBUG** level to the `error.log`
+* for `stage`, set logger to **WARN** level to the `error.log`
+* for `prod`, set logger to **ERROR** level to the `error.log`
+
+請針對每個組態尋找下列範例：
+
+* `dev` 環境：
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="debug"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+
+* `stage` 環境：
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="warn"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+* `prod` 環境：
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="error"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
 
 ## 設定日誌級別 {#setting-the-log-level}
 
@@ -153,7 +205,6 @@ AEM as a Cloud Service使用下列功能將記錄訊息寫入檔案：
 
 1. 建立Factory Configuration [Apache Sling Logger Configuration的新例項](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based)。
 
-   1. 指定「記錄檔」。
    1. 指定記錄器。
 
 <!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
@@ -167,7 +218,7 @@ AEM as a Cloud Service使用下列功能將記錄訊息寫入檔案：
 >
 >使用Adobe Experience Manager時，有幾種方法可管理此類服務的組態設定。
 
-在某些情況下，您可能希望建立具有不同日誌級別的自定義日誌檔案。 您可以通過以下方式在儲存庫中執行此操作：
+在某些情況下，您可能希望建立具有不同日誌級別的自定義日誌。 您可以通過以下方式在儲存庫中執行此操作：
 
 1. 如果尚未存在，請為您的項目建立新的配 `sling:Folder`置資料夾() `/apps/<*project-name*>/config`。
 1. 在下 `/apps/<*project-name*>/config`面，為新的Apache Sling Logging Logger Configuration建立節點：
