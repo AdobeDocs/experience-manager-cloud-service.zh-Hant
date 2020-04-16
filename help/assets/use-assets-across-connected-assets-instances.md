@@ -3,14 +3,14 @@ title: 在 Adobe Experience Manager Sites 編寫工作流程中使用「連線�
 description: 在其他 Experience Manager 網站的部署工作中建立網頁時，使用遠端 Adobe Experience Manager Assets 部署的可用資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7524f6146c33932677b6c8af49d5fe2638a5c02a
 
 ---
 
 
 # 使用「連線資產」在 AEM Sites 中共用 DAM 資產 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-大型企業中，建立網站所需的基礎架構可能很分散。有時候，建立這些網站的網站建立功能和數位資產可能會存放在不同的部署中。以下幾個原因可能是現有部署在地理位置分散，需要共同工作或進行收購，從而導致母公司希望共同使用的異構基礎架構。
+大型企業中，建立網站所需的基礎架構可能很分散。有時候，建立這些網站的網站建立功能和數位資產可能會存放在不同的部署中。或許出於幾種原因，導致現有部署的地理位置分散，但礙於工作所需而得搭配使用，或是併購後才發現基礎架構的組成複雜分歧，母公司希望能加以整合。
 
 AEM Sites 提供建立網頁的功能，而 AEM Assets 是可為網站提供必要資產的數位資產管理 (DAM) 系統。AEM 現在整合了 AEM Sites 和 AEM Assets，能支援上述使用案例。
 
@@ -91,9 +91,9 @@ AEM 管理員可建立這項整合。一旦建立之後，系統會透過您在 
    1. 在「屬性」設定精靈中，將&#x200B;**[!UICONTROL 「路徑」]**&#x200B;欄位變更為下列對應內容，更新其規則運算式以排除掛接點 **[!UICONTROL connectedassets]**。
    | 變更前 | 變更後 |
    |---|---|
-   | /content/dam(/((?!/subassets).)*/)renditions/original | /content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original |
-   | /content/dam(/.*/)renditions/original | /content/dam(/((?!connectedassets).)*/)renditions/original |
-   | /content/dam(/.*)/jcr:content/metadata | /content/dam(/((?!connectedassets).)*/)jcr:content/metadata |
+   | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
