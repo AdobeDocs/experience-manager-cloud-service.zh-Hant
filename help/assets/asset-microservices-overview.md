@@ -84,6 +84,6 @@ Adobe Experience Manager可設定為在資產處理完成後自動觸發後處�
 >* [開始使用資產微服務](asset-microservices-configure-and-use.md)
 >* [支援的檔案格式](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
->* [AEM案頭應用程式](Https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)
+>* [AEM案頭應用程式](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)
 >* [直接二進位存取的Apache Oak檔案](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
