@@ -110,7 +110,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 行銷人員和業務線使用者可以使用、
 
-* **AEM案頭應用程式**:應用程式可在Windows和Mac上運作。 請參閱桌 [面應用程式概觀](Https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參 [閱瀏覽、搜尋和預覽資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立資產，並與AEM使用者的對應人員共用資產，例如上傳新影像。 請參閱 [使用案頭應用程式上傳資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* **AEM案頭應用程式**:應用程式可在Windows和Mac上運作。 請參閱桌 [面應用程式概觀](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參 [閱瀏覽、搜尋和預覽資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立資產，並與AEM使用者的對應人員共用資產，例如上傳新影像。 請參閱 [使用案頭應用程式上傳資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
 
 * **Adobe Asset Link**:創意專業人員可直接在Adobe InDesign、Adobe Illustrator和Adobe Photoshop中搜尋及使用資產。
 
