@@ -169,7 +169,7 @@ AEM Assets會防止您上傳檔案名稱中包含禁止字元的資產。 如果
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience manager 桌面應用程式](Https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)
+>* [Adobe Experience manager 桌面應用程式](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe Asset Link檔案](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
 >* [資產上傳的技術參考](developer-reference-material-apis.md#asset-upload-technical)
