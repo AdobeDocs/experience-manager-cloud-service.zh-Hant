@@ -2,7 +2,7 @@
 title: Adobe Experience Manager雲端服務版本注意事項2020.4.0
 description: Experience Manager 2020.4.0發行說明
 translation-type: tm+mt
-source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
+source-git-commit: 98de3a6674aaef5228e96e0bf72e67de861f858e
 
 ---
 
@@ -20,7 +20,7 @@ The following section outlines the general release notes for [!DNL Experience Ma
 瞭解目前版本的新功能、增強功能 [!DNL Experience Manager Assets] 和 [!DNL Dynamic Media] 錯誤修正。
 
 * [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 支援Experience Manager Assets的資產分發使用案例。 [!DNL Brand Portal] 藉由安全方式向外部機構、合作夥伴、內部團隊和經銷商散佈經過核准的品牌和產品資產以供下載，協助組織滿足其行銷需求。
-   * [!DNL Brand Portal] 配置通過控制台 [!DNL Adobe I/O] 完成。
+   * [!DNL Brand Portal] 配置通過控制台 [!DNL Adobe I/O] 完成。 請參 [閱設定品牌入口網站](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)。
    * 雲端服務尚 [!DNL Brand Portal] 未支援中的資 [!DNL Experience Manager] 產來源補充。
 
 * [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) v2.0可搭配雲 [!DNL Experience Manager] 端服務運作。 [!DNL Adobe Asset Link] 透過連接案頭應用程式和應用程式內面板，簡化創意人員與行銷人員 [!DNL Experience Manager Assets] 在內容建 [!DNL Creative Cloud] 立程式 [!DNL Adobe Photoshop]中的協作 [!DNL Adobe Illustrator]作業，並 [!DNL Adobe InDesign] 簡化應用程式內 [!DNL Asset Link] 面板。
@@ -29,7 +29,13 @@ The following section outlines the general release notes for [!DNL Experience Ma
 
 * 使用者可以 [設定後處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) ，以在特定資料夾階層的資料夾  屬性使用者介面中自動啟動。
    * 資料夾 [!UICONTROL 「屬性] 」使用者介面已簡化，新的「資產處理」標籤包含中繼資料描述檔、處理描述檔，以及新的自動啟動工作流程設定。
-   * 資產重新處理對話框允許選擇特定的處理配置檔案並決定在子資料夾中重新處理。
+
+      ![處理設定檔可輕鬆套用至資料夾，而且所有上傳至資料夾的資產都可使用這些設定檔來處理](/help/assets/assets/asset-processing-folder-properties.png)
+
+   * 資產重新處理選項允許選擇特定的處理設定檔，以重新處理子資料夾中使用者選取的資產。
+
+      ![使用特定處理設定檔重新處理選取的資產](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+
    * [!DNL Dynamic Media]:已新增選擇性發佈設定，如此資產就會自動發佈，以便僅安全預覽。 此外，資產可明確發佈至Experience Manager，而不發佈至DMS7，以便在公共網域中傳送。
 
 ### 錯誤修正 {#assets-bug-fixes}
