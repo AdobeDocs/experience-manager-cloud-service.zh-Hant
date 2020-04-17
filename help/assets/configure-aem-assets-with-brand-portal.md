@@ -3,7 +3,7 @@ title: 使用品牌入口網站設定AEM Assets雲端服務
 description: 使用品牌入口網站設定AEM Assets雲端服務。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: d644fc348ff6d62c03100941b96c03049f345763
+source-git-commit: bbb3327d4bc7cef8eede3169bc14a1d247ee2bdc
 
 ---
 
@@ -152,9 +152,9 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
 >[!CAUTION]
 >
->您只有一個IMS設定會通過健康檢查。 請勿建立多個IMS組態。
+>您只能有一個IMS設定。 請勿建立多個IMS組態。
 >
->如果配置未通過健康檢查，則無效。 您必須刪除它並建立新的有效設定。
+>確保IMS配置通過健康檢查。 如果配置未通過健康檢查，則無效。 您必須刪除它並建立新的有效設定。
 
 
 
