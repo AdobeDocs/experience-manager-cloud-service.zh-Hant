@@ -3,7 +3,7 @@ title: 使用品牌入口網站設定AEM Assets雲端服務
 description: 使用品牌入口網站設定AEM Assets雲端服務。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: f57731e4ab30af1bfcd93a12b2cf80e63efdac79
+source-git-commit: d644fc348ff6d62c03100941b96c03049f345763
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager(AEM)Assets是透過Adobe I/O以品牌入口網站設定
 
 ## Create configuration {#create-new-configuration}
 
-您可以在Adobe I/O上建立新的設定，以使用品牌入口網站來設定您的AEM Assets雲端例項。
+您可以在Adobe I/O上建立設定，以使用品牌入口網站來設定您的AEM Assets雲端例項。
 
 在所列順序中執行以下步驟：
 1. [取得公開憑證](#public-certificate)
@@ -46,9 +46,9 @@ IMS配置包括兩個步驟：
 
 公開憑證可讓您在Adobe I/O上驗證個人檔案。
 
-1. 登入您的AEM Assets雲端例項
+1. 登入您的AEM Assets雲端實例。
 
-1. 從「 **Security** ![Tools](assets/tools.png) ( **[!UICONTROL 安全性工具)」面板，導覽至「]** Adobe IMS設定工具(Security **[!UICONTROL >]** Adobe IMS Configurations Tools)」。
+1. 從「 **Security** ![](assets/tools.png)**[!UICONTROL >]** Adobe IMS Configurations工具」面板，導覽至「安全性 **[!UICONTROL >]** Adobe IMS工具」。
 
    ![Adobe IMS帳戶設定UI](assets/ims-configuration1.png)
 
@@ -56,13 +56,13 @@ IMS配置包括兩個步驟：
 
    按一下 **[!UICONTROL 建立]**。
 
-   這會帶您前往 **[!UICONTROL Adobe IMS技術帳戶設定頁面]** 。
+   它會帶您前往 **[!UICONTROL Adobe IMS技術帳戶設定頁面]** 。
 
 1. 依預設會開 **啟「認證** 」標籤。
 
    在 **Cloud Solution中**，選取 **[!UICONTROL Adobe品牌入口網站]**。
 
-1. 標籤核取方 **[!UICONTROL 塊「建立新憑證]** 」並指 **定憑證的** 別名。 別名用作對話框的名稱。
+1. 標籤核取方塊 **[!UICONTROL 建立新憑證]** ，並指定 **憑證的別名** 。 別名用作對話框的名稱。
 
 1. 按一 **[!UICONTROL 下建立憑證]**。 將出現對話框。 按一下 **[!UICONTROL 確定]** ，生成公共證書。
 
@@ -102,7 +102,7 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
    ![建立整合](assets/create-new-integration2.png)
 
-1. 指定整合的名稱和說明。 按一 **[!UICONTROL 下「從電腦選取檔案」]** ，並上傳 `AEM-Adobe-IMS.crt` 在「取得公用憑證」區 [段中下載的檔案](#public-certificate) 。
+1. 指定整合的名稱和說明。 按一 **[!UICONTROL 下「從電腦選取檔案]** 」，並上傳 `AEM-Adobe-IMS.crt` 在「取得公用憑證」區 [段中下載的檔案](#public-certificate) 。
 
 1. 選擇組織的配置檔案。
 
@@ -152,18 +152,19 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
 >[!CAUTION]
 >
->只建立一個有效的IMS設定。
+>您只有一個IMS設定會通過健康檢查。 請勿建立多個IMS組態。
 >
-> 確保配置正常。 如果配置不健康，請將其刪除並建立新的健康配置。
+>如果配置未通過健康檢查，則無效。 您必須刪除它並建立新的有效設定。
+
 
 
 ### 設定雲端服務 {#configure-the-cloud-service}
 
 執行下列步驟以建立品牌入口網站雲端服務設定：
 
-1. 登入您的AEM Assets雲端例項
+1. 登入您的AEM Assets雲端實例。
 
-1. 從「工 **具**![」面板，導覽至「雲端服務](assets/tools.png) >品 ********&#x200B;牌入口工具」。
+1. 從「工 **具**![」面板，導覽至「](assets/tools.png) Cloud Services > ******** AEM Brand Portal工具」。
 
    品牌入口網站設定頁面隨即開啟。
 
@@ -183,7 +184,7 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
 1. 登入您的AEM Assets雲端實例。
 
-1. 從「 **Deployment** ![Tools](assets/tools.png)**[!UICONTROL 」面板，導覽至「Deployment]** Distribution **[!UICONTROL Tools]**> 」。
+1. 從「 **工** 具 ![」](assets/tools.png) 面板，導覽至「部署工 **[!UICONTROL 具」]** >「分 ****&#x200B;發工具」。
 
    ![](assets/test-bpconfig1.png)
 
@@ -202,8 +203,13 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 1. 此時會開啟散發代理頁面。 預設情況下，會打 **[!UICONTROL 開「狀態]** 」頁籤，該頁籤將填充分佈隊列。
 
    分發代理包含兩個隊列：
-   * 將資產分發至品牌入口網站的處理佇列。
-   * 發佈失敗之資產的錯誤佇列。
+   * **processing-queue**:將資產分發至品牌入口網站。
+
+   * **error-queue**:對於分發失敗的資產。
+   >[!NOTE]
+   >
+   >建議您檢閱失敗，並定期清 **除錯誤佇列** 。
+
    ![](assets/test-bpconfig3.png)
 
 1. 若要驗證AEM Assets和品牌入口網站之間的連線，請按一下「 **[!UICONTROL 測試連線」]**。
@@ -238,7 +244,7 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
 例如，我們已將資產從AEM Assets發佈至品牌入口網站，以驗證設定。
 
-1. 請依照測試連線中顯示的步驟(步驟1 **[!UICONTROL 至]** 4)，並導覽至散發代理頁面。
+1. 請依照測試連線中顯示的步驟（步驟1 - 4） **** ，並導覽至散發代理頁面。
 
 1. 按一 **[!UICONTROL 下「記錄]** 」以檢視散發記錄檔。 您可在此處看到處理和錯誤記錄。
 
@@ -247,40 +253,43 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 Distribution Agent會生成以下日誌：
 
 * 資訊：這是系統生成的日誌，在成功配置時觸發，用於啟用分發代理。
-* DSTRQ1（請求1）:在測試連線上觸發。
+* DSTRQ1（請求1）:測試連線時的觸發器。
 
 發佈資產時，會產生下列請求和回應記錄：
 
 **散發代理請求**:
 * DSTRQ2（請求2）:會觸發資產發佈請求。
-* DSTRQ3（請求3）:系統會觸發另一個請求，以發佈資產所在的檔案夾，並複製品牌入口網站中的檔案夾。
+* DSTRQ3（請求3）:系統會觸發另一個請求來發佈資產所在的資料夾，並複製品牌入口網站中的資料夾。
 
 **散發代理回應**:
 * queue-bpdistributionagent0(DSTRQ2):資產會發佈至品牌入口網站。
 * queue-bpdistributionagent0(DSTRQ3):系統會複製品牌入口網站中包含資產的資料夾。
 
-在上述範例中，會觸發額外的請求和回應。 系統無法在品牌入口網站中找到父資料夾（亦即新增路徑），因為資產是首次發佈，因此會觸發其他要求，在發佈資產的品牌入口網站中建立同名的父資料夾。
+在上述範例中，會觸發額外的請求和回應。 系統無法在品牌入口網站中找到父資料夾（亦即新增路徑），因為資產是首次發佈，因此會觸發在發佈資產的品牌入口網站中建立同名父資料夾的額外請求。
 
 >[!NOTE]
 >
 >如果父資料夾不存在於品牌入口網站（在上例中），或父資料夾已在AEM Assets中修改，則會產生其他請求。
 
 
-## 其他資訊 {#additional-information}
 
-請至以 `/system/console/slingmetrics` 取得與散布內容相關的統計資料：
+<!--
 
-1. **計數器量度**
+## Additional information {#additional-information}
+
+Go to `/system/console/slingmetrics` for statistics related to the distributed content:
+
+1. **Counter metrics**
    * sling: `mac_sync_request_failure`
    * sling: `mac_sync_request_received`
    * sling: `mac_sync_request_success`
 
-1. **時間量度**
+1. **Time metrics**
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
 
-
+-->
 
 <!--
    Comment Type: draft
