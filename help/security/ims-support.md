@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 雲端服務的 IMS 支援
 description: Adobe Experience Manager 雲端服務的 IMS 支援
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: d51d0e8c57a4c3d3af3083c58a4c1510869c5604
 
 ---
 
@@ -138,7 +138,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 ![產品設定檔](/help/security/assets/ims8.png)
 
-### 登入 Adobe Experience Manager 雲端服務 (#logging-in-to-aem)
+### 登入 Adobe Experience Manager 雲端服務 {#logging-in-to-aem}
 
 **本機管理員登入**
 
@@ -153,6 +153,10 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 若是其他使用者，在例項上設定 IMS 後，即可使用 IMS 登入。使用者需先按一下「使用 Adobe 登入」按鈕，如下所示：
 
 ![IMS 登入](/help/security/assets/ims10.png)
+
+
+>[!NOTE]
+> 在IMS中建立的任何使用者都可使用Adobe ID或Federated ID來建立。 如果使用Adobe ID設定使用者，則會使用其公司的身分提供者來驗證使用者。
 
 接著，系統會將使用者重新導向至 IMS 登入畫面，此時使用者需輸入憑證：
 
@@ -189,3 +193,54 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 如下所示，群組 **AEM-GRP_008** 會繼承 **DAM Users** 的權限，以這種方式管理同步群組權限的效果很棒，此外也常搭配 LDAP 驗證方法使用。
 
 ![ACL3](/help/security/assets/ims18.png)
+
+
+### 存取Cloud Manager {#accessing-cloud-manager}
+
+若要能夠存取Cloud Manager或AEM做為雲端服務環境，您必須指派給Cloud Manager產品的設定檔。
+
+Cloud Manager產品包含下列設定檔：
+
+* 企業負責人
+* 部署管理員
+* 計畫經理
+* 開發人員
+* 整合
+
+>[!NOTE]
+>Cloud Manager已預先設定具有適當權限的角色。 要瞭解與每個角色關聯的具有特定權限、預先配置的任務或權限的每個角色，請參閱基於角 [色的權限](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)。
+
+**新增使用者的步驟**
+
+1. 從現有使用者畫面或從新使用者畫面將使用者新增至特定的描述檔。
+
+1. 或者，您也可以從「概述」畫面 **新增使用者** ，如下圖所示。
+
+   ![ACL3](/help/security/assets/ims23.png)
+
+   >[!NOTE]
+   >您可以指派多個描述檔給使用者，如下圖所示。
+
+   ![ACL3](/help/security/assets/ims22.png)
+
+
+1. 將您新增至適當的設定檔後，您應該可以從使用者介面的右上角，透過 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) ，存取Cloud Manager中各自的租戶。
+
+
+### 在AEM中以雲端服務存取例項 {#accessing-instance-cloud-service}
+
+>[!IMPORTANT]
+>您必須先完成前述章節中提及的步驟，才能將AEM中的例項授與為雲端服務。
+
+為了在 **Admin Console中存取AEM例項**，您應在 **Admin Console的產品清單中看到Cloud Manager程式以及程式中的環境**。
+
+例如，在下方的螢幕擷取中，您會看到兩個可用的環境， *即開發作者* 和 *發佈*。
+
+![ACL3](/help/security/assets/ims19.png)
+
+若要存取AEM例項，使用者將需要新增至適當雲端服務產品的群組。
+
+每個作者例項都有AEM管理員和AEM使用者設定檔，而每個發佈例項都有AEM使用者設定檔。 您可以視需要新增其他設定檔。
+
+若要取得AEM例項的管理員層級存取權，請將使用者新增至該特定產品的AEM管理員設定檔。
+
