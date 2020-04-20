@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 雲端服務的 IMS 支援
 description: Adobe Experience Manager 雲端服務的 IMS 支援
 translation-type: tm+mt
-source-git-commit: d51d0e8c57a4c3d3af3083c58a4c1510869c5604
+source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
 
 ---
 
@@ -199,13 +199,7 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 
 若要能夠存取Cloud Manager或AEM做為雲端服務環境，您必須指派給Cloud Manager產品的設定檔。
 
-Cloud Manager產品包含下列設定檔：
-
-* 企業負責人
-* 部署管理員
-* 計畫經理
-* 開發人員
-* 整合
+請參閱角 [色定義](/help/onboarding/what-is-required/add-users-roles.md#role-definitions) ，以進一步瞭解用戶的角色，這些角色控制了Cloud Manager中特定功能的可用性。
 
 >[!NOTE]
 >Cloud Manager已預先設定具有適當權限的角色。 要瞭解與每個角色關聯的具有特定權限、預先配置的任務或權限的每個角色，請參閱基於角 [色的權限](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)。
