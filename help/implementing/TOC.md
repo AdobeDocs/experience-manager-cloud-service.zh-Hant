@@ -2,7 +2,7 @@
 sub-product: AEM雲端服務實作
 user-guide-title: AEM雲端服務實作
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
 
 ---
 
@@ -32,9 +32,11 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [了解測試結果](/help/implementing/developing/introduction/understand-test-results.md)
 + 設定和擴充 AEM 雲端服務 {#configuring-and-extending}
    + [擴充體驗片段](developing/extending/experience-fragments.md)
+   + [自訂和擴充內容片段](developing/extending/content-fragments-customizing.md)
+   + [內容片段設定要轉譯的元件](developing/extending/content-fragments-configuring-components-rendering.md)
    + [設定搜尋表單](developing/extending/search-forms.md)
 + 部署至 AEM 雲端服務 {#deploying}
    + [部署至 AEM 雲端服務](deploying/overview.md)
 + 雲端中的 Dispatcher {#dispatcher}
    + [雲端中的 Dispatcher](dispatcher/overview.md)
-   + [AEM中的「雲端服務」內容傳送](dispatcher/content-delivery.md)
+   + [AEM 雲端服務的內容傳送](dispatcher/content-delivery.md)
