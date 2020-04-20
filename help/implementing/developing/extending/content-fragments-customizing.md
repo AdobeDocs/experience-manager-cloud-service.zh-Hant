@@ -2,7 +2,7 @@
 title: 自訂和擴充內容片段
 description: 內容片段可延伸標準資產。
 translation-type: tm+mt
-source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -40,7 +40,7 @@ source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
    * 新增變數等的函式必須相應地更新片段。
    >[!NOTE]
    >
-   >若要顯示／轉譯內容片段，您的帳戶必須擁有模型的讀取權限。
+   >若要顯示／轉譯內容片段，您的帳戶必須擁 `read` 有模型權限。
 
    >[!CAUTION]
    >
