@@ -2,7 +2,7 @@
 title: 自訂和擴充內容片段
 description: 內容片段可延伸標準資產。
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
 
 ---
 
@@ -290,11 +290,9 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 * 可能需要額外努力的任務：
 
-   * 建立／移除新元素時，不會更新簡單片段的資料結構(以「簡 **單片段** 」範本為基礎)。
-
    * 建立新的變 `ContentFragment` 數以更新資料結構。
 
-   * 移除現有變數不會更新資料結構。
+   * 使用元素移除現有變數 `ContentElement.removeVariation()`不會更新指派給變數的全域資料結構。 為確保這些資料結構保持同步，請改 `ContentFragment.removeVariation()` 用，以全域移除變數。
 
 ## 內容片段管理API —— 用戶端 {#the-content-fragment-management-api-client-side}
 
@@ -312,84 +310,18 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## 編輯工作階段 {#edit-sessions}
 
-當用戶在其中一個編輯器頁面中開啟內容片段時，開始編輯會話。 當使用者離開編輯器時，編輯工作階段會完成，方法是選取「 **儲存** 」 **或「取消」**。
+>[!CAUTION]
+>
+>請考慮此背景資訊。 您不應在此更改任何內容(因為它在儲存庫中標籤為 *私用區* )，但在某些情況下，它可能有助於瞭解引擎蓋下的操作方式。
 
-### 需求 {#requirements}
+編輯可跨多個檢視（= HTML頁面）的內容片段是原子。 因為原子式多檢視編輯功能不是典型的AEM概念，所以內容片段會使用所謂的編輯 *工作階段*。
 
-控制編輯會話的要求包括：
+當用戶在編輯器中開啟內容片段時，將啟動編輯會話。 當使用者離開編輯器時，編輯工作階段會完成，方法是選取「 **儲存** 」 **或「取消」**。
 
-* 編輯可跨多個檢視（= HTML頁面）的內容片段應是原子。
+從技術上講，所有編輯都是在 *即時內容* ，就像所有其他AEM編輯一樣。 啟動編輯會話時，將建立當前未編輯狀態的版本。 如果使用者取消編輯，則會還原該版本。 如果使用者按一下「 **儲存**」，則不會執行任何特定動作，因為所有編輯都會在即時內容上執行 ** ，因此所有變更都會持續存在。 此外，按一下「 **儲存** 」會觸發一些背景處理（例如建立全文搜尋資訊和／或處理混合媒體資產）。
 
-* 編輯工作也應該是單 *次的*;在編輯作業結束時，變更必須提交（儲存）或回退（取消）。
-
-* 邊緣案件應妥善處理；這些情況包括使用者手動輸入URL或使用全域導覽離開頁面的情形。
-
-* 應提供定期自動儲存（每x分鐘），以防止資料遺失。
-
-* 如果內容片段由兩個使用者同時編輯，則不應覆寫彼此的變更。
-
-<!--
-#### Processes {#processes}
-
-The processes involved are:
-
-* Starting a session
-
-  * A new version of the content fragment is created.
-
-  * Auto save is started.
-
-  * Cookies are set; these define the currently edited fragment and that there is an edit session open.
-
-* Finishing a session
-
-  * Auto save is stopped.
-
-  * Upon commit:
-
-    * The last modified information is updated.
-
-    * Cookies are removed.
-
-  * Upon rollback:
-
-    * The version of the content fragment that was created when the edit session was started is restored.
-
-    * Cookies are removed.
-
-* Editing
-
-  * All changes (auto save included) are done on the active content fragment - not in a separated, protected area.
-
-  * Therefore, those changes are reflected immediately on AEM pages that reference the respective content fragment
-
-#### Actions {#actions}
-
-The possible actions are:
-
-* Entering a page
-
-  * Check if an editing session is already present; by checking the respective cookie.
-
-    * If one exists, verify that the editing session was started for the content fragment that is currently being edited
-
-      * If the current fragment, reestablish the session.
-
-      * If not, try to cancel editing for the previously edited content fragment and remove cookies (no editing session present afterwards).
-
-    * If no edit session exists, wait for the first change made by the user (see below).
-
-  * Check if the content fragment is already referenced on a page and display appropriate information if so.
-
-* Content change
-
-  * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
-
--->
-
-* 離開頁面
-
-   * 如果編輯工作階段存在且變更尚未持續，則會顯示模式確認對話方塊，通知使用者可能遺失的內容，並允許使用者留在頁面上。
+邊緣案件有一些安全措施；例如，如果使用者嘗試離開編輯器而未儲存或取消編輯工作階段。 此外，還提供定期自動儲存功能，以防止資料遺失。
+請注意，兩個使用者可同時編輯相同的內容片段，因此可能覆寫彼此的變更。 為避免此情況，內容片段必須套用DAM管理員的 *Checkout* （結帳）動作來鎖定。
 
 ## 範例 {#examples}
 
