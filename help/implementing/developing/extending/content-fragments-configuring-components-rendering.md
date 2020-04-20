@@ -2,7 +2,7 @@
 title: 內容片段設定要轉譯的元件
 description: 內容片段設定要轉譯的元件
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -18,17 +18,17 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 * 您需要實作您自己的內容片段元件，
 * 需要運用進階服務。
 
-不過，建議使用核心元件。
+建議使用核心元件。
 
 >[!CAUTION]
 >
 >* **如果您不需要下面所述[的進階服務](#definition-of-advanced-services-that-need-configuration)**，則可忽略此設定。
    >
    >
-* **When you are extending or using the out-of-the-box component(s)**, it is not recommended to change the OSGi configuration.
+* **當您擴充或使用現成可用的元件時**，不建議您變更OSGi組態。
    >
    >
-* **You can write a component from scratch that uses the Content Fragments API only, with no advanced services**. 不過，在這種情況下，您必須開發元件，以便處理適當的處理。
+* **您只能從頭開始編寫僅使用「內容片段API」的元件，毋需進階服務**。 不過，在這種情況下，您必須開發元件，以便處理適當的處理。
 >
 >
 因此，建議使用核心元件。
@@ -42,7 +42,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 * 管理／處理 *中間內容。*
 * 管理／處理混 *合媒體資產。*
 * Dispatcher flush for referenced fragments(if a page containing a fragment is re-published)。
-* Using paragraph-based rendering.
+* 使用段落式演算。
 
 如果您需要其中一項或多項功能，則（通常）使用現成可用的進階服務會比較容易，而不是從頭開發。
 
@@ -120,7 +120,7 @@ OSGi配置為：
      <ul>
        <li><code>-</code> 範圍指示符</li>
        <li><code>;</code> 清單分隔符</li>
-       <li><code>*</code> wildcard</li>
+       <li><code>*</code> 通配符</li>
      </ul>
      </li>
      <li>只有設為 <code>paragraphScope</code> 時才會評估 <code>range</code></li>
