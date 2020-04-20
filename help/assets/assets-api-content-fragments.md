@@ -2,7 +2,7 @@
 title: Adobe Experience Manager作為Assets HTTP API中的雲端服務內容片段支援
 description: 瞭解Adobe Experience Manager如何在資產HTTP API中以雲端服務內容片段支援的方式提供。
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -32,6 +32,7 @@ Assets [REST API](/help/assets/mac-api-assets.md) 可讓Adobe Experience Manager
 此時即可使用資產REST API。 它可讓開發人員直接存取資產（例如影像和內容片段），而不需先將資產內嵌在頁面中，然後以序號化JSON格式傳送其內容。
 
 >[!NOTE]
+>
 >無法從Assets REST API自訂JSON輸出。
 
 Assets REST API也允許開發人員建立新資產、內容片段和資料夾，以修改內容。
