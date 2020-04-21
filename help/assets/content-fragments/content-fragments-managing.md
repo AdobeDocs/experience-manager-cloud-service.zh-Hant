@@ -2,7 +2,7 @@
 title: 管理內容片段
 description: 內容片段會儲存為資產，因此主要是從資產主控台管理。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
 ---
 
@@ -24,13 +24,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 >[!NOTE]
 >
->如需範本的詳細資訊，請參閱開發內容片段；用於簡單內容片段。
-
-<!--
->[!NOTE]
->
->See [Developing Content Fragments](/help/sites-developing/customizing-content-fragments.md) for further information on templates; used for simple content fragments.
--->
+>如需范 [本的詳細資訊](/help/implementing/developing/extending/content-fragments-customizing.md) ，請參閱開發內容片段；用於簡單內容片段。
 
 ### 建立內容片段 {#creating-a-content-fragment}
 
@@ -42,7 +36,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    * 這可以是：
 
-      * 範本——例如簡 **單片段**<!-- [Template](/help/sites-developing/content-fragment-templates.md) - for example **Simple Fragment** -->
+      * Template - for example **Simple Fragment**
 
       * [模型](/help/assets/content-fragments/content-fragments-models.md) -用於建立需要結構化內容的片段；例如機 **場型號**
    * 將顯示所有可用的模板和模型。
@@ -69,12 +63,12 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
          姓名；將用於形成URL。
 
-         強制；將會自動從標題衍生，但可以更新。
+         Mandatory; will be automatically derived from the title, but can be updated.
 
 
-5. 選擇 **Create** （建立）以完成操作，然後選擇 **Open** the fragment for editing（開啟片段以進行編輯）或返回控制 **台完成**。
+5. 選擇 **Create**  (建立) 以完成操作，然後選擇 **Open** the fragment for editing (開啟片段以進行編輯) 或返回控制 **台完成**。
 
-## 內容片段的動作 {#actions-for-a-content-fragment}
+## Actions for a Content Fragment {#actions-for-a-content-fragment}
 
 在 **Assets** Console中，您的內容片段可使用一系列動作：
 
@@ -120,31 +114,31 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 要開啟片段進行編輯：
 
-<!--
 >[!CAUTION]
 >
->To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
--->
+>若要編輯內容片段，您需 [要適當權限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。 如果您遇到問題，請與系統管理員聯繫。
 
 >[!CAUTION]
 >
 >若要編輯內容片段，您需要適當的權限。 如果您遇到問題，請與系統管理員聯繫。
 
-1. 使用 **Assets** 主控台導覽至內容片段的位置。
-2. 開啟片段以供編輯，方法為：
+1. Use the **Assets** console to navigate to the location of your content fragment.
+2. 開啟片段以進行編輯，方法為：
 
    * 按一下／點選片段連結（這取決於控制台檢視）。
    * 選取片段，然後從工 **具列** 「編輯」。
    片段編輯器將開啟：
 
-   ![片段編輯器](assets/cfm-managing-03.png)
+   ![fragment editor](assets/cfm-managing-03.png)
 
    >[!NOTE]
    >
    >1. 當內容頁面上已參考片段時，會顯示訊息。
-   >
-   >
-   >2. 使用「切換側面板」圖示可隱藏／顯 **示側面板** 。
+      >
+      >
+      >
+
+   2. 使用「切換側面板」圖示可隱藏／顯 **示側面板** 。
 
 
 3. 使用側面板中的圖示，在三種模式中導覽：
@@ -176,13 +170,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    >[!CAUTION]
    >
-   >若要編輯內容片段，您需要適當的權限。 如果您遇到問題，請與系統管理員聯繫。
-
-   <!-- 
-  >[!CAUTION]
-  >
-  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
-  -->
+   >若要編輯內容片段，您需 [要適當權限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。 如果您遇到問題，請與系統管理員聯繫。
 
    >[!NOTE]
    >
@@ -210,7 +198,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    >[!NOTE]
    >
-   >自動保存間隔可使用該機制進行 `/conf` 配置。
+   >自動保存間隔可使用該機制 `/conf` 配置。
    >
    >預設值，請參閱：
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
@@ -334,4 +322,4 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 4. 確認「刪 **除** 」動作。
 
    >[!CAUTION]
-   如果片段已在頁面中參考，您會看到警告訊息，並需要確認您要繼續執行強制刪 **除**。 該片段及其內容片段元件將從任何內容頁面中刪除。
+   如果片段已在頁面中參考，您會看到警告訊息，並需要確認您要繼續執行強制刪 **除**。片段及其內容片段元件將會從任何內容頁面中刪除。
