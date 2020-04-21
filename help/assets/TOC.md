@@ -2,7 +2,7 @@
 sub-product: AEM Assets 雲端服務
 user-guide-title: AEM Assets 雲端服務
 translation-type: tm+mt
-source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
+source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
@@ -40,13 +40,13 @@ source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
    + [資產的數位版權管理](drm.md)
 + 設定、管理及擴充 Assets {#admin}
    + [API 和參考資料](developer-reference-material-apis.md)
-   + [AEM Assets HTTP API中的內容片段支援](assets-api-content-fragments.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
    + [處理設定檔](/help/assets/dynamic-media/processing-profiles.md)
    + [多語言資產和資產翻譯](translate-assets.md)
    + [搜尋 Facet](search-facets.md)
    + [擴充資產編輯器](extend-asset-editor.md)
    + [Assets HTTP API](mac-api-assets.md)
+   + [AEM Assets HTTP API中的內容片段支援](assets-api-content-fragments.md)
    + [連線資產](use-assets-across-connected-assets-instances.md)
    + [資產報表](asset-reports.md)
    + [階層式中繼資料](cascading-metadata.md)
