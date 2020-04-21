@@ -2,7 +2,7 @@
 title: 使用內容片段
 description: 瞭解內容片段如何讓您設計、建立、組織和使用不受頁面限制的內容。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
@@ -48,7 +48,7 @@ Adobe Experience Manager(AEM)內容片段可讓您設計、建立、組織和發
 
 ## 內容片段與內容服務 {#content-fragments-and-content-services}
 
-AEM Content services的設計目的，是將AEM中／來自AEM的內容描述和傳送，從而延伸到網頁。
+AEM Content Services的設計目的，是將AEM中／來自AEM的內容描述和傳送，從而延伸到網頁。
 
 它們使用可供任何用戶端使用的標準化方法，將內容傳送至非傳統AEM網頁的頻道。 這些渠道可以包括：
 
@@ -161,7 +161,7 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
    * 對於簡單片段：
 
       * 內容保存在一（或多個）多行文字欄位或元素中。
-      * 元素是在片段範本中定義（在編寫片段時無法定義，請參閱內容片段範本）。 <!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
+      * 元素是在片段範本中定義（在編寫片段時無法定義）。
 
 * **片段段落**
 
@@ -263,8 +263,9 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
 * **片段範本**
 
    * 建立簡 [單片段所需](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)。
-   * 通常在項目實施期間開發；無法在編寫時建立。 <!--  * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring. -->
-   * 定義簡單片段的基本屬性（標題、文字元素數目、標籤定義）。
+   * 通常在專案實作期間開發；無法在編寫時建立。
+
+   * 定義簡單片段的基本屬性 (標題、文字元素數目、標記定義)。
    * 範本定義需要一個標題和一個文字元素；其他一切都是可選的。 範本會定義片段的最小範圍和預設內容（如果適用）。 作者稍後可將片段延伸至範本中定義的範圍以外。
 
 * **內容片段元件**
