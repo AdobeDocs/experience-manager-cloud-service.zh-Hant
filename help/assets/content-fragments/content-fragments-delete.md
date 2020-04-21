@@ -1,13 +1,13 @@
 ---
-title: 內容片段——刪除考量事項
-description: 內容片段——刪除考量事項
+title: 內容片段 - 刪除考量事項
+description: 內容片段 - 刪除考量事項
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
-# 內容片段——刪除考量事項{#content-fragments-delete-considerations}
+# 內容片段 - 刪除考量事項{#content-fragments-delete-considerations}
 
 ## 權限——刪除或不刪除 {#permissions-delete-or-not-delete}
 
@@ -25,11 +25,11 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    內容片段編輯器的基本操作要求可以刪除這種瞬時子元素。 例如，在操縱變化時；編輯中繼資料或管理相關內容時也一樣。
 
    * **使用案例**:需要編輯／更新內容片段的使用者， **而不允許刪除整個片段**。
-   * **權限**:請參閱僅限編輯器功能所需的權限。 <!-- See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only). -->
+   * **權限**:請參 [閱僅編輯器功能所需的權限](#permissions-required-for-editor-functionality-only)。
 
 >[!NOTE]
 >
->當使用者沒有任何刪除權限時，內容片段編輯器會以唯讀 *模式運作* 。 <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>When a user does not have any Delete permissions, the Content Fragment editor operates in *read-only* mode. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ## 僅編輯器功能所需的權限 {#permissions-required-for-editor-functionality-only}
 
-對於需要編輯／更新內容片段而不允許他們刪除整個片段的使用者 ****，必須指派特定權限，因為內容片段編輯器的基本操作要求可以刪除暫時的子元素。
+對於需要編輯/更新內容片段而不允許他們刪除整個片段的使用者 ****，必須指派特定權限，因為內容片段編輯器的基本操作要求可以刪除暫時的子元素。
 
 例如，在操縱變化時；編輯中繼資料或管理相關內容時也一樣。
 
