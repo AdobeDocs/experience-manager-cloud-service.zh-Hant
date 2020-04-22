@@ -2,7 +2,7 @@
 title: 使用內容片段
 description: 瞭解內容片段如何讓您設計、建立、組織和使用不受頁面限制的內容。
 translation-type: tm+mt
-source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -94,7 +94,7 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
 內容片段可以是：
 
 * 簡單片段這些片段沒有預先定義的結構。 它們只包含文字和影像。
-這些是以「簡單片段」範本為基礎。
+這些是以「簡單片段」 **範本為基礎** 。
 
 * 包含結構化內容的片段這些片段是以內容 [片段模型為基礎](/help/assets/content-fragments/content-fragments-models.md)，此模型會預先定義產生片段的結構。
 這些功能也可用於使用JSON匯出器來實現內容服務。
@@ -161,7 +161,7 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
    * 對於簡單片段：
 
       * 內容保存在一（或多個）多行文字欄位或元素中。
-      * 元素是在片段範本中定義（在編寫片段時無法定義）。
+      * 元素在「簡單片段」范 **本中定義** 。
 
 * **片段段落**
 
@@ -197,7 +197,7 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
    * 當系列中的個別資產新增至頁面時，可與頁面編輯器中的片段搭配使用。 這表示它們是可選的，具體取決於特定渠道的要求。
    * 這些資產會 [透過系列關聯至片段](/help/assets/content-fragments/content-fragments-assoc-content.md);關聯的系列可讓作者決定在編寫頁面時要使用哪些資產。
 
-      * 系列可以透過範本、預設內容或作者在片段製作期間，與片段建立關聯。
+      * 系列可以與片段相關聯，做為預設內容，或由作者在編寫片段時建立。
       * [資產(DAM)集合](/help/assets/manage-collections.md) ，是片段相關內容的基礎。
    * （可選）您也可以將片段本身新增至系列，以協助追蹤。
 
@@ -229,10 +229,10 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
 
    * 轉譯特定於編輯目的的片段文字；可以與頻道相關，但非強制性，也可以是臨機本機修改。
    * 建立為主版的副 **本**，但可根據需要進行編輯；這些變化本身之間通常有內容重疊。
-   * 可在片段製作期間定義，或在片段範本中預先定義。
+   * 可在編寫片段時定義。
    * 儲存在片段中，以協助避免內容復本散布。
    * 如果主版內 [容已更新](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) ，則可與主版同步變數。
-   * 可以摘 [要](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) ，快速將文字截斷為預先定義的長度。
+   * 可以摘 [要](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) ，以快速將文字截斷為預先定義的長度。
    * 可在片段編輯 [器的](/help/assets/content-fragments/content-fragments-variations.md) 「變化」標籤下使用。
 
 ### 使用內容片段製作頁面時的內容夾 {#in-between-content-when-page-authoring-with-content-fragments}
@@ -262,11 +262,8 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
 
 * **片段範本**
 
-   * 建立簡 [單片段所需](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)。
-   * 通常在專案實作期間開發；無法在編寫時建立。
-
+   * 需要 **「簡單片段** 」範本才能 [建立簡單片段](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)。
    * 定義簡單片段的基本屬性 (標題、文字元素數目、標記定義)。
-   * 範本定義需要一個標題和一個文字元素；其他一切都是可選的。 範本會定義片段的最小範圍和預設內容（如果適用）。 作者稍後可將片段延伸至範本中定義的範圍以外。
 
 * **內容片段元件**
 
