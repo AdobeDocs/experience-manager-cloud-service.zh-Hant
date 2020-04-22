@@ -2,7 +2,7 @@
 title: 管理內容片段
 description: 內容片段會儲存為資產，因此主要是從資產主控台管理。
 translation-type: tm+mt
-source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -22,10 +22,6 @@ source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
 [在使用結構化內容](/help/assets/content-fragments/content-fragments-models.md) ，建立內容片段模型之前，可以先啟用和建立內容片段模型。
 
->[!NOTE]
->
->如需范 [本的詳細資訊](/help/implementing/developing/extending/content-fragments-customizing.md) ，請參閱開發內容片段；用於簡單內容片段。
-
 ### 建立內容片段 {#creating-a-content-fragment}
 
 建立內容片段的方法（基本上）對於簡單和結構化片段都相同：
@@ -36,10 +32,11 @@ source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
    * 這可以是：
 
-      * Template - for example **Simple Fragment**
+      * 簡單 **片段範本**
 
       * [模型](/help/assets/content-fragments/content-fragments-models.md) -用於建立需要結構化內容的片段；例如機 **場型號**
-   * 將顯示所有可用的模板和模型。
+
+         * 將顯示所有可用的型號。
    選取後，請使 **用** 「下一步」繼續。
 
    ![片段基礎](assets/cfm-managing-01.png)
@@ -63,12 +60,12 @@ source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
          姓名；將用於形成URL。
 
-         Mandatory; will be automatically derived from the title, but can be updated.
+         強制；將會自動從標題衍生，但可以更新。
 
 
 5. 選擇 **Create**  (建立) 以完成操作，然後選擇 **Open** the fragment for editing (開啟片段以進行編輯) 或返回控制 **台完成**。
 
-## Actions for a Content Fragment {#actions-for-a-content-fragment}
+## 內容片段的動作 {#actions-for-a-content-fragment}
 
 在 **Assets** Console中，您的內容片段可使用一系列動作：
 
@@ -122,14 +119,14 @@ source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 >
 >若要編輯內容片段，您需要適當的權限。 如果您遇到問題，請與系統管理員聯繫。
 
-1. Use the **Assets** console to navigate to the location of your content fragment.
+1. 使用 **Assets** 主控台導覽至內容片段的位置。
 2. 開啟片段以進行編輯，方法為：
 
    * 按一下／點選片段連結（這取決於控制台檢視）。
    * 選取片段，然後從工 **具列** 「編輯」。
    片段編輯器將開啟：
 
-   ![fragment editor](assets/cfm-managing-03.png)
+   ![片段編輯器](assets/cfm-managing-03.png)
 
    >[!NOTE]
    >
