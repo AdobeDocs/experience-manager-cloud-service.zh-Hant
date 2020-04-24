@@ -2,7 +2,7 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
+source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
 
 ---
 
