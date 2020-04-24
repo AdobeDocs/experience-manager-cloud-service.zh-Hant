@@ -2,7 +2,7 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
+source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
 
 ---
 
@@ -90,19 +90,19 @@ AEM做為雲端服務，可讓您設定：
 
 * 不連結到特定寫入器，因此將建立並使用具有預設配置的隱式寫入器（每日日誌旋轉）。
 
-### AEM as a Cloud Service HTTP Request Logging {#request-logging}
+**AEM as a Cloud Service HTTP Request Logging**
 
 AEM WCM和儲存庫的所有存取要求都會在此處註冊。
 
 輸出示例：
 
-### AEM HTTP請求／回應存取記錄 {#access-logging}
+**AEM HTTP請求／回應存取記錄**
 
 每個存取請求都會在此與回應一起註冊。
 
 輸出示例：
 
-### Apache Web Server / Dispatcher Logging {#dispatcher-logging}
+**Apache Web Server / Dispatcher Logging**
 
 這是用於調試Dispatcher問題的日誌。 如需詳細資訊，請參 [閱除錯您的Apache和Dispatcher設定](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/)。
 
