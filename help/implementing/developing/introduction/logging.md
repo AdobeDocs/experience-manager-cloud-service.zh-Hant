@@ -2,7 +2,7 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
+source-git-commit: 8a6207596c42c4e1cf85dcccdbd1a1e9501c9073
 
 ---
 
@@ -88,7 +88,7 @@ AEM做為雲端服務，可讓您設定：
 
    * 將消 `Warning` 息寫入 `../logs/error.log` 服務的消息 `org.apache.pdfbox`。
 
-* 不連結到特定寫入器，因此將建立並使用具有預設配置的隱式寫入器（每日日誌旋轉）。
+* 不連結到特定的Writer，因此將建立並使用具有預設配置的隱式Writer。
 
 **AEM as a Cloud Service HTTP Request Logging**
 
@@ -96,7 +96,7 @@ AEM WCM和儲存庫的所有存取要求都會在此處註冊。
 
 輸出示例：
 
-**AEM HTTP請求／回應存取記錄**
+**AEM：雲端服務HTTP請求／回應存取記錄**
 
 每個存取請求都會在此與回應一起註冊。
 
@@ -183,7 +183,7 @@ AEM as a Cloud Service使用下列功能將記錄訊息寫入檔案：
   This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
 -->
 
-## 設定日誌級別 {#setting-the-log-level}
+### 設定日誌級別 {#setting-the-log-level}
 
 若要變更雲端環境的記錄層級，Sling Logging OSGI組態應加以修改，然後進行完整重新部署。 由於這並非瞬時，請務必小心在接收大量流量的生產環境中啟用詳細記錄。 在未來，可能會有更快速變更記錄層級的機制。
 
@@ -191,7 +191,7 @@ AEM as a Cloud Service使用下列功能將記錄訊息寫入檔案：
 >
 > 若要執行下列的設定變更，您必須在本機開發環境上建立這些變更，然後將它們推送至AEM做為雲端服務例項。 如需如何執行此動作的詳細資訊，請參 [閱「部署至AEM as a Cloud Service](/help/implementing/deploying/overview.md)」。
 
-### 啟用DEBUG日誌級別 {#activating-the-debug-log-level}
+**啟用DEBUG日誌級別**
 
 >[!WARNING]
 >
