@@ -1,233 +1,233 @@
 ---
-title: 將資產、檔案夾和系列發佈至品牌入口網站
-description: 將資產、檔案夾和系列發佈至品牌入口網站。
+title: 將資產、資料夾和集合發佈至 Brand Portal
+description: 將資產、資料夾和集合發佈至 Brand Portal。
 contentOwner: Vishabh Gupta
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
 
-# Publish assets to Brand Portal {#publish-assets-to-brand-portal}
+# 將資產發佈至 Brand Portal {#publish-assets-to-brand-portal}
 
-身為Adobe Experience Manager(AEM)Assets管理員，您可以將資產、檔案夾和系列發佈至AEM Assets品牌入口網站例項。 此外，您也可以將資產或資料夾的發佈工作流程排程到稍後的日期或時間。 發佈後，品牌入口網站的使用者可以存取資產、檔案夾和系列，並進一步將它們分發給其他使用者。
+如果您是 Adobe Experience Manager (AEM) Assets 管理員，您可以將資產、資料夾和集合發佈至 AEM Assets Brand Portal 例項。此外，您也可以將資產或資料夾的發佈工作流程安排在之後的日期或時間。發佈後，Brand Portal 的使用者可以存取資產、資料夾和集合，並進一步將它們發佈給其他使用者。
 
-不過，您必須先將AEM資產與品牌入口網站一起設定。 如需詳細資訊，請 [參閱「設定AEM資產與品牌入口網站](configure-aem-assets-with-brand-portal.md)」。
+不過，您必須先使用 Brand Portal 設定 AEM Assets。如需詳細資訊，請參閱[使用 Brand Portal 設定 AEM Assets](configure-aem-assets-with-brand-portal.md)。
 
-如果您在AEM Assets中對原始資產、檔案夾或系列進行後續修改，在您從AEM Assets重新發佈之前，這些變更不會反映在品牌入口網站中。 此功能可確保品牌入口網站中不提供進行中的變更。 品牌入口網站中僅提供管理員發佈的已核准變更。
+如果您對 AEM Assets 的原始資產、資料夾或集合進行後續修改，您必須從 AEM Assets 重新發佈，這些變更才會反映在 Brand Portal 中。這項功能可確保對進行中工作所作的變更不會出現在 Brand Portal 中。Brand Portal 僅提供管理員發佈的已核准變更。
 
-* [將資產發佈至品牌入口網站](#publish-assets-to-bp)
-* [將資料夾發佈至品牌入口網站](#publish-folders-to-brand-portal)
-* [將系列發佈至品牌入口網站](#publish-collections-to-brand-portal)
+* [將資產發佈至 Brand Portal](#publish-assets-to-bp)
+* [將資料夾發佈至 Brand Portal](#publish-folders-to-brand-portal)
+* [將集合發佈至 Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
 >
->Adobe建議交錯排版，最好是在非尖峰時段進行，如此AEM作者就不會佔用過多的資源。
+>Adobe 建議將發佈時間交錯開來，尤其建議選擇非尖峰時段，如此 AEM 作者才不會佔用過多資源。
 
 
-## Publish assets to Brand Portal {#publish-assets-to-bp}
+## 將資產發佈至 Brand Portal {#publish-assets-to-bp}
 
-以下是將資產從AEM Assets發佈至品牌入口網站的步驟：
+以下是從 AEM Assets 發佈資產到 Brand Portal 的步驟：
 
-1. 從「資產」主控台開啟父資料夾，並選取您要發佈的所有資產，然後從工具列按一下「 **[!UICONTROL 快速發佈]** 」選項。
+1. 從 Assets 控制台開啟父資料夾，並選取您要發佈的所有資產，然後在工具列按一下&#x200B;**[!UICONTROL 快速發佈]**&#x200B;選項。
 
    ![publish2bp-2](assets/publish2bp.png)
 
-1. 以下是發佈資產的兩種方式：
-   * [立即發佈](#publish-to-bp-now) （立即發佈資產）
-   * [稍後發佈](#publish-to-bp-later) （排程發佈資產）
+1. 以下有兩種發佈資產的方式：
+   * [現在發佈](#publish-to-bp-now) (立即發佈資產)
+   * [稍後發佈](#publish-to-bp-later) (安排資產發佈時段)
 
-### 立即發佈資產 {#publish-to-bp-now}
+### 現在發佈資產 {#publish-to-bp-now}
 
-若要將選取的資產發佈至品牌入口網站，請執行下列其中一項作業：
+若要將所選資產發佈至 Brand Portal，請執行下列其中一項操作：
 
-* 從工具列中選取「快 **[!UICONTROL 速發佈」]**。 然後，從功能表按一下「 **[!UICONTROL 發佈至品牌入口網站」]**。
+* 在工具列中選取&#x200B;**[!UICONTROL 快速發佈]**。然後在功能表中按一下&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
 
-* 從工具列中，選擇「管 **[!UICONTROL 理出版物」]**。
+* 在工具列中選取&#x200B;**[!UICONTROL 管理出版物]**。
 
-   1. 從「 **[!UICONTROL 動作]**」中，選 **[!UICONTROL 取「發佈至品牌入口網站」]**。
+   1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;中選取&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
 
-      在「 **[!UICONTROL 排程]**」中，選 **[!UICONTROL 擇「現在」]**。
+      在&#x200B;**[!UICONTROL 排程]**&#x200B;中選取&#x200B;**[!UICONTROL 現在]**。
 
-      按一 **[!UICONTROL 下「下一步]**」。
+      按一下&#x200B;**[!UICONTROL 下一步]**。
 
-   2. 在「範圍」中確認您 **[!UICONTROL 的選擇]** ，然後按 **[!UICONTROL 一下「發佈至品牌入口網站」]**。
+   2. 在&#x200B;**[!UICONTROL 範圍]**&#x200B;中確認您的選取項目，然後按一下&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
 
-出現訊息，指出資產已排入發佈至品牌入口網站的佇列。 登入品牌入口網站介面，以檢視已發佈的資產。
+系統會顯示訊息，指出資產已排入佇列，等候發佈至 Brand Portal。登入 Brand Portal 介面可查看已發佈的資產。
 
 ### 稍後發佈資產 {#publish-to-bp-later}
 
-若要排程將資產發佈至品牌入口網站的日期或時間：
+若要將資產發佈至 Brand Portal 的動作安排在之後的日期或時間：
 
-1. 選取您要排程發佈的資產，然後從頂端的工具列按 **[!UICONTROL 一下「管理出版物]** 」。
+1. 選取您要排程發佈的資產，然後在頂端的工具列按一下&#x200B;**[!UICONTROL 管理出版物]**。
 
-1. 在「管 **[!UICONTROL 理出版物]** 」頁面上，選 **[!UICONTROL 取「從動作發佈至品牌入口]** 網站」 ****。
+1. 在&#x200B;**[!UICONTROL 管理出版物]**&#x200B;頁面上，在&#x200B;**[!UICONTROL 動作]**&#x200B;中選取&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
 
-   從「計 **[!UICONTROL 划]** 」中選 **[!UICONTROL 擇「稍後」]**。
+   在&#x200B;**[!UICONTROL 排程]**&#x200B;中選取&#x200B;**[!UICONTROL 稍後]**。
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-1. 選擇啟 **[!UICONTROL 動日期]** ，並指定時間。 按一 **[!UICONTROL 下「下一步]**」。
+1. 選取&#x200B;**[!UICONTROL 啟用日期]**&#x200B;並指定時間。按一下&#x200B;**[!UICONTROL 下一步]**。
 
-1. 選擇啟 **動日期** ，並指定時間。 按一 **下「下一步**」。
+1. 選取&#x200B;**啟用日期**&#x200B;並指定時間。按一下&#x200B;**下一步**。
 
-1. 在「工作流 **[!UICONTROL 程」中指定]** 「工 **[!UICONTROL 作流」標題]**。 按一下「 **[!UICONTROL 稍後發佈]**」。
+1. 在&#x200B;**[!UICONTROL 工作流程]**&#x200B;中指定&#x200B;**[!UICONTROL 工作流程標題]**。按一下&#x200B;**[!UICONTROL 稍後發佈]**。
 
    ![publishworkflow](assets/publishworkflow.png)
 
-登入品牌入口網站介面以檢視已發佈的資產（視您的排程日期或時間而定）。
+登入 Brand Portal 介面可查看已發佈的資產 (視您安排的日期或時間而定)。
 
 ![bp_landing_page](assets/bp_landing_page.png)
 
 
-## Publish folders to Brand Portal {#publish-folders-to-brand-portal}
+## 將資料夾發佈至 Brand Portal {#publish-folders-to-brand-portal}
 
-您可以立即發佈或取消發佈資產資料夾，或排程至稍後的日期或時間。
+您可以立即發佈或取消發佈資產資料夾，或安排至之後的日期或時間。
 
-### Publish folders to Brand Portal {#publish-folders-to-bp}
+### 將資料夾發佈至 Brand Portal {#publish-folders-to-bp}
 
-1. 從「資產」主控台中，選取您要發佈的檔案夾，然後從工具列按一 **[!UICONTROL 下「快速發佈]** 」選項。
+1. 從 Assets 控制台選取您要發佈的資料夾，然後在工具列按一下&#x200B;**[!UICONTROL 快速發佈]**&#x200B;選項。
 
    ![publish2bp](assets/publish2bp.png)
 
-1. **立即發佈資料夾**
+1. **現在發佈資料夾**
 
-   若要將選取的檔案夾發佈至品牌入口網站，請執行下列其中一項作業：
+   若要將所選資料夾發佈至 Brand Portal，請執行下列其中一項操作：
 
-   * 從工具列中選取「快 **[!UICONTROL 速發佈」]**。
+   * 在工具列中選取&#x200B;**[!UICONTROL 快速發佈]**。
 
-      從功能表中，選取「 **[!UICONTROL 發佈至品牌入口網站」]**。
+      在功能表中選取&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
 
-   * 從工具列中，選擇「管 **[!UICONTROL 理出版物」]**。
+   * 在工具列中選取&#x200B;**[!UICONTROL 管理出版物]**。
 
-      1. 從「 **[!UICONTROL 動作]**」中，選 **[!UICONTROL 取「發佈至品牌入口網站」]**。
+      1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;中選取&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
 
-         在「 **[!UICONTROL 排程]**」中，選 **[!UICONTROL 擇「現在」]**。
+         在&#x200B;**[!UICONTROL 排程]**&#x200B;中選取&#x200B;**[!UICONTROL 現在]**。
 
-         按一 **下「下一步」。**
+         按一下&#x200B;**下一步**。
 
-      1. 在「範圍」中確認您 **[!UICONTROL 的選擇]** ，然後按 **[!UICONTROL 一下「發佈至品牌入口網站」]**。
-   出現訊息，指出資料夾已排入發佈至品牌入口網站的佇列。 登入您的品牌入口網站介面，以查看已發佈的資料夾。
+      1. 在&#x200B;**[!UICONTROL 範圍]**&#x200B;中確認您的選取項目，然後按一下&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
+   系統會顯示訊息，指出資料夾已排入佇列，等候發佈至 Brand Portal。登入 Brand Portal 介面可查看已發佈的資料夾。
 
 1. **稍後發佈資料夾**
 
-   若要排程資產檔案夾的發佈日期或時間：
+   若要將資產資料夾的發佈動作安排在之後的日期或時間：
 
-   1. 選取您要排程發佈的檔案夾，從頂端的工具列選 **[!UICONTROL 取「管理出版物]** 」。
-   1. 從「 **[!UICONTROL 動作]**」中，選 **[!UICONTROL 取「發佈至品牌入口網站」]**。
+   1. 選取您要排程發佈的資料夾，然後在頂端的工具列選取&#x200B;**[!UICONTROL 管理出版物]**。
+   1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;中選取&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
 
-      在「計 **[!UICONTROL 划]**」中，選 **[!UICONTROL 擇稍後]**。
+      在&#x200B;**[!UICONTROL 排程]**&#x200B;中選取&#x200B;**[!UICONTROL 稍後]**。
 
-   1. 選擇啟 **[!UICONTROL 動日期]** ，並指定時間。 按一 **[!UICONTROL 下「下一步]**」。
+   1. 選取&#x200B;**[!UICONTROL 啟用日期]**&#x200B;並指定時間。按一下&#x200B;**[!UICONTROL 下一步]**。
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   1. 在「範圍」中確認您 **[!UICONTROL 的選擇]**。 按一 **[!UICONTROL 下「下一步]**」。
+   1. 在&#x200B;**[!UICONTROL 範圍]**&#x200B;中確認您的選取項目。按一下&#x200B;**[!UICONTROL 下一步]**。
 
-   1. 在「工作流程」( **[!UICONTROL Workflows)下指定「工作流」(Workflows]**)標題。 按一下「 **[!UICONTROL 稍後發佈]**」。
+   1. 在&#x200B;**[!UICONTROL 工作流程]**&#x200B;底下指定「工作流程標題」。按一下&#x200B;**[!UICONTROL 稍後發佈]**。
 
       ![managerchedulepub](assets/manageschedulepub.png)
 
-### Unpublish folders from Brand Portal {#unpublish-folders-from-brand-portal}
+### 從 Brand Portal 取消發佈資料夾 {#unpublish-folders-from-brand-portal}
 
-您可以從AEM Assets例項中取消發佈任何已發佈至品牌入口網站的資產資料夾，以移除它。 解除發佈原始資料夾後，品牌入口網站使用者將無法再使用其副本。
+您可以從 AEM Assets 例項中透過取消發佈來移除任何已發佈至 Brand Portal 的資產資料夾。取消發佈原始資料夾後，Brand Portal 使用者將無法再取用資料夾副本。
 
-您可以立即從品牌入口網站解除發佈資產資料夾，或排程至稍後的日期和時間。
+您可以從 Brand Portal 立即取消發佈資產資料夾，或安排在之後的日期和時間。
 
-若要從品牌入口網站取消發佈資產資料夾：
+若要從 Brand Portal 取消發佈資產資料夾：
 
-1. 從「資產」主控台中，選取您要上傳的資產資料夾，然後從工具列按一 **[!UICONTROL 下「管理出版物]** 」選項。
+1. 從 Assets 控制台選取您要取消發佈的資料夾，然後在工具列按一下&#x200B;**[!UICONTROL 管理出版物]**&#x200B;選項。
 
    ![publish2bp-1](assets/publish2bp.png)
 
-1. **立即取消發佈資產資料夾**
+1. **現在取消發佈資產資料夾**
 
-   若要從品牌入口網站立即取消發佈選取的資產資料夾：
+   若要從 Brand Portal 立即取消發佈所選資產資料夾：
 
-   1. 從工具列中，選擇「管 **[!UICONTROL 理出版物」]**。
+   1. 在工具列中選取&#x200B;**[!UICONTROL 管理出版物]**。
 
-   1. 從「動 **[!UICONTROL 作」中]** ，選 **[!UICONTROL 取「從品牌入口網站取消發佈」]**。
+   1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;中選取&#x200B;**[!UICONTROL 從 Brand Portal 取消發佈]**。
 
-      在「 **[!UICONTROL 排程]**」中，選 **[!UICONTROL 擇「現在」]**。
+      在&#x200B;**[!UICONTROL 排程]**&#x200B;中選取&#x200B;**[!UICONTROL 現在]**。
 
-      按一 **[!UICONTROL 下「下一步]**」。
+      按一下&#x200B;**[!UICONTROL 下一步]**。
 
-   1. 在「範圍」中確認您 **[!UICONTROL 的選擇]** ，然後按一 **[!UICONTROL 下「從品牌入口網站取消發佈」]**。
+   1. 在&#x200B;**[!UICONTROL 範圍]**&#x200B;中確認您的選取項目，然後按一下&#x200B;**[!UICONTROL 從 Brand Portal 取消發佈]**。
 
-      ![確認——取消發佈](assets/confirm-unpublish.png)
+      ![confirm-unpublish](assets/confirm-unpublish.png)
 
 1. **稍後取消發佈資產資料夾**
 
-   若要排程將資產檔案夾取消發佈至稍後的日期和時間：
+   若要將取消資產資料夾發佈的動作安排在之後的日期或時間：
 
-   1. 從工具列中，選擇「管 **[!UICONTROL 理出版物」]**。
+   1. 在工具列中選取&#x200B;**[!UICONTROL 管理出版物]**。
 
-   1. 從「動 **[!UICONTROL 作]**」中，選 **[!UICONTROL 取「從品牌入口網站取消發佈」]**。
+   1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;中選取&#x200B;**[!UICONTROL 從 Brand Portal 取消發佈]**。
 
-      在「計 **[!UICONTROL 划]**」中，選 **[!UICONTROL 擇稍後]**。
+      在&#x200B;**[!UICONTROL 排程]**&#x200B;中選取&#x200B;**[!UICONTROL 稍後]**。
 
-   1. 選擇啟 **[!UICONTROL 動日期]** ，並指定時間。 按一 **[!UICONTROL 下「下一步]**」。
+   1. 選取&#x200B;**[!UICONTROL 啟用日期]**&#x200B;並指定時間。按一下&#x200B;**[!UICONTROL 下一步]**。
 
-   1. 在「範圍」中確認您 **[!UICONTROL 的選擇]** ，然後按一 **[!UICONTROL 下「下一步」]**。
+   1. 在&#x200B;**[!UICONTROL 範圍]**&#x200B;中確認您的選取項目，然後按一下&#x200B;**[!UICONTROL 下一步]**。
 
-   1. 在「工作流 **[!UICONTROL 程」中指定]** 「工 **[!UICONTROL 作流」標題]**。 按一下「 **[!UICONTROL 稍後取消發佈]**」。
+   1. 在&#x200B;**[!UICONTROL 工作流程]**&#x200B;中指定&#x200B;**[!UICONTROL 工作流程標題]**。按一下&#x200B;**[!UICONTROL 稍後取消發佈]**。
 
-      ![unpublish工作流程](assets/unpublishworkflows.png)
+      ![unpublishworkflows](assets/unpublishworkflows.png)
 
-## Publish collections to Brand Portal {#publish-collections-to-brand-portal}
+## 將集合發佈至 Brand Portal {#publish-collections-to-brand-portal}
 
-您可以從AEM Assets雲端例項發佈或取消發佈系列。
+您可以從 AEM Assets 雲端例項發佈或取消發佈集合。
 
 >[!NOTE]
 >
->內容片段無法發佈至品牌入口網站。 因此，如果您在AEM Assets中選取內容片段，則無法使 **[!UICONTROL 用「發佈至品牌入口網站]** 」動作。
+>內容片段無法發佈至 Brand Portal。因此，如果您在 AEM Assets 中選取內容片段，就無法使用&#x200B;**[!UICONTROL 發佈至 Brand Portal]**&#x200B;動作。
 >
->如果包含內容片段的系列從AEM Assets發佈至品牌入口網站，則資料夾的所有內容（內容片段除外）都會複製至品牌入口網站介面。
+>如果從 AEM Assets 將含有內容片段的集合發佈至 Brand Portal，則除了內容片段以外，資料夾的所有內容都會複製至 Brand Portal 介面。
 
 
-### 發佈系列 {#publish-collections}
+### 發佈集合 {#publish-collections}
 
-以下是將系列從AEM Assets發佈至品牌入口網站的步驟：
+以下是從 AEM Assets 發佈集合到 Brand Portal 的步驟：
 
-1. 在「AEM Assets UI」中，按一下「AEM logo」。
+1. 在 AEM Assets UI 中按一下 AEM 標誌。
 
-1. From **Navigation** page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+1. 從&#x200B;**導覽**&#x200B;頁面，前往&#x200B;**[!UICONTROL 資產]** > **[!UICONTROL 集合]**。
 
-1. 從「系 **列** 」主控台中，選取您要發佈至品牌入口網站的系列。
+1. 在&#x200B;**集合**&#x200B;控制台中，選取您要發佈至 Brand Portal 的集合。
 
    ![select_collection](assets/select_collection.png)
 
-1. 在工具列中，按一下「 **[!UICONTROL 發佈至品牌入口網站」]**。
+1. 從工具列中按一下&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
 
-1. 在確認對話方塊中，按一下「 **[!UICONTROL 發佈」]**。
+1. 在確認對話方塊中，按一下&#x200B;**[!UICONTROL 發佈]**。
 
-1. 關閉確認消息。
+1. 關閉確認訊息。
 
-   以管理員身分登入品牌入口網站。 已發佈的系列可在「系列」主控台中使用。
+   以管理員身分登入 Brand Portal。已發佈的集合可在「集合」控制台中使用。
 
-   ![發佈系列](assets/published_collection.png)
+   ![已發佈的集合](assets/published_collection.png)
 
-### 取消發佈系列 {#unpublish-collections}
+### 取消發佈集合 {#unpublish-collections}
 
-您可以從AEM Assets例項中取消發佈任何發佈至品牌入口網站的系列，以移除它。 在您解除發佈原始系列後，品牌入口網站使用者將無法再使用其副本。
+您可以從 AEM Assets 例項中透過取消發佈，移除任何已發佈至 Brand Portal 的集合。取消發佈原始集合後，Brand Portal 使用者將無法再使用集合的副本。
 
-以下是解除發佈系列的步驟：
+以下是取消發佈集合的步驟：
 
-1. 從AEM Assets例項的 **Collections** Console中，選取您要解除發佈的系列。
+1. 在 AEM Assets 例項的&#x200B;**集合**&#x200B;控制台中，選取您要取消發佈的集合。
 
    ![select_collection](assets/select_collection-1.png)
 
-1. 在工具列中，按一下「從 **[!UICONTROL 品牌入口網站移除]** 」圖示。
-1. 在對話方塊中，按一下「 **[!UICONTROL 解除發佈]**」。
-1. 關閉確認消息。 系列會從品牌入口網站介面中移除。
+1. 在工具列中按一下&#x200B;**[!UICONTROL 從 Brand Portal 移除]**&#x200B;圖示。
+1. 在對話方塊中，按一下&#x200B;**[!UICONTROL 取消發佈]**。
+1. 關閉確認訊息。集合會從 Brand Portal 介面中移除。
 
-除了上述外，您也可以將中繼資料結構描述、影像預設集、搜尋刻面和標籤從AEM Assets發佈至品牌入口網站。
+除了上述操作，您也可以從 AEM Assets 將中繼資料結構、影像預設集、搜尋 Facet 和標籤發佈至 Brand Portal。
 
-* [將預設集、結構描述和刻面發佈至品牌入口網站](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [將標記發佈至 Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [將預設集、結構和 Facet 發佈至 Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [將標記發佈至 Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-如需詳細 [資訊，請參閱品牌入口網站](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) (Brand Portal)檔案。
+如需詳細資訊，請參閱 [Brand Portal 文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/home.html)。
 
 
 <!--
