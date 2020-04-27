@@ -1,7 +1,7 @@
 ---
-sub-product: AEM 雲端服務 版發行說明
-user-guide-title: AEM 雲端服務 版發行說明
-translation-type: tm+mt
+sub-product: AEM 雲端服務發行說明
+user-guide-title: AEM 雲端服務發行說明
+translation-type: ht
 source-git-commit: 55abc080701134c5067598dd39fe825048e077d4
 
 ---
