@@ -2,7 +2,7 @@
 title: 建立和組織頁面
 description: 如何使用AEM建立和組織頁面
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
 
 ---
 
@@ -108,7 +108,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 #### 標題 {#title}
 
-如果您在建立新頁面時只提供頁面 **Title** ,AEM會從此字串衍生頁面 **Name** ，並根據AEM和JCR所強加的慣例來驗證名稱。 <!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+如果您在建立新頁面時只提供頁面 **Title** ,AEM會從此字串衍生頁面 **Name** ，並根據AEM和JCR所強加的慣例來驗證名稱。<!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
 
 將接 **受包含無效字元的Title** （標題）欄位，但派生的名稱會取代無效字元。 例如：
 
@@ -255,19 +255,21 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
    * [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) 和工具欄
    接著是「復 **制** 」頁面圖示：
 
-   ![「複製」按鈕](/help/sites-cloud/authoring/assets/copy.png)
+   ![複製](/help/sites-cloud/authoring/assets/copy.png)
 
    >[!NOTE]
    >
    >如果您處於選擇模式，則複製頁面時，系統會立即自動退出。
 
 1. 導覽至頁面新復本的位置。
-1. 使用「 **貼上** 」頁面圖示：
+1. 「貼 **上** 」圖示可直接在右側使用下拉箭頭：
 
-   ![貼上按鈕](/help/sites-cloud/authoring/assets/paste.png)
+   ![貼上](/help/sites-cloud/authoring/assets/paste.png)
 
-   原始頁面和任何子頁面的副本將會在此位置建立。
+   您可以:
 
+   1. 選擇「 **貼上** 」頁面圖示本身：將在此位置建立原始頁面和任何子頁面的副本。
+   1. 選擇下拉箭頭以顯示「不含子 **代的貼上** 」選項。 原始頁面的復本將在此位置建立；子頁面將不會複製。
    >[!NOTE]
    >
    >如果將頁面複製到與原始頁面同名的頁面已存在的位置，系統會通過附加數字自動生成名稱的變化。 例如，如 `beach` 果已存在名稱為的新頁 `beach` 面將變 `beach1`為。
@@ -336,7 +338,7 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
 
 >[!NOTE]
 >
->如果頁面已發佈，移動頁面會自動解除發佈。 依預設，移動完成時會重新發佈它，但是這可透過取消勾選「調整／重新發佈」步驟中的「重新發佈 **」欄位來** 變更 **** 。
+>如果頁面已發佈，移動頁面會自動解除發佈。依預設，移動完成時會重新發佈它，但是這可透過取消勾選「調整/重新發佈」步驟中的「重新發佈 **」欄位來** 變更 **** 。
 
 >[!NOTE]
 >
@@ -386,7 +388,7 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
 
 您可以建立檔案夾，協助組織您的檔案和頁面。
 
-1. 開啟 **Sites** 主控台並導覽至所需位置。
+1. Open the **Sites** console and navigate to the required location.
 1. 若要開啟選項清單，請從工具 **列選取** 「建立」
 1. 選擇「 **資料夾** 」(Folder)以開啟對話框。 您可以在此處輸入 **名稱** 和 **標題**:
 
