@@ -1,7 +1,7 @@
 ---
 title: 已知問題
 description: Adobe Experience Manager 雲端服務已知問題的發行說明
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 ---
@@ -19,13 +19,13 @@ source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 ## Sites {#sites}
 -->
 
-## 資產 {#assets}
+## Assets {#assets}
 
 <!-- Jira label: assets-cloud-known-issues -->
 
 部分已知問題包括：
 
-* **中繼資料結構**:資產分級介面工具集，用於造成JSP編譯錯誤。 它已從中繼資料結構中移除。 <!-- CQ-4282865, CQ-4284633 -->
+* **中繼資料結構**：資產評等工具集會造成 JSP 編譯錯誤。該工具已從中繼資料結構中移除。<!-- CQ-4282865, CQ-4284633 -->
 
 ### 即將推出的 Assets 功能 {#upcoming-assets-capabilities}
 
