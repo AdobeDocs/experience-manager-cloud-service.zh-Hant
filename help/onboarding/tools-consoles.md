@@ -1,8 +1,8 @@
 ---
 title: 工具主控台
 description: 了解 AEM 中各種不同的工具主控台。
-translation-type: ht
-source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
+translation-type: tm+mt
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -18,11 +18,13 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 >由於 UI 中的卡片提供已各選項用途的詳細資訊，因此此表格僅簡單提供「工具」面板功能位置的參考資料。
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>章節</td>
    <td>選項</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>一般</td>
    <td> </td>
