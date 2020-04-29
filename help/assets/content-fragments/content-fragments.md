@@ -1,15 +1,15 @@
 ---
 title: 使用內容片段
-description: 瞭解內容片段如何讓您設計、建立、組織和使用不受頁面限制的內容。
+description: 瞭解Adobe Experience Manager(AEM)中的內容片段如何讓您設計、建立、組織和使用不受頁面影響的內容。
 translation-type: tm+mt
-source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
 # 使用內容片段{#working-with-content-fragments}
 
-Adobe Experience Manager(AEM)內容片段可讓您設計、建立、組織和發 [布不受頁面影響的內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 它們可讓您準備內容，以便在多個位置／多個通道中使用。
+以Adobe Experience Manager(AEM)為雲端服務，內容片段可讓您設計、建立、組織和發佈不受頁 [面影響的內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 它們可讓您準備內容，以便在多個位置／多個通道中使用。
 
 內容片段也可以使用AEM核心元件的Sling Model(JSON)匯出功能，以JSON格式傳送。 這種交付形式：
 
@@ -205,7 +205,7 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
    * 當系列中的個別資產新增至頁面時，可與頁面編輯器中的片段搭配使用。 這表示它們是可選的，具體取決於特定渠道的要求。
    * 這些資產會 [透過系列關聯至片段](/help/assets/content-fragments/content-fragments-assoc-content.md);關聯的系列可讓作者決定在編寫頁面時要使用哪些資產。
 
-      * 系列可以與片段相關聯，做為預設內容，或由作者在編寫片段時建立。
+      * 系列可以與片段相關聯，做為預設內容，或由作者在編寫片段時關聯。
       * [資產(DAM)集合](/help/assets/manage-collections.md) ，是片段相關內容的基礎。
    * （可選）您也可以將片段本身新增至系列，以協助追蹤。
 
