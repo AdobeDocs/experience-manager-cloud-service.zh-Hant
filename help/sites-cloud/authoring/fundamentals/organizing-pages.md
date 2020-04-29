@@ -2,7 +2,7 @@
 title: 建立和組織頁面
 description: 如何使用AEM建立和組織頁面
 translation-type: tm+mt
-source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
+source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
 
 ---
 
@@ -366,8 +366,13 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
    >
    >為了安全起見，「刪 **** 除」頁面圖示不能作為快速動作使用。
 
-1. 有對話方塊會要求您確認，請使用:
+1. 對話方塊會要求確認。
 
+   ![刪除對話框](/help/sites-cloud/authoring/assets/delete-page.png)
+
+   * **您要在刪除前先封存頁面嗎?** -如果選中此選項，則刪除時將建立選定要刪除的頁的版本。
+      * [版本可在稍後還原。](/help/sites-cloud/authoring/features/page-versions.md)
+      * 無法還原刪除而未使用舊版的頁面。
    * **取消**&#x200B;來中止動作
    * **刪除**&#x200B;來確認動作：
 
