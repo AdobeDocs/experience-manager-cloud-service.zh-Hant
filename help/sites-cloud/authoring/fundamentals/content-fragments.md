@@ -1,19 +1,19 @@
 ---
 title: 內容片段
-description: Adobe Experience manager作為雲端服務內容片段可讓您設計、建立、組織和使用不受頁面影響的內容
+description: Adobe Experience Manager作為雲端服務內容片段可讓您設計、建立、組織和使用不受頁面影響的內容
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
 # 內容片段 {#content-fragments}
 
-Adobe Experience Manager(AEM)內容片段會建 [立並管理為不受頁面影響的資產](/help/assets/content-fragments/content-fragments.md)。
+Adobe Experience Manager(AEM)中的內容片段是以Cloud Service的形式建立 [並管理為不受頁面影響的資產](/help/assets/content-fragments/content-fragments.md)。
 
 它們可讓您建立不受頻道影響的內容，以及（可能是特定頻道的）變化。 然後，您可以在製作內容頁面時使用這些片段及其變化。
 
-結合更新的JSON匯出器，結構化內容片段也可用來透過Content services將AEM內容傳送至AEM頁面以外的通道。
+結合更新的JSON匯出器，結構化內容片段也可用來透過Content Services將AEM內容傳送至AEM頁面以外的通道。
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Adobe Experience Manager(AEM)內容片段會建 [立並管理為不受頁面影�
    >
    >如需進一步編輯功能的詳細資訊，請參閱：
    >
-   >    * [互動式版面](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >    * [回應式版面](/help/sites-cloud/authoring/features/responsive-layout.md)
    >    * [編輯頁面內容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
@@ -83,13 +83,13 @@ Adobe Experience Manager(AEM)內容片段會建 [立並管理為不受頁面影�
    * **單文字元素**
    * **多文字元素**
 * **元素**
-   * 預設 **主** (Main)將始終可用。
+   * The default **Main** will always be available.
    * 如果片段是使用適當的範本建立，則可使用選取範圍。
    >[!NOTE]
    >
    >可用的元素取決於使用的模板。
 
-* **變數**
+* **變異**
    * 預設主 **版** (Master)將始終可用。
    * 如果已為片段建立變數，則可使用選取範圍。
 * **段落**:指定要包含的段落範圍：
@@ -143,7 +143,7 @@ Adobe Experience Manager(AEM)內容片段會建 [立並管理為不受頁面影�
 
 ### 使用關聯的內容 {#using-associated-content}
 
-如果您有 [與內容片段](/help/assets/content-fragments/content-fragments-assoc-content.md)[相關的內容](/help/assets/content-fragments/content-fragments.md) ，這些資產將可從側面板使用（在您將片段放在內容頁面後）。 關聯內容實際上是中間內容的特 [殊內容來源](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)。
+如果您有 [與內容片段](/help/assets/content-fragments/content-fragments-assoc-content.md)[相關的內容](/help/assets/content-fragments/content-fragments.md) ，這些資產將可從側面板使用 (在您將片段放在內容頁面後)。關聯內容實際上是中間內容的特 [殊內容來源](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)。
 
 >[!NOTE]
 >
