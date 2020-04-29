@@ -1,13 +1,13 @@
 ---
-title: 配置搜索表單
+title: 設定搜尋表單
 description: 將Search Forms for Adobe Experience Manager設定為雲端服務。
 translation-type: tm+mt
-source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
 
-# 配置搜索表單 {#configuring-search-forms}
+# 設定搜尋表單 {#configuring-search-forms}
 
 Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/help/sites-cloud/authoring/getting-started/search.md) 機制。
 
@@ -93,7 +93,7 @@ Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/hel
   </tr>
   <tr>
    <td>分析</td>
-   <td>顯示分析支援的資料時，在「網站」瀏覽器中執行搜尋／篩選功能。 載入Analytics搜尋篩選器以符合已映射的自訂分析欄。</td>
+   <td>顯示分析支援的資料時，在網站瀏覽器中執行搜尋／篩選功能。 載入Analytics搜尋篩選器以符合已映射的自訂分析欄。</td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -531,7 +531,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
    屬性值是絕對字串或運算式語言；例如， `cq:Page` 或
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
 
 * **範圍文字**
 
@@ -549,7 +549,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 * **單選選**&#x200B;項如果選中，選項將顯示為僅允許單選項的複選框。 如果錯誤選取，則可取消選取核取方塊。
 
-* **Publish和Live copy屬性名稱Sites**&#x200B;特定述詞的publish和live copy核取方塊標籤。
+* **Publish和Live Copy屬性名稱Sites**&#x200B;特定述詞的publish和live copy核取方塊標籤。
 
 * &amp;ast;在「設定」標籤的欄 **位標籤上** ，表示欄位是必填欄位，如果留空，則會顯示錯誤訊息。
 
@@ -693,11 +693,13 @@ Dependent on the predicate a selection of settings are available for configurati
 下表列出在搜尋表單上執行編輯、刪除和預覽動作所需的權限。
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td><strong>動作</strong></td>
    <td><strong>權限</strong></td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>編輯 </td>
    <td>讀取、寫入節點 <code>/apps </code>權限。</td>
