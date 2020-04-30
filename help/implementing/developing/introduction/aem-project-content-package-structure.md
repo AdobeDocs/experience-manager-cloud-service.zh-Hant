@@ -2,7 +2,7 @@
 title: AEM 專案結構
 description: 瞭解如何定義封裝結構以部署至Adobe Experience Manager Cloud Service。
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
 
 ---
 
@@ -69,7 +69,7 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
          + 群組
          + ACL（權限）
             + 任何 `rep:policy` 路徑（可變或不可變）
-+ 套件 `ui.content` 或內容套件包含所有內容和設定。 包的常見元 `ui.content` 素包括，但不限於：
++ 該包 `ui.apps` 或代碼包包含要部署的所有代碼，並且僅部署到 `/apps`。 包的常見元 `ui.apps` 素包括，但不限於： <!-- GRANITE-29128 -->
    + 內容感知配置
       + `/conf`
    + 必要、複雜的內容結構(即 內容構建以回購初始化中定義的基線內容結構為基礎，並將其擴展到基線內容結構之上。
@@ -126,7 +126,7 @@ Repo Init提供了定義JCR結構的指令或指令碼，這些結構從常見�
 雖然Repo Init指令碼本身作為指令碼 `ui.apps` 在項目中生存，但它們可以而且應該用於定義以下可變結構：
 
 + 基線內容結構
-   + 範例： `/content/my-app`、 `/content/dam/my-app`、 `/conf/my-app/settings`
+   + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
 + 服務使用者
 + 使用者
 + 群組
