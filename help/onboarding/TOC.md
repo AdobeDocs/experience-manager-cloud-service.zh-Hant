@@ -2,7 +2,7 @@
 sub-product: AEM 雲端服務入門
 user-guide-title: AEM 雲端服務入門
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
 
 ---
 
@@ -25,4 +25,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [AEM 對資料保護與資料隱私權法規的整備](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM 對資料保護與資料隱私權法規的基礎整備](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [AEM Sites 對資料保護與資料隱私權法規的整備](data-privacy-and-protection-readiness/sites-readiness.md)
++ 協助工具 {#accessibility}
+   + [AEM a Cloud Services與網頁協助工具准則](accessibility/web-accessibility.md)
+   + [WCAG 2.1 快速指南](accessibility/quick-guide-wcag.md)
 + [「工具」主控台概述](tools-consoles.md)
