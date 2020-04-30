@@ -2,7 +2,7 @@
 title: AEM 專案結構
 description: 瞭解如何定義封裝結構以部署至Adobe Experience Manager Cloud Service。
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 57a5b6b80097938dd63a73734676ff374db3ecce
 
 ---
 
@@ -69,7 +69,7 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
          + 群組
          + ACL（權限）
             + 任何 `rep:policy` 路徑（可變或不可變）
-+ 該包 `ui.apps` 或代碼包包含要部署的所有代碼，並且僅部署到 `/apps`。 包的常見元 `ui.apps` 素包括，但不限於： <!-- GRANITE-29128 -->
++ 套件 `ui.content` 或內容套件包含所有內容和設定。 包的常見元 `ui.content` 素包括，但不限於：
    + 內容感知配置
       + `/conf`
    + 必要、複雜的內容結構(即 內容構建以回購初始化中定義的基線內容結構為基礎，並將其擴展到基線內容結構之上。
