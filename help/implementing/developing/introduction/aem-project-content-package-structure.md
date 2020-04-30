@@ -2,7 +2,7 @@
 title: AEM 專案結構
 description: 瞭解如何定義封裝結構以部署至Adobe Experience Manager Cloud Service。
 translation-type: tm+mt
-source-git-commit: 57a5b6b80097938dd63a73734676ff374db3ecce
+source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
 
 ---
 
@@ -69,15 +69,13 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
          + 群組
          + ACL（權限）
             + 任何 `rep:policy` 路徑（可變或不可變）
-+ 套件 `ui.content` 或內容套件包含所有內容和設定。 包的常見元 `ui.content` 素包括，但不限於：
++ 套件 `ui.content` 或內容套件包含所有內容和設定。 「內容套件」包含套件中未包含的一 `ui.apps` 切，換言之，任何不在或中的 `/apps` 項目 `/oak:index`。 包的常見元 `ui.content` 素包括，但不限於：
    + 內容感知配置
       + `/conf`
    + 必要、複雜的內容結構(即 內容構建以回購初始化中定義的基線內容結構為基礎，並將其擴展到基線內容結構之上。
       + `/content`、 `/content/dam`等。
    + 受管理的標籤分類
       + `/content/cq:tags`
-   + Oak索引
-      + `/oak:index`
    + Etc legacy nodes
       + `/etc`
 + 包 `all` 裝是容器包裝，僅包含 `ui.apps` 和 `ui.content` 包作為內嵌。包 `all` 不得具有 **任何內容** ，而是將所有部署委派給儲存庫的子包。
@@ -210,7 +208,7 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
 
 ### 容器套件的篩選定義 {#container-package-filter-definition}
 
-由於容器封裝中內嵌了程式碼和內容子封裝，因此必須將內嵌的目標路徑新增至容器專案，以確保內嵌的封裝在容器封裝中 `filter.xml` ，當建立時。
+由於容器封裝中內嵌了程式碼和內容子封裝，因此必須將內嵌的目標路徑新增至容器專案，以確保內嵌的封裝在建立時 `filter.xml` ，會包含在容器封裝中。
 
 只需為包 `<filter root="/apps/<my-app>-packages"/>` 含要部署的子包的任何2級資料夾添加條目。
 
