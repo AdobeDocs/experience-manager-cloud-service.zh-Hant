@@ -1,8 +1,8 @@
 ---
 title: WCAG 2.1 快速指南
 seo-title: WCAG 2.1 快速指南
-translation-type: ht
-source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
+translation-type: tm+mt
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 Adobe Experience Manager (AEM) 雲端服務的開發過程盡可能地遵循「網頁內容可及性指引」。
 
-[網頁內容可及性指引 2.1 版 (WCAG)](https://www.w3.org/TR/WCAG/) 是由[全球資訊網協會 (W3C)](https://www.w3.org/) 的[資訊網可及性推動組織 (WAI))](https://www.w3.org/WAI/) 所制定的一系列經國際公認的指引。
+The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
 WCAG 2.1 包含一系列無需仰賴技術的指引和成功標準，有助身心障礙人士存取與使用網路內容。它們為網路內容作者、設計人員和開發人員提供建議，確保他們製作的資源能盡可能方便讓更多使用者存取，無論使用者有任何身心障礙，例如視障、聽力損失、學習障礙、年齡相關限制等均可使用。
 
