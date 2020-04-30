@@ -2,14 +2,14 @@
 title: 建立適用於Adobe Experience Manager的可存取雲端服務內容（WCAG 2.1符合性）
 description: 協助殘障人士存取和使用網頁內容
 translation-type: tm+mt
-source-git-commit: 6d905c5a29b71c9d05dba910a20ffef21a4eceec
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
 
 # Creating Accessible Content (WCAG 2.1 Conformance) {#creating-accessible-content-wcag-conformance}
 
-World [Wide Wec Consortium](https://www.w3.org/TR/WCAG/)（全球網路資訊協會）的工作組所制定的《網路內容協助工具准則》(WCAG)2.1 [](https://www.w3.org/Consortium/activity#Accessibility_Guidelines_Working_Group)，包含一套技術獨立的准則和成功標準，以協助殘障人士存取和使用網路內容。
+World Wide Wec Consortium [(World Wide Wec Consortium](https://www.w3.org/TR/WCAG/))的一個工作組起草的《Web內容無障礙環境准則》(WCAG)2.1 [](https://www.w3.org/Consortium/activity#Accessibility_Guidelines_Working_Group)，由一套技術獨立的准則和成功標準組成，以幫助殘疾人能夠訪問和使用Web內容。
 
 作為介紹，該聯合組織提供了一系列章節和支援檔案：
 
@@ -552,7 +552,7 @@ AEM可讓您輕鬆使用適當的HTML元素來建構網頁。 在RTE（文本元
 #### 詳細資訊——對比度（最低）(1.4.3) {#more-information-contrast-minimum}
 
 * [瞭解成功標準1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
-* [如何符合成功標準1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
+* [如何符合成功標準1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
 
 ### 調整文字大小(1.4.4) {#resize-text}
 
@@ -1234,7 +1234,7 @@ However, there is no programmatic association between the group title and the ra
 
 本「成功准則」的目的是協助殘障人士避免在執行無法反轉的動作時，因為發生錯誤而造成嚴重後果。 例如，購買不可退還的機票或提交訂單以在經紀帳戶中購買股票，是具有嚴重後果的財務交易。 如果使用者在航空旅行日期犯了錯誤，他／她最終可能會得到一張無法交換的錯日機票。 如果使用者在要購買的股票數量上發生錯誤，他或她最終可能會購買比預期更多的股票。 這兩種錯誤都涉及立即發生且事後無法更改的事務，而且代價非常高昂。 同樣地，如果用戶無意中修改或刪除了儲存在資料庫中的資料（如旅行服務網站中的整個旅行配置檔案），則可能是一個不可恢復的錯誤。 當提及修改或刪除「用戶可控」資料時，其目的是防止大量丟失資料，如刪除檔案或記錄。 不是為了要求確認每個保存命令，或是建立或編輯文檔、記錄或其他資料。
 
-殘障人士更可能犯錯。 閱讀障礙者可以轉寄數字和信件，而機動障礙者可以誤按鍵。 提供反向動作的功能可讓使用者修正可能導致嚴重後果的錯誤。 提供檢閱和修正資訊的能力，讓使用者有機會在採取具有嚴重後果的動作之前，先偵測錯誤。
+殘障人士更可能犯錯。 閱讀障礙者可以轉寄數字和信件，機動障礙者可以誤按鍵。 提供反向動作的功能可讓使用者修正可能導致嚴重後果的錯誤。 提供檢閱和修正資訊的能力，讓使用者有機會在採取具有嚴重後果的動作之前，先偵測錯誤。
 
 用戶可控資料是用戶可觀察的資料，用戶可以通過故意操作來更改和／或刪除。 控制此類資料的用戶的例子包括更新用戶帳戶的電話號碼和地址，或從網站上刪除過去發票的記錄。 它不指使用者無法直接檢視或互動的網際網路記錄檔和搜尋引擎監控資料。
 
