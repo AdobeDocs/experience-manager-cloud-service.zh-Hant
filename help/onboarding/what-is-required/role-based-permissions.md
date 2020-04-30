@@ -1,19 +1,19 @@
 ---
-title: 基於角色的權限
-description: 基於角色的權限
+title: 角色型權限
+description: 角色型權限
 translation-type: tm+mt
-source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
+source-git-commit: 3c56d94f9922cb65b91912dd96eb8aa60efc2b53
 
 ---
 
 
-# 基於角色的權限 {#role-based-permissions}
+# 角色型權限 {#role-based-permissions}
 
 [!UICONTROL Cloud Manager] 具有預先設定的角色，具有適當的權限。 例如，開發人員會開發程式碼，並具有將程式碼推送至 **Git Repository的權限**。 或者，企業擁有者擁有不同的權限，可讓他們定義關鍵績效指標(KPI)並批准部署。
 
 ## 使用者權限 {#user-permissions}
 
-每個角色都具有與每個角色關聯的特定權限、預配置的任務或權限。 此表列出了可用的函式以及可以執行該函式的角色。
+每個角色都具有與每個角色相關聯的特定權限、預先配置的任務或權限。 此表列出了可用的函式以及可以執行該函式的角色。
 
 | 權限 | 說明 | 企業負責人 | 部署管理員 | 計畫經理 | 開發人員 |
 |--- |--- |--- |--- |--- |--- |
@@ -30,6 +30,8 @@ source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
 | 管線執行 | 提供GoLive Approval。 | x | x | x |  |
 | 管線執行 | 排程生產部署。 | x | x | x |  |
 | 管線執行 | 恢復生產管線。 |  |  |  |  |
+| 管線刪除 | 允許刪除管線。 |  | x |  |  |
+| 執行取消 | 取消當前執行。 |  | x |  |  |
 | 管理環境 | 從「管理環境」畫面新增「發佈——分派器」區段。 | x | x |  |  |  |
 | 推播更新 | 啟動推送更新管線。 |  |  |  |  |
 | 產生個人存取Token | 存取Git。 |  | x |  | x |
