@@ -1,19 +1,19 @@
 ---
 title: Adobe Experience Manager 雲端服務與網路無障礙指引
 seo-title: Adobe Experience Manager 雲端服務與網路無障礙指引
-translation-type: ht
-source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
+translation-type: tm+mt
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
 
 # Adobe Experience Manager 雲端服務與網路無障礙指引 {#aem-and-the-web-accessibility-guidelines}
 
-從社會、經濟和法律層面來看，無論目標對象是否有任何不方便或限制，我們都有許多動機必須盡可能方便他們存取網頁內容。因此，網路無障礙日趨成為良好網頁設計中的重要一環。
+從社會、經濟和法律層面來看，無論目標對象是否有任何不方便或限制，我們都有許多動機必須盡可能方便他們存取網頁內容。因此，以Adobe Experience Manager(AEM)為雲端服務的網頁協助功能，對於良好的網頁設計越來越重要。
 
 以 AEM 雲端服務來建立無障礙的網站和內容，可帶來如下影響：
 
-* 負責設定 Adobe Experience Manager (AEM) 的管理員可確保無障礙功能可正確啟用。
+* 負責設定AEM以確保正確啟用協助功能的管理員。
 
 * 作者可使用這些功能建立無障礙網站。
 
