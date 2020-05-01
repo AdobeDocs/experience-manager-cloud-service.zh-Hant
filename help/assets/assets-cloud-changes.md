@@ -2,25 +2,22 @@
 title: Adobe Experience Manager資產雲端服務的顯著變更
 description: AEM Cloud服務中的Adobe Experience Manager Assets與Adobe Experience Manager 6.5相比有顯著變更。
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功能與可能。 但是，與Experience Manager雲端服務相比，Experience Manager Assets的內部部署或Adobe Managed Service之間有許多不同。 本文件主要說明這些重要差異。
-
->[!NOTE]
->
->本檔案著重說明Experience Manager Assets（即雲端服務）所特有的顯著變更。 將Experience Manager的一 [般變更視為雲端服務](/help/release-notes/aem-cloud-changes.md)。
+Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功能與可能。 但是，與Experience Manager雲端服務相比，Experience Manager Assets的內部部署或Adobe Managed Service之間有許多不同。 本檔案強調資產功能的重要差異。 如需其他變更，請參 [閱Experience Manager的一般變更，即雲端服務](/help/release-notes/aem-cloud-changes.md)。
 
 與Experience Manager 6.5相比，主要差異在於：
 
-* [資產擷取](#asset-ingestion)
-* [移除傳統 UI](#classic-ui)
+* [資產擷取和上傳](#asset-ingestion)。
+* [適用於雲端處理的資產微服務](#asset-microservices)。
+* [移除傳統 UI](#classic-ui).
 
-## 資產擷取 {#asset-ingestion}
+## 資產擷取與上傳 {#asset-ingestion}
 
 資產上傳已最佳化，因為可以更佳地縮放資產擷取，並加快上傳速度。 產品功能（網路使用者介面、案頭用戶端）已更新。 但是，這可能會影響到一些現有的自訂。
 
@@ -34,12 +31,14 @@ Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功�
 
 使用資產微服務產生的標準轉譯會以向後相容的方式儲存在資產儲存庫節點中（相同的命名慣例）。
 
-## 開發和測試資產微型服務 {#developing-testing-asset-microservices}
+## 開發和測試資產微型服務 {#asset-microservices}
 
-Asset Microservices是原生雲端服務，可在Cloud Manager中管理的客戶程式和環境中自動布建並連線至Experience Manager。 負責擴充Experience Manager或進行自訂的開發人員可使用現有內容（或包含雲端環境中產生之轉譯的資產）來測試並驗證其程式碼，使用、顯示、下載資產。
+資產微服務使用雲端服務提供資產的可擴充且彈性化處理。 Adobe管理雲端服務，以最佳化處理不同的資產類型和處理選項。 Asset microservices可協助您避免需要協力廠商轉譯工具和方法（例如ImageMagick和FFmpeg轉碼），並簡化組態，同時為一般檔案類型提供現成可用的功能。 目前，雲端服務中不提供ImageMagick整合和FFMmpeg轉碼功能。
 
-若要對程式碼和程式進行端對端驗證，包括資產擷取和處理，請使用管道將程式碼變更部署至雲端開發環境，並完整執行資產微服務處理來進行測試。
+Asset Microservices是雲端原生服務，會在Cloud Manager中管理的客戶程式和環境中自動布建並連線至Experience Manager。 若要擴充或自訂Experience Manager，開發人員可以使用現有內容或資產與在雲端環境中產生的轉譯，以測試並驗證其程式碼，使用、顯示、下載資產。
+
+若要對程式碼和程式進行端對端驗證，包括資產擷取和處理，請使用管道將程式碼變更部署至雲端開發環境，並完整執行資產微服務處理 [](/help/implementing/cloud-manager/configure-pipeline.md) ，進行測試。
 
 ## 移除傳統 UI {#classic-ui}
 
-Experience Manager中不再以雲端服務的形式提供傳統UI。
+Experience Manager中不再以雲端服務的形式提供傳統UI。 標準介面是可觸控的UI。
