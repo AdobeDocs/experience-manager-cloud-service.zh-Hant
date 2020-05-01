@@ -3,7 +3,7 @@ title: 設定並使用資產微服務進行資產處理
 description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -24,14 +24,14 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 資產處理取決於處理設定檔 **[!UICONTROL 中的設定]**，此設定提供預設設定，並允許管理員新增更特定的資產處理設定。 管理員可以建立和維護後處理工作流程的設定，包括選擇性自訂。 自訂工作流程可讓您擴充性和完全自訂。
 
-資產處理的高階流程如下。
+Asset [microservices可讓您處理各種檔案類型](/help/assets/file-format-support.md) ，這些檔案類型包含比舊版Experience Manager更多的現成可用格式，例如PSD和PSB格式的縮圖擷取（先前需要協力廠商解決方案，例如ImageMagick）。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![asset-microservices-flow](assets/asset-microservices-flow.png)
+![資產處理的高階檢視資](assets/asset-microservices-flow.png "產處理的高階檢視")
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 
 使用者可以開啟已完成處理的新上傳資產、開啟資產預覽，然後按一下左側邊欄的「轉譯」檢視，以檢查處理是否實際 **[!UICONTROL 發生]** 。 處理設定檔中的特定轉譯（特定資產的類型與MIME類型包含規則相符）應可見且可存取。
 
-![additional-renditions](assets/renditions-additional-renditions.png)*圖：處理描述檔套用至父資料夾所產生的兩個其他轉譯範例*
+![additional-renditions](assets/renditions-additional-renditions.png)*圖： 處理描述檔套用至父資料夾所產生的兩個其他轉譯範例*
 
 ## 後處理工作流程 {#post-processing-workflows}
 
@@ -162,8 +162,8 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 
 Custom Workflow Runner服務(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服務，提供兩個設定選項：
 
-* 後處理工作流程(依路徑`postProcWorkflowsByPath`):可以根據不同的儲存庫路徑列出多個工作流模型。 路徑和模型應以冒號分隔。 支援簡單儲存庫路徑，並應映射到路徑中的工作流 `/var` 模型。 For example: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* 後處理工作流程(依運算式`postProcWorkflowsByExpression`):可以根據不同的規則運算式列出多個工作流程模型。 運算式和模型應以冒號分隔。 規則運算式應直接指向「資產」節點，而非其中一個轉譯或檔案。 For example: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* 後處理工作流程(依路徑`postProcWorkflowsByPath`): 可以根據不同的儲存庫路徑列出多個工作流模型。 路徑和模型應以冒號分隔。 支援簡單儲存庫路徑，並應映射到路徑中的工作流 `/var` 模型。 For example: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* 後處理工作流程(依運算式`postProcWorkflowsByExpression`): 可以根據不同的規則運算式列出多個工作流程模型。 運算式和模型應以冒號分隔。 規則運算式應直接指向「資產」節點，而非其中一個轉譯或檔案。 For example: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
 >
