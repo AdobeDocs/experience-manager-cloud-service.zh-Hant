@@ -3,7 +3,7 @@ title: 資產移轉指南
 description: 說明如何將資產帶入AEM、套用中繼資料、產生轉譯，以及啟用資產以發佈例項。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >* 合成工作流程
 >
 >
-These software are open source and covered by the [Apache v2 license](https://adobe-consulting-services.github.io/pages/license.html). To ask a question or report an issue, visit the respective [GitHub issues for ACS AEM tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) and [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
+These software are open-source and covered by the [Apache v2 license](https://adobe-consulting-services.github.io/pages/license.html). To ask a question or report an issue, visit the respective [GitHub issues for ACS AEM tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) and [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
 ## 移轉至AEM {#migrating-to-aem}
 
@@ -54,7 +54,7 @@ These software are open source and covered by the [Apache v2 license](https://ad
 
 在將資產放入系統時，效能與穩定性是重要的考量。 由於您要將大量資料載入系統，因此您需要確保系統能盡可能地執行，以盡量減少所需的時間，並避免系統超載，這可能會導致系統崩潰，尤其是在已在生產中的系統中。
 
-將資產載入系統有兩種方法：使用HTTP的推播方式或使用JCR API的推播方式。
+將資產載入系統有兩種方法： 使用HTTP的推播方式或使用JCR API的推播方式。
 
 #### 推送HTTP {#pushing-through-http}
 
@@ -71,7 +71,7 @@ Adobe的「受管理服務」團隊使用名為Glutton的工具，將資料載�
 
 [ACS AEM工具CSV資產匯入工具](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ，會從CSV檔案中從檔案系統提取資產，並從資產匯入的資產中繼資料。 AEM Asset Manager API可用來將資產匯入系統並套用已設定的中繼資料屬性。 理想情況下，資產會透過網路檔案載入或透過外部磁碟機載入伺服器。
 
-由於資產不需要透過網路傳輸，因此整體效能大幅提升，而且通常認為此方法是將資產載入儲存庫的最有效方式。 此外，由於此工具支援中繼資料擷取，因此您可以在單一步驟中匯入所有資產和中繼資料，而不是建立第二個步驟，以透過個別工具套用中繼資料。
+由於資產不需要透過網路傳輸，因此整體效能會大幅提升，而且通常認為此方法是將資產載入儲存庫的最有效方式。 此外，由於此工具支援中繼資料擷取，因此您可以在單一步驟中匯入所有資產和中繼資料，而不是建立第二個步驟，以透過個別工具套用中繼資料。
 
 ### 處理轉譯 {#processing-renditions}
 
@@ -84,7 +84,7 @@ Adobe的「受管理服務」團隊使用名為Glutton的工具，將資料載�
 
 ### 啟動資產 {#activating-assets}
 
-對於具有發佈層的部署，您需要將資產啟動至發佈群。 雖然Adobe建議執行多個單一發佈例項，但將所有資產複製至單一發佈例項，然後複製該例項最有效率。 在啟動大量資產時，在觸發樹狀結構啟動後，您可能需要進行干預。 原因如下：當觸發啟動時，項目會新增至Sling jobs/eventing佇列。 當此佇列的大小開始超過約40,000個項目後，處理速度大幅降低。 當此隊列的大小超過100,000個項目後，系統穩定性就會開始受到影響。
+對於具有發佈層的部署，您需要將資產啟動至發佈群。 雖然Adobe建議執行多個單一發佈例項，但將所有資產複製至單一發佈例項，然後複製該例項最有效率。 在啟動大量資產時，在觸發樹狀結構啟動後，您可能需要進行干預。 原因如下： 當觸發啟動時，項目會新增至Sling jobs/eventing佇列。 當此佇列的大小開始超過約40,000個項目後，處理速度大幅降低。 當此隊列的大小超過100,000個項目後，系統穩定性就會開始受到影響。
 
 要解決此問題，您可以使用 [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) 來管理資產複製。 這樣不需使用Sling佇列，降低開銷，同時可調節工作負載，以防止伺服器過載。 使用FAM管理複製的範例顯示在功能的檔案頁面上。
 
@@ -114,7 +114,7 @@ Adobe的「受管理服務」團隊使用名為Glutton的工具，將資料載�
 
 ## 跨AEM例項移轉 {#migrating-between-aem-instances}
 
-雖然不是這麼常見，但有時您需要將大量資料從一個AEM例項移轉至另一個例項；例如，當您執行AEM升級、升級硬體或移轉至新的資料中心時，例如AMS移轉。
+雖然不是這麼常見，但有時您需要將大量資料從一個AEM例項移轉至另一個例項； 例如，當您執行AEM升級、升級硬體或移轉至新的資料中心時，例如AMS移轉。
 
 在這種情況下，您的資產已填入中繼資料，且已產生轉譯。 您只需專注於將資產從一個實例移至另一個實例。 在AEM例項之間移轉時，請執行下列步驟：
 
