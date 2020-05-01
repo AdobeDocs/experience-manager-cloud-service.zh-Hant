@@ -3,7 +3,7 @@ title: 設定並使用資產微服務進行資產處理
 description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 資產處理取決於處理設定檔 **[!UICONTROL 中的設定]**，此設定提供預設設定，並允許管理員新增更特定的資產處理設定。 管理員可以建立和維護後處理工作流程的設定，包括選擇性自訂。 自訂工作流程可讓您擴充性和完全自訂。
 
-Asset [microservices可讓您處理各種檔案類型](/help/assets/file-format-support.md) ，這些檔案類型包含比舊版Experience Manager更多的現成可用格式，例如PSD和PSB格式的縮圖擷取（先前需要協力廠商解決方案，例如ImageMagick）。
+與舊版Experience Manager相比，Asset microservices [可讓您處理多種檔案類型](/help/assets/file-format-support.md) ，其中包含更多現成可用格式。 例如，PSD和PSB格式的縮圖擷取現在可能是先前需要的協力廠商解決方案（例如ImageMagick）。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
