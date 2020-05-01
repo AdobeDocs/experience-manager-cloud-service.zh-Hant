@@ -1,16 +1,16 @@
 ---
-title: 管理視訊資產
+title: 管理影片資產
 description: 瞭解如何上傳、預覽、註解和發佈視訊資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
 
-# 管理視訊資產 {#manage-video-assets}
+# 管理影片資產 {#manage-video-assets}
 
-瞭解如何在Adobe Experience Manager(AEM)Assets中管理和編輯視訊資產。 視訊編碼和轉碼只能與Dynamic media整合。 沒有Dynamic Media，您就可以取得視訊的基本支援，例如擷取支援檔案格式的預覽縮圖，以及在使用者介面中預覽可直接在瀏覽器中播放的格式。
+瞭解如何在Adobe Experience Manager(AEM)Assets中管理和編輯視訊資產。 視訊編碼和轉碼（例如FFmpeg轉碼）只有與Dynamic Media整合才能進行。 沒有Dynamic Media，您就可以取得視訊的基本支援，例如擷取支援檔案格式的預覽縮圖，以及在使用者介面中預覽可直接在瀏覽器中播放的格式。
 
 <!-- Also, if you are licensed to use Dynamic Media, see the [Dynamic Media video documentation](/help/assets/dynamic-media/video.md). -->
 
@@ -32,5 +32,5 @@ Adobe Experience Manager Assets會使用擴充功能MP4產生視訊資產的預�
 1. 在「資產」主控台中，按一下或點選資 [!UICONTROL 產卡片上的] 「編輯」圖示，以顯示資產詳細資訊頁面。
 1. 若要播放影片，請按一下或點選「預 [!UICONTROL 覽] 」圖示。
 1. 若要註解視訊，請按一下「注 **[!UICONTROL 解]** 」按鈕。 在視訊中的特定時點（畫格）加入註解。 在加上註解時，您可以在畫布上繪圖，並在繪圖中加入註解。 注釋會自動儲存。 要退出注釋嚮導，請按一下「關 **[!UICONTROL 閉」]**。
-1. 尋找視訊中的特定點，在文字欄位中指定時間(以秒 **為單位** )，然後按一 **下Jump**。 例如，若要略過前10秒的視訊，請在文字欄位中輸入20。
+1. 尋找視訊中的特定點，在&#x200B;**「文字」**&#x200B;欄位中指定時間 (以秒為單位)，然後按一下&#x200B;**「跳至」**。例如，若要略過前 10 秒的視訊，請在文字欄位中輸入 20。
 1. 要在時間軸中查看，請按一下注釋。 要從時間軸刪除注釋，請按一下「刪 **[!UICONTROL 除」]**。
