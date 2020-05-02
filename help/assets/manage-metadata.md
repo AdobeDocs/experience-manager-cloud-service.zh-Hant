@@ -4,7 +4,7 @@ description: 瞭解中繼資料的類型，以及[!DNL Adobe Experience Manager 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 07ebe0588944fff40157119e658aca00eaed6ec3
 
 ---
 
@@ -161,7 +161,7 @@ Enterprise Manager Assets可讓您同時編輯多個資產的中繼資料，以�
 
 ### 標準中繼資料 {#standard-metadata}
 
-* dc - [!DNL Dublin Core] 是最重要且廣泛使用的中繼資料集。
+* DC —— 是 [!DNL Dublin Core] 一組重要且廣泛使用的元資料。
 * DICOM —— 數位影像與醫學通訊。
 * Iptc4xmpCore &amp; iptc4xmpExt - International Press Communications Standard包含許多特定主題的中繼資料。
 * rdf —— 資源描述框架——通用語義Web元資料。
@@ -173,45 +173,45 @@ Enterprise Manager Assets可讓您同時編輯多個資產的中繼資料，以�
 應用程式專用的中繼資料包含技術和描述性中繼資料。 如果您使用這些功能，其他應用程式可能無法使用中繼資料。 例如，如果您有包含中繼資料的資產，而另一個影像轉換應用程 [!DNL Adobe Photoshop] 式則嘗試存取中繼資料，則可能無法存取中繼資料。 如果您發現資產中有許多應用程式特定的中繼資料，可以建立將應用程式特定屬性變更為標準屬性的工作流程步驟。
 
 * ACDSee —— 由程式管理的元 [!DNL ACDSee] 資料。 請參 [閱www.acdsee.com/](https://www.acdsee.com/)。
-* 相簿- [!DNL Adobe Photoshop Album]。
-* cq —— 使用者 [!DNL Experience Manager Assets]。
-* dam —— 使用者 [!DNL Experience Manager Assets]。
-* dex - Optima SC說明瀏覽器。
-* crs - Adobe Photoshop Camera Raw。
-* lr - [!DNL Adobe Lightroom]
-* mediapro - Ivew MediaPro。
+* 相簿- [!DNL Adobe Photoshop Album].
+* CQ —— 使用者 [!DNL Experience Manager Assets]。
+* DAM —— 用於 [!DNL Experience Manager Assets]。
+* DEX - [Optima SC描述檔案總管](http://www.optimasc.com/products/dex/index.html) ，是Windows作業系統中中繼資料和檔案管理工具的集合。
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html)。
+* LR - [!DNL Adobe Lightroom].
+* MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro)。
 * MicrosoftPhoto和MP - Microsoft Photo。
-* pdf和pdfx。
-* photoshop &amp; psAux - [!DNL Adobe Photoshop].
+* PDF和PDF/X。
+* Photoshop和psAux - [!DNL Adobe Photoshop].
 
 ### 數位版權管理中繼資料 {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights]。
-* 加上——圖 [片授權通用系統](https://www.useplus.com)。
-* prism - https://www.idealliance.org/prism-metadata業界標準中繼資料的發佈需求。
+* PLUS —— 圖 [片授權通用系統](https://www.useplus.com)。
+* PRISM —— 發佈 [業界標準中繼資料的需求](https://www.idealliance.org/prism-metadata)。
 * PRL —— 稜鏡版權語言。
 * PUR —— 稜鏡使用權。
-* xmpPlus —— 整合PLUS與XMP。
+* `xmpPlus` -將PLUS與XMP整合。
 
 ### 攝影專用中繼資料 {#photography-specific-metadata}
 
 * Exif —— 相機的技術資訊，包括GPS位置。
 * CRS —— 方 [!DNL Camera Raw] 案。
-* Iptc4xmpCore和iptc4xmpExt.
+* `iptc4xmpCore` 和 `iptc4xmpExt`.
 * TIFF —— 影像中繼資料（不僅適用於TIFF影像）。
 
 ### 列印專用的中繼資料 {#print-specific-metadata}
 
-* pdf和pdfx - Adobe PDF和協力廠商應用程式。
-* prism - [](https://www.prismstandard.org) www.prismstandard.org Publishing Requirements for Industry Standard Metadata（業界標準中繼資料的發佈需求）。
+* PDF和PDF/X - Adobe PDF和協力廠商應用程式。
+* PRISM - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
 * XMP。
-* xmpPG —— 分頁文字的XMP中繼資料。
+* `xmpPG` -分頁文字的XMP中繼資料。
 
 ### 多媒體特定中繼資料 {#multimedia-specific-metadata}
 
-* xmpDM - [!DNL Dynamic Media].
-* xmpMM —— 媒體管理。
+* `xmpDM` - [!DNL Dynamic Media].
+* `xmpMM` -媒體管理。
 
 ## 中繼資料導向的工作流程 {#metadata-driven-workflows}
 
