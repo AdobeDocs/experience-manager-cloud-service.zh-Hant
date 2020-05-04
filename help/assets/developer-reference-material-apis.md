@@ -3,7 +3,7 @@ title: 'Adobe Experience Manager雲端服務中用於數位資產管理的資產
 description: 資產API可讓基本的建立——讀取——更新——刪除(CRUD)操作來管理資產，包括二進位、中繼資料、轉譯、註解和內容片段。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
 
 ---
 
@@ -20,7 +20,7 @@ Give a list of and overview of all reference information available.
 
 ## 資產上傳 {#asset-upload-technical}
 
-Experience Manager雲端服務提供將資產上傳至儲存庫的新方式——將二進位上傳至二進位雲端儲存空間。 本節提供其技術概觀。
+Experience Manager雲端服務提供了將資產上傳至儲存庫的新方式——將二進位上傳至二進位雲端儲存空間。 本節提供其技術概觀。
 
 ### 直接二進位上傳概觀 {#overview-binary-upload}
 
@@ -48,7 +48,7 @@ Experience Manager雲端服務提供將資產上傳至儲存庫的新方式—�
 
 ```
 POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-````
+```
 
 請求主體的內容類型應為表單資 `application/x-www-form-urlencoded` 料，包含下列欄位：
 
