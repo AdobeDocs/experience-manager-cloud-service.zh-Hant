@@ -2,7 +2,7 @@
 title: 將OSGi的AEM設定為雲端服務
 description: '具有機密值和環境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
+source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
 
 ---
 
@@ -291,7 +291,7 @@ export ENV_VAR_NAME=my_value
 如果OSGI屬性要求作者與發佈的值不同：
 
 * 應使 `config.author` 用個 `config.publish` 別和OSGi資料夾，如 [Runmode Resolution區段所述](#runmode-resolution)。
-* 應使用獨立變數名稱。 建議使用前置詞，例如author_<variablename> 及發佈_<variablename> 其中變數名稱相同
+* 應使用獨立變數名稱。 建議使用前置詞，例如 `author_<variablename>` 和 `publish_<variablename>` 變數名稱相同
 
 ### 配置示例 {#configuration-examples}
 
