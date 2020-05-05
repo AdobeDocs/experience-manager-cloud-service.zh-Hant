@@ -2,7 +2,7 @@
 title: 將OSGi的AEM設定為雲端服務
 description: '具有機密值和環境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: 743a8b4c971bf1d3f22ef12b464c9bb0158d96c0
+source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
 
 ---
 
@@ -336,3 +336,204 @@ config.dev
 
 其目的是讓OSGI屬性的值在舞台、 `my_var1` prod和3開發環境中的每個環境中不同。 因此，需要呼叫Cloud Manager API，以設定每個開發環境 `my_var1` 的值。
 
+<table>
+<tr>
+<td>
+<b>資料夾</b>
+</td>
+<td>
+<b>myfile.cfg.json的內容</b>
+</td>
+</tr>
+<tr>
+<td>
+config.stage
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc"、"my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.prod
+</td>
+<td>
+<pre>
+{ "my_var1": "val2", "my_var2": "abc"、"my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc"、"my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+**範例3**
+
+其目的是讓OSGi屬性的值在舞台、生產環境 `my_var1` ，以及其中一個開發環境上都相同，但在其他兩個開發環境上則不同。 在這種情況下，需要調用Cloud Manager API來設定每個開發環境的值， `my_var1` 包括應與舞台和生產環境具有相同值的開發環境的值。 它不會繼承資料夾配置中設定的 **值**。
+
+<table>
+<tr>
+<td>
+<b>資料夾</b>
+</td>
+<td>
+<b>myfile.cfg.json的內容</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc"、"my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc"、"my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+要達到此目的，另一種方法是在config.dev資料夾中設定取代Token的預設值，使其與 **config** 資料夾中相同。
+
+<table>
+<tr>
+<td>
+<b>資料夾</b>
+</td>
+<td>
+<b>myfile.cfg.json的內容</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc"、"my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1": "$[env:my_var1;default=val1]" "my_var2": "abc"、"my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+## 設定屬性的Cloud Manager API格式 {#cloud-manager-api-format-for-setting-properties}
+
+### 透過API設定值 {#setting-values-via-api}
+
+呼叫API會將新變數和值部署至雲端環境，類似於一般的客戶程式碼部署管道。 作者和發佈服務將會重新啟動並參考新值，通常需要幾分鐘的時間。
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+```
+]
+        {
+                "name" : "MY_VAR1",
+                "value" : "plaintext value",
+                "type" : "string"  <---default
+        },
+        {
+                "name" : "MY_VAR2",
+                "value" : "<secret value>",
+                "type" : "secretString"
+        }
+]
+```
+
+請注意，預設變數不是透過API設定，而是在OSGi屬性本身中。
+
+如需 [詳細資訊](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) ，請參閱本頁。
+
+### 透過API取得值 {#getting-values-via-api}
+
+```
+GET /program/{programId}/environment/{environmentId}/variables
+```
+
+如需 [詳細資訊](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) ，請參閱本頁。
+
+### 透過API刪除值 {#deleting-values-via-api}
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+若要刪除變數，請將其加入空白值。
+
+如需 [詳細資訊](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) ，請參閱本頁。
+
+### 通過命令行獲取值 {#getting-values-via-cli}
+
+```bash
+$ aio cloudmanager:list-environment-variables ENVIRONMENT_ID
+Name     Type         Value
+MY_VAR1  string       plaintext value 
+MY_VAR2  secretString ****
+```
+
+
+### 通過命令行設定值 {#setting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "plaintext value" --secret MY_VAR2 "some secret value"
+```
+
+### 通過命令行刪除值 {#deleting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
+```
+
+> [!NOTE]
+>
+> 如需 [如何使用](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) Adobe I/O CLI的Cloud Manager外掛程式設定值的詳細資訊，請參閱本頁。
+
+### 變數數 {#number-of-variables}
+
+最多可宣告20個變數。
+
+## 機密和環境特定配置值的部署注意事項 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
+
+由於機密和環境特定組態值不在Git中，因此不屬於正式的AEM（雲端服務部署機制），因此客戶應以雲端服務部署程式的形式來管理、管理和整合AEM。
+
+如上所述，呼叫API會將新變數和值部署至雲端環境，類似於一般的客戶程式碼部署管道。 作者和發佈服務將會重新啟動並參考新值，通常需要幾分鐘的時間。 請注意，Cloud Manager在常規代碼部署期間執行的質量門和測試不會在此過程中執行。
+
+通常，客戶會先呼叫API以設定環境變數，然後再將依賴於他們的程式碼部署在Cloud Manager中。 在某些情況下，在已部署程式碼後，您可能會想要修改現有的變數。
+
+請注意，當使用管道時（AEM更新或客戶部署）,API可能無法成功，這取決於當時執行的端對端管道的哪個部分。 錯誤回應會指出請求未成功，但不會指出特定原因。
+
+有時，排程的客戶程式碼部署會依賴現有變數來擁有新值，這與目前的程式碼不適用。 如果這是顧慮，建議您以加法方式進行變數修改。 若要這麼做，請建立新的變數名稱，而不只是變更舊變數的值，讓舊程式碼永遠不會參照新值。 然後，當新客戶版本看起來穩定時，您可以選擇移除舊值。
+
+同樣地，由於變數的值未版本化，因此回滾程式碼可能會導致其參考導致問題的較新值。 上述的加性變數策略在這方面也有幫助。
+
+此添加變數策略也適用於災難恢復情況，如果需要重新部署前幾天的代碼，則其引用的變數名稱和值將保持不變。 這取決於客戶在移除這些舊變數前等待數天的策略，否則舊程式碼將沒有適當的變數可供參考。
