@@ -1,17 +1,20 @@
 ---
-title: 將AEM部署為雲端服務
-description: '將AEM部署為雲端服務 '
+title: 部署至 AEM 雲端服務
+description: '部署至 AEM 雲端服務 '
 translation-type: tm+mt
-source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# 將AEM部署為雲端服務 {#deploying-to-aem-as-a-cloud-service}
+# 部署至 AEM 雲端服務 {#deploying-to-aem-as-a-cloud-service}
 
 ## 簡介 {#introduction}
 
-與AEM On Premise和Managed services解決方案相比，AEM中程式碼開發的基礎與雲端服務類似。 開發人員可編寫程式碼並在本機進行測試，然後將它推送至遠端AEM做為雲端服務環境。 Cloud manager是Managed services的選用內容傳送工具，是必要項。 現在，這是將程式碼部署至AEM做為雲端服務環境的唯一機制。
+與AEM On Premise和Managed Services解決方案相比，AEM中程式碼開發的基礎與雲端服務類似。 開發人員可編寫程式碼並在本機進行測試，然後將它推送至遠端AEM做為雲端服務環境。 Cloud Manager是Managed Services的選用內容傳送工具，是必要項。 現在，這是將程式碼部署至AEM做為雲端服務環境的唯一機制。
 
 AEM版本的更新永遠是個別的部署事件，與推送自訂代碼不同。 以另一種方式檢視，自訂程式碼版本應針對生產中的AEM版本進行測試，因為它將部署在的上方。 此後發生的AEM版本更新（與現今的Managed Services相比，此更新會很頻繁）會自動套用。 這些程式碼會向後相容於已部署的客戶程式碼。
 
@@ -19,7 +22,7 @@ AEM版本的更新永遠是個別的部署事件，與推送自訂代碼不同�
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
-本檔案的其餘部分將說明開發人員如何調整其實務，以便搭配AEM搭配Cloud service的版本更新和客戶更新。
+本檔案的其餘部分將說明開發人員如何調整其實務，以便搭配AEM搭配Cloud Service的版本更新和客戶更新。
 
 >[!NOTE]
 >建議使用現有程式碼庫的客戶進行 [AEM檔案所述的儲存庫重組練習](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)。
@@ -50,15 +53,15 @@ Health checks are used to monitor the health of the application. 如果這些檢
 和現有的非雲端AEM版本一樣，支援以特定快速入門為基礎的本機離線開發，並預期在大多數情況下都是除錯的首選工具。
 
 >[!NOTE]
->應用程式在本機電腦上的運作方式與Adobe cloud有細微的操作差異。 這些架構差異必須在本機開發期間得到尊重，並可能導致在雲端基礎架構上部署時產生不同的行為。 由於這些差異，在生產中推出新的自訂程式碼之前，請務必先對開發與階段環境執行詳盡的測試。
+>應用程式在本機電腦上的運作方式與Adobe Cloud有細微的操作差異。 這些架構差異必須在本機開發期間得到尊重，並可能導致在雲端基礎架構上部署時產生不同的行為。 由於這些差異，在生產中推出新的自訂程式碼之前，請務必先對開發與階段環境執行詳盡的測試。
 
 為了開發內部版本的自訂程式碼，應下載並安裝 [AEM(Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) )的相關版本。 如需將AEM當做Cloud Service Dispatcher Tools的其他資訊，請參閱 [本頁](/help/implementing/dispatcher/overview.md)。
 
-## 透過Cloud manager和Package Manager部署內容套件 {#deploying-content-packages-via-cloud-manager-and-package-manager}
+## 透過Cloud Manager和Package Manager部署內容套件 {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
 ### 透過Cloud Manager進行部署 {#deployments-via-cloud-manager}
 
-客戶可透過Cloud manager將自訂代碼部署至雲端環境。 請注意，Cloud manager會將本機組裝的內容套件轉換為符合Sling Feature model的物件，這是在雲端環境中執行時，AEM如何描述為雲端服務應用程式。 因此，在查看Cloud環境上的Package manager中的包時，名稱將包含「cp2fm」，而轉換的包會移除所有元資料。 無法與之互動，亦即無法下載、複製或開啟。 有關轉換器的詳細文檔可 [在此處找到](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)。
+客戶可透過Cloud Manager將自訂代碼部署至雲端環境。 請注意，Cloud Manager會將本機組裝的內容套件轉換為符合Sling Feature Model的物件，這是在雲端環境中執行時，AEM如何描述為雲端服務應用程式。 因此，在查看Cloud環境上的Package Manager中的包時，名稱將包含「cp2fm」，而轉換的包會移除所有元資料。 無法與之互動，亦即無法下載、複製或開啟。 有關轉換器的詳細文檔可 [在此處找到](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)。
 
 為AEM撰寫為雲端服務應用程式的內容套件，在不可變和可變內容之間必須有明確的分隔，Cloud Manager會透過失敗建置來強制執行，並輸出如下訊息：
 
@@ -68,7 +71,7 @@ Health checks are used to monitor the health of the application. 如果這些檢
 
 ### 不可變的內容包 {#immutabe-content-packages}
 
-所有保存在不可變儲存庫中的內容和代碼都必須簽入git並通過Cloud manager部署。 換言之，與目前的AEM解決方案不同，程式碼永遠不會直接部署至執行中的AEM例項。 如此可確保在任何雲端環境中執行特定版本的程式碼都相同，如此可避免在生產時意外變更程式碼的風險。 例如，OSGI設定應提交至來源控制項，而不是透過AEM網頁主控台的設定管理員在執行時期進行管理。
+所有保存在不可變儲存庫中的內容和代碼都必須簽入git並通過Cloud Manager部署。 換言之，與目前的AEM解決方案不同，程式碼永遠不會直接部署至執行中的AEM例項。 如此可確保在任何雲端環境中執行特定版本的程式碼都相同，如此可避免在生產時意外變更程式碼的風險。 例如，OSGI設定應提交至來源控制項，而不是透過AEM網頁主控台的設定管理員在執行時期進行管理。
 
 由於交換機啟用了藍綠部署模式而導致的應用程式更改，因此它們不能依賴於可變儲存庫中的更改，但服務用戶、其ACL、節點類型和索引定義更改除外。
 
@@ -81,15 +84,17 @@ Health checks are used to monitor the health of the application. 如果這些檢
 * 使用AEM網頁主控台的組態管理員，對開發人員的本機AEM環境進行必要的變更，然後將結果匯出至本機檔案系統上的AEM專案
 * 在本機檔案系統的AEM專案中手動建立OSGI設定，以參照AEM主控台的設定管理員，取得屬性名稱。
 
+如需OSGI設定的詳細資訊，請 [參閱「將OSGi設定為雲端服務」](/help/implementing/deploying/configuring-osgi.md)。
+
 ## 可變內容 {#mutable-content}
 
-在某些情況下，在原始碼控制中準備內容更改可能會很有用，這樣，每當環境更新時，Cloud manager就可以部署它。 例如，為某些根資料夾結構植入種子或在可編輯的模板中排列更改，以便為應用程式部署更新的元件啟用策略，這可能是合理的。
+在某些情況下，在原始碼控制中準備內容更改可能會很有用，這樣，每當環境更新時，Cloud Manager就可以部署它。 例如，為某些根資料夾結構植入種子或在可編輯的模板中排列更改，以便為應用程式部署更新的元件啟用策略，這可能是合理的。
 
-有兩種策略可描述Cloud manager將部署到可變儲存庫、可變內容包和重新指向語句的內容。
+有兩種策略可描述Cloud Manager將部署到可變儲存庫、可變內容包和重新指向語句的內容。
 
 ### 可變內容套件 {#mutable-content-packages}
 
-資料夾路徑階層、服務使用者和存取控制(ACL)等內容通常會提交至以主原型為基礎的AEM專案中。 技巧包括從AEM匯出或直接以XML格式撰寫。 在建立和部署過程中，Cloud manager會封裝產生的可變內容封裝。 可變內容在流水線的部署階段中安裝的時間不同：
+資料夾路徑階層、服務使用者和存取控制(ACL)等內容通常會提交至以主原型為基礎的AEM專案中。 技巧包括從AEM匯出或直接以XML格式撰寫。 在建立和部署過程中，Cloud Manager會封裝產生的可變內容封裝。 可變內容在流水線的部署階段中安裝的時間不同：
 
 在新版應用程式啟動之前：
 
@@ -103,7 +108,7 @@ Health checks are used to monitor the health of the application. 如果這些檢
 
 切換到新版本的應用程式後：
 
-* 所有其他可透過Jackrabbit vault定義的內容。 例如：
+* 所有其他可透過Jackrabbit Vault定義的內容。 例如：
    * 資料夾（添加、修改、刪除）
    * 可編輯的範本（新增、修改、移除）
    * 上下文感知配置(下面的任 `/conf`何內容)（添加、修改、刪除）
@@ -112,7 +117,7 @@ Health checks are used to monitor the health of the application. 如果這些檢
 可將可變內容安裝限制為製作或發佈，方法是將套件內嵌在install.author或install.publish檔案夾中，位於 `/apps`。 如需建議專案重組的詳細 [資訊](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) ，請參閱AEM檔案。
 
 >[!NOTE]
->內容包部署到所有環境類型(dev、stage、prod)。 無法將部署限制在特定環境。 此限制是為了確保自動執行測試執行的選項。 特定於環境的內容需要通過Package manager手動安裝。
+>內容包部署到所有環境類型(dev、stage、prod)。 無法將部署限制在特定環境。 此限制是為了確保自動執行測試執行的選項。 特定於環境的內容需要通過Package Manager手動安裝。
 
 此外，在套用可變內容包更改後，沒有回滾這些更改的機制。 如果客戶發現問題，可以選擇在下次代碼發行中修正問題，或作為最後手段，將整個系統還原到部署之前的某個時間點。
 
@@ -136,17 +141,17 @@ Health checks are used to monitor the health of the application. 如果這些檢
 由於以下優點，因此，最好對這些支援的內容修改使用案例進行重新分析：
 
 * Repoinit會在啟動時建立資源，讓邏輯可以將這些資源的存在視為已授予。 在可變內容封裝方法中，資源是在啟動後建立的，因此依賴資源的應用程式碼可能會失敗。
-* Repoinit是相對安全的指令集，因為您明確控制要執行的動作。 此外，除了允許移除使用者、服務使用者和群組的少數安全性相關案例外，唯一支援的作業是加入的。 相反，移除可變內容包方法中的某些內容是明確的； 當您定義篩選器時，篩選器所涵蓋的任何項目都會被刪除。 不過，我們仍應小心謹慎，因為如果有任何內容，新內容的存在可能會改變應用程式的行為。
+* Repoinit是相對安全的指令集，因為您明確控制要執行的動作。 此外，除了允許移除使用者、服務使用者和群組的少數安全性相關案例外，唯一支援的作業是加入的。 相反，移除可變內容包方法中的某些內容是明確的；  當您定義篩選器時，篩選器所涵蓋的任何項目都會被刪除。 不過，我們仍應小心謹慎，因為如果有任何內容，新內容的存在可能會改變應用程式的行為。
 * Repoinit可執行快速和原子操作。 相比之下，可變內容封裝可以高度依賴於濾鏡所覆蓋的結構。 即使您更新單個節點，也可能建立大型樹的快照。
 * 可在運行時驗證本地開發環境上的repoinit語句，因為這些語句將在註冊OSGi配置時執行。
 * 重新指向語句是原子和顯式語句，如果狀態已匹配，則將跳過。
 
-當Cloud manager部署應用程式時，它會執行這些陳述式，而與安裝任何內容套件無關。
+當Cloud Manager部署應用程式時，它會執行這些陳述式，而與安裝任何內容套件無關。
 
 要建立重新指向語句，請遵循以下過程：
 
 1. 將OSGi配置添加 `org.apache.sling.jcr.repoinit.RepositoryInitializer` 到項目的配置資料夾中
-1. 將重新指向語句添加到配置的指令碼屬性中。 語法和選項會記錄在 [Sling檔案中](https://sling.apache.org/documentation/bundles/repository-initialization.html)。 請注意，在父資料夾的子資料夾之前應明確建立父資料夾。 例如，在之前、之 `/content` 前明 `/content/myfolder`確建立 `/content/myfolder/mysubfolder`。 對於在低級結構上設定的ACL，建議將其設定在更高級別上，並使用限 `rep:glob` 制。  例如 `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`。
+1. 將重新指向語句添加到配置的指令碼屬性中。 語法和選項會記錄在 [Sling檔案中](https://sling.apache.org/documentation/bundles/repository-initialization.html)。 請注意，在父資料夾的子資料夾之前應明確建立父資料夾。 例如，在之前、之 `/content` 前明 `/content/myfolder`確建立 `/content/myfolder/mysubfolder`。 對於在低級結構上設定的ACL，建議將其設定在更高級別上，並使用限 `rep:glob` 制。  For example `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. 在執行時期在本機開發環境上驗證。
 
 <!-- last statement in step 2 to be clarified with Brian -->
@@ -167,11 +172,11 @@ above appears to be internal, to confirm with Brian -->
 
 ### Package Manager對可變內容包的「一次性」 {#package-manager-oneoffs-for-mutable-content-packages}
 
-有些使用案例會將內容套件安裝為「一次性」。 例如，將特定內容從生產導入到測試階段，以除錯生產問題。 對於這些案例，Package manager可以在AEM中當做雲端服務環境使用。
+有些使用案例會將內容套件安裝為「一次性」。 例如，將特定內容從生產導入到測試階段，以除錯生產問題。 對於這些案例，Package Manager可以在AEM中當做雲端服務環境使用。
 
-由於Package manager是執行時期概念，因此無法將內容或代碼安裝到不可變的儲存庫中，因此這些內容包只能由可變的內容(主要 `/content` 或 `/conf`)組成。 如果內容包含混合的內容（可變內容和不可變內容），則只安裝可變內容。
+由於Package Manager是執行時期概念，因此無法將內容或代碼安裝到不可變的儲存庫中，因此這些內容包只能由可變的內容(主要 `/content` 或 `/conf`)組成。 如果內容包含混合的內容（可變內容和不可變內容），則只安裝可變內容。
 
-透過Cloud Manager安裝的任何內容封裝（可變和不可變），都會在AEM Package Manager的使用者介面中顯示為凍結狀態。 這些軟體包無法重新安裝、重建或甚至下載，並且將以「 **cp2fm」尾碼列出** ，表示其安裝由Cloud manager管理。
+透過Cloud Manager安裝的任何內容封裝（可變和不可變），都會在AEM Package Manager的使用者介面中顯示為凍結狀態。 這些軟體包無法重新安裝、重建或甚至下載，並且將以「 **cp2fm」尾碼列出** ，表示其安裝由Cloud Manager管理。
 
 ### 包括第三方包 {#including-third-party}
 
@@ -241,7 +246,7 @@ above appears to be internal, to confirm with Brian -->
 
 ## 索引 {#indexes}
 
-新的或修改的索引將在新的（綠色）版本開始處理流量之前，導致額外的索引建立或重新建立索引步驟。 本文詳細介紹了Skyline中的索引管 [理](/help/operations/indexing.md)。 您可以在Cloud manager構建頁面上檢查索引作業的狀態，並在新版本準備就緒時收到通知。
+新的或修改的索引將在新的（綠色）版本開始處理流量之前，導致額外的索引建立或重新建立索引步驟。 本文詳細介紹了Skyline中的索引管 [理](/help/operations/indexing.md)。 您可以在Cloud Manager構建頁面上檢查索引作業的狀態，並在新版本準備就緒時收到通知。
 
 >[!NOTE]
 >
@@ -257,13 +262,13 @@ above appears to be internal, to confirm with Brian -->
 
 ## 適用於滾動部署的向後相容程式碼 {#backwards-compatible-code-for-rolling-deployments}
 
-如上所述，AEM作為Cloud service的滾動部署策略意味著舊版和新版本可能同時運行。 因此，請謹慎處理程式碼變更，這些變更不向後相容於仍在運作的舊版AEM。
+如上所述，AEM作為Cloud Service的滾動部署策略意味著舊版和新版本可能同時運行。 因此，請謹慎處理程式碼變更，這些變更不向後相容於仍在運作的舊版AEM。
 
 此外，舊版應測試是否與新版套用的任何新可變內容結構相容，因為不會移除可變內容。
 
 ### 服務用戶和ACL更改 {#service-users-and-acl-changes}
 
-變更存取內容或程式碼所需的服務使用者或ACL，可能會導致舊版AEM中發生錯誤，導致對過時服務使用者的內容或程式碼存取。 為瞭解決此行為，建議您至少在2個版本間進行變更，第一個版本在後續版本進行清理之前，先充當橋梁。
+變更存取內容或程式碼所需的服務使用者或ACL，可能會導致舊版AEM中發生錯誤，導致對過時服務使用者的內容或程式碼存取。 為瞭解決此行為，建議您至少在2個版本中進行變更，第一個版本在後續版本中先充當橋梁。
 
 ### 索引更改 {#index-changes}
 
@@ -279,8 +284,8 @@ above appears to be internal, to confirm with Brian -->
 
 另一方面，AEM是雲端服務，對於哪些執行模式可用，以及如何將OSGI組合和OSGI組態對應至它們，則有更多看法：
 
-* OSGI配置運行模式必須參考dev、stage、prod for the environment或author, publish for the service。 支援組合 `<service>.<environment_type>` ，但必須依此特定順序（例如author.dev或publish.prod）使用這些組合。 OSGI Token應直接從程式碼參考，而不是使用 `getRunModes` 方法，方法將不再包含在執行 `environment_type` 時期。
-* OSGI組合的執行模式僅限於服務（作者、發佈）。 Per-run mode OSGI bundles應安裝在或下方的內容套件 `install/author` 中 `install/publish`。
+* OSGI配置運行模式必須參考dev、stage、prod for the environment或author, publish for the service。 支援組合 `<service>.<environment_type>` ，但必須依此特定順序（例如或）使 `author.dev` 用 `publish.prod`這些。 OSGI Token應直接從程式碼參考，而不是使用 `getRunModes` 方法，方法將不再包含在執行 `environment_type` 時期。 如需詳細資訊，請 [參閱「將AEM的OSGi設定為雲端服務」](/help/implementing/deploying/configuring-osgi.md)。
+* OSGI組合的執行模式僅限於服務（作者、發佈）。 Per-run mode OSGI bundles should be installed in the content package under `install/author` or `install/publish`.
 
 和現有的AEM解決方案一樣，您也無法使用執行模式來安裝特定環境或服務的內容。 如果想要為未在舞台或生產環境中的資料或HTML建立開發環境，則可使用封裝管理員。
 
@@ -307,6 +312,6 @@ above appears to be internal, to confirm with Brian -->
 
 Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager. -->
 
-## Source control中的維護任務配置 {#maintenance-tasks-configuration-in-source-control}
+## Source Control中的維護任務配置 {#maintenance-tasks-configuration-in-source-control}
 
 維護任務配置必須保留在原始碼控制中，因為 **「工具」>「操作** 」螢幕將不再可用於雲環境。 這有利於確保變革是蓄意持續的，而不是反動地實施，甚至可能被遺忘。 如需詳細資 [訊，請參閱「維護工作](/help/operations/maintenance.md) 」文章。
