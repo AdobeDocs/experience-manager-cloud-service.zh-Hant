@@ -2,9 +2,9 @@
 title: 將OSGi的AEM設定為雲端服務
 description: '具有機密值和環境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
+source-git-commit: 6643bc74dcf23e147f011fbe4f72a29bcd52ec18
 workflow-type: tm+mt
-source-wordcount: '2214'
+source-wordcount: '2317'
 ht-degree: 0%
 
 ---
@@ -162,29 +162,29 @@ To add a new configuration to the repository you need to know the following:
 
    `select * from sling:OsgiConfig`
 
-   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
+## 在儲存庫中建立配置 {#creating-the-configuration-in-the-repository}
 
-To actually add the new configuration to the repository:
+要將新配置實際添加到儲存庫，請執行以下操作：
 
-1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
+1. 在您的ui.apps專案中，根據您使 `/apps/…/config.xxx` 用的執行模式，視需要建立檔案夾
 
-1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
+1. 使用PID名稱建立新的JSON檔案並新增副檔 `.cfg.json` 名
 
 
-1. Populate the JSON file with the OSGi configuration key value pairs
+1. 將OSGi組態金鑰值配對填入JSON檔案
 
    >[!NOTE]
    >
-   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
+   >如果您正在配置現成可用的OSGi服務，則可以通過 `/system/console/configMgr`
 
 
-1. Save the JSON file to your project. -->
+1. 將JSON檔案儲存至您的專案。 -->
 
 ## Source Control中的配置屬性格式 {#configuration-property-format-in-source-control}
 
-<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+如上所述，將新配置添加到儲存庫 [部分中，將介紹建立新的OSGI配置](#creating-the-configuration-in-the-repository) 屬性。
 
 請依照下列步驟，並依下列子節所述修改語法：
 
