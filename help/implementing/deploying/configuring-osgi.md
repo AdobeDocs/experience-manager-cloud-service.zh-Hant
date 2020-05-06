@@ -2,9 +2,9 @@
 title: 將OSGi的AEM設定為雲端服務
 description: '具有機密值和環境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2214'
 ht-degree: 0%
 
 ---
@@ -127,64 +127,66 @@ AEM作為雲端服務，需要針對任何機密OSGi組態值（例如密碼、�
 
 使用機密環境特定組態，將所有AEM上機密的值儲存為雲端服務環境，包括「舞台(Stage)」和「生產(Production)」。
 
-### 向儲存庫添加新配置 {#adding-a-new-configuration-to-the-repository}
+<!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
-#### 您需要知道的 {#what-you-need-to-know}
+#### What You Need to Know {#what-you-need-to-know}
 
-要向儲存庫添加新配置，您需要瞭解以下內容：
+To add a new configuration to the repository you need to know the following:
 
-1. 服 **務的永續性** (PID)。
+1. The **Persistent Identity** (PID) of the service.
 
-   參考Web **控制台** (Web console)中的「配置」(Configurations)欄位。 名稱會在包名稱后面的方括弧中顯示(或在頁面底部的 **Configuration Information** （配置資訊）中)。
+   Reference the **Configurations** field in the Web console. The name is shown in brackets after the bundle name (or in the **Configuration Information** towards the bottom of the page).
 
-   例如，建立節點以 `com.day.cq.wcm.core.impl.VersionManagerImpl.` 設定 **AEM WCM版本管理器**。
+   For example, create a node `com.day.cq.wcm.core.impl.VersionManagerImpl.` to configure **AEM WCM Version Manager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. 是否需要特定的執行模式。 建立資料夾：
+1. Whether a specific runmode is required. Create the folder:
 
-   * `config` -所有運行模式
-   * `config.author` -適用於作者環境
-   * `config.publish` -適用於發佈環境
-   * `config.<run-mode>` -適當
+    * `config` - for all run modes
+    * `config.author` - for the author environment
+    * `config.publish` - for the publish environment
+    * `config.<run-mode>` - as appropriate
 
-1. 是否需 **要配置****還是工廠配置** 。
-1. 要配置的單個參數； 包括需要重新建立的任何現有參數定義。
+1. Whether a **Configuration** or **Factory Configuration** is necessary.
+1. The individual parameters to be configured; including any existing parameter definitions that will need to be recreated.
 
-   參考Web控制台中的個別參數欄位。 每個參數的名稱以方括弧顯示。
+   Reference the individual parameter field in the Web console. The name is shown in brackets for each parameter.
 
-   例如，建立屬性
-   `versionmanager.createVersionOnActivation` 在啟動 **時設定Create Version**。
+   For example, create a property
+   `versionmanager.createVersionOnActivation` to configure **Create Version on Activation**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. 中是否存在配置 `/libs`? 要列出實例中的所有配置，請使用CRXDE Lite中的 **Query** tool提交以下SQL查詢：
+1. Does a configuration already exist in `/libs`? To list all configurations in your instance, use the **Query** tool in CRXDE Lite to submit the following SQL query:
 
    `select * from sling:OsgiConfig`
 
-   如果是，則可將此配置複製到， ` /apps/<yourProject>/`然後在新位置中自定義。
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
 
-## 在儲存庫中建立配置 {#creating-the-configuration-in-the-repository}
+## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
 
-要將新配置實際添加到儲存庫，請執行以下操作：
+To actually add the new configuration to the repository:
 
-1. 在您的ui.apps專案中，根據您使 `/apps/…/config.xxx` 用的執行模式，視需要建立檔案夾
+1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
 
-1. 使用PID名稱建立新的JSON檔案並新增副檔 `.cfg.json` 名
+1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
 
 
-1. 將OSGi組態金鑰值配對填入JSON檔案
+1. Populate the JSON file with the OSGi configuration key value pairs
 
    >[!NOTE]
    >
-   >如果您正在配置現成可用的OSGi服務，則可以通過 `/system/console/configMgr`
+   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
 
 
-1. 將JSON檔案儲存至您的專案。
+1. Save the JSON file to your project. -->
 
 ## Source Control中的配置屬性格式 {#configuration-property-format-in-source-control}
 
-如上所述，將新配置添加到儲存庫 [部分中，將介紹建立新的OSGI配置](#creating-the-configuration-in-the-repository) 屬性。 請依照下列步驟，並依下列子節所述修改語法：
+<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+
+請依照下列步驟，並依下列子節所述修改語法：
 
 ### 內嵌值 {#inline-values}
 
