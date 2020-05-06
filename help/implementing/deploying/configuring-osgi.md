@@ -2,12 +2,15 @@
 title: 將OSGi的AEM設定為雲端服務
 description: '具有機密值和環境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '2509'
+ht-degree: 0%
 
 ---
 
 
-# OSGi配置 {#osgi-configurations}
+# Configuring OSGi for AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi](https://www.osgi.org/) 是Adobe Experience Manager(AEM)技術堆疊中的基本元素。 它用於控制AEM的組合束及其配置。
 
@@ -95,7 +98,7 @@ AEM可搭配雲端服務使用三種OSGi組態值。
 
 OSGi的常見情況是使用內嵌OSGi配置值。 特定環境的配置僅用於開發環境之間值不同的特定使用情形。
 
-![](assets/choose-configuration-value-type.png)
+![](assets/choose-configuration-value-type_res1.png)
 
 環境特定配置擴展了包含內嵌值的傳統靜態定義OSGi配置，從而提供了通過Cloud Manager API在外部管理OSGi配置值的能力。 必須瞭解何時應使用定義內嵌值並將其儲存在Git中的常見和傳統方法，而不是將值抽象為特定環境的配置。
 
@@ -165,50 +168,19 @@ AEM作為雲端服務，需要針對任何機密OSGi組態值（例如密碼、�
 
 要將新配置實際添加到儲存庫，請執行以下操作：
 
-1. 使用CRXDE Lite導覽至：
+1. 在您的ui.apps專案中，根據您使 `/apps/…/config.xxx` 用的執行模式，視需要建立檔案夾
 
-   ` /apps/<yourProject>`
+1. 使用PID名稱建立新的JSON檔案並新增副檔 `.cfg.json` 名
 
-1. 如果尚未存在，請建立 `config` 資料夾( `sling:Folder`):
 
-   * `config` -適用於所有運行模式
-   * `config.<run-mode>` -特定於特定運行模式
+1. 將OSGi組態金鑰值配對填入JSON檔案
 
-1. 在此資料夾下建立一個節點：
-
-   * 類型: `sling:OsgiConfig`
-   * 名稱： 持久性身份(PID);
-
-      例如AEM WCM Version Manager使用 `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
-   >將「工廠配置」附加 `-<identifier>` 到名稱時。
-   >
-   >如： `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
-   >
-   >其中， `<identifier>` 由您（必須）輸入以標識實例的自由文本替換（您不能忽略此資訊）; 例如：
-   >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >如果您正在配置現成可用的OSGi服務，則可以通過 `/system/console/configMgr`
 
-1. 對於要配置的每個參數，請在此節點上建立一個屬性：
 
-   * 名稱： 參數名稱，如Web控制台所示； 名稱會在欄位說明結尾的方括弧中顯示。 例如，若 `Create Version on Activation` 使用 `versionmanager.createVersionOnActivation`
-   * 類型： 視情況而定。
-   * 值： 視需要。
-   您只需要為要設定的參數建立屬性，其他人仍會採用AEM設定的預設值。
-
-1. 儲存所有變更。
-
-   當節點更新時，會立即重新啟動服務（如Web控制台中所做的變更）。
-
->[!CAUTION]
->
->您不得變更路徑中的任 `/libs` 何項目。
-
->[!CAUTION]
->
->配置的完整路徑必須正確，才能在啟動時讀取。
-
+1. 將JSON檔案儲存至您的專案。
 
 ## Source Control中的配置屬性格式 {#configuration-property-format-in-source-control}
 
