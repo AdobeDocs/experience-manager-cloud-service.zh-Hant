@@ -2,7 +2,10 @@
 sub-product: AEM雲端服務實作
 user-guide-title: AEM雲端服務實作
 translation-type: tm+mt
-source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 81%
 
 ---
 
@@ -36,6 +39,7 @@ source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
    + [設定搜尋表單](developing/extending/search-forms.md)
 + 部署至 AEM 雲端服務 {#deploying}
    + [部署至 AEM 雲端服務](deploying/overview.md)
+   + [將OSGi的AEM設定為雲端服務](deploying/configuring-osgi.md)
 + 雲端中的 Dispatcher {#dispatcher}
    + [雲端中的 Dispatcher](dispatcher/overview.md)
    + [AEM 雲端服務的內容傳送](dispatcher/content-delivery.md)
