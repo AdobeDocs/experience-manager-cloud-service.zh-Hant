@@ -2,12 +2,15 @@
 title: 瞭解您的測試結果——雲端服務
 description: 瞭解測試結果——雲端服務
 translation-type: tm+mt
-source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
+source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+workflow-type: tm+mt
+source-wordcount: '999'
+ht-degree: 3%
 
 ---
 
 
-# 瞭解測試結果 {#understand-test-results}
+# 了解測試結果 {#understand-test-results}
 
 Cloud Manager for Cloud Services管道執行將支援對舞台環境運行的測試的執行。 這與在「建立和裝置測試」步驟中執行的測試相反，這些測試會離線執行，而且無法存取任何執行中的AEM環境。
 在此內容中執行的測試有兩種類型：
@@ -26,17 +29,18 @@ Cloud Manager for Cloud Services管道執行將支援對舞台環境運行的測
 | 安全性分級 | A = 0漏洞 <br/>B =至少1個小漏洞<br/> C =至少1個大漏洞 <br/>D =至少1個嚴重漏洞 <br/>E =至少1個攔截器漏洞 | 關鍵 | &lt; B |
 | 可靠性分級 | A = 0錯誤 <br/>B =至少1個次要錯誤 <br/>C =至少1個主要錯誤 <br/>D =至少1個嚴重錯誤E =至少1個攔截器錯誤 | 重要 | &lt; C |
 | 可維護性評級 | 代碼氣味的未付補救成本是： <br/><ul><li>&lt;=5%已進入應用程式的時間，評分為A </li><li>6%到10%的評分是B </li><li>11%到20%的評分是C </li><li>21%到50%的評分是D</li><li>超過50%的項目是E</li></ul> | 重要 | &lt; A |
-| 適用範圍 | 單位測試線覆蓋率與條件覆蓋率的混合使用公式：其 <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`<br/>中：CT =運行單元測試時至少評估為&#39;true&#39;的條件 <br/>CF =運行單元測試時評估為&#39;false&#39;的條件至少一次，而 <br/>LC =覆蓋行= lines_to_cover - uncovered_lines <br/><br/> B =條件 <br/>EL =可執行行(lines_to_cover)的總數 | 重要 | &lt; 50% |
+| 適用範圍 | 單位測試線覆蓋率與條件覆蓋率的混合使用公式： <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>其中： CT =運行單元測試時至少評估為&#39;true&#39;的條件 <br/>CF =運行單元測試時評估為&#39;false&#39;的條件至少一次，而 <br/>LC =覆蓋行= lines_to_cover - uncovered_lines <br/><br/> B =條件 <br/>EL =可執行行(lines_to_cover)的總數 | 重要 | &lt; 50% |
 | 跳過的設備測試 | 跳過的單元測試數。 | 資訊 | > 1 |
-| 未結問題 | 整體問題類型——弱點、錯誤和程式碼氣味 | 資訊 | > 1 |
+| 未結問題 | 整體問題類型——弱點、錯誤和程式碼氣味 | 資訊 | > 0 |
 | 複製行 | 重複塊中涉及的行數。 <br/>對於要視為複製的代碼塊： <br/><ul><li>**非Java專案：**</li><li>至少應有100個連續和重複的Token。</li><li>這些預付碼應至少分散於： </li><li>COBOL的30行代碼 </li><li>ABAP的20行代碼 </li><li>10行其他語言的程式碼</li><li>**Java專案：**</li><li> 不論預付碼和行數為何，至少應有10個連續和重複的陳述式。</li></ul> <br/>在檢測重複時，會忽略縮排和字串文字的差異。 | 資訊 | > 1% |
+| 雲端服務相容性 | 已識別的雲端服務相容性問題數目。 | 資訊 | > 0 |
 
 
 >[!NOTE]
 >
 >請參閱 [量度定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) ，以取得詳細定義。
 
-您可以在此處下載規 [則清單-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-Rules-new-one.xlsx)
+您可以在此處下載規 [則清單-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
@@ -126,7 +130,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 但是，如果構建版本未生成測試JAR，則預設情況下測試通過。 此步驟是在階段部署後立即執行的。
 
 >[!NOTE]
->「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。 這些記錄檔不包含實際AEM執行階段程式的記錄檔——這些記錄檔可使用一般的「下載」或「尾部記錄檔」功能來存取。 如需詳細 [資訊，請參閱「存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md) 」。
+>「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。這些記錄檔不包含實際AEM執行階段程式的記錄檔——這些記錄檔可使用一般的「下載」或「尾部記錄檔」功能來存取。 如需詳細 [資訊，請參閱「存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md) 」。
 
 ## 本地測試執行 {#local-test-execution}
 
