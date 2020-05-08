@@ -2,7 +2,10 @@
 title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: b7bb84b026c9187cb633e9ccfdc17aa5ec930aff
+workflow-type: tm+mt
+source-wordcount: '3916'
+ht-degree: 1%
 
 ---
 
@@ -15,6 +18,9 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 >[!NOTE]
 >Windows使用者將需要使用Windows 10 Professional或其他支援Docker的散發版本。 這是在本地電腦上運行和調試Dispatcher的先決條件。 以下各節包含使用Mac或Linux版本SDK的命令，但Windows SDK也可以使用類似的方式。
+
+>[!WARNING]
+> Windows使用者： 目前版本的AEM（Cloud Service本機Dispatcher Tools,v2.0.20）與Windows不相容。 請聯絡 [Adobe支援](https://daycare.day.com/home.html) ，以取得Windows相容性的更新。
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
@@ -264,7 +270,7 @@ Cloud manager validator 1.0.4
 
 啟用的場應位於上述子資料夾中。
 
-**包含的檔案(...)必須命名：...**
+**包含的檔案(...)必須命名： ...**
 
 您的農場配置中有兩個部分必須 **包含** : `/renders` 和 `/allowedClients` 部分 `/cache` 中。 這些區段必須如下所示：
 
@@ -282,9 +288,9 @@ Cloud manager validator 1.0.4
 }
 ```
 
-**檔案包含於未知位置：...**
+**檔案包含於未知位置： ...**
 
-農場配置中有四個部分，允許您在其中包含自己的檔案：, `/clientheaders``filters`, `/rules` section and `/cache``/virtualhosts`所包含的檔案需命名如下：
+農場配置中有四個部分，允許您在其中包含自己的檔案： `/clientheaders`, `filters`, `/rules` 在 `/cache` 節和中 `/virtualhosts`。 所包含的檔案需命名如下：
 
 | 章節 | 包含檔案名 |
 |------------------|--------------------------------------|
@@ -295,7 +301,7 @@ Cloud manager validator 1.0.4
 
 或者，您也可以包含 **這些檔案的預設版本** ，其名稱會以字詞 `default_`為前置詞，例如。`../filters/default_filters.any`。
 
-**在任何已知位置之外包含語句(...):...**
+**在任何已知位置之外包含語句(...): ...**
 
 除上文各段提及的六個部分外，您不得使用該 `$include` 陳述，例如，以下內容會產生此錯誤：
 
@@ -305,9 +311,9 @@ Cloud manager validator 1.0.4
 }
 ```
 
-**允許的客戶端／呈現不包括於：...**
+**允許的客戶端／呈現不包括於： ...**
 
-當您未在區段中指定包含時，就會 `/renders` 產生 `/allowedClients` 此 `/cache` 錯誤。 請參閱&#x200B;**包含的檔案(...)必須命名：...** 的子菜單。
+當您未在區段中指定包含時，就會 `/renders` 產生 `/allowedClients` 此 `/cache` 錯誤。 請參閱&#x200B;**包含的檔案(...)必須命名： ...** 的子菜單。
 
 **篩選不得使用全域模式以允許請求**
 
@@ -323,7 +329,7 @@ Cloud manager validator 1.0.4
 
 **包含的檔案(...)與任何已知檔案不匹配**
 
-Apache虛擬主機配置中有兩種類型的檔案可指定為包括：重寫和變數。
+Apache虛擬主機配置中有兩種類型的檔案可指定為包括： 重寫和變數。
 所包含的檔案需命名如下：
 
 | 類型 | 包含檔案名 |
@@ -338,9 +344,9 @@ Apache虛擬主機配置中有兩種類型的檔案可指定為包括：重寫�
 
 此消息表示您的配置具有不建議使用的1版佈局，其中包含完整的Apache配置和帶前置詞的 `ams_` 檔案。 雖然這仍受支援，但是您應切換至新版面。
 
-## Testing your Apache and Dispatcher configuration locally {#testing-apache-and-dispatcher-configuration-locally}
+## 在本機測試您的Apache和Dispatcher配置 {#testing-apache-and-dispatcher-configuration-locally}
 
-It is also possible to test drive your Apache and Dispatcher configuration locally. 它要求本機安裝Docker，而您的組態必須如上所述通過驗證。
+您也可以在本機測試Apache和Dispatcher配置。 它要求本機安裝Docker，而您的組態必須如上所述通過驗證。
 
 通過使用&quot;`-d`&quot;參數，驗證器將輸出包含調度程式所需的所有配置檔案的資料夾。
 
@@ -522,7 +528,7 @@ Enter directory `conf.d/variables`.
 
 在所有虛擬主機檔案中：
 
-重新命 `PUBLISH_DOCROOT` 名為 `DOCROOT`移除參照名為、或 `DISP_ID``PUBLISH_FORCE_SSL``PUBLISH_WHITELIST_ENABLED`
+重新命 `PUBLISH_DOCROOT` 名為 `DOCROOT`移除參照名為、或 `DISP_ID``PUBLISH_FORCE_SSL` `PUBLISH_WHITELIST_ENABLED`
 
 ### 運行驗證器以檢查狀態
 
@@ -558,11 +564,9 @@ Enter directory `conf.dispatcher.d/cache`.
 
 移除任何具有尾碼的檔案 `_invalidate_allowed.any`。
 
-Copy the file `conf.dispatcher.d/cache/default_invalidate_any` from the default
-AEM in the Cloud dispatcher configuration to that location.
+將Cloud Dispatcher `conf.dispatcher.d/cache/default_invalidate_any` 設定中的預設AEM檔案複製至該位置。
 
-In each farm file, remove any contents in the `cache/allowedClients` section and replace it
-with:
+在每個群檔案中，刪除該部分中的任 `cache/allowedClients` 何內容，並將其替換為：
 
 ```
 $include "../cache/default_invalidate.any"
@@ -625,8 +629,7 @@ Enter directory `conf.dispatcher.d/renders`.
 
 將預設AEM `conf.dispatcher.d/renders/default_renders.any` 的檔案複製為Cloud Service分派程式設定至該位置。
 
-In each farm file, remove any contents in the `renders` section and replace it
-with:
+在每個群檔案中，移除區段中的任何內 `renders` 容，並將其取代：
 
 ```
 $include "../renders/default_renders.any"
@@ -634,7 +637,7 @@ $include "../renders/default_renders.any"
 
 ### 檢查虛擬主機
 
-Rename the directory `conf.dispatcher.d/vhosts` to `conf.dispatcher.d/virtualhosts` and enter it.
+將目錄重 `conf.dispatcher.d/vhosts` 命名 `conf.dispatcher.d/virtualhosts` 並輸入。
 
 移除任何前置詞的檔案 `ams_`。
 
@@ -674,7 +677,7 @@ $ validator dispatcher .
 
 使用AEM中 `docker_run.sh` 的指令碼做為Cloud Service Dispatcher Tools，您可以測試您的設定是否不包含任何其他只會顯示部署錯誤的錯誤：
 
-### 步驟1:使用驗證器生成部署資訊
+### 步驟1: 使用驗證器生成部署資訊
 
 ```
 validator full -d out .
@@ -682,7 +685,7 @@ validator full -d out .
 
 這將驗證完整配置，並在 `out`
 
-### 步驟2:使用部署資訊在Docker映像中啟動調度程式
+### 步驟2: 使用部署資訊在Docker映像中啟動調度程式
 
 當您的AEM發佈伺服器在您的macOS電腦上執行，並在連接埠4503上監聽時，您可以在該伺服器前面執行Dispatcher，如下所示：
 
