@@ -2,9 +2,9 @@
 title: 將OSGi的AEM設定為雲端服務
 description: '具有機密值和環境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
+source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2689'
 ht-degree: 0%
 
 ---
@@ -164,41 +164,56 @@ To add a new configuration to the repository you need to know the following:
 
    If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## 在儲存庫中建立配置 {#creating-the-configuration-in-the-repository}
+## 建立OSGi配置
 
-要將新配置實際添加到儲存庫，請執行以下操作：
+建立新OSGi配置有兩種方法，如下所述。 前一種方法通常用於設定由開發人員具備眾所周知OSGi屬性和值的自訂OSGi元件，後一種方法則用於AEM提供的OSGi元件。
 
-1. 在您的ui.apps專案中，根據您使 `/apps/…/config.xxx` 用的執行模式，視需要建立檔案夾
+### 編寫OSGi配置
 
-1. 使用PID名稱建立新的JSON檔案並新增副檔 `.cfg.json` 名
+JSON格式的OSGi組態檔可直接手動寫入AEM專案。 這通常是為知名的OSGi元件建立OSGi配置的最快方法，尤其是由定義這些配置的同一開發人員設計和開發的定製OSGi元件。 此方法還可用於複製／貼上和更新不同運行模式資料夾中相同OSGi元件的配置。
+
+1. 在IDE中，開啟項 `ui.apps` 目，找到或建立配置資料夾(`/apps/.../config.<runmode>`)，該資料夾針對新OSGi配置應生效的運行模式
+1. 在此配置資料夾中，建立新 `<PID>.cfg.json` 檔案。 PID是OSGi元件的持久標識通常是OSGi元件實施的完整類名。 例如：
+   `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
+請注意，OSGi配置工廠檔案名，請使用 `<PID>-<factory-name>.cfg.json` 命名約定
+1. 開啟新 `.cfg.json` 檔案，並依 [JSON OSGi組態格式定義OSGi屬性和值配對的鍵／值組合](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)。
+1. 儲存您對新檔案的變 `.cfg.json` 更
+1. 將新的OSGi配置檔案添加並提交到Git
+
+### 使用AEM SDK快速入門產生OSGi設定
+
+AEM SDK Quickstart Jar的AEM Web Console可用來設定OSGi元件，並將OSGi組態匯出為JSON。 這對於設定AEM提供的OSGi元件很有用，其OSGi屬性及其值格式可能無法由開發人員在AEM專案中定義OSGi組態。 請注意，使用AEM Web Console的「設定UI」會將檔案寫入儲存庫，因此請注意，當AEM Project定義的OSGi組態可能與產生的組態不同時，可避免在本機開發期間發生意外行為。 `.cfg.json`
+
+1. 以管理員使用者身分登入AEM SDK Quickstart Jar的AEM Web主控台
+1. 導覽至「OSGi >設定」
+1. 找到要設定的OSGi元件，並點選其標題以進行編輯
+   ![OSGi配置](./assets/configuring-osgi/configuration.png)
+1. 視需要透過Web UI編輯OSGi組態屬性值
+1. 將永續性身分識別(PID)記錄到安全位置，稍後將用來產生OSGi設定JSON
+1. 點選「儲存」
+1. 導覽至「OSGi > OSGi Installer Configuration Printer」
+1. 貼入步驟5中複製的PID中，確保「序列化格式」已設為「OSGi Configurator JSON」
+1. 點選「列印」、
+1. JSON格式的OSGi設定將顯示在「序列化設定屬性」區段中
+   ![OSGi安裝程式配置打印機](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
+1. 在IDE中，開啟項 `ui.apps` 目，找到或建立配置資料夾(`/apps/.../config.<runmode>`)，該資料夾針對新OSGi配置應該生效的運行模式。
+1. 在此配置資料夾中，建立新 `<PID>.cfg.json` 檔案。 PID與步驟5的值相同。
+1. 將步驟10的序列化設定屬性貼入檔 `.cfg.json` 案。
+1. 將變更儲存至新檔 `.cfg.json` 案。
+1. 將新的OSGi配置檔案添加並提交到Git。
 
 
-1. 將OSGi組態金鑰值配對填入JSON檔案
-
-   >[!NOTE]
-   >
-   >如果您正在配置現成可用的OSGi服務，則可以通過 `/system/console/configMgr`
-
-
-1. 將JSON檔案儲存至您的專案。 -->
-
-## Source Control中的配置屬性格式 {#configuration-property-format-in-source-control}
-
-如上所述，將新配置添加到儲存庫 [部分中，將介紹建立新的OSGI配置](#creating-the-configuration-in-the-repository) 屬性。
-
-請依照下列步驟，並依下列子節所述修改語法：
+## OSGi配置屬性格式
 
 ### 內嵌值 {#inline-values}
 
 如預期，內嵌值會依照標準JSON語法，格式化為標準名稱——值配對。 例如：
 
 ```json
- {
-
- "my_var1": "val",
- "my_var2": "abc",
- "my_var3": 500
-
+{
+   "my_var1": "val",
+   "my_var2": [ "abc", "def" ],
+   "my_var3": 500
 }
 ```
 
