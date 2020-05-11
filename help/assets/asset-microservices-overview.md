@@ -4,6 +4,9 @@ description: 使用雲端原生和可擴充的資產處理微服務來處理您�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 2%
 
 ---
 
