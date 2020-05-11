@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager 雲端服務的 IMS 支援
 description: Adobe Experience Manager 雲端服務的 IMS 支援
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
 
 ---
@@ -156,7 +156,7 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 
 
 >[!NOTE]
-> 在IMS中建立的任何使用者都可使用Adobe ID或Federated ID來建立。 如果使用Adobe ID設定使用者，則會使用其公司的身分提供者來驗證使用者。
+> 在 IMS 中建立的任何使用者都可使用 Adobe ID 或 Federated ID 來建立。若是使用 Adobe ID 設定使用者，使用者需透過公司合作之身分服務供應商登入，以完成身分驗證。
 
 接著，系統會將使用者重新導向至 IMS 登入畫面，此時使用者需輸入憑證：
 
@@ -195,46 +195,46 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 ![ACL3](/help/security/assets/ims18.png)
 
 
-### 存取Cloud Manager {#accessing-cloud-manager}
+### 存取 Cloud Manager {#accessing-cloud-manager}
 
-若要能夠存取Cloud Manager或AEM做為雲端服務環境，您必須指派給Cloud Manager產品的設定檔。
+若要能夠存取 Cloud Manager 或 AEM 雲端服務環境，系統必須將您指派給 Cloud Manager 產品的設定檔。
 
-請參閱角 [色定義](/help/onboarding/what-is-required/add-users-roles.md#role-definitions) ，以進一步瞭解用戶的角色，這些角色控制了Cloud Manager中特定功能的可用性。
+請參閱[角色定義](/help/onboarding/what-is-required/add-users-roles.md#role-definitions)深入了解使用者的角色，這些角色能控制使用者能否使用 Cloud Manager 的特定功能。
 
 >[!NOTE]
->Cloud Manager已預先設定具有適當權限的角色。 要瞭解與每個角色關聯的具有特定權限、預先配置的任務或權限的每個角色，請參閱基於角 [色的權限](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)。
+>Cloud Manager 已預先設定角色，賦予適當權限。若要了解各個具有特定權限的角色、預先設定的任務或每個角色的相關權限，請參閱[角色型權限](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)。
 
-**新增使用者的步驟**
+**使用者新增步驟**
 
-1. 從現有使用者畫面或從新使用者畫面將使用者新增至特定的描述檔。
+1. 您可從現有使用者或新使用者的畫面，將使用者新增至特定設定檔。
 
-1. 或者，您也可以從「概述」畫面 **新增使用者** ，如下圖所示。
+1. 或者，您也可以在&#x200B;**「綜覽」**&#x200B;畫面新增使用者，如下圖所示。
 
    ![ACL3](/help/security/assets/ims23.png)
 
    >[!NOTE]
-   >您可以指派多個描述檔給使用者，如下圖所示。
+   >您可以指派多個設定檔給同一個使用者，如下圖所示。
 
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. 將您新增至適當的設定檔後，您應該可以從使用者介面的右上角，透過 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) ，存取Cloud Manager中各自的租戶。
+1. 使用者新增至適當的設定檔後，應該就能從使用者介面的右上角，透過 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) 存取 Cloud Manager 的個別租用戶。
 
 
-### 在AEM中以雲端服務存取例項 {#accessing-instance-cloud-service}
+### 存取 AEM 雲端服務中的例項 {#accessing-instance-cloud-service}
 
 >[!IMPORTANT]
->您必須先完成前述章節中提及的步驟，才能將AEM中的例項授與為雲端服務。
+>您必須先完成前述章節所提及的步驟，才能取得 AEM 雲端服務例項的存取權限。
 
-為了在 **Admin Console中存取AEM例項**，您應在 **Admin Console的產品清單中看到Cloud Manager程式以及程式中的環境**。
+若要在 **Admin Console** 中存取 AEM 例項，您應該會在 **Admin Console** 的產品清單中看見 Cloud Manager 程式和程式內的環境。
 
-例如，在下方的螢幕擷取中，您會看到兩個可用的環境， *即開發作者* 和 *發佈*。
+舉例來說，在下方螢幕截圖中，您會看到兩個可供使用的環境，即 *dev author* 和 *publish*。
 
 ![ACL3](/help/security/assets/ims19.png)
 
-若要存取AEM例項，使用者將需要新增至適當雲端服務產品的群組。
+若要存取 AEM 例項，使用者必須新增至適當雲端服務產品群組。
 
-每個作者例項都有AEM管理員和AEM使用者設定檔，而每個發佈例項都有AEM使用者設定檔。 您可以視需要新增其他設定檔。
+每個作者例項都會有 AEM 管理員和 AEM 使用者設定檔，而每個發佈例項都有 AEM 使用者設定檔。您可以視需求新增其他設定檔。
 
-若要取得AEM例項的管理員層級存取權，請將使用者新增至該特定產品的AEM管理員設定檔。
+若要取得管理員層級的 AEM 例項存取權限，使用者需新增至特定產品的 AEM 管理員設定檔。
 
