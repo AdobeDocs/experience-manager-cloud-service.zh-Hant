@@ -1,13 +1,13 @@
 ---
 sub-product: AEM Assets 雲端服務
 user-guide-title: AEM Assets 雲端服務
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
 
-# Assets {#assets}
+# 資產 {#assets}
 
 + [AEM Assets 雲端服務](/help/assets/home.md)
 + [概覽與新增功能](overview.md)
@@ -46,16 +46,16 @@ source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
    + [搜尋 Facet](search-facets.md)
    + [擴充資產編輯器](extend-asset-editor.md)
    + [Assets HTTP API](mac-api-assets.md)
-   + [AEM Assets HTTP API中的內容片段支援](assets-api-content-fragments.md)
+   + [AEM Assets HTTP API 內容片段支援](assets-api-content-fragments.md)
    + [連線資產](use-assets-across-connected-assets-instances.md)
    + [資產報表](asset-reports.md)
    + [階層式中繼資料](cascading-metadata.md)
    + [XMP 中繼資料](xmp-metadata.md)
    + [MediaLibrary 功能](medialibrary.md)
    + [匯入和匯出資產中繼資料](metadata-import-export.md)
-+ 分享及分發資產 {#brand-portal}
-   + [使用品牌入口網站設定AEM資產](configure-aem-assets-with-brand-portal.md)
-   + [將資產發佈至品牌入口網站](publish-to-brand-portal.md)
++ 共用與發佈資產 {#brand-portal}
+   + [使用 Brand Portal 設定 AEM Assets](configure-aem-assets-with-brand-portal.md)
+   + [將資產發佈至 Brand Portal](publish-to-brand-portal.md)
 + 內容片段 {#content-fragments}
    + [使用內容片段](content-fragments/content-fragments.md)
    + [管理內容片段](content-fragments/content-fragments-managing.md)
