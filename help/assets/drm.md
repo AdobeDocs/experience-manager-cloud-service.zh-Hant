@@ -3,9 +3,9 @@ title: 數位版權管 [!DNL Adobe Experience Manager Assets] 理是雲端服務
 description: 瞭解如何管理雲端服務中授權資產的資產到期狀 [!DNL Experience Manager] 態和資訊。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31b8db4403dff1934033e1ed93651a076dba7a1a
+source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1351'
 ht-degree: 7%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 7%
 
 當您選擇「已過 **[!UICONTROL 期]** 」選項時，主控台 [!DNL Assets] 只會顯示複合資產所參照的已到期資產和子資產。 在子資產到期後，不會立即顯示參照已到期子資產的複合資產。 相反地，它們會在偵測到 [!DNL Experience Manager] 它們在下次排程器執行時參考過期子資產後顯示。
 
-如果您將已發佈資產的到期日修改為早於目前排程器週期的日期，則排程仍會在下次執行時將此資產偵測為已到期資產，並據以反映狀態。
+如果您將已發佈資產的到期日修改為早於目前排程器週期的日期，則排程仍會在下次執行時將此資產偵測為已到期資產，並據以反映狀態。 不同時區的使用者會以不同方式顯示資產的到期日。
 
 此外，如果故障或錯誤導致調度程式無法檢測當前週期中的過期資產，則調度程式會在下一個週期重新檢查這些資產並檢測其過期狀態。
 
