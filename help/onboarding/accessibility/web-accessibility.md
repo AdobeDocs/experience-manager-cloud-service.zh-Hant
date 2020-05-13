@@ -2,7 +2,10 @@
 title: Adobe Experience Manager 雲端服務與網路無障礙指引
 seo-title: Adobe Experience Manager 雲端服務與網路無障礙指引
 translation-type: tm+mt
-source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
+source-git-commit: 710365f7934a63710a9158c010d6fac1ca390044
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 87%
 
 ---
 
@@ -17,11 +20,15 @@ source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 * 作者可使用這些功能建立無障礙網站。
 
-   * 建立無障礙內容是一個過程。AEM 提供所需功能，但內容作者必須按照所需技術來建立無障礙內容。
+   建立無障礙內容是一個過程。AEM 提供所需功能，但內容作者必須按照所需技術來建立無障礙內容。
 
 * 範本開發人員在實作網站設計時，也應注意這類問題。
 
 Adobe Experience Manager 雲端服務符合[全球資訊網協會](#world-wide-web-consortium)提供的[指引](#wcag-accessibility-guideslines)。
+
+>[!NOTE]
+>
+> 如需詳細 [資訊，請參閱Adobe解決方案的協助工具符合性報表](https://www.adobe.com/accessibility/compliance.html) 。
 
 ## 全球資訊網協會 {#world-wide-web-consortium}
 
@@ -30,15 +37,6 @@ Adobe Experience Manager 雲端服務符合[全球資訊網協會](#world-wide-w
 ## 網頁內容可及性指引 (WCAG) 2.1 {#wcag-accessibility-guideslines}
 
 為協助網頁設計人員和開發人員製作無障礙的網站，[資訊網可及性推動組織 (WAI)](https://www.w3.org/WAI/) 於 2018 年 6 月發佈[網頁內容可及性指引 (WCAG) 2.1 ](https://www.w3.org/TR/WCAG/)。
-
->[!NOTE]
-> 
-> WCAG 2.1 更新了 2008 年的 WCAG 2.0 版。請參閱 [WCAG 2.1 與 WCAG 2.0 的比較](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)。
-
->[!NOTE]
-> 
->[指引的更新版 WCAG 2.2](https://www.w3.org/TR/WCAG22/) 目前正在開發中，但暫時不會列入考量。
-
 
 WCAG 2.1 提供的[指引 (及相關成功標準) 說明了無障礙環境等級以及指引的遵循方式](https://www.w3.org/TR/WCAG/#conformance)。
 
@@ -53,8 +51,6 @@ WCAG 2.1 提供的[指引 (及相關成功標準) 說明了無障礙環境等級
 >[!NOTE]
 > 
 >建立網站時，您必須決定要讓網站遵循的整體等級。
->
->由於讓特定內容類型滿足所有 AAA 級成功標準並不可行，因此我們不建議將該等級作為必須遵循的等級。
 
 <!--
 * [Configuring the Rich Text Editor for Producing Accessible Sites](/help/sites-administering/rte-accessible-content.md)
