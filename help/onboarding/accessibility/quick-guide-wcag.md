@@ -2,7 +2,10 @@
 title: WCAG 2.1 快速指南
 seo-title: WCAG 2.1 快速指南
 translation-type: tm+mt
-source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
+source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 91%
 
 ---
 
@@ -13,11 +16,19 @@ Adobe Experience Manager (AEM) 雲端服務的開發過程盡可能地遵循「�
 
 The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
+>[!NOTE]
+> 
+> WCAG 2.1 更新了 2008 年的 WCAG 2.0 版。請參閱 [WCAG 2.1 與 WCAG 2.0 的比較](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)。
+
+>[!NOTE]
+> 
+>[指引的更新版 WCAG 2.2](https://www.w3.org/TR/WCAG22/) 目前正在開發中，但暫時不會列入考量。
+
 WCAG 2.1 包含一系列無需仰賴技術的指引和成功標準，有助身心障礙人士存取與使用網路內容。它們為網路內容作者、設計人員和開發人員提供建議，確保他們製作的資源能盡可能方便讓更多使用者存取，無論使用者有任何身心障礙，例如視障、聽力損失、學習障礙、年齡相關限制等均可使用。
 
 舉例來說，在 HTML 中使用 `alt` 屬性來描述影像或任何其他非文字內容，可讓盲人或弱視族群大大受益。`alt` 屬性中的文字描述可以轉換為語音輸出，或者傳輸到可採電子方式重新整理的點字顯示器。
 
-此外，WCAG 2.1 對於其他受益人也能帶來好處，包括可能有&#x200B;*情境式身心障礙*&#x200B;的人士；還有一些人因為瀏覽技術、網路連線速度或瀏覽環境等條件之故，可能會遭遇到與身心障礙人士類似的障礙。
+Additionally, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. 還有一些人因為瀏覽技術、網路連線速度或瀏覽環境等條件之故，可能會遭遇到與身心障礙人士類似的障礙。
 
 使用 Adobe Experience Manager，內容作者和/或網站擁有者就可建立符合相關 WCAG 2.1 A 級和 AA 級成功標準的網路內容。
 
@@ -63,14 +74,14 @@ WCAG 2.1 包含四大無障礙設計原則，有時簡稱為 **POUR**。說明�
 * 每則指引都包含一或多個&#x200B;**成功標準**。
 * 成功標準以陳述形式撰寫，針對任何特定網頁為 `True` 或 `False`。
 * 成功標準可能包含兩者擇一的選擇，也可能包含例外，意即不符合成功條件的情況。
-* 成功標準根據父項指引和原則，從 1.1.1 編號至 4.1.1。這些標準還各有一個簡短的名稱，用於摘要簡述該標準的目的，以便易於參考。舉例來說，成功標準 1.1.1 是「非文字替代方案」。
+* 成功標準根據父項指引和原則，從 1.1.1 編號至 4.1.1。這些標準還各有一個簡短的名稱，用於摘要簡述該標準的目的，以便易於參考。例如，成功標準1.1.1為非文字內容。
 * 成功標準包含一份相關&#x200B;**技術**&#x200B;清單 (詳細說明於下方)。
 
 ## 支援資源 {#supporting-resources}
 
 除了原則、指引和成功標準這些 WCAG 2.1 核心元件之外，另有一系列支援文件可用。其中有些文件針對如何達成指引各層面提供特定建議，其他文件則為較一般的參考資源，可協助各方各面的網頁作者、設計人員和開發人員盡可能有效地瞭解並運用 WCAG 2.1。
 
-雖然 WCAG 2.1 是一份不變的穩定文件，但這些支援資源大多是動態文件，會隨著新技術興起和網路無障礙新範例出現而日漸改變和成長。
+雖然WCAG 2.1本身是一個穩定的檔案，而且不會改變，但這些支援資源大多是動態檔案； 隨著新技術的出現，它們會隨著時間而改變和成長，並會找到新的範例，說明如何達成網頁存取功能。
 
 ### WCAG 2.1 資源 {#wcag-resources}
 
@@ -85,7 +96,7 @@ WCAG 2.1 包含四大無障礙設計原則，有時簡稱為 **POUR**。說明�
 
 ### What is New in WCAG 2.1 (WCAG 2.1 的新增內容) {#what-is-new}
 
-《[What is New in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)》(WCAG 2.1 的新增內容) 針對 WCAG 和 2.0 及 WCAG 2.1 之間的差異提供珍貴資訊。
+[WCAG 2.1的新增功能](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) ，提供有關WCAG 2.0和WCAG 2.1之間增量的有價資訊。
 
 《[WCAG 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions)》(WCAG 2.0 和 2.1) 一節則進一步釐清兩者的關係。
 
@@ -136,7 +147,7 @@ WCAG 2.1 的專用技術闡明於《[Techniques for WCAG 2.1](https://www.w3.org
 
 ### How to Meet WCAG 2.1 (如何達成 WCAG 2.1) {#how-to-meet-wcag}
 
-《[How To Meet WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)》(如何達成 WCAG 2.1) 頁面中提供「如何達成」指引的相關章節。該節提供 WCAG 的替代性簡報，將指引內容精簡至與讀者自身興趣或環境最相關的部分。讀者可以指定特定網路內容技術 (例如階層式樣式表或指令碼) 或指定特定優先層級，藉此篩選想要檢視的成功標準技術。
+《[How To Meet WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)》(如何達成 WCAG 2.1) 頁面中提供「如何達成」指引的相關章節。本節提供了WCAG的另類介紹，允許讀者將准則內容調整為與自身興趣和／或情況最相關的內容。 讀者可以指定特定網路內容技術 (例如階層式樣式表或指令碼) 或指定特定優先層級，藉此篩選想要檢視的成功標準技術。
 
 如不篩選，該資源則會按指引的分組提供所有成功標準。每個成功標準會提供以下內容：
 
