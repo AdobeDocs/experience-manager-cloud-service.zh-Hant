@@ -2,10 +2,10 @@
 title: WCAG 2.1 快速指南
 seo-title: WCAG 2.1 快速指南
 translation-type: tm+mt
-source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 91%
+source-wordcount: '1758'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org
 
 >[!NOTE]
 > 
-> WCAG 2.1 更新了 2008 年的 WCAG 2.0 版。請參閱 [WCAG 2.1 與 WCAG 2.0 的比較](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)。
+> WCAG 2.1從2008年起更新舊版WCAG 2.0。 請參閱 [WCAG 2.1 與 WCAG 2.0 的比較](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)。
 
 >[!NOTE]
 > 
@@ -36,24 +36,18 @@ Additionally, WCAG 2.1 can result in advantages for other beneficiaries, includi
 
 WCAG 2.1 的目的是提供符合以下條件的指引：
 
-* **多種技術均可使用：**&#x200B;換言之，相關指引可應用在多種網路內容格式，不局限於 HTML。因此，WCAG 2.1 可涵蓋的範圍包括以 PDF、Flash、JavaScript 和其他目前和未來網路技術所產生或提供的內容。<!-- This aims to address a recognized weakness of WCAG 1.0, in that it was focused on HTML at the expense of other web content formats. -->
+* **多種技術均可使用：**&#x200B;換言之，相關指引可應用在多種網路內容格式，不局限於 HTML。因此，WCAG 2.1 可涵蓋的範圍包括以 PDF、Flash、JavaScript 和其他目前和未來網路技術所產生或提供的內容。
 
-* **可檢驗：**&#x200B;每則指引的編寫方式都可經客觀方式檢驗，確保無障礙專家小組可一致同意符合指引需求。無障礙指引的其中一項難處在於，雖然部分指引可經技術性檢驗，其他則需要人為判斷才能確定是否確實符合需求。<!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
+* **可檢驗：**&#x200B;每則指引的編寫方式都可經客觀方式檢驗，確保無障礙專家小組可一致同意符合指引需求。無障礙指引的其中一項難處在於，雖然部分指引可經技術性檢驗，其他則需要人為判斷才能確定是否確實符合需求。
 
-* 支援&#x200B;**優先與關聯式實作：**
-   <!-- As with WCAG 1.0, --> WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
+* 支援優 **先化和情境式實作：**
+WCAG 2.1准則被賦予優先事項，其中涉及不遵守關於特定殘疾人群體的准則的可能影響。 這使得作者能夠就其具體情況的最重要准則作出知情決定。 此外，還介紹了支援無 *障礙環境* 的概念。 這可讓作者決定如何最佳地使用可能沒有完整協助工具支援的Web技術，或要求使用者具備特定協助工具技術和／或瀏覽器，以從協助工具功能獲益。
 
 上述目標對 WCAG 2.1 的架構有顯著影響。
 
 >[!NOTE]
 >
 >建立一個能夠全面滿足每一種身心障礙或人士類型需求的網站，是不可行的作法。WCAG 2.1 的目的，是協助網頁作者在可行狀況之下，建立特定條件和合理範圍內無障礙的網站。
-
-<!--
->[!NOTE]
->
->If you are familiar with WCAG 1.0, you will notice some changes in WCAG 2.1. These relate to scope, organization and aim.
--->
 
 ## 結構 {#structure}
 
@@ -113,7 +107,7 @@ WCAG 2.1 的專用技術闡明於《[Techniques for WCAG 2.1](https://www.w3.org
 * 集合使用 (技術可能為一般內容，或與特定技術或格式相關，例如 HTML、CSS 或用戶端指令碼)，或
 * 從相關成功標準取得。技術可應用在多個成功標準中。
 
-每種技術都有專屬編號，編號則與其所屬集合相關。例如，ARIA 技術的其中一項是&#x200B;*「技術 ARIA2：識別具有『必填』屬性的必填欄位」*。
+每種技術都有專屬編號，編號則與其所屬集合相關。For example, one of the ARIA techniques is [Technique ARIA2: Identifying a required field with the aria-required property](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 
 技術可分為「充分」、「建議」或「失敗」：
 
