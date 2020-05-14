@@ -2,9 +2,9 @@
 title: WCAG 2.1 快速指南
 seo-title: WCAG 2.1 快速指南
 translation-type: tm+mt
-source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1774'
 ht-degree: 84%
 
 ---
@@ -68,7 +68,7 @@ WCAG 2.1 包含四大無障礙設計原則，有時簡稱為 **POUR**。說明�
 * 每則指引都包含一或多個&#x200B;**成功標準**。
 * 成功標準以陳述形式撰寫，針對任何特定網頁為 `True` 或 `False`。
 * 成功標準可能包含兩者擇一的選擇，也可能包含例外，意即不符合成功條件的情況。
-* 成功標準根據父項指引和原則，從 1.1.1 編號至 4.1.1。這些標準還各有一個簡短的名稱，用於摘要簡述該標準的目的，以便易於參考。例如，成功標準1.1.1為非文字內容。
+* 成功標準根據父項指引和原則，從 1.1.1 編號至 4.1.1。這些標準還各有一個簡短的名稱，用於摘要簡述該標準的目的，以便易於參考。For example, success criterion [1.1.1 is Non-text Content](https://www.w3.org/TR/WCAG/#non-text-content).
 * 成功標準包含一份相關&#x200B;**技術**&#x200B;清單 (詳細說明於下方)。
 
 ## 支援資源 {#supporting-resources}
@@ -90,9 +90,11 @@ WCAG 2.1 包含四大無障礙設計原則，有時簡稱為 **POUR**。說明�
 
 ### What is New in WCAG 2.1 (WCAG 2.1 的新增內容) {#what-is-new}
 
-[WCAG 2.1的新增功能](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) ，提供有關WCAG 2.0和WCAG 2.1之間增量的有價資訊。
+准則提供了有關WCAG 2.1新增功能的資訊：
 
-《[WCAG 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions)》(WCAG 2.0 和 2.1) 一節則進一步釐清兩者的關係。
+* [WCAG 2.1的新增功能](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) ，提供有關WCAG 2.0和WCAG 2.1之間增量的有價資訊。
+
+* 《[WCAG 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions)》(WCAG 2.0 和 2.1) 一節則進一步釐清兩者的關係。
 
 ### Techniques for WCAG 2.1 (WCAG 2.1 的專用技術) {#techniques-for-wcag}
 
