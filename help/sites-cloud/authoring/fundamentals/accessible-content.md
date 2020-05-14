@@ -2,9 +2,9 @@
 title: 建立適用於Adobe Experience Manager的可存取雲端服務內容（WCAG 2.1符合性）
 description: 協助殘障人士存取和使用網頁內容
 translation-type: tm+mt
-source-git-commit: 7d95cf4f25934ea52d4ef5410bbf349f004e5043
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '13874'
+source-wordcount: '13873'
 ht-degree: 6%
 
 ---
@@ -38,14 +38,14 @@ World Wide Wec Consortium [(World Wide Wec Consortium](https://www.w3.org/TR/WCA
 
 建立網站時，您必須決定要讓網站遵循的整體等級。
 
-以下部分介紹 [WCAG 2.1准則](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) ，其中包含A級和A級符合性級別的相關 [成功標準](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1)。
+以下部分介 [紹了WCAG 2.1准則的各層](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) ，以及A級和A級符合性級別的相關 [成功標準](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1)。
 
 >[!NOTE]
 >
 >在本檔案中，我們使用：
 >
->* WCAG 2.1準 [則的簡稱](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)。
->* WCAG 2.1准則中用 [於協助與WCAG網站交叉參照的編號](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) 。
+>* 《 [WCAG 2.1准則》的簡稱](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)。
+>* WCAG 2. [1准則中用於協助與WCAG網站交互參照的編號](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) 。
 
 
 ## 原則1: 可感知 {#principle-perceivable}
@@ -129,7 +129,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 [准則1.2基於時間的媒體： 為時間型媒體提供替代選擇。](https://www.w3.org/TR/WCAG/#time-based-media)
 
-這是針對以時間為基礎的 *網頁內容*。 這包括使用者可播放的內容（例如視訊、音訊和動畫內容），並可預先錄制或即時串流。
+這是針對以時間為基礎的 *網頁內容*。 這涵蓋使用者可播放的內容（例如視訊、音訊和動畫內容），並可預先錄制或即時串流。
 
 ### 純音訊和純視訊（預錄）(1.2.1) {#audio-only-and-video-only-prerecorded}
 
@@ -155,7 +155,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 * 如果內容是預先錄制的音訊，但沒有視訊（例如播客）:
    * 在內容之前或之後，提供連結至音訊內容的文字記錄。 成績單應是HTML頁面，其文字等同於所有口語和重要的非口語內容，另外還包括說話者的指示、設定的描述、聲音表達以及任何其他重要音效的描述。
-* 如果內容是動畫或預先錄制的視訊，且沒有音效：
+* 如果內容是動畫或預錄的視訊，且沒有音效：
    * 在內容之前或之後，提供視訊所提供資訊的等同文字說明連結
    * 或是常用音訊格式（例如MP3）的等效音訊描述。
 
@@ -195,13 +195,13 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 盡可能使用隱藏字幕，因為這可讓使用者選擇是否檢視字幕。
 
-對於隱藏字幕，您需要在視訊檔案旁建立並提供適當格式(例如 [SMIL](https://www.w3.org/AudioVideo/))的同步化字幕檔案(如如何執行此動作的詳細資訊超出本指南的範圍，但我們提供了 [More Information - Captions(Pre-Recorded)(1.2.2)](#more-information-captions-pre-recorded))下的教學課程連結。 請確定您提供附註或啟用視訊播放器中的標題功能，讓使用者知道標題可用於視訊。
+對於隱藏字幕，您需要在視訊檔案旁建立並提供適當格式(例如 [SMIL](https://www.w3.org/AudioVideo/))的同步化字幕檔案(如如何執行此動作的詳細資訊不在本指南中，但我們提供了 [More Information - Captions(Prerecorded)(1.2.2)下的教學課程連結](#more-information-captions-prerecorded)。 請確定您提供附註或啟用視訊播放器中的標題功能，讓使用者知道標題可用於視訊。
 
 如果您必須使用開放標題，請將文字內嵌至視訊軌。 這可以使用影片編輯應用程式來實現，讓標題可以覆蓋在影片上。
 
-#### 更多資訊——標題（預先錄制）(1.2.2) {#more-information-captions-prerecorded}
+#### 詳細資訊——標題（預錄）(1.2.2) {#more-information-captions-prerecorded}
 
-* [瞭解成功標準1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html):
+* [瞭解成功標準1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [如何符合成功標準1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
 <!--
@@ -235,9 +235,12 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 詳細資訊——音訊說明或替代媒體（預錄）(1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
-* [瞭解成功標準1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html):
+* [瞭解成功標準1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
 * [如何符合成功標準1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
-* [Adobe Encore](https://www.adobe.com/products/encore.html)
+
+<!--
+* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+-->
 
 ### 標題(Live)(1.2.4)  {#captions-live}
 
@@ -247,7 +250,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 用途——標題（即時）(1.2.4) {#purpose-captions-live}
 
-此成功標準與標題（預先錄制） [(](#captions-pre-recorded) Captions)相同，因為它可解決失聰或聽障人士所遇到的無障礙環境支援障礙，但此成功標准則處理即時簡報，例如網路廣播。
+此成功標準與標題（預錄） [(](#captions-prerecorded) Captions)相同，因為它可解決失聰或聽障人士所遭遇的無障礙環境支援障礙，但此成功標准則處理即時簡報，例如網路廣播。
 
 #### How to Meet - Captions(Live)(1.2.4) {#how-to-meet-captions-live}
 
@@ -358,44 +361,46 @@ AEM可讓您使用適當的HTML元素，輕鬆建構具有語義意義的網頁�
       >它們實際上是相同的，但 `<strong>` 是 `<em>` 更可取，因為它們在語義上正確。 您的開發團隊可以設定RTE，以在開 `<strong>` 發您的專 `<em>` 案例項時使 `<b>` 用和(而非和 `<i>`)。
 
 
-* **複雜的資料表**:在某些情況下，如果有具有兩個或多個標題級別的複雜表，則基本表屬性可能不足以提供所有必要的結構資訊。對於這些類型的複雜表格，需要使用header和 **id屬性在標題及其相關儲存格之間建** 立直 **接** 關係。例如，在下表的標題和ID中，會對輔助技術使用者進行程式化關聯。
+* **複雜的資料表**:在某些情況下，如果有具有兩個或多個標題級別的複雜表，則基本表屬性可能不足以提供所有必要的結構資訊。對於這些類型的複雜表格，需要使用header和 **id屬性在標題及其相關儲存格之間建** 立直 **接** 關係。
 
    >[!NOTE]
    >
    >id屬性不適用於現成可用的安裝。 它可以通過配置HTML規則和RTE中的串列化函式來啟用。
 
-```xml
- <table>
-    <tr>
-      <th rowspan="2" id="h">Homework</th>
-      <th colspan="3" id="e">Exams</th>
-      <th colspan="3" id="p">Projects</th>
-    </tr>
-    <tr>
-      <th id="e1" headers="e">1</th>
-      <th id="e2" headers="e">2</th>
-      <th id="ef" headers="e">Final</th>
-      <th id="p1" headers="p">1</th>
-      <th id="p2" headers="p">2</th>
-      <th id="pf" headers="p">Final</th>
-    </tr>
-    <tr>
-     <td headers="h">15%</td>
-     <td headers="e e1">15%</td>
-     <td headers="e e2">15%</td>
-     <td headers="e ef">20%</td>
-     <td headers="p p1">10%</td>
-     <td headers="p p2">10%</td>
-     <td headers="p pf">15%</td>
-    </tr>
-   </table>
-```
+   例如，在下表的標題和ID中，會對輔助技術使用者進行程式化關聯。
 
-若要在AEM中達成此目的，您必須使用來源編輯模式直接新增標籤。
+   ```xml
+     <table>
+       <tr>
+         <th rowspan="2" id="h">Homework</th>
+         <th colspan="3" id="e">Exams</th>
+         <th colspan="3" id="p">Projects</th>
+       </tr>
+       <tr>
+         <th id="e1" headers="e">1</th>
+         <th id="e2" headers="e">2</th>
+         <th id="ef" headers="e">Final</th>
+         <th id="p1" headers="p">1</th>
+         <th id="p2" headers="p">2</th>
+         <th id="pf" headers="p">Final</th>
+       </tr>
+       <tr>
+         <td headers="h">15%</td>
+         <td headers="e e1">15%</td>
+         <td headers="e e2">15%</td>
+         <td headers="e ef">20%</td>
+         <td headers="p p1">10%</td>
+         <td headers="p p2">10%</td>
+         <td headers="p pf">15%</td>
+       </tr>
+     </table>
+   ```
 
->[!NOTE]
->
->標準安裝中不會立即使用此功能。 它需要配置RTE、HTML規則和串列化器。
+   若要在AEM中達成此目的，您必須使用來源編輯模式直接新增標籤。
+
+   >[!NOTE]
+   >
+   >標準安裝中不會立即使用此功能。 它需要配置RTE、HTML規則和串列化器。
 
 #### 詳細資訊——資訊與關係(1.3.1) {#more-information-info-and-relationships}
 
@@ -490,9 +495,6 @@ AEM可讓您使用適當的HTML元素，輕鬆建構具有語義意義的網頁�
 * [瞭解成功標準1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
 * [如何符合成功標準1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
 
-<!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
--->
-
 ### 音訊控制(1.4.2)  {#audio-control}
 
 * 成功標準1.4.2
@@ -557,7 +559,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構具有語義意義的網頁�
 
 >[!NOTE]
 >
->要幫助轉換到其他單位，請：
+>以下網站可協助轉換至其他單位：
 >
 >* [Px到Em Calcuter - Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [字型大小轉換： pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
@@ -869,7 +871,7 @@ John Smith’s publications
 >
 >上述程式碼片段是圖示，建議您使用 **Image** 元件。
 
-雖然建議您提供可識別連結目的的連結文字，而不需要額外的內容，但是可以認識到，這並非總能做到。 下列情況可使用內容自由連結，其HTML範例可在 [How to Meet Success Criterion 2.4.4中找到](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)。
+雖然建議提供識別連結目的的連結文字，而不需要額外的內容，但是可以認識到，這並非總是可能。 下列情況可使用內容自由連結，其HTML範例可在 [How to Meet Success Criterion 2.4.4中找到](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)。
 
 * 其中連結文字是緊密相關連結清單的一部分，而包含連結的清單項目則提供足夠的內容。
 * 從前款（非下款）項文 *本中* ，可以明確連結目的的。
@@ -1105,7 +1107,7 @@ To add the span element, with an appropriate language, you can manually edit you
 
 請務必注意，本節中使用「相同順序」一詞並非暗示無法使用子導覽功能表，或無法使用次導覽或頁面結構區塊。 相反地，此成功准則旨在協助使用者透過網頁與重複內容互動，以預測所尋找內容的位置，並在再次遇到時更快速找到。
 
-用戶可以通過使用自適應用戶代理或通過設定首選項來根據順序發起更改，以便以對他們最有用的方式呈現資訊。
+用戶可以通過使用自適應用戶代理或通過設定首選項來啟動按順序的更改，以便以對他們最有用的方式呈現資訊。
 
 #### 如何開會——一致導覽(3.2.3) {#how-to-meet-consistent-navigation}
 
