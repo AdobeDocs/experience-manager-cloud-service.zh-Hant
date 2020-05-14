@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 雲端服務與網路無障礙指引
 seo-title: Adobe Experience Manager 雲端服務與網路無障礙指引
 translation-type: tm+mt
-source-git-commit: 710365f7934a63710a9158c010d6fac1ca390044
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 87%
@@ -24,7 +24,7 @@ ht-degree: 87%
 
 * 範本開發人員在實作網站設計時，也應注意這類問題。
 
-Adobe Experience Manager 雲端服務符合[全球資訊網協會](#world-wide-web-consortium)提供的[指引](#wcag-accessibility-guideslines)。
+Adobe Experience Manager 雲端服務符合[全球資訊網協會](#world-wide-web-consortium)提供的[指引](#wcag-accessibility-guidelines)。
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Adobe Experience Manager 雲端服務符合[全球資訊網協會](#world-wide-w
 
 [全球資訊網協會 (W3C)](https://www.w3.org/) 是致力於開發網頁標準的國際社群。協會的[資訊網可及性推動組織 (WAI)](https://www.w3.org/WAI/) 發佈了[網頁內容可及性指引](#wcag-accessibility-guidelines)。
 
-## 網頁內容可及性指引 (WCAG) 2.1 {#wcag-accessibility-guideslines}
+## 網頁內容可及性指引 (WCAG) 2.1 {#wcag-accessibility-guidelines}
 
 為協助網頁設計人員和開發人員製作無障礙的網站，[資訊網可及性推動組織 (WAI)](https://www.w3.org/WAI/) 於 2018 年 6 月發佈[網頁內容可及性指引 (WCAG) 2.1 ](https://www.w3.org/TR/WCAG/)。
 
