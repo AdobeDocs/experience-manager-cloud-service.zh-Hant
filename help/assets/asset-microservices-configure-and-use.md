@@ -3,7 +3,10 @@ title: 設定並使用資產微服務進行資產處理
 description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
+source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+workflow-type: tm+mt
+source-wordcount: '1870'
+ht-degree: 3%
 
 ---
 
@@ -171,3 +174,7 @@ Custom Workflow Runner服務(`com.adobe.cq.dam.processor.nui.impl.workflow.Custo
 > OSGi Web主控台與AEM的內部部署和受管理服務部署不同，不直接在雲端服務部署中提供。
 
 如需後處理工作流程中可使用哪些標準工作流程步驟的詳細資訊，請參閱開發 [人員參考中後處理工作流程中的工作流程](developer-reference-material-apis.md#post-processing-workflows-steps) 。
+
+## 最佳實務與限制 {#best-practices-limitations-tips}
+
+* 設計工作流程時，請考慮您對所有類型轉譯的需求。 如果您未預見未來需要轉譯，請從工作流程中移除其建立步驟。 之後無法大量刪除轉譯。 長期使用後，不需要的轉譯可能會佔用大量儲存空間 [!DNL Experience Manager]。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自訂以 [!DNL Experience Manager] 刪除特定轉譯，或刪除資產並再次上傳這些資產。
