@@ -2,7 +2,10 @@
 title: 新增動態媒體資產至頁面
 description: 如何在AEM中將Dynamic Media元件新增至頁面
 translation-type: tm+mt
-source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
+source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+workflow-type: tm+mt
+source-wordcount: '3132'
+ht-degree: 8%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
 1. 在AEM中，開啟您要新增動態媒體元件的頁面。
 1. 在左窗格中，點選「元件 **[!UICONTROL 」圖示]** ，然後篩選「動態媒體」。
 
-   如果沒有可用的動態媒體元件，您必須啟用或開啟動態媒體元件。 如需詳 [細資訊，請參閱編輯範本](/help/sites-cloud/authoring/features/templates.md) -範本作者。
+   如果沒有可用的動態媒體元件清單，您可能需要啟用您要使用的動態媒體元件。 請參閱 [啟用動態媒體元件](#enabling-dynamic-media-components)。
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
@@ -49,6 +52,33 @@ source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
    動態媒體視訊360媒體元件。
 
 1. 完成後，在對話框右上角附近點選核取標籤以儲存變更。
+
+### 啟用動態媒體元件 {#enabling-dynamic-media-components}
+
+如果沒有可新增至頁面的動態媒體元件，可能表示您必須先啟用要使用的元件。
+
+1. 在AEM中，開啟您要新增動態媒體元件的頁面。
+1. 在工具列的左側，在頁面頂端附近點選「頁面資訊」圖示，然後從下拉式清單中點選「 **[!UICONTROL Edit Template]** 」（編輯範本）。
+
+   ![edit-template](/help/assets/assets-dm/edit-template.png)
+
+1. 在工具列右側，靠近頁面頂部，從下拉式清單中點選「結構」( **[!UICONTROL Structure]**)。
+
+   ![政策](/help/assets/assets-dm/structure-mode.png)
+
+1. 在頁面底部附近，點選「 **[!UICONTROL Layout Container]** 」以開啟其工具列，然後點選「Policy」（原則）圖示。
+1. 在「配 **[!UICONTROL 置容器]** 」頁面的「屬性」標題下，請確定已選取「允 **[!UICONTROL 許的元件]****** 」標籤。
+
+   ![允許的元件](/help/assets/assets-dm/allowed-components.png)
+
+1. 捲動直到您看到 **[!UICONTROL 動態媒體]**。
+1. 點選 **[!UICONTROL Dynamic Media]** （動態媒體）左側的>圖示以展開清單，選取您要啟用的動態媒體元件。
+
+   ![動態媒體元件清單](/help/assets/assets-dm/dm-components-select.png)
+
+1. 在「版面容器」頁面的右上角 **[!UICONTROL 附近]** ，點選「完成（勾選）」圖示。
+
+1. 在工具列的右側，靠近頁面頂端，從下拉式清單中點選「初始內容 **[!UICONTROL 」，然]**&#x200B;後照常將動態媒體元件新增至頁面 [](#adding-a-dynamic-media-component-to-a-page) 。
 
 ## 本地化動態媒體元件 {#localizing-dynamic-media-components}
 
@@ -81,7 +111,7 @@ source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
-### 元件：動態媒體 {#dynamic-media-component}
+### 元件： 動態媒體 {#dynamic-media-component}
 
 動態媒體元件是智慧型元件。 視您新增影像或視訊而定，您有各種選項。 此元件支援影像預設集、影像檢視器，例如影像集、回轉集、混合媒體集和視訊。 此外，檢視器具有互動功能——螢幕大小會根據螢幕大小自動變更。 所有檢視器都是HTML5檢視器。
 
@@ -103,7 +133,7 @@ source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
 
 #### 使用影像時 {#when-working-with-images}
 
-動態媒體元件可讓您新增動態影像，包括影像集、回轉集和混合媒體集。 您可以放大、縮小，如果適用，則可以在回轉集內旋轉影像，或從其他類型的回轉集選取影像。
+動態媒體元件可讓您新增動態影像，包括影像集、回轉集和混合媒體集。 您可以放大、縮小，如果適用的話，可以在回轉集內旋轉影像，或從其他類型的回轉集選取影像。
 
 您也可以直接在元件中設定檢視器預設集、影像預設集或影像格式。 若要讓影像回應，您可以設定中斷點或套用回應式影像預設集。
 
@@ -168,8 +198,8 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    例如，使用檢視器修飾元，您可以執行下列動作：
 
-   * 將標題檔案與視訊關聯：標 [題](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * 將導覽檔案與視訊建立關聯：導 [覽](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * 將標題檔案與視訊關聯： [標題](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * 將導覽檔案與視訊建立關聯： [導覽](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONCONTROL標題**-更改視頻的標題。
@@ -208,7 +238,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
-* **[!UICONTROL URL, Open in]**- You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟該URL。
+* **[!UICONTROL URL, Open in]**- You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟它。
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
@@ -216,7 +246,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 * **[!UICONTROL 高度]**-如果希望影像為固定大小，請以像素輸入值。 將此值留空可讓資產具有適應性。
 
-### 元件：互動式媒體 {#interactive-media-component}
+### 元件： 互動式媒體 {#interactive-media-component}
 
 互動式媒體元件適用於這些資產上具有互動功能的熱點或影像地圖。 如果您有互動式影像、互動式視訊或轉盤橫幅，請使用互動式 **[!UICONTROL 媒體元件]** 。
 
@@ -234,7 +264,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 >
 >不過，您可以針對頁面內使用相同類型資產的所有互動式媒體元件使用相同的檢視器預設集。
 
-![chlimage_1-174](assets/chlimage_1-541.png)
+![chlimage_1-175](assets/chlimage_1-541.png)
 
 You can edit the following **[!UICONTROL General]** settings by tapping **[!UICONTROL Edit]** in the component.
 
@@ -254,7 +284,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 
 * **[!UICONTROL 顯示產品表單]**-預設情況下，不選擇此值。 「產品表單」包含任何產品變體，例如尺寸和顏色。 清除勾號，不顯示產品變數。
 
-### 元件：全景媒體 {#panoramic-media-component}
+### 元件： 全景媒體 {#panoramic-media-component}
 
 全景媒體元件適用於球形全景影像的資產。 此類影像可提供360°的房間、房產、位置或風景觀賞體驗。 若要符合球形全景的影像，它必須具備下列其中一個或兩個：
 
@@ -283,11 +313,11 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 
 如果您所尋找的檢視器預設集不可見，請勾選以確保已發佈。 您必須先發佈檢視器預設集，才能使用。 請參閱 [管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
-### 元件：視訊360媒體 {#video-media-component}
+### 元件： 視訊360媒體 {#video-media-component}
 
 使用 **[!UICONTROL Video 360 Media]** （視訊360媒體）元件，在您的網頁上演算等方形視訊，以提供身歷其境的房間、房產、位置、風景或醫療程式檢視體驗。
 
-在平面顯示器上播放時，用戶可以控制視角；在行動裝置上播放時，通常會運用其內建的陀螺控制項。
+在平面顯示器上播放時，用戶可以控制視角； 在行動裝置上播放時，通常會運用其內建的陀螺控制項。
 
 檢視器包含傳送360個視訊資產的原生支援。 依預設，檢視或播放不需要其他設定。 您可使用標準的視訊副檔名（例如。mp4、.mkv和。mov）來傳送360視訊。 最常見的轉碼器是H.264。
 
