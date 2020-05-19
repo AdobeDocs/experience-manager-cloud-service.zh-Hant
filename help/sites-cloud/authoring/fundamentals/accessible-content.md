@@ -1,10 +1,10 @@
 ---
 title: 建立適用於Adobe Experience Manager的可存取雲端服務內容（WCAG 2.1符合性）
-description: 協助殘障人士存取和使用網頁內容
+description: 使用AEM做為雲端服務，協助殘障人士存取和使用網頁內容
 translation-type: tm+mt
-source-git-commit: ad0bceb47a2881ad82af4967b135d2adeff3fbf7
+source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
 workflow-type: tm+mt
-source-wordcount: '13936'
+source-wordcount: '13943'
 ht-degree: 5%
 
 ---
@@ -732,7 +732,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構具有語義意義的網頁�
 #### 詳細資訊——暫停、停止、隱藏(2.2.2) {#more-information-pause-stop-hide}
 
 * [瞭解成功標準2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
-* [如何符合成功標準2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
+* [如何符合成功標準2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
 
 ### 癲癇與身體反應(2.3) {#seizures-and-physcial-reactions}
 
@@ -1111,7 +1111,7 @@ To add the span element, with an appropriate language, you can manually edit you
 
 請務必注意，本節中使用「相同順序」一詞並非暗示無法使用子導覽功能表，或無法使用次導覽或頁面結構區塊。 相反地，此成功准則旨在協助使用者透過網頁與重複內容互動，以預測所尋找內容的位置，並在再次遇到時更快速找到。
 
-用戶可以通過使用自適應用戶代理或通過設定首選項來根據順序發起更改，以便以對他們最有用的方式呈現資訊。
+用戶可以通過使用自適應用戶代理或通過設定首選項來啟動按順序的更改，以便以對他們最有用的方式呈現資訊。
 
 #### 如何開會——一致導覽(3.2.3) {#how-to-meet-consistent-navigation}
 
