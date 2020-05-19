@@ -2,9 +2,9 @@
 title: 建立適用於Adobe Experience Manager的可存取雲端服務內容（WCAG 2.1符合性）
 description: 協助殘障人士存取和使用網頁內容
 translation-type: tm+mt
-source-git-commit: 0f1ef5ab6ebc929ced669e47c8737d7401d5ea35
+source-git-commit: ad0bceb47a2881ad82af4967b135d2adeff3fbf7
 workflow-type: tm+mt
-source-wordcount: '13935'
+source-wordcount: '13936'
 ht-degree: 5%
 
 ---
@@ -534,7 +534,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構具有語義意義的網頁�
    * Logotypes: 屬於標誌或品牌名稱的文字沒有最低對比要求。
    >[!NOTE]
    >
-   >如需詳 [細資訊，請參閱瞭解非文字對比](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) ，以協助讀者瞭解非文字元素（包括圖示、介面元素等）的其他需求。
+   >如需詳 [細資訊，請參閱瞭解非文字對比](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) ，以協助內容作者瞭解非文字元素（包括圖示、介面元素等）的其他需求。
 
 #### 用途——對比（最低）(1.4.3) {#purpose-contrast-minimum}
 
@@ -1111,7 +1111,7 @@ To add the span element, with an appropriate language, you can manually edit you
 
 請務必注意，本節中使用「相同順序」一詞並非暗示無法使用子導覽功能表，或無法使用次導覽或頁面結構區塊。 相反地，此成功准則旨在協助使用者透過網頁與重複內容互動，以預測所尋找內容的位置，並在再次遇到時更快速找到。
 
-用戶可以通過使用自適應用戶代理或通過設定首選項來啟動按順序的更改，以便以對他們最有用的方式呈現資訊。
+用戶可以通過使用自適應用戶代理或通過設定首選項來根據順序發起更改，以便以對他們最有用的方式呈現資訊。
 
 #### 如何開會——一致導覽(3.2.3) {#how-to-meet-consistent-navigation}
 
