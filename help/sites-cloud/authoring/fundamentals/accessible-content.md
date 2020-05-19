@@ -2,9 +2,9 @@
 title: 建立適用於Adobe Experience Manager的可存取雲端服務內容（WCAG 2.1符合性）
 description: 使用AEM做為雲端服務，協助殘障人士存取和使用網頁內容
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
 workflow-type: tm+mt
-source-wordcount: '13943'
+source-wordcount: '13955'
 ht-degree: 5%
 
 ---
@@ -732,7 +732,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構具有語義意義的網頁�
 #### 詳細資訊——暫停、停止、隱藏(2.2.2) {#more-information-pause-stop-hide}
 
 * [瞭解成功標準2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
-* [如何符合成功標準2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
+* [如何符合成功標準2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
 
 ### 癲癇與身體反應(2.3) {#seizures-and-physcial-reactions}
 
@@ -1159,7 +1159,7 @@ To add the span element, with an appropriate language, you can manually edit you
 
 #### 用途——錯誤識別(3.3.1) {#purpose-error-identification}
 
-本成功准則的目的是確保使用者知道發生錯誤，並可判斷錯誤的內容。 錯誤訊息應盡可能具體。 如果表單提交失敗，重新顯示表單並指出有錯誤的欄位不足以讓部分使用者察覺到發生錯誤。 例如，螢幕閱讀程式使用者在遇到其中一個指示器之前，不會知道有錯誤。 他們可能會在遇到錯誤指示器之前完全放棄表單，認為頁面無法運作。 根據WCAG 2.0中的定義，「輸入錯誤」是由用戶提供的未接受的資訊。 這包括：
+本成功准則的目的是確保使用者知道發生錯誤，並可判斷錯誤的內容。 錯誤訊息應盡可能具體。 如果表單提交失敗，重新顯示表單並指出有錯誤的欄位不足以讓部分使用者察覺到發生錯誤。 例如，螢幕閱讀程式使用者在遇到其中一個指示器之前，不會知道有錯誤。 他們可能會在遇到錯誤指示器之前完全放棄表單，認為頁面無法運作。 根據WCAG中的定義，輸 [入錯誤](https://www.w3.org/TR/WCAG/#dfn-input-error) ，是由用戶提供的未接受的資訊。 這包括：
 
 網頁要求但使用者省略的資訊，或使用者提供但不符合要求資料格式或允許值的資訊。
 例如：
@@ -1240,7 +1240,7 @@ However, there is no programmatic association between the group title and the ra
 
 #### 目的——錯誤建議(3.3.3) {#purpose-error-suggestion}
 
-本「成功准則」的目的，在於確保使用者在可能的情況下收到適當的建議，以修正輸入錯誤。 WCAG 2.0的「輸入錯誤」定義說，系統「不接受用戶提供的資訊」。 未被接受的資訊的一些示例包括用戶需要但省略的資訊以及用戶提供但不屬於所需資料格式或允許值的資訊。
+本「成功准則」的目的，在於確保使用者在可能的情況下收到適當的建議，以修正輸入錯誤。 輸入錯誤的WCAG [定義](https://www.w3.org/TR/WCAG/#dfn-input-error) ，表示系統「不接受用戶提供的資訊」。 未被接受的資訊的一些示例包括用戶需要但省略的資訊以及用戶提供但不屬於所需資料格式或允許值的資訊。
 
 成功准則3.3.1提供錯誤通知。 然而，認知有限的人可能很難理解如何糾正錯誤。 視覺殘障人士可能無法確切瞭解如何修正錯誤。 如果提交表單失敗，使用者可能會放棄表單，因為他們可能不確定如何更正錯誤，即使他們知道錯誤已發生。
 
