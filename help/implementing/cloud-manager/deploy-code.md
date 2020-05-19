@@ -2,16 +2,19 @@
 title: 部署您的程式碼——雲端服務
 description: 部署您的程式碼——雲端服務
 translation-type: tm+mt
-source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
+source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 3%
 
 ---
 
 
 # 部署程式碼 {#deploy-your-code}
 
-## 使用Cloud manager部署程式碼 {#deploying-code-with-cloud-manager}
+## 使用Cloud Manager部署程式碼 {#deploying-code-with-cloud-manager}
 
-在配置了 **Pipeline** （儲存庫、環境和測試環境）後，您就可以部署代碼。
+在配置了 **Pipeline**  (儲存庫、環境和測試環境) 後，您就可以部署代碼。
 
 1. 按一 **下** 「從雲端管理員部署」，開始部署程式。
 
@@ -37,17 +40,17 @@ source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
    「 **舞台部署**」涉及以下步驟：
 
-   * 驗證：此步驟確保將管線配置為使用當前可用資源，例如，已配置的分支存在，環境可用。
-   * 構建和單元測試：此步驟會執行容器化的建立程式。 如需 [建立環境的詳細資訊，請參閱「建立AEM應用程式專案](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) 」。
-   * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](/help/implementing/developing/introduction/understand-test-results.md) ，請參閱瞭解測試結果。
-   * 建立影像：此步驟包含用於構建映像的進程的日誌檔案。 此程式負責將構建步驟生成的內容和調度程式包轉換為Docker映像和Kubernetes配置。
+   * 驗證： 此步驟確保將管線配置為使用當前可用資源，例如，已配置的分支存在，環境可用。
+   * 構建和單元測試： 此步驟會執行容器化的建立程式。 如需 [建立環境的詳細資訊，請參閱「建立AEM應用程式專案](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) 」。
+   * 代碼掃描： 此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](/help/implementing/developing/introduction/understand-test-results.md) ，請參閱瞭解測試結果。
+   * 建立影像： 此步驟包含用於構建映像的進程的日誌檔案。 此程式負責將構建步驟生成的內容和調度程式包轉換為Docker映像和Kubernetes配置。
    * 部署至舞台
 
       ![](assets/stage-deployment.png)
    測試 **階段**，包括下列步驟：
 
-   * 產品功能測試：Cloud Manager管道執行將支援對舞台環境運行的測試的執行。 如需 [測試程式的詳細資訊](/help/implementing/developing/introduction/understand-test-results.md) ，請參閱瞭解測試結果。
-   * 自訂功能測試：管線中的此步驟始終存在，不能跳過。 但是，如果構建版本未生成測試JAR，則預設情況下測試通過。 如需 [測試程式的詳細資訊](/help/implementing/developing/introduction/understand-test-results.md) ，請參閱瞭解測試結果。
+   * 產品功能測試： Cloud Manager管道執行將支援對舞台環境運行的測試的執行。 如需 [測試程式的詳細資訊](/help/implementing/developing/introduction/understand-test-results.md) ，請參閱瞭解測試結果。
+   * 自訂功能測試： 管線中的此步驟始終存在，不能跳過。 但是，如果構建版本未生成測試JAR，則預設情況下測試通過。 如需 [測試程式的詳細資訊](/help/implementing/developing/introduction/understand-test-results.md) ，請參閱瞭解測試結果。
 
       ![](assets/stage-testing.png)
 
@@ -56,18 +59,18 @@ source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
 
 >注意:
->AEM Cloud services的Cloud manager需要更新下列章節，且正在進行中。
+>AEM Cloud Services的Cloud Manager需要更新下列章節，且正在進行中。
 
 ## 部署程式 {#deployment-process}
 
 下節說明AEM和Dispatcher套件在階段階段和生產階段的部署方式。
 
-Cloud manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存位置。  在管線的部署階段，會從此位置檢索這些對象。
+Cloud Manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存位置。  在管線的部署階段，會從此位置檢索這些對象。
 
-當Cloud manager部署到非生產拓撲時，其目標是盡快完成部署，因此對象將同時部署到所有節點，如下所示：
+當Cloud Manager部署到非生產拓撲時，其目標是盡快完成部署，因此對象將同時部署到所有節點，如下所示：
 
-1. Cloud manager會決定每個對象是AEM還是分派程式套件。
-1. Cloud manager會從負載平衡器中刪除所有調度程式，以在部署期間隔離環境。
+1. Cloud Manager會決定每個對象是AEM還是分派程式套件。
+1. Cloud Manager會從負載平衡器中刪除所有調度程式，以在部署期間隔離環境。
 
    除非另行配置，否則您可以跳過開發和階段部署中的負載平衡器更改，即分離和附加非生產管線中的步驟，以用於開發環境，以及生產管線中的步驟，用於階段環境。
 
@@ -92,13 +95,13 @@ Cloud manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
    1. 在流水線配置中指定的每個路徑都無效或從調度器快取中刷新。
    >[!NOTE]
    >
-   >Cloud manager希望調度器對象包含完整檔案集。  所有調度程式配置檔案都必須存在於git儲存庫中。 缺少檔案或資料夾將導致部署失敗。
+   >Cloud Manager希望調度器對象包含完整檔案集。  所有調度程式配置檔案都必須存在於git儲存庫中。 缺少檔案或資料夾將導致部署失敗。
 
 1. 成功將所有AEM和Dispatcher套件部署至所有節點後，會將Dispatcher新增至負載平衡器，而部署即告完成。
 
    >[!NOTE]
    >
-   >您可以跳過開發和階段部署中的負載允許更改，即在非生產管道、開發人員環境和生產管道中分離和附加步驟，以用於階段環境。
+   >您可以跳過開發和階段部署中的負載平衡器更改，即在非生產流水線、開發人員環境和生產流水線中分離和附加步驟，以用於階段環境。
 
 ### 部署至生產階段 {#deployment-production-phase}
 
