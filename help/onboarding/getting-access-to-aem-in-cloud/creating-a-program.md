@@ -2,7 +2,10 @@
 title: 建立方案——雲端服務
 description: 建立方案——雲端服務
 translation-type: tm+mt
-source-git-commit: b30d9e37bb7de46aa252aa7030ab0c2de8610431
+source-git-commit: ed421718a8287e693c7961cbc19ad36db912efb0
+workflow-type: tm+mt
+source-wordcount: '559'
+ht-degree: 0%
 
 ---
 
@@ -29,10 +32,7 @@ source-git-commit: b30d9e37bb7de46aa252aa7030ab0c2de8610431
 
 ![](assets/create-program-add.png)
 
-## 建立示範程式 {#create-demo-program}
-
->[!NOTE]
->示範程式類似於Cloud Manager UI中的沙盒程式。
+## 建立沙盒程式 {#create-demo-program}
 
 請依照下列步驟建立沙盒程式：
 
