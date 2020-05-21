@@ -2,7 +2,7 @@
 title: 建立方案——雲端服務
 description: 建立方案——雲端服務
 translation-type: tm+mt
-source-git-commit: ed421718a8287e693c7961cbc19ad36db912efb0
+source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ![](assets/create-program-add.png)
 
-## 建立沙盒程式 {#create-demo-program}
+## 建立沙盒程式 {#create-sandbox-program}
 
 請依照下列步驟建立沙盒程式：
 
