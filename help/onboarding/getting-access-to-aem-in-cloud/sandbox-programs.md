@@ -2,9 +2,9 @@
 title: 沙盒程式——雲端服務
 description: 沙盒程式——雲端服務
 translation-type: tm+mt
-source-git-commit: e7cad0cd67f04eac5627e72339ccb1c4f54cc8c8
+source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 沙盒程式包括「網站」和「資產」，並自動填入Git分支，其中包含范常式式碼、開發環境和非生產管道。
 
-有關程式類型的詳細資訊，請參閱了 [解程式和程式類型](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html)。
+請參閱了 [解方案和方案類型](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) ，以進一步瞭解方案類型。
 
 ### 沙盒程式的屬性 {#attributes-sandbox}
 
@@ -86,9 +86,17 @@ ht-degree: 0%
 
 1. 導覽至「開 **發人員主控台」**。
 請參閱 [存取Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，瞭解如何從「環境」卡存取 **Developer Console****** 。
-1. 按一下「休眠」，如下圖所示：
-1. 按一下 **Hibernate** 以確認步驟
-1. 冬眠成功後，您會看到下列畫面。
+
+1. 按一下「休眠」，如下圖所示
+
+   ![](assets/hibernate-1.png)
+1. 按一下 **Hibernate** 以確認步驟。
+
+   ![](assets/hibernate-2.png)
+
+1. 當休眠成功時，您會在「開發人員控制台」畫面中看到您環境的休眠程式完 **整通知** 。
+
+   ![](assets/hibernate-4.png)
 
 #### 訪問休眠環境 {#accessing-hibernated-environment}
 
