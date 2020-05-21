@@ -2,9 +2,9 @@
 title: 沙盒程式——雲端服務
 description: 沙盒程式——雲端服務
 translation-type: tm+mt
-source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
+source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -137,9 +137,9 @@ ht-degree: 0%
 
 請參閱 [AEM版本更新](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) ，以取得詳細資訊。
 
-使用者可以手動將AEM更新套用至沙盒程式中的環境（請參閱下圖）。 當顯示的狀態為「可用更新」時，可 **以執行此操作**。
+使用者可以手動將AEM更新套用至沙盒程式中的環境。
 
-「環境卡」上的下拉式選單提供「更新」 **選項** 。 如果您從「環境」卡上按一下「詳細資訊」(Details **** ) **，也可從「管理」(** Manage **)按鈕使用此選項** 。
+請參閱 [更新環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) ，瞭解如何更新環境。
 
 >[!NOTE]
 >必 *須配置部署到所關注開發環境的非生產管道* ，以便啟動手動更新管道。
