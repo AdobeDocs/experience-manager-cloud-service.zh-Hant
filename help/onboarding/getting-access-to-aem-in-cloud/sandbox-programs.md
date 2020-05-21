@@ -4,7 +4,7 @@ description: 沙盒程式——雲端服務
 translation-type: tm+mt
 source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 程式建立精靈可讓您建立沙盒程式。
 
-若要瞭解如何建立沙盒程式，請參閱「 [建立沙盒程式」](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program)。
+若要瞭解如何建立沙盒程式，請參閱「建立沙 [盒程式」](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) ，以取得詳細資訊。
 
 ### 建立沙盒環境 {#creating-sandbox-environments}
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 要瞭解如何手動建立環境，請參閱添加環 [境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) ，以瞭解詳細資訊。
 
-### 刪除沙盒環境  {#deleting-sandbox-environments}
+### 刪除沙盒環境 {#deleting-sandbox-environments}
 
 具備必要權限的使用者可以刪除開發或生產／階段環境或集。
 
@@ -75,6 +75,9 @@ ht-degree: 0%
 
 * **手動**: 作為用戶，您可以手動為沙盒程式環境休眠，但無需這樣做，因為休眠將在某段時間（8小時）不活動後自動發生。
 
+>[!CAUTION]
+>在最新版本中，連結至Cloud Manager的Developer Console時，您無法讓沙盒程式環境休眠。
+
 #### 使用手動休眠 {#using-manual-hibernation}
 
 您可以使用下列兩種不同方式，從「開發人員主控台」手動讓沙盒程式休眠：
@@ -87,9 +90,16 @@ ht-degree: 0%
 1. 導覽至「開 **發人員主控台」**。
 請參閱 [存取Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，瞭解如何從「環境」卡存取 **Developer Console****** 。
 
-1. 按一下「休眠」，如下圖所示
+1. 按一 **下Hibernate**，如下圖所示：
 
    ![](assets/hibernate-1.png)
+
+   或,
+
+   按一 **下「環境** 」清單中的「Hibernate」，如下圖所示：
+
+   ![](assets/hibernate-1b.png)
+
 1. 按一下 **Hibernate** 以確認步驟。
 
    ![](assets/hibernate-2.png)
@@ -97,14 +107,6 @@ ht-degree: 0%
 1. 當休眠成功時，您會在「開發人員控制台」畫面中看到您環境的休眠程式完 **整通知** 。
 
    ![](assets/hibernate-4.png)
-
-#### 訪問休眠環境 {#accessing-hibernated-environment}
-
-當針對休眠環境的作者或發佈層提出任何瀏覽器請求時，使用者會遇到一個描述該環境休眠狀態的登陸頁面，如下所示：
-
-使用 **** Cloud Manager - Developer Role的使用者可以按一下「Developer Console」（開發人員主控台）按鈕，存取開發人員主控台並解除環境休眠。 有關設定角色的資訊，請參閱Cloud Manager檔案。
-
-如果組織中的使用者無法按一下「開發人員主控台」按鈕以進入「開發人員主控台」，則可能需要給予他們「雲端管理員——開發人員角色」。
 
 
 ### 解除休眠 {#de-hibernation-introduction}
@@ -119,6 +121,13 @@ ht-degree: 0%
 
    ![](assets/de-hibernation-img1.png)
 
+   或,
+
+   按一下「 **Environments(環境** )」清單中的「 **** De-hibernate（解除休眠）」 ，如下圖所示：
+
+   ![](assets/de-hibernate-1b.png)
+
+
 1. 按一下 **De Hibernate** （刪除休眠）確認步驟。
 
    ![](assets/de-hibernation-img2.png)
@@ -131,9 +140,30 @@ ht-degree: 0%
 
    ![](assets/de-hibernation-img4.png)
 
+#### 訪問休眠環境 {#accessing-hibernated-environment}
+
+當針對休眠環境的作者或發佈層提出任何瀏覽器請求時，使用者會遇到一個說明該環境休眠狀態的登陸頁面，如下圖所示：
+
+![](assets/de-hibernation-img5.png)
+
+
+使用 **Cloud Manager - Developer Role的使用者可以按一下** Developer Console **** ，存取開發人員主控台並解除環境休眠。
+
+>[!NOTE]
+> Cloud Manager中的許多功能需要特定權限才能運作。 要瞭解有關控制特定功能可用性的用戶的角色的更多資訊，請[參閱添加用戶和角色](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html)。
+
+#### 重要考量事項 {#important-considerations}
+
+與冬眠和脫冬眠環境相關的幾項主要考慮事項包括：
+
+* 使用者可使用管道將自訂程式碼部署至休眠的環境。 環境將保持休眠狀態，而新代碼將在解除休眠後出現在環境中。
+
+* AEM升級可套用至休眠環境，客戶可從Cloud Manager手動觸發。 該環境將保持休眠狀態，新版本將在解除休眠後出現在環境中。
+
+>[!NOTE]
+>目前，Cloud Manager不會指出環境是否已休眠。
 
 ## AEM沙盒環境更新 {#aem-updates-sandbox}
-
 
 請參閱 [AEM版本更新](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) ，以取得詳細資訊。
 
@@ -142,13 +172,10 @@ ht-degree: 0%
 請參閱 [更新環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) ，瞭解如何更新環境。
 
 >[!NOTE]
->必 *須配置部署到所關注開發環境的非生產管道* ，以便啟動手動更新管道。
+>* 必 *須配置部署到所關注開發環境的非生產管道* ，以便啟動手動更新管道。
+>* 必 *須配置Production Pipeline* ，才能啟動對Production+Stage環境設定的手動更新管線。
+>* 手動更新至 *Production* 或 *Stage* 環境會自動更新其他環境。 Production+Stage環境集必須位於相同的AEM版本。
 
->[!NOTE]
->必 *須配置Production Pipeline* ，才能啟動對Production+Stage環境設定的手動更新管線。
-
->[!NOTE]
->手動更新至 *Production* 或 *Stage* 環境會自動更新其他環境。 Production+Stage環境集必須位於相同的AEM版本。
 
 
 
