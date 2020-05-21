@@ -2,9 +2,9 @@
 title: 沙盒程式——雲端服務
 description: 沙盒程式——雲端服務
 translation-type: tm+mt
-source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
+source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 建立沙盒通常是為了提供訓練、執行示範、啟用或概念驗證(POC)的目的。 他們不是要載著現場交通的。
 
-沙盒程式包括「網站」和「資產」，並自動填入Git分支，其中包含范常式式碼、開發環境和非生產管道。
+沙盒程式包括「網站」和「資產」，並自動填入Git儲存庫、開發環境和非生產管道。  Git儲存庫會填入以AEM Project原型為基礎的範例專案。
 
 請參閱了 [解方案和方案類型](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) ，以進一步瞭解方案類型。
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 程式建立精靈可讓您建立沙盒程式。
 
-要瞭解如何建立沙箱程式，請參閱。
+若要瞭解如何建立沙盒程式，請參閱「建立沙 [盒程式」](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) ，以取得詳細資訊。
 
 ### 建立沙盒環境 {#creating-sandbox-environments}
 
@@ -74,6 +74,9 @@ ht-degree: 0%
 * **自動** 「沙盒程式」環境在閒置8小時後會自動休眠，這表示作者和發佈服務都不會收到要求。
 
 * **手動**: 作為用戶，您可以手動為沙盒程式環境休眠，但無需這樣做，因為休眠將在某段時間（8小時）不活動後自動發生。
+
+>[!CAUTION]
+>在最新版本中，連結至Cloud Manager的Developer Console時，您無法讓沙盒程式環境休眠。
 
 #### 使用手動休眠 {#using-manual-hibernation}
 
@@ -149,6 +152,17 @@ ht-degree: 0%
 >[!NOTE]
 > Cloud Manager中的許多功能需要特定權限才能運作。 要瞭解有關控制特定功能可用性的用戶的角色的更多資訊，請[參閱添加用戶和角色](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html)。
 
+#### 重要考量事項 {#important-considerations}
+
+與冬眠和脫冬眠環境相關的幾項主要考慮事項包括：
+
+* 使用者可使用管道將自訂程式碼部署至休眠的環境。 環境將保持休眠狀態，而新代碼將在解除休眠後出現在環境中。
+
+* AEM升級可套用至休眠的環境，客戶可從Cloud Manager手動觸發。 該環境將保持休眠狀態，新版本將在解除休眠後出現在環境中。
+
+>[!NOTE]
+>目前，Cloud Manager不會指出環境是否已休眠。
+
 ## AEM沙盒環境更新 {#aem-updates-sandbox}
 
 請參閱 [AEM版本更新](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) ，以取得詳細資訊。
@@ -158,13 +172,9 @@ ht-degree: 0%
 請參閱 [更新環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) ，瞭解如何更新環境。
 
 >[!NOTE]
->必 *須配置部署到所關注開發環境的非生產管道* ，以便啟動手動更新管道。
+>* 手動更新只能在目標環境具有正確配置的管線時運行。
+>* 手動更新至 *Production* 或 *Stage* 環境會自動更新其他環境。 Production+Stage環境集必須位於相同的AEM版本。
 
->[!NOTE]
->必 *須配置Production Pipeline* ，才能啟動對Production+Stage環境設定的手動更新管線。
-
->[!NOTE]
->手動更新至 *Production* 或 *Stage* 環境會自動更新其他環境。 Production+Stage環境集必須位於相同的AEM版本。
 
 
 
