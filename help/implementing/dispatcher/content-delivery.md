@@ -2,12 +2,15 @@
 title: 內容傳送
 description: '內容傳送 '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a07de761dd9aedb3469f256e08ecf05b2102889d
+workflow-type: tm+mt
+source-wordcount: '2268'
+ht-degree: 1%
 
 ---
 
 
-# AEM中的「雲端服務」內容傳送 {#content-delivery}
+# AEM 雲端服務的內容傳送 {#content-delivery}
 
 目前的頁面詳細資訊會在AEM中以Cloud Service的形式發佈服務內容傳送。 發佈服務內容傳送包括：
 
@@ -22,14 +25,14 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 1. 如果內容已完全快取到CDN,CDN會將內容提供給瀏覽器
 1. 如果內容未完全快取，CDN會呼叫（反向proxy）給分派程式
 1. 如果內容已完全快取在Dispatcher上，則Dispatcher會將其提供給CDN
-1. If content is not fully cached, the dispatcher calls out (reverse proxy) to the AEM publish
+1. 如果內容未完全快取，則分派程式會呼叫（反向proxy）至AEM發佈
 1. 內容由瀏覽器轉譯，瀏覽器也會快取內容，視標題而定
 
 內容類型HTML/text設定為在分派程式層的300秒（5分鐘）後過期，分派程式快取和CDN都會遵守此臨界值。 在重新部署發佈服務期間，會清除調度器快取，然後在新的發佈節點接受通信之前預熱。
 
-The sections below provide greater detail about content delivery, including CDN configuration and caching.
+以下各節提供內容傳送的更詳細資訊，包括CDN設定和快取。
 
-Information about replication from the author service to the publish service is available [here](/help/operations/replication.md).
+有關從作者服務複製到發佈服務的資訊，請參 [閱](/help/operations/replication.md)。
 
 ## CDN {#cdn}
 
@@ -49,14 +52,14 @@ AEM總共提供兩個選項：
 | 詳細資料 | AEM Managed CDN | 客戶管理的CDN指向AEM CDN |
 |---|---|---|
 | **客戶工作** | 沒有，它完全整合。 只需將CNAME指向AEM Managed CDN。 | 適度的客戶投資。 客戶必須管理自己的CDN。 |
-| **Pre-requisites** | 無 | 需要替換的現有CDN十分繁雜。 上線前必須先示範成功的負載測試。 |
+| **先決條件** | 無 | 需要替換的現有CDN十分繁雜。 上線前必須先示範成功的負載測試。 |
 | **CDN專業知識** | 無 | 需要至少一次兼職的工程資源及能夠設定客戶CDN的詳細CDN知識。 |
 | **安全性** | 由 Adobe 管理. | 由Adobe管理（也可由客戶在自己的CDN管理）。 |
-| **效能** | 由Adobe最佳化。 | 將受益於某些AEM CDN功能，但由於額外的跳數，可能會造成小幅效能點擊。 **注意**:從客戶CDN跳至Emply CDN可能會很有效)。 |
+| **效能** | 由Adobe最佳化。 | 將受益於某些AEM CDN功能，但由於額外的跳數，可能會造成小幅效能點擊。 **注意**: 從客戶CDN跳至Adobe立即可用的CDN可能會很有效率)。 |
 | **快取** | 支援在調度器上應用的快取標頭。 | 支援在調度器上應用的快取標頭。 |
 | **影像和視訊壓縮功能** | 可與Adobe Dynamic Media搭配使用。 | 可搭配Adobe Dynamic Media或客戶管理的CDN影像／視訊解決方案使用。 |
 
-### AEM Managed CDN {#aem-managed-cdn}
+### AEM Managed CDN  {#aem-managed-cdn}
 
 使用Adobe現成可用的CDN來準備內容傳送很簡單，如下所述：
 
@@ -65,7 +68,7 @@ AEM總共提供兩個選項：
 1. 您應通知客戶支援：
    * 哪個自定義域應與給定環境關聯，如程式ID和環境ID所定義。
    * 如果需要任何IP白名單來限制特定環境的流量。
-1. 然後，客戶支援將與您協調CNAME DNS記錄的時間，並將其FQDN指向 `adobe-aem.map.fastly.net`。
+1. 然後，客戶支援將與您協調CNAME DNS記錄的時間，並將其FQDN指向 `cdn.adobeaemcloud.com`。
 1. 當SSL憑證即將到期時，您會收到通知，因此您可以重新提交新的SSL憑證。
 
 **限制流量**
@@ -100,7 +103,7 @@ AEM總共提供兩個選項：
 ### HTML/文字 {#html-text}
 
 * 依預設，會根據apache圖層所發出的快取控制標題，由瀏覽器快取5分鐘。 CDN也尊重此值。
-* 可以在使用AEM做為Cloud Service SDK Dispatcher工具中定義變數， `EXPIRATION_TIME` 覆寫所 `global.vars` 有HTML/Text內容的變數。
+* 可以覆寫所有HTML/Text內容，方法是在使用AEM `EXPIRATION_TIME` 做 `global.vars` 為Cloud Service SDK Dispatcher工具中定義變數。
 * 可以由以下apache mod_headers指令在更精細的級別上覆蓋：
 
 ```
