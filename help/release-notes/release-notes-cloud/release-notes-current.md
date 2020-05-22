@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 雲端服務 2020.5.0 版發行說明
 description: Experience Manager 2020.5.0 版發行說明
 translation-type: tm+mt
-source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
+source-git-commit: 8fe1f6f1c7c6a608ee1ca42836ee91e83487428d
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 29%
+source-wordcount: '374'
+ht-degree: 18%
 
 ---
 
@@ -14,7 +14,22 @@ ht-degree: 29%
 
 以下章節概述 Experience Manager 雲端服務 2020.5.0 版的一般發行說明。
 
-## Cloud Manager {#cloud-manager}
+## 發行日期 {#release-date}
+
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.5.0 is May 07, 2020.
+
+## AEM Sites的新增功能 {#aem-sites}
+
+請依照本節內容，瞭解AEM中AEM Sites的新增功能和更新(Cloud Service Release 2020.5.0)。
+
+* 在處理大量頁面移動和展示為非同步作業後，現在可提供詳細的作業資訊。
+* 複製／貼上頁面樹狀結構時，現在提供選擇只貼上根頁面或是樹狀結構的子頁面。
+* 匯出至Adobe Target工作區的AEM體驗片段現在會在Target中顯示為獨特的選件類型和選件來源。
+* MSM —— 使用 *publish* trigger現在可成功刪除即時副本來源中元件的刪除事件，即刪除即時副本來源中已刪除的即時副本元件。
+* MSM —— 從即時副本來源轉出相同的元件後，即時副本元件現在會重新命名為 *_msm_moved* 。
+
+
+## Cloud Manager 的新增功能 {#cloud-manager}
 
 請詳閱本節，瞭解 AEM 雲端服務 2020.5.0 版中 Cloud Manager 的新增功能和更新。
 
