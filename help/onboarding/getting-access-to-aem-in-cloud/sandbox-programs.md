@@ -4,7 +4,7 @@ description: 沙盒程式——雲端服務
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 沙盒程式是AEM Cloud Service中提供的兩種程式類型之一，另一種是一般程式。
 
-建立沙盒通常是為了提供訓練、執行示範、啟用或概念驗證(POC)的目的。 他們不是要載著現場交通的。 他們不受 [AEM雲端服務約束](https://www.adobe.com/legal/service-commitments.html)。
+建立沙盒通常是為了提供訓練、執行示範、啟用或概念驗證(POC)的目的。 他們不是要載著現場交通的。 他們不受 [AEM雲端服務承諾的約束](https://www.adobe.com/legal/service-commitments.html)。
 
 在沙盒中建立的環境未設定為自動縮放。 因此，它們不適合用於效能或負載測試。
 
