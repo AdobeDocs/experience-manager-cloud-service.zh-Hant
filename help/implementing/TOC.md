@@ -1,11 +1,11 @@
 ---
-sub-product: AEM雲端服務實作
-user-guide-title: AEM雲端服務實作
-translation-type: tm+mt
+sub-product: AEM 雲端服務實作
+user-guide-title: AEM 雲端服務實作
+translation-type: ht
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '181'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -30,16 +30,16 @@ ht-degree: 81%
    + [AEM 雲端服務 SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM 雲端服務開發方針](developing/introduction/development-guidelines.md)
    + [開始開發 AEM Sites - WKND 教學課程](developing/introduction/develop-wknd-tutorial.md)
-   + [AEM 雲端服務 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [AEM 雲端服務 API](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [了解測試結果](/help/implementing/developing/introduction/understand-test-results.md)
 + 設定和擴充 AEM 雲端服務 {#configuring-and-extending}
    + [擴充體驗片段](developing/extending/experience-fragments.md)
    + [自訂和擴充內容片段](developing/extending/content-fragments-customizing.md)
-   + [內容片段設定要轉譯的元件](developing/extending/content-fragments-configuring-components-rendering.md)
+   + [轉譯專用內容片段設定元件](developing/extending/content-fragments-configuring-components-rendering.md)
    + [設定搜尋表單](developing/extending/search-forms.md)
 + 部署至 AEM 雲端服務 {#deploying}
    + [部署至 AEM 雲端服務](deploying/overview.md)
-   + [將OSGi的AEM設定為雲端服務](deploying/configuring-osgi.md)
+   + [為 AEM 雲端服務設定 OSGi](deploying/configuring-osgi.md)
 + 雲端中的 Dispatcher {#dispatcher}
    + [雲端中的 Dispatcher](dispatcher/overview.md)
    + [AEM 雲端服務的內容傳送](dispatcher/content-delivery.md)
