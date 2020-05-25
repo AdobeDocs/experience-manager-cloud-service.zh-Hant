@@ -4,7 +4,7 @@ description: 沙盒程式——雲端服務
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -91,8 +91,8 @@ ht-degree: 0%
 
 1. 導覽至「開 **發人員主控台」**。
 請參閱 [存取Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，瞭解如何從「環境」卡存取 **Developer Console****** 。
-   >[!NOTE]
-   >直接從Cloud Manager連結至Developer Console時，您無法選擇讓沙盒程式環境休眠。 因應措施是在Developer Console上加一次，在url `#release-cm-p1234-e5678 where 1234` 1234的結尾加上下列模式：您的 *Program ID* ，而5678是您的 *Environment ID*。
+   >[!IMPORTANT]
+   >直接從Cloud Manager連 **結至Developer Console** ，您將無法選擇讓沙盒程式環境休眠。 因應措施是在Developer Console上加一次，在url `#release-cm-p1234-e5678 where 1234` 1234的結尾加上下列模式：您的 *Program ID* ，而5678是您的 *Environment ID*。
 
 1. 按一 **下Hibernate**，如下圖所示：
 
@@ -117,6 +117,9 @@ ht-degree: 0%
 
 1. 導覽至「開 **發人員主控台」**。
 請參閱 [存取Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，瞭解如何從「環境」卡存取 **Developer Console****** 。
+
+   >[!IMPORTANT]
+   >直接從Cloud Manager連 **結至Developer Console** ，您將無法選擇解除沙盒程式環境的休眠。 因應措施是在Developer Console上加一次，在url `#release-cm-p1234-e5678 where 1234` 1234的結尾加上下列模式：您的 *Program ID* ，而5678是您的 *Environment ID*。
 
    >[!NOTE]
    >或者，您也可以瀏覽至 **Developer Console** ，以取消休眠，方法是嘗試存取已休眠環境的作者或發佈服務； 在此情況下，將會出現著陸頁面，其中包含「開發人員主控台」的連結。 請參閱下面的訪問休眠環境部分。
