@@ -1,8 +1,11 @@
 ---
-sub-product: 在AEM中以雲端服務形式製作內容
-user-guide-title: 在AEM中以雲端服務形式製作內容
-translation-type: tm+mt
+sub-product: AEM 雲端服務的內容製作
+user-guide-title: AEM 雲端服務的內容製作
+translation-type: ht
 source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
+workflow-type: ht
+source-wordcount: '200'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +36,7 @@ source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
       + [匯出為 CSV](authoring/fundamentals/csv-export.md)
       + [元件](authoring/fundamentals/components.md)
       + [為行動裝置製作](authoring/fundamentals/mobile.md)
-      + [建立可存取的內容（WCAG 2.1符合性）](authoring/fundamentals/accessible-content.md)
+      + [建立可存取的內容 (符合 WCAG 2.1)](authoring/fundamentals/accessible-content.md)
       + [疑難排解](authoring/fundamentals/troubleshooting.md)
       + [鍵盤快速鍵](authoring/fundamentals/keyboard-shortcuts.md)
    + 製作功能 {#features}
