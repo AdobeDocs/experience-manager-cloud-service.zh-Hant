@@ -1,8 +1,11 @@
 ---
 sub-product: AEM 雲端服務之運作與維護
 user-guide-title: AEM 雲端服務之運作與維護
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
+workflow-type: ht
+source-wordcount: '40'
+ht-degree: 100%
 
 ---
 
