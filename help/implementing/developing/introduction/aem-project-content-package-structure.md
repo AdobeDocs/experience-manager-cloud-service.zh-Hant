@@ -2,7 +2,10 @@
 title: AEM 專案結構
 description: 瞭解如何定義封裝結構以部署至Adobe Experience Manager Cloud Service。
 translation-type: tm+mt
-source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
+source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+workflow-type: tm+mt
+source-wordcount: '2352'
+ht-degree: 18%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
 >
 >請熟悉基本的 [AEM Project Archetype使用](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)，以及 [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) FileVault Content Maven Plug-in，因為本文以這些學習與概念為基礎。
 
-本文概述Adobe Experience Manager Maven專案所需的變更，以確保其符合可變和不可變內容的分割；建立必要的相依性，以建立不衝突、確定性的部署；它們被封裝成可展開的結構。
+本文概述Adobe Experience Manager Maven專案所需的變更，以確保其符合可變和不可變內容的分割； 建立必要的相依性，以建立不衝突、確定性的部署； 它們被封裝成可展開的結構。
 
 AEM應用程式部署必須由單一AEM套件組成。 此套件應包含子套件，這些子套件包含應用程式運作所需的一切，包括程式碼、組態和任何支援的基準內容。
 
@@ -130,9 +133,9 @@ Repo Init提供了定義JCR結構的指令或指令碼，這些結構從常見�
 + 群組
 + ACL
 
-回購初始化指令碼會儲存為 `scripts``RepositoryInitializer` OSGi工廠組態的項目，因此可透過執行模式隱式定位，允許AEM Author和AEM Publish Services的回購初始化指令碼之間，或甚至是Envs（Dev、Stage和Prod）之間的差異。
+回購初始化指令碼會儲存為 `scripts``RepositoryInitializer` OSGi工廠組態的項目，因此可透過執行模式隱式定位，允許AEM Author和AEM Publish Services的回購初始化指令碼之間，或甚至是Env（開發、舞台和產品）之間的差異。
 
-請注意，在定義「使用者」和「群組」時，只有群組會視為應用程式的一部分，而且應在此處定義其功能的整數。 「組織使用者」和「群組」仍應在AEM的執行時期中定義；例如，如果自訂工作流程將工作指派給指名的群組，則該群組應透過AEM應用程式中的回購初始化定義，但是，如果群組僅是組織性的，例如「Wendy&#39;s Team」和「Sean&#39;s Team」，則這些工作是最佳定義，並在AEM的執行時期進行管理。
+請注意，在定義「使用者」和「群組」時，只有群組會視為應用程式的一部分，而且應在此處定義其功能的整數。 「組織使用者」和「群組」仍應在AEM的執行時期中定義； 例如，如果自訂工作流程將工作指派給指名的群組，則該群組應透過AEM應用程式中的回購初始化定義，但是，如果群組僅是組織性的，例如「Wendy&#39;s Team」和「Sean&#39;s Team」，則這些工作是最佳定義，並在AEM的執行時期進行管理。
 
 >[!TIP]
 >
@@ -188,7 +191,7 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
 + 第3級資料夾必須是
    `application` 或 `content`
    + 檔案 `application` 夾包含代碼包
-   + 檔案 `content` 夾golds內容包此資料夾名稱必須與包 [含的包](#package-types) 的包類型對應。
+   + 檔案 `content` 夾包含內容包此資料夾名稱必須與 [其包含的包](#package-types) 的包類型對應。
 + 第4層資料夾包含子包，且必須是下列其中一個：
    + `install` 若要同時安裝 **在** AEM作者和AEM發佈上
    + `install.author` 僅 **安裝** 在AEM作者上
@@ -208,7 +211,7 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
 
 ### 容器套件的篩選定義 {#container-package-filter-definition}
 
-由於容器封裝中內嵌了程式碼和內容子封裝，因此必須將內嵌的目標路徑新增至容器專案，以確保內嵌的封裝在建立時 `filter.xml` ，會包含在容器封裝中。
+由於容器封裝中內嵌了程式碼和內容子封裝，因此必須將內嵌的目標路徑新增至容器專案，以確保內嵌的封裝在容器封裝中 `filter.xml` ，當建立時。
 
 只需為包 `<filter root="/apps/<my-app>-packages"/>` 含要部署的子包的任何2級資料夾添加條目。
 
@@ -218,7 +221,7 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
 
 ## 嵌入第三方軟體包 {#embedding-3rd-party-packages}
 
-所有套件都必須透過 [Adobe的公用Maven物件存放庫](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) ，或可存取的公用、參考的第三方Maven物件存放庫取得。
+所有套件都必須透過 [Adobe的公用Maven工件存放庫](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) ，或可存取的公用、可參考的第三方Maven工件存放庫取得。
 
 如果第三方套件位於 **Adobe的公用Maven工件存放庫**，則Adobe Cloud manager無需進一步設定即可解析工件。
 
@@ -333,7 +336,7 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
 
 ### 標籤Adobe Cloud Manager部署的套件 {#cloud-manager-target}
 
-在每個產生套件的專 **案中** ，除容器(`all`)專案外，將外掛程式聲明的 `<cloudManagerTarget>none</cloudManagerTarget>` 組態新增至外掛程式宣告的組態，以確 `<properties>``filevault-package-maven-plugin`**** 保Adobe Cloud Manager不會部署它們。THe容器(`all`)套件應是透過Cloud manager部署的單一套件，而Cloud manager又內嵌所有必要的程式碼和內容套件。
+在每個產生套件的專 **案中** ，除容器(`all`)專案外，將外掛程式聲明的 `<cloudManagerTarget>none</cloudManagerTarget>` 組態新增至外掛程式宣告的組態，以確 `<properties>``filevault-package-maven-plugin`**** 保Adobe Cloud Manager不會部署它們。The container (`all`) package should be the singular package deployed via Cloud Manager, which in turn embeds all required code and content packages.
 
 ```xml
 ...
@@ -485,7 +488,7 @@ OSGi `scripts` 屬性包含 [Apache Sling&#39;s Repo Init語言所定義的指�
 ### 第三方Maven儲存庫 {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> 添加更多Maven儲存庫可能會延長Maven構建時間，因為將檢查其他Maven儲存庫是否有派駐服務。
+> 添加更多Maven儲存庫可能會延長Maven構建時間，因為將檢查其他Maven儲存庫是否具有相關性。
 
 在反應堆項目的中，添 `pom.xml`加任何必要的第三方公共Maven儲存庫指令。 完整配 `<repository>` 置應可從第三方儲存庫提供方獲得。
 
