@@ -2,9 +2,9 @@
 title: 沙盒程式——雲端服務
 description: 沙盒程式——雲端服務
 translation-type: tm+mt
-source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
+source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -150,17 +150,17 @@ ht-degree: 0%
 
    ![](assets/de-hibernation-img4.png)
 
+#### 解除休眠的權限 {#permissions-de-hibernate}
+
+任何擁有產品設定檔的使用者，只要能以雲端服務的身分存取AEM，就應能存取 **Developer Console**，讓他們解除環境的休眠。
+
+請參 [閱Cloud Manager中的「新增使用者和角色](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) 」，以設定使用者權限。
+
 #### 訪問休眠環境 {#accessing-hibernated-environment}
 
 當針對休眠環境的作者或發佈層提出任何瀏覽器請求時，使用者會遇到一個說明該環境休眠狀態的登陸頁面，如下圖所示：
 
 ![](assets/de-hibernation-img5.png)
-
-
-使用 **Cloud Manager - Developer Role的使用者可以按一下** Developer Console **** ，存取開發人員主控台並解除環境休眠。
-
->[!NOTE]
-> Cloud Manager中的許多功能需要特定權限才能運作。 要瞭解有關控制特定功能可用性的用戶的角色的更多資訊，請[參閱添加用戶和角色](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html)。
 
 ### 重要考量事項 {#important-considerations}
 
@@ -168,7 +168,7 @@ ht-degree: 0%
 
 * 使用者可使用管道將自訂程式碼部署至休眠的環境。 環境將保持休眠狀態，而新代碼將在解除休眠後出現在環境中。
 
-* AEM升級可套用至休眠的環境，客戶可從Cloud Manager手動觸發。 該環境將保持休眠狀態，新版本將在解除休眠後出現在環境中。
+* AEM升級可套用至休眠環境，客戶可從Cloud Manager手動觸發。 該環境將保持休眠狀態，新版本將在解除休眠後出現在環境中。
 
 >[!NOTE]
 >目前，Cloud Manager不會指出環境是否已休眠。
