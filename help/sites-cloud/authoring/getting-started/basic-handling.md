@@ -2,7 +2,10 @@
 title: 基本處理
 description: 熟悉AEM及其基本用途
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+workflow-type: tm+mt
+source-wordcount: '2864'
+ht-degree: 5%
 
 ---
 
@@ -41,7 +44,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 ## 全域導覽 {#global-navigation}
 
-您可以使用全域導覽面板，在控制台之間導覽。 當您按一下或點選畫面左上角的Adobe Experience manager連結時，會以全螢幕下拉式清單觸發。
+您可以使用全域導覽面板，在控制台之間導覽。 當您按一下或點選畫面左上角的Adobe Experience Manager連結時，會以全螢幕下拉式清單觸發。
 
 您可以按一下或點選「關閉」以關閉全域導覽面板， **以返回** 先前的位置。
 
@@ -60,6 +63,8 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 ![導覽面板](/help/sites-cloud/authoring/assets/navigation.png)
 
+瀏覽器標籤的標題將會更新，以反映您在控制台和內容中瀏覽時的位置。
+
 在導航中，可用控制台包括：
 
 | 主控台 | 目的 |
@@ -72,7 +77,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 ## 工具面板 {#tools-panel}
 
-在「工具」面板中，有一個包含一系列類別的側面板，這些類別將類似的「工具」控制台分組在一起。 「工具」控制台可讓您存取許多專業工具和控制台，以協助您管理網站、數位資產和內容存放庫的其他方面。 <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+在「工具」面板中，有一個包含一系列類別的側面板，這些類別將類似的「工具」控制台分組在一起。 The Tools consoles provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![工具面板](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -150,6 +155,14 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
    >
    >「 **檢視設定** 」選項僅在「清單檢視」 **模式中可用** 。
 
+* 鍵盤導覽
+
+   您只能使用鍵盤來導覽網站。 這會使用 **TAB鍵(或** OPT+TAB ****)的標準瀏覽器功能，在可聚焦的頁面上的元素之間移動。
+
+   在Sites **** Console中，「跳至主要內容」( **Skip to main content)中已新增選項**。 當您在頁首選項中切換時，這個選項就會顯示，並可讓您略過（產品）工具列中的標準元素，直接將您帶往主要內容，以加速導覽。
+
+   ![跳至主要內容](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
+
 ## 存取說明 {#accessing-help}
 
 有各種可用的說明資源：
@@ -184,7 +197,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
    * **開發人員資源** -開發人員資源與下載
    >[!NOTE]
    >
-   >在控制台中時，您可以使用熱鍵（問號），隨時 `?` 訪問可用的快捷鍵概述。
+   >在控制台中時，您可以使用熱鍵（問號），隨時 `?` 訪問可用的快捷鍵概覽。
    >
    >如需所有鍵盤快速鍵的概觀，請參閱下列檔案：
    >
@@ -204,7 +217,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 選擇資 [源的方式](#viewing-and-selecting-resources) ，取決於視圖。
 
-由於某些視窗的空間限制，工具列可能會很快變得比可用的空間長。 發生此情況時，會出現其他選項。 按一下或點選省略號(三個點或…… ****)會開啟一個下拉式選取器，其中包含所有剩餘的動作。 例如，在Sites主控台中選取頁面 **後** :
+由於某些視窗的空間限制，工具列可能會很快變得比可用的空間長。發生此情況時，會出現其他選項。按一下或點選省略號(三個點或…… ****)會開啟一個下拉式選取器，其中包含所有剩餘的動作。例如，在Sites主控台中選取頁面 **後** :
 
 ![其他選項](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -419,7 +432,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
          * 除了暫時性工作流程外，不會儲存這些工作流程的步驟記錄資訊 <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
       * 顯示全部
 
-* 新增／檢視有關所選項目的註解。 「注 **釋** 」方塊會顯示在事件清單的底部。 鍵入注釋後跟Return將註冊注釋。 當選取「注 **釋** 」或「 **全部顯示** 」時顯示。
+* 新增/檢視有關所選項目的註解。「注 **釋** 」方塊會顯示在事件清單的底部。鍵入注釋後跟Return將註冊注釋。當選取「注 **釋** 」或「 **全部顯示** 」時顯示。
 
 * 特定控制台具有其他功能。 例如，在Sites主控台中，您可以：
 
