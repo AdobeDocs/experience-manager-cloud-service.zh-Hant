@@ -2,7 +2,10 @@
 title: 您的收件匣
 description: 使用收件箱管理任務
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 17%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 您可以從AEM的各個區域收到通知，包括工作流程和專案。 例如，您可能會收到有關以下內容的通知：
 
-* 任務:
+* 任務：
    * 您也可以在AEM UI的不同點建立這些項目，例如在「專案」 **下**。
    * 這些可以是工作流「建立任務」 **或「建立****項目任務」步驟的產品** 。
 * 工作流程:
@@ -46,8 +49,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 按一下／點選工具列中的指標。
 
-1. 選擇「 **全部查看**」。 「 **AEM收件匣** 」將會開啟。 收件匣會顯示工作流程、專案和工作中的項目。
-1. 預設視圖是「列 [表視圖](#inbox-list-view)」，但您也可以切換到「日 [歷視圖」](#inbox-calendar-view)。 這是使用檢視選取器（工具列，右上方）完成。
+1. 選擇「 **全部查看**」。「 **AEM收件匣** 」將會開啟。收件匣會顯示工作流程、專案和工作中的項目。
+1. 預設視圖是「列 [表視圖](#inbox-list-view)」，但您也可以切換到「日 [歷視圖」](#inbox-calendar-view)。這是使用檢視選取器 (工具列，右上方) 完成。
 
    您也可以針對這兩種檢視定義「檢 [視設定」](#inbox-view-settings)。 可用的選項取決於當前視圖。
 
@@ -71,7 +74,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 您可以：
 
-* 選擇特定視圖：時 **間軸**、 **欄**、清 **單**
+* 選擇特定視圖： **時間軸**、 **欄**、清 **單**
 * 指定要根據「計畫」顯示的 **任務**:所有 **計畫中**&#x200B;的， **進行中**, **即將到**，過 ******去的,**
 * 深入查看項目的詳細資訊
 * 選擇日期範圍以集中檢視：
@@ -82,7 +85,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 您可以針對兩種檢視（清單和日曆）定義設定：
 
-* **行事曆檢視**
+* **日曆檢視**
 
    對於 **日曆視圖** ，您可以配置：
 
@@ -104,6 +107,10 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    ![收件箱清單視圖委派設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## 對項目採取操作 {#taking-action-on-an-item}
+
+>[!NOTE]
+>
+>雖然可以選取多個項目，但一次只能對一個項目採取動作。
 
 1. 若要對項目採取動作，請選取適當項目的縮圖。 適用於該項目的動作圖示會顯示在工具列中：
 
@@ -128,7 +135,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    >* 工作流程項目- [參與工作流程](/help/sites-cloud/authoring/workflows/participating.md)
 
 
-1. 根據所選項目，將啟動一個操作，例如：
+2. 根據所選項目，將啟動一個操作，例如：
 
    * 將開啟與操作相適應的對話框
    * 將啟動操作嚮導
@@ -183,7 +190,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    >工作項目（來自工作流）不能用於建立項目。
 
 1. 從工 **具列選擇** 「建立專案」以開啟精靈。
-1. 依次選擇適當的範本， **下一步**。
+1. Select the appropriate template, then **Next**.
 1. 指定所需的屬性：
 
    * **基本**
