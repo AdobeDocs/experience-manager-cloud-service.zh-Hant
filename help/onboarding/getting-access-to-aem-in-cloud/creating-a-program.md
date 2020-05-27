@@ -2,7 +2,7 @@
 title: 建立方案——雲端服務
 description: 建立方案——雲端服務
 translation-type: tm+mt
-source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
+source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 根據使用者在特定客戶／組織可用項目群範圍內建立程式的目標，程式建立精靈會要求使用者提交一或多項詳細資訊。
 
-![](assets/create-program-2.png)
+![](assets/create-sandbox.png)
 
 >[!NOTE]
 >If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 請依照下列步驟建立沙盒程式：
 
-1. 在建立程式嚮導中，選擇 **設定演示**。 用戶在選擇「建立」之前提交程 **序名**。
+1. 在建立程式嚮導中，選擇「 **設定沙箱」**。 用戶在選擇「建立」之前提交程 **序名**。
 
    ![](assets/create-sandbox.png)
 
