@@ -2,10 +2,10 @@
 title: AEM 專案結構
 description: 瞭解如何定義封裝結構以部署至Adobe Experience Manager Cloud Service。
 translation-type: tm+mt
-source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+source-git-commit: 60093232710426d919a45742b1775239944d266d
 workflow-type: tm+mt
-source-wordcount: '2352'
-ht-degree: 18%
+source-wordcount: '2417'
+ht-degree: 17%
 
 ---
 
@@ -237,7 +237,9 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
 
 為了確保軟體包的正確安裝，建議建立軟體包間相關性。
 
-一般規則是包含可變內容(`ui.content`)的包，應取決於支援可變內容的轉換和使用的不可變內容(`ui.apps`)。
+一般規則是包含可變內容(`ui.content`)的封裝，應依賴於支援可變內容轉譯和使用的不可變代碼(`ui.apps`)。
+
+此一般規則的一個明顯例外是，如果不可變的程式碼套件(`ui.apps` 或任何其他)僅 __包含__ OSGi組合。 如果是，則AEM套件不應宣告對它的依賴。 這是因為僅包含 ____ OSGi組合的不可變代碼包未向AEM Package Manager註冊，因此，任何依賴它的AEM套件都將具有未滿足的相關性，且無法安裝。
 
 >[!TIP]
 >
