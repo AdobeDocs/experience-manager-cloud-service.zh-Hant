@@ -1,158 +1,161 @@
 ---
-title: 使用品牌入口網站設定AEM Assets雲端服務
-description: 使用品牌入口網站設定AEM Assets雲端服務。
+title: 使用 Brand Portal 設定 AEM Assets 雲端服務
+description: 使用 Brand Portal 設定 AEM Assets 雲端服務。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: bbb3327d4bc7cef8eede3169bc14a1d247ee2bdc
+source-git-commit: 00e37e9493bc3dde8a4d83c562a889a67587ada0
+workflow-type: tm+mt
+source-wordcount: '1336'
+ht-degree: 80%
 
 ---
 
 
-# 使用品牌入口網站設定AEM資產 {#configure-aem-assets-with-brand-portal}
+# 使用 Brand Portal 設定 AEM Assets {#configure-aem-assets-with-brand-portal}
 
-Adobe Experience Manager(AEM)Assets是透過Adobe I/O以品牌入口網站設定，Adobe I/O會購買IMS Token以授權您的品牌入口網站租用戶。
+Adobe Experience Manager (AEM) Assets 是透過 Adobe I/O 以 Brand Portal 設定，這種方式會取得 IMS Token 來使 Brand Portal 租用戶獲得授權。
 
 ## 必備條件 {#prerequisites}
 
-您需要下列項目才能設定具有品牌入口網站的AEM資產：
+您需要下列項目才能使用 Brand Portal 設定 AEM Assets：
 
-* 啟動並執行AEM Assets雲端例項。
-* 品牌入口網站租用戶URL。
-* 對品牌入口網站的IMS組織具有系統管理員權限的使用者。
+* 已開始運作的 AEM Assets 雲端例項。
+* Brand Portal 租用戶 URL。
+* 在 Brand Portal 租用戶的 IMS 組織具有系統管理員權限的使用者。
 
-**請連絡支援** ，以取得進一步的查詢。
+**請連絡客戶服務** ，以取得進一步的查詢。
 
-## Create configuration {#create-new-configuration}
+## 建立設定 {#create-new-configuration}
 
 您可以在Adobe I/O上建立設定，以使用品牌入口網站來設定您的AEM Assets雲端例項。
 
-在所列順序中執行以下步驟：
+請以所列順序執行以下步驟：
 1. [取得公開憑證](#public-certificate)
-1. [建立Adobe I/O整合](#createnewintegration)
-1. [建立IMS帳戶設定](#create-ims-account-configuration)
+1. [建立 Adobe I/O 整合項目](#createnewintegration)
+1. [建立 IMS 帳戶設定](#create-ims-account-configuration)
 1. [設定雲端服務](#configure-the-cloud-service)
 1. [測試設定](#test-configuration)
 
-### 建立IMS設定 {#create-ims-configuration}
+### 建立 IMS 設定 {#create-ims-configuration}
 
-IMS設定會以AEM Assets作者例項驗證您的品牌入口網站租用戶。
+IMS 設定會以 AEM Assets 作者例項驗證您的 Brand Portal 租用戶。
 
-IMS配置包括兩個步驟：
+IMS 設定包括兩個步驟：
 
 * [取得公開憑證](#public-certificate)
-* [建立IMS帳戶設定](#create-ims-account-configuration)
+* [建立 IMS 帳戶設定](#create-ims-account-configuration)
 
 ### 取得公開憑證 {#public-certificate}
 
-公開憑證可讓您在Adobe I/O上驗證個人檔案。
+公開憑證可讓您在 Adobe I/O 上驗證設定檔。
 
-1. 登入您的AEM Assets雲端實例。
+1. 登入 AEM Assets 雲端例項。
 
-1. 從「 **Security** ![](assets/tools.png)**[!UICONTROL >]** Adobe IMS Configurations工具」面板，導覽至「安全性 **[!UICONTROL >]** Adobe IMS工具」。
+1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
-   ![Adobe IMS帳戶設定UI](assets/ims-configuration1.png)
+   ![Adobe IMS 帳戶設定 UI](assets/ims-configuration1.png)
 
-1. Adobe IMS設定頁面隨即開啟。
+1. Adobe IMS 設定頁面隨即開啟。
 
-   按一下 **[!UICONTROL 建立]**。
+   按一下&#x200B;**[!UICONTROL 建立]**。
 
-   它會帶您前往 **[!UICONTROL Adobe IMS技術帳戶設定頁面]** 。
+   It will take you to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page.
 
-1. 依預設會開 **啟「認證** 」標籤。
+1. 依預設，**憑證**&#x200B;標籤會開啟。
 
-   在 **Cloud Solution中**，選取 **[!UICONTROL Adobe品牌入口網站]**。
+   在&#x200B;**雲端解決方案**&#x200B;中，選取 **[!UICONTROL Adobe Brand Portal]**。
 
-1. 標籤核取方塊 **[!UICONTROL 建立新憑證]** ，並指定 **憑證的別名** 。 別名用作對話框的名稱。
+1. Mark the check box **[!UICONTROL Create new certificate]** and specify an **alias** for the certificate. 別名的作用是對話方塊的名稱。
 
-1. 按一 **[!UICONTROL 下建立憑證]**。 將出現對話框。 按一下 **[!UICONTROL 確定]** ，生成公共證書。
+1. 按一下&#x200B;**[!UICONTROL 建立憑證]**。對話方塊隨即顯示。按一下&#x200B;**[!UICONTROL 確定]**&#x200B;即可產生公開憑證。
 
    ![建立憑證](assets/ims-config2.png)
 
-1. 按一 **[!UICONTROL 下「下載公開金鑰]** 」，並將 ** AEM-Adobe-IMS.crt憑證檔案儲存在您的電腦上。 憑證檔案用來 [建立Adobe I/O整合](#createnewintegration)。
+1. 按一下&#x200B;**[!UICONTROL 下載公開金鑰]**，並將 *AEM-Adobe-IMS.crt* 憑證檔案儲存在電腦上。憑證檔案可用於[建立 Adobe I/O 整合項目](#createnewintegration)。
 
    ![下載憑證](assets/ims-config3.png)
 
-1. 按一 **[!UICONTROL 下「下一步]**」。
+1. 按一下&#x200B;**[!UICONTROL 下一步]**。
 
-   在「帳 **戶** 」索引標籤中，您建立Adobe IMS帳戶，但您需要整合詳細資訊。 請立即開啟此頁面。
+   您會在&#x200B;**帳戶**&#x200B;標籤中建立 Adobe IMS 帳戶，但需要整合詳細資訊才能完成。暫時保持此頁面開啟。
 
-   開啟新標籤並建 [立Adobe I/O整合](#createnewintegration) ，以取得IMS帳戶設定的整合詳細資訊。
+   開啟新標籤並[建立 Adobe I/O 整合項目](#createnewintegration)，以便取得 IMS 帳戶設定的整合詳細資訊。
 
-### 建立Adobe I/O整合 {#createnewintegration}
+### 建立 Adobe I/O 整合項目 {#createnewintegration}
 
-Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定IMS帳戶設定所需的。
+Adobe I/O 整合項目會產生 API 金鑰、用戶端密碼，以及設定 IMS 帳戶設定所需的裝載 (JWT)。
 
-1. 使用品牌入口網站租用戶之IMS組織的系統管理員權限登入Adobe I/O Console。
+1. 以 Brand Portal 租用戶在 IMS 組織的系統管理員權限登入 Adobe I/O 控制台。
 
-   預設URL: [https://console.adobe.io/](https://console.adobe.io/)
+   預設 URL：[https://console.adobe.io/](https://console.adobe.io/)
 
-1. 按一 **[!UICONTROL 下建立整合]**。
+1. 按一下&#x200B;**[!UICONTROL 建立整合項目]**。
 
-1. 選取 **[!UICONTROL 存取API]**，然後按一下 **[!UICONTROL 繼續]**。
+1. 選取&#x200B;**[!UICONTROL 存取 API]**，然後按一下&#x200B;**[!UICONTROL 繼續]**。
 
-   ![建立新整合](assets/create-new-integration1.png)
+   ![建立新整合項目](assets/create-new-integration1.png)
 
-1. 建立新的整合頁面隨即開啟。
+1. 建立新整合項目的頁面隨即開啟。
 
-   從下拉式清單中選擇您的組織。
+   從下拉式清單中選取您的組織。
 
-   在 **[!UICONTROL Experience Cloud]**，選取 **[!UICONTROL AEM品牌入口網站]** ，然後按一下「 **[!UICONTROL 繼續]**」。
+   在 **[!UICONTROL Experience Cloud]** 中選取 **[!UICONTROL AEM Brand Portal]**，然後按一下&#x200B;**[!UICONTROL 繼續]**。
 
-   如果您已停用「品牌入口網站」選項，請確定您已從 **[!UICONTROL Adobe服務選項上方的下拉式方塊中選取正確的組織]** 。 如果您不瞭解您的組織，請聯絡您的管理員。
+   如果您已停用「Brand Portal」選項，請確認您已在 **[!UICONTROL Adobe 服務]**&#x200B;選項上方的下拉式方塊中選取正確的組織。如果您不清楚自己的組織為何，請聯絡您的管理員。
 
-   ![建立整合](assets/create-new-integration2.png)
+   ![建立整合項目](assets/create-new-integration2.png)
 
-1. 指定整合的名稱和說明。 按一 **[!UICONTROL 下「從電腦選取檔案]** 」，並上傳 `AEM-Adobe-IMS.crt` 在「取得公用憑證」區 [段中下載的檔案](#public-certificate) 。
+1. 指定整合項目的名稱和說明。按一下&#x200B;**[!UICONTROL 從電腦選取檔案]**，並上傳在[取得公開憑證](#public-certificate)區段中下載的 `AEM-Adobe-IMS.crt` 檔案 。
 
-1. 選擇組織的配置檔案。
+1. 選取組織的設定檔。
 
-   或者，選取預設的描述檔 **[!UICONTROL 資產品牌入口網站]** ，然後按 **[!UICONTROL 一下「建立整合」]**。 會建立整合。
+   或者，選取預設設定檔 **[!UICONTROL Assets Brand Portal]**，然後按一下&#x200B;**[!UICONTROL 建立整合項目]**。整合項目隨即建立。
 
-1. 按一 **[!UICONTROL 下「繼續」以整合詳細資訊]** ，以檢視整合資訊。
+1. 按一下&#x200B;**[!UICONTROL 繼續前往整合詳細資訊]**，以便檢視整合資訊。
 
-   複製 **[!UICONTROL API金鑰]**
+   複製 **[!UICONTROL API 金鑰]**
 
-   按一 **[!UICONTROL 下「擷取用戶端密碼]** 」並複製用戶端密碼。
+   按一下&#x200B;**[!UICONTROL 擷取用戶端密碼]**&#x200B;並複製用戶端密碼金鑰。
 
-   ![整合的API金鑰、用戶端密碼和裝載資訊](assets/create-new-integration3.png)
+   ![整合項目的 API 金鑰、用戶端密碼和裝載資訊](assets/create-new-integration3.png)
 
-1. 導航到 **[!UICONTROL JWT]** 頁籤，並複製 **[!UICONTROL JWT裝載]**。
+1. 導覽至 **[!UICONTROL JWT]** 標籤，並複製 **[!UICONTROL JWT 裝載]**。
 
-   API金鑰、用戶端密碼金鑰和JWT裝載資訊將用來建立IMS帳戶設定。
+   API 金鑰、用戶端密碼金鑰和 JWT 裝載資訊將用來建立 IMS 帳戶設定。
 
-### 建立IMS帳戶設定 {#create-ims-account-configuration}
+### 建立 IMS 帳戶設定 {#create-ims-account-configuration}
 
-請確定您已執行下列步驟：
+請確認您已執行下列步驟：
 
 * [取得公開憑證](#public-certificate)
-* [建立Adobe I/O整合](#createnewintegration)
+* [建立 Adobe I/O 整合項目](#createnewintegration)
 
-**建立IMS帳戶設定的步驟：**
+**建立 IMS 帳戶設定的步驟：**
 
-1. 開啟「IMS設定」頁面的「帳 **[!UICONTROL 戶]** 」標籤。 您在「取得公開的憑證」一節的結尾處保 [持頁面開啟](#public-certificate)。
+1. 開啟 IMS 設定頁面&#x200B;**[!UICONTROL 帳戶]**&#x200B;標籤。在[取得公開憑證](#public-certificate)這一節的結尾，您已保持此頁面開啟。
 
-1. 指定 **[!UICONTROL IMS帳戶]** 的標題。
+1. 指定 IMS 帳戶的&#x200B;**[!UICONTROL 標題]**。
 
-   在授 **[!UICONTROL 權伺服器]**，輸入URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
+   在&#x200B;**[!UICONTROL 授權伺服器]**，輸入 URL：[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   在「建立Adobe I/O」整合結束時貼上您已複製的API金鑰、用戶端密碼和JWT裝載 [](#createnewintegration)。
+   貼上您在[建立 Adobe I/O 整合項目](#createnewintegration)結尾複製的 API 金鑰、用戶端密碼和 JWT 裝載。
 
-   按一下 **[!UICONTROL 建立]**。
+   按一下&#x200B;**[!UICONTROL 建立]**。
 
-   會建立整合。
+   整合項目隨即建立。
 
-   ![IMS帳戶設定](assets/create-new-integration6.png)
+   ![IMS 帳戶設定](assets/create-new-integration6.png)
 
 
-1. 選擇IMS設定，然後按一下「 **[!UICONTROL Check Health」(檢查健康]**)。 將出現一個對話框。
+1. 選取 IMS 設定，然後按一下&#x200B;**[!UICONTROL 檢查健康狀態]**。對話方塊隨即顯示。
 
-   按一下 **[!UICONTROL 檢查]**。 在成功連線時，會出 *現成功擷取的Token* 訊息。
+   按一下&#x200B;**[!UICONTROL 檢查]**。成功連線時，*已成功擷取 Token* 訊息就會顯示。
 
    ![](assets/create-new-integration5.png)
 
 >[!CAUTION]
 >
->您只能有一個IMS設定。 請勿建立多個IMS組態。
+>您只能有一個IMS設定。 請勿建立多個 IMS 組態。
 >
 >確保IMS配置通過健康檢查。 如果配置未通過健康檢查，則無效。 您必須刪除它並建立新的有效設定。
 
@@ -160,116 +163,116 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
 ### 設定雲端服務 {#configure-the-cloud-service}
 
-執行下列步驟以建立品牌入口網站雲端服務設定：
+執行下列步驟以建立 Brand Portal 雲端服務設定：
 
-1. 登入您的AEM Assets雲端實例。
+1. 登入 AEM Assets 雲端例項。
 
-1. 從「工 **具**![」面板，導覽至「](assets/tools.png) Cloud Services > ******** AEM Brand Portal工具」。
+1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
-   品牌入口網站設定頁面隨即開啟。
+   「Brand Portal 設定」頁面隨即開啟。
 
-1. 按一下 **[!UICONTROL 建立]**。
+1. 按一下&#x200B;**[!UICONTROL 建立]**。
 
-1. 指定 **[!UICONTROL 配置的]** 「標題」。
+1. 指定設定的&#x200B;**[!UICONTROL 標題]**。
 
-   選取您在步驟中建立的IMS設定，建立 [IMS帳戶設定](#create-ims-account-configuration)。
+   選取您在[建立 IMS 帳戶設定](#create-ims-account-configuration)步驟中建立的 IMS 設定。
 
-   在「 **[!UICONTROL 服務URL]**」中，輸入您的品牌入口網站租用戶URL。
+   在&#x200B;**[!UICONTROL 服務 URL]**&#x200B;中，輸入您的 Brand Portal 租用戶 URL。
 
    ![](assets/create-cloud-service.png)
 
-1. 按一 **[!UICONTROL 下儲存並關閉]**。 雲端設定已建立。 您的AEM Assets雲端例項現在已設定品牌入口網站租用戶。
+1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**。雲端設定此時已建立。您的 AEM Assets 雲端例項現在已經以 Brand Portal 租用戶完成設定。
 
-### Test configuration {#test-configuration}
+### 測試設定 {#test-configuration}
 
-1. 登入您的AEM Assets雲端實例。
+1. 登入 AEM Assets 雲端例項。
 
-1. 從「 **工** 具 ![」](assets/tools.png) 面板，導覽至「部署工 **[!UICONTROL 具」]** >「分 ****&#x200B;發工具」。
+1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
    ![](assets/test-bpconfig1.png)
 
-1. 「散發」頁面隨即開啟。
+1. 「發佈」頁面隨即開啟。
 
-   在「發佈至品牌入口網站」 `bpdistributionagent0` 下會建立 **[!UICONTROL 品牌入口網站分發代理]**。
+   Brand Portal 發佈代理程式 `bpdistributionagent0` 會建立在&#x200B;**[!UICONTROL 發佈至 Brand Portal]** 下。
 
-   Click **[!UICONTROL Publish to Brand Portal]**.
+   按一下&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
 
    ![](assets/test-bpconfig2.png)
 
    >[!NOTE]
    >
-   >依預設，會為品牌入口網站租用戶建立一個散發代理。
+   >依預設，系統會為 Brand Portal 租用戶建立一個發佈代理程式。
 
-1. 此時會開啟散發代理頁面。 預設情況下，會打 **[!UICONTROL 開「狀態]** 」頁籤，該頁籤將填充分佈隊列。
+1. 發佈代理程式頁面隨即開啟。依預設，填入發佈佇列的&#x200B;**[!UICONTROL 狀態]**&#x200B;標籤此時會開啟。
 
-   分發代理包含兩個隊列：
-   * **processing-queue**:將資產分發至品牌入口網站。
+   發佈代理程式包含兩個佇列：
+   * **processing-queue**: 將資產分發至品牌入口網站。
 
-   * **error-queue**:對於分發失敗的資產。
+   * **error-queue**: 對於分發失敗的資產。
    >[!NOTE]
    >
    >建議您檢閱失敗，並定期清 **除錯誤佇列** 。
 
    ![](assets/test-bpconfig3.png)
 
-1. 若要驗證AEM Assets和品牌入口網站之間的連線，請按一下「 **[!UICONTROL 測試連線」]**。
+1. 若要驗證 AEM Assets 和 Brand Portal 之間的連線，請按一下&#x200B;**[!UICONTROL 測試連線]**。
 
    ![](assets/test-bpconfig4.png)
 
-   頁面底部會顯示訊息，指出您的測試套件已成功傳送。
+   頁面底部會顯示訊息，指出您的測試封裝已成功傳送。
 
    >[!NOTE]
    >
-   >請避免停用散發代理，因為這可能導致資產的散發（在佇列中執行）失敗。
+   >請避免停用發佈代理程式，因為可能導致在佇列中執行的資產發佈失敗。
 
 
-您的AEM Assets雲端例項已成功設定為品牌入口網站，您現在可以：
+您的 AEM Assets 雲端例項已成功以 Brand Portal 完成設定，您現在可以：
 
-* [將資產從AEM Assets發佈至品牌入口網站](publish-to-brand-portal.md)
-* [將資料夾從AEM Assets發佈至品牌入口網站](publish-to-brand-portal.md#publish-folders-to-brand-portal)
-* [將系列從AEM Assets發佈至品牌入口網站](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [從 AEM Assets 發佈資產到 Brand Portal](publish-to-brand-portal.md)
+* [從 AEM Assets 發佈資料夾到 Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [從 AEM Assets 發佈集合到 Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
 
-除了上述外，您也可以將中繼資料結構描述、影像預設集、搜尋刻面和標籤從AEM Assets發佈至品牌入口網站。
+除了上述操作，您也可以從 AEM Assets 將中繼資料結構、影像預設集、搜尋 Facet 和標籤發佈至 Brand Portal。
 
-* [將預設集、結構描述和刻面發佈至品牌入口網站](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [將標記發佈至 Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
-
-
-如需詳細 [資訊，請參閱品牌入口網站](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) (Brand Portal)檔案。
+* [將預設集、結構和 Facet 發佈至 Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [將標記發佈至 Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-## 散發記錄檔 {#distribution-logs}
+如需詳細資訊，請參閱 [Brand Portal 文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/home.html)。
 
-您可以檢查日誌，瞭解有關對分發代理執行的操作的詳細資訊。
 
-例如，我們已將資產從AEM Assets發佈至品牌入口網站，以驗證設定。
+## 發佈記錄檔 {#distribution-logs}
 
-1. 請依照測試連線中顯示的步驟（步驟1 - 4） **** ，並導覽至散發代理頁面。
+您可以檢查記錄檔瞭解發佈代理程式所執行動作的詳細資訊。
 
-1. 按一 **[!UICONTROL 下「記錄]** 」以檢視散發記錄檔。 您可在此處看到處理和錯誤記錄。
+舉例來說，我們已從 AEM Assets 發佈資產到 Brand Portal，以便驗證設定。
+
+1. Follow the steps (Step 1 - 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
+
+1. 按一下&#x200B;**[!UICONTROL 記錄檔]**&#x200B;以檢視發佈記錄檔。您可在此查看處理和錯誤記錄。
 
    ![](assets/test-bpconfig5.png)
 
-Distribution Agent會生成以下日誌：
+發佈代理程式會產生以下記錄檔：
 
-* 資訊：這是系統生成的日誌，在成功配置時觸發，用於啟用分發代理。
-* DSTRQ1（請求1）:測試連線時的觸發器。
+* 資訊： 這是系統生成的日誌，在成功配置時觸發，用於啟用分發代理。
+* DSTRQ1（請求1）: 測試連線時的觸發器。
 
-發佈資產時，會產生下列請求和回應記錄：
+發佈資產時，會產生下列請求和回應記錄檔：
 
-**散發代理請求**:
-* DSTRQ2（請求2）:會觸發資產發佈請求。
-* DSTRQ3（請求3）:系統會觸發另一個請求來發佈資產所在的資料夾，並複製品牌入口網站中的資料夾。
+**發佈代理程式請求**：
+* DSTRQ2 (請求 2)：觸發資產發佈請求。
+* DSTRQ3（請求3）: 系統會觸發另一個請求來發佈資產所在的資料夾，並複製品牌入口網站中的資料夾。
 
-**散發代理回應**:
-* queue-bpdistributionagent0(DSTRQ2):資產會發佈至品牌入口網站。
-* queue-bpdistributionagent0(DSTRQ3):系統會複製品牌入口網站中包含資產的資料夾。
+**發佈代理程式回應**：
+* queue-bpdistributionagent0 (DSTRQ2)：資產已發佈至 Brand Portal。
+* queue-bpdistributionagent0 (DSTRQ3)：系統會複製含有 Brand Portal 中的資產的資料夾。
 
 在上述範例中，會觸發額外的請求和回應。 系統無法在品牌入口網站中找到父資料夾（亦即新增路徑），因為資產是首次發佈，因此會觸發在發佈資產的品牌入口網站中建立同名父資料夾的額外請求。
 
 >[!NOTE]
 >
->如果父資料夾不存在於品牌入口網站（在上例中），或父資料夾已在AEM Assets中修改，則會產生其他請求。
+>如果父資料夾不存在上述例子的 Brand Portal 中，或父資料夾已在 AEM Assets 中經過修改，系統會產生其他請求。
 
 
 
