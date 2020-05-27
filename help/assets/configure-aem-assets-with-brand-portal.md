@@ -3,9 +3,9 @@ title: 使用 Brand Portal 設定 AEM Assets 雲端服務
 description: 使用 Brand Portal 設定 AEM Assets 雲端服務。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 6627f6454430d25f29bc743ad2f81e89f932219f
+source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1806'
 ht-degree: 26%
 
 ---
@@ -17,7 +17,7 @@ Adobe Experience Manager(AEM)Assets是透過Adobe Developer Console以品牌入�
 
 **設定如何運作？**
 
-使用您的品牌入口網站租用戶（組織）設定AEM Assets雲端例項是多步驟程式，需要在AEM Assets雲端例項和Adobe Developer Console中進行設定。
+使用品牌入口網站租用戶（組織）設定AEM Assets雲端例項時，需要在AEM Assets雲端例項和Adobe Developer Console中進行設定。
 
 1. 在AEM Assets雲端例項中，建立IMS帳戶並產生公用憑證（公用金鑰）。
 1. 在Adobe Developer Console中，為您的品牌入口網站租用戶（組織）建立專案。
@@ -28,9 +28,11 @@ Adobe Experience Manager(AEM)Assets是透過Adobe Developer Console以品牌入�
 1. 將資產從AEM Assets雲端例項發佈至品牌入口網站，以測試設定。
 
 >[!NOTE]
->>品牌入口網站租戶只能設定一個AEM Assets雲端例項。
->>請勿設定具有多個AEM Assets雲端例項的品牌入口網站租用戶。
 >
+>品牌入口網站的租用戶只能設定一個AEM Assets雲端例項。
+>
+>請勿設定具有多個AEM Assets雲端例項的品牌入口網站租用戶。
+
 
 ## 必備條件 {#prerequisites}
 
