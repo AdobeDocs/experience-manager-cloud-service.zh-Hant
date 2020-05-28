@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager 雲端服務的 SEO 和 URL 管理最佳作法
 seo-title: Adobe Experience Manager 雲端服務的 SEO 和 URL 管理最佳作法
-translation-type: ht
-source-git-commit: 70e76205e82b491fa77f65cd4257a79dda17b882
+translation-type: tm+mt
+source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
+workflow-type: tm+mt
+source-wordcount: '3124'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 70e76205e82b491fa77f65cd4257a79dda17b882
 
 在評估 AEM 專案的 URL 時，請先自問以下問題：
 
-「使用者能在尚未過目任何網頁內容之下，光是看到此 URL 就能描述頁面內容嗎？」
+*「使用者能在尚未過目任何網頁內容之下，光是看到此 URL 就能描述頁面內容嗎？」*
 
 如果答案是可以，則此 URL 在搜尋引擎中很可能成效良好。
 
