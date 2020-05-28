@@ -3,10 +3,10 @@ title: 使用 Brand Portal 設定 AEM Assets 雲端服務
 description: 使用 Brand Portal 設定 AEM Assets 雲端服務。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
+source-git-commit: 3cb9ea561dbe55ac7ed43ff47e5b57563eaa3f67
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 26%
+source-wordcount: '1762'
+ht-degree: 27%
 
 ---
 
@@ -69,7 +69,7 @@ IMS 設定包括兩個步驟：
 
 1. 登入您的AEM Assets雲端例項。
 
-1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Adobe IMS 帳戶設定 UI](assets/ims-configuration1.png)
 
@@ -134,9 +134,11 @@ IMS 設定包括兩個步驟：
 
 1. 驗證公共證書並按一下「 **[!UICONTROL Next（下一步）]**」。
 
-1. 在品牌入口網站中，會為每個組織建立預設的描述檔。 「產品設定檔」是在管理控制台中建立，以指派使用者至群組（根據角色和權限）。 若是使用品牌入口網站進行設定，OAuth Token會在組織層級建立。 因此，您必須為您的組織設定預設的產品設定檔。
+1. 選取預設產品設定檔 **[!UICONTROL Assets Brand Portal]** ，然後按一 **[!UICONTROL 下「儲存設定」]**。
 
-   選取預設產品設定檔 **[!UICONTROL 資產品牌入口網站]**。
+   <!-- 
+   In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
+   -->
 
    ![選擇產品設定檔](assets/service-account4.png)
 
@@ -144,7 +146,7 @@ IMS 設定包括兩個步驟：
 
    >[!NOTE]
    >
-   >您可以視需要檢視憑證並執行其他動作（產生JWT Token、複製憑證詳細資訊、擷取用戶端機密等）。
+   >您可以視需要檢視憑證並執行其他動作（產生JWT Token、複製憑證詳細資訊、擷取用戶端密碼等）。
 
 1. 從「客 **[!UICONTROL 戶端認證]** 」標籤複製 **[!UICONTROL 客戶端ID]**。
 
@@ -202,7 +204,7 @@ IMS 設定包括兩個步驟：
 
 執行下列步驟以設定您在取得公用憑證時所建立 [的IMS帳戶](#public-certificate)。
 
-1. 開啟「IMS設定」並導覽至「帳 **[!UICONTROL 戶]** 」標籤。 您在取得公開證書時 [仍保持頁面開啟](#public-certificate)。
+1. 開啟「IMS設定」並導覽至「帳 **[!UICONTROL 戶]** 」標籤。 您在取得公開憑證時 [仍保持頁面開啟](#public-certificate)。
 
 1. 指定 IMS 帳戶的&#x200B;**[!UICONTROL 標題]**。
 
@@ -237,7 +239,7 @@ IMS 設定包括兩個步驟：
 
 1. 登入您的AEM Assets雲端例項。
 
-1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. 在「品牌入口網站設定」頁面中，按一下「 **[!UICONTROL 建立]**」。
 
@@ -257,7 +259,7 @@ IMS 設定包括兩個步驟：
 
 1. 登入您的AEM Assets雲端例項。
 
-1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
    ![](assets/test-bpconfig1.png)
 
@@ -315,7 +317,7 @@ IMS 設定包括兩個步驟：
 
 例如，我們已將資產從AEM Assets發佈至品牌入口網站，以驗證設定。
 
-1. Follow the steps (from 1 to 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
+1. Follow the steps (from 1 to 4) as shown in the [test connection](#test-configuration) section and navigate to the distribution agent page.
 
 1. 按一下&#x200B;**[!UICONTROL 記錄檔]**&#x200B;以檢視發佈記錄檔。您可在此查看處理和錯誤記錄。
 
