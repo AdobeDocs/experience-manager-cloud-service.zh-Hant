@@ -2,7 +2,10 @@
 title: AEM 雲端服務開發方針
 description: 待完成
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 8e8863d390132ff8df943548b04e9d7c636c4248
+workflow-type: tm+mt
+source-wordcount: '1588'
+ht-degree: 1%
 
 ---
 
@@ -156,6 +159,10 @@ Developer Console中提供一組工具，可讓您將AEM除錯為Cloud Service�
 此外，Developer Console還提供Explain Query工具的連結，以進行除錯：
 
 ![開發控制台4](/help/implementing/developing/introduction/assets/devconsole4.png)
+
+對於一般程式，「開發人員主控台」的存取權是由「管理控制台」中的「雲端管理員——開發人員角色」定義，而對於沙盒程式，任何擁有產品設定檔的使用者都可以透過「雲端服務」存取AEM。 如需有關設定使用者權限的詳細資訊，請參 [閱Cloud Manager檔案](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
+
+
 
 ### AEM Staging and Production Service {#aem-staging-and-production-service}
 
