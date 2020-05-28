@@ -2,9 +2,9 @@
 title: 沙盒程式——雲端服務
 description: 沙盒程式——雲端服務
 translation-type: tm+mt
-source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,9 @@ ht-degree: 0%
 * 環境細節螢幕
 * 環境清單螢幕
 
+>[!NOTE]
+>Cloud Manager的任何使用者都可存取沙盒程式的Developer Console。
+
 請依照下列步驟，手動讓沙盒程式環境休眠：
 
 1. 導覽至「開 **發人員主控台」**。
@@ -166,9 +169,9 @@ ht-degree: 0%
 
 與冬眠和脫冬眠環境相關的幾項主要考慮事項包括：
 
-* 使用者可使用管道將自訂程式碼部署至休眠的環境。 環境將保持休眠狀態，而新代碼將在解除休眠後出現在環境中。
+* 使用者可使用管道將自訂程式碼部署至休眠的環境。 該環境將保持休眠狀態，而新代碼將在解除休眠後出現在環境中。
 
-* AEM升級可套用至休眠環境，客戶可從Cloud Manager手動觸發。 該環境將保持休眠狀態，新版本將在解除休眠後出現在環境中。
+* AEM升級可套用至休眠的環境，客戶可從Cloud Manager手動觸發。 該環境將保持休眠狀態，新版本將在解除休眠後出現在環境中。
 
 >[!NOTE]
 >目前，Cloud Manager不會指出環境是否已休眠。
