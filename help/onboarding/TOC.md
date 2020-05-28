@@ -2,10 +2,10 @@
 sub-product: AEM 雲端服務入門
 user-guide-title: AEM 雲端服務入門
 translation-type: tm+mt
-source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 88%
+source-wordcount: '133'
+ht-degree: 91%
 
 ---
 
@@ -31,6 +31,8 @@ ht-degree: 88%
    + [AEM 對資料保護與資料隱私權法規的基礎整備](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [AEM Sites 對資料保護與資料隱私權法規的整備](data-privacy-and-protection-readiness/sites-readiness.md)
 + 協助工具 {#accessibility}
-   + [AEM a Cloud Services與網頁協助工具准則](accessibility/web-accessibility.md)
+   + [AEM 雲端服務與網頁協助工具准則](accessibility/web-accessibility.md)
    + [WCAG 2.1 快速指南](accessibility/quick-guide-wcag.md)
++ Best Practices {#best-practices}
+   + [SEO和URL管理](best-practices/seo-and-url-management.md)
 + [「工具」主控台概述](tools-consoles.md)
