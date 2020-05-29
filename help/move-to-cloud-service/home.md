@@ -2,7 +2,7 @@
 title: 移至AEM做為雲端服務
 description: Adobe Experience Manager雲端服務移轉至AEM做為雲端服務自助資源和檔案連結
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 57%
