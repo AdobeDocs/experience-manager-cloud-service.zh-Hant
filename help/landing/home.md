@@ -2,7 +2,10 @@
 title: Adobe Experience Manager 雲端服務使用手冊
 description: Adobe Experience Manager 雲端服務自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 2d6c91dac4fec04cb5f1a6d050f0464bc724a09b
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 94%
 
 ---
 
@@ -21,6 +24,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 | [入門](/help/onboarding/home.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager 雲端服務，包括如何取得存取權限和重要的資料保護資訊。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何管理 Experience Manager Sites 雲端服務。 |
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何管理 Experience Manager Assets 雲端服務。 |
+| [移至AEM做為雲端服務使用指南](/help/move-to-cloud-service/home.md) | 瞭解雲端服務的轉型歷程。 |
 | [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager 雲端服務部署，包括開發部署主題。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將解決方案與 Experience Manager 雲端服務整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager 雲端服務後端的操作方式，例如索引和維護任務。 |
@@ -32,6 +36,6 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 * [核心元件文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager 文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GDPR 整備](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager 雲端服務教學課程](https://docs.adobe.com/content/help/zh-Hant/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager 雲端服務教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社群論壇](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
