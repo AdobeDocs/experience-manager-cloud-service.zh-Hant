@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 雲端服務使用手冊
 description: Adobe Experience Manager 雲端服務自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 2d6c91dac4fec04cb5f1a6d050f0464bc724a09b
+source-git-commit: 45e17deb7a08deaaf2af07ca6ab3b8ee80bcb21f
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 94%
