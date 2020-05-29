@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 雲端服務使用手冊
 description: Adobe Experience Manager 雲端服務自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 45e17deb7a08deaaf2af07ca6ab3b8ee80bcb21f
+source-git-commit: 1ce5e25ff9cfe36e43abb765318a9ffc10b0678c
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 94%
+source-wordcount: '315'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 94%
 | [入門](/help/onboarding/home.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager 雲端服務，包括如何取得存取權限和重要的資料保護資訊。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何管理 Experience Manager Sites 雲端服務。 |
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何管理 Experience Manager Assets 雲端服務。 |
-| [移至AEM做為雲端服務使用指南](/help/move-to-cloud-service/home.md) | 瞭解雲端服務的轉型歷程。 |
+| [移轉至AEM做為雲端服務](/help/move-to-cloud-service/home.md) | 瞭解雲端服務的轉型歷程。 |
 | [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager 雲端服務部署，包括開發部署主題。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將解決方案與 Experience Manager 雲端服務整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager 雲端服務後端的操作方式，例如索引和維護任務。 |
