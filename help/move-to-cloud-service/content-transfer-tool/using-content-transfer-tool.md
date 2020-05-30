@@ -2,10 +2,10 @@
 title: 使用內容傳輸工具
 description: 使用內容傳輸工具
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 2%
+source-wordcount: '1527'
+ht-degree: 1%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 2%
 
 * 如果您使用沙盒環 *境*，請確定您的環境已升級至2020年5月29日或更新版本。 如果您使用的是 *生產環境*，則會自動更新。
 
+* 若要使用內容傳輸工具，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud服務例項的管理群組。 未授權的使用者將無法擷取存取Token以使用內容傳輸工具。
+
 * 在擷取階段中，內容傳輸工具會在作用中的AEM來源例項上執行。
 
 * 作 *者的Ingestion Phase* （擷取階段）將縮小整個作者部署。 這表示在整個擷取程式期間，作者AEM將無法使用。
@@ -29,7 +31,7 @@ ht-degree: 2%
 內容傳輸工具可從軟體散發入口網站下載為zip檔案。 您可以透過Package Manager在來源Adobe Experience Manager(AEM)例項上安裝套件。
 
 >[!NOTE]
->如需詳 [細資訊，請參閱「以雲端服務SDK存取AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#accessing-the-aem-as-a-cloud-service-sdk) 」。
+>從 [Adobe Experience Cloud下載內容傳輸工具](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。
 
 ## 執行內容傳輸工具 {#running-tool}
 
@@ -120,7 +122,8 @@ ht-degree: 2%
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
 
    >[!NOTE]
-   > 您必須重新整理頁面才能檢視更新的狀態。
+   >您必須重新整理頁面才能檢視更新的狀態。
+   >啟動提取階段時，將建立寫鎖定並在 *60秒後釋放*。 因此，如果解壓停止，則需要等待一分鐘才能釋放鎖定，然後再次開始解壓。
 
 #### 向上提取 {#top-up-extraction-process}
 
@@ -250,10 +253,12 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 
 身為使用者，您可能會在內容傳輸工具的使用者介面(UI)中看到下列行為變更：
 
-1. 使用者為作者URL（開發／階段／生產）建立移轉集，並成功執行擷取和擷取。
+* 使用者為作者URL（開發／階段／生產）建立移轉集，並成功執行擷取和擷取。
 
-1. 然後，使用者會針對相同的作者URL建立新的移轉集，並對新移轉集執行擷取和擷取。 UI顯示第一個遷移集的接收狀態更改為 **FAILED** ，沒有可用日誌。
+* 然後，使用者會針對相同的作者URL建立新的移轉集，並對新移轉集執行擷取和擷取。 UI顯示第一個遷移集的接收狀態更改為 **FAILED** ，沒有可用日誌。
 
-1. 這並不意味著第一個遷移集的提取失敗。 出現此行為是因為啟動新的提取作業時，它會刪除先前的提取作業。 因此，應忽略第一個遷移集上的更改狀態。
+* 這並不意味著第一個遷移集的提取失敗。 出現此行為是因為啟動新的提取作業時，它會刪除先前的提取作業。 因此，應忽略第一個遷移集上的更改狀態。
+
+* 「內容傳輸工具UI」中的圖示可能與本指南中顯示的螢幕擷取畫面不同，或根據來源AEM例項的版本而完全不顯示。
 
 
