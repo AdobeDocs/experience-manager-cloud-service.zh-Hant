@@ -3,10 +3,10 @@ title: 使用 Brand Portal 設定 AEM Assets 雲端服務
 description: 使用 Brand Portal 設定 AEM Assets 雲端服務。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 3cb9ea561dbe55ac7ed43ff47e5b57563eaa3f67
+source-git-commit: f54f5bbd5de76c3507d86b92255f1d4713e717fc
 workflow-type: tm+mt
 source-wordcount: '1762'
-ht-degree: 27%
+ht-degree: 26%
 
 ---
 
@@ -56,7 +56,7 @@ Adobe Experience Manager(AEM)Assets是透過Adobe Developer Console以品牌入�
 
 ### 建立 IMS 設定 {#create-ims-configuration}
 
-IMS 設定會以 AEM Assets 作者例項驗證您的 Brand Portal 租用戶。
+IMS設定會以AEM Assets雲端例項驗證您的品牌入口網站租用戶。
 
 IMS 設定包括兩個步驟：
 
@@ -204,7 +204,7 @@ IMS 設定包括兩個步驟：
 
 執行下列步驟以設定您在取得公用憑證時所建立 [的IMS帳戶](#public-certificate)。
 
-1. 開啟「IMS設定」並導覽至「帳 **[!UICONTROL 戶]** 」標籤。 您在取得公開憑證時 [仍保持頁面開啟](#public-certificate)。
+1. 開啟「IMS設定」並導覽至「帳 **[!UICONTROL 戶]** 」標籤。 您在取得公開證書時 [仍保持頁面開啟](#public-certificate)。
 
 1. 指定 IMS 帳戶的&#x200B;**[!UICONTROL 標題]**。
 
