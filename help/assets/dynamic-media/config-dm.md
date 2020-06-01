@@ -2,15 +2,15 @@
 title: 設定動態媒體雲端服務
 description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
 translation-type: tm+mt
-source-git-commit: 73d14016beabfbdb127fe9e4d91fb20d4c17918e
+source-git-commit: bc0852120580065a93923e7fe730485012afba6e
 workflow-type: tm+mt
-source-wordcount: '5120'
+source-wordcount: '5123'
 ht-degree: 8%
 
 ---
 
 
-# 設定 Dynamic Media {#configuring-dynamic-media-scene-mode}
+# 關於設定Dynamic Media Cloud服務 {#configuring-dynamic-media-scene-mode}
 
 如果您針對不同環境（例如開發環境、測試環境和即時生產環境）使用Adobe Experience Manager設定，您必須針對每個環境設定Dynamic Media Cloud Services。
 
