@@ -2,9 +2,9 @@
 title: Dynamic Media 影像設定檔
 description: 建立包含非銳利遮色片和智慧型裁切或智慧型色票（或兩者）的設定的影像描述檔，然後將描述檔套用至影像資產的資料夾。
 translation-type: tm+mt
-source-git-commit: 16fa9a9783f42d0a9dcf541613aedb890cb41158
+source-git-commit: 39c4bb1fe5af9746ee824677f3de018d8ec36641
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2663'
 ht-degree: 12%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 12%
 # Dynamic Media 影像設定檔 {#image-profiles}
 
 上傳影像時，您可以透過將影像描述檔套用至檔案夾，在上傳時自動裁切影像。
+
+>[!IMPORTANT]
+>
+>影像描述檔不適用於PDF檔案。
 
 ## Crop options {#crop-options}
 
