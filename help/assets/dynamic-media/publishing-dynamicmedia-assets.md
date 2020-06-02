@@ -1,19 +1,23 @@
 ---
 title: 發佈動態媒體資產
 description: 如何發佈動態媒體資產
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 3%
 
 ---
 
 
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-您可以選取資產並點選「發佈」，以發佈您的動態 **[!UICONTROL 媒體資產]**。 發佈動態媒體資產後，您就可透過URL或內嵌方式，將其加入網頁。
+您可以選擇已上傳的資產，並點選「發佈」或「快速發佈」，以發佈您的 **[!UICONTROL 動態]****[!UICONTROL 媒體資產]**。 發佈動態媒體資產後，您就可透過URL或在頁面上內嵌程式碼，將其加入網頁。
 
 您也可以立即發佈上傳的資產，不需任何使用者干預。 或者，您可以選擇性地發佈這些資產。 See [Configuring Dynamic Media](config-dm.md).
 
-在「資 **[!UICONTROL 訊卡檢視]**」中，資產名稱正下方會顯示一個小型全球圖示，以指出資產已發佈。在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **** 欄會指出已發佈或未發佈的資產。
+在「 **[!UICONTROL 卡片檢視]**」中，資產名稱正下方以及日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **** 欄會指出已發佈或未發佈的資產。
 
 >[!NOTE]
 >
@@ -23,7 +27,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
-另請參 [閱將視訊檢視器內嵌在網頁上。](embed-code.md)
+另請參 [閱在網頁上內嵌動態媒體視訊檢視器或影像檢視器。](embed-code.md)
 
 >[!NOTE]
 >
