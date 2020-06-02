@@ -2,7 +2,10 @@
 title: 智慧型影像處理
 description: 智慧型影像處理運用每位使用者獨特的檢視特性，自動提供最適合其體驗的影像，進而提升效能和參與度。
 translation-type: tm+mt
-source-git-commit: a934f28f74f0ff9ae68d7507290851dc5ca907e5
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
+source-wordcount: '1720'
+ht-degree: 2%
 
 ---
 
@@ -87,7 +90,7 @@ Smart Imaging可與您現有的「影像預設集」搭配使用，並觀察您�
 
 另外，請看 [我是否符合使用Smart Imaging的資格？](#am-i-eligible-to-use-smart-imaging) 瞭解智慧型影像的預先要求。
 
-## 智慧型行銷是否可搭配HTTPS運作？ HTTP/2如何？ {#does-smart-imaging-working-with-https-how-about-http}
+## 智慧型影像是否可與HTTPS搭配運作？ HTTP/2如何？ {#does-smart-imaging-working-with-https-how-about-http}
 
 智慧型影像可處理透過HTTP或HTTPS傳送的影像。 此外，它也可透過HTTP/2運作。
 
@@ -106,7 +109,7 @@ Tap **[!UICONTROL Setup > Application Setup > General Settings]**. 尋找標示�
 
 ## 為我的帳戶啟用Smart Imaging的過程是什麼？ {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-您必須提出使用智慧型影像的要求；不會自動啟用。
+您必須提出使用智慧型影像的要求； 不會自動啟用。
 
 1. 啟動技術支援要求(電子郵件： `s7support@adobe.com`)。
 1. 在您的支援要求中提供下列資訊：
@@ -131,7 +134,7 @@ Tap **[!UICONTROL Setup > Application Setup > General Settings]**. 尋找標示�
 
 1. 技術支援將根據提交請求的順序將您添加到Smart Imaging客戶等待清單。
 1. 當Adobe準備好處理您的要求時，支援人員將會聯絡您以協調並設定目標日期。
-1. **可選**:您可以選擇在Staging中測試智慧型影像，然後Adobe將新功能推展至生產環境。
+1. **可選**: 您可以選擇在Staging中測試智慧型影像，然後Adobe將新功能推展至生產環境。
 1. 完成後，支援會通知您。
 1. 為充份提升智慧型影像處理的效能，Adobe建議將「存留時間(TTL)」設定為24小時或更長。 TTL會定義CDN快取資產的時間長度。 要更改此設定，請：
 
@@ -143,7 +146,7 @@ Tap **[!UICONTROL Setup > Application Setup > General Settings]**. 尋找標示�
 請求的處理順序依技術支援部門接收的順序，依等待清單而定。
 
 >[!NOTE]
-啟用智慧型影像需要Adobe清除快取，因此可能需要較長的前置時間。 因此，在任何指定時間，都只能處理少數客戶轉場。
+啟用智慧型影像可能需要較長的前置時間，因為Adobe會清除快取。 因此，在任何指定時間，都只能處理少數客戶轉場。
 
 ## 切換到使用Smart Imaging時有哪些風險？ {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
