@@ -1,22 +1,22 @@
 ---
 title: Adobe Experience Manager 雲端服務與網路無障礙指引
-description: Adobe Experience Manager雲端服務簡介及網頁協助工具准則
-translation-type: tm+mt
+description: Adobe Experience Manager 雲端服務與網路無障礙指引簡介
+translation-type: ht
 source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Experience Manager 雲端服務與網路無障礙指引 {#aem-and-the-web-accessibility-guidelines}
 
-從社會、經濟和法律層面來看，無論目標對象是否有任何不方便或限制，我們都有許多動機必須盡可能方便他們存取網頁內容。因此，以Adobe Experience Manager(AEM)為雲端服務的網頁協助功能，對於良好的網頁設計越來越重要。
+從社會、經濟和法律層面來看，無論目標對象是否有任何不方便或限制，我們都有許多動機必須盡可能方便他們存取網頁內容。因此，以 Adobe Experience Manager (AEM) 雲端服務增設網頁協助功能，對理想的網頁設計而言可謂日益重要。
 
-以 AEM 雲端服務來建立無障礙的網站和內容，可帶來如下影響：
+以 AEM 雲端服務建立無障礙的網站和內容，可帶來以下影響：
 
-* 負責設定AEM以確保正確啟用協助功能的管理員。
+* 負責設定 AEM 的管理員可確保無障礙功能可正確啟用。
 
 * 作者可使用這些功能建立無障礙網站。
 
@@ -28,7 +28,7 @@ Adobe Experience Manager 雲端服務符合[全球資訊網協會](#world-wide-w
 
 >[!NOTE]
 >
-> 如需詳細 [資訊，請參閱Adobe解決方案的協助工具符合性報表](https://www.adobe.com/accessibility/compliance.html) 。
+> 如需詳細資訊，請參閱 [Adobe 解決方案的無障礙合規報告](https://www.adobe.com/accessibility/compliance.html)。
 
 ## 全球資訊網協會 {#world-wide-web-consortium}
 
