@@ -2,25 +2,25 @@
 title: 預覽3D資產
 description: 瞭解如何預覽3D資產
 translation-type: tm+mt
-source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '566'
 ht-degree: 4%
 
 ---
 
 
-# 預覽3D資產{#previewing-3d-assets}
+# 在AEM中預覽3D資產{#previewing-3d-assets}
 
-Experience Manager支援3D資產的上傳、傳送和互動式預覽，做為製作程式的一部分。
+Adobe Experience Manager支援3D資產的上傳、傳送和互動式預覽，做為製作程式的一部分。
 
 您可從AEM的資產詳細資訊頁面取得互動式3D檢視器。 檢視器除了其他功能外，還包含一系列互動式相機控制項，可讓您環繞、縮放和平移3D資產。
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## 支援的3D預覽格式{#supported-3d-previewing-assets}
+## AEM中支援的3D預覽格式{#supported-3d-previewing-assets}
 
-互動式3D預覽支援下列檔案格式：
+AEM中的互動式3D預覽支援下列檔案格式：
 
 | 3D副檔名 | 檔案格式 | MIME類型 | 附註 |
 |---|---|---|---|
@@ -40,13 +40,13 @@ Experience Manager支援3D資產的上傳、傳送和互動式預覽，做為製
     material_0_baseColor.
     jpegmaterial_0_normal.jpeg
 
-## 預覽3D資產時的效能考量{#performance-3d-previewing-assets}
+## 在AEM中預覽3D資產時的效能考量{#performance-3d-previewing-assets}
 
 在資產詳細資訊檢視頁面中開啟3D資產所花的時間，視頻寬、影像複雜性和伺服器延遲等因素而定。
 
 此外，在您以互動方式操作相機時，用戶端電腦的功能（例如工作站、筆記型電腦或行動觸控裝置）也很重要。 功能相當強大的系統，具備良好的圖形功能，可讓互動式3D檢視體驗更順暢更有利。
 
-**若要預覽3D資產**
+**若要在AEM中預覽3D資產**
 
 1. 請確定您已將3D資產上傳至AEM。
 See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-digital-assets.md#uploading-assets).
