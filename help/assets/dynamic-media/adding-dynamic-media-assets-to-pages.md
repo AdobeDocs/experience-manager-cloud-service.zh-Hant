@@ -2,9 +2,9 @@
 title: 新增動態媒體資產至頁面
 description: 如何在AEM中將Dynamic Media元件新增至頁面
 translation-type: tm+mt
-source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '3132'
+source-wordcount: '3137'
 ht-degree: 8%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 8%
 
 ## 新增動態媒體元件至頁面 {#adding-a-dynamic-media-component-to-a-page}
 
-將動態媒體、互動式媒體、全景媒體或視訊360媒體元件新增至頁面，與將元件新增至任何頁面相同。 以下各節將介紹動態媒體元件。
+將3D媒體、動態媒體、互動式媒體、全景媒體、智慧型裁切視訊或視訊360媒體元件新增至頁面，與將元件新增至任何頁面相同。 以下各節將介紹動態媒體元件。
 
 **新增動態媒體元件至頁面**
 
@@ -51,7 +51,7 @@ ht-degree: 8%
 
    動態媒體視訊360媒體元件。
 
-1. 完成後，在對話框右上角附近點選核取標籤以儲存變更。
+1. 完成後，在對話框的右上角點選複選標籤以保存更改。
 
 ### 啟用動態媒體元件 {#enabling-dynamic-media-components}
 
@@ -133,7 +133,7 @@ ht-degree: 8%
 
 #### 使用影像時 {#when-working-with-images}
 
-動態媒體元件可讓您新增動態影像，包括影像集、回轉集和混合媒體集。 您可以放大、縮小，如果適用的話，可以在回轉集內旋轉影像，或從其他類型的回轉集選取影像。
+動態媒體元件可讓您新增動態影像，包括影像集、回轉集和混合媒體集。 您可以放大、縮小，如果適用，則可以在回轉集內旋轉影像，或從其他類型的回轉集選取影像。
 
 您也可以直接在元件中設定檢視器預設集、影像預設集或影像格式。 若要讓影像回應，您可以設定中斷點或套用回應式影像預設集。
 
@@ -171,7 +171,7 @@ ht-degree: 8%
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
-* **[!UICONTROL URL, Open in]**- You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟它。
+* **[!UICONTROL URL, Open in]**- You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟該URL。
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
@@ -238,7 +238,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
-* **[!UICONTROL URL, Open in]**- You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟它。
+* **[!UICONTROL URL, Open in]**- You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟該URL。
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
@@ -248,7 +248,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 ### 元件： 互動式媒體 {#interactive-media-component}
 
-互動式媒體元件適用於這些資產上具有互動功能的熱點或影像地圖。 如果您有互動式影像、互動式視訊或轉盤橫幅，請使用互動式 **[!UICONTROL 媒體元件]** 。
+互動式媒體元件適用於這些資產上具有互動功能的熱點或影像地圖。 如果您有互動式影像、互動式視訊或轉盤橫幅，請使用 **[!UICONTROL 互動式媒體元件]** 。
 
 互動式媒體元件是智慧型的。 視您新增影像或視訊而定，您有各種選項。 此外，檢視器具有互動功能——螢幕大小會根據螢幕大小自動變更。 所有檢視器都是HTML5檢視器。
 
@@ -264,7 +264,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 >
 >不過，您可以針對頁面內使用相同類型資產的所有互動式媒體元件使用相同的檢視器預設集。
 
-![chlimage_1-175](assets/chlimage_1-541.png)
+![chlimage_1-174](assets/chlimage_1-541.png)
 
 You can edit the following **[!UICONTROL General]** settings by tapping **[!UICONTROL Edit]** in the component.
 
