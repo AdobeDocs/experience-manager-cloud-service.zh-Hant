@@ -2,9 +2,9 @@
 title: 導覽
 description: 導覽——雲端服務
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 1f084c5f8b218808468ce7984fa0abdac497884f
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '360'
 ht-degree: 2%
 
 ---
@@ -20,17 +20,20 @@ ht-degree: 2%
 
 ## SysAdmin Access {#sysadmin-access}
 
-SysAdmin角色中的用戶可以單鍵訪問Admin Console中管理用戶角色或雲管理員權限的位置。
+身為SysAdmin角色的用戶，您只需按一下即可存取Admin Console中管理Cloud Manager的用戶角色或權限的位置。
 
 ### 管理角色 {#manage-roles}
 
 作為SysAdmin中的用戶，「添加程 **序」旁的登錄頁面上提供了「管理角** 色」選項 ****。 這可讓您按一下即可存取Admin Console中可管理Cloud Manager使用者角色或權限的位置。
 
-請參閱 [存取Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) ，以取得有關如何新增使用者至描述檔的詳細資訊，請參閱存取Cloud Manager
+請參閱 [存取雲端管理員](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) ，以取得有關如何新增使用者至描述檔的詳細資訊，請參閱存取雲端管理器。
 
 ### 管理AEM的存取權 {#manage-access-aem}
 
-身為SysAdmin的使用者，您可以按一下滑鼠，直接從Cloud Manager存取「作者」例項。
+身為SysAdmin的使用者，您只需按一下即可存取「管理控制台」，從中可直接導覽至「作者」例項並管理存取權。
+
+![](assets/manage-access1.png)
+
 如需詳 [細資訊，請參閱「在AEM中以雲端服務存取例項](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) 」。
 
 ## 針對現有AMS客戶 {#existing-aem}
