@@ -2,9 +2,9 @@
 title: 建立方案——雲端服務
 description: 建立方案——雲端服務
 translation-type: tm+mt
-source-git-commit: 9dd6cd0661cceb680f36a382aec16fad7c281301
+source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,11 @@ ht-degree: 0%
 
    ![](assets/create-program-a1.png)
 
+## 刪除沙盒程式 {#delete-sandbox-program}
 
+Cloud Manager中「業務擁 *有者* 」或「部署管理員 ** 」角色的「沙箱程式」使用者可以刪除透過Cloud Manager UI設定的「生產」和「舞台」環境。
+
+刪除選項可從「概述」頁面上的「環境」卡和「 *環境* 」頁面上 **使用** 。 在「生產」或「舞台」上選取刪除選項，也會刪除集合中的其他選項。
 
 ## 建立常規程式 {#create-regular-program}
 
