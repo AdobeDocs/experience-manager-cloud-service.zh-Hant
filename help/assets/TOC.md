@@ -1,8 +1,11 @@
 ---
 sub-product: AEM Assets 雲端服務
 user-guide-title: AEM Assets 雲端服務
-translation-type: ht
-source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
+translation-type: tm+mt
+source-git-commit: fd66d7015fb2722eec07d58908844e3232e3150a
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 99%
 
 ---
 
@@ -83,6 +86,7 @@ source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
    + [智慧型影像](dynamic-media/imaging-faq.md)
    + [傳送 Dynamic Media 資產](dynamic-media/delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中啟用超連結保護](dynamic-media/hotlink-protection.md)
+   + [Dimensional 3D影像](dynamic-media/assets-3d.md)
    + [影像集](dynamic-media/image-sets.md)
    + [全景影像](dynamic-media/panoramic-images.md)
    + [混合媒體集](dynamic-media/mixed-media-sets.md)
