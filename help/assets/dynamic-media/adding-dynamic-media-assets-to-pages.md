@@ -2,9 +2,9 @@
 title: 新增動態媒體資產至頁面
 description: 如何在AEM中將Dynamic Media元件新增至頁面
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3124'
 ht-degree: 8%
 
 ---
@@ -34,10 +34,6 @@ ht-degree: 8%
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. 拖曳動 **[!UICONTROL 態媒體元件]** ，並將其拖曳至頁面上所需的位置。
-
-   在以下範例中， **[!UICONTROL 使用Video 360 Media]** （視訊360媒體）元件。
-
-   ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
 1. 將滑鼠指標直接暫留在元件上。 當元件被藍色方塊包圍時，點選一次即可顯示元件的工具列。 點選「 **[!UICONTROL Configuration(wrench)]** 」圖示。
 
@@ -121,6 +117,7 @@ ht-degree: 8%
 >
 >* 在相同頁面上使用多個動態媒體元件例項。
 >* 每個例項都使用相同的資產類型。
+
 >
 >
 請注意，不支援為該頁面上的每個動態媒體元件指派不同的檢視器預設集。
@@ -200,6 +197,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    * 將標題檔案與視訊關聯： [標題](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * 將導覽檔案與視訊建立關聯： [導覽](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONCONTROL標題**-更改視頻的標題。
@@ -238,7 +236,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
-* **[!UICONTROL URL, Open in]**- You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟該URL。
+* **[!UICONTROL URL, Open in]**- You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟它。
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
@@ -258,6 +256,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 >
 >* 在相同頁面上使用多個互動式媒體元件例項。
 >* 每個例項都使用相同的資產類型。
+
 >
 >
 請注意，不支援為該頁面上的每個互動式媒體元件指派不同的檢視器預設集。
@@ -299,6 +298,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 >
 >* 在相同頁面上 **[!UICONTROL 使用Panoramic Media]** （全景媒體）元件的多個例項。
 >* 每個例項都使用相同的資產類型。
+
 >
 >
 請注意，不支援為該頁面上的每個 **[!UICONTROL Panoramic Media]**  (全景媒體) 元件指派不同的檢視器預設集。
