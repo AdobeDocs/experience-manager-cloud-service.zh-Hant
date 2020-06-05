@@ -2,10 +2,10 @@
 title: 導覽
 description: 導覽——雲端服務
 translation-type: tm+mt
-source-git-commit: 1f084c5f8b218808468ce7984fa0abdac497884f
+source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 2%
+source-wordcount: '492'
+ht-degree: 1%
 
 ---
 
@@ -18,23 +18,44 @@ ht-degree: 2%
 
 ![](assets/first_timelogin1.png)
 
-## SysAdmin Access {#sysadmin-access}
+## 系統管理任務 {#sysadmin-tasks}
 
-身為SysAdmin角色的用戶，您只需按一下即可存取Admin Console中管理Cloud Manager的用戶角色或權限的位置。
+SysAdmin角色中的使用者現在可以直接存取Admin Console以管理角色和權限，以及存取AEM例項。
 
 ### 管理角色 {#manage-roles}
 
-作為SysAdmin中的用戶，「添加程 **序」旁的登錄頁面上提供了「管理角** 色」選項 ****。 這可讓您按一下即可存取Admin Console中可管理Cloud Manager使用者角色或權限的位置。
+身為SysAdmin角色的用戶，您只需按一下即可存取 **Admin Console** （管理控制台）中管理Cloud Manager的使用者角色或權限的位置。
 
-請參閱 [存取雲端管理員](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) ，以取得有關如何新增使用者至描述檔的詳細資訊，請參閱存取雲端管理器。
+請參閱 [存取Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) ，以取得如何新增使用者至描述檔的詳細資訊。
 
-### 管理AEM的存取權 {#manage-access-aem}
+>[!NOTE]
+>對於在2020年1月之前獲得AEM雲端服務存取權的部分組織，這些組織將會移至Adobe Admin Console，而且必須選取「產品與環境產品設定檔」。
 
-身為SysAdmin的使用者，您只需按一下即可存取「管理控制台」，從中可直接導覽至「作者」例項並管理存取權。
+1. 導覽至Cloud Manager的登陸頁面，然後按一下「管 **理存取權」**。
 
-![](assets/manage-access1.png)
+   ![](assets/sys-admin1.png)
+
+1. 按一下「 **管理存取** 」會導覽您至 **Admin Console** ，您可從中管理Cloud Manager的使用者角色或權限。
+
+   ![](assets/sys-admin2.png)
+
+### 管理對作者實例的訪問 {#manage-access-aem}
+
+身為SysAdmin角色的用戶，您只需按一下即可存取 **Admin Console** ，您可從中直接導覽至Author實例並管理存取權。
+
+>[!NOTE]
+>對於在2020年1月之前獲得AEM雲端服務存取權的部分組織，這些組織將會移至Adobe Admin Console，而且必須選取「產品與環境產品設定檔」。
 
 如需詳 [細資訊，請參閱「在AEM中以雲端服務存取例項](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) 」。
+
+1. 從「概 **述** 」頁或「環境」頁導航至 *「環境」卡，以使用「管理訪********* 問」選項，如下圖所示。
+
+   ![](assets/manage-access1.png)
+
+1. 按一 **下「管理存取** 」，導覽至 **Admin Console** ，您可從其中存取環境的「作者」例項。
+
+   ![](assets/sys-admin3.png)
+
 
 ## 針對現有AMS客戶 {#existing-aem}
 
