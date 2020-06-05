@@ -2,10 +2,10 @@
 title: 導覽
 description: 導覽——雲端服務
 translation-type: tm+mt
-source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
+source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,28 +35,30 @@ SysAdmin角色中的使用者現在可以直接存取Admin Console以管理角�
 
    ![](assets/sys-admin5.png)
 
-1. 按一下「 **管理存取** 」會導覽您至 **Admin Console** ，您可從中管理Cloud Manager的使用者角色或權限。
+1. 按一下「管 **理存取權**」後，您會導覽至 **Admin Console** ，您可從其中管理Cloud Manager的使用者角色或權限。
+
+   ![](assets/sys-admin1.png)
 
 ### 管理對作者實例的訪問 {#manage-access-aem}
 
-身為SysAdmin角色的用戶，您只需按一下即可存取 **Admin Console** ，您可從中直接導覽至Author實例並管理存取權。
+身為SysAdmin角色的用戶，您只需按一下即可存取 **Admin Console** ，您可從中直接導覽至作者實例並管理存取權。
 
 >[!NOTE]
 >對於在2020年1月之前獲得AEM雲端服務存取權的部分組織，這些組織將會移至Adobe Admin Console，而且必須選取「產品與環境產品設定檔」。
 
 如需詳 [細資訊，請參閱「在AEM中以雲端服務存取例項](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) 」。
 
-1. 從「方案 **概述** 」頁面導 **覽至「環境** 」卡。
+1. 從「方 **案概述** 」頁面導覽至「環境 **資訊卡** 」，然後按一下「 **管理存取權**」。
 
    ![](assets/sys-admin6.png)
 
    或,
 
-   按一下「 **環境** 」資訊卡 **中的「詳細資訊** 」，以開啟「環境」頁面。 按一下 **管理** ->管 **理訪問**。
+   **如果您從「環境** 」資訊卡按一下「詳細資訊」，也可從「 **管理** 」按鈕取得「管理存取 **」****** 。
 
    ![](assets/sys-admin4.png)
 
-1. 按一 **下「管理存取** 」，導覽至 **Admin Console** ，您可從其中存取環境的「作者」例項。
+1. 按一下「管 **理存取權**」後，您就會被導覽至 **Admin Console** ，您可從其中存取環境的作者例項。
 
 ## 針對現有AMS客戶 {#existing-aem}
 
