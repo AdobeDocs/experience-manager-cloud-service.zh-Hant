@@ -1,13 +1,16 @@
 ---
-title: 使用Rich Text編輯器來製作內容
-description: 使用Rich Text編輯器來製作內容
+title: 使用Adobe Experience Manager中的Rich Text Editor來製作內容。
+description: 使用Experience Manager Rich Text Editor來製作內容。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 2%
 
 ---
 
 
-# 使用Rich Text編輯器來製作內容 {#use-rich-text-editor-to-author-content}
+# 使用Rich Text Editor來製作內容 {#use-rich-text-editor-to-author-content}
 
 Rich Text Editor(RTE)是將文字內容插入AEM的基本建置區塊。 它構成了各種元件的基礎
 
@@ -23,19 +26,17 @@ Rich Text Editor(RTE)是將文字內容插入AEM的基本建置區塊。 它構�
 
 此工具列提供下列選項：
 
-* **格式**:這可讓您設定粗體、斜體和底線。
-* **清單**:使用此選項，您可以建立項目清單或編號清單，或設定縮排。
-* **超連結**
-* **取消連結**
-* **全螢幕**
-* **關閉**
-* **儲存**
+* **格式**: 強調文字為粗體或斜體，或加上文字底線。
+* **清單**: 建立項目清單或編號清單並設定縮排。
+* **超連結**: 建立連結。
+* **解除連結**: 移除超連結。
+* **全螢幕**: 以全螢幕模式開啟編輯器。
+* **關閉**: 停止編輯。
+* **儲存**: 儲存變更。
 
 ## 全螢幕編輯 {#full-screen-editing}
 
-對於文字型元件，從工具列點選全螢幕模式 [](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) ，會開啟Rich Text編輯器並隱藏其餘的頁面內容。
-
-![RTE全螢幕按鈕](/help/sites-cloud/authoring/assets/editing-full-screen.png)
+對於基於文本的元件，請從工具欄中點選全屏模式 ![RTE全屏按鈕](/help/sites-cloud/authoring/assets/editing-full-screen.png)[](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) ，以開啟富格文本編輯器並隱藏其餘的頁面內容。
 
 全螢幕模式會顯示您可用於製作的所有已設定選項。 選項的可用性取決於配置。 <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
 
@@ -43,15 +44,15 @@ Rich Text Editor(RTE)是將文字內容插入AEM的基本建置區塊。 它構�
 
 其他豐富式文字編輯器選項包括：
 
-* **錨點**:在文字中建立錨點，您稍後可以連結至／參考。
+* **錨點**: 在文字中建立錨點，您稍後可以連結至或建立參考。
 * **向左對齊文字**
 * **文字置中**
 * **向右對齊文字**
 
-按一下最小化圖示，關閉全螢幕模式。
+按一下「最小化」以關閉全螢幕模式。
 
 ![RTE最小化按鈕](/help/sites-cloud/authoring/assets/rte-minimize.png)
 
->[!NOTE]
+>[!Tip]
 >
->將嵌套清單從Microsoft word複製到RTE中可能會導致結果不一致，而且在貼上RTE中的文本後可能需要手動調整。
+>將嵌套清單從Microsoft Word複製到RTE中可能會導致結果不一致。 您可以改為貼上為文字，然後進行手動調整。
