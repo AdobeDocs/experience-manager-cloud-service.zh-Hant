@@ -2,7 +2,7 @@
 title: 導覽
 description: 導覽——雲端服務
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 1%
@@ -33,11 +33,9 @@ SysAdmin角色中的使用者現在可以直接存取Admin Console以管理角�
 
 1. 導覽至Cloud Manager的登陸頁面，然後按一下「管 **理存取權」**。
 
-   ![](assets/sys-admin1.png)
+   ![](assets/sys-admin5.png)
 
 1. 按一下「 **管理存取** 」會導覽您至 **Admin Console** ，您可從中管理Cloud Manager的使用者角色或權限。
-
-   ![](assets/sys-admin2.png)
 
 ### 管理對作者實例的訪問 {#manage-access-aem}
 
@@ -48,14 +46,17 @@ SysAdmin角色中的使用者現在可以直接存取Admin Console以管理角�
 
 如需詳 [細資訊，請參閱「在AEM中以雲端服務存取例項](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) 」。
 
-1. 從「概 **述** 」頁或「環境」頁導航至 *「環境」卡，以使用「管理訪********* 問」選項，如下圖所示。
+1. 從「方案 **概述** 」頁面導 **覽至「環境** 」卡。
 
-   ![](assets/manage-access1.png)
+   ![](assets/sys-admin6.png)
+
+   或,
+
+   按一下「 **環境** 」資訊卡 **中的「詳細資訊** 」，以開啟「環境」頁面。 按一下 **管理** ->管 **理訪問**。
+
+   ![](assets/sys-admin4.png)
 
 1. 按一 **下「管理存取** 」，導覽至 **Admin Console** ，您可從其中存取環境的「作者」例項。
-
-   ![](assets/sys-admin3.png)
-
 
 ## 針對現有AMS客戶 {#existing-aem}
 
