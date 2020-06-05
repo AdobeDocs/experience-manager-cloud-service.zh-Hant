@@ -2,10 +2,10 @@
 sub-product: AEM 雲端服務實作
 user-guide-title: AEM 雲端服務實作
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 83c2b37f10b46c1a88e36e49b448b38137bda1c0
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 89%
+source-wordcount: '203'
+ht-degree: 83%
 
 ---
 
@@ -37,6 +37,9 @@ ht-degree: 89%
    + [自訂和擴充內容片段](developing/extending/content-fragments-customizing.md)
    + [轉譯專用內容片段設定元件](developing/extending/content-fragments-configuring-components-rendering.md)
    + [設定搜尋表單](developing/extending/search-forms.md)
+   + [配置富格文本編輯器](/help/implementing/developing/extending/rich-text-editor.md)
+   + [配置RTE插件](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+   + [配置RTE以建立可訪問站點](/help/implementing/developing/extending/rte-accessible-content.md)
 + 部署至 AEM 雲端服務 {#deploying}
    + [部署至 AEM 雲端服務](deploying/overview.md)
    + [為 AEM 雲端服務設定 OSGi](deploying/configuring-osgi.md)
