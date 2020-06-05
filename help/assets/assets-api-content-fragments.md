@@ -2,12 +2,15 @@
 title: Adobe Experience Manager作為Assets HTTP API中的雲端服務內容片段支援
 description: 瞭解Adobe Experience Manager如何在資產HTTP API中以雲端服務內容片段支援的方式提供。
 translation-type: tm+mt
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+workflow-type: tm+mt
+source-wordcount: '1892'
+ht-degree: 2%
 
 ---
 
 
-# AEM Assets HTTP API中的內容片段支援{#content-fragments-support-in-aem-assets-http-api}
+# AEM Assets HTTP API 內容片段支援{#content-fragments-support-in-aem-assets-http-api}
 
 ## 概覽 {#overview}
 
@@ -62,8 +65,8 @@ Assets REST API提供 [AEM例項中](https://en.wikipedia.org/wiki/Representatio
 
 >[!NOTE]
 >存取：
->* `/api/assets` 不 **需要** ，請使用選 `.model` 擇器。
->* `/content/assets` 需 **要** 「選擇器」 `.model` 使用。
+>* `/api/assets` **不需要** 「選取器」的 `.model` 使用。
+>* `/content/assets` **需要** 使用選取器 `.model` 。
 
 
 HTTP方法確定要執行的操作：
@@ -75,7 +78,7 @@ HTTP方法確定要執行的操作：
 
 >[!NOTE]
 >
->請求正文和／或URL參數可用於配置其中的一些操作；例如，定義資料夾或資產應由 **POST請求建立** 。
+>請求正文和／或URL參數可用於配置其中的一些操作； 例如，定義資料夾或資產應由 **POST請求建立** 。
 
 <!--
 The exact format of supported requests is defined in the [API Reference](/help/assets/assets-api-content-fragments.md#api-reference) documentation.
@@ -118,7 +121,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
   </tr>
   <tr>
    <td>安全性</td>
-   <td><p>有多種選項。</p> <p>OAuth的提出；可與標準設定分開設定。</p> </td>
+   <td><p>有多種選項。</p> <p>OAuth的提出； 可與標準設定分開設定。</p> </td>
    <td>使用AEM的標準設定。</td>
   </tr>
   <tr>
@@ -128,8 +131,8 @@ The exact format of supported requests is defined in the [API Reference](/help/a
   </tr>
   <tr>
    <td>輸出</td>
-   <td>以JSON為基礎的SIREN輸出：詳細，但功能強大。 允許在內容中導覽。</td>
-   <td>以JSON為基礎的專屬輸出；可透過Sling Models進行設定。 導覽內容結構很難實作（但不一定不可能）。</td>
+   <td>以JSON為基礎的SIREN輸出： 詳細，但功能強大。 允許在內容中導覽。</td>
+   <td>以JSON為基礎的專屬輸出； 可透過Sling Models進行設定。 導覽內容結構很難實作（但不一定不可能）。</td>
   </tr>
  </tbody>
 </table>
@@ -172,7 +175,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 >
 >分頁通常套用至容器實體（即資料夾或具有轉譯的資產），因為它與所請求實體的子系相關。
 
-#### 範例：分頁 {#example-paging}
+#### 範例： 分頁 {#example-paging}
 
 `GET /api/assets.json?offset=2&limit=3`
 
@@ -196,7 +199,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 資料夾可當成資產和其他資料夾的容器。 它們反映AEM內容存放庫的結構。
 
-Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題等。 資產會以資料夾的子實體和子資料夾的形式公開。
+Assets REST API會公開資料夾屬性的存取權； 例如其名稱、標題等。 資產會以資料夾的子實體和子資料夾的形式公開。
 
 >[!NOTE]
 >
@@ -204,7 +207,7 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 
 ### 資產 {#assets}
 
-如果要求資產，回應會傳回其中繼資料；例如標題、名稱及由個別資產架構定義的其他資訊。
+如果要求資產，回應會傳回其中繼資料； 例如標題、名稱及由個別資產架構定義的其他資訊。
 
 資產的二進位資料會公開為SIREN連結類型( `content` 亦稱為 `rel attribute`)。
 
@@ -227,7 +230,7 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 
 #### 內容模型和內容片段 {#content-models-and-content-fragments}
 
-目前，定義內容片段結構的模型不會透過HTTP API公開。 因此， *消費者* 需要瞭解碎片的模型（至少是最小值）—儘管大部分資訊都可以從負載中推斷出來；資料類型等。 是定義的一部分。
+目前，定義內容片段結構的模型不會透過HTTP API公開。 因此， *消費者* 需要瞭解碎片的模型（至少是最小值）—儘管大部分資訊都可以從負載中推斷出來； 資料類型等。 是定義的一部分。
 
 要建立新內容片段，必須提供模型的（內部儲存庫）路徑。
 
@@ -271,7 +274,7 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 可能有兩種讀取操作：
 
 * 依路徑讀取特定內容片段時，會傳回內容片段的JSON表示法。
-* 依路徑讀取內容片段的資料夾：這會傳回資料夾內所有內容片段的JSON表示法。
+* 依路徑讀取內容片段的資料夾： 這會傳回資料夾內所有內容片段的JSON表示法。
 
 ### 建立 {#create}
 
@@ -303,14 +306,14 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 
 * **變數無法撰寫和更新。** 如果這些變化被新增至負載（例如更新），則會忽略它們。 不過，變更將透過傳送( `GET`)提供。
 
-* **目前不支援內容片段模型**:無法讀取或建立。 為了能夠建立新的內容片段或更新現有的內容片段，開發人員必須知道內容片段模型的正確路徑。 目前，唯一可以透過管理UI來取得這些概觀的方法。
+* **目前不支援內容片段模型**: 無法讀取或建立。 為了能夠建立新的內容片段或更新現有的內容片段，開發人員必須知道內容片段模型的正確路徑。 目前，唯一可以透過管理UI來取得這些概觀的方法。
 * **將忽略引用**。 目前不會檢查是否參考現有的內容片段。 因此，例如，刪除內容片段可能會在包含對已刪除內容片段之參考的頁面上產生問題。
 
 ## 狀態代碼和錯誤消息 {#status-codes-and-error-messages}
 
 在相關情況下，可看到以下狀態代碼：
 
-1. 200（確定）
+* **200** （確定）
 
    傳回時間：
 
@@ -318,19 +321,19 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 
    * 透過 `PUT`
 
-1. 201（已建立）
+* **201** （已建立）
 
    傳回時間：
 
    * 透過 `POST`
 
-1. 404（找不到）
+* **404** （找不到）
 
    傳回時間：
 
    * 請求的內容片段不存在
 
-1. 500（內部伺服器錯誤）
+* **500** （內部伺服器錯誤）
 
    >[!NOTE]
    >
@@ -392,5 +395,5 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 如需詳細資訊，請參閱：
 
 * [資產HTTP API檔案](/help/assets/mac-api-assets.md)
-* [AEM Gem作業：OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem作業： OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
 
