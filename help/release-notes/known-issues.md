@@ -1,8 +1,11 @@
 ---
 title: 已知問題
 description: Adobe Experience Manager 雲端服務已知問題的發行說明
-translation-type: ht
-source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
+translation-type: tm+mt
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 96%
 
 ---
 
@@ -31,13 +34,12 @@ source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 Adobe Experience Manager Assets 的少數功能需仰賴基礎功能，這些基礎功能尚無法在 Experience Manager 雲端服務部署架構中使用，預計之後會啟用：
 
-* 目前尚不提供運用 Adobe I/O AI 服務的增強智慧型標記功能。
 * 目前仍仰賴 Commerce Integration Framework API 而未啟用的功能：
    * 拍攝工作流程模型。
    * 資產屬性使用者介面中未填入資料的產品資訊標籤。
 * 目前仍仰賴 InDesign Server 整合而尚未啟用的功能：
    * 資產範本和資產目錄。
-   * InDesign 檔案的多頁預覽。
+   * Adobe InDesign檔案的多頁預覽。
 
 >[!MORELIKETHIS]
 >
