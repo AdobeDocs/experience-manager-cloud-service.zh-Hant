@@ -1,11 +1,11 @@
 ---
 sub-product: AEM 雲端服務實作
 user-guide-title: AEM 雲端服務實作
-translation-type: ht
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: ht
-source-wordcount: '181'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 89%
 
 ---
 
@@ -40,6 +40,8 @@ ht-degree: 100%
 + 部署至 AEM 雲端服務 {#deploying}
    + [部署至 AEM 雲端服務](deploying/overview.md)
    + [為 AEM 雲端服務設定 OSGi](deploying/configuring-osgi.md)
-+ 雲端中的 Dispatcher {#dispatcher}
-   + [雲端中的 Dispatcher](dispatcher/overview.md)
-   + [AEM 雲端服務的內容傳送](dispatcher/content-delivery.md)
++ 內容傳送概觀 {#content-delivery}
+   + [內容傳送流程](dispatcher/overview.md)
+   + [雲端中的 Dispatcher](dispatcher/disp-overview.md)
+   + [AEM中的CDN（雲端服務）](dispatcher/cdn.md)
+   + [在AEM中快取為雲端服務](dispatcher/caching.md)
