@@ -4,9 +4,9 @@ description: 瞭解各種資產管理和編輯方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d262d4493939f0fc60a98ef4ff892fbce5f526ab
+source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
 workflow-type: tm+mt
-source-wordcount: '4396'
+source-wordcount: '4419'
 ht-degree: 12%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 12%
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-如果DAM儲存庫中存在重複資產，資產會偵測並通知使用者。 預設會停用重複偵測。 若要啟用此功能，請設 [!UICONTROL 定Adobe AEM Cloud Asset Duplication Detector]。 了 [解如何進行OSGi配置](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 複製檢測基於儲存在的唯 `dam:sha1` 一值 `jcr:content/metadata/dam:sha1`。 這表示即使檔案名稱不同，也會偵測到重複資產。
+If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded. 若要啟用此功能，請設 [!UICONTROL 定Adobe AEM Cloud Asset Duplication Detector]。 了 [解如何進行OSGi配置](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 複製檢測基於儲存在的唯 `dam:sha1` 一值 `jcr:content/metadata/dam:sha1`。 這表示即使檔案名稱不同，也會偵測到重複資產。
 
 ![偵測重複資產OSGi組態](assets/duplicate-detection.png)
 
@@ -60,7 +60,7 @@ ht-degree: 12%
 
 1. 在預覽模式中，支援的影像類型(使用互 [動式編輯](/help/assets/file-format-support.md) )可使用縮放選項。
 
-   若要縮放資產，請點選／按一 `+` 下（或點選／按一下資產上的放大鏡）。 若要縮小，請點選／按一下 `-`。 當您放大時，可以透過平移來仔細檢視影像的任何區域。 重設縮放箭頭會將您帶回原始檢視。
+   若要縮放資產，請點選／按一 `+` 下（或點選／按一下資產上的放大鏡）。 若要縮小，請點選／按一下 `-`。 When you zoom in, you can look closely at any area of the image by panning. 重設縮放箭頭會將您帶回原始檢視。
 
    點選 **[!UICONTROL 「重設]** 」，將檢視重設為原始大小。
 
@@ -120,13 +120,13 @@ ht-degree: 12%
 
 保留其他屬性和元資料資訊。 複製資產時不會建立部分復本。
 
-1. 從「資產」使用者介面中，選取一或多個資產，然後點選／按一下工具列 **[!UICONTROL 中的]** 「複製」圖示。 或者，從資 **[!UICONTROL 產卡]** 中選擇 ![Copy](assets/copy_icon.png) _copy_icon快速操作。
+1. 從「資產」UI中，選取一或多個資產，然後點選／按一下工具列 **[!UICONTROL 中的]** 「複製」圖示。 或者，從資 **[!UICONTROL 產卡]** 中選擇 ![Copy](assets/copy_icon.png) _copy_icon快速操作。
 
    >[!NOTE]
    >
    >如果您使用「復 [!UICONTROL 制] 」快速動作，一次只能複製一個資產。
 
-1. 導覽至您要複製資產的位置。
+1. Navigate to the location where you want to copy the assets.
 
    >[!NOTE]
    >
@@ -153,13 +153,13 @@ ht-degree: 12%
    * 點選／按一 **[!UICONTROL 下「取消]** 」以停止程式。
    >[!NOTE]
    >
-   >* 如果新位置沒有同名的資產，您可以指定該資產的相同名稱。 但是，如果您將資產移至同名資產所在的位置，則應使用不同的名稱。 如果您使用相同的名稱，系統會自動產生名稱的變化。 例如，如果您的資產名稱為Square，系統會為其副本產生名稱Square1。
-   >* 重新命名時，檔案名稱中不允許空格。
+   >* 如果新位置沒有同名的資產，您可以指定該資產的相同名稱。 但是，如果您將資產移至同名資產所在的位置，則應使用不同的名稱。 If you use the same name, the system automatically generates a variation of the name. For example if your asset has the name Square, the system generates the name Square1 for its copy.
+   >* When renaming, whitespace is not allowed in the file name.
 
 
 1. 在「選 **[!UICONTROL 擇目標]** 」對話框中，執行下列操作之一：
 
-   * 導覽至資產的新位置，然後點選／按「下一 **[!UICONTROL 步]** 」繼續。
+   * Navigate to the new location for the assets, and then tap/click **[!UICONTROL Next]** to proceed.
 
    * 點選／按一 **[!UICONTROL 下「上]** 」，返回「重新 **[!UICONTROL 命名]** 」畫面。
 
@@ -167,12 +167,12 @@ ht-degree: 12%
 
    在「調整參照」( **[!UICONTROL Adjust References)螢幕中執行下列操作之一]** :
 
-   * 指定要根據新詳細資料調整的參照，然後點選／按一下「移 **[!UICONTROL 動]** 」繼續。
+   * Specify the references to be adjusted based on the new details, and then tap/click **[!UICONTROL Move]** to proceed.
 
    * 從「調 **[!UICONTROL 整」欄]** ，選取／取消選取資產參照。
    * 點選／按一 **[!UICONTROL 下「上]** 」，返回「 **[!UICONTROL 選取目標]** 」畫面。
 
-   * 點選／按一 **[!UICONTROL 下「取消]** 」以停止移動作業。
+   * Tap/click **[!UICONTROL Cancel]** to stop the move operation.
 
    如果您不更新參照，則參照會繼續指向資產的先前路徑。 如果您調整參照，它們會更新為新資產路徑。
 
@@ -180,25 +180,25 @@ ht-degree: 12%
 
 1. 您可以新增或移除資產的轉譯，但原始的轉譯除外。 導覽至您要新增或移除轉譯的資產位置。
 
-1. 點選／按一下資產以開啟其資產頁面。
+1. Tap/click the asset to open its asset page.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. 點選／按一下GlobalNav圖示，然後從清單中選 **[!UICONTROL 取]** 「轉譯」。
+1. Tap/click the GlobalNav icon, and select **[!UICONTROL Renditions]** from the list.
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. 在「轉 **[!UICONTROL 譯]** 」面板中，檢視為資產產生的轉譯清單。
+1. In the **[!UICONTROL Renditions]** panel, view the list of renditions generated for the asset.
 
    ![renditions_panel](assets/renditions_panel.png)
 
    >[!NOTE]
    >
-   >依預設，AEM Assets不會在預覽模式中顯示資產的原始轉譯。 如果您是管理員，可以使用覆蓋來設定AEM Assets，以在預覽模式中顯示原始轉譯。
+   >依預設，AEM Assets不會在預覽模式中顯示資產的原始轉譯。 If you are an administrator, you can use overlays to configure AEM Assets to display original renditions in the preview mode.
 
 1. 選取要檢視或刪除轉譯的轉譯。
 
-   **刪除轉譯**
+   **Deleting a rendition**
 
    從「轉譯」面板選取轉 **[!UICONTROL 譯]** ，然後點選／按一下工具列中的「 **[!UICONTROL 刪除轉譯]** 」圖示。 資產處理完成後，無法大量刪除轉譯。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自 [!DNL Experience Manager] 訂以刪除特定轉譯或刪除資產，然後重新上傳已刪除的資產。
 
@@ -214,7 +214,7 @@ ht-degree: 12%
    >
    >如果您從「轉譯」面板選取轉譯 **** ，工具列會變更上下文，並僅顯示與轉譯相關的動作。不會顯示「上傳轉譯」圖示等選項。若要在工具列中檢視這些選項，請導覽至資產的詳細資訊頁面。
 
-   您可以設定要顯示在影像或視訊資產詳細資料頁面的轉譯尺寸。 AEM Assets會根據您指定的維度，顯示具有精確或最接近的維度的轉譯。
+   您可以設定要顯示在影像或視訊資產詳細資料頁面的轉譯尺寸。 Based on the dimensions you specify, AEM Assets displays the rendition with the exact or closest dimensions.
 
    若要在資產詳細資料層級設定影像的轉譯尺寸，請覆蓋節 `renditionpicker` 點(`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`)並設定width屬性的值。設定屬性大 **[!UICONTROL 小 (長) (KB]** )以取代寬度，以根據影像大小自訂資產詳細資料頁面上的轉譯。對於基於大小的定製，如果匹配的 `preferOriginal` 格式副本的大小大於原始格式副本的大小，則屬性會為原始格式副本指定首選項。
 
@@ -323,7 +323,7 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
 
    ![add_user](assets/add_user.png)
 
-1. 若要在使用者存取資料夾時顯示登入畫面，請選取「啟 **[!UICONTROL 用]** 」選項。 然後，在AEM中選取登入頁面的路徑，並儲存變更。
+1. 若要在使用者存取資料夾時顯示登入畫面，請選取「啟 **[!UICONTROL 用]** 」選項。 Then, select the path to a login page in AEM, and save the changes.
 
    ![login_page](assets/login_page.png)
 
@@ -331,20 +331,20 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
    >
    >如果您未指定登入頁面的路徑，AEM會在發佈例項中顯示預設登入頁面。
 
-1. 發佈資料夾，然後嘗試從發佈例項存取資料夾。 隨即顯示登入畫面。
-1. 如果您是CUG成員，請輸入您的安全憑據。 資料夾會在AEM驗證您後顯示。
+1. Publish the folder, and then try accessing it from the publish instance. 隨即顯示登入畫面。
+1. If you are a CUG member, enter your security credentials. The folder is displayed after AEM authenticates you.
 
 ## 搜尋資產 {#search-assets}
 
-搜尋資產是數位資產管理系統的核心使用，不論是供創意人員進一步使用、由商業使用者和行銷人員強穩管理資產，或由DAM管理員管理。
+Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators.
 
-如需簡單、進階和自訂搜尋，以發現和使用最適當的資產，請參閱「AEM [中的搜尋資產」](/help/assets/search-assets.md)。
+For simple, advanced, and custom searches to discover and use the most appropriate assets, see [search assets in AEM](/help/assets/search-assets.md).
 
 ## Quick actions {#quick-actions}
 
-一次只有一個資產的快速動作圖示可用。視您的裝置而定，執行下列動作以顯示快速動作圖示：
+一次只有一個資產的快速動作圖示可用。Depending upon your device, perform the following actions to display the quick action icons:
 
-* 觸控裝置： 輕觸並按住。 例如，在iPad上，您可以點選並按住資產，以便顯示快速動作。
+* Touch devices: Touch and hold. 例如，在iPad上，您可以點選並按住資產，以便顯示快速動作。
 * 非觸控裝置： 暫留指標。 例如，在案頭裝置上，如果您將指標暫留在資產縮圖上，就會顯示快速動作列。
 
 ## 編輯影像 {#editing-images}
@@ -427,7 +427,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 >對於「內容片段」, [會在片段編輯器中建立註解](content-fragments/content-fragments.md)。
 
 1. 導覽至您要新增附註的資產位置。
-1. 點選／按一 **[!UICONTROL 下]** 下列其中一項的「註解」圖示：
+1. Tap/click the **[!UICONTROL Annotate]** icon from one of the following:
 
    * [快速動作](#quick-actions)
    * 在選取資產或導覽至資產頁面後，從工具列
@@ -463,7 +463,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
    >
    >您也可以將註解新增至視訊資產。 在為視訊加上註解時，播放器會暫停，讓您在影格上加上註解。 如需詳細資訊，請參 [閱「管理視訊資產](manage-video-assets.md)」。
 
-1. 若要選擇不同的顏色以便區分使用者，請按一下／點選「描述檔」圖示，然後按一下／點選「我的偏 **[!UICONTROL 好設定」]**。
+1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
@@ -491,13 +491,13 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   點選／按一 **[!UICONTROL 下「刪除]**」，以刪除特定留言。
+   Tap/click **[!UICONTROL Delete]**, to delete a particular comment.
 
 ### 列印註解 {#printing-annotations}
 
 如果資產有註解或已經受審核工作流程，您可以將資產連同註解列印為PDF檔案，以便離線審核。
 
-您也可以選擇僅打印注釋或查看狀態。
+You can also choose to print only the annotations or review status.
 
 要打印注釋和查看狀態，請點選／按一下「 **[!UICONTROL Print]** （打印）」表徵圖，然後按照嚮導中的說明操作。 只有當資 **[!UICONTROL 產至少指派了一個註解或審閱狀態時，「列印]** 」圖示才會出現在工具列中。
 
