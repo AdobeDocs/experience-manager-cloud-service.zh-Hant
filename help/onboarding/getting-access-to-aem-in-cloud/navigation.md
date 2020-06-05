@@ -2,10 +2,10 @@
 title: 導覽
 description: 導覽——雲端服務
 translation-type: tm+mt
-source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 1%
 
 ---
 
@@ -59,6 +59,8 @@ SysAdmin角色中的使用者現在可以直接存取Admin Console以管理角�
    ![](assets/sys-admin4.png)
 
 1. 按一下「管 **理存取權**」後，您就會被導覽至 **Admin Console** ，您可從其中存取環境的作者例項。
+
+   ![](assets/sys-admin-2.png)
 
 ## 針對現有AMS客戶 {#existing-aem}
 
