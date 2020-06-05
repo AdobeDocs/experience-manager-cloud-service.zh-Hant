@@ -3,15 +3,15 @@ title: 使用人工智慧服務來標籤影像。
 description: 使用人工智慧服務來標籤影像，這些服務會使用Adobe Sensei服務套用情境式和描述性的商業標籤。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2400'
 ht-degree: 5%
 
 ---
 
 
-# 使用智慧型服務來標籤您的影像 {#smart-tag-assets}
+# 訓練智慧型標籤服務並標籤您的影像 {#train-service-tag-assets}
 
 處理數位資產的組織越來越多地在資產中繼資料中使用分類控制辭彙。 基本上，它包含員工、合作夥伴和客戶常用來參考及搜尋其數位資產的關鍵字清單。 使用分類控制的辭彙來標籤資產，可確保透過標籤搜尋輕鬆識別和擷取資產。
 
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 若要使用智慧標籤，請完成下列工作：
 
-* [將Experience Manager與Adobe I/O整合](#integrate-aem-with-aio)。
+* [將Experience Manager與Adobe Developer Console整合](#integrate-aem-with-aio)。
 * [瞭解標籤模型和准則](#understand-tag-models-guidelines)。
 * [訓練模型](#train-model)。
 * [標籤您的數位資產](#tag-assets)。
@@ -35,11 +35,11 @@ ht-degree: 5%
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## 與 [!DNL Experience Manager] Adobe I/O整合 {#integrate-aem-with-aio}
+## 與Adobe [!DNL Experience Manager] Developer Console整合 {#integrate-aem-with-aio}
 
-您可以使 [!DNL Adobe Experience Manager] 用Adobe I/O與智慧標籤整合。 使用此配置可從中訪問智慧標籤服務 [!DNL Experience Manager]。
+您可以使 [!DNL Adobe Experience Manager] 用Adobe Developer Console與智慧標籤整合。 使用此配置可從中訪問智慧標籤服務 [!DNL Experience Manager]。
 
-請參 [閱設定Experience Manager，以便為要設定智慧標籤的任務](smart-tags-configuration.md) ，智慧標籤資產。 在後端，伺服器會先 [!DNL Experience Manager] 使用Adobe I/O閘道驗證您的服務認證，然後再將您的要求轉送至智慧標籤服務。
+請參 [閱設定Experience Manager，以便為要設定智慧標籤的任務](smart-tags-configuration.md) ，智慧標籤資產。 在後端，伺服器會先 [!DNL Experience Manager] 使用Adobe Developer Console閘道驗證您的服務認證，然後再將您的要求轉送至智慧標籤服務。
 
 ## 瞭解標籤模型和准則 {#understand-tag-models-guidelines}
 
