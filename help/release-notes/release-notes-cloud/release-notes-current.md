@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 雲端服務 2020.6.0 版發行說明
 description: Experience Manager 2020.6.0 版發行說明
 translation-type: tm+mt
-source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1843'
 ht-degree: 6%
 
 ---
@@ -120,17 +120,12 @@ PM/EM review required before publishing.
 
 **支援擷取、預覽和傳送3D內容**
 
-組織現在可以在AEM Assets中儲存和使用3D檔案。 使用者可以上傳、預覽和運用多種核心3D檔案，包括。obj、.stl、.gltf和。glb檔案。 此外，您還 [!DNL Dynamic Media]可以設定3D體驗，並透過不可知的URL或檢視器提供。 這包括 [!DNL Dynamic Media] 3D Experience Viewer、Sites 3D Viewer元件，以及透過(AR/VR)傳送3D [!DNL Dynamic Media] 檔案的功能。
-
-<!-- TBD: Add link to the DM help article, if any. -->
+組織現在可以在AEM Assets中儲存和使用3D檔案。 使用者可以上傳、預覽和運用多種核心3D檔案，包括。obj、.stl、.gltf和。glb檔案。 此外，您還 [!DNL Dynamic Media]可以設定3D體驗，並透過不可知的URL或檢視器提供。 這包括 [!DNL Dynamic Media] 3D Experience Viewer、Sites 3D Viewer元件，以及透過(AR/VR)傳送3D [!DNL Dynamic Media] 檔案的功能。 請參 [閱在動態媒體中使用3D資產](/help/assets/dynamic-media/assets-3d.md)。
 
 <!-- Hiding this as the GA is at a later date. 
-TBD: Add link to the AAL help article. 
-
 **Adobe Asset Link support for Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application.
-
+With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 -->
 
 **協助工具增強功能**
@@ -141,18 +136,15 @@ With the latest release, [!DNL Experience Manager Assets] provides support for a
 * 使用者介面元素、控制項和輸入表單欄位都可使用鍵盤存取。
 * 變更某些介面元素的顏色或對比，讓視力有限且無色彩感知的使用者更容易辨識這些元素。 例如，「資產」現在在「屬性」頁面和卡片檢視中的星號分級圖示 [!UICONTROL 中] ，有適當的對比。
 
-<!-- TBD: Add link to the a11y help article if created. Else add it post-GA. -->
-
 **其他增強功能**
 
 此版本提供下列其他增強功能：
 
-* Assets使用者介面的協助工具改進。
 * 能夠使用資產處理設定檔重新處理資產，讓使用者完全掌控流程（執行完整資產處理、只要套用特定處理設定檔，並決定是否應執行後置處理工作流程）。
 * 現在，當底層群集實例在後台重新啟動時，搜索查詢返回結果的速度更快（在此類情況下，初始搜索運行可能會持續更久）。
-* 在「資產」介面和搜尋結果中，在清單檢視中檢視資產時，依「名稱」排序。
-* 在「資產」介面和搜尋結果的清單檢視中檢視資產時，依「已建立」（日期）排序。
-* 支援將EPS檔案轉換為影像。
+* 在「資產」介面和搜尋結果中，在清單檢視中檢視資產時，依「名稱」排序。 請參閱 [搜尋資產](/help/assets/search-assets.md#sort)。
+* 在「資產」介面和搜尋結果的清單檢視中檢視資產時，依「已建立」（日期）排序。 請參閱 [搜尋資產](/help/assets/search-assets.md#sort)。
+* 支援使用資產微服務將EPS檔案轉換為影像。
 
 ### 錯誤修正 {#assets-bug-fixes}
 
