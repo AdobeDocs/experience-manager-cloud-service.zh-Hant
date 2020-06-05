@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 雲端服務 2020.6.0 版發行說明
 description: Experience Manager 2020.6.0 版發行說明
 translation-type: tm+mt
-source-git-commit: a725e5729d1086aba64ec59ed909577f25219aa9
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1833'
 ht-degree: 6%
 
 ---
@@ -21,6 +21,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is Ju
 ## AEM Sites 新增功能 {#aem-sites}
 
 請詳閱本節，了解 AEM 雲端服務 2020.6.0 版中 AEM Sites 的新增功能和更新。
+
+### 新功能 {#whats-new-2020.6.0}
+
+核心元件2.9.0版現 [已隨附於AEM Sites](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) ，包括：
+
+* [Adobe用戶端資料層](https://github.com/adobe/adobe-client-data-layer) 與核心元件的整合
+* 所有元件的可設定HTML ID屬性
+* 新的進度列元件
+* 許多錯誤修正
 
 ### 錯誤修正 {#sites-bug-fixes}
 
@@ -53,19 +62,27 @@ AEM a Cloud Service SDK API Jar（先前代管於該位置）現在位於Maven C
 
 * Cloud Manager中「業務擁有者 ** 」角色的使用者現在可以從登陸頁面（透過方案卡上的快速動作按鈕）或從程式中刪除沙盒程式。
 
-* Cloud Manager中「業務擁 *有者* 」或「部署管理員 ** 」角色的「沙箱程式」使用者現在可以刪除透過Cloud Manager UI設定的「生產」和「階段」環境。 刪除選項現在可從概述頁面上的「環境」卡以及「環境」頁面中使用。 在「生產」或「舞台」上選取刪除選項，也會刪除集合中的其他選項。
+   如需詳細 [資訊，請參閱刪除沙盒程式](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) 。
+
+* Cloud Manager中「業務擁 *有者* 」或「部署管理員 ** 」角色的「沙箱程式」使用者現在可以刪除透過Cloud Manager UI設定的「生產」和「階段」環境。 刪除選項現在可從「程式概述」頁面和「環 **境** 」頁面上的「環境」卡 **中使用** 。 在「生產」或「舞台」上選取刪除選項，也會刪除集合中的其他選項。
+
+   如需詳細 [資訊，請參閱刪除沙盒程式](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) 。
 
 * 引導著陸頁面上的標籤，以通知並指示使用者基本導覽。
 
-* 指導「概述」頁 *面上的標籤* ，以通知並指示使用者有關Cloud Manager中基本導覽的資訊，以開始使用。
+* 指導「方案概 **述」頁面上的標籤** ，以通知並指示使用者在Cloud Manager中進行基本導覽，以開始使用。
 
 * 現在 **Cloud Manager中提供** LEARN頁面，可透過頂端導覽存取。 本頁提供相關資源，可協助使用者瞭解最常使用的工作流程，這些工作流程與他們在Cloud Manager中指派的角色相關。
 
-* 「沙盒程式」現在可透過「 **Sandbox** 」標章來識別，此標章會顯示在著陸頁面上的程式卡上，以及「概述」頁面中的程式名稱旁 ** 邊。
+* 「沙盒程式」現在可透過「 **Sandbox** 」標章來識別，此標章會顯示在著陸頁面上的程式卡上，以及「程式概述」頁面中的程式名稱旁 **** 邊。
 
-* SysAdmin ** 角色中的用戶現在可以單鍵訪問Admin Console中的位置，用戶角色或Cloud Manager權限可從中管理。 「 **Add Program** 」（新增程式）按鈕旁的著陸頁面上會有 **「Manage Roles** 」（管理角色）按鈕。
+* SysAdmin角色中的用戶現在可以單鍵訪問Admin Console中的位置，從中可以管理用戶角色或Cloud Manager權限。 「 **Add Program** 」（新增程式）按鈕旁的著陸頁面現在提供 **「Manage Access** 」（管理存取）按鈕。
 
-* SysAdmin角色中的用戶現在可以直接從CM通過單鍵訪問Author實例。
+   有關詳細 [資訊，請參閱](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) 「系統管理任務」。
+
+* SysAdmin角色中的用戶現在可以通過單鍵訪問直接從Cloud Manager建立實例。
+
+   如需詳細 [資訊，請參閱「管理作者例項的存取](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) 」。
 
 * 「構建日誌」現在包含已發現對象的清單，包括跳過的內容包。
 
@@ -77,13 +94,13 @@ AEM a Cloud Service SDK API Jar（先前代管於該位置）現在位於Maven C
 
 * 在某些情況下，「建立程式」( **Create Program** )對話框中的表徵圖未對齊。
 
-* AEM發行識別碼未一致顯示在「概述」 *頁面* 。
+* AEM發行識別碼未一致顯示在「 **Programs Overview** 」（程式綜覽）頁面上。
 
 * 在設定生產管線時，某些客 **戶看不到「排程部署** 」選項。
 
 ### 已知問題 {#known-issues-cm}
 
-* 在特定期間內未偵測到任何活動時，沙盒程式中的環境將會休眠。 Cloud Manager中不會觀察到此狀態。 不過，您可透過Developer Console來觀察狀態。 這個問題將在即將發行的版本中解決。
+* 在特定期間內未偵測到任何活動時，沙盒程式中的環境將會休眠。 Cloud Manager中不會觀察到此狀態。 不過，您可透過Developer Console觀察狀態。 這個問題將在即將發行的版本中解決。
 
 * 直接從Cloud Manager連結至Developer Console時，不會顯示沙盒程式環境的解除休眠／休眠選項。 若要解決此問題，請在Developer Console中加入一 `#release-cm-p1234-e5678` 次模式至URL結尾， *1234* 是Program ID, *5678* 是Environment ID。 這個問題將在即將發行的版本中解決。
 
