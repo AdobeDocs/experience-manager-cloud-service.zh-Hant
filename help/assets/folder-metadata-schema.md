@@ -3,7 +3,10 @@ title: 資料夾中繼資料結構
 description: 瞭解如何在AEM Assets中建立資產資料夾的中繼資料結構
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 2394ce2b5ebbd3e0e7229a98b5f500312b82dbd7
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 10%
 
 ---
 
@@ -16,7 +19,7 @@ Adobe Experience Manager(AEM)Assets可讓您為資產資料夾建立中繼資料
 
 使用資料夾元資料結構表單編輯器可建立和編輯資料夾的元資料結構。
 
-1. 點選／按一下AEM標誌，然後前往「工具 **[!UICONTROL >資產]** >資料 **[!UICONTROL 夾中繼資料結構]******」。
+1. 點選/按一下 AEM 標誌，然後前往&#x200B;**[!UICONTROL 「工具」]**>**[!UICONTROL 「資產」]**>**[!UICONTROL 「資料夾中繼資料結構描述」]**。
 1. 在「資料夾元資料結構表單」頁中，點選／按一下「創 **[!UICONTROL 建」]**。
 1. 指定表單的名稱，然後點選／按一下「建 **[!UICONTROL 立]**」。 新的架構表單列在「架構表單」頁中。
 
@@ -99,27 +102,27 @@ Adobe Experience Manager(AEM)Assets可讓您為資產資料夾建立中繼資料
 
 若要編輯表單項目的屬性，請點選／按一下元件，然後在「設定」標籤中編輯下列屬性的全部或 **[!UICONTROL 子集]** 。
 
-**[!UICONTROL 欄位標籤]**:顯示在資料夾屬性頁面上的元資料屬性的名稱。
+**[!UICONTROL 欄位標籤]**: 顯示在資料夾屬性頁面上的元資料屬性的名稱。
 
-**[!UICONTROL 對應至屬性]**:此屬性指定保存資料夾節點的CRX儲存庫中資料夾節點的相對路徑。 它開頭是&quot;**./**&quot;，表示路徑位於資料夾節點下。
+**[!UICONTROL 對應至屬性]**: 此屬性指定保存資料夾節點的CRX儲存庫中資料夾節點的相對路徑。 它開頭是&quot;**./**&quot;，表示路徑位於資料夾節點下。
 
 以下是此屬性的有效值：
 
-* `./jcr:content/metadata/dc:title`:將值儲存在資料夾的元資料節點中作為屬性 `dc:title`。
+* `./jcr:content/metadata/dc:title`: 將值儲存在資料夾的元資料節點中作為屬性 `dc:title`。
 
-* `./jcr:created`:在資料夾的節點顯示JCR屬性。 如果您在CRXDE中設定這些屬性，Adobe建議您將它們標示為「停用編輯」，因為這些屬性受到保護。 否則，當您儲 `Asset(s) failed to modify`存資產的屬性時，會發生錯誤「」。
+* `./jcr:created`: 儲存資產的建立日期和時間。 它是受保護的屬性。 如果您設定這些屬性，Adobe建議您將其標示為「停 [!UICONTROL 用編輯」]。
 
 要確保元資料架構表單中元件正確顯示，請勿在屬性路徑中包含空格。
 
-**[!UICONTROL JSON路徑]**:使用它來指定JSON檔案的路徑，您可在此指定選項的索引鍵值配對。
+**[!UICONTROL JSON路徑]**: 使用它來指定JSON檔案的路徑，您可在此指定選項的索引鍵值配對。
 
-**[!UICONTROL 預留位置]**:使用此屬性可指定與中繼資料屬性相關的預留位置文字。
+**[!UICONTROL 預留位置]**: 使用此屬性可指定與中繼資料屬性相關的預留位置文字。
 
-**[!UICONTROL 選擇]**:使用此屬性可指定清單中的選擇。
+**[!UICONTROL 選擇]**: 使用此屬性可指定清單中的選擇。
 
-**[!UICONTROL 說明]**:使用此屬性可為中繼資料元件新增簡短說明。
+**[!UICONTROL 說明]**: 使用此屬性可為中繼資料元件新增簡短說明。
 
-**[!UICONTROL 類別]**:屬性與關聯的對象類。
+**[!UICONTROL 類別]**: 屬性與關聯的對象類。
 
 ## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
 
@@ -135,7 +138,7 @@ Adobe Experience Manager(AEM)Assets可讓您為資產資料夾建立中繼資料
 
 ### 從「資料夾元資料方案」頁指定給方案 {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. 點選／按一下AEM標誌，並前往「工具 **[!UICONTROL >資產]** >資料 **[!UICONTROL 夾中繼資料結構]******」。
+1. 點選/按一下 AEM 標誌，然後前往&#x200B;**[!UICONTROL 「工具」]**>**[!UICONTROL 「資產」]**>**[!UICONTROL 「資料夾中繼資料結構描述」]**。
 1. 從「資料夾元資料結構表單」頁中，選擇要應用於資料夾的結構結構表單。
 1. 從工具列點選／按一 **[!UICONTROL 下「套用至資料夾」]**。
 
@@ -144,13 +147,13 @@ Adobe Experience Manager(AEM)Assets可讓您為資產資料夾建立中繼資料
 
    ![folder_properties](assets/folder_properties.png)
 
-   若要檢視資料夾中繼資料欄位，請點選／按一下「資料夾中 **[!UICONTROL 繼資料]** 」標籤。
+   若要檢視資料夾中繼資料欄位，請點選/按一下「資料夾中 **[!UICONTROL 繼資料]** 」標籤。
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
 ### 在建立資料夾時分配方案 {#assign-a-schema-when-creating-a-folder}
 
-建立資料夾時，可以指定資料夾元資料方案。 如果系統中至少存在一個資料夾元資料模式，則「建立資料夾」對話框中將顯 **[!UICONTROL 示一個額外清單]** 。 您可以選擇所需的架構。 預設情況下，未選擇任何模式。
+建立資料夾時，可以指定資料夾元資料方案。 如果系統中至少存在一個資料夾元資料模式，則「建立資料夾」對話框中會顯 **[!UICONTROL 示一個額外清單]** 。 您可以選擇所需的架構。 預設情況下，未選擇任何模式。
 
 1. 從AEM Assets使用者介面，點選／按一下工具列 **[!UICONTROL 中的]** 「建立」。
 1. 指定資料夾的標題和名稱。
@@ -159,11 +162,11 @@ Adobe Experience Manager(AEM)Assets可讓您為資產資料夾建立中繼資料
    ![select_schema](assets/select_schema.png)
 
 1. 開啟您套用中繼資料結構之資料夾的中繼資料屬性。
-1. 若要檢視資料夾中繼資料欄位，請點選／按一下「資料夾中 **[!UICONTROL 繼資料]** 」標籤。
+1. 若要檢視資料夾中繼資料欄位，請點選/按一下「資料夾中 **[!UICONTROL 繼資料]** 」標籤。
 
 ## 使用資料夾中繼資料結構 {#use-the-folder-metadata-schema}
 
-開啟配置了資料夾元資料架構的資料夾的屬性。 「文 **[!UICONTROL 件夾元資料]** 」頁籤顯示在資料夾屬性頁中。 要查看資料夾元資料結構表單，請選擇此頁籤。
+開啟配置了資料夾元資料架構的資料夾的屬性。「文 **[!UICONTROL 件夾元資料]** 」頁籤顯示在資料夾屬性頁中。要查看資料夾元資料結構表單，請選擇此頁籤。
 
 在各種欄位中輸入中繼資料值，並點選／按一下「 **[!UICONTROL 儲存]** 」以儲存值。 您指定的值儲存在CRX儲存庫的資料夾節點中。
 
