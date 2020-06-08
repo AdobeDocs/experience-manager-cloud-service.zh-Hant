@@ -168,7 +168,7 @@ ht-degree: 8%
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
-* **[!UICONTROL URL, Open in]**- You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟該URL。
+* **[!UICONTROL URL, Open in]**- You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟它。
 
    如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
