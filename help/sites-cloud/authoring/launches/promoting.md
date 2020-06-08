@@ -1,13 +1,16 @@
 ---
-title: 促銷啟動
+title: 提升啟動
 description: '發佈前，您需要促銷啟動頁面，將內容移回來源（生產）。 '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 6%
 
 ---
 
 
-# 促銷啟動 {#promoting-launches}
+# 提升啟動 {#promoting-launches}
 
 發佈前，您需要促銷啟動頁面，將內容移回來源（生產）。 升級啟動頁面時，來源頁面的對應頁面會以升級頁面的內容取代。 升級啟動頁面時可使用下列選項：
 
@@ -18,7 +21,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->將啟動頁面提升至目標(**Production**)後，您可以將 **Production** 頁面當做實體來啟動（以加快程式）。 將頁面新增至工作流程套件，並將它當成啟動頁面套件之工作流程的裝載。 您必須先建立工作流程套件，才能升級啟動。 請參 [閱「使用AEM工作流程處理提升頁面」](#processing-promoted-pages-using-aem-workflow)。
+>將啟動頁面提升至目標(**Production**)後，您可以將 **Production** 頁面當做實體來啟動（以加快程式）。 將頁面新增至工作流程套件，並將它當成啟動頁面套件之工作流程的裝載。 您必須先建立工作流程套件，才能升級啟動。 See [Processing Promoted Pages Using AEM Workflow](#processing-promoted-pages-using-aem-workflow).
 
 >[!CAUTION]
 >
@@ -36,6 +39,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >* [在結構中有多個啟動時](#promoting-a-nested-launch) ，提升巢狀啟動。
 >* [啟動——事件順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) ，以取得有關自動促銷和發佈的詳細資訊。
+
 >
 
 
@@ -59,6 +63,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       * **提升已修改頁面**
       * **升級目前頁面**
       * **升級目前頁面與子頁面**
+
       例如，當選擇僅提升修改的頁時：
 
       ![啟動促銷](/help/sites-cloud/authoring/assets/launches-promote.png)
@@ -100,6 +105,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       * **提升已修改頁面**
       * **升級目前頁面**
       * **升級目前頁面與子頁面**
+
    ![提升啟動設定](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
 1. 選擇 **下一步**。
