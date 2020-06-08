@@ -1,13 +1,16 @@
 ---
-title: 將URL連結至您的Web應用程式
+title: 將 URL 連結至您的 Web 應用程式
 description: 如何將URL連結至動態媒體中的Web應用程式
 translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+workflow-type: tm+mt
+source-wordcount: '1270'
+ht-degree: 11%
 
 ---
 
 
-# 將URL連結至您的Web應用程式 {#linking-urls-to-your-web-application}
+# 將 URL 連結至您的 Web 應用程式 {#linking-urls-to-your-web-application}
 
 您的網站和應用程式會透過URL呼叫存取動態媒體服務。 在您發佈資產後，動態媒體會啟動參照資產的URL字串。 您可以將這些URL貼入網頁瀏覽器以進行測試。
 
@@ -19,11 +22,11 @@ source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 >
 >URL字串僅適用於資產的動態轉譯。 它們目前不適用於駐留在DAM中的靜態資產，而非動態媒體伺服器。 URL按鈕不會針對靜態轉譯顯示。
 
-另請參 [閱將視訊或影像檢視器內嵌在網頁上。](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
 
 另請參閱 [將YouTube URL連結至您的Web應用程式。](video.md)
 
-另請參閱 [為自適應網站提供最佳化影像。](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 另請參閱 [上傳資產。](/help/assets/manage-digital-assets.md#uploading-assets)
 
@@ -47,7 +50,7 @@ source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 1. 導覽至您 ** 要複製其影像預設集URL或檢視器預設集URL的已發佈資產，然後點選資產以開啟它。
 
-   請記住，URL僅可在您首次發 *布資產* 後 *複製* 。 此外，檢視器預設集或影像預設集也必須發佈。
+   請記住，URL僅可在您首次發 *布資產* 後 *複製* 。此外，檢視器預設集或影像預設集也必須發佈。
 
    請參閱 [發佈資產。](publishing-dynamicmedia-assets.md)
 
@@ -79,7 +82,7 @@ source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ## 取得靜態資產的URL {#obtaining-a-url-for-a-static-asset}
 
-Dynamic media支援傳送靜態資產，這些資產不只是影像和視訊而已。 支援的靜態資產格式包括：
+Dynamic Media支援傳送靜態資產，這些資產不只是影像和視訊而已。 支援的靜態資產格式包括：
 
 * GIF動畫
 * 音訊檔案
@@ -94,7 +97,7 @@ Dynamic media支援傳送靜態資產，這些資產不只是影像和視訊而�
 
 1. 導覽至您要複製其URL的*plished *static資產，然後點選資產以開啟它。
 
-   請記住，URL只有在您首次發佈 *靜態資產**後才能* 複製。
+   Remember that URLs are only available to copy *after* you have first *published* the static asset.
 
    請參閱 [發佈資產。](publishing-dynamicmedia-assets.md)
 
@@ -104,7 +107,7 @@ Dynamic media支援傳送靜態資產，這些資產不只是影像和視訊而�
 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-         例如， `https://aem.com/is/content/adobe/image.gif`。
+         For example, `https://aem.com/is/content/adobe/image.gif`.
    * 按一 **[!UICONTROL 下「資產>動態轉譯]**」，然後點選靜態資產的動態轉譯並複製URL。
 
       變更複製的URL，以 `is/content` 在路徑中使用 `is/image/`。
@@ -116,13 +119,13 @@ Dynamic media支援傳送靜態資產，這些資產不只是影像和視訊而�
 1. 在「 **[!UICONTROL Cloud Services]** 」頁面上 **[!UICONTROL ，向下捲動至「]** Dynamic Media Cloud Services **[!UICONTROL 」標題，然後點選「]** Show Configurations」。
 1. 在「 **[!UICONTROL 可用配置]**」下，點選所需配置的名稱。
 
-1. 在「動 **[!UICONTROL 態Media cloud設定]** 」頁面的「 **[!UICONTROL 視訊服務URL」下]**，複製整個URL路徑。 您稍後在步驟中將需要複製的URL路徑。
+1. 在「動 **[!UICONTROL 態Media Cloud設定]** 」頁面的「 **[!UICONTROL 視訊服務URL」下]**，複製整個URL路徑。 您稍後在步驟中需要複製的URL路徑。
 
    例如，URL路徑可能與下列內容類似：
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
+   (上述路徑僅供圖例之用； 它不是您複製的實際路徑)。
 
 1. 在「 **[!UICONTROL 註冊ID]**」下方，複製ID最後一部分中找到的客戶名稱。
 
@@ -135,7 +138,7 @@ Dynamic media支援傳送靜態資產，這些資產不只是影像和視訊而�
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
+   (上述路徑僅供圖例之用； 它不是您複製的實際路徑)。
 
 1. 依下列順序排列複製的資訊，以形成完整的URL路徑：
 
@@ -147,7 +150,7 @@ Dynamic media支援傳送靜態資產，這些資產不只是影像和視訊而�
 
    這是已發佈視訊轉譯的完整視訊URL。
 
-## 取得適應性串流(HLS)的視訊URL {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## 取得最適化串流(HLS)的視訊URL {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. 在AEM中，導覽至「工 **[!UICONTROL 具>部署>雲端>雲端服務」]**。
 1. 在「 **[!UICONTROL Cloud Services]** 」頁面上 **[!UICONTROL ，向下捲動至「]** Dynamic Media Cloud Services **[!UICONTROL 」標題，然後點選「]** Show Configurations」。
@@ -157,9 +160,9 @@ Dynamic media支援傳送靜態資產，這些資產不只是影像和視訊而�
    * 在「 **[!UICONTROL 視訊服務URL]**」下，複製整個URL路徑。 您稍後在這些步驟中將需要複製的URL路徑。 例如，URL路徑可能與下列內容類似：
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
+   (上述路徑僅供圖例之用； 它不是您複製的實際路徑)。
 
-   * 在「 **[!UICONTROL 註冊ID]**」下方，複製ID最後一部分中找到的客戶名稱。 您稍後將需要這些步驟中複製的客戶名稱。
+   * 在「 **[!UICONTROL 註冊ID]**」下方，複製ID最後一部分中找到的客戶名稱。您稍後將需要這些步驟中複製的客戶名稱。
 
       例如，如果註冊ID是 `87654321|demoCo`您複製的客戶名稱 `demoCo`。
 
