@@ -4,6 +4,9 @@ description: AEM Assets會以非同步方式完成一些耗資龐大的工作，
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '677'
+ht-degree: 9%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 非同步處理包括將多個作業入隊並最終以串列方式運行這些作業（取決於系統資源的可用性）。
 
-您可以從「非同步作業狀態」頁面查看非同步 **[!UICONTROL 作業的狀態]** 。
+您可以從「非同步作業狀態」頁面查看非 **[!UICONTROL 同步作業的狀態]** 。
 
 >[!NOTE]
 >
@@ -40,13 +43,13 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
    要確定特定操作的進度，請參閱「狀態」( **[!UICONTROL Status]** )列中的值。 視進度而定，會顯示下列狀態之一：
 
-   **[!UICONTROL 活動]**:正在處理操作
+   **[!UICONTROL 活動]**: 正在處理操作
 
-   **[!UICONTROL 成功]**:操作完成
+   **[!UICONTROL 成功]**: 操作完成
 
    **[!UICONTROL 失敗]** 或 **[!UICONTROL 錯誤]**:無法處理操作
 
-   **[!UICONTROL 已排程]**:該操作已排程以便稍後處理
+   **[!UICONTROL 已排程]**: 該操作已排程以便稍後處理
 
 1. 要停止活動操作，請從清單中選擇該操作，然後從工具欄中點選／單 **[!UICONTROL 擊]** 「停止」表徵圖。
 
@@ -77,7 +80,7 @@ AEM Assets每天在上午1:00執行清除工作，以刪除已完成的超過一
 1. 指定刪除已完成作業的閾值天數，以及保留歷史記錄中詳細資料的作業的最大天數。
 
    ![用於調度非同步作業清除的配置](assets/configmgr_purge_asyncjobs.png)
-   *圖：用於調度非同步作業清除的配置*
+   *圖： 用於調度非同步作業清除的配置*
 
 1. 儲存變更。
 
