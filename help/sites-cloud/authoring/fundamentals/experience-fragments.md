@@ -1,15 +1,18 @@
 ---
 title: 體驗片段
-description: 使用Adobe Experience manager做為雲端服務體驗片段，讓您的體驗可重複使用並具有彈性。
+description: 使用Adobe Experience Manager做為雲端服務體驗片段，讓您的體驗可重複使用並具有彈性。
 translation-type: tm+mt
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+workflow-type: tm+mt
+source-wordcount: '1492'
+ht-degree: 9%
 
 ---
 
 
 # 體驗片段 {#experience-fragments}
 
-在Adobe Experience manager中，Adobe Experience manager是雲端服務，是體驗片段：
+在Adobe Experience Manager中，Adobe Experience Manager是雲端服務，是體驗片段：
 * 是一組或多個元件
 * 包含內容和版面
 * 可在頁面中參考
@@ -54,7 +57,7 @@ source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
    * 將內容內嵌至協力廠商觸點。
 * 如果您有「體驗」，但有不同的變化或轉譯。
    * 頻道或內容特定變化。
-   * 對群體有意義的體驗；例如，跨通道具有不同體驗的促銷活動。
+   * 對群體有意義的體驗； 例如，跨通道具有不同體驗的促銷活動。
 * 當您使用全通道商務時。
    * 在社交媒體頻道上大 [規模分享](/help/implementing/developing/extending/experience-fragments.md#social-variations) 與商務相關的內容。
    * 讓觸點成為交易型。
@@ -68,7 +71,7 @@ source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
 
 建立資料夾允許您：
 
-* 為您的體驗片段建立有意義的結構；例如，根據分類
+* 為您的體驗片段建立有意義的結構； 例如，根據分類
 
    >[!NOTE]
    >
@@ -124,7 +127,7 @@ WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構
    >
    >如需詳 [細資訊，請參閱體驗片段](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments) 「範本」。
 
-1. 選擇 **保存並關閉**。
+1. Select **Save and Close**.
 
 ### 為實例配置允許的模板 {#configure-allowed-templates-instance}
 
@@ -172,11 +175,11 @@ WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構
 
 1. 輸入 **體驗****片段的屬性**。
 
-   「標 **題** 」為強制。 如果名 **稱** (Name)留空，則會從標題( **Title)中衍生出來**。
+   標 **題** 是必填的。 如果名 **稱** (Name)留空，則會從標題( **Title)中衍生出來**。
 
    ![體驗片段屬性](/help/sites-cloud/authoring/assets/xf-04.png)
 
-1. 按一下&#x200B;**「建立」**。
+1. 按一下&#x200B;**建立**。
 
    將顯示一條消息。 選取:
 
@@ -201,7 +204,7 @@ WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構
 
 1. 視需要新增更多元件。
 
-例如： `http://<host>:<port>/editor.html/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master.html`
+For example: `http://<host>:<port>/editor.html/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master.html`
 
 ![頁面上的體驗片段](/help/sites-cloud/authoring/assets/xf-05.png)
 
@@ -216,7 +219,7 @@ WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構
 
 1. **Create** （建立）允許您建立：
 
-   * **變數**
+   * **變異**
    * **變數為 live-copy**.
 
 1. 定義所需屬性：
@@ -226,6 +229,7 @@ WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構
    * **名稱** -如果保留空白，則會從「標題」衍生
    * **說明**
    * **變數標記**
+
    例如：
 
    ![變數屬性](/help/sites-cloud/authoring/assets/xf-07.png)
@@ -240,15 +244,16 @@ WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構
 
 1. 在頁面段落系統中建立體驗片段元件的例項：
 
-1. 將實際的體驗片段新增至元件例項；其中：
+1. 將實際的體驗片段新增至元件例項； 其中：
 
    * 從「資產瀏覽器」拖曳必要片段至元件。
-   * 從組 **件工具欄** ，選擇「配置」並指定要使用的片段，使用「完成」 **進行確認**。
+   * Select **Configure** from the component toolbar and specify the fragment to use, confirm with **Done**.
+
    >[!NOTE]
    >
    >在元件工具列中，編輯會以捷徑方式在片段編輯器中開啟片段。
 
-例如： `http://<host>:<port>/editor.html/content/wknd/language-masters/en/about-us.html`
+For example: `http://<host>:<port>/editor.html/content/wknd/language-masters/en/about-us.html`
 
 ![頁面編輯器中的體驗片段](/help/sites-cloud/authoring/assets/xf-08.png)
 
