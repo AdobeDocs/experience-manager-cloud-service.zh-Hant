@@ -3,6 +3,9 @@ title: 建立和組織頁面
 description: 如何使用AEM建立和組織頁面
 translation-type: tm+mt
 source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
+workflow-type: tm+mt
+source-wordcount: '2357'
+ht-degree: 7%
 
 ---
 
@@ -183,6 +186,7 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
    * 選取您要用來建立新頁面的範本，然後按一下／點選「下 **一步** 」繼續。
 
    * **取消** ，中止進程。
+
    ![為新頁面選擇模板](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
 1. 從精靈的最後階段，您可以：
@@ -190,6 +194,7 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
    * 使用三個標籤輸入要指 [派給新頁面的頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md) ，然後按一下／點選「 **Create** 」（建立）以實際建立頁面。
 
    * 使用 **「上** 一步」返回範本選擇。
+
    主要欄位包括：
 
    * **標題**:
@@ -200,6 +205,7 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
       * 這用於生成URI。 如果未指定，則名稱是從標題衍生而來。
       * 如果您在建立新頁面時 **提供頁面名稱** ,AEM會根據AEM和JCR所強加的慣例來驗證名稱。 <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
       * 您無 **法在「名稱** 」欄位中提 **交無效字元** 。 當AEM偵測到無效字元時，欄位會反白顯示，並顯示說明訊息，指出需要移除／取代的字元。
+
    >[!TIP]
    >
    >請參 [閱頁面命名慣例](#page-naming-conventions)。
@@ -234,6 +240,7 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
 
    * [快速動作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) 和工具欄
+
    然後選取「編 **輯** 」圖示：
 
    ![編輯按鈕](/help/sites-cloud/authoring/assets/edit.png)
@@ -253,6 +260,7 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
 
    * [快速動作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) 和工具欄
+
    接著是「復 **制** 」頁面圖示：
 
    ![複製](/help/sites-cloud/authoring/assets/copy.png)
@@ -268,8 +276,9 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
 
    您可以:
 
-   1. 選擇「 **貼上** 」頁面圖示本身：將在此位置建立原始頁面和任何子頁面的副本。
-   1. 選擇下拉箭頭以顯示「不含子 **代的貼上** 」選項。 原始頁面的復本將在此位置建立；子頁面將不會複製。
+   1. 選擇「 **貼上** 」頁面圖示本身： 將在此位置建立原始頁面和任何子頁面的副本。
+   1. 選擇下拉箭頭以顯示「不含子 **代的貼上** 」選項。 原始頁面的復本將在此位置建立； 子頁面將不會複製。
+
    >[!NOTE]
    >
    >如果將頁面複製到與原始頁面同名的頁面已存在的位置，系統會通過附加數字自動生成名稱的變化。 例如，如 `beach` 果已存在名稱為的新頁 `beach` 面將變 `beach1`為。
@@ -289,6 +298,7 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
 
    * [快速動作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) 和工具欄
+
    然後選取「移 **動頁** 」圖示：
 
    ![移動按鈕](/help/sites-cloud/authoring/assets/move.png)
@@ -299,6 +309,7 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
 
    * Specify the name you want the page to have after it is moved, then click/tap **Next** to proceed.
    * **取消** ，中止進程。
+
    ![移動和重新命名頁面](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
    如果您只移動頁面，頁面名稱可維持不變。
@@ -314,6 +325,7 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
       * 按一下目標的縮略圖，選擇目標。
       * 按一 **下** 「下一步」繼續。
    * 使用 **上一步** ，返回頁面名稱規範。
+
    >[!NOTE]
    >
    >依預設，您要移動／重新命名的頁面的父項會被選取為目標。
