@@ -49,7 +49,7 @@ Production and Stage是雙核產品，用於測試和生產用途。
    ![](assets/no-environments.png)
 
    >[!NOTE]
-   >「添 **加環境** 」選項將基於缺少權限或可能簽訂的合同而禁用。
+   >「 **新增環境** 」選項將會因為缺乏權限或可能已簽約而停用。
 
 1. 出現「 **Add environment** 」(添加環境 **)對話框。用戶需要提交諸如「Environment type** 」 (環境類型) 和「 **Environment name** 」 (環境名稱) 和「 **** Environment description」 (環境描述) 等詳細資訊 (取決於用戶在特定租用戶可用內容範圍內建立環境的目標)。
 
@@ -97,7 +97,7 @@ Adobe會自動管理Stage和生產環境的更新。
 
 ## 存取Developer Console {#accessing-developer-console}
 
-從「 **Environments Card** 」（環境資訊卡）的下拉式選單選 **取「Developer Console** 」。 這會在您的瀏覽器中開啟一個新標籤，其中會顯示 **Developer Console的登入頁面**。
+從「 **環境卡** 」的下拉式選單中選 **取「Developer Console** 」。 這會在您的瀏覽器中開啟一個新標籤，其中會顯示 **Developer Console的登入頁面**。
 
 只有「開發人員」角色的使用者才能存取 **Developer Console**。 「沙盒程式」例外，凡有權存取「雲端管理員沙盒程式」的使用者，皆可存取「開發人 **員主控台」**。
 
