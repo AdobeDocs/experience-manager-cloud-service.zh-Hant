@@ -107,7 +107,7 @@ ht-degree: 6%
 
 ## 為新上傳的資產啟用智慧標籤（可選） {#enable-smart-tagging-for-uploaded-assets}
 
-1. 在中， [!DNL Experience Manager]轉至「工 **[!UICONTROL 具」>「工作流」>「模型」]**。
+1. 在中， [!DNL Experience Manager]請轉至「工 **[!UICONTROL 具」>「工作流」>「模型」]**。
 1. 在「工 **[!UICONTROL 作流模型]** 」頁面上，選擇 **** 「DAM更新資產」工作流模型。
 1. 從工具 **[!UICONTROL 列按一下]** 「編輯」。
 1. 展開「側面板」以顯示步驟。拖 **[!UICONTROL 曳DAM Workflow]**  (DAM工作流程) 區段中可用的智慧型標籤資產步驟，並將其置於「處理縮 **[!UICONTROL 圖」步驟之後]** 。
