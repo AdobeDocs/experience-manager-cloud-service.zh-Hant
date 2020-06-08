@@ -1,8 +1,11 @@
 ---
 title: 實作 Adobe Experience Manager 雲端服務
 description: Adobe Experience Manager 雲端服務實作自助資源與文件連結
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 100%
 
 ---
 
@@ -40,6 +43,6 @@ source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
 * [核心元件文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager 文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GDPR 整備](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager 雲端服務教學課程](https://docs.adobe.com/content/help/zh-Hant/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager 雲端服務教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社群論壇](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
