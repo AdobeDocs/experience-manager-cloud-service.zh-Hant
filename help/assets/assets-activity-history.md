@@ -4,13 +4,16 @@ description: 本文說明如何在時間軸上顯示資產的活動記錄檔。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 40%
 
 ---
 
 
 # 在活動串流中檢視資產作業記錄檔 {#activity-stream-in-timeline}
 
-此功能會顯示時間軸上資產的活動記錄。 如果您在Adobe Experience Manager(AEM)Assets中執行下列任何資產相關作業，「活動串流」功能會更新時間軸以反映活動。
+此功能會在時間軸上顯示資產的活動記錄。 如果您在Adobe Experience Manager(AEM)Assets中執行下列任何資產相關作業，「活動串流」功能會更新時間軸以反映活動。
 
 活動流中記錄了以下操作：
 
@@ -23,7 +26,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 * 拒絕
 * 移動
 
-將從儲存日誌檔案的CRX位置提取要在時 `/var/audit/com.day.cq.dam/content/dam` 間軸中顯示的活動日誌。  此外，當上傳新資產或修改現有資產並透過 [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [AEM案頭應用程式簽入AEM時，會記錄時間軸活動](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)。
+將從儲存日誌檔案的CRX位置提取要在時 `/var/audit/com.day.cq.dam/content/dam` 間軸中顯示的活動日誌。此外，當上傳新資產或修改現有資產並透過 [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [AEM案頭應用程式簽入AEM時，會記錄時間軸活動](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/release-notes.html)。
 
 >[!NOTE]
 >
@@ -39,4 +42,4 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 >[!NOTE]
 >
->「發佈」和「取消發佈」任 **[!UICONTROL 務的預設日]** 志存 **[!UICONTROL 儲位置為]**`/var/audit/com.day.cq.replication/content`。 對於 **[!UICONTROL 移動]** ，預設位置為 `/var/audit/com.day.cq.wcm.core.page`。
+>「發佈」和「取消發佈」任 **[!UICONTROL 務的預設日]** 志存 **[!UICONTROL 儲位置為]**`/var/audit/com.day.cq.replication/content`。對於 **[!UICONTROL 移動]** ，預設位置為 `/var/audit/com.day.cq.wcm.core.page`。
