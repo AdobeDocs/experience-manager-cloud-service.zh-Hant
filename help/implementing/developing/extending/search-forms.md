@@ -3,6 +3,9 @@ title: 設定搜尋表單
 description: 將Search Forms for Adobe Experience Manager設定為雲端服務。
 translation-type: tm+mt
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
+workflow-type: tm+mt
+source-wordcount: '2030'
+ht-degree: 15%
 
 ---
 
@@ -529,7 +532,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 * **屬性值**
 
-   屬性值是絕對字串或運算式語言；例如， `cq:Page` 或
+   屬性值是絕對字串或運算式語言； 例如， `cq:Page` 或
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
 
@@ -546,171 +549,173 @@ Dependent on the predicate a selection of settings are available for configurati
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **Options node path**（選項節點路徑）與 **** Options Path（選項路徑）有效相同，僅此欄位位於公用謂語欄位中，而另一個欄位則特定於資產。
-
-* **單選選**&#x200B;項如果選中，選項將顯示為僅允許單選項的複選框。 如果錯誤選取，則可取消選取核取方塊。
+**單選選**&#x200B;項如果選中，選項將顯示為僅允許單選項的複選框。 如果錯誤選取，則可取消選取核取方塊。
 
 * **Publish和Live Copy屬性名稱Sites**&#x200B;特定述詞的publish和live copy核取方塊標籤。
 
-* &amp;ast;在「設定」標籤的欄 **位標籤上** ，表示欄位是必填欄位，如果留空，則會顯示錯誤訊息。
+* &amp;ast; 在「設定」標籤的欄 **位標籤上** ，表示欄位是必填欄位，如果留空，則會顯示錯誤訊息。
 
-## 設定搜尋表單 {#configuring-your-search-forms}
+* 設定搜尋表單 {#configuring-your-search-forms}**
 
-### 建立／開啟自定義配置 {#creating-opening-a-customized-configuration}
+## 建立／開啟自定義配置 {#creating-opening-a-customized-configuration}
 
-1. 導覽至「 **工具**」、「 **一般**」、「 **搜尋表格**」。
+### 導覽至「 **工具**」、「 **一般**」、「 **搜尋表格**」。
 
-1. 選擇要定製的配置。
+1. 選擇要定製的配置。************
+
 1. 使用「編 **輯** 」表徵圖開啟要更新的配置。
 1. 如果有新的自訂，您可能想要新 [增謂詞欄位，並視需要定義](#add-edit-a-predicate-field-and-define-field-settings) 設定。 如果現有自訂，您可以選取現有欄位並 [更新設定](#add-edit-a-predicate-field-and-define-field-settings)。
-1. 選擇「 **完成** 」以保存配置。 您的變更可在下次使用設定時看到。
+1. 選擇「 **完成** 」以保存配置。 您的變更可在下次使用設定時看到。[](#add-edit-a-predicate-field-and-define-field-settings)
+1. [!NOTE]**
 
-   >[!NOTE]
+   >[!NOTE]自定義的配置儲存在（如果適用）以下位置：
    >
-   >自定義的配置儲存在（如果適用）以下位置：
+   >`/apps/cq/gui/content/facets/<option>`
    >
-   >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
+   >* 添加／編輯謂詞欄位和定義欄位設定 {#add-edit-a-predicate-field-and-define-field-settings}
 
 
-### 添加／編輯謂詞欄位和定義欄位設定 {#add-edit-a-predicate-field-and-define-field-settings}
+### 您可以新增或編輯欄位，並定義／更新其設定：{#add-edit-a-predicate-field-and-define-field-settings}
 
-您可以新增或編輯欄位，並定義／更新其設定：
+[開啟自訂的設定](#creating-opening-a-customized-configuration) ，以進行更新。
 
-1. [開啟自訂的設定](#creating-opening-a-customized-configuration) ，以進行更新。
 1. 如果要添加新欄位，請開啟「選 **擇謂詞** 」頁籤，並將所需的謂詞拖動到所需位置。 例如，日 **期範圍謂語**:
+1. ![添加謂語](assets/csf-add-predicate.png)****
 
-   ![添加謂語](assets/csf-add-predicate.png)
+   ![取決於：](assets/csf-add-predicate.png)
 
-1. 取決於：
+1. 您正在添加新欄位：
 
-   * 您正在添加新欄位：
+   * 添加謂詞後，「 **設定** 」頁籤將開啟並顯示可定義的屬性。
 
-      添加謂詞後，「 **設定** 」頁籤將開啟並顯示可定義的屬性。
+      要更新現有謂詞：****
 
-   * 要更新現有謂詞：
+   * 選擇謂詞欄位（在右側），然後開啟「設 **置** 」頁籤。
 
-      選擇謂詞欄位（在右側），然後開啟「設 **置** 」頁籤。
-   例如，「日期範圍謂詞」 **的設定**:
-
+      例如，「日期範圍謂詞」 **的設定**:
    ![修改謂語](assets/csf-modify-predicate.png)
 
-1. 視需要進行變更，然後使用「完成」 **確認**。 您的變更可在下次使用設定時看到。
+   視需要進行變更，然後使用「完成」 **確認**。 您的變更可在下次使用設定時看到。
 
-### 預覽搜尋設定 {#previewing-the-search-configuration}
+1. 預覽搜尋設定 {#previewing-the-search-configuration}**
 
-1. 選取「預覽」圖示：
+### 選取「預覽」圖示：{#previewing-the-search-configuration}
 
-   ![預覽圖示](assets/csf-preview-icon.png)
+1. ![預覽圖示](assets/csf-preview-icon.png)
 
-1. 這會顯示搜尋表單，如同在適當主控台的「搜尋」欄中顯示（完全展開）。
+   ![這會顯示搜尋表單，如同在適當主控台的「搜尋」欄中顯示（完全展開）。](assets/csf-preview-icon.png)
 
-   ![預覽表格](assets/csf-preview-form.png)
+1. ![預覽表格](assets/csf-preview-form.png)
 
-1. **關閉** 「預覽」以返回並完成配置。
+   **關閉** 「預覽」以返回並完成配置。
 
-### 刪除謂詞欄位 {#deleting-a-predicate-field}
+1. 刪除謂詞欄位 {#deleting-a-predicate-field}**
 
-1. [開啟自訂的設定](#creating-opening-a-customized-configuration) ，以進行更新。
+### [開啟自訂的設定](#creating-opening-a-customized-configuration) ，以進行更新。
+
 1. 選擇謂詞欄位（在右側），開啟「 **Settings** （設定）」頁籤，然後選擇「 **Delete** （刪除）」表徵圖（左下）。
+1. ![刪除圖示](assets/csf-delete-icon.png)****
 
-   ![刪除圖示](assets/csf-delete-icon.png)
-
-1. 對話方塊會要求確認刪除動作。
+   ![對話方塊會要求確認刪除動作。](assets/csf-delete-icon.png)
 
 1. 使用「完成」確認此變更和任何其 **他變更**。
 
-### 刪除配置（以恢復預設值） {#deleting-a-configuration-to-reinstate-the-default}
+1. 刪除配置（以恢復預設值） {#deleting-a-configuration-to-reinstate-the-default}**
 
-在您自訂設定後，這將覆寫預設值。 您可以刪除自訂的設定，重新設定預設的設定。
+### 在您自訂設定後，這將覆寫預設值。 您可以刪除自訂的設定，重新設定預設的設定。{#deleting-a-configuration-to-reinstate-the-default}
 
->[!NOTE]
+[!NOTE]
+
+>[!NOTE]不能刪除預設配置。
 >
->不能刪除預設配置。
+>從控制台刪除自定義配置：
 
-從控制台刪除自定義配置：
+選擇所需的配置(例如，頁 **面編輯器（段落搜尋）**)，然後在工具列中選 **** 擇刪除圖示：
 
-1. 選擇所需的配置(例如，頁 **面編輯器（段落搜尋）**)，然後在工具列中選 **** 擇刪除圖示：
+1. ![恢復預設值](assets/csf-restore-default.png)****
 
-   ![恢復預設值](assets/csf-restore-default.png)
+   ![將刪除自定義配置並恢復預設配置（這由控制台中重新出現掛鎖符號表示）。](assets/csf-restore-default.png)
 
-1. 將刪除自定義配置並恢復預設配置（這由控制台中重新出現掛鎖符號表示）。
+1. 添加選項謂語 {#adding-options-predicates}
 
-### 添加選項謂語 {#adding-options-predicates}
-
-選項謂語（選項、選項屬性）可讓您設定要搜尋的項目。 通常用來搜尋頁面下方的內容；例如，頁面節點上的屬性。
+### 選項謂語（選項、選項屬性）可讓您設定要搜尋的項目。 通常用來搜尋頁面下方的內容； 例如，頁面節點上的屬性。{#adding-options-predicates}
 
 下列範例（根據用於建立頁面的範本進行搜尋）說明相關步驟：
 
-1. 建立定義要搜索的屬性的節點。
+建立定義要搜索的屬性的節點。
 
-   您需要一個根節點，其中包含用戶可以使用的各個選項的定義。
+1. 您需要一個根節點，其中包含用戶可以使用的各個選項的定義。
 
    各個選項的節點需要以下屬性：
 
-   * `jcr:title` -要在搜索邊欄中顯示的欄位標籤
-   * `value` -要搜索的屬性值
-   ![謂詞定義](assets/csf-options-predicate-01.png)
+   `jcr:title` -要在搜索邊欄中顯示的欄位標籤
 
-   >[!NOTE]
-   >
+   * `value` -要搜索的屬性值
+   * ![謂詞定義](assets/csf-options-predicate-01.png)
+
+   [!NOTE]](assets/csf-options-predicate-01.png)
+
    >您 ***不得*** 更改路徑中的任 `/libs` 何內容。
    >
-   >這是因為下次升級 `/libs` 實例時會覆寫的內容（套用修補程式或功能套件時可能會覆寫）。
+   >這是因為下次升級 `/libs` 實例時會覆寫的內容（套用修補程式或功能套件時可能會覆寫）。***`/libs`
    >
-   >配置和其他更改的建議方法為：
+   >配置和其他更改的建議方法為：`/libs`
    >
-   >1. 重新建立所需項目，如其中 `/libs`所存在 `/apps`。 在本例中，來源為：
-   >1. `/libs/cq/gui/content/common/options/predicates`
+   >重新建立所需項目，如其中 `/libs`所存在 `/apps`。 在本例中，來源為：
+   >
+   >1. `/libs/cq/gui/content/common/options/predicates``/apps`
    >1. 在 `/apps.`
+   >1. 開啟「 **搜尋表單** 」主控台，並選取您要更新的組態。 例如，「網 **站管理搜尋邊欄」**。 然後選擇 **編輯**。
 
 
-1. 開啟「 **搜尋表單** 」主控台，並選取您要更新的組態。 例如，「網 **站管理搜尋邊欄」**。 然後選擇 **編輯**。
+1. 視配置而定，將「選 **項** 」 **或「選項屬性** 」添加到配置。****
 
-1. 視配置而定，將「選 **項** 」 **或「選項屬性** 」添加到配置。
-1. 更新欄位，尤其是：
+1. 更新欄位，尤其是：********
+1. **屬性名稱**
 
-   * **屬性名稱**
-
-      在目標節點上指定要搜索的節點屬性。 例如：
+   * **在目標節點上指定要搜索的節點屬性。 例如：**
 
       `jcr:content/cq:template`
 
-   * **選項節點路徑**
+      **選項節點路徑**
 
-      選取您的選項所在的路徑。 例如：
+   * **選取您的選項所在的路徑。 例如：**
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-   ![選項謂語](assets/csf-options-predicate-02.png)
 
-1. 選擇 **完成** ，保存配置。
+      ![選項謂語](assets/csf-options-predicate-02.png)
+   選擇 **完成** ，保存配置。
+
 1. 導覽至適當的主控台(在此範例中 **為Sites**)，並開啟 **「搜尋——篩選」邊欄** 。 新定義的搜尋表單以及各種選項將會顯示。 選擇所需選項以查看搜索結果。
+1. ![使用的選項](assets/csf-options-usage.png)****
 
-   ![使用的選項](assets/csf-options-usage.png)
+   使用者權限 {#user-permissions}](assets/csf-options-usage.png)
 
 
-## 使用者權限 {#user-permissions}
+## 下表列出在搜尋表單上執行編輯、刪除和預覽動作所需的權限。{#user-permissions}
 
-下表列出在搜尋表單上執行編輯、刪除和預覽動作所需的權限。
+
 
 <table>
  <thead>
   <tr>
-   <td><strong>動作</strong></td>
-   <td><strong>權限</strong></td>
+   </td>
+   </td>
   </tr>
  </thead>
  <tbody>
   <tr>
-   <td>編輯 </td>
-   <td>讀取、寫入節點 <code>/apps </code>權限。</td>
+   </td>
+   </td>
   </tr>
   <tr>
-   <td>刪除</td>
-   <td>節點上的讀取、寫入、刪除權 <code>/apps</code> 限</td>
+   </td>
+   </td>
   </tr>
   <tr>
-   <td>預覽</td>
-   <td>讀取、寫入、刪除節點上的權 <code>/var/dam/content</code> 限。<br /> 讀取、寫入節點的 <code>/apps</code> 權限。</td>
+   </td>
+   <td>Read, Write, Delete permissions on the <code>/var/dam/content</code> node.<br /> Read, Write permissions on the <code>/apps</code> node.</td>
   </tr>
  </tbody>
 </table>
