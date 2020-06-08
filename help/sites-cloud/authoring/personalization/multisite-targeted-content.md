@@ -3,6 +3,9 @@ title: 在多個網站中使用目標內容
 description: 如果您需要管理目標內容，例如網站間的活動、體驗和優惠，您可以運用AEM針對目標內容的內建多網站支援
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2900'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 若要設定網站分享個人化內容的方式，您必須執行下列步驟：
 
-1. [建立新區域](#creating-new-areas) , [或建立新區域做為即時副本](#creating-new-areas)。 區域包括頁面區域可用的所 *有活* 動；即，元件所在頁面上的位置。 建立新區域會建立空白區域，而建立新區域作為即時副本可讓您跨網站結構繼承內容。
+1. [建立新區域](#creating-new-areas) , [或建立新區域做為即時副本](#creating-new-areas)。 區域包括頁面區域可用的所 *有活* 動； 即，元件所在頁面上的位置。 建立新區域會建立空白區域，而建立新區域作為即時副本可讓您跨網站結構繼承內容。
 
 1. [將您的網站或頁面連結](#linking-sites-to-an-area) 至某個區域。
 
@@ -49,13 +52,14 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >* 當您使用推出或即時復本時，需要MSM授權。
 >* 當您使用同步至Adobe Target時，需要Adobe Target授權。
+
 >
 
 
 
 ## 使用案例 {#use-cases}
 
-您可以根據使用案例，以多種方式設定目標內容的多網站支援。 本節將說明在理論上如何搭配一個品牌運作。 此外，在范 [例中：依據地理位置定位內容](#example-targeting-content-based-on-geography)，您可以看到在多個網站中定位內容的實際應用程式。
+您可以根據使用案例，以多種方式設定目標內容的多網站支援。 本節將說明在理論上如何搭配一個品牌運作。 此外，在范 [例中： 依據地理位置定位內容](#example-targeting-content-based-on-geography)，您可以看到在多個網站中定位內容的實際應用程式。
 
 目標內容會包住所謂的區域，以定義網站或頁面的範圍。 這些區域是在品牌層級定義的。 一個品牌可以包含多個區域。 品牌間的區域可以不同。 雖然一個品牌可能只包含主要區域，因此可以跨所有品牌共用，但另一個品牌可能包含多個品牌（例如，依地區區分）。 因此，品牌不需要鏡像它們之間的區域集。
 
@@ -64,7 +68,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * 一組完 *全不同* 的目標內容——在其中一個中編輯目標內容不會影響另一個。 連結至不同區域的網站會讀取和寫入至其自己設定的區域。 例如：
    * 網站A連結至區域X
    * 網站B連結至區域Y
-* 一 *組共用* 、定位的內容——其中一組編輯對兩個網站都有直接影響；您可以讓兩個網站參照相同區域來設定此設定。 連結至相同區域的網站會共用此區域內的目標內容。 例如：
+* 一 *組共用* 、定位的內容——其中一組編輯對兩個網站都有直接影響； 您可以讓兩個網站參照相同區域來設定此設定。 連結至相同區域的網站會共用此區域內的目標內容。 例如：
    * 網站A連結至區域X
    * 網站B連結至區域X
 * 透過MSM從其他網站繼 *承* 的一組明確的目標內容——內容可從主版到即時副本單向推出。 例如：
@@ -77,9 +81,9 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->如需此功能的詳細技術資訊，請參 [閱定位內容的多網站管理結構](/help/sites-cloud/authoring/personalization/multisite-structure.md)。
+>如需此功能的詳細技術資訊，請參閱「目標內 [容的多網站管理如何結構化](/help/sites-cloud/authoring/personalization/multisite-structure.md)」。
 
-## 範例：根據地理位置定位內容 {#example-targeting-content-based-on-geography}
+## 範例： 根據地理位置定位內容 {#example-targeting-content-based-on-geography}
 
 針對目標內容使用多網站可讓您分享、推展或隔離個人化內容。 為了更好地說明如何使用此功能，請考慮您想要根據地理位置控制如何推展定位內容的藍本，如下列藍本：
 
@@ -98,7 +102,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ![多網站圖表](/help/sites-cloud/authoring/assets/multisite-diagram.png)
 
-在北半球，我們創造了一個冬季活動，但在男性觀眾中，北美的行銷人員希望冬季有不同的形象，所以他／她在美國網站做了修改。
+在北半球，我們創造了一個冬季活動，但在男性觀眾中，北美的行銷人員希望冬季有不同的影像，所以他／她在美國網站做了修改。
 
 ![美國版](/help/sites-cloud/authoring/assets/multisite-us.png)
 
@@ -106,7 +110,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ![變更版本](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-行銷人員想要將這些變更推展至歐洲地區，並點選或按一下「展出頁面」來推展即時 **文案**。 重新整理索引標籤後，大不列顛網站會有新的影像，因為歐洲區會繼承主區域（在推出後）。 <!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
+行銷人員想要將這些變更推展至歐洲地區，並點選或按一下「展示頁面」以展示即時 **文案**。 重新整理索引標籤後，大不列顛網站會有新的影像，因為歐洲區會繼承主區域（在推出後）。 <!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
 
 ![轉出即時副本](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
@@ -147,7 +151,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->當您點選或按一下品牌名稱，直到您建立其他區域為止，預設會收合名為「主版區域」 **的** 「預設區域」。 然後，當您在「活動」或「選件」控制台中選 **取品牌** 時，您會看到「 **區域****** 」控制台。
+>當您點選或按一下品牌名稱，直到您建立其他區域為止，預設會收合名為「主版區域」 **的** 「預設區域」。然後，當您在「活動」或「選件」控制台中選 **取品牌** 時，您會看到「 **區域****** 」控制台。
 
 要建立新區域：
 
@@ -168,7 +172,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 您可以將區域建立為即時副本，以便跨網站結構繼承目標內容。
 
-要將區域建立為活動副本：
+要將區域建立為livecopy，請執行以下操作：
 
 1. 導覽至「 **個人化** >活動 **** 」或「 **選件** 」，然後導覽至您的品牌。
 1. 點選或按一 **下「建立區域為即時副本」**。
@@ -179,7 +183,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    ![建立即時副本](/help/sites-cloud/authoring/assets/multisite-livecopy.png)
 
-1. 在「名 **稱** 」欄位中，輸入即時副本的名稱。 依預設，會包含子頁面；選中「排除子頁 **面」核取方塊** ，以排除它們。
+1. 在「名 **稱** 」欄位中，輸入即時副本的名稱。依預設，會包含子頁面；選中「排除子頁 **面」核取方塊** ，以排除它們。
 
    ![建立即時副本](/help/sites-cloud/authoring/assets/multisite-create-livecopy.png)
 
@@ -236,6 +240,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >* 您只能暫停或分離活動中的即時副本。
 >* 您不需要暫停或分離即時副本來擴充繼承的活動。 您隨時都可以為 **該活動** ，建立新的本機體驗和選件。 如果要修改現有活動，則需要暫停繼承。
+
 >
 
 
@@ -249,7 +254,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 若要暫停活動，請執行下列其中一項作業：
 
    1. 選取活動的元素，例如對象。 AEM會自動顯示「暫停即時副本」確認方塊。 （您可以在整個「定位」程式中點選或按一下任何元素，暫停即時副本。）
-   1. 從工 **具列的下拉式選單選取** 「暫停即時副本」。
+   1. Select **Suspend Live Copy** from the drop-down menu in the toolbar.
+
    ![暫停即時副本](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
 1. 點選或按一 **下「暫停** 」以暫停活動。 暫停的活動會以紅色標示。
@@ -262,7 +268,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 導覽至您要從主版中分離即時副本的頁面，然後點選或按一下模式下拉式選單中的 **Targeting** 。
 1. 如果您的頁面已連結至即時副本的區域，您會看到繼承狀態。 點選或按一下「 **開始定位**」。
-1. 從工 **具列的下拉式選單中選取「分離即時副本** 」。 AEM會確認您要分離即時副本。
+1. 從工 **具列的下拉式選單中選取「分離即時副本** 」。AEM會確認您要分離即時副本。
 1. 點選或按一 **下「分離** 」，將即時副本從活動中分離。 分離後，不再顯示關於繼承的下拉式功能表。 活動現在是本機活動。
 
    ![本地活動](/help/sites-cloud/authoring/assets/multisite-winter.png)
@@ -275,7 +281,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 導覽至您要復原繼承並點選的頁面，或在模式下拉式選單中按一 **下** 「定位」。
 1. 點選或按一下「 **開始定位**」。
-1. 從工 **具列的下拉式選單中選取「繼續即時副本** 」。
+1. 從工 **具列的下拉式選單選取「繼續即時副本** 」。
 
    ![繼續即時複製](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
@@ -287,6 +293,6 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 要刪除區域：
 
-1. 導覽至「 **個人化** >活 **動** 」或「 **選件** 」，然後導覽您的品牌。
+1. Navigate to **Personalization** > **Activities** or **Offers** and then your brand.
 1. 點選或按一下您要刪除之區域旁的圖示。
 1. 點選或按一 **下「刪除** 」，並確認您要刪除該區域。
