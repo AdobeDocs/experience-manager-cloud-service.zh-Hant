@@ -3,6 +3,9 @@ title: 編輯頁面內容
 description: 建立頁面後，您就可以編輯內容以進行所需的更新
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2974'
+ht-degree: 6%
 
 ---
 
@@ -142,13 +145,13 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 請確定您的頁面處於「編 [**輯&#x200B;**」模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
 1. 從段落系統中選擇和添加新元件有兩種方法：
 
-   * 從現有 **元件的工具列或「拖曳元件到此處」(** Drag components here **)方塊中，選取「插入元件」(Insert Component** )選項(+)。
+   * Select the **Insert Component** option (+) from either the toolbar of an existing component or the **Drag components here** box.
 
       ![插入元件](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
    * 如果您使用桌上型裝置，可以按兩下「拖曳元件至 **此處** 」方塊。
 
-   * 將會 **開啟「插入新元件** 」(Insert New Component)對話框，允許您選擇所需元件：
+   * The **Insert New Component** dialog will open to allow you to select your required component:
 
       ![「插入新元件」對話框](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -158,7 +161,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 您也可以從資產瀏覽器拖曳資產，將新元件新增至 [頁面](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)。 這會自動建立適當類型的新元件（並包含資產）。
 
-您可以針對安裝設定此行為。 如需詳細資訊，請參閱設定段落系統，讓拖曳資產可建立元件例項。 <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
+此行為可針對您的安裝進行設定。 如需詳細資訊，請參閱設定段落系統，讓拖曳資產可建立元件例項。 <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
 要通過拖動上述資產類型之一來建立元件，請執行以下操作：
 
@@ -268,7 +271,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ### 元件編輯對話框 {#component-edit-dialog}
 
-您可以使用元件工具列的「編輯（鉛筆）」圖示， [開啟元件以編輯內容](#component-toolbar)。
+您可以使用元件工具列的「編輯 (鉛筆) 」圖示， [開啟元件以編輯內容](#component-toolbar)。
 
 確切的編輯選項將取決於元件。 對於某些元 [件，所有動作只能在全螢幕模式下使用](#edit-content-full-screen-mode)。 例如：
 
@@ -288,7 +291,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * 影像元件——全螢幕
 
-   [進入影像元件的全螢幕模式](#edit-content-full-screen-mode) ，可讓您有更多空間編輯影像，並顯示額外的編輯選項，例如「啟動地圖」和「重設縮放」 ********。 此外，全螢幕還允許選取裁切預設集。
+   [進入影像元件的全螢幕模式](#edit-content-full-screen-mode) ，可讓您有更多空間編輯影像，並顯示額外的編輯選項，例如「啟動地圖」和「重設縮放」 ********。此外，全螢幕還允許選取裁切預設集。
 
    ![影像元件的全螢幕模式](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -316,7 +319,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 要移動段落元件，請執行以下操作：
 
-1. 選取要以點選並按住或按住的方式移動的段落。
+1. 選擇要使用點選並按住或按一下並按住移動的段落。
 1. 將段落拖曳至新位置。 AEM會指出可將段落存放在何處。 將它拖放至您所要的位置。
 
    ![移動元件](/help/sites-cloud/authoring/assets/editing-moving-component.png)
@@ -329,7 +332,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 編輯元件配置 {#edit-component-layout}
 
-您可以選取元件的 [Layout](/help/sites-cloud/authoring/features/responsive-layout.md)**** （配置）動作，以變更元件的配置，並節省時間，而不需離開編輯模式，而不需重複從編輯切換到配置模式來調整元件。
+您可以選取元件的 [Layout](/help/sites-cloud/authoring/features/responsive-layout.md)****  (配置) 動作，以變更元件的配置，並節省時間，而不需離開編輯模式，而不需重複從編輯切換到配置模式來調整元件。
 
 1. 在站點控 **制台的** 「編輯」模式下，選擇元件會顯示元件的工具欄。
 
@@ -385,7 +388,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 編輯頁面範本 {#editing-the-page-template}
 
-您可以輕鬆切換至範本 [編輯器](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors) ，方法是在「頁面資訊」選單中選取「編輯範本 **」(Edit Template** ) [](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)。
+您可以輕鬆切換至範本 [編輯器](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors) ，方法是在「頁面資訊」選單中選取 **「編輯範本**」(Edit [Template](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) )。
 
 在「欄檢視」或「清單檢視」中選取頁面時，您可輕鬆查看該頁 [面所依據](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)[的範本](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)。
 
@@ -393,8 +396,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 「即 [時副本狀態」頁面模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) ，可讓您快速概述即時副本狀態，以及哪些元件已繼承／未繼承：
 
-* 綠色邊框：繼承
-* 粉色邊框：繼承已取消
+* 綠色邊框： 繼承
+* 粉色邊框： 繼承已取消
 
 例如：
 
@@ -454,7 +457,7 @@ AEM可讓您鎖定頁面，讓其他人無法修改內容。 當您對特定頁�
 * **頁面編輯器**
 
    1. 選取「頁 **面資訊** 」圖示以開啟功能表。
-   1. 選取「 **鎖定頁面** 」選項。
+   1. Select the **Lock Page** option.
 
 鎖定後，控制台視圖資訊將更新，編輯鎖定符號時，工具欄中將顯示該資訊。
 
