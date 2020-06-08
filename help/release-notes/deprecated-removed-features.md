@@ -1,9 +1,9 @@
 ---
 title: 過時和移除的功能
 description: 此發行說明著重於 Adobe Experience Manager 雲端服務中已過時和移除的功能。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 100%
 
