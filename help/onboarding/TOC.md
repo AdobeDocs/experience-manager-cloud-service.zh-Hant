@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 91%
    + [原始碼存放庫](what-is-required/source-code-repository.md)
 + 在雲端中存取 AEM {#getting-access}
    + [存取 Experience Manager 雲端服務](getting-access-to-aem-in-cloud/navigation.md)
-   + 雲端服務計畫 {#cloud-service-programs}
+   + 雲端服務方案 {#cloud-service-programs}
       + [存取方案](getting-access-to-aem-in-cloud/first-time-login.md)
       + [了解方案和方案類型](getting-access-to-aem-in-cloud/understand-program-types.md)
       + [建立方案](getting-access-to-aem-in-cloud/creating-a-program.md)
-      + [沙盒程式](getting-access-to-aem-in-cloud/sandbox-programs.md)
+      + [沙箱方案](getting-access-to-aem-in-cloud/sandbox-programs.md)
    + [建立 AEM 應用程式專案](getting-access-to-aem-in-cloud/creating-aem-application-project.md)
 + 資料隱私權和保護整備 {#data-privacy}
    + [AEM 對資料保護與資料隱私權法規的整備](data-privacy-and-protection-readiness/aem-readiness.md)
