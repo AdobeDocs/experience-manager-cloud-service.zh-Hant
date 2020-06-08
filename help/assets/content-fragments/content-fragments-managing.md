@@ -3,6 +3,9 @@ title: 管理內容片段
 description: 內容片段會儲存為資產，因此主要是從資產主控台管理。
 translation-type: tm+mt
 source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+workflow-type: tm+mt
+source-wordcount: '1470'
+ht-degree: 11%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 >[!NOTE]
 >
->然後內容片段會用於編寫頁面；請參 [閱使用內容片段編寫頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
+>然後內容片段會用於編寫頁面； 請參 [閱使用內容片段編寫頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
 
 ## 建立內容片段 {#creating-content-fragments}
 
@@ -34,7 +37,7 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
       * 簡單 **片段範本**
 
-      * [模型](/help/assets/content-fragments/content-fragments-models.md) -用於建立需要結構化內容的片段；例如機 **場型號**
+      * [模型](/help/assets/content-fragments/content-fragments-models.md) -用於建立需要結構化內容的片段； 例如機 **場型號**
 
          * 將顯示所有可用的型號。
    選取後，請使 **用** 「下一步」繼續。
@@ -58,9 +61,9 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
       * **名稱**
 
-         姓名；將用於形成URL。
+         姓名； 將用於形成URL。
 
-         強制；將會自動從標題衍生，但可以更新。
+         強制； 將會自動從標題衍生，但可以更新。
 
 
 5. 選擇 **Create**  (建立) 以完成操作，然後選擇 **Open** the fragment for editing (開啟片段以進行編輯) 或返回控制 **台完成**。
@@ -69,8 +72,8 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 在 **Assets** Console中，您的內容片段可使用一系列動作：
 
-* 從工具列；在選擇片段後，所有適當的動作都可供使用。
-* 快 [速行動](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions);個別片段卡可用動作的子集。
+* 從工具列； 在選擇片段後，所有適當的動作都可供使用。
+* 快 [速行動](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); 個別片段卡可用動作的子集。
 
 ![動作](assets/cfm-managing-02.png)
 
@@ -79,7 +82,7 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 * **建立**
 * **下載**
 
-   * 將片段儲存為ZIP檔案；您可以定義是否要包含元素、變數、中繼資料。
+   * 將片段儲存為ZIP檔案； 您可以定義是否要包含元素、變數、中繼資料。
 
 * **結帳**
 * **屬性**
@@ -140,7 +143,7 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 3. 使用側面板中的圖示，在三種模式中導覽：
 
-   * 變化：編 [輯內容](#editing-the-content-of-your-fragment) , [管理變數](#creating-and-managing-variations-within-your-fragment)
+   * 變化： [編輯內容](#editing-the-content-of-your-fragment) , [管理變數](#creating-and-managing-variations-within-your-fragment)
 
    * [註解](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [相關聯的內容](#associating-content-with-your-fragment)
@@ -171,7 +174,7 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
    >[!NOTE]
    >
-   >在選擇「保存」之前，可以保留在編輯器中，進行一系列 **更改**。
+   >在選擇「保存」之前，可以保留在編輯器中並進行一系列 **更改**。
 
    >[!CAUTION]
    >
@@ -272,7 +275,7 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
    * 插入的文本——綠色
    * 已取代文字——藍色
 
-* 全螢幕圖示可讓您自行開啟任一版本；然後切換回平行檢視
+* 全螢幕圖示可讓您自行開啟任一版本； 然後切換回平行檢視
 * 您可以 **回復** 到特定版本
 * **完成** ，將返回控制台
 
@@ -281,7 +284,7 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ![比較](assets/cfm-managing-06.png)
 
-## 回復為版本 {#reverting-to-a-version}
+## 回復為版本  {#reverting-to-a-version}
 
 您可以回復到特定版本的片段：
 
@@ -299,8 +302,8 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 必須發佈內容片段才能在發佈環境中使用。 可發佈：
 
-* 建立後；從「資 **產** 」主控台。
-* 當您發 [布使用片段的頁面時](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing);片段將列在頁面參考中。
+* 建立後； 從「資 **產** 」主控台。
+* 當您發 [布使用片段的頁面時](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); 片段將列在頁面參考中。
 
 >[!CAUTION]
 發佈和／或參考片段後，當作者開啟片段以進行重新編輯時，AEM會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
