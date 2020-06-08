@@ -5,6 +5,9 @@ description: 本頁介紹如何訪問和管理Git儲存庫。
 seo-description: 請依照本頁瞭解如何存取和管理您的Git儲存庫。
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 7%
 
 ---
 
@@ -34,8 +37,8 @@ source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 在Cloud Manager中管理Git的重要考量事項包括：
 
-* **URL**:儲存庫URL
-* **使用者名稱**:用戶名
+* **URL**: 儲存庫URL
+* **使用者名稱**: 用戶名
 * **密碼**:按一下「生成密碼」 **按鈕時顯示** 的值。
 
 
