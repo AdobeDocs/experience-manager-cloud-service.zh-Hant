@@ -3,6 +3,9 @@ title: Markdown
 description: 當您製作內容時，內容片段編輯器會使用標籤語法，讓您輕鬆編寫內容。
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 4%
 
 ---
 
@@ -87,7 +90,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 語法包括：
 
-* 驚嘆號：!;
+* 驚嘆號： !;
 * 後面接著一組方括弧，其中包含影像的alt屬性文字；
 * 後面接著一組括弧，其中包含影像的URL或路徑，以及以雙引號或單引號括住的選用標題屬性。
 
@@ -95,7 +98,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
     `![Alt text][id]`
 
-其中，&quot;id&quot;是已定義影像參考的名稱。 影像參照的定義語法與連結參照的語法相同：
+其中，&quot;id&quot;是已定義影像參考的名稱。 使用與連結參照相同的語法來定義影像參照：
 
     `[id]: url/to/image "Optional title attribute"`
 
@@ -125,7 +128,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 您可以建立有序清單和無序清單。
 
-要建立無序清單，請使用&amp;ast;符號。 例如：
+要建立無序清單，請使用&amp;ast; 符號。 例如：
 
     `* item in list`
 
