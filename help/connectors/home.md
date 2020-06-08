@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager 雲端服務連接器
 description: Adobe Experience Manager 雲端服務連接器自助資源與文件連結
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 100%
 
 ---
 
@@ -39,6 +42,6 @@ source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
 * [核心元件文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager 文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GDPR 整備](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager 雲端服務教學課程](https://docs.adobe.com/content/help/zh-Hant/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager 雲端服務教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社群論壇](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
