@@ -3,6 +3,9 @@ title: 編寫時疑難排解AEM
 description: 使用AEM時可能會遇到的一些問題
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 10%
 
 ---
 
