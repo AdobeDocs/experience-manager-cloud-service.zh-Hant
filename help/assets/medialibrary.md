@@ -1,14 +1,17 @@
 ---
-title: AEM Assets與AEM mediaLibrary的比較
+title: AEM Assets與AEM MediaLibrary的比較
 description: AEM Assets和的常見問題。 AEM Media Library，包括兩者的差異。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 2%
 
 ---
 
 
-# AEM Assets與AEM mediaLibrary常見問題 {#aem-assets-vs-aem-medialibrary}
+# AEM Assets與AEM MediaLibrary常見問題 {#aem-assets-vs-aem-medialibrary}
 
 Adobe Experience Manager(AEM)Assets是AEM平台不可或缺的一部分。 此順暢整合被視為AEM的主要優點，可確保內容管理的一致性，並提高內容作者的生產力。
 
@@ -53,7 +56,7 @@ AEM Assets客戶僅能使用的獨特功能包括：
 
 ## 如果我未授權AEM Assets，該如何防止使用者使用AEM Assets? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-您可以從AEM移除所有AEM Assets專屬的工作流程、元件、分類、選項和AEM Assets管理員。 如此可避免使用者意外使用您未授權的AEM Assets功能。
+您可以從AEM移除所有AEM Assets專屬的工作流程、元件、分類、選項和AEM Assets管理員。 如此可防止您的使用者意外使用您未授權的AEM Assets功能。
 
 ## 我想要將影像新增至頁面，並想要裁切這些影像並調整其大小。 我需要AEM資產嗎？ {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
@@ -68,7 +71,7 @@ AEM Assets客戶僅能使用的獨特功能包括：
 * Adobe Asset Link（連線至適用於企業的Creative Cloud）
 * AEM案頭應用程式
 * 處理設定檔
-* InDesign server整合
+* InDesign Server整合
 * 資產範本和型錄製作者架構
 * Adobe Photoshop、Illustrator和InDesign連結資產
 * 多語言資產管理
@@ -77,7 +80,7 @@ AEM Assets客戶僅能使用的獨特功能包括：
 * Camera RAW支援
 * 搜尋Facet管理與設定
 * 預先建立的DAM工作流程（例如像片拍攝）
-* 資產報告與分析：資產見解
+* 資產報告與分析： 資產見解
 * 3D資產管理
 * 連線資產
 * 品牌入口網站
@@ -98,6 +101,6 @@ AEM Assets客戶僅能使用的獨特功能包括：
 * 專案、工作、工作流程編寫
 * 活動串流（時間軸）
 * 查詢產生器(API)
-* Marketing cloud整合
+* Marketing Cloud整合
 * UI自訂與擴充功能
 * 注釋與注釋
