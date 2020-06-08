@@ -1,20 +1,23 @@
 ---
-title: AEM cloud服務中AEM網站的顯著變更
-description: 'AEM cloud服務中AEM網站的顯著變更 '
+title: AEM 雲端服務中 AEM Sites 的重大變更
+description: 'AEM 雲端服務中 AEM Sites 的重大變更 '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 8%
 
 ---
 
 
-# AEM Sites雲端服務的顯著變更 {#notable-changes}
+# AEM Sites 雲端服務的重大變更 {#notable-changes}
 
 AEM Sites as a Cloud Service是雲端原生AEM的雲端服務平台，提供體驗管理功能。 除了AEM做為雲端服務的核心優點（例如雲端原生的延展性、正常運作時間以及隨時都是最新的）之外，AEM Sites作為雲端服務也提供許多網站特定的變更和新增功能。
 
 >[!NOTE]
 >本檔案著重說明AEM Sites的顯著變更。 如需Cloud中AEM的一般變更，請參閱：
 >
->* [Adobe Experience Manager(AEM)雲端服務的顯著變更](/help/release-notes/aem-cloud-changes.md)
+>* [Adobe Experience Manager (AEM) 雲端服務重大變更](/help/release-notes/aem-cloud-changes.md)
 
 
 AEM Sites中的Cloud Service變更和新增如下：
@@ -24,7 +27,7 @@ AEM Sites中的Cloud Service變更和新增如下：
 
 ## 非同步頁面作業 {#asynchronous-page-operations}
 
-在AEM cloud服務中，傳統上封鎖UI的作業已細分為在背景執行的較小工作。
+在AEM Cloud服務中，傳統上封鎖UI的作業已細分為在背景執行的較小工作。
 
 * 移動頁面
 * 展開頁面
@@ -39,7 +42,7 @@ AEM Sites中的Cloud Service變更和新增如下：
 
 [WKND](https://wknd.site/)是新的AEM參考網站，已更新並發佈，以反映使用AEM建立網站的最佳實務，以及AEM提供的完整功能、元件和部署模型。 新的參考網站和隨附的教 [學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) ，涵蓋專案設定、核心元件、可編輯範本、用戶端程式庫，以及使用Adobe Experience Manager Sites進行元件開發等基本主題。
 
-之前，We.Retail預設會與AEM一起安裝（除非在生產模式中開始安裝）。  現在，依預設，未來將不會安裝參考網站。  相反地， [提供了git repo](https://github.com/adobe/aem-guides-wknd/) 和隨附 [的教程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) ，以及更新的WKND參考站點代碼。
+之前，We.Retail預設會與AEM一起安裝（除非在生產模式中開始安裝）。  現在，依預設，未來將不會安裝參考網站。  相反地， [提供了Git repo](https://github.com/adobe/aem-guides-wknd/)[和隨附的教程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) ，以及更新的WKND參考站點代碼。
 
 ## Runtime無法使用的功能 {#capabilities-not-available-at-runtime}
 
