@@ -3,6 +3,9 @@ title: 使用工作流程
 description: AEM中的工作流程可讓您自動化在頁面或資產上執行的一系列步驟。
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 7%
 
 ---
 
