@@ -1,9 +1,9 @@
 ---
 sub-product: AEM 雲端服務的內容製作
 user-guide-title: AEM 雲端服務的內容製作
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
 
