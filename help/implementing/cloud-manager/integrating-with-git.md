@@ -3,13 +3,16 @@ title: 與Git整合
 description: 與Git整合——雲端服務
 translation-type: tm+mt
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+workflow-type: tm+mt
+source-wordcount: '310'
+ht-degree: 2%
 
 ---
 
 
-# 將Git與Adobe Cloud Manager整合 {#git-integration}
+# 整合 Git 與 Adobe Cloud Manager {#git-integration}
 
-Adobe Cloud manager提供單一Git儲存庫，用來使用Cloud manager的CI/CD管道部署程式碼。 客戶可以立即使用Cloud manager的git儲存庫。 客戶也可以選擇將內部部署或客戶管理的 **Git儲存庫** 與Cloud Manager整合。
+Adobe Cloud Manager提供單一Git儲存庫，用來使用Cloud Manager的CI/CD管道部署程式碼。 客戶可以立即使用Cloud Manager的git儲存庫。 客戶也可以選擇將內部部署或客戶管理的 **Git儲存庫** 與Cloud Manager整合。
 
 ## Git整合概觀 {#git-integration-overview}
 
