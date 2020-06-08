@@ -3,6 +3,9 @@ title: 製作環境與工具
 description: AEM的製作環境提供多種機制來組織和編輯您的內容
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2163'
+ht-degree: 13%
 
 ---
 
@@ -13,7 +16,7 @@ AEM的製作環境提供多種機制來組織和編輯您的內容。 提供的�
 
 ## 管理您的網站 {#managing-your-site}
 
-Sites **** Console可讓您使用標題列、工具列、動作圖示（適用於選取的資源）、導覽路徑標示，以及選取時的輔助導軌（例如時間軸和參考），來導覽和管理您的網站。
+Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於選取的資源) 、導覽路徑標示，以及選取時的輔助導軌 (例如時間軸和參考)，來導覽和管理您的網站。
 
 例如，列視圖：
 
@@ -48,7 +51,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示（適用�
 
 元件瀏覽器會顯示目前頁面上可用的所有元件。 這些內容可拖曳至適當位置，然後進行編輯以新增內容。
 
-元件瀏覽器是側面板中的標籤(連同資產 [瀏覽器](#assets-browser)[和內容樹](#content-tree))。 要開啟（或關閉）側面板，請使用工具欄左上角的表徵圖：
+元件瀏覽器是側面板中的標籤(連同資產 [瀏覽器](#assets-browser)[和內容樹](#content-tree))。要開啟 (或關閉) 側面板，請使用工具欄左上角的表徵圖：
 
 ![側面板切換](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
@@ -83,7 +86,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示（適用�
 
    * 依名稱篩選元件。
    * 使用下拉式選取範圍，將顯示限制在特定群組。
-   如需元件的詳細說明，您可以在「元件」瀏覽器中按一下或點選元件旁的資訊圖示(如果 **有** )。 例如，對於「內容 **片段**」:
+   如需元件的詳細說明，您可以在「元件」瀏覽器中按一下或點選元件旁的資訊圖示(如果 **有** )。例如，對於「內容 **片段**」:
 
    ![元件瀏覽器資訊](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -97,7 +100,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示（適用�
 
 資產瀏覽器會顯示目前頁面上可直接使用的所有資產。 <!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
 
-資產瀏覽器是側面板中的標籤，以及元件瀏 [覽器](#components-browser)[和內容樹](#content-tree)。 要開啟或關閉側面板，請使用工具欄左上角的表徵圖：
+資產瀏覽器是側面板中的標籤，以及元件瀏 [覽器](#components-browser)[和內容樹](#content-tree)。要開啟或關閉側面板，請使用工具欄左上角的表徵圖：
 
 ![側面板切換](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
@@ -148,7 +151,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示（適用�
 
 >[!NOTE]
 >
->當移動設備寬度小於1024px時，檢測到移動設備；例如，也可在小型案頭視窗上。
+>當移動設備寬度小於1024px時，檢測到移動設備； 例如，也可在小型案頭視窗上。
 
 如果您需要快速變更資產，可以按一下資產名稱旁的編輯圖示，直接從資產瀏覽器啟動資產編輯器。 <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
 
@@ -158,7 +161,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示（適用�
 
 「內 **容樹」** (Content Tree)概述了階層中頁面上的所有元件，讓您一目瞭然地瞭解頁面的構成方式。
 
-「內容樹」是側面板（連同元件和資產瀏覽器）中的標籤。 要開啟（或關閉）側面板，請使用工具欄左上角的表徵圖：
+「內容樹」是側面板（連同元件和資產瀏覽器）中的標籤。 要開啟 (或關閉) 側面板，請使用工具欄左上角的表徵圖：
 
 ![內容樹按鈕](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
@@ -205,7 +208,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示（適用�
 * 即時副本
 * 語言副本
 * 導入連結
-* 使用參考元件：借閱和借閱內容
+* 使用參考元件： 借閱和借閱內容
 
 開啟必要的主控台，然後導覽至所需資源，並使用下列方式開 **啟「參考** 」:
 
@@ -238,7 +241,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示（適用�
 
 ## 頁面資訊 {#page-information}
 
-「頁面資訊（均衡器圖示）」會開啟一個功能表，其中也提供上次編輯和上次發佈的詳細資訊。 視頁面、其網站和您的例項的特性而定，可能有更多或更少的選項可用：
+「頁面資訊 (均衡器圖示) 」會開啟一個功能表，其中也提供上次編輯和上次發佈的詳細資訊。視頁面、其網站和您的例項的特性而定，可能有更多或更少的選項可用：
 
 ![頁面資訊選項](/help/sites-cloud/authoring/assets/page-information.png)
 
@@ -265,7 +268,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示（適用�
 * [定位](/help/sites-cloud/authoring/personalization/targeted-content.md) -透過跨所有通道的定位和測量，提高內容相關性。
 * [時間彎曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp) -可讓您在特定時間點檢視頁面狀態。
 * [即時副本狀態](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) -允許快速概述即時副本狀態以及哪些元件是／未繼承的。
-* [預覽](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) -用於檢視頁面在發佈環境中的顯示效果；或在內容中使用連結進行導覽。
+* [預覽](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) -用於檢視頁面在發佈環境中的顯示效果； 或在內容中使用連結進行導覽。
 * [Annotate](/help/sites-cloud/authoring/fundamentals/annotations.md) —— 用於在頁面上添加或查看批注。
 
 您可以使用右上角的圖示來存取這些圖示。 實際圖示會變更，以反映您目前使用的模式：
@@ -307,7 +310,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示（適用�
 ![路徑瀏覽器](/help/sites-cloud/authoring/assets/path-browser.png)
 
 * 在選取資源後，對話 **框右上方** 的「選擇」按鈕就會變為活動狀態。 按一下或點選以確認選取範圍，或 **取消** 以中止。
-* 如果上下文允許選擇多個資源，則選擇資源也會激活「選擇 **** 」按鈕，但也會向窗口的右上角添加選定資源的計數。 按一下 **數字旁** 的X，取消選取全部。
+* 如果上下文允許選擇多個資源，則選擇資源也會激活「選擇 **** 」按鈕，但也會向窗口的右上角添加選定資源的計數。按一下 **數字旁** 的X，取消選取全部。
 * 在樹狀結構中導覽時，您的位置會反映在對話方塊頂端的階層連結中。 這些網站導覽路徑標示也可用來快速跳入資源階層。
 * 您隨時都可以使用對話方塊頂端的搜尋欄位。 按一下 **搜尋欄位** 中的X以清除搜尋。
 * 若要縮小搜尋範圍，您可以顯示篩選選項並根據特定路徑篩選結果。
