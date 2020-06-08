@@ -3,6 +3,9 @@ title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
 source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 2%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ## 瞭解流程 {#understanding-the-flow}
 
-您可以從 **Cloud Manager** UI [!UICONTROL 的「Pipeline Settings] 」（管道設定）圖格來設定管道。
+您可以從 **Cloud Manager** UI [!UICONTROL 的「Pipeline Settings] 」 (管道設定) 圖格來設定管道。
 
 部署管理器負責設定管道。 執行此操作時，首先從 **Git Repository中選擇一個分支**。
 
@@ -34,7 +37,7 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 >
 >可在初始設定後更改管線設定。
 
-## 從 [!UICONTROL Cloud Manager配置管線設定]{#configuring-the-pipeline-settings-from-cloud-manager}
+## 從 [!UICONTROL Cloud Manager設定管線設定] {#configuring-the-pipeline-settings-from-cloud-manager}
 
 一旦您設定了程式，並且使用 [!UICONTROL Cloud Manager] UI至少擁有一個環境，您就可以準備好設定部署管道。
 
@@ -80,7 +83,7 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 在主螢幕上，新卡中列出了以下管線：
 
-1. 從Cloud manager **主畫面存取「非生產管道** 」圖格。
+1. 從Cloud Manager **主畫面存取「非生產管道** 」圖格。
 
    ![](assets/configure-pipeline6.png)
 
