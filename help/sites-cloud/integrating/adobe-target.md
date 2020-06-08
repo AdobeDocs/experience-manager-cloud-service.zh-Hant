@@ -3,6 +3,9 @@ title: 整合 Adobe Target
 description: '整合 Adobe Target '
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 1%
 
 ---
 
@@ -20,12 +23,12 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 >[!NOTE]
 >
->Adobe Experience Manager是Cloud Service客戶，如果客戶目前沒有Target帳戶，可以要求存取Target Foundation Pack for Experience Cloud。  Foundation Pack提供對Target的卷有限使用。
+>Adobe Experience Manager是Cloud Service客戶，如果客戶目前沒有Target帳戶，可以要求存取Target Foundation Pack for Experience Cloud。  Foundation Pack提供Target的卷限制使用。
 
 
 若要與Target整合，請執行下列工作：
 
-* [執行先決條件任務](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html):向Adobe Target註冊，並設定AEM作者例項的某些方面。 您的Adobe Target帳戶至少必 **須擁有** 核准者層級權限。 此外，您必須保護發佈節點上的活動設定，讓使用者無法存取。
+* [執行先決條件任務](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html): 向Adobe Target註冊，並設定AEM作者例項的某些方面。 您的Adobe Target帳戶至少必 **須擁有** 核准者層級權限。 此外，您必須保護發佈節點上的活動設定，讓使用者無法存取。
 
 * Launch by Adobe是實際工具，可讓您使用Target功能（JS資料庫）來檢測AEM網站。 因此，將AEM整合為Cloud Service與Launch和Adobe Target可攜手進行（請參閱以下連結）。
 
@@ -38,7 +41,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >
 >Launch by Adobe的IMS設定（技術帳戶）已在AEM中預先設定為雲端服務。 使用者不必建立此設定。
 
-1. [設定活動](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html):將您的活動與Target雲端設定關聯。
+1. [設定活動](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html): 將您的活動與Target雲端設定關聯。
 
 >[!CAUTION]
 >
