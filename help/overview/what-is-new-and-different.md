@@ -1,8 +1,11 @@
 ---
-title: Adobe Experience manager雲端服務的不同與新功能
+title: Adobe Experience Manager雲端服務的不同與新功能
 description: '不同與新功能- Adobe Experience Manager(AEM)雲端服務。 '
 translation-type: tm+mt
 source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
+workflow-type: tm+mt
+source-wordcount: '1724'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +37,7 @@ source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
 
 >[!NOTE]
 >
->如需內部部署和受管理服務版本的詳細資訊，請參閱 [AEM 6.5的檔案集](https://helpx.adobe.com/support/experience-manager/6-5.html)。
+>如需內部部署和受管理服務版本的詳細資訊，請參閱 [AEM 6.5的檔案集](https://helpx.adobe.com/tw/support/experience-manager/6-5.html)。
 
 ## 架構 {#architecture}
 
@@ -56,7 +59,7 @@ AEM即雲端服務現已具備：
 
 * 使用模組化應用程式。
 
-* 具有作者群集作為預設值；這樣可以避免維護任務的停機。
+* 具有作者群集作為預設值； 這樣可以避免維護任務的停機。
 
 如此可針對各種使用模式自動縮放：
 
@@ -91,19 +94,19 @@ Adobe會主動將服務的所有營運執行個體更新為最新版本的AEM程
 
 ## Cloud Manager {#cloud-manager}
 
-Adobe Cloud manager是AEM雲端服務持續升級方法的一環，因為它可控制您例項的所有更新——這是必備的。
+Adobe Cloud Manager是AEM雲端服務持續升級方法的一環，因為它可控制您例項的所有更新——這是必備的。
 
-當有新版雲端服務推出時，Adobe可觸發更新。 或者，您也可以使用Cloud manager提供的管線觸發應用程式更新。
+當有新版雲端服務推出時，Adobe可觸發更新。 或者，您也可以使用Cloud Manager提供的管線觸發應用程式更新。
 
 Cloud Manager是：
 
 * 用來管理AEM程式和環境，
 
-* AEM的「雲端服務」基本元件；每個新租用戶都會先布建Cloud manager存取權，
+* AEM的「雲端服務」基本元件； 每個新租用戶都會先布建Cloud Manager存取權，
 
 * 為您的營運與開發人員提供單一入門點。
 
-具體而言，可從Cloud manager建立的AEM程式數目和類型可衍生為：
+具體而言，可從Cloud Manager建立的AEM程式數目和類型可衍生為：
 
 * 從客戶授權合約，
 
@@ -111,7 +114,7 @@ Cloud Manager是：
 
 * 從Adobe.com開始的試用等外部驅動程式。
 
-Cloud manager已發展為自助服務入口網站，可在其中建立並設定AEM（雲端服務）的主要元件：
+Cloud Manager已發展為自助服務入口網站，可在其中建立並設定AEM（雲端服務）的主要元件：
 
 * 建立和管理新程式。
 
@@ -121,7 +124,7 @@ Cloud manager已發展為自助服務入口網站，可在其中建立並設定A
 
 * 收到這些元件的重要生命週期事件通知（例如產品更新）。
 
-目前，Cloud manager能夠在3個地理區域（下面有更多區域）建立環境：
+目前，Cloud Manager能夠在3個地理區域（下面有更多區域）建立環境：
 
 * 美國（東部）
 
@@ -143,7 +146,7 @@ Cloud manager已發展為自助服務入口網站，可在其中建立並設定A
 
 與現在的情況也大不相同：
 
-* 評估階段，以確保符合所有先決條件；包括，例如：
+* 評估階段，以確保符合所有先決條件； 包括，例如：
 
    * 法律要求
 
@@ -153,7 +156,7 @@ Cloud manager已發展為自助服務入口網站，可在其中建立並設定A
 
 * 部署需求：
 
-   * 程式碼更新；任何針對舊版AEM開發的客戶應用程式都需要進行審查，而且可能會進行更新。
+   * 程式碼更新； 任何針對舊版AEM開發的客戶應用程式都需要進行審查，而且可能會進行更新。
 
    * 內容移轉
 
@@ -169,21 +172,21 @@ Cloud manager已發展為自助服務入口網站，可在其中建立並設定A
 
 若要在AEM上以雲端服務形式執行現有的AEM應用程式，請執行下列步驟：
 
-* 應用程式碼和配置必須儲存在關聯的Cloud manager程式的Git代碼儲存庫中。
+* 應用程式碼和配置必須儲存在關聯的Cloud Manager程式的Git代碼儲存庫中。
 * 應用程式碼和設定必須與最新版的基準AEM影像相容（可能每天都會變更）。
-   * 客戶應用程式必須使用與Cloud manager環境關聯的Cloud manager管道構建和部署。
-* 客戶應用程式必須傳遞管道中強制執行的所有程式碼品質、安全性和效能門檻。
-* 為客戶應用程式構建的映像必須由Cloud manager管道部署。
+   * 客戶應用程式必須使用與Cloud Manager環境關聯的Cloud Manager管道構建和部署。
+* 客戶應用程式必須傳遞管道中強制執行的所有程式碼品質、安全性和效能閘道。
+* 為客戶應用程式構建的映像必須由Cloud Manager管道部署。
 
 此程式通常稱為雲端開發。 由於端對端持續時間預計需要幾分鐘（視應用程式的複雜性而定，從20到50），因此在雲端嘗試進行擱置中的程式碼和組態變更之前，必須採用快速開發方法。
 
-AEM的使用者不再可直接存取Web Console，因為Web Console會管理OSGI組合及其相關的組態，而且先前也是AEM quickStart的一部分。 此介面仍可透過使用新的開發人員主控台，以唯讀模式存取。 使用此主控台，開發人員可直接選擇並登入作者或發佈服務的任何特定節點，然後存取預設封鎖的區域。
+AEM的使用者不再可直接存取Web Console，因為Web Console會管理OSGI組合及其相關的組態，而且先前也是AEM QuickStart的一部分。 此介面仍可透過使用新的開發人員主控台，以唯讀模式存取。 使用此主控台，開發人員可直接選擇並登入作者或發佈服務的任何特定節點，然後存取預設封鎖的區域。
 
 >[!NOTE]
 >
 >另請參閱 [OSGi配置](/help/implementing/deploying/overview.md#osgi-configuration)
 
-開發人員的另一個常見需求是快速存取各種環境的記錄檔。 以AEM為雲端服務，作者和發佈節點中不同節點的記錄檔可透過Cloud manager取得，可以是可下載的檔案，也可以是透過API取得。
+開發人員的另一個常見需求是快速存取各種環境的記錄檔。 以AEM為雲端服務，作者和發佈節點中不同節點的記錄檔可透過Cloud Manager取得，可以是可下載的檔案，也可以是透過API取得。
 
 由於程式碼和內容的明確分離，開發人員可使用特定程式來更新部署中的內容。 可變內容的典型使用案例包括：
 
@@ -199,13 +202,13 @@ AEM的使用者不再可直接存取Web Console，因為Web Console會管理OSGI
 
 為了支援快速的迭代和開發，您也可以在AEM以外部開發AEM應用程式，做為雲端服務內容。 為此，開發人員可使用下列物件：
 
-* AEM a Cloud Service QuickStart:最新 `.jar` AEM程式碼庫的基礎獨立安裝程式，具有相同的功能和API表面。
+* AEM a Cloud Service QuickStart: 最新 `.jar` AEM程式碼庫的基礎獨立安裝程式，具有相同的功能和API表面。
 
-* AEM as a Cloud Service Dispatcher SDK:在本地測試和驗證Dispatcher配置的基於映像的過程
+* AEM as a Cloud Service Dispatcher SDK: 在本地測試和驗證Dispatcher配置的基於映像的過程
 
 >[!NOTE]
 >
->請注意，Cloud quickStart不允許所有AEM Sites和AEM Assets功能。 它由簡單的作者環境組成，其中大部分的擴充功能都可進行開發和測試。
+>請注意，Cloud QuickStart不允許所有AEM Sites和AEM Assets功能。 它由簡單的作者環境組成，其中大部分的擴充功能都可進行開發和測試。
 
 ## 操作與效能 {#operations-and-performance}
 
@@ -219,7 +222,7 @@ AEM的使用者不再可直接存取Web Console，因為Web Console會管理OSGI
 
 * 許多任務都實現了自動化。
 
-* 優化拓撲以實現最大的恢復能力和效率；例如，無二進位複製是預設值。
+* 優化拓撲以實現最大的恢復能力和效率； 例如，無二進位複製是預設值。
 
 * 大量負載的工作（例如佇列、工作和大量處理工作）已移出核心AEM例項，由共用和專用的微型服務處理。
 
@@ -233,7 +236,7 @@ AEM雲端服務的運作也受到新的監控、報告和警報基礎架構的�
 
 AEM雲端服務的重大變更，是完全整合使用Adobe ID來存取作者層。
 
-這需要使用 [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) ，來管理使用者和使用者群組。 使用者帳戶可讓您的使用者存取Adobe產品和服務，因為使用者個人檔案資訊會集中在Adobe Identity Management System(IMS)中，以便在所有雲端服務間共用。 一旦指派AEM的存取權後，使用者帳戶就可在AEM中以雲端服務的身分被參照（如先前）;例如，用於從AEM Security使用者介面定義角色和權限。
+這需要使用 [Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) ，來管理使用者和使用者群組。 使用者帳戶可讓您的使用者存取Adobe產品和服務，因為使用者個人檔案資訊會集中在Adobe Identity Management System(IMS)中，以便在所有雲端服務間共用。 一旦指派AEM的存取權後，使用者帳戶就可在AEM中以雲端服務的身分被參照（如先前）; 例如，用於從AEM Security使用者介面定義角色和權限。
 
 這結合了以下優點：
 
@@ -249,7 +252,7 @@ AEM雲端服務的重大變更，是完全整合使用Adobe ID來存取作者層
 
 過去使用過AEM的人將十分熟悉網站和資產的製作使用者介面(UI)的基本原則。
 
-主要的不同在於，使用者介面完全可觸控；傳統UI已不再可用。 否則，基本功能保持不變，只有微小的變更。
+主要的不同在於，使用者介面完全可觸控； 傳統UI已不再可用。 否則，基本功能保持不變，只有微小的變更。
 
 ## AEM Sites {#aem-sites}
 
