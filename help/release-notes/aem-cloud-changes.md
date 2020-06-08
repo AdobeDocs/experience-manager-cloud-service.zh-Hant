@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager (AEM) 雲端服務重大變更
 description: Adobe Experience Manager (AEM) 雲端服務重大變更
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 100%
 
 ---
 
