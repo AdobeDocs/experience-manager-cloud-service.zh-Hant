@@ -290,22 +290,21 @@ AEM Assets中的搜尋功能有下列限制：
 
 以範例說明在資產搜尋中使用星號萬用字元
 
-**Search with question mark wildcard**: To broaden the search, use one or more &#39;?&#39; characters to match exact number of characters. For example, in the following illustration,
+**使用問號萬用字元搜尋**: 若要擴大搜尋範圍，請使用一或多個「?」 字元來比對字元數目。 例如，在下圖中，
 
-* `run???` query does not match any asset.
+* `run???` 查詢不符合任何資產。
 
 * `run????` query與後4個字 `running` 元的字詞相符 `run`。
 
 * `??run` query與之前包含兩 `rerun` 個字元的單字相符 `run`。
 
-![Illustrating use of question mark wildcard in Asset search using an example](assets/search_with_questionmark_run.gif)
+![使用範例說明在資產搜尋中使用問號萬用字元](assets/search_with_questionmark_run.gif)
 
-Illustrating use of question mark wildcard in Asset search using an example
+使用範例說明在資產搜尋中使用問號萬用字元
 
-**排除關鍵字**: 使用破折號來搜尋不含關鍵字的資產。 例如，查 `running -shoe` 詢會傳回包含但 `running`不包含的資產 `shoe`。 Similarly, `camp -night` query returns assets that contain `camp` but not `night`. Note that `camp-night` query returns assets that contain both `camp` and `night`.
+**排除關鍵字**: 使用破折號來搜尋不含關鍵字的資產。 例如，查 `running -shoe` 詢會傳回包含但 `running`不包含的資產 `shoe`。 同樣地， `camp -night` 查詢會傳回包含但不包含 `camp` 的資產 `night`。 請注意， `camp-night` 查詢會傳回同時包含和的 `camp` 資產 `night`。
 
-![Use of dash to search for assets not containing an excluded keyword](assets/search_dash_exclude_keyword.gif)
-*Figure: Use of dash to search for assets not containing an excluded keyword*
+![使用破折號來搜尋不含已排除關鍵字的資產](assets/search_dash_exclude_keyword.gif)*圖： 使用破折號來搜尋不含已排除關鍵字的資產*
 
 <!--
 ## Configuration and administration tasks related to search functionality {#configadmin}
@@ -392,7 +391,7 @@ You can search for digital assets based on one or more of the following properti
 
 ## 使用資產搜尋結果 {#aftersearch}
 
-Once you see some searched assets that match your criteria, you can do the following typical tasks with or take the following actions on these search results:
+在您看到一些符合標準的搜尋資產後，您可以執行下列典型工作，或對這些搜尋結果執行下列動作：
 
 * 檢視中繼資料屬性和其他資訊。
 * 下載一或多個資產。
