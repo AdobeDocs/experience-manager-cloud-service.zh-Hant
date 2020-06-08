@@ -3,6 +3,9 @@ title: AEM中的雲端服務備份與還原
 description: 'AEM中的雲端服務備份與還原 '
 translation-type: tm+mt
 source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
 >
 >只有當程式碼或內容有嚴重問題時，才應使用此功能。 在恢復的備份時間和當前時間之間的最近資料將丟失。 測試階段也會還原至舊版。
 
-## 如何使用
+## 使用方式
 
 客戶應提交支援票證，說明所遇到的問題。 這將導致Adobe支援進行調查，以判斷是否需要進行復原。
 
