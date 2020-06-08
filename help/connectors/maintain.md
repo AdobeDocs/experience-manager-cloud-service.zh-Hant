@@ -1,13 +1,16 @@
 ---
-title: 維護AEM連接器
-description: 維護AEM連接器
+title: 維護 AEM 連接器
+description: 維護 AEM 連接器
 translation-type: tm+mt
 source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 20%
 
 ---
 
 
-維護AEM連接器
+維護 AEM 連接器
 ============================
 
 本文包含有關維護AEM Connector的資訊，並應與實作與送出連接器的相關文章一 [起](implement.md)[閱讀](submit.md) 。
