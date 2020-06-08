@@ -3,6 +3,9 @@ title: 元件主控台
 description: 「元件控制台」允許您瀏覽為實例定義的所有元件
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 18%
 
 ---
 
@@ -11,17 +14,17 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 「元件控制台」允許您瀏覽為實例定義的所有元件，並查看每個元件的關鍵資訊。
 
-您可從「工具」->「一 **般」->「元件」** 存取它 ********。 由於沒有元件的樹結構，因此只有清單視圖可用。
+您可從「工具」->「一 **般」->「元件」** 存取它 ********。由於沒有元件的樹結構，因此只有清單視圖可用。
 
 ![元件主控台](/help/sites-cloud/authoring/assets/components-console.png)
 
 >[!NOTE]
 >
->「元件控制台」顯示系統中的所有元件。 「元 [件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 」顯示作者可使用的元件，並隱藏以句點( `.`)開頭的任何元件群組。
+>「元件控制台」顯示系統中的所有元件。 「元 [件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 」顯示作者可使用的元件，並隱藏以句點( `.`)開頭的元件群組。
 
 ## 搜尋 {#search-field}
 
-使用「 **僅內容****** 」圖示（左上角），您可以開啟「搜尋」面板以搜尋和／或篩選元件：
+使用「 **僅內容****** 」圖示 (左上角)，您可以開啟「搜尋」面板以搜尋和/或篩選元件：
 
 ![在元件控制台中搜索](/help/sites-cloud/authoring/assets/components-console-search.png)
 
@@ -40,6 +43,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       * 按一下圖示的來源後，您就會前往該元件。
    * 查看組 **件的資源類** 型 **和資源超級類型** （如果已定義）。
       * 按一下「資源超級類型」(Resource Super Type)將帶您進入該元件。
+
    >[!NOTE]
    >
    >由於 `/apps` 在執行時期無法編輯元件主控台，因此是唯讀的。
