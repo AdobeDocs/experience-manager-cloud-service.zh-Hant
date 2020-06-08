@@ -1,13 +1,16 @@
 ---
-title: 編寫概念
+title: 製作概念
 description: 在AEM中編寫概念
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 1%
 
 ---
 
 
-# 編寫概念 {#authoring-concepts}
+# 製作概念 {#authoring-concepts}
 
 AEM安裝通常至少包含兩個環境：
 
