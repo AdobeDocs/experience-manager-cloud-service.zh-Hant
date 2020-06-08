@@ -1,13 +1,16 @@
 ---
-title: 使用Quickviews建立自訂快顯視窗
+title: 使用「快速檢視」建立自訂快顯視窗
 description: 在電子商務體驗中使用預設的Quickview，以便顯示包含產品資訊的快顯視窗來推動購買。 您可以觸發自訂內容以顯示在快顯視窗中。
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 1%
 
 ---
 
 
-# 使用Quickviews建立自訂快顯視窗 {#using-quickviews-to-create-custom-pop-ups}
+# 使用「快速檢視」建立自訂快顯視窗 {#using-quickviews-to-create-custom-pop-ups}
 
 在電子商務體驗中使用預設的Quickview，以便顯示包含產品資訊的快顯視窗來推動購買。 不過，您可以觸發自訂內容以顯示在快顯視窗中。 根據您使用的檢視器，此功能可讓使用者按一下熱點、縮圖影像或影像地圖，以檢視資訊或相關內容。
 
@@ -32,15 +35,15 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
     <td><strong>完成這些步驟以建立Quickview</strong></td>
     </tr>
     <tr>
-    <td>互動式影像</td>
+    <td>互動影像</td>
     <td><a href="/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">將熱點添加到影像橫幅</a>。</td>
     </tr>
     <tr>
-    <td>互動式影片</td>
+    <td>互動影片</td>
     <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">為視訊新增互動功能</a>。</td>
     </tr>
     <tr>
-    <td>轉盤橫幅</td>
+    <td>輪播橫幅</td>
     <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">將熱點或影像映射添加到橫幅</a>。<br /> </td>
     </tr>
     </tbody>
@@ -178,7 +181,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    </div>
    ```
 
-1. 新增函式以更新快顯視窗中的sku值；取代步驟5中建立的簡單函式，讓快顯視覺化。 與下列項目搭配：
+1. 新增函式以更新快顯視窗中的sku值； 取代步驟5中建立的簡單函式，讓快顯視覺化。 與下列項目搭配：
 
    ```xml
    <script type="text/javascript">
