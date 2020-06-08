@@ -1,18 +1,21 @@
 ---
-title: Maven專案版本處理
+title: Maven 專案版本處理
 description: Maven Project Version Handlingt —— 雲端服務
 translation-type: tm+mt
 source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 6%
 
 ---
 
 
-# Maven專案版本處理 {#maven-project-version-handling}
+# Maven 專案版本處理 {#maven-project-version-handling}
 
 
-## 瞭解Maven專案版本處理 {#understanding-project-version}
+## Understanding Maven Project Version Handling {#understanding-project-version}
 
-對於舞台和生產部署，Cloud manager會產生獨特的遞增版本。
+對於舞台和生產部署，Cloud Manager會產生獨特的遞增版本。
 
 此版本在管線執行詳細資料頁面和活動頁面上顯示。 當執行建置時，Maven專案會更新為使用此版本，並在git儲存庫中建立標籤，其名稱為該版本。
 
@@ -28,4 +31,4 @@ source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
 
 >[!NOTE]
 >
->無論原始版本是否已併入Cloud manager初始化的版本，原始版本都可作為名為cloudManagerOriginalVersion的Maven屬 *性使用。*
+>無論原始版本是否已併入Cloud Manager初始化的版本，原始版本都可作為名為cloudManagerOriginalVersion的Maven屬 *性使用。*
