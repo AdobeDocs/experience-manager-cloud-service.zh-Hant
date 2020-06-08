@@ -3,6 +3,9 @@ title: 相關聯的內容
 description: 關聯的內容提供連線，讓資產在新增至內容頁面時（可選）可與片段一起使用。
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 16%
 
 ---
 
@@ -23,10 +26,10 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    ![相關聯的內容](assets/cfm-assoc-content-01.png)
 
-2. 選 **取「關聯內容** 」或「 **關聯繫列** 」（視情況而定，視系統是否已關聯）。
+2. 選 **取「關聯內容** 」或「 **關聯繫列** 」 (視情況而定，視系統是否已關聯)。
 3. 選取所需的系列。
 
-   您可以選擇將片段本身新增至選取的系列；這個艾滋病追蹤。
+   您可以選擇將片段本身新增至選取的系列； 這個艾滋病追蹤。
 
    ![選取系列](assets/cfm-assoc-content-02.png)
 
