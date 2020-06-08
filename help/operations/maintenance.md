@@ -3,6 +3,9 @@ title: AEM中的Maintenance Tasks as a Cloud Service
 description: 'AEM中的Maintenance Tasks as a Cloud Service '
 translation-type: tm+mt
 source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+workflow-type: tm+mt
+source-wordcount: '892'
+ht-degree: 2%
 
 ---
 
@@ -56,7 +59,7 @@ source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
    <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily（此值不應變更）</li>
-    <li><strong>windowStartTime</strong> = HH:MM，用作24小時時鐘。 定義與Daily Maintenance windows關聯的Maintenance Tasks何時應開始執行。</li>
+    <li><strong>windowStartTime</strong> = HH:MM，用作24小時時鐘。 定義與Daily Maintenance Windows關聯的Maintenance Tasks何時應開始執行。</li>
     <li><strong>windowEndTime</strong> = HH:MM，用作24小時時鐘。 定義與「每日維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。</li>
     </ul> </td> 
   </tr>
@@ -71,7 +74,7 @@ source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
     <li><strong>windowSchedule</strong> = weekly（此值不應變更）</li>
     <li><strong>windowStartTime</strong> = HH:MM，用作24小時時鐘。 定義與每週維護窗口關聯的維護任務何時開始執行。</li>
     <li><strong>windowEndTime</strong> = HH:MM，用作24小時時鐘。 定義與「每週維護窗口」關聯的維護任務何時應停止執行（如果尚未完成）。</li>
-    <li><strong>windowScheduleWekdays = 1-7之間的2個值陣列。 例如，[5,5]</strong> 陣列的第一個值是調度作業的開始日，第二個值是停止作業的結束日。 開始和結束的確切時間分別由windowStartTime和windowEndTime控制。</li>
+    <li><strong>windowScheduleWekdays = 1-7之間的2個值陣列。 例如， [5,5]</strong> 陣列的第一個值是調度作業的開始日，第二個值是停止作業的結束日。 開始和結束的確切時間分別由windowStartTime和windowEndTime控制。</li>
     </ul> </td> 
   </tr>
   <tr>
@@ -85,7 +88,7 @@ source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
     <li><strong>windowSchedule</strong> = daily（此值不應變更）</li>
     <li><strong>windowStartTime</strong> = HH:MM，用作24小時時鐘。 定義與「每月維護」窗口關聯的維護任務何時開始執行。</li>
     <li><strong>windowEndTime</strong> = HH:MM，用作24小時時鐘。 定義與「每月維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。</li>
-    <li><strong>windowScheduleWekdays = 1-7之間的2個值陣列。 例如，[5,5]</strong> 陣列的第一個值是調度作業的開始日，第二個值是停止作業的結束日。 開始和結束的確切時間分別由windowStartTime和windowEndTime控制。</li>
+    <li><strong>windowScheduleWekdays = 1-7之間的2個值陣列。 例如， [5,5]</strong> 陣列的第一個值是調度作業的開始日，第二個值是停止作業的結束日。 開始和結束的確切時間分別由windowStartTime和windowEndTime控制。</li>
     <li><strong>windowFirstLastStartDay - 0/1</strong> 0，以排程當月的第一週，或1，排程當月的最後一週。 如果缺少值，則有效地每天排程工作，並受每月windowScheduleWeekdays的管理。</li>
     </ul> </td> 
   </tr>
