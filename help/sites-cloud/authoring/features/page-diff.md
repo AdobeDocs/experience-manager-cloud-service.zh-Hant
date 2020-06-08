@@ -3,6 +3,9 @@ title: 頁面差異
 description: 頁面比較功能可方便並排比較兩頁的差異。
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 1%
 
 ---
 
