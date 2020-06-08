@@ -1,13 +1,16 @@
 ---
-title: DHTML檢視器生命週期結束常見問答集
+title: DHTML 檢視器生命週期結束常見問答集
 description: 自2014年1月31日起，Scene7的DHTML檢視器平台將正式停止使用。 此通知會提供常見問題的解答，讓您可準備此項轉換至我們新的HTML5檢視器平台。
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 1%
 
 ---
 
 
-# DHTML檢視器生命週期結束常見問答集{#dhtml-viewer-end-of-life-faqs}
+# DHTML 檢視器生命週期結束常見問答集{#dhtml-viewer-end-of-life-faqs}
 
 自2014年1月31日起，Scene7的DHTML檢視器平台將正式停止使用。 此通知會提供常見問題的解答，讓您可準備此項轉換至我們新的HTML5檢視器平台。
 
@@ -77,7 +80,7 @@ Web標準日新月異，而DHTML是較舊的Web開發技術，很快被HTML5所�
 
 **HTML5檢視器平台何時會具備從DHTML檢視器平台轉換所需的功能？**
 
-Scene7於2011年秋季發行第一個HTML5檢視器SDK，並推出5.5版。自此之後，我們為平台新增了許多功能，並延伸了對更多檢視器類型的支援。 針對大部份的檢視器需求，HTML5檢視器平台可能已具備您現在需要移轉的功能。 我們每季都會推出此檢視器平台，繼續大力投資。
+Scene7於2011年秋季發行第一個HTML5檢視器SDK，並推出5.5版。 自此之後，我們為平台新增了許多功能，並延伸了對更多檢視器類型的支援。 針對大部份的檢視器需求，HTML5檢視器平台可能已具備您現在需要移轉的功能。 我們每季都會推出此檢視器平台，繼續大力投資。
 
 若要判斷現今HTML5檢視器平台是否符合您的檢視器需求，請參閱下列檔案：
 
@@ -94,7 +97,7 @@ Scene7於2011年秋季發行第一個HTML5檢視器SDK，並推出5.5版。自�
 1. 使用其中一個Scene7現成可用的HTML5檢視器，其範例可在以下網址找到： [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
 1. 在SPS應用程式設定下，設定其中一個Scene7現成可用的HTML5檢視器。 這可讓您自訂特定行為，例如檢視器大小、轉場、縮放行為等： [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html)
 1. 修改CSS以自訂Scene7現成可用的HTML5檢視器外觀和感覺，以變更視覺設計，例如按鈕圖稿、位置、透明度、背景顏色等： [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers)
-1. 使用SDK從頭開始建立自訂HTML5檢視器，您可從這裡下載： [https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html)。 您可以與專業服務合作來建立自訂檢視器，或由您自己的網頁開發團隊來建立。
+1. 使用SDK從頭開始建立自訂HTML5檢視器，您可從這裡下載： [https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html). 您可以與專業服務合作來建立自訂檢視器，或由您自己的網頁開發團隊來建立。
 
 **不支援HTML5的瀏覽器呢？**
 
@@ -116,7 +119,7 @@ HTML5在許多行動裝置和網頁瀏覽器上都受到支援，並持續獲得
 
 **如果我想要使用現有的DHTML檢視器，維持生產線上狀態，我有哪些選項？**
 
-雖然您仍可使用DHTML檢視器在製作中上線，但請務必注意，在2014年1月31日之後將不會有增強功能、錯誤修正或客戶服務。 因此，我們強烈建議所有客戶移轉至我們更強穩的HTML5檢視器平台。. 但是，如果您的業務狀況在EOL日期之前無法進行此類移轉，您可以選擇與專業服務合約，以延長支援的維護時間。 如需詳細資訊，請連絡您的客戶經理。
+雖然您仍可使用DHTML檢視器在製作中上線，但請務必注意，在2014年1月31日之後將不會有增強功能、錯誤修正或客戶服務。 因此，我們強烈建議所有客戶移轉至我們更強穩的HTML5檢視器平台。 . 但是，如果您的業務狀況在EOL日期之前無法進行此類移轉，則您可以選擇與專業服務合約，以延長支援的維護時間。 如需詳細資訊，請連絡您的客戶經理。
 
 **如需詳細資訊，請與誰聯絡？**
 
