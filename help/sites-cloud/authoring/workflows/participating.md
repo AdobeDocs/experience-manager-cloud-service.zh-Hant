@@ -3,6 +3,9 @@ title: 參與工作流程
 description: 工作流程通常包含要求人員在頁面或資產上執行活動的步驟。
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 可用工作流程動作的通知 {#notifications-of-available-workflow-actions}
 
-當您被指派工作項目時(例如「核准內 **容**」)，會出現各種警報和／或通知：
+當您被指派工作項目時(例如「核准內 **容**」)，會出現各種警報和/或通知：
 
 * 您的 [通知指示](/help/sites-cloud/authoring/getting-started/inbox.md) （工具列）將會增加：
 
@@ -31,16 +34,17 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    ![收件匣中的通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * 當您使用頁面編輯器時，狀態列會顯示：
-   * 應用於頁面的工作流的名稱；例如，要求啟動。
-   * 當前用戶在工作流的當前步驟中可以執行的任何操作；例如，「完成」(Complete)、「委派」(Delegate)、「查看」(View)詳細資訊。
+   * 應用於頁面的工作流的名稱； 例如，要求啟動。
+   * 當前用戶在工作流的當前步驟中可以執行的任何操作； 例如，「完成」(Complete)、「委派」(Delegate)、「查看」(View)詳細資訊。
    * 頁面所受的工作流程數。 您可以：
       * 使用向左／向右箭頭來導覽各種工作流程的狀態資訊。
       * 按一下／點選實際數字，以開啟所有適用工作流程的下拉式清單，然後選取您要顯示在狀態列中的工作流程。
+
    ![具有多個工作流程的頁面](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
    >[!NOTE]
    >
-   >狀態列僅對具有工作流權限的用戶可見；例如，群組的成 `workflow-users` 員。
+   >狀態列僅對具有工作流權限的用戶可見； 例如，群組的成 `workflow-users` 員。
    >
    >
    >當目前的使用者直接參與工作流程的目前步驟時，會顯示動作。
@@ -55,8 +59,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 在此操作中，您可以指明：
 
-* **下一步**:下一步；您可以從提供的清單中選擇
-* **評論**:if freed
+* **下一步**: 下一步； 您可以從提供的清單中選擇
+* **評論**: if freed
 
 您可以從以下任一步驟中完成參與者步驟：
 
@@ -114,8 +118,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 在此操作中，您可以指明：
 
-* **使用者**:要委派給的用戶；您可以從提供的清單中選擇
-* **評論**:if freed
+* **使用者**: 要委派給的用戶； 您可以從提供的清單中選擇
+* **評論**: if freed
 
 您可以從以下任一位置委派參與者步驟：
 
@@ -164,8 +168,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 在此操作中，您可以指明：
 
-* **上一步**:返回的步驟；您可以從提供的清單中選擇
-* **評論**:if freed
+* **上一步**: 返回的步驟； 您可以從提供的清單中選擇
+* **評論**: if freed
 
 您可以從以下任一位置對參與者執行退一步：
 
