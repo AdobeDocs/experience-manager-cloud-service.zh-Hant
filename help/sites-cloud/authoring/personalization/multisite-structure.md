@@ -1,13 +1,16 @@
 ---
-title: 目標內容的多網站管理結構
+title: 如何架構目標內容的多網站管理
 description: 圖表顯示多網站對目標內容的支援結構
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 8%
 
 ---
 
 
-# 目標內容的多網站管理結構 {#how-multisite-management-for-targeted-content-is-structured}
+# 如何架構目標內容的多網站管理 {#how-multisite-management-for-targeted-content-is-structured}
 
 下圖說明如何建構針對目標內容的多網站支援。
 
