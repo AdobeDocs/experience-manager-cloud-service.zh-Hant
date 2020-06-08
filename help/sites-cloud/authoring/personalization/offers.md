@@ -3,6 +3,9 @@ title: 建立和管理選件
 description: 使用選件主控台來建立選件，供您用於活動體驗
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '875'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 按一下或點選「 **建立** 」，然 **後** 「建立品 **牌**」。
 1. 選取品牌範本，然後按一下或點選「下 **一步**」。
 1. 在「選件」和「活動」控制台中，輸入您要顯示的品牌標題。 （可選）鍵入或選擇一個或多個標籤以與品牌關聯。
-1. 按一下或點選「 **建立**」。
+1. Click or tap **Create**.
 
 ## 新增資料夾至選件程式庫 {#add-a-folder-to-an-offer-library}
 
@@ -45,7 +48,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    ![定義資料夾屬性](/help/sites-cloud/authoring/assets/offers-folder-properties.png)
 
-1. 按一下或點選「 **建立**」。
+1. Click or tap **Create**.
 
 ## 新增選件至選件程式庫 {#add-an-offer-to-an-offer-library}
 
