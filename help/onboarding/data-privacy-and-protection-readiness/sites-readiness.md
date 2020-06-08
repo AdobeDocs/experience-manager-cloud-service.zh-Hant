@@ -1,8 +1,11 @@
 ---
 title: 資料保護與資料隱私權法規- Adobe Experience Manager作為雲端服務網站的就緒性
-description: '瞭解Adobe Experience Manager如何以雲端服務網站的形式支援各種資料保護與資料隱私權規定；包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
+description: '瞭解Adobe Experience Manager如何以雲端服務網站的形式支援各種資料保護與資料隱私權規定； 包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
 translation-type: tm+mt
 source-git-commit: 1130e8a07bc3826380483a7560ebda7e8a17e238
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 1130e8a07bc3826380483a7560ebda7e8a17e238
 >
 >如需Adobe對隱私權問題之回應，以及這對您身為Adobe客戶意味著什麼的詳細資訊，請參 [閱Adobe的隱私權中心](https://www.adobe.com/privacy.html)。
 
-Adobe Experience manager作為雲端服務網站，已準備好協助客戶履行其資料隱私及保護合規義務。 本頁面會引導客戶完成在AEM Sites中處理此類要求的程式。 它說明儲存的私人資料位置，以及如何手動或使用程式碼移除這些資料。
+Adobe Experience Manager作為雲端服務網站，已準備好協助客戶履行其資料隱私及保護合規性義務。 本頁面會引導客戶完成在AEM Sites中處理此類要求的程式。 它說明儲存的私人資料位置，以及如何手動或使用程式碼移除這些資料。
 
 如需詳細資訊，請參 [閱Adobe隱私權中心](https://www.adobe.com/privacy.html)。
 
@@ -27,11 +30,11 @@ Adobe Experience manager作為雲端服務網站，已準備好協助客戶履�
 >
 >如需詳 [細資訊，請參閱Adobe Experience Manager的雲端服務就緒性資料保護與資料隱私權法規](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) 。
 
-## AEM作者層 {#aem-author-tier}
+## AEM 作者階層 {#aem-author-tier}
 
 AEM Foundation檔案中涵蓋作者伺服器上的使用者帳戶和UGC [內容](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)。
 
-## AEM發佈層 {#aem-publish-tier}
+## AEM 發佈階層 {#aem-publish-tier}
 
 AEM Foundation檔案中涵蓋用來驗證網站訪客的使用者帳戶，以及發佈伺服器上的UGC [內容](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)。
 
@@ -43,16 +46,16 @@ AEM Foundation檔案中涵蓋用來驗證網站訪客的使用者帳戶，以及
 AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) that can be used for managing the opt-in/opt-out for users.
 -->
 
-Adobe Experience manager受Cookie選擇退出服務約束，該服務用於管理使用者的選擇加入／選擇退出。
+Adobe Experience Manager受Cookie選擇退出服務約束，該服務用於管理使用者的選擇加入／選擇退出。
 
 要退出：
 
 1. 導航到:
    [Adobe隱私權中心——選擇退出](https://www.adobe.com/privacy/opt-out.html)
 
-1. 向下捲動至 **服務** - **Experience cloud服務使用資料**。
+1. 向下捲動至 **服務** - **Experience Cloud服務使用資料**。
 
-1. 選擇引用的連結；目前的 **標題**。
+1. 選擇引用的連結； 目前的 **標題**。
 
 1. 您將會看到下列詳細資訊，以及選擇退出或加入的選項：
 
@@ -67,7 +70,7 @@ Adobe Experience manager受Cookie選擇退出服務約束，該服務用於管�
 
    >[!NOTE]
    >
-   > 「使用條款」的「隱 **私權政策** 」一節中 [有進一步說明](https://marketing.adobe.com/resources/help/en_US/terms.html)。
+   > 「使用條款」的「隱 **私權政策** 」一節中 [有進一步說明](https://marketing.adobe.com/resources/help/zh_TW/terms.html)。
 
 ## Analytics Foundation {#analytics-foundation}
 
@@ -79,7 +82,7 @@ AEM Sites包含Analytics Foundation的選購整合，該整合使用Adobe Analyt
 
 AEM Sites包含與Personalization Foundation by Target的選購整合，此整合使用Adobe Target隨選服務中的功能。
 
-如需有關管理Adobe target相關資料主體要求的詳細資訊，請參閱 [Adobe Target —— 隱私權與一般資料保護規則](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html)。
+如需有關管理Adobe Target相關資料主體要求的詳細資訊，請參閱 [Adobe Target —— 隱私權與一般資料保護規則](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html)。
 
 ## ContextHub {#contexthub}
 
@@ -89,7 +92,7 @@ AEM provides an optional data layer with [ContextHub](/help/sites-developing/con
 
 AEM提供ContextHub的選用資料層。 如此可保留瀏覽器中特定訪客的資料，以便用於規則型個人化。
 
-依預設，此訪客資料不會儲存在AEM中；AEM會傳送規則至資料層，以便在瀏覽器中做個人化決策。
+依預設，此訪客資料不會儲存在AEM中； AEM會傳送規則至資料層，以便在瀏覽器中做個人化決策。
 
 ### 實作選擇加入／選擇退出 {#implementing-opt-in-opt-out}
 
@@ -127,7 +130,7 @@ AEM提供ContextHub的選用資料層。 如此可保留瀏覽器中特定訪客
 
 若要預覽使用ContextHub的永久性，使用者可以：
 
-* 使用瀏覽器的主控台；例如：
+* 使用瀏覽器的主控台； 例如：
 
    * Chrome:
 
@@ -138,7 +141,7 @@ AEM提供ContextHub的選用資料層。 如此可保留瀏覽器中特定訪客
          * Cookie >（網站）> SessionPersistence
    * Firefox:
 
-      * 開啟「開發人員工具>儲存空間：
+      * 開啟「開發人員工具>儲存空間」:
 
          * 本機儲存>（網站）> ContextHubPersistence
          * 作業儲存>（網站）> ContextHubPersistence
@@ -226,7 +229,7 @@ console.log(storage.getTree());
    ContextHub.resetAllStores();
    ```
 
-* 清除特定的持久層；例如，sessionStorage:
+* 清除特定的持久層； 例如，sessionStorage:
 
    ```
    var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
