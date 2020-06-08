@@ -1,13 +1,16 @@
 ---
-title: 匯出至 CSV
+title: 匯出為 CSV
 description: 將您頁面的相關資訊匯出至本機系統上的CSV檔案
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 42%
 
 ---
 
 
-# 匯出至 CSV {#export-to-csv}
+# 匯出為 CSV {#export-to-csv}
 
 **「建立CSV報表** 」可讓您將有關頁面的資訊匯出至本機系統上的CSV檔案。
 
@@ -45,7 +48,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 若要建立CSV匯出：
 
 1. 開啟 **Sites** Console，視需要導覽至所需位置。
-   * 瀏覽Sites **控制台時** （在「清單」檢視中），可使用「建立 **CSV報表** 」選項
+   * 瀏覽Sites **控制台時**  (在「清單」檢視中)，可使用「建立 **CSV報表** 」選項
    * 它是「建立」下拉式功 **能表** 的選項：
 
       ![建立CSV選項](/help/sites-cloud/authoring/assets/csv-create.png)
