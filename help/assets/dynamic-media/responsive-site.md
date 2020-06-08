@@ -3,11 +3,14 @@ title: 為互動式網站提供最佳化影像
 description: 如何使用回應式程式碼功能來提供最佳化的影像
 translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 13%
 
 ---
 
 
-# 為互動式網站提供最佳化影像 {#delivering-optimized-images-for-a-responsive-site}
+# 為回應式網站傳送最佳化影像 {#delivering-optimized-images-for-a-responsive-site}
 
 當您想要與網頁開發人員共用用於互動式服務的程式碼時，請使用「互動式程式碼」功能。 您可將回應式(**[!UICONTROL RESS]**)程式碼複製到剪貼簿，以便與網頁開發人員共用。
 
@@ -15,7 +18,7 @@ source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 另請參 [閱將視訊檢視器內嵌在網頁上。](embed-code.md)
 
-另請參 [閱將URL連結至您的Web應用程式。](linking-urls-to-yourwebapplication.md)
+See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
 **為互動式網站提供最佳化影像**:
 
@@ -23,7 +26,7 @@ source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
-1. 選取回應式影像預設集。 URL **[!UICONTROL 和]****[!UICONTROL RESS]** 按鈕出現。
+1. 選取回應式影像預設集。URL **[!UICONTROL 和]****[!UICONTROL RESS]** 按鈕出現。
 
    ![chlimage_1-409](assets/chlimage_1-409.png)
 
