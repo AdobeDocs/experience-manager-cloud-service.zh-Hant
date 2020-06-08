@@ -3,11 +3,14 @@ title: 全景影像
 description: 瞭解如何在動態媒體中處理全景影像。
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 2%
 
 ---
 
 
-# 全景影像{#panoramic-images}
+# Panoramic images{#panoramic-images}
 
 本節將說明如何與全景影像檢視器搭配使用，以呈現球面全景影像，提供如臨現場的360°房間、屬性、位置或風景觀賞體驗。
 
@@ -24,7 +27,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
 * 使用關鍵字 `equirectangular`、 `spherical`和 `panorama`、或 `spherical` 和標籤 `panoramic`。 請參 [閱使用標籤](/help/sites-cloud/authoring/features/tags.md)。
 
-外觀比例和關鍵字條件都適用於資產詳細資料頁面和 `Panoramic Media` WCM元件的全景資產。
+Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
 
 若要上傳資產以搭配全景影像檢視器使用，請參閱「上 [傳資產」](/help/assets/manage-digital-assets.md#uploading-assets)。
 
