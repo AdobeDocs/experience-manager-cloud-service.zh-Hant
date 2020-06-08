@@ -3,15 +3,18 @@ title: 瞭解方案和方案類型
 description: 瞭解方案和方案類型——雲端服務
 translation-type: tm+mt
 source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 3%
 
 ---
 
 
 # 了解方案和方案類型 {#understanding-programs}
 
-在Cloud manager中，您的最上層是「租用戶」實體，其中可包含多個「程式」。  每個方案只能包含一個以上的生產環境和多個非生產環境。
+在Cloud Manager中，您的最上層是「租用戶」實體，其中可包含多個「程式」。  每個方案只能包含一個以上的生產環境和多個非生產環境。
 
-下圖顯示Cloud manager中的實體階層。
+下圖顯示Cloud Manager中的實體階層。
 
 ![影像](assets/program-types1.png)
 
