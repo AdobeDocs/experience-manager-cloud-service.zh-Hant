@@ -1,10 +1,13 @@
 ---
-title: 在[!DNL Adobe Experience Manager]中管理數位資產的中繼資料。
-description: 瞭解中繼資料的類型，以及[!DNL Adobe Experience Manager Assets]如何協助管理資產的中繼資料，讓資產分類和組織更輕鬆。 [!DNL Experience Manager]可讓資產根據其中繼資料自動組織和處理。
+title: 管理您的數位資產的中繼資料 [!DNL Adobe Experience Manager]。
+description: 瞭解中繼資料的類型， [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 以及如何根據資產的中繼資料自動組織和處理資產。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
 source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
+workflow-type: tm+mt
+source-wordcount: '1830'
+ht-degree: 5%
 
 ---
 
