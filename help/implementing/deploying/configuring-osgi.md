@@ -1,20 +1,20 @@
 ---
-title: 將OSGi的AEM設定為雲端服務
+title: 為 AEM 雲端服務設定 OSGi
 description: '具有機密值和環境特定值的OSGi配置 '
 translation-type: tm+mt
 source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
 workflow-type: tm+mt
 source-wordcount: '2689'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Configuring OSGi for AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
+# 為 AEM 雲端服務設定 OSGi {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi](https://www.osgi.org/) 是Adobe Experience Manager(AEM)技術堆疊中的基本元素。 它用於控制AEM的組合束及其配置。
 
-OSGi提供標準化的基元，可讓應用程式從可重複使用的小型協同元件建構。 這些元件可組成應用程式並加以部署。 這樣可以輕鬆管理OSGi捆綁包，因為它們可以單獨停止、安裝和啟動。 互依關係會自動處理。 每個OSGi元件都包含在其中一個不同的束中。 如需詳細資訊，請參閱 [OSGi規格](https://www.osgi.org/Specifications/HomePage)。
+OSGi提供標準化的基元，可讓應用程式從可重複使用的小型元件和協作元件建構。 這些元件可組成應用程式並加以部署。 這樣可以輕鬆管理OSGi捆綁包，因為它們可以單獨停止、安裝和啟動。 互依關係會自動處理。 每個OSGi元件都包含在其中一個不同的束中。 如需詳細資訊，請參閱 [OSGi規格](https://www.osgi.org/Specifications/HomePage)。
 
 您可以透過屬於AEM程式碼專案一部分的設定檔案，管理OSGi元件的設定設定。
 
