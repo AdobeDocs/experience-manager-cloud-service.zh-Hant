@@ -100,7 +100,7 @@ AEM a Cloud Service SDK API Jar（先前代管於該位置）現在位於Maven C
 
 ### 已知問題 {#known-issues-cm}
 
-* 在特定期間內未偵測到任何活動時，沙盒程式中的環境將會休眠。 Cloud Manager中不會觀察到此狀態。 不過，您可透過Developer Console觀察狀態。 這個問題將在即將發行的版本中解決。
+* 在特定期間內未偵測到任何活動時，沙盒程式中的環境將會休眠。 Cloud Manager中不會觀察到此狀態。 不過，您可透過Developer Console來觀察狀態。 這個問題將在即將發行的版本中解決。
 
 * 直接從Cloud Manager連結至Developer Console時，不會顯示沙盒程式環境的解除休眠／休眠選項。 若要解決此問題，請在Developer Console中加入一 `#release-cm-p1234-e5678` 次模式至URL結尾， *1234* 是Program ID, *5678* 是Environment ID。 這個問題將在即將發行的版本中解決。
 
