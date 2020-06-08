@@ -3,6 +3,9 @@ title: 管理專案
 description: 專案可讓您將資源分組為一個實體，以便在「專案」主控台中存取和管理，以組織您的專案
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 12%
 
 ---
 
@@ -26,9 +29,9 @@ AEM現成可用，提供下列範本供您在建立專案時選擇：
 * 產品像片拍攝專案
 * 翻譯專案
 
-從專案到專案，建立專案的程式都相同。 專案類型之間的差異包括可用的使 [用者角色](/help/sites-cloud/authoring/projects/overview.md)[和工作流程](/help/sites-cloud/authoring/projects/workflows.md)。  要建立新項目，請執行以下操作：
+從專案到專案，建立專案的程式都相同。專案類型之間的差異包括可用的使 [用者角色](/help/sites-cloud/authoring/projects/overview.md)[和工作流程](/help/sites-cloud/authoring/projects/workflows.md)。要建立新項目，請執行以下操作：
 
-1. 在「 **專案**」中，點選／按一 **下「建立** 」以開啟「 **** 建立專案」精靈：
+1. 在「 **專案**」中，點選/按一 **下「建立** 」以開啟「 **** 建立專案」精靈：
 1. 選取範本，然後按一下「 **下一步**」。
 
    ![建立專案](/help/sites-cloud/authoring/assets/projects-create.png)
@@ -72,7 +75,7 @@ AEM現成可用，提供下列範本供您在建立專案時選擇：
 
 >[!NOTE]
 >
->當您建立專案並將使用者新增至各種角色時，系統會自動建立與專案相關的群組，以管理相關的權限。 例如，名為Myproject的專案會有三個群組 **Myproject Owners**、 **Myproject Editors**、 **Myproject Obsertors**。 不過，如果刪除專案，這些群組不會自動刪除。 管理員需要手動刪除「工具 **>安全** 性 **>** 群組 ****」。
+>當您建立專案並將使用者新增至各種角色時，系統會自動建立與專案相關的群組，以管理相關的權限。例如，名為Myproject的專案會有三個群組 **Myproject Owners**、 **Myproject Editors**、 **Myproject Obsertors**。不過，如果刪除專案，這些群組不會自動刪除。管理員需要手動刪除「工具 **>安全** 性 **>** 群組 ****」。
 
 ### 新增項目至圖格 {#adding-items-to-a-tile}
 
@@ -140,4 +143,4 @@ AEM現成可用，提供下列範本供您在建立專案時選擇：
 
    ![啟動專案](/help/sites-cloud/authoring/assets/projects-activate.png)
 
-1. 點選／按一 **下「完成** 」以儲存變更。
+1. Tap/click **Done** to save your changes.
