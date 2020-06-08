@@ -3,6 +3,9 @@ title: 啟動
 description: 啟動可讓您有效率地開發未來版本的內容。 它們可讓您做好變更，以備日後出版，同時仍能維持目前的頁面
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 6%
 
 ---
 
@@ -27,9 +30,9 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 本節說明如何從Sites主控台或啟動主控台中建立、編輯 [和提升](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)(以及視需要 [刪除)啟動頁面](#the-launches-console):
 
-* [建立啟動](/help/sites-cloud/authoring/launches/creating.md)
+* [建立啟動 ](/help/sites-cloud/authoring/launches/creating.md)
 * [編輯啟動](/help/sites-cloud/authoring/launches/editing.md)
-* [促銷啟動](/help/sites-cloud/authoring/launches/promoting.md)
+* [提升啟動](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## 啟動——事件順序 {#launches-the-order-of-events}
 
@@ -41,6 +44,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * 復本是您的啟動。
    * 頂層來源頁面稱為「生 **產」**。
       * 來源頁面可從多個（個別）分支取用。
+
    ![啟動操作順序](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * 編輯啟動設定：
@@ -52,18 +56,20 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       * 從來源（在向後促銷後）頁面發佈內容。
       * 升級所有頁面，或僅升級修改的頁面。
    * 自動——這涉及下列事項：
-      * 「啟 **動**(**即時**) **日期** 」欄位：這可在建立或編輯啟動時設定。
-      * 「生 **產就緒** 」標幟：這只能在編輯啟動時設定。
-      * 如果設 **定了Production Ready** (生產就緒 **)旗標，則啟動會自動升級至指定** Launch **(** Live **)日期的**&#x200B;生產頁面。 促銷後，生產頁面會自動發佈。\
+      * The **Launch**(**Live**) **date** field: this can be set when creating or editing a launch.
+      * 「生 **產就緒** 」標幟： 這只能在編輯啟動時設定。
+      * If the **Production Ready** flag is set, the launch will be automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. 促銷後，生產頁面會自動發佈。\
          如果尚未設定日期，則旗標將無效。
 * 同時更新來源和啟動頁面：
-   * 對源頁面的更改會自動在啟動副本中實現(如果設定為繼承；即即即即時副本)。
+   * 對源頁面的更改會自動在啟動副本中實現(如果設定為繼承； 即即即即時副本)。
    * 您可以變更啟動副本，而不中斷這些自動更新或來源頁面。
+
    ![並行動作](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [建立巢狀啟動](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) -啟動中的啟動：
    * 來源是現有的啟動。
-   * 您可以將 [巢狀啟動提升至](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) 任何目標；這可以是父級啟動或頂層來源頁面（生產）。
+   * 您可以將 [巢狀啟動提升至](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) 任何目標； 這可以是父級啟動或頂層來源頁面（生產）。
+
    ![巢狀啟動](/help/sites-cloud/authoring/assets/launches-nested.png)
 
    >[!CAUTION]
@@ -80,7 +86,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 「啟動」控制台提供啟動的概述，並可讓您對所列的動作採取動作。 可通過以下方式訪問控制台：
 
-* 工 **具控制** 台：工 **具**、網 **站**、 **啟動**。
+* 工 **具控制** 台： **工具**、 **網站**、 **啟動**。
 
 * 或直接使用 `https://<host>:<port>/libs/launches/content/launches.html`
 
