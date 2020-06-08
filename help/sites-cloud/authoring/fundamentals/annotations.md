@@ -3,6 +3,9 @@ title: 新增頁面註解
 description: 許多與內容直接相關的元件可讓您新增註解
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
