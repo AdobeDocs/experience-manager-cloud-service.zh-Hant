@@ -1,13 +1,16 @@
 ---
-title: 使用ContextHub資料預覽頁面
+title: 使用 ContextHub 資料預覽頁面
 description: ContextHub工具列顯示來自ContextHub商店的資料，並讓您變更商店資料，對於預覽內容非常有用
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 2%
 
 ---
 
 
-# 使用ContextHub資料預覽頁面 {#previewing-pages-using-contexthub-data}
+# 使用 ContextHub 資料預覽頁面  {#previewing-pages-using-contexthub-data}
 
 ContextHub工具列顯示來自ContextHub商店的資料，並讓您變更商店資料。 ContextHub工具列對於預覽由ContextHub商店中的資料所決定的內容非常有用。<!--The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.-->
 
