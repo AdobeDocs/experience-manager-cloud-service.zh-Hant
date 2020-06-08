@@ -3,6 +3,9 @@ title: 使用頁面版本
 description: 建立、比較和還原頁面版本
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 6%
 
 ---
 
@@ -62,7 +65,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >1. 建立任何頁面的版本。
 >1. 初始標籤和版本節點名稱為1.0、1.1、1.2等。
->1. 恢復第一個版本；即1.0。
+>1. 恢復第一個版本； 即1.0。
 >1. 再次建立新版本。
 >1. 產生的標籤和節點名稱現在會是1.0.0、1.0.1、1.0.2等。
 
@@ -71,7 +74,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 導覽以顯示您要回復為舊版的頁面。
 1. 在選擇模式 [下選擇頁](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
-1. 開啟「時 **間軸** 」欄，然後選 **取「全部顯示** 」 **或「版本**」。 將列出所選頁面的頁面版本。
+1. 開啟「時 **間軸** 」欄，然後選 **取「全部顯示** 」 **或「版本**」。將列出所選頁面的頁面版本。
 1. 選擇要回復的版本。 可能的選項將顯示：
 
    ![還原版本](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -131,7 +134,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    ![時間彎曲模式](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
-1. 在對話方塊中設定目標日期和時間，然後按一下或點選「設 **定日期」**。 如果您未選取時間，則預設為目前時間。
+1. 在對話方塊中設定目標日期和時間，然後按一下或點選「設 **定日期」**。如果您未選取時間，則預設為目前時間。
 
    ![時間彎曲目標日期](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
