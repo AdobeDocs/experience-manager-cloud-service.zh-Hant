@@ -4,6 +4,9 @@ description: 瞭解如何取出要編輯的資產，並在變更完成後將其�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +29,7 @@ Adobe Experience Manager(AEM)Assets可讓您取出要編輯的資產，並在完
 
    ![chlimage_1-469](assets/chlimage_1-469.png)
 
-   請注意，「 **[!UICONTROL Checkout]** （檢出）」表徵圖在開啟鎖的情況下切換為「 **[!UICONTROL Checkin]** （檢入）」表徵圖。
+   請注意，「 **[!UICONTROL Checkout]** （檢出）」表徵圖在開啟鎖的情況下切換到「 **[!UICONTROL Checkin]** （檢入）」表徵圖。
 
    ![chlimage_1-470](assets/chlimage_1-470.png)
 
@@ -50,7 +53,7 @@ Adobe Experience Manager(AEM)Assets可讓您取出要編輯的資產，並在完
 
    您也可以選擇註解或發佈資產。
 
-1. 從「資產」UI中選取已編輯的資產，然後按一下／點選工具列中的「 **[!UICONTROL 登入]** 」圖示。
+1. 從「資產」UI中選取已編輯的資產，然後按一下/點選工具列中的「 **[!UICONTROL 登入]** 」圖示。
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
