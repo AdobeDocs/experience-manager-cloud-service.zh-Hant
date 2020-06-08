@@ -1,8 +1,11 @@
 ---
 title: 複寫
-description: 分發和疑難排解複製。
+description: 散佈 和複製故障排除。
 translation-type: tm+mt
 source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +22,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 ### 快速取消／發佈——計畫取消／發佈 {#publish-unpublish}
 
-作者適用的這些標準AEM功能不會隨著AEM Cloud服務而改變。
+作者適用的這些標準AEM功能不會隨AEM Cloud服務而改變。
 
 ### 樹狀結構啟動 {#tree-activation}
 
@@ -27,7 +30,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 1. 從「AEM開始」選單導覽至「工 **具>部署>散發」**
 2. 選取卡片 **forwardPublisher**
-3. 進入forwardPublisher web控制台UI後，選擇「分 **發」**
+3. 進入forwardPublisher Web控制台UI後，選擇「分 **發」**
    ![散](assets/distribute.png "發")
 4. 在路徑瀏覽器中選擇路徑，選擇根據需要添加節點、樹或刪除，然後選擇「提交」( **Submit)**
 
