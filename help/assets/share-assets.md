@@ -4,6 +4,9 @@ description: 本文說明如何在Experience Manager Assets中以超連結的形
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '906'
+ht-degree: 5%
 
 ---
 
@@ -110,9 +113,9 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 行銷人員和業務線使用者可以使用、
 
-* **AEM案頭應用程式**:應用程式可在Windows和Mac上運作。 請參閱桌 [面應用程式概觀](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參 [閱瀏覽、搜尋和預覽資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立資產，並與AEM使用者的對應人員共用資產，例如上傳新影像。 請參閱 [使用案頭應用程式上傳資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* **AEM案頭應用程式**: 應用程式可在Windows和Mac上運作。 請參閱桌 [面應用程式概觀](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參 [閱瀏覽、搜尋和預覽資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立資產，並與AEM使用者的對應人員共用資產，例如上傳新影像。 請參閱 [使用案頭應用程式上傳資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
 
-* **Adobe Asset Link**:創意專業人員可直接在Adobe InDesign、Adobe Illustrator和Adobe Photoshop中搜尋及使用資產。
+* **Adobe Asset Link**: 創意專業人員可直接在Adobe InDesign、Adobe Illustrator和Adobe Photoshop中搜尋及使用資產。
 
 ## 設定資產共用 {#configure-sharing}
 
@@ -172,7 +175,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 Adobe Asset Link可簡化創作人員與行銷人員在內容建立程式中的協作。 它將Adobe Experience Manager(AEM)資產與Creative Cloud案頭應用程式Adobe InDesign、Adobe Photoshop和Adobe Illustrator連結在一起。 Adobe Asset Link面板可讓創意人員存取並修改儲存在AEM Assets中的內容，而不需離開他們最熟悉的創意應用程式。
 
-了 [解如何設定AEM以搭配Adobe Asset Link使用](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)。
+了 [解如何設定AEM以搭配Adobe Asset Link使用](https://helpx.adobe.com/tw/enterprise/using/configure-aem-assets-for-asset-link.html)。
 
 ## Best practices and troubleshooting {#bestpractices}
 
