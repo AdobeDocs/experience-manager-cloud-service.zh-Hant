@@ -1,19 +1,22 @@
 ---
-title: 回轉集
+title: 迴轉集
 description: 瞭解如何在動態媒體中處理回轉集
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1805'
+ht-degree: 13%
 
 ---
 
 
-# 回轉集{#spin-sets}
+# 迴轉集{#spin-sets}
 
 「回轉集」(Spin Set)模擬實際操作，即旋轉對象來檢查對象。 「回轉集」可讓您從任何角度檢視項目，從任何角度獲得關鍵視覺細節。
 
 回轉集可模擬360度檢視體驗。 動態媒體提供單軸回轉集，檢視器可在其中旋轉項目。 此外，使用者只需按幾下滑鼠，就可「自由格式」縮放和平移任何檢視。 這樣，用戶就可以更密切地從特定的角度檢查項目。
 
-回轉集由帶有單字 **[!UICONTROL SPINSET的橫幅指定]**。 此外，如果「回轉集」已發佈，則會顯示「 **[!UICONTROL World]** 」圖示所指的發佈日期，以及「 **[!UICONTROL Pencil]** 」圖示所指的上次修改日期。
+Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
 
 ![chlimage_1-](assets/chlimage_1-380.png)
 
@@ -21,7 +24,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 >
 >如需「資產」使用者介面的詳細資訊，請參 [閱「使用Touch UI管理資產」](/help/assets/manage-digital-assets.md)。
 
-## 快速入門：回轉集 {#quick-start-spin-sets}
+## 快速入門： 回轉集 {#quick-start-spin-sets}
 
 若要快速啟動並執行回轉集，請依照下列步驟進行：
 
@@ -33,15 +36,15 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    若要建立回轉集，請選取「 **[!UICONTROL 建立>回轉集]** 」，然後為該回轉集命名，選擇資產，然後選擇影像的顯示順序。
 
-   請參 [閱使用選擇器](/help/assets/dynamic-media/working-with-selectors.md)。
+   See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
    >[!NOTE]
    >
-   >您也可以透過批次集預設集自動 [建立回轉集](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)。 **** 重要：批集由IPS(Image Production System)建立，作為資產提取的一部分。
+   >您也可以透過批次集預設集自動 [建立回轉集](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)。**** 重要：批集由IPS(Image Production System)建立，作為資產提取的一部分。
 
 1. 視需要 [設定回轉集檢視器預設](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
-   管理員可以建立或修改回轉集檢視器預設集。 若要檢視含有檢視器預設集的回轉集，請選取該回轉集，然後在左側導軌下拉式選單中選取「檢 **視器**」。
+   管理員可以建立或修改回轉集檢視器預設集。若要檢視含有檢視器預設集的回轉集，請選取該回轉集，然後在左側導軌下拉式選單中選取「檢 **視器**」。
 
    請參閱「 **[!UICONTROL 工具>資產>檢視器預設集]** 」以建立或編輯檢視器預設集。
 
@@ -78,9 +81,9 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 以下是回轉集影像的一些最佳實務。 一般而言，旋轉集中的影像越多，影像旋轉效果就越好。 不過，在集合中加入許多影像也會增加影像載入所花的時間。 AEM建議拍攝影像的下列准則，以用於回轉集：
 
 * 至少，在一維回轉集中使用8-12張影像，在二維回轉集中使用16-24張影像。 至少需要8張影像才能旋轉360度。 一維回轉集比較常見，因為建立二維回轉集耗費大量人力。
-* 使用無損格式；建議使用TIFF和PNG。
+* 使用無損格式； 建議使用TIFF和PNG。
 * 遮色所有影像，讓項目出現在純白色或其他高對比背景上。 （可選）添加陰影。
-* 請確定產品詳細資訊已清楚標示，並且已集中注意。
+* 請確定產品詳細資訊已清楚標示，並集中注意。
 * 為具有人體模型或模特兒的時尚服裝拍攝旋轉影像。 通常，假人模型要麼是完全遮色的（使用玻璃模型），要麼在圖中顯示風格化的假人模型／服裝。 通過定義角度數，可建立模型上的回轉集。 在地板上用磁帶標籤每個角度，以引導模型向每個拍攝方向步移和查看。
 
 ## 建立回轉集 {#creating-spin-sets}
@@ -89,7 +92,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 >[!NOTE]
 >
->您也可以透過批次集預設集自動 [建立回轉集](/help/assets/dynamic-media/config-dm.md)。 **** 重要：批集由IPS(Image Production System)建立，作為資產提取的一部分。
+>您也可以透過批次集預設集自動 [建立回轉集](/help/assets/dynamic-media/config-dm.md)。**** 重要：批集由IPS(Image Production System)建立，作為資產提取的一部分。
 >
 >請參閱「設定動態媒體」中的「建立批次集預設集以自動產生影像集 [和回轉集」](/help/assets/dynamic-media/config-dm.md)。
 
@@ -99,7 +102,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 **要建立回轉集**
 
-1. 在「資產」中，導覽至您要建立回轉集的位置，按一下「建 **[!UICONTROL 立]**」，然後選取「 **[!UICONTROL 回轉集」]**。 您也可以從包含資產的資料夾內建立資產集。 隨即顯示回轉集編輯器。
+1. 在「資產」中，導覽至您要建立回轉集的位置，按一下「建 **[!UICONTROL 立]**」，然後選取「 **[!UICONTROL 回轉集」]**。您也可以從包含資產的資料夾內建立資產集。隨即顯示回轉集編輯器。
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
@@ -109,18 +112,18 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    >[!NOTE]
    >
-   >建立回轉集時，您可以變更回轉集縮圖，或允許AEM根據回轉集中的資產自動選取縮圖。 若要選取縮圖，請按一下「 **[!UICONTROL 變更縮圖]** 」並選取任何影像（您也可以導覽至其他檔案夾以尋找影像）。 如果您已選取縮圖，然後決定要讓AEM從回轉集產生縮圖，請選取「切換至 **[!UICONTROL 自動縮圖」]**。
+   >建立回轉集時，您可以變更回轉集縮圖，或允許AEM根據回轉集中的資產自動選取縮圖。 若要選取縮圖，請按一下「 **[!UICONTROL 變更縮圖]** 」並選取任何影像（您也可以導覽至其他檔案夾以尋找影像）。 If you have selected a thumbnail and then decide that you want AEM to generate one from the spin set, select **[!UICONTROL Switch to Automatic thumbnail]**.
 
 1. 執行下列任一項作業：
 
    * 在「回轉集編輯器」頁面的左上角附近，點選「新增 **[!UICONTROL 資產」]**。
 
    * 在「回轉集編輯器」頁面的中間，點選「點選」 **[!UICONTROL 以開啟「資產選擇器」]**。
-   點選以選取您要納入回轉集中的資產。 選取的資產上面有核取標籤圖示。 完成後，在頁面右上角附近點選「選 **[!UICONTROL 取」]**。
+   點選以選取您要納入回轉集中的資產。 選取的資產上面有核取標籤圖示。When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
-   使用「資產選擇器」，您可以輸入關鍵字並點選 **[!UICONTROL Return**。 您也可以套用篩選條件來調整搜尋結果。 您可以依路徑、系列、檔案類型和標籤來篩選。 選取篩選，然後點選工具 **[!UICONTROL 列上的]** 「篩選」圖示。 點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 ****。
+   使用「資產選擇器」，您可以輸入關鍵字並點選 **[!UICONTROL Return**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後點選工具 **[!UICONTROL 列上的]** 「篩選」圖示。點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 ****。
 
-   請參 [閱使用選擇器](/help/assets/dynamic-media/working-with-selectors.md)。
+   See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
 
@@ -136,7 +139,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    * 若要刪除影像，請選取影像並點選「刪 **[!UICONTROL 除資產」]**。
 
-   * 若要套用預設，請在頁面右上角附近點選「預設」 ****，然後選取一個預設，一次套用至所有資產。
+   * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a preset to apply to all the assets at once.
 
 1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。您新建立的「回轉集」會出現在您所建立的檔案夾中。
 
@@ -154,7 +157,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
-1. 來自任何組的成員映像。 選擇「 **[!UICONTROL 集]** 」菜單以顯示資產所屬的集。
+1. 來自任何組的成員映像。Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
 
    ![chlimage_1-157](assets/chlimage_1-385.png)
 
@@ -192,9 +195,10 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    * 若要刪除資產，請選取資產，然後按一下或點選「刪 **[!UICONTROL 除資產」]**。
    * 若要套用預設，請點選或按一下「預設」圖示並選取預設。
    * 要刪除整個回轉集，請導航至回轉集，選擇它，然後選擇刪 **[!UICONTROL 除]**
+
    >[!NOTE]
    >
-   >您可以導覽至回轉集中編輯影像，點選左側導軌中的「設定成員 **** 」，然後點選個別資產上的「鉛筆」圖示以開啟編輯視窗。
+   >You can edit the images in a Spin Set by navigating to the set, tap **[!UICONTROL Set Members]** in the left rail, and then tap the Pencil icon on an individual asset to open the editing window.
 
 1. 完成編 **[!UICONTROL 輯時]** ，按一下「儲存」。
 
