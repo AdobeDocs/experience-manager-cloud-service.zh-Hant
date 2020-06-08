@@ -1,15 +1,18 @@
 ---
-title: 動態媒體疑難排解
-description: 動態媒體疑難排解。
+title: Dynamic Media 疑難排解
+description: Dynamic Media 疑難排解.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1157'
+ht-degree: 1%
 
 ---
 
 
-# 動態媒體疑難排解 {#troubleshooting-dynamic-media-scene-mode}
+# Dynamic Media 疑難排解 {#troubleshooting-dynamic-media-scene-mode}
 
-以下檔案說明Dynamic media的疑難排解。
+以下檔案說明Dynamic Media的疑難排解。
 
 ## 一般（所有資產） {#general-all-assets}
 
@@ -23,12 +26,12 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | 節點已連結至動態媒體的常規指示符。 |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** 或錯誤文字 | 資產上傳至動態媒體的狀態。 |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | 必須填入，才能產生Dynamic media遠端資產的URL。 |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | 必須填入，才能產生Dynamic Media遠端資產的URL。 |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **成功** 或 **失敗：`<error text>`** | 集（回轉集、影像集等）、影像預設集、檢視器預設集、資產的影像地圖更新，或已編輯的影像的同步狀態。 |
 
 ### 同步記錄 {#synchronization-logging}
 
-同步錯誤和問題已記錄在 `error.log` 中(AEM伺服器目 `/crx-quickstart/logs/`錄)。 您可使用充份的記錄功能來判斷大多數問題的根本原因，不過您可以透過Sling Console( `com.adobe.cq.dam.ips` https://localhost:4502/system/console/slinglog[](https://localhost:4502/system/console/slinglog))，將記錄功能增加至套件上的DEBUG，以收集更多資訊。
+同步錯誤和問題已記錄 `error.log` 在(AEM伺服器目 `/crx-quickstart/logs/`錄)。 您可使用充份的記錄功能來判斷大多數問題的根本原因，不過您可以透過Sling Console( `com.adobe.cq.dam.ips` https://localhost:4502/system/console/slinglog[](https://localhost:4502/system/console/slinglog))，將記錄功能增加至套件上的DEBUG，以收集更多資訊。
 
 ### 移動、複製、刪除 {#move-copy-delete}
 
@@ -111,7 +114,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
  </tbody>
 </table>
 
-## Video {#video}
+## 影片 {#video}
 
 如果您對視訊有任何問題，請參閱下列疑難排解指引。
 
@@ -127,7 +130,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    <td>
     <ul>
      <li>檢查資料夾是否已指派視訊描述檔（如果不支援檔案格式）。 如果不支援，則只會顯示影像。</li>
-     <li>視訊設定檔必須包含多個編碼預設集，才能產生AVS集(單一編碼視為MP4檔案的視訊內容；對於不支援的檔案，會視為與未處理的檔案相同)。</li>
+     <li>視訊設定檔必須包含多個編碼預設集，才能產生AVS集(單一編碼視為MP4檔案的視訊內容； 對於不支援的檔案，會視為與未處理的檔案相同)。</li>
      <li>確認中繼資料中的內容，以檢查視訊是否 <code>dam:scene7FileAvs</code> 已完 <code>dam:scene7File</code> 成處理。</li>
     </ul> </td>
    <td>
@@ -143,7 +146,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    <td>視訊未編碼</td>
    <td>
     <ul>
-     <li>檢查是否已設定Dynamic Media cloud服務。</li>
+     <li>檢查是否已設定Dynamic Media Cloud服務。</li>
      <li>檢查視訊描述檔是否與上傳資料夾相關聯。</li>
     </ul> </td>
    <td>
@@ -191,7 +194,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
   <tr>
    <td>檢視器預設集未發佈</td>
    <td><p>繼續到示例管理器診斷頁： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>觀察計算值。 當正確運作時，您應看到：</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>:在設定Dynamic Media cloud設定後，檢視器資產同步大約需要10分鐘。</p> <p>如果未啟動的資產仍保留，請按一下「列出所有 <strong>未啟動的資產</strong> 」按鈕以檢視詳細資訊。</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>: 在設定Dynamic Media Cloud設定後，檢視器資產同步大約需要10分鐘。</p> <p>如果未啟動的資產仍保留，請按一下「列出所有 <strong>未啟動的資產</strong> 」按鈕以檢視詳細資訊。</p> </td>
    <td>
     <ol>
      <li>導覽至管理工具中的檢視器預設集清單： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
@@ -206,7 +209,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
      <li>導覽至 <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> 動態媒體同步資料夾中的資料夾(例如 <code>/content/dam/_CSS/_OOTB</code>),</li>
      <li>尋找有問題資產的中繼資料節點(例如 <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>)。</li>
      <li>檢查是否存在屬 <code>dam:scene7*</code> 性。 如果資產已成功同步並發佈，您會看到 <code>dam:scene7FileStatus</code> 設定為 <strong>PublishComplete</strong>。</li>
-     <li>嘗試串連下列屬性和字串文字的值，直接從Dynamic media要求圖稿
+     <li>嘗試串連下列屬性和字串文字的值，直接從Dynamic Media要求圖稿
       <ul>
        <li><code>dam:scene7Domain</code></li>
        <li><code>"is/content"</code></li>
