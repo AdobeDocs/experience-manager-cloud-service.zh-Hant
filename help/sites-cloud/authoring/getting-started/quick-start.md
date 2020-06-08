@@ -1,13 +1,16 @@
 ---
-title: 編寫頁面的快速入門手冊
+title: 製作頁面的快速入門手冊
 description: 快速、高階的指南，讓您開始製作頁面內容
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1585'
+ht-degree: 5%
 
 ---
 
 
-# 編寫頁面的快速入門手冊 {#quick-guide-to-authoring-pages}
+# 製作頁面的快速入門手冊 {#quick-guide-to-authoring-pages}
 
 本檔案是做為AEM中關鍵頁面製作動作的高階快速入門手冊。 本檔案：
 
@@ -54,7 +57,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ### 尋找您的頁面 {#finding-your-page}
 
-尋找頁面有多方面；您可以導覽和／或搜尋：
+尋找頁面有多方面； 您可以導覽和／或搜尋：
 
 1. 開啟 **Sites** 主控台(使用全域導覽中的 **Sites** 選項 [](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) -當您選取Adobe Experience Manager連結（左上）時，會觸發（下拉式）此選項。
 
@@ -99,8 +102,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    * 通過選擇所需資 [源進入選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。 您的操作方式取決於您的裝置：
 
-      * 在行動裝置上：點選並按住卡片
-      * 在桌上型裝置上：使用勾 [選圖示](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) ，代表的快速動作：
+      * 在行動裝置上： 點選並按住卡片
+      * 在桌上型裝置上： 使用勾 [選圖示](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) ，代表的快速動作：
    * 卡片將覆蓋上勾號，以顯示已選取頁面。
    ![範例卡片](/help/sites-cloud/authoring/assets/card.png)
 
@@ -194,7 +197,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * 編輯 [頁面時](#editing-your-page-content):
 
    1. 開啟「頁 **面資訊** 」功能表。
-   1. 選擇「 **開啟屬性** 」(Open Properties)以開啟用於編輯屬性的對話框。
+   1. Select **Open Properties** to open the dialog for editing the properties.
 
       ![「頁面資訊」按鈕](/help/sites-cloud/authoring/assets/page-information.png)
 
@@ -217,7 +220,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    1. 開啟「頁 **面資訊** 」功能表。
    1. 選擇 **發佈頁面**。
 
-* 從主控台取消發佈頁面只能透過「管理出版物 **** 」選項完成，此選項只能在工具列上使用（不能透過快速動作）。
+* 從主控台取消發佈頁面只能透過「管理出版物 **** 」選項完成，此選項只能在工具列上使用 (不能透過快速動作)。
 
    ![「管理出版物」按鈕](/help/sites-cloud/authoring/assets/manage-publication.png)
 
@@ -230,7 +233,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 這些動作都可由下列項目觸發：
 
 1. [導覽至您要移動](#finding-your-page) 、複製和貼上或刪除的頁面。
-1. 選擇複製（然後貼上）、移動或刪除圖示（視需要），使用下列任一項：
+1. 選擇複製 (然後貼上) 、移動或刪除圖示 (視需要)，使用下列任一項：
 
    * [所需資源的快速動作（僅限卡片檢視／案頭）](#quick-actions-card-view-desktop-only) 。
    * 選取頁面時 [的工具列](#selecting-your-page-for-further-action)。
@@ -251,7 +254,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ### 鎖定頁面（然後解除鎖定） {#locking-your-page-then-unlocking}
 
-[鎖定頁面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) ，會使其他作者無法在您執行時使用頁面。 您可以找到「鎖定（和解除鎖定）」圖示／按鈕：
+[鎖定頁面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) ，會使其他作者無法在您執行時使用頁面。您可以找到「鎖定 (和解除鎖定) 」圖示/按鈕：
 
 * 選取頁面時 [的工具列](#selecting-your-page-for-further-action)。
 * 編輯 [頁面時，「頁面資訊](#editing-the-page-properties) 」下拉式功能表。
