@@ -3,11 +3,14 @@ title: 關於管理動態媒體資產
 description: 瞭解如何使用動態媒體資產
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '118'
+ht-degree: 13%
 
 ---
 
 
-# 關於管理動態媒體資產 {#managing-assets}
+# About managing Dynamic Media assets {#managing-assets}
 
 管理動態媒體資產——影像、視訊和互動式資產——在上傳後——涉及許多工作，包括預覽、下載或發佈。
 
@@ -17,8 +20,8 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 下列主題說明您管理動態媒體資產時需要做什麼：
 
-* [最佳化影像品質的最佳範例](best-practices-for-optimizing-the-quality-of-your-images.md)
-* [預覽動態媒體資產](previewing-assets.md)
+* [影像品質最佳化的最佳作法](best-practices-for-optimizing-the-quality-of-your-images.md)
+* [預覽 Dynamic Media 資產](previewing-assets.md)
 * [發佈動態媒體資產](publishing-dynamicmedia-assets.md)
-* [使用選擇器](working-with-selectors.md)
+* [使用選取工具](working-with-selectors.md)
 
