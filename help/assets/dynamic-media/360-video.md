@@ -3,19 +3,22 @@ title: 360/VR視訊
 description: 瞭解如何在動態媒體中處理360和虛擬實境(VR)視訊。
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '961'
+ht-degree: 0%
 
 ---
 
 
-# 360/VR視訊 {#vr-video}
+# 360/VR Video {#vr-video}
 
-360度影片可同時錄制每個方向的檢視。 它們是使用全方位的相機或一組相機拍攝的。 在平面顯示器上播放時，用戶可以控制視角；在行動裝置上播放時，通常會運用其內建的陀螺控制項。
+360度影片可同時錄制每個方向的檢視。 它們是使用全方位的相機或一組相機拍攝的。 在平面顯示器上播放時，用戶可以控制視角； 在行動裝置上播放時，通常會運用其內建的陀螺控制項。
 
-Dynamic media包含360個視訊資產的原生支援。 依預設，檢視或播放不需要其他設定。 您可使用標準的視訊副檔名（例如。mp4、.mkv和。mov）來傳送360視訊。 最常見的轉碼器是H.264。
+Dynamic Media包含360個視訊資產的原生支援。 依預設，檢視或播放不需要其他設定。 您可使用標準的視訊副檔名（例如。mp4、.mkv和。mov）來傳送360視訊。 最常見的轉碼器是H.264。
 
 本節說明如何與360/VR視訊檢視器搭配使用，以產生等長形視訊，提供身歷其境的房間、財產、位置、風景、醫療程式等觀賞體驗。
 
-目前不支援空間音訊；如果音訊混合在立體聲中，則餘額(L/R)不會隨著客戶變更相機視角而改變。
+目前不支援空間音訊； 如果音訊混合在立體聲中，則餘額(L/R)不會隨著客戶變更相機視角而改變。
 
 請參 [閱「搭配使用動態媒體360視訊和自訂視訊縮圖與AEM資產](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html)」。
 
@@ -29,7 +32,7 @@ Dynamic media包含360個視訊資產的原生支援。 依預設，檢視或播
 
 ## 360/VR視訊與Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-您可以使用Adobe Premier pro來檢視和編輯360/VR素材。 例如，您可以將標誌和文字正確置入場景中，並套用專為等矩形媒體而設計的效果和轉場效果。
+您可以使用Adobe Premier Pro來檢視和編輯360/VR素材。 例如，您可以將標誌和文字正確置入場景中，並套用專為等矩形媒體而設計的效果和轉場效果。
 
 請參閱 [編輯360/VR視訊](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)。
 
@@ -54,9 +57,9 @@ Dynamic media包含360個視訊資產的原生支援。 依預設，檢視或播
       * 2160p - 3840 x 2160，稱為4K、UHD或Ultra HD解析度。 這種超大的顯示解析度，最常出現在優質的電視機和電腦螢幕上。 2160p的解析度通常稱為「4K」，因為寬度接近4000像素。 換言之，它提供1080p像素的4倍。
    * [建立具有更高品質轉譯的自訂最適化視訊設定檔](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 。 例如，您可能想要建立包含下列三種設定的最適化視訊描述檔：
 
-      * width=auto;height=720;位元速率=2500 kbps
-      * width=auto;height=1080;位元速率=5000 kbps
-      * width=auto;height=1440;位元速率=6600 kbps
+      * width=auto; height=720; 位元速率=2500 kbps
+      * width=auto; height=1080; 位元速率=5000 kbps
+      * width=auto; height=1440; 位元速率=6600 kbps
    * 在專屬於360個視訊資產的資料夾中處理360個視訊內容。
    請注意，此方法也會對使用者的網路和CPU提出更高的需求。
 
@@ -91,9 +94,9 @@ Start by uploading 360 Videos.
 
 當您對360視訊感到滿意時，就可以發佈它。
 
-請參 [閱將視訊或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)。
-請參 [閱連結URL至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 請注意，如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，就無法使用以URL為基礎的連結方法。
-請參閱 [新增動態媒體資產至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
+See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 請注意，如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，就無法使用以URL為基礎的連結方法。
+See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **若要預覽360個視訊**
 
@@ -110,7 +113,7 @@ Start by uploading 360 Videos.
    從「檢視器」清單中，點選 **[!UICONTROL Video360_social]**，然後執行下列其中一項作業：
 
    * 將滑鼠指標拖曳至視訊上，以變更靜態場景的檢視角度。
-   * 點選影片的「播 **[!UICONTROL 放]** 」按鈕開始播放；當視訊播放時，拖曳滑鼠指標至視訊上，以改變您的檢視角度。
+   * 點選影片的「播 **[!UICONTROL 放]** 」按鈕開始播放； 當視訊播放時，拖曳滑鼠指標至視訊上，以改變您的檢視角度。
    ![6_5_360video-preview-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360視訊螢幕擷取。*
 
    * 從「檢視器」清單中，點選「 **[!UICONTROL Video360VR」]**。
@@ -126,6 +129,6 @@ Start by uploading 360 Videos.
 您必須發佈360視訊才能使用。 發佈360視訊會啟動URL和內嵌代碼。 此外，它還將360視訊發佈至與CDN整合的Dynamic Media雲端，以進行可擴充且具效能的傳送。
 
 如需 [如何發佈360視訊的詳細資訊](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) ，請參閱發佈動態媒體資產。
-另請參 [閱將視訊或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)。
-另請參 [閱將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 請注意，如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，就無法使用以URL為基礎的連結方法。
-另請參閱 [新增動態媒體資產至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+See also [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
+See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 請注意，如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，就無法使用以URL為基礎的連結方法。
+See also [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
