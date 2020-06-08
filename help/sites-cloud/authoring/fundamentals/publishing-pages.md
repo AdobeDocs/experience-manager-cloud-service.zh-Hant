@@ -3,6 +3,9 @@ title: 發佈頁面
 description: 如何使用AEM發佈和取消發佈頁面
 translation-type: tm+mt
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+workflow-type: tm+mt
+source-wordcount: '1694'
+ht-degree: 7%
 
 ---
 
