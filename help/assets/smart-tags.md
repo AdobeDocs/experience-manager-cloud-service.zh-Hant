@@ -3,9 +3,9 @@ title: 使用人工智慧服務來標籤影像。
 description: 使用人工智慧服務來標籤影像，這些服務會使用Adobe Sensei服務套用情境式和描述性的商業標籤。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
 workflow-type: tm+mt
-source-wordcount: '2400'
+source-wordcount: '2401'
 ht-degree: 5%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 5%
 要為業務特定標籤建立和培訓模型，請遵循以下步驟：
 
 1. 建立必要的標籤和適當的標籤結構。 在DAM儲存庫中上傳相關影像。
-1. 在使 [!DNL Experience Manager] 用者介面中，存取「 **[!UICONTROL 資產]** >訓 **[!UICONTROL 練模型」]**。
+1. 在使 [!DNL Experience Manager] 用者介面中，存 **[!UICONTROL 取「資產]** >智 **[!UICONTROL 慧標籤訓練」]**。
 1. 按一下&#x200B;**[!UICONTROL 建立]**。提供 **[!UICONTROL 標題]**, **[!UICONTROL 說明]**。
 1. 瀏覽並選取您要訓練模型的 `cq:tags` 現有標籤中的標籤。 按一下&#x200B;**[!UICONTROL 下一步]**。
 1. 在「選取 **[!UICONTROL 資產]** 」對話方塊中，按一 **[!UICONTROL 下每個標籤的「新增資產]** 」。 在DAM儲存庫中搜索或瀏覽儲存庫以選擇至少10個和最多50個映像。 選取資產，而非資料夾。 選取影像後，按一下「選 **[!UICONTROL 取」]**。
