@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager 雲端服務與網路無障礙指引
 description: Adobe Experience Manager 雲端服務與網路無障礙指引簡介
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
