@@ -3,6 +3,9 @@ title: 將您的數位資產新增至Adobe Experience Manager
 description: 將您的數位資產新增至Adobe Experience Manager做為雲端服務
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '1354'
+ht-degree: 3%
 
 ---
 
@@ -34,6 +37,7 @@ Adobe Experience Manager運用豐富的中繼資料、智慧標籤、轉譯和�
 
    * 在工具列上，點選「建 **[!UICONTROL 立]** 」圖示。 然後，在功能表上，點選「 **[!UICONTROL 檔案」]**。 如有需要，可在顯示的對話框中更名檔案。
    * 在支援HTML5的瀏覽器中，直接將資產拖曳至「資產」使用者介面。 不會顯示要更名檔案的對話框。
+
    ![create_menu](assets/create_menu.png)
 
    要選擇多個檔案，請按Ctrl或Command鍵，然後在檔案選擇器對話框中選擇資產。 使用iPad時，一次只能選取一個檔案。
@@ -170,7 +174,7 @@ AEM Assets會防止您上傳檔案名稱中包含禁止字元的資產。 如果
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience manager 桌面應用程式](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)
->* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Adobe Asset Link](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe Asset Link檔案](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
 >* [資產上傳的技術參考](developer-reference-material-apis.md#asset-upload-technical)
 
