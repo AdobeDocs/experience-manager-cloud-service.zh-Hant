@@ -1,13 +1,16 @@
 ---
-title: 內容片段設定要轉譯的元件
-description: 內容片段設定要轉譯的元件
+title: 轉譯專用內容片段設定元件
+description: 轉譯專用內容片段設定元件
 translation-type: tm+mt
 source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 6%
 
 ---
 
 
-# 內容片段設定要轉譯的元件{#content-fragments-configuring-components-for-rendering}
+# 轉譯專用內容片段設定元件{#content-fragments-configuring-components-for-rendering}
 
 有數項進 [階服務](#definition-of-advanced-services-that-need-configuration) ，與轉換內容片段相關。 要使用這些服務，此類元件的資源類型必須使內容片段框架自己知道。
 
@@ -74,22 +77,22 @@ OSGi配置為：
   <tr>
    <td><strong>資源類型</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>要註冊的資源類型；例如， <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>要註冊的資源類型； 例如， <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>參考屬性</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>包含對片段的引用的屬性的名稱；例如 <code>fragmentPath</code> <code>fileReference</code></td>
+   <td>包含對片段的引用的屬性的名稱； 例如 <code>fragmentPath</code> <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>元素屬性</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>包含要渲染的元素名稱的屬性的名稱；例如，<code>elementName</code></td>
+   <td>包含要渲染的元素名稱的屬性的名稱； 例如，<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>變數屬性</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>包含要呈現的變數名稱的屬性名稱；例如，<code>variationName</code></td>
+   <td>包含要呈現的變數名稱的屬性名稱； 例如，<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
@@ -108,8 +111,8 @@ OSGi配置為：
    <td><code>paragraphScope</code></td>
    <td><p>字串屬性，定義在單一元素演算模式下如何輸 <em>出段落</em>。</p> <p>值:</p>
     <ul>
-     <li><code>all</code> :來呈現所有段落</li>
-     <li><code>range</code> :來轉換 <code>paragraphRange</code></li>
+     <li><code>all</code> : 來呈現所有段落</li>
+     <li><code>range</code> : 來轉換 <code>paragraphRange</code></li>
     </ul> </td>
   </tr>
   <tr>
@@ -133,7 +136,7 @@ OSGi配置為：
  </tbody>
 </table>
 
-## 例如 {#example}
+## 範例 {#example}
 
 例如，請參閱下列（在現成可用的AEM例項上）:
 
