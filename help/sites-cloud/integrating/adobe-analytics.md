@@ -1,13 +1,16 @@
 ---
-title: 與Adobe Analytics整合
-description: '與Adobe Analytics整合 '
+title: 整合 Adobe Analytics
+description: '整合 Adobe Analytics '
 translation-type: tm+mt
 source-git-commit: 6754693da488b0bc44a71aa9f0402fc1308b703a
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 13%
 
 ---
 
 
-# 與Adobe Analytics整合{#integrating-with-adobe-analytics}
+# 整合 Adobe Analytics{#integrating-with-adobe-analytics}
 
 將Adobe Analytics和AEM整合為雲端服務，可讓您追蹤網頁活動：
 
@@ -21,7 +24,7 @@ source-git-commit: 6754693da488b0bc44a71aa9f0402fc1308b703a
 * 視訊使用資訊
 * 來自Adobe Analytics的頁面瀏覽次數
 
-下列頁面可協助您設定整合。 請注意，Launch by adobe實際上是利用Analytics功能（JS資料庫）來檢測AEM網站的工具。 因此，將AEM整合為雲端服務與Launch和Adobe Analytics，將會攜手合作。
+下列頁面可協助您設定整合。 請注意，Launch by Adobe實際上是利用Analytics功能（JS資料庫）來檢測AEM網站的工具。 因此，將AEM整合為雲端服務與Launch和Adobe Analytics，將會攜手合作。
 
 * [連線至Adobe Analytics和建立架構](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-connect.html) -請注意，「Analytics架構」是AEM的舊版，其建立作業在AEM中無法運作，因為它需要Classic UI。 Launch by Adobe應改為用於變數對應和將JS程式庫部署至頁面。
 * [整合Launch by Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
@@ -34,11 +37,11 @@ source-git-commit: 6754693da488b0bc44a71aa9f0402fc1308b703a
 
 >[!CAUTION]
 >
->Adobe Experience manager是Cloud service客戶，如果客戶沒有現有的Analytics帳戶，可以要求存取Analytics Foundation Pack for Experience Cloud。  此Foundation pack提供Analytics的使用量有限。
+>Adobe Experience Manager是Cloud Service客戶，如果客戶沒有現有的Analytics帳戶，可以要求存取Analytics Foundation Pack for Experience Cloud。  此Foundation Pack提供Analytics的使用量有限。
 
 >[!NOTE]
 >
->Launch by adobe的IMS設定（技術帳戶）已在AEM中預先設定為雲端服務。 使用者不必建立此設定。
+>Launch by Adobe的IMS設定（技術帳戶）已在AEM中預先設定為雲端服務。 使用者不必建立此設定。
 
 ## 更多資訊 {#further-information}
 
@@ -49,7 +52,7 @@ source-git-commit: 6754693da488b0bc44a71aa9f0402fc1308b703a
 
 >[!NOTE]
 >
->如果您使用Adobe Analytics搭配自訂的代理設定，則需要 [設定](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/configuring-osgi.html) Apache HTTP Client **** Proxy設定所需的兩個OSGi組合（例如，搭配Web主控台）。 由於AEM的某些功能使用3.x API，而其他功能則使用4.x API，因此這兩者皆為必要。 設定:
+>如果您使用Adobe Analytics搭配自訂的代理設定，則需要 [設定](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/configuring-osgi.html) Apache HTTP Client **** Proxy設定所需的兩個OSGi組合 (例如，搭配Web主控台)。由於AEM的某些功能使用3.x API，而其他功能則使用4.x API，因此這兩者皆為必要。設定：
 >
 >* **Day Commons HTTP Client 3.1** ，用以設定3.x API;
    >  例如， [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
