@@ -18,7 +18,7 @@ First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/ma
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
 -->
 
-Adobe Experience Manager作為雲端服務，提供雲端原生方法來運用Experience Manager應用程式和功能。 此新架構的關鍵元素之一，是資產擷取與處理，由資產微型服務提供支援。 資產微服務使用雲端服務提供資產的可擴充且彈性化處理。 Adobe管理雲端服務，以最佳化處理不同的資產類型和處理選項。 雲端原生資產微服務的主要優點包括：
+Adobe Experience Manager作為雲端服務，提供雲端原生方法，以運用Experience Manager應用程式和功能。 此新架構的關鍵元素之一，是資產擷取與處理，由資產微型服務提供支援。 資產微服務使用雲端服務提供資產的可擴充且彈性化處理。 Adobe管理雲端服務，以最佳化處理不同的資產類型和處理選項。 雲端原生資產微服務的主要優點包括：
 
 * 可擴展的體系結構，允許對資源密集型操作進行無縫處理。
 * 高效的索引和文字摘取功能，不會影響您的Experience Manager環境的效能。
@@ -51,7 +51,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 * 處理結果（例如轉譯）會儲存在二進位雲端儲存空間中。
 * Experience Manager會收到處理完成的通知，並會將指標直接指向產生的二進位檔（轉譯）。 產生的轉譯可在Experience Manager中用於上傳的資產。
 
-這是資產提取與處理的基本流程。 如果已設定，Experience Manager也可以啟動自訂工作流程模型，以便對資產進行後置處理。 例如，執行特定於您環境的自定義步驟，例如從企業系統讀取資訊並添加到資產屬性。
+這是資產提取與處理的基本流程。 如果已設定，Experience Manager也可以啟動自訂工作流程模型，以便對資產進行後置處理。 例如，執行特定於您環境的自定義步驟，例如從企業系統獲取資訊並添加到資產屬性。
 
 擷取和處理流程是Experience Manager資產微服務架構的主要概念。
 
