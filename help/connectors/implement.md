@@ -1,18 +1,21 @@
 ---
-title: 實作AEM Connector
-description: 實作AEM Connector
+title: 實作 AEM 連接器
+description: 實作 AEM 連接器
 translation-type: tm+mt
 source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+workflow-type: tm+mt
+source-wordcount: '964'
+ht-degree: 7%
 
 ---
 
 
-實作AEM Connector
+實作 AEM 連接器
 =============================
 
 以下提供建立 [AEM Connectors的實用參考](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) ，並應結合提交和維護連接器 [的指](submit.md) 南來閱讀 [](maintain.md) 。
 
-請注意，AEM的開發人員授權可透過 [Adobe exchange計畫取得](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html)。
+請注意，AEM的開發人員授權可透過 [Adobe Exchange計畫取得](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html)。
 
 通用整合模式
 ---------------------------
@@ -45,7 +48,7 @@ Experience Manager作為雲端服務檔案 [提供](../overview/introduction.md)
 
 * Adobe社群的 [AEM論壇](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) ，是一個活躍的網站，讓同儕提問並回覆問題
 * 其他Adobe技術資源適用於特定合作夥伴層級。 進一步瞭解 [Adobe Exchange計畫](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html)。
-* 如果貴組織想要實作協助，請考慮選擇Adobe的 [Professional Services](http://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) team，或參閱 [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) ，以取得Adobe全球合作夥伴的清單
+* 如果貴組織想要實作協助，請考慮選擇Adobe的 [Professional Services](http://www.adobe.com/tw/marketing-cloud/service-support/professional-consulting-training.html) team，或參閱 [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) ，以取得Adobe全球合作夥伴的清單
 
 封裝結構規則
 -----------------------
@@ -74,7 +77,7 @@ Experience Manager作為雲端服務檔案 [提供](../overview/introduction.md)
 
 [上下文感知配置](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) (Context-Aware Configurations)允許跨不同資料夾(包括下方的子資料夾 `/libs`、 `/apps`和子 `/conf` 資料夾)進行層配置 `/conf`。 它支援繼承，以便客戶可以配置全局配置，同時對每個微站點進行特定更改。 由於此功能可用於雲端服務設定，因此連接器程式碼應使用內容感知組態API來參考組態，而非參考特定組態節點。
 
-如果連接器中使用了修改的配置，請構建連接器以處理將來對任何客戶配置提供的預設配置的更新包括／合併。 請記住，在未經客戶警告及同意的情況下變更自訂（如客戶所變更）內容或設定，可能會中斷（或造成非預期行為）其Connector。
+如果連接器中使用了修改的配置，請構建連接器以處理將來對任何客戶配置提供的預設配置進行包括／合併任何更新的連接器。 請記住，在未經客戶警告及同意的情況下變更自訂（如客戶所變更）內容或設定，可能會中斷（或造成非預期行為）其Connector。
 
 編碼最佳實務
 ----------------------
