@@ -4,6 +4,9 @@ description: 為資料夾或系列中的資產設定審核工作流程，並與�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 21%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 ## 為資料夾建立審核任務 {#creating-a-review-task-for-folders}
 
 1. 從「資產」使用者介面中，選取您要為其建立審核工作的檔案夾。
-1. 從工具列中點選／按一下「建 **[!UICONTROL 立檢閱工作]** 」圖示，以開啟「 **** 檢閱工作」頁面。 如果您在工具列中看不到圖示，請點選／按一下「更 **[!UICONTROL 多]** 」，然後選取圖示。
+1. 從工具列中點選/按一下「建 **[!UICONTROL 立檢閱工作]** 」圖示，以開啟「 **** 檢閱工作」頁面。如果您在工具列中看不到圖示，請點選/按一下「更 **[!UICONTROL 多]** 」，然後選取圖示。
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
@@ -43,17 +46,17 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
    ![review_name](assets/review_name.png)
 
-1. 點選／按一 **[!UICONTROL 下提交]**，然後點選／按一 **[!UICONTROL 下完成]** ，以關閉確認訊息。 新任務的通知將發送給批准者。
+1. 點選/按一 **[!UICONTROL 下提交]**，然後點選/按一 **[!UICONTROL 下完成]** ，以關閉確認訊息。新任務的通知將發送給批准者。
 1. 以核准者身分登入AEM Assets，並導覽至「資產」UI。 若要核准資產，請按一下／點選「 **[!UICONTROL 通知]** 」圖示，然後從清單中選取審核工作。
 
    ![通知](assets/notification.png)
 
-1. 在「復 **[!UICONTROL 查任務]** 」頁中，檢查複查任務的詳細資訊，然後點選／按一下「 **[!UICONTROL 複查」]**。
-1. 在「復 **[!UICONTROL 核任務]** 」頁面中，選擇資產，並點選／按一下「核准／拒絕 **** 」圖示以視情況核准或拒絕。
+1. 在「復 **[!UICONTROL 查任務]** 」頁中，檢查複查任務的詳細資訊，然後點選/按一下「 **[!UICONTROL 複查」]**。
+1. 在「復 **[!UICONTROL 核任務]** 」頁面中，選擇資產，並點選/按一下「核准/拒絕 **** 」圖示以視情況核准或拒絕。
 
    ![review_task](assets/review_task.png)
 
-1. 點選／按一下工 **[!UICONTROL 具列中]** 「完成」圖示。 在對話方塊中，輸入註解並點選／按一下「 **[!UICONTROL 完成]** 」以確認。
+1. Tap/click the **[!UICONTROL Complete]** icon from the toolbar. 在對話方塊中，輸入註解並點選／按一下「 **[!UICONTROL 完成]** 」以確認。
 1. 導覽至「資產」UI，並開啟檔案夾。 資產的核准狀態圖示會同時出現在「卡片」和「清單」檢視中。
 
    **卡片檢視**
@@ -67,7 +70,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 ## 為系列建立審閱任務 {#creating-a-review-task-for-collections}
 
 1. 從「系列」頁面中，選擇要為其建立審閱任務的系列。
-1. 從工具列中點選／按一下「建 **[!UICONTROL 立檢閱工作]** 」圖示，以開啟「 **** 檢閱工作」頁面。 如果您在工具列中看不到圖示，請點選／按一下「更 **[!UICONTROL 多]** 」，然後選取圖示。
+1. 從工具列中點選/按一下「建 **[!UICONTROL 立檢閱工作]** 」圖示，以開啟「 **** 檢閱工作」頁面。如果您在工具列中看不到圖示，請點選/按一下「更 **[!UICONTROL 多]** 」，然後選取圖示。
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -87,14 +90,14 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. 點選／按一 **[!UICONTROL 下提交]**，然後點選／按一 **[!UICONTROL 下完成]** ，以關閉確認訊息。 新任務的通知將發送給批准者。
+1. 點選/按一 **[!UICONTROL 下提交]**，然後點選/按一 **[!UICONTROL 下完成]** ，以關閉確認訊息。新任務的通知將發送給批准者。
 1. 以核准者身分登入AEM Assets，並導覽至「資產」主控台。 若要核准資產，請點選／按一 **[!UICONTROL 下「通知]** 」圖示，然後從清單中選取審核工作。
-1. 在「復 **[!UICONTROL 查任務]** 」頁中，檢查複查任務的詳細資訊，然後點選／按一下「 **[!UICONTROL 複查」]**。
+1. 在「復 **[!UICONTROL 查任務]** 」頁中，檢查複查任務的詳細資訊，然後點選/按一下「 **[!UICONTROL 複查」]**。
 1. 系列中的所有資產都會顯示在檢閱頁面上。 選取資產，並點選／按一下「 **[!UICONTROL 核准／拒絕]** 」圖示以核准或拒絕資產。
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. 點選／按一下工 **[!UICONTROL 具列中]** 「完成」圖示。 在對話方塊中，輸入註解並點選／按一下「 **[!UICONTROL 完成]** 」以確認。
+1. Tap/click the **[!UICONTROL Complete]** icon from the toolbar. 在對話方塊中，輸入註解並點選／按一下「 **[!UICONTROL 完成]** 」以確認。
 1. 導覽至「系列」主控台，然後開啟系列。 資產的核准狀態圖示會同時出現在「卡片」和「清單」檢視中。
 
    **卡片檢視**
