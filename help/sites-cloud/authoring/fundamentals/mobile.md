@@ -3,6 +3,9 @@ title: 製作行動裝置的頁面
 description: 在製作行動裝置專用的內容時，您可以切換數個模擬器，以檢視使用者所看到的內容
 translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
