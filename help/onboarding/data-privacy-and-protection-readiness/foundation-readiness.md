@@ -1,13 +1,16 @@
 ---
 title: 資料保護與資料隱私權法規- Adobe Experience Manager作為雲端服務基礎準備
-description: '瞭解Adobe Experience Manager如何以雲端服務基礎的身分支援各種資料保護與資料隱私權規範；包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
+description: '瞭解Adobe Experience Manager如何以雲端服務基礎的身分，支援各種資料保護與資料隱私權規定； 包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+workflow-type: tm+mt
+source-wordcount: '506'
+ht-degree: 5%
 
 ---
 
 
-# Adobe Experience manager作為雲端服務基礎，為資料保護和資料隱私法規做好準備 {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager作為雲端服務基礎，為資料保護和資料隱私法規做好準備 {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
