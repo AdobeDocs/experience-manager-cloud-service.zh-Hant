@@ -1,14 +1,17 @@
 ---
-title: XMP中繼資料
+title: XMP 中繼資料
 description: 瞭解XMP（可擴充中繼資料平台）中繼資料管理標準。 AEM將它當做建立、處理和交換中繼資料的標準格式。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 19%
 
 ---
 
 
-# XMP中繼資料 {#xmp-metadata}
+# XMP 中繼資料 {#xmp-metadata}
 
 XMP（可擴充中繼資料平台）是AEM Assets用於所有中繼資料管理的中繼資料標準。 XMP提供標準格式，讓您針對多種應用程式建立、處理和交換中繼資料。
 
@@ -22,11 +25,11 @@ AEM Assets原生支援XMP中繼資料標準。 XMP是處理和儲存數位資產
 
 XMP透過提供資料模型、儲存模型和結構描述，標準化中繼資料的定義、建立和處理方式。 本節將介紹這些概念。
 
-EXIF、ID3或Microsoft office的所有舊式中繼資料都會自動轉譯為XMP,XMP可加以擴充，以支援客戶特定的中繼資料架構，例如產品型錄。
+EXIF、ID3或Microsoft Office的所有舊式中繼資料都會自動轉譯為XMP,XMP可加以擴充，以支援客戶特定的中繼資料架構，例如產品型錄。
 
-XMP中的中繼資料由一組屬性組成。 這些屬性始終與稱為資源的特定實體相關聯；即，屬性是關於資源的。 對於XMP，資源永遠是資產。
+XMP中的中繼資料由一組屬性組成。 這些屬性始終與稱為資源的特定實體相關聯； 即，屬性是關於資源的。 對於XMP，資源永遠是資產。
 
-XMP定義了 [中繼資料](https://en.wikipedia.org/wiki/Metadata) 模型，可與任何已定義的中繼資料項目集搭配使用。 XMP也定義了基本屬性的特定結構 [](https://en.wikipedia.org/wiki/XML_schema) ，這些基本屬性可用於記錄資源在經過多個處理步驟（從被拍攝、掃描或創作為文字）、通過照片編輯步驟(如 [](https://en.wikipedia.org/wiki/Image_scanner)[](https://en.wikipedia.org/wiki/Cropping_%28image%29) or color adjustment)到組合成最終影像時的歷史記錄。 XMP可讓每個軟體程式或裝置沿途將其資訊新增至數位資源，然後再保留在最終數位檔案中。
+XMP定義了 [中繼資料](https://en.wikipedia.org/wiki/Metadata) 模型，可與任何已定義的中繼資料項目集搭配使用。XMP也定義了基本屬性的特定結構 [](https://en.wikipedia.org/wiki/XML_schema) ，這些基本屬性可用於記錄資源在經過多個處理步驟 (從被拍攝、掃描或創作為文字) 、通過照片編輯步驟(如 [](https://en.wikipedia.org/wiki/Image_scanner)[](https://en.wikipedia.org/wiki/Cropping_%28image%29) or color adjustment)到組合成最終影像時的歷史記錄。XMP可讓每個軟體程式或裝置沿途將其資訊新增至數位資源，然後再保留在最終數位檔案中。
 
 XMP最常是使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium)[Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF)的子集進行序列化和儲存，該子集又以 [XML表示](https://en.wikipedia.org/wiki/XML)。
 
@@ -57,9 +60,9 @@ XMP架構是一組通用XML命名空間中的屬性名稱，其中包含資料�
 
 XMP可以包括來自一個或多個方案的屬性。 例如，許多Adobe應用程式使用的典型子集可能包括：
 
-* 都柏林核心架構： `dc:title`, `dc:creator``dc:subject`, `dc:format`, `dc:rights`
-* XMP基本架構： `xmp:CreateDate`, `xmp:CreatorTool``xmp:ModifyDate`, `xmp:metadataDate`
-* XMP權限管理架構： `xmpRights:WebStatement`、 `xmpRights:Marked`
+* 都柏林核心架構： `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`
+* XMP基本架構： `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
+* XMP權限管理架構： `xmpRights:WebStatement`的 `xmpRights:Marked`
 * XMP媒體管理架構： `xmpMM:DocumentID`
 
 **替代語言**
@@ -91,7 +94,7 @@ XMP回寫功能可讓您將中繼資料變更傳播至資產的所有或特定�
 <!-- asgupta, Engg: Need attention here to update the configuration manager changes.
 -->
 
-若要啟用中繼資料變更在上傳資產時傳播至資產的轉譯，請在Configuration manager中修改 **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration。
+若要啟用中繼資料變更在上傳資產時傳播至資產的轉譯，請在Configuration Manager中修改 **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration。
 
 1. 要開啟配置管理器，請訪問 `https://[aem_server]:[port]/system/console/configMgr`。
 1. 開啟 **[!UICONTROL Adobe CQ DAM Rendition Maker設定]** 。
@@ -103,16 +106,16 @@ XMP回寫功能可讓您將中繼資料變更傳播至資產的所有或特定�
 
 對於XMP回寫功能，將中繼資料傳播至轉譯縮圖140.100.png和319.319.png，請執行這些步驟。
 
-1. 點選／按一下AEM標誌，然後導覽至「工 **[!UICONTROL 具]** >工 **[!UICONTROL 作流程]** >模 **[!UICONTROL 型]**」。
+1. 點選/按一下AEM標誌，然後導覽至「工 **[!UICONTROL 具]** >工 **[!UICONTROL 作流程]** >模 **[!UICONTROL 型]**」。
 1. 從「模型」頁面，開啟「 **[!UICONTROL DAM中繼資料回寫]** 」工作流程模型。
 1. 在「 **[!UICONTROL DAM中繼資料回寫]** 」屬性頁面中，開啟 **[!UICONTROL 「XMP回寫程式」步驟]** 。
-1. 在「步 **[!UICONTROL 驟屬性]** 」對話方塊中，點選／按一下「 **[!UICONTROL 處理]** 」標籤。
+1. 在「步 **[!UICONTROL 驟屬性]** 」對話方塊中，點選/按一下「 **[!UICONTROL 處理]** 」標籤。
 1. 在「參 **[!UICONTROL 數]** 」方塊中，新增 `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`，然後點選／按一下「 **[!UICONTROL 確定」]**。
 
    ![step_properties](assets/step_properties.png)
 
 1. 儲存變更。
-1. 若要使用新屬性重新產生動態媒體影像的金字塔TIFF(PTIFF)轉譯，請將「動態媒體處理影像資產」步驟新增至「 **** DAM中繼資料回寫」工作流程。 PTIFF轉譯只會在Dynamic Media Hybrid實作中建立並儲存在本機。
+1. 若要使用新屬性重新產生動態媒體影像的金字塔TIFF(PTIFF)轉譯，請將「動態媒體處理影像資產」步驟新增至「 **** DAM中繼資料回寫」工作流程。PTIFF轉譯只會在Dynamic Media Hybrid實作中建立並儲存在本機。
 
 1. 儲存工作流程。
 
