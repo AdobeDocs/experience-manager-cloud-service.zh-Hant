@@ -3,6 +3,9 @@ title: 新增使用者和角色——必要項目
 description: 新增使用者和角色——必要項目
 translation-type: tm+mt
 source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 3%
 
 ---
 
@@ -21,13 +24,13 @@ Cloud Manager中的許 [!UICONTROL 多功能] ，都需要特定的權限才能�
 
 >[!CAUTION]
 >
->若要使 [!UICONTROL 用Cloud Manager]，您必須擁有Adobe ID和Adobe Managed services產品內容。
+>若要使 [!UICONTROL 用Cloud Manager]，您必須擁有Adobe ID和Adobe Managed Services產品內容。
 
 ## 角色定義 {#role-definitions}
 
 >[!NOTE]
 >
->Admin console中的「開發人員角色」與 [!UICONTROL Cloud Manager中的「開發人員」角色無關]。
+>Admin Console中的「開發人員角色」與 [!UICONTROL Cloud Manager中的「開發人員」角色無關]。
 
 下表匯總了角色：
 
