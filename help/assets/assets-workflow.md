@@ -4,6 +4,9 @@ description: 瞭解如何將工作流程套用至Adobe Experience Manager Assets
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 7%
 
 ---
 
@@ -22,9 +25,9 @@ source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 1. 按一下AEM圖示，然後從選單 **[!UICONTROL 選擇]** 「時間軸」以顯示時間軸。
 1. 按一下底部的「動作」圖示。
 1. 按一下「 **[!UICONTROL 開始工作流程]**」。
-1. 在「開 **[!UICONTROL 始工作流]** 」(Start Workflow)對話框中，從清單中選擇工作流模型。
+1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 1. （可選）指定工作流的標題，可用來參考工作流實例。
-1. 按一 **[!UICONTROL 下「開始]** 」，然後按一 **[!UICONTROL 下對話方塊中的「確認]** 」。 工作流程會在您選取的所有資產上執行。
+1. 按一 **[!UICONTROL 下「開始]** 」，然後按一 **[!UICONTROL 下對話方塊中的「確認]** 」。工作流程會在您選取的所有資產上執行。
 
 ## 將工作流程套用至多個檔案夾 {#applying-a-workflow-to-multiple-folders}
 
