@@ -3,6 +3,9 @@ title: 頁面編輯的鍵盤快速鍵
 description: AEM中提供多種鍵盤快速鍵，包括一些用於頁面編輯
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 1%
 
 ---
 
