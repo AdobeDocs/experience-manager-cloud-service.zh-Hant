@@ -92,6 +92,7 @@ ht-degree: 17%
    * **分組依據**
    * **排程** 或無 ****
    * **卡片大小**
+
    ![收件匣行事歷檢視設定](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **清單檢視**
@@ -100,6 +101,7 @@ ht-degree: 17%
 
    * **排序方式**
    * **排序順序**
+
    ![收件箱清單視圖設定](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
    您也可以將日曆委派給其他用途，以及要求其他使用者委派並管理您的委派。
@@ -128,6 +130,7 @@ ht-degree: 17%
    * **退回** 至上一步
    * 檢視工作流程的裝載
    * 從項目建立專案
+
    >[!NOTE]
    >
    >如需詳細資訊，請參閱：
@@ -140,6 +143,7 @@ ht-degree: 17%
    * 將開啟與操作相適應的對話框
    * 將啟動操作嚮導
    * 將會開啟檔案頁面
+
    例如， **Delegate** 將開啟一個對話框：
 
    ![委派收件箱任務](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
@@ -168,11 +172,13 @@ ht-degree: 17%
       * **任務優先順序**
       * **開始日期**
       * **到期日期**
+
    ![收件箱添加任務](/help/sites-cloud/authoring/assets/inbox-create-task.png)
 
    * **進階**
 
       * **名稱**：這將用來形成URL，如果空白則會以標題為 **基礎**。
+
    ![收件箱添加任務高級選項](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
 1. 選擇 **提交**。
