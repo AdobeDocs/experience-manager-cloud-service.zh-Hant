@@ -3,6 +3,9 @@ title: 內容片段 - 刪除考量事項
 description: 內容片段 - 刪除考量事項
 translation-type: tm+mt
 source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+workflow-type: tm+mt
+source-wordcount: '408'
+ht-degree: 12%
 
 ---
 
@@ -17,15 +20,15 @@ source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 1. **內容片段為單一實體。**
 
-   * **使用案例**:需要編輯／更新內容片段——並刪除整 **個片段的使用者**。
-   * **權限**:「刪除」權限可透過「使用者」和／或「群組管理」來指派。 <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **使用案例**: 需要編輯／更新內容片段——並刪除整 **個片段的使用者**。
+   * **權限**: 「刪除」權限可透過「使用者」和／或「群組管理」來指派。 <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-2. **構成內容片段的多個子實體；例如，變化，子節點。**
+2. **構成內容片段的多個子實體； 例如，變化，子節點。**
 
-   內容片段編輯器的基本操作要求可以刪除這種瞬時子元素。 例如，在操縱變化時；編輯中繼資料或管理相關內容時也一樣。
+   內容片段編輯器的基本操作要求可以刪除這種瞬時子元素。 例如，在操縱變化時； 編輯中繼資料或管理相關內容時也一樣。
 
-   * **使用案例**:需要編輯／更新內容片段的使用者， **而不允許刪除整個片段**。
-   * **權限**:請參 [閱僅編輯器功能所需的權限](#permissions-required-for-editor-functionality-only)。
+   * **使用案例**: 需要編輯／更新內容片段的使用者， **而不允許刪除整個片段**。
+   * **權限**: 請參 [閱僅編輯器功能所需的權限](#permissions-required-for-editor-functionality-only)。
 
 >[!NOTE]
 >
@@ -39,7 +42,7 @@ source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 對於需要編輯/更新內容片段而不允許他們刪除整個片段的使用者 ****，必須指派特定權限，因為內容片段編輯器的基本操作要求可以刪除暫時的子元素。
 
-例如，在操縱變化時；編輯中繼資料或管理相關內容時也一樣。
+例如，在操縱變化時； 編輯中繼資料或管理相關內容時也一樣。
 
 >[!NOTE]
 >
