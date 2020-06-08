@@ -4,6 +4,9 @@ description: 瞭解如何上傳、預覽、註解和發佈視訊資產。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 9%
 
 ---
 
