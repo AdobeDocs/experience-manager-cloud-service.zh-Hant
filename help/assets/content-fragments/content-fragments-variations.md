@@ -1,13 +1,16 @@
 ---
-title: 變數——製作片段內容
+title: 變化 - 編寫片段內容
 description: 變數可讓您為片段製作內容，然後根據用途建立該內容的變數（如有需要）。
 translation-type: tm+mt
 source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+workflow-type: tm+mt
+source-wordcount: '1710'
+ht-degree: 16%
 
 ---
 
 
-# 變數——製作片段內容{#variations-authoring-fragment-content}
+# 變化 - 編寫片段內容{#variations-authoring-fragment-content}
 
 [變數](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是內容片段的重要功能，因為它們可讓您建立和編輯主要內容的副本，以用於特定頻道和／或藍本。
 
@@ -16,7 +19,7 @@ source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 * [輸入片段的內容](#authoring-your-content) ,
 * [建立並管理主版](#managing-variations) ( **Master** )內容的變化
 
-根據正在編輯的資料類型執行一系列其他操作；例如：
+根據正在編輯的資料類型執行一系列其他操作； 例如：
 
 * [將視覺資產插入您的片段](#inserting-assets-into-your-fragment) （影像）
 
@@ -62,7 +65,7 @@ source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 
 ### 全螢幕編輯器 {#full-screen-editor}
 
-編輯多行文字欄位時，可以開啟全螢幕編輯器；點選或按一下實際文字，然後選取下列動作圖示：
+編輯多行文字欄位時，可以開啟全螢幕編輯器； 點選或按一下實際文字，然後選取下列動作圖示：
 
 ![全螢幕編輯器圖示](assets/cfm-variations-03.png)
 
@@ -106,16 +109,16 @@ source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 * 粗體
 * 斜體
 * 底線
-* 對齊：左，中，右
+* 對齊： 左，中，右
 * 項目符號清單
 * 編號清單
-* 縮排：增加，減少
+* 縮排： 增加，減少
 * 建立／中斷超連結
 * 開啟全螢幕編輯器，其中提供下列格式選項：
 
    * 貼上文字／從Word
    * 插入表格
-   * 段落樣式：第1/2/3段
+   * 段落樣式： 第1/2/3段
    * [插入視覺資產](#inserting-assets-into-your-fragment)
    * 搜尋
    * 尋找/取代
@@ -130,7 +133,7 @@ source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 
 >[!CAUTION]
 >
->如果您選取「純 **文字** 」 **，可能會遺失您已插入「豐富文字」或「標籤文字」的任何格式、標籤和／或資產******。
+>如果您選取「純 **文字** 」 **，可能會遺失您已插入「豐富文字」或「標籤文字」的任何格式、標籤和/或資產******。
 
 ### Markdown {#markdown}
 
@@ -178,7 +181,7 @@ source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 
 >[!CAUTION]
 >
->內容片段必須有有效的語言資料夾（ISO程式碼）做為祖先；這可用來決定要使用的語言模型。
+>內容片段必須有有效的語言資料夾（ISO程式碼）做為祖先； 這可用來決定要使用的語言模型。
 >
 >例如， `en/` 如下列路徑：
 >
@@ -238,7 +241,7 @@ source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 
 * 在片段編輯器中選擇「註解」( **Annotations** )頁籤，即可列出和刪除。
 
-   ![註解](assets/cfm-variations-08.png)
+   ![附註](assets/cfm-variations-08.png)
 
 * 可在時間軸中檢視和刪 [除所選片段](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) 。
 
@@ -246,7 +249,7 @@ source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 
 若要簡化製作內容片段的程式，您可以直接將 [Assets](/help/assets/manage-digital-assets.md) （影像）新增至片段。
 
-這些文字將加到片段的段落序列中，不需任何格式；當頁面上使用／參 [考片段時，可執行格式設定](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
+這些文字將加到片段的段落序列中，不需任何格式； 當頁面上使用／參 [考片段時，可執行格式設定](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
 
 >[!CAUTION]
 這些資產無法在參考頁面上移動或刪除，這必須在片段編輯器中完成。
@@ -304,11 +307,11 @@ source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 
 要更名現有變數：
 
-1. 開啟您的片段，然後從 **側面板** 選取「變化」。
+1. Open your fragment and select **Variations** from the side panel.
 1. 選擇所需的變化。
 1. 從「 **動作** 」下拉式清 **單中選** 取「重新命名」。
 
-1. 在產生的對 **話方塊中** ，輸入新的「 **** 標題」和／或「說明」。
+1. 在產生的對 **話方塊中** ，輸入新的「 **** 標題」和/或「說明」。
 
 1. 確認「重 **命名** 」動作。
 
@@ -319,7 +322,7 @@ source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 
 要刪除現有變數，請執行以下操作：
 
-1. 開啟您的片段，然後從 **側面板** 選取「變化」。
+1. Open your fragment and select **Variations** from the side panel.
 1. 選擇所需的變化。
 1. 從「 **動作** 」下拉式清 **單中選** 取「刪除」。
 
