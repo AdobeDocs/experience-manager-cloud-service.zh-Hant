@@ -25,7 +25,7 @@ Dispatcher 是 Adobe Experience manager 的快取和/或負載平衡工具。使
 
 ### Apache和Dispatcher配置和測試 {#dispatcher-configurations-cloud}
 
-您必須瞭解如何將AEM架構為雲端服務Apache和Dispatcher組態，以及如何在部署至雲端環境之前，先在本機驗證並執行它。
+您必須瞭解如何將AEM建構為雲端服務Apache和Dispatcher組態，以及如何在部署至雲端環境之前，先在本機驗證並執行它。
 
 如需詳 [細資訊，請參閱Cloud中的](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html) Dispatcher。
 
