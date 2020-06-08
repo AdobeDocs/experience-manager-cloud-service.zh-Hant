@@ -3,6 +3,9 @@ title: 內容片段模型
 description: 內容片段模型可用來建立包含結構化內容的內容片段。
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 21%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 內容片段模型可定義內容片段的 [內容結構](/help/assets/content-fragments/content-fragments.md)。
 
-## 啟用內容片段模型 {#enable-content-fragment-models}
+## Enable Content Fragment Models {#enable-content-fragment-models}
 
 >[!CAUTION]
 >
@@ -22,7 +25,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 * 在配置管理器中啟用內容片段模型
 * 將設定套用至您的「資產」檔案夾
 
-### 在Configuration manager中啟用內容片段模型 {#enable-content-fragment-models-in-configuration-manager}
+### 在Configuration Manager中啟用內容片段模型 {#enable-content-fragment-models-in-configuration-manager}
 
 若要 [建立新的內容片段模型](#creating-a-content-fragment-model) , **您必須先使用「設定管理員** 」加以啟用：
 
@@ -40,7 +43,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 當為內容 **片段模型** 啟用設定全域時，使用者建立的任何模型都可用於任何「資產」檔案夾。
 
-若要搭配可比的「資產」檔案夾使用其他設定（例如排除全域），您必須定義連線。 若要這麼做，請在適當資 **料夾的「資料夾屬性** 」的「雲端服務 **」標籤** 中選取適當的「設定 **** 」。
+若要搭配可比的「資產」檔案夾使用其他設定 (例如排除全域)，您必須定義連線。若要這麼做，請在適當資 **料夾的「資料夾屬性** 」的「雲端服務 **」標籤** 中選取適當的「設定 **** 」。
 
 ## 建立內容片段模型 {#creating-a-content-fragment-model}
 
@@ -52,7 +55,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    >
    >如果 [未啟用內容片段模型的使用](#enable-content-fragment-models)，將無 **法使用「建立** 」選項。
 
-1. 指定「模 **型標題」**。 您也可以視需要 **新增「說** 明」。
+1. 指定「模 **型標題」**。您也可以視需要 **新增「說** 明」。
 
    ![標題和說明](assets/cfm-models-02.png)
 
@@ -69,11 +72,11 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 1. 導覽至「 **工具**」、「資 **產」**，然後開啟「 **內容片段模型」**。
 
 1. 導覽至包含內容片段模型的檔案夾。
-1. 開啟「編輯」( **Edit)所需的模型**;使用快速動作，或從工具列中選取模型和動作。
+1. 開啟所需的編輯 **模型**; 使用快速動作，或從工具列中選取模型和動作。
 
    開啟模型編輯器後，會顯示：
 
-   * 左：欄位已定義
+   * 左： 欄位已定義
    * 右：資 **料類型** ，可用於建立欄位( **和屬性** ，以供建立欄位後使用)
    >[!NOTE]
    >
@@ -103,7 +106,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    ![移除](assets/cfm-models-06.png)
 
-1. 新增所有必填欄位並定義屬性後，請使 **用「儲存** 」來保存定義。 例如：
+1. 新增所有必填欄位並定義屬性後，請使 **用** 「儲存」來保存定義。 例如：
 
    ![儲存](assets/cfm-models-07.png)
 
