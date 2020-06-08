@@ -3,6 +3,9 @@ title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
 source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+workflow-type: tm+mt
+source-wordcount: '1097'
+ht-degree: 2%
 
 ---
 
@@ -23,12 +26,12 @@ AEM即雲端服務是客戶可加入自訂程式碼的平台，可為客戶群�
 * the format to be used when writing the log messages
 -->
 
-## AEM作為雲端服務記錄 {#aem-as-a-cloud-service-logging}
+## AEM as a Cloud Service Logging {#aem-as-a-cloud-service-logging}
 
 AEM做為雲端服務，可讓您設定：
 
 * 中央記錄服務的全局參數
-* 要求資料記錄；要求資訊的專用記錄設定
+* 要求資料記錄； 要求資訊的專用記錄設定
 * 個別服務的特定設定
 
 在本地開發中，日誌條目將寫入資料夾中的本地 `/crx-quickstart/logs` 檔案。
@@ -156,7 +159,7 @@ leftover text from the last breakaway chunk (re dispatcher) -->
 * 特定記錄級別
 * the logger(the OSGi service suppliding the log messages)
 
-這可讓您將單一服務的記錄訊息傳送至個別檔案。 這在開發或測試時特別有用；例如，當您需要特定服務的日誌級別提高時。
+這可讓您將單一服務的記錄訊息傳送至個別檔案。 這在開發或測試時特別有用； 例如，當您需要特定服務的日誌級別提高時。
 
 AEM as a Cloud Service使用下列功能將記錄訊息寫入檔案：
 
@@ -418,7 +421,7 @@ AEM as a Cloud Service使用下列功能將記錄訊息寫入檔案：
 
    The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
 
-Felix Console也提供Sling Log Support的相關資訊，網址為 `../system/console/slinglog`;例 `https://localhost:4502/system/console/slinglog`如
+Felix Console也提供Sling Log Support的相關資訊，網址為 `../system/console/slinglog`; 例 `https://localhost:4502/system/console/slinglog`如
 
 ## 存取和管理記錄檔 {#manage-logs}
 
