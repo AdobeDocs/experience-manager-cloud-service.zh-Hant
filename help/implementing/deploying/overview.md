@@ -4,8 +4,8 @@ description: '部署至 AEM 雲端服務 '
 translation-type: tm+mt
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3512'
+ht-degree: 1%
 
 ---
 
@@ -146,7 +146,7 @@ Health checks are used to monitor the health of the application. 如果這些檢
 * 可在運行時驗證本地開發環境上的repoinit語句，因為這些語句將在註冊OSGi配置時執行。
 * 重新指向語句是原子和顯式語句，如果狀態已匹配，則將跳過。
 
-當Cloud Manager部署應用程式時，它會執行這些陳述式，而與安裝任何內容套件無關。
+當Cloud Manager部署應用程式時，它會執行這些陳述式，而與安裝任何內容封裝無關。
 
 要建立重新指向語句，請遵循以下過程：
 
