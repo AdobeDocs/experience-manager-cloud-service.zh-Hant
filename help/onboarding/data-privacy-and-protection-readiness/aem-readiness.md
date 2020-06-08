@@ -1,8 +1,11 @@
 ---
 title: 資料保護與資料隱私權法規- Adobe Experience Manager雲端服務就緒性
-description: '瞭解Adobe Experience Manager如何以雲端服務的方式支援各種資料保護與資料隱私權規定；包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
+description: '瞭解Adobe Experience Manager如何以雲端服務的方式支援各種資料保護與資料隱私權規定； 包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +34,7 @@ Adobe提供檔案和程式（當有API時），讓客戶隱私權管理員或AEM
 
 ## 簡介 {#introduction}
 
-Adobe Experience manager的雲端服務執行個體，以及在其上執行的應用程式，都歸客戶所有和營運。
+Adobe Experience Manager的雲端服務執行個體，以及在其上執行的應用程式，都歸客戶所有和營運。
 
 因此， GDPR、CCPA等資料保護法規在很大程度上是客戶的責任。
 
@@ -43,7 +46,7 @@ Adobe Experience manager的雲端服務執行個體，以及在其上執行的�
 
 這些條例的主要規定是：
 
-1. 將個人資料的定義擴充為包含所有唯一ID;直接和間接可識別的資料。
+1. 將個人資料的定義擴充為包含所有唯一ID; 直接和間接可識別的資料。
 
 2. 已強化同意要求。
 
@@ -57,9 +60,9 @@ Adobe Experience manager的雲端服務執行個體，以及在其上執行的�
 
    * 這有效地意味著客戶管理法規角色，包括業務實體和服務提供商、資料控制器和資料處理器等。
 
-   * Adobe Experience Platform Privacy service不屬於AEM的工作流程，如下圖所示。
+   * Adobe Experience Platform Privacy Service不屬於AEM的工作流程，如下圖所示。
 
-* AEM包含客戶隱私權管理員和／或AEM管理員執行隱私權法規要求的檔案和程式；手動或透過API（若有）。
+* AEM包含客戶隱私權管理員和／或AEM管理員執行隱私權法規要求的檔案和程式； 手動或透過API（若有）。
 
 * 未新增任何服務或UI。
 
@@ -77,19 +80,19 @@ Adobe提供處理與Adobe Experience Manager雲端服務之存取、刪除及選
 
 ## Adobe Experience Manager雲端服務與法規準備 {#aem-as-a-cloud-service-and-regulatory-readiness}
 
-如需AEM a Cloud service產品區域的法規檔案，請參閱以下章節。
+如需AEM a Cloud Service產品區域的法規檔案，請參閱以下章節。
 
 ## Adobe Experience Manager雲端服務基礎 {#aem-foundation}
 
-請參閱 [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md)。
+See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md).
 
-## Adobe Experience Manager雲端服務網站 {#aem-sites}
+## Adobe Experience Manager 雲端服務 Sites {#aem-sites}
 
-請參閱 [AEM Sites Readiness for Data Protection and Data Privacy Regulations。](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
+See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
 
-## Adobe Experience manager與Adobe Target和Adobe Analytics的雲端服務整合 {#aem-integration-with-adobe-target-adobe-analytics}
+## Adobe Experience Manager與Adobe Target和Adobe Analytics的雲端服務整合 {#aem-integration-with-adobe-target-adobe-analytics}
 
-這些Adobe Experience manager作為雲端服務的整合，與資料保護和隱私權（例如GDPR）就緒服務整合。 AEM中不會儲存Adobe target或Adobe Analytics中與整合相關的個人資料。
+這些Adobe Experience Manager作為雲端服務的整合，與資料保護和隱私權（例如GDPR）就緒服務整合。 AEM中不會儲存Adobe Target或Adobe Analytics中與整合相關的個人資料。
 如需詳細資訊，請參閱：
 
 * [Adobe Target —— 隱私權概觀](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
