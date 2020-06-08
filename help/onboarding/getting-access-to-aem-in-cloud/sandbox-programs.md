@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 沙盒程式 {#sandbox-programs}
+# 沙箱方案 {#sandbox-programs}
 
 ## 簡介 {#introduction}
 
