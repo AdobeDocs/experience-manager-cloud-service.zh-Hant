@@ -3,6 +3,9 @@ title: 元件
 description: 元件是AEM中內容頁面的基本製作建置區塊
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +40,7 @@ Components [Console](/help/sites-cloud/authoring/features/components-console.md)
 
 ## 核心元件 {#core-components}
 
-核心 [元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) (Core Components)提供有彈性且功能豐富的製作功能，可提供建立頁面的基本內容類型。
+核心 [元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) (Core Components)提供有彈性且功能豐富的製作功能，可提供建立頁面的基本內容類型。
 
 它們是使用AEM最佳實務建立，是AEM製作體驗的基礎。 開發人員可輕鬆擴充核心元件，以符合特定專案需求。
 
