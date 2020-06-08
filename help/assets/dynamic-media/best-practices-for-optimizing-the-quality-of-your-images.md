@@ -1,13 +1,16 @@
 ---
-title: 最佳化影像品質的最佳範例
+title: 影像品質最佳化的最佳作法
 description: 瞭解在動態媒體中最佳化影像品質的最佳範例
 translation-type: tm+mt
 source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
+workflow-type: tm+mt
+source-wordcount: '1490'
+ht-degree: 5%
 
 ---
 
 
-# 最佳化影像品質的最佳範例 {#best-practices-for-optimizing-the-quality-of-your-images}
+# 影像品質最佳化的最佳作法 {#best-practices-for-optimizing-the-quality-of-your-images}
 
 最佳化影像品質可能相當耗時，因為許多因素都有助於產生可接受的結果。 結果部分是主觀的，因為個體對影像質量的看法不同。 結構化實驗是關鍵。
 
@@ -31,13 +34,13 @@ AEM包含超過100種動態媒體影像傳送指令，可用來調整和最佳�
 * 對於影像大小調整，最好也最直接的方法是使 `&wid=<value>` 用或 `&hei=<value>,`僅使用 `&hei=<value>`。 這些參數會根據長寬比自動設定影像寬度。
 * `&resMode=<value>`控制用於縮減取樣的演算法。 從開始 `&resMode=sharp2`。 此值可提供最佳的影像品質。 雖然使用縮減取樣 `value =bilin` 更快速，但通常會造成不自然的鋸齒。
 
-作為調整影像大小、使用或 `&wid=<value>&hei=<value>&resMode=sharp2``&hei=<value>&resMode=sharp2`
+作為調整影像大小、使用或 `&wid=<value>&hei=<value>&resMode=sharp2` `&hei=<value>&resMode=sharp2`
 
 ## 影像銳利化的最佳範例 {#best-practices-for-image-sharpening}
 
 影像銳利化是控制網站上影像最複雜的方面，也是常有錯誤發生的地方。 請花點時間，參考下列實用資源，進一步瞭解銳利化和反銳利化遮色片在AEM中的運作方式：
 
-Adobe Scene7 Publishing system和Image server中的 [影像銳利化最佳範例白皮書](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf) ，也適用於AEM。
+Adobe Scene7 Publishing System和Image Server中的 [影像銳利化最佳範例白皮書](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf) ，也適用於AEM。
 
 在Adobe TV上，觀看「使 [用銳利化遮色片銳利化影像」](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)。
 
@@ -57,22 +60,22 @@ Adobe Scene7 Publishing system和Image server中的 [影像銳利化最佳範例
 
       * **[!UICONTROL 閾值]** （0-255，效果的敏感度。）
 
-         此參數可決定銳化像素與周圍區域的差異程度，之後才會被視為邊緣像素，濾鏡會銳化這些像素。 臨界 **[!UICONTROL 值參數]** ，有助於避免色彩相似的區域過度銳利化，例如膚色。 例如，閾值為12會忽略膚色亮度的微小變化，以避免加上「雜訊」，同時仍會加上邊緣對比度至高對比區域，例如睫毛與皮膚相遇的區域。
+         此參數可決定銳化像素與周圍區域的差異程度，之後才會被視為邊緣像素，濾鏡會銳化這些像素。The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. 例如，閾值為12會忽略膚色亮度的微小變化，以避免加上「雜訊」，同時仍會加上邊緣對比度至高對比區域，例如睫毛與皮膚相遇的區域。
       如需如何設定這三個參數的詳細資訊，包括搭配篩選器使用的最佳實務，請參閱下列資源：
 
       「銳利化影像」的AEM說明主題。
 
-      最佳實務白皮 [書「在Adobe Scene7 Publishing system和Image Server上銳利化影像」](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)。
+      最佳實務白皮 [書「在Adobe Scene7 Publishing System和Image Server上銳利化影像」](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)。
 
-   * AEM也可讓您控制第四個參數：單色(0,1)。 此參數確定是否使用值0將銳利化遮色片分別套用至每個顏色元件，或使用值1將遮色片套用至影像亮度／強度。
+   * AEM也可讓您控制第四個參數： 單色(0,1)。 此參數確定是否使用值0將銳利化遮色片分別套用至每個顏色元件，或使用值1將遮色片套用至影像亮度／強度。
 
 
 最佳實務是，從遮色片銳度參數開始。 可以開始的半徑設定如下：
 
-* **[!UICONTROL 網站]**:0.2-0.3像素
-* **[!UICONTROL 像片列印(250-300 ppi)]**:0.3-0.5像素
-* **[!UICONTROL 膠印(266-300 ppi)]**:0.7-1.0像素
-* **[!UICONTROL 畫布列印(150 ppi)]**:1.5-2.0像素
+* **[!UICONTROL 網站]**: 0.2-0.3像素
+* **[!UICONTROL 像片列印(250-300 ppi)]**: 0.3-0.5像素
+* **[!UICONTROL 膠印(266-300 ppi)]**: 0.7-1.0像素
+* **[!UICONTROL 畫布列印(150 ppi)]**: 1.5-2.0像素
 
 逐步從1.75增加到4. 如果銳利化仍不符合您的要求，請將半徑增加一個小數點，然後再執行從1.75到4的量。 視需要重複。
 
@@ -80,7 +83,7 @@ Adobe Scene7 Publishing system和Image server中的 [影像銳利化最佳範例
 
 ### JPEF壓縮的最佳做法(`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
-* 此參數會控制JPG編碼品質。 值越高，表示影像品質越高，但檔案大小卻越大；或者，值越低表示品質越低，但檔案大小越小。 此參數的範圍是0-100。
+* 此參數會控制JPG編碼品質。 值越高，表示影像品質越高，但檔案大小卻越大； 或者，值越低表示品質越低，但檔案大小越小。 此參數的範圍是0-100。
 * 要優化質量，請不要將參數值設定為100。 設定90或95與100之間的差異幾乎無法察覺，但100則不必要地增加影像檔的大小。 因此，若要最佳化品質，但避免影像檔案變得過大，請將 `qlt= value` 設定為90或95。
 * 若要最佳化小型影像檔案大小，但將影像品質維持在可接受的水準，請將設定 `qlt= value` 為80。 低於70到75的值會導致影像品質大幅降低。
 * 最好的做法是，若要保持在中間，請將 `qlt= value` 值設為85以保持中間。
@@ -108,13 +111,13 @@ jpegSize是一個有用的參數，如果您想要確保影像不會超過特定
 
 這種設定組合在大多數情況下都能產生出色的效果。
 
-如果影像需要進一步最佳化，請從半徑設定為0.2或0.3開始，逐漸微調銳利化（遮色片銳利化）參數。然後，逐漸將數量從1.75增加到最多4（相當於Photoshop的400%）。 檢查是否達到所需結果。
+如果影像需要進一步最佳化，請從半徑設定為0.2或0.3開始，逐漸微調銳利化（遮色片銳利化）參數。 然後，逐漸將數量從1.75增加到最多4（相當於Photoshop的400%）。 檢查是否達到所需結果。
 
 如果銳利化結果仍不令人滿意，請以小數點增量增加半徑。 對於每個小數增量，以1.75重新啟動該量，並逐漸將其增加到4。 重複此程式，直到達到所需結果。 雖然上述價值觀是創意工作室已證實的方法，但請記住，您可以從其他價值觀開始，並遵循其他策略。 結果是否滿意是主觀的，因此結構化實驗是關鍵。
 
 在實驗時，您也會發現下列一般建議有助於最佳化工作流程：
 
-* 直接在URL上或使用Scene7 Publishing system的影像調整功能（提供調整作業的即時預覽），即時嘗試並測試不同的參數。
+* 直接在URL上或使用Scene7 Publishing System的影像調整功能（提供調整作業的即時預覽），即時嘗試並測試不同的參數。
 * 請記住，您可以將「動態媒體影像伺服」指令群組至影像預設集。 影像預設集基本上是具有自訂預設集名稱（例如和）的URL指令 `$thumb_low$` 巨集 `&product_high$`。 URL路徑中的自訂預設集名稱會呼叫這些預設集。 這些功能可協助您管理網站上不同影像使用模式的命令和品質設定，並縮短URL的整體長度。
 * AEM也提供更進階的方式來調整影像品質，例如在擷取時套用銳利化影像。 若是進階使用案例，若您可選擇進一步調整和最佳化演算結果， [](https://www.adobe.com/experience-cloud/consulting-services.html) Adobe專業服務可協助您自訂見解和最佳實務。
 
