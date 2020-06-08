@@ -3,6 +3,9 @@ title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 11%
 
 ---
 
@@ -69,7 +72,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
    * 例如，如果「虛名URL」設 `welcome` 定為網站路徑所識別 `/v1.0/startpage` 的頁面 `http://example.com`，則 `http://example.com/welcome` 會是 `http://example.com/content/v1.0/startpage`
    >[!CAUTION]
    >
-   >虛名URL:
+   >虛名 URL:
    >
    >* 必須是唯一的，因此您應該注意該值尚未被其他頁面使用。
    >* 不支援regex圖樣。
@@ -101,7 +104,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
    >
    >別名設定 `sling:alias` 屬性以定義資源的別名（這僅影響資源，而不影響路徑）。
    >
-   >例如：如果為節點節點定 `latin-lang` 義別名， `/content/we-retail/spanish` 則可通過 `/content/we-retail/latin-language`
+   >例如： 如果為節點節點定 `latin-lang` 義別名， `/content/we-retail/spanish` 則可通過 `/content/we-retail/latin-language`
    >
    >如需詳細資訊，請參閱「SEO與URL管理最佳實務」下的「本地化頁面名稱」。
 
