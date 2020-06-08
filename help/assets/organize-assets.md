@@ -4,6 +4,9 @@ description: 使用Adobe Experience Manager Assets中提供的各種方法組織
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ AEM Assets支援多種組織內容的方式。 您可以使用資料夾以階層
 1. 導覽至您要建立新資料夾的數位資產檔案夾。
 1. 在功能表中，按一下「 **[!UICONTROL 建立]**」。 選擇「 **[!UICONTROL 新建資料夾]**」。
 1. 在「標 **[!UICONTROL 題]** 」欄位中，提供檔案夾名稱。 依預設，DAM會使用您提供的標題作為檔案夾名稱。 建立資料夾後，您可以覆寫預設資料夾，並指定另一個資料夾名稱。
-1. 按一下&#x200B;**[!UICONTROL 「建立」]**。您的資料夾會顯示在數位資產資料夾中。
+1. 按一下&#x200B;**[!UICONTROL 建立]**。您的資料夾會顯示在數位資產資料夾中。
 
 ## 將CUG屬性添加到資料夾 {#add-cug-properties-to-folders}
 
@@ -42,4 +45,4 @@ AEM Assets支援多種組織內容的方式。 您可以使用資料夾以階層
 
 1. 在Digital Asset Manager中，按兩下資產以開啟它。
 1. 在「標 **記** 」區域中，按一下下拉式按鈕以顯示可用的標籤。 選擇適當的標籤以添加標籤。 若要刪除標籤，請將滑鼠暫留在標籤上，然後按一下 **x** 將其刪除。
-1. 按一 **下「儲存** 」以儲存您新增的任何標籤。
+1. 按一 **下「儲存** 」，儲存您新增的任何標籤。
