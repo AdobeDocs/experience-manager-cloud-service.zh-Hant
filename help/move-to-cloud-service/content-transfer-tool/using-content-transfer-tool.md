@@ -2,9 +2,9 @@
 title: 使用內容傳輸工具
 description: 使用內容傳輸工具
 translation-type: tm+mt
-source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
+source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1538'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 1%
    1. **存取Token**: 輸入存取Token。
 
       >[!NOTE]
-      >您可以導覽至，從作者例項擷取存取Token `/libs/granite/migration/token.json`。
+      >您可以導覽至，從作者例項擷取存取Token `/libs/granite/migration/token.json`。 存取Token是從雲端服務作者實例擷取。
 
    1. **參數**: 選擇以下參數以建立遷移集：
 
