@@ -3,6 +3,9 @@ title: 建立頁面範本
 description: 範本會定義產生頁面的結構，而使用範本編輯器，建立和維護範本不再是僅限開發人員的工作
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '4554'
+ht-degree: 11%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 建立頁面時，您必須選取範本，此範本將用作建立新頁面的基礎。 範本會定義結果頁面的結構、任何初始內容，以及可使用的元件。
 
-使用范 **本編輯器**，建立和維護範本不再是開發人員專屬的工作。 也可以涉及一種稱為模板作 **者的權**&#x200B;力用戶。 開發人員仍需要設定環境、建立用戶端程式庫和建立要使用的元件，但是當這些基本功能準備就緒後，範本作者就可以彈性地建立和設定範本，而不需要開發專案。 ****
+使用范 **本編輯器**，建立和維護範本不再是開發人員專屬的工作。也可以涉及一種稱為模板作 **者的權**&#x200B;力用戶。開發人員仍需要設定環境、建立用戶端程式庫和建立要使用的元件，但是當這些基本功能準備就緒後，範本作者就可以彈性地建立和設定範本，而不需要開發專案。****
 
 範本控 **制台(Templates Console** )可讓範本作者：
 
@@ -30,7 +33,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->范 **** 本編輯器不支援直接在範本層級定位。 可以定位根據可編輯的範本建立的頁面，但無法定位範本本身。
+>范 **** 本編輯器不支援直接在範本層級定位。可以定位根據可編輯的範本建立的頁面，但無法定位範本本身。
 
 ## 開始之前 {#before-you-start}
 
@@ -118,11 +121,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * **範本名稱**
    * **說明**
 
-1. 選擇 **建立**。 將顯示確認資訊，選擇「 **Open** 」（開啟）開始編輯模板，或選擇「 **Done** 」（完成）返回模板控制台。
+1. 選擇 **建立**。將顯示確認資訊，選擇「 **Open** 」（開啟）開始編輯模板，或選擇「 **Done** 」（完成）返回模板控制台。
 
    >[!NOTE]
    >
-   >建立新範本時，在主控台中會將其標示為 **Draft** ，這表示該範本尚無法供頁面作者使用。
+   >當建立新範本時，在主控台中會將其標示為 **Draft** ，這表示該範本尚未可供頁面作者使用。
 
 ### 定義模板屬性——模板作者 {#defining-template-properties-template-author}
 
@@ -156,7 +159,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * 如果您想要上傳縮圖，請按一下或點選「上傳影 **像」。**
    * 如果您想要產生縮圖，請按一下或點選「產生預 **覽」**
 1. 對於這兩種方法，都會顯示縮圖的預覽。
-   * 如果不滿意，請按一下或點選「清除 **」** ，上傳其他影像或重新產生縮圖。
+   * 如果不滿意，請按一下或點選「清 **除」** ，上傳其他影像或重新產生縮圖。
 1. 當您對縮圖滿意時，按一下或點選「儲 **存並關閉」**。
 
 ### 啟用和允許範本——範本作者 {#enabling-and-allowing-a-template-template-author}
@@ -214,7 +217,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 當轉譯頁面時參考範本時，必須發佈已完全設定的範本，以便在發佈環境中使用。
 
 1. 在「範本 **控制台**」中，選取範本。
-1. 從工 **具列選擇** 「發佈」，以開啟精靈。
+1. Select **Publish** from the toolbar to open the wizard.
 1. 選取 **要同時發佈的** 「內容原則」。
 1. 從工 **具列選擇** 「發佈」(Publish)以完成動作。
 
@@ -262,7 +265,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 #### 配置 {#template-layout}
 
-使用版 [面](#editing-a-template-layout-template-author) ，您可以預先定義所需裝置格式的範本版面。 **範本製作的** 「版面」模式與頁面製作的「版面 [****」模式功能相同](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
+使用版 [面](#editing-a-template-layout-template-author) ，您可以預先定義所需裝置格式的範本版面。**範本製作的** 「版面」模式與頁面製作的「版面 [****」模式功能相同](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
 
 #### 頁面原則 {#template-page-policies}
 
@@ -455,7 +458,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 按一下或點選 **「新增對應** 」，新增全新的元件和MIME類型對應。
 
-在清單中選取元件，然後按一下或點選「 **新增類型** 」，將其他MIME類型新增至已映射的元件。 按一下「 **刪除** 」圖示以移除MIME類型。
+在清單中選取元件，然後按一下或點選「 **新增類型** 」，將其他MIME類型新增至已映射的元件。按一下「 **刪除** 」圖示以移除MIME類型。
 
 ![「預設元件」頁籤](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -477,7 +480,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ![鎖定元件按鈕](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-這包括解除鎖定容器元件，以便在初始內容模式或產生的頁 **面中新增其他元件** 。 如果您在解除鎖定容器之前已將元件／內容新增至容器，則這些元件／內容在「結構」模式中將不再顯示，但會以「初始內容 ******** 」模式顯示。 在「 **結構模式**」中，只有容器元件本身會顯示其「允許的元 **件」清單**。
+這包括解除鎖定容器元件，以便在初始內容模式或產生的頁 **面中新增其他元件** 。如果您在解除鎖定容器之前已將元件/內容新增至容器，則這些元件/內容在「結構」模式中將不再顯示，但會以「初始內容 ******** 」模式顯示。在「 **結構模式**」中，只有容器元件本身會顯示其「允許的元 **件」清單**。
 
 ![允許的元件](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
@@ -511,7 +514,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    ![解鎖元件](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
-* 如果容器元件已解除鎖定(在「結 **構** 」模式中)，則您可以在「初始內容 **** 」模式中新增元件至容器。 在「初始內 **容」模式中新增的元件** ，可在產生的頁面上移動或從中刪除。
+* 如果容器元件已解除鎖定(在「結 **構** 」模式中)，則您可以在「初始內容 **** 」模式中新增元件至容器。在「初始內 **容」模式中新增的元件** ，可在產生的頁面上移動或從中刪除。
 
    您可以使用「拖曳元件到此處 **」區域，或從適當容器的工具列** 中使用「插入新元件 **** 」選項來新增元件。
 
@@ -547,6 +550,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    * 左半部分定義頁 [面原則](#page-policies)
    * 右半部分定義頁 [面屬性](#page-properties)
+
    ![頁面設計](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
 #### 頁面原則 {#page-policies}
@@ -606,7 +610,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 從範本編輯器中，從工具 **列選擇「頁面資訊** 」，然後 **選擇「初始頁面屬性** 」以開啟對話方塊。
 
-1. 在對話方塊中，您可以定義要套用至使用此範本所建立之頁面的屬性。
+1. 在對話方塊中，您可以定義要套用至使用此範本建立之頁面的屬性。
 
    ![範本初始頁面屬性](/help/sites-cloud/authoring/assets/templates-initial-properties.png)
 
@@ -635,6 +639,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
       * 僅限結構——立即應用
       * 包含初始內容——僅限在變更後建立的頁面上
+
    在下列情況下，請格外小心：
 
    * 鎖定或解除鎖定啟用範本上的元件。
@@ -642,6 +647,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
       * 現有頁面上將遺失解除鎖定的元件（已鎖定）。
       * 鎖定元件（可編輯）將隱藏該內容，使其無法顯示在頁面上。
+
    >[!NOTE]
    >
    >AEM在變更不再是草稿之範本上元件的鎖定狀態時，會顯式提供警告。
