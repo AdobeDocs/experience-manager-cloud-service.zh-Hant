@@ -88,7 +88,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ### 檢視語言根 {#view-language-roots}
 
-觸控最佳化的UI提供「參考」面板，可顯示已在AEM Assets中建立的語言根目錄清單。
+觸控最佳化UI提供「參考」面板，可顯示已在AEM Assets中建立的語言根目錄清單。
 
 1. 在「資產」主控台中，選取您要建立語言副本的語言主版。
 1. 按一下或點選「GlobalNav」圖示，然後選擇「參 **[!UICONTROL 考」]** ，以開啟「參考」窗格。
