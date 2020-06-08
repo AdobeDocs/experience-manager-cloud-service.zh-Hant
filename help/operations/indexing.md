@@ -3,6 +3,9 @@ title: 內容搜尋與索引
 description: 內容搜尋與索引
 translation-type: tm+mt
 source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
+workflow-type: tm+mt
+source-wordcount: '1430'
+ht-degree: 3%
 
 ---
 
@@ -29,13 +32,13 @@ source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
 
 1. 索引配置會透過部署進行變更。 索引定義更改的配置方式與其他內容更改相同。
 
-1. 在AEM雲端服務的高階層，隨著 [Blue-Green部署模型的推出](#index-management-using-blue-green-deployments) ，將會有兩組索引：一組是舊版（藍色），另一組是新版（綠色）。
+1. 在AEM雲端服務的高階層，隨著 [Blue-Green部署模型的推出](#index-management-using-blue-green-deployments) ，將會有兩組索引： 一組是舊版（藍色），另一組是新版（綠色）。
 
 <!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. 客戶可以在Cloud Manager構建頁面上查看索引作業是否已完成，並在新版本準備好接收流量時收到通知。
 
-1. 限制：目前，AEM雲端服務的索引管理僅支援lucene類型的索引。
+1. 限制： 目前，AEM雲端服務的索引管理僅支援lucene類型的索引。
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -85,7 +88,7 @@ AS NOTE: the above is internal for now.
 
 ### 什麼是索引管理 {#what-is-index-management}
 
-索引管理是關於添加、刪除和更改索引。 更改索 *引的定義* 很快，但應用更改（通常稱為「建立索引」，或對於現有索引，「重新索引」）需要時間。 這不是瞬間的：必須掃描儲存庫以查找要編製索引的資料。
+索引管理是關於添加、刪除和更改索引。 更改索 *引的定義* 很快，但應用更改（通常稱為「建立索引」，或對於現有索引，「重新索引」）需要時間。 這不是瞬間的： 必須掃描儲存庫以查找要編製索引的資料。
 
 ### 什麼是藍綠部署 {#what-is-blue-green-deployment}
 
@@ -113,9 +116,9 @@ AS NOTE: the above is internal for now.
 
 ### 採用藍綠部署的索引管理 {#index-management-with-blue-green-deployment}
 
-使用藍綠部署，不會停機。 但是，對於索引管理，這要求索引僅用於某些版本的應用程式。 例如，在應用程式第2版中新增索引時，您仍不希望該索引用於應用程式第1版。 如果刪除索引，則情況正好相反：第2版中移除的索引在第1版中仍然需要。 更改索引定義時，我們希望舊版索引僅用於版本1，新版索引僅用於版本2。
+使用藍綠部署，不會停機。 但是，對於索引管理，這要求索引僅用於某些版本的應用程式。 例如，在應用程式第2版中新增索引時，您仍不希望該索引用於應用程式第1版。 如果刪除索引，則情況正好相反： 第2版中移除的索引在第1版中仍然需要。 更改索引定義時，我們希望舊版索引僅用於版本1，新版索引僅用於版本2。
 
-下表顯示5個索引定義：索引 `cqPageLucene` 在兩個版本中都使用，而索引 `damAssetLucene-custom-1` 僅在版本2中使用。
+下表顯示5個索引定義： 索引 `cqPageLucene` 在兩個版本中都使用，而索引 `damAssetLucene-custom-1` 僅在版本2中使用。
 
 >[!NOTE]
 >
