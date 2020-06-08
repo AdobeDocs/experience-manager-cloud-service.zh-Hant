@@ -3,13 +3,16 @@ title: 角色型權限
 description: 角色型權限
 translation-type: tm+mt
 source-git-commit: 3c56d94f9922cb65b91912dd96eb8aa60efc2b53
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 21%
 
 ---
 
 
 # 角色型權限 {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] 具有預先設定的角色，具有適當的權限。 例如，開發人員會開發程式碼，並具有將程式碼推送至 **Git Repository的權限**。 或者，企業擁有者擁有不同的權限，可讓他們定義關鍵績效指標(KPI)並批准部署。
+[!UICONTROL Cloud Manager 已預先設定角色，賦予適當權限。]例如，開發人員會開發程式碼，並具有將程式碼推送至 **Git Repository的權限**。 或者，企業擁有者擁有不同的權限，可讓他們定義關鍵績效指標(KPI)並批准部署。
 
 ## 使用者權限 {#user-permissions}
 
