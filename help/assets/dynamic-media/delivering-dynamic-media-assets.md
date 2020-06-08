@@ -3,11 +3,14 @@ title: 提供動態媒體資產
 description: 瞭解如何提供動態媒體資產
 translation-type: tm+mt
 source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+workflow-type: tm+mt
+source-wordcount: '301'
+ht-degree: 3%
 
 ---
 
 
-# 提供動態媒體資產{#delivering-dynamic-media-assets}
+# Delivering Dynamic Media Assets{#delivering-dynamic-media-assets}
 
 如何提供動態媒體資產（視訊和影像）取決於網站的實作方式。
 
@@ -28,11 +31,11 @@ source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 * [新增動態媒體資產至網頁](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [將視訊或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)
-* [在動態媒體中啟用熱連結保護](/help/assets/dynamic-media/hotlink-protection.md)
+* [在 Dynamic Media 中啟用超連結保護](/help/assets/dynamic-media/hotlink-protection.md)
 * [將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [為互動式網站提供最佳化影像](/help/assets/dynamic-media/responsive-site.md)
 * [HTTP2內容傳送](/help/assets/dynamic-media/http2faq.md)
-* [使CDN快取內容無效](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
+* [使 CDN 快取內容失效](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
 * [使用規則集轉換URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## HTTP/2傳送動態媒體資產 {#http-delivery-of-dynamic-media-assets}
