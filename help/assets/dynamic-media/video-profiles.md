@@ -3,6 +3,9 @@ title: 視訊設定檔
 description: 動態媒體已隨附預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 您也可以將智慧裁切新增至影片。
 translation-type: tm+mt
 source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
+workflow-type: tm+mt
+source-wordcount: '3676'
+ht-degree: 19%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
 
 * **視訊播放器大小**
 
-   依預設，「最適化視訊編碼」描述檔中的「寬度」會設為「自動」。同樣地，在播放期間，會根據播放器的大小來使用最佳品質。
+   依預設，「最適化視訊編碼」描述檔中的「寬度」會設為「自動」。 同樣地，在播放期間，會根據播放器的大小來使用最佳品質。
 
 請參 [閱視訊編碼的最佳實務](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)。
 
@@ -137,7 +140,7 @@ source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
 * H264 設定檔
 * 音訊取樣速率
 
-如果值不相同，則可以繼續按原樣建立配置檔案。 不過，請注意，不可能進行自適應串流。 使用者將可體驗單位元速率串流。 建議您編輯編碼設定，以便在描述檔中的個別編碼預設集間使用相同的值。 （請注意，如果已啟用「最適化串流編碼」，視訊設定檔／預設集編輯器應強制調整視訊編碼設定的奇偶校驗。）
+如果值不相同，則可以繼續按原樣建立配置檔案。 不過，請注意，不可能進行自適應串流。 使用者將可體驗單位元速率串流。 建議您編輯編碼設定，以便在描述檔中的個別編碼預設集間使用相同的值。 （請注意，如果已啟用「最適化串流編碼」，視訊設定檔／預設集編輯器應強制同等使用最適化視訊編碼設定。）
 
 另請參閱 [建立漸進式串流的視訊編碼設定檔](#creating-a-video-encoding-profile-for-progressive-streaming)。
 
@@ -267,7 +270,7 @@ To help you visualize the size of the video, tap the Height&#39;s information ic
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>關鍵影格之間的影格目標數目。 計算此值，每2-10秒產生一個關鍵影格。 例如，每秒30幀，關鍵幀間隔應為60-300。<br /> 較低 <br /> 的關鍵影格間隔可改善最適化視訊編碼的串流搜尋和串流切換行為，也可改善具有大量動作的視訊品質。 不過，由於關鍵影格會增加檔案大小，因此較低的關鍵影格間隔通常會導致特定位元速率的整體視訊品質較低。</td>
+   <td>關鍵影格之間的影格目標數目。 計算此值，每2-10秒產生一個關鍵影格。 例如，每秒30幀，關鍵幀間隔應為60-300。<br /> <br /> 較低的關鍵影格間隔可改善最適化視訊編碼的串流搜尋和串流切換行為，也可改善具有大量動作的視訊品質。 不過，由於關鍵影格會增加檔案大小，因此較低的關鍵影格間隔通常會導致特定位元速率的整體視訊品質較低。</td>
    <td><code>String</code></td>
    <td><p>正數。</p> <p>預設值為300。</p> <p>HLS（HTTP即時串流）的建議值為60-90。</p> </td>
   </tr>
@@ -391,7 +394,7 @@ To help you visualize the size of the video, tap the Height&#39;s information ic
 
 **若要全域套用視訊設定檔**,
 
-* 導覽至CRXDE Lite至下列節點： `/content/dam/jcr:content`。 新增屬性並 `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 點選「 **[!UICONTROL 全部儲存」]**。
+* 導覽至CRXDE Lite至下列節點： `/content/dam/jcr:content`. 新增屬性並 `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 點選「 **[!UICONTROL 全部儲存」]**。
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * 您可以 [監控視訊描述檔處理工作的進度](#monitoring-the-progress-of-an-encoding-job)。
