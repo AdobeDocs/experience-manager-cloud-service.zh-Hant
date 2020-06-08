@@ -20,6 +20,7 @@ ht-degree: 2%
 >
 >* 資產REST API
 >* 包括支援內容片段
+
 >
 >
 Assets HTTP API的目前實作是以 [REST架構樣式為基礎](https://en.wikipedia.org/wiki/Representational_state_transfer) 。
@@ -147,6 +148,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 >
 >* [CORS/AEM說明](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [影片——使用AEM針對CORS進行開發](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -364,6 +366,7 @@ Assets REST API會公開資料夾屬性的存取權； 例如其名稱、標題�
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    詳細的錯誤訊息通常會以下列方式傳回：
 
    ```xml
