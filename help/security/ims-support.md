@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager 雲端服務的 IMS 支援
 description: Adobe Experience Manager 雲端服務的 IMS 支援
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
+workflow-type: tm+mt
+source-wordcount: '1926'
+ht-degree: 100%
 
 ---
 
