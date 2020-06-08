@@ -1,9 +1,9 @@
 ---
 title: 工具主控台
 description: 了解 AEM 中各種不同的工具主控台。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 100%
 
