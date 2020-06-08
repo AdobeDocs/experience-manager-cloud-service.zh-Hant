@@ -3,11 +3,14 @@ title: 管理影像預設集
 description: 瞭解影像預設集，並瞭解如何建立、修改及管理影像預設集
 translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '3657'
+ht-degree: 11%
 
 ---
 
 
-# 管理影像預設集{#managing-image-presets}
+# Managing Image Presets{#managing-image-presets}
 
 「影像預設集」可讓AEM Assets以不同大小、不同格式或其他動態產生的影像屬性動態傳送影像。 每個影像預設集代表一組預先定義的影像大小調整和格式設定指令，以顯示影像。 當您建立影像預設集時，可以選擇影像傳送的大小。 您也可以選擇格式命令，以便在傳送影像供檢視時，將影像的外觀最佳化。
 
@@ -25,13 +28,13 @@ source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 像宏一樣，「影像預設集」是預先定義的一組大小和格式命令，這些命令以名稱保存。 為了瞭解影像預設集的運作方式，假設您的網站要求每個產品影像以不同的大小、不同的格式和壓縮率顯示，以用於桌上型電腦和行動裝置傳送。
 
-您可以建立兩個影像預設集：桌上型電腦版本為500 x 500像素，行動版本為150 x 150像素。 您可以建立兩個影像預設集，一個 `Enlarge` 稱為以500x500像素顯示影像，另一個 `Thumbnail` 稱為以150x150像素顯示影像。 若要以大小和大 `Enlarge` 小傳 `Thumbnail` 送影像，AEM會尋找放大影像預設集和縮圖影像預設集的定義。 然後，AEM會以每個影像預設集的大小和格式規格動態產生影像。
+您可以建立兩個影像預設集： 桌上型電腦版本為500 x 500像素，行動版本為150 x 150像素。 您可以建立兩個影像預設集，一個 `Enlarge` 稱為以500x500像素顯示影像，另一個 `Thumbnail` 稱為以150x150像素顯示影像。 若要以大小和大 `Enlarge` 小傳 `Thumbnail` 送影像，AEM會尋找放大影像預設集和縮圖影像預設集的定義。 然後，AEM會以每個影像預設集的大小和格式規格動態產生影像。
 
 動態傳送時，影像大小會變小，而影像會失去清晰度和細節。 因此，每個影像預設集都包含格式控制項，以最佳化以特定大小傳送的影像。 這些控制項可確保您的影像在傳送到您的網站或應用程式時清晰銳利。
 
 管理員可以建立影像預設集。 若要建立影像預設集，您可以從頭開始，或從現有影像預設集開始，然後以新名稱儲存。
 
-## 管理影像預設集 {#managing-image-presets-1}
+## Managing Image Presets {#managing-image-presets-1}
 
 您可以點選或按一下AEM標誌來存取全域導覽主控台，然後點選或按一下「工具」圖示，並導覽至「資產>影像預設集」，以管理AEM中的 **[!UICONTROL 影像預設集]**。
 
@@ -47,7 +50,7 @@ source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 >[!NOTE]
 >
->當您在資產的「詳細資料檢視」中選取「轉譯 **[!UICONTROL 」]** 時，系統會顯示多種轉譯。 您可以增加或減少顯示的影像預設集數目。 請參 [閱增加顯示的影像預設集數目](#increasing-or-decreasing-the-number-of-image-presets-that-display)。
+>當您在資產的「詳細資料檢視」中選取「轉譯 **[!UICONTROL 」]** 時，系統會顯示多種轉譯。 您可以增加或減少顯示的影像預設集數目。 See [Increasing the number of image presets that display](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 ### Adobe Illustrator(AI)、Postscript(EPS)和PDF檔案格式 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
@@ -123,7 +126,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 在AEM Assets的背景中，�
 
 使用預設的處理引數，PDF/AI檔案的第一頁點陣化為72 ppi，而產生的預覽影像大小為2048 x 2048像素。 對於一般部署，您可能想要將解析度提高至至少150 ppi或以上。 例如，美國字母大小為300 ppi的檔案要求最大寬度和高度分別為2550 x 3300像素。
 
-「最大寬度」和「最大高度」會限制點陣化的解析度。 例如，如果最大值未變更，而「解析度」設為300 ppi，則美國字母檔案點陣化為186 ppi。 也就是說，檔案是1581 x 2046像素。
+「最大寬度」和「最大高度」會限制點陣化的解析度。 例如，如果最大值未變更，而「解析度」設定為300 ppi，則美國字母檔案點陣化為186 ppi。 也就是說，檔案是1581 x 2046像素。
 
 進 `Rasterize PDF/AI Image Preview Rendition` 程元件已定義最大值，以確保不會在記憶體中建立過大的映像。 此類大型映像可能會使提供給JVM（Java虛擬機）的記憶體溢出。 請務必為JVM提供足夠的記憶體來管理已配置的並行工作流數，每個工作流都有可能以最大配置的大小建立映像。
 
@@ -131,7 +134,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 在AEM Assets的背景中，�
 
 如果您想要支援擷取INDD檔案，以便產生此檔案格式的動態轉譯，您可能需要先檢閱下列資訊，再建立影像預設集。
 
-若是InDesign檔案，子資產只會在Adobe inDesign伺服器與AEM整合時提取。 參考的資產會根據其中繼資料進行連結。 連結時不需要InDesign Server。 不過，在處理InDesign檔案之前，必須先在AEM中顯示參考的資產，才能在InDesign檔案和參考的資產之間建立連結。
+若是InDesign檔案，子資產只會在Adobe InDesign伺服器與AEM整合時提取。 參考的資產會根據其中繼資料進行連結。 連結時不需要InDesign Server。 不過，在處理InDesign檔案之前，必須先在AEM中顯示參考的資產，才能在InDesign檔案和參考的資產之間建立連結。
 
 <!-- See [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md). -->
 
@@ -141,7 +144,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 在AEM Assets的背景中，�
 
 DAM更新資產工作流程中媒體擷取程式元件引數中的ExtendScript路徑。
 
-Dynamic media整合使用下列指令碼：
+Dynamic Media整合使用下列指令碼：
 
 <table>
  <tbody>
@@ -172,16 +175,16 @@ Dynamic media整合使用下列指令碼：
 
 您可以在 **[!UICONTROL DAM Update Asset工作流程中設定這些設定，以設定縮圖的大小]** 。 工作流程中有兩個步驟可讓您設定影像資產的縮圖大小。 雖然其中一個(**[!UICONTROL Dynamic Media Process Image Assets]**)用於動態影像資產，而另一個(**[!UICONTROL Process Thumbnails]**)用於靜態縮圖產生，或當所有其他程式無法產生縮圖時，兩者的設定 ** 應相同。
 
-在「動 **[!UICONTROL 態媒體處理影像資產」步驟中]** ，影像伺服器會產生縮圖，此組態與套用至「處理縮圖」步驟的組態無關 **** 。 透過「處理縮圖 **[!UICONTROL 」步驟產生縮圖]** ，是建立縮圖的最慢且記憶體最耗用的方式。
+在「動 **[!UICONTROL 態媒體處理影像資產」步驟中]** ，影像伺服器會產生縮圖，此組態與套用至「處理縮圖」步驟的組態無關 **** 。透過「處理縮圖 **[!UICONTROL 」步驟產生縮圖]** ，是建立縮圖的最慢且記憶體最耗用的方式。
 
-縮圖大小定義如下： **[!UICONTROL width:height:center]**，例如 *80:80:false*。 寬度和高度決定縮圖的大小（以像素為單位）;中心值為false或true，若設為true，則表示縮圖影像的大小與設定中的大小完全相同。 如果調整大小的影像較小，則會置於縮圖中。
+縮圖大小定義如下： **[!UICONTROL width:height:center]**，例如 *80:80:false*。 寬度和高度決定縮圖的大小（以像素為單位）; 中心值為false或true，若設為true，則表示縮圖影像的大小與設定中的大小完全相同。 如果調整大小的影像較小，則會置於縮圖中。
 
 >[!NOTE]
 >
 >* EPS檔案的縮圖大小是在 **[!UICONTROL EPS縮圖步驟(「縮圖]** 」(Thumbnails)下的「參數」( **[!UICONTROL Arguments]** )頁籤中配置的。
    >
    >
-* 視訊的縮圖大小是在「參數」下的「 **[!UICONTROL Process]** 」（處理）頁籤的「 **[!UICONTROL FFmpeg縮圖]** 」步驟中設定 ****。
+* 視訊的縮圖大小是在「參數」下的「 **[!UICONTROL Process]** 」 (處理) 頁籤的「 **[!UICONTROL FFmpeg縮圖]** 」步驟中設定 ****。
 >
 
 
@@ -193,7 +196,7 @@ Dynamic media整合使用下列指令碼：
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. 點選「處 **[!UICONTROL 理縮圖]** 」步驟，然後點選「縮 **[!UICONTROL 圖]** 」標籤。 視需要變更縮圖大小，然後點選「 **[!UICONTROL 確定]**」。
+1. 點選「處 **[!UICONTROL 理縮圖]** 」步驟，然後點選「縮 **[!UICONTROL 圖]** 」標籤。視需要變更縮圖大小，然後點選「 **[!UICONTROL 確定]**」。
 
    >[!NOTE]
    >
@@ -210,7 +213,7 @@ Dynamic media整合使用下列指令碼：
 1. 導覽至CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
 1. 導覽至位於的影像預設集清單節點 `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
 
-   ![increase_denthementumberofimagepresets that display](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
+   ![increase_denthenumberofimagepresets that display](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
 1. 在 **[!UICONTROL limit]** 屬性中，將預設設 ****&#x200B;定為15的值變更為所要的數字。
 1. 導覽至影像預設集資料來源，網址為 `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`
@@ -236,8 +239,8 @@ Dynamic media整合使用下列指令碼：
 
 **若要建立影像預設集**
 
-1. 在AEM中，點選AEM標誌以存取全域導覽主控台，然後點選「工具> **[!UICONTROL 資產>影像預設集」]**。
-1. 按一下&#x200B;**[!UICONTROL 「建立」]**。「編 **[!UICONTROL 輯影像預設集]** 」視窗隨即開啟。
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets]**.
+1. 按一下&#x200B;**[!UICONTROL 建立]**。「編 **[!UICONTROL 輯影像預設集]** 」視窗隨即開啟。
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
@@ -245,13 +248,13 @@ Dynamic media整合使用下列指令碼：
    >
    >若要讓此影像預設變得自適應，請擦除 **[!UICONTROL 寬度]****[!UICONTROL 和高度欄]** 位中的值，並保留空白。
 
-1. 視需要在「基 **[!UICONTROL 本]** 」和「 **[!UICONTROL 進階]** 」標籤中輸入值，包括名稱。 這些選項在「影像預設 [集選項」中概述](#image-preset-options)。 預設集會出現在左窗格中，並可與其他資產一起即時使用。
+1. 視需要在「基 **[!UICONTROL 本]** 」和「 **[!UICONTROL 進階]** 」標籤中輸入值，包括名稱。這些選項在「影像預設 [集選項」中概述](#image-preset-options)。預設集會出現在左窗格中，並可與其他資產一起即時使用。
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
 1. 按一下 **[!UICONTROL保存**。
 
-### 建立互動式影像預設集 {#creating-a-responsive-image-preset}
+### Creating a responsive Image Preset {#creating-a-responsive-image-preset}
 
 若要建立互動式影像預設集，請執行「建立影像預 [設集」中的步驟](#creating-image-presets)。 在「編輯影像預設集」窗口中輸入高 **[!UICONTROL 度和寬度時]** ，請拭除這些值並將其留空。
 
@@ -269,11 +272,11 @@ Dynamic media整合使用下列指令碼：
 
 當您建立或編輯影像預設集時，您可以選擇本節所述的選項。 此外，Adobe建議您從下列「最佳實務」選項開始：
 
-* **[!UICONTROL格式** (基本&#x200B;**[!UICONTROL 頁籤]** )-選擇 **[!UICONTROL JPEG]** 或其它符合您要求的格式。 所有網頁瀏覽器都支援JPEG影像格式；它在小檔案大小和影像品質之間提供良好的平衡。 但是，JPEG格式影像使用有損壓縮方案，如果壓縮設定太低，則該壓縮方案會引入不想要的影像偽影。 因此，Adobe建議將壓縮品質設為75。 此設定在影像品質和檔案大小之間取得良好的平衡。
+* **[!UICONTROL格式** (基本&#x200B;**[!UICONTROL 頁籤]** )-選擇 **[!UICONTROL JPEG]** 或其它符合您要求的格式。所有網頁瀏覽器都支援JPEG影像格式；它在小檔案大小和影像品質之間提供良好的平衡。但是，JPEG格式影像使用有損壓縮方案，如果壓縮設定太低，則該壓縮方案會引入不想要的影像偽影。因此，Adobe建議將壓縮品質設為75。此設定在影像品質和檔案大小之間取得良好的平衡。
 
-* **[!UICONTROL 啟用簡單銳利化]** -請勿選取「啟用簡 **** 單銳利化」（此銳利化濾鏡提供的控制力比「非銳利化遮色片」設定少）。
+* **[!UICONTROL 啟用簡單銳利化]** -請勿選取「啟用簡 **** 單銳利化」 (此銳利化濾鏡提供的控制力比「非銳利化遮色片」設定少)。
 
-* **[!UICONTROL 銳利化：重新取樣模式]** -選 **[!UICONTROL 取「雙三次方」]**。
+* **[!UICONTROL 銳利化： 重新取樣模式]** -選 **[!UICONTROL 取「雙三次方」]**。
 
 #### 基本標籤選項 {#basic-tab-options}
 
@@ -311,7 +314,7 @@ Dynamic media整合使用下列指令碼：
       選擇 <strong>PDF</strong>、 <strong>TIFF</strong>或 <strong>TIFF with alpha</strong> ，提供下列其他選項：
     </div>
     <ul>
-     <li><strong>壓縮</strong> -選擇壓縮演算法。 PDF的演算法選項 <strong>有None</strong>、 <strong>Zip</strong>和 <strong>Jpeg</strong>;for TIFF <strong>None</strong><strong>None</strong>、 <strong>LZW</strong>、 <strong>Jpeg</strong>和ZipZipHere;對於含Alpha的TIFF，則 <strong>為None</strong>、 <strong>LZW</strong>和 <strong>Zip</strong>。</li>
+     <li><strong>壓縮</strong> -選擇壓縮演算法。 PDF的演算法選項 <strong>有None</strong>、 <strong>Zip</strong>和 <strong>Jpeg</strong>; for TIFF <strong>None</strong><strong>None</strong>、 <strong>LZW</strong>、 <strong>Jpeg</strong>和ZipZipHere; 對於含Alpha的TIFF，則 <strong>為None</strong>、 <strong>LZW</strong>和 <strong>Zip</strong>。</li>
     </ul> <p>選擇 <strong>PNG</strong>、 <strong>PNG with Alpha</strong> 或 <strong>EPS</strong> 不提供其他選項。</p> </td>
   </tr>
   <tr>
@@ -357,15 +360,15 @@ Dynamic media整合使用下列指令碼：
   </tr>
   <tr>
    <td><strong>銳利化文字</strong></td>
-   <td><p>選擇「 <strong>無</strong>」、「銳 <strong>化」</strong>或「銳 <strong>化」或「銳化」</strong>。 </p>
+   <td><p>選擇「 <strong>無</strong>」、「銳 <strong>化」</strong>或「銳 <strong>化」或「銳化遮色片</strong>」。 </p>
     <ul>
      <li>選擇「 <strong>無</strong> 」可禁用銳利化。</li>
      <li>選取「 <strong>銳利 </strong>化」，在進行所有縮放後，將基本銳利化濾鏡套用至影像。 銳利化有助於補償以不同大小顯示影像時可能產生的模糊性。 </li>
-     <li>選取「<strong> Unsharp mask</strong> （銳利化遮色片）」，對最終縮減取樣影像微調銳利化濾鏡效果。 您可以控制效果的強度、效果半徑（以像素計量）以及將忽略的對比度臨界值。 這種效果使用的選項與Photoshop的「遮色片銳利化」濾鏡相同。</li>
+     <li>Select<strong> Unsharp mask</strong> to fine-tune a sharpening filter effect on the final downsampled image. 您可以控制效果的強度、效果半徑（以像素計量）以及將忽略的對比度臨界值。 此效果使用的選項與 Photoshop的「遮色片銳利化」濾鏡相同。</li>
     </ul> <p>在「 <strong>銳利化遮色片</strong>」中，您有下列選項：</p>
     <ul>
-     <li><strong>量</strong> -控制套用至邊緣像素的對比度。 預設實數值為1.0。對於高解析度的影像，您可將影像放大至高達5.0。將「量」視為濾鏡強度的度量。</li>
-     <li><strong>半徑</strong> -決定影響銳利化的邊緣像素周圍的像素數。 對於高解析度影像，請輸入1到2的實數。 低值只會銳化邊緣像素；高值會銳化更寬的像素帶。 正確值取決於影像的大小。</li>
+     <li><strong>量</strong> -控制套用至邊緣像素的對比度。 預設實數值為1.0。 對於高解析度的影像，您可將影像放大至高達5.0。 將「量」視為濾鏡強度的度量。</li>
+     <li><strong>半徑</strong> -決定影響銳利化的邊緣像素周圍的像素數。 對於高解析度影像，請輸入1到2的實數。 低值只會銳化邊緣像素； 高值會銳化更寬的像素帶。 正確值取決於影像的大小。</li>
      <li><strong>閾值</strong> -決定套用非銳利遮色片濾鏡時要忽略的對比範圍。 換言之，此選項可決定銳化的像素在被視為邊緣像素並銳化之前，必須與周圍區域有多大差異。 為避免引入雜訊，請嘗試2到20之間的整數值。 </li>
      <li><strong>套用至</strong> -判斷未銳利化套用至每種顏色或亮度。</li>
     </ul>
@@ -377,7 +380,7 @@ Dynamic media整合使用下列指令碼：
    <td><strong>重新取樣模式</strong></td>
    <td>選取「重新 <strong>取樣模式</strong> 」選項。 這些選項會在縮減取樣時銳利化影像：
     <ul>
-     <li><strong>雙線性</strong> -最快速的重新取樣方法。有些鋸齒不自然現象會很明顯。</li>
+     <li><strong>雙線性</strong> -最快速的重新取樣方法。 有些鋸齒不自然現象會很明顯。</li>
      <li><strong>雙三次方</strong> -提高CPU使用量，但產生更銳利的影像，並減少明顯的鋸齒不自然現象。</li>
      <li><strong>Sharp2</strong> —— 產生比Bi-Cubic更銳利的結果，但CPU成本更高。</li>
      <li><strong>Bi-Sharp</strong> —— 選取Photoshop預設重新取樣器以減小影像大小，在Adobe Photoshop中 <strong>稱為bicubic sharp</strong> 。</li>
@@ -386,11 +389,11 @@ Dynamic media整合使用下列指令碼：
   </tr>
   <tr>
    <td><strong>列印解析度</strong></td>
-   <td>選擇打印此影像的解析度；預設值為72像素。</td>
+   <td>選擇打印此影像的解析度； 預設值為72像素。</td>
   </tr>
   <tr>
    <td><strong>影像修飾元</strong></td>
-   <td><p>除了UI中的常用影像設定外，Dynamic media還支援許多進階影像修改，您可在「影像修飾元」欄位中 <strong>指定</strong> 。 這些參數在「映像伺服器協 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">議」命令參考中定義</a>。</p> <p>重要：不支援API中列出的下列功能：</p>
+   <td><p>除了UI中的常用影像設定外，Dynamic Media還支援許多進階影像修改，您可在「影像修飾元」欄位中 <strong>指定</strong> 。 這些參數在「映像伺服器協 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">議」命令參考中定義</a>。</p> <p>重要： 不支援API中列出的下列功能：</p>
     <ul>
      <li>基本範本和文字轉換指令： <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 和 <code>textPs=</code></li>
      <li>本地化命令： <code>locale=</code> 和 <code>req=xlate</code></li>
@@ -399,7 +402,7 @@ Dynamic media整合使用下列指令碼：
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>非核心動態媒體服務：SVG、影像轉換和網路印刷</li>
+     <li>非核心動態媒體服務： SVG、影像轉換和網路印刷</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -457,7 +460,7 @@ Dynamic media整合使用下列指令碼：
 
 ### 編輯影像預設集 {#modifying-image-presets}
 
-1. 在AEM中，點選AEM標誌以存取全域導覽主控台，然後點選「工具> **[!UICONTROL 資產>影像預設集」]**。
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets]**.
 
    ![6_5_imagepreset_editpreset](assets/6_5_imagepreset-editpreset.png)
 
