@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 08736e38f9dde46997484ccd4807de0ba2f67b2f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '2099'
+source-wordcount: '2258'
 ht-degree: 1%
 
 ---
@@ -144,7 +144,8 @@ Dynamic Media支援下列3D檔案格式：
 
    * 在頁面右上方附近，按一下「預 **[!UICONTROL 覽]** 」以進入 **[!UICONTROL 「預覽]** 」模式。
    * 從瀏 `/editor.html` 覽器的頁面URL刪除。
-   ![3D資產顯示在3D Media元件內](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)：完全互動的3D資產，如「預 **[!UICONTROL 覽]** 」模式所示。
+
+完全互動的3D資產，如    ![3D資產顯示在3D Media元件內](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)：完全互動的3D資產，如「預 **[!UICONTROL 覽]** 」模式所示。
 
 1. 在「預 **[!UICONTROL 覽]** 」模式中，執行下列任一動作：
 
@@ -242,21 +243,19 @@ See also [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/addin
 >
 >當網頁處於「AEM Sites **[!UICONTROL Edit]** 」（AEM網站編輯）模式時，3D Media元件會顯示3D資產，但無法與資產互動。 若要讓資產具互動性，您可以使用 **[!UICONTROL Preview]** （預覽）功能，在頁面編輯器中檢視網頁，並完整存取3D Media元件的功能。
 
-## Publishing Dynamic Media 3D assets {#publishing-three-d-assets}
+## 發佈靜態動態媒體3D資產 {#publishing-three-d-assets}
 
 Dynamic Media接受Dynamic Media中支援的各種3D檔案格式 *為靜態內* 容。 靜態內容表示您可以上傳和發佈3D資產，但不支援與 *3D資產相關的動態影像* 或影像重新整理。 原因是Dynamic Media Imaging Server無法識別3D格式。 因此，在動態媒體中發佈3D資產後，您就擁有可複製的即時URL。 3D資產的URL會遵循一般的動態媒體URL結構。 但是，您無法編輯資產URL中的任何參數，這與動態媒體中的傳統影像資產不同。
 
+另請參 [閱取得靜態資產的URL](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)。
+
 在「 **[!UICONTROL 卡片檢視]**」中，資產名稱正下方及其日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **** 欄會指出已發佈或未發佈的資產。
+
+如果您使用AEM做為WCM，請使用此發佈方法直接在網頁上新增Dynamic Media 3D資產。
 
 另請參閱 [發佈動態媒體資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 另請參閱 [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)。
-
->[!MORELIKETHIS]
->
->如果您使用協力廠商的網頁內容管理系統，可以將3D資產連結或內嵌至您的網頁。
->
->See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
 **若要發佈動態媒體3D資產**
 
@@ -270,10 +269,23 @@ Dynamic Media接受Dynamic Media中支援的各種3D檔案格式 *為靜態內* 
 
    ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditionsa.png)
 
-1. 點選 **[!UICONTROL 原稿]**。 當3D資產發佈（或「啟動」）時，如果符合下列所有3D資產條件，URL按鈕會出現在頁面左下角的附近：
+1. 點選 **[!UICONTROL 原稿]**。 當3D資產發佈（或「啟動」）時，如果符合下列所有3D資產條件， **[!UICONTROL URL]** 按鈕會出現在頁面左下角的附近：
    * 3D資產是支援的格式（GLB、OBJ、STL和USDZ）。
    * 3D資產已收錄至動態媒體影像製作系統(IPS)。
    * 3D資產會發佈。
+
    ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-urla.png)
 
-1. 點選 **[!UICONTROL URL]** ，以顯示3D資產的生產URL。
+1. 點選 **[!UICONTROL URL]** 以顯示3D資產的直接生產URL，您可以複製並在網頁上使用。
+
+### 使用Dimensional檢視器發佈動態媒體3D資產的替代方法 {#alternate-publish-methods}
+
+如果您未使用AEM做為WCM，請使用下列兩種方 *法* 來發佈Dynamic Media 3D資產。
+
+* **[!UICONTROL URL]****** —— 如果您使用協力廠商的Web內容管理系統，而您想要使用Dimensional檢視器將Dynamic Media 3D資產連結至您的網頁，請使用URL。
+
+   See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+
+* **[!UICONTROL 內嵌]** -當您想 **** 使用維度檢視器檢視內嵌在網頁上的Dynamic Media 3D資產時，請使用「內嵌」。 您可將內嵌代碼複製到剪貼簿，以便貼到網頁中。Editing of the code is not permitted in the **[!UICONTROL Embed]** dialog box.
+
+   請參 [閱將動態媒體視訊、影像檢視器或維度檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)。
