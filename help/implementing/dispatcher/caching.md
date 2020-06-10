@@ -2,9 +2,9 @@
 title: 在AEM中快取為雲端服務
 description: '在AEM中快取為雲端服務 '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1358'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,10 @@ ht-degree: 0%
 
 # 簡介 {#intro}
 
-您可使用Dispatcher規則來設定CDN的快取。 請注意，如果在分派器配置中啟用，則分派器也會遵守產生的快取過期標 `enableTTL` 題，這表示即使在重新發佈內容以外，也會重新整理特定內容。
+流量會透過CDN傳遞至apache Web伺服器層，此層支援包括分派器的模組。 為了提高效能，調度器主要用作快取以限制對發佈節點的處理。
+規則可套用至分派器設定，以修改任何預設的快取到期設定，從而在CDN處快取。 請注意，如果在分發程式配置中啟用了 `enableTTL` ，則分發程式也會遵守生成的快取過期標題，這意味著它將刷新特定內容，即使在重新發佈的內容之外。
+
+本頁還介紹如何使調度程式快取失效，以及如何在瀏覽器級別對客戶端庫進行快取。
 
 ## 快取 {#caching}
 
@@ -33,6 +36,14 @@ ht-degree: 0%
 ```
 /0000
 { /glob "*" /type "allow" }
+```
+
+* 若要防止快取特定內容，請將「快取控制」標題設為「私用」。 例如，下列項目會防止快取名為&quot;myfolder&quot;的目錄下的html內容：
+
+```
+<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+    Header set Cache-Control “private”
+</LocationMatch>
 ```
 
 * 請注意，其他方法(包括 [dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))將無法成功覆寫值。
@@ -70,13 +81,9 @@ ht-degree: 0%
 * default cannot set with `EXPIRATION_TIME` variable used for html/text file types
 * 透過指定適當的regex，可使用html/text區段中所述的相同LocationMatch策略來設定快取到期時間
 
-## Dispatcher {#disp}
+## Dispatcher快取失效 {#disp}
 
-流量會通過apache Web伺服器，該伺服器支援包括調度器在內的模組。 調度器主要用作快取，以限制對發佈節點的處理，以提高效能。
-
-如CDN的快取區段所述，規則可套用至分派器設定，以修改任何預設快取到期設定。
-
-本節的其餘部分介紹與調度程式快取失效相關的注意事項。 對於大部分客戶，不必使分派器快取失效，而是依賴於在重新發佈內容時重新整理其快取的分派器，以及與快取到期標題相關的CDN。
+通常，不應使調度程式快取失效。 相反，當內容重新發佈時，您應依賴Dispatcher重新整理其快取，而CDN則包含快取到期標題。
 
 ### 啟動／停用期間的Dispatcher快取失效 {#cache-activation-deactivation}
 
@@ -136,5 +143,5 @@ HTML頁面上的預設clientlib包含如下範例：
 1. 尋找Adobe Granite HTML Library Manager的OSGi Config:
    * 勾選核取方塊以啟用「嚴格版本控制」
    * 在標有「長期客戶端快取密鑰」的欄位中，輸入值/。*；雜湊
-1. 儲存變更。請注意，不需將此組態儲存在來源控制項中，因為AEM將會自動在開發、階段和生產環境中啟用此組態，因此AEM會是雲端服務。
+1. 儲存變更。請注意，不需將此組態儲存在原始碼控制項中，因為AEM將會自動在開發、階段和生產環境中啟用此組態。
 1. 每當用戶端程式庫的內容變更時，就會產生新的雜湊金鑰，並更新HTML參考。
