@@ -2,9 +2,9 @@
 title: 使用內容傳輸工具
 description: 使用內容傳輸工具
 translation-type: tm+mt
-source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
+source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1543'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 1%
 
 * 內容傳輸工具的最低系統需求為AEM 6.3 +和JAVA 8。 如果您使用較低的AEM版本，您將需要將內容儲存庫升級至AEM 6.5，才能使用內容傳輸工具。
 
-* 如果您使用沙盒環 *境*，請確定您的環境已升級至2020年5月29日或更新版本。 如果您使用的是 *生產環境*，則會自動更新。
+* 如果您使用沙盒環 *境* ，請確定您的環境已升級至2020年6月10日或更新版本。 如果您使用的是 *生產環境*，則會自動更新。
 
-* 若要使用內容傳輸工具，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud服務例項的管理群組。 未授權的使用者將無法擷取存取Token以使用內容傳輸工具。
+* 若要使用「內容傳輸工具」，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud服務例項中的AEM管理員群組。 未授權的使用者將無法擷取存取Token以使用內容傳輸工具。
 
 * 在擷取階段中，內容傳輸工具會在作用中的AEM來源例項上執行。
 
@@ -28,10 +28,10 @@ ht-degree: 1%
 
 ## 可用性 {#availability}
 
-內容傳輸工具可從軟體散發入口網站下載為zip檔案。 您可以透過Package Manager在來源Adobe Experience Manager(AEM)例項上安裝套件。
+內容傳輸工具可從軟體散發入口網站下載為zip檔案（內容傳輸工具v1.0.0）。 您可以透過Package Manager在來源Adobe Experience Manager(AEM)例項上安裝套件。
 
 >[!NOTE]
->從 [Adobe Experience Cloud下載內容傳輸工具](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。
+>從軟體散發入口網站下載 [內容傳輸工具](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。
 
 ## 執行內容傳輸工具 {#running-tool}
 
