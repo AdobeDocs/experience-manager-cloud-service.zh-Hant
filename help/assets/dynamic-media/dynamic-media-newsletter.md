@@ -2,9 +2,9 @@
 description: 'Dynamic Media Newsletter by Experience League是每月的電子報。 它可協助您快速上手使用Dynamic Media和Dynamic Media Classic，讓您立即開始實現價值。 本一站式商店電子報提供寶貴的知識建立資源，包括如何製作影片、解決方案概觀，以及介紹一些主要功能和功能，例如影像預設集、檢視器預設集、影片設定檔等。 '
 title: 動態媒體電子報
 translation-type: tm+mt
-source-git-commit: 1ee8cd31a83850d0d6c90cb5452015a57ee728ef
+source-git-commit: 6eb9f2fd6f692df26e4bd1b56cbc18db84b2f53f
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,21 @@ Experience League每月推出的Dynamic Media電子報旨在協助您快速上�
 
 ## 錯過了動態媒體電子報？
 
+* **[2020年5月第4期](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+
+   在此問題中：
+
+   * 在不確定的時期，業務連續性意味著什麼。
+   * 首次全面數位化Adobe峰會的主要優點。
+   * 必須觀看的Experience Manager專題討論會。
+   * 峰會客戶焦點： 在盔甲下。
+   * 絕不錯過Experience Insider網路研討會。
+   * 公共部門焦點： 數位註冊的迫切需求。
+   * 看看Experience Manager Innovation有哪些新功能。
+   * 與Adobe專業人員一 *起* ，培養您的Experience Manager技能。
+   * 與Adobe Experience Manager社群連絡。
+   * 透過Adobe Experience League快速追蹤您的Adobe專業知識。
+
 * **[2020年4月第3期](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
    在此問題中：
@@ -32,6 +47,7 @@ Experience League每月推出的Dynamic Media電子報旨在協助您快速上�
    * 從Adobe Summit 2020線上觀看動態媒體研討會。
    * 進一步瞭解我們免費的Dynamic Media Classic稽核。
    * 認識客戶成功服務資深計畫經理John Monroe。
+
    >[!IMPORTANT]
    >
    >我們想確定我們只傳送動態媒體電子報給想要收到它的人。 若要在此期刊之後繼續收到電子報，請在這裡注 [冊](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)。
