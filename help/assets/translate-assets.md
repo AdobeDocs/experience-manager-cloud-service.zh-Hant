@@ -3,9 +3,9 @@ title: 建立和管理多種語言的數位資產，並執行翻譯工作流程
 description: 瞭解如何將資產（包括二進位檔、中繼資料和標籤）轉譯為多種語言的工作流程自動化。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '2615'
+source-wordcount: '2612'
 ht-degree: 22%
 
 ---
@@ -55,7 +55,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 每個語言資料夾都稱為語言副本。 語言副本的根資料夾（稱為語言根目錄）標識語言副本中內容的語言。 例如，意 `/content/dam/it` 大利語言副本的義大利語根目錄。 語言副本必須使用 [正確設定的語言根目錄](#create-a-language-root) ，以便在執行來源資產翻譯時定位正確的語言。
 
-您最初新增資產的語言副本是語言主版。 語言主版是翻譯成其他語言的源。 範例資料夾階層包含數個語言根目錄：
+您原本新增資產的語言副本是主要語言。 語言主要是翻譯成其他語言的源。 範例資料夾階層包含數個語言根目錄：
 
 ```shell
 /content
@@ -71,9 +71,9 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 執行下列步驟以準備要翻譯的資產：
 
-1. 建立您語言主版的語言根目錄。 例如，範例檔案夾階層中英文版副本的語言根目錄為 */content/dam/en*。 確保根據建立語言根目錄中的資訊正確配置 [語言根目錄](#create-a-language-root)。
+1. 建立您的語言主要語言的語言根目錄。 例如，範例檔案夾階層中英文版副本的語言根目錄為 `/content/dam/en`。 確保根據建立語言根目錄中的資訊正確配置 [語言根目錄](#create-a-language-root)。
 
-1. 將資產新增至您的語言主版。
+1. 將資產新增至您的語言主要版本。
 1. 建立您需要語言副本的每種目標語言的語言根目錄。
 
 ### 建立語言根目錄 {#create-a-language-root}
@@ -90,7 +90,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 觸控最佳化UI提供「參考」面板，可顯示已在AEM Assets中建立的語言根目錄清單。
 
-1. 在「資產」主控台中，選取您要建立語言副本的語言主版。
+1. 在「資產」主控台中，選取您要建立語言副本的語言主要版本。
 1. 按一下或點選「GlobalNav」圖示，然後選擇「參 **[!UICONTROL 考」]** ，以開啟「參考」窗格。
 1. 在「參考」窗格中，按一下或點選「語 **[!UICONTROL 言副本」]**。 「語言副本」面板會顯示資產的語言副本。
 
