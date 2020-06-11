@@ -3,9 +3,9 @@ title: 設定並使用資產微服務進行資產處理
 description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1872'
 ht-degree: 3%
 
 ---
@@ -99,9 +99,9 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 
 #### MIME類型包含規則 {#mime-type-inclusion-rules}
 
-當處理具有特定MIME類型的資產時，會先根據轉譯規格的已排除MIME類型值檢查MIME類型。 如果符合該清單，則不會為資產產生此特定轉譯（「黑名單」）。
+當處理具有特定MIME類型的資產時，會先根據轉譯規格的已排除MIME類型值檢查MIME類型。 如果符合該清單，則不會為資產（封鎖的清單）產生此特定轉譯。
 
-否則，會根據包含的MIME類型檢查MIME類型，如果與清單匹配，則會生成格式副本（「白名單」）。
+否則，會根據包含的MIME類型檢查MIME類型，如果與清單匹配，則會生成格式副本（允許清單）。
 
 #### 特殊FPO轉譯 {#special-fpo-rendition}
 
