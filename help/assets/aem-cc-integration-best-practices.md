@@ -4,9 +4,9 @@ description: 整合AEM實例與Adobe Creative Cloud的最佳實務，以簡化�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3302'
 ht-degree: 18%
 
 ---
@@ -173,7 +173,7 @@ AEM Assets根據使用者對AEM Assets部署的存取權，支援兩種類型的
 
 #### 直接存取DAM的創意使用者 {#creative-users-with-direct-access-to-dam}
 
-通常，內部創意團隊或已登入內部網路的廣告公司／創意專業人員都可存取DAM例項，包括AEM登入。 AEM和網路基礎架構可設定為允許直接存取外部方——通常是受信任的組織，例如為用戶端工作的機構——可透過網路存取AEM，例如透過VPN或IP白名單。
+通常，內部創意團隊或已登入內部網路的廣告公司／創意專業人員都可存取DAM例項，包括AEM登入。 AEM和網路基礎架構可設定為允許直接存取外部方——通常是受信任的組織，例如為用戶端工作的機構——可透過網路存取AEM，例如透過VPN或IP允許清單。
 
 在這種情況下，Adobe Asset Link或AEM案頭應用程式可讓您輕鬆存取最終／核准的資產，並讓您將創意就緒的資產儲存至DAM。
 
@@ -186,7 +186,7 @@ AEM Assets根據使用者對AEM Assets部署的存取權，支援兩種類型的
 * 如果「資產連結」無法運作，請使用案頭應用程式。
 * 使用 [AEM Assets Brand Portal](https://helpx.adobe.com/tw/experience-manager/brand-portal/user-guide.html) ，將資產安全地散發給外部合作夥伴
 * 使用基於資產共用公域的分發和採購門戶的自 [訂實施](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* 使用在AEM中設定的存取控制和必要的網路基礎架構（例如VPN和IP白名單），讓外部方存取您DAM中的專屬內容區域。 他們可以使用AEM Web UI來取得資產，並將新內容上傳到您的DAM。
+* 使用在AEM中設定的存取控制和必要的網路基礎架構（例如，VPN和IP允許清單），讓外部方存取您DAM中的專用內容區域。 他們可以使用AEM Web UI來取得資產，並將新內容上傳到您的DAM。
 
 #### AEM資產的進行中工作 {#work-in-progress-on-assets-from-aem}
 
@@ -222,7 +222,7 @@ AEM案頭應用程式提供在原生應用程式中開啟之資產的網路共�
 
 #### 直接從案頭管理數位資產 {#managing-digital-assets-directly-from-desktop}
 
-如果您使用「網路檔案分享」來管理數位資產，只要使用AEM案頭應用程式所映射的網路分享，就會被視為方便的替代。 從網路檔案分享轉換時，AEM網頁介面提供豐富的數位資產管理功能集，遠超網路分享（搜尋、系列、中繼資料、協作、預覽等）的可能，而AEM案頭應用程式則提供方便的連結，將伺服器端的DAM存放庫與桌上型電腦的作品連接。
+如果您使用「網路檔案分享」來管理數位資產，只要使用AEM案頭應用程式所映射的網路分享，就會被視為方便的替代項目。 從網路檔案分享轉換時，AEM網頁介面提供豐富的數位資產管理功能集，遠超網路分享（搜尋、系列、中繼資料、協作、預覽等）的可能，而AEM案頭應用程式則提供方便的連結，將伺服器端的DAM存放庫與桌上型電腦的作品連接。
 
 請避免使用AEM案頭應用程式直接在AEM Assets的網路共用中管理資產。 例如，請避免使用AEM案頭應用程式來移動／複製多個檔案。 請改用AEM Assets網頁UI，將檔案夾從Finder/Explorer拖曳至網路共用，或使用AEM Assets檔案夾上傳功能。
 
