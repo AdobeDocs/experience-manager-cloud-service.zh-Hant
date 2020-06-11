@@ -2,7 +2,7 @@
 title: 在AEM中快取為雲端服務
 description: '在AEM中快取為雲端服務 '
 translation-type: tm+mt
-source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
+source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 0%
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 ## Dispatcher快取失效 {#disp}
 
-通常，不應使調度程式快取失效。 相反，當內容重新發佈時，您應依賴Dispatcher重新整理其快取，而CDN則包含快取到期標題。
+通常，不需要使調度程式快取失效。 相反，當內容重新發佈時，您應依賴Dispatcher重新整理其快取，而CDN則會包含快取到期標題。
 
 ### 啟動／停用期間的Dispatcher快取失效 {#cache-activation-deactivation}
 
