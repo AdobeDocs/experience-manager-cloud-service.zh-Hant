@@ -2,9 +2,9 @@
 title: 使用Cloud Readiness Analyzer
 description: 使用Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
+source-git-commit: 1739f81d4894f3e04cc4119f344a3bea5bd042d8
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Cloud Readiness Analyzer可從軟體分發門戶下載為zip檔案。 您可以�
 
    ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. 按一下「 **Cloud Readiness Analyzer**」後，工具就會開始產生報表，幾分鐘後您就會看到產生的報表。
+1. 按一下「 **Cloud Readiness Analyzer**」後，該工具就會開始產生報表，幾分鐘後AEM例項就會提供摘要報表。
 
    >[!NOTE]
    >您必須向下捲動頁面才能檢視完整報表。
@@ -77,12 +77,21 @@ Cloud Readiness Analyzer可從軟體分發門戶下載為zip檔案。 您可以�
 1. 
    1. 選擇Adobe Experience Manager並導覽至工具-> **Operations** -> **Cloud Readiness Analyzer**。
 
-1. 產生報表後，按一下 **CSV** ，以逗號分隔值(CSV)格式下載完整的摘要報表，如下圖所示。
+1. 報表可用後，按一下 **CSV** ，以逗號分隔值(CSV)格式下載完整的摘要報表，如下圖所示。
 
 ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
 
 #### 在AEM 6.1例項中檢視報表 {#aem-instances-report}
 
-您可以下載AEM 6.1的csv報表。此為擱置中。
+請依照下列步驟下載Adobe Experience Manager(AEM)6.1的CSV報表：
+
+1.導覽至 **Adobe Experience Manager Web Console使用設定**`https://serveraddress:serverport/system/console/configMgr`。
+
+1. 選擇「 **狀態** 」標籤，並從下拉式清單中搜尋「模式偵測器 **** 」，如下圖所示。
+
+   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. 您可以將摘要報表下載至Zip資料夾或JSON格式。
+
 
