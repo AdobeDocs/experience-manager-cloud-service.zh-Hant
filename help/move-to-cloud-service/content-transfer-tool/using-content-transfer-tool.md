@@ -2,9 +2,9 @@
 title: 使用內容傳輸工具
 description: 使用內容傳輸工具
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1582'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,15 @@ ht-degree: 1%
 
 * 內容傳輸工具的最低系統需求為AEM 6.3 +和JAVA 8。 如果您使用較低的AEM版本，您將需要將內容儲存庫升級至AEM 6.5，才能使用內容傳輸工具。
 
-* 如果您使用沙盒環 *境* ，請確定您的環境已升級至2020年6月10日或更新版本。 如果您使用的是 *生產環境*，則會自動更新。
+* 如果您使用沙盒環 *境*，請確定您的環境已升級至2020年6月10日或更新版本。 如果您使用的是 *生產環境*，則會自動更新。
 
 * 若要使用「內容傳輸工具」，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud服務例項中的AEM管理員群組。 未授權的使用者將無法擷取存取Token以使用內容傳輸工具。
 
 * 在擷取階段中，內容傳輸工具會在作用中的AEM來源例項上執行。
 
 * 作 *者的Ingestion Phase* （擷取階段）將縮小整個作者部署。 這表示在整個擷取程式期間，作者AEM將無法使用。
+
+* 建議的儲存庫大小上限是20GB，內容傳輸工具一次可以支援。
 
 ## 可用性 {#availability}
 
@@ -207,6 +209,8 @@ ht-degree: 1%
    您也可以從「概述」畫面中檢視移轉集的 *記錄* 。 選擇遷移集，然後按一下「抽取」( **EXTRACTION** )欄位下的狀態。 在這種情況下，按一下「 **完成** 」(FINISHED)查看新頁籤中的日誌。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
+
+1. 若要追蹤記錄檔而不使用使用者介面，您可將SSH整合至來源AEM環境，並追蹤記錄檔 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`。
 
 ### 刪除遷移集 {#deleting-migration-set}
 
