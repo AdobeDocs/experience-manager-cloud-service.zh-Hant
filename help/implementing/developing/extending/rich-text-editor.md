@@ -3,9 +3,9 @@ title: 設定Rich Text Editor，將Adobe Experience Manager中的內容製作為
 description: 設定Rich Text Editor，將Adobe Experience Manager中的內容製作為雲端服務。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -213,13 +213,13 @@ Experience Manager可讓您針對不同的編輯模式，以不同的方式為Ri
 </uiSettings>
 ```
 
-內嵌模式和全螢幕模式會使用不同的UI設定。 工具列屬性用於指定工具列的按鈕。
+內嵌模式和全螢幕模式會使用不同的使用者介面設定。 工具欄屬性指定工具欄的選項。
 
-例如，如果按鈕本身是功能(例如 `Bold`)，則會指定 `PluginName#FeatureName` 為(例如 `links#modifylink`)。
+例如，如果選項本身是特徵(例如 `Bold`)，則指定為 `PluginName#FeatureName` (例如 `links#modifylink`)。
 
-如果按鈕是快顯視窗（包含外掛程式的某些功能），則會指定 `#PluginName` 為(例如 `#format`)。
+如果選項是跨距（包含外掛程式的某些功能），則會指定 `#PluginName` 為(例如 `#format`)。
 
-可以使`|`用指定一組按鈕之間的分隔符() `-`。
+可以`|`使用指定選項組之間的分隔符 `-`。
 
 內嵌或全螢幕模式下的快顯節點包含使用的快顯器清單。 「popovers」節點下的每個子節點都以插件（例如，格式）命名。 它有一個屬性&#39;items&#39;，包含外掛程式的功能清單（例如format#bold）。
 
