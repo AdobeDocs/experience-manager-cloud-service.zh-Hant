@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzer概觀
 description: Cloud Readiness Analyzer概觀
 translation-type: tm+mt
-source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
+source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Cloud Readiness Analyzer摘要報告用於獲得對一般升級準備情況的�
 >[!NOTE]
 >Cloud Readiness Analyzer報告提供必須手動收集和評估的資訊，以加速評估轉換為AEM（雲端服務）所需時間和成本的程式。
 
-您也可以從「AEM使用者介面」下載摘要報表。 有關待審 **的詳細資訊，請參閱** 「以CSV格式檢視結果」。
+您也可以從AEM例項下載Cloud Readiness Analyzer報表。 有關待審 **的詳細資訊，請參閱** 「以CSV格式檢視結果」。
