@@ -2,9 +2,9 @@
 title: 設定動態媒體雲端服務
 description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
 translation-type: tm+mt
-source-git-commit: 668908770505b24eae4652106471925d1dcfc18b
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '5123'
+source-wordcount: '5125'
 ht-degree: 8%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 8%
 
 下列架構圖說明Dynamic Media的運作方式。
 
-有了新的架構，AEM負責主要資產並與Dynamic Media同步，以處理和發佈資產：
+有了新的架構，AEM負責主要來源資產並與Dynamic Media同步，以處理和發佈資產：
 
-1. 當主資產上傳至AEM時，它會複製至Dynamic Media。 此時，Dynamic Media會處理所有資產處理和轉譯產生，例如影像的視訊編碼和動態變數。
+1. 當主要來源資產上傳至AEM時，它會複製至動態媒體。 此時，Dynamic Media會處理所有資產處理和轉譯產生，例如影像的視訊編碼和動態變數。
 1. 產生轉譯後，AEM可以安全地存取和預覽遠端的Dynamic Media轉譯（不會將二進位檔傳回至AEM例項）。
 1. 內容準備好發佈及核准後，它會觸發Dynamic Media服務將內容推出至傳送伺服器，並在CDN快取內容。
 
