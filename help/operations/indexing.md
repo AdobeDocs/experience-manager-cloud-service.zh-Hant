@@ -2,10 +2,10 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 translation-type: tm+mt
-source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 3%
+source-wordcount: '1450'
+ht-degree: 2%
 
 ---
 
@@ -83,6 +83,10 @@ AS NOTE: the above is internal for now.
 因此，為了部署索引，索引定義(`/oak:index/definitionname`)必須透過Git和Cloud Manager部 `ui.apps` 署程式傳遞。
 
 新增索引定義後，新應用程式需要透過Cloud Manager部署。 部署時，會啟動兩個工作，負責將索引定義新增（並視需要合併）至MongoDB和Azure區段商店，以供作者和發佈。 在Blue-Green交換機開始使用之前，正在使用新的索引定義重新建立基礎儲存庫的索引。
+
+>[!TIP]
+>
+>如需AEM a Cloud Service所需套件結構的詳細資訊，請參閱檔案 [AEM專案結構。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## 使用藍綠部署的索引管理 {#index-management-using-blue-green-deployments}
 
