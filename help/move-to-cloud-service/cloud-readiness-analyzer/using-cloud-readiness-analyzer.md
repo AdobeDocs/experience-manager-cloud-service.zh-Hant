@@ -2,9 +2,9 @@
 title: 使用Cloud Readiness Analyzer
 description: 使用Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: daa281745540e6446adecd2501e26135d6000844
+source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -46,14 +46,14 @@ Cloud Readiness Analyzer可從軟體分發門戶下載為zip檔案。 您可以�
 
    ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. 按一下「 **Cloud Readiness Analyzer**」後，該工具就會開始產生報表，幾分鐘後AEM例項就會提供摘要報表。
+1. 按一下「 **Cloud Readiness Analyzer**」後，工具就會開始產生報表，幾分鐘後CRA報表就會在您的AEM例項上提供。
 
    >[!NOTE]
    >您必須向下捲動頁面才能檢視完整報表。
 
    ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-## 解讀Cloud Readiness Analyzer組織報告 {#organized-report}
+## 解讀Cloud Readiness Analyzer報告 {#cra-report}
 
 在AEM例項中執行Cloud Readiness Analyzer時，報表會在工具視窗中顯示為結果。
 
@@ -65,25 +65,25 @@ Cloud Readiness Analyzer可從軟體分發門戶下載為zip檔案。 您可以�
 
 系統會為每個尋找指派重要度，以指出動作的粗略優先順序。
 
-請遵循下表來瞭解重要性等級：
+請遵循下表瞭解重要性等級：
 
 | 重要性 | 說明 |
 |--- |--- |
-| 資訊 | This finding is provided for informational purposes. |
-| 建議 | This finding is potentially an upgrade issue. 建議進一步調查。 |
-| 主要 | This finding is likely to be an upgrade issue that should be addressed. |
-| CRITICAL | This finding is very likely to be an upgrade issue that must be addressed to prevent loss of function or performance. |
+| 資訊 | 此查找結果僅供參考。 |
+| 建議 | 這個發現可能是升級問題。 建議進一步調查。 |
+| 主要 | 這項發現可能是需要解決的升級問題。 |
+| 關鍵 | 此發現很可能是升級問題，必須解決以防功能或效能遺失。 |
 
-### Adobe Experience Manager 6.3 and later {#aem-older-version}
+### Adobe Experience Manager 6.3及更新版本 {#aem-older-version}
 
-For AEM 6.3 and above, the primary way to run Cloud Readiness Analyzer is to:
+對於AEM 6.3和更高版本，執行Cloud Readiness Analyzer的主要方式是：
 
 1. 選擇Adobe Experience Manager實例，並導覽至工具-> **操作** -> **Cloud Readiness Analyzer**。
 
    >[!NOTE]
-   >The CRA will begin a background process to generate the report as soon as the tool is opened. 它會顯示報表產生在準備就緒之前的指示。 您可以關閉瀏覽器標籤，稍後再返回，在報表完成時檢視報表。
+   >CRA將開始一個背景程式，在工具開啟時立即產生報告。 它會顯示報表產生在準備就緒之前的指示。 您可以關閉瀏覽器標籤，稍後再返回，在報表完成時檢視報表。
 
-1. 產生並顯示CRA報表後，您就可以選擇以逗號分隔值(CSV)下載報表。 按一下 **CSV** ，以逗號分隔值(CSV)格式下載完整的摘要報表，如下圖所示。
+1. 產生並顯示CRA報表後，您就可以選擇以逗號分隔值(CSV)下載報表。 按一下 **CSV** ，以逗號分隔值(CSV)格式下載完整的CRA報表，如下圖所示。
 
    ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
@@ -92,33 +92,22 @@ For AEM 6.3 and above, the primary way to run Cloud Readiness Analyzer is to:
 
 ### Adobe Experience Manager 6.2和6.1 {#aem-specific-versions}
 
-Cloud Readiness Analyzer在Adobe Experience Manager(AEM)6.2中僅限於產生和下載CSV報表的連結。
+Cloud Readiness Analyzer在Adobe Experience Manager 6.2中僅限於產生及下載CSV報表的連結。
+
+對於Adobe Experience Manager 6.1，工具無法運作，只能使用HTTP介面。
 
 >[!NOTE]
->
->* 對於Adobe Experience Manager 6.1，工具無法運作，只能使用HTTP介面。
-   >
-   >
-* 在所有版本中，隨附的圖樣偵測器可獨立執行。
+>在所有版本中，隨附的圖樣偵測器可獨立執行。
 
+## 解讀Cloud Readiness Analyzer CSV報告 {#cra-csv-report}
 
-請依照下列步驟下載Adobe Experience Manager(AEM)6.1和6.2的CSV報表：
+當您按一下AEM例項的 **CSV** 選項時，「雲端就緒性分析器」報表的CSV格式會從結果快取建立，並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報告會自動下載為預設名稱的檔案 `results.csv`。
 
-1.導覽至 **Adobe Experience Manager Web Console使用設定**`https://serveraddress:serverport/system/console/configMgr`。
+如果快取已過期，則報表將在建立和下載CSV檔案之前重新產生。
 
-1. 選擇「 **狀態** 」標籤，並從下拉式清單中搜尋「模式偵測器 **** 」，如下圖所示。
+報表的CSV格式包含從「模式偵測器」輸出產生的資訊，並依類別類型、子類型和重要性等級排序和組織。 其格式適用於在Microsoft Excel等應用程式中檢視和編輯。 它旨在以可重複的格式提供所有的查找資訊，在比較報告以衡量進度時，這些資訊會有所幫助。
 
-   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. 您可以將摘要報表下載至Zip資料夾或JSON格式。
-
-## 解讀Cloud Readiness Analyzer CSV報告 {#crs-csv-report}
-
-當您按一下AEM例項的 **CSV** 選項時，「雲端就緒性分析器」報表的CSV格式會從結果快取建立，並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報告會自動下載為預設名稱的檔案 `results.csv`。 如果快取已過期，則報表將在建立和下載CSV檔案之前重新產生。
-
-The CSV format of the report includes information that is generated from the Pattern Detector output, sorted and organized by category type, sub-type, and importance level. 其格式適用於在Microsoft Excel等應用程式中檢視和編輯。 它旨在以可重複的格式提供所有的查找資訊，在比較報告以衡量進度時，這些資訊會有所幫助。
-
-The columns of the CSV format report are:
+CSV格式報表的欄為：
 
 * **程式碼**: 類別代碼
 * **類型**: 類別名稱
@@ -126,9 +115,9 @@ The columns of the CSV format report are:
 * **重要性**: 重要性級別
 * **識別碼**: 尋找的主要識別碼
 * **其他**: 關於尋找的其他資訊
-* **message**: the message provided for the finding
+* **訊息**: 為尋找提供的訊息
 * **moreInfo**: 可用來存取類別相關線上說明的連結
-* **context**: a JSON string of finding data
+* **內容**: 尋找資料的JSON字串
 
 個別尋找的欄中值&quot;\N&quot;表示未提供任何資料。
 
@@ -156,13 +145,13 @@ HTTP介面可用於多種方法。
 
 此介面使用下列HTTP標題：
 
-* `Cache-Control: max-age=<seconds>`: 以秒為單位指定快取新鮮度存留期。 (See [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
+* `Cache-Control: max-age=<seconds>`: 以秒為單位指定快取新鮮度存留期。 (請參見 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。)
 * `Prefer: respond-async`: 表示伺服器應非同步響應。 (請參見 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。)
 
-The following HTTP query parameters are available as a convenience for when HTTP headers might not be easily used:
+以下HTTP查詢參數可方便您在不易使用HTTP標題時使用：
 
-* `max-age` (number, optional): Specify the cache freshness lifetime in seconds. This number must be 0 or greater. The default freshness lifetime is 86400 seconds, meaning that without this parameter or the corresponding header a fresh cache will be used to serve requests for 24 hours before the report must be regenerated. Using `max-age=0` will force the cache to be cleared and initiate a regeneration of the report. Immediately following this request the freshness lifetime will be reset to the previous non-zero value.
-* `respond-async` （布林值，可選）: 指定應以非同步方式提供回應。 當快 `respond-async=true` 取過期時，伺服器會傳回回的回應，而不 `202 Accepted, processing cache` 需等待報表產生和快取重新整理。 如果快取是新鮮的，則此參數無效。 The default value is `false`, meaning that without this parameter or the corresponding header, the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
+* `max-age` （數字、可選）: 以秒為單位指定快取新鮮度存留期。 此數字必須為0或更大。 預設新鮮度存留期為86400秒，這表示若沒有此參數或對應的標題，新鮮快取將用來在必須重新產生報表之前24小時內提供請求。 使 `max-age=0` 用將強制清除快取，並啟動報表的再生。 緊隨此請求後，新鮮度存留期將重設為上一個非零值。
+* `respond-async` （布林值，可選）: 指定應以非同步方式提供回應。 當快 `respond-async=true` 取過期時，伺服器會傳回回的回應，而不 `202 Accepted, processing cache` 需等待報表產生和快取重新整理。 如果快取是新鮮的，則此參數無效。 預設值為 `false`，表示若沒有此參數或對應的標頭，伺服器將會同步回應，這可能需要相當長的時間，而且需要調整HTTP用戶端的最大回應時間。
 
 當HTTP標題和對應的查詢參數同時存在時，查詢參數優先。
 
@@ -184,12 +173,12 @@ The following HTTP query parameters are available as a convenience for when HTTP
 
 ## 快取存留期調整 {#cache-adjustment}
 
-預設的CRA快取存留期為24小時。 With the option for refreshing a report, and regenerating the cache, in both the AEM instance and the HTTP interface, this default value is likely to be appropriate for most uses of the CRA. If the report generation time is particularly long for your AEM instance, you may wish to adjust the cache lifetime in order to minimize the regeneration of the report.
+預設的CRA快取存留期為24小時。 在AEM例項和HTTP介面中，使用重新整理報表和重新產生快取的選項，此預設值可能適用於CRA的大部分使用。 如果您的AEM例項的報表產生時間特別長，您可能想要調整快取存留期，以將報表的重新產生降至最低。
 
 快取存留期值儲存為以下儲存庫 `maxCacheAge` 節點上的屬性：
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-此屬性的值是快取存留期（以秒為單位）。 管理員可以使用CRX/DE Lite調整快取存留期。
+此屬性的值是快取存留期（以秒為單位）。 管理員可以使用 **CRXDE Lite調整快取存留期**。
 
 
 
