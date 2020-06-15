@@ -2,9 +2,9 @@
 title: 使用 Dynamic Media
 description: 瞭解如何使用動態媒體來提供資產，以便在網頁、行動裝置和社交網站上使用。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '416'
 ht-degree: 7%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 7%
 
 # 使用 Dynamic Media {#working-with-dynamic-media}
 
-[動態媒體](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ，可協助您隨選提供豐富的視覺化銷售和行銷資產，並自動調整規模，以便在網頁、行動裝置和社交網站上消費。 Dynamic Media使用一組主資產，透過其全球、可擴充、最佳化效能的網路，即時產生並提供多種多樣化內容變化。
+[動態媒體](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ，可協助您隨選提供豐富的視覺化銷售和行銷資產，並自動調整規模，以便在網頁、行動裝置和社交網站上消費。 Dynamic Media使用一組主要來源資產，透過其全球、可擴充、最佳化效能的網路，即時產生並提供多種多樣化內容變化。
 
 動態媒體提供互動式檢視體驗，包括縮放、360度旋轉和視訊。 動態媒體獨一無二地整合了Adobe Experience Manager數位資產管理(Assets)解決方案的工作流程，以簡化數位宣傳管理流程。
 
