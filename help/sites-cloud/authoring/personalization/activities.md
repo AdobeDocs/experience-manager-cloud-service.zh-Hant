@@ -2,9 +2,9 @@
 title: 管理活動
 description: 「活動」主控台可讓您建立、組織和管理品牌的行銷活動
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '2002'
 ht-degree: 18%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 18%
 
 >[!NOTE]
 >
->取消發佈活動時，
+>取消發佈活動時，除非重新整理頁面，否則活動的狀態不會變更。
 
 若要發佈或取消發佈活動：
 
@@ -166,6 +166,7 @@ ht-degree: 18%
 
    * 它會停用目前的活動
    * 修改所有頁面，並以成功體驗的實際內容取代目標內容。 成功體驗的內容會成為正常頁面的一部分，而無 **目標** 。
+
    ![轉換成功者](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    成功體驗是指根據轉換率在報表中產生更多提升度的體驗。
