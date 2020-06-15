@@ -2,10 +2,10 @@
 sub-product: AEM 雲端服務實作
 user-guide-title: AEM 雲端服務實作
 translation-type: tm+mt
-source-git-commit: 83c2b37f10b46c1a88e36e49b448b38137bda1c0
+source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 83%
+source-wordcount: '213'
+ht-degree: 79%
 
 ---
 
@@ -43,6 +43,9 @@ ht-degree: 83%
 + 部署至 AEM 雲端服務 {#deploying}
    + [部署至 AEM 雲端服務](deploying/overview.md)
    + [為 AEM 雲端服務設定 OSGi](deploying/configuring-osgi.md)
++ Author Tier {#author-tier}
+   + [存取作者層](/help/implementing/author-tier/accessing-the-author-tier.md)
+   + [保護作者層](/help/implementing/author-tier/securing-the-author-tier.md)
 + 內容傳送概觀 {#content-delivery}
    + [內容傳送流程](dispatcher/overview.md)
    + [雲端中的 Dispatcher](dispatcher/disp-overview.md)
