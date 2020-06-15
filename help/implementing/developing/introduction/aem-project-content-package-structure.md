@@ -2,10 +2,10 @@
 title: AEM 專案結構
 description: 瞭解如何定義封裝結構以部署至Adobe Experience Manager Cloud Service。
 translation-type: tm+mt
-source-git-commit: 60093232710426d919a45742b1775239944d266d
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 17%
+source-wordcount: '2522'
+ht-degree: 16%
 
 ---
 
@@ -37,6 +37,16 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
 >[!WARNING]
 >
 > 和舊版AEM一樣， `/libs` 不應修改。 只有AEM產品程式碼可部署至 `/libs`。
+
+### Oak Indexes {#oak-indexes}
+
+Oak indexes(`/oak:index`)是由AEM Cloud服務部署程式特別管理。 這是因為Cloud Manager必須等到部署任何新索引並完全重新命名後，才能切換到新的代碼映像。
+
+因此，雖然Oak索引在運行時是可變的，但必須將其部署為代碼，以便在安裝任何可變軟體包之前安裝它們。 因此 `/oak:index` ，如下所述，組態是程式碼套件的一部分，而非內容 [套件的一部分。](#recommended-package-structure)
+
+>[!TIP]
+>
+>如需在AEM中以Cloud Service建立索引的詳細資訊，請參閱檔案內容搜 [尋與索引。](/help/operations/indexing.md)
 
 ## 建議的套件結構 {#recommended-package-structure}
 
@@ -184,6 +194,7 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
+
    >[!WARNING]
    >
    >根據慣例，子包嵌入資料夾的名稱為尾碼為 `-packages`。這可確保部署代碼和內容包 **未部署** ，而是不會部署任何子包的目標資料夾， `/apps/<app-name>/...` 從而導致破壞性和循環安裝行為。
@@ -211,7 +222,7 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
 
 ### 容器套件的篩選定義 {#container-package-filter-definition}
 
-由於容器封裝中內嵌了程式碼和內容子封裝，因此必須將內嵌的目標路徑新增至容器專案，以確保內嵌的封裝在建立時 `filter.xml` ，會包含在容器封裝中。
+由於容器封裝中內嵌了程式碼和內容子封裝，因此必須將內嵌的目標路徑新增至容器專案，以確保內嵌的封裝在容器封裝中 `filter.xml` ，當建立時。
 
 只需為包 `<filter root="/apps/<my-app>-packages"/>` 含要部署的子包的任何2級資料夾添加條目。
 
