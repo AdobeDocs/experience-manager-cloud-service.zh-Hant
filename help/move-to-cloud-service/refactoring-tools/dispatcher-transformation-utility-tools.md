@@ -2,7 +2,7 @@
 title: AEM Dispatcher Converter Tool
 description: AEM Dispatcher Converter Tool
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: d3593edcfee660d5ce0b0a8774fe3c61025cbe36
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 12%
@@ -35,7 +35,7 @@ AEM Dispatcher Converter是一個公用程式，可將現有的AMS Dispatcher組
 
 所實現的轉換器 **是遵循轉換准則的AEMDispatcherConfigConverter** 。
 
-請參 [閱將AMS轉換為Adobe Experience Manager做為Cloud Service Dispatcher Configuration](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html#how-to-convert-an-ams-to-an-aem-as-a-cloud-service-dispatcher-configuration) ，將AMS轉換為Adobe Experience Manager做為Cloud Service Dispatcher設定。
+請參 [閱將AMS轉換為Adobe Experience Manager做為Cloud Service Dispatcher Configuration](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html#how-to-convert-an-ams-to-an-aem-as-a-cloud-service-dispatcher-configuration) ，將AMS轉換為Adobe Experience Manager做為Cloud Service Dispatcher設定。
 
 ## 使用AEM Dispatcher Converter {#using-dispatcher-converter}
 
