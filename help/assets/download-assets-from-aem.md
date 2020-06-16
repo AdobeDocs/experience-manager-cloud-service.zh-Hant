@@ -3,42 +3,49 @@ title: 從 AEM 下載資產
 description: 瞭解如何從AEM下載資產並啟用或停用下載功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 748255ef2b3bae9ecca900cdfe7d3be594fb2552
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '771'
 ht-degree: 4%
 
 ---
 
 
-# 從 AEM 下載資產 {#download-assets-from-aem}
+# Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-您可以下載資產，包括靜態和動態轉譯。 已下載的資產會整合在ZIP檔案中。 壓縮的ZIP檔案對於匯出工作的檔案大小上限為1 GB。 每個匯出工作最多可獲得500個資產。
+您可以下載資產，包括靜態和動態轉譯。 或者，您也可以直接寄送包含資產連結的電子郵件 [!DNL Adobe Experience Manager Assets]。 已下載的資產會整合在ZIP檔案中。 壓縮的ZIP檔案對於匯出工作的檔案大小上限為1 GB。 每個匯出工作最多允許500個資產。
 
 >[!NOTE]
 >
->若要下載資產，成員必須擁有啟動觸發資產下載的工作流程的權限。
-
-若要下載資產，請導覽至資產、選取資產，然後點選／按一下工具列中的「 **[!UICONTROL 下載]** 」圖示。 在產生的對話方塊中，指定您的下載選項。
+>電子郵件的收件者必須是群組的 `dam-users` 成員，才能存取電子郵件訊息中的ZIP下載連結。 若要下載資產，成員必須擁有啟動觸發資產下載的工作流程的權限。
 
 無法下載資產類型影像集、回轉集、混合媒體集和轉盤集。
 
-![從AEM Assets下載資產時的可用選項](assets/asset_download_dialog.png)
+**若要下載資產，**
 
-*圖： 從AEM Assets下載資產時的可用選項。*
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
+1. 在「導覽」頁面上，點選「 **[!UICONTROL 資產>檔案」]**。
+1. 導覽至包含您要下載之資產的檔案夾。
+1. 選取資料夾或選取資料夾內的一或多個資產。
+1. 在工具列上，點選「 **[!UICONTROL 下載」]**。
 
-以下是「匯出／下載」選項。 動態轉譯是Dynamic Media獨有的，可讓您除了選取的資產外，即時產生轉譯——只有在您啟用「動態媒體」時，這個選項才可用。
+   ![從Experience Manager Assets下載資產時的可用選項](/help/assets/assets/asset-download.png)
 
-| 匯出或下載選項 | 說明 |
-|---|---|
-| [!UICONTROL 資產] | 選取此選項，以原始格式下載資產，而不需任何轉譯。 |
-| [!UICONTROL 轉譯] | 轉譯是資產的二進位表示法。資產具有主要表示法——已上傳檔案的主要表示法。 它們可以有任意數量的表示。 <br> 使用這個選項，您可以選取您要下載的轉譯。 可用的轉譯取決於您選擇的資產。 |
-| [!UICONTROL 動態轉譯] | 動態轉譯會即時產生其他轉譯。 當您選取此選項時，也可以從影像預設集清單中選取您要動態建立的轉譯。 此外，您還可以選取尺寸和單位、格式、色域、解析度和任何影像修飾元（例如反轉影像） |
-| [!UICONTROL 為每一個資產建立個別的資料夾] | 選取此選項，可在下載資產時保留資料夾階層。 依預設，檔案夾階層會被忽略，而所有資產都會下載到您本機系統的一個檔案夾中。 |
+   *下載對話框選項。*
 
-如果資產有任何轉譯，則可使用選項轉譯選項。 如果資產包含子資產，則可使用子資產選項。
+1. 在「下載」對話方塊中，選取您想要的下載選項。
 
-當您選擇要下載的檔案夾時，會下載該檔案夾下的完整資產階層。 若要將您下載的每個資產（包括父資料夾下巢狀內嵌的子資料夾中的資產）納入個別資料夾，請選取「為每個資 **[!UICONTROL 產建立個別資料夾」]**。
+   | 下載選項 | 說明 |
+   |---|---|
+   | **[!UICONTROL 為每一個資產建立個別的資料夾]** | 選取此選項，將您下載的每個資產（包括資產）包含在資產父資料夾下巢狀的子資料夾中，並放入本機電腦上的一個資料夾。 如果未選取 *此選項* ，預設會忽略資料夾階層，而所有資產都會下載到本機電腦的一個資料夾中。 |
+   | **[!UICONTROL 電子郵件]** | 選取此選項，可傳送電子郵件通知給收件者。 標準電子郵件範本可在下列位置取得：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 您在部署期間自訂的範本可在下列位置使用： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以在下列位置儲存租用戶特定的自訂範本：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
+   | **[!UICONTROL 資產]** | 選取這個選項，以原始格式下載資產，而不需任何轉譯。<br>如果原始資產有子資產，則可使用子資產選項。 |
+   | **[!UICONTROL 轉譯]** | 轉譯是資產的二進位表示法。資產具有主要表示法——已上傳檔案的主要表示法。 它們可以有任意數量的表示。 <br> 使用這個選項，您可以選取您要下載的轉譯。 可用的轉譯取決於您選取的資產。 |
+   | **[!UICONTROL 智慧裁切]** | 選取這個選項，可從AEM下載所選資產的所有智慧型裁切轉譯。 系統會建立包含「智慧型裁切」轉譯的zip檔案，並下載至您的本機電腦。 |
+   | **[!UICONTROL 動態轉譯]** | 選取此選項，即時產生一連串的替代轉譯。 當您選取此選項時，也可以從「影像預設集」清單中選取您要動態建立的轉 [譯](/help/assets/dynamic-media/image-presets.md) 。 <br>此外，您還可以選取大小和單位、格式、色域、解析度，以及任何可選的影像修飾元，例如反轉影像。 此選項僅在您已啟用時才可 [!DNL Dynamic Media] 用。 |
+
+1. 在對話方塊中，點選「 **[!UICONTROL 下載」]**。
+
 
 ## 啟用資產下載servlet {#enable-asset-download-servlet}
 
