@@ -2,9 +2,9 @@
 title: 使用Cloud Readiness Analyzer
 description: 使用Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
+source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1747'
 ht-degree: 0%
 
 ---
@@ -18,18 +18,18 @@ ht-degree: 0%
 
 * CRA報表是使用Adobe Experience Manager(AEM)模式偵測器的輸 [出建立](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)。 CRA使用的Pattern Detector版本已包含在CRA安裝包中。
 
-* CRA只能由管理員使用 *者* 或「管理員」群組中的使 **用者執行** 。
+* CRA只能由管理員使用 **者** 或管理員中的使 **用者**。
 
 * CRA在6.1版及更高版本的AEM例項上受支援。
 
 * CRA可以在任何環境下運行，但最好在 *Stage* 。
 
    >[!NOTE]
-   >為避免對業務關鍵型實例造成影響，建議在與生產環境盡可能接近的Author測試環境上運行CRA，在定制、配置、內容和用戶應用程式方面。 或者，它可在生產作者環境的克隆上運行。
+   >為避免對業務關鍵型實例造成影響，建議在 *Author* （作者）環境上運行CRA，該環境在定制、配置、內容和用戶應用程式方面盡可能接近 *Production* （生產）環境。 或者，它可在生產作者環境的克隆上 *運行* 。
 
-* CRA報告的生成可能需要相當長的時間，從幾分鐘到幾小時。 所需的時間量高度取決於AEM儲存庫內容的大小和性質、AEM版本和其他因素。
+* 制定CRA報告內容可能需要相當長的時間，從幾分鐘到幾小時。 所需的時間量高度取決於AEM儲存庫內容的大小和性質、AEM版本和其他因素。
 
-* 由於產生報表需要大量時間，因此結果會保留在快取中，並可供後續檢視和下載，直到快取過期或明確重新整理報表為止。
+* 由於產生報表內容可能需要相當長的時間，因此這些內容會由背景程式產生並儲存在快取中。 檢視和下載報表的速度應該相對較快，因為它會使用內容快取，直到報表過期或明確重新整理為止。 在產生報表內容時，您可關閉瀏覽器標籤，稍後再返回，在快取中提供報表內容後，即可檢視報表。
 
 ## 可用性 {#availability}
 
@@ -46,7 +46,7 @@ Cloud Readiness Analyzer可從軟體分發門戶下載為zip檔案。 您可以�
 
    ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. 按一下「 **Cloud Readiness Analyzer**」後，工具就會開始產生報表，幾分鐘後CRA報表就會在您的AEM例項上提供。
+1. 在您按一下 **Cloud Readiness Analyzer後**，工具就會開始產生報表，並在報表可用時顯示。
 
    >[!NOTE]
    >您必須向下捲動頁面才能檢視完整報表。
@@ -88,20 +88,20 @@ Cloud Readiness Analyzer可從軟體分發門戶下載為zip檔案。 您可以�
    ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
    >[!NOTE]
-   >您可以按一下左上角的「重新整理報表」按鈕，強制CRA清除其快取並重新產生 **報表** 。
+   >您可以按一下「重新整理報表」，強制CRA清除其快取並重新產 **生報表**。
 
 ### Adobe Experience Manager 6.2和6.1 {#aem-specific-versions}
 
 Cloud Readiness Analyzer在Adobe Experience Manager 6.2中僅限於產生及下載CSV報表的連結。
 
-對於Adobe Experience Manager 6.1，工具無法運作，只能使用HTTP介面。
+對於Adobe Experience Manager 6.1，此工具無法運作，只能使用HTTP介面。
 
 >[!NOTE]
 >在所有版本中，隨附的圖樣偵測器可獨立執行。
 
 ## 解讀Cloud Readiness Analyzer CSV報告 {#cra-csv-report}
 
-當您按一下AEM例項的 **CSV** 選項時，「雲端就緒性分析器」報表的CSV格式會從結果快取建立，並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報告會自動下載為預設名稱的檔案 `results.csv`。
+當您按一下AEM例項的 **CSV** 選項時，「雲端就緒性分析器」報表的CSV格式會從內容快取建立，並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報告會自動下載為預設名稱的檔案 `results.csv`。
 
 如果快取已過期，則報表將在建立和下載CSV檔案之前重新產生。
 
@@ -123,7 +123,7 @@ CSV格式報表的欄為：
 
 ## HTTP介面 {#http-interface}
 
-CRA提供HTTP介面，可用作AEM例項的替代項目。 該介面同時支援HEAD和GET命令。 它可用於生成CRA報告，並以三種格式之一返回： JSON、CSV和Tab分隔值(TSV)。
+CRA提供HTTP介面，可用作AEM中使用者介面的替代選項。 該介面同時支援HEAD和GET命令。 它可用於生成CRA報告，並以三種格式之一返回： JSON、CSV和Tab分隔值(TSV)。
 
 以下URL可用於HTTP訪問，其中 `<host>` 是安裝CRA的伺服器的主機名和埠（如果需要）:
 * `http://<host>/apps/readiness-analyzer/analysis/result.json` for JSON format
@@ -178,7 +178,7 @@ HTTP介面可用於多種方法。
 快取存留期值儲存為以下儲存庫 `maxCacheAge` 節點上的屬性：
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-此屬性的值是快取存留期（以秒為單位）。 管理員可以使用 **CRXDE Lite調整快取存留期**。
+此屬性的值是快取存留期（以秒為單位）。 管理員可以使用CRXDE Lite調整快取存留期。
 
 
 
