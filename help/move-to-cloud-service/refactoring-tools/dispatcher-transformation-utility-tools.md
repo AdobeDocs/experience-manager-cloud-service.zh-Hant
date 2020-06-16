@@ -2,7 +2,7 @@
 title: AEM Dispatcher Converter Tool
 description: AEM Dispatcher Converter Tool
 translation-type: tm+mt
-source-git-commit: d3593edcfee660d5ce0b0a8774fe3c61025cbe36
+source-git-commit: 66cf4fc7b5a336968dd3f8757cc56a11d6e4843e
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 12%
@@ -27,7 +27,7 @@ Dispatcher 是 Adobe Experience manager 的快取和/或負載平衡工具。使
 
 您必須瞭解如何將AEM建構為雲端服務Apache和Dispatcher組態，以及如何在部署至雲端環境之前，先在本機驗證並執行它。
 
-如需詳 [細資訊，請參閱Cloud中的](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html) Dispatcher。
+如需詳 [細資訊，請參閱Cloud中的](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher。
 
 ## AEM Dispatcher Converter {#aem-dispatcher-converter}
 
