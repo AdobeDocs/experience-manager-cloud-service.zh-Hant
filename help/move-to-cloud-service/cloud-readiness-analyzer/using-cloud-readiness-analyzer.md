@@ -2,9 +2,9 @@
 title: 使用Cloud Readiness Analyzer
 description: 使用Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,13 @@ ht-degree: 0%
 Cloud Readiness Analyzer可從軟體分發門戶下載為zip檔案。 您可以透過Package Manager在來源Adobe Experience Manager(AEM)例項上安裝套件。
 
 >[!NOTE]
->從待定的軟體分發門戶下載Cloud Readiness Analyzer **。
+>從軟體分發門戶下載Cloud Readiness Analyzer。
 
-## 運行Cloud Readiness Analyzer {#running-tool}
+## 檢視雲端就緒性分析器報表 {#viewing-report}
 
-請依照本節內容瞭解如何運行Cloud Readiness Analyzer:
+### Adobe Experience Manager 6.3及更新版本 {#aem-later-versions}
+
+請依照本節內容瞭解如何查看Cloud Readiness Analyzer報告：
 
 1. 選擇Adobe Experience Manager並導覽至工具-> **Operations** -> **Cloud Readiness Analyzer**。
 
@@ -51,41 +53,11 @@ Cloud Readiness Analyzer可從軟體分發門戶下載為zip檔案。 您可以�
    >[!NOTE]
    >您必須向下捲動頁面才能檢視完整報表。
 
-   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
-
-## 解讀Cloud Readiness Analyzer報告 {#cra-report}
-
-在AEM例項中執行Cloud Readiness Analyzer時，報表會在工具視窗中顯示為結果。
-
-報表格式為：
-
-* *報表概述*: 報表本身的相關資訊，包括報表產生的時間。
-* *系統概述*: CRA所在AEM系統的相關資訊。
-* *尋找類別*: 每個區段都處理同一類別的一或多個發現。 每個區段都包含下列項目： 類別名稱、子類型、尋找計數和重要性、摘要、類別檔案的連結，以及個別尋找資訊。
-
-系統會為每個尋找指派重要度，以指出動作的粗略優先順序。
-
-請遵循下表來瞭解重要性等級：
-
-| 重要性 | 說明 |
-|--- |--- |
-| 資訊 | 此查找結果僅供參考。 |
-| 建議 | 這個發現可能是升級問題。 建議進一步調查。 |
-| 主要 | 這項發現可能是需要解決的升級問題。 |
-| 關鍵 | 此發現很可能是升級問題，必須解決以防功能或效能遺失。 |
-
-### Adobe Experience Manager 6.3及更新版本 {#aem-older-version}
-
-對於AEM 6.3和更高版本，執行Cloud Readiness Analyzer的主要方式是：
-
-1. 選擇Adobe Experience Manager實例，並導覽至工具-> **操作** -> **Cloud Readiness Analyzer**。
-
-   >[!NOTE]
-   >CRA將開始一個背景程式，在工具開啟時立即產生報告。 它會顯示報表產生在準備就緒之前的指示。 您可以關閉瀏覽器標籤，稍後再返回，在報表完成時檢視報表。
+   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
 1. 產生並顯示CRA報表後，您就可以選擇以逗號分隔值(CSV)下載報表。 按一下 **CSV** ，以逗號分隔值(CSV)格式下載完整的CRA報表，如下圖所示。
 
-   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
    >[!NOTE]
    >您可以按一下「重新整理報表」，強制CRA清除其快取並重新產 **生報表**。
@@ -98,6 +70,32 @@ Cloud Readiness Analyzer在Adobe Experience Manager 6.2中僅限於產生及下�
 
 >[!NOTE]
 >在所有版本中，隨附的圖樣偵測器可獨立執行。
+
+## 解讀Cloud Readiness Analyzer報告 {#cra-report}
+
+在AEM例項中執行Cloud Readiness Analyzer工具時，報表會在工具視窗中顯示為結果。
+
+報表格式為：
+
+* **報表概述**: 有關報表本身的資訊和資訊，例如：
+   * *報告時間*: 產生報表內容並首次提供時。
+   * *到期時間*: 報表內容快取將於何時過期。
+   * *生成時段*: 報表內容產生程式所花費的時間。
+   * *查找計數*: 報告中包含的調查結果總數。
+* **系統概述**: CRA所在AEM系統的相關資訊。
+* **尋找類別**: 每個區段都處理同一類別的一或多個發現。 每個區段都包含下列項目： 類別名稱、子類型、尋找計數和重要性、摘要、類別檔案的連結，以及個別尋找資訊。
+
+系統會為每個尋找指派重要度，以指出動作的粗略優先順序。
+
+請遵循下表瞭解重要性等級：
+
+| 重要性 | 說明 |
+|--- |--- |
+| 資訊 | 此查找結果僅供參考。 |
+| 建議 | 這個發現可能是升級問題。 建議進一步調查。 |
+| 主要 | 這項發現可能是需要解決的升級問題。 |
+| 關鍵 | 此發現很可能是升級問題，必須解決以防功能或效能遺失。 |
+
 
 ## 解讀Cloud Readiness Analyzer CSV報告 {#cra-csv-report}
 
