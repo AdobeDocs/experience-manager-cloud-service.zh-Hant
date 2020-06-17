@@ -2,9 +2,9 @@
 title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
-source-wordcount: '3916'
+source-wordcount: '3913'
 ht-degree: 1%
 
 ---
@@ -197,7 +197,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 它被調用為： `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-此工具會驗證Apache和Dispatcher組態。 它使用模式掃描所有文 `conf.d/enabled_vhosts/*.vhost` 件，並檢查是否只使用白名單指令。 通過運行驗證器的白名單命令，可以列出Apache配置檔案中允許的指令：
+此工具會驗證Apache和Dispatcher組態。 它使用模式掃描所有文 `conf.d/enabled_vhosts/*.vhost` 件，並檢查是否只使用允許列出的指令。 通過運行驗證器的allowlist命令，可以列出Apache配置檔案中允許的指令：
 
 ```
 $ validator whitelist
@@ -236,9 +236,9 @@ Whitelisted directives:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-客戶不能添加任意模組，但是將來可能會考慮將其他模組加入產品中。 如Dispatcher Tools文檔中所述，客戶可以在SDK中執行「驗證器白名單」，以查找指定Dispatcher版本可用的指令清單。
+客戶不能添加任意模組，但是將來可能會考慮將其他模組加入產品中。 如上所述，客戶可在SDK中執行「驗證器白名單」，以找到指定Dispatcher版本可用的指令清單。
 
-白名單包含客戶配置中允許的Apache指令清單。 如果指令未列入白名單，則工具會記錄錯誤並傳回非零的退出代碼。 如果命令行上沒有提供白名單（這是調用白名單的方式），則該工具會使用預設白名單，Cloud Manager將在部署到雲環境之前用於驗證。
+allowlist包含客戶配置中允許的Apache指令清單。 如果不允許列出指令，工具將記錄錯誤並返回非零的退出代碼。 如果命令行上未提供任何allowlist（即應調用該allowlist的方式），則該工具會使用Cloud Manager在部署至Cloud環境之前用於驗證的預設allowlist。
 
 此外，它還會進一步掃描所有具有模式的 `conf.dispatcher.d/enabled_farms/*.farm` 檔案並檢查：
 
@@ -256,7 +256,7 @@ Cloud manager validator 1.0.4
  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-請注意，驗證工具僅報告未列入白名單的Apache指令的禁止使用。 它不會報告Apache配置的語法或語義問題，因為此資訊僅適用於運行環境中的Apache模組。
+請注意，驗證工具僅報告未允許列出的禁止使用Apache指令。 它不會報告Apache配置的語法或語義問題，因為此資訊僅適用於運行環境中的Apache模組。
 
 當未報告任何驗證失敗時，您的設定就可進行部署。
 
@@ -476,7 +476,7 @@ Dispatcher配置結構在Managed Services和AEM（即雲服務）之間有差異
 
 下節提供如何轉換AMS配置的逐步說明。 假定您的存檔具有類似於 [Cloud Manager Dispatcher配置中所述的結構](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
-### 提取存檔並刪除最終的前置詞
+### 解壓縮封存並移除最終首碼
 
 將檔案解壓縮至檔案夾，並確定立即的子檔案夾以 `conf`、 `conf.d``conf.dispatcher.d` 、和開頭 `conf.modules.d`。 如果他們沒有，請在階層中向上移動。
 
@@ -520,7 +520,7 @@ Enter directory `conf.d/variables`.
 
 但是，如果資料夾包含多個虛擬主機特定檔案，則其內容應被添加到虛擬主 `Include` 機檔案中引用它們的語句中。
 
-### 移除白名單
+### 刪除允許清單
 
 刪除虛擬主 `conf.d/whitelists` 機檔案中 `Include` 引用該子資料夾中某個檔案的資料夾和刪除語句。
 
@@ -540,7 +540,7 @@ $ validator httpd .
 
 如果您看到有關遺失包含檔案的錯誤，請檢查您是否正確重新命名這些檔案。
 
-如果您看到未列入白名單的Apache指令，請將其刪除。
+如果您看到未列出的Apache指令，請將其刪除。
 
 ### 移除所有非發佈農場
 
@@ -629,7 +629,7 @@ Enter directory `conf.dispatcher.d/renders`.
 
 將預設AEM `conf.dispatcher.d/renders/default_renders.any` 的檔案複製為Cloud Service分派程式設定至該位置。
 
-在每個群檔案中，刪除該部分中的任 `renders` 何內容，並將其替換為：
+在每個群檔案中，移除區段中的任何內 `renders` 容，並將其取代：
 
 ```
 $include "../renders/default_renders.any"
