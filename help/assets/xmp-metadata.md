@@ -3,10 +3,10 @@ title: XMP 中繼資料
 description: 瞭解XMP（可擴充中繼資料平台）中繼資料管理標準。 AEM將它當做建立、處理和交換中繼資料的標準格式。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 16%
+source-wordcount: '1143'
+ht-degree: 20%
 
 ---
 
@@ -129,29 +129,33 @@ XMP回寫功能可讓您將中繼資料變更傳播至資產的所有或特定�
 >For more information about supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 -->
 
-### 篩選XMP中繼資料 {#filtering-xmp-metadata}
+<!--
+TBD: The method has changed in AEMaaCS. Find the new ones.
 
-AEM Assets支援篩選從資產二進位檔案讀取並在收錄資產時儲存在JCR的XMP中繼資料的屬性／節點。 您可以透過封鎖的清單和允許的清單進行篩選。
+### Filter XMP metadata {#filtering-xmp-metadata}
 
-使用封鎖清單進行篩選可讓您匯入所有XMP中繼資料屬性，但為排除指定的屬性除外。 不過，對於資產類型（例如具有大量XMP中繼資料的INDD檔案）（例如1000個節點，具有10,000個屬性），篩選的節點名稱不一定都會事先知道。 如果使用封鎖清單進行篩選可讓大量包含大量XMP中繼資料的資產匯入，AEM例項／叢集可能會遇到穩定性問題，例如阻塞的觀察佇列。
+AEM Assets supports filtering of properties/nodes for XMP metadata that is read from asset binaries and stored in JCR when assets are ingested. Filtering is possible via a blocked list and an allowed list.
 
-透過允許的清單篩選XMP中繼資料可讓您定義要匯入的XMP屬性，以解決此問題。 這樣，將忽略其他／未知的XMP屬性。 為了向後相容性，您可以將其中某些屬性新增至使用封鎖清單的篩選器。
+Filtering using a blocked list lets you import all XMP metadata properties except the properties that are specified for exclusion. However, for asset types such as INDD files that have huge amounts of XMP metadata (for example 1000 nodes with 10,000 properties), the names of nodes to be filtered are not always known in advance. If filtering using a blocked list allows a large number of assets with numerous XMP metadata to be imported, the AEM instance/cluster can encounter stability issues, for example clogged observation queues.
+
+Filtering of XMP metadata via allowed list resolves this issue by letting you define the XMP properties to be imported. This way, other/unknown XMP properties are ignored. For backward compatibility, you can add some of these properties to the filter that uses a blocked list.
 
 >[!NOTE]
 >
->篩選只適用於資產二進位檔中衍生自XMP來源的屬性。 對於從非XMP來源衍生的屬性（例如EXIF和IPTC格式），篩選無法運作。 例如，資產建立日期會儲存在以EXIF TIFF命名的 `CreateDate` 屬性中。 AEM在名為的中繼資料欄位中提到此值 `exif:DateTimeOriginal`。 由於來源是非XMP來源，因此篩選不適用於此屬性。
+>Filtering works only for the properties derived from XMP sources in asset binaries. For the properties derived from non-XMP sources, such as EXIF and IPTC formats, the filtering does not work. For example, the date of asset creation is stored in property named `CreateDate` in EXIF TIFF. AEM stories this value in the metadata field named `exif:DateTimeOriginal`. As the source is a non-XMP source, filtering does not work on this property.
 
-1. 要開啟配置管理器，請訪問 `https://[aem_server]:[port]/system/console/configMgr`。
-1. 開啟 **[!UICONTROL Adobe CQ DAM XmpFilter組態]** 。
+1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL Adobe CQ DAM XmpFilter]** configuration.
 1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
 
 1. To filter out blocked XMP properties after applying filtering via allowed list, specify them in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
 
    >[!NOTE]
    >
-   >預設 **[!UICONTROL 情況下，「將黑名單應用於XMP屬性]** 」選項處於選中狀態。 換言之，預設會啟用使用封鎖清單進行篩選。 要禁用此類篩選，請取消選 **[!UICONTROL 擇「將黑名單應用於XMP屬性]** 」選項。
+   >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. In other words, filtering using a blocked list is enabled by default. To disable such filtering, deselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
 
-1. 儲存變更。
+1. Save the changes.
+-->
 
 >[!MORELIKETHIS]
 >
