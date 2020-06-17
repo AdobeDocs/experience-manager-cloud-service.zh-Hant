@@ -2,7 +2,7 @@
 title: AEM 雲端服務開發方針
 description: 待完成
 translation-type: tm+mt
-source-git-commit: 8e8863d390132ff8df943548b04e9d7c636c4248
+source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 -->
 
-如果需要識別叢集中的主版，可使用Apache Sling Discovery API來偵測主版。
+如果需要識別叢集中的主要檔案，則可使用Apache Sling Discovery API來偵測它。
 
 ## 記憶體狀態 {#state-in-memory}
 
