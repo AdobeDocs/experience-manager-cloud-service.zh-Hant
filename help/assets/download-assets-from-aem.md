@@ -3,7 +3,7 @@ title: 從 AEM 下載資產
 description: 瞭解如何從AEM下載資產並啟用或停用下載功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 748255ef2b3bae9ecca900cdfe7d3be594fb2552
+source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 4%
@@ -29,7 +29,7 @@ ht-degree: 4%
 1. 選取資料夾或選取資料夾內的一或多個資產。
 1. 在工具列上，點選「 **[!UICONTROL 下載」]**。
 
-   ![從Experience Manager Assets下載資產時的可用選項](/help/assets/assets/asset-download.png)
+   ![從Experience Manager Assets下載資產時的可用選項](/help/assets/assets/asset-download1.png)
 
    *下載對話框選項。*
 
