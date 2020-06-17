@@ -2,9 +2,9 @@
 title: 使用Cloud Readiness Analyzer
 description: 使用Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
+source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1709'
 ht-degree: 0%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 0%
 
 ## 使用Cloud Readiness Analyzer的重要注意事項 {#imp-considerations}
 
-請依照以下章節瞭解運行雲就緒性分析器(CRA)時的重要考慮事項：
+請遵循以下章節，瞭解運行雲就緒性分析器(CRA)的重要考慮事項：
 
 * CRA報表是使用Adobe Experience Manager(AEM)模式偵測器的輸 [出建立](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)。 CRA使用的Pattern Detector版本已包含在CRA安裝包中。
 
-* CRA只能由管理員使用 **者** 或管理員中的使 **用者**。
+* CRA只能由管理員使用 **者** 或「管理員」群組中的使 **用者執行** 。
 
 * CRA在6.1版及更高版本的AEM例項上受支援。
 
 * CRA可以在任何環境下運行，但最好在 *Stage* 。
 
    >[!NOTE]
-   >為避免對業務關鍵型實例造成影響，建議在 *Author* （作者）環境上運行CRA，該環境在定制、配置、內容和用戶應用程式方面盡可能接近 *Production* （生產）環境。 或者，它可在生產作者環境的克隆上 *運行* 。
+   >為避免對業務關鍵型實例造成影響，建議您在自訂、配置、內容和用戶應用程式方面盡可能靠近 *Production* 環境的Author ** 環境上運行CRA。 或者，它可在生產作者環境的克隆上 *運行* 。
 
 * 制定CRA報告內容可能需要相當長的時間，從幾分鐘到幾小時。 所需的時間量高度取決於AEM儲存庫內容的大小和性質、AEM版本和其他因素。
 
@@ -55,7 +55,7 @@ Cloud Readiness Analyzer可從軟體分發門戶下載為zip檔案。 您可以�
 
    ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
-1. 產生並顯示CRA報表後，您就可以選擇以逗號分隔值(CSV)下載報表。 按一下 **CSV** ，以逗號分隔值(CSV)格式下載完整的CRA報表，如下圖所示。
+1. 產生並顯示CRA報表後，您可以選擇按一下 **CSV**，以逗號分隔值(CSV)格式下載報表，如下圖所示。
 
    ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
@@ -77,7 +77,7 @@ Adobe Experience Manager 6.2中的Cloud Readiness Analyzer工具僅限於產生�
 
 報表格式為：
 
-* **報表概述**: 報表本身的資訊，包括下列資訊：
+* **報表概述**: 包含下列資訊之報表本身的資訊：
    * **報告時間**: 產生報表內容並首次提供時。
    * **到期時間**: 報表內容快取將於何時過期。
    * **生成時段**: 報表內容產生程式所花費的時間。
@@ -134,7 +134,7 @@ HTTP介面可用於多種方法。
 
 一個簡單的方式是在您已以管理員身分登入AEM的相同瀏覽器中開啟瀏覽器標籤。 您可以在瀏覽器標籤中輸入URL，並讓瀏覽器顯示或下載結果。
 
-您也可以使用命令列工具，例如或 `curl` 以 `wget` 及任何HTTP用戶端應用程式。 當未使用瀏覽器標籤和已驗證的作業時，您必須提供管理使用者名稱和密碼作為注釋的一部分。
+您也可以使用命令列工具，例如或 `curl` 以 `wget` 及任何HTTP用戶端應用程式。 當未使用瀏覽器標籤和已驗證的作業時，您必須在注釋中提供管理使用者名稱和密碼。
 
 以下是如何做到的範例：
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`.
@@ -176,7 +176,7 @@ HTTP介面可用於多種方法。
 快取存留期值儲存為以下儲存庫 `maxCacheAge` 節點上的屬性：
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-此屬性的值是快取存留期（以秒為單位）。 管理員可以使用CRXDE Lite調整快取存留期。
+此屬性的值是快取存留期（以秒為單位）。 管理員可以使用CRX/DE Lite調整快取存留期。
 
 
 
