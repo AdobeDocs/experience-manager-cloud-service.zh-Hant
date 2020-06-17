@@ -2,10 +2,10 @@
 sub-product: 移至AEM做為雲端服務
 user-guide-title: 移至AEM做為雲端服務
 translation-type: tm+mt
-source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
+source-git-commit: 3ad0b34d4804baa9605f13e2e4f4533399e1cb64
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 1%
+source-wordcount: '68'
+ht-degree: 2%
 
 ---
 
@@ -21,6 +21,9 @@ ht-degree: 1%
    + 內容傳輸工具 {#content-transfer-tool}
       + [概覽](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [使用內容傳輸工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
+   + Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+      + [概覽](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
+      + [使用Cloud Readiness Analyzer](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
 + 程式碼重構工具 {#refactoring-tools}
    + [資產工作流程移轉](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
