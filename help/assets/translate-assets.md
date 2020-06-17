@@ -3,7 +3,7 @@ title: 建立和管理多種語言的數位資產，並執行翻譯工作流程
 description: 瞭解如何將資產（包括二進位檔、中繼資料和標籤）轉譯為多種語言的工作流程自動化。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '2612'
 ht-degree: 22%
@@ -22,7 +22,7 @@ ht-degree: 22%
 機器翻譯： 機器翻譯服務會立即轉譯資產的中繼資料和標籤。
 
 <!--
-We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only 1 master article.
+We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
 https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/translation-projects.html
 https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/preparing-assets-for-translation.html
