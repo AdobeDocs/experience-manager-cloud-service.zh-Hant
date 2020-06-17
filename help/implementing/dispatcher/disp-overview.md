@@ -2,9 +2,9 @@
 title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 translation-type: tm+mt
-source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
+source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3914'
 ht-degree: 1%
 
 ---
@@ -236,7 +236,7 @@ Whitelisted directives:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-客戶不能添加任意模組，但是將來可能會考慮將其他模組加入產品中。 如上所述，客戶可在SDK中執行「驗證器白名單」，以找到指定Dispatcher版本可用的指令清單。
+客戶不能添加任意模組，但是將來可能會考慮將其他模組加入產品中。 如上所述，客戶可以在SDK中執行validator&#39;s allowlist命令，以找到指定Dispatcher版本可用的指令清單。
 
 allowlist包含客戶配置中允許的Apache指令清單。 如果不允許列出指令，工具將記錄錯誤並返回非零的退出代碼。 如果命令行上未提供任何allowlist（即應調用該allowlist的方式），則該工具會使用Cloud Manager在部署至Cloud環境之前用於驗證的預設allowlist。
 
@@ -629,7 +629,7 @@ Enter directory `conf.dispatcher.d/renders`.
 
 將預設AEM `conf.dispatcher.d/renders/default_renders.any` 的檔案複製為Cloud Service分派程式設定至該位置。
 
-在每個群檔案中，移除區段中的任何內 `renders` 容，並將其取代：
+在每個群檔案中，刪除該部分中的任 `renders` 何內容，並將其替換為：
 
 ```
 $include "../renders/default_renders.any"
