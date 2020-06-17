@@ -2,9 +2,9 @@
 title: 使用Cloud Readiness Analyzer
 description: 使用Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
+source-git-commit: 7e169ccc09aab9e1646ad324f5b80c8af18cd4af
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1708'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ HTTP介面可用於多種方法。
 
 在提出請求後，用戶端就不需要維持作用中狀態，即可產生報表。 報表產生可以由一個用戶端使用HTTP GET請求啟動，報表產生後，即可從另一個用戶端的快取或AEM使用者介面中的CSV工具檢視。
 
-### 回應(#http-responses)
+### 回應 {#http-responses}
 
 可能有下列回應值：
 
