@@ -2,7 +2,7 @@
 title: 使用Cloud Readiness Analyzer
 description: 使用Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
+source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 0%
@@ -167,7 +167,7 @@ HTTP介面可用於多種方法。
 * `400 Bad Request`: 指出請求發生錯誤。 「問題詳細資訊」格式的消息(請 [參見RFC 7807](https://tools.ietf.org/html/rfc7807))提供了詳細資訊。
 * `401 Unauthorized`: 請求未獲得授權。
 * `500 Internal Server Error`: 表示發生內部伺服器錯誤。 「問題詳細資訊」格式的消息提供了詳細資訊。
-* `503 Service Unavailable`: 表示伺服器正忙於另一個響應，無法及時為此請求提供服務。 只有在發出同步請求時，才會發生這種情況。 「問題詳細資訊」格式的消息提供了詳細資訊。
+* `503 Service Unavailable`: 表示伺服器正忙於另一個響應，無法及時為此請求提供服務。 只有在發出同步請求時，才可能發生這種情況。 「問題詳細資訊」格式的消息提供了詳細資訊。
 
 ## 快取存留期調整 {#cache-adjustment}
 
