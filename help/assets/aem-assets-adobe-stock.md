@@ -3,7 +3,7 @@ title: 在AEM Assets中使用Adobe Stock數位資產
 description: 在Experience Manager中搜尋、擷取、授權及管理Adobe Stock資產。 將授權資產視為任何其他Experience Manager資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 19%
@@ -32,6 +32,10 @@ Adobe Stock服務可讓設計人員和企業針對其所有創意專案，取用
 1. 按一下&#x200B;**[!UICONTROL 建立憑證]**。建立後，請下載公開金鑰。 按一下&#x200B;**[!UICONTROL 下一步]**。
 1. 在標題為&#x200B;**[!UICONTROL 「標題」]**、**[!UICONTROL 「授權伺服器」]**、**[!UICONTROL 「API 金鑰」]**、**[!UICONTROL 「用戶端密碼」]**&#x200B;和&#x200B;**[!UICONTROL 「裝載」]**&#x200B;的欄位中提供適當的值。See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe Developer Console.
 1. 將下載的公開金鑰新增至您的Adobe Developer Console服務帳戶。
+
+<!--
+TBD: Update this instance when AIO updates their documentation publish URL.
+-->
 
 ### 在AEM中建立Adobe Stock設定 {#create-adobe-stock-configuration-in-aem}
 
