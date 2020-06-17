@@ -2,7 +2,7 @@
 title: AEM中的CDN（雲端服務）
 description: AEM中的CDN（雲端服務）
 translation-type: tm+mt
-source-git-commit: a9bf697f65febcd9ba99539d8baa46f7a8d165e3
+source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 1%
@@ -24,7 +24,7 @@ AEM管理的CDN將可滿足大部分客戶的效能與安全性需求。 客戶�
    **注意：** Aem作為雲端服務不支援「已驗證網域(DV)」憑證。
 1. 通知客戶支援：
    * 哪個自定義域應與給定環境關聯，如程式ID和環境ID所定義。 請注意，作者端不支援自訂網域。
-   * 如果需要任何IP白名單來限制特定環境的流量。
+   * 如果需要任何IP允許清單來限制到給定環境的通信。
 1. 與客戶支援協調，瞭解DNS記錄必要變更的時間安排。 根據是否需要頂點記錄，這些說明不同：
    * 如果不需要頂端記錄，客戶應將CNAME DNS記錄設定為將其FQDN指向 `cdn.adobeaemcloud.com`。
    * 如果需要尖峰記錄，請建立指向下列IP的A記錄： 151.101.3.10、151.101.67.10、151.101.131.10、151.101.195.10。 如果所需的FQDN與DNS區域匹配，客戶需要一個頂點記錄。 可使用Unix dig命令測試此命令，以查看輸出的SOA值是否與域匹配。 例如，該命 `dig anything.dev.adobeaemcloud.com` 令返回SOA(Start of Authority，即 `dev.adobeaemcloud.com` zone)，因此它不是APEX記錄，而 `dig dev.adobeaemcloud.com` 返回SOA, `dev.adobeaemcloud.com` 因此它是頂點記錄。
