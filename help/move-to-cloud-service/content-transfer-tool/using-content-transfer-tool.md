@@ -2,7 +2,7 @@
 title: 使用內容傳輸工具
 description: 使用內容傳輸工具
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 1%
@@ -33,7 +33,7 @@ ht-degree: 1%
 內容傳輸工具可從軟體散發入口網站下載為zip檔案（內容傳輸工具v1.0.0）。 您可以透過Package Manager在來源Adobe Experience Manager(AEM)例項上安裝套件。
 
 >[!NOTE]
->從軟體散發入口網站下載 [內容傳輸工具](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。
+>從軟體散發入口網站下載內 [容傳輸](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 工具。
 
 ## 執行內容傳輸工具 {#running-tool}
 
