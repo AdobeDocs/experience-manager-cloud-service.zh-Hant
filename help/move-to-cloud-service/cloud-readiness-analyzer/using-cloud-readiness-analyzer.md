@@ -2,9 +2,9 @@
 title: 使用Cloud Readiness Analyzer
 description: 使用Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 1d5023e49288cfa922f8fff8264b857ac66ec97a
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 Cloud Readiness Analyzer可從軟體分發門戶下載為zip檔案。 您可以透過Package Manager在來源Adobe Experience Manager(AEM)例項上安裝套件。
 
 >[!NOTE]
->從軟體分發門戶下載Cloud Readiness Analyzer。
+>從軟體散發入口網站下載Cloud Readiness [Analyzer](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 。
 
 ## 檢視雲端就緒性分析器報表 {#viewing-report}
 
