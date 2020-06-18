@@ -41,7 +41,6 @@ ht-degree: 1%
    * 片段參照模型； 因此，對模型的更改可能會／會影響任何相依片段。
    * 模型是由資料類型組成。
    * 新增變數等的函式必須相應地更新片段。
-
    >[!NOTE]
    >
    >若要顯示／轉譯內容片段，您的帳戶必須擁 `read` 有模型權限。
@@ -93,8 +92,7 @@ ht-degree: 1%
    * 每個元素的資料作為具有元素名稱的屬性儲存在相應的子節點中：
 例如，元素的內容 `text` 儲存為屬性 `text` `jcr:content/data/master`
 
-* 中繼資料和相關內容會儲存在 `jcr:content/metadata`下方，但標題和說明除外，它們不被視為傳統中繼資料，並儲存在 
-`jcr:content`
+* 中繼資料和相關內容會儲存在 `jcr:content/metadata`下方，但標題和說明除外，它們不被視為傳統中繼資料，並儲存在 `jcr:content`
 
 #### 將簡單內容片段對應至資產 {#mapping-simple-content-fragments-to-assets}
 
@@ -240,7 +238,6 @@ ht-degree: 1%
       * 新增系列
       * 移除系列
    * 存取片段的模型或範本
-
    代表片段主要元素的介面包括：
 
    * **內容元素** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
@@ -260,7 +257,6 @@ ht-degree: 1%
       * 取得基本資料（名稱、標題、說明）
       * 取得／設定內容
       * 簡單同步，基於上次修改的資訊
-
    這3個介面( `ContentFragment`、 `ContentElement`、 `ContentVariation``Versionable` )都擴充了新增內容片段所需版本控制功能的介面：
 
    * 建立元素的新版本
