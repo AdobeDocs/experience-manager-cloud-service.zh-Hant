@@ -2,9 +2,9 @@
 title: 部署至 AEM 雲端服務
 description: '部署至 AEM 雲端服務 '
 translation-type: tm+mt
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+source-git-commit: 6fee9a7abd17615c607f01b869a9c1eaed5793a3
 workflow-type: tm+mt
-source-wordcount: '3512'
+source-wordcount: '3523'
 ht-degree: 1%
 
 ---
@@ -146,11 +146,11 @@ Health checks are used to monitor the health of the application. 如果這些檢
 * 可在運行時驗證本地開發環境上的repoinit語句，因為這些語句將在註冊OSGi配置時執行。
 * 重新指向語句是原子和顯式語句，如果狀態已匹配，則將跳過。
 
-當Cloud Manager部署應用程式時，它會執行這些陳述式，而與安裝任何內容封裝無關。
+當Cloud Manager部署應用程式時，它會執行這些陳述式，而與安裝任何內容套件無關。
 
 要建立重新指向語句，請遵循以下過程：
 
-1. 將OSGi配置添加 `org.apache.sling.jcr.repoinit.RepositoryInitializer` 到項目的配置資料夾中
+1. 將工廠PID的OSGi配置 `org.apache.sling.jcr.repoinit.RepositoryInitializer` 添加到項目的配置資料夾中。 請為組態使用描述性名稱， **例如org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**。
 1. 將重新指向語句添加到配置的指令碼屬性中。 語法和選項會記錄在 [Sling檔案中](https://sling.apache.org/documentation/bundles/repository-initialization.html)。 請注意，在父資料夾的子資料夾之前應明確建立父資料夾。 例如，在之前、之 `/content` 前明 `/content/myfolder`確建立 `/content/myfolder/mysubfolder`。 對於在低級結構上設定的ACL，建議將其設定在更高級別上，並使用限 `rep:glob` 制。  For example `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. 在執行時期在本機開發環境上驗證。
 
