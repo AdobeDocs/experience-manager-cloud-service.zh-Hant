@@ -96,8 +96,7 @@ ht-degree: 0%
 
    1. 範本名稱必須以下列項目開頭：
       `experience-fragments`
-這可讓使用者在/content/experience-fragments中建立體驗片段， 
-`cq:allowedTemplates` 屬性包含名稱以開頭的所有模板 `experience-fragment`客戶可以更新此屬性以包含其自己的命名方案或範本位置。
+這可讓使用者在/content/experience-fragments中建立體驗片段，因為此資料夾的屬 `cq:allowedTemplates` 性包含名稱以開頭的所有範本 `experience-fragment`。 客戶可以更新此屬性以包含其自己的命名方案或範本位置。
 
 1. [允許的範本](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) ，可在「體驗片段」主控台中設定。
 
@@ -166,7 +165,6 @@ Link Externalizer可用來判斷建立Target選件的HTML版本時所需的正�
    2. `href` 屬性
    3. `*-src` 屬性（如data-src、custom-src等）
    4. `*-href` 屬性( `data-href`如 `custom-href`、 `img-href`等)
-
    >[!NOTE]
    >
    >在大多數情況下，HTML中的內部連結是相對連結，但是當自訂元件在HTML中提供完整的URL時，可能會有此情況。 依預設，AEM會忽略這些羽翼豐滿的URL，且不會進行任何修改。
@@ -290,8 +288,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 作為輸入，方法接收以下參數：
 
 * `link`
-The 
-`String` 表示目前正在處理的連結。 這通常是指向作者實例上資源的相對URL。
+目 `String` 前正在處理的連結的表示法。 這通常是指向作者實例上資源的相對URL。
 
 * `tag`
 目前正在處理的HTML元素名稱。
