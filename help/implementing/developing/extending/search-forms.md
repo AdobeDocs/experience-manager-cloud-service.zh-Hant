@@ -548,8 +548,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **選項節點路徑**&#x200B;與 
-**Options Path**, only this is in the common predicate field, the other is specific for assets.
+* **Options node path**（選項節點路徑）與 **** Options Path（選項路徑）有效相同，僅此欄位位於公用謂語欄位中，而另一個欄位則特定於資產。
 
 * **單選選**&#x200B;項如果選中，選項將顯示為僅允許單選項的複選框。 如果錯誤選取，則可取消選取核取方塊。
 
@@ -653,7 +652,6 @@ Dependent on the predicate a selection of settings are available for configurati
 
    * `jcr:title` -要在搜索邊欄中顯示的欄位標籤
    * `value` -要搜索的屬性值
-
    ![謂詞定義](assets/csf-options-predicate-01.png)
 
    >[!NOTE]
