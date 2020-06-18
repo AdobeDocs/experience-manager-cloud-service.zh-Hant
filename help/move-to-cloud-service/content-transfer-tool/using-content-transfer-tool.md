@@ -2,7 +2,7 @@
 title: 使用內容傳輸工具
 description: 使用內容傳輸工具
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 1%
@@ -36,6 +36,8 @@ ht-degree: 1%
 >從軟體散發入口網站下載內 [容傳輸](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 工具。
 
 ## 執行內容傳輸工具 {#running-tool}
+
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 請依照本節內容，瞭解如何使用內容傳輸工具將內容移轉至AEM做為雲端服務（作者／發佈）:
 
