@@ -2,9 +2,9 @@
 title: 內容傳輸工具概觀
 description: 內容傳輸工具概觀
 translation-type: tm+mt
-source-git-commit: bb5cedab9bb3f7413d323e21bb6112364a38b2bb
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 請依照以下章節瞭解使用內容傳輸工具的准則和最佳實務：
 
-* 建議先對儲存庫執行壓縮、資料儲存一致性檢查，以發現潛在問題並減少儲存庫中存在的垃圾。
+* 建議在源儲存庫上 [運行「修訂清理](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) 」和 [](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)**** 「資料儲存一致性檢查」，以發現潛在問題並減少儲存庫的大小。
 
 * 如果AEM Cloud作者內容傳送網路(CDN)設定已設定為擁有IP的白名單，則應確保來源環境IP也新增至allowlist，如此來源環境與AEM Cloud環境就可以彼此通訊。
 
