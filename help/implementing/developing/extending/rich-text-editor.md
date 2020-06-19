@@ -3,9 +3,9 @@ title: 設定Rich Text Editor，將Adobe Experience Manager中的內容製作為
 description: 設定Rich Text Editor，將Adobe Experience Manager中的內容製作為雲端服務。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
+source-git-commit: ba7209cbb78a112b85e4d28cdc30d40ae9083c66
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
-富格文本編輯器(RTE)為作者提供了多種編輯文本內容的功能。 提供圖示、選擇方塊、工具列和選單，以提供WYSIWYG文字編輯體驗。 管理員將RTE配置為啟用、禁用和擴展編寫元件中可用的功能。 要瞭解如何使用RTE功能進行編寫，請參 [閱Use Rich Text Editor for authoring](rich-text-editor.md)。 瞭解作者如 [何使用RTE來編寫](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) Web內容。
+富格文本編輯器(RTE)為作者提供了多種編輯文本內容的功能。 提供圖示、選擇方塊、工具列和選單，以提供WYSIWYG文字編輯體驗。 管理員將RTE配置為啟用、禁用和擴展編寫元件中可用的功能。 瞭解作者如 [何使用RTE來編寫](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) Web內容。
 
 下面列出了配置RTE的概念和所需步驟。
 
@@ -131,6 +131,7 @@ RTE的基本功能是由相應插件專用節點上 `features` 的屬性值激�
 >* **名稱**: `configPath`
 >* **類型**: `String`
 >* **值**: 包含實際配置的節點的路徑
+
 >
 >
 不要將RTE配置節點命名為 `config`。 否則，RTE配置只對管理員有效，對組中的用戶無效 `content-author`。
@@ -164,6 +165,7 @@ RTE功能可透過一系列外掛程式提供，每個外掛程式都包含featu
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 若要建立您自己的文字元件，請複製上述元件，而非編輯這些元件。
