@@ -1,16 +1,16 @@
 ---
-title: 視訊設定檔
+title: Dynamic Media 影片設定檔
 description: 動態媒體已隨附預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 您也可以將智慧裁切新增至影片。
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '3678'
-ht-degree: 19%
+source-wordcount: '3682'
+ht-degree: 16%
 
 ---
 
 
-# Video profiles{#video-profiles}
+# Dynamic Media 影片設定檔{#video-profiles}
 
 動態媒體已隨附預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 當您使用「最適化視訊編碼」設定檔來編碼主要來源視訊時，視訊播放器會在播放期間根據客戶的網際網路連線速度自動調整視訊串流的品質。 這稱為可調式串流。
 
@@ -38,7 +38,7 @@ ht-degree: 19%
 
 要定義其他資產類型的高級處理參數，請參 [閱配置資產處理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)。
 
-另請參閱 [處理中繼資料、影像和視訊的設定檔](/help/assets/dynamic-media/processing-profiles.md)。
+另請參閱 [處理中繼資料、影像和視訊的設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)。
 
 ## 最適化視訊編碼預設集 {#adaptive-video-encoding-presets}
 
@@ -113,15 +113,15 @@ ht-degree: 19%
 
 ![使用智慧裁切編輯視訊編碼設定檔](assets/edit-smart-crop-video2.png)
 
-請注意，您可以使用使用者介面中「智慧型裁切比例」最右側的滑桿，將視訊描述檔中的視訊智慧型裁切切換為開啟或關閉 **** 。
+Note that you can toggle video smart crop in the Video Profile to either on or off using the slider to the far right of **[!UICONTROL Smart Crop Ratio]** in the user interface.
 
-建立並儲存視訊描述檔後，您可以將它套用至所需的資料夾。
+在您建立並儲存視訊描述檔後，您可以將它套用至所需的資料夾。
 
 請參 [閱將視訊描述檔套用至特定資料夾](#applying-video-profiles-to-specific-folders) ，或 [全域套用視訊描述檔](#applying-a-video-profile-globally)。
 
 另請參閱 [智慧型影像裁切](image-profiles.md)。
 
-## 建立視訊描述檔以進行最適化串流 {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## 建立視訊設定檔以進行最適化串流 {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 動態媒體已隨附預先定義的最適化視訊編碼設定檔- MP4 H.264的視訊上傳設定群組——已最佳化，以提供最佳的檢視體驗。 您可以在上傳影片時使用此設定檔。
 
@@ -140,7 +140,7 @@ ht-degree: 19%
 * H264 設定檔
 * 音訊取樣速率
 
-如果值不相同，則可以繼續按原樣建立配置檔案。 不過，請注意，不可能進行自適應串流。 使用者將可體驗單位元速率串流。 建議您編輯編碼設定，以便在描述檔中的個別編碼預設集間使用相同的值。 （請注意，如果已啟用「最適化串流編碼」，視訊設定檔／預設集編輯器應強制同等使用最適化視訊編碼設定。）
+如果值不相同，則可以繼續按原樣建立配置檔案。 不過，請注意，不可能進行自適應串流。 使用者將可體驗單位元速率串流。 建議您編輯編碼設定，以便在描述檔中的個別編碼預設集間使用相同的值。 （請注意，如果已啟用「最適化串流編碼」,「視訊設定檔／預設集」編輯器應強制使用最適化視訊編碼設定的奇偶校驗。）
 
 另請參閱 [建立漸進式串流的視訊編碼設定檔](#creating-a-video-encoding-profile-for-progressive-streaming)。
 
@@ -148,7 +148,7 @@ ht-degree: 19%
 
 要定義其他資產類型的高級處理參數，請參 [閱配置資產處理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)。
 
-**若要建立視訊描述檔以進行最適化串流**,
+**若要建立視訊設定檔以進行最適化串流**,
 
 1. 點選AEM標誌並導覽至「工 **[!UICONTROL 具]** > **[!UICONTROL 資產]** >視 **[!UICONTROL 訊設定檔]**」。
 1. 按一下或點選「 **[!UICONTROL 建立]** 」以新增視訊設定檔。
@@ -334,9 +334,9 @@ To help you visualize the size of the video, tap the Height&#39;s information ic
 1. 在「視訊描述檔」頁面上，勾選一個視訊描述檔名稱。
 1. 在工具列上，點選「 **[!UICONTROL 複製」]**。
 1. 在「視訊編碼描述檔」頁面上，輸入描述檔的新名稱。
-1. 最佳實務是，請確定已選取「 **[!UICONTROL 最適化串流編碼]** 」核取方塊。點選資訊圖示以取得最適化串流的說明。 (如果您要複製漸進式視訊設定檔，請勿選取核取方塊。) 
+1. 最佳實務是，請確定已選取「 **[!UICONTROL 最適化串流編碼]** 」核取方塊。點選資訊圖示以取得最適化串流的說明。（如果您要複製漸進式視訊設定檔，請勿選取核取方塊。）
 
-   在「動態媒體——混合」模式中，如果WebM視訊預設集是視訊設定檔的一部分，則無法進行「 **[!UICONTROL Encode for adaptive streaming]** 」，因為所有預設集都必須是MP4。
+   在動態媒體——混合模式中，如果WebM視訊預設集是視訊描述檔的一部分，則無法進行 **[!UICONTROL Encode for adaptive streaming]** ，因為所有預設集都必須是MP4。
 1. 在「視訊編碼預設集」標題下，新增、編輯或刪除構成描述檔的視訊編碼預設集。
 
    點選「基本」和「進階」標籤上每個選項旁的資訊圖示，以取得建議的設定和說明。
@@ -350,11 +350,11 @@ To help you visualize the size of the video, tap the Height&#39;s information ic
 1. 在工具列上，點選「 **[!UICONTROL 刪除」]**。
 1. 點選「 **[!UICONTROL 確定]**」。
 
-## 將視訊描述檔套用至資料夾 {#applying-a-video-profile-to-folders}
+## 將視訊描述檔套用至檔案夾 {#applying-a-video-profile-to-folders}
 
 將視訊描述檔指派給檔案夾時，任何子檔案夾都會自動從其父檔案夾繼承描述檔。 這表示您只能將一個視訊描述檔指派給資料夾。 因此，請仔細考慮您上傳、儲存、使用和封存資產的檔案夾結構。
 
-如果您指派不同的視訊描述檔給資料夾，新的描述檔會覆寫先前的描述檔。 舊有的資料夾資產仍維持不變。 新的描述檔會套用至稍後新增至資料夾的資產。
+如果您將不同的視訊描述檔指派給資料夾，新的描述檔會覆寫先前的描述檔。 舊有的資料夾資產仍維持不變。 新的描述檔會套用至稍後新增至資料夾的資產。
 
 在用戶介面中，配置有配置檔案的資料夾將通過卡名稱中顯示的配置檔案名稱來指示。
 
@@ -362,15 +362,15 @@ To help you visualize the size of the video, tap the Height&#39;s information ic
 
 您可以將視訊描述檔套用至特定資料夾，或全域套用至所有資產。
 
-您可以重新處理已有現有視訊設定檔的資料夾中的資產，您稍後會加以變更。 請參 [閱重新處理資料夾中的資產](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets)。
+您可以重新處理已有視訊設定檔且稍後變更的資料夾中的資產。 請參 [閱重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
 ### 將視訊描述檔套用至特定資料夾 {#applying-video-profiles-to-specific-folders}
 
-您可以從「工具」菜單或在資料夾中從「屬性」將視頻配置檔案應 **[!UICONTROL 用到資料夾]******。本節說明如何以兩種方式將視訊描述檔套用至資料夾。
+You can apply a Video Profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Properties]**. 本節將說明如何以兩種方式將視訊描述檔套用至資料夾。
 
 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
-另請參閱 [編輯資料夾的處理設定檔後重新處理資產](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets)。
+另請參閱 [編輯資料夾的處理設定檔後重新處理資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
 #### 透過描述檔使用者介面，將視訊描述檔套用至資料夾 {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
@@ -378,7 +378,7 @@ To help you visualize the size of the video, tap the Height&#39;s information ic
 1. 選擇要應用於資料夾或多個資料夾的視頻配置檔案。
 1. 點選 **[!UICONTROL 「將描述檔套用至檔案夾」]** ，然後選取您要用來接收新上傳資產的檔案夾或多個檔案夾，並點選「套 **[!UICONTROL 用」]**。在「卡片檢視」中，資料夾名稱正下方會顯示資料夾名稱，以指出已指派給資料夾的 **[!UICONTROL 資料夾]**。您可以 [監控視訊描述檔處理工作的進度](#monitoring-the-progress-of-an-encoding-job)。
 
-#### 從「屬性」將視訊描述檔套用至資料夾 {#applying-video-profiles-to-folders-from-properties}
+#### 將視訊描述檔套用至屬性中的資料夾 {#applying-video-profiles-to-folders-from-properties}
 
 1. 點選或按一下AEM標誌，並導覽至 **[!UICONTROL Assets]** ，然後導覽至您要套用視訊描述檔的檔案夾。
 1. 在資料夾上，點選核取標籤以選取它，然後點選「 **[!UICONTROL 屬性]**」。
@@ -390,7 +390,7 @@ To help you visualize the size of the video, tap the Height&#39;s information ic
 
 除了將描述檔套用至檔案夾外，您也可以全域套用一個，如此任何檔案夾中上傳至AEM資產的內容都會套用選取的描述檔。
 
-另請參閱 [重新處理資料夾中的資產](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets)。
+另請參閱 [重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
 **若要全域套用視訊設定檔**,
 
@@ -401,15 +401,15 @@ To help you visualize the size of the video, tap the Height&#39;s information ic
 
 ## 監控視訊描述檔處理工作的進度 {#monitoring-the-progress-of-an-encoding-job}
 
-顯示處理指示器（或進度列），以便您能夠直觀地監視視頻配置檔案處理作業的進度。
+會顯示處理指示器（或進度列），以便您能夠以視覺方式監控視頻配置檔案處理作業的進度。
 
 您也可以檢視檔 `error.log` 案，以監控編碼工作的進度、查看編碼是否完成，或查看任何工作錯誤。 您 `error.log` 可在安裝AEM `logs` 實例的資料夾中找到。
 
-## 從資料夾移除視訊描述檔 {#removing-a-video-profile-from-folders}
+## 從資料夾中刪除視頻配置檔案 {#removing-a-video-profile-from-folders}
 
-從資料夾中刪除視頻配置檔案時，任何子資料夾都會自動繼承從其父資料夾中刪除的配置檔案。 不過，對檔案夾中發生的檔案處理仍維持不變。
+從資料夾中刪除視頻配置檔案時，任何子資料夾都會自動繼承從其父資料夾中刪除該配置檔案。 不過，對檔案夾中發生的檔案處理仍維持不變。
 
-您可以從「工具」功能表內的資料夾或在資料夾內的「資料夾設定」中移除視訊描述檔 ********。本節說明如何以兩種方式從資料夾移除視訊描述檔。
+You can remove a Video Profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings]**. 本節將說明如何以兩種方式從資料夾移除視訊描述檔。
 
 ### 透過描述檔使用者介面，從資料夾移除視訊描述檔 {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
@@ -419,9 +419,9 @@ To help you visualize the size of the video, tap the Height&#39;s information ic
 
    您可以確認視訊描述檔不再套用至資料夾，因為檔案夾名稱下方不會再顯示該名稱。
 
-### 透過「屬性」從資料夾移除視訊描述檔 {#removing-video-profiles-from-folders-by-way-of-properties}
+### 通過「屬性」從資料夾中刪除視頻配置檔案 {#removing-video-profiles-from-folders-by-way-of-properties}
 
-1. 點選或按一下AEM標誌，並導覽至 **[!UICONTROL Assets]** ，然後導覽至您要從中移除視訊描述檔的檔案夾。
+1. 點選或按一下AEM標誌，並導覽至「 **[!UICONTROL Assets]** 」，然後導覽至您要從中移除視訊設定檔的檔案夾。
 1. 在資料夾上點選或按一下核取標籤以選取它，然後點選或按一下「 **屬性」**。
 1. 選擇「 **[!UICONTROL 視訊描述檔]** 」標籤，並從下拉式選單中選 **[!UICONTROL 取「無]** 」，然後按一下「 **[!UICONTROL 儲存並關閉」]**。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
