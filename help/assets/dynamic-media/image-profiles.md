@@ -1,11 +1,11 @@
 ---
 title: Dynamic Media 影像設定檔
-description: 建立包含非銳利遮色片和智慧型裁切或智慧型色票（或兩者）的設定的影像描述檔，然後將描述檔套用至影像資產的資料夾。
+description: 建立包含非銳利遮色片和智慧型裁切或智慧型色票（或兩者）的設定的動態媒體影像描述檔，然後將描述檔套用至影像資產的資料夾。
 translation-type: tm+mt
-source-git-commit: 59dacf83fd3df03bf9cc62d7816b8b7d7ee5ab9b
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '2736'
-ht-degree: 12%
+source-wordcount: '2739'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 12%
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-智慧型裁切座標視長寬比而定。 也就是說，對於影像描述檔中的各種智慧型裁切設定，如果影像描述檔中新增尺寸的長寬比相同，則會傳送相同的長寬比給動態媒體。 因此，Adobe建議您使用相同的裁切區域。 這麼做可確保不會影響影像描述檔中使用的不同尺寸。
+智慧型裁切座標視長寬比而定。 也就是說，對於影像描述檔中的各種智慧型裁切設定，如果影像描述檔中新增尺寸的長寬比相同，則會傳送相同的長寬比給動態媒體。 因此，Adobe建議您使用相同的裁切區域。 這樣做將確保對「影像描述檔」中使用的不同尺寸沒有影響。
 
 請注意，您建立的每個智慧型裁切產生都需要額外的處理。 例如，新增超過5種智慧型裁切外觀比例會導致資產擷取速度變慢。 它還可能增加系統的負載。 由於您可以在資料夾層級套用「智慧裁切」,Adobe建議您僅在需要智慧裁切的 *資料夾* 上使用它。
 
@@ -99,7 +99,7 @@ ht-degree: 12%
 
 要定義其他資產類型的高級處理參數，請參 [閱配置資產處理](config-dm.md#configuring-asset-processing)。
 
-請參閱 [處理中繼資料、影像和視訊的設定檔](/help/assets/dynamic-media/processing-profiles.md)。
+請參閱 [關於動態媒體影像描述檔和視訊描述檔](/help/assets/dynamic-media/about-image-video-profiles.md)。
 
 另請參閱 [組織數位資產以使用處理設定檔的最佳實務](/help/assets/dynamic-media/best-practices-for-file-management.md)。
 
@@ -126,38 +126,38 @@ ht-degree: 12%
 
 1. 如果編輯，請儲存變更。 如果刪除，請確認您要移除描述檔。
 
-## 將動態媒體影像描述檔套用至檔案夾 {#applying-an-image-profile-to-folders}
+## 將動態媒體影像描述檔套用至資料夾 {#applying-an-image-profile-to-folders}
 
-將映像配置檔案分配給資料夾時，任何子資料夾都會自動從其父資料夾繼承該配置檔案。 這表示您只能將一個影像描述檔指派給資料夾。 因此，請仔細考慮您上傳、儲存、使用和封存資產的檔案夾結構。
+將映像配置檔案分配給資料夾時，任何子資料夾都會自動從其父資料夾繼承配置檔案。 這表示您只能將一個影像描述檔指派給資料夾。 因此，請仔細考慮您上傳、儲存、使用和封存資產的檔案夾結構。
 
 如果您將不同的影像描述檔指派給資料夾，新的描述檔會覆寫先前的描述檔。 舊有的資料夾資產仍維持不變。 新的描述檔會套用至稍後新增至資料夾的資產。
 
 在用戶介面中，會以卡中顯示的配置檔案名稱來指示已為其分配配置檔案的資料夾。
 
-<!-- When you add smart crop to an existing image profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
+<!-- When you add smart crop to an existing Image Profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
 
 您可以將影像描述檔套用至特定資料夾，或全域套用至所有資產。
 
-您可以重新處理已有現有影像設定檔的資料夾中的資產，而您稍後會加以變更。 請參 [閱編輯資料夾的處理設定檔後，重新處理資產](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets)。
+您可以重新處理已有現有影像描述檔的資料夾中的資產，而您稍後會變更該資料夾。 請參 [閱編輯資料夾的處理設定檔後，重新處理資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
 ### 將動態媒體影像描述檔套用至特定資料夾 {#applying-image-profiles-to-specific-folders}
 
-您可以從「工具」菜單或在資料夾內的「屬性」中將影像配置檔案應 **[!UICONTROL 用到資料夾]******。本節將說明如何以兩種方式將映像配置檔案應用於資料夾。
+You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. 本節將說明如何以兩種方式將映像配置檔案應用於資料夾。
 
 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
-您可以重新處理已有現有視訊設定檔的資料夾中的資產，您稍後會加以變更。 請參 [閱編輯資料夾的處理設定檔後，重新處理資產](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets)。
+您可以重新處理已有現有視訊設定檔的資料夾中的資產，您稍後會加以變更。 請參 [閱編輯資料夾的處理設定檔後，重新處理資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
-#### 將動態媒體影像描述檔從描述檔使用者介面套用至檔案夾 {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### 將動態媒體影像描述檔套用至描述檔使用者介面中的資料夾 {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
-1. 選擇要應用於資料夾或多個資料夾的影像配置檔案。
+1. 選擇要應用於資料夾或多個資料夾的映像配置檔案。
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
 1. Tap **[!UICONTROL Apply Processing Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap/click **[!UICONTROL Apply]**. 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
-#### 將動態媒體影像描述檔從屬性套用至資料夾 {#applying-image-profiles-to-folders-from-properties}
+#### 將動態媒體影像描述檔套用至屬性中的資料夾 {#applying-image-profiles-to-folders-from-properties}
 
 1. 點選AEM標誌並導覽至 **[!UICONTROL Assets]** ，然後導覽至您要套用影像描述檔的檔案夾。
 1. 在資料夾上，點選核取標籤以選取它，然後點選「 **[!UICONTROL 屬性]**」。
@@ -169,7 +169,7 @@ ht-degree: 12%
 
 除了將描述檔套用至檔案夾外，您也可以全域套用一個，如此任何檔案夾中上傳至AEM資產的內容都會套用選取的描述檔。
 
-您可以重新處理已有現有視訊設定檔的資料夾中的資產，您稍後會加以變更。 請參 [閱編輯資料夾的處理設定檔後，重新處理資產](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets)。
+您可以重新處理已有現有視訊設定檔的資料夾中的資產，您稍後會加以變更。 請參 [閱編輯資料夾的處理設定檔後，重新處理資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
 **若要全域套用動態媒體影像設定檔**:
 
@@ -214,7 +214,7 @@ ht-degree: 12%
 
 ## 編輯多個影像的智慧裁切或智慧色票 {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
-將包含「智慧裁切」的影像配置檔案應用到資料夾後，該資料夾中的所有影像都將對其應用裁切。 視需要，您可以手動 *重新對齊* ，或調整多個影像中智慧型裁切視窗的大小，以進一步調整其焦點。
+將包含智慧裁切的映像配置檔案應用到資料夾後，該資料夾中的所有映像都將對其應用裁切。 視需要，您可以手動 *重新對齊* ，或調整多個影像中智慧型裁切視窗的大小，以進一步調整其焦點。
 
 編輯智慧型裁切並儲存後，變更會傳播至您使用特定影像裁切的任何地方。
 
@@ -222,7 +222,7 @@ ht-degree: 12%
 
 **若要編輯多張影像的智慧裁切或智慧色票**:
 
-1. 點選AEM標誌並導覽至 **[!UICONTROL Assets]**，然後導覽至套用智慧裁切或智慧色票影像描述檔的檔案夾。
+1. 點選AEM標誌並導覽至 **[!UICONTROL Assets]**，然後導覽至套用智慧裁切或智慧色票影像描述檔的資料夾。
 1. 在資料夾上，點選「 **[!UICONTROL 更多動作]** (...)」圖示，然後點選「智 **[!UICONTROL 慧裁切」]**。
 
 1. 在「編 **[!UICONTROL 輯智慧裁切]** 」頁上，執行下列任一操作：
@@ -243,14 +243,12 @@ ht-degree: 12%
 
       * 如果影像只有智慧型裁切或智慧型色票，請在影像上拖曳裁切方塊的角部控點，以調整裁切的可檢視區域大小。
       * 如果影像同時具有智慧型裁切和智慧型色票，請在影像上拖曳裁切方塊的角部控點，以調整裁切的可檢視區域大小。 或者，點選或按一下影像下方的智慧型色票（色票是靜態的），然後拖曳裁切方塊的角部控點以調整色票的可檢視區域大小。
-
       ![調整影像的智慧裁切大小。](assets/edit_smart_crops-resize.png)
 
    * 移動智慧型裁切方塊。 執行下列任一項作業：
 
       * 如果影像只有智慧型裁切或智慧型色票，請在影像上拖曳裁切方塊至新位置。
       * 如果影像同時具有智慧型裁切和智慧型色票，請將智慧型裁切方塊拖曳至新位置。 或者，點選或按一下影像下方的智慧型色票（色票為靜態），然後將智慧型色票裁切方塊拖曳至新位置。
-
       ![edit_smart_crobs-move](assets/edit_smart_crops-move.png)
 
    * 還原您的所有編輯，並還原原始智慧型裁切或智慧型色票（僅適用於目前的編輯工作階段）。
@@ -265,17 +263,17 @@ ht-degree: 12%
 
 ## 從資料夾中刪除映像配置檔案 {#removing-an-image-profile-from-folders}
 
-從資料夾中刪除影像配置檔案時，任何子資料夾都會自動繼承從其父資料夾中刪除該配置檔案。 不過，對檔案夾中發生的檔案處理仍維持不變。
+從資料夾中刪除映像配置檔案時，任何子資料夾都會自動繼承從其父資料夾中刪除該配置檔案。 不過，對檔案夾中發生的檔案處理仍維持不變。
 
-您可以從「工具」功能表內的資料夾中移除影像配置檔案，或者如果您位於資料夾中，則可以從「屬性」( **[!UICONTROL Properties)中移除影像配置檔案]******。本節將說明如何以兩種方式從資料夾中刪除映像配置檔案。
+You can remove an Image Profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. 本節介紹如何以兩種方式從資料夾中刪除映像配置檔案。
 
-### 透過描述檔使用者介面從資料夾移除動態媒體影像描述檔 {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### 通過配置式用戶介面從資料夾中刪除動態媒體映像配置檔案 {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. 選擇要從資料夾或多個資料夾中刪除的映像配置檔案。
 1. 點選 **[!UICONTROL 「從資料夾移除處理描述檔」]** ，然後選取您要用來從中移除描述檔的資料夾或多個資料夾，並點選「 **[!UICONTROL 移除」]**。
 
-   您可以確認影像描述檔不再套用至資料夾，因為檔案夾名稱下方不會再顯示該名稱。
+   您可以確認「影像描述檔」不再套用至資料夾，因為檔案夾名稱下方不會再顯示該名稱。
 
 ### 通過屬性從資料夾中刪除動態媒體映像配置檔案 {#removing-image-profiles-from-folders-via-properties}
 
