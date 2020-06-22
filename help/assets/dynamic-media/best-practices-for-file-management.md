@@ -1,22 +1,22 @@
 ---
-title: 組織數位資產以使用設定檔的最佳實務
-description: 命名、組織、管理數位資產檔案中繼資料的秘訣與最佳實務。
+title: 組織數位資產以使用動態媒體影像描述檔或視訊描述檔的最佳實務
+description: 命名、組織和管理動態媒體影像和視訊資產檔案的秘訣與最佳實務。
 translation-type: tm+mt
-source-git-commit: 78e3f5f0324383578c8f4f91f7d07a2bd12f01d4
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 
-# 組織數位資產以使用個人檔案的最佳實務 {#best-practices-for-organizing-your-digital-assets-for-using-profiles}
+# 組織數位資產以使用影像描述檔或視訊描述檔的最佳實務{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-在AEM Assets中使用描述檔的重要概念是，這些描述檔會指派給檔案夾。 描述檔中包含中繼資料描述檔的設定，以及視訊描述檔或影像描述檔。 這些設定將處理資料夾的內容及其任何子資料夾。 因此，如何命名檔案和檔案夾、如何排列子檔案夾，以及如何處理這些檔案夾中的檔案，都會對描述檔處理這些資產的方式產生重大影響。
+使用「動態媒體影像描述檔」或「視訊描述檔」的重要概念，是指派給資料夾。 描述檔中是影像或視訊的設定。 這些設定將處理資料夾的內容及其任何子資料夾。 因此，如何命名檔案和檔案夾、如何排列子檔案夾，以及如何處理這些檔案夾中的檔案，都會對描述檔處理這些資產的方式產生重大影響。
 
 透過使用一致且適當的檔案和檔案夾命名策略，以及良好的中繼資料實務，您可以充份運用您的數位資產收集，並確保正確的檔案由正確的描述檔處理。
 
-請參閱 [處理視訊、中繼資料和影像的設定檔](processing-profiles.md)。
+請參 [閱關於動態媒體影像描述檔和視訊描述檔](about-image-video-profiles.md)。
 
 以下是組織數位資產檔案的最佳實務秘訣。
 
