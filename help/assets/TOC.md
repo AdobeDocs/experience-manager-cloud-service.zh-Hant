@@ -2,7 +2,7 @@
 sub-product: AEM Assets 雲端服務
 user-guide-title: AEM Assets 雲端服務
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 98%
@@ -44,7 +44,7 @@ ht-degree: 98%
 + 設定、管理及擴充 Assets {#admin}
    + [API 和參考資料](developer-reference-material-apis.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
-   + [處理設定檔](/help/assets/dynamic-media/processing-profiles.md)
+   + [處理設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [設定智慧標籤](smart-tags-configuration.md)
    + [多語言資產和資產翻譯](translate-assets.md)
    + [搜尋 Facet](search-facets.md)
