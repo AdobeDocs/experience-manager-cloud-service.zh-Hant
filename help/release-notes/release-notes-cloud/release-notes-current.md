@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 雲端服務 2020.6.0 版發行說明
 description: Experience Manager 2020.6.0 版發行說明
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: fcae90c8e24dbd2994e8700daf22f5dff039b299
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1942'
 ht-degree: 5%
 
 ---
@@ -109,16 +109,16 @@ AEM a Cloud Service SDK API Jar（先前代管於該位置）現在位於Maven C
 
 增強的智慧型標籤可讓組織訓練智慧型標籤模型，以除一般智慧型標籤外，還能根據客戶特定的商業標籤識別影像。
 
-在此版本中，提供全新的引導式使用者體驗，可協助針對客戶特定標籤集設定智慧標籤訓練，並訓練他們使用資產，這些資產應該在日後加以辨識和標籤。 這是更直覺的體驗。
+在此版本中，提供全新的引導式使用者體驗，可協助針對客戶特定標籤集設定智慧標籤訓練，並訓練他們使用資產，這些資產應該在日後加以辨識和標籤。 現在體驗更直覺。
 訓練增強的智慧型標籤，以更直覺式的智慧型標籤訓練。 了 [解如何新增智慧標籤至資產](/help/assets/smart-tags.md) , [以及設定智慧標籤](/help/assets/smart-tags-configuration.md)。
 
 **支援擷取、預覽和傳送3D內容**
 
-組織現在可以在AEM Assets中儲存和使用3D檔案。 使用者可以上傳、預覽和運用多種核心3D檔案，包括。obj、.stl、.gltf和。glb檔案。 此外，您還 [!DNL Dynamic Media]可以設定3D體驗，並透過不可知的URL或檢視器提供。 這包括 [!DNL Dynamic Media] 3D Experience Viewer、Sites 3D Viewer元件，以及透過(AR/VR)傳送3D [!DNL Dynamic Media] 檔案的功能。 請參 [閱在動態媒體中使用3D資產](/help/assets/dynamic-media/assets-3d.md)。
+組織現在可以在AEM Assets中儲存和使用3D檔案。 使用者可上傳、預覽和使用各種核心3D檔案，包括OBJ、STL、GLTF和GLB檔案。 此外，您還 [!DNL Dynamic Media]可以使用不可知的URL或檢視器來設定和提供3D體驗。 這包括 [!DNL Dynamic Media] 3D Experience Viewer、Sites 3D Viewer元件，以及透過(AR/VR)傳送3D [!DNL Dynamic Media] 檔案的功能。 請參 [閱在動態媒體中使用3D資產](/help/assets/dynamic-media/assets-3d.md)。
 
 **Adobe XD的Adobe Asset Link支援**
 
-在最新版本中， [!DNL Experience Manager Assets] 支援隨v29.3 [!DNL Adobe Asset Link] 一起發行的新增 [!DNL Adobe XD] 外掛程式。 此整合可讓設計人員存取和使用設 [!DNL Experience Manager] 計中的資產，而不需離開應用 [!DNL Adobe XD] 程式。 請參 [閱Adobe XD檔案的Adobe資產連結](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)。
+在最新版本中， [!DNL Experience Manager Assets] 支援隨 [!DNL Adobe Asset Link] v29.3一起發行的 [!DNL Adobe XD] 新外掛程式。 此整合可讓設計人員存取和使用設 [!DNL Experience Manager] 計中的資產，而不需離開應用 [!DNL Adobe XD] 程式。 請參 [閱Adobe XD檔案的Adobe資產連結](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)。
 
 在此版本中，創意使用者和設計人員現在可以使用各種Creative Cloud案頭應用 [!DNL AEM Assets] 程式 [!DNL Adobe Asset Link] 中管理的資產，包括 [!DNL Adobe XD]、 [!DNL Photoshop]、 [!DNL Illustrator]和 [!DNL InDesign]。
 
@@ -128,17 +128,17 @@ AEM a Cloud Service SDK API Jar（先前代管於該位置）現在位於Maven C
 
 使用者介面元素適合螢幕閱讀器，可使用鍵盤存取，並具有更佳的對比度。 以下是增強功能的詳細清單：
 
-* 「管 [!UICONTROL 理出版物]」頁面上的「選項」、「範圍 [!UICONTROL 」和「工作流」] 進度指標不會被螢幕閱讀為進度指標。 螢幕閱讀程式的使用者會將這些狀態指示器視為標籤清單。 (CQ-4273015)
+* 「管 [!UICONTROL 理出版物]」頁上的「選項」、「範圍 [!UICONTROL 」和「工作流」] 進度條不會被螢幕閱讀為進度條。 螢幕閱讀程式的使用者會將這些狀態指示器視為標籤清單。 (CQ-4273015)
 
 * 在資產的「屬 [!UICONTROL 性] 」頁面中新增標籤時，使用者會導覽標籤的樹狀結構。 樹狀結構無法存取，因為螢幕閱讀器使用者在導覽時不會聽到任何聲音。 (CQ-4272964)
 
 * 在連結共用對話方塊中，在瀏覽模式中導覽時，螢幕閱讀程式
 
-   * 在載入對話方塊後，立即對表格資訊加以描述。
+   * 載入對話方塊時，立即旁白表格資訊。
    * 無法導覽至所有列出的自動建議。
-   * 不會為「新增電子郵件地址／搜尋」組合方 [!UICONTROL 塊的顯示自動建議] ，做出旁白。 (CQ-4294232)
+   * 不會對顯示的「新增電子郵件地址／搜尋」 [!UICONTROL 組合方塊自動建議] ，進行旁白。 (CQ-4294232)
 
-* 現在 [!UICONTROL 可存取中繼資料結構編輯器] (Metadata Schema Editor)頁面及其元素，並且螢幕閱讀器方便使用。 這些選項可使用鍵盤。 (CQ-4272953)使用者可以在NVDA瀏覽模式中使用鍵盤來拖曳元件。 (CQ-4296326)
+* 中繼 [!UICONTROL 資料結構編輯器頁面] ，及其元素現在可使用鍵盤存取，而且螢幕閱讀器方便使用。 (CQ-4272953)使用者可以在NVDA瀏覽模式中使用鍵盤來拖曳元件。 (CQ-4296326)
 
 * 在「資產」使用者介面上，檢視設定無法透過鍵盤存取。 (CQ-4289038)
 
@@ -146,17 +146,17 @@ AEM a Cloud Service SDK API Jar（先前代管於該位置）現在位於Maven C
 
 * 某些使用者介面元素的色彩和對比會更新，以便視覺有限的使用者或沒有色彩感知的使用者能夠區分這些使用者介面元素。 例如，資產的「屬性」( [!UICONTROL Properties)和卡片檢視中，「進階] 」( [!UICONTROL Advanced] )標籤的「評分」(Rating  )區段中星號分級圖示的顏色會因對比而變更。 (CQ-4295106)
 
-* 組合方塊的清單方塊快顯功能表（位於不同頁面上的各種欄位）現在會將項目顯示為螢幕閱讀程式可宣佈的選項清單。 (CQ-4294017)
+* 螢幕閱讀程式現在可以將組合方塊的清單方塊快顯功能表（在不同頁面的各欄位中）的項目，當成選項清單。 (CQ-4294017)
 
 * 若要將工作流程套用至資產， [!UICONTROL Timeline] （時間軸）中的Chevron箭頭可使用鍵盤來存取。 (CQ-4289268)
 
-* 使用者可以使用符號，在資產 [!UICONTROL 「屬性」頁面的「基本] 」標籤的「標籤 [!UICONTROL 」欄位中移除選]`x` 取的標籤。 螢幕閱讀程式現在已宣佈其用途，以及選取的標籤數(CQ-4273033)。
+* 使用者可以使用符號，在資產 [!UICONTROL 「屬性」頁面的「基本] 」標籤的「標籤 [!UICONTROL 」欄位中移除選]`x` 取的標籤。 螢幕閱讀程式現在會公佈所選標籤的用途和數目(CQ-4273033)。
 
 * 只讀表單欄位可以使用鍵盤來集中。 例如，資產「屬性」頁 [!UICONTROL 面上] 「基本」標籤上的停用 [!UICONTROL 欄位] 。 (CQ-4273031)
 
 * 立即使用鍵盤，存取左側資訊欄中篩選資產的選項。 (CQ-4273018)
 
-* 螢幕閱讀程式現在可正確宣佈各種組合方塊元素（例如「路徑」欄位）的用途，以及在資產的「屬性  」頁面的「基本」索引標籤中開啟「選取範圍」對話方塊的選項。 (CQ-4273016)
+* 螢幕閱讀程式會宣佈各種組合方塊元素的用途，例如「路徑」欄位，以及在資產的「屬性」頁面的「基本」索引標籤中開啟「選取範圍」對話 [!UICONTROL 方塊的選項] 。 (CQ-4273016)
 
 * 影片的音量控制可透過鍵盤存取。 (CQ-4272696)
 
@@ -164,7 +164,7 @@ AEM a Cloud Service SDK API Jar（先前代管於該位置）現在位於Maven C
 
 * 螢幕閱讀程式使用者現在可以知道使用鍵盤選取清單檢視中的列。 當指針懸停在行上時，會宣佈資訊。 (CQ-4271824)
 
-* 有些表單欄位（例如登入頁面上的使用者名稱和密碼欄位）會依賴預留位置值來提供可存取的標籤。 (CQ-4271716)
+* 有些表單欄位（例如登入頁面上的使用者名稱和密碼欄位）依賴預留位置值來提供可存取的標籤。 (CQ-4271716)
 
 * 互動式使用者介面元素，例如連結和選項，例如資產頁面或資料夾導覽的標題和縮放選項，現在可使用鍵盤存取。 (CQ-4271412)
 
@@ -191,7 +191,7 @@ Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/t
 
 * 對於MP3音樂檔案，DAM預覽中縮圖上顯示的播放按鈕無法運作。 (CQ-4294731)
 * 暫留指標在卡片檢視上，會使螢幕捲動（自動）集中在卡片中可用的快速動作。 (GRANITE-26895)
-* 在捲動大量搜尋結果後顯示太多影像會導致瀏覽器當機。 (GRANITE-26432)
+* 在捲動許多搜尋結果後顯示太多影像會導致瀏覽器當機。 (GRANITE-26432)
 * 下載資產時，如果選取了電子郵件選項，而且即使已提供有效的電子郵件ID，也無法使用下載選項。 (CQ-4296535)
 * 儲存為智慧型系列的自訂篩選器無法正確套用至資產。 (CQ-4294942)
 * 多項搜尋和索引增強功能和錯誤修正可改善效能。 (CQ-4286373)
