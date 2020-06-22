@@ -2,9 +2,9 @@
 title: 變化 - 編寫片段內容
 description: 變數可讓您為片段製作內容，然後根據用途建立該內容的變數（如有需要）。
 translation-type: tm+mt
-source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1686'
 ht-degree: 16%
 
 ---
@@ -50,12 +50,6 @@ ht-degree: 16%
    * 存取一系列動 [作](#actions)
 
 例如：
-
-* 編輯簡單片段
-
-   簡單片段包含一個多行文字欄位（可從全螢幕編輯器新增視覺資產）。
-
-   ![簡單片段](assets/cfm-variations-01.png)
 
 * 使用結構化內容編輯片段
 
@@ -210,6 +204,7 @@ ht-degree: 16%
    * 任何要刪除的句子都會以紅色強調顯示，並加上刪除。
    * 按一下任何反白顯示的句子，將它保留在摘要內容中。
    * 按一下任何未反白顯示的句子，即可將其刪除。
+
    ![總結比較](assets/cfm-variations-06.png)
 
 6. 選擇 **摘要** ，確認更改。
@@ -267,6 +262,7 @@ ht-degree: 16%
 
    * 導覽至DAM中的必要資產
    * 在DAM中搜尋資產
+
    找到後，按一下縮圖以選取所需的資產。
 
 4. 使用 **「選取** 」將資產新增至目前位置之內容片段的段落系統。
@@ -355,6 +351,7 @@ ht-degree: 16%
    * 綠色表示已新增（至變數）的內容
    * 紅色表示內容已移除（從變數中）
    * 藍色表示已取代的文字
+
    ![與主版同步](assets/cfm-variations-11.png)
 
 1. 選擇「 **同步**」(Synchronize)，將更新並顯示變化。
