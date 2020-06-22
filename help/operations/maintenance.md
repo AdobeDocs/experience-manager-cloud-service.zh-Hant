@@ -2,7 +2,7 @@
 title: AEM中的Maintenance Tasks as a Cloud Service
 description: 'AEM中的Maintenance Tasks as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+source-git-commit: e9ee1064c5fa62b56c822a18ad6ca8cc4d09fa75
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 2%
@@ -35,9 +35,9 @@ ht-degree: 2%
 | 版本清除 | Adobe | Adobe完全擁有，但客戶日後將可設定特定參數。 |
 | 審核日誌清除 | Adobe | Adobe完全擁有，但客戶日後將可設定特定參數。 |
 | Lucene 二進位清理 | Adobe | 未使用，因此Adobe已停用。 |
-| 臨機任務清除 | 客戶 | 必須用github完成。 <br> 在和下覆蓋「維護」窗口配 `/libs` 置節點 `/apps` 和 `/conf/global/settings/granite/operations/maintenance/granite_weekly` 或 `granite_daily`。 有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上述節點下添加另一個節點(命名該節點 `granite_TaskPurgeTask`)和相應屬性來啟用維護任務。 <br> 設定OSGI屬性，請參閱 [AEM 6.5維護工作檔案](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| 工作流程清除 | 客戶 | 必須用github完成。 <br> 在和下覆蓋「維護」窗口配 `/libs` 置節點 `/apps` 和 `/conf/global/settings/granite/operations/maintenance/granite_weekly` 或 `granite_daily`。 有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上述節點下添加另一個節點(命名該節點 `granite_WorkflowPurgeTask`)和相應屬性來啟用維護任務。 <br> 設定OSGI屬性，請參 [閱AEM 6.5維護工作檔案](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| 專案清除 | 客戶 | 必須用github完成。 <br> 在和下覆蓋「維護」窗口配 `/libs` 置節點 `/apps` 和 `/conf/global/settings/granite/operations/maintenance/granite_weekly` 或 `granite_daily`。 有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上面的節點下添加節點（將其命名）並添加相應的屬 `granite_ProjectPurgeTask`性來啟用維護任務。 <br> 設定OSGI屬性，請參 [閱AEM 6.5維護工作檔案](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 臨機任務清除 | 客戶 | 必須用github完成。 <br> 通過在資料夾或下建立屬性，覆蓋下 `/libs` 的「現成維護」窗口配置節 `/apps/settings/granite/operations/maintenance/granite_weekly` 點 `granite_daily`。 有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上述節點下添加另一個節點(命名該節點 `granite_TaskPurgeTask`)和相應屬性來啟用維護任務。 <br> 設定OSGI屬性，請參閱 [AEM 6.5維護工作檔案](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 工作流程清除 | 客戶 | 必須用github完成。 <br> 通過在資料夾或下建立屬性，覆蓋下 `/libs` 的「現成維護」窗口配置節點`/apps/settings/granite/operations/maintenance/granite_weekly``granite_daily`。 有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上述節點下添加另一個節點(命名該節點 `granite_WorkflowPurgeTask`)和相應屬性來啟用維護任務。 <br> 設定OSGI屬性，請參 [閱AEM 6.5維護工作檔案](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 專案清除 | 客戶 | 必須用github完成。 <br> 通過在資料夾或下建立屬性，覆蓋下 `/libs` 的「現成維護」窗口配置節 `/apps/settings/granite/operations/maintenance/granite_weekly` 點 `granite_daily`。 有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上面的節點下添加節點（將其命名）並添加相應的屬 `granite_ProjectPurgeTask`性來啟用維護任務。 <br> 設定OSGI屬性，請參 [閱AEM 6.5維護工作檔案](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 客戶可以計畫在每日、每週或每月維護窗口期間執行的每個工作流清除、臨機任務清除和項目清除維護任務。 這些配置應直接在原始碼控制中編輯。 下表說明每個窗口可用的配置參數。
 
@@ -54,7 +54,7 @@ ht-degree: 2%
     <td>每日</td>
     <td>客戶</td>
     <td>JCR節點定義</td>
-    <td><code>/conf/global/settings/granite/operations/maintenance/granite_daily </code> (會覆寫和中的節 <code>/apps</code> 點 <code>/libs</code>)</td>
+    <td><code>/apps/settings/granite/operations/maintenance/granite_daily </code></td>
     <td>請參閱下方的程式碼範例1</td>
    <td>
     <ul>
@@ -67,7 +67,7 @@ ht-degree: 2%
     <td>每週</td>
     <td>客戶</td>
     <td>JCR節點定義</td>
-    <td><code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code> (會覆寫和中的節 <code>/apps</code> 點 <code>/libs</code>)</td>
+    <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
     <td>請參閱下方的程式碼範例2</td>
      <td>
     <ul>
@@ -81,7 +81,7 @@ ht-degree: 2%
     <td>每月</td>
     <td>客戶</td>
     <td>JCR節點定義</td>
-    <td><code>/conf/global/settings/granite/operations/maintenance/granite_monthly</code> (會覆寫和中的節 <code>/apps</code> 點 <code>/libs</code>)</td>
+    <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
     <td>請參閱下方的程式碼範例3</td>
      <td>
     <ul>
@@ -124,7 +124,7 @@ ht-degree: 2%
    windowStartTime="14:30"/>
 ```
 
-程式碼範例3
+程式碼範例2
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
