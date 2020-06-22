@@ -2,9 +2,9 @@
 title: Adobe Experience Manager作為Assets HTTP API中的雲端服務內容片段支援
 description: 瞭解Adobe Experience Manager如何在資產HTTP API中以雲端服務內容片段支援的方式提供。
 translation-type: tm+mt
-source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1891'
 ht-degree: 2%
 
 ---
@@ -348,11 +348,10 @@ Assets REST API會公開資料夾屬性的存取權； 例如其名稱、標題�
    以下列出返回此錯誤狀態時的常見情況，以及生成的錯誤消息（單空格）:
 
    * 父資料夾不存在(通過建立內容片段時 `POST`)
-   * 未提供任何內容片段模型（cq:model遺失）、無法讀取（因為路徑無效或權限問題）或沒有有效的片段模型／範本：
+   * 未提供任何內容片段模型（cq:model遺失）、無法讀取（因為路徑無效或權限問題）或沒有有效片段模型：
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
-      * `Cannot adapt the resource '/foo/bar/qux' to a content fragment template`
    * 無法建立內容片段（可能是權限問題）:
 
       * `Could not create content fragment`
