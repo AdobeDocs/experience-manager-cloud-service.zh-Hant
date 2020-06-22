@@ -3,7 +3,7 @@ title: 中繼資料設定檔
 description: 瞭解資產的中繼資料設定檔。 瞭解如何建立中繼資料描述檔並將它套用至資料夾資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 23%
@@ -14,12 +14,6 @@ ht-degree: 23%
 # 中繼資料設定檔 {#metadata-profiles}
 
 中繼資料設定檔可讓您將預設中繼資料套用至資料夾中的資產。 建立中繼資料描述檔並將其套用至資料夾。 您隨後上傳至資料夾的任何資產都會繼承您在中繼資料描述檔中設定的預設中繼資料。
-
-<!-- See [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
-
-See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
-
--->
 
 ## 新增中繼資料設定檔 {#adding-a-metadata-profile}
 
