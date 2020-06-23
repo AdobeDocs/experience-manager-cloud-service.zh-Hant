@@ -2,9 +2,9 @@
 title: 內容片段
 description: Adobe Experience Manager作為雲端服務內容片段可讓您設計、建立、組織和使用不受頁面影響的內容
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1127'
 ht-degree: 7%
 
 ---
@@ -24,6 +24,7 @@ Adobe Experience Manager(AEM)中的內容片段是以Cloud Service的形式建�
 >
 >* **內容片段** 是編輯內容，主要是文字和相關影像。 它們是純粹的內容，不需要設計和版面配置。
 >* **「體驗片段** 」是完整排版的內容，因此是網頁的片段。
+
 >
 >
 「體驗片段」可以包含內容片段的形式，但不能以相反的方式包含。
@@ -58,6 +59,7 @@ Adobe Experience Manager(AEM)中的內容片段是以Cloud Service的形式建�
 3. 您可以:
    * 開啟「 **Assets** 」瀏覽器並篩選 **「內容片段** 」（預設為「影像」）。 然後將所需片段拖曳至元件例項。
    * 選擇內容片段元件，然後從工 **具欄中** 「配置」。 在對話方塊中，您可以開啟選取對話方塊，以瀏覽並選取所需的 **內容片段**。
+
    >[!NOTE]
    >
    >另一種方法是將特定內容片段直接拖曳至頁面上。 這會自動建立關聯的元件（內容片段）。
@@ -70,8 +72,8 @@ Adobe Experience Manager(AEM)中的內容片段是以Cloud Service的形式建�
    >
    >如需進一步編輯功能的詳細資訊，請參閱：
    >
-   >    * [回應式版面](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [編輯頁面內容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [回應式版面](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [編輯頁面內容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### 選取元素或變數 {#selecting-the-element-or-variation}
@@ -86,20 +88,19 @@ Adobe Experience Manager(AEM)中的內容片段是以Cloud Service的形式建�
    * **單文字元素**
    * **多文字元素**
 * **元素**
-   * The default **Main** will always be available.
-   * 如果片段是使用適當的範本建立，則可使用選取範圍。
+   * 選取範圍將根據所使用的模型而可用。
+
    >[!NOTE]
    >
-   >可用的元素取決於使用的模板。
+   >可用元素取決於所使用的模型。
 
 * **變異**
    * 預設主 **版** (Master)將始終可用。
    * 如果已為片段建立變數，則可使用選取範圍。
-* **段落**: 指定要包含的段落範圍：
-   * **全部**
-   * **範圍**: 例如 `1`, `3-5`, `9-*`
-      * **將標題當作其段落的一部分來處理**
-* **將標題當作其段落的一部分來處理**
+
+* **ID**
+
+   * **要套用至元件的 HTML ID 屬性。**
 
 ### 快速連線至片段編輯器 {#quick-connection-to-fragment-editor}
 
