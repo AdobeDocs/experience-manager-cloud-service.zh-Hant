@@ -2,10 +2,10 @@
 sub-product: AEM Assets 雲端服務
 user-guide-title: AEM Assets 雲端服務
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 98%
+source-wordcount: '406'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 98%
 + 設定、管理及擴充 Assets {#admin}
    + [API 和參考資料](developer-reference-material-apis.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
-   + [處理設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [關於使用影像描述檔和視訊描述檔](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [設定智慧標籤](smart-tags-configuration.md)
    + [多語言資產和資產翻譯](translate-assets.md)
    + [搜尋 Facet](search-facets.md)
@@ -82,8 +82,8 @@ ht-degree: 98%
    + [套用 Dynamic Media 檢視器預設集](dynamic-media/viewer-presets.md)
    + [管理 Dynamic Media 影像預設集](dynamic-media/managing-image-presets.md)
    + [套用 Dynamic Media 影像預設集](dynamic-media/image-presets.md)
-   + [Dynamic Media 影片設定檔](dynamic-media/video-profiles.md)
-   + [Dynamic Media 影像設定檔](dynamic-media/image-profiles.md)
+   + [影像設定檔](dynamic-media/image-profiles.md)
+   + [視訊設定檔](dynamic-media/video-profiles.md)
    + [智慧型影像](dynamic-media/imaging-faq.md)
    + [傳送 Dynamic Media 資產](dynamic-media/delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中啟用超連結保護](dynamic-media/hotlink-protection.md)
