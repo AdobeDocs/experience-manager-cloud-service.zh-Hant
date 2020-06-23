@@ -2,9 +2,9 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1538'
 ht-degree: 11%
 
 ---
@@ -39,6 +39,10 @@ ht-degree: 11%
 * **於導覽中隱藏**
 
    * 指出在產生的網站的頁面導覽中是否顯示或隱藏頁面。
+
+* **HTML ID**
+
+   * HTML ID以套用至元件。
 
 * **頁面標題**
 
@@ -97,6 +101,10 @@ ht-degree: 11%
 
    * 指出此頁面應自動重新導向至的頁面。
 
+* **設計**
+
+   * 指出在產生的網站的頁面導覽中是否顯示或隱藏頁面。
+
 * **別名**
 
    * 指定要與此頁一起使用的別名。
@@ -112,9 +120,11 @@ ht-degree: 11%
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **繼承自&lt;*path*>**
+<!--
+* **Inherited from &lt;*path*&gt;**
 
-   * 指出頁面是否繼承。 以及從何而來。
+  * Indicates whether the page is inherited. and where from.
+-->
 
 * **雲端設定**
 
@@ -172,7 +182,7 @@ ht-degree: 11%
 
 ### 雲端服務 {#cloud-services}
 
-* **雲端服務**
+* **雲端服務設定**
 
    * 定義雲端服務的屬性。
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
