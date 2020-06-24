@@ -2,7 +2,7 @@
 title: 影像品質最佳化的最佳作法
 description: 瞭解在動態媒體中最佳化影像品質的最佳範例
 translation-type: tm+mt
-source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 5%
@@ -48,7 +48,7 @@ Adobe Scene7 Publishing System和Image Server中的 [影像銳利化最佳範例
 
 您可使用兩種影像銳利化方法：
 
-* 簡單銳利化( `&op_sharpen`)-類似於Photoshop中使用的銳利化濾鏡，簡單銳利化會在動態調整大小後，將基本銳利化套用至影像的最終檢視。 但是，此方法不可由用戶配置。 最佳實務是除非有需要，否則不要使用&amp;op_sharpen。
+* 簡單銳利化( `&op_sharpen`)-類似於Photoshop中使用的銳利化濾鏡，簡單銳利化會在動態調整大小後將基本銳利化套用至影像的最終檢視。 但是，此方法不可由用戶配置。 最佳實務是除非有需要，否則不要使用&amp;op_sharpen。
 * 銳利化遮色片( `&op_USM`)-銳利化遮色片是業界標準的銳利化濾鏡。 最佳實務是依照下列准則，使用銳利化遮色片銳利化影像。 遮色片銳利化可讓您控制下列三個參數：
 
    * `&op_sharpen=`金額，半徑，閾值
@@ -65,7 +65,7 @@ Adobe Scene7 Publishing System和Image Server中的 [影像銳利化最佳範例
 
       「銳利化影像」的AEM說明主題。
 
-      最佳實務白皮 [書「在Adobe Scene7 Publishing System和Image Server上銳利化影像」](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)。
+      最佳實務白皮 [書「在Adobe Scene7 Publishing System和Image Server上銳利化影像」。](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
    * AEM也可讓您控制第四個參數： 單色(0,1)。 此參數確定是否使用值0將銳利化遮色片分別套用至每個顏色元件，或使用值1將遮色片套用至影像亮度／強度。
 
