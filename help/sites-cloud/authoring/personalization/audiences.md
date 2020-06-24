@@ -2,9 +2,9 @@
 title: 管理對象
 description: 「對象」控制台可讓您建立、組織及管理Adobe Target帳戶的對象，或管理ContextHub的區段
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '975'
 ht-degree: 12%
 
 ---
@@ -82,13 +82,13 @@ ht-degree: 12%
 
 | **屬性** | **說明** | **如需詳細資訊** |
 |---|---|---|
-| **行動** | 根據行動裝置、裝置類型、裝置廠商、螢幕尺寸（依像素）等參數來定位行動裝置。 | 請參 [閱Adobe Target的](https://marketing.adobe.com/resources/help/en_US/target/target/c_mobile.html) Mobile檔案。 |
-| **自訂** | 自訂參數是mbox參數。 如果您將任何mbox參數傳遞至mbox，或使用targetPageParams函式，這些參數會出現在此處，以供觀眾使用。 | 請參 [閱Adobe Target的自訂參數](https://marketing.adobe.com/resources/help/en_US/target/target/c_custom_parameters.html) 檔案。 |
+| **行動** | 根據行動裝置、裝置類型、裝置廠商、螢幕尺寸（依像素）等參數來定位行動裝置。 | 請參 [閱Adobe Target的](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html) Mobile檔案。 |
+| **自訂** | 自訂參數是mbox參數。 如果您將任何mbox參數傳遞至mbox，或使用targetPageParams函式，這些參數會出現在此處，以供觀眾使用。 | 請參 [閱Adobe Target的自訂參數](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) 檔案。 |
 | **OS** | 您可以定位使用特定作業系統的訪客。 | 鎖定使用Linux、Macintosh或Windows的使用者。 |
-| **網站頁面** | 定位位於特定頁面或具有特定mbox參數的訪客。 | 請參 [閱Adobe Target的網站](https://marketing.adobe.com/resources/help/en_US/target/target/c_site_pages.html) 「頁面」檔案。 |
-| **瀏覽器** | 您可以定位使用特定瀏覽器或特定瀏覽器選項的使用者瀏覽您的頁面。 | 請參 [閱Adobe Target的](https://marketing.adobe.com/resources/help/en_US/target/target/c_browser_options.html)瀏覽器選項檔案。 |
-| **訪客設定檔** | 定位符合特定描述檔參數的訪客。 | 請參 [閱Adobe Target的訪客資料](https://marketing.adobe.com/resources/help/en_US/target/target/c_visitor_profile.html) 檔案。 |
-| **流量來源** | 根據將訪客引用至您網站的搜尋引擎或著陸頁面來定位訪客。 | 請參 [閱Adobe Target的流量來源](https://marketing.adobe.com/resources/help/en_US/target/target/c_traffic_sources.html) 檔案。 |
+| **網站頁面** | 定位位於特定頁面或具有特定mbox參數的訪客。 | 請參 [閱Adobe Target的網站](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html) 「頁面」檔案。 |
+| **瀏覽器** | 您可以定位使用特定瀏覽器或特定瀏覽器選項的使用者瀏覽您的頁面。 | 請參 [閱Adobe Target的](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html) 「瀏覽器選項」檔案。 |
+| **訪客設定檔** | 定位符合特定描述檔參數的訪客。 | 請參 [閱Adobe Target的訪客資料](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html) 檔案。 |
+| **流量來源** | 根據將訪客引用至您網站的搜尋引擎或著陸頁面來定位訪客。 | 請參 [閱Adobe Target的流量來源](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) 檔案。 |
 
 ## 在「對象控制台」中修改對象 {#modifying-an-audience-in-the-audiences-console}
 
