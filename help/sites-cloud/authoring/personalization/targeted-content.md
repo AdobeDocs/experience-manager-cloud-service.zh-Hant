@@ -2,9 +2,9 @@
 title: 使用定位模式製作目標內容
 description: 定位模式和Target元件提供工具，以建立體驗內容
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '5351'
+source-wordcount: '5348'
 ht-degree: 6%
 
 ---
@@ -337,15 +337,12 @@ ht-degree: 6%
    選件選擇器可讓您瀏覽或篩選選件。 當瀏覽或篩選時，您也可能想要排序選件，並變更檢視選件的方式。 右上方的數字表示目前資料庫中有多少選件可用。
 
    * 按一下或點選「 **瀏覽** 」以導覽至其他資料夾。 導覽窗格隨即開啟，您按一下箭頭即可深入檢視資料夾。 再按一下或點 **選「瀏覽** 」以關閉導覽窗格。
-
    ![瀏覽內容](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
 
    * 按一下或點選「 **篩選** 」，以針對關鍵字或標籤篩選選件。 您輸入關鍵字，然後從下拉式選單中選取標籤。 再按一下或點 **選「篩選** 」，以關閉篩選窗格。
-
    ![篩選內容](/help/sites-cloud/authoring/assets/targeted-filter.png)
 
    * 按一下或點選「最新至最舊」旁的箭頭，以變更選件 **的排序方式**。 選件可以從最新到最舊，或從最舊到最新。
-
    ![篩選排序順序](/help/sites-cloud/authoring/assets/targeted-filter-sort.png)
 
    按一下或點選「檢視方式」旁 **的圖示** ，即可將選件檢視為拼貼或清單。
@@ -464,7 +461,7 @@ ht-degree: 6%
 | 增加計數、釋放用戶並允許再入 | 選取訪客在重新輸入活動時所看到的體驗： 相同的體驗、隨機的體驗、不可見的體驗 |
 | 增量計數、釋放用戶和條返回 | 判斷使用者所看到的內容，而非活動內容： 相同的體驗，無追蹤、預設內容或其他活動內容 |
 
-如需 [成功度量的詳細資訊](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) ，請參閱Adobe Target檔案。
+如需 [成功度量的詳細資訊](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) ，請參閱Adobe Target檔案。
 
 ### 設定設定（AEM定位） {#configuring-settings-aem-targeting}
 
@@ -503,13 +500,13 @@ ht-degree: 6%
 
    ![報告來源](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
 
-1. 在「目 **標量度** 」區域的「我的主要目標 **** 」下方，選取您要追蹤的成功量度——轉換、收入、參與——並輸入量度的測量方式 (或觀眾採取哪些動作來指出已達成目標)。請參閱上表中目標量度的定義，並參閱 [Adobe Target成功量度的相關檔案](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) 。
+1. 在「目 **標量度** 」區域的「我的主要目標 **** 」下方，選取您要追蹤的成功量度——轉換、收入、參與——並輸入量度的測量方式 (或觀眾採取哪些動作來指出已達成目標)。請參閱上表中目標量度的定義，並參閱 [Adobe Target成功量度的相關檔案](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) 。
 
    您可以按一下右上角的三個點並選取「重新命名」，以重新命名目 **標**。
 
    如果您需要清除所有欄位，請按一下右上角的三個點，然後選取「清除所 **有欄位」**。
 
-   所有量度也有進階設定，您可加以定義。 選取 **進階設定** ，以存取這些設定。 請參閱上表中如何計算成功度量的定義，並參閱 [Adobe Target檔案](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html)。
+   所有量度也有進階設定，您可加以定義。 選取 **進階設定** ，以存取這些設定。 請參閱上表中如何計算成功度量的定義，並參閱 [Adobe Target檔案](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html)。
 
    >[!NOTE]
    >
