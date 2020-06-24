@@ -2,9 +2,9 @@
 title: 資料保護與資料隱私權法規- Adobe Experience Manager作為雲端服務網站的就緒性
 description: '瞭解Adobe Experience Manager如何以雲端服務網站的形式支援各種資料保護與資料隱私權規定； 包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
 translation-type: tm+mt
-source-git-commit: 1130e8a07bc3826380483a7560ebda7e8a17e238
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1038'
 ht-degree: 1%
 
 ---
@@ -68,6 +68,10 @@ Adobe Experience Manager受Cookie選擇退出服務約束，該服務用於管�
       選擇加入——將我納入訪客作業匯總與分析(請勿安裝選擇 `amcglobal.sc.omtrdc.net` 退出Cookie)-按一下此處。
    請依照上述步驟來存取實際連結。
 
+   <!--
+    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
+    -->
+
    >[!NOTE]
    >
    > 「使用條款」的「隱 **私權政策** 」一節中 [有進一步說明](https://marketing.adobe.com/resources/help/zh_TW/terms.html)。
@@ -82,7 +86,7 @@ AEM Sites包含Analytics Foundation的選購整合，該整合使用Adobe Analyt
 
 AEM Sites包含與Personalization Foundation by Target的選購整合，此整合使用Adobe Target隨選服務中的功能。
 
-如需有關管理Adobe Target相關資料主體要求的詳細資訊，請參閱 [Adobe Target —— 隱私權與一般資料保護規則](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html)。
+如需有關管理Adobe Target相關資料主體要求的詳細資訊，請參閱 [Adobe Target —— 隱私權與一般資料保護規則](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
 
 ## ContextHub {#contexthub}
 
@@ -173,6 +177,7 @@ AEM提供ContextHub的選用資料層。 如此可保留瀏覽器中特定訪客
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
       ContextHub儲存器定義將使用哪個持久性層，因此查看持久性的當前狀態，應檢查所有層。
 
 
@@ -202,6 +207,7 @@ AEM提供ContextHub的選用資料層。 如此可保留瀏覽器中特定訪客
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
       ContextHub儲存器定義將使用哪個持久性層，因此查看持久性的當前狀態，應檢查所有層。
 
 
