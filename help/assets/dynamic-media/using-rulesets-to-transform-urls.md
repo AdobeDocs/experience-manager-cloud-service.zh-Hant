@@ -2,9 +2,9 @@
 title: 使用規則集轉換URL
 description: 您可以在動態媒體中部署規則集以轉換URL。 規則集是以指令碼語言（例如JavaScript）編寫的指令集，可評估XML資料，並在資料符合特定條件時採取特定動作。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '797'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 5%
 >使用規則集時請謹慎； 它們可防止動態媒體內容顯示在您的網站上。
 
 有可用的範例規則集可協助您建立自己的規則集。
-請參 [閱規則集參考](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/c_rule_set_reference.html)。
+請參 [閱規則集參考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)。
 
 如同建立所有規則集一樣，請使用XMLVALID等XML驗證程式，在上傳XML檔案之前，先確定其有效性。
 另請參閱 [疑難排解規則集](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)。
@@ -61,7 +61,7 @@ ht-degree: 5%
 
 1. 執行下列動作，上傳規則集檔案：
 
-   * 在全域導覽列上，按一下「上 **[!UICONTROL 傳」]**。
+   * 在全域導覽列上，按一下「上 **[!UICONTROL 傳]**」。
    * 在「上 **[!UICONTROL 傳]** 」頁面的左上角附近，按一下「 **[!UICONTROL 瀏覽」]**。
    * 在「開 **[!UICONTROL 啟]** 」對話方塊中，瀏覽至您的規則集檔案(XML)。
    * 選取檔案，然後按一下「 **[!UICONTROL 開啟]**」。
