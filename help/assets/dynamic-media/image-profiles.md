@@ -2,9 +2,9 @@
 title: Dynamic Media 影像設定檔
 description: 建立包含非銳利遮色片和智慧型裁切或智慧型色票（或兩者）的設定的動態媒體影像描述檔，然後將描述檔套用至影像資產的資料夾。
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2732'
 ht-degree: 9%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 9%
  </tbody>
 </table>
 
-銳利化影像中 [有說明](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)。
+銳利化影像中會 [說明銳利化。](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
 ## Creating Dynamic Media Image Profiles {#creating-image-profiles}
 
@@ -113,7 +113,7 @@ ht-degree: 9%
 
    另請參 [閱智慧型裁切和智慧型色票選項](#crop-options)[和遮色片銳利化](#unsharp-mask)。
 
-   ![作物](assets/crop.png)
+   ![crop](assets/crop.png)
 
 1. 點選「 **[!UICONTROL 儲存]**」。 新建立的配置檔案將出現在可用配置檔案清單中。
 
