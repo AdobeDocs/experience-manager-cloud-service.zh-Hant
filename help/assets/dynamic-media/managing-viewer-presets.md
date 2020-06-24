@@ -2,10 +2,10 @@
 title: 管理檢視器預設集
 description: 如何建立和管理檢視器預設集
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '4284'
-ht-degree: 18%
+source-wordcount: '4263'
+ht-degree: 17%
 
 ---
 
@@ -150,7 +150,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 下表列出動態媒體隨附的所有預先定義、立即可用的檢視器預設集。
 
-另請參閱檢 [視器參考資料庫範例](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html)[和即時示範](https://landing.adobe.com/tw/na/dynamic-media/ctir-2755/live-demos.html)。
+另請參閱 <!-- KEEP REFERENCE [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [即時示範](https://landing.adobe.com/tw/na/dynamic-media/ctir-2755/live-demos.html)。
 
 如需檢視器支援的網頁瀏覽器和作業系統版本的詳細資訊，請參閱檢視器版本注意事項。
 
@@ -419,13 +419,13 @@ AEM會在從「詳細資料檢視>檢視器」檢視資產時，顯示各種 **[
 
       視覺編輯器可讓您查看特定屬性對樣式有何影響。 只要設定或調整任何屬性，即可使用編輯器左側的範例，立即查看它對檢視器有何影響。
 
-      檢視器參考指南中的「自訂檢視器」說明主題中，說明每種檢視器預設集類型的CSS樣 *`<viewer name>`* 式屬性 [](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/)。 例如，如果您要建立類型的檢視器預設集，請參 `Mixed_Media`閱自訂 [混合媒體檢視器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) ，以取得每個屬性的清單和說明。
+      檢視器參考指南中的「自訂檢視器」說明主題中，說明每種檢視器預設集類型的CSS樣 *`<viewer name>`* 式屬性 [](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。 例如，如果您要建立類型的檢視器預設集，請參 `Mixed_Media`閱自訂 [混合媒體檢視器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) ，以取得每個屬性的清單和說明。
 
    * 如果您已在個別的CSS檔案中定義樣式設定，則可將CSS檔案上傳至AEM Assets。 Tap **[!UICONTROL Import CSS]** below the **[!UICONTROL Selected Type]** pull-down menu (you may need to scroll the visual editor up to see it) to find the uploaded CSS file and associate it with the viewer preset.
 
       當您匯入CSS檔案時，視覺編輯器會檢查CSS是否使用正確的檢視器標籤。 例如，如果您要建立縮放檢視器，您匯入的所有CSS規則都必須使用父檢視器元素上定義的檢視器 `.s7mixedmediaviewer` 類別名稱來定義。
 
-      只要正確定義特定檢視器的CSS標籤，您就可匯入任意手工的CSS。 (CSS標籤在檢視器參考指南的「自訂 *&lt;檢視器名稱>* 檢視器」說明 [主題中說明](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/)。 例如，如果您想要閱讀有關縮放檢視器的CSS標籤，請參閱自 [訂縮放檢視器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，視覺編輯器可能不瞭解某些CSS值。 在這種情況下，視覺編輯器會嘗試覆寫錯誤，讓CSS仍能運作。
+      只要正確定義特定檢視器的CSS標籤，您就可匯入任意手工的CSS。 (CSS標籤在檢視器參考指南的「自訂 *&lt;檢視器名稱>* 檢視器」說明 [主題中說明](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。 例如，如果您想要閱讀有關縮放檢視器的CSS標籤，請參閱自 [訂縮放檢視器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，視覺編輯器可能不瞭解某些CSS值。 在這種情況下，視覺編輯器會嘗試覆寫錯誤，讓CSS仍能運作。
    >[!NOTE]
    >
    >如果您偏好直接以原始格式編輯CSS，請點選「選取類型」下拉式選單下方的「顯示/隱藏CSS **** 」 (您可能需要向上捲動視覺編輯器才能檢視)。
@@ -441,7 +441,7 @@ AEM會在從「詳細資料檢視>檢視器」檢視資產時，顯示各種 **[
 
    視覺編輯器中的許多元件都有相關的詳細說明。 展開元件以顯示其相關參數時，這些說明會顯示在藍色方塊中。
 
-   有些檢視器類型具有可讓您在「 **[!UICONTROL IS Command」 (IS命令) 文字欄位中指定「Image Serving]** 」 (影像伺服) 命令的元件。如需您可使用的指令清單，請參 [閱影像伺服API參考](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/image_serving_api_ref.html)。
+   有些檢視器類型具有可讓您在「 **[!UICONTROL IS Command」 (IS命令) 文字欄位中指定「Image Serving]** 」 (影像伺服) 命令的元件。如需您可使用的指令清單，請參 [閱影像伺服API參考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)。
 
    >[!NOTE]
    >
