@@ -2,9 +2,9 @@
 title: 整合 Adobe Target
 description: '整合 Adobe Target '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '743'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe Experience Manager是Cloud Service客戶，如果客戶目前沒有Target帳戶，可以要求存取Target Foundation Pack for Experience Cloud。  Foundation Pack提供Target的卷限制使用。
+>Adobe Experience Manager是Cloud Service客戶，如果客戶目前沒有Target帳戶，可以要求存取Target Foundation Pack for Experience Cloud。  Foundation Pack提供對Target的卷有限使用。
 
 
 若要與Target整合，請執行下列工作：
@@ -53,6 +53,7 @@ ht-degree: 1%
 >
 >* 3.x已設定為 [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x已設定為 [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
@@ -73,7 +74,7 @@ ht-degree: 1%
 
 將AEM整合為雲端服務與Adobe Target需要有Adobe Target、AEM活動管理和AEM觀眾管理的相關知識。 您應熟悉下列資訊：
 
-* Adobe Target(請參閱 [Adobe Target檔案](https://marketing.adobe.com/resources/help/en_US/target/))。
+* Adobe Target(請參閱 [Adobe Target檔案](https://docs.adobe.com/content/help/en/target/using/target-home.html))。
 * AEM活動主控台(請參 [閱管理活動](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html)。
 * AEM觀眾(請參閱「管 [理觀眾」](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/managing-audiences.html)。
 
@@ -85,6 +86,7 @@ ht-degree: 1%
 >* 2,000次體驗
 >* 50個量度
 >* 50個報告分部
+
 >
 
 
