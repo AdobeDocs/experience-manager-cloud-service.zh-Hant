@@ -3,7 +3,7 @@ title: Experience Manager Assets作為雲端服務支援的檔案格式和MIME�
 description: Experience Manager Assets作為雲端服務支援的檔案格式和MIME類型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
+source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 8%
@@ -87,11 +87,11 @@ Adobe Experience Manager雲端服務支援基本的內容管理功能— 儲存�
 * 具有浮點資料的TIFF檔案。
 * 具有Lab色域的TIFF檔案。
 
-## 支援3D格式 {#support-3d-formats}
+## 3D格式 {#support-3d-formats}
 
 支援下列3D格式清單。
 
-請參 [閱在動態媒體中使用3D資產。](/help/assets/dynamic-media/assets-3d.md)
+另請參閱 [在動態媒體中使用3D資產。](/help/assets/dynamic-media/assets-3d.md)
 
 | 格式 | 儲存 | 版本設定 | 工作流程 | 發佈 | 存取控制 | 縮圖預覽 | 3D預覽 | 動態媒體傳送 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
