@@ -2,9 +2,9 @@
 title: 使用Cloud Readiness Analyzer
 description: 使用Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: a0e58c626f94b778017f700426e960428b657806
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1871'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,12 @@ ht-degree: 0%
 
 * CRA報表是使用Adobe Experience Manager(AEM)模式偵測器的輸 [出建立](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)。 CRA使用的Pattern Detector版本已包含在CRA安裝包中。
 
-* CRA只能由管理員使用 **者** 或「管理員」群組中的使 **用者執行** 。
+* CRA只能由管理員使 **用者** 或管理員群組中的使 **用者** 。
 
 * CRA在6.1版及更高版本的AEM例項上受支援。
+
+   >[!NOTE]
+   > 如需在 [AEM 6.1上安裝CRA的特殊要求，請參閱](#installing-on-aem61) 「在AEM 6.1上安裝」。
 
 * CRA可以在任何環境下運行，但最好在 *Stage* 。
 
@@ -87,7 +90,7 @@ Adobe Experience Manager 6.2中的Cloud Readiness Analyzer工具僅限於產生�
 
 系統會為每個尋找指派重要度，以指出動作的粗略優先順序。
 
-請遵循下表瞭解重要性等級：
+請遵循下表來瞭解重要性等級：
 
 | 重要性 | 說明 |
 |--- |--- |
@@ -169,7 +172,9 @@ HTTP介面可用於多種方法。
 * `500 Internal Server Error`: 表示發生內部伺服器錯誤。 「問題詳細資訊」格式的消息提供了詳細資訊。
 * `503 Service Unavailable`: 表示伺服器正忙於另一個響應，無法及時為此請求提供服務。 只有在發出同步請求時，才可能發生這種情況。 「問題詳細資訊」格式的消息提供了詳細資訊。
 
-## 快取存留期調整 {#cache-adjustment}
+## 管理員資訊
+
+### 快取存留期調整 {#cache-adjustment}
 
 預設的CRA快取存留期為24小時。 在AEM例項和HTTP介面中，使用重新整理報表和重新產生快取的選項，此預設值可能適用於CRA的大部分使用。 如果您的AEM例項的報表產生時間特別長，您可能想要調整快取存留期，以將報表的重新產生降至最低。
 
@@ -178,7 +183,12 @@ HTTP介面可用於多種方法。
 
 此屬性的值是快取存留期（以秒為單位）。 管理員可以使用CRX/DE Lite調整快取存留期。
 
+### 在AEM 6.1上安裝 {#installing-on-aem61}
 
+CRA利用名為的系統服務用戶帳 `repository-reader-service` 戶來執行模式檢測器。 此帳戶適用於AEM 6.2和更新版本。 在AEM 6.1中，您必須先執行下 *列步驟* ，在安裝CRA之前建立此帳戶：
 
+1. 請依照「建立 [新服務使用者](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) 」中的指示建立使用者。 將UserID設為， `repository-reader-service` 並將中間路徑保留為空，然後按一下綠色複選標籤。
 
+2. 請依照「管理使 [用者和群組](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups)」中的指示，尤其是「新增使用者至群組以新增使用者至 `repository-reader-service` 群組」的指 `administrators` 示。
 
+3. 透過Package Manager在您的來源AEM例項上安裝CRA套件。 (這將為系統服務用戶的ServiceUserMapper配置添加必 `repository-reader-service` 要的配置修改。)
