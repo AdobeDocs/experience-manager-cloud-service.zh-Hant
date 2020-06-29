@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 雲端服務簡介
 description: 'Adobe Experience Manager (AEM) 雲端服務簡介。 '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 100%
+source-wordcount: '518'
+ht-degree: 98%
 
 ---
 
@@ -76,6 +76,8 @@ AEM 採用現代化雲端服務的主要特色來達成下列目標：
 
 * Adobe Experience Manager 雲端服務與舊版的[新增功能與不同之處](/help/overview/what-is-new-and-different.md)
 * Adobe Experience Manager 雲端服務[架構](/help/core-concepts/architecture.md)
-* [AEM 雲端服務中 AEM Sites 重大變更](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM as a Cloud服務的顯著變更（發行說明）](/help/release-notes/aem-cloud-changes.md)
+* [ 雲端服務 AEM Sites 重大變更](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Assets 雲端服務重大變更](/help/assets/assets-cloud-changes.md)
 * [Assets 雲端服務簡介](/help/assets/overview.md)
 * [Adobe Experience Manager 雲端服務教學課程](https://docs.adobe.com/content/help/zh-Hant/experience-manager-learn/cloud-service/overview.html)
