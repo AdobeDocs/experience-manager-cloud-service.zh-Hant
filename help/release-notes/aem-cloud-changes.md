@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) 雲端服務重大變更
 description: Adobe Experience Manager (AEM) 雲端服務重大變更
 translation-type: tm+mt
-source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '861'
+ht-degree: 99%
 
 ---
 
@@ -15,21 +15,31 @@ ht-degree: 100%
 AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可能性。但 AEM 雲端服務與 AEM Sites 內部部署或 Adobe 受管服務之間仍有許多差異。本文件主要說明這些重要差異。
 
 >[!NOTE]
->本文件著重說明 AEM 整體的重大變更。若需了解特定解決方案的變更項目，請參閱：
+>本文件著重說明 AEM 整體的重大變更。如需詳細資訊和解決方案特定的變更，請參閱：
 >
->* [AEM 雲端服務中 AEM Sites 的重大變更](/help/sites-cloud/sites-cloud-changes.md)
->* [AEM 雲端服務中 AEM Assets 的重大變更](/help/assets/assets-cloud-changes.md)
+>* [Adobe Experience Manager 雲端服務簡介](/help/overview/introduction.md)
+>* Adobe Experience Manager 雲端服務與舊版的[新增功能與不同之處](/help/overview/what-is-new-and-different.md)
+>* Adobe Experience Manager 雲端服務[架構](/help/core-concepts/architecture.md)
+>* [ 雲端服務 AEM Sites 重大變更](/help/sites-cloud/sites-cloud-changes.md)
+>* [AEM Assets 雲端服務重大變更](/help/assets/assets-cloud-changes.md)
 
 
 主要差異在於以下方面：
 
 * [/apps 和 /libs 在執行階段不可修改](#apps-libs-immutable)
+
 * [OSGi 套件和設定必須依儲存庫為準](#osgi)
+
 * [禁止變更發佈用儲存庫](#changes-to-publish-repo)
+
 * [禁止自訂執行模式](#custom-runmodes)
+
 * [移除複寫代理](#replication-agents)
+
 * [移除傳統 UI](#classic-ui)
+
 * [發佈端傳送](#publish-side-delivery)
+
 * [資產處理與傳送](#asset-handling)
 
 ## /apps 和 /libs 在執行階段不可修改 {#apps-libs-immutable}
