@@ -2,23 +2,34 @@
 title: Adobe Experience Manager資產雲端服務的顯著變更
 description: AEM Cloud服務中的Adobe Experience Manager Assets與Adobe Experience Manager 6.5相比有顯著變更。
 translation-type: tm+mt
-source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
+source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 4%
+source-wordcount: '619'
+ht-degree: 10%
 
 ---
 
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功能與可能。 但是，與Experience Manager雲端服務相比，Experience Manager Assets的內部部署或Adobe Managed Service之間有許多不同。 本檔案強調資產功能的重要差異。 如需其他變更，請參 [閱Experience Manager的一般變更，即雲端服務](/help/release-notes/aem-cloud-changes.md)。
+Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功能與可能。 但是，與Experience Manager雲端服務相比，Experience Manager Assets的內部部署或Adobe Managed Service之間有許多不同。 本檔案強調資產功能的重要差異。
 
 與Experience Manager 6.5相比，主要差異在於：
 
 * [資產擷取和上傳](#asset-ingestion)。
 * [適用於雲端處理的資產微服務](#asset-microservices)。
 * [移除傳統 UI](#classic-ui).
+
+>[!NOTE]
+>本檔案著重說明對AEM Assets的顯著變更。 如需AEM的「雲端服務」及其他模組的一般變更，請參閱：
+>
+>* [Adobe Experience Manager 雲端服務簡介](/help/overview/introduction.md)
+>* AEM [雲端服務概觀——新增功能與不同功能](/help/overview/what-is-new-and-different.md)
+>* Adobe Experience Manager 雲端服務[架構](/help/core-concepts/architecture.md)
+>* [AEM as a Cloud服務的顯著變更（發行說明）](/help/release-notes/aem-cloud-changes.md)
+>* [ 雲端服務 AEM Sites 重大變更](/help/sites-cloud/sites-cloud-changes.md)
+>* [Adobe Experience Manager 雲端服務教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+
 
 ## 資產擷取與上傳 {#asset-ingestion}
 
