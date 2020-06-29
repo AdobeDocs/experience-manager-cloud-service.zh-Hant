@@ -2,10 +2,10 @@
 title: AEM 雲端服務中 AEM Sites 的重大變更
 description: 'AEM 雲端服務中 AEM Sites 的重大變更 '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 8%
+source-wordcount: '538'
+ht-degree: 13%
 
 ---
 
@@ -15,9 +15,15 @@ ht-degree: 8%
 AEM Sites as a Cloud Service是雲端原生AEM的雲端服務平台，提供體驗管理功能。 除了AEM做為雲端服務的核心優點（例如雲端原生的延展性、正常運作時間以及隨時都是最新的）之外，AEM Sites作為雲端服務也提供許多網站特定的變更和新增功能。
 
 >[!NOTE]
->本檔案著重說明AEM Sites的顯著變更。 如需Cloud中AEM的一般變更，請參閱：
+>本檔案著重說明AEM Sites的顯著變更。 如需AEM的「雲端服務」及其他模組的一般變更，請參閱：
 >
->* [Adobe Experience Manager (AEM) 雲端服務重大變更](/help/release-notes/aem-cloud-changes.md)
+>* [Adobe Experience Manager 雲端服務簡介](/help/overview/introduction.md)
+>* AEM [雲端服務概觀——新增功能與不同功能](/help/overview/what-is-new-and-different.md)
+>* Adobe Experience Manager 雲端服務[架構](/help/core-concepts/architecture.md)
+>* [AEM as a Cloud服務的顯著變更（發行說明）](/help/release-notes/aem-cloud-changes.md)
+>* [AEM Assets 雲端服務重大變更](/help/assets/assets-cloud-changes.md)
+>* [AEM Assets as a Cloud服務簡介](/help/assets/overview.md)
+>* [Adobe Experience Manager 雲端服務教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 
 
 AEM Sites中的Cloud Service變更和新增如下：
