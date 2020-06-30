@@ -3,9 +3,9 @@ title: 增強的智慧型標籤
 description: 使用Adobe Sensei的AI和ML服務套用情境式和描述式商業標籤，以改善資產發現和內容速度。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: c24fa22178914b1186b7f29bdab64d3bca765fe5
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1009'
 ht-degree: 6%
 
 ---
@@ -21,17 +21,17 @@ ht-degree: 6%
 1. Can a similar flowchart be created about how training works in CS? ![flowchart](assets/flowchart.gif)
 2. Is there a link to buy SCS or initiate a sales call.
 3. Keystroke all steps and check all screenshots.
-4. Post-GA, if time permits, create a video.
 -->
 
 ## 與Adobe Developer Console整合 {#aio-integration}
 
 在使用SCS標籤影像之前，請先使用Adobe Developer Console [!DNL Adobe Experience Manager] 與智慧標籤服務整合。 在後端，伺服器會先 [!DNL Experience Manager] 使用Adobe Developer Console閘道驗證您的服務認證，然後再將您的要求轉送至服務。
 
-* 在中建立配 [!DNL Experience Manager] 置以生成公共密鑰。 取得OAuth整合的公用憑證。
-* 在Adobe Developer Console中建立整合，並上傳產生的公開金鑰。
-* 使用Adobe [!DNL Experience Manager] Developer Console的API金鑰和其他認證來設定您的例項。
-* （可選）在資產上傳時啟用自動標籤。
+* 在中建立配 [!DNL Experience Manager] 置以生成公共密鑰。 [取得OAuth整合的公用憑證](#obtain-public-certificate) 。
+* [在Adobe Developer Console中建立整合](#create-aio-integration) ，並上傳產生的公開金鑰。
+* [在您的例項中](#configure-smart-content-service) ，使 [!DNL Experience Manager] 用Adobe Developer Console的API金鑰和其他認證來設定智慧標籤。
+* [測試配置](#validate-the-configuration)。
+* [證書過期後重新配置](#certrenew)。
 
 ### Adobe Developer Console整合的先決條件 {#prerequisite-for-aio-integration}
 
@@ -54,23 +54,6 @@ ht-degree: 6%
 
    ![Experience Manager智慧型標籤建立公開金鑰](assets/aem_smarttags-config1.png)
 
-### 如果證書過期，請重新配置 {#certrenew}
-
-當憑證過期時，它不再受信任。 若要新增憑證，請依照下列步驟進行。 您無法為過期的憑證續約。
-
-1. Log in your [!DNL Experience Manager] deployment as an administrator. 按一 **[!UICONTROL 下「工具]** >安 **[!UICONTROL 全性]** >使 **[!UICONTROL 用者]**」。
-
-1. 找到並按 **[!UICONTROL 一下dam-update-service使用者]** 。 按一下「密鑰 **[!UICONTROL 庫]** 」頁籤。
-1. 刪除具有過 **[!UICONTROL 期證書的]** 現有相似性search密鑰庫。 Click **[!UICONTROL Save &amp; Close]**.
-
-   ![刪除Keystore中現有的相似性搜尋項目，以新增安全憑證](assets/smarttags_delete_similaritysearch_keystore.png)
-
-   *圖： 刪除Keystore中`similaritysearch`的現有條目，以添加新的安全證書。*
-
-1. 在使用 [!DNL Experience Manager] 者介面中，存 **[!UICONTROL 取「工具]** > **[!UICONTROL 保全]** > **[!UICONTROL Adobe IMS設定」]**。 開啟可用的智慧標籤設定。 若要下載公用憑證，請按一下「 **[!UICONTROL 下載公用憑證」]**。
-
-1. 存 [取https://console.adobe.io](https://console.adobe.io) ，並導覽至專案中的現有服務。 上傳新憑證並進行設定。 如需設定的詳細資訊，請參閱「建立Adobe開發人 [員主控台」整合中的指示](#create-aio-integration)。
-
 ### 建立整合 {#create-aio-integration}
 
 若要使用智慧型標籤，請在Adobe Developer Console中建立整合，以產生API金鑰、技術帳戶ID、組織ID和用戶端密碼。
@@ -80,7 +63,7 @@ ht-degree: 6%
 1. 在「新 **[!UICONTROL 增API]** 」頁面上，選 **[!UICONTROL 取「Experience Cloud]** 」並選 **[!UICONTROL 取「智慧內容]**」。 按一下&#x200B;**[!UICONTROL 下一步]**。
 1. 選擇 **[!UICONTROL 上傳公開金鑰]**。 提供從下載的憑證檔案 [!DNL Experience Manager]。 會顯 [!UICONTROL 示成功上傳的公開金鑰] 。 按一下&#x200B;**[!UICONTROL 下一步]**。
 1. [!UICONTROL 建立新的服務帳戶(JWT)憑據頁] ，顯示剛配置的服務帳戶的公鑰。 按一下&#x200B;**[!UICONTROL 下一步]**。
-1. 在「選擇 **[!UICONTROL 產品配置檔案]** 」頁上，選擇 **[!UICONTROL Smart Content Services]**。 按一 **[!UICONTROL 下「儲存已設定的API]**」。 一個頁面會顯示更多有關設定的資訊。 在中進一步設定智慧標籤時，請保持此頁面的開啟狀態，以複製並新增這些值至Experience Manager [!DNL Experience Manager]。
+1. 在「選擇 **[!UICONTROL 產品配置檔案]** 」頁面上，選 **[!UICONTROL 擇智慧內容服務]**。 按一 **[!UICONTROL 下「儲存已設定的API]**」。 一個頁面會顯示更多有關設定的資訊。 在中進一步設定智慧標籤時，請保持此頁面的開啟狀態，以複製並新增這些值至Experience Manager [!DNL Experience Manager]。
 
    ![在「概述」索引標籤中，您可以檢閱為整合提供的資訊。](assets/integration_details.png)
 
@@ -105,9 +88,26 @@ ht-degree: 6%
 
 ![驗證智慧標籤設定](assets/smart-tag-config-validation.png)
 
+### 如果證書過期，請重新配置 {#certrenew}
+
+當憑證過期時，它不再受信任。 若要新增憑證，請依照下列步驟進行。 您無法為過期的憑證續約。
+
+1. Log in your [!DNL Experience Manager] deployment as an administrator. 按一 **[!UICONTROL 下「工具]** >安 **[!UICONTROL 全性]** >使 **[!UICONTROL 用者]**」。
+
+1. 找到並按 **[!UICONTROL 一下dam-update-service使用者]** 。 按一下「密鑰 **[!UICONTROL 庫]** 」頁籤。
+1. 刪除具有過 **[!UICONTROL 期證書的]** 現有相似性search密鑰庫。 Click **[!UICONTROL Save &amp; Close]**.
+
+   ![刪除Keystore中現有的相似性搜尋項目，以新增安全憑證](assets/smarttags_delete_similaritysearch_keystore.png)
+
+   *圖： 刪除Keystore中`similaritysearch`的現有條目，以添加新的安全證書。*
+
+1. 在使用 [!DNL Experience Manager] 者介面中，存 **[!UICONTROL 取「工具]** > **[!UICONTROL 保全]** > **[!UICONTROL Adobe IMS設定」]**。 開啟可用的智慧標籤設定。 若要下載公用憑證，請按一下「 **[!UICONTROL 下載公用憑證」]**。
+
+1. 存 [取https://console.adobe.io](https://console.adobe.io) ，並導覽至專案中的現有服務。 上傳新憑證並進行設定。 如需設定的詳細資訊，請參閱「建立Adobe開發人 [員主控台」整合中的指示](#create-aio-integration)。
+
 ## 為新上傳的資產啟用智慧標籤（可選） {#enable-smart-tagging-for-uploaded-assets}
 
-1. 在中， [!DNL Experience Manager]請轉至「工 **[!UICONTROL 具」>「工作流」>「模型」]**。
+1. 在中， [!DNL Experience Manager]轉至「工 **[!UICONTROL 具」>「工作流」>「模型」]**。
 1. 在「工 **[!UICONTROL 作流模型]** 」頁面上，選擇 **** 「DAM更新資產」工作流模型。
 1. 從工具 **[!UICONTROL 列按一下]** 「編輯」。
 1. 展開「側面板」以顯示步驟。拖 **[!UICONTROL 曳DAM Workflow]**  (DAM工作流程) 區段中可用的智慧型標籤資產步驟，並將其置於「處理縮 **[!UICONTROL 圖」步驟之後]** 。
