@@ -2,9 +2,9 @@
 title: Adobe Experience Manager雲端服務的覆蓋
 description: AEM as a Cloud Service使用覆蓋原則，讓您擴充和自訂控制台和其他功能
 translation-type: tm+mt
-source-git-commit: e9fa89753289563edd59e3d75413c90efe3ff0b2
+source-git-commit: 58440cb565039becd5b08333994b70f2ea77cc99
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Overlay是可在許多內容中使用的詞語。 在此內容中（將AEM延伸
 
       * 在下重建適 `/libs` 當的結構 `/apps`。
 
-         這不需要1:1復本， [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) 可用來交叉參考所需的原始定義。 Sling Resource Merger提供服務，透過差異(differencing)機制存取和合併資源。
+         這不需要1:1復本，因為 [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) 可用來交叉參考所需的原始定義。 Sling Resource Merger提供服務，透過差異(differencing)機制存取和合併資源。
 
       * 在下進行任何更改 `/apps`。
    * 優勢
