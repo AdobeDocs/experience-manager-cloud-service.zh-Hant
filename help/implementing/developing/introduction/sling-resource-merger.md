@@ -2,9 +2,9 @@
 title: 在Adobe Experience Manager中將Sling Resource Merger當做雲端服務
 description: Sling Resource Merger提供存取和合併資源的服務
 translation-type: tm+mt
-source-git-commit: 987d2cd91e0d1ab604ea7de755c5568e0c0a4295
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 >
 >Sling Resource Merger和相關方法僅能與 [Granite搭配使用](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)。 這也表示它僅適用於標準的觸控式使用者介面； 尤其是，以此方式定義的覆蓋僅適用於元件的觸控式對話框。
 >
->其他區域的覆蓋／覆寫（包括可觸控元件或傳統UI的其他方面）包括將適當的節點和結構從原始節點複製到定義自訂的位置。
+>其他區域的覆蓋／覆寫（包括可觸控元件的其他方面）涉及將適當的節點和結構從原始節點複製到定義自訂的位置。
 
 ### AEM的目標 {#goals-for-aem}
 
