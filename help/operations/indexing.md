@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1475'
 ht-degree: 2%
 
 ---
@@ -33,8 +33,6 @@ ht-degree: 2%
 1. 索引配置會透過部署進行變更。 索引定義更改的配置方式與其他內容更改相同。
 
 1. 在AEM雲端服務的高階層，隨著 [Blue-Green部署模型的推出](#index-management-using-blue-green-deployments) ，將會有兩組索引： 一組是舊版（藍色），另一組是新版（綠色）。
-
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. 客戶可以在Cloud Manager構建頁面上查看索引作業是否已完成，並在新版本準備好接收流量時收到通知。
 
@@ -161,7 +159,9 @@ AS NOTE: the above is internal for now.
 
 若要新增名為&quot;/oak:index/acmeProduct-custom-1&quot;的索引，以便用於新版本的應用程式和更新版本，索引必須依下列方式設定：
 
-`/oak:index/acmeProduct-custom-1`
+`*mk.*assetLuceneIndex-1-custom-1`
+
+這可借由將自訂識別碼預先加入索引名稱，接著加上點(**.**). 識別碼必須介於1到4個字元之間。
 
 如上所述，這可確保索引僅供新版本的應用程式使用。
 
