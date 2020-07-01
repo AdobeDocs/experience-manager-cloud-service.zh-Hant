@@ -2,10 +2,10 @@
 title: AEM 專案結構
 description: 瞭解如何定義封裝結構以部署至Adobe Experience Manager Cloud Service。
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 16%
+source-wordcount: '2530'
+ht-degree: 17%
 
 ---
 
@@ -59,13 +59,13 @@ Oak indexes(`/oak:index`)是由AEM Cloud服務部署程式特別管理。 這是
 + 該包 `ui.apps` 或代碼包包含要部署的所有代碼，並且僅部署到 `/apps`。 包的常見元 `ui.apps` 素包括，但不限於：
    + OSGi組合
       + `/apps/my-app/install`
-   + OSGi配置
+   + [OSGi配置](/help/implementing/deploying/configuring-osgi.md)
       + `/apps/my-app/config`
-   + HTL指令碼
+   + [HTL指令碼](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
    + JavaScript和CSS（透過用戶端程式庫）
       + `/apps/my-app/clientlibs`
-   + /libs的覆蓋
+   + [/libs的覆蓋](/help/implementing/developing/introduction/overlays.md)
       + `/apps/cq`、 `/apps/dam/`等。
    + 備援內容感知組態
       + `/apps/settings`
@@ -250,7 +250,7 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
 
 一般規則是包含可變內容(`ui.content`)的封裝，應依賴於支援可變內容轉譯和使用的不可變代碼(`ui.apps`)。
 
-此一般規則的一個明顯例外是，如果不可變的程式碼套件(`ui.apps` 或任何其他)僅 __包含__ OSGi組合。 如果是，則AEM套件不應宣告對它的依賴。 這是因為僅包含 ____ OSGi組合的不可變代碼套件未向AEM Package Manager註冊，因此，任何依賴它的AEM套件都會有未滿足的相依性，且無法安裝。
+此一般規則的一個明顯例外是，如果不可變的程式碼套件(`ui.apps` 或任何其他)僅 __包含__ OSGi組合。 如果是，則AEM套件不應宣告對它的依賴。 這是因為僅包含 ____ OSGi組合的不可變代碼包未向AEM Package Manager註冊，因此，任何依賴它的AEM套件都將具有未滿足的相關性，且無法安裝。
 
 >[!TIP]
 >
