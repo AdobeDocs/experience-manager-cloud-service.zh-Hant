@@ -2,9 +2,9 @@
 title: 在Adobe Experience Manager中將Sling Resource Merger當做雲端服務
 description: Sling Resource Merger提供存取和合併資源的服務
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供差異（差異）機制：
 
-* **[使用](/help/implementing/developing/introduction/overlays.md)**已設定搜尋路徑[的資源覆蓋](/help/implementing/developing/introduction/overlays.md#configuring-the-search-paths)。
+* **[使用搜](/help/implementing/developing/introduction/overlays.md)**尋路徑覆蓋[資源](/help/implementing/developing/introduction/overlays.md#search-paths)。
 
 * **覆寫** UI(`cq:dialog`)的元件對話方塊，使用資源類型階層(透過屬性 `sling:resourceSuperType`)。
 
@@ -30,9 +30,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
 >[!CAUTION]
 >
->Sling Resource Merger和相關方法僅能與 [Granite搭配使用](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)。 這也表示它僅適用於標準的觸控式使用者介面； 尤其是，以此方式定義的覆蓋僅適用於元件的觸控式對話框。
->
->其他區域的覆蓋／覆寫（包括可觸控元件的其他方面）涉及將適當的節點和結構從原始節點複製到定義自訂的位置。
+>Sling Resource Merger和相關方法只能與觸控式UI搭配使用（這是AEM做為雲端服務唯一可用的UI）。
 
 ### AEM的目標 {#goals-for-aem}
 
@@ -43,27 +41,17 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
    使用Sling Resource Mergare時，不建議從中複製整個結構， `/libs` 因為這會導致在自訂中保留太多資訊(通常 `/apps`)。 在以任何方式升級系統時，重複資訊會不必要地增加問題的可能性。
 
->[!NOTE]
->
->覆蓋不依賴於搜索路徑，它們使用屬 `sling:resourceSuperType` 性建立連接。
->
->不過，覆寫通常在下面定義， `/apps`因為AEM的最佳實務是在下面定義自訂 `/apps`; 這是因為，您不得變更下方的任何項 `/libs`目。
-
 >[!CAUTION]
 >
 >您 ***不得*** 更改路徑中的任 `/libs` 何內容。
 >
->這是因為下次升級 `/libs` 實例時會覆寫的內容（套用修補程式或功能套件時可能會覆寫）。
+>這是因為每當將升級套 `/libs` 用至您的例項時，都可能會覆寫的內容。
 >
->配置和其他更改的建議方法為：
->
->1. 重新建立必要項目(如中所 `/libs`示) `/apps`
+>* 覆蓋圖取決於搜 [尋路徑](/help/implementing/developing/introduction/overlays.md#search-paths)。
    >
    >
-1. 在 `/apps`
-
->
-
+* 覆蓋不依賴於搜索路徑，它們使用屬 `sling:resourceSuperType` 性建立連接。
+   >  不過，覆寫通常在下面定義， `/apps`因為在AEM中，最佳實務是將覆寫定義為雲端服務，即在下面定義自訂 `/apps`; 這是因為，您不得變更下方的任何項 `/libs`目。
 
 
 ### 屬性 {#properties}
