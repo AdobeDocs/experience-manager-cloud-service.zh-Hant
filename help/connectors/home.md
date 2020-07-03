@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 雲端服務連接器
 description: Adobe Experience Manager 雲端服務連接器自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
+source-git-commit: ffdb0a39684f1ccc587bf1cc401811a7ca6d649d
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 68%
+source-wordcount: '379'
+ht-degree: 70%
 
 ---
 
@@ -34,7 +34,6 @@ ht-degree: 68%
 | [Assets 使用手冊](/help/assets/home.md) | 瞭解如何將Experience Manager資產當做雲端服務使用及管理。 |
 | [轉移至 AEM 雲端服務](/help/move-to-cloud-service/home.md) | 了解轉換至雲端服務的過程。 |
 | [實作使用手冊](/help/implementing/home.md) | 瞭解如何將Experience Manager自訂為雲端服務部署，包括開發和部署主題。 |
-| [連接器使用手冊](/help/connectors/home.md) | 瞭解如何將Connectors整合至Experience Manager做為雲端服務。 |
 | [操作使用手冊](/help/operations/home.md) | 瞭解Experience Manager作為雲端服務的後端操作，例如索引和維護任務。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
