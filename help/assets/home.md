@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Assets 雲端服務
 description: Adobe Experience Manager Assets 雲端服務自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 72%
 
 ---
 
@@ -24,18 +24,20 @@ ht-degree: 100%
 | 使用手冊 | 說明 |
 |---|---|
 | [Experience Manager 雲端服務首頁](/help/landing/home.md) | Experience Manager 雲端服務的完整文件。 |
-| [概覽](/help/overview/home.md) | Experience Manager 雲端服務簡介和術語表。 |
-| [發行說明](/help/release-notes/home.md) | 內容包括發行說明、新增功能、過時和移除的功能，以及已知問題。 |
+| [概覽](/help/overview/home.md) | Experience Manager雲端服務簡介和辭彙表。 |
+| [發行說明](/help/release-notes/home.md) | 發行說明、新功能、已過時和已移除的功能，以及已知問題。 |
 | [核心概念](/help/core-concepts/home.md) | 本指南介紹 Experience Manager 雲端服務的核心概念，包括新服務的架構。 |
-| [安全性使用手冊](/help/security/home.md) | 說明 Experience Manager 雲端服務安全性的相關主題。 |
-| [入門](/help/onboarding/home.md) | 開始使用 Experience Manager 雲端服務，存取及保護重要資料。 |
-| [Sites 使用手冊](/help/sites-cloud/home.md) | 管理 Experience Manager Sites 雲端服務。 |
+| [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager 雲端服務與安全性相關的重要主題。 |
+| [入門](/help/onboarding/home.md) | 以雲端服務的形式開始使用Experience Manager — 存取並保護重要資料。 |
+| [Sites 使用手冊](/help/sites-cloud/home.md) | 瞭解如何以雲端服務的形式編寫和管理Experience Manager Sites。 |
+| [轉移至 AEM 雲端服務](/help/move-to-cloud-service/home.md) | 了解轉換至雲端服務的過程。 |
 | [實作使用指南](/help/implementing/home.md) | 自訂、開發及部署 Experience Manager 雲端服務。 |
-| [連接器使用手冊](/help/connectors/home.md) | 整合解決方案與 Experience Manager 雲端服務。 |
-| [操作使用手冊](/help/operations/home.md) | 說明 Experience Manager 雲端服務後端的操作方式，例如索引和維護任務。 |
+| [連接器使用手冊](/help/connectors/home.md) | 瞭解如何將Connectors整合至Experience Manager做為雲端服務。 |
+| [操作使用手冊](/help/operations/home.md) | 瞭解Experience Manager作為雲端服務的後端操作，例如索引和維護任務。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
+* [最近的檔案更新](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher 文件](/help/implementing/dispatcher/overview.md)
 * [HTL 文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)
 * [核心元件文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
