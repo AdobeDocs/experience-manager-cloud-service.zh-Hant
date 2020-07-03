@@ -1,270 +1,271 @@
 ---
-title: 使用內容傳輸工具
-description: 使用內容傳輸工具
+title: 使用內容轉移工具
+description: 使用內容轉移工具
 translation-type: tm+mt
 source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
 source-wordcount: '1582'
-ht-degree: 1%
+ht-degree: 91%
 
 ---
 
 
-# 使用內容傳輸工具 {#using-content-transfer-tool}
+# 使用內容轉移工具 {#using-content-transfer-tool}
 
-## 使用內容傳輸工具的重要考量 {#pre-reqs}
+## 使用內容轉移工具的重要考量 {#pre-reqs}
 
-請依照下節來瞭解執行內容傳輸工具時的重要考量事項：
+請跟隨以下章節，了解執行「內容轉移工具」時的重要考量：
 
-* 內容傳輸工具的最低系統需求為AEM 6.3 +和JAVA 8。 如果您使用較低的AEM版本，您將需要將內容儲存庫升級至AEM 6.5，才能使用內容傳輸工具。
+* 「內容轉移工具」的最低系統需求為 AEM 6.3 + 和 JAVA 8。如果您使用較舊版本的 AEM，您必須將內容存放庫升級至 AEM 6.5 才能使用「內容轉移工具」。
 
-* 如果您使用沙盒環 *境*，請確定您的環境已升級至2020年6月10日或更新版本。 如果您使用的是 *生產環境*，則會自動更新。
+* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. 如果您使用&#x200B;*生產環境*，則會自動更新。
 
-* 若要使用「內容傳輸工具」，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud服務例項中的AEM管理員群組。 未授權的使用者將無法擷取存取Token以使用內容傳輸工具。
+* 若要使用「內容傳輸工具」，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud服務例項中的AEM管理員群組。 無權限的使用者將無法擷取能使用「內容轉移工具」的存取 Token。
 
-* 在擷取階段中，內容傳輸工具會在作用中的AEM來源例項上執行。
+* 在提取階段中，「內容轉移工具」會在作用中的 AEM 來源例項上執行。
 
-* 作 *者的Ingestion Phase* （擷取階段）將縮小整個作者部署。 這表示在整個擷取程式期間，作者AEM將無法使用。
+* 製作的&#x200B;*擷取階段*&#x200B;將縮小整個製作部署。這表示在整段擷取程序中，將無法使用製作 AEM。
 
 * 建議的儲存庫大小上限是20GB，內容傳輸工具一次可以支援。
 
 ## 可用性 {#availability}
 
-內容傳輸工具可從軟體散發入口網站下載為zip檔案（內容傳輸工具v1.0.0）。 您可以透過Package Manager在來源Adobe Experience Manager(AEM)例項上安裝套件。
+內容傳輸工具可從軟體散發入口網站下載為zip檔案（內容傳輸工具v1.0.0）。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。
 
 >[!NOTE]
 >從軟體散發入口網站下載內 [容傳輸](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 工具。
 
-## 執行內容傳輸工具 {#running-tool}
+## 執行「內容轉移工具」 {#running-tool}
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
-請依照本節內容，瞭解如何使用內容傳輸工具將內容移轉至AEM做為雲端服務（作者／發佈）:
+請依照以下章節了解如何使用「內容轉移工具」，將內容移轉至 AEM 雲端服務 (製作/發佈)：
 
-1. 選擇Adobe Experience Manager並導覽至工具-> **營運** -> **內容傳輸**。
+1. 選擇 Adobe Experience Manager 並導覽至工具 -> **操作** -> **內容轉移**。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
-1. 按一下「 **建立移轉集** 」以建立新的移轉集。 將顯 **示「內容遷移集** 」詳細資訊。
+1. 按一下&#x200B;**建立移轉集**&#x200B;以建立新的移轉集。**內容移轉集詳細資訊**&#x200B;隨即顯示。
 
    >[!NOTE]
-   >您將檢視此畫面上現有的移轉集及其目前狀態。
+   >您將在以下畫面中看見現有移轉集及其目前狀態。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
 
-1. 填入「內容遷移集 **詳細資訊」螢幕中的欄位** ，如下所述。
+1. 請依照下方敘述，填入&#x200B;**內容移轉集詳細資訊**&#x200B;畫面中的欄位。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content-3.png)
 
 
-   1. **名稱**: 輸入遷移集的名稱。
+   1. **名稱**：輸入移轉集名稱。
       >[!NOTE]
-      >遷移集名稱不允許使用特殊字元。
+      >移轉集名稱不允許使用特殊字元。
 
-   1. **雲端服務設定**: 輸入目標AEM作為Cloud Service Author URL。
-
-      >[!NOTE]
-      >在內容傳輸活動期間，您一次最多可建立和維護四個移轉集。
-      >此外，您必須針對每個特定環境( *Stage*、 *Development*&#x200B;或 *Production*)分別建立移轉。
-
-   1. **存取Token**: 輸入存取Token。
+   1. **雲端服務設定**：輸入目標 AEM 雲端服務製作 URL。
 
       >[!NOTE]
-      >您可以導覽至，從作者例項擷取存取Token `/libs/granite/migration/token.json`。 存取Token是從雲端服務作者實例擷取。
+      >在內容轉移活動期間，您一次最多可以建立並維護四個移轉集。
+      >此外，您還須針對每個特定環境 (*預備*、*開發*&#x200B;或&#x200B;*生產*) 分別建立移轉。
 
-   1. **參數**: 選擇以下參數以建立遷移集：
+   1. **存取 Token**：輸入存取 Token。
 
-      1. **包含版本**: 視需要選擇。
+      >[!NOTE]
+      >您可以導覽至 `/libs/granite/migration/token.json`，從製作例項中擷取存取 Token。存取Token是從雲端服務作者實例擷取。
 
-      1. **要包含的路徑**: 使用路徑瀏覽器來選擇需要移轉的路徑。
+   1. **參數**：選取以下參數以建立移轉集：
+
+      1. **包含版本**：視需要選取。
+
+      1. **欲包含的路徑**：使用路徑瀏覽器來選取需要移轉的路徑。
 
          >[!IMPORTANT]
-         >建立移轉集時，會限制下列路徑：
+         >建立移轉集時會限制下列路徑：
          >* `/apps`
          >* `/libs`
          >* `/home`
          >* `/etc`
 
 
-1. 在「內 **容遷移集** 」詳細資訊螢幕中填入所有字 **段後，按一下保存** 。
+1. 在填入&#x200B;**內容移轉集詳細資訊**&#x200B;畫面中的所有欄位後，請按一下&#x200B;**儲存**。
 
-1. 您將在「概述」頁面中檢視移 *轉集* 。
+1. 您的移轉集會顯示在&#x200B;*綜覽*&#x200B;頁面中。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
 
-   此螢幕上的所有現有遷移集都顯示在「概述」頁 *上* ，其當前狀態和狀態資訊。
+   *「綜覽」*&#x200B;頁面中將顯示此畫面中上的所有現有移轉集，以及它們的目前狀態與狀態資訊。
 
-   * 紅 *色雲* ，表示您無法完成擷取程式。
-   * 綠 *色雲表示* ，您可以完成擷取程式。
-   * 黃 *色圖示* ，表示您未建立現有的移轉集，而特定移轉集是由同一實例中的其他使用者建立。
+   * *紅色雲朵*&#x200B;表示您無法完成提取程序。
+   * *綠色雲朵*&#x200B;表示您可以完成提取程序。
+   * *黃色圖示*&#x200B;表示您並未建立現有移轉集，且該特定移轉集是由相同例項中的其他使用者所建立。
 
-1. 從概述頁面選擇遷移集，然後按一下 **屬性** ，以查看或編輯遷移集屬性。
+1. 從「綜覽」頁面選取移轉集，然後按一下&#x200B;**屬性**&#x200B;以檢視或編輯移轉集屬性。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img6.png)
 
-### 內容傳輸中的提取過程 {#extraction-process}
+### 內容轉移中的提取程序 {#extraction-process}
 
-請依照下列步驟，從「內容傳輸工具」擷取您的移轉集：
+請依照下列步驟，從「內容轉移工具」中提取您的移轉集：
 
-1. 從「概述」頁面選取移 *轉集* ，然後按一下「 **擷取** 」以開始擷取。
+1. 從&#x200B;*「綜覽」*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**提取**&#x200B;即可開始提取。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
 
-1. 將顯 **示「遷移集抽取** 」對話框，然後按一下「 **抽取** 」以完成抽取階段。
+1. **移轉集擷取**&#x200B;對話框隨即顯示，請按一下&#x200B;**提取**&#x200B;以完成提取階段。
 
    >[!NOTE]
-   >您可以選擇在擷取階段覆寫測試容器。
+   >您可以選擇在提取階段中覆寫預備容器。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-2.png)
 
-1. 現 **在，EXTRACTION** 欄位顯示正在進行的抽取進程的 **RUNNING** 狀態。
+1. 現在，**提取**&#x200B;欄位將針對正在進行的提取程序顯示&#x200B;**執行中**&#x200B;狀態。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-3.png)
 
-   提取完成後，移轉集的狀態會更新為 **FINISHED** ，而「 *INFO* 」（資訊）欄 **位下會顯示綠色穩** 定的雲端圖示。
+   提取一旦完成，移轉集的狀態會更新為&#x200B;**已完成**，而&#x200B;**資訊**&#x200B;欄位下會顯示一個&#x200B;*實心綠色*&#x200B;的雲朵圖示。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
 
    >[!NOTE]
-   >您必須重新整理頁面才能檢視更新的狀態。
-   >啟動提取階段時，將建立寫鎖定並在 *60秒後釋放*。 因此，如果解壓停止，則需要等待一分鐘才能釋放鎖定，然後再次開始解壓。
+   >您必須重新整理頁面才能檢視更新後的狀態。
+   >提取階段開始時將建立寫入鎖定，並在 *60 秒*&#x200B;後釋放。因此，如果提取停止，則需等待一分鐘才能釋放鎖定並重新開始提取。
 
-#### 向上提取 {#top-up-extraction-process}
+#### 追加提取 {#top-up-extraction-process}
 
-「內容傳輸工具」的功能可支援差異內容的向上調整，只能傳輸自先前的內容傳輸活動以來所做的變更。
+「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。
 
 >[!NOTE]
->在初次傳輸內容後，建議您先執行頻繁的差異化內容頂層，以縮短最終差異化內容傳輸的內容凍結期，然後再在雲端服務上線。
+>初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
 
-一旦提取過程完成，您就可以使用自頂向上的提取方法來傳輸Delta內容。 請遵循下列步驟：
+提取程序一旦完成，您即可使用追加提取方法來轉移差異內容。請遵循下列步驟：
 
-1. 導覽至「 *概述* 」頁面，然後選擇要執行向上提取的遷移集。
+1. 導覽至&#x200B;*綜覽*&#x200B;頁面，並選取您要執行追加提取的移轉集。
 
-1. 按一 **下「擷取** 」以開始從上方擷取。
+1. 按一下&#x200B;**提取**&#x200B;即可開始追加提取。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
 
-1. 將顯 **示「遷移集抽取** 」對話框。
+1. **移轉集提取**&#x200B;對話框隨即顯示。
 
    >[!IMPORTANT]
-   >您應停用「擷取 **期間覆寫測試容器** 」選項。
+   >您必須停用&#x200B;**在提取期間覆寫預備容器**選項。
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-topup-1.png)
 
-### 內容傳輸中的擷取程式 {#ingestion-process}
+### 內容轉移中的擷取程序 {#ingestion-process}
 
-請依照下列步驟，從「內容傳輸工具」中擷取您的移轉集：
+請依照下列步驟，從「內容轉移工具」中擷取您的移轉集：
 
-1. 從「概述」頁面選取移 *轉集* ，然後按一下「 **收錄** 」以開始擷取。
+1. 從&#x200B;*綜覽*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**擷取**&#x200B;即可開始擷取。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
 
-1. 將顯 **示「遷移集提取** 」對話框。
+1. **移轉集擷取**&#x200B;對話框隨即顯示。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-2.png)
 
-   為了展示，「將內容 **收錄至作者」例項的選項** 已停用。 您可同時將內容收錄至「作者」和「發佈」。
+   為了示範，已停用&#x200B;**將內容擷取至製作例項**。您可以同時將內容擷取至「製作」和「發佈」。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-3.png)
 
-   按一下「 **收錄** 」以完成擷取階段。
+   按一下&#x200B;**擷取**&#x200B;以完成擷取階段。
 
-1. 擷取完成後，「作者擷取 **」欄位中的狀態會更新為「完成」，而「資訊」下方會顯示穩定的綠色雲端圖** 示 ********。
+1. 擷取一旦完成，**製作擷取**&#x200B;欄位中的狀態會更新為&#x200B;**已完成**，而&#x200B;**資訊**欄位下會顯示一個實心綠色的雲朵圖示。
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-4.png)
 
    >[!NOTE]
-   > 您必須重新整理頁面才能檢視更新的狀態。
+   > 您必須重新整理頁面才能檢視更新後的狀態。
 
-#### 向上擷取 {#top-up-ingestion-process}
+#### 追加擷取 {#top-up-ingestion-process}
 
-「內容傳輸工具」的功能支援差異內容 *向上* ，只能傳輸自先前內容傳輸活動以來所做的變更。
+「內容轉移工具」具備支援&#x200B;*追加*&#x200B;差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。
 
 >[!NOTE]
->在初次傳輸內容後，建議您先執行頻繁的差異化內容頂層，以縮短最終差異化內容傳輸的內容凍結期，然後再在雲端服務上線。
+>初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
 
-擷取程式完成後，您就可使用向上擷取方法來使用Delta內容。 請遵循下列步驟：
+擷取程序一旦完成，您即可使用追加擷取方法來轉移差異內容。請遵循下列步驟：
 
-1. 導覽至「 *概述* 」頁面，並選取您要執行向上擷取的移轉集。
+1. 導覽至&#x200B;*綜覽*&#x200B;頁面，並選取您要執行追加擷取的移轉集。
 
-1. 按一 **下「收錄** 」以開始從上方擷取。
+1. 按一下&#x200B;**擷取**&#x200B;即可開始追加提取。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
 
-1. 將顯 **示「遷移集提取** 」對話框。
+1. **移轉集擷取**&#x200B;對話框隨即顯示。
 
    >[!NOTE]
-   >您應停用「 *擦除* 」選項，以防止從先前的擷取活動刪除現有內容。
+   >您應停用&#x200B;*「擦去」*選項，以防止從先前的擷取活動中刪除現有內容。
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-topup-1.png)
 
-### 查看遷移集的日誌 {#viewing-logs-migration-set}
+### 檢視移轉集記錄 {#viewing-logs-migration-set}
 
-您可以從「概述」頁面檢視現有移轉集的 *記錄* 檔。
+您可以在&#x200B;*綜覽*頁面中檢視現有移轉集記錄。
 請遵循下列步驟：
 
-1. 導覽至「 *概述* 」頁面，然後選取您要刪除的移轉集，然後從動作列按 **一下「檢視記錄** 」。
+1. 導覽至&#x200B;*綜覽*&#x200B;頁面，並選取您要刪除的移轉集，然後按一下動作列中的&#x200B;**檢視記錄**。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/view-log1.png)
 
-1. 將顯 **示「日** 志」對話框。 按一下 **抽取日誌** ，在新頁籤中查看日誌。
+1. **記錄**&#x200B;對話框隨即顯示。按一下&#x200B;**提取記錄**，即可在新索引標籤中檢視記錄。
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log2.png)Or,
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/view-log2.png)
+或者，
 
-   您也可以從「概述」畫面中檢視移轉集的 *記錄* 。 選擇遷移集，然後按一下「抽取」( **EXTRACTION** )欄位下的狀態。 在這種情況下，按一下「 **完成** 」(FINISHED)查看新頁籤中的日誌。
+   您也可以在&#x200B;*綜覽*&#x200B;畫面中檢視移轉集記錄。請選取移轉集，然後按一下&#x200B;**提取**&#x200B;欄位下的狀態。在這個情況下，按一下&#x200B;**已完成**&#x200B;即可在新索引標籤中檢視記錄。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
 1. 若要追蹤記錄檔而不使用使用者介面，您可將SSH整合至來源AEM環境，並追蹤記錄檔 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`。
 
-### 刪除遷移集 {#deleting-migration-set}
+### 刪除移轉集 {#deleting-migration-set}
 
-您可以從「概述」頁面刪除移 *轉集* 。
+您可以在&#x200B;*綜覽頁面*中刪除移轉集。
 請遵循下列步驟：
 
-1. 導覽至「 *概述* 」頁面，然後選取您要刪除的移轉集，然後從動作列按一下「 **刪除** 」。
+1. 導覽至&#x200B;*綜覽*&#x200B;頁面，並選取您要刪除的移轉集，然後按一下動作列中的&#x200B;**刪除**。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/delete-1.png)
 
-1. 按一下 **從刪** 除遷移集對話框中刪除 **** ，以確認刪除。
+1. 在&#x200B;**刪除移轉集**&#x200B;對話框中按一下&#x200B;**刪除**&#x200B;以確認刪除。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
 
 ## 疑難排解 {#troubleshooting}
 
-### 缺少Blob ID {#missing-blobs}
+### 遺失 Blob ID {#missing-blobs}
 
-如果報告缺少的blob ID（如下所述），則需要在現有儲存庫中執行一致性檢查並恢復缺少的blob。
+如有回報指出遺失 Blob ID (如下所述)，則需要在現有存放庫中執行一致性檢查，並還原遺失的 Blob。
 `ERROR o.a.j.o.p.b.AbstractSharedCachingDataStore - Error retrieving record [ba45c53f8b687e7056c85dceebf8156a0e6abc7e]`
 
-執行下列命令
+以下命令將會執行
 
 >[!NOTE]
-> `--verbose` 標籤是報告引用blob的節點路徑所必需的。
+> `--verbose` 如果要回報引用 Blob 的節點路徑，則必須使用旗標。
 
-**針對儲存庫AEM 6.5（Oak 1.8及以下版本）**
+**存放庫 AEM 6.5 (Oak 1.8 及以下的版本)**
 
 ```shell
 java -jar oak-run.jar datastorecheck --consistency --store [<SEGMENT_STORE_PATH>|<MONGO_URI>] --[s3ds|fds] <DATASTORE_CFG> --verbose <OUT_DIR> --dump
 ```
 
-**對於具有Oak > 1.10的儲存庫**
+**具有 Oak > 1.10 的存放庫**
 
 ```shell
 java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO_URI>] --[s3ds|fds|azureds] <DATASTORE_CFG> --out-dir <OUT_DIR> --work-dir <TEMP_DIR> --verbose
 ```
 
-如需詳細 [資訊，請參閱Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) 。
+如需詳細資訊，請參考 [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)。
 
-然後，可以檢查在上述 ** OUT_DIR中為一致性而建立的檔案是否缺少二進位檔案，以及採取的適當操作（如從備份中恢復、刪除路徑、重新編製索引等）。
+接著，即可針對上述在 *OUT_DIR* 中建立、有一致性問題的檔案，檢查是否有路徑遺失二進位檔案，以及是否有採取適當操作如透過備份還原、刪除路徑、重新索引等等。
 
-### UI行為 {#ui-behavior}
+### UI 行為 {#ui-behavior}
 
-身為使用者，您可能會在內容傳輸工具的使用者介面(UI)中看到下列行為變更：
+身為使用者，您可能會在「內容轉移工具」的使用者介面 (UI) 中看到下列行為變更：
 
-* 使用者為作者URL（開發／階段／生產）建立移轉集，並成功執行擷取和擷取。
+* 使用者為製作 URL (開發/預備/生產) 建立移轉集，並成功執行提取和擷取。
 
-* 然後，使用者會針對相同的作者URL建立新的移轉集，並對新移轉集執行擷取和擷取。 UI顯示第一個遷移集的接收狀態更改為 **FAILED** ，沒有可用日誌。
+* 然後，使用者會為相同的製作 URL 建立新的移轉集，並對新移轉集執行提取和擷取。UI 會顯示第一個移轉集的擷取狀態已變更為&#x200B;**「失敗」**，並且沒有可用記錄。
 
-* 這並不意味著第一個遷移集的提取失敗。 出現此行為是因為啟動新的提取作業時，它會刪除先前的提取作業。 因此，應忽略第一個遷移集上的更改狀態。
+* 這並不表示第一個移轉集擷取失敗。之所以會出現此行為，是因為開始新的擷取工作時，將刪除上一個擷取工作。因此，請忽略第一個移轉集的變更狀態。
 
-* 「內容傳輸工具UI」中的圖示可能與本指南中顯示的螢幕擷取畫面不同，或根據來源AEM例項的版本而完全不顯示。
+* 「內容轉移工具」UI 中的圖示可能與本指南中顯示的螢幕擷圖不同，也可能完全不顯示 (取決於來源 AEM 例項的版本)。
 
 
