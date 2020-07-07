@@ -2,10 +2,10 @@
 title: AEM 雲端服務 SDK
 description: 待完成
 translation-type: tm+mt
-source-git-commit: df6e6bc95b5f0489d0da034c27d8f3a4314a6e27
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -40,12 +40,14 @@ AEM as a Cloud Service SDK由下列物件組成：
 </dependency>
 ```
 
->[!NOTE] SDK的版本項目應符合AEM的雲端服務版本。 您可以登入AEM，然後移至畫面右上角的問號並選取「關於 **[!UICONTROL Adobe Experience Manager」，以瞭解您使用的版本]**
+>[!NOTE]
+>
+>SDK的版本項目應符合AEM的雲端服務版本。 您可以登入AEM，然後移至畫面右上角的問號並選取「關於 **[!UICONTROL Adobe Experience Manager」，以瞭解您使用的版本]**
 
 
 ## 使用新的SDK版本重新整理本機專案 {#refreshing-a-local-project-with-a-new-skd-version}
 
-建議何時使用新的SDK重新整理本機專案？
+建議何時使用新SDK重新整理本機專案？
 
 建議您 *至少在每月* 維護髮行後重新整理它。
 
