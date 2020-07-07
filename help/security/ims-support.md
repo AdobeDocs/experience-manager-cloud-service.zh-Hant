@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 雲端服務的 IMS 支援
 description: Adobe Experience Manager 雲端服務的 IMS 支援
 translation-type: tm+mt
-source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 100%
@@ -91,7 +91,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 >[!NOTE]
 >
-> 搶鮮版 **2.4RC1** 提供建立動態群組的相關支援，可從[此處](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)取得。
+>搶鮮版 **2.4RC1** 提供建立動態群組的相關支援，可從[此處](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)取得。
 
 此版本的主要功能是能在 Admin Console 中動態對應新 LDAP 群組，以取得使用者成員資格，並且建立動態使用者群組。
 
@@ -159,7 +159,8 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 
 
 >[!NOTE]
-> 在 IMS 中建立的任何使用者都可使用 Adobe ID 或 Federated ID 來建立。若是使用 Adobe ID 設定使用者，使用者需透過公司合作之身分服務供應商登入，以完成身分驗證。
+>
+>在 IMS 中建立的任何使用者都可使用 Adobe ID 或 Federated ID 來建立。若是使用 Adobe ID 設定使用者，使用者需透過公司合作之身分服務供應商登入，以完成身分驗證。
 
 接著，系統會將使用者重新導向至 IMS 登入畫面，此時使用者需輸入憑證：
 
