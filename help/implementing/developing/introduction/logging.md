@@ -2,10 +2,10 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1097'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ AEM即雲端服務是客戶可加入自訂程式碼的平台，可為客戶群�
 * the format to be used when writing the log messages
 -->
 
-## AEM as a Cloud Service Logging {#aem-as-a-cloud-service-logging}
+## AEM作為雲端服務記錄 {#aem-as-a-cloud-service-logging}
 
 AEM做為雲端服務，可讓您設定：
 
@@ -46,8 +46,9 @@ AEM做為雲端服務，可讓您設定：
 
 ### 標準記錄工具和作者 {#standard-loggers-and-writers}
 
-> [!IMPORTANT]
-> 如果需要，可自訂這些設定，但標準組態適合大部分安裝。 但是，如果您需要自訂標準記錄設定，請務必只在環境中 `dev` 執行。
+>[!IMPORTANT]
+>
+>如果需要，可自訂這些設定，但標準組態適合大部分安裝。 但是，如果您需要自訂標準記錄設定，請務必只在環境中 `dev` 執行。
 
 標準AEM中包含某些記錄檔和撰寫程式，做為雲端服務安裝。
 
@@ -107,7 +108,7 @@ AEM WCM和儲存庫的所有存取要求都會在此處註冊。
 
 **Apache Web Server / Dispatcher Logging**
 
-這是用於調試Dispatcher問題的日誌。 如需詳細資訊，請參 [閱除錯您的Apache和Dispatcher設定](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/)。
+這是用於調試Dispatcher問題的日誌。 如需詳細資訊，請參 [閱除錯您的Apache和Dispatcher設定](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)。
 
 <!-- Besides the three types of logs present on an AEM as a Cloud Service instance (`request`, `access` and `error` logs) there is another dispatcher/overview.html#debugging-apache-and-dispatcher-configuration.
 
@@ -192,13 +193,13 @@ AEM as a Cloud Service使用下列功能將記錄訊息寫入檔案：
 
 >[!NOTE]
 >
-> 若要執行下列的設定變更，您必須在本機開發環境上建立這些變更，然後將它們推送至AEM做為雲端服務例項。 如需如何執行此動作的詳細資訊，請參 [閱「部署至AEM as a Cloud Service](/help/implementing/deploying/overview.md)」。
+>若要執行下列的設定變更，您必須在本機開發環境上建立這些變更，然後將它們推送至AEM做為雲端服務例項。 如需如何執行此動作的詳細資訊，請參 [閱「部署至AEM as a Cloud Service](/help/implementing/deploying/overview.md)」。
 
 **啟用DEBUG日誌級別**
 
 >[!WARNING]
 >
-> 全局激活DEBUG日誌級別將產生大量難以篩選的資訊。 建議您僅針對需要除錯的服務啟用它。 如需詳細資訊，請參 [閱「個別服務的記錄員和撰寫者」](logging.md#loggers-and-writers-for-individual-services)。
+>全局激活DEBUG日誌級別將產生大量難以篩選的資訊。 建議您僅針對需要除錯的服務啟用它。 如需詳細資訊，請參 [閱「個別服務的記錄員和撰寫者」](logging.md#loggers-and-writers-for-individual-services)。
 
 預設日誌級別為INFO，即不記錄DEBUG消息。
 若要啟用DEBUG記錄檔層級，請設定
