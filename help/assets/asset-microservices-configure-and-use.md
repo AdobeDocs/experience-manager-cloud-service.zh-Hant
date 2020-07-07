@@ -3,7 +3,7 @@ title: 設定並使用資產微服務進行資產處理
 description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1875'
 ht-degree: 3%
@@ -38,7 +38,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> 此處所述的資產處理會取代 `DAM Update Asset` 舊版Experience Manager中的工作流程模型。 大部分的標準轉譯產生和中繼資料相關步驟會由資產microservices處理取代，而剩下的步驟（如果有的話）則可由後處理工作流程設定取代。
+>此處所述的資產處理會取代 `DAM Update Asset` 舊版Experience Manager中的工作流程模型。 大部分的標準轉譯產生和中繼資料相關步驟會由資產microservices處理取代，而剩下的步驟（如果有的話）則可由後處理工作流程設定取代。
 
 ## 開始處理資產 {#get-started}
 
@@ -169,7 +169,7 @@ Custom Workflow Runner服務(`com.adobe.cq.dam.processor.nui.impl.workflow.Custo
 >[!NOTE]
 >
 >「自訂工作流程執行者」的設定是OSGi服務的設定。 如需 [如何部署OSGi組態的詳細資訊，請參閱部署至Experience Manager](/help/implementing/deploying/overview.md) 。
-> OSGi Web主控台與AEM的內部部署和受管理服務部署不同，不直接在雲端服務部署中提供。
+>OSGi Web主控台與AEM的內部部署和受管理服務部署不同，不直接在雲端服務部署中提供。
 
 如需後處理工作流程中可使用哪些標準工作流程步驟的詳細資訊，請參閱開發 [人員參考中後處理工作流程中的工作流程](developer-reference-material-apis.md#post-processing-workflows-steps) 。
 
