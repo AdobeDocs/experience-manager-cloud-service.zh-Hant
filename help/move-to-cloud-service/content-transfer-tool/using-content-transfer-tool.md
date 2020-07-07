@@ -2,7 +2,7 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 91%
@@ -238,7 +238,8 @@ ht-degree: 91%
 以下命令將會執行
 
 >[!NOTE]
-> `--verbose` 如果要回報引用 Blob 的節點路徑，則必須使用旗標。
+>
+>`--verbose`如果要回報引用 Blob 的節點路徑，則必須使用旗標。
 
 **存放庫 AEM 6.5 (Oak 1.8 及以下的版本)**
 
