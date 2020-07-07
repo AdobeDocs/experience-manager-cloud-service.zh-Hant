@@ -2,7 +2,7 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 translation-type: tm+mt
-source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1475'
 ht-degree: 2%
@@ -72,7 +72,7 @@ AS NOTE: the above is internal for now.
 
 >[!NOTE]
 >
-> Jackrabbit Filevault Maven Package Plugin **1.1.0版有已知問題，不允許您新增** 至的模組 `oak:index``<packageType>application</packageType>`。 若要解決這個問題，請使 **用1.0.4版**。
+>Jackrabbit Filevault Maven Package Plugin **1.1.0版有已知問題，不允許您新增** 至的模組 `oak:index``<packageType>application</packageType>`。 若要解決這個問題，請使 **用1.0.4版**。
 
 索引定義現在已標示為自訂和版本化：
 
@@ -124,7 +124,7 @@ AS NOTE: the above is internal for now.
 
 >[!NOTE]
 >
-> `<indexName>-custom-<customerVersionNumber>` AEM需要做為Cloud服務，才能將它標示為現有索引的取代。
+>`<indexName>-custom-<customerVersionNumber>` AEM需要做為Cloud服務，才能將它標示為現有索引的取代。
 
 | 索引 | 現成可用的索引 | 用於第1版 | 用於第2版 |
 |---|---|---|---|
