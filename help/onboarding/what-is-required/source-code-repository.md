@@ -2,7 +2,7 @@
 title: 原始碼儲存庫——雲端服務
 description: 原始碼儲存庫——雲端服務
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 1%
@@ -26,4 +26,4 @@ $ git clone {URL}
 
 >[!NOTE]
 >
-> 使用者可以取出其程式碼的副本，並在本機程式碼儲存庫中進行變更。 當使用者準備就緒後，就可以將其程式碼變更提交回Cloud Manager的遠端程式碼儲存庫。
+>使用者可以取出其程式碼的副本，並在本機程式碼儲存庫中進行變更。 當使用者準備就緒後，就可以將其程式碼變更提交回Cloud Manager的遠端程式碼儲存庫。
