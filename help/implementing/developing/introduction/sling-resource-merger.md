@@ -2,10 +2,10 @@
 title: 在Adobe Experience Manager中將Sling Resource Merger當做雲端服務
 description: Sling Resource Merger提供存取和合併資源的服務
 translation-type: tm+mt
-source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1160'
+ht-degree: 1%
 
 ---
 
@@ -51,8 +51,9 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
    >
    >
 * 覆蓋不依賴於搜索路徑，它們使用屬 `sling:resourceSuperType` 性建立連接。
-   >  不過，覆寫通常在下面定義， `/apps`因為在AEM中，最佳實務是將覆寫定義為雲端服務，即在下面定義自訂 `/apps`; 這是因為，您不得變更下方的任何項 `/libs`目。
-
+>
+>
+不過，覆寫通常在下面定義， `/apps`因為在AEM中，最佳實務是將覆寫定義為雲端服務，即在下面定義自訂 `/apps`; 這是因為，您不得變更下方的任何項 `/libs`目。
 
 ### 屬性 {#properties}
 
@@ -198,7 +199,6 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
       * 類型: `String[]`
       * 值： 要隱藏／忽略的子節點清單(如中 `/libs`定義)
-
       通配符&amp;ast; 可用於隱藏／忽略所有子節點。
 
 
