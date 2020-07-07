@@ -3,7 +3,7 @@ title: 將資產、資料夾和集合發佈至 Brand Portal
 description: 將資產、資料夾和集合發佈至 Brand Portal。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
@@ -26,7 +26,6 @@ ht-degree: 100%
 >[!NOTE]
 >
 >Adobe 建議將發佈時間交錯開來，尤其建議選擇非尖峰時段，如此 AEM 作者才不會佔用過多資源。
-
 
 ## 將資產發佈至 Brand Portal {#publish-assets-to-bp}
 
@@ -110,6 +109,7 @@ ht-degree: 100%
          按一下&#x200B;**下一步**。
 
       1. 在&#x200B;**[!UICONTROL 範圍]**&#x200B;中確認您的選取項目，然後按一下&#x200B;**[!UICONTROL 發佈至 Brand Portal]**。
+
    系統會顯示訊息，指出資料夾已排入佇列，等候發佈至 Brand Portal。登入 Brand Portal 介面可查看已發佈的資料夾。
 
 1. **稍後發佈資料夾**
@@ -186,7 +186,6 @@ ht-degree: 100%
 >內容片段無法發佈至 Brand Portal。因此，如果您在 AEM Assets 中選取內容片段，就無法使用&#x200B;**[!UICONTROL 發佈至 Brand Portal]**&#x200B;動作。
 >
 >如果從 AEM Assets 將含有內容片段的集合發佈至 Brand Portal，則除了內容片段以外，資料夾的所有內容都會複製至 Brand Portal 介面。
-
 
 ### 發佈集合 {#publish-collections}
 
