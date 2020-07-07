@@ -2,7 +2,7 @@
 title: 將您的數位資產新增至Adobe Experience Manager
 description: 將您的數位資產新增至Adobe Experience Manager做為雲端服務
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 2%
@@ -24,9 +24,9 @@ Adobe Experience Manager運用豐富的中繼資料、智慧標籤、轉譯和�
 
 >[!NOTE]
 >
-> Experience Manager作為雲端服務，運用了新的上傳資產方式——直接二進位上傳。 預設會支援立即可用的產品功能和用戶端，例如AEM使用者介面、Adobe Asset Link、AEM案頭應用程式，因此對一般使用者是透明的。
+>Experience Manager作為雲端服務，運用了新的上傳資產方式——直接二進位上傳。 預設會支援立即可用的產品功能和用戶端，例如AEM使用者介面、Adobe Asset Link、AEM案頭應用程式，因此對一般使用者是透明的。
 >
-> 上傳由技術團隊自訂或擴充的程式碼，客戶需要使用新的上傳API和通訊協定。
+>上傳由技術團隊自訂或擴充的程式碼，客戶需要使用新的上傳API和通訊協定。
 
 ## Upload assets {#upload-assets}
 
@@ -37,6 +37,7 @@ Adobe Experience Manager運用豐富的中繼資料、智慧標籤、轉譯和�
 
    * 在工具列上，點選「建 **[!UICONTROL 立]** 」圖示。 然後，在功能表上，點選「 **[!UICONTROL 檔案」]**。 如有需要，可在顯示的對話框中更名檔案。
    * 在支援HTML5的瀏覽器中，直接將資產拖曳至「資產」使用者介面。 不會顯示要更名檔案的對話框。
+
    ![create_menu](assets/create_menu.png)
 
    要選擇多個檔案，請按Ctrl或Command鍵，然後在檔案選擇器對話框中選擇資產。 使用iPad時，一次只能選取一個檔案。
@@ -80,7 +81,7 @@ Adobe Experience Manager運用豐富的中繼資料、智慧標籤、轉譯和�
 
 >[!NOTE]
 >
-> 若要將巢狀資料夾階層上傳至AEM，請參閱 [大量上傳資產](#bulk-upload)。
+>若要將巢狀資料夾階層上傳至AEM，請參閱 [大量上傳資產](#bulk-upload)。
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -135,7 +136,7 @@ AEM Assets會防止您上傳檔案名稱中包含禁止字元的資產。 如果
 
 >[!NOTE]
 >
-> 在設定和部署至Experience Manager時，若要從其他系統進行內容移轉，就必須仔細規劃、考慮和選擇工具，才能進行大量上傳。 請參閱部 [署指南](/help/implementing/deploying/overview.md) ，以取得內容移轉方法的指引。
+>在設定和部署至Experience Manager時，若要從其他系統進行內容移轉，就必須仔細規劃、考慮和選擇工具，才能進行大量上傳。 請參閱部 [署指南](/help/implementing/deploying/overview.md) ，以取得內容移轉方法的指引。
 
 ## 使用案頭用戶端上傳資產 {#upload-assets-desktop-clients}
 
@@ -162,7 +163,7 @@ AEM Assets會防止您上傳檔案名稱中包含禁止字元的資產。 如果
 
 >[!NOTE]
 >
-> 動態媒體裁切和資產的其他操作不具破壞性，即不會變更上傳的原始內容，而是提供在傳送資產時要進行裁切或媒體轉換的參數
+>動態媒體裁切和資產的其他操作不具破壞性，即不會變更上傳的原始內容，而是提供在傳送資產時要進行裁切或媒體轉換的參數
 
 對於已指派處理設定檔的檔案夾，描述檔名稱會出現在卡片檢視的縮圖上。 在清單視圖中，配置檔案名稱將顯示在「處 **[!UICONTROL 理配置檔案]** 」列中。
 
