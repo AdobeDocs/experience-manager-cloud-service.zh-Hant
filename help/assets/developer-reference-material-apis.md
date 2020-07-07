@@ -3,7 +3,7 @@ title: 'Adobe Experience Manager雲端服務中用於數位資產管理的資產
 description: 資產API可讓基本的建立——讀取——更新——刪除(CRUD)操作來管理資產，包括二進位、中繼資料、轉譯、註解和內容片段。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 1%
@@ -42,8 +42,9 @@ Experience Manager雲端服務提供將資產上傳至儲存庫的新方式—�
 
 此方法應提供更具擴充性和效能的資產上傳處理。
 
-> !![NOTE]
-若要檢閱實作此方法的用戶端程式碼，請參閱開放原始碼 [aem-upload程式庫](https://github.com/adobe/aem-upload)
+>[!NOTE]
+>
+>若要檢閱實作此方法的用戶端程式碼，請參閱開放原始碼 [aem-upload程式庫](https://github.com/adobe/aem-upload)
 
 ### 開始上傳 {#initiate-upload}
 
@@ -114,8 +115,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 | `replace` | 布林值 (Boolean) | 可選 | 如果 `True` 資產已具有指定名稱，Experience Manager會刪除資產，然後重新建立資產。 |
 
 >!![NOTE]
->
-> 如果資產已存在且未指 `createVersion` 定或 `replace` 未指定，則Experience Manager會使用新二進位檔更新資產的目前版本。
+如果資產已存在且未指 `createVersion` 定或 `replace` 未指定，則Experience Manager會使用新二進位檔更新資產的目前版本。
 
 如同啟動程式，完整的請求資料可能包含多個檔案的資訊。
 
