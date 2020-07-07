@@ -3,7 +3,7 @@ title: 使用 Brand Portal 設定 AEM Assets 雲端服務
 description: 使用 Brand Portal 設定 AEM Assets 雲端服務。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 26%
@@ -32,7 +32,6 @@ Adobe Experience Manager(AEM)Assets是透過Adobe Developer Console以品牌入�
 >品牌入口網站的租用戶只能設定一個AEM Assets雲端例項。
 >
 >請勿設定具有多個AEM Assets雲端例項的品牌入口網站租用戶。
-
 
 ## 必備條件 {#prerequisites}
 
@@ -204,7 +203,7 @@ IMS 設定包括兩個步驟：
 
 執行下列步驟以設定您在取得公用憑證時所建立 [的IMS帳戶](#public-certificate)。
 
-1. 開啟「IMS設定」並導覽至「帳 **[!UICONTROL 戶]** 」標籤。 您在取得公開證書時 [仍保持頁面開啟](#public-certificate)。
+1. 開啟「IMS設定」並導覽至「帳 **[!UICONTROL 戶]** 」標籤。 您在取得公開憑證時 [仍保持頁面開啟](#public-certificate)。
 
 1. 指定 IMS 帳戶的&#x200B;**[!UICONTROL 標題]**。
 
@@ -230,8 +229,6 @@ IMS 設定包括兩個步驟：
 >您只能有一個IMS設定。 請勿建立多個 IMS 組態。
 >
 >確保IMS配置通過健康檢查。 如果配置未通過健康檢查，則無效。 您必須刪除它並建立新的有效設定。
-
-
 
 ### 設定雲端服務 {#configure-the-cloud-service}
 
@@ -343,8 +340,6 @@ IMS 設定包括兩個步驟：
 >[!NOTE]
 >
 >如果父資料夾不存在上述例子的 Brand Portal 中，或父資料夾已在 AEM Assets 中經過修改，系統會產生其他請求。
-
-
 
 <!--
 
