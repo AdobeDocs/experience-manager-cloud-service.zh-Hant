@@ -2,25 +2,27 @@
 title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 translation-type: tm+mt
-source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3914'
-ht-degree: 1%
+ht-degree: 9%
 
 ---
 
 
 # 雲端中的 Dispatcher {#Dispatcher-in-the-cloud}
 
-## Apache和Dispatcher組態與測試 {#apache-and-dispatcher-configuration-and-testing}
+## Apache and Dispatcher configuration and testing {#apache-and-dispatcher-configuration-and-testing}
 
-本節說明如何將AEM架構為雲端服務Apache和Dispatcher組態，以及如何在部署至雲端環境之前在本機驗證並執行它。 此外，也說明在雲端環境中進行除錯。 如需Dispatcher的其他資訊，請參閱 [AEM Dispatcher檔案](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)。
+本節說明如何將AEM架構為雲端服務Apache和Dispatcher組態，以及如何在部署至雲端環境之前在本機驗證並執行它。 此外，也說明在雲端環境中進行除錯。 如需Dispatcher的其他資訊，請參閱 [AEM Dispatcher檔案](https://docs.adobe.com/content/help/zh-Hant/experience-manager-dispatcher/using/dispatcher.html)。
 
 >[!NOTE]
+>
 >Windows使用者將需要使用Windows 10 Professional或其他支援Docker的散發版本。 這是在本地電腦上運行和調試Dispatcher的先決條件。 以下各節包含使用Mac或Linux版本SDK的命令，但Windows SDK也可以使用類似的方式。
 
 >[!WARNING]
-> Windows使用者： 目前版本的AEM（Cloud Service本機Dispatcher Tools,v2.0.20）與Windows不相容。 請聯絡 [Adobe支援](https://daycare.day.com/home.html) ，以取得Windows相容性的更新。
+>
+>Windows使用者： 目前版本的AEM（Cloud Service本機Dispatcher Tools,v2.0.20）與Windows不相容。 請聯絡 [Adobe支援](https://daycare.day.com/home.html) ，以取得Windows相容性的更新。
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
@@ -474,23 +476,25 @@ Dispatcher配置結構在Managed Services和AEM（即雲服務）之間有差異
 
 ## 如何將AMS轉換為AEM做為Cloud服務分派程式設定
 
-下節提供如何轉換AMS配置的逐步說明。 假定您的存檔具有類似於 [Cloud Manager Dispatcher配置中所述的結構](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+下節提供如何轉換AMS配置的逐步說明。 It assumes
+that you have an archive with a structure similar to the one described in [Cloud Manager dispatcher configuration](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
-### 解壓縮封存並移除最終首碼
+### 提取封存並移除最終首碼
 
 將檔案解壓縮至檔案夾，並確定立即的子檔案夾以 `conf`、 `conf.d``conf.dispatcher.d` 、和開頭 `conf.modules.d`。 如果他們沒有，請在階層中向上移動。
 
-### 移除未儲存的子檔案夾和檔案
+### 移除未使用的子資料夾和檔案
 
-移除子檔 `conf` 案夾 `conf.modules.d`和，以及符合的檔案 `conf.d/*.conf`。
+Remove subfolders `conf` and `conf.modules.d`, as well as files matching `conf.d/*.conf`.
 
-### 移除所有非發佈的虛擬主機
+### 移除所有非發佈用的虛擬主機
 
-刪除名稱中包 `conf.d/enabled_vhosts` 含、 `author`、 `unhealthy``health``lc``flush` 或任何虛擬主機檔案。 所有未連結到 `conf.d/available_vhosts` 的虛擬主機檔案也可以刪除。
+刪除名稱中包 `conf.d/enabled_vhosts` 含、 `author`、 `unhealthy``health``lc``flush` 或任何虛擬主機檔案。 All virtual host files in `conf.d/available_vhosts` that are not
+linked to can be removed as well.
 
-### 刪除或注釋不引用埠80的虛擬主機部分
+### 移除或註解未引用連接埠 80 的虛擬主機區段
 
-如果您的虛擬主機檔案中仍然有專門引用埠80以外的埠的部分，例如
+如果您的虛擬主機檔案中，仍有區段單獨引用連接埠 80 以外的連接埠，例如：
 
 ```
 <VirtualHost *:443>
@@ -498,130 +502,154 @@ Dispatcher配置結構在Managed Services和AEM（即雲服務）之間有差異
 </VirtualHost>
 ```
 
-移除或加上註解。 這些章節中的陳述式將不會被處理，但是，如果您保留這些陳述式，您最後可能仍會編輯這些陳述式，而不會產生任何效果，這會令人困惑。
 
-### 檢查重寫
+請移除它們或加上註解。這些區段中的陳述式將不會進行處理，但如果您保留這些陳述式，您最終可能仍會編輯它們，並因為徒勞無功地而感到困惑。
+
+### 檢查重新寫入
 
 Enter directory `conf.d/rewrites`.
 
-刪除名為和的任 `base_rewrite.rules` 何文 `xforwarded_forcessl_rewrite.rules` 件，並記住刪除 `Include` 虛擬主機檔案中引用它們的語句。
+Remove any file named `base_rewrite.rules` and `xforwarded_forcessl_rewrite.rules` and remember to
+remove `Include` statements in the virtual host files referring to them.
 
-如果 `conf.d/rewrites` 現在包含單一檔案，則應重新命名為 `rewrite.rules` ，而且不要忘記在虛擬主機 `Include` 檔案中也參照該檔案的陳述式。
+If `conf.d/rewrites` now contains a single file, it should be renamed to `rewrite.rules` and don&#39;t
+forget to adapt the `Include` statements referring to that file in the virtual host files as well.
 
-但是，如果資料夾包含多個虛擬主機特定檔案，則其內容應被添加到虛擬主 `Include` 機檔案中引用它們的語句中。
+If the folder however contains multiple, virtual host specific files, their contents should be
+copied to the `Include` statement referring to them in the virtual host files.
 
 ### 檢查變數
 
 Enter directory `conf.d/variables`.
 
-刪除任何名為的文 `ams_default.vars` 件，並記得刪除 `Include` 引用它們的虛擬主機檔案中的語句。
+Remove any file named `ams_default.vars` and remember to remove `Include` statements in the virtual
+host files referring to them.
 
-如果 `conf.d/variables` 現在包含單一檔案，則應重新命名為 `custom.vars` ，而且不要忘記在虛擬主機 `Include` 檔案中也參照該檔案的陳述式。
+If `conf.d/variables` now contains a single file, it should be renamed to `custom.vars` and don&#39;t
+forget to adapt the `Include` statements referring to that file in the virtual host files as well.
 
-但是，如果資料夾包含多個虛擬主機特定檔案，則其內容應被添加到虛擬主 `Include` 機檔案中引用它們的語句中。
+If the folder however contains multiple, virtual host specific files, their contents should be
+copied to the `Include` statement referring to them in the virtual host files.
 
 ### 刪除允許清單
 
-刪除虛擬主 `conf.d/whitelists` 機檔案中 `Include` 引用該子資料夾中某個檔案的資料夾和刪除語句。
+Remove the folder `conf.d/whitelists` and remove `Include` statements in the virtual host files referring to
+some file in that subfolder.
 
-### 取代任何不再可用的變數
+### 取代任何已無法使用的變數
 
 在所有虛擬主機檔案中：
 
 重新命 `PUBLISH_DOCROOT` 名為 `DOCROOT`移除參照名為、或 `DISP_ID``PUBLISH_FORCE_SSL` `PUBLISH_WHITELIST_ENABLED`
 
-### 運行驗證器以檢查狀態
+### 執行驗證器以檢查狀態
 
-在目錄中運行dispatcher validator，使用 `httpd` subcommand :
+Run the dispatcher validator in your directory, with the `httpd` subcommand:
 
 ```
 $ validator httpd .
 ```
 
-如果您看到有關遺失包含檔案的錯誤，請檢查您是否正確重新命名這些檔案。
+如果您看見有關遺失 Include 檔案的錯誤，請檢查您是否已正確地重新命名那些檔案。
 
 如果您看到未列出的Apache指令，請將其刪除。
 
-### 移除所有非發佈農場
+### 移除所有非發佈用的伺服器陣列
 
-刪除名稱中 `conf.dispatcher.d/enabled_farms` 包含 `author`、 `unhealthy`、 `health``lc``flush` 或的任何群檔案。 中所有未連結 `conf.dispatcher.d/available_farms` 到的群檔案也可以刪除。
+刪除名稱中 `conf.dispatcher.d/enabled_farms` 包含 `author`、 `unhealthy`、 `health``lc``flush` 或的任何群檔案。 All farm files in `conf.dispatcher.d/available_farms` that are not
+linked to can be removed as well.
 
-### 更名群檔案
+### 重新命名伺服器陣列檔案
 
-必須重新命 `conf.d/enabled_farms` 名中的所有場，以符 `*.farm`合模式，因此，例如，應重新命 `customerX_farm.any` 名名為afarm的檔案 `customerX.farm`。
+All farms in `conf.d/enabled_farms` must be renamed to match the pattern `*.farm`, so e.g. a
+farm file called `customerX_farm.any` should be renamed `customerX.farm`.
 
 ### 檢查快取
 
 Enter directory `conf.dispatcher.d/cache`.
 
-移除任何前置詞的檔案 `ams_`。
+移除任何以「`ams_`」為首碼的檔案。
 
-如果 `conf.dispatcher.d/cache` 現在為空，請將檔案從標 `conf.dispatcher.d/cache/rules.any`準調度器配置複製到此資料夾。 標準調度程式組態可在此SDK的資 `src` 料夾中找到。 別忘了也要改寫參照`$include` farm檔案中 `ams_*_cache.any` 規則檔案的語句。
+If `conf.dispatcher.d/cache` is now empty, copy the file `conf.dispatcher.d/cache/rules.any`
+from the standard dispatcher configuration to this folder. The standard dispatcher
+configuration can be found in the folder `src` of this SDK. Don&#39;t forget to adapt the
+`$include` statements referring to the `ams_*_cache.any` rule files  in the farm files
+as well.
 
-如果現 `conf.dispatcher.d/cache` 在包含一個帶尾碼的檔案 `_cache.any`，則應將其更名為 `rules.any` ，並且不要忘記在場檔案中調整引 `$include` 用該檔案的語句。
+If instead `conf.dispatcher.d/cache` now contains a single file with suffix `_cache.any`,
+it should be renamed to `rules.any` and don&#39;t forget to adapt the `$include` statements
+referring to that file in the farm files as well.
 
-但是，如果資料夾包含多個具有該模式的群特定檔案，則應將其內容複製到群 `$include` 檔案中引用它們的語句。
+If the folder however contains multiple, farm specific files with that pattern, their contents
+should be copied to the `$include` statement referring to them in the farm files.
 
-移除任何具有尾碼的檔案 `_invalidate_allowed.any`。
+Remove any file that has the suffix `_invalidate_allowed.any`.
 
 將Cloud Dispatcher `conf.dispatcher.d/cache/default_invalidate_any` 設定中的預設AEM檔案複製至該位置。
 
-在每個群檔案中，刪除該部分中的任 `cache/allowedClients` 何內容，並將其替換為：
+In each farm file, remove any contents in the `cache/allowedClients` section and replace it
+with:
 
 ```
 $include "../cache/default_invalidate.any"
 ```
 
-### 檢查用戶端標題
+### 檢查用戶端標頭
 
 Enter directory `conf.dispatcher.d/clientheaders`.
 
-移除任何前置詞的檔案 `ams_`。
+移除任何以「`ams_`」為首碼的檔案。
 
-如果 `conf.dispatcher.d/clientheaders` 現在包含帶尾碼的單個檔案 `_clientheaders.any`，則應將其更名為 `clientheaders.any` ，並且不要忘記在場檔案中調整引 `$include` 用該檔案的語句。
+If `conf.dispatcher.d/clientheaders` now contains a single file with suffix `_clientheaders.any`,
+it should be renamed to `clientheaders.any` and don&#39;t forget to adapt the `$include` statements
+referring to that file in the farm files as well.
 
-但是，如果資料夾包含多個具有該模式的群特定檔案，則應將其內容複製到群 `$include` 檔案中引用它們的語句。
+If the folder however contains multiple, farm specific files with that pattern, their contents
+should be copied to the `$include` statement referring to them in the farm files.
 
 將預設AEM `conf.dispatcher/clientheaders/default_clientheaders.any` 的檔案複製為Cloud Service分派程式設定至該位置。
 
-在每個群檔案中，替換任何clientheader包含如下所示的語句：
+在每個伺服器陣列檔案中，取代任何如下所示的「clientheader include」陳述式：
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_common_clientheaders.any"
 ```
 
-和聲明：
+以及以下陳述式：
 
 ```
 $include "../clientheaders/default_clientheaders.any"
 ```
 
-### 檢查篩選
+### 檢查篩選器
 
 Enter directory `conf.dispatcher.d/filters`.
 
-移除任何前置詞的檔案 `ams_`。
+移除任何以「`ams_`」為首碼的檔案。
 
-如 `conf.dispatcher.d/filters` 果現在包含單一檔案，則應重新命名為`filters.any` ，並且不要忘記在場檔 `$include` 案中也參照該檔案來調整陳述式。
+If `conf.dispatcher.d/filters` now contains a single file it should be renamed to
+`filters.any` and don&#39;t forget to adapt the `$include` statements referring to that
+file in the farm files as well.
 
-但是，如果資料夾包含多個具有該模式的群特定檔案，則應將其內容複製到群 `$include` 檔案中引用它們的語句。
+If the folder however contains multiple, farm specific files with that pattern, their contents
+should be copied to the `$include` statement referring to them in the farm files.
 
 將預設AEM `conf.dispatcher/filters/default_filters.any` 的檔案複製為Cloud Service分派程式設定至該位置。
 
-在每個群檔案中，替換任何篩選器包含如下所示的語句：
+在每個伺服器陣列檔案中，取代任何如下所示的 filter include 陳述式：
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"
 ```
 
-和聲明：
+以及以下陳述式：
 
 ```
 $include "../filters/default_filters.any"
 ```
 
-### 勾選轉譯
+### 檢查轉譯
 
 Enter directory `conf.dispatcher.d/renders`.
 
@@ -629,7 +657,8 @@ Enter directory `conf.dispatcher.d/renders`.
 
 將預設AEM `conf.dispatcher.d/renders/default_renders.any` 的檔案複製為Cloud Service分派程式設定至該位置。
 
-在每個群檔案中，刪除該部分中的任 `renders` 何內容，並將其替換為：
+In each farm file, remove any contents in the `renders` section and replace it
+with:
 
 ```
 $include "../renders/default_renders.any"
@@ -637,29 +666,32 @@ $include "../renders/default_renders.any"
 
 ### 檢查虛擬主機
 
-將目錄重 `conf.dispatcher.d/vhosts` 命名 `conf.dispatcher.d/virtualhosts` 並輸入。
+Rename the directory `conf.dispatcher.d/vhosts` to `conf.dispatcher.d/virtualhosts` and enter it.
 
-移除任何前置詞的檔案 `ams_`。
+移除任何以「`ams_`」為首碼的檔案。
 
-如 `conf.dispatcher.d/virtualhosts` 果現在包含單一檔案，則應重新命名為`virtualhosts.any` ，並且不要忘記在場檔 `$include` 案中也參照該檔案來調整陳述式。
+If `conf.dispatcher.d/virtualhosts` now contains a single file it should be renamed to
+`virtualhosts.any` and don&#39;t forget to adapt the `$include` statements referring to that
+file in the farm files as well.
 
-但是，如果資料夾包含多個具有該模式的群特定檔案，則應將其內容複製到群 `$include` 檔案中引用它們的語句。
+If the folder however contains multiple, farm specific files with that pattern, their contents
+should be copied to the `$include` statement referring to them in the farm files.
 
 將預設AEM `conf.dispatcher/virtualhosts/default_virtualhosts.any` 的檔案複製為Cloud Service分派程式設定至該位置。
 
-在每個群檔案中，替換任何篩選器包含如下所示的語句：
+在每個伺服器陣列檔案中，取代任何如下所示的 filter include 陳述式：
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"
 ```
 
-和聲明：
+以及以下陳述式：
 
 ```
 $include "../virtualhosts/default_virtualhosts.any"
 ```
 
-### 運行驗證器以檢查狀態
+### 執行驗證器以檢查狀態
 
 在您的目錄中以Cloud Service分派器驗證器的身分，使用子命令執 `dispatcher` 行AEM:
 
@@ -667,15 +699,17 @@ $include "../virtualhosts/default_virtualhosts.any"
 $ validator dispatcher .
 ```
 
-如果您看到有關遺失包含檔案的錯誤，請檢查您是否正確重新命名這些檔案。
+如果您看見有關遺失 Include 檔案的錯誤，請檢查您是否已正確地重新命名那些檔案。
 
-如果您看到未定義變數的錯 `PUBLISH_DOCROOT`誤，請將它重新命名 `DOCROOT`。
+如果您看見有關未定義變數「`PUBLISH_DOCROOT`」的錯誤，請將其重新命名為「`DOCROOT`」。
 
-如需其他錯誤，請參閱驗證工具檔案的疑難排解一節。
+如果看見其他錯誤，請參考驗證器工具文件的疑難排解章節。
 
 ### 使用本機部署測試您的組態（需要安裝Docker）
 
-使用AEM中 `docker_run.sh` 的指令碼做為Cloud Service Dispatcher Tools，您可以測試您的設定是否不包含任何其他只會顯示部署錯誤的錯誤：
+Using the script `docker_run.sh` in the AEM as a Cloud Service Dispatcher Tools, you can test that
+your configuration does not contain any other error that would only show up in
+deployment:
 
 ### 步驟1: 使用驗證器生成部署資訊
 
@@ -683,20 +717,23 @@ $ validator dispatcher .
 validator full -d out .
 ```
 
-這將驗證完整配置，並在 `out`
+This validates the full configuration and generates deployment information in `out`
 
 ### 步驟2: 使用部署資訊在Docker映像中啟動調度程式
 
-當您的AEM發佈伺服器在您的macOS電腦上執行，並在連接埠4503上監聽時，您可以在該伺服器前面執行Dispatcher，如下所示：
+在您的 macOS 電腦上執行 AEM 發佈伺服器，並在連接埠 4503 上接聽後，即可在該伺服器前端執行 Dispatcher，如下所示：
 
 ```
 $ docker_run.sh out docker.for.mac.localhost:4503 8080
 ```
 
-這將啟動容器，並在本機埠8080上公開Apache。
+如此一來將啟動容器，並在本機連接埠 8080 上公開 Apache。
 
 ### 使用您的新調度程式配置
 
-恭喜！ 如果驗證器不再報告任何問題，而docker容器啟動時沒有出現任何故障或警告，則您已準備好將配置移動到git儲存庫 `dispatcher/src` 的子目錄。
+恭喜！ If the validator no longer reports any issue and the
+docker container starts up without any failures or warnings, you&#39;re
+ready to move your configuration to a `dispatcher/src` subdirectory
+of your git repository.
 
 **使用AMS Dispatcher配置第1版的客戶應聯繫客戶支援以幫助他們從第1版遷移到第2版，以便遵循上述說明。**
