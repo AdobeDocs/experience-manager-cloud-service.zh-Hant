@@ -2,7 +2,7 @@
 title: AEM 專案結構
 description: 瞭解如何定義封裝結構以部署至Adobe Experience Manager Cloud Service。
 translation-type: tm+mt
-source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2530'
 ht-degree: 17%
@@ -30,13 +30,13 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
 
 ## 儲存庫的可變區與不可變區 {#mutable-vs-immutable}
 
-`/apps` and `/libs` are consed **inmumable areas of AEM** as they cannot be changed(create, update, delete)after AEM starts(i.e. at runtime)。在運行時更改不可變區域的任何嘗試都將失敗。
+`/apps` and `/libs`**are consed inmumable areas of AEM as they cannot be changed(create, update, delete)after AEM starts(i.e. at runtime)。**&#x200B;在運行時更改不可變區域的任何嘗試都將失敗。
 
-儲存庫中的其 `/content`它所有 `/conf`內容 `/var`、 、 `/etc`、 `/oak:index`、 `/system``/tmp`、等。 皆為可 **變區** ，也就是說可在執行時期變更。
+Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
 
 >[!WARNING]
 >
-> 和舊版AEM一樣， `/libs` 不應修改。 只有AEM產品程式碼可部署至 `/libs`。
+>和舊版AEM一樣， `/libs` 不應修改。 只有AEM產品程式碼可部署至 `/libs`。
 
 ### Oak Indexes {#oak-indexes}
 
@@ -250,7 +250,7 @@ Apache Sling Repo Init檔案中提供回購初始化指令碼的 [完整辭彙](
 
 一般規則是包含可變內容(`ui.content`)的封裝，應依賴於支援可變內容轉譯和使用的不可變代碼(`ui.apps`)。
 
-此一般規則的一個明顯例外是，如果不可變的程式碼套件(`ui.apps` 或任何其他)僅 __包含__ OSGi組合。 如果是，則AEM套件不應宣告對它的依賴。 這是因為僅包含 ____ OSGi組合的不可變代碼包未向AEM Package Manager註冊，因此，任何依賴它的AEM套件都將具有未滿足的相關性，且無法安裝。
+此一般規則的一個明顯例外是，如果不可變的程式碼套件(`ui.apps` 或任何其他)僅 __包含__ OSGi組合。 如果是，則AEM套件不應宣告對它的依賴。 這是因為僅包含 ____ OSGi組合的不可變代碼套件未向AEM Package Manager註冊，因此，任何依賴它的AEM套件都會有未滿足的相依性，且無法安裝。
 
 >[!TIP]
 >
@@ -501,7 +501,8 @@ OSGi `scripts` 屬性包含 [Apache Sling&#39;s Repo Init語言所定義的指�
 ### 第三方Maven儲存庫 {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> 添加更多Maven儲存庫可能會延長Maven構建時間，因為將檢查其他Maven儲存庫是否具有相關性。
+>
+>添加更多Maven儲存庫可能會延長Maven構建時間，因為將檢查其他Maven儲存庫是否具有相關性。
 
 在反應堆項目的中，添 `pom.xml`加任何必要的第三方公共Maven儲存庫指令。 完整配 `<repository>` 置應可從第三方儲存庫提供方獲得。
 
