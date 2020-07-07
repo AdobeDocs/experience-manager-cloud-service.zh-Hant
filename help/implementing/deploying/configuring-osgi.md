@@ -2,7 +2,7 @@
 title: 為 AEM 雲端服務設定 OSGi
 description: '具有機密值和環境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [OSGi](https://www.osgi.org/) 是Adobe Experience Manager(AEM)技術堆疊中的基本元素。 它用於控制AEM的組合束及其配置。
 
-OSGi提供標準化的基元，可讓應用程式從可重複使用的小型元件和協作元件建構。 這些元件可組成應用程式並加以部署。 這樣可以輕鬆管理OSGi捆綁包，因為它們可以單獨停止、安裝和啟動。 互依關係會自動處理。 每個OSGi元件都包含在其中一個不同的束中。 如需詳細資訊，請參閱 [OSGi規格](https://www.osgi.org/Specifications/HomePage)。
+OSGi提供標準化的基元，可讓應用程式從可重複使用的小型協同元件建構。 這些元件可組成應用程式並加以部署。 這樣可以輕鬆管理OSGi捆綁包，因為它們可以單獨停止、安裝和啟動。 互依關係會自動處理。 每個OSGi元件都包含在其中一個不同的束中。 如需詳細資訊，請參閱 [OSGi規格](https://www.osgi.org/Specifications/HomePage)。
 
 您可以透過屬於AEM程式碼專案一部分的設定檔案，管理OSGi元件的設定設定。
 
@@ -36,9 +36,9 @@ an OSGi configuration file is defined at:
 
 遵循cfg.json OSGi組態格式。
 
-> [!NOTE]
+>[!NOTE]
 >
-> 舊版AEM支援的OSGi組態檔案，使用不同的檔案格式，例如。cfg.、.config和XML sling:OsgiConfig資源定義。 這些格式由cfg.json OSGi組態格式取代。
+>舊版AEM支援的OSGi組態檔案，使用不同的檔案格式，例如。cfg.、.config和XML sling:OsgiConfig資源定義。 這些格式由cfg.json OSGi組態格式取代。
 
 ## 執行模式解析度 {#runmode-resolution}
 
@@ -503,9 +503,9 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
 ```
 
-> [!NOTE]
+>[!NOTE]
 >
-> 如需 [如何使用](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) Adobe I/O CLI的Cloud Manager外掛程式設定值的詳細資訊，請參閱本頁。
+>如需 [如何使用](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) Adobe I/O CLI的Cloud Manager外掛程式設定值的詳細資訊，請參閱本頁。
 
 ### 變數數 {#number-of-variables}
 
