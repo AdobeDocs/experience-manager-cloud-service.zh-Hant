@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 雲端服務與網路無障礙指引
 description: Adobe Experience Manager 雲端服務與網路無障礙指引簡介
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Adobe Experience Manager 雲端服務符合[全球資訊網協會](#world-wide-w
 
 >[!NOTE]
 >
-> 如需詳細資訊，請參閱 [Adobe 解決方案的無障礙合規報告](https://www.adobe.com/accessibility/compliance.html)。
+>如需詳細資訊，請參閱 [Adobe 解決方案的無障礙合規報告](https://www.adobe.com/accessibility/compliance.html)。
 
 ## 全球資訊網協會 {#world-wide-web-consortium}
 
@@ -49,7 +49,7 @@ WCAG 2.1 提供的[指引 (及相關成功標準) 說明了無障礙環境等級
 * [建立無障礙內容](/help/sites-cloud/authoring/fundamentals/accessible-content.md)會詳細說明這些層面與 AEM 的相關性。
 
 >[!NOTE]
-> 
+>
 >建立網站時，您必須決定要讓網站遵循的整體等級。
 
 <!--
