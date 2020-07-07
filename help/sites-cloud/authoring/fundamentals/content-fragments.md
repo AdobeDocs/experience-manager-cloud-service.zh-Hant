@@ -2,7 +2,7 @@
 title: 內容片段
 description: Adobe Experience Manager作為雲端服務內容片段可讓您設計、建立、組織和使用不受頁面影響的內容
 translation-type: tm+mt
-source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 7%
@@ -12,7 +12,7 @@ ht-degree: 7%
 
 # 內容片段 {#content-fragments}
 
-Adobe Experience Manager(AEM)中的內容片段是以Cloud Service的形式建立 [並管理為不受頁面影響的資產](/help/assets/content-fragments/content-fragments.md)。
+Adobe Experience Manager(AEM)中的內容片段做為雲端服務， [會建立並管理為不受頁面影響的資產](/help/assets/content-fragments/content-fragments.md)。
 
 它們可讓您建立不受頻道影響的內容，以及（可能是特定頻道的）變化。 然後，您可以在製作內容頁面時使用這些片段及其變化。
 
@@ -141,7 +141,9 @@ Adobe Experience Manager(AEM)中的內容片段是以Cloud Service的形式建�
 >發生此情況時，中間內容會依原樣保留：
 >
 >* 在片段流中的片段序列內的片段之間具有絕對位置。 即使片段中段落的內容變更，此位置也不會變更。
-   >  這可讓相對位置看起來好像已變更，因為中間段落與位於旁邊的（片段）段落沒有關聯關係。
+>
+>  
+這可讓相對位置看起來好像已變更，因為中間段落與位於旁邊的（片段）段落沒有關聯關係。
 >* 除非兩款結構有衝突； 在這種情況下，不顯示中間內容（儘管它仍在內部存在）。
 
 
