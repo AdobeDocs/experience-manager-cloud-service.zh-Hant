@@ -2,7 +2,7 @@
 title: 內容轉移工具綜覽
 description: 內容轉移工具綜覽
 translation-type: tm+mt
-source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 69%
@@ -36,7 +36,8 @@ ht-degree: 69%
 「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。
 
 >[!NOTE]
-> 初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
+>
+>初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
 
 如果要在提取階段中&#x200B;***追加***&#x200B;現有的移轉集，則必須停用&#x200B;*覆蓋*&#x200B;選項。如需詳細資訊，請參考[追加提取](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-extraction-process)。
 
