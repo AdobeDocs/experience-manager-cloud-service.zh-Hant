@@ -2,7 +2,7 @@
 title: 部署至 AEM 雲端服務
 description: '部署至 AEM 雲端服務 '
 translation-type: tm+mt
-source-git-commit: 6fee9a7abd17615c607f01b869a9c1eaed5793a3
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3523'
 ht-degree: 1%
@@ -34,7 +34,7 @@ AEM版本的更新永遠是個別的部署事件，與推送自訂代碼不同�
 
 >[!NOTE]
 >
-> 如果自訂代碼已推送至測試，然後遭到您拒絕，下一次AEM更新會移除這些變更，以反映上次成功客戶發行的git標籤至生產環境。
+>如果自訂代碼已推送至測試，然後遭到您拒絕，下一次AEM更新會移除這些變更，以反映上次成功客戶發行的git標籤至生產環境。
 
 功能版本將定期推出，主要針對功能新增和增強功能，與日常版本相比，這些功能將對使用者體驗產生更大影響。 觸發功能發行的不是部署大型變更集，而是翻動發行切換，啟動在數天或數週內透過每日更新累積的程式碼。
 
@@ -133,8 +133,11 @@ Health checks are used to monitor the health of the application. 如果這些檢
 * 建立／刪除群組
 * 建立／刪除使用者
 * 添加ACL
-   > [!NOTE]
+
+   >[!NOTE]
+   >
    >定義ACL要求節點結構已存在。 因此，可能需要在建立路徑語句之前執行。
+
 * 添加路徑（例如根資料夾結構）
 * 新增CND（nodetype定義）
 
@@ -146,7 +149,7 @@ Health checks are used to monitor the health of the application. 如果這些檢
 * 可在運行時驗證本地開發環境上的repoinit語句，因為這些語句將在註冊OSGi配置時執行。
 * 重新指向語句是原子和顯式語句，如果狀態已匹配，則將跳過。
 
-當Cloud Manager部署應用程式時，它會執行這些陳述式，而與安裝任何內容套件無關。
+當Cloud Manager部署應用程式時，它會執行這些陳述式，而與安裝任何內容封裝無關。
 
 要建立重新指向語句，請遵循以下過程：
 
