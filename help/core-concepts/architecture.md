@@ -2,7 +2,7 @@
 title: Adobe Experience Manager雲端服務架構簡介
 description: 'Adobe Experience Manager雲端服務架構簡介。 '
 translation-type: tm+mt
-source-git-commit: 5a846d34ee094e7d2f7fc71dbeef65f3fa58e86c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 0%
@@ -60,7 +60,7 @@ AEM做為雲端服務，是以使用協調引擎為基礎，可：
 
 >[!NOTE]
 >
-> 如需詳細資訊，請參 [閱部署——執行模式](/help/implementing/deploying/overview.md#runmodes)
+>如需詳細資訊，請參 [閱部署——執行模式](/help/implementing/deploying/overview.md#runmodes)
 
 AEM做為Cloud Service可以做為個別執行個體使用，每個執行個體代表完整的AEM環境。 AEM為雲端服務提供的環境有四種類型：
 
