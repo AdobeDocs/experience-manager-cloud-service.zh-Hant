@@ -2,7 +2,7 @@
 title: 複寫
 description: 散佈 和複製故障排除。
 translation-type: tm+mt
-source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 3%
@@ -16,7 +16,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 >[!NOTE]
 >
-> 閱讀 [散發](/help/core-concepts/architecture.md#content-distribution) ，以取得詳細資訊。
+>閱讀 [散發](/help/core-concepts/architecture.md#content-distribution) ，以取得詳細資訊。
 
 ## 發佈內容的方法 {#methods-of-publishing-content}
 
