@@ -2,7 +2,7 @@
 title: Adobe Experience Manager資產雲端服務的顯著變更
 description: AEM Cloud服務中的Adobe Experience Manager Assets與Adobe Experience Manager 6.5相比有顯著變更。
 translation-type: tm+mt
-source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 10%
@@ -21,6 +21,7 @@ Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功�
 * [移除傳統 UI](#classic-ui).
 
 >[!NOTE]
+>
 >本檔案著重說明對AEM Assets的顯著變更。 如需AEM的「雲端服務」及其他模組的一般變更，請參閱：
 >
 >* [Adobe Experience Manager 雲端服務簡介](/help/overview/introduction.md)
