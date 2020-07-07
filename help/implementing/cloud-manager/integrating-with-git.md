@@ -2,7 +2,7 @@
 title: 與Git整合
 description: 與Git整合——雲端服務
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Adobe Cloud Manager提供單一Git儲存庫，用來使用Cloud Manager的CI/CD�
 
 >[!NOTE]
 >
-> 此系列影片中概述的步驟和命名慣例代表使用客戶管理的Git儲存庫和Cloud Manager的一些最佳實務。 預計所說明的慣例和工作流程將適用於個別開發團隊。
+>此系列影片中概述的步驟和命名慣例代表使用客戶管理的Git儲存庫和Cloud Manager的一些最佳實務。 預計所說明的慣例和工作流程將適用於個別開發團隊。
 
 ## 初始同步 {#initial-sync}
 
