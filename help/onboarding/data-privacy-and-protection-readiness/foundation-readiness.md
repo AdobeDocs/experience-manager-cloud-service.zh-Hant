@@ -2,7 +2,7 @@
 title: 資料保護與資料隱私權法規- Adobe Experience Manager作為雲端服務基礎準備
 description: '瞭解Adobe Experience Manager如何以雲端服務基礎的身分，支援各種資料保護與資料隱私權規定； 包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
 translation-type: tm+mt
-source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 5%
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
-> 對於AEM做為雲端服務，UI中沒有可刪除使用者設定檔的手動程式，因為無法存取CRXDE。
+>對於AEM做為雲端服務，UI中沒有可刪除使用者設定檔的手動程式，因為無法存取CRXDE。
 
 ### HTTP API {#http-api-1}
 
