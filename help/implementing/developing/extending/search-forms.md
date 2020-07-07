@@ -2,7 +2,7 @@
 title: 設定搜尋表單
 description: 將Search Forms for Adobe Experience Manager設定為雲端服務。
 translation-type: tm+mt
-source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 15%
@@ -78,7 +78,7 @@ Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/hel
 
 >[!NOTE]
 >
-> 如需與資產相關的搜尋表單的詳細資訊，請參閱「 [資產——搜尋面」](/help/assets/search-facets.md)
+>如需與資產相關的搜尋表單的詳細資訊，請參閱「 [資產——搜尋面」](/help/assets/search-facets.md)
 
 
 ## 謂語及其設定 {#predicates-and-their-settings}
@@ -491,11 +491,10 @@ Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/hel
 
 >[!NOTE]
 >
->* 常見搜索謂語定義於：
-   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>常見搜索謂語定義於：
+>  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->
-此資訊僅供參考，您不得變更 `/libs`。
+>此資訊僅供參考，您不得變更 `/libs`。
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
