@@ -2,9 +2,9 @@
 title: 建立和組織頁面
 description: 如何使用AEM建立和組織頁面
 translation-type: tm+mt
-source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
+source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2550'
 ht-degree: 7%
 
 ---
@@ -366,6 +366,27 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
 <!--
 >A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
 -->
+
+#### 非同步動作 {#asynchronous-actions}
+
+通常頁面移動或重新命名動作會立即執行。 這會視為同步處理，而UI中的進一步動作會遭到封鎖，直到動作完成為止。
+
+不過，如果受影響的頁數超過定義的限制，動作會以非同步方式處理，讓使用者可不受頁面移動或重新命名動作的影響，在UI中繼續製作。
+
+* 當按一 **下上述最後一個步驟** 「移動」時，AEM會檢查已設定的限制。
+* 如果受影響的頁數低於限制，則會執行同步作業。
+* 如果受影響的頁數超過限制，則會執行非同步作業。
+   * 用戶必須定義何時應執行非同步操作
+      * **現在** ，立即開始執行非同步作業。
+      * **稍後** ，使用者可定義非同步工作的啟動時間。
+
+         ![非同步頁面移動](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+
+可以在Async Jobs Status [**Dashboard中的&#x200B;**Async Jobs Status](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)Dashboard** Global Navigation **-**>Oractions **- Asynchronous Operations - Jobs導航工具******>中檢查狀態&#x200B;**
+
+>[!NOTE]
+>
+>有關非同步作業處理以及如何配置頁面移動／更名操作限制的詳細資訊，請參閱「操作」使用手冊中的「非同步作業 [](/help/operations/asynchronous-jobs.md) 」文檔。
 
 ### 刪除頁面 {#deleting-a-page}
 
