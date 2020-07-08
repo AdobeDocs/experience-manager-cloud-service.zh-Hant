@@ -2,9 +2,9 @@
 description: 'Dynamic Media Newsletter by Experience League是每月的電子報。 它可協助您快速上手使用Dynamic Media和Dynamic Media Classic，讓您立即開始實現價值。 本一站式商店電子報提供寶貴的知識建立資源，包括如何製作影片、解決方案概觀，以及介紹一些主要功能和功能，例如影像預設集、檢視器預設集、影片設定檔等。 '
 title: 動態媒體電子報
 translation-type: tm+mt
-source-git-commit: 26cc4778052ebcc520dc3ddeeca30c043eadf695
+source-git-commit: 167214d332825fb75b513d316eefa38a2eae097d
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Experience League每月推出的Dynamic Media電子報旨在協助您快速上�
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->
 
-* **[2020年4月第3期](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
+* **[2020年4月第3期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2020_April.html)**
 
    在此問題中：
 
@@ -52,7 +52,7 @@ Experience League每月推出的Dynamic Media電子報旨在協助您快速上�
    >
    >我們想確定我們只傳送動態媒體電子報給想要收到它的人。 若要在此期刊之後繼續收到電子報，請在這裡注 [冊](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)。
 
-* **[2020年2月，第二期](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@5lYjerUalNCDQd6ABlMufSyP3GqbFDn747uBiom3-3_efxsaEjuw8LNhJxrs89ft1vcsQzjvxTGMo55w-4k0YyBVGiL6m5AWSe9I7H7wIXKT0Efz.html)**
+* **[2020年2月，第二期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
    在此問題中：
 
@@ -63,14 +63,14 @@ Experience League每月推出的Dynamic Media電子報旨在協助您快速上�
    * 瞭解Dynamic Media Classic的全新使用者介面。
    * 認識Adobe Experience Cloud客戶成功經理Georgia Myers。
 
-* **[2020年1月第1期](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@NpvOA7LHuVbd-W1B5pENdSLNFZ4L4ZeEkA_bVd4reX31KUOs3uaPFEuEx2mWz-3oNkVBcY5fdimoW3RM-SzTt6QXI4l1Rd2mEwrYsWp7C1LnUMVp.html)**
+* **[2020年1月第1期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_01_2020_Jan.html)**
 
    在此問題中：
 
    * 5個全新的Skill Builder網路研討會，磨練您的Dynamic Media Classic技能。
    * 免費稽核，協助您從Dynamic Media Classic獲得更多價值。
    * 為我們的多媒體客戶帶來創紀錄的假日購物季。
-   * 您選擇DAM(Digital Asset Manager)的首選指南，可符合您現今的需求，並為您做好迎接未來多媒體新增功能的準備。
+   * 您選擇DAM(Digital Asset Manager)的首選指南，可符合您現今的需求，並為您做好迎接未來多媒體新功能的準備。
    * 認識數位媒體專員Mark Dean。
 
 * **[2019年11月，總第11期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
