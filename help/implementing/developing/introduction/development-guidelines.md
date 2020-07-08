@@ -2,17 +2,17 @@
 title: AEM 雲端服務開發方針
 description: 待完成
 translation-type: tm+mt
-source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
+source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 1%
+source-wordcount: '1631'
+ht-degree: 2%
 
 ---
 
 
 # AEM 雲端服務開發方針 {#aem-as-a-cloud-service-development-guidelines}
 
-在AEM中以雲端服務形式執行的程式碼必須知道它一律在叢集中執行。 這表示執行中總有多個執行個體。 程式碼必須具彈性，尤其是當例項可能在任何時間點停止時。
+在AEM中以雲端服務形式執行的程式碼必須知道它一律在叢集中執行。 這表示執行中的例項永遠多於一個。程式碼必須具彈性，尤其是當例項可能在任何時間點停止時。
 
 在將AEM更新為雲端服務期間，將會有舊程式碼和新程式碼並行執行的例項。 因此，舊程式碼不得中斷使用新程式碼建立的內容，而新程式碼必須能夠處理舊內容。
 <!--
@@ -160,8 +160,7 @@ Developer Console中提供一組工具，可讓您將AEM除錯為Cloud Service�
 
 ![開發控制台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-對於一般程式，「開發人員主控台」的存取權是由「管理控制台」中的「雲端管理員——開發人員角色」定義，而對於沙盒程式，任何擁有產品設定檔的使用者都可以透過「雲端服務」存取AEM。 如需有關設定使用者權限的詳細資訊，請參 [閱Cloud Manager檔案](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
-
+對於一般程式，「開發人員主控台」的存取權是由「管理控制台」中的「雲端管理員——開發人員角色」定義，而對於沙盒程式，任何擁有產品設定檔的使用者都可以透過「雲端服務」存取AEM。 對於所有程式，狀態轉儲需要「Cloud Manager - Developer Role」，而且使用者也必須在作者和發佈服務的AEM使用者或AEM管理員產品設定檔中定義，才能檢視來自這兩項服務的狀態轉儲資料。 如需有關設定使用者權限的詳細資訊，請參 [閱Cloud Manager檔案](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
 
 ### AEM Staging and Production Service {#aem-staging-and-production-service}
