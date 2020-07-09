@@ -2,10 +2,10 @@
 title: AEM應用程式專案——雲端服務
 description: AEM應用程式專案——雲端服務
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 11%
+source-wordcount: '1255'
+ht-degree: 10%
 
 ---
 
@@ -59,7 +59,7 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
 
 * 構建環境基於Linux，源自Ubuntu 18.04。
 * 已安裝Apache Maven 3.6.0。
-* 安裝的Java版本是Oracle JDK 8u202。
+* Java版本已安裝Oracle JDK 8u202和11.0.2。
 * 安裝了一些其他系統軟體包是必要的：
 
    * bzip2
@@ -73,6 +73,37 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
 * Maven始終使用以下命令運行： *mvn -batch-mode clean org.jaco:jaco-maven-plugin:prepare-agent套件*
 * Maven是在系統層級以settings.xml檔案來設定，該檔案會自動包含公用的Adobe **Artifact** 儲存庫。 (如需詳細 [資訊，請參閱Adobe Public Maven Repository](https://repo.adobe.com/) )。
 
+### 使用Java 11 {#using-java-11}
+
+Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設，專案是使用Java 8建立。 想要在專案中使用Java 11的客戶可使用 [Apache Maven Toolchains外掛程式](https://maven.apache.org/plugins/maven-toolchains-plugin/)。
+
+若要這麼做，請在pom.xml檔案中新增 `<plugin>` 如下的項目：
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
+```
+
+>[!NOTE]
+>支援的供應商是Oracle和Sun Microsystems，支援的版本是1.8、1.11和11。
 
 ## 環境變數 {#environment-variables}
 
