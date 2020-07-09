@@ -2,9 +2,9 @@
 title: AEM應用程式專案——雲端服務
 description: AEM應用程式專案——雲端服務
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: e3370b7a7f543ae93b25ead8c174796fd27067f2
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1251'
 ht-degree: 10%
 
 ---
@@ -94,16 +94,17 @@ Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設�
             <configuration>
                 <toolchains>
                     <jdk>
-                    <version>11</version>
-                    <vendor>oracle</vendor>
+                        <version>11</version>
+                        <vendor>oracle</vendor>
                     </jdk>
                 </toolchains>
             </configuration>
-        </plugin>
 ```
 
 >[!NOTE]
->支援的供應商是Oracle和Sun Microsystems，支援的版本是1.8、1.11和11。
+>* 支援的供應商 `oracle` 是 `sun`。
+>* 支援的版 `1.8`本有 `1.11`、和 `11`。
+
 
 ## 環境變數 {#environment-variables}
 
