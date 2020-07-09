@@ -2,10 +2,10 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 7%
+source-wordcount: '695'
+ht-degree: 8%
 
 ---
 
@@ -41,8 +41,7 @@ Production and Stage是雙核產品，用於測試和生產用途。
 
 
 1. 按一下「 **添加環境** 」(Add Environment)以添加環境。 此按鈕可從「環境」畫面 **存取** 。
-   ![](assets/no-environment-2.png)
-
+   ![](assets/environments-tab.png)
 
    當程 **序中沒有環境****** 時，「環境」卡上也提供「添加環境」選項。
 
@@ -74,12 +73,12 @@ Adobe會自動管理Stage和生產環境的更新。
 ![](assets/manage-environments2.png)
 
 
-「 **Environments** Card」(環境卡 **)的下拉式選單中提供「** Update」（更新）選項。
+「 **Environments** Card」(環境卡 **)中提供「Update** 」（更新）選項。
 如果您從「環境」卡上按一下「詳細資訊」(Details **** ) **，也可從「管理」(** Manage **)按鈕使用此選項** 。
 
-![](assets/update-environment2.png)
+![](assets/environments-screen-update.png)
 
-從下拉菜單中選擇此選項將允許部署管理器將與此環境關聯的管線更新為最新版本，然後執行管線。
+選擇此選項將允許部署管理器將與此環境關聯的管線更新為最新版本，然後執行管線。
 
 如果管線已更新，則提示用戶執行管線。
 
@@ -87,7 +86,7 @@ Adobe會自動管理Stage和生產環境的更新。
 
 具備必要權限的使用者將可刪除開發環境。
 
-「環 **境卡** 」的下拉式選單中提供「刪除」 **選項** 。
+「環 **境卡** 」的下拉式選單中提供「刪 **** 除」選項。
 如果您從「環境」卡上按一下「詳細資訊」(Details **** ) **，也可從「管理」(** Manage **)按鈕使用此選項** 。
 
 ![](assets/deleting-environment1.png)
@@ -97,7 +96,7 @@ Adobe會自動管理Stage和生產環境的更新。
 
 ## 存取Developer Console {#accessing-developer-console}
 
-從「 **環境卡** 」的下拉式選單中選 **取「Developer Console** 」。 這會在您的瀏覽器中開啟一個新標籤，其中會顯示 **Developer Console的登入頁面**。
+從「 **Environments Card** 」（環境資訊卡）的下拉式選單選 **取「Developer Console** 」。 這會在您的瀏覽器中開啟一個新標籤，其中會顯示 **Developer Console的登入頁面**。
 
 只有「開發人員」角色的使用者才能存取 **Developer Console**。 「沙盒程式」例外，凡有權存取「雲端管理員沙盒程式」的使用者，皆可存取「開發人 **員主控台」**。
 
