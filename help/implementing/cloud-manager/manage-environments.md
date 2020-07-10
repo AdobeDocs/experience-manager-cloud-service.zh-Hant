@@ -2,10 +2,10 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 8%
+source-wordcount: '702'
+ht-degree: 7%
 
 ---
 
@@ -48,7 +48,7 @@ Production and Stage是雙核產品，用於測試和生產用途。
    ![](assets/no-environments.png)
 
    >[!NOTE]
-   >「 **新增環境** 」選項將會因為缺乏權限或可能已簽約而停用。
+   >「添 **加環境** 」選項將基於缺少權限或可能簽訂的合同而禁用。
 
 1. 出現「 **Add environment** 」(添加環境 **)對話框。用戶需要提交諸如「Environment type** 」 (環境類型) 和「 **Environment name** 」 (環境名稱) 和「 **** Environment description」 (環境描述) 等詳細資訊 (取決於用戶在特定租用戶可用內容範圍內建立環境的目標)。
 
@@ -70,7 +70,7 @@ Adobe會自動管理Stage和生產環境的更新。
 
 開發環境的更新由方案的使用者管理。 當環境未執行最新公開可用的AEM版本時，「首頁畫面」上「環境卡」的狀態會顯示「 **UPDATE AVAILABLE」**。
 
-![](assets/manage-environments2.png)
+![](assets/update-environ-1.png)
 
 
 「 **Environments** Card」(環境卡 **)中提供「Update** 」（更新）選項。
@@ -86,10 +86,14 @@ Adobe會自動管理Stage和生產環境的更新。
 
 具備必要權限的使用者將可刪除開發環境。
 
-「環 **境卡** 」的下拉式選單中提供「刪 **** 除」選項。
-如果您從「環境」卡上按一下「詳細資訊」(Details **** ) **，也可從「管理」(** Manage **)按鈕使用此選項** 。
+「環 **境卡** 」的下拉式選單中提供「刪 **** 除」選項。 按一下 **...** 的「開發」環境。
 
-![](assets/deleting-environment1.png)
+![](assets/environ-delete.png)
+
+如果從「環境」卡中按一下「詳細資訊」( **Details** )，也可以刪 **除環境** 。
+
+![](assets/environ-delete-2.png)
+
 
 >[!NOTE]
 此功能不適用於為生產目的而在常規程式中設定的生產／階段環境。 不過，這項功能適用於沙盒程式中的「生產／階段」環境。
@@ -103,7 +107,7 @@ Adobe會自動管理Stage和生產環境的更新。
 如需詳細 [資訊，請參閱「休眠與去休眠沙盒環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) 」。
 
 
-![](assets/dev-console1.png)
+![](assets/environ-dev-console.png)
 
 如果您從「環境」卡中按一下「詳細資訊」( **Details** ) **，也可以從「管理」(** Manage **)按鈕中選擇此選項** 。
 
