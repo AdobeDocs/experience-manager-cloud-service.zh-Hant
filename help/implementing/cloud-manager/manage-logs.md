@@ -2,17 +2,17 @@
 title: 管理記錄檔——雲端服務
 description: 管理記錄檔——雲端服務
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 11%
+ht-degree: 17%
 
 ---
 
 
 # 存取和管理記錄檔 {#manage-logs}
 
-用戶可以使用環境卡訪問選定環境的可用日誌檔案清單。  用戶可以訪問選定環境的可用日誌檔案清單。
+用戶可以使用環境卡訪問選定環境的可用日誌檔案清單。  使用者可以存取所選環境的可用記錄檔清單。
 
 這些檔案可透過UI從「概述」頁面 **下載** 。
 
@@ -20,7 +20,7 @@ ht-degree: 11%
 
 或者，「環 **境** 」頁：
 
-![](assets/manage-logs2.png)
+![](assets/download-logs.png)
 
 >[!Note]
 >不論其開啟位置為何，都會出現相同的對話方塊，並允許下載個別記錄檔。
