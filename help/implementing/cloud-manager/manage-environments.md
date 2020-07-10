@@ -2,9 +2,9 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '753'
 ht-degree: 7%
 
 ---
@@ -74,7 +74,7 @@ Adobe會自動管理Stage和生產環境的更新。
 
 
 「 **Environments** Card」(環境卡 **)中提供「Update** 」（更新）選項。
-如果您從「環境」卡上按一下「詳細資訊」(Details **** ) **，也可從「管理」(** Manage **)按鈕使用此選項** 。
+如果您按一下「環境」資訊卡上的「 **詳細資訊** 」，也 **可使用此選項** 。 「環 **境** 」(Environments)頁面隨即開啟，當您選取「開發環境」(Development environment)後，請按一下 **...** 並選擇 **更新**，如下圖所示：
 
 ![](assets/environments-screen-update.png)
 
@@ -86,11 +86,11 @@ Adobe會自動管理Stage和生產環境的更新。
 
 具備必要權限的使用者將可刪除開發環境。
 
-「環 **境卡** 」的下拉式選單中提供「刪 **** 除」選項。 按一下 **...** 的「開發」環境。
+「環 **境卡** 」的下拉式選單中提供「刪除」 **選項** 。 按一下 **...** 的「開發」環境。
 
 ![](assets/environ-delete.png)
 
-如果從「環境」卡中按一下「詳細資訊」( **Details** )，也可以刪 **除環境** 。
+如果您從「環境」資訊卡按一下「詳細資 **訊** 」，也可使 **用刪除選項** 。 「環 **境** 」(Environments)頁面隨即開啟，當您選取「開發環境」(Development environment)後，請按一下 **...** 並選 **擇刪除**，如下圖所示：
 
 ![](assets/environ-delete-2.png)
 
@@ -109,5 +109,5 @@ Adobe會自動管理Stage和生產環境的更新。
 
 ![](assets/environ-dev-console.png)
 
-如果您從「環境」卡中按一下「詳細資訊」( **Details** ) **，也可以從「管理」(** Manage **)按鈕中選擇此選項** 。
+如果您按一下「環境」資訊卡上的「 **詳細資訊** 」，也 **可使用此選項** 。 「環 **境** 」(Environments)頁面隨即開啟，當您選擇環境後，按一下 **...** 並選取「開 **發人員主控台」**。
 
