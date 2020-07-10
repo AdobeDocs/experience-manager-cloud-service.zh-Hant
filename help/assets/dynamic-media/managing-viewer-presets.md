@@ -2,7 +2,7 @@
 title: 管理檢視器預設集
 description: 如何建立和管理檢視器預設集
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
 source-wordcount: '4263'
 ht-degree: 17%
@@ -150,7 +150,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 下表列出動態媒體隨附的所有預先定義、立即可用的檢視器預設集。
 
-另請參閱 <!-- KEEP REFERENCE [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [即時示範](https://landing.adobe.com/tw/na/dynamic-media/ctir-2755/live-demos.html)。
+另請參閱 [即時示範](https://landing.adobe.com/tw/na/dynamic-media/ctir-2755/live-demos.html)。
 
 如需檢視器支援的網頁瀏覽器和作業系統版本的詳細資訊，請參閱檢視器版本注意事項。
 
