@@ -2,9 +2,9 @@
 title: 資料保護與資料隱私權法規- Adobe Experience Manager作為雲端服務網站的就緒性
 description: '瞭解Adobe Experience Manager如何以雲端服務網站的形式支援各種資料保護與資料隱私權規定； 包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1036'
 ht-degree: 1%
 
 ---
@@ -68,13 +68,9 @@ Adobe Experience Manager受Cookie選擇退出服務約束，該服務用於管�
       選擇加入——將我納入訪客作業匯總與分析(請勿安裝選擇 `amcglobal.sc.omtrdc.net` 退出Cookie)-按一下此處。
    請依照上述步驟來存取實際連結。
 
-   <!--
-    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
-    -->
-
    >[!NOTE]
    >
-   > 「使用條款」的「隱 **私權政策** 」一節中 [有進一步說明](https://marketing.adobe.com/resources/help/zh_TW/terms.html)。
+   > 2中有進一步的說 **明。 隱私策略.** 一般使 [用條款一節](https://www.adobe.com/legal/terms.html)。
 
 ## Analytics Foundation {#analytics-foundation}
 
