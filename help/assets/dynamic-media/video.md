@@ -2,9 +2,9 @@
 title: 影片
 description: 瞭解如何在動態媒體中處理視訊
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
 workflow-type: tm+mt
-source-wordcount: '10146'
+source-wordcount: '10058'
 ht-degree: 10%
 
 ---
@@ -425,7 +425,6 @@ YouTube會自行編碼。 因此，上傳至AEM的原始視訊檔案會發佈至
 1. [設定Google Cloud設定](#configuring-google-cloud-settings)
 1. [建立YouTube頻道](#creating-a-youtube-channel)
 1. [新增發佈標籤](#adding-tags-for-publishing)
-1. [啟用YouTube發佈複製代理](#enabling-the-youtube-publish-replication-agent)
 1. [在AEM中設定YouTube](#setting-up-youtube-in-aem)
 1. [（選擇性）自動設定已上傳影片的預設YouTube屬性](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [將影片發佈至您的YouTube頻道](#publishing-videos-to-your-youtube-channel)
@@ -564,19 +563,21 @@ YouTube會自行編碼。 因此，上傳至AEM的原始視訊檔案會發佈至
 
 若要將影片發佈至YouTube,AEM會將標籤關聯至一或多個YouTube頻道。 若要新增發佈的標籤，請參 [閱管理標籤](/help/sites-cloud/authoring/features/tags.md)。
 
-或者，如果您想要在AEM中使用預設標籤，則可略過此工作並前往「 [啟用YouTube Publish複製代理」](#enabling-the-youtube-publish-replication-agent)。
+或者，如果您想要在AEM中使用預設標籤，您可以略過此工作，然後前往「在AEM中 [設定YouTube」](#setting-up-youtube-in-aem)。
 
-### 啟用YouTube Publish複製代理 {#enabling-the-youtube-publish-replication-agent}
+>[!NOTE]
+>
+>在設定雲端服務後，就不需要額外的設定，就可以啟用YouTube Publish複製代理。 原因是在儲存雲端服務設定時已啟用。
 
-啟用YouTube Publish複製代理後，如果您想要測試與Google Cloud帳戶的連線，請點選「 **[!UICONTROL Test Connection」]**。 瀏覽器頁籤顯示連接結果。 如果您已新增「YouTube頻道」，則這些頻道的清單會顯示為測試的一部分。
+<!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
-1. 在AEM的左上角，按一下AEM標誌，然後在左側導軌中，按一下「 **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **** Agent on AuthorAdor」。
-1. 在「作者代理」頁面上，按一下「 **[!UICONTROL YouTube發佈(youtube)」]**。
-1. 在工具列的「設定」右側，按一下「編 **[!UICONTROL 輯」]**。
-1. 選中「 **[!UICONTROL 啟用]** 」複選框以開啟複製代理。
-1. 按一下 **[!UICONTROL 確定]**。
+After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
-   現在，您將在AEM中設定YouTube。
+1. In the upper-left corner of AEM, click the AEM logo, then in the left rail, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Replication]** &gt; **[!UICONTROL Agents on Author]**.
+1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
+1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
+1. Click **[!UICONTROL OK]**. -->
 
 ### 在AEM中設定YouTube {#setting-up-youtube-in-aem}
 
@@ -749,17 +750,14 @@ YouTube會自行編碼。 因此，上傳至AEM的原始視訊檔案會發佈至
 >
 >請注意，立即發佈不會自動發佈至YouTube。設定動態媒體時，有兩個發佈選項可供選擇：立 **[!UICONTROL 即或]****[!UICONTROL 啟動後]**。
 >
->**[!UICONTROL 立即發佈]** ：表示已上傳的資產在與IPS同步後，會自動發佈至傳送系統。 雖然Dynamic Media是如此，但YouTube則不是這樣。 若要發佈至YouTube，您必須透過AEM Author發佈。
+>**[!UICONTROL 立即發佈]** ：表示上傳的資產在與IPS同步後，會自動發佈至傳送系統。 雖然Dynamic Media是如此，但YouTube則不是這樣。 若要發佈至YouTube，您必須透過AEM Author發佈。
 
 >[!NOTE]
->
->若要從YouTube發佈內容，AEM會使用「發佈至 **[!UICONTROL YouTube]** 」工作流程，讓您監控進度並檢視任何失敗資訊。
->
->請參閱 [監控視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
->
->如需更詳細的進度資訊，您可以在複製下監視YouTube記錄檔。 但是，請注意，此類監控需要管理員存取權。
+若要從YouTube發佈內容，AEM會使用「發佈至 **[!UICONTROL YouTube]** 」工作流程，讓您監控進度並檢視任何失敗資訊。
+請參閱 [監控視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
+如需更詳細的進度資訊，您可以在複製下監視YouTube記錄檔。 但是，請注意，此類監控需要管理員訪問權限。
 
-若要將影片發佈至您的YouTube頻道：
+**若要將影片發佈至您的YouTube頻道**:
 
 1. 在AEM中，導覽至您要發佈至YouTube頻道的視訊資產。
 1. 選取視訊資產（最適化視訊集）。
@@ -792,8 +790,7 @@ YouTube會自行編碼。 因此，上傳至AEM的原始視訊檔案會發佈至
 您可以在發佈視訊後，取得Dynamic Media產生的YouTube URL字串。 當您複製YouTube URL時，它會著陸在剪貼簿上，如此您就可視需要將它貼至網站或應用程式中的頁面。
 
 >[!NOTE]
->
->在您將視訊資產發佈至YouTube之前，YouTube URL無法複製。
+在您將視訊資產發佈至YouTube之前，YouTube URL無法複製。
 
 若要將YouTube URL連結至您的Web應用程式：
 
@@ -810,14 +807,11 @@ YouTube會自行編碼。 因此，上傳至AEM的原始視訊檔案會發佈至
 當您在AEM中解除發佈視訊資產時，視訊會從YouTube移除。
 
 >[!CAUTION]
->
->如果您直接從YouTube移除影片，AEM就不會察覺，而且會繼續以視訊仍發佈至YouTube的方式運作。 一律以AEM方式從YouTube取消發佈視訊資產。
+如果您直接從YouTube移除影片，AEM就不會察覺，而且會繼續以視訊仍發佈至YouTube的方式運作。 一律以AEM方式從YouTube取消發佈視訊資產。
 
 >[!NOTE]
->
->若要從YouTube移除內容，AEM會使用「從YouTube **[!UICONTROL 解除發佈]** 」工作流程，讓您監控進度並檢視任何失敗資訊。
->
->請參閱 [監控視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
+若要從YouTube移除內容，AEM會使用「從YouTube **[!UICONTROL 解除發佈]** 」工作流程，讓您監控進度並檢視任何失敗資訊。
+請參閱 [監控視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 
 若要解除發佈影片以從YouTube移除影片：
 
@@ -857,21 +851,17 @@ YouTube會自行編碼。 因此，上傳至AEM的原始視訊檔案會發佈至
    任何工作流程資訊（例如編碼）都會顯示在時間軸中。 對於YouTube發佈，工作流程時間軸也包含YouTube頻道名稱和YouTube影片URL。 此外，發佈完成後，您會在工作流程時間軸中看到任何失敗通知。
 
    >[!NOTE]
-   >
-   >由於重試時有多個工作流配置、重試延遲 **[!UICONTROL ，以及]**********[](https://localhost:4502/system/console/configMgr)https://localhost:4502/system/console/configMgr的逾時(例如：
-   >
-   >    * Apache Sling Job Queue Configuration
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Granite工作流程逾時佇列
+   由於重試時有多個工作流配置、重試延遲 **[!UICONTROL ，以及]**********[](https://localhost:4502/system/console/configMgr)https://localhost:4502/system/console/configMgr的逾時(例如：
+   * Apache Sling Job Queue Configuration
+   * Adobe Granite Workflow External Process Job Handler
+   * Granite工作流程逾時佇列
 
-   >
-   >您可以調整這些 **[!UICONTROL 配置中]****[!UICONTROL 的重試]**、重試延遲 **[!UICONTROL ,]** 以及超時屬性。
+   您可以調整這些 **[!UICONTROL 配置中]****[!UICONTROL 的重試]**、重試延遲 **[!UICONTROL ,]** 以及超時屬性。
 
 1. 如需進行中的工作流程，請參閱「工具 **[!UICONTROL >工作流程]** >例項」中的「工作流程例 **[!UICONTROL 項」]******。
 
    >[!NOTE]
-   >
-   >您可能需要有管理權限才能存取「工 **[!UICONTROL 具]** 」功能表。
+   您可能需要有管理權限才能存取「工 **[!UICONTROL 具]** 」功能表。
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -884,30 +874,22 @@ YouTube會自行編碼。 因此，上傳至AEM的原始視訊檔案會發佈至
 1. 有關失敗的作業，請參閱「工具」>「工作流 **[!UICONTROL 程」]** > 「失敗 **[!UICONTROL 」中的「工]** 作流失敗 ****」。「工作 **[!UICONTROL 流失敗]** 」(Workflow Failure)列出所有失敗的工作流活動。
 
    >[!NOTE]
-   >
-   >您可能需要有管理權限才能存取「工 **[!UICONTROL 具]** 」功能表。
+   您可能需要有管理權限才能存取「工 **[!UICONTROL 具]** 」功能表。
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
    >[!NOTE]
-   >
-   >由於重試時有多個工作流程設定、重試延遲 **[!UICONTROL ，以及https://localhost:4502/system/console/configMgr的逾時(例如]**********[](https://localhost:4502/system/console/configMgr):
-   >
-   >
-   >
-   >    * Apache Sling Job Queue Configuration
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Granite工作流程逾時佇列
+   由於重試時有多個工作流程設定、重試延遲 **[!UICONTROL ，以及https://localhost:4502/system/console/configMgr的逾時(例如]**********[](https://localhost:4502/system/console/configMgr):
+   * Apache Sling Job Queue Configuration
+   * Adobe Granite Workflow External Process Job Handler
+   * Granite工作流程逾時佇列
 
-   >
-   >
-   >您可以調整這些 **[!UICONTROL 配置中]****[!UICONTROL 的重試]**、重試延遲 **[!UICONTROL ,]** 以及超時屬性。
+   您可以調整這些 **[!UICONTROL 配置中]****[!UICONTROL 的重試]**、重試延遲 **[!UICONTROL ,]** 以及超時屬性。
 
 1. 如需完成的工作流程，請參閱「工具 **[!UICONTROL >工作流程]** >封存 **[!UICONTROL 」中的「工作流程封存]******」。「工作 **[!UICONTROL 流程存檔]** 」會列出所有已完成的工作流活動。
 
    >[!NOTE]
-   >
-   >您可能需要有管理權限才能存取「工 **[!UICONTROL 具]** 」功能表。
+   您可能需要有管理權限才能存取「工 **[!UICONTROL 具]** 」功能表。
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
@@ -962,8 +944,7 @@ For YouTube publishing jobs, do the following:
 ## 檢視視訊報表 {#viewing-video-reports}
 
 >[!NOTE]
->
->視訊報表僅在您執行動態媒體——混合模式時可用。
+視訊報表僅在您執行動態媒體——混合模式時可用。
 
 「視訊報表」會顯示指定時段內的數個匯總量度，以協助您監控*已發佈*個別和匯總視訊是否如預期般執行。 下列主要量度資料會匯總整個網站上所有發佈的影片：
 
@@ -980,8 +961,7 @@ For YouTube publishing jobs, do the following:
 如果視訊是在Adobe Experience Manager Dynamic Media以外進行編碼，表格中的觀眾保留率（下拉式）圖表和播放百分比資料將不可用。
 
 >[!NOTE]
->
->追蹤和報告資料完全以使用Dynamic Media本身的視訊播放器和相關視訊播放器預設集為基礎。 因此，您無法追蹤並報告透過其他視訊播放器播放的視訊。
+追蹤和報告資料完全以使用Dynamic Media本身的視訊播放器和相關視訊播放器預設集為基礎。 因此，您無法追蹤並報告透過其他視訊播放器播放的視訊。
 
 依預設，在您第一次輸入視訊報表時，報表會顯示視訊資料，從當月的第一個開始，並以當月的日期結束。 不過，您可以指定您自己的日期範圍來覆寫預設日期範圍。 下次您輸入視訊報表時，會使用您指定的日期範圍。
 
@@ -1076,8 +1056,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 字幕功能還可為聾人或聽障人士使用隱藏字幕功能，以提高無障礙環境支援。
 
 >[!NOTE]
->
->您使用的視訊播放器必須支援標題的顯示。
+您使用的視訊播放器必須支援標題的顯示。
 
 Dynamic Media可將標題檔案轉換為JSON（JavaScript物件註解）格式。 此轉換表示您可將JSON文字內嵌至網頁，做為視訊的隱藏但完整記錄。 然後搜尋引擎可以搜尋並索引內容，讓影片更容易被發現，並提供客戶有關視訊內容的其他詳細資訊。
 
@@ -1102,8 +1081,7 @@ Dynamic Media可將標題檔案轉換為JSON（JavaScript物件註解）格式�
    現在請依照網站的螢幕上指示來製作和儲存您的WebVTT檔案。 完成後，複製標題檔案內容並將其貼上到純文字檔案編輯器中，然後以。vtt檔案副檔名保存它。
 
    >[!NOTE]
-   >
-   >若要全域支援多種語言的視訊字幕，請注意，WebVTT標準要求您針對想要支援的每種語言分別建立。vtt檔案和呼叫。
+   若要全域支援多種語言的視訊字幕，請注意，WebVTT標準要求您針對想要支援的每種語言分別建立。vtt檔案和呼叫。
 
    通常，您要將標題VTT檔案命名為與視訊檔案相同的名稱，並附加語言地區設定，例如-EN、-FR或-DE等。 如此，它可協助您使用您現有的網頁內容管理系統自動產生視訊URL。
 
@@ -1133,8 +1111,7 @@ Dynamic Media可將標題檔案轉換為JSON（JavaScript物件註解）格式�
 您可以在單一影片或最適化影片集中新增章節標籤，讓長篇影片的觀賞和導覽更輕鬆。 當使用者播放視訊時，可以按一下視訊時間軸上的章節標籤（也稱為視訊筆畫），輕鬆導覽至其興趣點，或立即跳至新內容、展示、教學課程等。
 
 >[!NOTE]
->
->使用的視訊播放器必須支援章節標籤的使用。 動態媒體視訊播放器確實支援章節標籤，但使用協力廠商視訊播放器可能不支援。
+使用的視訊播放器必須支援章節標籤的使用。 動態媒體視訊播放器確實支援章節標籤，但使用協力廠商視訊播放器可能不支援。
 
 視需要，您可以建立自訂的視訊檢視器並加上章節，而不是使用視訊檢視器預設集。 如需有關使用章節導覽建立您自己的HTML5檢視器的指示，請參閱Adobe Scene7 Viewer SDK for HTML5指南中類別和下方的「使用修飾詞自訂行為」標 `s7sdk.video.VideoPlayer` 題 `s7sdk.video.VideoScrubber`。 Adobe Scene7 Viewer SDK可從 [Adobe Developer Connection下載](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)。
 
@@ -1198,7 +1175,7 @@ Cost-efficient access to rapidly evolving technology.
        <li>導覽至您 <i>要 </i>與您上傳之章節檔案建立關聯的已發佈視訊資產。 請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。請參閱 <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">發佈資產。</a></li>
        <li>從下拉式選單中，按一下或點選「檢 <strong>視器</strong>」。</li>
        <li>在左側導軌中，點選或按一下視訊檢視器預設集名稱。 視訊的預覽會在個別頁面中開啟。</li>
-       <li>在左側導軌底部，按一下「內 <strong>嵌」</strong>。</li>
+       <li>在左側導軌底部，按一下「內嵌」 <strong></strong>。</li>
        <li>在「內嵌代碼」對話方塊中，選取整個代碼並將它複製至剪貼簿，然後貼到簡單的文字編輯器中。</li>
        <li>以下列語法附加視訊的內嵌代碼，將它與複製的URL建立關聯至您的章節檔案：<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
        </ol> </td>
