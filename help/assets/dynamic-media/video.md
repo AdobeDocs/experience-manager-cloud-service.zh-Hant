@@ -2,7 +2,7 @@
 title: 影片
 description: 瞭解如何在動態媒體中處理視訊
 translation-type: tm+mt
-source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
+source-git-commit: 591e33f255a82371dea6fbe07ed9c9b43764b12c
 workflow-type: tm+mt
 source-wordcount: '10058'
 ht-degree: 10%
@@ -39,7 +39,7 @@ ht-degree: 10%
       * [將視訊描述檔套用至資料夾](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
       * 進一步瞭解組織 [數位資產以使用處理設定檔的最佳實務](/help/assets/dynamic-media/best-practices-for-file-management.md)。
       * 進一步瞭解組 [織數位資產](/help/assets/organize-assets.md)。
-   * 將您的主要來源影片上傳至資料夾。 您可以上傳每個高達15 GB的視訊檔案。 當您將視訊新增至資料夾時，會根據您指派至資料夾的視訊處理設定檔進行編碼。
+   * 將您的主要來源影片上傳至資料夾。 您可以上傳每個檔案高達15 GB的視訊檔案。 當您將視訊新增至資料夾時，會根據您指派至資料夾的視訊處理設定檔進行編碼。
 
       * [上傳您的影片](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
       * 進一步瞭解支 [援的輸入檔案格式](/help/assets/file-format-support.md)。
@@ -173,7 +173,7 @@ Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可以在以下位
 
 結合單一播放器，即可設計使用HTML5和CSS的播放元件、內嵌播放，並視瀏覽器功能而使用可調式和漸進式串流，讓您將豐富型媒體內容的觸及面擴展至案頭和行動使用者，並確保簡化視訊體驗。
 
-另請參 [閱Adobe Scene7檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) 中的關於HTML5檢視器。
+另請參 [閱Adobe Scene7檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) 中的「關於HTML5檢視器」。
 
 ### 使用HTML5視訊檢視器在桌上型電腦和行動裝置上播放視訊 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -567,7 +567,7 @@ YouTube會自行編碼。 因此，上傳至AEM的原始視訊檔案會發佈至
 
 >[!NOTE]
 >
->在設定雲端服務後，就不需要額外的設定，就可以啟用YouTube Publish複製代理。 原因是在儲存雲端服務設定時已啟用。
+>在設定雲端服務後，此時不需要額外的設定，即可啟用YouTube Publish複製代理。 原因是在儲存雲端服務設定時已啟用。
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
