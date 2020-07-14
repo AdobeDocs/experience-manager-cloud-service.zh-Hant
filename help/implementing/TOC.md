@@ -1,11 +1,11 @@
 ---
 sub-product: AEM 雲端服務實作
 user-guide-title: AEM 雲端服務實作
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -30,26 +30,26 @@ ht-degree: 73%
    + [AEM 雲端服務 SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM 雲端服務開發方針](developing/introduction/development-guidelines.md)
    + [開始開發 AEM Sites - WKND 教學課程](developing/introduction/develop-wknd-tutorial.md)
-   + [AEM中的覆蓋作為雲端服務](developing/introduction/overlays.md)
-   + [在AEM中將Sling Resource Merger當做雲端服務](developing/introduction/sling-resource-merger.md)
-   + [AEM 雲端服務 API](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [AEM 雲端服務中的覆蓋](developing/introduction/overlays.md)
+   + [在 AEM 雲端服務中使用 Sling Resource Merger](developing/introduction/sling-resource-merger.md)
+   + [AEM 雲端服務 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [了解測試結果](/help/implementing/developing/introduction/understand-test-results.md)
 + 設定和擴充 AEM 雲端服務 {#configuring-and-extending}
    + [擴充體驗片段](developing/extending/experience-fragments.md)
    + [自訂和擴充內容片段](developing/extending/content-fragments-customizing.md)
    + [轉譯專用內容片段設定元件](developing/extending/content-fragments-configuring-components-rendering.md)
    + [設定搜尋表單](developing/extending/search-forms.md)
-   + [配置富格文本編輯器](/help/implementing/developing/extending/rich-text-editor.md)
-   + [配置RTE插件](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
-   + [配置RTE以建立可訪問站點](/help/implementing/developing/extending/rte-accessible-content.md)
+   + [設定 RTF 編輯器](/help/implementing/developing/extending/rich-text-editor.md)
+   + [設定 RTE 外掛程式](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+   + [設定 RTE 以建立可存取的網站](/help/implementing/developing/extending/rte-accessible-content.md)
 + 部署至 AEM 雲端服務 {#deploying}
    + [部署至 AEM 雲端服務](deploying/overview.md)
    + [為 AEM 雲端服務設定 OSGi](deploying/configuring-osgi.md)
-+ Author Tier {#author-tier}
-   + [存取作者層](/help/implementing/author-tier/accessing-the-author-tier.md)
-   + [保護作者層](/help/implementing/author-tier/securing-the-author-tier.md)
-+ 內容傳送概觀 {#content-delivery}
-   + [內容傳送流程](dispatcher/overview.md)
++ 作者階層 {#author-tier}
+   + [存取作者階層](/help/implementing/author-tier/accessing-the-author-tier.md)
+   + [保護作者階層](/help/implementing/author-tier/securing-the-author-tier.md)
++ 內容傳遞概覽 {#content-delivery}
+   + [內容傳遞流程](dispatcher/overview.md)
    + [雲端中的 Dispatcher](dispatcher/disp-overview.md)
-   + [AEM中的CDN（雲端服務）](dispatcher/cdn.md)
-   + [在AEM中快取為雲端服務](dispatcher/caching.md)
+   + [AEM 雲端服務中的 CDN](dispatcher/cdn.md)
+   + [AEM 雲端服務中的快取](dispatcher/caching.md)
