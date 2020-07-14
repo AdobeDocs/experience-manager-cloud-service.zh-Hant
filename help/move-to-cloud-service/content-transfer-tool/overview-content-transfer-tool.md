@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -48,18 +48,16 @@ ht-degree: 69%
 
 請依照以下章節了解使用「內容轉移工具」的准則與最佳作法：
 
-* 建議在源儲存庫上 [運行「修訂清理](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) 」和 [](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)**** 「資料儲存一致性檢查」，以發現潛在問題並減少儲存庫的大小。
+* 建議您對&#x200B;**來源**&#x200B;存放庫執行[修訂清理](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/deploying/deploying/revision-cleanup.html)和[資料存放區一致性檢查](content/help/tw/zh-Hant/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)，以找出潛在問題並降低存放庫大小。
 
-* 如果AEM Cloud作者內容傳送網路(CDN)設定已設定為擁有IP的白名單，則應確保來源環境IP也新增至allowlist，如此來源環境與AEM Cloud環境就可以彼此通訊。
+* 如果 AEM 雲端製作內容傳遞網路 (CDN) 已設定好 IP 白名單，則應確實將來源環境 IP 也新增至允許清單中。讓來源環境和 AEM 雲端環境可互相通訊。
 
 * 在擷取階段中，建議使用&#x200B;*擦去*&#x200B;模式來執行擷取，讓目標 AEM 雲端服務環境中的現有存放庫 (製作或發佈) 被完全刪除，然後以移轉集資料更新。此模式比非擦去模式快速許多，因為在非擦去模式中，移轉集會套用在目前內容的頂端。
 
 * 內容轉移活動完成後，雲端服務環境將需要正確的專案結構，以確保內容在雲端服務環境中成功轉譯。
 
-* 在執行「內容傳輸工具」之前，您必須確定來源AEM例項的子目錄中 `crx-quickstart` 有足夠的磁碟空間。 這是因為內容傳輸工具建立了儲存庫的本地副本，該副本稍後將上載到遷移集。
-計算所需可用磁碟空間的一般公式如下：
+* 在執行「內容轉移工具」之前，您必須確定來源 AEM 例項的 `crx-quickstart` 子目錄中有足夠的磁碟空間。這是因為「內容轉移工具」會建立存放庫的本機副本，且該副本稍後將上傳至移轉集。計算所需可用磁碟空間的一般公式如下：
    `data store size + node store size * 1.5`
 
-   * *資料儲存大小*: 內容傳輸工具使用64 GB，即使實際資料儲存空間較大。
-   * *節點儲存大小*: 段儲存目錄大小或MongoDB資料庫大小。
-因此，若區段儲存區大小為20GB，則需要的可用磁碟空間為94GB。
+   * *資料存放區大小*：「內容轉移工具」會使用 64GB，即使實際資料存放區較大亦然。
+   * *節點存放區大小*：區段存放區目錄大小或 MongoDB 資料庫大小。因此，若區段存放區的大小為 20GB，則需要的可用磁碟空間為 94GB。
