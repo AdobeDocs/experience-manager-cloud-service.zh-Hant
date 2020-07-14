@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1582'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,22 +18,22 @@ ht-degree: 91%
 
 * 「內容轉移工具」的最低系統需求為 AEM 6.3 + 和 JAVA 8。如果您使用較舊版本的 AEM，您必須將內容存放庫升級至 AEM 6.5 才能使用「內容轉移工具」。
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. 如果您使用&#x200B;*生產環境*，則會自動更新。
+* 如果您使用&#x200B;*沙箱環境*，請確定您的環境已升級至 2020 年 6 月 10 日或之後發行的版本。如果您使用&#x200B;*生產環境*，則會自動更新。
 
-* 若要使用「內容傳輸工具」，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud服務例項中的AEM管理員群組。 無權限的使用者將無法擷取能使用「內容轉移工具」的存取 Token。
+* 如果要使用「內容轉移工具」，您必須是來源例項的管理員使用者，且屬於內容要轉移到的雲端服務例項的 AEM 管理員群組。無權限的使用者將無法擷取能使用「內容轉移工具」的存取 Token。
 
 * 在提取階段中，「內容轉移工具」會在作用中的 AEM 來源例項上執行。
 
 * 製作的&#x200B;*擷取階段*&#x200B;將縮小整個製作部署。這表示在整段擷取程序中，將無法使用製作 AEM。
 
-* 建議的儲存庫大小上限是20GB，內容傳輸工具一次可以支援。
+* 我們建議，「內容轉移工具」一次可支援的存放庫大小上限應為 20GB。
 
 ## 可用性 {#availability}
 
-內容傳輸工具可從軟體散發入口網站下載為zip檔案（內容傳輸工具v1.0.0）。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。
+您可以從軟體發佈入口網站下載「內容轉移工具」ZIP 檔案 (內容轉移工具 v1.0.0)。您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。
 
 >[!NOTE]
->從軟體散發入口網站下載內 [容傳輸](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 工具。
+>從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)入口網站下載內容轉移工具。
 
 ## 執行「內容轉移工具」 {#running-tool}
 
@@ -70,7 +70,7 @@ ht-degree: 91%
    1. **存取 Token**：輸入存取 Token。
 
       >[!NOTE]
-      >您可以導覽至 `/libs/granite/migration/token.json`，從製作例項中擷取存取 Token。存取Token是從雲端服務作者實例擷取。
+      >您可以導覽至 `/libs/granite/migration/token.json`，從製作例項中擷取存取 Token。存取 Token 可從雲端服務製作例項擷取。
 
    1. **參數**：選取以下參數以建立移轉集：
 
@@ -213,7 +213,7 @@ ht-degree: 91%
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
-1. 若要追蹤記錄檔而不使用使用者介面，您可將SSH整合至來源AEM環境，並追蹤記錄檔 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`。
+1. 若要追蹤記錄而不使用使用者介面，您可以透過 SSH 連線至來源 AEM 環境，並追蹤 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`。
 
 ### 刪除移轉集 {#deleting-migration-set}
 
