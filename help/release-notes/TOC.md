@@ -1,9 +1,9 @@
 ---
 sub-product: AEM 雲端服務發行說明
 user-guide-title: AEM 雲端服務發行說明
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a898e836ac93a6050a40151c130e2c14d233f733
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '52'
 ht-degree: 100%
 
