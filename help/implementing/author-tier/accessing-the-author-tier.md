@@ -1,25 +1,25 @@
 ---
-title: 存取作者層
-description: 存取作者層
-translation-type: tm+mt
+title: 存取作者階層
+description: 存取作者階層
+translation-type: ht
 source-git-commit: e772687c4034a364912aa426a133134571246db9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '69'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# 存取作者層 {#accessing-the-author-tier}
+# 存取作者階層{#accessing-the-author-tier}
 
-以雲端服務環境存取AEM的作者層是透過標準且不可自訂的URL來完成。
+AEM 雲端服務環境的作者階層可透過標準且不可自訂的 URL 來存取。
 
-URL格式目前如下：
+該 URL 目前的格式如下：
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
-最後，此格式會以標準Adobe Experience Cloud URL格式取代：
+最終，此格式將會取代為標準 Adobe Experience Cloud URL 格式：
 
 * `https://experience.adobe.com/#/@[TenantId]/`
 
-因此，不支援為AEM作者層設定自訂網域名稱。
+因此，不支援為 AEM 作者階層設定自訂網域名稱。
