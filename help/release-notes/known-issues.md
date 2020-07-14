@@ -1,11 +1,11 @@
 ---
 title: 已知問題
 description: Adobe Experience Manager 雲端服務已知問題的發行說明
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Experience Manager Assets 的少數功能需仰賴基礎功能，這些基
    * 資產屬性使用者介面中未填入資料的產品資訊標籤。
 * 目前仍仰賴 InDesign Server 整合而尚未啟用的功能：
    * 資產範本和資產目錄。
-   * Adobe InDesign檔案的多頁預覽。
+   * Adobe InDesign 檔案的多頁預覽。
 
 >[!MORELIKETHIS]
 >
