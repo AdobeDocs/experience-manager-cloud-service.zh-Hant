@@ -1,11 +1,11 @@
 ---
 sub-product: AEM Assets 雲端服務
 user-guide-title: AEM Assets 雲端服務
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '406'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,8 +44,8 @@ ht-degree: 96%
 + 設定、管理及擴充 Assets {#admin}
    + [API 和參考資料](developer-reference-material-apis.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
-   + [關於使用影像描述檔和視訊描述檔](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [設定智慧標籤](smart-tags-configuration.md)
+   + [關於使用影像設定檔和影片設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [設定智慧標記](smart-tags-configuration.md)
    + [多語言資產和資產翻譯](translate-assets.md)
    + [搜尋 Facet](search-facets.md)
    + [擴充資產編輯器](extend-asset-editor.md)
@@ -87,7 +87,7 @@ ht-degree: 96%
    + [智慧型影像](dynamic-media/imaging-faq.md)
    + [傳送 Dynamic Media 資產](dynamic-media/delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中啟用超連結保護](dynamic-media/hotlink-protection.md)
-   + [3D支援](dynamic-media/assets-3d.md)
+   + [3D 支援](dynamic-media/assets-3d.md)
    + [影像集](dynamic-media/image-sets.md)
    + [全景影像](dynamic-media/panoramic-images.md)
    + [混合媒體集](dynamic-media/mixed-media-sets.md)
