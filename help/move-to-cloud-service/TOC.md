@@ -1,11 +1,11 @@
 ---
 sub-product: 轉移至 AEM 雲端服務
 user-guide-title: 轉移至 AEM 雲端服務
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fe2c098b55bf501dc0ae68d01139b828d92d90f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '68'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 89%
 + 雲端轉換工具 {#cloud-migration}
    + Cloud Readiness Analyzer {#cloud-readiness-analyzer}
       + [概覽](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
-      + [使用Cloud Readiness Analyzer](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
+      + [使用 Cloud Readiness Analyzer](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
    + 內容轉移工具 {#content-transfer-tool}
       + [概覽](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [使用內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
