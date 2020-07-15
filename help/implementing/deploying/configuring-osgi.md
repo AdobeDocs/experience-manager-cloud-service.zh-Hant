@@ -2,9 +2,9 @@
 title: 為 AEM 雲端服務設定 OSGi
 description: '具有機密值和環境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 024518cca45463afb5cbb4c9cd66bf1cd2a7c210
 workflow-type: tm+mt
-source-wordcount: '2689'
+source-wordcount: '2691'
 ht-degree: 1%
 
 ---
@@ -192,7 +192,7 @@ AEM SDK Quickstart Jar的AEM Web Console可用來設定OSGi元件，並將OSGi�
 1. 將永續性身分識別(PID)記錄到安全位置，稍後將用來產生OSGi設定JSON
 1. 點選「儲存」
 1. 導覽至「OSGi > OSGi Installer Configuration Printer」
-1. 貼入步驟5中複製的PID中，確保「序列化格式」已設為「OSGi Configurator JSON」
+1. 在步驟5中複製的PID中貼上，確保「序列化格式」已設為「OSGi Configurator JSON」
 1. 點選「列印」、
 1. JSON格式的OSGi設定將顯示在「序列化設定屬性」區段中
    ![OSGi安裝程式配置打印機](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
@@ -509,7 +509,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ### 變數數 {#number-of-variables}
 
-最多可宣告20個變數。
+每個環境最多可聲明200個變數。
 
 ## 機密和環境特定配置值的部署注意事項 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
