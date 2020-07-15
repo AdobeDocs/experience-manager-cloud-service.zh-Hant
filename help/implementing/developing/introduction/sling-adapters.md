@@ -2,15 +2,15 @@
 title: 使用Sling適配器
 description: Sling提供Adapter模式，可方便轉譯實作Appative介面的物件
 translation-type: tm+mt
-source-git-commit: 24e75871113d3dae903911cc28c0c2c8a994a04e
+source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
 workflow-type: tm+mt
-source-wordcount: '2083'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# 使用Sling適配器{#using-sling-adapters}
+# 使用Sling適配器 {#using-sling-adapters}
 
 [Sling](https://sling.apache.org) 提供Adapter [模式](https://sling.apache.org/site/adapters.html) ，可方便轉譯實作 [Appative](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) Interface的物件。 此介面提供一 [般的adpatTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 方法，可將物件轉換為作為引數傳遞的類別類型。
 
