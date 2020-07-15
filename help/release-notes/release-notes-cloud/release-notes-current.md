@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 雲端服務 2020.7.0 版發行說明
 description: Experience Manager 2020.7.0 版發行說明
 translation-type: tm+mt
-source-git-commit: d800ffd57826251031206290405ec1dd5febede8
+source-git-commit: 22a025b49444e08d014e0459443751b5a3cfc7bf
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 28%
+source-wordcount: '363'
+ht-degree: 20%
 
 ---
 
@@ -49,3 +49,20 @@ Cloud Manager  2020.7.0版的發行日期為2020年7月9日。
 * 驗證環境名稱時會出現一個逐項錯誤。
 
 * 「環境」頁面有時會在無顯示時顯示發佈和分派器區段。
+
+## Cloud Readiness Analyzer的新增功能 {#cloud-readiness-analyzer}
+
+請依照本節瞭解Cloud Readiness Analyzer的新增功能和更新。
+
+### 錯誤修正 {#cra-bug-fixes}
+
+* CRA的舊版無法在Adobe Experience Manager(AEM)6.1上執行。 已新增明確支援，允許管理員群組中的使用者。
+
+   如需詳細 [資訊，請參閱「在AEM 6.1上安裝CRA](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) 」。
+
+* 摘要報表上顯示的到期時間戳記不正確。
+
+* CRA正在檢測重複的定製元件。
+
+* 在AEM 6.1中，內容檢查在完成完整檢查之前即已結束。 已添加異常處理，允許檢查員跳過並繼續，直到完全檢查完成。
+
