@@ -1,11 +1,11 @@
 ---
 sub-product: AEM 雲端服務實作
 user-guide-title: AEM 雲端服務實作
-translation-type: ht
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
-workflow-type: ht
-source-wordcount: '231'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 69de631457966383b537fdf5aeddf9157adae73b
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 97%
 
 ---
 
@@ -30,8 +30,10 @@ ht-degree: 100%
    + [AEM 雲端服務 SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM 雲端服務開發方針](developing/introduction/development-guidelines.md)
    + [開始開發 AEM Sites - WKND 教學課程](developing/introduction/develop-wknd-tutorial.md)
-   + [AEM 雲端服務中的覆蓋](developing/introduction/overlays.md)
+   + [Sling Cheatsheet](developing/introduction/sling-cheatsheet.md)
+   + [使用Sling適配器](developing/introduction/sling-adapters.md)
    + [在 AEM 雲端服務中使用 Sling Resource Merger](developing/introduction/sling-resource-merger.md)
+   + [AEM 雲端服務中的覆蓋](developing/introduction/overlays.md)
    + [AEM 雲端服務 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [了解測試結果](/help/implementing/developing/introduction/understand-test-results.md)
 + 設定和擴充 AEM 雲端服務 {#configuring-and-extending}
