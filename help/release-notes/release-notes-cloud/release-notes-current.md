@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 雲端服務 2020.7.0 版發行說明
 description: Experience Manager 2020.7.0 版發行說明
 translation-type: tm+mt
-source-git-commit: 22a025b49444e08d014e0459443751b5a3cfc7bf
+source-git-commit: 66f066fe55ef872b62d4dcee711d3c7077bfccd1
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 20%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ Cloud Manager  2020.7.0版的發行日期為2020年7月9日。
 
 ## Cloud Readiness Analyzer的新增功能 {#cloud-readiness-analyzer}
 
-請依照本節瞭解Cloud Readiness Analyzer的新增功能和更新。
+請依照本節瞭解Cloud Readiness Analyzer 1.0.2版的新增功能和更新。
 
 ### 錯誤修正 {#cra-bug-fixes}
 
