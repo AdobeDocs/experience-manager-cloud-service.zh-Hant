@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 雲端服務 2020.7.0 版發行說明
 description: Experience Manager 2020.7.0 版發行說明
 translation-type: tm+mt
-source-git-commit: 66f066fe55ef872b62d4dcee711d3c7077bfccd1
+source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '404'
+ht-degree: 18%
 
 ---
 
@@ -49,6 +49,10 @@ Cloud Manager  2020.7.0版的發行日期為2020年7月9日。
 * 驗證環境名稱時會出現一個逐項錯誤。
 
 * 「環境」頁面有時會在無顯示時顯示發佈和分派器區段。
+
+### 已知問題 {#known-issues}
+
+* 由於程式碼涵蓋範圍的計算方式有所變 _更_ ,Jacoco外掛程式的最低版本現在為0.7.5.201505241946（2015年5月發行）。 明確參照舊版的客戶會在程式碼品質程式中收到錯誤訊息。
 
 ## Cloud Readiness Analyzer的新增功能 {#cloud-readiness-analyzer}
 
