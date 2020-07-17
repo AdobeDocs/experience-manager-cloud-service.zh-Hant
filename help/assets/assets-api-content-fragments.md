@@ -2,7 +2,7 @@
 title: Adobe Experience Manager作為Assets HTTP API中的雲端服務內容片段支援
 description: 瞭解Adobe Experience Manager如何在資產HTTP API中以雲端服務內容片段支援的方式提供。
 translation-type: tm+mt
-source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -67,7 +67,7 @@ Assets REST API提供 [AEM例項中](https://en.wikipedia.org/wiki/Representatio
 >[!NOTE]
 >存取：
 >* `/api/assets` **不需要** 「選取器」的 `.model` 使用。
->* `/content/assets` **需要** 使用選取器 `.model` 。
+>* `/content/path/to/page` **需要** 使用選取器 `.model` 。
 
 
 HTTP方法確定要執行的操作：
