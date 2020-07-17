@@ -2,17 +2,17 @@
 title: 內容片段
 description: Adobe Experience Manager作為雲端服務內容片段可讓您設計、建立、組織和使用不受頁面影響的內容
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 7%
+source-wordcount: '1165'
+ht-degree: 5%
 
 ---
 
 
 # 內容片段 {#content-fragments}
 
-Adobe Experience Manager(AEM)中的內容片段做為雲端服務， [會建立並管理為不受頁面影響的資產](/help/assets/content-fragments/content-fragments.md)。
+Adobe Experience Manager(AEM)中的內容片段是以Cloud Service的形式建立 [並管理為不受頁面影響的資產](/help/assets/content-fragments/content-fragments.md)。
 
 它們可讓您建立不受頻道影響的內容，以及（可能是特定頻道的）變化。 然後，您可以在製作內容頁面時使用這些片段及其變化。
 
@@ -80,6 +80,10 @@ Adobe Experience Manager(AEM)中的內容片段做為雲端服務， [會建立�
 
 開啟片段的「設 **定** 」對話方塊，以設定要在目前頁面上使用的片段。 對話方塊可視使用的元件而定。
 
+>[!NOTE]
+>
+>另請參 [閱核心元件、內容片段元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+
 在適當的設定對話方塊中，您可以選取可用的參數，包括：
 
 * **內容片段**
@@ -132,7 +136,7 @@ Adobe Experience Manager(AEM)中的內容片段做為雲端服務， [會建立�
 >
 >您也可以 [將視覺資產（影像）插入片段本身](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)。
 >
->插入到片段本身的視覺資產附加到片段的前一段。 這表示您無法在視覺資產和前段之間放置內容。
+>插入到片段本身的視覺資產附加到片段的前一段。 這表示您無法在視覺資產和前段之間放置內容。 如果您需要此層級的連線，您可將影像新增至片段(以混 [合媒體片段](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets))。
 
 >[!CAUTION]
 >
@@ -149,7 +153,7 @@ Adobe Experience Manager(AEM)中的內容片段做為雲端服務， [會建立�
 
 ### 使用關聯的內容 {#using-associated-content}
 
-如果您有 [與內容片段](/help/assets/content-fragments/content-fragments-assoc-content.md)[相關的內容](/help/assets/content-fragments/content-fragments.md) ，這些資產將可從側面板使用 (在您將片段放在內容頁面後)。關聯內容實際上是中間內容的特 [殊內容來源](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)。
+如果您有 [與內容片段](/help/assets/content-fragments/content-fragments-assoc-content.md)[相關的內容](/help/assets/content-fragments/content-fragments.md) ，這些資產將可從側面板使用 (在您將片段放在內容頁面後)。Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
@@ -167,7 +171,7 @@ Adobe Experience Manager(AEM)中的內容片段做為雲端服務， [會建立�
 
 ### 插入片段的資產 {#assets-inserted-into-the-fragment}
 
-如果資產（例如影像）已插入片段本身，則頁面編輯器中編輯這些資產的選項會受到限制。
+如果資產（例如影像）已插入片段本身(如 [混合媒體片段](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets))，則頁面編輯器中編輯這些資產的選項有限。
 
 例如，若是影像，您可以
 
