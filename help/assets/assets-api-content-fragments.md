@@ -2,7 +2,7 @@
 title: Adobe Experience Manager作為Assets HTTP API中的雲端服務內容片段支援
 description: 瞭解Adobe Experience Manager如何在資產HTTP API中以雲端服務內容片段支援的方式提供。
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -211,7 +211,7 @@ Assets REST API會公開資料夾屬性的存取權； 例如其名稱、標題�
 
 如果要求資產，回應會傳回其中繼資料； 例如標題、名稱及由個別資產架構定義的其他資訊。
 
-資產的二進位資料會公開為SIREN連結類型( `content` 亦稱為 `rel attribute`)。
+資產的二進位資料會公開為類型的SIREN連結 `content`。
 
 資產可以有多個轉譯。 這些項目通常以子實體形式公開，但有一個例外是縮圖轉譯，它會以類型()的鏈 `thumbnail` 接形式 `rel="thumbnail"`公開。
 
@@ -244,7 +244,7 @@ Assets REST API會公開資料夾屬性的存取權； 例如其名稱、標題�
 
 使用情形可能會因您使用AEM作者或發佈環境以及您的特定使用案例而異。
 
-* 建立作業會嚴格系結至作者例[項(目前無法使用此API復製片段以發佈](/help/assets/assets-api-content-fragments.md#limitations))。
+* 強烈建議建立作業系結至作者例項([目前無法使用此API復製片段以發佈](/help/assets/assets-api-content-fragments.md#limitations))。
 * 兩者皆可傳送，因為AEM僅以JSON格式提供要求的內容。
 
    * 從AEM作者實例儲存和傳送的內容，應該足以滿足防火牆後、媒體程式庫應用程式的需求。
