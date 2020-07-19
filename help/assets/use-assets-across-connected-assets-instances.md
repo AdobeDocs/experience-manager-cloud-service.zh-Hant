@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: 使用遠程部署中可用 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 的資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
+source-git-commit: 97830590ba66e90c324770fa57b3ff11a760677f
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 53%
+source-wordcount: '2082'
+ht-degree: 44%
 
 ---
 
@@ -27,7 +27,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 使用或設定此功能之前，請先確定下列事項：
 
-* 每個部署中，使用者都是適當使用者群組的成員。
+* 使用者是每個部署中適當使用者群組的一部分。
 * For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. 如需有關 [!DNL Experience Manager] 6.5的資訊，請參 [閱Experience Manager 6.5 Assets中的「連線資產」功能](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)。
 
    |  | [!DNL Sites] 雲端服務 | [!DNL Experience Manager] 6.5 [!DNL Sites] on AMS. | [!DNL Experience Manager] 6.5內 [!DNL Sites] 部部署 |
@@ -38,10 +38,10 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 ### 支援的檔案格式 {#mimetypes}
 
-作者可在「內容尋找器」中搜尋影像和下列類型的文件，並在「頁面編輯器」中使用找到的資產。文件可新增至 `Download` 元件，且影像可新增至 `Image` 元件。Authors can also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. 支援的格式包括：
+作者在Content Finder中搜尋影像和下列類型的檔案，並在「頁面編輯器」中使用搜尋的資產。 文檔將添加到元件 `Download` 中，影像將添加到組 `Image` 件中。 Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. 支援的格式包括：
 
 * **影像格式**: Image元件支 [持的格式](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/components/image.translate.html) 。 [!DNL Dynamic Media] 不支援影像。
-* **文件格式**：請參閱[連線資產支援的文件格式](file-format-support.md#document-formats)。
+* **檔案格式**: 請參閱支 [援的檔案格式](file-format-support.md#document-formats)。
 
 ### 相關使用者和群組 {#users-and-groups-involved}
 
@@ -58,9 +58,9 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
-An [!DNL Experience Manager] administrator can create this integration. Once created, the permissions required to use it are established via user groups that are defined on the [!DNL Sites] deployment and on the DAM deployment.
+An [!DNL Experience Manager] administrator can create this integration. 建立後，使用權限所需的權限會透過使用者群組建立。 用戶組在部署和DAM [!DNL Sites] 部署上定義。
 
-To configure Connected Assets and local [!DNL Sites] connectivity, follow these steps.
+To configure Connected Assets and local [!DNL Sites] connectivity, follow these steps:
 
 1. Access an existing [!DNL Sites] deployment or create a deployment using the following command:
 
@@ -75,13 +75,14 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
    1. [!DNL Assets] 位置為 `https://[assets_servername_ams]:[port]`。
    1. DAM 經銷商 (技術使用者) 的認證。
-   1. 在&#x200B;**[!UICONTROL 「掛接點」]**&#x200B;欄位中，輸入 擷取資產的本機 路徑。[!DNL Experience Manager][!DNL Experience Manager]例如，`remoteassets` 資料夾。
+   1. In the **[!UICONTROL Mount Point]** field, enter the local [!DNL Experience Manager] path where [!DNL Experience Manager] fetches the assets. 例如，`remoteassets` 資料夾。
 
    1. 根據您的網路調整&#x200B;**[!UICONTROL 原始二進位傳輸最佳化臨界值]**。大於此臨界值的資產轉譯項目會以非同步方式傳送。
    1. 如果您是使用資料存放區來儲存資產，且「資料存放區」是兩個 部署之間的共用儲存空間，請選取&#x200B;**[!UICONTROL 「與連線資產共用的資料存放區」]**。這種情況下，臨界值限制並不重要，因為實際的資產二進位檔位於資料存放區，而且不會轉移。
-      ![連線資產的典型設定](assets/connected-assets-typical-config.png)
 
-      *圖：連線資產的典型設定.*
+   ![連線資產的典型設定](assets/connected-assets-typical-config.png)
+
+   *圖：連線資產的典型設定.*
 
 1. 資產處理完畢且轉譯完成擷取後，請停用工作流程啟動器。Adjust the launcher configurations on the local ([!DNL Sites]) deployment to exclude the `connectedassets` folder, in which the remote assets are fetched.
 
@@ -103,28 +104,28 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    >
    >作者擷取資產時，會擷取遠端 部署上可用的所有轉譯項目。若要針對所擷取的資產建立更多轉譯項目，請略過此設定步驟。The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
-1. Add the [!DNL Sites] instance as one of the **[!UICONTROL Allowed Origins]** on the remote [!DNL Assets'] CORS configuration.
+1. Add the [!DNL Sites] deployment as one of the **[!UICONTROL Allowed Origins]** on the remote [!DNL Assets'] CORS configuration.
 
    1. 使用管理員憑證登入。 搜尋 `Cross-Origin`. 存取&#x200B;**[!UICONTROL 「工具]** > **[!UICONTROL 作業]** > **[!UICONTROL Web 主控台」]**。
 
-   1. To create a CORS configuration for [!DNL Sites] instance, click ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) icon next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
+   1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. 儲存設定。
 
 ## 使用遠端資產 {#use-remote-assets}
 
-網站作者使用「內容尋找器」連線至 DAM 例項。作者可以瀏覽、搜尋和拖曳元件中的遠端資產。若要向遠端 DAM 驗證，請備妥管理員提供的 DAM 使用者認證。
+網站作者使用Content Finder連線至DAM部署。 作者可以瀏覽、搜尋和拖曳元件中的遠端資產。若要向遠端 DAM 驗證，請備妥管理員提供的 DAM 使用者認證。
 
-作者可在單一網頁中使用本機DAM和遠端DAM例項上的可用資產。 使用「內容尋找器」，以便在搜尋本機 DAM 和搜尋遠端 DAM 之間切換。
+作者可在單一網頁中使用本機DAM和遠端DAM部署上的可用資產。 使用「內容尋找器」，以便在搜尋本機 DAM 和搜尋遠端 DAM 之間切換。
 
-Only those tags of remote assets are fetched that have an exact corresponding tag along with the same taxonomy hierarchy, available on the local [!DNL Sites] instance. 其他所有標籤會一概捨棄。Authors can search for remote assets using all the tags present on the remote [!DNL Experience Manager] deployment, as it offers a full-text search.
+只有那些具有與本地部署相同的分類層次具有完全對應標籤的遠程資產的標籤才會被 [!DNL Sites] 提取。 其他所有標籤會一概捨棄。Authors can search for remote assets using all the tags present on the remote [!DNL Experience Manager] deployment, as it offers a full-text search.
 
 ### 逐步使用說明 {#walk-through-of-usage}
 
 不妨使用上述設定試著編寫體驗，以了解功能的運作方式。在遠端 DAM 部署中使用您所選擇的文件或影像。
 
 1. Navigate to the [!DNL Assets] interface on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from [!DNL Experience Manager] workspace. 或者，您也可以在瀏覽器中存取 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上傳您選擇的資產。
-1. On the [!DNL Sites] instance, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. 輸入 `ksaner` 作為使用者名稱，選取畫面上提供的選項，然後按一下&#x200B;**[!UICONTROL 「確定」]**。
+1. On the [!DNL Sites] deployment, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. 輸入 `ksaner` 作為使用者名稱，選取畫面上提供的選項，然後按一下&#x200B;**[!UICONTROL 「確定」]**。
 1. 在&#x200B;**[!UICONTROL 「Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL tw]** > **[!UICONTROL zh」]**&#x200B;開啟「We.Retail」網頁。編輯頁面。或者，您也可以在瀏覽器中存取 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html`，進而編輯頁面。
 
    按一下頁面左上角的&#x200B;**[!UICONTROL 「切換側面板」]**。
@@ -145,7 +146,7 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 
    *圖：背景中非同步擷取資產作業的相關通知。*
 
-1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. 請確認發佈時，系統已成功擷取遠端資產。若要檢查所擷取資產的個別狀態，請參閱[非同步工作](/help/operations/asynchronous-jobs.md)使用者介面。
+1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used on the page. 請確認發佈時，系統已成功擷取遠端資產。若要檢查所擷取資產的個別狀態，請參閱[非同步工作](/help/operations/asynchronous-jobs.md)使用者介面。
 
    >[!NOTE]
    >
@@ -153,7 +154,7 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 
 >[!CAUTION]
 >
->擷取的遠端資產一旦用於網頁中，只要任何人有權存取所擷取資產儲存位置的本機資料夾，都能搜尋和使用 (即上述逐步說明中的`connectedassets`)。這些資產也可供搜尋，並可透過[!UICONTROL 「內容尋找器」]顯示於本機存放庫。
+>Once used in a web page, the fetched remote assets are searchable and usable by anyone who has permissions to access the local folder. The fetched assets are stored (`connectedassets` in the above walk-through). 這些資產也可供搜尋，並可透過[!UICONTROL 「內容尋找器」]顯示於本機存放庫。
 
 擷取的資產可設為其他任何本機資產以供使用，只是相關聯的中繼資料無法編輯。
 
@@ -166,7 +167,7 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 * 本機擷取的資產僅適用於編寫用途。無法套用資產更新工作流程，也無法編輯中繼資料。
 * 僅支援影像和列出的文件格式。[!DNL Dynamic Media] 不支援資產、內容片段和體驗片段。
 * 不會擷取中繼資料結構。
-* All [!DNL Sites] authors have read permissions on the fetched copies, even if authors do not have access to the remote DAM deployment.
+* 所有 [!DNL Sites] 作者都對讀取的副本具有讀取權限，即使作者無法訪問遠程DAM部署。
 * 不提供 API 以支援自訂整合。
 * 此功能可支援順暢的搜尋作業及使用遠端資產。若要在本機部署中一次提供多個遠端資產，不妨考慮移轉資產。
 * 無法將遠端資產當做頁面屬性使用者介面上的頁 [!UICONTROL 面縮圖] 。 您可以按一下「選取影像」，在「縮圖」的「頁 [!UICONTROL 面屬性] 」使用者介面中設定網頁的縮圖 。
@@ -180,13 +181,14 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 
 ### 使用狀況 {#usage}
 
-* 目前僅支援搜尋遠端資產及拖曳本機頁面上的遠端資產，以便編寫內容。
+* 使用者可在製作時搜尋遠端資產，並拖曳這些資產至本機頁面。 不支援其他功能。
 * 擷取作業會於 5 秒後逾時。如果有網路或其他方面的問題，作者擷取資產時就可能遇到問題。Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
 * 您可以對擷取的資產執行非破壞性的簡單編輯作業，也能執行透過 `Image` 元件支援的編輯工作。資產僅供唯讀。
+* 唯一可重新擷取資產的方法，就是將資產拖曳至頁面上。 沒有API支援或其他方法可重新擷取資產以進行更新。
 
 ## 疑難排解問題 {#troubleshoot}
 
-請依照下列步驟，疑難排解常見的錯誤情形：
+要排除常見錯誤情形的故障，請執行以下步驟：
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], recheck and ensure that the required roles and permissions are in place.
-* 從遠端 DAM 擷取的資產可能會無法發佈至網頁，原因包括：該資產不存在於遠端；缺乏適當的擷取權限；網路發生問題。請確定資產未從遠端DAM移除，或權限未變更。 確保符合適當的先決條件。 重新嘗試將資產新增至頁面並重新發佈。 檢查[非同步工作清單](/help/operations/asynchronous-jobs.md)，找出資產擷取作業的錯誤。
+* If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
+* 從遠端Dam擷取的資產可能因一個或多個原因無法發佈在網頁上。 它不存在於遠程伺服器上，缺少獲取它的適當權限，或者網路故障可能是原因。 確保資產未從遠端DAM移除。 請確定已有適當的權限，並符合先決條件。 重新嘗試將資產新增至頁面並重新發佈。 檢查[非同步工作清單](/help/operations/asynchronous-jobs.md)，找出資產擷取作業的錯誤。
