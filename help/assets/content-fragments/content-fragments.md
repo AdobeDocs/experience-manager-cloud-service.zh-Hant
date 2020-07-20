@@ -2,9 +2,9 @@
 title: 使用內容片段
 description: 瞭解Adobe Experience Manager(AEM)中的內容片段如何讓您設計、建立、組織和使用不受頁面影響的內容。
 translation-type: tm+mt
-source-git-commit: a5b0d8789a50974c5b633feb5a84824b5999916c
+source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1818'
 ht-degree: 3%
 
 ---
@@ -83,7 +83,7 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
 
 >[!NOTE]
 >
->AEM也支援片段內容的轉譯。 如需詳細資訊，請參閱建立內容片段的轉譯專案。
+>AEM也支援片段內容的轉譯。
 
 <!--
 >[!NOTE]
@@ -220,7 +220,7 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
    * 可在編寫片段時定義。
    * 儲存在片段中，以協助避免內容復本散布。
    * 如果主版內 [容已更新](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) ，則可與主版同步變數。
-   * 可以摘 [要](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) ，快速將文字截斷為預先定義的長度。
+   * 可以摘 [要](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) ，以快速將文字截斷為預先定義的長度。
    * 可在片段編輯 [器的](/help/assets/content-fragments/content-fragments-variations.md) 「變化」標籤下使用。
 
 ### 使用內容片段製作頁面時的內容夾 {#in-between-content-when-page-authoring-with-content-fragments}
