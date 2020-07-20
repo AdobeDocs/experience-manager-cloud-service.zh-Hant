@@ -2,10 +2,10 @@
 title: AEM應用程式專案——雲端服務
 description: AEM應用程式專案——雲端服務
 translation-type: tm+mt
-source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
+source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 11%
+source-wordcount: '1314'
+ht-degree: 9%
 
 ---
 
@@ -128,6 +128,39 @@ Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設�
 | CM_PROGRAM_NAME | 程式名 |
 | 對象_版本 | 對於舞台或生產管道，由Cloud Manager生成的合成版本 |
 | CM_AEM_PRODUCT_VERSION | 發行名稱 |
+
+### 管線變數 {#pipeline-variables}
+
+在某些情況下，客戶的構建過程可能取決於特定的配置變數，這些變數不適合放置在Git儲存庫中，或者需要使用同一分支在不同的管線執行之間有所不同。
+
+Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這些變數。 變數可儲存為純文字或在閒置時加密。 在這兩種情況下，變數都可在建立環境中做為環境變數使用，然後可從檔案或其他建立指令 `pom.xml` 碼中參考。
+
+要使用CLI設定變數，請運行如下命令：
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
+
+目前的變數可以列出：
+
+`$ aio cloudmanager:list-pipeline-variables PIPELINEID`
+
+變數名稱只能包含英數字元和底線(_)字元。 按照慣例，名稱應全部大寫。 每個管線有200個變數的限制，每個名稱必須小於100個字元，每個值必須小於2048個字元。
+
+在檔案中使用 `Maven pom.xml` 時，使用類似下列的語法將這些變數對應至Maven屬性通常很有幫助：
+
+```xml
+        <profile>
+            <id>cmBuild</id>
+            <activation>
+                <property>
+                    <name>env.CM_BUILD</name>
+                </property>
+            </activation>
+            <properties>
+                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
+            </properties>
+        </profile>
+```
+
 
 ## 在Cloud Manager中啟用Maven設定檔 {#activating-maven-profiles-in-cloud-manager}
 
