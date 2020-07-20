@@ -96,7 +96,7 @@ Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/hel
   </tr>
   <tr>
    <td>分析</td>
-   <td>顯示分析支援的資料時，在網站瀏覽器中執行搜尋／篩選功能。 載入Analytics搜尋篩選器以符合已映射的自訂分析欄。</td>
+   <td>顯示分析支援的資料時，在「網站」瀏覽器中執行搜尋／篩選功能。 載入Analytics搜尋篩選器以符合已映射的自訂分析欄。</td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -547,7 +547,8 @@ Dependent on the predicate a selection of settings are available for configurati
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Options node path**（選項節點路徑）與 **** Options Path（選項路徑）有效相同，僅此欄位位於公用謂語欄位中，而另一個欄位則特定於資產。
+* **選項節點路徑**&#x200B;與 
+**Options Path**, only this is in the common predicate field, the other is specific for assets.
 
 * **單選選**&#x200B;項如果選中，選項將顯示為僅允許單選項的複選框。 如果錯誤選取，則可取消選取核取方塊。
 
@@ -651,6 +652,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
    * `jcr:title` -要在搜索邊欄中顯示的欄位標籤
    * `value` -要搜索的屬性值
+
    ![謂詞定義](assets/csf-options-predicate-01.png)
 
    >[!NOTE]
