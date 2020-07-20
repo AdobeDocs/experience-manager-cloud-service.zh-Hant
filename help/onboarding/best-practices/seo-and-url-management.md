@@ -26,7 +26,7 @@ ht-degree: 100%
 
 在評估 AEM 專案的 URL 時，請先自問以下問題：
 
-*「使用者能在尚未過目任何網頁內容之下，光是看到此 URL 就能描述頁面內容嗎？」*
+*「使用者能在尚未過目任何網頁內容之下，光是看到此 URL 就能說明頁面內容嗎？」*
 
 如果答案是可以，則此 URL 在搜尋引擎中很可能成效良好。
 
@@ -48,7 +48,8 @@ ht-degree: 100%
    * 如果使用者無法透過字面理解您的 URL，則搜尋引擎也無法。
    * 例如：
       `mybrand.com/products/product-detail.product-category.product-name.html`
-比 `mybrand.com/products/product-detail.1234.html` 更適合
+比  更適合 
+`mybrand.com/products/product-detail.1234.html`
 
 * 盡可能避免子網域，因為搜尋引擎會將子網域視為不同的實體，進而分割網站的 SEO 值。
 
@@ -219,7 +220,8 @@ Resource myPage = req.getResource();
 
 * OSGi 設定為
    **Apache Sling Resource Resolver Factory**
-( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+( 
+`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * 屬性為
    **對應位置** ( `resource.resolver.map.location`)
@@ -251,6 +253,7 @@ Resource myPage = req.getResource();
    您可以使用 Web 控制台 (例如 localhost:4502/system/console/configMgr) 設定 Sling Resource Resolver：
 
    * **Apache Sling Resource Resolver Factory**
+
       `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`。
    建議您建置所需對應來將 URL 縮短為規則運算式，然後在包含在您所建置項目的 OsgiConfignode `config.publish` 下定義這些設定。
 
@@ -266,6 +269,7 @@ Resource myPage = req.getResource();
 
    * 從 `/content/my-brand/my-page.html`
    * 轉換成 `/my-page.html`
+
    這個結果就符合將 URL 盡量縮短的建議做法。
 
 1. **在網頁上對應 URL 輸出**
@@ -374,7 +378,7 @@ Disallow: /
 
 ## 其他資源 {#additional-resources}
 
-如需詳細資訊，請參閱下列其他資源：
+如需詳細資訊，請參考下列其他資源：
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)
