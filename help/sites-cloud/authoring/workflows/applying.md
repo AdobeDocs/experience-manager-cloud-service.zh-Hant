@@ -2,7 +2,7 @@
 title: 將工作流程套用至頁面
 description: 撰寫時，您可以叫用工作流程，在頁面上採取行動； 您也可以套用多個工作流程。
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 15%
@@ -23,8 +23,8 @@ ht-degree: 15%
 
 工作流程可從以下網址啟動：
 
-* [Sites **主控** 台](#starting-a-workflow-from-the-sites-console)。
-* [編輯頁面時，從「頁面 **資訊」**](#starting-a-workflow-from-the-page-editor)。
+* [站點控制台](#starting-a-workflow-from-the-sites-console)。
+* [編輯頁面時，從「頁面資訊」](#starting-a-workflow-from-the-page-editor)。
 
 >[!NOTE]
 >
@@ -51,8 +51,8 @@ ht-degree: 15%
 
 您可以從以下任一位置啟動工作流：
 
-* [「站 **點** 」工具欄的「建立」選項](#starting-a-workflow-from-the-sites-toolbar)。
-* [站點 **控制台的** 「時間軸」邊欄](#starting-a-workflow-from-the-timeline)。
+* [「站點」工具欄的「建立」選項](#starting-a-workflow-from-the-sites-toolbar)。
+* [sites主控台的時間軸邊欄](#starting-a-workflow-from-the-timeline)。
 
 在這兩種情況下，您需要：
 
@@ -87,8 +87,8 @@ ht-degree: 15%
 
 在從以下任一 **項開啟「建立工作流** 」嚮導後：
 
-* [「站 **點** 」工具欄的「建立」選項](#starting-a-workflow-from-the-sites-toolbar)。
-* [站點 **控制台的** 「時間軸」邊欄](#starting-a-workflow-from-the-timeline)。
+* [「站點」工具欄的「建立」選項](#starting-a-workflow-from-the-sites-toolbar)。
+* [sites主控台的時間軸邊欄](#starting-a-workflow-from-the-timeline)。
 
 您可以指定詳細資訊：
 
