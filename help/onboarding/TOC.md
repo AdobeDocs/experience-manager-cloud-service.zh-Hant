@@ -1,11 +1,12 @@
 ---
 sub-product: AEM 雲端服務入門
 user-guide-title: AEM 雲端服務入門
+user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
 translation-type: tm+mt
-source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -33,6 +34,6 @@ ht-degree: 95%
 + 協助工具 {#accessibility}
    + [AEM 雲端服務與網頁協助工具准則](accessibility/web-accessibility.md)
    + [WCAG 2.1 快速指南](accessibility/quick-guide-wcag.md)
-+ Best Practices {#best-practices}
-   + [SEO和URL管理](best-practices/seo-and-url-management.md)
-+ [「工具」主控台概述](tools-consoles.md)
++ 最佳作法 {#best-practices}
+   + [SEO 和 URL 管理](best-practices/seo-and-url-management.md)
++ [工具控制台綜覽](tools-consoles.md)
