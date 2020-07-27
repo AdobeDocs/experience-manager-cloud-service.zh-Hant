@@ -2,10 +2,10 @@
 title: AEM 雲端服務開發方針
 description: 待完成
 translation-type: tm+mt
-source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
+source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 2%
+source-wordcount: '1940'
+ht-degree: 1%
 
 ---
 
@@ -170,3 +170,45 @@ Developer Console中提供一組工具，可讓您將AEM除錯為Cloud Service�
 ### 效能監控 {#performance-monitoring}
 
 Adobe會監控應用程式的效能，並在出現惡化時採取措施加以處理。 目前無法檢視應用程式量度。
+
+## 專用出口IP地址
+
+AEM做為雲端服務時，會根據要求為HTTP（連接埠80）和HTTPS（連接埠443）以Java程式碼設定的出站流量提供靜態、專屬的IP位址。
+
+### 優點
+
+此專屬IP位址可增強與SaaS廠商（如CRM廠商）整合或AEM以外的其他整合（提供允許的IP位址清單）的安全性。 借由將專用IP位址新增至allowlist，可確保僅允許來自客戶AEM Cloud服務的流量流入外部服務。 這是除了允許來自任何其他IP的流量外。
+
+若未啟用專用的IP位址功能，AEM以雲端服務形式傳出的流量會透過與其他客戶共用的一組IP流量。
+
+### 設定
+
+若要啟用專用IP位址，請向客戶支援提交要求，客戶支援將提供IP位址資訊。 應對每個環境提出請求，包括在初始請求後建立的任何新環境。
+
+### 功能使用
+
+此功能與導致傳出流量的Java程式碼或程式庫相容，前提是這些程式碼或程式庫使用標準Java系統屬性進行Proxy組態。 實際上，這應該包括最常見的資料庫。
+
+以下是程式碼範例：
+
+```
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+  URLConnection connection = finalUrl.openConnection();
+  connection.addRequestProperty("Accept", "application/json");
+  connection.addRequestProperty("X-API-KEY", apiKey);
+
+  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
+    return new JSONObject(new JSONTokener(responseReader));
+  }
+}
+```
+
+相同的專屬IP會套用至客戶Adobe組織中的所有方案，以及每個方案中的所有環境。 它同時適用於作者和發佈服務。
+
+僅支援HTTP和HTTPS埠。 這包括HTTP/1.1，以及加密時的HTTP/2。
+
+### 除錯注意事項
+
+為了驗證流量是否確實在預期的專用IP位址上傳出，請檢查目標服務中的日誌（如果可用）。 否則，呼叫除錯服務(例如https://ifconfig.me/ip [](https://ifconfig.me/ip))可能會很有用，因為它會傳回呼叫的IP位址。
