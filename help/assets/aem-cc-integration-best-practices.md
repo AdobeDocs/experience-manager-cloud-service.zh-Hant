@@ -1,10 +1,10 @@
 ---
 title: Adobe Experience Manager與Adobe Creative Cloud整合最佳實務
-description: 整合AEM實例與Adobe Creative Cloud的最佳實務，以簡化資產轉讓工作流程並達到最高效率。
+description: 最佳實務將Experience Manager部署與Adobe Creative Cloud整合，以簡化資產傳輸工作流程並達到最高效率。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
 source-wordcount: '3302'
 ht-degree: 18%
