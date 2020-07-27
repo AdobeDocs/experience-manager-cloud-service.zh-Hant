@@ -3,10 +3,10 @@ title: 設定並使用資產微服務進行資產處理
 description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 3%
+source-wordcount: '1861'
+ht-degree: 1%
 
 ---
 
@@ -113,24 +113,26 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 
 建立其他自訂處理設定檔並套用至特定資料夾，讓Experience Manager處理上傳至或更新至這些資料夾的資產。 預設的內建標準處理設定檔一律會執行，但在使用者介面上不可見。 如果您新增自訂的描述檔，則這兩個描述檔都會用來處理上傳的資產。
 
-有兩種方式可讓處理設定檔套用至資料夾：
+使用下列其中一種方法，將處理設定檔套用至資料夾：
 
 * 管理員可以在「工具」>「資產」>「處 **[!UICONTROL 理設定檔」中選取處理設定檔定義]**，然後使用「 **[!UICONTROL 將設定檔套用至資料夾」動作]** 。 它會開啟內容瀏覽器，讓您導覽至特定資料夾、選取資料夾並確認描述檔的應用程式。
-* 使用者可以在「資產」使用者介面中選取資料夾、使用「屬性」動作來開啟資料夾屬性畫面、按一下「處理設定檔 ******** 」標籤，然後在下拉式清單中，為該資料夾選取正確的處理設定檔。「儲存並關閉」動作 **[!UICONTROL 時會儲存選項]** 。
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. 若要儲存變更，請按一下「 **[!UICONTROL 儲存並關閉」]**。
 
 >[!NOTE]
 >
->只能將一個處理設定檔套用至特定資料夾。 如果您需要產生更多轉譯，可以新增更多轉譯定義至處理設定檔。
+>只能將一個處理設定檔套用至特定資料夾。 若要產生更多轉譯，請新增更多轉譯定義至現有的處理設定檔。
 
-將處理描述檔套用至資料夾後，會使用設定的其他處理描述檔來處理此資料夾或其子資料夾中上傳（或更新）的所有新資產。 除了標準預設描述檔外，還有這項額外處理。 如果您將多個描述檔套用至資料夾，則會使用每個描述檔來處理已上傳或更新的資產。
+將處理描述檔套用至資料夾後，會使用設定的其他處理描述檔來處理此資料夾或其子資料夾中上傳（或更新）的所有新資產。 此處理除了標準預設描述檔外，還有其他處理方式。 如果您將多個描述檔套用至資料夾，則會使用每個描述檔來處理已上傳或更新的資產。
 
 >[!NOTE]
 >
->當資產上傳至資料夾時，Experience Manager會檢查包含資料夾的屬性以取得處理設定檔。 如果未套用任何設定檔，則會在資料夾樹狀結構中上移，直到找到套用的處理設定檔，並將其用於資產。 這表示套用至資料夾的處理描述檔適用於整個樹狀結構，但可以套用至子資料夾的其他描述檔過度使用。
+>套用至資料夾的處理描述檔適用於整個樹狀結構，但可與套用至子資料夾的其他描述檔重疊。 當資產上傳至資料夾時，Experience Manager會檢查包含資料夾的屬性以取得處理設定檔。 如果未應用任何檔案，則會檢查層次結構中的父資料夾以查找要應用的處理配置檔案。
 
 使用者可以開啟已完成處理的新上傳資產、開啟資產預覽，然後按一下左側邊欄的「轉譯」檢視，以檢查處理是否實際 **[!UICONTROL 發生]** 。 處理設定檔中的特定轉譯（特定資產的類型與MIME類型包含規則相符）應可見且可存取。
 
-![additional-renditions](assets/renditions-additional-renditions.png)*圖： 處理描述檔套用至父資料夾所產生的兩個其他轉譯範例*
+![其他轉譯](assets/renditions-additional-renditions.png)
+
+*圖： 處理描述檔套用至父資料夾所產生的兩個其他轉譯範例。*
 
 ## 後處理工作流程 {#post-processing-workflows}
 
