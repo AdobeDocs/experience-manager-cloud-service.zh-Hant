@@ -1,9 +1,9 @@
 ---
 title: 將 AMS 轉換為 Adobe Experience Manager 雲端服務 Dispatcher 設定
 description: 將 AMS 轉換為 Adobe Experience Manager 雲端服務 Dispatcher 設定
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1342'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ ht-degree: 100%
    `<VirtualHost *:443>`
    `...`
    `</VirtualHost>`
-請移除它們或加上註解。這些區段中的陳述式將不會進行處理，但如果您保留這些陳述式，您最終可能仍會編輯它們，並因為徒勞無功地而感到困惑。
+請移除或加上註解。系統將不會處理這些區段中的陳述式，但如果您保留這些陳述式，您最終可能仍會編輯，但將徒勞無功而倍感困惑。
 
 1. **檢查重新寫入**
 
