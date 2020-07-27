@@ -1,18 +1,16 @@
 ---
-title: 搜尋 Facet
+title: 搜尋 Facet.
 description: 本文說明如何在AEM中建立、修改和使用搜尋Facet。
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2371'
 ht-degree: 21%
 
 ---
 
 
 # 搜尋 Facet {#search-facets}
-
-瞭解如何在AEM中建立、修改和使用搜尋刻面。
 
 Adobe Experience Manager(AEM)Assets的企業部署可儲存許多資產。 有時候，如果您只使用AEM的一般搜尋功能，尋找正確的資產不但麻煩而且耗時。
 
@@ -35,34 +33,30 @@ Adobe Experience Manager(AEM)Assets的企業部署可儲存許多資產。 有�
 
 1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. 例如，拖曳 **[!UICONTROL Property Predicate]**。
 
-   ![拖放謂語以自訂搜尋篩選器](assets/drag_predicate.png)
+   ![按並移動謂詞以自訂搜尋篩選器](assets/drag_predicate.png)
 
-   拖放謂語以自訂搜尋篩選器
+   *圖： 按並移動謂語以自訂搜尋篩選。*
 
-1. 在「設定」標籤中，輸入謂語的欄位標籤、預留位置文字和說明。 為要與謂詞關聯的元資料屬性指定有效名稱。
-
-   「設定」頁籤中的標題標籤標識所選謂詞的類型。
+1. 在「設定」標籤中，輸入謂語的欄位標籤、預留位置文字和說明。 為要與謂詞關聯的元資料屬性指定有效名稱。 「設定」頁籤中的標題標籤標識所選謂詞的類型。
 
    ![使用「設定」頁籤提供謂語的必需選項](assets/settings.png)
 
-   使用「設定」頁籤提供謂語的必需選項
+   *圖： 使用「設定」頁籤提供謂語的必需選項。*
 
-1. 在「屬 **[!UICONTROL 性名稱]** 」欄位中，指定您要與謂語關聯的中繼資料屬性的有效名稱。它是根據其執行搜索的名稱。例如，輸入 `jcr:content/metadata/dc:description` 或 `./jcr:content/metadata/dc:description`。
-
-   也可以從選擇對話框中選擇一個現有節點。
+1. 在「屬 **[!UICONTROL 性名稱]** 」欄位中，指定您要與謂語關聯的中繼資料屬性的有效名稱。它是根據其執行搜索的名稱。例如，輸入 `jcr:content/metadata/dc:description` 或 `./jcr:content/metadata/dc:description`。也可以從選擇對話框中選擇一個現有節點。
 
    ![將中繼資料屬性與屬性名稱欄位中的謂詞關聯](assets/property_settings.png)
 
-   將中繼資料屬性與屬性名稱欄位中的謂詞關聯
+   *圖： 在「屬性名稱」欄位中，將中繼資料屬性與謂語建立關聯。*
 
-1. 點選／按一下 **[!UICONTROL 「預覽]**![](assets/preview.png) 」，產生「篩選器」面板的預覽，如您新增述詞後所顯示。
+1. 按一下「 **[!UICONTROL 預覽]**![」預覽](assets/preview.png) ，產生「篩選器」面板的預覽，如您新增述詞後所顯示。
 1. 在「預覽」模式中查看謂語的佈局。
 
    ![在提交變更前預覽搜尋表格](assets/preview-1.png)
 
    在提交變更前預覽搜尋表格
 
-1. 若要關閉預覽，請點選／按 **[!UICONTROL 一下預]** 覽右上 ![角的](assets/do-not-localize/close_icon.png) 「關閉關閉」。
+1. 若要關閉預覽，請按 **[!UICONTROL 一下預]** 覽右 ![上角的「關閉](assets/do-not-localize/close_icon.png) 」(Close close)。
 1. 點選「 **[!UICONTROL 完成]** 」以儲存設定。
 1. 導覽至「資產」使用者介面中的「搜尋」面板。 The Property predicate is added to the panel.
 1. 在文本框中輸入要搜索的資產的說明。 例如，輸入&quot;Adobe&quot;。 當您執行搜尋時，描述符合「Adobe」的資產會列在搜尋結果中。
@@ -139,13 +133,11 @@ CRXDE中所示的檔案類型的Value屬性用於搜索查詢
 1. 按一下AEM標誌，然後前往「工 **[!UICONTROL 具]** >一 **[!UICONTROL 般]** > **[!UICONTROL 搜尋表格]**」。
 1. 從「搜尋表單」頁面中，選 **[!UICONTROL 取「資產管理搜尋邊欄]** 」，然後點選「 **編輯**![Aemsets_edit](assets/aemassets_edit.png)」。
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
-1. 在「設定」標籤中，輸入謂語的預留位置文字。 Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. 或者，也可以從選擇對話框中選擇CRXDE中的節點。
+1. 在「設定」標籤中，輸入謂語的預留位置文字。 Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/cq:tags`. 或者，也可以從選擇對話框中選擇CRXDE中的節點。
 1. 配置此謂語的Root標籤路徑屬性，以在「標籤」清單中填充各種標籤。
 1. 選取 **[!UICONTROL 「顯示符合所有標籤」選項]** ，以搜尋包含您所指定之所有標籤的資產。
 
    ![Typical settings of Tags predicate](assets/tags_predicate.png)
-
-   Typical settings of Tags predicate
 
 1. 在「說 **[!UICONTROL 明]** 」欄位中，輸入選用的說明，然後按一下／點選「 **[!UICONTROL 完成」]**。
 1. 導覽至「搜尋」面板。 The **[!UICONTROL Tags]** predicate is added to the Search panel.
@@ -330,28 +322,13 @@ CRXDE中所示的檔案類型的Value屬性用於搜索查詢
 
 如果您未獲指派管理員角色，請列出您執行編輯、刪除和預覽與搜尋Facet有關之動作時所需的權限。
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>動作</strong></td>
-   <td><strong>權限</strong></td>
-  </tr>
-  <tr>
-   <td>編輯 </td>
-   <td>CRX中節點的讀 <code>/apps</code> 寫權限<br /> </td>
-  </tr>
-  <tr>
-   <td>刪除</td>
-   <td>在CRX中讀取、寫入和刪除節 <code>/apps</code> 點的權限</td>
-  </tr>
-  <tr>
-   <td>預覽</td>
-   <td>在CRX中讀取、寫入和刪除節 <code>/var/dam/content</code> 點的權限。 此外，節點上的「讀取」和「寫入」 <code>/apps</code> 權限。</td>
-  </tr>
- </tbody>
-</table>
+| 動作 | 權限 |
+|---|---|
+| 編輯 | 在CRX中讀取和寫入節 `/apps` 點的權限。 |
+| 刪除 | 讀取、寫入和刪除CRX中節 `/apps` 點的權限。 |
+| 預覽 | 讀取、寫入和刪除CRX中節 `/var/dam/content` 點的權限。 此外，節點上的讀寫權 `/apps` 限。 |
 
 >[!MORELIKETHIS]
 >
->* [搜尋數位資產](search-assets.md)
+>* [搜尋數位資產](search-assets.md)。
 
