@@ -3,15 +3,15 @@ title: 組織數位資產
 description: 使用Adobe Experience Manager Assets中提供的各種方法組織您的數位資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
 
 
-# 組織數位資產{#organize-digital-assets}
+# 組織數位資產 {#organize-digital-assets}
 
 Microsoft Office和PDF檔案的所有數位資產、中繼資料和內容都會加以擷取並設為可搜尋。 搜尋功能可讓您對資產進行精密的篩選，並完全尊重適當的權限。 在數位資產管理的中繼資料中，會詳細說明中繼資料。
 
@@ -44,5 +44,5 @@ AEM Assets支援多種組織內容的方式。 您可以使用資料夾以階層
 您可以使用資料夾或標籤或兩者來組織資產。 新增標籤至資產可讓您在搜尋期間更容易擷取標籤。 若要新增標籤至資產，請依照下列步驟進行：
 
 1. 在Digital Asset Manager中，按兩下資產以開啟它。
-1. 在「標 **記** 」區域中，按一下下拉式按鈕以顯示可用的標籤。 選擇適當的標籤以添加標籤。 若要刪除標籤，請將滑鼠暫留在標籤上，然後按一下 **x** 將其刪除。
+1. 在「標 **記** 」區域中，開啟功能表以顯示可用的標籤。 選擇適當的標籤。 若要刪除標籤，請將指標暫留在標籤上，然後按一 `X` 下將其刪除。
 1. 按一 **下「儲存** 」，儲存您新增的任何標籤。
