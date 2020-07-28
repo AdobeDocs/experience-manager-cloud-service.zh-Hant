@@ -2,7 +2,7 @@
 title: 部署您的程式碼——雲端服務
 description: 部署您的程式碼——雲端服務
 translation-type: tm+mt
-source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
+source-git-commit: 164d2d3b4dabfa2b06da245dc33ef90b5b77192b
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 3%
@@ -59,7 +59,8 @@ ht-degree: 3%
 
 
 
->[!IMPORTANT]:
+>[!IMPORTANT]
+>
 >AEM Cloud Services的Cloud Manager需要更新下列章節，且正在進行中。
 
 ## 部署程式 {#deployment-process}
