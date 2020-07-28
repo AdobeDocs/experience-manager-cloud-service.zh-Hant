@@ -2,9 +2,9 @@
 title: AEM 雲端服務開發方針
 description: 待完成
 translation-type: tm+mt
-source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
+source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1949'
 ht-degree: 1%
 
 ---
@@ -183,7 +183,7 @@ AEM做為雲端服務時，會根據要求為HTTP（連接埠80）和HTTPS（連
 
 ### 設定
 
-若要啟用專用IP位址，請向客戶支援提交要求，客戶支援將提供IP位址資訊。 應對每個環境提出請求，包括在初始請求後建立的任何新環境。
+若要啟用專用IP位址，請向客戶支援提交要求，客戶支援將提供IP位址資訊。 請求應指定每個環境，如果新環境在初始請求後需要此功能，則應提出其他請求。 不支援沙盒程式環境。
 
 ### 功能使用
 
