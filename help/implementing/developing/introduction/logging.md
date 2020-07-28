@@ -2,7 +2,7 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: a7c8e1ab8e0196a3a79d8e0963192775e64a2400
+source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -34,48 +34,62 @@ AEM記錄和記錄檔層級會在設定檔中管理，這些設定檔會以Git�
 AEM as a Cloud Service&#39;s提供Java記錄陳述式的存取權。 AEM應用程式開發人員應遵循一般Java記錄最佳實務，在下列記錄層級記錄有關執行自訂程式碼的相關陳述式：
 
 <table>
-<tbody>
 <tr>
-<td> <b>AEM環境</b></td>
-<td> <b>記錄層級</b></td>
-<td> <b>說明</b></td>
-<td> <b>日誌語句可用性</b></td>
+<td>
+<b>AEM環境</b></td>
+<td>
+<b>記錄層級</b></td>
+<td>
+<b>說明</b></td>
+<td>
+<b>日誌語句可用性</b></td>
 </tr>
 <tr>
-<td> 開發</td>
-<td> 除錯</td>
-<td> 說明應用程式中的情況。
+<td>
+開發</td>
+<td>
+除錯</td>
+<td>
+說明應用程式中的情況。<br>
 
 當DEBUG記錄處於活動狀態時，會記錄提供活動發生情況的清楚說明以及影響處理的任何關鍵參數的語句。</td>
-<td> <ul>
+<td>
+<ul>
 <li> 地方開發</li>
 <li>開發</li>
 </ul></td>
 </tr>
 <tr>
-<td> 分段</td>
-<td> 警告</td>
-<td> 說明可能成為錯誤的條件。
+<td>
+分段</td>
+<td>
+警告</td>
+<td>
+說明可能成為錯誤的條件。<br>
 
 當WARN日誌記錄處於活動狀態時，只記錄指示接近子最優性的條件語句。</td>
-<td> <ul>
+<td>
+<ul>
 <li> 地方開發</li>
 <li>開發</li>
 <li>分段</li>
 </ul></td>
 </tr>
 <tr>
-<td> 生產</td>
-<td> 錯誤</td>
-<td> 說明指出失敗且需要解決的條件。
+<td>
+生產</td>
+<td>
+錯誤</td>
+<td>
+說明指出失敗且需要解決的條件。<br>
 
 當ERROR日誌記錄處於活動狀態時，僅記錄指示失敗的語句。 ERROR log語句表示應盡快解決的嚴重問題。</td>
-<td> <ul>
+<td>
+<ul>
 <li> 地方開發</li>
 <li>開發</li>
 <li>分段</li>
 <li>生產</li>
 </ul></td>
 </tr>
-</tbody>
 </table>
