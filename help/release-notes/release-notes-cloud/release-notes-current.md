@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 雲端服務 2020.7.0 版發行說明
 description: Experience Manager 2020.7.0 版發行說明
 translation-type: tm+mt
-source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
+source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 17%
+source-wordcount: '409'
+ht-degree: 18%
 
 ---
 
@@ -29,8 +29,6 @@ Cloud Manager  2020.7.0版的發行日期為2020年7月9日。
 * 休眠的環境現在在Cloud Manager中，當休眠時會顯示離散狀態。
 
 * 每個環境的環境變數數已增加到200個。
-
-* Cloud Manager組建容器現在支援Java 8和Java 11。
 
 * Cloud Manager管道現在支援客戶集變數和機密。
 如需詳細 [資訊，請參閱](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) 「管線變數」。
