@@ -2,10 +2,10 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: bbcadf29dbac89191a3a1ad31ee6721f8f57ef95
+source-git-commit: 68445e086aeae863520d14cb712f0cbebbffb5ab
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 3%
+source-wordcount: '1304'
+ht-degree: 2%
 
 ---
 
@@ -195,41 +195,18 @@ AEM as Cloud Service HTTP存取記錄會依時間順序顯示HTTP請求。 每�
 
 ### 日誌格式 {#access-log-format}
 
-<table>
-<tbody>
-<tr>
-<td><b>AEM做為雲端服務節點ID</b></td>
-<td><b>客戶機的IP地址</b></td>
-<td><b>使用者</b></td>
-<td><b>日期時間</b></td>
-<td><b>空白</b></td>
-<td><b>HTTP方法</b></td>
-<td><b>URL</b></td>
-<td><b>協定</b></td>
-<td><b>空白</b></td>
-<td><b>HTTP回應狀態</b></td>
-<td><b>HTTP回應時間（毫秒）</b></td>
-<td><b>反向連結</b></td>
-<td><b>使用者代理</b></td>
-</tr>
-<tr>
-<td>cm-p1235-e2644-aem-author-5955cb5b8-8kgr2</td>
-<td>-</td>
-<td>myuser@adobe.com</td>
-<td>30/Apr/2020:17:37:14 +0000</td>
-<td>"</td>
-<td>取得</td>
-<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
-<td>HTTP/1.1</td>
-<td>"</td>
-<td>200</td>
-<td>1141</td>
-<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
-<td>「Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，像Gecko）Chrome/81.0.4044.122 Safari/537.36英吋</td>
-</tr>
-</tbody>
-</table>
-
+| AEM做為雲端服務節點ID | cm-p1234-e26813-aem-publish-5c787687c-lqlxr |
+|---|---|
+| 客戶機的IP地址 | - |
+| 使用者 | myuser@adobe.com |
+| 日期時間 | 30/Apr/2020:17:37:14 +0000 |
+| HTTP方法 | 取得 |
+| URL | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |
+| 協定 | HTTP/1.1 |
+| HTTP回應狀態 | 200 |
+| HTTP請求時間（以毫秒為單位） | 1141 |
+| 反向連結 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
+| 使用者代理 | 「Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，像Gecko）Chrome/81.0.4044.122 Safari/537.36英吋 |
 
 **範例**
 
@@ -243,7 +220,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 AEM中的HTTP存取記錄檔無法設定為雲端服務。
 
-## Apache Web Server / Dispatcher Logging {#dispatcher-logging}
+## Apache Web Server和Dispatcher記錄 {#apache-web-server-and-dispatcher-logging}
 
 AEM as a Cloud Service為Publish上的Apache Web Servers和分派程式層提供三個記錄檔：
 
@@ -253,4 +230,74 @@ AEM as a Cloud Service為Publish上的Apache Web Servers和分派程式層提供
 
 請注意，這些記錄檔僅適用於「發佈」層。
 
-在AEM應用程式收到HTTP請求之前，此組記錄檔會以雲端服務發佈層的形式，提供HTTP請求的見解。 請務必瞭解，Apache HTTPD Web Server和AEM Dispatcher會提供快取內容給發佈層伺服器，而且絕不會觸及AEM應用程式本身，因此AEM的Java、Request或Access記錄中沒有這些請求的記錄陳述式。
+在AEM應用程式收到HTTP請求之前，此組記錄檔會以雲端服務發佈層的形式，提供HTTP請求的見解。 請務必瞭解，最理想的情況是，對「發佈」層伺服器的大部分HTTP請求都是由Apache HTTPD Web Server和AEM Dispatcher快取的內容所提供，而且絕不會觸及AEM應用程式本身。 因此，AEM的Java、Request或Access記錄檔中沒有這些請求的記錄陳述式。
+
+### Apache HTTPD Web Server訪問日誌 {#apache-httpd-web-server-access-log}
+
+Apache HTTP Web Server訪問日誌為到達發佈層的Web伺服器/Dispatcher的每個HTTP請求提供語句。 請注意，從上游CDN所提供的請求不會反映在這些記錄檔中。
+
+請參閱官方Apache檔案中的錯誤記錄 [檔格式資訊](https://httpd.apache.org/docs/2.4/logs.html#accesslog)。
+
+**日誌格式**
+
+<!--blank until prod build finishes-->
+
+**範例**
+
+```
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png HTTP/1.1" 200 715 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-512.png HTTP/1.1" 200 9631 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+```
+
+### 配置Apache HTTPD Web Server訪問日誌 {#configuring-the-apache-httpd-webs-server-access-log}
+
+此記錄檔在AEM中無法設定為雲端服務。
+
+## Apache HTTPD Web Server錯誤日誌 {#apache-httpd-web-server-error-log}
+
+Apache HTTP Web Server錯誤日誌為發佈層的Web伺服器/Dispatcher中的每個錯誤提供語句。
+
+請參閱官方Apache檔案中的錯誤記錄 [檔格式資訊](https://httpd.apache.org/docs/2.4/logs.html#errorlog)。
+
+**日誌格式**
+
+<!--placeholder-->
+
+**範例**
+
+```
+Fri Jul 17 02:19:48.093820 2020 [mpm_worker:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00292: Apache/2.4.43 (Unix) Communique/4.3.4-20200424 mod_qos/11.63 configured -- resuming normal operations
+Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D ENVIRONMENT_PROD'
+Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
+```
+
+### 配置Apache HTTPD Web伺服器錯誤日誌 {#configuring-the-apache-httpd-web-server-error-log}
+
+mod_rewrite日誌級別由檔案中的變數REWRITE_LOG_LEVEL定義 `conf.d/variables/global.var`。
+
+它可以設定為「錯誤」、「警告」、「資訊」、「調試」和「跟蹤1 —— 跟蹤8」，預設值為「警告」。 若要對RewriteRules進行除錯，建議將記錄檔層級提升至Trace2。
+
+如需詳 [細資訊，請參閱mod_rewrite模組檔案](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) 。
+
+若要依環境設定記錄層級，請在global.var檔案中使用適當的條件分支，如下所述：
+
+```
+Define REWRITE_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define REWRITE_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define REWRITE_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## Dispatcher Log {#dispatcher-log}
+
+**日誌格式**
+
