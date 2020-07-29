@@ -2,9 +2,9 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: 23f7b4b41abf9b909ec55a7f37b6b8e78c689b9b
+source-git-commit: 0bb5ff11762a4a3a158d211f8bba2ff77d1d3201
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '2053'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,9 @@ AEM記錄和記錄檔層級會在設定檔中管理，這些設定檔會以Git�
 1. HTTP請求記錄檔，此記錄檔記錄有關HTTP請求及其由AEM提供之回應的資訊
 1. HTTP存取記錄檔，記錄AEM所提供的摘要資訊和HTTP要求
 
-請注意，從發佈層的Dispatcher快取或上游CDN所提供的HTTP請求不會反映在這些記錄檔中。
+> [!NOTE]
+> 
+> 從發佈層的Dispatcher快取或上游CDN提供的HTTP要求不會反映在這些記錄檔中。
 
 ## AEM Java記錄 {#aem-java-logging}
 
@@ -97,10 +99,6 @@ AEM記錄檔層級是透過OSGi組態依環境類型設定，而OSGi組態會提
 
 ### 日誌格式 {#log-format}
 
-| 日期和時間 | AEM a Cloud Service Dode ID | 記錄層級 | 線程 | Java類 | 日誌消息 |
-|---|---|---|---|---|---|
-| 29.04.2020 21:50:13.398 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` | `*DEBUG*` | qtp2130572036-1472 | com.example.approval.workflow.impl.CustomApprovalWorkflow | `No specified approver, defaulting to [ Creative Approvers user group ]` |
-
 **日誌輸出示例**
 
 ```
@@ -110,6 +108,35 @@ AEM記錄檔層級是透過OSGi組態依環境類型設定，而OSGi組態會提
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
+
+<table>
+<tbody>
+<tr>
+<td>日期時間</td>
+<td>29.04.2020 21:50:13.398</td>
+</tr>
+<tr>
+<td>AEM做為雲端服務節點ID</td>
+<td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
+</tr>
+<tr>
+<td>記錄層級</td>
+<td>除錯</td>
+</tr>
+<tr>
+<td>線程</td>
+<td>qtp2130572036-1472</td>
+</tr>
+<tr>
+<td>Java類</td>
+<td>com.example.approval.workflow.impl.CustomApprovalWorkflow</td>
+</tr>
+<tr>
+<td>日誌消息</td>
+<td>沒有指定的批准者，預設為[Creative Approvers用戶組]</td>
+</tr>
+</tbody>
+</table>
 
 ### 配置記錄器 {#configuration-loggers}
 
@@ -167,10 +194,6 @@ AEM作為雲端服務的HTTP要求記錄功能，可依時間順序深入瞭解�
 
 ### 日誌格式 {#http-request-logging-format}
 
-| 日期和時間 | 請求／回應對ID |  | HTTP 方法 | URL | 協定 | AEM做為雲端服務節點ID |
-|---|---|---|---|---|---|---|
-| 29/Apr/2020:19:14:21 +0000 | `[137]` | -> | 貼文 | /conf/global/settings/dam/adminui-extension/metadataprofile/ | HTTP/1.1 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` |
-
 **範例記錄檔**
 
 ```
@@ -182,6 +205,36 @@ AEM作為雲端服務的HTTP要求記錄功能，可依時間順序深入瞭解�
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
+
+<table>
+<tbody>
+<tr>
+<td>日期時間</td>
+<td>29/Apr/2020:19:14:21 +0000</td>
+</tr>
+<tr>
+<td>請求／回應對ID</td>
+<td><code>[137]</code></td>
+</tr>
+<tr>
+<td>HTTP 方法</td>
+<td>貼文</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/conf/global/settings/dam/adminui-extension/metadataprofile/</td>
+</tr>
+<tr>
+<td>協定</td>
+<td>HTTP/1.1
+</td>
+</tr>
+<tr>
+<td>AEM做為雲端服務節點ID</td>
+<td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
+</tr>
+</tbody>
+</table>
 
 ### 配置日誌 {#configuring-the-log}
 
@@ -335,5 +388,145 @@ Define REWRITE_LOG_LEVEL Debug
 
 ## Dispatcher Log {#dispatcher-log}
 
-**日誌格式**
+<!--de completat-->
 
+**範例**
+
+```
+[17/Jul/2020:23:48:06 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures.html" - 475ms [publishfarm/0] [action miss] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/climbing-new-zealand/_jcr_content/root/responsivegrid/carousel/item_1571266094599.coreimg.jpeg/1473680817282/sport-climbing.jpeg" 302 10ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+```
+
+### 日誌格式 {#dispatcher-log-format}
+
+### 配置Dispatcher錯誤日誌 {#configuring-the-dispatcher-error-log}
+
+調度程式日誌級別由檔案中的變數DISP_LOG_LEVEL定義 `conf.d/variables/global.var`。
+
+它可以設定為Error、Warn、Info、Debug和Trace1，預設值為Warn。
+
+雖然Dispatcher記錄支援數個其他記錄詳細程度層級，但AEM作為雲端服務建議使用下述層級。
+
+要設定每個環境的日誌級別，請在檔案中使用相應的條 `global.var` 件分支，如下所述：
+
+```
+Define DISP_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define DISP_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define DISP_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## 如何存取記錄檔 {#how-to-access-logs}
+
+### 雲端環境 {#cloud-environments}
+
+AEM是雲端服務的雲端服務記錄檔，可透過Cloud Manager介面下載，或使用Adobe I/O命令列介面追蹤命令列的記錄檔來存取。 如需詳細資訊，請參閱 [Cloud Manager記錄檔案](/help/implementing/cloud-manager/manage-logs.md)。
+
+### 本機SDK {#local-sdk}
+
+AEM as a Cloud Service SDK提供記錄檔，以支援本機開發。
+
+AEM記錄檔位於資料夾中 `crx-quickstart/logs`，可在其中檢視下列記錄檔：
+
+* AEM Java記錄檔： `error.log`
+* AEM HTTP請求記錄： `request.log`
+* AEM HTTP Access Log: `access.log`
+
+Apache層日誌（包括調度程式）位於Docker容器中，該容器中保存Dispatcher。 有關如 [何啟動Dispatcher的資訊](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) ，請參見Dispatcher文檔。
+
+要檢索日誌，請執行以下操作：
+
+1. 在命令行中，鍵入以 `docker ps` 列出容器
+1. 若要登入容器，請輸入&quot;`docker exec -it <container> /bin/sh`&quot;，其中 `<container>` 是上一步驟中的分派器容器ID
+1. 導覽至 `/mnt/var/www/html`
+1. 記錄檔位於 `/etc/httpd/logs`
+1. 檢查日誌： 可以在資料夾XYZ下訪問這些日誌，在該資料夾中可以查看以下日誌：
+   * Apache HTTPD Web伺服器訪問日誌- `httpd_access.log`
+   * Apache HTTPD Web伺服器錯誤日誌- `httpd_error.log`
+   * Dispatcher logs - `dispatcher.log`
+
+日誌也直接打印到終端輸出。 大部分時候，這些日誌應為DEBUG，這可以通過在運行Docker時將調試級別作為參數來完成。 例如：
+
+`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+
+## 除錯製作與階段 {#debugging-production-and-stage}
+
+在特殊情況下，需要變更記錄檔層級，才能在「舞台(Stage)」或「生產(Production)」環境中以更精細的粒度登入。
+
+雖然這是可能的，但需要將Git中的設定檔的記錄檔層級從「警告」和「錯誤」變更為「除錯」，並以Cloud Service的身分執行AEM部署，以便將這些設定變更註冊至環境。
+
+根據流量和Debug編寫的日誌語句的數量，這可能會對環境造成不利的效能影響，因此，建議對「舞台(Stage)」和「生產(Production)」調試級別進行更改：
+
+* 明智地做，而且只有在絕對必要時
+* 回復到適當的級別並盡快重新部署
+
+## Splunk Logs {#splunk-logs}
+
+擁有Splunk帳戶的客戶可透過客戶支援票證要求將其AEM Cloud服務記錄轉送至適當的索引。 記錄資料等同於透過Cloud Manager記錄檔下載取得的資料，但客戶可能會發現，運用Splunk產品中的查詢功能十分方便。
+
+與發送到Splunk的日誌相關的網路頻寬被視為客戶網路I/O使用的一部分。
+
+### 啟用Splunk發送 {#enabling-splunk-forwarding}
+
+在支援要求中，客戶應指出：
+
+* 宿主斯普隆克
+* Splunk指數
+* 蘇普隆克港
+* Splunk HEC代號。 如需 [詳細資訊](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) ，請參閱本頁。
+
+應針對每個相關的程式／環境類型組合指定上述屬性。  例如，如果客戶想要開發、接移和生產環境，他們應提供三組資訊，如下所示。
+
+> [!NOTE]
+>
+> 不支援沙盒程式環境的Splunk轉送。
+
+以下是客戶支援要求的範例：
+
+程式123，生產環境
+
+* Splunk主機： `splunk-hec-ext.acme.com`
+* Splunk指數： acme_123prod（客戶可以選擇想要的任何命名慣例）
+* Splunk埠： 443
+* Splunk HEC代號： ABC123
+
+方案123，階段環境
+
+* Splunk主機： `splunk-hec-ext.acme.com`
+* Splunk指數： acme_123stage
+* Splunk埠： 443
+* Splunk HEC代號： ABC123
+
+方案123,Dev Envs
+
+* Splunk主機： `splunk-hec-ext.acme.com`
+* Splunk指數： acme_123dev
+* Splunk埠： 443
+* Splunk HEC代號： ABC123
+
+對於每個環境都使用相同的Splunk索引可能足夠，在這種情況下，可以使用 `aem_env_type` 任一欄位來根據dev、stage和prod值進行區分。 如果有多個開發環境， `aem_env_id` 也可使用欄位。 如果關聯的索引限制對精簡的Splunk用戶集的訪問，某些組織可能會為生產環境的日誌選擇單獨的索引。
+
+以下是一個日誌條目示例：
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+file_path: /var/log/aem/error.log
+host: 172.34.200.12 
+level: INFO
+msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
+orig_time: 16.07.2020 08:35:32.346
+pod_name: aemloggingall-aem-author-77797d55d4-74zvt
+splunk_customer: true
+```
