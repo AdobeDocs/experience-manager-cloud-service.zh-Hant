@@ -2,9 +2,9 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: 68445e086aeae863520d14cb712f0cbebbffb5ab
+source-git-commit: 23f7b4b41abf9b909ec55a7f37b6b8e78c689b9b
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1305'
 ht-degree: 2%
 
 ---
@@ -195,19 +195,6 @@ AEM as Cloud Service HTTP存取記錄會依時間順序顯示HTTP請求。 每�
 
 ### 日誌格式 {#access-log-format}
 
-| AEM做為雲端服務節點ID | cm-p1234-e26813-aem-publish-5c787687c-lqlxr |
-|---|---|
-| 客戶機的IP地址 | - |
-| 使用者 | myuser@adobe.com |
-| 日期時間 | 30/Apr/2020:17:37:14 +0000 |
-| HTTP方法 | 取得 |
-| URL | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |
-| 協定 | HTTP/1.1 |
-| HTTP回應狀態 | 200 |
-| HTTP請求時間（以毫秒為單位） | 1141 |
-| 反向連結 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
-| 使用者代理 | 「Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，像Gecko）Chrome/81.0.4044.122 Safari/537.36英吋 |
-
 **範例**
 
 ```
@@ -215,6 +202,55 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+<table>
+<tbody>
+<tr>
+<td>AEM做為雲端服務節點ID</td>
+<td>cm-p1235-e2644-aem-author-5955cb5b8-8kgr2</td>
+</tr>
+<tr>
+<td>客戶機的IP地址</td>
+<td>-</td>
+</tr>
+<tr>
+<td>使用者</td>
+<td>myuser@adobe.com</td>
+</tr>
+<tr>
+<td>日期時間</td>
+<td>30/Apr/2020:17:37:14 +0000</td>
+</tr>
+<tr>
+<td>HTTP方法</td>
+<td>取得</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
+</tr>
+<tr>
+<td>協定</td>
+<td>HTTP/1.1</td>
+</tr>
+<tr>
+<td>HTTP回應狀態</td>
+<td>200</td>
+</tr>
+<tr>
+<td>HTTP請求時間（以毫秒為單位）</td>
+<td>1141</td>
+</tr>
+<tr>
+<td>反向連結</td>
+<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
+</tr>
+<tr>
+<td>使用者代理</td>
+<td>「Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，像Gecko）Chrome/81.0.4044.122 Safari/537.36英吋</td>
+</tr>
+</tbody>
+</table>
 
 ### 配置HTTP訪問日誌 {#configuring-the-http-access-log}
 
