@@ -2,9 +2,9 @@
 title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 translation-type: tm+mt
-source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
+source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3824'
 ht-degree: 9%
 
 ---
@@ -189,6 +189,7 @@ Uncompressing DispatcherSDKv<version>  100%
 適用於標準專案的預設主機回位。 如果需要自定義，請修改 `virtualhosts.any`。 在您的自訂中，您不應包含預設的主機全域化，因為它符合每 **個傳** 入請求。
 
 >[!NOTE]
+>
 >AEM（Cloud Service，雲端服務）主要原型將產生相同的分派程式設定檔案結構。
 
 以下各節說明如何在本機驗證配置，以便在部署內部版本時，在Cloud Manager中傳遞相關的品質門。
@@ -371,37 +372,7 @@ Starting httpd server
 
 ## 調試Apache和Dispatcher配置 {#debugging-apache-and-dispatcher-configuration}
 
-以下策略可用於增加調度器模組的日誌輸出，並查看本地和雲環境 `RewriteRule` 中評估結果。
-
-這些模組的日誌級別由變數和定 `DISP_LOG_LEVEL` 義 `REWRITE_LOG_LEVEL`。 可在檔案中設定這些值 `conf.d/variables/global.vars`。 其相關部分如下：
-
-```
-# Log level for the dispatcher
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1
-# Default value: Warn
-#
-# Define DISP_LOG_LEVEL Warn
- 
-# Log level for mod_rewrite
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
-# Default value: Warn
-#
-# To debug your RewriteRules, it is recommended to raise your log
-# level to Trace2.
-#
-# More information can be found at:
-# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
-#
-# Define REWRITE_LOG_LEVEL Warn
-```
-
-在本地運行Dispatcher時，日誌也直接打印到終端輸出。 大部分時間，這些記錄檔應該在DEBUG中，這可以在執行Docker時，將Debug層級傳入為參數來完成。 例如：
-
-`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
-
-雲端環境的記錄檔將透過Cloud Manager中提供的記錄服務公開。
+日誌級別由變數和 `DISP_LOG_LEVEL` 在 `REWRITE_LOG_LEVEL` s `conf.d/variables/global.var`中定義。 如需詳細 [資訊，請參閱](/help/implementing/developing/introduction/logging.md) 「記錄」檔案。
 
 ## 每個環境的不同Dispatcher配置 {#different-dispatcher-configurations-per-environment}
 
