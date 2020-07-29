@@ -2,9 +2,9 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: 1cee93310d84ea21b626f456163de6855056db5b
+source-git-commit: 161dc733d335fc62d7c3017647fe27c64a8dd26f
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '1077'
 ht-degree: 3%
 
 ---
@@ -51,7 +51,6 @@ AEM as a Cloud Service&#39;s提供Java記錄陳述式的存取權。 AEM應用�
 除錯</td>
 <td>
 說明應用程式中的情況。<br>
-
 當DEBUG記錄處於活動狀態時，會記錄提供活動發生情況的清楚說明以及影響處理的任何關鍵參數的語句。</td>
 <td>
 <ul>
@@ -207,3 +206,19 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+### 配置HTTP訪問日誌 {#configuring-the-http-access-log}
+
+AEM中的HTTP存取記錄檔無法設定為雲端服務。
+
+## Apache Web Server / Dispatcher Logging {#dispatcher-logging}
+
+AEM as a Cloud Service為Publish上的Apache Web Servers和分派程式層提供三個記錄檔：
+
+* Apache HTTPD Web Server訪問日誌
+* Apache HTTPD Web Server錯誤日誌
+* Dispatcher log
+
+請注意，這些記錄檔僅適用於「發佈」層。
+
+在AEM應用程式收到HTTP請求之前，此組記錄檔會以雲端服務發佈層的形式，提供HTTP請求的見解。 請務必瞭解，Apache HTTPD Web Server和AEM Dispatcher會提供快取內容給發佈層伺服器，而且絕不會觸及AEM應用程式本身，因此AEM的Java、Request或Access記錄中沒有這些請求的記錄陳述式。
