@@ -2,7 +2,7 @@
 title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 9%
@@ -253,9 +253,9 @@ allowlist包含客戶配置中允許的Apache指令清單。 如果不允許列�
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
 2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
- conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
+  conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
- conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
+  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
 請注意，驗證工具僅報告未允許列出的禁止使用Apache指令。 它不會報告Apache配置的語法或語義問題，因為此資訊僅適用於運行環境中的Apache模組。
@@ -503,7 +503,7 @@ linked to can be removed as well.
 ```
 
 
-請移除它們或加上註解。這些區段中的陳述式將不會進行處理，但如果您保留這些陳述式，您最終可能仍會編輯它們，並因為徒勞無功地而感到困惑。
+請移除或加上註解。系統將不會處理這些區段中的陳述式，但如果您保留這些陳述式，您最終可能仍會編輯，但將徒勞無功而倍感困惑。
 
 ### 檢查重新寫入
 
