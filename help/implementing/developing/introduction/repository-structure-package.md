@@ -2,7 +2,7 @@
 title: 'AEM 專案存放庫結構套件  '
 description: Adobe Experience Manager作為雲端服務Maven專案需要「資料庫結構子套件」定義，其唯一目的是定義JCR資料庫根目錄，專案的程式碼子套件會部署在此目錄中。
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 9%
