@@ -2,7 +2,7 @@
 title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 translation-type: tm+mt
-source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
+source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
 workflow-type: tm+mt
 source-wordcount: '3824'
 ht-degree: 9%
@@ -372,7 +372,7 @@ Starting httpd server
 
 ## 調試Apache和Dispatcher配置 {#debugging-apache-and-dispatcher-configuration}
 
-日誌級別由變數和 `DISP_LOG_LEVEL` 在 `REWRITE_LOG_LEVEL` s `conf.d/variables/global.var`中定義。 如需詳細 [資訊，請參閱](/help/implementing/developing/introduction/logging.md) 「記錄」檔案。
+日誌級別由變數和 `DISP_LOG_LEVEL` 在 `REWRITE_LOG_LEVEL` s `conf.d/variables/global.var`中定義。 如需詳細 [資訊，請參閱](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) 「記錄」檔案。
 
 ## 每個環境的不同Dispatcher配置 {#different-dispatcher-configurations-per-environment}
 
