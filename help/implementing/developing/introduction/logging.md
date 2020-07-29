@@ -2,7 +2,7 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
+source-git-commit: 49bb443019edc6bdec22e24b8a8c7733abe54e35
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -66,7 +66,6 @@ AEM as a Cloud Service&#39;s提供Java記錄陳述式的存取權。 AEM應用�
 警告</td>
 <td>
 說明可能成為錯誤的條件。<br>
-
 當WARN日誌記錄處於活動狀態時，只記錄指示接近子最優性的條件語句。</td>
 <td>
 <ul>
@@ -82,7 +81,6 @@ AEM as a Cloud Service&#39;s提供Java記錄陳述式的存取權。 AEM應用�
 錯誤</td>
 <td>
 說明指出失敗且需要解決的條件。<br>
-
 當ERROR日誌記錄處於活動狀態時，僅記錄指示失敗的語句。 ERROR log語句表示應盡快解決的嚴重問題。</td>
 <td>
 <ul>
