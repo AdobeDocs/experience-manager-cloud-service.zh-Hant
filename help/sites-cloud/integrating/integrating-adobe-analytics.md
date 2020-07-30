@@ -2,7 +2,7 @@
 title: 整合 Adobe Analytics
 description: '整合 Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 4%
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 1. 導覽至「 **工具** 」→ **「雲端服務」**。
 2. 選取 **Adobe Analytics設定**。
-   ![Analytics視](assets/analytics_screen.png "窗Analytics視窗")
+   ![Analytics視](assets/analytics_screen1.png "窗Analytics視窗")
 3. 選擇「創 **建** 」按鈕。
 4. 填寫詳細資訊（請參閱下面），然後按一下「連 **接」**。
 
@@ -35,7 +35,7 @@ ht-degree: 4%
 
 「Adobe Analytics設定」視窗中的設定欄位包括：
 
-![配置參](assets/properties_field.png "數配置參數")
+![配置參](assets/properties_field1.png "數配置參數")
 
 | 屬性 | 說明 |
 |---|---|
