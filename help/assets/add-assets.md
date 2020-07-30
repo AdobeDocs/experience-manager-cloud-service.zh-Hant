@@ -2,9 +2,9 @@
 title: 將您的數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產 [!DNL Adobe Experience Manager] 新增至雲端服務。
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1324'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,6 @@ ht-degree: 2%
 
    如果您在上傳檔案之前取消上傳作業，請停止 [!DNL Assets] 上傳目前的檔案並重新整理內容。 不過，已上傳的檔案不會刪除。
 
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -73,7 +72,6 @@ ht-degree: 2%
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
-
 
 1. 中的上載進度對 [!DNL Assets] 話框顯示成功上載檔案的計數以及無法上載的檔案。
 
@@ -154,7 +152,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 可使用下列描述檔：
 
 * [中繼資料設定檔](metadata-profiles.md) ，可讓您將預設中繼資料屬性套用至上傳至該資料夾的資產
-* [處理設定檔](asset-microservices-configure-and-use.md#processing-profiles) ，可讓您套用轉譯處理，並除預設的轉譯外，還能產生轉譯
+* [處理設定檔](asset-microservices-configure-and-use.md) ，可讓您產生的轉譯數量，預設會超過所能產生的轉譯數量。
 
 此外，如果您的環境中啟用了動態媒體：
 
