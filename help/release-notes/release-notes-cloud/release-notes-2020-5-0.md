@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager 雲端服務 2020.5.0 版發行說明
 description: Experience Manager 2020.5.0 版發行說明
-translation-type: ht
-source-git-commit: 06a56b0ca8000a41fe4e492206459b1525aae59d
-workflow-type: ht
-source-wordcount: '374'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 96%
 
 ---
 
 
 # AEM 雲端服務 2020.5.0 版發行說明 {#release-notes}
 
-以下章節概述 Experience Manager 雲端服務 2020.5.0 版的一般發行說明。
+本頁概述Experience Manager的雲端服務2020.5.0一般發行說明。
 
 ## 發行日期 {#release-date}
 
