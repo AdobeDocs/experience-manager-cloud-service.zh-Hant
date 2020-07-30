@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager 雲端服務 Sites
 description: Adobe Experience Manager 雲端服務 Sites 自助資源與文件連結
-translation-type: ht
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 85398c51f2ce7931039a9771661c9ba7edb30d08
+workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 100%
 
@@ -24,8 +24,8 @@ ht-degree: 100%
 * [使用體驗片段](authoring/fundamentals/experience-fragments.md)
 * [使用啟動](authoring/launches/overview.md)
 * [使用 ContextHub 製作個人化內容](authoring/personalization/contexthub.md)
-* [整合 Adobe Analytics](integrating/adobe-analytics.md)
-* [整合 Adobe Target](integrating/adobe-target.md)
+* [整合 Adobe Analytics](integrating/integrating-adobe-analytics.md)
+* [整合 Adobe Target](integrating/integrating-adobe-target.md)
 
 ## Experience Manager 雲端服務指南 {#aem-guides}
 
