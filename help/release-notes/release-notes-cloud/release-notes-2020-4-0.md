@@ -2,17 +2,17 @@
 title: Adobe Experience Manager 雲端服務 2020.4.0 版發行說明
 description: Experience Manager 2020.4.0 版發行說明
 translation-type: tm+mt
-source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 100%
+source-wordcount: '654'
+ht-degree: 98%
 
 ---
 
 
 # Adobe Experience Manager 雲端服務 2020.4.0 版發行說明 {#release-notes}
 
-以下章節概述 雲端服務 2020.4.0 版的一般發行說明。[!DNL Experience Manager]
+This page outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
 ## 發行日期 {#release-date}
 
