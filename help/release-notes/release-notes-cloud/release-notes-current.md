@@ -2,9 +2,9 @@
 title: 2020.7.0版雲端服務 [!DNL Adobe Experience Manager] 的發行說明。
 description: '[!DNL Adobe Experience Manager]作為2020.7.0版雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: ffde99214fecb151408500c6ba315f55aa28e57d
+source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '968'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * 新的使用者介面實作會取代以Classic UI為基礎的實作。
 
-* 簡化使用者介面對話方塊，讓變數對應和其他組態的架構建立作業留待 [!DNL Adobe Launch]。
+* 簡化使用者介面對話方塊，讓變數對應和其他組態的架構建立作業留待 [!DNL Adobe Launch]。 請參 [閱整合Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html)[與整合Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)。
 
 * 配置現在會儲存在 `/conf` Experience Manager資 `/etc/cloudsettings` 料庫中，而非儲存在。
 
