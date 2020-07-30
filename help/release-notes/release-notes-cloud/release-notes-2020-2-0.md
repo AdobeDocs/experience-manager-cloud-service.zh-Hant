@@ -2,17 +2,17 @@
 title: 2020.2.0 版發行說明
 description: 2020.2.0 版發行說明
 translation-type: tm+mt
-source-git-commit: 8796d4bcbfc4089e1e78bd18bdb253386a5f5b6d
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 100%
+source-wordcount: '197'
+ht-degree: 92%
 
 ---
 
 
 # AEM 雲端服務 2020.2.0 版發行說明 {#release-notes}
 
-以下章節概述 Experience Manager 雲端服務 2020.2.0 版的一般發行說明。
+本頁概述Experience Manager的雲端服務2020.2.0一般發行說明。
 
 ## 發行日期 {#release-date}
 
