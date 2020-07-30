@@ -1,8 +1,8 @@
 ---
-title: 整合 Adobe Analytics
+title: '整合 Adobe Analytics '
 description: '整合 Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: 6754693da488b0bc44a71aa9f0402fc1308b703a
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 13%
@@ -60,6 +60,7 @@ ht-degree: 13%
    >
 * **Apache HTTP Components Proxy Configuration** to configure the 4.x API;
    >  例如， [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
