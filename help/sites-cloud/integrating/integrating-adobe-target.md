@@ -2,7 +2,7 @@
 title: 整合 Adobe Target
 description: '整合 Adobe Target '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
@@ -21,17 +21,17 @@ Adobe Target是Adobe Marketing Cloud的一部分，可讓您透過跨所有通�
 
 >[!NOTE]
 >
->Adobe Experience Manager是Cloud Service客戶，如果客戶目前沒有Target帳戶，可以要求存取Target Foundation Pack for Experience Cloud。 Foundation Pack提供Target的卷限制使用。
+>Adobe Experience Manager是Cloud Service客戶，如果客戶目前沒有Target帳戶，可以要求存取Target Foundation Pack for Experience Cloud。 Foundation Pack提供對Target的卷有限使用。
 
 ## 建立Adobe Target設定 {#create-configuration}
 
 1. 導覽至「 **工具** 」→ **「雲端服務」**。
-   ![導](assets/cloudservice.png "覽")
+   ![導](assets/cloudservice1.png "覽")
 2. 選取 **Adobe Target**。
 3. 選擇「創 **建** 」按鈕。
-   ![建立](assets/tenant.png "建立")
+   ![建立](assets/tenant1.png "建立")
 4. 填寫詳細資訊（請參閱下面），然後選取「 **Connect**」。
-   ![](assets/open_screen.png "ConnectConnect")
+   ![](assets/open_screen1.png "ConnectConnect")
 
 ### IMS 設定
 
@@ -44,7 +44,7 @@ Launch和Target的IMS設定必須能正確整合Target與AEM和Launch。 雖然L
 1. 選擇現有配置，然後按一下「 **屬性」**。
 2. 編輯屬性。
 3. 選 **取「重新連線至Adobe Target」**。
-   ![重新連](assets/edit_config_page.png "接重新連接")
+   ![重新連](assets/edit_config_page1.png "接重新連接")
 4. Select **Save and Close**.
 
 ### 新增設定至網站 {#add-configuration}
@@ -75,7 +75,7 @@ AEM提供與Experience Platform Launch的立即可用整合。 借由將Adobe Ta
 2. 提供您屬性的名稱。
 3. 當網域輸入您要載入啟動程式庫的IP/主機時。
 4. 選擇「保 **存** 」按鈕。
-   ![LaunchpropertyLaunchproperty](assets/properties_newproperty.png "")
+   ![LaunchpropertyLaunchproperty](assets/properties_newproperty1.png "")
 
 ### 新增所需的擴充功能 {#add-extension}
 
@@ -83,10 +83,10 @@ AEM提供與Experience Platform Launch的立即可用整合。 借由將Adobe Ta
 
 1. 選取「擴充目錄」選項，並在篩選中搜尋「目標」。
 2. 選取 **Adobe Target** at.js，然後按一下「安裝」選項。
-   ![Target](assets/search_ext.png "SearchTarget搜尋")
+   ![Target](assets/search_ext1.png "SearchTarget搜尋")
 3. 選擇「配 **置** 」按鈕。 請注意，設定視窗中已匯入Target帳戶認證，且此擴充功能的at.js版本已匯入。
 4. 選取 **「儲存** 」，將Target擴充功能新增至您的Launch屬性。 您應該可以看到「已安裝的擴充功能」清單下列出 **的Target擴充功能** 。
-   ![儲存擴](assets/configure_extension.png "充功能儲存擴充功能")
+   ![儲存擴](assets/configure_extension1.png "充功能儲存擴充功能")
 5. 重複上述步驟以搜尋 **Adobe ContextHub** extension並安裝它（這是與contexthub參數整合時的必要步驟，根據目標設定）。
 
 ### 建立資料元素 {#data-element}
@@ -97,16 +97,16 @@ AEM提供與Experience Platform Launch的立即可用整合。 借由將Adobe Ta
 2. 選取「 **新增資料元素」**。
 3. 提供資料元素的名稱，並將其對應至內容中樞參數。
 4. 選擇 **保存**。
-   ![資料元](assets/data_elem.png "素資料元素")
+   ![資料元](assets/data_elem1.png "素資料元素")
 
 ### 建立頁面規則 {#page-rule}
 
 在規 **則中** ，我們定義並排序一系列動作，這些動作會在網站上執行，以達成目標。
 
 1. 新增一組動作，如螢幕擷取中所示。
-   ![動作](assets/rules.png "動作")
+   ![動作](assets/rules1.png "動作")
 2. 在新增參數至所有Mbox中，將先前設定的資料元素（請參閱上述資料元素）新增至將在mbox呼叫中傳送的參數。
-   ![MboxActions](assets/map_data.png "")
+   ![MboxActions](assets/map_data1.png "")
 
 ### 建立和發佈 {#build-publish}
 
