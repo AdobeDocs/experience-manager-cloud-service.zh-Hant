@@ -2,9 +2,9 @@
 title: 整合 Adobe Analytics
 description: '整合 Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: e5e199c4a457935119e3a02b87ced72d2f2de6cf
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 4%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 4%
 將Adobe Analytics和AEM整合為雲端服務，可讓您追蹤網頁活動。 整合需要：
 
 * 使用Touch UI在AEM中建立Analytics設定作為雲端服務。
-* 在 [Adobe Launch中新增及設定Adobe Analytics做為擴充功能](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
+* 在 [Adobe Launch中新增及設定Adobe Analytics做為擴充功能]。(https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
 與舊版AEM相比，AEM中的Analytics設定中未提供架構支援（即雲端服務）。 現在可以透過Adobe Launch完成，Adobe Launch是實際工具，可用來使用Analytics功能（JS資料庫）來檢測AEM網站。 在Adobe Launch中，會建立屬性，可在其中設定Adobe Analytics擴充功能，並建立規則以傳送資料至Adobe Analytics。 Adobe Launch已取代sitecatalyst提供的分析工作。
 
 >[!NOTE]
 >
->Adobe Experience Manager是Cloud Service客戶，如果客戶沒有現有的Analytics帳戶，可以要求存取Analytics Foundation Pack for Experience Cloud。  此Foundation Pack提供Analytics的使用量有限。
+>Adobe Experience Manager是Cloud Service客戶，如果客戶沒有現有的Analytics帳戶，可以要求存取Analytics Foundation Pack for Experience Cloud。 此Foundation Pack提供Analytics的使用量有限。
 
 ## 建立Analytics設定 {#analytics-configuration}
 
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 ### 配置參數 {#configuration-parameters}
 
-「Adobe Analytics設定」視窗中的設定欄位如下：
+「Adobe Analytics設定」視窗中的設定欄位包括：
 
 ![配置參](assets/properties_field.png "數配置參數")
 
@@ -52,7 +52,7 @@ ht-degree: 4%
 
 ## 使用Adobe Launch將Adobe Analytics整合在AEM網站上
 
-Adobe Analytics可新增為Launch屬性中的擴充功能。 可定義規則以執行對應並對Adobe Analytics進行貼文呼叫。
+Adobe Analytics可新增為Launch屬性中的擴充功能。 可定義規則，以執行對應並對Adobe Analytics進行貼文呼叫：
 
 * 觀看 [此影片](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) ，瞭解如何在Launch中為基本網站設定Analytics擴充功能。
 
@@ -60,7 +60,7 @@ Adobe Analytics可新增為Launch屬性中的擴充功能。 可定義規則以�
 
 >[!NOTE]
 >
->現有的架構仍然有效，但無法在Touch UI中設定。 建議在Launch中重建變數對應設定。
+>現有（舊版）架構仍然有效，但無法在Touch UI中設定。 建議在Launch中重建變數對應設定。
 
 >[!NOTE]
 >
