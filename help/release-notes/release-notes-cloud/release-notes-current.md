@@ -2,10 +2,10 @@
 title: 2020.7.0版雲端服務 [!DNL Adobe Experience Manager] 的發行說明。
 description: '[!DNL Adobe Experience Manager]作為2020.7.0版雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: 5103d54bcb71d6c78894a30edafccf288a51368f
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 7%
+source-wordcount: '918'
+ht-degree: 6%
 
 ---
 
@@ -51,15 +51,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### 新功能 {#what-is-new-core-components}
 
-[核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) 2.11.0 版現已隨附於 AEM Sites，其中包含：
+Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
-* 新 [PDF檢視器元件簡介](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)
+* 新的 [PDF檢視器元件簡介](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)。
 
-* [Accelerated Mobile Pages(AMP)支援核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/developing/amp.html) ，透過從Google行動搜尋結果進入網站時即時進行頁面轉換，有助於提高客戶體驗，進而改善使用者參與度和搜尋引擎最佳化(SEO)。
+* Accelerated Mobile Pages(AMP)對核心元件的支援，透過從Google行動搜尋結果進入網站時即時轉換頁面，有助於提高客戶體驗，進而改善使用者參與度和搜尋引擎最佳化(SEO)。
 
-* 與 [Adobe Client資料層1.0.2版相容](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+* 與 [Adobe Client資料層1.0.2版相容](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)。
 
-* 錯誤修正和程式碼品質改良
+* 錯誤修正和程式碼品質改良。
 
 ## Cloud Manager {#cloud-manager}
 
