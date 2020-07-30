@@ -2,7 +2,7 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
+source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
 workflow-type: tm+mt
 source-wordcount: '2212'
 ht-degree: 3%
@@ -27,9 +27,9 @@ AEM記錄和記錄檔層級會在設定檔中管理，這些設定檔會以Git�
 1. HTTP請求記錄檔，此記錄檔記錄有關HTTP請求及其由AEM提供之回應的資訊
 1. HTTP存取記錄檔，記錄AEM所提供的摘要資訊和HTTP要求
 
-> [!NOTE]
-> 
-> 從發佈層的Dispatcher快取或上游CDN提供的HTTP要求不會反映在這些記錄檔中。
+>[!NOTE]
+>
+>從發佈層的Dispatcher快取或上游CDN提供的HTTP要求不會反映在這些記錄檔中。
 
 ## AEM Java記錄 {#aem-java-logging}
 
@@ -595,9 +595,9 @@ Apache層日誌（包括調度程式）位於Docker容器中，該容器中保�
 
 應針對每個相關的程式／環境類型組合指定上述屬性。  例如，如果客戶想要開發、接移和生產環境，他們應提供三組資訊，如下所示。
 
-> [!NOTE]
+>[!NOTE]
 >
-> 不支援沙盒程式環境的Splunk轉送。
+>不支援沙盒程式環境的Splunk轉送。
 
 以下是客戶支援要求的範例：
 
