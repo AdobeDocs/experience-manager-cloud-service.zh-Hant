@@ -2,9 +2,9 @@
 title: 整合 Adobe Target
 description: '整合 Adobe Target '
 translation-type: tm+mt
-source-git-commit: 8063a41d079b8b959b903aa0f97068a42a22d840
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '857'
 ht-degree: 1%
 
 ---
@@ -17,18 +17,18 @@ Adobe Target是Adobe Marketing Cloud的一部分，可讓您透過跨所有通�
 * 使用Touch UI在AEM中建立Analytics設定作為雲端服務（需要IMS設定）。
 * 在 [Adobe Launch中新增及設定Adobe Analytics做為擴充功能](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
-「體驗定位」需要與Launch整合。 若是「體驗片段」匯出至Target，您只需要Adobe Target設定和IMS。
+在AEM頁面（JS程式庫／標籤）中管理Analytics和Target的用戶端屬性時，Adobe Launch是必要的。 儘管如此，Launch需要整合，才能「體驗定位」。 若是「體驗片段」匯出至Target，您只需要Adobe Target設定和IMS。
 
 >[!NOTE]
 >
->Adobe Experience Manager是Cloud Service客戶，如果客戶目前沒有Target帳戶，可以要求存取Target Foundation Pack for Experience Cloud。  Foundation Pack提供Target的卷限制使用。
+>Adobe Experience Manager是Cloud Service客戶，如果客戶目前沒有Target帳戶，可以要求存取Target Foundation Pack for Experience Cloud。 Foundation Pack提供Target的卷限制使用。
 
 ## 建立Adobe Target設定 {#create-configuration}
 
 1. 導覽至「 **工具** 」→ **「雲端服務」**。
    ![導](assets/cloudservice.png "覽")
 2. 選取 **Adobe Target**。
-3. 按一下「 **建立** 」按鈕。
+3. 選擇「創 **建** 」按鈕。
    ![建立](assets/tenant.png "建立")
 4. 填寫詳細資訊（請參閱下面），然後選取「 **Connect**」。
    ![](assets/open_screen.png "ConnectConnect")
@@ -59,10 +59,6 @@ AEM提供與Experience Platform Launch的立即可用整合。 借由將Adobe Ta
 >
 >現有（舊版）架構仍然有效，但無法在Touch UI中設定。 建議在Launch中重建變數對應設定。
 
->[!NOTE]
->
->現有（舊版）架構仍然有效，但無法在Touch UI中設定。 建議在Launch中重建變數對應設定。
-
 作為一般概觀，整合步驟包括：
 
 1. 建立啟動屬性
@@ -83,7 +79,7 @@ AEM提供與Experience Platform Launch的立即可用整合。 借由將Adobe Ta
 
 ### 新增所需的擴充功能 {#add-extension}
 
-擴充功能是管理核心程式庫設定的容器。 Adobe Target擴充功能支援使用Target JavaScript SDK進行用戶端建置，以用於現代網路at.js。 您必須同時新增 **Adobe Target** 和 **** Adobe ContextHub擴充功能。
+**擴充功能** (Extensions)是管理核心程式庫設定的容器。 Adobe Target擴充功能支援用戶端實作，方法是在現代網路上使用Target JavaScript SDK,at.js。 您必須同時新增 **Adobe Target** 和 **** Adobe ContextHub擴充功能。
 
 1. 選取「擴充目錄」選項，並在篩選中搜尋「目標」。
 2. 選取 **Adobe Target** at.js，然後按一下「安裝」選項。
@@ -95,7 +91,7 @@ AEM提供與Experience Platform Launch的立即可用整合。 借由將Adobe Ta
 
 ### 建立資料元素 {#data-element}
 
-資料元素是可將上下文中樞參數映射到的預留位置。
+**資料元素** ，是您可將上下文中樞參數映射至的預留位置。
 
 1. 選擇 **資料元素**。
 2. 選取「 **新增資料元素」**。
@@ -105,7 +101,7 @@ AEM提供與Experience Platform Launch的立即可用整合。 借由將Adobe Ta
 
 ### 建立頁面規則 {#page-rule}
 
-在「規則」中，我們定義並排序一系列將在網站上執行的動作，以達成目標。
+在規 **則中** ，我們定義並排序一系列動作，這些動作會在網站上執行，以達成目標。
 
 1. 新增一組動作，如螢幕擷取中所示。
    ![動作](assets/rules.png "動作")
