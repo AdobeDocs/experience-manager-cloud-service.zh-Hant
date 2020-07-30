@@ -3,7 +3,7 @@ sub-product: AEM 雲端服務的內容製作
 user-guide-title: AEM 雲端服務的內容製作
 user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
@@ -73,5 +73,5 @@ ht-degree: 100%
       + [建立和管理選件](authoring/personalization/offers.md)
       + [了解區段](authoring/personalization/segmentation.md)
 + 整合 AEM 雲端服務 {#integrations}
-   + [整合 Adobe Analytics](integrating/adobe-analytics.md)
-   + [整合 Adobe Target](integrating/adobe-target.md)
+   + [整合 Adobe Analytics](integrating/integrating-adobe-analytics.md)
+   + [整合 Adobe Target](integrating/integrating-adobe-target.md)
