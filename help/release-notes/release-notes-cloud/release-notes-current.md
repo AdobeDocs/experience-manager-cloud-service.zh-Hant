@@ -2,10 +2,10 @@
 title: 2020.7.0版雲端服務 [!DNL Adobe Experience Manager] 的發行說明。
 description: '[!DNL Adobe Experience Manager]作為2020.7.0版雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+source-git-commit: ffde99214fecb151408500c6ba315f55aa28e57d
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 6%
+source-wordcount: '942'
+ht-degree: 5%
 
 ---
 
@@ -55,7 +55,8 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 * 新的 [PDF檢視器元件簡介](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)。
 
-* Accelerated Mobile Pages(AMP)對核心元件的支援，透過從Google行動搜尋結果進入網站時即時轉換頁面，有助於提高客戶體驗，進而改善使用者參與度和搜尋引擎最佳化(SEO)。
+* 現在提供核心元件的加速行動頁面(AMP)支援。 從Google行動搜尋結果進入網站時，透過即時轉換頁面，有助於提高客戶體驗，進而改善使用者參與度和搜尋引擎最佳化(SEO)。
+有關詳細 [資訊，請參閱核心元件的AMP](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/amp.html) 支援。
 
 * 與 [Adobe Client資料層1.0.2版相容](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)。
 
