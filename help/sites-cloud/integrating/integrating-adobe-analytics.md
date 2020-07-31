@@ -2,9 +2,9 @@
 title: 整合 Adobe Analytics
 description: '整合 Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
+source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '530'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 將Adobe Analytics和AEM整合為雲端服務，可讓您追蹤網頁活動。 整合需要：
 
 * 使用Touch UI在AEM中建立Analytics設定作為雲端服務。
-* 在 [Adobe Launch中新增及設定Adobe Analytics做為擴充功能]。(https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
+* 在 [Adobe Launch中新增及設定Adobe Analytics做為擴充功能](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
 與舊版AEM相比，AEM中的Analytics設定中未提供架構支援（即雲端服務）。 現在可以透過Adobe Launch完成，Adobe Launch是實際工具，可用來使用Analytics功能（JS資料庫）來檢測AEM網站。 在Adobe Launch中，會建立屬性，可在其中設定Adobe Analytics擴充功能，並建立規則以傳送資料至Adobe Analytics。 Adobe Launch已取代sitecatalyst提供的分析工作。
 
@@ -23,11 +23,11 @@ ht-degree: 4%
 >
 >Adobe Experience Manager是Cloud Service客戶，如果客戶沒有現有的Analytics帳戶，可以要求存取Analytics Foundation Pack for Experience Cloud。 此Foundation Pack提供Analytics的使用量有限。
 
-## 建立Analytics設定 {#analytics-configuration}
+## 建立Adobe Analytics設定 {#analytics-configuration}
 
 1. 導覽至「 **工具** 」→ **「雲端服務」**。
-2. 選取 **Adobe Analytics設定**。
-   ![Analytics視](assets/analytics_screen1.png "窗Analytics視窗")
+2. 選取 **Adobe Analytics**。
+   ![Adobe Analytics視](assets/analytics_screen2.png "窗Adobe Analytics視窗")
 3. 選擇「創 **建** 」按鈕。
 4. 填寫詳細資訊（請參閱下面），然後按一下「連 **接」**。
 
