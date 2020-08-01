@@ -3,9 +3,9 @@ title: 設定並使用資產微服務進行資產處理
 description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
+source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2405'
 ht-degree: 1%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 1%
 
 資產微型服務提供可擴充且具彈性的資產處理功能，可使用雲端服務。 Adobe管理服務，以最佳化處理不同的資產類型和處理選項。
 
-資產處理取決於處理設定檔 **[!UICONTROL 中的設定]**，此設定提供預設設定，並允許管理員新增更特定的資產處理設定。 管理員可以建立和維護後處理工作流程的設定，包括選擇性自訂。 自訂工作流程可讓您擴充性和完全自訂。
+資產處理取決於處理設定檔中 **[!UICONTROL 的設定]**，此設定提供預設設定，並讓管理員新增更特定的資產處理設定。 管理員可以建立和維護後處理工作流程的設定，包括選擇性自訂。 自訂工作流程可讓您擴充性和完全自訂。
 
-與舊版Experience Manager相比，Asset microservices [可讓您處理多種檔案類型](/help/assets/file-format-support.md) ，其中包含更多現成可用格式。 例如，PSD和PSB格式的縮圖擷取現在可能是先前需要的協力廠商解決方案（例如ImageMagick）。
+與舊版Experience Manager相比，Asset [microservices可讓您處理各種檔案類型](/help/assets/file-format-support.md) ，包括更多現成可用格式。 例如，PSD和PSB格式的縮圖擷取現在可能是先前需要的協力廠商解決方案（例如ImageMagick）。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -44,17 +44,18 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 Experience Manager可提供下列處理層級。
 
-| 設定 | 說明 | 涵蓋的使用案例 |
+| 選項 | 說明 | 涵蓋的使用案例 |
 |---|---|---|
-| [預設設定](#default-config) | 它可以按原樣使用，而且不能修改。 此設定提供非常基本的轉譯產生功能。 | 使用者介面使 [!DNL Assets] 用的標準縮圖（48、140和319像素）; 大型預覽（網頁轉譯- 1280 px）; 中繼資料和文字擷取。 |
-| [標準配置](#standard-config) | 僅由管理員透過使用者介面進行設定。 提供比上述預設組態更多的轉譯產生選項。 | 變更影像格式和解析度； 產生FPO轉譯。 |
-| [自訂設定](#custom-config) | 由管理員透過使用者介面設定，以叫用支援更複雜需求的自訂工作者。 運用雲端原生功能 [!DNL Asset Compute Service]。 | 請參閱 [允許的使用案例](#custom-config)。 |
+| [預設設定](#default-config) | 它可以按原樣使用，而且不能修改。 此設定提供非常基本的轉譯產生功能。 | <ul> <li>使用者介面使 [!DNL Assets] 用的標準縮圖（48、140和319像素） </li> <li> 大型預覽（網頁轉譯- 1280 px） </li><li> 中繼資料和文字擷取。</li></ul> |
+| [自訂設定](#standard-config) | 由管理員透過使用者介面設定。 延伸預設選項，提供產生轉譯的更多選項。 擴充現成可用的工作器，以提供不同的格式和轉譯。 | <ul><li>FPO轉譯。 </li> <li>變更影像的檔案格式和解析度</li> <li> 有條件地套用至已設定的檔案類型。 </li> </ul> |
+| [自訂設定檔](#custom-config) | 由管理員透過使用者介面設定，以透過自訂工作者使用自訂代碼來呼叫 [!DNL Asset Compute Service]。 支援雲端原生和可擴充方式中更複雜的需求。 | 請參閱 [允許的使用案例](#custom-config)。 |
 
-若要建立符合您自訂需求的自訂處理設定檔，例如要與其他系統整合，請參 [閱後處理工作流程](#post-processing-workflows)。
+<!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
+-->
 
 ## 支援的檔案格式 {#supported-file-formats}
 
-Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼資料的功能。 如需 [完整清單](file-format-support.md) ，請參閱支援的檔案格式。
+Asset microservices支援各種檔案格式，以處理、產生轉譯或擷取中繼資料。 請參 [閱支援的檔案格式](file-format-support.md) ，以取得MIME類型的完整清單以及每種類型支援的功能。
 
 ## 預設設定 {#default-config}
 
@@ -65,7 +66,7 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
-## 標準設定檔 {#standard-config}
+## 標準配置 {#standard-config}
 
 [!DNL Experience Manager] 根據使用者的需求，提供針對常用格式產生更多特定轉譯的功能。 管理員可以建立其他 [!UICONTROL 的處理設定檔] ，以利建立這類轉譯。 然後，使用者將一或多個可用的描述檔指派給特定的檔案夾，以完成其他處理。 例如，額外的處理可產生網頁、行動裝置和平板電腦的轉譯。 以下影片說明如何建立和套用「處 [!UICONTROL 理設定檔] 」，以及如何存取已建立的轉譯。
 
@@ -73,7 +74,7 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 
 * **MIME類型包含規則**: 當處理具有特定MIME類型的資產時，會先根據轉譯規格的已排除MIME類型值檢查MIME類型。 如果符合該清單，則不會為資產（封鎖的清單）產生此特定轉譯。 否則，會根據包含的MIME類型檢查MIME類型，如果與清單匹配，則會生成格式副本（允許清單）。
 
-* **特殊FPO轉譯**: 將大型資產放入檔案時， [!DNL Experience Manager] 創 [!DNL Adobe InDesign] 意專業人員會在放入資產後等 [待相當長時間](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同時，用戶被阻止使用 [!DNL InDesign]。 這會中斷創意流程，並對使用者體驗造成負面影響。 Adobe可讓檔案中暫時放置小型轉譯， [!DNL InDesign] 以開始處理，稍後可以隨選取代為完整解析度資產。 [!DNL Experience Manager] 提供僅用於放置(FPO)的轉譯。 這些FPO轉譯檔案大小較小，但外觀比例相同。
+* **特殊FPO轉譯**: 將大型資產放入檔案時， [!DNL Experience Manager] 創 [!DNL Adobe InDesign] 意專業人員會在放入資產後等 [待相當長時間](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同時，用戶被阻止使用 [!DNL InDesign]。 這會中斷創意流程，並對使用者體驗造成負面影響。 Adobe可讓檔案中暫時放置小型轉譯， [!DNL InDesign] 以開始處理，稍後可以隨選取代為完整解析度的資產。 [!DNL Experience Manager] 提供僅用於放置(FPO)的轉譯。 這些FPO轉譯檔案大小較小，但外觀比例相同。
 
 處理設定檔可包含FPO（僅限放置）轉譯。 請參 [!DNL Adobe Asset Link] 閱文 [件](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html) ，瞭解您是否需要為處理設定檔開啟它。 如需詳細資訊，請參 [閱Adobe Asset Link完整檔案](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。
 
@@ -96,11 +97,14 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 
 1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
 
-以下視訊說明標準設定檔的實用性和使用方式。
+<!-- TBD: Update the video link when a new video is available from Tech Marketing.
+
+The following video demonstrates the usefulness and usage of standard profile.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
+-->
 
-<!-- Removed per cqdoc-15624 request by engineering.
+<!-- This image was removed per cqdoc-15624, as requested by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
@@ -114,14 +118,20 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 * Review from flow perspective shared in Jira ticket.
 -->
 
-由於組織的需求不同，某些複雜的資產處理使用案例無法使用預設組態來完成。 Adobe針對這 [!DNL Asset Compute Service] 類使用案例提供優惠。 它是可擴充且可擴充的服務，可處理數位資產。 它可將影像、視訊、檔案和其他檔案格式轉換為不同的轉譯，包括縮圖、擷取的文字和中繼資料以及封存。
+支 [!DNL Asset Compute Service] 援多種使用案例，例如預設處理、處理Adobe特定格式（例如Photoshop檔案），以及實作自訂或組織特定處理。 過去需要的DAM更新資產工作流程自訂，預設會處理，或透過UI上的處理設定檔設定來處理。 如果此處理不符合商業需求，Adobe建議開發並使用資產計算服務來擴充預設功能。
 
-開發人員可使用資產計算服務來建立專門的自訂工作，以符合預先定義的複雜使用案例。 [!DNL Experience Manager] 可以使用管理員配置的自定義配置檔案從用戶介面調用這些自定義工作器。 [!DNL Asset Compute Service] 支援以下調用外部服務的使用案例：
+>[!NOTE]
+>
+>Adobe建議僅在業務需要無法使用預設設定或標準設定檔時使用自訂工作者。
 
-* 叫用 [!DNL Adobe Photoshop] 至影像剪切API並將結果儲存為轉譯。
+它可將影像、視訊、檔案和其他檔案格式轉換為不同的轉譯，包括縮圖、擷取的文字和中繼資料以及封存。
+
+開發人員可使 [!DNL Asset Compute Service] 用此工具來建立符合預先定義使用案例的專業自訂工作者。 [!DNL Experience Manager] 可以使用管理員配置的自定義配置檔案從用戶介面調用這些自定義工作器。 [!DNL Asset Compute Service] 支援以下調用外部服務的使用案例：
+
+* 使用 [!DNL Adobe Photoshop]的 [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ，並將結果儲存為轉譯。
 * 叫用協力廠商系統以更新資料，例如PIM系統。
 * 使用 [!DNL Photoshop] API以Photoshop範本產生各種轉譯。
-* 使用 [!DNL Adobe Lightroom] API來最佳化收錄的資產，並將它們儲存為轉譯。
+* 使用 [Adobe Lightroom API](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) ，最佳化所擷取的資產，並將其儲存為轉譯。
 
 >[!NOTE]
 >
@@ -133,18 +143,30 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 
 1. 管理員可存 **[!UICONTROL 取「工具>資產>處理設定檔]**」。 按一下&#x200B;**[!UICONTROL 建立]**。
 1. Click on **[!UICONTROL Custom]** tab. 按一 **[!UICONTROL 下新增]**。 提供所要的轉譯檔案名稱。
-1. 提供下列資訊，然後按一下「 **[!UICONTROL 儲存]**」。
+1. 提供下列資訊。
 
    * 每個轉譯的檔案名稱及支援的副檔名。
    * Firefly自訂應用程式的端點URL。 應用程式必須與Experience Manager帳戶來自相同的組織。
-   * 視需要新增服務參數。
+   * 添加 [!UICONTROL 服務參數] ，以將額外資訊或參數傳遞到自定義工作器。
    * 包含和排除的MIME類型，以定義描述檔的適用性。
 
-![custom-processing-profile](assets/custom-processing-profile.png)
+   按一下&#x200B;**[!UICONTROL 「儲存」]**。
 
 >[!CAUTION]
 >
 >如果Firefly應用程式和 [!DNL Experience Manager] 帳戶不來自同一個組織，則整合無法運作。
+
+### 自訂描述檔的範例 {#custom-profile-example}
+
+為了說明自訂描述檔的使用情形，我們考慮將一些自訂文字套用至促銷活動影像的使用案例。 您可以建立處理設定檔，以運用Photoshop API來編輯影像。
+
+資產計算服務整合允許Experience Manager使用服務參數欄位將這些參數傳遞 [!UICONTROL 給自定義工] 。 然後，自訂工作者會叫用Photoshop API，並將這些值傳遞至API。 例如，您可以傳遞字型名稱、文字顏色、文字粗細和文字大小，將自訂文字新增至促銷活動影像。
+
+![custom-processing-profile](assets/custom-processing-profile.png)
+
+*圖： 使用[!UICONTROL 服務參數欄位]，將添加的資訊傳遞給構建到自定義工作器中的預定義參數。*
+
+當促銷活動影像上傳至套用此處理設定檔的檔案夾時，會以字型文字更 `Jumanji` 新影 `Arial-BoldMT` 像。
 
 ## 使用處理設定檔來處理資產 {#use-profiles}
 
@@ -152,7 +174,7 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 
 使用下列其中一種方法，將處理設定檔套用至資料夾：
 
-* 管理員可以在「工具」>「資產」>「處 **[!UICONTROL 理設定檔」中選取處理設定檔定義]**，然後使用「 **[!UICONTROL 將設定檔套用至資料夾」動作]** 。 它會開啟內容瀏覽器，讓您導覽至特定資料夾、選取資料夾並確認描述檔的應用程式。
+* 管理員可以在「工具 **[!UICONTROL >資產]** >處理配置檔案 **[!UICONTROL 」中選擇處理配置檔案定義，]********** 然後使用「將配置檔案應用到資料夾」(s)Jaction。 它會開啟內容瀏覽器，讓您導覽至特定資料夾、選取資料夾並確認描述檔的應用程式。
 * Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. 若要儲存變更，請按一下「 **[!UICONTROL 儲存並關閉」]**。
 
 >[!NOTE]
@@ -165,7 +187,7 @@ Asset microservices支援多種檔案格式，包括產生轉譯或擷取中繼�
 >
 >套用至資料夾的處理描述檔適用於整個樹狀結構，但可與套用至子資料夾的其他描述檔重疊。 當資產上傳至資料夾時，Experience Manager會檢查包含資料夾的屬性以取得處理設定檔。 如果未應用任何檔案，則會檢查層次結構中的父資料夾以查找要應用的處理配置檔案。
 
-使用者可以開啟已完成處理的新上傳資產、開啟資產預覽，然後按一下左側邊欄的「轉譯」檢視，以檢查處理是否實際 **[!UICONTROL 發生]** 。 處理設定檔中的特定轉譯（特定資產的類型與MIME類型包含規則相符）應可見且可存取。
+所有產生的轉譯都可在左側導 [!UICONTROL 軌的「轉譯] 」檢視中使用。 開啟資產預覽並開啟左側導軌以存取「轉 **[!UICONTROL 譯]** 」檢視。 處理設定檔中的特定轉譯（特定資產的類型與MIME類型包含規則相符）應可見且可存取。
 
 ![其他轉譯](assets/renditions-additional-renditions.png)
 
