@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
 workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 5%
+ht-degree: 38%
 
 ---
 
@@ -66,41 +66,41 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 ### 發行日期 {#release-date-cm}
 
-Cloud Manager  2020.7.0版的發行日期為2020年7月9日。
+[!UICONTROL Cloud Manager] 2020.7.0 版於 2020 年 7 月 9 日正式發佈。
 
 ### 新功能 {#what-is-new-cloud-manager}
 
 * 環境頁面已重新設計。
 
-* 休眠的環境現在在Cloud Manager中，當休眠時會顯示離散狀態。
+* 休眠環境現在會在 Cloud Manager 休眠時顯示分離狀態。
 
-* 每個環境的環境變數數已增加到200個。
+* 每個環境的環境變數數量提高至 200 個。
 
-* Cloud Manager管道現在支援客戶集變數和機密。
+* Cloud Manager 管道現在支援客戶設定變數和機密。
 
-   如需詳細 [資訊，請參閱](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) 「管線變數」。
+   如需詳細資訊，請參閱[管道變數](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables)。
 
 ### 錯誤修正 {#bug-fixes-cm}
 
-* 從Cloud Manager到Developer Console的連結在完全建立環境之前未正確啟用。
+* 環境完全建立前，從 Cloud Manager 到開發人員控制台的連結未正確啟用。
 
-* 直接從Cloud Manager連結至「開發人員主控台」時，不會顯示沙盒程式環境的解除休眠／休眠選項。
+* 直接從 Cloud Manager 連結至開發人員控制台時，系統未顯示將沙箱方案的環境解除休眠/休眠的選項。
 
-* 「非 **生產管線** 」(Non-Production Pipeline)編輯頁面上的「取消」(Cancel)和「保存 **** 」(Save)選項並不總是可見。
+* 非生產管道編輯頁面有時未顯示&#x200B;**取消**&#x200B;和&#x200B;**儲存**&#x200B;選項。
 
-* 程式碼品質處理中的某些失敗可能會導致記錄檔無法正確產生。
+* 程式碼品質處理程序的某些失敗作業可能導致系統無法正確產生記錄檔。
 
-* 建立新程式時，建議的名稱有時會返回現有程式名稱的副本。
+* 建立新方案時，建議的名稱有時會傳回重複的現有方案名稱。
 
-* 有些大型管線步驟記錄無法一貫地透過使用者介面下載。
+* 部分大型管道步驟記錄檔無法透過使用者介面穩定下載。
 
-* 驗證環境名稱時會出現一個逐項錯誤。
+* 環境名稱驗證發生差一錯誤。
 
-* 「環境」頁面有時會在無顯示時顯示發佈和分派器區段。
+* 環境頁面有時會在未顯示任何內容的情況下，顯示發佈和發送器區段。
 
 ### 已知問題 {#known-issues}
 
-* 由於程式碼涵蓋範圍的計算方式有所變 *更* ,Jacoco外掛程式的最低版本現在為0.7.5.201505241946（2015年5月發行）。 明確參照舊版的客戶會在程式碼品質程式中收到錯誤訊息。
+* 由於程式碼涵蓋範圍的計算方式有所變更，Jacoco 外掛程式的&#x200B;*最低*&#x200B;版本現在是 0.7.5.201505241946 (2015 年 5 月發佈)。明確參照舊版的客戶會在程式碼品質程式中收到錯誤訊息。
 
 
 ## Adobe Experience Manager雲端服務基礎 {#cloud-foundation}
@@ -117,16 +117,16 @@ Cloud Manager  2020.7.0版的發行日期為2020年7月9日。
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-請依照本節瞭解Cloud Readiness Analyzer 1.0.2版的新增功能和更新。
+請參照本節，了解 Cloud Readiness Analyzer v1.0.2 版的新增功能和更新。
 
 ### 錯誤修正 {#cra-bug-fixes}
 
-* CRA的舊版無法在Adobe Experience Manager(AEM)6.1上執行。 已新增明確支援，允許管理員群組中的使用者。
+* CRA 較早版本無法在 Adobe Experience Manager (AEM) 6.1 上執行。新增明確支援，讓管理員群組中的使用者使用。
 
-   如需詳細 [資訊，請參閱「在AEM 6.1上安裝CRA](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) 」。
+   如需詳細資訊，請參閱[在 AEM 6.1 上安裝CRA](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)。
 
-* 摘要報表上顯示的到期時間戳記不正確。
+* 摘要報告顯示的到期時間戳記不正確。
 
-* CRA正在檢測重複的定製元件。
+* CRA 偵測到重複的自訂元件。
 
-* 在AEM 6.1中，內容檢查在完成完整檢查之前即已結束。 已添加異常處理，允許檢查員跳過並繼續，直到完全檢查完成。
+* AEM 6.1 中，內容檢查在完整檢查完成前結束。新增例外狀況處理程序，在完整檢查完成前，讓檢查人員可以選擇略過及繼續。
