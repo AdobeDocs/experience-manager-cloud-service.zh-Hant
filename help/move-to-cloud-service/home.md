@@ -1,11 +1,11 @@
 ---
 title: 轉移至 AEM 雲端服務
 description: 將 Adobe Experience Manager 雲端服務轉移至 AEM 雲端服務的自助資源與文件連結
-translation-type: ht
-source-git-commit: ffdb0a39684f1ccc587bf1cc401811a7ca6d649d
-workflow-type: ht
-source-wordcount: '510'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 97%
 
 ---
 
@@ -47,9 +47,10 @@ AEM 雲端服務為 Experience Manager Sites 和 Assets 提供可擴充、安全
 | [入門](/help/onboarding/home.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager 雲端服務，包括如何取得存取權限和重要的資料保護資訊。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何使用及管理 Experience Manager Sites 雲端服務。 |
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何使用及管理 Experience Manager Assets 雲端服務。 |
-| [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager 雲端服務部署作業，包括開發及部署主題。 |
+| [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager 雲端服務部署作業，包括開發和部署主題。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager 雲端服務整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager 雲端服務後端的操作方式，例如製作索引和執行維護任務。 |
+| [商務使用指南](/help/commerce-cloud/home.md) | 瞭解AEM上的Commerce Integration Framework as a Cloud Service。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
