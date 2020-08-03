@@ -2,7 +2,7 @@
 title: 2020.7.0版雲端服務 [!DNL Adobe Experience Manager] 的發行說明。
 description: '[!DNL Adobe Experience Manager]作為2020.7.0版雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: d0d51efbc9a904a5958e15544cff18fad9a20bfb
+source-git-commit: de220114d7eb4ac1fcee028890ff029de168d0c3
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 37%
@@ -115,9 +115,9 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 ### 新功能 {#what-is-new-commerce}
 
-* AEM Commerce現在可在Cloud Service上使用。
+AEM Commerce現在可在Cloud Service上使用。
 
-   如需詳 [細資訊，請參閱「AEM Commerce as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) 」快速入門。
+如需詳 [細資訊，請參閱「AEM Commerce as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) 」快速入門。
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
