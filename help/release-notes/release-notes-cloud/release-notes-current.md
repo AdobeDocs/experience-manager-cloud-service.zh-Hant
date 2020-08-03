@@ -2,9 +2,9 @@
 title: 2020.7.0版雲端服務 [!DNL Adobe Experience Manager] 的發行說明。
 description: '[!DNL Adobe Experience Manager]作為2020.7.0版雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: 459843adff623395bcf7afb41f427d6ea0fb825c
+source-git-commit: d0d51efbc9a904a5958e15544cff18fad9a20bfb
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '992'
 ht-degree: 37%
 
 ---
@@ -43,12 +43,6 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * 與雲端服務部署不相容的工作流程步驟現在會在工作流程模型編輯器中標示 [!UICONTROL 為警告] 。 此外，在雲端服務環境上執行現有工作流程時，會略過不相容的工作流程步驟。
 
 * 由客戶在與Cloud Manager中的環境相關聯的Git專案中 `/conf/global` 所建立的工作流程模型會自動部署至Experience Manager中， `/var` 並因此可供使用。 客戶所變更的產 `/libs` 品工作流程模型不會自動部署至 `/var`。
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### 新功能 {#what-is-new-commerce}
-
-* AEM Commerce現在可在Cloud Service上使用。 如需詳細資訊，請參閱「 [快速入門」](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html)。
 
 ## 核心元件 {#core-components}
 
@@ -105,7 +99,6 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 * 由於程式碼涵蓋範圍的計算方式有所變更，Jacoco 外掛程式的&#x200B;*最低*&#x200B;版本現在是 0.7.5.201505241946 (2015 年 5 月發佈)。明確參照舊版的客戶會在程式碼品質程式中收到錯誤訊息。
 
-
 ## Adobe Experience Manager雲端服務基礎 {#cloud-foundation}
 
 ### 新功能 {#what-is-new-foundations}
@@ -117,6 +110,14 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 * 將AEM Analytics雲端服務UI從Classic UI移植到新的AEM UI。 此外，也將Analytics雲端服務在AEM儲存庫中的位置 `/etc` 從移 `/conf`至，以與其他AEM雲端服務一致。
 
 * 將AEM Target雲端服務UI從Classic UI移植至新的AEM UI。 也將AEM儲存庫中Target雲端服務的位置從移 `/etc` 動到 `/conf`，以與其他AEM雲端服務一致。
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### 新功能 {#what-is-new-commerce}
+
+* AEM Commerce現在可在Cloud Service上使用。
+
+   如需詳 [細資訊，請參閱「AEM Commerce as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) 」快速入門。
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
