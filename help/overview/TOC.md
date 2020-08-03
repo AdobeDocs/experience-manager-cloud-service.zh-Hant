@@ -1,12 +1,12 @@
 ---
-sub-product: AEM雲端服務概觀
-user-guide-title: AEM雲端服務概觀
+sub-product: AEM 雲端服務概述
+user-guide-title: AEM 雲端服務概述
 user-guide-description: For an overview of Experience Manager as a Cloud service, including an introduction, terminology, etc., start here.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '41'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
