@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager 雲端服務使用手冊
 description: Adobe Experience Manager 雲端服務自助資源與文件連結
-translation-type: ht
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
-workflow-type: ht
-source-wordcount: '355'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 14c553f2b9e8cbaf27be74ba7efefc68ef740d3e
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 92%
 
 ---
 
@@ -25,10 +25,12 @@ ht-degree: 100%
 | [入門](/help/onboarding/home.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager 雲端服務，包括如何取得存取權限和重要的資料保護資訊。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何使用及管理 Experience Manager Sites 雲端服務。 |
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何使用及管理 Experience Manager Assets 雲端服務。 |
+| [商務使用指南](/help/commerce-cloud/home.md) | 瞭解如何將Experience Manager Commerce當做雲端服務使用及管理。 |
 | [轉移至 AEM 雲端服務](/help/move-to-cloud-service/home.md) | 了解轉換至雲端服務的過程。 |
 | [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager 雲端服務部署作業，包括開發和部署主題。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager 雲端服務整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager 雲端服務後端的操作方式，例如製作索引和執行維護任務。 |
+| [商務使用指南](/help/commerce-cloud/home.md) | 瞭解AEM上的Commerce Integration Framework as a Cloud Service。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
