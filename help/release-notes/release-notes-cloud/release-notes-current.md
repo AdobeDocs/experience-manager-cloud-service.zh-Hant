@@ -2,9 +2,9 @@
 title: 2020.7.0版雲端服務 [!DNL Adobe Experience Manager] 的發行說明。
 description: '[!DNL Adobe Experience Manager]作為2020.7.0版雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
+source-git-commit: af6603725ff42583e01c62eb8e8cf11aaea41437
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '952'
 ht-degree: 38%
 
 ---
@@ -31,9 +31,6 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * 配置現在會儲存在 `/conf` Experience Manager資 `/etc/cloudsettings` 料庫中，而非儲存在。
 
 ## Adobe Experience Manager Assets 雲端服務 {#assets}
-
->[!NOTE]
->AEM Assets as a Cloud Service功能將於未來幾天推出。
 
 ### 新功能 {#what-is-new-assets}
 
