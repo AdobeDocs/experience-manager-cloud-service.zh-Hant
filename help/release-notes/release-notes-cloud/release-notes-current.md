@@ -2,10 +2,10 @@
 title: 2020.7.0版雲端服務 [!DNL Adobe Experience Manager] 的發行說明。
 description: '[!DNL Adobe Experience Manager]作為2020.7.0版雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: af6603725ff42583e01c62eb8e8cf11aaea41437
+source-git-commit: 459843adff623395bcf7afb41f427d6ea0fb825c
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 38%
+source-wordcount: '985'
+ht-degree: 37%
 
 ---
 
@@ -43,6 +43,12 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * 與雲端服務部署不相容的工作流程步驟現在會在工作流程模型編輯器中標示 [!UICONTROL 為警告] 。 此外，在雲端服務環境上執行現有工作流程時，會略過不相容的工作流程步驟。
 
 * 由客戶在與Cloud Manager中的環境相關聯的Git專案中 `/conf/global` 所建立的工作流程模型會自動部署至Experience Manager中， `/var` 並因此可供使用。 客戶所變更的產 `/libs` 品工作流程模型不會自動部署至 `/var`。
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### 新功能 {#what-is-new-commerce}
+
+* AEM Commerce現在可在Cloud Service上使用。 如需詳細資訊，請參閱「 [快速入門」](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html)。
 
 ## 核心元件 {#core-components}
 
