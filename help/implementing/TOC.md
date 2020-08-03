@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: f3d2d72dd9a0e025a3a88eecfd2b3ce466262093
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 97%
    + [AEM 雲端服務 SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM 雲端服務開發方針](developing/introduction/development-guidelines.md)
    + [開始開發 AEM Sites - WKND 教學課程](developing/introduction/develop-wknd-tutorial.md)
-   + [Sling Cheatsheet](developing/introduction/sling-cheatsheet.md)
-   + [使用Sling適配器](developing/introduction/sling-adapters.md)
+   + [Sling 速查表](developing/introduction/sling-cheatsheet.md)
+   + [使用 Sling 介面卡](developing/introduction/sling-adapters.md)
    + [在 AEM 雲端服務中使用 Sling Resource Merger](developing/introduction/sling-resource-merger.md)
    + [AEM 雲端服務中的覆蓋](developing/introduction/overlays.md)
    + [記錄](developing/introduction/logging.md)
