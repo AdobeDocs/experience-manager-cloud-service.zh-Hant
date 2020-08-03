@@ -2,9 +2,9 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: 1a2172a35c3409dd98f4ce93d621762b935d122f
+source-git-commit: 01ffc349891ac1e11af4f4bc8a539069b8f6cd5e
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1617'
 ht-degree: 97%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 * 「內容轉移工具」的最低系統需求為 AEM 6.3 + 和 JAVA 8。如果您使用較舊版本的 AEM，您必須將內容存放庫升級至 AEM 6.5 才能使用「內容轉移工具」。
 
-* 內容傳輸工具可與下列類型的資料儲存區搭配使用： 檔案資料儲存、S3資料儲存和共用S3資料儲存。 它目前不支援Azure Blob Store資料存放區。
+* 內容傳輸工具可與下列類型的資料儲存區搭配使用： 檔案資料儲存、S3資料儲存和共用S3資料儲存。 它目前不支援Azure Blob Store資料儲存區。
 
 * 如果您使用&#x200B;*沙箱環境*，請確定您的環境已升級至 2020 年 6 月 10 日或之後發行的版本。如果您使用&#x200B;*生產環境*，則會自動更新。
 
