@@ -1,11 +1,11 @@
 ---
 title: 實作 Adobe Experience Manager 雲端服務
 description: Adobe Experience Manager 雲端服務實作自助資源與文件連結
-translation-type: ht
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
-workflow-type: ht
-source-wordcount: '398'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+workflow-type: tm+mt
+source-wordcount: '412'
+ht-degree: 96%
 
 ---
 
@@ -36,6 +36,7 @@ ht-degree: 100%
 | [轉移至 AEM 雲端服務](/help/move-to-cloud-service/home.md) | 了解轉換至雲端服務的過程。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager 雲端服務整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager 雲端服務後端的操作方式，例如製作索引和執行維護任務。 |
+| [商務使用指南](/help/commerce-cloud/home.md) | 瞭解AEM上的Commerce Integration Framework as a Cloud Service。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
