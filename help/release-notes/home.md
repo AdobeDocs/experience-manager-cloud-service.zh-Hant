@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) 雲端服務的發行說明。
 description: 'Adobe Experience Manager (AEM) 雲端服務的發行說明。 '
 translation-type: tm+mt
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
+source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 100%
+source-wordcount: '376'
+ht-degree: 96%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 100%
 | [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager 雲端服務部署作業，包括開發和部署主題。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager 雲端服務整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager 雲端服務後端的操作方式，例如製作索引和執行維護任務。 |
+| [商務使用指南](/help/commerce-cloud/home.md) | 瞭解AEM上的Commerce Integration Framework as a Cloud Service。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
