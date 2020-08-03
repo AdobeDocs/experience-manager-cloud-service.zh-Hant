@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 雲端服務 Sites
 description: Adobe Experience Manager 雲端服務 Sites 自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 85398c51f2ce7931039a9771661c9ba7edb30d08
+source-git-commit: 6c2215cdc83aaaf15e9ef9905805d3da10c1e8f6
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 96%
 
 ---
 
@@ -42,6 +42,7 @@ ht-degree: 100%
 | [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager 雲端服務部署作業，包括開發和部署主題。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager 雲端服務整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager 雲端服務後端的操作方式，例如製作索引和執行維護任務。 |
+| [商務使用指南](/help/commerce-cloud/home.md) | 瞭解AEM上的Commerce Integration Framework as a Cloud Service。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
