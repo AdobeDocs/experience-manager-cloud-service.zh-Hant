@@ -2,7 +2,7 @@
 title: 管理內容片段
 description: 內容片段會儲存為資產，因此主要是從資產主控台管理。
 translation-type: tm+mt
-source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
+source-git-commit: bb664c48c31aa19f71e881d31fcde5fdc3bb35a1
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 11%
@@ -131,9 +131,7 @@ ht-degree: 11%
    >[!NOTE]
    >
    >1. 當內容頁面上已參考片段時，會顯示訊息。
-      >
-      >
-   2. 使用「切換側面板」圖示可隱藏／顯 **示側面板** 。
+   >2. 使用「切換側面板」圖示可隱藏／顯 **示側面板** 。
 
 
 3. 使用側面板中的圖示，在三種模式中導覽：
@@ -294,7 +292,7 @@ ht-degree: 11%
 
 >[!CAUTION]
 如果您的片段是以模型為基礎，則應確定 [模型已發佈](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
-如果您發佈模型尚未發佈的內容片段，則選擇清單會指出此點，而模型將會隨片段一起發佈。
+如果您發佈模型尚未發佈的內容片段，則選擇清單會指出此點，而模型會隨片段一起發佈。
 
 必須發佈內容片段才能在發佈環境中使用。 可發佈：
 
