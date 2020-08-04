@@ -2,7 +2,7 @@
 title: 自訂CIF核心元件
 description: 自訂CIF核心元件
 translation-type: tm+mt
-source-git-commit: dd6973085ae34dd6ea7296c36d0a14f699440269
+source-git-commit: c3cf472f5e207e7ca0788dc3e42105868d9bdf00
 workflow-type: tm+mt
 source-wordcount: '2520'
 ht-degree: 0%
@@ -352,7 +352,7 @@ Sling Models是以Java形式實作，可在產生的專 **案的** core模組中
    -  data-sly-use.product="com.adobe.cq.commerce.core.components.models.productteaser.ProductTeaser"
    +  data-sly-use.product="com.acme.cif.core.models.MyProductTeaser"
       data-sly-use.actionsTpl="actions.html">
-       ...
+      ...
    ```
 
    將更改保存到 `productteaser.html`。
