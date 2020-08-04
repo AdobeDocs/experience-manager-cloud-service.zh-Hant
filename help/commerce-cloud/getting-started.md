@@ -2,7 +2,7 @@
 title: AEM Commerce as a Cloud Service快速入門
 description: AEM Commerce as a Cloud Service快速入門
 translation-type: tm+mt
-source-git-commit: 170a6f4f3aa07b9aa917014b7a682ead9ed595c1
+source-git-commit: 1fcdfa60c134491c781906e4a757a3a10399bde1
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 2%
@@ -13,6 +13,8 @@ ht-degree: 2%
 # AEM Commerce as a Cloud Service快速入門 {#start}
 
 若要以雲端服務的形式開始使用AEM Commerce，您的Experience Manager Cloud服務必須配備Commerce Integration Framework(CIF)附加元件。 CIF附加元件是 [AEM Sites（雲端服務）之上的額外模組](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/sites/home.html)。
+
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 ## 入門 {#onboarding}
 
