@@ -3,9 +3,9 @@ title: 設定並使用資產微服務進行資產處理
 description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
+source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2501'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ Asset microservices支援各種檔案格式，以處理、產生轉譯或擷取�
 
 * **MIME類型包含規則**: 當處理具有特定MIME類型的資產時，會先根據轉譯規格的已排除MIME類型值檢查MIME類型。 如果符合該清單，則不會為資產（封鎖的清單）產生此特定轉譯。 否則，會根據包含的MIME類型檢查MIME類型，如果與清單匹配，則會生成格式副本（允許清單）。
 
-* **特殊FPO轉譯**: 將大型資產放入檔案時， [!DNL Experience Manager] 創 [!DNL Adobe InDesign] 意專業人員會在放入資產後等 [待相當長時間](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同時，用戶被阻止使用 [!DNL InDesign]。 這會中斷創意流程，並對使用者體驗造成負面影響。 Adobe可讓檔案中暫時放置小型轉譯， [!DNL InDesign] 以開始處理，稍後可以隨選取代為完整解析度資產。 [!DNL Experience Manager] 提供僅用於放置(FPO)的轉譯。 這些FPO轉譯檔案大小較小，但外觀比例相同。
+* **特殊FPO轉譯**: 將大型資產放入檔案時， [!DNL Experience Manager] 創 [!DNL Adobe InDesign] 意專業人員會在放入資產後等 [待相當長時間](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同時，用戶被阻止使用 [!DNL InDesign]。 這會中斷創意流程，並對使用者體驗造成負面影響。 Adobe可讓檔案中暫時放置小型轉譯， [!DNL InDesign] 以開始處理，稍後可以隨選取代為完整解析度的資產。 [!DNL Experience Manager] 提供僅用於放置(FPO)的轉譯。 這些FPO轉譯檔案大小較小，但外觀比例相同。
 
 處理設定檔可包含FPO（僅限放置）轉譯。 請參 [!DNL Adobe Asset Link] 閱文 [件](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html) ，瞭解您是否需要為處理設定檔開啟它。 如需詳細資訊，請參 [閱Adobe Asset Link完整檔案](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。
 
@@ -146,8 +146,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 提供下列資訊。
 
    * 每個轉譯的檔案名稱及支援的副檔名。
-   * Firefly自訂應用程式的端點URL。 應用程式必須與Experience Manager帳戶來自相同的組織。
-   * 添加 [!UICONTROL 服務參數] ，以將額外資訊或參數傳遞到自定義工作器。
+   * [Firefly自訂應用程式的端點URL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html)。 應用程式必須與Experience Manager帳戶來自相同的組織。
+   * 添加服務參數以 [將額外資訊或參數傳遞到定制工作器](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)。
    * 包含和排除的MIME類型，以定義描述檔的適用性。
 
    按一下&#x200B;**[!UICONTROL 「儲存」]**。
