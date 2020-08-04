@@ -2,7 +2,7 @@
 title: 將AEM的AEM Commerce開發為雲端服務
 description: 將AEM的AEM Commerce開發為雲端服務
 translation-type: tm+mt
-source-git-commit: 170a6f4f3aa07b9aa917014b7a682ead9ed595c1
+source-git-commit: e30086c546d9efcc1da07ac5862c012a0db02c09
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 9%
@@ -39,7 +39,7 @@ CIF Add-On是以Sling Feature封存檔的形式提供。 Software Distribution P
 
 ### 訪問CIF附加模組
 
-The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). zip檔案包含CIF附加元件，即Sling Feature封存檔，它不是AEM套件。 請注意，SDK清單的存取權限僅限AEM為雲端服務授權的使用者。
+The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). zip檔案包含CIF附加元件作為Sling Feature封存，它不是AEM套件。 請注意，SDK清單的存取權限僅限AEM為雲端服務授權的使用者。
 
 >[!TIP]
 >
@@ -67,13 +67,13 @@ The CIF add-on can be downloaded as a zip file from the [Software Distribution p
 
    ```bash
    export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-   ````
+   ```
 
    示例Windows:
 
    ```bash
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-   ````
+   ```
 
    此變數也必須設定為AEM的雲端服務環境。
 
