@@ -2,7 +2,7 @@
 title: 管理內容片段
 description: 內容片段會儲存為資產，因此主要是從資產主控台管理。
 translation-type: tm+mt
-source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
+source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 11%
@@ -133,8 +133,6 @@ ht-degree: 11%
    >1. 當內容頁面上已參考片段時，會顯示訊息。
       >
       >
-      >
-
    2. 使用「切換側面板」圖示可隱藏／顯 **示側面板** 。
 
 
