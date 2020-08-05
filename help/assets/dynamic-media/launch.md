@@ -564,7 +564,7 @@ Adobe Launch中所有可用的擴充功能都列在「擴充功能> **[!UICONTRO
 
 請參 [閱在Adobe Launch中建立屬性](#creating-a-property-in-adobe-launch)。
 
-安裝和安裝擴充功能後，至少會在「擴充功能>安裝」區域列出下列五個擴充功能（若您未追蹤視訊，則會列出四個擴充功能）。
+安裝和安裝擴充功能後，至少會在「擴充功能>安裝」區域列出下列五個擴充功能（若您未追蹤視訊則為四個）。
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
@@ -707,6 +707,7 @@ AEM設定包含下列兩個主要步驟：
    * Under the **[!UICONTROL Select a role for Experience Platform Launch API]** heading, select **[!UICONTROL Admin]**.
 
    * 在「為 **[!UICONTROL Experience Platform Launch API選取一或多個產品設定檔」標題下]** ，選取名為 **[!UICONTROL Launch - &lt;your_company_name>的產品設定檔]**。
+
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
 1. Click **[!UICONTROL Create integration]**.
@@ -739,98 +740,98 @@ AEM設定包含下列兩個主要步驟：
 
    * **[!UICONTROL 標題]** -輸入描述性帳戶標題。
    * **[!UICONTROL 授權伺服器]** -返回您先前開啟的「整合詳細資訊」頁面。 按一下「 **[!UICONTROL JWT]** 」頁籤。 複製伺服器名稱（不含路徑），如下所強調。
-   
-（範例伺服器名稱僅供圖例之用）****`https://ims-na1.adobelogin.com/`
 
-   返回「帳 **[!UICONTROL 戶]** 」頁面，然後將名稱貼到相應欄位。例如， `https://ims-na1.adobelogin.com/`（範例伺服器名稱僅供圖例之用）](assets/2019-07-25_15-01-53.png)   ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
+（範例伺服器名稱僅供圖例之用）   返回「帳 **[!UICONTROL 戶]** 」頁面，然後將名稱貼到相應欄位。例如， `https://ims-na1.adobelogin.com/`（範例伺服器名稱僅供圖例之用）
 
-
-1. _整合詳細資訊頁- JWT頁籤_]**************
-
-   **[!UICONTROL API金鑰]** -返回「整合詳細資訊」頁面。按一 **[!UICONTROL 下「概述]** 」標籤，然後按一下「 **[!UICONTROL API金鑰 (用戶端ID) 」欄位右側的]** 「復 **[!UICONTROL 制」]**。
-
-   返回「帳 **[!UICONTROL 戶]** 」頁面，然後將金鑰貼入個別欄位。](assets/2019-07-25_14-35-333.png)   ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
-
-
-1. _整合詳細資訊頁面_]******************
-
-   **[!UICONTROL 用戶端密碼]**-返回「整合詳細資訊」頁面。在「概述」 **[!UICONTROL 標籤中]** ，按一下「 **[!UICONTROL 擷取用戶端密碼」]**。在「用戶端密碼」欄位的 **[!UICONTROL 右側]** ，按一下「 **[!UICONTROL 複製」]**。
-
-1. 返回「帳 **[!UICONTROL 戶]** 」頁面，然後將金鑰貼入個別欄位。****
-
-   **[!UICONTROL Payload]** - Return to the Integration details page. 從「 **[!UICONTROL JWT]** 」標籤的「JWT裝載」欄位中，複製整個JSON物件程式碼。
-
-   返回「帳 **[!UICONTROL 戶]** 」頁面，然後將程式碼貼至個別欄位。](assets/2019-07-25_21-59-12.png)   ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
-
-
+   ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
    _整合詳細資訊頁- JWT頁籤_
 
-   ![「帳戶」頁面（所有欄位皆已填寫）的外觀將類似下列：](assets/2019-07-25_22-08-30.png)
+1. **[!UICONTROL API金鑰]** -返回「整合詳細資訊」頁面。按一 **[!UICONTROL 下「概述]** 」標籤，然後按一下「 **[!UICONTROL API金鑰 (用戶端ID) 」欄位右側的]** 「復 **[!UICONTROL 制」]**。
 
-1. ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)]******
+   返回「帳 **[!UICONTROL 戶]** 」頁面，然後將金鑰貼入個別欄位。
 
-   Near the upper-right corner of the **[!UICONTROL Account]** page, click **[!UICONTROL Create]**.
+   ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
+   _整合詳細資訊頁面_
 
-   在設定AEM IMS後，您現在會在「 **[!UICONTROL Adobe IMS設定」下列出新的IMSAccount]**。](assets/image2019-7-15_14-17-54.png)
+1. **[!UICONTROL 用戶端密碼]**-返回「整合詳細資訊」頁面。在「概述」 **[!UICONTROL 標籤中]** ，按一下「 **[!UICONTROL 擷取用戶端密碼」]**。在「用戶端密碼」欄位的 **[!UICONTROL 右側]** ，按一下「 **[!UICONTROL 複製」]**。
 
-## ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
+   返回「帳 **[!UICONTROL 戶]** 」頁面，然後將金鑰貼入個別欄位。
 
-1. 設定Adobe Launch Cloud以進行整合 {#configuring-adobe-launch-cloud-for-the-integration}]**
+1. **[!UICONTROL 裝載]** -返回「整合詳細資料」頁面。 從「 **[!UICONTROL JWT]** 」標籤的「JWT裝載」欄位中，複製整個JSON物件程式碼。
 
-   在AEM作者中，在左上角附近按一下「工具」圖示（槌子），然後按一下「 **[!UICONTROL Cloud Services > Adobe Launch Configurations」]**。](assets/2019-07-26_12-10-38.png)
+   返回「帳 **[!UICONTROL 戶]** 」頁面，然後將程式碼貼至個別欄位。
 
-1. ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)]**
+   ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
+   _整合詳細資訊頁- JWT頁籤_
 
-   在「 **[!UICONTROL Adobe Launch Configurations]** 」頁面的左側面板中，選取您要套用Adobe Launch Configuration的AEM網站。
+   「帳戶」頁面（所有欄位皆已填寫）的外觀將類似下列：
 
-   僅供圖例之用， **[!UICONTROL We.Retail]** Site會在下方的螢幕擷取中選取。](assets/2019-07-26_12-20-06.png)
+   ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
-1. ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)]**
-1. 在頁面左上角附近，按一下「建 **[!UICONTROL 立」]**。****
+1. Near the upper-right corner of the **[!UICONTROL Account]** page, click **[!UICONTROL Create]**.
 
-   * 在「建 **[!UICONTROL 立]** Adobe啟動設定」視窗的「一般資訊」頁面 (1/3頁) **** 上，填寫下列欄位：
+   在設定AEM IMS後，您現在會在「 **[!UICONTROL Adobe IMS設定」下列出新的IMSAccount]**。
 
-   * **[!UICONTROL 標題]** -輸入描述性配置標題。 For example, `We.Retail Launch cloud configuration`.](#configuring-aem-ims)
+   ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-   * **[!UICONTROL 關聯的Adobe IMS設定]** -選取您先前在設定AEM IMS中建 [立的IMS設定](#configuring-aem-ims)。]**
+## 設定Adobe Launch Cloud以進行整合 {#configuring-adobe-launch-cloud-for-the-integration}
+
+1. 在AEM作者中，在左上角附近按一下「工具」圖示（槌子），然後按一下「 **[!UICONTROL Cloud Services > Adobe Launch Configurations」]**。
+
+   ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
+
+1. 在「 **[!UICONTROL Adobe Launch Configurations]** 」頁面的左側面板中，選取您要套用Adobe Launch Configuration的AEM網站。
+
+   僅供圖例之用， **[!UICONTROL We.Retail]** Site會在下方的螢幕擷取中選取。
+
+   ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
+
+1. 在頁面左上角附近，按一下「建 **[!UICONTROL 立」]**。
+1. 在「建 **[!UICONTROL 立]** Adobe啟動設定」視窗的「一般資訊」頁面 (1/3頁) **** 上，填寫下列欄位：
+
+   * **[!UICONTROL 標題]** -輸入描述性配置標題。 For example, `We.Retail Launch cloud configuration`.
+
+   * **[!UICONTROL 關聯的Adobe IMS設定]** -選取您先前在設定AEM IMS中建 [立的IMS設定](#configuring-aem-ims)。
 
    * **[!UICONTROL 公司]** -從「公 **[!UICONTROL 司]** 」下拉式清單中，選取您的Experience Cloud公司。 清單會自動填入。
-   **[!UICONTROL 屬性]** -從「屬性」下拉式清單中，選取您先前建立的Adobe Launch屬性。 清單會自動填入。
 
-   完成所有欄位後，您的「一 **[!UICONTROL 般資訊]** 」頁面看起來會類似下列：](assets/image2019-7-15_14-34-23.png)
+   * **[!UICONTROL 屬性]** -從「屬性」下拉式清單中，選取您先前建立的Adobe Launch屬性。 清單會自動填入。
+   完成所有欄位後，您的「一 **[!UICONTROL 般資訊]** 」頁面看起來會類似下列：
 
-1. ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)]**
-1. 在左上角附近，按一下「下 **[!UICONTROL 一步]**」。****
+   ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
-   在「建 **[!UICONTROL 立]** Adobe啟動設定」視窗的「預備」頁面 (2/3頁) **** 上，填入下列欄位：
+1. 在左上角附近，按一下「下 **[!UICONTROL 一步]**」。
+1. 在「建 **[!UICONTROL 立]** Adobe啟動設定」視窗的「預備」頁面 (2/3頁) **** 上，填入下列欄位：
 
    在「程 **[!UICONTROL 式庫URI]** 」欄位中，檢查Adobe Launch程式庫的測試版本位置。AEM會自動填入此欄位。
 
-   >[!NOTE]僅供圖例之用，此步驟將使用部署至Adobe CDN的Adobe Launch程式庫。
-   >
+   僅供圖例之用，此步驟將使用部署至Adobe CDN的Adobe Launch程式庫。
+
    >[!NOTE]
    >
+   >檢查以確定自動填入的庫URI（統一資源標識符）未格式錯誤。 如有必要，請修正它，使URI代表通訊協定相對URI。 就是從雙正斜線開始。
    >
-   >檢查以確定自動填入的庫URI（統一資源標識符）未格式錯誤。 如有必要，請修正它，使URI代表通訊協定相對URI。 就是從雙正斜線開始。`//assets.adobetm.com/launch-xxxx`
+   >
+   >For example: `//assets.adobetm.com/launch-xxxx`.
 
-   For example: `//assets.adobetm.com/launch-xxxx`.]****************
+   您的 **[!UICONTROL 測試頁]** ，看起來應類似下列。請注意，未 **[!UICONTROL 設定「]** Archive and **[!UICONTROL Load Library Assorly]** (存檔 ***和載入庫非同步*** )」選項：
 
-   您的 **[!UICONTROL 測試頁]** ，看起來應類似下列。請注意，未 **[!UICONTROL 設定「]** Archive and **[!UICONTROL Load Library Assorly]** (存檔 ***和載入庫非同步*** )」選項：](assets/image2019-7-15_15-21-8.png)
+   ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
-1. ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)]**
-1. 在右上角附近，按一下「下 **[!UICONTROL 一步]**」。********
+1. 在右上角附近，按一下「下 **[!UICONTROL 一步]**」。
 1. 在「建 **[!UICONTROL 立]** Adobe Launch Configuration **[!UICONTROL 」視窗的「生產」頁面 (3/3頁) 上，視需要修正自動填入的生產URI，就像在上一個「測試」頁面上所做的]****** 一樣。
+1. 在右上角附近，按一下「建 **[!UICONTROL 立」]**。
 
-   在右上角附近，按一下「建 **[!UICONTROL 立」]**。
+   您的新Adobe Launch Cloud設定現在已建立並列在您的網站旁。
 
-1. 您的新Adobe Launch Cloud設定現在已建立並列在您的網站旁。****
+1. 選取您的新Adobe Launch Cloud設定（選取時，設定標題左側會出現核取標籤）。 在工具列上，按一下「 **[!UICONTROL 發佈」]**。
 
-   選取您的新Adobe Launch Cloud設定（選取時，設定標題左側會出現核取標籤）。 在工具列上，按一下「 **[!UICONTROL 發佈」]**。](assets/image2019-7-15_15-47-6.png)
-
-![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
+   ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
 目前，AEM作者不支援Dynamic Media Viewers與Adobe Launch的整合。
 
 不過，AEM發佈節點也支援它。 AEM發佈會使用Adobe Launch Cloud設定的預設設定，來使用Adobe Launch的生產環境。 因此，在測試期間，每次都必須將Adobe Launch程式庫更新從「開發」推送至「生產」環境。
 
-在上述AEM發佈的Adobe Launch Cloud設定中，指定Adobe Launch程式庫的「開發」或「測試URL」，即可解決此限制。 如此，AEM發佈節點就會使用Adobe Launch程式庫的「開發」或「測試」版本。[-ERR:REF-NOT-FOUND-
+在上述AEM發佈的Adobe Launch Cloud設定中，指定Adobe Launch程式庫的「開發」或「測試URL」，即可解決此限制。 如此，AEM發佈節點就會使用Adobe Launch程式庫的「開發」或「測試」版本。
+
+如需 [設定Adobe Launch Cloud設定的詳細資訊，請參閱「透過Adobe I/O整合AEM與Adobe Launch](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) 」。
