@@ -2,7 +2,7 @@
 title: 整合 Adobe Target
 description: '整合 Adobe Target '
 translation-type: tm+mt
-source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
+source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
@@ -14,14 +14,14 @@ ht-degree: 1%
 
 Adobe Target是Adobe Marketing Cloud的一部分，可讓您透過跨所有通道的定位和測量，提高內容關聯性。 將Adobe Target和AEM整合為雲端服務需要：
 
-* 使用Touch UI在AEM中建立Analytics設定作為雲端服務（需要IMS設定）。
+* 使用Touch UI在AEM中建立Target設定作為雲端服務（需要IMS設定）。
 * 在 [Adobe Launch中新增及設定Adobe Target做為擴充功能](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
 在AEM頁面（JS程式庫／標籤）中管理Analytics和Target的用戶端屬性時，Adobe Launch是必要的。 儘管如此，Launch需要整合，才能「體驗定位」。 若是「體驗片段」匯出至Target，您只需要Adobe Target設定和IMS。
 
 >[!NOTE]
 >
->Adobe Experience Manager是Cloud Service客戶，如果客戶目前沒有Target帳戶，可以要求存取Target Foundation Pack for Experience Cloud。 Foundation Pack提供Target的卷限制使用。
+>Adobe Experience Manager是Cloud Service客戶，如果客戶目前沒有Target帳戶，可以要求存取Target Foundation Pack for Experience Cloud。 Foundation Pack提供對Target的卷有限使用。
 
 ## 建立Adobe Target設定 {#create-configuration}
 
