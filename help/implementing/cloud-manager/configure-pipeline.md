@@ -2,20 +2,20 @@
 title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
-source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 2%
+source-wordcount: '578'
+ht-degree: 1%
 
 ---
 
 
-# 配置CI-CD管道 {#configure-ci-cd-pipeline}
+# 設定 CI-CD 管線 {#configure-ci-cd-pipeline}
 
 
 ## 瞭解流程 {#understanding-the-flow}
 
-您可以從 **Cloud Manager** UI [!UICONTROL 的「Pipeline Settings] 」 (管道設定) 圖格來設定管道。
+You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
 
 部署管理器負責設定管道。 執行此操作時，首先從 **Git Repository中選擇一個分支**。
 
@@ -59,6 +59,7 @@ ht-degree: 2%
 
    * **手動** -使用UI手動啟動管線。
    * **On Git Changes** —— 每當有提交添加到配置的git分支時，啟動CI/CD管線。 即使選取此選項，也始終可以手動啟動管線。
+
    在管線設定或編輯期間，「部署管理器」(Deployment Manager)可以選擇在任何質量門中遇到重要故障時定義管線的行為。
 
    這對希望實現更自動化流程的客戶非常有用。 可用的選項包括：
