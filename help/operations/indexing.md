@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1474'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # 內容搜尋與索引 {#indexing}
 
-## AEM As a Cloud Service的變更 {#changes-in-aem-as-a-cloud-service}
+## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
 以AEM為雲端服務，Adobe將從AEM實例導向服務型檢視，並在Cloud Manager的CI/CD管道驅動下，從AEM實例導向檢視。 必須在部署前先指定「索引」設定，而非在單一AEM例項上設定和維護「索引」。 生產中的配置更改明顯違反了CI/CD策略。 索引更改也是如此，因為如果未指定測試並重新編製索引，則可能會影響系統穩定性和效能，然後再將它們投入生產。
 
@@ -105,7 +105,7 @@ AS NOTE: the above is internal for now.
 * **/content**
 * */libs（唯讀）*
 * **/oak:index**
-* **/oak:index/acme**
+* **/oak:index/acme。**
 * **/jcr:system**
 * **/system**
 * **/var**
@@ -130,8 +130,8 @@ AS NOTE: the above is internal for now.
 |---|---|---|---|
 | /oak:index/damAssetLucene | 是 | 是 | 否 |
 | /oak:index/damAssetLucene-custom-1 | 是（自訂） | 否 | 是 |
-| /oak:index/acmeProduct-custom-1 | 否 | 是 | 否 |
-| /oak:index/acmeProduct-custom-2 | 否 | 否 | 是 |
+| /oak:index/acme.product-custom-1 | 否 | 是 | 否 |
+| /oak:index/acme.product-custom-2 | 否 | 否 | 是 |
 | /oak:index/cqPageLucene | 是 | 是 | 是 |
 
 每次變更索引時，版本號碼都會遞增。 為避免自訂索引名稱與產品本身的索引名稱衝突，自訂索引以及對現成可用索引的變更必須以結尾 `-custom-<number>`。
@@ -153,26 +153,26 @@ AS NOTE: the above is internal for now.
 
 ### 刪除索引 {#removing-an-index}
 
-如果要在應用程式的較新版本中刪除索引，則可以定義一個空索引（一個沒有要索引的資料的索引），並使用新名稱。 例如，您可以為它命名 `/oak:index/acmeProduct-custom-3`。 這將替換索引 `/oak:index/acmeProduct-custom-2`。 系統 `/oak:index/acmeProduct-custom-2` 刪除後，也可以刪除空 `/oak:index/acmeProduct-custom-3` 索引。
+如果要在應用程式的較新版本中刪除索引，則可以定義一個空索引（一個沒有要索引的資料的索引），並使用新名稱。 例如，您可以為它命名 `/oak:index/acme.product-custom-3`。 這將替換索引 `/oak:index/acme.product-custom-2`。 系統 `/oak:index/acme.product-custom-2` 刪除後，也可以刪除空 `/oak:index/acme.product-custom-3` 索引。
 
 ### 添加索引 {#adding-an-index}
 
-若要新增名為&quot;/oak:index/acmeProduct-custom-1&quot;的索引，以便用於新版本的應用程式和更新版本，索引必須依下列方式設定：
+若要新增名為&quot;/oak:index/acme.product-custom-1&quot;的索引，以便用於新版本的應用程式和更新版本，索引必須依下列方式設定：
 
-`*mk.*assetLuceneIndex-1-custom-1`
+`acme.product-1-custom-1`
 
-這可借由將自訂識別碼預先加入索引名稱，接著加上點(**.**). 識別碼必須介於1到4個字元之間。
+這可借由將自訂識別碼預先加入索引名稱，後面接著點(**`.`**)來運作。 識別碼長度應介於2到5個字元之間。
 
 如上所述，這可確保索引僅供新版本的應用程式使用。
 
 ### 更改索引 {#changing-an-index}
 
-更改現有索引時，需要使用更改的索引定義添加新索引。 例如，請考慮變更現有索引&quot;/oak:index/acmeProduct-custom-1&quot;。 舊索引儲存在下面 `/oak:index/acmeProduct-custom-1`，新索引儲存在下面 `/oak:index/acmeProduct-custom-2`。
+更改現有索引時，需要使用更改的索引定義添加新索引。 例如，請考慮變更現有索引&quot;/oak:index/acme.product-custom-1&quot;。 舊索引儲存在下面 `/oak:index/acme.product-custom-1`，新索引儲存在下面 `/oak:index/acme.product-custom-2`。
 
 舊版應用程式使用下列組態：
 
-`/oak:index/acmeProduct-custom-1`
+`/oak:index/acme.product-custom-1`
 
 新版應用程式使用下列（已變更）組態：
 
-`/oak:index/acmeProduct-custom-2`
+`/oak:index/acme.product-custom-2`
