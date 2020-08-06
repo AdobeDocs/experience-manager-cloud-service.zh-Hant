@@ -3,9 +3,9 @@ title: 設定並使用資產微服務進行資產處理
 description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2522'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 # 使用資產微型服務和處理設定檔 {#get-started-using-asset-microservices}
 
 <!--
-* Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
+* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/workers process.
+* Detailed list of what file formats and what processing is supported by which workflows/application process.
 * How/where can admins check what's already configured and provisioned.
 * How to create new config or request for new provisioning/purchase.
 
@@ -47,8 +47,8 @@ Experience Manager可提供下列處理層級。
 | 選項 | 說明 | 涵蓋的使用案例 |
 |---|---|---|
 | [預設設定](#default-config) | 它可以按原樣使用，而且不能修改。 此設定提供非常基本的轉譯產生功能。 | <ul> <li>使用者介面使 [!DNL Assets] 用的標準縮圖（48、140和319像素） </li> <li> 大型預覽（網頁轉譯- 1280 px） </li><li> 中繼資料和文字擷取。</li></ul> |
-| [自訂設定](#standard-config) | 由管理員透過使用者介面設定。 延伸預設選項，提供產生轉譯的更多選項。 擴充現成可用的工作器，以提供不同的格式和轉譯。 | <ul><li>FPO轉譯。 </li> <li>變更影像的檔案格式和解析度</li> <li> 有條件地套用至已設定的檔案類型。 </li> </ul> |
-| [自訂設定檔](#custom-config) | 由管理員透過使用者介面設定，以透過自訂工作者使用自訂代碼來叫 [用資產計算服務](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 支援雲端原生和可擴充方式中更複雜的需求。 | 請參閱 [允許的使用案例](#custom-config)。 |
+| [自訂設定](#standard-config) | 由管理員透過使用者介面設定。 延伸預設選項，提供產生轉譯的更多選項。 擴充現成可用的選項，以提供不同的格式和轉譯。 | <ul><li>FPO轉譯。 </li> <li>變更影像的檔案格式和解析度</li> <li> 有條件地套用至已設定的檔案類型。 </li> </ul> |
+| [自訂設定檔](#custom-config) | 由管理員透過使用者介面設定，以透過自訂應用程式使用自訂代碼來叫 [用Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 支援雲端原生和可擴充方式中更複雜的需求。 | 請參閱 [允許的使用案例](#custom-config)。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -74,7 +74,7 @@ Asset microservices支援各種檔案格式，以處理、產生轉譯或擷取�
 
 * **MIME類型包含規則**: 當處理具有特定MIME類型的資產時，會先根據轉譯規格的已排除MIME類型值檢查MIME類型。 如果符合該清單，則不會為資產（封鎖的清單）產生此特定轉譯。 否則，會根據包含的MIME類型檢查MIME類型，如果與清單匹配，則會生成格式副本（允許清單）。
 
-* **特殊FPO轉譯**: 將大型資產放入檔案時， [!DNL Experience Manager] 創 [!DNL Adobe InDesign] 意專業人員會在放入資產後等 [待相當長時間](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同時，用戶被阻止使用 [!DNL InDesign]。 這會中斷創意流程，並對使用者體驗造成負面影響。 Adobe可讓檔案中暫時放置小型轉譯， [!DNL InDesign] 以開始處理，稍後可以隨選取代為完整解析度的資產。 [!DNL Experience Manager] 提供僅用於放置(FPO)的轉譯。 這些FPO轉譯檔案大小較小，但外觀比例相同。
+* **特殊FPO轉譯**: 將大型資產放入檔案時， [!DNL Experience Manager] 創 [!DNL Adobe InDesign] 意專業人員會在放入資產後等 [待相當長時間](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同時，用戶被阻止使用 [!DNL InDesign]。 這會中斷創意流程，並對使用者體驗造成負面影響。 Adobe可讓檔案中暫時放置小型轉譯， [!DNL InDesign] 以開始處理，稍後可以隨選取代為完整解析度資產。 [!DNL Experience Manager] 提供僅用於放置(FPO)的轉譯。 這些FPO轉譯檔案大小較小，但外觀比例相同。
 
 處理設定檔可包含FPO（僅限放置）轉譯。 請參 [!DNL Adobe Asset Link] 閱文 [件](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html) ，瞭解您是否需要為處理設定檔開啟它。 如需詳細資訊，請參 [閱Adobe Asset Link完整檔案](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。
 
@@ -113,7 +113,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 <!-- **TBD items**:
 
 * Overall cross-linking with the extensibility content.
-* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
 * Mention mapping of service parameters. Link to compute service article.
 * Review from flow perspective shared in Jira ticket.
 -->
@@ -122,11 +122,11 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 >[!NOTE]
 >
->Adobe建議僅在業務需要無法使用預設設定或標準設定檔時使用自訂工作者。
+>Adobe建議僅在無法使用預設組態或標準設定檔來完成業務需求時，才使用自訂應用程式。
 
-它可將影像、視訊、檔案和其他檔案格式轉換為不同的轉譯，包括縮圖、擷取的文字和中繼資料以及封存。
+它可將影像、視訊、檔案和其他檔案格式轉換為不同的轉譯，包括縮圖、擷取的文字和中繼資料，以及封存。
 
-開發人員可使用 [!DNL Asset Compute Service] 來 [建立符合支援使用案例](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) 的自訂工作者。 [!DNL Experience Manager] 可以使用管理員配置的自定義配置檔案從用戶介面調用這些自定義工作器。 [!DNL Asset Compute Service] 支援以下調用外部服務的使用案例：
+開發人員可使用 [!DNL Asset Compute Service] 來建 [立自訂應用程式](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) ，以符合支援的使用案例。 [!DNL Experience Manager] 可以使用管理員設定的自訂設定檔，從使用者介面叫用這些自訂應用程式。 [!DNL Asset Compute Service] 支援以下調用外部服務的使用案例：
 
 * 使用 [!DNL Adobe Photoshop]的 [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ，並將結果儲存為轉譯。
 * 叫用協力廠商系統以更新資料，例如PIM系統。
@@ -135,22 +135,24 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 >[!NOTE]
 >
->您無法使用自訂工作者編輯標準中繼資料。 您只能修改自訂中繼資料。
+>您無法使用自訂應用程式來編輯標準中繼資料。 您只能修改自訂中繼資料。
 
 ### 建立自訂描述檔 {#create-custom-profile}
 
 若要建立自訂描述檔，請遵循下列步驟：
 
 1. 管理員可存 **[!UICONTROL 取「工具>資產>處理設定檔]**」。 按一下&#x200B;**[!UICONTROL 建立]**。
-1. Click on **[!UICONTROL Custom]** tab. 按一 **[!UICONTROL 下新增]**。 提供所要的轉譯檔案名稱。
+1. 按一下 **[!UICONTROL 自訂]** 標籤。 按一 **[!UICONTROL 下新增]**。 提供所要的轉譯檔案名稱。
 1. 提供下列資訊。
 
    * 每個轉譯的檔案名稱及支援的副檔名。
-   * [Firefly自訂應用程式的端點URL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html)。 應用程式必須與Experience Manager帳戶來自相同的組織。
-   * 添加服務參數以 [將額外資訊或參數傳遞到定制工作器](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)。
+   * [Firefly自訂應用程式的端點URL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)。 應用程式必須與Experience Manager帳戶來自相同的組織。
+   * 新增服務參數， [將額外資訊或參數傳遞至自訂應用程式](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)。
    * 包含和排除的MIME類型，以定義描述檔的適用性。
 
    按一下&#x200B;**[!UICONTROL 「儲存」]**。
+
+如果自訂應用程式是使用處理設定檔來設定，就會取得所有提供的檔案。 應用程式必須篩選檔案。
 
 >[!CAUTION]
 >
@@ -160,11 +162,11 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 為了說明自訂描述檔的使用情形，我們考慮將一些自訂文字套用至促銷活動影像的使用案例。 您可以建立處理設定檔，以運用Photoshop API來編輯影像。
 
-資產計算服務整合允許Experience Manager使用服務參數欄位將這些參數傳遞 [!UICONTROL 給自定義工] 。 然後，自訂工作者會叫用Photoshop API，並將這些值傳遞至API。 例如，您可以傳遞字型名稱、文字顏色、文字粗細和文字大小，將自訂文字新增至促銷活動影像。
+資產計算服務整合可讓Experience Manager使用「服務參數」欄位將這些參數傳遞至自訂 [!UICONTROL 應用程式] 。 然後自訂應用程式會叫用Photoshop API，並將這些值傳遞至API。 例如，您可以傳遞字型名稱、文字顏色、文字粗細和文字大小，將自訂文字新增至促銷活動影像。
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*圖： 使用[!UICONTROL 服務參數欄位]，將添加的資訊傳遞給構建到自定義工作器中的預定義參數。*
+*圖： 使用[!UICONTROL 服務參數欄位]，將新增的資訊傳送至自訂應用程式內建的預先定義參數。*
 
 當促銷活動影像上傳至套用此處理設定檔的檔案夾時，會以字型文字更 `Jumanji` 新影 `Arial-BoldMT` 像。
 
@@ -243,5 +245,5 @@ Custom Workflow Runner服務(`com.adobe.cq.dam.processor.nui.impl.workflow.Custo
 >
 >* [資產計算服務簡介](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。
 >* [瞭解擴充性，以及何時使用](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
->* [如何建立自訂工作者](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html)。
+>* [如何建立自訂應用程式](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)。
 
