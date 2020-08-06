@@ -2,10 +2,10 @@
 sub-product: AEM 雲端服務發行說明
 user-guide-title: AEM 雲端服務發行說明
 user-guide-description: This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.
-translation-type: ht
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: ht
-source-wordcount: '55'
+translation-type: tm+mt
+source-git-commit: 7f089e15deff87706e0ed3c38630b52832b277d4
+workflow-type: tm+mt
+source-wordcount: '58'
 ht-degree: 100%
 
 ---
@@ -15,7 +15,8 @@ ht-degree: 100%
 
 + [發行資訊](/help/release-notes/home.md)
 + 發行說明 {#release-notes}
-   + [最新發行說明 (2020.7.0)](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   + [最新發行說明 (2020.8.0)](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   + [2020.7.0 版發行說明](/help/release-notes/release-notes-cloud/release-notes-2020-7-0.md)
    + [2020.6.0 版發行說明](/help/release-notes/release-notes-cloud/release-notes-2020-6-0.md)
    + [2020.5.0 版發行說明](/help/release-notes/release-notes-cloud/release-notes-2020-5-0.md)
    + [2020.4.0 版發行說明](/help/release-notes/release-notes-cloud/release-notes-2020-4-0.md)
