@@ -2,10 +2,10 @@
 title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 2%
+source-wordcount: '772'
+ht-degree: 0%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 2%
 
 * **生產管道**:
 
-   只有建立生產和舞台環境後，才可添加生產管線。
+   只有建立生產和舞台環境集後，才可添加生產管線。
 
-   有關詳細 [資訊，請參閱設定管線](configure-pipeline.md#setting-up-the-pipeline) 。
+   如需詳細 [資訊，請參閱「設定生產管道](configure-pipeline.md#setting-up-the-pipeline) 」。
 
 * **非生產管道**:
 
@@ -26,23 +26,19 @@ ht-degree: 2%
 
    如需詳 [細資訊，請參閱非生產與程式碼僅品質管道](configure-pipeline.md#non-production-pipelines) 。
 
-## 瞭解流程 {#understanding-the-flow}
+>[!NOTE]
+>要配置管線，您必須：
+> * 定義將啟動管線的觸發器。
+> * 定義控制生產部署的參數。
+> * 配置效能測試參數。
 
-您可以從 **Cloud Manager** UI [!UICONTROL 的「Pipeline Settings] 」 (管道設定) 圖格來設定管道。
 
-部署管理器負責設定管道。 執行此操作時，首先從 **Git Repository中選擇一個分支**。
+## 設定生產管線 {#setting-up-production-pipeline}
 
-要配置管線，用戶必須：
+部署管理員負責設定生產管道。
 
-* 定義將啟動管線的觸發器。
-* 定義控制生產部署的參數。
-* 配置效能測試參數。
-
-## 設定管線 {#setting-up-the-pipeline}
-
->[!CAUTION]
->
->在完成一個程式建立且Git儲存庫至少有一個分支之前，無法設定管線。
+>[!NOTE]
+>在程式建立完成、Git儲存庫至少具有一個分支並且建立了「生產」和「階段」環境集之前，不能設定「生產管線」。
 
 在開始部署程式碼之前，您必須從 [!UICONTROL Cloud Manager設定管道設定]。
 
