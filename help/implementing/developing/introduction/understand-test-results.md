@@ -2,7 +2,7 @@
 title: 瞭解您的測試結果——雲端服務
 description: 瞭解測試結果——雲端服務
 translation-type: tm+mt
-source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 3%
@@ -176,7 +176,9 @@ Cloud Manager中的內容審核可確保網站上的使用者數位體驗維持�
 #### 頁面層級分數 {#page-level-scores}
 
 透過鑽取任何測試，可檢視更詳細的頁面等級計分。 使用者將能夠查看個別頁面在特定測試中的分數，以及與上次測試執行時的變更。
-按一下任何個別頁面的「詳細資訊」，將會提供已評估頁面元素的相關資訊，並在偵測到改善機會時，提供修正問題的指引。 Google Lighthouse提供測試的詳細資訊和相關指引。
+
+按一下任何個別頁面的詳細資訊，將會提供已評估頁面元素的資訊，並指引您在偵測到改善機會時修正問題。 Google Lighthouse提供測試的詳細資訊和相關指引。
+
 ![](assets/page-level-scores.png)
 
 ## 本地測試執行 {#local-test-execution}
