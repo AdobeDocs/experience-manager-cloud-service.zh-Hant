@@ -2,7 +2,7 @@
 title: 部署您的程式碼——雲端服務
 description: 部署您的程式碼——雲端服務
 translation-type: tm+mt
-source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
+source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -59,7 +59,7 @@ ht-degree: 3%
    * 內容審核： 管線中的此步驟始終存在，不能跳過。 當執行生產管線時，在執行檢查的自訂功能測試後，會包含內容稽核步驟。 所設定的頁面將會提交至服務並進行評估。 這些結果是提供資訊的，讓使用者可以查看目前和先前的分數之間的分數和變更。 此見解對於判斷目前部署中是否會引入回歸，十分有用。
 如需詳細 [資訊，請參閱瞭解內容](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 審核結果。
 
-      ![](assets/stage-testing.png)
+      ![](assets/testing-tab.png)
 
 
 
