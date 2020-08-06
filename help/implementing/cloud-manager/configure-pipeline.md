@@ -2,16 +2,28 @@
 title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
-source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
+source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 3%
+source-wordcount: '770'
+ht-degree: 2%
 
 ---
 
 
 # 設定 CI-CD 管線 {#configure-ci-cd-pipeline}
 
+在Cloud Manager中，有兩種類型的管道：
+
+* **生產管道**:
+只有建立生產和舞台環境後，才可添加生產管線。
+
+   有關詳細 [資訊，請參閱設定管線](configure-pipeline.md#setting-up-the-pipeline) 部分。
+
+* **非生產管道**:
+
+   您可從Cloud Manager的使用者介面，從「 **概述** 」頁面新增非生產管道。
+
+   如需詳 [細資訊，請參閱非生產與程式碼僅品質管道](configure-pipeline.md#non-production-pipelines) 。
 
 ## 瞭解流程 {#understanding-the-flow}
 
@@ -49,11 +61,11 @@ ht-degree: 3%
 
 1. 將顯 **示「設定管線** 」螢幕。 選擇分支，然後按一下「下 **一步」**。
 
-   ![](assets/set-up-pipeline2.png)
+   ![](assets/setup-pipeline-1.png)
 
 1. 設定您的部署選項。
 
-   ![](assets/set-up-pipeline3.png)
+   ![](assets/setup-pipeline-2.png)
 
    可定義觸發器以啟動管線：
 
@@ -78,14 +90,18 @@ ht-degree: 3%
 
    如需詳細 [資訊，請參閱瞭解內容審核結果](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 。
 
-   ![](assets/set-up-pipeline4.png)
+   ![](assets/content-audit-1.png)
 
-1. 按一下&#x200B;**「儲存」**。「概 *述」頁* ，現在會顯示「 **部署您的計畫** 」卡。 按一 **下「部署** 」按鈕以部署您的程式。
+   按一下「 **新增頁面覆寫** 」，提供要包含在「內容審核」中的URL路徑。 新增路徑後，按一下「 **儲存**」。
+
+   ![](assets/content-audit2.png)
+
+1. 從「編 **輯管線** 」(Edit Pipeline **** )螢幕中按一下「保存」(Save)。 「概 **述」頁** ，現在會顯示「 **部署您的計畫** 」卡。 按一 **下「部署** 」按鈕以部署您的程式。
 
    ![](assets/configure-pipeline5.png)
 
 
-## 非生產和代碼純質量管道
+## 非生產和代碼純質量管道 {#non-production-pipelines}
 
 除了部署到生產階段的主管道外，客戶還可以設定額外的管道，即非生 **產管道**。 這些管線始終執行構建和代碼質量步驟。 他們也可以選擇性地部署至Adobe Managed Services環境。
 
