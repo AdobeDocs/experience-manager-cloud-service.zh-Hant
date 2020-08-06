@@ -2,10 +2,10 @@
 title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
-source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
+source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 1%
+source-wordcount: '676'
+ht-degree: 3%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 瞭解流程 {#understanding-the-flow}
 
-You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+您可以從 **Cloud Manager** UI [!UICONTROL 的「Pipeline Settings] 」 (管道設定) 圖格來設定管道。
 
 部署管理器負責設定管道。 執行此操作時，首先從 **Git Repository中選擇一個分支**。
 
@@ -69,7 +69,14 @@ You can configure your production pipeline from the **Pipeline Settings** tile i
    * **立即繼續** -如果選中此選項，則每當出現「重要」(Impertient)故障時，管線將自動繼續。 這實際上是在模擬用戶手動批准每個故障。
 
 
-1. 按一 **下** 「下一步」 **，存取「測試** 」標籤，以定義您方案的測試准則。
+1. 生產管線設定包含標示為「內容稽核」的第 **三個標籤**。
+
+   此選項提供應一律包含在「內容稽核」中之URL路徑的表格。 使用者可以手動輸入要包含的URL路徑。 最多可包含25列。 如果使用者在此區段中未提交任何頁面，預設會將網站的首頁納入內容稽核。
+
+   >[!NOTE]
+   > 設定的頁面會提交至服務，並根據效能、協助工具、搜尋引擎最佳化(SEO)、最佳實務和PWA（漸進式網頁應用程式）測試進行評估。
+
+   如需詳細 [資訊，請參閱瞭解內容審核結果](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 。
 
    ![](assets/set-up-pipeline4.png)
 
