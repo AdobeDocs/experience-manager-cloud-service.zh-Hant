@@ -2,7 +2,7 @@
 title: 2020.7.0版雲端服務 [!DNL Adobe Experience Manager] 的發行說明。
 description: '[!DNL Adobe Experience Manager]作為2020.7.0版雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: 7f089e15deff87706e0ed3c38630b52832b277d4
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 37%
@@ -34,7 +34,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### 新功能 {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] 是可擴充且可擴充的服務，可處理資產。 管理員可以設定Experience Manager來叫用使用建立的自訂工作 [!DNL Asset Compute Service]器。 開發人員可使用本服務來建立專業的自訂工作者，以配合複雜的使用案例。 此網站服務可針對不同的檔案類型產生縮圖、從Adobe檔案格式產生高品質的影像轉譯、編碼視訊（未來）、擷取中繼資料、擷取全文做為索引的先驅，並透過所有可用的Sensei服務執行資產。 請參 [閱使用資產微服務和處理配置檔案](/help/assets/asset-microservices-configure-and-use.md)。
+* [!DNL Asset Compute Service] 是可擴充且可擴充的服務，可處理資產。 管理員可以設定Experience Manager來叫用使用建立的自訂應用程式 [!DNL Asset Compute Service]。 開發人員可使用本服務來建立專業的自訂應用程式，以配合複雜的使用案例。 此網站服務可針對不同的檔案類型產生縮圖、從Adobe檔案格式產生高品質的影像轉譯、編碼視訊（未來）、擷取中繼資料、擷取全文做為索引的先驅，並透過所有可用的Sensei服務執行資產。 請參 [閱使用資產微服務和處理配置檔案](/help/assets/asset-microservices-configure-and-use.md)。
 
 * 將初始配置 [!DNL Dynamic Media] 改 [!DNL Experience Manager] 進為雲端服務，使其更強穩。 現在，它可為管理員提供流程的進度。
 
