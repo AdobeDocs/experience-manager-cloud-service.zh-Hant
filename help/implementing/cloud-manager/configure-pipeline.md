@@ -2,9 +2,9 @@
 title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
-source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '793'
 ht-degree: 2%
 
 ---
@@ -15,9 +15,10 @@ ht-degree: 2%
 在Cloud Manager中，有兩種類型的管道：
 
 * **生產管道**:
-只有建立生產和舞台環境後，才可添加生產管線。
 
-   有關詳細 [資訊，請參閱設定管線](configure-pipeline.md#setting-up-the-pipeline) 部分。
+   只有建立生產和舞台環境後，才可添加生產管線。
+
+   有關詳細 [資訊，請參閱設定管線](configure-pipeline.md#setting-up-the-pipeline) 。
 
 * **非生產管道**:
 
@@ -83,6 +84,8 @@ ht-degree: 2%
 
 1. 生產管線設定包含標示為「內容稽核」的第 **三個標籤**。
 
+   ![](assets/content-audit-1.png)
+
    此選項提供應一律包含在「內容稽核」中之URL路徑的表格。 使用者可以手動輸入要包含的URL路徑。 最多可包含25列。 如果使用者在此區段中未提交任何頁面，預設會將網站的首頁納入內容稽核。
 
    >[!NOTE]
@@ -90,9 +93,10 @@ ht-degree: 2%
 
    如需詳細 [資訊，請參閱瞭解內容審核結果](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 。
 
-   ![](assets/content-audit-1.png)
-
    按一下「 **新增頁面覆寫** 」，提供要包含在「內容審核」中的URL路徑。 新增路徑後，按一下「 **儲存**」。
+
+   >[!NOTE]
+   >若要啟動「內容稽核」步驟，使用者必須編輯管線，並可選擇新增頁面。 如需詳細 [資訊，請參閱](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 「已知問題」。
 
    ![](assets/content-audit2.png)
 
