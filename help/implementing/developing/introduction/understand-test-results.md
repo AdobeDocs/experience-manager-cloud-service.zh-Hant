@@ -2,9 +2,9 @@
 title: 瞭解您的測試結果——雲端服務
 description: 瞭解測試結果——雲端服務
 translation-type: tm+mt
-source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1486'
 ht-degree: 3%
 
 ---
@@ -12,12 +12,14 @@ ht-degree: 3%
 
 # 了解測試結果 {#understand-test-results}
 
-Cloud Manager for Cloud Services管道執行將支援對舞台環境運行的測試的執行。 這與在「建立和裝置測試」步驟中執行的測試相反，這些測試會離線執行，而且無法存取任何執行中的AEM環境。
+使用 Cloud Manager 進行雲端服務管線執行時，會支援針對預備環境執行的測試。這與在「建立和裝置測試」步驟中執行的測試相反，這些測試會離線執行，而且無法存取任何執行中的AEM環境。
 在此內容中執行的測試有兩種類型：
 * 客戶撰寫的測試
 * Adobe撰寫的測試
+* Google Lighthouse提供的開放原始碼工具
 
-這兩種測試都可在專為執行這些類型測試而設計的容器化基礎架構中執行。
+   >[!NOTE]
+   > 客戶撰寫的測試和Adobe撰寫的測試都可在專為執行這些類型測試而設計的容器化基礎架構中執行。
 
 
 ## 程式碼品質測試 {#code-quality-testing}
@@ -132,6 +134,51 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >[!NOTE]
 >「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。這些記錄檔不包含實際AEM執行階段程式的記錄檔——這些記錄檔可使用一般的「下載」或「尾部記錄檔」功能來存取。 如需詳細 [資訊，請參閱「存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md) 」。
 
+## 內容審核測試 {#content-audit-testing}
+
+「內容審核」是Cloud Manager Sites Production管道中的一項功能，由Google的開放原始碼工具Lighthouse提供支援。 所有Cloud Manager生產管道都啟用了此功能。
+
+它可驗證部署程式，並協助確保已部署變更：
+
+1. 符合效能、協助工具、最佳實務、搜尋引擎最佳化(SEO)和PWA（漸進式網頁應用程式）的基準標準。
+
+1. 不要在這些維度中加入回歸。
+
+Cloud Manager中的內容審核可確保網站上的使用者數位體驗維持在最高標準。 這些結果是提供資訊的，讓使用者可以查看目前和先前的分數之間的分數和變更。 此見解對於判斷目前部署中是否會引入回歸，十分有用。
+
+### 瞭解內容審核結果 {#understanding-content-audit-results}
+
+「內容審核」透過「生產管道」執行頁面提供匯總和詳細的頁面層級測試結果。
+
+* 匯總層級量度會測量已稽核之頁面的平均分數。
+* 您也可以透過向下切入來取得個別頁面層級的分數。
+* 您可以取得分數的詳細資訊，以查看個別測試的結果，以及如何修正內容審核期間發現的任何問題的指引。
+* 測試結果的歷史記錄保存在Cloud Manager中，因此客戶可以查看在管道運行中引入的更改是否包含先前運行的任何回歸。
+
+#### 匯總分數 {#aggregate-scores}
+
+每個測試類型（效能、協助工具、SEO、最佳實務和PWA）都有匯總的等級分數。
+
+匯總層級分數會取得執行中所包含之頁面的平均分數。 匯總層級的變更代表目前執行中頁面的平均分數，與前次執行的平均分數相比，即使設定為包含的頁面集合在執行之間已變更亦然。
+
+「變更」量度的值可能是下列其中一項：
+
+* **正值** -自上次生產管線執行以來，所選測試的頁面已改善
+
+* **負值** -自上次生產管線執行以來，頁面在所選測試上已退縮
+
+* **無更改** -自上次生產管道運行以來，頁面的分數相同
+
+* **N/A** —— 沒有舊分數可供比較
+
+   ![](assets/content-audit-test1.png)
+
+#### 頁面層級分數 {#page-level-scores}
+
+透過鑽取任何測試，可檢視更詳細的頁面等級計分。 使用者將能夠查看個別頁面在特定測試中的分數，以及與上次測試執行時的變更。
+按一下任何個別頁面的「詳細資訊」，將會提供已評估頁面元素的相關資訊，並在偵測到改善機會時，提供修正問題的指引。 Google Lighthouse提供測試的詳細資訊和相關指引。
+![](assets/page-level-scores.png)
+
 ## 本地測試執行 {#local-test-execution}
 
 由於測試類是JUnit測試，因此可以從主流Java IDE（如Eclipse、IntelliJ、NetBeans等）中運行。
@@ -149,3 +196,4 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
