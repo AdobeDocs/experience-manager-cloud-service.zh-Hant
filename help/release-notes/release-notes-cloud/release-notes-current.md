@@ -2,9 +2,9 @@
 title: 2020.8.0版雲端服務 [!DNL Adobe Experience Manager] 的發行說明。
 description: '[!DNL Adobe Experience Manager]作為2020.8.0版雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
+source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '494'
 ht-degree: 6%
 
 ---
@@ -67,4 +67,18 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 * 「內容稽核」標籤會使用作者網域而非發佈網域，錯誤地顯示基本URL。
 
 * 若要啟動「內容稽核」步驟，使用者必須編輯管線，並可選擇新增頁面。 如果未新增任何頁面，則會檢查首頁。
+
+## 內容轉移工具 {#content-transfer-tool}
+
+請依照本節內容，瞭解內容傳輸工具版本v1.0.4的新增功能和更新。
+
+### 新功能 {#what-is-new-ctt}
+
+* 內容傳輸工具現在支援共用S3 DataStore。
+
+### 錯誤修正 {#ctt-bug-fixes}
+
+* 為工具完成動作增加其他逾時。
+
+* 即使記錄顯示錯誤，舊版UI有時仍顯示成功擷取。
 
