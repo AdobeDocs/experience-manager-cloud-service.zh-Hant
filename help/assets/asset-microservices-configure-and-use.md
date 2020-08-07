@@ -3,9 +3,9 @@ title: 設定並使用資產微服務進行資產處理
 description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2537'
 ht-degree: 1%
 
 ---
@@ -70,11 +70,11 @@ Asset microservices支援各種檔案格式，以處理、產生轉譯或擷取�
 
 [!DNL Experience Manager] 根據使用者的需求，提供針對常用格式產生更多特定轉譯的功能。 管理員可以建立其他 [!UICONTROL 的處理設定檔] ，以利建立這類轉譯。 然後，使用者將一或多個可用的描述檔指派給特定的檔案夾，以完成其他處理。 例如，額外的處理可產生網頁、行動裝置和平板電腦的轉譯。 以下影片說明如何建立和套用「處 [!UICONTROL 理設定檔] 」，以及如何存取已建立的轉譯。
 
-* **轉譯寬度和高度**: 轉譯寬度和高度規格可提供所產生輸出影像的最大大小。 Asset microservices會嘗試產生最大的轉譯，其寬度和高度不會分別大於指定的寬度和高度。 外觀比例會保留，與原稿相同。 空值表示資產處理會假設原始影像的像素尺寸。
+* **轉譯寬度和高度**:轉譯寬度和高度規格可提供所產生輸出影像的最大大小。 Asset microservices會嘗試產生最大的轉譯，其寬度和高度不會分別大於指定的寬度和高度。 外觀比例會保留，與原稿相同。 空值表示資產處理會假設原始影像的像素尺寸。
 
-* **MIME類型包含規則**: 當處理具有特定MIME類型的資產時，會先根據轉譯規格的已排除MIME類型值檢查MIME類型。 如果符合該清單，則不會為資產（封鎖的清單）產生此特定轉譯。 否則，會根據包含的MIME類型檢查MIME類型，如果與清單匹配，則會生成格式副本（允許清單）。
+* **MIME類型包含規則**:當處理具有特定MIME類型的資產時，會先根據轉譯規格的已排除MIME類型值檢查MIME類型。 如果符合該清單，則不會為資產（封鎖的清單）產生此特定轉譯。 否則，會根據包含的MIME類型檢查MIME類型，如果與清單匹配，則會生成格式副本（允許清單）。
 
-* **特殊FPO轉譯**: 將大型資產放入檔案時， [!DNL Experience Manager] 創 [!DNL Adobe InDesign] 意專業人員會在放入資產後等 [待相當長時間](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同時，用戶被阻止使用 [!DNL InDesign]。 這會中斷創意流程，並對使用者體驗造成負面影響。 Adobe可讓檔案中暫時放置小型轉譯， [!DNL InDesign] 以開始處理，稍後可以隨選取代為完整解析度資產。 [!DNL Experience Manager] 提供僅用於放置(FPO)的轉譯。 這些FPO轉譯檔案大小較小，但外觀比例相同。
+* **特殊FPO轉譯**:將大型資產放入檔案時， [!DNL Experience Manager] 創 [!DNL Adobe InDesign] 意專業人員會在放入資產後等 [待相當長時間](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同時，用戶被阻止使用 [!DNL InDesign]。 這會中斷創意流程，並對使用者體驗造成負面影響。 Adobe可讓檔案中暫時放置小型轉譯， [!DNL InDesign] 以開始處理，稍後可以隨選取代為完整解析度資產。 [!DNL Experience Manager] 提供僅用於放置(FPO)的轉譯。 這些FPO轉譯檔案大小較小，但外觀比例相同。
 
 處理設定檔可包含FPO（僅限放置）轉譯。 請參 [!DNL Adobe Asset Link] 閱文 [件](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html) ，瞭解您是否需要為處理設定檔開啟它。 如需詳細資訊，請參 [閱Adobe Asset Link完整檔案](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。
 
@@ -110,15 +110,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 自訂描述檔和使用案例 {#custom-config}
 
-<!-- **TBD items**:
-
-* Overall cross-linking with the extensibility content.
-* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
-* Mention mapping of service parameters. Link to compute service article.
-* Review from flow perspective shared in Jira ticket.
--->
-
-支 [!DNL Asset Compute Service] 援多種使用案例，例如預設處理、處理Adobe特定格式（例如Photoshop檔案），以及實作自訂或組織特定處理。 過去需要的DAM更新資產工作流程自訂會自動處理，或是透過處理設定檔設定來處理。 如果這些處理選項未能滿足企業需求，Adobe建議您開發並使用來 [!DNL Asset Compute Service] 擴充預設功能。 如需概觀，請參 [閱瞭解擴充性及使用時機](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
+支 [!DNL Asset Compute Service] 援多種使用案例，例如預設處理、處理Adobe特定格式（例如Photoshop檔案），以及實作自訂或組織特定處理。 過去需要的DAM更新資產工作流程自訂會自動處理，或透過處理設定檔設定處理。 如果這些處理選項未能滿足企業需求，Adobe建議您開發並使用來 [!DNL Asset Compute Service] 擴充預設功能。 如需概觀，請參 [閱瞭解擴充性及使用時機](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
 
 >[!NOTE]
 >
@@ -148,11 +140,11 @@ The following video demonstrates the usefulness and usage of standard profile.
    * 每個轉譯的檔案名稱及支援的副檔名。
    * [Firefly自訂應用程式的端點URL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)。 應用程式必須與Experience Manager帳戶來自相同的組織。
    * 新增服務參數， [將額外資訊或參數傳遞至自訂應用程式](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)。
-   * 包含和排除的MIME類型，以定義描述檔的適用性。
+   * 包含和排除的MIME類型，可將處理限制為少數特定的檔案格式。
 
    按一下&#x200B;**[!UICONTROL 「儲存」]**。
 
-如果自訂應用程式是使用處理設定檔來設定，就會取得所有提供的檔案。 應用程式必須篩選檔案。
+自訂應用程式是無頭的 [Project Firefly應用程式](https://github.com/AdobeDocs/project-firefly) 。 如果自訂應用程式是使用處理設定檔來設定，就會取得所有提供的檔案。 應用程式必須篩選檔案。
 
 >[!CAUTION]
 >
@@ -166,7 +158,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*圖： 使用[!UICONTROL 服務參數欄位]，將新增的資訊傳送至自訂應用程式內建的預先定義參數。*
+*圖：使用[!UICONTROL 服務參數欄位]，將新增的資訊傳送至自訂應用程式內建的預先定義參數。*
 
 當促銷活動影像上傳至套用此處理設定檔的檔案夾時，會以字型文字更 `Jumanji` 新影 `Arial-BoldMT` 像。
 
@@ -193,7 +185,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ![其他轉譯](assets/renditions-additional-renditions.png)
 
-*圖： 處理描述檔套用至父資料夾所產生的兩個其他轉譯範例。*
+*圖：處理描述檔套用至父資料夾所產生的兩個其他轉譯範例。*
 
 ## 後處理工作流程 {#post-processing-workflows}
 
@@ -226,8 +218,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 Custom Workflow Runner服務(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服務，提供兩個設定選項：
 
-* 後處理工作流程(依路徑`postProcWorkflowsByPath`): 可以根據不同的儲存庫路徑列出多個工作流模型。 路徑和模型應以冒號分隔。 支援簡單儲存庫路徑，並應映射到路徑中的工作流 `/var` 模型。 For example: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* 後處理工作流程(依運算式`postProcWorkflowsByExpression`): 可以根據不同的規則運算式列出多個工作流程模型。 運算式和模型應以冒號分隔。 規則運算式應直接指向「資產」節點，而非其中一個轉譯或檔案。 For example: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* 後處理工作流程(依路徑`postProcWorkflowsByPath`):可以根據不同的儲存庫路徑列出多個工作流模型。 路徑和模型應以冒號分隔。 支援簡單儲存庫路徑，並應映射到路徑中的工作流 `/var` 模型。 For example: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* 後處理工作流程(依運算式`postProcWorkflowsByExpression`):可以根據不同的規則運算式列出多個工作流程模型。 運算式和模型應以冒號分隔。 規則運算式應直接指向「資產」節點，而非其中一個轉譯或檔案。 For example: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
 >
