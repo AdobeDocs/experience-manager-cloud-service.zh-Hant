@@ -2,9 +2,9 @@
 title: 2020.8.0版雲端服務 [!DNL Adobe Experience Manager] 的發行說明。
 description: '[!DNL Adobe Experience Manager]作為2020.8.0版雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: 19ad5567b94912eb4ea254b36f45feb46ad96255
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '438'
 ht-degree: 6%
 
 ---
@@ -13,6 +13,14 @@ ht-degree: 6%
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 以下章節概述 Experience Manager 雲端服務 2020.8.0 版的一般發行說明。
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### 新功能 {#what-is-new-commerce}
+
+* 產品主控台功能現已推出。 這可讓AEM中的行銷人員／作者檢視並導覽儲存在商務後端的類別和產品。 另外也支援產品主控台中的類別和產品屬性。
+
+* 產品和類別挑選器已改進，可讓行銷人員透過SKU選擇產品，或透過類別ID選擇類別。
 
 ## Cloud Manager {#cloud-manager}
 
