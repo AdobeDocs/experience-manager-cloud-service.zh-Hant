@@ -2,9 +2,9 @@
 title: 2020.8.0版雲端服務 [!DNL Adobe Experience Manager] 的發行說明。
 description: '[!DNL Adobe Experience Manager]作為2020.8.0版雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: 19ad5567b94912eb4ea254b36f45feb46ad96255
+source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '440'
 ht-degree: 6%
 
 ---
@@ -48,7 +48,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * 在某些情況下，未完成的管線執行未成功記錄為已完成，從而防止了管線的新執行。
 
-* 管道執行偶爾會因內部通訊問題而「卡住」。
+* 管道執行偶爾會因 *內部* 通訊問題而卡住。
 
 * 在布建新組織時，系統管理員以外的其他管理角色的部分使用者會錯誤地獲得Cloud Manager的存取權。
 
@@ -58,7 +58,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * 在刪除環境中嘗試操作時，用戶介面錯誤地允許該操作。
 
-* 概述頁面上的顏色不符。
+* Cloud Manager的「概述」頁面上有顏色不 **符** 。
 
 ### 已知問題 {#known-issues-cm}
 
