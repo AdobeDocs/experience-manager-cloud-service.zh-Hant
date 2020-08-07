@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: 01ffc349891ac1e11af4f4bc8a539069b8f6cd5e
+source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 97%
+source-wordcount: '1640'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 * 「內容轉移工具」的最低系統需求為 AEM 6.3 + 和 JAVA 8。如果您使用較舊版本的 AEM，您必須將內容存放庫升級至 AEM 6.5 才能使用「內容轉移工具」。
 
-* 內容傳輸工具可與下列類型的資料儲存區搭配使用： 檔案資料儲存、S3資料儲存和共用S3資料儲存。 它目前不支援Azure Blob Store資料儲存區。
+* 內容傳輸工具可與下列類型的資料儲存區搭配使用：檔案資料儲存、S3資料儲存和共用S3資料儲存。 它目前不支援Azure Blob Store資料儲存區。
 
 * 如果您使用&#x200B;*沙箱環境*，請確定您的環境已升級至 2020 年 6 月 10 日或之後發行的版本。如果您使用&#x200B;*生產環境*，則會自動更新。
 
@@ -32,7 +32,7 @@ ht-degree: 97%
 
 ## 可用性 {#availability}
 
-您可以從軟體發佈入口網站下載「內容轉移工具」ZIP 檔案 (內容轉移工具 v1.0.0)。您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。
+內容傳輸工具可從軟體散發入口網站下載為zip檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。請確定下載最新版本。 如需最新版本的詳細資訊，請參閱版 [本說明](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)。
 
 >[!NOTE]
 >從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)入口網站下載內容轉移工具。
