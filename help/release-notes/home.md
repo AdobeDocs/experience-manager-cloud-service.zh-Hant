@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) 雲端服務的發行說明。
 description: 'Adobe Experience Manager (AEM) 雲端服務的發行說明。 '
 translation-type: tm+mt
-source-git-commit: 4c5e49e1bba5b936958a7bb4edb493b5e06902c5
+source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 96%
+source-wordcount: '378'
+ht-degree: 93%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 96%
 * [Dispatcher 文件](/help/implementing/dispatcher/overview.md)
 * [HTL 文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)
 * [核心元件文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager 文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager 文件](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [GDPR 整備](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager 雲端服務教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
