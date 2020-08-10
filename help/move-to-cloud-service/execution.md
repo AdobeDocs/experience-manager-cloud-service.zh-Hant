@@ -1,9 +1,9 @@
 ---
 title: 執行階段
 description: 執行階段
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
 ht-degree: 100%
 
@@ -77,11 +77,11 @@ AEM Maven 專案必須進行某些變更，才能與 AEM 雲端服務相容。AE
 
 * 觀看「安裝 Dispatcher SDK」，了解如何安裝 Dispatcher SDK：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+   >[!VIDEO](https://video.tv.adobe.com/v/30601?captions=chi_hant)
 
 * 觀看「設定 Dispatcher SDK」，了解如何設定 Dispatcher SDK：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+   >[!VIDEO](https://video.tv.adobe.com/v/30602?captions=chi_hant)
 
 * 檢視[本機開發設定](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)文件，以便設定本機開發環境
 
