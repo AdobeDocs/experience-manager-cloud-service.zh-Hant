@@ -2,11 +2,11 @@
 sub-product: AEM 雲端服務實作
 user-guide-title: AEM 雲端服務實作
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f3d2d72dd9a0e025a3a88eecfd2b3ce466262093
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
