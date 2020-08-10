@@ -2,9 +2,9 @@
 title: AEM應用程式專案——雲端服務
 description: AEM應用程式專案——雲端服務
 translation-type: tm+mt
-source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
+source-git-commit: 4bcae8f2bb74838497323125ebf7015f955bb374
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1406'
 ht-degree: 9%
 
 ---
@@ -59,7 +59,6 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
 
 * 構建環境基於Linux，源自Ubuntu 18.04。
 * 已安裝Apache Maven 3.6.0。
-* Java版本已安裝Oracle JDK 8u202和11.0.2。
 * 安裝了一些其他系統軟體包是必要的：
 
    * bzip2
@@ -69,7 +68,7 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
    * graphicsmagick
 
 * 其他軟體包可在構建時安裝，如下 [所述](#installing-additional-system-packages)。
-* 每棟建築都是在原始環境下完成的； 建置容器不會在執行之間保留任何狀態。
+* 每棟建築都是在原始環境下完成的；建置容器不會在執行之間保留任何狀態。
 * Maven始終使用以下命令運行： *mvn -batch-mode clean org.jaco:jaco-maven-plugin:prepare-agent套件*
 * Maven是在系統層級以settings.xml檔案來設定，該檔案會自動包含公用的Adobe **Artifact** 儲存庫。 (如需詳細 [資訊，請參閱Adobe Public Maven Repository](https://repo.adobe.com/) )。
 
