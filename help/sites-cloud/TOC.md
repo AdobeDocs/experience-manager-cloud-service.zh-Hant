@@ -2,9 +2,9 @@
 sub-product: AEM 雲端服務的內容製作
 user-guide-title: AEM 雲端服務的內容製作
 user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
 ht-degree: 100%
 
