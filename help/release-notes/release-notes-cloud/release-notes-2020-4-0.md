@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager 雲端服務 2020.4.0 版發行說明
 description: Experience Manager 2020.4.0 版發行說明
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '654'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Experience Manager 雲端服務 2020.4.0 版發行說明 {#release-notes}
 
-This page outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
+此頁面概述 [!DNL Experience Manager] 雲端服務 2020.4.0 版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
@@ -20,7 +20,7 @@ This page outlines the general release notes for [!DNL Experience Manager] as a 
 
 ## 新增資產 {#assets}
 
-瞭解目前版本的新功能、增強功能，以及 [!DNL Experience Manager Assets] 和 [!DNL Dynamic Media] 的錯誤修正。
+了解目前版本的新功能、增強功能，以及 [!DNL Experience Manager Assets] 和 [!DNL Dynamic Media] 的錯誤修正。
 
 * [Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/home.html) 支援 Experience Manager Assets 的資產發佈使用案例。[!DNL Brand Portal] 藉由安全方式向外部機構、合作夥伴、內部團隊和經銷商散佈經過核准的品牌和產品資產以供下載，協助組織滿足其行銷需求。
    * [!DNL Brand Portal] 設定已透過 [!DNL Adobe I/O] 控制台完成。請參閱[設定 Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)。
@@ -54,7 +54,7 @@ This page outlines the general release notes for [!DNL Experience Manager] as a 
 >* [使用資產微服務在 Experience Manager 中建立工作流程](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
-## Cloud Manager 的新增功能 {#whats-new-cloud-manager}
+## Cloud Manager 新增功能 {#whats-new-cloud-manager}
 
 * Cloud Manager UI 的「環境」頁面現在已可使用發佈者 URL。
 * 導覽的變更項目可供使用者從 Cloud Manager 概覽頁面編輯、切換或新增程式。
