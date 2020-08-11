@@ -2,7 +2,7 @@
 title: 瞭解您的測試結果——雲端服務
 description: 瞭解測試結果——雲端服務
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 # 了解測試結果 {#understand-test-results}
 
 使用 Cloud Manager 進行雲端服務管線執行時，會支援針對預備環境執行的測試。這與在「建立和裝置測試」步驟中執行的測試相反，這些測試會離線執行，而且無法存取任何執行中的AEM環境。
-在此內容中執行的測試有兩種類型：
+在此內容中執行的測試有三種類型：
 * 客戶撰寫的測試
 * Adobe撰寫的測試
 * Google Lighthouse提供的開放原始碼工具
@@ -31,7 +31,7 @@ ht-degree: 3%
 | 安全性分級 | A = 0漏洞 <br/>B =至少1個小漏洞<br/> C =至少1個大漏洞 <br/>D =至少1個嚴重漏洞 <br/>E =至少1個攔截器漏洞 | 關鍵 | &lt; B |
 | 可靠性分級 | A = 0錯誤 <br/>B =至少1個次要錯誤 <br/>C =至少1個主要錯誤 <br/>D =至少1個嚴重錯誤E =至少1個攔截器錯誤 | 重要 | &lt; C |
 | 可維護性評級 | 代碼氣味的未付補救成本是： <br/><ul><li>&lt;=5%已進入應用程式的時間，評分為A </li><li>6%到10%的評分是B </li><li>11%到20%的評分是C </li><li>21%到50%的評分是D</li><li>超過50%的項目是E</li></ul> | 重要 | &lt; A |
-| 適用範圍 | 單位測試線覆蓋率與條件覆蓋率的混合使用公式： <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>其中： CT =運行單元測試時至少評估為&#39;true&#39;的條件 <br/>CF =運行單元測試時評估為&#39;false&#39;的條件至少一次，而 <br/>LC =覆蓋行= lines_to_cover - uncovered_lines <br/><br/> B =條件 <br/>EL =可執行行(lines_to_cover)的總數 | 重要 | &lt; 50% |
+| 適用範圍 | 單位測試線覆蓋率與條件覆蓋率的混合使用公式： <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>其中：CT =運行單元測試時至少評估為&#39;true&#39;的條件 <br/>CF =運行單元測試時評估為&#39;false&#39;的條件至少一次，而 <br/>LC =覆蓋行= lines_to_cover - uncovered_lines <br/><br/> B =條件 <br/>EL =可執行行(lines_to_cover)的總數 | 重要 | &lt; 50% |
 | 跳過的設備測試 | 跳過的單元測試數。 | 資訊 | > 1 |
 | 未結問題 | 整體問題類型——弱點、錯誤和程式碼氣味 | 資訊 | > 0 |
 | 複製行 | 重複塊中涉及的行數。 <br/>對於要視為複製的代碼塊： <br/><ul><li>**非Java專案：**</li><li>至少應有100個連續和重複的Token。</li><li>這些預付碼應至少分散於： </li><li>COBOL的30行代碼 </li><li>ABAP的20行代碼 </li><li>10行其他語言的程式碼</li><li>**Java專案：**</li><li> 不論預付碼和行數為何，至少應有10個連續和重複的陳述式。</li></ul> <br/>在檢測重複時，會忽略縮排和字串文字的差異。 | 資訊 | > 1% |
