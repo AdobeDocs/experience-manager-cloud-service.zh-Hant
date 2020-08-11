@@ -2,9 +2,9 @@
 title: 發佈頁面
 description: 如何使用AEM發佈和取消發佈頁面
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1717'
 ht-degree: 7%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 7%
 
 ## 術語 {#terminology}
 
-當您使用AEM時，可能會遇到與發佈相關的不同詞語。
+當您使用Adobe Experience Manager(AEM)做為雲端服務時，可能會遇到與發佈相關的不同條款。
 
 * **發佈／取消發佈**
    * 這些是讓您的內容在發佈環境（或非）上公開提供之動作的主要條款。
@@ -53,6 +53,10 @@ ht-degree: 7%
 >* A message will be displayed briefly to notify you that the workflow was triggered.
 -->
 
+>[!NOTE]
+>
+> 如需其他可能性，請 **參閱「頁面屬性** 」的「基本 **」索引標籤**[中的「開機和關機時間」](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+
 ### 從編輯器發佈 {#publishing-from-the-editor}
 
 如果您正在編輯頁面，則可直接從編輯器發佈頁面。
@@ -67,6 +71,7 @@ ht-degree: 7%
    * 如果頁面有需要發佈的參考，這些參考將列在「發 **布** 」精靈中，您可以在其中：
       * 指定哪些資產／標籤／等。 您想要與頁面一起發佈，然後使用「 **發佈** 」完成程式。
       * Use **Cancel** to abort the action.
+
    ![發佈頁面的參考](/help/sites-cloud/authoring/assets/publishing-references.png)
 
 1. 選取 **「發佈** 」會將頁面複製至發佈環境。 在頁面編輯器中，會顯示確認發佈動作的資訊橫幅。
@@ -122,6 +127,7 @@ ht-degree: 7%
 
    * 選擇發佈或取消發佈所選頁面。
    * 選擇立即或稍後採取該動作。
+
    稍後發佈會啟動工作流程，以在指定時間發佈選取的頁面。 相反地，稍後取消發佈會啟動工作流程，在特定時間取消發佈選取的頁面。
 
    如果您想稍後取消發佈／取消發佈，請前往「工作流程控制台」以終止對應的工作流程。 <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
@@ -138,13 +144,14 @@ ht-degree: 7%
 
    按一下「新增內容」按鈕會啟動路 [徑瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) ，以允許選取內容。
 
-   選擇所需頁面，然後按一下「 **Select** （選擇）」將內容添加到嚮導中，或按一下「**Cancel **」取消選擇並返回嚮導。
+   選擇所需頁面，然後按一下「 **選擇** 」將內容添加到嚮導，或按一下「取消 **** 」取消選擇並返回嚮導。
 
    回到精靈中，您可以選取清單中的項目，以設定其他選項，例如：
 
    * 包括其子系。
    * 從選取範圍中移除它。
    * 管理其已發佈的參考。
+
    ![管理出版物選擇頁面](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
    按一下 **「包括子項** 」(Include Children)將開啟一個對話框，允許您：
@@ -152,6 +159,7 @@ ht-degree: 7%
    * 僅包含直接子項.
    * 僅包含修改過的頁面.
    * 僅包含已發佈的頁面.
+
    按一 **下「新增** 」，根據選取選項，將子頁面新增至要發佈或未發佈的頁面清單。 按一下 **取消** ，取消選擇並返回嚮導。
 
    ![管理出版物，包括子系](/help/sites-cloud/authoring/assets/publishing-include-children.png)
@@ -187,10 +195,12 @@ ht-degree: 7%
 
    * 定義工作流的標題。
    * 保留工作流包，前提是工作流支援多資源。
+
    <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
     -->
 
    * 如果選擇了保留工作流包的選項，則定義工作流包的標題。
+
    按一 **下「發佈** 」或「 **稍後發佈** 」以完成出版。
 
 ## 取消發佈頁面 {#unpublishing-pages}
@@ -237,6 +247,7 @@ ht-degree: 7%
 
    * 僅包含直接子項
    * 僅包含已發佈的頁面
+
    這些選項預設為選取，因此您必須記得取消選取。 按一 **下「新增** 」以確認內容並將內容新增至出版物／取消出版物。
 
    ![取消發佈時包含子項](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
