@@ -2,10 +2,10 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 translation-type: tm+mt
-source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '1538'
-ht-degree: 11%
+source-wordcount: '1675'
+ht-degree: 10%
 
 ---
 
@@ -62,18 +62,27 @@ ht-degree: 11%
 
 * **開啟時間**
 
-   * 啟動發佈頁面的日期和時間。 發佈時，此頁面將保持休眠，直到指定時間為止。
-   * 請將這些欄位留空，以便立即發佈頁面（一般情形）。
+   * 發佈環境中顯示（轉譯）發佈頁面的日期和時間。 必須手動或預先設定的自動複製來發佈頁面。
+
+      >[!NOTE]
+      >
+      > 有關如 [何配置相關自動複製的詳細資訊，請參見On和Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) 。
+
+      * 如果已 [發佈（手動）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) ，此頁面將保持休眠（隱藏），直到在指定時間呈現。
+      * 如果未發佈，且已針對自動複製設定，則會在指定時間自動發佈頁面，然後呈現頁面。
+      * 如果未發佈，且未針對自動複製進行設定，則不會自動發佈頁面，因此當嘗試存取頁面時，會看到404。
+   * 對於您要立即發佈的頁&#x200B;**面，請將這些欄位(「開始** 」和「關閉時間」 ****)留空，並在發佈環境中使用，直到它們停用（一般情形）。
 
 * **關閉時間**
 
-   * 發佈頁面將停用的時間。
-   * 請將這些欄位留空，以便立即執行動作。
+   * 與「 **On Time** 」（按時間）平行，這定義發佈頁面在發佈環境中隱藏的時間。
+   * 對於您要立即發佈的頁&#x200B;**面，請將這些欄位(「開始** 」和「關閉時間」 ****)留空，並在發佈環境中使用，直到它們停用（一般情形）。
 
 * **虛名 URL**
 
    * 可讓您輸入此頁面的虛名URL，讓您擁有更短和／或更具表現力的URL。
    * 例如，如果「虛名URL」設 `welcome` 定為網站路徑所識別 `/v1.0/startpage` 的頁面 `http://example.com`，則 `http://example.com/welcome` 會是 `http://example.com/content/v1.0/startpage`
+
    >[!CAUTION]
    >
    >虛名 URL:
@@ -112,7 +121,7 @@ ht-degree: 11%
    >
    >別名設定 `sling:alias` 屬性以定義資源的別名（這僅影響資源，而不影響路徑）。
    >
-   >例如： 如果為節點節點定 `latin-lang` 義別名， `/content/we-retail/spanish` 則可通過 `/content/we-retail/latin-language`
+   >例如：如果為節點節點定 `latin-lang` 義別名， `/content/we-retail/spanish` 則可通過 `/content/we-retail/latin-language`
    >
    >如需詳細資訊，請參閱「SEO與URL管理最佳實務」下的「本地化頁面名稱」。
 
@@ -185,6 +194,7 @@ ht-degree: 11%
 * **雲端服務設定**
 
    * 定義雲端服務的屬性。
+
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
@@ -193,6 +203,7 @@ ht-degree: 11%
 * **ContextHub 組態**
 
    * 選擇ContextHub設定和區段路徑。
+
    <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
   -->
 
@@ -209,6 +220,7 @@ ht-degree: 11%
    * 新增權限
    * 編輯已關閉的使用者群組
    * 檢視有效權限
+
    <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
 
    <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
@@ -220,6 +232,7 @@ ht-degree: 11%
 * **Blueprint**
 
    * 在多網站管理中定義Blueprint頁面的屬性。
+
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 
    * 控制修改將傳播至即時副本的情況。
