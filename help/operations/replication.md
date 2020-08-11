@@ -2,10 +2,10 @@
 title: 複寫
 description: 散佈 和複製故障排除。
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 3%
+source-wordcount: '303'
+ht-degree: 2%
 
 ---
 
@@ -24,6 +24,14 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 作者適用的這些標準AEM功能不會隨AEM Cloud服務而改變。
 
+### 開啟和關閉時間——觸發器設定 {#on-and-off-times-trigger-configuration}
+
+「頁面屬性」 **的「基本** 」標籤提供「按時 **」和「關閉時間** 」的其他可能性 [](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)。
+
+要實現自動複製，您需要在 **OSGi配置中啟** 用自動複製 [,](/help/implementing/deploying/configuring-osgi.md)**關閉觸發器配置**:
+
+![OSGi On Off觸發器配置](/help/operations/assets/replication-on-off-trigger.png)
+
 ### 樹狀結構啟動 {#tree-activation}
 
 要執行樹狀結構激活：
@@ -31,6 +39,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 1. 從「AEM開始」選單導覽至「工 **具>部署>散發」**
 2. 選取卡片 **forwardPublisher**
 3. 進入forwardPublisher Web控制台UI後，選擇「分 **發」**
+
    ![散](assets/distribute.png "發")
 4. 在路徑瀏覽器中選擇路徑，選擇根據需要添加節點、樹或刪除，然後選擇「提交」( **Submit)**
 
