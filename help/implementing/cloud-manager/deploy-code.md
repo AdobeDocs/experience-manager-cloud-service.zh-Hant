@@ -2,9 +2,9 @@
 title: 部署您的程式碼——雲端服務
 description: 部署您的程式碼——雲端服務
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '983'
 ht-degree: 3%
 
 ---
@@ -42,8 +42,8 @@ ht-degree: 3%
    「 **舞台部署**」涉及以下步驟：
 
    * 驗證：此步驟確保將管線配置為使用當前可用資源，例如，已配置的分支存在，環境可用。
-   * 構建和單元測試：此步驟會執行容器化的建立程式。 如需 [建立環境的詳細資訊，請參閱「建立AEM應用程式專案](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) 」。
-   * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](/help/implementing/developing/introduction/understand-test-results.md) ，請參閱瞭解測試結果。
+   * 構建和單元測試：此步驟會執行容器化的建立程式。 有關 [構建環境的詳細資訊](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) ，請參閱構建環境詳細資訊。
+   * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) ，請參閱程式碼品質測試。
    * 建立影像：此步驟包含用於構建映像的進程的日誌檔案。 此程式負責將構建步驟生成的內容和調度程式包轉換為Docker映像和Kubernetes配置。
    * 部署至舞台
 
