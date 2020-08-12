@@ -2,9 +2,9 @@
 title: Adobe Experience Manager雲端服務的不同與新功能
 description: '不同與新功能- Adobe Experience Manager(AEM)雲端服務。 '
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 9882c95972675ee1e0af5de30119d764638f53f3
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1856'
 ht-degree: 10%
 
 ---
@@ -116,11 +116,11 @@ Cloud Manager是：
 
 Cloud Manager已發展為自助服務入口網站，可在其中建立並設定AEM（雲端服務）的主要元件：
 
-* 在這些程式中建立和管理AEM環境。
+* 建立和管理新程式。 有關詳細 [資訊，請參閱瞭解方案和方案類型](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) 。
 
-* 在這些程式中建立和管理AEM環境。
+* 在這些程式中建立和管理AEM環境。 如需詳細 [資訊，請參閱](/help/implementing/cloud-manager/manage-environments.md) 「管理環境」。
 
-* 建立並管理將客戶代碼和相關配置部署到特定環境的管道。
+* 建立並管理將客戶代碼和相關配置部署到特定環境的管道。 有關詳 [細資訊，請參閱配置CI-CD管道](/help/implementing/cloud-manager/configure-pipeline.md) 。
 
 * 收到這些元件的重要生命週期事件通知（例如產品更新）。
 
