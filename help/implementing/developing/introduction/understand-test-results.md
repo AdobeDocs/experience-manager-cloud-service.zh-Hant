@@ -2,9 +2,9 @@
 title: 瞭解您的測試結果——雲端服務
 description: 瞭解測試結果——雲端服務
 translation-type: tm+mt
-source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
+source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1578'
 ht-degree: 3%
 
 ---
@@ -13,9 +13,17 @@ ht-degree: 3%
 # 了解測試結果 {#understand-test-results}
 
 使用 Cloud Manager 進行雲端服務管線執行時，會支援針對預備環境執行的測試。這與在「建立和裝置測試」步驟中執行的測試相反，這些測試會離線執行，而且無法存取任何執行中的AEM環境。
-在此內容中執行的測試有三種類型：
-* 客戶撰寫的測試
-* Adobe撰寫的測試
+
+Cloud Manager for Cloud Services Pipeline支援的測試有三大類：
+
+1. [程式碼品質測試](#code-quality-testing)
+1. [功能測試](#functional-testing)
+1. [內容審核測試](#content-audit-testing)
+
+這些測試可以是：
+
+* 客戶撰寫
+* Adobe編寫
 * Google Lighthouse提供的開放原始碼工具
 
    >[!NOTE]
@@ -82,7 +90,31 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >
 >儘管最好使注釋盡可能具體 `@SuppressWarnings` （即僅注釋導致問題的特定語句或塊），但可以在類別級別注釋。
 
-## 編寫功能測試 {#writing-functional-tests}
+## 功能測試 {#functional-testing}
+
+功能測試分為兩種類型：
+
+* 產品功能測試
+* 自訂功能測試
+
+### 產品功能測試 {#product-functional-testing}
+
+產品功能測試是一組穩定的HTTP整合測試(IT)，以製作、複製為主，可防止客戶在應用程式程式碼中斷AEM的核心功能時，對其應用程式碼進行變更。
+每當客戶將新代碼部署到Cloud Manager時，這些代碼都會自動運行。
+
+流水線中的產品功能測試步驟始終存在，不能跳過。此步驟是在階段部署後立即完成的。
+
+### 自訂功能測試 {#custom-functional-testing}
+
+管線中的「自訂功能」測試步驟始終存在，且無法跳過。
+
+但是，如果構建版本未生成測試JAR，則預設情況下測試通過。
+
+>[!NOTE]
+>「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。這些記錄檔不包含實際AEM執行階段程式的記錄檔——這些記錄檔可使用一般的「下載」或「尾部記錄檔」功能來存取。 如需詳細 [資訊，請參閱「存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md) 」。
+
+
+#### 編寫功能測試 {#writing-functional-tests}
 
 客戶撰寫的功能測試必須封裝為由要部署至AEM的對象所產生的個別JAR檔案。 通常，此模組是單獨的Maven模組。 生成的JAR檔案必須包含所有必需的從屬關係，通常使用maven-assembly-plugin使用jar-with-dependencies描述符建立。
 
@@ -124,15 +156,6 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 例如，將執行名為 `com.myco.tests.aem.ExampleIT` 的類，但不執行名 `com.myco.tests.aem.ExampleTest` 為的類。
 
 測試類必須是常規JUnit測試。 測試基礎架構的設計與設定可與aem-testing-clients測試程式庫所使用的慣例相容。 強烈建議開發人員使用此程式庫並遵循其最佳實務。 請參閱 [Git連結](https://github.com/adobe/aem-testing-clients) ，以取得詳細資訊。
-
-## 自訂功能測試 {#custom-functional-test}
-
-管線中的「自訂功能」測試步驟始終存在，且無法跳過。
-
-但是，如果構建版本未生成測試JAR，則預設情況下測試通過。 此步驟是在階段部署後立即執行的。
-
->[!NOTE]
->「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。這些記錄檔不包含實際AEM執行階段程式的記錄檔——這些記錄檔可使用一般的「下載」或「尾部記錄檔」功能來存取。 如需詳細 [資訊，請參閱「存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md) 」。
 
 ## 內容審核測試 {#content-audit-testing}
 
