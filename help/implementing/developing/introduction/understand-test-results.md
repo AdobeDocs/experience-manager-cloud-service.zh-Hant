@@ -2,9 +2,9 @@
 title: 瞭解您的測試結果——雲端服務
 description: 瞭解測試結果——雲端服務
 translation-type: tm+mt
-source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1620'
 ht-degree: 3%
 
 ---
@@ -91,7 +91,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >儘管最好使注釋盡可能具體 `@SuppressWarnings` （即僅注釋導致問題的特定語句或塊），但可以在類別級別注釋。
 
 >[!NOTE]
->雖然沒有明確的「安全性測試」步驟，但在代碼品質步驟中仍會評估與安全性相關的代碼品質規則。 如需詳 [細資訊，請參閱AEM的安全性概觀(Security Overview for AEM a Cloud Service](/help/security/cloud-service-security-overview.md) )。
+>雖然沒有明確的「安全性測試」步驟，但在代碼品質步驟中仍會評估與安全性相關的代碼品質規則。 請參閱「 [AEM的安全性概觀(Security Overview for AEM a Cloud Service](/help/security/cloud-service-security-overview.md) )」，以進一步瞭解「雲端服務」中的安全性。
 
 ## 功能測試 {#functional-testing}
 
@@ -104,7 +104,9 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 產品功能測試是一組穩定的HTTP整合測試(IT)，以AEM的核心功能（例如製作和複製）為中心，可防止客戶在應用程式程式程式碼中斷此核心功能時進行變更。
 
-每當客戶將新程式碼部署至Cloud Manager時，產品功能測試就會自動執行。
+每當客戶將新程式碼部署至Cloud Manager且無法略過時，產品功能測試就會自動執行。
+
+請參閱產 [品功能測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) ，以取得範例測試。
 
 ### 自訂功能測試 {#custom-functional-testing}
 
