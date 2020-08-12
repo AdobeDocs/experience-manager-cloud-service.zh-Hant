@@ -2,9 +2,9 @@
 title: 瞭解您的測試結果——雲端服務
 description: 瞭解測試結果——雲端服務
 translation-type: tm+mt
-source-git-commit: f878421950bac58702f9d4b418fbcc2dc3e397b2
+source-git-commit: 65c9446dc3c70ce593512e2358f23368f7c97f89
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1598'
 ht-degree: 3%
 
 ---
@@ -104,7 +104,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 產品功能測試是一組穩定的HTTP整合測試(IT)，以AEM的核心功能（例如製作和複製）為中心，可防止客戶在應用程式程式程式碼中斷此核心功能時進行變更。
 
-每當客戶將新代碼部署到Cloud Manager時，這些代碼都會自動運行。
+每當客戶將新程式碼部署至Cloud Manager時，產品功能測試就會自動執行。
 
 ### 自訂功能測試 {#custom-functional-testing}
 
