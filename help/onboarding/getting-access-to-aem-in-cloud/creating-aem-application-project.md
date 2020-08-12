@@ -2,9 +2,9 @@
 title: AEM應用程式專案——雲端服務
 description: AEM應用程式專案——雲端服務
 translation-type: tm+mt
-source-git-commit: 1dfc9cfaba4c7701ebca58346d6eec6b946dd517
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1472'
 ht-degree: 9%
 
 ---
@@ -374,3 +374,12 @@ Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這
             </configuration>
         </plugin>
 ```
+
+## 其他資源 {#additional-resources}
+
+請參閱以下章節，瞭解如何在雲端服務中使用Cloud Manager:
+
+* [管理環境](/help/implementing/cloud-manager/manage-environments.md)
+* [配置CI-CD管線](/help/implementing/cloud-manager/configure-pipeline.md)
+* [部署程式碼](/help/implementing/cloud-manager/deploy-code.md)
+* [了解測試結果](/help/implementing/developing/introduction/understand-test-results.md)
