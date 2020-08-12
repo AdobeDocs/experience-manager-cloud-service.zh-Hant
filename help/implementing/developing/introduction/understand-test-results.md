@@ -2,9 +2,9 @@
 title: 瞭解您的測試結果——雲端服務
 description: 瞭解測試結果——雲端服務
 translation-type: tm+mt
-source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1614'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Cloud Manager for Cloud Services Pipeline支援的測試有三大類：
 
 * 客戶撰寫
 * Adobe編寫
-* Google Lighthouse提供的開放原始碼工具
+* Powered by Google的Lighthouse作為開放原始碼工具
 
    >[!NOTE]
    > 客戶撰寫的測試和Adobe撰寫的測試都可在專為執行這些類型測試而設計的容器化基礎架構中執行。
@@ -90,6 +90,9 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >
 >儘管最好使注釋盡可能具體 `@SuppressWarnings` （即僅注釋導致問題的特定語句或塊），但可以在類別級別注釋。
 
+>[!NOTE]
+>雖然沒有明確的「安全性測試」步驟，但在代碼品質步驟中仍會評估與安全性相關的代碼品質規則。 如需詳 [細資訊，請參閱AEM的安全性概觀(Security Overview for AEM a Cloud Service](/help/security/cloud-service-security-overview.md) )。
+
 ## 功能測試 {#functional-testing}
 
 功能測試分為兩種類型：
@@ -111,7 +114,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 但是，如果構建版本未生成測試JAR，則預設情況下測試通過。
 
 >[!NOTE]
->「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。這些記錄檔不包含實際AEM執行階段程式的記錄檔——這些記錄檔可使用一般的「下載」或「尾部記錄檔」功能來存取。 如需詳細 [資訊，請參閱「存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md) 」。
+>「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。這些記錄檔不包含實際AEM執行階段程式的記錄檔——這些記錄檔可使用一般的「下載」或「尾部記錄檔」功能來存取。 如需詳細 [資訊，請參閱存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md) 。
 
 
 #### 編寫功能測試 {#writing-functional-tests}
