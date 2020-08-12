@@ -4,9 +4,9 @@ description: 瞭解各種資產管理和編輯方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
+source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
 workflow-type: tm+mt
-source-wordcount: '4419'
+source-wordcount: '4435'
 ht-degree: 12%
 
 ---
@@ -46,6 +46,15 @@ ht-degree: 12%
 如果DAM用戶上載儲存庫中已存在的一個或多個資產，則 [!DNL Experience Manager] 會檢測複製並通知用戶。 重複偵測預設會停用，因為它可能會根據儲存庫大小和上傳的資產數量，對效能產生影響。 若要啟用此功能，請設 [!UICONTROL 定Adobe AEM Cloud Asset Duplication Detector]。 了 [解如何進行OSGi配置](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 複製檢測基於儲存在的唯 `dam:sha1` 一值 `jcr:content/metadata/dam:sha1`。 這表示即使檔案名稱不同，也會偵測到重複資產。
 
 ![偵測重複資產OSGi組態](assets/duplicate-detection.png)
+
+您可以在自訂程式碼中 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 新增設定檔案，而且檔案可以包含下列項目：
+
+```json
+{
+  "enabled":true,
+  "detectMetadataField":"dam:sha1"
+}
+```
 
 啟用後，Experience Manager會將重複資產的通知傳送至收件匣。 它是多重複項的匯總結果。 使用者可以選擇根據結果移除資產。
 
@@ -104,7 +113,7 @@ ht-degree: 12%
 
    如需詳細資訊，請參 [閱資產分析](assets-insights.md)。
 
-1. 點選／按一下「 **[!UICONTROL 儲存並關閉]**」。
+1. Tap/click **[!UICONTROL Save &amp; Close]**.
 
 1. 導覽至「資產」使用者介面。 編輯的中繼資料屬性（包括標題、說明和標籤）會顯示在資產卡片的「卡片」檢視中，以及「清單」檢視中相關欄下。
 
@@ -120,7 +129,7 @@ ht-degree: 12%
 
 保留其他屬性和元資料資訊。 複製資產時不會建立部分復本。
 
-1. 從「資產」UI中，選取一或多個資產，然後點選／按一下工具列 **[!UICONTROL 中的]** 「複製」圖示。 或者，從資 **[!UICONTROL 產卡]** 中選擇 ![Copy](assets/copy_icon.png) _copy_icon快速操作。
+1. 從「資產」使用者介面中，選取一或多個資產，然後點選／按一下工具列 **[!UICONTROL 中的]** 「複製」圖示。 或者，從資 **[!UICONTROL 產卡]** 中選擇 ![Copy](assets/copy_icon.png) _copy_icon快速操作。
 
    >[!NOTE]
    >
@@ -344,8 +353,8 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
 
 一次只有一個資產的快速動作圖示可用。視您的裝置而定，執行下列動作以顯示快速動作圖示：
 
-* 觸控裝置： 輕觸並按住。 例如，在iPad上，您可以點選並按住資產，以便顯示快速動作。
-* 非觸控裝置： 暫留指標。 例如，在案頭裝置上，如果您將指標暫留在資產縮圖上，就會顯示快速動作列。
+* 觸控裝置：輕觸並按住。 例如，在iPad上，您可以點選並按住資產，以便顯示快速動作。
+* 非觸控裝置：暫留指標。 例如，在案頭裝置上，如果您將指標暫留在資產縮圖上，就會顯示快速動作列。
 
 ## 編輯影像 {#editing-images}
 
@@ -406,7 +415,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 時間軸可讓您檢視所選項目的各種事件，例如資產的作用中工作流程、註解／註解、活動記錄檔和版本。
 
-![為資產圖排序時間軸](assets/sort_timeline.gif)*條目： 排序資產的時間軸項目*
+![為資產圖排序時間軸](assets/sort_timeline.gif)*條目：排序資產的時間軸項目*
 
 >[!NOTE]
 >
@@ -535,7 +544,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 1. 使用右上角的選項下載或列印PDF。
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
    要修改渲染的PDF檔案的外觀，例如注釋和狀態的字型顏色、大小和樣式、背景顏色，請從「配置管理器」(Configuration Manager)開啟「注釋 **[!UICONTROL PDF」(]** Annotation PDF)配置，並修改所需的選項。 例如，要更改批准狀態的顯示顏色，請修改相應欄位中的顏色代碼。 有關更改批注的字型顏色的資訊，請參 [閱注釋](/help/assets/manage-digital-assets.md#annotating)。
 
