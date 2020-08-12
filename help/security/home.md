@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 雲端服務安全性
 description: Adobe Experience Manager 雲端服務安全性自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+source-git-commit: c0a66239e949ee4b460142e392d61e22938896bc
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 93%
+source-wordcount: '396'
+ht-degree: 91%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 93%
 
 ## 安全性重要文章 {#key-articles}
 
+* [AEM雲端服務的安全性概觀](/help/security/cloud-service-security-overview.md)
 * [AEM 雲端服務的 IMS 支援](ims-support.md)
 
 ## Experience Manager 雲端服務指南 {#aem-guides}
