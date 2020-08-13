@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager 雲端服務 2020.6.0 版發行說明
 description: Experience Manager 2020.6.0 版發行說明
-translation-type: ht
-source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
-workflow-type: ht
-source-wordcount: '1948'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c3922be7da1e76fee51e2ae2f59f16e260727001
+workflow-type: tm+mt
+source-wordcount: '1955'
+ht-degree: 99%
 
 ---
 
@@ -189,4 +189,4 @@ AEM 專案的 pom.xml 中所有的參照移至遠端存放庫 `https://downloads
 * 在下載資產時，如果選取了電子郵件選項，即使已提供有效的電子郵件 ID，下載選項仍無法使用。(CQ-4296535)
 * 儲存為智慧型集合的自訂篩選器無法正確套用至資產。(CQ-4294942)
 * 有多項搜尋和索引增強功能以及錯誤修正可改善效能。(CQ-4286373)
-* 資料夾屬性顯示 500 內部伺服器錯誤。(CQ-4295701)
+* 無法在「資產」中存取資料夾屬性標籤，並傳回500錯誤。 (CQ-4295701)
