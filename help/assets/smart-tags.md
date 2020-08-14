@@ -3,21 +3,21 @@ title: 使用人工智慧服務來標籤影像。
 description: 使用人工智慧服務來標籤影像，這些服務會使用Adobe Sensei服務套用情境式和描述性的商業標籤。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
+source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 5%
+source-wordcount: '2425'
+ht-degree: 6%
 
 ---
 
 
 # 訓練智慧型標籤服務並標籤您的影像 {#train-service-tag-assets}
 
-處理數位資產的組織越來越多地在資產中繼資料中使用分類控制辭彙。 基本上，它包含員工、合作夥伴和客戶常用來參考及搜尋其數位資產的關鍵字清單。 使用分類控制的辭彙來標籤資產，可確保透過標籤搜尋輕鬆識別和擷取資產。
+處理數位資產的組織越來越多地在資產中繼資料中使用分類控制辭彙。 基本上，它包含員工、合作夥伴和客戶常用來參考及搜尋其數位資產的關鍵字清單。 使用分類控制的詞彙來標記資產，以確保藉由標記式搜尋輕鬆識別及擷取資產。
 
 與自然語言辭彙相比，基於業務分類法的標籤有助於使資產與公司的業務保持一致，並確保最相關的資產出現在搜索中。 例如，汽車製造商可以使用型號名稱來標籤汽車影像，以便在搜尋以設計促銷活動時只顯示相關影像。
 
-在背景中，智慧型標籤使用 [](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) Adobe Sensei的人工智慧架構，針對您的標籤結構和商業分類訓練其影像識別演算法。 然後，此內容智慧會用來將相關標籤套用至不同的資產集。
+In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/tw/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. 然後，此內容智慧會用來將相關標籤套用至不同的資產集。
 
 <!-- TBD: Create a similar flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -31,15 +31,17 @@ ht-degree: 5%
 * [標籤您的數位資產](#tag-assets)。
 * [管理標籤和搜尋](#manage-smart-tags-and-searches)。
 
-智慧型標籤僅適用於 [!DNL Adobe Experience Manager Assets] 客戶。 智慧型標籤可做為附加元件購買 [!DNL Experience Manager]。
+智慧型標籤僅適用於 [!DNL Adobe Experience Manager Assets] 客戶。 The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## 與Adobe [!DNL Experience Manager] Developer Console整合 {#integrate-aem-with-aio}
+## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
 
-您可以使 [!DNL Adobe Experience Manager] 用Adobe Developer Console與智慧標籤整合。 使用此配置可從中訪問智慧標籤服務 [!DNL Experience Manager]。
+>[!IMPORTANT]
+>
+>新部署 [!DNL Experience Manager Assets] 預設會與 [!DNL Adobe Developer Console] 整合。 它可協助您更快速地設定智慧標籤功能。 在現有的部署中，管理員可以手動 [設定智慧標籤整合](/help/assets/smart-tags-configuration.md#aio-integration)。
 
-請參 [閱設定Experience Manager，以便為要設定智慧標籤的任務](smart-tags-configuration.md) ，智慧標籤資產。 在後端，伺服器會先 [!DNL Experience Manager] 使用Adobe Developer Console閘道驗證您的服務認證，然後再將您的要求轉送至智慧標籤服務。
+您可以使用 [!DNL Adobe Experience Manager] 與智慧標籤整合 [!DNL Adobe Developer Console]。 使用此配置可從中訪問智慧標籤服務 [!DNL Experience Manager]。 請參 [閱設定Experience Manager，以便為要設定智慧標籤的任務](smart-tags-configuration.md) ，智慧標籤資產。 At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
 ## 瞭解標籤模型和准則 {#understand-tag-models-guidelines}
 
@@ -58,15 +60,15 @@ ht-degree: 5%
 
 **數量和大小：** 每個標籤最少10個影像，最多50個影像。
 
-**一致性**: 標籤的影像應類似視覺效果。 最好將相同視覺層面（例如影像中相同類型的物件）的標籤一起新增至單一標籤模型。 例如，將所有這些影像標籤為（用於訓練）並不 `my-party` 好，因為它們的視覺上不類似。
+**一致性**:標籤的影像應類似視覺效果。 最好將相同視覺層面（例如影像中相同類型的物件）的標籤一起新增至單一標籤模型。 例如，將所有這些影像標籤為（用於訓練）並不 `my-party` 好，因為它們的視覺上不類似。
 
 ![示例性影像，以示訓練指南](assets/do-not-localize/coherence.png)
 
-**涵蓋範圍**: 培訓中的影像應該有足夠的多樣性。 其想法是提供幾個相當多樣化的範例，讓AEM學會專注在正確的事物上。 如果您要在視覺上不相同的影像上套用相同的標籤，請至少包含5種不同類型的範例。 例如，對於標籤下模 *式姿勢*，請加入更多類似下方反白顯示影像的訓練影像，讓服務在標籤時更精確地識別類似影像。
+**涵蓋範圍**:培訓中的影像應該有足夠的多樣性。 其想法是提供幾個相當多樣化的範例，讓AEM學會專注在正確的事物上。 如果您要在視覺上不相同的影像上套用相同的標籤，請至少包含5種不同類型的範例。 例如，對於標籤下模 *式姿勢*，請加入更多類似下方反白顯示影像的訓練影像，讓服務在標籤時更精確地識別類似影像。
 
 ![示例性影像，以示訓練指南](assets/do-not-localize/coverage_1.png)
 
-**干擾／妨礙**: 該服務更能訓練那些分散注意力的影像（突出的背景、不相關的伴奏，如主題的物體／人）。 例如，對於標籤休閒 *鞋*，第二張影像不是好的訓練候選影像。
+**干擾／妨礙**:該服務更能訓練那些分散注意力的影像（突出的背景、不相關的伴奏，如主題的物體／人）。 例如，對於標籤休閒 *鞋*，第二張影像不是好的訓練候選影像。
 
 ![示例性影像，以示訓練指南](assets/do-not-localize/distraction.png)
 
@@ -74,13 +76,13 @@ ht-degree: 5%
 
 ![示例性影像，以示訓練指南](assets/do-not-localize/completeness.png)
 
-**標籤數**: Adobe建議您使用至少兩個不同的標籤和至少10個不同的影像來訓練模型。 在單一標籤模型中，請勿新增超過50個標籤。
+**標籤數**:Adobe建議您使用至少兩個不同的標籤和至少10個不同的影像來訓練模型。 在單一標籤模型中，請勿新增超過50個標籤。
 
-**範例數**: 對於每個標籤，請至少新增10個範例。 不過，Adobe建議使用約30個範例。 每個標籤最多支援50個範例。
+**範例數**:對於每個標籤，請至少新增10個範例。 不過，Adobe建議使用約30個範例。 每個標籤最多支援50個範例。
 
-**防止誤報和衝突**: Adobe建議針對單一視覺化方面建立單一標籤模型。 以避免模型之間重疊標籤的方式來建構標籤模型。 例如，請勿使用常用標籤，例如在兩 `sneakers` 種不同的標籤模型名稱 `shoes` 和 `footwear`中。 訓練程式會覆寫一個已訓練的標籤模型與另一個模型，以取代一個常用關鍵字。
+**防止誤報和衝突**:Adobe建議針對單一視覺化方面建立單一標籤模型。 以避免模型之間重疊標籤的方式來建構標籤模型。 例如，請勿使用常用標籤，例如在兩 `sneakers` 種不同的標籤模型名稱 `shoes` 和 `footwear`中。 訓練程式會覆寫一個已訓練的標籤模型與另一個模型，以取代一個常用關鍵字。
 
-**範例**: 其他的指引範例包括：
+**範例**:其他的指引範例包括：
 
 * 建立包含、
    * 只有與車型相關的標籤。
@@ -90,7 +92,7 @@ ht-degree: 5%
    * 一種標籤模型，包括2019年和2020年發佈的車型。
    * 包含相同數種車型的多種標籤模型。
 
-**用於訓練的影像**: 您可以使用相同的影像來訓練不同的標籤模型。 不過，不會將影像與標籤模型中的多個標籤產生關聯。 因此，可以使用屬於不同標籤模型的不同標籤來標籤相同影像。
+**用於訓練的影像**:您可以使用相同的影像來訓練不同的標籤模型。 不過，不會將影像與標籤模型中的多個標籤產生關聯。 因此，可以使用屬於不同標籤模型的不同標籤來標籤相同影像。
 
 您無法復原培訓。 上述准則應協助您選擇要訓練的好影像。
 
@@ -108,7 +110,7 @@ ht-degree: 5%
 
 ![用於訓練標籤模型以用於智慧標籤的工作流](assets/smart-tag-model-training-flow.png)
 
-*圖： 培訓工作流程中訓練標籤模型的步驟。*
+*圖：培訓工作流程中訓練標籤模型的步驟。*
 
 ### 檢視培訓狀態和報告 {#training-status}
 
