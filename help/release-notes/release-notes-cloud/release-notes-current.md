@@ -1,18 +1,22 @@
 ---
-title: 2020.8.0版雲端服務 [!DNL Adobe Experience Manager] 的發行說明。
-description: '[!DNL Adobe Experience Manager]作為2020.8.0版雲端服務發行說明。'
+title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.8.0 版發行說明。'
+description: '[!DNL Adobe Experience Manager] 雲端服務 2020.8.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
+source-git-commit: bb5bf9527da7ed9039740ef6d0bab27cfd21b84e
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 6%
+source-wordcount: '525'
+ht-degree: 11%
 
 ---
 
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# [!DNL Adobe Experience Manager] 雲端服務 2020.8.0 版發行說明 {#release-notes}
 
 以下章節概述 Experience Manager 雲端服務 2020.8.0 版的一般發行說明。
+
+## [!DNL Adobe Experience Manager Assets] 雲端服務 {#assets}
+
+* 新部署 [!DNL Experience Manager Assets] 預設會與 [!DNL Adobe Developer Console] 整合。 它可協助您更快速地設定智慧標籤功能。 在現有的部署中，管理員 [會像以前一樣設定智慧標籤](/help/assets/smart-tags-configuration.md#aio-integration) 整合。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
