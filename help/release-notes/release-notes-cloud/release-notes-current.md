@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.8.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 雲端服務 2020.8.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: bb5bf9527da7ed9039740ef6d0bab27cfd21b84e
+source-git-commit: 5a53e13a3692fbb8ab3ae7760f13b6908d15db3a
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 11%
+source-wordcount: '544'
+ht-degree: 13%
 
 ---
 
@@ -43,6 +43,8 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 * 高眠環境可以從Cloud Manager的「概述」頁面中解除高 **眠** 。
 
 * 現在支援驗證綁定的專用Maven儲存庫。
+
+* Cloud Manager 建置容器現可支援 Java 8 和 Java 11。如需詳細 [資訊，請參閱「使用Java 11支援](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) 」。
 
 ### 錯誤修正 {#bug-fixes-cm}
 
