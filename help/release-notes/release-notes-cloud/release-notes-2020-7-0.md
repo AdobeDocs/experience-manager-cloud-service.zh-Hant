@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.7.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 雲端服務 2020.7.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
+source-git-commit: 4211a4d95be6e625b283e3142609923245da8d31
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 92%
+source-wordcount: '1056'
+ht-degree: 80%
 
 ---
 
@@ -30,11 +30,11 @@ ht-degree: 92%
 
 * 設定現在會儲存在 Experience Manager 存放庫的 `/conf`，而非 `/etc/cloudsettings`。
 
-## Adobe Experience Manager Assets 雲端服務 {#assets}
+## [!DNL Adobe Experience Manager Assets] 雲端服務 {#assets}
 
-### 新功能 {#what-is-new-assets}
+### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] 是可擴充的資產處理服務。Administrators can configure Experience Manager to invoke custom applications created using the [!DNL Asset Compute Service]. 開發人員可使用本服務來建立專業的自訂應用程式，以配合複雜的使用案例。 此網路服務可針對不同的檔案類型產生縮圖、以 Adobe 檔案格式產生高品質的影像轉譯、影片編碼 (未來功能)、擷取中繼資料、擷取全文作為索引前導，以及透過所有可用的 Sensei 服務執行資產。請參閱[使用資產微服務和處理設定檔](/help/assets/asset-microservices-configure-and-use.md)。
+* [!DNL Asset Compute Service] 是可擴充的資產處理服務。Administrators can configure [!DNL Experience Manager] to invoke custom applications created using the [!DNL Asset Compute Service]. 開發人員可使用本服務來建立專業的自訂應用程式，以配合複雜的使用案例。 This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available [!DNL Sensei] services. see [use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
 
 * [!DNL Experience Manager] 雲端服務中 [!DNL Dynamic Media] 的初始設定經過改良，更加健全。現在可為管理員提供處理程序的進度。
 
@@ -42,7 +42,13 @@ ht-degree: 92%
 
 * 若工作流程步驟與雲端服務部署不相容，系統會在[!UICONTROL 工作流程模型]編輯器中標示警告。此外，在雲端服務環境中執行現有工作流程時，系統會略過不相容的工作流程步驟。
 
-* 在與 Cloud Manager 環境相關聯的 Git 專案中，由客戶建立且部署至 `/conf/global` 的工作流程模型會自動部署至 `/var`，因此可在 Experience Manager 中存取。`/libs` 底下經客戶變更的產品工作流程模型則不會自動部署至 `/var`。
+* Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in [!DNL Cloud Manager] are automatically deployed to `/var` and thus available in [!DNL Experience Manager]. `/libs` 底下經客戶變更的產品工作流程模型則不會自動部署至 `/var`。
+
+### 修正的錯誤 {#assets-bugs-fixed}
+
+* 「移動資產」精靈不會如預期載入包含在「系列」中的資產。 (CQ-4296756)
+* XMP回寫 `dam:size` 中不 `dam:sha1` 包括和的值。 (CQ-4237355)
+* 大量取消發佈資產時， [!DNL Brand Portal] 會產生錯誤，指出請求URI太長。 (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
