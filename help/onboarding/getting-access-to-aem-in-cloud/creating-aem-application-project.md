@@ -2,9 +2,9 @@
 title: AEM應用程式專案——雲端服務
 description: AEM應用程式專案——雲端服務
 translation-type: tm+mt
-source-git-commit: 2a89c8039f3d2135d8944822d3a4381142bbdb75
+source-git-commit: 696014ea61c049e719c8c9fdccc2a85b087c2466
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1549'
 ht-degree: 9%
 
 ---
@@ -78,7 +78,9 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
 
 ### 使用Java 11支援 {#using-java-support}
 
-Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設，專案是使用Java 8建立。 想要在專案中使用Java 11的客戶可使用Maven Toolchains外掛程式。
+Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設，專案是使用Java 8建立。
+
+想要在其專案中使用Java 11的客戶，可使用 [Apache Maven Toolchains外掛程式](https://maven.apache.org/plugins/maven-toolchains-plugin/)。
 
 若要這麼做，請在pom.xml檔案中新增 `<plugin>` 如下的項目：
 
@@ -107,6 +109,7 @@ Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設�
 
 >[!NOTE]
 >支援的供應商 `oracle` 值是 `sun`。
+>
 >支援的版 `1.8`本值 `1.11`有、和 `11`。
 
 ## 環境變數 {#environment-variables}
