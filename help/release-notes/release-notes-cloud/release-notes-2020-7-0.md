@@ -1,48 +1,48 @@
 ---
-title: 2020.7.0版雲端服務 [!DNL Adobe Experience Manager] 的發行說明。
-description: '[!DNL Adobe Experience Manager]作為2020.7.0版雲端服務發行說明。'
+title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.7.0 版發行說明。'
+description: '[!DNL Adobe Experience Manager] 雲端服務 2020.7.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
+source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 37%
+source-wordcount: '1018'
+ht-degree: 92%
 
 ---
 
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
+# [!DNL Adobe Experience Manager] 雲端服務 2020.7.0 版發行說明 {#release-notes}
 
 以下章節概述 Experience Manager 雲端服務 2020.7.0 版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 30, 2020.
+[!DNL Experience Manager] 雲端服務 2020.7.0 版的發行日期為 2020 年 7 月 30 日。
 
-## Adobe Experience Manager Sites雲端服務 {#cloud-services-sites}
+## Adobe Experience Manager Sites 雲端服務 {#cloud-services-sites}
 
 ### 新功能 {#what-is-new-sites}
 
-[!DNL Experience Manager] 作為雲端服務連接器， [!DNL Adobe Target] 並 [!DNL Adobe Analytics] 透過下列方式加強：
+適用於 [!DNL Adobe Target] 和 [!DNL Adobe Analytics] 的 [!DNL Experience Manager] 雲端服務連接器已完成以下強化：
 
-* 新的使用者介面實作會取代以Classic UI為基礎的實作。
+* 新版使用者介面實作會取代以傳統版 UI 為基礎的實作。
 
-* 簡化使用者介面對話方塊，讓變數對應和其他組態的架構建立作業留待 [!DNL Adobe Launch]。 請參 [閱整合Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html)[與整合Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)。
+* 簡化使用者介面對話方塊，將變數對應的框架建立作業和其他設定保留給 [!DNL Adobe Launch]。請參閱[整合 Adobe Analytics](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 和[整合 Adobe Target](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)。
 
-* 配置現在會儲存在 `/conf` Experience Manager資 `/etc/cloudsettings` 料庫中，而非儲存在。
+* 設定現在會儲存在 Experience Manager 存放庫的 `/conf`，而非 `/etc/cloudsettings`。
 
 ## Adobe Experience Manager Assets 雲端服務 {#assets}
 
 ### 新功能 {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] 是可擴充且可擴充的服務，可處理資產。 管理員可以設定Experience Manager來叫用使用建立的自訂應用程式 [!DNL Asset Compute Service]。 開發人員可使用本服務來建立專業的自訂應用程式，以配合複雜的使用案例。 此網站服務可針對不同的檔案類型產生縮圖、從Adobe檔案格式產生高品質的影像轉譯、編碼視訊（未來）、擷取中繼資料、擷取全文做為索引的先驅，並透過所有可用的Sensei服務執行資產。 請參 [閱使用資產微服務和處理配置檔案](/help/assets/asset-microservices-configure-and-use.md)。
+* [!DNL Asset Compute Service] 是可擴充的資產處理服務。Administrators can configure Experience Manager to invoke custom applications created using the [!DNL Asset Compute Service]. 開發人員可使用本服務來建立專業的自訂應用程式，以配合複雜的使用案例。 此網路服務可針對不同的檔案類型產生縮圖、以 Adobe 檔案格式產生高品質的影像轉譯、影片編碼 (未來功能)、擷取中繼資料、擷取全文作為索引前導，以及透過所有可用的 Sensei 服務執行資產。請參閱[使用資產微服務和處理設定檔](/help/assets/asset-microservices-configure-and-use.md)。
 
-* 將初始配置 [!DNL Dynamic Media] 改 [!DNL Experience Manager] 進為雲端服務，使其更強穩。 現在，它可為管理員提供流程的進度。
+* [!DNL Experience Manager] 雲端服務中 [!DNL Dynamic Media] 的初始設定經過改良，更加健全。現在可為管理員提供處理程序的進度。
 
-* 將資產發佈至 [!DNL Dynamic Media] 簡化並增強其強穩性，因為它是使用資產微服務的整體資產處理管道的一部分，並改善批次發佈後端。
+* 將資產發佈至 [!DNL Dynamic Media] 的程序已簡化，且功能更健全。現在這是整體資產處理管道的重要環節，不僅使用資產微服務，並改善批次發佈後端。
 
-* 與雲端服務部署不相容的工作流程步驟現在會在工作流程模型編輯器中標示 [!UICONTROL 為警告] 。 此外，在雲端服務環境上執行現有工作流程時，會略過不相容的工作流程步驟。
+* 若工作流程步驟與雲端服務部署不相容，系統會在[!UICONTROL 工作流程模型]編輯器中標示警告。此外，在雲端服務環境中執行現有工作流程時，系統會略過不相容的工作流程步驟。
 
-* 由客戶在與Cloud Manager中的環境相關聯的Git專案中 `/conf/global` 所建立的工作流程模型會自動部署至Experience Manager中， `/var` 並因此可供使用。 客戶所變更的產 `/libs` 品工作流程模型不會自動部署至 `/var`。
+* 在與 Cloud Manager 環境相關聯的 Git 專案中，由客戶建立且部署至 `/conf/global` 的工作流程模型會自動部署至 `/var`，因此可在 Experience Manager 中存取。`/libs` 底下經客戶變更的產品工作流程模型則不會自動部署至 `/var`。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -56,16 +56,16 @@ AEM Commerce現在可在Cloud Service上使用。
 
 ### 新功能 {#what-is-new-core-components}
 
-Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
+[AEM 核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) 2.11.0 版現在隨附於 AEM Sites，其中包含：
 
-* 新的 [PDF檢視器元件簡介](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)。
+* 導入最新 [PDF 檢視器元件](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)。
 
-* 現在提供核心元件的加速行動頁面(AMP)支援。 從Google行動搜尋結果進入網站時，透過即時轉換頁面，有助於提高客戶體驗，進而改善使用者參與度和搜尋引擎最佳化(SEO)。
-有關詳細 [資訊，請參閱核心元件的AMP](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/amp.html) 支援。
+* 提供核心元件的 Accelerated Mobile Pages (AMP) 支援。從 Google 行動搜尋結果進入網站時，系統會即時轉換頁面，有助於提供更快速的客戶體驗，進而改善使用者參與和 SEO。
+如需詳細資訊，請參閱[核心元件的 AMP 支援](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/amp.html)。
 
-* 與 [Adobe Client資料層1.0.2版相容](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)。
+* 與 [Adobe 用戶端資料層](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/data-layer/overview.html) 1.0.2 版相容。
 
-* 錯誤修正和程式碼品質改良。
+* 錯誤修正並提升程式碼品質。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -84,6 +84,10 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 * Cloud Manager 管道現在支援客戶設定變數和機密。
 
    如需詳細資訊，請參閱[管道變數](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables)。
+
+* 現在支援驗證綁定的專用Maven儲存庫。
+
+* Cloud Manager 建置容器現可支援 Java 8 和 Java 11。如需詳細 [資訊，請參閱「使用Java 11支援](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) 」。
 
 ### 錯誤修正 {#bug-fixes-cm}
 
@@ -105,19 +109,19 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 ### 已知問題 {#known-issues}
 
-* 由於程式碼涵蓋範圍的計算方式有所變更，Jacoco 外掛程式的&#x200B;*最低*&#x200B;版本現在是 0.7.5.201505241946 (2015 年 5 月發佈)。明確參照舊版的客戶會在程式碼品質程式中收到錯誤訊息。
+* 由於程式碼涵蓋範圍的計算方式有所變更，Jacoco 外掛程式的&#x200B;*最低*&#x200B;版本現在是 0.7.5.201505241946 (2015 年 5 月發佈)。若客戶明確參考較舊版本，會在程式碼品質處理程序中收到錯誤訊息。
 
-## Adobe Experience Manager雲端服務基礎 {#cloud-foundation}
+## Adobe Experience Manager 雲端服務基礎 {#cloud-foundation}
 
 ### 新功能 {#what-is-new-foundations}
 
-* [日誌可以轉發到Splunk帳戶](/help/implementing/developing/introduction/logging.md#splunk-logs)，這允許組織利用其Splunk投資。
+* [記錄檔可以轉送至 Splunk 帳戶](/help/implementing/developing/introduction/logging.md#splunk-logs)，方便組織運用 Splunk 投資。
 
-* [可為以Java代碼寫程式的出站通信分配靜態](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) 、專用的出站IP地址，這對某些整合可能非常有用。
+* 可為以 Java 程式碼編寫的傳出流量指派[靜態的專屬輸出 IP 位址](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address)，這對某些整合功能可能會相當實用。
 
-* 將AEM Analytics雲端服務UI從Classic UI移植到新的AEM UI。 此外，也將Analytics雲端服務在AEM儲存庫中的位置 `/etc` 從移 `/conf`至，以與其他AEM雲端服務一致。
+* 將 AEM Analytics 雲端服務 UI 從傳統版 UI 移植到新版 AEM UI。另外，Analytics 雲端服務在 AEM 存放庫中的位置也已從 `/etc` 移至 `/conf`，與其他 AEM 雲端服務一致。
 
-* 將AEM Target雲端服務UI從Classic UI移植至新的AEM UI。 也將AEM儲存庫中Target雲端服務的位置從移 `/etc` 動到 `/conf`，以與其他AEM雲端服務一致。
+* 將 AEM Target 雲端服務 UI 從傳統版 UI 移植到新版 AEM UI。另外，Target 雲端服務在 AEM 存放庫中的位置也已從 `/etc` 移至 `/conf`，與其他 AEM 雲端服務一致。
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
