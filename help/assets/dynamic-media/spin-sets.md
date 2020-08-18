@@ -2,9 +2,9 @@
 title: 迴轉集
 description: 瞭解如何在動態媒體中處理回轉集
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1804'
 ht-degree: 13%
 
 ---
@@ -24,7 +24,7 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 >
 >如需「資產」使用者介面的詳細資訊，請參 [閱「使用Touch UI管理資產」](/help/assets/manage-digital-assets.md)。
 
-## 快速入門： 回轉集 {#quick-start-spin-sets}
+## 快速入門：回轉集 {#quick-start-spin-sets}
 
 若要快速啟動並執行回轉集，請依照下列步驟進行：
 
@@ -81,7 +81,7 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 以下是回轉集影像的一些最佳實務。 一般而言，旋轉集中的影像越多，影像旋轉效果就越好。 不過，在集合中加入許多影像也會增加影像載入所花的時間。 AEM建議拍攝影像的下列准則，以用於回轉集：
 
 * 至少，在一維回轉集中使用8-12張影像，在二維回轉集中使用16-24張影像。 至少需要8張影像才能旋轉360度。 一維回轉集比較常見，因為建立二維回轉集耗費大量人力。
-* 使用無損格式； 建議使用TIFF和PNG。
+* 使用無損格式；建議使用TIFF和PNG。
 * 遮色所有影像，讓項目出現在純白色或其他高對比背景上。 （可選）添加陰影。
 * 請確定產品詳細資訊已清楚標示，並集中注意。
 * 為具有人體模型或模特兒的時尚服裝拍攝旋轉影像。 通常，假人模型要麼是完全遮色的（使用玻璃模型），要麼在圖中顯示風格化的假人模型／服裝。 通過定義角度數，可建立模型上的回轉集。 在地板上用磁帶標籤每個角度，以引導模型向每個拍攝方向步移和查看。
@@ -121,7 +121,7 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
    * 在「回轉集編輯器」頁面的中間，點選「點選」 **[!UICONTROL 以開啟「資產選擇器」]**。
    點選以選取您要納入回轉集中的資產。 選取的資產上面有核取標籤圖示。When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
-   使用「資產選擇器」，您可以輸入關鍵字並點選 **[!UICONTROL Return**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後點選工具 **[!UICONTROL 列上的]** 「篩選」圖示。點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 ****。
+   使用「資產選擇器」，您可以輸入關鍵字並點選「回報」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後點選工具 **[!UICONTROL 列上的]** 「篩選」圖示。點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 ****。
 
    See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
