@@ -2,10 +2,10 @@
 title: 預覽資產
 description: 瞭解如何在動態媒體中預覽資產
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 4%
+source-wordcount: '1213'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 4%
 
 **若要預覽資產**
 
-1. 在 **[!UICONTROL Adobe Experience Manager**，在 **[!UICONTROL導覽頁面上，點選「資產** 」，然後點選「檔 ******** 案」以存取資產。
+1. From **[!UICONTROL Adobe Experience Manager]**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
 1. 在頁面的右上角附近，從「檢視」下拉式清單 **[!UICONTROL 中]** ，點選「清 **[!UICONTROL 單檢視」]**。
 1. （可選）使用 **[!UICONTROL Type]** 欄，依您要預覽的類型排序資產。
 1. 在「標 **[!UICONTROL 題]** 」欄下方，按一下您要預覽之資產的標題名稱（而非縮圖影像）。
@@ -54,10 +54,10 @@ ht-degree: 4%
       </ul>
       <p><strong>導覽3D場景</strong></p>
       <ul>
-      <li><p><strong>轉動您的3D相機</strong> -圍繞3D場景和物件環繞視圖。</p> 滑鼠： 左鍵按一下+拖動。 </p> 觸控螢幕： 按+拖曳。</p></li>
-      <li><p><strong>平移您的相機</strong> -向左、向右、向上和向下平移您的檢視。</p> 滑鼠： 按一下右鍵+拖動。 </p> 觸控螢幕： 雙指按+拖曳。</p></li>
-      <li><p><strong>縮放您的相機</strong> -縮放您的相機，以在3D場景中移入和移出區域。</p> 滑鼠： 滾輪。 </p> 觸控螢幕： 手指捏。</p></li>
-      <li><p><strong>重新輸入您的相機</strong> -環繞3D場景和物件環繞視圖。</p> 滑鼠： 按兩下。 </p> 觸控螢幕： 點兩下。</li></ul></td>
+      <li><p><strong>轉動您的3D相機</strong> -圍繞3D場景和物件環繞視圖。</p> 滑鼠：左鍵按一下+拖動。 </p> 觸控螢幕：按+拖曳。</p></li>
+      <li><p><strong>平移您的相機</strong> -向左、向右、向上和向下平移您的檢視。</p> 滑鼠：按一下右鍵+拖動。 </p> 觸控螢幕：雙指按+拖曳。</p></li>
+      <li><p><strong>縮放您的相機</strong> -縮放您的相機，以在3D場景中移入和移出區域。</p> 滑鼠：滾輪。 </p> 觸控螢幕：手指捏。</p></li>
+      <li><p><strong>重新輸入您的相機</strong> -環繞3D場景和物件環繞視圖。</p> 滑鼠：按兩下。 </p> 觸控螢幕：點兩下。</li></ul></td>
       </tr>
       <tr>
       <td><p>影像</p> </td>
