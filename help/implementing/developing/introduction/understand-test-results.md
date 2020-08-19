@@ -2,9 +2,9 @@
 title: 瞭解您的測試結果——雲端服務
 description: 瞭解測試結果——雲端服務
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1700'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,13 @@ Cloud Manager for Cloud Services Pipeline支援的測試有三大類：
 
 ## 程式碼品質測試 {#code-quality-testing}
 
-作為管道的一部分，會掃描原始碼，以確保部署符合特定的質量標準。 目前，這是由SonarQube和使用OakPAL的內容封裝層級檢查組合來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 下表摘要了測試標準的評分：
+此步驟會評估您的應用程式碼的品質。 它是僅限程式碼品質管道的核心目標，並會立即在所有非生產及生產管道的建立步驟後執行。
+
+請參 [閱配置CI-CD管線](/help/implementing/cloud-manager/configure-pipeline.md) ，以進一步瞭解不同類型的管線。
+
+在程式碼品質測試中，會掃描原始碼，以確保其部署符合特定品質標準。 目前，這是由SonarQube和使用OakPAL的內容封裝層級檢查組合來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 部分AEM特定規則是根據AEM Engineering的最佳實務建立，並稱為「自訂程式碼 [品質規則」](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
+
+此步驟的結果會以「評 *分」*。 下表摘要了各種測試標準的評分：
 
 | 名稱 | 定義 | 類別 | 故障閾值 |
 |--- |--- |--- |--- |
@@ -46,11 +52,12 @@ Cloud Manager for Cloud Services Pipeline支援的測試有三大類：
 | 雲端服務相容性 | 已識別的雲端服務相容性問題數目。 | 資訊 | > 0 |
 
 
+您可以在此處下載規 [則清單-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
+
 >[!NOTE]
 >
 >請參閱 [量度定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) ，以取得詳細定義。
 
-您可以在此處下載規 [則清單-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
