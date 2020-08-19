@@ -2,7 +2,7 @@
 title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
-source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
+source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -87,7 +87,7 @@ ht-degree: 0%
    >[!NOTE]
    > 設定的頁面會提交至服務，並根據效能、協助工具、搜尋引擎最佳化(SEO)、最佳實務和PWA（漸進式網頁應用程式）測試進行評估。
 
-   如需詳細 [資訊，請參閱瞭解內容審核結果](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 。
+   如需詳細 [資訊，請參閱瞭解內容審核結果](/help/implementing/cloud-manager/content-audit-testing.md) 。
 
    按一下「 **新增頁面覆寫** 」，提供要包含在「內容審核」中的URL路徑。 新增路徑後，按一下「 **儲存**」。
 
