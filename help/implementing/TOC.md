@@ -2,11 +2,11 @@
 sub-product: AEM 雲端服務實作
 user-guide-title: AEM 雲端服務實作
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
-translation-type: ht
-source-git-commit: f3d2d72dd9a0e025a3a88eecfd2b3ce466262093
-workflow-type: ht
-source-wordcount: '237'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 96%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 100%
    + [管理環境](cloud-manager/manage-environments.md)
    + [設定 CI/CD 管道](cloud-manager/configure-pipeline.md)
    + [部署程式碼](cloud-manager/deploy-code.md)
+   + 了解測試結果 {#test-results}
+      + [概覽](/help/implementing/cloud-manager/overview-test-results.md)
+      + [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [功能測試](/help/implementing/cloud-manager/functional-testing.md)
+      + [內容審核測試](/help/implementing/cloud-manager/content-audit-testing.md)
    + [了解自訂程式碼品質規則](cloud-manager/custom-code-quality-rules.md)
    + [存取和管理記錄檔](cloud-manager/manage-logs.md)
    + [了解通知](cloud-manager/notifications.md)
@@ -37,7 +42,6 @@ ht-degree: 100%
    + [AEM 雲端服務中的覆蓋](developing/introduction/overlays.md)
    + [記錄](developing/introduction/logging.md)
    + [AEM 雲端服務 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-   + [了解測試結果](/help/implementing/developing/introduction/understand-test-results.md)
 + 設定和擴充 AEM 雲端服務 {#configuring-and-extending}
    + [擴充體驗片段](developing/extending/experience-fragments.md)
    + [自訂和擴充內容片段](developing/extending/content-fragments-customizing.md)
