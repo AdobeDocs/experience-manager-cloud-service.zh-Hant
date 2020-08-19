@@ -2,9 +2,9 @@
 title: 瞭解您的測試結果——雲端服務
 description: 瞭解測試結果——雲端服務
 translation-type: tm+mt
-source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
+source-git-commit: bf0ecdfa4685d7ce9b26266e19af71199dd117a4
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1703'
 ht-degree: 3%
 
 ---
@@ -36,9 +36,13 @@ Cloud Manager for Cloud Services Pipeline支援的測試有三大類：
 
 請參 [閱配置CI-CD管線](/help/implementing/cloud-manager/configure-pipeline.md) ，以進一步瞭解不同類型的管線。
 
+### 了解自訂程式碼品質規則 {#understanding-code-quality-rules}
+
 在程式碼品質測試中，會掃描原始碼，以確保其部署符合特定品質標準。 目前，這是由SonarQube和使用OakPAL的內容封裝層級檢查組合來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 部分AEM特定規則是根據AEM Engineering的最佳實務建立，並稱為「自訂程式碼 [品質規則」](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
 
-此步驟的結果會以「評 *分」*。 下表摘要了各種測試標準的評分：
+您可以在這裡下載規則 [清單](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)。
+
+此步驟的結果會以「評 *分」*。 下表摘要了測試標準的評分：
 
 | 名稱 | 定義 | 類別 | 故障閾值 |
 |--- |--- |--- |--- |
@@ -50,9 +54,6 @@ Cloud Manager for Cloud Services Pipeline支援的測試有三大類：
 | 未結問題 | 整體問題類型——弱點、錯誤和程式碼氣味 | 資訊 | > 0 |
 | 複製行 | 重複塊中涉及的行數。 <br/>對於要視為複製的代碼塊： <br/><ul><li>**非Java專案：**</li><li>至少應有100個連續和重複的Token。</li><li>這些預付碼應至少分散於： </li><li>COBOL的30行代碼 </li><li>ABAP的20行代碼 </li><li>10行其他語言的程式碼</li><li>**Java專案：**</li><li> 不論預付碼和行數為何，至少應有10個連續和重複的陳述式。</li></ul> <br/>在檢測重複時，會忽略縮排和字串文字的差異。 | 資訊 | > 1% |
 | 雲端服務相容性 | 已識別的雲端服務相容性問題數目。 | 資訊 | > 0 |
-
-
-您可以在此處下載規 [則清單-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
