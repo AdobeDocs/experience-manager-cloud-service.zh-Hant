@@ -2,10 +2,10 @@
 title: 部署您的程式碼——雲端服務
 description: 部署您的程式碼——雲端服務
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 3%
+source-wordcount: '984'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 ## 使用Cloud Manager部署程式碼 {#deploying-code-with-cloud-manager}
 
-在配置了 **Pipeline**  (儲存庫、環境和測試環境) 後，您就可以部署代碼。
+Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
 
 1. 按一 **下** 「從雲端管理員部署」，開始部署程式。
 
