@@ -3,7 +3,7 @@ title: 設定並使用資產微服務進行資產處理
 description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
+source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
 workflow-type: tm+mt
 source-wordcount: '2537'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# 使用資產微型服務和處理設定檔 {#get-started-using-asset-microservices}
+# Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
 <!--
 * Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
@@ -48,7 +48,7 @@ Experience Manager可提供下列處理層級。
 |---|---|---|
 | [預設設定](#default-config) | 它可以按原樣使用，而且不能修改。 此設定提供非常基本的轉譯產生功能。 | <ul> <li>使用者介面使 [!DNL Assets] 用的標準縮圖（48、140和319像素） </li> <li> 大型預覽（網頁轉譯- 1280 px） </li><li> 中繼資料和文字擷取。</li></ul> |
 | [自訂設定](#standard-config) | 由管理員透過使用者介面設定。 延伸預設選項，提供產生轉譯的更多選項。 擴充現成可用的選項，以提供不同的格式和轉譯。 | <ul><li>FPO轉譯。 </li> <li>變更影像的檔案格式和解析度</li> <li> 有條件地套用至已設定的檔案類型。 </li> </ul> |
-| [自訂設定檔](#custom-config) | 由管理員透過使用者介面設定，以透過自訂應用程式使用自訂代碼來叫 [用Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 支援雲端原生和可擴充方式中更複雜的需求。 | 請參閱 [允許的使用案例](#custom-config)。 |
+| [自訂設定檔](#custom-config) | 由管理員透過使用者介面設定，透過自訂應用程式使用自訂代碼，以呼叫 [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 支援雲端原生和可擴充方式中更複雜的需求。 | 請參閱 [允許的使用案例](#custom-config)。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -110,7 +110,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 自訂描述檔和使用案例 {#custom-config}
 
-支 [!DNL Asset Compute Service] 援多種使用案例，例如預設處理、處理Adobe特定格式（例如Photoshop檔案），以及實作自訂或組織特定處理。 過去需要的DAM更新資產工作流程自訂會自動處理，或透過處理設定檔設定處理。 如果這些處理選項未能滿足企業需求，Adobe建議您開發並使用來 [!DNL Asset Compute Service] 擴充預設功能。 如需概觀，請參 [閱瞭解擴充性及使用時機](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
+支 [!DNL Asset Compute Service] 援多種使用案例，例如預設處理、處理Adobe特定格式（例如Photoshop檔案），以及實作自訂或組織特定處理。 過去需要的DAM更新資產工作流程自訂會自動處理，或是透過處理設定檔設定來處理。 如果這些處理選項未能滿足企業需求，Adobe建議您開發並使用來 [!DNL Asset Compute Service] 擴充預設功能。 如需概觀，請參 [閱瞭解擴充性及使用時機](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
 
 >[!NOTE]
 >
@@ -118,10 +118,10 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 它可將影像、視訊、檔案和其他檔案格式轉換為不同的轉譯，包括縮圖、擷取的文字和中繼資料，以及封存。
 
-開發人員可使用 [!DNL Asset Compute Service] 來建 [立自訂應用程式](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) ，以符合支援的使用案例。 [!DNL Experience Manager] 可以使用管理員設定的自訂設定檔，從使用者介面叫用這些自訂應用程式。 [!DNL Asset Compute Service] 支援以下調用外部服務的使用案例：
+開發人員可使用 [!DNL Asset Compute Service] 來建 [立自訂應用程式](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) ，以符合支援的使用案例。 [!DNL Experience Manager] 可以使用管理員設定的自訂設定檔，從使用者介面呼叫這些自訂應用程式。 [!DNL Asset Compute Service] 支援以下調用外部服務的使用案例：
 
 * 使用 [!DNL Adobe Photoshop]的 [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ，並將結果儲存為轉譯。
-* 叫用協力廠商系統以更新資料，例如PIM系統。
+* 呼叫協力廠商系統以更新資料，例如PIM系統。
 * 使用 [!DNL Photoshop] API以Photoshop範本產生各種轉譯。
 * 使用 [Adobe Lightroom API](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) ，最佳化所擷取的資產，並將其儲存為轉譯。
 
@@ -154,7 +154,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 為了說明自訂描述檔的使用情形，我們考慮將一些自訂文字套用至促銷活動影像的使用案例。 您可以建立處理設定檔，以運用Photoshop API來編輯影像。
 
-資產計算服務整合可讓Experience Manager使用「服務參數」欄位將這些參數傳遞至自訂 [!UICONTROL 應用程式] 。 然後自訂應用程式會叫用Photoshop API，並將這些值傳遞至API。 例如，您可以傳遞字型名稱、文字顏色、文字粗細和文字大小，將自訂文字新增至促銷活動影像。
+資產計算服務整合可讓Experience Manager使用「服務參數」欄位將這些參數傳遞至自訂 [!UICONTROL 應用程式] 。 然後自訂應用程式會呼叫Photoshop API，並將這些值傳遞至API。 例如，您可以傳遞字型名稱、文字顏色、文字粗細和文字大小，將自訂文字新增至促銷活動影像。
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
