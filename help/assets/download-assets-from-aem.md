@@ -1,11 +1,11 @@
 ---
-title: 從 AEM 下載資產
-description: 瞭解如何從AEM下載資產並啟用或停用下載功能。
+title: Download assets from [!DNL Adobe Experience Manager Assets].
+description: 下載資 [!DNL Adobe Experience Manager Assets] 產以啟用或停用下載功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
+source-git-commit: 3cbf0cc85c7c415f6585e92e509eb7fefb5ede82
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '747'
 ht-degree: 4%
 
 ---
@@ -21,17 +21,14 @@ ht-degree: 4%
 
 無法下載資產類型影像集、回轉集、混合媒體集和轉盤集。
 
-**若要下載資產，**
+若要下載資產，請依照下列步驟進行：
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
-1. 在「導覽」頁面上，點選「 **[!UICONTROL 資產>檔案」]**。
-1. 導覽至包含您要下載之資產的檔案夾。
-1. 選取資料夾或選取資料夾內的一或多個資產。
-1. 在工具列上，點選「 **[!UICONTROL 下載」]**。
+1. 在Experience Manager使用者介面中，按一下「 **[!UICONTROL 資產]** > **[!UICONTROL 檔案]**」。
+1. 導覽至您要下載的資產。 選取資料夾或選取資料夾內的一或多個資產。 在工具列上，按一下「 **[!UICONTROL 下載]**」。
 
-   ![從Experience Manager Assets下載資產時的可用選項](/help/assets/assets/asset-download1.png)
+   ![從下載資產時的可用選項 [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
 
-   *下載對話框選項。*
+   *圖：下載對話框選項。*
 
 1. 在「下載」對話方塊中，選取您想要的下載選項。
 
@@ -44,8 +41,7 @@ ht-degree: 4%
    | **[!UICONTROL 智慧裁切]** | 選取這個選項，可從AEM下載所選資產的所有智慧型裁切轉譯。 系統會建立包含「智慧型裁切」轉譯的zip檔案，並下載至您的本機電腦。 |
    | **[!UICONTROL 動態轉譯]** | 選取此選項，即時產生一連串的替代轉譯。 當您選取此選項時，也可以從「影像預設集」清單中選取您要動態建立的轉 [譯](/help/assets/dynamic-media/image-presets.md) 。 <br>此外，您還可以選取大小和單位、格式、色域、解析度，以及任何可選的影像修飾元，例如反轉影像。 此選項僅在您已啟用時才可 [!DNL Dynamic Media] 用。 |
 
-1. 在對話方塊中，點選「 **[!UICONTROL 下載」]**。
-
+1. 在對話方塊中，按一下「 **[!UICONTROL 下載]**」。
 
 ## 啟用資產下載servlet {#enable-asset-download-servlet}
 
@@ -76,6 +72,6 @@ AEM中的預設servlet可讓已驗證的使用者發出任意大型的並行下�
 >[!MORELIKETHIS]
 >
 >* [下載受DRM保護的資產](drm.md)
->* [在Win或Mac案頭上使用AEM案頭應用程式下載資產](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
+>* [在Win或Mac案頭上使用Experience Manager案頭應用程式下載資產](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
 >* [從支援的Adobe Creative Cloud應用程式使用Adobe Assets Link下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
