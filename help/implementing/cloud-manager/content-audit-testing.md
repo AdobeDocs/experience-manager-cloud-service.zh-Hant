@@ -2,9 +2,9 @@
 title: 內容審核測試——雲端服務
 description: 內容審核測試——雲端服務
 translation-type: tm+mt
-source-git-commit: ce25ec1472dc349937fdbd5f7265d4295fe111e8
+source-git-commit: 4c4e0724185695279801c55db1b6874f351805a4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 內容審核測試 {#content-audit-testing}
 
-「內容審核」是Cloud Manager Sites Production管道中的一項功能，由Google的開放原始碼工具Lighthouse提供支援。 所有Cloud Manager生產管道都啟用了此功能。
+「內容審核」是Google的開放原始碼工具Cloud Manager Sites Production管道中的一項功能。 所有Cloud Manager生產管道都啟用了此功能。
 
 它可驗證部署程式，並協助確保已部署變更：
 
