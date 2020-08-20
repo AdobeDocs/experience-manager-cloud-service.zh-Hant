@@ -3,9 +3,9 @@ sub-product: AEM 雲端服務實作
 user-guide-title: AEM 雲端服務實作
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '245'
 ht-degree: 96%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 96%
    + 了解測試結果 {#test-results}
       + [概覽](/help/implementing/cloud-manager/overview-test-results.md)
       + [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [自訂程式碼品質規則](cloud-manager/custom-code-quality-rules.md)
       + [功能測試](/help/implementing/cloud-manager/functional-testing.md)
       + [內容審核測試](/help/implementing/cloud-manager/content-audit-testing.md)
-   + [了解自訂程式碼品質規則](cloud-manager/custom-code-quality-rules.md)
    + [存取和管理記錄檔](cloud-manager/manage-logs.md)
    + [了解通知](cloud-manager/notifications.md)
 + 管理程式碼 {#managing-code}
