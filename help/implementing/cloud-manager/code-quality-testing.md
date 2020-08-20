@@ -2,10 +2,10 @@
 title: 程式碼品質測試——雲端服務
 description: 程式碼品質測試——雲端服務
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 2%
+source-wordcount: '831'
+ht-degree: 1%
 
 ---
 
@@ -16,14 +16,26 @@ ht-degree: 2%
 
 請參 [閱配置CI-CD管線](/help/implementing/cloud-manager/configure-pipeline.md) ，以進一步瞭解不同類型的管線。
 
-## 了解自訂程式碼品質規則 {#understanding-code-quality-rules}
+## Understanding Code Quality Rules {#understanding-code-quality-rules}
 
 在「程式碼品質測試」中，會掃描原始碼，以確保其符合特定品質標準。 目前，這是由SonarQube和使用OakPAL的內容封裝層級檢查組合來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 部分AEM特定規則是根據AEM Engineering的最佳實務建立，並稱為「自訂程式碼 [品質規則」](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
 
 >[!NOTE]
 >您可以在這裡下載完整的規則 [清單](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)。
 
-此步驟的結果會以「評 *分」*。 下表摘要了測試標準的評分：
+**三層門**
+
+此程式碼品質測試步驟中有三層結構，可針對已識別的問題：
+
+* **重要**:這些是由澆口確定的問題，導致管線立即失效。
+
+* **重要**:這些是由門所標識的導致管線進入暫停狀態的問題。 部署經理、專案經理或業務負責人可以覆寫問題（在這種情況下，管道會繼續），或者接受問題（在這種情況下，管道會因故障而停止）。
+
+* **資訊**:這些問題由網關確定，僅供參考，對管線執行沒有影響
+
+此步驟的結果會以「評 *分」*。
+
+下表匯總了每個「嚴重」、「重要」和「資訊」類別的分級和故障閾值：
 
 | 名稱 | 定義 | 類別 | 故障閾值 |
 |--- |--- |--- |--- |
