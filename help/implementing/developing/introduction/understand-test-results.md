@@ -2,9 +2,9 @@
 title: 瞭解您的測試結果——雲端服務
 description: 瞭解測試結果——雲端服務
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1697'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Cloud Manager for Cloud Services Pipeline支援的測試有三大類：
 
 * 客戶撰寫
 * Adobe編寫
-* 開放原始碼工具（由Google的Lighthouse提供支援）
+* 開放原始碼工具
 
    >[!NOTE]
    > 客戶撰寫的測試和Adobe撰寫的測試都可在專為執行這些類型測試而設計的容器化基礎架構中執行。
