@@ -2,9 +2,9 @@
 title: 將您的數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產 [!DNL Adobe Experience Manager] 新增至雲端服務。
 translation-type: tm+mt
-source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
+source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1320'
 ht-degree: 2%
 
 ---
@@ -152,11 +152,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 可使用下列描述檔：
 
 * [中繼資料設定檔](metadata-profiles.md) ，可讓您將預設中繼資料屬性套用至上傳至該資料夾的資產
-* [處理設定檔](asset-microservices-configure-and-use.md) ，可讓您產生的轉譯數量，預設會超過所能產生的轉譯數量。
+* [處理設定檔](asset-microservices-configure-and-use.md) ，可讓您產生的轉譯數預設會超過所能產生的轉譯數。
 
 此外，如果您的環境中啟用了動態媒體：
 
-* [動態媒體影像設定檔](dynamic-media/image-profiles.md) ，可讓您套用特定的裁切(**[!UICONTROL 智慧型裁切和像素裁切]** )，並將組態銳利化至上傳的資產。
+* [動態媒體影像設定檔](dynamic-media/image-profiles.md) ，可讓您套用特定的裁切(**[!UICONTROL 智慧型裁切和像素裁切]** )，並將銳利化組態套用至上傳的資產。
 * [動態媒體視訊設定檔](dynamic-media/video-profiles.md) ，可讓您套用特定的視訊編碼設定檔（解析度、格式、參數）。
 
 >[!NOTE]
