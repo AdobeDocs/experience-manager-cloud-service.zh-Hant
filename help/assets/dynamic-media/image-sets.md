@@ -2,10 +2,10 @@
 title: 影像集
 description: 瞭解如何在動態媒體中處理影像集
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '2050'
-ht-degree: 20%
+source-wordcount: '2047'
+ht-degree: 19%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 20%
 
 當您想要以不同的顏色、圖樣或完成顯示項目時，此應用程式特別有用。 若要使用色票建立影像集，您需要針對要呈現給使用者的不同顏色、圖樣或修飾建立一個影像。 您也需要一種顏色、圖樣或修飾色板來表示每種顏色、圖樣或修飾。
 
-例如，假設您想要呈現不同色彩表的頂蓋影像； 賬單是紅的，綠的，藍的。 在這種情況下，你需要三杯相同的帽子。 你需要一張紅的，一張綠的，一張藍的。 您也需要紅色、綠色和藍色色票。 顏色色票會當做縮圖，讓使用者在色票集檢視器中按一下，以查看紅嘴、綠嘴或藍嘴的帽子。
+例如，假設您想要呈現不同色彩表的頂蓋影像；賬單是紅的，綠的，藍的。 在這種情況下，你需要三杯相同的帽子。 你需要一張紅的，一張綠的，一張藍的。 您也需要紅色、綠色和藍色色票。 顏色色票會當做縮圖，讓使用者在色票集檢視器中按一下，以查看紅嘴、綠嘴或藍嘴的帽子。
 
 >[!NOTE]
 >
 >如需「資產」使用者介面的詳細資訊，請參 [閱「使用Touch UI管理資產」](/help/assets/manage-digital-assets.md)。
 
-## 快速入門： 影像集 {#quick-start-image-sets}
+## 快速入門：影像集 {#quick-start-image-sets}
 
 要快速啟動並運行，請執行以下操作：
 
@@ -112,7 +112,7 @@ ht-degree: 20%
 >[!NOTE]
 >
 >You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
->****重要：批集由IPS(Image Production System)建立，作為資產提取的一部分。
+>**** 重要：批集由IPS(Image Production System)建立，作為資產提取的一部分。
 
 當您將資產新增至集合時，資產會自動以字母數字順序新增。 您可以在資產新增後手動重新排序或排序。
 
@@ -178,11 +178,11 @@ ht-degree: 20%
 
    ![6_5_imageset-asset屬性](assets/6_5_imageset-assetproperties.png)
 
-* 來自任何組的成員映像。選擇「 **[!UICONTROL集** 」菜單以顯示資產所屬的集。
+* 來自任何組的成員映像。Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
 
    ![6_5_imageset-setspuldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* 在搜索中，可以選 **擇[!UICONTROL篩選器**，然後展開 **[!UICONTROL動態媒體** ，並選擇 **[!UICONTROL 集]**。
+* From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
 
    搜尋會傳回在UI中手動建立或透過批次集預設集自動建立的相符集。 對於自動集，搜尋查詢是使用「以」搜尋准則進行，此搜尋准則與以「包含」搜尋准則為基礎的AEM搜尋不同。 將篩選器設 **[!UICONTROL 置為]** 「集」是搜索自動集的唯一方法。
 
