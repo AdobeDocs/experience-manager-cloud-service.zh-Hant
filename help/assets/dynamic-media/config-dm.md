@@ -2,9 +2,9 @@
 title: 設定動態媒體雲端服務
 description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '5125'
+source-wordcount: '5124'
 ht-degree: 8%
 
 ---
@@ -48,7 +48,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## 設定動態媒體雲端服務 {#configuring-dynamic-media-cloud-services}
 
-**在您設定Dynamic Media Cloud服務之前**: 在您收到具有動態媒體憑證的布建電子郵件後， [您必須登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud Service。
+**在您設定Dynamic Media Cloud服務之前**:在您收到具有動態媒體憑證的布建電子郵件後， [您必須登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud Service。
 
 若要設定動態媒體雲端服務：
 
@@ -71,7 +71,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    * **[!UICONTROL 發佈資產]** -您可以從下列三個選項中選擇：
       * **[!UICONTROL 立即]** ：當資產上傳時，系統會立即收錄資產並提供URL/內嵌。 發佈資產不需要使用者干預。
       * **[!UICONTROL 啟動後]** ，表示您必須先明確發佈資產，才能提供URL/內嵌連結。
-      * **[!UICONTROL 選擇性發佈]** ：表示資產會自動發佈，僅供安全預覽使用，而且可明確發佈至AEM，而不需發佈至DMS7以便在公共網域中傳送。 未來，Adobe將增強此選項，將資產發佈至AEM，並將資產發佈至Dynamic Media，彼此互斥。 也就是說，您可以將資產發佈到DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您可以在AEM中獨家發佈資產以進行預覽； 這些相同的資產不會發佈在DMS7中，以便在公共域中交付。
+      * **[!UICONTROL 選擇性發佈]** ：表示資產會自動發佈，僅供安全預覽使用，而且可明確發佈至AEM，而不需發佈至DMS7以便在公共網域中傳送。 未來，Adobe將增強此選項，將資產發佈至AEM，並將資產發佈至Dynamic Media，彼此互斥。 也就是說，您可以將資產發佈到DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您可以在AEM中獨家發佈資產以進行預覽；這些相同的資產不會發佈在DMS7中，以便在公共域中交付。
    * **[!UICONTROL 安全預覽伺服器]** -可讓您指定安全轉譯預覽伺服器的URL路徑。 也就是說，在產生轉譯後，AEM可以安全地存取和預覽遠端的「動態媒體」轉譯（不會將二進位檔傳回至AEM例項）。
 除非您有特殊安排可使用您公司的伺服器或特殊伺服器，否則Adobe Systems建議您依指定的方式保留此設定。
 
@@ -81,7 +81,7 @@ To migrate any custom viewer presets and configurations that you have created fr
       * **[!UICONTROL 預設啟用]** -預設情況下，配置將應用於所有資料夾，除非您專門為排除標籤資料夾。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 預設禁用]** -在您明確標籤選定資料夾以同步到動態媒體之前，配置不會應用於任何資料夾。
 若要將選取的檔案夾標示為同步至動態媒體，請開啟資產檔案夾的「屬性」頁面。Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
-         * **[!UICONTROL 繼承]** -資料夾上沒有明確的同步值； 相反，資料夾會繼承其上級資料夾或雲配置中預設模式中的同步值。 繼承的詳細狀態會透過工具提示顯示。
+         * **[!UICONTROL 繼承]** -資料夾上沒有明確的同步值；相反，資料夾會繼承其上級資料夾或雲配置中預設模式中的同步值。 繼承的詳細狀態會透過工具提示顯示。
          * **[!UICONTROL 啟用子資料夾]** -包含此子樹狀結構中的所有項目，以同步至動態媒體。 資料夾特定的設定會覆寫雲端設定中的預設模式。
          * **[!UICONTROL 子資料夾停用]** -排除此子樹狀結構中的所有項目，以免同步至動態媒體。
 
@@ -105,7 +105,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    * 選取核取方塊以啟用（開啟）此位址，然後輸入AEM Author例項的IP位址（而非Dispatcher IP）。
    * 按一下&#x200B;**[!UICONTROL 「儲存」]**。
 
-您現在已完成基本配置； 您已準備好使用動態媒體。
+您現在已完成基本配置；您已準備好使用動態媒體。
 
 如果您想要進一步自訂配置，您可選擇在動態媒體中設定進階設定 [下完成任何工作](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)。
 
@@ -141,7 +141,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 「發佈設定」設定會決定預設如何從動態媒體傳送資產。 如果未指定任何設定，動態媒體會根據發佈設定中定義的預設設定來傳送資產。 例如，傳送不含解析度屬性的影像請求，會產生具有預設物件解析度設定的影像。
 
-若要設定發佈設定： 在Dynamic Media Classic中，按一下「 **[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器」]**。
+若要設定發佈設定：在Dynamic Media Classic中，按一下「 **[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器」]**。
 
 「影像伺服器」畫面會建立傳送影像的預設設定。 請參閱UI畫面，以取得每個設定的說明。
 
@@ -151,7 +151,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 * **[!UICONTROL 目錄欄位的預設值]**-這些設定與影像的解析度和預設縮略圖類型相關。
 * **[!UICONTROL 色彩管理屬性]** -這些設定會決定使用哪些ICC色彩描述檔。
 * **[!UICONTROL 相容性屬性]** -此設定可讓文字圖層中的前導和尾隨段落視為3.6版中的段落，以提供回溯相容性。
-* **[!UICONTROL 本地化支援]** -這些設定可讓您管理多個地區設定屬性。 它也可讓您指定地區對應字串，以便定義您要在檢視器中支援哪些語言。 如需有關設定本地化支 **援的詳細資訊]**, [請參閱設定資產本地化時的考量事項](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html)。
+* **[!UICONTROL 本地化支援]** -這些設定可讓您管理多個地區設定屬性。 它也可讓您指定地區對應字串，以便定義您要在檢視器中支援哪些語言。 有關設定本地化支援的詳 **[!UICONTROL 細資訊]**，請 [參閱設定資產本地化時的注意事項](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html)。
 
 #### 配置應用程式常規設定 {#configuring-application-general-settings}
 
@@ -159,7 +159,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 * **[!UICONTROL 伺服器]** -在帳戶布建時，動態媒體會自動為您的公司提供指派的伺服器。 這些伺服器可用來建構網站和應用程式的URL字串。 這些URL呼叫是您帳戶專屬的。 除非AEM支援明確指示，否則請勿變更任何伺服器名稱。
 
-* **[!UICONTROL 覆寫影像]** -動態媒體不允許兩個檔案具有相同名稱。 每個項目的URL ID（檔案名稱減去副檔名）必須是唯一的。 這些選項指定如何上傳取代資產： 不論是替換原稿還是變成重複。 重複資產會以&quot;-1&quot;（例如chair.tif會更名為chair-1.tif）重新命名。 這些選項會影響上傳至原始檔案夾以外的資產，或是副檔名與原始檔案不同的資產（例如JPG、TIF或PNG）。
+* **[!UICONTROL 覆寫影像]** -動態媒體不允許兩個檔案具有相同名稱。 每個項目的URL ID（檔案名稱減去副檔名）必須是唯一的。 這些選項指定如何上傳取代資產：不論是替換原稿還是變成重複。 重複資產會以&quot;-1&quot;（例如chair.tif會更名為chair-1.tif）重新命名。 這些選項會影響上傳至原始檔案夾以外的資產，或是副檔名與原始檔案不同的資產（例如JPG、TIF或PNG）。
 
 * **[!UICONTROL 覆寫目前檔案夾中的基本影像名稱／副檔名]** -此選項是最嚴格的取代規則。 它要求您將取代影像上傳至與原始影像相同的檔案夾，而取代影像的副檔名與原始影像的副檔名相同。 如果未滿足這些要求，則會建立重複項。
 
@@ -167,7 +167,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >
    >若要與AEM維持一致性，請一律選擇下列設定： **覆寫目前檔案夾中的基本影像名稱／副檔名相同**
 
-* **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱／副檔名]** -要求取代影像的副檔名與原始影像相同（例如，chair.jpg必須取代chair.jpg，而非chair.tif）。 不過，您可以將取代影像上傳至原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中； 在其原始位置中無法再找到檔案
+* **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱／副檔名]** -要求取代影像的副檔名與原始影像相同（例如，chair.jpg必須取代chair.jpg，而非chair.tif）。 不過，您可以將取代影像上傳至原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中；在其原始位置中無法再找到檔案
 * **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱(不論副檔名為何]** )-此選項是最包含的取代規則。 您可以將取代影像上傳至原始檔案夾以外的其他檔案夾、以不同副檔名上傳檔案，並取代原始檔案。 如果原始檔案位於不同的檔案夾中，則取代影像會位於上傳檔案的新檔案夾中。
 
 * **[!UICONTROL 預設色彩描述檔]** -如需詳細 [資訊，請參閱設定](#configuring-color-management) 色彩管理。
@@ -192,7 +192,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    * **[!UICONTROL CMYK預設色域]** -預設CMYK色彩描述檔的名稱
    * **[!UICONTROL 灰階預設色域]** -預設灰階色彩描述檔的名稱
    * **[!UICONTROL RGB預設色域]** -預設RGB色彩描述檔的名稱
-   * **[!UICONTROL 顏色轉換渲染方式]** -指定渲染方式。 Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]]**as the default.
+   * **[!UICONTROL 顏色轉換渲染方式]** -指定渲染方式。 Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]** as the default.
 
 1. 點選「 **[!UICONTROL 儲存]**」。
 
@@ -213,7 +213,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 * 將Adobe PDF轉換為eCatalog資產。
 * 將Adobe Photoshop檔案(.PSD)轉換為橫幅範本資產，以利個人化。
 * 點陣化Adobe Illustrator檔案(.AI)或Adobe Photoshop封裝的Postscript檔案(.EPS)。
-* 注意： 「視訊設定檔」和「影像設定檔」可分別用來定義視訊和影像的處理。
+* 注意：「視訊設定檔」和「影像設定檔」可分別用來定義視訊和影像的處理。
 
 請參閱 [上傳資產](/help/assets/add-assets.md)。
 
@@ -340,7 +340,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 動態媒體使用批次集預設集將資產組織成一組影像（替代影像、顏色選項、360回轉），以便在檢視器中顯示。 批次集預設集會自動在動態媒體中與資產上傳程式一起執行。
 
-您可以建立、編輯和管理批次集預設集。 批集預設定義有兩種形式： 一個代表您可能已設定的預設命名慣例，另一個代表您即時建立的自訂命名慣例。
+您可以建立、編輯和管理批次集預設集。 批集預設定義有兩種形式：一個代表您可能已設定的預設命名慣例，另一個代表您即時建立的自訂命名慣例。
 
 您可以使用表單欄位方法來定義批次集預設集，或使用程式碼方法來使用規則運算式。 如同在預設命名中，您可以在表單檢視中定義的同時選擇檢視程式碼，並使用規則運算式來建立定義。 或者，您可以取消選中任一視圖以獨佔使用一個視圖或另一個視圖。
 
@@ -406,7 +406,7 @@ spin-01-01
 
    您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
 
-1. 在頁面頂部的導航欄上，按一下「 **[!UICONTROL設定>應用程式設定>批集預設集>批集預設集」**。
+1. 在頁面頂部的導覽列上，按一下「設定>應用程 **[!UICONTROL 式設定]>批[!UICONTROL 集預設集]>批[!UICONTROL 集預設集」]**。
 
    請注 **[!UICONTROL 意，如「詳細資料]**」頁面右上角所設定，「檢視表單」是預設檢視。
 
@@ -487,7 +487,7 @@ Adobe建議對PDF、Postscript和PSD檔案使用下列「已調整」的工作�
 
 **要更新Granite瞬態工作流隊列，請執行以下操作：**
 
-1. 導覽至 [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) ，並搜尋 **佇列： Granite暫時工作流程佇列**。
+1. 導覽至 [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) ，並搜尋 **佇列：Granite暫時工作流程佇列**。
 
    >[!NOTE]
    >
@@ -509,7 +509,7 @@ Adobe建議對PDF、Postscript和PSD檔案使用下列「已調整」的工作�
 
 **要更新Granite工作流隊列**
 
-1. 導覽至 `https://<server>/system/console/configMgr` 並搜尋佇 **列： Granite工作流程佇列**。
+1. 導覽至 `https://<server>/system/console/configMgr` 並搜尋佇 **列：Granite工作流程佇列**。
 
    >[!NOTE]
    >
@@ -534,7 +534,7 @@ Scene7「上傳連線」設定會將AEM資產同步至Dynamic Media Classic伺�
 1. 導航到 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 在「連 **[!UICONTROL 接數」欄位]** 和／或「作 **[!UICONTROL 用中作業逾時」欄位中]** ，視需要變更數目。
 
-   「連 **[!UICONTROL 線數」設定]** ，會控制AEM至「動態媒體」上傳所允許的HTTP連線數上限； 通常，10個連接的預定義值就足夠了。
+   「連 **[!UICONTROL 線數」設定]** ，會控制AEM至「動態媒體」上傳所允許的HTTP連線數上限；通常，10個連接的預定義值就足夠了。
 
    「作 **[!UICONTROL 用中工作逾時]** 」設定會決定上傳之動態媒體資產在傳送伺服器中發佈的等待時間。 此值預設為2100秒或35分鐘。
 
