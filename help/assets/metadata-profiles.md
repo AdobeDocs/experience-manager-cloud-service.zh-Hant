@@ -3,10 +3,10 @@ title: 中繼資料設定檔
 description: 瞭解資產的中繼資料設定檔。 瞭解如何建立中繼資料描述檔並將它套用至資料夾資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '1246'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 23%
 | 區段標題 | 欄位標籤，說明 |
 | 單行文字 | 欄位標籤、對應至屬性、預設值 |
 | 多值文字 | 欄位標籤、對應至屬性、預設值 |
-| 數字 | 欄位標籤、對應至屬性、預設值 |
+| 數量 | 欄位標籤、對應至屬性、預設值 |
 | 日期 | 欄位標籤、對應至屬性、預設值 |
 | 標準標記 | 欄位標籤、對應至屬性、預設值、說明 |
 
@@ -89,7 +89,7 @@ ht-degree: 23%
 
 1. 在左側導軌中，點選「 **[!UICONTROL 資產]** 」，然後瀏覽至您要套用中繼資料描述檔的檔案夾。
 1. 在資料夾上，點選或按一下核取標籤以選取它，然後點選或按一下「 **屬性**」。
-1. 選取「中 **[!UICONTROL 繼資料描述檔]** 」標籤，然後從下拉式選單中選取描述檔，然後點選「 **儲存」**。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[Save]**. 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
 ### 全域套用中繼資料設定檔 {#applying-a-metadata-profile-globally}
 
