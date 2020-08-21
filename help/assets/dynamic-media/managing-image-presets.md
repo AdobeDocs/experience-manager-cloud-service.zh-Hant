@@ -2,9 +2,9 @@
 title: 管理影像預設集
 description: 瞭解影像預設集，並瞭解如何建立、修改及管理影像預設集
 translation-type: tm+mt
-source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '3649'
+source-wordcount: '3648'
 ht-degree: 11%
 
 ---
@@ -161,7 +161,7 @@ Dynamic Media整合使用下列指令碼：
   <tr>
    <td>JPEGPagesExport.jsx</td>
    <td>是</td>
-   <td>為每個頁面產生300 ppi的JPEG子資產。 JPEG子資產是儲存在InDesign資產下的實際資產。 此外，它還經過工作流程的最佳化，並轉變成PTIFF <code>DAM Update Asset</code> 。<br /> </td>
+   <td>為每個頁面產生300 ppi的JPEG子資產。 JPEG子資產是儲存在InDesign資產下的實際資產。 此外，它還經過工作流程的最佳化，並轉變成PTIFF <code>DAM Update Asset</code> 格式。<br /> </td>
   </tr>
   <tr>
    <td>PDFPagesExport.jsx</td>
@@ -253,7 +253,7 @@ Dynamic Media整合使用下列指令碼：
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. 按一下 **[!UICONTROL保存**。
+1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
 
 ### Creating a responsive Image Preset {#creating-a-responsive-image-preset}
 
@@ -361,7 +361,7 @@ Dynamic Media整合使用下列指令碼：
   </tr>
   <tr>
    <td><strong>銳利化文字</strong></td>
-   <td><p>選擇「 <strong>無</strong>」、「銳 <strong>化」</strong>或「銳 <strong>化」或「銳化遮色片</strong>」。 </p>
+   <td><p>選擇「 <strong>無</strong>」、「銳 <strong>化」</strong>或「銳 <strong>化」或「銳化」</strong>。 </p>
     <ul>
      <li>選擇「 <strong>無</strong> 」可禁用銳利化。</li>
      <li>選取「 <strong>銳利 </strong>化」，在進行所有縮放後，將基本銳利化濾鏡套用至影像。 銳利化有助於補償以不同大小顯示影像時可能產生的模糊性。 </li>
