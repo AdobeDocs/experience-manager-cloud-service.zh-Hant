@@ -2,9 +2,9 @@
 title: 新增動態媒體資產至頁面
 description: 如何在AEM中將Dynamic Media元件新增至頁面
 translation-type: tm+mt
-source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '3124'
+source-wordcount: '3121'
 ht-degree: 8%
 
 ---
@@ -107,7 +107,7 @@ ht-degree: 8%
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
-### 元件： 動態媒體 {#dynamic-media-component}
+### 元件：動態媒體 {#dynamic-media-component}
 
 動態媒體元件是智慧型元件。 視您新增影像或視訊而定，您有各種選項。 此元件支援影像預設集、影像檢視器，例如影像集、回轉集、混合媒體集和視訊。 此外，檢視器具有互動功能——螢幕大小會根據螢幕大小自動變更。 所有檢視器都是HTML5檢視器。
 
@@ -189,9 +189,9 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 >
 >依預設，動態媒體視訊元件是可調式的。 如果要使其成為固定大小，請在元件中使用「高級」( **[!UICONTROL Advanced]** )頁籤中的「寬度」( **[!UICONTROL Width]** )和「高度」( **[!UICONTROL Height]** )來設定它。
 
-* **[!UICONTROL查看器預設集**-從下拉菜單中選擇現有視頻查看器預設集。 如果您所尋找的檢視器預設集不可見，您可能需要將它顯示。 請參閱管理檢視器預設集。
+* **[!UICONTROL 檢視器預設]**-從下拉式選單中選取現有的視訊檢視器預設。 如果您所尋找的檢視器預設集不可見，您可能需要將它顯示。 請參閱管理檢視器預設集。
 
-* **[!UICONTROL檢視器修飾元**-檢視器修飾元採用名稱=值配對與&amp;分隔字元的形式，讓您變更檢視器，如Adobe檢視器參考指南所述。 檢視器修飾詞的範例是 `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL 檢視器修飾元]**-檢視器修飾元採用名稱=值配對與&amp;分隔字元的形式，讓您變更檢視器，如Adobe檢視器參考指南所述。 檢視器修飾詞的範例是 `posterimage=img.jpg&caption=text.vtt,1`
 
    例如，使用檢視器修飾元，您可以執行下列動作：
 
@@ -200,7 +200,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONCONTROL標題**-更改視頻的標題。
+* **[!UICONTROL 標題]**-變更影片標題。
 
 * **[!UICONTROL 寬度]**-如果希望影像為固定大小，請以像素輸入值。 將此值留空可讓資產具有適應性。
 
@@ -244,7 +244,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 * **[!UICONTROL 高度]**-如果希望影像為固定大小，請以像素輸入值。 將此值留空可讓資產具有適應性。
 
-### 元件： 互動式媒體 {#interactive-media-component}
+### 元件：互動式媒體 {#interactive-media-component}
 
 互動式媒體元件適用於這些資產上具有互動功能的熱點或影像地圖。 如果您有互動式影像、互動式視訊或轉盤橫幅，請使用 **[!UICONTROL 互動式媒體元件]** 。
 
@@ -283,7 +283,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 
 * **[!UICONTROL 顯示產品表單]**-預設情況下，不選擇此值。 「產品表單」包含任何產品變體，例如尺寸和顏色。 清除勾號，不顯示產品變數。
 
-### 元件： 全景媒體 {#panoramic-media-component}
+### 元件：全景媒體 {#panoramic-media-component}
 
 全景媒體元件適用於球形全景影像的資產。 此類影像可提供360°的房間、房產、位置或風景觀賞體驗。 若要符合球形全景的影像，它必須具備下列其中一個或兩個：
 
@@ -313,11 +313,11 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 
 如果您所尋找的檢視器預設集不可見，請勾選以確保已發佈。 您必須先發佈檢視器預設集，才能使用。 請參閱 [管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
-### 元件： 視訊360媒體 {#video-media-component}
+### 元件：視訊360媒體 {#video-media-component}
 
 使用 **[!UICONTROL Video 360 Media]** （視訊360媒體）元件，在您的網頁上演算等方形視訊，以提供身歷其境的房間、房產、位置、風景或醫療程式檢視體驗。
 
-在平面顯示器上播放時，用戶可以控制視角； 在行動裝置上播放時，通常會運用其內建的陀螺控制項。
+在平面顯示器上播放時，用戶可以控制視角；在行動裝置上播放時，通常會運用其內建的陀螺控制項。
 
 檢視器包含傳送360個視訊資產的原生支援。 依預設，檢視或播放不需要其他設定。 您可使用標準的視訊副檔名（例如。mp4、.mkv和。mov）來傳送360視訊。 最常見的轉碼器是H.264。
 
