@@ -1,8 +1,8 @@
 ---
-title: 建立和組織頁面
+title: 建立及組織頁面
 description: 如何使用AEM建立和組織頁面
 translation-type: tm+mt
-source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 7%
@@ -10,13 +10,13 @@ ht-degree: 7%
 ---
 
 
-# 建立和組織頁面 {#creating-and-organizing-pages}
+# 建立及組織頁面 {#creating-and-organizing-pages}
 
 本檔案說明如何使用Adobe Experience Manager Cloud Service建立和管理頁面，以便您在這些頁 [面上建](/help/sites-cloud/authoring/fundamentals/editing-content.md) 立內容。
 
 >[!NOTE]
 >
->您的帳戶需要適當的存取權限]和權限，才能對頁面採取動作，例如建立、複製、移動、編輯和刪除。
+>您的帳戶需要適當的存取權限和權限，才能對頁面採取動作，例如建立、複製、移動、編輯和刪除。
 >
 >如果您遇到任何問題，我們建議您與系統管理員聯繫。
 
@@ -276,8 +276,8 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
 
    您可以:
 
-   1. 選擇「 **貼上** 」頁面圖示本身： 將在此位置建立原始頁面和任何子頁面的副本。
-   1. 選擇下拉箭頭以顯示「不含子 **代的貼上** 」選項。 原始頁面的復本將在此位置建立； 子頁面將不會複製。
+   1. 選擇「 **貼上** 」頁面圖示本身：將在此位置建立原始頁面和任何子頁面的副本。
+   1. 選擇下拉箭頭以顯示「不含子 **代的貼上** 」選項。 原始頁面的復本將在此位置建立；子頁面將不會複製。
 
    >[!NOTE]
    >
@@ -382,7 +382,7 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
 
          ![非同步頁面移動](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-可以在Async Jobs Status [**Dashboard中的&#x200B;**Async Jobs Status](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)Dashboard** Global Navigation **-**>Oractions **- Asynchronous Operations - Jobs導航工具******>中檢查狀態&#x200B;**
+可以在Async Jobs Status [**Dashboard中的** Async Jobs Status](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) Dashboard **Global Navigation** - **>Oractions** - Asynchronous Operations - Jobs導航工具 ******>中檢查狀態**
 
 >[!NOTE]
 >
