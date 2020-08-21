@@ -2,9 +2,9 @@
 title: 使用選取工具
 description: 選取互動式影像、互動式視訊和轉盤橫幅的素材
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '738'
 ht-degree: 18%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 18%
 
 在建立轉盤集、新增熱點和影像地圖、建立互動式視訊和影像時，您可以存取選擇器。
 
-例如，在此轉盤橫幅中，如果您要將熱點或影像地圖連結至Quickview頁面，請使用產品選擇器； 如果您要將熱點或影像地圖連結至超連結，請使用網站選擇器； 建立新投影片時，請使用「資產選擇器」。
+例如，在此轉盤橫幅中，如果您要將熱點或影像地圖連結至Quickview頁面，請使用產品選擇器；如果您要將熱點或影像地圖連結至超連結，請使用網站選擇器；建立新投影片時，請使用「資產選擇器」。
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
@@ -30,7 +30,7 @@ ht-degree: 18%
 
 1. 導覽至「轉盤集」、「互動式影像」或「互動式視訊」，然後點選「動作 **** 」標籤 (僅在您已定義熱點或影像地圖時可用)。
 
-   The Product selector is in the **[!UICONTROL Action Type** area.
+   The Product selector is in the **[!UICONTROL Action Type]** area.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
@@ -42,7 +42,7 @@ ht-degree: 18%
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   您可以點選「瀏覽」並導覽至其他資料夾，以變更AEM **[!UICONTROL 瀏覽]** 產品資料的位置。
+   您可以點選「瀏覽」並導覽至其他檔案夾，以變更AEM **[!UICONTROL 瀏覽]** 產品資料的位置。
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
