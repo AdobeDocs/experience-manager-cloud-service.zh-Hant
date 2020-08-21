@@ -2,7 +2,7 @@
 title: 混合媒體集
 description: 瞭解如何在動態媒體中處理混合媒體集
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 25%
@@ -22,7 +22,7 @@ ht-degree: 25%
 >
 >如需「資產」使用者介面的詳細資訊，請參 [閱「使用Touch UI管理資產」](/help/assets/manage-digital-assets.md)。
 
-## 快速入門： 混合媒體集 {#quick-start-mixed-media-sets}
+## 快速入門：混合媒體集 {#quick-start-mixed-media-sets}
 
 要使用混合媒體集快速啟動並運行，請執行以下步驟：
 
@@ -144,10 +144,10 @@ ht-degree: 25%
 
       >[!NOTE]
       >
-      >    * To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. 將滑鼠指標暫留在資產上，點選核取標籤圖示以加以選取。Press **[!UICONTROL Backspace]** on the keyboard, or click **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete]**.
+      >* To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. 將滑鼠指標暫留在資產上，點選核取標籤圖示以加以選取。Press **[!UICONTROL Backspace]** on the keyboard, or click **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete]**.
          >
-         >    
-      * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
+         >
+      * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **[Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
 1. 編輯完 **[!UICONTROL 成時]** ，點選「儲存」。
@@ -157,7 +157,7 @@ ht-degree: 25%
    >* 若要編輯混合媒體集中的資產——導覽至混合媒體集。 點選 (不要選取) 設定，以在「AEM設定預覽」頁面中開啟該設定。In the left rail, click the down caret to open the drop-down list, then tap **[!UICONTROL Set Members]**. In the Set Members page, hover on an asset, then tap **[!UICONTROL Edit]** (pencil icon) to open the editing page.
       >
       >
-   * 要刪除整個混合媒體集——從任何查看模式（如卡片視圖或列視圖），導航到混合媒體集。 Hover on the set, then tap **Select]** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or tap **[!UICONTROL More]** (row of three dots), then tap **[!UICONTROL Delete]**.
+   * 要刪除整個混合媒體集——從任何查看模式（如卡片視圖或列視圖），導航到混合媒體集。 Hover on the set, then tap **[Select]** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or tap **[!UICONTROL More]** (row of three dots), then tap **[!UICONTROL Delete]**.
 
 
 ## 預覽混合媒體集 {#previewing-mixed-media-sets}
