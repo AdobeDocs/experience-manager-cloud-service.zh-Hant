@@ -2,10 +2,10 @@
 title: 管理檢視器預設集
 description: 如何建立和管理檢視器預設集
 translation-type: tm+mt
-source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '4263'
-ht-degree: 17%
+source-wordcount: '4255'
+ht-degree: 15%
 
 ---
 
@@ -39,7 +39,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 ## Managing Viewer Presets {#managing-viewer-presets-1}
 
-您可以點選「 **[!UICONTROL工具**  (槌子圖示) **[!UICONTROL >資產>檢視器預設集」，在AEM中新增、編輯、刪除、發佈、取消發佈和預覽檢視器預設集]**。
+You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -85,7 +85,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
   </tr>
   <tr>
    <td><strong>彈出式縮放</strong></td>
-   <td><p>在原始影像旁顯示縮放區域的第二個影像。 沒有可使用的控制項——使用者將選取範圍移至要檢視的區域。</p> <p>在決定此檢視器的完整頻寬使用時，請考慮主影像和彈出影像都會在檢視器中提供。 主影像大小（「舞台寬度」和「高度」）和「縮放比例」會決定彈出影像大小。 若要避免彈出檔案大小變得過大，請平衡下列兩個值： 如果您的主影像大小較大，請降低「縮放比例」值。 （「彈出寬度」和「彈出高度」會決定彈出視窗的大小，但不決定提供給檢視器的彈出影像的大小。）</p> <p>例如，如果您的主影像大小是350 x 350像素，而「縮放系數」是3，則產生的彈出影像是1050 x 1050像素。 如果您的主影像大小是300 x 300像素，而「縮放系數」是4，則彈出影像是1200 x 1200像素。 根據JPEG品質設定（建議的設定介於80-90之間），您可以大幅降低檔案大小。 建議的縮放系數為2.5到4，視主影像大小而定。</p> </td>
+   <td><p>在原始影像旁顯示縮放區域的第二個影像。 沒有可使用的控制項——使用者將選取範圍移至要檢視的區域。</p> <p>在決定此檢視器的完整頻寬使用時，請考慮主影像和彈出影像都會在檢視器中提供。 主影像大小（「舞台寬度」和「高度」）和「縮放比例」會決定彈出影像大小。 若要避免彈出檔案大小變得過大，請平衡下列兩個值：如果您的主影像大小較大，請降低「縮放比例」值。 （「彈出寬度」和「彈出高度」會決定彈出視窗的大小，但不決定提供給檢視器的彈出影像的大小。）</p> <p>例如，如果您的主影像大小是350 x 350像素，而「縮放系數」是3，則產生的彈出影像是1050 x 1050像素。 如果您的主影像大小是300 x 300像素，而「縮放系數」是4，則彈出影像是1200 x 1200像素。 根據JPEG品質設定（建議的設定介於80-90之間），您可以大幅降低檔案大小。 建議的縮放系數為2.5到4，視主影像大小而定。</p> </td>
   </tr>
   <tr>
    <td><strong>內嵌縮放</strong></td>
@@ -125,7 +125,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
   </tr>
   <tr>
    <td><strong>360視訊</strong></td>
-   <td><p>使用360/VR視訊檢視器來轉換等長形視訊，以提供身歷其境的房間、房產、位置、風景或醫療程式觀賞體驗。</p> <p>在平面顯示器上播放時，用戶可以控制視角； 在行動裝置上播放時，通常會運用其內建的陀螺控制項。</p> <p>檢視器包含傳送360個視訊資產的原生支援。 依預設，檢視或播放不需要其他設定。 您可使用標準的視訊副檔名（例如。mp4、.mkv和。mov）來傳送360視訊。 最常見的轉碼器是H.264。</p> </td>
+   <td><p>使用360/VR視訊檢視器來轉換等長形視訊，以提供身歷其境的房間、房產、位置、風景或醫療程式觀賞體驗。</p> <p>在平面顯示器上播放時，用戶可以控制視角；在行動裝置上播放時，通常會運用其內建的陀螺控制項。</p> <p>檢視器包含傳送360個視訊資產的原生支援。 依預設，檢視或播放不需要其他設定。 您可使用標準的視訊副檔名（例如。mp4、.mkv和。mov）來傳送360視訊。 最常見的轉碼器是H.264。</p> </td>
   </tr>
   <tr>
    <td><strong>影片</strong></td>
@@ -399,12 +399,12 @@ AEM會在從「詳細資料檢視>檢視器」檢視資產時，顯示各種 **[
 
 **若要建立檢視器預設集**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 
    ![6_5檢視器預設集](assets/6_5_viewerpresets.png)
 
 1. 在檢視器預設集頁面的工具列上，點選「建 **[!UICONTROL 立」]**。
-1. 在「 **[!UICONCONTROL新建查看器預設集** 」對話框的「預設集名稱 **** 」欄位中，輸入新預設集的名稱。請謹慎選擇名稱——在您點選「建立」後，這些名稱就無法 **[!UICONTROL 編輯]**。
+1. In the **[!UICONTROL New Viewer Preset]** dialog box, in the **[!UICONTROL Preset Name]** field, enter the name of the new preset. 請謹慎選擇名稱——在您點選「建立」後，這些名稱就無法 **[!UICONTROL 編輯]**。
 
    當您稍後在這些步驟中儲存預設時，名稱會出現在「預設集標題」欄標題下的「檢視器預設集」頁面上。
 
@@ -501,7 +501,7 @@ AEM會在從「詳細資料檢視>檢視器」檢視資產時，顯示各種 **[
 檢視器根據可用位置數量，在面板中顯示多少縮圖時，會使用下列邏輯：
 
 * 子區段數=捨入至下一個子區段（縮圖數／縮圖面板中可見的位置數，視瀏覽器視窗大小而定）。
-使用上表中的範例，9個縮圖/ 4個插槽= 2.25; 檢視器邏輯最多四捨五入3個子區段。
+使用上表中的範例，9個縮圖/ 4個插槽= 2.25;檢視器邏輯最多四捨五入3個子區段。
 
 * 縮圖數=最多捨入至下一個縮圖（縮圖數／視訊子區段數）。
 使用上表中的範例，9個縮圖/3個視訊子區段= 3個縮圖。
@@ -523,10 +523,10 @@ AEM會在從「詳細資料檢視>檢視器」檢視資產時，顯示各種 **[
 
 **若要啟用或停用檢視器預設集**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 1. 在「檢視器預設」頁面的「狀態 **[!UICONTROL 」欄標題]** ，點選切換以啟用或停用檢視器預設。
 
-   啟動的檢視器預設集會在右側、藍色方塊內切換； 停用的檢視器預設集會讓切換畫面出現在左側的淺灰色方塊中。
+   啟動的檢視器預設集會在右側、藍色方塊內切換；停用的檢視器預設集會讓切換畫面出現在左側的淺灰色方塊中。
 
 ## 發佈檢視器預設集 {#publishing-viewer-presets}
 
@@ -540,13 +540,13 @@ AEM會在從「詳細資料檢視>檢視器」檢視資產時，顯示各種 **[
 
 **若要發佈檢視器預設集**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 1. 選取一或多個您要發佈的檢視器預設集。
 1. 在工具列上，點選「發 **[!UICONTROL 布]** 」圖示。
 
 ## 排序檢視器預設集 {#sorting-viewer-presets}
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 1. 按一 **[!UICONTROL 下「標題]**」、「類型」、「發佈國 **[!UICONTROL 」或「國]********** 家預設」，依該欄標題排序。例如，按一下「 **[!UICONTROL 類型]** 」，以字母或反字母順序排序檢視器預設集類型。
 
 ## 編輯檢視器預設集 {#editing-viewer-presets}
@@ -555,7 +555,7 @@ AEM會在從「詳細資料檢視>檢視器」檢視資產時，顯示各種 **[
 
 **若要編輯檢視器預設集**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Asset > Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset]>[!UICONTROL Viewer Presets]**.
 1. 勾選檢視器預設集標題左側的方塊，以選取預設集。
 1. 在工具列上，點選「 **[!UICONTROL 編輯」]**。
 1. 在「檢 **[!UICONTROL 視器預設集編輯器]** 」頁面上，使用「外觀」和「行為」標籤上的選項，對檢視器預設集進行您想要的變更 ******** 。
@@ -573,7 +573,7 @@ AEM會在從「詳細資料檢視>檢視器」檢視資產時，顯示各種 **[
 
 **若要刪除自訂檢視器預設集**
 
-1. 在AEM的左上角，點選AEM標誌，然後在左側導軌中，點選「工具 (槌子圖示) **[!UICONTROL >資產>檢視器預設集」]******。
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 1. 在「檢視器預設集」頁面上，勾選「預設集標題」，然後點選「垃圾 **[!UICONTROL 筒]** 」圖示。
 1. 點選 **[!UICONTROL 刪除]**。
 
