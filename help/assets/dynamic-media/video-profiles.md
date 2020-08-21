@@ -2,7 +2,7 @@
 title: Dynamic Media 影片設定檔
 description: 動態媒體已隨附預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 您也可以將智慧裁切新增至影片。
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '3682'
 ht-degree: 16%
@@ -422,6 +422,6 @@ You can remove a Video Profile from a folder from within the **[!UICONTROL Tools
 ### 通過「屬性」從資料夾中刪除視頻配置檔案 {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. 點選或按一下AEM標誌，並導覽至「 **[!UICONTROL Assets]** 」，然後導覽至您要從中移除視訊設定檔的檔案夾。
-1. 在資料夾上點選或按一下核取標籤以選取它，然後點選或按一下「 **屬性」**。
+1. 在資料夾上，點選或按一下核取標籤以選取它，然後點選或按一下「 **[屬性]**」。
 1. 選擇「 **[!UICONTROL 視訊描述檔]** 」標籤，並從下拉式選單中選 **[!UICONTROL 取「無]** 」，然後按一下「 **[!UICONTROL 儲存並關閉」]**。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
