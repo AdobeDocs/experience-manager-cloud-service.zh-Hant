@@ -2,9 +2,9 @@
 title: 將 URL 連結至您的 Web 應用程式
 description: 如何將URL連結至動態媒體中的Web應用程式
 translation-type: tm+mt
-source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1271'
 ht-degree: 11%
 
 ---
@@ -126,20 +126,20 @@ Dynamic Media支援傳送靜態資產，這些資產不只是影像和視訊而�
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (上述路徑僅供圖例之用； 它不是您複製的實際路徑)。
+   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
 
 1. 在「 **[!UICONTROL 註冊ID]**」下方，複製ID最後一部分中找到的客戶名稱。
 
    例如，如果註冊ID為 `87654321|MyCompany`，則客戶名稱為 `MyCompany`。
 
-1. 在頁面的左上角附近，點選 **[!UICONCONTROL Cloud Services**，然後點選AEM圖示並導覽至「一般> **[!UICONTROL CRXDE Lite]**」。
+1. 在頁面的左上角附近，點選「 **[!UICONTROL Cloud Services]**」，然後點選「AEM」圖示並導覽至「 **[!UICONTROL 一般> CRXDE Lite]**」。
 1. 從JCR(Java Content Repository)複製整個視訊轉譯路徑。
 
    例如，視訊的轉譯路徑可能會如下所示：
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (上述路徑僅供圖例之用； 它不是您複製的實際路徑)。
+   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
 
 1. 依下列順序排列複製的資訊，以形成完整的URL路徑：
 
@@ -162,7 +162,7 @@ Dynamic Media支援傳送靜態資產，這些資產不只是影像和視訊而�
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (上述路徑僅供圖例之用； 它不是您複製的實際路徑)。
+   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
 
    * 在「 **[!UICONTROL 註冊ID]**」下方，複製ID最後一部分中找到的客戶名稱。您稍後將需要這些步驟中複製的客戶名稱。
 
