@@ -1,10 +1,10 @@
 ---
 title: 上線後階段
 description: 上線後階段
-translation-type: ht
-source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
-workflow-type: ht
-source-wordcount: '242'
+translation-type: tm+mt
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+workflow-type: tm+mt
+source-wordcount: '241'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 身為使用者，您可以在開發環境中存取 CRX/DE Lite，但無法在預備或生產環境中存取。
 
->[重要]
+>[!IMPORTANT]
 >在運行時寫入不可變的存放庫 (例如 `/libs` 和 `/apps`) 將發生錯誤。此外，身為客戶，您將無法存取預備和生產環境的開發人員工具。
 
 請參考[使用 CRX/DE Lite 開發](https://docs.adobe.com/help/zh-Hant/experience-manager-65/developing/devtools/developing-with-crxde-lite.html)，了解如何使用 CRX/DE Lite 開發您的 AEM 應用程式。
