@@ -2,9 +2,9 @@
 title: AEM Commerce as a Cloud Service快速入門
 description: AEM Commerce as a Cloud Service快速入門
 translation-type: tm+mt
-source-git-commit: 1fcdfa60c134491c781906e4a757a3a10399bde1
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '571'
 ht-degree: 2%
 
 ---
@@ -56,7 +56,7 @@ AEM Commerce即雲端服務的上線程式是兩個步驟：
 >
 >您可以使用下列命令列出所有Cloud Manager變數以進行複查： `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
->[!Note]
+>[!NOTE]
 >
 >您也可以使 [用Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) ，來設定Cloud Manager變數。
 
