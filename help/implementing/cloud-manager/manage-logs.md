@@ -2,9 +2,9 @@
 title: 管理記錄檔——雲端服務
 description: 管理記錄檔——雲端服務
 translation-type: tm+mt
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 17%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 17%
 
 ![](assets/download-logs.png)
 
->[!Note]
+>[!NOTE]
 >不論其開啟位置為何，都會出現相同的對話方塊，並允許下載個別記錄檔。
 
 ![](assets/manage-logs3.png)
@@ -67,7 +67,7 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
->[!Note]
+>[!NOTE]
 >雖 **然「記錄下載** 」將可透過UI和API使用，但 **「記錄追蹤** 」僅限API/CLI。
 
 ### 其他資源 {#resources}
