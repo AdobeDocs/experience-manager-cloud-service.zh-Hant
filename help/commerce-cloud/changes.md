@@ -2,9 +2,9 @@
 title: AEM Commerce as a Cloud Service的顯著變更
 description: 與Adobe Experience Manager 6.5相比，AEM Commerce的雲端服務顯著變更。
 translation-type: tm+mt
-source-git-commit: df6f679b70a7cc70e4f76612c0a72a31443cd1b8
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '596'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ Experience Manager中不再提供Classic Commerce Integration Framework（包含
 | 如何為Magento後端部署CIF製作工具 | [請參閱AEM 6.5上支援的CIF](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) Connector（CIF連接器） | [請參閱AEM 6.5上支援的CIF](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) Connector（CIF連接器） | AEM作為雲端服務，必須布建CIF附加元件。 如需詳細資訊，請洽詢您的銷售代表 |
 | 如何部署 [CIF Venia項目](https://github.com/adobe/aem-cif-guides-venia) | AEM套件安裝 | 透過 [Cloud Manager完成部署](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | 專案移入 [Cloud Manager Git Repository](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) ，並透過 [Cloud Manager完成部署](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/deploying/overview.html) |
 
->[!Note]
+>[!NOTE]
 >
 >CIF Classic/Quickstart版的Commerce Integration Framework可用於AEM內部部署方案，但使用案例有限。 不過，這不是建議的解決方案。
 
@@ -48,6 +48,6 @@ Experience Manager中不再提供Classic Commerce Integration Framework（包含
 * GraphQL用戶端OSGI搭 **售不得再** 包含在AEM專案中，它是透過CIF附加元件部署
 * GraphQL用戶端和Graphql資料服務的OSGI **組態** ，不能再包含在AEM專案中
 
->[!Tip]
+>[!TIP]
 >
 >查看GitHub上 [的AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) 專案。 此專案提供AEM的Maven設定檔，做為雲端服務和內部部署，可考慮不同的架構條件。
