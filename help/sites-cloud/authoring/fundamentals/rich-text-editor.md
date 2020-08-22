@@ -2,9 +2,9 @@
 title: 將Rich Text Editor用於作 [!DNL Adobe Experience Manager] 者內容。
 description: 使用 [!DNL Experience Manager] Rich Text Editor來製作內容。
 translation-type: tm+mt
-source-git-commit: 5437329c55bd7da6d8b966a7f01c9e57ff1feb59
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 2%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 2%
 
 通常，工具列提供下列選項：
 
-* **格式**: 強調文字為粗體或斜體，或加上文字底線。
-* **清單**: 建立項目清單或編號清單並設定縮排。
-* **超連結**: 建立連結。
-* **解除連結**: 移除超連結。
-* **全螢幕**: 以全螢幕模式開啟編輯器。
-* **關閉**: 停止編輯。
-* **儲存**: 儲存變更。
+* **格式**:強調文字為粗體或斜體，或加上文字底線。
+* **清單**:建立項目清單或編號清單並設定縮排。
+* **超連結**:建立連結。
+* **取消連結**:移除超連結。
+* **全螢幕**:以全螢幕模式開啟編輯器。
+* **關閉**:停止編輯。
+* **儲存**:儲存變更。
 
 ## 全螢幕編輯 {#full-screen-editing}
 
@@ -44,16 +44,16 @@ ht-degree: 2%
 
 其他豐富式文字編輯器選項包括：
 
-* **錨點**: 在文字中建立錨點，您稍後可以連結至或建立參考。
+* **錨點**:在文字中建立錨點，您稍後可以連結至或建立參考。
 * **向左對齊文字**.
 * **文字置中**.
 * **向右對齊文字**.
 
 按一下「最小化」以關閉全螢幕模式。
 
->[!Tip]
+>[!TIP]
 >
->將嵌套清單從複製 [!DNL Microsoft Word] 到RTE中可能會產生不一致的結果。 您可以改為貼上為文字，然後進行手動調整。
+>將嵌套清單從複製 [!DNL Microsoft Word] 到RTE中可能會產生不一致的結果。 請改為貼上為文字，然後進行手動調整。
 
 >[!MORELIKETHIS]
 >
