@@ -2,9 +2,9 @@
 title: 部署至 AEM 雲端服務
 description: '部署至 AEM 雲端服務 '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: bb810684a513718ddb7232f1a2da725b2df7f36c
 workflow-type: tm+mt
-source-wordcount: '3523'
+source-wordcount: '3537'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ Health checks are used to monitor the health of the application. 如果這些檢
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
-本節的其餘部分將說明不可改變和可變包裝的組成和含義。
+本節的其餘部分將介紹不可改變和可變封裝的組成和含義。
 
 ### 不可變的內容包 {#immutabe-content-packages}
 
@@ -144,12 +144,12 @@ Health checks are used to monitor the health of the application. 如果這些檢
 由於以下優點，因此，最好對這些支援的內容修改使用案例進行重新分析：
 
 * Repoinit會在啟動時建立資源，讓邏輯可以將這些資源的存在視為已授予。 在可變內容封裝方法中，資源是在啟動後建立的，因此依賴資源的應用程式碼可能會失敗。
-* Repoinit是相對安全的指令集，因為您明確控制要執行的動作。 此外，除了允許移除使用者、服務使用者和群組的少數安全性相關案例外，唯一支援的作業是加入的。 相反，移除可變內容包方法中的某些內容是明確的；  當您定義篩選器時，篩選器所涵蓋的任何項目都會被刪除。 不過，我們仍應小心謹慎，因為如果有任何內容，新內容的存在可能會改變應用程式的行為。
+* Repoinit是相對安全的指令集，因為您明確控制要執行的動作。 此外，除了允許移除使用者、服務使用者和群組的少數安全性相關案例外，唯一支援的作業是加入的。 相反，移除可變內容包方法中的某些內容是明確的； 當您定義篩選器時，篩選器所涵蓋的任何項目都會被刪除。 不過，我們仍應小心謹慎，因為如果有任何內容，新內容的存在可能會改變應用程式的行為。
 * Repoinit可執行快速和原子操作。 相比之下，可變內容封裝可以高度依賴於濾鏡所覆蓋的結構。 即使您更新單個節點，也可能建立大型樹的快照。
 * 可在運行時驗證本地開發環境上的repoinit語句，因為這些語句將在註冊OSGi配置時執行。
 * 重新指向語句是原子和顯式語句，如果狀態已匹配，則將跳過。
 
-當Cloud Manager部署應用程式時，它會執行這些陳述式，而與安裝任何內容封裝無關。
+當Cloud Manager部署應用程式時，它會執行這些陳述式，而與安裝任何內容套件無關。
 
 要建立重新指向語句，請遵循以下過程：
 
@@ -183,7 +183,7 @@ above appears to be internal, to confirm with Brian -->
 
 ### 包括第三方包 {#including-third-party}
 
-客戶通常會加入來自第三方來源（例如Adobe的翻譯合作夥伴等軟體廠商）的預建套件。 建議將這些軟體包裝載在遠程儲存庫中，並在中引用它們 `pom.xml`。 這僅對公共儲存庫可能。
+客戶通常會加入來自第三方來源（例如Adobe的翻譯合作夥伴等軟體廠商）的預建套件。 建議將這些軟體包裝載在遠程儲存庫中，並在中引用它們 `pom.xml`。 對於公共儲存庫和具有密碼保護的專用儲存庫，這是可能的，如受密碼保護的 [主儲存庫中所述](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#password-protected-maven-repositories)。
 
 如果無法將軟體包儲存在遠程儲存庫中，客戶可以將軟體包放在基於檔案系統的本地Maven儲存庫中，該儲存庫作為項目的一部分提交到SCM ，並由任何依賴它的系統引用。 儲存庫將在項目提示中聲明，如下所示：
 
@@ -287,8 +287,8 @@ above appears to be internal, to confirm with Brian -->
 
 另一方面，AEM是雲端服務，對於哪些執行模式可用，以及如何將OSGI組合和OSGI組態對應至它們，則有更多看法：
 
-* OSGI配置運行模式必須參考dev、stage、prod for the environment或author, publish for the service。 支援組合 `<service>.<environment_type>` ，但必須依此特定順序（例如或）使 `author.dev` 用 `publish.prod`這些。 OSGI Token應直接從程式碼參考，而不是使用 `getRunModes` 方法，方法將不再包含在執行 `environment_type` 時期。 如需詳細資訊，請 [參閱「將AEM的OSGi設定為雲端服務」](/help/implementing/deploying/configuring-osgi.md)。
-* OSGI組合的執行模式僅限於服務（作者、發佈）。 Per-run mode OSGI bundles should be installed in the content package under `install/author` or `install/publish`.
+* OSGI配置運行模式必須參考dev、stage、prod for the environment或author, publish for the service。 支援組合 `<service>.<environment_type>` ，但必須依此特定順序（例如或）使 `author.dev` 用 `publish.prod`這些。 OSGI Token應直接從程式碼引用，而不是使用 `getRunModes` 方法，方法將不再包含在執行 `environment_type` 時期。 如需詳細資訊，請 [參閱「將AEM的OSGi設定為雲端服務」](/help/implementing/deploying/configuring-osgi.md)。
+* OSGI組合的執行模式僅限於服務（作者、發佈）。 Per-run mode OSGI bundles應安裝在或下方的內容套件 `install/author` 中 `install/publish`。
 
 和現有的AEM解決方案一樣，您也無法使用執行模式來安裝特定環境或服務的內容。 如果想要為未在舞台或生產環境中的資料或HTML建立開發環境，則可使用封裝管理員。
 
