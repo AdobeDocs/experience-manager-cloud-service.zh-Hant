@@ -2,9 +2,9 @@
 title: 影片
 description: 瞭解如何在動態媒體中處理視訊
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 07d60f1ae6be824af07bc51f989a5c2029a3422a
 workflow-type: tm+mt
-source-wordcount: '10056'
+source-wordcount: '10052'
 ht-degree: 10%
 
 ---
@@ -207,7 +207,7 @@ HLS是Apple自適應視訊串流的標準，可根據網路頻寬容量自動調
   <tr>
    <td>桌面</td>
    <td>Internet Explorer 11+</td>
-   <td>在Windows 8和Windows 10上——每當要求HLS時，強制使用HTTPS。 已知限制：HLS上的HTTP無法在此瀏覽器／作業系統組合<br /><br /> 「On Windows 7 —— 漸進式下載」中運作。 使用標準邏輯來選擇HTTP與HTTPS通訊協定。</td>
+   <td>在Windows 8和Windows 10上——每當要求HLS時，就強制使用HTTPS。 已知限制：HLS上的HTTP無法在此瀏覽器／作業系統組合<br /><br /> 「On Windows 7 —— 漸進式下載」中運作。 使用標準邏輯來選擇HTTP與HTTPS通訊協定。</td>
   </tr>
   <tr>
    <td>桌面</td>
@@ -629,7 +629,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    若要刪除已新增的標籤，請選取標籤，然後點選 **[!UICONTROL X]**。
 
-1. 在您新增所需的標籤後，點選「儲存 **[!UICONTROL 」]**。
+1. 在您新增所需的標籤後，點選「儲 **[!UICONTROL 存」]**。
 
    現在，您可將視訊發佈至YouTube頻道。
 
@@ -972,10 +972,10 @@ For YouTube publishing jobs, do the following:
 1. 在AEM的左上角，點選AEM標誌，然後在左側導軌中，點選「工具 (槌子圖示) > **[!UICONTROL Assets]** >視訊報 **[!UICONTROL 表」]******。
 1. 在「視訊報表」頁面上，執行下列其中一項作業：
 
-   * 在右上角附近，點選「 **[UICONTROL重新整理視訊報表]** 」圖示。
+   * 在右上角附近，點選「重新整理視 **[!UICONTROL 訊報表」圖示]** 。
 如果報表的結束日期是當天，您只需使用「重新整理」。 這可確保您看到自上次執行報表後所發生的視訊追蹤。
 
-   * 在右上角附近，點選「 **[UICONCONTROL日期選擇器」圖示]** 。
+   * 在右上角附近，點選「日期 **[!UICONTROL 選擇器」圖示]** 。
 指定您要視訊資料的開始和結束日期範圍，然後點選「執行 **[!UICONTROL 報表」]**。
 
    「排名最前的量度」群組方塊可識別網站上所有*已發佈*視訊的各種匯總量度。
@@ -1011,7 +1011,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
    此參 `config2` 數可在HTML5檢視器中啟用追蹤。 此預設集也是公司專屬的預設集，包含視訊報告和客戶專屬Adobe Analytics組態的組態資訊。
 
-   config2參數的正確值可在 **[!UICONTROL Embed Code]**  (內嵌代碼) 和copy **[UICONTROL URL (複製UICONTROL URL) 函式]** 中找到。在複製 **[UICONTROL URL命令的URL中]** ，要尋找的參數為 `&config2=<value>` 。值幾乎總是 `companypreset`會出現，但在某些情況下 `companypreset-1`, `companypreset-2`它也可以是、等等。
+   config2參數的正確值可在 **[!UICONTROL Embed Code]**  (內嵌代碼) 和copy **[!UICONTROL URL (複製UICONTROL URL) 函式]** 中找到。在複製 **[!UICONTROL URL命令的URL中]** ，要尋找的參數為 `&config2=<value>` 。值幾乎總是 `companypreset`會出現，但在某些情況下 `companypreset-1`, `companypreset-2`它也可以是、等等。
 
 1. 在您的自訂視訊檢視器程式碼中，執行下列動作，將AppMeasurementBridge .jsp新增至檢視器頁面：
 
@@ -1099,7 +1099,7 @@ Dynamic Media可將標題檔案轉換為JSON（JavaScript物件註解）格式�
 
       請注意 `,1` 標題路徑結尾處的。 緊接在路徑中的。vtt副檔名後，您可以選擇分別設定為或，以啟用（開啟）或停用（關閉）視訊播放器列上的隱藏字幕 `,1` 按 `,0`鈕。
 
-   * 如需內嵌的視訊檢視器體驗，請點選「 **[!UICONTROL 內嵌代碼」]**。 在「內嵌代碼」對話方塊中，選取內嵌代碼並將它複製至剪貼簿，然後將代碼貼入簡單的文字編輯器。 以下列語法附加複製的內嵌代碼：
+   * 如需內嵌的視訊檢視器體驗，請點選「 **[!UICONTROL 內嵌代碼」]**。 在「內嵌代碼」對話方塊中，選取內嵌代碼並將其複製至剪貼簿，然後將代碼貼入簡單的文字編輯器中。 以下列語法附加複製的內嵌代碼：
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
