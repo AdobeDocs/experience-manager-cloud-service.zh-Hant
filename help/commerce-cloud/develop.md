@@ -2,9 +2,9 @@
 title: 將AEM的AEM Commerce開發為雲端服務
 description: 將AEM的AEM Commerce開發為雲端服務
 translation-type: tm+mt
-source-git-commit: e30086c546d9efcc1da07ac5862c012a0db02c09
+source-git-commit: 19fa6391913f556b80607f8dd5215489082b50ab
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '809'
 ht-degree: 9%
 
 ---
@@ -20,11 +20,13 @@ ht-degree: 9%
 
 ## 以AEM做為雲端服務SDK進行本機開發 {#local}
 
+>[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
+
 建議在當地開發環境下與CIF項目合作。 針對AEM（雲端服務）環境提供的CIF附加元件也適用於本機開發。 您可從軟體散發入口 [網站下載](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。
 
 CIF Add-On是以Sling Feature封存檔的形式提供。 Software Distribution Portal上提供的zip檔案包含兩個Sling Feature封存檔，一個用於AEM作者，一個用於AEM發佈例項。
 
-**您是AEM的新手嗎？** 請參閱下 [列指南，以使用AEM做為雲端服務SDK來設定本機開發環境](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)。
+**您是AEM的新手嗎？** 請參閱更 [詳細的指南，以使用AEM做為雲端服務SDK來設定本機開發環境](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)。
 
 ### 所需軟體
 
@@ -39,7 +41,7 @@ CIF Add-On是以Sling Feature封存檔的形式提供。 Software Distribution P
 
 ### 訪問CIF附加模組
 
-The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). zip檔案包含CIF附加元件作為Sling Feature封存，它不是AEM套件。 請注意，SDK清單的存取權限僅限AEM為雲端服務授權的使用者。
+The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). zip檔案包含CIF附加元件作為 **Sling Feature封存**，它不是AEM套件。 請注意，SDK清單的存取權限僅限AEM為雲端服務授權的使用者。
 
 >[!TIP]
 >
@@ -57,7 +59,7 @@ The CIF add-on can be downloaded as a zip file from the [Software Distribution p
    ```
 
 3. 建立資料 `crx-quickstart/install` 夾
-4. 將CIF附加元件的正確Sling Feature封存檔檔案複製至檔 `crx-quickstart/install` 案夾。
+4. 將CIF附加元件的正確Sling Feature封存檔複製至檔案 `crx-quickstart/install` 夾。
 
    CIF附加郵遞區號檔案包含兩個Sling Feature封存 `.far` 檔。 請務必針對AEM作者或AEM Publish使用正確的AEM，視您計畫如何以雲端服務SDK的形式執行本機AEM而定。
 
@@ -139,13 +141,13 @@ CIF核心元件可以通過包括提供的包或單獨使用CIF內容包 `all` �
 
 ### 使用AEM Venia Reference Store
 
-啟動CIF專案的第二個選項是仿製並使用 [AEM Venia參考商店](https://github.com/adobe/aem-cif-guides-venia)。 AEM Venia Reference Store是範例參考店面應用程式，示範CIF核心元件對AEM的使用方式。 它是一組最佳範例，也是開發您自己功能的潛在起點。
+啟動CIF專案的第二個選項是仿製並使用 [AEM Venia參考商店](https://github.com/adobe/aem-cif-guides-venia)。 AEM Venia Reference Store是範例參考店面應用程式，示範CIF核心元件對AEM的使用方式。 它旨在做為一組最佳範例，以及開發您自己功能的潛在起點。
 
 若要開始使用Venia Reference Store，只需仿製Git儲存庫，然後開始根據您的需求自訂專案。
 
 >[!NOTE]
 >
->Venia Reference Store專案包含兩個AEM的Cloud Service和AEM 6.5建置設定檔。 請查看 [專案readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) ，瞭解其使用方式。
+>Venia Reference Store專案包含兩個AEM的Cloud Service和AEM 6.5建置設定檔。請查看 [專案readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) ，瞭解其使用方式。
 
 ## 其他資源
 
