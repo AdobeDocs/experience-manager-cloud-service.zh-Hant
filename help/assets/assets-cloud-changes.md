@@ -2,7 +2,7 @@
 title: Adobe Experience Manager資產雲端服務的顯著變更
 description: AEM Cloud服務中的Adobe Experience Manager Assets與Adobe Experience Manager 6.5相比有顯著變更。
 translation-type: tm+mt
-source-git-commit: 60f11cd86ecfeb47a46f9809d8ae9f1c45a4a25f
+source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 15%
@@ -38,7 +38,7 @@ Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功�
 
 * Experience Manager使用直接二進位存取原則來上傳和下載資產，並使用資產微服務來處理資產。 請參 [閱資產擷取概觀](/help/assets/asset-microservices-overview.md)。
    * 直接二進位 [存取的資產上傳](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)。
-   * 如需技術詳細資訊，請參 [閱直接二進位上傳通訊協定和API](/help/assets/developer-reference-material-apis.md#overview-binary-upload)。
+   * 如需技術詳細資訊，請參 [閱直接二進位上傳通訊協定和API](/help/assets/developer-reference-material-apis.md#upload-binary)。
 * 舊版 AEM 已不提供預設的工作流程 **[!UICONTROL DAM Asset Update]**。相反，資產微服務提供可擴充、可立即使用的服務，涵蓋大部分預設資產處理（轉譯、中繼資料擷取、文字擷取以建立索引）。
    * 請參 [閱配置和使用資產微服務](/help/assets/asset-microservices-configure-and-use.md)
    * 若要在處理中自訂工作流程步驟， [可使用後處理工](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) 作流程。
