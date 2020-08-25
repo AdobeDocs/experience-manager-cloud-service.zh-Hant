@@ -2,7 +2,7 @@
 title: 過時和移除的功能
 description: 此發行說明著重於 Adobe Experience Manager 雲端服務中已過時和移除的功能。
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | 功能 | 汰除功能 | 替代方案 |
 | ------------ | ------------------ | ----------- |
 | 資產 | 處理所擷取影像的 `DAM Asset Update` 工作流程。 | 資產擷取現在使用[資產微服務](/help/assets/asset-microservices-overview.md)。 |
-| 資產 | 將資產直接上傳至 AEM。請參閱[汰除的資產上傳 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二進位上傳](/help/assets/add-assets.md)。如需技術詳細資訊，請參閱[直接上傳 API](/help/assets/developer-reference-material-apis.md#overview-binary-upload)。 |
+| 資產 | 將資產直接上傳至 AEM。請參閱[汰除的資產上傳 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二進位上傳](/help/assets/add-assets.md)。如需技術詳細資訊，請參閱[直接上傳 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
 | 資產 | 不支援 `DAM Asset Update` 工作流程中的[某些工作流程步驟](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)，包括呼叫命令列工具，例如 ImageMagick。 | [資產微服務](/help/assets/asset-microservices-overview.md)可取代許多工作流程。若要自訂處理程序，請使用[後期處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
 | 資產 | FFmpeg 影片轉碼。 | 若要產生 FFmpeg 縮圖，請使用[資產微服務](/help/assets/asset-microservices-overview.md)。若是 FFmpeg 轉碼，請使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 
