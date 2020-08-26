@@ -4,7 +4,7 @@ description: 瞭解如何使用「篩選」面板在AEM中尋找所需資產，�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7317a5db6ed348f99b2290d72ddf6e540fae5456
+source-git-commit: c0c5663999158e326bb4617f3bf34e96e7615f64
 workflow-type: tm+mt
 source-wordcount: '4529'
 ht-degree: 7%
@@ -25,7 +25,7 @@ AEM支援下列使用案例，而本文則說明這些使用案例的使用、�
 | [搜尋建議](#searchsuggestions) | [必備中繼資料](#mandatorymetadata) | [下載](#download) |
 | [瞭解搜尋結果和行為](#searchbehavior) | [修改搜尋刻面](#searchfacets) | [大量中繼資料更新](#metadataupdates) |
 | [搜尋排名與提升](#searchrank) | [文字擷取](#extracttextupload) | [智慧型系列](#collections) |
-| [進階搜尋： 篩選和搜尋範圍](#scope) | [自訂謂語](#custompredicates) | [瞭解意外結果](#unexpectedresults) ，並疑難排 [解](#troubleshoot) |
+| [進階搜尋：篩選和搜尋範圍](#scope) | [自訂謂語](#custompredicates) | [瞭解意外結果](#unexpectedresults) ，並疑難排 [解](#troubleshoot) |
 | [從其他解決方案和應用程式搜尋](#beyondomnisearch): <br />     [Asset Link](#aal) <br />[Desktop應用程式](#desktopapp) <br />     [Adobe Stock影像](#adobestock) <br />     [動態媒體資產](#dynamicmedia) |  |  |
 | [資產選擇器／選擇器](#assetselector) |  |  |
 | [限制](#tips) 和提 [示](#limitations) |  |  |
@@ -106,7 +106,7 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 
 1. 從「資產」使用者介面，開啟資產的屬性頁面。按一 **[!UICONTROL 下「進階]** 」，然後按一下/點選「 **[!UICONTROL Elevate for search keywords]** 」下 **[!UICONTROL 方的「新增」]**。
 1. 在「搜 **[!UICONTROL 尋促銷]** 」方塊中，指定您要大幅提升影像搜尋的關鍵字，然後按一下／點選「新增」 ****。 您可以以相同的方式指定多個關鍵字。
-1. 按一下／點選「 **[!UICONTROL 儲存並關閉]**」。 您為此關鍵字促銷的資產會出現在熱門搜尋結果中。
+1. Click/tap **[!UICONTROL Save &amp; Close]**. 您為此關鍵字促銷的資產會出現在熱門搜尋結果中。
 
 您可以透過提升目標關鍵字搜尋結果中某些資產的排名，來利用此功能。 請參閱以下範例影片。 如需詳細資訊，請參 [閱「AEM中的搜尋」](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html)。
 
@@ -118,9 +118,9 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 
 AEM提供各種方法，例如套用至已搜尋資產的篩選器，以協助您更快找到所需的資產。 以下說明一些常用的方法。 以下 [共用一些](#samples) 圖示範例。
 
-**搜索檔案或資料夾**: 在搜索結果中，查看檔案、資料夾或兩者。 從「篩 **[!UICONTROL 選器]** 」面板中，您可以選取適當的選項。 請參閱 [搜尋介面](#searchui)。
+**搜索檔案或資料夾**:在搜索結果中，查看檔案、資料夾或兩者。 從「篩 **[!UICONTROL 選器]** 」面板中，您可以選取適當的選項。 請參閱 [搜尋介面](#searchui)。
 
-**在資料夾中搜尋資產**: 您可以將搜尋限制在特定資料夾。 在「篩 **[!UICONTROL 選器]** 」面板中，新增資料夾的路徑。 一次只能選擇一個資料夾。
+**在資料夾中搜尋資產**:您可以將搜尋限制在特定資料夾。 在「篩 **[!UICONTROL 選器]** 」面板中，新增資料夾的路徑。 一次只能選擇一個資料夾。
 
 ![在「篩選器」面板中新增檔案夾路徑，將搜尋結果限制在檔案夾中](assets/search_folder_select.gif)
 
@@ -161,7 +161,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 | 到期日 | 過期：YYYY-MM-DDTHH |
 | 準時 | ontime:YYYY-MM-DDTHH |
 | 關閉時間 | offtime:YYYY-MM-DDTHH |
-| 時間範圍（過期的dateontime,offtime） | facet欄位： 下限……上界 |
+| 時間範圍（過期的dateontime,offtime） | facet欄位：下限……上界 |
 | 路徑 | /content/dam/&lt;資料夾名稱> |
 | PDF 標題 | pdftitle:「Adobe檔案」 |
 | 主旨 | 主旨：「訓練」 |
@@ -177,13 +177,13 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 
 以下是複雜查詢的搜尋格式範例：
 
-* 若要顯示具有多個刻面欄位的所有資產(例如： title=John Doe and creator tool = Adobe Photoshop): `title:"John Doe" creatortool : Adobe*`
-* 若要在Facet值不是單字而是句子時顯示所有資產(例如： title=Scott Reynolds): `title:"Scott Reynolds"`
-* 若要顯示具有單一屬性多個值的資產(例如： title=Scott Reynolds或John Doe): `title:"Scott Reynolds" OR "John Doe"`
-* 若要顯示屬性值以特定字串開頭的資產(例如： 標題是Scott Reynolds): `title:Scott*`
-* 若要顯示屬性值以特定字串結尾的資產(例如： 標題是Scott Reynolds): `title:*Reynolds`
-* 若要顯示包含特定字串的屬性值的資產(例如： 標題=巴塞爾會議室): `title:*Meeting*`
-* 若要顯示包含特定字串且具有特定屬性值的資產(例如： 在具有title=John Doe的資產中搜尋字串Adobe): `*Adobe* title:"John Doe"`
+* 若要顯示具有多個刻面欄位的所有資產(例如：title=John Doe and creator tool = Adobe Photoshop): `title:"John Doe" creatortool : Adobe*`
+* 若要在Facet值不是單字而是句子時顯示所有資產(例如：title=Scott Reynolds): `title:"Scott Reynolds"`
+* 若要顯示具有單一屬性多個值的資產(例如：title=Scott Reynolds或John Doe): `title:"Scott Reynolds" OR "John Doe"`
+* 若要顯示屬性值以特定字串開頭的資產(例如：標題是Scott Reynolds): `title:Scott*`
+* 若要顯示屬性值以特定字串結尾的資產(例如：標題是Scott Reynolds): `title:*Reynolds`
+* 若要顯示包含特定字串的屬性值的資產(例如：標題=巴塞爾會議室): `title:*Meeting*`
+* 若要顯示包含特定字串且具有特定屬性值的資產(例如：在具有title=John Doe的資產中搜尋字串Adobe): `*Adobe* title:"John Doe"`
 
 ## 從其他AEM產品或介面搜尋資產 {#beyondomnisearch}
 
@@ -191,7 +191,7 @@ Adobe Experience Manager(AEM)將DAM存放庫與各種其他AEM解決方案連結
 
 ### 從Adobe Asset Link面板搜尋資產 {#aal}
 
-使用Adobe Asset Link，創意專業人員現在可以存取儲存在AEM Assets中的內容，而不需離開支援的Adobe Creative Cloud應用程式。 創意人員可使用Creative Cloud應用程式中的應用程式內面板，順暢地瀏覽、搜尋、結帳和結帳資產： Photoshop、Illustrator和InDesign。 資產連結也可讓使用者搜尋視覺上類似的結果。 視覺化搜尋顯示結果由Adobe Sensei的機器學習演算法提供支援，並協助使用者尋找美學上類似的影像。 請參 [閱使用Adobe資產連結](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) ，搜尋及瀏覽資產。
+使用Adobe Asset Link，創意專業人員現在可以存取儲存在AEM Assets中的內容，而不需離開支援的Adobe Creative Cloud應用程式。 創意人員可使用Creative Cloud應用程式中的應用程式內面板，順暢地瀏覽、搜尋、結帳和結帳資產：Photoshop、Illustrator和InDesign。 資產連結也可讓使用者搜尋視覺上類似的結果。 視覺化搜尋顯示結果由Adobe Sensei的機器學習演算法提供支援，並協助使用者尋找美學上類似的影像。 請參 [閱使用Adobe資產連結](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) ，搜尋及瀏覽資產。
 
 ### 在AEM案頭應用程式中搜尋資產 {#desktopapp}
 
@@ -267,9 +267,9 @@ AEM Assets中的搜尋功能有下列限制：
 * 全文搜尋支援運算子，例如-、^等。 要將這些字母作為字串文本搜索，請用雙引號將搜索表達式括起來。 例如，使用「筆記型電腦——美容」而非「筆記型電腦——美容」。
 * 如果搜尋結果太多，請將 [搜尋範圍限制](#scope) 為所要資產的零值。 當您對如何更好地尋找所需資產（例如特定檔案類型、特定位置、特定中繼資料等）有一些概念時，效果最佳。
 
-* **標籤**: 標籤可協助您將可以更有效率地瀏覽和搜尋的資產分類。 標籤有助於將適當的分類傳播給其他用戶和工作流。 AEM提供使用Adobe Sensei人工智慧服務自動標籤資產的方法，這些服務可讓您在使用和訓練資產時不斷取得進步。 當您搜尋資產時，如果您的帳戶已啟用功能，智慧標籤會加入。 它可與內建搜尋功能搭配使用。 請參閱 [搜尋行為](#searchbehavior)。 若要最佳化搜尋結果的顯示順序，您可以提 [高少數選取資產的搜尋](#searchrank) 排名。
+* **標籤**:標籤可協助您將可以更有效率地瀏覽和搜尋的資產分類。 標籤有助於將適當的分類傳播給其他用戶和工作流。 AEM提供使用Adobe Sensei人工智慧服務自動標籤資產的方法，這些服務可讓您在使用和訓練資產時不斷取得進步。 當您搜尋資產時，如果您的帳戶已啟用功能，智慧標籤會加入。 它可與內建搜尋功能搭配使用。 請參閱 [搜尋行為](#searchbehavior)。 若要最佳化搜尋結果的顯示順序，您可以提 [高少數選取資產的搜尋](#searchrank) 排名。
 
-* **索引**: 搜尋結果中只會傳回已建立索引的中繼資料和資產。 為了獲得更好的覆蓋面和效能，請確保正確編製索引並遵循最佳做法。 請參 [閱索引](#searchindex)。
+* **索引**:搜尋結果中只會傳回已建立索引的中繼資料和資產。 為了獲得更好的覆蓋面和效能，請確保正確編製索引並遵循最佳做法。 請參 [閱索引](#searchindex)。
 
 ## 一些範例說明搜尋 {#samples}
 
@@ -279,7 +279,7 @@ AEM Assets中的搜尋功能有下列限制：
 
 使用引號和不使用引號的搜尋行為
 
-**使用星號通配符進行搜索**: 若要擴大搜尋範圍，請在搜尋字詞前後使用星號，以比對任意數目的字元。 例如，搜尋沒有星號的執行並不會傳回包含字詞變異的資產（包括在中繼資料中）。 星號可取代任意數字元。 例如，
+**使用星號通配符進行搜索**:若要擴大搜尋範圍，請在搜尋字詞前後使用星號，以比對任意數目的字元。 例如，搜尋沒有星號的執行並不會傳回包含字詞變異的資產（包括在中繼資料中）。 星號可取代任意數字元。 例如，
 
 * `run` 返回正確執行關鍵字的資產
 * `run*` 傳回資產，包括執行、執行、逃跑等。
@@ -290,21 +290,21 @@ AEM Assets中的搜尋功能有下列限制：
 
 以範例說明在資產搜尋中使用星號萬用字元
 
-**使用問號萬用字元搜尋**: 若要擴大搜尋範圍，請使用一或多個「?」 字元來比對字元數目。 例如，在下圖中，
+**使用問號萬用字元搜尋**:若要擴大搜尋範圍，請使用一或多個「?」 字元來比對字元數目。 例如，在下圖中，
 
 * `run???` 查詢不符合任何資產。
 
 * `run????` query與後4個字 `running` 元的字詞相符 `run`。
 
-* `??run` query與之前包含兩 `rerun` 個字元的單字相符 `run`。
+* `??run` query與之前包含兩 `rerun` 個字元的字詞相符 `run`。
 
 ![使用範例說明在資產搜尋中使用問號萬用字元](assets/search_with_questionmark_run.gif)
 
 使用範例說明在資產搜尋中使用問號萬用字元
 
-**排除關鍵字**: 使用破折號來搜尋不含關鍵字的資產。 例如，查 `running -shoe` 詢會傳回包含但 `running`不包含的資產 `shoe`。 同樣地， `camp -night` 查詢會傳回包含但不包含 `camp` 的資產 `night`。 請注意， `camp-night` 查詢會傳回同時包含和的 `camp` 資產 `night`。
+**排除關鍵字**:使用破折號來搜尋不含關鍵字的資產。 例如，查 `running -shoe` 詢會傳回包含但 `running`不包含的資產 `shoe`。 同樣地， `camp -night` 查詢會傳回包含但不包含 `camp` 的資產 `night`。 請注意， `camp-night` 查詢會傳回同時包含和的 `camp` 資產 `night`。
 
-![使用破折號來搜尋不含已排除關鍵字的資產](assets/search_dash_exclude_keyword.gif)*圖： 使用破折號來搜尋不含已排除關鍵字的資產*
+![使用破折號來搜尋不含已排除關鍵字的資產](assets/search_dash_exclude_keyword.gif)*圖：使用破折號來搜尋不含已排除關鍵字的資產*
 
 <!--
 ## Configuration and administration tasks related to search functionality {#configadmin}
@@ -400,7 +400,7 @@ You can search for digital assets based on one or more of the following properti
 
 ### 排序搜尋結果 {#sort}
 
-排序搜尋結果有助於您更快找到所需資產。排序搜索結果在清單視圖中工作，且僅當從「篩選器」面板 **[!UICONTROL [中選擇「檔案](#searchui)]**」時**[!UICONTROL &#x200B;工作&#x200B;]**。[!DNL Assets]使用伺服器端排序功能，快速排序資料夾或搜尋查詢結果中的所有資產 (無論多少)。伺服器端排序比用戶端排序提供更快速且更精確的結果。
+排序搜尋結果有助於您更快找到所需資產。排序搜索結果在清單視圖中工作，且僅當從「篩選器」面板 **[[!UICONTROL 中選擇「檔案]](#searchui)** 」時 **[!UICONTROL 工作]** 。[!DNL Assets]使用伺服器端排序功能，快速排序資料夾或搜尋查詢結果中的所有資產 (無論多少)。伺服器端排序比用戶端排序提供更快速且更精確的結果。
 
 在清單檢視中，您可以像排序任何資料夾中的資產一樣，對搜尋結果進行排序。 排序功能適用於這些欄——名稱、標題、狀態、維度、大小、評分、使用狀況、（日期）建立、（日期）修改、（日期）發佈、工作流程和檢出。
 
@@ -439,9 +439,9 @@ You can search for digital assets based on one or more of the following properti
 
 ## 意外的搜尋結果 {#unexpectedresults}
 
-**搜尋遺失的中繼資料**: 當搜尋遺失必要中繼資料的資產時，AEM可能會顯示某些具有有效中繼資料的資產。 會根據索引的中繼資料屬性來偵測和報告遺失的中繼資料。 即使資產中繼資料已修正，它仍會繼續顯示為遺失的中繼資料，直到重新建立索引為止。 請參 [閱必要中繼資料](/help/assets/metadata-schemas.md#defining-mandatory-metadata)。
+**搜尋遺失的中繼資料**:當搜尋遺失必要中繼資料的資產時，AEM可能會顯示某些具有有效中繼資料的資產。 會根據索引的中繼資料屬性來偵測和報告遺失的中繼資料。 即使資產中繼資料已修正，它仍會繼續顯示為遺失的中繼資料，直到重新建立索引為止。 請參 [閱必要中繼資料](/help/assets/metadata-schemas.md#defining-mandatory-metadata)。
 
-**搜尋結果太多**: 為避免搜尋結果過多，請考慮限制搜尋結果。 例如，若要在DAM中搜尋資產，請在Omnisearch `Location:Assets` 列中選取。 如需更多搜尋篩選，請參 [閱搜尋範圍](#scope)。
+**搜尋結果太多**:為避免搜尋結果過多，請考慮限制搜尋結果。 例如，若要在DAM中搜尋資產，請在Omnisearch `Location:Assets` 列中選取。 如需更多搜尋篩選，請參 [閱搜尋範圍](#scope)。
 
 <!-- Another reason to get more than expected search results can be use of smarts tags. See [search behavior with smart tags](#withsmarttags). 
 -->
@@ -450,9 +450,9 @@ You can search for digital assets based on one or more of the following properti
 **Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
 -->
 
-**新上傳的資產無自動完成建議**: 當您開始在Omnisearch列中輸入搜尋關鍵字時，最近上傳資產的中繼資料（標題、標籤等）不會立即做為建議使用。 AEM Assets會等到逾時期間（預設為一小時）到期後，再執行背景工作，為所有新上傳或更新的資產建立中繼資料索引，然後將中繼資料新增至建議清單。
+**新上傳的資產無自動完成建議**:當您開始在Omnisearch列中輸入搜尋關鍵字時，最近上傳資產的中繼資料（標題、標籤等）不會立即做為建議使用。 AEM Assets會等到逾時期間（預設為一小時）到期後，再執行背景工作，為所有新上傳或更新的資產建立中繼資料索引，然後將中繼資料新增至建議清單。
 
-**無搜尋結果**: 如果AEM並顯示搜尋查詢的空白頁面，可能是下列原因：
+**無搜尋結果**:如果AEM並顯示搜尋查詢的空白頁面，可能是下列原因：
 
 * 沒有與查詢相符的資產。
 * 在搜索查詢前添加空格。 這是已知 [的限制](#limitations)。
@@ -460,7 +460,7 @@ You can search for digital assets based on one or more of the following properti
 * 不支援的中繼資料欄位包含您搜尋的關鍵字。 並非所有中繼資料欄位都會被視為搜尋。 請參 [閱範圍](#scope)。
 * 會為資產設定啟動和關閉時間，而搜尋是在資產關閉時間進行。
 
-**Search filter/predicate is not available**: 如果使用者介面上沒有搜尋篩選器的預期自訂功能，請連絡您的管理員，以檢查自訂是否已針對所有作者以及您使用的生產伺服器實施。 可能配置不正確。
+**Search filter/predicate is not available**:如果使用者介面上沒有搜尋篩選器的預期自訂功能，請連絡您的管理員，以檢查自訂是否已針對所有作者以及您使用的生產伺服器實施。 可能配置不正確。
 
 ## 疑難排解搜尋相關問題 {#troubleshoot}
 
