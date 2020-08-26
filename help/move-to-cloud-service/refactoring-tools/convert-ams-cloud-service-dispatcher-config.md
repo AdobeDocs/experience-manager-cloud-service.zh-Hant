@@ -197,7 +197,7 @@ ht-degree: 100%
 
    * 如果看見其他錯誤，請參考驗證器工具文件的疑難排解章節。
 
-## 使用本機部署 {#testing-config-local-deployment} 測試您的設定
+## 使用本機部署測試您的設定{#testing-config-local-deployment}
 
 >[!IMPORTANT]
 >
