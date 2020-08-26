@@ -1,18 +1,18 @@
 ---
 title: AEM Dispatcher 轉換工具
 description: AEM Dispatcher 轉換工具
-translation-type: ht
-source-git-commit: 66cf4fc7b5a336968dd3f8757cc56a11d6e4843e
-workflow-type: ht
-source-wordcount: '348'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 50d26dbec8281afec07ca56595b4b2a7b915eca9
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 53%
 
 ---
 
 
 # AEM Dispatcher 轉換工具 {#introduction}
 
-「Adobe Experience Manager Dispatcher 轉換工具」會將現有的 AMS Dispatcher 設定轉換為 AEM 雲端服務設定。
+Adobe Experience Manager Dispatcher Converter會將現有的AEM Dispatcher組態轉換為AEM，做為Cloud Service Dispatcher組態。
 
 ## Dispatcher 簡介 {#introduction-dispatcher}
 
@@ -31,23 +31,18 @@ Dispatcher 是 Adobe Experience manager 的快取和/或負載平衡工具。使
 
 ## AEM Dispatcher 轉換工具 {#aem-dispatcher-converter}
 
-AEM Dispatcher 轉換工具是一個公用程式，可將現有的 AMS Dispatcher 設定轉換為 AEM 雲端服務設定。此公用程式適用於 AMS 例項。
-
-實作的轉換工具為遵循轉換准則的 **AEMDispatcherConfigConverter**。
-
-如果要將 AMS 轉換為 Adobe Experience Manager 雲端服務 Dispatcher 設定，請參考[將 AMS 轉換為 Adobe Experience Manager 雲端服務 Dispatcher 設定](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html#how-to-convert-an-ams-to-an-aem-as-a-cloud-service-dispatcher-configuration)。
+AEM Dispatcher Converter提供將現有內部部署或Adobe Managed Services Dispatcher組態重構為AEM的功能，做為Cloud Service相容的Dispatcher組態。
 
 ## 使用 AEM Dispatcher 轉換工具 {#using-dispatcher-converter}
 
-以下章節說明使用「AEM Dispatcher 轉換工具」所需的資源和資訊。
+* 通過Adobe I/O CLI :建議您透過 `aio-cli-plugin-aem-cloud-service-migration` （AEM為Adobe I/O CLI的雲端服務程式碼重構外掛程式）使用AEM Dispatcher Converter。
 
-請參考 **[Git 資源：AEM 雲端服務 Dispatcher 轉換工具](https://github.com/adobe/aem-cloud-service-dispatcher-converter)**，了解此工具的使用方式、限制和疑難排解資訊。
+   請參閱 **[Git資源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** ，以瞭解如何安裝和使用外掛程式。
+
+* 作為獨立實用程式：AEM Dispatcher Converter工具也可以當成獨立的公用程式執行。
+
+   Refer to **[Git Resource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** to learn about the usage and troubleshooting for this tool.
 
 >[!IMPORTANT]
->AEM Dispatcher 轉換工具使用 Python 3.7.3 開發。建議安裝 Python 3.5 或更新的版本。
-
-## 限制 {#limitations}
-
-「AEM Dispatcher 轉換工具」根據以下假設運作：所提供的 Dispatcher 設定資料夾的結構，類似於 Cloud Manager Dispatcher 設定中描述的結構。
-
+>AEM Dispatcher Converter是使用NodeJS開發。 建議安裝NodeJS 10.0+。
 
