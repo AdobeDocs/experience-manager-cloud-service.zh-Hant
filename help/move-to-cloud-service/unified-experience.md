@@ -2,7 +2,7 @@
 title: 程式碼重構工具的統一體驗
 description: 程式碼重構工具的統一體驗
 translation-type: tm+mt
-source-git-commit: df41244712e1792e5265e4e6c8104962899c9b26
+source-git-commit: 9ef0681f93c8c25a1e5115cccb987d2db32c318e
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Unified Experience for Code Reforgent工具將AEM的執行體驗統一為Cloud S
 
 此工具可降低使用程式碼重構工具的複雜性，而每種工具在安裝、設定和執行方面都有不同的執行需求。
 
-![影像](/help/move-to-cloud-service/assets/unified-1.png)
+![影像](/help/move-to-cloud-service/assets/unified-one.png)
 
 ## 優點 {#benefits}
 
