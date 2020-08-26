@@ -2,7 +2,7 @@
 title: 程式碼重構工具的統一體驗
 description: 程式碼重構工具的統一體驗
 translation-type: tm+mt
-source-git-commit: 03434343829e1a1fb95256a607619b55626c6afc
+source-git-commit: ae60d0b472ed6368aeb5806329ff1d5c689e0827
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -30,8 +30,8 @@ Unified Experience外掛程式提供下列優點：
 
 * **使用者介面**
 
-   * `aio-cli` 命令執行一個或多個代碼重構工具（通過連結要按順序執行的工具）
-   * `config.yaml` 輸入所需的輸入參數
+   * `aio-cli` 命令執行一個或多個代碼重構工具（通過連結要按順序執行的工具）。
+   * `config.yaml` 輸入所需的輸入參數。
 
 * **基礎程式碼重構工具套裝**
 
@@ -43,7 +43,7 @@ Unified Experience外掛程式提供下列優點：
 
 ## 可用性 {#availability}
 
-請參閱 [Git資源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) ，以瞭解使用情況，以及如何為此外掛程式程式程式碼提供貢獻，此外掛程式程式碼是以GitHub開啟。
+請參閱 [Git資源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) ，以瞭解使用情況，以及如何對此外掛程式程式碼貢獻心力，此外掛程式碼是以GitHub開啟。
 
 >[!NOTE]
 >目前只有Dispatcher Converter與插件整合。
