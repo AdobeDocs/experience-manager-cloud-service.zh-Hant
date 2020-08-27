@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.8.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 雲端服務 2020.8.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: b47b4d0c84e814a43ca14c2efd4f553694ab6c2b
+source-git-commit: 7bd917067667af2f9f03a153a26303daade996fc
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1037'
 ht-degree: 6%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 6%
 
 * 品牌入口網站現在提供原生和高精確PDF檔案預覽。 請參閱 [檔案檢視器概觀](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
 
-* 使快取失效的用戶介面現在可用於 [!DNL Dynamic Media]。
+* 您現在可以直接在AEM中將CDN（內容傳送網路）快取作為雲端服務(而非使用 [!DNL Dynamic Media][!DNL Dynamic Media Classic])失效，以確保在數分鐘內就能提供最新的資產，而非數小時。 請參閱 [透過動態媒體使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 
 * 在中的使用者介面控制項、導覽、瀏覽和搜尋體驗中新增了增強的協助工具支援 [!DNL Assets]。
 
