@@ -1,11 +1,11 @@
 ---
-title: 從Adobe Experience Manager 6.x移轉至雲端服務
-description: 從Adobe Experience Manager 6.x移轉至雲端服務
+title: 從Adobe Experience Manager 6.x移轉至Experience Manager作為雲端服務。
+description: 從Adobe Experience Manager 6.x移轉至Experience Manager作為雲端服務。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e399c9f372aa8995abf5cddfbc41d1cfe2b0aa22
+source-git-commit: d9237a0121a346fc16e67e52300c3a5a263e5af3
 workflow-type: tm+mt
-source-wordcount: '28'
+source-wordcount: '36'
 ht-degree: 0%
 
 ---
