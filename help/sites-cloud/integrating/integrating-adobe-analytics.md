@@ -2,9 +2,9 @@
 title: 整合 Adobe Analytics
 description: '整合 Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
+source-git-commit: 76db5314369ca0f854482586d5c96474014a47af
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '539'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 將Adobe Analytics和AEM整合為雲端服務，可讓您追蹤網頁活動。 整合需要：
 
 * 使用Touch UI在AEM中建立Analytics設定作為雲端服務。
-* 在 [Adobe Launch中新增及設定Adobe Analytics做為擴充功能](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
+* 在 [Adobe Launch中新增及設定Adobe Analytics做為擴充功能](#analytics-launch)。 如需Adobe Launch的詳細資訊，請參 [閱本頁](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
 與舊版AEM相比，AEM中的Analytics設定中未提供架構支援（即雲端服務）。 現在可以透過Adobe Launch完成，Adobe Launch是實際工具，可用來使用Analytics功能（JS資料庫）來檢測AEM網站。 在Adobe Launch中，會建立屬性，可在其中設定Adobe Analytics擴充功能，並建立規則以傳送資料至Adobe Analytics。 Adobe Launch已取代sitecatalyst提供的分析工作。
 
@@ -50,7 +50,7 @@ ht-degree: 4%
 
 若要將Touch UI設定套用至網站，請前往： **Sites** 選擇任何網站頁 **→** Properties **** → Advanced **→ Configuration****** → Select configuration租用戶。
 
-## 使用Adobe Launch將Adobe Analytics整合在AEM網站上
+## 使用Adobe Launch將Adobe Analytics整合在AEM網站上 {#analytics-launch}
 
 Adobe Analytics可新增為Launch屬性中的擴充功能。 可定義規則，以執行對應並對Adobe Analytics進行貼文呼叫：
 
