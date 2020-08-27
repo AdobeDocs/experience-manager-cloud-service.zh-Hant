@@ -3,10 +3,10 @@ title: 將資產、檔案夾和系列共用為連結
 description: 本文說明如何在Experience Manager Assets中以超連結的形式共用資產、檔案夾和系列。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: f13a884d16dd5695a0acd456bea143591fd0d822
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 5%
+source-wordcount: '905'
+ht-degree: 4%
 
 ---
 
@@ -107,15 +107,15 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## 下載及分享資產 {#download-and-share-assets}
 
-使用者可以下載一些資產，並在Experience manager之外共用這些資產。如需詳細資訊，請 [參閱如何搜尋資產](/help/assets/search-assets.md)[、如何下載資產](/help/assets/download-assets-from-aem.md)，以及 [如何下載系列](manage-collections.md#download-a-collection)
+Users can download the required assets and share these outside of [!DNL Experience Manager]. 如需詳細資訊，請 [參閱如何搜尋資產](/help/assets/search-assets.md)[、如何下載資產](/help/assets/download-assets-from-aem.md), [以及如何下載系列](manage-collections.md#download-a-collection)
 
 ## 與創意專業人員共用資產 {#share-with-creatives}
 
 行銷人員和業務線使用者可以使用、
 
-* **AEM案頭應用程式**: 應用程式可在Windows和Mac上運作。 請參閱桌 [面應用程式概觀](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參 [閱瀏覽、搜尋和預覽資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立資產，並與AEM使用者的對應人員共用資產，例如上傳新影像。 請參閱 [使用案頭應用程式上傳資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* **AEM案頭應用程式**:應用程式可在Windows和Mac上運作。 請參閱桌 [面應用程式概觀](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參 [閱瀏覽、搜尋和預覽資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立資產，並與AEM使用者的對應人員共用資產，例如上傳新影像。 請參閱 [使用案頭應用程式上傳資產](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
 
-* **Adobe Asset Link**: 創意專業人員可直接在Adobe InDesign、Adobe Illustrator和Adobe Photoshop中搜尋及使用資產。
+* **Adobe Asset Link**:創意專業人員可直接在Adobe InDesign、Adobe Illustrator和Adobe Photoshop中搜尋及使用資產。
 
 ## 設定資產共用 {#configure-sharing}
 
