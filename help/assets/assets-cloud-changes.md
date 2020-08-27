@@ -2,10 +2,10 @@
 title: Adobe Experience Manager資產雲端服務的顯著變更
 description: AEM Cloud服務中的Adobe Experience Manager Assets與Adobe Experience Manager 6.5相比有顯著變更。
 translation-type: tm+mt
-source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
+source-git-commit: 2f5925613219a475a4e7d780f7d2bb3da8148e31
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 15%
+source-wordcount: '628'
+ht-degree: 14%
 
 ---
 
@@ -48,7 +48,7 @@ Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功�
 
 ## 開發和測試資產微型服務 {#asset-microservices}
 
-資產微服務使用雲端服務提供資產的可擴充且彈性化處理。 Adobe管理雲端服務，以最佳化處理不同的資產類型和處理選項。 Asset microservices可協助您避免需要協力廠商轉換工具和方法（例如ImageMagick）並簡化組態，同時為一般檔案類型提供現成可用的功能。 您現在可以處 [理多種檔案類型](/help/assets/file-format-support.md) ，其中包含比舊版Experience Manager更多的現成格式。 例如，PSD和PSB格式的縮圖擷取現在可能是先前需要的協力廠商解決方案（例如ImageMagick）。 處理配置檔案配置不能使用ImageMagick的復 [!UICONTROL 雜配置] 。 此外，還可 [!DNL Dynamic Media] 用於FFmpeg視訊轉碼。
+資產微服務使用雲端服務提供資產的可擴充且彈性化處理。 Adobe管理雲端服務，以最佳化處理不同的資產類型和處理選項。 Asset microservices可協助您避免需要協力廠商轉換工具和方法（例如ImageMagick）並簡化組態，同時為一般檔案類型提供現成可用的功能。 您現在可以處 [理多種檔案類型](/help/assets/file-format-support.md) ，其中包含比舊版Experience Manager更多的現成格式。 例如，PSD和PSB格式的縮圖擷取現在可能是先前需要的協力廠商解決方案（例如ImageMagick）。 處理配置檔案配置不能使用ImageMagick的復 [!UICONTROL 雜配置] 。 使用 [!DNL Dynamic Media] FFmpeg視訊轉碼，並使用處理設定檔來 [基本轉碼MP4視訊](/help/assets/manage-video-assets.md#transcode-video)。
 
 Asset Microservices是雲端原生服務，會在Cloud Manager中管理的客戶程式和環境中自動布建並連線至Experience Manager。 若要擴充或自訂Experience Manager，開發人員可以使用現有內容或資產與在雲端環境中產生的轉譯，以測試並驗證其程式碼，使用、顯示、下載資產。
 
