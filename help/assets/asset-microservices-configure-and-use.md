@@ -1,11 +1,11 @@
 ---
-title: 設定並使用資產微服務進行資產處理
-description: 瞭解如何設定和使用雲端原生資產微服務，以大規模處理資產。
+title: 設定並使用資產微服務進行資產處理。
+description: 設定並使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
+source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
 workflow-type: tm+mt
-source-wordcount: '2537'
+source-wordcount: '2530'
 ht-degree: 1%
 
 ---
@@ -13,21 +13,11 @@ ht-degree: 1%
 
 # Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
-<!--
-* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
-* How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/application process.
-* How/where can admins check what's already configured and provisioned.
-* How to create new config or request for new provisioning/purchase.
+資產微服務可讓您使用雲端原生應用程式（又稱為工人），對資產進行可擴充且具彈性的處理。 Adobe管理服務，以最佳化處理不同的資產類型和處理選項。
 
-* [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
--->
+Asset microservices可讓您處 [理各種檔案類型](/help/assets/file-format-support.md) ，其中包含的格式比舊版的更多現成可用格式 [!DNL Experience Manager]。 例如，PSD和PSB格式的縮圖擷取現在可能是先前需要的協力廠商解決方案（例如ImageMagick）。
 
-資產微型服務提供可擴充且具彈性的資產處理功能，可使用雲端服務。 Adobe管理服務，以最佳化處理不同的資產類型和處理選項。
-
-資產處理取決於處理設定檔中 **[!UICONTROL 的設定]**，此設定提供預設設定，並讓管理員新增更特定的資產處理設定。 管理員可以建立和維護後處理工作流程的設定，包括選擇性自訂。 自訂工作流程可讓您擴充性和完全自訂。
-
-與舊版Experience Manager相比，Asset [microservices可讓您處理各種檔案類型](/help/assets/file-format-support.md) ，包括更多現成可用格式。 例如，PSD和PSB格式的縮圖擷取現在可能是先前需要的協力廠商解決方案（例如ImageMagick）。
+資產處理取決於處理設定檔 **[!UICONTROL 中的設定]**。 Experience Manager提供基本預設設定，讓管理員新增更多特定的資產處理設定。 管理員可建立、維護和修改後處理工作流程的設定，包括選擇性自訂。 自訂工作流程可讓開發人員擴充預設產品。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -93,7 +83,7 @@ Asset microservices支援各種檔案格式，以處理、產生轉譯或擷取�
    * 每個JPEG轉譯的品質百分比。
    * 包含和排除的MIME類型，以定義描述檔的適用性。
 
-   ![processing-profiles-adding](assets/processing-profiles-adding.png)
+   ![processing-profiles-adding](assets/processing-profiles-image.png)
 
 1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
 
@@ -158,9 +148,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*圖：使用[!UICONTROL 服務參數欄位]，將新增的資訊傳送至自訂應用程式內建的預先定義參數。*
-
-當促銷活動影像上傳至套用此處理設定檔的檔案夾時，會以字型文字更 `Jumanji` 新影 `Arial-BoldMT` 像。
+*圖：使用[!UICONTROL 服務參數欄位]，將新增的資訊傳送至自訂應用程式內建的預先定義參數。 在此範例中，上傳促銷活動影像時，會以字型文字更`Jumanji`新影像`Arial-BoldMT`。*
 
 ## 使用處理設定檔來處理資產 {#use-profiles}
 
@@ -169,19 +157,20 @@ The following video demonstrates the usefulness and usage of standard profile.
 使用下列其中一種方法，將處理設定檔套用至資料夾：
 
 * 管理員可以在「工具 **[!UICONTROL >資產]** >處理配置檔案 **[!UICONTROL 」中選擇處理配置檔案定義，]********** 然後使用「將配置檔案應用到資料夾」(s)Jaction。 它會開啟內容瀏覽器，讓您導覽至特定資料夾、選取資料夾並確認描述檔的應用程式。
-* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. 若要儲存變更，請按一下「 **[!UICONTROL 儲存並關閉」]**。
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the appropriate processing profile for that folder. 若要儲存變更，請按一下「 **[!UICONTROL 儲存並關閉」]**。
+   ![從「資產屬性」標籤將處理設定檔套用至資料夾](assets/folder-properties-processing-profile.png)
 
->[!NOTE]
+>[!TIP]
 >
->只能將一個處理設定檔套用至特定資料夾。 若要產生更多轉譯，請新增更多轉譯定義至現有的處理設定檔。
+>只能將一個處理設定檔套用至資料夾。 若要產生更多轉譯，請新增更多轉譯定義至現有的處理設定檔。
 
-將處理描述檔套用至資料夾後，會使用設定的其他處理描述檔來處理此資料夾或其子資料夾中上傳（或更新）的所有新資產。 此處理除了標準預設描述檔外，還有其他處理方式。 如果您將多個描述檔套用至資料夾，則會使用每個描述檔來處理已上傳或更新的資產。
+將處理描述檔套用至資料夾後，會使用設定的其他處理描述檔來處理此資料夾或其子資料夾中上傳（或更新）的所有新資產。 此處理除了標準預設描述檔外，還有其他處理方式。
 
 >[!NOTE]
 >
 >套用至資料夾的處理描述檔適用於整個樹狀結構，但可與套用至子資料夾的其他描述檔重疊。 當資產上傳至資料夾時，Experience Manager會檢查包含資料夾的屬性以取得處理設定檔。 如果未應用任何檔案，則會檢查層次結構中的父資料夾以查找要應用的處理配置檔案。
 
-所有產生的轉譯都可在左側導 [!UICONTROL 軌的「轉譯] 」檢視中使用。 開啟資產預覽並開啟左側導軌以存取「轉 **[!UICONTROL 譯]** 」檢視。 處理設定檔中的特定轉譯（特定資產的類型與MIME類型包含規則相符）應可見且可存取。
+若要確認資產已處理，請在左側導覽欄的「轉譯」檢視中 [!UICONTROL 預覽] ，以確認已產生的轉譯。 開啟資產預覽並開啟左側導軌以存取「轉 **[!UICONTROL 譯]** 」檢視。 處理設定檔中的特定轉譯（特定資產的類型與MIME類型包含規則相符）應可見且可存取。
 
 ![其他轉譯](assets/renditions-additional-renditions.png)
 
@@ -228,7 +217,7 @@ Custom Workflow Runner服務(`com.adobe.cq.dam.processor.nui.impl.workflow.Custo
 
 如需後處理工作流程中可使用哪些標準工作流程步驟的詳細資訊，請參閱開發 [人員參考中後處理工作流程中的工作流程](developer-reference-material-apis.md#post-processing-workflows-steps) 。
 
-## 最佳實務與限制 {#best-practices-limitations-tips}
+## 最佳做法和限制 {#best-practices-limitations-tips}
 
 * 設計工作流程時，請考慮您對所有類型轉譯的需求。 如果您未預見未來需要轉譯，請從工作流程中移除其建立步驟。 之後無法大量刪除轉譯。 長期使用後，不需要的轉譯可能會佔用大量儲存空間 [!DNL Experience Manager]。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自訂以 [!DNL Experience Manager] 刪除特定轉譯，或刪除資產並再次上傳這些資產。
 * 目前，支援僅限於產生轉譯。 不支援產生新資產。
@@ -238,4 +227,10 @@ Custom Workflow Runner服務(`com.adobe.cq.dam.processor.nui.impl.workflow.Custo
 >* [資產計算服務簡介](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。
 >* [瞭解擴充性，以及何時使用](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
 >* [如何建立自訂應用程式](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)。
+>* [支援各種使用案例的MIME類型](/help/assets/file-format-support.md)。
 
+
+<!-- TBD: 
+* How/where can admins check what's already configured and provisioned.
+* How/where to request for new provisioning/purchase.
+-->
