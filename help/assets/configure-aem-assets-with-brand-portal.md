@@ -1,28 +1,28 @@
 ---
-title: 使用 Brand Portal 設定 AEM Assets
+title: 使用品牌入口網站將AEM資產設定為雲端服務
 description: 使用 Brand Portal 設定 AEM Assets.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: db5299d353d6a5e46f2d1707379cd6c364531e47
+source-git-commit: 830fd3a61d479a47b03cffc117f7192dd2c740cc
 workflow-type: tm+mt
 source-wordcount: '1664'
-ht-degree: 20%
+ht-degree: 15%
 
 ---
 
 
-# 使用 Brand Portal 設定 AEM Assets {#configure-aem-assets-with-brand-portal}
+# Configure AEM Assets as a Cloud Service with Brand Portal {#configure-aem-assets-with-brand-portal}
 
-Adobe Experience Manager(AEM)Assets是透過Adobe Developer Console以品牌入口網站設定，Adobe Developer Console會購買IMS Token以授權您的品牌入口網站租用戶。
+設定Adobe Experience Manager Assets Brand Portal可讓您將Adobe Experience Manager Assets中經過核准的品牌資產發佈為雲端服務例項至品牌入口網站，並將其分發給品牌入口網站使用者。
 
-**設定如何運作？**
+**設定工作流程**
 
-使用品牌入口網站設定AEM資產需要在AEM資產和Adobe Developer Console中進行設定。
+AEM Assets as a Cloud Service已透過Adobe Developer Console設定品牌入口網站，該網站會購買IMS代號以授權品牌入口網站租用戶。 這需要AEM Assets和Adobe Developer Console中的設定。
 
-1. 在AEM Assets中，建立IMS帳戶並產生公用憑證（公用金鑰）。
+1. 在AEM Assets中，建立Adobe Identity Management Services(IMS)帳戶並產生公開金鑰（憑證）。
 1. 在Adobe Developer Console中，為您的品牌入口網站租用戶（組織）建立專案。
-1. 在專案下，使用公開金鑰來設定API，以建立服務帳戶(JWT)連線。
-1. 獲取服務帳戶憑據和JWT裝載資訊。
+1. 在專案下，使用公開金鑰來設定API，以建立服務帳戶連線。
+1. 取得服務帳戶認證和JSON Web Token(JWT)裝載資訊。
 1. 在AEM Assets中，使用服務帳戶認證和JWT裝載來設定IMS帳戶。
 1. 在AEM Assets中，使用IMS帳戶和品牌入口端端點（組織URL）來設定品牌入口網站雲端服務。
 1. 將資產從AEM Assets發佈至品牌入口網站，以測試您的設定。
@@ -36,9 +36,9 @@ Adobe Experience Manager(AEM)Assets是透過Adobe Developer Console以品牌入�
 
 您需要下列項目才能使用 Brand Portal 設定 AEM Assets：
 
-* 以雲端服務例項啟動並執行AEM Assets。
-* 品牌入口網站租用戶URL。
-* 在 Brand Portal 租用戶的 IMS 組織具有系統管理員權限的使用者。
+* 以雲端服務實例啟動並執行AEM Assets
+* 品牌入口網站租用戶URL
+* 對品牌入口網站的IMS組織具有系統管理員權限的使用者
 
 ## 建立設定 {#create-new-configuration}
 
@@ -65,19 +65,16 @@ IMS 設定包括兩個步驟：
 
 1. 登入AEM Assets。
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
-   ![Adobe IMS 帳戶設定 UI](assets/ims-configuration1.png)
 
-1. 在「Adobe IMS設定」頁面中，按一下「 **[!UICONTROL 建立]**」。
+1. 在「Adobe IMS設定」頁面中，按一下「 **[!UICONTROL 建立]**」。 It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
 
-1. 您已重新導向至「 **[!UICONTROL Adobe IMS技術帳戶設定」頁面]** 。 By default, the **Certificate** tab opens.
+1. 選取雲端解決方 **[!UICONTROL 案Adobe Brand Portal]**。
 
-   選取雲端解決方 **[!UICONTROL 案Adobe Brand Portal]**。
+1. 啟用「 **[!UICONTROL 建立新憑證]** 」核取方塊，並指 **定公開金鑰的別名** 。 別名用作公共密鑰的名稱。
 
-1. Mark the **[!UICONTROL Create new certificate]** checkbox and specify an **alias** for the certificate. 別名用作證書的名稱。
-
-1. 按一下&#x200B;**[!UICONTROL 建立憑證]**。然後，在對 **[!UICONTROL 話方塊中]** ，按一下「確定」以產生公用憑證。
+1. 按一下&#x200B;**[!UICONTROL 建立憑證]**。Then, click **[!UICONTROL OK]** to generate the public key.
 
    ![建立憑證](assets/ims-config2.png)
 
@@ -89,19 +86,17 @@ IMS 設定包括兩個步驟：
 
 1. 按一下&#x200B;**[!UICONTROL 下一步]**。
 
-   在「 **Account** 」（帳戶）標籤中，會建立Adobe IMS帳戶，但您需要在Adobe Developer Console中產生的服務帳戶認證。 暫時保持此頁面開啟。
+   在「帳 **戶** 」索引標籤中，會建立Adobe IMS帳戶，其需要Adobe Developer Console中產生的服務帳戶認證。 暫時保持此頁面開啟。
 
    在Adobe Developer Console中開啟新 [標籤並建立服務帳戶(JWT)連線](#createnewintegration) ，以取得用於設定IMS帳戶的認證和JWT裝載。
 
 ### 建立服務帳戶(JWT)連接 {#createnewintegration}
 
-在Adobe Developer Console中，專案和API是在品牌入口網站租用戶（組織）層級設定。 設定API會在Adobe Developer Console中建立服務帳戶(JWT)連線。 有兩種方法可用來設定API：產生金鑰對（私用和公開金鑰）或上傳公開金鑰。 若要使用品牌入口網站設定AEM資產，您必須在AEM資產中產生公用憑證（公用金鑰），並透過上傳公用金鑰在Adobe Developer Console中建立認證。 此公開金鑰用於為選取的品牌入口網站租用戶設定API，並產生服務帳戶的認證和JWT裝載。 這些認證可進一步用來設定AEM資產中的IMS帳戶。 在設定IMS帳戶後，您就可以在AEM Assets中設定品牌入口網站雲端服務。
+在Adobe Developer Console中，專案和API是在品牌入口網站租用戶（組織）層級設定。 配置API會建立服務帳戶(JWT)連接。 有兩種方法可用來設定API：產生金鑰對（私用和公開金鑰）或上傳公開金鑰。 若要使用品牌入口網站設定AEM資產，您必須在AEM資產中產生公用憑證（公用金鑰），並透過上傳公用金鑰在Adobe Developer Console中建立認證。 此公開金鑰用於為選取的品牌入口網站租用戶設定API，並產生服務帳戶的認證和JWT裝載。 在AEM資產中設定IMS帳戶時，需要這些認證。 在設定IMS帳戶後，您就可以在AEM Assets中設定品牌入口網站雲端服務。
 
 執行以下步驟以生成服務帳戶憑據和JWT裝載：
 
-1. 以IMS組織（品牌入口網站租用戶）的系統管理員權限登入Adobe Developer Console。 預設URL為
-
-   [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui)
+1. 以IMS組織（品牌入口網站租用戶）的系統管理員權限登入Adobe Developer Console。 預設URL為 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui)。
 
 
    >[!NOTE]
@@ -112,11 +107,7 @@ IMS 設定包括兩個步驟：
 
    按一 **[!UICONTROL 下「編輯專案]** 」以更新「 **[!UICONTROL 專案標題]** 」和「說 **[!UICONTROL 明」]**，然後按 ****&#x200B;一下「儲存」。
 
-   ![建立專案](assets/service-account1.png)
-
 1. 在「專案 **[!UICONTROL 概述」標籤中]** ，按一 **[!UICONTROL 下「新增API」]**。
-
-   ![新增API](assets/service-account2.png)
 
 1. 在「新 **[!UICONTROL 增API」視窗中]**，選取「 **[!UICONTROL AEM品牌入口網站]** 」並按「 **[!UICONTROL 下一步]**」。
 
@@ -138,11 +129,11 @@ IMS 設定包括兩個步驟：
 
    ![選擇產品設定檔](assets/service-account4.png)
 
-1. 在設定API後，您會重新導向至API概觀。 在左邊導覽的「憑 **[!UICONTROL 據」下]**，單 **[!UICONTROL 擊「服務帳戶(JWT)」]**。
+1. 一旦設定API後，就會將您重新導向至API概觀頁面。 在左邊導覽的「憑 **[!UICONTROL 據」下]**，單 **[!UICONTROL 擊「服務帳戶(JWT)」]**。
 
    >[!NOTE]
    >
-   >您可以視需要檢視憑證並執行其他動作（產生JWT Token、複製憑證詳細資訊、擷取用戶端密碼等）。
+   >您可以查看憑據並執行諸如生成JWT Token、複製憑據詳細資訊、檢索客戶機密碼等操作。
 
 1. 從「客 **[!UICONTROL 戶端認證]** 」標籤複製 **[!UICONTROL 客戶端ID]**。
 
@@ -204,9 +195,9 @@ IMS 設定包括兩個步驟：
 
 1. 指定 IMS 帳戶的&#x200B;**[!UICONTROL 標題]**。
 
-   在&#x200B;**[!UICONTROL 授權伺服器]**，輸入 URL：[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
+   In the **[!UICONTROL Authorization Server]** field, specify the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   貼上您在建 **[!UICONTROL 立服務帳戶(]** JWT)連線時複製的 **[!UICONTROL API金鑰（用戶端ID）、用戶端密碼(Client Secret]**)和 ****[](#createnewintegration)Payload(JWT payload)。
+   在建立服務帳戶(JWT)連接 **** Introxing時複製的 **[!UICONTROL API密鑰欄位、Client Secret]**&#x200B;和 **[!UICONTROL Payload]**[](#createnewintegration)(JWT payload)中指定客戶機ID。
 
    按一下&#x200B;**[!UICONTROL 建立]**。
 
@@ -241,9 +232,9 @@ IMS 設定包括兩個步驟：
 
 1. 指定設定的&#x200B;**[!UICONTROL 標題]**。
 
-   選取您在設定IMS帳戶時所建 [立的IMS設定](#create-ims-account-configuration)。
+   選取您在設定IMS帳戶時 [建立的IMS設定](#create-ims-account-configuration)。
 
-   In the **[!UICONTROL Service URL]**, enter your Brand Portal tenant (organization URL).
+   在「服 **[!UICONTROL 務URL]** 」欄位中，指定您的品牌入口網站租用戶（組織）URL。
 
    ![](assets/create-cloud-service.png)
 
@@ -257,7 +248,7 @@ IMS 設定包括兩個步驟：
 
 1. 登入AEM Assets。
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
+1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
    ![](assets/test-bpconfig1.png)
 
@@ -283,7 +274,7 @@ IMS 設定包括兩個步驟：
 
    ![](assets/test-bpconfig3.png)
 
-1. 若要驗證 AEM Assets 和 Brand Portal 之間的連線，請按一下&#x200B;**[!UICONTROL 測試連線]**。
+1. 若要驗證AEM Assets（雲端服務）和品牌入口網站(Brand Portal)之間的連線，請按一下「 **[!UICONTROL Test Connection]** 」圖示。
 
    ![](assets/test-bpconfig4.png)
 
@@ -300,13 +291,11 @@ IMS 設定包括兩個步驟：
 * [從 AEM Assets 發佈資料夾到 Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [從 AEM Assets 發佈集合到 Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
 
-除了上述外，您也可以發佈中繼資料結構、標籤、影像預設集，以及從AEM Assets搜尋Facet至品牌入口網站。
-
 * [將預設集、結構和 Facet 發佈至 Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [將標記發佈至 Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-如需詳細資訊，請參閱 [Brand Portal 文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/home.html)。
+See [Brand Portal documentation](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/home.html) for more information.
 
 
 ## 發佈記錄檔 {#distribution-logs}
@@ -317,7 +306,7 @@ IMS 設定包括兩個步驟：
 
 1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
 
-1. 按一下&#x200B;**[!UICONTROL 記錄檔]**&#x200B;以檢視發佈記錄檔。您可在此查看處理和錯誤記錄。
+1. 按一 **[!UICONTROL 下「記錄]** 」以檢視處理和錯誤記錄。
 
    ![](assets/test-bpconfig5.png)
 
@@ -336,7 +325,7 @@ IMS 設定包括兩個步驟：
 * queue-bpdistributionagent0 (DSTRQ2)：資產已發佈至 Brand Portal。
 * queue-bpdistributionagent0(DSTRQ3):系統會複製品牌入口網站中的「AEM資產」檔案夾（包含資產）。
 
-在上述範例中，系統會觸發其他請求和回應。系統無法在品牌入口網站中找到父資料夾（亦即新增路徑），因為資產是首次發佈，因此會觸發額外請求，在發佈資產的品牌入口網站中建立同名的父資料夾。
+在上述範例中，系統會觸發其他請求和回應。系統無法在品牌入口網站中找到父資料夾（新增路徑），因為資產是第一次發佈，因此會觸發額外請求，在發佈資產的品牌入口網站中建立同名的父資料夾。
 
 >[!NOTE]
 >
