@@ -1,8 +1,8 @@
 ---
-title: 透過Dynamic Media Classic使CDN快取失效
+title: 使用Dynamic Media Classic驗證CDN快取
 description: 停用CDN（內容傳送網路）快取內容可讓您快速更新由動態媒體傳送的資產，而不需等待快取過期。
 translation-type: tm+mt
-source-git-commit: e4822ae72d133bb502bc2c2fa1eb07a625f2a507
+source-git-commit: 8f555f2cf97aaeabfae24919ad5861a2512b0903
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 25%
@@ -10,7 +10,7 @@ ht-degree: 25%
 ---
 
 
-# 透過Dynamic Media Classic使CDN快取失效 {#invalidating-your-cdn-cached-content}
+# 使用Dynamic Media Classic驗證CDN快取 {#invalidating-your-cdn-cached-content}
 
 CDN會快取動態媒體資產，以便快速傳送。 不過，當您更新資產時，可能會希望這些變更立即生效。 停用CDN（內容傳送網路）快取內容可讓您快速更新由動態媒體傳送的資產，而不需等待快取過期。
 
