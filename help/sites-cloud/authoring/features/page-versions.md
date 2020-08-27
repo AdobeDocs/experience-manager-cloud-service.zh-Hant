@@ -2,10 +2,10 @@
 title: 使用頁面版本
 description: 建立、比較和還原頁面版本
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 2d5c7ee7866f8334e67a36b120fdb8ad7a34e7f1
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 6%
+source-wordcount: '1510'
+ht-degree: 5%
 
 ---
 
@@ -15,8 +15,14 @@ ht-degree: 6%
 版本修訂會在特定時間點建立頁面的「快照」。 使用版本控制，您可以執行下列動作：
 
 * 建立頁面版本。
-* 將頁面還原為舊版，以還原您對頁面所做的變更，例如。
-* 比較目前版本的頁面與先前版本，其中反白顯示文字和影像的差異。
+* 將一個或多個頁面的先前版本恢復為：
+   * 還原對頁面所做的變更。
+   * 還原已刪除的頁面。
+   * 恢復樹（在指定的日期和時間）。
+* 預覽版本。
+* 比較頁面的目前版本與舊版。
+   * 文字和影像的差異會反白顯示。
+* 時間彎曲會使用頁面版本來判斷發佈環境的狀態。
 
 ## 建立新版本 {#creating-a-new-version}
 
@@ -53,33 +59,104 @@ ht-degree: 6%
 
 時間軸將會開啟，並更新資訊以指出新版本。
 
-## 回復為頁面版本 {#reverting-to-a-page-version}
+## 恢復版本 {#reinstating-versions}
 
-建立版本後，您可視需要回復至該版本。
+在您建立頁面版本後，有多種方法可重新安裝舊版：
+
+* 「時 **間軸」邊欄中** 「回復為 [此版本](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) 」
+
+   重新建立舊版選取頁面。
+
+* 頂部操 **作工具欄** 中的「恢復 [」選項](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+
+   * **還原版本**
+
+      恢復當前選定資料夾中指定頁面的版本；這也可以包括還原先前已刪除的頁面。
+
+   * **還原樹狀結構**
+
+      在指定日期和時間恢復整個樹的版本；這可包含先前已刪除的頁面。
 
 >[!NOTE]
 >
->在恢復頁面時，所建立的版本將是新分支的一部分。
+>當恢復頁面時，所建立的版本將是新分支的一部分。
 >
 >要說明：
 >
 >1. 建立任何頁面的版本。
 >1. 初始標籤和版本節點名稱為1.0、1.1、1.2等。
->1. 恢復第一個版本； 即1.0。
+>1. 恢復第一個版本；即1.0。
 >1. 再次建立新版本。
 >1. 產生的標籤和節點名稱現在會是1.0.0、1.0.1、1.0.2等。
 
 
-要回復到以前的版本：
+### 還原為版本 {#revert-to-a-version}
+
+要將 **選定頁** 恢復為舊版，請執行以下操作：
 
 1. 導覽以顯示您要回復為舊版的頁面。
 1. 在選擇模式 [下選擇頁](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
 1. 開啟「時 **間軸** 」欄，然後選 **取「全部顯示** 」 **或「版本**」。將列出所選頁面的頁面版本。
 1. 選擇要回復的版本。 可能的選項將顯示：
 
-   ![還原版本](/help/sites-cloud/authoring/assets/versions-revert.png)
+   ![還原為此版本](/help/sites-cloud/authoring/assets/versions-revert.png)
 
 1. Select **Revert to this Version**. 將還原所選版本，並更新時間軸中的資訊。
+
+### 還原版本 {#restore-version}
+
+此方法可用於恢復當前資料夾中指定頁面的版本；這也可以包括還原先前已刪除的頁面：
+
+1. 導覽至所需的 [資料夾](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)，並加以選取。
+
+1. 從頂 **部操作工具**&#x200B;欄中，依次選 **擇「恢復版本** 」和「 [恢復版本](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)」。
+
+   >[!NOTE]
+   >
+   >如果，則：
+   >* 您選擇了單一頁面，而且沒有子頁面，
+   >* 或者資料夾中的任何頁面都沒有版本，
+
+   >
+   >然後，由於沒有適用的版本，顯示將會是空的。
+
+1. 將列出可用版本：
+
+   ![還原版本——資料夾中所有頁的清單](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
+
+1. 對於特定頁面，請使用「還原為版本 **** 」下方的下拉式選取器來選取該頁面的必要版本。
+
+   ![還原版本——選擇版本](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
+
+1. 在主顯示中，選擇要還原的所需頁面：
+
+   ![「恢復版本——選擇」頁](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
+
+1. 為要 **還原為** 當前版本的選定頁面選擇「還原」 *(Restore* )。
+
+>[!NOTE]
+>
+>您選擇所需頁面和相關版本的順序是可互換的。
+
+### 還原樹狀結構 {#restore-tree}
+
+此方法可用於在指定的日期和時間恢復樹的版本；這可包含先前已刪除的頁面：
+
+1. 導覽至所需的 [資料夾](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)，並加以選取。
+
+1. 從頂 **部操作工具**&#x200B;欄中，依次選 **擇「恢復樹** 」和「 [恢復樹](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)」。 將顯示樹的最新版本：
+
+   ![還原樹狀結構](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
+
+1. 使用日期和時間選擇器 **的「日期的最新版本** 」(Latest Versions at Date)來選擇樹的另一個版本，即要還原的版本。
+
+1. 根據需要設 **置「保留的非版本化頁** 」標籤：
+
+   * 如果是作用中（選取），則任何非版本化頁面都將保留，且不會受到還原的影響。
+
+   * 如果非活動（未選定），則任何非版本化頁面都將被移除，因為版本化樹中不存在這些頁面。
+
+1. 為要 **還原的樹的選定版本選擇「還原」(Restore** )作為當前 *版本* 。
 
 ## 預覽版本 {#previewing-a-version}
 
