@@ -4,10 +4,10 @@ description: 瞭解中繼資料的類型， [!DNL Adobe Experience Manager Asset
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
+source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 5%
+source-wordcount: '1933'
+ht-degree: 4%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 5%
 * 資產的說明。
 * 指派給資產的標籤。
 
-更多中繼資料可協助您進一步分類資產，並隨著數位資訊的增加而有所幫助。 僅根據檔名管理幾百個檔案是可能的。 但是，這種方法不具可擴充性。 當涉案人數和管理的資產數量增加時，這個數字就會不夠。
+更多中繼資料可協助您進一步分類資產，並隨著數位資訊的增加而有所幫助。 僅根據檔名管理幾百個檔案是可能的。 但是，這種方法不具可擴充性。 當涉案人數和管理的資產數量增加時，這個數字就不夠。
 
 隨著中繼資料的增加，數位資產的價值會增加，因為資產會變成，
 
@@ -77,10 +77,10 @@ ht-degree: 5%
 
 在檔案中內嵌中繼資料有多種方式。 支援多種編碼標準：
 
-* XMP: 用於將提 [!DNL Assets] 取的元資料儲存在儲存庫中。
-* ID3: 音訊和視訊檔案。
-* 例如： 的雙曲餘切值。
-* 其他／舊版： 從 [!DNL Microsoft Word]、 [!DNL PowerPoint][!DNL Excel]等。
+* XMP:用於將提 [!DNL Assets] 取的元資料儲存在儲存庫中。
+* ID3:音訊和視訊檔案。
+* 例如：的雙曲餘切值。
+* 其他／舊版：從 [!DNL Microsoft Word]、 [!DNL PowerPoint][!DNL Excel]等。
 
 ### XMP {#xmp}
 
@@ -135,12 +135,22 @@ Enterprise Manager Assets可讓您同時編輯多個資產的中繼資料，以�
    >* 在資產清單頂端，選取「標題」旁的核取方塊 **** ，以在選取資產和清除清單之間切換。
 
 
-1. 若要為資產選取不同的中繼資料結構，請點選／按一 **[!UICONTROL 下工具列]** 中的「設定」，然後選取所要的結構。 儲存變更。
+1. 若要為資產選取不同的中繼資料結構，請點選／按一 **[!UICONTROL 下工具列中的]** 「設定」，然後選取所要的結構。 儲存變更。
 1. 若要在包含多個值的欄位中，將新中繼資料與現有中繼資料一起附加，請選取「附 **[!UICONTROL 加模式」]**。如果您未選取此選項，新的中繼資料會取代欄位中現有的中繼資料。點選/按一 **[!UICONTROL 下提交]**。
 
    >[!CAUTION]
    >
    >對於單值欄位，即使您選擇「附加模式」，新元資料也不會附加到欄位中的現 **[!UICONTROL 有值]**。
+
+## 使用處理設定檔自訂中繼資料 {#metadata-compute-service}
+
+資產做為雲端服務，可使用雲端原生服務為資產產生自訂中繼資料。 設定處理設定檔以產生自訂中繼資料。 瞭解 [如何使用處理設定檔](/help/assets/asset-microservices-configure-and-use.md#use-profiles)。
+
+![處理描述檔中的中繼資料轉譯](assets/processing-profile-metadata.png)
+
+>[!TIP]
+>
+>只能將一個處理設定檔套用至資料夾。 若要對資料夾中的資產套用多個處理，請新增更多選項至單一處理設定檔。 例如，單一描述檔可產生轉譯、轉碼資產、產生自訂中繼資料等。 您可以對每個任務應用MIME類型篩選器，以便根據所需的檔案格式觸發相應的任務。
 
 ## 設定大量中繼資料更新的限制 {#configlimit}
 
