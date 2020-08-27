@@ -2,9 +2,9 @@
 title: 提供動態媒體資產
 description: 瞭解如何提供動態媒體資產
 translation-type: tm+mt
-source-git-commit: a09e82278df1adfb225a01e60ae7ef188375b800
+source-git-commit: 7a2eef19a3807d02e7eba0ce177465aabc35a53e
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '315'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,8 @@ ht-degree: 1%
 * [將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [為互動式網站提供最佳化影像](/help/assets/dynamic-media/responsive-site.md)
 * [HTTP2內容傳送](/help/assets/dynamic-media/http2faq.md)
-* [透過Dynamic Media Classic使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+* [透過動態媒體使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [使用Dynamic Media Classic驗證CDN快取](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [使用規則集轉換URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## HTTP/2傳送動態媒體資產 {#http-delivery-of-dynamic-media-assets}
