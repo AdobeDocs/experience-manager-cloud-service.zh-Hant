@@ -2,9 +2,9 @@
 title: 透過動態媒體使CDN快取失效
 description: 停用CDN（內容傳送網路）快取內容可讓您快速更新由動態媒體傳送的資產，而不需等待快取過期。
 translation-type: tm+mt
-source-git-commit: fa86e005a44600fe2ff856a137c6de21a263689e
+source-git-commit: 42788d6a64c5bca7bddd563cb26634db80b2e75d
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1307'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,9 @@ ht-degree: 1%
 
 1. 在AEM中，以雲端服務的形式，點選「工 **[!UICONTROL 具>資產> CDN失效範本」。]**
 
-   ![CDN驗證功能](/help/assets/assets-dm/cdn-invalidation-template.png)
+<!--
+    ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-template.png)
+-->
 
 1. 在「 **[!UICONTROL CDN失效範本」頁面上]** ，根據您的藍本執行下列其中一個選項：
 
