@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 translation-type: tm+mt
-source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
+source-git-commit: 610615534cb5a798e37d34fadb9a3bf341565526
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1521'
 ht-degree: 2%
 
 ---
@@ -30,13 +30,13 @@ ht-degree: 2%
 
 1. SRE正在全年無休地監測系統健康狀況，並將根據需要及早採取行動。
 
-1. 索引配置會透過部署進行變更。 索引定義更改的配置方式與其他內容更改相同。
+1. 索引配置會透過部署進行變更。 索引定義變更的設定方式與其他內容變更一樣。
 
-1. 在AEM雲端服務的高階層，隨著 [Blue-Green部署模型的推出](#index-management-using-blue-green-deployments) ，將會有兩組索引： 一組是舊版（藍色），另一組是新版（綠色）。
+1. 在AEM雲端服務的高階層，隨著 [Blue-Green部署模型的推出](#index-management-using-blue-green-deployments) ，將會有兩組索引：一組是舊版（藍色），另一組是新版（綠色）。
 
 1. 客戶可以在Cloud Manager構建頁面上查看索引作業是否已完成，並在新版本準備好接收流量時收到通知。
 
-1. 限制： 目前，AEM雲端服務的索引管理僅支援lucene類型的索引。
+1. 限制：目前，AEM雲端服務的索引管理僅支援lucene類型的索引。
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -90,7 +90,7 @@ AS NOTE: the above is internal for now.
 
 ### 什麼是索引管理 {#what-is-index-management}
 
-索引管理是關於添加、刪除和更改索引。 更改索 *引的定義* 很快，但應用更改（通常稱為「建立索引」，或對於現有索引，「重新索引」）需要時間。 這不是瞬間的： 必須掃描儲存庫以查找要編製索引的資料。
+索引管理是關於添加、刪除和更改索引。 更改索 *引的定義* 很快，但應用更改（通常稱為「建立索引」，或對於現有索引，「重新索引」）需要時間。 這不是瞬間的：必須掃描儲存庫以查找要編製索引的資料。
 
 ### 什麼是藍綠部署 {#what-is-blue-green-deployment}
 
@@ -118,9 +118,9 @@ AS NOTE: the above is internal for now.
 
 ### 採用藍綠部署的索引管理 {#index-management-with-blue-green-deployment}
 
-使用藍綠部署，不會停機。 但是，對於索引管理，這要求索引僅用於某些版本的應用程式。 例如，在應用程式第2版中新增索引時，您仍不希望該索引用於應用程式第1版。 如果刪除索引，則情況正好相反： 第2版中移除的索引在第1版中仍然需要。 更改索引定義時，我們希望舊版索引僅用於版本1，新版索引僅用於版本2。
+使用藍綠部署，不會停機。 但是，對於索引管理，這要求索引僅用於某些版本的應用程式。 例如，在應用程式第2版中新增索引時，您仍不希望該索引用於應用程式第1版。 如果刪除索引，則情況正好相反：第2版中移除的索引在第1版中仍然需要。 更改索引定義時，我們希望舊版索引僅用於版本1，新版索引僅用於版本2。
 
-下表顯示5個索引定義： 索引 `cqPageLucene` 在兩個版本中都使用，而索引 `damAssetLucene-custom-1` 僅在版本2中使用。
+下表顯示5個索引定義：索引 `cqPageLucene` 在兩個版本中都使用，而索引 `damAssetLucene-custom-1` 僅在版本2中使用。
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ AS NOTE: the above is internal for now.
 
 ### 更改索引 {#changing-an-index}
 
-更改現有索引時，需要使用更改的索引定義添加新索引。 例如，請考慮變更現有索引&quot;/oak:index/acme.product-custom-1&quot;。 舊索引儲存在下面 `/oak:index/acme.product-custom-1`，新索引儲存在下面 `/oak:index/acme.product-custom-2`。
+更改現有索引時，需要使用更改的索引定義添加新索引。 例如，請考慮變更現有索引&quot;/oak:index/acme.product-custom-1&quot;。 舊索引儲存在下 `/oak:index/acme.product-custom-1`面，新索引儲存在下面 `/oak:index/acme.product-custom-2`。
 
 舊版應用程式使用下列組態：
 
@@ -176,3 +176,7 @@ AS NOTE: the above is internal for now.
 新版應用程式使用下列（已變更）組態：
 
 `/oak:index/acme.product-custom-2`
+
+### 索引可用性／容錯 {#index-availability}
+
+建議為極其重要的功能（請記住上述索引的命名慣例）建立重複索引，因此，在發生索引損毀或任何此類未預見的事件時，有備援索引可用來回應查詢。
