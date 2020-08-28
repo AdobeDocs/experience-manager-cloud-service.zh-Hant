@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.8.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 雲端服務 2020.8.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: 7bd917067667af2f9f03a153a26303daade996fc
+source-git-commit: 9a54fda87ffb26ad9e811a27a40ee8d7c81b6bea
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 6%
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* 能夠將頁面和子頁面（頁面樹狀結構）還原為舊版。
+* 能夠將頁 [面和子頁面（頁面樹狀結構）還原為舊版](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)。
 
 * 可在AEM SPA Editor中建立啟動。
 
