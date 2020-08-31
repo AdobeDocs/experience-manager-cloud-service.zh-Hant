@@ -2,7 +2,7 @@
 title: 透過動態媒體使CDN快取失效
 description: 停用CDN（內容傳送網路）快取內容可讓您快速更新由動態媒體傳送的資產，而不需等待快取過期。
 translation-type: tm+mt
-source-git-commit: 262867ff19c373905b71b9099d1062705cfbf9cf
+source-git-commit: 30c7dddb52a6012d3c55cdb66ae0c9b1a3588fa3
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 1%
@@ -58,7 +58,7 @@ ht-degree: 1%
    | **[!UICONTROL 使 CDN 中與影像預設集相關聯的資產失效]** | （可選）勾選此選項時，選取的資產及其所有相關的影像預設集URL都會自動形成，以便快取失效。<br>資產及其相關的預先定義預設URL會自動形成為無效。 此選項僅適用於影像資產。 |
    | **[!UICONTROL 基於模板的失效]** | （可選）勾選此選項，僅使用已定義的URL建立範本。 |
    | **[!UICONTROL 新增資產]** | 使用「資產選擇器」來選擇您要廢止的資產。 您可以選取已發佈或未發佈的資產。<br>CDN的快取是以URL為基礎，而非以資產為基礎。 因此，您必須注意您網站上的完整URL。 在您決定這些URL後，您可以將它們新增至範本。 然後，您可以選取並新增這些資產，並在單一步驟中使URL無效。 <br>搭配使用此選項與CDN中的「使 **[!UICONTROL 資產相關的影像預設值無效]**」或「根 **[!UICONTROL 據範本失效]**」或兩者搭配使用。 |
-   | **[!UICONTROL 新增 URL]** | 手動新增或貼上完整URL路徑至您要使其CDN快取失效的動態媒體資產。 如果您未在第1部分中建立CDN失效範本，請使 ***用此選項：使用CDN失效範本***，並且只有少數資產可失效。<br>**重要：** 您新增的每個URL都必須位於其自己的行上。<br>您一次最多可以使1000個URL失效。 如果「新增URL」文字欄 **[!UICONTROL 位中的URL]** 數大於1000，則無法點選「下 **[!UICONTROL 一步」]**。 在這種情況下，您必須點選所選資產 **[!UICONTROL 右側的X]** ，或手動新增的URL，才能將其從失效清單中刪除。<br>請注意，您必須在CDN失效範本或此「新增URL」文字欄位中，為影像智慧裁切指 **[!UICONTROL 定URL]** 。 |
+   | **[!UICONTROL 新增 URL]** | 手動新增或貼上完整URL路徑至您要使其CDN快取失效的動態媒體資產。 如果您未在2的第1部分中建立CDN失效範本，請 ***使用此選項：建立CDN失效範本***，而且只有少數資產可供失效。<br>**重要：** 您新增的每個URL都必須位於其自己的行上。<br>您一次最多可以使1000個URL失效。 如果「新增URL」文字欄 **[!UICONTROL 位中的URL]** 數大於1000，則無法點選「下 **[!UICONTROL 一步」]**。 在這種情況下，您必須點選所選資產 **[!UICONTROL 右側的X]** ，或手動新增的URL，才能將其從失效清單中刪除。<br>請注意，您必須在CDN失效範本或此「新增URL」文字欄位中，為影像智慧裁切指 **[!UICONTROL 定URL]** 。 |
 
 1. Near the upper-right corner of the page, tap **[!UICONTROL Next.]**
 1. 在「 **[!UICONTROL CDN失效]** - **[!UICONTROL Confirm]** 」（CDN確認）頁面上， **** URL清單方塊中會顯示您先前建立的CDN失效範本以及您剛新增的資產所產生的一或多個URL清單。
