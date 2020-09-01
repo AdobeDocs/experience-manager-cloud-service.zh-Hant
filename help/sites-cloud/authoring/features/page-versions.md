@@ -2,7 +2,7 @@
 title: 使用頁面版本
 description: 建立、比較和還原頁面版本
 translation-type: tm+mt
-source-git-commit: 87da152f21abe379d70e0a8d04f3155901f013dd
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 5%
@@ -132,7 +132,7 @@ ht-degree: 5%
 
    ![「恢復版本——選擇」頁](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. 為要 **還原為** 當前版本的選定頁面選擇「還原」 *(Restore* )。
+1. 為要 **** 還原為當前版本的選定頁面選擇「還原」。
 
 >[!NOTE]
 >
