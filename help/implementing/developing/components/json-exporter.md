@@ -2,7 +2,7 @@
 title: 內容服務的JSON匯出器
 description: AEM Content Services的設計目的，是將AEM中／來自AEM的內容描述和傳送，從而延伸到網頁。 它們使用可供任何用戶端使用的標準化方法，將內容傳送至非傳統AEM網頁的頻道。
 translation-type: tm+mt
-source-git-commit: 02d95b7c45cb4d6d2fbfd9699690ecc1b80e1202
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 5%
@@ -38,7 +38,7 @@ AEM Content Services的設計目的，是將AEM中／來自網頁的內容描述
 
 1. 將提供內容，例如：
 
-   ![WKND內容的JSON模型](/help/implementing/developing/introduction/assets/json-model-wknd.png)
+   ![WKND內容的JSON模型](assets/json-model-wknd.png)
 
 您也可以透過明確定位結構化內容片段來提供內容。
 
@@ -56,7 +56,7 @@ AEM Content Services的設計目的，是將AEM中／來自網頁的內容描述
 
 * 將提供內容，例如：
 
-   ![WKND內容片段的JSON模型](/help/implementing/developing/introduction/assets/json-model-wknd-content-fragment.png)
+   ![WKND內容片段的JSON模型](assets/json-model-wknd-content-fragment.png)
 
    >[!NOTE]
    >
