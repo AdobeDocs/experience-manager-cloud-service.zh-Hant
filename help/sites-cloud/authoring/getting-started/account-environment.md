@@ -2,7 +2,7 @@
 title: 設定您的帳戶環境
 description: AEM提供您設定帳戶的功能，以及作者環境的某些方面
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 10%
@@ -72,12 +72,12 @@ AEM提供您設定帳戶的功能，以及作者環境的某些方面。
 
    此選項定義系統中日期的顯示方式。 可使用下列選項：
 
-   * **一律顯示確切日期**: 一律會顯示確切日期（從不是相對日期）。
-   * **1天**: 相對日期會顯示為一天內的日期，否則會顯示確切日期。
-   * **7天（預設值）**: 相對日期會顯示在7天內的日期，否則會顯示確切的日期。
-   * **1個月**: 相對日期會顯示一個月內的日期，否則會顯示確切日期。
-   * **1年**: 相對日期會顯示在一年內的日期，否則會顯示確切的日期。
-   * **一律顯示相對日期**: 不會顯示確切日期，只顯示相對日期。
+   * **一律顯示確切日期**:一律會顯示確切日期（從不是相對日期）。
+   * **1天**:相對日期會顯示為一天內的日期，否則會顯示確切日期。
+   * **7天（預設值）**:相對日期會顯示在7天內的日期，否則會顯示確切的日期。
+   * **1個月**:相對日期會顯示一個月內的日期，否則會顯示確切日期。
+   * **1年**:相對日期會顯示在一年內的日期，否則會顯示確切的日期。
+   * **一律顯示相對日期**:不會顯示確切日期，只顯示相對日期。
 
 * **啟用快速鍵**
 
@@ -85,6 +85,7 @@ AEM提供您設定帳戶的功能，以及作者環境的某些方面。
 
    * [編輯頁面的鍵盤快速鍵](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [控制台的鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+
    此選項可啟用鍵盤快速鍵。 依預設會啟用這些功能，但可停用（例如，如果使用者有特定的協助工具需求）。
 
 * **啟用資產首頁**
@@ -93,4 +94,4 @@ AEM提供您設定帳戶的功能，以及作者環境的某些方面。
 
 * **Stock 設定**
 
-   此選項可指定偏好的Adobe Stock設定，且只有在系統管理員啟用Adobe Stock整合後，才可使用。 <!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
+   此選項可指定偏好的Adobe Stock設定，且只有在系統管理員啟用 [Adobe Stock整合時才可用](/help/assets/aem-assets-adobe-stock.md)。
