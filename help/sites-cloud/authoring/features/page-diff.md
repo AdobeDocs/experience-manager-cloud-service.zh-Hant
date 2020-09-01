@@ -2,7 +2,7 @@
 title: 頁面差異
 description: 頁面比較功能可方便並排比較兩頁的差異。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 >
 >用戶必須對節 **點具有「修改／建立／刪除** 」權 `/content/versionhistory` 限，才能使用該功能。
 >
->如需此功能的詳細技術資訊，請參閱開發與頁面比較。 <!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
+>如需 [此功能的詳細技術資訊，請參閱開發與頁面比較](/help/implementing/developing/introduction/page-diff.md#operation-details) 。
 
 ## 使用 {#use}
 
@@ -105,4 +105,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如需頁面差異機制運作的詳細資訊以及可能影響頁面差異的限制，請參閱此功能的開發人員檔案。 <!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
+>如需頁面差異機制運作的詳細資訊以及可能影響頁面差異的限制，請參閱此功能的開 [發人員檔案](/help/implementing/developing/introduction/page-diff.md) 。
