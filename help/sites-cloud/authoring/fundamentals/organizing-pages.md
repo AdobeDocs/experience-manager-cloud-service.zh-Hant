@@ -2,9 +2,9 @@
 title: 建立及組織頁面
 description: 如何使用AEM建立和組織頁面
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '2550'
+source-wordcount: '2554'
 ht-degree: 7%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 7%
 >
 >同時請記住，有些瀏覽器（例如舊版IE）只能接受一定長度的URL，因此也有技術理由保留頁面名稱簡短。
 
-建立新頁面時，AEM會根據AEM和JCR所強加的慣例來驗證頁面名稱。 <!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
+建立新頁面時，AEM會 [根據AEM和JCR強加的慣例](/help/implementing/developing/introduction/naming-conventions.md) ，驗證頁面名稱。
 
 允許的字元數量下限為：
 
@@ -103,7 +103,7 @@ ht-degree: 7%
 * `_` （底線）
 * `-` （連字型大小／減號）
 
-所有允許字元的完整詳細資訊都可在命名慣例中找到。 <!--Full details of all characters allowed can be found in [the naming conventions](/help/sites-developing/naming-conventions.md).-->
+所有允許字元的完整詳細資訊都可在命名 [慣例中找到](/help/implementing/developing/introduction/naming-conventions.md)。
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ ht-degree: 7%
 
 #### 標題 {#title}
 
-如果您在建立新頁面時只提供頁面 **Title** ,AEM會從此字串衍生頁面 **Name** ，並根據AEM和JCR所強加的慣例來驗證名稱。<!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+如果您在建立新頁面時只提供頁面 **Title** ,AEM會從此字串衍生頁面 **Name**[ ，並根據AEM和JCR所強加的慣例來驗證名稱。](/help/implementing/developing/introduction/naming-conventions.md)
 
 將接 **受包含無效字元的Title** （標題）欄位，但派生的名稱會取代無效字元。 例如：
 
@@ -122,7 +122,7 @@ ht-degree: 7%
 
 #### 名稱 {#name}
 
-當您建立新頁面時 **提供頁面名稱** ,AEM會根據AEM和JCR所強加的慣例來驗證名稱。 您不能在「名稱」欄位中提交無 **效字元** 。 當AEM偵測到無效字元時，欄位會反白顯示。 <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+當您建立新頁面時 **提供頁面名稱** ,AEM會根 [據AEM和JCR強加的慣例來驗證名稱](/help/implementing/developing/introduction/naming-conventions.md) 。 您不能在「名稱」欄位中提交無 **效字元** 。 當AEM偵測到無效字元時，欄位會以說明性訊息反白顯示。
 
 ![輸入無效頁面名稱的範例](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -203,7 +203,7 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
    * **名稱**:
 
       * 這用於生成URI。 如果未指定，則名稱是從標題衍生而來。
-      * 如果您在建立新頁面時 **提供頁面名稱** ,AEM會根據AEM和JCR所強加的慣例來驗證名稱。 <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+      * 如果您在建立新頁面時 **提供頁面名稱** ,AEM會 [根據AEM和JCR所強加的慣例來驗證名稱](/help/implementing/developing/introduction/naming-conventions.md) 。
       * 您無 **法在「名稱** 」欄位中提 **交無效字元** 。 當AEM偵測到無效字元時，欄位會反白顯示，並顯示說明訊息，指出需要移除／取代的字元。
 
    >[!TIP]
@@ -362,10 +362,7 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
 
 >[!NOTE]
 >
->頁面只能移動到允許基於該頁面的模板的位置。 如需詳細資訊，請參閱範本可用性。
-<!--
->A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
--->
+>頁面只能移動到允許基於該頁面的模板的位置。 如需詳 [細資訊](/help/implementing/developing/components/templates.md#template-availability) ，請參閱範本可用性。—>
 
 #### 非同步動作 {#asynchronous-actions}
 
@@ -382,7 +379,7 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
 
          ![非同步頁面移動](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-可以在Async Jobs Status [**Dashboard中的** Async Jobs Status](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) Dashboard **Global Navigation** - **>Oractions** - Asynchronous Operations - Jobs導航工具 ******>中檢查狀態**
+可以在Async Jobs Status [**Dashboard中的** Async Jobs Status](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) Dashboard **Global Navigation** - **> Tools** - Asynchronous Operations - Jobs導航工具 ******> Asynchronous作業狀態檢查**
 
 >[!NOTE]
 >
