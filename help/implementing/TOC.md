@@ -3,10 +3,10 @@ sub-product: AEM 雲端服務實作
 user-guide-title: AEM 雲端服務實作
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 769364dc0a70e081a1a0cc9b86f616ccb99c93ab
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 70%
+source-wordcount: '371'
+ht-degree: 68%
 
 ---
 
@@ -43,7 +43,10 @@ ht-degree: 70%
    + [AEM 雲端服務中的覆蓋](developing/introduction/overlays.md)
    + [記錄](developing/introduction/logging.md)
    + [AEM 雲端服務 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-   + [了解測試結果](/help/implementing/developing/introduction/understand-test-results.md)
+   + [瞭解您的測試結果](/help/implementing/developing/introduction/understand-test-results.md)
+   + [頁面差異](/help/implementing/developing/introduction/page-diff.md)
+   + [編輯器限制](/help/implementing/developing/introduction/editor-limitations.md)
+   + [命名慣例](/help/implementing/developing/introduction/naming-conventions.md)
 + 元件與範本 {#components-templates}
    + [元件概觀](developing/components/overview.md)
    + [範本](developing/components/templates.md)
