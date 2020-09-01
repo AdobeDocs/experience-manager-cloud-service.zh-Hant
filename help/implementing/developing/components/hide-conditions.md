@@ -2,7 +2,7 @@
 title: 使用隱藏條件
 description: 隱藏條件可用於確定是否渲染元件資源。
 translation-type: tm+mt
-source-git-commit: 6902b40232ae0b704c5e29f09844cab018598c24
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 1%
@@ -58,22 +58,22 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 1. 依預設，頁面作者可使用清單核心元件，選擇「子頁面」選項，以建立使用子頁面的 **清單**。
 
-   ![清單元件設定](/help/implementing/developing/introduction/assets/hide-conditions-list-settings.png)
+   ![清單元件設定](assets/hide-conditions-list-settings.png)
 
 1. 在清單核心元件的設計對話方塊中，範本作者可選擇「停用子項 **** 」選項，以防止根據子頁面產生清單的選項顯示給頁面作者。
 
-   ![「清單元件設計」對話框](/help/implementing/developing/introduction/assets/hide-conditions-list-design.png)
+   ![「清單元件設計」對話框](assets/hide-conditions-list-design.png)
 
 1. 策略節點在下建立， `/conf/wknd/settings/wcm/policies/wknd/components/list` 其屬 `disableChildren` 性設定為 `true`。
 
-   ![隱藏條件的節點結構](/help/implementing/developing/introduction/assets/hide-conditions-node-structure.png)
+   ![隱藏條件的節點結構](assets/hide-conditions-node-structure.png)
 
 1. hide條件定義為對話屬性節點 `granite:hide` 上屬性的值 `/libs/core/wcm/components/list/v2/list/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/listFrom/items/children`
 
-![隱藏條件的評估](/help/implementing/developing/introduction/assets/hide-conditions-evaluation.png)
+   ![隱藏條件的評估](assets/hide-conditions-evaluation.png)
 
 1. 從設計配 `disableChildren` 置中提取值，表達式的計 `${cdDesign.disableChildren}` 算結果 `false`為，這表示該選項不會作為元件的一部分呈現。
 
 1. 當使用 **清單元件** 時，頁面作者不會再呈現「子頁面」選項。
 
-   ![禁用子選項的清單元件](/help/implementing/developing/introduction/assets/hide-conditions-child-disabled.png)
+   ![禁用子選項的清單元件](assets/hide-conditions-child-disabled.png)
