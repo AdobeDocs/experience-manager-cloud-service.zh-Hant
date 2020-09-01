@@ -2,9 +2,9 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1687'
 ht-degree: 10%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 10%
       > 有關如 [何配置相關自動複製的詳細資訊，請參見On和Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) 。
 
       * 如果已 [發佈（手動）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) ，此頁面將保持休眠（隱藏），直到在指定時間呈現。
-      * 如果未發佈，且已針對自動複製設定，則會在指定時間自動發佈頁面，然後呈現頁面。
+      * 如果未發佈，且已針對自動複製設定，則頁面會在指定的時間自動發佈，然後轉譯。
       * 如果未發佈，且未針對自動複製進行設定，則不會自動發佈頁面，因此當嘗試存取頁面時，會看到404。
    * 對於您要立即發佈的頁&#x200B;**面，請將這些欄位(「開始** 」和「關閉時間」 ****)留空，並在發佈環境中使用，直到它們停用（一般情形）。
 
@@ -129,11 +129,9 @@ ht-degree: 10%
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-<!--
-* **Inherited from &lt;*path*&gt;**
+* **繼承自&lt;path>**
 
-  * Indicates whether the page is inherited. and where from.
--->
+   * 指出頁面是否繼承。 以及從何而來。
 
 * **雲端設定**
 
@@ -148,7 +146,7 @@ ht-degree: 10%
    * 啟用（或停用）驗證的使用以存取頁面。
    >[!NOTE]
    >
-   >頁面的已關閉使用者群組是在「權限」標籤 **[上定義](#permissions)**。
+   >頁面的已關閉使用者群組是在「權限」標籤 **[上定義](#permissions)** 。
 
 * **登入頁面**
 
