@@ -2,9 +2,9 @@
 title: 建立頁面範本
 description: 範本會定義產生頁面的結構，而使用範本編輯器，建立和維護範本不再是僅限開發人員的工作
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '4554'
+source-wordcount: '4551'
 ht-degree: 11%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 11%
 
 本檔案說明範本作 **者如何使用範本** 主控台和編輯器來建立和管理可編輯的範本。
 
-如需可編輯範本在技術層級運作的詳細資訊，請參閱開發人員檔案頁面範本——可編輯，以取得詳細資訊。 <!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
+如需可編輯範本在技術層級運作的詳細資訊，請參閱開發人員檔案頁面範本 [](/help/implementing/developing/components/templates.md) ，以取得詳細資訊。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ ht-degree: 11%
 
 ### 建立範本資料夾——管理員 {#creating-a-template-folder-admin}
 
-應為您的專案建立範本資料夾，以存放專案專用的範本。 這是一項管理任務，在文檔「頁面模板——可編輯」中有說明。 <!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
+應為您的專案建立範本資料夾，以存放專案專用的範本。 這是一項管理任務，在文檔「頁面模板」中 [有說明](/help/implementing/developing/components/templates.md#template-folders)。—>
 
 ### 建立新範本——範本作者 {#creating-a-new-template-template-author}
 
@@ -106,7 +106,7 @@ ht-degree: 11%
    >
    >在標準AEM例項中，范 **本主控台中** ，已有全域資料夾存在。 如果當前資料夾中未找到策略和／或模板類型，則此選項將保留預設模板並充當備援。
    >
-   >建議您最好使用為專案建立的範本資料夾。 <!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
+   >建議使用為專案建立的范 [本資料夾，這是最佳實務](/help/implementing/developing/components/templates.md#template-folders)。
 
 1. 選擇 **建立**，然後選 **擇建立模板** ，以開啟嚮導。
 
@@ -114,7 +114,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >範本類型是預先定義的範本版面，可視為範本的範本。 這些是由開發人員或系統管理員預先定義的。 如需詳細資訊，請參閱開發人員檔案頁面範本——可編輯。 <!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
+   >範本類型是預先定義的範本版面，可視為範本的範本。 這些是由開發人員或系統管理員預先定義的。 如需詳細資訊，請參閱開發人員檔案 [頁面範本](/help/implementing/developing/components/templates.md#template-type)。—>
 
 1. 完成范 **本詳細資訊**:
 
@@ -178,7 +178,7 @@ ht-degree: 11%
 >當範本啟用後，當範本作者開始進一步更新範本時，將會顯示警告。 這是為了通知使用者範本可能被參考，因此任何變更都可能會影響參考範本的頁面。
 
 1. 在「範本 **控制台**」中，選取範本。
-1. 從工 **具列中選** 擇「啟用 **」或「停用** 」，然後在確認對話方塊中再次選取。
+1. 從工 **具列中選** 擇「啟用 **」或「停用** 」，然後在確認對話方塊中再次選擇。
 1. 您現在可以在建立新頁 [面時使用範本](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)，不過您可能會想 [要根據需求編輯範本](#editing-templates-template-authors) 。
 
 >[!NOTE]
@@ -204,7 +204,7 @@ ht-degree: 11%
    >如果「允 **許的模板** 」清單為空，則樹將被提升，直到找到值／清單。
    >
    >
-   >請參閱範本可用性——允許範本的原則保持不變。 <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >請參 [閱範本可用性](/help/implementing/developing/components/templates.md#template-availability) -允許範本的原則保持不變。
 
 1. 按一 **下「儲存** 」以儲存對頁面屬性所做的變更。
 
@@ -265,7 +265,7 @@ ht-degree: 11%
 
 #### 配置 {#template-layout}
 
-使用版 [面](#editing-a-template-layout-template-author) ，您可以預先定義所需裝置格式的範本版面。**範本製作的** 「版面」模式與頁面製作的「版面 [****」模式功能相同](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
+使用版 [面](#editing-a-template-layout-template-author) ，您可以預先定義所需裝置格式的範本版面。**範本製作的** 「版面」模式與頁面製作的「版面 [**** 」模式功能相同](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
 
 #### 頁面原則 {#template-page-policies}
 
@@ -414,7 +414,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->實施富格文本編輯器的元件的內容策略只能針對RTE通過其UI設定提供的選項進行定義。 <!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
+>[實施富格文本編輯器的元件的內容策略](/help/implementing/developing/extending/rich-text-editor.md) ，只能針對RTE通過其UI設定提供的選項定義。
 
 #### 原則與屬性（版面容器） {#policy-and-properties-layout-container}
 
@@ -504,7 +504,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->**使用該範本** 所建立之頁面的編輯模式可考慮初始內容模式。 因此，策略不是在「初始內 **容** 」模式中定義，而是在「 [**結構&#x200B;**」模式中](#editing-a-template-structure-template-author)。
+>**使用該範本** 所建立之頁面的編輯模式可考慮初始內容模式。 因此，策略不是在「初始內 **容** 」模式中定義，而是在「 [**結構** 」模式中](#editing-a-template-structure-template-author)。
 
 * 標籤可供編輯的解鎖元件。 選取後，它們會有藍色邊框：
 
@@ -616,7 +616,7 @@ ht-degree: 11%
 
 1. 使用「完成」確認 **您的定義**。
 
-## Best Practices {#best-practices}
+## 最佳作法 {#best-practices}
 
 建立範本時，您應考慮：
 
