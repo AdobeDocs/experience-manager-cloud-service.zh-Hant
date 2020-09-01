@@ -2,7 +2,7 @@
 title: 頁面範本
 description: 建立將用作新頁面基礎的頁面時，會使用頁面範本
 translation-type: tm+mt
-source-git-commit: 0508311b997789ada07856a73d29e38d1b735979
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 0%
@@ -512,7 +512,7 @@ GITHUB代碼
 
    * `cq:templateType` -提供範本類型的參考。
 
-![範本、內容和元件如何互動](/help/implementing/developing/introduction/assets/templates-content-components.png)
+![範本、內容和元件如何互動](assets/templates-content-components.png)
 
 上圖顯示範本、內容和元件如何相互關聯：
 
@@ -565,7 +565,7 @@ GITHUB代碼
 
 下圖描述了模板評估流程：
 
-![範本評估程式](/help/implementing/developing/introduction/assets/template-evaluation.png)
+![範本評估程式](assets/template-evaluation.png)
 
 >[!CAUTION]
 >
