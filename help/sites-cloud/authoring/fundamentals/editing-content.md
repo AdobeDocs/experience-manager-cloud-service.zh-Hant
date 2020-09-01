@@ -2,7 +2,7 @@
 title: 編輯頁面內容
 description: 建立頁面後，您就可以編輯內容以進行所需的更新
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 6%
@@ -129,7 +129,7 @@ ht-degree: 6%
 
 您可以使用元件瀏覽器來新增 [元件](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。 元 [件預留位置](#component-placeholder) (Component placeholder)顯示元件的位置：
 
-1. 請確定您的頁面處於「編 [**輯&#x200B;**」模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
+1. 請確定您的頁面處於「編 [**輯** 」模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
 1. 開啟元 [件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。
 1. 將所需元件拖曳至 [所需位置](#component-placeholder)。
 1. [編輯元件](#edit-content) 。
@@ -142,7 +142,7 @@ ht-degree: 6%
 
 可以使用段落系統的「將元件拖 **曳到此處** 」框添加新元件：
 
-1. 請確定您的頁面處於「編 [**輯&#x200B;**」模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
+1. 請確定您的頁面處於「編 [**輯** 」模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
 1. 從段落系統中選擇和添加新元件有兩種方法：
 
    * Select the **Insert Component** option (+) from either the toolbar of an existing component or the **Drag components here** box.
@@ -165,7 +165,7 @@ ht-degree: 6%
 
 要通過拖動上述資產類型之一來建立元件，請執行以下操作：
 
-1. 請確定您的頁面處於「編 [**輯&#x200B;**」模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
+1. 請確定您的頁面處於「編 [**輯** 」模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
 1. 開啟資 [產瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)。
 1. 將所需資產拖曳至所需位置。 元件 [預留位置](#component-placeholder) ，會顯示元件的位置。
 
@@ -177,7 +177,7 @@ ht-degree: 6%
 >
 >在行動裝置上，資產瀏覽器會填滿整個螢幕。 當您開始拖曳資產後，瀏覽器會關閉以再次顯示頁面，好讓您放置資產。
 
-如果瀏覽資產時發現您需要快速變更資產，您可以按一下資產名稱旁的編輯圖示，直接從瀏覽器啟動資產編輯器。 <!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
+如果瀏覽資產時發現您需要快速變更資產，可以按一下資產名稱旁的編輯圖示，直接從瀏覽器啟動 [資產編輯器](/help/assets/manage-digital-assets.md) 。
 
 ![資產編輯按鈕](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -232,6 +232,7 @@ ht-degree: 6%
    * 您可以貼到相同的頁面或不同的頁面。
    * 貼上的項目會貼至您選取貼上動作的項目上方。
    * 只有剪貼簿上有內容時，才會顯示「平移」動作。
+
    ![貼上按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
    >[!NOTE]
@@ -347,6 +348,7 @@ ht-degree: 6%
    * 元件顯示的調整大小控制點。
    * 模擬器工具欄顯示在螢幕頂部。
    * 元件工具列上會顯示版面動作，而非標準編輯動作。
+
    ![版面模式中的元件](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
    您現在可以像在版面模式中一樣修改元件的 [版面](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
@@ -396,8 +398,8 @@ ht-degree: 6%
 
 「即 [時副本狀態」頁面模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) ，可讓您快速概述即時副本狀態，以及哪些元件已繼承／未繼承：
 
-* 綠色邊框： 繼承
-* 粉色邊框： 繼承已取消
+* 綠色邊框：繼承
+* 粉色邊框：繼承已取消
 
 例如：
 
