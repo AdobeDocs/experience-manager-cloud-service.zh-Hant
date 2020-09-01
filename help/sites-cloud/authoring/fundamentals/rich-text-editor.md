@@ -2,7 +2,7 @@
 title: 將Rich Text Editor用於作 [!DNL Adobe Experience Manager] 者內容。
 description: 使用 [!DNL Experience Manager] Rich Text Editor來製作內容。
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 2%
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 對於基於文本的元件，按一下工具欄中的全屏模式 ![RTE全屏按鈕](/help/sites-cloud/authoring/assets/editing-full-screen.png)[](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) ，開啟富格文本編輯器並隱藏其餘的頁面內容。
 
-全螢幕模式會顯示您可用於製作的所有已設定選項。 選項的可用性取決於配置。 <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
+全螢幕模式會顯示您可用於製作的所有已設定選項。 選項的可用 [性取決於配置](/help/implementing/developing/extending/rich-text-editor.md)。
 
 ![全屏模式下的RTE](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
