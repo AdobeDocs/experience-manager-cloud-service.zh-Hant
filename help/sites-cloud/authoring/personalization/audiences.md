@@ -1,8 +1,8 @@
 ---
 title: 管理對象
-description: 「對象」控制台可讓您建立、組織及管理Adobe Target帳戶的對象，或管理ContextHub的區段
+description: 「對象」主控台可讓您建立、組織及管理Adobe Target帳戶的對象，或管理ContextHub的區段
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 12%
@@ -65,7 +65,7 @@ ht-degree: 12%
 
    ![導覽至觀眾](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. 在「對象」主控台中，點選或按一 **下「建立** 」，然後**「建立目標對象」**。
+1. 在「對象」主控台中，點選或按一 **下「建立** 」，然 **後再建立Target對象**。
 
    ![建立Target對象](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
