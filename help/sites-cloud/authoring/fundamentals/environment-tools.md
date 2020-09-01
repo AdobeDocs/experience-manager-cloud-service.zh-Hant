@@ -2,7 +2,7 @@
 title: 製作環境與工具
 description: AEM的製作環境提供多種機制來組織和編輯您的內容
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 13%
@@ -40,7 +40,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
 編輯頁面時，可 **從** :
 
-* 顯示 [**入門投影片的「頁面資訊&#x200B;**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)」選擇器（如您第一次存取編輯器時所顯示）
+* 顯示 [**入門投影片的「頁面資訊**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties) 」選擇器（如您第一次存取編輯器時所顯示）
 * 特定 [元件的](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 「設定」對話方塊(使用 表徵圖)，顯示上下文相關幫助
 
 控制台 [提供更多與幫助相關的資源](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)。
@@ -82,10 +82,12 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
    * 圖示或縮寫
       * 標準元件的圖示為單色。
       * 縮寫永遠是元件名稱的前兩個字元。
+
    從「元件」瀏覽器的頂端工 **具列** ，您可以：
 
    * 依名稱篩選元件。
    * 使用下拉式選取範圍，將顯示限制在特定群組。
+
    如需元件的詳細說明，您可以在「元件」瀏覽器中按一下或點選元件旁的資訊圖示(如果 **有** )。例如，對於「內容 **片段**」:
 
    ![元件瀏覽器資訊](/help/sites-cloud/authoring/assets/component-browser-information.png)
@@ -98,7 +100,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
 ## 資產瀏覽器 {#assets-browser}
 
-資產瀏覽器會顯示目前頁面上可直接使用的所有資產。 <!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
+資產瀏覽器會顯 [示](/help/assets/home.md) ，您目前頁面上可直接使用的所有資產。
 
 資產瀏覽器是側面板中的標籤，以及元件瀏 [覽器](#components-browser)[和內容樹](#content-tree)。要開啟或關閉側面板，請使用工具欄左上角的表徵圖：
 
@@ -151,9 +153,9 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
 >[!NOTE]
 >
->當移動設備寬度小於1024px時，檢測到移動設備； 例如，也可在小型案頭視窗上。
+>當移動設備寬度小於1024px時，檢測到移動設備；例如，也可在小型案頭視窗上。
 
-如果您需要快速變更資產，可以按一下資產名稱旁的編輯圖示，直接從資產瀏覽器啟動資產編輯器。 <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
+如果您需要快速變更資產，可以按一下資產名稱旁的編輯圖示，直接從資 [產瀏覽器啟動資產編輯器](/help/assets/manage-digital-assets.md) 。
 
 ![資產編輯按鈕](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -208,7 +210,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 * 即時副本
 * 語言副本
 * 導入連結
-* 使用參考元件： 借閱和借閱內容
+* 使用參考元件：借閱和借閱內容
 
 開啟必要的主控台，然後導覽至所需資源，並使用下列方式開 **啟「參考** 」:
 
@@ -225,7 +227,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 * [啟動](/help/sites-cloud/authoring/launches/overview.md)，提供相關啟動的存取權
 * 「即時副本」會顯示所有基於所選資源的即時副本的路徑。 <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
 * Blueprint提供詳細資訊和各種動作 <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* 語言副本提供詳細資訊和各種動作 <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* 「語言副本」提供詳細資訊和各種操作 <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
 
 ## 事件——時間軸 {#events-timeline}
 
@@ -268,7 +270,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 * [定位](/help/sites-cloud/authoring/personalization/targeted-content.md) -透過跨所有通道的定位和測量，提高內容相關性。
 * [時間彎曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp) -可讓您在特定時間點檢視頁面狀態。
 * [即時副本狀態](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) -允許快速概述即時副本狀態以及哪些元件是／未繼承的。
-* [預覽](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) -用於檢視頁面在發佈環境中的顯示效果； 或在內容中使用連結進行導覽。
+* [預覽](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) -用於檢視頁面在發佈環境中的顯示效果；或在內容中使用連結進行導覽。
 * [Annotate](/help/sites-cloud/authoring/fundamentals/annotations.md) —— 用於在頁面上添加或查看批注。
 
 您可以使用右上角的圖示來存取這些圖示。 實際圖示會變更，以反映您目前使用的模式：
@@ -281,6 +283,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 >* 存取某些模式需要適當的權限／權限。
 >* 由於空間限制，行動裝置無法使用開發人員模式。
 >* 有一個鍵 [盤](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`可切換 **)，在「預覽」和目前選取的模式之間切換(例如，「編輯」、「排版**********」等)。
+
 >
 
 
@@ -312,7 +315,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 * 在選取資源後，對話 **框右上方** 的「選擇」按鈕就會變為活動狀態。 按一下或點選以確認選取範圍，或 **取消** 以中止。
 * 如果上下文允許選擇多個資源，則選擇資源也會激活「選擇 **** 」按鈕，但也會向窗口的右上角添加選定資源的計數。按一下 **數字旁** 的X，取消選取全部。
 * 在樹狀結構中導覽時，您的位置會反映在對話方塊頂端的階層連結中。 這些網站導覽路徑標示也可用來快速跳入資源階層。
-* 您隨時都可以使用對話方塊頂端的搜尋欄位。 按一下 **搜尋欄位** 中的X以清除搜尋。
+* 您隨時都可以使用對話方塊頂端的搜尋欄位。 按一下 **搜尋欄位** 中的X，以清除搜尋。
 * 若要縮小搜尋範圍，您可以顯示篩選選項並根據特定路徑篩選結果。
 
    ![濾鏡選項](/help/sites-cloud/authoring/assets/filters-option.png)
