@@ -2,7 +2,7 @@
 title: 裝飾標籤
 description: 當轉譯網頁中的元件時，可產生HTML元素，並將轉譯的元件包裝在其中。 對於開發人員，AEM提供清晰簡單的邏輯，來控制包含元件的裝飾標籤。
 translation-type: tm+mt
-source-git-commit: 78afd53eaa4945e4933ef80a175fdf97c63b388e
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 此決策樹匯總了決定包裝函式標籤行為的邏輯。
 
-![決策樹](/help/implementing/developing/introduction/assets/decoration-tag-decision-tree.png)
+![決策樹](assets/decoration-tag-decision-tree.png)
 
 ### 使用案例 {#use-cases}
 
