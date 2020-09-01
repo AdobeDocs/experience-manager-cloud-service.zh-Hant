@@ -2,7 +2,7 @@
 title: SPA藍圖
 description: 本檔案說明任何SPA架構在AEM中實施可編輯的SPA元件時，應履行的一般、不受架構影響的合約。
 translation-type: tm+mt
-source-git-commit: f7d90d9cb41077a3a510f97a9f9f89f4b2b13cd9
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 若要讓作者使用AEM SPA編輯器來編輯SPA的內容，SPA必須符合一些要求。
 
-## 簡介 {#introdcution}
+## 簡介 {#introduction}
 
 本檔案說明任何SPA架構在AEM中實作可編輯的SPA元件時，應履行的一般合約（即AEM支援層）。
 
@@ -283,4 +283,3 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 如需AEM中SPA的詳細資訊，請參閱下列檔案：
 
 * [SPA編輯器概觀](editor-overview.md) ，以取得AEM中SPA和通訊模型的概觀
-
