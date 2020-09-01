@@ -2,9 +2,9 @@
 title: 開發AEM的SPA
 description: 本文提出在雇用前端開發人員為AEM開發SPA時應考慮的重要問題，並概述AEM在AEM上部署開發的SPA時，應注意的SPA架構。
 translation-type: tm+mt
-source-git-commit: d0685af8b05d5491debf7bad99b5c8f111808f26
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2078'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ SPA只應仰賴動態轉換內容。 這是AEM擷取和轉譯內容結構所有�
    <th><strong>缺點</strong></th>
   </tr>
   <tr>
-   <td>AEM可當成無頭CMS使用，毋需使用 <a href="https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-reference-materials.html">SPA編輯器SDK架構。</a></td>
+   <td>AEM可當成無頭CMS使用，毋需使用 <a href="/help/implementing/developing/spa/reference-materials.md">SPA編輯器SDK架構。</a></td>
    <td>前端開發人員可完全控制應用程式。</td>
    <td><p>內容製作者無法運用AEM的內容製作體驗。</p> <p>如果程式碼包含靜態參考或路由，則程式碼既不可攜式，也不可重複使用。</p> <p>不允許使用範本編輯器，因此前端開發人員必須透過JCR維護可編輯的範本。</p> </td>
   </tr>
