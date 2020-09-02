@@ -2,7 +2,7 @@
 title: 專案設定詳細資訊
 description: 專案設定詳細資訊——雲端服務
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 7%
@@ -17,7 +17,7 @@ ht-degree: 7%
 若要使用Cloud Manager成功建立和部署現有的AEM專案，必須遵守一些基本規則：
 
 * 必須使用Apache Maven建立專案。
-* Git儲存庫 *的根目錄中必須有pom.xml* 檔案。 此 *pom.xml* 檔案可以引用任意數量的子模組（這些子模組又可能具有其他子模組等） 視需要。
+* Git儲存庫 *的根目錄中必須有pom.xml* 檔案。 此 *pom.xml* 檔案可以引用任意數量的子模組（這些子模組又可以有其它子模組等） 視需要。
 
 * 您可以在 *pom.xml檔案中添加對其他Maven對象儲存庫的引* 用。 配置時 [支援對受密碼保護的對象儲存庫](#password-protected-maven-repositories) 的訪問。 但是，不支援對網路保護對象儲存庫的訪問。
 * 可部署的內容套件是透過掃描內容套件 *zip* 檔案來發現的，這些檔案位於名為 *target的目錄中*。 任何數量的子模組都可以生成內容包。
@@ -31,7 +31,7 @@ ht-degree: 7%
 
 在某些有限的情況下，在Cloud Manager內執行時，您可能需要稍微改變建立程式，而不是在開發人員工作站上執行。 在這些情況下， [Maven Profiles](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) 可用來定義在不同環境（包括Cloud Manager）中，建置應如何不同。
 
-在Cloud Manager構建環境中激活Maven配置檔案時，應查找上述CM_BUILD環境變數。 轉換為，只能在Cloud Manager構建環境之外使用的配置檔案應通過查找此變數的基本含義來完成。
+在Cloud Manager構建環境中激活Maven配置檔案時，應查找上述CM_BUILD環境變數。 相反地，應通過查找此變數的缺失來完成僅用於Cloud Manager構建環境以外的配置檔案。
 
 例如，如果您只想在Cloud Manager內執行組建時輸出簡單訊息，您可以執行下列動作：
 
