@@ -2,20 +2,20 @@
 title: 使用精靈
 description: 使用精靈——雲端服務
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 40%
+source-wordcount: '146'
+ht-degree: 41%
 
 ---
 
 
-# 使用精靈建立AEM應用程式專案 {#using-wizard-to-create-an-aem-application-project}
+# 使用精靈 {#using-wizard-to-create-an-aem-application-project}
 
 為協助新客戶開始使用，Cloud Manger現在可以建立最少的AEM專案作為起點。 此程式以 [**AEM Project Archetype為基礎**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
 
 
-請依照下列步驟，在Cloud Manager中建立AEM應用程式專案：
+請依照下列步驟，使用精靈在Cloud Manager中建立AEM應用程式專案：
 
 1. 一旦您登入Cloud Manager且基本程式設定完成後，如果儲存庫為空，「概述」畫面將會顯示特殊的動作卡呼叫。****
 
