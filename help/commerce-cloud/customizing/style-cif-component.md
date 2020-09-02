@@ -10,9 +10,9 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: d17aadfa60e2e13487d937c0630181beb7370328
+source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
 workflow-type: tm+mt
-source-wordcount: '2604'
+source-wordcount: '2620'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ CIF Venia Project [(](https://github.com/adobe/aem-cif-guides-venia) CIF Venia P
 
 ## 您將建立的
 
-類似卡片的產品摘要元件將會建置新樣式。
+在本教學課程中，類似卡片的產品摘要元件將會建置新樣式。 本教學課程可套用至其他CIF核心元件。
 
 ![您將建立的](../assets/style-cif-component/what-you-will-build.png)
 
