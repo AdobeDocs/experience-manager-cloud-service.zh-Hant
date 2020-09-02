@@ -2,7 +2,7 @@
 title: 構建環境詳細資訊
 description: 構建環境詳細資訊——雲服務
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 瞭解構建環境詳細資訊 {#understanding-build-environment}
+# 瞭解構建環境 {#understanding-build-environment}
 
 ## 構建環境詳細資訊 {#build-environment-details}
 
