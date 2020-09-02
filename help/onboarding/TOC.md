@@ -3,10 +3,10 @@ sub-product: AEM 雲端服務入門
 user-guide-title: AEM 雲端服務入門
 user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 93%
+source-wordcount: '144'
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 93%
    + 建立 AEM 應用程式專案 {#create-application-project}
       + [使用精靈](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [設定專案](getting-access-to-aem-in-cloud/setting-up-project.md)
-      + [瞭解構建環境詳細資訊](getting-access-to-aem-in-cloud/build-environment-details.md)
+      + [瞭解構建環境](getting-access-to-aem-in-cloud/build-environment-details.md)
 + 資料隱私權和保護整備 {#data-privacy}
    + [AEM 對資料保護與資料隱私權法規的整備](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM 對資料保護與資料隱私權法規的基礎整備](data-privacy-and-protection-readiness/foundation-readiness.md)
