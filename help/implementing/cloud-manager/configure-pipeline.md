@@ -2,7 +2,7 @@
 title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -58,11 +58,11 @@ ht-degree: 0%
 
 1. 將顯 **示「設定管線** 」螢幕。 選擇分支，然後按一下「下 **一步」**。
 
-   ![](assets/setup-pipeline-1.png)
+   ![](assets/setup-1.png)
 
 1. 設定您的部署選項。
 
-   ![](assets/setup-pipeline-2.png)
+   ![](assets/setup-2.png)
 
    可定義觸發器以啟動管線：
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 1. 生產管線設定包含標示為「體驗稽核」的第 **三個標籤**。
 
-   ![](assets/content-audit-1.png)
+   ![](assets/setup-3.png)
 
    此選項提供應一律包含在「體驗稽核」中的URL路徑表格。 使用者可以手動輸入要包含的URL路徑。 最多可包含25列。 如果使用者在此區段中未提交任何頁面，預設會將網站的首頁納入體驗稽核。
 
@@ -94,7 +94,7 @@ ht-degree: 0%
    >[!NOTE]
    >若要啟動「體驗稽核」步驟，使用者必須編輯管線，並可選擇新增頁面。 如需詳細 [資訊，請參閱](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 「已知問題」。
 
-   ![](assets/content-audit2.png)
+   ![](assets/exp-audit2.png)
 
 1. 從「編 **輯管線** 」(Edit Pipeline **** )螢幕中按一下「保存」(Save)。 「概 **述」頁** ，現在會顯示「 **部署您的計畫** 」卡。 按一 **下「部署** 」按鈕以部署您的程式。
 
