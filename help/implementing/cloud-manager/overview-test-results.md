@@ -2,7 +2,7 @@
 title: 測試結果概觀——雲端服務
 description: 測試結果概觀——雲端服務
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Cloud Manager for Cloud Services Pipeline支援的測試有三大類：
 
    功能測試是生產管道階段測試階段的一部分。
 
-1. [內容審核測試](/help/implementing/cloud-manager/content-audit-testing.md)
+1. [體驗審核測試](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   所有Cloud Manager生產管道中都啟用了「內容審核測試」，不能跳過。
+   所有Cloud Manager生產管道中都啟用了「體驗審核測試」，不能跳過。
 
 這些測試可以是：
 
