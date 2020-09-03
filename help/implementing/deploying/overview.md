@@ -2,7 +2,7 @@
 title: 部署至 AEM 雲端服務
 description: '部署至 AEM 雲端服務 '
 translation-type: tm+mt
-source-git-commit: bb810684a513718ddb7232f1a2da725b2df7f36c
+source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
 workflow-type: tm+mt
 source-wordcount: '3537'
 ht-degree: 1%
@@ -183,7 +183,7 @@ above appears to be internal, to confirm with Brian -->
 
 ### 包括第三方包 {#including-third-party}
 
-客戶通常會加入來自第三方來源（例如Adobe的翻譯合作夥伴等軟體廠商）的預建套件。 建議將這些軟體包裝載在遠程儲存庫中，並在中引用它們 `pom.xml`。 對於公共儲存庫和具有密碼保護的專用儲存庫，這是可能的，如受密碼保護的 [主儲存庫中所述](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#password-protected-maven-repositories)。
+客戶通常會加入來自第三方來源（例如Adobe的翻譯合作夥伴等軟體廠商）的預建套件。 建議將這些軟體包裝載在遠程儲存庫中，並在中引用它們 `pom.xml`。 對於公共儲存庫和具有密碼保護的專用儲存庫，這是可能的，如受密碼保護的 [主儲存庫中所述](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)。
 
 如果無法將軟體包儲存在遠程儲存庫中，客戶可以將軟體包放在基於檔案系統的本地Maven儲存庫中，該儲存庫作為項目的一部分提交到SCM ，並由任何依賴它的系統引用。 儲存庫將在項目提示中聲明，如下所示：
 
