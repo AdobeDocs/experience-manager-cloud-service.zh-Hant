@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.7.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 雲端服務 2020.7.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: 4211a4d95be6e625b283e3142609923245da8d31
+source-git-commit: 67d8ef256b410695435446ba0e560edce9115bab
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 80%
@@ -89,11 +89,11 @@ AEM Commerce現在可在Cloud Service上使用。
 
 * Cloud Manager 管道現在支援客戶設定變數和機密。
 
-   如需詳細資訊，請參閱[管道變數](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables)。
+   如需詳細資訊，請參閱[管道變數](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)。
 
 * 現在支援驗證綁定的專用Maven儲存庫。
 
-* Cloud Manager 建置容器現可支援 Java 8 和 Java 11。如需詳細 [資訊，請參閱「使用Java 11支援](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) 」。
+* Cloud Manager 建置容器現可支援 Java 8 和 Java 11。如需詳細 [資訊，請參閱「使用Java 11支援](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 」。
 
 ### 錯誤修正 {#bug-fixes-cm}
 
