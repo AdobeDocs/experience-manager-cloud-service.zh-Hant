@@ -2,7 +2,7 @@
 title: 提交 AEM 連接器
 description: 提交 AEM 連接器
 translation-type: tm+mt
-source-git-commit: d9c87b1c63274dfae81a8e3b96d9c4009b569236
+source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 11%
@@ -22,7 +22,7 @@ ht-degree: 11%
 項目中包含各種選項：
 
 1. 合作夥伴的公共儲存庫——合作夥伴將將內容包托管在可公開訪問的主儲存庫中
-1. 合作夥伴的受密碼保護的儲存庫——合作夥伴會將內容封裝主控在受密碼保護的儲存庫中。 有關說 [明，請參閱](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#password-protected-maven-repositories) ：上的密碼保護主資料庫。
+1. 合作夥伴的受密碼保護的儲存庫——合作夥伴會將內容封裝主控在受密碼保護的儲存庫中。 有關說 [明，請參閱](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories) ：上的密碼保護主資料庫。
 1. 打包的對象——在本例中，連接器軟體包包括在客戶的主項目中的本地。
 
 無論封裝在何處，都需要像供應商提供的那樣，在pom.xml中將封裝參照為相依性。
