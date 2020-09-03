@@ -2,7 +2,7 @@
 title: 體驗審核測試——雲端服務
 description: 體驗審核測試——雲端服務
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -51,7 +51,8 @@ Cloud Manager中的「體驗審核」可確保網站上的使用者數位體驗�
 
 * **N/A** —— 沒有舊分數可供比較
 
-   ![](/help/implementing/developing/introduction/assets/content-audit-test1.png)
+   ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
+
 
 ### 頁面層級分數 {#page-level-scores}
 
@@ -59,5 +60,5 @@ Cloud Manager中的「體驗審核」可確保網站上的使用者數位體驗�
 
 按一下任何個別頁面的詳細資訊，將會提供已評估頁面元素的資訊，並指引您在偵測到改善機會時修正問題。 Google Lighthouse提供測試的詳細資訊和相關指引。
 
-![](/help/implementing/developing/introduction/assets/page-level-scores.png)
+![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
 
