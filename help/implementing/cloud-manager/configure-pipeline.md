@@ -2,9 +2,9 @@
 title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
-source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
+source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -89,10 +89,7 @@ ht-degree: 0%
 
    如需詳細 [資訊，請參閱瞭解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md) 。
 
-   按一下「 **新增頁面覆寫** 」，提供要包含在「體驗審核」中的URL路徑。 新增路徑後，按一下「 **儲存**」。
-
-   >[!NOTE]
-   >若要啟動「體驗稽核」步驟，使用者必須編輯管線，並可選擇新增頁面。 如需詳細 [資訊，請參閱](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 「已知問題」。
+   按一 **下「新增頁面覆寫** 」，提供要包含在「體驗稽核」中的URL路徑。 新增路徑後，按一下「 **儲存**」。
 
    ![](assets/exp-audit2.png)
 
