@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.8.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 雲端服務 2020.8.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1057'
 ht-degree: 6%
 
 ---
@@ -82,7 +82,10 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * 「內容審核」是在Cloud Manager Sites生產管道上啟用的功能。 具有「網站」的程式的「生產管道」設定現在包含名為「內容審核」的第 **三個標籤**。 每當生產管道執行時，在自訂功能測試後，管道中就會包含新的「內容稽核」步驟，以根據多項維度評估網站，包括效能、搜尋引擎最佳化(SEO)、協助工具、最佳實務和PWA（漸進式網頁應用程式）。
 
-   Refer to [Content Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+   >[!NOTE]
+   >「內容審核」現在已重新命名為「體驗審核」。
+
+   如需詳細 [資訊，請參閱Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) 。
 
 * 「資產」程式中新建立的環境現在會自動設定Smart Content Services。
 
