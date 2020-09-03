@@ -2,9 +2,9 @@
 title: 部署您的程式碼——雲端服務
 description: 部署您的程式碼——雲端服務
 translation-type: tm+mt
-source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '985'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
    「 **舞台部署**」涉及以下步驟：
 
    * 驗證：此步驟確保將管線配置為使用當前可用資源，例如，已配置的分支存在，環境可用。
-   * 構建和單元測試：此步驟會執行容器化的建立程式。 有關 [構建環境的詳細資訊](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) ，請參閱構建環境詳細資訊。
+   * 構建和單元測試：此步驟會執行容器化的建立程式。 有關 [構建環境的詳細資訊](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) ，請參閱構建環境詳細資訊。
    * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](/help/implementing/cloud-manager/code-quality-testing.md) ，請參閱程式碼品質測試。
    * 建立影像：此步驟包含用於構建映像的進程的日誌檔案。 此程式負責將構建步驟生成的內容和調度程式包轉換為Docker映像和Kubernetes配置。
    * 部署至舞台
@@ -56,8 +56,8 @@ ht-degree: 1%
    * 自訂功能測試：管線中的此步驟始終存在，不能跳過。 但是，如果構建版本未生成測試JAR，則預設情況下測試通過。\
       請參閱自 [訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) ，以取得詳細資訊。
 
-   * 內容審核：管線中的此步驟始終存在，不能跳過。 當執行生產管線時，在執行檢查的自訂功能測試後，會包含內容稽核步驟。 所設定的頁面將會提交至服務並進行評估。 這些結果是提供資訊的，讓使用者可以查看目前和先前的分數之間的分數和變更。 此見解對於判斷目前部署中是否會引入回歸，十分有用。
-如需詳細 [資訊，請參閱瞭解內容](/help/implementing/cloud-manager/content-audit-testing.md) 審核結果。
+   * 體驗審核：管線中的此步驟始終存在，不能跳過。 執行生產管線時，會在執行檢查的自訂功能測試後加入體驗稽核步驟。 所設定的頁面將會提交至服務並進行評估。 這些結果是提供資訊的，讓使用者可以查看目前和先前的分數之間的分數和變更。 此見解對於判斷目前部署中是否會引入回歸，十分有用。
+如需詳細 [資訊，請參閱瞭解體驗稽核](/help/implementing/cloud-manager/experience-audit-testing.md) 結果。
 
       ![](assets/testing-tab.png)
 
@@ -88,7 +88,7 @@ Cloud Manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
 
    >[!NOTE]
    >
-   >所有AEM物件都會部署至作者和發佈者。 當需要特定節點的配置時，應使用運行模式。 若要進一步瞭解執行模式如何讓您針對特定用途調整AEM例項，請參閱「執行模式」。
+   >所有AEM物件都會部署至作者和發佈者。 當需要特定節點的配置時，應使用運行模式。 若要進一步瞭解「執行模式」如何讓您針對特定用途調整AEM例項，請參閱「執行模式」。
 
 1. 調度器對象按如下方式部署到每個調度器：
 
