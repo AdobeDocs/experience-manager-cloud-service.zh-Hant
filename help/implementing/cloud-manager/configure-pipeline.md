@@ -2,7 +2,7 @@
 title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -46,7 +46,7 @@ ht-degree: 0%
 >
 >可在初始設定後更改管線設定。
 
-## 從 [!UICONTROL Cloud Manager設定管線設定] {#configuring-the-pipeline-settings-from-cloud-manager}
+## 從 [!UICONTROL Cloud Manager配置管線設定] {#configuring-the-pipeline-settings-from-cloud-manager}
 
 一旦您設定了程式，並且使用 [!UICONTROL Cloud Manager] UI至少擁有一個環境，您就可以準備好設定部署管道。
 
@@ -78,21 +78,21 @@ ht-degree: 0%
    * **立即繼續** -如果選中此選項，則每當出現「重要」(Impertient)故障時，管線將自動繼續。 這實際上是在模擬用戶手動批准每個故障。
 
 
-1. 生產管線設定包含標示為「內容稽核」的第 **三個標籤**。
+1. 生產管線設定包含標示為「體驗稽核」的第 **三個標籤**。
 
    ![](assets/content-audit-1.png)
 
-   此選項提供應一律包含在「內容稽核」中之URL路徑的表格。 使用者可以手動輸入要包含的URL路徑。 最多可包含25列。 如果使用者在此區段中未提交任何頁面，預設會將網站的首頁納入內容稽核。
+   此選項提供應一律包含在「體驗稽核」中的URL路徑表格。 使用者可以手動輸入要包含的URL路徑。 最多可包含25列。 如果使用者在此區段中未提交任何頁面，預設會將網站的首頁納入體驗稽核。
 
    >[!NOTE]
    > 設定的頁面會提交至服務，並根據效能、協助工具、搜尋引擎最佳化(SEO)、最佳實務和PWA（漸進式網頁應用程式）測試進行評估。
 
-   如需詳細 [資訊，請參閱瞭解內容審核結果](/help/implementing/cloud-manager/content-audit-testing.md) 。
+   如需詳細 [資訊，請參閱瞭解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md) 。
 
-   按一下「 **新增頁面覆寫** 」，提供要包含在「內容審核」中的URL路徑。 新增路徑後，按一下「 **儲存**」。
+   按一下「 **新增頁面覆寫** 」，提供要包含在「體驗審核」中的URL路徑。 新增路徑後，按一下「 **儲存**」。
 
    >[!NOTE]
-   >若要啟動「內容稽核」步驟，使用者必須編輯管線，並可選擇新增頁面。 如需詳細 [資訊，請參閱](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 「已知問題」。
+   >若要啟動「體驗稽核」步驟，使用者必須編輯管線，並可選擇新增頁面。 如需詳細 [資訊，請參閱](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 「已知問題」。
 
    ![](assets/content-audit2.png)
 
