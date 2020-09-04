@@ -2,9 +2,9 @@
 title: AEM 雲端服務中的 CDN
 description: AEM 雲端服務中的 CDN
 translation-type: tm+mt
-source-git-commit: 38b69b96011b7920adaf7f6cca0edff10f387b41
+source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '689'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ AEM管理的CDN將可滿足大部分客戶的效能與安全性需求。 對於�
 請依照下列步驟，使用Adobe的現成可用CDN來準備內容傳送：
 
 1. 透過共用包含此資訊之安全表單的連結，將已簽署的SSL憑證和機密金鑰提供給Adobe。 請與客戶支援協調此項工作。
-   **注意：** Aem作為雲端服務不支援「已驗證網域(DV)」憑證。
+   **注意：** Aem作為雲端服務不支援「已驗證網域(DV)」憑證。 此外，它必須是來自受信任認證機構(CA)的X.509 TLS憑證，並具有相符的2048位元RSA私密金鑰。
 1. 通知客戶支援：
    * 哪個自定義域應與給定環境關聯，如程式ID和環境ID所定義。 請注意，作者端不支援自訂網域。
    * 如果需要任何IP允許清單來限制到給定環境的通信。
