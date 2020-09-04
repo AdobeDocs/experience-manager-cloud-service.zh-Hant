@@ -2,9 +2,9 @@
 title: 通知——雲端服務
 description: 通知——雲端服務
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '192'
 ht-degree: 1%
 
 ---
@@ -32,11 +32,10 @@ ht-degree: 1%
 
 依預設，Adobe [!UICONTROL Experience Cloud解決方案的網頁使用者介面中會提供通] 知。 個別使用者也可以選擇立即或摘要方式透過電子郵件傳送這些通知。
 
-
 這會將使用者帶往Adobe [!UICONTROL Experience Cloud的「通知偏好設定」畫面]。
 
 使用者可以開啟電子郵件通知，並（選擇性）選擇想透過電子郵件接收的通知類型。
 
 >[!NOTE]
 >
->您也可以啟用Adobe [!UICONTROL Experience Cloud的消化功能]，如下所示：
+>您也可以透過Adobe [!UICONTROL Experience Cloud進行消化]。
