@@ -2,7 +2,7 @@
 title: 構建環境詳細資訊
 description: 構建環境詳細資訊——雲服務
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
@@ -30,6 +30,7 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
 * 其他軟體包可在構建時安裝，如下 [所述](#installing-additional-system-packages)。
 * 每棟建築都是在原始環境下完成的；建置容器不會在執行之間保留任何狀態。
 * Maven一律使用下列三個命令執行：
+
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
