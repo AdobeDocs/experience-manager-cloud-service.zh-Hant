@@ -4,9 +4,9 @@ description: 瞭解如何使用「篩選」面板在AEM中尋找所需資產，�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 88b845f3749ad5c362216c8988e9e12ba511eb35
+source-git-commit: 7673ff492caac0b06e568ffecb43da2f5c6becbc
 workflow-type: tm+mt
-source-wordcount: '4529'
+source-wordcount: '4525'
 ht-degree: 7%
 
 ---
@@ -106,13 +106,13 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 
 1. 從「資產」使用者介面，開啟資產的屬性頁面。按一 **[!UICONTROL 下「進階]** 」，然後按一下/點選「 **[!UICONTROL Elevate for search keywords]** 」下 **[!UICONTROL 方的「新增」]**。
 1. 在「搜 **[!UICONTROL 尋促銷]** 」方塊中，指定您要大幅提升影像搜尋的關鍵字，然後按一下／點選「新增」 ****。 您可以以相同的方式指定多個關鍵字。
-1. Click/tap **[!UICONTROL Save &amp; Close]**. 您為此關鍵字促銷的資產會出現在熱門搜尋結果中。
+1. 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。您為此關鍵字促銷的資產會出現在熱門搜尋結果中。
 
 您可以透過提升目標關鍵字搜尋結果中某些資產的排名，來利用此功能。 請參閱以下範例影片。 如需詳細資訊，請參 [閱「AEM中的搜尋」](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
-*瞭解搜尋結果的排名方式，以及排名的影響。*
+*影片：瞭解搜尋結果的排名方式，以及排名的影響。*
 
 ## Advanced search {#scope}
 
@@ -241,7 +241,7 @@ AEM搜尋功能支援搜尋系列並搜尋系列中的資產。 請參閱 [搜�
 
 ![在資產選擇器中瀏覽並選取資產](assets/assetpicker.png)
 
-在資產選擇器中瀏覽並選取資產
+*圖：在資產選擇器中瀏覽並選取資產。*
 
 ## 限制 {#limitations}
 
@@ -263,8 +263,8 @@ AEM Assets中的搜尋功能有下列限制：
 * 使用「前瞻分析」述詞，根據從各種Creative應用程式取得的資產使用統計資料來搜尋支援的資產。 使用資料會分組在資產顯示類別的「使用分數」、「印象」、「點按」和「媒體」渠道下。
 * 使用複選框可選擇所有搜索結果或要對所選內容進行操作的篩選搜索結果。 不論目前使用者檢視中顯示多少資產，都會選取所有搜尋的資產。 例如，您可以下載所有選取的資產、大量更新所有選取資產的中繼資料屬性，或將選取的資產新增至系列。
 * 若要搜尋不含必要中繼資料的資產，請參閱必 [要中繼資料](#mandatorymetadata)。
-* 搜尋使用所有中繼資料欄位。 一般搜尋（例如搜尋12）通常會傳回許多結果。 為獲得更佳結果，請使用雙引號（非單引號），或確保數字與沒有特殊字元的單字相鄰(例如 *shoe12*)。
-* 全文搜尋支援運算子，例如-、^等。 要將這些字母作為字串文本搜索，請用雙引號將搜索表達式括起來。 例如，使用「筆記型電腦——美容」而非「筆記型電腦——美容」。
+* 搜尋使用所有中繼資料欄位。 一般搜尋（例如搜尋12）通常會傳回許多結果。 為獲得更佳結果，請使用雙引號（非單引號），或確保數字與沒有特殊字元的單字相鄰(例如 `shoe12`)。
+* 全文搜尋支援運算子，例如 `-` 和 `^`。 要將這些字母作為字串文本搜索，請用雙引號將搜索表達式括起來。 例如，請使 `"Notebook - Beauty"` 用而非 `Notebook - Beauty`。
 * 如果搜尋結果太多，請將 [搜尋範圍限制](#scope) 為所要資產的零值。 當您對如何更好地尋找所需資產（例如特定檔案類型、特定位置、特定中繼資料等）有一些概念時，效果最佳。
 
 * **標籤**:標籤可協助您將可以更有效率地瀏覽和搜尋的資產分類。 標籤有助於將適當的分類傳播給其他用戶和工作流。 AEM提供使用Adobe Sensei人工智慧服務自動標籤資產的方法，這些服務可讓您在使用和訓練資產時不斷取得進步。 當您搜尋資產時，如果您的帳戶已啟用功能，智慧標籤會加入。 它可與內建搜尋功能搭配使用。 請參閱 [搜尋行為](#searchbehavior)。 若要最佳化搜尋結果的顯示順序，您可以提 [高少數選取資產的搜尋](#searchrank) 排名。
@@ -277,7 +277,7 @@ AEM Assets中的搜尋功能有下列限制：
 
 ![使用引號和不使用引號的搜尋行為](assets/search_with_quotes.gif)
 
-使用引號和不使用引號的搜尋行為
+*圖：搜尋行為時有引號或無引號。*
 
 **使用星號通配符進行搜索**:若要擴大搜尋範圍，請在搜尋字詞前後使用星號，以比對任意數目的字元。 例如，搜尋沒有星號的執行並不會傳回包含字詞變異的資產（包括在中繼資料中）。 星號可取代任意數字元。 例如，
 
@@ -288,7 +288,7 @@ AEM Assets中的搜尋功能有下列限制：
 
 ![以範例說明在資產搜尋中使用星號萬用字元](assets/search_with_asterisk_run.gif)
 
-以範例說明在資產搜尋中使用星號萬用字元
+*圖：以範例說明在資產搜尋中使用星號萬用字元。*
 
 **使用問號萬用字元搜尋**:若要擴大搜尋範圍，請使用一或多個「?」 字元來比對字元數目。 例如，在下圖中，
 
@@ -300,7 +300,7 @@ AEM Assets中的搜尋功能有下列限制：
 
 ![使用範例說明在資產搜尋中使用問號萬用字元](assets/search_with_questionmark_run.gif)
 
-使用範例說明在資產搜尋中使用問號萬用字元
+*圖：以範例說明在資產搜尋中使用問號萬用字元。*
 
 **排除關鍵字**:使用破折號來搜尋不含關鍵字的資產。 例如，查 `running -shoe` 詢會傳回包含但 `running`不包含的資產 `shoe`。 同樣地， `camp -night` 查詢會傳回包含但不包含 `camp` 的資產 `night`。 請注意， `camp-night` 查詢會傳回同時包含和的 `camp` 資產 `night`。
 
@@ -312,6 +312,7 @@ AEM Assets中的搜尋功能有下列限制：
 ### Search index configurations {#searchindex}
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
+-->
 
 <!--
 ### Visual or similarity search {#configvisualsearch}
@@ -346,7 +347,6 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
-
 -->
 
 <!--
@@ -361,8 +361,9 @@ To improve the speed of discovery, AEM Assets offers search facets using which y
 ### Extract text when uploading assets {#extracttextupload}
 
 You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
+-->
 
-<!-- Check with gklebus if this customization is possible in AEM now.
+<!-- TBD: Check with gklebus and engineering if these customization are possible in CS.
 
 ### Custom predicates to filter search results {#custompredicates}
 
@@ -372,20 +373,20 @@ You can search for digital assets based on one or more of the following properti
 
 | Search field | Search property values |
 |---|---|
-| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
-| Last Modified | Hour, Day, Week, Month, or Year. |
-| File Size | Small, Medium, or Large. |
-| Publish Status | Published or Unpublished. |
 | Approved Status | Approved or Rejected. |
+| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
+| File Size | Small, Medium, or Large. |
+| Last Modified | Hour, Day, Week, Month, or Year. |
+| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
 | Orientation | Horizontal, Vertical, or Square. |
+| Publish Status | Published or Unpublished. |
 | Style | Color, or Black & White. |
+| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Video Codec | x264. Value is stored in the metadata of video renditions only. |
+| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
 | Video Height | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 | Video Width | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
-| Video Codec | x264. Value is stored in the metadata of video renditions only. |
-| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
-| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 
 -->
 
@@ -463,6 +464,9 @@ You can search for digital assets based on one or more of the following properti
 **Search filter/predicate is not available**:如果使用者介面上沒有搜尋篩選器的預期自訂功能，請連絡您的管理員，以檢查自訂是否已針對所有作者以及您使用的生產伺服器實施。 可能配置不正確。
 
 ## 疑難排解搜尋相關問題 {#troubleshoot}
+
+<!-- TBD: Expand this section.
+-->
 
 請參閱以下問題和可能的行動方針：
 
