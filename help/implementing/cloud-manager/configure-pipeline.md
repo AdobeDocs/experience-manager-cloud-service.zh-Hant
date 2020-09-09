@@ -2,9 +2,9 @@
 title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
-source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
+source-git-commit: 4d5ad99e44446ac40d9798df1c7fabb862065495
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,10 @@ ht-degree: 0%
    * **立即繼續** -如果選中此選項，則每當出現「重要」(Impertient)故障時，管線將自動繼續。 這實際上是在模擬用戶手動批准每個故障。
 
 
-1. 生產管線設定包含標示為「體驗稽核」的第 **三個標籤**。 此選項提供應一律包含在「體驗稽核」中的URL路徑表格。 使用者必須按一下「 **新增頁面** 」以定義其自訂連結。
+1. 生產管線設定包含標示為「體驗稽核」的第 **三個標籤**。 此選項提供應一律包含在「體驗稽核」中的URL路徑表格。
+
+   >[!NOTE]
+   >您必須按一下「 **新增頁面** 」來定義您自己的自訂連結。
 
    ![](assets/setup-3.png)
 
