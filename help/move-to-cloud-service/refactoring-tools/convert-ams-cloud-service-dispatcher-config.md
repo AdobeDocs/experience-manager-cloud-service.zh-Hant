@@ -1,9 +1,9 @@
 ---
 title: 將 AMS 轉換為 Adobe Experience Manager 雲端服務 Dispatcher 設定
 description: 將 AMS 轉換為 Adobe Experience Manager 雲端服務 Dispatcher 設定
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 100%
 
@@ -197,7 +197,7 @@ ht-degree: 100%
 
    * 如果看見其他錯誤，請參考驗證器工具文件的疑難排解章節。
 
-## 使用本機部署測試您的設定{#testing-config-local-deployment}
+## 使用本機部署測試您的設定 {#testing-config-local-deployment}
 
 >[!IMPORTANT]
 >
