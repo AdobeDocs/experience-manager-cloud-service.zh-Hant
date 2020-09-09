@@ -2,9 +2,9 @@
 title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
-source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
+source-git-commit: bf07f6cba245ac8bc671264e5af24b0c72c68c5d
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -82,9 +82,9 @@ ht-degree: 0%
 
    ![](assets/setup-3.png)
 
-   按一 **下「新增頁面覆寫** 」，提供要包含在「體驗稽核」中的URL路徑。
+   按一 **下「新增頁面** 」，提供要包含在「體驗稽核」中的URL路徑。
 
-   例如，如果您想要在「體驗審核」 `https://wknd.site/us/en/about-us.html` 中加入，請在此欄位中輸入 `us/en/about-us.html` 路徑。
+   例如，如果您想要在「體驗審核」 `https://wknd.site/us/en/about-us.html` 中加入，請在此欄位中輸入路 `us/en/about-us.html` 徑，然後按一下「 **儲存」**。
 
    ![](assets/exp-audit4.png)
 
