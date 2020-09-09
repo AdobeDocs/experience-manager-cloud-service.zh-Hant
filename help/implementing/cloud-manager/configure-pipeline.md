@@ -2,9 +2,9 @@
 title: 配置CI/CD管線——雲服務
 description: 配置CI/CD管線——雲服務
 translation-type: tm+mt
-source-git-commit: b94cd6c5bce641e50491f5c1fd30f5cb2f92646c
+source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -78,27 +78,23 @@ ht-degree: 0%
    * **立即繼續** -如果選中此選項，則每當出現「重要」(Impertient)故障時，管線將自動繼續。 這實際上是在模擬用戶手動批准每個故障。
 
 
-1. 生產管線設定包含標示為「體驗稽核」的第 **三個標籤**。
+1. 生產管線設定包含標示為「體驗稽核」的第 **三個標籤**。 此選項提供應一律包含在「體驗稽核」中的URL路徑表格。 使用者必須填寫輸入欄位，才能定義其自訂連結。
 
    ![](assets/setup-3.png)
 
-   此選項提供應一律包含在「體驗稽核」中的URL路徑表格。 使用者必須填寫輸入欄位，才能定義其自訂連結。
+   按一 **下「新增頁面覆寫** 」，提供要包含在「體驗稽核」中的URL路徑。
 
    例如，如果您想要在「體驗審核」 `https://wknd.site/us/en/about-us.html` 中加入，請在此欄位中輸入 `us/en/about-us.html` 路徑。
 
-   ![](assets/set-up-5.png)
+   ![](assets/exp-audit4.png)
 
-   顯示在表格中的URL將會是 `https://publish-p7719-e13204.adobeaemcloud.com/us/en/about-us.html`。
+   顯示在表格中的URL將會是 `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`。
 
-   ![](assets/set-up-4.png)
+   ![](assets/exp-audit5.png)
 
    最多可包含25列。 如果使用者在此區段中未提交任何頁面，預設會將網站的首頁納入「體驗稽核」中。
 
    如需詳細 [資訊，請參閱瞭解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md) 。
-
-   按一 **下「新增頁面覆寫** 」，提供要包含在「體驗稽核」中的URL路徑。 新增路徑後，按一下「 **儲存**」。
-
-   ![](assets/exp-audit2.png)
 
    >[!NOTE]
    > 設定的頁面會提交至服務，並根據效能、協助工具、搜尋引擎最佳化(SEO)、最佳實務和PWA（漸進式網頁應用程式）測試進行評估。
