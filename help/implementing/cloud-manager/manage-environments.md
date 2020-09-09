@@ -2,9 +2,9 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
+source-git-commit: 3768474b41abe76ee639e51c9eae39d72ab7c4a4
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '790'
 ht-degree: 7%
 
 ---
@@ -99,7 +99,7 @@ Adobe會自動管理Stage和生產環境的更新。
 
 ## 管理存取 {#managing-access}
 
-從「 **環境卡** 」的下拉式選單選取「管理 **存取** 」。 您可以直接導覽至作者例項，並管理環境的存取權。
+從「 **環境卡** 」的下拉式選單選取「管 **理存取** 」。 您可以直接導覽至作者例項，並管理環境的存取權。
 
 如需詳細 [資訊，請參閱「管理作者實例的存取權](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) 」。
 
