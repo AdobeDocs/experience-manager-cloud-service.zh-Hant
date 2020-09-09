@@ -2,9 +2,9 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
+source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '791'
 ht-degree: 7%
 
 ---
@@ -18,17 +18,16 @@ ht-degree: 7%
 
 具備必要權限的使用者可以建立下列環境類型（在特定租用戶可用的範圍內）。
 
-* **生產和階段環境**:
-Production and Stage是雙核產品，用於測試和生產用途。
+* **生產和階段環境**:Production and Stage是雙核產品，用於測試和生產用途。
 
-* **開發**: 開發環境可建立用於開發和測試，且僅與非生產管道相關。
+* **開發**:開發環境可建立用於開發和測試，且僅與非生產管道相關。
 
    >[!NOTE]
    >在沙盒程式中自動建立的開發環境將會設定為包含網站和資產解決方案。
 
    下表匯總了環境類型及其屬性：
 
-   | 名稱 | 作者層 | 發佈層 | 使用者可以建立 | 使用者可以刪除 | 可與環境關聯的管線 |
+   | 名稱 | 作者階層 | 發佈層 | 使用者可以建立 | 使用者可以刪除 | 可與環境關聯的管線 |
    |--- |--- |--- |--- |---|---|
    | 生產 | 是 | 是（如果包含網站） | 是 | 否 | 生產管道 |
    | 分段 | 是 | 是（如果包含網站） | 是 | 否 | 生產管道 |
@@ -48,18 +47,18 @@ Production and Stage是雙核產品，用於測試和生產用途。
    ![](assets/no-environments.png)
 
    >[!NOTE]
-   >「添 **加環境** 」選項將基於缺少權限或可能簽訂的合同而禁用。
+   >「 **新增環境** 」選項將會因為缺乏權限或可能已簽約而停用。
 
 1. 出現「 **Add environment** 」(添加環境 **)對話框。用戶需要提交諸如「Environment type** 」 (環境類型) 和「 **Environment name** 」 (環境名稱) 和「 **** Environment description」 (環境描述) 等詳細資訊 (取決於用戶在特定租用戶可用內容範圍內建立環境的目標)。
 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >在建立環境時，會在Adobe I/O *中建立一* 或多個整合。 這些內容對可存取Adobe I/O Console的客戶使用者可見，且不得刪除。 Adobe I/O Console的說明中會說明此點。
+   >在建立環境時，會在Adobe I/O *中建立一* 或多個整合。這些內容對可存取Adobe I/O Console的客戶使用者可見，且不得刪除。 Adobe I/O Console的說明中會說明此點。
 
    ![](assets/add-environment-image1.png)
 
-1. 按一下 **保存** ，以添加具有已填充標準的環境。  現在，「 *概述* 」畫面會顯示卡片，您可從其中設定管道。
+1. 按一下 **保存** ，以添加具有已填入標準的環境。  現在，「 *概述* 」畫面會顯示卡片，您可從其中設定管道。
 
    >[!NOTE]
    >如果您尚未設定非生產管道，「概述」畫面會顯示卡片，您可從中建立非生產管道。 **
@@ -97,6 +96,15 @@ Adobe會自動管理Stage和生產環境的更新。
 
 >[!NOTE]
 此功能不適用於為生產目的而在常規程式中設定的生產／階段環境。 不過，這項功能適用於沙盒程式中的「生產／階段」環境。
+
+## 管理存取 {#managing-access}
+
+從「 **環境卡** 」的下拉式選單選取「管理 **存取** 」。 您可以直接導覽至作者例項，並管理環境的存取權。
+
+如需詳細 [資訊，請參閱「管理作者實例的存取權](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) 」。
+
+![](assets/environ-manage-access.png)
+
 
 ## 存取Developer Console {#accessing-developer-console}
 
