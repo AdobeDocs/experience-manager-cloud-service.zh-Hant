@@ -2,7 +2,7 @@
 title: 通知——雲端服務
 description: 通知——雲端服務
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
@@ -37,5 +37,4 @@ ht-degree: 1%
 使用者可以開啟電子郵件通知，並（選擇性）選擇想透過電子郵件接收的通知類型。
 
 >[!NOTE]
->
 >您也可以透過Adobe [!UICONTROL Experience Cloud進行消化]。
