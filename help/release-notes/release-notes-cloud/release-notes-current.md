@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.9.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 雲端服務 2020.9.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: a2037fb3a315db801423c33671e1885a0b655391
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 44%
+source-wordcount: '235'
+ht-degree: 22%
 
 ---
 
@@ -13,6 +13,24 @@ ht-degree: 44%
 # [!DNL Adobe Experience Manager] 雲端服務 2020.9.0 版發行說明 {#release-notes}
 
 以下章節概述 Experience Manager 雲端服務 2020.9.0 版的一般發行說明。
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### 新功能 {#what-is-new-commerce}
+
+* 已發佈CIF核心元件v1.3.0。請參閱 [CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) ，以取得詳細資訊。
+
+* 現在提供產品／類別範本的預覽功能。 這可讓AEM中的商業使用者／行銷人員檢視具有真實資料的產品／類別範本。
+
+* 屬性頁面已新增至產品和類別，可讓商業使用者檢視與產品SKU/類別ID相關的詳細資訊。
+
+* 新增至「產品主控台」的排序功能，允許依名稱或價格屬性來排序產品／類別。
+
+* 產品搜尋功能已新增至產品主控台。
+
+### 錯誤修正 {#bug-fixes-commerce}
+
+* Commerce Cloud設定不尊重繼承。 此問題已修正，以確保配置繼承值。
 
 
 ## Cloud Manager {#cloud-manager}
