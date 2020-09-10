@@ -2,9 +2,9 @@
 title: 範例ContextHub商店候選者
 description: ContextHub提供數種範例商店候選，供您在解決方案中使用
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: c3f69e4b03819fea9a1842a87cad38bd1e485d83
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '466'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ aem.segmentation儲存區候選項已延伸 [`ContextHub.Store.PersistedJSONPSto
 
 儲存有關目前用戶端環境的資訊，例如裝置、視窗、瀏覽器、日期和時間。
 
-### 來源位置{#source-location-surferinfo
+### 源位置 {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
