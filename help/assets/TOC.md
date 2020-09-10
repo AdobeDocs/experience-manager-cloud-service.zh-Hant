@@ -3,7 +3,7 @@ sub-product: AEM Assets 雲端服務
 user-guide-title: AEM Assets 雲端服務
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 88b845f3749ad5c362216c8988e9e12ba511eb35
+source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 94%
@@ -50,7 +50,7 @@ ht-degree: 94%
    + [多語言資產和資產翻譯](translate-assets.md)
    + [搜尋 Facet](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
-   + [AEM Assets HTTP API 內容片段支援](assets-api-content-fragments.md)
+   + [AEM Assets HTTP API 內容片段支援](content-fragments/assets-api-content-fragments.md)
    + [連線資產](use-assets-across-connected-assets-instances.md)
    + [資產報表](asset-reports.md)
    + [階層式中繼資料](cascading-metadata.md)
