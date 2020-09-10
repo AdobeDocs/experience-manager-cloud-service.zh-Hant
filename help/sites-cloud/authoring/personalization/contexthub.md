@@ -2,24 +2,24 @@
 title: 使用 ContextHub 資料預覽頁面
 description: ContextHub工具列顯示來自ContextHub商店的資料，並讓您變更商店資料，對於預覽內容非常有用
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
 # 使用 ContextHub 資料預覽頁面  {#previewing-pages-using-contexthub-data}
 
-ContextHub工具列顯示來自ContextHub商店的資料，並讓您變更商店資料。 ContextHub工具列對於預覽由ContextHub商店中的資料所決定的內容非常有用。<!--The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.-->
+ContextHub工具列顯示來自ContextHub商店的資料，並讓您變更商店資料。 ContextHub工具列對於預覽由ContextHub商店中的資料所決定的內容非常有用。
 
 工具列由一系列包含一或多個UI模組的UI模式組成。
 
 * UI模式是顯示在工具列左側的圖示。 當您按一下或點選圖示時，工具列會顯示其包含的UI模組。
 * UI模組顯示來自一個或多個ContextHub儲存的資料。 部分UI模組也可讓您控制儲存資料。
 
-ContextHub會安裝數種UI模式和UI模組。 您的管理員可能已設定ContextHub以顯示不同的內容。<!--ContextHub installs several UI modes and UI modules. Your administrator may have [configured ContextHub](/help/sites-administering/contexthub-config.md) to display different ones.-->
+ContextHub會安裝數種UI模式和UI模組。 您的管理員可能已 [設定ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) ，以顯示不同的ContextHub。
 
 ## 顯示ContextHub工具列 {#revealing-the-contexthub-toolbar}
 
