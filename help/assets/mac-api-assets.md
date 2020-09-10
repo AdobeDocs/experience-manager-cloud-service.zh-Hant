@@ -3,7 +3,7 @@ title: 中的資產HTTP API [!DNL Adobe Experience Manager]。
 description: 使用中的HTTP API建立、讀取、更新、刪除、管理數位資產 [!DNL Adobe Experience Manager Assets]。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
+source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 概覽 {#overview}
 
-資產HTTP API可讓您對數位資產（包括中繼資料、轉譯和注釋）以及使用內容片段的結構化內容進行建立——讀取——更新——刪除(CRUD) [!DNL Experience Manager] 作業。 它在公開， `/api/assets` 並實作為REST API。 它包含 [內容片段支援](/help/assets/assets-api-content-fragments.md)。
+資產HTTP API可讓您對數位資產（包括中繼資料、轉譯和注釋）以及使用內容片段的結構化內容進行建立——讀取——更新——刪除(CRUD) [!DNL Experience Manager] 作業。 它在公開， `/api/assets` 並實作為REST API。 它包含 [內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)。
 
 若要存取API:
 
@@ -34,13 +34,13 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 內 [容片段](/help/assets/content-fragments/content-fragments.md) ，是特殊的資產類型。 它可用來存取結構化資料，例如文字、數字、日期等。 由於資產有數種差 `standard` 異（例如影像或檔案），因此處理內容片段時會套用一些其他規則。
 
-如需詳細資訊，請 [參閱Experience Manager Assets HTTP API中的內容片段支援](/help/assets/assets-api-content-fragments.md)。
+如需詳細資訊，請 [參閱Experience Manager Assets HTTP API中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)。
 
 ## Data model {#data-model}
 
 資產HTTP API會公開兩個主要元素、資料夾和資產（適用於標準資產）。
 
-此外，它還會針對描述「內容片段」中結構化內容的自訂資料模型公開更詳細的元素。 如需詳 [細資訊，請參閱內容片段資料模型](/help/assets/assets-api-content-fragments.md#content-models-and-content-fragments) 。
+此外，它還會針對描述「內容片段」中結構化內容的自訂資料模型公開更詳細的元素。 如需詳 [細資訊，請參閱內容片段資料模型](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) 。
 
 ### 資料夾 {#folders}
 
@@ -71,7 +71,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 * 多個轉譯，例如原始轉譯（原始上傳的資產）、縮圖和各種其他轉譯。 其他轉譯可能是不同大小的影像、不同的視訊編碼，或從PDF或Adobe InDesign檔案擷取的頁面。
 * 選用的注釋。
 
-如需內容片段元素的詳細資訊，請參 [閱Experience Manager Assets HTTP API中的內容片段支援](/help/assets/assets-api-content-fragments.md)。
+如需內容片段元素的詳細資訊，請參 [閱Experience Manager Assets HTTP API中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)。
 
 在資 [!DNL Experience Manager] 料夾中包含下列元件：
 
