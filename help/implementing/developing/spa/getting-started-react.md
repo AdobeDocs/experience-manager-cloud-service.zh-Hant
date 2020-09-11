@@ -2,7 +2,7 @@
 title: 在AEM中使用React快速入門SPA
 description: 本文提供範例SPA應用程式，說明其組合方式，並讓您使用React架構快速啟動並執行您自己的SPA。
 translation-type: tm+mt
-source-git-commit: 4652ab5a064d1ad397eb8eebd9dd92f7c8bb1c21
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
@@ -48,9 +48,9 @@ SPA製作功能提供完整的解決方案，以支援AEM中的SPA。 本文介�
 
 ```
   "dependencies": {
-    "@adobe/cq-react-editable-components": "~1.0.3",
-    "@adobe/cq-spa-component-mapping": "~1.0.3",
-    "@adobe/cq-spa-page-model-manager": "~1.0.4"
+    "@adobe/aem-react-editable-components": "~1.0.4",
+    "@adobe/aem-spa-component-mapping": "~1.0.5",
+    "@adobe/aem-spa-page-model-manager": "~1.0.3"
   }
 ```
 
@@ -123,7 +123,7 @@ module.exports = {
 ```
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
+import { ModelManager, Constants } from "@adobe/aem-spa-page-model-manager";
 
 ...
 
@@ -148,7 +148,7 @@ ReactDOM.render(
 透過轉譯應用程 `index.js` 式， `App.js`呼叫會以簡化版本顯示，以專注於重要內容。
 
 ```
-import {Page, withModel } from '@adobe/cq-react-editable-components';
+import {Page, withModel } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -166,7 +166,7 @@ export default withModel(App);
 透過轉譯頁面，以簡 `App.js` 化版 `Page.js` 本列出此處的呼叫。
 
 ```
-import {Page, MapTo, withComponentMappingContext } from "@adobe/cq-react-editable-components";
+import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
 
 ...
 
@@ -187,7 +187,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 ```
 import React, {Component} from 'react';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Image.css');
 
@@ -230,7 +230,7 @@ AEM中SPA的核心理念是將SPA元件對應至AEM元件，並在修改內容�
 
 ```
 import React, { Component } from 'react';
-import { MapTo } from '@cq/cq-react-editable-components';
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 ...
 
