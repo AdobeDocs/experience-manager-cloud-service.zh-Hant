@@ -3,7 +3,7 @@ sub-product: AEM 雲端服務實作
 user-guide-title: AEM 雲端服務實作
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 7031e923c40367115c4423b561757b0f2b40878c
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 67%
@@ -73,7 +73,7 @@ ht-degree: 67%
       + [型號路由](developing/spa/routing.md)
       + [啟動整合](developing/spa/launch-integration.md)
       + [伺服器端演算](developing/spa/ssr.md)
-      + [Javascript API參考](developing/spa/reference-materials.md)
+      + [SPA參考檔案](developing/spa/reference-materials.md)
 + 個性化 {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [設定ContextHub](developing/personalization/configuring-contexthub.md)
