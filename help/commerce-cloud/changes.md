@@ -2,9 +2,9 @@
 title: AEM Commerce as a Cloud Service的顯著變更
 description: 與Adobe Experience Manager 6.5相比，AEM Commerce的雲端服務顯著變更。
 translation-type: tm+mt
-source-git-commit: ed81d08d9775f61c0ab1e305710ac7ecf29d4229
+source-git-commit: 2934d0d8d3977bb7884bae9654ac26e9fa57b34f
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,7 @@ Experience Manager中不再提供Classic Commerce Integration Framework（包含
 >
 >如需如何搭配AEM Managed Service或AEM On-premise使用CIF的其他檔案，請參閱 [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
 
->[!Note]
+>[!NOTE]
 >
 >CIF Classic/Quickstart版的Commerce Integration Framework可用於AEM內部部署方案，但使用案例有限。 不過，這不是建議的解決方案。
 
