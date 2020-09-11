@@ -2,7 +2,7 @@
 title: SPA藍圖
 description: 本檔案說明任何SPA架構在AEM中實施可編輯的SPA元件時，應履行的一般、不受架構影響的合約。
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -97,7 +97,7 @@ npm模組： [@adobe/aem-react-editable-components](https://www.npmjs.com/packag
 
 #### 角度 {#angular}
 
-npm模組： [@adobe/cq-angular-editable-components](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+npm模組： [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## 主要服務與元件 {#main-services-and-components}
 
