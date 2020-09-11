@@ -2,9 +2,9 @@
 title: AEM Commerce as a Cloud Service的顯著變更
 description: 與Adobe Experience Manager 6.5相比，AEM Commerce的雲端服務顯著變更。
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: ed81d08d9775f61c0ab1e305710ac7ecf29d4229
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '624'
 ht-degree: 5%
 
 ---
@@ -21,7 +21,7 @@ Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功�
 
 ## 在Experience Manager上支援CIF Classic/Quickstart雲端服務 {#cif-classic}
 
-Experience Manager中不再提供Classic Commerce Integration Framework（包含Product Importer以匯入和儲存Experience Manager中的產品目錄），即為雲端服務。 Experience Manager不支援使用Classic CIF做為雲端服務，使用Classic CIF的專案必須取代Classic CIF實作，如 [CIF on Experience Manager的Cloud Service所述](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/cif/help/commerce-cloud/architecture.md)
+Experience Manager中不再提供Classic Commerce Integration Framework（包含Product Importer以匯入和儲存Experience Manager中的產品目錄），即為雲端服務。 Experience Manager不支援使用Classic CIF做為雲端服務，使用Classic CIF的專案必須取代Classic CIF實作，如 [CIF on Experience Manager的Cloud Service所述](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/architecture/magento.html#overview)
 
 ## CIF的部署 {#deployment}
 
@@ -33,6 +33,10 @@ Experience Manager中不再提供Classic Commerce Integration Framework（包含
 | 如何部署 [CIF Venia項目](https://github.com/adobe/aem-cif-guides-venia) | AEM套件安裝 | 透過 [Cloud Manager完成部署](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | 專案移入 [Cloud Manager Git Repository](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) ，並透過 [Cloud Manager完成部署](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/deploying/overview.html) |
 
 >[!NOTE]
+>
+>如需如何搭配AEM Managed Service或AEM On-premise使用CIF的其他檔案，請參閱 [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+
+>[!Note]
 >
 >CIF Classic/Quickstart版的Commerce Integration Framework可用於AEM內部部署方案，但使用案例有限。 不過，這不是建議的解決方案。
 
