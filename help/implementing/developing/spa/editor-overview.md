@@ -2,7 +2,7 @@
 title: SPA編輯器概述
 description: 本文提供SPA編輯器的完整概觀，以及它的運作方式，包括AEM中SPA編輯器互動的詳細工作流程。
 translation-type: tm+mt
-source-git-commit: 9b52d94b9f00be30c21dece9b34b0b56056dcbd6
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 0%
@@ -36,7 +36,7 @@ SPA的頁面元件不會透過JSP或HTL檔案提供其子元件的HTML元素。 
 
 ### 頁面模型管理 {#page-model-management}
 
-頁面模型的解析度和管理被委託給提供的庫 `PageModel` 。 SPA必須使用「頁面模型」庫，才能初始化並由SPA編輯器編寫。 透過npm間接提供給AEM Page元件的頁面模型 `cq-react-editable-components` 庫。 「頁面模型」是AEM和SPA之間的解譯器，因此必須始終存在。 編寫頁面時，必須新增其 `cq.authoring.pagemodel.messaging` 他程式庫，才能與頁面編輯器通訊。
+頁面模型的解析度和管理被委託給提供的庫 `PageModel` 。 SPA必須使用「頁面模型」庫，才能初始化並由SPA編輯器編寫。 透過npm間接提供給AEM Page元件的頁面模型 `aem-react-editable-components` 庫。 「頁面模型」是AEM和SPA之間的解譯器，因此必須始終存在。 編寫頁面時，必須新增其 `cq.authoring.pagemodel.messaging` 他程式庫，才能與頁面編輯器通訊。
 
 如果SPA頁元件繼承自頁核心元件，則有兩個選項可使客戶端庫 `cq.authoring.pagemodel.messaging` 類別可用：
 
