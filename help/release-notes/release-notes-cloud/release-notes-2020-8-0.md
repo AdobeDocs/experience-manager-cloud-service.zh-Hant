@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.8.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 雲端服務 2020.8.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: 5a3a8638bbb9fc8c0b28929bcc9c91c404d608d3
+source-git-commit: 130603301212cdb29ae7f395ebc05fc58f64686e
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1066'
 ht-degree: 6%
 
 ---
@@ -30,25 +30,24 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* 資產微型服務現在支援視訊轉碼，「處理描述檔」畫面中有新的「視訊」區段支援視訊位元速率和尺寸設定（輸出格式為MP4，含H.264 codec）。  如需詳細資訊，請參 [閱「管理視訊資產](/help/assets/manage-video-assets.md#transcode-video)」。 若需更多轉碼選項， [!DNL Dynamic Media] 可使用視訊傳送附加元件。
+* 資產微型服務現在支援視訊轉碼。 「處理設定檔」設 [!UICONTROL 定中的新區段] ，可讓您設定視訊位元速率和尺寸。 輸出格式為MP4，採用H.264編碼器。 如需詳細資訊，請參 [閱「管理視訊資產](/help/assets/manage-video-assets.md#transcode-video)」。 若需更多轉碼選項和視訊傳送，請使 [!DNL Dynamic Media] 用附加元件。
 
 * 在新部 [!DNL Experience Manager Assets] 署中，智慧型標籤功能現在預設已設定。 不需要手動與整合 [!DNL Adobe Developer Console]。 在現有部署中，管理員 [會像以前一樣設定智慧標籤](/help/assets/smart-tags-configuration.md#aio-integration) 整合。
 
 * 全新的 [資產下載體驗](/help/assets/download-assets-from-aem.md) ,
 
    * 非同步下載以進行大量下載，讓使用者不必等待。
-
    * 開發人員擴充性的全新模組化API。
 
-* [!DNL Experience Manager] 已改善資產微服務的中繼資料擷取效能。 它可提高整體資產擷取吞吐量。
+* 資產微服務的中繼資料擷取已改善效能。 它可提高整體資產擷取吞吐量。
 
-* 使用處理設定檔，使用「計算服務」產生自訂中繼資料。 請參閱使 [用處理設定檔自訂中繼資料](/help/assets/manage-metadata.md#metadata-compute-service)
+* 使用處理設定檔，使用「計算服務」產生自訂中繼資料。 請參 [閱使用處理設定檔自訂中繼資料](/help/assets/manage-metadata.md#metadata-compute-service)。
 
 * 為品牌入口網站使用者提供更簡單的下載體驗，管理員可加以設定。 請參閱 [下載體驗概觀](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
 
 * 品牌入口網站現在提供原生和高精確PDF檔案預覽。 請參閱 [檔案檢視器概觀](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
 
-* 您現在可以直接在AEM中將CDN（內容傳送網路）快取作為雲端服務(而非使用 [!DNL Dynamic Media][!DNL Dynamic Media Classic])失效，以確保在數分鐘內就能提供最新的資產，而非數小時。 請參閱 [透過動態媒體使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* 您現在可以直接在AEM中將CDN（內容傳送網路）快取作為 [!DNL Dynamic Media] 雲端服務失效(而非使用 [!DNL Dynamic Media Classic])。 它可確保在數分鐘內提供最新資產，而非數小時。 請參 [閱透過動態媒體使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)。
 
 * 在中的使用者介面控制項、導覽、瀏覽和搜尋體驗中新增了增強的協助工具支援 [!DNL Assets]。
 
@@ -57,7 +56,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
    * 搜索過濾器部分中的收合元素被解釋為標準可展開收合元。 <!-- via CQ-4273103 -->
    * 將標籤套用至資產時，對話方塊會將標籤顯示為樹狀元素。 ARIA屬性會適當套用至樹狀元素，讓這些元素現在可存取。 <!-- via CQ-4272964 -->
 
-* [!DNL AEM Desktop app] 2.0.3版現已推出，可改善與 [!DNL AEM] 6.5.5的相容性 [!DNL Service Pack] ，並更新用戶端作業系統相容性清單(移除 [!DNL Windows] 7和10.14 [!DNL MacOS] 之前的版本)。
+* [!DNL AEM Desktop app] 2.0.3版現已推出。 它改善了與 [!DNL Experience Manager] 6.5.5 Service Pack的相容性，並具有更新的客戶端作業系統相容性清單。 [!DNL Windows] 不支 [!DNL macOS] 援7和10.14之前的版本。
 
 ### 修正於 [!DNL Assets] {#bugs-fixed}
 
