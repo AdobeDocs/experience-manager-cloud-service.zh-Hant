@@ -2,10 +2,10 @@
 title: AEM中的雲端服務備份與還原
 description: 'AEM中的雲端服務備份與還原 '
 translation-type: tm+mt
-source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+source-git-commit: c3af507716ef60541ecca8dafb797651e8ece9d3
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 1%
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 # AEM中的雲端服務備份與還原
 
 如果發生內容或資料損毀，AEM即雲端服務(AEM)可將客戶的完整應用程式（程式碼和內容）還原至過去七天內預先設定的特定時間，以取代生產中的內容。
-如果客戶的部署（即所部署的應用程式碼已中斷或發生故障），則最好修正它並轉到新版本，而不是從備份中恢復它。
+如果客戶的部署（即所部署的應用程式碼已中斷或發生故障），則最好修正它並轉到新版本，而不是從備份中恢復它。 備份的執行方式不影響應用程式的運行時效能。
 
 >[!CAUTION]
 >
