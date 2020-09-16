@@ -1,11 +1,11 @@
 ---
 title: 使用 Cloud Readiness Analyzer
 description: 使用 Cloud Readiness Analyzer
-translation-type: ht
-source-git-commit: a0e58c626f94b778017f700426e960428b657806
-workflow-type: ht
-source-wordcount: '1871'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ba2105d389617fe0c7e26642799b3a7dd3adb8a1
+workflow-type: tm+mt
+source-wordcount: '2091'
+ht-degree: 77%
 
 ---
 
@@ -146,29 +146,33 @@ HTTP 介面可用於多種方法中。
 
 此介面使用下列 HTTP 標題：
 
-* `Cache-Control: max-age=<seconds>`：指定快取時效性存留期 (以秒為單位)。(請參閱 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。)
-* `Prefer: respond-async`：指出伺服器應以非同步方式回應。(請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。)
+* `Cache-Control: max-age=<seconds>`:以秒為單位指定快取新鮮度存留期。 (請參閱 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。)
+* `Prefer: respond-async`:指定伺服器應非同步響應。 (請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。)
+* `Prefer: return=minimal`:指定伺服器應返回最小響應。 (請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)。)
 
 在不方便使用 HTTP 標題時，可權衡使用下列 HTTP 查詢參數：
 
-* `max-age` (數字，選用)：指定快取時效性存留期 (以秒為單位)。此數字必須大於或等於 0。預設的時效性存留期為 86400 秒，這表示在沒有此參數或對應標頭的情況下，有效快取將在 24 小時內用來回應要求，其後則必須重新產生報表。使用 `max-age=0` 將會強制清除快取，並起始重新產生報表的作業。處理完此要求後，時效性存留期會隨即重設為先前的非零值。
-* `respond-async` (布林值，選用)：指定應以非同步方式提供回應。在快取已過期時使用 `respond-async=true`，會使伺服器逕行傳回 `202 Accepted, processing cache` 的回應，而不等待報表產生和快取重新整理。如果快取為最新狀態，此參數就沒有效用。預設值為 `false`，這表示在沒有此參數或對應標頭的情況下，伺服器將會同步回應，而這可能需要相當長的時間，且需要調整 HTTP 用戶端的最大回應時間。
+* `max-age` （數字、可選）:以秒為單位指定快取新鮮度存留期。 此數字必須大於或等於 0。預設新鮮度存留期為86400秒。 若沒有此參數或對應的標題，則會使用新的快取來提供24小時的請求，此時必須重新產生快取。 使 `max-age=0` 用將強制清除快取，並使用新產生的快取的先前非零新鮮度期限，開始重新產生報表。
+* `respond-async` （布林值，可選）:指定應非同步提供響應。 Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. 如果快取為最新狀態，此參數就沒有效用。The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
+* `may-refresh-cache` （布林值，可選）:指定當當前快取為空、過時或即將過時時，伺服器可以響應請求刷新快取。 如 `may-refresh-cache=true`果或未指定，則伺服器可以啟動將調用模式檢測器並刷新快取的後台任務。 如 `may-refresh-cache=false` 果快取為空或過時，伺服器將不會啟動原本會執行的任何重新整理工作，此時報表會為空。 任何已在處理中的刷新任務都將不受此參數的影響。
+* `return-minimal` （布林值，可選）:指定來自伺服器的回應應僅包含包含進度指示和JSON格式快取狀態的狀態。 如 `return-minimal=true`果，則響應主體將限制為狀態對象。 如 `return-minimal=false`果或未指定，則會提供完整回應。
+* `log-findings` （布林值，可選）:指定伺服器在首次構建或刷新快取時應記錄其內容。 快取中的每個尋找都會記錄為JSON字串。 只有在請求產生新快取 `log-findings=true` 時，才會發生此記錄。
 
 當 HTTP 標頭和對應的查詢參數均存在時，將會以查詢參數優先。
 
 要透過 HTTP 介面開始產生報表，有個簡單的方式是使用下列命令：
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`。
 
-在提出要求後，用戶端無須維持作用中狀態，即可產生報表。報表產生作業可以由一個用戶端使用 HTTP GET 要求來起始，且報表產生後，可由另一個用戶端從快取加以檢視，或以 AEM 使用者介面中的 CSV 工具檢視。
+在提出要求後，用戶端無須維持作用中狀態，即可產生報表。報表產生可以由一個用戶端使用HTTP GET請求啟動，報表產生後，就可以透過另一個用戶端的快取或AEM使用者介面中的CRA工具從快取中檢視。
 
 ### 回應 {#http-responses}
 
 可能的回應值如下：
 
-* `200 OK`：此回應包含「模式偵測器」在快取的時效性存留期內產生的結果。
-* `202 Accepted, processing cache`：針對非同步回應而提供，用以指出快取已過時且正在重新整理。
-* `400 Bad Request`：表示要求發生錯誤。「問題詳細資料」格式的訊息 (請參閱 [RFC 7807](https://tools.ietf.org/html/rfc7807)) 可提供更多詳細資料。
-* `401 Unauthorized`：要求未獲授權。
+* `200 OK`:指出回應包含來自模式偵測器的發現，這些發現是在快取的新鮮期內產生的。
+* `202 Accepted`:用於指示快取過時。 當且 `respond-async=true` 此 `may-refresh-cache=true` 回應表示正在進行刷新任務。 當此 `may-refresh-cache=false` 回應僅表示快取過時。
+* `400 Bad Request`：表示要求發生錯誤。A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
+* `401 Unauthorized`:表示請求未獲得授權。
 * `500 Internal Server Error`：表示發生了內部伺服器錯誤。「問題詳細資料」格式的訊息可提供更多詳細資料。
 * `503 Service Unavailable`：表示伺服器正在處理另一個回應，而無法及時處理此要求。只有在提出同步要求時，才可能發生這種情況。「問題詳細資料」格式的訊息可提供更多詳細資料。
 
