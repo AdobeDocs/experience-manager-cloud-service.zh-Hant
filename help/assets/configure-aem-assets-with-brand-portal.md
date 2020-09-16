@@ -3,9 +3,9 @@ title: 使用品牌入口網站將AEM資產設定為雲端服務
 description: 使用 Brand Portal 設定 AEM Assets.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 96a084dd0e8f250b343b616573aeedb2b83682e4
+source-git-commit: ad1f1e8c0ba5409cd645489263f349b29f080d27
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1647'
 ht-degree: 14%
 
 ---
@@ -275,7 +275,7 @@ IMS 設定包括兩個步驟：
 
    ![](assets/test-bpconfig4.png)
 
-   A message appears at the bottom of the page that your *test package is successfully delivered*.
+   出現一則訊息，指出您 *的測試套件已成功傳送*。
 
    >[!NOTE]
    >
