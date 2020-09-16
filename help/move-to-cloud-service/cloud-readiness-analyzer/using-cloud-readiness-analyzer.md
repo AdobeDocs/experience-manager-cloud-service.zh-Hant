@@ -2,10 +2,10 @@
 title: 使用 Cloud Readiness Analyzer
 description: 使用 Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: ba2105d389617fe0c7e26642799b3a7dd3adb8a1
+source-git-commit: f1127461504da5e0b4cdb6220143e535439b5858
 workflow-type: tm+mt
-source-wordcount: '2091'
-ht-degree: 77%
+source-wordcount: '2189'
+ht-degree: 71%
 
 ---
 
@@ -51,19 +51,37 @@ ht-degree: 77%
 
    ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. 在您按一下 **Cloud Readiness Analyzer** 後，此工具就會開始產生報表，並在報表可用時加以顯示。
+1. 按一下「 **產生報表** 」以執行Cloud Readiness Analyzer。
 
-   >[!NOTE]
-   >您必須向下捲動頁面才能檢視完整報表。
+   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report.png)
 
-   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
+1. 當CRA產生報表時，您可以在螢幕上看到工具的進度。 它顯示分析的項目數，也顯示找到的發現數。
 
-1. CRA 報表產生並顯示後，您可以選擇按一下 **CSV** 下載逗點分隔值 (CSV) 格式的報表，如下圖所示。
+   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report-1.png)
 
-   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
+
+1. 生成CRA報告後，報告將以按查找類型和重要性級別組織的表格格式顯示摘要和查找結果數。 若要取得有關特定尋找的詳細資訊，您可以按一下表格中與尋找類型對應的數字。
+
+   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+
+上述動作會自動捲動至報表中該尋找的位置。
+
+![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+
+1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+
+   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
 
    >[!NOTE]
    >您可以按一下&#x200B;**「重新整理報表」**，以強制 CRA 清除其快取並重新產生報表。
+
+   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+
+   >[!NOTE]
+   >在重新產生報表時，會以完成百分比顯示進度，如下圖所示。
+
+   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh-1.png)
+
 
 ### Adobe Experience Manager 6.2 和 6.1 {#aem-specific-versions}
 
