@@ -2,10 +2,10 @@
 title: 使用 Cloud Readiness Analyzer
 description: 使用 Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: f1127461504da5e0b4cdb6220143e535439b5858
+source-git-commit: b0ea504fe9b1f2d8eadb9fd263c983dae090cd1a
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 71%
+source-wordcount: '2209'
+ht-degree: 70%
 
 ---
 
@@ -106,7 +106,7 @@ Cloud Readiness Analyzer 工具限用於 Adobe Experience Manager 6.2 中，可�
 * **系統概覽**：CRA 執行所在之 AEM 系統的相關資訊。
 * **結果類別**：分別處理一或多個同類結果的多個區段。每個區段各包含下列項目：類別名稱、子類型、結果計數和重要性、摘要、類別文件的連結，以及個別結果資訊。
 
-系統會為每個結果指派一個重要性層級，以指出動作的概略優先順序。
+系統會為每個結果指派一個重要性層級，以指出動作的概略優先順序。若要進一步瞭解每個「尋找類別」，請參閱「模式偵測 [器類別」](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)
 
 請參考下表以了解重要性層級：
 
