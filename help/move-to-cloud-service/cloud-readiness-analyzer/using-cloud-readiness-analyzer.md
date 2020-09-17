@@ -2,7 +2,7 @@
 title: 使用 Cloud Readiness Analyzer
 description: 使用 Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: b15969e7cdbd8c3affc6a51b0bc0b0f3f5fdb0f0
+source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 70%
@@ -62,20 +62,20 @@ ht-degree: 70%
 
 1. 生成CRA報告後，報告將以按查找類型和重要性級別組織的表格格式顯示摘要和查找結果數。 若要取得有關特定尋找的詳細資訊，您可以按一下表格中與尋找類型對應的數字。
 
-   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-4.png)
 
    上述動作會自動捲動至報表中該尋找的位置。
 
-   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
-   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
+   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-6.png)
 
    >[!NOTE]
    >您可以按一下&#x200B;**「重新整理報表」**，以強制 CRA 清除其快取並重新產生報表。
 
-   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+   ![影像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-7.png)
 
    >[!NOTE]
    >在重新產生報表時，會以完成百分比顯示進度，如下圖所示。
