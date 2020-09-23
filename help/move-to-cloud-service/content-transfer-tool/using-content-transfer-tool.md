@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
+source-git-commit: 5627904800600386d186fdf9123cacbb55c57a49
 workflow-type: tm+mt
-source-wordcount: '1640'
-ht-degree: 95%
+source-wordcount: '1667'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 * 「內容轉移工具」的最低系統需求為 AEM 6.3 + 和 JAVA 8。如果您使用較舊版本的 AEM，您必須將內容存放庫升級至 AEM 6.5 才能使用「內容轉移工具」。
 
-* 內容傳輸工具可與下列類型的資料儲存區搭配使用：檔案資料儲存、S3資料儲存和共用S3資料儲存。 它目前不支援Azure Blob Store資料儲存區。
+* 內容傳輸工具可與下列類型的資料儲存區搭配使用：檔案資料儲存、S3資料儲存、共用S3資料儲存和Azure Blob儲存資料儲存。
 
 * 如果您使用&#x200B;*沙箱環境*，請確定您的環境已升級至 2020 年 6 月 10 日或之後發行的版本。如果您使用&#x200B;*生產環境*，則會自動更新。
 
@@ -47,16 +47,16 @@ ht-degree: 95%
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
-1. 按一下&#x200B;**建立移轉集**&#x200B;以建立新的移轉集。**內容移轉集詳細資訊**&#x200B;隨即顯示。
+1. 當您建立第一個移轉集時，會顯示下列主控台。 按一下&#x200B;**建立移轉集**&#x200B;以建立新的移轉集。
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
 
    >[!NOTE]
-   >您將在以下畫面中看見現有移轉集及其目前狀態。
-
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   >如果您有現有的移轉集，主控台將顯示現有移轉集的清單，其目前狀態為。
 
 1. 請依照下方敘述，填入&#x200B;**內容移轉集詳細資訊**&#x200B;畫面中的欄位。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content-3.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
 
 
    1. **名稱**：輸入移轉集名稱。
@@ -72,13 +72,13 @@ ht-degree: 95%
    1. **存取 Token**：輸入存取 Token。
 
       >[!NOTE]
-      >您可以導覽至 `/libs/granite/migration/token.json`，從製作例項中擷取存取 Token。存取 Token 可從雲端服務製作例項擷取。
+      >您可以使用「開啟存取Token」按鈕來 **擷取存取Token** 。 您必須確定您屬於目標Cloud服務例項中的AEM管理員群組。
 
    1. **參數**：選取以下參數以建立移轉集：
 
       1. **包含版本**：視需要選取。
 
-      1. **欲包含的路徑**：使用路徑瀏覽器來選取需要移轉的路徑。
+      1. **欲包含的路徑**：使用路徑瀏覽器來選取需要移轉的路徑。路徑選擇器可通過輸入或選擇接受輸入。
 
          >[!IMPORTANT]
          >建立移轉集時會限制下列路徑：
@@ -92,43 +92,40 @@ ht-degree: 95%
 
 1. 您的移轉集會顯示在&#x200B;*綜覽*&#x200B;頁面中。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   *「綜覽」*&#x200B;頁面中將顯示此畫面中上的所有現有移轉集，以及它們的目前狀態與狀態資訊。
+   *「綜覽」*&#x200B;頁面中將顯示此畫面中上的所有現有移轉集，以及它們的目前狀態與狀態資訊。您可能會看到以下說明的部分圖示。
 
    * *紅色雲朵*&#x200B;表示您無法完成提取程序。
    * *綠色雲朵*&#x200B;表示您可以完成提取程序。
    * *黃色圖示*&#x200B;表示您並未建立現有移轉集，且該特定移轉集是由相同例項中的其他使用者所建立。
 
-1. 從「綜覽」頁面選取移轉集，然後按一下&#x200B;**屬性**&#x200B;以檢視或編輯移轉集屬性。
+1. 從「綜覽」頁面選取移轉集，然後按一下&#x200B;**屬性**&#x200B;以檢視或編輯移轉集屬性。編輯屬性時，無法變更容器名稱或服務URL。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img6.png)
+
 
 ### 內容轉移中的提取程序 {#extraction-process}
 
 請依照下列步驟，從「內容轉移工具」中提取您的移轉集：
 
-1. 從&#x200B;*「綜覽」*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**提取**&#x200B;即可開始提取。
+1. 從&#x200B;*「綜覽」*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**提取**&#x200B;即可開始提取。The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. **移轉集擷取**&#x200B;對話框隨即顯示，請按一下&#x200B;**提取**&#x200B;以完成提取階段。
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
    >[!NOTE]
    >您可以選擇在提取階段中覆寫預備容器。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-2.png)
 
-1. 現在，**提取**&#x200B;欄位將針對正在進行的提取程序顯示&#x200B;**執行中**&#x200B;狀態。
+1. 現 **在，EXTRACTION** 欄位顯示 **RUNNING** 狀態，以指示提取正在進行。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-3.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
    提取一旦完成，移轉集的狀態會更新為&#x200B;**已完成**，而&#x200B;**資訊**&#x200B;欄位下會顯示一個&#x200B;*實心綠色*&#x200B;的雲朵圖示。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/10-extraction-complete.png)
 
    >[!NOTE]
-   >您必須重新整理頁面才能檢視更新後的狀態。
+   >UI有自動重新載入功能，每30秒重新載入一次概述頁面。
    >提取階段開始時將建立寫入鎖定，並在 *60 秒*&#x200B;後釋放。因此，如果提取停止，則需等待一分鐘才能釋放鎖定並重新開始提取。
 
 #### 追加提取 {#top-up-extraction-process}
@@ -140,41 +137,25 @@ ht-degree: 95%
 
 提取程序一旦完成，您即可使用追加提取方法來轉移差異內容。請遵循下列步驟：
 
-1. 導覽至&#x200B;*綜覽*&#x200B;頁面，並選取您要執行追加提取的移轉集。
-
-1. 按一下&#x200B;**提取**&#x200B;即可開始追加提取。
-
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. **移轉集提取**&#x200B;對話框隨即顯示。
+1. 導覽至&#x200B;*綜覽*&#x200B;頁面，並選取您要執行追加提取的移轉集。按一下&#x200B;**提取**&#x200B;即可開始追加提取。**移轉集提取**&#x200B;對話框隨即顯示。
 
    >[!IMPORTANT]
    >您必須停用&#x200B;**在提取期間覆寫預備容器**選項。
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-topup-1.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### 內容轉移中的擷取程序 {#ingestion-process}
 
 請依照下列步驟，從「內容轉移工具」中擷取您的移轉集：
 
-1. 從&#x200B;*綜覽*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**擷取**&#x200B;即可開始擷取。
+1. 從&#x200B;*綜覽*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**擷取**&#x200B;即可開始擷取。**移轉集擷取**&#x200B;對話框隨即顯示。Click on **Ingest** to start the ingestion phase. 為了示範，已停用&#x200B;**將內容擷取至製作例項**。您可以同時將內容擷取至「製作」和「發佈」。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. **移轉集擷取**&#x200B;對話框隨即顯示。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-2.png)
+1. 擷取完成後，「發佈擷取」欄位中的 **狀態會更新** ，以 **便完成**。
 
-   為了示範，已停用&#x200B;**將內容擷取至製作例項**。您可以同時將內容擷取至「製作」和「發佈」。
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-3.png)
-
-   按一下&#x200B;**擷取**&#x200B;以完成擷取階段。
-
-1. 擷取一旦完成，**製作擷取**&#x200B;欄位中的狀態會更新為&#x200B;**已完成**，而&#x200B;**資訊**欄位下會顯示一個實心綠色的雲朵圖示。
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-4.png)
-
-   >[!NOTE]
-   > 您必須重新整理頁面才能檢視更新後的狀態。
 
 #### 追加擷取 {#top-up-ingestion-process}
 
@@ -185,17 +166,11 @@ ht-degree: 95%
 
 擷取程序一旦完成，您即可使用追加擷取方法來轉移差異內容。請遵循下列步驟：
 
-1. 導覽至&#x200B;*綜覽*&#x200B;頁面，並選取您要執行追加擷取的移轉集。
+1. 導覽至&#x200B;*綜覽*&#x200B;頁面，並選取您要執行追加擷取的移轉集。按一下&#x200B;**擷取**&#x200B;即可開始追加提取。**移轉集擷取**&#x200B;對話框隨即顯示。
 
-1. 按一下&#x200B;**擷取**&#x200B;即可開始追加提取。
-
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
-
-1. **移轉集擷取**&#x200B;對話框隨即顯示。
-
-   >[!NOTE]
-   >您應停用&#x200B;*「擦去」*選項，以防止從先前的擷取活動中刪除現有內容。
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-topup-1.png)
+   >[!IMPORTANT]
+   >您應停用「擷取 **前先擦除Cloud例項上的現有內容** 」選項，以防止從先前的擷取活動刪除現有內容。
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### 檢視移轉集記錄 {#viewing-logs-migration-set}
 
