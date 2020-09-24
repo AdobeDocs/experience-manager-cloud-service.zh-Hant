@@ -2,10 +2,10 @@
 title: 設定動態媒體雲端服務
 description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
 translation-type: tm+mt
-source-git-commit: ab9255dd28f1c20f1085810e63f0b56e30fa8c5a
+source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
 workflow-type: tm+mt
-source-wordcount: '5122'
-ht-degree: 8%
+source-wordcount: '5599'
+ht-degree: 7%
 
 ---
 
@@ -46,53 +46,43 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## 設定動態媒體雲端服務 {#configuring-dynamic-media-cloud-services}
+## 在雲端服務中建立新的動態媒體設定 {#configuring-dynamic-media-cloud-services}
 
-**在您設定Dynamic Media Cloud服務之前**:在您收到具有動態媒體憑證的布建電子郵件後， [您必須登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud Service。
-
-若要設定動態媒體雲端服務：
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. 在AEM中，點選AEM標誌以存取全域導覽主控台。
-1. 在控制台的左側，在「工具」標 **[!UICONTROL 題下]** ，點 **[!UICONTROL 選「雲端服務>動態媒體設定」]**。
+1. On the left side of the console, tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. 在「動態媒體設定瀏覽器」頁面的左側窗格中，點選 **[!UICONTROL global]** (不點選或選取全域左側的資料夾圖示 ****)，然後點選「 **[!UICONTROL 建立]**」。
-1. 在「建立動態媒體設定」頁面上，輸入標題、動態媒體帳戶電子郵件地址、密碼，然後選取您的地區。 Adobe會在布建電子郵件中提供給您。 如果您未收到此訊息，請聯絡支援部門。
+1. 在「建 **[!UICONTROL 立動態媒體設定]** 」頁面上，輸入標題、動態媒體帳戶電子郵件地址、密碼，然後選取您的地區。 Adobe會在布建電子郵件中提供給您。 如果您未收到此訊息，請聯絡支援部門。
 1. Click **[!UICONTROL Connect to Dynamic Media]**.
+1. 在「更 **[!UICONTROL 改密碼]** 」對話框的「新 **** 密碼」欄位中，輸入包含8-25個字元的新密碼。 密碼至少必須包含下列各項之一：
 
-   >[!NOTE]
-   >
-   >在您收到具有動態媒體憑證的布建電子郵件後，請 [登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud服務。
+   * 大寫字母
+   * 小寫字母
+   * 數量
+   * 特殊字元： `# $ & . - _ : { }`
+
+   請注意，「目 **[!UICONTROL 前密碼]** 」欄位是特意預先填入並隱藏在互動中。
+
+   如有必要，您可以點選密碼眼睛圖示以顯示密碼，以檢查您輸入或重新輸入的密碼的拼字。 再次點選圖示以隱藏密碼。
+
+1. 在「重複 **[!UICONTROL 密碼]** 」欄位中，重新輸入新密碼，然後點選「 **[!UICONTROL 完成」。]**
+
+   當您點選「建立動態媒體設定」頁 **[!UICONTROL 面右上角的]** 「儲存」時，會 **[!UICONTROL 儲存新密碼]** 。
+
+   如果您在「 **[!UICONTROL 變更密碼]** 」對話方塊中點選「取消」 ******** ，在點選「儲存」以儲存新建立的動態媒體設定時，仍須輸入新密碼。
+
+   另請參 [閱將密碼變更為動態媒體](#change-dm-password)。
 
 1. 連接成功後，可以設定以下內容：
 
-* **[!UICONTROL 公司]** -動態媒體帳戶的名稱。 您可能會針對不同子品牌、部門或不同的測試／生產環境擁有多個動態媒體帳戶。
-
-* **[!UICONTROL 公司根資料夾路徑]**
-
-* **[!UICONTROL 發佈資產]** -您可以從下列三個選項中選擇：
-
-* **[!UICONTROL 立即]** ：當資產上傳時，系統會立即收錄資產並提供URL/內嵌。 發佈資產不需要使用者干預。
-
-* **[!UICONTROL 啟動後]** ，表示您必須先明確發佈資產，才能提供URL/內嵌連結。
-
-* **[!UICONTROL 選擇性發佈]** ：表示資產會自動發佈，僅供安全預覽使用，而且可明確發佈至AEM，而不需發佈至DMS7以便在公共網域中傳送。 未來，Adobe將增強此選項，將資產發佈至AEM，並將資產發佈至Dynamic Media，彼此互斥。 也就是說，您可以將資產發佈到DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您可以在AEM中獨家發佈資產以進行預覽；這些相同的資產不會發佈在DMS7中，以便在公共域中交付。
-
-* **[!UICONTROL 安全預覽伺服器]** -可讓您指定安全轉譯預覽伺服器的URL路徑。 也就是說，在產生轉譯後，AEM可以安全地存取和預覽遠端的「動態媒體」轉譯（不會將二進位檔傳回至AEM例項）。
-除非您有特殊安排可使用您公司的伺服器或特殊伺服器，否則Adobe Systems建議您依指定的方式保留此設定。
-
-* **[!UICONTROL 同步所有內容]** -預設為選取。 如果您想要選擇性地包含或排除同步至動態媒體的資產，請取消選取此選項。 取消選取此選項可讓您從下列兩種動態媒體同步模式中選擇：
-
-* **[!UICONTROL Dynamic Media 同步處理模式]**
-
-* **[!UICONTROL 預設啟用]** -預設情況下，配置將應用於所有資料夾，除非您專門為排除標籤資料夾。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-
-* **[!UICONTROL 預設禁用]** -在您明確標籤選定資料夾以同步到動態媒體之前，配置不會應用於任何資料夾。
-若要將選取的檔案夾標示為同步至動態媒體，請開啟資產檔案夾的「屬性」頁面。Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
-
-* **[!UICONTROL 繼承]** -資料夾上沒有明確的同步值；資料夾會從其祖先資料夾或雲端設定的預設模式繼承同步值。 繼承的詳細狀態會透過工具提示顯示。
-
-* **[!UICONTROL 啟用子資料夾]** -包含此子樹狀結構中的所有項目，以同步至動態媒體。 資料夾特定的設定會覆寫雲端設定中的預設模式。
-
-* **[!UICONTROL 子資料夾停用]** -排除此子樹狀結構中的所有項目，以免同步至動態媒體。
+   | 屬性 | 說明 |
+   |---|---|
+   | 公司 | 動態媒體帳戶的名稱。 您可能會針對不同子品牌、部門或不同的測試／生產環境擁有多個動態媒體帳戶。 |
+   | 公司根資料夾路徑 | 您公司的根資料夾路徑。 |
+   | 發佈資產 | 您可以從下列三個選項中選擇：<br>**[!UICONTROL 立即&#x200B;]**:上傳資產時，系統會收錄資產並立即提供URL/內嵌。 發佈資產不需要使用者干預。<br>**[!UICONTROL 啟動後]**:您必須先明確發佈資產，才能提供URL/內嵌連結。<br>**[!UICONTROL 選擇性發佈&#x200B;]**:資產會自動發佈，僅供安全預覽使用，而且可明確發佈至AEM，而不需發佈至DMS7以便在公用網域中傳送。 未來，Adobe將增強此選項，將資產發佈至AEM，並將資產發佈至Dynamic Media，彼此互斥。 也就是說，您可以將資產發佈到DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您可以在AEM中獨家發佈資產以進行預覽；這些相同的資產不會發佈在DMS7中，以便在公共域中交付。 |
+   | 安全預覽伺服器 | 可讓您指定安全轉譯預覽伺服器的URL路徑。 也就是說，在產生轉譯後，AEM可以安全地存取和預覽遠端的「動態媒體」轉譯（不會將二進位檔傳回至AEM例項）。<br>除非您有特殊安排可使用您公司的伺服器或特殊伺服器，否則Adobe Systems建議您依指定的方式保留此設定。 |
+   | 同步處理所有內容 | 依預設選取。 如果您想要選擇性地包含或排除同步至動態媒體的資產，請取消選取此選項。 取消選取此選項可讓您從下列兩種動態媒體同步模式中選擇：動態媒體同步<br>**[!UICONTROL 模式預]**<br>**[!UICONTROL 設啟用&#x200B;]**:預設情況下，配置將應用於所有資料夾，除非您專門標籤要排除的資料夾。<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 依預設停用]**:在您明確標示選定資料夾以同步至動態媒體之前，此設定不會套用至任何資料夾。<br>若要將選取的檔案夾標示為同步至動態媒體，請選取資產檔案夾，然後在工具列上點選「屬 **[!UICONTROL 性」]**。 在「詳 **[!UICONTROL 細資訊]** 」標籤的「動態媒體同步模式 **** 」下拉式清單中，從下列三個選項中選擇。 完成後，點選「儲 **[!UICONTROL 存」]**。 *記住：如果您選取「先同步所有內容」，這三個選&#x200B;**項將無法使用**。* 另請參閱 [在動態媒體的資料夾層級使用選擇性發佈。](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 繼承&#x200B;]**:資料夾上沒有明確的同步值；資料夾會從其祖先資料夾或雲端設定的預設模式繼承同步值。 繼承的詳細狀態會透過工具提示顯示。<br>**[!UICONTROL 啟用子資料夾]**:在此子樹狀結構中包含所有項目，以便同步至動態媒體。 資料夾特定的設定會覆寫雲端設定中的預設模式。<br>**[!UICONTROL 子資料夾禁用&#x200B;]**:排除此子樹狀結構中的所有項目，以免同步至動態媒體。 |
 
    >[!NOTE]
    >
@@ -101,10 +91,19 @@ To migrate any custom viewer presets and configurations that you have created fr
    >
    >啟動資產後，任何更新都會立即即時發佈至S7傳送。
 
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. 點選「 **[!UICONTROL 儲存]**」。
-1. 若要在動態媒體內容發佈之前安全地預覽，您必須「允許列出」AEM作者例項，才能連線至動態媒體：
+1. 點選「 **[!UICONTROL 儲存]**」。 新的動態媒體密碼和設定已儲存。 如果您改為點 **[!UICONTROL 選「取消]** 」，則不會發生密碼更新。
+1. 在「設 **[!UICONTROL 定動態媒體]** 」對話方塊中，點選「 **[!UICONTROL 確定]** 」開始設定。
+
+   >[!IMPORTANT]
+   >
+   >當新的動態媒體設定完成設定時，您會在AEM的「收件匣」中收到狀態通知。
+   >
+   >此收件箱通知會通知您配置是否成功。
+   > 如需 [詳細資訊，請參閱疑難排解新的動態媒體](#troubleshoot-dm-config)[設定和您的收件匣](/help/sites-cloud/authoring/getting-started/inbox.md) 。
+
+1. 若要在動態媒體內容發佈之前安全地預覽，您必須「允許列出」AEM作者例項，才能連線至動態媒體。 若要設定此設定，請執行下列動作：
 
    * 登入您的Dynamic Media Classic帳戶： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). 您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
    * 在頁面右上方的導覽列上，按一下「設定>應用程 **[!UICONTROL 式設定>發佈設定>影像伺服器」]**。
@@ -117,6 +116,58 @@ To migrate any custom viewer presets and configurations that you have created fr
 您現在已完成基本配置；您已準備好使用動態媒體。
 
 如果您想要進一步自訂配置，您可選擇在動態媒體中設定進階設定 [下完成任何工作](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)。
+
+### 疑難排解新的動態媒體設定 {#troubleshoot-dm-config}
+
+當新的動態媒體設定完成設定時，您會在AEM的「收件匣」中收到狀態通知。 此通知會通知您配置是否成功，如下列收件箱中的相應影像所示。
+
+![aeminboxsucce](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
+
+![aeminbox失敗](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
+
+另請參閱 [收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)。
+
+**若要疑難排解新的動態媒體設定**
+
+1. 在AEM頁面的右上角附近，點選鈴狀圖示，然後點選「全部檢 **[!UICONTROL 視」]**。
+1. 在「收件匣」頁面上，點選成功通知以讀取設定狀態和記錄檔的概述。
+
+   如果設定失敗，請點選類似下列螢幕擷取的失敗通知。
+
+   ![dmsetup失敗](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
+
+1. 在 **[!UICONTROL DMSETUP頁]** ，查看說明故障的配置詳細資訊。 尤其要注意任何錯誤資訊或錯誤代碼。 您需要聯絡Adobe Care以取得這些資訊。
+
+   ![dmsetuppage](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+
+### 將密碼變更為動態媒體 {#change-dm-password}
+
+動態媒體中的密碼有效期會從目前的系統日期設定為100年。
+
+密碼至少必須包含下列各項之一：
+
+* 大寫字母
+* 小寫字母
+* 數量
+* 特殊字元： `# $ & . - _ : { }`
+
+如有必要，您可以點選密碼眼睛圖示以顯示密碼，以檢查您輸入或重新輸入的密碼的拼字。 再次點選圖示以隱藏密碼。
+
+當您點選「編輯動態媒體設定」頁 **[!UICONTROL 面右上角的]** 「儲存」時，會 **[!UICONTROL 儲存變更的密碼]** 。
+
+1. 在AEM中，點選AEM標誌以存取全域導覽主控台。
+1. On the left side of the console, tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
+1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Edit.]**
+1. 在「編 **[!UICONTROL 輯動態媒體設定]********[!UICONTROL 」頁面的「密碼」欄位正下方，點選「變更密碼」。]**
+1. 在「更 **[!UICONTROL 改密碼]** 」對話框中，執行下列操作：
+
+   * 在「新 **[!UICONTROL 密碼]** 」欄位中，輸入新密碼。
+
+      請注意，「目 **[!UICONTROL 前密碼]** 」欄位是特意預先填入並隱藏在互動中。
+
+   * 在「重複 **[!UICONTROL 密碼]** 」欄位中，重新輸入新密碼，然後點選「 **[!UICONTROL 完成」。]**
+
+1. 在「編輯動態媒體設定」頁 **[!UICONTROL 面的右上角]** ，點選「 **[!UICONTROL 儲存]**」，然後點選「 **[!UICONTROL 確定」。]**
 
 ## （可選）在動態媒體中設定進階設定{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
@@ -182,13 +233,14 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. [使用布建期間提供的憑證](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) ，登入Dynamic Media Classic。 定位至「 **[!UICONTROL 設定」>「應用程式設定」]**。
 1. 展開「發 **[!UICONTROL 布設定]** 」區域並選 **[!UICONTROL 取「影像伺服器」]**。設定發 **[!UICONTROL 布例項的預設值]** ，將「發佈內容」設 **** 定為「影像伺服」。
 1. 捲動至您需要變更的屬性，例如「色彩管理屬性」區 **[!UICONTROL 域中的屬性]** 。
+您可以設定下列色彩校正屬性：
 
-   您可以設定下列色彩校正屬性：
-
-   **[!UICONTROL CMYK預設色域]** -預設CMYK色彩描述檔的名稱。
-   **[!UICONTROL 灰階預設色域]** -預設灰階色彩描述檔的名稱。
-   **[!UICONTROL RGB預設顏色空間]** -預設RGB顏色配置檔案的名稱。
-   **[!UICONTROL 顏色轉換渲染方式]** -指定渲染方式。 Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe建議 **[!UICONTROL 以相對]** （預設值）。
+   | 屬性 | 說明 |
+   |---|---|
+   | CMYK預設色域 | 預設CMYK色彩描述檔的名稱。 |
+   | 灰階預設色域 | 預設灰色描述檔的名稱。 |
+   | RGB預設色域 | 預設RGB顏色配置檔案的名稱。 |
+   | 色彩轉換演算方式 | 指定渲染方式。 Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe建議 **[!UICONTROL 以相對]** （預設值）。 |
 
 1. 點選「 **[!UICONTROL 儲存]**」。
 
@@ -474,7 +526,7 @@ Adobe建議對PDF、Postscript和PSD檔案使用下列「已調整」的工作�
 | Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-若要更新這些參數，請遵循啟用 [MIME類型型資產／動態媒體經典上傳工作參數支援中的步驟](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)。
+<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
 
 #### 更新Granite瞬態工作流隊列 {#updating-the-granite-transient-workflow-queue}
 
