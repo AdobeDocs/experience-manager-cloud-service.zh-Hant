@@ -2,7 +2,7 @@
 title: 設定動態媒體雲端服務
 description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
 translation-type: tm+mt
-source-git-commit: 4b967e8b738171f0997df7cd433e1d7a418751e8
+source-git-commit: 500d8795176fa21f79a8d67954fc9352b9a349f8
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 8%
@@ -155,7 +155,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 #### 配置應用程式常規設定 {#configuring-application-general-settings}
 
-若要開啟「應用程式一般設定」頁面，請在Dynamic Media Classic全域導覽列中，按一下「設定>應 **[!UICONTROL 用程式設定>一般設定」]**。
+若要開啟「應用程式一般設定」頁面，請在Dynamic Media Classic全域導覽列中，按一下「設定>應 **[!UICONTROL 用程式設定>一般設定」。]**
 
 * **[!UICONTROL 伺服器]** -在帳戶布建時，動態媒體會自動為您的公司提供指派的伺服器。 這些伺服器可用來建構網站和應用程式的URL字串。 這些URL呼叫是您帳戶專屬的。 除非AEM支援明確指示，否則請勿變更任何伺服器名稱。
 * **[!UICONTROL 覆寫影像]** -動態媒體不允許兩個檔案具有相同名稱。 每個項目的URL ID（檔案名稱減去副檔名）必須是唯一的。 這些選項指定如何上傳取代資產：不論是替換原稿還是變成重複。 重複資產會以&quot;-1&quot;（例如chair.tif會更名為chair-1.tif）重新命名。 這些選項會影響上傳至原始檔案夾以外的資產，或是副檔名與原始檔案不同的資產（例如JPG、TIF或PNG）。
@@ -232,7 +232,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. 執行下列任一項作業：
 
    * 重複步驟3-4以編輯其他MIME類型。
-   * 在「CRXDE Lite」(CRXDE Lite)頁面的功能表列上，按一下「全 **[!UICONTROL 部儲存」]**。
+   * 在「CRXDE Lite」(CRXDE Lite)頁面的功能表列上，按一下「全部 **[!UICONTROL 儲存」。]**
 
 1. 在頁面的左上角，點選 **[!UICONTROL CRXDE Lite]** ，返回AEM。
 
@@ -242,7 +242,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 **要為不支援的格式添加自定義MIME類型**
 
-1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console]**.
+1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
