@@ -1,23 +1,25 @@
 ---
-title: Adobe Experience Manager Assets 雲端服務
+title: 資產雲端服務指南
 description: Adobe Experience Manager Assets 雲端服務自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: d9237a0121a346fc16e67e52300c3a5a263e5af3
+source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 90%
+ht-degree: 85%
 
 ---
 
 
-# Adobe Experience Manager Assets 雲端服務 {#aem-assets-guide}
+# 資產雲端服務指南 {#aem-assets-guide}
 
 以下提供 Experience Manager Assets 雲端服務的自助資源。
 
 ## Assets 重要文章 {#key-articles}
 
-* [Assets 雲端服務簡介](overview.md)
+* [概觀與新增功能](overview.md)
+* [顯著變更](/help/assets/assets-cloud-changes.md)
 * [Assets 雲端服務架構](architecture.md)
+* [資產微服務概覽](/help/assets/asset-microservices-overview.md)
 
 ## Experience Manager 指南 {#aem-guides}
 
