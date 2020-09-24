@@ -1,15 +1,18 @@
 ---
-product: adobe experience manager
-git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
+product: Adobe Experience Manager
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.zh-Hant
 index: y
-solution-title: Adobe Experience Manager雲端服務
+solution-title: Adobe Experience Manager 雲端服務
 solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html
 getting-started-title: 快速入門
-getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/overview/home.html
+getting-started-url: https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/overview/home.html
 tutorials-title: 教學課程
 tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
+workflow-type: tm+mt
+source-wordcount: '138'
+ht-degree: 20%
 
 ---
 
