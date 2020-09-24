@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.9.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 雲端服務 2020.9.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
+source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '623'
 ht-degree: 14%
 
 ---
@@ -28,7 +28,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* 使用資產microservices產生的轉譯支援浮水印PNG影像。 它可以設定為處理設定檔。 &lt;!—待定：連結至說明文章。>
+* 使用資產microservices產生的轉譯支援浮水印PNG影像。 它可以設定為處理設定檔。
 
 * 增強功能： [!DNL Dynamic Media]
 
