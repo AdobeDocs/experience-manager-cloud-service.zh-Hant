@@ -2,7 +2,7 @@
 title: 設定動態媒體雲端服務
 description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
 translation-type: tm+mt
-source-git-commit: 9b2095594432dbf8479c7b3ac482a62fc6672cab
+source-git-commit: 4b967e8b738171f0997df7cd433e1d7a418751e8
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 8%
@@ -167,7 +167,6 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 * **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱／副檔名]** -要求取代影像的副檔名與原始影像相同（例如，chair.jpg必須取代chair.jpg，而非chair.tif）。 不過，您可以將取代影像上傳至原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中；在檔案的原始位置中無法再找到該檔案。
 * **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱(不論副檔名為何]** )-此選項是最包含的取代規則。 您可以將取代影像上傳至原始檔案夾以外的其他檔案夾、以不同副檔名上傳檔案，並取代原始檔案。 如果原始檔案位於不同的檔案夾中，則取代影像會位於上傳檔案的新檔案夾中。
-
 * **[!UICONTROL 預設色彩描述檔]** -如需詳細 [資訊，請參閱設定](#configuring-color-management) 色彩管理。
 
    >[!NOTE]
