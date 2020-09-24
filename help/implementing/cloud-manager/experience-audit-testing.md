@@ -2,7 +2,7 @@
 title: 體驗審核測試——雲端服務
 description: 體驗審核測試——雲端服務
 translation-type: tm+mt
-source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
+source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Cloud Manager中的「體驗審核」可確保網站上的使用者數位體驗�
    >[!NOTE]
    >「漸進式網頁應用程式」(PWA)分數不包含在摘要分數中，而且只會顯示在頁面層級的報表詳細資料畫面中。
 * 您也可以透過向下切入來取得個別頁面層級的分數。
-* 您可以取得分數的詳細資訊，以查看個別測試的結果，以及如何修正內容審核期間發現的任何問題的指引。
+* 您可以取得分數的詳細資訊，以查看個別測試的結果，以及如何修正在體驗審核期間發現的任何問題的指引。
 * 測試結果的歷史記錄保存在Cloud Manager中，因此客戶可以查看在管道運行中引入的更改是否包含先前運行的任何回歸。
 
 ### 匯總分數 {#aggregate-scores}
