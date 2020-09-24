@@ -2,7 +2,7 @@
 title: 設定動態媒體雲端服務
 description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
 translation-type: tm+mt
-source-git-commit: 500d8795176fa21f79a8d67954fc9352b9a349f8
+source-git-commit: c5c2f5d9f0fd539591972382f197cb83b3d7e60e
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 8%
@@ -158,7 +158,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 若要開啟「應用程式一般設定」頁面，請在Dynamic Media Classic全域導覽列中，按一下「設定>應 **[!UICONTROL 用程式設定>一般設定」。]**
 
 * **[!UICONTROL 伺服器]** -在帳戶布建時，動態媒體會自動為您的公司提供指派的伺服器。 這些伺服器可用來建構網站和應用程式的URL字串。 這些URL呼叫是您帳戶專屬的。 除非AEM支援明確指示，否則請勿變更任何伺服器名稱。
+
 * **[!UICONTROL 覆寫影像]** -動態媒體不允許兩個檔案具有相同名稱。 每個項目的URL ID（檔案名稱減去副檔名）必須是唯一的。 這些選項指定如何上傳取代資產：不論是替換原稿還是變成重複。 重複資產會以&quot;-1&quot;（例如chair.tif會更名為chair-1.tif）重新命名。 這些選項會影響上傳至原始檔案夾以外的資產，或是副檔名與原始檔案不同的資產（例如JPG、TIF或PNG）。
+
 * **[!UICONTROL 覆寫目前檔案夾中的基本影像名稱／副檔名]** -此選項是最嚴格的取代規則。 它要求您將取代影像上傳至與原始影像相同的檔案夾，而取代影像的副檔名與原始影像的副檔名相同。 如果未滿足這些要求，則會建立重複項。
 
    >[!NOTE]
@@ -166,7 +168,9 @@ To migrate any custom viewer presets and configurations that you have created fr
    >若要與AEM維持一致性，請一律選擇下列設定： **覆寫目前檔案夾中的基本影像名稱／副檔名相同**
 
 * **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱／副檔名]** -要求取代影像的副檔名與原始影像相同（例如，chair.jpg必須取代chair.jpg，而非chair.tif）。 不過，您可以將取代影像上傳至原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中；在檔案的原始位置中無法再找到該檔案。
+
 * **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱(不論副檔名為何]** )-此選項是最包含的取代規則。 您可以將取代影像上傳至原始檔案夾以外的其他檔案夾、以不同副檔名上傳檔案，並取代原始檔案。 如果原始檔案位於不同的檔案夾中，則取代影像會位於上傳檔案的新檔案夾中。
+
 * **[!UICONTROL 預設色彩描述檔]** -如需詳細 [資訊，請參閱設定](#configuring-color-management) 色彩管理。
 
    >[!NOTE]
@@ -213,7 +217,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 請參閱 [上傳資產](/help/assets/add-assets.md)。
 
-**若要設定資產處理**
+若要設定資產處理：
 
 1. 在AEM中，按一下AEM標誌以存取全域導覽主控台，然後按一下「一 **[!UICONTROL 般> CRXDE Lite]**」。
 1. 在左側導軌中，導覽至下列項目：
@@ -230,7 +234,6 @@ To migrate any custom viewer presets and configurations that you have created fr
    * 連按兩下 **[!UICONTROL jobParam]** ，以開啟其相關的文字欄位。 如需 [](/help/assets/file-format-support.md) 指定MIME類型可使用的許可處理參數值清單，請參閱支援的Mime類型。
 
 1. 執行下列任一項作業：
-
    * 重複步驟3-4以編輯其他MIME類型。
    * 在「CRXDE Lite」(CRXDE Lite)頁面的功能表列上，按一下「全部 **[!UICONTROL 儲存」。]**
 
@@ -240,7 +243,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 您可以針對AEM Assets中不支援的格式新增自訂MIME類型。為確保AEM不會刪除您在CRXDE Lite中新增的任何新節點，您必須確定您先移動MIME類型， `image_` 且其啟用值設為 **[!UICONTROL false]**。
 
-**要為不支援的格式添加自定義MIME類型**
+要為不支援的格式添加自定義MIME類型：
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -306,7 +309,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 定義可使用兩個元素： 「符合」和「基本名稱」。 這些欄位可讓您定義命名約定的所有元素，並識別用於命名包含這些元素的集合的約定部分。 公司的個別命名慣例可能會針對每個元素使用一或多行定義。 您可以使用任意多行來定義獨特元素，並將它們分組為不同的元素，例如主影像、顏色元素、替代檢視元素和色票元素。
 
-**若要設定預設命名**
+要配置預設命名：
 
 1. 登入您的Dynamic Media Classic(Scene7)帳戶： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -340,7 +343,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 您可以使用表單欄位方法來定義批次集預設集，或使用程式碼方法來使用規則運算式。 如同在預設命名中，您可以在表單檢視中定義的同時選擇檢視程式碼，並使用規則運算式來建立定義。 或者，您可以取消選中任一視圖以獨佔使用一個視圖或另一個視圖。
 
-**要建立批集預設集，請執行以下操作：**
+要建立批集預設集，請執行以下操作：
 
 1. 登入您的Dynamic Media Classic(Scene7)帳戶： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -503,7 +506,7 @@ Adobe建議對PDF、Postscript和PSD檔案使用下列「已調整」的工作�
 
 「Granite工作流程」佇列用於非暫時性工作流程。 在Dynamic Media中，它用來使用 **[!UICONTROL Dynamic Media Encode Video Workflow處理視訊]** 。
 
-**要更新Granite工作流隊列**
+要更新Granite工作流隊列，請執行以下操作：
 
 1. 導覽至 `https://<server>/system/console/configMgr` 並搜尋佇 **列：Granite工作流程佇列**。
 
@@ -525,7 +528,7 @@ Adobe建議對PDF、Postscript和PSD檔案使用下列「已調整」的工作�
 
 Scene7「上傳連線」設定會將AEM資產同步至Dynamic Media Classic伺服器。
 
-**若要更新Scene7上傳連線**
+若要更新Scene7上傳連線：
 
 1. 導航到 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 在「連 **[!UICONTROL 接數」欄位]** 和／或「作 **[!UICONTROL 用中作業逾時」欄位中]** ，視需要變更數目。
@@ -538,7 +541,7 @@ Scene7「上傳連線」設定會將AEM資產同步至Dynamic Media Classic伺�
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. 點選「 **[!UICONTROL 儲存]**」。
+1. 點選「 **[!UICONTROL 儲存」。]**
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
