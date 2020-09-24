@@ -2,9 +2,9 @@
 title: Repository Modernizer
 description: Repository Modernizer
 translation-type: tm+mt
-source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '301'
 ht-degree: 3%
 
 ---
@@ -26,6 +26,9 @@ Repository Modernizer會建立下列部署結構，以建立相容的AEM Cloud S
 
 * `all` package是包含子套件和的容器 `ui.apps` 套件 `ui.content`。
 
+>[!NOTE]
+>項目結構基於包 *裝及其原型* 24 `pom.xml/filter.xml files`。 如需詳細 [資訊，請參閱](https://github.com/adobe/aem-project-archetype) Archetype 24。
+
 ## 使用儲存庫Modernizer {#using-repo-modernizer}
 
 * 通過Adobe I/O CLI :建議您透過 `aio-cli-plugin-aem-cloud-service-migration` （AEM為Adobe I/O CLI的雲端服務程式碼重構外掛程式）使用Repository Modernizer。
@@ -36,5 +39,5 @@ Repository Modernizer會建立下列部署結構，以建立相容的AEM Cloud S
 
    請參閱 **[Git資源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** ，以瞭解如何使用此工具。
 
->[!NOTE]
->Repository Modernizer是使用NodeJS開發的。 建議安裝NodeJS 10.0+。
+   >[!NOTE]
+   >Repository Modernizer是使用NodeJS開發的。 建議安裝NodeJS 10.0+。
