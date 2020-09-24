@@ -2,9 +2,9 @@
 title: 程式碼重構工具的統一體驗
 description: 程式碼重構工具的統一體驗
 translation-type: tm+mt
-source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -46,4 +46,4 @@ Unified Experience外掛程式提供下列優點：
 請參閱 [Git資源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) ，以瞭解使用情況，以及如何對此外掛程式程式碼貢獻心力，此外掛程式碼是以GitHub開啟。
 
 >[!NOTE]
->目前只有Dispatcher Converter與插件整合。
+>目前，外掛程式已與AEM Dispatcher Converter和Repository Modernizer整合。
