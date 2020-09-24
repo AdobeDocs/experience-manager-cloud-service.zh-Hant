@@ -2,7 +2,7 @@
 title: 設定動態媒體雲端服務
 description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
 translation-type: tm+mt
-source-git-commit: c5c2f5d9f0fd539591972382f197cb83b3d7e60e
+source-git-commit: ffd20b5324d85e8e50e0564306dbed38627dae69
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 8%
@@ -157,25 +157,25 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 若要開啟「應用程式一般設定」頁面，請在Dynamic Media Classic全域導覽列中，按一下「設定>應 **[!UICONTROL 用程式設定>一般設定」。]**
 
-* **[!UICONTROL 伺服器]** -在帳戶布建時，動態媒體會自動為您的公司提供指派的伺服器。 這些伺服器可用來建構網站和應用程式的URL字串。 這些URL呼叫是您帳戶專屬的。 除非AEM支援明確指示，否則請勿變更任何伺服器名稱。
+**[!UICONTROL 伺服器]** -在帳戶布建時，動態媒體會自動為您的公司提供指派的伺服器。 這些伺服器可用來建構網站和應用程式的URL字串。 這些URL呼叫是您帳戶專屬的。 除非AEM支援明確指示，否則請勿變更任何伺服器名稱。
 
-* **[!UICONTROL 覆寫影像]** -動態媒體不允許兩個檔案具有相同名稱。 每個項目的URL ID（檔案名稱減去副檔名）必須是唯一的。 這些選項指定如何上傳取代資產：不論是替換原稿還是變成重複。 重複資產會以&quot;-1&quot;（例如chair.tif會更名為chair-1.tif）重新命名。 這些選項會影響上傳至原始檔案夾以外的資產，或是副檔名與原始檔案不同的資產（例如JPG、TIF或PNG）。
+**[!UICONTROL 覆寫影像]** -動態媒體不允許兩個檔案具有相同名稱。 每個項目的URL ID（檔案名稱減去副檔名）必須是唯一的。 這些選項指定如何上傳取代資產：不論是替換原稿還是變成重複。 重複資產會以&quot;-1&quot;（例如chair.tif會更名為chair-1.tif）重新命名。 這些選項會影響上傳至原始檔案夾以外的資產，或是副檔名與原始檔案不同的資產（例如JPG、TIF或PNG）。
 
-* **[!UICONTROL 覆寫目前檔案夾中的基本影像名稱／副檔名]** -此選項是最嚴格的取代規則。 它要求您將取代影像上傳至與原始影像相同的檔案夾，而取代影像的副檔名與原始影像的副檔名相同。 如果未滿足這些要求，則會建立重複項。
+**[!UICONTROL 覆寫目前檔案夾中的基本影像名稱／副檔名]** -此選項是最嚴格的取代規則。 它要求您將取代影像上傳至與原始影像相同的檔案夾，而取代影像的副檔名與原始影像的副檔名相同。 如果未滿足這些要求，則會建立重複項。
 
-   >[!NOTE]
-   >
-   >若要與AEM維持一致性，請一律選擇下列設定： **覆寫目前檔案夾中的基本影像名稱／副檔名相同**
+>[!NOTE]
+>
+>若要與AEM維持一致性，請一律選擇下列設定： **覆寫目前檔案夾中的基本影像名稱／副檔名相同**
 
-* **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱／副檔名]** -要求取代影像的副檔名與原始影像相同（例如，chair.jpg必須取代chair.jpg，而非chair.tif）。 不過，您可以將取代影像上傳至原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中；在檔案的原始位置中無法再找到該檔案。
+**[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱／副檔名]** -要求取代影像的副檔名與原始影像相同（例如，chair.jpg必須取代chair.jpg，而非chair.tif）。 不過，您可以將取代影像上傳至原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中；在檔案的原始位置中無法再找到該檔案。
 
-* **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱(不論副檔名為何]** )-此選項是最包含的取代規則。 您可以將取代影像上傳至原始檔案夾以外的其他檔案夾、以不同副檔名上傳檔案，並取代原始檔案。 如果原始檔案位於不同的檔案夾中，則取代影像會位於上傳檔案的新檔案夾中。
+**[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱(不論副檔名為何]** )-此選項是最包含的取代規則。 您可以將取代影像上傳至原始檔案夾以外的其他檔案夾、以不同副檔名上傳檔案，並取代原始檔案。 如果原始檔案位於不同的檔案夾中，則取代影像會位於上傳檔案的新檔案夾中。
 
-* **[!UICONTROL 預設色彩描述檔]** -如需詳細 [資訊，請參閱設定](#configuring-color-management) 色彩管理。
+**[!UICONTROL 預設色彩描述檔]** -如需詳細 [資訊，請參閱設定](#configuring-color-management) 色彩管理。
 
-   >[!NOTE]
-   >
-   >依預設，當您選取「轉譯」時，系統會顯示15個轉譯，當您在資產的詳細資料檢視中選取「檢視器 ******** 」時，系統會顯示15個檢視器預設集。您可以提高此限制。請參 [閱增加或減少顯示的影像預設集數目](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) , [或增加或減少顯示的檢視器預設集數目](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)。
+>[!NOTE]
+>
+>依預設，當您選取「轉譯」時，系統會顯示15個轉譯，當您在資產的詳細資料檢視中選取「檢視器 ******** 」時，系統會顯示15個檢視器預設集。您可以提高此限制。請參 [閱增加或減少顯示的影像預設集數目](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) , [或增加或減少顯示的檢視器預設集數目](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)。
 
 #### 設定色彩管理 {#configuring-color-management}
 
