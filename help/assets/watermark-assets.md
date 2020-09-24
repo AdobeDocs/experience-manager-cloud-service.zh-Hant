@@ -3,7 +3,7 @@ title: 浮水印您的資產
 description: 將浮水印新增至您的數位資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a9ebb97541b44140d0155bcfa5d0228c79dbffec
+source-git-commit: f1fcddf196a1a2bfa2629dbd6a8fe0ac057a3d07
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 1. [建立處理設定檔](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) ，以運用資產微服務來套用浮水印。
 
-![建立浮水印的資產處理設定檔](assets/watermark-processing-profile.png)
+   ![建立浮水印的資產處理設定檔](assets/watermark-processing-profile.png)
 
 1. [將處理設定檔套用至資料夾](/help/assets/asset-microservices-configure-and-use.md#use-profiles) ，以建立浮水印資產。
 
