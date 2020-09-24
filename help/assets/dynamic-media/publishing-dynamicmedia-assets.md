@@ -3,9 +3,9 @@ title: 發佈動態媒體資產
 description: 如何發佈動態媒體資產
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: 9a4f8b4470a0850f4044f799b2af6cf836fd402d
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '468'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 您可以選擇已上傳的資產，並點選「發佈」或「快速發佈」，以發佈您的 **[!UICONTROL 動態]****[!UICONTROL 媒體資產]**。 發佈動態媒體資產後，您就可透過URL或在頁面上內嵌程式碼，將其加入網頁。
 
-您也可以立即發佈上傳的資產，不需任何使用者干預。 或者，您可以選擇性地發佈這些資產。 See [Configuring Dynamic Media](config-dm.md).
+您也可以立即發佈上傳的資產，不需任何使用者干預。 或者，您可以選擇性地發佈這些資產。 See [Configuring Dynamic Media](config-dm.md). 或者，您也可以在檔案夾層級使用「選擇性發佈」，將資產選擇性發佈至互斥的「動態媒體」或「AEM **** 」。 請參 [閱在動態媒體中使用選擇性發佈。](/help/assets/dynamic-media/selective-publishing.md)
 
 在「 **[!UICONTROL 卡片檢視]**」中，資產名稱正下方以及日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **** 欄會指出已發佈或未發佈的資產。
 
@@ -31,7 +31,7 @@ See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplicati
 
 >[!NOTE]
 >
->* 必須發佈資產才能使用URL。 如果資產未發佈，則複製URL並貼至網頁瀏覽器將無法運作。
+>* 必須發佈資產才能使用URL。 如果資產未發佈，複製URL並貼至網頁瀏覽器將無法運作。
 >* 必須啟用並發佈影像預設集和檢視器預設集，才能即時傳送。
 
 >
