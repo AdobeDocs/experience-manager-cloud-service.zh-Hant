@@ -2,17 +2,17 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.9.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 雲端服務 2020.9.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: 9d73b8339a327643be9f2ea674857b401346087a
+source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 13%
+source-wordcount: '730'
+ht-degree: 10%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] 雲端服務 2020.9.0 版發行說明 {#release-notes}
 
-以下章節概述 Experience Manager 雲端服務 2020.9.0 版的一般發行說明。
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
 ## 發行日期 {#release-date}
 
@@ -28,12 +28,12 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* 使用資產microservices產生的轉譯支援浮水印PNG影像。 它可以設定為處理設定檔。
+* 使用資產microservices產生的轉譯支援浮水印影像檔案。 它可以設定為「處理設定檔」，並使用PNG檔案做為浮水印。 請參 [閱浮水印資產](/help/assets/watermark-assets.md)。
 
 * 增強功能： [!DNL Dynamic Media]
 
-   * 選擇性發佈——行銷團隊現在可以存取同步至的智慧型裁切影像和動態轉譯， [!DNL Dynamic Media] 以建立促銷文宣，完全不需要將這些資產發佈至全 [!DNL Dynamic Media][!DNL Dynamic Media] 域傳送。 AEM和 [!DNL Dynamic Media] 發佈是分離的，可分開執行以達成此目的。
-   * 管理員可以 [!DNL Dynamic Media] 直接在AEM UI中重設布建時收到的Cloud Service密碼，而不需使用案頭應 [!DNL Dynamic Media Classic] 用程式。
+   * 選擇性發佈——行銷團隊現在可以存取已同步至的智慧型裁切影像和動態轉譯，以便 [!DNL Dynamic Media] 建立促銷文宣，完全不需要將這些資產發佈至全 [!DNL Dynamic Media][!DNL Dynamic Media] 域傳送。 [!DNL Experience Manager] 而發 [!DNL Dynamic Media] 布則可獨立進行，以達成此目的。 請參閱 [選擇性發佈](/help/assets/dynamic-media/selective-publishing.md)。
+   * 管理員現在可重設 [!DNL Dynamic Media] 布建時收到的雲端服務密碼。 重設可在使用者介面 [!DNL Experience Manager] 中完成，而不需使用案頭應 [!DNL Dynamic Media Classic] 用程式。
 
 * 若要瞭解下列增強功能，請 [查看品牌入口網站的新增功能](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
