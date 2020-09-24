@@ -3,7 +3,7 @@ title: 發佈動態媒體資產
 description: 如何發佈動態媒體資產
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 9a4f8b4470a0850f4044f799b2af6cf836fd402d
+source-git-commit: b65ce0af6281f60272322744f0e6f81b7eb6b96a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 您可以選擇已上傳的資產，並點選「發佈」或「快速發佈」，以發佈您的 **[!UICONTROL 動態]****[!UICONTROL 媒體資產]**。 發佈動態媒體資產後，您就可透過URL或在頁面上內嵌程式碼，將其加入網頁。
 
-您也可以立即發佈上傳的資產，不需任何使用者干預。 或者，您可以選擇性地發佈這些資產。 See [Configuring Dynamic Media](config-dm.md). 或者，您也可以在檔案夾層級使用「選擇性發佈」，將資產選擇性發佈至互斥的「動態媒體」或「AEM **** 」。 請參 [閱在動態媒體中使用選擇性發佈。](/help/assets/dynamic-media/selective-publishing.md)
+您也可以立即發佈上傳的資產，不需任何使用者干預。 或者，您可以選擇性地發佈這些資產。 See [Configuring Dynamic Media.](config-dm.md) 或者，您也可以在檔案夾層級使用「選擇性發佈」，將資產選擇性發佈至互斥的「動態媒體」或「AEM **** 」。 請參 [閱在動態媒體中使用選擇性發佈。](/help/assets/dynamic-media/selective-publishing.md)
 
 在「 **[!UICONTROL 卡片檢視]**」中，資產名稱正下方以及日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **** 欄會指出已發佈或未發佈的資產。
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 如果您想在編碼後立即發佈視訊資產，請確定已完成編碼。 當視訊仍在編碼時，系統會讓您知道視訊處理工作流程正在進行中。 完成視訊編碼後，您應該可以預覽視訊轉譯。 此時，您可以放心地發佈視訊，而不會發生任何發佈錯誤。
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
 另請參 [閱在網頁上內嵌動態媒體視訊檢視器或影像檢視器。](embed-code.md)
 
