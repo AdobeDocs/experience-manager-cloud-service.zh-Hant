@@ -2,7 +2,7 @@
 title: 設定動態媒體雲端服務
 description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
 translation-type: tm+mt
-source-git-commit: 97b4d8bba29ddaea959b41c2690b8ff11860413d
+source-git-commit: ab9255dd28f1c20f1085810e63f0b56e30fa8c5a
 workflow-type: tm+mt
 source-wordcount: '5122'
 ht-degree: 8%
@@ -64,26 +64,35 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. 連接成功後，可以設定以下內容：
 
-   * **[!UICONTROL 公司]** -動態媒體帳戶的名稱。 您可能會針對不同子品牌、部門或不同的測試／生產環境擁有多個動態媒體帳戶。
+* **[!UICONTROL 公司]** -動態媒體帳戶的名稱。 您可能會針對不同子品牌、部門或不同的測試／生產環境擁有多個動態媒體帳戶。
 
-   * **[!UICONTROL 公司根資料夾路徑]**
+* **[!UICONTROL 公司根資料夾路徑]**
 
-   * **[!UICONTROL 發佈資產]** -您可以從下列三個選項中選擇：
-      * **[!UICONTROL 立即]** ：當資產上傳時，系統會立即收錄資產並提供URL/內嵌。 發佈資產不需要使用者干預。
-      * **[!UICONTROL 啟動後]** ，表示您必須先明確發佈資產，才能提供URL/內嵌連結。
-      * **[!UICONTROL 選擇性發佈]** ：表示資產會自動發佈，僅供安全預覽使用，而且可明確發佈至AEM，而不需發佈至DMS7以便在公共網域中傳送。 未來，Adobe將增強此選項，將資產發佈至AEM，並將資產發佈至Dynamic Media，彼此互斥。 也就是說，您可以將資產發佈到DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您可以在AEM中獨家發佈資產以進行預覽；這些相同的資產不會發佈在DMS7中，以便在公共域中交付。
-   * **[!UICONTROL 安全預覽伺服器]** -可讓您指定安全轉譯預覽伺服器的URL路徑。 也就是說，在產生轉譯後，AEM可以安全地存取和預覽遠端的「動態媒體」轉譯（不會將二進位檔傳回至AEM例項）。
+* **[!UICONTROL 發佈資產]** -您可以從下列三個選項中選擇：
+
+* **[!UICONTROL 立即]** ：當資產上傳時，系統會立即收錄資產並提供URL/內嵌。 發佈資產不需要使用者干預。
+
+* **[!UICONTROL 啟動後]** ，表示您必須先明確發佈資產，才能提供URL/內嵌連結。
+
+* **[!UICONTROL 選擇性發佈]** ：表示資產會自動發佈，僅供安全預覽使用，而且可明確發佈至AEM，而不需發佈至DMS7以便在公共網域中傳送。 未來，Adobe將增強此選項，將資產發佈至AEM，並將資產發佈至Dynamic Media，彼此互斥。 也就是說，您可以將資產發佈到DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您可以在AEM中獨家發佈資產以進行預覽；這些相同的資產不會發佈在DMS7中，以便在公共域中交付。
+
+* **[!UICONTROL 安全預覽伺服器]** -可讓您指定安全轉譯預覽伺服器的URL路徑。 也就是說，在產生轉譯後，AEM可以安全地存取和預覽遠端的「動態媒體」轉譯（不會將二進位檔傳回至AEM例項）。
 除非您有特殊安排可使用您公司的伺服器或特殊伺服器，否則Adobe Systems建議您依指定的方式保留此設定。
 
-   * **[!UICONTROL 同步所有內容]** -預設為選取。 如果您想要選擇性地包含或排除同步至動態媒體的資產，請取消選取此選項。 取消選取此選項可讓您從下列兩種動態媒體同步模式中選擇：
+* **[!UICONTROL 同步所有內容]** -預設為選取。 如果您想要選擇性地包含或排除同步至動態媒體的資產，請取消選取此選項。 取消選取此選項可讓您從下列兩種動態媒體同步模式中選擇：
 
-   * **[!UICONTROL Dynamic Media 同步處理模式]**
-      * **[!UICONTROL 預設啟用]** -預設情況下，配置將應用於所有資料夾，除非您專門為排除標籤資料夾。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL 預設禁用]** -在您明確標籤選定資料夾以同步到動態媒體之前，配置不會應用於任何資料夾。
+* **[!UICONTROL Dynamic Media 同步處理模式]**
+
+* **[!UICONTROL 預設啟用]** -預設情況下，配置將應用於所有資料夾，除非您專門為排除標籤資料夾。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+
+* **[!UICONTROL 預設禁用]** -在您明確標籤選定資料夾以同步到動態媒體之前，配置不會應用於任何資料夾。
 若要將選取的檔案夾標示為同步至動態媒體，請開啟資產檔案夾的「屬性」頁面。Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
-         * **[!UICONTROL 繼承]** -資料夾上沒有明確的同步值；資料夾會從其祖先資料夾或雲端設定的預設模式繼承同步值。 繼承的詳細狀態會透過工具提示顯示。
-         * **[!UICONTROL 啟用子資料夾]** -包含此子樹狀結構中的所有項目，以同步至動態媒體。 資料夾特定的設定會覆寫雲端設定中的預設模式。
-         * **[!UICONTROL 子資料夾停用]** -排除此子樹狀結構中的所有項目，以免同步至動態媒體。
+
+* **[!UICONTROL 繼承]** -資料夾上沒有明確的同步值；資料夾會從其祖先資料夾或雲端設定的預設模式繼承同步值。 繼承的詳細狀態會透過工具提示顯示。
+
+* **[!UICONTROL 啟用子資料夾]** -包含此子樹狀結構中的所有項目，以同步至動態媒體。 資料夾特定的設定會覆寫雲端設定中的預設模式。
+
+* **[!UICONTROL 子資料夾停用]** -排除此子樹狀結構中的所有項目，以免同步至動態媒體。
 
    >[!NOTE]
    >
@@ -176,10 +185,10 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    您可以設定下列色彩校正屬性：
 
-   * **[!UICONTROL CMYK預設色域]** -預設CMYK色彩描述檔的名稱。
-   * **[!UICONTROL 灰階預設色域]** -預設灰階色彩描述檔的名稱。
-   * **[!UICONTROL RGB預設顏色空間]** -預設RGB顏色配置檔案的名稱。
-   * **[!UICONTROL 顏色轉換渲染方式]** -指定渲染方式。 Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe建議 **[!UICONTROL 以相對]** （預設值）。
+   **[!UICONTROL CMYK預設色域]** -預設CMYK色彩描述檔的名稱。
+   **[!UICONTROL 灰階預設色域]** -預設灰階色彩描述檔的名稱。
+   **[!UICONTROL RGB預設顏色空間]** -預設RGB顏色配置檔案的名稱。
+   **[!UICONTROL 顏色轉換渲染方式]** -指定渲染方式。 Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe建議 **[!UICONTROL 以相對]** （預設值）。
 
 1. 點選「 **[!UICONTROL 儲存]**」。
 
@@ -190,7 +199,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 * 啟用RGB和CMYK影像的色彩校正。
 * 沒有色彩描述檔的RGB影像會假設在 *sRGB* 色域中。
 * 沒有色彩描述檔的CMYK影像會假設在 *WebCopted色彩空間中* 。
-* 傳回RGB輸出的動態轉譯，會傳回到*sRGB *色彩空間。
+* 傳回RGB輸出的動態轉譯，將會傳回 *sRGB* 色域。
 * 傳回CMYK輸出的動態轉譯，會傳回至 *WebCopated* 色彩空間。
 
 #### 設定資產處理 {#configuring-asset-processing}
