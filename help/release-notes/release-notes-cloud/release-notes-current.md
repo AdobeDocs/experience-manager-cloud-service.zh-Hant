@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.9.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 雲端服務 2020.9.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: 24f7e9c1a99286d38332b1d4fa1b0ff9a7335069
+source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 18%
+source-wordcount: '629'
+ht-degree: 14%
 
 ---
 
@@ -14,15 +14,42 @@ ht-degree: 18%
 
 以下章節概述 Experience Manager 雲端服務 2020.9.0 版的一般發行說明。
 
+## 發行日期 {#release-date}
+
+The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+
 ## [!DNL Adobe Experience Manager Sites] 雲端服務 {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* 單頁應用程式(SPA)編輯器Javascript SDK現 [在是開放原始碼。](/help/implementing/developing/spa/reference-materials.md)
+* 單頁應用程式(SPA)編輯器JavaScript SDK現在 [是開放原始碼。](/help/implementing/developing/spa/reference-materials.md)
+
+## [!DNL Adobe Experience Manager Assets] 雲端服務 {#assets}
+
+### What is new in [!DNL Assets] {#what-is-new-assets}
+
+* 使用資產microservices產生的轉譯支援浮水印PNG影像。 它可以設定為處理設定檔。 &lt;!—待定：連結至說明文章。>
+
+* 增強功能： [!DNL Dynamic Media]
+
+   * 選擇性發佈——行銷團隊現在可以存取同步至的智慧型裁切影像和動態轉譯， [!DNL Dynamic Media] 以建立促銷文宣，完全不需要將這些資產發佈至全 [!DNL Dynamic Media][!DNL Dynamic Media] 域傳送。 AEM和 [!DNL Dynamic Media] 發佈是分離的，可分開執行以達成此目的。
+   * 管理員可以 [!DNL Dynamic Media] 直接在AEM UI中重設布建時收到的Cloud Service密碼，而不需使用案頭應 [!DNL Dynamic Media Classic] 用程式。
+
+* 若要瞭解下列增強功能，請 [查看品牌入口網站的新增功能](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html)。
+
+   * 使用Adobe Document Cloud檢視SDK整合增強PDF預覽。
+   * 按一下即可下載功能。
+   * 下載體驗的新管理設定。
+
+<!--
+### Bugs Fixed {#bugs-fixed-assets}
+
+TBD: list of Assets aaCS bugs that are fixed.
+-->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
-### 新功能 {#what-is-new-commerce}
+### 新增功能 {#what-is-new-commerce}
 
 * 已發佈CIF核心元件v1.3.0。請參閱 [CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) ，以取得詳細資訊。
 
@@ -58,7 +85,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 請參照本節，了解 Cloud Readiness Analyzer v1.1.0 版的新增功能和更新。
 
-### 新功能 {#what-is-new-cra}
+### 新增功能 {#what-is-new-cra}
 
 * Cloud Readiness Analyzer(CRA)有一個啟動狀態控制台，它顯示一個明確的「生成報告 **** 」按鈕，供用戶按一下以執行CRA。
 
