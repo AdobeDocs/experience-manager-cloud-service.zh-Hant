@@ -1,18 +1,18 @@
 ---
-sub-product: AEM Assets 雲端服務
-user-guide-title: AEM Assets 雲端服務
+sub-product: Adobe Experience Manager Assets 雲端服務
+user-guide-title: 資產雲端服務指南
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 62cb875355691ebfde6ce1240011782fb59f77ab
+source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 92%
+source-wordcount: '432'
+ht-degree: 90%
 
 ---
 
 
-# 資產 {#assets}
+# 資產雲端服務指南 {#assets}
 
 + [AEM Assets 雲端服務](/help/assets/home.md)
 + [概覽與新增功能](overview.md)
