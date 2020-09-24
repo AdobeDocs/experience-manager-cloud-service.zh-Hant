@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.8.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 雲端服務 2020.8.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: 130603301212cdb29ae7f395ebc05fc58f64686e
+source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1054'
 ht-degree: 6%
 
 ---
@@ -14,9 +14,6 @@ ht-degree: 6%
 
 以下章節概述 Experience Manager 雲端服務 2020.8.0 版的一般發行說明。
 
-## 發行日期 {#release-date}
-
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is August 27, 2020.
 
 ## [!DNL Adobe Experience Manager Sites] 雲端服務 {#sites}
 
@@ -25,6 +22,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 * 能夠將頁 [面和子頁面（頁面樹狀結構）還原為舊版](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)。
 
 * 能夠在 [AEM](/help/sites-cloud/authoring/launches/overview.md)[SPA Editor中建立啟動。](/help/implementing/developing/spa/introduction.md)
+
 
 ## [!DNL Adobe Experience Manager Assets] 雲端服務 {#assets}
 
@@ -80,6 +78,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 ### 新功能 {#what-is-new-cloud-manager}
 
 * 「內容審核」是在Cloud Manager Sites生產管道上啟用的功能。 具有「網站」的程式的「生產管道」設定現在包含名為「內容審核」的第 **三個標籤**。 每當生產管道執行時，在自訂功能測試後，管道中就會包含新的「內容稽核」步驟，以根據多項維度評估網站，包括效能、搜尋引擎最佳化(SEO)、協助工具、最佳實務和PWA（漸進式網頁應用程式）。
+
 
    >[!NOTE]
    >「內容審核」已重新命名為「體驗審核」。
