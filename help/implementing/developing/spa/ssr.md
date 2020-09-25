@@ -2,9 +2,9 @@
 title: SPA和伺服器端演算
 description: 在SPA中使用伺服器端演算(SSR)可加速頁面的初始載入，然後將進一步演算傳遞給用戶端。
 translation-type: tm+mt
-source-git-commit: c2c338061d72ae6c5054d18308a2ea1038eaea39
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ SSR通常在以下任一問題有明確的「是」時提供一些值：
 >
 >Adobe建議針對每個AEM環境（作者、發佈、舞台等）使用個別的Adobe I/O Runtime執行個體。
 
-## 遠程渲染器配置 {#remote-renderer-configuration}
+## 遠程渲染器配置 {#remote-content-renderer-configuration}
 
 AEM必須知道可擷取遠端轉譯內容的位置。 不論您 [選擇為SSR建置何種模型，](#adobe-i-o-runtime) 都需要指定AEM如何存取此遠端轉譯服務。
 
@@ -67,8 +67,6 @@ AEM必須知道可擷取遠端轉譯內容的位置。 不論您 [選擇為SSR�
 >[!NOTE]
 >
 >不論您選擇實作 [AEM導向的通訊流程](#aem-driven-communication-flow) ，或 [](#adobe-i-o-runtime-driven-communication-flow) Adobe I/O Runtime導向的流程，您都必須定義遠端內容轉譯器設定。
->
->如果您選擇使用自訂Node.js伺服 [器，也必須定義此設定。](#using-node-js)
 
 >[!NOTE]
 >
@@ -76,7 +74,7 @@ AEM必須知道可擷取遠端轉譯內容的位置。 不論您 [選擇為SSR�
 
 ## AEM導向的通訊流程 {#aem-driven-communication-flow}
 
-使用SSR時，AEM中 [SPA的元件互動工作流程](introduction.md#workflow) ，包含在Adobe I/O Runtime上產生應用程式初始內容的階段。
+使用SSR時，AEM中 [SPA的元件互動工作流程](introduction.md#interaction-with-the-spa-editor) ，包含在Adobe I/O Runtime上產生應用程式初始內容的階段。
 
 1. 瀏覽器會向AEM要求SSR內容。
 1. AEM會將模型張貼至Adobe I/O Runtime。
@@ -164,7 +162,7 @@ AEM中SSR的SPA需要Adobe I/O Runtime，這是轉換應用程式內容伺服器
 
 若要新增自訂請求處理常式，請實作 `RemoteContentRendererRequestHandler` 介面。 請務必將 `Constants.SERVICE_RANKING` component屬性設為大於100的整數，即排名 `DefaultRemoteContentRendererRequestHandlerImpl`。
 
-```
+```javascript
 @Component(immediate = true,
         service = RemoteContentRendererRequestHandler.class,
         property={
@@ -188,7 +186,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 通常，頁面元件的HTL範本是此類功能的主要收件者。
 
-```
+```html
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
 ```
 
