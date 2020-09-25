@@ -2,9 +2,9 @@
 title: 範例ContextHub UI模組類型
 description: ContextHub提供數個範例UI模組，您可在解決方案中使用
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ contexthub.browserinfo UI模組的實例不需要「詳細配置」的值。 下
 
 ## contexthub.datetime UI模組類型 {#contexthub-datetime-ui-module-type}
 
-UI `contexthub.datetime` 模組顯示儲存在名為datetime的儲存中的日期和時間，該儲存基於 [](sample-stores.md#contexthub-datetime-sample-store-candidate) contexthub.datetime儲存候選。
+UI `contexthub.datetime` 模組顯示儲存在基於儲存候選項的名為datetime的儲存中的日期和 `contexthub.datetime` 時間。
 
 ![contexthub.datetime模組](assets/datetime-module.png)
 
@@ -187,7 +187,7 @@ UI模組 `contexthub.screen-orientation` 的例項不需要詳細資料設定的
 
 ## contexthub.tagcloud UI模組類型 {#contexthub-tagcloud-ui-module-type}
 
-UI模 `contexthub.tagcloud` 組會顯示有關標籤的資訊。 在工具列上，UI模組會顯示標籤數。 此快顯視窗會顯示用於新增標籤的標籤和文字方塊。 UI模組從名為tagcloud的ContextHub儲存中獲取資訊，該儲存基於 [contexthub.tagcloud儲存候選](sample-stores.md#contexthub-tagcloud-sample-data-store) 。
+UI模 `contexthub.tagcloud` 組會顯示有關標籤的資訊。 在工具列上，UI模組會顯示標籤數。 此快顯視窗會顯示用於新增標籤的標籤和文字方塊。 UI模組從名為tagcloud的ContextHub儲存器獲取資訊，該tagcloud基於儲存候選 `contexthub.tagcloud` 器。
 
 ![contexthub.tagcloud模組](assets/tagcloud-module.png)
 
