@@ -2,9 +2,9 @@
 title: 頁面範本
 description: 建立將用作新頁面基礎的頁面時，會使用頁面範本
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3221'
 ht-degree: 0%
 
 ---
@@ -292,7 +292,7 @@ WKND教學課程的范 [本資料夾](/help/implementing/developing/introduction
 
    * 頁元件的資源類型。
    * 根節點的策略，它定義了模板編輯器中允許的元件。
-   * 建議您在範本類型上定義回應式格點和行動模擬器設定的中斷點。 這是可選的，因為此組態也可以在個別範本上定義(請參閱範本類 [型和行動裝置群組](#p-template-type-and-mobile-device-groups-br-p))。
+   * 建議您在範本類型上定義回應式格點和行動模擬器設定的中斷點。
 
 * AEM提供一些現成可用的範本類型選擇，例如HTML5頁面和最適化表單頁面。
 
@@ -476,7 +476,7 @@ GITHUB代碼
 
    範本必須先由下列其中一項啟用，才能使用：
 
-   * [從範本主控台](/help/sites-cloud/authoring/features/templates.md#enablingatemplateauthor) 啟用 **範本** 。
+   * [從範本主控台](/help/sites-cloud/authoring/features/templates.md) 啟用 **範本** 。
 
    * 在節點上設定狀態 `jcr:content` 屬性。
 
