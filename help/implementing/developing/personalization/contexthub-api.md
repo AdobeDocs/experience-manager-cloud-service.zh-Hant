@@ -2,7 +2,7 @@
 title: ContextHub Javascript API參考
 description: 當ContextHub元件已新增至頁面時，指令碼可使用ContextHub Javascript API
 translation-type: tm+mt
-source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
+source-git-commit: 3277d7470c1abdcc1f759c87e2c1a7ffb3390f47
 workflow-type: tm+mt
 source-wordcount: '4621'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # ContextHub Javascript API參考 {#contexthub-javascript-api-reference}
 
-當ContextHub元件已新增至頁面時，指令碼 [可使用ContextHub Javascript API](configuring-contexthub.md#adding-contexthub-to-a-page-component)。
+當ContextHub元件已新增至頁面時，指令碼 [可使用ContextHub Javascript API](adding-contexthub.md)。
 
 ## ContextHub常數 {#contexthub-constants}
 
@@ -20,7 +20,7 @@ ContextHub Javascript API所定義的常數值。
 
 ### 事件常數 {#event-constants}
 
-下表列出了ContextHub Stores發生的名稱事件。 另請參閱 [ContextHub.Utils.Eventing](contexthub-api.md#contexthub-utils-eventing)。
+下表列出了ContextHub Stores發生的名稱事件。 另請參閱 [ContextHub.Utils.Eventing](#contexthub-utils-eventing)。
 
 | 常數 | 說明 | 值 |
 |---|---|---|
@@ -482,7 +482,7 @@ ContextHub.Store.JSONPStore擴充 [了ContextHub.Store.Core](#contexthub-store-c
 
 ## ContextHub.Store.PeristedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` 擴充 [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) ，讓它繼承該類別的所有功能。 但是，從JSONP服務中檢索的資料會根據ContextHub持久性的配置進行保存。 (請參 [閱永續模式：](configuring-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` 擴充 [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) ，讓它繼承該類別的所有功能。 但是，從JSONP服務中檢索的資料會根據ContextHub持久性的配置進行保存。 (請參 [閱永續模式：](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PeristedStore {#contexthub-store-persistedstore}
 
