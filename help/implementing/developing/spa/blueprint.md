@@ -2,7 +2,7 @@
 title: SPA藍圖
 description: 本檔案說明任何SPA架構在AEM中實施可編輯的SPA元件時，應履行的一般、不受架構影響的合約。
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -164,7 +164,7 @@ SPA元件會對應至圖形容器（例如回應式格線），且在製作內�
 
 例如：
 
-```
+```html
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>
 ```
 
@@ -183,7 +183,7 @@ SPA元件會對應至圖形容器（例如回應式格線），且在製作內�
 
 基礎庫 [`Component Mapping`](#componentmapping) 及其功 `MapTo` 能可以封裝和擴展，以提供與當前元件類附帶的編輯配置相關的功能。
 
-```
+```javascript
 const EditConfig = {
 
     emptyLabel: 'My Component',
@@ -205,7 +205,7 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 
 在上述實施中，項目元件在實際註冊到元件映射儲存之前，以空 [洞功能擴展](#componentmapping) 。 通過封裝和擴展庫來 [`ComponentMapping`](#componentmapping) 引入對配置對象的 `EditConfig` 支援：
 
-```
+```javascript
 /**
  * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
  *
@@ -245,9 +245,9 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 * 響應式格線元素承載預先固定的類別名稱 `aem-Grid--`
 * 回應式欄元素會載入前置詞的類別名稱 `aem-GridColumn--`
 * 將作為父網格的列的響應網格包起來，例如兩個前置詞不出現在同一元素上
-* 與可編輯資源對應的元素會攜帶屬 `data-cq-data-path` 性。 請參閱 [本檔案的「與頁面編輯器](#contract-wtih-the-page-editor) 」一節。
+* 與可編輯資源對應的元素會攜帶屬 `data-cq-data-path` 性。 請參閱 [本檔案的「與頁面編輯器](#contract-with-the-page-editor) 」一節。
 
-```
+```javascript
 <div data-cq-data-path="/content/page">
     <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
         <div class="aem-container aem-GridColumn aem-GridColumn--default--12" data-cq-data-path="/content/page/jcr:content/root/responsivegrid">
