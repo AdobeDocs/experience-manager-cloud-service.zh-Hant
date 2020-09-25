@@ -2,7 +2,7 @@
 title: SPA簡介與逐步說明
 description: 本文介紹SPA的概念，並逐步說明如何使用基本的SPA應用程式來製作內容，並說明它與基礎的AEM SPA編輯器的關係。
 translation-type: tm+mt
-source-git-commit: 78ce5113d97b0fa2e0172598d374c924f4306395
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 0%
@@ -71,7 +71,7 @@ SPA的主要思想是減少對伺服器的呼叫和依賴，以將伺服器延�
 
 ![循序體驗與流暢體驗](assets/spa-sequential-vs-fluid.png)
 
-SPA會在第一次載入時載入訪客的所有必要資料，以提供更流暢的體驗，接近訪客從行動裝置、原生應用程式所預期的效果。 雖然這一步可能需要稍長的時間，但卻不需要額外的伺服器呼叫。
+SPA會在第一次載入時載入訪客的所有必要資料，以提供更流暢的體驗，接近訪客從行動、原生應用程式所預期的效果。 雖然這一步可能需要稍長的時間，但卻不需要額外的伺服器呼叫。
 
 透過在用戶端上演算，頁面元素的反應更快，而訪客與頁面的互動也會立即生效。 可能需要的任何額外資料都會以非同步方式呼叫，以最大化頁面速度。
 
@@ -151,7 +151,7 @@ SPA會在第一次載入時載入訪客的所有必要資料，以提供更流�
 
 下一節「載 [](#loading-a-spa-application)入SPA應用程式」深入探討載入SPA的機制，以及如何同步和非同步載入內容。
 
-### 載入SPA應用程式 {#loading-an-spa-application}
+### 載入SPA應用程式 {#loading-a-spa-application}
 
 1. 如果尚未載入，請在發佈伺服器上載入We.Retail Journal應用程式，或使用頁面編輯器中「頁面資訊」選單的「檢視為已發佈 ******** 」選項來載入。
 
