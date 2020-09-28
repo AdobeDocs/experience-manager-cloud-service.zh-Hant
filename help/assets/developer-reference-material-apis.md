@@ -1,11 +1,11 @@
 ---
-title: 數位資產管理的開發人 [!DNL Adobe Experience Manager] 員參考是雲端服務。
+title: 開發人員參考 [!DNL Assets]
 description: '[!DNL資產] API和開發人員參考內容可讓您管理資產，包括二進位檔案、中繼資料、轉譯、注釋 [!DNL Content Fragments]。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cfcb9fb85cffeabc5d5af94c30bd8ace8039ac83
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1236'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 [!DNL Experience Manager] 雲端服務提供新方法，可將資產上傳至儲存庫。 使用者可使用HTTP API直接將資產上傳至雲端儲存空間。 上傳二進位檔案的步驟如下：
 
-1. [提交HTTP請求](#initiate-upload)。 它會告 [!DNL Experience Manage]知您上傳新二進位檔案的意圖。
+1. [提交HTTP請求](#initiate-upload)。 它通知 [!DNL Experience Manage]或部署您上傳新二進位檔案的意圖。
 1. [將二進位格的內容張貼](#upload-binary) ，至啟動請求所提供的一或多個URI。
 1. [提交HTTP請求](#complete-upload) ，通知伺服器已成功上傳二進位檔的內容。
 
