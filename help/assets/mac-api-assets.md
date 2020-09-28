@@ -1,12 +1,12 @@
 ---
-title: 中的資產HTTP API [!DNL Adobe Experience Manager]。
+title: Assets HTTP API
 description: 使用中的HTTP API建立、讀取、更新、刪除、管理數位資產 [!DNL Adobe Experience Manager Assets]。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1476'
-ht-degree: 0%
+source-wordcount: '1475'
+ht-degree: 1%
 
 ---
 
