@@ -1,12 +1,12 @@
 ---
-title: 在Experience Manager中管理您的數位資產
+title: 管理數位資產
 description: 瞭解各種資產管理和編輯方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '4435'
+source-wordcount: '4431'
 ht-degree: 12%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 12%
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. 若要在特定持續時間後停用資產，請從「關閉時間」欄位旁的日期選擇器選擇停 **[!UICONTROL 用日期]** /時間。 停用日期應晚於資產的啟用日期。 在「關 [!UICONTROL 閉時間]」後，資產及其轉譯無法透過「資產」網頁介面或HTTP API使用。
+1. 若要在特定持續時間後停用資產，請從「關閉時間」欄位旁的日期選取器選擇停 **[!UICONTROL 用日期]** /時間。 停用日期應晚於資產的啟用日期。 在「關 [!UICONTROL 閉時間]」後，資產及其轉譯無法透過「資產」網頁介面或HTTP API使用。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
@@ -249,7 +249,7 @@ ht-degree: 12%
 
    ![delete_icon](assets/delete_icon.png)
 
-1. 在確認對話方塊中，按一下：
+1. 在確認對話框中，按一下：
 
    * **[!UICONTROL 取消]** ，停止動作
    * **[!UICONTROL 刪除]**&#x200B;來確認動作：
