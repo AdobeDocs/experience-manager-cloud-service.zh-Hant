@@ -1,11 +1,11 @@
 ---
-title: 數位版權管 [!DNL Adobe Experience Manager Assets] 理是雲端服務。
+title: 數位版權管理 [!DNL Assets]
 description: 瞭解如何管理雲端服務中授權資產的資產到期狀 [!DNL Experience Manager] 態和資訊。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1347'
 ht-degree: 7%
 
 ---
@@ -21,10 +21,10 @@ ht-degree: 7%
 
 您可以在下列位置檢視資產的到期狀態：
 
-* **卡片檢視**: 對於過期的資產，卡片上的標幟會指出其已過期。
-* **清單檢視**: 對於過期資產，「狀 **[!UICONTROL 態]** 」欄會顯示「 **[!UICONTROL 已到期]** 」橫幅。
-* **時間軸**: 您可以在時間軸中檢視資產的到期狀態。 選取資產，然後選擇「時間軸」。
-* **參考邊欄**: 您也可以在「參考」邊欄中檢視資產的 **[!UICONTROL 到期]** 狀態。 它可管理資產到期狀態以及複合資產與參考子資產、系列和專案之間的關係。
+* **卡片檢視**:對於過期的資產，卡片上的標幟會指出其已過期。
+* **清單檢視**:對於過期資產，「狀 **[!UICONTROL 態]** 」欄會顯示「 **[!UICONTROL 已到期]** 」橫幅。
+* **時間軸**:您可以在時間軸中檢視資產的到期狀態。 選取資產，然後選擇「時間軸」。
+* **參考邊欄**:您也可以在「參考」邊欄中檢視資產的 **[!UICONTROL 到期]** 狀態。 它可管理資產到期狀態以及複合資產與參考子資產、系列和專案之間的關係。
 
 1. 導覽至您要檢視其參考網頁和複合資產的資產。
 1. 選取資產，然後按一下標 [!DNL Experience Manager] 志。
@@ -35,7 +35,7 @@ ht-degree: 7%
 
 您可以在「搜尋」面板中搜尋過期的資產，包括過期的子資產。
 
-1. 在控制 [!DNL Assets] 台中，按一下工具列 **[!UICONTROL 中的「搜尋]** 」，以顯示「Omnisearch」方塊。
+1. 在控制 [!DNL Assets] 台中，按一下工具列 **[!UICONTROL 中的「搜尋]** 」，以顯示「搜尋」方塊。
 
 1. 在「Omnisearch」（搜索）框中，按Enter鍵可顯示搜索結果頁。
 
@@ -77,7 +77,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 
 1. 在使用者 [!DNL Assets] 介面中，選取資產。
 
-1. 從工具 **[!UICONTROL 列按一下]** 「發佈」。 如果您在工具列上未看 **到** 「發佈」，請按一下工具列上的「更多 **[!UICONTROL 」，然後找出「]** 發佈 **** 」選項。
+1. Click **[!UICONTROL Publish]** from the toolbar. 如果您在工具列上未看 **到** 「發佈」，請按一下工具列上的「更多 **[!UICONTROL 」，然後找出「]** 發佈 **** 」選項。
 
 1. 從功 **[!UICONTROL 能表選擇]** 「發佈」，然後關閉確認對話框。
 1. 退出選擇模式。 資產的出版物狀態會顯示在卡片檢視中資產縮圖的底部。 在清單檢視中，「已發佈」欄會顯示資產發佈的時間。
