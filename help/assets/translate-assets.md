@@ -1,11 +1,11 @@
 ---
-title: 建立和管理多種語言的數位資產，並執行翻譯工作流程
+title: 建立並管理多種語言的數位資產
 description: 瞭解如何將資產（包括二進位檔、中繼資料和標籤）轉譯為多種語言的工作流程自動化。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2612'
+source-wordcount: '2608'
 ht-degree: 22%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 22%
 
 為自動化翻譯工作流程，您將翻譯服務供應商與AEM整合，並建立專案，將資產翻譯成多種語言。 AEM支援人文和機器翻譯工作流程。
 
-人類翻譯： 轉譯的資產會傳回並匯入至AEM。 當您的翻譯提供者與AEM整合時，資產會自動在AEM和翻譯提供者之間傳送。
+人類翻譯：轉譯的資產會傳回並匯入至AEM。 當您的翻譯提供者與AEM整合時，資產會自動在AEM和翻譯提供者之間傳送。
 
-機器翻譯： 機器翻譯服務會立即轉譯資產的中繼資料和標籤。
+機器翻譯：機器翻譯服務會立即轉譯資產的中繼資料和標籤。
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
@@ -88,7 +88,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ### 檢視語言根 {#view-language-roots}
 
-觸控最佳化UI提供「參考」面板，可顯示已在AEM Assets中建立的語言根目錄清單。
+觸控最佳化的UI提供「參考」面板，顯示已在AEM Assets中建立的語言根目錄清單。
 
 1. 在「資產」主控台中，選取您要建立語言副本的語言主要版本。
 1. 按一下或點選「GlobalNav」圖示，然後選擇「參 **[!UICONTROL 考」]** ，以開啟「參考」窗格。
