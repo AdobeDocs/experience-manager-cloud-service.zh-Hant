@@ -2,9 +2,9 @@
 title: 部署至 AEM 雲端服務
 description: '部署至 AEM 雲端服務 '
 translation-type: tm+mt
-source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
+source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
 workflow-type: tm+mt
-source-wordcount: '3537'
+source-wordcount: '3202'
 ht-degree: 1%
 
 ---
@@ -16,39 +16,19 @@ ht-degree: 1%
 
 與AEM On Premise和Managed Services解決方案相比，AEM中程式碼開發的基礎與雲端服務類似。 開發人員可編寫程式碼並在本機進行測試，然後將它推送至遠端AEM做為雲端服務環境。 Cloud Manager是Managed Services的選用內容傳送工具，是必要項。 現在，這是將程式碼部署至AEM做為雲端服務環境的唯一機制。
 
-AEM版本的更新永遠是個別的部署事件，與推送自訂代碼不同。 以另一種方式檢視，自訂程式碼版本應針對生產中的AEM版本進行測試，因為它將部署在的上方。 此後發生的AEM版本更新（與現今的Managed Services相比，此更新會很頻繁）會自動套用。 這些程式碼會向後相容於已部署的客戶程式碼。
+AEM版本的更新 [永遠是](/help/implementing/deploying/aem-version-updates.md) ，與推送自訂程式碼不同的部署 [事件](#customer-releases)。 以另一種方式檢視，自訂程式碼版本應針對生產中的AEM版本進行測試，因為它將部署在的上方。 AEM版本更新會在此之後發生，此更新會頻繁且自動套用。 這些程式碼會向後相容於已部署的客戶程式碼。
 
-以下影片提供如何將程式碼部署至AEM做為雲端服務的高階概觀：
-
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 本檔案的其餘部分將說明開發人員如何調整其實務，以便搭配AEM搭配Cloud Service的版本更新和客戶更新。
 
 >[!NOTE]
 >建議使用現有程式碼庫的客戶進行 [AEM檔案所述的儲存庫重組練習](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)。
 
-
-## AEM版本更新 {#version-updates}
-
-瞭解AEM會經常更新，可能像每天更新一次一樣頻繁，並著重於錯誤修正和效能增強。 更新將透明地進行，不會造成停機。 此更新旨在向後相容，這表示您不需要修改自訂程式碼。 事實上，AEM更新是客戶程式碼部署的獨立事件。 AEM更新會部署在您上次成功的程式碼推播上，這表示不會部署自上次推送至生產作業後所提交的任何變更。
-
->[!NOTE]
->
->如果自訂代碼已推送至測試，然後遭到您拒絕，下一次AEM更新會移除這些變更，以反映上次成功客戶發行的git標籤至生產環境。
-
-功能版本將定期推出，主要針對功能新增和增強功能，與日常版本相比，這些功能將對使用者體驗產生更大影響。 觸發功能發行的不是部署大型變更集，而是翻動發行切換，啟動在數天或數週內透過每日更新累積的程式碼。
-
-Health checks are used to monitor the health of the application. 如果這些檢查在AEM的雲端服務更新期間失敗，則該版本將不會針對該環境繼續，而Adobe將調查更新為何會造成此非預期行為。
-
-### 複合節點儲存 {#composite-node-store}
-
-如上所述，在大多數情況下，更新將導致零停機，包括作者（即節點群集）。 由於Oak中的「複合節點儲存區」功能，因此可進行滾動更新。 此功能可讓AEM同時參考多個儲存庫。 在滾動部署中，新的綠色AEM版本包含其自己的 `/libs` (以TarMK為基礎的不可變儲存庫)，與舊版Blue AEM不同，不過兩者都參照共用的DocumentMK可變儲存庫，其中包含 `/content`、 `/conf``/etc` 和其他區域。 由於藍色和綠色都有各自的版本 `/libs`，因此在滾動更新期間，兩者都可以處於活動狀態，在藍色完全被綠色取代之前，都會進行流量。
-
 ## 客戶發行 {#customer-releases}
 
 ### 依正確的AEM版本編碼 {#coding-against-the-right-aem-version}
 
-對於舊版AEM解決方案，最新的AEM版本不常變更（大約每年每季一次都會變更服務套件），客戶會自行將生產執行個體更新為最新的快速啟動，並參照API Jar。 不過，AEM(Cloud Service)應用程式會更頻繁地自動更新為最新版的AEM，因此內部版本的自訂代碼應以這些較新的AEM介面為基礎。
+對於舊版AEM解決方案，最新的AEM版本不常變更（大約每年每季一次都會變更服務套件），客戶會自行將生產執行個體更新為最新的快速啟動，並參照API Jar。 不過，AEM(Cloud Service)應用程式會更頻繁地自動更新為最新版的AEM，因此內部版本的自訂代碼應以最新的AEM版本為基礎。
 
 和現有的非雲端AEM版本一樣，支援以特定快速入門為基礎的本機離線開發，並預期在大多數情況下都是除錯的首選工具。
 
@@ -56,6 +36,13 @@ Health checks are used to monitor the health of the application. 如果這些檢
 >應用程式在本機電腦上的運作方式與Adobe Cloud有細微的操作差異。 這些架構差異必須在本機開發期間得到尊重，並可能導致在雲端基礎架構上部署時產生不同的行為。 由於這些差異，在生產中推出新的自訂程式碼之前，請務必先對開發與階段環境執行詳盡的測試。
 
 為了開發內部版本的自訂程式碼，應下載並安裝 [AEM(Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) )的相關版本。 如需將AEM當做Cloud Service Dispatcher Tools的其他資訊，請參閱 [本頁](/help/implementing/dispatcher/overview.md)。
+
+以下影片提供如何將程式碼部署至AEM做為雲端服務的高階概觀：
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+
+>[!NOTE]
+>建議使用現有程式碼庫的客戶進行 [AEM檔案所述的儲存庫重組練習](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)。
 
 ## 透過Cloud Manager和Package Manager部署內容套件 {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
