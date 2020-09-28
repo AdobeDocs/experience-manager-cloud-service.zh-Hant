@@ -1,11 +1,11 @@
 ---
-title: 使用人工智慧服務來標籤影像。
+title: 使用智慧型服務來標籤影像
 description: 使用人工智慧服務來標籤影像，這些服務會使用Adobe Sensei服務套用情境式和描述性的商業標籤。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2424'
 ht-degree: 6%
 
 ---
@@ -94,7 +94,7 @@ In the background, the Smart Tags uses an artificial intelligence framework of [
 
 **用於訓練的影像**:您可以使用相同的影像來訓練不同的標籤模型。 不過，不會將影像與標籤模型中的多個標籤產生關聯。 因此，可以使用屬於不同標籤模型的不同標籤來標籤相同影像。
 
-您無法復原培訓。 上述准則應協助您選擇要訓練的好影像。
+您無法撤消培訓。 上述准則應協助您選擇要訓練的好影像。
 
 ## 針對自訂標籤訓練模型 {#train-model}
 
