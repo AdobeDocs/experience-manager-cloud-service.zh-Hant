@@ -1,11 +1,11 @@
 ---
-title: Experience Manager Assets作為雲端服務支援的檔案格式和MIME類型
+title: 支援的檔案格式和MIME類型
 description: Experience Manager Assets作為雲端服務支援的檔案格式和MIME類型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '813'
 ht-degree: 8%
 
 ---
@@ -91,7 +91,7 @@ Adobe Experience Manager雲端服務支援基本的內容管理功能— 儲存�
 
 支援下列3D格式清單。
 
-另請參閱 [在動態媒體中使用3D資產。](/help/assets/dynamic-media/assets-3d.md)
+See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
 | 格式 | 儲存 | 版本設定 | 工作流程 | 發佈 | 存取控制 | 縮圖預覽 | 3D預覽 | 動態媒體傳送 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
