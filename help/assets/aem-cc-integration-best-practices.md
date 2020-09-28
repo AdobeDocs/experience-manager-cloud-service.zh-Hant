@@ -1,12 +1,12 @@
 ---
-title: Adobe Experience Manager與Adobe Creative Cloud整合最佳實務
+title: 與 [!DNL Adobe Creative Cloud]
 description: 最佳實務將Experience Manager部署與Adobe Creative Cloud整合，以簡化資產傳輸工作流程並達到最高效率。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '3302'
+source-wordcount: '3297'
 ht-degree: 18%
 
 ---
@@ -29,8 +29,8 @@ Adobe Creative Cloud為創意團隊提供解決方案與服務生態系統，以
 
 | 需求 | 使用案例 | 涉及的曲面 |
 |---|---|---|
-| 簡化案頭創意人員的體驗 | 簡化從DAM(AEM Assets)為創意專業人員（或更廣泛的是，在原生資產建立應用程式中工作的案頭使用者）存取資產的程式。 他們需要簡單明瞭的方式來探索、使用（開啟）、編輯和儲存AEM的變更，以及上傳新檔案。 | Win或Mac案頭； Creative Cloud應用程式 |
-| 從Adobe Stock提供高品質、現成可用的資產 | 行銷人員協助資產採購和發現，協助加快內容建立流程。 創意專業人員可直接從其創意工具中使用核准的資產。 | AEM Assets; Adobe Stock市集； 中繼資料欄位 |
+| 簡化案頭創意人員的體驗 | 簡化從DAM(AEM Assets)為創意專業人員（或更廣泛地說，是在原生資產建立應用程式中工作的案頭使用者）存取資產的程式。 他們需要簡單明瞭的方式來探索、使用（開啟）、編輯和儲存AEM的變更，以及上傳新檔案。 | Win或Mac案頭；Creative Cloud應用程式 |
+| 從Adobe Stock提供高品質、現成可用的資產 | 行銷人員協助資產採購和發現，協助加快內容建立流程。 創意專業人員可直接從其創意工具中使用核准的資產。 | AEM Assets;Adobe Stock市集；中繼資料欄位 |
 | 依組織分發及共用資產 | 內部部門／當地分支機構和外部合作夥伴、分銷商和代理商會使用母公司組織共用的已核准資產。 該組織希望安全無縫地共用已建立的資產，以便更廣泛地重複使用。 | 品牌入口網站、資產分享共用 |
 
 ## Adobe提供的產品可支援協作需求 {#adobe-offerings-to-support-the-collaboration-need}
@@ -43,7 +43,7 @@ Adobe Creative Cloud為創意團隊提供解決方案與服務生態系統，以
 
 本文主要針對協作需求的前兩個方面。資產規模分配和採購作為一個使用案例被簡要提及。針對這些需求解決方案，請考慮Adobe品牌入口網站或資產共用公域。其他解決方案，例如 [AEM Brand Portal](https://helpx.adobe.com/tw/experience-manager/brand-portal/user-guide.html)，這些解決方案可以根據 [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) 元件、 [Link Share](share-assets.md)，使用 [](/help/assets/manage-digital-assets.md) AEM Web UI Assets建立，應根據特定需求審查。
 
-![適用於AEM的Creative Cloud連線： 決定要使用哪些功能](assets/creative-connections-aem.png)
+![適用於AEM的Creative Cloud連線：決定要使用哪些功能](assets/creative-connections-aem.png)
 
 決定要使用哪些功能
 
@@ -60,7 +60,7 @@ Adobe Creative Cloud為創意團隊提供解決方案與服務生態系統，以
 | 編輯- AEM以外的進行中工作 | 是——同步至案頭的使用者Creative Cloud儲存空間帳戶中可用的資產。 | 是 |  |
 | 編輯——上傳變更 | 是——使 [用可選注釋](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html) 簽入操作 | 是 |  |
 | 上傳——單一檔案 | 是——上傳目前的作用中檔案 | 是 | [透過網頁介面上傳](/help/assets/manage-digital-assets.md#uploading-assets) |
-| 上傳——多個檔案／階層式資料夾結構 | 否 | 是 | [透過網頁介面上傳](/help/assets/manage-digital-assets.md#uploading-assets); 自訂指令碼或工具 |
+| 上傳——多個檔案／階層式資料夾結構 | 否 | 是 | [透過網頁介面上傳](/help/assets/manage-digital-assets.md#uploading-assets);自訂指令碼或工具 |
 | 其他——使用者和登入 | 已登入Creative Cloud案頭應用程式的Creative Cloud使用者可獲得辨識(SSO) | AEM使用者／登入 | 這兩個解決方案的使用者都會根據AEM使用者配額計算。 |
 | 其他——網路和訪問 | 需要透過網路從使用者的案頭存取AEM部署 | 需要透過網路從使用者的案頭存取AEM部署 | Adobe Asset Link不會共用網路代理環境。 |
 
