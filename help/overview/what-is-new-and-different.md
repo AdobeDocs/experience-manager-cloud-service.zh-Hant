@@ -2,9 +2,9 @@
 title: Adobe Experience Manager雲端服務的不同與新功能
 description: '不同與新功能- Adobe Experience Manager(AEM)雲端服務。 '
 translation-type: tm+mt
-source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
+source-git-commit: 98514867fba8c998cb653abea059e15a99cbd007
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1875'
 ht-degree: 10%
 
 ---
@@ -73,8 +73,12 @@ AEM 雲端服務現已具備：
 
 AEM作為雲端服務現在使用「持續整合」和「持續傳送」(CI/CD)，以確保您的專案位於最新的AEM版本。
 
-這表示所有升級作業都完全自動化，因此使用者不需要中斷任何服務。
-Adobe會主動將服務的所有營運執行個體更新為最新版本的AEM程式碼庫：AEM版本更新有兩種類型：
+這表示Production和Stage例項會更新為最新的AEM版本，而不會中斷使用者的服務。
+
+>[!NOTE]
+> 如果更新到生產環境失敗，Cloud Manager將自動回滾階段環境。 這會自動執行，以確保更新完成後，階段和生產環境都位於相同的AEM版本。
+
+AEM版本更新有兩種類型：
 
 * **推播更新**
 
