@@ -2,9 +2,9 @@
 title: 部署至 AEM 雲端服務
 description: '部署至 AEM 雲端服務 '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: b0d0ada16662c6edf6068b9de8a296ccfd410216
 workflow-type: tm+mt
-source-wordcount: '3202'
+source-wordcount: '3210'
 ht-degree: 1%
 
 ---
@@ -16,8 +16,7 @@ ht-degree: 1%
 
 與AEM On Premise和Managed Services解決方案相比，AEM中程式碼開發的基礎與雲端服務類似。 開發人員可編寫程式碼並在本機進行測試，然後將它推送至遠端AEM做為雲端服務環境。 Cloud Manager是Managed Services的選用內容傳送工具，是必要項。 現在，這是將程式碼部署至AEM做為雲端服務環境的唯一機制。
 
-AEM版本的更新 [永遠是](/help/implementing/deploying/aem-version-updates.md) ，與推送自訂程式碼不同的部署 [事件](#customer-releases)。 以另一種方式檢視，自訂程式碼版本應針對生產中的AEM版本進行測試，因為它將部署在的上方。 AEM版本更新會在此之後發生，此更新會頻繁且自動套用。 這些程式碼會向後相容於已部署的客戶程式碼。
-
+AEM版本的更新 [永遠是](/help/implementing/deploying/aem-version-updates.md) ，與推送自訂程式碼不同的部署 [事件](#customer-releases)。 以另一種方式檢視，自訂程式碼版本應針對生產中的AEM版本進行測試，因為這是將部署在頂端的版本。 AEM版本更新會在此之後發生，此更新會頻繁且自動套用。 這些程式碼可向後相容於已部署的客戶程式碼。
 
 本檔案的其餘部分將說明開發人員如何調整其實務，以便搭配AEM搭配Cloud Service的版本更新和客戶更新。
 
@@ -236,19 +235,19 @@ above appears to be internal, to confirm with Brian -->
 
 ## 索引 {#indexes}
 
-新的或修改的索引將在新的（綠色）版本開始處理流量之前，導致額外的索引建立或重新建立索引步驟。 本文詳細介紹了Skyline中的索引管 [理](/help/operations/indexing.md)。 您可以在Cloud Manager構建頁面上檢查索引作業的狀態，並在新版本準備就緒時收到通知。
+新的或修改的索引將在新的（綠色）版本開始處理流量之前，導致額外的索引建立或重新建立索引步驟。 如需AEM中「雲端服務」索引管理的詳細資訊，請參閱本 [文](/help/operations/indexing.md)。 您可以在Cloud Manager構建頁面上檢查索引作業的狀態，並在新版本準備就緒時收到通知。
 
 >[!NOTE]
 >
 >滾動部署所需的時間會因索引的大小而異，因為生成新索引之前，綠色版本無法接受流量。
 
-目前，Skyline無法與索引管理工具（例如ACS Commons Ensure Oak Index工具）搭配使用。
+目前，AEM(Cloud Service)無法與索引管理工具（例如ACS Commons Ensure Oak Index工具）搭配使用。
 
 ## 複寫 {#replication}
 
 出版機制與 [AEM Replication Java API向後相容](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html)。
 
-為了使用雲端就緒的AEM Quickstart來開發和測試複製，必須搭配「作者／發佈」設定使用傳統的複製功能。 如果AEM Author的UI登入點已移除給雲端，使用者會前往進行 `http://localhost:4502/etc/replication` 設定。
+為了使用雲端就緒AEM快速入門功能來開發和測試複製，傳統的複製功能必須搭配「作者／發佈」設定來使用。 如果AEM Author的UI登入點已移除給雲端，使用者會前往進行 `http://localhost:4502/etc/replication` 設定。
 
 ## 適用於滾動部署的向後相容程式碼 {#backwards-compatible-code-for-rolling-deployments}
 
