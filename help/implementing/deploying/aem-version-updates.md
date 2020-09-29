@@ -2,9 +2,9 @@
 title: AEM版本更新
 description: 'AEM版本更新 '
 translation-type: tm+mt
-source-git-commit: 3d9ed5ea31344bf4e25c37368cca01856cdbbd01
+source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## 簡介 {#introduction}
 
-AEM作為雲端服務現在使用「持續整合」和「持續傳送」(CI/CD)，以確保您的專案位於最新的AEM版本。 這表示所有升級作業都完全自動化，因此使用者不需要中斷任何服務。
+AEM作為雲端服務現在使用「持續整合」和「持續傳送」(CI/CD)，以確保您的專案位於最新的AEM版本。 這表示Production和Stage例項會更新為最新的AEM版本，而不會中斷使用者的服務。
 
 >[!NOTE]
 >如果更新到生產環境失敗，Cloud Manager將自動回滾階段環境。 這會自動執行，以確保更新完成後，階段和生產環境都位於相同的AEM版本。
