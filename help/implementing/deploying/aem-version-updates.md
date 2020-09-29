@@ -2,9 +2,9 @@
 title: AEM版本更新
 description: 'AEM版本更新 '
 translation-type: tm+mt
-source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
+source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,8 @@ AEM更新會透過密集且完全自動化的產品驗證管道，包括多個�
 
 [產品測試和客戶功能測試](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) （防止產品升級和客戶程式碼推送中斷生產）也會在AEM版本更新期間進行驗證。
 
->[注意]
+>[!NOTE]
+>
 >如果自訂代碼已推送至測試，然後遭到您拒絕，下一次AEM更新會移除這些變更，以反映上次成功客戶發行的git標籤至生產環境。
 
 ## 複合節點儲存 {#composite-node-store}
