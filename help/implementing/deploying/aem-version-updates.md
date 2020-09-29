@@ -2,9 +2,9 @@
 title: AEM版本更新
 description: 'AEM版本更新 '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,12 @@ AEM作為雲端服務現在使用「持續整合」和「持續傳送」(CI/CD)�
 
 AEM版本更新有兩種類型：
 
-* **推播更新**
+* **AEM推播更新**
 
    * 可以每天發佈。
    * 主要是維護，包括最新的錯誤修正和安全性更新。
 
-   隨著變更的定期套用，影響會逐漸增加，降低對服務的影響。
-
->[!NOTE]
->若要進一步瞭解AEM推播更新，請參閱 [Adobe Experience Manager As a Cloud Service Continuous Delivery Model的白皮書](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+      隨著變更的定期套用，影響會逐漸增加，降低對服務的影響。
 
 * **新功能更新**
 
