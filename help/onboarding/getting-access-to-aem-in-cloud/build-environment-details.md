@@ -2,9 +2,9 @@
 title: 構建環境詳細資訊
 description: 構建環境詳細資訊——雲服務
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: 34087724d41de1fc4303ddbbb92122760d360e77
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -71,9 +71,10 @@ Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設�
 ```
 
 >[!NOTE]
->支援的供應商 `oracle` 值是 `sun`。
->
->支援的版 `1.8`本值 `1.11`有、和 `11`。
+>支援的供應商 `oracle` 值 `sun`為，支援的版本值 `1.8`為、 `1.11`和 `11`。
+
+>[!NOTE]
+>Cloud Manager專案組建仍使用Java 8來叫用Maven，因此，透過 [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 等外掛程式檢查或強制工具鏈外掛程式中設定的Java版本無法運作，且不得使用此外掛程式。
 
 ## 環境變數 {#environment-variables}
 
