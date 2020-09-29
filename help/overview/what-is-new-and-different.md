@@ -2,9 +2,9 @@
 title: Adobe Experience Manager雲端服務的不同與新功能
 description: '不同與新功能- Adobe Experience Manager(AEM)雲端服務。 '
 translation-type: tm+mt
-source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
+source-git-commit: 52e8cf1e3fb503c1d222a9543cfc1ddfe87132b6
 workflow-type: tm+mt
-source-wordcount: '1875'
+source-wordcount: '1876'
 ht-degree: 10%
 
 ---
@@ -66,7 +66,7 @@ AEM 雲端服務現已具備：
 ![根據多變的使用模式自動調整規模](assets/introduction-04.png "根據多變的使用模式自動調整規模")
 
 
-## AEM更新 {#upgrades}
+## AEM更新 {#aem-updates}
 
 >[!NOTE]
 >如需詳細資訊，請參閱「 [AEM版本更新」](/help/implementing/deploying/aem-version-updates.md)。
@@ -78,7 +78,7 @@ AEM作為雲端服務現在使用「持續整合」和「持續傳送」(CI/CD)�
 
 AEM版本更新有兩種類型：
 
-* **推播更新**
+* **AEM推播更新**
 
    * 可以每天發佈。
    * 主要是維護，包括最新的錯誤修正和安全性更新。
