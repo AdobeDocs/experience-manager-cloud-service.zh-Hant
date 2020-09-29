@@ -2,7 +2,7 @@
 title: AEM版本更新
 description: 'AEM版本更新 '
 translation-type: tm+mt
-source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
+source-git-commit: 3d9ed5ea31344bf4e25c37368cca01856cdbbd01
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -24,6 +24,7 @@ AEM版本更新有兩種類型：
 * **AEM推播更新**
 
    * 可以每天發佈。
+
    * 主要是維護，包括最新的錯誤修正和安全性更新。
 
       隨著變更的定期套用，影響會逐漸增加，降低對服務的影響。
