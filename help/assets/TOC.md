@@ -4,9 +4,9 @@ user-guide-title: 資產雲端服務指南
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 0f3f34d8871462bf94f596d04c04c99db6488fa5
+source-git-commit: cea753a0783397c7fd9b757b2246c87ffa698f82
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '428'
 ht-degree: 90%
 
 ---
@@ -36,7 +36,6 @@ ht-degree: 90%
    + [如何新增或編輯中繼資料](meta-edit.md)
    + [查看資料夾資產和集合](bulk-approval.md)
    + [使用和設定 Assets Insights](assets-insights.md)
-   + [不同步作業](asynchronous-jobs.md)
    + [中繼資料設定檔](metadata-profiles.md)
    + [中繼資料結構](metadata-schemas.md)
    + [管理影片資產](manage-video-assets.md)
