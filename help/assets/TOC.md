@@ -4,10 +4,10 @@ user-guide-title: 資產雲端服務指南
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: cea753a0783397c7fd9b757b2246c87ffa698f82
+source-git-commit: 942eb1424af119c4dda6b8286a20ff030c807802
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 90%
 + [架構](architecture.md)
 + [支援的檔案格式](file-format-support.md)
 + [資產微服務概覽](asset-microservices-overview.md)
++ [無障礙環境支援 [!DNL Assets]](accessibility.md)
 + 使用 AEM 管理數位資產 {#manage}
    + [共用資產](share-assets.md)
    + [監控活動和 DAM 任務](assets-activity-history.md)
