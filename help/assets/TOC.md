@@ -4,24 +4,24 @@ user-guide-title: 資產雲端服務指南
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 942eb1424af119c4dda6b8286a20ff030c807802
+source-git-commit: 1f575a2bc844e108477a86d4f653928442165c8e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '406'
+ht-degree: 77%
 
 ---
 
 
-# 資產指南 {#assets}
+# [!DNL Assets] 指南 {#assets}
 
-+ [AEM Assets 雲端服務](/help/assets/home.md)
++ [[!DNL Assets] 雲端服務](/help/assets/home.md)
 + [概覽與新增功能](overview.md)
-+ [AEM Assets 雲端服務的重大變更](assets-cloud-changes.md)
-+ [架構](architecture.md)
++ [雲端服 [!DNL Assets] 務的顯著變更](assets-cloud-changes.md)
++ [[!DNL Assets] 架構](architecture.md)
 + [支援的檔案格式](file-format-support.md)
 + [資產微服務概覽](asset-microservices-overview.md)
 + [無障礙環境支援 [!DNL Assets]](accessibility.md)
-+ 使用 AEM 管理數位資產 {#manage}
++ 管理數位資產 {#manage}
    + [共用資產](share-assets.md)
    + [監控活動和 DAM 任務](assets-activity-history.md)
    + [開始使用資產微服務](asset-microservices-configure-and-use.md)
@@ -30,29 +30,29 @@ ht-degree: 0%
    + [資產管理常見任務](manage-digital-assets.md)
    + [智慧標記](smart-tags.md)
    + [如何組織資產](organize-assets.md)
-   + [在 AEM 中使用 Adobe Stock 資產](aem-assets-adobe-stock.md)
+   + [AEM [!DNL Adobe Stock] 中的使用資產](aem-assets-adobe-stock.md)
    + [管理集合](manage-collections.md)
    + [中繼資料概覽](manage-metadata.md)
-   + [整合 Adobe Creative Cloud](aem-cc-integration-best-practices.md)
+   + [與 [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [如何新增或編輯中繼資料](meta-edit.md)
    + [查看資料夾資產和集合](bulk-approval.md)
    + [使用和設定 Assets Insights](assets-insights.md)
    + [中繼資料設定檔](metadata-profiles.md)
    + [中繼資料結構](metadata-schemas.md)
    + [管理影片資產](manage-video-assets.md)
-   + [從 AEM 下載資產](download-assets-from-aem.md)
+   + [下載資產](download-assets-from-aem.md)
    + [要編輯的簽入和簽出資產](check-out-and-submit-assets.md)
    + [資產的數位版權管理](drm.md)
    + [浮水印資產](watermark-assets.md)
-+ 設定、管理及擴充 Assets {#admin}
++ Configure, administer and extend [!DNLAssets] {#admin}
    + [開發人員檔案和API參考](developer-reference-material-apis.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
-   + [關於使用影像設定檔和影片設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [設定智慧標記](smart-tags-configuration.md)
-   + [多語言資產和資產翻譯](translate-assets.md)
+   + [使用影像和視訊設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [設定智慧標籤](smart-tags-configuration.md)
+   + [多語言資產與翻譯](translate-assets.md)
    + [搜尋 Facet](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
-   + [AEM Assets HTTP API 內容片段支援](content-fragments/assets-api-content-fragments.md)
+   + [資產HTTP API中的內容片段支援](content-fragments/assets-api-content-fragments.md)
    + [連線資產](use-assets-across-connected-assets-instances.md)
    + [資產報表](asset-reports.md)
    + [階層式中繼資料](cascading-metadata.md)
@@ -60,8 +60,8 @@ ht-degree: 0%
    + [MediaLibrary 功能](medialibrary.md)
    + [匯入和匯出資產中繼資料](metadata-import-export.md)
 + 共用與發佈資產 {#brand-portal}
-   + [使用 Brand Portal 設定 AEM Assets](configure-aem-assets-with-brand-portal.md)
-   + [將資產發佈至 Brand Portal](publish-to-brand-portal.md)
+   + [配 [!DNL Assets] 置 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [將資產發佈至 [!DNL Brand Portal]](publish-to-brand-portal.md)
 + 內容片段 {#content-fragments}
    + [使用內容片段](content-fragments/content-fragments.md)
    + [管理內容片段](content-fragments/content-fragments-managing.md)
