@@ -2,17 +2,21 @@
 title: Dynamic Media 疑難排解
 description: Dynamic Media 疑難排解.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 1%
+source-wordcount: '995'
+ht-degree: 2%
 
 ---
 
 
 # Dynamic Media 疑難排解 {#troubleshooting-dynamic-media-scene-mode}
 
-以下檔案說明Dynamic Media的疑難排解。
+下列主題說明動態媒體的疑難排解。
+
+## 新動態媒體設定 {#new-dm-config}
+
+請參 [閱疑難排解新動態媒體設定。](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## 一般（所有資產） {#general-all-assets}
 
@@ -32,14 +36,6 @@ ht-degree: 1%
 ### 同步記錄 {#synchronization-logging}
 
 同步錯誤和問題已記錄 `error.log` 在(AEM伺服器目 `/crx-quickstart/logs/`錄)。 您可使用充份的記錄功能來判斷大多數問題的根本原因，不過您可以透過Sling Console( `com.adobe.cq.dam.ips` https://localhost:4502/system/console/slinglog[](https://localhost:4502/system/console/slinglog))，將記錄功能增加至套件上的DEBUG，以收集更多資訊。
-
-### 移動、複製、刪除 {#move-copy-delete}
-
-執行移動、複製或刪除操作之前，請執行以下操作：
-
-* 對於影像和視訊，請在執行移 `<object_node>/jcr:content/metadata/dam:scene7ID` 動、複製或刪除操作之前先確認有值。
-* 對於影像和檢視器預設集，請在執行移 `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` 動、複製或刪除作業之前先確認有值。
-* 如果遺失上述中繼資料值，您必須在移動、複製或刪除作業之前重新上傳資產。
 
 ### 版本控制 {#version-control}
 
@@ -75,16 +71,6 @@ ht-degree: 1%
      <li>發佈資產。</li>
      <li>重新上傳資產並發佈。</li>
     </ul> </td>
-  </tr>
-  <tr>
-   <td>集合編輯器中的資產選擇器卡在永久載入中</td>
-   <td><p>6.4版中已知問題已修正</p> </td>
-   <td><p>關閉選取器並重新開啟。</p> </td>
-  </tr>
-  <tr>
-   <td><strong>選取</strong> (Select)按鈕在選取資產做為編輯集的一部分後，不會作用中</td>
-   <td><p> </p> <p>6.4版中已知問題已修正</p> <p> </p> </td>
-   <td><p>先按一下「資產選擇器」中的其他資料夾，然後返回以選取資產。</p> </td>
   </tr>
   <tr>
    <td>切換投影片後，轉盤熱點會四處移動</td>
@@ -130,7 +116,7 @@ ht-degree: 1%
    <td>
     <ul>
      <li>檢查資料夾是否已指派視訊描述檔（如果不支援檔案格式）。 如果不支援，則只會顯示影像。</li>
-     <li>視訊設定檔必須包含多個編碼預設集，才能產生AVS集(單一編碼視為MP4檔案的視訊內容； 對於不支援的檔案，會視為與未處理的檔案相同)。</li>
+     <li>視訊設定檔必須包含多個編碼預設集，才能產生AVS集(單一編碼視為MP4檔案的視訊內容；對於不支援的檔案，會視為與未處理的檔案相同)。</li>
      <li>確認中繼資料中的內容，以檢查視訊是否 <code>dam:scene7FileAvs</code> 已完 <code>dam:scene7File</code> 成處理。</li>
     </ul> </td>
    <td>
@@ -160,7 +146,6 @@ ht-degree: 1%
    <td><p>若要判斷視訊編碼是否仍在進行中，或已進入失敗狀態：</p>
     <ul>
      <li>檢查視訊狀態 <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
-     <li>從工作流程控制台&gt;例項、封存、 <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> 失敗標籤監控視訊。</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -194,7 +179,7 @@ ht-degree: 1%
   <tr>
    <td>檢視器預設集未發佈</td>
    <td><p>繼續到示例管理器診斷頁： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>觀察計算值。 當正確運作時，您應看到：</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>: 在設定Dynamic Media Cloud設定後，檢視器資產同步大約需要10分鐘。</p> <p>如果未啟動的資產仍保留，請按一下「列出所有 <strong>未啟動的資產</strong> 」按鈕以檢視詳細資訊。</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>:在設定Dynamic Media Cloud設定後，檢視器資產同步大約需要10分鐘。</p> <p>如果未啟動的資產仍保留，請按一下「列出所有 <strong>未啟動的資產</strong> 」按鈕以檢視詳細資訊。</p> </td>
    <td>
     <ol>
      <li>導覽至管理工具中的檢視器預設集清單： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
@@ -220,19 +205,16 @@ ht-degree: 1%
     </ol> </td>
    <td><p>如果範例資產或檢視器預設圖稿尚未同步或發佈，請重新啟動整個複製／同步程式：</p>
     <ol>
-     <li>導覽至CRXDE Lite。
-      <ul>
-       <li>刪除 <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
-      </ul> </li>
-     <li>導覽至CRX套件管理器： <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
+     <li>導航到 <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
+     </li>
+     <li>按順序選擇以下操作：
       <ol>
-       <li>在清單中搜尋檢視器套件(開頭為 <code>cq-dam-scene7-viewers-content</code>)</li>
-       <li>按一下「 <strong>重新安裝</strong>」。</li>
+       <li>刪除同步資料夾。</li>
+       <li>刪除預設資料夾( <code>/conf</code>下)。
+       <li>觸發DM設定非同步作業。</li>
       </ol> </li>
-     <li>在「雲端服務」下，導覽至「動態媒體設定」頁面，然後開啟您的「動態媒體- S7」設定的設定對話方塊。
-      <ul>
-       <li>不進行任何變更，請按一下「 <strong>儲存</strong>」。 這會再次觸發邏輯，以建立並同步範例資產、檢視器預設CSS和圖稿。<br />  </li>
-      </ul> </li>
+     <li>等候AEM收件匣中同步成功的通知。
+     </li>
     </ol> </td>
   </tr>
  </tbody>
