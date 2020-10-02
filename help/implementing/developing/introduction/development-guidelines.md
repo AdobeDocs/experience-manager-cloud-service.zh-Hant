@@ -2,7 +2,7 @@
 title: AEM 雲端服務開發方針
 description: AEM 雲端服務開發方針
 translation-type: tm+mt
-source-git-commit: d7b3306f2415960669a60472ba343bfb394a1012
+source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 1%
@@ -232,9 +232,9 @@ AEM作為雲端服務，需要加密出站郵件。 以下章節說明如何要�
 
 AEM CS需要透過465埠傳送郵件。 如果郵件伺服器不支援埠465，則只要啟用TLS選項，就可以使用埠587。
 
-> [!NOTE]
+>[!NOTE]
 >
-> 請注意，Adobe不支援對唯一專用IP位址進行SMTP登入。
+>請注意，Adobe不支援對唯一專用IP位址進行SMTP登入。
 
 ### 設定 {#email-configuration}
 
