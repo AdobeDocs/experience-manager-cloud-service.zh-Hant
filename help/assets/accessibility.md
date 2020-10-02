@@ -1,11 +1,11 @@
 ---
-title: 中的輔助功能 [!DNL Experience Manager Assets]。
+title: 無障礙環境支援 [!DNL Experience Manager Assets]
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
+source-git-commit: a277d647e3ae95ab18cf13b76ceaaeef6d64cc26
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1841'
 ht-degree: 1%
 
 ---
@@ -43,11 +43,12 @@ Adobe致力於為所有使用者（包括殘障人士）製作產品。 [!DNL Ad
 
 ## 輔助技術 {#at-support}
 
-行動不便的使用者通常依賴硬體和軟體來存取網頁內容。 這些工具被稱為輔助技術。 [!DNL Adobe Experience Manager Assets] 使用下列輔助技術，讓使用者使用核心功能：
+行動不便的使用者通常依賴硬體和軟體來存取網頁內容。 這些工具被稱為輔助技術。 [!DNL Adobe Experience Manager Assets] 使用下列輔助技術，在使用軟體的核心功能時提供使用者支援：
 
 * 螢幕閱讀程式。
 * 語音識別軟體。
 * 鍵盤使用——導覽和捷徑。
+* 輔助硬體，包括開關控制項、可重新整理的盲文顯示器和其他電腦輸入裝置。
 * UI放大工具。
 
 ## [!DNL Experience Manager Assets] 可存取的使用案例 {#accessible-assets-use-cases}
