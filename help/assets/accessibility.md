@@ -1,11 +1,11 @@
 ---
 title: 無障礙環境支援 [!DNL Experience Manager Assets]
-description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
+description: 瞭解Cloud Service中的無 [!DNL Adobe Experience Manager] 障礙環境支援功能如何協助殘障人士。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a277d647e3ae95ab18cf13b76ceaaeef6d64cc26
+source-git-commit: bd27bb5da82c9997f4c562a3d1efad77df66728f
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1842'
 ht-degree: 1%
 
 ---
