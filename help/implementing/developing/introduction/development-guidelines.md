@@ -2,10 +2,10 @@
 title: AEM 雲端服務開發方針
 description: AEM 雲端服務開發方針
 translation-type: tm+mt
-source-git-commit: 90c3fd9a4293821568700148eb8d186b929988a1
+source-git-commit: d7b3306f2415960669a60472ba343bfb394a1012
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2237'
+ht-degree: 1%
 
 ---
 
@@ -185,47 +185,6 @@ AEM做為雲端服務時，會根據要求為HTTP（連接埠80）和HTTPS（連
 
 若要啟用專用IP位址，請向客戶支援提交要求，客戶支援將提供IP位址資訊。 請求應指定每個環境，如果新環境在初始請求後需要此功能，則應提出其他請求。 不支援沙盒程式環境。
 
-### 傳送電子郵件 {#sending-email}
-
-AEM作為雲端服務，需要加密出站郵件。 以下章節說明如何要求、設定和傳送電子郵件。
-
-**請求訪問**
-
-依預設，會停用傳出電子郵件。 若要啟動它，請提交支援票證，其中包含：
-
-1. 郵件伺服器的完全限定域名(例如 `smtp.sendgrid.net`)
-1. 要使用的埠。 如果郵件伺服器支援，埠465應為埠587請注意，只有在郵件伺服器要求並對該埠實施TLS時，埠587才可使用
-1. 要寄出的環境的程式ID和環境ID
-1. 作者、發佈或兩者都需要SMTP訪問。
-
-**傳送電子郵件**
-
-應使 [用Day CQ Mail Service OSGI服務](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) ，並且必須將電子郵件傳送給支援要求中指出的郵件伺服器，而不是直接傳送給收件者。
-
-AEM CS需要透過465埠傳送郵件。 如果郵件伺服器不支援埠465，則只要啟用TLS選項，就可以使用埠587。
-
-> [!NOTE]
->
-> 請注意，Adobe不支援對唯一專用IP位址進行SMTP登入。
-
-**設定**
-
-AEM中的電子郵件應使用 [Day CQ Mail Service OSGi服務傳送](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)。
-
-如需設 [定電子郵件設定的詳細資訊](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) ，請參閱AEM 6.5檔案。 對於AEM CS，必須對服務進行下列調 `com.day.cq.mailer.DefaultMailService OSGI` 整：
-
-如果已請求埠465:
-
-* 設 `smtp.port` 置 `465`
-* 設 `smtp.ssl` 置 `true`
-* 設 `smtp.starttls` 置 `false`
-
-如果請求了埠587（僅當郵件伺服器不支援埠465時允許）:
-
-* 設 `smtp.port` 置 `587`
-* 設 `smtp.ssl` 置 `false`
-* 設 `smtp.starttls` 置 `true`
-
 ### 功能使用 {#feature-usage}
 
 此功能與導致傳出流量的Java程式碼或程式庫相容，前提是這些程式碼或程式庫使用標準Java系統屬性進行Proxy組態。 實際上，這應該包括最常見的資料庫。
@@ -253,3 +212,44 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 ### 除錯注意事項 {#debugging-considerations}
 
 為了驗證流量是否確實在預期的專用IP位址上傳出，請檢查目標服務中的日誌（如果可用）。 否則，呼叫除錯服務(例如https://ifconfig.me/ip [](https://ifconfig.me/ip))可能會很有用，因為它會傳回呼叫的IP位址。
+
+## 傳送電子郵件 {#sending-email}
+
+AEM作為雲端服務，需要加密出站郵件。 以下章節說明如何要求、設定和傳送電子郵件。
+
+### 請求訪問 {#requesting-access}
+
+依預設，會停用傳出電子郵件。 若要啟動它，請提交支援票證，其中包含：
+
+1. 郵件伺服器的完全限定域名(例如 `smtp.sendgrid.net`)
+1. 要使用的埠。 如果郵件伺服器支援，埠465應為埠587請注意，只有在郵件伺服器要求並對該埠實施TLS時，埠587才可使用
+1. 要寄出的環境的程式ID和環境ID
+1. 作者、發佈或兩者都需要SMTP訪問。
+
+### 傳送電子郵件 {#sending-emails}
+
+應使 [用Day CQ Mail Service OSGI服務](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) ，並且必須將電子郵件傳送給支援要求中指出的郵件伺服器，而不是直接傳送給收件者。
+
+AEM CS需要透過465埠傳送郵件。 如果郵件伺服器不支援埠465，則只要啟用TLS選項，就可以使用埠587。
+
+> [!NOTE]
+>
+> 請注意，Adobe不支援對唯一專用IP位址進行SMTP登入。
+
+### 設定 {#email-configuration}
+
+AEM中的電子郵件應使用 [Day CQ Mail Service OSGi服務傳送](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)。
+
+如需設 [定電子郵件設定的詳細資訊](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) ，請參閱AEM 6.5檔案。 對於AEM CS，必須對服務進行下列調 `com.day.cq.mailer.DefaultMailService OSGI` 整：
+
+如果已請求埠465:
+
+* 設 `smtp.port` 置 `465`
+* 設 `smtp.ssl` 置 `true`
+* 設 `smtp.starttls` 置 `false`
+
+如果請求了埠587（僅當郵件伺服器不支援埠465時允許）:
+
+* 設 `smtp.port` 置 `587`
+* 設 `smtp.ssl` 置 `false`
+* 設 `smtp.starttls` 置 `true`
