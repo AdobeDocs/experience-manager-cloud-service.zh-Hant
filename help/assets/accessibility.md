@@ -3,9 +3,9 @@ title: 無障礙環境支援 [!DNL Experience Manager Assets]
 description: 瞭解Cloud Service中的無 [!DNL Adobe Experience Manager] 障礙環境支援功能如何協助殘障人士。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b866d9317ba1795b34f7e308426240c44bd1131c
+source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1840'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * 使用鍵將快 `Esc` 速動作圖示從縮圖檢視中移除，並不會移除鍵盤焦點從最後一個焦點項目中移除。
 * 在選取資產時，按Alt + 4鍵盤快速鍵會開啟「參照」(References)清單。 使用 `Tab` 金鑰，使用者可瀏覽無零參照項目。
 * 資產時間軸中提供資產的注釋。 可通過鍵盤訪問。
-* 您可透過鍵盤存取Experience Manager中的檢視設定。 使用者可使用方向鍵來瀏覽可用的卡片大小，並選取並切換，以在現有的「檢視設定」檢視中瀏覽及設定其他元素。
+* 您可透過鍵盤存取Experience Manager中的檢視設定。 使用者可使用方向鍵來瀏覽可用的卡片大小，並選取和切換，以在現有的「檢視設定」檢視中瀏覽及設定其他元素。
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -175,7 +175,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 
 ## 搜尋數位資產 {#search-assets}
 
-快速順暢的資產搜尋體驗可大幅提升內容速度。 內容速度使用案例是核心功能的一 [!DNL Assets] 部分。 若要從Omnisearch列開始搜尋，使用者可以使用鍵盤快速鍵，或 `/` 搭配螢幕 `Tab` 閱讀程式使用，以快速找到搜尋選項。 當焦點在搜尋選項搜尋選項時，螢幕閱讀程式會將選項的名 [!UICONTROL 稱旁白為] 「搜尋按鈕 ![」](assets/do-not-localize/search_icon.png)。 使用者可 `Return` 以按鍵開啟Omnisearch方塊。 螢幕閱讀程式不僅會說明搜尋方塊中輸入的關鍵字，也會說明由提供的自動完成建議 [!DNL Experience Manager Assets]。 使用者可使用方向鍵組合 `Return`，並 `Tab` 存取各種選項以觸發搜尋。
+快速順暢的資產搜尋體驗可大幅提升內容速度。 內容速度使用案例是核心功能的一 [!DNL Assets] 部分。 若要從Omnisearch列開始搜尋，使用者可以使用鍵盤快速鍵，或 `/` 搭配螢幕 `Tab` 閱讀程式使用，以快速找到搜尋選項。 當焦點在搜尋選項搜尋選項時，螢幕閱讀程式會將選項的名 [!UICONTROL 稱旁白為] 「搜尋按鈕 ![」](assets/do-not-localize/search_icon.png)。 使用者可 `Return` 以按鍵開啟Omnisearch方塊。 螢幕閱讀器不僅會說明搜尋方塊中輸入的關鍵字，也會說明所提供的建議 [!DNL Experience Manager Assets]。 使用者可使用方向鍵組合 `Return`，並 `Tab` 存取各種選項以觸發搜尋。
 
 搜尋功能可透過下列功能進一步存取：
 
@@ -187,7 +187,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 
 篩選搜尋結果時：
 
-* 搜尋結果頁面提供資訊豐富的標題，以更好地瞭解螢幕閱讀程式使用者。
+* 搜尋結果頁面提供資訊標題，以進一步瞭解螢幕閱讀程式使用者。
 * 螢幕閱讀器將搜索過濾器中的選項作為可擴展的收合器來宣佈。
 * 具有混合狀態按鈕的謂詞由螢幕閱讀器宣佈。
 
@@ -203,8 +203,8 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * 在連結共用對話方塊中，當在瀏覽模式中導覽時，螢幕閱讀程式、
 
    * 載入對話方塊後，請勿立即對表格資訊進行旁白。
-   * 可導覽至所有列出的自動建議。
-   * 對顯示的「新增電子郵件地址」和「搜尋」欄位自動建議進行旁白。
+   * 可導覽至所有列出的建議。
+   * 對顯示的「新增電子郵件地址」和「搜尋」欄位建議進行旁白。
 
 ## 無障礙環境支援 [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
