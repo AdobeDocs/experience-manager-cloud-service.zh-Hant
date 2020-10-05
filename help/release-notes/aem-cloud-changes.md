@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager (AEM) 雲端服務重大變更
 description: Adobe Experience Manager (AEM) 雲端服務重大變更
-translation-type: ht
-source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
-workflow-type: ht
-source-wordcount: '861'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
+workflow-type: tm+mt
+source-wordcount: '863'
+ht-degree: 96%
 
 ---
 
@@ -109,7 +109,7 @@ AEM 雲端服務預設啟用 HTTP 加速功能，包括適用於作者與發佈�
 
 ## 資產處理與傳送 {#asset-handling}
 
-AEM 雲端服務已最佳化上傳、處理和下載資產的相關作業，以更有效率地執行擴展功能，並加快上傳和下載速度。然而，這可能會影響部分現有的自訂程式碼。
+資產上傳、處理和下載已在Assets中最佳化為雲端服務，以提高擴充效率，並加快上傳和下載的速度。 然而，這可能會影響部分現有的自訂程式碼。
 
 * 舊版 AEM 已不提供預設的工作流程 **DAM Asset Update**。
 * 若要&#x200B;**在不轉換的情況下**&#x200B;傳送二進位的網站元件，應使用直接下載。
