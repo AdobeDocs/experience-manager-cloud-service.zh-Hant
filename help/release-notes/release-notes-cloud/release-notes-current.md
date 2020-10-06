@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.9.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 雲端服務 2020.9.0 版發行說明。'
 translation-type: tm+mt
-source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
+source-git-commit: 5fb87f82c092552aa5e1c4b569399ec0bbc0da3b
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '765'
 ht-degree: 10%
 
 ---
@@ -116,6 +116,8 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 請依照本節內容，瞭解程式碼重構工具的新增功能和更新。
 
 ### 新增功能 {#what-is-new-refactoring}
+
+[Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md) （資料庫現代化工具）是一套公用程式，可將內容和程式碼分離為獨立的套件，以便與為Adobe Experience Manager定義的專案結構（即雲端服務）相容，借以重組現有的專案套件。
 
 * AIO-CLI插件支援Repository Modernizer，並允許用戶使用插件執行工具。
 
