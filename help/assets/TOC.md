@@ -4,10 +4,10 @@ user-guide-title: 資產雲端服務指南
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 1f575a2bc844e108477a86d4f653928442165c8e
+source-git-commit: 98f914fbae9fa6291a8330fe0fe6ebbf51984de1
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 77%
+source-wordcount: '405'
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 77%
    + [要編輯的簽入和簽出資產](check-out-and-submit-assets.md)
    + [資產的數位版權管理](drm.md)
    + [浮水印資產](watermark-assets.md)
-+ Configure, administer and extend [!DNLAssets] {#admin}
++ 設定、管理及擴充 [!DNL Assets] {#admin}
    + [開發人員檔案和API參考](developer-reference-material-apis.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
    + [使用影像和視訊設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)
