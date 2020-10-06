@@ -3,9 +3,9 @@ title: 浮水印資產
 description: 將浮水印新增至您的數位資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 7ea7af1cf784b6866f3c2484475a8072ff76be2c
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] 可讓您在影像中新增數位浮水印。 [!DNL Assets] 支援將影像套用為浮水印至其他影像檔案。 浮水印可協助使用者驗證資產的真實性和版權所有權。 此外，水印可用來表示檔案的狀態，如機密、草稿、有效性等。
 
-若要設定Experience Manager以浮水印資產，請遵循下列步驟：
+若要設定浮 [!DNL Experience Manager] 水印資產，請遵循下列步驟：
 
 1. PNG檔案會套用為浮水印。 將此檔案上傳至DAM儲存庫。
 
-1. 存取與您的環境相關聯的Cloud Manager Git儲存庫。 提交在其Cloud Manager `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` Git儲存庫中命名的檔案，其中包含以下內容。 如需詳細資訊，請 [參閱如何在Experience Manager中將OSGi設定為雲端服務](/help/implementing/deploying/configuring-osgi.md)。
+1. 訪問與 [!DNL Cloud Manager] 您的環境關聯的Git儲存庫。 使用下列內容 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` 提交 [!DNL Cloud Manager] 在其Git儲存庫中命名的檔案。 如需詳細資訊，請 [參閱如何在雲端服 [!DNL Experience Manager] 務中設定OSGi](/help/implementing/deploying/configuring-osgi.md)。
 
    ```json
    {
