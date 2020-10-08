@@ -2,7 +2,7 @@
 title: 首次登入——雲端服務
 description: 首次登入——雲端服務
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
@@ -24,12 +24,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->雲端服務上的程式會以 **Experience Manager Cloud** (而非 **Experience Manager** for AMS程式)的副標題顯示，如下所示。
+>雲端服務上的程式會以副標題 **Experience Manager Cloud** (與 **Experience Manager** for AMS程式相反)標示，如下所示。
 
 ![](assets/first_timelogin1.png)
 
 
-根據您的情況，您將會看到以下兩種選項之一：
+根據您的情況，您將會看到以下兩種選項：
 
 * **Cloud Manager中不存在程式**
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 ## 在雲服務中添加新程式與現有程式 {#existing-program}
 
 
-1. 登入 **Adobe[!UICONTROL Experience Cloud ]**，您會看到「方案與產**品」清單&#x200B;**。
+1. 登入 **Adobe[!UICONTROL Experience Cloud]** ，您會看到「方案與產 **品」清單**。
 
    ![](assets/first_timelogin1.png)
 
