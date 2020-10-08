@@ -2,7 +2,7 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1688'
 ht-degree: 79%
@@ -140,8 +140,10 @@ ht-degree: 79%
 1. 導覽至&#x200B;*綜覽*&#x200B;頁面，並選取您要執行追加提取的移轉集。按一下&#x200B;**提取**&#x200B;即可開始追加提取。**移轉集提取**&#x200B;對話框隨即顯示。
 
    >[!IMPORTANT]
-   >您必須停用&#x200B;**在提取期間覆寫預備容器**選項。
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+   >
+   >您必須停用&#x200B;**在提取期間覆寫預備容器**&#x200B;選項。
+   >
+   >![影像](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### 內容轉移中的擷取程序 {#ingestion-process}
 
@@ -151,17 +153,16 @@ ht-degree: 79%
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-
 1. 擷取完成後，「發佈擷取」欄位中的 **狀態會更新** ，以 **便完成**。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
-
 
 #### 追加擷取 {#top-up-ingestion-process}
 
 「內容轉移工具」具備支援&#x200B;*追加*&#x200B;差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。
 
 >[!NOTE]
+>
 >初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
 
 擷取程序一旦完成，您即可使用追加擷取方法來轉移差異內容。請遵循下列步驟：
@@ -169,8 +170,10 @@ ht-degree: 79%
 1. 導覽至&#x200B;*綜覽*&#x200B;頁面，並選取您要執行追加擷取的移轉集。按一下&#x200B;**擷取**&#x200B;即可開始追加提取。**移轉集擷取**&#x200B;對話框隨即顯示。
 
    >[!IMPORTANT]
+   >
    >您應停用「擷取 **前先擦除Cloud例項上的現有內容** 」選項，以防止從先前的擷取活動刪除現有內容。
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+   >
+   >![影像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### 檢視移轉集記錄 {#viewing-logs-migration-set}
 
