@@ -3,7 +3,7 @@ title: 使用品牌入口網站將AEM資產設定為雲端服務
 description: 使用 Brand Portal 設定 AEM Assets.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: ad1f1e8c0ba5409cd645489263f349b29f080d27
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 14%
@@ -30,7 +30,6 @@ AEM Assets as a Cloud Service是透過Adobe Developer Console設定品牌入口�
 >[!NOTE]
 >
 >AEM Assets做為Cloud Service例項時，只能設定一個Brand Portal租用戶。
-
 
 ## 必備條件 {#prerequisites}
 
@@ -64,16 +63,10 @@ IMS 設定包括兩個步驟：
 公開金鑰（憑證）會在Adobe Developer Console上驗證您的個人檔案。
 
 1. 登入AEM Assets。
-
 1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
-
-
 1. 在「Adobe IMS設定」頁面中，按一下「 **[!UICONTROL 建立]**」。 It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
-
 1. 在「 **[!UICONTROL 雲端解決方案]** 」下拉式清 **[!UICONTROL 單中選取Adobe品牌入口網站]** 。
-
 1. 選中「 **[!UICONTROL 建立新證書]** 」複選框，並指定 **公鑰的別名** 。 別名用作公共密鑰的名稱。
-
 1. 按一下&#x200B;**[!UICONTROL 建立憑證]**。Then, click **[!UICONTROL OK]** to generate the public key.
 
    ![建立憑證](assets/ims-config2.png)
@@ -218,8 +211,6 @@ IMS 設定包括兩個步驟：
 >
 >確保IMS配置通過健康檢查。 如果配置未通過健康檢查，則無效。 您必須刪除它並建立新的有效設定。
 
-
-
 ### 設定雲端服務 {#configure-the-cloud-service}
 
 執行下列步驟以設定品牌入口網站雲端服務：
@@ -281,19 +272,15 @@ IMS 設定包括兩個步驟：
    >
    >請避免停用發佈代理程式，因為可能導致在佇列中執行的資產發佈失敗。
 
-
 您現在可以：
 
 * [從 AEM Assets 發佈資產到 Brand Portal](publish-to-brand-portal.md)
 * [從 AEM Assets 發佈資料夾到 Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [從 AEM Assets 發佈集合到 Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-
 * [將預設集、結構和 Facet 發佈至 Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [將標記發佈至 Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-
 See [Brand Portal documentation](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/home.html) for more information.
-
 
 ## 發佈記錄檔 {#distribution-logs}
 
@@ -302,7 +289,6 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/zh-Hant/exp
 例如，我們已將資產從AEM Assets發佈至品牌入口網站，以驗證設定。
 
 1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
-
 1. 按一 **[!UICONTROL 下「記錄]** 」以檢視處理和錯誤記錄。
 
    ![](assets/test-bpconfig5.png)
@@ -315,10 +301,12 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/zh-Hant/exp
 發佈資產時，會產生下列請求和回應記錄檔：
 
 **發佈代理程式請求**：
+
 * DSTRQ2 (請求 2)：觸發資產發佈請求。
 * DSTRQ3（請求3）:系統會觸發另一個請求，以發佈AEM Assets檔案夾（資產存在其中）並複製品牌入口網站中的檔案夾。
 
 **發佈代理程式回應**：
+
 * queue-bpdistributionagent0 (DSTRQ2)：資產已發佈至 Brand Portal。
 * queue-bpdistributionagent0(DSTRQ3):系統會複製品牌入口網站中的「AEM資產」檔案夾（包含資產）。
 
@@ -327,8 +315,6 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/zh-Hant/exp
 >[!NOTE]
 >
 >當父資料夾不存在於品牌入口網站中或已在AEM Assets中修改時，會產生其他請求。
-
-
 
 <!--
 
@@ -358,4 +344,4 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
    Comment Type: draft
 
    <li>Step text</li>
-   -->
+-->
