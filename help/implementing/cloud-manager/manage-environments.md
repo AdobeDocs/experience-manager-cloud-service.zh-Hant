@@ -2,7 +2,7 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 3768474b41abe76ee639e51c9eae39d72ab7c4a4
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 7%
@@ -95,7 +95,8 @@ Adobe會自動管理Stage和生產環境的更新。
 
 
 >[!NOTE]
-此功能不適用於為生產目的而在常規程式中設定的生產／階段環境。 不過，這項功能適用於沙盒程式中的「生產／階段」環境。
+>
+>此功能不適用於為生產目的而在常規程式中設定的生產／階段環境。 不過，這項功能適用於沙盒程式中的「生產／階段」環境。
 
 ## 管理存取 {#managing-access}
 
