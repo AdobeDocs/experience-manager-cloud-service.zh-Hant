@@ -2,9 +2,9 @@
 title: 記錄
 description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 translation-type: tm+mt
-source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
+source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2219'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 AEM即雲端服務是客戶可加入自訂程式碼的平台，可為客戶群建立獨特的體驗。 有鑑於此，記錄是本端開發和雲端環境（尤其是雲端服務的Dev環境）上除錯和瞭解程式碼執行的重要功能。
 
-AEM記錄和記錄檔層級會在設定檔中管理，這些設定檔會以Git儲存為AEM專案的一部分，並透過Cloud Manager部署為AEM專案的一部分。 以雲端服務身分登入AEM可分為兩個邏輯集：
+AEM記錄和記錄層級會在設定檔中管理，這些設定檔會以Git儲存為AEM專案的一部分，並透過Cloud Manager部署為AEM專案的一部分。 以雲端服務身分登入AEM可分為兩個邏輯集：
 
 * AEM記錄，在AEM應用程式層級執行記錄
 * Apache HTTPD Web Server/Dispatcher日誌記錄，它在發佈層執行Web伺服器和Dispatcher的日誌記錄。
@@ -300,7 +300,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 </tr>
 <tr>
 <td>使用者代理</td>
-<td>「Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，像Gecko）Chrome/81.0.4044.122 Safari/537.36英吋</td>
+<td>「Mozilla/5.0(Macintosh;Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，像Gecko）Chrome/81.0.4044.122 Safari/537.36英吋</td>
 </tr>
 </tbody>
 </table>
@@ -381,7 +381,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>使用者代理</td>
-<td>「Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，像Gecko）Chrome/81.0.4044.122 Safari/537.36英吋</td>
+<td>「Mozilla/5.0(Macintosh;Intel Mac OS X 10_15_4)AppleWebKit/537.36（KHTML，像Gecko）Chrome/81.0.4044.122 Safari/537.36英吋</td>
 </tr>
 </tbody>
 </table>
@@ -426,7 +426,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 </tr>
 <tr>
 <td>訊息</td>
-<td>AH00094: 命令行： 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
+<td>AH00094:命令行：'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
 </tr>
 </tbody>
 </table>
@@ -558,7 +558,7 @@ Apache層日誌（包括調度程式）位於Docker容器中，該容器中保�
 1. 若要登入容器，請輸入&quot;`docker exec -it <container> /bin/sh`&quot;，其中 `<container>` 是上一步驟中的分派器容器ID
 1. 導覽至 `/mnt/var/www/html`
 1. 記錄檔位於 `/etc/httpd/logs`
-1. 檢查日誌： 可以在資料夾XYZ下訪問這些日誌，在該資料夾中可以查看以下日誌：
+1. 檢查日誌：可以在資料夾XYZ下訪問這些日誌，在該資料夾中可以查看以下日誌：
    * Apache HTTPD Web伺服器訪問日誌- `httpd_access.log`
    * Apache HTTPD Web伺服器錯誤日誌- `httpd_error.log`
    * Dispatcher logs - `dispatcher.log`
@@ -569,7 +569,7 @@ Apache層日誌（包括調度程式）位於Docker容器中，該容器中保�
 
 ## 除錯製作與階段 {#debugging-production-and-stage}
 
-在特殊情況下，需要變更記錄檔層級，才能在「舞台(Stage)」或「生產(Production)」環境中以更精細的粒度登入。
+在特殊情況下，需要變更記錄檔層級，才能在「舞台(Stage)」或「生產(Production)」環境中以更精細的方式記錄。
 
 雖然這是可能的，但需要將Git中的設定檔的記錄檔層級從「警告」和「錯誤」變更為「除錯」，並以Cloud Service的身分執行AEM部署，以便將這些設定變更註冊至環境。
 
@@ -588,7 +588,7 @@ Apache層日誌（包括調度程式）位於Docker容器中，該容器中保�
 
 在支援要求中，客戶應指出：
 
-* 宿主斯普隆克
+* Splunk HEC端點地址
 * Splunk指數
 * 蘇普隆克港
 * Splunk HEC代號。 如需 [詳細資訊](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) ，請參閱本頁。
@@ -603,24 +603,24 @@ Apache層日誌（包括調度程式）位於Docker容器中，該容器中保�
 
 程式123，生產環境
 
-* Splunk主機： `splunk-hec-ext.acme.com`
-* Splunk指數： acme_123prod（客戶可以選擇想要的任何命名慣例）
-* Splunk埠： 443
-* Splunk HEC代號： ABC123
+* Splunk HEC端點地址： `splunk-hec-ext.acme.com`
+* Splunk指數：acme_123prod（客戶可以選擇想要的任何命名慣例）
+* Splunk埠：443
+* Splunk HEC代號：ABC123
 
 方案123，階段環境
 
-* Splunk主機： `splunk-hec-ext.acme.com`
-* Splunk指數： acme_123stage
-* Splunk埠： 443
-* Splunk HEC代號： ABC123
+* Splunk HEC端點地址： `splunk-hec-ext.acme.com`
+* Splunk指數：acme_123stage
+* Splunk埠：443
+* Splunk HEC代號：ABC123
 
 方案123,Dev Envs
 
-* Splunk主機： `splunk-hec-ext.acme.com`
-* Splunk指數： acme_123dev
-* Splunk埠： 443
-* Splunk HEC代號： ABC123
+* Splunk HEC端點地址： `splunk-hec-ext.acme.com`
+* Splunk指數：acme_123dev
+* Splunk埠：443
+* Splunk HEC代號：ABC123
 
 對於每個環境都使用相同的Splunk索引可能足夠，在這種情況下，可以使用 `aem_env_type` 任一欄位來根據dev、stage和prod值進行區分。 如果有多個開發環境， `aem_env_id` 也可使用欄位。 如果關聯的索引限制對精簡的Splunk用戶集的訪問，某些組織可能會為生產環境的日誌選擇單獨的索引。
 
