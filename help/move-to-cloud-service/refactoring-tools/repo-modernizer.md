@@ -2,7 +2,7 @@
 title: Repository Modernizer
 description: Repository Modernizer
 translation-type: tm+mt
-source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 3%
@@ -40,4 +40,5 @@ Repository Modernizer會建立下列部署結構，以建立相容的AEM Cloud S
    請參閱 **[Git資源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** ，以瞭解如何使用此工具。
 
    >[!NOTE]
+   >
    >Repository Modernizer是使用NodeJS開發的。 建議安裝NodeJS 10.0+。
