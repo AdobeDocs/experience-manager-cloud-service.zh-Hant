@@ -2,7 +2,7 @@
 title: 關於動態媒體影像描述檔和視訊描述檔
 description: 「影像描述檔」或「視訊描述檔」是套用至您上傳至資料夾之資產的選項的方式。 例如，您可以指定要套用至您上傳之動態媒體視訊資產的視訊編碼。 或者，要套用至動態媒體影像資產的影像描述檔，以便正確裁切。
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 2%
@@ -37,18 +37,19 @@ ht-degree: 2%
 
 您可以重新處理已有現有動態媒體影像描述檔或稍後變更之動態媒體視訊描述檔的資料夾中的資產。
 
-例如，假設您建立了動態媒體影像描述檔，並將其指派給資料夾。 上傳至資料夾的任何影像資產都會自動將影像描述檔套用至資產。 不過，稍後您決定將新的智慧型裁切比例新增至影像描述檔。 現在，您只需執行 *Scene7: 重新處理資產* 工作流程。
+例如，假設您建立了動態媒體影像描述檔，並將其指派給資料夾。 上傳至資料夾的任何影像資產都會自動將影像描述檔套用至資產。 不過，稍後您決定將新的智慧型裁切比例新增至影像描述檔。 現在，您只需執行 *Scene7:重新處理資產* 工作流程。
 
 您可以對第一次處理失敗的資產執行重新處理工作流程。 因此，即使您尚未編輯影像描述檔或視訊描述檔，或已套用影像描述檔或視訊描述檔，您仍可隨時對資產資料夾執行重新處理工作流程。
 
-您可以選擇調整重新處理工作流的批大小，從預設的50個資產調整到1000個資產。 當您執行 _Scene7時： 重新處理資料夾上的_ 「資產」工作流程，資產會分批分組，然後傳送至Dynamic Media伺服器進行處理。 在處理後，整個批次集中每個資產的中繼資料會在AEM上更新。 如果批次大小很大，您可能會遇到處理延遲。 或者，如果批次大小太小，則可能導致往返Dynamic Media伺服器的次數過多。
+您可以選擇調整重新處理工作流的批大小，從預設的50個資產調整到1000個資產。 當您執行 _Scene7時：重新處理資料夾上的_ 「資產」工作流程，資產會分批分組，然後傳送至Dynamic Media伺服器進行處理。 在處理後，整個批次集中每個資產的中繼資料會在AEM上更新。 如果批次大小很大，您可能會遇到處理延遲。 或者，如果批次大小太小，則可能導致往返Dynamic Media伺服器的次數過多。
 
 請參 [閱調整重新處理工作流的批大小](#adjusting-load)。
 
 >[!NOTE]
 >
 >如果您要從Dynamic Media Classic將資產大量移轉至AEM，則必須在Dynamic Media伺服器上啟用Migration複製代理。 移轉完成後，請務必停用代理。
-移轉發佈代理必須在Dynamic Media伺服器上停用，讓重新處理工作流程如預期般運作。
+>
+>移轉發佈代理必須在Dynamic Media伺服器上停用，讓重新處理工作流程如預期般運作。
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
@@ -57,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **要重新處理資料夾中的動態媒體資產**:
-1. 在AEM中，從「資產」頁面導覽至動態媒體資產的檔案夾，其中已指派影像描述檔或視訊描述檔，且您要套用 **Scene7: 重新處理資產** ,
+1. 在AEM中，從「資產」頁面導覽至動態媒體資產的檔案夾，其中已指派影像描述檔或視訊描述檔，且您要套用 **Scene7:重新處理資產** ,
 
    已指派影像描述檔或視訊描述檔的檔案夾，會在「卡片檢視」的檔案夾名稱正下方顯示描述檔名稱。
 
@@ -73,7 +74,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    ![重新處理資產工作流程1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. 按一下「 **[!UICONTROL 開始工作流程]**」。
-1. 從「開 **[!UICONTROL 始工作流程]** 」下拉式清單中，選擇 **[!UICONTROL Scene7: 重新處理資產]**。
+1. 從「開 **[!UICONTROL 始工作流程]** 」下拉式清單中，選擇 **[!UICONTROL Scene7:重新處理資產]**。
 1. （可選）在「輸 **入工作流的標題** 」文本欄位中輸入工作流的名稱。 如有必要，可以使用名稱來引用工作流實例。
 
    ![重新處理資產2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
@@ -89,12 +90,12 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 **（可選）調整重新處理工作流的批大小**
 
 1. 在Experience Manager中，點選 **[!UICONTROL Adobe Experience Manager]** ，存取全域導覽主控台，然後點選「工具 **[!UICONTROL (槌子) 」圖示>「工]** 作流程>模型」 ****。
-1. 在「工作流程模型」頁面的「卡片檢視」或「清單檢視」中，選取 **[!UICONTROL Scene7: 重新處理資產]**。
+1. 在「工作流程模型」頁面的「卡片檢視」或「清單檢視」中，選取 **[!UICONTROL Scene7:重新處理資產]**。
 
-   ![「工作流程模型」頁面與Scene7: 重新處理卡片檢視中選取的資產工作流程](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![「工作流程模型」頁面與Scene7:重新處理卡片檢視中選取的資產工作流程](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
-1. 在工具列上，按一下「編 **[!UICONTROL 輯」]**。 新的瀏覽器標籤會開啟Scene7: 「重新處理資產」工作流模型頁。
-1. 在Scene7: 重新處理「資產」工作流程頁面，靠近右上角，點選「 **[!UICONTROL 編輯]** 」以「解除鎖定」工作流程。
+1. 在工具列上，按一下「編 **[!UICONTROL 輯」]**。 新的瀏覽器標籤會開啟Scene7:「重新處理資產」工作流模型頁。
+1. 在Scene7:重新處理「資產」工作流程頁面，靠近右上角，點選「 **[!UICONTROL 編輯]** 」以「解除鎖定」工作流程。
 1. 在工作流程中，選取「Scene7批次上傳」元件以開啟工具列，然後點選工具列 **[!UICONTROL 上的]** 「設定」。
 
    ![Scene7批次上傳元件](/help/assets/dynamic-media/assets/reprocess-assets8.png)
@@ -111,11 +112,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. 在「批次上傳至Scene7 —— 步驟屬 **[!UICONTROL 性」對話方塊的右上角]** ，點選「 **[!UICONTROL 完成」]**。
 
-1. 在Scene7的右上角： 重新處理「資產」工作流程模型頁面，點選「 **[!UICONTROL 同步」]**。 當您看到「已 **[!UICONTROL 同步]**」時，工作流程執行階段模型已成功同步，並可重新處理資料夾中的資產。
+1. 在Scene7的右上角：重新處理「資產」工作流程模型頁面，點選「 **[!UICONTROL 同步」]**。 當您看到「已 **[!UICONTROL 同步]**」時，工作流程執行階段模型已成功同步，並可重新處理資料夾中的資產。
 
    ![同步化工作流程模型](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
-1. 關閉顯示Scene7的瀏覽器標籤： 重新處理資產工作流程模型。
+1. 關閉顯示Scene7的瀏覽器標籤：重新處理資產工作流程模型。
 
 <!-- MAY BE NEEDED IN THE FUTURE
 
