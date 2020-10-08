@@ -2,7 +2,7 @@
 title: 建立及組織頁面
 description: 如何使用AEM建立和組織頁面
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 7%
@@ -362,7 +362,7 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
 
 >[!NOTE]
 >
->頁面只能移動到允許基於該頁面的模板的位置。 如需詳 [細資訊](/help/implementing/developing/components/templates.md#template-availability) ，請參閱範本可用性。—>
+>頁面只能移動到允許基於該頁面的模板的位置。 如需詳 [細資訊](/help/implementing/developing/components/templates.md#template-availability) ，請參閱範本可用性。
 
 #### 非同步動作 {#asynchronous-actions}
 
