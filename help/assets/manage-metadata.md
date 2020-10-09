@@ -4,9 +4,9 @@ description: 瞭解中繼資料的類型， [!DNL Adobe Experience Manager Asset
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1932'
 ht-degree: 4%
 
 ---
@@ -213,7 +213,7 @@ Enterprise Manager Assets可讓您同時編輯多個資產的中繼資料，以�
 ### 列印專用的中繼資料 {#print-specific-metadata}
 
 * PDF和PDF/X - Adobe PDF和協力廠商應用程式。
-* PRISM —— 發佈 [業界標準中繼資料的需求](https://www.prismstandard.org)。
+* PRISM —— 發佈 [業界標準中繼資料的需求](https://www.idealliance.org/prism-metadata)。
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` -分頁文字的XMP中繼資料。
 
