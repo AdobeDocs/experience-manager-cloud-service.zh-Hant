@@ -4,9 +4,9 @@ description: 瞭解如何使用「篩選」面板在AEM中尋找所需資產，�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
 workflow-type: tm+mt
-source-wordcount: '4521'
+source-wordcount: '4523'
 ht-degree: 7%
 
 ---
@@ -108,7 +108,7 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 1. 在「搜 **[!UICONTROL 尋促銷]** 」方塊中，指定您要大幅提升影像搜尋的關鍵字，然後按一下／點選「新增」 ****。 您可以以相同的方式指定多個關鍵字。
 1. 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。您為此關鍵字促銷的資產會出現在熱門搜尋結果中。
 
-您可以透過提升目標關鍵字搜尋結果中某些資產的排名，來利用此功能。 請參閱以下範例影片。 如需詳細資訊，請參 [閱「AEM中的搜尋」](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html)。
+您可以透過提升目標關鍵字搜尋結果中某些資產的排名，來利用此功能。 請參閱以下範例影片。 如需詳細資訊，請參 [閱「AEM中的搜尋」](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
