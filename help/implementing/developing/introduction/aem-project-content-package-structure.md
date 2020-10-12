@@ -2,7 +2,7 @@
 title: AEM 專案結構
 description: 瞭解如何定義封裝結構以部署至Adobe Experience Manager Cloud Service。
 translation-type: tm+mt
-source-git-commit: 51e9a9a8c9d63583a5dc116f886d878d3f849687
+source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '2828'
 ht-degree: 13%
@@ -63,7 +63,7 @@ Oak索引(`/oak:index`)由AEM特別管理，做為雲端服務部署程式。 �
 + 該 `ui.apps` 軟體包包含要部署的所有代碼，並且僅部署到 `/apps`。 包的常見元 `ui.apps` 素包括，但不限於：
    + [元件定義與HTL指令碼](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
-   + JavaScript和CSS（透過用戶端程式庫）
+   + JavaScript和CSS(透過用戶 [端程式庫](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
    + [覆蓋](/help/implementing/developing/introduction/overlays.md) : `/libs`
       + `/apps/cq`、 `/apps/dam/`等。
