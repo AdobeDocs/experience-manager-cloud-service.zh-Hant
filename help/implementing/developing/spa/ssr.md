@@ -2,7 +2,7 @@
 title: SPA和伺服器端演算
 description: 在SPA中使用伺服器端演算(SSR)可加速頁面的初始載入，然後將進一步演算傳遞給用戶端。
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -118,7 +118,7 @@ AEM必須知道可擷取遠端轉譯內容的位置。 不論您 [選擇為SSR�
     </ul> </td>
    <td>
     <ul>
-     <li>AEM開發人員必須透過屬性提供應用程式（例如CSS和JavaScript）所需的Clientlib資 <code>allowProxy</code> 源<br /> </li>
+     <li>AEM開發人員必須透過屬性提供應用程式（例如CSS和JavaScript）所需的Clientlib資 <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> 源<br /> </li>
      <li>資源必須在AEM和Adobe I/O Runtime之間同步<br /> </li>
      <li>若要啟用SPA的編寫功能，可能需要Adobe I/O Runtime的代理伺服器</li>
     </ul> </td>
