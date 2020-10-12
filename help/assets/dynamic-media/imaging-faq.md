@@ -146,7 +146,8 @@ Tap **[!UICONTROL Setup > Application Setup > General Settings]**. 尋找標示�
 請求的處理順序依技術支援部門接收的順序，依等待清單而定。
 
 >[!NOTE]
-啟用智慧型影像可能需要較長的前置時間，因為Adobe會清除快取。 因此，在任何指定時間，都只能處理少數客戶轉場。
+>
+>啟用智慧型影像可能需要較長的前置時間，因為Adobe會清除快取。 因此，在任何指定時間，都只能處理少數客戶轉場。
 
 ## 切換到使用Smart Imaging時有哪些風險？ {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -168,7 +169,8 @@ Tap **[!UICONTROL Setup > Application Setup > General Settings]**. 尋找標示�
 1. 在不同的瀏覽器和使用者條件上重複此測試。
 
 >[!NOTE]
-並非所有影像都會轉換。 Smart Imaging決定是否需要轉換來改善效能。 在某些情況下，若沒有預期的效能提升，或格式不是JPEG或PNG，則不會轉換影像。
+>
+>並非所有影像都會轉換。 Smart Imaging決定是否需要轉換來改善效能。 在某些情況下，若沒有預期的效能提升，或格式不是JPEG或PNG，則不會轉換影像。
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 

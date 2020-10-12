@@ -393,7 +393,8 @@ Rich Text Editor使用容器DOM元素，其ID提供 `CQrte` 不同的檢視和�
    對每種必要格式重複步驟。
 
 >[!CAUTION]
-如果您定義自訂格式，則會移`<p>`除預 `<h1>`設 `<h2>`格式( `<h3>`、和)。 重新建立 `<p>` 預設格式的格式。
+>
+>如果您定義自訂格式，則會移`<p>`除預 `<h1>`設 `<h2>`格式( `<h3>`、和)。 重新建立 `<p>` 預設格式的格式。
 
 ## 設定特殊字元 {#spchar}
 
@@ -402,7 +403,8 @@ Rich Text Editor使用容器DOM元素，其ID提供 `CQrte` 不同的檢視和�
 您可以配置RTE，使選擇的字元可用；定義不同的字元或整個序列。
 
 >[!CAUTION]
-新增特殊字元會覆寫預設選擇。 如果需要，請在選取範圍中重新定義這些字元。
+>
+>新增特殊字元會覆寫預設選擇。 如果需要，請在選取範圍中重新定義這些字元。
 
 ### 定義單一字元 {#definesinglechar}
 
@@ -477,10 +479,12 @@ Rich Text Editor使用容器DOM元素，其ID提供 `CQrte` 不同的檢視和�
 樣式通常套用在文字上，但也可套用在表格或數個表格儲存格上的個別樣式集。 作者可從「儲存格屬性」或「表格屬性」對話方塊的「樣式選取器」方塊中，使用此類樣式。 在文本元件（或衍生元件）中編輯表時，這些樣式是可用的，在標準表元件中不可用。
 
 >[!NOTE]
-您只能為Classic UI定義表格和儲存格的樣式。
+>
+>您只能為Classic UI定義表格和儲存格的樣式。
 
 >[!NOTE]
-在RTE元件中或從RTE元件中複製和貼上表取決於瀏覽器。 並非所有瀏覽器都可立即使用。 根據表格結構和瀏覽器，您可能會得到不同的結果。 例如，當您在Mozilla Firefox的Classic UI和Touch UI中複製並貼上RTE元件中的表格時，表格的版面不會保留。
+>
+>在RTE元件中或從RTE元件中複製和貼上表取決於瀏覽器。 並非所有瀏覽器都可立即使用。 根據表格結構和瀏覽器，您可能會得到不同的結果。 例如，當您在Mozilla Firefox的Classic UI和Touch UI中複製並貼上RTE元件中的表格時，表格的版面不會保留。
 
 1. 在元件中導航到節點 `<rtePlugins-node>/table`。 如果節點不存在，請建立節點。 如需詳細資訊，請 [參閱啟動外掛程式](#activateplugin)。
 1. 在節點 `features` 上建立屬 `table` 性：
@@ -490,8 +494,9 @@ Rich Text Editor使用容器DOM元素，其ID提供 `CQrte` 不同的檢視和�
    * **值** `*`
 
    >[!NOTE]
-   如果不想啟用所有表功能，可以將屬性創 `features` 建為：
-   * **類型** `String[]`
+   >
+   >如果不想啟用所有表功能，可以將屬性創 `features` 建為：
+   >* **類型** `String[]`
 
    * **視需要**，為下列其中一項或兩項設定值：
       * `table` 允許編輯表屬性；包括樣式。
@@ -557,7 +562,8 @@ Rich Text Editor使用容器DOM元素，其ID提供 `CQrte` 不同的檢視和�
 當spellcheck外掛程式啟動時，RTE會針對每個適當的語言使用字典。 然後根據網站的語言選擇，分別從子樹中抽取語言屬性或從URL中抽取語言；例如。 分支 `/en/` 被選中為英語，分支被選 `/de/` 中為德語。
 
 >[!NOTE]
-訊息「拼字檢查失敗」。 is seen if a check is treed for a language that is not installed.
+>
+>訊息「拼字檢查失敗」。 is seen if a check is treed for a language that is not installed.
 
 標準的Experience Manager安裝包含下列字典：
 
@@ -565,7 +571,8 @@ Rich Text Editor使用容器DOM元素，其ID提供 `CQrte` 不同的檢視和�
 * 英文(en_gb)
 
 >[!NOTE]
-標準字典位於 `/libs/cq/spellchecker/dictionaries`，以及適當的讀我檔案。 請勿修改檔案。
+>
+>標準字典位於 `/libs/cq/spellchecker/dictionaries`，以及適當的讀我檔案。 請勿修改檔案。
 
 若要新增更多字典，請依照下列步驟進行。
 
@@ -573,15 +580,17 @@ Rich Text Editor使用容器DOM元素，其ID提供 `CQrte` 不同的檢視和�
 1. 選擇所需的語言，並下載具有拼字定義的ZIP檔案。 解壓檔案系統上的存檔內容。
 
    >[!CAUTION]
-   僅支援 `MySpell` OpenOffice.org v2.0.1或更早版本的字典。 由於字典現在是封存檔案，因此建議您在下載後確認封存。
+   >
+   >僅支援 `MySpell` OpenOffice.org v2.0.1或更早版本的字典。 由於字典現在是封存檔案，因此建議您在下載後確認封存。
 
 1. 找到。aff和。dic檔案。 將檔案名稱保留為小寫。 例如， `de_de.aff` 和 `de_de.dic`。
 1. 將。aff和。dic檔案載入到儲存庫中，位於 `/apps/cq/spellchecker/dictionaries`。
 
 >[!NOTE]
-RTE拼字檢查器是隨選的。 當您開始輸入文字時，它不會自動執行。
-若要執行拼字檢查程式，請點選／按一下工具列上的「拼字檢查程式」按鈕。 RTE會檢查單字的拼字，並反白顯示拼字錯誤的單字。
-如果您加入拼字檢查程式所建議的任何變更，文字變更和拼字錯誤的字詞狀態將不再反白顯示。 要運行拼字檢查器，請再次點選／按一下「拼字檢查器」按鈕。
+>
+>RTE拼字檢查器是隨選的。 當您開始輸入文字時，它不會自動執行。
+>若要執行拼字檢查程式，請點選／按一下工具列上的「拼字檢查程式」按鈕。 RTE會檢查單字的拼字，並反白顯示拼字錯誤的單字。
+>如果您加入拼字檢查程式所建議的任何變更，文字變更和拼字錯誤的字詞狀態將不再反白顯示。 要運行拼字檢查器，請再次點選／按一下「拼字檢查器」按鈕。
 
 ## 設定還原和重做動作的步驟記錄大小 {#undohistory}
 
@@ -616,7 +625,8 @@ RTE允許作者還原或重做最後幾次編輯。 依預設，50個編輯會�
 啟用縮進（預設）時，可以定義縮進大小：
 
 >[!NOTE]
-此縮進大小僅應用於文本的段落（塊）;它不會影響實際清單的縮進。
+>
+>此縮進大小僅應用於文本的段落（塊）;它不會影響實際清單的縮進。
 
 1. 在元件中導航到節點 `<rtePlugins-node>/lists`。 如果節點不存在，請建立這些節點。 如需詳細資訊，請 [參閱啟動外掛程式](#activateplugin)。
 1. 在節點 `lists` 上建立 `identSize` 參數：
@@ -648,10 +658,11 @@ RTE允許作者還原或重做最後幾次編輯。 依預設，50個編輯會�
    * **類型** `nt:unstructured`
 
    >[!NOTE]
-   節 `../items/text` 點具有以下屬性：
-   * **名稱** `xtype`
-   * **類型** `String`
-   * **值** `richtext`
+   >
+   >節 `../items/text` 點具有以下屬性：
+   >* **名稱** `xtype`
+   >* **類型** `String`
+   >* **值** `richtext`
 
    節點的位 `../items/text` 置可能隨對話框的結構而異。 兩個例子 `/apps/myProject>/components/text/dialog/items/text` 是 `/apps/<myProject>/components/text/dialog/items/panel/items/text`。
 

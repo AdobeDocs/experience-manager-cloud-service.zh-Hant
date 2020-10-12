@@ -92,9 +92,10 @@ There was a link here that showed the video frame of an interactive video and wh
 ## （可選）識別Quickview變數 {#optional-identifying-quickview-variables}
 
 >[!NOTE]
-只有在以下情況下，才需要此任務：
-* 您想要透過觸發至Quickviews，將互動功能加入視訊中。
-* 您的AEM實作不會使 *用* eCommerce整合架構，將產品資料從任何電子商務解決方案（例如IBM Websphere Commerce、Elastic Path、hybris或Intershop）拉入AEM。 <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
+>
+>只有在以下情況下，才需要此任務：
+>* 您想要透過觸發至Quickviews，將互動功能加入視訊中。
+>* 您的AEM實作不會使 *用* eCommerce整合架構，將產品資料從任何電子商務解決方案（例如IBM Websphere Commerce、Elastic Path、hybris或Intershop）拉入AEM。 <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
 
 如果您的AEM實作使用電子商務，您可以略過此工作並繼續下一個工作。
 
@@ -255,10 +256,12 @@ Quickview的大多數實施都採用以下模式：
 請參閱 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)。
 
 >[!NOTE]
-請注意，當您將檢視器內嵌在「體驗片段」時，不支援「互動式視訊」中的社交媒體分享工具。 若要解決這個問題，您可以使用或建立沒有社交媒體分享工具的檢視器預設集。 這些檢視器預設集可讓您成功將它內嵌在「體驗片段」中。
+>
+>請注意，當您將檢視器內嵌在「體驗片段」時，不支援「互動式視訊」中的社交媒體分享工具。 若要解決這個問題，您可以使用或建立沒有社交媒體分享工具的檢視器預設集。 這些檢視器預設集可讓您成功將它內嵌在「體驗片段」中。
 
 >[!NOTE]
-如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，則無法使用以URL為基礎的連結方法。
+>
+>如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，則無法使用以URL為基礎的連結方法。
 
 在目前的建立／編輯作業階段中，支援在頁面右上角的「復原」和「重做」選項。
 
@@ -479,7 +482,8 @@ Quickview的大多數實施都採用以下模式：
    完成後，點選「儲 **[!UICONTROL 存」]**。
 
    >[!NOTE]
-   當您儲存互動式視訊時，會自動 `.vtt` 儲存相關的檔案。檔 `.vtt` 案會儲存至位 `_VTT` 於資產根目錄的資 **[!UICONTROL 料夾]**。您的互動式視訊必須有檔案和資料夾才能在網站上正確播放。因此，請勿移動、編輯或刪除資料夾 `_VTT` 或其內容。
+   >
+   >當您儲存互動式視訊時，會自動 `.vtt` 儲存相關的檔案。檔 `.vtt` 案會儲存至位 `_VTT` 於資產根目錄的資 **[!UICONTROL 料夾]**。您的互動式視訊必須有檔案和資料夾才能在網站上正確播放。因此，請勿移動、編輯或刪除資料夾 `_VTT` 或其內容。
 
 1. 發佈互動式視訊。 發佈會建立內嵌代碼或URL，您最終會將其複製並貼至您的網站體驗。
 
@@ -488,7 +492,8 @@ Quickview的大多數實施都採用以下模式：
    請參閱 [發佈資產](publishing-dynamicmedia-assets.md)。
 
    >[!NOTE]
-   若要使用Quickviews發佈可購買的視訊，請確定您也會從您的商務區個別發佈視訊的每個相關影像資產。
+   >
+   >若要使用Quickviews發佈可購買的視訊，請確定您也會從您的商務區個別發佈視訊的每個相關影像資產。
 
    新增時間軸區段並發佈互動式視訊後，您就可將它新增至現有的網站登陸頁面。 請參 [閱整合互動式視訊與您的網站。](#integrating-an-interactive-video-with-your-website)
 
@@ -513,8 +518,9 @@ See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-med
 複製的內嵌程式碼是為回應式環境而設定，因此應自動符合靜態視訊先前所佔用的區域。
 
 >[!NOTE]
-此時，如果您只新增超連結網頁的互動功能，就完成了。
-不過，如果您新增任何互動功能來觸發Quickview，則互動視訊旁的縮圖僅供顯示之用；它們尚未與您現有的Quickviews整合。 在這種情況下，您現在需要將互動式視訊與網站上現有的Quickviews整合。
+>
+>此時，如果您只新增超連結網頁的互動功能，就完成了。
+>不過，如果您新增任何互動功能來觸發Quickview，則互動視訊旁的縮圖僅供顯示之用；它們尚未與您現有的Quickviews整合。 在這種情況下，您現在需要將互動式視訊與網站上現有的Quickviews整合。
 
 **範例**
 
@@ -556,7 +562,8 @@ See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-med
 ## 將互動式視訊與現有的Quickview整合 {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
-此工作僅在您是獨立AEM Assets客戶時適用。
+>
+>此工作僅在您是獨立AEM Assets客戶時適用。
 
 此程式的最後一個步驟是將互動式視訊與網站上使用的現有Quickview實作整合。 沒有適合所有情況的整合解決方案。 每個Quickview實施都是獨一無二的。 因此，需要一種最可能需要前端IT人員協助的具體方法。
 

@@ -236,10 +236,11 @@ ht-degree: 11%
    * **刪除**
 
 >[!NOTE]
-備注如下：
-* 所有資產的標準功能
-* 在時間軸中製作
-* 與片段資產相關
+>
+>備注如下：
+>* 所有資產的標準功能
+>* 在時間軸中製作
+>* 與片段資產相關
 
 註解（適用於內容片段）包括：
 * 在片段編輯器中輸入
@@ -274,7 +275,8 @@ ht-degree: 11%
 * **完成** ，將返回控制台
 
 >[!NOTE]
-比較片段時，無法編輯片段內容。
+>
+>比較片段時，無法編輯片段內容。
 
 ![比較](assets/cfm-managing-06.png)
 
@@ -291,8 +293,9 @@ ht-degree: 11%
 ## 發佈和參照片段 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
-如果您的片段是以模型為基礎，則應確定 [模型已發佈](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
-如果您發佈模型尚未發佈的內容片段，則選擇清單會指出此點，而模型會隨片段一起發佈。
+>
+>如果您的片段是以模型為基礎，則應確定 [模型已發佈](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
+>如果您發佈模型尚未發佈的內容片段，則選擇清單會指出此點，而模型會隨片段一起發佈。
 
 必須發佈內容片段才能在發佈環境中使用。 可發佈：
 
@@ -300,7 +303,8 @@ ht-degree: 11%
 * 當您發 [布使用片段的頁面時](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); 片段將列在頁面參考中。
 
 >[!CAUTION]
-發佈和／或參考片段後，當作者開啟片段以進行重新編輯時，AEM會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
+>
+>發佈和／或參考片段後，當作者開啟片段以進行重新編輯時，AEM會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
 
 ## 刪除片段 {#deleting-a-fragment}
 
@@ -310,10 +314,12 @@ ht-degree: 11%
 2. 選擇片段。
 
    >[!NOTE]
-   「刪 **除** 」(Delete)動作不提供快速動作。
+   >
+   >「刪 **除** 」(Delete)動作不提供快速動作。
 
 3. 從工 **具列中** ，選取「刪除」。
 4. 確認「刪 **除** 」動作。
 
    >[!CAUTION]
-   如果片段已在頁面中參考，您會看到警告訊息，並需要確認您要繼續執行強制刪 **除**。片段及其內容片段元件將會從任何內容頁面中刪除。
+   >
+   >如果片段已在頁面中參考，您會看到警告訊息，並需要確認您要繼續執行強制刪 **除**。片段及其內容片段元件將會從任何內容頁面中刪除。

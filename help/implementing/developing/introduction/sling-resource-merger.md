@@ -48,12 +48,11 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 >這是因為每當將升級套 `/libs` 用至您的例項時，都可能會覆寫的內容。
 >
 >* 覆蓋圖取決於搜 [尋路徑](/help/implementing/developing/introduction/overlays.md#search-paths)。
-   >
-   >
-* 覆蓋不依賴於搜索路徑，它們使用屬 `sling:resourceSuperType` 性建立連接。
+>
+>* 覆蓋不依賴於搜索路徑，它們使用屬 `sling:resourceSuperType` 性建立連接。
 >
 >
-不過，覆寫通常在下面定義， `/apps`因為在AEM中，最佳實務是將覆寫定義為雲端服務，即在下面定義自訂 `/apps`; 這是因為，您不得變更下方的任何項 `/libs`目。
+>不過，覆寫通常在下面定義， `/apps`因為在AEM中，最佳實務是將覆寫定義為雲端服務，即在下面定義自訂 `/apps`; 這是因為，您不得變更下方的任何項 `/libs`目。
 
 ### 屬性 {#properties}
 

@@ -182,12 +182,13 @@ ht-degree: 16%
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
-英文是現成可用的。
-其他語言則可從Package Share中取得：
-* [French(fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [German(de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italian(it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Spanish(es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>
+>英文是現成可用的。
+>其他語言則可從Package Share中取得：
+>* [French(fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [German(de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italian(it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Spanish(es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 
 
@@ -230,7 +231,8 @@ ht-degree: 16%
 * 在編輯器的全螢幕和一般模式下，都會以文字上的反白顯示來指示。 然後，只要按一下反白顯示的文字，即可檢視、編輯和／或刪除註解的完整詳細資訊，如此就會重新開啟對話方塊。
 
    >[!NOTE]
-   如果已將多個註解套用至一個文字，則提供下拉式選取器。
+   >
+   >如果已將多個註解套用至一個文字，則提供下拉式選取器。
 
 * 刪除應用注釋的整個文本時，注釋也會被刪除。
 
@@ -247,11 +249,13 @@ ht-degree: 16%
 這些文字將加到片段的段落序列中，不需任何格式； 當頁面上使用／參 [考片段時，可執行格式設定](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
 
 >[!CAUTION]
-這些資產無法在參考頁面上移動或刪除，這必須在片段編輯器中完成。
-但是，必須在頁面編輯器中完成資產的格式 [化（如大小）](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 片段編輯器中資產的表示純粹是為了製作內容流程。
+>
+>這些資產無法在參考頁面上移動或刪除，這必須在片段編輯器中完成。
+>但是，必須在頁面編輯器中完成資產的格式 [化（如大小）](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 片段編輯器中資產的表示純粹是為了製作內容流程。
 
 >[!NOTE]
-有各種方法可將影 [像新增](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 至片段和／或頁面。
+>
+>有各種方法可將影 [像新增](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 至片段和／或頁面。
 
 1. 將游標置於要添加影像的位置。
 2. 使用「插 **入資產** 」圖示開啟搜尋對話方塊。
@@ -268,9 +272,10 @@ ht-degree: 16%
 4. 使用 **「選取** 」將資產新增至目前位置之內容片段的段落系統。
 
    >[!CAUTION]
-   如果新增資產後，您將格式變更為：
-   * **純文字檔案**:資產將完全從碎片中丟失。
-   * **Markdown**:資產將不可見，但當您返回 **Rich Text時，資產仍會存在**。
+   >
+   >如果新增資產後，您將格式變更為：
+   >* **純文字檔案**:資產將完全從碎片中丟失。
+   >* **Markdown**:資產將不可見，但當您返回 **Rich Text時，資產仍會存在**。
 
 
 ## 管理變數 {#managing-variations}
@@ -288,7 +293,8 @@ ht-degree: 16%
 1. 選擇 **添加**;片段 **Master** 將會複製到新的變數，現在會開啟供編 [輯](#editing-a-variation)。
 
    >[!NOTE]
-   建立新變數時，一律是複製的 **Master** ，而非目前開啟的變數。
+   >
+   >建立新變數時，一律是複製的 **Master** ，而非目前開啟的變數。
 
 ### 編輯變數 {#editing-a-variation}
 
@@ -312,7 +318,8 @@ ht-degree: 16%
 1. 確認「重 **命名** 」動作。
 
 >[!NOTE]
-這只會影響變 **化Title**。
+>
+>這只會影響變 **化Title**。
 
 ### 刪除變數 {#deleting-a-variation}
 
@@ -325,7 +332,8 @@ ht-degree: 16%
 1. 確認對 **話方塊中** 的「刪除」動作。
 
 >[!NOTE]
-您無法刪除 **主版**。
+>
+>您無法刪除 **主版**。
 
 ### 與主版同步 {#synchronizing-with-master}
 
@@ -334,10 +342,11 @@ ht-degree: 16%
 在編輯變數時，您可以存取動作，以便將變數的目前元素與「主版」同步。 這可讓您自動將對「主版」所做的變更複製到所需的變更。
 
 >[!CAUTION]
-同步僅可用於將更改從 *主&#x200B;**版複製**到變化*。
-只有變更的當前元素將同步。
-同步只適用於多 **行文本** -資料類型。
-將變 *更從變更傳輸&#x200B;**至Master ***，不提供選項。
+>
+>同步僅可用於將更改從 *主&#x200B;**版複製**到變化*。
+>只有變更的當前元素將同步。
+>同步只適用於多 **行文本** -資料類型。
+>將變 *更從變更傳輸&#x200B;**至Master ***，不提供選項。
 
 1. 在片段編輯器中開啟您的內容片段。 請確定已 **編輯主** 版。
 1. 選擇特定的變化，然後從以下任一項中選擇適當的同步操作：
