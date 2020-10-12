@@ -1,13 +1,13 @@
 ---
 sub-product: AEM 雲端服務實作
 user-guide-title: AEM 雲端服務實作
-breadcrumb-title: Implementing Guide
-user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
+breadcrumb-title: Implementing 指南
+user-guide-description: 了解如何自訂 Experience Manager 雲端服務部署作業，包括開發和部署主題。
 translation-type: tm+mt
-source-git-commit: fa7d271a047277afe0a4bad709d1223224c92fb8
+source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 65%
+source-wordcount: '420'
+ht-degree: 66%
 
 ---
 
@@ -42,6 +42,7 @@ ht-degree: 65%
    + [使用 Sling 介面卡](developing/introduction/sling-adapters.md)
    + [在 AEM 雲端服務中使用 Sling Resource Merger](developing/introduction/sling-resource-merger.md)
    + [AEM 雲端服務中的覆蓋](developing/introduction/overlays.md)
+   + [使用用戶端程式庫](developing/introduction/clientlibs.md)
    + [記錄](developing/introduction/logging.md)
    + [AEM 雲端服務 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [頁面差異](/help/implementing/developing/introduction/page-diff.md)
