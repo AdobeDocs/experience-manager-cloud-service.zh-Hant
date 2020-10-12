@@ -2,7 +2,7 @@
 title: ContextHub診斷
 description: ContextHub提供診斷頁面，您可在其中查看ContextHub架構的概述
 translation-type: tm+mt
-source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -42,7 +42,7 @@ ContextHub提供診斷頁面，您可在其中查看ContextHub架構的概述。
 
 ## Clientlibs {#clientlibs}
 
-Clientlibs區段會列出ContextHub已載入的所有用戶端程式庫資料夾。 客戶端庫分類如下：
+Clientlibs區段會列出ContextHub已載入 [的所有用戶端程式庫資料夾](/help/implementing/developing/introduction/clientlibs.md) 。 客戶端庫分類如下：
 
 * **kernel.js:** 實作ContextHub架構、區段引擎和儲存類型的用戶端程式庫。
 * **ui.js:** 實作ContextHub UI和UI模組類型的用戶端程式庫。
