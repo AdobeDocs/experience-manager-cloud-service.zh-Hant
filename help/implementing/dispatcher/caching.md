@@ -1,11 +1,11 @@
 ---
-title: 在AEM中快取為雲端服務
-description: '在AEM中快取為雲端服務 '
+title: AEM 雲端服務中的快取
+description: 'AEM 雲端服務中的快取 '
 translation-type: tm+mt
-source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '1358'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 ### HTML/文字 {#html-text}
 
 * 依預設，會根據apache圖層所發出的快取控制標題，由瀏覽器快取5分鐘。 CDN也尊重此值。
-* 可以在使用AEM做為Cloud Service SDK Dispatcher工具中定義變數， `EXPIRATION_TIME` 覆寫所 `global.vars` 有HTML/Text內容的變數。
+* 可以覆寫所有HTML/Text內容，方法是在使用AEM `EXPIRATION_TIME` 做 `global.vars` 為Cloud Service SDK Dispatcher工具中定義變數。
 * 可以由以下apache mod_headers指令在更精細的級別上覆蓋：
 
 ```
@@ -113,7 +113,7 @@ Adobe管理的CDN會遵守TTL，因此不需要將它清除。 如果懷疑有�
 
 ## 用戶端程式庫與版本一致性 {#content-consistency}
 
-頁面由HTML、Javascript、CSS和影像組成。 建議客戶運用用戶端資料庫(clientlibs)架構，將Javascript和CSS資源匯入HTML頁面，並考慮到JS資料庫之間的相依性。
+頁面由HTML、Javascript、CSS和影像組成。 建議客戶運用 [Client-Side Libraries(clientlibs)架構](/help/implementing/developing/introduction/clientlibs.md) ，將Javascript和CSS資源匯入HTML頁面，並考量JS程式庫之間的相依性。
 
 clientlibs架構提供自動版本管理，這表示開發人員可以在來源控制中籤入JS程式庫的變更，而且當客戶推出最新版本時，就會提供最新版本。 若沒有這個功能，開發人員將需要手動變更參照新版程式庫的HTML，如果許多HTML範本共用相同的程式庫，這特別麻煩。
 
@@ -143,5 +143,5 @@ HTML頁面上的預設clientlib包含如下範例：
 1. 尋找Adobe Granite HTML Library Manager的OSGi Config:
    * 勾選核取方塊以啟用「嚴格版本控制」
    * 在標有「長期客戶端快取密鑰」的欄位中，輸入值/。*；雜湊
-1. 儲存變更。請注意，不需將此組態儲存在原始碼控制項中，因為AEM將會自動在開發、階段和生產環境中啟用此組態。
+1. 儲存變更。請注意，不需將此組態儲存在來源控制項中，因為AEM將會自動在開發、階段和生產環境中啟用此組態，因此AEM會是雲端服務。
 1. 每當用戶端程式庫的內容變更時，就會產生新的雜湊金鑰，並更新HTML參考。
