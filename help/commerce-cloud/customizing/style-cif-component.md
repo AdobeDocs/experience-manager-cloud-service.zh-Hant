@@ -10,9 +10,9 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2592'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ CIF Venia Project [(](https://github.com/adobe/aem-cif-guides-venia) CIF Venia P
 
 ## 用戶端程式庫和ui.frontend模組 {#introduction-to-client-libraries}
 
-負責轉譯店面主題／樣式的CSS和JavaScript，由 [Client資料庫或clientlibs在AEM中管理](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) 。 用戶端程式庫提供一種機制，可在專案程式碼中組織CSS和Javascript，然後傳送至頁面。
+負責轉譯店面主題／樣式的CSS和JavaScript，由 [Client資料庫或clientlibs在AEM中管理](/help/implementing/developing/introduction/clientlibs.md) 。 用戶端程式庫提供一種機制，可在專案程式碼中組織CSS和Javascript，然後傳送至頁面。
 
 品牌特定樣式可套用至AEM CIF核心元件，方法是新增和覆寫這些用戶端程式庫所管理的CSS。 瞭解用戶端程式庫的結構化及包含在頁面上，是十分重要的。
 
@@ -77,7 +77,7 @@ ui. [frontend](https://docs.adobe.com/content/help/en/experience-manager-core-co
 
 ![ui.frontend ui.apps架構](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*在Maven建置期間，編譯的CSS`ui.frontend`和Javascript會從模`ui.apps`塊複製到模組中，當做用戶端程式庫*
+*在Maven建置期間，編譯的CSS `ui.frontend` 和Javascript會從模 `ui.apps` 塊複製到模組中，當做用戶端程式庫*
 
 ## 更新摘要樣式 {#ui-frontend-module}
 
@@ -249,7 +249,7 @@ ui. [frontend](https://docs.adobe.com/content/help/en/experience-manager-core-co
    </html>
    ```
 
-   傳送至頁面的用戶端程式庫會加上前置詞 `/etc.clientlibs` ，並透過 [proxy提供](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) ，以避免暴露或中的任 `/apps` 何敏感 `/libs`項。
+   傳送至頁面的用戶端程式庫會加上前置詞 `/etc.clientlibs` ，並透過 [proxy提供](/help/implementing/developing/introduction/clientlibs.md) ，以避免暴露或中的任 `/apps` 何敏感 `/libs`項。
 
    通知 `venia/clientlibs/clientlib-site.min.css` 和 `venia/clientlibs/clientlib-site.min.js`。 這些是從模組衍生的已編譯CSS和Javascript `ui.frontend` 檔案。
 
@@ -482,6 +482,6 @@ AEM也會嘗試快取用戶端程式庫以取得效能。 有時，在程式碼�
 * [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)
 * [設定本機AEM開發環境](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-* [用戶端資源庫](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html)
+* [用戶端資源庫](/help/implementing/developing/introduction/clientlibs.md)
 * [AEM Sites快速入門](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [用體制發展](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
