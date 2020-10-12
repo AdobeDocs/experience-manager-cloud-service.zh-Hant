@@ -2,9 +2,9 @@
 title: 頁面範本
 description: 建立將用作新頁面基礎的頁面時，會使用頁面範本
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3228'
 ht-degree: 0%
 
 ---
@@ -115,8 +115,8 @@ ht-degree: 0%
 >編輯器用戶端程式庫會假設內容頁面 `cq.shared` 中存在命名空間，如果它不存在，則會產生JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` 錯誤。
 >
 >所有範例內容頁面都 `cq.shared`包含，因此任何以它們為基礎的內容都會自動包含 `cq.shared`。 不過，如果您決定從頭開始建立您自己的內容頁面，而不以範例內容為基礎，則必須確定包含命名空間 `cq.shared` 。
-
-<!--See [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) for further information.-->
+>
+>如需 [詳細資訊，請參閱使用用戶端程式庫](/help/implementing/developing/introduction/clientlibs.md) 。
 
 >[!CAUTION]
 >
