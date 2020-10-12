@@ -2,7 +2,7 @@
 title: 擴充ContextHub
 description: 定義新類型的ContextHub儲存和模組（當提供的儲存和模組不符合您的解決方案要求時）
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -18,9 +18,7 @@ ht-degree: 0%
 
 ContextHub儲存區是從註冊的儲存區候選來建立。 若要建立自訂商店，您必須建立並註冊商店申請人。
 
-<!--The javascript file that includes the code that creates and registers the store candidate must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-包含建立和註冊商店候選項之程式碼的javascript檔案必須包含在用戶端資料庫檔案夾中。 資料夾的類別必須符合下列模式：
+包含建立和註冊商店候選項之程式碼的javascript檔案必須包含在用戶端程 [式庫資料夾中](/help/implementing/developing/introduction/clientlibs.md)。 資料夾的類別必須符合下列模式：
 
 ```xml
 contexthub.store.[storeType]
@@ -101,9 +99,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
 }());
 ```
 
-<!--The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-包含建立和註冊轉譯器的程式碼的javascript檔案必須包含在用戶端程式庫資料夾中。 資料夾的類別必須符合下列模式：
+包含建立和註冊轉譯器的程式碼的javascript檔案必須包含在用戶端程 [式庫資料夾中](/help/implementing/developing/introduction/clientlibs.md)。 資料夾的類別必須符合下列模式：
 
 ```javascript
 contexthub.module.[moduleType]
