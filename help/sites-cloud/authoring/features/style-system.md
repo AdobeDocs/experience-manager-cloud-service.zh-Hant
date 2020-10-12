@@ -2,7 +2,7 @@
 title: 樣式系統
 description: 樣式系統允許模板作者在元件的內容策略中定義樣式類，以便內容作者在編輯頁面上的元件時能夠選擇它們。 這些樣式可以替代元件的視覺變化，讓元件更具彈性。
 translation-type: tm+mt
-source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 1%
@@ -41,13 +41,13 @@ Style System針對範本作者和內容作者的需求提供統一的解決方�
 
 1. HTML開發人員會針對每個視覺變化建置對應的CSS程式碼（和選擇性的JS程式碼），讓它們看起來都如定義。
 
-1. AEM開發人員將提供的CSS（和選用的JS）置於用戶端資料庫中並加以部署。 <!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
+1. AEM開發人員會將提供的CSS（和選用的JS）放入「用戶 [端程式庫](/help/implementing/developing/introduction/clientlibs.md) 」中並加以部署。
 
 1. AEM開發人員或範本作者會設定頁面範本並編輯每個樣式元件的原則、新增已定義的CSS類別、為每個樣式指定好用的名稱，以及指出哪些樣式可以合併。
 
 1. 然後，AEM頁面作者就可以透過元件工具列的樣式選單，在頁面編輯器中選擇設計的樣式。
 
-請注意，AEM實際上只會執行最後三個步驟。 這表示不需AEM，就可完成所有必要CSS和Javascript的開發。
+請注意，AEM實際上只會執行最後三個步驟。 這表示不需AEM，就可完成所有必要的CSS和Javascript開發。
 
 實際實作樣式只需要在AEM上部署，並在所需範本的元件中選取。
 
@@ -59,7 +59,7 @@ Style System針對範本作者和內容作者的需求提供統一的解決方�
 
 為了展示該功能，我們將以 [WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)&#39;s implementation of the core component&#39;s [title component](https://www.adobe.com/go/aem_cmp_title_v2) 為例。
 
-以下幾 [節As a Content Author](#as-a-content-author)[和As a Template Author](#as-a-template-author) （以內容作者和範本作者的身份）說明如何使用WKND的樣式系統來測試樣式系統的功能。
+以下幾 [節As a Content Author](#as-a-content-author)[和As a Template Author](#as-a-template-author) （以內容作者和範本作者的身份）說明如何使用WKND的Style System來測試Style System的功能。
 
 如果要將樣式系統用於自己的元件，請執行以下操作：
 
@@ -105,15 +105,13 @@ Style System針對範本作者和內容作者的需求提供統一的解決方�
 
 >[!CAUTION]
 >
->必須將CSS類別（以及任何必要的Javascript）部署為元件原則的樣式屬性，才能運作。
-
-<!--The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>CSS類別（以及任何必要的Javascript）若要運作，必須部署為元件原則的樣式屬性 [Client Libraries](/help/implementing/developing/introduction/clientlibs.md) 。
 
 ## 設定 {#setup}
 
 核心元件版本2及更新版本已完全啟用，以利用樣式系統，而且不需額外設定。
 
-只有為您自己的自訂元件啟用「樣式系統」或在「編輯」對話方塊中啟用選 [用的「樣式」索引標籤時，才需執行下列步驟。](#enable-styles-tab-edit)
+只有為您自己的自訂元件啟用「樣式系統」或在「編輯」對話方塊中啟 [用選用的「樣式」索引標籤，才需執行下列步驟。](#enable-styles-tab-edit)
 
 ### 在「設計」對話框中啟用「樣式」頁籤 {#enable-styles-tab-design}
 
