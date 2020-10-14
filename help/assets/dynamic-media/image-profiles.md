@@ -2,9 +2,9 @@
 title: Dynamic Media 影像設定檔
 description: 建立包含非銳利遮色片和智慧型裁切或智慧型色票（或兩者）的設定的動態媒體影像描述檔，然後將描述檔套用至影像資產的資料夾。
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: 35bf35cb68ffc82539fe65750486a6db98480207
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2737'
 ht-degree: 9%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 >[!IMPORTANT]
 >
->影像描述檔不適用於PDF檔案。
+>影像描述檔不適用於PDF、GIF或INDD(Adobe InDesign)檔案。
 
 ## Crop options {#crop-options}
 
@@ -24,7 +24,7 @@ ht-degree: 9%
 
 智慧型裁切座標視長寬比而定。 也就是說，對於影像描述檔中的各種智慧型裁切設定，如果影像描述檔中新增尺寸的長寬比相同，則會傳送相同的長寬比給動態媒體。 因此，Adobe建議您使用相同的裁切區域。 這樣做將確保對「影像描述檔」中使用的不同尺寸沒有影響。
 
-請注意，您建立的每個智慧型裁切產生都需要額外的處理。 例如，新增超過5種智慧型裁切外觀比例會導致資產擷取速度變慢。 它還可能增加系統的負載。 由於您可以在資料夾層級套用「智慧裁切」,Adobe建議您僅在需要智慧裁切的 *資料夾* 上使用它。
+請注意，您建立的每個智慧型裁切產生都需要額外處理。 例如，新增超過5種智慧型裁切外觀比例會導致資產擷取速度變慢。 它還可能增加系統的負載。 由於您可以在資料夾層級套用「智慧裁切」,Adobe建議您僅在需要智慧裁切的 *資料夾* 上使用它。
 
 您有兩個影像裁切選項可供選擇。 您也可以選擇自動建立顏色和影像色票。
 
@@ -42,20 +42,20 @@ ht-degree: 9%
     <ul>
      <li>值有「上」、「下」、「左」和「右」。</li>
      <li>左上角會視為0,0，而像素裁切會從那裡計算。</li>
-     <li>裁切起點： 左邊是X，上邊是Y</li>
-     <li>水準計算： 原始影像的水準像素尺寸減去「左」，然後減去「右」。</li>
-     <li>垂直計算： 垂直像素高度減去「頂端」，然後減去「底部」。</li>
-    </ul> <p>例如，假設您有4000 x 3000像素的影像。 您使用值： Top=250,Bottom=500,Left=300,Right=700。</p> <p>從左上角(300,250)，使用（4000-300-700、3000-250-500或3000,2250）的填滿空間進行裁切。</p> </td>
+     <li>裁切起點：左邊是X，上邊是Y</li>
+     <li>水準計算：原始影像的水準像素尺寸減去「左」，然後減去「右」。</li>
+     <li>垂直計算：垂直像素高度減去「頂端」，然後減去「底部」。</li>
+    </ul> <p>例如，假設您有4000 x 3000像素的影像。 您使用值：Top=250,Bottom=500,Left=300,Right=700。</p> <p>從左上角(300,250)，使用（4000-300-700、3000-250-500或3000,2250）的填滿空間進行裁切。</p> </td>
   </tr>
   <tr>
    <td>智慧型裁切</td>
    <td>根據影像的視覺焦點大量裁切影像。</td>
-   <td><p>Smart Crop運用Adobe Sensei中的人工智慧功能，快速將影像裁切大量自動化。 智慧型裁切會自動偵測任何影像中的焦點並裁切至焦點，以擷取預期的興趣點，而不論螢幕大小。</p> <p>若要使用智慧型裁切，請從「裁切選項」下拉式清單中選取「智慧型裁切 <strong></strong> 」，然後在「自適應影像裁切」的右側，啟用（開啟）功能。</p> <p>大、中和小的預設中斷點大小通常涵蓋行動與平板電腦裝置、桌上型電腦和橫幅上使用的大多數影像大小。 如果需要，您可以編輯「大」、「中」和「小」的預設名稱。</p> <p>若要新增更多中斷點，請按一下「 <strong>新增裁切</strong>; 若要刪除裁切，請按一下「廢棄項目可以」圖示。</p> </td>
+   <td><p>Smart Crop運用Adobe Sensei中的人工智慧功能，快速將影像裁切大量自動化。 智慧型裁切會自動偵測任何影像中的焦點並裁切至焦點，以擷取預期的興趣點，而不論螢幕大小。</p> <p>若要使用智慧型裁切，請從「裁切選項」下拉式清單中選取「智慧型裁切 <strong></strong> 」，然後在「自適應影像裁切」的右側，啟用（開啟）功能。</p> <p>大、中和小的預設中斷點大小通常涵蓋行動與平板電腦裝置、桌上型電腦和橫幅上使用的大多數影像大小。 如果需要，您可以編輯「大」、「中」和「小」的預設名稱。</p> <p>若要新增更多中斷點，請按一下「 <strong>新增裁切</strong>;若要刪除裁切，請按一下「廢棄項目可以」圖示。</p> </td>
   </tr>
   <tr>
    <td>顏色及影像樣本</td>
    <td>大量產生每個影像的影像色票。</td>
-   <td><p><strong>注意</strong>: Dynamic Media Classic不支援智慧型色票。</p> <p>從顯示顏色或紋理的產品影像自動尋找並產生高品質色票。</p> <p>若要使用「顏色和影像色票」，請從「裁切選項」下拉式清單中選取「智慧裁切 <strong></strong> 」，然後在「顏色和影像色票」的右側，啟用（開啟）功能。 在「寬度」和「高度」文字方塊中輸入像素值。</p> <p>雖然所有影像裁切都可從「轉譯」邊欄使用，但色票僅能透過「複製URL」功能使用。 請注意，您必須使用自己的檢視元件來轉換網站上的色票。 (這個例外是轉盤橫幅。 動態媒體提供轉盤橫幅中所用色票的檢視元件。)</p> <p><strong>使用影像色票</strong></p> <p>影像色票的URL很簡單。 即：</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>其中 <code>:Swatch</code> 會附加至資產請求。</p> <p><strong>使用色票</strong></p> <p>若要使用色票，請對下列 <code>req=userdata</code> 項目提出要求：</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>例如，以下是Dynamic Media Classic(Scene7)中的色票資產：</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>以下是色票資產的對應 <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>回 <code>req=userdata</code> 應如下：</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>注意</strong>:Dynamic Media Classic不支援智慧型色票。</p> <p>從顯示顏色或紋理的產品影像自動尋找並產生高品質色票。</p> <p>若要使用「顏色和影像色票」，請從「裁切選項」下拉式清單中選取「智慧裁切 <strong></strong> 」，然後在「顏色和影像色票」的右側，啟用（開啟）功能。 在「寬度」和「高度」文字方塊中輸入像素值。</p> <p>雖然所有影像裁切都可從「轉譯」邊欄使用，但色票僅能透過「複製URL」功能使用。 請注意，您必須使用自己的檢視元件來轉換網站上的色票。 (這個例外是轉盤橫幅。 動態媒體提供轉盤橫幅中所用色票的檢視元件。)</p> <p><strong>使用影像色票</strong></p> <p>影像色票的URL很簡單。 即：</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>其中 <code>:Swatch</code> 會附加至資產請求。</p> <p><strong>使用色票</strong></p> <p>若要使用色票，請對下列 <code>req=userdata</code> 項目提出要求：</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>例如，以下是Dynamic Media Classic(Scene7)中的色票資產：</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>以下是色票資產的對應 <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>回 <code>req=userdata</code> 應如下：</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -80,15 +80,15 @@ ht-degree: 9%
   </tr>
   <tr>
    <td>數量</td>
-   <td>控制套用至邊緣像素的對比度。 預設值為1.75。 對於高解析度的影像，您可將影像增加到高達5。 將「量」視為濾鏡強度的度量。 範圍是0-5。</td>
+   <td>控制套用至邊緣像素的對比度。 預設值為1.75。對於高解析度的影像，您可將影像增加到高達5。 將「量」視為濾鏡強度的度量。 範圍是0-5。</td>
   </tr>
   <tr>
    <td>半徑</td>
-   <td>決定邊緣像素周圍會影響銳利化的像素數量。若是高解析度影像，輸入介於 1 到 2 之間的值。低數值只會銳利化邊緣的像素；高數值會銳利化較寬的像素範圍。正確的值取決於影像大小。預設值為0.2。 範圍是0-250。</td>
+   <td>決定邊緣像素周圍會影響銳利化的像素數量。若是高解析度影像，輸入介於 1 到 2 之間的值。低數值只會銳利化邊緣的像素；高數值會銳利化較寬的像素範圍。正確的值取決於影像大小。預設值為0.2。範圍是0-250。</td>
   </tr>
   <tr>
    <td>臨界值</td>
-   <td><p>決定套用非銳利遮色片濾鏡時要忽略的對比範圍。 換言之，此選項可決定銳化的像素在被視為邊緣像素並銳化之前，必須與周圍區域有多大差異。 為避免引入雜訊，請嘗試0-255之間的值。</p> </td>
+   <td><p>決定套用非銳利遮色片濾鏡時要忽略的對比範圍。換言之，此選項可決定銳化的像素在被視為邊緣像素並銳化之前，必須與周圍區域有多大差異。 為避免引入雜訊，請嘗試0-255之間的值。</p> </td>
   </tr>
  </tbody>
 </table>
@@ -113,7 +113,7 @@ ht-degree: 9%
 
    另請參 [閱智慧型裁切和智慧型色票選項](#crop-options)[和遮色片銳利化](#unsharp-mask)。
 
-   ![crop](assets/crop.png)
+   ![作物](assets/crop.png)
 
 1. 點選「 **[!UICONTROL 儲存]**」。 新建立的配置檔案將出現在可用配置檔案清單中。
 
@@ -207,7 +207,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
    * 在頁面的右上角附近，分別向左或向右拖曳滑桿以增加或減少影像顯示。
    * 在影像上，拖曳角點控制點以調整裁切或色票的可檢視區域大小。
-   * 在影像上，將方塊／色票拖曳至新位置。 您只能編輯影像色票； 色票是靜態的。
+   * 在影像上，將方塊／色票拖曳至新位置。 您只能編輯影像色票；色票是靜態的。
    * 在影像上方點選「 **[!UICONTROL 回復]** 」以還原您的所有編輯，並還原原始裁切或色票。
 
 1. 在頁面的右上角附近，點選「 **[!UICONTROL Save]**」，然後點選「 **[!UICONTROL Close]** 」以返回資產資料夾。
@@ -243,12 +243,14 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
       * 如果影像只有智慧型裁切或智慧型色票，請在影像上拖曳裁切方塊的角部控點，以調整裁切的可檢視區域大小。
       * 如果影像同時具有智慧型裁切和智慧型色票，請在影像上拖曳裁切方塊的角部控點，以調整裁切的可檢視區域大小。 或者，點選或按一下影像下方的智慧型色票（色票是靜態的），然後拖曳裁切方塊的角部控點以調整色票的可檢視區域大小。
+
       ![調整影像的智慧裁切大小。](assets/edit_smart_crops-resize.png)
 
    * 移動智慧型裁切方塊。 執行下列任一項作業：
 
       * 如果影像只有智慧型裁切或智慧型色票，請在影像上拖曳裁切方塊至新位置。
       * 如果影像同時具有智慧型裁切和智慧型色票，請將智慧型裁切方塊拖曳至新位置。 或者，點選或按一下影像下方的智慧型色票（色票為靜態），然後將智慧型色票裁切方塊拖曳至新位置。
+
       ![edit_smart_crobs-move](assets/edit_smart_crops-move.png)
 
    * 還原您的所有編輯，並還原原始智慧型裁切或智慧型色票（僅適用於目前的編輯工作階段）。
