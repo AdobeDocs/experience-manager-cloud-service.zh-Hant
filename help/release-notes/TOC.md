@@ -1,12 +1,12 @@
 ---
 sub-product: AEM 雲端服務發行說明
 user-guide-title: AEM 雲端服務發行說明
-breadcrumb-title: Release Notes
-user-guide-description: This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.
+breadcrumb-title: 發行說明
+user-guide-description: 本指南提供 Experience Manager 雲端服務最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
-source-wordcount: '61'
+source-wordcount: '90'
 ht-degree: 100%
 
 ---
