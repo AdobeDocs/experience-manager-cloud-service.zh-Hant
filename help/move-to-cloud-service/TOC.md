@@ -1,13 +1,13 @@
 ---
 sub-product: 轉移至 AEM 雲端服務
 user-guide-title: 轉移至 AEM 雲端服務
-breadcrumb-title: Move Guide
-user-guide-description: Understand the transition journey to Cloud Service.
+breadcrumb-title: Move 指南
+user-guide-description: 了解轉換至雲端服務的過程。
 translation-type: tm+mt
 source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 94%
+source-wordcount: '81'
+ht-degree: 95%
 
 ---
 
