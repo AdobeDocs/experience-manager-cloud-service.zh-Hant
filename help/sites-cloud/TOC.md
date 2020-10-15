@@ -1,12 +1,12 @@
 ---
 sub-product: AEM 雲端服務的內容製作
 user-guide-title: AEM 雲端服務的內容製作
-breadcrumb-title: Authoring Guide
-user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
+breadcrumb-title: Authoring 指南
+user-guide-description: 了解如何使用及管理 Experience Manager Sites 雲端服務。
 translation-type: tm+mt
 source-git-commit: d5b92dda6b79407988eea3126f10fe875a0176ea
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '223'
 ht-degree: 96%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 96%
       + [建立和管理選件](authoring/personalization/offers.md)
       + [了解區段](authoring/personalization/segmentation.md)
       + [使用ContextHub設定區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-+ Administering {#administering}
++ 管理 {#administering}
    + [管理工作流程](administering/workflows-administering.md)
 + 整合 AEM 雲端服務 {#integrations}
    + [整合 Adobe Analytics](integrating/integrating-adobe-analytics.md)
