@@ -2,9 +2,9 @@
 title: 建立適用於Adobe Experience Manager的可存取雲端服務內容（WCAG 2.1符合性）
 description: 使用AEM做為雲端服務，協助殘障人士存取和使用網頁內容
 translation-type: tm+mt
-source-git-commit: fb6c90078e9da011a71093fcdab1a50faded5daa
+source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
 workflow-type: tm+mt
-source-wordcount: '14057'
+source-wordcount: '14060'
 ht-degree: 5%
 
 ---
@@ -26,6 +26,7 @@ World Wide Wec Consortium [（全球資訊網協會）的一個工作組起草�
 
 * Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
 * Adobe解決 [方案的「協助工具符合性」報表](https://www.adobe.com/accessibility/compliance.html)。
+* [資產中的協助功能](/help/assets/accessibility.md)
 * [設定Rich Text Editor，以製作可存取的內容](/help/implementing/developing/extending/rte-accessible-content.md)
 
 該准則按三個一致性級別分級：A級（最低）、AA級和AAA級（最高）。 簡單地說，這些級別的定義如下：
