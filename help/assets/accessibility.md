@@ -3,9 +3,9 @@ title: 無障礙環境支援 [!DNL Experience Manager Assets]
 description: 瞭解Cloud Service中的無 [!DNL Adobe Experience Manager] 障礙環境支援功能如何協助殘障人士。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
+source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1904'
 ht-degree: 1%
 
 ---
@@ -30,22 +30,24 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 # Accessibility in [!DNL Adobe Experience Manager Assets] as a Cloud Service {#accessibility-in-aem-assets}
 
-Adobe致力於為所有使用者（包括殘障人士）製作產品。 [!DNL Adobe Experience Manager] 不斷增強，以滿足各種用戶的需求。 [!DNL Experience Manager] 發佈符合性資訊，詳細說明符合的標準、概述產品中的協助功能，並說明符合性等級。 它可協助使用者瞭解遵守程度。
+[!DNL Adobe Experience Manager] 可讓內容建立者和發佈者在網路上提供絕佳的體驗。 Adobe致力於讓殘障人士也能參與其中，以提升協助功能 [!DNL Experience Manager]。 本軟體不斷增強，以符合各種使用者的需求，並符合包括視覺、聽覺、行動或其他障礙者在內的全球標準。
 
-[!DNL Adobe Experience Manager] 提供不同等級的支援：
+[!DNL Experience Manager] 發佈符合性資訊，說明符合的標準、概述產品中的協助功能，並說明符合性等級。 這些協助工具符合性報 [!DNL Experience Manager] 表可協助使用者瞭解遵守程度。 中的增強功能可 [!DNL Assets] 讓所有使用者透過鍵盤、螢幕閱讀器、放大鏡和其他輔助技術，輕鬆使用介面。
+
+[!DNL Experience Manager] 提供不同等級的支援：
 
 * [網頁內容可及性指引 (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
-* [第508條修訂](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines)。
-* [韋亞](https://www.w3.org/WAI/standards-guidelines/aria/)。
+* [修訂後的《康復法》第508節](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines)。
+* [協助工具計畫- W3C提供的協助工具Rich Internet Applications(WAI-ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/)。
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549)。
 
-要訪問詳細說明法規遵從性級別的報告，請參 [閱所有Adobe解決 ](https://www.adobe.com/accessibility/compliance.html) 方案的「輔助功能符合性報告(ACR)」頁。
+要訪問詳細說明法規遵從性級別的報告，請參 [閱所有Adobe解決方案的「輔助功能符合性報告](https://www.adobe.com/accessibility/compliance.html) (ACR)」頁。
 
 ## 輔助技術 {#at-support}
 
-行動不便的使用者通常依賴硬體和軟體來存取網頁內容。 這些工具被稱為輔助技術。 [!DNL Adobe Experience Manager Assets] 使用下列輔助技術，在使用軟體的核心功能時提供使用者支援：
+行動不便的使用者通常依賴硬體和軟體來存取網頁內容。 這些工具被稱為輔助技術。 [!DNL Experience Manager Assets] 使用本軟體的核心功能時，可使用下列類型的輔助技術(AT):
 
-* 螢幕閱讀程式。
+* 螢幕閱讀程式和螢幕放大鏡。
 * 語音識別軟體。
 * 鍵盤使用——導覽和捷徑。
 * 輔助硬體，包括開關控制項、可重新整理的盲文顯示器和其他電腦輸入裝置。
@@ -75,8 +77,7 @@ Adobe致力於為所有使用者（包括殘障人士）製作產品。 [!DNL Ad
 
 ### 資產中的鍵盤快速鍵 {#keyboard-shortcuts}
 
-<!-- TBD: Add here only those keyboard shortcuts that work for/with Assets. Do with Oct release.
--->
+「資產」中的下列動作可搭配列出的鍵盤快速鍵運作。 套用至「控制台」的大部分鍵 [!DNL Experience Manager] 盤快速鍵也套用至「資產」。 請參 [閱控制台的鍵盤快速鍵](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html)。 瞭解如何啟 [用或停用鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
 | 使用者介面或藍本 | 鍵盤快速鍵 | 動作 |
 |---|---|---|
@@ -84,38 +85,37 @@ Adobe致力於為所有使用者（包括殘障人士）製作產品。 [!DNL Ad
 | Assets使用者介面中的欄檢視 | 向左和向右箭頭鍵 | 導覽至目前檔案夾上方或下方的檔案和檔案夾。 |
 | 瀏覽資產中的資料夾 | `/` | 開啟Omnisearch方塊以叫用搜尋。 |
 | 資產主控台 | ` | 切換邊欄 |
-| 資產主控台 | Alt + 1 | 開啟內容樹狀結構。 |
-| 資產主控台 | Alt + 2 | 開啟 [!UICONTROL 導覽] 脫軌。 |
-| 資產主控台 | Alt + 3 | 顯示 [!UICONTROL 選取資產] 的時間軸。 |
-| 資產主控台 | Alt + 4 | 開啟選取資產的即時副本參考。 |
-| 資產主控台 | Alt + 5 | 在選定資料夾中調用搜索和搜索。 |
+| 資產主控台 | `Alt + 1` | 開啟內容樹狀結構。 |
+| 資產主控台 | `Alt + 2` | 開啟 [!UICONTROL 導覽] 左側導軌。 |
+| 資產主控台 | `Alt + 3` | 顯示 [!UICONTROL 選取資產] 的時間軸。 |
+| 資產主控台 | `Alt + 4` | 開啟選取資產的即時副本參考。 |
+| 資產主控台 | `Alt + 5` | 在選定資料夾中調用搜索和搜索。 |
 | 已選取資產或資料夾 | 回空格 | 刪除選定的資產或資料夾。 |
 | 已選取資產或資料夾 | `p` | 開啟所選資產的「屬性」頁面。 |
 | 已選取資產或資料夾 | `e` | 編輯選取的資產。 |
 | 已選取資產或資料夾 | `m` | 移動選定資產。 |
-| 已選取資產或資料夾 | Ctrl + c | 複製選取的資產。 |
-| 已選取資產或資料夾 | Esc | 取消選取選取範圍。 |
-| 對話框開啟並位於焦點中 | Esc | 關閉對話框。 |
-| 在DAM的資料夾內 | Ctrl + v | 貼上複製的資產。 |
-| 資產主控台 | Ctrl + A | 選取所有資產。 |
-| 資產屬性頁面 | Ctrl + S | 儲存變更。 |
+| 已選取資產或資料夾 | `Ctrl + c` | 複製選取的資產。 |
+| 已選取資產或資料夾 | `Esc` | 取消選取選取範圍。 |
+| 對話框開啟並位於焦點中 | `Esc` | 關閉對話框。 |
+| 在DAM的資料夾內 | `Ctrl + v` | 貼上複製的資產。 |
+| 資產主控台 | `Ctrl + A` | 選取所有資產。 |
+| 資產屬性頁面 | `Ctrl + S` | 儲存變更。 |
 | 資產主控台 | `?` | 請參閱鍵盤快速鍵清單。 |
-
-套用至「控制台」的大部分鍵 [!DNL Experience Manager] 盤快速鍵也套用至「資產」。 請參 [閱控制台的鍵盤快速鍵](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html)。 瞭解如何啟 [用或停用鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
 ## 登入並導覽使用 [!DNL Assets] 者介面 {#login}
 
 使用者可使用鍵盤導覽並填寫登入欄位以登入。 每次發生錯誤時，螢幕閱讀程式會宣佈因登入頁面上的使用者名稱和密碼組合不正確而產生的錯誤訊息。
 
-登入後，DAM使用者可使用鍵盤導 [!DNL Assets] 覽至使用者介面。 鍵盤導覽順序為從左至右和從上至下。 使用鍵盤導覽時，所有聚焦的可操作選項都會以較佳的色彩對比反白顯示，並由螢幕閱讀程式旁白。 螢幕閱讀程式會宣佈功能表中焦點選項的狀態——展開或收合。
+登入後，DAM使用者可使用鍵盤在使 [!DNL Assets] 用者介面中導覽。 使用者介面元素（例如左側導軌、選單、使用者描述檔、搜尋列、檔案和資料夾），以及管理和組態設定都可使用鍵盤導覽。 鍵盤導覽順序為從左至右和從上至下。 當使用鍵盤導覽時，聚焦時可操作的選項會以較佳的色彩對比反白顯示，並由螢幕閱讀器旁白。 視情況而定，螢幕閱讀程式會宣佈功能表中焦點選項的狀態，例如展開、收合和混合狀態。 此外，螢幕閱讀程式會宣佈可操作選項的用途，而非外觀或UI位置。
 
-如果使用者從功能表展開說明或使用者設定檔選項，螢幕閱讀程式會宣佈適當的選項或狀態。 如果使用者展開使用者設定檔選項，則可使用鍵盤選取可用的選項。 例如，使用者可以模擬不同的使用者。 用戶介面選項和錯誤消息
+如果使用者從功能表展開說明或使用者設定檔選項，螢幕閱讀程式會宣佈適當的選項或狀態。 如果使用者展開使用者設定檔選項，則可使用鍵盤選取可用的選項。 例如，管理員可以模擬不同的使用者。 如果使用者從「說明」選項搜尋字串  ，旁白者會宣佈「搜尋說明」，以指出搜尋正在進行中。
 
-![鍵盤導覽Experience Manager使用者介面中的頂端選項](assets/keyboard-navigation-in-aem.gif)
+<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
-*圖：使用金鑰在Experience Manager使用者介面頂端的選項中導`Tab`覽。*
+![Keyboard navigation of top options in Experience Manager user interface](assets/keyboard-navigation-in-aem.gif)
 
-如果使用者從「說明」選項搜尋字串  ，旁白者會宣佈「搜尋說明」，以指出搜尋正在進行中。
+*Figure: Navigating through the options at the top of Experience Manager user interface using `Tab` key.*
+-->
 
 ## 瀏覽現有資產並檢視相關資訊 {#browse}
 
@@ -143,9 +143,9 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * 使用鍵導覽時的使 `Tab` 用者焦點可移至版本預覽中的關閉選項。
 * 當使用鍵盤瀏覽時，反白顯示的可操作使用者介面選項會以增強的對比顯示更突出的視覺焦點。 它可讓使用者更容易辨識出焦點區域。
 * 使用鍵將快 `Esc` 速動作圖示從縮圖檢視中移除，並不會移除鍵盤焦點從最後一個焦點項目中移除。
-* 在選取資產時，按Alt + 4鍵盤快速鍵會開啟「參照」(References)清單。 使用 `Tab` 金鑰，使用者可瀏覽無零參照項目。
-* 資產時間軸中提供資產的注釋。 可通過鍵盤訪問。
-* 您可透過鍵盤存取Experience Manager中的檢視設定。 使用者可使用方向鍵來瀏覽可用的卡片大小，並選取和切換，以在現有的「檢視設定」檢視中瀏覽及設定其他元素。
+* 在選取資產時，按鍵 `Alt + 4` 盤快速鍵會開啟左 [!UICONTROL 側邊欄的] 「參照」清單。 使用 `Tab` 金鑰，使用者可以瀏覽非零參照項目。 只瀏覽非零參照項目也可節省心力和按鍵輸入。
+* 資產時間軸中提供資產的注釋。 如果使用鍵盤或鍵盤快速鍵存取左側導軌，則可加以存取。
+* [!UICONTROL 使用鍵盤] , [!DNL Experience Manager] 即可存取中的檢視設定。 使用者可使用方向鍵來瀏覽可用的卡片大小，並選取並切換，以在現有的「檢視設定」檢視中瀏覽及設定其他元素。
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -156,7 +156,6 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * List the a11y fixes in workflows to configure and administer [!DNL Experience Manager Assets]?
 * Some enhancements in Processing profiles creation or application to a folder?
 * Some enhancements to metadata properties UI?
-
 -->
 
 ## 管理數位資產 {#manage-assets}
@@ -169,7 +168,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 
 * [!UICONTROL 現在，您可以使用鍵盤] ，存取資產「屬性」頁面上的「儲存並關閉」選項。
 * 螢幕閱讀程式會宣佈刪除資產「屬性」按鈕「基本」標籤中選取標籤的選項，以刪除選取的標籤。
-* 日期選擇器彈出式對話方塊可使用鍵盤。 日期選擇器用於設定開啟時間和關閉時間。
+* 日期選擇器彈出式對話方塊可使用鍵盤。 日期選擇器使用者介面元素可用來設定開機時間和關機時間。
 * 使用鍵盤的拖動功能在螢幕閱讀器的瀏覽模式下可在元資料架構編輯器中正常工作。
 * 用戶可以使用鍵盤將焦點移動到資料夾「屬性」的「權限」頁籤的「關閉的用戶組」下的「添加用戶」或「組」欄位。
 
@@ -206,11 +205,14 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
    * 可導覽至所有列出的建議。
    * 對顯示的「新增電子郵件地址」和「搜尋」欄位建議進行旁白。
 
-## 無障礙環境支援 [!DNL Dynamic Media] {#dynamic-media-accessibility}
+<!-- TBD: With more info from the DM team. A few Sev1 issues are fixed and if those are shipped, then mention those here.
 
-使用動態媒體時，下列功能可協助您存取：
+## Accessibility in [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
-* 使用者可以集中 `Flyout`使用、 `InlineZoom`、、、 `Shoppable_Banner`和選 `Zoom_dark`項，在檢視者的資產詳細資 `Zoom_light``ZoomVertical_dark``ZoomVertical_light``Tab`[!DNL Dynamic Media]料中加入關鍵資訊。
+When using Dynamic Media, the following functionality helps make it accessible:
+
+* A user can focus to `Flyout`, `InlineZoom`, `Shoppable_Banner`, `Zoom_dark`, `Zoom_light`, `ZoomVertical_dark`, and `ZoomVertical_light` options using `Tab` key in asset details Viewers in [!DNL Dynamic Media].
+-->
 
 ## 可存取的檔案 {#accessible-docs}
 
@@ -224,15 +226,12 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 <!-- 
 ## More resources for accessibility {#a11y-resources}
 
-TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share or leave a link here.
+TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share a reference with asgupta@adobe.com.
 -->
-
-## 版本中的增強 [!DNL Experience Manager Assets] 功能 {#rn-fixes}
-
-如需各個個別版本中所做特定增強功能的清單，請參 [閱各版本](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/release-notes/home.html) 的發行說明。
 
 >[!MORELIKETHIS]
 >
->* [AEM協助工具指南](/help/onboarding/accessibility/web-accessibility.md)
->* [Adobe解決方案符合性報表](https://www.adobe.com/accessibility/compliance.html)
+>* [每個個別版本中所做特定增強功能的發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+>* [AEM協助工具指南](/help/onboarding/accessibility/web-accessibility.md)。
+>* [Adobe解決方案的符合性報表](https://www.adobe.com/accessibility/compliance.html)。
 
