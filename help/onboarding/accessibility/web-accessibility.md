@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager 雲端服務與網路無障礙指引
 description: Adobe Experience Manager 雲端服務與網路無障礙指引簡介
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
@@ -58,6 +58,7 @@ WCAG 2.1 提供的[指引 (及相關成功標準) 說明了無障礙環境等級
 -->
 
 <!--
+* [Accessibility in Assets](/help/assets/accessibility.md)
 * [Creating Accessible Adaptive Forms](/help/forms/using/creating-accessible-adaptive-forms.md)
   Adobe Experience Manager (AEM) includes a number of features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
 -->
@@ -65,5 +66,4 @@ WCAG 2.1 提供的[指引 (及相關成功標準) 說明了無障礙環境等級
 ## Adobe 的無障礙措施 {#accessibility-at-adobe}
 
 如需詳細資訊，請造訪 [Adobe 無障礙資源中心](https://www.adobe.com/accessibility/)。
-
 
