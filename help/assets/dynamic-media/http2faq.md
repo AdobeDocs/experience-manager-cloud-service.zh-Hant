@@ -2,9 +2,9 @@
 title: HTTP2 傳送內容常見問答集
 description: 瞭解HTTP2內容傳送。
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 24d929702fd9eb31b95fdd6d97c7b9978d919804
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '751'
 ht-degree: 3%
 
 ---
@@ -49,9 +49,9 @@ Adobe自己的測試產生了下列結果：
 
 ## 為我的Dynamic Media Classic帳戶啟用HTTP/2的程式為何？ {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-您必須提出Adobe技術支援(`s7support@adobe.com`)要求，以切換至HTTP/2; 它不會自動為您完成。
+您必須 [使用Admin Console來建立支援案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ，並要求切換至HTTP/2;它不會自動為您完成。
 
-1. 在您的支援要求中提供下列資訊：
+1. 在您的支援案例中提供下列資訊：
 
    * 主要聯絡人姓名、電子郵件和電話號碼。
    * 要轉換到HTTP2的所有網域。 就是， `images.company.com` 或者 `mycompany.scene7.com`。
@@ -90,4 +90,4 @@ Adobe自己的測試產生了下列結果：
 
 ## 如何驗證URL或網站是否已使用HTTP/2啟動？ {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-您需要下載外部版本，才能與網頁瀏覽器搭配使用。 對於Firefox和Chrome，有一個名為 **[!UICONTROL HTTP/2和SPDY Indicator的擴充功能]**。 瀏覽器僅安全支援HTTP/2，因此必須使用HTTPS呼叫URL以進行驗證。 如果支援HTTP/2，則以藍色Flash符號形式的擴充功能來指出，並加上標題&quot;X-Firefox-Spdy&quot;: &quot;h2&quot;。
+您需要下載外部版本，才能與網頁瀏覽器搭配使用。 對於Firefox和Chrome，有一個名為 **[!UICONTROL HTTP/2和SPDY Indicator的擴充功能]**。 瀏覽器僅安全支援HTTP/2，因此必須使用HTTPS呼叫URL以進行驗證。 如果支援HTTP/2，則以藍色Flash符號形式的擴充功能來指出，並加上標題&quot;X-Firefox-Spdy&quot;:&quot;h2&quot;。
