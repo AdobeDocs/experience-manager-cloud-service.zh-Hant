@@ -3,9 +3,9 @@ title: 無障礙環境支援 [!DNL Experience Manager Assets]
 description: 瞭解Cloud Service中的無 [!DNL Adobe Experience Manager] 障礙環境支援功能如何協助殘障人士。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 [!DNL Adobe Experience Manager] 可讓內容建立者和發佈者在網路上提供絕佳的體驗。 Adobe致力於讓殘障人士也能參與其中，以提升協助功能 [!DNL Experience Manager]。 本軟體不斷增強，以符合各種使用者的需求，並符合包括視覺、聽覺、行動或其他障礙者在內的全球標準。
 
-[!DNL Experience Manager] 發佈符合性資訊，說明符合的標準、概述產品中的協助功能，並說明符合性等級。 這些協助工具符合性報 [!DNL Experience Manager] 表可協助使用者瞭解遵守程度。 中的增強功能可 [!DNL Assets] 讓所有使用者透過鍵盤、螢幕閱讀器、放大鏡和其他輔助技術，輕鬆使用介面。
+[!DNL Experience Manager] 發佈符合性資訊，說明符合的標準、概述產品中的協助功能，並說明符合性等級。 這些協助工具符合性報 [!DNL Experience Manager] 告可協助使用者瞭解遵守程度。 中的增強功能可 [!DNL Assets] 讓所有使用者透過鍵盤、螢幕閱讀器、放大鏡和其他輔助技術，輕鬆使用介面。
 
 [!DNL Experience Manager] 提供不同等級的支援：
 
@@ -77,7 +77,7 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 ### 資產中的鍵盤快速鍵 {#keyboard-shortcuts}
 
-「資產」中的下列動作可搭配列出的鍵盤快速鍵運作。 套用至「控制台」的大部分鍵 [!DNL Experience Manager] 盤快速鍵也套用至「資產」。 請參 [閱控制台的鍵盤快速鍵](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html)。 瞭解如何啟 [用或停用鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
+「資產」中的下列動作可搭配列出的鍵盤快速鍵運作。 套用至「控制台」的大部分鍵 [!DNL Experience Manager] 盤快速鍵也套用至「資產」。 請參閱 [控制台的鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。 瞭解如何啟 [用或停用鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
 | 使用者介面或藍本 | 鍵盤快速鍵 | 動作 |
 |---|---|---|
@@ -192,7 +192,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 
 ## 共用資產 {#share-assets}
 
-<!-- TBD: Accessibility in DA, BP, AAL? Asked CCE team for AAL content?
+<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed there's no content.
 -->
 
 共用資產時，下列功能可改善無障礙環境支援：
