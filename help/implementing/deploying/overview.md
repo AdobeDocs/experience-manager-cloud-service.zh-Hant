@@ -2,7 +2,7 @@
 title: 部署至 AEM 雲端服務
 description: '部署至 AEM 雲端服務 '
 translation-type: tm+mt
-source-git-commit: b0d0ada16662c6edf6068b9de8a296ccfd410216
+source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
 workflow-type: tm+mt
 source-wordcount: '3210'
 ht-degree: 1%
@@ -34,7 +34,7 @@ AEM版本的更新 [永遠是](/help/implementing/deploying/aem-version-updates.
 >[!NOTE]
 >應用程式在本機電腦上的運作方式與Adobe Cloud有細微的操作差異。 這些架構差異必須在本機開發期間得到尊重，並可能導致在雲端基礎架構上部署時產生不同的行為。 由於這些差異，在生產中推出新的自訂程式碼之前，請務必先對開發與階段環境執行詳盡的測試。
 
-為了開發內部版本的自訂程式碼，應下載並安裝 [AEM(Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) )的相關版本。 如需將AEM當做Cloud Service Dispatcher Tools的其他資訊，請參閱 [本頁](/help/implementing/dispatcher/overview.md)。
+為了開發內部版本的自訂程式碼，應下載並安裝 [AEM(Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) )的相關版本。 如需將AEM當做Cloud Service Dispatcher Tools的其他資訊，請參閱 [本頁](/help/implementing/dispatcher/disp-overview.md)。
 
 以下影片提供如何將程式碼部署至AEM做為雲端服務的高階概觀：
 
