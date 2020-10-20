@@ -2,7 +2,7 @@
 title: 頁面範本
 description: 建立將用作新頁面基礎的頁面時，會使用頁面範本
 translation-type: tm+mt
-source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 0%
@@ -156,7 +156,7 @@ ht-degree: 0%
 若要建立新資料夾，您可以執行下列任一動作：
 
 * 以程式設計或使用CRXDE Lite
-* 使用配置瀏覽器
+* 使用配 [置瀏覽器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## 使用CRXDE Lite {#using-crxde-lite}
 
@@ -189,7 +189,7 @@ ht-degree: 0%
 
 ### 使用配置瀏覽器 {#using-the-configuration-browser}
 
-1. 前往全 **域導覽** ->工 **具** >設 **定瀏覽器**。
+1. 前往全 **域導覽** ->工 **具** >設 [**定瀏覽器**。](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
    現有資料夾列在左側，包括該文 `global` 件夾。
 
@@ -203,7 +203,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在「配置瀏覽器」中，如果您希望在此資料夾內建立模板，則可以編輯全局資料夾並激活「可編輯模板 **** 」選項，但建議不要這樣做。
+>在「配 [置瀏覽器」中](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) ，如果您想在此資料夾中建立模板，可以編輯全局資料夾並激活「可編輯模板 **** 」選項，但建議您不要這樣做。
 
 ### ACL和組 {#acls-and-groups}
 
