@@ -2,7 +2,7 @@
 title: 實作 AEM 連接器
 description: 實作 AEM 連接器
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '960'
 ht-degree: 8%
@@ -69,7 +69,7 @@ Experience Manager作為雲端服務檔案 [提供](../overview/introduction.md)
 雲端服務組態
 -----------------------------
 
-連接器實現的一個方面是支援連接器配置的代碼。 此程式碼會在「工具>作業>雲端服務」下方顯示連接器名稱的資訊卡。 按一下時，會彈出一個設定瀏覽器，客戶會在其中選取要包含連接器設定的父資料夾。 連接器的代碼應生成一個包含所有必須配置的屬性的表單，最終將值儲存在下面的配置資料夾中 `/conf`。 此資料夾稍後可在「網站屬性」標籤或「資產屬性」標籤下選取。
+連接器實現的一個方面是支援連接器配置的代碼。 此程式碼會在「工具>作業>雲端服務」下方顯示連接器名稱的資訊卡。 按一下時，會彈出 [一個設定瀏覽器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) ，客戶在其中選取要包含連接器組態的上層資料夾。 連接器的代碼應生成一個包含所有必須配置的屬性的表單，最終將值儲存在下面的配置資料夾中 `/conf`。 此資料夾稍後可在「網站屬性」標籤或「資產屬性」標籤下選取。
 
 
 上下文感知配置
