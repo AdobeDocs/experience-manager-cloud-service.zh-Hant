@@ -2,10 +2,10 @@
 title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 translation-type: tm+mt
-source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
+source-git-commit: 720c1cdb6c26bb023a6cbf12aaa935645b0e8661
 workflow-type: tm+mt
-source-wordcount: '3824'
-ht-degree: 9%
+source-wordcount: '4073'
+ht-degree: 8%
 
 ---
 
@@ -22,14 +22,14 @@ ht-degree: 9%
 
 >[!WARNING]
 >
->Windows使用者： 目前版本的AEM（Cloud Service本機Dispatcher Tools,v2.0.20）與Windows不相容。 請聯絡 [Adobe支援](https://daycare.day.com/home.html) ，以取得Windows相容性的更新。
+>Windows使用者：目前版本的AEM（Cloud Service本機Dispatcher Tools,v2.0.20）與Windows不相容。 請聯絡 [Adobe支援](https://daycare.day.com/home.html) ，以取得Windows相容性的更新。
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
 Dispatcher Tools是整體AEM的一部分，做為Cloud Service SDK，並提供：
 
-* 一種Vanilla檔案結構，其中包含要包含在調度器的Maven項目中的配置檔案；
-* 為客戶在本地驗證調度程式配置提供工具；
+* 一種Vanilla檔案結構，其包含要包含在調度程式的Maven項目中的配置檔案。
+* 為客戶提供工具，以驗證分派器組態是否僅包含AEM作為雲端服務支援的指令。        此外，工具也會驗證語法是否正確，以便Apache能成功啟動。
 * 將調度程式本地化的Docker映像。
 
 ## 下載並擷取工具 {#extracting-the-sdk}
@@ -110,7 +110,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 * `conf.d/variables/custom.vars`
 
-此檔案會從您的檔案中包 `.vhost` 含。 您可以在此位置放入Apache變數的定義。
+此檔案會從您的檔案中包 `.vhost` 含。 您可在此位置放入Apache變數的定義。
 
 * `conf.d/variables/global.vars`
 
@@ -194,13 +194,13 @@ Uncompressing DispatcherSDKv<version>  100%
 
 以下各節說明如何在本機驗證配置，以便在部署內部版本時，在Cloud Manager中傳遞相關的品質門。
 
-## Dispatcher配置的本地驗證 {#local-validation-of-dispatcher-configuration}
+## Dispatcher配置中支援的指令的本地驗證 {#local-validation-of-dispatcher-configuration}
 
 驗證工具可在SDK中以Mac OS、Linux或Windows二進位格式取得，讓客戶執行與Cloud Manager在建立和部署版本時所執行的驗證相同。 `bin/validator`
 
 它被調用為： `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-此工具會驗證Apache和Dispatcher組態。 它使用模式掃描所有文 `conf.d/enabled_vhosts/*.vhost` 件，並檢查是否只使用允許列出的指令。 通過運行驗證器的allowlist命令，可以列出Apache配置檔案中允許的指令：
+此工具會以模式掃描所有檔案，以驗證分派程式設定是否使用AEM支援的適當指令做為雲端服務 `conf.d/enabled_vhosts/*.vhost`。 通過運行驗證器的allowlist命令，可以列出Apache配置檔案中允許的指令：
 
 ```
 $ validator whitelist
@@ -261,11 +261,9 @@ Cloud manager validator 1.0.4
 
 請注意，驗證工具僅報告未允許列出的禁止使用Apache指令。 它不會報告Apache配置的語法或語義問題，因為此資訊僅適用於運行環境中的Apache模組。
 
-當未報告任何驗證失敗時，您的設定就可進行部署。
-
 以下是用於調試工具輸出的常見驗證錯誤的故障排除技術：
 
-**在存檔中找`conf.dispatcher.d`不到子資料夾**
+**在存檔中找 `conf.dispatcher.d` 不到子資料夾**
 
 您的封存應包含資料 `conf.d` 夾和 `conf.dispatcher.d`。請注意，您不 **應**&#x200B;在封 `etc/httpd` 存中使用首碼。
 
@@ -273,7 +271,7 @@ Cloud manager validator 1.0.4
 
 啟用的場應位於上述子資料夾中。
 
-**包含的檔案(...)必須命名： ...**
+**包含的檔案(...)必須命名：...**
 
 您的農場配置中有兩個部分必須 **包含** : `/renders` 和 `/allowedClients` 部分 `/cache` 中。 這些區段必須如下所示：
 
@@ -291,7 +289,7 @@ Cloud manager validator 1.0.4
 }
 ```
 
-**檔案包含於未知位置： ...**
+**檔案包含於未知位置：...**
 
 農場配置中有四個部分，允許您在其中包含自己的檔案： `/clientheaders`, `filters`, `/rules` 在 `/cache` 節和中 `/virtualhosts`。 所包含的檔案需命名如下：
 
@@ -304,7 +302,7 @@ Cloud manager validator 1.0.4
 
 或者，您也可以包含 **這些檔案的預設版本** ，其名稱會以字詞 `default_`為前置詞，例如。`../filters/default_filters.any`。
 
-**在任何已知位置之外包含語句(...): ...**
+**在任何已知位置之外包含語句(...):...**
 
 除上文各段提及的六個部分外，您不得使用該 `$include` 陳述，例如，以下內容會產生此錯誤：
 
@@ -314,9 +312,9 @@ Cloud manager validator 1.0.4
 }
 ```
 
-**允許的客戶端／呈現不包括於： ...**
+**允許的客戶端／呈現不包括於：...**
 
-當您未在區段中指定包含時，就會 `/renders` 產生 `/allowedClients` 此 `/cache` 錯誤。 請參閱&#x200B;**包含的檔案(...)必須命名： ...** 的子菜單。
+當您未在區段中指定包含時，就會 `/renders` 產生 `/allowedClients` 此 `/cache` 錯誤。 請參閱&#x200B;**包含的檔案(...)必須命名：...** 的子菜單。
 
 **篩選不得使用全域模式以允許請求**
 
@@ -332,7 +330,7 @@ Cloud manager validator 1.0.4
 
 **包含的檔案(...)與任何已知檔案不匹配**
 
-Apache虛擬主機配置中有兩種類型的檔案可指定為包括： 重寫和變數。
+Apache虛擬主機配置中有兩種類型的檔案可指定為包括：重寫和變數。
 所包含的檔案需命名如下：
 
 | 類型 | 包含檔案名 |
@@ -347,13 +345,41 @@ Apache虛擬主機配置中有兩種類型的檔案可指定為包括： 重寫�
 
 此消息表示您的配置具有不建議使用的1版佈局，其中包含完整的Apache配置和帶前置詞的 `ams_` 檔案。 雖然這仍受支援，但是您應切換至新版面。
 
+## 本地驗證調度程式配置語法，以便Apache httpd可以啟動 {#local-validation}
+
+在確定分發程式模組配置僅包含受支援指令後，您應檢查語法是否正確，以便Apache能夠啟動。 為了測試此功能，Docker必須安裝在本地。 請注意，AEM不需要執行。
+
+使用如 `validate.sh` 下所示的指令碼：
+
+```
+$ validate.sh src/dispatcher
+Phase 1: Dispatcher validator
+2019/06/19 16:02:55 No issues found
+Phase 1 finished
+Phase 2: httpd -t validation in docker image
+Running script /docker_entrypoint.d/10-create-docroots.sh
+Running script /docker_entrypoint.d/20-wait-for-backend.sh
+Waiting until aemhost is available
+aemhost resolves to xx.xx.xx.xx
+Running script /docker_entrypoint.d/30-allowed-clients.sh
+# Dispatcher configuration: (/etc/httpd/conf.dispatcher.d/dispatcher.any)
+/farms {
+...
+}
+Syntax OK
+Phase 2 finished
+```
+
+指令碼執行下列操作：
+
+1. 它從上一節運行驗證器，以確保僅包含受支援的指令。 如果配置無效，則指令碼將失敗。
+2. 它會執行 `httpd -t command` to test，以測試語法是否正確，如此apache httpd才能啟動。 如果成功，配置應準備好進行部署
+
 ## 在本機測試您的Apache和Dispatcher配置 {#testing-apache-and-dispatcher-configuration-locally}
 
-您也可以在本機測試Apache和Dispatcher配置。 它要求本機安裝Docker，而您的組態必須如上所述通過驗證。
+您也可以在本機測試Apache和Dispatcher配置。 它要求在本機安裝Docker，而您的配置必須如上所述通過驗證。
 
-通過使用&quot;`-d`&quot;參數，驗證器將輸出包含調度程式所需的所有配置檔案的資料夾。
-
-然後，指 `docker_run.sh` 令碼可指向該資料夾，從您的設定開始。
+使用&quot;`-d`&quot;參數執行驗證器工具，該參數輸出包含調度程式所需的所有配置檔案的資料夾。 然後，指 `docker_run.sh` 令碼會指向該資料夾。 通過提供埠號（在下面的示例中，為8080）來公開調度程式端點，它會以您的配置啟動容器。
 
 ```
 $ validator full -d out src/dispatcher
@@ -372,7 +398,35 @@ Starting httpd server
 
 ## 調試Apache和Dispatcher配置 {#debugging-apache-and-dispatcher-configuration}
 
-日誌級別由變數和 `DISP_LOG_LEVEL` 在 `REWRITE_LOG_LEVEL` s `conf.d/variables/global.var`中定義。 如需詳細 [資訊，請參閱](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) 「記錄」檔案。
+以下策略可用於增加調度器模組的日誌輸出，並查看本地和雲環境 `RewriteRule` 中評估結果。
+
+這些模組的日誌級別由變數和定 `DISP_LOG_LEVEL` 義 `REWRITE_LOG_LEVEL`。 可在檔案中設定這些值 `conf.d/variables/global.vars`。 其相關部分如下：
+
+```
+# Log level for the dispatcher
+#
+# Possible values are: Error, Warn, Info, Debug and Trace1
+# Default value: Warn
+#
+# Define DISP_LOG_LEVEL Warn
+ 
+# Log level for mod_rewrite
+#
+# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
+# Default value: Warn
+#
+# To debug your RewriteRules, it is recommended to raise your log
+# level to Trace2.
+#
+# More information can be found at:
+# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
+#
+# Define REWRITE_LOG_LEVEL Warn
+```
+
+在本地運行調度程式時，日誌將直接打印到終端輸出。 大部分時候，您都希望這些記錄檔在DEBUG中，這可在執行Docker時將Debug層級傳入為參數。 For example: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+
+雲端環境的記錄檔會透過Cloud Manager中提供的記錄服務公開。
 
 ## 每個環境的不同Dispatcher配置 {#different-dispatcher-configurations-per-environment}
 
@@ -682,7 +736,7 @@ Using the script `docker_run.sh` in the AEM as a Cloud Service Dispatcher Tools,
 your configuration does not contain any other error that would only show up in
 deployment:
 
-### 步驟1: 使用驗證器生成部署資訊
+### 步驟1:使用驗證器生成部署資訊
 
 ```
 validator full -d out .
@@ -690,7 +744,7 @@ validator full -d out .
 
 This validates the full configuration and generates deployment information in `out`
 
-### 步驟2: 使用部署資訊在Docker映像中啟動調度程式
+### 步驟2:使用部署資訊在Docker映像中啟動調度程式
 
 在您的 macOS 電腦上執行 AEM 發佈伺服器，並在連接埠 4503 上接聽後，即可在該伺服器前端執行 Dispatcher，如下所示：
 
