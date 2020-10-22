@@ -2,9 +2,9 @@
 title: 自訂程式碼品質規則——雲端服務
 description: 自訂程式碼品質規則——雲端服務
 translation-type: tm+mt
-source-git-commit: 437652f9ed5d0fc4abae22e470b650bd1c2bedb6
+source-git-commit: 457ee90f0c0eeb9325cab0c66694862772390611
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2267'
 ht-degree: 6%
 
 ---
@@ -16,8 +16,7 @@ ht-degree: 6%
 本頁說明由Cloud Manager根據AEM工程的最佳實務建立的自訂程式碼品質規則。
 
 >[!NOTE]
->
->此處提供的程式碼範例僅供說明之用。
+>此處提供的程式碼範例僅供說明之用。 請參 [閱Concepts](https://docs.sonarqube.org/7.4/user-guide/concepts/) ，以瞭解SonarQube概念和品質規則。
 
 ## SonarQube規則 {#sonarqube-rules}
 
