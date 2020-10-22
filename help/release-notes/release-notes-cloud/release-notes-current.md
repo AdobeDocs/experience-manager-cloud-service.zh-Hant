@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.9.0 版發行說明。'
-description: '[!DNL Adobe Experience Manager] 雲端服務 2020.9.0 版發行說明。'
+description: '[!DNL Adobe Experience Manager] 2020.9.0版雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: 5fb87f82c092552aa5e1c4b569399ec0bbc0da3b
+source-git-commit: ded2efb4020386b058ec6b1286d6dfa078cddfe1
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 10%
+source-wordcount: '781'
+ht-degree: 8%
 
 ---
 
@@ -87,7 +87,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 ### 新增功能 {#what-is-new-cra}
 
-* Cloud Readiness Analyzer(CRA)有一個啟動狀態控制台，它顯示一個明確的「生成報告 **** 」按鈕，供用戶按一下以執行CRA。
+* Cloud Readiness [Analyzer(CRA)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html) (Cloud Readiness Analyzer, CRA)具有啟動狀態控制台，其中顯示明確的「生成報告」( **Generate Report** )按鈕，供用戶按一下以執行CRA。
 
 * CRA UI會在執行中顯示進度。 它顯示正在分析的項目和在執行過程中發現的查找結果。
 
@@ -103,7 +103,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 內容傳輸工具(CTT)支援Azure Blob儲存資料儲存。
+* 內容 [傳輸工具(CTT)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 支援Azure Blob存放區資料儲存。
 
 * CTT使用者介面具有自動重新載入功能，每30秒重新載入一次概述頁面。
 
