@@ -1,13 +1,13 @@
 ---
 sub-product: AEM 雲端服務入門
 user-guide-title: AEM 雲端服務入門
-breadcrumb-title: 開始使用指南
+breadcrumb-title: 入門指南
 user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager 雲端服務，包括如何取得存取權限和重要的資料保護資訊。
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 61fa965f14e566976db8ac6475553b9a9d3ed43a
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 93%
+source-wordcount: '209'
+ht-degree: 90%
 
 ---
 
@@ -27,6 +27,18 @@ ht-degree: 93%
       + [了解方案和方案類型](getting-access-to-aem-in-cloud/understand-program-types.md)
       + [建立方案](getting-access-to-aem-in-cloud/creating-a-program.md)
       + [沙箱方案](getting-access-to-aem-in-cloud/sandbox-programs.md)
+   + 使用 Cloud Manager {#using-cloud-manager}
+      + [管理環境](/help/implementing/cloud-manager/manage-environments.md)
+      + [設定 CI/CD 管道](/help/implementing/cloud-manager/configure-pipeline.md)
+      + [部署程式碼](/help/implementing/cloud-manager/deploy-code.md)
+   + 了解測試結果 {#test-results}
+      + [概覽](/help/implementing/cloud-manager/overview-test-results.md)
+      + [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)
+      + [功能測試](/help/implementing/cloud-manager/functional-testing.md)
+      + [體驗審核測試](/help/implementing/cloud-manager/experience-audit-testing.md)
+   + [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md)
+   + [了解通知](/help/implementing/cloud-manager/notifications.md)
    + 建立 AEM 應用程式專案 {#create-application-project}
       + [使用精靈](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [設定專案](getting-access-to-aem-in-cloud/setting-up-project.md)
