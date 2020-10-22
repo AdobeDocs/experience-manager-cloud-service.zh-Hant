@@ -2,10 +2,10 @@
 title: 製作概念
 description: 在AEM中編寫概念
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 92434d0dc29ac5fe1b395a2d34c8e48e2fdb7c97
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 1%
+source-wordcount: '349'
+ht-degree: 2%
 
 ---
 
@@ -27,10 +27,6 @@ AEM安裝通常至少包含兩個環境：
 ![作者、發佈者和調度員的圖表](/help/sites-cloud/authoring/assets/author-publish.png)
 
 在作者環境中，AEM的功能可透過AEM的編寫UI取得。 針對發佈環境，您設計的整個介面外觀和感覺都提供給您的使用者。
-
->[!NOTE]
->
->AEM本身可用來發佈AEM檔案。
 
 ## 作者環境 {#author-environment}
 
@@ -65,4 +61,4 @@ AEM安裝通常至少包含兩個環境：
 
 ## Dispatcher {#dispatcher}
 
-為了最佳化網站訪客的效能，Dispatcher **[實作](/help/implementing/dispatcher/overview.md)**負載平衡和快取。
+為了最佳化網站訪客的效能，Dispatcher **[實作](/help/implementing/dispatcher/overview.md)** 負載平衡和快取。
