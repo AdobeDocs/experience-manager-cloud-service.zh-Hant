@@ -2,9 +2,9 @@
 title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 translation-type: tm+mt
-source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
+source-git-commit: 95e89bc665ee228da0a25a57a3a917a6b4c379ad
 workflow-type: tm+mt
-source-wordcount: '4082'
+source-wordcount: '4073'
 ht-degree: 8%
 
 ---
@@ -35,7 +35,8 @@ Dispatcher Tools是整體AEM的一部分，做為Cloud Service SDK，並提供�
 ## 下載並擷取工具 {#extracting-the-sdk}
 
 Dispatcher Tools是 [AEM的一部分，是Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)，可從軟體散發入口網站的郵遞區 [](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 號檔案下載。 該新Dispatcher Tools版本中提供的任何新設定都可用來部署至在Cloud或更高版本中執行該AEM版本的Cloud環境。
-/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md解壓縮SDK，此SDK搭售適用於macOS/Linux和Windows的Dispatcher Tools。
+
+解壓縮SDK，此SDK搭售適用於macOS/Linux和Windows的Dispatcher Tools。
 
 **對於macOS/Linux**，請使調度器工具對象可執行並運行它。 它將自動解壓儲存在目錄下的Dispatcher Tools檔案(其中 `version` 是Dispatcher Tools的版本)。
 
