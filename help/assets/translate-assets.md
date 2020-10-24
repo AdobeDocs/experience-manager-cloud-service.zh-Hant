@@ -3,7 +3,7 @@ title: 建立並管理多種語言的數位資產
 description: 瞭解如何將資產（包括二進位檔、中繼資料和標籤）轉譯為多種語言的工作流程自動化。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: f85dea62ba334fd5b3a7cc45fbf09556cbfdd2ec
 workflow-type: tm+mt
 source-wordcount: '2608'
 ht-degree: 22%
@@ -59,14 +59,14 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ```shell
 /content
-&nbsp; &nbsp; /- dam
-&nbsp; &nbsp; &nbsp; |- en
-&nbsp; &nbsp; &nbsp; |- fr
-&nbsp; &nbsp; &nbsp; |- de
-&nbsp; &nbsp; &nbsp; |- es
-&nbsp; &nbsp; &nbsp; |- it
-&nbsp; &nbsp; &nbsp; |- ja
-&nbsp; &nbsp; &nbsp; |- zh
+    /- dam
+        |- en
+        |- fr
+        |- de
+        |- es
+        |- it
+        |- ja
+        |- zh
 ```
 
 執行下列步驟以準備要翻譯的資產：
