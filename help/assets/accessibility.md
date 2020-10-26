@@ -3,9 +3,9 @@ title: 無障礙環境支援 [!DNL Experience Manager Assets]
 description: 瞭解Cloud Service中的無 [!DNL Adobe Experience Manager] 障礙環境支援功能如何協助殘障人士。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
+source-git-commit: 726c63a9bb3426bea324abec87b5e9f7d5e9e755
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 ## 支援使用鍵盤 {#keyboard-use}
 
-使用鍵盤也可以參與許多可點選或可操作的使用者介面元素。 使用鍵盤，使用者可專注在UI元素上並採取適當的動作。 使用者可直接使用鍵盤快速鍵來觸發命令或動作，而不需專注在UI元素上，並使用鍵盤來觸發。 例如，使用者可以使用鍵盤瀏覽至UI控制項，然後按回車鍵並按下鍵盤快速鍵，以開啟資產左側 `alt + 2` 的時間軸。
+使用鍵盤也可以參與許多可點選或可操作的使用者介面元素。 使用鍵盤，使用者可專注在UI元素上並採取適當的動作。 使用者可直接使用鍵盤快速鍵來觸發命令或動作，而不需專注在UI元素上，並使用鍵盤來觸發。 例如，使用者可以使用鍵盤按鍵並按下鍵盤快速鍵，瀏覽至UI控制項，以開啟資產在左 `Return` 側的 `Alt + 2` 時間軸。
 
 <!-- TBD items:
 
