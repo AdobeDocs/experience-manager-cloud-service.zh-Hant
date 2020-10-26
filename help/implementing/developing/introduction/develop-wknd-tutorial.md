@@ -2,10 +2,10 @@
 title: 開始開發 AEM Sites - WKND 教學課程
 description: 您是AEM開發的新手嗎？ 需要進一步瞭解最佳實踐方案嗎？ 這裡就是開始！ 本多部分教學課程的目標，在於教授剛接觸AEM的開發人員如何使用最新標準和技術，在AEM中實作網站。
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 20a19c558be17631889f0253b3ad4e5a71ebcce2
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 12%
+source-wordcount: '254'
+ht-degree: 13%
 
 ---
 
@@ -31,6 +31,6 @@ ht-degree: 12%
 * [Maven AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
 * [核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
 * [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)
-* Sling Models
+* [Sling Models](https://sling.apache.org/documentation/bundles/models.html)
 * [可編輯的範本](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
 * [樣式系統](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
