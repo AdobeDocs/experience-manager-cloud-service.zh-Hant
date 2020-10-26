@@ -4,10 +4,10 @@ user-guide-title: AEM 雲端服務入門
 breadcrumb-title: 入門指南
 user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager 雲端服務，包括如何取得存取權限和重要的資料保護資訊。
 translation-type: tm+mt
-source-git-commit: 61fa965f14e566976db8ac6475553b9a9d3ed43a
+source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 90%
+source-wordcount: '220'
+ht-degree: 89%
 
 ---
 
@@ -43,6 +43,9 @@ ht-degree: 90%
       + [使用精靈](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [設定專案](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [瞭解構建環境](getting-access-to-aem-in-cloud/build-environment-details.md)
+   + Cloud Manager發行說明 {#release-notes-cloud-manager}
+      + [2020.10.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+      + [2020.2.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
 + 資料隱私權和保護整備 {#data-privacy}
    + [AEM 對資料保護與資料隱私權法規的整備](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM 對資料保護與資料隱私權法規的基礎整備](data-privacy-and-protection-readiness/foundation-readiness.md)
