@@ -2,7 +2,7 @@
 title: 開發與頁面比較
 description: 瞭解「頁面比較」功能的運作方式，以及它對開發人員的影響
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 自動執行清除任務以清除此臨時內容。
 
-## 權限 {#permissions}
+## 限制 {#limitations}
 
 比較是透過DOM比較在用戶端進行，讓比較程式變得簡單，但開發人員需要考慮許多限制。
 
