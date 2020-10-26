@@ -2,10 +2,10 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: c015c631f6ad988b1482b45281a2ed9840e6af45
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 7%
+source-wordcount: '830'
+ht-degree: 6%
 
 ---
 
@@ -62,6 +62,16 @@ ht-degree: 7%
 
    >[!NOTE]
    >如果您尚未設定非生產管道，「概述」畫面會顯示卡片，您可從中建立非生產管道。 **
+
+
+### 查看環境 {#viewing-environment}
+
+「概 **述」頁面** 上的「環境」資訊卡最多會列出三個環境。
+
+用戶可以選擇「顯 **示全部** 」按鈕，以導航至「環境 **** 」摘要頁以查看包含完整環境清單的表。
+
+![](assets/environment-view1.png)
+
 
 ## 更新環境 {#updating-dev-environment}
 
