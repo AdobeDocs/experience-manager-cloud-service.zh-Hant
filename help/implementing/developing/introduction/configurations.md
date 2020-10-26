@@ -2,9 +2,9 @@
 title: 配置和配置瀏覽器
 description: 瞭解AEM設定，以及它們在AEM中管理工作區設定的方式。
 translation-type: tm+mt
-source-git-commit: 174648c78b71ef60d2d2507c3c4fbf18bbdac647
+source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1496'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ AEM設定可用來管理AEM中的設定，並可當成工作區。
 從兩個不同的觀點可以考慮配置。
 
 * [管理員](#configurations-administrator) (Administrator)會將設定當做AEM中的工作區來定義和管理設定群組。
-* [開發人員](#configurations-developer) (A developer)使用建置Sling Context-Aware Configurations的基礎設定機制，在AEM中持續並尋找設定。
+* [開發人員](#configurations-developer) (Developer)會使用建置AEM中可持續保留和尋找設定的基礎設定機制。
 
-簡而言之，從管理員的觀點來看，設定是您建立工作區以管理AEM中設定的方式，而開發人員應瞭解AEM的持續性，並在儲存庫中查找這些設定。
+總之：從管理員的觀點來看，設定是您建立工作區以管理AEM中設定的方式，而開發人員應瞭解AEM在儲存庫中使用和管理這些設定的方式。
 
 無論從您的角度如何，AEM中的設定都有兩個主要用途：
 
-* 設定可為使用者群組啟用特定功能。
+* 設定可為特定使用者群組啟用特定功能。
 * 配置定義這些功能的訪問權限。
 
 ## 以管理員身份進行的配置 {#configurations-administrator}
@@ -38,6 +38,8 @@ AEM管理員和作者可將組態視為工作區。 這些工作區可用來針�
 * [內容中樞區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 * [可編輯的範本](/help/sites-cloud/authoring/features/templates.md)
+
+### 範例 {#administrator-example}
 
 例如，管理員可以為可編輯模板建立兩種配置。
 
@@ -122,7 +124,7 @@ AEM管理員和作者可將組態視為工作區。 這些工作區可用來針�
 
 內容會透過屬性參考其相關 `cq:conf` 組態。 AEM會根據內容執行查閱，其內容屬性會 `cq:conf` 用來尋找適當的設定。
 
-### 簡單範例 {#example}
+### 範例 {#developer-example}
 
 在此範例中，假設您有一些對DAM設定感興趣的應用程式碼。
 
@@ -193,7 +195,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 ### 使用配置 {#using-configurations}
 
-AEM中的設定是以Sling Context-Aware Configurations為基礎。 Sling bundles提供服務API，可用來取得內容感應設定。 上下文感知配置是與內容資源或資源樹相關的配置，如上 [例中所述。](#example)
+AEM中的設定是以Sling Context-Aware Configurations為基礎。 Sling bundles提供服務API，可用來取得內容感應設定。 上下文感知配置是與內容資源或資源樹相關的配置，如上 [例中所述。](#developer-example)
 
 如需Context-Aware Configurations的詳細資訊、範例及如何使用，請參 [閱Sling檔案。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
