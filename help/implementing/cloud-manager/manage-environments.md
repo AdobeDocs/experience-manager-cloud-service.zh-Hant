@@ -2,10 +2,10 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 7%
+source-wordcount: '850'
+ht-degree: 6%
 
 ---
 
@@ -67,9 +67,17 @@ ht-degree: 7%
 
 「概 **述」頁面** 上的「環境」資訊卡最多會列出三個環境。
 
-用戶可以選擇「顯 **示全部** 」按鈕，以導航至「環境 **** 」摘要頁以查看包含完整環境清單的表。
+1. 選擇「 **全部顯示** 」按鈕可導航至「環境 **** 」摘要頁以查看包含完整環境清單的表。
 
-![](assets/environment-view1.png)
+   ![](assets/environment-view-1.png)
+
+1. 「環 **境** 」頁顯示所有現有環境的清單。
+
+   ![](assets/environment-view-2.png)
+
+1. 從清單中選擇任一環境以查看環境詳細資訊。
+
+   ![](assets/environment-view-3.png)
 
 
 ## 更新環境 {#updating-dev-environment}
