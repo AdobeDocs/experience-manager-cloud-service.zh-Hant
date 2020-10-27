@@ -2,7 +2,7 @@
 title: AEM中Cloud Manager的Cloud Manager版本注意事項2020.10.0版
 description: AEM中Cloud Manager的Cloud Manager版本注意事項2020.10.0版
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 54%
@@ -31,7 +31,7 @@ AEM中Cloud Manager作為Cloud Service 2020.10.0的發行日期為2020年10月1�
 * 每個環境的環境變數數量提高至 200 個。
 
 * 「概述」頁面上的「環境」卡現在最多可列出三個環境。 用戶可以選擇「顯 **示全部** 」按鈕，以導航至「環境」摘要頁，以查看包含完整環境清單的表。
-如需詳細 [資訊，請參閱](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 「檢視環境」。
+有關詳細 [資訊，請參閱](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 「查看環境」。
 
 
 ### 錯誤修正 {#bug-fixes-cloud-manager}
