@@ -4,10 +4,10 @@ user-guide-title: AEM 雲端服務入門
 breadcrumb-title: 入門指南
 user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager 雲端服務，包括如何取得存取權限和重要的資料保護資訊。
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 89%
+source-wordcount: '241'
+ht-degree: 90%
 
 ---
 
@@ -44,7 +44,14 @@ ht-degree: 89%
       + [設定專案](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [瞭解構建環境](getting-access-to-aem-in-cloud/build-environment-details.md)
    + Cloud Manager發行說明 {#release-notes-cloud-manager}
-      + [2020.10.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+      + [最新發行說明 (2020.10.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [2020.9.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
+      + [2020.8.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
+      + [2020.7.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
+      + [2020.6.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
+      + [2020.5.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
+      + [2020.4.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
+      + [2020.3.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
       + [2020.2.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
 + 資料隱私權和保護整備 {#data-privacy}
    + [AEM 對資料保護與資料隱私權法規的整備](data-privacy-and-protection-readiness/aem-readiness.md)
