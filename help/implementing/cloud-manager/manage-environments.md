@@ -2,10 +2,10 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 6%
+source-wordcount: '828'
+ht-degree: 7%
 
 ---
 
@@ -38,7 +38,6 @@ ht-degree: 6%
 
 ## 添加環境 {#adding-environments}
 
-
 1. 按一下「 **添加環境** 」(Add Environment)以添加環境。 此按鈕可從「環境」畫面 **存取** 。
    ![](assets/environments-tab.png)
 
@@ -64,7 +63,7 @@ ht-degree: 6%
    >如果您尚未設定非生產管道，「概述」畫面會顯示卡片，您可從中建立非生產管道。 **
 
 
-### 查看環境 {#viewing-environment}
+## 查看環境 {#viewing-environment}
 
 「概 **述」頁面** 上的「環境」資訊卡最多會列出三個環境。
 
