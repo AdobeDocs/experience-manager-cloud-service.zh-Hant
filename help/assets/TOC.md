@@ -5,10 +5,10 @@ breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Assets 雲端服務。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 80%
+source-wordcount: '429'
+ht-degree: 78%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 80%
    + [新增和上傳資產](add-assets.md)
    + [搜尋資產](search-assets.md)
    + [資產管理常見任務](manage-digital-assets.md)
-   + [智慧標記](smart-tags.md)
+   + [影像的智慧型標籤](smart-tags.md)
+   + [智慧標籤您的視訊資產](smart-tags-video-assets.md)
    + [如何組織資產](organize-assets.md)
    + [AEM [!DNL Adobe Stock] 中的使用資產](aem-assets-adobe-stock.md)
    + [管理集合](manage-collections.md)
@@ -49,7 +50,7 @@ ht-degree: 80%
    + [開發人員檔案和API參考](developer-reference-material-apis.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
    + [使用影像和視訊設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [設定智慧標籤](smart-tags-configuration.md)
+   + [設定影像的智慧標籤](smart-tags-configuration.md)
    + [多語言資產與翻譯](translate-assets.md)
    + [搜尋 Facet](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
