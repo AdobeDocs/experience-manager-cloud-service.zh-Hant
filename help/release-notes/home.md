@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) 雲端服務的發行說明。
 description: 'Adobe Experience Manager (AEM) 雲端服務的發行說明。 '
 translation-type: tm+mt
-source-git-commit: 0fa6d88b4df97b17256f42ad2eb1752c141e02a2
+source-git-commit: b65c7db00ad1ae34c30c979b688daca5280963c1
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 93%
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 | 產品 | Adobe Experience Manager 雲端服務 |
 |---|---|
-| 版本 | 2020.9.0 |
+| 版本 | 2020.10.0 |
 | 類型 | 持續更新 |
 | 推出日期 | 持續更新 |
 
