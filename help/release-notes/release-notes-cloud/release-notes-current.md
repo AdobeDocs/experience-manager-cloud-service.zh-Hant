@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.10.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 作為2020.10.0的雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: 12883e87d4aee796b23c366e77651134dafb8f4c
+source-git-commit: 4cbee57ff2490802bb473279a37fe6c539a4f44b
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 22%
+source-wordcount: '869'
+ht-degree: 21%
 
 ---
 
@@ -102,7 +102,7 @@ Content to come
 
 ### 工作流程 {#workflows}
 
-* 新增支援根據「工作流程標題」、「工作流程模型」、「狀態」、「啟動器」、「裝載路徑」和「開始日期」來搜尋工作流程例項。
+* 已新增支援根據「工作流程標題」、「工作流程模型」、「狀態」、「啟動器」、「裝載路徑」和「開始日期」來搜尋工作流程例項。 請參閱 [搜尋工作流程例項](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html)。
 
 ## 內容轉移工具 {#content-transfer-tool}
 
