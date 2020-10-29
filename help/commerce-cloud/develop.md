@@ -1,11 +1,17 @@
 ---
 title: 將AEM的AEM Commerce開發為雲端服務
-description: 將AEM的AEM Commerce開發為雲端服務
+description: 瞭解如何使用AEM專案原型產生具商務功能的AEM專案。 瞭解如何使用AEM做為雲端服務SDK，將專案建立並部署至本機開發環境。
+topics: Commerce, Development
+feature: Commerce Integration Framework
+version: cloud-service
+doc-type: tutorial
+kt: 5826
+thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 1c39ddefbeceb52e6a7adefe1d32d4cef164ef3b
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 8%
+source-wordcount: '987'
+ht-degree: 7%
 
 ---
 
