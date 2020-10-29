@@ -1,10 +1,11 @@
 ---
 title: AEM與Magento整合的商務整合框架
-description: AEM與Magento整合的商務整合框架
+description: AEM和Magento可使用Commerce Integration Framework(CIF)完美整合。 CIF可讓AEM存取Magento執行個體，並透過GraphQL與Magento通訊。 此外，還可讓AEM作者使用「產品與類別選擇器」和「產品主控台」來瀏覽從Magento隨選擷取的產品與類別資料。 此外，CIF還提供了一個現成的店面，可以加快商業項目。
+thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
-source-git-commit: 48805b21500ff3f2629efd6aecb40bb1cdc38cd6
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
