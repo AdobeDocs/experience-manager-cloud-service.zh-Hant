@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: e96ffc15849baa306fae8839476fa453ace69ef5
+source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 78%
+source-wordcount: '1855'
+ht-degree: 71%
 
 ---
 
@@ -26,11 +26,18 @@ ht-degree: 78%
 
 * 若要使用「內容傳輸工具」，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud服務例項中的本機AEM管理員群組。 無權限的使用者將無法擷取能使用「內容轉移工具」的存取 Token。
 
+* 目前，AEM做為雲端服務作者例項的預設MongoDB大小為32GB。 建議您針對大於20GB的區段儲存區大小，提交支援票證以增加MongoDB大小。
+
 * 在提取階段中，「內容轉移工具」會在作用中的 AEM 來源例項上執行。
 
-* 製作的&#x200B;*擷取階段*&#x200B;將縮小整個製作部署。這表示在整段擷取程序中，將無法使用製作 AEM。
+* 在完成內容傳輸程式的 *Extraction* phase以及開始 *Ing Phase* ，將內容以Cloud ServiceStageOr ******** ProductionInstances的形式傳入您的AEM之前，您需要記錄支援票證，以便Adobe將您的意向通知執行Adobe，以確保在Adobe Inging期間不會發生內容的CloudStageStStageSt問題處理。 您必須在計畫的接收日期前1週記錄支 *持票* 。 一旦您提交了支援票證，支援團隊將提供後續步驟的指導。
+   * 使用下列詳細資訊記錄支援票證：
+   1. 您計劃開始擷取階段時，確切的日期和估計時間(與您的時 *區* )。
+   2. 您打算將資料收錄到的環境類型（「舞台」或「生產」）。
+   3. 程式ID
 
-* 目前，AEM做為雲端服務作者例項的預設MongoDB大小為32GB。 建議您針對大於20GB的區段儲存區大小，提交支援票證以增加MongoDB大小。
+* 製作的&#x200B;*擷取階段*&#x200B;將縮小整個製作部署。這表示在整段擷取程序中，將無法使用製作 AEM。此外，請確保在您運行接收階段時不執行Cloud Manager管 *道* 。
+
 
 ## 可用性 {#availability}
 
