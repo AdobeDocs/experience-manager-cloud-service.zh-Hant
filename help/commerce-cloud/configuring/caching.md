@@ -1,10 +1,10 @@
 ---
 title: 快取與效能
-description: 快取與效能
+description: 瞭解啟用GraphQL和內容快取以最佳化商務實作效能的不同組態。
 translation-type: tm+mt
-source-git-commit: 2997a28e79b51e88ececbd46c81dbc6a6c443e68
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '848'
 ht-degree: 2%
 
 ---
@@ -58,7 +58,7 @@ venia/components/structure/navigation:true:10:600
 
 >[!NOTE]
 >
->雖然伺服器端資料可能會由AEM調度器快取，但是，有些CIF元件(例如 `product`、 `productlist`和 `searchresults` components)通常會在載入頁面時，在用戶端瀏覽器要求中重新擷取產品價格。 如此可確保在載入頁面時一律擷取重要的動態內容。
+>雖然伺服器端資料可能會由AEM調度器快取，但是，有些CIF元件(例如 `product`、 `productlist`和 `searchresults` 元件)通常會在載入頁面時，在用戶端瀏覽器要求中重新擷取產品價格。 如此可確保在載入頁面時一律擷取重要的動態內容。
 
 ## 其他資源
 
