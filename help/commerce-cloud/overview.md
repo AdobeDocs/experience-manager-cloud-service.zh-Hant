@@ -1,20 +1,21 @@
 ---
 title: AEM Commerce as a Cloud Service簡介
-description: AEM Commerce的新增功能：雲端服務。
+description: Experience Manager Commerce as a Cloud Services由Commerce Integration Framework(CIF)組成，這是Adobe建議的模式，可將Magento和其他協力廠商商務解決方案的商務服務與Experience Cloud整合併延伸。
+thumbnail: introducing-aem-commerce.jpg
 translation-type: tm+mt
-source-git-commit: c5694cf8651cf8ba5331c730fa1b1180310dd35a
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1357'
 ht-degree: 0%
 
 ---
 
 
-# AEM Commerce As a Cloud服務簡介 {#commerce-intro}
+# Introducing AEM Commerce as a Cloud Service {#commerce-intro}
 
 Experience Manager Commerce as a Cloud Services由Commerce Integration Framework(CIF)組成，這是Adobe建議的模式，可將Magento和其他協力廠商商務解決方案的商務服務與Experience Cloud整合併延伸。 這可讓Adobe客戶根據最新技術，提供非凡的個人化全通道購物體驗。
 
-Commerce Integration Framework是Experience Manager的Cloud服務附加模組，提供一組製作工具、元件和參考店面，以加速Experience Manager雲端服務與商務解決方案之間整合的開發。
+Commerce Integration Framework是Experience Manager的Cloud服務附加模組，提供一組製作工具、元件和參考店面，以加速Experience Manager雲端服務與商務解決方案之間的整合。
 
 ## CIF優點 {#cif-benefits}
 
@@ -70,11 +71,11 @@ AEM Venia Storefront是混合頁面應用程式，AEM擁有玻璃，而Magento�
 
 #### 結帳 {#checkout}
 
-此參考店面使用用戶端購物車元件來轉換購物車和結帳表單，以展示完整的體驗整合模式，讓您透過Magento以完全無頭的方式執行，而AEM擁有玻璃，來提供商務體驗。 建議使用所提供的抽象化付款方法。 這可讓瀏覽器用戶端直接與付款閘道提供者通訊，讓Adobe和Magento雲端都不會儲存或傳遞PCI敏感資料。
+此參考店面使用用戶端購物車元件來轉換購物車和結帳表單，以展示完整的體驗整合模式，讓您透過Magento以完全無頭的方式執行，而AEM擁有玻璃。 建議使用所提供的抽象化付款方法。 這可讓瀏覽器用戶端直接與付款閘道提供者通訊，讓Adobe和Magento雲端都不會儲存或傳遞PCI敏感資料。
 
 #### 帳戶管理 {#account-management}
 
-帳戶管理由Magento負責，而參考店面則利用用戶端的React-based元件，讓AEM可針對下列功能提供體驗： 建立帳戶、登入和忘記密碼。
+帳戶管理由Magento負責，而參考店面則利用用戶端的React-based元件，讓AEM可針對下列功能提供體驗：建立帳戶、登入和忘記密碼。
 
 AEM Venia Storefront專案是開放原始碼，如需詳細資訊，請參閱 [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia)。
 
@@ -84,11 +85,11 @@ AEM Project Archetype [(](https://docs.adobe.com/content/help/en/experience-mana
 
 ### CIF延伸層 {#cif-extension}
 
-CIF擴展層是代管複雜業務邏輯的中間層。 它可在Adobe的無伺服器平台Adobe I/O Runtime上執行。 它可讓您在微型服務層級注入商業和流程邏輯，以擴充端對端服務呼叫。 例如，商業邏輯會使用位置和通道來決定庫存策略。 例如，流程邏輯可以檢索個性化資訊。
+CIF擴展層是代管複雜業務邏輯的中間層。 它可在Adobe的無伺服器平台Adobe I/O Runtime上執行。 它可讓您在微型服務層級注入商業和流程邏輯，以擴充端對端服務呼叫。 例如，商業邏輯會使用位置和通道來決定庫存策略。 例如，流程邏輯可以檢索個人化資訊。
 
 ### CIF整合層 {#cif-integration-layer}
 
-CIF整合層用於標準化與其他商務解決方案的整合。 它可在Adobe的無伺服器平台Adobe I/O Runtime上執行，並透過將協力廠商API對應至Adobe商務API，在微型服務層級進行整合。 為協助您開始建立與AEM的協力廠商整合，我們建立了參考實作 [](https://github.com/adobe/commerce-cif-graphql-integration-reference) ，以示範如何透過Adobe Commerce API(Magento GraphQL API)整合非Magento商務後端。
+CIF整合層用於標準化與其他商務解決方案的整合。 它可在Adobe的無伺服器平台Adobe I/O Runtime上執行，並透過將協力廠商API對應至Adobe Commerce API，在微服務層級進行整合。 為協助您開始建立與AEM的協力廠商整合，我們建立了參考實作 [](https://github.com/adobe/commerce-cif-graphql-integration-reference) ，以示範如何透過Adobe Commerce API(Magento GraphQL API)整合非Magento商務後端。
 
 ## AEM Commerce整合模式 {#aem-commerce-integration}
 
