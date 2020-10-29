@@ -1,10 +1,18 @@
 ---
 title: 進階URL設定
-description: 進階URL設定
+description: 瞭解如何自訂產品和類別頁面的URL。 這可讓實作最佳化搜尋引擎的URL，並促進搜尋。
+sub-product: 商務
+version: cloud-service
+doc-type: technical-video
+activity: setup
+audience: administrator
+feature: Commerce Integration Framework
+kt: 4933
+thumbnail: 34350.jpg
 translation-type: tm+mt
-source-git-commit: 3a235e3d8e2d97e413f445df1f0bfe52e97024b3
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '789'
 ht-degree: 2%
 
 ---
@@ -28,22 +36,22 @@ ht-degree: 2%
 
 這會使用下列屬性來設定產品頁面的URL:
 
-* **產品URL範本**: 定義具有一組佔位符的URL格式。 預設值為 `{{page}}.{{url_key}}.html#{{variant_sku}}`，最後會產生URL，例如 `/content/venia/us/en/products/product-page.chaz-kangeroo-hoodie.html#MH01-M-Orange`
+* **產品URL範本**:定義具有一組佔位符的URL格式。 預設值為 `{{page}}.{{url_key}}.html#{{variant_sku}}`，最後會產生URL，例如 `/content/venia/us/en/products/product-page.chaz-kangeroo-hoodie.html#MH01-M-Orange`
    * `{{page}}` 替換為 `/content/venia/us/en/products/product-page`
    * `{{url_key}}` 已由產品的 `url_key` 屬性取代，此處 `chaz-kangeroo-hoodie`
    * `{{variant_sku}}` 已由目前選取的變體取代，此處 `MH01-M-Orange`
-* **產品識別碼位置**: 定義用來擷取產品資料之識別碼的位置。 預設值為 `SELECTOR`，其它可能值為 `SUFFIX`。 在上一個範例URL中，這表示識 `chaz-kangeroo-hoodie` 別碼將用來擷取產品資料。
-* **產品識別碼類型**: 定義擷取產品資料時要使用的識別碼類型。 預設值為 `URL_KEY`，其它可能值為 `SKU`。 在上一個範例URL中，這表示產品資料將會以Magento GraphQL篩選器擷取，如 `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`下。
+* **產品識別碼位置**:定義用來擷取產品資料之識別碼的位置。 預設值為 `SELECTOR`，其它可能值為 `SUFFIX`。 在上一個範例URL中，這表示識 `chaz-kangeroo-hoodie` 別碼將用來擷取產品資料。
+* **產品識別碼類型**:定義擷取產品資料時要使用的識別碼類型。 預設值為 `URL_KEY`，其它可能值為 `SKU`。 在上一個範例URL中，這表示產品資料將會以Magento GraphQL篩選器擷取，如 `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`下。
 
 ### 產品清單頁面URL範本 {#product-list}
 
 這會使用下列屬性來設定類別或產品清單頁面的URL:
 
-* **類別URL範本**: 定義具有一組佔位符的URL格式。 預設值為 `{{page}}.{{id}}.html`，最後會產生URL，例如 `/content/venia/us/en/products/category-page.3.html`
+* **類別URL範本**:定義具有一組佔位符的URL格式。 預設值為 `{{page}}.{{id}}.html`，最後會產生URL，例如 `/content/venia/us/en/products/category-page.3.html`
    * `{{page}}` 替換為 `/content/venia/us/en/products/category-page`
    * `{{id}}` 已由類別的 `id` Magento屬性取代，此處 `3`
-* **類別識別碼位置**: 定義用來擷取產品資料之識別碼的位置。 預設值為 `SELECTOR`，其它可能值為 `SUFFIX`。 在上一個範例URL中，這表示識 `3` 別碼將用來擷取產品資料。
-* **類別識別碼類型**: 定義擷取產品資料時要使用的識別碼類型。 預設值和目前僅支援的值為 `ID`。 在上一個範例URL中，這表示類別資料將會以類似的Magento GraphQL篩選器擷取 `category(id:3)`。
+* **類別識別碼位置**:定義用來擷取產品資料之識別碼的位置。 預設值為 `SELECTOR`，其它可能值為 `SUFFIX`。 在上一個範例URL中，這表示識 `3` 別碼將用來擷取產品資料。
+* **類別識別碼類型**:定義擷取產品資料時要使用的識別碼類型。 預設值和目前僅支援的值為 `ID`。 在上一個範例URL中，這表示類別資料將會以Magento GraphQL篩選器擷取，如 `category(id:3)`下。
 
 只要使用的元件正在設定對應的資料，就可以為每個範本新增自訂屬性 `UrlProvider`。 檢查類的代碼示例， `ProductListItemImpl` 瞭解如何實現此類。
 
