@@ -2,15 +2,16 @@
 title: 樣式AEM CIF核心元件
 description: 瞭解如何設定AEM CIF核心元件的樣式。 本教學課程涵蓋如何使用用戶端資料庫或clientlibs來部署及管理Adobe Experience Manager(AEM)商務實作的CSS和Javascript。 本教學課程也將涵蓋ui.frontend模組和webpack專案如何整合到端對端建置程式。
 sub-product: 商務
-topics: front-end-development
+topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2592'
 ht-degree: 1%
