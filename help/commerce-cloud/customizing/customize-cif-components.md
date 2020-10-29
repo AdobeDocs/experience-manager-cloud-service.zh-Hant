@@ -2,15 +2,16 @@
 title: 自訂CIF核心元件
 description: 瞭解如何自訂AEM CIF核心元件。 本教學課程涵蓋如何安全地擴充CIF核心元件，以符合商業特定需求。 瞭解如何擴充GraphQL查詢以傳回自訂屬性，並在CIF核心元件中顯示新屬性。
 sub-product: 商務
-topics: development
+topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+feature: Commerce Integration Framework
 kt: 4279
-thumbnail: 4279-customize-cif.jpg
+thumbnail: customize-aem-cif-core-component.jpg
 translation-type: tm+mt
-source-git-commit: a88595f3fab37f4406e607cb104a27de51cdbef6
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 0%
