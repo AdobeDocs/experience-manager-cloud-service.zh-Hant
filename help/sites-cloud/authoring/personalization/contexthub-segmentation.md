@@ -2,9 +2,9 @@
 title: 使用ContextHub設定區段
 description: 瞭解如何使用ContextHub來設定區段。
 translation-type: tm+mt
-source-git-commit: 82ad2cda70dd664ac9456a04f34e2d5831687fc1
+source-git-commit: c9c7176f6c3bf70529b761183341a2490d4ecbfc
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1692'
 ht-degree: 1%
 
 ---
@@ -26,14 +26,14 @@ Audiences [主控台](audiences.md) ，用來管理ContextHub的區段，以及A
 
 若要存取您的區段，請在全域導覽中選取「導 **覽>個人化>觀眾」**。
 
-![管理觀眾](/help/sites-cloud/authoring/assets/contexthub-segmentation-audiences.png)
+![管理觀眾](../assets/contexthub-segmentation-audiences.png)
 
 ## 區段編輯器 {#segment-editor}
 
 <!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
 「區 **段編輯器** 」可讓您輕鬆修改區段。 若要編輯區段，請在區段清單中選取區段，然後按一下「編 **輯** 」按鈕。
 
-![區段編輯器](/help/sites-cloud/authoring/assets/contexthub-segment-editor.png)
+![區段編輯器](../assets/contexthub-segment-editor.png)
 
 使用元件瀏覽器，您可以新增 **AND** 和 **OR** 容器來定義區段邏輯，然後新增其他元件來比較屬性和值，或參考指令碼和其他區段來定義選擇標準(請參閱建立新區段 [](#creating-a-new-segment))，以定義確切的選擇區段藍本。
 
@@ -87,13 +87,15 @@ Audiences [主控台](audiences.md) ，用來管理ContextHub的區段，以及A
 
 要定義新段，請執行以下操作：
 
-1. 存 [取區段後](#accessing-segments)，按一下或點選「建立」按鈕，然後選 **取「建立ContextHub區段」**。
+1. 存 [取區段後](#accessing-segments), [導覽至您要建立區段的資料夾](#organizing-segments) ，或將其保留在根目錄中。
 
-   ![新增區段](/help/sites-cloud/authoring/assets/contexthub-create-segment.png)
+1. 點選或按一下「建 **立** 」按鈕，然後選 **取「建立ContextHub區段」**。
+
+   ![新增區段](../assets/contexthub-create-segment.png)
 
 1. 在「新 **建ContextHub區段**」中，視需要輸入區段的標題和提升值，然後點選或按一下「建 **立」**。
 
-   ![新區段](/help/sites-cloud/authoring/assets/contexthub-new-segment.png)
+   ![新區段](../assets/contexthub-new-segment.png)
 
    每個區段都有提升參數，用作加權系數。 數字越高，表示在多個區段有效的例項中，會優先選擇數字較低的區段。
 
@@ -104,7 +106,7 @@ Audiences [主控台](audiences.md) ，用來管理ContextHub的區段，以及A
 1. 將比較或參考拖曳至區段編輯器，它將會出現在預設的AND容器中。
 1. 連按兩下或點選新參考或區段的設定選項，以編輯特定參數。 在此範例中，我們正在為巴塞爾的人員進行測試。
 
-   ![在巴塞爾為人測試](/help/sites-cloud/authoring/assets/contexthub-comparing-property-value.png)
+   ![在巴塞爾為人測試](../assets/contexthub-comparing-property-value.png)
 
    請盡量設 **定「資料類型** 」，以確保正確評估您的比較。 如需詳 [細資訊](#comparisons) ，請參閱比較。
 
@@ -130,7 +132,7 @@ Audiences [主控台](audiences.md) ，用來管理ContextHub的區段，以及A
 
 首先，將OR容器元件放置在預設的AND容器中。 在OR容器中，您可以新增屬性或參考元件。
 
-![使用OR運算子的區段](/help/sites-cloud/authoring/assets/contexthub-or-operator.png)
+![使用OR運算子的區段](../assets/contexthub-or-operator.png)
 
 您可以視需要巢狀內嵌多個AND和OR運算子。
 
@@ -186,6 +188,75 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 將 **Script Reference** （指令碼參考）元件新增至區段的所需位置。
 1. 開啟「指令碼參考」元件 **的編輯對話** 方塊。 如果 [已正確設定](#defining-a-script-to-reference)，則指令碼應可在「指令碼名稱 **** 」下拉式清單中使用。
 
+## 組織區段 {#organizing-segments}
+
+如果您有許多區段，它們將變得難以管理為平面清單。 在這種情況下，建立資料夾以管理區段會很有用。
+
+### 建立新資料夾 {#create-folder}
+
+1. 存取 [區段後](#accessing-segments)，按一下或點選「建立」按鈕，然後選取「資料夾」(Folder ********)。
+
+   ![新增資料夾](../assets/contexthub-create-segment.png)
+
+1. 提供資 **料夾的** 「 **標題** 」和「名稱」。
+   * 標 **題** (Title)應為描述性。
+   * Name **** （名稱）將成為儲存庫中的節點名稱。
+      * 它會根據標題自動產生，並根據 [AEM命名慣例進行調整。](/help/implementing/developing/introduction/naming-conventions.md)
+      * 如有需要，可加以調整。
+
+   ![建立資料夾](../assets/contexthub-create-folder.png)
+
+1. 點選或按一下「 **建立**」。
+
+   ![確認資料夾](../assets/contexthub-confirm-folder.png)
+
+1. 資料夾會出現在區段清單中。
+   * 對列的排序方式將影響新資料夾在清單中的顯示位置。
+   * 您可以點選或按一下欄標題來調整排序。
+      ![新資料夾](../assets/contexthub-folder.png)
+
+### 修改現有資料夾 {#modify-folders}
+
+1. 存 [取區段後](#accessing-segments)，按一下或點選您要修改的資料夾以選取它。
+
+   ![選取檔案夾](../assets/contexthub-select-folder.png)
+
+1. 點選或按一下工 **具列中的** 「重新命名」，以重新命名檔案夾。
+
+1. 提供新的資 **料夾標題** ，然後點選或按一 **下儲存**。
+
+   ![更名資料夾](../assets/contexthub-rename-folder.png)
+
+>[!NOTE]
+>
+>重新命名資料夾時，只能變更標題。 無法更改名稱。
+
+### 刪除資料夾
+
+1. 存 [取區段後](#accessing-segments)，按一下或點選您要修改的資料夾以選取它。
+
+   ![選取檔案夾](../assets/contexthub-select-folder.png)
+
+1. 點選或按一 **下工具列** 中的「刪除」，以刪除資料夾。
+
+1. 對話框顯示選定進行刪除的資料夾清單。
+
+   ![確認刪除](../assets/contexthub-confirm-segment-delete.png)
+
+   * 點選或按一下「 **刪除** 」以確認。
+   * 點選或按一 **下「取消** 」以中止。
+
+1. 如果任何選取的檔案夾包含子檔案夾或區段，則必須確認其刪除。
+
+   ![確認刪除子項](../assets/contexthub-confirm-segment-child-delete.png)
+
+   * 點選或按一下「 **強制刪除** 」以確認。
+   * 點選或按一 **下「取消** 」以中止。
+
+>[!NOTE]
+>
+> 無法將區段從一個資料夾移至另一個資料夾。
+
 ## 測試區段的應用程式 {#testing-the-application-of-a-segment}
 
 定義區段後，就可在 **[ContextHub的協助下測試潛在](contexthub.md)結果。**
@@ -197,11 +268,11 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 例如，我們在巴塞爾識別使用者的簡單區段定義，是根據使用者的位置而定。 載入符合這些條件的特定角色時，會顯示區段已成功解決：
 
-![解析的區段](/help/sites-cloud/authoring/assets/contexthub-segment-resolve.png)
+![解析的區段](../assets/contexthub-segment-resolve.png)
 
 或者，如果未解決：
 
-![無法解決的區段](/help/sites-cloud/authoring/assets/contexthub-segment-doesnt-resolve.png)
+![無法解決的區段](../assets/contexthub-segment-doesnt-resolve.png)
 
 >[!NOTE]
 >
