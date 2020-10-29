@@ -1,10 +1,18 @@
 ---
 title: 建立多個類別和產品頁面
-description: 建立多個類別和產品頁面
+description: 瞭解如何以目標行銷內容豐富「類別著陸」和「產品詳細資訊」頁面。
+sub-product: 商務
+version: cloud-service
+doc-type: feature-video
+activity: use
+audience: marketer
+feature: Commerce Integration Framework
+kt: 3455
+thumbnail: 28969.jpg
 translation-type: tm+mt
-source-git-commit: d79ac17a2282f2c08b69fae24e672bf17ddf8dc4
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---
