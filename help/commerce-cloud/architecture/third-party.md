@@ -1,10 +1,11 @@
 ---
 title: AEM與第三方商務整合使用Commerce Integration Framework
-description: AEM與第三方商務整合使用Commerce Integration Framework
+description: 企業可能需要額外的第三方商務解決方案來支撐其店面。 商務整合架構(CIF)可用於此類整合案例，將協力廠商商務解決方案與使用I/O Runtime的Adobe Experience Manager連結。
+thumbnail: cif-third-party-architecture.jpg
 translation-type: tm+mt
-source-git-commit: c5694cf8651cf8ba5331c730fa1b1180310dd35a
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
