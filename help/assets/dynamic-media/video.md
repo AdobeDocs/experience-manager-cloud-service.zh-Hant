@@ -2,7 +2,7 @@
 title: 影片
 description: 瞭解如何在動態媒體中處理視訊
 translation-type: tm+mt
-source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '10056'
 ht-degree: 10%
@@ -689,7 +689,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 在AEM的左上角，按一下AEM標誌，然後在左側導軌中，按一下「工具 (槌子圖示) > **[!UICONTROL Assets]** >中繼資 **[!UICONTROL 料結構]******」。
 1. 按一 **[!UICONTROL 下預設]**。 （請勿在「預設」左側的選取方塊中新增核取標籤。）
-1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **[Edit]**.
+1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then click **[!UICONTROL Edit]**.
 1. 在「元資料結構編輯器」頁上，按一下「高 **[!UICONTROL 級]** 」頁籤。
 1. 在「YouTube發佈」標題下，按一下「 **[!UICONTROL YouTube類別」]**。
 1. 在頁面的右側，在「設定」標 **[!UICONTROL 簽下]** ，執行下列動作：
