@@ -2,7 +2,7 @@
 title: 輪播橫幅
 description: 瞭解如何在動態媒體中使用轉盤橫幅
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '4605'
 ht-degree: 4%
@@ -125,7 +125,7 @@ ht-degree: 4%
 通常您不需使用任何專用的除錯工具。 現代網頁瀏覽器採用Web檢視器，可讓您完成適當的工作。 以下是包含Web檢視程式的Web瀏覽器範例：
 
 * 若要在Google Chrome中查看所有傳出的HTTP要求，請按F12(Windows)或Command-Option-I(Mac)以開啟「開發人員工具」面板，然後點選「網路」標籤。
-* In Firefox, you can either activate the Firebug plug-in by pressing F12 (Windows) or Command-Option-I (Mac) and use its Net tab, or you can use the built-in Inspector tool and its Network tab.
+* 在Firefox中，您可以按F12(Windows)或Command-Option-I(Mac)並使用其「網路」標籤來啟動Firebug外掛程式，或使用內建的「偵測器」工具及其「網路」標籤。
 
 在瀏覽器中開啟網路監視時，觸發頁面上的快速檢視。
 
@@ -258,8 +258,7 @@ ht-degree: 4%
 >但是，請注意，轉盤橫幅支援影像上的影像地圖，這些影像也可能包含熱點；互動式影像則否。 如果您想要建立使用相同影像的互動式影像或轉盤橫幅，請記住這一點。 您可能想要使用相同影像的個別副本來建立互動式影像和轉盤橫幅。
 
 >[!NOTE]
->
->如果您正在編輯具有熱點的互動式影像並裁剪影像，則會刪除熱點。
+如果您正在編輯具有熱點的互動式影像並裁剪影像，則會刪除熱點。
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
@@ -296,8 +295,7 @@ ht-degree: 4%
       * 如果您是AEM Sites客戶，請點選「網站選擇器」圖示（資料夾）以導覽至URL。
 
          >[!NOTE]
-         >
-         >如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，則無法使用以URL為基礎的連結方法。
+         如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，則無法使用以URL為基礎的連結方法。
 
       * 如果您是獨立客戶，請在HREF文字欄位中，指定連結網頁的完整URL路徑。
 
@@ -313,10 +311,8 @@ ht-degree: 4%
       * 指定「體驗片段」在橫幅上顯示的寬度和高度。
 
          >[!NOTE]
-         >
-         >請注意，當您將檢視器內嵌在體驗片段時，不支援轉盤橫幅中的社交媒體分享工具。
-         >若要解決這個問題，您可以使用或建立沒有社交媒體分享工具的檢視器預設集。 這些檢視器預設集可讓您成功將它內嵌在「體驗片段」中。
-
+         請注意，當您將檢視器內嵌在體驗片段時，不支援轉盤橫幅中的社交媒體分享工具。
+         若要解決這個問題，您可以使用或建立沒有社交媒體分享工具的檢視器預設集。 這些檢視器預設集可讓您成功將它內嵌在「體驗片段」中。
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    您也可以預覽轉盤橫幅的外觀。 請參 [閱（可選）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
@@ -331,8 +327,7 @@ ht-degree: 4%
 ## 編輯轉盤集 {#editing-carousel-sets}
 
 >[!NOTE]
->
->非管理使用者必須新增至 **[!UICONTROL dam-users]** 群組，才能建立或編輯轉盤橫幅。 如果您在建立或編輯時遇到問題，請洽詢系統管理員，讓系統管理員將您新 **[!UICONTROL 增至dam使用者群組]** 。
+非管理使用者必須新增至 **[!UICONTROL dam-users]** 群組，才能建立或編輯轉盤橫幅。 如果您在建立或編輯時遇到問題，請洽詢系統管理員，讓系統管理員將您新 **[!UICONTROL 增至dam使用者群組]** 。
 
 您可以對轉盤集執行多種編輯工作，例如：
 
@@ -364,8 +359,7 @@ ht-degree: 4%
    * 若要刪除整個轉盤集，請導覽至轉盤集，選取它，然後點選「刪 **[!UICONTROL 除」]**。
 
    >[!NOTE]
-   >
-   >如果您正在編輯具有熱點的互動式影像並裁剪影像，則會刪除熱點。
+   如果您正在編輯具有熱點的互動式影像並裁剪影像，則會刪除熱點。
 
 ## （可選）預覽轉盤橫幅 {#optional-previewing-carousel-banners}
 
@@ -386,7 +380,7 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dy
 
    ![experience_fragment-carouselbanner-viewerdropfon](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. 點選「 **[預覽]**」。
+1. 點選「 **[!UICONTROL 預覽]**」。
 1. 點選影像上的熱點或影像地圖，以測試其相關動作。
 
 **若要從檢視器清單預覽轉盤橫幅**
@@ -401,9 +395,8 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dy
 您必須發佈轉盤才能使用。 發佈轉盤集會啟動URL和內嵌代碼。 此外，它還會將轉盤發佈至與CDN整合的Dynamic Media雲端，以進行可擴充且具效能的傳送。
 
 >[!NOTE]
->
->如果您使用具有浮動切換橫幅熱點的現有互動影像，則必須在發佈浮動切換橫幅後個別發佈互動影像。
->此外，如果您修改了在轉盤橫幅中使用的預先存在的已發佈互動影像，則必須先發佈互動影像，這些變更才會反映在轉盤橫幅中。
+如果您使用具有浮動切換橫幅熱點的現有互動影像，則必須在發佈浮動切換橫幅後個別發佈互動影像。
+此外，如果您修改了在轉盤橫幅中使用的預先存在的已發佈互動影像，則必須先發佈互動影像，這些變更才會反映在轉盤橫幅中。
 
 如需 [如何發佈轉盤橫幅的資訊](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) ，請參閱發佈動態媒體資產。
 
@@ -412,8 +405,7 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dy
 上傳橫幅影像以建立轉盤、新增熱點和／或影像對應至橫幅，並發佈轉盤集後，您現在可以將它新增至現有的網站頁面。
 
 >[!NOTE]
->
->如果您是AEM Sites客戶，您可以將互動式媒體元件拖曳至您的頁面，將轉盤橫幅直接新增至您的頁面。 See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+如果您是AEM Sites客戶，您可以將互動式媒體元件拖曳至您的頁面，將轉盤橫幅直接新增至您的頁面。 See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 不過，如果您是獨立的AEM資產客戶，您可以依本節所述，手動將轉盤橫幅新增至您的網站登陸頁面。
 
