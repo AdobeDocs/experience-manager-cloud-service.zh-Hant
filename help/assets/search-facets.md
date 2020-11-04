@@ -2,9 +2,9 @@
 title: 搜尋 Facet.
 description: 本文說明如何在AEM中建立、修改和使用搜尋Facet。
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2377'
 ht-degree: 21%
 
 ---
@@ -35,19 +35,19 @@ Adobe Experience Manager(AEM)Assets的企業部署可儲存許多資產。 有�
 
    ![按並移動謂詞以自訂搜尋篩選器](assets/drag_predicate.png)
 
-   *圖： 按並移動謂語以自訂搜尋篩選。*
+   *圖：按並移動謂語以自訂搜尋篩選。*
 
 1. 在「設定」標籤中，輸入謂語的欄位標籤、預留位置文字和說明。 為要與謂詞關聯的元資料屬性指定有效名稱。 「設定」頁籤中的標題標籤標識所選謂詞的類型。
 
    ![使用「設定」頁籤提供謂語的必需選項](assets/settings.png)
 
-   *圖： 使用「設定」頁籤提供謂語的必需選項。*
+   *圖：使用「設定」頁籤提供謂語的必需選項。*
 
 1. 在「屬 **[!UICONTROL 性名稱]** 」欄位中，指定您要與謂語關聯的中繼資料屬性的有效名稱。它是根據其執行搜索的名稱。例如，輸入 `jcr:content/metadata/dc:description` 或 `./jcr:content/metadata/dc:description`。也可以從選擇對話框中選擇一個現有節點。
 
    ![將中繼資料屬性與屬性名稱欄位中的謂詞關聯](assets/property_settings.png)
 
-   *圖： 在「屬性名稱」欄位中，將中繼資料屬性與謂語建立關聯。*
+   *圖：在「屬性名稱」欄位中，將中繼資料屬性與謂語建立關聯。*
 
 1. 按一下「 **[!UICONTROL 預覽]**![」預覽](assets/preview.png) ，產生「篩選器」面板的預覽，如您新增述詞後所顯示。
 1. 在「預覽」模式中查看謂語的佈局。
@@ -102,7 +102,7 @@ CRXDE中所示的檔案類型的Value屬性用於搜索查詢
 1. 執行下列任一項作業：
 
    * In the **[!UICONTROL Property Name]** field, mention the path of the JSON file where you define the nodes for the options and specify corresponding key-value pairs.
-   * 點選 ![](assets/do-not-localize/aem_assets_add_icon.png) 「選項」欄位旁的，以指定您要在「篩選」面板中提供之選項的顯示文字和值。 若要新增其他選項，請點選／按一 ![](assets/do-not-localize/aem_assets_add_icon.png) 下並重複此步驟。
+   * 點選 ![「選項](assets/do-not-localize/aem_assets_add_icon.png) 」欄位旁的「資產新增」圖示，以指定您要在「篩選」面板中提供之選項的顯示文字和值。 若要新增其他選項，請點選／按一 ![下「資產新增」圖示](assets/do-not-localize/aem_assets_add_icon.png) ，然後重複此步驟。
 
 1. 確保清 **[!UICONTROL 除「單選]** 」，讓使用者一次為檔案類型選取多個選項 (例如影像、檔案、多媒體和封存)。如果您選 **[!UICONTROL 取「單選]**」，使用者一次只能為檔案類型選取一個選項。
 
@@ -118,7 +118,7 @@ CRXDE中所示的檔案類型的Value屬性用於搜索查詢
 謂 `Multi Value Property` 語可讓您搜尋資產中的多個值。 假設您在AEM Assets中擁有多個產品的影像，且每個影像的中繼資料包含與產品相關聯的SKU編號，這是您的案例。 您可以使用此謂語，根據多個SKU編號搜尋產品影像。
 
 1. 按一下AEM標誌，然後前往「工 **[!UICONTROL 具]** >一 **[!UICONTROL 般]** > **[!UICONTROL 搜尋表格]**」。
-1. 在「搜尋表單」頁面上，選取「 **[!UICONTROL 資產管理搜尋邊欄]**」，點選「 **編輯**![Aemsets_edit](assets/aemassets_edit.png)」。
+1. 在「搜尋表單」頁面上，選取「 **[!UICONTROL 資產管理搜尋邊欄]**」，然後點選「 **編輯**![Aemsets_edit](assets/aemassets_edit.png)」。
 1. 在「編輯搜索表單」頁中，將「 **[!UICONTROL Multi Value Property Predicate]** 」從「 **[!UICONTROL Select Predicate]** 」頁籤拖動到主窗格。
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. 也可以使用選擇對話框選擇節點。
 1. 請確定已 **[!UICONTROL 選取「分隔字元]** 」支援。在「輸入 **[!UICONTROL 分隔字元]** 」欄位中，指定分隔字元以分隔個別值。依預設，逗號會指定為分隔字元。您可以指定不同的分隔字元。
