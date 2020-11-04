@@ -2,9 +2,9 @@
 title: 互動影片
 description: 瞭解如何在動態媒體中處理互動式視訊和可購買視訊
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
 workflow-type: tm+mt
-source-wordcount: '6010'
+source-wordcount: '6016'
 ht-degree: 4%
 
 ---
@@ -87,7 +87,7 @@ There was a link here that showed the video frame of an interactive video and wh
 1. **在AEM中將互動式視訊新增至您的網站或網站**：如果您使用AEM Sites、AEM eCommerce或兩者，您可將互動式視訊直接拖曳至AEM的網頁，即可將互動式視訊新增至AEM中的網頁。 See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 使用內嵌程式碼或URL，將您的互動式視訊與網站體驗整合。 請參 [閱整合互動式視訊與您的網站](#integrating-an-interactive-video-with-your-website)。
 如果您使用協力廠商WCM(Web Content Manager)，您必須將新的互動式視訊與網站上使用的現有Quickview實作整合。 請參 [閱整合互動式視訊與現有的Quickview](#integrating-an-interactive-video-with-an-existing-quickview)。
-   [](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+   [新增動態媒體資產至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 ## （可選）識別Quickview變數 {#optional-identifying-quickview-variables}
 
