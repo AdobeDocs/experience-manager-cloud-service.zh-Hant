@@ -3,9 +3,9 @@ title: 支援的檔案格式和MIME類型
 description: Experience Manager Assets作為雲端服務支援的檔案格式和MIME類型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
+source-git-commit: a1ecf5d0cf84a5f83952c6b32e77fdbb397486c2
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '828'
 ht-degree: 8%
 
 ---
@@ -61,6 +61,9 @@ Adobe Experience Manager雲端服務支援基本的內容管理功能— 儲存�
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
+| WebP | ✓ | ✓ | - | - |
+
+* WebP目前支援有損壓縮，並支援0-100個值以變更影像品質。
 
 ## 影像格式 [!DNL Dynamic Media] {#image-support-dynamic-media}
 
