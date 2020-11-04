@@ -1,13 +1,13 @@
 ---
 sub-product: AEM 雲端服務實作
 user-guide-title: AEM 雲端服務實作
-breadcrumb-title: Implementing 指南
+breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager 雲端服務部署作業，包括開發和部署主題。
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 65%
+source-wordcount: '408'
+ht-degree: 64%
 
 ---
 
@@ -45,7 +45,6 @@ ht-degree: 65%
    + [使用用戶端程式庫](developing/introduction/clientlibs.md)
    + [配置和配置瀏覽器](developing/introduction/configurations.md)
    + [記錄](developing/introduction/logging.md)
-   + [AEM 雲端服務 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [頁面差異](/help/implementing/developing/introduction/page-diff.md)
    + [編輯器限制](/help/implementing/developing/introduction/editor-limitations.md)
    + [命名慣例](/help/implementing/developing/introduction/naming-conventions.md)
