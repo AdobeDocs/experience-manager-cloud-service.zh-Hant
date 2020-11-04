@@ -2,9 +2,9 @@
 title: 自訂和擴充內容片段
 description: 內容片段可延伸標準資產。
 translation-type: tm+mt
-source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
+source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1818'
 ht-degree: 1%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 1%
 
 您可以使用伺服器端API來存取您的內容片段；請參閱：
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -178,7 +178,7 @@ ht-degree: 1%
 
 以下三個介面可用作入口點：
 
-* **內容片段** ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **內容片段** ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    此介面可讓您以抽象方式處理內容片段。
 
@@ -204,7 +204,7 @@ ht-degree: 1%
 
    代表片段主要元素的介面包括：
 
-   * **內容元素** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **內容元素** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * 取得基本資料（名稱、標題、說明）
       * 取得／設定內容
@@ -216,7 +216,7 @@ ht-degree: 1%
          * 移除變數(請參 [閱說明](#caveats))
          * 存取變數資料(請參 `ContentVariation`閱)
       * 解決變數的捷徑（如果指定的變數不適用於元素，則套用某些額外的實施特定備援邏輯）
-   * **內容變化** ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **內容變化** ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * 取得基本資料（名稱、標題、說明）
       * 取得／設定內容
@@ -246,9 +246,9 @@ ht-degree: 1%
 
 * `ContentElement` 可適用於：
 
-   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) -用於訪問元素的結構資訊。
+   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) -用於訪問元素的結構資訊。
 
-* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` 可適用於：
 
