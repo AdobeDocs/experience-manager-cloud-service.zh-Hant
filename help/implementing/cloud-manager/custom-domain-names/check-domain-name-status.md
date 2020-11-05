@@ -2,9 +2,9 @@
 title: 檢查域名狀態
 description: 檢查域名狀態
 translation-type: tm+mt
-source-git-commit: 91b06bcd96fe8a37c3fb20ef90e1684f6d19183f
+source-git-commit: 5cd22d8af20bb947e4cdab448cf8f20c6596bb2e
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -52,3 +52,37 @@ Cloud Manager將通過TXT值驗證域所有權，並顯示以下狀態消息之�
 | CNAME | 自訂網域名稱指向目標 |
 |--- |--- |
 | www.customdomain.com | cdn.adobeaemcloud.com |
+
+### APEX記錄 {#apex-record}
+
+頂點網域是不包含子網域（例如example.com）的自訂網域。 頂端網域會透過您的DNS `A` 提供者 `ALIAS` ，以 `ANAME` 及記錄進行設定。 Apex網域必須指向特定的IP位址。
+
+透過網域提供者，將下列所有A記錄新增至網域的DNS設定：
+
+* `A RECORD`
+
+* `A record for domain @ pointing to IP 151.101.3.10`
+
+* `A record for domain @ pointing to IP 151.101.67.10`
+
+* `A record for domain @ pointing to IP 151.101.131.10`
+
+* `A record for domain @ pointing to IP 151.101.195.10`
+
+## 檢查DNS記錄狀態 {#check-status-dns-record}
+
+您可以從「網域設定」頁面的「環境」表格中，按一下DNS記錄的「狀態」圖示，判斷您的網域名稱是否正確解析為AEM雲端服務網站。 Cloud Manager會針對您的網域名稱執行DNS查閱，並顯示下列其中一條狀態訊息：
+
+>[!NOTE]
+>當您的自訂網域名稱首次成功驗證並部署時，Cloud Manager會自動觸發DNS查閱。 對於後續嘗試，必須主動選擇狀 **態旁邊的** 「重新解析」表徵圖。 插入影像
+
+* **在您的自訂網域名**&#x200B;稱經過成功驗證和部署之後，將無法偵測到未偵測到DNS狀態。 當您的自訂網域名稱正在刪除時，也會觀察到此狀態。
+
+* **DNS解析錯誤**&#x200B;這表示DNS記錄配置尚未解析／指向，或是錯誤。 Adobe代表會自動收到通知。
+
+   >[!NOTE]
+   >您必須按照相應 `CNAME` 的指 `A-record` 示配置或。 請至「設定DNS設定INSERT LINK」以進一步瞭解主題。 準備就緒後，您必須選取狀態旁的「重新解析」圖示。
+
+* **正在進行DNS解**&#x200B;析。 此狀態通常會在您選取狀態旁的「再次解析」圖示後顯示。
+
+* **DNS解析正確** DNS設定已正確設定。 您的網站為訪客提供服務。
