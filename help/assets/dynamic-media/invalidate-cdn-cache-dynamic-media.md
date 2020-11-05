@@ -2,9 +2,9 @@
 title: 透過動態媒體使CDN快取失效
 description: 停用CDN（內容傳送網路）快取內容可讓您快速更新由動態媒體傳送的資產，而不需等待快取過期。
 translation-type: tm+mt
-source-git-commit: 30c7dddb52a6012d3c55cdb66ae0c9b1a3588fa3
+source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1300'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->下列步驟僅適用於AEM上的Dynamic Media做為雲端服務。 此功能也要求您使用隨附於AEM Dynamic Media的現成可用CDN;不支援任何其他自訂CDN。 <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>這項功能需要您使用隨附於AEM Dynamic Media的現成可用CDN;不支援任何其他自訂CDN。 <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 另請參閱 [動態媒體中的快取概觀](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)。
 
@@ -37,7 +37,9 @@ ht-degree: 1%
 
    ![CDN失效範本——建立](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. 在 **[!UICONTROL CDN失效範本頁面的右上角]** ，點選「 **[!UICONTROL 儲存]**」，然後點選「 **[!UICONTROL 確定」。]**<br>   *第2部分（共2部分）:設定CDN失效選項*
+1. 在 **[!UICONTROL CDN失效範本頁面的右上角]** ，點選「 **[!UICONTROL 儲存]**」，然後點選「 **[!UICONTROL 確定」。]**<br>
+
+   *第2部分（共2部分）:設定CDN失效選項*
    <br>
 
 1. 在AEM中，以雲端服務的形式，點選「工 **[!UICONTROL 具>資產> CDN失效」。]**
