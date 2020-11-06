@@ -2,9 +2,9 @@
 title: 設定動態媒體雲端服務
 description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
 translation-type: tm+mt
-source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
+source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
 workflow-type: tm+mt
-source-wordcount: '5599'
+source-wordcount: '5598'
 ht-degree: 7%
 
 ---
@@ -82,7 +82,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | 公司根資料夾路徑 | 您公司的根資料夾路徑。 |
    | 發佈資產 | 您可以從下列三個選項中選擇：<br>**[!UICONTROL 立即&#x200B;]**:上傳資產時，系統會收錄資產並立即提供URL/內嵌。 發佈資產不需要使用者干預。<br>**[!UICONTROL 啟動後]**:您必須先明確發佈資產，才能提供URL/內嵌連結。<br>**[!UICONTROL 選擇性發佈&#x200B;]**:資產會自動發佈，僅供安全預覽使用，而且可明確發佈至AEM，而不需發佈至DMS7以便在公用網域中傳送。 未來，Adobe將增強此選項，將資產發佈至AEM，並將資產發佈至Dynamic Media，彼此互斥。 也就是說，您可以將資產發佈到DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您可以在AEM中獨家發佈資產以進行預覽；這些相同的資產不會發佈在DMS7中，以便在公共域中交付。 |
    | 安全預覽伺服器 | 可讓您指定安全轉譯預覽伺服器的URL路徑。 也就是說，在產生轉譯後，AEM可以安全地存取和預覽遠端的「動態媒體」轉譯（不會將二進位檔傳回至AEM例項）。<br>除非您有特殊安排可使用您公司的伺服器或特殊伺服器，否則Adobe Systems建議您依指定的方式保留此設定。 |
-   | 同步處理所有內容 | 依預設選取。 如果您想要選擇性地包含或排除同步至動態媒體的資產，請取消選取此選項。 取消選取此選項可讓您從下列兩種動態媒體同步模式中選擇：動態媒體同步<br>**[!UICONTROL 模式預]**<br>**[!UICONTROL 設啟用&#x200B;]**:預設情況下，配置將應用於所有資料夾，除非您專門標籤要排除的資料夾。<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 依預設停用]**:在您明確標示選定資料夾以同步至動態媒體之前，此設定不會套用至任何資料夾。<br>若要將選取的檔案夾標示為同步至動態媒體，請選取資產檔案夾，然後在工具列上點選「屬 **[!UICONTROL 性」]**。 在「詳 **[!UICONTROL 細資訊]** 」標籤的「動態媒體同步模式 **** 」下拉式清單中，從下列三個選項中選擇。 完成後，點選「儲 **[!UICONTROL 存」]**。 *記住：如果您選取「先同步所有內容」，這三個選&#x200B;**項將無法使用**。* 另請參閱 [在動態媒體的資料夾層級使用選擇性發佈。](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 繼承&#x200B;]**:資料夾上沒有明確的同步值；資料夾會從其祖先資料夾或雲端設定的預設模式繼承同步值。 繼承的詳細狀態會透過工具提示顯示。<br>**[!UICONTROL 啟用子資料夾]**:在此子樹狀結構中包含所有項目，以便同步至動態媒體。 資料夾特定的設定會覆寫雲端設定中的預設模式。<br>**[!UICONTROL 子資料夾禁用&#x200B;]**:排除此子樹狀結構中的所有項目，以免同步至動態媒體。 |
+   | 同步處理所有內容 | 依預設選取。 如果您想要選擇性地包含或排除同步至動態媒體的資產，請取消選取此選項。 取消選取此選項可讓您從下列兩種動態媒體同步模式中選擇：動態媒體同步<br>**[!UICONTROL 模式預]**<br>**[!UICONTROL 設啟用&#x200B;]**:預設情況下，配置將應用於所有資料夾，除非您專門標籤要排除的資料夾。 <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 依預設停用]**:在您明確標示選定資料夾以同步至動態媒體之前，此設定不會套用至任何資料夾。<br>若要將選取的檔案夾標示為同步至動態媒體，請選取資產檔案夾，然後在工具列上點選「屬 **[!UICONTROL 性」]**。 在「詳 **[!UICONTROL 細資訊]** 」標籤的「動態媒體同步模式 **** 」下拉式清單中，從下列三個選項中選擇。 完成後，點選「儲 **[!UICONTROL 存」]**。 *記住：如果您選取「先同步所有內容」，這三個選&#x200B;**項將無法使用**。* 另請參閱 [在動態媒體的資料夾層級使用選擇性發佈。](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 繼承&#x200B;]**:資料夾上沒有明確的同步值；資料夾會從其祖先資料夾或雲端設定的預設模式繼承同步值。 繼承的詳細狀態會透過工具提示顯示。<br>**[!UICONTROL 啟用子資料夾]**:在此子樹狀結構中包含所有項目，以便同步至動態媒體。 資料夾特定的設定會覆寫雲端設定中的預設模式。<br>**[!UICONTROL 子資料夾禁用&#x200B;]**:排除此子樹狀結構中的所有項目，以免同步至動態媒體。 |
 
    >[!NOTE]
    >
@@ -254,14 +254,14 @@ To migrate any custom viewer presets and configurations that you have created fr
 * 傳回RGB輸出的動態轉譯，將會傳回 *sRGB* 色域。
 * 傳回CMYK輸出的動態轉譯，會傳回至 *WebCopated* 色彩空間。
 
-#### 設定資產處理 {#configuring-asset-processing}
+#### 編輯支援格式的MIME類型 {#configuring-asset-processing}
 
-您可以定義Dynamic Media應處理哪些資產類型，並自訂進階資產處理參數。 例如，您可以指定資產處理參數以執行下列動作：
+您可以定義Dynamic Media處理哪些資產類型，並自訂進階資產處理參數。 例如，您可以指定資產處理參數以執行下列動作：
 
 * 將Adobe PDF轉換為eCatalog資產。
 * 將Adobe Photoshop檔案(.PSD)轉換為橫幅範本資產，以利個人化。
 * 點陣化Adobe Illustrator檔案(.AI)或Adobe Photoshop封裝的Postscript檔案(.EPS)。
-* 注意：「視訊設定檔」和「影像設定檔」可分別用來定義視訊和影像的處理。
+* [視訊設定檔](/help/assets/dynamic-media/video-profiles.md) 和 [](/help/assets/dynamic-media/image-profiles.md) 影像設定檔可分別用來定義視訊和影像的處理。
 
 請參閱 [上傳資產](/help/assets/add-assets.md)。
 
@@ -277,7 +277,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. 在mimeTypes資料夾下，選取MIME類型。
 1. 在CRXDE Lite頁面的右側，位於下方：
 
-   * 按兩下啟用 **[!UICONTROL 欄位]** 。 預設會啟用所有資產MIME類型(設 **[!UICONTROL 為true]**)，這表示資產將同步至動態媒體以進行處理。 如果您想要排除此資產MIME類型，請將此設定變更為 **[!UICONTROL false]**。
+   * 連按兩下啟 **[!UICONTROL 用欄]** 。 預設會啟用所有資產MIME類型(設 **[!UICONTROL 為true]**)，這表示資產將同步至動態媒體以進行處理。 如果您想要排除此資產MIME類型，請將此設定變更為 **[!UICONTROL false]**。
 
    * 連按兩下 **[!UICONTROL jobParam]** ，以開啟其相關的文字欄位。 如需 [](/help/assets/file-format-support.md) 指定MIME類型可使用的許可處理參數值清單，請參閱支援的Mime類型。
 
@@ -287,11 +287,11 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. 在頁面的左上角，點選 **[!UICONTROL CRXDE Lite]** ，返回AEM。
 
-#### 為不支援的格式添加自定義MIME類型 {#adding-custom-mime-types-for-unsupported-formats}
+#### 為不支援的格式添加MIME類型 {#adding-custom-mime-types-for-unsupported-formats}
 
 您可以針對AEM Assets中不支援的格式新增自訂MIME類型。為確保AEM不會刪除您在CRXDE Lite中新增的任何新節點，您必須確定您先移動MIME類型， `image_` 且其啟用值設為 **[!UICONTROL false]**。
 
-要為不支援的格式添加自定義MIME類型：
+要為不支援的格式添加MIME類型：
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -453,7 +453,7 @@ spin-01-01
 
    您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
 
-1. 在頁面頂部的導覽列上，按一下「設定>應用程 **[!UICONTROL 式設定]>批[!UICONTROL 集預設集]>批[!UICONTROL 集預設集」]**。
+1. 在頁面頂部的導覽列上，按一下「設定>應用程 **[!UICONTROL 式設定] >批 [!UICONTROL 集預設集] >批 [!UICONTROL 集預設集」]**。
 
    請注 **[!UICONTROL 意，如「詳細資料]**」頁面右上角所設定，「檢視表單」是預設檢視。
 
