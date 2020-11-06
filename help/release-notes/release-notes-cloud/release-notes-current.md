@@ -1,16 +1,16 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.10.0 版發行說明。'
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 作為2020.10.0的雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: a544acab6f79fa60990bfc3915a5a664befb8b09
+source-git-commit: 11df1136cbfca9237ead417cacca4049e2f35b4d
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '888'
 ht-degree: 20%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] 雲端服務 2020.10.0 版發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 版發行說明 {#release-notes}
 
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
@@ -44,13 +44,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 * **[!DNL Adobe Asset Link]2.1版**:目前提供適 [用於、和的Adobe Asset](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) Link [!DNL Adobe Photoshop]擴充功 [!DNL Adobe Illustrator]能新 [!DNL Adobe InDesign] 版本。 它新增了與2020年10月發行 [!DNL Adobe Creative Cloud] 的2021版最新應用程式的相容性。
 
-* **[!DNL Assets]WebP檔案支援**: [!DNL Assets] 雲端服務現在支援WebP影像格式。 WebP是Google建立的新興影像格式。 WebP檔案格式的影像在視覺上與JPG或PNG檔案沒有區隔，而且檔案要小得多。 降低資產的檔案大小可縮短頁面載入時間，並協助內容建立者提供更快速的網頁體驗。
-
-<!--
-### Bugs Fixed {#bugs-fixed-assets}
-
-Content to come
--->
+* **[!DNL Assets]WebP檔案支援**: [!DNL Assets] 雲端服務現在支援WebP影像格式。 WebP是Google建立的新興影像格式。 WebP檔案格式的影像在視覺上與JPG或PNG檔案沒有區隔，而且檔案要小得多。 降低資產的檔案大小可縮短頁面載入時間，並協助內容建立者提供更快速的網頁體驗。 請參 [閱建立標準處理設定檔](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -98,7 +92,7 @@ Content to come
 * 環境頁面有時會在未顯示任何內容的情況下，顯示發佈和發送器區段。
 
 
-## Adobe Experience Manager 雲端服務基礎 {#cloud-service-foundation}
+## Adobe Experience Manager as a Cloud Service 基礎 {#cloud-service-foundation}
 
 ### 工作流程 {#workflows}
 
