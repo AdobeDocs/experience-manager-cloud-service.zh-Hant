@@ -2,9 +2,9 @@
 title: 設定動態媒體雲端服務
 description: 有關如何在Adobe Experience Manager Cloud Service中設定動態媒體的資訊。
 translation-type: tm+mt
-source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
+source-git-commit: 9719a440a85b150599efa3eb9dc2bd443a917217
 workflow-type: tm+mt
-source-wordcount: '5598'
+source-wordcount: '5619'
 ht-degree: 7%
 
 ---
@@ -193,8 +193,8 @@ To migrate any custom viewer presets and configurations that you have created fr
 * [影像伺服器的發佈設定](#publishing-setup-for-image-server)
 * [配置應用程式常規設定](#configuring-application-general-settings)
 * [設定色彩管理](#configuring-color-management)
-* [設定資產處理](#configuring-asset-processing)
-* [為不支援的格式添加自定義MIME類型](#adding-custom-mime-types-for-unsupported-formats)
+* [編輯支援格式的MIME類型](#editing-mime-types-for-supported-formats)
+* [為不支援的格式添加MIME類型](#adding-mime-types-for-unsupported-formats)
 * [建立批次集預設集以自動產生影像集和回轉集](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### 影像伺服器的發佈設定 {#publishing-setup-for-image-server}
@@ -254,7 +254,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 * 傳回RGB輸出的動態轉譯，將會傳回 *sRGB* 色域。
 * 傳回CMYK輸出的動態轉譯，會傳回至 *WebCopated* 色彩空間。
 
-#### 編輯支援格式的MIME類型 {#configuring-asset-processing}
+#### 編輯支援格式的MIME類型 {#editing-mime-types-for-supported-formats}
 
 您可以定義Dynamic Media處理哪些資產類型，並自訂進階資產處理參數。 例如，您可以指定資產處理參數以執行下列動作：
 
@@ -265,7 +265,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 請參閱 [上傳資產](/help/assets/add-assets.md)。
 
-若要設定資產處理：
+**要編輯支援格式的MIME類型**
 
 1. 在AEM中，按一下AEM標誌以存取全域導覽主控台，然後按一下「一 **[!UICONTROL 般> CRXDE Lite]**」。
 1. 在左側導軌中，導覽至下列項目：
@@ -287,11 +287,11 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. 在頁面的左上角，點選 **[!UICONTROL CRXDE Lite]** ，返回AEM。
 
-#### 為不支援的格式添加MIME類型 {#adding-custom-mime-types-for-unsupported-formats}
+#### 為不支援的格式添加MIME類型 {#adding-mime-types-for-unsupported-formats}
 
 您可以針對AEM Assets中不支援的格式新增自訂MIME類型。為確保AEM不會刪除您在CRXDE Lite中新增的任何新節點，您必須確定您先移動MIME類型， `image_` 且其啟用值設為 **[!UICONTROL false]**。
 
-要為不支援的格式添加MIME類型：
+**要為不支援的格式添加MIME類型**
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -357,7 +357,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 定義可使用兩個元素： 「符合」和「基本名稱」。 這些欄位可讓您定義命名約定的所有元素，並識別用於命名包含這些元素的集合的約定部分。 公司的個別命名慣例可能會針對每個元素使用一或多行定義。 您可以使用任意多行來定義獨特元素，並將它們分組為不同的元素，例如主影像、顏色元素、替代檢視元素和色票元素。
 
-要配置預設命名：
+**若要設定預設命名**
 
 1. 登入您的Dynamic Media Classic(Scene7)帳戶： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -391,7 +391,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 您可以使用表單欄位方法來定義批次集預設集，或使用程式碼方法來使用規則運算式。 如同在預設命名中，您可以在表單檢視中定義的同時選擇檢視程式碼，並使用規則運算式來建立定義。 或者，您可以取消選中任一視圖以獨佔使用一個視圖或另一個視圖。
 
-要建立批集預設集，請執行以下操作：
+**要建立批集預設集，請執行以下操作：**
 
 1. 登入您的Dynamic Media Classic(Scene7)帳戶： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -447,7 +447,7 @@ spin-01-01
 
 上傳和發佈回轉集時，您會啟用「上傳工作選項」對話方塊中「批次集預設集」下方所列的2D回轉集 **方式名稱****** 。
 
-要為自動生成2D回轉集建立批集預設，請執行以下操作：
+**要為自動生成2D回轉集建立批集預設集，請執行以下操作：**
 
 1. 登入您的Dynamic Media Classic(Scene7)帳戶： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -542,11 +542,13 @@ Adobe建議對PDF、Postscript和PSD檔案使用下列「已調整」的工作�
 
 1. 在「最大 **[!UICONTROL 並行作業數]** 」欄位中，將數字更改為所需值。
 
-   預設情況下，並行作業的最大數量取決於可用CPU內核的數量。 例如，在4核伺服器上，它分配2個工作線程。 （0.0到1.0之間的值是基於比率的，或者任何大於1的數字都將分配工作線程數。）
+   您可以增加「 **[!UICONTROL 最大並行作業數]** 」，以充份支援將檔案大量上傳至動態媒體。 確切值取決於硬體容量。 在某些情況下（即初始移轉或一次性大量上傳），您可以使用大值。 但是，請注意，使用大值（如兩倍的內核數）可能會對其他併發活動產生負面影響。 因此，您應根據您的特定使用案例來測試和調整值。
 
-   Adobe建議您設定32 **[!UICONTROL 個最大並行作業]** ，以充份支援將檔案重量上傳至Dynamic Media Classic(Scene7)。
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. 點選「 **[!UICONTROL 儲存]**」。
 
