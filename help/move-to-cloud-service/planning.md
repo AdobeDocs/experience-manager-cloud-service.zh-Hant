@@ -12,13 +12,13 @@ ht-degree: 91%
 
 # 規劃 {#planning-phase}
 
-在展開轉換至雲端服務的過程前，您應該先熟悉 AEM 雲端服務、檢視針對其採取的重大變更，並檢視已遭取代或淘汰的功能。
+在展開轉換至 Cloud Service 的過程前，您應該先熟悉 AEM as a Cloud Service、檢視針對其採取的重大變更，並檢視已遭取代或淘汰的功能。
 
 ## 重大變更 {#notable-changes}
 
-AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可能性。
+AEM as a Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許多可能性。
 
-但 AEM 雲端服務與 AEM On-premise 或 Adobe Managed Services 之間仍有許多差異。
+但 AEM as a Cloud Service 與 AEM On-premise 或 Adobe Managed Services 之間仍有許多差異。
 
 請參考 [AEM 雲端服務的重大變更](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/release-notes/aem-cloud-changes.html)以了解重要差異。
 
@@ -26,7 +26,7 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 
 Adobe 持續評估產品功能，以更新或替代的方式來改善或取代舊功能，以提升客戶享有的整體價值，且隨時謹慎考慮是否回溯相容。
 
-請參考[過時的功能](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features)，深入了解已在 Experience Manager 雲端服務中標示為過時的功能。
+請參考[過時的功能](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features)，深入了解已在 Experience Manager as a Cloud Service 中標示為過時的功能。
 
 ## 了解規劃階段 {#introduction}
 
@@ -36,7 +36,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ### 評定雲端服務整備 {#access-cloud-readiness}
 
-「規劃」階段中的第一個步驟，便是評定您是否已整備完畢，可從現有的 AEM 版本移轉至雲端服務；接著，也要判斷必須重構以便與 AEM 雲端服務相容的區域。
+「規劃」階段中的第一個步驟，便是評定您是否已整備完畢，可從現有的 AEM 版本移轉至 Cloud Service；接著，也要判斷必須重構以便與 AEM as a Cloud Service 相容的區域。
 
 您必須對照重大變更和過時的功能，對目前的 AEM 原始碼進行綜合評估，以便判斷轉換過程中預期的投入程度。
 
