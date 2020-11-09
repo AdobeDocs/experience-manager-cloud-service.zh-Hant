@@ -1,5 +1,5 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.9.0 版發行說明。'
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 2020.9.0版雲端服務發行說明。'
 translation-type: tm+mt
 source-git-commit: db5ca67c583166f4ecb09884a064dfc1378f436e
@@ -10,7 +10,7 @@ ht-degree: 9%
 ---
 
 
-# [!DNL Adobe Experience Manager] 雲端服務 2020.9.0 版發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 版發行說明 {#release-notes}
 
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
