@@ -49,7 +49,7 @@ Assets REST API也允許開發人員建立新資產、內容片段和資料夾�
 
 ## 必備條件 {#prerequisites}
 
-資產REST API可在最新Adobe Experience Manager的每次即裝即用安裝中，以雲端服務版本提供。
+資產REST API可在最新Adobe Experience Manager的每次現成安裝中，以雲端服務版本提供。
 
 ## 重要概念 {#key-concepts}
 
