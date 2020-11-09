@@ -57,7 +57,7 @@ ht-degree: 9%
    * 將內容內嵌至協力廠商觸點。
 * 如果您有「體驗」，但有不同的變化或轉譯。
    * 頻道或內容特定變化。
-   * 對群體有意義的體驗； 例如，跨通道具有不同體驗的促銷活動。
+   * 對群體有意義的體驗；例如，跨通道具有不同體驗的促銷活動。
 * 當您使用全通道商務時。
    * 在社交媒體頻道上大 [規模分享](/help/implementing/developing/extending/experience-fragments.md#social-variations) 與商務相關的內容。
    * 讓觸點成為交易型。
@@ -71,7 +71,7 @@ ht-degree: 9%
 
 建立資料夾允許您：
 
-* 為您的體驗片段建立有意義的結構； 例如，根據分類
+* 為您的體驗片段建立有意義的結構；例如，根據分類
 
    >[!NOTE]
    >
@@ -175,7 +175,7 @@ WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構
 
 1. 輸入 **體驗****片段的屬性**。
 
-   標 **題** 是必填的。 如果名 **稱** (Name)留空，則會從標題( **Title)中衍生出來**。
+   「標 **題** 」為強制。 如果名 **稱** (Name)留空，則會從標題( **Title)中衍生出來**。
 
    ![體驗片段屬性](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -244,7 +244,7 @@ For example: `http://<host>:<port>/editor.html/content/experience-fragments/wknd
 
 1. 在頁面段落系統中建立體驗片段元件的例項：
 
-1. 將實際的體驗片段新增至元件例項； 其中：
+1. 將實際的體驗片段新增至元件例項；其中：
 
    * 從「資產瀏覽器」拖曳必要片段至元件。
    * Select **Configure** from the component toolbar and specify the fragment to use, confirm with **Done**.
