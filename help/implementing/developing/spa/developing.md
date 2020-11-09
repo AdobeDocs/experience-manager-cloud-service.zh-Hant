@@ -118,7 +118,7 @@ SPA只應仰賴動態轉換內容。 這是AEM擷取和轉譯內容結構所有�
 
    在元件達成一致且JSON模型就位後，前端開發人員就可免費開發SPA，而且只要透過存取JSON模型即可 `this.props.cqModel`。
 
-1. **實作元件的方`render()`法**
+1. **實作元件的方 `render()` 法**
 
    前端開發人員會依其看 `render()` 到的適合實作方法，並可使用屬性的欄 `cqModel` 位。 這會輸出將插入頁面的DOM和HTML片段。 這是在React中建立應用程式的標準方式。
 
@@ -130,15 +130,15 @@ SPA只應仰賴動態轉換內容。 這是AEM擷取和轉譯內容結構所有�
 
    和 `Page` 是 `ResponsiveGrid` 擴展基礎的類的好示例 `Container`。
 
-1. **將元件定義為參`EditConfig`數，以便`MapTo()`**
+1. **將元件定義為參 `EditConfig` 數，以便`MapTo()`**
 
    此參數是必要的，以告知編輯器，如何將元件命名為at，但尚未轉譯或沒有要轉譯的內容。
 
-1. **擴充提供的`Container`頁面和容器類別**
+1. **擴充提供的 `Container` 頁面和容器類別**
 
    頁面和段落系統應擴充此類別，讓委派至內部元件如預期般運作。
 
-1. **實作使用HTML5`History`API的路由選擇解決方案。**
+1. **實作使用HTML5 `History` API的路由選擇解決方案。**
 
    啟用 `ModelRouter` 後，調用和 `pushState` 函 `replaceState` 數將觸發請求， `PageModelManager` 以提取模型的缺失片段。
 
