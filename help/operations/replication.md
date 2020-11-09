@@ -22,7 +22,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling Content Distribution](h
 
 ### 快速取消／發佈——計畫取消／發佈 {#publish-unpublish}
 
-作者適用的這些標準AEM功能不會隨AEM Cloud服務而改變。
+作者適用的這些標準AEM功能不會隨著AEM Cloud服務而改變。
 
 ### 開啟和關閉時間——觸發器設定 {#on-and-off-times-trigger-configuration}
 
