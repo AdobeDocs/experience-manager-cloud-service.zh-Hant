@@ -1,18 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  雲端服務 2020.8.0 版發行說明。'
-description: '[!DNL Adobe Experience Manager] 雲端服務 2020.8.0 版發行說明。'
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0 版發行說明。'
+description: '[!DNL Adobe Experience Manager] 2020.8.0版雲端服務發行說明。'
 translation-type: tm+mt
 source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 6%
+source-wordcount: '1050'
+ht-degree: 5%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] 雲端服務 2020.8.0 版發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 版發行說明 {#release-notes}
 
-以下章節概述 Experience Manager 雲端服務 2020.8.0 版的一般發行說明。
+以下章節概述 Experience Manager as a Cloud Service 2020.8.0 版的一般發行說明。
 
 
 ## [!DNL Adobe Experience Manager Sites] 雲端服務 {#sites}
