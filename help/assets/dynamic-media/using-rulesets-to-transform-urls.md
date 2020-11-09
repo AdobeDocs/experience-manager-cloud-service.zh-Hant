@@ -15,7 +15,7 @@ ht-degree: 5%
 您可以在動態媒體中部署規則集以轉換URL。 規則集是以指令碼語言（例如JavaScript）編寫的指令集，可評估XML資料，並在資料符合特定條件時採取特定動作。 每個規則都包含至少一個條件和至少一個動作。 規則會根據條件評估XML資料，如果符合條件，則會採取適當的動作。 規則集的範例包括：
 
 * 添加MIME類型尾碼。 許多服務和網站都需要影像字尾，例如 `.jpg` 新增至URL。
-* 建立URL的資料夾路徑，以利搜尋引擎最佳化(SEO)。
+* 建立URL的資料夾路徑以用於搜尋引擎最佳化(SEO)。
 
    了 [解Adobe Scene7 Publishing System如何支援搜尋引擎最佳化](/help/assets/dynamic-media/assets/s7_seo.pdf)。
 
@@ -34,7 +34,7 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->使用規則集時請謹慎； 它們可防止動態媒體內容顯示在您的網站上。
+>使用規則集時請謹慎；它們可防止動態媒體內容顯示在您的網站上。
 
 有可用的範例規則集可協助您建立自己的規則集。
 請參 [閱規則集參考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)。
