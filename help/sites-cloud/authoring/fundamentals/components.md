@@ -32,7 +32,7 @@ AEM隨附多種現成可用的元件，為網站作者提供完整的功能。 �
 * [編輯內容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [編輯內容——全螢幕模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-如需將元件新增至頁面的詳細資訊，請參閱文章「 [編輯頁面內容」](/help/sites-cloud/authoring/fundamentals/editing-content.md)。
+如需新增元件至頁面的詳細資訊，請參閱文章 [編輯頁面內容](/help/sites-cloud/authoring/fundamentals/editing-content.md)。
 
 ## 所有元件概觀 {#overview-of-all-components}
 
