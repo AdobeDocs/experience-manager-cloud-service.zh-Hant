@@ -26,7 +26,7 @@ Audiences [主控台](audiences.md) ，用來管理ContextHub的區段，以及A
 
 若要存取您的區段，請在全域導覽中選取「導 **覽>個人化>觀眾」**。
 
-![管理觀眾](../assets/contexthub-segmentation-audiences.png)
+![Managing audiences](../assets/contexthub-segmentation-audiences.png)
 
 ## 區段編輯器 {#segment-editor}
 
