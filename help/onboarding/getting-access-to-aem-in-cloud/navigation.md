@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# 存取 Experience Manager 雲端服務 {#navigation}
+# 存取 Experience Manager as a Cloud Service {#navigation}
 
 一旦系統管理員授予您Cloud Manager的存取權，您就會收到一封電子郵件，將您帶往Cloud Manager登入頁面，您也可透過 [Adobe Experience Cloud存取](https://my.cloudmanager.adobe.com/)。
 
@@ -24,7 +24,7 @@ SysAdmin角色中的使用者現在可以直接存取Admin Console以管理角�
 
 ### 管理角色 {#manage-roles}
 
-身為SysAdmin角色的用戶，您只需按一下即可存取 **Admin Console** （管理控制台）中管理Cloud Manager的使用者角色或權限的位置。
+As a user in the SysAdmin role, you have one-click access to the location in **Admin Console** from where user roles or permissions to Cloud Manager are managed.
 
 請參閱 [存取Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) ，以取得如何新增使用者至描述檔的詳細資訊。
 
@@ -35,7 +35,7 @@ SysAdmin角色中的使用者現在可以直接存取Admin Console以管理角�
 
    ![](assets/sys-admin5.png)
 
-1. 按一下「管 **理存取權**」後，您會導覽至 **Admin Console** ，您可從其中管理Cloud Manager的使用者角色或權限。
+1. 按一下「管 **理存取**」後，您會導覽至 **Admin Console** ，您可從其中管理Cloud Manager的使用者角色或權限。
 
    ![](assets/sys-admin1.png)
 
