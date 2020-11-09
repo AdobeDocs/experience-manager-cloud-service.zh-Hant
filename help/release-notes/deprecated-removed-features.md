@@ -1,6 +1,6 @@
 ---
 title: 過時和移除的功能
-description: 此發行說明著重於 Adobe Experience Manager 雲端服務中已過時和移除的功能。
+description: 此發行說明著重於 Adobe Experience Manager as a Cloud Service 中已過時和移除的功能。
 translation-type: tm+mt
 source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 過時和移除的功能 {#deprecated-and-removed-features}
 
-Adobe 持續評估產品功能，以更新或替代的方式來改善或取代舊功能，以提升客戶享有的整體價值，且隨時謹慎考慮是否回溯相容。此外，由於 Adobe Experience Manager 雲端服務提供雲端原生部署模型，因此某些功能已由對應的雲端原生功能取代。
+Adobe 持續評估產品功能，以更新或替代的方式來改善或取代舊功能，以提升客戶享有的整體價值，且隨時謹慎考慮是否回溯相容。此外，由於 Adobe Experience Manager as a Cloud Service 提供雲端原生部署模型，因此某些功能已由對應的雲端原生功能取代。
 
 若要傳達 AEM 功能即將移除/取代的訊息，請套用下列規則：
 
@@ -23,7 +23,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ## 過時的功能 {#deprecated-features}
 
-本節提供 Experience Manager 雲端服務中標示為過時的功能。日後版本通常會將預計移除的功能設為過時，並提供其他選項。
+本節提供 Experience Manager as a Cloud Service 中標示為過時的功能。日後版本通常會將預計移除的功能設為過時，並提供其他選項。
 
 建議客戶檢視是否在目前的部署中使用這些功能，並規劃變更實作，改為使用所提供的替代方案。
 
@@ -36,12 +36,12 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ## 移除的功能 {#removed-features}
 
-本節提供已從具 Experience Manager 雲端服務之 AEM 中移除的功能。
+本節提供已從具 Experience Manager as a Cloud Service 之 AEM 中移除的功能。
 
 | 區域 | 功能 | 替代方案 |
 | ------------ | ------------------ | ----------- |
 | UI | 雖然少數特定功能 (例如「連結檢查程式」、「版本清除」和部分雲端服務設定) 會保留部分傳統 UI 對話方塊，但使用者已無法在 AEM 產品 UI 中存取傳統 UI。 | 標準 UI |
-| Dynamic Media | AEM 雲端服務中無法使用先前整合的 [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/tw/experience-manager/6-5/sites/administering/using/scene7.html) 和 [Dynamic Media 混合模式](https://helpx.adobe.com/tw/experience-manager/6-5/assets/using/config-dynamic.html)。 | 請使用 Experience Manager 雲端服務隨附的 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。 |
+| Dynamic Media | AEM as a Cloud Service 中無法使用先前整合的 [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/tw/experience-manager/6-5/sites/administering/using/scene7.html) 和 [Dynamic Media 混合模式](https://helpx.adobe.com/tw/experience-manager/6-5/assets/using/config-dynamic.html)。 | 請使用 Experience Manager as a Cloud Service 隨附的 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。 |
 | 網站 | Portal Director 和 Portlet 元件 | 這些功能在 AEM 6.4 中已過時，已從 AEM 中移除。 |
 | 網站 | Design Importer | 此功能已移除，因為無法在執行階段存取 AEM 儲存庫的不可修改區段。 |
 | Assets | [AEM Assets 無法與 Marketing Cloud Assets 核心服務和 Creative Cloud 服務共用](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html)。 | 若要與 Creative Cloud 整合，請使用 [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。 |
