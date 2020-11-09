@@ -22,7 +22,7 @@ ht-degree: 7%
 
 ## Dynamic Media的功能 {#what-you-can-do-with-dynamic-media}
 
-動態媒體可讓您在發佈資產之前先管理資產。 使用數位資產中會詳細說明如何使用 [資產](/help/assets/manage-digital-assets.md)。 一般主題包括上傳、下載、編輯和發佈資產； 檢視和編輯屬性，以及搜尋資產。
+動態媒體可讓您在發佈資產之前先管理資產。 使用數位資產中會詳細說明如何使用 [資產](/help/assets/manage-digital-assets.md)。 一般主題包括上傳、下載、編輯和發佈資產；檢視和編輯屬性，以及搜尋資產。
 
 僅限動態媒體的功能包括：
 
