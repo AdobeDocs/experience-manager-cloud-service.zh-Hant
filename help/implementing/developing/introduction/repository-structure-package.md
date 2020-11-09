@@ -34,7 +34,7 @@ ht-degree: 9%
 
 更新程 `<filters>` 序，以包含您的代碼包部署到的所有JCR儲存庫路徑根目錄。
 
-請務必將此新的Maven子項目添加到父項目列 `<modules>` 表中。
+請務必將此新的Maven子專案新增至父專案清 `<modules>` 單。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -183,4 +183,4 @@ Filter root's ancestor '/apps/some/path' is not covered by any of the specified 
 
 ## 其他資源
 
-+ [FileVault Content Package Maven Plug-in](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault Content Package Maven增效模組](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
