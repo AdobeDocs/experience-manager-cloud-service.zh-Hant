@@ -1,8 +1,8 @@
 ---
-sub-product: AEM 雲端服務發行說明
-user-guide-title: AEM 雲端服務發行說明
+sub-product: AEM as a Cloud Service 發行說明
+user-guide-title: AEM as a Cloud Service 發行說明
 breadcrumb-title: 發行說明
-user-guide-description: 本指南提供 Experience Manager 雲端服務最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。
+user-guide-description: 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。
 translation-type: tm+mt
 source-git-commit: ff6a8bcada76a50d682764bb5a03f498e903779e
 workflow-type: tm+mt
