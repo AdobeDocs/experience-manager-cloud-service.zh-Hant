@@ -21,8 +21,8 @@ ht-degree: 7%
 以「AEM雲端服務」適用的「商務整合架構」(CIF)為基礎，開發AEM Commerce專案時，也會遵循與AEM上其他AEM專案（如雲端服務）相同的規則和最佳實務。 請先閱讀以下內容：
 
 - [AEM 專案結構](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
-- [AEM 雲端服務 SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [AEM 雲端服務開發方針](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
+- [AEM as a Cloud Service 開發方針](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
 ## 以AEM做為雲端服務SDK進行本機開發 {#local}
 
@@ -38,7 +38,7 @@ CIF Add-On是以Sling Feature封存檔的形式提供。 Software Distribution P
 
 本機應安裝下列程式碼：
 
-- [AEM 雲端服務 SDK](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) （3.3.9或更新版本）
 - [Node.js v10+](https://nodejs.org/en/)
