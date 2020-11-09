@@ -1,6 +1,6 @@
 ---
-title: AEM 雲端服務中的快取
-description: 'AEM 雲端服務中的快取 '
+title: AEM as a Cloud Service 中的快取
+description: 'AEM as a Cloud Service 中的快取 '
 translation-type: tm+mt
 source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
