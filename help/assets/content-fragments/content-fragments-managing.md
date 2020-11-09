@@ -16,7 +16,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->然後內容片段會用於編寫頁面； 請參 [閱使用內容片段編寫頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
+>然後內容片段會用於編寫頁面；請參 [閱使用內容片段編寫頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
 
 ## 建立內容片段 {#creating-content-fragments}
 
@@ -32,7 +32,7 @@ ht-degree: 11%
 2. 依序選 **擇「建立**」、「 **內容片段** 」以開啟精靈。
 3. 嚮導的第一步要求您指定新片段的基礎。
 
-   * [模型](/help/assets/content-fragments/content-fragments-models.md) -用於建立需要結構化內容的片段； 例如 **Adventure** model
+   * [模型](/help/assets/content-fragments/content-fragments-models.md) -用於建立需要結構化內容的片段；例如 **Adventure** model
 
       * 將顯示所有可用的型號。
 
@@ -57,9 +57,9 @@ ht-degree: 11%
 
       * **名稱**
 
-         姓名； 將用於形成URL。
+         姓名；將用於形成URL。
 
-         強制； 將會自動從標題衍生，但可以更新。
+         強制；將會自動從標題衍生，但可以更新。
 
 
 5. 選擇 **Create**  (建立) 以完成操作，然後選擇 **Open** the fragment for editing (開啟片段以進行編輯) 或返回控制 **台完成**。
@@ -68,8 +68,8 @@ ht-degree: 11%
 
 在 **Assets** Console中，您的內容片段可使用一系列動作：
 
-* 從工具列； 在選擇片段後，所有適當的動作都可供使用。
-* 快 [速行動](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); 個別片段卡可用動作的子集。
+* 從工具列；在選擇片段後，所有適當的動作都可供使用。
+* 快 [速行動](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions);個別片段卡可用動作的子集。
 
 ![動作](assets/cfm-managing-02.png)
 
@@ -78,7 +78,7 @@ ht-degree: 11%
 * **建立**
 * **下載**
 
-   * 將片段儲存為ZIP檔案； 您可以定義是否要包含元素、變數、中繼資料。
+   * 將片段儲存為ZIP檔案；您可以定義是否要包含元素、變數、中繼資料。
 
 * **結帳**
 * **屬性**
@@ -119,7 +119,7 @@ ht-degree: 11%
 >若要編輯內容片段，您需要適當的權限。 如果您遇到問題，請與系統管理員聯繫。
 
 1. 使用 **Assets** 主控台導覽至內容片段的位置。
-2. 開啟片段以進行編輯，方法為：
+2. 開啟片段以供編輯，方法為：
 
    * 按一下／點選片段連結（這取決於控制台檢視）。
    * 選取片段，然後從工 **具列** 「編輯」。
@@ -192,7 +192,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >自動保存間隔可使用該機制 `/conf` 配置。
+   >自動保存間隔可使用該機制進行 `/conf` 配置。
    >
    >預設值，請參閱：
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
@@ -223,9 +223,9 @@ ht-degree: 11%
 * 檢視版本、注釋和註解的相關資訊
 * 版本動作
 
-   * **[還原為此版本](#reverting-to-a-version)**（選擇現有片段，然後選擇特定版本）
+   * **[還原為此版本](#reverting-to-a-version)** （選擇現有片段，然後選擇特定版本）
 
-   * **[與目前比較](#comparing-fragment-versions)**（選擇現有片段，然後選擇特定版本）
+   * **[與目前比較](#comparing-fragment-versions)** （選擇現有片段，然後選擇特定版本）
 
    * 新增標 **簽** 和／或 **注釋** （選取現有片段，然後選取特定版本）
 
@@ -236,11 +236,10 @@ ht-degree: 11%
    * **刪除**
 
 >[!NOTE]
->
->備注如下：
->* 所有資產的標準功能
->* 在時間軸中製作
->* 與片段資產相關
+備注如下：
+* 所有資產的標準功能
+* 在時間軸中製作
+* 與片段資產相關
 
 註解（適用於內容片段）包括：
 * 在片段編輯器中輸入
@@ -270,13 +269,12 @@ ht-degree: 11%
    * 插入的文本——綠色
    * 已取代文字——藍色
 
-* 全螢幕圖示可讓您自行開啟任一版本； 然後切換回平行檢視
+* 全螢幕圖示可讓您自行開啟任一版本；然後切換回平行檢視
 * 您可以 **回復** 到特定版本
 * **完成** ，將返回控制台
 
 >[!NOTE]
->
->比較片段時，無法編輯片段內容。
+比較片段時，無法編輯片段內容。
 
 ![比較](assets/cfm-managing-06.png)
 
@@ -293,18 +291,16 @@ ht-degree: 11%
 ## 發佈和參照片段 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->
->如果您的片段是以模型為基礎，則應確定 [模型已發佈](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
->如果您發佈模型尚未發佈的內容片段，則選擇清單會指出此點，而模型會隨片段一起發佈。
+如果您的片段是以模型為基礎，則應確定 [模型已發佈](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
+如果您發佈模型尚未發佈的內容片段，則選擇清單會指出此點，而模型將會隨片段一起發佈。
 
-必須發佈內容片段才能在發佈環境中使用。 可發佈：
+必須發佈內容片段，才能在發佈環境中使用。 可發佈：
 
-* 建立後； 從「資 **產** 」主控台。
-* 當您發 [布使用片段的頁面時](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); 片段將列在頁面參考中。
+* 建立後；從「資 **產** 」主控台。
+* 當您發 [布使用片段的頁面時](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing);片段將列在頁面參考中。
 
 >[!CAUTION]
->
->發佈和／或參考片段後，當作者開啟片段以進行重新編輯時，AEM會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
+發佈和／或參考片段後，當作者開啟片段以進行重新編輯時，AEM會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
 
 ## 刪除片段 {#deleting-a-fragment}
 
@@ -314,12 +310,10 @@ ht-degree: 11%
 2. 選擇片段。
 
    >[!NOTE]
-   >
-   >「刪 **除** 」(Delete)動作不提供快速動作。
+   「刪 **除** 」(Delete)動作不提供快速動作。
 
 3. 從工 **具列中** ，選取「刪除」。
 4. 確認「刪 **除** 」動作。
 
    >[!CAUTION]
-   >
-   >如果片段已在頁面中參考，您會看到警告訊息，並需要確認您要繼續執行強制刪 **除**。片段及其內容片段元件將會從任何內容頁面中刪除。
+   如果片段已在頁面中參考，您會看到警告訊息，並需要確認您要繼續執行強制刪 **除**。片段及其內容片段元件將會從任何內容頁面中刪除。
