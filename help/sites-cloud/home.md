@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager 雲端服務 Sites
-description: Adobe Experience Manager 雲端服務 Sites 自助資源與文件連結
+title: Adobe Experience Manager as a Cloud Service Sites
+description: Adobe Experience Manager as a Cloud Service Sites 自助資源與文件連結
 translation-type: tm+mt
 source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
@@ -10,13 +10,13 @@ ht-degree: 94%
 ---
 
 
-# AEM Sites 雲端服務 {#aem-sites-guide}
+# AEM Sites as a Cloud Service {#aem-sites-guide}
 
-此頁面提供 Experience Manager 雲端服務上 Sites 的相關自助資源。
+此頁面提供 Experience Manager as a Cloud Service 上 Sites 的相關自助資源。
 
 ## Sites 重要文章 {#key-articles}
 
-* [AEM Sites 雲端服務的重大變更](sites-cloud-changes.md)
+* [AEM Sites as a Cloud Service 的重大變更](sites-cloud-changes.md)
 * [製作快速入門指南](authoring/getting-started/quick-start.md)
 * [發佈頁面](authoring/fundamentals/publishing-pages.md)
 * [製作回應式版面](authoring/features/responsive-layout.md)
@@ -27,21 +27,21 @@ ht-degree: 94%
 * [整合 Adobe Analytics](integrating/integrating-adobe-analytics.md)
 * [整合 Adobe Target](integrating/integrating-adobe-target.md)
 
-## Experience Manager 雲端服務指南 {#aem-guides}
+## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
 | 使用手冊 | 說明 |
 |---|---|
-| [Experience Manager 雲端服務首頁](/help/landing/home.md) | 如需 Experience Manager 雲端服務文件概覽，請由此開始。 |
-| [概覽](/help/overview/home.md) | 本指南提供 Experience Manager 雲端服務概述，包括簡介、術語等等。 |
-| [發行說明](/help/release-notes/home.md) | 本指南提供 Experience Manager 雲端服務最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。 |
-| [核心概念](/help/core-concepts/home.md) | 本指南介紹 Experience Manager 雲端服務的核心概念，包括新服務的架構。 |
-| [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager 雲端服務與安全性相關的重要主題。 |
-| [入門](/help/onboarding/home.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager 雲端服務，包括如何取得存取權限和重要的資料保護資訊。 |
-| [Assets 使用手冊](/help/assets/home.md) | 了解如何使用及管理 Experience Manager Assets 雲端服務。 |
-| [轉移至 AEM 雲端服務](/help/move-to-cloud-service/home.md) | 了解轉換至雲端服務的過程。 |
-| [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager 雲端服務部署作業，包括開發和部署主題。 |
-| [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager 雲端服務整合。 |
-| [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager 雲端服務後端的操作方式，例如製作索引和執行維護任務。 |
+| [Experience Manager as a Cloud Service 首頁](/help/landing/home.md) | 如需 Experience Manager as a Cloud Service 文件概覽，請由此開始。 |
+| [概覽](/help/overview/home.md) | 本指南提供 Experience Manager as a Cloud Service 概述，包括簡介、術語等等。 |
+| [發行說明](/help/release-notes/home.md) | 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。 |
+| [核心概念](/help/core-concepts/home.md) | 本指南介紹 Experience Manager as a Cloud Service 的核心概念，包括新服務的架構。 |
+| [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |
+| [入門](/help/onboarding/home.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
+| [Assets 使用手冊](/help/assets/home.md) | 了解如何使用及管理 Experience Manager Assets as a Cloud Service。 |
+| [轉移至 AEM as a Cloud Service ](/help/move-to-cloud-service/home.md) | 了解轉換至雲端服務的過程。 |
+| [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。 |
+| [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |
+| [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 後端的操作方式，例如製作索引和執行維護任務。 |
 | [商務使用指南](/help/commerce-cloud/home.md) | 瞭解AEM上的Commerce Integration Framework as a Cloud Service。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
@@ -52,6 +52,6 @@ ht-degree: 94%
 * [核心元件文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager 文件](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [GDPR 整備](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager 雲端服務教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社群論壇](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
