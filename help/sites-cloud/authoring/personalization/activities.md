@@ -39,11 +39,12 @@ ht-degree: 18%
 >可用的活動類型由以下各項決定：
 >
 >* 如果 `xt_only` 在AEM端使用的Adobe Target租用戶(clientcode)上啟用此選項以連線至Adobe Target，則您只能在 **AEM中建立** XT活動。
+   >
+   >
+* 如果 `xt_only` Adobe Target租 **用戶** (clientcode)上未啟用選項，您可以在AEM中建立 **XT** 和A/B活動。
 >
->* 如果 `xt_only` Adobe Target租 **用戶** (clientcode)上未啟用選項，您可以在AEM中建立 **XT** 和A/B活動。
 >
->
->**** 其他附註：選 `xt_only` 項是套用於特定Target租用戶(clientcode)的設定，且只能在Adobe target中直接修改。您無法在AEM中啟用或停用此選項。
+**** 其他附註：選 `xt_only` 項是套用於特定Target租用戶(clientcode)的設定，且只能在Adobe target中直接修改。您無法在AEM中啟用或停用此選項。
 
 >[!CAUTION]
 >
@@ -76,7 +77,7 @@ ht-degree: 18%
 * **** 名稱：活動的名稱。
 * **** 定位引擎：AEM [](/help/sites-cloud/authoring/personalization/overview.md#aem) 或 [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) ，做為目標內容的引擎。
 * **** 選擇目標配置： (僅限Adobe Target) 此活動應用來連線至Adobe Target的雲端設定。只有在為「定位引擎」選取Adobe Target時，才會顯示此選項。
-* **活動類型**: 活動類型- A/B測試或體驗定位
+* **活動類型**:活動類型- A/B測試或體驗定位
 * **** 目標：(可選) 活動的說明。
 * **** 體驗：對象名稱與您所定位之行銷區段之間的對應。
 * **** 流量百分比：如果選取A/B測試，您可以變更每個體驗的流量 (百分比)。
@@ -113,8 +114,8 @@ ht-degree: 18%
    * **啟動時：** 活動會在包含目標內容的頁面被啟用時開始。
    * **指定的日期和時間：** 特定時間。 選取此選項時，按一下或點選日曆圖示，選取日期，並指定啟動活動的時間。
 1. 要指定活動何時結束，請使用「結束」下拉菜單選擇以下值之一：
-   * **停用時**: 當包含目標內容的頁面停用時，活動便會結束。
-   * **指定的日期和時間**: 特定時間。 選取此選項時，按一下或點選日曆圖示，選取日期，並指定結束活動的時間。
+   * **停用時**:當包含目標內容的頁面停用時，活動便會結束。
+   * **指定的日期和時間**:特定時間。 選取此選項時，按一下或點選日曆圖示，選取日期，並指定結束活動的時間。
 1. 要指定活動的優先順序，請使用滑塊選擇「低 **」**、「 **正常**」或「 **高」**。
 1. 如果您使用Adobe Target做為定位引擎，請選取您要使用此活動來測量的項目。 如需 [可用成功度量的詳細資訊](/help/sites-cloud/authoring/personalization/targeted-content.md) ，請參閱設定活動和設定目標。 您必須至少選擇一個目標。
 1. 按一下或點選「 **儲存**」。
@@ -211,7 +212,7 @@ ht-degree: 18%
 
 >[!NOTE]
 >
->當您在Adobe Target中建立促銷活動時，會指派一個名為的屬 `thirdPartyId` 性給每個促銷活動。 當您在Adobe Target中刪除促銷活動時， `thirdPartyId` 不會刪除。 您無法針對不同類 `thirdPartyId` 型(AB、XT)的促銷活動重新使用，且無法手動移除。 為避免此問題，請為每個促銷活動命名一個唯一的名稱； 因此，促銷活動名稱無法重複用於不同的促銷活動類型。
+>當您在Adobe Target中建立促銷活動時，會指派一個名為的屬 `thirdPartyId` 性給每個促銷活動。 當您在Adobe Target中刪除促銷活動時， `thirdPartyId` 不會刪除。 您無法針對不同類 `thirdPartyId` 型(AB、XT)的促銷活動重新使用，且無法手動移除。 為避免此問題，請為每個促銷活動命名一個唯一的名稱；因此，促銷活動名稱無法重複用於不同的促銷活動類型。
 >
 >如果您在相同的促銷活動類型中使用相同的名稱，您將會覆寫現有的促銷活動。
 >
