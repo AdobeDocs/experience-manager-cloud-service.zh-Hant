@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 架構簡介
 description: 'Adobe Experience Manager as a Cloud Service 架構簡介。 '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 100%
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -59,10 +59,11 @@ AEM as a Cloud Service 以協調引擎為運作基礎，該引擎的功能包括
 ## 環境 {#environments}
 
 >[!NOTE]
->
 >如需詳細資訊，請參閱[部署 - 執行模式](/help/implementing/deploying/overview.md#runmodes)
 
-AEM as a Cloud Service 可作為個別例項使用，每個例項皆代表完整的 AEM 環境。AEM as a Cloud Service 提供四種類型的環境：
+AEM as a Cloud Service 可作為個別例項使用，每個例項皆代表完整的 AEM 環境。
+
+AEM為雲端服務提供的環境有三種類型：
 
 * **生產環境**：為商務從業人員代管應用程式。
 
@@ -70,9 +71,7 @@ AEM as a Cloud Service 可作為個別例項使用，每個例項皆代表完整
 
 * **開發環境**：開發人員可在與預備和生產環境相同的執行階段條件下，實作 AEM 應用程式。
 
-* **展示環境**：適用於評估、展示、建立原型和訓練等用途。
-
-開發和展示環境通常稱為&#x200B;*非生產*&#x200B;環境。
+   如需詳細 [資訊，請參閱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) 「管理環境」。
 
 ## 計劃 {#programs}
 
