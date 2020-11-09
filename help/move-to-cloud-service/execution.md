@@ -1,9 +1,9 @@
 ---
 title: 執行階段
 description: 執行階段
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
@@ -18,11 +18,11 @@ Cloud Manager 可讓組織在雲端中自行管理 AEM。其內容包含持續�
 
 如需詳細資訊，請參考下列資源：
 
-* [加入 Experience Manager 雲端服務](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/onboarding/home.html)，了解有關加入 Experience Manager 雲端服務的自助資源。
+* [加入 Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/onboarding/home.html)，了解有關加入 Experience Manager as a Cloud Service 的自助資源。
 
 * [整合 Git 與 Adobe Cloud Manager](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)，了解如何使用 Single Git 存放庫來部署程式碼。
 
-* [Adobe Experience 雲端服務設定](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/security/ims-support.html#aem-configuration)，了解如何「在 Admin Console 中管理產品與使用者存取」。
+* [Adobe Experience as a Cloud Service 設定](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/security/ims-support.html#aem-configuration)，了解如何「在 Admin Console 中管理產品與使用者存取」。
 
 
 ## 簡介 {#introduction}
@@ -49,9 +49,9 @@ Cloud Manager 可讓組織在雲端中自行管理 AEM。其內容包含持續�
 
 ## 程式碼重構 {#code-refactor}
 
-在 AEM 雲端服務中開發及執行程式碼時必須改變習慣。請注意，程式碼必須具復原性，特別是因為例項可能隨時停止。您必須了解，在雲端服務中執行程式碼時，一律會在叢集中執行。這表示執行中的例項永遠多於一個。
+在 AEM as a Cloud Service 中開發及執行程式碼時必須改變習慣。請注意，程式碼必須具復原性，特別是因為例項可能隨時停止。您必須了解，在雲端服務中執行程式碼時，一律會在叢集中執行。這表示執行中的例項永遠多於一個。
 
-AEM Maven 專案必須進行某些變更，才能與 AEM 雲端服務相容。AEM 雲端服務需要將&#x200B;*內容*&#x200B;和&#x200B;*程式碼*&#x200B;分離為離散封裝，以便部署至 AEM。
+AEM Maven 專案必須進行某些變更，才能與 AEM as a Cloud Service 相容。AEM as a Cloud Service 需要將&#x200B;*內容*&#x200B;和&#x200B;*程式碼*&#x200B;分離為離散封裝，以便部署至 AEM。
 
 * `/apps` and `/libs` are consed inmumable areas of AEM as they cannot be changed(create, update, delete)after AEM starts(i.e. at runtime)。在運行時更改不可變區域的任何嘗試都將失敗。
 
@@ -59,7 +59,7 @@ AEM Maven 專案必須進行某些變更，才能與 AEM 雲端服務相容。AE
 
 如需詳細資訊，請參考[建議封裝結構](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure)。
 
-在使用 AEM 雲端服務開發時，您需要留意一些額外的開發准則。請參考 [AEM 雲端服務開發准則](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/development-guidelines.html)以深入了解。
+在使用 AEM as a Cloud Service 開發時，您需要留意一些額外的開發准則。請參考 [AEM as a Cloud Service 開發准則](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/development-guidelines.html)以深入了解。
 
 您應該從「規劃」階段開始，便列出需要重構以便與雲端服務相容的區域。您也應該檢視[開發准則](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/development-guidelines.html)以取得詳細資訊，了解如何重構和最佳化程式碼以便移轉至雲端服務。
 
@@ -77,16 +77,16 @@ AEM Maven 專案必須進行某些變更，才能與 AEM 雲端服務相容。AE
 
 * 觀看「安裝 Dispatcher SDK」，了解如何安裝 Dispatcher SDK：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601?captions=chi_hant)
+   >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * 觀看「設定 Dispatcher SDK」，了解如何設定 Dispatcher SDK：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602?captions=chi_hant)
+   >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 * 檢視[本機開發設定](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)文件，以便設定本機開發環境
 
 
-如果要管理您正在作用中 AEM 上開發的程式碼，以及轉換過程中的程式碼重構任務，建議先排程程式碼凍結期間，直到您的 Maven 專案重建完畢、可以與 AEM 雲端服務相容為止。
+如果要管理您正在作用中 AEM 上開發的程式碼，以及轉換過程中的程式碼重構任務，建議先排程程式碼凍結期間，直到您的 Maven 專案重建完畢、可以與 AEM as a Cloud Service 相容為止。
 
 專案一旦重建完畢，即可根據這個新結構繼續開發新的程式碼。這將減少 Cloud Manager 管線在程式碼部署和測試期間的故障情形。
 
@@ -113,7 +113,7 @@ AEM Maven 專案必須進行某些變更，才能與 AEM 雲端服務相容。AE
 
 ## 上線準備作業的最佳作法 {#go-live}
 
-如果要確保順利成功地上線至 AEM 雲端服務，您應該考慮執行下列步驟：
+如果要確保順利成功地上線至 AEM as a Cloud Service，您應該考慮執行下列步驟：
 
 * 排程程式碼和內容凍結期間
 * 執行最終追加內容
