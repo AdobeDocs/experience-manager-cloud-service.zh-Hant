@@ -544,7 +544,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 1. 使用右上角的選項下載或列印PDF。
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
    要修改渲染的PDF檔案的外觀，例如注釋和狀態的字型顏色、大小和樣式、背景顏色，請從「配置管理器」(Configuration Manager)開啟「注釋 **[!UICONTROL PDF」(]** Annotation PDF)配置，並修改所需的選項。 例如，要更改批准狀態的顯示顏色，請修改相應欄位中的顏色代碼。 有關更改批注的字型顏色的資訊，請參 [閱注釋](/help/assets/manage-digital-assets.md#annotating)。
 
