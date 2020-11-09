@@ -1,26 +1,26 @@
 ---
-title: Adobe Experience Manager 雲端服務的 IMS 支援
-description: Adobe Experience Manager 雲端服務的 IMS 支援
-translation-type: ht
+title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
+description: Adobe Experience Manager as a Cloud Service 的 IMS 支援
+translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 100%
 
 ---
 
 
-# Adobe Experience Manager 雲端服務的 IMS 支援 {#ims-support-for-aem-as-a-cloud-service}
+# Adobe Experience Manager as a Cloud Service 的 IMS 支援 {#ims-support-for-aem-as-a-cloud-service}
 
 ## 簡介 {#introduction}
 
-* AEM 雲端服務包含適用於 AEM 例項和 Adobe 身分管理系統 (簡稱 IMS) 驗證的 Admin Console 支援。
+* AEM as a Cloud Service 包含適用於 AEM 例項和 Adobe 身分管理系統 (簡稱 IMS) 驗證的 Admin Console 支援。
 * Admin Console 可讓管理員集中管理所有 Experience Cloud 使用者。
-* 管理員可將使用者和群組指派給與 AEM 雲端服務例項相關聯的產品設定檔，讓他們能登入該例項。
+* 管理員可將使用者和群組指派給與 AEM as a Cloud Service 例項相關聯的產品設定檔，讓他們能登入該例項。
 
 ## 重要焦點 {#key-highlights}
 
-AEM 雲端服務僅針對「作者」、「管理員」和「開發」使用者提供 IMS 驗證支援。不支援客戶網站的外部使用者，例如網站訪客。
+AEM as a Cloud Service 僅針對「作者」、「管理員」和「開發」使用者提供 IMS 驗證支援。不支援客戶網站的外部使用者，例如網站訪客。
 
 * Admin Console 會在產品內容例項環境中，將客戶顯示為 IMS 組織、作者和發佈例項。這樣一來，系統和產品管理員就能妥善管理例項的存取權限。
 * Admin Console 中的產品設定檔能決定使用者可存取的例項。
@@ -107,7 +107,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 [此文件](https://www.adobe.io/apis/cloudplatform/umapi-new.html)說明使用者同步工具所採用的 User Management API。
 
-## Adobe Experience 雲端服務設定 {#aem-configuration}
+## Adobe Experience as a Cloud Service 設定 {#aem-configuration}
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 ![產品設定檔](/help/security/assets/ims8.png)
 
-### 登入 Adobe Experience Manager 雲端服務 {#logging-in-to-aem}
+### 登入 Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
 **本機管理員登入**
 
@@ -176,7 +176,7 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 
 ![IMS 登入 5](/help/security/assets/ims14.png)
 
-### 在 Adobe Experience Manager 雲端服務中管理權限和 ACL {#managing-permissions-in-aem}
+### 在 Adobe Experience Manager as a Cloud Service 中管理權限和 ACL {#managing-permissions-in-aem}
 
 您能持續在 AEM 中管理 ACL 和權限。您可將從 IMS 同步的使用者群組，指派給定義 ACL 和權限的本機群組。
 
@@ -201,7 +201,7 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 
 ### 存取 Cloud Manager {#accessing-cloud-manager}
 
-若要能夠存取 Cloud Manager 或 AEM 雲端服務環境，系統必須將您指派給 Cloud Manager 產品的設定檔。
+若要能夠存取 Cloud Manager 或 AEM as a Cloud Service 環境，系統必須將您指派給 Cloud Manager 產品的設定檔。
 
 請參閱[角色定義](/help/onboarding/what-is-required/add-users-roles.md#role-definitions)深入了解使用者的角色，這些角色能控制使用者能否使用 Cloud Manager 的特定功能。
 
@@ -225,10 +225,10 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 1. 使用者新增至適當的設定檔後，應該就能從使用者介面的右上角，透過 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) 存取 Cloud Manager 的個別租用戶。
 
 
-### 存取 AEM 雲端服務中的例項 {#accessing-instance-cloud-service}
+### 存取 AEM as a Cloud Service 中的例項 {#accessing-instance-cloud-service}
 
 >[!IMPORTANT]
->您必須先完成前述章節所提及的步驟，才能取得 AEM 雲端服務例項的存取權限。
+>您必須先完成前述章節所提及的步驟，才能取得 AEM as a Cloud Service 例項的存取權限。
 
 若要在 **Admin Console** 中存取 AEM 例項，您應該會在 **Admin Console** 的產品清單中看見 Cloud Manager 程式和程式內的環境。
 
