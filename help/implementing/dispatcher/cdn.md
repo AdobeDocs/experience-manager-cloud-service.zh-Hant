@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
+source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '713'
 ht-degree: 4%
 
 ---
@@ -20,10 +20,10 @@ AEM管理的CDN將可滿足大部分客戶的效能與安全性需求。 對於�
 
 請依照下列步驟，使用Adobe的現成可用CDN來準備內容傳送：
 
-1. 透過共用包含此資訊之安全表單的連結，將已簽署的SSL憑證和機密金鑰提供給Adobe。 請與客戶支援協調此項工作。
+1. 透過共用包含此資訊之安全表單的連結，將已簽署的SSL憑證和機密金鑰提供給Adobe。 請與客戶支援協調此項工作。 Adobe支援最多10個SSL憑證給一個方案。
    **注意：** Aem作為雲端服務不支援「已驗證網域(DV)」憑證。 此外，它必須是來自受信任認證機構(CA)的X.509 TLS憑證，並具有相符的2048位元RSA私密金鑰。
 1. 通知客戶支援：
-   * 哪個自定義域應與給定環境關聯，如程式ID和環境ID所定義。 請注意，作者端不支援自訂網域。
+   * 哪些自定義域應與給定環境關聯，如程式ID和環境ID所定義。 給定環境最多支援100個域，且域不能包含通配符。 請注意，作者端不支援自訂網域。
    * 如果需要任何IP允許清單來限制到給定環境的通信。
 1. 與客戶支援協調，瞭解DNS記錄必要變更的時間安排。 根據是否需要頂點記錄，這些說明不同：
    * 如果不需要頂端記錄，客戶應將CNAME DNS記錄設定為將其FQDN指向 `cdn.adobeaemcloud.com`。
