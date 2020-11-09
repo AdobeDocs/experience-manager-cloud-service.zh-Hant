@@ -103,7 +103,7 @@ ht-degree: 97%
 
    ![刪除金鑰存放區中現有的 similaritysearch 項目，以新增安全性憑證](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *圖：刪除金鑰存放區中現有的`similaritysearch`項目，以新增安全性憑證。*
+   *圖：刪除金鑰存放區中現有的 `similaritysearch` 項目，以新增安全性憑證。*
 
 1. 在 [!DNL Experience Manager] 使用者介面中，存取&#x200B;**[!UICONTROL 「工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS 設定」]**。開啟可用的「智慧標記」設定。若要下載公開憑證，請按一下&#x200B;**[!UICONTROL 「下載公開憑證」]**。
 
