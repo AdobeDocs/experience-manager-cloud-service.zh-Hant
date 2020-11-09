@@ -28,7 +28,7 @@ ht-degree: 19%
 
 livecopy可用來將來源 *分支的內容*** 同步到啟動分支 (以便讓啟動與來源中所做的變更保持最新)。
 
-您可以編輯標準即時副本的方式進行變更； 例如：
+您可以編輯標準即時副本的方式進行變更；例如：
 
 * 按一下已關閉的掛鎖將中斷此同步，並允許您在啟動中對內容進行新更新。 解鎖（開啟掛鎖）後，源分支中同一位置所做的任何更改將不會覆蓋您的更改。
 * **暫停** (和 **繼續**)特定頁面的繼承。
@@ -40,7 +40,7 @@ livecopy可用來將來源 *分支的內容*** 同步到啟動分支 (以便讓�
 若要追蹤您所做的變更，您可以在「參考」中檢視啟動 **** ，並比較啟動頁面與其來源頁面：
 
 1. 在Sites控 **制台** ，瀏 [覽至啟動的來源頁面並選取它](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
-1. 開啟「參 **[照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**」面板並選&#x200B;**取「啟動」**。
+1. 開啟「參 **[照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 」面板並選 **取「啟動」**。
 1. 選擇您的特定啟動，然 **後比較來源**:
 
    ![比較啟動與來源](/help/sites-cloud/authoring/assets/launches-compare.png)
@@ -63,7 +63,7 @@ livecopy可用來將來源 *分支的內容*** 同步到啟動分支 (以便讓�
 
 >[!NOTE]
 >
->若要將頁面新增至啟動，頁面必須位於通用語言根目錄下； 即在單一網站中。
+>若要將頁面新增至啟動，頁面必須位於通用語言根目錄下；即在單一網站中。
 
 ## 編輯啟動設定 {#editing-a-launch-configuration}
 
