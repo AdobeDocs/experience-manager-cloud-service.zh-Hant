@@ -1,6 +1,6 @@
 ---
-title: AEM 雲端服務中的 CDN
-description: AEM 雲端服務中的 CDN
+title: AEM as a Cloud Service 中的 CDN
+description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
 source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 4%
 ---
 
 
-# AEM 雲端服務中的 CDN {#cdn}
+# AEM as a Cloud Service 中的 CDN {#cdn}
 
 AEM as Cloud Service隨附內建CDN。 其主要目的是透過從邊緣的CDN節點（在瀏覽器附近）傳送可快取的內容，來減少延遲。 它已完全受管理，並且已設定為提供最佳的 AEM 應用程式效能。
 
