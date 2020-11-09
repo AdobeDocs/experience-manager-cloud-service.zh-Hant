@@ -1,9 +1,9 @@
 ---
 title: 已知問題
-description: Adobe Experience Manager 雲端服務已知問題的發行說明
-translation-type: ht
+description: Adobe Experience Manager as a Cloud Service 已知問題的發行說明
+translation-type: tm+mt
 source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 已知問題 {#known-issues}
 
-本文說明 Adobe Experience Manager 雲端服務產品的已知問題。此清單會隨著 Experience Manager 推出各個版本而持續修訂和更新。
+本文說明 Adobe Experience Manager as a Cloud Service 產品的已知問題。此清單會隨著 Experience Manager 推出各個版本而持續修訂和更新。
 
 如需已知問題的詳細資訊，請[連絡支援團隊](https://helpx.adobe.com/tw/support/experience-manager.html)。
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ### 即將推出的 Assets 功能 {#upcoming-assets-capabilities}
 
-Adobe Experience Manager Assets 的少數功能需仰賴基礎功能，這些基礎功能尚無法在 Experience Manager 雲端服務部署架構中使用，預計之後會啟用：
+Adobe Experience Manager Assets 的少數功能需仰賴基礎功能，這些基礎功能尚無法在 Experience Manager as a Cloud Service 部署架構中使用，預計之後會啟用：
 
 * 目前仍仰賴 Commerce Integration Framework API 而未啟用的功能：
    * 拍攝工作流程模型。
