@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## 布建 {#provisioning}
 
-客戶購買的所有AEM雲端環境都將由Adobe自動布建，並連結回其Cloud Manager中的計畫。 這些AEM雲端環境包含在每個Adobe Managed Services訂閱中，通常包含至少一個生產環境、一個階段環境，以及選擇性的一或多個開發或測試環境。
+客戶購買的所有AEM雲端環境都將由Adobe自動布建，並連結回其Cloud Manager中的計畫。 這些AEM雲端環境包含在每個Adobe Managed Services訂閱中，通常至少包含一個生產環境、一個階段環境，以及可選的一或多個開發或測試環境。
 
 ## 歡迎電子郵件 {#welcome-email}
 
