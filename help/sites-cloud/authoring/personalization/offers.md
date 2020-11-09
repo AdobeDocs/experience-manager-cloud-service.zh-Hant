@@ -92,7 +92,7 @@ ht-degree: 1%
 
 ## 搜尋選件 {#searching-for-offers}
 
-使用關鍵字搜尋任何品牌的選件以符合標題。
+使用符合標題的關鍵字搜尋任何品牌的選件。
 
 ![搜尋選件](/help/sites-cloud/authoring/assets/offers-search.png)
 
