@@ -1,7 +1,7 @@
 ---
-sub-product: 轉移至 AEM 雲端服務
-user-guide-title: 轉移至 AEM 雲端服務
-breadcrumb-title: Move 指南
+sub-product: 轉移至 AEM as a Cloud Service
+user-guide-title: 轉移至 AEM as a Cloud Service
+breadcrumb-title: 移轉指南
 user-guide-description: 了解轉換至雲端服務的過程。
 translation-type: tm+mt
 source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
@@ -12,9 +12,9 @@ ht-degree: 95%
 ---
 
 
-# 轉移至 AEM 雲端服務指南 {#moving}
+# 轉移至 AEM as a Cloud Service 指南 {#moving}
 
-+ [轉移至 AEM 雲端服務](/help/move-to-cloud-service/home.md)
++ [轉移至 AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + 轉換過程中的階段 {#phases}
    + [規劃](/help/move-to-cloud-service/planning.md)
    + [執行](/help/move-to-cloud-service/execution.md)
