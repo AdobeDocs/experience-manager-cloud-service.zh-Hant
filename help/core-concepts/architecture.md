@@ -1,22 +1,22 @@
 ---
-title: Adobe Experience Manager 雲端服務架構簡介
-description: 'Adobe Experience Manager 雲端服務架構簡介。 '
-translation-type: ht
+title: Adobe Experience Manager as a Cloud Service 架構簡介
+description: 'Adobe Experience Manager as a Cloud Service 架構簡介。 '
+translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 100%
 
 ---
 
 
-# Adobe Experience Manager 雲端服務架構簡介 {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
+# Adobe Experience Manager as a Cloud Service 架構簡介 {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
 
-Adobe Experience Manager (AEM) 雲端服務的架構有所變更。
+Adobe Experience Manager (AEM) as a Cloud Service 的架構有所變更。
 
 ## 縮放比例 {#scaling}
 
-AEM 雲端服務現已具備：
+AEM as a Cloud Service 現已具備：
 
 * AEM 映像數量可變的動態架構。
 
@@ -36,9 +36,9 @@ AEM 雲端服務現已具備：
 
 ![根據多變的使用模式自動調整規模](assets/concepts-02.png "根據多變的使用模式自動調整規模")
 
-為達此目的，AEM 雲端服務的所有例項在建立之初條件皆相等，節點數、配置的記憶體和運算容量等方面，每個例項都具有相同的預設大小調整特性。
+為達此目的，AEM as a Cloud Service 的所有例項在建立之初條件皆相等，節點數、配置的記憶體和運算容量等方面，每個例項都具有相同的預設大小調整特性。
 
-AEM 雲端服務以協調引擎為運作基礎，該引擎的功能包括：
+AEM as a Cloud Service 以協調引擎為運作基礎，該引擎的功能包括：
 
 * 持續監控服務狀態。
 
@@ -48,7 +48,7 @@ AEM 雲端服務以協調引擎為運作基礎，該引擎的功能包括：
 
 * 適用於節點數、記憶體大小和每個節點所配置的 CPU 容量。
 
-* 使 AEM 雲端服務能因應流量變化。
+* 使 AEM as a Cloud Service 能因應流量變化。
 
 您可以在兩軸上透過自動或手動方式，為服務的每個租用戶例項調整規模：
 
@@ -62,7 +62,7 @@ AEM 雲端服務以協調引擎為運作基礎，該引擎的功能包括：
 >
 >如需詳細資訊，請參閱[部署 - 執行模式](/help/implementing/deploying/overview.md#runmodes)
 
-AEM 雲端服務可作為個別例項使用，每個例項皆代表完整的 AEM 環境。AEM 雲端服務提供四種類型的環境：
+AEM as a Cloud Service 可作為個別例項使用，每個例項皆代表完整的 AEM 環境。AEM as a Cloud Service 提供四種類型的環境：
 
 * **生產環境**：為商務從業人員代管應用程式。
 
@@ -88,7 +88,7 @@ AEM 計劃是包含下列項目的容器：
 | 非生產環境 (開發或展示) | 0 到 N |
 | 各環境相關管道 | 0 或 1 |
 
-AEM 雲端服務最初提供兩種類型的計劃：
+AEM as a Cloud Service 最初提供兩種類型的計劃：
 
 * AEM Cloud Sites Service
 
@@ -102,9 +102,9 @@ AEM 雲端服務最初提供兩種類型的計劃：
 
 <!--- needs reworking -->
 
-![AEM 雲端服務 - 執行階段架構](assets/concepts-03.png "AEM 雲端服務 - 執行階段架構")
+![AEM as a Cloud Service - 執行階段架構](assets/concepts-03.png "AEM as a Cloud Service - 執行階段架構")
 
-* AEM Sites 雲端服務：
+* AEM Sites as a Cloud Service：
 
    * 延續各環境 (高階層) 具備製作層級和發佈層級的概念。
 
@@ -120,7 +120,7 @@ AEM 雲端服務最初提供兩種類型的計劃：
       * 一般使用者或網站訪客能透過 AEM Publish Service 造訪網站。
 
 
-* AEM Assets 雲端服務：
+* AEM Assets as a Cloud Service：
 
    * 此架構僅包含製作環境。
 
@@ -138,29 +138,29 @@ AEM 雲端服務最初提供兩種類型的計劃：
       >
       >如需詳細資訊，請參閱[複寫](/help/operations/replication.md)。
 
-   * 開發人員和管理員能使用 Continuous Integration/Continuous Delivery (CI/CD) 服務 (可透過 [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager) 取得) 管理 AEM 雲端服務，包括使用 Cloud Manager 的 CI/CD 管道來部署程式碼和設定。任何與監控、維護和疑難排解相關的項目 (例如記錄檔)，都會向 Cloud Manager 中的客戶公開。
+   * 開發人員和管理員能使用 Continuous Integration/Continuous Delivery (CI/CD) 服務 (可透過 [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager) 取得) 管理 AEM as a Cloud Service，包括使用 Cloud Manager 的 CI/CD 管道來部署程式碼和設定。任何與監控、維護和疑難排解相關的項目 (例如記錄檔)，都會向 Cloud Manager 中的客戶公開。
 
    * 使用者需一概透過負載平衡器存取製作和發佈層級。負載平衡器會與各層級作用中的節點連動，反映其最新狀態。
 
    * 至於發佈層級，Continuous Delivery Network (CDN) Service 也能作為第一進入點使用。
 
-* 對於 AEM 雲端服務的展示例項，架構會簡化為單一製作節點，因此不會呈現標準開發、預備或生產環境的所有特點。換言之，架構偶爾會發生停機現象，且不支援備份/還原操作。
+* 對於 AEM as a Cloud Service 的展示例項，架構會簡化為單一製作節點，因此不會呈現標準開發、預備或生產環境的所有特點。換言之，架構偶爾會發生停機現象，且不支援備份/還原操作。
 
 ## 部署架構 {#deployment-architecture}
 
-Cloud Manager 會管理 AEM 雲端服務例項的所有更新。這屬於強制性質的管理作業，是建立、測試及部署客戶應用程式的唯一方式，製作和發佈層級均可適用。AEM 雲端服務發佈最新版本時，Adobe 便會觸發這些更新作業，或是當客戶的應用程式推出最新版本時，由客戶觸發。
+Cloud Manager 會管理 AEM as a Cloud Service 例項的所有更新。這屬於強制性質的管理作業，是建立、測試及部署客戶應用程式的唯一方式，製作和發佈層級均可適用。AEM 雲端服務發佈最新版本時，Adobe 便會觸發這些更新作業，或是當客戶的應用程式推出最新版本時，由客戶觸發。
 
 技術上來說，這是基於部署管道，與計劃中各環境配合之下的實作結果。Cloud Manager 管道運作時，會針對製作及發佈層級同時建立客戶應用程式的最新版本。這主要是透過結合最新客戶套件和最新基準 Adobe 映像來達成。成功建立並測試新映像後，Cloud Manager 會採取滾動式更新模式，更新所有服務節點，使移轉至最新映像版本的作業全面自動化。因此，製作或發佈服務時不會產生任何停機時間。
 
 <!--- needs reworking -->
 
-![AEM 雲端服務 - 部署架構](assets/concepts-04.png "AEM 雲端服務 - 部署架構")
+![AEM as a Cloud Service - 部署架構](assets/concepts-04.png "AEM as a Cloud Service - 部署架構")
 
 ## 內容發佈 {#content-distribution}
 
-Adobe Experience Manager 雲端服務修改了發佈內容的方式。有了 AEM 雲端服務，舊版 AEM 的複寫框架將不再用於發佈頁面 (將變更從製作例項移至發佈例項)。
+Adobe Experience Manager as a Cloud Service 修改了發佈內容的方式。有了 AEM as a Cloud Service，舊版 AEM 的複寫框架將不再用於發佈頁面 (將變更從製作例項移至發佈例項)。
 
-AEM 雲端服務現在主要使用 [Sling 內容分送](https://sling.apache.org/documentation/bundles/content-distribution.html)功能來移動適當內容。這會使用 Adobe I/O 上執行的管道服務，該服務獨立於 AEM 執行階段之外。
+AEM as a Cloud Service 現在主要使用 [Sling 內容分送](https://sling.apache.org/documentation/bundles/content-distribution.html)功能來移動適當內容。這會使用 Adobe I/O 上執行的管道服務，該服務獨立於 AEM 執行階段之外。
 
 設定程序會自動完成，包括在執行階段新增、移除或回收發佈節點時自動完成設定。
 
@@ -172,7 +172,7 @@ AEM 雲端服務現在主要使用 [Sling 內容分送](https://sling.apache.org
 
 ## 重要革新 {#key-evolutions}
 
-比起前幾代產品，AEM 雲端服務的新架構提出了幾項根本變革與創新：
+比起前幾代產品，AEM as a Cloud Service 的新架構提出了幾項根本變革與創新：
 
 * 所有檔案 (Blob) 一律從雲端資料存放區直接上傳及提供。相關聯的位元串流一律不經 AEM 製作和發佈服務的 JVM 處理。因此，AEM 製作和發佈服務的節點可以更少，更符合快速自動調整規模的期望。商務從業人員可因此享有更快速的影像、影片上傳與下載體驗。
 
