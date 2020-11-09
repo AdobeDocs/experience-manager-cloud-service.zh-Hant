@@ -45,7 +45,7 @@ ht-degree: 0%
 ## 在雲服務中添加新程式與現有程式 {#existing-program}
 
 
-1. 登入 **Adobe[!UICONTROL Experience Cloud]** ，您會看到「方案與產 **品」清單**。
+1. 登入 **Adobe [!UICONTROL Experience Cloud]** ，您會看到「方案與產 **品」清單**。
 
    ![](assets/first_timelogin1.png)
 
