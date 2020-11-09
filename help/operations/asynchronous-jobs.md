@@ -1,9 +1,9 @@
 ---
 title: 非同步作業
 description: Adobe Experience Manager 能以非同步方式完成部分耗用大量資源的工作，實現效能最佳化。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 
