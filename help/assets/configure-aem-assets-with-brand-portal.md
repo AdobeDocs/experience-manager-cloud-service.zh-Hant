@@ -314,7 +314,7 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/zh-Hant/exp
 
 >[!NOTE]
 >
->當父資料夾不存在於品牌入口網站中或已在AEM Assets中修改時，會產生其他請求。
+>Additional request is generated in case the parent folder does not exist in Brand Portal or has been modified in AEM Assets.
 
 <!--
 
