@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # 內容片段 {#content-fragments}
 
-Adobe Experience Manager(AEM)中的內容片段是以Cloud Service的形式建立 [並管理為不受頁面影響的資產](/help/assets/content-fragments/content-fragments.md)。
+Adobe Experience Manager(AEM)中的內容片段做為雲端服務， [會建立並管理為不受頁面影響的資產](/help/assets/content-fragments/content-fragments.md)。
 
 它們可讓您建立不受頻道影響的內容，以及（可能是特定頻道的）變化。 然後，您可以在製作內容頁面時使用這些片段及其變化。
 
@@ -20,7 +20,7 @@ Adobe Experience Manager(AEM)中的內容片段是以Cloud Service的形式建�
 
 >[!NOTE]
 >
->**「內容片段** 」和「 **[體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**」是AEM中的不同功能：
+>**「內容片段** 」和「 **[體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** 」是AEM中的不同功能：
 >
 >* **內容片段** 是編輯內容，主要是文字和相關影像。 它們是純粹的內容，不需要設計和版面配置。
 >* **「體驗片段** 」是完整排版的內容，因此是網頁的片段。
@@ -55,7 +55,7 @@ Adobe Experience Manager(AEM)中的內容片段是以Cloud Service的形式建�
 ## 新增內容片段至您的頁面 {#adding-a-content-fragment-to-your-page}
 
 1. 開啟您的頁面進行編輯。
-2. 新增內 **容片段** ; 從「元件」瀏 **覽器** ，或「插入 **新元件」**。
+2. 新增內 **容片段** ;從「元件」瀏 **覽器** ，或「插入 **新元件」**。
 3. 您可以:
    * 開啟「 **Assets** 」瀏覽器並篩選 **「內容片段** 」（預設為「影像」）。 然後將所需片段拖曳至元件例項。
    * 選擇內容片段元件，然後從工 **具欄中** 「配置」。 在對話方塊中，您可以開啟選取對話方塊，以瀏覽並選取所需的 **內容片段**。
@@ -148,7 +148,7 @@ Adobe Experience Manager(AEM)中的內容片段是以Cloud Service的形式建�
 >
 >  
 這可讓相對位置看起來好像已變更，因為中間段落與位於旁邊的（片段）段落沒有關聯關係。
->* 除非兩款結構有衝突； 在這種情況下，不顯示中間內容（儘管它仍在內部存在）。
+>* 除非兩款結構有衝突；在這種情況下，不顯示中間內容（儘管它仍在內部存在）。
 
 
 ### 使用關聯的內容 {#using-associated-content}
