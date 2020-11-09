@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
    ![](assets/create-sandbox.png)
 
-1. 使用者會在登陸頁面上看到新的沙盒程式卡片，並可將滑鼠指標暫留在該卡片上，以選取「雲端管理員」圖示，以導覽至「雲端管理員」概觀頁面。 卡片會通知使用者新建立的沙盒程式的自動設定狀態。 使用者將看到進展。
+1. 使用者會在登陸頁面上看到新的沙盒程式卡片，並可將滑鼠指標暫留在其上，以選取「雲端管理員」圖示，以導覽至「雲端管理員」概觀頁面。 卡片會通知使用者新建立的沙盒程式的自動設定狀態。 使用者將看到進展。
 
    ![](assets/program-create-setupdemo2.png)
 
@@ -68,10 +68,10 @@ ht-degree: 0%
 
 ## 刪除沙盒程式 {#delete-sandbox-program}
 
-Cloud Manager中「業務擁 *有者* 」或「部署管理員 ** 」角色的「沙箱程式」使用者可以刪除透過Cloud Manager UI設定的「生產」和「舞台」環境。
+A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
 
 >[!NOTE]
->在「生產」或「舞台」上選取刪除選項，也會刪除集合中的其他選項。
+>在「生產」或「預備」上選取刪除選項，也可刪除集合中的其他項目。
 
 刪除選項可從登陸頁面使用，如下所示：
 
@@ -108,7 +108,7 @@ Regular ** program是專為熟悉AEM和Cloud Manager的使用者而設計，並�
 
    ![](assets/set-up-prod3.png)
 
-1. 在登陸頁面上看到您的程式卡片後，將滑鼠指標暫留在其上，以選取「Cloud Manager」圖示，以導覽至「Cloud Manager **Overview** 」頁面。
+1. 在登陸頁面上看到您的程式卡片後，將滑鼠指標暫留在其上，以選取「Cloud Manager」圖示，以導覽至「Cloud Manager **Overview** 」（雲端管理員綜覽）頁面。
 
    ![](assets/set-up-prod4.png)
 
