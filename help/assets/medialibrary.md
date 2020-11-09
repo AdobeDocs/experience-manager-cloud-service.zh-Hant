@@ -17,7 +17,7 @@ Adobe Experience Manager(AEM)Assets是AEM平台不可或缺的一部分。 此�
 
 ## 什麼是AEM Assets? {#what-is-aem-assets}
 
-AEM Assets是AEM Platform上的應用程式，可讓我們的客戶在網路儲存庫中管理其數位資產（影像、視訊、檔案和音訊片段）。 AEM Assets包含中繼資料支援、轉譯、Digital Asset Management Finder，以及透過使用者介面進行管理。
+AEM Assets是AEM Platform上的應用程式，可讓我們的客戶在網路儲存庫中管理其數位資產（影像、視訊、檔案和音訊片段）。 AEM Assets包括中繼資料支援、轉譯、Digital Asset Management Finder，以及透過使用者介面進行管理。
 
 ## 什麼是AEM Media Library? {#what-is-the-aem-media-library}
 
@@ -56,7 +56,7 @@ AEM Assets客戶僅能使用的獨特功能包括：
 
 ## 如果我未授權AEM Assets，該如何防止使用者使用AEM Assets? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-您可以從AEM移除所有AEM Assets專屬的工作流程、元件、分類、選項和AEM Assets管理員。 如此可防止您的使用者意外使用您未授權的AEM Assets功能。
+您可以從AEM移除所有AEM Assets專屬的工作流程、元件、分類、選項和AEM Assets管理員。 如此可避免使用者意外使用您未授權的AEM Assets功能。
 
 ## 我想要將影像新增至頁面，並想要裁切這些影像並調整其大小。 我需要AEM資產嗎？ {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
@@ -80,7 +80,7 @@ AEM Assets客戶僅能使用的獨特功能包括：
 * Camera RAW支援
 * 搜尋Facet管理與設定
 * 預先建立的DAM工作流程（例如像片拍攝）
-* 資產報告與分析： 資產見解
+* 資產報告與分析：資產見解
 * 3D資產管理
 * 連線資產
 * 品牌入口網站
