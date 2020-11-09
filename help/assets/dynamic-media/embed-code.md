@@ -1,5 +1,5 @@
 ---
-title: 將動態媒體視訊或影像檢視器內嵌在網頁上
+title: 將動態媒體視訊或影像檢視器內嵌至網頁
 description: 瞭解如何將動態媒體視訊或影像內嵌在網頁上
 translation-type: tm+mt
 source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
@@ -14,7 +14,7 @@ ht-degree: 22%
 
 當您想 **** 要播放視訊或檢視內嵌在網頁上的資產時，請使用「內嵌代碼」功能。您可將內嵌代碼複製到剪貼簿，以便貼到網頁中。「內嵌代碼」對話方塊中不允許編 **[!UICONTROL 輯代碼]** 。
 
-只有當您未將AEM用 _作_ WCM時，才內嵌URL。 如果您使用AEM做為WCM, [就直接在頁面上新增資產。](adding-dynamic-media-assets-to-pages.md)
+只有當您未將AEM用 _作_ WCM時，才內嵌URL。 如果您使用AEM做為WCM，則 [直接在頁面上新增資產。](adding-dynamic-media-assets-to-pages.md)
 
 See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
