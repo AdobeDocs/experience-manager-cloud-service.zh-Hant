@@ -46,13 +46,13 @@ ht-degree: 0%
 
 ![純HTML轉譯](assets/xf-14.png)
 
-普通轉譯選擇器使用變壓器，而不是其他指令碼； sling [Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) ，是變壓器。 此設定位於
+普通轉譯選擇器使用變壓器，而不是其他指令碼；sling [Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) ，是變壓器。 此設定位於
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
 ## 社交變數 {#social-variations}
 
-社交變體可張貼在社交媒體（文字和影像）上。 在AEM中，這些社交變數可以包含元件； 例如，文字元件、影像元件。
+社交變體可張貼在社交媒體（文字和影像）上。 在AEM中，這些社交變數可以包含元件；例如，文字元件、影像元件。
 
 社交貼文的影像和文字可從任何深度等級的影像資源類型或文字資源類型（在建置區塊或版面容器中）擷取。
 
@@ -148,7 +148,7 @@ The only additional configuration is to ensure that the components are [allowed 
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-Link Externalizer可用來判斷建立Target選件的HTML版本時所需的正確URL，此HTML版本隨後會傳送至Adobe Target。 這是必要的，因為Adobe Target要求Target HTML選件內的所有連結都可公開存取； 這表示必須先發佈連結參考的任何資源，以及體驗片段本身，才能加以使用。
+Link Externalizer可用來判斷建立Target選件的HTML版本時所需的正確URL，此HTML版本隨後會傳送至Adobe Target。 這是必要的，因為Adobe Target要求Target HTML選件內的所有連結都可公開存取；這表示必須先發佈連結參考的任何資源，以及體驗片段本身，才能加以使用。
 
 依預設，當您建構Target HTML選件時，會將請求傳送至AEM中的自訂Sling選擇器。 此選擇器稱為 `.nocloudconfigs.html`。 正如其名稱所暗示的，它會建立體驗片段的純HTML轉換，但不包含雲端設定（這將是多餘的資訊）。
 
@@ -173,7 +173,7 @@ Link Externalizer可用來判斷建立Target選件的HTML版本時所需的正�
 
    這些屬性中的連結會透過AEM Link Externalizer執行， `publishLink()` 以重新建立URL，就像它在已發佈的例項上一樣，而且可公開使用。
 
-使用現成可用的實作時，上述程式應足以從體驗片段產生目標選件，然後將其匯出至Adobe Target。 但是，有些使用案例在此過程中沒有說明； 這些包括：
+使用現成可用的實作時，上述程式應足以從體驗片段產生目標選件，然後將其匯出至Adobe Target。 但是，有些使用案例在此過程中沒有說明；這些包括：
 
 * Sling Mapping僅適用於發佈例項
 * Dispatcher redirects
