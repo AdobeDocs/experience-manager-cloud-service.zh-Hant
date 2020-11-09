@@ -4,13 +4,13 @@ description: AEM as a Cloud Service使用覆蓋原則，讓您擴充和自訂控
 translation-type: tm+mt
 source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '401'
+ht-degree: 1%
 
 ---
 
 
-# AEM中的覆蓋作為雲端服務 {#overlays-in-aem}
+# AEM as a Cloud Service 中的覆蓋 {#overlays-in-aem}
 
 Adobe Experience Manager做為雲端服務，使用覆蓋原則來擴充和自訂控制台和其他功能（例如頁面製作）。
 
@@ -49,9 +49,9 @@ Overlays是許多變更的建議方法，例如在側面板中設定控制台或
 Overlays are the recommended method for many changes, such as [configuring your consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) or [creating your selection category to the asset browser in the side panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (used when authoring pages). They are required as:
 -->
 
-* 您不 ***得在分支中&#x200B;*進行更改。您所做的`/libs`**任何更改都可能丟失，因為此分支在應用到實例的升級時都需要進行更改。
+* 您不 ***得在分支中* 進行更改。您所做的 `/libs`**任何更改都可能丟失，因為此分支在應用到實例的升級時都需要進行更改。
 
-* 他們將您的變更集中在一個位置； 讓您更輕鬆地追蹤、移轉、備份和／或除錯變更。
+* 他們將您的變更集中在一個位置；讓您更輕鬆地追蹤、移轉、備份和／或除錯變更。
 
 ## 搜尋路徑 {#search-paths}
 
