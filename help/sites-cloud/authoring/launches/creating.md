@@ -53,7 +53,7 @@ ht-degree: 14%
 
    >[!NOTE]
    >
-   >若要新增頁面和／或分支至啟動，它們必須位於網站中； 例如，在一般頂層根目錄下。
+   >若要新增頁面和／或分支至啟動，它們必須位於網站中；例如，在一般頂層根目錄下。
    >
    >如果網站的語言根目錄位於最上層，則啟動的頁面和分支必須位於共同語言根目錄下。
 
@@ -69,11 +69,11 @@ ht-degree: 14%
 
 1. 在嚮導 **的** 「屬性」步驟中，您可以指定：
 
-   * **啟動標題**: 啟動的名稱。 名稱對作者應有意義。
-   * **使用現有內容**: 原始內容將用來建立啟動。
-   * **使用新範本來取代頁面**: 如需詳 [細資訊，請參閱「使用新範本建立啟動](#create-launch-with-new-template) 」。
-   * **繼承來源頁面即時資料**: 選取此選項，可在來源頁面變更時自動更新啟動頁面的內容。 此選項可讓啟動成為即時副本，以達成此目的。 預設會選取此選項。 <!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
-   * **啟動日期**: 啟動副本要啟動的日期和時間(取決於「生產就緒」 **標誌** ; 請 [參閱啟動——事件順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events))。
+   * **啟動標題**:啟動的名稱。 名稱對作者應有意義。
+   * **使用現有內容**:原始內容將用來建立啟動。
+   * **使用新範本來取代頁面**:如需詳 [細資訊，請參閱「使用新範本建立啟動](#create-launch-with-new-template) 」。
+   * **繼承來源頁面即時資料**:選取此選項，可在來源頁面變更時自動更新啟動頁面的內容。 此選項可讓啟動成為即時副本，以達成此目的。 預設會選取此選項。 <!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
+   * **啟動日期**:啟動副本要啟動的日期和時間(取決於「生產就緒」 **標誌** ;請 [參閱啟動——事件順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events))。
 
    ![啟動屬性](/help/sites-cloud/authoring/assets/launches-properties.png)
 
@@ -81,8 +81,8 @@ ht-degree: 14%
 
    如果您傳回主控台(使 **用Done**)，您可從下列任一位置查看（並存取）您的啟動：
 
-   * 啟動 [**控制台&#x200B;**](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * Sites控 [**制台&#x200B;**中的**&#x200B;參考&#x200B;**](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * 啟動 [**控制台**](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * Sites控 [**制台** 中的 **參考**](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### 使用新範本建立啟動 {#create-launch-with-new-template}
 
@@ -90,7 +90,7 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->只有在從Sites主控台建立啟動時，才能使用 **此選項** 。 當從啟動控制台建立啟動時， **它不** 可用。
+>此選項僅在從Sites主控台建立啟動時 **可用** 。 當從啟動控制台建立啟動時， **它不** 可用。
 
 ![使用新範本建立啟動](/help/sites-cloud/authoring/assets/launches-create-new-template.png)
 
