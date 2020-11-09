@@ -116,7 +116,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
    ![image2019-4](assets/image2019-4.png)
 
-### 關於Adobe Analytics for Audio and Video {#about-adobe-analytics-for-audio-and-video}
+### About Adobe Analytics for Audio and Video {#about-adobe-analytics-for-audio-and-video}
 
 當Experience Cloud帳戶訂閱使用Adobe Analytics for Audio and Video時，就足以在動態媒體檢視器擴充功能設定中啟 *用視訊追蹤* 。 視訊量度將可在Adobe Analytics中使用。 視訊追蹤視Adobe Media Analytics for Audio and Video Extension是否存在而定。
 
@@ -132,7 +132,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 若要追蹤AEM Sites中的「動態媒體」檢視器，必須執行「設定所 [有整合項目](#configuring-all-the-integration-pieces) 」區段下列出的所有步驟。 具體而言，您必須建立IMS設定和Adobe Launch Cloud設定。
 
-在正確設定後，您使用動態媒體支援的WCM元件新增至「網站」頁面的任何動態媒體檢視器，都會自動追蹤資料至Adobe Analytics、Adobe Analytics for Video，或兩者皆有。
+在正確設定後，您使用動態媒體支援的WCM元件新增至「網站」頁面的任何動態媒體檢視器，都會自動追蹤資料至Adobe Analytics、Adobe Analytics for Video，或兩者。
 
 請參 [閱使用Adobe Sites將動態媒體資產新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
@@ -190,7 +190,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-請參閱動 [態媒體檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) ，以取得各檢視器類型支援的事件清單； 前往特定檢視器區段，然後按一下「支援Adobe Analytics追蹤」子區段。 目前，動態媒體檢視器參考指南不記錄事件引數。
+請參閱動 [態媒體檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) ，以取得各檢視器類型支援的事件清單；前往特定檢視器區段，然後按一下「支援Adobe Analytics追蹤」子區段。 目前，動態媒體檢視器參考指南不記錄事件引數。
 
 現在，讓我們考慮動態媒體檢視器資料元素的 *生命週期*。 在頁面上發生對應的動態媒體檢視器事件後，會填入此類資料元素的值。 例如，如果「資料元素」指向 **[!UICONTROL LOAD]** 事件及其「asset」引數，則此類「資料元素」的值會在檢視器第一次執行LOAD事件後接收有效資料。 如果資料元素指向 **[!UICONTROL ZOOM]** 事件及其「縮放」引數，此類資料元素的值將維持空白，直到檢視器第一次傳送 **[!UICONTROL ZOOM]** 事件為止。
 
@@ -202,7 +202,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 **請考慮下列範例設定**:
 
-* 網頁包含兩個動態媒體縮放檢視器； 我們會將它們稱為 *viewer1* 和 *viewer2*。
+* 網頁包含兩個動態媒體縮放檢視器；我們會將它們稱為 *viewer1* 和 *viewer2*。
 
 * **[!UICONTROL ZoomScale]** Data Element指向 **[!UICONTROL ZOOM]** 事件及其「scale」引數。
 * **[!UICONTROL TrackPan規則]** ，包含下列項目：
@@ -216,7 +216,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
    * 使用核心Adobe Launch擴充功能的按鍵事件做為觸發器。
    * 傳送 **[!UICONTROL ZoomScale]** Data Element的值至Adobe Analytics。
 
-現在，假設使用者載入含有兩個檢視器的網頁。 在 *viewer1*，它們放大至50%的比例； 然後，在 *viewer2中*，它們會放大至25%的比例。 在 *viewer1中*，他們可以四處平移影像，最後按下鍵盤上的鍵。
+現在，假設使用者載入含有兩個檢視器的網頁。 在 *viewer1*，它們放大至50%的比例；然後，在 *viewer2中*，它們會放大至25%的比例。 在 *viewer1中*，他們可以四處平移影像，最後按下鍵盤上的鍵。
 
 使用者的活動會導致對Adobe Analytics進行下列兩個追蹤呼叫：
 
@@ -225,9 +225,9 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 上述設定的範例也會影響「資料元素」值的壽命。 即使檢視器本身已置於網頁上，動態媒體檢視器所管理的資料元素值仍會儲存在Adobe Launch程式庫程式碼中。 這表示如果規則是由非動態媒體檢視器擴充功能所觸發並參考資料元素，資料元素會傳回最後一個已知值，即使檢視器不再存在於網頁上亦然。
 
-無論如何，動態媒體檢視器所驅動之資料元素的值不會儲存在本機儲存或伺服器上； 而是僅保留在用戶端的Adobe Launch程式庫中。 當網頁重新載入時，此類「資料元素」的值會消失。
+無論如何，動態媒體檢視器所驅動之資料元素的值不會儲存在本機儲存或伺服器上；而是僅保留在用戶端的Adobe Launch程式庫中。 當網頁重新載入時，此類「資料元素」的值會消失。
 
-通常，「資料元素」編輯器支援 [儲存時間選擇](https://docs.adobe.com/content/help/zh-Hant/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)。 不過，使用動態媒體檢視器擴充功能的資料元素僅支援「無」的儲存持續 **[!UICONTROL 時間選項]**。 在使用者介面中可以設定任何其他值，但「資料元素」行為在此例中並未定義。 擴充功能可自行管理資料元素的值： 在整個檢視器生命週期中維護檢視器事件引數值的資料元素。
+通常，「資料元素」編輯器支援 [儲存時間選擇](https://docs.adobe.com/content/help/zh-Hant/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)。 不過，使用動態媒體檢視器擴充功能的資料元素僅支援「無」的儲存持續 **[!UICONTROL 時間選項]**。 在使用者介面中可以設定任何其他值，但「資料元素」行為在此例中並未定義。 擴充功能可自行管理資料元素的值：在整個檢視器生命週期中維護檢視器事件引數值的資料元素。
 
 ### 關於動態媒體檢視器擴充功能中的規則 {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -435,7 +435,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 1. 在Adobe Analytics頁面的右上角，「搜尋報表」欄位的右側，從下拉式清單中選取正確的報表套裝。****&#x200B;如果有多個報表套裝可供使用，而您不確定要使用哪個報表套裝，請連絡您的Adobe Analytics管理員，以協助您選取要使用哪個報表套裝。
 
-   在下圖中，使用者建立了名為 ** DynamicMediaViewersExtensionDoc的報表套裝，並從下拉式清單中選取它。 報表套裝名稱僅供圖示之用； 您最終選擇的報表套裝名稱會有所不同。
+   在下圖中，使用者建立了名為 ** DynamicMediaViewersExtensionDoc的報表套裝，並從下拉式清單中選取它。 報表套裝名稱僅供圖示之用；您最終選擇的報表套裝名稱會有所不同。
 
    如果沒有可用的報表套裝，您或您的Adobe Analytics管理員必須先建立報表套裝，您才能繼續進一步進行設定。
 
