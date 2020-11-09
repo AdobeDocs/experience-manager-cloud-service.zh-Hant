@@ -25,14 +25,16 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->* **如果您不需要下面所述[的進階服務](#definition-of-advanced-services-that-need-configuration)**，則可忽略此設定。
+>* **如果您不需要下面所述 [的進階服務](#definition-of-advanced-services-that-need-configuration)** ，則可忽略此設定。
+   >
+   >
+* **當您擴充或使用現成可用的元件時**，不建議您變更OSGi組態。
+   >
+   >
+* **您只能從頭開始編寫僅使用「內容片段API」的元件，毋需進階服務**。 不過，在這種情況下，您必須開發元件，以便處理適當的處理。
 >
->* **當您擴充或使用現成可用的元件時**，不建議您變更OSGi組態。
 >
->* **您只能從頭開始編寫僅使用「內容片段API」的元件，毋需進階服務**。 不過，在這種情況下，您必須開發元件，以便處理適當的處理。
->
->
->因此，建議使用核心元件。
+因此，建議使用核心元件。
 
 ## 需要配置的高級服務的定義 {#definition-of-advanced-services-that-need-configuration}
 
@@ -75,22 +77,22 @@ OSGi配置為：
   <tr>
    <td><strong>資源類型</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>要註冊的資源類型； 例如， <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>要註冊的資源類型；例如， <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>參考屬性</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>包含對片段的引用的屬性的名稱； 例如 <code>fragmentPath</code> <code>fileReference</code></td>
+   <td>包含對片段的引用的屬性的名稱；例如 <code>fragmentPath</code> <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>元素屬性</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>包含要渲染的元素名稱的屬性的名稱； 例如，<code>elementName</code></td>
+   <td>包含要渲染的元素名稱的屬性的名稱；例如，<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>變數屬性</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>包含要呈現的變數名稱的屬性名稱； 例如，<code>variationName</code></td>
+   <td>包含要呈現的變數名稱的屬性名稱；例如，<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
@@ -109,8 +111,8 @@ OSGi配置為：
    <td><code>paragraphScope</code></td>
    <td><p>字串屬性，定義在單一元素演算模式下如何輸 <em>出段落</em>。</p> <p>值:</p>
     <ul>
-     <li><code>all</code> : 來呈現所有段落</li>
-     <li><code>range</code> : 來轉換 <code>paragraphRange</code></li>
+     <li><code>all</code> :來呈現所有段落</li>
+     <li><code>range</code> :來轉換 <code>paragraphRange</code></li>
     </ul> </td>
   </tr>
   <tr>
