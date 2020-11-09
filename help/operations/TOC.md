@@ -1,8 +1,8 @@
 ---
-sub-product: AEM 雲端服務之運作與維護
-user-guide-title: AEM 雲端服務之運作與維護
-breadcrumb-title: Operations 指南
-user-guide-description: 了解 Experience Manager 雲端服務後端的操作方式，例如製作索引和執行維護任務。
+sub-product: AEM as a Cloud Service 之運作與維護
+user-guide-title: AEM as a Cloud Service 之運作與維護
+breadcrumb-title: 操作指南
+user-guide-description: 了解 Experience Manager as a Cloud Service 後端的操作方式，例如製作索引和執行維護任務。
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # 運作 {#operations}
 
-+ [AEM 雲端服務之運作與維護](/help/operations/home.md)
++ [AEM as a Cloud Service 之運作與維護](/help/operations/home.md)
 + [內容搜尋與索引](indexing.md)
 + [內容複寫服務](replication.md)
 + [維護任務](maintenance.md)
