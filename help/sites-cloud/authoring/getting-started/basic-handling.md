@@ -52,8 +52,8 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 全域導覽有兩個面板，由畫面左邊緣的圖示表示：
 
-* **[Navigation](#navigation-panel)**—— 當您登入AEM時，由羅盤和預設面板表示
-* **[工具](#tools-panel)**-用錘子表示
+* **[Navigation](#navigation-panel)** —— 當您登入AEM時，由羅盤和預設面板表示
+* **[工具](#tools-panel)** -用錘子表示
 
 以下說明這些面板上可用的選項。
 
@@ -89,7 +89,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 * [全域導覽](#global-navigation)
 
-   選取 **Adobe Experience Manager** 連結，在控制台之間導覽。
+   選擇 **Adobe Experience Manager** 連結，在控制台之間導覽。
 
    ![全域導覽](/help/sites-cloud/authoring/assets/global-navigation.png)
 
@@ -187,7 +187,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
    首次存取任何主控台時，請像導 [覽產品導覽概述一樣](#product-navigation) ，導覽此概述。
 
-   從「頁 [**面資訊&#x200B;**」功能表，您可以選**&#x200B;取「說明&#x200B;**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)」，隨時再次顯示此功能。
+   從「頁 [**面資訊** 」功能表，您可以選 **取「說明**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) 」，隨時再次顯示此功能。
 
 * **工具控制台**
 
@@ -195,6 +195,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
    * **檔案** -檢視Web體驗管理檔案
    * **開發人員資源** -開發人員資源與下載
+
    >[!NOTE]
    >
    >在控制台中時，您可以使用熱鍵（問號），隨時 `?` 訪問可用的快捷鍵概述。
@@ -309,6 +310,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
    * 選中後，複選標籤將覆蓋在縮圖上，資源名稱也將突出顯示。
    * 選定資源的詳細資訊將顯示在最終列中。
    * 動作工具列將可供使用。
+
    在欄檢視中選取頁面時，選取的頁面會顯示在最終欄中，並包含下列詳細資訊：
 
    * 頁面標題
