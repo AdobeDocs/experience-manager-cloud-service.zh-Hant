@@ -1,9 +1,9 @@
 ---
 solution: Experience Manager, Experience Manager Sites
-sub-product: AEM 雲端服務的內容製作
-user-guide-title: AEM 雲端服務的內容製作
+sub-product: AEM as a Cloud Service 的內容製作
+user-guide-title: AEM as a Cloud Service 的內容製作
 breadcrumb-title: Authoring 指南
-user-guide-description: 了解如何使用及管理 Experience Manager Sites 雲端服務。
+user-guide-description: 了解如何使用及管理 Experience Manager Sites as a Cloud Service。
 translation-type: tm+mt
 source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 # 網站 {#sites}
 
-+ [AEM Sites 雲端服務](/help/sites-cloud/home.md)
++ [AEM Sites as a Cloud Service ](/help/sites-cloud/home.md)
 + [AEM 雲端服務中 AEM Sites 的重大變更](sites-cloud-changes.md)
 + 製作 {#authoring}
    + 快速入門 {#getting-started}
@@ -77,6 +77,6 @@ ht-degree: 96%
       + [使用ContextHub設定區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 + 管理 {#administering}
    + [管理工作流程](administering/workflows-administering.md)
-+ 整合 AEM 雲端服務 {#integrations}
++ 整合 AEM as a Cloud Service {#integrations}
    + [整合 Adobe Analytics](integrating/integrating-adobe-analytics.md)
    + [整合 Adobe Target](integrating/integrating-adobe-target.md)
