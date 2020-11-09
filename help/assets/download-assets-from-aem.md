@@ -35,7 +35,7 @@ ht-degree: 4%
 
 ![下載通知](assets/download-notification.png)
 
-*圖：透過收件匣下載[!DNL Experience Manager]通知。*
+*圖：透過收件匣下載 [!DNL Experience Manager] 通知。*
 
 非同步下載會在下列任一情況下觸發：
 
