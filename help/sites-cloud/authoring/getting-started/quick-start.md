@@ -57,7 +57,7 @@ ht-degree: 5%
 
 ### 尋找您的頁面 {#finding-your-page}
 
-尋找頁面有多方面； 您可以導覽和／或搜尋：
+尋找頁面有多方面；您可以導覽和／或搜尋：
 
 1. 開啟 **Sites** 主控台(使用全域導覽中的 **Sites** 選項 [](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) -當您選取Adobe Experience Manager連結（左上）時，會觸發（下拉式）此選項。
 
@@ -102,9 +102,10 @@ ht-degree: 5%
 
    * 通過選擇所需資 [源進入選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。 您的操作方式取決於您的裝置：
 
-      * 在行動裝置上： 點選並按住卡片
-      * 在桌上型裝置上： 使用勾 [選圖示](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) ，代表的快速動作：
+      * 在行動裝置上：點選並按住卡片
+      * 在桌上型裝置上：使用勾 [選圖示](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) ，代表的快速動作：
    * 卡片將覆蓋上勾號，以顯示已選取頁面。
+
    ![範例卡片](/help/sites-cloud/authoring/assets/card.png)
 
 ### 快速動作（僅限卡片檢視／案頭） {#quick-actions-card-view-desktop-only}
@@ -137,6 +138,7 @@ ht-degree: 5%
       * 開啟側面板
       * 選擇元件頁籤(組 [件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser))
       * 將所需元件拖曳至您的頁面。
+
       側面板可以開啟（和關閉）:
 
       ![側面板切換按鈕](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
@@ -174,6 +176,7 @@ ht-degree: 5%
 
       * 從工 **具列中** ，選取「預覽」。
    * 使用「編輯」下拉選擇器返回編輯模式(或選 **擇其他模** 式)。
+
    >[!NOTE]
    >
    >若要在內容中使用連結進行導覽，您必須使用「預 [覽」模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)。
@@ -189,6 +192,7 @@ ht-degree: 5%
 
       * [適當資源的快速動作（僅限卡片檢視／案頭）](#quick-actions-card-view-desktop-only) 。
       * 選取頁面時 [的工具列](#selecting-your-page-for-further-action)。
+
       ![「屬性」按鈕](/help/sites-cloud/authoring/assets/properties.png)
 
    1. 將顯示頁面屬性。 您可以視需要進行更新，然後使用「儲存」來保存這些
@@ -212,6 +216,7 @@ ht-degree: 5%
 
       * [適當資源的快速動作（僅限卡片檢視／案頭）](#quick-actions-card-view-desktop-only) 。
       * 選取頁面時的 [工具列](#selecting-your-page-for-further-action) (也提供稍後 [發佈的存取權](/help/sites-cloud/authoring/fundamentals/publishing-pages.md))。
+
       ![快速發佈按鈕](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 
@@ -237,6 +242,7 @@ ht-degree: 5%
 
    * [所需資源的快速動作（僅限卡片檢視／案頭）](#quick-actions-card-view-desktop-only) 。
    * 選取頁面時 [的工具列](#selecting-your-page-for-further-action)。
+
    然後，請依您的動作：
 
    * 複製:
@@ -282,7 +288,7 @@ ht-degree: 5%
 
 若要建立 [頁面](/help/sites-cloud/authoring/features/page-versions.md) 的版本：
 
-1. 若要開啟時間軸邊欄，請使用工 **[具列圖示](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**(選取頁面之前或[之後](#selecting-your-page-for-further-action))選取時間軸：
+1. 若要開啟時間軸邊欄，請使用工 **[具列圖示](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** (選取頁面之前或 [之後](#selecting-your-page-for-further-action))選取時間軸：
 
    ![時間軸檢視選項](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -296,7 +302,7 @@ ht-degree: 5%
 
 在還原和／或比較頁面版本時，會使用相同的基本機制：
 
-1. 使用 **[工具列圖](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**示(在選取頁面之前或之[後)選取時間軸](#selecting-your-page-for-further-action):
+1. 使用 **[工具列圖](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** 示(在選取頁面之前或之 [後)選取時間軸](#selecting-your-page-for-further-action):
 
    ![時間軸檢視選項](/help/sites-cloud/authoring/assets/timeline.png)
 
