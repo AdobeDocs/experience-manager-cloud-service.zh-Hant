@@ -31,8 +31,9 @@ ht-degree: 13%
    >[!NOTE]
    >
    >* 靜態轉譯會顯示在窗格的上半部。 動態轉譯會出現在下半部。 只有動態轉譯時，您可以使用URL來顯示影像。 只有在 **[!UICONTROL 您選取動態轉譯時]** ，才會顯示「URL」按鈕。 只有在 **[!UICONTROL 您選取回應式影像預設集時]** ，才會顯示「RESS」按鈕。
-   >
-   >* The system shows numerous renditions when you select **[!UICONTROL Renditions]** in an asset&#39;s Detail view. 您可以增加所檢視的預設集數目。See [Increasing the number of image presets that display](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+      >
+      >
+   * The system shows numerous renditions when you select **[!UICONTROL Renditions]** in an asset&#39;s Detail view. 您可以增加所檢視的預設集數目。See [Increasing the number of image presets that display](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
@@ -41,6 +42,7 @@ ht-degree: 13%
 
    * 選取動態轉譯以預覽影像預設集。
    * Tap **[!UICONTROL URL]**, **[!UICONTROL Embed]**, or **[!UICONTROL RESS]** to display the pop-up.
+
    >[!NOTE]
    >
    >如果資產和 *影像預設集尚未發佈* ，則 **[!UICONTROL URL按鈕(或]** URL **[!UICONTROL 和]****** RESS按鈕 (如果適用) 不可用。
