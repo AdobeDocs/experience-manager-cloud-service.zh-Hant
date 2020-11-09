@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager 雲端服務的 SEO 和 URL 管理最佳作法
-seo-title: Adobe Experience Manager 雲端服務的 SEO 和 URL 管理最佳作法
+title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
+seo-title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 translation-type: tm+mt
 source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
 workflow-type: tm+mt
@@ -10,11 +10,11 @@ ht-degree: 100%
 ---
 
 
-# Adobe Experience Manager 雲端服務的 SEO 和 URL 管理最佳作法 {#seo-and-url-management-best-practices-for-aem}
+# Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法 {#seo-and-url-management-best-practices-for-aem}
 
-搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，在許多 Adobe Experience Manager (AEM) 雲端服務專案中，SEO 考量都是需要解決的問題。
+搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，在許多 Adobe Experience Manager (AEM) as a Cloud Service 專案中，SEO 考量都是需要解決的問題。
 
-本文件首先會說明在 AEM 雲端服務實作中達成上述目標的幾項 [SEO 最佳作法](#seo-best-practices)與建議。接著，本文件會於第一節中再深入探討幾項更[複雜的實作步驟](#aem-configurations)。
+本文件首先會說明在 AEM as a Cloud Service 實作中達成上述目標的幾項 [SEO 最佳作法](#seo-best-practices)與建議。接著，本文件會於第一節中再深入探討幾項更[複雜的實作步驟](#aem-configurations)。
 
 ## SEO 最佳作法 {#seo-best-practices}
 
@@ -242,7 +242,7 @@ Resource myPage = req.getResource();
 
 1. Dispatcher 在 `/my-page.html` 對回應進行快取，並將回應回傳給使用者。
 1. 內容作者對此網頁作出變更並加以啟用。
-1. Dispatcher 排清代理程式傳送 `/content/my-brand/my-page`** 的無效請求。**由於 Dispatcher 在此路徑上沒有經過快取的網頁，因此系統會維持對舊內容進行快取，導致內容過時。
+1. Dispatcher 排清代理程式傳送 `/content/my-brand/my-page`**的無效請求。** 由於 Dispatcher 在此路徑上沒有經過快取的網頁，因此系統會維持對舊內容進行快取，導致內容過時。
 
 有些方法可以設定自訂發送排清規則，針對快取失效將較短的 URL 對應至較長的 URL。
 
@@ -364,8 +364,8 @@ Disallow: /
 >
 >您可以註冊 Sling Servlet，監聽副檔名為 `xml` 的選擇器 `sitemap`。這樣一來，每當結尾如下所示的 URL 受到請求時，Servlet 就會處理請求：
 >    `/<path-to>/page.sitemap.xml`
->接著，您就可以從請求中取得受請求的資源，並使用 JCR API 在內容樹狀結構中從該時間點產生 Sitemap。
->如果您從同一個例項為多個網站提供內容，採用這種方法就能受益。`/content/siteA.sitemap.xml` 的請求會產生 `siteA` Sitemap，而 `/content/siteB.sitemap.xml` 的請求則會產生 `siteB` Sitemap，不需要編寫其他程式碼。
+接著，您就可以從請求中取得受請求的資源，並使用 JCR API 在內容樹狀結構中從該時間點產生 Sitemap。
+如果您從同一個例項為多個網站提供內容，採用這種方法就能受益。`/content/siteA.sitemap.xml` 的請求會產生 `siteA` Sitemap，而 `/content/siteB.sitemap.xml` 的請求則會產生 `siteB` Sitemap，不需要編寫其他程式碼。
 
 ### 為舊版 URL 建立 301 重新導向 {#creating-redirects-for-legacy-urls}
 
