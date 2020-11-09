@@ -1,5 +1,5 @@
 ---
-title: AEM 雲端服務 SDK
+title: AEM as a Cloud Service SDK
 description: AEM雲端服務軟體開發套件概觀
 translation-type: tm+mt
 source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
