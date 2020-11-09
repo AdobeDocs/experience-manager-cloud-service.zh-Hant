@@ -103,7 +103,7 @@ ht-degree: 6%
 定位模式可讓您設定活動的多個方面。 使用下列三步驟程式，建立品牌活動的目標內容：
 
 1. [建立](#create-authoring-the-experiences):新增或移除體驗，並新增每個體驗的選件。
-1. [目標](#target-configuring-the-audiences):指定每個體驗目標的對象。 您可以定位特定對象，如果使用A/B測試決定哪一個體驗會獲得多少流量百分比，則可以定位特定對象。
+1. [目標](#target-configuring-the-audiences):指定每個體驗目標的對象。 您可以定位特定對象，如果使用A/B測試決定哪一個體驗的流量百分比。
 1. [目標與設定](#goals-settings-configuring-the-activity-and-setting-goals):排程活動並設定優先順序。 您也可以設定成功度量目標。
 
 請依照下列程式，開始活動的內容定位程式。
