@@ -18,7 +18,7 @@ AEM提供工具架構，以製作目標內容並呈現個人化體驗。
 
 ## 定位模式 {#targeting-mode}
 
-[使用AEM的「定位](/help/sites-cloud/authoring/personalization/targeted-content.md) 」模式來製作定位內容。 定位模式和Target元件提供工具，讓您建立行銷活動體驗的內容。
+[使用AEM的「定位](/help/sites-cloud/authoring/personalization/targeted-content.md) 」模式來製作目標內容。 定位模式和Target元件提供工具，讓您建立行銷活動體驗的內容。
 
 ## 活動 {#activities}
 
@@ -36,7 +36,7 @@ AEM提供工具架構，以製作目標內容並呈現個人化體驗。
 
 觀眾是以在AEM或Adobe Target中建立的行銷區段為基礎。 當訪客開啟網頁時，頁面邏輯會決定其所屬的對象，並顯示您為該對象建立的內容。
 
-例如，活動會定義兩個不同對象的體驗： 30歲以上婦女和30歲以下婦女。 網站的女性頁面可能會針對每個體驗顯示不同的產品。
+例如，活動會定義兩個不同對象的體驗：30歲以上婦女和30歲以下婦女。 網站的女性頁面可能會針對每個體驗顯示不同的產品。
 
 您定義活動的體驗。 您可以使用「活 [動」主控台](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console) 或「 [定位」模式](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode) ，將體驗新增至活動。
 
@@ -50,7 +50,7 @@ AEM提供工具架構，以製作目標內容並呈現個人化體驗。
 
 ## Targeting Engine {#targeting-engine}
 
-定位引擎是驅動定位內容邏輯的機制。 [活動](/help/sites-cloud/authoring/personalization/activities.md) 」設定為使用兩個可用的定位引擎之一： AEM和Adobe Target。
+定位引擎是驅動定位內容邏輯的機制。 [活動](/help/sites-cloud/authoring/personalization/activities.md) 」設定為使用兩個可用的定位引擎之一：AEM和Adobe Target。
 
 ### AEM {#aem}
 
