@@ -14,7 +14,7 @@ ht-degree: 100%
 
 在「上線後」階段中，您應該確保有清理暫存檔案，並回顧最佳作法以便持續開發及留下管理記錄。
 
-下列工具可用來為 AEM 雲端服務環境進行疑難排解：
+下列工具可用來為 AEM as a Cloud Service 環境進行疑難排解：
 
 * **開發人員控制台**
 * **CRX/DE Lite**
@@ -23,9 +23,9 @@ ht-degree: 100%
 
 ## 開發人員控制台 {#developer-console}
 
-可以在開發、預備和生產環境的開發人員控制台中，針對 AEM 雲端服務開發人員環境進行除錯。
+可以在開發、預備和生產環境的開發人員控制台中，針對 AEM as a Cloud Service 開發人員環境進行除錯。
 
-請參考[實作 AEM 雲端服務](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)，深入了解開發工具。
+請參考[實作 AEM as a Cloud Service](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)，深入了解開發工具。
 
 ## CRX/DE Lite {#crxde-lite}
 
