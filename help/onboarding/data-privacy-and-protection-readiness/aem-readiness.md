@@ -1,11 +1,11 @@
 ---
 title: 資料保護與資料隱私權法規- Adobe Experience Manager雲端服務就緒性
-description: '瞭解Adobe Experience Manager如何以雲端服務的方式支援各種資料保護與資料隱私權規定； 包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
+description: '瞭解Adobe Experience Manager如何以雲端服務的方式支援各種資料保護與資料隱私權規定；包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe Experience Manager的雲端服務執行個體，以及在其上執行的�
 
 這些條例的主要規定是：
 
-1. 將個人資料的定義擴充為包含所有唯一ID; 直接和間接可識別的資料。
+1. 將個人資料的定義擴充為包含所有唯一ID;直接和間接可識別的資料。
 
 2. 已強化同意要求。
 
@@ -62,7 +62,7 @@ Adobe Experience Manager的雲端服務執行個體，以及在其上執行的�
 
    * Adobe Experience Platform Privacy Service不屬於AEM的工作流程，如下圖所示。
 
-* AEM包含客戶隱私權管理員和／或AEM管理員執行隱私權法規要求的檔案和程式； 手動或透過API（若有）。
+* AEM包含客戶隱私權管理員和／或AEM管理員執行隱私權法規要求的檔案和程式；手動或透過API（若有）。
 
 * 未新增任何服務或UI。
 
@@ -82,11 +82,11 @@ Adobe提供處理與Adobe Experience Manager雲端服務之存取、刪除及選
 
 如需AEM a Cloud Service產品區域的法規檔案，請參閱以下章節。
 
-## Adobe Experience Manager雲端服務基礎 {#aem-foundation}
+## Adobe Experience Manager as a Cloud Service 基礎 {#aem-foundation}
 
 See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md).
 
-## Adobe Experience Manager 雲端服務 Sites {#aem-sites}
+## Adobe Experience Manager as a Cloud Service Sites {#aem-sites}
 
 See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
 
