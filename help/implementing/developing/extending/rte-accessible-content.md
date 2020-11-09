@@ -6,12 +6,12 @@ translation-type: tm+mt
 source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 配置RTE以建立可訪問站點 {#configure-rte-accessible-sites}
+# 設定 RTE 以建立可存取的網站 {#configure-rte-accessible-sites}
 
 [!DNL Adobe Experience Manager] 支援標準協助工具功能，例如影像的替代文字，以及建立內容時可存取的額外功能。 內容作者將這些功能與使用豐富型文字編輯器(RTE)的元件搭配使用。 這些功能包括新增替代文字、透過標題和段落元素的結構資訊等。
 
@@ -51,7 +51,7 @@ RTE功能可在許多元件中使用。 主要元件是組 `Text` 件。
 
 ## 使用「原始碼編輯」功能 {#use-of-the-source-edit-feature}
 
-在某些情況下，內容作者會發現有必要檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE中建立的一部分內容可能需要更多標注以確保符合WCAG 2.0。 這可以通過RTE的源 [編輯](rich-text-editor.md#aboutplugins) 選項來完成。 您可以在 [`sourceedit` 外掛程式上 `misctools` 指定特徵](rich-text-editor.md#aboutplugins)。
+在某些情況下，內容作者會發現有必要檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE中建立的一部分內容可能需要更多標注以確保符合WCAG 2.0。這可以通過RTE的源 [編輯](rich-text-editor.md#aboutplugins) 選項來完成。 您可以在 [`sourceedit` 外掛程式上 `misctools` 指定特徵](rich-text-editor.md#aboutplugins)。
 
 >[!CAUTION]
 >
