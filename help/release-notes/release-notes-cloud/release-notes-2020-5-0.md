@@ -1,26 +1,26 @@
 ---
-title: Adobe Experience Manager 雲端服務 2020.5.0 版發行說明
+title: Adobe Experience Manager as a Cloud Service 2020.5.0 版發行說明
 description: Experience Manager 2020.5.0 版發行說明
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
 ---
 
 
-# AEM 雲端服務 2020.5.0 版發行說明 {#release-notes}
+# AEM as a Cloud Service 2020.5.0 版發行說明 {#release-notes}
 
-此頁面概述 Experience Manager 雲端服務 2020.5.0 版的一般發行說明。
+此頁面概述 Experience Manager as a Cloud Service 2020.5.0 版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-[!DNL Experience Manager] 雲端服務 2020.5.0 版的發行日期為 2020 年 5 月 7 日。
+[!DNL Experience Manager] as a Cloud Service 2020.5.0 版的發行日期為 2020 年 5 月 7 日。
 
 ## AEM Sites 新增功能 {#aem-sites}
 
-請詳閱本節，了解 AEM 雲端服務 2020.5.0 版中 AEM Sites 的新增功能和更新。
+請詳閱本節，了解 AEM as a Cloud Service 2020.5.0 版中 AEM Sites 的新增功能和更新。
 
 * 現在起，以非同步工作型態移動及轉出大量頁面後，可取得詳細工作資訊。
 * 現在複製/貼上頁面樹狀結構時，可選擇僅貼上根頁面或一併貼上樹狀結構的子頁面。
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## Cloud Manager 新增功能 {#cloud-manager}
 
-請詳閱本節，了解 AEM 雲端服務 2020.5.0 版中 Cloud Manager 的新增功能和更新。
+請詳閱本節，了解 AEM as a Cloud Service 2020.5.0 版中 Cloud Manager 的新增功能和更新。
 
 ### 新功能 {#what-is-new}
 
