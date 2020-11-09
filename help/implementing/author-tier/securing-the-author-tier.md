@@ -1,9 +1,9 @@
 ---
 title: 保護作者階層
 description: 保護作者階層
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e772687c4034a364912aa426a133134571246db9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 保護作者階層 {#securing-the-author-tier}
 
-以 AEM 雲端服務建立新環境時，依預設可從網際網路存取產生的作者階層。
+以 AEM as a Cloud Service 建立新環境時，依預設可從網際網路存取產生的作者階層。
 
 您可以進一步設定網路原則，以保護對作者階層的存取權。此程序的基礎，是向應具備您作者環境存取權的 IP 範圍提供授權。
 
