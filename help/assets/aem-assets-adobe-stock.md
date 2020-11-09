@@ -78,7 +78,7 @@ ht-degree: 2%
 
 ![在Experience Manager中搜尋篩選器，並在搜尋結果中反白顯示Adobe Stock資產](assets/aem-search-filters2.jpg)
 
-*圖：在搜尋結果中[!DNL Experience Manager]搜尋篩選[!DNL Adobe Stock]素材並反白顯示。*
+*圖：在搜尋結果中 [!DNL Experience Manager] 搜尋篩選 [!DNL Adobe Stock] 素材並反白顯示。*
 
 ### 儲存並檢視所需資產 {#saveassets}
 
@@ -96,7 +96,7 @@ ht-degree: 2%
 
 ![對話方塊可授權並儲存Experience Manager Assets中的Adobe Stock資產](assets/aem-stock_licenseandsave.jpg)
 
-*圖：對話方塊可授權並儲[!DNL Adobe Stock]存資產[!DNL Experience Manager Assets]。*
+*圖：對話方塊可授權並儲 [!DNL Adobe Stock] 存資產 [!DNL Experience Manager Assets]。*
 
 ### 存取中繼資料和資產屬性 {#access-metadata-and-asset-properties}
 
