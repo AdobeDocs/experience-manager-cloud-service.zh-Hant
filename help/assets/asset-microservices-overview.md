@@ -51,7 +51,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 擷取和處理流程是Experience Manager資產微服務架構的主要概念。
 
 * **直接二進位存取**:一旦為Experience Manager環境設定好資產，資產就會傳輸（並上傳）至Cloud Binary Store，然後AEM、資產微型服務，最後客戶可以直接存取資產以執行其工作。 這樣可最大限度地減少網路負載和儲存二進位檔案的複製
-* **外部化處理**:資產處理是在AEM環境以外進行，並節省其資源（CPU、記憶體），以提供主要數位資產管理功能，並支援針對使用者的系統進行互動式工作
+* **外部化處理**:資產處理是在AEM環境外完成，並節省其資源（CPU、記憶體），以提供主要數位資產管理功能，並支援使用者與系統互動的工作
 
 ## 直接二進位存取的資產上傳 {#asset-upload-with-direct-binary-access}
 
