@@ -1,8 +1,8 @@
 ---
-sub-product: AEM 雲端服務入門
-user-guide-title: AEM 雲端服務入門
+sub-product: AEM as a Cloud Service 入門
+user-guide-title: AEM as a Cloud Service 入門
 breadcrumb-title: 入門指南
-user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager 雲端服務，包括如何取得存取權限和重要的資料保護資訊。
+user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。
 translation-type: tm+mt
 source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
@@ -14,14 +14,14 @@ ht-degree: 90%
 
 # 入門 {#onboarding}
 
-+ [AEM 雲端服務入門](/help/onboarding/home.md)
++ [AEM as a Cloud Service 入門](/help/onboarding/home.md)
 + 必要條件 {#what-is-required}
    + [授予的存取權限](what-is-required/access-rights-granted.md)
    + [新增使用者和角色](what-is-required/add-users-roles.md)
    + [角色型權限](what-is-required/role-based-permissions.md)
    + [原始碼存放庫](what-is-required/source-code-repository.md)
 + 在雲端中存取 AEM {#getting-access}
-   + [存取 Experience Manager 雲端服務](getting-access-to-aem-in-cloud/navigation.md)
+   + [存取 Experience Manager as a Cloud Service ](getting-access-to-aem-in-cloud/navigation.md)
    + 雲端服務方案 {#cloud-service-programs}
       + [存取方案](getting-access-to-aem-in-cloud/first-time-login.md)
       + [了解方案和方案類型](getting-access-to-aem-in-cloud/understand-program-types.md)
@@ -58,7 +58,7 @@ ht-degree: 90%
    + [AEM 對資料保護與資料隱私權法規的基礎整備](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [AEM Sites 對資料保護與資料隱私權法規的整備](data-privacy-and-protection-readiness/sites-readiness.md)
 + 協助工具 {#accessibility}
-   + [AEM 雲端服務與網頁協助工具准則](accessibility/web-accessibility.md)
+   + [AEM as a Cloud Service 與網頁協助工具准則](accessibility/web-accessibility.md)
    + [WCAG 2.1 快速指南](accessibility/quick-guide-wcag.md)
 + 最佳作法 {#best-practices}
    + [SEO 和 URL 管理](best-practices/seo-and-url-management.md)
