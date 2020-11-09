@@ -30,7 +30,7 @@ ht-degree: 5%
 
 若要設定網站分享個人化內容的方式，您必須執行下列步驟：
 
-1. [建立新區域](#creating-new-areas) , [或建立新區域做為即時副本](#creating-new-areas)。 區域包括頁面區域可用的所 *有活* 動； 即，元件所在頁面上的位置。 建立新區域會建立空白區域，而建立新區域作為即時副本可讓您跨網站結構繼承內容。
+1. [建立新區域](#creating-new-areas) , [或建立新區域做為即時副本](#creating-new-areas)。 區域包括頁面區域可用的所 *有活* 動；即，元件定位於頁面上的位置。 建立新區域會建立空白區域，而建立新區域作為即時副本可讓您跨網站結構繼承內容。
 
 1. [將您的網站或頁面連結](#linking-sites-to-an-area) 至某個區域。
 
@@ -59,7 +59,7 @@ ht-degree: 5%
 
 ## 使用案例 {#use-cases}
 
-您可以根據使用案例，以多種方式設定目標內容的多網站支援。 本節將說明在理論上如何搭配一個品牌運作。 此外，在范 [例中： 依據地理位置定位內容](#example-targeting-content-based-on-geography)，您可以看到在多個網站中定位內容的實際應用程式。
+您可以根據使用案例，以多種方式設定目標內容的多網站支援。 本節將說明在理論上如何搭配一個品牌運作。 此外，在范 [例中：依據地理位置定位內容](#example-targeting-content-based-on-geography)，您可以看到在多個網站中定位內容的實際應用程式。
 
 目標內容會包住所謂的區域，以定義網站或頁面的範圍。 這些區域是在品牌層級定義的。 一個品牌可以包含多個區域。 品牌間的區域可以不同。 雖然一個品牌可能只包含主要區域，因此可以跨所有品牌共用，但另一個品牌可能包含多個品牌（例如，依地區區分）。 因此，品牌不需要鏡像它們之間的區域集。
 
@@ -68,7 +68,7 @@ ht-degree: 5%
 * 一組完 *全不同* 的目標內容——在其中一個中編輯目標內容不會影響另一個。 連結至不同區域的網站會讀取和寫入至其自己設定的區域。 例如：
    * 網站A連結至區域X
    * 網站B連結至區域Y
-* 一 *組共用* 、定位的內容——其中一組編輯對兩個網站都有直接影響； 您可以讓兩個網站參照相同區域來設定此設定。 連結至相同區域的網站會共用此區域內的目標內容。 例如：
+* 一 *組共用* 、定位的內容——其中一組編輯對兩個網站都有直接影響；您可以讓兩個網站參照相同區域來設定此設定。 連結至相同區域的網站會共用此區域內的目標內容。 例如：
    * 網站A連結至區域X
    * 網站B連結至區域X
 * 透過MSM從其他網站繼 *承* 的一組明確的目標內容——內容可從主版到即時副本單向推出。 例如：
@@ -81,9 +81,9 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->如需此功能的詳細技術資訊，請參閱「目標內 [容的多網站管理如何結構化](/help/sites-cloud/authoring/personalization/multisite-structure.md)」。
+>如需此功能的詳細技術資訊，請參 [閱定位內容的多網站管理結構](/help/sites-cloud/authoring/personalization/multisite-structure.md)。
 
-## 範例： 根據地理位置定位內容 {#example-targeting-content-based-on-geography}
+## 範例：根據地理位置定位內容 {#example-targeting-content-based-on-geography}
 
 針對目標內容使用多網站可讓您分享、推展或隔離個人化內容。 為了更好地說明如何使用此功能，請考慮您想要根據地理位置控制如何推展定位內容的藍本，如下列藍本：
 
@@ -102,7 +102,7 @@ ht-degree: 5%
 
 ![多網站圖表](/help/sites-cloud/authoring/assets/multisite-diagram.png)
 
-在北半球，我們創造了一個冬季活動，但在男性觀眾中，北美的行銷人員希望冬季有不同的影像，所以他／她在美國網站做了修改。
+在北半球，我們創造了一個冬季活動，但在男性觀眾中，北美的行銷人員希望冬季有不同的形象，所以他／她在美國網站做了修改。
 
 ![美國版](/help/sites-cloud/authoring/assets/multisite-us.png)
 
@@ -110,7 +110,7 @@ ht-degree: 5%
 
 ![變更版本](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-行銷人員想要將這些變更推展至歐洲地區，並點選或按一下「展示頁面」以展示即時 **文案**。 重新整理索引標籤後，大不列顛網站會有新的影像，因為歐洲區會繼承主區域（在推出後）。 <!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
+行銷人員想要將這些變更推展至歐洲地區，並點選或按一下「展出頁面」來推展即時 **文案**。 重新整理索引標籤後，大不列顛網站會有新的影像，因為歐洲區會繼承主區域（在推出後）。 <!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
 
 ![轉出即時副本](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
