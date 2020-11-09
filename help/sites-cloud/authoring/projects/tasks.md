@@ -48,7 +48,7 @@ ht-degree: 12%
 
 #### 任務詳細資料 {#task-details}
 
-有關特定任務的詳細資訊，請在「任務清單」中點選／按一下該任務，然後**任務詳細資訊**開啟。
+有關特定任務的詳細資訊，請在「任務清單」中點選／按一下該任務，然後**Task Details **open。
 
 ![任務詳細資訊](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
