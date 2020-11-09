@@ -50,7 +50,7 @@ Experience Manager中不再提供Classic Commerce Integration Framework（包含
 這裡的主要區別是：
 
 * GraphQL用戶端OSGI搭 **售不得再** 包含在AEM專案中，它是透過CIF附加元件部署
-* GraphQL用戶端和Graphql資料服務的OSGI **組態** ，不能再包含在AEM專案中
+* GraphQL用戶端和Graphql資料服務的OSGI **組態** ，不得再包含在AEM專案中
 
 >[!TIP]
 >
