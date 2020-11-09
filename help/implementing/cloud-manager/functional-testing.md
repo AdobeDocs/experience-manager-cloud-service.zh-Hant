@@ -80,7 +80,7 @@ ht-degree: 4%
 
 ### 本地測試執行 {#local-test-execution}
 
-由於測試類是JUnit測試，因此可以從主流Java IDE（如Eclipse、IntelliJ、NetBeans等）中運行。
+由於測試類是JUnit測試，因此可以從主流Java IDE（如Eclipse、IntelliJ、NetBeans等）運行。
 
 不過，在執行這些測試時，必須設定aem-testing-clients（和基礎Sling Testing Clients）預期的各種系統屬性。
 
