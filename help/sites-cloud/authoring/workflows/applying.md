@@ -1,6 +1,6 @@
 ---
 title: 將工作流程套用至頁面
-description: 撰寫時，您可以叫用工作流程，在頁面上採取行動； 您也可以套用多個工作流程。
+description: 撰寫時，您可以叫用工作流程，在頁面上採取行動；您也可以套用多個工作流程。
 translation-type: tm+mt
 source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
 workflow-type: tm+mt
@@ -12,14 +12,14 @@ ht-degree: 15%
 
 # 將工作流程套用至頁面 {#applying-workflows-to-pages}
 
-撰寫時，您可以叫用工作流程，在頁面上採取行動； 您也可以套用多個工作流程。
+撰寫時，您可以叫用工作流程，在頁面上採取行動；您也可以套用多個工作流程。
 
 應用工作流時，您指定以下資訊：
 
 * 要套用的工作流程。
    * 您可以套用您有權存取的任何工作流程 (由AEM管理員指派)。
 * （可選）幫助標識用戶收件箱中工作流實例的標題。
-* 工作流負載； 這可以是一或多個頁面。
+* 工作流負載；這可以是一或多個頁面。
 
 工作流程可從以下網址啟動：
 
@@ -58,7 +58,7 @@ ht-degree: 15%
 
 * [在「建立工作流嚮導」中指定「工作流詳細資訊」](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
-### 從Sites工具列啟動工作流程 {#starting-a-workflow-from-the-sites-toolbar}
+### 從「站點」工具欄啟動工作流 {#starting-a-workflow-from-the-sites-toolbar}
 
 您可以從Sites主控台的工具列啟動工 **作流程** :
 
@@ -119,7 +119,7 @@ ht-degree: 15%
 
 1. 在「范 **圍** 」步驟中，您可以選擇：
 
-   * **新增內容** ，以開啟路 [徑瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) ，並選取其他資源； 在瀏覽器中，按一下／點選「選 **取** 」，將內容新增至工作流程例項。
+   * **新增內容** ，以開啟路 [徑瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) ，並選取其他資源；在瀏覽器中，按一下／點選「選 **取** 」，將內容新增至工作流程例項。
 
    * 查看其他操作的現有資源：
 
