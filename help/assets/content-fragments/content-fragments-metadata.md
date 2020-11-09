@@ -19,7 +19,7 @@ ht-degree: 11%
 1. 在「資 **產** 」主控台中，導覽至內容片段的位置。
 2. 其中之一：
 
-   * 選擇「 [**查看屬性&#x200B;**」以開啟對話框](/help/assets/manage-digital-assets.md#editing-properties)。 開啟供檢視後，您也可以編輯。
+   * 選擇「 [**查看屬性** 」以開啟對話框](/help/assets/manage-digital-assets.md#editing-properties)。 開啟供檢視後，您也可以編輯。
    * 開啟「編 [輯」的內容片段](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)，然後從側 **面面板選取「中繼資料** 」。
 
    ![中繼資料](assets/cfm-metadata-01.png)
