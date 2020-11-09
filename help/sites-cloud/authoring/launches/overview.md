@@ -57,18 +57,18 @@ ht-degree: 6%
       * 升級所有頁面，或僅升級修改的頁面。
    * 自動——這涉及下列事項：
       * The **Launch**(**Live**) **date** field: this can be set when creating or editing a launch.
-      * 「生 **產就緒** 」標幟： 這只能在編輯啟動時設定。
+      * 「生 **產就緒** 」標幟：這只能在編輯啟動時設定。
       * If the **Production Ready** flag is set, the launch will be automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. 促銷後，生產頁面會自動發佈。\
          如果尚未設定日期，則旗標將無效。
 * 同時更新來源和啟動頁面：
-   * 對源頁面的更改會自動在啟動副本中實現(如果設定為繼承； 即即即即時副本)。
+   * 對源頁面的更改會自動在啟動副本中實現(如果設定為繼承；即即即即時副本)。
    * 您可以變更啟動副本，而不中斷這些自動更新或來源頁面。
 
    ![並行動作](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [建立巢狀啟動](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) -啟動中的啟動：
    * 來源是現有的啟動。
-   * 您可以將 [巢狀啟動提升至](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) 任何目標； 這可以是父級啟動或頂層來源頁面（生產）。
+   * 您可以將 [巢狀啟動提升至](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) 任何目標；這可以是父級啟動或頂層來源頁面（生產）。
 
    ![巢狀啟動](/help/sites-cloud/authoring/assets/launches-nested.png)
 
