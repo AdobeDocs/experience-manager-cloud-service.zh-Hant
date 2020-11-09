@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 內容傳送流程 {#content-delivery}
+# 內容傳遞流程 {#content-delivery}
 
 目前的頁面詳細資訊會在AEM中以Cloud Service的形式發佈服務內容傳送。 發佈服務內容傳送包括：
 
