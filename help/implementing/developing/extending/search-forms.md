@@ -270,7 +270,7 @@ Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/hel
   </tr>
   <tr>
    <td>選項</td>
-   <td><p>這些選項是用戶建立的內容節點。</p> <p>如需詳 <a href="#addinganoptionspredicate">細資訊，請參閱新增選項</a> 「謂詞」。</p> </td>
+   <td><p>這些選項是用戶建立的內容節點。</p> <p>如需詳 <a href="#addinganoptionspredicate">細資訊，請參閱Adding an Options Predicate</a> 。</p> </td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -531,7 +531,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 * **屬性值**
 
-   屬性值是絕對字串或運算式語言； 例如， `cq:Page` 或
+   屬性值是絕對字串或運算式語言；例如， `cq:Page` 或
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
 
@@ -554,7 +554,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 * **Publish和Live Copy屬性名稱Sites**&#x200B;特定述詞的publish和live copy核取方塊標籤。
 
-* &amp;ast; 在「設定」標籤的欄 **位標籤上** ，表示欄位是必填欄位，如果留空，則會顯示錯誤訊息。
+* &amp;ast;在「設定」標籤的欄 **位標籤上** ，表示欄位是必填欄位，如果留空，則會顯示錯誤訊息。
 
 ## 設定搜尋表單 {#configuring-your-search-forms}
 
@@ -640,7 +640,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 ### 添加選項謂語 {#adding-options-predicates}
 
-選項謂語（選項、選項屬性）可讓您設定要搜尋的項目。 通常用來搜尋頁面下方的內容； 例如，頁面節點上的屬性。
+選項謂語（選項、選項屬性）可讓您設定要搜尋的項目。 通常用來搜尋頁面下方的內容；例如，頁面節點上的屬性。
 
 下列範例（根據用於建立頁面的範本進行搜尋）說明相關步驟：
 
