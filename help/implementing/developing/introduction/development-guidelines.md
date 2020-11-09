@@ -1,6 +1,6 @@
 ---
-title: AEM 雲端服務開發方針
-description: AEM 雲端服務開發方針
+title: AEM as a Cloud Service 開發方針
+description: AEM as a Cloud Service 開發方針
 translation-type: tm+mt
 source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# AEM 雲端服務開發方針 {#aem-as-a-cloud-service-development-guidelines}
+# AEM as a Cloud Service 開發方針 {#aem-as-a-cloud-service-development-guidelines}
 
 在AEM中以雲端服務形式執行的程式碼必須知道它一律在叢集中執行。 這表示執行中的例項永遠多於一個。程式碼必須具彈性，尤其是當例項可能在任何時間點停止時。
 
