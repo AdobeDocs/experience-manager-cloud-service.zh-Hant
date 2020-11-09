@@ -1,6 +1,6 @@
 ---
 title: 資料保護與資料隱私權法規- Adobe Experience Manager作為雲端服務網站的就緒性
-description: '瞭解Adobe Experience Manager如何以雲端服務網站的形式支援各種資料保護與資料隱私權規定； 包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
+description: '瞭解Adobe Experience Manager如何以雲端服務網站的形式支援各種資料保護與資料隱私權規定；包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
 translation-type: tm+mt
 source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
@@ -55,7 +55,7 @@ Adobe Experience Manager受Cookie選擇退出服務約束，該服務用於管�
 
 1. 向下捲動至 **服務** - **Experience Cloud服務使用資料**。
 
-1. 選擇引用的連結； 目前的 **標題**。
+1. 選擇引用的連結；目前的 **標題**。
 
 1. 您將會看到下列詳細資訊，以及選擇退出或加入的選項：
 
@@ -92,7 +92,7 @@ AEM provides an optional data layer with [ContextHub](/help/sites-developing/con
 
 AEM提供ContextHub的選用資料層。 如此可保留瀏覽器中特定訪客的資料，以便用於規則型個人化。
 
-依預設，此訪客資料不會儲存在AEM中； AEM會傳送規則至資料層，以便在瀏覽器中做個人化決策。
+依預設，此訪客資料不會儲存在AEM中；AEM會傳送規則至資料層，以便在瀏覽器中做個人化決策。
 
 ### 實作選擇加入／選擇退出 {#implementing-opt-in-opt-out}
 
@@ -130,7 +130,7 @@ AEM提供ContextHub的選用資料層。 如此可保留瀏覽器中特定訪客
 
 若要預覽使用ContextHub的永久性，使用者可以：
 
-* 使用瀏覽器的主控台； 例如：
+* 使用瀏覽器的主控台；例如：
 
    * Chrome:
 
@@ -231,7 +231,7 @@ console.log(storage.getTree());
    ContextHub.resetAllStores();
    ```
 
-* 清除特定的持久層； 例如，sessionStorage:
+* 清除特定的持久層；例如，sessionStorage:
 
    ```
    var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
