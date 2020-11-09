@@ -1,9 +1,9 @@
 ---
 title: 存取作者階層
 description: 存取作者階層
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e772687c4034a364912aa426a133134571246db9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 存取作者階層{#accessing-the-author-tier}
 
-AEM 雲端服務環境的作者階層可透過標準且不可自訂的 URL 來存取。
+AEM as a Cloud Service 環境的作者階層可透過標準且不可自訂的 URL 來存取。
 
 該 URL 目前的格式如下：
 
