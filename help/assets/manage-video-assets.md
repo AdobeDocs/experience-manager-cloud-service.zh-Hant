@@ -36,7 +36,7 @@ ht-degree: 7%
 
 ![在Experience Manager中建立視訊轉碼的處理設定檔](assets/video-processing-profile-for-mp4.png)
 
-*圖：中用於視頻轉碼的處理配置檔案[!DNL Experience Manager]。*
+*圖：中用於視頻轉碼的處理配置檔案 [!DNL Experience Manager]。*
 
 如果您只提供寬度或高度，而將其他欄位留空，轉譯會維持高寬比。 目前，僅h264 codec可用於轉碼。
 
