@@ -53,7 +53,7 @@ Launch和Target的IMS設定必須能正確整合Target與AEM和Launch。 雖然L
 
 ## 使用Adobe Launch將Adobe Target整合在AEM網站上 {#integrate-target-launch}
 
-AEM提供與Experience Platform Launch的立即可用整合。 借由將Adobe Target擴充功能新增至Experience Platform Launch，您就可以在AEM網頁上使用Adobe Target的功能。Target程式庫僅會使用Launch呈現。
+AEM提供與Experience Platform Launch的立即可用整合。 借由將Adobe Target擴充功能新增至Experience Platform Launch，您就可以在AEM網頁上使用Adobe Target的功能。Target程式庫僅會使用Launch來轉換。
 
 >[!NOTE]
 >
