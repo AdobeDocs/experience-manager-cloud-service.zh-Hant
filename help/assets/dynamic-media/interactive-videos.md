@@ -466,7 +466,7 @@ Quickview的大多數實施都採用以下模式：
       在時間軸上，點選您要分成一半的區段，然後點選工具列上的 **[!UICONTROL 分割區段]** 。
 
       選取兩或多個區段會停用「分割 **[!UICONTROL 區段]** 」功能。
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
    將選取的10秒區段分割為兩個區段，每個區段5秒。
 
