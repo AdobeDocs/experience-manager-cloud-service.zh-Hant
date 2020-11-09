@@ -50,7 +50,7 @@ ht-degree: 71%
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
-請依照以下章節了解如何使用「內容轉移工具」，將內容移轉至 AEM 雲端服務 (製作/發佈)：
+請依照以下章節了解如何使用「內容轉移工具」，將內容移轉至 AEM as a Cloud Service (製作/發佈)：
 
 1. 選擇 Adobe Experience Manager 並導覽至工具 -> **操作** -> **內容轉移**。
 
@@ -72,7 +72,7 @@ ht-degree: 71%
       >[!NOTE]
       >移轉集名稱不允許使用特殊字元。
 
-   1. **雲端服務設定**：輸入目標 AEM 雲端服務製作 URL。
+   1. **Cloud Service 設定**：輸入目標 AEM as a Cloud Service 製作 URL。
 
       >[!NOTE]
       >在內容轉移活動期間，您一次最多可以建立並維護四個移轉集。
