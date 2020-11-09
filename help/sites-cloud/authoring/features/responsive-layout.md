@@ -14,7 +14,7 @@ ht-degree: 7%
 
 AEM可讓您使用「版面容器」元件，為頁面建立互動式 **版面** 。
 
-這提供了段落系統，可讓您將元件定位在回應式格線中。 此格線可根據裝置／視窗大小和格式重新排列版面。 此元件與「版面」模式搭配使 [**用&#x200B;**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)，可讓您根據裝置建立和編輯回應式版面。
+這提供了段落系統，可讓您將元件定位在回應式格線中。 此格線可根據裝置／視窗大小和格式重新排列版面。 此元件與「版面」模式搭配使 [**用**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)，可讓您根據裝置建立和編輯回應式版面。
 
 版面容器：
 
@@ -27,15 +27,15 @@ AEM可讓您使用「版面容器」元件，為頁面建立互動式 **版面**
 
 AEM使用多種機制組合，為您的頁面實現互動式版面配置：
 
-* [**Layout Container **](#adding-a-layout-container-and-its-content-edit-mode)（版面容器）元件
+* [**Layout Container**](#adding-a-layout-container-and-its-content-edit-mode) （版面容器）元件
 
-   此元件可在元件瀏 [覽器中使用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) ，並提供格點段落系統，讓您在回應式格點中新增和定位元件。 您也可以將其設為頁面上的預設段落系統。
+   此元件可在元件瀏 [覽器中使用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) ，並提供格線段落系統，讓您在回應式格線中新增和定位元件。 您也可以將其設為頁面上的預設段落系統。
 
-* [**版面模式&#x200B;**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
+* [**版面模式**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
-   一旦版面容器放置在您的頁面上，您就可以使用「版面」 **模式** ，將內容定位在回應式格線中。
+   一旦版面容器放置在您的頁面上，您就可以使用「版面 **** 」模式，將內容定位在回應式格線中。
 
-* [**模擬器&#x200B;**](#selecting-a-device-to-emulate)這可讓您建立和編輯互動式網站，透過互動方式調整元件大小，以根據裝置／視窗大小重新排列版面。 然後，使用者就可以看到如何使用模擬器呈現內容。
+* [**模擬器**](#selecting-a-device-to-emulate)&#x200B;這可讓您建立和編輯互動式網站，透過互動方式調整元件大小，以根據裝置／視窗大小重新排列版面。 然後，使用者就可以看到如何使用模擬器呈現內容。
 
 有了這些互動式格點機制，您可以：
 
@@ -217,7 +217,7 @@ AEM可讓您根據裝置寬度來定義版面：
 
    * **恢復斷點佈局** -恢復為預設佈局。 這表示不會強加自訂版面。
 
-      ![「恢復斷點佈局」按鈕](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
+      ![恢復斷點佈局按鈕](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 
    * **浮點到新行** -如果間距允許，將元件向上移動。
 
