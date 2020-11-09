@@ -11,7 +11,7 @@ ht-degree: 9%
 ---
 
 
-# 大量匯入和匯出資產中繼資料 {#import-and-export-asset-metadata-in-bulk}
+# Import and export asset metadata in bulk {#import-and-export-asset-metadata-in-bulk}
 
 AEM Assets可讓您使用CSV檔案大量匯入資產中繼資料。 您可以匯入CSV檔案，對最近上傳的資產或現有資產進行大量更新。 您也可以從協力廠商系統，以CSV格式大量內嵌資產中繼資料。
 
@@ -62,10 +62,10 @@ AEM Assets可讓您使用CSV檔案大量匯入資產中繼資料。 您可以匯
 
 1. 選擇所需的選項。 提供檔案名稱，並視需要提供日期。
 
-1. 在「要 **[!UICONTROL 導出的屬性」(Properties to be exported]** )欄位中，指定要導出所有屬性還是要導出特定屬性。 如果選擇「選擇性屬性」以進行導出，請添加所需的屬性。
+1. 在要導 **[!UICONTROL 出的屬性欄位中]** ，指定要導出全部屬性還是要導出特定屬性。 如果選擇「選擇性屬性」以進行導出，請添加所需的屬性。
 
 1. 在工具列中點選／按一下「 **[!UICONTROL 匯出]**」。 訊息會確認中繼資料已匯出。 關閉訊息。
 1. 開啟導出作業的收件箱通知。選擇作業，然後從工具 **[!UICONTROL 欄中]** ，按一下「開啟」。若要下載包含中繼資料的CSV檔案，請從工具列點選/按 **[!UICONTROL 一下「CSV下載]** 」。按一下 **[!UICONTROL 關閉]**。
 
    ![對話方塊，以下載包含大量匯出之中繼資料的CSV檔案](assets/csv_download.png)
-   *圖： 對話方塊，以下載包含大量匯出之中繼資料的CSV檔案*
+   *圖：對話方塊，以下載包含大量匯出之中繼資料的CSV檔案*
