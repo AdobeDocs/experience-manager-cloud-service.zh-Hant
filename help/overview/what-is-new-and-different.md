@@ -45,7 +45,7 @@ ht-degree: 10%
 >
 >如需詳細資訊，請參閱 [架構](/help/core-concepts/architecture.md)。
 
-AEM 雲端服務現已具備：
+AEM as a Cloud Service 現已具備：
 
 * AEM 映像數量可變的動態架構。
 
@@ -268,14 +268,14 @@ Adobe Experience Manager Assets as a Cloud Service為企業提供雲端原生Saa
 
 如需詳細資訊，請 [參閱「資產即雲端服務」概觀和簡介](/help/assets/overview.md)。
 
-## 了解 Adobe Experience Manager 雲端服務 {#getting-to-know-aem-as-cloud-service}
+## 了解 Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
 如需詳細資訊，請參閱：
 
-* [Adobe Experience Manager 雲端服務簡介](/help/overview/introduction.md)
-* Adobe Experience Manager 雲端服務[架構](/help/core-concepts/architecture.md)
-* [AEM 雲端服務重大變更 (發行說明)](/help/release-notes/aem-cloud-changes.md)
-* [ 雲端服務 AEM Sites 重大變更](/help/sites-cloud/sites-cloud-changes.md)
-* [AEM Assets 雲端服務重大變更](/help/assets/assets-cloud-changes.md)
+* [Adobe Experience Manager as a Cloud Service 簡介](/help/overview/introduction.md)
+* Adobe Experience Manager as a Cloud Service [架構](/help/core-concepts/architecture.md)
+* [AEM as a Cloud Service 重大變更 (發行說明)](/help/release-notes/aem-cloud-changes.md)
+* [AEM Sites as a Cloud Service 重大變更](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as a Cloud服務簡介](/help/assets/overview.md)
-* [Adobe Experience Manager 雲端服務教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
