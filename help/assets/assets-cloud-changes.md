@@ -2,10 +2,10 @@
 title: Adobe Experience Manager資產雲端服務的顯著變更
 description: AEM Cloud服務中的Adobe Experience Manager Assets與Adobe Experience Manager 6.5相比有顯著變更。
 translation-type: tm+mt
-source-git-commit: 2f5925613219a475a4e7d780f7d2bb3da8148e31
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 14%
+source-wordcount: '626'
+ht-degree: 13%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功�
 >* Adobe Experience Manager as a Cloud Service [架構](/help/core-concepts/architecture.md)
 >* [AEM as a Cloud Service 重大變更 (發行說明)](/help/release-notes/aem-cloud-changes.md)
 >* [AEM Sites as a Cloud Service 重大變更](/help/sites-cloud/sites-cloud-changes.md)
->* [Adobe Experience Manager as a Cloud Service 教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+>* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## 資產擷取與上傳 {#asset-ingestion}
