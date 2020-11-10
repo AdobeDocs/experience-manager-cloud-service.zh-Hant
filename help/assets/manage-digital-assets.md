@@ -4,9 +4,9 @@ description: 瞭解各種資產管理和編輯方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '4431'
+source-wordcount: '4429'
 ht-degree: 12%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 12%
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-如果DAM用戶上載儲存庫中已存在的一個或多個資產，則 [!DNL Experience Manager] 會檢測複製並通知用戶。 重複偵測預設會停用，因為它可能會根據儲存庫大小和上傳的資產數量，對效能產生影響。 若要啟用此功能，請設 [!UICONTROL 定Adobe AEM Cloud Asset Duplication Detector]。 了 [解如何進行OSGi配置](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 複製檢測基於儲存在的唯 `dam:sha1` 一值 `jcr:content/metadata/dam:sha1`。 這表示即使檔案名稱不同，也會偵測到重複資產。
+如果DAM用戶上載儲存庫中已存在的一個或多個資產，則 [!DNL Experience Manager] 會檢測複製並通知用戶。 重複偵測預設會停用，因為它可能會根據儲存庫大小和上傳的資產數量，對效能產生影響。 若要啟用此功能，請設 [!UICONTROL 定Adobe AEM Cloud Asset Duplication Detector]。 了 [解如何進行OSGi配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 複製檢測基於儲存在的唯 `dam:sha1` 一值 `jcr:content/metadata/dam:sha1`。 這表示即使檔案名稱不同，也會偵測到重複資產。
 
 ![偵測重複資產OSGi組態](assets/duplicate-detection.png)
 
@@ -548,7 +548,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    要修改渲染的PDF檔案的外觀，例如注釋和狀態的字型顏色、大小和樣式、背景顏色，請從「配置管理器」(Configuration Manager)開啟「注釋 **[!UICONTROL PDF」(]** Annotation PDF)配置，並修改所需的選項。 例如，要更改批准狀態的顯示顏色，請修改相應欄位中的顏色代碼。 有關更改批注的字型顏色的資訊，請參 [閱注釋](/help/assets/manage-digital-assets.md#annotating)。
 
-   ![chlimage_1-248](assets/chlimage_1-248.png)
+   ![chlimage_1-247](assets/chlimage_1-248.png)
 
    返回轉譯的PDF檔案並重新整理它。 重新整理的PDF會反映您所做的變更。
 
