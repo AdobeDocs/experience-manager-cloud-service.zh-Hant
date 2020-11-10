@@ -2,9 +2,9 @@
 title: Dynamic Media 影像設定檔
 description: 建立包含非銳利遮色片和智慧型裁切或智慧型色票（或兩者）的設定的動態媒體影像描述檔，然後將描述檔套用至影像資產的資料夾。
 translation-type: tm+mt
-source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2754'
 ht-degree: 9%
 
 ---
@@ -195,7 +195,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
 另請參 [閱編輯多張影像的智慧裁切或智慧色票](#editing-the-smart-crop-or-smart-swatch-of-multiple-images)。
 
-**要編輯單張影像的智慧裁切或智慧色板**:
+**要編輯單一影像的智慧裁切或智慧色票**
 
 1. 點選AEM標誌並導覽至 **[!UICONTROL Assets]**，然後導覽至套用智慧裁切或智慧色票影像描述檔的資料夾。
 
@@ -209,6 +209,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
    * 在影像上，拖曳角點控制點以調整裁切或色票的可檢視區域大小。
    * 在影像上，將方塊／色票拖曳至新位置。 您只能編輯影像色票；色票是靜態的。
    * 在影像上方點選「 **[!UICONTROL 回復]** 」以還原您的所有編輯，並還原原始裁切或色票。
+   * 使用鍵盤箭頭鍵裁切影格大小，或重新定位影像，或兩者皆可。
 
 1. 在頁面的右上角附近，點選「 **[!UICONTROL Save]**」，然後點選「 **[!UICONTROL Close]** 」以返回資產資料夾。
 
@@ -220,7 +221,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
 如有需要，您可以重新執行智慧型裁切，以重新產生其他裁切。
 
-**若要編輯多張影像的智慧裁切或智慧色票**:
+**若要編輯多張影像的智慧裁切或智慧色票**
 
 1. 點選AEM標誌並導覽至 **[!UICONTROL Assets]**，然後導覽至套用智慧裁切或智慧色票影像描述檔的資料夾。
 1. 在資料夾上，點選「 **[!UICONTROL 更多動作]** (...)」圖示，然後點選「智 **[!UICONTROL 慧裁切」]**。
