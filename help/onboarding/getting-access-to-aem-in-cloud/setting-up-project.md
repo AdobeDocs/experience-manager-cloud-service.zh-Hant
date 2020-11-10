@@ -2,7 +2,7 @@
 title: 專案設定詳細資訊
 description: 專案設定詳細資訊——雲端服務
 translation-type: tm+mt
-source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
+source-git-commit: 207d0742e8bf46065c7e20bec7d88b0776c246b2
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 7%
@@ -145,34 +145,32 @@ ht-degree: 7%
                     <name>env.CM_BUILD</name>
                 </property>
         </activation>
-        <build>
-            <repositories>
-                <repository>
-                    <id>myco-repository</id>
-                    <name>MyCo Releases</name>
-                    <url>https://repository.myco.com/maven2</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>myco-repository</id>
-                    <name>MyCo Releases</name>
-                    <url>https://repository.myco.com/maven2</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                </pluginRepository>
-            </pluginRepositories>
-        </build>
+        <repositories>
+             <repository>
+                 <id>myco-repository</id>
+                 <name>MyCo Releases</name>
+                 <url>https://repository.myco.com/maven2</url>
+                 <snapshots>
+                     <enabled>false</enabled>
+                 </snapshots>
+                 <releases>
+                     <enabled>true</enabled>
+                 </releases>
+             </repository>
+         </repositories>
+         <pluginRepositories>
+             <pluginRepository>
+                 <id>myco-repository</id>
+                 <name>MyCo Releases</name>
+                 <url>https://repository.myco.com/maven2</url>
+                 <snapshots>
+                     <enabled>false</enabled>
+                 </snapshots>
+                 <releases>
+                     <enabled>true</enabled>
+                 </releases>
+             </pluginRepository>
+         </pluginRepositories>
     </profile>
 </profiles>
 ```
