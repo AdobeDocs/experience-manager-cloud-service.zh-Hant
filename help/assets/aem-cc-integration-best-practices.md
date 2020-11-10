@@ -4,9 +4,9 @@ description: 最佳實務將Experience Manager部署與Adobe Creative Cloud整�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3296'
 ht-degree: 18%
 
 ---
@@ -26,7 +26,6 @@ Adobe Creative Cloud為創意團隊提供解決方案與服務生態系統，以
 
 ## 創意人員、行銷人員和DAM使用者的協作需求 {#collaboration-need-of-creatives-marketers-and-dam-users}
 
-
 | 需求 | 使用案例 | 涉及的曲面 |
 |---|---|---|
 | 簡化案頭創意人員的體驗 | 簡化從DAM(AEM Assets)為創意專業人員（或更廣泛地說，是在原生資產建立應用程式中工作的案頭使用者）存取資產的程式。 他們需要簡單明瞭的方式來探索、使用（開啟）、編輯和儲存AEM的變更，以及上傳新檔案。 | Win或Mac案頭；Creative Cloud應用程式 |
@@ -38,7 +37,7 @@ Adobe Creative Cloud為創意團隊提供解決方案與服務生態系統，以
 | 相關人員的價值主張 | Adobe產品 | 涉及的曲面 |
 |---|---|---|
 | 創意使用者可從AEM發現資產、開啟並使用資產、編輯和上傳對AEM的變更，以及將新檔案上傳至AEM，而不需離開Creative Cloud應用程式。 | [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign |
-| 商業使用者可簡化開啟和使用資產、編輯和上傳對AEM的變更，以及從案頭環境將新檔案上傳至AEM。 他們會使用一般整合來開啟原生案頭應用程式中的任何資產類型，包括非Adobe的資產類型。 | [AEM案頭應用程式](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | Win和Mac案頭版的AEM案頭應用程式 |
+| 商業使用者可簡化開啟和使用資產、編輯和上傳對AEM的變更，以及從案頭環境將新檔案上傳至AEM。 他們會使用一般整合來開啟原生案頭應用程式中的任何資產類型，包括非Adobe的資產類型。 | [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Win和Mac案頭版的AEM案頭應用程式 |
 | 行銷人員和商業使用者可從AEM中發現、預覽、授權及儲存及管理Adobe Stock資產。 授權和儲存的資產提供精選的Adobe Stock中繼資料，以提升治理。 | [Experience Manager與Adobe Stock整合](aem-assets-adobe-stock.md) | AEM網頁介面 |
 
 本文主要針對協作需求的前兩個方面。資產規模分配和採購作為一個使用案例被簡要提及。針對這些需求解決方案，請考慮Adobe品牌入口網站或資產共用公域。其他解決方案，例如 [AEM Brand Portal](https://helpx.adobe.com/tw/experience-manager/brand-portal/user-guide.html)，這些解決方案可以根據 [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) 元件、 [Link Share](share-assets.md)，使用 [](/help/assets/manage-digital-assets.md) AEM Web UI Assets建立，應根據特定需求審查。
