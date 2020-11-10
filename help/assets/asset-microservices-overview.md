@@ -3,10 +3,10 @@ title: 使用資產微服務處理資產
 description: 使用雲端原生和可擴充的資產處理微服務來處理您的數位資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 2%
+source-wordcount: '835'
+ht-degree: 1%
 
 ---
 
@@ -80,6 +80,6 @@ Adobe Experience Manager可設定為在資產處理完成後自動觸發後處�
 >* [開始使用資產微服務](asset-microservices-configure-and-use.md)
 >* [支援的檔案格式](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
->* [AEM案頭應用程式](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)
+>* [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [直接二進位存取的Apache Oak檔案](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
