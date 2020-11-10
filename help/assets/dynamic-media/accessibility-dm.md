@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 7af8ddda4aee093b22147db9be9f65cd0c131c04
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 
 Dynamic Media跨製作使用者介面支援鍵盤控制和輔助技術，例如JAWS和NVDA螢幕閱讀程式。
 
+
+
 ## 動態媒體中的鍵盤協助功能支援
 
 個別使用者介面元素支援的按鍵輸入，在大多數情況下都十分明顯，而且易於發現。 動態媒體中的鍵盤控制項如下：
@@ -25,8 +27,8 @@ Dynamic Media跨製作使用者介面支援鍵盤控制和輔助技術，例如J
 使用 `Tab` 將輸入焦點提前到Tabbing順序下一個用戶介面元素；使用 `Shift+Tab` 可將輸入焦點重新放回先前的使用者介面元素。
 焦點遍歷會遵循畫面上自然的使用者介面元素位置，並依從左至右、從上至下的順序移動。
 * 能夠使用和 `Spacebar` 鍵 `Enter` 來啟動標準使用者介面元素，例如按鈕、下拉式清單等。
-* 能夠使用一些自訂的按鍵操作來與複雜的UI元素互動，例如作用點編輯器中的箭頭鍵。
 * 能夠查看活動元素上的鍵盤焦點反白顯示。 具有輸入焦點的用戶介面元件可接收視覺焦點指示，作為圍繞用戶介面元件呈現的邊框。
+* 能夠使用一些自訂的按鍵操作來與複雜的UI元素互動，例如作用點編輯器中的箭頭鍵。 在「影像裁切／智慧型裁切」編輯器中，您可以使用方向鍵來裁切影格大小，或重新定位影像，或兩者皆可。
 
 由於Dynamic Media是AEM Assets的外掛程式，因此大部份的鍵盤控制行為都與AEM Assets中完全相同。 例如，「動態媒 `Cancel` 體」中的按鈕與「AEM資產」中的對焦反白顯示相同，而且會 `Spacebar` 像「AEM資產」中的按鍵反應。 請參 [閱「資產」中的鍵盤快速鍵](/help/assets/accessibility.md#keyboard-shortcuts)。 熱點編輯器和影像裁切／智慧裁切編輯器除外。
 
