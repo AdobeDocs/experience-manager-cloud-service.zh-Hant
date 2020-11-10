@@ -2,9 +2,9 @@
 title: 輪播橫幅
 description: 瞭解如何在動態媒體中使用轉盤橫幅
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '4605'
+source-wordcount: '4620'
 ht-degree: 4%
 
 ---
@@ -273,7 +273,7 @@ ht-degree: 4%
    * 對於熱點：在影像上，點選您要熱點出現的位置。
    * 對於影像地圖：在影像上按一下，然後從左上角拖曳至右下方，以建立影像對應區域。 您可以拖曳轉角來調整影像地圖的大小。
 
-   如有必要，請將熱點或影像映射拖動到新位置。 視需要新增其他熱點或影像地圖。
+   如有必要，請將熱點或影像映射拖動到新位置。 或者，使用鍵盤箭頭鍵控制所選熱點的位置。 視需要新增其他熱點或影像地圖。
 
    若要刪除熱點或影像地圖，請點選「動 **[!UICONTROL 作]** 」標籤。在「地 **[!UICONTROL 圖與熱點]** 」標題下，從「選定類型 **** 」下拉菜單中，選擇要刪除的熱點或影像映射的名稱。點選功 **[!UICONTROL 能表旁的]** 「垃圾筒」圖示，然後點選「 **[!UICONTROL 刪除」]**。
 
