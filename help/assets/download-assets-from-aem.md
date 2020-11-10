@@ -3,9 +3,9 @@ title: 下載資產
 description: 下載資 [!DNL Adobe Experience Manager Assets] 產以啟用或停用下載功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '885'
 ht-degree: 4%
 
 ---
@@ -26,12 +26,12 @@ ht-degree: 4%
 * [Experience Manager使用者介面](#download-in-aem)
 * 資產連結共用使用者介面
 * [資產共用共用](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [品牌入口網站](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [案頭應用程式](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)
+* [品牌入口網站](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## 使用AEM介面下載資產 {#download-in-aem}
 
-非同步下載服務提供架構，可順暢地下載大型資產。 從使用者介面即時下載較小的檔案。 大型檔案會非同步下載，而且使用者會透過收件匣中的Experience Manager通知得知完成。 請參 [閱瞭解Experience Manager收件匣](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)。
+非同步下載服務提供架構，可順暢地下載大型資產。 從使用者介面即時下載較小的檔案。 大型檔案會非同步下載，而且使用者會透過收件匣中的Experience Manager通知得知完成。 請參 [閱瞭解Experience Manager收件匣](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)。
 
 ![下載通知](assets/download-notification.png)
 
@@ -86,7 +86,7 @@ ht-degree: 4%
 
 您可 `Asset Download Servlet` 以在「發佈」例項上停用此功能，方法是更新 [!DNL Experience Manager] 分派器組態以封鎖任何資產下載請求。 也可以通過OSGi控制台手動禁用servlet。
 
-1. 若要透過分派器設定封鎖資產下載請求，請編 `dispatcher.any` 輯設定，並新增規則至篩 [選區段](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)。
+1. 若要透過分派器設定封鎖資產下載請求，請編 `dispatcher.any` 輯設定，並新增規則至篩 [選區段](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring)。
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
