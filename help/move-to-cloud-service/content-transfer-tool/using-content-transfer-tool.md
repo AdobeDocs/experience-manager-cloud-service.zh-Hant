@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
+source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 71%
+source-wordcount: '1902'
+ht-degree: 70%
 
 ---
 
@@ -28,6 +28,8 @@ ht-degree: 71%
 
 * 目前，AEM做為雲端服務作者例項的預設MongoDB大小為32GB。 建議您針對大於20GB的區段儲存區大小，提交支援票證以增加MongoDB大小。
 
+* 內容傳輸工具所傳輸的使用者和群組僅是內容滿足權限所需的使用者和群組。 提取 *過程將整* 個複製到遷移集中， `/home` Ingestion ** 過程將複製遷移內容ACL中引用的所有用戶和組。
+
 * 在提取階段中，「內容轉移工具」會在作用中的 AEM 來源例項上執行。
 
 * 在完成內容傳輸程式的 *Extraction* phase以及開始 *Ing Phase* ，將內容以Cloud ServiceStageOr ******** ProductionInstances的形式傳入您的AEM之前，您需要記錄支援票證，以便Adobe將您的意向通知執行Adobe，以確保在Adobe Inging期間不會發生內容的CloudStageStStageSt問題處理。 您必須在計畫的接收日期前1週記錄支 *持票* 。 一旦您提交了支援票證，支援團隊將提供後續步驟的指導。
@@ -49,6 +51,7 @@ ht-degree: 71%
 ## 執行「內容轉移工具」 {#running-tool}
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+
 
 請依照以下章節了解如何使用「內容轉移工具」，將內容移轉至 AEM as a Cloud Service (製作/發佈)：
 
