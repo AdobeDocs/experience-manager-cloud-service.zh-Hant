@@ -2,10 +2,10 @@
 title: 將您的數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產 [!DNL Adobe Experience Manager] 新增至雲端服務。
 translation-type: tm+mt
-source-git-commit: 28dddf8282d2489e97fae6247476dee54b72fe0d
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 2%
+source-wordcount: '1312'
+ht-degree: 1%
 
 ---
 
@@ -130,7 +130,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 要上傳更多檔案，特別是如果這些檔案存在於磁碟上的嵌套資料夾層次結構中，可以使用以下方法：
 
 * 使用自訂的上傳指令碼或工具，以利 [用資產上傳API](developer-reference-material-apis.md#asset-upload-technical)。 此類自訂工具可視需要新增對資產的額外處理（例如，翻譯中繼資料或重新命名檔案）。
-* 使用 [Experience Manager案頭應用程式](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，上傳巢狀資料夾階層。
+* 使用 [Experience Manager案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) ，上傳巢狀資料夾階層。
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 除了網頁瀏覽器使用者介面外，Experience Manager還支援案頭上的其他用戶端。 它們也提供上傳體驗，而不需前往網頁瀏覽器。
 
 * [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) 可讓您存取Adobe Photoshop、Adobe Illustrator和Adobe InDesign案頭 [!DNL Experience Manager] 應用程式中的資產。 您可以直接從這些案頭應用程 [!DNL Experience Manager] 式內的Adobe Asset Link使用者介面，將目前開啟的檔案上傳至。
-* [Experience Manager案頭應用程式](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) ，可簡化在案頭上處理資產的作業，不受檔案類型或處理資產的原生應用程式所限。 從本機檔案系統上傳巢狀檔案夾階層中的檔案特別有用，因為瀏覽器上傳僅支援上傳平面檔案清單。
+* [Experience Manager案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) ，可簡化在案頭上處理資產的作業，不受檔案類型或處理資產的原生應用程式所限。 從本機檔案系統上傳巢狀檔案夾階層中的檔案特別有用，因為瀏覽器上傳僅支援上傳平面檔案清單。
 
 ## 其他處理 {#additional-processing}
 
@@ -171,7 +171,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience manager 桌面應用程式](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)
+>* [Adobe Experience manager 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe Asset Link檔案](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
 >* [資產上傳的技術參考](developer-reference-material-apis.md#asset-upload-technical)
