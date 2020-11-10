@@ -3,9 +3,9 @@ title: 配置和使用資產微服務
 description: 設定並使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2514'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Experience Manager可提供下列處理層級。
 |---|---|---|
 | [預設設定](#default-config) | 它可以按原樣使用，而且不能修改。 此設定提供非常基本的轉譯產生功能。 | <ul> <li>使用者介面使 [!DNL Assets] 用的標準縮圖（48、140和319像素） </li> <li> 大型預覽（網頁轉譯- 1280像素） </li><li> 中繼資料和文字擷取。</li></ul> |
 | [自訂設定](#standard-config) | 由管理員透過使用者介面設定。 延伸預設選項，提供產生轉譯的更多選項。 擴充現成可用的選項，以提供不同的格式和轉譯。 | <ul><li>FPO轉譯。 </li> <li>變更影像的檔案格式和解析度</li> <li> 有條件地套用至已設定的檔案類型。 </li> </ul> |
-| [自訂設定檔](#custom-config) | 由管理員透過使用者介面設定，透過自訂應用程式使用自訂代碼，以呼叫 [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 支援雲端原生和可擴充方式中更複雜的需求。 | 請參閱 [允許的使用案例](#custom-config)。 |
+| [自訂設定檔](#custom-config) | 由管理員透過使用者介面設定，透過自訂應用程式使用自訂代碼，以呼叫 [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)。 支援雲端原生和可擴充方式中更複雜的需求。 | 請參閱 [允許的使用案例](#custom-config)。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -100,7 +100,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 自訂描述檔和使用案例 {#custom-config}
 
-支 [!DNL Asset Compute Service] 援多種使用案例，例如預設處理、處理Adobe特定格式（例如Photoshop檔案），以及實作自訂或組織特定處理。 過去需要的DAM更新資產工作流程自訂會自動處理，或是透過處理設定檔設定來處理。 如果這些處理選項未能滿足企業需求，Adobe建議您開發並使用來 [!DNL Asset Compute Service] 擴充預設功能。 如需概觀，請參 [閱瞭解擴充性及使用時機](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
+支 [!DNL Asset Compute Service] 援多種使用案例，例如預設處理、處理Adobe特定格式（例如Photoshop檔案），以及實作自訂或組織特定處理。 過去需要的DAM更新資產工作流程自訂會自動處理，或是透過處理設定檔設定來處理。 如果這些處理選項未能滿足企業需求，Adobe建議您開發並使用來 [!DNL Asset Compute Service] 擴充預設功能。 如需概觀，請參 [閱瞭解擴充性及使用時機](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)。
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 它可將影像、視訊、檔案和其他檔案格式轉換為不同的轉譯，包括縮圖、擷取的文字和中繼資料，以及封存。
 
-開發人員可使用 [!DNL Asset Compute Service] 來建 [立自訂應用程式](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) ，以符合支援的使用案例。 [!DNL Experience Manager] 可以使用管理員設定的自訂設定檔，從使用者介面呼叫這些自訂應用程式。 [!DNL Asset Compute Service] 支援以下調用外部服務的使用案例：
+開發人員可使用 [!DNL Asset Compute Service] 來建 [立自訂應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) ，以符合支援的使用案例。 [!DNL Experience Manager] 可以使用管理員設定的自訂設定檔，從使用者介面呼叫這些自訂應用程式。 [!DNL Asset Compute Service] 支援以下調用外部服務的使用案例：
 
 * 使用 [!DNL Adobe Photoshop]的 [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ，並將結果儲存為轉譯。
 * 呼叫協力廠商系統以更新資料，例如PIM系統。
@@ -128,8 +128,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 提供下列資訊。
 
    * 每個轉譯的檔案名稱及支援的副檔名。
-   * [Firefly自訂應用程式的端點URL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)。 應用程式必須與Experience Manager帳戶來自相同的組織。
-   * 新增服務參數， [將額外資訊或參數傳遞至自訂應用程式](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)。
+   * [Firefly自訂應用程式的端點URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html)。 應用程式必須與Experience Manager帳戶來自相同的組織。
+   * 新增服務參數， [將額外資訊或參數傳遞至自訂應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend)。
    * 包含和排除的MIME類型，可將處理限制為少數特定的檔案格式。
 
    按一下&#x200B;**[!UICONTROL 「儲存」]**。
@@ -219,14 +219,14 @@ Custom Workflow Runner服務(`com.adobe.cq.dam.processor.nui.impl.workflow.Custo
 
 ## 最佳做法和限制 {#best-practices-limitations-tips}
 
-* 設計工作流程時，請考慮您對所有類型轉譯的需求。 如果您未預見未來需要轉譯，請從工作流程中移除其建立步驟。 之後無法大量刪除轉譯。 長期使用後，不需要的轉譯可能會佔用大量儲存空間 [!DNL Experience Manager]。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自訂以 [!DNL Experience Manager] 刪除特定轉譯，或刪除資產並再次上傳這些資產。
+* 在設計工作流程時，請考慮您對所有類型轉譯的需求。 如果您未預見未來需要轉譯，請從工作流程中移除其建立步驟。 之後無法大量刪除轉譯。 長期使用後，不需要的轉譯可能會佔用大量儲存空間 [!DNL Experience Manager]。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自訂以 [!DNL Experience Manager] 刪除特定轉譯，或刪除資產並再次上傳這些資產。
 * 目前，支援僅限於產生轉譯。 不支援產生新資產。
 
 >[!MORELIKETHIS]
 >
->* [資產計算服務簡介](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。
->* [瞭解擴充性，以及何時使用](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
->* [如何建立自訂應用程式](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)。
+>* [資產計算服務簡介](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)。
+>* [瞭解擴充性，以及何時使用](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)。
+>* [如何建立自訂應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)。
 >* [支援各種使用案例的MIME類型](/help/assets/file-format-support.md)。
 
 
