@@ -2,9 +2,9 @@
 title: 互動式影像
 description: 瞭解如何在動態媒體中處理互動式影像
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '4238'
+source-wordcount: '4253'
 ht-degree: 1%
 
 ---
@@ -256,10 +256,10 @@ Quickview的大多數實施都採用以下模式：
 1. 在頁面的左上角附近，點選「新增熱點」( **[!UICONTROL 手指點選圖示]** )以開啟「熱點」管理頁面。
 1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
 
-1. 在「熱點管理」頁面的左上角附近，點選「熱 **[!UICONTROL 點」]**。
-1. 在影像上，點選您要熱點出現的位置。如有必要，請拖動熱點以調整其位置。
-1. 通過重複步驟a和b，根據需要添加其他熱點。
-1. （可選）若要刪除熱點，請在影像上選取它，然後點選「熱點」標題下 **[!UICONTROL 的]** 「刪除」(廢棄項目可 **[!UICONTROL 以圖示)]** 。
+   1. 在「熱點管理」頁面的左上角附近，點選「熱 **[!UICONTROL 點」]**。
+   1. 在影像上，點選您要熱點出現的位置。如有必要，請拖動熱點以調整其位置。或者，使用鍵盤箭頭鍵控制所選熱點的位置。
+   1. 通過重複步驟a和b，根據需要添加其他熱點。
+   1. （可選）若要刪除熱點，請在影像上選取它，然後點選「熱點」標題下 **[!UICONTROL 的]** 「刪除」(廢棄項目可 **[!UICONTROL 以圖示)]** 。
 
 1. 在「名稱」文本欄位中，鍵入熱點的名稱。 此名稱也會出現在「選定熱點」下拉清單中。
 1. 執行下列任一項作業：
