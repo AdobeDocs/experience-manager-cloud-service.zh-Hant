@@ -3,7 +3,7 @@ title: 使用「連線資產」在 中共用 DAM 資產 [!DNL Sites]
 description: 使用遠程部署中可用 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 的資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26294ad57544aa822dc6341fbbd85f396730ee8b
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 41%
@@ -28,7 +28,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 使用或設定此功能之前，請先確定下列事項：
 
 * 使用者是每個部署中適當使用者群組的一部分。
-* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. 如需有關 [!DNL Experience Manager] 6.5的資訊，請參 [閱Experience Manager 6.5 Assets中的「連線資產」功能](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)。
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. 如需詳細資訊， [!DNL Experience Manager] 請參閱Experience Manager 6.5 [Assets中的「連線資產」功能](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)。
 
    |  | [!DNL Sites] 雲端服務 | [!DNL Experience Manager] 6.5 [!DNL Sites] on AMS. | [!DNL Experience Manager] 6.5內 [!DNL Sites] 部部署 |
    |---|---|---|---|
@@ -40,7 +40,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 作者在Content Finder中搜尋影像和下列類型的檔案，並在「頁面編輯器」中使用搜尋的資產。 文檔將添加到元件 `Download` 中，影像將添加到組 `Image` 件中。 Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. 支援的格式包括：
 
-* **影像格式**:Image元件支 [持的格式](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/components/image.translate.html) 。 [!DNL Dynamic Media] 不支援影像。
+* **影像格式**:Image元件支 [持的格式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 。 [!DNL Dynamic Media] 不支援影像。
 * **檔案格式**:請參閱支 [援的檔案格式](file-format-support.md#document-formats)。
 
 ### 相關使用者和群組 {#users-and-groups-involved}
@@ -193,8 +193,8 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 要排除常見錯誤情形的故障，請執行以下步驟：
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
+* If you are unable to search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * 從遠端Dam擷取的資產可能因一個或多個原因無法發佈在網頁上。 它不存在於遠程伺服器上，缺少獲取它的適當權限，或者網路故障可能是原因。 確保資產未從遠端DAM移除。 請確定已有適當的權限，並符合先決條件。 重新嘗試將資產新增至頁面並重新發佈。 檢查[非同步工作清單](/help/operations/asynchronous-jobs.md)，找出資產擷取作業的錯誤。
-* 如果您無法從本機部署存取遠端DAM [!DNL Sites] 部署，請確定允許跨網站Cookie。 如果跨網站Cookie遭到封鎖，則兩個部署的 [!DNL Experience Manager] 可能無法驗證。 例如，在 [!DNL Google Chrome] Incognito模式下，可能會阻止第三方Cookie。 若要允許瀏覽器 [!DNL Chrome] 中的Cookie，請按一下位址列中的「眼睛」圖示，導覽至「網站無法運作>已封鎖」，選取「遠端DAM URL」，並允許登入Token Cookie。 或者，請參閱 [如何啟用協力廠商Cookie的說明](https://support.google.com/chrome/answer/95647)。
+* 如果您無法從本機部署存取遠端DAM部 [!DNL Sites] 署，請確定允許跨網站Cookie。 如果跨網站Cookie遭到封鎖，則兩個部署的 [!DNL Experience Manager] 可能無法驗證。 例如，在 [!DNL Google Chrome] Incognito模式下，可能會阻止第三方Cookie。 若要允許瀏覽器 [!DNL Chrome] 中的Cookie，請按一下位址列中的「眼睛」圖示，導覽至「網站無法運作>已封鎖」，選取「遠端DAM URL」，並允許登入Token Cookie。 或者，請參閱 [如何啟用協力廠商Cookie的說明](https://support.google.com/chrome/answer/95647)。
 
    ![Chrome在Incognito模式中發生Cookie錯誤](assets/chrome-cookies-incognito-dialog.png)
