@@ -3,9 +3,9 @@ title: 使用AI產生的標籤自動標籤影像
 description: 使用人工智慧型服務來標籤影像，使用服務套用情境式和描述性的 [!DNL Adobe Sensei] 商業標籤。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2432'
 ht-degree: 6%
 
 ---
@@ -205,7 +205,7 @@ Experience Manager可自動標籤使用者上傳至DAM的資產。 為此，管�
 
 * 無法辨識影像的細微差異。 例如，修身與普通襯衫。
 * 無法根據影像的微小圖樣／部分來識別標籤。 例如，T恤上的標誌。
-* 在支援AEM的地區設定中支援標籤。 如需語言清單，請參閱智慧標 [簽版本注意事項](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)。
+* Experience Manager支援的語言支援標籤。 如需語言清單，請參閱智慧型 [內容服務版本注意事項](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)。
 
 若要使用智慧型標籤（一般或增強功能）搜尋資產，請使用資產搜尋（全文搜尋）。 智慧型標籤沒有個別的搜尋述詞。
 
