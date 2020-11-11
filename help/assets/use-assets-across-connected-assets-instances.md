@@ -3,9 +3,9 @@ title: 使用「連線資產」在 中共用 DAM 資產 [!DNL Sites]
 description: 使用遠程部署中可用 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 的資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 0fb84bb88e42f92e335460edca5041a0878f9dca
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2228'
 ht-degree: 41%
 
 ---
@@ -28,7 +28,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 使用或設定此功能之前，請先確定下列事項：
 
 * 使用者是每個部署中適當使用者群組的一部分。
-* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. 如需詳細資訊， [!DNL Experience Manager] 請參閱Experience Manager 6.5 [Assets中的「連線資產」功能](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)。
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. 如需此功能在 [!DNL Experience Manager] 6.5中運作的詳細資訊，請參 [閱Experience Manager 6.5資](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)產中的連線資產。
 
    |  | [!DNL Sites] 雲端服務 | [!DNL Experience Manager] 6.5 [!DNL Sites] on AMS. | [!DNL Experience Manager] 6.5內 [!DNL Sites] 部部署 |
    |---|---|---|---|
