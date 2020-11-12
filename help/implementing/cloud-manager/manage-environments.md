@@ -2,7 +2,7 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 6%
@@ -139,7 +139,7 @@ Adobe會自動管理Stage和生產環境的更新。
 
 ## 本機登入 {#login-locally}
 
-從「 **環境卡****** 」的下拉式選單選擇「本機登入」，以本機登入Adobe Experience Manager
+從「 **環境卡****** 」的下拉式選單選擇「本機登入」，以本機登入Adobe Experience Manager。
 
 ![](assets/environ-login-locally.png)
 
