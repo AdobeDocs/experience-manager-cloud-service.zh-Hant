@@ -2,7 +2,7 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
+source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 70%
@@ -34,9 +34,9 @@ ht-degree: 70%
 
 * 在完成內容傳輸程式的 *Extraction* phase以及開始 *Ing Phase* ，將內容以Cloud ServiceStageOr ******** ProductionInstances的形式傳入您的AEM之前，您需要記錄支援票證，以便Adobe將您的意向通知執行Adobe，以確保在Adobe Inging期間不會發生內容的CloudStageStStageSt問題處理。 您必須在計畫的接收日期前1週記錄支 *持票* 。 一旦您提交了支援票證，支援團隊將提供後續步驟的指導。
    * 使用下列詳細資訊記錄支援票證：
-   1. 您計劃開始擷取階段時，確切的日期和估計時間(與您的時 *區* )。
-   2. 您打算將資料收錄到的環境類型（「舞台」或「生產」）。
-   3. 程式ID
+      * 您計劃開始擷取階段時，確切的日期和估計時間(與您的時 *區* )。
+      * 您打算將資料收錄到的環境類型（「舞台」或「生產」）。
+      * 程式ID。
 
 * 製作的&#x200B;*擷取階段*&#x200B;將縮小整個製作部署。這表示在整段擷取程序中，將無法使用製作 AEM。此外，請確保在您運行接收階段時不執行Cloud Manager管 *道* 。
 
