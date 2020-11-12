@@ -1,18 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 版發行說明。'
-description: '[!DNL Adobe Experience Manager] 作為2020.10.0的雲端服務發行說明。'
+title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: d8cb22a5597e95bf4c74233b48553bb67bca09cb
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 20%
+source-wordcount: '785'
+ht-degree: 4%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 版發行說明 {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service.
 
 ## 發行日期 {#release-date}
 
@@ -60,37 +60,25 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 * CIF雲端設定UI針對/lib和/apps/中的設定顯示「儲存並關閉」按鈕。 但這些是唯讀的，因此UI已修正為只顯示「關閉」按鈕。
 
+
 ## Cloud Manager {#cloud-manager}
 
-* 「環境」頁面已重新設計。
+### 發行日期 {#release-date-cm}
 
-* 休眠環境現在會在 Cloud Manager 休眠時顯示分離狀態。
+AEM中Cloud Manager作為雲端服務2020.11.0的發行日期為2020年11月12日。
 
-* Cloud Manager組建容器現在支援使用Java 8或Java 11編譯專案。 Maven工具鏈系統提供對Java 11的支援。
+### 新功能 {#what-is-new}
 
-* 每個環境的環境變數數量提高至 200 個。
+* 現在，用戶可從「環 **** 境」卡和「環境摘要」頁面上的「環境」菜單選項中獲得新的菜單選項「本地登錄」。
 
-* 「概述」頁面上的「環境」卡現在最多可列出三個環境。 用戶可以選擇「顯 **示全部** 」按鈕，以導航至「環境」摘要頁，以查看包含完整環境清單的表。
-有關詳細 [資訊，請參閱](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 「查看環境」。
+* Cloud Manager中 **的** 「學習」索引標籤已在UI中以新影像重新整理。
 
 ### 錯誤修正 {#bug-fixes-cloud-manager}
 
-* 環境完全建立前，從 Cloud Manager 到開發人員控制台的連結未正確啟用。
-
-* 直接從 Cloud Manager 連結至開發人員控制台時，系統未顯示將沙箱方案的環境解除休眠/休眠的選項。
-
-* 「非生產管線編輯」(Non-Production Pipeline Edit)頁面上的「取消」(Cancel)和「保存」(Save)按鈕不一律可見。
-
-* 程式碼品質處理程序的某些失敗作業可能導致系統無法正確產生記錄檔。
-
-* 建立新方案時，建議的名稱有時會傳回重複的現有方案名稱。
-
-* 部分大型管道步驟記錄檔無法透過使用者介面穩定下載。
-
-* 環境名稱驗證發生差一錯誤。
-
-* 環境頁面有時會在未顯示任何內容的情況下，顯示發佈和發送器區段。
-
+* 在建立執行前載入的相依性需要下載Maven外掛程式。
+* 從Cloud Manager頁尾選取語言的連結現在會導覽至正確的位置。
+* 有時在程式碼掃描期間，SonarQube程式不會啟動。 現在會自動偵測到此問題，並嘗試重新啟動。
+* 所有現有的生產管道都會透過體驗稽核步驟自動啟用。
 
 ## Adobe Experience Manager as a Cloud Service 基礎 {#cloud-service-foundation}
 
