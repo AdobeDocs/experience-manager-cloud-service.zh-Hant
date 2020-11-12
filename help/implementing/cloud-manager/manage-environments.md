@@ -2,7 +2,7 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
+source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 6%
@@ -86,13 +86,13 @@ Adobe會自動管理Stage和生產環境的更新。
 
 開發環境的更新由方案的使用者管理。 當環境未執行最新公開可用的AEM版本時，「首頁畫面」上「環境卡」的狀態會顯示「 **UPDATE AVAILABLE」**。
 
-![](assets/update-environ-1.png)
+![](assets/environ-update.png)
 
 
 「 **Environments** Card」(環境卡 **)中提供「Update** 」（更新）選項。
 如果您按一下「環境」資訊卡上的「 **詳細資訊** 」，也 **可使用此選項** 。 「環 **境** 」(Environments)頁面隨即開啟，當您選取「開發環境」(Development environment)後，請按一下 **...** 並選擇 **更新**，如下圖所示：
 
-![](assets/environments-screen-update.png)
+![](assets/environ-update2.png)
 
 選擇此選項將允許部署管理器將與此環境關聯的管線更新為最新版本，然後執行管線。
 
@@ -108,7 +108,7 @@ Adobe會自動管理Stage和生產環境的更新。
 
 如果您從「環境」資訊卡按一下「詳細資 **訊** 」，也可使 **用刪除選項** 。 「環 **境** 」(Environments)頁面隨即開啟，當您選取「開發環境」(Development environment)後，請按一下 **...** 並選 **擇刪除**，如下圖所示：
 
-![](assets/environ-delete-2.png)
+![](assets/environ-delete2.png)
 
 
 >[!NOTE]
@@ -121,7 +121,7 @@ Adobe會自動管理Stage和生產環境的更新。
 
 如需詳細 [資訊，請參閱「管理作者實例的存取權](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) 」。
 
-![](assets/environ-manage-access.png)
+![](assets/environ-access.png)
 
 
 ## 存取Developer Console {#accessing-developer-console}
@@ -133,7 +133,7 @@ Adobe會自動管理Stage和生產環境的更新。
 如需詳細 [資訊，請參閱「休眠與去休眠沙盒環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) 」。
 
 
-![](assets/environ-dev-console.png)
+![](assets/environ-devconsole.png)
 
 如果您按一下「環境」資訊卡上的「 **詳細資訊** 」，也 **可使用此選項** 。 「環 **境** 」(Environments)頁面隨即開啟，當您選擇環境後，按一下 **...** 並選取「開 **發人員主控台」**。
 
