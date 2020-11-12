@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service 入門
 breadcrumb-title: 入門指南
 user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '244'
 ht-degree: 90%
 
 ---
@@ -44,7 +44,8 @@ ht-degree: 90%
       + [設定專案](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [瞭解構建環境](getting-access-to-aem-in-cloud/build-environment-details.md)
    + Cloud Manager發行說明 {#release-notes-cloud-manager}
-      + [最新發行說明 (2020.10.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新發行說明 (2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [2020.10.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [2020.9.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
       + [2020.8.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
       + [2020.7.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
