@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 作為2020.10.0的雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: f0ac4b511fefa0bcde8d59c416da638941cd52ad
+source-git-commit: eb4a567e7ae2aac7260aae28e2b91b088e42f945
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 58%
+source-wordcount: '286'
+ht-degree: 55%
 
 ---
 
@@ -15,6 +15,12 @@ ht-degree: 58%
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
 ## Cloud Manager {#cloud-manager}
+
+### 發行日期 {#release-date-cm}
+
+AEM中Cloud Manager作為Cloud Service 2020.10.0的發行日期為2020年10月2日。
+
+### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * 「環境」頁面已重新設計。
 
@@ -44,4 +50,3 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 * 環境名稱驗證發生差一錯誤。
 
 * 環境頁面有時會在未顯示任何內容的情況下，顯示發佈和發送器區段。
-
