@@ -2,7 +2,7 @@
 title: 管理記錄檔——雲端服務
 description: 管理記錄檔——雲端服務
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 17%
@@ -14,9 +14,9 @@ ht-degree: 17%
 
 用戶可以使用環境卡訪問選定環境的可用日誌檔案清單。  使用者可以存取所選環境的可用記錄檔清單。
 
-這些檔案可透過UI從「概述」頁面 **下載** 。
+這些檔案可透過UI下載，可從「概述」 **頁面** :
 
-![](assets/manage-logs1.png)
+![](assets/download-logs1.png)
 
 或者，「環 **境** 」頁：
 
@@ -25,7 +25,7 @@ ht-degree: 17%
 >[!NOTE]
 >不論其開啟位置為何，都會出現相同的對話方塊，並允許下載個別記錄檔。
 
-![](assets/manage-logs3.png)
+![](assets/download-logs2.png)
 
 
 ## 透過API記錄檔 {#logs-thorugh-api}
