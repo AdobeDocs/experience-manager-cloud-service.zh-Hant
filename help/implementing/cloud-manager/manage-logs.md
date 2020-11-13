@@ -2,7 +2,7 @@
 title: 管理記錄檔——雲端服務
 description: 管理記錄檔——雲端服務
 translation-type: tm+mt
-source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
+source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 17%
@@ -28,7 +28,7 @@ ht-degree: 17%
 ![](assets/download-logs2.png)
 
 
-## 透過API記錄檔 {#logs-thorugh-api}
+## 透過API記錄檔 {#logs-through-api}
 
 除了透過UI下載記錄檔外，記錄檔也可透過API和命令列介面使用。
 
