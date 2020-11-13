@@ -4,10 +4,10 @@ user-guide-title: 轉移至 AEM as a Cloud Service
 breadcrumb-title: 移轉指南
 user-guide-description: 了解轉換至雲端服務的過程。
 translation-type: tm+mt
-source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
+source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 95%
+ht-degree: 86%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 95%
    + [執行](/help/move-to-cloud-service/execution.md)
    + [上線後](/help/move-to-cloud-service/post-go-live.md)
 + 雲端轉換工具 {#cloud-migration}
-   + Cloud Readiness Analyzer {#cloud-readiness-analyzer}
-      + [概覽](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
-      + [使用 Cloud Readiness Analyzer](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
+   + 最佳實務分析器 {#best-practices-analyzer}
+      + [概覽](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
+      + [使用最佳實踐分析器](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + 內容轉移工具 {#content-transfer-tool}
       + [概覽](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [使用內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
