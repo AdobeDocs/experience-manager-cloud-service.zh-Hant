@@ -2,7 +2,7 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 4%
@@ -69,7 +69,7 @@ AEM中Cloud Manager作為雲端服務2020.11.0的發行日期為2020年11月12�
 
 ### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* 現在，用戶可從「環 **** 境」卡和「環境摘要」頁面上的「環境」菜單選項中獲得新的菜單選項「本地登錄」。
+* 現在，「環境」 **卡和「環境** 」摘要頁上的「環境」菜單選項中，用戶可以使用新的「本地登錄 ******** 」菜單選項。
 如需詳細 [資訊，請參閱](/help/implementing/cloud-manager/manage-environments.md##login-locally) 「管理環境」。
 
 * Cloud Manager中 **的** 「學習」索引標籤已在UI中以新影像重新整理。
