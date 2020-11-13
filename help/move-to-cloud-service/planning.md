@@ -2,10 +2,10 @@
 title: 規劃階段
 description: 規劃階段
 translation-type: tm+mt
-source-git-commit: fdcad36713cdcd766d7d698a2e6c017dad1b03a0
+source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 91%
+source-wordcount: '420'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 您必須對照重大變更和過時的功能，對目前的 AEM 原始碼進行綜合評估，以便判斷轉換過程中預期的投入程度。
 
-您可以在目前的AEM版本上執行Cloud Readiness Analyzer(CRA)，以加速評估步驟。 有關詳細資訊，請參 [閱CRA概述](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html)。
+您可以在目前的AEM版本上執行「最佳實務分析器」，以加速評估步驟。 有關詳細資訊，請參 [閱Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)。
 
 >[!NOTE]
 >如果您已經能存取 Cloud Manager 和雲端服務環境，建議您在 Cloud Manager 品質管線中執行目前的程式碼，評估需針對原始碼採取哪些變更，以便與雲端服務相容。
