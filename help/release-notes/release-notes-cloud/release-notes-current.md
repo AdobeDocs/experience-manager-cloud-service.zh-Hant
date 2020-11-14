@@ -2,9 +2,9 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
+source-git-commit: 8a7dd4059a200e82b6cb385acc5dcb174aa50938
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '886'
 ht-degree: 4%
 
 ---
@@ -98,3 +98,19 @@ Follow this section to learn about what is new and the updates for [Content Tran
 ### 錯誤修正 {#ctt-bug-fixes}
 
 * 如果遷移集包含具有部分相似檔案名的路徑，則內容傳輸工具正在跳過內容檔案。 這個問題已經修正。
+
+## 最佳實務分析器 {#best-practices-analyzer}
+
+### 發行日期 {#release-date-bpa}
+
+最佳做法分析器的發行日期是2020年11月13日。
+
+### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+
+* Cloud Readiness Analyzer現在是最佳做法分析器(BPA)。 BPA提供您目前AEM實作的最佳實務評估，並協助評估從現有AEM例項移至AEM（雲端服務）的準備程度。
+
+* 新增偵測器以偵測使用情 `java.io.InputStream`況，若在AEM中當做雲端服務使用，可能會造成問題。
+
+### 錯誤修正 {#bpa-bug-fixes}
+
+* 修正導致與textfield foundation元件相 *關的正面* (bug)錯誤。
