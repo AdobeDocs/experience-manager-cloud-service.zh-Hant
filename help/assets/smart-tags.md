@@ -3,7 +3,7 @@ title: 使用AI產生的標籤自動標籤影像
 description: 使用人工智慧型服務來標籤影像，使用服務套用情境式和描述性的 [!DNL Adobe Sensei] 商業標籤。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
 workflow-type: tm+mt
 source-wordcount: '2432'
 ht-degree: 6%
@@ -154,7 +154,7 @@ In the background, the Smart Tags uses an artificial intelligence framework of [
 1. 按一 **[!UICONTROL 下開始]**。 工作流程會將您的標籤套用在資產上。 導覽至資產資料夾並檢閱標籤，以確認您的資產是否已正確標籤。 如需詳細資訊，請參 [閱「管理智慧標籤](#manage-smart-tags-and-searches)」。
 
 >[!NOTE]
-
+>
 >在後續的標籤週期中，只有修改過的資產會再次使用新訓練過的標籤進行標籤。但是，如果標籤工作流程的最後一個標籤週期與目前標籤週期之間的間隔超過24小時，則甚至會標籤未更改的資產。 對於定期標籤工作流程，未變更的資產會在時間間隔超過6個月時加以標籤。
 
 ### 標籤上傳的資產 {#tag-uploaded-assets}
