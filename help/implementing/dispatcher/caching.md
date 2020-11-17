@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+source-git-commit: 0d01dc2cfed88a1b610a929d26ff4b144626a0e3
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1483'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,16 @@ ht-degree: 1%
 ```
 <LocationMatch "\.(html)$">
         Header set Cache-Control "max-age=200"
+        Header set Age 0
+</LocationMatch>
+```
+
+設定全域快取控制標題或符合寬規則運算式的標題時，請格外小心，以免套用至您可能想要保持私密的內容。 請考慮使用多個指令，以確保以更精細的方式套用規則。 如此一來，如果AEM偵測到快取標題已套用至Dispatcher偵測到的可由Dispatcher執行的功能，則AEM作為Cloud Service將會移除該快取標題，如Dispatcher檔案所述。 為了強制AEM一律套用快取，您可以新增「always」選項，如下所示：
+
+```
+<LocationMatch "\.(html)$">
+        Header always set Cache-Control "max-age=200"
+        Header set Age 0
 </LocationMatch>
 ```
 
@@ -41,7 +51,7 @@ ht-degree: 1%
 * 若要防止快取特定內容，請將「快取控制」標題設為「私用」。 例如，下列項目會防止快取名為&quot;myfolder&quot;的目錄下的html內容：
 
 ```
-<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+<LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
     Header set Cache-Control “private”
 </LocationMatch>
 ```
@@ -59,10 +69,13 @@ ht-degree: 1%
 * 可以通過以下apache指令在更精細的級別上 `mod_headers` 設定：
 
 ```
-<LocationMatch "^.*.jpeg$">
+<LocationMatch "^\.*.(jpeg|jpg)$">
     Header set Cache-Control "max-age=222"
+    Header set Age 0
 </LocationMatch>
 ```
+
+請參閱上述html/text區段中的討論，以注意不要過度快取，以及如何強制AEM一律以「always」選項套用快取。
 
 必須確保src/conf.dispatcher.d/cache下的檔案具有以下規則（預設配置中）:
 
