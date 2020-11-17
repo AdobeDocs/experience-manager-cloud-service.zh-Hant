@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 translation-type: tm+mt
-source-git-commit: 0d01dc2cfed88a1b610a929d26ff4b144626a0e3
+source-git-commit: 79e1c15e8a92589cffaff18252e066a892c929b6
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1481'
 ht-degree: 1%
 
 ---
@@ -25,12 +25,12 @@ ht-degree: 1%
 * 可以覆寫所有HTML/Text內容，方法是在使用AEM `EXPIRATION_TIME` 做 `global.vars` 為Cloud Service SDK Dispatcher工具中定義變數。
 * 可以由以下apache mod_headers指令在更精細的級別上覆蓋：
 
-```
-<LocationMatch "\.(html)$">
+   ```
+   <LocationMatch "\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
-</LocationMatch>
-```
+   </LocationMatch>
+   ```
 
 設定全域快取控制標題或符合寬規則運算式的標題時，請格外小心，以免套用至您可能想要保持私密的內容。 請考慮使用多個指令，以確保以更精細的方式套用規則。 如此一來，如果AEM偵測到快取標題已套用至Dispatcher偵測到的可由Dispatcher執行的功能，則AEM作為Cloud Service將會移除該快取標題，如Dispatcher檔案所述。 為了強制AEM一律套用快取，您可以新增「always」選項，如下所示：
 
@@ -48,15 +48,16 @@ ht-degree: 1%
 { /glob "*" /type "allow" }
 ```
 
-* 若要防止快取特定內容，請將「快取控制」標題設為「私用」。 例如，下列項目會防止快取名為&quot;myfolder&quot;的目錄下的html內容：
+* 為防止特定內容被快取，請將「快取控制」標題設為 *私用*。 例如，下列項目會防止快取名為 **myfolder的目錄下的html內** 容：
 
-```
-<LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
-    Header set Cache-Control “private”
-</LocationMatch>
-```
+   ```
+      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      Header set Cache-Control “private”
+     </LocationMatch>
+   ```
 
-* 請注意，其他方法(包括 [dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))將無法成功覆寫值。
+   >[!NOTE]
+   >其他方法(包括 [dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))將無法成功覆寫值。
 
 ### 用戶端程式庫(js,css) {#client-side-libraries}
 
@@ -68,12 +69,12 @@ ht-degree: 1%
 * 依預設，未快取
 * 可以通過以下apache指令在更精細的級別上 `mod_headers` 設定：
 
-```
-<LocationMatch "^\.*.(jpeg|jpg)$">
-    Header set Cache-Control "max-age=222"
-    Header set Age 0
-</LocationMatch>
-```
+   ```
+      <LocationMatch "^\.*.(jpeg|jpg)$">
+        Header set Cache-Control "max-age=222"
+        Header set Age 0
+      </LocationMatch>
+   ```
 
 請參閱上述html/text區段中的討論，以注意不要過度快取，以及如何強制AEM一律以「always」選項套用快取。
 
@@ -86,7 +87,8 @@ ht-degree: 1%
 
 請確定要保留為私密而非快取的資產不屬於LocationMatch指令篩選器。
 
-* 請注意，其他方法(包括 [dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))將無法成功覆寫值。
+>[!NOTE]
+>其他方法(包括 [dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))將無法成功覆寫值。
 
 ### 節點儲存中的其他內容檔案類型 {#other-content}
 
