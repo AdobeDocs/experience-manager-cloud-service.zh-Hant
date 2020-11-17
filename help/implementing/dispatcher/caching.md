@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 translation-type: tm+mt
-source-git-commit: 79e1c15e8a92589cffaff18252e066a892c929b6
+source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1479'
 ht-degree: 1%
 
 ---
@@ -32,21 +32,21 @@ ht-degree: 1%
    </LocationMatch>
    ```
 
-設定全域快取控制標題或符合寬規則運算式的標題時，請格外小心，以免套用至您可能想要保持私密的內容。 請考慮使用多個指令，以確保以更精細的方式套用規則。 如此一來，如果AEM偵測到快取標題已套用至Dispatcher偵測到的可由Dispatcher執行的功能，則AEM作為Cloud Service將會移除該快取標題，如Dispatcher檔案所述。 為了強制AEM一律套用快取，您可以新增「always」選項，如下所示：
+   設定全域快取控制標題或符合寬規則運算式的標題時，請格外小心，以免套用至您可能想要保持私密的內容。 請考慮使用多個指令，以確保以更精細的方式套用規則。 如此一來，如果AEM偵測到快取標題已套用至Dispatcher偵測到的可由Dispatcher執行的功能，則AEM作為Cloud Service將會移除該快取標題，如Dispatcher檔案所述。 為了強制AEM一律套用快取，您可以新增「always」選項，如下所示：
 
-```
-<LocationMatch "\.(html)$">
+   ```
+   <LocationMatch "\.(html)$">
         Header always set Cache-Control "max-age=200"
         Header set Age 0
-</LocationMatch>
-```
+   </LocationMatch>
+   ```
 
-您必須確保檔案下 `src/conf.dispatcher.d/cache` 有以下規則（預設配置中）:
+   您必須確保檔案下 `src/conf.dispatcher.d/cache` 有以下規則（預設配置中）:
 
-```
-/0000
-{ /glob "*" /type "allow" }
-```
+   ```
+   /0000
+   { /glob "*" /type "allow" }
+   ```
 
 * 為防止特定內容被快取，請將「快取控制」標題設為 *私用*。 例如，下列項目會防止快取名為 **myfolder的目錄下的html內** 容：
 
@@ -76,19 +76,19 @@ ht-degree: 1%
       </LocationMatch>
    ```
 
-請參閱上述html/text區段中的討論，以注意不要過度快取，以及如何強制AEM一律以「always」選項套用快取。
+   請參閱上述html/text區段中的討論，以注意不要過度快取，以及如何強制AEM一律以「always」選項套用快取。
 
-必須確保src/conf.dispatcher.d/cache下的檔案具有以下規則（預設配置中）:
+   必須確保快取下的文 `src/conf.dispatcher.d/`件具有以下規則（預設配置中）:
 
-```
-/0000
-{ /glob "*" /type "allow" }
-```
+   ```
+   /0000
+   { /glob "*" /type "allow" }
+   ```
 
-請確定要保留為私密而非快取的資產不屬於LocationMatch指令篩選器。
+   請確定要保留為私密而非快取的資產不屬於LocationMatch指令篩選器。
 
->[!NOTE]
->其他方法(包括 [dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))將無法成功覆寫值。
+   >[!NOTE]
+   >其他方法(包括 [dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))將無法成功覆寫值。
 
 ### 節點儲存中的其他內容檔案類型 {#other-content}
 
