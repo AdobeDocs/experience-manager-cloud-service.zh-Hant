@@ -2,7 +2,7 @@
 title: 沙盒程式——雲端服務
 description: 沙盒程式——雲端服務
 translation-type: tm+mt
-source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
+source-git-commit: 8383dc023b35cf76f7dc0e41cedef8cfab7753aa
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 具備必要權限的使用者可以刪除開發或生產／階段環境或集。
 
-要刪除環境，請參閱刪除 [環境](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) ，以瞭解詳細資訊。
+要刪除環境，請參閱刪 [除環境](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) ，以瞭解詳細資訊。
 
 
 ## 冬眠和冬眠沙盒環境 {#hibernating-introduction}
@@ -176,7 +176,7 @@ ht-degree: 0%
 
 ## AEM沙盒環境更新 {#aem-updates-sandbox}
 
-請參閱 [AEM版本更新](/help/implementing/deploying/overview.md#version-updates) ，以取得詳細資訊。
+請參閱 [AEM版本更新](/help/implementing/deploying/aem-version-updates.md) ，以取得詳細資訊。
 
 使用者可以手動將AEM更新套用至沙盒程式中的環境。
 
