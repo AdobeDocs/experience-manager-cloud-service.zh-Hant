@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service SDK
 description: AEM雲端服務軟體開發套件概觀
 translation-type: tm+mt
-source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
+source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1181'
 ht-degree: 1%
 
 ---
@@ -23,6 +23,17 @@ AEM as a Cloud Service SDK由下列物件組成：
 
 * **6.5已過時的Java API Jar** —— 自AEM 6.5以來已移除的另一組介面
 * **6.5不建議使用的Javadoc Jar** —— 用於其他介面集的Javadoc
+
+## 建立SDK {#building-for-the-sdk}
+
+AEM(Cloud Service SDK)用於建立和部署自訂程式碼。 如需詳細資訊，請參 [考AEM Project Archetype檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en)。 從高度來看，將執行以下步驟：
+
+* **編譯代碼**。 如預期，會編譯原始碼，並產生產生的內容封裝
+* **建立工件**。 在此過程中將生成對象
+* **分析組合**。 使用Maven分析器外掛程式來分析Bundles，它會尋找Maven專案中的問題，例如缺少相依性
+* **部署對象**。 對象將部署到本地伺服器。
+
+部署至雲端環境時，Cloud Manager會執行相同的步驟。 在本端執行建置可讓開發人員進行本端開發和測試，讓開發人員在提交至原始碼控制並觸發Cloud Manager部署之前，能夠更有效率地發現程式碼或結構性問題，而Cloud Manager部署可能需要更長的時間。
 
 ## 以雲端服務SDK形式存取AEM {#accessing-the-aem-as-a-cloud-service-sdk}
 
