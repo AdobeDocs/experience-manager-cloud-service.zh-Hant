@@ -2,9 +2,9 @@
 title: 沙盒程式——雲端服務
 description: 沙盒程式——雲端服務
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1184'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 沙盒程式包括「網站」和「資產」，並自動填入Git儲存庫、開發環境和非生產管道。  Git儲存庫會填入以AEM Project原型為基礎的範例專案。
 
-請參閱了 [解方案和方案類型](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) ，以進一步瞭解方案類型。
+請參閱了 [解方案和方案類型](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) ，以進一步瞭解方案類型。
 
 ### 沙盒程式的屬性 {#attributes-sandbox}
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 程式建立精靈可讓您建立沙盒程式。
 
-若要瞭解如何建立沙盒程式，請參閱「建立沙 [盒程式」](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) ，以取得詳細資訊。
+若要瞭解如何建立沙盒程式，請參閱「建立沙 [盒程式」](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) ，以取得詳細資訊。
 
 ### 建立沙盒環境 {#creating-sandbox-environments}
 
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 當使用者準備好設定生產管線時，可手動將生產階段環境集新增至沙盒程式。
 
-要瞭解如何手動建立環境，請參閱添加環 [境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) ，以瞭解詳細資訊。
+要瞭解如何手動建立環境，請參閱添加環 [境](/help/implementing/cloud-manager/manage-environments.md) ，以瞭解詳細資訊。
 
 ### 刪除沙盒環境 {#deleting-sandbox-environments}
 
 具備必要權限的使用者可以刪除開發或生產／階段環境或集。
 
-要刪除環境，請參閱刪除 [環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#deleting-environment) ，以瞭解詳細資訊。
+要刪除環境，請參閱刪除 [環境](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) ，以瞭解詳細資訊。
 
 
 ## 冬眠和冬眠沙盒環境 {#hibernating-introduction}
@@ -93,7 +93,7 @@ ht-degree: 0%
 請依照下列步驟，手動讓沙盒程式環境休眠：
 
 1. 導覽至「開 **發人員主控台」**。
-請參閱 [存取Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，瞭解如何從「環境」卡存取 **Developer Console****** 。
+請參閱 [存取Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) ，瞭解如何從「環境」卡存取 **Developer Console****** 。
    >[!IMPORTANT]
    >直接從Cloud Manager連 **結至Developer Console** ，您將無法選擇讓沙盒程式環境休眠。 因應措施是在Developer Console上加一次，在url `#release-cm-p1234-e5678 where 1234` 1234的結尾加上下列模式：您的 *Program ID* ，而5678是您的 *Environment ID*。
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 ### 解除休眠 {#de-hibernation-introduction}
 
 1. 導覽至「開 **發人員主控台」**。
-請參閱 [存取Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) ，瞭解如何從「環境」卡存取 **Developer Console****** 。
+請參閱 [存取Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) ，瞭解如何從「環境」卡存取 **Developer Console****** 。
 
    >[!IMPORTANT]
    >直接從Cloud Manager連 **結至Developer Console** ，您將無法選擇解除沙盒程式環境的休眠。 因應措施是在Developer Console上加一次，在url `#release-cm-p1234-e5678 where 1234` 1234的結尾加上下列模式：您的 *Program ID* ，而5678是您的 *Environment ID*。
@@ -157,8 +157,6 @@ ht-degree: 0%
 
 任何擁有產品設定檔的使用者，只要能以雲端服務的身分存取AEM，就應能存取 **Developer Console**，讓他們解除環境的休眠。
 
-請參 [閱Cloud Manager中的「新增使用者和角色](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) 」，以設定使用者權限。
-
 #### 訪問休眠環境 {#accessing-hibernated-environment}
 
 當針對休眠環境的作者或發佈層提出任何瀏覽器請求時，使用者會遇到一個說明該環境休眠狀態的登陸頁面，如下圖所示：
@@ -178,11 +176,11 @@ ht-degree: 0%
 
 ## AEM沙盒環境更新 {#aem-updates-sandbox}
 
-請參閱 [AEM版本更新](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) ，以取得詳細資訊。
+請參閱 [AEM版本更新](/help/implementing/deploying/overview.md#version-updates) ，以取得詳細資訊。
 
 使用者可以手動將AEM更新套用至沙盒程式中的環境。
 
-請參閱 [更新環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) ，瞭解如何更新環境。
+請參閱 [更新環境](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) ，瞭解如何更新環境。
 
 >[!NOTE]
 >* 手動更新只能在目標環境具有正確配置的管線時運行。
