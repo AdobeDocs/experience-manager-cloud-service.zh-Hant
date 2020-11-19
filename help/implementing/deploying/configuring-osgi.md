@@ -2,9 +2,9 @@
 title: 為 AEM as a Cloud Service 設定 OSGi
 description: '具有機密值和環境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: 024518cca45463afb5cbb4c9cd66bf1cd2a7c210
+source-git-commit: 0a2d44a63c3d26460c0836ab6b28989a0aad72da
 workflow-type: tm+mt
-source-wordcount: '2691'
+source-wordcount: '2737'
 ht-degree: 1%
 
 ---
@@ -435,6 +435,11 @@ config.dev
 </table>
 
 ## 設定屬性的Cloud Manager API格式 {#cloud-manager-api-format-for-setting-properties}
+
+請參 [閱本頁](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) ，瞭解如何設定API。
+>[!NOTE]
+>
+>請確定已使用的Cloud Manager API已指派角色「部署管理員——雲端服務」。 其他角色無法執行以下所有命令。
 
 ### 透過API設定值 {#setting-values-via-api}
 
