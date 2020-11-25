@@ -3,17 +3,17 @@ product: adobe experience manager
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.zh-Hant
 index: y
 type: Documentation
-solution-title: Adobe Experience Manager 雲端服務
-solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html
+solution-title: 'Adobe Experience Manager as a Cloud Service '
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html
 getting-started-title: 快速入門
-getting-started-url: https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/overview/home.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html
 tutorials-title: 教學課程
-tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 20%
+source-wordcount: '110'
+ht-degree: 10%
 
 ---
 
@@ -52,5 +52,3 @@ ToCs
 * `title`
 * `description`
 * `contentOwner` (僅限核心資產內容於 `/help/assets`)
-
-有關中繼資料的其他資訊，請參閱內 [部製作指南。](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)
