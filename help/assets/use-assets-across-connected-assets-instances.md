@@ -3,10 +3,10 @@ title: 使用「連線資產」在 中共用 DAM 資產 [!DNL Sites]
 description: 使用遠程部署中可用 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 的資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0fb84bb88e42f92e335460edca5041a0878f9dca
+source-git-commit: 79c8b5e038a58821b76da665f9342214312008e8
 workflow-type: tm+mt
-source-wordcount: '2228'
-ht-degree: 41%
+source-wordcount: '2244'
+ht-degree: 40%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 41%
 
 ## 連線資產概觀 {#overview-of-connected-assets}
 
-When editing pages in [!UICONTROL Page Editor], the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment. 管理員會建立部署的一次性整合， [!DNL Sites] 並使用不同的（遠端）部署 [!DNL Assets]。
+在頁面編輯器中編輯頁 [!UICONTROL 面作為目標目的地時] ，作者可以順暢地搜尋、瀏覽及內嵌來自不同部署的資產，而不同部 [!DNL Assets] 署的資產則充當資產來源。 管理員可建立一次性整合功能與功能的部 [!DNL Experience Manager] 署 [!DNL Sites] 與功能的另一 [!DNL Experience Manager] 部署 [!DNL Assets] 。
 
 For the [!DNL Sites] authors, the remote assets are available as read-only local assets. 此功能可支援順暢的搜尋作業，並允許一次使用數個遠端資產。To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk.
 
@@ -154,7 +154,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 >[!CAUTION]
 >
->Once used in a web page, the fetched remote assets are searchable and usable by anyone who has permissions to access the local folder. The fetched assets are stored (`connectedassets` in the above walk-through). 這些資產也可供搜尋，並可透過[!UICONTROL 「內容尋找器」]顯示於本機存放庫。
+>一旦在網頁中使用，擷取的遠端資產就可供任何有權存取本機資料夾的人搜尋及使用。 擷取的資產會儲存在本機資料夾中(`connectedassets` 位於上述的逐步連結中)。 這些資產也可供搜尋，並可透過[!UICONTROL 「內容尋找器」]顯示於本機存放庫。
 
 擷取的資產可設為其他任何本機資產以供使用，只是相關聯的中繼資料無法編輯。
 
