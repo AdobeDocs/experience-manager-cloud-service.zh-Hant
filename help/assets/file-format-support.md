@@ -3,9 +3,9 @@ title: 支援的檔案格式和MIME類型
 description: 雲端服務支援的檔 [!DNL Experience Manager Assets] 案格式和MIME類型。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bafcf005a2264b96caa3d59c478aa57fb38b2a4c
+source-git-commit: a2d858e1cddc67d07dd26dc40663cb4ed2197b02
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '789'
 ht-degree: 8%
 
 ---
@@ -61,6 +61,10 @@ ht-degree: 8%
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
+| SVG | ✓ | - | ✓ | ✓ |
+| SGI | ✓ | ✓ | ✓ | ✓ |
+| RGB | ✓ | ✓ | ✓ | ✓ |
+| RGBA | ✓ | ✓ | ✓ | ✓ |
 
 ## 影像格式 [!DNL Dynamic Media] {#image-support-dynamic-media}
 
@@ -191,7 +195,7 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/a
 | QT | ✓ | - | ✓ |
 | R3D | ✓ | - | ✓ |
 | SWF | ✓ | - | ✓ |
-| WEBM | ✓ | - | ✓ |
+| WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
 ## 轉碼中的視 [!DNL Dynamic Media] 訊格式 {#video-dynamic-media-transcoding}
