@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service 實作
 breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 translation-type: tm+mt
-source-git-commit: 1cbc54fb7de0ba9c1c92cdcbe64f02a9e767c3b7
+source-git-commit: ce55065c3ae6a2350ed06811af76477df7c11291
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 62%
+source-wordcount: '436'
+ht-degree: 60%
 
 ---
 
@@ -48,6 +48,9 @@ ht-degree: 62%
    + [頁面差異](/help/implementing/developing/introduction/page-diff.md)
    + [編輯器限制](/help/implementing/developing/introduction/editor-limitations.md)
    + [命名慣例](/help/implementing/developing/introduction/naming-conventions.md)
+   + [AEM標籤架構](/help/implementing/developing/introduction/tagging-framework.md)
+   + [建立標籤至AEM應用程式](/help/implementing/developing/introduction/tagging-applications.md)
+   + [AEM技術基礎](/help/implementing/developing/introduction/aem-technologies.md)
 + 開發人員工具 {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
