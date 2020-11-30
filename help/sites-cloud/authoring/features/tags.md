@@ -2,7 +2,7 @@
 title: 使用標記
 description: 標籤是快速且簡單的網站內容分類方法
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 96bde8b7f169256b352c1663f902b874afd6a73b
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 標籤是快速且簡單的網站內容分類方法。 標籤可視為可附加至頁面、資產或其他內容的關鍵字或標籤，以便搜尋以尋找該內容及相關內容。
 
 * 如需建立和管理標籤以及已套用內容標籤的詳細資訊，請參閱管理標籤。 <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* 如需標籤框架以及在自訂應用程式中包含和擴充標籤的詳細資訊，請參閱為開發人員標籤。 <!-- See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.-->
+* 如需 [標籤架構的相關資訊](/help/implementing/developing/introduction/tagging-framework.md) ，請參閱為開發人員標籤，以及在自訂應用程式中包含和擴充標籤。
 
 ## 使用標籤的十個理由 {#ten-reasons-to-use-tagging}
 
