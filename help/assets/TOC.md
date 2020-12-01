@@ -5,10 +5,10 @@ breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 302830f46f5a0cedcb717b4ab2e2d95f1c9904d4
+source-git-commit: 6dea6ac6cdadfe64ad47d492ea502fe3babd155d
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 77%
+source-wordcount: '471'
+ht-degree: 72%
 
 ---
 
@@ -55,6 +55,8 @@ ht-degree: 77%
    + [搜尋 Facet](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
    + [資產HTTP API中的內容片段支援](content-fragments/assets-api-content-fragments.md)
+   + [內容片段的AEM GraphQL API](content-fragments/graphql-api-content-fragments.md)
+   + [含內容片段的AEM GraphQL API —— 範例內容與查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [連線資產](use-assets-across-connected-assets-instances.md)
    + [資產報表](asset-reports.md)
    + [階層式中繼資料](cascading-metadata.md)
@@ -66,13 +68,17 @@ ht-degree: 77%
    + [將資產發佈至 [!DNL Brand Portal]](publish-to-brand-portal.md)
 + 內容片段 {#content-fragments}
    + [使用內容片段](content-fragments/content-fragments.md)
+   + [使用內容片段和GraphQL進行無頭傳送](content-fragments/content-fragments-graphql.md)
    + [管理內容片段](content-fragments/content-fragments-managing.md)
+   + [為實例啟用內容片段功能](content-fragments/content-fragments-configuration-browser.md)
    + [內容片段模型](content-fragments/content-fragments-models.md)
    + [變化 - 編寫片段內容](content-fragments/content-fragments-variations.md)
    + [內容片段關聯內容](content-fragments/content-fragments-assoc-content.md)
    + [中繼資料 - 片段屬性](content-fragments/content-fragments-metadata.md)
    + [內容片段 - 刪除考量事項](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
+   + [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   + [預覽- JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
 + 動態媒體 {#dynamicmedia}
    + [Experience League 的 Dynamic Media 電子報](dynamic-media/dynamic-media-newsletter.md)
    + [建立 Dynamic Media](dynamic-media/administering-dynamic-media.md)
