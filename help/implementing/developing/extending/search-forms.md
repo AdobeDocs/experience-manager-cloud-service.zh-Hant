@@ -2,19 +2,19 @@
 title: 設定搜尋表單
 description: 將Search Forms for Adobe Experience Manager設定為雲端服務。
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: c48274f76db764e1cbad459e644d5fb4b753a086
 workflow-type: tm+mt
-source-wordcount: '2030'
-ht-degree: 15%
+source-wordcount: '2043'
+ht-degree: 16%
 
 ---
 
 
 # 設定搜尋表單 {#configuring-search-forms}
 
-Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/help/sites-cloud/authoring/getting-started/search.md) 機制。
+Adobe Experience Manager做為雲端服務，提供強大的[Search](/help/sites-cloud/authoring/getting-started/search.md)機制。
 
-此外，還有一組預先定義的選項可協助您篩選內容。 這些Facet會保留預先定義的Facet, **例如「修改日期**」、「發佈狀態 **」或「** Livecopy狀態」 **** ，以協助您快速下鑽至所需的資源。
+此外，還有一組預先定義的選項可協助您篩選內容。 這些Facet會保留預先定義的Facet，例如&#x200B;**修改日期**、**發佈狀態**&#x200B;或&#x200B;**即時副本狀態**，以協助您快速深入瞭解所需的資源。
 
 ![搜尋和篩選使用](assets/csf-usage.png)
 
@@ -22,68 +22,55 @@ Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/hel
 
 * [搜尋與篩選](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
 * [軌道選擇器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* 資產 [瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) （編輯頁面時）
+* [資產瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)（編輯頁面時）
 
 >[!NOTE]
 >
->您可以設定基礎的 [內容搜尋和索引](/help/operations/indexing.md) 服務。
+>您可以配置基礎的[內容搜索和索引](/help/operations/indexing.md)服務。
 
-使用 **搜尋表單**，您可以根據您的特定需求自訂和擴充這些面板。
+使用&#x200B;**搜尋表單**，您可以根據您的特定需求自訂和擴充這些面板。
 
-「搜 **尋表單** 」提供可結合和定義的預 [算](#predicates-and-their-settings) ，即開即用選擇。 可 [以通過以下方式訪問用於配置這些表單](#configuring-your-search-forms) 的對話框：
+**搜尋表單**&#x200B;提供可結合和定義之[謂語的現成選項。 ](#predicates-and-their-settings)可通過以下方式訪問用於配置這些表單的[對話框：](#configuring-your-search-forms)
 
 * **工具**
-
    * **一般**
-
       * **搜尋表單**
 
-## 預設表格 {#default-forms}
+## 預設表單{#default-forms}
 
-當您第一次存取 **Search Forms** Console時，您會看到所有組態都有掛鎖符號。 這表示對應的組態是預設（現成可用）組態——且無法刪除。 在您自訂並儲存後，鎖定將消失。 當您刪除自訂設 [定時](#deleting-a-configuration-to-reinstate-the-default)，系統會重新顯示它，此時會恢復預設值（和掛鎖指示器）。
+首次訪問&#x200B;**搜索表單**&#x200B;控制台時，您可以看到所有配置都具有掛鎖符號。 這表示對應的組態是預設（現成可用）組態——且無法刪除。 在您自訂並儲存後，鎖定將消失。 當您[刪除自訂組態](#deleting-a-configuration-to-reinstate-the-default)時，它會重新出現，此時將恢復預設值（和掛鎖指示器）。
 
 ![配置搜索表單概述](assets/csf-overview.png)
 
 可用的預設配置（按字母順序列出）包括：
 
-* **資產管理搜尋邊欄:**
-
-* **頁面編輯器 (文件搜尋):**
-
-* **頁面編輯器 (體驗片段搜尋):**
-
-* **頁面編輯器 (影像搜尋):**
-
-* **頁面編輯器 (手稿搜尋):**
-
-* **頁面編輯器 (頁面搜尋):**
-
-* **頁面編輯器 (段落搜尋):**
-
-* **頁面編輯器 (產品搜尋):**
-
-* **頁面編輯器 (Scene7 搜尋)**:
-
-* **頁面編輯器 (視訊搜尋)**:
-
-* **專案管理搜尋邊欄:**
-
-* **專案翻譯搜尋邊欄:**
-
-* **網站管理搜尋邊欄**:
-
-* **代碼片段管理搜尋邊欄**:
-
-* **Stock 管理搜尋邊欄**:
+* **資產管理搜尋邊欄**
+* **頁面編輯器 (文件搜尋)**
+* **頁面編輯器 (體驗片段搜尋)**
+* **頁面編輯器 (影像搜尋)**
+* **頁面編輯器 (手稿搜尋)**
+* **頁面編輯器 (頁面搜尋)**
+* **頁面編輯器 (段落搜尋)**
+* **頁面編輯器 (產品搜尋)**
+* **頁面編輯器 (Scene7 搜尋)**
+* **頁面編輯器 (視訊搜尋)**
+* **專案管理搜尋邊欄**
+* **專案翻譯搜尋邊欄**
+* **網站管理搜尋邊欄**
+* **代碼片段管理搜尋邊欄**
+* **Stock 管理搜尋邊欄**
+* **內容片段模型搜尋邊欄**
+* **專案管理搜尋邊欄**
+* **專案翻譯搜尋邊欄**
 
 >[!NOTE]
 >
->如需與資產相關的搜尋表單的詳細資訊，請參閱「 [資產——搜尋面」](/help/assets/search-facets.md)
+>如需與資產相關的搜尋表單的詳細資訊，請參閱[資產——搜尋面](/help/assets/search-facets.md)
 
 
-## 謂語及其設定 {#predicates-and-their-settings}
+## 謂語及其設定{#predicates-and-their-settings}
 
-### 謂語 {#predicates}
+### 謂語{#predicates}
 
 以下謂語可用，取決於配置：
 
@@ -149,7 +136,7 @@ Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/hel
   </tr>
   <tr>
    <td>元件</td>
-   <td>允許作者搜尋／篩選含有特定元件的頁面。 例如影像收藏館。<br /> </td>
+   <td>允許作者搜尋／篩選含有特定元件的頁面。 例如，影像圖庫。<br /> </td>
    <td>
     <ul>
      <li>預留位置</li>
@@ -270,7 +257,7 @@ Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/hel
   </tr>
   <tr>
    <td>選項</td>
-   <td><p>這些選項是用戶建立的內容節點。</p> <p>如需詳 <a href="#addinganoptionspredicate">細資訊，請參閱Adding an Options Predicate</a> 。</p> </td>
+   <td><p>這些選項是用戶建立的內容節點。</p> <p>如需詳細資訊，請參閱<a href="#addinganoptionspredicate">新增選項謂詞</a>。</p> </td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -372,7 +359,7 @@ Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/hel
   </tr>
   <tr>
    <td>評等</td>
-   <td>根據資源的平均分級搜尋資源。<br /> </td>
+   <td>根據資源的平均分級搜索資源。<br /> </td>
    <td>
     <ul>
      <li>欄位標籤</li>
@@ -494,7 +481,7 @@ Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/hel
 >常見搜索謂語定義於：
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->此資訊僅供參考，您不得變更 `/libs`。
+>此資訊僅供參考，您不得變更`/libs`。
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -503,7 +490,7 @@ Adobe Experience Manager做為雲端服務，提供功能強大的 [Search](/hel
 >
 -->
 
-### 謂詞設定 {#predicate-settings}
+### 謂詞設定{#predicate-settings}
 
 Dependent on the predicate a selection of settings are available for configuration, including:
 
@@ -521,9 +508,9 @@ Dependent on the predicate a selection of settings are available for configurati
 
 * **屬性名稱**
 
-   要搜索的屬性。 它使用相對路徑，而萬用字元 `*/*/*` 指定屬性相對於節點的深度(每個星 `jcr:content` 號代表一個節點層級)。
+   要搜索的屬性。 它使用相對路徑，通配符`*/*/*`指定屬性相對於`jcr:content`節點的深度（每個星號代表一個節點級別）。
 
-   如果只想搜索在節點上具有該屬性的資源的第一級子 `x` 節點上 `jcr:content` 使用 `*/jcr:content/x`
+   如果只想在`jcr:content`節點上具有`x`屬性的資源的第一級子節點上搜索，請使用`*/jcr:content/x`
 
 * **屬性深度**
 
@@ -531,41 +518,44 @@ Dependent on the predicate a selection of settings are available for configurati
 
 * **屬性值**
 
-   屬性值是絕對字串或運算式語言；例如， `cq:Page` 或
+   屬性值是絕對字串或運算式語言；例如，`cq:Page`或
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
 
 * **範圍文字**
 
-   日期範圍謂語中的範圍欄 **位標籤** 。
+   **日期範圍**&#x200B;謂語中範圍欄位的標籤。
 
 * **選項路徑**
 
-   用戶可以使用謂詞設定頁籤中的路徑瀏覽器來選擇路徑。 選取+圖 **示後** ，會將選取範圍新增至有效選項清單(如有需要， **** 則會移除——圖示)。
+   用戶可以使用謂詞設定頁籤中的路徑瀏覽器來選擇路徑。 在選擇&#x200B;**+**&#x200B;圖示後，會將選擇項目新增至有效選項清單（然後視需要移除&#x200B;**-**&#x200B;圖示）。
 
    這些選項是由用戶建立的內容節點，具有以下結構：
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **選項節點路徑**&#x200B;與 
+* **選項節點**
+路徑與 
 **Options Path**, only this is in the common predicate field, the other is specific for assets.
 
-* **單選選**&#x200B;項如果選中，選項將顯示為僅允許單選項的複選框。 如果錯誤選取，則可取消選取核取方塊。
+* **單選**
+項選中後，選項將顯示為僅允許單選項的複選框。如果錯誤選取，則可取消選取核取方塊。
 
-* **Publish和Live Copy屬性名稱Sites**&#x200B;特定述詞的publish和live copy核取方塊標籤。
+* **Publish和Live Copy屬性名稱Sites**
+特定述詞的publish和live copy核取方塊標籤。
 
-* &amp;ast;在「設定」標籤的欄 **位標籤上** ，表示欄位是必填欄位，如果留空，則會顯示錯誤訊息。
+* &amp;ast;在&#x200B;**Settings**&#x200B;標籤中的欄位標籤上，表示欄位是必填欄位，若保留空白，則會顯示錯誤訊息。
 
-## 設定搜尋表單 {#configuring-your-search-forms}
+## 配置搜索表單{#configuring-your-search-forms}
 
-### 建立／開啟自定義配置 {#creating-opening-a-customized-configuration}
+### 建立／開啟自定義配置{#creating-opening-a-customized-configuration}
 
-1. 導覽至「 **工具**」、「 **一般**」、「 **搜尋表格**」。
+1. 導覽至「**工具**、**一般**、**搜尋表單**」。
 
 1. 選擇要定製的配置。
-1. 使用「編 **輯** 」表徵圖開啟要更新的配置。
-1. 如果有新的自訂，您可能想要新 [增謂詞欄位，並視需要定義](#add-edit-a-predicate-field-and-define-field-settings) 設定。 如果現有自訂，您可以選取現有欄位並 [更新設定](#add-edit-a-predicate-field-and-define-field-settings)。
-1. 選擇「 **完成** 」以保存配置。 您的變更可在下次使用設定時看到。
+1. 使用&#x200B;**Edit**&#x200B;表徵圖開啟要更新的配置。
+1. 如果是新的自訂，您可能想要[新增謂詞欄位，並視需要定義設定](#add-edit-a-predicate-field-and-define-field-settings)。 如果現有的自訂功能，您可以選取現有欄位，並[更新設定](#add-edit-a-predicate-field-and-define-field-settings)。
+1. 選擇&#x200B;**Done**&#x200B;保存配置。 您的變更可在下次使用設定時看到。
 
    >[!NOTE]
    >
@@ -575,12 +565,12 @@ Dependent on the predicate a selection of settings are available for configurati
    >* `/apps/commerce/gui/content/facets/<option>`
 
 
-### 添加／編輯謂詞欄位和定義欄位設定 {#add-edit-a-predicate-field-and-define-field-settings}
+### 添加／編輯謂詞欄位和定義欄位設定{#add-edit-a-predicate-field-and-define-field-settings}
 
 您可以新增或編輯欄位，並定義／更新其設定：
 
-1. [開啟自訂的設定](#creating-opening-a-customized-configuration) ，以進行更新。
-1. 如果要添加新欄位，請開啟「選 **擇謂詞** 」頁籤，並將所需的謂詞拖動到所需位置。 例如，日 **期範圍謂語**:
+1. [開啟自訂的](#creating-opening-a-customized-configuration) 設定以進行更新。
+1. 如果要添加新欄位，請開啟&#x200B;**選擇謂詞**&#x200B;頁籤，並將所需的謂詞拖動到所需位置。 例如，**日期範圍謂詞**:
 
    ![添加謂語](assets/csf-add-predicate.png)
 
@@ -588,18 +578,18 @@ Dependent on the predicate a selection of settings are available for configurati
 
    * 您正在添加新欄位：
 
-      添加謂詞後，「 **設定** 」頁籤將開啟並顯示可定義的屬性。
+      添加謂語後，**Settings**&#x200B;頁籤將開啟並顯示可定義的屬性。
 
    * 要更新現有謂詞：
 
-      選擇謂詞欄位（在右側），然後開啟「設 **置** 」頁籤。
-   例如，「日期範圍謂詞」 **的設定**:
+      選擇謂詞欄位（在右側），然後開啟&#x200B;**Settings**&#x200B;頁籤。
+   例如，**日期範圍謂詞**&#x200B;的設定：
 
    ![修改謂語](assets/csf-modify-predicate.png)
 
-1. 視需要進行變更，然後使用「完成」 **確認**。 您的變更可在下次使用設定時看到。
+1. 視需要進行變更，並使用&#x200B;**Done**&#x200B;確認。 您的變更可在下次使用設定時看到。
 
-### 預覽搜尋設定 {#previewing-the-search-configuration}
+### 預覽搜索配置{#previewing-the-search-configuration}
 
 1. 選取「預覽」圖示：
 
@@ -609,20 +599,20 @@ Dependent on the predicate a selection of settings are available for configurati
 
    ![預覽表格](assets/csf-preview-form.png)
 
-1. **關閉** 「預覽」以返回並完成配置。
+1. **關** 閉預覽以返回並完成配置。
 
-### 刪除謂詞欄位 {#deleting-a-predicate-field}
+### 刪除謂詞欄位{#deleting-a-predicate-field}
 
-1. [開啟自訂的設定](#creating-opening-a-customized-configuration) ，以進行更新。
-1. 選擇謂詞欄位（在右側），開啟「 **Settings** （設定）」頁籤，然後選擇「 **Delete** （刪除）」表徵圖（左下）。
+1. [開啟自訂的](#creating-opening-a-customized-configuration) 設定以進行更新。
+1. 選擇謂詞欄位（在右側），開啟&#x200B;**Settings**&#x200B;頁籤，然後選擇&#x200B;**Delete**&#x200B;表徵圖（左下）。
 
    ![刪除圖示](assets/csf-delete-icon.png)
 
 1. 對話方塊會要求確認刪除動作。
 
-1. 使用「完成」確認此變更和任何其 **他變更**。
+1. 使用&#x200B;**Done**&#x200B;確認此變更和任何其他變更。
 
-### 刪除配置（以恢復預設值） {#deleting-a-configuration-to-reinstate-the-default}
+### 刪除配置（恢復預設值）{#deleting-a-configuration-to-reinstate-the-default}
 
 在您自訂設定後，這將覆寫預設值。 您可以刪除自訂的設定，重新設定預設的設定。
 
@@ -632,13 +622,13 @@ Dependent on the predicate a selection of settings are available for configurati
 
 從控制台刪除自定義配置：
 
-1. 選擇所需的配置(例如，頁 **面編輯器（段落搜尋）**)，然後在工具列中選 **** 擇刪除圖示：
+1. 選擇所需的配置(例如，**頁面編輯器（段落搜索）**)，然後選擇工具欄中的&#x200B;**刪除**&#x200B;表徵圖：
 
    ![恢復預設值](assets/csf-restore-default.png)
 
 1. 將刪除自定義配置並恢復預設配置（這由控制台中重新出現掛鎖符號表示）。
 
-### 添加選項謂語 {#adding-options-predicates}
+### 添加選項謂語{#adding-options-predicates}
 
 選項謂語（選項、選項屬性）可讓您設定要搜尋的項目。 通常用來搜尋頁面下方的內容；例如，頁面節點上的屬性。
 
@@ -657,20 +647,20 @@ Dependent on the predicate a selection of settings are available for configurati
 
    >[!NOTE]
    >
-   >您 ***不得*** 更改路徑中的任 `/libs` 何內容。
+   >您&#x200B;***必須***&#x200B;不要變更`/libs`路徑中的任何項目。
    >
-   >這是因為下次升級 `/libs` 實例時會覆寫的內容（套用修補程式或功能套件時可能會覆寫）。
+   >這是因為下次升級實例時會覆寫`/libs`的內容（套用修補程式或功能套件時，很可能會覆寫）。
    >
    >配置和其他更改的建議方法為：
    >
-   >1. 重新建立所需項目，如其中 `/libs`所存在 `/apps`。 在本例中，來源為：
+   >1. 在`/libs`中，在`/apps`下重新建立所需項目。 在本例中，來源為：
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. 在 `/apps.`
+   >1. 在`/apps.`中進行任何更改
 
 
-1. 開啟「 **搜尋表單** 」主控台，並選取您要更新的組態。 例如，「網 **站管理搜尋邊欄」**。 然後選擇 **編輯**。
+1. 開啟&#x200B;**搜尋表單**&#x200B;主控台，並選取您要更新的組態。 例如，**網站管理搜尋邊欄**。 然後選擇&#x200B;**編輯**。
 
-1. 視配置而定，將「選 **項** 」 **或「選項屬性** 」添加到配置。
+1. 視配置而定，將&#x200B;**選項**&#x200B;或&#x200B;**選項屬性**&#x200B;添加到配置中。
 1. 更新欄位，尤其是：
 
    * **屬性名稱**
@@ -686,8 +676,8 @@ Dependent on the predicate a selection of settings are available for configurati
       `/apps/cq/gui/content/common/options/predicates/templatetype`
    ![選項謂語](assets/csf-options-predicate-02.png)
 
-1. 選擇 **完成** ，保存配置。
-1. 導覽至適當的主控台(在此範例中 **為Sites**)，並開啟 **「搜尋——篩選」邊欄** 。 新定義的搜尋表單以及各種選項將會顯示。 選擇所需選項以查看搜索結果。
+1. 選擇&#x200B;**Done**&#x200B;以保存配置。
+1. 導覽至適當的主控台（在此範例中，為&#x200B;**Sites**），並開啟&#x200B;**搜尋——篩選器**&#x200B;邊欄。 新定義的搜尋表單以及各種選項將會顯示。 選擇所需選項以查看搜索結果。
 
    ![使用的選項](assets/csf-options-usage.png)
 
@@ -706,15 +696,15 @@ Dependent on the predicate a selection of settings are available for configurati
  <tbody>
   <tr>
    <td>編輯 </td>
-   <td>讀取、寫入節點 <code>/apps </code>權限。</td>
+   <td>對<code>/apps </code>節點的讀取、寫入權限。</td>
   </tr>
   <tr>
    <td>刪除</td>
-   <td>節點上的讀取、寫入、刪除權 <code>/apps</code> 限</td>
+   <td><code>/apps</code>節點上的讀、寫、刪除權限</td>
   </tr>
   <tr>
    <td>預覽</td>
-   <td>讀取、寫入、刪除節點上的權 <code>/var/dam/content</code> 限。<br /> 讀取、寫入節點的 <code>/apps</code> 權限。</td>
+   <td>對<code>/var/dam/content</code>節點執行讀取、寫入、刪除權限。<br /> 讀取、寫入節點 <code>/apps</code> 權限。</td>
   </tr>
  </tbody>
 </table>
