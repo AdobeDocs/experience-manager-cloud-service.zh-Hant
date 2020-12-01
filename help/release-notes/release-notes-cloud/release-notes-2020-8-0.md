@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 2020.8.0版雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
+source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 5%
@@ -15,48 +15,48 @@ ht-degree: 5%
 以下章節概述 Experience Manager as a Cloud Service 2020.8.0 版的一般發行說明。
 
 
-## [!DNL Adobe Experience Manager Sites] 雲端服務 {#sites}
+## [!DNL Adobe Experience Manager Sites] 雲端服務  {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+### [!DNL Sites] {#what-is-new-sites}的新增功能
 
-* 能夠將頁 [面和子頁面（頁面樹狀結構）還原為舊版](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)。
+* 能夠[將頁面和子頁面（頁面樹狀結構）還原為舊版](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)。
 
-* 能夠在 [AEM](/help/sites-cloud/authoring/launches/overview.md)[SPA Editor中建立啟動。](/help/implementing/developing/spa/introduction.md)
+* 能夠在AEM [SPA編輯器中[建立啟動](/help/sites-cloud/authoring/launches/overview.md)。](/help/implementing/developing/hybrid/introduction.md)
 
 
-## [!DNL Adobe Experience Manager Assets] 雲端服務 {#assets}
+## [!DNL Adobe Experience Manager Assets] 雲端服務  {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### [!DNL Assets] {#what-is-new-assets}的新增功能
 
-* 資產微型服務現在支援視訊轉碼。 「處理設定檔」設 [!UICONTROL 定中的新區段] ，可讓您設定視訊位元速率和尺寸。 輸出格式為MP4，採用H.264編碼器。 如需詳細資訊，請參 [閱「管理視訊資產](/help/assets/manage-video-assets.md#transcode-video)」。 若需更多轉碼選項和視訊傳送，請使 [!DNL Dynamic Media] 用附加元件。
+* 資產微型服務現在支援視訊轉碼。 [!UICONTROL 處理描述檔]組態中的新區段可讓您設定視訊位元速率和尺寸。 輸出格式為MP4，採用H.264編碼器。 如需詳細資訊，請參閱[管理視訊資產](/help/assets/manage-video-assets.md#transcode-video)。 如需更多轉碼選項和視訊傳送，請使用[!DNL Dynamic Media]附加元件。
 
-* 在新部 [!DNL Experience Manager Assets] 署中，智慧型標籤功能現在預設已設定。 不需要手動與整合 [!DNL Adobe Developer Console]。 在現有部署中，管理員 [會像以前一樣設定智慧標籤](/help/assets/smart-tags-configuration.md#aio-integration) 整合。
+* 在新的[!DNL Experience Manager Assets]部署中，現在預設會設定智慧標籤功能。 不需要手動與[!DNL Adobe Developer Console]整合。 在現有部署中，管理員[會像以前一樣配置智慧標籤整合](/help/assets/smart-tags-configuration.md#aio-integration)。
 
-* 全新的 [資產下載體驗](/help/assets/download-assets-from-aem.md) ,
+* 新的[資產下載體驗](/help/assets/download-assets-from-aem.md)允許，
 
    * 非同步下載以進行大量下載，讓使用者不必等待。
    * 開發人員擴充性的全新模組化API。
 
 * 資產微服務的中繼資料擷取已改善效能。 它可提高整體資產擷取吞吐量。
 
-* 使用處理設定檔，使用「計算服務」產生自訂中繼資料。 請參 [閱使用處理設定檔自訂中繼資料](/help/assets/manage-metadata.md#metadata-compute-service)。
+* 使用處理設定檔，使用「計算服務」產生自訂中繼資料。 請參閱「使用處理設定檔[自訂中繼資料」。](/help/assets/manage-metadata.md#metadata-compute-service)
 
-* 為品牌入口網站使用者提供更簡單的下載體驗，管理員可加以設定。 請參閱 [下載體驗概觀](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
+* 為品牌入口網站使用者提供更簡單的下載體驗，管理員可加以設定。 請參閱[下載體驗概觀](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
 
-* 品牌入口網站現在提供原生和高精確PDF檔案預覽。 請參閱 [檔案檢視器概觀](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
+* 品牌入口網站現在提供原生和高精確PDF檔案預覽。 請參閱[檔案檢視器概觀](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
 
-* 您現在可以直接在AEM中將CDN（內容傳送網路）快取作為 [!DNL Dynamic Media] 雲端服務失效(而非使用 [!DNL Dynamic Media Classic])。 它可確保在數分鐘內提供最新資產，而非數小時。 請參 [閱透過動態媒體使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)。
+* 您現在可以直接從AEM的[!DNL Dynamic Media]中，將CDN（內容傳送網路）快取作為雲端服務失效（而非使用[!DNL Dynamic Media Classic]）。 它可確保在數分鐘內提供最新資產，而非數小時。 請參閱[透過動態媒體使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)。
 
-* 在中的使用者介面控制項、導覽、瀏覽和搜尋體驗中新增了增強的協助工具支援 [!DNL Assets]。
+* 在[!DNL Assets]中，使用者介面控制項、導覽、瀏覽和搜尋體驗新增了增強的協助工具支援。
 
-   * 如果您在選取「新增轉譯」選項後按 [!UICONTROL Escape鍵] ，焦點會返回工具列。 <!-- via CQ-4293594-->
-   * 使用「電子郵件」組合方塊時，鍵盤焦點可正常運作。 <!-- via CQ-4286215 -->
-   * 搜索過濾器部分中的收合元素被解釋為標準可展開收合元。 <!-- via CQ-4273103 -->
-   * 將標籤套用至資產時，對話方塊會將標籤顯示為樹狀元素。 ARIA屬性會適當套用至樹狀元素，讓這些元素現在可存取。 <!-- via CQ-4272964 -->
+   * 如果在選擇[!UICONTROL Add Rendition]選項後按Escape鍵，焦點將返回工具欄。<!-- via CQ-4293594-->
+   * 使用「電子郵件」組合方塊時，鍵盤焦點可正常運作。<!-- via CQ-4286215 -->
+   * 搜索過濾器部分中的收合元素被解釋為標準可展開收合元。<!-- via CQ-4273103 -->
+   * 將標籤套用至資產時，對話方塊會將標籤顯示為樹狀元素。 ARIA屬性會適當套用至樹狀元素，讓這些元素現在可存取。<!-- via CQ-4272964 -->
 
-* [!DNL AEM Desktop app] 2.0.3版現已推出。 它改善了與 [!DNL Experience Manager] 6.5.5 Service Pack的相容性，並具有更新的客戶端作業系統相容性清單。 [!DNL Windows] 不支 [!DNL macOS] 援7和10.14之前的版本。
+* [!DNL AEM Desktop app] 2.0.3版現已推出。它改善了與[!DNL Experience Manager] 6.5.5 Service Pack的相容性，並具有更新的客戶端作業系統相容性清單。 [!DNL Windows] 不支 [!DNL macOS] 援7和10.14之前的版本。
 
-### 修正於 [!DNL Assets] {#bugs-fixed}
+### [!DNL Assets] {#bugs-fixed}中修正的錯誤
 
 * 首次點按時，「建立關聯」和「取消關聯」選項不會回應。 (CQ-4299022)
 * 下載資產時，如果您選取透過電子郵件接收資產的選項，則不會傳送電子郵件。 (CQ-4299146)
@@ -73,21 +73,21 @@ ht-degree: 5%
 
 ### 發行日期 {#release-date-cm}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2020.
+[!UICONTROL Cloud Manager]版本2020.8.0的發行日期為2020年8月06日。
 
 ### 新功能 {#what-is-new-cloud-manager}
 
-* 「內容審核」是在Cloud Manager Sites生產管道上啟用的功能。 具有「網站」的程式的「生產管道」設定現在包含名為「內容審核」的第 **三個標籤**。 每當生產管道執行時，在自訂功能測試後，管道中就會包含新的「內容稽核」步驟，以根據多項維度評估網站，包括效能、搜尋引擎最佳化(SEO)、協助工具、最佳實務和PWA（漸進式網頁應用程式）。
+* 「內容審核」是在Cloud Manager Sites生產管道上啟用的功能。 具有Sites的程式的Production Pipeline配置現在包含名為&#x200B;**Content Audit**&#x200B;的第三個頁籤。 每當生產管道執行時，在自訂功能測試後，管道中就會包含新的「內容稽核」步驟，以根據多項維度評估網站，包括效能、搜尋引擎最佳化(SEO)、協助工具、最佳實務和PWA（漸進式網頁應用程式）。
 
 
    >[!NOTE]
    >「內容審核」已重新命名為「體驗審核」。
 
-   如需詳細 [資訊，請參閱Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) 。
+   如需詳細資訊，請參閱[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
 * 「資產」程式中新建立的環境現在會自動設定Smart Content Services。
 
-* 高眠環境可以從Cloud Manager的「概述」頁面中解除高 **眠** 。
+* 高眠環境可以從Cloud Manager的&#x200B;**概述**&#x200B;頁面中解除高眠。
 
 * 能夠在Google Lighthouse支援的頁面上執行Experience Checks。 作為Cloud Manager管道的一部分，最多可以根據體驗KPI檢查和驗證25頁，並在Cloud Manager UI中顯示分數。
 
@@ -99,7 +99,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * 在某些情況下，未完成的管線執行未成功記錄為已完成，從而防止了管線的新執行。
 
-* 管道執行偶爾會因 *內部* 通訊問題而卡住。
+* 由於內部通訊問題，管道執行偶爾會出現&#x200B;*卡住*。
 
 * 在布建新組織時，系統管理員以外的其他管理角色的部分使用者會錯誤地獲得Cloud Manager的存取權。
 
@@ -109,7 +109,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * 在刪除環境中嘗試操作時，用戶介面錯誤地允許該操作。
 
-* Cloud Manager的「概述」頁面上有顏色不 **符** 。
+* Cloud Manager的&#x200B;**概述**&#x200B;頁面上有顏色不符。
 
 ### 已知問題 {#known-issues-cm}
 
@@ -139,8 +139,8 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 ### 新功能 {#what-is-new-refactoring}
 
-* AIO-CLI增效模組已推出，以統一程式碼重構工具，讓開發人員可從單一位置叫用並執行程式碼重構工具。 請參閱 [Git資源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) ，以取得詳細資訊。
+* AIO-CLI增效模組已推出，以統一程式碼重構工具，讓開發人員可從單一位置叫用並執行程式碼重構工具。 請參閱[Git資源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)以取得詳細資訊。
 
-* AEM Dispatcher Converter已擴充，可支援將內部部署和Adobe Managed Services Dispatcher組態轉換為AEM，做為Cloud Service相容的Dispatcher組態。 請參閱 [Git資源：AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) ，以取得詳細資訊。
+* AEM Dispatcher Converter已擴充，可支援將內部部署和Adobe Managed Services Dispatcher組態轉換為AEM，做為Cloud Service相容的Dispatcher組態。 請參閱[Git資源：AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)以取得詳細資訊。
 
-* AEM Dispatcher Converter已重新寫入AIO-CLI ` node.js ` 增效模組並與之整合。
+* AEM Dispatcher Converter重新寫入` node.js `並與AIO-CLI增效模組整合。
