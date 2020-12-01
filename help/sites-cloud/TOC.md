@@ -5,10 +5,10 @@ user-guide-title: AEM as a Cloud Service 的內容製作
 breadcrumb-title: Authoring 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Sites as a Cloud Service。
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 96%
+source-wordcount: '236'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,9 @@ ht-degree: 96%
    + 啟動 {#launches}
       + [使用啟動](authoring/launches/overview.md)
       + [建立啟動 ](authoring/launches/creating.md)
+      + [在啟動中管理頁面](authoring/launches/managing-pages.md)
       + [編輯啟動](authoring/launches/editing.md)
+      + [使用時間彎曲預覽啟動](authoring/launches/preview.md)
       + [提升啟動](authoring/launches/promoting.md)
    + 工作流程 {#workflows}
       + [使用工作流程](authoring/workflows/overview.md)
@@ -75,7 +77,8 @@ ht-degree: 96%
       + [建立和管理選件](authoring/personalization/offers.md)
       + [了解區段](authoring/personalization/segmentation.md)
       + [使用ContextHub設定區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-+ 管理 {#administering}
+      + [註冊、登入和使用者設定檔](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
++ 管理{#administering}
    + [管理工作流程](administering/workflows-administering.md)
 + 整合 AEM as a Cloud Service {#integrations}
    + [整合 Adobe Analytics](integrating/integrating-adobe-analytics.md)
