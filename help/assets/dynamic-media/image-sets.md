@@ -2,9 +2,9 @@
 title: 影像集
 description: 瞭解如何在動態媒體中處理影像集
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '2069'
 ht-degree: 19%
 
 ---
@@ -26,48 +26,50 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->如需「資產」使用者介面的詳細資訊，請參 [閱「使用Touch UI管理資產」](/help/assets/manage-digital-assets.md)。
+>如需「資產」使用者介面的詳細資訊，請參閱「使用Touch UI[管理資產」。](/help/assets/manage-digital-assets.md)
 
-## 快速入門：影像集 {#quick-start-image-sets}
+## 快速入門：影像集{#quick-start-image-sets}
 
 要快速啟動並運行，請執行以下操作：
 
-1. [上傳多個檢視的主要來源影像。](#uploading-assets-in-image-sets)
+1. 選填。[建立批次集預](/help/assets/dynamic-media/batch-set-presets-dm.md) 設集，並將它套用至將上傳回轉集影像的新資料夾。
 
-   首先，上傳影像集的影像。 由於使用者可在影像集檢視器中放大影像，因此當您選擇影像時，請考慮放大影像。 請確定影像在最大尺寸中至少為2000像素。AEM Assets支援許多影像檔案格式，但建議使用無失真的TIFF、PNG和EPS影像。
-
-1. [建立影像集。](#creating-image-sets)
-
-   在「影像集」中，使用者按一下「影像集檢視器」中的縮圖影像。
-
-   若要在資產中建立影像集，請點選或按一下「建立> **[!UICONTROL 影像集」]**。 然後，新增影像，然後按一下「 **[!UICONTROL 儲存]**」。
-
-   You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+   批次集預設集可協助您自動建立影像集。
 
    >[!IMPORTANT]
    >
    >批集由IPS(Image Production System)建立，作為資產提取的一部分。
 
-   請參 [閱準備影像集資產以上傳和上傳檔案](#uploading-assets-in-image-sets)。
+1. [上傳多個檢視的主要來源影像。](#uploading-assets-in-image-sets)
 
-   See [Working with Selectors.](/help/assets/dynamic-media/working-with-selectors.md)
+   上傳影像集的影像。 由於使用者可在影像集檢視器中放大影像，因此當您選擇影像時，請考慮放大影像。 請確定影像在最大尺寸中至少為2000像素。AEM Assets支援許多影像檔案格式，但建議使用無失真的TIFF、PNG和EPS影像。
 
-1. 視需 [要新增影像集檢視器預設](/help/assets/dynamic-media/managing-viewer-presets.md)。
+1. [建立影像集。](#creating-image-sets)
 
-   管理員可以建立或修改影像集檢視器預設集。 To see your image set with a viewer preset, select the image set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers]**.
+   在「影像集」中，使用者按一下「影像集檢視器」中的縮圖影像。
 
-   請參閱「 **[!UICONTROL 工具>資產>檢視器預設集]** 」以建立或編輯檢視器預設集。
+   若要在「資產」中建立影像集，請點選或按一下「建立>影像集&#x200B;**[!UICONTROL 」。]**&#x200B;然後，添加影像並按一下&#x200B;**[!UICONTROL 保存]**。
 
-1. （可選）檢 [視使用批集預設集建立的影像集](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) 。
+   請參閱[準備要上傳和上傳檔案的影像集資產](#uploading-assets-in-image-sets)。
+
+   請參閱[使用選擇器。](/help/assets/dynamic-media/working-with-selectors.md)
+
+1. 視需要新增[影像集檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
+
+   管理員可以建立或修改影像集檢視器預設集。 若要使用檢視器預設集來檢視您的影像集，請選取影像集，然後在左側導軌下拉式功能表中，選取&#x200B;**[!UICONTROL 檢視器]**。
+
+   請參閱&#x200B;**[!UICONTROL 工具>資產>檢視器預設集]**&#x200B;以建立或編輯檢視器預設集。
+
+1. （可選）[檢視使用批集預設集建立的影像集](/help/assets/dynamic-media/image-sets.md#viewing-image-sets)。
 1. [預覽影像集。](/help/assets/dynamic-media/previewing-assets.md)
 
-   選取「影像集」，您就可以預覽它。 按一下縮圖圖示，以檢查所選檢視器中的影像集。 您可以從左側導軌下拉式選單 **[!UICONTROL 的「檢視器]** 」選單中，選擇不同的檢視器。
+   選取「影像集」，您就可以預覽它。 按一下縮圖圖示，以檢查所選檢視器中的影像集。 您可以從左側導軌下拉式選單的&#x200B;**[!UICONTROL 檢視器]**&#x200B;選單中選擇不同的檢視器。
 
 1. [發佈影像集。](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
-   發佈影像集會啟動URL和內嵌字串。 此外，您必須發 [布您所建立的任何自訂檢視器預設](/help/assets/dynamic-media/managing-viewer-presets.md) 。 現成可用的檢視器預設集已發佈。
+   發佈影像集會啟動URL和內嵌字串。 此外，您必須[發佈您所建立的任何自訂檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。 現成可用的檢視器預設集已發佈。
 
-1. [將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ，或 [內嵌視訊或影像檢視器](/help/assets/dynamic-media/embed-code.md)。
+1. [將URL連結至您的Web應](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 用程 [式或內嵌視訊或影像檢視器](/help/assets/dynamic-media/embed-code.md)。
 
    AEM Assets會建立影像集的URL呼叫，並在您發佈影像集後加以啟動。 您可以在預覽資產時複製這些URL。 或者，您也可以將它們內嵌在您的網站上。
 
@@ -75,19 +77,19 @@ ht-degree: 19%
 
    請參 [閱連結影像集至網頁](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[和內嵌影片或影像檢視器](/help/assets/dynamic-media/embed-code.md)。
 
-若要編輯影像集，請參閱 [編輯影像集。](#editing-image-sets) 此外，您還可以檢視和編輯 [影像集屬性](/help/assets/manage-digital-assets.md#editing-properties)。
+要編輯影像集，請參閱[編輯影像集。](#editing-image-sets) 此外，您還可以檢視和編輯 [影像集屬性](/help/assets/manage-digital-assets.md#editing-properties)。
 
-如果您在建立集時遇到問題，請參閱「疑難排解動態媒體」 [中的影像和集](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)。
+如果建立集時遇到問題，請參閱[ Troubleshooting Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)中的映像和集。
 
-## 上傳影像集中的資產 {#uploading-assets-in-image-sets}
+## 上傳影像集{#uploading-assets-in-image-sets}中的資產
 
 首先，上傳影像集的影像。 由於使用者可在影像集檢視器中放大影像，因此當您選擇影像時，請考慮放大影像。 請確定影像在最大尺寸中至少有2000像素，以獲得最佳縮放細節。 動態媒體可以每張轉換高達2500萬像素的影像。 例如，您可使用5000 x 5000百萬像素影像或任何其他大小的組合，最高2500萬像素。
 
 「影像集」支援許多影像檔案格式，但建議使用無損TIFF、PNG和EPS影像。
 
-您可以像上傳資產中的任何其他資產一樣， [上傳影像集的影像](/help/assets/manage-digital-assets.md#uploading-assets)。
+您可以像[上傳資產](/help/assets/manage-digital-assets.md#uploading-assets)中的任何其他資產一樣，上傳影像集的影像。
 
-### 準備影像集資產以進行上傳 {#preparing-image-set-assets-for-upload}
+### 準備上傳{#preparing-image-set-assets-for-upload}的影像集資產
 
 在建立影像集之前，請確定影像的大小和格式正確。
 
@@ -105,13 +107,13 @@ ht-degree: 19%
 >* 黑色、棕色和綠色縮圖。
 
 
-## 建立影像集 {#creating-image-sets}
+## 建立影像集{#creating-image-sets}
 
 您可以透過使用者介面或API來建立影像集。 本節說明如何在UI中建立影像集。
 
 >[!NOTE]
 >
->You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>您也可以透過[批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md)自動建立影像集。
 >**** 重要：批集由IPS(Image Production System)建立，作為資產提取的一部分。
 
 當您將資產新增至集合時，資產會自動以字母數字順序新增。 您可以在資產新增後手動重新排序或排序。
@@ -128,20 +130,20 @@ ht-degree: 19%
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
-1. 在「影像集編輯器」頁面的「標 **[!UICONTROL 題]** 」欄位中，輸入影像集的名稱。 名稱會出現在影像集的橫幅中。 （可選）輸入說明。
+1. 在「影像集編輯器」頁面的&#x200B;**[!UICONTROL Title]**&#x200B;欄位中，輸入影像集的名稱。 名稱會出現在影像集的橫幅中。 （可選）輸入說明。
 
    ![6_5-影像集——建立新集](assets/6_5_imageset-creatingnewset.png)
 
 1. 執行下列任一項作業：
 
-   * 在「影像集編輯器」頁面的左上角附近，點選「新增 **[!UICONTROL 資產」]**。
+   * 在「影像集編輯器」頁面的左上角附近，點選「新增資產」**[!UICONTROL 。]**
 
-   * 在「影像集編輯器」頁面的中間，點選「點選」 **[!UICONTROL 以開啟「資產選擇器」]**。
-   點選以選取您要納入影像集的資產。 選取的資產上面有核取標籤圖示。When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
+   * 在「影像集編輯器」頁面的中間，點選&#x200B;**[!UICONTROL 以開啟「資產選擇器」]**。
+   點選以選取您要納入影像集的資產。 選取的資產上面有核取標籤圖示。完成後，在頁面右上角附近點選&#x200B;**[!UICONTROL 選擇]**。
 
    使用「資產選擇器」，您可以輸入關鍵字並點選或按一下「退貨」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後點選工具 **[!UICONTROL 列上的]** 「篩選」圖示。點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 ****。
 
-   See [Working with Selectors.](/help/assets/dynamic-media/working-with-selectors.md)
+   請參閱[使用選擇器。](/help/assets/dynamic-media/working-with-selectors.md)
 
    ![6_5-影像集——新增資產](assets/6_5_imageset-addingassets.png)
 
@@ -155,44 +157,44 @@ ht-degree: 19%
 
 1. （可選）執行下列任一項作業：
 
-   * 若要刪除影像，請選取影像並點選「刪 **[!UICONTROL 除資產」]**。
+   * 若要刪除影像，請選取影像並點選「刪除資產」。****
 
-   * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a preset to apply to all the assets at once.
+   * 若要套用預設，請在頁面右上角附近點選&#x200B;**[!UICONTROL Preset]**，然後選取一個預設，一次套用至所有資產。
    >[!NOTE]
    >
    >建立影像集時，您可以變更影像集縮圖，或允許AEM根據影像集中的資產自動選取縮圖。若要選取縮圖，請點選「影像集編輯器」頁面上「標題」欄位上方的「變更縮圖 **** 」，然後選取任何影像 (您也可以導覽至其他檔案夾以尋找影像)。如果您已選取縮圖，然後決定要讓AEM從影像集產生縮圖，請選取「切換至 **[!UICONTROL 自動]****[!UICONTROL 縮圖」]**。
 
 1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。您新建立的「影像集」會顯示在您所建立的檔案夾中。
 
-## 檢視影像集 {#viewing-image-sets}
+## 查看影像集{#viewing-image-sets}
 
-您可以在使用者介面中建立影像集，或使用批次集預 [設集自動建立](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)。
+您可以在使用者介面中建立影像集，或使用[批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md)自動建立影像集。
 
 >[!IMPORTANT]
 >
->Batch sets are created by the IPS [Image Production System] as part of asset ingestion.
+>批集由IPS [映像生產系統]建立，作為資產提取的一部分。
 
-不過，使用批集預設集建立的集 *合* ，不會顯示在使用者介面中。 您可以以三種不同的方式檢視這些集。 （即使您在使用者介面中建立影像集，這些方法也可用）。
+不過，使用批集預設集建立的集合，請&#x200B;*not*&#x200B;出現在使用者介面中。 您可以以三種不同的方式檢視這些集。 （即使您在使用者介面中建立影像集，這些方法也可用）。
 
 * 開啟個別資產的屬性。 屬性指出所選資產被參考或成員的設定。 按一下集的名稱，即可查看整個集。
 
    ![6_5_imageset-asset屬性](assets/6_5_imageset-assetproperties.png)
 
-* 來自任何組的成員映像。Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
+* 來自任何組的成員映像。選擇&#x200B;**[!UICONTROL Sets]**&#x200B;菜單以顯示資產所屬的集。
 
    ![6_5_imageset-setspuldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
+* 在搜索中，可以選擇&#x200B;**[!UICONTROL 過濾器]**，然後展開&#x200B;**[!UICONTROL 動態媒體]**&#x200B;並選擇&#x200B;**[!UICONTROL 集]**。
 
-   搜尋會傳回在UI中手動建立或透過批次集預設集自動建立的相符集。 對於自動集，搜尋查詢是使用「以」搜尋准則進行，此搜尋准則與以「包含」搜尋准則為基礎的AEM搜尋不同。 將篩選器設 **[!UICONTROL 置為]** 「集」是搜索自動集的唯一方法。
+   搜尋會傳回在UI中手動建立或透過批次集預設集自動建立的相符集。 對於自動集，搜尋查詢是使用「以」搜尋准則進行，此搜尋准則與以「包含」搜尋准則為基礎的AEM搜尋不同。 將篩選器設定為&#x200B;**[!UICONTROL Sets]**&#x200B;是搜索自動集的唯一方法。
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
->您可以透過使用者介面來檢視集，如編輯影像集 [所述](#editing-image-sets)。
+>您可以透過使用者介面來檢視集，如[編輯影像集](#editing-image-sets)所述。
 
-## 編輯影像集 {#editing-image-sets}
+## 編輯影像集{#editing-image-sets}
 
 您可以對影像集執行多種編輯工作，例如：
 
@@ -206,34 +208,34 @@ ht-degree: 19%
 
 1. 執行下列任一項作業：
 
-   * 將滑鼠指標暫留在「影像集」資產上，然後點選「 **[!UICONTROL 編輯]** 」（鉛筆圖示）。
-   * 將滑鼠指標暫留在「影像集」資產上，點選「 **[!UICONTROL 選取]** （勾選圖示）」，然後點選工具列上的「 **[!UICONTROL 編輯]** 」。
-   * 點選影像集資產，然後點選工具 **[!UICONTROL 列上的]** 「編輯（鉛筆圖示）」。
+   * 將滑鼠指標暫留在「影像集」資產上，然後點選「**[!UICONTROL 編輯]**」（鉛筆圖示）。
+   * 將滑鼠指標暫留在影像集資產上，點選「**[!UICONTROL 選擇]**」（勾選圖示），然後點選工具列上的「編輯」。****
+   * 點選影像集資產，然後點選工具列上的&#x200B;**[!UICONTROL Edit]**（鉛筆圖示）。
 
 1. 若要編輯影像集中的影像，請執行下列任一項作業：
 
    * 若要重新排序資產，請將影像拖曳至新位置（選取重新排序圖示以移動項目）。
    * 若要依遞增或遞減順序排序項目，請按一下欄標題。
-   * 若要新增資產或更新現有資產，請按一下「新增 **[!UICONTROL 資產」]**。 導覽至資產，選取資產，然 **[!UICONTROL 後點選]** （靠近頁面右上角）。
+   * 若要新增資產或更新現有資產，請按一下「新增資產」。 ****&#x200B;導覽至資產，選取它，然後點選頁面右上角的&#x200B;**[!UICONTROL Select]**。
 
       >[!NOTE]
       >
       >如果您將AEM用縮圖取代為其他影像，以刪除該縮圖所使用的影像，原始資產仍會顯示。
-   * 若要刪除資產，請選取資產並點選或按一下「刪 **[!UICONTROL 除資產」]**。
-   * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
-   * 若要新增或變更縮圖，請選取資產右側的縮圖圖示。 導覽至新的縮圖或色票資產，選取它，然後點選「選 **[!UICONTROL 取」]**。
-   * 若要刪除整個影像集，請導覽至影像集，選取它，然後點選「刪 **[!UICONTROL 除」]**。
+   * 若要刪除資產，請選取資產並點選或按一下「刪除資產」。****
+   * 若要套用預設，請在頁面右上角附近點選&#x200B;**[!UICONTROL Preset]**，然後選取檢視器預設集。
+   * 若要新增或變更縮圖，請選取資產右側的縮圖圖示。 導覽至新的縮圖或色票資產，選取它，然後點選&#x200B;**[!UICONTROL Select]**。
+   * 若要刪除整個影像集，請導覽至影像集，選取它，然後點選&#x200B;**[!UICONTROL Delete]**。
 
    >[!NOTE]
    >
    >您可以導覽至影像集，點選左側導軌中的「設定成員 **** 」，然後點選個別資產上的「鉛筆」圖示以開啟編輯視窗，以編輯影像集中的影像。
 
-1. 編輯完 **[!UICONTROL 成時]** ，點選「儲存」。
+1. 完成編輯時，點選「**[!UICONTROL 儲存]**」。
 
-## 預覽影像集 {#previewing-image-sets}
+## 預覽影像集{#previewing-image-sets}
 
-請參閱 [預覽資產](/help/assets/dynamic-media/previewing-assets.md)。
+請參閱[預覽資產](/help/assets/dynamic-media/previewing-assets.md)。
 
-## 發佈影像集 {#publishing-image-sets}
+## 發佈影像集{#publishing-image-sets}
 
-請參閱 [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
