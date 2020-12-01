@@ -5,15 +5,15 @@ breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
+source-git-commit: 4420fd95388ba2f389192f767b6d612bdc2b18a9
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '432'
 ht-degree: 78%
 
 ---
 
 
-# [!DNL Assets] 指南 {#assets}
+# [!DNL Assets] 指南  {#assets}
 
 + [[!DNL Assets] 雲端服務](/help/assets/home.md)
 + [概覽與新增功能](overview.md)
@@ -22,7 +22,7 @@ ht-degree: 78%
 + [支援的檔案格式](file-format-support.md)
 + [資產微服務概覽](asset-microservices-overview.md)
 + [無障礙環境支援 [!DNL Assets]](accessibility.md)
-+ 管理數位資產 {#manage}
++ 管理數位資產{#manage}
    + [共用資產](share-assets.md)
    + [監控活動和 DAM 任務](assets-activity-history.md)
    + [開始使用資產微服務](asset-microservices-configure-and-use.md)
@@ -82,12 +82,15 @@ ht-degree: 78%
    + [管理 Dynamic Media 資產](dynamic-media/managing-assets.md)
    + [影像品質最佳化的最佳作法](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [檔案管理最佳作法](dynamic-media/best-practices-for-file-management.md)
-   + [管理 Dynamic Media 檢視器預設集](dynamic-media/managing-viewer-presets.md)
-   + [套用 Dynamic Media 檢視器預設集](dynamic-media/viewer-presets.md)
-   + [管理 Dynamic Media 影像預設集](dynamic-media/managing-image-presets.md)
-   + [套用 Dynamic Media 影像預設集](dynamic-media/image-presets.md)
    + [影像設定檔](dynamic-media/image-profiles.md)
    + [視訊設定檔](dynamic-media/video-profiles.md)
+   + [管理 Dynamic Media 影像預設集](dynamic-media/managing-image-presets.md)
+   + [套用 Dynamic Media 影像預設集](dynamic-media/image-presets.md)
+   + [管理 Dynamic Media 檢視器預設集](dynamic-media/managing-viewer-presets.md)
+   + [套用 Dynamic Media 檢視器預設集](dynamic-media/viewer-presets.md)
+   + [批次集預設集](dynamic-media/batch-set-presets-dm.md)
+   + [透過動態媒體使CDN快取失效](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [使用Dynamic Media Classic驗證CDN快取](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [智慧型影像](dynamic-media/imaging-faq.md)
    + [傳送 Dynamic Media 資產](dynamic-media/delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中啟用超連結保護](dynamic-media/hotlink-protection.md)
@@ -111,8 +114,6 @@ ht-degree: 78%
    + [使用規則集轉換 URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [發佈 Dynamic Media 資產](dynamic-media/publishing-dynamicmedia-assets.md)
    + [在動態媒體中使用選擇性發佈](dynamic-media/selective-publishing.md)
-   + [透過動態媒體使CDN快取失效](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [使用Dynamic Media Classic驗證CDN快取](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [使用選取工具](dynamic-media/working-with-selectors.md)
    + [DHTML 檢視器生命週期結束常見問答集](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Flash 檢視器生命週期結束注意事項](dynamic-media/flash-viewers-eol.md)
