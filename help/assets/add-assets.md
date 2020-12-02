@@ -2,9 +2,9 @@
 title: 將您的數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -178,10 +178,6 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 停止]:終止活動配置。
    * [!UICONTROL 工作狀態]:查看配置在正在進行的導入作業中使用或用於已完成作業時的狀態。
    * [!UICONTROL 檢視資產]:查看目標資料夾（如果存在）。
-
->[!NOTE]
->
->在設定並部署至[!DNL Experience Manager]時，若要從其他系統進行內容移轉，則需要仔細規劃、考慮和選擇工具，以進行大量上傳。 請參閱[部署指南](/help/implementing/deploying/overview.md)以取得內容移轉方法的指引。
 
 ## 使用案頭用戶端上傳資產{#upload-assets-desktop-clients}
 
