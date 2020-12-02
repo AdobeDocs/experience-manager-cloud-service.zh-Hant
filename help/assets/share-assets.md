@@ -11,7 +11,7 @@ ht-degree: 3%
 ---
 
 
-# 分享和分發在Experience Manager中管理的資產 {#share-assets-from-aem}
+# 共用及分發在Experience Manager {#share-assets-from-aem}中管理的資產
 
 Adobe Experience Manager(AEM)Assets可讓您與組織成員及外部實體（包括合作夥伴和廠商）共用資產、資料夾和系列。 使用下列方法，將Experience Manager Assets中的資產共用為雲端服務：
 
@@ -23,7 +23,7 @@ Adobe Experience Manager(AEM)Assets可讓您與組織成員及外部實體（包
 
 ## 以連結方式共用資產 {#sharelink}
 
-若要產生您要與使用者共用之資產的URL，請使用「連結共用」對話方塊。 具有管理員權限或在位置具有讀取權 `/var/dam/share` 限的使用者可檢視與其共用的連結。 透過連結分享資產是讓外部廠商可使用資源的便利方式，而不需要先登入AEM Assets。
+若要產生您要與使用者共用之資產的URL，請使用「連結共用」對話方塊。 具有管理員權限或在`/var/dam/share`位置具有讀取權限的用戶可以查看與他們共用的連結。 透過連結分享資產是讓外部廠商可使用資源的便利方式，而不需要先登入AEM Assets。
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Adobe Experience Manager(AEM)Assets可讓您與組織成員及外部實體（包
 
 
 1. 在「資產」使用者介面中，選取要以連結形式共用的資產。
-1. 在工具列中，按一下／點選「共 **[!UICONTROL 用連結」]**。 資產連結會在「共用連結」欄位中 **[!UICONTROL 自動建立]** 。 複製此連結並與使用者共用。 連結的預設有效期為一天。
+1. 從工具列按一下／點選&#x200B;**[!UICONTROL 共用連結]**。 資產連結會在&#x200B;**[!UICONTROL 共用連結]**&#x200B;欄位中自動建立。 複製此連結並與使用者共用。 連結的預設有效期為一天。
 
    >[!NOTE]
    >
@@ -105,15 +105,15 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## 下載及分享資產 {#download-and-share-assets}
+## 下載並共用資產{#download-and-share-assets}
 
-Users can download the required assets and share these outside of [!DNL Experience Manager]. 如需詳細資訊，請 [參閱如何搜尋資產](/help/assets/search-assets.md)[、如何下載資產](/help/assets/download-assets-from-aem.md), [以及如何下載系列](manage-collections.md#download-a-collection)
+使用者可下載所需資產，並在[!DNL Experience Manager]之外共用這些資產。 如需詳細資訊，請參閱[如何搜尋資產](/help/assets/search-assets.md)、[如何下載資產](/help/assets/download-assets-from-aem.md)和[如何下載系列](manage-collections.md#download-a-collection)
 
-## 與創意專業人員共用資產 {#share-with-creatives}
+## 與創意專業人員共用資產{#share-with-creatives}
 
 行銷人員和業務線使用者可以使用、
 
-* **AEM案頭應用程式**:應用程式可在Windows和Mac上運作。 請參閱桌 [面應用程式概觀](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參 [閱瀏覽、搜尋和預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立資產，並與AEM使用者的對應人員共用資產，例如上傳新影像。 請參閱 [使用案頭應用程式上傳資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* **AEM案頭應用程式**:應用程式可在Windows和Mac上運作。請參閱[案頭應用程式概觀](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參閱[瀏覽、搜尋和預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立資產，並與AEM使用者的對應人員共用資產，例如上傳新影像。 請參閱「使用案頭應用程式[上傳資產」。](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)
 
 * **Adobe Asset Link**:創意專業人員可直接在Adobe InDesign、Adobe Illustrator和Adobe Photoshop中搜尋及使用資產。
 
@@ -121,15 +121,15 @@ Users can download the required assets and share these outside of [!DNL Experien
 
 共用資產的不同選項需要特定的設定，並具備特定的先決條件。
 
-### 設定資產連結共用 {#asset-link-sharing}
+### 設定資產連結共用{#asset-link-sharing}
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-若要產生您要與使用者共用之資產的URL，請使用「連結共用」對話方塊。 具有管理員權限或在位置具有讀取權 `/var/dam/share` 限的使用者可檢視與其共用的連結。 透過連結分享資產是讓外部廠商可使用資源的便利方式，而不需要先登入AEM Assets。
+若要產生您要與使用者共用之資產的URL，請使用「連結共用」對話方塊。 具有管理員權限或在`/var/dam/share`位置具有讀取權限的用戶可以查看與他們共用的連結。 透過連結分享資產是讓外部廠商可使用資源的便利方式，而不需要先登入AEM Assets。
 
 >[!NOTE]
 >
->如果您想要將AEM Author例項的連結共用給外部實體，請確定您只針對請求公開下列 `GET` URL。 封鎖其他URL，以確保您的AEM Author例項安全。
+>如果您想要將AEM Author例項的連結共用給外部實體，請確定您只針對`GET`請求公開下列URL。 封鎖其他URL，以確保您的AEM Author例項安全。
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
@@ -152,35 +152,35 @@ Before you can share assets as links, configure the email service.
 1. Click/tap **[!UICONTROL Save]**.
 -->
 
-### 配置最大資料大小 {#maxdatasize}
+### 配置最大資料大小{#maxdatasize}
 
 當您使用「連結共用」功能從共用的連結下載資產時，AEM會從儲存庫壓縮資產階層，然後以ZIP檔案傳回資產。 但是，在ZIP檔案中壓縮的資料量沒有限制的情況下，大量資料會遭受壓縮，造成JVM中記憶體錯誤。 要保護系統免受因此情況而可能發生的拒絕服務攻擊，您可以配置下載檔案的最大大小。 如果資產的未壓縮大小超過設定的值，資產下載請求便會遭拒。 預設值為100 MB。
 
 1. 按一下/點選AEM標誌，然後前往「工 **[!UICONTROL 具]** > **[!UICONTROL 作業]** >網 **[!UICONTROL 頁主控台]**」。
-1. 在Web主控台中，找 **[!UICONTROL 到Day CQ DAM Adhoc Asset Share Proxy Servlet設定]** 。
-1. 在編輯模式中開啟設定，並修改「最大內容大小（未壓縮） **[!UICONTROL 」參數的值]** 。
+1. 在Web控制台中，找到&#x200B;**[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]**&#x200B;配置。
+1. 在編輯模式下開啟配置，並修改&#x200B;**[!UICONTROL 最大內容大小（未壓縮）]**&#x200B;參數的值。
 1. 儲存變更。
 
 <!--
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### 啟用案頭動作以搭配案頭應用程式使用 {#desktop-actions}
+### 啟用案頭動作以搭配案頭應用程式{#desktop-actions}使用
 
-在瀏覽器的「資產」使用者介面中，您可以探索資產位置或結帳並開啟資產，以便在案頭應用程式中編輯。 這些選項稱為案頭動作，若要啟用它，請參閱「在 [AEM網頁介面中啟用案頭動作」](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
+在瀏覽器的「資產」使用者介面中，您可以探索資產位置或結帳並開啟資產，以便在案頭應用程式中編輯。 這些選項稱為案頭動作，若要啟用它，請參閱[在AEM網頁介面中啟用案頭動作](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
 
 ![使用案頭應用程式時，啟用案頭動作做為捷徑](assets/enable_desktop_actions.png)
 
-### 使用Adobe Asset Link的設定 {#configure-asset-link}
+### 使用Adobe Asset Link {#configure-asset-link}的設定
 
 Adobe Asset Link可簡化創作人員與行銷人員在內容建立程式中的協作。 它將Adobe Experience Manager(AEM)資產與Creative Cloud案頭應用程式Adobe InDesign、Adobe Photoshop和Adobe Illustrator連結在一起。 Adobe Asset Link面板可讓創意人員存取並修改儲存在AEM Assets中的內容，而不需離開他們最熟悉的創意應用程式。
 
-了 [解如何設定AEM以搭配Adobe Asset Link使用](https://helpx.adobe.com/tw/enterprise/using/configure-aem-assets-for-asset-link.html)。
+請參閱[如何設定AEM以搭配Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/configure-aem-assets-for-asset-link.html)使用。
 
-## Best practices and troubleshooting {#bestpractices}
+## 最佳實務與疑難排解{#bestpractices}
 
 * 名稱中包含空白字元的資產資料夾或系列可能無法共用。
-* 如果使用者無法下載共用資產，請洽詢您的AEM管理員下 [載限制](#maxdatasize) 。
+* 如果使用者無法下載共用資產，請洽詢您的AEM管理員[下載限制](#maxdatasize)是什麼。
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
