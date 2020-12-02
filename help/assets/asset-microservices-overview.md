@@ -3,9 +3,9 @@ title: 使用資產微服務處理資產
 description: 使用雲端原生和可擴充的資產處理微服務來處理您的數位資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 資產微服務資產接收和處理概觀{#asset-microservices-overview}
 
-Adobe Experience Manager作為雲端服務，提供雲端原生方法，以運用Experience Manager應用程式和功能。 此新架構的關鍵元素之一，是資產擷取與處理，由資產微型服務提供支援。 資產微服務使用雲端服務提供資產的可擴充且彈性化處理。 Adobe管理雲端服務，以最佳化處理不同的資產類型和處理選項。 雲端原生資產微服務的主要優點包括：
+Adobe Experience Manager([!DNL Cloud Service])提供雲端原生方法，以運用Experience Manager應用程式和功能。 此新架構的關鍵元素之一，是資產擷取與處理，由資產微型服務提供支援。 資產微服務使用雲端服務提供資產的可擴充且彈性化處理。 Adobe管理雲端服務，以最佳化處理不同的資產類型和處理選項。 雲端原生資產微服務的主要優點包括：
 
 * 可擴展的體系結構，允許對資源密集型操作進行無縫處理。
 * 高效的索引和文字摘取功能，不會影響您的Experience Manager環境的效能。
