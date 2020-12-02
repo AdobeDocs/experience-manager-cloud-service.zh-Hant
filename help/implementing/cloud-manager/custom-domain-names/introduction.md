@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 簡介 {#introduction}
 
-Cloud Manager可讓您新增自訂網域，以透過UI以自助方式使用唯一、品牌化的名稱來識別您的網站。 您的AEMaCS會布建預設網域名稱，結尾為 `*.adobearmcloud.com`。 即使在您將自訂網域名稱附加至網站後，此預設網域名稱仍會保留。
+Cloud Manager可讓您新增自訂網域，以透過UI以自助方式使用唯一、品牌化的名稱來識別您的網站。 您的AEMaCS會布建預設網域名稱，結尾為`*.adobearmcloud.com`。 即使在您將自訂網域名稱附加至網站後，此預設網域名稱仍會保留。
 
 >[!NOTE]
 >自訂網域名稱僅在Cloud Manager for Sites計畫（發佈服務）中受支援。 每個CM環境最多可以托管每個環境50個自定義域。
