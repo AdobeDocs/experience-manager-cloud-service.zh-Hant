@@ -10,23 +10,23 @@ ht-degree: 1%
 ---
 
 
-# 程式碼重構工具的統一體驗 {#unified-experience}
+# 程式碼重構工具的統一體驗{#unified-experience}
 
 我們已開發工具來自動化某些程式碼重構工作，以便與AEM（即雲端服務）相容。 為了降低安裝和設定不同程式碼重構工具的複雜性，我們開發了一個外掛程式，以統一在程式碼和儲存庫上運作的工具。
 
-## 優點 {#benefits}
+## 優點{#benefits}
 
 Unified Experience外掛程式提供下列優點：
 
-* 將處理原始程式碼的工具統一為外掛程 `node.js` 式的一個應用程式， `aio-cli ` 為使用者提供一致的使用者體驗。
+* 將處理原始碼的工具統一至以`aio-cli `外掛程式形式公開的`node.js`應用程式，為使用者提供一致的使用者體驗。
 
 * 提供透過單一命令執行所有工具的功能，同時提供視需要執行特定工具的彈性。
 
 * 提供擴充性，以簡化新工具的加入，同時維持體驗的一致性。
 
-## 瞭解外掛程式 {#understanding-plugin}
+## 瞭解外掛程式{#understanding-plugin}
 
-外掛 `aio-cli-plugin-aem-cloud-service-migration` 程式包含兩個主要部分：
+`aio-cli-plugin-aem-cloud-service-migration`外掛程式包含兩個主要部分：
 
 * **使用者介面**
 
@@ -43,7 +43,7 @@ Unified Experience外掛程式提供下列優點：
 
 ## 可用性 {#availability}
 
-請參閱 [Git資源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) ，以瞭解使用情況，以及如何對此外掛程式程式碼貢獻心力，此外掛程式碼是以GitHub開啟。
+請參閱[Git資源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)，以瞭解使用情況，以及如何對此外掛程式程式碼貢獻心力，此外掛程式碼是以GitHub開啟。
 
 >[!NOTE]
 >目前，外掛程式已與AEM Dispatcher Converter和Repository Modernizer整合。
