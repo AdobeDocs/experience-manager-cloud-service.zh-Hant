@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 體驗審核測試 {#experience-audit-testing}
+# 體驗審核測試{#experience-audit-testing}
 
 Experience Audit是Cloud Manager Sites Production管道中的一項功能，由Google的開放原始碼工具Google Lighthouse提供支援。 所有Cloud Manager生產管道都啟用了此功能。
 
@@ -22,7 +22,7 @@ Experience Audit是Cloud Manager Sites Production管道中的一項功能，由G
 
 Cloud Manager中的「體驗審核」可確保網站上的使用者數位體驗維持在最高標準。 這些結果是提供資訊的，讓使用者可以查看目前和先前的分數之間的分數和變更。 此見解對於判斷目前部署中是否會引入回歸，十分有用。
 
-## 瞭解體驗審核結果 {#understanding-experience-audit-results}
+## 瞭解體驗審核結果{#understanding-experience-audit-results}
 
 「體驗稽核」透過「生產管道」執行頁面，提供匯總和詳細的頁面層級測試結果。
 
@@ -33,7 +33,7 @@ Cloud Manager中的「體驗審核」可確保網站上的使用者數位體驗�
 * 您可以取得分數的詳細資訊，以查看個別測試的結果，以及如何修正在體驗審核期間發現的任何問題的指引。
 * 測試結果的歷史記錄保存在Cloud Manager中，因此客戶可以查看在管道運行中引入的更改是否包含先前運行的任何回歸。
 
-### 匯總分數 {#aggregate-scores}
+### 匯總分數{#aggregate-scores}
 
 每種測試類型（例如效能、協助功能、SEO和最佳實務）都有匯總的等級分數。
 >[!NOTE]
@@ -43,18 +43,18 @@ Cloud Manager中的「體驗審核」可確保網站上的使用者數位體驗�
 
 「變更」量度的值可能是下列其中一項：
 
-* **正值** -自上次生產管線執行以來，所選測試的頁面已改善
+* **正值** -自上次生產管道執行以來，頁面在所選測試上已改善
 
 * **負值** -自上次生產管線執行以來，頁面在所選測試上已退縮
 
 * **無更改** -自上次生產管道運行以來，頁面的分數相同
 
-* **N/A** —— 沒有舊分數可供比較
+* **N/A** -沒有舊分數可供比較
 
    ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
 
 
-### 頁面層級分數 {#page-level-scores}
+### 頁面層級分數{#page-level-scores}
 
 透過鑽取任何測試，可檢視更詳細的頁面等級計分。 使用者將能夠查看個別頁面在特定測試中的分數，以及與上次測試執行時的變更。
 
