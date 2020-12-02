@@ -1,19 +1,19 @@
 ---
 title: 支援的檔案格式和MIME類型
-description: ' [!DNL Experience Manager Assets] 作為雲端服務支援的檔案格式和MIME類型。'
+description: ' [!DNL Experience Manager Assets] 支援的檔案格式和MIME類型為a [!DNL Cloud Service]。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 8%
+source-wordcount: '783'
+ht-degree: 9%
 
 ---
 
 
 # [!DNL Assets] 支援的檔案格式  {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] 雲端服務支援基本的內容管理功能— 儲存、線上管理中繼資料、版本修訂、上傳和下載等等— 任何二進位檔案，不受其格式影響。[!DNL Adobe Experience Manager Assets] 支援多種檔案格式，而每種產品功能都支援不同格式。
+[!DNL Adobe Experience Manager] 支援基 [!DNL Cloud Service] 本的內容管理功能— 儲存、線上管理中繼資料、版本修訂、上傳和下載等等— 任何二進位檔案，不受其格式影響。[!DNL Adobe Experience Manager Assets] 支援多種檔案格式，而每種產品功能都支援不同格式。
 
 此外，[!DNL Experience Manager Assets]還提供延伸支援，以產生預覽和轉譯，並擷取中繼資料和文字以進行全文索引。 此延伸支援是使用[asset microservices](asset-microservices-configure-and-use.md)提供。
 
@@ -221,7 +221,7 @@ ht-degree: 8%
 
 ## 音訊格式{#audio-formats}
 
-[!DNL Assets] 雲端服務提供AIF、ASF、M4A、MP3、WAV和WMA音訊格式的XMP中繼資料擷取支援。
+[!DNL Assets] as  [!DNL Cloud Service] s provides XMP metadata extraction support for AIF, ASF, M4A, MP3, WAV, and WMA audio formats.
 
 >[!MORELIKETHIS]
 >
