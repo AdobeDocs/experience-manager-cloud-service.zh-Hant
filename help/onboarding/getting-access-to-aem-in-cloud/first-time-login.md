@@ -12,19 +12,19 @@ ht-degree: 0%
 
 # 存取方案 {#first-time-login}
 
-成功登入 [!UICONTROL Cloud Manager]，您就可以使用使用者介面(UI)。
+成功登入[!UICONTROL Cloud Manager]後，您就可以使用使用者介面(UI)。
 
 >[!NOTE]
 >
->根據在 [!UICONTROL Cloud Manager] （雲端管理器）中指派的角色和應用程式的狀態 [!UICONTROL ，您在使用] Cloud Manager UI時會看到不同的畫面。
+>根據[!UICONTROL Cloud Manager]中指派的角色和應用程式的狀態，您在使用[!UICONTROL Cloud Manager] UI時會看到不同的畫面。
 
-## Cloud Manager登錄頁 {#landing-page}
+## Cloud Manager登錄頁{#landing-page}
 
-成功登入 [!UICONTROL Cloud Manager]，您會看到登陸頁面，如下圖所示。
+成功登入[!UICONTROL Cloud Manager]後，您會看到登陸頁面，如下圖所示。
 
 >[!NOTE]
 >
->雲端服務上的程式會以副標題 **Experience Manager Cloud** (與 **Experience Manager** for AMS程式相反)標示，如下所示。
+>雲端服務上的程式會以&#x200B;**Experience Manager Cloud**&#x200B;字幕（與AMS程式的&#x200B;**Experience Manager**&#x200B;相反）標示，如下所示。
 
 ![](assets/first_timelogin1.png)
 
@@ -35,25 +35,25 @@ ht-degree: 0%
 
 * **Cloud Manager中已存在的程式**
 
-## 在雲服務中新增程式，而無現有程式 {#no-program}
+## 在沒有現有程式的雲服務中添加新程式{#no-program}
 
 
 著陸頁面會引導您建立第一個程式，如下圖所示。
 ![](assets/first_timelogin0.png)
 
 
-## 在雲服務中添加新程式與現有程式 {#existing-program}
+## 使用現有程式在雲服務中添加新程式{#existing-program}
 
 
-1. 登入 **Adobe [!UICONTROL Experience Cloud]** ，您會看到「方案與產 **品」清單**。
+1. 登入&#x200B;**Adobe [!UICONTROL Experience Cloud]**，您會看到&#x200B;**Programs &amp; Products**&#x200B;的清單。
 
    ![](assets/first_timelogin1.png)
 
-   雲端服務上的程式會以 **Experience Manager Cloud** (而非 **Experience Manager** for AMS程式)的副標題來標示。
+   雲端服務上的程式會以&#x200B;**Experience Manager Cloud**&#x200B;字幕來表示（與AMS程式的&#x200B;**Experience Manager**&#x200B;相反）。
 
    >[!NOTE]
-   >For example, in the figure above, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
+   >例如，在上圖中，**We.Retail Global**&#x200B;是AMS程式，而&#x200B;**We.Retail-Prod Program - Prod**&#x200B;是可透過雲端服務取得的程式。
 
-1. 若要瞭解如何從「程式與產品 **」螢幕新增程式** ，以在雲端服務中建立新程式，請參閱「 [建立程式」](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)。
+1. 要瞭解如何從&#x200B;**Programs &amp; Products**&#x200B;螢幕添加程式以在雲服務中建立新程式，請參閱[ Create a Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)。
 
 
