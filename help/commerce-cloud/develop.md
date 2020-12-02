@@ -16,19 +16,19 @@ ht-degree: 7%
 ---
 
 
-# 將AEM的AEM Commerce開發為雲端服務 {#develop}
+# 將AEM的AEM Commerce開發為雲端服務{#develop}
 
 以「AEM雲端服務」適用的「商務整合架構」(CIF)為基礎，開發AEM Commerce專案時，也會遵循與AEM上其他AEM專案（如雲端服務）相同的規則和最佳實務。 請先閱讀以下內容：
 
 - [AEM 專案結構](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
 - [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [AEM as a Cloud Service 開發方針](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+- [AEM as a Cloud Service 開發方針](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
-## 以AEM做為雲端服務SDK進行本機開發 {#local}
+## 將AEM當做雲端服務SDK的本機開發{#local}
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-建議在當地開發環境下與CIF項目合作。 針對AEM（雲端服務）環境提供的CIF附加元件也適用於本機開發。 您可從軟體散發入口 [網站下載](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。
+建議在當地開發環境下與CIF項目合作。 針對AEM（雲端服務）環境提供的CIF附加元件也適用於本機開發。 它可從[軟體分發入口](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下載。
 
 CIF Add-On是以Sling Feature封存檔的形式提供。 Software Distribution Portal上提供的zip檔案包含兩個Sling Feature封存檔，一個用於AEM作者，一個用於AEM發佈例項。
 
@@ -47,7 +47,7 @@ CIF Add-On是以Sling Feature封存檔的形式提供。 Software Distribution P
 
 ### 訪問CIF附加模組
 
-The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). zip檔案包含CIF附加元件作為 **Sling Feature封存**，它不是AEM套件。 請注意，SDK清單的存取權限僅限AEM為雲端服務授權的使用者。
+CIF附加元件可從[軟體散發入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下載為zip檔案。 zip檔案包含CIF附加元件為&#x200B;**Sling Feature封存**，不是AEM套件。 請注意，SDK清單的存取權限僅限AEM為雲端服務授權的使用者。
 
 >[!TIP]
 >
@@ -58,18 +58,18 @@ The CIF add-on can be downloaded as a zip file from the [Software Distribution p
 若是使用AEM做為雲端服務SDK進行本機CIF附加元件開發，請執行下列步驟：
 
 1. 取得最新的AEM作為雲端服務SDK
-2. 解壓縮AEM .jar以建立檔 `crx-quickstart` 案夾，執行：
+2. 解壓縮AEM .jar以建立`crx-quickstart`資料夾，執行：
 
    ```bash
    java -jar <jar name> -unpack
    ```
 
-3. 建立資料 `crx-quickstart/install` 夾
-4. 將CIF附加元件的正確Sling Feature封存檔複製至檔案 `crx-quickstart/install` 夾。
+3. 建立`crx-quickstart/install`資料夾
+4. 將CIF附加元件的正確Sling Feature封存檔案檔案複製至`crx-quickstart/install`檔案夾。
 
-   CIF附加郵遞區號檔案包含兩個Sling Feature封存 `.far` 檔。 請務必針對AEM作者或AEM Publish使用正確的AEM，視您計畫如何以雲端服務SDK的形式執行本機AEM而定。
+   CIF附加郵遞區號檔案包含兩個Sling Feature封存檔`.far`檔案。 請務必針對AEM作者或AEM Publish使用正確的AEM，視您計畫如何以雲端服務SDK的形式執行本機AEM而定。
 
-5. 建立名為，並保留Magento GraphQL端 `COMMERCE_ENDPOINT` 點的本地OS環境變數。
+5. 建立一個名為`COMMERCE_ENDPOINT`的本地OS環境變數，其中保存Magento GraphQL端點。
 
    範例Mac OSX:
 
@@ -89,7 +89,7 @@ The CIF add-on can be downloaded as a zip file from the [Software Distribution p
 
 7. 啟動本地GraphQL代理伺服器
 
-   要使Magento GraphQL端點在本地可用於CIF附加元件和CIF元件，請使用以下命令。 GraphQL端點將可在中使用 `http://localhost:3002/graphql`。
+   要使Magento GraphQL端點在本地可用於CIF附加元件和CIF元件，請使用以下命令。 GraphQL端點隨後將可在`http://localhost:3002/graphql`上使用。
 範例Mac OSX:
 
    ```bash
@@ -101,35 +101,35 @@ The CIF add-on can be downloaded as a zip file from the [Software Distribution p
    ```bash
    npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
    ```
-   引數 `--proxyPartial` 需要接收空字串。
+   引數`--proxyPartial`需要接收空字串。
 
-   您可以通過將GraphQL查詢工具指向並測試一些查詢來測 `http://localhost:3002/graphql` 試本地GraphQL代理。
+   通過將GraphQL查詢工具指向`http://localhost:3002/graphql`並測試一些查詢，可以測試本地GraphQL代理。
 
 8. 登入AEM SDK並設定CIF以使用本機GraphQL代理伺服器
 
    導覽至CIF雲端服務設定（工具>雲端服務> CIF設定）。 開啟專案所用組態的屬性檢視。
 
-   對於屬 `GraphQL Proxy Path` 性，請使用本地代理伺服器端點 `http://localhost:3002/graphql`。 儲存設定。
+   對於`GraphQL Proxy Path`屬性，請使用本地代理伺服器端點`http://localhost:3002/graphql`。 儲存設定。
 
 >[!NOTE]
 >
 >不要將步驟8的配置推送到項目回購中。 此設定僅是本端開發設定的必要項。 AEM作為雲端服務環境已在上線期間與GraphQL Proxy一起設定。
 
-通過OSGI控制台驗證設定：`http://localhost:4502/system/console/osgi-installer`。 清單中應包含CIF附加元件相關的組合、內容封裝和OSGI組態，如特徵模型檔中所定義。
+通過OSGI控制台驗證設定： `http://localhost:4502/system/console/osgi-installer`。 清單中應包含CIF附加元件相關的組合、內容封裝和OSGI組態，如特徵模型檔中所定義。
 
-## 專案設定 {#project}
+## 項目設定{#project}
 
 有兩種方式可引導您的CIF專案，以AEM做為雲端服務。
 
 ### 使用AEM Project原型
 
-[AEM Project Archetype](https://github.com/adobe/aem-project-archetype) （AEM專案原型）是引導預先設定專案以開始使用CIF的主要工具。 CIF核心元件和所有必需的配置都可以包含在生成的項目中，並附加一個選項。
+[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)是引導預先設定專案以開始使用CIF的主要工具。 CIF核心元件和所有必需的配置都可以包含在生成的項目中，並附加一個選項。
 
 >[!TIP]
 >
->使用 [AEM Project Archetype 24或更新版本](https://github.com/adobe/aem-project-archetype/releases) ，產生專案。
+>使用[AEM Project Archetype 24或更新版本](https://github.com/adobe/aem-project-archetype/releases)產生專案。
 
-請參閱「AEM專案原型 [使用指示](https://github.com/adobe/aem-project-archetype#usage) 」，瞭解如何產生AEM專案。 要將CIF納入項目，請使用選 `includeCommerce` 項。
+請參閱「AEM專案原型[使用指示](https://github.com/adobe/aem-project-archetype#usage)」，瞭解如何產生AEM專案。 要將CIF包括在項目中，請使用`includeCommerce`選項。
 
 例如：
 
@@ -147,7 +147,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-CIF核心元件可以通過包括提供的包或單獨使用CIF內容包 `all` 和相關OSGI包來用於任何項目。 要手動將CIF核心元件添加到項目，請使用以下相關性：
+CIF核心元件可通過包括提供的`all`包或單獨使用CIF內容包和相關OSGI包來用於任何項目。 要手動將CIF核心元件添加到項目，請使用以下相關性：
 
 ```java
 <dependency>
@@ -175,13 +175,13 @@ CIF核心元件可以通過包括提供的包或單獨使用CIF內容包 `all` �
 
 ### 使用AEM Venia Reference Store
 
-啟動CIF專案的第二個選項是仿製並使用 [AEM Venia參考商店](https://github.com/adobe/aem-cif-guides-venia)。 AEM Venia Reference Store是範例參考店面應用程式，示範CIF核心元件對AEM的使用方式。 它旨在做為一組最佳範例，以及開發您自己功能的潛在起點。
+啟動CIF專案的第二個選擇是克隆並使用[AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)。 AEM Venia Reference Store是範例參考店面應用程式，示範CIF核心元件對AEM的使用方式。 它旨在做為一組最佳範例，以及開發您自己功能的潛在起點。
 
 若要開始使用Venia Reference Store，只需仿製Git儲存庫，然後開始根據您的需求自訂專案。
 
 >[!NOTE]
 >
->Venia Reference Store專案包含兩個AEM的Cloud Service和AEM 6.5建置設定檔。請查看 [專案readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) ，瞭解其使用方式。
+>Venia Reference Store專案包含兩個AEM的Cloud Service和AEM 6.5建置設定檔。請查看[專案readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md)以瞭解其使用方式。
 
 ## 其他資源
 
