@@ -12,18 +12,18 @@ ht-degree: 1%
 
 # 部署程式碼 {#deploy-your-code}
 
-## 使用Cloud Manager部署程式碼 {#deploying-code-with-cloud-manager}
+## 使用Cloud Manager部署代碼{#deploying-code-with-cloud-manager}
 
 一旦配置了生產管線（儲存庫、環境和測試環境），您就可以部署代碼。
 
-1. 按一 **下** 「從雲端管理員部署」，開始部署程式。
+1. 從Cloud Manager按一下「**部署**」以開始部署程式。
 
    ![](assets/deploy-code1.png)
 
 
-1. 將顯 **示「管線執行** 」螢幕。
+1. 將顯示&#x200B;**管線執行**&#x200B;螢幕。
 
-   按一下 **Build** （生成）啟動進程。
+   按一下&#x200B;**Build**&#x200B;啟動進程。
 
    ![](assets/deploy-code2.png)
 
@@ -42,8 +42,8 @@ ht-degree: 1%
    「 **舞台部署**」涉及以下步驟：
 
    * 驗證：此步驟確保將管線配置為使用當前可用資源，例如，已配置的分支存在，環境可用。
-   * 構建和單元測試：此步驟會執行容器化的建立程式。 有關 [構建環境的詳細資訊](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) ，請參閱構建環境詳細資訊。
-   * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](/help/implementing/cloud-manager/code-quality-testing.md) ，請參閱程式碼品質測試。
+   * 構建和單元測試：此步驟會執行容器化的建立程式。 有關構建環境的詳細資訊，請參閱[構建環境詳細資訊](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md)。
+   * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需測試程式的詳細資訊，請參閱[程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)。
    * 建立影像：此步驟包含用於構建映像的進程的日誌檔案。 此程式負責將構建步驟生成的內容和調度程式包轉換為Docker映像和Kubernetes配置。
    * 部署至舞台
 
@@ -51,13 +51,13 @@ ht-degree: 1%
    測試 **階段**，包括下列步驟：
 
    * 產品功能測試：Cloud Manager管道執行將支援對舞台環境運行的測試的執行。
-請參閱產 [品功能測試](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) ，以取得詳細資訊。
+如需詳細資訊，請參閱[產品功能測試](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)。
 
    * 自訂功能測試：管線中的此步驟始終存在，不能跳過。 但是，如果構建版本未生成測試JAR，則預設情況下測試通過。\
-      請參閱自 [訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) ，以取得詳細資訊。
+      如需詳細資訊，請參閱[自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。
 
    * 體驗審核：管線中的此步驟始終存在，不能跳過。 執行生產管線時，會在執行檢查的自訂功能測試後加入體驗稽核步驟。 所設定的頁面將會提交至服務並進行評估。 這些結果是提供資訊的，讓使用者可以查看目前和先前的分數之間的分數和變更。 此見解對於判斷目前部署中是否會引入回歸，十分有用。
-如需詳細 [資訊，請參閱瞭解體驗稽核](/help/implementing/cloud-manager/experience-audit-testing.md) 結果。
+如需詳細資訊，請參閱[瞭解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
       ![](assets/testing-tab.png)
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 
 
-## 部署程式 {#deployment-process}
+## 部署過程{#deployment-process}
 
 下節說明AEM和Dispatcher套件在階段階段和生產階段的部署方式。
 
@@ -94,7 +94,7 @@ Cloud Manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
 
    1. 當前配置將備份並複製到臨時位置
    1. 除不可變檔案外，所有配置都將被刪除。 有關詳細資訊，請參閱管理Dispatcher配置。 這會清除目錄，以確保不會留下孤立的檔案。
-   1. 該對象被提取到目 `httpd` 錄。  不會覆寫不可變的檔案。 在部署時，您對git儲存庫中不可變檔案所做的任何更改都將被忽略。  這些檔案是AMS調度器框架的核心檔案，不能更改。
+   1. 該對象被提取到`httpd`目錄。  不會覆寫不可變的檔案。 在部署時，您對git儲存庫中不可變檔案所做的任何更改都將被忽略。  這些檔案是AMS調度器框架的核心檔案，不能更改。
    1. Apache會執行組態測試。 如果未找到錯誤，則重新載入服務。 如果發生錯誤，則從備份中恢復配置，重新載入服務，並將錯誤報告回Cloud Manager。
    1. 在流水線配置中指定的每個路徑都無效或從調度器快取中刷新。
 
@@ -108,7 +108,7 @@ Cloud Manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
    >
    >您可以跳過開發和階段部署中的負載平衡器更改，即在非生產流水線、開發人員環境和生產流水線中分離和附加步驟，以用於階段環境。
 
-### 部署至生產階段 {#deployment-production-phase}
+### 部署到生產階段{#deployment-production-phase}
 
 部署至生產拓撲的程式略有不同，以盡量降低對AEM網站訪客的影響。
 
