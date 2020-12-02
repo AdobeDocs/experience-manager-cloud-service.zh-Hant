@@ -28,9 +28,9 @@ AEM安裝通常至少包含兩個環境：
 
 在作者環境中，AEM的功能可透過AEM的編寫UI取得。 針對發佈環境，您設計的整個介面外觀和感覺都提供給您的使用者。
 
-## 作者環境 {#author-environment}
+## 作者環境{#author-environment}
 
-作者的工作環境稱為作 **者環境**。 這為建立內容提供了易於使用的介面(圖形用戶介面（GUI或UI）)。 它要求作者使用已指派適當存取權限的帳戶登入。
+作者在&#x200B;**author環境**&#x200B;中工作。 這為建立內容提供了易於使用的介面(圖形用戶介面（GUI或UI）)。 它要求作者使用已指派適當存取權限的帳戶登入。
 
 >[!NOTE]
 >
@@ -53,12 +53,12 @@ AEM安裝通常至少包含兩個環境：
 >
 >AEM也是從作者環境管理。
 
-## 發佈環境 {#publish-environment}
+## 發佈環境{#publish-environment}
 
-準備就緒後，您網站的內容會發佈至發 **布環境**。 在這裡，網站的頁面會根據設計介面的外觀和感覺提供給預期的讀者。
+準備就緒後，您網站的內容會發佈至&#x200B;**發佈環境**。 在這裡，網站的頁面會根據設計介面的外觀和感覺提供給預期的讀者。
 
-如需有關發佈和取消發佈頁面的詳細資訊，請參閱檔案發 [布頁面。](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
+如需有關發佈和取消發佈頁面的詳細資訊，請參閱檔案[發佈頁面。](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
 
 ## Dispatcher {#dispatcher}
 
-為了最佳化網站訪客的效能，Dispatcher **[實作](/help/implementing/dispatcher/overview.md)** 負載平衡和快取。
+為了最佳化網站訪客的效能，**[dispatcher](/help/implementing/dispatcher/overview.md)**&#x200B;實作負載平衡和快取。
