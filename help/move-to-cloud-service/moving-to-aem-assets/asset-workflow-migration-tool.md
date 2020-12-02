@@ -20,9 +20,9 @@ ht-degree: 46%
 
 此公用程式可讓 AEM 開發人員將現有的 AEM 資產處理工作流程移轉至 AEM as a Cloud Service。
 
-## 支援的工作流程 {#migration-support-for-workflows}
+## 支援的工作流程{#migration-support-for-workflows}
 
-工作流程支援的移轉層級不同。 請參閱此 [特定工作流程清單](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties)。 根據所提供的支援，工作流程分為下列類別。 Adobe支援移轉列在、或類別中 `SUPPORTED`的 `REQUIRED`工作 `OPTIONAL` 流程。 不支援其他類別中提及的工作流程步驟。
+工作流程支援的移轉層級不同。 請參閱此[特定工作流程清單](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties)。 根據所提供的支援，工作流程分為下列類別。 Adobe支援移轉`SUPPORTED`、`REQUIRED`或`OPTIONAL`類別中所列的工作流程。 不支援其他類別中提及的工作流程步驟。
 
 * `SUPPORTED`:雲端服務 [!DNL Experience Manager Assets] 支援的功能。
 * `OPTIONAL`:雲端服務 [!DNL Experience Manager Assets] 中的可選功能。
