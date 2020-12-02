@@ -18,11 +18,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->請記住，您也可 [以在頁面](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) 上提供意見回應。
+>別忘了，[comments](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)也提供頁面上的意見回應。
 
 ## 註解 {#annotations}
 
-建立和 [查看注釋時](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) ，使用特殊模式。
+特殊的[mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)用於建立和查看注釋。
 
 >[!CAUTION]
 >
@@ -32,7 +32,7 @@ ht-degree: 1%
 >
 >視您的需求而定，您也可以開發工作流程，在新增、更新或刪除註解時傳送通知。
 
-### 為元件加上註解 {#annotating-a-component}
+### 為元件{#annotating-a-component}添加註釋
 
 「註解」模式可讓您在內容上建立、編輯、移動或刪除註解：
 
@@ -99,15 +99,15 @@ ht-degree: 1%
 >
 >單個元件類型的定義確定是否可在該元件的實例上添加註釋。
 
-## 注釋指示器 {#annotation-indicator}
+## 注釋指示符{#annotation-indicator}
 
 註解不會顯示在「編輯」模式中，但工具列右上角的標章會顯示目前頁面的註解數。 徽章會取代預設的「註解」圖示，但仍可當成快速連結，切換至「註解」模式：
 
 ![注釋指示器](/help/sites-cloud/authoring/assets/annotation-indicator.png)
 
-## 為其他資源加上註解 {#annotating-other-resources}
+## 為其他資源{#annotating-other-resources}添加註釋
 
 除了元件外，您還可以註解各種資源：
 
-* 為資產加上注 [解資產](/help/assets/manage-digital-assets.md#annotating)
-* 為視訊資產加上注 [解視訊資產](/help/assets/manage-video-assets.md#annotate-video-assets)
+* 為資產[註解資產](/help/assets/manage-digital-assets.md#annotating)
+* 為視訊資產加上註解[為視訊資產加上註解](/help/assets/manage-video-assets.md#annotate-video-assets)
