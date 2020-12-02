@@ -10,7 +10,7 @@ ht-degree: 5%
 ---
 
 
-# 內容服務的JSON匯出器 {#json-exporter-for-content-services}
+# 內容服務的JSON匯出器{#json-exporter-for-content-services}
 
 AEM Content Services的設計目的，是將AEM中／來自網頁的內容描述和傳送概括化，使其超出網頁的重點。
 
@@ -22,11 +22,11 @@ AEM Content Services的設計目的，是將AEM中／來自網頁的內容描述
 
 透過使用結構化內容的內容片段，您可以使用JSON匯出器來提供內容服務，以JSON資料模型格式傳送(y)AEM頁面的內容。 然後，您自己的應用程式就可使用這個功能。
 
-## 包含內容片段核心元件的JSON匯出器 {#json-exporter-with-content-fragment-core-components}
+## 包含內容片段核心元件{#json-exporter-with-content-fragment-core-components}的JSON匯出器
 
 使用AEM JSON匯出器，您可以以JSON資料模型格式傳送(y)AEM頁面的內容。 然後，您自己的應用程式就可使用這個功能。
 
-在AEM中，使用選擇器和擴充功能來 `model` 達成 `.json` 傳送。
+在AEM中，傳送是使用選擇器`model`和`.json`擴充功能來完成。
 
 `.model.json`
 
@@ -42,7 +42,7 @@ AEM Content Services的設計目的，是將AEM中／來自網頁的內容描述
 
 您也可以透過明確定位結構化內容片段來提供內容。
 
-這是使用片段的整個路徑(透過 `jcr:content`);例如，加上尾碼，如。
+這是使用片段的整個路徑（透過`jcr:content`）完成；例如，加上尾碼，如。
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
@@ -60,11 +60,11 @@ AEM Content Services的設計目的，是將AEM中／來自網頁的內容描述
 
    >[!NOTE]
    >
-   >您可以 [調整自己的元件](enabling-json-exporter.md) ，以存取和使用此資料。
+   >您可以[調整您自己的元件](enabling-json-exporter.md)以存取和使用此資料。
 
    >[!NOTE]
    >
-   >雖然不是標準實作，但 [支援多個選擇器](enabling-json-exporter.md#multiple-selectors) , `model` 但必須是第一個。
+   >雖然不是標準實作，但支援[多個選擇器，](enabling-json-exporter.md#multiple-selectors)但`model`必須是第一個。
 
 ### 更多資訊 {#further-information}
 
@@ -77,11 +77,11 @@ AEM Content Services的設計目的，是將AEM中／來自網頁的內容描述
 * AEM with JSON:
    * [為元件啟用JSON匯出](enabling-json-exporter.md)
 
-## 相關檔案 {#related-documentation}
+## 相關文檔{#related-documentation}
 
 如需詳細資訊，請參閱：
 
 * [資產使用指南中的內容片段](/help/assets/content-fragments/content-fragments.md)
 * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 * [使用內容片段製作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) 和內容 [片段元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+* [核心](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) 元件和內 [容片段元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
