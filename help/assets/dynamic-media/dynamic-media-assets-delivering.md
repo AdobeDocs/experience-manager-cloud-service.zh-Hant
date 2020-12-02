@@ -17,7 +17,7 @@ ht-degree: 13%
 使用動態媒體時，您有數個選項：
 
 * 如果您的網站是由AEM代管，則您想要直接將動態媒體資產新增至您的頁面。
-* 如果您的網站未在AEM上，請參閱 [在觸控式使用者介面中的「傳送動態媒體資產](/help/assets/dynamic-media/delivering-dynamic-media-assets.md) 」。
+* 如果您的網站未在AEM上，請參閱觸控式使用者介面中的「傳送動態媒體資產」[。](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 
 如需詳細資訊，請參閱下列主題：
 
