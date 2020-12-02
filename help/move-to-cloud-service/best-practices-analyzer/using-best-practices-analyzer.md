@@ -10,25 +10,25 @@ ht-degree: 47%
 ---
 
 
-# 使用最佳實踐分析器 {#using-best-practices-analyzer}
+# 使用最佳實踐分析器{#using-best-practices-analyzer}
 
-## 使用最佳實踐分析器的重要考慮事項 {#imp-considerations}
+## 使用最佳實踐分析器的重要注意事項{#imp-considerations}
 
 請依照以下章節瞭解執行最佳實務分析器(BPA)的重要考量事項：
 
-* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/deploying/upgrading/pattern-detector.html). BPA使用的Pattern Detector版本包含在BPA安裝包中。
+* BPA報表是使用Adobe Experience Manager(AEM)[Pattern Detector](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/deploying/upgrading/pattern-detector.html)的輸出建立。 BPA使用的Pattern Detector版本包含在BPA安裝包中。
 
-* BPA may only be run by the **admin** user or a user in the **administrators** group.
+* BPA只能由&#x200B;**admin**&#x200B;用戶或&#x200B;**administrators**&#x200B;組中的用戶運行。
 
 * BPA在6.1版及更高版本的AEM例項上受支援。
 
    >[!NOTE]
-   > Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
+   > 如需在AEM 6.1上安裝BPA的特殊要求，請參閱[在AEM 6.1上安裝BPA。](#installing-on-aem61)
 
-* BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
+* BPA可在任何環境上運行，但是最好在&#x200B;*Stage*&#x200B;環境上運行。
 
    >[!NOTE]
-   >In order to avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. 或者，您可以在複製的生產&#x200B;*製作*&#x200B;環境中執行 CRA。
+   >為避免對業務關鍵型實例造成影響，建議您在&#x200B;*Author*&#x200B;環境上運行BPA，該環境盡可能靠近&#x200B;*Production*&#x200B;環境中的定製、配置、內容和用戶應用程式方面。 或者，您可以在複製的生產&#x200B;*製作*&#x200B;環境中執行 CRA。
 
 * 生成BPA報告內容可能需要相當長的時間，從幾分鐘到幾小時。 所需的時間主要取決於 AEM 存放庫內容的大小和性質、AEM 版本和其他因素。
 
@@ -39,19 +39,19 @@ ht-degree: 47%
 Best Practices Analyzer可從「軟體散發」入口網站下載為zip檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。
 
 >[!NOTE]
->Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
+>從[軟體分發](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)入口網站下載最佳實踐分析器。
 
-## 查看最佳實踐分析器報告 {#viewing-report}
+## 查看最佳實踐分析器報告{#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 和更新版本 {#aem-later-versions}
 
 請依照本節內容瞭解如何查看最佳實踐分析器報告：
 
-1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
+1. 選擇Adobe Experience Manager並導覽至工具-> **操作** -> **最佳實務分析器**。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. 按一下「 **產生報表** 」以執行最佳實務分析器。
+1. 按一下&#x200B;**生成報告**&#x200B;以執行最佳實踐分析器。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -68,12 +68,12 @@ Best Practices Analyzer可從「軟體散發」入口網站下載為zip檔案。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+1. 您可以選擇按一下&#x200B;**CSV**，以逗號分隔值(CSV)格式下載報表，如下圖所示。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
+   >您可以按一下&#x200B;**重新整理報表**，強制BPA清除其快取並重新產生報表。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
@@ -92,7 +92,7 @@ Adobe Experience Manager 6.2中的「最佳實務分析器」工具僅限於產�
 >[!NOTE]
 >在所有版本中，隨附的模式偵測器皆可獨立執行。
 
-## 解讀最佳實踐分析器報告 {#cra-report}
+## 解讀最佳實踐分析器報告{#cra-report}
 
 在AEM例項中執行「最佳實務分析器」工具時，報表會在工具視窗中顯示為結果。
 
@@ -109,7 +109,7 @@ Adobe Experience Manager 6.2中的「最佳實務分析器」工具僅限於產�
 系統會為每個結果指派一個重要性層級，以指出動作的概略優先順序。
 
 >[!NOTE]
->若要進一步瞭解每個「尋找類別」，請參閱「模 [式偵測器類別」](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)。
+>若要進一步瞭解每個「尋找類別」，請參閱[Pattern Detector Categories](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)。
 
 請參考下表以了解重要性層級：
 
@@ -121,9 +121,9 @@ Adobe Experience Manager 6.2中的「最佳實務分析器」工具僅限於產�
 | 關鍵 | 此結果很可能是升級問題，必須解決以防止失去功能或效能。 |
 
 
-## 解讀最佳實務分析器CSV報告 {#cra-csv-report}
+## 解讀最佳實踐分析器CSV報告{#cra-csv-report}
 
-When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. 根據您的瀏覽器設定，此報表將會以檔案格式自動下載，且具有預設名稱 `results.csv`。
+當您從AEM例項按一下&#x200B;**CSV**&#x200B;選項時，「最佳實務分析器」報表的CSV格式會從內容快取建立，並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報表將會以檔案格式自動下載，且具有預設名稱 `results.csv`。
 
 如果快取已過期，則會在 CSV 檔案建置和下載之前重新產生報表。
 
@@ -147,7 +147,7 @@ CSV 格式報表的欄包括：
 
 BPA提供HTTP介面，可用作AEM中使用者介面的替代選項。 該介面同時支援 HEAD 和 GET 命令。它可用於生成BPA報告並以三種格式之一返回：JSON、CSV和Tab分隔值(TSV)。
 
-The following URLs are available for HTTP access, where `<host>` is the hostname, and port if necessary, of the server on which the BPA is installed:
+以下URL可用於HTTP訪問，其中`<host>`是安裝BPA的伺服器的主機名和埠（如果需要）:
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` (JSON 格式)
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` (CSV 格式)
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` (TSV 格式)
@@ -167,17 +167,17 @@ HTTP 介面可用於多種方法中。
 
 此介面使用下列 HTTP 標題：
 
-* `Cache-Control: max-age=<seconds>`:以秒為單位指定快取新鮮度存留期。 (請參閱 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。)
-* `Prefer: respond-async`:指定伺服器應非同步響應。 (請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。)
-* `Prefer: return=minimal`:指定伺服器應返回最小響應。 (請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)。)
+* `Cache-Control: max-age=<seconds>`:以秒為單位指定快取新鮮度存留期。(請參閱 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。)
+* `Prefer: respond-async`:指定伺服器應非同步響應。(請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。)
+* `Prefer: return=minimal`:指定伺服器應返回最小響應。(請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)。)
 
 在不方便使用 HTTP 標題時，可權衡使用下列 HTTP 查詢參數：
 
-* `max-age` （數字、可選）:以秒為單位指定快取新鮮度存留期。 此數字必須大於或等於 0。預設新鮮度存留期為86400秒。 若沒有此參數或對應的標題，則會使用新的快取來提供24小時的請求，此時必須重新產生快取。 使 `max-age=0` 用將強制清除快取，並使用新產生的快取的先前非零新鮮度期限，開始重新產生報表。
-* `respond-async` （布林值，可選）:指定應非同步提供響應。 Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. 如果快取為最新狀態，此參數就沒有效用。The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
-* `may-refresh-cache` （布林值，可選）:指定當當前快取為空、過時或即將過時時，伺服器可以響應請求刷新快取。 如 `may-refresh-cache=true`果或未指定，則伺服器可以啟動將調用模式檢測器並刷新快取的後台任務。 如 `may-refresh-cache=false` 果快取為空或過時，伺服器將不會啟動原本會執行的任何重新整理工作，此時報表會為空。 任何已在處理中的刷新任務都將不受此參數的影響。
-* `return-minimal` （布林值，可選）:指定來自伺服器的回應應僅包含包含進度指示和JSON格式快取狀態的狀態。 如 `return-minimal=true`果，則響應主體將限制為狀態對象。 如 `return-minimal=false`果或未指定，則會提供完整回應。
-* `log-findings` （布林值，可選）:指定伺服器在首次構建或刷新快取時應記錄其內容。 快取中的每個尋找都會記錄為JSON字串。 只有在請求產生新快取 `log-findings=true` 時，才會發生此記錄。
+* `max-age` （數字、可選）:以秒為單位指定快取新鮮度存留期。此數字必須大於或等於 0。預設新鮮度存留期為86400秒。 若沒有此參數或對應的標題，則會使用新的快取來提供24小時的請求，此時必須重新產生快取。 使用`max-age=0`將強制清除快取，並使用新產生的快取的先前非零新鮮度存留期，開始重新產生報表。
+* `respond-async` （布林值，可選）:指定應非同步提供響應。當快取過時使用`respond-async=true`會導致伺服器傳回`202 Accepted`的回應，而不需等待快取重新整理及產生報表。 如果快取為最新狀態，此參數就沒有效用。預設值為`false`。如果沒有此參數或對應的標題，伺服器將同步響應，這可能需要相當長的時間，並需要調整HTTP客戶端的最大響應時間。
+* `may-refresh-cache` （布林值，可選）:指定當當前快取為空、過時或即將過時時，伺服器可以響應請求刷新快取。如果`may-refresh-cache=true`或未指定，則伺服器可啟動後台任務，該任務將調用模式檢測器並刷新快取。 如果`may-refresh-cache=false`，則伺服器將不會啟動任何刷新任務，否則，如果快取為空或過時，伺服器將不會啟動任何刷新任務，在這種情況下，報告將為空。 任何已在處理中的刷新任務都將不受此參數的影響。
+* `return-minimal` （布林值，可選）:指定來自伺服器的回應應僅包含包含進度指示和JSON格式快取狀態的狀態。如果`return-minimal=true`，則響應主體將限制為狀態對象。 如果`return-minimal=false`或未指定，則會提供完整的回應。
+* `log-findings` （布林值，可選）:指定伺服器在首次構建或刷新快取時應記錄其內容。快取中的每個尋找都會記錄為JSON字串。 僅當`log-findings=true`請求生成新快取時，才會進行此記錄。
 
 當 HTTP 標頭和對應的查詢參數均存在時，將會以查詢參數優先。
 
@@ -191,8 +191,8 @@ HTTP 介面可用於多種方法中。
 可能的回應值如下：
 
 * `200 OK`:指出回應包含來自模式偵測器的發現，這些發現是在快取的新鮮期內產生的。
-* `202 Accepted`:用於指示快取過時。 當且 `respond-async=true` 此 `may-refresh-cache=true` 回應表示正在進行刷新任務。 當此 `may-refresh-cache=false` 回應僅表示快取過時。
-* `400 Bad Request`：表示要求發生錯誤。A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
+* `202 Accepted`:用於指示快取過時。當`respond-async=true`和`may-refresh-cache=true`時，此響應表示正在執行刷新任務。 當`may-refresh-cache=false`時，此響應只表示快取過時。
+* `400 Bad Request`：表示要求發生錯誤。「問題詳細資訊」格式的消息（請參見[RFC 7807](https://tools.ietf.org/html/rfc7807)）提供了詳細資訊。
 * `401 Unauthorized`:表示請求未獲得授權。
 * `500 Internal Server Error`：表示發生了內部伺服器錯誤。「問題詳細資料」格式的訊息可提供更多詳細資料。
 * `503 Service Unavailable`：表示伺服器正在處理另一個回應，而無法及時處理此要求。只有在提出同步要求時，才可能發生這種情況。「問題詳細資料」格式的訊息可提供更多詳細資料。
@@ -210,7 +210,7 @@ HTTP 介面可用於多種方法中。
 
 ### 在 AEM 6.1 上安裝 {#installing-on-aem61}
 
-BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. 此帳戶適用於 AEM 6.2 和更新版本。On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
+BPA利用名為`repository-reader-service`的系統服務用戶帳戶來執行模式檢測器。 此帳戶適用於 AEM 6.2 和更新版本。在AEM 6.1上，必須在&#x200B;*安裝BPA之前先建立此帳戶，方法如下：*
 
 1. 依照[建立新的服務使用者](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)中的指示建立使用者。將 UserID 設為 `repository-reader-service`，並將中繼路徑保留為空白，然後按一下綠色核取記號。
 
