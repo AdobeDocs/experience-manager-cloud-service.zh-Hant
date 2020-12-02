@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 自適應設計 {#responsive-design}
+# 自適應設計{#responsive-design}
 
 設計您的體驗，以配合客戶的檢視區顯示。 透過多方互動設計，可以在多種裝置上以兩種方向有效顯示相同的頁面。 下列影像示範頁面回應檢視區大小變更的一些方式：
 
@@ -36,9 +36,9 @@ ht-degree: 0%
 * [流體格線](#developing-a-fluid-grid)
 * [最適化影像](#using-adaptive-images)
 
-在設計時，使用 **Emulator** （模擬器）工具列來預覽各種螢幕大小的頁面。
+在設計時，使用&#x200B;**Emulator**&#x200B;工具列來預覽各種螢幕大小的頁面。
 
-## 開發前 {#before-you-develop}
+## 開發{#before-you-develop}之前
 
 在您開發支援網頁的AEM應用程式之前，應先做幾項設計決策。 例如，您需要有下列資訊：
 
@@ -46,29 +46,29 @@ ht-degree: 0%
 * 目標視區大小
 * 每個目標視區大小的頁面佈局
 
-### 應用程式結構 {#application-structure}
+### 應用程式結構{#application-structure}
 
 典型的AEM應用程式結構支援所有互動式設計實作：
 
-* 頁面元件位於下方 `/apps/<application_name>/components`
-* 範本位於下方 `/apps/<application_name>/templates`
+* 頁面元件位於`/apps/<application_name>/components`下方
+* 範本位於`/apps/<application_name>/templates`下方
 
-## 使用媒體查詢 {#using-media-queries}
+## 使用媒體查詢{#using-media-queries}
 
 媒體查詢可選擇性使用CSS樣式來轉換頁面。 AEM開發工具和功能可讓您在應用程式中有效且有效率地建置媒體查詢。
 
-W3C群組提供介 [質查詢建議](https://www.w3.org/TR/css3-mediaqueries/) ，說明此CSS3功能和語法。
+W3C群組提供描述此CSS3功能和語法的[媒體查詢](https://www.w3.org/TR/css3-mediaqueries/)建議。
 
-### 建立CSS檔案 {#creating-the-css-file}
+### 建立CSS檔案{#creating-the-css-file}
 
 在CSS檔案中，根據您所定位裝置的屬性來定義媒體查詢。 以下實施策略對於管理每個媒體查詢的樣式非常有效：
 
-* 使用「 [用戶端程式庫」資料夾](clientlibs.md) ，定義在轉譯頁面時組合的CSS。
+* 使用[Client Library資料夾](clientlibs.md)來定義呈現頁面時組合的CSS。
 * 在個別的CSS檔案中定義每個媒體查詢和相關的樣式。 使用代表媒體查詢裝置功能的檔案名稱很實用。
 * 在個別的CSS檔案中定義所有裝置通用的樣式。
 * 在「用戶端程式庫」檔案夾的css.txt檔案中，依組合的CSS檔案中的要求來排序清單CSS檔案。
 
-WKND教 [學課程](develop-wknd-tutorial.md) （WKND教學課程）使用此策略來定義網站設計中的樣式。 WKND使用的CSS檔案位於 `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`。
+[WKND教學課程](develop-wknd-tutorial.md)使用此策略來定義網站設計中的樣式。 WKND使用的CSS檔案位於`/apps/wknd/clientlibs/clientlib-grid/less/grid.less`。
 
 <!--
 ## Previewing for Specific Devices {#previewing-for-specific-devices}
