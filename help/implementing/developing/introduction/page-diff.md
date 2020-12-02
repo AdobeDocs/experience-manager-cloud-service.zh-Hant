@@ -10,17 +10,17 @@ ht-degree: 0%
 ---
 
 
-# 開發與頁面比較 {#developing-and-page-diff}
+# 開發和頁面差異{#developing-and-page-diff}
 
-## 功能概觀 {#feature-overview}
+## 功能概觀{#feature-overview}
 
 內容建立是一個反覆的過程。 製作具效率的內容需要能夠查看從一個迭代到另一個迭代的變化。 檢視一個頁面版本，然後檢視另一個頁面版本則無效率且容易出錯。 作者想要能夠並排比較目前頁面與先前版本的差異。
 
-頁面差異可讓使用者比較目前頁面與啟動、舊版等。 有關此用戶功能的詳細資訊，請參 [閱頁面差異](/help/sites-cloud/authoring/features/page-diff.md)。
+頁面差異可讓使用者比較目前頁面與啟動、舊版等。 有關此用戶功能的詳細資訊，請參見[頁面差異](/help/sites-cloud/authoring/features/page-diff.md)。
 
-## 操作詳細資訊 {#operation-details}
+## 操作詳細資訊{#operation-details}
 
-比較頁面版本時，使用者想要比較的舊版會由AEM在背景重新建立，以利比較。 這需要能夠演算內容以 [進行並排比較](/help/sites-cloud/authoring/features/page-diff.md)。
+比較頁面版本時，使用者想要比較的舊版會由AEM在背景重新建立，以利比較。 這需要能夠呈現內容[以便並排比較](/help/sites-cloud/authoring/features/page-diff.md)。
 
 此娛樂作業由AEM在內部完成，而且對使用者透明，不需要干預。 但是，在CRX DE Lite中查看儲存庫的管理員在內容結構中可以看到這些重新建立的版本。
 
