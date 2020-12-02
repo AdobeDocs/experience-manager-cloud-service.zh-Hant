@@ -19,29 +19,29 @@ ht-degree: 0%
 ---
 
 
-# 自訂AEM CIF核心元件 {#customize-cif-components}
+# 自訂AEM CIF核心元件{#customize-cif-components}
 
-CIF Venia Project [(](https://github.com/adobe/aem-cif-guides-venia) CIF Venia Project [)是使用](https://github.com/adobe/aem-core-cif-components)CIF Core Components的參考代碼庫。 在本教學課程中，您將進一步擴充 [Product Teaser元件](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) ，以顯示Magento的自訂屬性。 您也將進一步瞭解AEM和Magento之間的GraphQL整合，以及CIF核心元件提供的擴充勾點。
+[CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)是使用[CIF核心元件](https://github.com/adobe/aem-core-cif-components)的參考代碼庫。 在本教學課程中，您將進一步擴充[Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser)元件，以顯示Magento的自訂屬性。 您也將進一步瞭解AEM和Magento之間的GraphQL整合，以及CIF核心元件提供的擴充勾點。
 
 >[!TIP]
 >
-> 啟動您 [自己的商務實作時，請使用AEM Project原型](https://github.com/adobe/aem-project-archetype) 。
+> 啟動您自己的商務實作時，請使用[AEM Project原型](https://github.com/adobe/aem-project-archetype)。
 
 ## 您將建立的
 
-Venia品牌最近開始使用可持續材料製造某些產品，而企業希望在產品摘要中顯示 **Eco Friend** badge。 Magento中將會建立新的自訂屬性，以指出產品是否使用 **Eco友好** 物料。 然後，此自訂屬性會新增為GraphQL查詢的一部分，並顯示在指定產品的產品摘要中。
+Venia品牌最近開始使用可持續材料製造某些產品，而企業想要在產品摘要中顯示&#x200B;**Eco Friendly**&#x200B;徽章。 Magento中將會建立新的自訂屬性，以指出產品是否使用&#x200B;**Eco friendly**&#x200B;材料。 然後，此自訂屬性會新增為GraphQL查詢的一部分，並顯示在指定產品的產品摘要中。
 
 ![環保徽章最終實施](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
 ## 必備條件 {#prerequisites}
 
-完成本教學課程時，需要有本機開發環境。 這包括已設定並連線至Magento例項的AEM執行個體。 檢閱使用AEM做為雲 [端服務SDK設定本機開發的需求和步驟](../develop.md)。 要完全遵循本教學課程，您需要權限才能在Magento中 [將「屬性](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) 」新增至「產品」。
+完成本教學課程時，需要有本機開發環境。 這包括已設定並連線至Magento例項的AEM執行個體。 檢視[設定使用AEM做為雲端服務SDK的本機開發的需求和步驟。 ](../develop.md)要完全遵循本教程，您需要權限將[屬性添加到Magento中的Product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html)。
 
-您還需要GraphQL IDE(如 [GraphQL](https://github.com/graphql/graphiql) )或瀏覽器擴充功能來運行代碼示例和教程。 如果您安裝瀏覽器擴充功能，請確定它能夠設定請求標題。 在Google Chrome上， [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) 是可執行工作的擴充功能。
+您還需要GraphQL IDE（例如[GraphiQL](https://github.com/graphql/graphiql)）或瀏覽器擴展來運行代碼示例和教程。 如果您安裝瀏覽器擴充功能，請確定它能夠設定請求標題。 在Google Chrome上，[Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja)是可執行工作的擴充功能。
 
-## 複製Venia專案 {#clone-venia-project}
+## 克隆Venia項目{#clone-venia-project}
 
-我們將仿製 [Venia Project](https://github.com/adobe/aem-cif-guides-venia) ，然後覆寫預設樣式。
+我們將仿製[Venia Project](https://github.com/adobe/aem-cif-guides-venia)，然後覆寫預設樣式。
 
 >[!NOTE]
 >
@@ -62,50 +62,50 @@ Venia品牌最近開始使用可持續材料製造某些產品，而企業希望
 
 1. 新增必要的OSGi設定，將您的AEM例項連接至Magento例項，或將設定新增至新建立的專案。
 
-1. 此時，您應該有連接到Magento實例的店面的工作版本。 導覽至 `US` >頁 `Home` 面： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. 此時，您應該有連接到Magento實例的店面的工作版本。 導覽至`US` > `Home`頁面，網址為：[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
 
    您應該會看到，店面目前使用的是Venia主題。 展開店面的「Main Menu（主菜單）」時，您應該會看到各種類別，指出Magento連線正在運作。
 
    ![使用Venia Theme配置的店面](../assets/customize-cif-components/venia-store-configured.png)
 
-## 製作產品摘要 {#author-product-teaser}
+## 製作產品摘要{#author-product-teaser}
 
 本教學課程將擴充產品摘要元件。 首先，將「產品摘要」的新例項新增至首頁，以瞭解基準功能。
 
-1. 導覽至 **網站的首頁** : [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. 導覽至網站的&#x200B;**首頁**:[http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
-2. 將新的產 **** 品摘要元件插入頁面的主版面容器。
+2. 將新的&#x200B;**產品摘要**&#x200B;元件插入頁面的主版面容器。
 
    ![插入產品摘要](../assets/customize-cif-components/product-teaser-add-component.png)
 
-3. 展開「側面板」（如果尚未切換），並將資產搜尋器下拉式清單切換至「產 **品」**。 這應該會顯示已連接Magento實例的可用產品清單。 選取產品 **並拖放** ，到頁面 **上的Product Teaser** 元件上。
+3. 展開「側面板」（如果尚未切換），並將資產搜尋器下拉式清單切換至「產品」****。 這應該會顯示已連接Magento實例的可用產品清單。 選擇產品並將&#x200B;**drag+drop**&#x200B;拖放到頁面上的&#x200B;**產品摘要**&#x200B;元件上。
 
    ![拖放產品摘要](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
    >[!NOTE]
    >
-   > 請注意，您也可以使用對話方塊（按一下扳手圖示）設定元件，以設 *定顯示* 的產品。
+   > 請注意，您也可以使用對話方塊設定元件，以設定顯示的產品（按一下&#x200B;*wrench*&#x200B;圖示）。
 
 4. 您現在應該會看到產品摘要正在顯示產品。 產品名稱和產品價格是顯示的預設屬性。
 
    ![產品摘要——預設樣式](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## 在Magento中新增自訂屬性 {#add-custom-attribute}
+## 在Magento {#add-custom-attribute}中新增自訂屬性
 
-AEM中顯示的產品和產品資料會儲存在Magento中。 接著，使用Magento UI新增 **Eco Friendly** 屬性，作為產品屬性集的一部分。
+AEM中顯示的產品和產品資料會儲存在Magento中。 接著，使用Magento UI新增&#x200B;**Eco Friendly**&#x200B;屬性，作為產品屬性集的一部分。
 
 >[!TIP]
 >
-> 已有自訂 **「是／否** 」屬性做為產品屬性集的一部分？ 您可隨意使用，並略過本節。
+> 已有自訂&#x200B;**是／否**&#x200B;屬性做為產品屬性集的一部分？ 您可隨意使用，並略過本節。
 
 1. 登入您的Magento實例。
-1. 導覽至「 **目錄** >產 **品」**。
-1. 更新搜尋篩選器，以尋找在上 **** 一練習中新增至Teaser元件時使用的「可設定產品」。 在編輯模式中開啟產品。
+1. 導覽至&#x200B;**Catalog** > **Products**。
+1. 更新搜尋篩選器，以尋找在上一練習中新增至Teaser元件時使用的&#x200B;**Configurable Product**。 在編輯模式中開啟產品。
 
    ![搜尋Valeria產品](../assets/customize-cif-components/search-valeria-product.png)
 
-1. 在產品檢視中，按一下「 **新增屬性** > **建立新屬性」**。
-1. 使用下列值 **填寫「新增屬性** 」表單（保留其他值的預設設定）
+1. 在產品視圖中，按一下「添加屬性」>「建立新屬性」。********
+1. 使用下列值填寫&#x200B;**新屬性**&#x200B;表單（保留其他值的預設設定）
 
    | 欄位集 | 欄位標籤 | 值 |
    |-----------|-------------|---------|
@@ -115,35 +115,35 @@ AEM中顯示的產品和產品資料會儲存在Magento中。 接著，使用Mag
 
    ![新屬性表單](../assets/customize-cif-components/attribute-new-form.png)
 
-   完成 **時，按一下** 「儲存屬性」。
+   完成後，按一下「保存屬性」。****
 
-1. 捲動至產品底部，並展開「屬 **性** 」標題。 您應該會看到新的 **Eco Friendly欄位** 。 將切換切換為 **是**。
+1. 捲動至產品底部並展開&#x200B;**Attributes**&#x200B;標題。 您應看到新的&#x200B;**Eco Friendly**&#x200B;欄位。 將切換切換為&#x200B;**Yes**。
 
    ![切換為yes](../assets/customize-cif-components/eco-friendly-toggle-yes.png)
 
-   **儲存** 對產品的變更。
+   **保** 存對產品的更改。
 
    >[!TIP]
    >
-   > 有關管理產品屬 [性的更多詳細資訊，請參閱Magento使用手冊](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html)。
+   > 有關管理[產品屬性的詳細資訊，請參閱Magento使用手冊](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html)。
 
-1. 導覽至「 **系統** >工具 **>快** 取管理 ****」。 由於對資料模式進行了更新，因此我們需要使Magento中的某些快取類型失效。
-1. 選中「配置」旁邊的 **框** ，並提交快取類型以刷新 **。**
+1. 導航至&#x200B;**System** > **Tools** > **Cache Management**。 由於對資料模式進行了更新，因此我們需要使Magento中的某些快取類型失效。
+1. 選中&#x200B;**Configuration**&#x200B;旁邊的框，並提交&#x200B;**Refresh**&#x200B;的快取類型
 
    ![刷新配置快取類型](../assets/customize-cif-components/refresh-configuration-cache-type.png)
 
    >[!TIP]
    >
-   > 有關「快取管 [理」的詳細資訊，請參閱Magento使用手冊](https://docs.magento.com/user-guide/system/cache-management.html)。
+   > 有關[快取管理的詳細資訊，請參閱Magento使用手冊](https://docs.magento.com/user-guide/system/cache-management.html)。
 
-## 使用GraphQL IDE驗證屬性 {#use-graphql-ide}
+## 使用GraphQL IDE驗證屬性{#use-graphql-ide}
 
-在跳至AEM程式碼之前，使用GraphQL IDE來探 [索Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) 非常實用。 與AEM的Magento整合主要是透過一連串的GraphQL查詢完成。 瞭解和修改GraphQL查詢是擴展CIF核心元件的關鍵方法之一。
+在跳至AEM程式碼之前，使用GraphQL IDE來探索[Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/)非常實用。 與AEM的Magento整合主要是透過一連串的GraphQL查詢完成。 瞭解和修改GraphQL查詢是擴展CIF核心元件的關鍵方法之一。
 
-接下來，使用GraphQL IDE驗證屬性 `eco_friendly` 是否已添加到產品屬性集。 本教學課程中的螢幕擷取畫面是使 [用Altair GraphQL用戶端](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja)。
+接下來，使用GraphQL IDE驗證`eco_friendly`屬性是否已添加到產品屬性集。 本教學課程中的截屏使用[Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja)。
 
-1. 開啟GraphQL IDE，並在IDE或擴展 `http://<magento-server>/graphql` 名的URL欄中輸入URL。
-2. 新增下 [列產品查詢](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) ，其中 `YOUR_SKU` 是上一練習中使 **用之產品的SKU** :
+1. 開啟GraphQL IDE，然後在IDE或副檔名的URL欄中輸入URL `http://<magento-server>/graphql`。
+2. 新增下列[products query](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html)，其中`YOUR_SKU`是前一練習中使用之產品的&#x200B;**SKU**:
 
    ```json
      {
@@ -179,29 +179,29 @@ AEM中顯示的產品和產品資料會儲存在Magento中。 接著，使用Mag
 
    ![GraphQL響應示例](../assets/customize-cif-components/sample-graphql-query.png)
 
-   請注意，「是」 **的值** 是1的整 **數**。 當我們使用Java編寫GraphQL查詢時，這將非常有用。
+   請注意，**Yes**&#x200B;的值是&#x200B;**1**&#x200B;的整數。 當我們使用Java編寫GraphQL查詢時，這將非常有用。
 
    >[!TIP]
    >
-   > 有關 [Magento GraphQL的更詳細文檔可在此處找到](https://devdocs.magento.com/guides/v2.4/graphql/index.html)。
+   > 有關[Magento GraphQL的更詳細文檔，請參閱](https://devdocs.magento.com/guides/v2.4/graphql/index.html)。
 
-## 更新Product Teaser的Sling Model {#updating-sling-model-product-teaser}
+## 更新Product Teaser {#updating-sling-model-product-teaser}的Sling Model
 
-接下來，我們將透過實作Sling Model來擴充Product Teaser的商業邏輯。 [Sling Models](https://sling.apache.org/documentation/bundles/models.html)，是註解導向的&quot;POJOs&quot;(Plain Old Java Objects)，可實作元件所需的任何商業邏輯。 Sling Models會與HTL指令碼搭配使用，做為元件的一部分。 我們將遵循Sling Models [的委派模式](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) ，以便我們只擴充現有產品摘要模型的部分。
+接下來，我們將透過實作Sling Model來擴充Product Teaser的商業邏輯。 [Sling Models](https://sling.apache.org/documentation/bundles/models.html)，是註解導向的&quot;POJOs&quot;(Plain Old Java Objects)，可實作元件所需的任何商業邏輯。Sling Models會與HTL指令碼搭配使用，做為元件的一部分。 我們將遵循Sling Models](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)的[委派模式，以便我們只延伸現有產品摘要模型的部分。
 
-Sling Models是以Java形式實作，可在產生的專 **案的** core模組中找到。
+Sling Models是以Java實作，可在產生的專案的&#x200B;**core**&#x200B;模組中找到。
 
-使 [用您選擇的IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) ，匯入Venia專案。 使用的螢幕擷取畫面來自 [Visual Studio程式碼IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)。
+使用您選擇的[IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide)來導入Venia項目。 使用的截屏來自[Visual Studio代碼IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)。
 
-1. 在IDE中，導航至核心模 **塊下** ，以： `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
+1. 在IDE中，導航&#x200B;**core**&#x200B;模組下方的以：`core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`。
 
    ![核心位置IDE](../assets/customize-cif-components/core-location-ide.png)
 
-   `MyProductTeaser.java` 是可擴充CIF產品摘要介面的Java [介面](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) 。
+   `MyProductTeaser.java` 是可擴充CIF ProductTeaser介面的Java [](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) 介面。
 
-   已經新增了命名為的新方 `isShowBadge()` 法，以在產品被視為「新」時顯示徽章。
+   已新增名為`isShowBadge()`的新方法，如果產品被視為「新」，則會顯示徽章。
 
-1. 將新方法添 `isEcoFriendly()` 加到介面：
+1. 將`isEcoFriendly()`新方法添加到介面：
 
    ```java
    @ProviderType
@@ -214,11 +214,11 @@ Sling Models是以Java形式實作，可在產生的專 **案的** core模組中
    }
    ```
 
-   這是我們將引入的一種新方法，用來封裝邏輯，以指出產品的屬性 `eco_friendly` 是設為 **Yes** 或 **No**。
+   我們將引入一種新方法來封裝邏輯，以指出產品的`eco_friendly`屬性是設為&#x200B;**Yes**&#x200B;或&#x200B;**No**。
 
-1. 接下來，檢查 `MyProductTeaserImpl.java` 位置 `core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`。
+1. 接下來，檢查`core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`處的`MyProductTeaserImpl.java`。
 
-   Sling Models [的委派模式](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) , `MyProductTeaserImpl` 可讓您透過屬 `ProductTeaser` 性參考 `sling:resourceSuperType` 模型：
+   Sling Models](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)的[委派模式允許`MyProductTeaserImpl`透過`sling:resourceSuperType`屬性參考`ProductTeaser`模型：
 
    ```java
    @Self
@@ -226,7 +226,7 @@ Sling Models是以Java形式實作，可在產生的專 **案的** core模組中
    private ProductTeaser productTeaser;
    ```
 
-   對於我們不想覆寫或變更的所有方法，我們只要傳回傳回的值即可 `ProductTeaser` 。 例如：
+   對於我們不想覆寫或變更的所有方法，我們只要傳回`ProductTeaser`傳回的值即可。 例如：
 
    ```java
    @Override
@@ -237,7 +237,7 @@ Sling Models是以Java形式實作，可在產生的專 **案的** core模組中
 
    這可將實作所需的Java程式碼量減到最小。
 
-1. AEM CIF核心元件提供的額外擴充點之一，就是 `AbstractProductRetriever` 提供特定產品屬性的存取。 檢查方 `initModel()` 法：
+1. AEM CIF核心元件提供的額外擴充點之一，就是`AbstractProductRetriever`，可存取特定產品屬性。 檢查`initModel()`方法：
 
    ```java
    import javax.annotation.PostConstruct;
@@ -260,11 +260,11 @@ Sling Models是以Java形式實作，可在產生的專 **案的** core模組中
    ...
    ```
 
-   注 `@PostConstruct` 釋可確保在Sling Model初始化時，會立即呼叫此方法。
+   `@PostConstruct`註解可確保在Sling Model初始化時，就會立即呼叫此方法。
 
-   請注意，產品GraphQL查詢已使用檢索附加屬 `extendProductQueryWith` 性的方法進行擴 `created_at` 展。 此屬性稍後會用作方法的一 `isShowBadge()` 部分。
+   請注意，產品GraphQL查詢已使用`extendProductQueryWith`方法進行擴展，以檢索其他`created_at`屬性。 此屬性稍後會用作`isShowBadge()`方法的一部分。
 
-1. 更新GraphQL查詢，將屬 `eco_friendly` 性包含在部分查詢中：
+1. 更新GraphQL查詢，將`eco_friendly`屬性包含在部分查詢中：
 
    ```java
    //MyProductTeaserImpl.java
@@ -286,13 +286,13 @@ Sling Models是以Java形式實作，可在產生的專 **案的** core模組中
    }
    ```
 
-   添加到該方 `extendProductQueryWith` 法是確保模型其餘部分可以使用附加產品屬性的有力方法。 它還將執行的查詢數減到最小。
+   添加到`extendProductQueryWith`方法是確保模型其餘部分可以使用其他產品屬性的有力方法。 它還將執行的查詢數減到最小。
 
-   在上述代碼中`addCustomSimpleField` ，將用於檢索屬 `eco_friendly` 性。 這說明了如何查詢屬於Magento架構一部分的任何自定義屬性。
+   在上述代碼中，`addCustomSimpleField`用於檢索`eco_friendly`屬性。 這說明了如何查詢屬於Magento架構一部分的任何自定義屬性。
 
    >[!NOTE]
    >
-   > 實際 `createdAt()` 上，該方法已作為產品介面的一 [部分實現](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java)。 大部分常見的架構屬性都已實作，因此只使用真正 `addCustomSimpleField` 的自訂屬性。
+   > `createdAt()`方法實際上已作為[產品介面](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java)的一部分實施。 大多數常見的架構屬性都已實作，因此僅針對真正的自訂屬性使用`addCustomSimpleField`。
 
 1. 新增記錄器以協助除錯Java程式碼：
 
@@ -306,7 +306,7 @@ Sling Models是以Java形式實作，可在產生的專 **案的** core模組中
    private static final Logger LOGGER = LoggerFactory.getLogger(MyProductTeaserImpl.class);
    ```
 
-1. 接著，實作方 `isEcoFriendly()` 法：
+1. 接下來，實施`isEcoFriendly()`方法：
 
    ```java
    @Override
@@ -327,17 +327,17 @@ Sling Models是以Java形式實作，可在產生的專 **案的** core模組中
    }
    ```
 
-   在上述方法中， `productRetriever` 用於讀取產品，並 `getAsInteger()` 用於獲取屬性的值 `eco_friendly` 。 根據我們先前運行的GraphQL查詢，我們知道當屬性設 `eco_friendly` 置為&quot;**Yes**&quot;時，預期值實際上是 **1的整數**。
+   在上述方法中，`productRetriever`用於讀取產品，而`getAsInteger()`方法用於獲取`eco_friendly`屬性的值。 根據我們先前運行的GraphQL查詢，我們知道當`eco_friendly`屬性設定為&quot;**Yes**&quot;時的預期值實際上是&#x200B;**1**&#x200B;的整數。
 
-   現在Sling Model已更新，Component標籤需要更新，才能實際顯示以Sling Model為基礎的 **Eco Friendly** 指示符。
+   現在Sling Model已經更新，Component標籤需要更新，才能根據Sling Model實際顯示&#x200B;**Eco Friendly**&#x200B;的指標。
 
-## 自訂產品摘要的標籤 {#customize-markup-product-teaser}
+## 自定義產品摘要{#customize-markup-product-teaser}的標籤
 
-AEM元件的常見擴充功能是修改元件產生的標籤。 這是透過覆寫元件用 [來轉換其標籤的HTL](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html) 指令碼來完成的。 HTML範本語言(HTL)是輕量型範本語言，AEM元件會使用它來根據撰寫的內容動態轉換標籤，讓元件可重複使用。 例如，「產品摘要」可重複使用，以顯示不同的產品。
+AEM元件的常見擴充功能是修改元件產生的標籤。 這是透過覆寫元件用來呈現其標籤的[HTL指令碼](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)來完成的。 HTML範本語言(HTL)是輕量型範本語言，AEM元件會使用它來根據撰寫的內容動態轉換標籤，讓元件可重複使用。 例如，「產品摘要」可重複使用，以顯示不同的產品。
 
-在我們的案例中，我們想要在摘要上方呈現橫幅，以指出產品是以自訂屬性為基礎的「環保」。 自訂元件標 [記的設計模式](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) ，實際上是所有AEM元件（而不只是AEM CIF核心元件）的標準。
+在我們的案例中，我們想要在摘要上方呈現橫幅，以指出產品是以自訂屬性為基礎的「環保」。 [自訂元件之標籤](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup)的設計模式實際上是所有AEM元件的標準，而不只是AEM CIF核心元件。
 
-1. 在IDE中，導航並展開模 `ui.apps` 塊，然後將資料夾層次展開為： `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` 並檢查檔 `.content.xml` 案。
+1. 在IDE中，導航並展開`ui.apps`模組，然後將資料夾層次展開為：`ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser`並檢查`.content.xml`檔案。
 
    ![產品摘要ui.apps](../assets/customize-cif-components/product-teaser-ui-apps-ide.png)
 
@@ -351,9 +351,9 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 這是透過覆�
        componentGroup="Venia - Commerce"/>
    ```
 
-   以上是我們專案中產品摘要元件的元件定義。 請注意屬性 `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`。 這是建立 [Proxy元件的示例](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html#create-proxy-components)。 我們不需從AEM CIF核心元件複製和貼上所有產品摘要HTL指令碼，而是可 `sling:resourceSuperType` 以使用繼承所有功能。
+   以上是我們專案中產品摘要元件的元件定義。 請注意`sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`屬性。 這是建立[Proxy元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html#create-proxy-components)的示例。 我們可以使用`sling:resourceSuperType`繼承所有功能，而不是從AEM CIF核心元件複製和貼上所有產品摘要HTL指令碼。
 
-1. 開啟檔案 `productteaser.html`。 這是來自 `productteaser.html`[CIF Product Teaser的檔案副本](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
+1. 開啟檔案`productteaser.html`。 這是[CIF產品摘要](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)中`productteaser.html`檔案的副本
 
    ```html
    <!--/* productteaser.html */-->
@@ -364,9 +364,9 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 這是透過覆�
        data-sly-test.hasProduct="${product.url}">
    ```
 
-   請注意，Sling Model for `MyProductTeaser` 已使用並指派給變 `product` 數。
+   請注意，`MyProductTeaser`的Sling Model已使用並指派給`product`變數。
 
-1. 修 `productteaser.html` 改以調用前一練 `isEcoFriendly` 習中實現的方法：
+1. 修改`productteaser.html`以調用在上一練習中實現的`isEcoFriendly`方法：
 
    ```html
    ...
@@ -381,9 +381,9 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 這是透過覆�
    ...
    ```
 
-   在HTL中呼叫Sling Model方法時， `get` 會捨 `is` 棄該方法的和部分，並將第一個字母小寫。 所以 `isShowBadge()` 它變 `.showBadge` 得 `isEcoFriendly` 越來越 `.ecoFriendly`好 根據從返回的布爾值確 `.isEcoFriendly()` 定是否顯 `<span>Eco Friendly</span>` 示。
+   當在HTL中呼叫Sling Model方法時，方法的`get`和`is`部分會被捨棄，而第一個字母會被小寫。 因此，`isShowBadge()`變為`.showBadge`,`isEcoFriendly`變為`.ecoFriendly`。 根據從`.isEcoFriendly()`返回的布爾值確定是否顯示`<span>Eco Friendly</span>`。
 
-   有關其他 `data-sly-test` HTL區塊陳 [述式的詳細資訊，請參閱這裡](https://docs.adobe.com/content/help/en/experience-manager-htl/using/htl/block-statements.html#test)。
+   有關`data-sly-test`和其他[HTL塊語句的詳細資訊，請參閱](https://docs.adobe.com/content/help/en/experience-manager-htl/using/htl/block-statements.html#test)。
 
 1. 使用您的Maven技能，從命令列終端機儲存變更並部署更新至AEM:
 
@@ -392,9 +392,9 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 這是透過覆�
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. 開啟新的瀏覽器視窗並導覽至AEM和 **OSGi主控台** > **狀態** > **Sling Models**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
+1. 開啟新的瀏覽器視窗並導覽至AEM和&#x200B;**OSGi主控台** > **Status** > **Sling Models**:[http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
-1. 搜尋時， `MyProductTeaserImpl` 您應會看到如下所示的行：
+1. 搜尋`MyProductTeaserImpl`，您應看到如下所示的行：
 
    ```plain
    com.venia.core.models.commerce.MyProductTeaserImpl - venia/components/commerce/productteaser
@@ -402,13 +402,13 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 這是透過覆�
 
    這表示Sling Model已正確部署並對應至正確的元件。
 
-1. 重新整理 **至Venia首頁**[](http://localhost:4502/editor.html/content/venia/us/en.html) http://localhost:4502/editor.html/content/venia/us/en.html，其中已新增產品摘要。
+1. 重新整理至已新增產品摘要之[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)的&#x200B;**Venia首頁**。
 
    ![顯示Eco友好消息](../assets/customize-cif-components/eco-friendly-text-displayed.png)
 
-   如果產品的屬 `eco_friendly` 性設為「 **是**」，您應該會在頁面上看到「Eco Friendly」文字。 嘗試切換至不同的產品，以檢視行為變更。
+   如果產品的`eco_friendly`屬性設為&#x200B;**Yes**，您應該會在頁面上看到「Eco Friendly」文字。 嘗試切換至不同的產品，以檢視行為變更。
 
-1. 接著開啟AEM以 `error.log` 查看我們新增的log陳述式。 位 `error.log` 於 `<AEM SDK Install Location>/crx-quickstart/logs/error.log`。
+1. 接著開啟AEM `error.log`，查看我們新增的記錄陳述式。 `error.log`位於`<AEM SDK Install Location>/crx-quickstart/logs/error.log`。
 
    搜尋AEM記錄檔，以查看Sling Model中新增的log陳述式：
 
@@ -421,20 +421,20 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 這是透過覆�
 
    >[!CAUTION]
    >
-   > 如果摘要中使用的產品沒有屬性作為屬性集的一部分，您也 `eco_friendly` 會看到一些堆棧跟蹤。
+   > 如果摘要中使用的產品沒有作為屬性集的一部分的`eco_friendly`屬性，您也會看到一些堆棧跟蹤。
 
-## 新增Eco Friendly徽章的樣式 {#add-styles}
+## 新增Eco Friendly徽章的樣式{#add-styles}
 
-此時，顯示 **Eco Friendly** badge的邏輯正在運作，但純文字可能會使用某些樣式。 接著，將圖示和樣式新增至模 `ui.frontend` 組以完成實作。
+此時，顯示&#x200B;**Eco Friendly**&#x200B;徽章的邏輯正在運作，但純文字檔案可能使用某些樣式。 接著，在`ui.frontend`模組中新增圖示和樣式以完成實作。
 
-1. 下載 [eco_friendly.svg檔案](../assets/customize-cif-components/eco_friendly.svg) 。 此徽章將用作環保 **徽章** 。
-1. 返回IDE並導航到該文 `ui.frontend` 件夾。
-1. 將檔案 `eco_friendly.svg` 添加到檔案 `ui.frontend/src/main/resources/images` 夾：
+1. 下載[eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg)檔案。 這將用作&#x200B;**Eco Friendly**&#x200B;徽章。
+1. 返回IDE並導航至`ui.frontend`資料夾。
+1. 將`eco_friendly.svg`檔案添加到`ui.frontend/src/main/resources/images`資料夾：
 
    ![新增環保SVG](../assets/customize-cif-components/eco-friendly-svg-added.png)
 
-1. 在中開啟 `productteaser.scss` 檔案 `ui.frontend/src/main/styles/commerce/_productteaser.scss`。
-1. 在類內添加以下Sass規 `.productteaser` 則：
+1. 在`ui.frontend/src/main/styles/commerce/_productteaser.scss`開啟檔案`productteaser.scss`。
+1. 在`.productteaser`類別中新增下列Sass規則：
 
    ```scss
    .productteaser {
@@ -462,7 +462,7 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 這是透過覆�
 
    >[!NOTE]
    >
-   > 如需前 [端工作流程的詳細資訊](./style-cif-component.md) ，請參閱Styling CIF Core Components。
+   > 有關前端工作流程的詳細資訊，請參閱[樣式CIF核心元件](./style-cif-component.md)。
 
 1. 使用您的Maven技能，從命令列終端機儲存變更並部署更新至AEM:
 
@@ -471,17 +471,17 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 這是透過覆�
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. 重新整理 **至Venia首頁**[](http://localhost:4502/editor.html/content/venia/us/en.html) http://localhost:4502/editor.html/content/venia/us/en.html，其中已新增產品摘要。
+1. 重新整理至已新增產品摘要之[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)的&#x200B;**Venia首頁**。
 
    ![環保徽章最終實施](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## 恭喜 {#congratulations}
+## 恭喜{#congratulations}
 
-您剛自訂了第一個AEM CIF元件！ 請在這裡下 [載完成的解決方案檔案](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip)。
+您剛自訂了第一個AEM CIF元件！ 在這裡下載[完成的解決方案檔案](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip)。
 
-## 獎金挑戰 {#bonus-challenge}
+## 獎金競賽{#bonus-challenge}
 
-檢閱「產品摘 **要** 」中已實作的新標章功能。 嘗試新增其他核取方塊，讓作者控制何時應顯 **示Eco Friendly** badge。 您需要在中更新元件對話框 `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`。
+檢視已在產品摘要中實作的&#x200B;**New**&#x200B;徽章的功能。 嘗試新增額外的核取方塊，讓作者控制何時應顯示&#x200B;**Eco Friendly**&#x200B;徽章。 您需要更新`ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`處的元件對話框。
 
 ![全新徽章實作挑戰](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 
