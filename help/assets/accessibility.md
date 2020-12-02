@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Experience Manager Assets]中的輔助功能'
-description: 瞭解 [!DNL Adobe Experience Manager] 中作為雲端服務的協助功能如何協助殘障人士。
+description: 瞭解 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中的協助功能如何協助殘障人士使用。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1dc278c85a1dabdd3e6ac4c0de95271d9da3260c
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1912'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Possible topics to cover in this article are below.
   * Link to a11y-specific online methods to report issues, seek support, or request enhancements, if any. Asked the a11y team on Slack.
 -->
 
-# [!DNL Adobe Experience Manager Assets]中作為雲端服務{#accessibility-in-aem-assets}的協助功能
+# [!DNL Adobe Experience Manager Assets]中的協助功能： [!DNL Cloud Service] {#accessibility-in-aem-assets}
 
 [!DNL Adobe Experience Manager] 可讓內容建立者和發佈者在網路上提供絕佳的體驗。Adobe致力於讓殘障人士也能參與其中，改善[!DNL Experience Manager]的協助功能。 本軟體不斷增強，以符合各種使用者的需求，並符合包括視覺、聽覺、行動或其他障礙者在內的全球標準。
 
