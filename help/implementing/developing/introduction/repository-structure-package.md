@@ -18,7 +18,7 @@ ht-degree: 9%
 
 ![儲存庫結構包](./assets/repository-structure-packages.png)
 
-儲存庫結構軟體包定義軟體包驗證器用於確定「 `/apps` 不受潛在衝突影響」的區域的預期公共狀態，因為這些區域是標準根。
+儲存庫結構軟體包定義`/apps`的預期公共狀態，軟體包驗證器使用&lt;a0/>確定區域「不受潛在衝突影響」，因為它們是標準根。
 
 儲存庫結構包中最典型的路徑包括：
 
@@ -26,15 +26,15 @@ ht-degree: 9%
 + `/apps/cq/...`、 `/apps/dam/...`、 `/apps/wcm/...`和 `/apps/sling/...` 提供共同覆蓋 `/libs`。
 + `/apps/settings` 即共用的上下文感知配置根路徑
 
-請注意，此子包 **不含任何內容** ，僅由定義過濾 `pom.xml` 器根組成。
+請注意，此子包&#x200B;**不包含**&#x200B;任何內容，且僅由定義過濾器根的`pom.xml`組成。
 
 ## 建立儲存庫結構包
 
-要為Maven項目建立儲存庫結構包，請建立新的空Maven子項目，並使用以下內容更新項目元資料 `pom.xml`，以符合父Maven項目。
+要為Maven項目建立儲存庫結構包，請使用`pom.xml`建立一個新的空Maven子項目，更新項目元資料以符合父Maven項目。
 
-更新程 `<filters>` 序，以包含您的代碼包部署到的所有JCR儲存庫路徑根目錄。
+更新`<filters>`以包含您的代碼包部署到的所有JCR儲存庫路徑根目錄。
 
-請務必將此新的Maven子專案新增至父專案清 `<modules>` 單。
+請務必將此新的Maven子項目添加到父項目`<modules>`清單中。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -117,9 +117,9 @@ ht-degree: 9%
 
 ## 引用儲存庫結構包
 
-要使用儲存庫結構包，請通過所有代碼包(部署到的子包 `/apps`)引用它，通過FileVault內容包Maven插件配置來Maven項 `<repositoryStructurePackage>` 目。
+要使用儲存庫結構包，請通過所有代碼包（部署到`/apps`的子包）引用它，通過FileVault內容包Maven插件`<repositoryStructurePackage>`配置來管理項目。
 
-在和其 `ui.apps/pom.xml``pom.xml`它任何代碼包中，將對項目的儲存庫結構包(#repository-structure-package)配置的引用添加到FileVault包Maven插件中。
+在`ui.apps/pom.xml`和任何其他代碼包`pom.xml`中，將對項目的儲存庫結構包(#repository-structure-package)配置的引用添加到FileVault包Maven插件。
 
 ```xml
 ...
@@ -160,15 +160,15 @@ ht-degree: 9%
 
 例如：
 
-+ 代碼包A部署到 `/apps/a`
-+ 代碼包B部署到 `/apps/a/b`
++ 代碼包A部署到`/apps/a`中
++ 代碼包B部署到`/apps/a/b`中
 
-如果未從代碼包A上的代碼包B建立包級別相關性，則代碼包B可以先部署到 `/apps/a`，接著將代碼包B部署到 `/apps/a`，從而刪除先前安裝的代碼包 `/apps/a/b`。
+如果未在代碼包A上從代碼包B建立包級別相關性，則代碼包B可以先部署到`/apps/a`中，然後部署到`/apps/a`中的代碼包B，從而刪除先前安裝的`/apps/a/b`。
 
 在本例中：
 
-+ 代碼包A應在項目 `<repositoryStructurePackage>` 的儲存庫結構包上定義一個包(該包應具有篩選器 `/apps`)。
-+ 代碼包B應在代碼包A `<repositoryStructurePackage>` 上定義一個代碼包，因為代碼包B部署到由代碼包A共用的空間中。
++ 代碼包A應在項目的儲存庫結構包上定義`<repositoryStructurePackage>`（該包應具有`/apps`的篩選器）。
++ 代碼包B應在代碼包A上定義`<repositoryStructurePackage>`，因為代碼包B部署到代碼包A共用的空間中。
 
 ## 錯誤與除錯
 
@@ -179,7 +179,7 @@ ht-degree: 9%
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-這表示分段代碼套件的篩選清 `<repositoryStructurePackage>` 單中沒 `/apps/some/path` 有列出。
+這表示分段代碼包的篩選器清單中沒有列出`/apps/some/path`的`<repositoryStructurePackage>`。
 
 ## 其他資源
 
