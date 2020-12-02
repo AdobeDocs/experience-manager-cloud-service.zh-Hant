@@ -4,9 +4,9 @@ description: '瞭解中繼資料的類型，以及如何根據資產的中繼資
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1930'
 ht-degree: 4%
 
 ---
@@ -144,7 +144,7 @@ Enterprise Manager Assets可讓您同時編輯多個資產的中繼資料，以�
 
 ## 使用處理設定檔{#metadata-compute-service}自訂中繼資料
 
-資產做為雲端服務，可使用雲端原生服務為資產產生自訂中繼資料。 設定處理設定檔以產生自訂中繼資料。 請參閱[如何使用處理設定檔](/help/assets/asset-microservices-configure-and-use.md#use-profiles)。
+資產([!DNL Cloud Service])可使用雲端原生服務產生資產的自訂中繼資料。 設定處理設定檔以產生自訂中繼資料。 請參閱[如何使用處理設定檔](/help/assets/asset-microservices-configure-and-use.md#use-profiles)。
 
 ![處理描述檔中的中繼資料轉譯](assets/processing-profile-metadata.png)
 
