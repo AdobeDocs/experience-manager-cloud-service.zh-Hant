@@ -1,5 +1,5 @@
 ---
-title: 建築 [!DNL Assets]
+title: ' [!DNL Assets]的架構'
 description: Adobe Experience Manager資產雲端服務架構
 contentOwner: AG
 translation-type: tm+mt
@@ -11,11 +11,11 @@ ht-degree: 7%
 ---
 
 
-# Architecture of Assets as a Cloud Service solution {#assets-architecture}
+# 資產的雲端服務架構{#assets-architecture}
 
 AEM Assets as a Cloud Service是以Adobe Experience Manager為基礎，並與最新的Experience Manager 6.5產品做了很好的比較。雲端服務方案具有調整後的架構和功能方案，可做為雲端原生服務。 基礎架構的變更不允許所有Experience Manager 6.5功能都加入雲端服務。
 
-若要查看資產微服務的架構概觀，請參閱 [此資產微服務概觀](asset-microservices-overview.md#asset-microservices-architecture)。
+要查看資產微服務的體系結構概述，請參閱[資產微服務概述](asset-microservices-overview.md#asset-microservices-architecture)。
 
 >[!MORELIKETHIS]
 >
