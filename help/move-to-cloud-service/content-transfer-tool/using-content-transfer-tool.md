@@ -18,32 +18,32 @@ ht-degree: 70%
 
 * 「內容轉移工具」的最低系統需求為 AEM 6.3 + 和 JAVA 8。如果您使用較舊版本的 AEM，您必須將內容存放庫升級至 AEM 6.5 才能使用「內容轉移工具」。
 
-* Java必須在AEM環境上設定，如此， `java` 啟動AEM的使用者就可執行命令。
+* Java必須在AEM環境上設定，如此`java`命令就可由啟動AEM的使用者執行。
 
 * 內容傳輸工具可與下列類型的資料儲存區搭配使用：檔案資料儲存、S3資料儲存、共用S3資料儲存和Azure Blob儲存資料儲存。
 
-* 如果您使用沙盒環 *境*，請確定您的環境是最新的，並升級至最新的版本。 如果您使用&#x200B;*生產環境*，則會自動更新。
+* 如果您使用&#x200B;*沙盒環境*，請確定您的環境是最新的，並升級至最新的版本。 如果您使用&#x200B;*生產環境*，則會自動更新。
 
 * 若要使用「內容傳輸工具」，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud服務例項中的本機AEM管理員群組。 無權限的使用者將無法擷取能使用「內容轉移工具」的存取 Token。
 
 * 目前，AEM做為雲端服務作者例項的預設MongoDB大小為32GB。 建議您針對大於20GB的區段儲存區大小，提交支援票證以增加MongoDB大小。
 
-* 內容傳輸工具所傳輸的使用者和群組僅是內容滿足權限所需的使用者和群組。 提取 *過程將整* 個複製到遷移集中， `/home` Ingestion ** 過程將複製遷移內容ACL中引用的所有用戶和組。
+* 內容傳輸工具所傳輸的使用者和群組僅是內容滿足權限所需的使用者和群組。 *Extraction*&#x200B;進程將整個`/home`複製到遷移集中，而&#x200B;*Ingestion*&#x200B;進程複製遷移內容ACL中引用的所有用戶和組。
 
 * 在提取階段中，「內容轉移工具」會在作用中的 AEM 來源例項上執行。
 
-* 在完成內容傳輸程式的 *Extraction* phase以及開始 *Ing Phase* ，將內容以Cloud ServiceStageOr ******** ProductionInstances的形式傳入您的AEM之前，您需要記錄支援票證，以便Adobe將您的意向通知執行Adobe，以確保在Adobe Inging期間不會發生內容的CloudStageStStageSt問題處理。 您必須在計畫的接收日期前1週記錄支 *持票* 。 一旦您提交了支援票證，支援團隊將提供後續步驟的指導。
+* 在完成內容傳輸程式的&#x200B;*Extraction*&#x200B;階段後，以及開始&#x200B;*Ingestion Phase*&#x200B;將內容以雲端服務&#x200B;*Stage*&#x200B;或&#x200B;*Production*&#x200B;執行個體形式收錄至AEM之前，您將需要記錄支援票證以通知Adobe執行&#x200B;*Ingestion*，讓Adobe可以確保在&#x200B;*Ingestion*&#x200B;程式期間不會發生中斷。 您需要在計畫的&#x200B;*Ingestion*&#x200B;日期前1週記錄支援票證。 一旦您提交了支援票證，支援團隊將提供後續步驟的指導。
    * 使用下列詳細資訊記錄支援票證：
-      * 您計劃開始擷取階段時，確切的日期和估計時間(與您的時 *區* )。
+      * 當您計劃開始&#x200B;*Ingestion*&#x200B;階段時，請精確確定日期和估計時間（與時區相同）。
       * 您打算將資料收錄到的環境類型（「舞台」或「生產」）。
       * 程式ID。
 
-* 製作的&#x200B;*擷取階段*&#x200B;將縮小整個製作部署。這表示在整段擷取程序中，將無法使用製作 AEM。此外，請確保在您運行接收階段時不執行Cloud Manager管 *道* 。
+* 製作的&#x200B;*擷取階段*&#x200B;將縮小整個製作部署。這表示在整段擷取程序中，將無法使用製作 AEM。此外，請確保在運行&#x200B;*Ingestion*&#x200B;階段時不執行Cloud Manager管道。
 
 
 ## 可用性 {#availability}
 
-內容傳輸工具可從軟體散發入口網站下載為zip檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。請確定下載最新版本。 如需最新版本的詳細資訊，請參閱版 [本說明](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)。
+內容傳輸工具可從軟體散發入口網站下載為zip檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。請確定下載最新版本。 有關最新版本的詳細資訊，請參閱[發行說明](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)。
 
 >[!NOTE]
 >從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)入口網站下載內容轉移工具。
@@ -84,7 +84,7 @@ ht-degree: 70%
    1. **存取 Token**：輸入存取 Token。
 
       >[!NOTE]
-      >您可以使用「開啟存取Token」按鈕來 **擷取存取Token** 。 您必須確定您屬於目標Cloud服務例項中的AEM管理員群組。
+      >您可以使用&#x200B;**開啟存取Token**&#x200B;按鈕來擷取存取Token。 您必須確定您屬於目標Cloud服務例項中的AEM管理員群組。
 
    1. **參數**：選取以下參數以建立移轉集：
 
@@ -120,7 +120,7 @@ ht-degree: 70%
 
 請依照下列步驟，從「內容轉移工具」中提取您的移轉集：
 
-1. 從&#x200B;*「綜覽」*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**提取**&#x200B;即可開始提取。The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
+1. 從&#x200B;*「綜覽」*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**提取**&#x200B;即可開始提取。將顯示&#x200B;**遷移集抽取**&#x200B;對話框，然後按一下&#x200B;**抽取**&#x200B;以啟動抽取階段。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
@@ -128,7 +128,7 @@ ht-degree: 70%
    >您可以選擇在提取階段中覆寫預備容器。
 
 
-1. 現 **在，EXTRACTION** 欄位顯示 **RUNNING** 狀態，以指示提取正在進行。
+1. **EXTRACTION**&#x200B;欄位現在顯示&#x200B;**RUNNING**&#x200B;狀態，以指示正在進行抽取。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
@@ -161,11 +161,11 @@ ht-degree: 70%
 
 請依照下列步驟，從「內容轉移工具」中擷取您的移轉集：
 
-1. 從&#x200B;*綜覽*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**擷取**&#x200B;即可開始擷取。**移轉集擷取**&#x200B;對話框隨即顯示。Click on **Ingest** to start the ingestion phase. 為了示範，已停用&#x200B;**將內容擷取至製作例項**。您可以同時將內容擷取至「製作」和「發佈」。
+1. 從&#x200B;*綜覽*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**擷取**&#x200B;即可開始擷取。**移轉集擷取**&#x200B;對話框隨即顯示。按一下&#x200B;**Ingest**&#x200B;以開始接收階段。 為了示範，已停用&#x200B;**將內容擷取至製作例項**。您可以同時將內容擷取至「製作」和「發佈」。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. 擷取完成後，「發佈擷取」欄位中的 **狀態會更新** ，以 **便完成**。
+1. 擷取完成後，**PUBLISH INGESTION**&#x200B;欄位中的狀態會更新為&#x200B;**FINISHED**。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -183,7 +183,7 @@ ht-degree: 70%
 
    >[!IMPORTANT]
    >
-   >您應停用「擷取 **前先擦除Cloud例項上的現有內容** 」選項，以防止從先前的擷取活動刪除現有內容。
+   >您應停用「擷取&#x200B;**之前先擦除雲端例項上的現有內容」選項，以防止從先前的擷取活動中刪除現有內容。**
    >
    >![影像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
