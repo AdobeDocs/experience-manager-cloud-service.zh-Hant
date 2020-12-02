@@ -10,15 +10,15 @@ ht-degree: 2%
 ---
 
 
-# Panoramic images{#panoramic-images}
+# 全景影像{#panoramic-images}
 
 本節將說明如何與全景影像檢視器搭配使用，以呈現球面全景影像，提供如臨現場的360°房間、屬性、位置或風景觀賞體驗。
 
-另請參閱「 [管理檢視器預設集」](/help/assets/dynamic-media/managing-viewer-presets.md)。
+另請參閱[管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
-## 上傳資產以搭配全景影像檢視器使用 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## 上傳資產以搭配全景影像檢視器{#uploading-assets-for-use-with-the-panoramic-image-viewer}使用
 
 若要將已上傳的資產視為要搭配全景影像檢視器使用的球形全景影像，該資產必須具備下列其中一項或兩項：
 
@@ -26,11 +26,11 @@ ht-degree: 2%
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* 使用關鍵字 `equirectangular`、 `spherical`和 `panorama`、或 `spherical` 和標籤 `panoramic`。 請參 [閱使用標籤](/help/sites-cloud/authoring/features/tags.md)。
+* 標籤有關鍵字`equirectangular`、`spherical`和`panorama`，或`spherical`和`panoramic`。 請參閱[使用標籤](/help/sites-cloud/authoring/features/tags.md)。
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
+外觀比例和關鍵字准則都適用於資產詳細資料頁面和`Panoramic Media` WCM元件的全景資產。
 
-若要上傳資產以搭配全景影像檢視器使用，請參閱「上 [傳資產」](/help/assets/manage-digital-assets.md#uploading-assets)。
+若要上傳資產以搭配全景影像檢視器使用，請參閱[上傳資產](/help/assets/manage-digital-assets.md#uploading-assets)。
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -75,10 +75,10 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 -->
 
-## 預覽全景影像 {#previewing-panoramic-images}
+## 預覽全景影像{#previewing-panoramic-images}
 
-請參閱 [預覽資產](/help/assets/dynamic-media/previewing-assets.md)。
+請參閱[預覽資產](/help/assets/dynamic-media/previewing-assets.md)。
 
-## 發佈全景影像 {#publishing-panoramic-images}
+## 發佈全景影像{#publishing-panoramic-images}
 
-請參閱 [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
