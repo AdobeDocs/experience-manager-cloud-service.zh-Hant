@@ -3,9 +3,9 @@ title: ' [!DNL Assets]的開發人員參考'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1208'
 ht-degree: 1%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # [!DNL Assets] API和開發人員參考資料  {#assets-cloud-service-apis}
 
-文章包含[!DNL Assets]開發人員的參考資料和資源，做為雲端服務。 它包含新的上傳方法、API參考，以及後處理工作流程中提供的支援相關資訊。
+文章包含[!DNL Assets]開發人員的參考資料和資源，作為[!DNL Cloud Service]。 它包含新的上傳方法、API參考，以及後處理工作流程中提供的支援相關資訊。
 
 ## 資產上傳{#asset-upload-technical}
 
-[!DNL Experience Manager] 雲端服務提供新方法，可將資產上傳至儲存庫。使用者可使用HTTP API直接將資產上傳至雲端儲存空間。 上傳二進位檔案的步驟如下：
+[!DNL Experience Manager] as  [!DNL Cloud Service] o provides a new method to upload assets to the repository.使用者可使用HTTP API直接將資產上傳至雲端儲存空間。 上傳二進位檔案的步驟如下：
 
 1. [提交HTTP請求](#initiate-upload)。它會通知[!DNL Experience Manage]r部署您上傳新二進位檔的意圖。
 1. [將二進位元的內](#upload-binary) 容張貼至啟動要求所提供的一或多個URI。
@@ -118,7 +118,7 @@ ht-degree: 1%
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-新的上傳方法僅支援[!DNL Adobe Experience Manager]作為雲端服務。 [!DNL Adobe Experience Manager] 6.5的API已過時。 與上傳或更新資產或轉譯（任何二進位上傳）相關的方法在下列API中已過時：
+新的上載方法僅支援[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]。 [!DNL Adobe Experience Manager] 6.5的API已過時。 與上傳或更新資產或轉譯（任何二進位上傳）相關的方法在下列API中已過時：
 
 * [Experience Manager Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java API，例如  `AssetManager.createAsset(..)`
@@ -138,7 +138,7 @@ ht-degree: 1%
 
 從舊版[!DNL Experience Manager]升級的客戶可以使用資產微服務來處理資產。 雲端原生資產微服務的設定和使用更簡單。 不支援舊版[!UICONTROL DAM更新資產]工作流程中使用的幾個工作流程步驟。
 
-[!DNL Experience Manager] 雲端服務支援下列工作流程步驟：
+[!DNL Experience Manager] 支援 [!DNL Cloud Service] 下列工作流程步驟：
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -193,5 +193,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [Experience Cloud即雲端服務SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
+* [Experience Cloud即 [!DNL Cloud Service] aSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
 
