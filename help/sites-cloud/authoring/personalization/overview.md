@@ -10,15 +10,15 @@ ht-degree: 1%
 ---
 
 
-# 個人化與內容定位 {#personalization}
+# 個人化與內容定位{#personalization}
 
-## 個人化與內容定位 {#personalization-and-content-targeting}
+## 個人化與內容定位{#personalization-and-content-targeting}
 
 AEM提供工具架構，以製作目標內容並呈現個人化體驗。
 
-## 定位模式 {#targeting-mode}
+## 定位模式{#targeting-mode}
 
-[使用AEM的「定位](/help/sites-cloud/authoring/personalization/targeted-content.md) 」模式來製作目標內容。 定位模式和Target元件提供工具，讓您建立行銷活動體驗的內容。
+[使用AEM的「](/help/sites-cloud/authoring/personalization/targeted-content.md) 定位」模式來製作定位內容。定位模式和Target元件提供工具，讓您建立行銷活動體驗的內容。
 
 ## 活動 {#activities}
 
@@ -26,9 +26,9 @@ AEM提供工具架構，以製作目標內容並呈現個人化體驗。
 
 例如，您的產品目錄可能包含注重季節性產品的茶具。 「夏季運動」活動定義了茶具在夏季月份鎖定的行銷區段。
 
-活動也會識別 [您的頁面](#targeting-engine) 所使用的定位引擎。
+活動也會識別您的頁面所使用的[定位引擎](#targeting-engine)。
 
-使用「 [活動」主控台](/help/sites-cloud/authoring/personalization/activities.md) ，建立並管理您品牌的活動。 您也可以在製作目標內容時 [建立活動](/help/sites-cloud/authoring/personalization/targeted-content.md)。
+使用[活動控制台](/help/sites-cloud/authoring/personalization/activities.md)來建立和管理品牌的活動。 您也可以以[作者目標內容](/help/sites-cloud/authoring/personalization/targeted-content.md)的身分建立活動。
 
 ## 體驗 {#experiences}
 
@@ -38,7 +38,7 @@ AEM提供工具架構，以製作目標內容並呈現個人化體驗。
 
 例如，活動會定義兩個不同對象的體驗：30歲以上婦女和30歲以下婦女。 網站的女性頁面可能會針對每個體驗顯示不同的產品。
 
-您定義活動的體驗。 您可以使用「活 [動」主控台](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console) 或「 [定位」模式](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode) ，將體驗新增至活動。
+您定義活動的體驗。 您可以使用[活動控制台](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console)或[定位模式](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode)將體驗新增至活動。
 
 ## 選件 {#offers}
 
@@ -46,11 +46,11 @@ AEM提供工具架構，以製作目標內容並呈現個人化體驗。
 
 例如，範例網站的女性頁面可以使用選件作為出現在頁面頂端的摘要影像。 不同的選件會用作「女性30歲以上（女性30歲以下）」體驗和「女性30歲以下（女性30歲以下）」體驗的摘要。
 
-使用選 [件主控台](/help/sites-cloud/authoring/personalization/offers.md) ，建立可用於多個體驗的選件。 在製作目標內容時，從選件程式庫建立單一用途的選件或 [新增選件](/help/sites-cloud/authoring/personalization/targeted-content.md)。
+使用[選件主控台](/help/sites-cloud/authoring/personalization/offers.md)來建立可用於多個體驗的選件。 當[製作目標內容](/help/sites-cloud/authoring/personalization/targeted-content.md)時，從選件程式庫建立單一用途選件或新增選件。
 
-## Targeting Engine {#targeting-engine}
+## 定位引擎{#targeting-engine}
 
-定位引擎是驅動定位內容邏輯的機制。 [活動](/help/sites-cloud/authoring/personalization/activities.md) 」設定為使用兩個可用的定位引擎之一：AEM和Adobe Target。
+定位引擎是驅動定位內容邏輯的機制。 [活](/help/sites-cloud/authoring/personalization/activities.md) 動設定為使用兩個可用的定位引擎之一：AEM和Adobe Target。
 
 ### AEM {#aem}
 
@@ -61,6 +61,6 @@ AEM提供內建定位引擎，可處理頁面請求並決定要顯示的內容�
 Adobe Target定位引擎會在Adobe Target中追蹤從頁面瀏覽收集到的資訊。
 
 * 使用此定位引擎時，您會使用從Adobe Target匯入的區段來定義體驗的觀眾。
-* 使用Adobe Target引擎的活動會 [同步至Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)。
+* 使用Adobe Target引擎的活動會與Target[同步。](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)
 
-當您與Adobe Target整合後，即可使用此引擎。 <!--You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).-->
+當您與Adobe Target整合後，即可使用此引擎。<!--You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).-->
