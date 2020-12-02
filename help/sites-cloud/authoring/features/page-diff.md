@@ -20,22 +20,22 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->用戶必須對節 **點具有「修改／建立／刪除** 」權 `/content/versionhistory` 限，才能使用該功能。
+>用戶必須對節點`/content/versionhistory`具有&#x200B;**修改／建立／刪除**&#x200B;權限，才能使用該功能。
 >
->如需 [此功能的詳細技術資訊，請參閱開發與頁面比較](/help/implementing/developing/introduction/page-diff.md#operation-details) 。
+>如需此功能的詳細技術資訊，請參閱[開發與頁面差異](/help/implementing/developing/introduction/page-diff.md#operation-details)。
 
-## 使用 {#use}
+## 使用{#use}
 
 並排比較可以比較：
 
 * [版本](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) -頁面的舊版，其目前狀態
-* 即時副本——即時副本及其藍圖 <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* 即時副本——即時副本及其Blueprint <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
 * [啟動](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) -啟動及其來源
-* 語言副本——翻譯前後的頁面 <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* 語言副本——翻譯<!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->前後的頁面
 
 請參見有關如何在這些上下文中啟動差異的各個主題。
 
-### 差異的呈現 {#presentation-of-differences}
+### 差異的呈現{#presentation-of-differences}
 
 無論比較的內容為何，比較的呈現方式都保持不變。
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 >
 >在比較語言版本時，反白顯示會停用，因為在翻譯中，所有變更和反白顯示都無益。
 
-### 全螢幕與退出 {#fullscreen-and-exiting}
+### 全螢幕與退出{#fullscreen-and-exiting}
 
 為了專注於特定內容，您可以按一下並排比較的任一「側」全螢幕圖示，將其放大至全瀏覽器視窗。
 
@@ -97,7 +97,7 @@ ht-degree: 1%
 * 如果對影像進行任何變更，例如修改alt、title或src屬性，則會以藍色反白顯示變更。 但是，在某些情況下，影像具有src屬性的Base64表示，即使兩個影像看起來相同，它們也會因為src屬性的不同而被差異標籤為不同。
 * 比較無法檢測到影像旋轉。
 * 如果移動了頁面，則無法再對移動前進行的任何版本執行比較。
-   * 如果您遇到比較問題，請查看頁 [面的時間軸](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) ，以查看頁面是否已移動。
+   * 如果您遇到比較問題，請查看頁面的[時間軸](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)，以查看頁面是否已移動。
 
 >[!NOTE]
 >
@@ -105,4 +105,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如需頁面差異機制運作的詳細資訊以及可能影響頁面差異的限制，請參閱此功能的開 [發人員檔案](/help/implementing/developing/introduction/page-diff.md) 。
+>有關頁面差異機制的操作以及可能影響頁面差異的限制的詳細資訊，請參閱此功能的[開發人員文檔](/help/implementing/developing/introduction/page-diff.md)。
