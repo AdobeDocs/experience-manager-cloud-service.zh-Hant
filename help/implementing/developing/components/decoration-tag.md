@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# 裝飾標籤 {#decoration-tag}
+# 裝飾標籤{#decoration-tag}
 
 當轉譯網頁中的元件時，可產生HTML元素，並將轉譯的元件包裝在其中。 這主要有兩個目的：
 
@@ -32,39 +32,39 @@ ht-degree: 1%
 * 應將包裝函式元素新增至所有可編輯的元件，讓頁面編輯器能夠正確初始化和更新這些元件。
 * 對於不可編輯的元件，如果包裝器元素不提供特定函式，則可以避免它，因此產生的標籤不會不必要地膨脹。
 
-## 元件控制項 {#component-controls}
+## 元件控制{#component-controls}
 
 下列屬性和節點可套用至元件，以控制其裝飾標籤的行為：
 
 * **`cq:noDecoration {boolean}`:** 此屬性可新增至元件，而true值會強制AEM不在元件上產生任何包裝函式元素。
-* **`cq:htmlTag`節點：** 此節點可以添加到元件下，並具有以下屬性：
-   * **`cq:tagName {String}`:** 這可用來指定自訂HTML標籤，以用於封裝元件，而非預設DIV元素。
+* **`cq:htmlTag`node ：此** 節點可以添加到元件下，並具有以下屬性：
+   * **`cq:tagName {String}`:** This can be used to specify a custom HTML tag to be used for wranking the components而非default DIV element.
    * **`class {String}`:** 這可用來指定要新增至包裝函式的css類別名稱。
    * 其他屬性名稱將會新增為HTML屬性，其字串值與提供的相同。
 
-## 指令碼控制項 {#script-controls}
+## 指令碼控制項{#script-controls}
 
 一般而言，HTL中的包裝函式行為可歸納為：
 
-* 預設情況下不會呈現包裝函式DIV(僅執行時 `data-sly-resource="foo"`)。
+* 預設情況下不會呈現包裝函式DIV（僅執行`data-sly-resource="foo"`操作時）。
 * 所有wcm模式（停用、預覽、編輯作者和發佈）的演算都相同。
 
 包裝函式的行為也可以完全控制。
 
 * HTL指令碼可完全控制包裝函式標籤的產生行為。
-* 元件屬性( `cq:noDecoration` 如 `cq:tagName`和)也可以定義包裝函式標籤。
+* 元件屬性（如`cq:noDecoration`和`cq:tagName`）也可以定義包裝函式標籤。
 
 您可以完全控制來自HTL指令碼的包裝函式標籤及其相關邏輯的行為。
 
-如需在HTL中開發的詳細資訊，請參閱 [HTL檔案](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)。
+有關在HTL中開發的詳細資訊，請參閱[HTL檔案](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)。
 
-### 決策樹 {#decision-tree}
+### 決策樹{#decision-tree}
 
 此決策樹匯總了決定包裝函式標籤行為的邏輯。
 
 ![決策樹](assets/decoration-tag-decision-tree.png)
 
-### 使用案例 {#use-cases}
+### 使用案例{#use-cases}
 
 以下三個使用案例提供如何處理包裝函式標籤的範例，並說明控制包裝函式標籤的所需行為有多簡單。
 
@@ -88,35 +88,35 @@ ht-degree: 1%
       @class = "component-two"
 ```
 
-#### 使用案例1:包含要重複使用程式碼的元件 {#use-case-include-a-component-for-code-reuse}
+#### 使用案例1:包含用於代碼重用的元件{#use-case-include-a-component-for-code-reuse}
 
-最典型的使用案例是，元件由於程式碼重複使用的原因而包含其他元件。 在這種情況下，所包含的元件不需要使用其專屬的工具列和對話方塊進行編輯，因此不需要包裝函式，而會忽略元 `cq:htmlTag` 件的介面。 這可視為預設行為。
+最典型的使用案例是，元件由於程式碼重複使用的原因而包含其他元件。 在這種情況下，所包含的元件不需要使用其自己的工具欄和對話框進行編輯，因此不需要包裝函式，並且將忽略元件的`cq:htmlTag`。 這可視為預設行為。
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
 `two.html: Hello World!`
 
-產生輸出 `/content/test.html`於：
+產生於`/content/test.html`的輸出：
 
 **`Hello World!`**
 
 例如，一個元件包括用於顯示影像的核心影像元件，通常在這種情況下，該元件使用合成資源，該合成資源包括通過將表示元件將擁有的所有屬性的Map對象傳遞到資料透明資源來包括虛擬子元件。
 
-#### 使用案例2:包含可編輯的元件 {#use-case-include-an-editable-component}
+#### 使用案例2:包含可編輯的元件{#use-case-include-an-editable-component}
 
-另一個常見使用案例是容器元件包含可編輯的子元件時，例如「版面容器」。 在這種情況下，每個包含的子代都必須有一個包裝函式，才能讓編輯器正常運作（除非在屬性中明確停用）。 `cq:noDecoration`
+另一個常見使用案例是容器元件包含可編輯的子元件時，例如「版面容器」。 在這種情況下，每個包含的子代都必須有一個包裝函式，才能使編輯器工作（除非使用`cq:noDecoration`屬性明確禁用）。
 
-由於內含的元件在此範例中為獨立元件，因此需要有包裝函式元素讓編輯器運作，並定義其版面配置和樣式以套用。 要觸發這種行為，有一個選 `decoration=true` 項。
+由於內含的元件在此範例中為獨立元件，因此需要有包裝函式元素讓編輯器運作，並定義其版面配置和樣式以套用。 要觸發此行為，有`decoration=true`選項。
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
 `two.html: Hello World!`
 
-產生輸出 `/content/test.html`於：
+產生於`/content/test.html`的輸出：
 
 **`<article class="component-two">Hello World!</article>`**
 
-#### 使用案例3:自訂行為 {#use-case-custom-behavior}
+#### 使用案例3:自訂行為{#use-case-custom-behavior}
 
 HTL可以明確提供以下資訊，因此可以很容易地實現任意數量的複雜情況：
 
@@ -127,6 +127,6 @@ HTL可以明確提供以下資訊，因此可以很容易地實現任意數量�
 
 `two.html: Hello World!`
 
-結果輸 `/content/test.html`出：
+結果輸出`/content/test.html`:
 
 **`<aside class="child">Hello World!</aside>`**
