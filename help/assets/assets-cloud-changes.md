@@ -10,7 +10,7 @@ ht-degree: 13%
 ---
 
 
-# Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
+# Experience Manager Assets a Cloud Service {#notable-changes}的顯著變更
 
 Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功能與可能。 但是，與Experience Manager雲端服務相比，Experience Manager Assets的內部部署或Adobe Managed Service之間有許多不同。 本檔案強調資產功能的重要差異。
 
@@ -32,27 +32,27 @@ Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功�
 >* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
-## 資產擷取與上傳 {#asset-ingestion}
+## 資產擷取與上傳{#asset-ingestion}
 
 資產上傳已最佳化，因為可以更佳地縮放資產擷取，並加快上傳速度。 產品功能（網路使用者介面、案頭用戶端）已更新。 但是，這可能會影響到一些現有的自訂。
 
-* Experience Manager使用直接二進位存取原則來上傳和下載資產，並使用資產微服務來處理資產。 請參 [閱資產擷取概觀](/help/assets/asset-microservices-overview.md)。
-   * 直接二進位 [存取的資產上傳](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)。
-   * 如需技術詳細資訊，請參 [閱直接二進位上傳通訊協定和API](/help/assets/developer-reference-material-apis.md#upload-binary)。
+* Experience Manager使用直接二進位存取原則來上傳和下載資產，並使用資產微服務來處理資產。 請參閱[資產擷取概觀](/help/assets/asset-microservices-overview.md)。
+   * 資產上傳[並直接二進位存取](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)。
+   * 如需技術詳細資訊，請參閱[直接二進位上傳通訊協定和API](/help/assets/developer-reference-material-apis.md#upload-binary)。
 * 舊版 AEM 已不提供預設的工作流程 **[!UICONTROL DAM Asset Update]**。相反，資產微服務提供可擴充、可立即使用的服務，涵蓋大部分預設資產處理（轉譯、中繼資料擷取、文字擷取以建立索引）。
-   * 請參 [閱配置和使用資產微服務](/help/assets/asset-microservices-configure-and-use.md)
-   * 若要在處理中自訂工作流程步驟， [可使用後處理工](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) 作流程。
-* Assets that come in via Package Manager require manual reprocessing using the **[!UICONTROL Reprocess Asset]** action in the Assets interface.
+   * 請參閱[配置和使用資產微服務](/help/assets/asset-microservices-configure-and-use.md)
+   * 若要在處理中自訂工作流程步驟，可使用[後處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。
+* 透過「封裝管理員」傳入的資產需要使用「資產」介面中的「重新處理資產」動作，手動重新處理。****
 
 使用資產微服務產生的標準轉譯會以向後相容的方式儲存在資產儲存庫節點中（相同的命名慣例）。
 
-## 開發和測試資產微型服務 {#asset-microservices}
+## 開發和測試資產微服務{#asset-microservices}
 
-資產微服務使用雲端服務提供資產的可擴充且彈性化處理。 Adobe管理雲端服務，以最佳化處理不同的資產類型和處理選項。 Asset microservices可協助您避免需要協力廠商轉換工具和方法（例如ImageMagick）並簡化組態，同時為一般檔案類型提供現成可用的功能。 您現在可以處 [理多種檔案類型](/help/assets/file-format-support.md) ，其中包含比舊版Experience Manager更多的現成格式。 例如，PSD和PSB格式的縮圖擷取現在可能是先前需要的協力廠商解決方案（例如ImageMagick）。 處理配置檔案配置不能使用ImageMagick的復 [!UICONTROL 雜配置] 。 使用 [!DNL Dynamic Media] FFmpeg視訊轉碼，並使用處理設定檔來 [基本轉碼MP4視訊](/help/assets/manage-video-assets.md#transcode-video)。
+資產微服務使用雲端服務提供資產的可擴充且彈性化處理。 Adobe管理雲端服務，以最佳化處理不同的資產類型和處理選項。 Asset microservices可協助您避免需要協力廠商轉換工具和方法（例如ImageMagick）並簡化組態，同時為一般檔案類型提供現成可用的功能。 您現在可以處理[廣泛的檔案類型](/help/assets/file-format-support.md)，這些類型涵蓋比舊版Experience Manager更多的現成格式。 例如，PSD和PSB格式的縮圖擷取現在可能是先前需要的協力廠商解決方案（例如ImageMagick）。 不能對[!UICONTROL 處理配置檔案]配置使用ImageMagick的複雜配置。 使用[!DNL Dynamic Media]進行視訊的FFmpeg轉碼，並使用處理設定檔進行MP4視訊的[基本轉碼。](/help/assets/manage-video-assets.md#transcode-video)
 
 Asset Microservices是雲端原生服務，會在Cloud Manager中管理的客戶程式和環境中自動布建並連線至Experience Manager。 若要擴充或自訂Experience Manager，開發人員可以使用現有內容或資產與在雲端環境中產生的轉譯，以測試並驗證其程式碼，使用、顯示、下載資產。
 
-若要對程式碼和程式進行端對端驗證，包括資產擷取和處理，請使用管道將程式碼變更部署至雲端開發環境，並完整執行資產微服務處理 [](/help/implementing/cloud-manager/configure-pipeline.md) ，進行測試。
+若要對程式碼和程式進行端對端驗證，包括資產擷取和處理，請使用[管道](/help/implementing/cloud-manager/configure-pipeline.md)將程式碼變更部署至雲端開發環境，並完整執行資產微服務處理來進行測試。
 
 ## 移除傳統 UI {#classic-ui}
 
