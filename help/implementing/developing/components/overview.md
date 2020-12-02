@@ -10,11 +10,11 @@ ht-degree: 4%
 ---
 
 
-# 元件概觀 {#components-overview}
+# 元件概述{#components-overview}
 
-本頁提供Adobe Experience Manager(AEM)元件的概觀，例如用於頁 [面製作的元件](/help/sites-cloud/authoring/fundamentals/components.md)。
+本頁概述Adobe Experience Manager(AEM)元件，例如用於製作頁面的[元件。](/help/sites-cloud/authoring/fundamentals/components.md)
 
-## 什麼是元件？ {#what-are-components}
+## 什麼是元件？{#what-are-components}
 
 AEM中的元件包括：
 
@@ -27,7 +27,7 @@ AEM中的元件包括：
 * 擁有標準化的使用者介面。
 * 具有可設定的編輯行為。
 * 使用以Granite UI元件為基礎的子元素所建立的對話方塊。
-* 是使用 [HTL開發](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)。
+* 使用[HTL](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)開發。
 * 可開發來建立可擴充預設功能的自訂元件。
 
 由於元件是模組化的，因此您可以：
@@ -45,23 +45,23 @@ AEM中的元件包括：
 
 ## AEM 核心元件 {#aem-core-components}
 
-[AEM Core Components](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) （AEM核心元件）是一套適用於AEM的標準化網頁內容管理(WCM)元件，可加速開發時間並降低網站的維護成本。
+[AEM核心元](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) 件是一套適用於AEM的標準化網頁內容管理(WCM)元件，可加速開發時間並降低網站的維護成本。
 
-「核心元件」隨附AEM做為雲端服務，而「 [WKND教學課程」](/help/implementing/developing/introduction/develop-wknd-tutorial.md) (WKND Tutorial)則說明如何實作和使用元件。 這些元件提供了所有原始碼，可以按原樣使用，或作為修改或擴展元件的起點。
+「核心元件」隨附AEM做為雲端服務，[WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)說明如何實作和使用元件。 這些元件提供了所有原始碼，可以按原樣使用，或作為修改或擴展元件的起點。
 
-### 查看可用元件 {#viewing-available-components}
+### 查看可用元件{#viewing-available-components}
 
-如需AEM例項中所有可用元件的概觀，請使用「元 [件控制台」](/help/sites-cloud/authoring/features/components-console.md)。
+如需AEM例項中所有可用元件的概觀，請使用[元件主控台](/help/sites-cloud/authoring/features/components-console.md)。
 
 或者，您也可以使用CRXDE Lite來獲取儲存庫中所有可用元件的清單。
 
-1. 在 **[!UICONTROL CRXDE Lite中]**，從工具欄中選擇工具，然後選擇 **[!UICONTROL Query]** , **[!UICONTROL Query]**, **** 開啟Query Tab。
+1. 在&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;中，從工具列中選擇&#x200B;**[!UICONTROL 工具]**，然後選擇&#x200B;**[!UICONTROL 查詢]**，以開啟&#x200B;**[!UICONTROL 查詢]**&#x200B;頁籤。
 
-1. 在「查 **[!UICONTROL 詢]** 」標籤中，選 `XPath` 擇為 **[!UICONTROL 類型]**。
+1. 在&#x200B;**[!UICONTROL Query]**&#x200B;標籤中，選擇`XPath`作為&#x200B;**[!UICONTROL 類型]**。
 
-1. 在「查 **[!UICONTROL 詢輸入]** 」欄位中，輸入下列字串：
+1. 在&#x200B;**[!UICONTROL Query]**&#x200B;輸入欄位中，輸入下列字串：
 
    `//element(*, cq:Component)`
 
-1. 按一下 **[!UICONTROL 執行]** ，並列出元件。
+1. 按一下&#x200B;**[!UICONTROL 執行]**&#x200B;並列出元件。
 
