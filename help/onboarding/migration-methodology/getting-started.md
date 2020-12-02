@@ -1,10 +1,10 @@
 ---
-title: 將Experience Manager轉換為雲端服務的單頁機
-description: 將Experience Manager轉換為雲端服務的單頁機
+title: 將Experience Manager移轉至雲端服務
+description: 將Experience Manager移轉至雲端服務
 translation-type: tm+mt
-source-git-commit: 02e6581ec5a922d71c53e99212a1f8aecc405f6f
+source-git-commit: 3c1ff52d58f64d351507d20e4368a6aeb1bf6339
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2070'
 ht-degree: 8%
 
 ---
@@ -166,7 +166,7 @@ Cloud Manager可讓組織在Cloud中自行管理Experience Manager。 它包含�
 1. [部署至Cloud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=en#managing-code) Managerit
 2. 透過[Cloud Manager Quality Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use)執行客戶代碼
 3. [部署至開發環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-4. [**僅移**] 轉使用套件或內容 [傳輸工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration(CTT)
+4. [**僅移**] 轉使用套件或內 [容傳輸工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)(CTT)傳送內容
 5. 執行建議的測試週期（煙霧、QA等）
 6. 升級至Cloud Manager生產管道
 7. 煙霧測試驗證
