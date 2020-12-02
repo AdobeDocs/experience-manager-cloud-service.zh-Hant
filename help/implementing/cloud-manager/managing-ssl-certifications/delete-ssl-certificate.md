@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 刪除SSL憑證 {#deleting-an-ssl-certificate}
+# 刪除SSL證書{#deleting-an-ssl-certificate}
 
 >[!IMPORTANT]
 >從Cloud Manager移除憑證是無法復原的永久動作。 最佳實務是，在Cloud Manager使用者介面中刪除任何必要的SSL檔案之前，先將它們儲存在本機。
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 1. 從「環境」頁面導覽至「SSL憑證」畫面
 1. 識別您要刪除的SSL憑證名稱所列出的列
-1. 選擇 **...** 列最右端的菜單
-1. 選擇刪 **除**
+1. 選擇&#x200B;**...**&#x200B;選單，位於列的最右端
+1. 選擇&#x200B;**Delete**
 1. 確認您的提交
