@@ -18,7 +18,7 @@ Cloud Manager for Cloud Services Pipeline支援的測試有三大類：
 
    「程式碼品質測試」會評估您的應用程式碼的品質。 在所有非生產和生產管線中，在構建步驟之後立即執行代碼質量管線。
 
-   Cloud Manager [所執行的「自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md) 」是根據AEM Engineering的最佳實務建立。
+   由Cloud Manager執行的[自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)是根據AEM Engineering的最佳實務建立。
 
 1. [功能測試](/help/implementing/cloud-manager/functional-testing.md)
 
