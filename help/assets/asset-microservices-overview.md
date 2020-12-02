@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# 資產微服務資產擷取與處理概觀 {#asset-microservices-overview}
+# 資產微服務資產接收和處理概觀{#asset-microservices-overview}
 
 Adobe Experience Manager作為雲端服務，提供雲端原生方法，以運用Experience Manager應用程式和功能。 此新架構的關鍵元素之一，是資產擷取與處理，由資產微型服務提供支援。 資產微服務使用雲端服務提供資產的可擴充且彈性化處理。 Adobe管理雲端服務，以最佳化處理不同的資產類型和處理選項。 雲端原生資產微服務的主要優點包括：
 
@@ -21,12 +21,12 @@ Adobe Experience Manager作為雲端服務，提供雲端原生方法，以運�
 * 改善資產處理的彈性。 處理非典型檔案（如損壞的檔案或極大的檔案）時的潛在問題不會再影響部署的效能。
 * 簡化管理員的資產處理設定。
 * Adobe負責管理和維護資產處理設定，以針對各種檔案類型提供處理轉譯、中繼資料和文字擷取的最知名設定
-* 在適用情況下會使用原生Adobe檔案處理服務，提供高精確輸出，並 [有效率地處理Adobe專屬格式](file-format-support.md)。
+* 在適用情況下會使用原生的Adobe檔案處理服務，提供高精確輸出，並有效處理Adobe專屬格式[。](file-format-support.md)
 * 能夠設定後處理工作流程，以新增使用者專屬的動作和整合。
 
 Asset microservices可協助您避免需要協力廠商轉譯工具和方法（例如ImageMagick和FFmpeg轉碼），並簡化組態，同時為一般檔案類型提供現成可用的功能。
 
-## 高階架構 {#asset-microservices-architecture}
+## 高級體系結構{#asset-microservices-architecture}
 
 高階架構圖說明資產擷取、處理及整個系統中資產流程的關鍵元素。
 
@@ -50,10 +50,10 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 擷取和處理流程是Experience Manager資產微服務架構的主要概念。
 
-* **直接二進位存取**:一旦為Experience Manager環境設定好資產，資產就會傳輸（並上傳）至Cloud Binary Store，然後AEM、資產微型服務，最後客戶可以直接存取資產以執行其工作。 這樣可最大限度地減少網路負載和儲存二進位檔案的複製
-* **外部化處理**:資產處理是在AEM環境外完成，並節省其資源（CPU、記憶體），以提供主要數位資產管理功能，並支援使用者與系統互動的工作
+* **直接二進位存取**:一旦為Experience Manager環境設定好資產，資產就會傳輸（並上傳）至Cloud Binary Store，然後AEM、資產微型服務，最後客戶可以直接存取資產以執行其工作。這樣可最大限度地減少網路負載和儲存二進位檔案的複製
+* **外部化處理**:資產處理是在AEM環境以外進行，並節省其資源（CPU、記憶體），以提供主要數位資產管理功能，並支援針對使用者的系統進行互動式工作
 
-## 直接二進位存取的資產上傳 {#asset-upload-with-direct-binary-access}
+## 直接二進位存取的資產上傳{#asset-upload-with-direct-binary-access}
 
 Experience Manager客戶端是產品方案的一部分，預設情況下，所有客戶端都支援直接二進位訪問進行上載。 其中包括使用網頁介面、Adobe Asset Link和AEM案頭應用程式上傳。
 
@@ -62,9 +62,9 @@ Experience Manager客戶端是產品方案的一部分，預設情況下，所�
 * [開放原始碼上傳程式庫](https://github.com/adobe/aem-upload)
 * [開放原始碼命令列工具](https://github.com/adobe/aio-cli-plugin-aem)
 
-如需詳細資訊，請參 [閱上傳資產](add-assets.md)。
+如需詳細資訊，請參閱[上傳資產](add-assets.md)。
 
-## 新增自訂資產後處理 {#add-custom-asset-post-processing}
+## 新增自訂資產後處理{#add-custom-asset-post-processing}
 
 雖然大部分客戶應從可設定的資產微服務取得其所有資產處理需求，但有些客戶可能需要額外的資產處理。 如果資產需要根據來自其他系統的資訊，透過整合處理，則特別如此。 在這類情況下，可使用自訂的後處理工作流程。
 
