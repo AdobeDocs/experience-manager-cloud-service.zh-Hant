@@ -10,15 +10,15 @@ ht-degree: 0%
 ---
 
 
-# 查看更新和替換SSL證書  {#view-update-replace-ssl-certificate}
+# 查看更新和替換SSL證書{#view-update-replace-ssl-certificate}
 
-## 查看和更新SSL證書 {#view-update}
+## 查看和更新SSL證書{#view-update}
 
 1. 使用「檢視與更新」功能表，只要檢視SSL憑證詳細資訊即可。
 1. 或者，您也可以變更此畫面中用來參考憑證的名稱。 注意：只有具有適當權限的使用者才能進行更新。
 1. 現有證書即將過期。 使用者已使用憑證供應商更新憑證，並希望取代即將到期的現有憑證。 注意：只有具有適當權限的使用者才能進行更新。
 
-## 取代SSL憑證 {#replace-ssl-certificate}
+## 取代SSL憑證{#replace-ssl-certificate}
 
 >[!NOTE]
 >用戶必須是「業務擁有者」或「部署管理員」角色，才能更新或替換Cloud Manager中的SSL憑證。
