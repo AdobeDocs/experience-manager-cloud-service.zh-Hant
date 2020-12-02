@@ -1,23 +1,23 @@
 ---
-title: 使用品牌入口網站將AEM資產設定為雲端服務
+title: '使用品牌入口網站將AEM資產設定為a [!DNL Cloud Service] '
 description: 使用 Brand Portal 設定 AEM Assets.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1629'
 ht-degree: 14%
 
 ---
 
 
-# 將AEM Assets設定為具有品牌入口網站{#configure-aem-assets-with-brand-portal}的雲端服務
+# 將AEM Assets設定為[!DNL Cloud Service]及品牌入口網站{#configure-aem-assets-with-brand-portal}
 
-設定Adobe Experience Manager Assets Brand Portal可讓您將Adobe Experience Manager Assets中經過核准的品牌資產發佈為雲端服務例項至品牌入口網站，並將其分發給品牌入口網站使用者。
+設定Adobe Experience Manager Assets Brand Portal可讓您將Adobe Experience Manager Assets中已核准的品牌資產發佈為[!DNL Cloud Service]例項至品牌入口網站，並將其發佈至品牌入口網站使用者。
 
 **設定工作流程**
 
-AEM Assets as a Cloud Service是透過Adobe Developer Console設定品牌入口網站，該網站會購買Adobe Identity Management Services(IMS)帳戶代號以授權品牌入口網站租戶。 這需要AEM Assets和Adobe Developer Console中的設定。
+AEM Assets as a [!DNL Cloud Service]是透過Adobe Developer Console設定品牌入口網站，該網站會購買Adobe Identity Management Services(IMS)帳戶代號以授權品牌入口網站租戶。 這需要AEM Assets和Adobe Developer Console中的設定。
 
 1. 在AEM Assets中，建立IMS帳戶並產生公開金鑰（憑證）。
 1. 在Adobe Developer Console中，為您的品牌入口網站租用戶（組織）建立專案。
@@ -29,13 +29,13 @@ AEM Assets as a Cloud Service是透過Adobe Developer Console設定品牌入口�
 
 >[!NOTE]
 >
->AEM Assets做為Cloud Service例項時，只能設定一個Brand Portal租用戶。
+>AEM Assets作為[!DNL Cloud Service]例項，只能設定一個品牌入口網站租用戶。
 
 ## 必備條件 {#prerequisites}
 
 您需要下列項目才能使用 Brand Portal 設定 AEM Assets：
 
-* 以雲端服務實例啟動並執行AEM Assets
+* 以[!DNL Cloud Service]例項啟動並執行AEM Assets
 * 品牌入口網站租用戶URL
 * 對品牌入口網站的IMS組織具有系統管理員權限的使用者
 
@@ -51,7 +51,7 @@ AEM Assets as a Cloud Service是透過Adobe Developer Console設定品牌入口�
 
 ### 建立 IMS 設定 {#create-ims-configuration}
 
-IMS設定會以Brand Portal租用戶的雲端服務例項驗證您的AEM資產。
+IMS設定會以[!DNL Cloud Service]例項驗證您的AEM資產，並與品牌入口網站租用戶一起使用。
 
 IMS 設定包括兩個步驟：
 
@@ -231,7 +231,7 @@ IMS 設定包括兩個步驟：
 
 1. 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。雲端設定此時已建立。
 
-   您的AEM Assets as a Cloud Service例項現在已設定品牌入口網站租用戶。
+   您的AEM Assets（[!DNL Cloud Service]例項）現在已設定為品牌入口網站租用戶。
 
 ### 測試設定 {#test-configuration}
 
@@ -262,7 +262,7 @@ IMS 設定包括兩個步驟：
 
    ![](assets/test-bpconfig3.png)
 
-1. 若要驗證AEM Assets作為雲端服務與品牌入口網站的連線，請按一下&#x200B;**[!UICONTROL Test Connection]**&#x200B;圖示。
+1. 若要驗證AEM Assets([!DNL Cloud Service])與品牌入口網站之間的連線，請按一下&#x200B;**[!UICONTROL Test Connection（測試連線）]**&#x200B;圖示。
 
    ![](assets/test-bpconfig4.png)
 
