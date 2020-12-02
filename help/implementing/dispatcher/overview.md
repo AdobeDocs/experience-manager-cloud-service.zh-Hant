@@ -32,4 +32,4 @@ ht-degree: 1%
 
 以下各節提供內容傳送的更詳細資訊，包括CDN設定和快取。
 
-有關從作者服務複製到發佈服務的資訊，請參 [閱](/help/operations/replication.md)。
+有關從作者服務複製到發佈服務的資訊，請參閱[此處](/help/operations/replication.md)。
