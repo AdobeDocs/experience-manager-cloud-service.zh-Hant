@@ -10,7 +10,7 @@ ht-degree: 89%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.6.0 {#release-notes}
+# Adobe Experience Manager中Cloud Manager的Cloud Manager版本說明：Cloud Service 2020.6.0 {#release-notes}
 
 本頁概述AEM中Cloud Manager的Release Notes（Cloud Service 2020.6.0版）。
 
@@ -26,7 +26,7 @@ AEM中Cloud Manager作為Cloud Service 2020.6.0的發行日期為2020年6月04�
 
 * 在 Cloud Manager 中，屬於&#x200B;*業務擁有者*&#x200B;或&#x200B;*部署管理員*&#x200B;角色的沙箱方案使用者現在可以刪除透過 Cloud Manager UI 設定的生產和預備環境。現在，您可以從&#x200B;**方案概覽**&#x200B;頁面和&#x200B;**環境**&#x200B;頁面上的「環境」卡片中使用刪除選項。在「生產」或「預備」上選取刪除選項，也可刪除集合中的其他項目。
 
-   如需詳細資訊，請參閱[刪除沙箱方案](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
+   如需詳細資訊，請參閱[刪除沙箱方案](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
 
 * 登陸頁面上的「指導」標記可為使用者提供關於基本導覽的通知和指示。
 
