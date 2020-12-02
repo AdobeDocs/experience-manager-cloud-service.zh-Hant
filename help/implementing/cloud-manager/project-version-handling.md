@@ -13,7 +13,7 @@ ht-degree: 6%
 # Maven 專案版本處理 {#maven-project-version-handling}
 
 
-## Understanding Maven Project Version Handling {#understanding-project-version}
+## 瞭解Maven項目版本處理{#understanding-project-version}
 
 對於舞台和生產部署，Cloud Manager會產生獨特的遞增版本。
 
@@ -31,4 +31,4 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->無論原始版本是否已併入Cloud Manager初始化的版本，原始版本都可作為名為cloudManagerOriginalVersion的Maven屬 *性使用。*
+>無論原始版本是否已併入Cloud Manager初始化的版本，原始版本都可作為名稱為&#x200B;*cloudManagerOriginalVersion的Maven屬性使用。*
