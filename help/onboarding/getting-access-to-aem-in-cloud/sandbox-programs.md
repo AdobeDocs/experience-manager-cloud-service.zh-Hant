@@ -16,19 +16,19 @@ ht-degree: 0%
 
 沙盒程式是AEM Cloud Service中提供的兩種程式類型之一，另一種是一般程式。
 
-建立沙盒通常是為了提供訓練、執行示範、啟用或概念驗證(POC)的目的。他們不是要載著現場交通的。 他們不受 [AEM雲端服務承諾的約束](https://www.adobe.com/legal/service-commitments.html)。
+建立沙盒通常是為了提供訓練、執行示範、啟用或概念驗證(POC)的目的。他們不是要載著現場交通的。 他們不受[AEM作為雲端服務承諾的約束](https://www.adobe.com/legal/service-commitments.html)。
 
 在沙盒中建立的環境未設定為自動縮放。 因此，它們不適合用於效能或負載測試。
 
 沙盒程式包括「網站」和「資產」，並自動填入Git儲存庫、開發環境和非生產管道。  Git儲存庫會填入以AEM Project原型為基礎的範例專案。
 
-請參閱了 [解方案和方案類型](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) ，以進一步瞭解方案類型。
+請參閱[瞭解程式和程式類型](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)以進一步瞭解程式類型。
 
-### 沙盒程式的屬性 {#attributes-sandbox}
+### 沙盒程式屬性{#attributes-sandbox}
 
 「沙盒程式」具有下列屬性：
 
-1. **方案建立：** 建立沙盒程式包括自動：
+1. **程式建立：沙** 箱程式建立包括自動：
    * 使用范常式式碼和內容設定專案
    * 開發環境的創造
    * 建立非生產性管道以部署至開發環境（主分支部署至開發環境）
@@ -37,50 +37,50 @@ ht-degree: 0%
 
 1. **AEM更新：** AEM更新可手動套用至沙盒程式中的環境，且不會自動推送。
 
-1. **休眠：** 如果在某段時間內未偵測到任何活動，沙盒程式中的環境會自動休眠。 休眠的環境可以手動解除休眠。
+1. **休眠：如** 果在某段時間內未檢測到任何活動，則沙盒程式中的環境會自動休眠。休眠的環境可以手動解除休眠。
 
-### 建立沙盒程式 {#creating-sandbox-program}
+### 建立沙箱程式{#creating-sandbox-program}
 
 程式建立精靈可讓您建立沙盒程式。
 
-若要瞭解如何建立沙盒程式，請參閱「建立沙 [盒程式」](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) ，以取得詳細資訊。
+要瞭解如何建立沙箱程式，請參閱[建立沙箱程式](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program)以獲得詳細資訊。
 
-### 建立沙盒環境 {#creating-sandbox-environments}
+### 建立沙盒環境{#creating-sandbox-environments}
 
 「沙盒程式」會在程式建立時以自動建立的方式傳送至開發環境。 依預設，開發環境包含作者和發佈層。
 
 當使用者準備好設定生產管線時，可手動將生產階段環境集新增至沙盒程式。
 
-要瞭解如何手動建立環境，請參閱添加環 [境](/help/implementing/cloud-manager/manage-environments.md) ，以瞭解詳細資訊。
+要瞭解如何手動建立環境，請參閱[添加環境](/help/implementing/cloud-manager/manage-environments.md)以獲得詳細資訊。
 
-### 刪除沙盒環境 {#deleting-sandbox-environments}
+### 刪除沙盒環境{#deleting-sandbox-environments}
 
 具備必要權限的使用者可以刪除開發或生產／階段環境或集。
 
-要刪除環境，請參閱刪 [除環境](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) ，以瞭解詳細資訊。
+要刪除環境，請參閱[刪除環境](/help/implementing/cloud-manager/manage-environments.md#deleting-environment)以獲得詳細資訊。
 
 
-## 冬眠和冬眠沙盒環境 {#hibernating-introduction}
+## 冬眠和冬眠沙盒環境{#hibernating-introduction}
 
-如果在某段時間內未 *檢測到任何活動* ，沙盒程式環境將進入休眠模式。
+如果在某段時間內未檢測到任何活動，則沙箱程式環境進入&#x200B;*休眠模式*。
 
 >[!NOTE]
 >Hibernation是沙盒程式環境獨有的。 常規程式環境不休眠。
 
-### 冬眠 {#hibernation-introduction}
+### 休眠{#hibernation-introduction}
 
-休眠可以自動或手動進行。 沙盒程式環境進入休眠模式可能需要幾分鐘 *的時間*。 資料會在冬眠期間保留。
+休眠可以自動或手動進行。 沙盒程式環境進入&#x200B;*休眠模式*&#x200B;可能需要幾分鐘的時間。 資料會在冬眠期間保留。
 
 冬眠分為：
 
-* **自動** 「沙盒程式」環境在閒置8小時後會自動休眠，這表示作者和發佈服務都不會收到請求。
+* **在閒置**  8小時後，AutomaticSandbox Program環境會自動休眠，這表示作者和發佈服務都不會收到請求。
 
 * **手動**:作為用戶，您可以手動休眠沙盒程式環境，但無需手動休眠，因為休眠將在一段時間（8小時）不活動後自動發生。
 
 >[!CAUTION]
->在最新版本中，直接從Cloud Manager連結至「開發人員主控台」時，您無法選擇讓沙盒程式環境休眠。 因應措施是在Developer Console上加一次，在url `#release-cm-p1234-e5678 where 1234` 1234的結尾加上下列模式：您的 *Program ID* ，而5678是您的 *Environment ID*。
+>在最新版本中，直接從Cloud Manager連結至「開發人員主控台」時，您無法選擇讓沙盒程式環境休眠。 解決方法是在Developer Console中，將下列模式新增至url `#release-cm-p1234-e5678 where 1234` 1234的結尾是您的&#x200B;*Program ID*，而5678是您的&#x200B;*Environment ID*。
 
-#### 使用手動休眠 {#using-manual-hibernation}
+#### 使用手動休眠{#using-manual-hibernation}
 
 您可以使用下列兩種不同方式，從「開發人員主控台」手動讓沙盒程式休眠：
 
@@ -92,56 +92,56 @@ ht-degree: 0%
 
 請依照下列步驟，手動讓沙盒程式環境休眠：
 
-1. 導覽至「開 **發人員主控台」**。
-請參閱 [存取Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) ，瞭解如何從「環境」卡存取 **Developer Console****** 。
+1. 導覽至&#x200B;**Developer Console**。
+請參閱[存取開發人員主控台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)，瞭解如何從&#x200B;**環境**&#x200B;卡存取&#x200B;**開發人員主控台**。
    >[!IMPORTANT]
-   >直接從Cloud Manager連 **結至Developer Console** ，您將無法選擇讓沙盒程式環境休眠。 因應措施是在Developer Console上加一次，在url `#release-cm-p1234-e5678 where 1234` 1234的結尾加上下列模式：您的 *Program ID* ，而5678是您的 *Environment ID*。
+   >直接從Cloud Manager連結至&#x200B;**Developer Console**&#x200B;時，您無法選擇讓沙盒程式環境休眠。 解決方法是在Developer Console中，將下列模式新增至url `#release-cm-p1234-e5678 where 1234` 1234的結尾是您的&#x200B;*Program ID*，而5678是您的&#x200B;*Environment ID*。
 
-1. 按一 **下Hibernate**，如下圖所示：
+1. 按一下&#x200B;**Hibernate** ，如下圖所示：
 
    ![](assets/hibernate-1.png)
 
    或,
 
-   按一下左 **上角的** 「環境」連結查看環境清單，然後按一下 **Hibernate**，如下圖所示：
+   按一下左上角的&#x200B;**Environments**&#x200B;連結查看環境清單，然後按一下&#x200B;**Hibernate**，如下圖所示：
 
    ![](assets/hibernate-1b.png)
 
-1. 按一下 **Hibernate** 以確認步驟。
+1. 按一下&#x200B;**Hibernate**&#x200B;確認步驟。
 
    ![](assets/hibernate-2.png)
 
-1. 當休眠成功時，您會在「開發人員控制台」畫面中看到您環境的休眠程式完 **整通知** 。
+1. 當休眠成功時，您會在&#x200B;**開發人員控制台**&#x200B;畫面中看到您環境的休眠程式完成通知。
 
    ![](assets/hibernate-4.png)
 
 
-### 解除休眠 {#de-hibernation-introduction}
+### 取消休眠{#de-hibernation-introduction}
 
-1. 導覽至「開 **發人員主控台」**。
-請參閱 [存取Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) ，瞭解如何從「環境」卡存取 **Developer Console****** 。
+1. 導覽至&#x200B;**Developer Console**。
+請參閱[存取開發人員主控台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)，瞭解如何從&#x200B;**環境**&#x200B;卡存取&#x200B;**開發人員主控台**。
 
    >[!IMPORTANT]
-   >直接從Cloud Manager連 **結至Developer Console** ，您將無法選擇解除沙盒程式環境的休眠。 因應措施是在Developer Console上加一次，在url `#release-cm-p1234-e5678 where 1234` 1234的結尾加上下列模式：您的 *Program ID* ，而5678是您的 *Environment ID*。
+   >直接從Cloud Manager連結至&#x200B;**Developer Console**&#x200B;時，您無法選擇解除沙盒程式環境的休眠。 解決方法是在Developer Console中，將下列模式新增至url `#release-cm-p1234-e5678 where 1234` 1234的結尾是您的&#x200B;*Program ID*，而5678是您的&#x200B;*Environment ID*。
 
    >[!NOTE]
-   >或者，您也可以瀏覽至 **Developer Console** ，以取消休眠，方法是嘗試存取已休眠環境的作者或發佈服務；在此情況下，將會出現著陸頁面，其中包含「開發人員主控台」的連結。 請參閱下面的訪問休眠環境部分。
+   >或者，您也可以瀏覽至&#x200B;**Developer Console**&#x200B;以取消休眠，方法是嘗試存取已休眠環境的作者或發佈服務；在此情況下，將會出現著陸頁面，其中包含「開發人員主控台」的連結。 請參閱下面的訪問休眠環境部分。
 
    >[!IMPORTANT]
-   >Admin Console的存取權由「管理控制台」中 **的「雲端管理員——開發人員角色** 」 **定義**。 具有開發人員角色權限的使用者可以解除沙盒程式環境的休眠。
+   >對Developer Console的存取權限由&#x200B;**Admin Console**&#x200B;中的&#x200B;**Cloud Manager - Developer Role**&#x200B;定義。 具有開發人員角色權限的使用者可以解除沙盒程式環境的休眠。
 
-1. 按一下「 **De-hibernate**（解除休眠）」，如下圖所示：
+1. 按一下&#x200B;**De-hibernate** ，如下圖所示：
 
    ![](assets/de-hibernation-img1.png)
 
    或,
 
-   按一下左 **上角的** Environments（環境）連結查看環境清單，然後按一下 **De-hibernate**，如下圖所示
+   按一下左上角的&#x200B;**環境**&#x200B;連結查看環境清單，然後按一下&#x200B;**解除休眠** ，如下圖所示
 
    ![](assets/de-hibernate-1b.png)
 
 
-1. 按一下 **De Hibernate** （刪除休眠）確認步驟。
+1. 按一下&#x200B;**取消休眠**&#x200B;確認步驟。
 
    ![](assets/de-hibernation-img2.png)
 
@@ -153,17 +153,17 @@ ht-degree: 0%
 
    ![](assets/de-hibernation-img4.png)
 
-#### 解除休眠的權限 {#permissions-de-hibernate}
+#### 取消休眠的權限{#permissions-de-hibernate}
 
-任何擁有產品設定檔的使用者，只要能以雲端服務的身分存取AEM，就應能存取 **Developer Console**，讓他們解除環境的休眠。
+任何擁有產品設定檔且可以透過雲端服務存取AEM的使用者，都應能存取&#x200B;**開發人員主控台**，讓他們解除環境休眠。
 
-#### 訪問休眠環境 {#accessing-hibernated-environment}
+#### 訪問休眠環境{#accessing-hibernated-environment}
 
 當針對休眠環境的作者或發佈層提出任何瀏覽器請求時，使用者會遇到一個說明該環境休眠狀態的登陸頁面，如下圖所示：
 
 ![](assets/de-hibernation-img5.png)
 
-### 重要考量事項 {#important-considerations}
+### 重要注意事項{#important-considerations}
 
 與冬眠和脫冬眠環境相關的幾項主要考慮事項包括：
 
@@ -174,17 +174,17 @@ ht-degree: 0%
 >[!NOTE]
 >目前，Cloud Manager不會指出環境是否已休眠。
 
-## AEM沙盒環境更新 {#aem-updates-sandbox}
+## AEM沙盒環境更新{#aem-updates-sandbox}
 
-請參閱 [AEM版本更新](/help/implementing/deploying/aem-version-updates.md) ，以取得詳細資訊。
+如需詳細資訊，請參閱[AEM版本更新](/help/implementing/deploying/aem-version-updates.md)。
 
 使用者可以手動將AEM更新套用至沙盒程式中的環境。
 
-請參閱 [更新環境](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) ，瞭解如何更新環境。
+請參閱[更新環境](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)以瞭解如何更新環境。
 
 >[!NOTE]
 >* 手動更新只能在目標環境具有正確配置的管線時運行。
->* 手動更新至 *Production* 或 *Stage* 環境會自動更新其他環境。 Production+Stage環境集必須位於相同的AEM版本。
+>* 手動更新&#x200B;*Production*&#x200B;或&#x200B;*Stage*&#x200B;環境將自動更新另一個環境。 Production+Stage環境集必須位於相同的AEM版本。
 
 
 
