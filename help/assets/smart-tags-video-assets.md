@@ -2,9 +2,9 @@
 title: 智慧標籤您的視訊資產
 description: 智慧型標籤視訊資產會使用Adobe Sensei服務套用情境式和描述性標籤，以自動化資產標籤。
 translation-type: tm+mt
-source-git-commit: 68fe67617f0d63872f13427b3fbc7b58f2497aca
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 智慧標籤您的視訊資產{#video-smart-tags}
 
-對新內容的需求日益增長，需要減少人工操作，以便迅速提供吸引人的數位體驗。 [!DNL Adobe Experience Manager] 雲端服務支援人工智慧輔助的視訊資產自動標籤。手動標籤視訊會很耗時。 不過，Adobe Sensei支援的視訊智慧標籤功能使用人工智慧模型來分析視訊內容，並新增標籤至視訊資產。 如此可縮短DAM使用者為其客戶提供多樣化體驗的時間。 Adobe的機器學習服務會為視訊產生兩組標籤。 而其中一組則對應該視訊中的物件、場景和屬性；另一組則涉及飲酒、跑步和慢跑等動作。
+對新內容的需求日益增長，需要減少人工操作，以便迅速提供吸引人的數位體驗。 [!DNL Adobe Experience Manager] 支援 [!DNL Cloud Service] 人工智慧輔助的視訊資產自動標籤。手動標籤視訊會很耗時。 不過，Adobe Sensei支援的視訊智慧標籤功能使用人工智慧模型來分析視訊內容，並新增標籤至視訊資產。 如此可縮短DAM使用者為其客戶提供多樣化體驗的時間。 Adobe的機器學習服務會為視訊產生兩組標籤。 而其中一組則對應該視訊中的物件、場景和屬性；另一組則涉及飲酒、跑步和慢跑等動作。
 
-智慧型標籤支援的視訊檔案格式（及其轉碼器）為MP4(H264/AVC)、MKV(H264/AVC)、MOV(H264/AVC、Motion JPEG)、AVI(indeo4)、FLV(H264/AVC、vp6f)和WMV(WMV2)。 此外，此功能還允許將視訊標籤為300 MB。 視訊上傳後或觸發重新處理時，自動標籤視訊資產會做為標準資產處理（以及建立縮圖和擷取中繼資料）。 智慧型標籤在資產[!UICONTROL 屬性]中以其[信賴分數](#confidence-score-video-tag)的遞減順序顯示。 視訊標籤預設會在[!DNL Adobe Experience Manager]中啟用為雲端服務。 不過，您可以在資料夾上[選擇退出視訊智慧標籤](#opt-out-video-smart-tagging)。
+智慧型標籤支援的視訊檔案格式（及其轉碼器）為MP4(H264/AVC)、MKV(H264/AVC)、MOV(H264/AVC、Motion JPEG)、AVI(indeo4)、FLV(H264/AVC、vp6f)和WMV(WMV2)。 此外，此功能還允許將視訊標籤為300 MB。 視訊上傳後或觸發重新處理時，自動標籤視訊資產會做為標準資產處理（以及建立縮圖和擷取中繼資料）。 智慧型標籤在資產[!UICONTROL 屬性]中以其[信賴分數](#confidence-score-video-tag)的遞減順序顯示。 在[!DNL Adobe Experience Manager]中，視訊標籤預設為[!DNL Cloud Service]。 不過，您可以在資料夾上[選擇退出視訊智慧標籤](#opt-out-video-smart-tagging)。
 
 ## 上傳{#smart-tag-assets-on-ingestion}時智慧標籤影片
 
-當您[將視訊資產](add-assets.md#upload-assets)上傳至[!DNL Adobe Experience Manager]作為雲端服務時，視訊會進行![處理](assets/do-not-localize/assetprocessing.png)。 處理完成後，請參閱資產[!UICONTROL 屬性]頁面的[!UICONTROL 基本]標籤。 智慧型標籤會自動新增至[!UICONTROL 智慧型標籤]下方的視訊。 資產計算服務運用Adobe Sensei來建立這些智慧標籤。
+當您[將視訊資產](add-assets.md#upload-assets)上傳至[!DNL Adobe Experience Manager]為[!DNL Cloud Service]時，視訊會進行![處理](assets/do-not-localize/assetprocessing.png)。 處理完成後，請參閱資產[!UICONTROL 屬性]頁面的[!UICONTROL 基本]標籤。 智慧型標籤會自動新增至[!UICONTROL 智慧型標籤]下方的視訊。 資產計算服務運用Adobe Sensei來建立這些智慧標籤。
 
 ![智慧型標籤會新增至影片，並在資產屬性的「基本」索引標籤中顯示](assets/smart-tags-added-to-videos.png)
 
@@ -106,7 +106,7 @@ DAM中現有的視訊資產不會自動加上智慧標籤。 您需要手動[!UI
 
 [!DNL Adobe Experience Manager]中動作和物件標籤的預設臨界值為0.7（值應介於0和1之間）。 如果某些視訊資產未由特定標籤標籤，則表示演算法對預測標籤的信心低於70%。 預設臨界值不一定對所有使用者都是最佳值。 因此，您可以變更OSGI設定中的信賴分數值。
 
-若要透過Cloud Manager將信賴分數OSGI設定新增至部署至[!DNL Adobe Experience Manager]作為雲端服務的專案：
+若要將信賴分數OSGI組態新增至部署至[!DNL Adobe Experience Manager]的專案，以[!DNL Cloud Service]至[!DNL Cloud Manager]為單位：
 
 * 在[!DNL Adobe Experience Manager]專案（`ui.config`自Archetype 24起，或先前的`ui.apps`）中，`config.author` OSGi組態包含名為`com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json`的組態檔，其內容如下：
 
