@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager資產雲端服務的顯著變更
-description: AEM Cloud服務中的Adobe Experience Manager Assets與Adobe Experience Manager 6.5相比有顯著變更。
+title: Adobe Experience Manager資產中顯著變更為a [!DNL Cloud Service]
+description: 與Adobe Experience Manager 6.5相比，AEM [!DNL Cloud Service] 中的Adobe Experience Manager Assets有顯著的變更。
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 13%
+source-wordcount: '601'
+ht-degree: 6%
 
 ---
 
 
-# Experience Manager Assets a Cloud Service {#notable-changes}的顯著變更
+# Experience Manager Assets的顯著變更為[!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功能與可能。 但是，與Experience Manager雲端服務相比，Experience Manager Assets的內部部署或Adobe Managed Service之間有許多不同。 本檔案強調資產功能的重要差異。
+Adobe Experience Manager是[!DNL Cloud Service]的一員，為您管理AEM專案帶來許多新功能與可能。 但是，與Experience Manager作為[!DNL Cloud Service]的版本相比，Experience Manager Assets的內部部署或Adobe Managed Service之間有許多不同。 本檔案強調資產功能的重要差異。
 
 與Experience Manager 6.5相比，主要差異在於：
 
@@ -22,14 +22,14 @@ Adobe Experience Manager即雲端服務，為您的AEM專案帶來許多新功�
 
 >[!NOTE]
 >
->本檔案著重說明對AEM Assets的顯著變更。 如需AEM的「雲端服務」及其他模組的一般變更，請參閱：
+>本檔案著重說明對AEM Assets的顯著變更。 如需將Experience Manager作為[!DNL Cloud Service]和其他模組的一般變更，請參閱：
 >
->* [Adobe Experience Manager as a Cloud Service 簡介](/help/overview/introduction.md)
->* [AEM as a Cloud Service 概覽 - 新增功能與不同之處](/help/overview/what-is-new-and-different.md)
->* Adobe Experience Manager as a Cloud Service [架構](/help/core-concepts/architecture.md)
->* [AEM as a Cloud Service 重大變更 (發行說明)](/help/release-notes/aem-cloud-changes.md)
->* [AEM Sites as a Cloud Service 重大變更](/help/sites-cloud/sites-cloud-changes.md)
->* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [Adobe Experience Manager as a 簡介 [!DNL Cloud Service]](/help/overview/introduction.md)
+>* [AEM as a [!DNL Cloud Service] 的概觀——新增功能與不同功能](/help/overview/what-is-new-and-different.md)
+>* Adobe Experience Manager as a [架構](/help/core-concepts/architecture.md)[!DNL Cloud Service]
+>* [AEM as [!DNL Cloud Service] （發行說明）的顯著變更](/help/release-notes/aem-cloud-changes.md)
+>* [AEM Sites的顯著變更 [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
+>* [Adobe Experience Manager教學課 [!DNL Cloud Service] 程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## 資產擷取與上傳{#asset-ingestion}
@@ -56,4 +56,4 @@ Asset Microservices是雲端原生服務，會在Cloud Manager中管理的客戶
 
 ## 移除傳統 UI {#classic-ui}
 
-Experience Manager中不再以雲端服務的形式提供傳統UI。 標準介面是可觸控的UI。
+Experience Manager中不再提供Classic UI作為[!DNL Cloud Service]。 標準介面是可觸控的UI。
