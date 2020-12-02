@@ -16,7 +16,7 @@ Cloud Manager程式會自動布建其專屬的git儲存庫。
 
 若是使用者要存取Cloud Manager Git儲存庫，使用者將需要使用Git用戶端和命令列工具、獨立的視覺化Git用戶端，或使用者的IDE，例如Eclipse、IntelliJ、NetBeans。
 
-設定Git用戶端後，您就可以從Cloud Manager UI管理您的git儲存庫。 如要瞭解如何使用Cloud Manager UI管理Git，請參閱「存 [取Git](/help/implementing/cloud-manager/accessing-git.md)」。
+設定Git用戶端後，您就可以從Cloud Manager UI管理您的git儲存庫。 要瞭解如何使用Cloud Manager UI管理Git，請參閱[存取Git](/help/implementing/cloud-manager/accessing-git.md)。
 
 若要開始開發AEM Cloud應用程式，必須從Cloud Manager儲存庫將應用程式程式碼簽出至其本機電腦上想要建立儲存庫的位置，以製作應用程式程式碼的本機副本。
 
