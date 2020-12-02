@@ -10,7 +10,7 @@ ht-degree: 10%
 ---
 
 
-# 編輯頁面屬性 {#editing-page-properties}
+# 編輯頁面屬性{#editing-page-properties}
 
 您可以定義頁面的必要屬性。 這些視頁面性質而定。 例如，有些頁面可能會連線至即時副本，而其他頁面則未連線，且即時副本資訊會視需要提供。
 
@@ -22,7 +22,7 @@ ht-degree: 10%
 
 * **標題**
 
-   * 頁面標題會顯示在不同的位置。 例如，「網站 **」標籤清單** ，以及「網 **站** 」卡片／清單檢視。
+   * 頁面標題會顯示在不同的位置。 例如，**Websites**&#x200B;標籤清單和&#x200B;**Sites**&#x200B;卡片／清單檢視。
    * 這是必要欄位。
 
 * **標記**
@@ -34,7 +34,7 @@ ht-degree: 10%
       * 然後，新標籤會在右側顯示，並加上一個小星號，表示它是新標籤。
    * 透過下拉式功能，您可從現有標籤中選取。
    * 當您將滑鼠移至選取方塊中的標籤項目上時，會顯示x，可用來移除此頁面的標籤。
-   * 如需標籤的詳細資訊，請參 [閱使用標籤](/help/sites-cloud/authoring/features/tags.md)。
+   * 如需標籤的詳細資訊，請參閱[使用標籤](/help/sites-cloud/authoring/features/tags.md)。
 
 * **於導覽中隱藏**
 
@@ -46,11 +46,11 @@ ht-degree: 10%
 
 * **頁面標題**
 
-   * 要在頁面上使用的標題。 通常由標題元件使用。 如果空白 **，則** 「標題」將被使用。
+   * 要在頁面上使用的標題。 通常由標題元件使用。 如果空白，則會使用&#x200B;**Title**。
 
 * **導覽標題**
 
-   * 您可以指定個別標題以用於導覽（例如，如果您想要更簡潔的內容）。 如果為空白， **則使** 用「標題」。
+   * 您可以指定個別標題以用於導覽（例如，如果您想要更簡潔的內容）。 如果為空，則使用&#x200B;**Title**。
 
 * **子標題**
 
@@ -66,22 +66,22 @@ ht-degree: 10%
 
       >[!NOTE]
       >
-      > 有關如 [何配置相關自動複製的詳細資訊，請參見On和Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) 。
+      > 有關如何配置相關自動複製的詳細資訊，請參見[開啟和關閉時間——觸發器配置](/help/operations/replication.md#on-and-off-times-trigger-configuration)。
 
-      * 如果已 [發佈（手動）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) ，此頁面將保持休眠（隱藏），直到在指定時間呈現。
+      * 如果[已發佈（手動）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)，則此頁面將保持休眠（隱藏），直到在指定時間顯示。
       * 如果未發佈，且已針對自動複製設定，則頁面會在指定的時間自動發佈，然後轉譯。
       * 如果未發佈，且未針對自動複製進行設定，則不會自動發佈頁面，因此當嘗試存取頁面時，會看到404。
-   * 對於您要立即發佈的頁&#x200B;**面，請將這些欄位(「開始** 」和「關閉時間」 ****)留空，並在發佈環境中使用，直到它們停用（一般情形）。
+   * 對於您要立即發佈的頁面，請將這些欄位（**On Time**&#x200B;和&#x200B;**Off Time**）留空，並在發佈環境中使用，直到它們停用（一般情形）為止。
 
 * **關閉時間**
 
-   * 與「 **On Time** 」（按時間）平行，這定義發佈頁面在發佈環境中隱藏的時間。
-   * 對於您要立即發佈的頁&#x200B;**面，請將這些欄位(「開始** 」和「關閉時間」 ****)留空，並在發佈環境中使用，直到它們停用（一般情形）。
+   * 與&#x200B;**On Time**&#x200B;平行，這定義發佈頁面在發佈環境中隱藏的時間。
+   * 對於您要立即發佈的頁面，請將這些欄位（**On Time**&#x200B;和&#x200B;**Off Time**）留空，並在發佈環境中使用，直到它們停用（一般情形）為止。
 
 * **虛名 URL**
 
    * 可讓您輸入此頁面的虛名URL，讓您擁有更短和／或更具表現力的URL。
-   * 例如，如果「虛名URL」設 `welcome` 定為網站路徑所識別 `/v1.0/startpage` 的頁面 `http://example.com`，則 `http://example.com/welcome` 會是 `http://example.com/content/v1.0/startpage`
+   * 例如，如果虛名URL設定為`welcome`至網站`http://example.com`的路徑`/v1.0/startpage`所識別的頁面，則`http://example.com/welcome`會是`http://example.com/content/v1.0/startpage`的虛名URL
 
    >[!CAUTION]
    >
@@ -119,9 +119,9 @@ ht-degree: 10%
    * 指定要與此頁一起使用的別名。
    >[!NOTE]
    >
-   >別名設定 `sling:alias` 屬性以定義資源的別名（這僅影響資源，而不影響路徑）。
+   >別名設定`sling:alias`屬性以定義資源的別名（這僅影響資源，不影響路徑）。
    >
-   >例如：如果為節點節點定 `latin-lang` 義別名， `/content/we-retail/spanish` 則可通過 `/content/we-retail/latin-language`
+   >例如：如果為節點`/content/we-retail/spanish`節點定義了`latin-lang`別名，則可通過`/content/we-retail/latin-language`訪問此頁
    >
    >如需詳細資訊，請參閱「SEO與URL管理最佳實務」下的「本地化頁面名稱」。
 
@@ -129,7 +129,7 @@ ht-degree: 10%
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **繼承自&lt;path>**
+* **繼承自  &lt;path>**
 
    * 指出頁面是否繼承。 以及從何而來。
 
@@ -139,14 +139,14 @@ ht-degree: 10%
 
 * **允許的範本**
 
-   * [定義此子分支中可用的模板清單](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) 。
+   * [定義此子分支中可](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) 用的模板清單。
 
 * **啟用** （驗證要求）
 
    * 啟用（或停用）驗證的使用以存取頁面。
    >[!NOTE]
    >
-   >頁面的已關閉使用者群組是在「權限」標籤 **[上定義](#permissions)** 。
+   >頁面的已關閉使用者群組是在&#x200B;**[Permissions](#permissions)**&#x200B;標籤上定義。
 
 * **登入頁面**
 
@@ -180,7 +180,7 @@ ht-degree: 10%
 
 * **社交媒體分享**
 
-   定義頁面上可用的共用選項。 顯示「共用」核心元件 [可用的選項](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html)。
+   定義頁面上可用的共用選項。 顯示[共用核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html)可用的選項。
 
    * **啟用Facebook的使用者共用**
    * **啟用Pinterest的使用者共用功能**
@@ -207,9 +207,9 @@ ht-degree: 10%
 
 * **定位組態**
 
-   * 選取品 [牌以指定定位範圍](/help/sites-cloud/authoring/personalization/targeted-content.md)。
+   * 選擇[品牌以指定定位範圍](/help/sites-cloud/authoring/personalization/targeted-content.md)。
    >[!NOTE]
-   >此選項要求使用者帳戶位於群 `Target Adminstrators`組中。
+   >此選項要求使用者帳戶位於`Target Adminstrators`群組中。
 
 ### 權限 {#permissions}
 
@@ -240,47 +240,47 @@ ht-degree: 10%
 
 * **即時副本**
 
-   * 在多網站管理中定義即時副本頁面的屬性。 <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
+   * 在多網站管理中定義即時副本頁面的屬性。<!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * 控制從Blueprint傳播修改的情況。
 
 ### 網站結構 {#site-structure}
 
-* 提供提供整個網站功能的頁面連結，例如 **「註冊頁面**」 **、「離線頁面**」等。
+* 提供提供全網站功能的頁面連結，例如&#x200B;**註冊頁面**、**離線頁面**&#x200B;等。
 
-## 編輯頁面屬性 {#editing-page-properties-1}
+## 編輯頁面屬性{#editing-page-properties-1}
 
-* 從Sites控 **制台** :
+* 從&#x200B;**Sites**&#x200B;控制台：
    * [建立新頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) （屬性的子集）
-   * 按一下或點選「屬 **性」**
+   * 按一下或點選&#x200B;**屬性**
       * 適用於單一頁面
       * 對於多個頁面（只有屬性的子集可供整體編輯）
 * 從頁面編輯器：
    * 使用 **頁面資訊** (接著 **開啟屬性**)
 
-### 從Sites Console —— 單頁 {#from-the-sites-console-single-page}
+### 從站點控制台——單頁{#from-the-sites-console-single-page}
 
-按一下或點選 **「屬性** 」以定義頁面屬性：
+按一下或點選&#x200B;**屬性**&#x200B;以定義頁面屬性：
 
-1. 使用 **Sites** Console，導覽至您要檢視和編輯屬性之頁面的位置。
-1. 使用下列 **任一項** ，為所需頁面選取「屬性」選項：
+1. 使用&#x200B;**Sites**&#x200B;控制台，瀏覽至您要檢視和編輯屬性之頁面的位置。
+1. 使用下列任一項，為所需頁面選擇&#x200B;**屬性**&#x200B;選項：
    * [快速動作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
    * 頁面屬性將使用適當的標籤顯示。
 1. 視需要檢視或編輯屬性。
-1. 然後使 **用** Save保存更新，然後 **Close** 返回控制台。
+1. 然後使用&#x200B;**Save**&#x200B;儲存更新，接著使用&#x200B;**Close**&#x200B;返回主控台。
 
-### 編輯頁面時 {#when-editing-a-page}
+### 編輯頁面{#when-editing-a-page}時
 
-編輯頁面時，您可以使用「頁 **面資訊** 」來定義頁面屬性：
+編輯頁面時，可以使用&#x200B;**頁面資訊**&#x200B;定義頁面屬性：
 
 1. 開啟您要編輯其屬性的頁面。
-1. 選擇「頁 **面資訊** 」圖示以開啟選取功能表：
+1. 選擇&#x200B;**頁面資訊**&#x200B;圖示以開啟選擇功能表：
 1. 選擇 **開啟屬性** ，將開啟一個對話框，允許您按相應頁籤進行編輯。工具列右側也提供下列按鈕：
    * **取消**
    * **儲存並關閉**
-1. 使用「 **儲存並關閉** 」按鈕儲存變更。
+1. 使用&#x200B;**儲存並關閉**&#x200B;按鈕儲存變更。
 
-### 從Sites Console —— 多頁 {#from-the-sites-console-multiple-pages}
+### 從站點控制台——多頁{#from-the-sites-console-multiple-pages}
 
 從Sites **** Console中，您可以選取數個頁面，然後使用 **View Properties**  (檢視屬性) 來檢視和/或編輯頁面屬性。這稱為頁面屬性的大量編輯。
 
@@ -298,8 +298,8 @@ ht-degree: 10%
 
 您可以選取多個頁面，以透過各種方法進行大量編輯，包括：
 
-* 瀏覽Sites主 **控台**
-* 使用 **Search** 尋找一組頁面
+* 瀏覽&#x200B;**Sites**&#x200B;控制台時
+* 使用&#x200B;**Search**&#x200B;找到一組頁面
 
 選取頁面，然後按一下或點選「屬 **性」選項**，就會顯示大量屬性：
 
@@ -324,15 +324,15 @@ ht-degree: 10%
       * 如果您將頁面選擇範圍縮小為一個頁面，則所有屬性都會顯示。
    * 具有公用值的公用屬性
       * 只有具有公用值的屬性才會顯示在「視圖」模式中。
-      * 當欄位為多值（例如「標籤」）時，只有所有值都是共 *用* ，才會顯示值。 如果只有某些是常見的，則只有在編輯時才會顯示。
+      * 當欄位為多值（例如「標籤」）時，只有&#x200B;*all*&#x200B;是公用的值才會顯示。 如果只有某些是常見的，則只有在編輯時才會顯示。
       * 當不存在具有公用值的屬性時，將顯示一條消息。
 
 * **編輯**
 
    * 您可以更新可用欄位中的值。
-      * 當您選取「完成」時，新值會套用至所有選取 **的頁面**。
+      * 當您選取&#x200B;**Done**&#x200B;時，新值將會套用至所有選取的頁面。
       * 當欄位為多值（例如「標籤」）時，您可以附加新值或移除公用值。
-   * 在不同頁面上共有但有不同值的欄位，會以特殊值（例如文字）來標示 `<Mixed Entries>`。 編輯此類欄位時應格外小心，以避免資料遺失。
+   * 在各個頁面上共有但值不同的欄位，會以特殊值（例如文字`<Mixed Entries>`）來標示。 編輯此類欄位時應格外小心，以避免資料遺失。
 
 >[!NOTE]
 >
