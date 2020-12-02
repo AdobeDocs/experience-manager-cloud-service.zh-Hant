@@ -20,7 +20,7 @@ ht-degree: 18%
 
 >[!NOTE]
 >
->「元件控制台」顯示系統中的所有元件。 「元 [件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 」顯示作者可使用的元件，並隱藏以句點( `.`)開頭的元件群組。
+>「元件控制台」顯示系統中的所有元件。 [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)顯示作者可使用的元件，並隱藏以句點(`.`)開頭的任何元件群組。
 
 ## 搜尋 {#search-field}
 
@@ -28,7 +28,7 @@ ht-degree: 18%
 
 ![在元件控制台中搜索](/help/sites-cloud/authoring/assets/components-console-search.png)
 
-### 元件詳細資訊 {#component-details}
+### 元件詳細資訊{#component-details}
 
 要查看有關特定元件的詳細資訊，請點選／按一下所需資源。 三個標籤提供：
 
@@ -39,14 +39,14 @@ ht-degree: 18%
    在「屬性」標籤上，您可以：
 
    * 查看元件的常規屬性。
-      * 查看如何為元件定義表徵圖或縮寫。 <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
+      * 查看如何為元件定義表徵圖或縮寫。<!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
       * 按一下圖示的來源後，您就會前往該元件。
-   * 查看組 **件的資源類** 型 **和資源超級類型** （如果已定義）。
+   * 查看元件的&#x200B;**資源類型**&#x200B;和&#x200B;**資源超級類型**（如果已定義）。
       * 按一下「資源超級類型」(Resource Super Type)將帶您進入該元件。
 
    >[!NOTE]
    >
-   >由於 `/apps` 在執行時期無法編輯元件主控台，因此是唯讀的。
+   >由於`/apps`在運行時不可編輯，因此元件控制台是只讀的。
 
 * **原則**
 
@@ -62,6 +62,6 @@ ht-degree: 18%
 
 * **文件**
 
-   如果開發人員已提供元件的檔案，則會顯示在「檔案」 **標籤** 。 如果沒有可用的文檔，則不 **會顯示** 「文檔」頁籤。 <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
+   如果開發人員已提供元件的檔案，則會顯示在&#x200B;**Documentation**&#x200B;標籤上。 如果沒有可用的文檔，則不會顯示&#x200B;**Documentation**&#x200B;頁籤。<!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
    ![元件檔案](/help/sites-cloud/authoring/assets/components-console-documentation.png)
