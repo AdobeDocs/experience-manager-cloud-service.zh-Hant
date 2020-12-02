@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: 89f7e60205efc275bbeb97246ccc3add28810cfa
+source-git-commit: 8ee5f7c0c5690dd21291261e5e2ad01599c0c174
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1233'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為雲服務2020.11.0的發行日期為2020年12月1日。
+[!DNL Adobe Experience Manager]作為雲服務2020.11.0的發行日期為2020年12月2日。
 下列版本(2020.12.0)將於2020年12月17日發行
 
 ## [!DNL Adobe Experience Manager Sites] 雲端服務  {#sites}
@@ -25,11 +25,9 @@ ht-degree: 3%
 
 * **[啟動階層管理](/help/sites-cloud/authoring/launches/managing-pages.md) 與未 [來時間彎曲](/help/sites-cloud/authoring/launches/preview.md)**:新的UI可在啟動中新增／移除頁面，而具有「時間彎曲」的瀏覽網站則會顯示啟動的未來狀態。
 
-* **[延伸內容片段模型與編輯器](/help/assets/content-fragments/content-fragments-models.md)**:針對各種資料類型提供新的輸入驗證選項、改良的列舉資料類型及新的表單視覺化，以及「資產」使用者介面中顯示和可搜尋的內容片段模型名稱。
+* **排序可開始使用的即時副本頁面**:新選項，可使用「名稱」、「上次修改日期」和「上次轉出日期屬性 [!UICONTROL 」來排序可]轉出的「即時復   制」頁面。頁面的[!UICONTROL 上次推出日期]是引入的新屬性。
 
-* **讓網站可安裝**:新的網站屬性可設定漸進式Web應用程式(PWA)功能，讓網站可自行安裝，並可離線選購。這些功能需要核心元件。
-
-* **[核心元件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**:AEM做為雲端服務可享有核心元件最新版本自動更新的優點。2.12.0版包含社群提供的最新改良功能，例如[新的POST表單處理常式；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data)透過內容感知組態包含自訂CSS、Javascript和中繼資料[標籤的能力；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)和[`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components)公用程式，以簡化自訂元件中的Adobe資料層整合。 請參閱2.12.0中的[變更清單](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)。
+<!--- * **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI. --->
 
 ## [!DNL Adobe Experience Manager Assets] 雲端服務  {#assets}
 
@@ -40,11 +38,11 @@ ht-degree: 3%
 
    ![批量匯入程式的設定](/help/assets/assets/bulk-import-config-low-res.png)
 
-* 使用者可以在「卡片」和「欄」檢視中排序數位資產。
+* 使用者現在可以在「卡片」和「欄」檢視中排序數位資產。
 
    ![排序資產](/help/assets/assets/asset-sort-options.png)
 
-* 本版本針對[Experience Manager Assets]中的協助工具執行下列增強功能。 如需詳細資訊，請參閱 [!DNL Assets]](/help/assets/accessibility.md)中的[協助功能。
+* 本版次針對[!DNL Experience Manager Assets]的協助功能進行下列增強功能。 如需詳細資訊，請參閱 [!DNL Assets]](/help/assets/accessibility.md)中的[協助功能。
 
    * 使用鍵盤導覽時間軸時，Esc鍵可以收合「全部顯示」選項，而不會失去焦點。
    * 使用鍵盤標籤鍵導覽時，從新增的標籤中移除最後一個標籤後，標籤欄位會保留焦點。
@@ -83,8 +81,6 @@ ht-degree: 3%
 
 * 當Sling CA設定中未直接指定設定，但是父組態中的一個設定時，GraphQL用戶端設定無法正確讀取。 這個問題已經修正。
 
-
-
 ## Cloud Manager {#cloud-manager}
 
 ### 發行日期 {#release-date-cm}
@@ -111,13 +107,17 @@ AEM中Cloud Manager作為雲端服務2020.11.0的發行日期為2020年11月12�
 
 * 已新增支援根據「工作流程標題」、「工作流程模型」、「狀態」、「啟動器」、「裝載路徑」和「開始日期」來搜尋工作流程例項。 請參閱[搜尋工作流程例項](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html)。
 
-### 用戶同步{#user-sync}
+### 發佈層用戶資料同步{#user-sync}
 
 * 使用者資料（包括描述檔屬性和群組成員資格）可保存在發佈層。 在[註冊、登入和使用者設定檔檔案](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)中進一步瞭解此功能。
 
-### 分析器{#analyzers}
+### SDK Build Analyzers {#analyzers}
 
 AEM as a Cloud Service SDK Build Analyzer Maven Plugin會偵測主要專案中的問題，包括缺少相依性。 它為開發人員提供了在本機開發期間發現問題的機會，而遠在使用Cloud Manager部署至雲端環境之前。 如需詳細資訊，請參閱說明檔案[這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing)和[這裡](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk)。
+
+### 其他 {#others-foundation}
+
+新的[&quot;httpd -t&quot;語法](/help/implementing/dispatcher/disp-overview.md#local-validation)檢查Cloud Manager建置期間執行的apache和dispatcher組態，此組態也可以使用AEM作為Cloud Service SDK的Dispatcher Tools來執行。
 
 ## 內容轉移工具 {#content-transfer-tool}
 
