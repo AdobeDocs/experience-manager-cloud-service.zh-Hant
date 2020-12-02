@@ -1,6 +1,6 @@
 ---
-title: 將Rich Text Editor用於作 [!DNL Adobe Experience Manager] 者內容。
-description: 使用 [!DNL Experience Manager] Rich Text Editor來製作內容。
+title: 使用 [!DNL Adobe Experience Manager] 中的Rich Text Editor來編寫內容。
+description: 使用 [!DNL Experience Manager] Rich Text Editor來編寫內容。
 translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
@@ -10,13 +10,13 @@ ht-degree: 2%
 ---
 
 
-# 使用Rich Text Editor來製作內容 {#use-rich-text-editor-to-author-content}
+# 使用Rich Text Editor來製作內容{#use-rich-text-editor-to-author-content}
 
-富格文本編輯器(RTE)是一個基本的構建塊，用於向其添加文本內容 [!DNL Adobe Experience Manager]。 此外，許多允許編寫的其他元件都基於RTE。 Experience Manager開發人員可自訂RTE，管理員可設定RTE供作者使用。
+富格文本編輯器(RTE)是一個基本的構建塊，用於向[!DNL Adobe Experience Manager]添加文本內容。 此外，許多允許編寫的其他元件都基於RTE。 Experience Manager開發人員可自訂RTE，管理員可設定RTE供作者使用。
 
-## 就地編輯 {#in-place-editing}
+## 就地編輯{#in-place-editing}
 
-只要按一下，即可選取文字型元件，以顯示元件工 [具列](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)。
+只要按一下，即可選取文字型元件，以顯示[元件工具列](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)。
 
 ![元件工具列](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
@@ -34,11 +34,11 @@ ht-degree: 2%
 * **關閉**:停止編輯。
 * **儲存**:儲存變更。
 
-## 全螢幕編輯 {#full-screen-editing}
+## 全螢幕編輯{#full-screen-editing}
 
-對於基於文本的元件，按一下工具欄中的全屏模式 ![RTE全屏按鈕](/help/sites-cloud/authoring/assets/editing-full-screen.png)[](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) ，開啟富格文本編輯器並隱藏其餘的頁面內容。
+對於基於文本的元件，按一下[工具欄](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)中的全屏模式![RTE全屏按鈕](/help/sites-cloud/authoring/assets/editing-full-screen.png)以開啟富格文本編輯器並隱藏其餘的頁面內容。
 
-全螢幕模式會顯示您可用於製作的所有已設定選項。 選項的可用 [性取決於配置](/help/implementing/developing/extending/rich-text-editor.md)。
+全螢幕模式會顯示您可用於製作的所有已設定選項。 選項[的可用性取決於配置](/help/implementing/developing/extending/rich-text-editor.md)。
 
 ![全屏模式下的RTE](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
@@ -53,7 +53,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->將嵌套清單從複製 [!DNL Microsoft Word] 到RTE中可能會產生不一致的結果。 請改為貼上為文字，然後進行手動調整。
+>將嵌套清單從[!DNL Microsoft Word]複製到RTE中可能會導致結果不一致。 請改為貼上為文字，然後進行手動調整。
 
 >[!MORELIKETHIS]
 >
