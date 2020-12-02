@@ -3,9 +3,9 @@ title: 管理影片資產
 description: 在 [!DNL Adobe Experience Manager]中上傳、預覽、註解和發佈視訊資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '537'
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 7%
 
 ## 使用處理設定檔{#transcode-video}進行轉碼
 
-[!DNL Experience Manager] 「雲端服務」可讓您使用「處理設定檔」進行MP4視訊檔的基本轉碼。此功能可讓您不僅上傳，還預覽和縮放MP4視訊檔案。
+[!DNL Experience Manager] as as  [!DNL Cloud Service] lots you do basic codecing of MP4 video files using Processing Profiles.此功能可讓您不僅上傳，還預覽和縮放MP4視訊檔案。
 
 ![在Experience Manager中建立視訊轉碼的處理設定檔](assets/video-processing-profile-for-mp4.png)
 
