@@ -61,7 +61,7 @@ AEM Maven 專案必須進行某些變更，才能與 AEM as a Cloud Service 相�
 
 在使用 AEM as a Cloud Service 開發時，您需要留意一些額外的開發准則。請參考 [AEM as a Cloud Service 開發准則](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/development-guidelines.html)以深入了解。
 
-您應該從「規劃」階段開始，便列出需要重構以便與雲端服務相容的區域。您也應該檢視[開發准則](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/development-guidelines.html)以取得詳細資訊，了解如何重構和最佳化程式碼以便移轉至雲端服務。
+您應該從「規劃」階段開始，便列出需要重構以便與雲端服務相容的區域。您也應該檢視[開發准則](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)以取得詳細資訊，了解如何重構和最佳化程式碼以便移轉至雲端服務。
 
 如果要加速某些程式碼重構任務，您可以使用下列工具：
 
