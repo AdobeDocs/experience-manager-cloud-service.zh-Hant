@@ -11,7 +11,7 @@ ht-degree: 13%
 ---
 
 
-# Cascading Metadata {#cascading-metadata}
+# 階層式中繼資料{#cascading-metadata}
 
 在擷取資產的中繼資料資訊時，使用者會在各種可用欄位中提供資訊。 您可以顯示特定的中繼資料欄位或欄位值，這些欄位值取決於在其他欄位中選取的選項。 這種元資料的條件顯示稱為級聯元資料。 換言之，您可以在特定中繼資料欄位／值與一或多個欄位及／或其值之間建立相依關係。
 
@@ -26,7 +26,7 @@ ht-degree: 13%
 * 根據在另一個欄位中指定的值，變更特定欄位顯示的選項。
 * 根據其他欄位中指定的值，在特定欄位中設定預設中繼資料值。
 
-## 在AEM中設定階層式中繼資料 {#configure-cascading-metadata-in-aem}
+## 在AEM {#configure-cascading-metadata-in-aem}中設定階層式中繼資料
 
 請考慮您要根據選取的資產類型顯示階層式中繼資料的藍本。 部分範例
 
@@ -40,21 +40,21 @@ ht-degree: 13%
 
    ![select_form](assets/select_form.png)
 
-1. （可選）在中繼資料結構編輯器中，建立新欄位以條件化。 在「設定」索引標籤中指定名稱 **[!UICONTROL 和屬]** 性路徑。
+1. （可選）在中繼資料結構編輯器中，建立新欄位以條件化。 在&#x200B;**[!UICONTROL Settings]**&#x200B;標籤中指定名稱和屬性路徑。
 
-   若要建立新的標籤，請點選／按 `+` 一下以新增標籤，然後新增中繼資料欄位。
+   若要建立新標籤，請點選／按一下`+`以新增標籤，然後新增中繼資料欄位。
 
    ![add_tab](assets/add_tab.png)
 
-1. 新增資產類型的下拉式欄位。 在「設定」索引標籤中指定名稱 **[!UICONTROL 和屬]** 性路徑。 新增可選說明。
+1. 新增資產類型的下拉式欄位。 在&#x200B;**[!UICONTROL Settings]**&#x200B;標籤中指定名稱和屬性路徑。 新增可選說明。
 
    ![asset_type_field](assets/asset_type_field.png)
 
 1. 鍵值配對是提供給表單使用者的選項。 您可以手動或從JSON檔案提供金鑰值配對。
 
-   * 若要手動指定值，請選取「手動 **[!UICONTROL 新增]**」，點選／按一下「 **[!UICONTROL 新增選擇]** 」並指定選項文字和值。 例如，指定「視訊」、「PDF」、「Word」和「影像」資產類型。
+   * 要手動指定值，請選擇&#x200B;**[!UICONTROL 手動添加]**，然後點選／按一下&#x200B;**[!UICONTROL 添加選擇]**&#x200B;並指定選項文本和值。 例如，指定「視訊」、「PDF」、「Word」和「影像」資產類型。
 
-   * 若要動態擷取JSON檔案中的值，請選取「 **[!UICONTROL 透過JSON路徑新增]** 」並提供JSON檔案的路徑。 AEM會在表單顯示給使用者時即時擷取鍵值配對。
+   * 若要動態擷取JSON檔案中的值，請選取「透過JSON路徑新增」**[!UICONTROL ，並提供JSON檔案的路徑。]** AEM會在表單顯示給使用者時即時擷取鍵值配對。
 
    這兩種選項互斥。 您無法從JSON檔案匯入選項並手動編輯。
 
@@ -74,11 +74,11 @@ ht-degree: 13%
 
    ![video_dependent_fields](assets/video_dependent_fields.png)
 
-1. 要在資產類型欄位和其他欄位之間建立相關性，請選擇相關欄位並開啟「規 **[!UICONTROL 則]** 」頁籤。
+1. 要在資產類型欄位和其他欄位之間建立相關性，請選擇相關欄位並開啟&#x200B;**[!UICONTROL 規則]**&#x200B;頁籤。
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
+1. 在&#x200B;**[!UICONTROL Requirement]**&#x200B;下，根據新規則&#x200B;]**選項選擇**[!UICONTROL  Required。
 1. 點選/按一 **[!UICONTROL 下「新增規則]** 」，然後選擇「 **** 資產類型」欄位以建立相依性。也選擇要在其上建立相關性的欄位值。在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。點選/按一 **[!UICONTROL 下「完成]** 」以儲存變更。
 
    ![define_rule](assets/define_rule.png)
@@ -102,7 +102,7 @@ ht-degree: 13%
    >您可以套用 **[!UICONTROL 「需求]** 」條件 **[!UICONTROL 和「可見性]** 」條件，它們彼此獨立。
 
 1. 同樣地，在「資產類型」欄位中的「視訊」值與其他欄位（例如「轉碼器」和「持續時間」）之間建立相依關係。
-1. 在「資產類型」欄位和「頁數」和「作者」欄位中，重複這些步驟以建立檔案資產(PDF和Word [!UICONTROL )之間的相依性]。
+1. 重複步驟，在[!UICONTROL Asset Type]欄位和[!UICONTROL Page Count]和[!UICONTROL Author]欄位中建立檔案資產（PDF和Word）之間的相依關係。
 1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。將中繼資料結構套用至資料夾。
 
 1. 導覽至您套用中繼資料結構的資料夾，並開啟資產的屬性頁面。 根據您在「資產類型」欄位中的選擇，會顯示相關的階層式中繼資料欄位。
