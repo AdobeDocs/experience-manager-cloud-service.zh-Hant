@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Assets]中的數位版權管理'
-description: '瞭解如何以雲端服務的形式管理授權資產的資產到期狀態和資訊。 [!DNL Experience Manager] '
+description: 瞭解如何以 [!DNL Experience Manager] a [!DNL Cloud Service]的形式管理授權資產的資產到期狀態和資訊。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1345'
 ht-degree: 7%
 
 ---
