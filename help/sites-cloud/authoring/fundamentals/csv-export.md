@@ -12,9 +12,9 @@ ht-degree: 42%
 
 # 匯出為 CSV {#export-to-csv}
 
-**「建立CSV報表** 」可讓您將有關頁面的資訊匯出至本機系統上的CSV檔案。
+**建立CSV** 可讓您將頁面相關資訊匯出至本機系統上的CSV檔案。
 
-* 下載的檔案稱為 `export.csv`
+* 下載的檔案稱為`export.csv`
 * 內容取決於您選擇的屬性。
 * 可定義路徑和導出深度。
 
@@ -43,13 +43,13 @@ ht-degree: 42%
    * 其他層級的子項
    * 層級
 
-產生的 `export.csv` 檔案可在Excel或任何其他相容應用程式中開啟。
+產生的`export.csv`檔案可在Excel或任何其他相容應用程式中開啟。
 
 若要建立CSV匯出：
 
 1. 開啟 **Sites** Console，視需要導覽至所需位置。
    * 瀏覽Sites **控制台時**  (在「清單」檢視中)，可使用「建立 **CSV報表** 」選項
-   * 它是「建立」下拉式功 **能表** 的選項：
+   * 它是&#x200B;**Create**&#x200B;下拉式選單的選項：
 
       ![建立CSV選項](/help/sites-cloud/authoring/assets/csv-create.png)
 
