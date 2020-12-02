@@ -3,9 +3,9 @@ title: 將資產、檔案夾和系列共用為連結
 description: 本文說明如何在Experience Manager Assets中以超連結的形式共用資產、檔案夾和系列。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 共用及分發在Experience Manager {#share-assets-from-aem}中管理的資產
 
-Adobe Experience Manager(AEM)Assets可讓您與組織成員及外部實體（包括合作夥伴和廠商）共用資產、資料夾和系列。 使用下列方法，將Experience Manager Assets中的資產共用為雲端服務：
+Adobe Experience Manager(AEM)Assets可讓您與組織成員及外部實體（包括合作夥伴和廠商）共用資產、資料夾和系列。 使用下列方法將Experience Manager Assets中的資產共用為[!DNL Cloud Service]:
 
 * 以連結的形式分享。
 * 下載資產並個別分享。
@@ -187,6 +187,5 @@ Adobe Asset Link可簡化創作人員與行銷人員在內容建立程式中的�
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!--
-Add content or link about how to share using Brand Portal when it is available on Cloud Service.
+<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
