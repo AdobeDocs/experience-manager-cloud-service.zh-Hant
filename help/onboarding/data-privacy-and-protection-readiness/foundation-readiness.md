@@ -10,7 +10,7 @@ ht-degree: 5%
 ---
 
 
-# Adobe Experience Manager作為雲端服務基礎，為資料保護和資料隱私法規做好準備 {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager作為雲端服務基金會的準備，適用於資料保護和資料隱私權法規{#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,17 +20,17 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->如需Adobe對隱私權問題之回應，以及這對您身為Adobe客戶意味著什麼的詳細資訊，請參 [閱Adobe的隱私權中心](https://www.adobe.com/privacy.html)。
+>如需Adobe對隱私權問題之回應，以及這對您身為Adobe客戶意味著什麼的詳細資訊，請參閱[Adobe的隱私權中心](https://www.adobe.com/privacy.html)。
 
-## AEM Foundation資料隱私與保護支援 {#aem-foundation-data-privacy-and-protection-support}
+## AEM Foundation資料隱私與保護支援{#aem-foundation-data-privacy-and-protection-support}
 
 在AEM Foundation層級，儲存的個人資料會保存在「使用者設定檔」中。 因此，本文的資訊主要涉及如何訪問和刪除用戶配置檔案，分別解決訪問和刪除請求。
 
-## 訪問用戶配置檔案 {#accessing-a-user-profile}
+## 訪問用戶配置檔案{#accessing-a-user-profile}
 
-### 手動步驟 {#manual-steps}
+### 手動步驟{#manual-steps}
 
-1. 開啟「使用者管理」主控台，方法是瀏覽至「工 **[!UICONTROL 具」-「安全性」-「使用者」]** ，或直接瀏覽至 `https://<serveraddress>:<serverport>/security/users.html`
+1. 開啟「使用者管理」主控台，方法是瀏覽至&#x200B;**[!UICONTROL 工具——安全性——使用者]**，或直接瀏覽至`https://<serveraddress>:<serverport>/security/users.html`
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -40,7 +40,7 @@ ht-degree: 5%
 
    ![搜尋帳戶](assets/dpp-foundation-01.png)
 
-1. 最後，按一下使用者描述檔以開啟該描述檔，然後檢查「詳細資 **[!UICONTROL 訊]** 」標籤下。
+1. 最後，按一下使用者描述檔以開啟該描述檔，然後檢查&#x200B;**[!UICONTROL Details]**&#x200B;標籤下方。
 
    ![用戶配置檔案](assets/dpp-foundation-02.png)
 
@@ -75,14 +75,14 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## 禁用用戶並刪除關聯的配置檔案 {#disabling-a-user-and-deleting-the-associated-profiles}
+## 禁用用戶並刪除關聯的配置檔案{#disabling-a-user-and-deleting-the-associated-profiles}
 
-### 禁用用戶 {#disable-user}
+### 禁用用戶{#disable-user}
 
 1. 開啟「使用者管理」主控台，並依上述說明搜尋相關使用者。
 2. 將滑鼠指標暫留在使用者上，然後按一下選取圖示。 描述檔會變成灰色，表示已選取。
 
-3. 按下上 **方功能表** 中的「停用」按鈕，以停用使用者：
+3. 按上方菜單中的&#x200B;**禁用**&#x200B;按鈕禁用用戶：
 
    ![禁用帳戶](assets/dpp-foundation-03.png)
 
@@ -92,7 +92,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![已禁用帳戶](assets/dpp-foundation-04.png)
 
-### 刪除用戶配置檔案資訊 {#delete-user-profile-information}
+### 刪除用戶配置檔案資訊{#delete-user-profile-information}
 
 >[!NOTE]
 >
