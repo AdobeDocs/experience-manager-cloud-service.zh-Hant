@@ -12,42 +12,42 @@ ht-degree: 12%
 ---
 
 
-# Manage assets {#manage-assets}
+# 管理資產{#manage-assets}
 
-本文說明如何在Adobe Experience Manager Assets中管理和編輯資產。 若要管理內容片段，請參 [閱內容片段](content-fragments/content-fragments.md) 。
+本文說明如何在Adobe Experience Manager Assets中管理和編輯資產。 若要管理內容片段，請參閱[內容片段](content-fragments/content-fragments.md)資產。
 
-## 建立資料夾 {#creating-folders}
+## 建立資料夾{#creating-folders}
 
-組織資產集合（例如，所有影像）時， `Nature` 您可以建立資料夾以將資產保持在一起。 您可以使用資料夾來分類和組織您的資產。 AEM Assets不需要您在檔案夾中組織資產，以提高工作效率。
+組織資產集合（例如所有`Nature`影像）時，您可以建立資料夾以將資產保持在一起。 您可以使用資料夾來分類和組織您的資產。 AEM Assets不需要您在檔案夾中組織資產，以提高工作效率。
 
 >[!NOTE]
 >
->* 共用至Marketing Cloud時不 `sling:OrderedFolder`支援共用類型的「資產」檔案夾。 如果要共用資料夾，在建立資料夾時不 [!UICONTROL 要選擇] 「有序」。
->* Experience Manager不允許將 `subassets` Word用作資料夾的名稱。 它是為節點保留的關鍵字，其中包含複合資產的子資產
+>* 共用至Marketing Cloud時，不支援共用類型`sling:OrderedFolder`的「資產」檔案夾。 如果要共用資料夾，在建立資料夾時不要選擇[!UICONTROL Ordered]。
+>* Experience Manager不允許使用`subassets`字詞作為資料夾的名稱。 它是為節點保留的關鍵字，其中包含複合資產的子資產
 
 
-1. 導覽至您要建立新資料夾的數位資產檔案夾。 在功能表中，按一下「 **[!UICONTROL 建立]**」。 選擇「 **[!UICONTROL 新建資料夾]**」。
-1. 在「標 **[!UICONTROL 題]** 」欄位中，提供檔案夾名稱。 依預設，DAM會使用您提供的標題作為檔案夾名稱。 建立資料夾後，您可以覆寫預設資料夾，並指定另一個資料夾名稱。
+1. 導覽至您要建立新資料夾的數位資產檔案夾。 在菜單中，按一下&#x200B;**[!UICONTROL 建立]**。 選擇&#x200B;**[!UICONTROL 新建資料夾]**。
+1. 在&#x200B;**[!UICONTROL Title]**&#x200B;欄位中，提供資料夾名稱。 依預設，DAM會使用您提供的標題作為檔案夾名稱。 建立資料夾後，您可以覆寫預設資料夾，並指定另一個資料夾名稱。
 1. 按一下&#x200B;**[!UICONTROL 建立]**。您的資料夾會顯示在數位資產資料夾中。
 
 不支援下列（以空格分隔的）字元清單：
 
-* 資產檔案名稱不能包含下列任何字元： `* / : [ \\ ] | # % { } ? &`
-* 資產檔案夾名稱不能包含下列任何字元： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* 資產檔案名稱不能包含下列任何字元：`* / : [ \\ ] | # % { } ? &`
+* 資產檔案夾名稱不能包含下列任何字元：`* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Upload assets {#uploading-assets}
+## 上傳資產{#uploading-assets}
 
-請參 [閱將數位資產新增至Experience Manager](add-assets.md)。
+請參閱[將數位資產新增至Experience Manager](add-assets.md)。
 
-## 偵測重複資產 {#detect-duplicate-assets}
+## 偵測重複資產{#detect-duplicate-assets}
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-如果DAM用戶上載儲存庫中已存在的一個或多個資產，則 [!DNL Experience Manager] 會檢測複製並通知用戶。 重複偵測預設會停用，因為它可能會根據儲存庫大小和上傳的資產數量，對效能產生影響。 若要啟用此功能，請設 [!UICONTROL 定Adobe AEM Cloud Asset Duplication Detector]。 了 [解如何進行OSGi配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 複製檢測基於儲存在的唯 `dam:sha1` 一值 `jcr:content/metadata/dam:sha1`。 這表示即使檔案名稱不同，也會偵測到重複資產。
+如果DAM用戶上傳儲存庫中已存在的一個或多個資產， [!DNL Experience Manager]將檢測複製並通知用戶。 重複偵測預設會停用，因為它可能會根據儲存庫大小和上傳的資產數量，對效能產生影響。 若要啟用此功能，請設定[!UICONTROL Adobe AEM Cloud Asset Duplication Detector]。 請參閱[如何執行OSGi配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 複製檢測基於儲存在`jcr:content/metadata/dam:sha1`的唯一`dam:sha1`值。 這表示即使檔案名稱不同，也會偵測到重複資產。
 
 ![偵測重複資產OSGi組態](assets/duplicate-detection.png)
 
-您可以在自訂程式碼中 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 新增設定檔案，而且檔案可以包含下列項目：
+您可以在自訂代碼中新增設定檔案`/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json`，而且該檔案可包含下列項目：
 
 ```json
 {
@@ -60,50 +60,50 @@ ht-degree: 12%
 
 ![重複資產的收件匣通知](assets/duplicate-detect-inbox-notification.png)
 
-## 預覽資產 {#previewing-assets}
+## 預覽資產{#previewing-assets}
 
 若要預覽資產，請依照下列步驟進行。
 
 1. 從「資產」使用者介面，導覽至您要預覽的資產所在的位置。
 1. 點選所要的資產以將其開啟。
 
-1. 在預覽模式中，支援的影像類型(使用互 [動式編輯](/help/assets/file-format-support.md) )可使用縮放選項。
+1. 在預覽模式中，[支援的影像類型](/help/assets/file-format-support.md)（使用互動編輯）可使用縮放選項。
 
-   若要縮放資產，請點選／按一 `+` 下（或點選／按一下資產上的放大鏡）。 若要縮小，請點選／按一下 `-`。 當您放大時，可以透過平移來仔細檢視影像的任何區域。 重設縮放箭頭會將您帶回原始檢視。
+   若要縮放資產，請點選／按一下`+`（或點選／按一下資產上的放大鏡）。 若要縮小，請點選／按一下`-`。 當您放大時，可以透過平移來仔細檢視影像的任何區域。 重設縮放箭頭會將您帶回原始檢視。
 
-   點選 **[!UICONTROL 「重設]** 」，將檢視重設為原始大小。
+   點選「**[!UICONTROL Reset]**」，將檢視重設為原始大小。
 
 ## 編輯屬性 {#editing-properties}
 
 1. 導覽至您要編輯其中繼資料的資產所在位置。
 
-1. 選取資產，然後點選／按一下工 **[!UICONTROL 具列中的]** 「屬性」以檢視資產屬性。 或者，選擇資 **[!UICONTROL 產卡上]** 「屬性」的快速動作。
+1. 選取資產，然後從工具列點選／按一下「屬性&#x200B;****」以檢視資產屬性。 或者，選擇資產卡上的&#x200B;**[!UICONTROL 屬性]**&#x200B;快速動作。
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. 在「屬 [!UICONTROL 性] 」頁面中，編輯各標籤下的中繼資料屬性。 例如，在「基 **[!UICONTROL 本]** 」標籤下，編輯標題、說明等。
+1. 在[!UICONTROL 屬性]頁中，編輯各頁籤下的元資料屬性。 例如，在&#x200B;**[!UICONTROL Basic]**&#x200B;標籤下，編輯標題、說明等。
 
    >[!NOTE]
    >
-   >「屬性」頁面 [!UICONTROL 的版面配置] ，以及可用的中繼資料屬性，取決於基礎的中繼資料結構。 要瞭解如何修改「屬性」頁的 [!UICONTROL 佈局] ，請參 [閱元資料結構](/help/assets/metadata-schemas.md)。
+   >[!UICONTROL 屬性]頁面的佈局和可用的元資料屬性取決於底層元資料架構。 要瞭解如何修改[!UICONTROL 屬性]頁的佈局，請參閱[元資料結構](/help/assets/metadata-schemas.md)。
 
 1. 若要排程啟動資產的特定日期/時間，請使用「準時」欄位旁的日 **[!UICONTROL 期選擇器]** 。
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. 若要在特定持續時間後停用資產，請從「關閉時間」欄位旁的日期選取器選擇停 **[!UICONTROL 用日期]** /時間。 停用日期應晚於資產的啟用日期。 在「關 [!UICONTROL 閉時間]」後，資產及其轉譯無法透過「資產」網頁介面或HTTP API使用。
+1. 若要在特定持續時間後停用資產，請從&#x200B;**[!UICONTROL 關閉時間]**&#x200B;欄位旁的日期選擇器選擇停用日期／時間。 停用日期應晚於資產的啟用日期。 在[!UICONTROL 關閉時間]之後，資產及其轉譯無法透過「資產」網頁介面或HTTP API使用。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 在「標 **[!UICONTROL 記]** 」欄位中，選取一或多個標籤。 若要新增自訂標籤，請在方塊中輸入標籤名稱，然後按Enter鍵。 新標籤會儲存在AEM中。
+1. 在&#x200B;**[!UICONTROL Tags]**&#x200B;欄位中，選取一或多個標籤。 若要新增自訂標籤，請在方塊中輸入標籤名稱，然後按Enter鍵。 新標籤會儲存在AEM中。
 
    YouTube需要「標籤」才能發佈，並有YouTube的連結（如果找到適當的連結）。
 
    >[!NOTE]
    >
-   >要建立標籤，您必須在CRX儲存庫的路 `/content/cq:tags/default` 徑上具有寫權限。
+   >要建立標籤，您必須在CRX儲存庫的`/content/cq:tags/default`路徑上具有寫權限。
 
-1. 若要檢視資產的使用情況統計資料，請按一下／點選「 **[!UICONTROL 前瞻分析]** 」標籤。
+1. 若要檢視資產的使用情況統計資料，請按一下／點選&#x200B;**[!UICONTROL Insights]**&#x200B;標籤。
 
    使用統計資料包括：
 
@@ -111,81 +111,81 @@ ht-degree: 12%
    * 使用資產的通道／裝置
    * 最近使用資產的創意解決方案
 
-   如需詳細資訊，請參 [閱資產分析](assets-insights.md)。
+   如需詳細資訊，請參閱[資產分析](assets-insights.md)。
 
-1. Tap/click **[!UICONTROL Save &amp; Close]**.
+1. 點選／按一下&#x200B;**[!UICONTROL 儲存並關閉]**。
 
 1. 導覽至「資產」使用者介面。 編輯的中繼資料屬性（包括標題、說明和標籤）會顯示在資產卡片的「卡片」檢視中，以及「清單」檢視中相關欄下。
 
-## 複製資產 {#copying-assets}
+## 複製資產{#copying-assets}
 
 複製資產或資料夾時，會複製整個資產或資料夾及其內容結構。 複製的資產或資料夾會在目標位置複製。 來源位置的資產不會變更。
 
 不會結轉資產特定副本的少數屬性。 例如：
 
-* 資產ID、建立日期和時間，以及版本和版本記錄。 有些屬性由屬性、 `jcr:uuid`和 `jcr:created`指示 `cq:name`。
+* 資產ID、建立日期和時間，以及版本和版本記錄。 其中有些屬性由`jcr:uuid`、`jcr:created`和`cq:name`屬性指示。
 
 * 每個資產及其每個轉譯的建立時間和參考路徑都是唯一的。
 
 保留其他屬性和元資料資訊。 複製資產時不會建立部分復本。
 
-1. 從「資產」使用者介面中，選取一或多個資產，然後點選／按一下工具列 **[!UICONTROL 中的]** 「複製」圖示。 或者，從資 **[!UICONTROL 產卡]** 中選擇 ![Copy](assets/copy_icon.png) _copy_icon快速操作。
+1. 從「資產」使用者介面中，選取一或多個資產，然後點選／按一下工具列中的「複製」圖示。 ****&#x200B;或者，從資產卡中選擇&#x200B;**[!UICONTROL Copy]** ![copy_icon](assets/copy_icon.png)快速動作。
 
    >[!NOTE]
    >
-   >如果您使用「復 [!UICONTROL 制] 」快速動作，一次只能複製一個資產。
+   >如果您使用[!UICONTROL Copy]快速動作，則一次只能複製一個資產。
 
 1. 導覽至您要複製資產的位置。
 
    >[!NOTE]
    >
-   >如果您在相同位置複製資產，AEM會自動產生名稱的變更。 例如，如果您複製標題為「資產」的 `Square`資產，AEM會自動產生其復本的標題 `Square1`。
+   >如果您在相同位置複製資產，AEM會自動產生名稱的變更。 例如，如果您複製名為`Square`的資產，AEM會自動產生其復本的標題為`Square1`。
 
-1. 按一下工 **[!UICONTROL 具列中]** 的「貼上資產」圖示。 資產會複製到此位置。
+1. 按一下工具列中的&#x200B;**[!UICONTROL 貼上]**&#x200B;資產圖示。 資產會複製到此位置。
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
    >[!NOTE]
    >
-   >「貼 **[!UICONTROL 上]** 」圖示可在工具列中使用，直到貼上作業完成為止。
+   >**[!UICONTROL 貼上]**&#x200B;圖示可在工具列中使用，直到貼上作業完成為止。
 
-### 移動或重新命名資產 {#moving-or-renaming-assets}
+### 移動或重新命名資產{#moving-or-renaming-assets}
 
 1. 導覽至您要移動的資產所在的位置。
 
-1. 選取資產，然後點選／按一下工 **[!UICONTROL 具列中的]**![「移動」圖示](assets/move_icon.png) 。
+1. 選取資產，然後點選／按一下工具列中的&#x200B;**[!UICONTROL Move]**&#x200B;圖示![move_icon](assets/move_icon.png)。
 
 1. 在「移動資產」精靈中，執行下列其中一項作業：
 
-   * 指定資產移動後的名稱。 然後點選／按一 **[!UICONTROL 下]** 「下一步」繼續。
+   * 指定資產移動後的名稱。 然後點選／按一下&#x200B;**[!UICONTROL Next]**&#x200B;繼續。
 
-   * 點選／按一 **[!UICONTROL 下「取消]** 」以停止程式。
+   * 點選／按一下&#x200B;**[!UICONTROL 取消]**&#x200B;以停止程式。
    >[!NOTE]
    >
    >* 如果新位置沒有同名的資產，您可以指定該資產的相同名稱。 但是，如果您將資產移至同名資產所在的位置，則應使用不同的名稱。 如果您使用相同的名稱，系統會自動產生名稱的變化。 例如，如果您的資產名稱為Square，系統會為其副本產生名稱Square1。
    >* 重新命名時，檔案名稱中不允許空格。
 
 
-1. 在「選 **[!UICONTROL 擇目標]** 」對話框中，執行下列操作之一：
+1. 在&#x200B;**[!UICONTROL 選擇目標]**&#x200B;對話框中，執行下列操作之一：
 
-   * 導覽至資產的新位置，然後點選／按「下一 **[!UICONTROL 步]** 」繼續。
+   * 導覽至資產的新位置，然後點選／按一下「下一頁」繼續。****
 
-   * 點選／按一 **[!UICONTROL 下「上]** 」，返回「重新 **[!UICONTROL 命名]** 」畫面。
+   * 點選／按一下&#x200B;**[!UICONTROL Back]**&#x200B;以返回&#x200B;**[!UICONTROL Rename]**&#x200B;畫面。
 
-1. 如果要移動的資產有任何參照頁面、資產或系列，則「選擇目標」標籤旁 **[!UICONTROL 會顯示]** 「調整參 **[!UICONTROL 考」標籤]** 。
+1. 如果要移動的資產有任何參照頁面、資產或系列，**[!UICONTROL 調整參考]**&#x200B;標籤會顯示在&#x200B;**[!UICONTROL 選擇目標]**&#x200B;標籤旁。
 
-   在「調整參照」( **[!UICONTROL Adjust References)螢幕中執行下列操作之一]** :
+   在&#x200B;**[!UICONTROL 調整參考]**&#x200B;畫面中執行下列任一項作業：
 
-   * 指定要根據新詳細資料調整的參照，然後點選／按一下「移 **[!UICONTROL 動]** 」繼續。
+   * 指定要根據新詳細資料調整的參照，然後點選／按一下「移動&#x200B;**[!UICONTROL 」以繼續。]**
 
-   * 從「調 **[!UICONTROL 整」欄]** ，選取／取消選取資產參照。
-   * 點選／按一 **[!UICONTROL 下「上]** 」，返回「 **[!UICONTROL 選取目標]** 」畫面。
+   * 從&#x200B;**[!UICONTROL Adjust]**&#x200B;欄中，選擇／取消選擇資產的參考。
+   * 點選／按一下&#x200B;**[!UICONTROL 上一步]**&#x200B;以返回至&#x200B;**[!UICONTROL 選擇目標]**&#x200B;畫面。
 
-   * 點選／按一 **[!UICONTROL 下「取消]** 」以停止移動作業。
+   * 點選／按一下「取消」，停止移動作業。****
 
    如果您不更新參照，則參照會繼續指向資產的先前路徑。 如果您調整參照，它們會更新為新資產路徑。
 
-### 管理轉譯 {#managing-renditions}
+### 管理轉譯{#managing-renditions}
 
 1. 您可以新增或移除資產的轉譯，但原始的轉譯除外。 導覽至您要新增或移除轉譯的資產位置。
 
@@ -193,11 +193,11 @@ ht-degree: 12%
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. 點選／按一下GlobalNav圖示，然後從清單中選 **[!UICONTROL 取]** 「轉譯」。
+1. 點選／按一下GlobalNav圖示，然後從清單中選取「**[!UICONTROL 轉譯]**」。
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. 在「轉 **[!UICONTROL 譯]** 」面板中，檢視為資產產生的轉譯清單。
+1. 在&#x200B;**[!UICONTROL 轉譯]**&#x200B;面板中，檢視為資產產生的轉譯清單。
 
    ![renditions_panel](assets/renditions_panel.png)
 
@@ -209,7 +209,7 @@ ht-degree: 12%
 
    **刪除轉譯**
 
-   從「轉譯」面板選取轉 **[!UICONTROL 譯]** ，然後點選／按一下工具列中的「 **[!UICONTROL 刪除轉譯]** 」圖示。 資產處理完成後，無法大量刪除轉譯。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自 [!DNL Experience Manager] 訂以刪除特定轉譯或刪除資產，然後重新上傳已刪除的資產。
+   從&#x200B;**[!UICONTROL 轉譯]**&#x200B;面板中選擇轉譯，然後點選／按一下工具列中的&#x200B;**[!UICONTROL 刪除轉譯]**&#x200B;圖示。 資產處理完成後，無法大量刪除轉譯。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自訂[!DNL Experience Manager]以刪除特定轉譯或刪除資產，然後重新上傳已刪除的資產。
 
    ![delete_rendition圖示](assets/delete_renditionicon.png)
 
@@ -227,17 +227,17 @@ ht-degree: 12%
 
    若要在資產詳細資料層級設定影像的轉譯尺寸，請覆蓋節 `renditionpicker` 點(`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`)並設定width屬性的值。設定屬性大 **[!UICONTROL 小 (長) (KB]** )以取代寬度，以根據影像大小自訂資產詳細資料頁面上的轉譯。對於基於大小的定製，如果匹配的 `preferOriginal` 格式副本的大小大於原始格式副本的大小，則屬性會為原始格式副本指定首選項。
 
-   同樣地，您也可以透過覆蓋來自訂「注釋」頁面影像 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`。
+   同樣地，您也可以通過覆蓋`libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`來自定義「注釋」頁面影像。
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-   若要設定視訊資產的轉譯維度，請導覽至CRX `videopicker` 儲存庫中位於位置的節 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`點、覆蓋節點，然後編輯適當的屬性。
+   若要設定視訊資產的轉譯維度，請導覽至位於`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`位置的CRX存放庫中的`videopicker`節點，覆蓋節點，然後編輯適當的屬性。
 
    >[!NOTE]
    >
    >只有採用HTML5相容視訊格式的瀏覽器才支援視訊註解。 此外，視瀏覽器而定，支援不同的視訊格式。
 
-## Delete assets {#delete-assets}
+## 刪除資產{#delete-assets}
 
 若要解析或移除其他頁面的傳入參照，請先更新相關參照，再刪除資產。
 
@@ -245,17 +245,17 @@ ht-degree: 12%
 
 1. 瀏覽至您要刪除的資產所在的位置。
 
-1. 選取資產，然後點選／按一下工具 **[!UICONTROL 列中的]** 「刪除」圖示。
+1. 選取資產，然後點選／按一下工具列中的&#x200B;**[!UICONTROL Delete]**&#x200B;圖示。
 
    ![delete_icon](assets/delete_icon.png)
 
 1. 在確認對話框中，按一下：
 
-   * **[!UICONTROL 取消]** ，停止動作
+   * **[!UICONTROL 取消]** 以停止操作
    * **[!UICONTROL 刪除]**&#x200B;來確認動作：
 
       * 如果資產沒有參考，則會刪除資產。
-      * 如果資產有參考，則會出現錯誤訊息通知您 **已參考一或多個資產。**&#x200B;您可以選取&#x200B;**[!UICONTROL 強制刪除]**&#x200B;或&#x200B;**[!UICONTROL 取消]**。
+      * 如果資產有參考，則會出現錯誤訊息通知您&#x200B;**有一或多個資產被參考。**&#x200B;您可以選取&#x200B;**[!UICONTROL 強制刪除]**&#x200B;或&#x200B;**[!UICONTROL 取消]**。
 
    >[!NOTE]
    >
@@ -270,9 +270,9 @@ ht-degree: 12%
 
 ## 下載資產 {#download-assets}
 
-See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
+請參閱「從AEM](/help/assets/download-assets-from-aem.md)下載資產」。[
 
-## Publish assets {#publish-assets}
+## 發佈資產{#publish-assets}
 
 <!--
 >[!NOTE]
@@ -291,48 +291,48 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
    >
    >如果您要發佈的檔案夾包含空白檔案夾，則不會發佈空白檔案夾。
 
-1. 點選／按一 **[!UICONTROL 下「發佈]** 」以確認資產的啟動。
+1. 點選／按一下&#x200B;**[!UICONTROL Publish]**&#x200B;以確認資產的啟動。
 
 >[!CAUTION]
 >
 >如果您發佈正在處理的資產，則只會發佈原始內容。 缺少轉譯。 等待處理完成，然後在處理完成後發佈或重新發佈資產。
 
-## 取消發佈資產 {#unpublishing-assets}
+## 取消發佈資產{#unpublishing-assets}
 
 1. 導覽至您要從發佈環境（解除發佈）移除的資產／資產檔案夾的位置。
 
-1. 選取要解除發佈的資產／資料夾，然後點選／按一下工具列 **[!UICONTROL 中的「管理出版物]** 」圖示。
+1. 選擇要取消發佈的資產／資料夾，然後點選／按一下工具欄中的「管理出版物」表徵圖。****
 
    ![manage_publication](assets/manage_publication.png)
 
-1. 從清單 **[!UICONTROL 中選取]** 「取消發佈」動作。
+1. 從清單中選擇&#x200B;**[!UICONTROL 取消發佈]**&#x200B;操作。
 
    ![unpublish_action](assets/unpublish_action.png)
 
-1. 若要稍後解除發佈資產，請選取「 **[!UICONTROL 稍後解除發佈]**」，然後選取要解除發佈資產的日期。
+1. 若要稍後解除發佈資產，請選取&#x200B;**[!UICONTROL 稍後解除發佈]**，然後選取要解除發佈資產的日期。
 1. 排程資產在發佈環境中無法使用的日期。
-1. 如果資產參考其他資產，請選擇您要取消發佈的參考。 點選／按一下「 **[!UICONTROL 解除發佈]**」。
+1. 如果資產參考其他資產，請選擇您要取消發佈的參考。 點選／按一下&#x200B;**[!UICONTROL 取消發佈]**。
 1. 在確認對話方塊中，點選／按一下：
 
-   * **[!UICONTROL 取消]** ，停止動作
-   * **[!UICONTROL 取消發佈]** ，以確認資產在指定日期已取消發佈（在發佈環境中不再可用）。
+   * **[!UICONTROL 取消]** 以停止操作
+   * **[!UICONTROL 取]** 消發佈，確認資產在指定日期未發佈（在發佈環境中不再可用）。
 
    >[!NOTE]
    >
    >解除發佈複雜資產時，請僅解除發佈資產。 請避免取消發佈參照，因為其他已發佈資產可能會參照這些參照。
 
-## Closed user group {#closed-user-group}
+## 已關閉的用戶組{#closed-user-group}
 
 已關閉的使用者群組(CUG)可用來限制對從AEM發佈的特定資產資料夾的存取權。 如果為資料夾建立CUG，則對資料夾（包括資料夾資產和子資料夾）的訪問僅限分配的成員或組。 若要存取資料夾，他們必須使用其安全憑證登入。
 
 CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登入頁面。
 
 1. 從「資產」使用者介面選取資料夾，然後點選／按一下工具列中的「屬性」圖示以顯示屬性頁面。
-1. 在「權 **[!UICONTROL 限]** 」標籤中，在「已關閉的使用者群組」 **[!UICONTROL 下新增成員或群組]**。
+1. 在&#x200B;**[!UICONTROL 權限]**&#x200B;標籤中，在&#x200B;**[!UICONTROL 關閉的用戶組]**&#x200B;下添加成員或組。
 
    ![add_user](assets/add_user.png)
 
-1. 若要在使用者存取資料夾時顯示登入畫面，請選取「啟 **[!UICONTROL 用]** 」選項。 然後，在AEM中選取登入頁面的路徑，並儲存變更。
+1. 要在用戶訪問資料夾時顯示登錄螢幕，請選擇&#x200B;**[!UICONTROL 啟用]**&#x200B;選項。 然後，在AEM中選取登入頁面的路徑，並儲存變更。
 
    ![login_page](assets/login_page.png)
 
@@ -347,16 +347,16 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
 
 搜尋資產是數位資產管理系統的核心使用，不論是供創意人員進一步使用、由商業使用者和行銷人員強穩管理資產，或由DAM管理員管理。
 
-如需簡單、進階和自訂搜尋，以發現和使用最適當的資產，請參閱「AEM [中的搜尋資產」](/help/assets/search-assets.md)。
+如需簡單、進階和自訂搜尋，以探索和使用最適合的資產，請參閱「AEM[中的搜尋資產」。](/help/assets/search-assets.md)
 
-## Quick actions {#quick-actions}
+## 快速動作{#quick-actions}
 
 一次只有一個資產的快速動作圖示可用。視您的裝置而定，執行下列動作以顯示快速動作圖示：
 
 * 觸控裝置：輕觸並按住。 例如，在iPad上，您可以點選並按住資產，以便顯示快速動作。
 * 非觸控裝置：暫留指標。 例如，在案頭裝置上，如果您將指標暫留在資產縮圖上，就會顯示快速動作列。
 
-## 編輯影像 {#editing-images}
+## 編輯影像{#editing-images}
 
 AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工作。 您可以裁切、旋轉、翻轉和執行其他影像編輯工作。 您也可以將影像地圖新增至資產。
 
@@ -366,13 +366,13 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 1. 執行下列任一項作業，以在編輯模式中開啟資產：
 
-   * 選取資產，然後按一下／點選工具列 **[!UICONTROL 中的]** 「編輯」圖示。
-   * 點選／按一 **[!UICONTROL 下]** 「卡片」檢視中資產上顯示的「編輯」圖示。
-   * 在資產頁面中，點選／按一下工具 **[!UICONTROL 列中的]** 「編輯」圖示。
+   * 選取資產，然後按一下／點選工具列中的&#x200B;**[!UICONTROL 編輯]**&#x200B;圖示。
+   * 點選／按一下「卡片」檢視中資產上顯示的&#x200B;**[!UICONTROL 編輯]**&#x200B;圖示。
+   * 在資產頁面中，點選／按一下工具列中的&#x200B;**[!UICONTROL 編輯]**&#x200B;圖示。
 
    ![edit_icon](assets/edit_icon.png)
 
-1. 若要裁切影像，請點選／按一下「裁切 **」圖** 示。
+1. 若要裁切影像，請點選／按一下「裁切&#x200B;****」圖示。
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
@@ -381,7 +381,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. 選取要裁切的區域，並調整影像上的大小或位置。
-1. 使用「 **完成** 」圖示（右上角）裁切影像。 按一下「完 **成** 」圖示也會觸發轉譯的重新產生。
+1. 使用&#x200B;**完成**&#x200B;圖示（右上角）裁切影像。 按一下&#x200B;**完成**&#x200B;圖示也會觸發轉譯的重新產生。
 
    ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -397,7 +397,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. 點選／按一下「 **完成** 」圖示以儲存變更。
+1. 點選／按一下&#x200B;**完成**&#x200B;圖示以儲存變更。
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
@@ -409,21 +409,22 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 >[!NOTE]
 >
->要編輯TXT檔案，請從配置管 **理器中設定Day CQ Link Externalizer** 。
+>要編輯TXT檔案，請從Configuration Manager中設定&#x200B;**Day CQ Link Externalizer**。
 
 ## 時間軸 {#timeline}
 
 時間軸可讓您檢視所選項目的各種事件，例如資產的作用中工作流程、註解／註解、活動記錄檔和版本。
 
-![為資產圖排序時間軸](assets/sort_timeline.gif)*條目：排序資產的時間軸項目*
+![排序資產的時間軸項](assets/sort_timeline.gif)
+*圖：排序資產的時間軸項目*
 
 >[!NOTE]
 >
->在「系 [列」控制台](/help/assets/manage-collections.md#navigate-the-collections-console),「全 **[!UICONTROL 部顯示]** 」清單提供僅檢視注釋和工作流程的選項。 此外，時間軸只會針對控制台中列出的頂層系列顯示。 如果您在任何系列中導覽，則不會顯示它。
+>在[Collections Console](/help/assets/manage-collections.md#navigate-the-collections-console)中，**[!UICONTROL Show All]**&#x200B;清單提供僅檢視注釋和工作流程的選項。 此外，時間軸只會針對控制台中列出的頂層系列顯示。 如果您在任何系列中導覽，則不會顯示它。
 
 >[!NOTE]
 >
->時間軸包含數 [個特定於內容片段的選項](content-fragments/content-fragments.md)。
+>時間軸包含數個內容片段](content-fragments/content-fragments.md)專屬的[選項。
 
 ## 備註 {#annotating}
 
@@ -433,10 +434,10 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 >[!NOTE]
 >
->對於「內容片段」, [會在片段編輯器中建立註解](content-fragments/content-fragments.md)。
+>對於內容片段，[註解是在片段編輯器](content-fragments/content-fragments.md)中建立的。
 
 1. 導覽至您要新增附註的資產位置。
-1. 點選／按一 **[!UICONTROL 下]** 下列其中一項的「註解」圖示：
+1. 點選／按一下下列其中一項的「註解&#x200B;**[!UICONTROL 」圖示：]**
 
    * [快速動作](#quick-actions)
    * 在選取資產或導覽至資產頁面後，從工具列
@@ -453,11 +454,11 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 >[!NOTE]
 >
->對於非管理員使用者，只有當使用者具有CRXDE中的「讀取」權限時，才會顯 `/home` 示建議。
+>對於非管理員用戶，僅當用戶具有`/home`在CRXDE中的讀取權限時，才會顯示建議。
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. 添加註釋後，按一下「 **[!UICONTROL 添加]** 」(Add)保存注釋。 註解通知會傳送給Aaron。
+1. 添加註釋後，按一下&#x200B;**[!UICONTROL Add]**&#x200B;將其保存。 註解通知會傳送給Aaron。
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -465,14 +466,14 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
    >
    >您可以在儲存多個註解之前，先加入這些註解。
 
-1. 點選／按一 **[!UICONTROL 下「關閉]** 」(Close)以退出「注釋」模式。
-1. 若要檢視通知，請使用Aaron MacDonald的認證登入AEM Assets，然後按一下「 **[!UICONTROL Notifications]** 」圖示以檢視通知。
+1. 點選／按一下&#x200B;**[!UICONTROL 關閉]**&#x200B;以退出「注釋」模式。
+1. 若要檢視通知，請使用Aaron MacDonald的認證登入AEM Assets，然後按一下「**[!UICONTROL 通知]**」圖示以檢視通知。
 
    >[!NOTE]
    >
-   >您也可以將註解新增至視訊資產。 在為視訊加上註解時，播放器會暫停，讓您在影格上加上註解。 如需詳細資訊，請參 [閱「管理視訊資產](manage-video-assets.md)」。
+   >您也可以將註解新增至視訊資產。 在為視訊加上註解時，播放器會暫停，讓您在影格上加上註解。 如需詳細資訊，請參閱[管理視訊資產](manage-video-assets.md)。
 
-1. 若要選擇不同的顏色以便區分使用者，請按一下／點選「描述檔」圖示，然後按一下／點選「我的偏 **[!UICONTROL 好設定」]**。
+1. 若要選擇不同的顏色以便區分使用者，請按一下／點選「描述檔」圖示，然後按一下／點選「我的偏好設定&#x200B;**[!UICONTROL 」。]**
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
@@ -484,11 +485,11 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 >
 >您也可以新增註解至系列。 不過，如果系列包含子系列，您只能將註解／留言新增至父系列。 子系列無法使用「註解」選項。
 
-### 查看保存的注釋 {#viewing-saved-annotations}
+### 查看保存的注釋{#viewing-saved-annotations}
 
 1. 要查看資產的已保存批注，請定位至資產的位置並開啟資產的資產頁。
 
-1. 點選／按一下GlobalNav圖示，然後從清 **[!UICONTROL 單中選擇]** 「時間軸」。
+1. 點選／按一下GlobalNav圖示，然後從清單中選擇&#x200B;**[!UICONTROL Timeline]**。
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -496,25 +497,25 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   在「時間軸」面板中點選／按 **[!UICONTROL 一下注釋]** ，以檢視影像上的對應註解。
+   在&#x200B;**[!UICONTROL 時間軸]**&#x200B;面板中點選／按一下注釋，以檢視影像上的對應註解。
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   點選／按一 **[!UICONTROL 下「刪除]**」，以刪除特定留言。
+   點選／按一下&#x200B;**[!UICONTROL Delete]**，以刪除特定的註解。
 
-### 列印註解 {#printing-annotations}
+### 打印注釋{#printing-annotations}
 
 如果資產有註解或已經受審核工作流程，您可以將資產連同註解列印為PDF檔案，以便離線審核。
 
 您也可以選擇僅打印注釋或查看狀態。
 
-要打印注釋和查看狀態，請點選／按一下「 **[!UICONTROL Print]** （打印）」表徵圖，然後按照嚮導中的說明操作。 只有當資 **[!UICONTROL 產至少指派了一個註解或審閱狀態時，「列印]** 」圖示才會出現在工具列中。
+要打印注釋和查看狀態，請點選／按一下&#x200B;**[!UICONTROL Print]**&#x200B;表徵圖，然後按照嚮導中的說明操作。 **[!UICONTROL Print]**&#x200B;圖示只有在資產至少指派了一個註解或檢閱狀態時，才會出現在工具列中。
 
 1. 從「資產」使用者介面，開啟資產的預覽頁面。
 1. 執行下列任一項作業：
 
    * 要打印所有注釋和審閱狀態，請跳過步驟3並直接轉到步驟4。
-   * 若要列印特定的註解和檢閱狀態，請開啟 [時間軸](/help/assets/manage-digital-assets.md#timeline) ，然後移至步驟3。
+   * 若要列印特定的註解和檢閱狀態，請開啟[時間軸](/help/assets/manage-digital-assets.md#timeline)，然後前往步驟3。
 
 1. 要打印特定注釋，請從時間軸中選擇注釋。
 
@@ -524,11 +525,11 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
-1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
+1. 點選／按一下工具列上的&#x200B;**[!UICONTROL Print]**&#x200B;圖示。
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. 從「列印」對話方塊中，選擇您要在PDF上顯示註解／審閱狀態的位置。 例如，如果您希望註解／狀態列印在包含已列印影像之頁面的右上角，請使用左上 **角設定** 。 預設會選取它。
+1. 從「列印」對話方塊中，選擇您要在PDF上顯示註解／審閱狀態的位置。 例如，如果您希望註解／狀態列印在包含已列印影像之頁面的右上角，請使用&#x200B;**左上**&#x200B;設定。 預設會選取它。
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -546,13 +547,13 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   要修改渲染的PDF檔案的外觀，例如注釋和狀態的字型顏色、大小和樣式、背景顏色，請從「配置管理器」(Configuration Manager)開啟「注釋 **[!UICONTROL PDF」(]** Annotation PDF)配置，並修改所需的選項。 例如，要更改批准狀態的顯示顏色，請修改相應欄位中的顏色代碼。 有關更改批注的字型顏色的資訊，請參 [閱注釋](/help/assets/manage-digital-assets.md#annotating)。
+   要修改渲染的PDF檔案的外觀，例如注釋和狀態的字型顏色、大小和樣式、背景顏色，請從「配置管理器」中開啟&#x200B;**[!UICONTROL 「注釋PDF配置」，並修改所需的選項。]**&#x200B;例如，要更改批准狀態的顯示顏色，請修改相應欄位中的顏色代碼。 有關更改批注的字型顏色的資訊，請參閱[注釋](/help/assets/manage-digital-assets.md#annotating)。
 
    ![chlimage_1-247](assets/chlimage_1-248.png)
 
    返回轉譯的PDF檔案並重新整理它。 重新整理的PDF會反映您所做的變更。
 
-## 資產版本控制 {#asset-versioning}
+## 資產版本控制{#asset-versioning}
 
 版本設定會建立數位資產在特定時間點的快照。版本修訂功能有助於將資產還原為先前的狀態。 例如，如果您想要還原對資產所做的變更，請還原未編輯的資產版本。
 
@@ -572,19 +573,19 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 1. 導覽至您要建立版本的資產所在位置，點選／按一下該位置以開啟其資產頁面。
 
-1. 點選／按一下GlobalNav圖示，然後從選單 **[!UICONTROL 選擇]** 「時間軸」。
+1. 點選／按一下GlobalNav圖示，然後從選單選擇&#x200B;**[!UICONTROL Timeline]**。
 
    ![時間軸](assets/timeline.png)
 
-1. 點選／按一 **[!UICONTROL 下底部的]** 「動作（箭頭）」圖示，以檢視可對資產執行的可用動作。
+1. 點選／按一下底部的&#x200B;**[!UICONTROL Actions]**（箭頭）圖示，以檢視您可對資產執行的可用動作。
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
-1. 點選／按一 **[!UICONTROL 下「另存為版本]** 」以建立資產的版本。
+1. 點選／按一下「另存新檔」，以建立資產的版本。****
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. 新增標籤和註解，然後按一下「 **[!UICONTROL 建立]** 」以建立版本。 或者，點選／按一 **下「取消** 」以退出作業。
+1. 新增標籤和註解，然後按一下「建立&#x200B;**[!UICONTROL 」以建立版本。]**&#x200B;或者，點選／按一下&#x200B;**取消**&#x200B;以退出作業。
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
@@ -601,7 +602,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
    ![save_version](assets/save_version.png)
 
 1. 若要產生版本的預覽，請點選/按一下「預 **[!UICONTROL 覽版本」]**。
-1. 若要在資產UI中顯示此版本，請選取「 **[!UICONTROL 回復至此版本」]**。
+1. 若要在資產UI中顯示此版本，請選擇「還原為此版本」。****
 1. 若要比較兩個版本，請前往資產的資產頁面，點選／按一下要與目前版本比較的版本。
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
@@ -610,22 +611,22 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![compare_versions](assets/compare_versions.png)
 
-### 在資產上啟動工作流程 {#starting-a-workflow-on-an-asset}
+### 在資產{#starting-a-workflow-on-an-asset}上啟動工作流程
 
 1. 導覽至您要啟動工作流程的資產所在位置，然後點選／按一下資產以開啟資產頁面。
-1. 點選／按一下GlobalNav圖示，然後從選單中選 **[!UICONTROL 擇]** 「時間軸」以顯示時間軸。
+1. 點選／按一下GlobalNav圖示，然後從選單選擇&#x200B;**[!UICONTROL Timeline]**&#x200B;以顯示時間軸。
 
    ![timeline-1](assets/timeline-1.png)
 
-1. 點選／按一 **[!UICONTROL 下底部的]** 「動作（箭頭）」圖示，以開啟資產可用的動作清單。
+1. 點選／按一下底部的&#x200B;**[!UICONTROL Actions]**（箭頭）圖示，以開啟資產可用的動作清單。
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. 點選／按一 **[!UICONTROL 下清單中的「開始工作流程]** 」。
+1. 點選／按一下清單中的「開始工作流程&#x200B;**[!UICONTROL 」。]**
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
+1. 在&#x200B;**[!UICONTROL 啟動工作流]**&#x200B;對話框中，從清單中選擇工作流模型。
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -644,4 +645,4 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 * 系列可以包含不同位置的資產，因為它們只包含這些資產的參考。 每個系列都會維護資產的參考完整性。
 * 您可以與擁有不同權限層級的多位使用者共用系列，包括編輯、檢視等。
 
-如需系列 [管理的詳細資訊](/help/assets/manage-collections.md) ，請參閱管理系列。
+如需系列管理的詳細資訊，請參閱[管理系列](/help/assets/manage-collections.md)。
