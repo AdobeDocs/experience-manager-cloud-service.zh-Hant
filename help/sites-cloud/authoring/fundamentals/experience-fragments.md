@@ -46,7 +46,7 @@ ht-degree: 9%
 >
 如果您遇到任何問題，請聯絡您的系統管理員。
 
-## 何時應使用體驗片段？ {#when-should-you-use-experience-fragments}
+## 何時應使用體驗片段？{#when-should-you-use-experience-fragments}
 
 應使用體驗片段：
 
@@ -59,10 +59,10 @@ ht-degree: 9%
    * 頻道或內容特定變化。
    * 對群體有意義的體驗；例如，跨通道具有不同體驗的促銷活動。
 * 當您使用全通道商務時。
-   * 在社交媒體頻道上大 [規模分享](/help/implementing/developing/extending/experience-fragments.md#social-variations) 與商務相關的內容。
+   * 在[社交媒體](/help/implementing/developing/extending/experience-fragments.md#social-variations)頻道上大規模分享商務相關內容。
    * 讓觸點成為交易型。
 
-## 組織您的體驗片段 {#organizing-your-experience-fragments}
+## 組織您的體驗片段{#organizing-your-experience-fragments}
 
 建議您：
 * 使用資料夾來組織您的體驗片段，
@@ -81,9 +81,9 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >您可以使用范 [本編輯器](/help/sites-cloud/authoring/features/templates.md) ，建立您自己的範本。
+   >您可以使用[範本編輯器](/help/sites-cloud/authoring/features/templates.md)來建立您自己的範本。
 
-WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構也說明如何使用其他功能，例如多網站管理（包括語言副本）。
+WKND專案會根據`Contributors`建構一些體驗片段。 使用的結構也說明如何使用其他功能，例如多網站管理（包括語言副本）。
 
 請參閱：
 
@@ -91,7 +91,7 @@ WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構
 
 ![體驗片段的資料夾](/help/sites-cloud/authoring/assets/xf-folders.png)
 
-## 建立和設定您的體驗片段的資料夾 {#creating-and-configuring-a-folder-for-your-experience-fragments}
+## 為體驗片段建立和設定資料夾{#creating-and-configuring-a-folder-for-your-experience-fragments}
 
 若要建立並設定您的體驗片段資料夾，建議您：
 
@@ -101,19 +101,19 @@ WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構
 
 >[!NOTE]
 >
->您也可以設定例項 [的「允許範本」](#configure-allowed-templates-instance)，但不建議使 **用此方法** ，因為升級時可覆寫值。
+>您也可以為實例](#configure-allowed-templates-instance)配置[允許的模板，但建議使用&#x200B;**not**&#x200B;方法，因為升級時可以覆蓋值。
 
-### 為資料夾配置允許的模板 {#configure-allowed-templates-folder}
+### 配置資料夾{#configure-allowed-templates-folder}的允許模板
 
 >[!NOTE]
 >
->這是指定允許範本的建 **議方法**，因為升級時不會覆寫值。
+>這是指定&#x200B;**允許範本**&#x200B;的建議方法，因為升級時不會覆寫值。
 
-1. 導覽至所需的 **Experience Fragments** 檔案夾。
+1. 導覽至所需的&#x200B;**體驗片段**&#x200B;資料夾。
 
-1. 選擇資料夾，然後選擇「 **屬性**」。
+1. 選擇資料夾，然後選擇&#x200B;**屬性**。
 
-1. 在「允許的範本」欄位中指定擷取所需範本 **的規則運算式** 。
+1. 在&#x200B;**允許的範本**&#x200B;欄位中，指定擷取所需範本的規則運算式。
 
    例如：
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
@@ -125,48 +125,48 @@ WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構
 
    >[!NOTE]
    >
-   >如需詳 [細資訊，請參閱體驗片段](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments) 「範本」。
+   >如需詳細資訊，請參閱[體驗片段範本](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments)。
 
-1. Select **Save and Close**.
+1. 選擇&#x200B;**保存並關閉**。
 
-### 為實例配置允許的模板 {#configure-allowed-templates-instance}
+### 配置實例{#configure-allowed-templates-instance}的允許模板
 
 >[!CAUTION]
 >
->建議您不要使用此方 **法變更「允許的範本** 」，因為指定的範本可在升級時覆寫。
+>建議不要使用此方法更改&#x200B;**允許的模板**，因為指定的模板可以在升級時被覆蓋。
 >
 >請僅供參考之用。
 
-1. 導覽至所需的 **Experience Fragments** Console。
+1. 導覽至所需的&#x200B;**體驗片段**&#x200B;主控台。
 
-1. 選擇 **配置選項**:
+1. 選擇&#x200B;**配置選項**:
 
    ![「配置」按鈕](/help/sites-cloud/authoring/assets/xf-18.png)
 
-1. 在「設定體驗片段」對話 **方塊中指定必要的範本** :
+1. 在&#x200B;**設定體驗片段**&#x200B;對話方塊中指定所需範本：
 
    ![設定體驗片段](/help/sites-cloud/authoring/assets/xf-19.png)
 
    >[!NOTE]
    >
-   >如需詳 [細資訊，請參閱體驗片段](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments) 「範本」。
+   >如需詳細資訊，請參閱[體驗片段範本](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments)。
 
-1. 選擇 **保存**。
+1. 選擇&#x200B;**保存**。
 
 
-## 建立體驗片段 {#creating-an-experience-fragment}
+## 建立體驗片段{#creating-an-experience-fragment}
 
 若要建立體驗片段：
 
-1. 從全 **域導覽中選取** 「體驗片段」。
+1. 從「全域導覽」中選擇「體驗片段」。****
 
    ![導覽面板中的體驗片段](/help/sites-cloud/authoring/assets/xf-01.png)
 
-1. 導覽至所需資料夾，然後選取「 **建立**:
+1. 導覽至所需資料夾，然後選取&#x200B;**Create**:
 
    ![建立體驗片段的資料夾](/help/sites-cloud/authoring/assets/xf-02.png)
 
-1. 選擇 **體驗片段** ，以開啟「 **建立體驗片段」精靈** 。
+1. 選擇&#x200B;**體驗片段**&#x200B;以開啟&#x200B;**建立體驗片段**&#x200B;精靈。
 
    依次選擇所需 **的範本**、下 **一步**:
 
@@ -175,7 +175,7 @@ WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構
 
 1. 輸入 **體驗****片段的屬性**。
 
-   「標 **題** 」為強制。 如果名 **稱** (Name)留空，則會從標題( **Title)中衍生出來**。
+   **Title**&#x200B;是必填的。 如果&#x200B;**Name**&#x200B;保留為空白，則它將從&#x200B;**Title**&#x200B;派生。
 
    ![體驗片段屬性](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -183,20 +183,20 @@ WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構
 
    將顯示一條消息。 選取:
 
-   * **完成** ：返回控制台
-   * **開啟** ，以開啟片段編輯器
+   * **** Doneto返回控制台
+   * **打** 開片段編輯器
 
-## 編輯您的體驗片段 {#editing-your-experience-fragment}
+## 編輯體驗片段{#editing-your-experience-fragment}
 
 體驗片段編輯器提供與一般頁面編輯器類似的功能。
 
 >[!NOTE]
 >
->如需 [如何使用頁面編輯器的詳細資訊](/help/sites-cloud/authoring/fundamentals/editing-content.md) ，請參閱編輯頁面內容。
+>如需如何使用頁面編輯器的詳細資訊，請參閱[編輯頁面內容](/help/sites-cloud/authoring/fundamentals/editing-content.md)。
 
 以下示例過程說明如何為產品建立摘要：
 
-1. 從「元件瀏覽器」拖放所需 [的元件](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。
+1. 從[元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)拖放所需元件。
 
 1. 視元件而定：
    * 視需要新增任何內容和／或資產。
@@ -204,20 +204,20 @@ WKND專案會根據此建構一些體驗片段 `Contributors`。 使用的結構
 
 1. 視需要新增更多元件。
 
-For example: `http://<host>:<port>/editor.html/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master.html`
+例如：`http://<host>:<port>/editor.html/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master.html`
 
 ![頁面上的體驗片段](/help/sites-cloud/authoring/assets/xf-05.png)
 
-## Creating An Experience Fragment Variation {#creating-an-experience-fragment-variation}
+## 建立體驗片段變數{#creating-an-experience-fragment-variation}
 
 您可以根據您的需求，建立不同的體驗片段：
 
-1. 開啟您的片段以 [進行編輯](#editing-your-experience-fragment)。
-1. 開啟「變 **數** 」標籤。
+1. 開啟[編輯](#editing-your-experience-fragment)的片段。
+1. 開啟&#x200B;**Valuations**&#x200B;標籤。
 
    ![建立體驗片段變數](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **Create** （建立）允許您建立：
+1. **Create** 可讓您建立：
 
    * **變異**
    * **變數為 live-copy**.
@@ -226,7 +226,7 @@ For example: `http://<host>:<port>/editor.html/content/experience-fragments/wknd
 
    * **範本**
    * **標題**
-   * **名稱** -如果保留空白，則會從「標題」衍生
+   * **Name**  —— 如果保留空白，則會衍生自「標題」
    * **說明**
    * **變數標記**
 
@@ -234,9 +234,9 @@ For example: `http://<host>:<port>/editor.html/content/experience-fragments/wknd
 
    ![變數屬性](/help/sites-cloud/authoring/assets/xf-07.png)
 
-1. 使用「 **完成**」確認，新變數將會顯示在面板中。
+1. 使用&#x200B;**Done**&#x200B;確認，新變數會顯示在面板中。
 
-## 使用您的體驗片段 {#using-your-experience-fragment}
+## 使用體驗片段{#using-your-experience-fragment}
 
 您現在可以在編寫頁面時使用體驗片段：
 
@@ -247,13 +247,13 @@ For example: `http://<host>:<port>/editor.html/content/experience-fragments/wknd
 1. 將實際的體驗片段新增至元件例項；其中：
 
    * 從「資產瀏覽器」拖曳必要片段至元件。
-   * Select **Configure** from the component toolbar and specify the fragment to use, confirm with **Done**.
+   * 從元件工具欄中選擇&#x200B;**配置**&#x200B;並指定要使用的片段，並使用&#x200B;**Done**&#x200B;確認。
 
    >[!NOTE]
    >
    >在元件工具列中，編輯會以捷徑方式在片段編輯器中開啟片段。
 
-For example: `http://<host>:<port>/editor.html/content/wknd/language-masters/en/about-us.html`
+例如：`http://<host>:<port>/editor.html/content/wknd/language-masters/en/about-us.html`
 
 ![頁面編輯器中的體驗片段](/help/sites-cloud/authoring/assets/xf-08.png)
 
@@ -261,7 +261,7 @@ For example: `http://<host>:<port>/editor.html/content/wknd/language-masters/en/
 
 您可以選取一或多個元件，以建立要在片段內回收的建置區塊：
 
-### 建立構建塊 {#creating-a-building-block}
+### 建立構建塊{#creating-a-building-block}
 
 要建立新的構建塊：
 
@@ -269,7 +269,7 @@ For example: `http://<host>:<port>/editor.html/content/wknd/language-masters/en/
 
    ![選擇建置塊的元件](/help/sites-cloud/authoring/assets/xf-09.png)
 
-1. 從元件工具欄中，選擇「 **轉換為構建塊**:
+1. 從元件工具欄中，選擇&#x200B;**轉換到構建塊**:
 
    ![「構建塊」按鈕](/help/sites-cloud/authoring/assets/xf-10.png)
 
@@ -281,9 +281,9 @@ For example: `http://<host>:<port>/editor.html/content/wknd/language-masters/en/
 
    ![鐵軌中的建置區塊](/help/sites-cloud/authoring/assets/xf-12.png)
 
-#### 管理構建塊 {#managing-a-building-block}
+#### 管理構建塊{#managing-a-building-block}
 
-您的構建塊在「構建塊」( **Building Blocks)頁籤中可見** 。 對於每個塊，可以執行以下操作：
+您的構建塊在&#x200B;**構建塊**&#x200B;頁籤中可見。 對於每個塊，可以執行以下操作：
 
 * **前往主版**:在新標籤中開啟主變數
 * **重新命名**
@@ -291,7 +291,7 @@ For example: `http://<host>:<port>/editor.html/content/wknd/language-masters/en/
 
 ![管理構建塊](/help/sites-cloud/authoring/assets/xf-13.png)
 
-#### 使用構建塊 {#using-a-building-block}
+#### 使用構建塊{#using-a-building-block}
 
 您可以將構建塊拖動到任何片段的段落系統，如同任何元件。
 
@@ -302,7 +302,7 @@ For example: `http://<host>:<port>/editor.html/content/wknd/language-masters/en/
 
 ![選擇構建塊](/help/sites-cloud/authoring/assets/xf-14.png)
 
-## 體驗片段的詳細資訊 {#details-of-your-experience-fragment}
+## 體驗片段{#details-of-your-experience-fragment}的詳細資訊
 
 您可以查看您片段的詳細資訊：
 
@@ -311,7 +311,7 @@ For example: `http://<host>:<port>/editor.html/content/wknd/language-masters/en/
 
    ![體驗片段詳細資訊](/help/sites-cloud/authoring/assets/xf-15.png)
 
-1. 當您開啟體驗 **片段的** 「屬性」時：
+1. 當您開啟體驗片段的&#x200B;**屬性**&#x200B;時：
 
    ![「屬性」按鈕](/help/sites-cloud/authoring/assets/xf-16.png)
 
@@ -319,14 +319,14 @@ For example: `http://<host>:<port>/editor.html/content/wknd/language-masters/en/
 
    >[!CAUTION]
    >
-   >當您從「體驗片段」控制台開 **啟「屬性** 」時，會顯示這些標籤。
+   >當您從「體驗片段」主控台開啟「屬性」****&#x200B;時，會顯示這些標籤。
    >
    >如果您 **在編輯體驗片段時開啟屬性** ，則會顯示適當 [的頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md) 。
 
    ![體驗片段屬性](/help/sites-cloud/authoring/assets/xf-17.png)
 
    * **基本**
-      * **標題** -必填
+      * **標題** -強制
       * **說明**
       * **標記**
       * **變數總數** -僅提供資訊
@@ -343,16 +343,16 @@ For example: `http://<host>:<port>/editor.html/content/wknd/language-masters/en/
    * **社交媒體狀態**
       * 社交媒體變化的詳細資料
 
-## 純HTML轉譯 {#the-plain-html-rendition}
+## 純HTML轉譯{#the-plain-html-rendition}
 
-使用URL `.plain.` 中的選取器，您可以從瀏覽器存取純HTML轉譯。
+使用URL中的`.plain.`選擇器，您可以從瀏覽器存取純HTML轉譯。
 
 >[!NOTE]
 >
->雖然這可直接從瀏覽器取得，但主 [要目的是允許其他應用程式（例如協力廠商網路應用程式、自訂行動裝置實作）僅使用URL直接存取體驗片段的內容](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)。
+>雖然這可直接從瀏覽器取得，但[主要用途是允許其他應用程式（例如協力廠商網頁應用程式、自訂行動裝置實作）直接存取體驗片段的內容，只使用URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)。
 
-## 匯出體驗片段 {#exporting-experience-fragments}
+## 匯出體驗片段{#exporting-experience-fragments}
 
 依預設，體驗片段會以HTML格式傳送。 AEM和協力廠商管道都可使用此功能。
 
-若要匯出至Adobe Target，也可以使用JSON。 如需完整資訊，請參閱Target與體驗片段整合。 <!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
+若要匯出至Adobe Target，也可以使用JSON。 如需完整資訊，請參閱Target與體驗片段整合。<!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
