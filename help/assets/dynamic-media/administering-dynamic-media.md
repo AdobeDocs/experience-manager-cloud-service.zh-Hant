@@ -10,9 +10,9 @@ ht-degree: 3%
 ---
 
 
-# Setting Up Dynamic Media {#setting-up-dynamic-media}
+# 設定動態媒體{#setting-up-dynamic-media}
 
-[動態媒體](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) (Dynamic Media)可協助您管理資產，提供豐富的視覺化銷售和隨選行銷資產，並可自動縮放，以供網頁、行動裝置和社交網站使用。 Dynamic Media使用一組主要來源資產，透過其全球、可擴充、最佳化效能的網路，即時產生並提供多種多樣化內容變化。
+[動態](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media可協助您管理資產，提供豐富的視覺化銷售和隨選行銷資產，並可自動縮放，以供網頁、行動裝置和社交網站使用。Dynamic Media使用一組主要來源資產，透過其全球、可擴充、最佳化效能的網路，即時產生並提供多種多樣化內容變化。
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
