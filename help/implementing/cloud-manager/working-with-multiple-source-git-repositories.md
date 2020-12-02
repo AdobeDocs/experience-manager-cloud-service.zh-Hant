@@ -2,9 +2,9 @@
 title: 使用多源Git儲存庫
 description: 使用多源Git儲存庫——雲服務
 translation-type: tm+mt
-source-git-commit: 8e470ed1ea30fd2fa59617fdb6755abf9a0d74a2
+source-git-commit: 89429fcba3a1d4f5e5fe9c98ef235057b979ad60
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,9 @@ ht-degree: 0%
 
 客戶可以使用自己的Git儲存庫或多個自己的Git儲存庫，而不是直接使用Cloud Manager的Git儲存庫。 在這些情況下，應設定自動同步過程，以確保Cloud Manager的Git儲存庫始終保持最新狀態。 根據客戶的Git儲存庫的托管位置，可以使用GitHub操作或像Jenkins這樣的連續整合解決方案來設定自動化。 有了自動功能，每個推送至客戶擁有的Git儲存庫的推送都會自動轉送至Cloud Manager的Git儲存庫。
 
-雖然單個客戶擁有的Git儲存庫的這種自動化功能是直接進行的，但為多個儲存庫設定此功能需要初始設定。 來自多個Git儲存庫的內容必須映射到單個Cloud Manager的Git儲存庫中的不同目錄。  Cloud Manager的Git儲存庫需要設定一個根Maven pom，在模組部分列出不同的子項目下面是兩個客戶擁有的git儲存庫的示例pom:第一個項目將被放入名為`project-a`的目錄中，第二個項目將被放入名為`project-b`的目錄中。
+雖然單個客戶擁有的Git儲存庫的這種自動化功能是直接進行的，但為多個儲存庫設定此功能需要初始設定。 來自多個Git儲存庫的內容必須映射到單個Cloud Manager的Git儲存庫中的不同目錄。  Cloud Manager的Git儲存庫需要配置一個根Maven pom，在模組部分列出不同的子項目
+
+以下是兩個客戶擁有的Git儲存庫的示例pom:第一個項目將被放入名為`project-a`的目錄中，第二個項目將被放入名為`project-b`的目錄中。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -38,7 +40,9 @@ ht-degree: 0%
 </project>
 ```
 
-此類根pom被推送到Cloud Manager的git儲存庫中的分支。 然後，需要設定這兩個專案，以自動將變更轉送至Cloud Manager的git儲存庫。 例如，GitHub動作可透過推播至專案A中的分支來觸發。該操作將簽出項目A和Cloud Manager Git儲存庫，並將項目A的所有內容複製到Cloud Manager Git儲存庫中的`project-a`目錄，然後提交推送更改。 例如，專案A中主分支的變更會自動推送至Cloud Manager的git儲存庫中的主分支。 當然，分支之間可能會有對應，例如推播至專案A中名為「dev」的分支，會推送至Cloud Manager Git儲存庫中名為「development」的分支。  項目B需要進行類似的設定。
+此類根pom被推送到Cloud Manager的Git儲存庫中的分支。 然後，需要設定這兩個項目，以自動將更改轉發到Cloud Manager的Git儲存庫。
+
+例如，GitHub動作可透過推播至專案A中的分支來觸發。該操作將簽出項目A和Cloud Manager Git儲存庫，並將項目A的所有內容複製到Cloud Manager Git儲存庫中的`project-a`目錄，然後提交推送更改。 例如，專案A中主分支的變更會自動推送至Cloud Manager的git儲存庫中的主分支。 當然，分支之間可能會有對應，例如推播至專案A中名為「dev」的分支，會推送至Cloud Manager Git儲存庫中名為「development」的分支。 項目B需要類似的步驟。
 
 可針對不同的分支設定同步，視分支策略和工作流程而定。 如果使用的Git儲存庫沒有提供類似GitHub操作的概念，則也可以通過Jenkins（或類似）進行整合。 在這種情況下，網路鈎會觸發Jenkins作業，該作業負責。
 
@@ -51,7 +55,7 @@ ht-degree: 0%
 
 ## 附錄A:GitHub動作範例{#sample-github-action}
 
-這是GitHub動作的範例，是透過推送至主分支，然後推送至Cloud Manager Git儲存庫的子目錄而觸發。 github動作必須提供`MAIN_USER`和`MAIN_PASSWORD`兩個機密，才能連線並推送至Cloud Manager的Git儲存庫。
+這是GitHub動作的範例，是透過推送至主分支，然後推送至Cloud Manager Git Repository的子目錄而觸發。 GitHub操作需要提供`MAIN_USER`和`MAIN_PASSWORD`兩個機密，才能連接並推送到Cloud Manager的Git儲存庫。
 
 ```java
 name: SYNC
@@ -108,7 +112,7 @@ jobs:
           git -C main push
 ```
 
-如上所述，使用GitHub動作非常有彈性。 可以執行Git儲存庫分支之間的任何映射，以及將單獨的git項目映射到主項目的目錄佈局中的任何映射。
+如上所示，使用GitHub動作非常有彈性。 可以執行Git儲存庫分支之間的任何映射，以及將單獨的git項目映射到主項目的目錄佈局中的任何映射。
 
 >[!NOTE]
 >上述指令碼使用`git add`更新假定包含刪除的儲存庫——根據Git的預設配置，這需要替換為`git add --all`。
@@ -173,7 +177,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-如上所述，使用Jenkins工作非常靈活。 可以執行Git儲存庫分支之間的任何映射，以及將單獨的git項目映射到主項目的目錄佈局中的任何映射。
+如上所示，使用Jenkins工作非常靈活。 可以執行Git儲存庫分支之間的任何映射，以及將單獨的Git項目映射到主項目的目錄佈局中的任何映射。
 
 >[!NOTE]
 >上述指令碼使用`git add`更新假定包含刪除的儲存庫——根據Git的預設配置，這需要替換為`git add --all`。
