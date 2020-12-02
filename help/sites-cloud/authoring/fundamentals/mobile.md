@@ -10,9 +10,9 @@ ht-degree: 0%
 ---
 
 
-# 製作行動裝置的頁面 {#authoring-a-page-for-mobile-devices}
+# 製作行動裝置頁面{#authoring-a-page-for-mobile-devices}
 
-Adobe Experience Manager頁面是以互動式版面為基礎。 [自適應版面](/help/sites-cloud/authoring/features/responsive-layout.md) ，可自動調整內容以符合目標裝置，毋需針對特定裝置製作內容。
+Adobe Experience Manager頁面是以互動式版面為基礎。 [自適應](/help/sites-cloud/authoring/features/responsive-layout.md) 版面會自動調整您的內容，以符合目標裝置，毋需針對特定裝置製作內容。
 
 製作行動頁面時，頁面的顯示方式會模擬行動裝置。 在編寫頁面時，您可以在多個模擬器之間切換，以查看使用者在存取頁面時看到的內容。
 
@@ -32,14 +32,14 @@ Adobe Experience Manager頁面是以互動式版面為基礎。 [自適應版面
 
 請依照下列程式來製作行動頁面：
 
-1. 從全域導覽開啟 **Sites** Console。
+1. 從全局導航開啟&#x200B;**Sites**&#x200B;控制台。
 1. 編輯內容頁面。
-1. 按一下頁面頂端的 **Emulator** 圖示，即可切換至所需的模擬器。
+1. 按一下頁面頂部的&#x200B;**模擬器**&#x200B;表徵圖，切換到所需的模擬器。
 
    ![模擬器圖示](/help/sites-cloud/authoring/assets/emulator.png)
 
 1. 將元件從元件瀏覽器或資產瀏覽器拖放至頁面。
-1. [根據選取的裝置](/help/sites-cloud/authoring/features/responsive-layout.md) ，修改頁面及其元件的回應式版面配置。
+1. [根據選取的](/help/sites-cloud/authoring/features/responsive-layout.md) 裝置修改頁面及其元件的回應式版面。
 
 該頁面的外觀類似下列：
 
