@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# 多商店設定 {#multi-store}
+# 多商店設定{#multi-store}
 
 AEM CIF核心元件可用於多個AEM網站結構，而基礎的GraphQL用戶端實作可連接至不同的Magento儲存／儲存檢視。 這可讓專案建置複雜的多商店／多網站設定。
 
@@ -34,13 +34,13 @@ AEM CIF核心元件可用於多個AEM網站結構，而基礎的GraphQL用戶端
 
 ## 設定 {#configuration}
 
-1. 根據 [Magento Websites、Stores &amp; Views中描述的模式，設定多個商店和商店檢視](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. 根據[Magento Websites, Stores &amp; Views](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)中所述的模式配置多個商店和商店檢視
 
 2. 請確定AEM和Magento之間的連線正在運作。
 
 3. 按照以下步驟建立CIF雲服務配置的子配置：
 
-   * 在AEM中，請至「工具->一般->設定瀏 [覽器」](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * 在AEM中，請至「工具->一般-> [設定瀏覽器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)」
    * 選擇您建立的基本配置
    * 使用上述第2點所述的步驟建立新組態
 
@@ -49,10 +49,10 @@ AEM CIF核心元件可用於多個AEM網站結構，而基礎的GraphQL用戶端
 4. 將子項設定指派給AEM網站
 
    * 前往AEM Sites主控台
-   * 導覽至網站結構的地區或語言根目錄，例如/content/venia/us _或_ /content/venia/us/tw/en for the Venia sample page
+   * 導覽至網站結構的地區或語言根目錄，例如/content/venia/us _或_ /content/venia/us/en for Venia sample page
    * 選擇頁面並開啟頁面屬性
    * 選擇「高級」頁籤
-   * 在節 `Configuration` 中，選擇在步驟中建立的配置
+   * 在`Configuration`部分中，選擇您在步驟中建立的配置
 
 ## 其他資源
 
