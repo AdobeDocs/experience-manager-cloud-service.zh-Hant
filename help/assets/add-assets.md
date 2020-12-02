@@ -1,10 +1,10 @@
 ---
 title: 將您的數位資產新增至 [!DNL Adobe Experience Manager]。
-description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 做為雲端服務。
+description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
 translation-type: tm+mt
-source-git-commit: 9c42bd216edd0174c9a4c9b706c0e08ca36428f6
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1972'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,23 @@ ht-degree: 1%
 
 雖然您可以在Experience Manager中上傳和管理任何二進位檔案，但最常用的檔案格式支援其他服務，例如中繼資料擷取或預覽／轉譯產生。 如需詳細資訊，請參閱[支援的檔案格式](file-format-support.md)。
 
-您也可以選擇對已上傳的資產進行其他處理。 可在上傳資產的資料夾上設定多個資產處理設定檔，以新增特定中繼資料、轉譯或影像處理服務。 如需詳細資訊，請參閱下方的[其他處理](#additional-processing)。
+您也可以選擇對已上傳的資產進行其他處理。 可在上傳資產的資料夾上設定多個資產處理設定檔，以新增特定中繼資料、轉譯或影像處理服務。 請參閱[上載時處理資產](#process-when-uploaded)。
 
 >[!NOTE]
 >
->Experience Manager作為雲端服務，運用了新的上傳資產方式——直接二進位上傳。 預設會支援立即可用的產品功能和用戶端，例如Experience Manager使用者介面、Adobe Asset Link、Experience Manager案頭應用程式，因此對一般使用者是透明的。
+>Experience Manager作為[!DNL Cloud Service]，運用新的上傳資產方式——直接二進位上傳。 預設會支援立即可用的產品功能和用戶端，例如Experience Manager使用者介面、Adobe Asset Link、Experience Manager案頭應用程式，因此對一般使用者是透明的。
 >
 >上傳由技術團隊自訂或擴充的程式碼，客戶需要使用新的上傳API和通訊協定。
+
+資產(a [!DNL Cloud Service])提供下列上傳方法。 Adobe建議您先瞭解上傳選項的使用案例和適用性，再加以使用。
+
+| 上傳方法 | 何時使用？ | 主要角色 |
+|---------------------|----------------|-----------------|
+| [Assets Console使用者介面](#upload-assets) | 偶爾上傳、輕鬆壓制和拖曳、搜尋器上傳。 請勿用來上傳大量資產。 | 所有使用者 |
+| [上傳API](#upload-using-apis) | 用於上傳期間的動態決策。 | 開發人員 |
+| [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 大量資產擷取量低，但適用於移轉。 | 管理員、行銷人員 |
+| [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 當創意人員和行銷人員從支援的[!DNL Creative Cloud]案頭應用程式中處理資產時，就很有用。 | 創意，行銷人員 |
+| [資產大量內嵌](#asset-bulk-ingestor) | 建議進行大規模遷移和偶爾批量提取。 僅適用於支援的資料儲存區。 | 管理員、開發人員 |
 
 ## 上傳資產{#upload-assets}
 
@@ -100,54 +110,74 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 處理資產已存在時的上載{#handling-upload-existing-file}
 
-如果您上傳的資產名稱與資產名稱相同，且資產已在上傳資產的位置使用，則會顯示警告對話方塊。
+您可以上傳與現有資產路徑相同（相同名稱和位置）的資產。 但是，會顯示一個警告對話方塊，其中包含下列選項：
 
-您可以選擇取代現有資產、建立其他版本，或借由重新命名已上傳的新資產來保留兩者。 如果您取代現有資產，資產的中繼資料以及您對現有資產所做的任何先前修改（例如註解、裁切等）都會被刪除。 如果您選擇保留這兩個資產，新資產會重新命名，名稱會附加數字`1`。
+* 取代現有資產：如果您取代現有資產，資產的中繼資料以及您對現有資產所做的任何先前修改（例如註解、裁切等）都會被刪除。
+* 建立其他版本：系統會在儲存庫中建立現有資產的新版本。 您可以在[!UICONTROL 時間軸]中檢視兩個版本，並視需要回復為先前現有的版本。
+* 保留兩者：如果您選擇保留這兩個資產，新資產會重新命名，名稱會附加數字`1`。
 
 >[!NOTE]
 >
 >當您在[!UICONTROL 名稱衝突]對話方塊中選取&#x200B;**[!UICONTROL 取代]**&#x200B;時，會重新產生新資產的資產ID。 此ID與先前資產的ID不同。
 >
->如果「資產前瞻分析」已啟用，可以使用Adobe Analytics追蹤曝光／點按次數，則重新產生的資產ID會使Analytics上為資產擷取的資料無效。
+>如果啟用「資產前瞻分析」以追蹤[!DNL Adobe Analytics]的曝光或點按次數，則重新產生的資產ID會使[!DNL Analytics]上為資產擷取的資料無效。
 
 若要保留[!DNL Assets]中的重複資產，請按一下「保留&#x200B;**[!UICONTROL 」。]**&#x200B;若要刪除您上傳的重複資產，請點選／按一下「刪除&#x200B;**[!UICONTROL 」。]**
 
 ### 檔案名稱處理與禁止字元{#filename-handling}
 
-[!DNL Experience Manager Assets] 防止您上傳檔案名稱中包含禁止字元的資產。如果您嘗試上傳包含不允許之字元或以上之檔案名稱的資產，[!DNL Assets]會顯示警告訊息並停止上傳，直到您移除這些字元或以允許的名稱上傳為止。
+[!DNL Experience Manager Assets] 嘗試防止上傳檔案名稱中包含禁止字元的資產。如果您嘗試上傳包含不允許之字元或以上之檔案名稱的資產，[!DNL Assets]會顯示警告訊息並停止上傳，直到您移除這些字元或以允許的名稱上傳為止。 有些上傳方法不會阻止您上傳檔案名稱中包含禁止字元的資產，但會以`-`取代字元。
 
-為符合貴組織的特定檔案命名慣例，[!UICONTROL 「上傳資產」對話方塊可讓您為上傳的檔案指定長名稱。]
+為符合貴組織的特定檔案命名慣例，[!UICONTROL 「上傳資產」對話方塊可讓您為上傳的檔案指定長名稱。 ]不支援下列（以空格分隔的）字元清單：
 
-但是，不支援下列（以空格分隔的）字元清單：
-
-* 資產檔案名稱不可包含`* / : [ \\ ] | # % { } ? &`
-* 資產資料夾名稱不可包含`* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* 資產檔案名`* / : [ \\ ] | # % { } ? &`的字元無效
+* 資產資料夾名稱`* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`的字元無效
 
 ## 大量上傳資產{#bulk-upload}
+
+大量資產收錄者可有效處理數千個資產。 但是，大規模的擷取不只是廣泛、大型的檔案轉儲或盲目移轉。 若要讓它成為符合您商業目的的有意義專案，規劃和管理資產可帶來更有效率的擷取。 所有的收錄都不相同，如果不考慮細微的儲存庫組成和業務需求，就不能進行概括。 以下是規劃和執行大量擷取的主要建議：
+
+* 組織資產：移除DAM中不需要的資產。 考慮移除未使用、過時或重複的資產。 如此可減少所傳輸的資料和所吸收的資產，進而加速擷取。
+* 組織資產：請考慮依邏輯順序來組織內容，例如依檔案大小、檔案格式、使用案例或優先順序。 一般而言，大型的複雜檔案需要更多的處理。 您也可以考慮使用檔案大小篩選選項（如下所述）個別接收大型檔案。
+* 交錯內嵌：請考慮將擷取分為多個大量擷取專案。 這可讓您更快查看內容，並視需要更新您的擷取。 例如，您可以在非尖峰時段內，或逐步在多個區塊內內嵌處理密集的資產。 不過，您可以一次收集較小且較簡單的資產，而不需要進行太多處理。
 
 若要上傳更多檔案，請使用下列其中一種方法。 另請參閱[使用案例和方法](#upload-methods-comparison)
 
 * [資產上傳API](developer-reference-material-apis.md#asset-upload-technical):使用自訂的上傳指令碼或工具，以利用API新增對資產的額外處理（例如，翻譯中繼資料或重新命名檔案）。
 * [Experience Manager案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):適用於從本機檔案系統上傳資產的創意專業人員和行銷人員。使用它上傳可在本機使用的巢狀檔案夾。
-* [大量擷取工具](#bulk-ingestion-tool):在部署時，偶爾或最初會用來擷取大量資產 [!DNL Experience Manager]。
+* [大量擷取工具](#asset-bulk-ingestor):在部署時，偶爾或最初會用來擷取大量資產 [!DNL Experience Manager]。
 
-### 大量資產擷取工具{#bulk-ingestion-tool}
+### 資產大量收錄工具{#asset-bulk-ingestor}
 
-新增下列詳細資訊：
-
-* 此方法的使用案例。
-* 適用角色
-* 配置步驟
-* 如何管理擷取工作並查看狀態。
-* 要記住的管理或組織要收錄的資產。
+此工具僅提供給管理員群組，用於從Azure或S3資料存放區大規模擷取資產。
 
 若要設定工具，請依照下列步驟進行：
 
-1. 建立大量匯入設定。  導覽至「工具>資產>大量匯入>選取「建立」按鈕。
+1. 導覽至「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 批量匯入]**」。 選擇&#x200B;**[!UICONTROL 建立]**&#x200B;選項。
 
 ![批量匯入程式的設定](assets/bulk-import-config.png)
 
-1. 提供適當的詳細資訊。
+1. 在[!UICONTROL 批量導入配置]頁上，提供所需值。
+
+   * [!UICONTROL 標題]:描述性標題。
+   * [!UICONTROL 匯入來源]:選擇適用的資料來源。
+   * [!UICONTROL 依最小大小篩選]:以MB為單位，提供資產的最小檔案大小。
+   * [!UICONTROL 依最大大小篩選]:以MB為單位，提供資產的檔案大小上限。
+   * [!UICONTROL 排除Mime類型]:要從擷取中排除的MIME類型清單（以逗號分隔）。例如，`image/jpeg, image/.*, video/mp4`。
+   * [!UICONTROL 包含Mime類型]:要包含在擷取中的MIME類型清單（以逗號分隔）。請參閱[所有支援的檔案格式](/help/assets/file-format-support.md)。
+   * [!UICONTROL 匯入模式]:選擇「跳過」、「替換」或「建立版本」。「跳過」模式是預設模式，在此模式中，ingestor會跳過以匯入資產（如果資產已存在）。 請參閱[replace和create version options](#handling-upload-existing-file)的含義。
+   * [!UICONTROL 資產目標資料夾]:在要匯入資產的DAM中匯入資料夾。例如， `/content/dam/imported_assets`
+
+1. 您可以刪除、修改、執行和執行您所建立的收錄機組態。 當您選取大量匯入登入設定時，工具列中會提供下列選項。
+
+   * [!UICONTROL 編輯]:編輯選定的配置。
+   * [!UICONTROL 刪除]:刪除選定的配置。
+   * [!UICONTROL 檢查]:驗證與資料儲存的連接。
+   * [!UICONTROL 乾涸]:叫用大量擷取的測試執行。
+   * [!UICONTROL 執行]:執行所選配置。
+   * [!UICONTROL 停止]:終止活動配置。
+   * [!UICONTROL 工作狀態]:查看配置在正在進行的導入作業中使用或用於已完成作業時的狀態。
+   * [!UICONTROL 檢視資產]:查看目標資料夾（如果存在）。
 
 >[!NOTE]
 >
@@ -160,18 +190,18 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * [Adobe Asset ](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) Link可讓您存取Adobe Photoshop、Adobe Illustrator [!DNL Experience Manager] 和Adobe InDesign案頭應用程式中的資產。您可以直接從這些案頭應用程式內的Adobe Asset Link使用者介面，將目前開啟的檔案上傳至[!DNL Experience Manager]。
 * [Experience Manager案頭應](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 用程式可簡化在案頭上處理資產的作業，不受檔案類型或處理資產的原生應用程式所限。從本機檔案系統上傳巢狀檔案夾階層中的檔案特別有用，因為瀏覽器上傳僅支援上傳平面檔案清單。
 
-## 其他處理{#additional-processing}
+## 上傳{#process-when-uploaded}時處理資產
 
-為了對已上傳的資產進行額外處理，您可以在上傳資產的資料夾上使用資產處理設定檔。 它們可在資料夾&#x200B;**[!UICONTROL 屬性]**&#x200B;中使用。
+若要對已上傳的資產進行其他處理，您可以在上傳檔案夾上套用處理設定檔。 配置檔案可在[!DNL Assets]資料夾的&#x200B;**[!UICONTROL 屬性]**&#x200B;頁中使用。
 
 ![assets-folder-properties](assets/assets-folder-properties.png)
 
-可使用下列描述檔：
+可使用下列標籤：
 
 * [中繼資](metadata-profiles.md) 料設定檔可讓您將預設中繼資料屬性套用至上傳至該資料夾的資產
 * [處理](asset-microservices-configure-and-use.md) 分析工具可讓您產生的轉譯數，預設為多於可能的轉譯數。
 
-此外，如果您的環境中啟用了動態媒體：
+此外，如果您的部署已啟用[!DNL Dynamic Media]，則可使用下列標籤：
 
 * [動態媒體影像](dynamic-media/image-profiles.md) 分析工具可讓您套用特定的裁切(**[!UICONTROL 智慧]** 裁切和像素裁切)，並銳利化已上傳資產的設定。
 * [動態媒體視訊](dynamic-media/video-profiles.md) 設定檔可讓您套用特定的視訊編碼設定檔（解析度、格式、參數）。
@@ -186,22 +216,10 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 開發人員參考的[asset upload](developer-reference-material-apis.md#asset-upload-technical)區段中提供上傳API和通訊協定的技術詳細資訊，以及開放原始碼SDK和範例用戶端的連結。
 
-## 基於方案的上載方法{#upload-methods-comparison}
-
-| 上傳方法 | 何時使用？ | 主要角色（管理員、開發人員、創意使用者、行銷人員） |
-|---------------------|-------------------------------------------------------------------------------------------|------------|
-| 資產主控台/UI | 偶爾上傳、輕鬆壓制和拖曳、搜尋器上傳。 不適用於大量擷取。 | 全部 |
-| 上傳API | 在上傳期間動態決策資產 | 開發人員 |
-| 案頭應用程式 | 大量資產攝取量低，但適用於遷移 | 管理員、行銷人員 |
-| 資產連結 | 創意人員和行銷人員可從支援的Creative Cloud案頭應用程式中協作資產。 | 創意，行銷人員 |
-| 大量擷取工具 | 從資料儲存區大量擷取資產。  建議進行遷移和偶爾大量收錄。 | 管理員、開發人員 |
-
-說明何時使用哪種方法。
-
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience manager 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Adobe Asset Link](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [關於 Adobe Asset Link](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe Asset Link檔案](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [資產上傳的技術參考](developer-reference-material-apis.md#asset-upload-technical)
 
