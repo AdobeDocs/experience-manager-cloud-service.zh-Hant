@@ -2,9 +2,9 @@
 title: 將您的數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
 workflow-type: tm+mt
-source-wordcount: '1972'
+source-wordcount: '1930'
 ht-degree: 1%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager] 透過豐富的中繼資料、智慧標籤、轉譯和其他數位資產管理(DAM)服務，豐富上傳數位檔案的二進位內容。您可以從本機資料夾或網路磁碟機上傳各種檔案類型，例如影像、檔案和原始影像檔案至[!DNL Experience Manager Assets]。
 
-提供了多種上載方法。 除了最常用的瀏覽器上傳外，還有其他將資產新增至Experience Manager儲存庫的方法，包括案頭用戶端（例如Adobe Asset Link或Experience Manager案頭應用程式）、上傳和擷取指令碼，以及自動擷取整合（新增為Experience Manager擴充功能）。
+提供了多種上載方法。 除了最常用的瀏覽器上傳外，還有其他將資產新增至[!DNL Experience Manager]儲存庫的方法，包括案頭用戶端（例如Adobe Asset Link或[!DNL Experience Manager]案頭應用程式）、上傳和擷取指令碼，以及自動擷取整合新增至[!DNL Experience Manager]擴充功能。
 
-我們將著重在此處為使用者上傳方法，並提供文章連結，說明使用Experience Manager API和SDK進行資產上傳和擷取的技術層面。
+我們將著重於此處為使用者上傳方法，並提供文章連結，說明使用[!DNL Experience Manager] API和SDK進行資產上傳和擷取的技術層面。
 
-雖然您可以在Experience Manager中上傳和管理任何二進位檔案，但最常用的檔案格式支援其他服務，例如中繼資料擷取或預覽／轉譯產生。 如需詳細資訊，請參閱[支援的檔案格式](file-format-support.md)。
+雖然您可以上傳並管理[!DNL Experience Manager]中的任何二進位檔案，但最常用的檔案格式支援其他服務，例如中繼資料擷取或預覽／轉譯產生。 如需詳細資訊，請參閱[支援的檔案格式](file-format-support.md)。
 
 您也可以選擇對已上傳的資產進行其他處理。 可在上傳資產的資料夾上設定多個資產處理設定檔，以新增特定中繼資料、轉譯或影像處理服務。 請參閱[上載時處理資產](#process-when-uploaded)。
 
 >[!NOTE]
 >
->Experience Manager作為[!DNL Cloud Service]，運用新的上傳資產方式——直接二進位上傳。 預設會支援立即可用的產品功能和用戶端，例如Experience Manager使用者介面、Adobe Asset Link、Experience Manager案頭應用程式，因此對一般使用者是透明的。
+>[!DNL Experience Manager] 運用 [!DNL Cloud Service] 新的上傳資產方式——直接二進位上傳。預設會支援現成可用的產品功能和用戶端，例如[!DNL Experience Manager]使用者介面、[!DNL Adobe Asset Link]、[!DNL Experience Manager]案頭應用程式，因此對一般使用者是透明的。
 >
 >上傳由技術團隊自訂或擴充的程式碼，客戶需要使用新的上傳API和通訊協定。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 | [Assets Console使用者介面](#upload-assets) | 偶爾上傳、輕鬆壓制和拖曳、搜尋器上傳。 請勿用來上傳大量資產。 | 所有使用者 |
 | [上傳API](#upload-using-apis) | 用於上傳期間的動態決策。 | 開發人員 |
 | [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 大量資產擷取量低，但適用於移轉。 | 管理員、行銷人員 |
-| [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 當創意人員和行銷人員從支援的[!DNL Creative Cloud]案頭應用程式中處理資產時，就很有用。 | 創意，行銷人員 |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 當創意人員和行銷人員從支援的[!DNL Creative Cloud]案頭應用程式中處理資產時，就很有用。 | 創意，行銷人員 |
 | [資產大量內嵌](#asset-bulk-ingestor) | 建議進行大規模遷移和偶爾批量提取。 僅適用於支援的資料儲存區。 | 管理員、開發人員 |
 
 ## 上傳資產{#upload-assets}
@@ -144,7 +144,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 若要上傳更多檔案，請使用下列其中一種方法。 另請參閱[使用案例和方法](#upload-methods-comparison)
 
 * [資產上傳API](developer-reference-material-apis.md#asset-upload-technical):使用自訂的上傳指令碼或工具，以利用API新增對資產的額外處理（例如，翻譯中繼資料或重新命名檔案）。
-* [Experience Manager案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):適用於從本機檔案系統上傳資產的創意專業人員和行銷人員。使用它上傳可在本機使用的巢狀檔案夾。
+* [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):適用於從本機檔案系統上傳資產的創意專業人員和行銷人員。使用它上傳可在本機使用的巢狀檔案夾。
 * [大量擷取工具](#asset-bulk-ingestor):在部署時，偶爾或最初會用來擷取大量資產 [!DNL Experience Manager]。
 
 ### 資產大量收錄工具{#asset-bulk-ingestor}
@@ -181,14 +181,14 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!NOTE]
 >
->在設定和部署至Experience Manager時，若要從其他系統進行內容移轉，就必須仔細規劃、考慮和選擇工具，才能進行大量上傳。 請參閱[部署指南](/help/implementing/deploying/overview.md)以取得內容移轉方法的指引。
+>在設定並部署至[!DNL Experience Manager]時，若要從其他系統進行內容移轉，則需要仔細規劃、考慮和選擇工具，以進行大量上傳。 請參閱[部署指南](/help/implementing/deploying/overview.md)以取得內容移轉方法的指引。
 
 ## 使用案頭用戶端上傳資產{#upload-assets-desktop-clients}
 
-除了網頁瀏覽器使用者介面外，Experience Manager還支援案頭上的其他用戶端。 它們也提供上傳體驗，而不需前往網頁瀏覽器。
+除了網頁瀏覽器使用者介面外，[!DNL Experience Manager]還支援案頭上的其他用戶端。 它們也提供上傳體驗，而不需前往網頁瀏覽器。
 
-* [Adobe Asset ](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) Link可讓您存取Adobe Photoshop、Adobe Illustrator [!DNL Experience Manager] 和Adobe InDesign案頭應用程式中的資產。您可以直接從這些案頭應用程式內的Adobe Asset Link使用者介面，將目前開啟的檔案上傳至[!DNL Experience Manager]。
-* [Experience Manager案頭應](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 用程式可簡化在案頭上處理資產的作業，不受檔案類型或處理資產的原生應用程式所限。從本機檔案系統上傳巢狀檔案夾階層中的檔案特別有用，因為瀏覽器上傳僅支援上傳平面檔案清單。
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) 可讓您存取Adobe Photoshop、 [!DNL Experience Manager] Adobe Illustrator和Adobe InDesign案頭應用程式中的資產。您可以直接從這些案頭應用程式內的Adobe Asset Link使用者介面，將目前開啟的檔案上傳至[!DNL Experience Manager]。
+* [[!DNL Experience Manager] 案頭應](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 用程式可簡化在案頭上處理資產的作業，不受檔案類型或處理資產的原生應用程式所限。從本機檔案系統上傳巢狀檔案夾階層中的檔案特別有用，因為瀏覽器上傳僅支援上傳平面檔案清單。
 
 ## 上傳{#process-when-uploaded}時處理資產
 
@@ -218,8 +218,8 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience manager 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [關於 Adobe Asset Link](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Adobe Asset Link檔案](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [關於 [!DNL Adobe Asset Link]](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] 文件](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [資產上傳的技術參考](developer-reference-material-apis.md#asset-upload-technical)
 
