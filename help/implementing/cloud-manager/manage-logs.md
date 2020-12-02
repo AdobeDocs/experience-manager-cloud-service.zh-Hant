@@ -14,11 +14,11 @@ ht-degree: 17%
 
 用戶可以使用環境卡訪問選定環境的可用日誌檔案清單。  使用者可以存取所選環境的可用記錄檔清單。
 
-這些檔案可透過UI下載，可從「概述」 **頁面** :
+這些檔案可透過UI下載，可從&#x200B;**概述**&#x200B;頁面：
 
 ![](assets/download-logs1.png)
 
-或者，「環 **境** 」頁：
+或者， **Environments**&#x200B;頁：
 
 ![](assets/download-logs.png)
 
@@ -28,7 +28,7 @@ ht-degree: 17%
 ![](assets/download-logs2.png)
 
 
-## 透過API記錄檔 {#logs-through-api}
+## 透過API {#logs-through-api}記錄檔
 
 除了透過UI下載記錄檔外，記錄檔也可透過API和命令列介面使用。
 
