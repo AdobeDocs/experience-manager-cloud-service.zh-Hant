@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 建立多個類別和產品頁面
 
-[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) （AEM CIF核心元件）可讓內容作者建立其他類別和產品頁面。 這些頁面可以豐富其他行銷內容，並設定為針對特定類別和產品。 以下視訊將逐步介紹此功能的設定。
+[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components) 可讓內容作者建立其他類別和產品頁面。這些頁面可以豐富其他行銷內容，並設定為針對特定類別和產品。 以下視訊將逐步介紹此功能的設定。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
