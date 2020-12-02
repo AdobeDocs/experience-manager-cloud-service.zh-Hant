@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: b3abefb2953080443e220a248dd4484d23c09a0e
+source-git-commit: 7a26596b00f276404934e467490ff79d08b0e1d0
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '677'
 ht-degree: 2%
 
 ---
@@ -64,9 +64,25 @@ AEM Commerce即雲端服務的上線程式是兩個步驟：
 
 >[!NOTE]
 >
->您也可以使用[Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)來設定Cloud Manager變數。
+>或者，您也可以使用[Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)來設定Cloud Manager變數。
 
 有了這項功能，您就可以將AEM Commerce當做雲端服務使用，而且可以透過Cloud Manager部署專案。
+
+## 啟用分段目錄功能（可選）{#staging}
+
+>[!NOTE]
+>
+>此功能僅適用於Magento Enterprise Edition或Magento Cloud。
+
+1. 登入Magento並建立整合Token。 如需詳細資訊，請參閱[Token型驗證](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens)。 請確定整合Token僅具有&#x200B;**&#x200B;存取`Content -> Staging`資源的權限。 複製`Access Token`值。
+
+1. 在Cloud Manager中設定`COMMERCE_AUTH_HEADER`密碼變數：
+
+   ```bash
+   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
+   ```
+
+   請參閱[將AEM Commerce與Magento](#magento)連接，以瞭解如何設定Cloud Manager的Adobe I/O CLI。
 
 ## 第三方商務整合{#integrations}
 
