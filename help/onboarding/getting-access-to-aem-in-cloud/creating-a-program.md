@@ -16,27 +16,27 @@ ht-degree: 3%
 
 程式建立精靈會要求使用者提交詳細資訊，視使用者在特定客戶或組織可用內容範圍內建立程式的目標而定。
 
-若是首次存取Cloud Manager或租用戶中沒有程式，使用者會看到「建立您的第 **一個程式** 」畫面。 如果使用者選 *取Esc* ，或點選對話方塊外，會顯示下列畫面：
+若是首次存取Cloud Manager或租用戶中沒有程式，使用者會看到「建立您的第一個Program」（程式）畫面。 ****&#x200B;如果使用者選取&#x200B;*Esc*&#x200B;或點選對話方塊，會顯示下列畫面：
 
 ![](assets/create-program1.png)
 
 
-## 使用建立程式嚮導 {#using-create-program-wizard}
+## 使用建立程式嚮導{#using-create-program-wizard}
 
 根據使用者在特定客戶／組織可用項目群範圍內建立程式的目標，程式建立精靈會要求使用者提交一或多項詳細資訊。
 
 ![](assets/create-sandbox.png)
 
 >[!NOTE]
->If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
+>如果程式已存在，則您將看到登錄頁右上角的&#x200B;**添加程式**，如下圖所示。
 
 ![](assets/create-program-add.png)
 
-## 建立沙盒程式 {#create-sandbox-program}
+## 建立沙箱程式{#create-sandbox-program}
 
 請依照下列步驟建立沙盒程式：
 
-1. 在建立程式嚮導中，選擇「 **設定沙箱」**。 用戶在選擇「建立」之前提交程 **序名**。
+1. 在建立程式嚮導中，選擇&#x200B;**設定沙箱**。 用戶在選擇&#x200B;**建立**&#x200B;之前提交程式名。
 
    ![](assets/create-sandbox.png)
 
@@ -44,16 +44,16 @@ ht-degree: 3%
 
    ![](assets/program-create-setupdemo2.png)
 
-1. 在程式設定和項目建立步驟完成後，用戶可以訪問 **Manage Git** （管理Git）連結，如下圖所示：
+1. 在程式設定和項目建立步驟完成後，用戶可以訪問&#x200B;**管理Git**&#x200B;連結，如下圖所示：
 
    ![](assets/create-program4.png)
 
    >[!NOTE]
    >
-   >如要進一步瞭解如何使用Cloud Manager UI的自助服務Git帳戶管理存取和管理您的Git儲存庫，請參閱存 [取Git](/help/implementing/cloud-manager/accessing-git.md)。
+   >要瞭解有關使用Cloud Manager UI的自助服務Git帳戶管理訪問和管理Git儲存庫的更多資訊，請參閱[訪問Git](/help/implementing/cloud-manager/accessing-git.md)。
 
 
-1. 在建立開發環境後，使用者就可以 **存取AEM** 連結，如下圖所示：
+1. 在建立開發環境後，使用者就可以&#x200B;**存取AEM**&#x200B;連結，如下圖所示：
 
    ![](assets/create-program-5.png)
 
@@ -66,9 +66,9 @@ ht-degree: 3%
 
    ![](assets/create-program-a1.png)
 
-## 刪除沙盒程式 {#delete-sandbox-program}
+## 刪除沙箱程式{#delete-sandbox-program}
 
-A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
+Cloud Manager中&#x200B;*業務擁有者*&#x200B;或&#x200B;*部署管理員*&#x200B;角色的沙箱程式用戶可以刪除通過Cloud Manager UI設定的生產和階段環境。
 
 >[!NOTE]
 >在「生產」或「預備」上選取刪除選項，也可刪除集合中的其他項目。
@@ -79,18 +79,18 @@ A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud
 
 或,
 
-從「方 **案概述」頁面選** 取「刪除方案 **** 」，以刪除您的「沙盒程式」。
+從&#x200B;**程式概述**&#x200B;頁面選擇&#x200B;**刪除程式**&#x200B;以刪除您的沙箱程式。
 
 ![](assets/delete-sandbox2.png)
 
 
-## 建立常規程式 {#create-regular-program}
+## 建立常規程式{#create-regular-program}
 
-Regular ** program是專為熟悉AEM和Cloud Manager的使用者而設計，並準備開始編寫、建立和測試程式碼，以將其部署至「生產」。
+*Regular*&#x200B;程式是專為熟悉AEM和Cloud Manager並準備開始編寫、建立和測試程式碼的使用者而設計，其目的是將程式碼部署至「生產」。
 
 請依照下列步驟建立一般方案：
 
-1. 在「 **建立程式」嚮導中** ，選擇「為生產設定」以建立常規程式。 用戶可以接受預設程式名或在選擇「繼續」之前對其進行 **編輯**。
+1. 在「建立程式」嚮導中選擇「為Production **設定」以建立常規程式。**&#x200B;用戶可以接受預設程式名或在選擇&#x200B;**繼續**&#x200B;之前對其進行編輯。
 
    ![](assets/create-prod1.png)
 
@@ -104,11 +104,11 @@ Regular ** program是專為熟悉AEM和Cloud Manager的使用者而設計，並�
 
    ![](assets/set-up-prod2.png)
 
-1. 選擇解決方案後，按一下「創 **建」**。
+1. 選擇解決方案後，按一下&#x200B;**建立**。
 
    ![](assets/set-up-prod3.png)
 
-1. 在登陸頁面上看到您的程式卡片後，將滑鼠指標暫留在其上，以選取「Cloud Manager」圖示，以導覽至「Cloud Manager **Overview** 」（雲端管理員綜覽）頁面。
+1. 在登陸頁面上看到您的程式卡片後，將滑鼠指標暫留在其上，以選取Cloud Manager圖示，以導覽至Cloud Manager **Overview**&#x200B;頁面。
 
    ![](assets/set-up-prod4.png)
 
@@ -118,7 +118,7 @@ Regular ** program是專為熟悉AEM和Cloud Manager的使用者而設計，並�
 
    >[!NOTE]
    >
-   >A regular program does not have **Auto-setup** feature.
+   >常規程式沒有&#x200B;**自動設定**&#x200B;功能。
 
 
 
