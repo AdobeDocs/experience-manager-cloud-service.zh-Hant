@@ -10,7 +10,7 @@ ht-degree: 73%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.7.0 {#release-notes}
+# Adobe Experience Manager中Cloud Manager的Cloud Manager版本說明：Cloud Service 2020.7.0 {#release-notes}
 
 本頁概述AEM中Cloud Manager的Lease Notes（Cloud Service 2020.7.0版）。
 
@@ -32,7 +32,7 @@ AEM中Cloud Manager作為Cloud Service 2020.7.0的發行日期為2020年7月09�
 
 * 現在支援驗證綁定的專用Maven儲存庫。
 
-* Cloud Manager 建置容器現可支援 Java 8 和 Java 11。如需詳細 [資訊，請參閱「使用Java 11支援](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 」。
+* Cloud Manager 建置容器現可支援 Java 8 和 Java 11。有關詳細資訊，請參閱[使用Java 11支援](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)。
 
 ### 錯誤修正 {#bug-fixes-cm}
 
