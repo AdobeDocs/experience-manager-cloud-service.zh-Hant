@@ -43,7 +43,7 @@ ht-degree: 90%
       + [使用精靈](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [設定專案](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [瞭解構建環境](getting-access-to-aem-in-cloud/build-environment-details.md)
-   + Cloud Manager發行說明 {#release-notes-cloud-manager}
+   + Cloud Manager的發行說明{#release-notes-cloud-manager}
       + [最新發行說明 (2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [2020.10.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [2020.9.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
