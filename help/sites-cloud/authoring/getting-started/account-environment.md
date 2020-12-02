@@ -10,22 +10,22 @@ ht-degree: 10%
 ---
 
 
-# Configuring Your Account Environment {#configuring-your-account-environment}
+# 配置帳戶環境{#configuring-your-account-environment}
 
 AEM提供您設定帳戶的功能，以及作者環境的某些方面。
 
 使用頁 [首和相關「我的首選項](#user-settings) 」對話框中的「用戶」選項 [](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)[](#my-preferences) ，可以修改用戶選項，例如。
 
-首先，存取頁首 [中的](#user-settings) 「使用者」選項。
+首先，訪問標題中的[User](#user-settings)選項。
 
 ## 使用者設定 {#user-settings}
 
-「用 **戶設定** 」對話框允許您訪問：
+**User**&#x200B;設定對話方塊可讓您存取：
 
 * 模擬為
-   * 使用「模擬」功能時，使用者可以代表其他使用者工作。 <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
+   * 使用「模擬」功能時，使用者可以代表其他使用者工作。<!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * 設定檔
-   * 提供使用者設定的便利連結 <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * 提供使用者設定的便利連結<!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [我的喜好設定](#my-preferences)
    * 指定使用者專屬的各種偏好設定
 
@@ -33,7 +33,7 @@ AEM提供您設定帳戶的功能，以及作者環境的某些方面。
 
 ### 我的喜好設定 {#my-preferences}
 
-「我 **的偏好設定** 」對話方塊是透過頁首中的「使 [用者](#user-settings) 」選項來存取。
+**My Preferences**&#x200B;對話方塊是透過標題中的[User](#user-settings)選項存取。
 
 每位使用者都可自行設定特定屬性。
 
@@ -94,4 +94,4 @@ AEM提供您設定帳戶的功能，以及作者環境的某些方面。
 
 * **Stock 設定**
 
-   此選項可指定偏好的Adobe Stock設定，且只有在系統管理員啟用 [Adobe Stock整合時才可用](/help/assets/aem-assets-adobe-stock.md)。
+   此選項可指定偏好的Adobe Stock設定，且只有在系統管理員已啟用[Adobe Stock整合](/help/assets/aem-assets-adobe-stock.md)時，才可使用。
