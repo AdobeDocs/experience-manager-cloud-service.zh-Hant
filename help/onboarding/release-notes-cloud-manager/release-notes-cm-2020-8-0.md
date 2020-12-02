@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.8.0 {#release-notes}
+# Adobe Experience Manager中Cloud Manager的Cloud Manager版本說明：Cloud Service 2020.8.0 {#release-notes}
 
 本頁概述AEM中Cloud Manager的發行說明，即Cloud Service 2020.8.0。
 
@@ -20,17 +20,17 @@ AEM中Cloud Manager作為Cloud Service 2020.8.0的發行日期為2020年8月06�
 
 ## 新功能 {#whats-new-cloud-manager}
 
-* 「內容審核」是在Cloud Manager Sites生產管道上啟用的功能。 具有「網站」的程式的「生產管道」設定現在包含名為「內容審核」的第 **三個標籤**。 每當生產管道執行時，在自訂功能測試後，管道中就會包含新的「內容稽核」步驟，以根據多項維度評估網站，包括效能、搜尋引擎最佳化(SEO)、協助工具、最佳實務和PWA（漸進式網頁應用程式）。
+* 「內容審核」是在Cloud Manager Sites生產管道上啟用的功能。 具有Sites的程式的Production Pipeline配置現在包含名為&#x200B;**Content Audit**&#x200B;的第三個頁籤。 每當生產管道執行時，在自訂功能測試後，管道中就會包含新的「內容稽核」步驟，以根據多項維度評估網站，包括效能、搜尋引擎最佳化(SEO)、協助工具、最佳實務和PWA（漸進式網頁應用程式）。
 
 
    >[!NOTE]
    >「內容審核」已重新命名為「體驗審核」。
 
-   如需詳細 [資訊，請參閱Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) 。
+   如需詳細資訊，請參閱[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
 * 「資產」程式中新建立的環境現在會自動設定Smart Content Services。
 
-* 高眠環境可以從Cloud Manager的「概述」頁面中解除高 **眠** 。
+* 高眠環境可以從Cloud Manager的&#x200B;**概述**&#x200B;頁面中解除高眠。
 
 * 能夠在Google Lighthouse支援的頁面上執行Experience Checks。 作為Cloud Manager管道的一部分，最多可以根據體驗KPI檢查和驗證25頁，並在Cloud Manager UI中顯示分數。
 
@@ -42,7 +42,7 @@ AEM中Cloud Manager作為Cloud Service 2020.8.0的發行日期為2020年8月06�
 
 * 在某些情況下，未完成的管線執行未成功記錄為已完成，從而防止了管線的新執行。
 
-* 管道執行偶爾會因 *內部* 通訊問題而卡住。
+* 由於內部通訊問題，管道執行偶爾會出現&#x200B;*卡住*。
 
 * 在布建新組織時，系統管理員以外的其他管理角色的部分使用者會錯誤地獲得Cloud Manager的存取權。
 
@@ -52,7 +52,7 @@ AEM中Cloud Manager作為Cloud Service 2020.8.0的發行日期為2020年8月06�
 
 * 在刪除環境中嘗試操作時，用戶介面錯誤地允許該操作。
 
-* Cloud Manager的「概述」頁面上有顏色不 **符** 。
+* Cloud Manager的&#x200B;**概述**&#x200B;頁面上有顏色不符。
 
 ### 已知問題 {#known-issues-cm}
 
