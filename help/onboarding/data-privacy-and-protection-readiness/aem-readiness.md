@@ -10,7 +10,7 @@ ht-degree: 2%
 ---
 
 
-# Adobe Experience Manager作為雲端服務準備，以符合資料保護與資料隱私權法規 {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager作為雲端服務準備，以符合資料保護與資料隱私權規範{#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如需Adobe對隱私權問題之回應，以及這對您身為Adobe客戶意味著什麼的詳細資訊，請參 [閱Adobe的隱私權中心](https://www.adobe.com/privacy.html)。
+>如需Adobe對隱私權問題之回應，以及這對您身為Adobe客戶意味著什麼的詳細資訊，請參閱[Adobe的隱私權中心](https://www.adobe.com/privacy.html)。
 
 Adobe提供檔案和程式（當有API時），讓客戶隱私權管理員或AEM管理員處理資料保護和資料隱私權要求，並協助客戶遵守這些規定。 說明的程式可讓客戶手動或從外部入口網站或服務呼叫API（若有的話），以執行法規要求。
 
@@ -30,7 +30,7 @@ Adobe提供檔案和程式（當有API時），讓客戶隱私權管理員或AEM
 >
 >來自其他Adobe隨選服務的資料，連同任何相關的隱私權要求，都需要對該服務採取行動。
 >
->如需詳細資訊， [請參閱Adobe的隱私權中心](https://www.adobe.com/privacy.html)。
+>如需詳細資訊，請參閱[Adobe的隱私權中心](https://www.adobe.com/privacy.html)。
 
 ## 簡介 {#introduction}
 
@@ -78,19 +78,19 @@ Adobe提供處理與Adobe Experience Manager雲端服務之存取、刪除及選
 
 ![資料保護與隱私權](assets/data-protection-and-privacy-01.png)
 
-## Adobe Experience Manager雲端服務與法規準備 {#aem-as-a-cloud-service-and-regulatory-readiness}
+## Adobe Experience Manager雲端服務和法規準備{#aem-as-a-cloud-service-and-regulatory-readiness}
 
 如需AEM a Cloud Service產品區域的法規檔案，請參閱以下章節。
 
 ## Adobe Experience Manager as a Cloud Service 基礎 {#aem-foundation}
 
-See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md).
+請參閱[AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md)。
 
 ## Adobe Experience Manager as a Cloud Service Sites {#aem-sites}
 
-See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
+請參閱[AEM Sites Readiness for Data Protection and Data Privacy Regulations。](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
 
-## Adobe Experience Manager與Adobe Target和Adobe Analytics的雲端服務整合 {#aem-integration-with-adobe-target-adobe-analytics}
+## Adobe Experience Manager與Adobe Target和Adobe Analytics的雲端服務整合{#aem-integration-with-adobe-target-adobe-analytics}
 
 這些Adobe Experience Manager作為雲端服務的整合，與資料保護和隱私權（例如GDPR）就緒服務整合。 AEM中不會儲存Adobe Target或Adobe Analytics中與整合相關的個人資料。
 如需詳細資訊，請參閱：
