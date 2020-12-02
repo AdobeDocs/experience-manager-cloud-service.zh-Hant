@@ -10,24 +10,24 @@ ht-degree: 0%
 ---
 
 
-# 設定ContextHub {#configuring-contexthub}
+# 配置ContextHub {#configuring-contexthub}
 
-ContextHub是儲存、控制和呈現上下文資料的架構。 如需ContextHub的詳細資訊，請參閱 [ContextHub開發人員概觀](contexthub.md)。
+ContextHub是儲存、控制和呈現上下文資料的架構。 有關ContextHub的詳細資訊，請參閱[ContextHub開發人員概觀](contexthub.md)。
 
 您可以設定ContextHub工具列，以控制它是否出現在「預覽」模式中、建立ContextHub儲存區，以及新增UI模組。
 
 ## 顯示和隱藏ContextHub UI {#showing-and-hiding-the-contexthub-ui}
 
-設定Adobe Granite ContextHub OSGi服務，在您的頁面上顯示或 [隱藏ContextHub](/help/sites-cloud/authoring/personalization/targeted-content.md) UI。 此服務的PID是 `com.adobe.granite.contexthub.impl.ContextHubImpl.`
+設定Adobe Granite ContextHub OSGi服務，以顯示或隱藏頁面上的[ContextHub UI](/help/sites-cloud/authoring/personalization/targeted-content.md)。 此服務的PID為`com.adobe.granite.contexthub.impl.ContextHubImpl.`
 
-要配置服務，您可以使用 [Web控制台](/help/implementing/deploying/configuring-osgi.md) ，或在儲存庫中使用JCR節點：
+要配置服務，您可以使用[Web控制台](/help/implementing/deploying/configuring-osgi.md)或在儲存庫中使用JCR節點：
 
-* **Web控制台：** 若要顯示UI，請選取「顯示UI」屬性。 若要隱藏UI，請清除「隱藏UI」屬性。
-* **JCR節點：** 若要顯示UI，請將布林屬 `com.adobe.granite.contexthub.show_ui` 性設為 `true`。 若要隱藏UI，請將屬性設為 `false`。
+* **Web Console：若** 要顯示UI，請選取「顯示UI」屬性。若要隱藏UI，請清除「隱藏UI」屬性。
+* **JCR節點：** 要顯示UI，請將布爾屬 `com.adobe.granite.contexthub.show_ui` 性設定為 `true`。若要隱藏UI，請將屬性設為`false`。
 
 當顯示ContextHub UI時，它只會出現在AEM作者例項的頁面上。 UI不會顯示在發佈例項的頁面上。
 
-## 添加ContextHub UI模式和模組 {#adding-contexthub-ui-modes-and-modules}
+## 添加ContextHub UI模式和模組{#adding-contexthub-ui-modes-and-modules}
 
 在「預覽」模式下配置ContextHub工具列中顯示的UI模式和模組：
 
@@ -38,9 +38,9 @@ UI模式會以一系列圖示的形式出現在工具列的左側。 選取後�
 
 ![ContextHub工具列](assets/contexthub-toolbar.png)
 
-圖示是 [Coral UI圖示庫的參考](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)。
+圖示是[Coral UI圖示庫](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)的引用。
 
-### 新增UI模式 {#adding-a-ui-mode}
+### 添加UI模式{#adding-a-ui-mode}
 
 新增UI模式至群組相關的ContextHub模組。 當您建立UI模式時，您會提供顯示在ContextHub工具列中的標題和圖示。
 
@@ -54,16 +54,16 @@ UI模式會以一系列圖示的形式出現在工具列的左側。 選取後�
 1. 提供下列屬性的值：
 
    * UI模式標題：識別UI模式的標題
-   * 模式圖示：例如，要使 [用的Coral UI圖示](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) (Coral UI)選擇器 `coral-Icon--user`
+   * 模式圖示：要使用的[Coral UI圖示](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)選擇器，例如`coral-Icon--user`
    * 啟用：選擇以在ContextHub工具列中顯示UI模式
 
 1. 按一下或點選「儲存」。
 
-### 添加UI模組 {#adding-a-ui-module}
+### 添加UI模組{#adding-a-ui-module}
 
 將ContextHub UI模組新增至UI模式，以便顯示在ContextHub工具列中，以預覽頁面內容。 當您新增UI模組時，您會建立已在ContextHub中註冊的模組類型例項。 要添加UI模組，您必須知道關聯模組類型的名稱。
 
-AEM提供基本UI模組類型以及數種範例UI模組類型，您可依此類型建立UI模組。 下表提供每個表格的簡要說明。 如需開發自訂UI模組的詳細資訊，請參 [閱建立ContextHub UI模組](extending-contexthub.md#creating-contexthub-ui-module-types)。
+AEM提供基本UI模組類型以及數種範例UI模組類型，您可依此類型建立UI模組。 下表提供每個表格的簡要說明。 有關開發自定義UI模組的資訊，請參閱[建立ContextHub UI模組](extending-contexthub.md#creating-contexthub-ui-module-types)。
 
 UI模組屬性包括詳細配置，您可以在其中為模組特定屬性提供值。 您提供JSON格式的詳細設定。 表格中的「模組類型」欄提供每個UI模組類型所需JSON程式碼的相關資訊連結。
 
@@ -75,7 +75,7 @@ UI模組屬性包括詳細配置，您可以在其中為模組特定屬性提供
 | [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | 顯示用戶端的經緯度，以及地圖上的位置。 可讓您變更位置。 | `geolocation` |
 | [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) | 顯示裝置的螢幕方向（橫向或縱向） | `emulators` |
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | 顯示頁面標籤的統計資料 | `tagcloud` |
-| [granite.profile](sample-modules.md#granite-profile-ui-module-type) | 顯示當前用戶的配置檔案資訊，包括 `authorizableID`和 `displayName` 和 `familyName`。 您可以更改和的 `displayName` 值 `familyName`。 | `profile` |
+| [granite.profile](sample-modules.md#granite-profile-ui-module-type) | 顯示當前用戶的配置檔案資訊，包括`authorizableID`、`displayName`和`familyName`。 您可以變更`displayName`和`familyName`的值。 | `profile` |
 
 1. 在Experience Manager邊欄上，按一下或點選「工具>網站> ContextHub」。
 1. 按一下或點選您要新增UI模組的「設定容器」。
@@ -94,17 +94,17 @@ UI模組屬性包括詳細配置，您可以在其中為模組特定屬性提供
 1. （可選）若要覆寫預設商店設定，請輸入JSON物件以設定UI模組。
 1. 按一下或點選「儲存」。
 
-## 建立ContextHub商店 {#creating-a-contexthub-store}
+## 建立ContextHub儲存{#creating-a-contexthub-store}
 
-建立內容中樞儲存區，以保存使用者資料並視需要存取資料。 ContextHub儲存區是以註冊的儲存區候選項為基礎。 當您建立商店時，需要註冊商店候選者的storeType值。 (請參 [閱建立自訂商店候選](extending-contexthub.md#creating-custom-store-candidates)。)
+建立內容中樞儲存區，以保存使用者資料並視需要存取資料。 ContextHub儲存區是以註冊的儲存區候選項為基礎。 當您建立商店時，需要註冊商店候選者的storeType值。 （請參閱[建立自訂商店候選者](extending-contexthub.md#creating-custom-store-candidates)）。
 
-### 詳細的商店設定 {#detailed-store-configuration}
+### 詳細的儲存配置{#detailed-store-configuration}
 
-在配置儲存時，Detail Configuration屬性允許您為儲存特定屬性提供值。 該值基於儲存 `config` 器函式的參 `init` 數。 因此，是否需要提供此值和值的格式取決於儲存。
+在配置儲存時，Detail Configuration屬性允許您為儲存特定屬性提供值。 該值基於儲存`init`函式的`config`參數。 因此，是否需要提供此值和值的格式取決於儲存。
 
-「詳細資料設定」屬性的值是JSON格 `config` 式的物件。
+Detail Configuration屬性的值是JSON格式的`config`物件。
 
-### 商店候選人範例 {#sample-store-candidates}
+### 商店候選人範例{#sample-store-candidates}
 
 AEM提供下列範例商店候選者，供您建立商店的基礎。
 
@@ -125,19 +125,19 @@ AEM提供下列範例商店候選者，供您建立商店的基礎。
 
 1. 提供基本配置屬性的值，然後按一下或點選「下一步」:
 
-   * **配置標題：** 識別商店的標題
-   * **商店類型：** 要作為儲存基礎的儲存候選項的storeType屬性的值
-   * **必要：** 選擇
-   * **啟用：** 選擇以啟用商店
+   * **設定標題：** 識別商店的標題
+   * **商店類** 型：要作為商店基礎的商店候選者的storeType屬性值
+   * **必要：選** 取
+   * **啟用：選** 擇以啟用商店
 
 1. （可選）若要覆寫預設的商店設定，請在「詳細設定(JSON)」方塊中輸入JSON物件。
 1. 按一下或點選「儲存」。
 
-## 範例：使用JSONP服務  {#example-using-a-jsonp-service}
+## 範例：使用JSONP服務{#example-using-a-jsonp-service}
 
 此範例說明如何設定儲存區並在UI模組中顯示資料。 在此範例中，jsontest.com網站的MD5服務會用作商店的資料來源。 服務會傳回指定字串的MD5雜湊代碼，格式為JSON。
 
-配置contexthub.generic-jsonp儲存器，以便儲存服務呼叫的資料 `https://md5.jsontest.com/?text=%22text%20to%20md5%22`。 服務返回UI模組中顯示的以下資料：
+配置contexthub.generic-jsonp儲存，以便儲存服務調用`https://md5.jsontest.com/?text=%22text%20to%20md5%22`的資料。 服務返回UI模組中顯示的以下資料：
 
 ```javascript
 {
@@ -146,18 +146,18 @@ AEM提供下列範例商店候選者，供您建立商店的基礎。
 }
 ```
 
-### 建立contexthub.generic-jsonp儲存 {#creating-a-contexthub-generic-jsonp-store}
+### 建立contexthub.generic-jsonp儲存{#creating-a-contexthub-generic-jsonp-store}
 
 contexthub.generic-jsonp範例儲存候選項可讓您從傳回JSON資料的JSONP服務或web service擷取資料。 對於此商店候選項，請使用商店配置來提供要使用的JSONP服務的詳細資訊。
 
-Javascript [類的init](contexthub-api.md#init-name-config) 函式定義一個對 `ContextHub.Store.JSONPStore``config` 像，用於初始化此儲存候選項。 對 `config` 像包含 `service` 包含JSONP服務詳細資訊的對象。 若要設定商店，請以JSON格 `service` 式提供物件作為「詳細資料設定」屬性的值。
+`ContextHub.Store.JSONPStore` Javascript類的[init](contexthub-api.md#init-name-config)函式定義了初始化此儲存候選項的`config`對象。 `config`對象包含`service`對象，該對象包含有關JSONP服務的詳細資訊。 若要設定商店，請提供JSON格式的`service`物件作為「詳細資料設定」屬性的值。
 
-要保存jsontest.com站點的MD5服務中的資料，請使用以下屬性 [建立ContextHub儲存](#creating-a-contexthub-store) :
+要保存jsontest.com站點的MD5服務中的資料，請使用[使用以下屬性建立ContextHub儲存](#creating-a-contexthub-store)中的過程：
 
 * **配置標題：** md5
 * **商店類型：** contexthub.generic-jsonp
-* **必要：** 選擇
-* **啟用：** 選擇
+* **必要：選** 取
+* **啟用：選** 擇
 * **詳細資料組態 (JSON):**
 
    ```javascript
@@ -176,13 +176,13 @@ Javascript [類的init](contexthub-api.md#init-name-config) 函式定義一個�
     }
    ```
 
-### 為md5資料添加UI模組 {#adding-a-ui-module-for-the-md-data}
+### 為md5資料{#adding-a-ui-module-for-the-md-data}添加UI模組
 
 將UI模組新增至ContextHub工具列，以顯示儲存在範例md5商店的資料。 在此範例中，contexthub.base模組用來產生下列UI模組：
 
 ![ContextHub MD5商店](assets/contexthub-md5-store.png)
 
-使用「添 [](#adding-a-ui-module) 加UI模組」中的過程將UI模組添加到現有UI模式，如「角色UI模式」示例。 對於UI模組，請使用下列屬性值：
+使用[添加UI模組](#adding-a-ui-module)中的過程將UI模組添加到現有UI模式，如範例角色UI模式。 對於UI模組，請使用下列屬性值：
 
 * **UI模組標題：** MD5
 * **模組類型：** contexthub.base
@@ -202,53 +202,53 @@ Javascript [類的init](contexthub-api.md#init-name-config) 函式定義一個�
 
 ContextHub的除錯模式可啟用，以允許疑難排解。 除錯模式可以透過ContextHub組態或CRXDE來啟用。
 
-### 透過設定 {#via-the-configuration}
+### 通過配置{#via-the-configuration}
 
-編輯ContextHub的設定並勾選「除錯」選 **項**
+編輯ContextHub的配置並檢查選項&#x200B;**Debug**
 
-1. 在邊欄中按一下或點選「工 **具>網站> ContextHub」**
-1. 按一下或點選預設的「設 **定容器」**
-1. 選取「 **ContextHub設定」** ，然後按一下或點選「編 **輯選取的元素」**
-1. 按一下或點選「 **除錯** 」，然後按一下或點選「儲 **存」**
+1. 在邊欄中按一下或點選「**工具>網站> ContextHub**」
+1. 按一下或點選預設的&#x200B;**設定容器**
+1. 選擇&#x200B;**ContextHub Configuration**，然後按一下或點選&#x200B;**編輯選定元素**
+1. 按一下或點選&#x200B;**Debug** ，然後按一下或點選&#x200B;**Save**
 
-### 透過CRXDE {#via-crxde}
+### 通過CRXDE {#via-crxde}
 
-使用CRXDE Lite將屬性設 `debug` 為 **true** :
+使用CRXDE Lite將屬性`debug`設為&#x200B;**true**，位於：
 
 * `/conf/global/settings/cloudsettings` 或
 * `/conf/<site>/settings/cloudsettings`
 
-### 記錄ContextHub的調試消息 {#logging-debug-messages-for-contexthub}
+### 記錄ContextHub {#logging-debug-messages-for-contexthub}的調試消息
 
 設定Adobe Granite ContextHub OSGi服務(PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`)，以記錄詳細的除錯訊息，這些訊息在開發時很有用。
 
-要配置服務，您可以使用 [Web控制台](/help/implementing/deploying/configuring-osgi.md) ，或在儲存庫中使用JCR節點：
+要配置服務，您可以使用[Web控制台](/help/implementing/deploying/configuring-osgi.md)或在儲存庫中使用JCR節點：
 
 * Web控制台：要記錄調試消息，請選擇Debug屬性。
-* JCR節點：要記錄調試消息，請將布爾 `com.adobe.granite.contexthub.debug` 屬性設定為 `true`。
+* JCR節點：要記錄調試消息，請將布爾值`com.adobe.granite.contexthub.debug`屬性設定為`true`。
 
-### 靜默模式 {#silent-mode}
+### 靜默模式{#silent-mode}
 
 靜默模式會隱藏所有調試資訊。 與一般除錯選項（可針對每個ContextHub配置獨立設定）不同，silent模式是全域設定，取代ContextHub組態層級上的任何除錯設定。
 
 這對您的發佈例項非常有用，因為您完全不需要任何除錯資訊。 因為它是全域設定，所以會透過OSGi啟用。
 
-1. 開啟 **Adobe Experience Manager Web Console設定** : `http://<host>:<port>/system/console/configMgr`
-1. 搜尋 **Adobe Granite ContextHub**
-1. 按一下 **Adobe Granite ContextHub組態** ，以編輯其屬性
-1. 選中「靜默模 **式」選項** ，然後按一下「 **保存」**
+1. 在`http://<host>:<port>/system/console/configMgr`開啟&#x200B;**Adobe Experience Manager Web Console Configuration**
+1. 搜尋&#x200B;**Adobe Granite ContextHub**
+1. 按一下設定&#x200B;**Adobe Granite ContextHub**&#x200B;以編輯其屬性
+1. 選中「Silent Mode（靜默模式）」選項&#x200B;**，然後按一下「Save（保存）」******
 
-## 停用ContextHub {#disabling-contexthub}
+## 禁用ContextHub {#disabling-contexthub}
 
 ContextHub可停用，以防止它載入js/css並初始化。 要禁用ContextHub，有兩個選項：
 
-* 編輯ContextHub的設定並勾選「停用ContextHub」 **選項**
+* 編輯ContextHub的配置並選中「禁用ContextHub **」選項**
 
-   1. 在邊欄中按一下或點選「工 **具>網站> ContextHub」**
-   1. 按一下或點選預設的「設 **定容器」**
-   1. 選取「 **ContextHub設定」** ，然後按一下或點選「編 **輯選取的元素」**
-   1. 按一下或點選「 **停用ContextHub」** ，然後按一下或點選「 **儲存」**
+   1. 在邊欄中按一下或點選「**工具>網站> ContextHub**」
+   1. 按一下或點選預設的&#x200B;**設定容器**
+   1. 選擇&#x200B;**ContextHub Configuration**，然後按一下或點選&#x200B;**編輯選定元素**
+   1. 按一下或點選「**停用ContextHub**」，然後按一下或點選「儲存&#x200B;**a3/>」**
 
 或
 
-* 使用CRXDE Lite將屬性設 `disabled` 為 **true** , `/conf/global/settings/cloudsettings/<configName>/contexthub`
+* 使用CRXDE Lite將屬性`disabled`設為&#x200B;**true**（在`/conf/global/settings/cloudsettings/<configName>/contexthub`下）
