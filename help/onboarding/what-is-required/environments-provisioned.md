@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # 已佈建的環境 {#environments-provisioning}
 
-## 布建 {#provisioning}
+## 預配{#provisioning}
 
 客戶購買的所有AEM雲端環境都將由Adobe自動布建，並連結回其Cloud Manager中的計畫。 這些AEM雲端環境包含在每個Adobe Managed Services訂閱中，通常至少包含一個生產環境、一個階段環境，以及可選的一或多個開發或測試環境。
 
-## 歡迎電子郵件 {#welcome-email}
+## 歡迎寄電子郵件{#welcome-email}
 
 環境布建程式完成後，指定的客戶管理員會收到歡迎電子郵件，確認他們已獲得Adobe Experience Cloud的存取權。 此電子郵件包含如何開始使用Experience Cloud服務和Cloud Manager自助服務入口網站的詳細資訊。 此外，電子郵件還包含重要資訊，例如支援資源、論壇或常見問答集等。 在電子郵件中提供的資源清單中，您也會取得如何存取Cloud Manager或AEM雲端環境的詳細資訊。
 
-## 後續步驟 {#next-steps}
+## 後續步驟{#next-steps}
 
 收到歡迎電子郵件後，您就可以使用Adobe IMS認證，以管理員身分登入Cloud Manager。 登入後，您將可以確認您的AEM雲端生產與非生產環境是否可用，並順利執行。
 
