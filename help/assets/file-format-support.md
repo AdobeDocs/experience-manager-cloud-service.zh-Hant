@@ -1,6 +1,6 @@
 ---
 title: 支援的檔案格式和MIME類型
-description: 雲端服務支援的檔 [!DNL Experience Manager Assets] 案格式和MIME類型。
+description: ' [!DNL Experience Manager Assets] 作為雲端服務支援的檔案格式和MIME類型。'
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
@@ -11,77 +11,77 @@ ht-degree: 8%
 ---
 
 
-# [!DNL Assets] 支援的檔案格式 {#supported-file-formats}
+# [!DNL Assets] 支援的檔案格式  {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] 雲端服務支援基本的內容管理功能— 儲存、線上管理中繼資料、版本修訂、上傳和下載等等— 任何二進位檔案，不受其格式影響。 [!DNL Adobe Experience Manager Assets] 支援多種檔案格式，而每種產品功能都支援不同格式。
+[!DNL Adobe Experience Manager] 雲端服務支援基本的內容管理功能— 儲存、線上管理中繼資料、版本修訂、上傳和下載等等— 任何二進位檔案，不受其格式影響。[!DNL Adobe Experience Manager Assets] 支援多種檔案格式，而每種產品功能都支援不同格式。
 
-此外，還提 [!DNL Experience Manager Assets] 供延伸支援，以產生預覽和轉譯，並擷取中繼資料和文字以進行全文索引。 此延伸支援是使用資產微 [型服務](asset-microservices-configure-and-use.md)。
+此外，[!DNL Experience Manager Assets]還提供延伸支援，以產生預覽和轉譯，並擷取中繼資料和文字以進行全文索引。 此延伸支援是使用[asset microservices](asset-microservices-configure-and-use.md)提供。
 
 使用資產微服務進行資產轉換的重點包括：
 
-* Adobe應 [用程式與服務](#adobe-formats) （包括、、、、Adobe檔案和PDF）所制 [!DNL Adobe Photoshop]作的主要 [!DNL Adobe InDesign][!DNL Adobe Illustrator][!DNL Adobe XD][!DNL Adobe Dimension][!DNL Adobe Acrobat] 格式，包括：
-* 關鍵影 [像檔案格式](#image-formats)。
-* [Camera Raw檔案格式](#camera-raw-formats) ，適用於各種相機，包括Canon、Nikon、Fujifilm、Olympus和其他製造商（採用Adobe Camera Raw）。
-* 常用 [檔案格式](#document-formats)，包括Microsoft Office和Open Document格式。
+* 關鍵[Adobe應用程式與服務產生的Adobe檔案格式](#adobe-formats)，包括[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]和[!DNL Adobe Acrobat]或PDF。
+* 鍵[映像檔案格式](#image-formats)。
+* [Camera Raw檔案格](#camera-raw-formats) 式適用於多種相機，包括Canon、Nikon、Fujifilm、Olympus和其他製造商（採用Adobe Camera Raw）。
+* 常見的[檔案格式](#document-formats)，包括Microsoft Office和Open Document格式。
 * 各種視訊 [和音訊](#video-formats)[格式.](#audio-formats)
 
 下圖說明支援等級。
 
 | 支援等級 | 說明 |
 | ------------- | --------------------------- |
-| ✓ | 支援 |
+| ý | 支援 |
 | * | 請參閱表格下方的注釋 |
 | - | 不適用 |
 
-## Adobe格式 {#adobe-formats}
+## Adobe格式{#adobe-formats}
 
 | 檔案格式 | 產生縮圖 | 全文擷取 | 中繼資料擷取 | 寬度／高度 |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | ✓ | - | ✓ | ✓ |
-| 拼貼 | - | - | ✓ | - |
-| DN | ✓ | - | ✓ | ✓ |
-| 創意 | - | - | ✓ | - |
-| INDD | ✓ | - | ✓ | ✓ * |
-| INDT | - | - | ✓ | - |
-| PDF | ✓ | ✓ | ✓ | ✓ |
-| PROTO | - | - | ✓ | - |
-| PSB | ✓ | - | ✓ | ✓ |
-| PSD | ✓ | - | ✓ | ✓ |
-| XD | ✓ | - | ✓ | ✓ |
+| AI | ý | - | ý | ý |
+| 拼貼 | - | - | ý | - |
+| DN | ý | - | ý | ý |
+| 創意 | - | - | ý | - |
+| INDD | ý | - | ý | ý * |
+| INDT | - | - | ý | - |
+| PDF | ý | ý | ý | ý |
+| PROTO | - | - | ý | - |
+| PSB | ý | - | ý | ý |
+| PSD | ý | - | ý | ý |
+| XD | ý | - | ý | ý |
 
-\*對於 [!DNL Adobe InDesign] 檔案(INDD)，轉譯的大小由內嵌於INDD檔案中的預覽決定。 在(「偏好設定」>「 [!DNL InDesign] 檔案處理」>「永遠儲存預覽影像與檔案」、「預覽大小」****)中設定偏好設定，以內嵌較大的轉譯。
+\*對於[!DNL Adobe InDesign]檔案(INDD)，轉譯的大小由INDD檔案中內嵌的預覽決定。 在[!DNL InDesign](**[!UICONTROL 「偏好設定」>「檔案處理」>「永遠儲存預覽影像與檔案」、「預覽大小」中設定偏好設定，以內嵌較大的轉譯。]**
 
-## 影像格式 {#image-formats}
+## 影像格式{#image-formats}
 
 | 檔案格式 | 產生縮圖 | 中繼資料擷取 | 寬度／高度 | 裁切 |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
-| BMP | ✓ | - | ✓ | ✓ |
-| EPS | - | ✓ | - | - |
-| GIF | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ |
-| PNG | ✓ | ✓ | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | - |
-| SVG | ✓ | - | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
-| RGB | ✓ | ✓ | ✓ | ✓ |
-| RGBA | ✓ | ✓ | ✓ | ✓ |
+| BMP | ý | - | ý | ý |
+| EPS | - | ý | - | - |
+| GIF | ý | ý | ý | ý |
+| JPEG | ý | ý | ý | ý |
+| PNG | ý | ý | ý | ý |
+| TIFF | ý | ý | ý | - |
+| SVG | ý | - | ý | ý |
+| SGI | ý | ý | ý | ý |
+| RGB | ý | ý | ý | ý |
+| RGBA | ý | ý | ý | ý |
 
-## 影像格式 [!DNL Dynamic Media] {#image-support-dynamic-media}
+## [!DNL Dynamic Media] {#image-support-dynamic-media}中的影像格式
 
 | 格式 | 上傳（輸入格式） | 建立影像預設集（輸出格式） | 預覽動態轉譯 | 提供動態轉譯 | 下載動態轉譯 |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ | - | - | - | - |
-| PSD‡ | ✓ | - | - | - | - |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ | - | - | - | - |
+| PNG | ý | ý | ý | ý | ý |
+| GIF | ý | ý | ý | ý | ý |
+| TIFF | ý | ý | ý | ý | ý |
+| JPEG | ý | ý | ý | ý | ý |
+| BMP | ý | - | - | - | - |
+| PSD   ‡ | ý | - | - | - | - |
+| EPS | ý | ý | ý | ý | ý |
+| PICT | ý | - | - | - | - |
 
-‡合併的影像是從PSD檔案擷取。 它是由PSD檔案產生並 [!DNL Adobe Photoshop] 包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
+‡合併的影像是從PSD檔案擷取。 它是由[!DNL Adobe Photoshop]產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
 
-下列不支援的點陣影像檔案格式子類型 [!DNL Dynamic Media]:
+[!DNL Dynamic Media]中不支援的點陣影像檔案格式的下列子類型：
 
 * IDAT區塊大小大於100 MB的PNG檔案。
 * PSB檔案。
@@ -90,115 +90,115 @@ ht-degree: 8%
 * 具有浮點資料的TIFF檔案。
 * 具有Lab色域的TIFF檔案。
 
-## 3D格式 {#support-3d-formats}
+## 3D格式{#support-3d-formats}
 
 支援下列3D格式清單。
 
-See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+另請參閱[在動態媒體中使用3D資產。](/help/assets/dynamic-media/assets-3d.md)
 
 | 格式 | 儲存 | 版本設定 | 工作流程 | 發佈 | 存取控制 | 縮圖預覽 | 3D預覽 | 動態媒體傳送 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| DN | ý | ý | ý | - | ý | ý | - | - |
+| gLB | ý | ý | ý | ý | ý | - | ý | ý |
+| gLTF | ý | ý | ý | - | ý | - | ý | - |
+| OBJ | ý | ý | ý | ý | ý | - | ý | ý |
+| STL | ý | ý | ý | ý | ý | - | ý | ý |
+| USDz | ý | ý | ý | ý | ý | - | - | ý |
 
-## [!DNL Camera RAW] 格式 {#camera-raw-formats}
+## [!DNL Camera RAW] 格式  {#camera-raw-formats}
 
 | 檔案格式 | 產生縮圖 | 中繼資料擷取 | 寬度／高度 |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3FR | ✓ | ✓ | ✓ |
-| ARW | ✓ | ✓ | ✓ |
-| CR2 | ✓ | ✓ | ✓ |
-| CR3 | ✓ | ✓ | ✓ |
-| CRW | ✓ | ✓ | ✓ |
-| DCR | ✓ | ✓ | ✓ |
-| DNG | ✓ | ✓ | ✓ |
-| ERF | ✓ | ✓ | ✓ |
-| FFF | ✓ | ✓ | ✓ |
-| GPR | ✓ | ✓ | ✓ |
-| IIQ | ✓ | ✓ | ✓ |
-| KDC | ✓ | ✓ | ✓ |
-| MEF | ✓ | ✓ | ✓ |
-| MFW | ✓ | ✓ | ✓ |
-| MOS | ✓ | ✓ | ✓ |
-| MRW | ✓ | ✓ | ✓ |
-| NEF | ✓ | ✓ | ✓ |
-| NRW | ✓ | ✓ | ✓ |
-| ORF | ✓ | ✓ | ✓ |
-| PEF | ✓ | ✓ | ✓ |
-| RAF | ✓ | ✓ | ✓ |
-| RAW | ✓ | ✓ | ✓ |
-| RW2 | ✓ | ✓ | ✓ |
-| RWL | ✓ | ✓ | ✓ |
-| SRF | ✓ | ✓ | ✓ |
-| SRW | ✓ | ✓ | ✓ |
-| X3F | ✓ | ✓ | ✓ |
+| 3FR | ý | ý | ý |
+| ARW | ý | ý | ý |
+| CR2 | ý | ý | ý |
+| CR3 | ý | ý | ý |
+| CRW | ý | ý | ý |
+| DCR | ý | ý | ý |
+| DNG | ý | ý | ý |
+| ERF | ý | ý | ý |
+| FFF | ý | ý | ý |
+| GPR | ý | ý | ý |
+| IIQ | ý | ý | ý |
+| KDC | ý | ý | ý |
+| MEF | ý | ý | ý |
+| MFW | ý | ý | ý |
+| MOS | ý | ý | ý |
+| MRW | ý | ý | ý |
+| NEF | ý | ý | ý |
+| NRW | ý | ý | ý |
+| ORF | ý | ý | ý |
+| PEF | ý | ý | ý |
+| RAF | ý | ý | ý |
+| RAW | ý | ý | ý |
+| RW2 | ý | ý | ý |
+| RWL | ý | ý | ý |
+| SRF | ý | ý | ý |
+| SRW | ý | ý | ý |
+| X3F | ý | ý | ý |
 
-## 檔案格式 {#document-formats}
+## 文檔格式{#document-formats}
 
 資產管理功能支援的檔案格式如下。
 
 | 檔案格式 | 產生縮圖 | 全文擷取 | 寬度／高度 | 中繼資料管理 | [連線資產](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOC | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XLS | - | - | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | - | - |
-| OFG | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - |
-| HTML | - | ✓ | - | ✓ | ✓ |
-| PS | - | - | ✓ | - | - |
-| RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | - | ✓ | - | ✓ | ✓ |
-| XML | - | ✓ | - | - | - |
+| PDF | ý | ý | ý | ý | ý |
+| DOCX | ý | ý | ý | ý | ý |
+| DOC | - | - | - | ý | ý |
+| PPTX | ý | ý | ý | ý | ý |
+| PPT | - | - | - | ý | ý |
+| XLSX | ý | ý | ý | ý | ý |
+| XLS | - | - | - | ý | ý |
+| ODF | ý | ý | ý | - | - |
+| OFG | ý | ý | ý | - | - |
+| ODM | ý | ý | ý | - | - |
+| ODP | ý | ý | ý | - | - |
+| ODS | ý | ý | ý | - | - |
+| ODT | ý | ý | ý | ý | ý |
+| EPUB | - | ý | - | - | - |
+| HTML | - | ý | - | ý | ý |
+| PS | - | - | ý | - | - |
+| RTF | - | ý | - | ý | ý |
+| TXT | - | ý | - | ý | ý |
+| XML | - | ý | - | - | - |
 
-## 檔案格式 [!DNL Dynamic Media] {#document-support-dynamic-media}
+## [!DNL Dynamic Media] {#document-support-dynamic-media}中的檔案格式
 
 | 格式 | 上傳（輸入格式） | 建立影像預設集（輸出格式） | 預覽動態轉譯 | 提供動態轉譯 | 下載動態轉譯 |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| INDD | ✓ | - | - | - | - |
+| AI | ý | - | - | - | - |
+| PDF | ý | ý | ý | ý | ý |
+| INDD | ý | - | - | - | - |
 
-## 視訊格式 {#video-formats}
+## 視訊格式{#video-formats}
 
 | 檔案格式 | 產生縮圖 | 中繼資料擷取 | 寬度／高度 |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | ✓ | - |
-| 3GP | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ |
-| F4V | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ |
-| M2TS | ✓ | - | ✓ |
-| M2V | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ |
-| OGV | ✓ | - | ✓ |
-| QT | ✓ | - | ✓ |
-| R3D | - | ✓ | ✓ |
-| SWF | ✓ | - | ✓ |
-| WebM | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ |
+| 3G2 | - | ý | - |
+| 3GP | - | ý | - |
+| AVI | ý | ý | ý |
+| DIVX | ý | - | ý |
+| F4V | ý | ý | ý |
+| FLV | ý | ý | ý |
+| M2T | ý | - | ý |
+| M2TS | ý | - | ý |
+| M2V | ý | - | ý |
+| M4V | ý | ý | ý |
+| MKV | ý | - | ý |
+| MOV | ý | ý | ý |
+| MP4 | ý | ý | ý |
+| MPEG | ý | ý | ý |
+| MPG | ý | ý | ý |
+| MTS | ý | - | ý |
+| OGV | ý | - | ý |
+| QT | ý | - | ý |
+| R3D | - | ý | ý |
+| SWF | ý | - | ý |
+| WebM | ý | - | ý |
+| WMV | ý | ý | ý |
 
-## 轉碼中的視 [!DNL Dynamic Media] 訊格式 {#video-dynamic-media-transcoding}
+## 用於轉碼{#video-dynamic-media-transcoding}的[!DNL Dynamic Media]中的視頻格式
 
 | 視訊副檔名 | 容器 | 建議的視訊轉碼器 | 不支援的視訊轉碼器 |
 |------------------------|--------------------|--------|-------|
@@ -219,7 +219,7 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/a
 | FLAC | 原生Flac | 免費無損音訊轉碼器 | - |
 | MJ2 | Motion JPEG 2000 | 動態JPEG 2000編碼解碼器 | - |
 
-## 音訊格式 {#audio-formats}
+## 音訊格式{#audio-formats}
 
 [!DNL Assets] 雲端服務提供AIF、ASF、M4A、MP3、WAV和WMA音訊格式的XMP中繼資料擷取支援。
 
