@@ -14,7 +14,7 @@ ht-degree: 85%
 
 本頁列出有關AEM Commerce為雲端服務的自助資源。
 
-## 主要商務文章 {#key-articles}
+## 關鍵商務文章{#key-articles}
 
 * [AEM Commerce As a Cloud Service簡介](overview.md)
 * [AEM Commerce雲端服務架構](architecture/magento.md)
