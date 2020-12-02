@@ -25,7 +25,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->新部署 [!DNL Experience Manager Assets] 預設會與 [!DNL Adobe Developer Console] 整合。 它可協助您更快速地設定智慧標籤功能。 在現有部署中，管理員會依照下列步驟進行設定。
+>預設情況下，新的[!DNL Experience Manager Assets]部署與[!DNL Adobe Developer Console]整合。 它可協助您更快速地設定智慧標籤功能。 在現有部署中，管理員會依照下列步驟進行設定。
 
 ## 使用 Adobe 開發人員控制台進行整合 {#aio-integration}
 
