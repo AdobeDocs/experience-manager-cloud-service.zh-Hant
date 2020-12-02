@@ -14,7 +14,7 @@ ht-degree: 8%
 
 下圖說明如何建構針對目標內容的多網站支援。
 
-區域會出現在 **/content/campaigns/&lt;brand>下方** ，而且依預設，每個品牌都有一個主區域，會自動建立。 每個區域都包含其專屬的活動、體驗和選件集。
+區域會出現在&#x200B;**/content/campaigns/&lt;brand>**&#x200B;下方，依預設，每個品牌都有自動建立的主區域。 每個區域都包含其專屬的活動、體驗和選件集。
 
 ![多網站結構](/help/sites-cloud/authoring/assets/multisite-structure.png)
 
