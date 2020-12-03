@@ -2,9 +2,9 @@
 title: 頁面差異
 description: 頁面比較功能可方便並排比較兩頁的差異。
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '622'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 頁面比較功能可方便並排比較兩頁的差異。
 
->[!CAUTION]
+>[!NOTE]
 >
 >用戶必須對節點`/content/versionhistory`具有&#x200B;**修改／建立／刪除**&#x200B;權限，才能使用該功能。
 >
@@ -54,10 +54,6 @@ ht-degree: 1%
 
 * 淺綠色——已添加元件
 * 粉紅色——元件已移除
-* 藍色——元件已更改
-* 藍色——已移動元件
-
-請注意，「已變更」和「已移動」的顏色是相同的。
 
 **HTML變更**
 
@@ -94,8 +90,6 @@ ht-degree: 1%
 
 * 當差異版本和啟動時，差異不會考慮動態元件，例如網站導覽路徑、功能表、產品清單或標誌（依賴網站結構來呈現其內容的元件）。
 * 對於版本，差異不會重新建立訪問控制策略和即時拷貝關係。
-* 如果對影像進行任何變更，例如修改alt、title或src屬性，則會以藍色反白顯示變更。 但是，在某些情況下，影像具有src屬性的Base64表示，即使兩個影像看起來相同，它們也會因為src屬性的不同而被差異標籤為不同。
-* 比較無法檢測到影像旋轉。
 * 如果移動了頁面，則無法再對移動前進行的任何版本執行比較。
    * 如果您遇到比較問題，請查看頁面的[時間軸](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)，以查看頁面是否已移動。
 
