@@ -2,9 +2,9 @@
 title: 將Experience Manager移轉至雲端服務
 description: 將Experience Manager移轉至雲端服務
 translation-type: tm+mt
-source-git-commit: 3c1ff52d58f64d351507d20e4368a6aeb1bf6339
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2117'
 ht-degree: 8%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 8%
 # 移轉至Adobe Experience Manager作為雲端服務{#Overview}
 
 >[!CONTEXTUALHELP]
->id="aemcloud_migration-overview"
+>id="aemcloud_migration_overview"
 >title="將AEM移轉至雲端服務"
 >abstract="概述建議的分階段方法，將客戶從各種Experience Manager部署過渡到Experience Manager，成為雲端服務，並協助現有客戶提供連通、連續的體驗"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en" text="新增功能與不同功能？"
@@ -101,6 +101,11 @@ Cloud Manager是Managed Services的選用內容傳送工具，是必要項。 �
 <br>
 
 ## 以雲端服務的身分移轉至Adobe Experience Manager {#move-to-cloud}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_move_to_cloud"
+>title="改用Adobe Experience Manager做為雲端服務"
+>abstract="此單頁機概述了將客戶從各種Experience Manager部署過渡到Experience Manager作為雲端服務的建議分階段方法，並幫助現有客戶在這個專為體驗管理而打造的現代化平台上提供連通、持續的體驗。"
 
 **Experience Manager作為雲端服務，為Experience Manager Sites和Assets提供可擴充、安全且靈活的技術基礎，讓行銷人員和IT專注於大規模提供具影響力的體驗。**
 
