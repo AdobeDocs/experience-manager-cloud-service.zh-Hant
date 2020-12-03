@@ -2,15 +2,20 @@
 title: 最佳實務分析器概述
 description: 最佳實務分析器概述
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 35%
+source-wordcount: '351'
+ht-degree: 29%
 
 ---
 
 
 # 概覽 {#overview-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_overview"
+>title="最佳實務分析器總覽"
+>abstract="The Best Practices Analyzer provides an assessment of your current AEM implementation by indiging areas not following AEM best practices. 此外，也提供採用AEM最佳實務之後續步驟的指引。 此外，它還有助於加速評估準備程度的流程，以便從現有的Adobe Experience Manager(AEM)部署移轉至AEM做為雲端服務。"
 
 The Best Practices Analyzer provides an assessment of your current AEM implementation by indiging areas not following AEM best practices. 此外，也提供採用AEM最佳實務之後續步驟的指引。 此外，它還有助於加速評估準備程度的流程，以便從現有的Adobe Experience Manager(AEM)部署移轉至AEM做為雲端服務。
 
