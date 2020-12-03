@@ -2,9 +2,9 @@
 title: 將內容片段與Adobe Experience Manager搭配以做為雲端服務圖表QL API進行內容傳送
 description: 瞭解如何搭配AEM GraphQL API將Adobe Experience Manager(AEM)中的內容片段用作雲端服務，以進行無頭內容傳送。
 translation-type: tm+mt
-source-git-commit: 1601d0ac5cd72ac53b810dd9891a6744adc1819e
+source-git-commit: 1e9596fb12a38f5c4c6e15d7c33af86e59e76083
 workflow-type: tm+mt
-source-wordcount: '2438'
+source-wordcount: '2491'
 ht-degree: 1%
 
 ---
@@ -625,3 +625,7 @@ query getAdventureByType($includePrice: Boolean!) {
 1. **問**:&quot;*GraphQL API for AEM與Query Builder API有何不同？*&quot;
 
    * **答**:「AEM *GraphQL API提供JSON輸出的完整控制，是查詢內容的業界標準。未來，AEM將計畫投資AEM GraphQL API。*&quot;
+
+## 教學課程- AEM Headless和GraphQL {#tutorial}快速入門
+
+正在尋找實作教學課程？ 請參閱[AEM無頭和GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)端對端教學課程，說明如何在無頭CMS案例中，使用AEM的GraphQL API建立和公開內容，並由外部應用程式使用。
