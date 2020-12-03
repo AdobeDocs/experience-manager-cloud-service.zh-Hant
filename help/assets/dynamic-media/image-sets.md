@@ -2,9 +2,9 @@
 title: 影像集
 description: 瞭解如何在動態媒體中處理影像集
 translation-type: tm+mt
-source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2070'
 ht-degree: 19%
 
 ---
@@ -81,9 +81,9 @@ ht-degree: 19%
 
 如果建立集時遇到問題，請參閱[ Troubleshooting Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)中的映像和集。
 
-## 上傳影像集{#uploading-assets-in-image-sets}中的資產
+## 上傳影像集{#uploading-assets-in-image-sets}的資產
 
-首先，上傳影像集的影像。 由於使用者可在影像集檢視器中放大影像，因此當您選擇影像時，請考慮放大影像。 請確定影像在最大尺寸中至少有2000像素，以獲得最佳縮放細節。 動態媒體可以每張轉換高達2500萬像素的影像。 例如，您可使用5000 x 5000百萬像素影像或任何其他大小的組合，最高2500萬像素。
+首先，上傳影像集的影像資產。 由於使用者可在影像集檢視器中放大影像，因此當您選擇影像時，請考慮放大影像。 請確定影像在最大尺寸中至少有2000像素，以獲得最佳縮放細節。 動態媒體可以每張轉換高達2500萬像素的影像。 例如，您可使用5000 x 5000百萬像素影像或任何其他大小的組合，最高2500萬像素。
 
 「影像集」支援許多影像檔案格式，但建議使用無損TIFF、PNG和EPS影像。
 
