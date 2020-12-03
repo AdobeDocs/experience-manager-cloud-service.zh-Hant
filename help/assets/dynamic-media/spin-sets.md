@@ -2,9 +2,9 @@
 title: 迴轉集
 description: 瞭解如何在動態媒體中處理回轉集
 translation-type: tm+mt
-source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1829'
 ht-degree: 12%
 
 ---
@@ -74,9 +74,9 @@ ht-degree: 12%
 
 如果需要，可以[編輯回轉集](#editing-spin-sets)。 此外，您還可以查看和修改[回轉集屬性](/help/assets/manage-digital-assets.md#editing-properties)。
 
-## 上傳回轉集的資產{#uploading-assets-for-spin-sets}
+## 上傳回轉集{#uploading-assets-for-spin-sets}的資產
 
-至少，一維自旋集需要8-12個項目鏡頭，二維自旋集需要16-24個項目鏡頭。 拍攝時間必須定期，以呈現項目旋轉和翻轉的印象。 例如，如果一維回轉集包含12個鏡頭，請針對每個鏡頭旋轉項目30度(360/12)。
+至少，一維回轉集需要8-12次拍攝項目。 拍攝時間必須定期，以呈現項目旋轉和翻轉的印象。 例如，如果一維回轉集包含12個鏡頭，請針對每個鏡頭旋轉項目30度(360/12)。
 
 您可以像[上傳AEM Assets](/help/assets/manage-digital-assets.md)中的任何其他資產一樣，上傳回轉集的影像。
 
