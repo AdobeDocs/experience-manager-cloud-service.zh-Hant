@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service 實作
 breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 translation-type: tm+mt
-source-git-commit: 4687054b049263c109591884a0368dfa76346298
+source-git-commit: 737c7473e97279a524cbb5809634c2c2dcfc8826
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '554'
 ht-degree: 54%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 54%
       + [自訂程式碼品質規則](cloud-manager/custom-code-quality-rules.md)
       + [功能測試](/help/implementing/cloud-manager/functional-testing.md)
       + [體驗審核測試](/help/implementing/cloud-manager/experience-audit-testing.md)
+      + [UI測試](/help/implementing/cloud-manager/ui-testing.md)
    + [存取和管理記錄檔](cloud-manager/manage-logs.md)
    + [了解通知](cloud-manager/notifications.md)
 + 管理程式碼 {#managing-code}
