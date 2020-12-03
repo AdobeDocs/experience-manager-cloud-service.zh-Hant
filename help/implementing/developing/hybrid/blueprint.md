@@ -2,7 +2,7 @@
 title: SPA藍圖
 description: 本檔案說明任何SPA架構在AEM中實施可編輯的SPA元件時，應履行的一般、不受架構影響的合約。
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: d70f531087cccd45793f091b9fab7e8a25143c1e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
