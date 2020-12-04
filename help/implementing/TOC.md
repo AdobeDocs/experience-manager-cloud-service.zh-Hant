@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service 實作
 breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 translation-type: tm+mt
-source-git-commit: 737c7473e97279a524cbb5809634c2c2dcfc8826
+source-git-commit: fd3ab969d9fb433ca2db68a5919fd0a0e9181e14
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 54%
+source-wordcount: '567'
+ht-degree: 53%
 
 ---
 
@@ -65,6 +65,10 @@ ht-degree: 54%
          + [使用隱藏條件](developing/components/hide-conditions.md)
       + [AEM標籤架構](/help/implementing/developing/introduction/tagging-framework.md)
       + [建立標籤至AEM應用程式](/help/implementing/developing/introduction/tagging-applications.md)
+      + 搜尋 {#search}
+         + [Query Builder API](/help/implementing/developing/introduction/query-builder-api.md)
+         + [Query Builder Predicate Reference](/help/implementing/developing/introduction/query-builder-predicates.md)
+         + [實作自訂謂詞評估器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
    + Hybrid AEM Development {#hybrid}
       + [Hybrid與SPA搭配AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [為元件啟用JSON匯出](developing/components/enabling-json-exporter.md)
