@@ -1,12 +1,12 @@
 ---
 title: 如何編輯或新增中繼資料
-description: 瞭解AEM Assets中的資產中繼資料，以及編輯資產中繼資料的各種方式。
+description: 以 [!DNL Experience Manager Assets] 瞭解資產中繼資料，並透過各種方式編輯資產中繼資料。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 7%
+source-wordcount: '422'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 中繼資料是可搜尋之資產的其他資訊。 上傳影像時會自動擷取。 您可以編輯現有的中繼資料，或將新的中繼資料屬性新增至現有欄位（例如，中繼資料欄位空白時）。
 
-由於公司需要可控且可靠的中繼資料辭彙，AEM Assets不允許臨機新增中繼資料屬性。 雖然作者無法為資產新增中繼資料欄位，但開發人員可以。 請參閱[建立資產的新中繼資料屬性](meta-edit.md#editing-metadata-schema)。
+由於公司需要可控且可靠的中繼資料辭彙，[!DNL Experience Manager Assets]不允許臨機新增中繼資料屬性。 雖然作者無法為資產新增中繼資料欄位，但開發人員可以。 請參閱[建立資產的新中繼資料屬性](meta-edit.md#editing-metadata-schema)。
 
 ## 編輯資產{#editing-metadata-for-an-asset}的中繼資料
 
