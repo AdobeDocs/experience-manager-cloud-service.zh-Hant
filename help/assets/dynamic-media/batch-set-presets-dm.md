@@ -3,7 +3,7 @@ title: 批次集預設集
 description: 瞭解如何使用動態媒體中的批次集預設集自動建立影像集和回轉集。
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
+source-git-commit: c7a2fbb4fa6e81caabab829b876741ecf393a2c3
 workflow-type: tm+mt
 source-wordcount: '3521'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 1. 建立批次集預設集。 請參閱[為影像集或回轉集建立批次集預設集](#creating-bsp)。
 1. 建立新資產資料夾或使用現有的資產資料夾，並確定它已同步至[!DNL Dynamic Media]。 請參閱[建立資料夾](/help/assets/manage-digital-assets.md#creating-folders)。
 1. 將批集預設套用至資產檔案夾。 請參閱[關於將批集預設集套用至資料夾](#apply-bsp)。
-1. 上傳影像至資產檔案夾。 請參閱[上傳影像集的資產](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets)、[上傳回轉集的資產](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets)或[將數位資產新增至Adobe Experience Manager](#add-assets-to-experience-manager)。
+1. 上傳影像至資產檔案夾。 請參閱[上傳影像集的資產](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets)、[上傳回轉集的資產](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets)或[將數位資產新增至Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager)。
 1. 建立影像集或回轉集。 請參閱[影像集](/help/assets/dynamic-media/image-sets.md)或[回轉集](/help/assets/dynamic-media/spin-sets.md)。
 1. 發佈影像集或回轉集。 請參閱[發佈動態媒體資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
