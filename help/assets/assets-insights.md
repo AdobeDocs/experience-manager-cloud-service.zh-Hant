@@ -3,10 +3,10 @@ title: 資產 Insights
 description: 瞭解「資產前瞻分析」功能如何讓您追蹤第三方網站、行銷宣傳和Adobe創意解決方案所使用影像的使用者評分和使用統計資料。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -70,44 +70,47 @@ Assets Insights會擷取使用者活動詳細資訊，例如影像被評等、�
 1. 點選／按一下工具列中的「版面」圖示，然後選擇&#x200B;**[!UICONTROL 前瞻分析檢視]**。
 1. 頁面會顯示資產的使用分數。 比較各種資產的評分並獲取見解。
 
-## 排程背景工作{#scheduling-background-job}
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
-「資產前瞻分析」會定期從Adobe Analytics報表套裝擷取資產的使用資料。 根據預設，資產前瞻分析會每24小時在2 AM執行一次背景工作，以擷取資料。 不過，您可以從Web主控台設定&#x200B;**[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**&#x200B;服務，以修改頻率和時間。
+## Schedule background job {#scheduling-background-job}
 
-1. 點選AEM標誌，並前往「工 **[!UICONTROL 具]** > **[!UICONTROL 作業]** > **[!UICONTROL Web Console]**」。
-1. 開啟&#x200B;**[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**&#x200B;服務設定。
+Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
+
+1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. 在屬性調度器表達式中指定所需的調度器頻率和作業的啟動時間。 儲存變更。
+1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.
+-->
 
 ## 設定資產分析{#configure-asset-insights}
 
-Adobe Experience Manager(AEM)Assets會從Adobe Analytics擷取協力廠商網站所使用之AEM資產的使用資料。 若要讓「資產前瞻分析」擷取此資料並產生前瞻分析，請先設定功能以與Adobe Analytics整合。
+[!DNL Experience Manager Assets] 從中擷取協力廠商網站使用之數位資產的使用資料 [!DNL Adobe Analytics]。若要讓「資產前瞻分析」擷取此資料並產生前瞻分析，請先設定功能以與[!DNL Adobe Analytics]整合。
 
 >[!NOTE]
 >
 >只有影像才支援並提供見解。
 
-1. 在 AEM 中，按一下&#x200B;**[!UICONTROL 「工具」]**>**[!UICONTROL 「資產」]**。
+1. 在[!DNL Experience Manager]中，按一下&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]**。
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
 1. 按一下「 **[!UICONTROL 前瞻分析設定]** 」資訊卡。
 1. 在精靈中，選取資料中心並提供您的認證，包括您的組織名稱、使用者名稱和共用密碼。
 
-   ![在AEM中設定Adobe Analytics的資產見解](assets/insights_config2.png)
+   ![設定Adobe Analytics的資產分析，位於  [!DNL Experience Manager]](assets/insights_config2.png)
 
-   *圖：在AEM中設定Adobe Analytics的資產見解*
+   *圖：設定Adobe Analytics的資產分析，位於[!DNL Experience Manager]*
 
-1. 按一下/點選「 **[!UICONTROL 驗證]**」。AEM驗證您的認證後，從&#x200B;**[!UICONTROL 報表套裝]**&#x200B;清單中，選擇Adobe Analytics報表套裝，讓您從中擷取資產分析。 按一下&#x200B;**[!UICONTROL 「新增」]**。
-1. AEM設定您的報表套裝後，請點選&#x200B;**[!UICONTROL Done]**。
+1. 按一下/點選「 **[!UICONTROL 驗證]**」。在[!DNL Experience Manager]驗證您的認證後，從&#x200B;**[!UICONTROL 報表套裝]**&#x200B;清單中，選擇Adobe Analytics報表套裝，讓資產前瞻分析擷取資料。 按一下&#x200B;**[!UICONTROL 「新增」]**。
+1. 在[!DNL Experience Manager]設定報表套裝後，點選&#x200B;**[!UICONTROL Done]**。
 
 ### 頁面追蹤器{#page-tracker}
 
-在您設定Adobe Analytics帳戶後，就會產生頁面追蹤器代碼。 若要啟用「資產前瞻分析」來追蹤協力廠商網站中使用的AEM資產，請在網站程式碼中加入頁面追蹤器程式碼。 使用AEM Assets中的「頁面追蹤器」公用程式來產生頁面追蹤器代碼。<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+在您設定Adobe Analytics帳戶後，就會產生頁面追蹤器代碼。 若要啟用「資產前瞻分析」來追蹤第三方網站中使用的[!DNL Experience Manager]資產，請在網站程式碼中加入頁面追蹤器程式碼。 使用資產中的頁面追蹤器公用程式，產生頁面追蹤器代碼。<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. 在 AEM 中，按一下&#x200B;**[!UICONTROL 「工具」]**>**[!UICONTROL 「資產」]**。
+1. 在[!DNL Experience Manager]中，按一下&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]**。
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -121,7 +124,7 @@ Adobe Experience Manager(AEM)Assets會從Adobe Analytics擷取協力廠商網站
 Using the demo package, you can enable Adobe Asset Insights to capture data from and generate insights for a sample web page.
 
 1. Configure Asset Insights using the instructions in [Configure Asset Insights](#configure-asset-insights).
-1. Download the sample AEM Assets package from below and install the package from CRXDE package manager.
+1. Download the sample [!DNL Experience Manager Assets] package from below and install the package from CRXDE package manager.
 
    [Get File](assets/insightsdemo.zip)
 
@@ -137,6 +140,6 @@ Using the demo package, you can enable Adobe Asset Insights to capture data from
 
    >[!NOTE]
    >
-   >The external web page can be in AEM itself.
+   >The external web page can be in [!DNL Experience Manager] itself.
 
 -->
