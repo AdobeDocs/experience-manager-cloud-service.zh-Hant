@@ -3,9 +3,9 @@ title: 下載資產
 description: 從 [!DNL Adobe Experience Manager Assets] 下載資產，並啟用或停用下載功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 4%
 * [品牌入口網站](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## 使用AEM介面{#download-in-aem}下載資產
+## 使用[!DNL Experience Manager]介面{#download-in-aem}下載資產
 
 非同步下載服務提供架構，可順暢地下載大型資產。 從使用者介面即時下載較小的檔案。 大型檔案會非同步下載，而且使用者會透過收件匣中的Experience Manager通知得知完成。 請參閱[瞭解Experience Manager inbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)。
 
