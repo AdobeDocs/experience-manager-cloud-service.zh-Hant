@@ -2,10 +2,10 @@
 title: 資產a [!DNL Cloud Service] 指南
 description: Adobe Experience Manager Assets作為 [!DNL Cloud Service] 自助資源和檔案連結
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 36%
+source-wordcount: '305'
+ht-degree: 35%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 36%
 | [實作使用指南](/help/implementing/home.md) | 自訂、開發及部署 Experience Manager as a [!DNL Cloud Service]. |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器整合至 Experience Manager as a [!DNL Cloud Service]. |
 | [操作使用手冊](/help/operations/home.md) | 瞭解Experience Manager的後端操作[!DNL Cloud Service]，例如索引和維護任務。 |
-| [商務使用指南](/help/commerce-cloud/home.md) | 瞭解Commerce Integration Framework on AEM as a [!DNL Cloud Service]。 |
+| [商務使用指南](/help/commerce-cloud/home.md) | 瞭解[!DNL Experience Manager]上的Commerce Integration Framework as a [!DNL Cloud Service]。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
@@ -48,4 +48,4 @@ ht-degree: 36%
 * [GDPR 整備](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager教學課 [!DNL Cloud Service] 程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
-* [AEM 社群論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+* [[!DNL Experience Manager] 社群論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
