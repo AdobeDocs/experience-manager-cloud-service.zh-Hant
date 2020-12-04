@@ -3,9 +3,9 @@ title: 配置和使用資產微服務
 description: 設定並使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2511'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 若是需要額外處理無法使用處理設定檔的資產，則可新增其他後處理工作流程至設定。 這允許在使用資產微服務的可配置處理之上添加完全自定義的處理。
 
-若已設定後置處理工作流程，AEM會在微型服務處理完成後自動執行。 您不需要手動新增工作流程啟動器來觸發它們。 範例包括：
+若已設定後處理工作流程，則會在微型服務處理完成後由[!DNL Experience Manager]自動執行。 您不需要手動新增工作流程啟動器來觸發它們。 範例包括：
 
 * 處理資產的自訂工作流程步驟。
 * 整合，將中繼資料或屬性新增至外部系統的資產，例如產品或流程資訊。
@@ -195,7 +195,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ### 建立後處理工作流程模型{#create-post-processing-workflow-models}
 
-後處理工作流程模型是一般的AEM工作流程模型。 如果您需要針對不同儲存庫位置或資產類型進行不同的處理，請建立不同的模型。
+後處理工作流模型是常規的[!DNL Experience Manager]工作流模型。 如果您需要針對不同儲存庫位置或資產類型進行不同的處理，請建立不同的模型。
 
 應根據需求新增處理步驟。 您可以使用任何支援的步驟，以及任何自訂實作的工作流程步驟。
 
@@ -213,13 +213,13 @@ The following video demonstrates the usefulness and usage of standard profile.
 >[!NOTE]
 >
 >「自訂工作流程執行者」的設定是OSGi服務的設定。 如需如何部署OSGi組態的詳細資訊，請參閱[部署至Experience Manager](/help/implementing/deploying/overview.md)。
->OSGi Web主控台與AEM的內部部署和受管理服務部署不同，不直接在雲端服務部署中提供。
+>與[!DNL Experience Manager]的內部部署和受管服務部署不同，雲端服務部署不直接提供OSGi Web控制台。
 
 如需後處理工作流程中可使用哪些標準工作流程步驟的詳細資訊，請參閱開發人員參考中後處理工作流程中的[工作流程步驟。](developer-reference-material-apis.md#post-processing-workflows-steps)
 
 ## 最佳做法和限制{#best-practices-limitations-tips}
 
-* 在設計工作流程時，請考慮您對所有類型轉譯的需求。 如果您未預見未來需要轉譯，請從工作流程中移除其建立步驟。 之後無法大量刪除轉譯。 長期使用[!DNL Experience Manager]後，不需要的轉譯可能佔用大量儲存空間。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自訂[!DNL Experience Manager]以刪除特定轉譯，或刪除資產並再次上傳這些資產。
+* 設計工作流程時，請考慮您對所有類型轉譯的需求。 如果您未預見未來需要轉譯，請從工作流程中移除其建立步驟。 之後無法大量刪除轉譯。 長期使用[!DNL Experience Manager]後，不需要的轉譯可能佔用大量儲存空間。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自訂[!DNL Experience Manager]以刪除特定轉譯，或刪除資產並再次上傳這些資產。
 * 目前，支援僅限於產生轉譯。 不支援產生新資產。
 
 >[!MORELIKETHIS]
