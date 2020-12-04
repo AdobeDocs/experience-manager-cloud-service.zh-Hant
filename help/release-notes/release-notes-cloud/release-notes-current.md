@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1269'
 ht-degree: 3%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 3%
 
 * **[啟動階層管理](/help/sites-cloud/authoring/launches/managing-pages.md) 與未 [來時間彎曲](/help/sites-cloud/authoring/launches/preview.md)**:新的UI可在啟動中新增／移除頁面，而具有「時間彎曲」的瀏覽網站則會顯示啟動的未來狀態。
 
-* **排序可開始使用的即時副本頁面**:新選項，可使用「名稱」、「上次修改日期」和「上次轉出日期屬性 [!UICONTROL 」來排序可]轉出的「即時復   制」頁面。頁面的[!UICONTROL 上次推出日期]是引入的新屬性。
+* **[延伸內容片段模型與編輯器](/help/assets/content-fragments/content-fragments-models.md)**:針對各種資料類型提供新的輸入驗證選項、改良的列舉資料類型及新的表單視覺化，以及「資產」使用者介面中顯示和可搜尋的內容片段模型名稱。
 
-<!--- * **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI. --->
+* **排序可開始使用的即時副本頁面**:新選項，可使用「名稱」、「上次修改日期」和「上次轉出日期屬性 [!UICONTROL 」來排序可]轉出的「即時復   制」頁面。頁面的[!UICONTROL 上次推出日期]是引入的新屬性。
 
 ## [!DNL Adobe Experience Manager Assets] 雲端服務  {#assets}
 
