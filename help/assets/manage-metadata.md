@@ -4,10 +4,10 @@ description: '瞭解中繼資料的類型，以及如何根據資產的中繼資
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 4%
+source-wordcount: '1850'
+ht-degree: 3%
 
 ---
 
@@ -152,13 +152,16 @@ Enterprise Manager Assets可讓您同時編輯多個資產的中繼資料，以�
 >
 >只能將一個處理設定檔套用至資料夾。 若要對資料夾中的資產套用多個處理，請新增更多選項至單一處理設定檔。 例如，單一描述檔可產生轉譯、轉碼資產、產生自訂中繼資料等。 您可以對每個任務應用MIME類型篩選器，以便根據所需的檔案格式觸發相應的任務。
 
-## 設定大量中繼資料更新的限制{#configlimit}
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
-為避免DOS狀況，AEM會限制Sling請求中支援的參數數。 一次更新許多資產的中繼資料時，您可能會達到限制，而且無法針對更多資產更新中繼資料。 AEM會在記錄檔中產生下列警告：
+## Configure limit for bulk metadata update {#configlimit}
+
+To prevent DOS-like situation, [!DNL Experience Manager] limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. [!DNL Experience Manager] generates the following warning in the logs:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-若要變更限制，請存取Web Console( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**)並變更 **[!UICONTROL Apache Sling Parameters Request Apache Handling Osgi Configuration的]****** Maximum POST Parameters Praters Aremeters的值。
+To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
+-->
 
 ## 中繼資料圖式{#metadata-schemata}
 
