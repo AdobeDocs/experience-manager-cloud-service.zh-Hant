@@ -4,9 +4,9 @@ description: 瞭解Adobe Experience Manager Assets中的收集概念。 瞭解�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2401'
+source-wordcount: '2396'
 ht-degree: 20%
 
 ---
@@ -140,7 +140,7 @@ ht-degree: 20%
 
 ### 搜尋系列{#search-collections}
 
-您可以從「系列」主控台搜尋系列。 當您在Omnisearch方塊中搜尋關鍵字時，AEM Assets會搜尋系列名稱、中繼資料和新增至系列的標籤。
+您可以從「系列」主控台搜尋系列。 當您在Omnisearch方塊中搜尋關鍵字時，[!DNL Experience Manager Assets]會搜尋系列名稱、中繼資料和新增至系列的標籤。
 
 如果您從頂層搜尋系列，搜尋結果中只會傳回個別的系列。 系列中的資產或檔案夾會被排除。 在所有其他情況下（例如，在個別系列或檔案夾階層中），會傳回所有相關資產、檔案夾和系列。
 
@@ -148,7 +148,7 @@ ht-degree: 20%
 
 在「系列」控制台中，點選／按一下系列以開啟它。
 
-在系列中，AEM Asset搜尋會限制為您所檢視之系列中的資產（及其標籤和中繼資料）。 當您在資料夾內搜尋時，會傳回目前資料夾內所有相符的資產和子資料夾。 當您在系列中搜尋時，只會傳回符合的資產、檔案夾和其他系列，這些系列是系列的直接成員。
+在系列中，[!DNL Experience Manager]搜尋會限制在您檢視之系列中的資產（及其標籤和中繼資料）。 當您在資料夾內搜尋時，會傳回目前資料夾內所有相符的資產和子資料夾。 當您在系列中搜尋時，只會傳回符合的資產、檔案夾和其他系列，這些系列是系列的直接成員。
 
 ## 編輯系列設定{#edit-collection-settings}
 
@@ -179,7 +179,7 @@ ht-degree: 20%
 
 ## 編輯多個系列的中繼資料屬性{#editing-metadata-properties-of-multiple-collections}
 
-Adobe Enterprise Manager(AEM)Assets可讓您大量編輯許多系列的中繼資料。 使用[!UICONTROL 屬性]頁面對多個系列執行中繼資料變更，例如將中繼資料屬性變更為公用值，或新增或修改標籤。
+Adobe Enterprise Manager Assets可讓您大量編輯許多系列的中繼資料。 使用[!UICONTROL 屬性]頁面對多個系列執行中繼資料變更，例如將中繼資料屬性變更為公用值，或新增或修改標籤。
 
 要自定義元資料[!UICONTROL 屬性]頁，包括添加、修改、刪除元資料屬性，請使用模式編輯器。
 
