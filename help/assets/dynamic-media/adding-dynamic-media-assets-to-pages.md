@@ -1,10 +1,10 @@
 ---
 title: 新增動態媒體資產至頁面
-description: 如何在AEM中將Dynamic Media元件新增至頁面
+description: 如何在Experience Manager中將Dynamic Media元件新增至頁面
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
 workflow-type: tm+mt
-source-wordcount: '3121'
+source-wordcount: '3134'
 ht-degree: 8%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 8%
 
 若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360全景媒體元件。若要這麼做，請進入「版面」模式並啟用「動態媒體」元件。然後，您可以將這些元件新增至頁面，並新增資產至元件。動態媒體元件是智慧型的——他們知道您是新增影像還是視訊，而可用的設定選項也會隨之變更。
 
-如果您使用AEM做為WCM，請直接將動態媒體資產新增至頁面。如果您使用協力廠商來處理WCM，請連結 [或](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[內嵌資](/help/assets/dynamic-media/embed-code.md) 產。如需多方互動網站，請參閱將最佳化 [的影像傳送至多方互動網站](/help/assets/dynamic-media/responsive-site.md)。
+如果您使用Experience Manager做為WCM，則直接將Dynamic Media資產新增至頁面。 如果您使用協力廠商來處理WCM，請連結 [或](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[內嵌資](/help/assets/dynamic-media/embed-code.md) 產。如需多方互動網站，請參閱將最佳化 [的影像傳送至多方互動網站](/help/assets/dynamic-media/responsive-site.md)。
 
 >[!NOTE]
 >
->您必須先發佈資產，才能將資產新增至AEM中的頁面。 請參閱[發佈動態媒體資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+>您必須先發佈資產，才能將資產新增至Experience Manager中的頁面。 請參閱[發佈動態媒體資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 新增動態媒體元件至頁面{#adding-a-dynamic-media-component-to-a-page}
 
@@ -26,7 +26,7 @@ ht-degree: 8%
 
 **新增動態媒體元件至頁面**
 
-1. 在AEM中，開啟您要新增動態媒體元件的頁面。
+1. 在Experience Manager中，開啟您要新增動態媒體元件的頁面。
 1. 在左窗格中，點選&#x200B;**[!UICONTROL 元件]**&#x200B;圖示，然後篩選動態媒體。
 
    如果沒有可用的動態媒體元件清單，您可能需要啟用您要使用的動態媒體元件。 請參閱[啟用動態媒體元件](#enabling-dynamic-media-components)。
@@ -53,7 +53,7 @@ ht-degree: 8%
 
 如果沒有可新增至頁面的動態媒體元件，可能表示您必須先啟用要使用的元件。
 
-1. 在AEM中，開啟您要新增動態媒體元件的頁面。
+1. 在Experience Manager中，開啟您要新增動態媒體元件的頁面。
 1. 在工具列的靠近頁面頂端的左側，點選「頁面資訊」圖示，然後從下拉式清單中點選「編輯範本」。****
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -103,7 +103,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->這些元件預設不可用，在使用之前必須先透過範本編輯器提供。 在範本編輯器中提供這些元件後，您就可像新增其他AEM元件一樣，將元件新增至您的頁面。
+>這些元件預設不可用，在使用之前必須先透過範本編輯器提供。 在範本編輯器中提供這些元件後，您就可以像新增任何其他Experience Manager元件一樣，將元件新增至頁面。
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -210,7 +210,7 @@ ht-degree: 8%
 
 使用動態媒體元件將智慧型裁切影像資產新增至您的網頁。 當您編輯元件時，您可以選擇使用預先定義的視訊檢視器預設集來播放頁面上的視訊。
 
-請參閱[搭配使用智慧型裁切與AEM Assets動態媒體](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
+請參閱[搭配使用智慧型裁切與Experience Manager資產動態媒體](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 
 另請參閱[映像配置檔案](/help/assets/dynamic-media/image-profiles.md)。
 
@@ -337,10 +337,10 @@ HTTP/2是全新、更新的Web通訊協定，可改善瀏覽器和伺服器的�
 
 >[!MORELIKETHIS]
 >
->* [在AEM Dynamic Media中使用視訊播放器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [搭配AEM Dynamic Media使用互動式視訊](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [使用AEM Dynamic Media瞭解資產檢視器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [搭配AEM Dynamic Media使用自訂視訊縮圖](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [瞭解使用AEM Dynamic Media進行色彩管理](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [搭配AEM Dynamic Media使用影像銳利化](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [在Experience Manager Dynamic Media中使用視訊播放器](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [將互動式視訊與Experience Manager Dynamic Media搭配使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [使用Experience Manager Dynamic Media瞭解Asset Viewer](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [搭配Experience Manager Dynamic Media使用自訂視訊縮圖](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [使用Experience Manager Dynamic Media瞭解色彩管理](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [搭配Experience Manager Dynamic Media使用影像銳利化](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
