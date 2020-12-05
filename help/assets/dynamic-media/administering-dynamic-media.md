@@ -2,9 +2,9 @@
 title: 設定動態媒體
 description: 若要設定動態媒體，您必須設定動態媒體並管理影像和檢視器預設集
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '175'
 ht-degree: 3%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->This documentation describes Dynamic Media capabilites, which are integrated directly into AEM. If you are using Dynamic Media Classic (previously called Scene7) integrated into AEM, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
+>This documentation describes Dynamic Media capabilites, which are integrated directly into Experience Manager. If you are using Dynamic Media Classic (previously called Scene7) integrated into Experience Manager, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
 >
->See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use AEM integrated with Dynamic Media Classic along with Dynamic Media.
+>See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use Experience Manager integrated with Dynamic Media Classic along with Dynamic Media.
 
 -->
 
@@ -40,4 +40,4 @@ ht-degree: 3%
 >
 >**如果您要升級：**
 >
->* 在您啟動並執行AEM後，您上傳的任何資產都會自動啟用動態媒體（除非系統管理員已明確停用它）。 如果您是AEM的升級執行個體，而且是Dynamic Media的新手，您可能需要重新處理資產，才能啟用動態媒體。
+>* 在您啟動並執行Experience Manager後，您上傳的任何資產都會自動啟用動態媒體（除非系統管理員明確停用它）。 如果您是Experience Manager的升級實例，而且是Dynamic Media的新手，則可能需要重新處理資產，才能啟用動態媒體。
