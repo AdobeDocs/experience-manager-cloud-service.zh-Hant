@@ -2,9 +2,9 @@
 title: 影片
 description: 瞭解如何在動態媒體中處理視訊
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '10056'
+source-wordcount: '10081'
 ht-degree: 10%
 
 ---
@@ -146,7 +146,7 @@ Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品�
 * 使用完整的中繼資料支援來組織、瀏覽和搜尋視訊，以有效管理視訊資產。
 * 將最適化視訊集發佈至網路以及桌上型電腦和行動裝置，包括iPhone、iPad、Android、Blackberry和Windows手機。
 
-多種iOS平台都支援最適化視訊串流。 請參閱[Scene7檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)。
+多種iOS平台都支援最適化視訊串流。 請參閱[動態媒體檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)。
 
 Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可以在以下位置找到支援此視訊格式的Blackberry裝置：[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)上支援的視訊格式。
 
@@ -162,7 +162,7 @@ Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可以在以下位
 
 請參閱[動態視訊播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)範例。
 
-另請參閱Adobe Scene7檢視器參考指南中的「AEM和Scene7的檢視器」[和「僅AEM資產的檢視器」](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)。](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html)[
+另請參閱[動態媒體檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的[「AEM資產的檢視器」和「動態媒體經典](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)和[「AEM資產的檢視器」。](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)
 
 ## 最佳實務：使用HTML5視訊檢視器{#best-practice-using-the-html-video-viewer}
 
@@ -174,7 +174,7 @@ Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可以在以下位
 
 結合單一播放器，即可設計使用HTML5和CSS的播放元件、內嵌播放，並視瀏覽器功能而使用可調式和漸進式串流，讓您將豐富型媒體內容的觸及面擴展至案頭和行動使用者，並確保簡化視訊體驗。
 
-另請參閱Adobe Scene7檢視器參考指南中的[關於HTML5檢視器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)。
+另請參閱[動態媒體檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的[僅限AEM資產的檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)。
 
 ### 使用HTML5視訊檢視器{#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}在桌上型電腦和行動裝置上播放視訊
 
@@ -191,7 +191,7 @@ HLS是Apple自適應視訊串流的標準，可根據網路頻寬容量自動調
 
 漸進式視訊是透過在使用者的案頭系統或行動裝置上下載並儲存視訊來傳送。
 
-下表說明使用Scene7 Video Viewer在桌上型電腦和行動裝置上播放視訊的裝置、瀏覽器和播放方法。
+下表說明使用[動態媒體HTML5視訊檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video)在桌上型電腦和行動裝置上播放視訊的裝置、瀏覽器和播放方法。
 
 <table>
  <tbody>
@@ -355,7 +355,7 @@ VBR編碼時間較長，但結果最好；媒體檔案的品質更優越。 VBR�
 
 ### 解析度 {#resolution}
 
-**解析度**說明視訊檔案的高度和寬度（以像素為單位）。 大部分來源視訊都以高解析度儲存（例如1920 x 1080）。 為了串流目的，來源視訊會壓縮成較小的解析度（640 x 480或更小）。
+**解** 析度描述視訊檔案的高度和寬度（以像素為單位）。大部分來源視訊都以高解析度儲存（例如1920 x 1080）。 為了串流目的，來源視訊會壓縮成較小的解析度（640 x 480或更小）。
 
 解析度和資料速率是決定視訊品質的兩個整體連結因素。 若要維持相同的視訊品質，視訊檔案中的像素數目愈高（解析度愈高），資料速率就愈高。 例如，請考慮320 x 240解析度和640 x 480解析度視訊檔案中每個影格的像素數：
 
@@ -404,7 +404,7 @@ VBR編碼時間較長，但結果最好；媒體檔案的品質更優越。 VBR�
 |--- |--- |--- |--- |
 | 來源 | 1920x1080 | 1 | 3 |
 | 編碼 | 960 x 540 | 2 | 2 |
-| 編碼 | 640 x 360 | 3 | 1 |
+| 編碼 | 640 x 360 | 3 | 3 |
 | 編碼 | 480 x 270 | 4 | 4 |
 
 ### 編碼視訊檔案格式{#encoded-video-file-format}
@@ -983,13 +983,13 @@ For YouTube publishing jobs, do the following:
 
 1. 在列出熱門發佈影片的表格中，點選影片名稱以播放影片，並檢視影片的觀眾保留（下拉式）報表。
 
-### 根據您使用Scene7 HMTL5檢視器SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}建立的視訊檢視器來檢視視訊報表
+### 根據您使用Dynamic Media HTML5檢視器SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}建立的視訊檢視器來檢視視訊報表
 
-如果您使用動態媒體提供的現成可用的視訊檢視器，或是您根據現成可用的視訊檢視器建立自訂的檢視器預設集，則不需執行其他步驟即可檢視視訊報表。 不過，如果您已根據Scene7 HTML5檢視器SDK建立自己的視訊檢視器，請使用下列步驟來確保您的視訊檢視器將追蹤事件傳送至動態媒體視訊報表。
+如果您使用動態媒體提供的現成可用的視訊檢視器，或是您根據現成可用的視訊檢視器建立自訂的檢視器預設集，則不需執行其他步驟即可檢視視訊報表。 不過，如果您已根據Dynamic Media HTML5檢視器SDK建立自己的視訊檢視器，請使用下列步驟來確保您的視訊檢視器將追蹤事件傳送至動態媒體視訊報表。
 
-使用Scene7檢視器參考和Scene7 HTML5檢視器SDK來建立您自己的視訊檢視器。
+使用「動態媒體檢視器參考」和「動態媒體HTML5檢視器SDK」來建立您自己的視訊檢視器。
 
-請參閱[Scene7檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。
+請參閱[動態媒體檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en)。
 
 <!-- 
 
@@ -1001,7 +1001,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 -->
 
-若要根據您使用Scene7 HTML5檢視器SDK建立的視訊檢視器來檢視視訊報表：
+**若要根據您使用Dynamic Media HTML5檢視器SDK建立的視訊檢視器來檢視視訊報表：**
 
 1. 導覽至任何已發佈的視訊資產。
 1. 在資產頁面的左上角附近，從下拉式清單中選取「檢 **[!UICONTROL 視器]**」。
@@ -1061,9 +1061,9 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 Dynamic Media可將標題檔案轉換為JSON（JavaScript物件註解）格式。 此轉換表示您可將JSON文字內嵌至網頁，做為視訊的隱藏但完整記錄。 然後搜尋引擎可以搜尋並索引內容，讓影片更容易被發現，並提供客戶有關視訊內容的其他詳細資訊。
 
-如需在URL中使用JSON函式的詳細資訊，請參閱&#x200B;*Scene7 Image Serving API說明*&#x200B;中的[伺服靜態（非影像）內容](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html)。
+如需在URL中使用JSON函式的詳細資訊，請參閱[伺服靜態（非影像）內容](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)。
 
-**若要在視訊中新增標題或字幕**
+**若要在視訊中新增標題或字幕：**
 
 1. 使用協力廠商應用程式或服務來建立您的視訊標題／字幕檔案。
 
@@ -1101,7 +1101,7 @@ Dynamic Media可將標題檔案轉換為JSON（JavaScript物件註解）格式�
 
       請注意標題路徑結尾的`,1`。 緊接在路徑中的。vtt副檔名後，您可以選擇分別設定為`,1`或`,0`，以啟用（開啟）或停用（關閉）視訊播放器列上的隱藏字幕按鈕。
 
-   * 如需內嵌的視訊檢視器體驗，請點選「內嵌代碼」。 ]****[!UICONTROL &#x200B;在「內嵌代碼」對話方塊中，選取內嵌代碼並將其複製至剪貼簿，然後將代碼貼入簡單的文字編輯器中。 以下列語法附加複製的內嵌代碼：
+   * 如需內嵌的視訊檢視器體驗，請點選「內嵌代碼」。 ]****[!UICONTROL &#x200B;在「內嵌代碼」對話方塊中，選取內嵌代碼並將它複製至剪貼簿，然後將代碼貼入簡單的文字編輯器。 以下列語法附加複製的內嵌代碼：
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
