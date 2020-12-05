@@ -4,13 +4,13 @@ seo-title: 在動態媒體中使用3D資產
 description: 瞭解如何在動態媒體中使用3D資產
 seo-description: 瞭解如何在動態媒體中使用3D資產
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
+source-git-commit: 72bf52ca97b9c3cac84361207e53093fc69c0b43
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2287'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 * 按一下3D資產的發佈（使用工具列上的&#x200B;**[!UICONTROL Quick Publish]**）以產生URL。
 * 使用Adobe Dimension提供的高品質互動式Dimensional檢視器預設集，最佳化3D資產檢視支援。
-* 3D Media WCM元件可讓您輕鬆將3D資產新增至AEM Sites頁面。
+* 3D Media WCM元件可讓您輕鬆將3D資產新增至Experience Manager Sites頁面。
 
 在動態媒體中使用3D資產不需要額外安裝。
 
@@ -47,7 +47,7 @@ Dynamic Media支援下列3D檔案格式。
 
 下列逐步工作流程說明旨在協助您在動態媒體中快速啟動並執行3D資產。
 
-在您使用Dynamic Media中的3D資產之前，請確定您的AEM管理員已啟用並設定Dynamic Media Cloud Services。
+在Dynamic Media中處理3D資產之前，請確定您的Experience Manager管理員已啟用並設定Dynamic Media Cloud服務。
 
 請參閱[設定動態媒體雲端服務。](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
 
@@ -104,11 +104,11 @@ Dynamic Media支援下列3D檔案格式。
 
 **若要從資產詳細資訊頁面檢視並與3D資產互動**
 
-1. 請確定您已將3D資產上傳至AEM。
+1. 請確定您已將3D資產上傳至Experience Manager。
 
    請參閱[上傳您的3D資產以用於動態媒體。](/help/assets/add-assets.md#upload-assets)
 
-1. 從AEM，在&#x200B;**[!UICONTROL Navigation]**&#x200B;頁面上，點選&#x200B;**[!UICONTROL Assets > Files]**。
+1. 在Experience Manager的&#x200B;**[!UICONTROL Navigation]**&#x200B;頁面上，點選「**[!UICONTROL 資產>檔案]**」。
 1. 在頁面的右上角附近，從&#x200B;**[!UICONTROL View]**&#x200B;下拉式清單中，點選&#x200B;**[!UICONTROL Card View]**。
 1. 導覽至您要檢視的3D資產。
 1. 點選3D資產的資訊卡，以在資產詳細資訊頁面中開啟它。
@@ -170,7 +170,7 @@ Dynamic Media支援下列3D檔案格式。
 
 ## 關於使用3D介質元件{#working-with-three-d-media-component}
 
-Dynamic Media包含Dynamic Media 3D Media元件，您可在AEM Sites中使用此元件，以在網頁上互動檢視3D模型。
+Dynamic Media包含動態媒體3D媒體元件，您可在Experience Manager Sites中使用此元件，以互動方式檢視網頁上的3D模型。
 
 * [將3D媒體元件新增至頁面範本](#adding-three-d-media-component-to-page-template)
 * [將3D媒體元件新增至網頁](#adding-the-three-d-media-component-to-a-web-page)
@@ -200,7 +200,7 @@ Dynamic Media包含Dynamic Media 3D Media元件，您可在AEM Sites中使用此
 
 另請參閱[新增動態媒體資產至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-1. 開啟「AEM網站」，並選取您要新增Dynamic Media 3D Media元件的網頁。
+1. 開啟Experience Manager Sites，並選取您要新增Dynamic Media 3D Media元件的網頁。
 1. 點選「**[!UICONTROL 編輯]**（鉛筆）」圖示，將頁面開啟至頁面編輯器。 請確定頁面右上方附近已選取「編輯」模式。****
 
    ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
@@ -219,7 +219,7 @@ Dynamic Media包含Dynamic Media 3D Media元件，您可在AEM Sites中使用此
 
 ### 可選——配置3D介質元件{#configuring-the-three-d-component}
 
-1. 在「AEM Sites」頁面編輯器中，選取您先前新增至頁面的&#x200B;**[!UICONTROL 3D Media Viewer]**&#x200B;元件。
+1. 在Experience Manager Sites頁面編輯器中，選取您先前新增至頁面的&#x200B;**[!UICONTROL 3D Media Viewer]**&#x200B;元件。
 1. 點選&#x200B;**[!UICONTROL Configuration]**&#x200B;圖示（扳手）以開啟元件設定對話方塊。
 
    ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-configa.png)
@@ -236,7 +236,7 @@ Dynamic Media包含Dynamic Media 3D Media元件，您可在AEM Sites中使用此
 
 請參閱[將3D媒體元件新增至網頁。](#adding-the-three-d-media-component-to-a-web-page)
 
-1. 在「AEM Sites」頁面編輯器中，按一下「資產」圖示，以開啟側面板中的「資產」。********
+1. 在Experience Manager Sites頁面編輯器中，按一下「資產」圖示以開啟側面板中的「資產」。********
 1. 在下拉式清單中，選取&#x200B;**[!UICONTROL 3D]**&#x200B;以僅顯示3D資產檔案類型。
 1. 在側面板中，搜尋或捲動至您要在編輯的頁面上檢視的3D資產。
 1. 從「資產」側面板拖曳3D資產，並將其拖曳至您先前新增至頁面的&#x200B;**[!UICONTROL 3D Media]**&#x200B;元件。
@@ -245,7 +245,7 @@ Dynamic Media包含Dynamic Media 3D Media元件，您可在AEM Sites中使用此
 
 >[!NOTE]
 >
->當網頁處於「AEM網站&#x200B;**[!UICONTROL 編輯]**」模式時，3D Media元件會顯示3D資產，但無法與資產互動。 若要讓資產具互動性，您可以使用&#x200B;**[!UICONTROL 預覽]**&#x200B;功能，在頁面編輯器中檢視網頁，並完整存取3D媒體元件的功能。
+>當網頁處於Experience Manager Sites **[!UICONTROL Edit]**&#x200B;模式時，3D Media元件會顯示3D資產，但無法與資產互動。 若要讓資產具互動性，您可以使用&#x200B;**[!UICONTROL 預覽]**&#x200B;功能，在頁面編輯器中檢視網頁，並完整存取3D媒體元件的功能。
 
 ## 發佈靜態動態媒體3D資產{#publishing-three-d-assets}
 
@@ -255,7 +255,7 @@ Dynamic Media接受多種3D檔案格式，在Dynamic Media中支援這些格式�
 
 在&#x200B;**[!UICONTROL 資訊卡檢視]**&#x200B;中，資產名稱正下方及其日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **** 欄會指出已發佈或未發佈的資產。
 
-如果您使用AEM做為WCM，請使用此發佈方法直接在網頁上新增Dynamic Media 3D資產。
+如果您使用Experience Manager做為WCM，請使用此發佈方法直接在網頁上新增Dynamic Media 3D資產。
 
 另請參閱[發佈動態媒體資產。](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
@@ -284,7 +284,7 @@ Dynamic Media接受多種3D檔案格式，在Dynamic Media中支援這些格式�
 
 ### 使用維度檢視器{#alternate-publish-methods}發佈動態媒體3D資產的替代方法
 
-如果您&#x200B;*not*&#x200B;使用AEM做為WCM，請使用下列兩種方法來發佈動態媒體3D資產。
+如果您&#x200B;*not*&#x200B;使用Experience Manager做為WCM，請使用下列兩種方法來發佈Dynamic Media 3D資產。
 
 * **[!UICONTROL URL]** -使用 **** URL如果您使用協力廠商的網頁內容管理系統，而且您想要使用維度檢視器將動態媒體3D資產連結至您的網頁。
 
