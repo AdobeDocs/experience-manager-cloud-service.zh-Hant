@@ -4,9 +4,9 @@ description: 瞭解各種資產管理和編輯方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '4429'
+source-wordcount: '4408'
 ht-degree: 12%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 12%
 
 ## 建立資料夾{#creating-folders}
 
-組織資產集合（例如所有`Nature`影像）時，您可以建立資料夾以將資產保持在一起。 您可以使用資料夾來分類和組織您的資產。 AEM Assets不需要您在檔案夾中組織資產，以提高工作效率。
+組織資產集合（例如所有`Nature`影像）時，您可以建立資料夾以將資產保持在一起。 您可以使用資料夾來分類和組織您的資產。 [!DNL Experience Manager Assets] 不需要您在檔案夾中組織資產，以提高工作效率。
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ ht-degree: 12%
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 在&#x200B;**[!UICONTROL Tags]**&#x200B;欄位中，選取一或多個標籤。 若要新增自訂標籤，請在方塊中輸入標籤名稱，然後按Enter鍵。 新標籤會儲存在AEM中。
+1. 在&#x200B;**[!UICONTROL Tags]**&#x200B;欄位中，選取一或多個標籤。 若要新增自訂標籤，請在方塊中輸入標籤名稱，然後按Enter鍵。 新標籤保存在[!DNL Experience Manager]中。
 
    YouTube需要「標籤」才能發佈，並有YouTube的連結（如果找到適當的連結）。
 
@@ -139,7 +139,7 @@ ht-degree: 12%
 
    >[!NOTE]
    >
-   >如果您在相同位置複製資產，AEM會自動產生名稱的變更。 例如，如果您複製名為`Square`的資產，AEM會自動產生其復本的標題為`Square1`。
+   >如果您複製相同位置的資產，[!DNL Experience Manager]會自動產生名稱的變更。 例如，如果您複製名為`Square`的資產， [!DNL Experience Manager]會自動產生其復本的標題為`Square1`。
 
 1. 按一下工具列中的&#x200B;**[!UICONTROL 貼上]**&#x200B;資產圖示。 資產會複製到此位置。
 
@@ -203,7 +203,7 @@ ht-degree: 12%
 
    >[!NOTE]
    >
-   >依預設，AEM Assets不會在預覽模式中顯示資產的原始轉譯。 如果您是管理員，可以使用覆蓋來設定AEM Assets，以在預覽模式中顯示原始轉譯。
+   >依預設，[!DNL Experience Manager Assets]不會在預覽模式中顯示資產的原始轉譯。 如果您是管理員，可以使用覆蓋來設定[!DNL Assets]在預覽模式中顯示原始轉譯。
 
 1. 選取要檢視或刪除轉譯的轉譯。
 
@@ -223,7 +223,7 @@ ht-degree: 12%
    >
    >如果您從「轉譯」面板選取轉譯 **** ，工具列會變更上下文，並僅顯示與轉譯相關的動作。不會顯示「上傳轉譯」圖示等選項。若要在工具列中檢視這些選項，請導覽至資產的詳細資訊頁面。
 
-   您可以設定要顯示在影像或視訊資產詳細資料頁面的轉譯尺寸。 AEM Assets會根據您指定的維度，顯示具有精確或最接近的維度的轉譯。
+   您可以設定要顯示在影像或視訊資產詳細資料頁面的轉譯尺寸。 根據您指定的維度，「資產」會顯示具有精確或最接近維度的轉譯。
 
    若要在資產詳細資料層級設定影像的轉譯尺寸，請覆蓋節 `renditionpicker` 點(`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`)並設定width屬性的值。設定屬性大 **[!UICONTROL 小 (長) (KB]** )以取代寬度，以根據影像大小自訂資產詳細資料頁面上的轉譯。對於基於大小的定製，如果匹配的 `preferOriginal` 格式副本的大小大於原始格式副本的大小，則屬性會為原始格式副本指定首選項。
 
@@ -270,7 +270,7 @@ ht-degree: 12%
 
 ## 下載資產 {#download-assets}
 
-請參閱「從AEM](/help/assets/download-assets-from-aem.md)下載資產」。[
+請參閱[從 [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md)下載資產。
 
 ## 發佈資產{#publish-assets}
 
@@ -323,7 +323,7 @@ ht-degree: 12%
 
 ## 已關閉的用戶組{#closed-user-group}
 
-已關閉的使用者群組(CUG)可用來限制對從AEM發佈的特定資產資料夾的存取權。 如果為資料夾建立CUG，則對資料夾（包括資料夾資產和子資料夾）的訪問僅限分配的成員或組。 若要存取資料夾，他們必須使用其安全憑證登入。
+已關閉的使用者群組(CUG)可用來限制對從[!DNL Experience Manager]發佈的特定資產資料夾的存取。 如果為資料夾建立CUG，則對資料夾（包括資料夾資產和子資料夾）的訪問僅限分配的成員或組。 若要存取資料夾，他們必須使用其安全憑證登入。
 
 CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登入頁面。
 
@@ -332,22 +332,22 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
 
    ![add_user](assets/add_user.png)
 
-1. 要在用戶訪問資料夾時顯示登錄螢幕，請選擇&#x200B;**[!UICONTROL 啟用]**&#x200B;選項。 然後，在AEM中選取登入頁面的路徑，並儲存變更。
+1. 要在用戶訪問資料夾時顯示登錄螢幕，請選擇&#x200B;**[!UICONTROL 啟用]**&#x200B;選項。 然後，在[!DNL Experience Manager]中選擇登入頁面的路徑，並儲存變更。
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >如果您未指定登入頁面的路徑，AEM會在發佈例項中顯示預設登入頁面。
+   >如果您未指定登入頁面的路徑，[!DNL Experience Manager]會在發佈例項中顯示預設登入頁面。
 
 1. 發佈資料夾，然後嘗試從發佈例項存取資料夾。 隨即顯示登入畫面。
-1. 如果您是CUG成員，請輸入您的安全憑據。 資料夾會在AEM驗證您後顯示。
+1. 如果您是CUG成員，請輸入您的安全憑據。 資料夾會在[!DNL Experience Manager]驗證您後顯示。
 
 ## 搜尋資產 {#search-assets}
 
 搜尋資產是數位資產管理系統的核心使用，不論是供創意人員進一步使用、由商業使用者和行銷人員強穩管理資產，或由DAM管理員管理。
 
-如需簡單、進階和自訂搜尋，以探索和使用最適合的資產，請參閱「AEM[中的搜尋資產」。](/help/assets/search-assets.md)
+如需簡單、進階和自訂搜尋，以發現和使用最適合的資產，請參閱 [!DNL Experience Manager]](/help/assets/search-assets.md)中的[搜尋資產。
 
 ## 快速動作{#quick-actions}
 
@@ -358,7 +358,7 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
 
 ## 編輯影像{#editing-images}
 
-AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工作。 您可以裁切、旋轉、翻轉和執行其他影像編輯工作。 您也可以將影像地圖新增至資產。
+[!DNL Experience Manager Assets]介面中的編輯工具可讓您對影像資產執行小型編輯工作。 您可以裁切、旋轉、翻轉和執行其他影像編輯工作。 您也可以將影像地圖新增至資產。
 
 >[!NOTE]
 >
@@ -430,7 +430,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 註解是影像或視訊中新增的註解或說明註解。 註解可讓行銷人員協作並留下有關資產的意見回應。
 
-只有採用HTML5相容視訊格式的瀏覽器才支援視訊註解。 AEM Assets支援的視訊格式取決於瀏覽器。
+只有採用HTML5相容視訊格式的瀏覽器才支援視訊註解。 資產支援的視訊格式取決於瀏覽器。
 
 >[!NOTE]
 >
@@ -467,7 +467,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
    >您可以在儲存多個註解之前，先加入這些註解。
 
 1. 點選／按一下&#x200B;**[!UICONTROL 關閉]**&#x200B;以退出「注釋」模式。
-1. 若要檢視通知，請使用Aaron MacDonald的認證登入AEM Assets，然後按一下「**[!UICONTROL 通知]**」圖示以檢視通知。
+1. 若要檢視通知，請使用Aaron MacDonald的認證登入「資產」，然後按一下「通知」圖示以檢視通知。****
 
    >[!NOTE]
    >
@@ -545,11 +545,11 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 1. 使用右上角的選項下載或列印PDF。
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
    要修改渲染的PDF檔案的外觀，例如注釋和狀態的字型顏色、大小和樣式、背景顏色，請從「配置管理器」中開啟&#x200B;**[!UICONTROL 「注釋PDF配置」，並修改所需的選項。]**&#x200B;例如，要更改批准狀態的顯示顏色，請修改相應欄位中的顏色代碼。 有關更改批注的字型顏色的資訊，請參閱[注釋](/help/assets/manage-digital-assets.md#annotating)。
 
-   ![chlimage_1-247](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    返回轉譯的PDF檔案並重新整理它。 重新整理的PDF會反映您所做的變更。
 
@@ -559,9 +559,9 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 以下是您建立版本的案例：
 
-* 您可以修改不同應用程式中的影像，並上傳至AEM Assets。 會建立影像版本，以免覆寫原始影像。
+* 您可以修改不同應用程式中的影像，並上傳至「資產」。 會建立影像版本，以免覆寫原始影像。
 * 您可以編輯資產的中繼資料。
-* 您使用AEM案頭應用程式來結帳現有資產並儲存變更。 每次儲存資產時，都會建立新版本。
+* 您使用[!DNL Experience Manager]案頭應用程式來結帳現有資產並儲存變更。 每次儲存資產時，都會建立新版本。
 
 您也可以透過工作流程啟用自動版本修訂。 當您為資產建立版本時，中繼資料和轉譯會與版本一起儲存。 轉譯是相同影像的替代格式，例如已上傳JPEG檔案的PNG轉譯。
 
