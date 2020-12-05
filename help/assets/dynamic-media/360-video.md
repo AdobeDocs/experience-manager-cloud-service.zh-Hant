@@ -2,9 +2,9 @@
 title: 360/VR視訊
 description: 瞭解如何在動態媒體中處理360和虛擬實境(VR)視訊。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Dynamic Media包含360個視訊資產的原生支援。 依預設，檢視或播
 
 ## 上傳資產以搭配360視訊檢視器{#uploading-assets-for-use-with-the-video-viewer}使用
 
-上傳至AEM的360個視訊資產會在「資產」頁面上標示為&#x200B;**Multimedia**，與一般視訊資產類似。
+360個上傳至Experience Manager的視訊資產在「資產」頁面上標示為&#x200B;**Multimedia**，與一般視訊資產類似。
 
 ![6_5_360video-selectpreview在卡片檢](assets/6_5_360video-selecttopreview.png)
 *視中可看到已上傳的360視訊資產。資產標示為「多媒體」。*
@@ -98,7 +98,7 @@ Start by uploading 360 Videos.
 當您對360視訊感到滿意時，就可以發佈它。
 
 請參閱[將視訊或影像檢視器內嵌至網頁](/help/assets/dynamic-media/embed-code.md)。
-請參閱[將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 請注意，如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，就無法使用以URL為基礎的連結方法。
+請參閱[將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 請注意，如果您的互動式內容具有相對URL的連結，尤其是Experience Manager Sites頁面的連結，則無法使用以URL為基礎的連結方法。
 請參閱[新增動態媒體資產至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **若要預覽360個視訊**
@@ -134,5 +134,5 @@ Start by uploading 360 Videos.
 
 如需如何發佈360視訊的詳細資訊，請參閱[發佈動態媒體資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 另請參閱[將視訊或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)。
-另請參閱[將URL連結到您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 請注意，如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，就無法使用以URL為基礎的連結方法。
+另請參閱[將URL連結到您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 請注意，如果您的互動式內容具有相對URL的連結，尤其是Experience Manager Sites頁面的連結，則無法使用以URL為基礎的連結方法。
 另請參閱[新增動態媒體資產至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
