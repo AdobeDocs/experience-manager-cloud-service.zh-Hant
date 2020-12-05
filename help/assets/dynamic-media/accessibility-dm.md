@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 40d84fc902f872eae276272b6a975c108b655943
+source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Dynamic Media跨製作使用者介面支援鍵盤控制和輔助技術，例如J
 
 ## 動態媒體中的鍵盤協助功能支援
 
-由於Dynamic Media是AEM Assets的外掛程式，因此大部份的鍵盤控制行為都與AEM Assets中完全相同。 例如，Dynamic Media中的`Cancel`按鈕與AEM Assets中的對焦反白顯示相同，而且會像AEM Assets中一樣回應`Spacebar`鍵。 請參閱Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[鍵盤快速鍵。
+由於Dynamic Media是Experience Manager Assets的外掛程式，因此大部份的鍵盤控制行為都與Experience Manager Assets完全相同。 例如，Dynamic Media的`Cancel`按鈕與Experience Manager Assets中的焦點反白顯示相同，並且會像Experience Manager Assets中的`Spacebar`鍵產生反應。 請參閱Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[鍵盤快速鍵。
 
 動態媒體中個別使用者介面元素支援的按鍵輸入，在大多數情況下都十分明顯，而且易於發現。 動態媒體中的鍵盤控制項如下：
 
