@@ -2,9 +2,9 @@
 title: 套用動態媒體檢視器預設集
 description: 瞭解如何在動態媒體中套用檢視器預設集
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '216'
 ht-degree: 25%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 25%
 另請參閱[Publishing Viewer預設集](managing-viewer-presets.md#publishing-viewer-presets)。
 
 視您使用的發佈模式而定，您可能不需要發佈檢視器預設集。
-如果檢視器預設集有任何問題，請參閱[疑難排解動態媒體- Scene7](troubleshoot-dm.md#viewers)。
+如果檢視器預設集有問題，請參閱[疑難排解動態媒體](troubleshoot-dm.md#viewers)。
 
 ## 將動態媒體檢視器預設集套用至資產{#applying-a-viewer-preset-to-an-asset}
 
