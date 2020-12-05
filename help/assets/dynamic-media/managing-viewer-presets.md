@@ -2,9 +2,9 @@
 title: 管理檢視器預設集
 description: 如何建立和管理檢視器預設集
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
 workflow-type: tm+mt
-source-wordcount: '4255'
+source-wordcount: '4258'
 ht-degree: 15%
 
 ---
@@ -51,7 +51,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 不同的網頁有不同的需求。 例如，有時您想要的網頁提供在個別瀏覽器視窗中開啟HTML5檢視器的連結。 在其他情況下，可能需要將HTML5檢視器直接內嵌在代管頁面上。 在後一種情況下，網頁可能具有靜態版面。 或者，它可能是「自適應」的，並在不同裝置上或不同瀏覽器視窗大小上顯示不同。 為滿足這些需求，Dynamic Media隨附的所有預先定義、現成可用的HTML5檢視器都支援靜態網頁和互動式設計網頁。
 
-如需如何將回應式檢視器內嵌至網頁的詳細資訊，請參閱&#x200B;*Scene7 Image Serving API說明*&#x200B;中的[回應式影像庫](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)。
+如需如何將回應式檢視器內嵌至網頁的詳細資訊，請參閱&#x200B;*動態媒體影像伺服與轉譯API說明*&#x200B;中的[回應式靜態影像庫](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library)。
 
 >[!NOTE]
 >
