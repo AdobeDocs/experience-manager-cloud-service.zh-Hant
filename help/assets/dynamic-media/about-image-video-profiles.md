@@ -2,9 +2,9 @@
 title: 關於動態媒體影像描述檔和視訊描述檔
 description: 「影像描述檔」或「視訊描述檔」是套用至您上傳至資料夾之資產的選項的方式。 例如，您可以指定要套用至您上傳之動態媒體視訊資產的視訊編碼。 或者，要套用至動態媒體影像資產的影像描述檔，以便正確裁切。
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1301'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如果您要從Dynamic Media Classic將資產大量移轉至AEM，則必須在Dynamic Media伺服器上啟用Migration複製代理。 移轉完成後，請務必停用代理。
+>如果要將資產從Dynamic Media Classic大量遷移到Experience Manager，則必須在Dynamic Media伺服器上啟用遷移複製代理。 移轉完成後，請務必停用代理。
 >
 >移轉發佈代理必須在Dynamic Media伺服器上停用，讓重新處理工作流程如預期般運作。
 
@@ -58,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **要重新處理資料夾中的動態媒體資產**:
-1. 在AEM中，從「資產」頁面導覽至動態媒體資產的檔案夾，其中已指派影像描述檔或視訊描述檔，且您要套用&#x200B;**Scene7:重新處理資產**&#x200B;工作流程，
+1. 在Adobe Experience Manager的「資產」頁面中，導覽至動態媒體資產的檔案夾，其中已指派影像描述檔或視訊描述檔，且您要套用&#x200B;**Scene7:重新處理資產**&#x200B;工作流程，
 
    已指派影像描述檔或視訊描述檔的檔案夾，會在「卡片檢視」的檔案夾名稱正下方顯示描述檔名稱。
 
@@ -81,11 +81,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. 按一下&#x200B;**[!UICONTROL 開始]** ，然後按一下&#x200B;**[!UICONTROL 確認]**。
 
-   若要監控工作流程或檢查其進度，請從AEM主控台頁面，按一下「工具>工作流程」**[!UICONTROL 。]**&#x200B;在「工作流實例」頁上，選擇工作流。 在菜單欄上，按一下&#x200B;**[!UICONTROL 開啟歷史記錄]**。 您也可以終止、暫停或重新命名同一「工作流實例」頁中選定的工作流。
+   若要監控工作流程或檢查其進度，請從Experience Manager主控台頁面，按一下「工具>工作流程」**[!UICONTROL 。]**&#x200B;在「工作流實例」頁上，選擇工作流。 在菜單欄上，按一下&#x200B;**[!UICONTROL 開啟歷史記錄]**。 您也可以終止、暫停或重新命名同一「工作流實例」頁中選定的工作流。
 
 ### 調整重新處理工作流的批大小{#adjusting-load}
 
-（可選）重新處理工作流程中的預設批次大小是每個工作50個資產。 此最佳批次大小由執行重新處理之資產的平均資產大小和MIME類型所控制。 值越高，表示您在單一重新處理工作中會擁有許多檔案。 因此，處理橫幅會在AEM資產上停留較長時間。 但是，如果平均檔案大小為1 MB或以下- Adobe建議您將值增加到幾百，但不要超過1000。 如果平均檔案大小是數百兆位元組，Adobe建議您將批次大小降低至10。
+（可選）重新處理工作流程中的預設批次大小是每個工作50個資產。 此最佳批次大小由執行重新處理之資產的平均資產大小和MIME類型所控制。 值越高，表示您在單一重新處理工作中會擁有許多檔案。 因此，處理橫幅會在Experience Manager資產上停留較久。 但是，如果平均檔案大小為1 MB或以下- Adobe建議您將值增加到幾百，但不要超過1000。 如果平均檔案大小是數百兆位元組，Adobe建議您將批次大小降低至10。
 
 **（可選）調整重新處理工作流的批大小**
 
@@ -137,7 +137,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
     ![Saving the new property](/help/security/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
 
 -->
