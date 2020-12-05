@@ -3,9 +3,9 @@ title: 使用資產微服務處理資產
 description: 使用雲端原生和可擴充的資產處理微服務來處理您的數位資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '827'
 ht-degree: 1%
 
 ---
@@ -50,14 +50,14 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 擷取和處理流程是Experience Manager資產微服務架構的主要概念。
 
-* **直接二進位存取**:一旦為Experience Manager環境設定好資產，資產就會傳輸（並上傳）至Cloud Binary Store，然後AEM、資產微型服務，最後客戶可以直接存取資產以執行其工作。這樣可最大限度地減少網路負載和儲存二進位檔案的複製
-* **外部化處理**:資產處理是在AEM環境以外進行，並節省其資源（CPU、記憶體），以提供主要數位資產管理功能，並支援針對使用者的系統進行互動式工作
+* **直接二進位存取**:一旦為Experience Manager環境配置了資產，資產就會傳輸（並上傳）到Cloud Binary Store，然後 [!DNL Experience Manager]，資產Microservices，最終客戶可以直接訪問這些資產以執行其工作。這樣可最大限度地減少網路負載和儲存二進位檔案的複製
+* **外部化處理**:資產處理是在環境之外完 [!DNL Experience Manager] 成的，並節省其資源（CPU、記憶體），以便為最終用戶提供關鍵的數位資產管理功能，並支援與系統進行交互工作
 
 ## 直接二進位存取的資產上傳{#asset-upload-with-direct-binary-access}
 
-Experience Manager客戶端是產品方案的一部分，預設情況下，所有客戶端都支援直接二進位訪問進行上載。 其中包括使用網頁介面、Adobe Asset Link和AEM案頭應用程式上傳。
+Experience Manager客戶端是產品方案的一部分，預設情況下，所有客戶端都支援直接二進位訪問進行上載。 這些功能包括使用網頁介面、Adobe Asset Link和[!DNL Experience Manager]案頭應用程式上傳。
 
-您可以使用自訂的上傳工具，直接與AEM HTTP API搭配使用。 您可以直接使用這些API，或使用並擴充下列實作上傳通訊協定的開放原始碼專案：
+您可以使用自訂的上傳工具，直接與[!DNL Experience Manager] HTTP API搭配使用。 您可以直接使用這些API，或使用並擴充下列實作上傳通訊協定的開放原始碼專案：
 
 * [開放原始碼上傳程式庫](https://github.com/adobe/aem-upload)
 * [開放原始碼命令列工具](https://github.com/adobe/aio-cli-plugin-aem)
@@ -68,7 +68,7 @@ Experience Manager客戶端是產品方案的一部分，預設情況下，所�
 
 雖然大部分客戶應從可設定的資產微服務取得其所有資產處理需求，但有些客戶可能需要額外的資產處理。 如果資產需要根據來自其他系統的資訊，透過整合處理，則特別如此。 在這類情況下，可使用自訂的後處理工作流程。
 
-後置處理工作流程是一般的AEM工作流程模型，在AEM Workflow編輯器中建立和管理。 客戶可以設定工作流程，對資產執行其他處理步驟，包括使用可用的現成可用工作流程步驟和自訂工作流程。
+後處理工作流是常規的[!DNL Experience Manager]工作流模型，在[!DNL Experience Manager]工作流編輯器中建立和管理。 客戶可以設定工作流程，對資產執行其他處理步驟，包括使用可用的現成可用工作流程步驟和自訂工作流程。
 
 Adobe Experience Manager可設定為在資產處理完成後自動觸發後處理工作流程。
 
