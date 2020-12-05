@@ -3,17 +3,17 @@ title: 時間軸中的活動串流
 description: 本文說明如何在時間軸上顯示資產的活動記錄檔。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 36%
+source-wordcount: '209'
+ht-degree: 24%
 
 ---
 
 
 # 在活動流{#activity-stream-in-timeline}中查看資產操作日誌
 
-此功能會在時間軸上顯示資產的活動記錄。 如果您在Adobe Experience Manager(AEM)Assets中執行下列任何資產相關作業，「活動串流」功能會更新時間軸以反映活動。
+此功能會在時間軸上顯示資產的活動記錄。 如果您在[!DNL Experience Manager Assets]中執行下列任何與資產相關的作業，「活動串流」功能會更新時間軸以反映活動。
 
 活動流中記錄了以下操作：
 
@@ -26,7 +26,7 @@ ht-degree: 36%
 * 拒絕
 * 移動
 
-將從儲存日誌檔案的CRX位置提取要在時 `/var/audit/com.day.cq.dam/content/dam` 間軸中顯示的活動日誌。此外，當上傳新資產或修改現有資產並透過 [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [[!DNL Experience Manager] 案頭應用程式簽入AEM時，會記錄時間軸活動](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en)。
+將從儲存日誌檔案的CRX位置提取要在時 `/var/audit/com.day.cq.dam/content/dam` 間軸中顯示的活動日誌。此外，當上傳新資產或修改現有資產並透過[Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)或[[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en)簽入[!DNL Experience Manager]時，會記錄時間軸活動。
 
 >[!NOTE]
 >
