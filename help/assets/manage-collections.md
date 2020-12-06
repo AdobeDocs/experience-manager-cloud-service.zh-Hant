@@ -4,10 +4,10 @@ description: 瞭解Adobe Experience Manager Assets中的收集概念。 瞭解�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '2396'
-ht-degree: 20%
+source-wordcount: '2393'
+ht-degree: 19%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 20%
 智慧型收集會使用搜尋准則來動態填入資產。 您只能使用檔案（而不是資料夾或檔案和資料夾）建立Smart Collection。
 
 1. 導覽至「資產」UI，然後點選/按一下「搜 **[!UICONTROL 尋]** 」圖示。
-1. 在Omni Search方塊中輸入搜尋關鍵字，然後按Enter。 點選／按一下GlobalNav圖示以顯示「篩選」面板，並從「搜尋」面板套用搜尋篩選。
+1. 在Omni Search方塊中輸入搜尋關鍵字，然後選取`Enter`。 點選／按一下GlobalNav圖示以顯示「篩選」面板，並從「搜尋」面板套用搜尋篩選。
 1. 從&#x200B;**[!UICONTROL 檔案和資料夾]**&#x200B;清單中，選擇&#x200B;**[!UICONTROL 檔案]**。
 1. 點選／按一下「儲存智慧型系列」。****
 1. 指定系列的名稱。 選擇&#x200B;**[!UICONTROL Public]**&#x200B;將具有查看器角色的DAM用戶組添加到智慧集合。
@@ -103,7 +103,7 @@ ht-degree: 20%
 智慧型系列是透過儲存搜尋來建立的，因此您可以修改[已儲存搜尋](#saved-searches)的搜尋參數來變更其內容。
 
 1. 在「資產」使用者介面中，點選／按一下工具列中的&#x200B;**[!UICONTROL Search]**&#x200B;圖示。
-1. 在Omnisearch框中，按Enter鍵。
+1. 在「Omnisearch」（搜索）框中，選擇`Enter`鍵。
 1. 點選／按一下GlobalNav圖示以顯示「濾鏡」面板。
 1. 從「保 **[!UICONTROL 存的搜索]** 」清單中，選擇要修改的智慧系列。「搜尋」面板會顯示為儲存的搜尋設定的篩選器。
 1. 從&#x200B;**[!UICONTROL 檔案和資料夾]**&#x200B;清單中，選擇&#x200B;**[!UICONTROL 檔案]**。
@@ -238,7 +238,7 @@ Adobe Enterprise Manager Assets可讓您大量編輯許多系列的中繼資料�
 
 1. 在「資產」使用者介面中，點選／按一下工具列中的搜尋圖示。
 
-1. 在「Omnisearch」（搜索）欄位中，按Enter鍵。
+1. 在「Omnisearch」（搜索）欄位中，選擇`Enter`鍵。
 1. 按一下或點選「GlobalNav」圖示以顯示「濾鏡」面板。
 1. 從「儲 **[!UICONTROL 存的搜尋]** 」清單中，點選/按一 **** 下您要刪除的智慧型系列旁的「刪除」。
 1. 在對話方塊中，點選／按一下「刪除&#x200B;****」以刪除儲存的搜尋。
@@ -249,7 +249,7 @@ Adobe Enterprise Manager Assets可讓您大量編輯許多系列的中繼資料�
 
 1. 從「系列」主控台中，選取您要執行工作流程的系列。
 1. 點選／按一下GlobalNav圖示，然後從清單中選擇&#x200B;**[!UICONTROL Timeline]**。
-1. 在時間軸中，按一下或點選底部的脫字元號圖示，然後點選/按一下「開始工 **[!UICONTROL 作流程」]**。
+1. 在時間軸中，選取或點選底部的脫字元號圖示，然後點選／按一下「開始工作流程」**[!UICONTROL 。]**
 1. 在「開 **[!UICONTROL 始工作流]** 」部分，從清單中選擇工作流模型。例如，選取「 **[!UICONTROL DAM更新資產」模型]** 。
 1. 輸入工作流的標題，然後點選／按一下&#x200B;**[!UICONTROL 開始]**。
 1. 在對話框中，點選／按一下&#x200B;**[!UICONTROL 繼續]**。 工作流程會在系列中的所有資產上執行。
