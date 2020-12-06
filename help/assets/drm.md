@@ -3,9 +3,9 @@ title: ' [!DNL Assets]中的數位版權管理'
 description: 瞭解如何以 [!DNL Experience Manager] a [!DNL Cloud Service]的形式管理授權資產的資產到期狀態和資訊。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '1345'
+source-wordcount: '1343'
 ht-degree: 7%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 7%
 
 1. 在[!DNL Assets]控制台中，按一下工具欄中的&#x200B;**[!UICONTROL Search]**&#x200B;以顯示「Omnisearch」框。
 
-1. 在「Omnisearch」（搜索）框中，按Enter鍵可顯示搜索結果頁。
+1. 在「Omnisearch」（搜索）框中，選擇`Enter`鍵以顯示搜索結果頁。
 
 1. 按一下GlobalNav圖示以顯示「搜尋」面板。
 
@@ -95,7 +95,7 @@ ht-degree: 7%
 
 1. 若要根據資產狀態來搜尋資產，請按一下「搜尋&#x200B;****」以顯示Omnisearch列。
 
-1. 按return並按一下[!DNL Experience Manager]以顯示搜索面板。
+1. 選擇`Return`並按一下[!DNL Experience Manager]以顯示搜索面板。
 1. 在搜尋面板中，按一下「發佈狀態」並選取「已發佈」，以搜尋[!DNL Assets]中的已發佈資產。]****[!UICONTROL ****
 
 1. 按一下「核准狀態」，然後按一下適當的選項以搜尋已核准或已拒絕的資產。****
