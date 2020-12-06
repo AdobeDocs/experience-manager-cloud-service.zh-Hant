@@ -4,9 +4,9 @@ description: 瞭解如何使用「篩選器」面板在 [!DNL Adobe Experience M
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7f9384b08df70aac2f425b830337e97d711b709e
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '4743'
+source-wordcount: '4741'
 ht-degree: 5%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 5%
 | [限](#tips) 制和提 [示](#limitations) |  |  |
 | [圖示範例](#samples) |  |  |
 
-使用[!DNL Experience Manager]網頁介面頂端的Omnisearch欄位搜尋資產。 前往[!DNL Experience Manager]中的&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**，按一下頂端列中的![search_icon](assets/do-not-localize/search_icon.png)，輸入搜尋關鍵字，然後按return。 或者，使用關鍵字快速鍵`/`（正斜線）來開啟Omnisearch欄位。 `Location:Assets` 已預先選取，以限制搜尋DAM資產。[!DNL Experience Manager] 在您開始輸入搜尋關鍵字時提供建議。
+使用[!DNL Experience Manager]網頁介面頂端的Omnisearch欄位搜尋資產。 前往[!DNL Experience Manager]中的&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**，按一下頂端列中的![search_icon](assets/do-not-localize/search_icon.png)，輸入搜尋關鍵字，然後選取`Return`。 或者，使用關鍵字快速鍵`/`（正斜線）來開啟Omnisearch欄位。 `Location:Assets` 已預先選取，以限制搜尋DAM資產。[!DNL Experience Manager] 在您開始輸入搜尋關鍵字時提供建議。
 
 使用&#x200B;**[!UICONTROL Filters]**&#x200B;面板來搜尋資產、資料夾、標籤和中繼資料。 您可以根據各種選項（謂語）來篩選搜尋結果，例如檔案類型、檔案大小、上次修改的日期、資產狀態、前瞻分析資料和Adobe Stock授權。 您可以使用[search facets](/help/assets/search-facets.md)自訂「篩選」面板並新增或移除搜尋謂語。 [!UICONTROL Filters]面板中的[!UICONTROL File Type]篩選器具有混合狀態複選框。 因此，除非選擇所有嵌套的謂語（或格式），否則第一級複選框將被部分選中。
 
@@ -254,7 +254,7 @@ AEM搜尋功能支援搜尋系列並搜尋系列中的資產。 請參閱[搜尋
 * 請勿在搜索查詢中輸入前導空格，否則搜索無效。
 * [!DNL Experience Manager] 在您從搜尋結果中選取資產屬性，然後取消搜尋後，可能會繼續顯示搜尋詞。  <!-- (CQ-4273540) -->
 * 搜索資料夾或檔案和資料夾時，不能對任何參數對搜索結果進行排序。
-* 如果按Return鍵而未在Omnisearch列中鍵入， [!DNL Experience Manager]將返回僅包含檔案而非資料夾的清單。 如果您不使用關鍵字而專門搜索資料夾，[!DNL Experience Manager]不會返回任何結果。
+* 如果您選擇`Return`而未在Omnisearch列中鍵入， [!DNL Experience Manager]將返回僅檔案而非資料夾的清單。 如果您不使用關鍵字而專門搜索資料夾，[!DNL Experience Manager]不會返回任何結果。
 
 視覺搜尋或相似性搜尋有下列限制：
 
