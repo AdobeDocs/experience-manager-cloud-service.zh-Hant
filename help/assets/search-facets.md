@@ -2,7 +2,7 @@
 title: 搜尋 Facet.
 description: 本文說明如何在AEM中建立、修改和使用搜尋Facet。
 translation-type: tm+mt
-source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '2377'
 ht-degree: 21%
@@ -33,9 +33,9 @@ Adobe Experience Manager(AEM)Assets的企業部署可儲存許多資產。 有�
 
 1. 在「編輯搜索表單」頁中，將&#x200B;**[!UICONTROL 選擇謂詞]**&#x200B;頁籤中的謂詞拖動到主窗格。 例如，拖曳&#x200B;**[!UICONTROL Property Predicate]**。
 
-   ![按並移動謂詞以自訂搜尋篩選器](assets/drag_predicate.png)
+   ![選擇並移動謂詞以自定義搜索篩選器](assets/drag_predicate.png)
 
-   *圖：按並移動謂語以自訂搜尋篩選。*
+   *圖：選擇並移動謂語以自訂搜尋篩選器。*
 
 1. 在「設定」標籤中，輸入謂語的欄位標籤、預留位置文字和說明。 為要與謂詞關聯的元資料屬性指定有效名稱。 「設定」頁籤中的標題標籤標識所選謂詞的類型。
 
