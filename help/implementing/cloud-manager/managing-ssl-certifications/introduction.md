@@ -2,9 +2,9 @@
 title: 簡介——管理SSL憑證
 description: 簡介——管理SSL憑證
 translation-type: tm+mt
-source-git-commit: 74cc587874c4d0a0ef9b542549801198d4f2d7a5
+source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Cloud Manager為客戶提供自助功能，可透過Cloud Manager UI安裝SSL憑
 
 Cloud Manager支援下列客戶SSL憑證需求：
 
-* SSL憑證可供多個環境使用——新增一次，然後使用多次。
+* SSL憑證可供多個環境使用，即新增一次，然後多次使用。
 * 每個Cloud Manager環境都可以使用多個證書。
 * 私密金鑰可能會發出多個SSL憑證。
 * 每個憑證通常會包含多個網域。
@@ -30,6 +30,8 @@ Cloud Manager支援下列客戶SSL憑證需求：
 
 使用「Cloud Manager UI SSL憑證」頁面，擁有權限的使用者可以執行數項工作來管理程式的SSL憑證：
 
-* 新增SSL憑證。
-* 檢視、更新或取代SSL憑證。 這些動作可讓您檢視詳細資訊或取代即將到期的憑證。
-* 刪除SSL憑證。
+* 新增SSL憑證
+* 檢視、更新或取代SSL憑證
+   >[!NOTE]
+   >這些動作可讓您檢視詳細資訊或取代即將到期的憑證。
+* 刪除SSL憑證
