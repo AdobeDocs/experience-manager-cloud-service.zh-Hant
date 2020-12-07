@@ -2,7 +2,7 @@
 title: 基本處理
 description: 熟悉AEM及其基本用途
 translation-type: tm+mt
-source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 6%
@@ -50,7 +50,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 ![導覽面板頂端列](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
-全域導覽有兩個面板，由螢幕左邊緣的圖示表示：
+全域導覽有兩個面板，由畫面左邊緣的圖示表示：
 
 * **[Navigation](#navigation-panel)**  —— 當您登入AEM時，由羅盤和預設面板表示
 * **[工具](#tools-panel)** -用錘子表示
@@ -95,7 +95,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 * [搜尋](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![搜尋按鈕](/help/sites-cloud/authoring/assets/search-button.png)
+   ![搜尋圖示](/help/sites-cloud/authoring/assets/search-icon.png)
 
    您也可以使用[快捷鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/`（正斜線）從任何控制台調用搜索。
 
