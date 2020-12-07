@@ -2,9 +2,9 @@
 title: 索引轉換器
 description: 索引轉換器
 translation-type: tm+mt
-source-git-commit: adfc453729b88a9cc457783806eb7b4d69150b21
+source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
@@ -34,5 +34,5 @@ Index Converter可讓AEM開發人員將現有的自訂Oak索引定義移轉至AE
 >[!NOTE]
 >雖然建議通過[AIO CLI插件使用Index Converter工具進行源遷移](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)，但也可以單獨執行。
 
-請參閱&#x200B;**[Git資源：aem-cs-source-migration-index-converter](https://git.corp.adobe.com/vavarshn/aem-cloud-service-source-migration/blob/master/packages/index-converter/README.md)**&#x200B;以瞭解如何安裝和使用外掛程式。
+請參閱&#x200B;**[Git資源：aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)**&#x200B;以瞭解如何安裝和使用外掛程式。
 
