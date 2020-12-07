@@ -2,7 +2,7 @@
 title: 搜尋
 description: 透過完整的搜尋功能，更快找到您的內容
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 8%
@@ -18,7 +18,7 @@ AEM的作者環境提供多種搜尋內容的機制，視資源類型而定。
 
 您可從頂端工具列取得搜尋：
 
-![搜尋按鈕](/help/sites-cloud/authoring/assets/search-button.png)
+![搜尋圖示](/help/sites-cloud/authoring/assets/search-icon.png)
 
 使用搜尋邊欄，您可以：
 
