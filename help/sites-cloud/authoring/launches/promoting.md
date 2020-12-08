@@ -2,9 +2,9 @@
 title: 提升啟動
 description: '發佈前，您需要促銷啟動頁面，將內容移回來源（生產）。 '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '799'
 ht-degree: 6%
 
 ---
@@ -47,11 +47,14 @@ ht-degree: 6%
 您可以從&#x200B;**Sites**&#x200B;主控台或&#x200B;**Launches**&#x200B;主控台升級啟動：
 
 1. 開啟:
-   * **Sites**&#x200B;控制台：
+   * 瀏覽源頁時，**Sites**&#x200B;控制台：
       1. 開啟[參考邊欄](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)，然後使用[選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md)選取所需的來源頁面（或選取並開啟參考邊欄，順序不重要）。 將顯示所有引用。
       1. 選擇&#x200B;**啟動**(例如啟動(1))以顯示特定啟動的清單。
       1. 選取特定的啟動以顯示可用的動作。
       1. 選擇&#x200B;**Promote launch**&#x200B;以開啟嚮導。
+   * 導覽啟動頁面時，**Sites**&#x200B;主控台：
+      1. 使用[選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md)選擇所需的啟動頁。
+      1. 工具欄中將提供&#x200B;**Promote**&#x200B;操作。
    * **啟動**&#x200B;控制台：
       1. 選取您的啟動（點選／按一下縮圖）。
       1. 選擇&#x200B;**Promote**。
