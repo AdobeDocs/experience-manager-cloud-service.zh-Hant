@@ -2,10 +2,10 @@
 title: '建立啟動 '
 description: 您可以建立啟動來更新現有網頁的新版本，以供日後啟動。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 14%
+source-wordcount: '998'
+ht-degree: 13%
 
 ---
 
@@ -120,13 +120,15 @@ ht-degree: 14%
 從&#x200B;**Launches**&#x200B;控制台建立巢狀啟動基本上與建立任何其他啟動形式相同，但您需要導覽至啟動分支`/content/launches`:
 
 1. 在&#x200B;**啟動**&#x200B;控制台中，選擇&#x200B;**建立**。
-1. 選取「 **新增頁面**」，然後在篩選條件中指定以導覽至啟 `/content/launches` 動分支。選擇所需的啟動並使用「選擇 **」確認**:
+1. 選擇&#x200B;**新增頁面**，然後在&#x200B;**篩選器**&#x200B;邊欄中指定`/content/launches`，導覽至啟動分支。 選擇所需的啟動並使用「選擇 **」確認**:
 
    ![建立巢狀啟動](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
-1. 繼續&#x200B;**Next**，並像啟動任何其他產品一樣完成&#x200B;**Properties**。
+1. 繼續&#x200B;**Next**。
 
-   ![選取巢狀啟動的來源](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
+1. 像啟動其他任何產品一樣，完成&#x200B;**Properties**。
+
+1. 完成&#x200B;**Create**。
 
 #### 建立嵌套啟動——站點控制台{#creating-a-nested-launch-sites-console}
 
