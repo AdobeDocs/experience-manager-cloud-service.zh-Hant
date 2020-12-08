@@ -2,9 +2,9 @@
 title: 啟動
 description: 啟動可讓您有效率地開發未來版本的內容。 它們可讓您做好變更，以備日後出版，同時仍能維持目前的頁面
 translation-type: tm+mt
-source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '878'
 ht-degree: 6%
 
 ---
@@ -84,22 +84,31 @@ ht-degree: 6%
 >
 >如果您遇到任何問題，請聯絡您的系統管理員。
 
-### 啟動控制台{#the-launches-console}
-
-「啟動」控制台提供啟動的概述，並可讓您對所列的動作採取動作。 可通過以下方式訪問控制台：
-
-* **工具**&#x200B;控制台：**Tools**、**Sites**、**Launches**。
-
-* 或直接使用`https://<host>:<port>/libs/launches/content/launches.html`
-
 ## 在參考(Sites Console){#launches-in-references-sites-console}中啟動
 
 1. 在&#x200B;**Sites**&#x200B;控制台中，瀏覽至啟動的源。
 1. 開啟&#x200B;**參考**&#x200B;邊欄並選取來源頁面。
-1. 選擇&#x200B;**啟動**，將列出現有啟動：
+1. 選擇&#x200B;**啟動**，將列出現有啟動，並訪問&#x200B;**啟動控制台**:
 
    ![網站主控台中啟動的參考](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. 點選／按一下適當的啟動，將會顯示可能動作的清單：
 
    ![在網站主控台中啟動的動作](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+
+## 啟動控制台{#the-launches-console}
+
+「啟動」控制台提供啟動的概述，並可讓您對所列的動作採取動作。 可通過以下方式訪問控制台：
+
+* **工具**&#x200B;控制台：**Tools**、**Sites**、**Launches**。
+
+* **在「** 網站」主控台中導覽 **** 來源內容時，啟 **** 動Console會進入Referencesrail的「啟動」區段底部。
+
+   ![在Sites Console中啟動的參考中啟動主控台](/help/sites-cloud/authoring/assets/launches-references.png)
+
+* 在Sites主控台中導覽啟動內容時，右上角的&#x200B;**啟動**&#x200B;按鈕：
+
+   ![Sites主控台中的啟動選項](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+
+* 或者直接；例如，使用：
+   `https://<host>:<port>/libs/launches/content/launches.html`
