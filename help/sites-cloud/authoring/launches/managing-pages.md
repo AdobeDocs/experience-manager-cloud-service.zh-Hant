@@ -2,9 +2,9 @@
 title: 在啟動中管理頁面
 description: '您可以在Launch中建立新頁面。 您也可以刪除不想要的頁面。 '
 translation-type: tm+mt
-source-git-commit: 1a753aa9132a6de73e093caa1f682a78f29348c4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,8 @@ ht-degree: 0%
 * 選擇現有頁面並採取行動；例如，**Edit**，開啟&#x200B;**Properties**,**Lock**,**Copy**,**Paste**&#x200B;和&#x200B;**Delete**
 
    ![從「管理內容」導覽Sites Console中的啟動](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+* 使用&#x200B;**References**&#x200B;邊欄返回&#x200B;**啟動來源**頁面：
+   ![Sites Console —— 啟動源](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## 將頁面新增至您的啟動{#add-pages-to-launch}
 
