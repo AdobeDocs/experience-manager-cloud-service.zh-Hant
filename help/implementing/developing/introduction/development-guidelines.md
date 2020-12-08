@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發方針
 description: AEM as a Cloud Service 開發方針
 translation-type: tm+mt
-source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
+source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
 workflow-type: tm+mt
-source-wordcount: '2237'
+source-wordcount: '2239'
 ht-degree: 1%
 
 ---
@@ -122,7 +122,7 @@ AEM中不支援從「發佈」到「作者」的反向複製，做為雲端服�
 
 雲環境上的線程轉儲是持續收集的，但目前無法以自助方式下載。 同時，如果需要執行緒轉儲來除錯問題，請連絡AEM支援，並指定確切的時間視窗。
 
-## CRX/DE Lite和系統控制台{#crxde-lite-and-system-console}
+## CRX/DE Lite和Developer Console {#crxde-lite-and-developer-console}
 
 ### 本地開發{#local-development}
 
@@ -132,7 +132,7 @@ AEM中不支援從「發佈」到「作者」的反向複製，做為雲端服�
 
 ### AEM作為雲端服務開發工具{#aem-as-a-cloud-service-development-tools}
 
-客戶可在開發環境中存取CRXDE lite，但無法在舞台或生產環境中存取。 不可變的儲存庫(`/libs`, `/apps`)在運行時無法寫入，因此嘗試寫入將導致錯誤。
+客戶可在作者層的開發環境中存取CRXDE lite，但不能在舞台或生產環境中存取。 不可變的儲存庫(`/libs`, `/apps`)在運行時無法寫入，因此嘗試寫入將導致錯誤。
 
 Developer Console中提供一組工具，可讓您將AEM除錯為Cloud Service開發人員環境，以用於開發、階段和生產環境。 可依下列方式調整「作者」或「發佈」服務URL來判斷URL:
 
