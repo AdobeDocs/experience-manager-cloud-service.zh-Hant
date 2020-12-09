@@ -1,8 +1,8 @@
 ---
 title: 提供動態媒體資產
-description: 瞭解如何提供動態媒體資產
+description: 瞭解如何提供動態媒體資產。
 translation-type: tm+mt
-source-git-commit: 7a2eef19a3807d02e7eba0ce177465aabc35a53e
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # 傳送動態媒體資產{#delivering-dynamic-media-assets}
 
-如何提供動態媒體資產（視訊和影像）取決於網站的實作方式。
+您如何提供動態媒體資產（包括視訊和影像）取決於網站的實作方式。
 
 使用動態媒體時，您有數個選項：
 
