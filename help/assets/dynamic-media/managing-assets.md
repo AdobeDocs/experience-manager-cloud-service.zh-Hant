@@ -1,8 +1,8 @@
 ---
 title: 關於管理動態媒體資產
-description: 瞭解如何使用動態媒體資產
+description: 瞭解如何使用動態媒體資產。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 13%
