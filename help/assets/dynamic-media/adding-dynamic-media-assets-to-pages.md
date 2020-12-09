@@ -1,10 +1,10 @@
 ---
 title: 新增動態媒體資產至頁面
-description: 如何在Experience Manager中將Dynamic Media元件新增至頁面
+description: 如何將Dynamic Media元件新增至Adobe Experience Manager中的頁面，做為雲端服務。
 translation-type: tm+mt
-source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '3134'
+source-wordcount: '3139'
 ht-degree: 8%
 
 ---
