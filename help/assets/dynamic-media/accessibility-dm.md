@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Dynamic Media]中的輔助功能'
-description: 瞭解動態媒體和動態媒體檢視器中的協助功能
+description: 瞭解動態媒體和動態媒體檢視器中的協助功能。
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
