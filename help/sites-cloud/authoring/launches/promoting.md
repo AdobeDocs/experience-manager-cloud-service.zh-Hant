@@ -2,10 +2,10 @@
 title: 提升啟動
 description: '發佈前，您需要促銷啟動頁面，將內容移回來源（生產）。 '
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 645d25753e4baa03ba4df0645a266b793ec64a49
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 6%
+source-wordcount: '817'
+ht-degree: 5%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 6%
       1. 選取特定的啟動以顯示可用的動作。
       1. 選擇&#x200B;**Promote launch**&#x200B;以開啟嚮導。
    * 導覽啟動頁面時，**Sites**&#x200B;主控台：
-      1. 使用[選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md)選擇所需的啟動頁。
+      1. 使用[選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md)選擇所需的啟動頁面。
       1. 工具欄中將提供&#x200B;**Promote**&#x200B;操作。
    * **啟動**&#x200B;控制台：
       1. 選取您的啟動（點選／按一下縮圖）。
@@ -64,6 +64,7 @@ ht-degree: 6%
    * **範圍**
       * **提升完整啟動項**
       * **提升已修改頁面**
+      * **提升已核准的頁面** -視啟動核准工作流程而定
       * **升級目前頁面**
       * **升級目前頁面與子頁面**
 
@@ -75,7 +76,7 @@ ht-degree: 6%
       >
       >這涵蓋單次啟動，如果您已巢狀啟動，請參閱[提升巢狀啟動](#promoting-a-nested-launch)。
 1. 選擇&#x200B;**Next**&#x200B;繼續。
-1. 您可以檢閱要升級的頁面，這些會視您選擇的頁面範圍而定：
+1. 您可以檢閱要升級的頁面；這取決於您選擇的頁面範圍：
 
    ![審查促銷活動](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
@@ -106,6 +107,7 @@ ht-degree: 6%
    * **範圍** -您可以在這裡選擇是升級整個啟動，還是僅升級實際已編輯的頁面。如果是後者，則可以選擇包含／排除子頁面。 預設配置是僅提升當前頁面的頁面更改：
       * **提升完整啟動項**
       * **提升已修改頁面**
+      * **提升已核准的頁面** -視啟動核准工作流程而定
       * **升級目前頁面**
       * **升級目前頁面與子頁面**
 
