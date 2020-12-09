@@ -1,8 +1,8 @@
 ---
-description: 'Dynamic Media Newsletter by Experience League是每月的電子報。 它可協助您快速上手使用Dynamic Media和Dynamic Media Classic，讓您立即開始實現價值。 本一站式商店電子報提供寶貴的知識建立資源，包括如何製作影片、解決方案概觀，以及介紹一些主要功能和功能，例如影像預設集、檢視器預設集、影片設定檔等。 '
 title: 動態媒體電子報
+description: 'Dynamic Media Newsletter by Experience League是每月的電子報。 它可協助您快速上手使用Dynamic Media和Dynamic Media Classic，讓您立即開始實現價值。 本一站式商店電子報提供寶貴的知識建立資源，包括如何製作影片、解決方案概觀，以及介紹一些主要功能和功能，例如影像預設集、檢視器預設集、影片設定檔等。 '
 translation-type: tm+mt
-source-git-commit: 167214d332825fb75b513d316eefa38a2eae097d
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 0%
