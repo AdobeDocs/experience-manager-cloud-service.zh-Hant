@@ -4,7 +4,7 @@ description: 您可以建立啟動來更新現有網頁的新版本，以供日�
 translation-type: tm+mt
 source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1045'
 ht-degree: 12%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->當您建立啟動時，階層中上方的頁面會以範本建立：
+>當您建立啟動時，階層中上方的頁面並非來源頁面的副本。 它們是佔位符，使用模板建立：
 >
 >* `/libs/launches/templates/outofscope`
 >
