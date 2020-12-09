@@ -1,8 +1,8 @@
 ---
 title: 互動影片
-description: 瞭解如何在動態媒體中處理互動式視訊和可購買視訊
+description: 瞭解如何在動態媒體中處理互動式視訊和可購買視訊。
 translation-type: tm+mt
-source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '6016'
 ht-degree: 4%
@@ -219,7 +219,7 @@ Quickview的大多數實施都採用以下模式：
 
 在製作環境中按一下縮圖時，會出現「快速檢視」對話方塊的預覽。
 
-![chlimage_1-29](assets/chlimage_1-127.png)
+![chlimage_1-21](assets/chlimage_1-127.png)
 
 您可以選擇建立自訂的互動式視訊檢視器預設集。 您可決定視訊播放器的樣式、互動式縮圖和視訊結尾的縮圖格線檢視。
 
@@ -464,7 +464,7 @@ Quickview的大多數實施都採用以下模式：
       在時間軸上，點選您要分成兩半的區段，然後點選工具列上的「分割區段」。****
 
       選取兩個或多個區段會停用「分割區段」功能。****
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
    將選取的10秒區段分割為兩個區段，每個區段5秒。
 
