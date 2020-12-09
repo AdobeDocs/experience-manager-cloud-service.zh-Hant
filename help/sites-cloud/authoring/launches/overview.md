@@ -2,10 +2,10 @@
 title: 啟動
 description: 啟動可讓您有效率地開發未來版本的內容。 它們可讓您做好變更，以備日後出版，同時仍能維持目前的頁面
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 6%
+source-wordcount: '907'
+ht-degree: 5%
 
 ---
 
@@ -20,6 +20,11 @@ ht-degree: 6%
 
 * 對因正常維護任務而發生的源頁面進行更改。 這些變更會自動在啟動頁面中複製。
 * 直接在啟動頁面上執行的編輯，以備下一季度使用。
+
+您也可以：
+
+* 在啟動分支中導覽內容；視需要新增或移除頁面。
+* 預覽發佈內容未來的特定日期／日期外觀。
 
 下一季到來時，您會促銷啟動頁面，以便發佈來源頁面（保有更新的內容）。 您可以升級所有頁面，或僅升級已修改的頁面。
 
