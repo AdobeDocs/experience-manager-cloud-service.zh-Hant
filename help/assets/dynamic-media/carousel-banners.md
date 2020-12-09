@@ -1,8 +1,8 @@
 ---
 title: 輪播橫幅
-description: 瞭解如何在動態媒體中使用轉盤橫幅
+description: 瞭解如何在動態媒體中使用轉盤橫幅。
 translation-type: tm+mt
-source-git-commit: 98a005dacc0bce0c03f0a58c50c6e85f12b1197f
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 4%
