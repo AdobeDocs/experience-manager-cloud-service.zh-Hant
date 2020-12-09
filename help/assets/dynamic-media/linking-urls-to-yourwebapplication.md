@@ -1,8 +1,8 @@
 ---
 title: 將 URL 連結至您的 Web 應用程式
-description: 如何將URL連結至動態媒體中的Web應用程式
+description: 如何在Dynamic Media中將URL連結至您的Web應用程式。
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 11%
