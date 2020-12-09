@@ -1,8 +1,8 @@
 ---
 title: 迴轉集
-description: 瞭解如何在動態媒體中處理回轉集
+description: 瞭解如何在動態媒體中處理回轉集。
 translation-type: tm+mt
-source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 12%
