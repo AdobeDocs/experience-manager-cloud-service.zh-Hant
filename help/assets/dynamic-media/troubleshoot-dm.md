@@ -1,11 +1,11 @@
 ---
 title: Dynamic Media 疑難排解
-description: Dynamic Media 疑難排解.
+description: 使用動態媒體時的疑難排解提示。
 translation-type: tm+mt
-source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 2%
+source-wordcount: '998'
+ht-degree: 1%
 
 ---
 
