@@ -1,8 +1,8 @@
 ---
 title: 設定動態媒體
-description: 若要設定動態媒體，您必須設定動態媒體並管理影像和檢視器預設集
+description: 若要設定動態媒體，您必須設定動態媒體並管理影像和檢視器預設集。
 translation-type: tm+mt
-source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 3%
