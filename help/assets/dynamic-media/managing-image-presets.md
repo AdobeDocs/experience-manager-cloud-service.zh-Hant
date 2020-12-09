@@ -1,8 +1,8 @@
 ---
 title: 管理影像預設集
-description: 瞭解影像預設集，並瞭解如何建立、修改及管理影像預設集
+description: 瞭解影像預設集，並瞭解如何建立、修改及管理影像預設集。
 translation-type: tm+mt
-source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '3608'
 ht-degree: 11%
