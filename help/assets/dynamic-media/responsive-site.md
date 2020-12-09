@@ -1,10 +1,10 @@
 ---
 title: 為互動式網站提供最佳化影像
-description: 如何使用回應式程式碼功能來提供最佳化的影像
+description: 瞭解如何使用回應式程式碼功能，從動態媒體提供最佳化的影像。
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '322'
 ht-degree: 13%
 
 ---
