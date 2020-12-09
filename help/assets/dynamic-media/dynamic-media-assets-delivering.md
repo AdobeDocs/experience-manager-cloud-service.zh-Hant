@@ -1,8 +1,8 @@
 ---
 title: 傳送 Dynamic Media 資產
-description: 有了Dynamic Media，您有數種選項可將動態媒體資產（包括視訊和影像）傳送至您的網站。
+description: 有了Dynamic Media，您有數種選項可將您的動態媒體資產（包括視訊和影像）傳送至您的網站。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 13%
