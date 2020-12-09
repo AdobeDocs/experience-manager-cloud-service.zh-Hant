@@ -1,10 +1,10 @@
 ---
 title: 影像品質最佳化的最佳作法
-description: 瞭解在動態媒體中最佳化影像品質的最佳範例
+description: 瞭解可在Dynamic Media中使用的最佳實務，以最佳化影像資產的品質。
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1497'
 ht-degree: 5%
 
 ---
