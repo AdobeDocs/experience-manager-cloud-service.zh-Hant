@@ -4,10 +4,10 @@ user-guide-title: 轉移至 AEM as a Cloud Service
 breadcrumb-title: 移轉指南
 user-guide-description: 了解轉換至雲端服務的過程。
 translation-type: tm+mt
-source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
+source-git-commit: 4ded4f7da78c42f28cf8e472f88d18918f8cf1d0
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 86%
+source-wordcount: '83'
+ht-degree: 84%
 
 ---
 
@@ -31,4 +31,5 @@ ht-degree: 86%
    + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
    + [資產工作流程移轉](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher 轉換工具](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
+   + [索引轉換器](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
    + [AEM 現代化工具](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
