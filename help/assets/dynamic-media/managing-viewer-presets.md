@@ -1,10 +1,10 @@
 ---
 title: 管理檢視器預設集
-description: 如何建立和管理檢視器預設集
+description: 如何在動態媒體中建立和管理檢視器預設集。
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '4258'
+source-wordcount: '4261'
 ht-degree: 15%
 
 ---
