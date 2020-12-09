@@ -1,11 +1,11 @@
 ---
 title: 發佈動態媒體資產
-description: 如何發佈動態媒體資產
+description: 瞭解如何發佈動態媒體資產。
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: b65ce0af6281f60272322744f0e6f81b7eb6b96a
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '469'
 ht-degree: 3%
 
 ---
