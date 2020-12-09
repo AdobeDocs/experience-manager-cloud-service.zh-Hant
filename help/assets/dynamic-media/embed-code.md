@@ -1,10 +1,10 @@
 ---
 title: 將動態媒體視訊或影像檢視器內嵌至網頁
-description: 瞭解如何將動態媒體視訊或影像內嵌在網頁上
+description: 瞭解如何將動態媒體視訊或影像資產內嵌在網頁上。
 translation-type: tm+mt
-source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 22%
 
 ---
