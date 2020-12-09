@@ -2,7 +2,7 @@
 title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 translation-type: tm+mt
-source-git-commit: ee53d400627fe2fd97d5cbdea8ddd38e00af191f
+source-git-commit: 38a589297caf3b28c7be569a819bd104a5079066
 workflow-type: tm+mt
 source-wordcount: '4050'
 ht-degree: 9%
@@ -17,12 +17,7 @@ ht-degree: 9%
 本節說明如何將AEM架構為雲端服務Apache和Dispatcher組態，以及如何在部署至雲端環境之前在本機驗證並執行它。 此外，也說明在雲端環境中進行除錯。 有關Dispatcher的其他資訊，請參閱[AEM Dispatcher檔案](https://docs.adobe.com/content/help/zh-Hant/experience-manager-dispatcher/using/dispatcher.html)。
 
 >[!NOTE]
->
 >Windows使用者將需要使用Windows 10 Professional或其他支援Docker的散發版本。 這是在本地電腦上運行和調試Dispatcher的先決條件。 以下各節包含使用Mac或Linux版本SDK的命令，但Windows SDK也可以使用類似的方式。
-<!--
->[!WARNING]
->
->Windows users: the current version of AEM as a Cloud Service local Dispatcher Tools (v2.0.20) is incompatible with Windows. Please contact [Adobe Support](https://daycare.day.com/home.html) to receive updates on Windows compatibility. Alexandru note: removed at the request of Brian C -->
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
