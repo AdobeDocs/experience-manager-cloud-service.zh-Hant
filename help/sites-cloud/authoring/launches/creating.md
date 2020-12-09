@@ -2,10 +2,10 @@
 title: '建立啟動 '
 description: 您可以建立啟動來更新現有網頁的新版本，以供日後啟動。
 translation-type: tm+mt
-source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
+source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 13%
+source-wordcount: '1036'
+ht-degree: 12%
 
 ---
 
@@ -19,6 +19,18 @@ ht-degree: 13%
 * 依預設，即時副本會隨著來源頁面的變更自動更新啟動頁面。 您可以指定建立靜態副本以防止自動更改。<!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
 (可選) 您可以指定 **啟動日期**  (和時間)，以定義啟動頁面要升級和啟動的時間。不過，「 **啟動日期** 」只會搭配「生產就緒 **」旗標運作(請** 參閱編輯啟動設定 [](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration));要讓動作實際自動發生，必須同時設定。
+
+>[!NOTE]
+>
+>當您建立啟動時，階層中上方的頁面會以範本建立：
+>
+>* `/libs/launches/templates/outofscope`
+>
+>
+無法編輯這些頁面。 您將看到以下訊息：
+>
+>* **此頁面不屬於啟動的一部分。前往生產頁面**
+
 
 ## 建立啟動{#creating-a-launch}
 
