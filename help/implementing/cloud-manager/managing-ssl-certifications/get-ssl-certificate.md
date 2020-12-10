@@ -2,9 +2,9 @@
 title: 取得SSL憑證——管理SSL憑證
 description: 取得SSL憑證——管理SSL憑證
 translation-type: tm+mt
-source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
+source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,5 @@ ht-degree: 0%
 
 >[!NOTE]
 >AEM做為雲端服務將只接受OV（組織驗證）或EV（延伸驗證）憑證。 不接受DV（網域驗證）或自簽證書。 OV和EV憑證可為使用者提供額外、經CA驗證的資訊，供他們用來判斷網站擁有者、電子郵件寄件者或可執行程式碼或PDF檔案的數位簽章者是否可信。 DV憑證是通用且便宜的。 但是，它們不允許所有權驗證。
+>此外，任何憑證都必須是來自受信任認證機構(CA)的X.509 TLS憑證，且具備相符的2048位元RSA私密金鑰。
 
