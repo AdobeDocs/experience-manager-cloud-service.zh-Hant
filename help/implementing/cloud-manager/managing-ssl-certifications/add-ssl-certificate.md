@@ -2,9 +2,9 @@
 title: 新增SSL憑證——管理SSL憑證
 description: 新增SSL憑證——管理SSL憑證
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ SSL檔案必須採用PEM格式，才能安裝在Cloud Manager上。 PEM格式內
 
 請依照下列步驟，將SSL檔案的格式轉換為PEM:
 
-1. 將PFX轉換為PEM
+* 將PFX轉換為PEM
 
-`openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
 
-1. 將P7B轉換為PEM
+* 將P7B轉換為PEM
 
-`openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
 
-1. 將DER轉換為PEM
+* 將DER轉換為PEM
 
-`openssl x509 -inform der -in certificate.cer -out certificate.pem`
+   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
 ## 重要注意事項{#important-considerations}
 
@@ -50,9 +50,11 @@ SSL檔案必須採用PEM格式，才能安裝在Cloud Manager上。 PEM格式內
 1. 從左側導覽功能表按一下「**SSL憑證**」。 此螢幕上將顯示一個包含任何現有SSL證書詳細資訊的表。
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
-1. 選擇&#x200B;**添加證書**&#x200B;按鈕以開啟&#x200B;**添加SSL證書**&#x200B;對話框。
+
+1. 按一下&#x200B;**添加SSL證書**&#x200B;以開啟&#x200B;**添加SSL證書**&#x200B;對話框。
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
    1. 在&#x200B;**證書名稱**&#x200B;中輸入證書的名稱。 此名稱可協助您輕鬆參考憑證。
    1. 將&#x200B;**證書**、**私鑰**&#x200B;和&#x200B;**證書鏈**貼上到各自的欄位中。 使用輸入方塊右側的貼上圖示。
 這三個欄位都不是選用欄位，必須加入。
@@ -84,6 +86,4 @@ SSL檔案必須採用PEM格式，才能安裝在Cloud Manager上。 PEM格式內
 
 ### 證書有效日期{#certificate-validity-dates}
 
-Cloud Manager預計SSL憑證在未來至少90天內有效
-
-檢查證書鏈的有效性。
+Cloud Manager預計SSL憑證在未來至少90天內有效。 您應檢查憑證鏈的有效性。
