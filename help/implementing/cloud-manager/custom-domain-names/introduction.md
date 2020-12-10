@@ -2,9 +2,9 @@
 title: 簡介——自訂網域名稱
 description: 簡介——自訂網域名稱
 translation-type: tm+mt
-source-git-commit: 7704c19e440b1fedc651ce0115eb5e5ecf1eba1c
+source-git-commit: f40f87cb61d5f66ca5773d1fd1cfee6fb623201d
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,6 @@ Cloud Manager可讓您新增自訂網域，以透過UI以自助方式使用唯�
 
 使用「Cloud Manager UI Domain Settings」（雲端管理器UI網域設定）頁面或「Environment Details」（環境詳細資訊）頁面，擁有權限的使用者可以執行數項工作來管理您環境的自訂網域名稱，包括：
 
-* 新增自訂網域名稱。
-* 檢視或更新自訂網域名稱，讓使用者檢視詳細資訊或取代即將過期的憑證。
-* 刪除自訂網域名稱。
+* [新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+* [檢視或更新自訂網](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) 域名稱，讓使用者檢視詳細資訊或取代即將到期的憑證
+* [刪除自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
