@@ -2,9 +2,9 @@
 title: 新增SSL憑證——管理SSL憑證
 description: 新增SSL憑證——管理SSL憑證
 translation-type: tm+mt
-source-git-commit: 88ef9265b40f64f2229e37e5f8ca02959e8d9ce2
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,13 @@ SSL檔案必須採用PEM格式，才能安裝在Cloud Manager上。 PEM格式內
 
 `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
-## 添加證書{#adding-certificate}
+## 重要注意事項{#important-considerations}
 
->[!NOTE]
->* 用戶必須是「業務擁有者」或「部署管理員」角色，才能在Cloud Manager中安裝SSL憑證。
->* Cloud Manager在任何指定時間內，最多可允許10個SSL憑證，這些憑證可與您方案中的一個或多個環境相關聯，即使憑證已過期亦然。 不過，Cloud Manager UI允許在此限制下，在程式中安裝最多50個SSL憑證。
+* 用戶必須是「業務擁有者」或「部署管理員」角色，才能在Cloud Manager中安裝SSL憑證。
 
+* Cloud Manager在任何指定時間內，最多可允許10個SSL憑證，這些憑證可與您方案中的一個或多個環境相關聯，即使憑證已過期亦然。 不過，Cloud Manager UI允許在此限制下，在程式中安裝最多50個SSL憑證。
+
+## 添加證書{#adding-a-cert}
 
 請依照下列步驟新增憑證：
 
@@ -51,13 +52,14 @@ SSL檔案必須採用PEM格式，才能安裝在Cloud Manager上。 PEM格式內
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 1. 選擇&#x200B;**添加證書**&#x200B;按鈕以開啟&#x200B;**添加SSL證書**&#x200B;對話框。
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-2.png)
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
    1. 在&#x200B;**證書名稱**&#x200B;中輸入證書的名稱。 此名稱可協助您輕鬆參考憑證。
-   1. 將&#x200B;**證書**、**私鑰**&#x200B;和&#x200B;**證書鏈**&#x200B;貼上到各自的欄位中。 使用輸入方塊右側的貼上圖示。
+   1. 將&#x200B;**證書**、**私鑰**&#x200B;和&#x200B;**證書鏈**貼上到各自的欄位中。 使用輸入方塊右側的貼上圖示。
+這三個欄位都不是選用欄位，必須加入。
 
-      >[!NOTE]
-      >這三個欄位都不是選用欄位，必須加入。
 1. 按一下&#x200B;**Save**&#x200B;以送出憑證。 您會在表格中看到它顯示為新列。
+
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
    >[!NOTE]
    >將顯示檢測到的任何錯誤。 您必須先解決所有錯誤，才能儲存憑證。 請參閱[Certificate Errors](#certificate-errors)以進一步瞭解如何解決常見錯誤。
 
