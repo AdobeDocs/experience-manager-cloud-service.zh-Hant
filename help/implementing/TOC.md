@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service 實作
 breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 translation-type: tm+mt
-source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
+source-git-commit: b19dfdd33ae789e56a56edc7a3d7ea960ba46d91
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '692'
 ht-degree: 44%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 44%
       + [簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [取得SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
       + [新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-      + [查看和更新或替換SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [查看、更新和替換SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [檢查SSL證書的狀態](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [刪除SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
    + 管理自定義域名{#custom-domain-names}
