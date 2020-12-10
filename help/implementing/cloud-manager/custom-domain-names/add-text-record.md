@@ -2,7 +2,7 @@
 title: 添加TXT記錄
 description: 新增自訂網域名稱
 translation-type: tm+mt
-source-git-commit: 8d97bedc8c473c13e3378849741104b2c85492e2
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -19,7 +19,7 @@ DNS TXT記錄會授權網域以裝載於CDN服務中。 客戶必須在授權Clo
 * 能夠修改您組織網域的DNS記錄，或聯絡可以修改的適當人員。
 * 如果您尚未知道，請識別您的網域主機或註冊機構。
 
-當您啟動網域驗證時，Cloud Manager會為您提供用於驗證的名稱和TXT值。 使用指定的名稱和值將TXT記錄添加到域的DNS伺服器。
+當您啟動網域驗證時，Cloud Manager會提供您用於驗證的名稱和TXT值。 使用指定的名稱和值將TXT記錄添加到域的DNS伺服器。
 
 1. 登入您的網域主機，並造訪DNS記錄區段。
 1. 將`_aemverification.[yourdomainname]`新增為名稱，並新增TXT值。
