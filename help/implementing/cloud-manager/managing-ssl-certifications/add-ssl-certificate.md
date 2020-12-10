@@ -2,9 +2,9 @@
 title: 新增SSL憑證——管理SSL憑證
 description: 新增SSL憑證——管理SSL憑證
 translation-type: tm+mt
-source-git-commit: b6911f0b8674550713bd4ec1e34be5d0a14cc427
+source-git-commit: 88ef9265b40f64f2229e37e5f8ca02959e8d9ce2
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >[!NOTE]
 >AEM做為雲端服務將只接受OV（組織驗證）或EV（延伸驗證）憑證。 DV（網域驗證）憑證將不會被接受。
 
-憑證布建需要數天，建議在數個月前布建憑證。 如需詳細資訊，請參閱「取得SSL憑證」。
+憑證布建需要數天，建議在數個月前布建憑證。 如需詳細資訊，請參閱[取得SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)。
 
 ## 證書格式{#certificate-format}
 
@@ -45,16 +45,21 @@ SSL檔案必須採用PEM格式，才能安裝在Cloud Manager上。 PEM格式內
 請依照下列步驟新增憑證：
 
 1. 登入Cloud Manager。
-1. 從「概述」頁面導覽至「環境」畫面。
-1. 從左側導覽功能表導覽至「SSL憑證」畫面。 此螢幕上將顯示一個包含任何現有SSL證書詳細資訊的表。
-1. 選擇&#x200B;**添加證書**&#x200B;按鈕以啟動嚮導。
-   1. 提供憑證的名稱。 此名稱可協助您輕鬆參考憑證。
-   1. 將「憑證」、「私密金鑰」和「鎖鏈」內容貼入其各自的欄位。 使用輸入方塊右側的貼上圖示。
+1. 從&#x200B;**概述**&#x200B;頁面導覽至&#x200B;**環境**&#x200B;畫面。
+1. 從左側導覽功能表按一下「**SSL憑證**」。 此螢幕上將顯示一個包含任何現有SSL證書詳細資訊的表。
+
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+1. 選擇&#x200B;**添加證書**&#x200B;按鈕以開啟&#x200B;**添加SSL證書**&#x200B;對話框。
+
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-2.png)
+   1. 在&#x200B;**證書名稱**&#x200B;中輸入證書的名稱。 此名稱可協助您輕鬆參考憑證。
+   1. 將&#x200B;**證書**、**私鑰**&#x200B;和&#x200B;**證書鏈**&#x200B;貼上到各自的欄位中。 使用輸入方塊右側的貼上圖示。
 
       >[!NOTE]
       >這三個欄位都不是選用欄位，必須加入。
-1. 提交憑證後，您會在表格中看到它顯示為新列。
-
+1. 按一下&#x200B;**Save**&#x200B;以送出憑證。 您會在表格中看到它顯示為新列。
+   >[!NOTE]
+   >將顯示檢測到的任何錯誤。 您必須先解決所有錯誤，才能儲存憑證。 請參閱[Certificate Errors](#certificate-errors)以進一步瞭解如何解決常見錯誤。
 
 ## 證書錯誤{#certificate-errors}
 
