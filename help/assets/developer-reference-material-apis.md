@@ -3,17 +3,65 @@ title: ' [!DNL Assets]的開發人員參考'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 1%
+source-wordcount: '1400'
+ht-degree: 2%
 
 ---
 
 
-# [!DNL Assets] API和開發人員參考資料  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] API和開發人員參考資料  {#assets-cloud-service-apis}
 
-文章包含[!DNL Assets]開發人員的參考資料和資源，作為[!DNL Cloud Service]。 它包含新的上傳方法、API參考，以及後處理工作流程中提供的支援相關資訊。
+文章包含[!DNL Assets]開發人員的建議、參考資料和資源，做為[!DNL Cloud Service]。 它包含新的資產上傳模組、API參考，以及後處理工作流程中提供的支援資訊。
+
+## [!DNL Experience Manager Assets] API與作業  {#use-cases-and-apis}
+
+[!DNL Assets] 提供數 [!DNL Cloud Service] 個API，以程式設計方式與數位資產互動。每個API都支援特定的使用案例，如下表所述。 [!DNL Assets]使用者介面、[!DNL Experience Manager]案頭應用程式和[!DNL Adobe Asset Link]支援所有或部分作業。
+
+>[!CAUTION]
+>
+>某些API仍然存在，但不受主動支援（以×表示），且不得使用。
+
+| 支援等級 | 說明 |
+| ------------- | --------------------------- |
+| ý | 支援 |
+| × | 不支援. 請勿使用。 |
+| - | 不可用 |
+
+| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava APIs | [資產計算服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _（預覽）_ |
+| ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
+| **原始二進位** |  |  |  |  |  |  |
+| 建立原稿 | ý | × | - | × | × | - |
+| 讀取原稿 | - | × | ý | ý | ý | - |
+| 更新原始 | ý | × | ý | × | × | - |
+| 刪除原稿 | - | ý | - | ý | ý | - |
+| 複製原稿 | - | ý | - | ý | ý | - |
+| 移動原稿 | - | ý | - | ý | ý | - |
+| **中繼資料** |  |  |  |  |  |  |
+| 建立中繼資料 | - | ý | ý | ý | ý | - |
+| 讀取中繼資料 | - | ý | - | ý | ý | - |
+| 更新中繼資料 | - | ý | ý | ý | ý | - |
+| 刪除中繼資料 | - | ý | ý | ý | ý | - |
+| 複製中繼資料 | - | ý | - | ý | ý | - |
+| 移動中繼資料 | - | ý | - | ý | ý | - |
+| **內容片段(CF)** |  |  |  |  |  |  |
+| 建立CF | - | ý | - | ý | - | - |
+| 閱讀CF | - | ý | - | ý | - | ý |
+| 更新CF | - | ý | - | ý | - | - |
+| 刪除CF | - | ý | - | ý | - | - |
+| 複製CF | - | ý | - | ý | - | - |
+| 移動CF | - | ý | - | ý | - | - |
+| **版本** |  |  |  |  |  |  |
+| 建立版本 | ý | ý | - | - | - | - |
+| 閱讀版本 | - | ý | - | - | - | - |
+| 刪除版本 | - | ý | - | - | - | - |
+| **資料夾** |  |  |  |  |  |  |
+| 建立資料夾 | ý | ý | - | ý | - | - |
+| 讀取資料夾 | - | ý | - | ý | - | - |
+| 刪除資料夾 | ý | ý | - | ý | - | - |
+| 複製資料夾 | ý | ý | - | ý | - | - |
+| 移動資料夾 | ý | ý | - | ý | - | - |
 
 ## 資產上傳{#asset-upload-technical}
 
@@ -31,8 +79,7 @@ ht-degree: 1%
 * 二進位雲端儲存空間可與內容放送網路(CDN)或Edge網路搭配使用。 CDN選擇更接近用戶端的上傳端點。 當資料傳輸至附近端點的距離較短時，上傳效能和使用者體驗會有所改善，尤其是對於分散各地的團隊而言。
 
 >[!NOTE]
->
->請參閱在開放原始碼[aem-upload程式庫](https://github.com/adobe/aem-upload)中實作此方法的用戶端程式碼。
+請參閱在開放原始碼[aem-upload程式庫](https://github.com/adobe/aem-upload)中實作此方法的用戶端程式碼。
 
 ### 開始上傳{#initiate-upload}
 
