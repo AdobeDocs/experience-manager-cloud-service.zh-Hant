@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service 入門
 breadcrumb-title: 入門指南
 user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。
 translation-type: tm+mt
-source-git-commit: 5e81e6ed9c44956384ff248bb28cebc861cf0b76
+source-git-commit: f836254f6c4874621d4772758b29c6b22aff0ed6
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 86%
+source-wordcount: '357'
+ht-degree: 62%
 
 ---
 
@@ -43,6 +43,32 @@ ht-degree: 86%
       + [使用精靈](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [設定專案](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [瞭解構建環境](getting-access-to-aem-in-cloud/build-environment-details.md)
+   + 管理SSL證書{#manage-ssl-certificates}
+      + [簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [取得SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
+      + [新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [查看和更新或替換SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [檢查SSL證書的狀態](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
+      + [刪除SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+   + 自訂網域名稱{#custom-domain-names}
+      + [簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+      + [取得自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
+      + [新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+      + [添加TXT記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+      + [檢查自定義域名狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+      + [配置DNS設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+      + [檢查DNS記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+      + [查看和更新自定義域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [更新自訂網域名稱的SSL憑證](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
+      + [刪除自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   + IP允許清單{#ip-allow-lists}
+      + [簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+      + [添加IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [查看和更新IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [應用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [取消應用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [刪除IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [檢查IP允許清單狀態](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + Cloud Manager的發行說明{#release-notes-cloud-manager}
       + [最新發行說明 (2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [2020.10.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
