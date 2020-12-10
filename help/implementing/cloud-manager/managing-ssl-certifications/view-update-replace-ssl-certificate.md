@@ -2,7 +2,7 @@
 title: '查看更新和替換SSL證書——管理SSL '
 description: 查看更新和替換SSL證書——管理SSL證書
 translation-type: tm+mt
-source-git-commit: 54171b90f99a14fd43c4dc01308264b9a954b927
+source-git-commit: d5a119921a06ea06cbf2b95353083aa987869629
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -19,14 +19,12 @@ ht-degree: 0%
 * 現有證書即將過期。 使用者已使用憑證供應商更新憑證，並希望取代即將到期的現有憑證。 注意：只有具有適當權限的使用者才能進行更新。
 * 使用&#x200B;**檢視與更新**&#x200B;功能表，只要檢視SSL憑證詳細資訊即可。
 * 或者，您也可以變更此畫面中用來參考憑證的名稱。
-   >[!NOTE]
-   >只有具備適當權限的使用者才能進行更新。
+* 只有具備適當權限的使用者才能進行更新。
 
 
 ## 更新SSL憑證即將過期{#update-ssl-certificate}
 
->[!NOTE]
->當憑證過期時，與過期憑證一起使用的任何網域將無法再運作。 若要更新過期的憑證，您必須遵循下列步驟。 這可確保您的網域繼續視需要運作。 新增憑證後，網域必須使用新憑證更新自訂網域名稱，才能視需要運作。 有關詳細資訊，請參閱[查看和更新和替換自定義域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+當憑證過期時，與過期憑證一起使用的任何網域將無法再運作。 若要更新過期的憑證，您必須遵循下列步驟。 這可確保您的網域繼續視需要運作。 新增憑證後，網域必須使用新憑證更新自訂網域名稱，才能視需要運作。 有關詳細資訊，請參閱[查看和更新和替換自定義域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
 請依照下列步驟更新SSL憑證：
 
