@@ -2,9 +2,9 @@
 title: 新增自訂網域名稱
 description: 新增自訂網域名稱
 translation-type: tm+mt
-source-git-commit: 6571c11cedbc0d81fbdfd8072a39b1327bdba10b
+source-git-commit: 9d5f7d633ac8dfaadf315e85666479c87a0afa04
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,13 @@ ht-degree: 0%
 
 用戶必須是業務擁有者或部署管理員，才能在Cloud Manager中新增自訂網域名稱。
 
->[!NOTE]
->在新增自訂網域名稱之前，必須先將包含自訂網域名稱的有效SSL憑證安裝至您的程式。 如需詳細資訊，請參閱安裝SSL憑證。
+## 重要注意事項{#important-considerations}
 
-一次只能添加一個域名。 不過，使用者可以新增萬用字元，例如`*.wknd.com`作為網域名稱，而這可讓多個子網域以單一TXT記錄托管。
-每個Cloud Manager環境最多可以托管每個環境50個自定義域。
-同一個域名不能用於多個環境。
+* 在新增自訂網域名稱之前，必須先將包含自訂網域名稱的有效SSL憑證安裝至您的程式。 請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)以瞭解詳細資訊。
+
+* 一次只能添加一個域名。 不過，使用者可以新增萬用字元，例如`*.wknd.com`作為網域名稱，而這可讓多個子網域以單一TXT記錄托管。
+
+* 每個Cloud Manager環境最多可托管100個自定義域。 同一個域名不能用於多個環境。
 
 ## 從「域設定」頁{#adding-cdn-settings}添加自定義域名
 
@@ -38,10 +39,8 @@ ht-degree: 0%
 
 1. 從下拉式清單中選取SSL憑證，然後選取「繼續」。
 
-1. 這將帶您進入「環境的域名驗證」螢幕。 請參閱新增TXT記錄以瞭解詳細資訊。
-
-   >[!NOTE]
-   >按照提供的說明來證明您環境的域所有權。
+1. 這將帶您進入「環境的域名驗證」螢幕。 請參閱[添加TXT記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)以瞭解詳細資訊。
+按照提供的說明來證明您環境的域所有權。
 
 1. 選擇繼續。
 1. CDN部署需要有效的SSL憑證和成功的TXT驗證。 狀態&#x200B;**已驗證和已部署**&#x200B;表示。
@@ -56,10 +55,7 @@ ht-degree: 0%
 1. 使用「域名」(Domain Names)表格頂部的輸入欄位提交自定義域名SSL證書。 接著選取「新增」。
 1. 這將啟動「添加自定義域名」嚮導，並預先填充「環境名」。
 1. 輸入自訂網域名稱。 注意：在您的域中輸入時，請勿包含`http://`、`https://`或空格。 選擇繼續。
-1. 這將帶您進入「環境的域名驗證」螢幕。 請參閱網域驗證（新增TXT記錄）以瞭解詳細資訊。
-
-   >[!NOTE]
-   >按照提供的說明來證明您環境的域所有權。
+1. 這將帶您進入「環境的域名驗證」螢幕。 請參閱[域驗證](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)以瞭解更多資訊。 按照提供的說明來證明您環境的域所有權。
 
 1. 選擇繼續。
 1. CDN部署需要有效的SSL憑證和成功的TXT驗證。 狀態&#x200B;**已驗證和已部署**&#x200B;表示。
