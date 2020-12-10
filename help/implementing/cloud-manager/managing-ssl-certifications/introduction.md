@@ -2,7 +2,7 @@
 title: 簡介——管理SSL憑證
 description: 簡介——管理SSL憑證
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 簡介 {#introduction}
 
-Cloud Manager為客戶提供自助功能，可透過Cloud Manager UI安裝SSL憑證。 Cloud Manager使用Platform TLS服務來管理客戶擁有的SSL憑證和私密金鑰，通常會從第三方認證機構取得，例如「讓我們加密」。
+Cloud Manager為客戶提供自助功能，可透過Cloud Manager UI安裝SSL憑證。 Cloud Manager使用Platform TLS服務來管理客戶擁有的SSL憑證和私密金鑰，通常是從第三方認證機構取得，例如&#x200B;*讓Encrypt*。
 
 ## 重要注意事項{#important-considerations}
 
