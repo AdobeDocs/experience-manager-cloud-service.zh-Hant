@@ -2,7 +2,7 @@
 title: '查看更新和替換SSL證書——管理SSL '
 description: 查看更新和替換SSL證書——管理SSL證書
 translation-type: tm+mt
-source-git-commit: d5a119921a06ea06cbf2b95353083aa987869629
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 更新SSL憑證即將過期{#update-ssl-certificate}
 
-當憑證過期時，與過期憑證一起使用的任何網域將無法再運作。 若要更新過期的憑證，您必須遵循下列步驟。 這可確保您的網域繼續視需要運作。 新增憑證後，網域必須使用新憑證更新自訂網域名稱，才能視需要運作。 有關詳細資訊，請參閱[查看和更新和替換自定義域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+當憑證過期時，與過期憑證一起使用的任何網域將無法再運作。 若要更新過期的憑證，您必須遵循下列步驟。 這可確保您的網域繼續視需要運作。 新增憑證後，網域必須使用新憑證更新自訂網域名稱，才能視需要運作。 有關詳細資訊，請參閱[查看和更新和替換自定義域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)。
 
 請依照下列步驟更新SSL憑證：
 
