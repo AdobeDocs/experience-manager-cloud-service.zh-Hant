@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service 入門
 breadcrumb-title: 入門指南
 user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '380'
 ht-degree: 59%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 59%
       + [簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [新增IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [查看和更新IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [應用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
       + [取消應用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [刪除IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [檢查IP允許清單狀態](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
