@@ -2,7 +2,7 @@
 title: 檢查DNS記錄狀態
 description: 檢查DNS記錄狀態
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -14,8 +14,7 @@ ht-degree: 0%
 
 您可以從「網域設定」頁面的「環境」表格中，按一下DNS記錄的「狀態」圖示，判斷您的網域名稱是否正確解析為AEM雲端服務網站。
 
->[!NOTE]
->當您的自訂網域名稱首次成功驗證並部署時，Cloud Manager會自動觸發DNS查閱。 對於後續嘗試，您必須主動選擇狀態旁邊的&#x200B;**resolve again**&#x200B;圖示。
+當您的自訂網域名稱首次成功驗證並部署時，Cloud Manager會自動觸發DNS查閱。 對於後續嘗試，您必須主動選擇狀態旁邊的&#x200B;**resolve again**&#x200B;圖示。
 
 Cloud Manager會針對您的網域名稱執行DNS查閱，並顯示下列其中一條狀態訊息：
 
