@@ -2,9 +2,9 @@
 title: 檢查SSL證書的狀態——管理SSL證書
 description: 檢查SSL證書的狀態——管理SSL證書
 translation-type: tm+mt
-source-git-commit: e27e5302802e68dce2a5713626950896bb35420a
+source-git-commit: f426a9a653a3a3ae06abdbd2262e5d8f4beff277
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 正在檢查SSL證書的狀態{#checking-status-an-ssl-certificate}
 
-從SSL憑證頁面或「環境詳細資訊」頁面，一覽即可瞭解您的SSL憑證狀態。
+從SSL憑證頁面一覽即可瞭解您的SSL憑證狀態。
 
 您可以從下列色彩配置中識別SSL憑證的狀態：
 
