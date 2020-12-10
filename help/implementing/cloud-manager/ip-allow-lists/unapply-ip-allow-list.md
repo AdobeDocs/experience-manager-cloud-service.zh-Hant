@@ -2,9 +2,9 @@
 title: '取消應用IP允許清單 '
 description: 取消應用IP允許清單
 translation-type: tm+mt
-source-git-commit: e92fc7bac289481d046eb6bc27da833f17b29c7e
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 請依照下列步驟，取消套用IP允許清單：
 
-1. 從「環境」螢幕導航到特定的「環境詳細資訊」頁，然後導航到「IP允許清單」表。
+1. 從&#x200B;**Environments**&#x200B;螢幕導航到特定的「環境詳細資訊」頁，並導航到「IP允許清單」表。
 1. 識別您要取消套用的「IP允許清單」規則列在哪一列。
 1. 選擇&#x200B;**...**&#x200B;選單。
-1. 選取「取消套用」選項，並確認您的提交。
+1. 選擇&#x200B;**取消應用**&#x200B;選項並確認您的提交。
