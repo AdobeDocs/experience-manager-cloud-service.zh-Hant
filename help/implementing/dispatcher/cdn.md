@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
+source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 4%
+source-wordcount: '462'
+ht-degree: 7%
 
 ---
 
@@ -18,21 +18,16 @@ AEM管理的CDN將可滿足大部分客戶的效能與安全性需求。 對於�
 
 ## AEM Managed CDN {#aem-managed-cdn}
 
-請依照下列步驟，使用Adobe的現成可用CDN來準備內容傳送：
+請依照下列章節，使用Cloud Manager自助服務UI，使用Adobe的現成可用CDN來準備內容傳送：
 
-1. 透過共用包含此資訊之安全表單的連結，將已簽署的SSL憑證和機密金鑰提供給Adobe。 請與客戶支援協調此項工作。 Adobe支援最多10個SSL憑證給一個方案。
-   **注意：** Aem做為雲端服務不支援「已驗證網域(DV)」憑證。此外，它必須是來自受信任認證機構(CA)的X.509 TLS憑證，並具有相符的2048位元RSA私密金鑰。
-1. 通知客戶支援：
-   * 哪些自定義域應與給定環境關聯，如程式ID和環境ID所定義。 給定環境最多支援100個域，且域不能包含通配符。 請注意，作者端不支援自訂網域。
-   * 如果需要任何IP允許清單來限制到給定環境的通信。
-1. 與客戶支援協調，瞭解DNS記錄必要變更的時間安排。 根據是否需要頂點記錄，這些說明不同：
-   * 如果不需要頂點記錄，客戶應設定CNAME DNS記錄，將其FQDN指向`cdn.adobeaemcloud.com`。
-   * 如果需要尖峰記錄，請建立指向下列IP的A記錄：151.101.3.10、151.101.67.10、151.101.131.10、151.101.195.10。如果所需的FQDN與DNS區域匹配，客戶需要一個頂點記錄。 可使用Unix dig命令測試此命令，以查看輸出的SOA值是否與域匹配。 例如，命令`dig anything.dev.adobeaemcloud.com`返回`dev.adobeaemcloud.com`的SOA（權限開始，即區域），因此它不是APEX記錄，而`dig dev.adobeaemcloud.com`返回`dev.adobeaemcloud.com`的SOA，因此它是頂點記錄。
-1. 當SSL憑證即將到期時，您會收到通知，因此您可以重新提交新的SSL憑證。
+1. [管理SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+1. [管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **限制流量**
 
-依預設，對於Adobe Managed CDN設定，所有公開流量都可以進入發佈服務，適用於生產與非生產（開發與階段）環境。 如果您希望限制特定環境的發佈服務流量（例如，限制IP位址範圍的轉移），您應與客戶支援合作設定這些限制。
+依預設，對於Adobe Managed CDN設定，所有公開流量都可以進入發佈服務，適用於生產與非生產（開發與階段）環境。 如果您希望限制特定環境的發佈服務流量（例如，限制IP位址範圍的轉移），您可以透過Cloud Manager UI以自助方式進行。
+
+請參閱[管理IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)以瞭解更多資訊。
 
 ## 客戶CDN指向AEM Managed CDN {#point-to-point-CDN}
 
