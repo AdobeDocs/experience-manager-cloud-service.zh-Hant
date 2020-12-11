@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: 3aff98256eb26176bca52a49286bf2853290b5ef
+source-git-commit: d115f5ce463257af54ae0ff48749df455b863dfd
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1194'
 ht-degree: 2%
 
 ---
@@ -123,10 +123,10 @@ AEM as a Cloud Service SDK Build Analyzer Maven Plugin會偵測主要專案中�
 
 ### [!DNL Code Refactoring Tools] {#what-is-new-crt}的新增功能
 
-* 新版AIO-CLI增效模組已發行。 此外掛程式的最新版本包含AEM Dispatcher Converter和Repository Modernizer的錯誤修正，也支援新的公用程式- Index Converter。 請參閱[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)以進一步瞭解此外掛程式。
+* 新版AIO-CLI增效模組已發行。 此外掛程式的最新版本包含AEM Dispatcher Converter和Repository Modernizer的錯誤修正，也支援新的公用程式- Index Converter。
+請參閱[Unified Experience](/help/move-to-cloud-service/unified-experience.md)以進一步瞭解此外掛程式。
 
-* Index Converter是一個公用程式，可用來將客戶的自訂OAK索引定義轉換為AEM，做為CLoud Service相容的OAK索引定義。
-有關詳細資訊，請參閱[索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)。
+* [Index ](/help/move-to-cloud-service/refactoring-tools/index-converter.md) Converter是一個公用程式，可用來將客戶的自訂OAK索引定義轉換為AEM，做為CLoud Service相容的OAK索引定義。有關詳細資訊，請參閱[索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)。
 
 * 新增至[Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)的新功能，可建立個別的套件`ui.config`以包含所有OSGi組態。
 
