@@ -2,9 +2,9 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1264'
 ht-degree: 5%
 
 ---
@@ -149,15 +149,22 @@ Adobe會自動管理Stage和生產環境的更新。
 
 ## 管理自定義域名{#manage-cdn}
 
-從「環境概要」頁導航到「環境詳細資訊」頁。
+從「環境摘要」頁面導航至「環境&#x200B;****&#x200B;詳細資訊」頁面。
 
 可對環境的「發佈」服務執行下列操作，如下所述：
 
-1. **新增自訂網域名稱**:請參閱 [新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. **新增自訂網域名**
+稱請參閱 [新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **查看和更新自定義域名**:請參閱「 [檢視和更新自訂網域名稱與SSL憑證」](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+1. **查看和更新自定義域名和證書**
+請參閱
+   * [查看和更新自定義域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+   * [查看和更新SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
 
-1. **刪除自定義域名**:請參閱 [刪除自訂網域名稱和SSL憑證](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. **刪除自訂網域名稱和憑證**
+請參閱
+   * [刪除自定義域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   * [SSL憑證](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 ## 管理IP允許清單{#manage-ip-allow-lists}
 
