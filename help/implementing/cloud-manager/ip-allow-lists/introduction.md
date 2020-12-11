@@ -2,9 +2,9 @@
 title: 簡介- Could Manager中的IP允許清單
 description: 簡介- Could Manager中的IP允許清單
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ AEM做為雲端服務可開放至網際網路，而安全性則透過使用者�
 
 使用Cloud Manager UI IP Allow List（允許清單）頁或Environment Details（環境詳細資訊）頁，具有權限的用戶可以執行數項任務來管理您環境的IP Allow Lists，包括：
 
-* 添加IP允許清單
+* [新增IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
    >[!NOTE]
    > 您可以在程式中的環境服務中添加一次，然後重複使用或應用規則。
-* 查看或更新IP允許清單
-* 套用或取消套用IP允許清單
-* 刪除IP允許清單
+* [查看或更新IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+* [應用或取消應用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+* [刪除IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
