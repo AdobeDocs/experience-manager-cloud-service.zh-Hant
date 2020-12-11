@@ -2,10 +2,10 @@
 title: AEM中Cloud Manager的Cloud Manager版本注意事項2020.12.0版
 description: AEM中Cloud Manager的Cloud Manager版本注意事項2020.12.0版
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '130'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ AEM中Cloud Manager作為Cloud Service 2020.12.0的發行日期為2020年12月10
 
 * [IP允許清單的自助管理](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
 
-* 更新的&#x200B;**Environment**&#x200B;詳細資訊頁面現在可讓使用者管理其環境中的自訂網域名稱和IP允許清單。
+* 更新的&#x200B;**環境**&#x200B;詳細資訊頁面現在允許用戶管理其環境中的自定義域名和IP允許清單。
 
 
 ### 錯誤修正 {#bug-fixes}
