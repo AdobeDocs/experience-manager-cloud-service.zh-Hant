@@ -2,10 +2,10 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
+source-git-commit: 483c31a7ca53dc5e5dcffe3e9bfc7ce613ca8697
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 5%
+source-wordcount: '1248'
+ht-degree: 4%
 
 ---
 
@@ -153,18 +153,11 @@ Adobe會自動管理Stage和生產環境的更新。
 
 可對環境的「發佈」服務執行下列操作，如下所述：
 
-1. **新增自訂網域名**
-稱請參閱 [新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. [新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **查看和更新自定義域名和證書**
-請參閱
-   * [查看和更新自定義域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-   * [查看和更新SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+1. [查看和更新自定義域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
-1. **刪除自訂網域名稱和憑證**
-請參閱
-   * [刪除自定義域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   * [SSL憑證](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. [刪除自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 ## 管理IP允許清單{#manage-ip-allow-lists}
 
@@ -175,23 +168,23 @@ Adobe會自動管理Stage和生產環境的更新。
 套用IP允許清單是「允許清單」定義中包含的所有IP範圍與環境中的「作者」或「發佈」服務相關聯的程式。 必須登錄「業務所有者」或「部署管理員」角色中的用戶，才能應用「IP允許清單」。
 
 >[!NOTE]
->IP允許清單必須存在於Cloud Manager中，才能將其應用於環境服務。 若要進一步瞭解Cloud Manager中的IP允許清單，請導覽至Could Manager中的[IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
+>IP允許清單必須存在於Cloud Manager中，才能將其應用於環境服務。 若要進一步瞭解Cloud Manager中的IP允許清單，請導覽至Could Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)中的[IP允許清單簡介。
 
-請遵循下列步驟：
+請依照下列步驟來套用IP允許清單：
 
-1. 從「環境」螢幕導航到特定的「環境詳細資訊」頁，然後導航到「IP允許清單」表。
+1. 從&#x200B;**環境**&#x200B;詳細資訊頁導航到特定環境，並導航到&#x200B;**IP允許清單**&#x200B;表。
 1. 使用「IP允許清單」(IP Allow List)表格頂部的輸入欄位來選擇「IP允許清單」(IP Allow List)以及要將其應用到的「作者」(Author)或「發佈」(Publish)服務。
-1. 接著，選取「套用」並確認您的提交。
+1. 按一下&#x200B;**Apply**&#x200B;並確認提交。
 
 ### 取消應用IP允許清單{#unapply-ip-allow-list}
 
-取消應用「允許清單」(IP Allow List)是一個過程，通過該過程，允許清單定義中包含的所有IP範圍都與環境中的「作者／或發佈者」(Author/or Publisher)服務取消關聯。  必須登錄「業務所有者」或「部署管理員」角色中的用戶，才能取消應用IP允許清單。
+取消應用「允許清單」(IP Allow List)是一個過程，通過該過程，「允許清單」(Allow List)定義中包含的所有IP範圍都與環境中的「作者」或「發佈者」(Publisher)服務不相關聯。 必須登錄「業務所有者」或「部署管理員」角色中的用戶，才能取消應用IP允許清單。
 
-請遵循下列步驟：
+請依照下列步驟取消套用IP允許清單：
 
-1. 從「環境」螢幕導航到特定的「環境詳細資訊」頁，然後導航到「IP允許清單」表。
+1. 從「環境」螢幕導航到特定的&#x200B;**「環境**&#x200B;詳細資訊」頁，並導航到&#x200B;**IP允許清單**&#x200B;表。
 1. 識別您要取消套用的「IP允許清單」規則列在哪一列。
 1. 選擇&#x200B;**...**&#x200B;選單。
-1. 選取「取消套用」選項，並確認您的提交。
+1. 選擇&#x200B;**取消應用**&#x200B;選項並確認您的提交。
 
 
