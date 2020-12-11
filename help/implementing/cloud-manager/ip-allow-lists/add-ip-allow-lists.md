@@ -2,7 +2,7 @@
 title: '添加IP允許清單 '
 description: 添加IP允許清單
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 701020701fd45af720edea13a70cb459a650fbca
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -10,11 +10,9 @@ ht-degree: 0%
 ---
 
 
-# 簡介 {#introduction}
+# 添加IP允許清單{#add-ip-allow-list}
 
 必須登錄「業務所有者」或「部署管理員」角色中的用戶，才能添加「IP允許清單」。
-
-## 添加IP允許清單{#add-ip-allow-list}
 
 請依照下列步驟新增IP允許清單：
 
