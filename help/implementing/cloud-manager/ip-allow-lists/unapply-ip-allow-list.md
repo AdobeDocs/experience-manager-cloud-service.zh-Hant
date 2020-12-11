@@ -2,9 +2,9 @@
 title: '取消應用IP允許清單 '
 description: 取消應用IP允許清單
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
