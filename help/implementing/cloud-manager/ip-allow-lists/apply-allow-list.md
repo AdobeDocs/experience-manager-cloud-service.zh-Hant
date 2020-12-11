@@ -2,9 +2,9 @@
 title: '套用IP允許清單 '
 description: 套用IP允許清單
 translation-type: tm+mt
-source-git-commit: e92fc7bac289481d046eb6bc27da833f17b29c7e
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 請依照下列步驟來套用IP允許清單：
 
-1. 從「環境」螢幕導航到特定的「環境詳細資訊」頁，然後導航到「IP允許清單」表。
+1. 從&#x200B;**Environments**&#x200B;螢幕導航到特定的「環境詳細資訊」頁，並導航到「IP允許清單」表。
 1. 使用「IP允許清單」(IP Allow List)表格頂部的輸入欄位來選擇「IP允許清單」(IP Allow List)以及要將其應用到的「作者」(Author)或「發佈」(Publish)服務。
-1. 選擇「套用」並確認您的提交。
+1. 選擇&#x200B;**Apply**&#x200B;並確認您的提交。
 
