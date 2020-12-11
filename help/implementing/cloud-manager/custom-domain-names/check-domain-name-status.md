@@ -2,9 +2,9 @@
 title: 檢查域名狀態
 description: 檢查域名狀態
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -20,20 +20,24 @@ ht-degree: 0%
 Cloud Manager將通過TXT值驗證域所有權，並顯示以下狀態消息之一：
 
 * **域驗證**
-FailedTXT值缺失或檢測到錯誤。請依照指示重試。 準備就緒後，您必須選取狀態旁的「再次驗證」圖示。
+FailedTXT值缺失或檢測到錯誤。請依照指示重試。 準備就緒後，您必須選取 
+*驗證* 狀態旁的「重複」圖示。
 
 * **正在進行域驗**
-證正在驗證。此狀態通常會在您選取狀態旁的「再次驗證」圖示後顯示。
+證正在驗證。此狀態通常會在您選取 
+*驗證* 狀態旁的「重複」圖示。
 
 * **已驗證，部署**
 FailedTXT驗證成功。但是，CDN部署失敗。 Adobe代表會自動收到通知。
 
 * **網域已驗證和**
-已部署此狀態表示您的自訂網域名稱已準備好可供使用。注意：此時，您的自訂網域名稱已可供測試，並可指向Cloud Manager網域名稱。 請前往「設定DNS設定」，瞭解如何執行此動作。
+已部署此狀態表示您的自訂網域名稱已準備好可供使用。
+   >[!NOTE]
+   >此時，您的自訂網域名稱已可供測試，並可指向Cloud Manager網域名稱。 請參閱[配置DNS設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)以瞭解詳細資訊。
 
 * **刪**
 除自訂網域名稱正在處理中。
 
 * **刪除**
-自定義域名失敗刪除失敗。您必須重試。 請至「刪除自訂網域名稱」以進一步瞭解主題。
+自定義域名失敗刪除失敗。您必須重試。 請參閱[刪除自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)以瞭解詳細資訊。
 
