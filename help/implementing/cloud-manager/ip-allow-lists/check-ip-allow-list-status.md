@@ -2,7 +2,7 @@
 title: 檢查IP允許清單狀態
 description: 檢查IP允許清單狀態
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -33,7 +33,8 @@ ht-degree: 0%
 
 * **刪除**:刪除請求正在進行中。這涉及取消套用所有服務。 每個取消應用都將與「未啟動／正在進行／完成」或「失敗」一起列出。
 刪除操作完成後，IP允許清單將：
-   * 「IP允許清單」表格中不再顯示*不再應用於Cloud Manager程式中的任何服務
+   * 「IP允許清單」表格中不再顯示。
+   * 不再套用至Cloud Manager程式中的任何服務。
 
 * **刪除失敗**:刪除操作中的一個或多個取消應用進程失敗。每個「取消應用」都將與「完成」或「失敗」一起列出。
 
