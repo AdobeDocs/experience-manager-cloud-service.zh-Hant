@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
+source-git-commit: 3aff98256eb26176bca52a49286bf2853290b5ef
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 3%
+source-wordcount: '1205'
+ht-degree: 2%
 
 ---
 
@@ -85,21 +85,21 @@ ht-degree: 3%
 
 ### 發行日期 {#release-date-cm}
 
-AEM中Cloud Manager作為雲端服務2020.11.0的發行日期為2020年11月12日。
+AEM中Cloud Manager作為Cloud Service 2020.12.0的發行日期為2020年12月10日。
 
 ### [!DNL Cloud Manager] {#what-is-new-cm}的新增功能
 
-* 現在，用戶可從&#x200B;**Environments**&#x200B;卡和&#x200B;**Environments**&#x200B;摘要頁上的環境菜單選項獲得新的菜單選項&#x200B;**本地登錄**。
-有關詳細資訊，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md##login-locally)。
+* [SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)和[自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/introduction.md)的自助服務管理。
 
-* Cloud Manager中的&#x200B;**Learn**&#x200B;標籤已在UI中以新影像重新整理。
+* [IP允許清單的自助管理](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
+
+* 更新的&#x200B;**環境**&#x200B;詳細資訊頁面現在允許用戶管理其環境中的自定義域名和IP允許清單。
 
 ### 錯誤修正 {#bug-fixes-cloud-manager}
 
-* 在建立執行前載入的相依性需要下載Maven外掛程式。
-* 從Cloud Manager頁尾選取語言的連結現在會導覽至正確的位置。
-* 有時在程式碼掃描期間，SonarQube程式不會啟動。 現在會自動偵測到此問題，並嘗試重新啟動。
-* 所有現有的生產管道都會透過體驗稽核步驟自動啟用。
+* 在代碼掃描階段發生的某些故障，但未提供解決結果。
+
+* 環境卡未一致顯示&#x200B;**Add**&#x200B;按鈕。
 
 ## Adobe Experience Manager as a Cloud Service 基礎 {#cloud-service-foundation}
 
@@ -119,30 +119,18 @@ AEM as a Cloud Service SDK Build Analyzer Maven Plugin會偵測主要專案中�
 
 新的[&quot;httpd -t&quot;語法](/help/implementing/dispatcher/disp-overview.md#local-validation)檢查Cloud Manager建置期間執行的apache和dispatcher組態，此組態也可以使用AEM作為Cloud Service SDK的Dispatcher Tools來執行。
 
-## 內容轉移工具 {#content-transfer-tool}
+## 程式碼重構工具 {#code-refactoring-tools}
 
-請依照本節內容，瞭解[內容傳輸工具](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)版本v1.1.12的新增功能和更新。
+### [!DNL Code Refactoring Tools] {#what-is-new-crt}的新增功能
 
-### 新增功能 {#what-is-new-ctt}
+* 新版AIO-CLI增效模組已發行。 此外掛程式的最新版本包含AEM Dispatcher Converter和Repository Modernizer的錯誤修正，也支援新的公用程式- Index Converter。 請參閱[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)以進一步瞭解此外掛程式。
 
-* 改善記錄檔的使用者體驗。 已新增時間戳記至擷取和擷取記錄檔。 新增訊息，指出記錄檔是否空白。
+* Index Converter是一個公用程式，可用來將客戶的自訂OAK索引定義轉換為AEM，做為CLoud Service相容的OAK索引定義。
+有關詳細資訊，請參閱[索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)。
 
-### 錯誤修正 {#ctt-bug-fixes}
+* 新增至[Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)的新功能，可建立個別的套件`ui.config`以包含所有OSGi組態。
 
-* 如果遷移集包含具有部分相似檔案名的路徑，則內容傳輸工具正在跳過內容檔案。 這個問題已經修正。
+### 錯誤修正 {#crt-bug-fixes}
 
-## 最佳做法分析器{#best-practices-analyzer}
-
-### 發行日期 {#release-date-bpa}
-
-最佳做法分析器的發行日期是2020年11月13日。
-
-### [!DNL Best Practices Analyzer] {#what-is-new-bpa}的新增功能
-
-* Cloud Readiness Analyzer現在是最佳做法分析器(BPA)。 BPA提供您目前AEM實作的最佳實務評估，並協助評估從現有AEM例項移至AEM（雲端服務）的準備程度。
-
-* 已新增偵測器來偵測`java.io.InputStream`的使用，若在AEM中當做雲端服務使用，可能會造成問題。
-
-### 錯誤修正 {#bpa-bug-fixes}
-
-* 修正造成&#x200B;*textfield foundation*&#x200B;元件相關的錯誤。
+* 在AEM Dispatcher Converter和Repository Modernizer工具上完成數個錯誤修正。
+請參閱[AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)和[Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
