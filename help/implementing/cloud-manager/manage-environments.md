@@ -2,9 +2,9 @@
 title: 管理環境——雲端服務
 description: 管理環境——雲端服務
 translation-type: tm+mt
-source-git-commit: 483c31a7ca53dc5e5dcffe3e9bfc7ce613ca8697
+source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1249'
 ht-degree: 4%
 
 ---
@@ -168,7 +168,7 @@ Adobe會自動管理Stage和生產環境的更新。
 套用IP允許清單是「允許清單」定義中包含的所有IP範圍與環境中的「作者」或「發佈」服務相關聯的程式。 必須登錄「業務所有者」或「部署管理員」角色中的用戶，才能應用「IP允許清單」。
 
 >[!NOTE]
->IP允許清單必須存在於Cloud Manager中，才能將其應用於環境服務。 若要進一步瞭解Cloud Manager中的IP允許清單，請導覽至Could Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)中的[IP允許清單簡介。
+>IP允許清單必須存在於Cloud Manager中，才能將其應用於環境服務。 若要進一步瞭解Cloud Manager中的「IP允許清單」，請導覽至Could Manager[中的「IP允許清單簡介」。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 
 請依照下列步驟來套用IP允許清單：
 
