@@ -2,9 +2,9 @@
 title: 新增自訂網域名稱
 description: 新增自訂網域名稱
 translation-type: tm+mt
-source-git-commit: 27e96d66d93f2fa0e67e607c75f37efda17a13b7
+source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 * 在新增自訂網域名稱之前，必須先將包含自訂網域名稱的有效SSL憑證安裝至您的程式。 請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)以瞭解詳細資訊。
 
-* 一次只能添加一個域名。 不過，使用者可以新增萬用字元，例如`*.wknd.com`作為網域名稱，而這可讓多個子網域以單一TXT記錄托管。
+* 一次只能添加一個域名。 不過，網域不能包含萬用字元。 作者端不支援自訂網域。
 
 * 每個Cloud Manager環境最多可托管100個自定義域。
 
