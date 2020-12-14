@@ -2,7 +2,7 @@
 title: 建立內容片段無頭快速入門手冊
 description: 內容片段可讓您設計、建立、組織和使用AEM可無端傳送的頁面無關內容。
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 1%
@@ -53,5 +53,6 @@ ht-degree: 1%
 
 現在您已建立內容片段，您可以繼續進入快速入門手冊的最後部分，並[建立API要求以存取和傳送內容片段。](create-api-request.md)
 
->!![TIP]
-如需管理內容片段的完整詳細資訊，請參閱[內容片段檔案](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>如需管理內容片段的完整詳細資訊，請參閱[內容片段檔案](/help/assets/content-fragments/content-fragments.md)
