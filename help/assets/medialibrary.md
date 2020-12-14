@@ -3,9 +3,9 @@ title: AEM Assets與AEM MediaLibrary的比較
 description: AEM Assets和的常見問題。 AEM Media Library，包括兩者的差異。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '694'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ AEM Assets客戶僅能使用的獨特功能包括：
 
 ## 我想在我的網站上使用類別謂詞。 我需要AEM資產嗎？{#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-是的，類別述詞，連同Geometrixx Press Center中使用的所有其他元件，皆為AEM Assets的一部分，而且需要AEM Assets授權。
+是的，類別述詞，連同所有其他元件皆為AEM Assets的一部分，並需要AEM Assets授權。
 
 ## 我想在匯入時自動調整影像大小。 我需要AEM資產嗎？{#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
