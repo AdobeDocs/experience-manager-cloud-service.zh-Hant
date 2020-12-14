@@ -2,7 +2,7 @@
 title: 頁面範本
 description: 建立將用作新頁面基礎的頁面時，會使用頁面範本
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 0%
@@ -219,7 +219,7 @@ ht-degree: 0%
 >
 >`template-authors`群組僅適用於必須能夠建立新範本的使用者。
 >
->編輯範本功能十分強大，如果未正確完成，現有範本就會中斷。 因此，此角色應該有重點，並僅包括合格用戶。
+>編輯範本功能十分強大，如果未正確完成，現有範本就會中斷。 因此，此角色應該有重點，並且僅包括合格用戶。
 
 下表詳細說明範本編輯的必要權限。
 
@@ -555,7 +555,7 @@ GITHUB代碼
 
 * 如果`T`具有非空的`allowedPaths`屬性，但沒有任何值與`P`的路徑匹配，則拒絕`T`。
 
-* 如果上述兩個屬性皆為空或不存在，則會拒絕`T`，除非它屬於與`P`相同的應用程式。 `T` 僅當路徑的第二 `P` 級名稱與路徑的第二級名稱相同 `T` 時，才屬於與if相同的應用程式 `P`。例如，範本`/apps/geometrixx/templates/foo`屬於與頁面`/content/geometrixx`相同的應用程式。
+* 如果上述兩個屬性皆為空或不存在，則會拒絕`T`，除非它屬於與`P`相同的應用程式。 `T` 僅當路徑的第二 `P` 級名稱與路徑的第二級名稱相同 `T` 時，才屬於與if相同的應用程式 `P`。例如，範本`/apps/wknd/templates/foo`屬於與頁面`/content/wknd`相同的應用程式。
 
 * 如果`T`具有非空的`allowedParents`屬性，但沒有任何值與`P`的路徑匹配，則拒絕`T`。
 
