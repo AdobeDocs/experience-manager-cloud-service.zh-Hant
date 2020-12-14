@@ -2,7 +2,7 @@
 title: 《 Creating a Configuration Headless Quick Start Guide》（建立配置無頭快速入門手冊）
 description: 在AEM中以Cloud Service的形式開始使用無頭功能的第一步，您需要建立設定。
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 1%
@@ -42,12 +42,14 @@ ht-degree: 1%
 
 您可以視需要建立多種設定。 配置也可以嵌套。
 
->!![NOTE]
-視您的實作需求而定，可能需要&#x200B;**內容片段模型**&#x200B;和&#x200B;**GraphQL持久查詢**&#x200B;之外的配置選項。
+>[!NOTE]
+>
+>視您的實作需求而定，可能需要&#x200B;**內容片段模型**&#x200B;和&#x200B;**GraphQL持久查詢**&#x200B;之外的配置選項。
 
 ## 後續步驟{#next-steps}
 
 使用此配置，您現在可以移至入門指南的第二部分，並[建立內容片段模型。](create-content-model.md)
 
->!![TIP]
-有關配置瀏覽器的完整詳細資訊，請[參閱配置瀏覽器文檔。](/help/implementing/developing/introduction/configurations.md)
+>[!TIP]
+>
+>有關配置瀏覽器的完整詳細資訊，請[參閱配置瀏覽器文檔。](/help/implementing/developing/introduction/configurations.md)
