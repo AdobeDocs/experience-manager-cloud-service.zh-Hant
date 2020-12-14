@@ -2,7 +2,7 @@
 title: 建立資產資料夾無頭快速入門手冊
 description: 內容片段模型定義內容片段的結構。 內容片段接著會儲存在資產檔案夾中。
 translation-type: tm+mt
-source-git-commit: 9c801af38142434a5a0302b73b6fc1469a0eaab2
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -53,5 +53,6 @@ ht-degree: 0%
 
 現在，您已為「內容片段」建立資料夾，您可以移至快速入門手冊的第四部份，並[建立內容片段。](create-content-fragment.md)
 
->!![TIP]
-如需管理內容片段的完整詳細資訊，請參閱[內容片段檔案](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>如需管理內容片段的完整詳細資訊，請參閱[內容片段檔案](/help/assets/content-fragments/content-fragments.md)
