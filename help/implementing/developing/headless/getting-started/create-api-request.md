@@ -2,7 +2,7 @@
 title: 存取和傳送內容片段無頭快速入門手冊
 description: Assets REST API允許管理內容片段，而GraphQL API允許簡單無頭地傳送內容片段內容。
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Assets REST API允許管理內容片段，而GraphQL API允許簡單無頭地傳
 
 1. 假設我們建立的模型名為`person`（欄位`firstName`、`lastName`和`position`），我們可以建立簡單查詢來擷取內容片段的內容。
 
-   ```
+   ```text
    query {
      persons {
        items {
