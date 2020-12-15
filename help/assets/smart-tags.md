@@ -3,9 +3,9 @@ title: 使用AI產生的標籤自動標籤影像
 description: 使用人工智慧服務來標籤影像，使用 [!DNL Adobe Sensei] 服務套用情境式和描述性商業標籤。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
+source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2431'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 若要使用智慧標籤，請完成下列工作：
 
-* [將Experience Manager與Adobe Developer Console整合](#integrate-aem-with-aio)。
+* [ [!DNL Adobe Experience Manager] 使用 Adobe 開發人員控制台進行整合](#integrate-aem-with-aio).
 * [瞭解標籤模型和准則](#understand-tag-models-guidelines)。
 * [訓練模型](#train-model)。
 * [標籤您的數位資產](#tag-assets)。
@@ -105,6 +105,9 @@ ht-degree: 6%
 1. 按一下&#x200B;**[!UICONTROL 建立]**。提供&#x200B;**[!UICONTROL Title]**、**[!UICONTROL 說明]**。
 1. 瀏覽並從`cq:tags`中要訓練模型的現有標籤中選擇標籤。 按一下&#x200B;**[!UICONTROL 下一步]**。
 1. 在&#x200B;**[!UICONTROL 選擇資產]**&#x200B;對話方塊中，針對每個標籤按一下&#x200B;**[!UICONTROL 新增資產]**。 在DAM儲存庫中搜索或瀏覽儲存庫以選擇至少10個和最多50個映像。 選取資產，而非資料夾。 選擇影像後，按一下「選擇&#x200B;****」。
+
+   ![檢視培訓狀態](assets/smart-tags-training-status.png)
+
 1. 若要預覽選取影像的縮圖，請按一下標籤前面的accordion。 您可以按一下「新增資產」，以修改您的選擇。 ****&#x200B;對選擇滿意後，按一下&#x200B;**[!UICONTROL 提交]**。 使用者介面在頁面底部顯示通知，指出已開始培訓。
 1. 在&#x200B;**[!UICONTROL Status]**&#x200B;欄中檢查每個標籤模型的培訓狀態。 可能的狀態包括[!UICONTROL Pending]、[!UICONTROL Traned]和[!UICONTROL Failed]。
 
@@ -116,13 +119,13 @@ ht-degree: 6%
 
 若要檢查智慧型標籤服務是否在訓練資產集中的標籤上接受訓練，請從報告主控台檢視訓練工作流程報告。
 
-1. 在[!DNL Experience Manager]介面中，前往&#x200B;**[!UICONTROL 工具>資產>報表]**。
+1. 在[!DNL Experience Manager]介面中，前往「**[!UICONTROL 工具] > **[!UICONTROL 資產] > **[!UICONTROL 報表]**」。
 1. 在&#x200B;**[!UICONTROL 資產報表]**&#x200B;頁面中，按一下&#x200B;**[!UICONTROL 建立]**。
 1. 選擇&#x200B;**[!UICONTROL 智慧型標籤訓練]**&#x200B;報表，然後從工具列按一下&#x200B;**[!UICONTROL Next]**。
 1. 指定報表的標題和說明。在「 **[!UICONTROL 排程報表]**」下，保 **[!UICONTROL 留「現在]** 」選項。如果您想要排程報表以供稍後使用，請選 **[!UICONTROL 取]** 「稍後」並指定日期和時間。然後，從工具列按一下「建立」。]****[!UICONTROL 
 1. 在「資 **[!UICONTROL 產報表]** 」頁面中，選取您產生的報表。若要檢視報表，請按一下工具列上的&#x200B;**[!UICONTROL 檢視]**。
 1. 檢閱報表的詳細資訊。 報表會顯示您所訓練之標籤的訓練狀態。**[!UICONTROL 訓練狀態]**&#x200B;欄中的綠色表示智慧型標籤服務已接受標籤訓練。 黃色表示服務未針對特定標籤進行完整訓練。在這種情況下，請使用特定標籤新增更多影像，並執行培訓工作流程，以完全在標籤上訓練服務。如果您在此報表中未看到標籤，請針對這些標籤重新執行培訓工作流程。標籤
-1. 若要下載報表，請從清單中選取報表，然後從工具列按一下「下載&#x200B;**[!UICONTROL 」。]**&#x200B;報表會以Microsoft Excel試算表的形式下載。
+1. 若要下載報表，請從清單中選取報表，然後從工具列按一下「下載&#x200B;**[!UICONTROL 」。]**&#x200B;報表會以[!DNL Microsoft Excel]試算表的形式下載。
 
 ## 標籤資產{#tag-assets}
 
