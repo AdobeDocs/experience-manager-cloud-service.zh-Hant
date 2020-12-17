@@ -2,9 +2,9 @@
 title: Adobe Experience Manager作為Assets HTTP API中的雲端服務內容片段支援
 description: 瞭解Adobe Experience Manager如何在資產HTTP API中以雲端服務內容片段支援的方式提供。
 translation-type: tm+mt
-source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
+source-git-commit: 68f799349a4a1a9d5a09fb0cb23e0f5620d77d2f
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1862'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ Assets REST API也允許開發人員建立新資產、內容片段和資料夾�
 
 ## 必備條件 {#prerequisites}
 
-資產REST API可在最新Adobe Experience Manager的每次現成安裝中，以雲端服務版本提供。
+資產REST API可在最新Adobe Experience Manager的每次即裝即用安裝中，以雲端服務版本提供。
 
 ## 重要概念 {#key-concepts}
 
@@ -66,6 +66,7 @@ Assets REST API提供對儲存在AEM例項中的資產的[REST](https://en.wikip
 
 >[!NOTE]
 >存取：
+>
 >* `/api/assets` **不** 需要使用選擇 `.model` 器。
 >* `/content/path/to/page` **需** 要使用選擇 `.model` 器。
 
@@ -306,32 +307,27 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 
 有幾個限制：
 
-* **變數無法撰寫和更新。** 如果這些變化被新增至負載（例如更新），則會忽略它們。但是，變數會透過傳送(`GET`)提供。
-
 * **目前不支援內容片段模型**:無法讀取或建立。為了能夠建立新的內容片段或更新現有的內容片段，開發人員必須知道內容片段模型的正確路徑。 目前，唯一可以透過管理UI來取得這些概觀的方法。
 * **將忽略引用**。目前不會檢查是否參考現有的內容片段。 因此，例如，刪除內容片段可能會在包含對已刪除內容片段之參考的頁面上產生問題。
+
+<!--
+* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
+-->
 
 ## 狀態代碼和錯誤消息{#status-codes-and-error-messages}
 
 在相關情況下，可看到以下狀態代碼：
 
-* **200** （確定）
-
-   傳回時間：
+* **200** (OK)在下列情況下傳回：
 
    * 透過`GET`請求內容片段
-
    * 透過`PUT`成功更新內容片段
 
-* **201** （已建立）
-
-   傳回時間：
+* **201** （已建立）在下列情況下傳回：
 
    * 透過`POST`成功建立內容片段
 
-* **404** （找不到）
-
-   傳回時間：
+* **404** （找不到）在下列情況下傳回：
 
    * 請求的內容片段不存在
 
@@ -341,8 +337,8 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
    >
    >傳回此錯誤：
    >
-   >    * 發生無法以特定程式碼識別的錯誤時
-   >    * 當指定的裝載無效時
+   >* 發生無法以特定程式碼識別的錯誤時
+   >* 當指定的裝載無效時
 
 
    以下列出返回此錯誤狀態時的常見情況，以及生成的錯誤消息（單空格）:
@@ -384,6 +380,7 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 ## API參考{#api-reference}
 
 如需詳細的API參考，請參閱此處：
+
 <!--
 * [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 -->
