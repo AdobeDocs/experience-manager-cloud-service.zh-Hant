@@ -2,9 +2,9 @@
 title: 使用規則集轉換URL
 description: 您可以在動態媒體中部署規則集以轉換URL。 規則集是以指令碼語言（例如JavaScript）編寫的指令集，可評估XML資料，並在資料符合特定條件時採取特定動作。
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '795'
 ht-degree: 5%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 5%
 * 添加MIME類型尾碼。 許多服務和網站都需要影像字尾，例如將`.jpg`新增至URL。
 * 建立URL的資料夾路徑以用於搜尋引擎最佳化(SEO)。
 
-   請參閱[Adobe Scene7 Publishing System如何支援SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
+   請參閱[Dynamic Media Classic如何支援SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
 
 * 新增中繼資料至URL，以利搜尋引擎最佳化(Search Engine Optimization)。
 
-   請參閱[Adobe Scene7 Publishing System如何支援SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
+   請參閱[Dynamic Media Classic如何支援SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
 
 * 設定內容配置以觸發下載。
 * 簡化影像伺服範本URL以利個人化。 例如，將`rgb{XX,YY,ZZ}`轉換為RTF-ready `\redXX\greenYY\blueZZ`
