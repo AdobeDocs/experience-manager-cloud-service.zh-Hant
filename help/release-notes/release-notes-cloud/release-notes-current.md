@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: 984914c6147d0ee96575c93496cbdfc4bb9bc094
+source-git-commit: 539fa16396519b66d53b91745bf69c819c5d5ea1
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '553'
 ht-degree: 4%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 4%
 
 [!DNL Adobe Experience Manager]作為雲服務2020.12.0的發行日期為2020年12月17日。
 下列版本(2021.1.0)將於2020年1月28日發行。
+
+## [!DNL Adobe Experience Manager Sites] 雲端服務  {#sites}
+
+* **[內容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:新增使用HTTP API新增／更新和刪除內容片段變數的能力。
 
 ## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
 
