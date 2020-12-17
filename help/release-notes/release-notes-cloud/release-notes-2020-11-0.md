@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] 作為2020.11.0的雲端服務發行說明。'
 translation-type: tm+mt
-source-git-commit: 70974ad7762bd07f68ee883756708799a79cf85f
+source-git-commit: 66374fe5a9126ba92e12c0128d5f60e0f0d09cb6
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 4%
@@ -34,7 +34,8 @@ ht-degree: 4%
 ### [!DNL Assets]和[!DNL Dynamic Media] {#what-is-new-assets}的新增功能
 
 * **大量資產擷取**:為客戶提供可擴充的雲端原生擷取服務，此服務可運 [!DNL Experience Manager] 用為雲端服務架構，包括資產微服務。主要使用案例包括透過監控、報告和排程大規模擷取，同時允許使用通用雲端上傳工具將資產初始傳輸至雲端資料存放區。 請參閱[資產大量內嵌工具](/help/assets/add-assets.md#asset-bulk-ingestor)。
-此工具適用於系統管理員、顧問或實施合作夥伴角色。 此功能可進行大規模攝取，最理想地用於初始攝取或偶爾大量攝取。 對於較小的擷取工作，請使用「資產」使用者介面](/help/assets/add-assets.md#upload-assets)使用[[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en)或[上傳。
+
+   此工具適用於系統管理員、顧問或實施合作夥伴角色。 此功能可進行大規模攝取，最理想地用於初始攝取或偶爾大量攝取。 對於較小的擷取工作，請使用「資產」使用者介面](/help/assets/add-assets.md#upload-assets)使用[[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en)或[上傳。
 
    ![批量匯入程式的設定](/help/assets/assets/bulk-import-config-low-res.png)
 
