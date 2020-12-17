@@ -2,9 +2,9 @@
 title: 管理影像預設集
 description: 瞭解影像預設集，並瞭解如何建立、修改及管理影像預設集。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3607'
 ht-degree: 11%
 
 ---
@@ -381,7 +381,7 @@ Dynamic Media整合使用下列指令碼：
     </ul>
     <div>
       銳利化說明於
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">銳利化影像</a>。
+     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">銳利化影像</a>。
     </div> </td>
   </tr>
   <tr>
