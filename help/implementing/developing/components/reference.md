@@ -2,9 +2,9 @@
 title: 元件參考指南
 description: 元件及其結構詳細資訊的開發人員參考指南
 translation-type: tm+mt
-source-git-commit: 3f31ced24ab8af942b848a8c9ac6bd53ceb5f3b1
+source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
 workflow-type: tm+mt
-source-wordcount: '3390'
+source-wordcount: '3464'
 ht-degree: 0%
 
 ---
@@ -67,10 +67,6 @@ ht-degree: 0%
 * 使用Java - [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html)可讓HTL檔案存取自訂Java類別中的輔助方法。 這可讓您使用Java程式碼來實作邏輯，以選取和設定元件內容。
 * 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html)可讓HTL檔案存取以JavaScript編寫的輔助程式碼。 這可讓您使用JavaScript程式碼來實作邏輯，以選取和設定元件內容。
 * 使用用戶端程式庫——現代網站嚴重依賴由複雜JavaScript和CSS程式碼驅動的用戶端處理。 如需詳細資訊，請參閱檔案[「在AEM上使用用戶端程式庫做為雲端服務」。](/help/implementing/developing/introduction/clientlibs.md)
-
-### 開發您自己的元件{#developing-your-own-components}
-
-在這裡開發內容？
 
 ## 元件結構{#structure}
 
@@ -409,6 +405,14 @@ AEM中有許多現有的設定。 使用&#x200B;**CRXDE Lite**&#x200B;中的查�
 ### 欄位驗證{#field-validation}
 
 在Granite UI和Granite UI Widget中進行欄位驗證的方法是使用`foundation-validation` API。 如需詳細資訊，請參閱[`foundation-valdiation` Granite檔案](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)。
+
+### 檢測對話框的可用性{#dialog-ready}
+
+如果您有自訂JavaScript，而且只有在對話方塊可用且準備就緒時才需要執行，則應監聽`dialog-ready`事件。
+
+每當對話方塊載入（或重新載入）並準備使用時，就會觸發此事件，這表示每當對話方塊的DOM中有變更（建立／更新）時。
+
+`dialog-ready` 可用來在JavaScript自訂程式碼中掛接，以對對話方塊內的欄位或類似工作執行自訂。
 
 ## 預覽行為{#preview-behavior}
 
