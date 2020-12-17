@@ -2,7 +2,7 @@
 title: Dynamic Media 影像設定檔
 description: 建立包含非銳利遮色片和智慧型裁切或智慧型色票（或兩者）的設定的動態媒體影像描述檔，然後將描述檔套用至影像資產的資料夾。
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
 workflow-type: tm+mt
 source-wordcount: '2753'
 ht-degree: 9%
@@ -93,7 +93,7 @@ ht-degree: 9%
  </tbody>
 </table>
 
-銳利化在[銳利化影像中有說明。](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
+銳利化在[銳利化影像中有說明。](/help/assets/dynamic-media/assets/sharpening_images.pdf)
 
 ## 建立動態媒體映像配置檔案{#creating-image-profiles}
 
