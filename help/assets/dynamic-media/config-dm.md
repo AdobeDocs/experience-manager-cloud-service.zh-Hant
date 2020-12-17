@@ -2,19 +2,19 @@
 title: 設定動態媒體雲端服務
 description: 有關如何在Adobe Experience Manager中將動態媒體設定為雲端服務的資訊。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 3f29bf65b1c30cee9bf7833a1c5092819ebf9a50
 workflow-type: tm+mt
-source-wordcount: '3855'
+source-wordcount: '3853'
 ht-degree: 7%
 
 ---
 
 
-# 關於配置Dynamic Media Cloud服務{#configuring-dynamic-media-scene-mode}
+# 關於配置Dynamic Media Cloud服務{#configuring-dynamic-media}
 
 如果您針對不同環境（例如開發環境、測試環境和即時生產環境）使用Adobe Experience Manager設定，您必須針對每個環境設定Dynamic Media Cloud Services。
 
-## 動態媒體的架構圖{#architecture-diagram-of-dynamic-media-scene-mode}
+## 動態媒體的架構圖{#architecture-diagram-of-dynamic-media}
 
 下列架構圖說明Dynamic Media的運作方式。
 
@@ -184,9 +184,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ### （可選）動態媒體設定的設定與設定{#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
-使用Dynamic Media Classic(Scene7)使用者介面來變更動態媒體設定。
+使用Dynamic Media Classic使用者介面來變更您的Dynamic Media設定。
 
-上述部分工作需要您登入Dynamic Media Classic(Scene7)，網址為：[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+上述部分工作需要您在以下網址登入Dynamic Media Classic:[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
 設定和設定工作包括：
 
@@ -200,7 +200,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 #### 影像伺服器{#publishing-setup-for-image-server}的發佈設定
 
-「發佈設定」設定會決定預設如何從動態媒體傳送資產。 如果未指定任何設定，動態媒體會根據發佈設定中定義的預設設定來傳送資產。 例如，傳送不含解析度屬性的影像請求，會產生具有「預設物件解析度」設定的影像。
+「發佈設定」設定會決定預設如何從動態媒體傳送資產。 如果未指定任何設定，動態媒體會根據發佈設定中定義的預設設定來傳送資產。 例如，傳送不含解析度屬性的影像請求，會產生具有預設物件解析度設定的影像。
 
 若要設定發佈設定：在Dynamic Media Classic中，按一下「**[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器」。]**
 
