@@ -2,10 +2,10 @@
 title: 內容片段——設定瀏覽器
 description: 瞭解如何在設定瀏覽器中啟用特定內容片段功能。
 translation-type: tm+mt
-source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+source-git-commit: c821baff208e563009e68f51700555ea1d516886
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 20%
+source-wordcount: '263'
+ht-degree: 19%
 
 ---
 
@@ -42,19 +42,25 @@ ht-degree: 20%
 >
 >如需詳細資訊，請參閱[組態瀏覽器：](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)。
 
+>[!CAUTION]
+>
+>子組態（在組態中巢狀化的組態）不支援與內容片段搭配使用。
+
 1. 導覽至「 **工具**」、「 **一般**」，然後開啟「 **設定瀏覽器**」。
-2. 選擇適合您網站的位置。
-3. 使用&#x200B;**Create**&#x200B;開啟對話方塊，您可在其中：
+
+1. 使用&#x200B;**Create**&#x200B;開啟對話方塊，您可在其中：
 
    1. 指定&#x200B;**Title**。
-   2. 若要啟用其使用選擇
+   1. 若要啟用其使用選擇
       * **內容片段模型**
       * **GraphQL持久查詢**
 
       ![定義配置](assets/cfm-conf-01.png)
 
 
-4. 選擇&#x200B;**建立**&#x200B;以保存定義。
+1. 選擇&#x200B;**建立**&#x200B;以保存定義。
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### 將設定套用至您的資產資料夾{#apply-the-configuration-to-your-assets-folder}
 
