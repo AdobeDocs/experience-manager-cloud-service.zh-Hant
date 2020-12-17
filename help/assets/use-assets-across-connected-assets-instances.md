@@ -3,7 +3,7 @@ title: 使用「連線資產」在 中共用 DAM 資產 [!DNL Sites]
 description: 使用遠程 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署上可用的資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 29c3ca56281c482f195d84590ceb4ef07c556e64
 workflow-type: tm+mt
 source-wordcount: '2240'
 ht-degree: 40%
@@ -157,6 +157,16 @@ ht-degree: 40%
 >一旦在網頁中使用，擷取的遠端資產就可供任何有權存取本機資料夾的人搜尋及使用。 擷取的資產會儲存在本機資料夾中（位於上述逐步連結中的`connectedassets`）。 這些資產也可供搜尋，並可透過[!UICONTROL 「內容尋找器」]顯示於本機存放庫。
 
 擷取的資產可設為其他任何本機資產以供使用，只是相關聯的中繼資料無法編輯。
+
+<!-- TBD: Uncomment after verification for Dec release.
+
+### Check use of an asset across other pages {#asset-usage-references}
+
+[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset.
+
+Users can view incoming references of the assets and move or delete the asset.
+
+-->
 
 ## 限制和最佳做法{#tip-and-limitations}
 
