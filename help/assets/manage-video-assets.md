@@ -3,10 +3,10 @@ title: 管理影片資產
 description: 在 [!DNL Adobe Experience Manager]中上傳、預覽、註解和發佈視訊資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 7%
+source-wordcount: '616'
+ht-degree: 6%
 
 ---
 
@@ -28,17 +28,17 @@ ht-degree: 7%
 
 ## 發佈視訊資產{#publish-video-assets}
 
-發佈後，您可以將視訊資產加入網頁中做為URL，或直接內嵌資產。 如需詳細資訊，請參閱[發佈動態媒體資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+發佈後，您可以將視訊資產加入網頁中做為URL，或直接內嵌資產。 如需詳細資訊，請參閱[publish [!DNL Dynamic Media] assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 使用處理設定檔{#transcode-video}進行轉碼
 
 [!DNL Experience Manager] as as  [!DNL Cloud Service] lots you do basic codecing of MP4 video files using Processing Profiles.此功能可讓您不僅上傳，還預覽和縮放MP4視訊檔案。
 
-![在Experience Manager中建立視訊轉碼的處理設定檔](assets/video-processing-profile-for-mp4.png)
+![建立處理設定檔，以在  [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
 *圖：中用於視頻轉碼的處理配置檔案 [!DNL Experience Manager]。*
 
-如果您只提供寬度或高度，而將其他欄位留空，轉譯會維持高寬比。 目前，僅h264 codec可用於轉碼。
+如果您只提供寬度或高度，而將其他欄位留空，轉譯會維持高寬比。 H.264視訊轉碼器可供轉碼。
 
 若要使用處理設定檔來處理資產，請新增設定檔至資料夾。 請參閱[使用處理設定檔來處理資產](/help/assets/asset-microservices-configure-and-use.md#use-profiles)。
 
@@ -52,8 +52,18 @@ ht-degree: 7%
 
 ## 最佳做法和限制{#tips-limitations}
 
-* 若沒有Dynamic Media授權，您只能使用處理設定檔來處理MP4檔案。
-* 使用
+* 沒有[!DNL Dynamic Media]授權，您只能使用處理設定檔來處理MP4檔案。
+* 使用處理設定檔轉碼MP4檔案時，會套用下列准則和限制：
+
+   * Apple ProRes檔案只能將程式碼轉碼至最高解析度1080p。
+   * 如果源檔案的位元速率>200 Mbps，則只能將代碼轉碼到最大解析度1080p。
+   * 如果來源影格>= 60 fps，則您可使用的最大來源檔案大小為
+
+      * 400 MB的4K轉碼。
+      * 800 MB的1080p轉碼。
+      * 8 GB的720p轉碼。
+   * 可轉碼至4k解析度的檔案大小上限為2.55 GB MP4檔案，解析度為4k、12 Mbps位元速率和23 fps。
+
 
 >[!MORELIKETHIS]
 >
