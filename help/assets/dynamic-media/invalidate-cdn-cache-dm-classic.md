@@ -2,9 +2,9 @@
 title: 使用Dynamic Media Classic驗證CDN快取
 description: 停用CDN（內容傳送網路）快取內容可讓您快速更新由動態媒體傳送的資產，而不需等待快取過期。
 translation-type: tm+mt
-source-git-commit: 8f555f2cf97aaeabfae24919ad5861a2512b0903
+source-git-commit: 7dee751f0b0e059bda7cfdf3f524bdc4c75de91b
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '681'
 ht-degree: 25%
 
 ---
@@ -18,7 +18,7 @@ CDN會快取動態媒體資產，以便快速傳送。 不過，當您更新資�
 >
 >這些步驟僅適用於AEM 6.5、Service Pack 5或更舊版本的Dynamic Media。<!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
 
-另請參閱Dynamic Media Classic(Scene7)[中的「快取概觀」。](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)
+另請參閱Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)中的[快取概觀。
 
 **若要透過Dynamic Media Classic使CDN快取失效：**
 
