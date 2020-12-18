@@ -2,7 +2,7 @@
 title: 將您的數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
 translation-type: tm+mt
-source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
+source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 1%
@@ -150,6 +150,8 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 ### 資產大量收錄工具{#asset-bulk-ingestor}
 
 此工具僅提供給管理員群組，用於從Azure或S3資料存放區大規模擷取資產。
+
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 若要設定工具，請依照下列步驟進行：
 
