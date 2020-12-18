@@ -2,9 +2,9 @@
 title: 產生伺服器端API的存取Token
 description: 瞭解如何透過產生安全的JWT Token，以促進協力廠商伺服器與AEM之間的雲端服務通訊
 translation-type: tm+mt
-source-git-commit: 9a4cb6d981fdf5eea4d1b9c7ae9e3c99947d9745
+source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### 生成JWT承載令牌{#generating-the-jwt-bearer-token}
 
-具有組織管理員角色的使用者，將會在特定環境的開發人員主控台中看到整合標籤，以及兩個按鈕。 按一下&#x200B;**獲取服務憑據**&#x200B;按鈕將生成私鑰、證書和配置。
+具有組織管理員角色的使用者，將會在特定環境的開發人員主控台中看到整合標籤，以及兩個按鈕。 按一下&#x200B;**獲取服務憑據**&#x200B;按鈕將生成環境的作者和發佈層的私鑰、證書和配置，而不管選擇何種Pod。
 
 ![JWT Generation](assets/JWTtoken3.png)
 
