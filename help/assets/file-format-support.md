@@ -3,10 +3,10 @@ title: 支援的檔案格式和MIME類型
 description: ' [!DNL Experience Manager Assets] 支援的檔案格式和MIME類型為a [!DNL Cloud Service]。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 9%
+source-wordcount: '807'
+ht-degree: 8%
 
 ---
 
@@ -222,6 +222,10 @@ ht-degree: 9%
 ## 音訊格式{#audio-formats}
 
 [!DNL Assets] as  [!DNL Cloud Service] s provides XMP metadata extraction support for AIF, ASF, M4A, MP3, WAV, and WMA audio formats.
+
+## 提示和限制{#limitations-and-tips}
+
+* 目前，中繼資料擷取的檔案大小限制約為10 GB。 上傳超大型資產時，中繼資料擷取作業有時候會失敗。
 
 >[!MORELIKETHIS]
 >
