@@ -2,9 +2,9 @@
 title: 整合 Dynamic Media 檢視器以及 Adobe Analytics 和 Adobe Launch
 description: Adobe Launch的Dynamic Media Viewers擴充功能以及Dynamic Media Viewers 5.13的發行，可讓Dynamic Media、Adobe Analytics和Adobe Launch的客戶在其Adobe Launch設定中使用Dynamic Media Viewers專屬的事件和資料。
 translation-type: tm+mt
-source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '6647'
+source-wordcount: '6628'
 ht-degree: 17%
 
 ---
@@ -18,7 +18,7 @@ Adobe Launch的全新&#x200B;*動態媒體檢視器*&#x200B;擴充功能，以�
 
 此整合意味著您可以使用Adobe Analytics追蹤網站上動態媒體檢視器的使用情形。 同時，您也可以將檢視者公開的事件和資料與來自Adobe或第三方的任何其他Launch擴充功能搭配使用。
 
-請參閱Experience Platform Launch使用指南中的[Adobe Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/overview.html)，以進一步瞭解擴充功能。
+請參閱Experience Platform Launch使用指南中的[Adobe擴充功能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension)，以進一步瞭解擴充功能。
 
 **** 誰應閱讀本檔案：AEM平台的網站管理員、開發人員，以及營運中的人員。
 
@@ -27,7 +27,7 @@ Adobe Launch的全新&#x200B;*動態媒體檢視器*&#x200B;擴充功能，以�
 * Adobe Launch的Dynamic Media檢視器整合無法在AEM作者節點中運作。 在WCM頁面發佈之前，您無法看到任何追蹤。
 * 「快顯」操作模式不支援Adobe Launch整合動態媒體檢視器，其中檢視器URL是使用「資產詳細資訊」頁面上的「URL」按鈕取得。
 * Adobe Launch整合無法與舊版檢視器Analytics整合同時使用（透過`config2=`參數）。
-* 視訊追蹤的支援僅限核心播放追蹤，如[追蹤概述](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html)所述。 尤其是，不支援QoS、廣告、章節／區段或錯誤追蹤。
+* 視訊追蹤的支援僅限核心播放追蹤，如[追蹤概述](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events)所述。 尤其是，不支援QoS、廣告、章節／區段或錯誤追蹤。
 * 使用&#x200B;*動態媒體檢視器*&#x200B;擴充功能的資料元素不支援資料元素的儲存時間設定。 儲存持續時間必須設定為&#x200B;**[!UICONTROL 無]**。
 
 ### 整合{#use-cases-for-the-integration}的使用案例
@@ -62,7 +62,7 @@ Adobe Launch中的「資料元素」是指名稱的屬性，其值會以靜態�
 
 在您定義資料元素後，您就可以使用「資料元素」選擇器Widget，在Adobe Launch UI的其他位置使用資料元素。 尤其是，為「動態媒體檢視器」追蹤而定義的「資料元素」，將會由規則中Adobe Analytics擴充功能的「設定變數動作」引用（請參閱下文）。
 
-如需詳細資訊，請參閱Experience Platform Launch使用指南中的[資料元素](https://docs.adobe.com/content/help/zh-Hant/launch/using/reference/manage-resources/data-elements.html)。
+如需詳細資訊，請參閱Experience Platform Launch使用指南中的[資料元素](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference)。
 
 #### 關於Adobe Launch {#about-rules-in-adobe-launch}中的規則
 
@@ -88,7 +88,7 @@ Adobe Launch中的規則是一種不可知的設定，可定義構成規則的�
 
 *設定變數*&#x200B;動作後面必須有&#x200B;*傳送信標*&#x200B;動作。 *傳送信標*&#x200B;動作實際會傳送資料至分析追蹤伺服器。 *設定變數*&#x200B;和&#x200B;*傳送信標*&#x200B;這兩個動作都來自Adobe Analytics擴充功能。
 
-如需詳細資訊，請參閱Experience Platform Launch使用指南中的[規則](https://docs.adobe.com/content/help/zh-Hant/launch/using/reference/manage-resources/rules.html)。
+如需詳細資訊，請參閱Experience Platform Launch使用指南中的[規則](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/rules.html#reference)。
 
 #### 配置示例{#sample-configuration}
 
@@ -122,7 +122,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 請參閱[安裝和設定擴展](#installing-and-setup-of-extensions)。
 
-目前，視訊追蹤的支援僅限於「核心播放」追蹤，如[追蹤概述](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html)所述。 尤其是，不支援QoS、廣告、章節／區段或錯誤追蹤。
+目前，視訊追蹤的支援僅限於「核心播放」追蹤，如[追蹤概述](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events)所述。 尤其是，不支援QoS、廣告、章節／區段或錯誤追蹤。
 
 ## 使用動態媒體檢視器擴充功能{#using-the-dynamic-media-viewers-extension}
 
@@ -132,7 +132,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 若要追蹤AEM Sites中的Dynamic Media檢視器，必須執行[「設定所有整合項目](#configuring-all-the-integration-pieces)」區段下列出的所有步驟。 具體而言，您必須建立IMS設定和Adobe Launch Cloud設定。
 
-在正確設定後，您使用動態媒體支援的WCM元件新增至「網站」頁面的任何動態媒體檢視器，都會自動追蹤資料至Adobe Analytics、Adobe Analytics for Video，或兩者。
+在正確設定後，您使用動態媒體支援的WCM元件新增至「網站」頁面的任何動態媒體檢視器，都會自動追蹤資料至Adobe Analytics、Adobe Analytics for Video，或兩者皆有。
 
 請參閱[使用Adobe Sites](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)將動態媒體資產新增至頁面。
 
@@ -144,7 +144,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 在正確設定後，您可以使用Dynamic Media檢視器將Adobe Launch支援新增至網頁。
 
-請參閱[新增Launch內嵌代碼](https://docs.adobe.com/content/help/en/launch/using/implement/configure/implement-the-launch-install-code.html)以進一步瞭解如何使用Adobe Launch程式庫內嵌代碼。
+請參閱[新增Launch內嵌代碼](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch)以進一步瞭解如何使用Adobe Launch程式庫內嵌代碼。
 
 請參閱[將視訊或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)，進一步瞭解如何使用AEM Dynamic Media的內嵌程式碼功能。
 
@@ -190,7 +190,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-請參閱[動態媒體檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html)，以取得各檢視器類型支援的事件清單；前往特定檢視器區段，然後按一下「支援Adobe Analytics追蹤」子區段。 目前，動態媒體檢視器參考指南不記錄事件引數。
+請參閱[動態媒體檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html)，以取得各檢視器類型支援的事件清單；前往特定檢視器區段，然後按一下「支援Adobe Analytics追蹤」子區段。 目前，動態媒體檢視器參考指南不記錄事件引數。
 
 現在，讓我們考慮動態媒體檢視器&#x200B;*資料元素*&#x200B;的生命週期。 在頁面上發生對應的動態媒體檢視器事件後，會填入此類資料元素的值。 例如，如果「資料元素」指向&#x200B;**[!UICONTROL LOAD]**&#x200B;事件及其&quot;asset&quot;引數，則此類「資料元素」的值會在檢視器第一次執行LOAD事件後接收有效資料。 如果資料元素指向&#x200B;**[!UICONTROL ZOOM]**&#x200B;事件及其&quot;scale&quot;引數，則這些資料元素的值將保持空白，直到檢視器第一次傳送&#x200B;**[!UICONTROL ZOOM]**&#x200B;事件為止。
 
@@ -210,8 +210,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
    * 使用動態媒體檢視器&#x200B;**[!UICONTROL PAN]**&#x200B;事件做為觸發器。
    * 傳送&#x200B;**[!UICONTROL ZoomScale]**&#x200B;資料元素的值至Adobe Analytics。
 
-* 
-   * **[!UICONTROL TrackKeyRule]** 包含下列項目：
+* **[!UICONTROL TrackKeyRule]** 包含下列項目：
 
    * 使用核心Adobe Launch擴充功能的按鍵事件做為觸發器。
    * 傳送&#x200B;**[!UICONTROL ZoomScale]**&#x200B;資料元素的值至Adobe Analytics。
@@ -227,7 +226,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 無論如何，動態媒體檢視器所驅動之資料元素的值不會儲存在本機儲存或伺服器上；而是僅保留在用戶端的Adobe Launch程式庫中。 當網頁重新載入時，此類「資料元素」的值會消失。
 
-通常，「資料元素」編輯器支援[儲存持續時間選擇](https://docs.adobe.com/content/help/zh-Hant/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)。 不過，使用動態媒體檢視器擴充功能的資料元素僅支援儲存期間選項&#x200B;**[!UICONTROL 無]**。 在使用者介面中可以設定任何其他值，但「資料元素」行為在此例中並未定義。 擴充功能可自行管理資料元素的值：在整個檢視器生命週期中維護檢視器事件引數值的資料元素。
+通常，「資料元素」編輯器支援[儲存持續時間選擇](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=en#create-a-data-element)。 不過，使用動態媒體檢視器擴充功能的資料元素僅支援儲存期間選項&#x200B;**[!UICONTROL 無]**。 在使用者介面中可以設定任何其他值，但「資料元素」行為在此例中並未定義。 擴充功能可自行管理資料元素的值：在整個檢視器生命週期中維護檢視器事件引數值的資料元素。
 
 ### 關於動態媒體檢視器擴充功能{#about-rules-in-the-dynamic-media-viewers-extension}中的規則
 
@@ -421,7 +420,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 * Analytics變數可用來接收追蹤資料。
 * 報表可用於檢視Adobe Analytics內部收集的資料。
 
-另請參閱[Analytics實施指南](https://docs.adobe.com/content/help/en/analytics/implementation/home.html)。
+另請參閱[Analytics實施指南](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)。
 
 **若要設定Adobe Analytics進行整合**:
 
@@ -439,7 +438,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
    如果沒有可用的報表套裝，您或您的Adobe Analytics管理員必須先建立報表套裝，您才能繼續進一步進行設定。
 
-   請參閱[報表與報表套裝](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-reports-report-suites.html)和[建立報表套裝](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/create-report-suite.html)。
+   請參閱[報表與報表套裝](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites)和[建立報表套裝](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/create-report-suite.html#admin-console)。
 
    在Adobe Analytics中，報表套裝是在&#x200B;**[!UICONTROL 管理>報表套裝]**&#x200B;下管理。
 
@@ -453,7 +452,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
    您可以使用Adobe Analytics支援的任何類型的變數。 變數類型（例如自訂流量[props]、轉換[eVar]）的決定應由您Analytics實作的特定需求所驅動。
 
-   請參閱[Overview of props and eVars](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/traffic-props-evars/props-evars.html)。
+   請參閱[Overview of props and eVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars)。
 
    就本檔案而言，只有自訂流量(prop)變數會被使用，因為這些變數會在網頁上發生動作後幾分鐘內提供至Analytics報表。
 
@@ -501,7 +500,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 Adobe Launch中的屬性是指名的設定，可讓所有設定保持一致。 會產生組態設定的程式庫，並發佈至不同的環境層級（開發、接移和生產）。
 
-另請參閱[建立屬性](https://docs.adobe.com/content/help/en/launch/using/implement/configure/create-a-property.html)。
+另請參閱[建立啟動屬性](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch)。
 
 1. 在Adobe Launch中，按一下「新增屬性」。****
 1. 在「建 **[!UICONTROL 立屬性]** 」對話方塊的「名稱 **** 」欄位中，輸入描述性名稱，例如網站的標題。例如， `DynamicMediaViewersProp.`
@@ -526,7 +525,7 @@ Adobe Launch中所有可用的擴充功能都列在&#x200B;**[!UICONTROL 擴充�
 
 不需要額外的設定，只要接受任何建議的值即可。 完成後，請確定按一下&#x200B;**[!UICONTROL 保存]**。
 
-請參閱[Experience Cloud ID服務擴充功能](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)。
+請參閱[Experience Cloud ID服務擴充功能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html#extensions-ref)。
 
 * （必要）*Adobe Analytics*&#x200B;擴充功能
 
@@ -546,7 +545,7 @@ Adobe Launch中所有可用的擴充功能都列在&#x200B;**[!UICONTROL 擴充�
 
 按一下&#x200B;**[!UICONTROL 「儲存」]**。
 
-請參閱[Adobe Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)。
+請參閱[Adobe Analytics Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref)。
 
 * (可選. 僅在需要視訊追蹤時才需要)*音訊和視訊專用的Adobe Media Analytics*&#x200B;擴充功能
 
@@ -554,7 +553,7 @@ Adobe Launch中所有可用的擴充功能都列在&#x200B;**[!UICONTROL 擴充�
 
 所有其他欄位皆為選用。
 
-請參閱[Adobe Media Analytics for Audio and Video Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)。
+請參閱[Adobe Media Analytics for Audio and Video Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#extensions-ref)。
 
 * （必要）*動態媒體檢視器*&#x200B;擴充功能
 
@@ -584,7 +583,7 @@ Adobe Launch中所有可用的擴充功能都列在&#x200B;**[!UICONTROL 擴充�
 
 Adobe Launch可能有多個開發環境、一個測試環境和一個生產環境。 依預設，AEM中的Adobe Launch Cloud設定會將AEM作者節點指向Adobe Launch的「舞台」環境，並將AEM發佈節點指向Adobe Launch的「生產」環境。 這種安排表示，有了預設的AEM設定，就必須將Adobe Launch程式庫發佈至「測試」環境，以便在AEM作者中使用它，然後將它發佈至「生產」環境，以便用於AEM發佈。
 
-如需Adobe Launch環境的詳細資訊，請參閱[Environments](https://docs.adobe.com/content/help/en/launch/using/reference/publish/environments.html)。
+如需Adobe Launch環境的詳細資訊，請參閱[Environments](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types)。
 
 發佈程式庫包含下列兩個步驟：
 
@@ -642,7 +641,7 @@ Adobe Launch可能有多個開發環境、一個測試環境和一個生產環�
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   如需Adobe Launch中發佈程式的詳細資訊，請參閱[Publishing](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html)。
+   如需Adobe Launch中發佈程式的詳細資訊，請參閱[Publishing](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference)。
 
 ## 為{#configuring-adobe-experience-manager-for-the-integration}整合設定Adobe Experience Manager
 
