@@ -2,9 +2,9 @@
 title: 互動式影像
 description: 瞭解如何在動態媒體中處理互動式影像。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '4253'
+source-wordcount: '4249'
 ht-degree: 1%
 
 ---
@@ -234,22 +234,22 @@ Quickview的大多數實施都採用以下模式：
 >
 >在「互動式影像」或「轉盤橫幅」中新增熱點至影像時，熱點資訊會儲存在相對於影像位置的相同中繼資料位置，不論是「互動式影像」或「轉盤橫幅」。 這項功能表示，您可以在任一檢視器中，輕鬆地重複使用相同的影像及其定義的熱點資料。
 >
->但是，請注意，轉盤橫幅支援影像上的影像地圖，這些影像也可能包含熱點；互動式影像則否。 如果要建立使用相同影像的互動式影像或旋轉木馬橫幅，請記住這一點。 您可能希望使用同一影像的單獨副本建立互動式影像和旋轉傳送橫幅。
+>但是，請注意，轉盤橫幅支援影像上的影像地圖，這些影像也可能包含熱點；互動式影像則否。 如果您想要建立使用相同影像的互動式影像或轉盤橫幅，請記住這一點。 您可能想要使用相同影像的個別副本來建立互動式影像和轉盤橫幅。
 >
->另請參閱[旋轉木馬橫幅](/help/assets/dynamic-media/carousel-banners.md)。
+>另請參閱[轉盤橫幅](/help/assets/dynamic-media/carousel-banners.md)。
 
 >[!NOTE]
 >
->如果您正在編輯具有熱點的交互影像並裁剪影像，則您的熱點將被刪除。
+>如果您正在編輯具有熱點的互動式影像並裁剪影像，則會刪除熱點。
 
-**將熱點添加到影像標題**
+**向影像橫幅添加熱點**
 
-1. 在「資產」視圖中，導航到要進行交互的影像標題。
-1. 執行下列操作之一：
+1. 在「資產」檢視中，導覽至您要建立互動功能的影像橫幅。
+1. 執行下列任一項作業：
 
-   * 將滑鼠指標暫留在影像上，然後點選&#x200B;**[!UICONTROL 選擇]**（勾選圖示）。 在工具欄上，按一下「編輯&#x200B;**[!UICONTROL 」。]**
+   * 將滑鼠指標暫留在影像上，然後點選&#x200B;**[!UICONTROL 選擇]**（勾選圖示）。 在工具列上，點選&#x200B;**[!UICONTROL 編輯]**。
 
-   * 將滑鼠指標暫留在影像上，然後點選「更多動作」]**（三點圖示）**[!UICONTROL >「編輯」]**。**[!UICONTROL 
+   * 將滑鼠指標暫留在影像上，然後點選「更多動作」**[!UICONTROL （三點圖示）]**>「編輯」**[!UICONTROL 。]**
 
    * 點選影像以在「詳細資料檢視」頁面中開啟影像。 在工具列上，點選&#x200B;**[!UICONTROL 編輯]**。
 
@@ -357,9 +357,9 @@ Quickview的大多數實施都採用以下模式：
 
 若要針對回應式環境將「裁切」套用至可購買的互動式影像，您可以將「互動式影像」組態屬性`ZoomView.iscommand`加入路徑——其中`ZoomView`是要呼叫的元件，而`iscommand`是您套用的「裁切」影像伺服命令。
 
-請參閱[ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html)組態屬性。
+請參閱[ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html)組態屬性。
 
-請參閱[crop](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html)影像伺服命令。
+請參閱[crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html)影像伺服命令。
 
 您現在已準備好將互動式影像與網站上現有的Quickview整合。
 
