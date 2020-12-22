@@ -2,9 +2,9 @@
 title: Adobe Experience Manager作為Assets HTTP API中的雲端服務內容片段支援
 description: 瞭解Adobe Experience Manager如何在資產HTTP API中以雲端服務內容片段支援的方式提供。
 translation-type: tm+mt
-source-git-commit: 68f799349a4a1a9d5a09fb0cb23e0f5620d77d2f
+source-git-commit: c86dac828eabe28ee62748bff64fc091491303b0
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1877'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ Assets REST API也允許開發人員建立新資產、內容片段和資料夾�
 
 ## 必備條件 {#prerequisites}
 
-資產REST API可在最新Adobe Experience Manager的每次即裝即用安裝中，以雲端服務版本提供。
+資產REST API可在最新Adobe Experience Manager的每次現成安裝中，以雲端服務版本提供。
 
 ## 重要概念 {#key-concepts}
 
@@ -381,9 +381,7 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 
 如需詳細的API參考，請參閱此處：
 
-<!--
-* [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
--->
+* [Adobe Experience Manager Assets API —— 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
