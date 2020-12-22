@@ -2,9 +2,9 @@
 title: 產生伺服器端API的存取Token
 description: 瞭解如何透過產生安全的JWT Token，以促進協力廠商伺服器與AEM之間的雲端服務通訊
 translation-type: tm+mt
-source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
+source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -22,18 +22,18 @@ ht-degree: 0%
 
 ## 伺服器到伺服器流{#the-server-to-server-flow}
 
-具有管理員角色的使用者可產生JWT承載Token，此Token應安裝在伺服器上，並應謹慎視為機密金鑰。 JWT載體Token應與IMS交換以取得存取Token，此存取Token應包含在對AEM的雲端服務要求中。
+具有管理員角色的使用者可以產生AEM做為Cloud Service憑證，此憑證應安裝在伺服器上，並應謹慎視為機密金鑰。 此JSON格式檔案包含與AEM整合為雲端服務API所需的所有資料。 該資料用於建立與IMS交換的已簽名JWT令牌，以用於IMS訪問令牌。 接著，此存取Token可用作「載體」驗證Token，以Cloud Service的身分向AEM提出請求。
 
 伺服器對伺服器的流程包含下列步驟：
 
-* 從開發人員主控台產生JWT承載Token
-* 在非AEM伺服器上安裝Token，以呼叫AEM
-* 使用Adobe的IMS API，將JWT載體Token交換為存取Token
-* 呼叫AEM API
+* 從Developer Console擷取AEM做為Cloud Service憑證
+* 將AEM安裝為對AEM進行呼叫的非AEM伺服器上的雲端服務憑證
+* 產生JWT Token，並使用Adobe的IMS API將該Token交換為存取Token。
+* 以存取Token作為承載驗證Token呼叫AEM API
 
-### 生成JWT承載令牌{#generating-the-jwt-bearer-token}
+### 將AEM擷取為雲端服務憑證{#fetch-the-aem-as-a-cloud-service-credentials}
 
-具有組織管理員角色的使用者，將會在特定環境的開發人員主控台中看到整合標籤，以及兩個按鈕。 按一下&#x200B;**獲取服務憑據**&#x200B;按鈕將生成環境的作者和發佈層的私鑰、證書和配置，而不管選擇何種Pod。
+具有IMS組織管理員角色的使用者，將會在特定環境的「開發人員主控台」中看到整合標籤，以及兩個按鈕。 按一下「取得服務認證&#x200B;**」按鈕，將會產生服務認證json，其中包含非AEM伺服器所需的所有資訊，包括用戶端ID、用戶端密碼、私密金鑰、憑證，以及環境作者與發佈層的設定，不論選擇何種pod。**
 
 ![JWT Generation](assets/JWTtoken3.png)
 
@@ -59,21 +59,45 @@ ht-degree: 0%
 }
 ```
 
-### 在非AEM伺服器上安裝Token {#install-the-token-on-a-non-aem-server}
+### 在非AEM伺服器{#install-the-aem-service-credentials-on-a-non-aem-server}上安裝AEM服務認證
 
-呼叫AEM的非AEM應用程式應安裝JWT記載權杖，將它視為機密。
+呼叫AEM的非AEM應用程式應能以雲端服務認證的形式存取AEM，將其視為機密。
 
-### 將JWT Token交換為存取Token {#exchange-the-jwt-token-for-an-access-token}
+### 產生JWT Token並將它交換為存取Token{#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-將JWT Token加入Adobe IMS服務的呼叫中，以擷取有效期為24小時的存取Token。
+在呼叫Adobe IMS服務時，使用認證來建立JWT Token，以擷取有效期為24小時的存取Token。
+
+AEM-CS服務認證可使用專為此目的而設計的用戶端程式庫，來交換為存取Token。 用戶端程式庫可從[Adobe的公用GitHub存放庫](https://github.com/adobe/aemcs-api-client-lib)取得，其中包含更詳細的指引和最新資訊。
+
+```
+/*jshint node:true */
+"use strict";
+
+const fs = require('fs');
+const exchange = require("@adobe/aemcs-api-client-lib");
+
+const jsonfile = "aemcs-service-credentials.json";
+
+var config = JSON.parse(fs.readFileSync(jsonfile, 'utf8'));
+exchange(config).then(accessToken => {
+    // output the access token in json form including when it will expire.
+    console.log(JSON.stringify(accessToken,null,2));
+}).catch(e => {
+    console.log("Failed to exchange for access token ",e);
+});
+```
+
+同樣的交換可以用任何能夠生成具有正確格式的簽名的JWT令牌並調用IMS令牌交換API的語言來執行。
+
+存取Token會在過期時定義，通常為12h。 Git儲存庫中有范常式式碼，可管理存取Token並在存取Token過期前加以重新整理。
 
 ### 呼叫AEM API {#calling-the-aem-api}
 
-將適當的伺服器對伺服器API呼叫作為雲端服務環境，包括標題中的存取Token。 因此，對於「授權」標題，請使用值`"Bearer <access_token>"`。
+將適當的伺服器對伺服器API呼叫作為雲端服務環境，包括標題中的存取Token。 因此，對於「授權」標題，請使用值`"Bearer <access_token>"`。 例如，使用`curl`:
 
-<!-- ### Code Samples {#code-samples}
-
-https://git.corp.adobe.com/boston/skyline-api-client-lib (internal note: URL will change to public git repo before we publish) contains client libraries written in node.js that will exchange the JSON outputted by the developer console for an access token. -->
+```curlc
+curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
+```
 
 ## 開發人員流程{#developer-flow}
 
@@ -100,6 +124,6 @@ https://git.corp.adobe.com/boston/skyline-api-client-lib (internal note: URL wil
 
 將非AEM應用程式的伺服器對伺服器API呼叫，以雲端服務環境的形式傳送至AEM，包括標題中的存取Token。 因此，對於「授權」標題，請使用值`"Bearer <access_token>"`。
 
-## JWT Bearer Token Revocation {#jwt-bearer-token-revocation}
+## 服務憑據撤銷{#service-credentials-revocation}
 
 如果JWT承載權杖需要撤銷，請向客戶支援提交請求。
