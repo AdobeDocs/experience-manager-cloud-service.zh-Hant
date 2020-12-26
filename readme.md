@@ -1,14 +1,14 @@
 ---
-source-git-commit: aa4e8a3d1650411c4b78c534b5797abbcd0a7035
+source-git-commit: 3409c713ea1ca033a2835d0070d0da4fec58fd18
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '97'
 ht-degree: 0%
 
 ---
-# Adobe Experience Manager Cloud服務檔案
+# Adobe Experience Manager雲端服務檔案
 
-這是Adobe Experience Manager Cloud服務檔案的儲存庫。 本檔案涵蓋安裝、管理、製作使用，以及如何使用Cloud Service自訂AEM。
+這是Adobe Experience Manager雲端服務檔案的儲存庫。 本檔案涵蓋安裝、管理、製作使用，以及如何自訂Experience Using a Cloud Service。
 
 歡迎您對本檔案的貢獻。 請參閱下列資源：
 
