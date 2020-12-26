@@ -2,9 +2,9 @@
 title: 將您的數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
 translation-type: tm+mt
-source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
+source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1903'
 ht-degree: 1%
 
 ---
@@ -135,7 +135,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## 大量上傳資產{#bulk-upload}
 
-大量資產收錄者可有效處理數千個資產。 但是，大規模的擷取不只是廣泛、大型的檔案轉儲或盲目移轉。 若要讓它成為符合您商業目的的有意義專案，規劃和管理資產可帶來更有效率的擷取。 所有的收錄都不相同，如果不考慮細微的儲存庫組成和業務需求，就不能進行概括。 以下是規劃和執行大量擷取的主要建議：
+大量資產收錄者可以有效處理大量資產。 但是，大規模的擷取不只是廣泛的檔案轉儲或隨意的移轉。 若要將大規模擷取作為符合您商業目的且有效率的有意義專案，請規劃移轉並組織資產組織。 在細微的儲存庫組成和業務需求中，所有的收錄都不同，而不是一般化。 以下是規劃和執行大量擷取的一些主要建議：
 
 * 組織資產：移除DAM中不需要的資產。 考慮移除未使用、過時或重複的資產。 如此可減少所傳輸的資料和所吸收的資產，進而加速擷取。
 * 組織資產：請考慮依邏輯順序來組織內容，例如依檔案大小、檔案格式、使用案例或優先順序。 一般而言，大型的複雜檔案需要更多的處理。 您也可以考慮使用檔案大小篩選選項（如下所述）個別接收大型檔案。
@@ -149,7 +149,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 資產大量收錄工具{#asset-bulk-ingestor}
 
-此工具僅提供給管理員群組，用於從Azure或S3資料存放區大規模擷取資產。
+此工具僅提供給管理員群組，用於從Azure或S3資料存放區大規模擷取資產。 檢視設定和擷取的視訊逐步執行。
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
