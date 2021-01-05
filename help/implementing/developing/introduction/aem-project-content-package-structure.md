@@ -241,7 +241,7 @@ Repo Init提供了定義JCR結構的指令或指令碼，這些結構從常見�
 
 例如，包含AEM作者和發佈特定套件的部署可能如下所示：
 
-+ `all` 容器套件內嵌下列套件，以建立單一部署工件
++ `all` 容器套件內嵌下列套件，以建立單一的部署工件
    + `ui.apps` 內嵌於 `/apps/my-app-packages/application/install` 將程式碼部署至AEM作者和AEM發佈
    + `ui.apps.author` 內嵌於 `/apps/my-app-packages/application/install.author` 僅將程式碼部署至AEM作者
    + `ui.content` 內嵌於 `/apps/my-app-packages/content/install` 將內容和設定部署至AEM作者和AEM發佈
