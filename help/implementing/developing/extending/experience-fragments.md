@@ -148,7 +148,7 @@ The only additional configuration is to ensure that the components are [allowed 
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-Link Externalizer可用來判斷建立Target選件的HTML版本時所需的正確URL，此HTML版本隨後會傳送至Adobe Target。 這是必要的，因為Adobe Target要求Target HTML選件內的所有連結都可公開存取；這表示必須先發佈連結參考的任何資源，以及體驗片段本身，才能加以使用。
+Link Externalizer可用來判斷建立Target選件的HTML版本時所需的正確URL，此HTML版本隨後會傳送至Adobe Target。 這是必要的，因為Adobe Target要求Target HTML選件內的所有連結都可公開存取；這表示必須先發佈連結參考的任何資源，以及體驗片段本身，才能使用這些資源。
 
 依預設，當您建構Target HTML選件時，會將請求傳送至AEM中的自訂Sling選擇器。 此選擇器稱為`.nocloudconfigs.html`。 正如其名稱所暗示的，它會建立體驗片段的純HTML轉換，但不包含雲端設定（這將是多餘的資訊）。
 
