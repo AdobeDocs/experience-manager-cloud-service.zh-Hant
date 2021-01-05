@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * &quot;*無頭內容管理系統或無頭CMS是從頭構建的純後端內容管理系統(CMS)，它是內容儲存庫，可通過API訪問內容，以便在任何設備上顯示。*
 
-   *「無頭」一詞源於「主體」（後端，即內容存放庫）的截擊「頭」（前端，即網站）的概念*。
+   *「無頭」一詞源於「正文」（後端，即內容存放庫）的截擊「頭」（前端，即網站）的概念*。
 
    請參閱[Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system)。
 
