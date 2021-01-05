@@ -283,7 +283,6 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 >* 存取某些模式需要適當的權限／權限。
 >* 由於空間限制，行動裝置無法使用開發人員模式。
 >* 有一個鍵 [盤](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`可切換 **)，在「預覽」和目前選取的模式之間切換(例如，「編輯」、「排版**********」等)。
-
 >
 
 
