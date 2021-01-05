@@ -551,7 +551,7 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
 
 1. 使用右上角的選項下載或列印PDF。
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
    要修改渲染的PDF檔案的外觀，例如注釋和狀態的字型顏色、大小和樣式、背景顏色，請從「配置管理器」中開啟&#x200B;**[!UICONTROL 「注釋PDF配置」，並修改所需的選項。]**&#x200B;例如，要更改批准狀態的顯示顏色，請修改相應欄位中的顏色代碼。 有關更改批注的字型顏色的資訊，請參閱[注釋](/help/assets/manage-digital-assets.md#annotating)。
 
