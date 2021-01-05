@@ -97,7 +97,7 @@ RTE功能可透過一系列外掛程式提供，每個外掛程式都包含featu
 要配置RTE以顯示所需的表徵圖，請遵循以下步驟。
 
 1. 導覽至您的元件，例如`/apps/<myProject>/components/text`。
-1. 導航到節點`rtePlugins/edit`。 如果節點不存在，請參見[激活插件](#activateplugin)。
+1. 導航至節點`rtePlugins/edit`。 如果節點不存在，請參見[激活插件](#activateplugin)。
 1. 在`edit`節點上建立`features`屬性，並添加一個或多個功能。 儲存所有變更。
 
 ### 設定「貼上」(Ctrl+V)圖示和捷徑{#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}的行為
@@ -455,7 +455,7 @@ Rich Text Editor使用ID為`CQrte`的容器DOM元素，提供不同的樣式來�
    * **名稱** `rangeStart`
 
       **類型** `Long`
-      **估** 值范 [](https://unicode.org/) 圍中第一個字元的Unicoderepresentation(decimal)
+      **估** 值范 [](https://unicode.org/) 圍中第一個字元的Unicodederepresentation(decimal)
 
    * **名稱** `rangeEnd`
 
