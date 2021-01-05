@@ -117,7 +117,7 @@ Experience League每月推出的Dynamic Media電子報旨在協助您快速上�
    * 認識動態媒體技術支援部門PieterJan Pieper。
 
 
-* **[2019年7月07日](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
+* **[2019年7月7日總第07期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
 
    在此問題中：
 
