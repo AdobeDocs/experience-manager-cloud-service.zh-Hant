@@ -84,7 +84,7 @@ GraphQL規範提供了一系列指引，說明如何建立用於查詢特定實�
 
 對於內容片段，GraphQL結構（結構和類型）基於[內容片段模型](/help/assets/content-fragments/content-fragments-models.md)及其資料類型。
 
-例如，如果使用者建立名為`Article`的內容片段模型，AEM會產生類型為`ArticleModel`的物件`article`。 此類型中的欄位對應於模型中定義的欄位和資料類型。
+例如，如果使用者建立名為`Article`的內容片段模型，AEM會產生類型為`ArticleModel`的物件`article`。 此類型中的欄位與模型中定義的欄位和資料類型相對應。
 
 1. 內容片段模型：
 
