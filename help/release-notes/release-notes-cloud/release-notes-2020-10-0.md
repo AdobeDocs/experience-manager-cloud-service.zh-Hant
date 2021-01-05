@@ -4,8 +4,8 @@ description: '[!DNL Adobe Experience Manager] 作為2020.10.0的雲端服務發�
 translation-type: tm+mt
 source-git-commit: fd271f24e5f8ddbe440dccf5c51c91a46c70dead
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1044'
+ht-degree: 17%
 
 ---
 
