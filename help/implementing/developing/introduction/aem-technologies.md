@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # AEM Technical Foundations {#aem-technical-foundations}
 
-AEM是建立在證實可行、可擴充且有彈性的技術之上的強穩平台。 本檔案提供AEM的各種組成部分的詳細概述，並做為完整堆疊AEM開發人員的技術附錄。 它不是以快速入門手冊為目的。 如果您是AEM開發的新手，請參閱[開始開發AEM網站- WKND教學課程](develop-wknd-tutorial.md)作為第一步。
+AEM是建立在證實可行、可擴充且有彈性的技術之上的強穩平台。 本檔案提供AEM的各個部分的詳細概述，並做為完整堆疊AEM開發人員的技術附錄。 它不是以快速入門手冊為目的。 如果您是AEM開發的新手，請參閱[開始開發AEM網站- WKND教學課程](develop-wknd-tutorial.md)作為第一步。
 
 >[!TIP]
 >
@@ -112,7 +112,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 使用URL分解原則：
 
 * 映射使用從請求提取的內容路徑來定位資源。
-* 當找到適當的資源時，會擷取sling資源類型，並用來尋找要用來呈現內容的指令碼。
+* 當找到適當的資源時，會擷取sling資源類型，並用來找出要用來呈現內容的指令碼。
 
 下圖說明所使用的機制，將在以下幾節中詳細討論。
 
