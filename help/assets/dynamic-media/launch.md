@@ -132,7 +132,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 若要追蹤AEM Sites中的Dynamic Media檢視器，必須執行[「設定所有整合項目](#configuring-all-the-integration-pieces)」區段下列出的所有步驟。 具體而言，您必須建立IMS設定和Adobe Launch Cloud設定。
 
-在正確設定後，您使用動態媒體支援的WCM元件新增至「網站」頁面的任何動態媒體檢視器，都會自動追蹤資料至Adobe Analytics、Adobe Analytics for Video，或兩者皆有。
+在正確設定後，您使用動態媒體支援的WCM元件新增至「網站」頁面的任何動態媒體檢視器，都會自動追蹤資料至Adobe Analytics、Adobe Analytics for Video，或兩者。
 
 請參閱[使用Adobe Sites](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)將動態媒體資產新增至頁面。
 
