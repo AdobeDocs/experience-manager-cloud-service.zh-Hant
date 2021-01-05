@@ -50,7 +50,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 ![導覽面板頂端列](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
-全域導覽有兩個面板，由畫面左邊緣的圖示表示：
+全域導覽有兩個面板，由螢幕左邊緣的圖示表示：
 
 * **[Navigation](#navigation-panel)**  —— 當您登入AEM時，由羅盤和預設面板表示
 * **[工具](#tools-panel)** -用錘子表示
