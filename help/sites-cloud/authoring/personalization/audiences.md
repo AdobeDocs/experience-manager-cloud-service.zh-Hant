@@ -1,6 +1,6 @@
 ---
 title: 管理對象
-description: 「對象」主控台可讓您建立、組織及管理Adobe Target帳戶的對象，或管理ContextHub的區段
+description: 「對象」控制台可讓您建立、組織及管理Adobe Target帳戶的對象，或管理ContextHub的區段
 translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
