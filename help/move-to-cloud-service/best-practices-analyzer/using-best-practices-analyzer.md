@@ -16,7 +16,7 @@ ht-degree: 46%
 >id="aemcloud_bpa_using"
 >title="使用最佳實踐分析器"
 >abstract="請檢閱使用最佳實務分析程式（舊稱雲端就緒性分析程式）的檔案，以及產生的報表。 「最佳做法分析器報告」用於獲得對一般升級準備情況的高級瞭解。"
->additional-url=""
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
 
 ## 使用最佳實踐分析器的重要注意事項{#imp-considerations}
 
