@@ -3,10 +3,10 @@ title: XMP 中繼資料
 description: 瞭解XMP（可擴充中繼資料平台）中繼資料管理標準。 AEM將它當做建立、處理和交換中繼資料的標準格式。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
+source-git-commit: 8110259a910c891a5bcf7507cfa9897603a45c91
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 20%
+source-wordcount: '899'
+ht-degree: 17%
 
 ---
 
@@ -72,7 +72,7 @@ XMP可讓您將`xml:lang`屬性新增至文字屬性，以指定文字的語言�
 
 ## XMP回寫到轉譯{#xmp-writeback-to-renditions}
 
-Adobe Experience Manager(AEM)Assets中的此XMP回寫功能可將資產中繼資料變更複製至資產的轉譯。
+Adobe Experience Manager(AEM)Assets中的此XMP回寫功能會將資產中繼資料變更複製至資產的轉譯。
 
 當您從AEM Assets中變更資產的中繼資料，或在上傳資產時，變更最初會儲存在CRXDE的資產節點中。
 
@@ -90,37 +90,41 @@ XMP回寫功能會將中繼資料變更傳播至資產的所有或特定轉譯�
 
 XMP回寫功能可讓您將中繼資料變更傳播至資產的所有或特定轉譯。 不過，這些變更不會儲存在資產階層的中繼資料節點下。 此功能會在二進位檔案中內嵌轉譯的變更。
 
-### 啟用XMP回寫{#enable-xmp-writeback}
+<!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes.
+### Enable XMP writeback {#enable-xmp-writeback}
 -->
 
-若要啟用上傳資產時中繼資料變更，將其傳播至資產的轉譯，請在Configuration Manager中修改&#x200B;**[!UICONTROL Adobe CQ DAM Rendition Maker]**&#x200B;組態。
+<!-- asgupta, Engg: Need attention here to update the configuration manager changes. -->
 
-1. 要開啟配置管理器，請訪問`https://[aem_server]:[port]/system/console/configMgr`。
-1. 開啟&#x200B;**[!UICONTROL Adobe CQ DAM Rendition Maker]**&#x200B;組態。
-1. 選擇&#x200B;**[!UICONTROL 傳播XMP]**&#x200B;選項，然後保存更改。
+<!-- 
+To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
-### 針對特定轉譯啟用XMP回寫{#enable-xmp-writeback-for-specific-renditions}
+1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration.
+1. Select the **[!UICONTROL Propagate XMP]** option, and then save the changes.
 
-若要讓XMP回寫功能將中繼資料變更傳播至選取的轉譯，請將這些轉譯指定至DAM中繼資料回寫工作流程的[!UICONTROL XMP回寫程式]工作流程步驟。 依預設，此步驟會以原始轉譯設定。
+### Enable XMP write-back for specific renditions {#enable-xmp-writeback-for-specific-renditions}
 
-對於XMP回寫功能，將中繼資料傳播至轉譯縮圖140.100.png和319.319.png，請執行這些步驟。
+To let the XMP write-back feature propagate metadata changes to select renditions, specify these renditions to the [!UICONTROL XMP Writeback Process] workflow step of DAM Metadata WriteBack workflow. By default, this step is configured with the original rendition.
 
-1. 點選/按一下AEM標誌，然後導覽至「工 **[!UICONTROL 具]** >工 **[!UICONTROL 作流程]** >模 **[!UICONTROL 型]**」。
-1. 從「模型」頁面，開啟&#x200B;**[!UICONTROL DAM元資料回寫]**&#x200B;工作流模型。
-1. 在「 **[!UICONTROL DAM中繼資料回寫]** 」屬性頁面中，開啟 **[!UICONTROL 「XMP回寫程式」步驟]** 。
-1. 在「步 **[!UICONTROL 驟屬性]** 」對話方塊中，點選/按一下「 **[!UICONTROL 處理]** 」標籤。
-1. 在&#x200B;**[!UICONTROL Arguments]**&#x200B;方塊中，新增`rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`，然後點選／按一下&#x200B;**[!UICONTROL OK]**。
+For the XMP write-back feature to propagate metadata to the rendition thumbnails 140.100.png and 319.319.png, perform these steps.
+
+1. Tap/click the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. From the Models page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
+1. In the **[!UICONTROL DAM Metadata Writeback]** properties page, open the **[!UICONTROL XMP Writeback Process]** step.
+1. In the **[!UICONTROL Step Properties]** dialog box, tap/click the **[!UICONTROL Process]** tab.
+1. In the **[!UICONTROL Arguments]** box, add `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, and then tap/click **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
-1. 儲存變更。
-1. 若要使用新屬性重新產生動態媒體影像的金字塔TIFF(PTIFF)轉譯，請將「動態媒體處理影像資產」步驟新增至「 **** DAM中繼資料回寫」工作流程。PTIFF轉譯只會在Dynamic Media Hybrid實作中建立並儲存在本機。
+1. Save the changes.
+1. To regenerate the Pyramid TIFF (PTIFF) renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata write-back workflow. PTIFF renditions are only created and stored locally in a Dynamic Media Hybrid implementation.
 
-1. 儲存工作流程。
+1. Save the workflow.
 
-中繼資料變更會傳播至資產的轉譯縮圖140.100.png和thumbnail.319.319.png，而非其他。
+The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
+-->
 
 >[!MORELIKETHIS]
 >
