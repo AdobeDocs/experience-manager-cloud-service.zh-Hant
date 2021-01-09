@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
+source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 70%
+source-wordcount: '2018'
+ht-degree: 66%
 
 ---
 
@@ -25,6 +25,8 @@ ht-degree: 70%
 * 如果您使用&#x200B;*沙盒環境*，請確定您的環境是最新的，並升級至最新的版本。 如果您使用&#x200B;*生產環境*，則會自動更新。
 
 * 若要使用「內容傳輸工具」，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud服務例項中的本機AEM管理員群組。 無權限的使用者將無法擷取能使用「內容轉移工具」的存取 Token。
+
+* 存取Token可在特定時段後或雲端服務環境升級後定期到期。 如果存取Token已過期，您將無法連線至Cloud Service實例，而您必須擷取新的存取Token。 與現有移轉集相關聯的狀態圖示將變更為紅色雲端，並會在您將滑鼠暫留在紅色雲端時顯示訊息。
 
 * 目前，AEM做為雲端服務作者例項的預設MongoDB大小為32GB。 建議您針對大於20GB的區段儲存區大小，提交支援票證以增加MongoDB大小。
 
@@ -162,6 +164,9 @@ ht-degree: 70%
 請依照下列步驟，從「內容轉移工具」中擷取您的移轉集：
 
 1. 從&#x200B;*綜覽*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**擷取**&#x200B;即可開始擷取。**移轉集擷取**&#x200B;對話框隨即顯示。按一下&#x200B;**Ingest**&#x200B;以開始接收階段。 為了示範，已停用&#x200B;**將內容擷取至製作例項**。您可以同時將內容擷取至「製作」和「發佈」。
+
+   >[!IMPORTANT]
+   >啟用&#x200B;**在擷取**&#x200B;選項前擦除雲端例項上的現有內容時，它會刪除整個現有儲存庫並建立新儲存庫，以將內容擷取至。 這表示它會重設目標Cloud服務例項的所有設定，包括權限。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
