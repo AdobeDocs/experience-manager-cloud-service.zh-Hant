@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
+source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 66%
+source-wordcount: '1915'
+ht-degree: 64%
 
 ---
 
@@ -257,12 +257,6 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 ### UI 行為 {#ui-behavior}
 
 身為使用者，您可能會在「內容轉移工具」的使用者介面 (UI) 中看到下列行為變更：
-
-* 使用者為製作 URL (開發/預備/生產) 建立移轉集，並成功執行提取和擷取。
-
-* 然後，使用者會為相同的製作 URL 建立新的移轉集，並對新移轉集執行提取和擷取。UI 會顯示第一個移轉集的擷取狀態已變更為&#x200B;**「失敗」**，並且沒有可用記錄。
-
-* 這並不表示第一個移轉集擷取失敗。之所以會出現此行為，是因為開始新的擷取工作時，將刪除上一個擷取工作。因此，請忽略第一個移轉集的變更狀態。
 
 * 「內容轉移工具」UI 中的圖示可能與本指南中顯示的螢幕擷圖不同，也可能完全不顯示 (取決於來源 AEM 例項的版本)。
 
