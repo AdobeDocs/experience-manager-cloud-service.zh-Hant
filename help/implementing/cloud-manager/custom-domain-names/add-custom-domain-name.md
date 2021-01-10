@@ -2,7 +2,7 @@
 title: 新增自訂網域名稱
 description: 新增自訂網域名稱
 translation-type: tm+mt
-source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
+source-git-commit: 148a1f478aeabea970e46e7e565fccca7db6a7e9
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -50,7 +50,8 @@ ht-degree: 0%
 1. 從下拉清單中選擇&#x200B;**域SSL證書**，然後選擇&#x200B;**繼續**。
 
 1. **將顯示「添** 加域名稱」對話框。這將帶您進入「環境的域名驗證」螢幕。 請參閱[添加TXT記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)以瞭解詳細資訊。
-按照提供的說明來證明您環境的域所有權。
+
+   按照提供的說明來證明您環境的域所有權：
 
 1. 按一下&#x200B;**建立**。
 1. CDN部署需要有效的SSL憑證和成功的TXT驗證。 狀態&#x200B;**已驗證和已部署**表示。
