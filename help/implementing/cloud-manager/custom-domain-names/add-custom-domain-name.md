@@ -2,9 +2,9 @@
 title: 新增自訂網域名稱
 description: 新增自訂網域名稱
 translation-type: tm+mt
-source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
+source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 ## 重要注意事項{#important-considerations}
 
 * 在新增自訂網域名稱之前，必須先將包含自訂網域名稱的有效SSL憑證安裝至您的程式。 請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)以瞭解詳細資訊。
+
+* 域名無法添加到環境中，因為有一個當前正在運行的管線連接到這些環境。
 
 * 一次只能添加一個域名。 不過，網域不能包含萬用字元。 作者端不支援自訂網域。
 
