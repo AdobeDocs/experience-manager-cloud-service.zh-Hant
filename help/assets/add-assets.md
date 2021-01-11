@@ -2,9 +2,9 @@
 title: 將您的數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
 translation-type: tm+mt
-source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
@@ -44,17 +44,13 @@ ht-degree: 1%
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-211.png)
-
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
    The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
 
-   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
+   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
-   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
-
-   ![chlimage_1-212](assets/chlimage_1-212.png)
+   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -97,7 +93,7 @@ Uploading numerous assets in bulk consumes significant I/O resources, which may 
 
 To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
-Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
+Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in CRX-DE and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
@@ -190,23 +186,23 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## 上傳{#process-when-uploaded}時處理資產
 
-若要對已上傳的資產進行其他處理，您可以在上傳檔案夾上套用處理設定檔。 配置檔案可在[!DNL Assets]資料夾的&#x200B;**[!UICONTROL 屬性]**&#x200B;頁中使用。
+若要對已上傳的資產進行其他處理，您可以在上傳檔案夾上套用處理設定檔。 配置檔案可在[!DNL Assets]資料夾的&#x200B;**[!UICONTROL 屬性]**&#x200B;頁中使用。 沒有副檔名或副檔名錯誤的數位資產不會視需要處理。 例如，上傳此類資產時，資產不會發生任何情況，或是會套用錯誤的處理設定檔。 使用者仍可將二進位檔案儲存在DAM中。
 
-![assets-folder-properties](assets/assets-folder-properties.png)
+![資產檔案夾的屬性，其中包含可新增處理設定檔的選項](assets/assets-folder-properties.png)
 
 可使用下列標籤：
 
-* [中繼資](metadata-profiles.md) 料設定檔可讓您將預設中繼資料屬性套用至上傳至該資料夾的資產
+* [中繼資](metadata-profiles.md) 料設定檔可讓您將預設中繼資料屬性套用至上傳至該資料夾的資產。
 * [處理](asset-microservices-configure-and-use.md) 分析工具可讓您產生的轉譯數，預設為多於可能的轉譯數。
 
 此外，如果您的部署已啟用[!DNL Dynamic Media]，則可使用下列標籤：
 
-* [動態媒體影像](dynamic-media/image-profiles.md) 分析工具可讓您套用特定的裁切(**[!UICONTROL 智慧]** 裁切和像素裁切)，並銳利化已上傳資產的設定。
-* [動態媒體視訊](dynamic-media/video-profiles.md) 設定檔可讓您套用特定的視訊編碼設定檔（解析度、格式、參數）。
+* [[!DNL Dynamic Media] 影像](dynamic-media/image-profiles.md) 分析工具可讓您套用特定裁切(**[!UICONTROL 智慧]** 裁切和像素裁切)，並銳利化設定至上傳的資產。
+* [[!DNL Dynamic Media] 視訊設](dynamic-media/video-profiles.md) 定檔可讓您套用特定的視訊編碼設定檔（解析度、格式、參數）。
 
 >[!NOTE]
 >
->動態媒體裁切和資產的其他操作不具破壞性，即不會變更上傳的原始內容，而是提供在傳送資產時要進行裁切或媒體轉換的參數
+>[!DNL Dynamic Media] 對資產的裁切和其他操作不具破壞性，也就是說，這些操作不會變更上傳的原稿。它會提供參數，以便在傳送資產時進行裁切或變形。
 
 對於已指派處理設定檔的檔案夾，描述檔名稱會出現在卡片檢視的縮圖上。 在清單視圖中，配置檔案名稱將顯示在&#x200B;**[!UICONTROL 處理配置檔案]**&#x200B;列中。
 
