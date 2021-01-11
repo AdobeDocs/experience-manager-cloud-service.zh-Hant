@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager資產中顯著變更為a [!DNL Cloud Service]
-description: '與Adobe Experience Manager 6.5相比，Experience Manager中Adobe Experience Manager Assets的變更明顯。 [!DNL Cloud Service] '
+title: ' [!DNL Adobe Experience Manager Assets] 中a [!DNL Cloud Service]的顯著變化'
+description: 與[!DNL Adobe Experience Manager 6.5相比， [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 的顯著變更。
 translation-type: tm+mt
-source-git-commit: 0838f384b31c59fe95087e1a71741656eedcd13b
+source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '605'
 ht-degree: 3%
 
 ---
 
 
-# Experience Manager Assets的顯著變更為[!DNL Cloud Service] {#notable-changes}
+# [!DNL Experience Manager Assets]變更為[!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager是[!DNL Cloud Service]，為您管理Experience Manager專案帶來許多新功能與可能。 與[!DNL Cloud Service]的[!DNL Experience Manager]相比，Experience Manager Assets內部部署或代管為Adobe Managed Service之間有許多不同。 本文著重說明[!DNL Assets]功能的重要差異。
+[!DNL Adobe Experience Manager] 這為管 [!DNL Cloud Service] 理您的Experience Manager專案帶來了許多新功能和可能。與[!DNL Experience Manager]作為[!DNL Cloud Service]的&lt;a1/>相比，[!DNL Experience Manager Assets]內部部署或代管為Adobe Managed Service有許多不同。 本文著重說明[!DNL Assets]功能的重要差異。
 
 與[Experience Manager] 6.5相比，主要差異在於：
 
@@ -22,16 +22,17 @@ Adobe Experience Manager是[!DNL Cloud Service]，為您管理Experience Manager
 
 ## 資產擷取與處理{#asset-ingestion}
 
-資產上傳已最佳化，因為它可以更佳地縮放資產擷取、更快速的上傳、使用微型服務更快速的處理，以及大量擷取。 產品功能（網路使用者介面、案頭用戶端）已更新。 但是，這可能會影響到一些現有的自訂。
+資產上傳已最佳化，因為它可以更佳地縮放擷取、更快速的上傳、使用微型服務更快速的處理以及大量擷取。 產品功能（網頁使用者介面、案頭用戶端）已更新。 此外，這可能會影響一些現有的自訂。
 
-* Experience Manager使用直接二進位存取原則來上傳和下載資產，並使用資產微服務來處理資產。 請參閱[資產擷取概觀](/help/assets/asset-microservices-overview.md)。
+* [!DNL Experience Manager] 使用直接二進位存取原則來上傳和下載資產，並使用資產微型服務來處理資產。請參閱[微服務概述](/help/assets/asset-microservices-overview.md)。
    * 資產上傳[並直接二進位存取](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)。
    * 如需技術詳細資訊，請參閱[直接二進位上傳通訊協定和API](/help/assets/developer-reference-material-apis.md#upload-binary)。
    * 如需基本CRUD作業的可用API方法比較，請參閱[API和資產作業](/help/assets/developer-reference-material-apis.md#use-cases-and-apis)。
 * 舊版 已不提供預設的工作流程 **[!UICONTROL DAM Asset Update]**。[!DNL Experience Manager]相反，資產微服務提供可擴充、可立即使用的服務，涵蓋大部分預設資產處理（轉譯、中繼資料擷取和文字擷取，以利建立索引）。
    * 請參閱[配置和使用資產微服務](/help/assets/asset-microservices-configure-and-use.md)
    * 若要在處理中自訂工作流程步驟，可使用[後處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。
-* 透過「封裝管理員」傳入的資產需要使用「資產」介面中的「重新處理資產」動作，手動重新處理。****
+* 使用Package Manager上載的資產需要使用[!DNL Assets]介面中的&#x200B;**[!UICONTROL 重新處理資產]**&#x200B;動作進行手動重新處理。
+* 沒有副檔名或副檔名錯誤的數位資產不會視需要處理。 例如，上傳此類資產時，資產不會發生任何情況，或是會套用錯誤的處理設定檔。 使用者仍可將二進位檔案儲存在DAM中。
 
 使用資產微服務產生的標準轉譯會以向後相容的方式儲存在資產儲存庫節點中（相同的命名慣例）。
 
