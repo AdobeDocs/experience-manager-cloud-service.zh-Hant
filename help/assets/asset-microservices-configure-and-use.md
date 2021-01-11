@@ -3,7 +3,7 @@ title: 配置和使用資產微服務
 description: 設定並使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '2532'
 ht-degree: 1%
@@ -108,7 +108,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 它可將影像、視訊、檔案和其他檔案格式轉換為不同的轉譯，包括縮圖、擷取的文字和中繼資料，以及封存。
 
-開發人員可使用[!DNL Asset Compute Service]來建立符合支援使用案例的自訂應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)。 [[!DNL Experience Manager] 可以使用管理員設定的自訂設定檔，從使用者介面呼叫這些自訂應用程式。[!DNL Asset Compute Service] 支援以下調用外部服務的使用案例：
+開發人員可使用[!DNL Asset Compute Service]來建立自訂應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)，以瞭解支援的使用案例。 [[!DNL Experience Manager] 可以使用管理員設定的自訂設定檔，從使用者介面呼叫這些自訂應用程式。[!DNL Asset Compute Service] 支援以下調用外部服務的使用案例：
 
 * 使用[!DNL Adobe Photoshop]的[ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout)將結果儲存為轉譯。
 * 呼叫協力廠商系統以更新資料，例如PIM系統。
@@ -123,7 +123,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 若要建立自訂描述檔，請遵循下列步驟：
 
-1. 管理員可存取&#x200B;**[!UICONTROL 工具>資產>處理設定檔]**。 按一下&#x200B;**[!UICONTROL 建立]**。
+1. 管理員可存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**。 按一下&#x200B;**[!UICONTROL 建立]**。
 1. 按一下&#x200B;**[!UICONTROL Custom]**&#x200B;頁籤。 按一下&#x200B;**[!UICONTROL 添加新]**。 提供所要的轉譯檔案名稱。
 1. 提供下列資訊。
 
@@ -145,6 +145,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 為了說明自訂描述檔的使用情形，我們考慮將一些自訂文字套用至促銷活動影像的使用案例。 您可以建立處理設定檔，以運用Photoshop API來編輯影像。
 
 資產計算服務整合可讓Experience Manager使用[!UICONTROL 服務參數]欄位將這些參數傳遞至自訂應用程式。 然後自訂應用程式會呼叫Photoshop API，並將這些值傳遞至API。 例如，您可以傳遞字型名稱、文字顏色、文字粗細和文字大小，將自訂文字新增至促銷活動影像。
+
+<!-- TBD: Check screenshot against the interface. -->
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
