@@ -2,9 +2,9 @@
 title: 元件參考指南
 description: 元件及其結構詳細資訊的開發人員參考指南
 translation-type: tm+mt
-source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
+source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3720'
 ht-degree: 0%
 
 ---
@@ -315,6 +315,39 @@ AEM中的元件受&#x200B;**資源類型階層**&#x200B;的規範。 這用於�
    * `cq:listeners` (節點類 `cq:EditListenersConfig`型):定義在元件上執行動作之前或之後發生的動作
 
 AEM中有許多現有的設定。 使用&#x200B;**CRXDE Lite**&#x200B;中的查詢工具，可以輕鬆地搜索特定屬性或子節點。
+
+### 元件佔位符{#component-placeholders}
+
+元件必須始終呈現作者可見的某些HTML，即使元件沒有內容亦然。 否則，它可能會從編輯器的介面中以視覺化方式消失，使它在技術上存在，但在頁面和編輯器中不可見。 在這種情況下，作者將無法選取空元件並與之互動。
+
+因此，當頁面在頁面編輯器中呈現時（當WCM模式為`edit`或`preview`時），元件只要不呈現任何可見輸出，就應呈現預留位置。
+預留位置的典型HTML標籤如下：
+
+```HTML
+<div class="cq-placeholder" data-emptytext="Component Name"></div>
+```
+
+轉譯上述預留位置HTML的典型HTL指令碼如下：
+
+```HTML
+<div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
+     data-sly-test="${(wcmmode.edit || wcmmode.preview) && isEmpty}"></div>
+```
+
+在上例中，`isEmpty`是變數，只有在元件沒有內容且作者無法看見時，才為true。
+
+為避免重複，Adobe建議元件實作者為這些預留位置使用HTL範本，[與核心元件提供的範本類似。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+
+然後，範本在上一個連結中的使用，會與下列HTL行一起完成：
+
+```HTML
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
+```
+
+在上例中，`model.text`是變數，只有在內容包含且可見時才為true。
+
+此範本的使用範例可在核心元件[中查看，例如標題元件。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
 ### 使用cq進行配置：EditConfig子節點{#configuring-with-cq-editconfig-child-nodes}
 
