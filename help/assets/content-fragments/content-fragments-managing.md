@@ -2,9 +2,9 @@
 title: 管理內容片段
 description: 內容片段會儲存為資產，因此主要是從資產主控台管理。
 translation-type: tm+mt
-source-git-commit: 0a60687eacf054675205d9a9466473e1f4996db1
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1488'
 ht-degree: 11%
 
 ---
@@ -12,21 +12,11 @@ ht-degree: 11%
 
 # 管理內容片段{#managing-content-fragments}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>內容片段傳送的AEM GraphQL API可應要求提供。
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->AEM GraphQL API（針對內容片段傳送）將於2021年初發行。
->
->相關檔案已可供預覽使用。
+>請連絡[Adobe支援](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)以啟用AEM雲端服務方案的API。
 
 內容片段會儲存為&#x200B;**Assets**，因此主要是從&#x200B;**Assets**&#x200B;主控台管理。
 
@@ -35,7 +25,7 @@ ht-degree: 11%
 >可使用內容片段：
 >
 >* 網頁製作時；請參閱[使用內容片段編寫頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
->* 用於使用含GraphQL[的內容片段進行無頭內容傳送。](/help/assets/content-fragments/content-fragments-graphql.md)
+>* 用於使用含GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)的內容片段進行無頭內容傳送。[
 
 
 ## 建立內容片段{#creating-content-fragments}
@@ -172,7 +162,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->版本也可以從時間軸[建立、比較和回復。](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)
+>版本也可以從時間軸](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)建立、比較和回復。[
 
 編輯器有兩個選項：
 
@@ -271,7 +261,7 @@ ht-degree: 11%
 
 ## 比較片段版本{#comparing-fragment-versions}
 
-在您選擇特定版本後，**Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)的[「比較目前**」動作可從&lt;a2/>Timeline&lt;a3/>使用。
+在您選擇特定版本後，**Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)的[「比較目前**」動作可從Timeline使用。
 
 此選項將開啟：
 
