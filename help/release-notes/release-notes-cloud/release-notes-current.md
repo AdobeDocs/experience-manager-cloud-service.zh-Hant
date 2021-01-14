@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
+source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '692'
 ht-degree: 4%
 
 ---
@@ -45,21 +45,15 @@ ht-degree: 4%
 
 ### 發行日期 {#release-date-cm}
 
-AEM中Cloud Manager作為Cloud Service 2020.12.0的發行日期為2020年12月10日。
-
-### [!DNL Cloud Manager] {#what-is-new-cm}的新增功能
-
-* [SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)和[自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/introduction.md)的自助服務管理。
-
-* [IP允許清單的自助管理](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
-
-* 更新的&#x200B;**環境**&#x200B;詳細資訊頁面現在允許用戶管理其環境中的自定義域名和IP允許清單。
+AEM中Cloud Manager作為Cloud Service 2021.1.0的發行日期為2021年1月14日。
 
 ### 錯誤修正 {#bug-fixes-cloud-manager}
 
-* 在代碼掃描階段發生的某些故障，但未提供解決結果。
+* 資產生產實例有時可能會將&#x200B;**環境**&#x200B;詳細資訊頁面上的品牌入口網站狀態顯示為&#x200B;*待定*，而不允許使用者採取任何動作。
 
-* 環境卡未一致顯示&#x200B;**Add**&#x200B;按鈕。
+* 從Cloud Manager觸發解除休眠時，有時即使成功啟動解除休眠，仍會顯示失敗訊息。
+
+* 已解決在環境建立或刪除中遇到的罕見故障。
 
 ## 程式碼重構工具 {#code-refactoring-tools}
 
