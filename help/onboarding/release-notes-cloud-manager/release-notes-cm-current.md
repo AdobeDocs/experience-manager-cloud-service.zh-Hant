@@ -2,7 +2,7 @@
 title: AEM中Cloud Manager的Cloud Manager版本注意事項2021.1.0版
 description: AEM中Cloud Manager的Cloud Manager版本注意事項2021.1.0版
 translation-type: tm+mt
-source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
+source-git-commit: 05f539c41ea3caa0f754c0cdced4c795f8b6afb9
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 4%
@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # Adobe Experience Manager中Cloud Manager的Cloud Manager版本說明：Cloud Service 2021.1.0 {#release-notes}
 
-本頁概述AEM中Cloud Manager的Cloud Manager版本注意事項，作為Cloud Service 2021.1.0
+本頁概述AEM中Cloud Manager的Release Notes（Cloud Service 2021.1.0版）。
 
 ## 發行日期 {#release-date}
 
