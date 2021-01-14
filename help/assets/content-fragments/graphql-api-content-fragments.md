@@ -2,9 +2,9 @@
 title: 將內容片段與Adobe Experience Manager搭配以做為雲端服務圖表QL API進行內容傳送
 description: 瞭解如何搭配AEM GraphQL API將Adobe Experience Manager(AEM)中的內容片段用作雲端服務，以進行無頭內容傳送。
 translation-type: tm+mt
-source-git-commit: 1e9596fb12a38f5c4c6e15d7c33af86e59e76083
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: '2506'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->AEM GraphQL API（針對內容片段傳送）將於2021年初發行。
+>內容片段傳送的AEM GraphQL API可應要求提供。
 >
->相關檔案已可供預覽使用。
+>請連絡[Adobe支援](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)以啟用AEM雲端服務方案的API。
 
 與內容片段搭配使用的Adobe Experience Manager As a Cloud Service(AEM)GraphQL API，主要是以標準、開放原始碼的GraphQL API為基礎。
 
@@ -80,7 +80,7 @@ AEM Graph API包含標準[GraphiQL](https://graphql.org/learn/serving-over-http/
 
 GraphQL是強式型別的API，這表示資料必須依類型清楚地結構化和組織。
 
-GraphQL規範提供了一系列指引，說明如何建立用於查詢特定實例上資料的強穩API。 為此，客戶端需要讀取[Schema](#schema-generation)，該&lt;a0/>包含查詢所需的所有類型。
+GraphQL規範提供了一系列指引，說明如何建立用於查詢特定實例上資料的強穩API。 為此，客戶端需要讀取[Schema](#schema-generation)，該包含查詢所需的所有類型。
 
 對於內容片段，GraphQL結構（結構和類型）基於[內容片段模型](/help/assets/content-fragments/content-fragments-models.md)及其資料類型。
 
