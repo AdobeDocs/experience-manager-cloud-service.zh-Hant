@@ -2,7 +2,7 @@
 title: 變化 - 編寫片段內容
 description: 變數可讓您為片段製作內容，然後根據用途建立該內容的變數（如有需要）。
 translation-type: tm+mt
-source-git-commit: 0a60687eacf054675205d9a9466473e1f4996db1
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
 source-wordcount: '1742'
 ht-degree: 15%
@@ -11,16 +11,6 @@ ht-degree: 15%
 
 
 # 變化 - 編寫片段內容{#variations-authoring-fragment-content}
-
-<!--
->[!CAUTION]
->
->Certain features for Content Fragments will be released in early 2021.
->
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
 
 [變](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 數是內容片段的重要功能，可讓您建立和編輯主要內容的復本，以用於特定頻道和／或藍本。
 
