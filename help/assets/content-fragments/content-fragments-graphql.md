@@ -2,9 +2,9 @@
 title: 使用內容片段與GraphQL進行無頭內容傳送
 description: 瞭解如何將Adobe Experience Manager(AEM)中的內容片段當做雲端服務與GraphQL搭配使用，以進行無頭內容傳送。
 translation-type: tm+mt
-source-git-commit: 1e9596fb12a38f5c4c6e15d7c33af86e59e76083
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->AEM GraphQL API（針對內容片段傳送）將於2021年初發行。
+>內容片段傳送的AEM GraphQL API可應要求提供。
 >
->相關檔案已可供預覽使用。
+>請連絡[Adobe支援](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)以啟用AEM雲端服務方案的API。
 
 以Adobe Experience Manager(AEM)為雲端服務，您可以搭配使用內容片段和AEM GraphQL API（以標準GraphQL為基礎的自訂實作），來提供結構化內容，以便用於您的應用程式。
 
