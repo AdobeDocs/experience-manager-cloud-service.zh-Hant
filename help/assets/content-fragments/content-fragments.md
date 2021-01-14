@@ -2,9 +2,9 @@
 title: 使用內容片段
 description: 瞭解Adobe Experience Manager(AEM)中的內容片段如何讓您設計、建立、組織和使用不受頁面影響的內容。
 translation-type: tm+mt
-source-git-commit: 468d6f6a87c9a4794d5187146f7d879433cafa6f
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1997'
+source-wordcount: '2012'
 ht-degree: 3%
 
 ---
@@ -12,21 +12,11 @@ ht-degree: 3%
 
 # 使用內容片段{#working-with-content-fragments}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>內容片段傳送的AEM GraphQL API可應要求提供。
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->AEM GraphQL API（針對內容片段傳送）將於2021年初發行。
->
->相關檔案已可供預覽使用。
+>請連絡[Adobe支援](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)以啟用AEM雲端服務方案的API。
 
 以Adobe Experience Manager(AEM)為雲端服務，內容片段可讓您設計、建立、組織及[發佈不受頁面影響的內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 它們可讓您準備內容，以便在多個位置／多個通道中使用。
 
@@ -74,7 +64,7 @@ ht-degree: 3%
 >* [AEM GraphQL API，用於內容片段](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
-通訊頻道的數量逐年增加。 通常渠道是指傳送機制，例如：
+通訊管道的數量逐年增加。 通常渠道是指傳送機制，例如：
 
 * 物理通道；例如桌上型電腦、行動裝置。
 * 實體渠道的交付形式；例如，「產品詳細資訊頁面」、「產品類別頁面」（適用於桌上型電腦）或「行動網頁」（適用於行動裝置）、「行動應用程式」（適用於行動裝置）。
@@ -230,7 +220,7 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
 
    * 這是片段外部的內容，但與編輯相關。 通常是影像、視訊或其他片段。
    * 當系列中的個別資產新增至頁面時，可與頁面編輯器中的片段搭配使用。 這表示它們是可選的，具體取決於特定渠道的要求。
-   * 這些資產透過系列[與片段相關聯；關聯的系列可讓作者決定在編寫頁面時要使用哪些資產。](/help/assets/content-fragments/content-fragments-assoc-content.md)
+   * 這些資產透過系列](/help/assets/content-fragments/content-fragments-assoc-content.md)與片段相關聯；關聯的系列可讓作者決定在編寫頁面時要使用哪些資產。[
 
       * 系列可以與片段相關聯，做為預設內容，或由作者在編寫片段時建立。
       * [資產(DAM)收](/help/assets/manage-collections.md) 集是片段相關內容的基礎。
@@ -293,7 +283,7 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
 
    * 使用配置瀏覽器](/help/assets/content-fragments/content-fragments-configuration-browser.md)啟用[。
    * 是使用Tools](/help/assets/content-fragments/content-fragments-models.md)建立的[。
-   * 建立片段[所需。](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)
+   * 建立片段](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)所需。[
    * 定義片段的結構（標題、內容元素、標籤定義）。
    * 內容模型定義需要一個標題和一個資料元素；其他一切都是可選的。
    * 模型可以定義預設內容（如果適用）。
