@@ -2,9 +2,9 @@
 title: 建立頁面範本
 description: 範本會定義產生頁面的結構，而使用範本編輯器，建立和維護範本不再是僅限開發人員的工作
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
 workflow-type: tm+mt
-source-wordcount: '4551'
+source-wordcount: '4600'
 ht-degree: 11%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 11%
 >
 >**允許的範本**&#x200B;通常會在您的網站初次設定時預先定義。
 
->[!CAUTION]
+>[!TIP]
 >
 >切勿將任何需要國際化的資訊輸入到模板中。<!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
@@ -126,6 +126,12 @@ ht-degree: 11%
    >[!NOTE]
    >
    >建立新範本時，在主控台中會標示為&#x200B;**Draft**，這表示該範本尚未可供頁面作者使用。
+
+>[!NOTE]
+>
+>範本是功能強大的工具，可簡化您的頁面建立工作流程。 不過，太多範本可能會讓作者感到不知所措，並讓頁面建立變得困惑。 一個很好的經驗法則是將範本數控制在100以下。
+>
+>Adobe不建議使用超過1000個範本，因為可能會影響效能。
 
 ### 定義模板屬性——模板作者{#defining-template-properties-template-author}
 
