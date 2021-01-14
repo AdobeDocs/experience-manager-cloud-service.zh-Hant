@@ -2,9 +2,9 @@
 title: 學習搭配使用GraphQL與AEM —— 範例內容與查詢
 description: 瞭解如何搭配AEM使用GraphQL —— 範例內容與查詢。
 translation-type: tm+mt
-source-git-commit: 46e179faa7875c4b3e9da30356d2b82d4b25b130
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1298'
 ht-degree: 6%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->AEM GraphQL API（針對內容片段傳送）將於2021年初發行。
+>內容片段傳送的AEM GraphQL API可應要求提供。
 >
->相關檔案已可供預覽使用。
+>請連絡[Adobe支援](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)以啟用AEM雲端服務方案的API。
 
 若要開始使用GraphQL查詢，以及查詢如何使用AEM內容片段，請參閱一些實用範例。
 
