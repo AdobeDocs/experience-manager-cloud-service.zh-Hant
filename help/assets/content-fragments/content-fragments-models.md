@@ -2,9 +2,9 @@
 title: 內容片段模型
 description: 內容片段模型可用來建立包含結構化內容的內容片段。
 translation-type: tm+mt
-source-git-commit: 287e2cec425c2fd7e80618d247dc658ae1280066
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1189'
 ht-degree: 9%
 
 ---
@@ -12,21 +12,11 @@ ht-degree: 9%
 
 # 內容片段模型 {#content-fragment-models}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>內容片段傳送的AEM GraphQL API可應要求提供。
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->AEM GraphQL API（針對內容片段傳送）將於2021年初發行。
->
->相關檔案已可供預覽使用。
+>請連絡[Adobe支援](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)以啟用AEM雲端服務方案的API。
 
 內容片段模型定義[內容片段](/help/assets/content-fragments/content-fragments.md)的內容結構。
 
