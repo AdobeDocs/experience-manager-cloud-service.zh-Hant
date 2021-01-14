@@ -2,9 +2,9 @@
 title: 頁面範本
 description: 建立將用作新頁面基礎的頁面時，會使用頁面範本
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3296'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 
    如需範本作者如何定義結構的詳細資訊，請參閱[建立頁面範本](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author)。
 
-   有關結構的技術詳細資訊，請參閱本文檔中的[結構](#structure)。
+   如需結構的技術詳細資訊，請參閱本檔案中的[Structure](#structure)。
 
    **原則**
 
@@ -110,6 +110,16 @@ ht-degree: 0%
 
    如需有關使用可編輯範本建立頁面的技術詳細資訊，請參閱本檔案中的[結果內容頁面](#resultant-content-pages)。
 
+>[!TIP]
+>
+>切勿將任何需要國際化的資訊輸入到模板中。 為了內部化，建議使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)的[本地化功能。
+
+>[!NOTE]
+>
+>範本是功能強大的工具，可簡化您的頁面建立工作流程。 不過，太多範本可能會讓作者感到不知所措，並讓頁面建立變得困惑。 一個很好的經驗法則是將範本數控制在100以下。
+>
+>Adobe不建議使用超過1000個範本，因為可能會影響效能。
+
 >[!NOTE]
 >
 >編輯器客戶端庫假定內容頁面中存在`cq.shared`命名空間，如果它不存在，將導致JavaScript錯誤`Uncaught TypeError: Cannot read property 'shared' of undefined`。
@@ -118,9 +128,7 @@ ht-degree: 0%
 >
 >如需詳細資訊，請參閱[使用用戶端程式庫](/help/implementing/developing/introduction/clientlibs.md)。
 
->[!CAUTION]
->
->切勿將任何需要國際化的資訊輸入到模板中。
+
 
 ## 模板資料夾{#template-folders}
 
