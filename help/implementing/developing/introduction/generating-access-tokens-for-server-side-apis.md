@@ -2,7 +2,7 @@
 title: 產生伺服器端API的存取Token
 description: 瞭解如何透過產生安全的JWT Token，以促進協力廠商伺服器與AEM之間的雲端服務通訊
 translation-type: tm+mt
-source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
+source-git-commit: a8cb0c1bf2cdc741173e83ad00b6453931a8df18
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -101,7 +101,9 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## 開發人員流程{#developer-flow}
 
-開發人員可能會想要使用其非AEM應用程式的開發執行個體進行測試（可在其膝上型電腦或代管上執行），以要求將開發AEM當成雲端服務開發環境。 但是，由於開發人員不一定擁有AEM的管理員角色存取權，因此我們無法假設他們可以產生一般伺服器對伺服器流程中所述的JWT載體。 因此，我們提供一種機制，讓開發人員直接產生存取Token，以便在對AEM的要求（即他們可存取的雲端服務環境）中使用。 如需將AEM用作雲端服務開發人員主控台的必要權限，請參閱[開發人員准則檔案](/help/implementing/developing/introduction/development-guidelines.md)。
+開發人員可能會想要使用其非AEM應用程式的開發執行個體進行測試（可在其膝上型電腦或代管上執行），以要求將開發AEM當成雲端服務開發環境。 但是，由於開發人員不一定擁有AEM的管理員角色存取權，因此我們無法假設他們可以產生一般伺服器對伺服器流程中所述的JWT載體。 因此，我們提供一種機制，讓開發人員直接產生存取Token，以便在對AEM的要求（即他們可存取的雲端服務環境）中使用。
+
+如需將AEM用作雲端服務開發人員主控台的必要權限，請參閱[開發人員准則檔案](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)。
 
 >[!NOTE]
 >
