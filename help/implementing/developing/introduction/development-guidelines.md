@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發方針
 description: AEM as a Cloud Service 開發方針
 translation-type: tm+mt
-source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
+source-git-commit: a3d940765796e6a4d8e16d8fe31343074358ebc3
 workflow-type: tm+mt
-source-wordcount: '2239'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ AEM作為雲端服務僅支援第三方客戶程式碼的Touch UI。 傳統UI無
 
 二進位檔案應透過CDN存取，CDN將在核心AEM服務以外提供二進位檔案。
 
-例如，請勿使用`asset.getOriginal().getStream()`，因為&lt;a0/>會觸發將二進位檔下載到AEM服務的臨時磁碟。
+例如，請勿使用`asset.getOriginal().getStream()`，因為會觸發將二進位檔下載到AEM服務的臨時磁碟。
 
 ## 無反向複製代理{#no-reverse-replication-agents}
 
@@ -219,10 +219,10 @@ AEM作為雲端服務，需要加密出站郵件。 以下章節說明如何要�
 
 ### 請求訪問{#requesting-access}
 
-依預設，會停用傳出電子郵件。 若要啟動它，請提交支援票證，其中包含：
+依預設，會停用傳出電子郵件。 若要啟用它，請提交支援票證，其中包含：
 
 1. 郵件伺服器的完全限定域名（例如`smtp.sendgrid.net`）
-1. 要使用的埠。 如果郵件伺服器支援，埠465應為埠587請注意，只有在郵件伺服器要求並對該埠實施TLS時，埠587才可使用
+1. 要使用的埠。 如果郵件伺服器支援，則埠應為465 ，否則埠為587。 請注意，只有當郵件伺服器要求並強制在該埠上使用TLS時，才能使用埠587
 1. 要寄出的環境的程式ID和環境ID
 1. 作者、發佈或兩者都需要SMTP訪問。
 
@@ -240,16 +240,16 @@ AEM CS需要透過465埠傳送郵件。 如果郵件伺服器不支援埠465，�
 
 AEM中的電子郵件應使用[ Day CQ Mail Service OSGi service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)傳送。
 
-如需設定電子郵件設定的詳細資訊，請參閱[AEM 6.5檔案](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html)。 對於AEM CS，必須對`com.day.cq.mailer.DefaultMailService OSGI`服務進行下列調整：
+如需設定電子郵件設定的詳細資訊，請參閱[AEM 6.5檔案](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html)。 對於AEM做為雲端服務，必須對`com.day.cq.mailer.DefaultMailService OSGI`服務進行下列調整：
 
 如果已請求埠465:
 
 * 將`smtp.port`設為`465`
 * 將`smtp.ssl`設為`true`
-* 將`smtp.starttls`設為`false`
 
 如果請求了埠587（僅當郵件伺服器不支援埠465時允許）:
 
 * 將`smtp.port`設為`587`
 * 將`smtp.ssl`設為`false`
-* 將`smtp.starttls`設為`true`
+
+AEM會在執行時期自動將`smtp.starttls`屬性設為Cloud Service。 埠465的`false`和埠587的`true`。 無論在OSGI配置中設定的`smtp.starttls`值如何。
