@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
+source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 4%
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 * **[內容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:新增使用HTTP API新增／更新和刪除內容片段變數的能力。
 
-## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 * 與[!DNL Adobe InDesign Server]的整合現在適用於[!DNL Experience Manager]作為[!DNL Cloud Service]。 它提供使用[!DNL Adobe InDesign Server]指令碼處理[!DNL Adobe InDesign]檔案的自動功能，並讓使用者使用[!DNL Assets]範本使用者介面來建立手冊或廣告。 [!DNL Experience Manager as a Cloud Service]僅支援[!DNL Adobe Managed Services]代管的[!DNL InDesign Server]。<!-- TBD: Add link to article. -->
 
@@ -84,4 +84,3 @@ AEM中Cloud Manager作為Cloud Service 2021.1.0的發行日期為2021年1月14�
 * 移轉集的內容傳輸工具(CTT)使用者介面狀態在閒置一段時間後不會持續並變更。 這個問題已經修正。
 * 如果日誌不可用，則禁用了查看日誌的選項。 此問題已修正，且已新增訊息，以通知使用者記錄遺失的原因。
 * 當使用者停止擷取時，內容傳輸工具使用者介面狀態顯示為「失敗」。 這已修正為改為顯示&#x200B;*STOPPED*。
-
