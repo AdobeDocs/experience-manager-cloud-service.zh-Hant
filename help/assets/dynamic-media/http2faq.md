@@ -2,9 +2,9 @@
 title: HTTP2 傳送內容常見問答集
 description: 瞭解HTTP2內容傳送。
 translation-type: tm+mt
-source-git-commit: d9673296208831e68c5f776e0a9b142f348efc95
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '762'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ Adobe自己的測試產生了下列結果：
 * 使用Adobe搭售的CDN（內容傳送網路）做為Dynamic Media Classic授權的一部分。
 * 使用專用網域（即`images.company.com`或`mycompany.scene7.com`），而非通用動態媒體網域（即`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
 
-   若要尋找網域，請為每個公司帳戶登入Dynamic Media Classic[的例項。](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+   若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
    按一 **[!UICONTROL 下「設定>應用程式設定>一般設定」]**。查找標有&#x200B;**「已發佈伺服器名稱」的欄位。**&#x200B;如果您目前使用一般的動態媒體網域，您可以請求移至您自己的自訂網域，做為此移轉的一部分。
 
@@ -56,7 +56,7 @@ Adobe自己的測試產生了下列結果：
    * 主要聯絡人姓名、電子郵件和電話號碼。
    * 要轉換到HTTP2的所有網域。 即`images.company.com`或`mycompany.scene7.com`。
 
-   若要尋找網域，請為每個公司帳戶登入Dynamic Media Classic[的例項。](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+   若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
    按一 **[!UICONTROL 下「設定>應用程式設定>一般設定」]**。查找標有&#x200B;**[!UICONTROL 「已發佈伺服器名稱」的欄位。]**
 
@@ -64,7 +64,7 @@ Adobe自己的測試產生了下列結果：
    * 確認您是透過Adobe使用CDN，且未透過直接關係進行管理。
    * 確認您使用的是專用網域。 即`images.company.com`或`mycompany.scene7.com`，而非一般動態媒體網域，例如`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`。
 
-   若要尋找網域，請為每個公司帳戶登入Dynamic Media Classic[的例項。](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+   若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
    按一 **[!UICONTROL 下「設定>應用程式設定>一般設定」]**。查找標有&#x200B;**[!UICONTROL 「已發佈伺服器名稱」的欄位。]**&#x200B;如果您目前使用一般的動態媒體網域，您可以請求移至您自己的自訂網域，做為此移轉的一部分。
 
