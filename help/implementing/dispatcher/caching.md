@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 translation-type: tm+mt
-source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
+source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1535'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,15 @@ ht-degree: 1%
 
 ### HTML/Text {#html-text}
 
-* 依預設，會根據apache圖層所發出的快取控制標題，由瀏覽器快取5分鐘。 CDN也尊重此值。
+* 依預設，會根據apache圖層所發出的`cache-control`標題，由瀏覽器快取5分鐘。 CDN也尊重此值。
+* 在`global.vars`中定義`DISABLE_DEFAULT_CACHING`變數，可停用預設的HTML/Text快取設定：
+
+```
+Define DISABLE_DEFAULT_CACHING
+```
+
+例如，當您的商業邏輯需要微調年齡頁首（含根據日曆日的值），因為預設年齡頁首設定為0時，這就很有用。 也就是說，**在關閉預設快取時請格外小心。**
+
 * 可以覆寫所有HTML/Text內容，方法是使用AEM做為Cloud Service SDK Dispatcher工具，在`global.vars`中定義`EXPIRATION_TIME`變數。
 * 可以由以下apache mod_headers指令在更精細的級別上覆蓋：
 
