@@ -1,10 +1,10 @@
 ---
-title: 設定動態媒體雲端服務
+title: 設定 Dynamic Media Cloud Service
 description: 有關如何在Adobe Experience Manager中將動態媒體設定為雲端服務的資訊。
 translation-type: tm+mt
-source-git-commit: 3f29bf65b1c30cee9bf7833a1c5092819ebf9a50
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3869'
 ht-degree: 7%
 
 ---
@@ -48,7 +48,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## 在雲端服務中建立新的動態媒體設定{#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. 在AEM中，點選AEM標誌以存取全域導覽主控台。
 1. 在主控台的左側，點選「工具」圖示，然後點選「**[!UICONTROL 雲端服務>動態媒體設定」]**。
@@ -105,7 +105,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. 若要在動態媒體內容發佈之前安全地預覽，您必須「允許列出」AEM作者例項，才能連線至動態媒體。 若要設定此設定，請執行下列動作：
 
-   * 登入您的Dynamic Media Classic帳戶：[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)。 您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
+   * 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。 您的認證和登入詳細資訊是由Adobe在布建時提供。 如果您沒有此資訊，請聯絡技術支援。
    * 在頁面右上方的導覽列上，按一下「設定>應用程式設定>發佈設定>影像伺服器」]**。**[!UICONTROL 
 
    * 在「影像伺服器發佈」頁面的「發佈內容」下拉式清單中，選取「測試影像伺服」**[!UICONTROL 。]**
@@ -186,7 +186,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 使用Dynamic Media Classic使用者介面來變更您的Dynamic Media設定。
 
-上述部分工作需要您在以下網址登入Dynamic Media Classic:[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+上述部分工作需要您開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
 設定和設定工作包括：
 
@@ -224,7 +224,8 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 若要設定預設顏色屬性，以在請求影像時啟用色彩校正：
 
-1. [使用布建期間提供](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 的憑證登入動態媒體類別。導覽至「**[!UICONTROL 設定>應用程式設定]**」。
+1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後使用布建期間提供的憑證登入您的帳戶。
+1. 導覽至「**[!UICONTROL 設定>應用程式設定]**」。
 1. 展開「發 **[!UICONTROL 布設定]** 」區域並選 **[!UICONTROL 取「影像伺服器」]**。設定發 **[!UICONTROL 布例項的預設值]** ，將「發佈內容」設 **** 定為「影像伺服」。
 1. 捲動至您需要變更的屬性，例如&#x200B;**[!UICONTROL 色彩管理屬性]**區域中的屬性。
 您可以設定下列色彩校正屬性：
@@ -331,7 +332,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
 
-1. 在「CRXDE Lite」頁面的左上角附近，按一下「全部儲存」。]****[!UICONTROL 
+1. 在「CRXDE Lite」頁面的左上角附近，按一下「全部儲存」。****
 
 
 
