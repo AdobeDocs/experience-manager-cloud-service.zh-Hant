@@ -2,9 +2,9 @@
 title: 使用規則集轉換URL
 description: 您可以在動態媒體中部署規則集以轉換URL。 規則集是以指令碼語言（例如JavaScript）編寫的指令集，可評估XML資料，並在資料符合特定條件時採取特定動作。
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '767'
 ht-degree: 5%
 
 ---
@@ -55,11 +55,9 @@ ht-degree: 5%
 
 **要部署XML規則集：**
 
-1. 登入您的Dynamic Media Classic帳戶：
+1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-   您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
+   您的認證和登入詳細資訊是由Adobe在布建時提供。 如果您沒有此資訊，請聯絡技術支援。
 
 1. 執行下列動作，上傳規則集檔案：
 
