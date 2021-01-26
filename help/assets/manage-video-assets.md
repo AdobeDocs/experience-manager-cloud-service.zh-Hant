@@ -3,9 +3,9 @@ title: 管理影片資產
 description: 在 [!DNL Adobe Experience Manager]中上傳、預覽、註解和發佈視訊資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
+source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '619'
 ht-degree: 6%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 6%
 
    * Apple ProRes檔案只能將程式碼轉碼至最高解析度1080p。
    * 如果源檔案的位元速率>200 Mbps，則只能將代碼轉碼到最大解析度1080p。
-   * 如果來源影格>= 60 fps，則您可使用的最大來源檔案大小為
+   * 如果來源影格>=60 fps，則您可使用的來源檔案大小上限為：
 
       * 400 MB的4K轉碼。
       * 800 MB的1080p轉碼。
