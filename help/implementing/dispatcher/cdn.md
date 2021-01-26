@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
+source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 7%
+source-wordcount: '567'
+ht-degree: 5%
 
 ---
 
@@ -51,3 +51,24 @@ AEM管理的CDN將可滿足大部分客戶的效能與安全性需求。 對於�
 雖然從客戶CDN到Adobe受管CDN的躍點可能會很有效率，但由於額外的躍點，可能會造成小的效能點擊。
 
 請注意，此客戶CDN設定支援發佈層，但不支援在作者層之前。
+
+## 地理位置標題{#geo-headers}
+
+Adobe管理的CDN會透過下列項目，將標題新增至每個請求：
+
+* 國家代碼：`x-aem-client-country`
+* 大陸代碼：`x-aem-client-continent`
+
+國家代碼的值是[此處](https://en.wikipedia.org/wiki/ISO_3166-1)所述的Alpha-2代碼。
+
+大陸代碼的值為：
+
+* AF非洲
+* 南極洲
+* AS Asia
+* 歐盟
+* 北美洲
+* 大洋洲OC
+* SA南美洲
+
+這些資訊對於使用案例可能很有用，例如根據請求的來源（國家）重新導向至不同的URL。 不過，在此特定使用案例中，重新導向不應快取，因為它會有所不同。 如有需要，您可以使用`Cache-Control: private`來防止快取。 另請參見[Caching](/help/implementing/dispatcher/caching.md#html-text)。
