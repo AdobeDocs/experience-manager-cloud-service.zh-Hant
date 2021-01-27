@@ -2,9 +2,9 @@
 title: 使用用戶映射工具
 description: 使用用戶映射工具
 translation-type: tm+mt
-source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
+source-git-commit: dcba197624b6a7ae668b11f43f60b13a9da0080e
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '757'
 ht-degree: 1%
 
 ---
@@ -35,23 +35,23 @@ AEM雲端服務的重大變更，是完全整合使用Adobe ID來存取作者層
 請依照下列步驟設定：
 
 1. 使用您的Adobe ID導覽至[Adobe Developer Console](https://console.adobe.io)。
-1. 建立新專案或開啟現有專案
-1. 新增API
-1. 選擇使用者管理API
-1. 建立JWT憑據
-1. 產生金鑰對，或上傳公開金鑰（rsa不行）
+1. 建立新專案或開啟現有專案。
+1. 新增API。
+1. 選擇「使用者管理API」。
+1. 建立JWT憑據。
+1. 產生金鑰對，或上傳公開金鑰（rsa不行）。
 1. 產生存取Token（或JWT Token或承載Token）。
-1. 將所有這些資訊（用戶端ID、用戶端密碼、技術帳戶ID、技術帳戶電子郵件、組織ID、存取Token）儲存在安全的位置。
+1. 保存所有這些資訊，如&#x200B;**客戶機ID**、**客戶機密碼**、**技術帳戶ID**、**技術帳戶電子郵件**、**組織ID**&#x200B;和&#x200B;**訪問Token**&#x200B;安全無虞。
 
 ## 使用者介面{#user-interface}
 
-使用者對應工具已整合至內容傳輸工具。 您可從Software Distribution Portal下載內容傳輸工具。 如需最新版本的詳細資訊，請參閱版本注意事項。
+使用者對應工具已整合至內容傳輸工具。 您可從Software Distribution Portal下載內容傳輸工具。 有關最新版本的詳細資訊，請參閱[當前發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 1. 選擇「選擇Adobe Experience Manager」，並導覽至「工具」->「操作」**->「內容傳輸」**。****
 1. 按一下&#x200B;**建立用戶映射配置**。
 
    >[!NOTE]
-   >如果您略過此步驟，在擷取階段中會略過使用者和群組對應。
+   >如果您略過此步驟，在「擷取」階段中會略過使用者和群組對應。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
 
