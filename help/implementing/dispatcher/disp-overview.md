@@ -2,7 +2,7 @@
 title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 translation-type: tm+mt
-source-git-commit: 38a589297caf3b28c7be569a819bd104a5079066
+source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
 workflow-type: tm+mt
 source-wordcount: '4050'
 ht-degree: 9%
@@ -195,15 +195,15 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 驗證工具在SDK的`bin/validator`中以Mac OS、Linux或Windows二進位檔形式提供，讓客戶執行與Cloud Manager在建立和部署版本時所執行的相同驗證。
 
-它被調用為：`validator full [-d folder] [-w whitelist] zip-file | src folder`
+它被調用為：`validator full [-d folder] [-w allowlist] zip-file | src folder`
 
 此工具會以模式`conf.d/enabled_vhosts/*.vhost`掃描所有檔案，以驗證分派程式設定是否使用AEM支援的適當指令做為雲端服務。 通過運行驗證器的allowlist命令，可以列出Apache配置檔案中允許的指令：
 
 ```
-$ validator whitelist
+$ validator allowlist
 Cloud manager validator 2.0.4
  
-Whitelisted directives:
+Allowlisted directives:
   <Directory>
   ...
   
@@ -249,7 +249,7 @@ allowlist包含客戶配置中允許的Apache指令清單。 如果不允許列�
 ```
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
-2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
+2019/06/19 15:41:37 Apache configuration uses non-allowlisted directives:
   conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
@@ -541,7 +541,7 @@ Dispatcher配置結構在Managed Services和AEM（即雲服務）之間有差異
 輸入`conf.d/rewrites`目錄。
 
 刪除任何名為`base_rewrite.rules`和`xforwarded_forcessl_rewrite.rules`的檔案，並記住
-在引用`Include`語句的虛擬主機檔案中刪除&lt;a2/>語句。
+在引用`Include`語句的虛擬主機檔案中刪除語句。
 
 如果`conf.d/rewrites`現在包含單一檔案，則應將它重新命名為`rewrite.rules`，而不要
 忘記在虛擬主機檔案中調整引用該檔案的`Include`語句。
