@@ -2,9 +2,9 @@
 title: 使用用戶映射工具
 description: 使用用戶映射工具
 translation-type: tm+mt
-source-git-commit: 410b7900981596590fa80b286b40a965700f108e
+source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,11 @@ AEM雲端服務的重大變更，是完全整合使用Adobe ID來存取作者層
    >[!NOTE]
    >如果您略過此步驟，在擷取階段中會略過使用者和群組對應。
 
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+
    填入「使用者管理API設定」中的欄位，如下所述：
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
    * **組織ID**:輸入要移轉之使用者之組織的IMS組織ID。
 
@@ -67,12 +71,17 @@ AEM雲端服務的重大變更，是完全整合使用Adobe ID來存取作者層
       >[!NOTE]
       >存取Token每24小時過期一次，需要建立新的Token。 若要建立新的Token，請返回[Adobe Developer Console](https://console.adobe.io)，選擇您的專案，按一下「使用者管理API」，然後將相同的私密金鑰貼入方塊中。
 
-1. 輸入上述資訊後，按一下「儲存」。
+1. 輸入上述資訊後，按一下「儲存」。****
 
-1. 按一下「建立移轉集」並填入欄位，然後按一下「儲存」，以建立移轉集。 如需詳細資訊，請參閱執行內容傳輸工具。
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+
+
+1. 通過按一下&#x200B;**建立遷移集**&#x200B;並填充欄位，然後按一下&#x200B;**保存**&#x200B;來建立遷移集。 如需詳細資訊，請參閱執行內容傳輸工具。
 
    >[!NOTE]
    >切換開關，以包含IMS使用者和群組的對應使用者預設為開啟。 在此設定中，對此遷移集執行抽取時，用戶映射工具將作為抽取階段的一部分運行。 這是執行內容傳輸工具擷取階段的建議方式。 如果此切換關閉且／或未建立用戶映射配置，則在提取階段將跳過用戶和組映射。
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. 要運行提取階段，請參閱[運行內容傳輸工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool)。
 
