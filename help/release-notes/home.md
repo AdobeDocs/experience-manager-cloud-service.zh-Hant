@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 description: 'Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。 '
 translation-type: tm+mt
-source-git-commit: c6e9f7073b13211386f30142ea34f1e256905450
+source-git-commit: c0dfcf46dc0cc69008e48061b79a35314e09d994
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 93%
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 | 產品 | Adobe Experience Manager as a Cloud Service  |
 |---|---|
-| 版本 | 2020.11.0 |
+| 版本 | 2021.01.0 |
 | 類型 | 持續更新 |
 | 推出日期 | 持續更新 |
 
