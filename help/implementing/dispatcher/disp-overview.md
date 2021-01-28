@@ -2,10 +2,10 @@
 title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 translation-type: tm+mt
-source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
+source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
 workflow-type: tm+mt
-source-wordcount: '4050'
-ht-degree: 9%
+source-wordcount: '4119'
+ht-degree: 8%
 
 ---
 
@@ -375,7 +375,8 @@ Phase 2 finished
 指令碼執行下列操作：
 
 1. 它從上一節運行驗證器，以確保僅包含受支援的指令。 如果配置無效，則指令碼將失敗。
-2. 它會執行`httpd -t command`以測試語法是否正確，以便Apache httpd可以啟動。 如果成功，配置應準備好進行部署
+2. 它會執行`httpd -t command`以測試語法是否正確，以便Apache httpd可以啟動。 如果成功，配置應準備好進行部署。
+3. 檢查未修改發送器SDK配置檔案的子集（如[檔案結構部分](#file-structure)所述）。 這是AEM SDK v2021.1.4738版新增的檢查，其中也包含Dispatcher Tools 2.0.36版。在此更新之前，客戶可能錯誤地認為這些不可變檔案的任何本機SDK修改也會套用至雲端環境。
 
 在Cloud Manager部署期間，`httpd -t syntax`檢查也會執行，Cloud Manager `Build Images step failure`記錄檔中會包含任何錯誤。
 
