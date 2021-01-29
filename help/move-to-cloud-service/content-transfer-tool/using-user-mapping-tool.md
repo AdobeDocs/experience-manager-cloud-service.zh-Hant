@@ -2,10 +2,10 @@
 title: 使用用戶映射工具
 description: 使用用戶映射工具
 translation-type: tm+mt
-source-git-commit: d582b752848b2b8b5a5955eec08b04fbbc3a53fa
+source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 1%
+source-wordcount: '783'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 在Adobe Experience Manager(AEM)雲端服務轉型歷程中，您需要將使用者和群組從您現有的AEM系統移至AEM做為雲端服務。 這是由內容傳輸工具完成。
 
-AEM雲端服務的重大變更，是完全整合使用Adobe ID來存取作者層。  這需要使用Adobe Admin Console來管理使用者和使用者群組。 使用者設定檔資訊會集中在Adobe Identity Management System(IMS)中，該系統可跨所有Adobe雲端應用程式提供單一登入。 如需詳細資訊，請參閱「身分識別管理」。 由於這項變更，現有的使用者和群組必須對應至其IMS ID，以避免在雲端服務作者實例上重複使用者和群組。
+AEM雲端服務的重大變更，是完全整合使用Adobe ID來存取作者層。  這需要使用[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)來管理使用者和使用者群組。 使用者設定檔資訊會集中在Adobe Identity Management System(IMS)中，該系統可跨所有Adobe雲端應用程式提供單一登入。 如需詳細資訊，請參閱[身分識別管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)。 由於這項變更，現有的使用者和群組必須對應至其IMS ID，以避免在雲端服務作者實例上重複使用者和群組。
 
 ## 重要注意事項{#important-considerations}
 
@@ -45,7 +45,7 @@ AEM雲端服務的重大變更，是完全整合使用Adobe ID來存取作者層
 
 ## 使用者介面{#user-interface}
 
-使用者對應工具已整合至內容傳輸工具。 您可從Software Distribution Portal下載內容傳輸工具。 有關最新版本的詳細資訊，請參閱[當前發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+使用者對應工具已整合至內容傳輸工具。 您可以從[軟體散發入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下載內容傳輸工具。 有關最新版本的詳細資訊，請參閱[當前發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 1. 選擇「選擇Adobe Experience Manager」，並導覽至「工具」->「操作」**->「內容傳輸」**。****
 1. 按一下&#x200B;**建立用戶映射配置**。
