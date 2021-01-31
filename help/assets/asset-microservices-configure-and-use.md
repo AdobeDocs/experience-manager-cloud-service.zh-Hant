@@ -3,9 +3,9 @@ title: 配置和使用資產微服務
 description: 設定並使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2576'
 ht-degree: 1%
 
 ---
@@ -182,16 +182,16 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 若是需要額外處理無法使用處理設定檔的資產，則可新增其他後處理工作流程至設定。 這允許在使用資產微服務的可配置處理之上添加完全自定義的處理。
 
-若已設定後處理工作流程，則會在微型服務處理完成後由[!DNL Experience Manager]自動執行。 您不需要手動新增工作流程啟動器來觸發它們。 範例包括：
+若已設定後處理工作流程，則會在微型服務處理完成後由[!DNL Experience Manager]自動執行。 您不需要手動新增工作流程啟動器來觸發工作流程。 範例包括：
 
 * 處理資產的自訂工作流程步驟。
 * 整合，將中繼資料或屬性新增至外部系統的資產，例如產品或流程資訊。
 * 由外部服務完成的額外處理。
 
-將後處理工作流程設定新增至Experience Manager，由下列步驟組成：
+要將後處理工作流配置添加到[!DNL Experience Manager]中，請執行以下步驟：
 
-* 建立一或多個工作流程模型。 檔案將其提及為&#x200B;*後處理工作流程模型*，但這些是常規的Experience Manager工作流程模型。
-* 將特定的工作流程步驟新增至這些模型。 這些步驟是根據工作流程模型組態對資產執行。
+* 建立一或多個工作流程模型。 這些自訂模型在本檔案中稱為&#x200B;*後處理工作流程模型*。 這些是常規的[!DNL Experience Manager]工作流模型。
+* 將所需的工作流程步驟新增至這些模型。 檢視預設工作流程中的步驟，並將所有必要的預設步驟新增至自訂工作流程。 這些步驟是根據工作流程模型組態對資產執行。 例如，如果您想在資產上傳時自動進行智慧型標籤，請將步驟新增至自訂的後處理工作流程模型。
 * 最後添加[!UICONTROL DAM更新資產工作流完成流程]步驟。 新增此步驟可確保Experience Manager知道處理何時結束，資產可標示為已處理，即&#x200B;*資產上會顯示新*。
 * 為「自訂工作流程執行者服務」建立組態，允許依路徑（資料夾位置）或規則運算式來設定處理後工作流程模型的執行。
 
@@ -207,7 +207,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 若要設定在資產微型服務處理完成後，系統中上傳或更新的資產所執行的後處理工作流程模型，必須設定自訂工作流程執行者服務。
 
-自訂工作流程執行者服務(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服務，提供兩個設定選項：
+Adobe CQ DAM自訂工作流程執行者(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服務，提供兩個設定選項：
 
 * 依路徑(`postProcWorkflowsByPath`)的後處理工作流程：可以根據不同的儲存庫路徑列出多個工作流模型。 路徑和模型應以冒號分隔。 支援簡單儲存庫路徑，並應映射到`/var`路徑中的工作流模型。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
 * 依運算式(`postProcWorkflowsByExpression`)的後處理工作流程：可以根據不同的規則運算式列出多個工作流程模型。 運算式和模型應以冒號分隔。 規則運算式應直接指向「資產」節點，而非其中一個轉譯或檔案。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
