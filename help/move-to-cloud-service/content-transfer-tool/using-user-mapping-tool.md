@@ -2,10 +2,10 @@
 title: 使用用戶映射工具
 description: 使用用戶映射工具
 translation-type: tm+mt
-source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
+source-git-commit: d1a944606a88a0afded94592676f14c0ba84e954
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 3%
+source-wordcount: '782'
+ht-degree: 4%
 
 ---
 
@@ -47,7 +47,7 @@ AEM雲端服務的重大變更，是完全整合使用Adobe ID來存取作者層
 
 使用者對應工具已整合至內容傳輸工具。 您可以從[軟體散發入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下載內容傳輸工具。 有關最新版本的詳細資訊，請參閱[當前發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
-1. 選擇「選擇Adobe Experience Manager」，並導覽至「工具」->「操作」**->「內容傳輸」**。****
+1. 選擇 Adobe Experience Manager 並導覽至工具 -> **操作** -> **內容轉移**。
 1. 按一下&#x200B;**建立用戶映射配置**。
 
    >[!NOTE]
