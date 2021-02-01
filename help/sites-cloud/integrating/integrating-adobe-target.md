@@ -2,9 +2,9 @@
 title: 整合 Adobe Target
 description: '整合 Adobe Target '
 translation-type: tm+mt
-source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
+source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,6 @@ Launch和Target的IMS設定必須能正確整合Target與AEM和Launch。 雖然L
 1. 選擇現有配置，然後按一下&#x200B;**屬性**。
 2. 編輯屬性。
 3. 選擇&#x200B;**重新連線至Adobe Target**。
-   ![重新連](assets/edit_config_page1.png "接重新連接")
 4. 選擇&#x200B;**保存並關閉**。
 
 ### 將配置添加到站點{#add-configuration}
