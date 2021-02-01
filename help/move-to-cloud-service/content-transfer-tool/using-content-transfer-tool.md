@@ -2,9 +2,9 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
+source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1906'
 ht-degree: 64%
 
 ---
@@ -28,9 +28,7 @@ ht-degree: 64%
 
 * 存取Token可在特定時段後或雲端服務環境升級後定期到期。 如果存取Token已過期，您將無法連線至Cloud Service實例，而您必須擷取新的存取Token。 與現有移轉集相關聯的狀態圖示將變更為紅色雲端，並會在您將滑鼠暫留在紅色雲端時顯示訊息。
 
-* 目前，AEM做為雲端服務作者例項的預設MongoDB大小為32GB。 建議您針對大於20GB的區段儲存區大小，提交支援票證以增加MongoDB大小。
-
-* 內容傳輸工具所傳輸的使用者和群組僅是內容滿足權限所需的使用者和群組。 *Extraction*&#x200B;進程將整個`/home`複製到遷移集中，而&#x200B;*Ingestion*&#x200B;進程複製遷移內容ACL中引用的所有用戶和組。
+* 內容傳輸工具所傳輸的使用者和群組僅是內容滿足權限所需的使用者和群組。 *Extraction*&#x200B;進程將整個`/home`複製到遷移集中，而&#x200B;*Ingestion*&#x200B;進程複製遷移內容ACL中引用的所有用戶和組。 若要自動將現有使用者和群組對應至其IMS ID，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)。
 
 * 在提取階段中，「內容轉移工具」會在作用中的 AEM 來源例項上執行。
 
