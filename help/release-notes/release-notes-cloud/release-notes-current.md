@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: 1ac061dfc9773a1de0b1d5f8c427f8d770ca73fa
+source-git-commit: 76da904f4fc5a96e6892242c42bae5d05eea2e16
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 4%
@@ -73,7 +73,7 @@ AEM中Cloud Manager作為Cloud Service 2021.1.0的發行日期為2021年1月14�
 
 ### 發行日期 {#release-date-ctt}
 
-內容傳輸工具v1.2.20的發行日期為2021年2月1日。
+內容傳輸工具v1.2.2的發行日期為2021年2月1日。
 
 ### [!DNL Content Transfer Tool] {#what-is-new-ctt}的新增功能
 
