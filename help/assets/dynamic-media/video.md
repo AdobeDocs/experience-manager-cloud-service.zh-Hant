@@ -2,7 +2,7 @@
 title: 影片
 description: 瞭解如何在動態媒體中處理視訊。
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '9536'
 ht-degree: 9%
@@ -404,7 +404,7 @@ VBR編碼時間較長，但結果最好；媒體檔案的品質更優越。 VBR�
 |--- |--- |--- |--- |
 | 來源 | 1920x1080 | 1 | 1 |
 | 編碼 | 960 x 540 | 2 | 2 |
-| 編碼 | 640 x 360 | 3 | 1 |
+| 編碼 | 640 x 360 | 3 | 3 |
 | 編碼 | 480 x 270 | 4 | 4 |
 
 ### 編碼視訊檔案格式{#encoded-video-file-format}
@@ -459,7 +459,7 @@ YouTube會自行編碼。 因此，上傳至AEM的原始視訊檔案會發佈至
    如有必要，您可能需要使用您的Google帳戶認證來&#x200B;**[!UICONTROL 登入]**，才能查看&#x200B;**[!UICONTROL Console]**&#x200B;選項。
 
 1. 在「儀表板」頁面的&#x200B;**[!UICONTROL Google Cloud Platform]**&#x200B;右側，按一下「專案」下拉式清單以開啟「選取專案」對話方塊。
-1. 在「選擇項目」對話框中，按一下「新建項目」。]****[!UICONTROL 
+1. 在「選擇項目」對話框中，按一下「新建項目」。****
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
@@ -551,7 +551,7 @@ YouTube會自行編碼。 因此，上傳至AEM的原始視訊檔案會發佈至
 1. 前往[https://www.youtube.com](https://www.youtube.com/)，並使用您的Google帳戶認證登入。
 1. 在YouTube頁面的右上角，按一下您的描述檔圖片（也可能會以純色圓形中的字母顯示），然後按一下「YouTube設定」（圓齒輪圖示）。****
 1. 在「概述」頁面的「其他功能」標題下，按一下「查看我的所有頻道」或建立新頻道&#x200B;]**。**[!UICONTROL 
-1. 在「頻道」頁面上，按一下「建立新頻道」。]****[!UICONTROL 
+1. 在「頻道」頁面上，按一下「建立新頻道」。****
 1. 在「品牌帳戶」頁面的「品牌帳戶名稱」欄位中，輸入您要發佈視訊資產的商業名稱或任何其他頻道名稱，然後按一下「建立&#x200B;****」。
 
    請記住您在此處輸入的名稱，因為當您在AEM中設定YouTube時，需要再次輸入名稱。
@@ -722,7 +722,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    * （可選）將標有&#x200B;**[!UICONTROL 區段標題]**&#x200B;的元件拖曳至左側，並拖曳至表單區域。
    * （可選）按一下&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;以選擇元件。
    * （可選）在頁面右側的「設定」標籤下，在「欄位標籤」文字欄位中輸入`YouTube Publishing`。
-   * 按一下「建立表單」標籤，然後拖曳標示為「多值文字」的元件至您剛建立的「YouTube發佈」標題下方。]**]****[!UICONTROL ******[!UICONTROL 
+   * 按一下「建立表單」標籤，然後拖曳標示為「多值文字」的元件至您剛建立的「YouTube發佈」標題下方。************
 
    * 按一下&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;以選擇元件。
    * 在頁面的右側，在「設定」標籤下，將您先前複製的YouTube發佈值（欄位標籤值和對應至屬性值）貼到表單上的各自欄位。 將「選擇」值貼入「預設值」欄位。
@@ -733,7 +733,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    * （可選）將標有&#x200B;**[!UICONTROL 區段標題]**&#x200B;的元件拖曳至左側，並拖曳至表單區域。
    * （可選）按一下&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;以選擇元件。
    * （可選）在頁面右側的「設定」標籤下，在「欄位標籤」文字欄位中輸入`YouTube Privacy`。
-   * 按一下「建立表單」標籤，然後拖曳標示為「**[!UICONTROL 多值文字」的元件，並將它拖曳至您剛建立的「YouTube隱私權」標題下方。]**]****[!UICONTROL ****
+   * 按一下「建立表單」標籤，然後拖曳標示為「**[!UICONTROL 多值文字」的元件，並將它拖曳至您剛建立的「YouTube隱私權」標題下方。****]******
 
    * 按一下&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;以選擇元件。
    * 在頁面的右側，在「設定」標籤下，將您先前複製的YouTube發佈值（欄位標籤值和對應至屬性值）貼到表單上的各自欄位。 將「選擇」值貼入「預設值」欄位。
@@ -754,7 +754,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 >**[!UICONTROL 立即發]** 布表示上傳的資產在與IPS同步後，會自動發佈至傳送系統。雖然Dynamic Media是如此，但YouTube則不是這樣。 若要發佈至YouTube，您必須透過AEM Author發佈。
 
 >[!NOTE]
-若要從YouTube發佈內容，AEM會使用「發佈至YouTube」工作流程，此工作流程可讓您監控進度並檢視任何失敗資訊。]****[!UICONTROL 
+若要從YouTube發佈內容，AEM會使用「發佈至YouTube」工作流程，此工作流程可讓您監控進度並檢視任何失敗資訊。****
 請參閱 [監控視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 如需更詳細的進度資訊，您可以在複製下監視YouTube記錄檔。 但是，請注意，此類監控需要管理員訪問權限。
 
@@ -770,7 +770,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 在頁面的右上角，按一下&#x200B;**[!UICONTROL 選擇]**。
 1. 在視訊屬性頁面的右上角，按一下「儲存並關閉」。****
-1. 在工具列上，按一下「快速發佈」。]****[!UICONTROL 
+1. 在工具列上，按一下「快速發佈」。****
 
    另請參閱[搭配使用出版物管理與AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html)。
 
@@ -811,7 +811,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 如果您直接從YouTube移除影片，AEM就不會察覺，而且會繼續以視訊仍發佈至YouTube的方式運作。 一律以AEM方式從YouTube取消發佈視訊資產。
 
 >[!NOTE]
-若要從YouTube移除內容，AEM會使用「從YouTube取消發佈」工作流程，此工作流程可讓您監控進度並檢視任何失敗資訊。]****[!UICONTROL 
+若要從YouTube移除內容，AEM會使用「從YouTube取消發佈」工作流程，此工作流程可讓您監控進度並檢視任何失敗資訊。****
 請參閱 [監控視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 
 若要解除發佈影片以從YouTube移除影片：
@@ -1058,7 +1058,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 Dynamic Media可將標題檔案轉換為JSON（JavaScript物件註解）格式。 此轉換表示您可將JSON文字內嵌至網頁，做為視訊的隱藏但完整記錄。 然後搜尋引擎可以搜尋並索引內容，讓影片更容易被發現，並提供客戶有關視訊內容的其他詳細資訊。
 
-如需在URL中使用JSON函式的詳細資訊，請參閱[伺服靜態（非影像）內容](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)。
+如需在URL中使用JSON函式的詳細資訊，請參閱[伺服靜態（非影像）內容](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)。
 
 **若要在視訊中新增標題或字幕：**
 
@@ -1098,7 +1098,7 @@ Dynamic Media可將標題檔案轉換為JSON（JavaScript物件註解）格式�
 
       請注意標題路徑結尾的`,1`。 緊接在路徑中的。vtt副檔名後，您可以選擇分別設定為`,1`或`,0`，以啟用（開啟）或停用（關閉）視訊播放器列上的隱藏字幕按鈕。
 
-   * 如需內嵌的視訊檢視器體驗，請點選「內嵌代碼」。 ]****[!UICONTROL &#x200B;在「內嵌代碼」對話方塊中，選取內嵌代碼並將它複製至剪貼簿，然後將代碼貼入簡單的文字編輯器。 以下列語法附加複製的內嵌代碼：
+   * 如需內嵌的視訊檢視器體驗，請點選「內嵌代碼」。 ****&#x200B;在「內嵌代碼」對話方塊中，選取內嵌代碼並將它複製至剪貼簿，然後將代碼貼入簡單的文字編輯器。 以下列語法附加複製的內嵌代碼：
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
