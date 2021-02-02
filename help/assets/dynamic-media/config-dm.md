@@ -2,7 +2,7 @@
 title: 設定 Dynamic Media Cloud Service
 description: 有關如何在Adobe Experience Manager中將動態媒體設定為雲端服務的資訊。
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 7%
@@ -206,7 +206,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 「影像伺服器」畫面會建立傳送影像的預設設定。 請參閱UI畫面，以取得每個設定的說明。
 
-**[!UICONTROL 請求屬性]** -這些設定會限制從伺服器傳送的影像。**[!UICONTROL 預設請求屬性]** -這些設定屬於影像的預設外觀。**[!UICONTROL 常用縮圖屬性]** -這些設定屬於縮圖影像的預設外觀。**[!UICONTROL 目錄欄位的預設值]**-這些設定與影像的解析度和預設縮略圖類型相關。**[!UICONTROL 色彩管理屬性]** -這些設定會決定使用哪些ICC色彩描述檔。**[!UICONTROL 相容性屬性]** -此設定可讓文字圖層中的前導和尾隨段落視為3.6版中的段落，以提供回溯相容性。**[!UICONTROL 本地化支援]** -這些設定可讓您管理多個地區設定屬性。它也可讓您指定地區對應字串，以便定義您要在檢視器中支援哪些語言。 有關設定&#x200B;**[!UICONTROL 本地化支援]**&#x200B;的詳細資訊，請參閱[設定資產本地化時的注意事項](https://experienceleague.corp.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets)。
+**[!UICONTROL 請求屬性]** -這些設定會限制從伺服器傳送的影像。**[!UICONTROL 預設請求屬性]** -這些設定屬於影像的預設外觀。**[!UICONTROL 常用縮圖屬性]** -這些設定屬於縮圖影像的預設外觀。**[!UICONTROL 目錄欄位的預設值]**-這些設定與影像的解析度和預設縮略圖類型相關。**[!UICONTROL 色彩管理屬性]** -這些設定會決定使用哪些ICC色彩描述檔。**[!UICONTROL 相容性屬性]** -此設定可讓文字圖層中的前導和尾隨段落視為3.6版中的段落，以提供回溯相容性。**[!UICONTROL 本地化支援]** -這些設定可讓您管理多個地區設定屬性。它也可讓您指定地區對應字串，以便定義您要在檢視器中支援哪些語言。 有關設定&#x200B;**[!UICONTROL 本地化支援]**&#x200B;的詳細資訊，請參閱[設定資產本地化時的注意事項](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets)。
 
 #### 配置應用程式常規設定{#configuring-application-general-settings}
 
