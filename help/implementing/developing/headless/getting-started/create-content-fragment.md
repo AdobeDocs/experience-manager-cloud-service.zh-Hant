@@ -2,9 +2,9 @@
 title: 建立內容片段無頭快速入門手冊
 description: 內容片段可讓您設計、建立、組織和使用AEM可無端傳送的頁面無關內容。
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: fa2fee3139acd60ea96222752785cf397978a2bc
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 1%
 1. 在內容片段編輯器中提供內容片段的詳細資訊。
 
    ![內容片段編輯器](../assets/content-fragment-edit.png)
-1. 點選或按一下「儲存&#x200B;**」。**
+1. 點選或按一下「儲存並關閉」**。**
 
 內容片段可參照其他內容片段，如有需要，可允許巢狀內容結構。
 
