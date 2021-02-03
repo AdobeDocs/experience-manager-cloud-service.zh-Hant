@@ -1,29 +1,54 @@
 ---
-title: 使用AI產生的標籤自動標籤影像
-description: 使用人工智慧服務來標籤影像，使用 [!DNL Adobe Sensei] 服務套用情境式和描述性商業標籤。
+title: 使用AI產生的標籤自動標籤資產
+description: 使用人工智慧服務來標籤資產，使用 [!DNL Adobe Sensei] 服務套用情境式和描述性商業標籤。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '2431'
+source-wordcount: '2557'
 ht-degree: 6%
 
 ---
 
 
-# 訓練智慧型內容服務並自動標籤您的影像{#train-service-tag-assets}
+# 將智慧標籤新增至資產，以加快搜尋速度{#smart-tag-assets-for-faster-search}
 
-處理數位資產的組織越來越多地在資產中繼資料中使用分類控制辭彙。 基本上，它包含員工、合作夥伴和客戶常用來參考及搜尋其數位資產的關鍵字清單。 使用分類控制的詞彙來標記資產，以確保藉由標記式搜尋輕鬆識別及擷取資產。
+處理數位資產的組織越來越多地在資產中繼資料中使用分類控制辭彙。 基本上，它包含員工、合作夥伴和客戶常用來參考及搜尋其數位資產的關鍵字清單。 使用分類控制的辭彙來標籤資產，可確保在搜尋中輕鬆識別和擷取資產。
 
 與自然語言辭彙相比，基於業務分類法的標籤有助於使資產與公司的業務保持一致，並確保最相關的資產出現在搜索中。 例如，汽車製造商可以使用型號名稱來標籤汽車影像，以便在搜尋以設計促銷活動時只顯示相關影像。
 
-在背景中，智慧型標籤使用[Adobe Sensei](https://www.adobe.com/tw/sensei/experience-cloud-artificial-intelligence.html)的人工智慧架構，針對您的標籤結構和商業分類訓練其影像識別演算法。 然後，此內容智慧會用來將相關標籤套用至不同的資產集。
+在背景中，智慧型標籤使用人為智慧型架構[Adobe Sensei](https://www.adobe.com/tw/sensei/experience-cloud-artificial-intelligence.html)，針對您的標籤結構和商業分類訓練其影像識別演算法。 然後，此內容智慧會用來將相關標籤套用至不同的資產集。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-若要使用智慧標籤，請完成下列工作：
+## 支援的資產類型{#smart-tags-supported-file-formats}
+
+智慧型標籤僅套用至那些支援的檔案類型，這些檔案類型會產生JPG和PNG格式的轉譯。 下列資產類型支援此功能：
+
+| 影像（MIME類型） | 文字型資產（檔案格式） | 視訊資產（檔案格式和轉碼器） |
+|----|-----|------|
+| image/jpeg | TXT | MP4(H264/AVC) |
+| image/tiff | RTF | MKV(H264/AVC) |
+| image/png | DITA | MOV(H264/AVC, Motion JPEG) |
+| image/bmp | XML | AVI(indeo4) |
+| image/gif | JSON | FLV(H264/AVC, vp6f) |
+| image/pjpeg | DOC | WMV(WMV2) |
+| image/x-portable-anymap | DOCX |  |
+| image/x-portable-bitmap | PDF |  |
+| image/x-portable-graymap | CSV |  |
+| image/x-portable-pixmap | PPT |  |
+| 影像/x-rgb | PPTX |  |
+| image/x-xbitmap | VTT |  |
+| image/x-xpixmap | SRT |  |
+| image/x-icon |  |  |
+| 影像/photoshop |  |  |
+| image/x-photoshop |  |  |
+| 影像/psd |  |  |
+| image/vnd.adobe.photoshop |  |  |
+
+[!DNL Experience Manager] 依預設，自動將智慧型標籤新增至文字型資產和視訊。若要自動將智慧型標籤新增至影像，請完成下列工作。
 
 * [ [!DNL Adobe Experience Manager] 使用 Adobe 開發人員控制台進行整合](#integrate-aem-with-aio).
 * [瞭解標籤模型和准則](#understand-tag-models-guidelines)。
@@ -31,7 +56,9 @@ ht-degree: 6%
 * [標籤您的數位資產](#tag-assets)。
 * [管理標籤和搜尋](#manage-smart-tags-and-searches)。
 
-智慧型標籤僅適用於[!DNL Adobe Experience Manager Assets]客戶。 智慧型標籤可作為[!DNL Experience Manager]的附加元件購買。
+>[!TIP]
+>
+>智慧型標籤僅適用於[!DNL Adobe Experience Manager Assets]客戶。 智慧型標籤可作為[!DNL Experience Manager]的附加元件購買。
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -92,7 +119,7 @@ ht-degree: 6%
    * 一種標籤模型，包括2019年和2020年發佈的車型。
    * 包含相同數種車型的多種標籤模型。
 
-**用於訓練的影像**:您可以使用相同的影像來訓練不同的標籤模型。不過，不會將影像與標籤模型中的多個標籤產生關聯。 因此，可以使用屬於不同標籤模型的不同標籤來標籤相同影像。
+**用於訓練的影像**:您可以使用相同的影像來訓練不同的標籤模型。不過，請勿將影像與標籤模型中的多個標籤建立關聯。 您可以使用屬於不同標籤模型的不同標籤來標籤相同影像。
 
 您無法撤消培訓。 上述准則應協助您選擇要訓練的好影像。
 
@@ -122,7 +149,7 @@ ht-degree: 6%
 1. 在[!DNL Experience Manager]介面中，前往「**[!UICONTROL 工具] > **[!UICONTROL 資產] > **[!UICONTROL 報表]**」。
 1. 在&#x200B;**[!UICONTROL 資產報表]**&#x200B;頁面中，按一下&#x200B;**[!UICONTROL 建立]**。
 1. 選擇&#x200B;**[!UICONTROL 智慧型標籤訓練]**&#x200B;報表，然後從工具列按一下&#x200B;**[!UICONTROL Next]**。
-1. 指定報表的標題和說明。在「 **[!UICONTROL 排程報表]**」下，保 **[!UICONTROL 留「現在]** 」選項。如果您想要排程報表以供稍後使用，請選 **[!UICONTROL 取]** 「稍後」並指定日期和時間。然後，從工具列按一下「建立」。]****[!UICONTROL 
+1. 指定報表的標題和說明。在「 **[!UICONTROL 排程報表]**」下，保 **[!UICONTROL 留「現在]** 」選項。如果您想要排程報表以供稍後使用，請選 **[!UICONTROL 取]** 「稍後」並指定日期和時間。然後，從工具列按一下「建立」。****
 1. 在「資 **[!UICONTROL 產報表]** 」頁面中，選取您產生的報表。若要檢視報表，請按一下工具列上的&#x200B;**[!UICONTROL 檢視]**。
 1. 檢閱報表的詳細資訊。 報表會顯示您所訓練之標籤的訓練狀態。**[!UICONTROL 訓練狀態]**&#x200B;欄中的綠色表示智慧型標籤服務已接受標籤訓練。 黃色表示服務未針對特定標籤進行完整訓練。在這種情況下，請使用特定標籤新增更多影像，並執行培訓工作流程，以完全在標籤上訓練服務。如果您在此報表中未看到標籤，請針對這些標籤重新執行培訓工作流程。標籤
 1. 若要下載報表，請從清單中選取報表，然後從工具列按一下「下載&#x200B;**[!UICONTROL 」。]**&#x200B;報表會以[!DNL Microsoft Excel]試算表的形式下載。
@@ -154,15 +181,17 @@ ht-degree: 6%
    ![start_workflow](assets/start_workflow.png)
 
 1. 選擇&#x200B;**[!UICONTROL DAM智慧型標籤資產]**&#x200B;工作流程，並指定工作流程的標題。
-1. 按一下&#x200B;**[!UICONTROL 開始]**。 工作流程會將您的標籤套用在資產上。 導覽至資產資料夾並檢閱標籤，以確認您的資產是否已正確標籤。 如需詳細資訊，請參閱[管理智慧型標籤](#manage-smart-tags-and-searches)。
+1. 按一下&#x200B;**[!UICONTROL 開始]**。 工作流程會將您的標籤套用在資產上。 導覽至資產資料夾並檢閱標籤，以確認您的資產已正確標籤。 如需詳細資訊，請參閱[管理智慧型標籤](#manage-smart-tags-and-searches)。
 
 >[!NOTE]
 >
->在後續的標籤週期中，只有修改過的資產會再次使用新訓練過的標籤進行標籤。但是，如果標籤工作流程的最後一個標籤週期與目前標籤週期之間的間隔超過24小時，則甚至會標籤未更改的資產。 對於定期標籤工作流程，未變更的資產會在時間間隔超過6個月時加以標籤。
+>在後續的標籤週期中，只有修改過的資產會再次使用新訓練的標籤進行標籤。 不過，如果標籤工作流程的最後一個與目前標籤週期之間的間隔超過24小時，則即使未變更的資產也會被標籤。 對於定期標籤工作流程，未變更的資產會在時間間隔超過6個月時加以標籤。
 
 ### 標籤已上傳的資產{#tag-uploaded-assets}
 
 Experience Manager可自動標籤使用者上傳至DAM的資產。 為此，管理員會設定工作流程，以新增可用步驟至智慧標籤資產。 請參閱[如何為已上傳的資產啟用智慧標籤](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)。
+
+<!-- TBD: Text-based assets are automatically smart tagged. -->
 
 ## 管理智慧標籤和資產搜尋{#manage-smart-tags-and-searches}
 
@@ -209,6 +238,8 @@ Experience Manager可自動標籤使用者上傳至DAM的資產。 為此，管�
 * 無法辨識影像的細微差異。 例如，修身與普通襯衫。
 * 無法根據影像的微小圖樣／部分來識別標籤。 例如，T恤上的標誌。
 * Experience Manager支援的語言支援標籤。 如需語言清單，請參閱[智慧型內容服務發行說明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)。
+
+<!-- TBD: Add limitations related to text-based assets. -->
 
 若要使用智慧型標籤（一般或增強功能）搜尋資產，請使用資產搜尋（全文搜尋）。 智慧型標籤沒有個別的搜尋述詞。
 
