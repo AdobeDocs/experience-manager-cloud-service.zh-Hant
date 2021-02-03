@@ -2,9 +2,9 @@
 title: 建立內容片段模型無頭快速入門手冊
 description: 「內容片段模型」會使用AEM的無頭功能定義您要建立和提供的內容結構。
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: d37342feb794b9f1385bb5edd38b2d9bb6e7dff9
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
    ![模型資料夾](../assets/models-folder.png)
 1. 點選或按一下「建立&#x200B;**」。**
-1. 提供&#x200B;**Model Title**&#x200B;和&#x200B;**Description**。
+1. 提供&#x200B;**模型標題**、**標籤**&#x200B;和&#x200B;**說明**。 您也可以選取／取消選取「啟用model **」，以控制模型在建立時是否立即啟用。**
 
    ![建立模型](../assets/models-create.png)
 1. 在確認窗口中，按一下或按一下&#x200B;**Open**&#x200B;以配置型號。
@@ -45,7 +45,7 @@ ht-degree: 0%
 1. 完成模型構建後，點選或按一下「保存」(Save)**。**&#x200B;新建立的模型以&#x200B;**Draft**&#x200B;模式保存。
 
    ![在拔模模式下建模](../assets/models-draft.png)
-1. 必須啟用模型才能使用它。 選擇剛建立的模型，然後按一下或按一下&#x200B;**啟用**。
+1. 必須啟用模型才能使用它（如果尚未啟用）。 選擇剛建立的模型，然後按一下或按一下&#x200B;**啟用**。
 
    ![啟用模型](../assets/models-enable.png)
 1. 在確認對話方塊中點選或按一下「啟用&#x200B;****」，以確認啟用模型。
