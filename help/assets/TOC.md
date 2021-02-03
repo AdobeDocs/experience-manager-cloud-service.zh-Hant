@@ -5,10 +5,10 @@ breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 73%
+source-wordcount: '476'
+ht-degree: 74%
 
 ---
 
@@ -56,6 +56,7 @@ ht-degree: 73%
    + [Assets HTTP API](mac-api-assets.md)
    + [資產HTTP API中的內容片段支援](content-fragments/assets-api-content-fragments.md)
    + [內容片段的AEM GraphQL API](content-fragments/graphql-api-content-fragments.md)
+   + [內容片段的遠端AEM GraphQL查詢驗證](content-fragments/graphql-authentication-content-fragments.md)
    + [含內容片段的AEM GraphQL API —— 範例內容與查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [連線資產](use-assets-across-connected-assets-instances.md)
    + [資產報表](asset-reports.md)
@@ -85,7 +86,7 @@ ht-degree: 73%
    + [使用 Dynamic Media](dynamic-media/dynamic-media.md)
    + [設定 Dynamic Media](dynamic-media/config-dm.md)
    + [Dynamic Media 疑難排解](dynamic-media/troubleshoot-dm.md)
-   + [動態媒體中的協助功能](dynamic-media/accessibility-dm.md)
+   + [Dynamic Media 無障礙內容](dynamic-media/accessibility-dm.md)
    + [管理 Dynamic Media 資產](dynamic-media/managing-assets.md)
    + [影像品質最佳化的最佳作法](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [檔案管理最佳作法](dynamic-media/best-practices-for-file-management.md)
@@ -120,7 +121,7 @@ ht-degree: 73%
    + [將 URL 連結至您的 Web 應用程式](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [使用規則集轉換 URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [發佈 Dynamic Media 資產](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [在動態媒體中使用選擇性發佈](dynamic-media/selective-publishing.md)
+   + [在 Dynamic Media 中使用選擇性發佈](dynamic-media/selective-publishing.md)
    + [使用選取工具](dynamic-media/working-with-selectors.md)
    + [DHTML 檢視器生命週期結束常見問答集](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Flash 檢視器生命週期結束注意事項](dynamic-media/flash-viewers-eol.md)
