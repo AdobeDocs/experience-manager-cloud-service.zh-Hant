@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service 實作
 breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 translation-type: tm+mt
-source-git-commit: d8c4c49b158077393aac66bcb87a52236115551f
+source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 43%
+source-wordcount: '710'
+ht-degree: 45%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 43%
       + [使用 Sling 介面卡](developing/introduction/sling-adapters.md)
       + [在 AEM as a Cloud Service 中使用 Sling Resource Merger](developing/introduction/sling-resource-merger.md)
       + [AEM as a Cloud Service 中的覆蓋](developing/introduction/overlays.md)
-      + [使用用戶端程式庫](developing/introduction/clientlibs.md)
+      + [使用用戶端端程式庫](developing/introduction/clientlibs.md)
       + [頁面差異](/help/implementing/developing/introduction/page-diff.md)
       + [編輯器限制](/help/implementing/developing/introduction/editor-limitations.md)
       + [命名慣例](/help/implementing/developing/introduction/naming-conventions.md)
@@ -94,7 +94,7 @@ ht-degree: 43%
       + [AEM標籤架構](/help/implementing/developing/introduction/tagging-framework.md)
       + [建立標籤至AEM應用程式](/help/implementing/developing/introduction/tagging-applications.md)
       + 搜尋 {#search}
-         + [Query Builder API](/help/implementing/developing/introduction/query-builder-api.md)
+         + [查詢產生器 API](/help/implementing/developing/introduction/query-builder-api.md)
          + [Query Builder Predicate Reference](/help/implementing/developing/introduction/query-builder-predicates.md)
          + [實作自訂謂詞評估器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [自訂錯誤頁面](/help/implementing/developing/introduction/custom-error-page.md)
@@ -117,7 +117,7 @@ ht-degree: 43%
       + [啟動整合](developing/hybrid/launch-integration.md)
       + [伺服器端演算](developing/hybrid/ssr.md)
       + [SPA參考檔案](developing/hybrid/reference-materials.md)
-   + 無頭體驗管理{#headless}
+   + 無頭式體驗管理 {#headless}
       + [無頭與AEM](developing/headless/introduction.md)
       + 快速入門手冊{#getting-started}
          + [建立配置](developing/headless/getting-started/create-configuration.md)
@@ -140,11 +140,12 @@ ht-degree: 43%
       + 傳送API {#delivery-api}
          + [內容片段REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
          + [內容片段GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+         + [內容片段的遠端AEM GraphQL查詢驗證](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
          + [含內容片段的AEM GraphQL API —— 範例內容與查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md)
 + 開發人員工具 {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
-   + [AEM Repo工具](/help/implementing/developing/tools/repo-tool.md)
+   + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
    + [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md)
 + 個性化 {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
