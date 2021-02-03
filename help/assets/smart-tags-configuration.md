@@ -3,9 +3,9 @@ title: 增強型智慧標記
 description: 使用 Adobe Sensei 的 AI 和 ML 服務套用關聯式和描述性商業標記，以提升探索資產和處理內容的速度。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 97%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->預設情況下，新的[!DNL Experience Manager Assets]部署與[!DNL Adobe Developer Console]整合。 它可協助您更快速地設定智慧標籤功能。 在現有部署中，管理員會依照下列步驟進行設定。
+>預設情況下，新的[!DNL Experience Manager Assets]部署與[!DNL Adobe Developer Console]整合。 它可協助您更快速地設定智慧標籤功能。 在現有的部署中，管理員會依照下列步驟來設定整合。
 
 ## 使用 Adobe 開發人員控制台進行整合 {#aio-integration}
 
