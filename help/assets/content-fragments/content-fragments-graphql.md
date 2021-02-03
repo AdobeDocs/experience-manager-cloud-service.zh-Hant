@@ -2,31 +2,27 @@
 title: 使用內容片段與GraphQL進行無頭內容傳送
 description: 瞭解如何將Adobe Experience Manager(AEM)中的內容片段當做雲端服務與GraphQL搭配使用，以進行無頭內容傳送。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 54b377c6d98398fd5066dc4a3337a3877b9e3ed7
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 0%
+source-wordcount: '670'
+ht-degree: 1%
 
 ---
 
 
 # 使用內容片段與GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}進行無頭內容傳送
 
->[!CAUTION]
->
->內容片段傳送的AEM GraphQL API可應要求提供。
->
->請連絡[Adobe支援](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)以啟用AEM雲端服務方案的API。
+以Adobe Experience Manager(AEM)為雲端服務，您可以搭配使用內容片段和AEM GraphQL API（以標準GraphQL為基礎的自訂實作），來提供結構化內容，以便用於您的應用程式。 自訂單一API查詢的功能可讓您擷取並傳送您想要／需要轉譯的特定內容（作為對單一API查詢的回應）。
 
-以Adobe Experience Manager(AEM)為雲端服務，您可以搭配使用內容片段和AEM GraphQL API（以標準GraphQL為基礎的自訂實作），來提供結構化內容，以便用於您的應用程式。
+>[!NOTE]
+>
+>如需AEM Sites的雲端服務無頭開發簡介，請參閱[無頭和AEM](/help/implementing/developing/headless/introduction.md)。
 
 ## 無頭CMS {#headless-cms}
 
 無頭內容管理系統(CMS)是：
 
 * &quot;*無頭內容管理系統或無頭CMS是從頭構建的純後端內容管理系統(CMS)，它是內容儲存庫，可通過API訪問內容，以便在任何設備上顯示。*
-
-   *「無頭」一詞源於「正文」（後端，即內容存放庫）的截擊「頭」（前端，即網站）的概念*。
 
    請參閱[Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system)。
 
@@ -36,49 +32,19 @@ ht-degree: 0%
 
 * 內容片段的內容將依照內容片段模型以預先確定的方式建構。 如此可簡化應用程式的存取，進一步處理您的內容。
 
->[!NOTE]
->
->如需AEM Sites的雲端服務無頭開發簡介，請參閱[無頭和AEM](/help/implementing/developing/headless/introduction.md)。
-
 ## GraphQL —— 概述{#graphql-overview}
 
 GraphQL是：
 
-* &quot;*...API的查詢語言，以及使用您現有資料完成這些查詢的執行時期。 GraphQL提供您API中資料的完整且易於理解的描述，讓客戶能夠要求確切的所需內容，而不需要其他內容，讓API隨著時間推移而更容易發展，並提供功能強大的開發人員工具。*&quot;。
+* &quot;*...API的查詢語言，以及使用您現有資料來完成這些查詢的執行階段。*&quot;。
 
    請參閱[GraphQL.org](https://graphql.org)
 
-* &quot;*...開放式規格，以提供有彈性的API圖層。 將GraphQL置於您現有的後端，以前所未有的速度建立產品…….*&quot;。
-
-   請參閱[瀏覽GraphQL](https://www.graphql.com)。 &quot;*Explore GraphQL由Apollo團隊維護。 我們的目標是為全球的開發人員和技術領導者提供他們瞭解和採用GraphQL所需的所有工具。*」。
-
 [AEM GraphQL API](#aem-graphql-api)可讓您對[內容片段](/help/assets/content-fragments/content-fragments.md)執行（複雜）查詢；每個查詢都根據特定的模型類型。 然後，您的應用程式就可以使用傳回的內容。
-
-### GraphQL術語{#graphql-terminology}
-
-GraphQL使用下列功能：
-
-* **[查詢](https://graphql.org/learn/queries/)**
-
-* **[方案和類型](https://graphql.org/learn/schema/)** -使用這些，GraphQL顯示GraphQL允許用於AEM實施的類型和操作。
-
-* **[欄位](https://graphql.org/learn/queries/#fields)**
-
-* **GraphQL端點** - AEM中回應GraphQL查詢並提供GraphQL架構存取權的路徑。
-
-有關詳細資訊，請參閱[(GraphQL.org)GraphQL](https://graphql.org/learn/)簡介，包括[ Best Practices](https://graphql.org/learn/best-practices/)。
-
-### GraphQL查詢類型{#graphql-query-types}
-
-使用GraphQL，您可以執行以下任一查詢：
-
-* **單一項目**
-
-* **[條目清單](https://graphql.org/learn/schema/#lists-and-non-null)**
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-對於[Adobe Experience作為雲端體驗，已實作標準GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)的自訂實作。
+針對Adobe Experience as a Cloud Experience，我們開發了標準GraphQL API的自訂實作。 如需詳細資訊，請參閱[AEM GraphQL API以搭配內容片段](/help/assets/content-fragments/graphql-api-content-fragments.md)使用。
 
 AEM GraphQL API實作以[GraphQL Java庫](https://graphql.org/code/#java)為基礎。
 
@@ -103,6 +69,8 @@ AEM GraphQL API實作以[GraphQL Java庫](https://graphql.org/code/#java)為基�
 ### 內容片段模型 {#content-fragments-models}
 
 以下[內容片段模型](/help/assets/content-fragments/content-fragments-models.md):
+
+* 用於生成[方案](https://graphql.org/learn/schema/)，一次&#x200B;**啟用**。
 
 * 提供GraphQL所需的資料類型和欄位。 它們可確保您的應用程式只要求可能的項目，並接收預期的項目。
 
