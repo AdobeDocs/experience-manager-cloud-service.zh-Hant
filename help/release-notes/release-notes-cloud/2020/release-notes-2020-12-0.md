@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: 6ea94126d29a470820ee1dc39b239bb10951afac
+source-git-commit: 31e07090e4e3a265269eebce13857f88245788ee
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '691'
 ht-degree: 4%
 
 ---
@@ -74,3 +74,17 @@ AEM中Cloud Manager作為Cloud Service 2020.12.0的發行日期為2020年12月10
 ### 錯誤修正 {#crt-bug-fixes}
 
 * 在AEM Dispatcher Converter和Repository Modernizer工具上完成數個錯誤修正。 請參閱[AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)和[Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
+
+### 發行日期 {#release-date-ctt}
+
+內容傳輸工具v1.1.20的發行日期為2021年1月08日。
+
+### [!DNL Content Transfer Tool] {#what-is-new-ctt}的新增功能
+
+* 使用者現在可以在內容傳輸工具(CTT)使用者介面中暫留在狀態圖示上，瞭解其存取Token是否已過期。 移轉集詳細資料UI中也會通知他們無法連線至其雲端服務例項。
+
+### 錯誤修正 {#ctt-bug-fixes}
+
+* 移轉集的內容傳輸工具(CTT)使用者介面狀態在閒置一段時間後不會持續並變更。 這個問題已經修正。
+* 如果日誌不可用，則禁用了查看日誌的選項。 此問題已修正，且已新增訊息，以通知使用者記錄遺失的原因。
+* 內容傳輸工具用戶介面狀態在用戶停止接收時顯示為&#x200B;*FAILED*。 這已修正為改為顯示&#x200B;*STOPPED*。
