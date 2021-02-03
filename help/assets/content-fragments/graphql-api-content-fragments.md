@@ -1,10 +1,10 @@
 ---
-title: 將內容片段與Adobe Experience Manager搭配以做為雲端服務圖表QL API進行內容傳送
+title: AEM GraphQL API，用於內容片段
 description: 瞭解如何搭配AEM GraphQL API將Adobe Experience Manager(AEM)中的內容片段用作雲端服務，以進行無頭內容傳送。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 47ed0f516b724c4d9a966bd051a022f322acb08e
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '3192'
 ht-degree: 1%
 
 ---
@@ -12,23 +12,33 @@ ht-degree: 1%
 
 # AEM GraphQL API，用於內容片段{#graphql-api-for-use-with-content-fragments}
 
->[!CAUTION]
->
->內容片段傳送的AEM GraphQL API可應要求提供。
->
->請連絡[Adobe支援](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)以啟用AEM雲端服務方案的API。
-
 與內容片段搭配使用的Adobe Experience Manager As a Cloud Service(AEM)GraphQL API，主要是以標準、開放原始碼的GraphQL API為基礎。
 
 在AEM中使用GraphQL API，可在無頭CMS實作中，將內容片段有效率地傳送至JavaScript用戶端：
 
 * 避免重複的API要求，就像REST一樣，
 * 確保交付內容僅限於特定要求，
-* 允許大量傳送回應單一API查詢所需的內容。
+* 允許大量傳送呈現為單一API查詢回應所需的內容。
 
 ## GraphQL API {#graphql-api}
 
-*「GraphQL是Facebook在2012年內部開發的資料查詢語言和規格，後來於2015年公開開放。它為基於REST的體系結構提供了替代方案，其目的是提高開發人員的生產力並將傳輸的資料量減至最少。 GraphQL由數百個各種規模的組織在生產中使用……&quot;*&#x200B;請參閱[ GraphQL Foundation](https://foundation.graphql.org/)。
+GraphQL是：
+
+* &quot;*...API的查詢語言，以及使用您現有資料完成這些查詢的執行時期。 GraphQL提供您API中資料的完整且易於理解的描述，讓客戶能夠要求確切的所需內容，而不需要其他內容，讓API隨著時間推移而更容易發展，並提供功能強大的開發人員工具。*&quot;。
+
+   請參閱[GraphQL.org](https://graphql.org)
+
+* &quot;*...開放式規格，以提供有彈性的API圖層。 將GraphQL置於您現有的後端，以前所未有的速度建立產品…….*&quot;。
+
+   請參閱[瀏覽GraphQL](https://www.graphql.com)。
+
+* *」...Facebook於2012年在內部開發了一種資料查詢語言和規範，2015年在公開開源於Facebook。它為基於REST的體系結構提供了替代方案，其目的是提高開發人員的生產力並將傳輸的資料量減至最少。 GraphQL由數百個各種規模的組織在生產中使用……&quot;*
+
+   請參見[GraphQL Foundation](https://foundation.graphql.org/)。
+
+<!--
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+-->
 
 有關GraphQL API的詳細資訊，請參見以下各節（以及其他許多資源）:
 
@@ -52,9 +62,149 @@ ht-degree: 1%
 
 * [GraphQL Java at GitHub](https://github.com/graphql-java)
 
+### GraphQL術語{#graphql-terminology}
+
+GraphQL使用下列功能：
+
+* **[查詢](https://graphql.org/learn/queries/)**
+
+* **[結構和類型](https://graphql.org/learn/schema/)**:
+
+   * 結構描述是由AEM根據內容片段模型產生。
+   * 使用您的結構描述，GraphQL顯示GraphQL在AEM實施中允許的類型和操作。
+
+* **[欄位](https://graphql.org/learn/queries/#fields)**
+
+* **[GraphQL端點](#graphql-aem-endpoint)**
+   * AEM中回應GraphQL查詢並提供GraphQL結構描述存取的路徑。
+
+   * 有關詳細資訊，請參見[啟用GraphQL端點](#enabling-graphql-endpoint)。
+
+有關詳細資訊，請參閱[(GraphQL.org)GraphQL](https://graphql.org/learn/)簡介，包括[ Best Practices](https://graphql.org/learn/best-practices/)。
+
+### GraphQL查詢類型{#graphql-query-types}
+
+使用GraphQL，您可以執行查詢以返回：
+
+* A **單個條目**
+
+* **[條目清單](https://graphql.org/learn/schema/#lists-and-non-null)**
+
+您也可以執行：
+
+* [持續查詢，已快取](#persisted-queries-caching)
+
+## 適用於AEM端點的GraphQL {#graphql-aem-endpoint}
+
+端點是用來存取GraphQL for AEM的路徑。 您（或您的應用程式）可以使用此路徑：
+
+* 訪問GraphQL模式，
+* 發送您的GraphQL查詢，
+* 接收響應（對您的GraphQL查詢）。
+
+GraphQL for AEM端點的儲存庫路徑為：
+
+`/content/cq:graphql/global/endpoint`
+
+您的應用程式可在請求URL中使用下列路徑：
+
+`/content/_cq_graphql/global/endpoint.json`
+
+若要啟用GraphQL for AEM的端點，您需要：
+
+>[!CAUTION]
+>
+>這些步驟在不久的將來可能會有所改變。
+
+* [啟用GraphQL端點](#enabling-graphql-endpoint)
+* [執行其他配置](#additional-configurations-graphql-endpoint)
+
+### 啟用GraphQL端點{#enabling-graphql-endpoint}
+
+>[!NOTE]
+>
+>如需Adobe提供的套件的詳細資訊，請參閱[支援套件](#supporting-packages)以簡化這些步驟。
+
+若要在AEM中啟用GraphQL查詢，請在`/content/cq:graphql/global/endpoint`處建立端點：
+
+* 節點`cq:graphql`和`global`必須為`sling:Folder`類型。
+* 節點`endpoint`必須為`nt:unstructured`類型，並包含`graphql/sites/components/endpoint`的`sling:resourceType`。
+
+>[!CAUTION]
+>
+>端點目前存在已知問題：
+>
+>* 在&#x200B;**Sites**&#x200B;控制台中看到`cq:graphql`條目；在頂層。
+   >  不得使用。
+
+
+>[!CAUTION]
+>
+>每個人都能存取端點。 這可能會——尤其是在發佈例項上——造成安全性顧慮，因為GraphQL查詢可能會對伺服器造成沈重負載。
+>
+>您可以在端點上設定與您的使用案例相應的ACL。
+
+>[!NOTE]
+>
+>您的端點不會立即可用。 您必須分別為GraphQL端點提供[其他配置](#additional-configurations-graphql-endpoint)。
+
+>[!NOTE]
+>此外，您還可以使用[GraphiQL IDE](#graphiql-interface)測試和調試GraphQL查詢。
+
+### GraphQL端點{#additional-configurations-graphql-endpoint}的其他配置
+
+>[!NOTE]
+>
+>如需Adobe提供的套件的詳細資訊，請參閱[支援套件](#supporting-packages)以簡化這些步驟。
+
+需要其他配置：
+
+* Dispatcher:
+   * 若要允許必要的URL
+   * 必要
+* 虛名 URL:
+   * 為端點分配簡化的URL
+   * 可選
+* OSGi配置：
+   * GraphQL Servlet配置：
+      * 處理對端點的請求
+      * 配置名稱為`org.apache.sling.graphql.core.GraphQLServlet`。 它需要作為OSGi工廠配置提供
+      * `sling.servlet.extensions` 必須設為  `[json]`
+      * `sling.servlet.methods` 必須設為  `[GET,POST]`
+      * `sling.servlet.resourceTypes` 必須設為  `[graphql/sites/components/endpoint]`
+      * 必要
+   * 架構Servlet配置：
+      * 建立GraphQL模式
+      * 配置名稱為`com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet`。 它需要作為OSGi工廠配置提供
+      * `sling.servlet.extensions` 必須設為  `[GQLschema]`
+      * `sling.servlet.methods` 必須設為  `[GET]`
+      * `sling.servlet.resourceTypes` 必須設為  `[graphql/sites/components/endpoint]`
+      * 必要
+   * CSRF配置：
+      * 端點的安全保護
+      * 配置名稱為`com.adobe.granite.csrf.impl.CSRFFilter`
+      * 將`/content/cq:graphql/global/endpoint`新增至現有的已排除路徑清單(`filter.excluded.paths`)
+      * 必要
+
+### 支援軟體包{#supporting-packages}
+
+為簡化GraphQL端點的設定，Adobe提供了[GraphQL Sample Project](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip)套件。
+
+此存檔同時包含[所需的附加配置](#additional-configurations-graphql-endpoint)和[ GraphQL端點](#enabling-graphql-endpoint)。 如果安裝在普通AEM實例上，則會在`/content/cq:graphql/global/endpoint`處顯示完全工作的GraphQL端點。
+
+此軟體包旨在成為您自己的GraphQL項目的藍圖。 有關如何使用軟體包的詳細資訊，請參閱軟體包&#x200B;**README**。
+
+如果您偏好手動建立所需的組態，Adobe也提供專屬的[GraphQL端點內容套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip)。 此內容包僅包含GraphQL端點，無需任何配置。
+
 ## 圖形QL介面{#graphiql-interface}
 
-AEM Graph API包含標準[GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)介面的實作。 這可讓您直接輸入並測試查詢。
+<!--
+AEM Graph API includes an implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. This allows you to directly input, and test, queries.
+-->
+
+標準[GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)介面的實作可與AEM GraphQL搭配使用。 這可與AEM](#installing-graphiql-interface)一起安裝。[
+
+此介面可讓您直接輸入並測試查詢。
 
 例如：
 
@@ -63,6 +213,12 @@ AEM Graph API包含標準[GraphiQL](https://graphql.org/learn/serving-over-http/
 它提供語法反白顯示、自動完成、自動建議等功能，以及歷史記錄和線上檔案：
 
 ![GraphiQL接](assets/cfm-graphiql-interface.png "口GraphiQL介面")
+
+### 安裝AEM GraphiQL介面{#installing-graphiql-interface}
+
+GraphiQL使用者介面可安裝在AEM上，並附上專用的套件：[GraphiQL Content Package v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip)套件。
+
+請參閱軟體包&#x200B;**README**&#x200B;以獲得詳細資訊；包括如何在多種情況下將它安裝在AEM例項的完整詳細資訊。
 
 ## 作者和發佈環境的使用案例{#use-cases-author-publish-environments}
 
@@ -76,15 +232,25 @@ AEM Graph API包含標準[GraphiQL](https://graphql.org/learn/serving-over-http/
       * AEM中的GraphQL（雲端服務）目前是唯讀API。
       * REST API可用於CR(u)D操作。
 
+## 權限 {#permission}
+
+權限是存取「資產」所需的權限。
+
 ## 方案生成{#schema-generation}
 
 GraphQL是強式型別的API，這表示資料必須依類型清楚地結構化和組織。
 
 GraphQL規範提供了一系列指引，說明如何建立用於查詢特定實例上資料的強穩API。 為此，客戶端需要讀取[Schema](#schema-generation)，該包含查詢所需的所有類型。
 
-對於內容片段，GraphQL結構（結構和類型）基於[內容片段模型](/help/assets/content-fragments/content-fragments-models.md)及其資料類型。
+對於內容片段，GraphQL結構（結構和類型）基於&#x200B;**Enabled** [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)及其資料類型。
 
-例如，如果使用者建立名為`Article`的內容片段模型，AEM會產生類型為`ArticleModel`的物件`article`。 此類型中的欄位與模型中定義的欄位和資料類型相對應。
+>[!CAUTION]
+>
+>所有GraphQL結構（衍生自&#x200B;**Enabled**&#x200B;的內容片段模型）都可通過GraphQL端點讀取。
+>
+>這表示您需要確保沒有敏感資料可供使用，因為敏感資料可能會以此方式洩露；例如，這包括在模型定義中可能顯示為欄位名稱的資訊。
+
+例如，如果使用者建立名為`Article`的內容片段模型，AEM會產生類型為`ArticleModel`的物件`article`。 此類型中的欄位對應於模型中定義的欄位和資料類型。
 
 1. 內容片段模型：
 
@@ -95,7 +261,7 @@ GraphQL規範提供了一系列指引，說明如何建立用於查詢特定實�
 
    這表示產生的類型`ArticleModel`包含數個[欄位](#fields)。
 
-   * 其中3個由用戶控制：`author`、`main`和`linked_article`。
+   * 其中3個由用戶控制：`author`、`main`和`referencearticle`。
 
    * AEM會自動新增其他欄位，並代表提供特定內容片段相關資訊的實用方法；在此範例中，`_path`、`_metadata`、`_variations`。 這些[幫助欄位](#helper-fields)標有前面的`_`，以區分由用戶定義的內容和已自動生成的內容。
 
@@ -121,7 +287,7 @@ Sites GraphQL服務會監聽（在背景）對內容片段模型所做的任何�
 >
 >請務必注意，以防您透過REST api或其他方式對內容片段模型進行大量更新。
 
-模式通過與GraphQL查詢相同的端點服務，客戶端處理以`GQLschema`副檔名調用模式的事實。 例如，對`/content/graphql/endpoint.GQLschema`執行簡單的`GET`請求將導致輸出具有Content-type的架構：`text/x-graphql-schema;charset=iso-8859-1`。
+模式通過與GraphQL查詢相同的端點服務，客戶端處理以`GQLschema`副檔名調用模式的事實。 例如，對`/content/cq:graphql/global/endpoint.GQLschema`執行簡單的`GET`請求將導致輸出具有Content-type的架構：`text/x-graphql-schema;charset=iso-8859-1`。
 
 ## 欄位 {#fields}
 
@@ -168,7 +334,7 @@ GraphQL for AEM支援類型清單。 所有支援的內容片段模型資料類�
 
 ```xml
 {
-  persons {
+  personList {
     items {
       _path
     }
@@ -180,15 +346,17 @@ GraphQL for AEM支援類型清單。 所有支援的內容片段模型資料類�
 
 ```xml
 {
-    person(_path="/content/dam/path/to/fragment/john-doe") {
-        _path
-        name
-        first-name
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _path
+      firstName
+      name
     }
+  }
 }
 ```
 
-請參閱[範例查詢——單一城市片段](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-city-fragment)。
+請參閱[範例查詢——單一特定城市片段](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)。
 
 #### 中繼資料 {#metadata}
 
@@ -217,12 +385,14 @@ AEM也透過GraphQL公開內容片段的中繼資料。 中繼資料是描述內
 
 ```xml
 {
-  person(_path: "/content/dam/path/to/fragment/john-doe") {
-    _path
-    _metadata {
-      stringMetadata {
-        name
-        value
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _path
+      _metadata {
+        stringMetadata {
+          name
+          value
+        }
       }
     }
   }
@@ -246,8 +416,10 @@ AEM也透過GraphQL公開內容片段的中繼資料。 中繼資料是描述內
 
 ```xml
 {
-  person(_path: "/content/dam/path/to/fragment/john-doe") {
-    _variations
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _variations
+    }
   }
 }
 ```
@@ -262,14 +434,14 @@ AEM也透過GraphQL公開內容片段的中繼資料。 中繼資料是描述內
 
 GraphQL允許將變數放在查詢中。 有關詳細資訊，請參見GraphiQL的[GraphQL文檔。](https://graphql.org/learn/queries/#variables)
 
-例如，要獲取具有特定變化的`Article`類型的所有內容片段，可以在GraphiQL中指定變數`variation`:
+例如，要獲取具有特定變化類型`Article`的所有內容片段，可以在GraphiQL中指定變數`variation`。
 
 ![GraphQL變](assets/cfm-graphqlapi-03.png "量GraphQL變數")
 
 ```xml
 ### query
 query GetArticlesByVariation($variation: String!) {
-    articles(variation: $variation) {
+    articleList(variation: $variation) {
         items {
             _path
             author
@@ -292,10 +464,11 @@ query GetArticlesByVariation($variation: String!) {
 ![GraphQL指](assets/cfm-graphqlapi-04.png "令GraphQL指令")
 
 ```xml
-query getAdventureByType($includePrice: Boolean!) {
-  adventures {
+### query
+query GetAdventureByType($includePrice: Boolean!) {
+  adventureList {
     items {
-      adventureType
+      adventureTitle
       adventurePrice @include(if: $includePrice)
     }
   }
@@ -306,6 +479,47 @@ query getAdventureByType($includePrice: Boolean!) {
     "includePrice": true
 }
 ```
+
+## 篩選{#filtering}
+
+您也可以在GraphQL查詢中使用篩選來傳回特定資料。
+
+篩選使用基於邏輯運算子和運算式的語法。
+
+例如，以下（基本）查詢會篩選名稱為`Jobs`或`Smith`的所有人員：
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _logOp: OR
+      _expressions: [
+        {
+          value: "Jobs"
+        },
+        {
+          value: "Smith"
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+如需更多範例，請參閱：
+
+* [GraphQL for AEM extensions](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)的詳細資訊
+
+* [使用此示例內容和結構的示例查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
+
+   * 以及準備用於範例查詢的[範例內容與結構](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+
+* [基於WKND項目的示例查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
 ## 持續查詢（快取）{#persisted-queries-caching}
 
@@ -511,7 +725,7 @@ query getAdventureByType($includePrice: Boolean!) {
 
    * alloworgin:[您的域]或alloworiginregexp:[您的網域regex]
    * 支援的方法：[POST]
-   * 允許路徑：[&quot;/apps/graphql-enablement/content/endpoint.gql(/persigned)?&quot;]
+   * 允許路徑：[&quot;/content/graphql/global/endpoint.json&quot;]
 
 * 訪問GraphQL持久查詢端點：
 
@@ -524,41 +738,19 @@ query getAdventureByType($includePrice: Boolean!) {
 >客戶仍有責任：
 >
 >* 僅授與受信任網域的存取權
->* 不使用通配符[*]語法；這將使GraphQL端點向全世界公開。
+>* 確保未公開任何敏感資訊
+>* 不使用通配符[*]語法；這既將禁用對GraphQL端點的驗證訪問，也將它向全世界公開。
 
 
+>[!CAUTION]
+>
+>所有GraphQL [方案](#schema-generation)（衍生自&#x200B;**已啟用**&#x200B;的內容片段模型）都可通過GraphQL端點讀取。
+>
+>這表示您需要確保沒有敏感資料可供使用，因為敏感資料可能會以此方式洩露；例如，這包括在模型定義中可能顯示為欄位名稱的資訊。
 
-## 篩選{#filtering}
+## 驗證 {#authentication}
 
-您也可以在GraphQL查詢中使用篩選來傳回特定資料。
-
-篩選使用基於邏輯運算子和運算式的語法。
-
-如需範例，請參閱：
-
-* [GraphQL for AEM extensions](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-some-extensions)的詳細資訊
-
-* [範例內容與結](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) 構已準備好供範例查詢使用
-
-* [使用此示例內容和結構的示例查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
-
-* [基於WKND項目的示例查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
-
-## 權限 {#permission}
-
-權限是存取「資產」所需的權限。
-
-<!-- to be addressed later -->
-
-<!-- 
-## Authentication {#authentication}
--->
-
-<!-- to be addressed later -->
-
-<!-- 
-## Caching {#caching}
--->
+請參閱[內容片段的遠端AEM GraphQL查詢驗證](/help/assets/content-fragments/graphql-authentication-content-fragments.md)。
 
 <!-- to be addressed later -->
 
@@ -571,52 +763,6 @@ query getAdventureByType($includePrice: Boolean!) {
 <!--
 ## Paging {#paging}
 -->
-
-## 端點{#end-points}
-
-端點是用來存取GraphQL for AEM的路徑。 您（或您的應用程式）可以使用此路徑：
-
-* 訪問GraphQL模式，
-* 發送您的GraphQL查詢，
-* 接收響應（對您的GraphQL查詢）。
-
-若要在AEM中存取GraphQL Servlet，您必須設定端點。 這還包括兩個OSGi配置。
-
-1. 回應擷取GraphQL架構之請求的Sling架構servlet:
-
-   ![AEM Sites GraphQL架構Servlet](assets/cfm-endpoint-01.png)
-
-   * **選擇器** (`sling.servlet.selectors`)必須留空。
-
-   * **資源類型** (`sling.servlet.resourceTypes`)定義GraphQL servlet應監聽的資源類型。例如：
-      `graphql-enablement/components/endpoint`。
-
-   * **方法** (`sling.servlet.methods^)
-
-      servlet應監聽的HTTP方法；通常`GET`。
-
-   * **擴充功能** (`sling.servlet.extensions`)
-
-      指定方案Servlet應響應的副檔名。 在本例中，它是`GQLschema` ，與GraphQL規範相容。
-
-2. 響應graphql請求的servlet:
-
-   ![Apache Sling GraphQL Servlet](assets/cfm-endpoint-02.png)
-
-   * **選擇器** (`sling.servlet.selectors`)必須留空。
-
-   * **資源類型** (`sling.servlet.resourceTypes`)GraphQL servlet應響應的資源類型。例如，`graphql-enablement/components/endpoint`。
-
-   * **方法** (`sling.servlet.methods`)GraphQL servlet應響應的HTTP方法，通常 `GET` 和 `POST`。
-
-   * **Extensions** (`sling.servlet.extensions`)用於監聽GraphQL請求的擴展，通常 `gql`。
-
-3. 您現在需要建立端點——這些組態中定義的sling:resourceType節點。
-例如，要建立用於檢索GraphQL模式的端點，請在`/apps/<my-site>/graphql`下建立一個新節點：
-
-   * 名稱: `endpoint`
-   * 主要類型：`nt:unstructured`
-   * sling:resourceType: `graphql-enablement/components/endpoint`
 
 ## 常見問題{#faqs}
 
