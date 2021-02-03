@@ -1,10 +1,10 @@
 ---
 title: 智慧標籤您的視訊資產
-description: 智慧型標籤視訊資產會使用Adobe Sensei服務套用情境式和描述性標籤，以自動化資產標籤。
+description: Experience Manager會使用 [!DNL Adobe Sensei]自動將內容相關和描述性的智慧型標籤新增至影片。
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 智慧標籤您的視訊資產{#video-smart-tags}
 
-對新內容的需求日益增長，需要減少人工操作，以便迅速提供吸引人的數位體驗。 [!DNL Adobe Experience Manager] 支援 [!DNL Cloud Service] 人工智慧輔助的視訊資產自動標籤。手動標籤視訊會很耗時。 不過，Adobe Sensei支援的視訊智慧標籤功能使用人工智慧模型來分析視訊內容，並新增標籤至視訊資產。 如此可縮短DAM使用者為其客戶提供多樣化體驗的時間。 Adobe的機器學習服務會為視訊產生兩組標籤。 而其中一組則對應該視訊中的物件、場景和屬性；另一組則涉及飲酒、跑步和慢跑等動作。
+對新內容的需求日益增長，需要減少人工操作，以便迅速提供吸引人的數位體驗。 [!DNL Adobe Experience Manager] 支援 [!DNL Cloud Service] 使用人工智慧自動標籤視訊資產。手動標籤視訊會很耗時。 不過，[!DNL Adobe Sensei]支援的視訊智慧標籤功能使用人工智慧模型來分析視訊內容，並新增標籤至視訊資產。 如此可縮短DAM使用者為其客戶提供多樣化體驗的時間。 Adobe的機器學習服務會為視訊產生兩組標籤。 而其中一組則對應該視訊中的物件、場景和屬性；另一組則涉及飲酒、跑步和慢跑等動作。
 
-智慧型標籤支援的視訊檔案格式（及其轉碼器）為MP4(H264/AVC)、MKV(H264/AVC)、MOV(H264/AVC、Motion JPEG)、AVI(indeo4)、FLV(H264/AVC、vp6f)和WMV(WMV2)。 此外，此功能還允許將視訊標籤為300 MB。 視訊上傳後或觸發重新處理時，自動標籤視訊資產會做為標準資產處理（以及建立縮圖和擷取中繼資料）。 智慧型標籤在資產[!UICONTROL 屬性]中以其[信賴分數](#confidence-score-video-tag)的遞減順序顯示。 在[!DNL Adobe Experience Manager]中，視訊標籤預設為[!DNL Cloud Service]。 不過，您可以在資料夾上[選擇退出視訊智慧標籤](#opt-out-video-smart-tagging)。
+視訊上傳後或觸發重新處理時，視訊資產的自動標籤會做為標準資產處理（以及縮圖建立和中繼資料擷取）。 智慧型標籤在資產[!UICONTROL 屬性]中以其[信賴分數](#confidence-score-video-tag)的遞減順序顯示。 在[!DNL Adobe Experience Manager]中，視訊標籤預設為[!DNL Cloud Service]。 不過，您可以在資料夾上[選擇退出視訊智慧標籤](#opt-out-video-smart-tagging)。
 
 ## 上傳{#smart-tag-assets-on-ingestion}時智慧標籤影片
 
-當您[將視訊資產](add-assets.md#upload-assets)上傳至[!DNL Adobe Experience Manager]為[!DNL Cloud Service]時，視訊會進行![處理](assets/do-not-localize/assetprocessing.png)。 處理完成後，請參閱資產[!UICONTROL 屬性]頁面的[!UICONTROL 基本]標籤。 智慧型標籤會自動新增至[!UICONTROL 智慧型標籤]下方的視訊。 資產計算服務運用Adobe Sensei來建立這些智慧標籤。
+當您[將視訊資產](add-assets.md#upload-assets)上傳至[!DNL Adobe Experience Manager]為[!DNL Cloud Service]時，會處理視訊。 處理完成後，請參閱資產[!UICONTROL 屬性]頁面的[!UICONTROL 基本]標籤。 智慧型標籤會自動新增至[!UICONTROL 智慧型標籤]下方的視訊。 資產微服務利用[!DNL Adobe Sensei]來建立這些智慧標籤。
 
 ![智慧型標籤會新增至影片，並在資產屬性的「基本」索引標籤中顯示](assets/smart-tags-added-to-videos.png)
 
@@ -43,6 +43,8 @@ DAM中現有的視訊資產不會自動加上智慧標籤。 您需要手動[!UI
 1. 選取整個資料夾或特定視訊資產。
 
 1. 選擇「![重新處理資產」表徵圖](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 「重新處理資產」表徵圖，然後選擇「完全處理」選項。]
+
+<!-- TBD: Limit size -->
 
 ![重新處理資產，以新增標籤至現有DAM儲存庫的視訊](assets/reprocess.gif)
 
@@ -98,7 +100,7 @@ DAM中現有的視訊資產不會自動加上智慧標籤。 您需要手動[!UI
 
 >[!IMPORTANT]
 >
->如果您已選擇在上傳時不在資料夾上標籤視訊，而想在上傳後智慧標籤視訊，則從資料夾[!UICONTROL 「屬性」的「資產處理」標籤[!UICONTROL 「啟用視訊的智慧標籤」]**，然後使用「重新處理資產」[選項](#smart-tag-existing-videos)新增智慧型標籤至視訊。]]**[!UICONTROL 
+>如果您已選擇在上傳時不在資料夾上標籤視訊，而想在上傳後智慧標籤視訊，則從資料夾[!UICONTROL 「屬性」的「資產處理」標籤[!UICONTROL 「啟用視訊的智慧標籤」]**，然後使用「重新處理資產」[選項](#smart-tag-existing-videos)新增智慧型標籤至視訊。**]
 
 ## 信賴分數{#confidence-score-video-tag}
 
@@ -123,13 +125,13 @@ DAM中現有的視訊資產不會自動加上智慧標籤。 您需要手動[!UI
 
 ## 限制 {#video-smart-tagging-limitations}
 
-* 目前尚未支援訓練智慧型標籤服務（或增強型智慧型標籤）來標籤視訊資產。
+* 您無法訓練使用任何特定視訊套用智慧型標籤至視訊的服務。 它適用於預設的[!DNL Adobe Sensei]設定。
 
-* 未顯示標籤進度。
+* 不會顯示標籤進度。
 
-* 只有大小不超過300 MB的視訊才適合進行標籤。 Adobe Sensei服務會智慧標籤符合此准則的視訊，並略過標籤資料夾中的其他視訊。
+* 只有檔案大小小於300 MB的視訊會自動標籤。 [!DNL Adobe Sensei]服務會跳過大小較大的視訊檔案。
 
-* 只有這些檔案格式（和支援的轉碼器）的視訊— MP4(H264/AVC)、MKV(H264/AVC)、MOV(H264/AVC、Motion JPEG)、AVI(indeo4)、FLV(H264/AVC、vp6f)和WMV(WMV2)-可以標籤。
+* 只有[智慧型標籤](/help/assets/smart-tags.md#smart-tags-supported-file-formats)中提及的檔案格式和支援的轉碼器中的視訊才會標籤。
 
 >[!MORELIKETHIS]
 >
