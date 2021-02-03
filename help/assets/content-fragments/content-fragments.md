@@ -2,21 +2,15 @@
 title: 使用內容片段
 description: 瞭解Adobe Experience Manager(AEM)中的內容片段如何讓您設計、建立、組織和使用不受頁面影響的內容。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2027'
 ht-degree: 3%
 
 ---
 
 
 # 使用內容片段{#working-with-content-fragments}
-
->[!CAUTION]
->
->內容片段傳送的AEM GraphQL API可應要求提供。
->
->請連絡[Adobe支援](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)以啟用AEM雲端服務方案的API。
 
 以Adobe Experience Manager(AEM)為雲端服務，內容片段可讓您設計、建立、組織及[發佈不受頁面影響的內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 它們可讓您準備內容，以便在多個位置／多個通道中使用。
 
@@ -30,12 +24,9 @@ ht-degree: 3%
    * 複雜
       * 多種不同資料類型的欄位組合，包括文字、數字、布林值、資料和時間等。
       * 可用於準備更多結構化內容以製作頁面，或傳送至您的應用程式。
-
-<!--
-  * Nested
-    * The reference data types available allow you to nest your content.
-    * Tends to be used for delivery to your application.
--->
+   * 巢狀
+      * 可用的參考資料類型可讓您巢狀內嵌內容。
+      * 通常用於傳送至您的應用程式。
 
 內容片段也可以使用AEM核心元件的Sling Model(JSON)匯出功能，以JSON格式傳送。 這種交付形式：
 
@@ -78,10 +69,7 @@ ht-degree: 3%
 * 建立適用於各種通道的內容池。
 * 針對特定通道設計內容變化。
 * 插入資產（混合媒體片段），將影像新增至文字。
-
-<!--
-* Create nested content to reflect the complexity of your data.
--->
+* 建立巢狀內容以反映資料的複雜性。
 
 然後，這些內容片段可以組合起來，以透過多種通道提供體驗。
 
@@ -121,11 +109,9 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
 >
 >AEM也支援片段內容的轉譯。
 
-<!--
 >[!NOTE]
 >
->AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
--->
+>AEM也支援片段內容的轉譯。 如需詳細資訊，請參閱[轉換資產](/help/assets/translate-assets.md)。
 
 ## 內容類型 {#content-type}
 
@@ -306,6 +292,12 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
 
 ### WKND示例{#wknd-sample}
 
-提供[WKND網站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)範例，協助您瞭解AEM為雲端服務。 其中包含範例片段，您可在以下網址查看：
+提供[WKND網站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)範例，協助您瞭解AEM為雲端服務。
 
-`hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
+WKND項目包括：
+
+* 內容片段模型可在下列位置取得：
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* 內容片段（和其他內容）可在下列位置取得：
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
