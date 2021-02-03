@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: cd392473d4e8ebee20b41c6c979121fe81819a40
+source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '678'
+ht-degree: 4%
 
 ---
 
@@ -20,8 +20,6 @@ ht-degree: 0%
 下列版本(2021.2.0)將於2021年2月25日發行。
 
 ## [!DNL Adobe Experience Manager Sites] 雲端服務  {#sites}
-
-* **[內容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:新增使用HTTP API新增／更新和刪除內容片段變數的能力。
 
 * **[內容片段傳送的GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**:能夠使用GraphQL語法查詢內容片段，並根據內容片段模型來結構，以便以JSON格式輸出。
 
@@ -69,20 +67,6 @@ AEM中Cloud Manager作為Cloud Service 2021.1.0的發行日期為2021年1月14�
 * 從Cloud Manager觸發解除休眠時，有時即使成功啟動解除休眠，仍會顯示失敗訊息。
 
 * 已解決在環境建立或刪除中遇到的罕見故障。
-
-## 程式碼重構工具 {#code-refactoring-tools}
-
-### [!DNL Code Refactoring Tools] {#what-is-new-crt}的新增功能
-
-* 新版AIO-CLI增效模組已發行。 此外掛程式的最新版本包含AEM Dispatcher Converter和Repository Modernizer的錯誤修正，也支援新的公用程式- Index Converter。 請參閱[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)以進一步瞭解此外掛程式。
-
-* Index Converter是一個公用程式，可用來將客戶的自訂OAK索引定義轉換為AEM，做為CLoud Service相容的OAK索引定義。 有關詳細資訊，請參閱[索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)。
-
-* 新增至[Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)的新功能，可建立個別的套件`ui.config`以包含所有OSGi組態。
-
-### 錯誤修正 {#crt-bug-fixes}
-
-* 在AEM Dispatcher Converter和Repository Modernizer工具上完成數個錯誤修正。 請參閱[AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)和[Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
 
 ## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
