@@ -2,21 +2,15 @@
 title: 內容片段——設定瀏覽器
 description: 瞭解如何在設定瀏覽器中啟用特定內容片段功能。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 18%
+source-wordcount: '241'
+ht-degree: 21%
 
 ---
 
 
 # 內容片段——設定瀏覽器{#content-fragments-configuration-browser}
-
->[!CAUTION]
->
->內容片段傳送的AEM GraphQL API可應要求提供。
->
->請連絡[Adobe支援](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)以啟用AEM雲端服務方案的API。
 
 ## 啟用實例{#enable-content-fragment-functionality-instance}的內容片段功能
 
