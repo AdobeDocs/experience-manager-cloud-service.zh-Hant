@@ -2,7 +2,7 @@
 title: 中繼資料 - 片段屬性
 description: 您可以檢視和編輯內容片段的中繼資料（屬性）。
 translation-type: tm+mt
-source-git-commit: d302df83f3c2f95a5cc46d1d21c5e1376d4d4faf
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 9%
@@ -20,7 +20,7 @@ ht-degree: 9%
 2. 其中之一：
 
    * 選擇&#x200B;[**查看屬性**&#x200B;以開啟對話框](/help/assets/manage-digital-assets.md#editing-properties)。 開啟供檢視後，您也可以編輯。
-   * 開啟「編輯」的[內容片段，然後從側面板選擇「元資料」。](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)****
+   * 開啟內容片段以進行編輯，然後從側面板選擇&#x200B;**中繼資料**。
 
    ![中繼資料](assets/cfm-metadata-01.png)
 
