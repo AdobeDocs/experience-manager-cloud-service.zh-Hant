@@ -2,7 +2,7 @@
 title: AEM中Cloud Manager的Cloud Manager版本注意事項2020.11.0版
 description: AEM中Cloud Manager的Cloud Manager版本注意事項2020.11.0版
 translation-type: tm+mt
-source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
+source-git-commit: 79af82d1589108e7a8953e29a5d0f0169920585c
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 4%
@@ -23,7 +23,7 @@ AEM中Cloud Manager作為雲端服務2020.11.0的發行日期為2020年11月12�
 ### 新功能 {#what-is-new}
 
 * 現在，用戶可從「環境」卡和「環境摘要」頁上的「環境」菜單選項中使用新的菜單選項&#x200B;**本地登錄**。
-有關詳細資訊，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md##login-locally)。
+有關詳細資訊，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md#login-locally)。
 
 * Cloud Manager中的&#x200B;**Learn**&#x200B;標籤已在UI中以新影像重新整理。
 
