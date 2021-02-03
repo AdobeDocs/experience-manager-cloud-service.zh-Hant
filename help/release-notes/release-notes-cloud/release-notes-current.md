@@ -4,8 +4,8 @@ description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行
 translation-type: tm+mt
 source-git-commit: cd392473d4e8ebee20b41c6c979121fe81819a40
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
