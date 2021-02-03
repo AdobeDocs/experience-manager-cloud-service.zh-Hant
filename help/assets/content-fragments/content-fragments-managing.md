@@ -2,21 +2,15 @@
 title: 管理內容片段
 description: 內容片段會儲存為資產，因此主要是從資產主控台管理。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1593'
 ht-degree: 11%
 
 ---
 
 
 # 管理內容片段{#managing-content-fragments}
-
->[!CAUTION]
->
->內容片段傳送的AEM GraphQL API可應要求提供。
->
->請連絡[Adobe支援](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)以啟用AEM雲端服務方案的API。
 
 內容片段會儲存為&#x200B;**Assets**，因此主要是從&#x200B;**Assets**&#x200B;主控台管理。
 
@@ -39,8 +33,8 @@ ht-degree: 11%
 建立內容片段的方法為：
 
 1. 導覽至您 **要建立** 片段的「資產」檔案夾。
-2. 依序選 **擇「建立**」、「 **內容片段** 」以開啟精靈。
-3. 嚮導的第一步要求您指定新片段的基礎。
+1. 依序選 **擇「建立**」、「 **內容片段** 」以開啟精靈。
+1. 嚮導的第一步要求您指定新片段的基礎。
 
    * [模型](/help/assets/content-fragments/content-fragments-models.md) -用於建立需要結構化內容的片段；例如，保守 **** 模型
 
@@ -50,7 +44,7 @@ ht-degree: 11%
 
    ![片段基礎](assets/cfm-managing-01.png)
 
-4. 在「屬 **性** 」步驟中指定：
+1. 在「屬 **性** 」步驟中指定：
 
    * **基本**
 
@@ -72,9 +66,12 @@ ht-degree: 11%
          強制；將會自動從標題衍生，但可以更新。
 
 
-5. 選擇 **Create**  (建立) 以完成操作，然後選擇 **Open** the fragment for editing (開啟片段以進行編輯) 或返回控制 **台完成**。
+1. 選擇 **Create**  (建立) 以完成操作，然後選擇 **Open** the fragment for editing (開啟片段以進行編輯) 或返回控制 **台完成**。
 
-## 內容片段{#actions-for-a-content-fragment}的動作
+   >[!NOTE]
+   >在控制台的&#x200B;**清單**&#x200B;模式中，您可以更新&#x200B;**查看設定**&#x200B;以啟用&#x200B;**內容片段模型**&#x200B;列。
+
+## 資產控制台{#actions-for-a-content-fragment-assets-console}中內容片段的動作
 
 在&#x200B;**Assets**&#x200B;主控台中，您的內容片段可使用一系列動作：
 
@@ -110,7 +107,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->其中許多是[ Assets](/help/assets/manage-digital-assets.md)和／或[AEM案頭應用程式](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)的標準動作。
+>其中許多是[ Assets](/help/assets/manage-digital-assets.md)和／或[AEM案頭應用程式](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)的標準動作。
 
 ## 開啟片段編輯器{#opening-the-fragment-editor}
 
@@ -125,7 +122,7 @@ ht-degree: 11%
 >若要編輯內容片段，您需要適當的權限。 如果您遇到問題，請與系統管理員聯繫。
 
 1. 使用&#x200B;**Assets**&#x200B;主控台瀏覽至內容片段的位置。
-2. 開啟片段以供編輯，方法為：
+1. 開啟片段以供編輯，方法為：
 
    * 按一下／點選片段連結（這取決於控制台檢視）。
    * 選擇片段，然後從工具欄中選擇&#x200B;**編輯**。
@@ -140,23 +137,49 @@ ht-degree: 11%
    >2. 使用&#x200B;**切換側面板**&#x200B;圖示可隱藏／顯示側面板。
 
 
-3. 使用側面板中的圖示，在三種模式中導覽：
-
-   * 變化：[編輯內容](#editing-the-content-of-your-fragment)和[管理變數](#creating-and-managing-variations-within-your-fragment)
-
-   * [註解](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-   * [相關聯的內容](#associating-content-with-your-fragment)
-   * [中繼資料](#viewing-and-editing-the-metadata-properties-of-your-fragment)
-   * [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   * [預覽](/help/assets/content-fragments/content-fragments-json-preview.md)
-
-   ![模式](assets/cfm-managing-04.png)
-
-4. 進行更改後，根據需要使用&#x200B;**Save**&#x200B;或&#x200B;**Cancel**。
+1. 進行更改後，根據需要使用&#x200B;**Save**&#x200B;或&#x200B;**Cancel**。
 
    >[!NOTE]
    >
    >「儲 **存** 」和「取 **消」都會退出編輯器——請參閱「**[](#save-cancel-and-versions) 儲存」、「取消」和「版本」，以取得有關這兩個選項如何對內容片段運作的完整資訊。
+
+## 內容片段編輯器{#modes-actions-content-fragment-editor}中的模式和動作
+
+「內容片段編輯器」提供多種模式和動作。
+
+### 內容片段編輯器{#modes-in-the-content-fragment-editor}中的模式
+
+使用側面板中的圖示，在各種模式中導覽：
+
+* 變化：[編輯內容](#editing-the-content-of-your-fragment)和[管理變數](#creating-and-managing-variations-within-your-fragment)
+
+* [註解](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [相關聯的內容](#associating-content-with-your-fragment)
+* [中繼資料](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [預覽](/help/assets/content-fragments/content-fragments-json-preview.md)
+
+![模式](assets/cfm-managing-04.png)
+
+### 內容片段編輯器{#toolbar-actions-in-the-content-fragment-editor}中的工具列動作
+
+頂端工具列中的某些功能可從多種模式使用：
+
+![模式](assets/cfm-managing-top-toolbar.png)
+
+* 在片段名稱下方，您可以看到用於建立當前片段的[內容片段模型](/help/assets/content-fragments/content-fragments-models.md)的名稱：
+
+   * 名稱也是一個將開啟模型編輯器的連結。
+
+* 查看碎片的狀態；例如，有關建立、修改或發佈時間的資訊。 狀態也會以色碼標示：
+
+   * 新增：灰色
+   * 草稿：藍色
+   * 已發佈：綠色
+   * 已修改：橘子
+   * 已停用：紅色
+
+* **[發](#publishing-and-referencing-a-fragment)** 布片段。
 
 ## 保存、取消和{#save-cancel-and-versions}版本
 
@@ -304,7 +327,8 @@ ht-degree: 11%
 
 必須發佈內容片段，才能在發佈環境中使用。 可發佈：
 
-* 建立後；從&#x200B;**Assets**&#x200B;主控台。
+* 建立後；使用「資產」控制台](#actions-for-a-content-fragment-assets-console)中可用的[動作。
+* 從[內容片段編輯器](#toolbar-actions-in-the-content-fragment-editor)。
 * 當您[發佈使用片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)的頁面時；片段將列在頁面參考中。
 
 >[!CAUTION]
