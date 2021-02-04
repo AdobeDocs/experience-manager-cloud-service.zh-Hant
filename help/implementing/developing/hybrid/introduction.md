@@ -2,17 +2,17 @@
 title: SPA簡介與逐步說明
 description: 本文介紹SPA的概念，並逐步說明如何使用基本的SPA應用程式來製作內容，並說明它與基礎的AEM SPA編輯器的關係。
 translation-type: tm+mt
-source-git-commit: e4b75913e8d2ec90efc97d79e3a272b146fc06d6
+source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
-source-wordcount: '1933'
-ht-degree: 0%
+source-wordcount: '1986'
+ht-degree: 1%
 
 ---
 
 
 # SPA簡介和逐步介紹{#spa-introduction}
 
-單頁應用程式(SPA)可為網站使用者提供引人入勝的體驗。 開發人員希望能夠使用SPA架構建立網站，而作者則想在AEM中順暢地編輯內容，以供使用此類架構建立的網站使用。
+單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能夠使用SPA架構建立網站，而作者則想在AEM中順暢地編輯內容，以供使用此類架構建立的網站使用。
 
 SPA Editor提供完整的解決方案，以支援AEM中的SPA。 本文逐步說明如何使用基本的SPA應用程式來製作內容，並說明它與基礎的AEM SPA編輯器有何關聯。
 
@@ -32,7 +32,7 @@ SPA Editor提供完整的解決方案，以支援AEM中的SPA。 本文逐步說
 
 >[!TIP]
 >
->任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
+>任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
 
 ### 什麼是SPA?{#what-is-a-spa}
 
@@ -67,7 +67,7 @@ SPA就像原生應用程式，不但對網頁的訪客，而且由於SPA的運�
 
 SPA的主要思想是減少對伺服器的呼叫和依賴，以將伺服器延遲所造成的延遲降至最低，讓SPA接近原生應用程式的回應速度。
 
-在傳統的循序網頁中，只會載入立即頁面所需的資料。 這表示當訪客移至另一個頁面時，會呼叫伺服器以取得其他資源。 當訪客與頁面上的元素互動時，可能需要額外的呼叫。 這些多次呼叫可能會延遲或延遲，因為頁面必須趕上訪客的要求。
+在傳統的循序網頁中，只會載入立即頁面所需的資料。 這表示當訪客移至另一個頁面時，會呼叫伺服器以取得其他資源。 當訪客與頁面上的元素互動時，可能需要額外的呼叫。 這些多次呼叫會產生延遲或延遲感，因為頁面必須趕上訪客的要求。
 
 ![循序體驗與流暢體驗](assets/spa-sequential-vs-fluid.png)
 
@@ -161,74 +161,8 @@ SPA會在第一次載入時載入訪客的所有必要資料，以提供更流�
 
 1. 使用瀏覽器的內建工具來檢視頁面來源。
 1. 請注意，來源的內容有限。
-
-   ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>WKND SPA React Home Page</title>
-   
-        <meta name="template" content="spa-page-template"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-   
-    <link rel="stylesheet" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-base.min.css" type="text/css">
-   
-    <meta name="theme-color" content="#000000"/>
-    <link rel="icon" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react/resources/favicon.ico"/>
-    <link rel="apple-touch-icon" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react/resources/logo192.png"/>
-    <link rel="manifest" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react/resources/manifest.json"/>
-   
-    <!-- AEM page model -->
-    <meta property="cq:pagemodel_root_url" content="/content/wknd-spa-react/us/en.model.json"/>
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Asar&display=swap" rel="stylesheet"/>
-    <meta property="cq:datatype" content="JSON"/>
-    <meta property="cq:wcmmode" content="edit"/>
-   
-    <link rel="stylesheet" href="/libs/cq/gui/components/authoring/editors/clientlibs/internal/page.min.css" type="text/css">
-    <link rel="stylesheet" href="/etc.clientlibs/wcm/foundation/clientlibs/main.min.css" type="text/css">
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/messaging.min.js"></script>
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/utils.min.js"></script>
-    <script type="text/javascript" src="/libs/granite/author/deviceemulator/clientlibs.min.js"></script>
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/page.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/wcm/foundation/clientlibs/main.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
-   
-    <!--cq{"decorated":false,"type":"cq/cloudconfig/components/scripttags/header","path":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-header","structurePath":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-header","selectors":null,"servlet":"Script /libs/cq/cloudconfig/components/scripttags/header/header.html","totalTime":2,"selfTime":2}-->
-   
-    <link rel="stylesheet" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react.min.css" type="text/css">
-   
-    </head>
-   
-    <body class="page basicpage">
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="spa-root"></div>
-   
-    <script type="text/javascript" src="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react.min.js"></script>
-   
-    <script type="text/javascript" src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-base.min.js"></script>
-   
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/pagemodel/messaging.min.js"></script>
-   
-    <link rel="stylesheet" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-author.min.css" type="text/css">
-   
-    <!--cq{"decorated":true,"type":"cq/cloudserviceconfigs/components/servicecomponents","path":"/content/wknd-spa-react/us/en/home/jcr:content/cloudservices","selectors":null,"servlet":"Script /libs/cq/cloudserviceconfigs/components/servicecomponents/servicecomponents.jsp","totalTime":2,"selfTime":2}-->
-   
-    <!--cq{"decorated":false,"type":"cq/cloudconfig/components/scripttags/footer","path":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-footer","structurePath":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-footer","selectors":null,"servlet":"Script /libs/cq/cloudconfig/components/scripttags/footer/footer.html","totalTime":2,"selfTime":2}-->
-   
-    </body>
-    </html>
-    <!--cq{"decorated":false,"type":"wknd-spa-react/components/page","path":"/content/wknd-spa-react/us/en/home/jcr:content","selectors":null,"servlet":"Script /apps/spa-project-core/components/page/page.html","totalTime":39,"selfTime":33}-->
-   ```
-
-   頁面的內文中沒有任何內容。 它主要由樣式表和對各種指令碼（如`clientlib-react.min.js`）的調用組成。
-
-   這些指令碼是此應用程式的主要驅動程式，負責轉譯所有內容。
+   * 頁面的內文中沒有任何內容。 它主要由樣式表和對各種指令碼（如`clientlib-react.min.js`）的調用組成。
+   * 這些指令碼是此應用程式的主要驅動程式，負責轉譯所有內容。
 
 1. 使用瀏覽器的內建工具來檢查頁面。 檢視已完全載入的DOM內容。
 
@@ -297,6 +231,14 @@ SPA會在第一次載入時載入訪客的所有必要資料，以提供更流�
    >此行為與AEM中伺服器端轉譯的頁面不同，其中每個可編輯元件都會插入`cq`元素。
    >
    >SPA編輯器中的此方法不需要插入自訂元素，只需額外的資料屬性，讓前端開發人員更容易進行標籤。
+
+## AEM {#headful-headless}中的Headful和Headless
+
+SPA可在AEM中提供有彈性的整合層級，包括在AEM外部開發和維護的SPA。 此外，SPA可在AEM中運用，同時也可使用AEM無端地將內容傳送至其他端點。
+
+>[!TIP]
+>
+>如需詳細資訊，請參閱AEM中的檔案[ Headful和Headless。](/help/implementing/developing/headful-headless.md)
 
 ## 後續步驟{#next-steps}
 
