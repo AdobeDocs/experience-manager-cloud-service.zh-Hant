@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
+source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 4%
+source-wordcount: '719'
+ht-degree: 3%
 
 ---
 
@@ -21,9 +21,13 @@ ht-degree: 4%
 
 ## [!DNL Adobe Experience Manager Sites] 雲端服務  {#sites}
 
+### 無頭內容管理{#headless}
+
 * **[內容片段傳送的GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**:能夠使用GraphQL語法查詢內容片段，並根據內容片段模型來結構，以便以JSON格式輸出。
 
 * **[GraphQL API請求的驗證支援](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**:能夠使用伺服器端API的存取Token來驗證GraphQL API請求。
+
+* [RemotePage元件](/help/implementing/developing/hybrid/remote-page.md) 支援使用在AEM中檢視和編輯外部SPA。
 
 * 從GraphQL API增強JSON輸出，包括以JSON格式和地區設定輸出豐富型文字的功能。
 
@@ -37,6 +41,9 @@ ht-degree: 4%
 
 * 可直接在內容片段編輯器中預覽JSON輸出。
 
+### 漸進式網頁應用程式(PWA){#pwa}
+
+* [現在，可透過簡單的設定，在專](/help/sites-cloud/authoring/features/enable-pwa.md)  案層級啟用網站的漸進式網頁應用程式(PWA)版本。
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
