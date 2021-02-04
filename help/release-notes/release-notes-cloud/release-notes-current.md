@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
+source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '745'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,9 @@ ht-degree: 3%
 
 * **[GraphQL API請求的驗證支援](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**:能夠使用伺服器端API的存取Token來驗證GraphQL API請求。
 
-* [RemotePage元件](/help/implementing/developing/hybrid/remote-page.md) 支援使用在AEM中檢視和編輯外部SPA。
+* **[RemotePage元件](/help/implementing/developing/hybrid/remote-page.md)**:新增支援使用在AEM中檢視和編輯外部SPA。
+
+* **[在AEM中編輯外部SPA](/help/implementing/developing/hybrid/editing-external-spa.md)**:新增將獨立單頁應用程式上傳至AEM例項、新增可編輯的內容區段，以及啟用編寫功能的能力。
 
 * 從GraphQL API增強JSON輸出，包括以JSON格式和地區設定輸出豐富型文字的功能。
 
