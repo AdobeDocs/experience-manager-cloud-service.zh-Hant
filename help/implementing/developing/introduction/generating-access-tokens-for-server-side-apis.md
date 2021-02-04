@@ -2,9 +2,9 @@
 title: 產生伺服器端API的存取Token
 description: 瞭解如何透過產生安全的JWT Token，以促進協力廠商伺服器與AEM之間的雲端服務通訊
 translation-type: tm+mt
-source-git-commit: a29eda3347502a3a498c2f40ed2e46cda59b2a24
+source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 簡介 {#introduction}
 
->[!IMPORTANT]
->
->此功能尚未提供。 如需功能的最新清單，請參閱[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
-
 有些架構依賴於從AEM基礎架構以外伺服器上裝載的應用程式，以雲端服務的形式呼叫AEM。 例如，呼叫伺服器的行動應用程式，接著會以雲端服務的形式向AEM提出API要求。
 
 伺服器對伺服器的流程說明如下，以及簡化的開發流程。 AEM(Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console))可用來產生驗證程式所需的Token。
+
+>[!NOTE]
+>
+>除了本檔案外，您也可以參閱有關[Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)的教學課程。
 
 ## 伺服器到伺服器流{#the-server-to-server-flow}
 
