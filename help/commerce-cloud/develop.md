@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 6be2ed60f4e672b99a85b55f833b8ae2f1b952b0
+source-git-commit: 9d8d7c3c8c1ac3cb843ce74b3ccdb6904bbfaa05
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '967'
 ht-degree: 7%
 
 ---
@@ -83,9 +83,9 @@ CIF附加元件可從[軟體散發入口網站](https://experience.adobe.com/#/d
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
    ```
 
-   此變數也必須設定為AEM的雲端服務環境。
+   AEM會使用此變數來連線至您的商務系統。 此外，CIF附加元件還包括本地反向代理，使Magento GraphQL端點在本地可用。 CIF製作工具（產品主控台和挑選器）和CIF用戶端元件直接呼叫GraphQL時，都會使用這個工具。
 
-   如需變數的詳細資訊，請參閱[將AEM的OSGi設定為雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)。
+   此變數也必須設定為AEM的雲端服務環境。 如需變數的詳細資訊，請參閱[將AEM的OSGi設定為雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)。
 
 1. （可選）若要啟用分段目錄功能，您必須為Magento例項建立整合Token。 請依照[快速入門](./getting-started.md#staging)中的步驟建立Token。
 
@@ -98,35 +98,6 @@ CIF附加元件可從[軟體散發入口網站](https://experience.adobe.com/#/d
    如需有關機密的詳細資訊，請參閱[將AEM的OSGi設定為雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)。
 
 1. 以雲端服務SDK形式啟動AEM
-
-1. 啟動本地GraphQL代理伺服器
-
-   要使Magento GraphQL端點在本地可用於CIF附加元件和CIF元件，請使用以下命令。 GraphQL端點隨後將可在`http://localhost:3002/graphql`上使用。
-範例Mac OSX:
-
-   ```bash
-   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial ''
-   ```
-
-   示例Windows:
-
-   ```bash
-   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
-   ```
-
-   引數`--proxyPartial`需要接收空字串。
-
-   通過將GraphQL查詢工具指向`http://localhost:3002/graphql`並測試一些查詢，可以測試本地GraphQL代理。
-
-1. 登入AEM SDK並設定CIF以使用本機GraphQL代理伺服器。
-
-   導覽至CIF雲端服務設定（工具>雲端服務> CIF設定）。 開啟專案所用組態的屬性檢視。
-
-   對於`GraphQL Proxy Path`屬性，請使用本地代理伺服器端點`http://localhost:3002/graphql`。 儲存設定。
-
->[!NOTE]
->
->不要將步驟8的配置推送到項目回購中。 此設定僅是本端開發設定的必要項。 AEM作為雲端服務環境已在上線期間與GraphQL Proxy一起設定。
 
 通過OSGI控制台驗證設定： `http://localhost:4502/system/console/osgi-installer`。 清單中應包含CIF附加元件相關的組合、內容封裝和OSGI組態，如特徵模型檔中所定義。
 
@@ -198,6 +169,6 @@ CIF核心元件可通過包括提供的`all`包或單獨使用CIF內容包和相
 
 ## 其他資源
 
-- [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
+- [AEM 專案原型](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [軟體散發入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
