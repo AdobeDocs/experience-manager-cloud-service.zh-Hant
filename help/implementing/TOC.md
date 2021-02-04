@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service 實作
 breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 translation-type: tm+mt
-source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
+source-git-commit: e59f3d09a6e7a6007e25e088feb86c25be994bed
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 45%
+source-wordcount: '724'
+ht-degree: 44%
 
 ---
 
@@ -69,6 +69,7 @@ ht-degree: 45%
    + [AEM技術基礎](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [產生伺服器端API的存取Token](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + [AEM中的Headful和Headless](developing/headful-headless.md)
    + 完整堆疊AEM開發{#full-stack}
       + [開始開發 AEM Sites - WKND 教學課程](developing/introduction/develop-wknd-tutorial.md)
       + [AEM UI的結構](developing/introduction/ui-structure.md)
@@ -102,7 +103,6 @@ ht-degree: 45%
       + [Java API准則](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Hybrid AEM Development {#hybrid}
       + [Hybrid與SPA搭配AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-      + [為元件啟用JSON匯出](developing/components/enabling-json-exporter.md)
       + [SPA簡介與逐步說明](developing/hybrid/introduction.md)
       + [SPA WKND教學課程](developing/hybrid/wknd-tutorial.md)
       + [開始使用React](developing/hybrid/getting-started-react.md)
@@ -114,8 +114,11 @@ ht-degree: 45%
       + [SPA頁面元件](developing/hybrid/page-component.md)
       + [動態模型到元件映射](developing/hybrid/model-to-component-mapping.md)
       + [型號路由](developing/hybrid/routing.md)
-      + [啟動整合](developing/hybrid/launch-integration.md)
+      + [RemotePage元件](developing/hybrid/remote-page.md)
+      + [在AEM中編輯外部SPA](developing/hybrid/editing-external-spa.md)
       + [伺服器端演算](developing/hybrid/ssr.md)
+      + [為元件啟用JSON匯出](developing/components/enabling-json-exporter.md)
+      + [啟動整合](developing/hybrid/launch-integration.md)
       + [SPA參考檔案](developing/hybrid/reference-materials.md)
    + 無頭式體驗管理 {#headless}
       + [無頭與AEM](developing/headless/introduction.md)
