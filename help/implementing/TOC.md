@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service 實作
 breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 translation-type: tm+mt
-source-git-commit: e59f3d09a6e7a6007e25e088feb86c25be994bed
+source-git-commit: 769b45e2546b06edba24c5cd33ad3e4547b3b54c
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 44%
+source-wordcount: '869'
+ht-degree: 36%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 44%
          + [元件概觀](developing/components/overview.md)
          + [範本](developing/components/templates.md)
          + [核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
-         + [樣式系統](/help/sites-cloud/authoring/features/style-system.md)
+         + [樣式系統](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
          + [內容服務的JSON匯出器](developing/components/json-exporter.md)
          + [為元件啟用JSON匯出](developing/components/enabling-json-exporter.md)
          + [影像編輯器](developing/components/image-editor.md)
@@ -103,6 +103,7 @@ ht-degree: 44%
       + [Java API准則](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Hybrid AEM Development {#hybrid}
       + [Hybrid與SPA搭配AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [SPA簡介與逐步說明](developing/hybrid/introduction.md)
       + [SPA WKND教學課程](developing/hybrid/wknd-tutorial.md)
       + [開始使用React](developing/hybrid/getting-started-react.md)
@@ -117,7 +118,7 @@ ht-degree: 44%
       + [RemotePage元件](developing/hybrid/remote-page.md)
       + [在AEM中編輯外部SPA](developing/hybrid/editing-external-spa.md)
       + [伺服器端演算](developing/hybrid/ssr.md)
-      + [為元件啟用JSON匯出](developing/components/enabling-json-exporter.md)
+      + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [啟動整合](developing/hybrid/launch-integration.md)
       + [SPA參考檔案](developing/hybrid/reference-materials.md)
    + 無頭式體驗管理 {#headless}
@@ -129,22 +130,22 @@ ht-degree: 44%
          + [建立內容片段](developing/headless/getting-started/create-content-fragment.md)
          + [存取和傳送內容片段](developing/headless/getting-started/create-api-request.md)
       + 內容片段 {#content-fragments}
-         + [使用內容片段和GraphQL進行無頭傳送](/help/assets/content-fragments/content-fragments-graphql.md)
-         + [使用內容片段](/help/assets/content-fragments/content-fragments.md)
-         + [為實例啟用內容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-         + [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
-         + [管理內容片段](/help/assets/content-fragments/content-fragments-managing.md)
-         + [變化 - 編寫片段內容](/help/assets/content-fragments/content-fragments-variations.md)
-         + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
-         + [使用關聯的內容](/help/assets/content-fragments/content-fragments-assoc-content.md)
-         + [中繼資料 - 片段屬性](/help/assets/content-fragments/content-fragments-metadata.md)
-         + [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
-         + [預覽- JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
+         + [使用內容片段和GraphQL進行無頭傳送](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
+         + [使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+         + [為實例啟用內容片段功能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html)
+         + [內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
+         + [管理內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
+         + [變化 - 編寫片段內容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
+         + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
+         + [使用關聯的內容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
+         + [中繼資料 - 片段屬性](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
+         + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
+         + [預覽- JSON表示法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
       + 傳送API {#delivery-api}
-         + [內容片段REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
-         + [內容片段GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
-         + [內容片段的遠端AEM GraphQL查詢驗證](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
-         + [含內容片段的AEM GraphQL API —— 範例內容與查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+         + [內容片段REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+         + [內容片段GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
+         + [含內容片段的AEM GraphQL API —— 範例內容與查詢](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
+         + [內容片段的遠端AEM GraphQL查詢驗證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/graphql-authentication-content-fragments.md)
 + 開發人員工具 {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
@@ -160,7 +161,7 @@ ht-degree: 44%
    + [擴充ContextHub](developing/personalization/extending-contexthub.md)
    + [ContextHub API](developing/personalization/contexthub-api.md)
    + [整合 Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
-   + [使用ContextHub設定區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+   + [使用ContextHub設定區段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
 + 設定和擴充 AEM as a Cloud Service {#configuring-and-extending}
    + [擴充體驗片段](developing/extending/experience-fragments.md)
    + [自訂和擴充內容片段](developing/extending/content-fragments-customizing.md)
