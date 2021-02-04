@@ -2,9 +2,9 @@
 title: AEM Sites雲端服務的無頭開發
 description: AEM是雲端服務，可讓您透過內容模型、內容片段和GraphQL API等強大功能集中管理體驗，並跨通道提供。
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '573'
 ht-degree: 1%
 
 ---
@@ -21,6 +21,14 @@ AEM是雲端服務，可讓您透過內容模型、內容片段和GraphQL API等
 無頭實作會與完整堆疊和混合解決方案中的傳統方式一樣，將頁面和元件管理轉換為無頭實作，並著重於建立不受通道限制、可重複使用的內容片段及其跨通道傳送。 它是一種現代化的動態開發模式，可用來建置網頁體驗。
 
 ![AEM實作模型](assets/aem-implementation-models.png)
+
+## 比較Headful和Headless {#headful-headless}
+
+本檔案著重於AEM的全無頭實作模型。 不過，在AEM中，無頭與無頭不一定是二進位選擇。 無頭功能可用來管理內容並將內容傳送至多種端點，同時讓內容作者編輯單頁應用程式。 全都在AEM中。
+
+>[!TIP]
+>
+>如需詳細資訊，請參閱AEM中的檔案[ Headful和Headless。](/help/implementing/developing/headful-headless.md)
 
 ## AEM：雲端服務與無頭{#aem-headless}
 
