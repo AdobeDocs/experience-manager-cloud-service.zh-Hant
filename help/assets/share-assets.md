@@ -3,9 +3,9 @@ title: 將資產、檔案夾和系列共用為連結
 description: 本文說明如何將 [!DNL Experience Manager Assets] 內的資產、檔案夾和系列共用為超連結。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 >[!NOTE]
 >
 >* 您需要對要作為連結共用的資料夾或資產的編輯ACL權限。
->* 在您與使用者共用連結之前，請確定已設定Day CQ Mail Service。 否則，會發生錯誤。
+>* 在與用戶共用連結之前，請確保[出站電子郵件已啟用](/help/implementing/developing/introduction/development-guidelines.md#sending-email)。 否則，會發生錯誤。
 
 
 1. 在[!DNL Assets]使用者介面中，選取要以連結形式共用的資產。
@@ -113,7 +113,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 行銷人員和業務線使用者可以使用、
 
-* **Experience Manager案頭應用程式**:應用程式可在Windows和Mac上運作。請參閱[案頭應用程式概觀](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參閱[瀏覽、搜尋和預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立資產，並與AEM使用者的對應人員共用資產，例如上傳新影像。 請參閱「使用案頭應用程式[上傳資產」。](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)
+* **Experience Manager案頭應用程式**:應用程式可在Windows和Mac上運作。請參閱[案頭應用程式概觀](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參閱[瀏覽、搜尋和預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭使用者可以建立資產，並與AEM使用者的對應人員共用資產，例如上傳新影像。 請參閱「使用案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)上傳資產」。[
 
 * **Adobe Asset Link**:創意專業人員可直接在內部、內部和內部搜尋 [!DNL Adobe InDesign]及使 [!DNL Adobe Illustrator]用資產 [!DNL Adobe Photoshop]。
 
