@@ -3,10 +3,10 @@ title: 增強型智慧標記
 description: 使用 Adobe Sensei 的 AI 和 ML 服務套用關聯式和描述性商業標記，以提升探索資產和處理內容的速度。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 97%
+source-wordcount: '1040'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->預設情況下，新的[!DNL Experience Manager Assets]部署與[!DNL Adobe Developer Console]整合。 它可協助您更快速地設定智慧標籤功能。 在現有的部署中，管理員會依照下列步驟來設定整合。
+>[!DNL Experience Manager Assets] 在2020年8月發行 [後建立的部](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) 署預設會與 [!DNL Adobe Developer Console] 整合。它可協助您更快速地設定智慧標籤功能。 在舊版部署中，管理員可依照下列步驟來設定整合。
 
 ## 使用 Adobe 開發人員控制台進行整合 {#aio-integration}
 
@@ -109,7 +109,7 @@ ht-degree: 97%
 
 1. 存取 [https://console.adobe.io](https://console.adobe.io)，並導覽至專案中的現有服務。上傳新憑證並進行設定。如需設定的詳細資訊，請參閱[建立 Adobe 開發人員控制台整合](#create-aio-integration)中的指示。
 
-## 為新上傳的資產啟用智慧標記 (選用) {#enable-smart-tagging-for-uploaded-assets}
+## 在資產上傳時啟用自動標籤（可選）{#enable-smart-tagging-for-uploaded-assets}
 
 1. 在 [!DNL Experience Manager] 中，移至&#x200B;**[!UICONTROL 「工具 > 工作流程 > 模型」]**。
 1. 在「 **[!UICONTROL 工作流模型]** 」頁面上，選擇「**[!UICONTROL DAM 更新資產]** 」工作流模型。
