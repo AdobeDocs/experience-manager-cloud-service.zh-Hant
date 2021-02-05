@@ -2,9 +2,9 @@
 title: 智慧標籤您的視訊資產
 description: Experience Manager會使用 [!DNL Adobe Sensei]自動將內容相關和描述性的智慧型標籤新增至影片。
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 對新內容的需求日益增長，需要減少人工操作，以便迅速提供吸引人的數位體驗。 [!DNL Adobe Experience Manager] 支援 [!DNL Cloud Service] 使用人工智慧自動標籤視訊資產。手動標籤視訊會很耗時。 不過，[!DNL Adobe Sensei]支援的視訊智慧標籤功能使用人工智慧模型來分析視訊內容，並新增標籤至視訊資產。 如此可縮短DAM使用者為其客戶提供多樣化體驗的時間。 Adobe的機器學習服務會為視訊產生兩組標籤。 而其中一組則對應該視訊中的物件、場景和屬性；另一組則涉及飲酒、跑步和慢跑等動作。
 
-視訊上傳後或觸發重新處理時，視訊資產的自動標籤會做為標準資產處理（以及縮圖建立和中繼資料擷取）。 智慧型標籤在資產[!UICONTROL 屬性]中以其[信賴分數](#confidence-score-video-tag)的遞減順序顯示。 在[!DNL Adobe Experience Manager]中，視訊標籤預設為[!DNL Cloud Service]。 不過，您可以在資料夾上[選擇退出視訊智慧標籤](#opt-out-video-smart-tagging)。
+在[!DNL Adobe Experience Manager]中，視訊標籤預設為[!DNL Cloud Service]。 不過，您可以在資料夾上[選擇退出視訊智慧標籤](#opt-out-video-smart-tagging)。 當您上傳新視訊或重新處理現有視訊時，視訊會自動加上標籤。 [!DNL Experience Manager] 此外，還會建立視訊檔案的縮圖並擷取中繼資料。智慧型標籤在資產[!UICONTROL 屬性]中以其[信賴分數](#confidence-score-video-tag)的遞減順序顯示。
 
 ## 上傳{#smart-tag-assets-on-ingestion}時智慧標籤影片
 
