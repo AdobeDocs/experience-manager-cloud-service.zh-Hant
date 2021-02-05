@@ -3,9 +3,9 @@ title: 使用AI產生的標籤自動標籤資產
 description: 使用人工智慧服務來標籤資產，使用 [!DNL Adobe Sensei] 服務套用情境式和描述性商業標籤。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: c7befef579ca6f722ca630102c875bfb7651c131
 workflow-type: tm+mt
-source-wordcount: '2799'
+source-wordcount: '2807'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 * **影像**:使用Adobe Sensei的智慧型內容服務來標籤許多格式的影像。您[建立訓練模型](#train-model)，然後[將智慧標籤](#tag-assets)套用至影像。
 * **視訊資產**:視訊標籤預設會以 [!DNL Adobe Experience Manager] a的形式啟用 [!DNL Cloud Service]。[當您上傳新視訊](/help/assets/smart-tags-video-assets.md) 或重新處理現有視訊時，視訊會自動標籤。
-* **文字型資產**: [!DNL Experience Manager Assets] 在上傳時自動標籤支援的文字型資產。
+* **文字型資產**: [!DNL Experience Manager Assets] 在上傳時自動標籤支援的文字型資產。進一步瞭解[智慧標籤文字資產](#smart-tag-text-based-assets)。
 
 ## 支援的資產類型{#smart-tags-supported-file-formats}
 
