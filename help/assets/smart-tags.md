@@ -3,15 +3,15 @@ title: 使用AI產生的標籤自動標籤資產
 description: 使用人工智慧服務來標籤資產，使用 [!DNL Adobe Sensei] 服務套用情境式和描述性商業標籤。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '2557'
+source-wordcount: '2799'
 ht-degree: 6%
 
 ---
 
 
-# 將智慧標籤新增至資產，以加快搜尋速度{#smart-tag-assets-for-faster-search}
+# 將智慧標籤新增至資產以改善搜尋體驗{#smart-tag-assets-for-faster-search}
 
 處理數位資產的組織越來越多地在資產中繼資料中使用分類控制辭彙。 基本上，它包含員工、合作夥伴和客戶常用來參考及搜尋其數位資產的關鍵字清單。 使用分類控制的辭彙來標籤資產，可確保在搜尋中輕鬆識別和擷取資產。
 
@@ -23,25 +23,31 @@ ht-degree: 6%
 ![flowchart](assets/flowchart.gif) 
 -->
 
+您可以標籤下列資產類型：
+
+* **影像**:使用Adobe Sensei的智慧型內容服務來標籤許多格式的影像。您[建立訓練模型](#train-model)，然後[將智慧標籤](#tag-assets)套用至影像。
+* **視訊資產**:視訊標籤預設會以 [!DNL Adobe Experience Manager] a的形式啟用 [!DNL Cloud Service]。[當您上傳新視訊](/help/assets/smart-tags-video-assets.md) 或重新處理現有視訊時，視訊會自動標籤。
+* **文字型資產**: [!DNL Experience Manager Assets] 在上傳時自動標籤支援的文字型資產。
+
 ## 支援的資產類型{#smart-tags-supported-file-formats}
 
-智慧型標籤僅套用至那些支援的檔案類型，這些檔案類型會產生JPG和PNG格式的轉譯。 下列資產類型支援此功能：
+智慧型標籤會套用至支援的檔案類型，這些檔案類型會產生JPG和PNG格式的轉譯。 下列資產類型支援此功能：
 
 | 影像（MIME類型） | 文字型資產（檔案格式） | 視訊資產（檔案格式和轉碼器） |
 |----|-----|------|
-| image/jpeg | TXT | MP4(H264/AVC) |
-| image/tiff | RTF | MKV(H264/AVC) |
-| image/png | DITA | MOV(H264/AVC, Motion JPEG) |
-| image/bmp | XML | AVI(indeo4) |
+| image/jpeg | CSV | MP4(H264/AVC) |
+| image/tiff | DOC | MKV(H264/AVC) |
+| image/png | DOCX | MOV(H264/AVC, Motion JPEG) |
+| image/bmp | HTML | AVI(indeo4) |
 | image/gif | JSON | FLV(H264/AVC, vp6f) |
-| image/pjpeg | DOC | WMV(WMV2) |
-| image/x-portable-anymap | DOCX |  |
-| image/x-portable-bitmap | PDF |  |
-| image/x-portable-graymap | CSV |  |
-| image/x-portable-pixmap | PPT |  |
-| 影像/x-rgb | PPTX |  |
+| image/pjpeg | PDF | WMV(WMV2) |
+| image/x-portable-anymap | PPT |  |
+| image/x-portable-bitmap | PPTX |  |
+| image/x-portable-graymap | RTF |  |
+| image/x-portable-pixmap | SRT |  |
+| 影像/x-rgb | TXT |  |
 | image/x-xbitmap | VTT |  |
-| image/x-xpixmap | SRT |  |
+| image/x-xpixmap | XML |  |
 | image/x-icon |  |  |
 | 影像/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -62,6 +68,12 @@ ht-degree: 6%
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
+## 智慧標籤文字型資產{#smart-tag-text-based-assets}
+
+上傳時，支援的文字型資產會由[!DNL Experience Manager Assets]自動標籤。 預設會啟用。 智慧型標籤的效能不取決於資產中的文字數量，而取決於資產文字中顯示的相關關鍵字或實體。 對於文字型資產，智慧型標籤是顯示在文字中的關鍵字，但是最能說明資產的關鍵字。 對於受支援的資產，[!DNL Experience Manager]已擷取文字，接著會建立索引並用來搜尋資產。 不過，文字中以關鍵字為基礎的智慧型標籤提供專用、結構化和較高優先順序的搜尋Facet，與完整搜尋索引相比，可用來改善資產搜尋。
+
+相較之下，對於影像和視訊，智慧型標籤是根據某些視覺方面衍生而來。
+
 ## 將[!DNL Experience Manager]與Adobe Developer Console {#integrate-aem-with-aio}整合
 
 >[!IMPORTANT]
@@ -72,12 +84,7 @@ ht-degree: 6%
 
 ## 瞭解標籤模型和准則{#understand-tag-models-guidelines}
 
-標籤模型是一組相關標籤，由影像的視覺方面所組成。 例如，鞋類系列可以有不同的標籤，但所有標籤都與鞋類相關，且可屬於相同的標籤模型。 標籤只能與影像截然不同的視覺層面相關。 若要瞭解[!DNL Experience Manager]中訓練模型的內容呈現，請將訓練模型視為頂層實體，由一組手動新增的標籤和每個標籤的範例影像組成。 每個標籤都可以排他性地套用至影像。
-
-無法實際處理的標籤與：
-
-* 非視覺化、抽象的方面，例如由影像所誘發的產品的年份或發佈季節、情緒或情緒。
-* 產品（例如襯衫、襯衫、襯衫和襯衫）中嵌入有領結或無領結的小型產品標誌的細微視覺差異。
+標籤模型是一組相關標籤，這些標籤與要標籤的影像的各種視覺方面相關聯。 標籤與影像的視覺方面有明顯不同的關係，因此套用標籤時，標籤有助於搜尋特定類型的影像。 例如，鞋類系列可以有不同的標籤，但所有標籤都與鞋類相關，且可屬於相同的標籤模型。 套用時，標籤會協助您尋找不同類型的鞋，例如依顏色、依設計或依使用情形。 若要瞭解[!DNL Experience Manager]中訓練模型的內容呈現，請將訓練模型視為頂層實體，由一組手動新增的標籤和每個標籤的範例影像組成。 每個標籤都可以排他性地套用至影像。
 
 在您建立標籤模型並訓練服務之前，請先識別一組最能說明業務情境中影像物件的獨特標籤。 確定您所策劃的資產符合[訓練方針](#training-guidelines)。
 
@@ -189,9 +196,7 @@ ht-degree: 6%
 
 ### 標籤已上傳的資產{#tag-uploaded-assets}
 
-Experience Manager可自動標籤使用者上傳至DAM的資產。 為此，管理員會設定工作流程，以新增可用步驟至智慧標籤資產。 請參閱[如何為已上傳的資產啟用智慧標籤](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)。
-
-<!-- TBD: Text-based assets are automatically smart tagged. -->
+[!DNL Experience Manager] 可自動標籤使用者上傳至DAM的資產。為此，管理員會設定工作流程，以新增可用步驟至智慧標籤資產。 請參閱[如何為已上傳的資產啟用智慧標籤](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)。
 
 ## 管理智慧標籤和資產搜尋{#manage-smart-tags-and-searches}
 
@@ -231,17 +236,21 @@ Experience Manager可自動標籤使用者上傳至DAM的資產。 為此，管�
 1. 與智慧型標籤中`woman running`的相符項目。
 1. 在智慧型標籤中符合`woman`或`running`。
 
-### 標籤限制{#limitations}
+## 標籤限制和最佳做法{#limitations}
 
-增強的智慧型標籤是以品牌影像及其標籤的學習模型為基礎。 這些模型在識別標籤時並不總是十分完美。 智慧標籤的目前版本有下列限制：
+增強的智慧型標籤是以學習影像模型及其標籤為基礎。 這些模型在識別標籤時並不總是十分完美。 智慧標籤的目前版本有下列限制：
 
 * 無法辨識影像的細微差異。 例如，修身與普通襯衫。
 * 無法根據影像的微小圖樣／部分來識別標籤。 例如，T恤上的標誌。
-* Experience Manager支援的語言支援標籤。 如需語言清單，請參閱[智慧型內容服務發行說明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)。
+* [!DNL Experience Manager]支援的語言支援標籤。 如需語言清單，請參閱[智慧型內容服務發行說明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)。
+* 未實際處理的標籤與：
+
+   * 非視覺化、抽象化方面，例如產品的發佈年份或季節、影像所誘發的情緒或情緒、影片的主觀內涵等。
+   * 產品（例如襯衫、襯衫、襯衫和襯衫）中嵌入有領結或無領結的小型產品標誌的細微視覺差異。
 
 <!-- TBD: Add limitations related to text-based assets. -->
 
-若要使用智慧型標籤（一般或增強功能）搜尋資產，請使用資產搜尋（全文搜尋）。 智慧型標籤沒有個別的搜尋述詞。
+若要使用智慧型標籤（一般或增強功能）搜尋資產，請使用[!DNL Assets] Omnisearch（全文搜尋）。 智慧型標籤沒有個別的搜尋述詞。
 
 >[!NOTE]
 >
