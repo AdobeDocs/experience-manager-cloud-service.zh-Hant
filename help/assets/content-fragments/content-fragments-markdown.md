@@ -2,9 +2,9 @@
 title: Markdown
 description: 當您製作內容時，內容片段編輯器會使用標籤語法，讓您輕鬆編寫內容。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 2ab82c18fedd5e49a9aa1bcb0a774f55327d9b56
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 4%
 
 ---
@@ -188,7 +188,7 @@ ht-degree: 4%
 
     `\ backslash`
 
-    「回轉」
+    `` ` backtick``
 
     `* asterisk`
 
