@@ -3,10 +3,10 @@ title: 建立並管理多種語言的數位資產
 description: 瞭解如何將資產（包括二進位檔、中繼資料和標籤）轉譯為多種語言的工作流程自動化。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f85dea62ba334fd5b3a7cc45fbf09556cbfdd2ec
+source-git-commit: 100171693837dcdcef0efeab8d61b567114c5ef0
 workflow-type: tm+mt
-source-wordcount: '2608'
-ht-degree: 22%
+source-wordcount: '2587'
+ht-degree: 23%
 
 ---
 
@@ -160,7 +160,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 1. 從「資產」使用者介面中，選取您新增資產檔案夾的來源檔案夾。
 1. 開啟「參 **[!UICONTROL 考」窗格]**，然後按一下/點選「復本」下的「語言復本 ******** 」，以顯示語言復本清單。
 1. 在「語言副本」之前選 **[!UICONTROL 取核取方塊]**，以選取所有語言副本。取消選擇與要翻譯的語言環境相對應的語言副本 (副本) 以外的其他副本。
-1. 按一下／點選底部的「更新語言副本&#x200B;**[!UICONTROL 」。]**
+1. 按一下／點選底部的「更新語言副本&#x200B;]**」。**[!UICONTROL 
 1. 從&#x200B;**[!UICONTROL Project]**&#x200B;清單中，選擇&#x200B;**[!UICONTROL 添加到現有翻譯項目]**。
 1. 從&#x200B;**[!UICONTROL 現有翻譯項目]**&#x200B;清單中，選擇一個項目以添加要翻譯的資產。
 1. 按一下/點選「 **[!UICONTROL 開始]**」。
@@ -186,7 +186,10 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 1. 導覽至「資產」主控台，並開啟每個已轉換資產的「屬性」頁面，以檢視已轉換的中繼資料。
 
-如需如何有效轉譯資產中繼資料的秘訣，請參閱[5有效轉譯中繼資料的步驟](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)。
+<!-- TBD: Possibly this blog wasn't migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
+
+For tips on translating metadata for assets efficiently, see [5 Steps to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/). 
+-->
 
 ## 建立翻譯項目{#creating-translation-projects}
 
