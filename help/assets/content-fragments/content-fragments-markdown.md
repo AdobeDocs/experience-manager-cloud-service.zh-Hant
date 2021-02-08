@@ -2,7 +2,7 @@
 title: Markdown
 description: 當您製作內容時，內容片段編輯器會使用標籤語法，讓您輕鬆編寫內容。
 translation-type: tm+mt
-source-git-commit: 2ab82c18fedd5e49a9aa1bcb0a774f55327d9b56
+source-git-commit: 05e2ccd53749fe7b0ac516688a1d205d46fc3492
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 4%
@@ -186,24 +186,24 @@ ht-degree: 4%
 
 反斜線轉義可用於以下字元：
 
-    `\ backslash`
+    ` \ backslash`
 
     `` ` backtick``
 
-    `* asterisk`
+    ` * asterisk`
 
-    `_ underscore`
+    ` _ underscore`
 
-    `{} curly braces`
+    ` {} curly braces`
 
-    `[] square brackets`
+    ` [] square brackets`
 
-    `() parentheses`
+    ` () parentheses`
 
-    `# hash mark`
+    ` # hash mark`
 
-    `+ plus sign`
+    ` + plus sign`
 
-    `- minus sign (hyphen)`
+    ` - minus sign (hyphen)`
 
-    `. dot`
+    ` . dot`
