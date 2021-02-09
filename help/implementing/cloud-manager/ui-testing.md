@@ -2,9 +2,9 @@
 title: UI測試——雲端服務
 description: UI測試——雲端服務
 translation-type: tm+mt
-source-git-commit: bf3fb5178bc2ae72e19ecc1de82b08fac5089ecf
+source-git-commit: ea0c9675ca03b1d247c7e5fd13e03072fb4a13ae
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -12,12 +12,11 @@ ht-degree: 0%
 
 # UI測試{#ui-testing}
 
->[!CAUTION]
->
->此功能目前尚未公開提供。
-
-
 UI測試是以Selenium為基礎的測試，封裝在Docker影像中，以允許在語言和架構（例如Java和Maven、Node和WebDriver.io，或任何以Selenium為基礎的其他架構和技術）中有廣泛選擇。 Docker映像可以使用標準工具建立，但在執行時必須遵守某些約定。 運行Docker映像時，會自動設定Selenium伺服器。 下列說明的執行時期慣例可讓您的測試程式碼同時存取Selenium伺服器和測試中的AEM例項。
+
+>[!NOTE]
+> 2021年2月10日之前建立的階段和生產管道需要更新，才能使用本頁所述的UI測試。
+> 有關管線配置的資訊，請參見[配置CI-CD管線](/help/implementing/cloud-manager/configure-pipeline.md)。
 
 ## 建立UI測試{#building-ui-tests}
 
