@@ -2,10 +2,10 @@
 title: 在多個網站中使用目標內容
 description: 如果您需要管理目標內容，例如網站間的活動、體驗和優惠，您可以運用AEM針對目標內容的內建多網站支援
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
 workflow-type: tm+mt
-source-wordcount: '2900'
-ht-degree: 5%
+source-wordcount: '2915'
+ht-degree: 4%
 
 ---
 
@@ -189,9 +189,9 @@ ht-degree: 5%
 
 1. 在&#x200B;**轉出配置**&#x200B;下拉菜單中，選擇適當的配置。
 
-   如需每個選項的說明，請參閱安裝的轉出設定。<!--See [Installed Rollout Configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) for descriptions of each option.-->
+   有關每個選項的說明，請參見[安裝的轉出配置](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations)。
 
-   如需即時副本的詳細資訊，請參閱建立和同步即時副本。<!--See [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md) for more information on live copies.-->
+   如需即時副本的詳細資訊，請參閱[建立和同步即時副本](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html)。
 
    >[!NOTE]
    >
