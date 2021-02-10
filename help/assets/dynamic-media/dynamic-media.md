@@ -2,9 +2,9 @@
 title: 使用 Dynamic Media
 description: 瞭解如何使用動態媒體來提供資產，以便在網頁、行動裝置和社交網站上使用。
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '395'
 ht-degree: 7%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 7%
 
 動態媒體提供互動式檢視體驗，包括縮放、360度旋轉和視訊。 動態媒體獨一無二地整合了Adobe Experience Manager數位資產管理(Assets)解決方案的工作流程，以簡化數位宣傳管理流程。
 
->[!NOTE]
+<!-- >[!NOTE]
 >
->[使用Adobe Experience Manager和Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)提供社群文章。
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
 ## Dynamic Media {#what-you-can-do-with-dynamic-media}的功能
 
