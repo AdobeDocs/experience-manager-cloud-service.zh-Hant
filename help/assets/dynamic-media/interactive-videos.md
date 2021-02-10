@@ -2,10 +2,10 @@
 title: 互動影片
 description: 瞭解如何在動態媒體中處理互動式視訊和可購買視訊。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '6016'
-ht-degree: 4%
+source-wordcount: '6017'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 * 按一下縮圖以暫停影片並開啟產品的快速檢視。 例如，按一下影片中的KitchenAid縮圖影像，即可體驗混音器的360度旋轉檢視，或放大以檢視混音器詳細資訊。
 
-另請參閱[搭配使用互動式視訊與動態媒體](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+另請參閱[搭配使用互動式視訊與動態媒體](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
 
 <!-- 
 
@@ -43,7 +43,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 >[!NOTE]
 >
->如果您建立互動式視訊，以在使用者按一下縮圖影像時啟動網頁，有些裝置會封鎖快顯網頁。 在這種情況下，您必須變更裝置上的快顯封鎖程式設定。 例如，在Apple iPhone 6上，點選「設定> Safari >封鎖快顯視窗&#x200B;**[!UICONTROL 」，然後將控制項滑入「]**&#x200B;關閉&#x200B;**[!UICONTROL 」。]**&#x200B;現在，當您播放互動式視訊並按一下縮圖時，如果您要開啟快顯視窗，就會出現提示。 如果您接受，則會開啟網頁。
+>如果您建立互動式視訊，以在使用者按一下縮圖影像時啟動網頁，有些裝置會封鎖快顯網頁。 在這種情況下，您必須變更裝置上的快顯封鎖程式設定。 例如，在Apple iPhone 6上，點選「設定> Safari >封鎖快顯視窗&#x200B;]**」，然後將控制項滑入「**[!UICONTROL &#x200B;關閉&#x200B;]**」。**[!UICONTROL &#x200B;現在，當您播放互動式視訊並按一下縮圖時，如果您要開啟快顯視窗，就會出現提示。 如果您接受，則會開啟網頁。
 
 ### 觀看互動式視訊的建立方式{#watch-how-interactive-videos-are-created}
 
@@ -229,7 +229,7 @@ Quickview的大多數實施都採用以下模式：
 
 請參閱[建立新檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)以建立您自己的互動式視訊檢視器預設集。
 
-## 上傳視訊及其相關縮圖資產{#uploading-a-video-and-its-associated-thumbnail-assets}
+## 上傳視訊及其相關縮圖資產 {#uploading-a-video-and-its-associated-thumbnail-assets}
 
 如果您已上傳視訊和縮圖資產，請繼續[為視訊新增互動功能](#adding-interactivity-to-your-video)。
 
@@ -269,7 +269,7 @@ Quickview的大多數實施都採用以下模式：
 
    * 將滑鼠指標暫留在影像上，然後點選&#x200B;**[!UICONTROL 選擇]**（勾選圖示）。 在工具列上，點選&#x200B;**[!UICONTROL 編輯]**。
 
-   * 將滑鼠指標暫留在影像上，然後點選「更多動作」**[!UICONTROL （三點圖示）]**>「編輯」**[!UICONTROL 。]**
+   * 將滑鼠指標暫留在影像上，然後點選「更多動作」]**（三點圖示）**[!UICONTROL >「編輯」]**。**[!UICONTROL 
 
    * 點選影像以在「詳細資料檢視」頁面中開啟影像。 在工具列上，點選&#x200B;**[!UICONTROL 編輯]**。
 
@@ -396,7 +396,7 @@ Quickview的大多數實施都採用以下模式：
     <tbody> 
       <tr> 
       <td>將選定的縮圖影像與Quickview關聯</td> 
-      <td><p>在「Action Type（操作類型）」下，按一下「Quickview（快速視圖）」<strong>。</strong></p> <p>如果您是AEM Sites和Ecommerce客戶：</p> 
+      <td><p>在「Action Type（操作類型）」下，按一下「Quickview（快速視圖）」</strong>。<strong></strong></p> <p>如果您是AEM Sites和Ecommerce客戶：</p> 
        <ul> 
        <li>請注意，「SKU值」文字欄位已預先填入所選產品的SKU（庫存保留單位），此為您提供之每個不同產品或服務的唯一識別碼。 當影像與AEM Commerce中的產品相關聯時，會自動填入此項目。</li> 
        <li>如果預先填入的SKU不正確，請點選或按一下「產品選擇器」圖示（放大鏡）以開啟「選擇產品」頁面。 點選或按一下您要使用的產品，然後點選頁面右上角的核取標籤，以返回互動式視訊編輯器。</li> 
