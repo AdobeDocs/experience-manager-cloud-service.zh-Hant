@@ -1,38 +1,38 @@
 ---
-title: ' [!DNL Dynamic Media]中的輔助功能'
+title: Dynamic Media 無障礙內容
 description: 瞭解動態媒體和動態媒體檢視器中的協助功能。
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 75caf21c399271b23e71c7c0045e3a41cda8a851
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 0%
+source-wordcount: '613'
+ht-degree: 1%
 
 ---
 
 
-# 動態媒體中的協助功能{#working-with-three-d-assets-dm}
+# Dynamic Media 無障礙內容 {#accessibility-in-dm}
 
 Dynamic Media跨製作使用者介面支援鍵盤控制和輔助技術，例如JAWS和NVDA螢幕閱讀程式。
 
-## 動態媒體中的鍵盤協助功能支援
+## 動態媒體{#keyboard-support-in-dm}中的鍵盤協助功能支援
 
-由於Dynamic Media是Experience Manager Assets的外掛程式，因此大部份的鍵盤控制行為都與Experience Manager Assets完全相同。 例如，Dynamic Media的`Cancel`按鈕與Experience Manager Assets中的焦點反白顯示相同，並且會像Experience Manager Assets中的`Spacebar`鍵產生反應。 請參閱Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[鍵盤快速鍵。
+由於Dynamic Media是Experience Manager Assets的外掛程式，因此大部份的鍵盤控制行為都與Experience Manager Assets相同。 例如，動態媒體中的`Cancel`按鈕與Experience Manager Assets中的焦點反白顯示相同。 它也會對`Spacebar`鍵產生反應，如Experience Manager Assets中。 請參閱Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[鍵盤快速鍵。
 
-動態媒體中個別使用者介面元素支援的按鍵輸入，在大多數情況下都十分明顯，而且易於發現。 動態媒體中的鍵盤控制項如下：
+動態媒體中個別使用者介面元素支援的按鍵輸入，在大多數情況下都十分明顯，而且容易找到。 動態媒體中的鍵盤控制項如下：
 
 * 能夠使用`Tab`和`Shift+Tab`鍵擊，在頁面上的互動元素之間導航。
 使用`Tab`將輸入焦點提前到Tabbing順序中的下一個用戶介面元素；使用`Shift+Tab`將輸入焦點重新帶回先前的使用者介面元素。
 焦點遍歷會遵循畫面上自然的使用者介面元素位置，並依從左至右、從上至下的順序移動。 此外，如果有欄位有錯誤，您可以按`Tab`將焦點移至該欄位。
 * 能夠使用`Spacebar`和`Enter`鍵來啟動標準使用者介面元素，例如按鈕、下拉式清單等。
-* 能夠查看活動元素上的鍵盤焦點反白顯示。 具有輸入焦點的用戶介面元件可接收視覺焦點指示，作為圍繞用戶介面元件呈現的邊框。
+* 能夠查看活動元素上的鍵盤焦點反白顯示。 具有輸入焦點的用戶介面元件接收視覺焦點指示，作為圍繞用戶介面元件呈現的邊框。
 * 在熱點編輯器中，您可以使用一些自定義的按鍵操作（如箭頭鍵）來與複雜的用戶介面元素交互以重新定位熱點。
 * 在「互動式視訊」編輯器中，您可以使用`Spacebar`來選取影像，並將它新增至區段。 此外，您還可以使用`Backspace`鍵從&#x200B;**[!UICONTROL Content]**&#x200B;標籤中刪除所選項目。 此外，按`Tab`可視需要在頁面上的互動式元素之間導覽。
 * 在「影像裁切／智慧型裁切」編輯器中，您可以執行下列動作：
-   * 使用方向鍵裁切影格大小，或重新定位影像，或兩者皆可。
-   * 第一個`Tab`停止會反白顯示整個影像影格。 然後，您可以使用鍵盤上的箭頭鍵重新定位框架。
+   * 使用方向鍵裁切影格大小，或重新放置影像，或兩者。
+   * 第一個`Tab`停止會反白顯示整個影像影格。 然後，您可以使用鍵盤上的箭頭鍵來重新定位框架。
    * 後面四個`Tab`停位是影格的四角。 將焦點放在框架拐角上時，該拐角會加亮。 同樣地，您可以使用鍵盤上的箭頭鍵來移動焦點轉角。
 請參閱[編輯單一影像的智慧裁切或智慧色票](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
@@ -52,7 +52,7 @@ Dynamic Media跨製作使用者介面支援鍵盤控制和輔助技術，例如J
 
 所有現成可用的動態媒體檢視器元件都支援為客戶提供鍵盤協助功能。
 
-請參閱動態媒體檢視器參考指南中的[鍵盤存取和導覽](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
+請參閱動態媒體檢視器參考指南中的[鍵盤協助功能和導覽](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
 ## 動態媒體檢視器中的輔助技術支援{#assistive-technology=support-for-dm-viewers}
 
