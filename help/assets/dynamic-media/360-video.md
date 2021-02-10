@@ -2,9 +2,9 @@
 title: 360/VR視訊
 description: 瞭解如何在動態媒體中處理360和虛擬實境(VR)視訊。
 translation-type: tm+mt
-source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Dynamic Media包含360個視訊資產的原生支援。 依預設，檢視或播
 
 目前不支援空間音訊；如果音訊混合在立體聲中，則餘額(L/R)不會隨著客戶變更相機視角而改變。
 
-請參閱「搭配AEM Assets使用動態媒體360視訊和自訂視訊縮圖」[。](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html)
+請參閱「搭配AEM Assets使用動態媒體360視訊和自訂視訊縮圖」[。](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media)
 
 另請參閱[管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
