@@ -2,10 +2,10 @@
 title: 使用內容片段與GraphQL進行無頭內容傳送
 description: 瞭解如何將Adobe Experience Manager(AEM)中的內容片段當做雲端服務與GraphQL搭配使用，以進行無頭內容傳送。
 translation-type: tm+mt
-source-git-commit: 54b377c6d98398fd5066dc4a3337a3877b9e3ed7
+source-git-commit: c5f041f29133718a4260a289255e21b535cde12f
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 1%
+source-wordcount: '723'
+ht-degree: 0%
 
 ---
 
@@ -17,6 +17,14 @@ ht-degree: 1%
 >[!NOTE]
 >
 >如需AEM Sites的雲端服務無頭開發簡介，請參閱[無頭和AEM](/help/implementing/developing/headless/introduction.md)。
+
+>[!NOTE]
+>
+>GraphQL目前用於Adobe Experience Manager(AEM)的兩個（個別）藍本中，做為雲端服務：
+>
+>* [AEM Commerce透過GraphQL從商務平台取用資料](/help/commerce-cloud/architecture/magento.md)。
+>* [AEM內容片段可與AEM GraphQL API（以標準GraphQL為基礎的自訂實作）搭配運作，以提供結構化內容以用於您的應用程式](/help/assets/content-fragments/graphql-api-content-fragments.md)。
+
 
 ## 無頭CMS {#headless-cms}
 
