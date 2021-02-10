@@ -2,9 +2,9 @@
 title: 管理影像預設集
 description: 瞭解影像預設集，並瞭解如何建立、修改及管理影像預設集。
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '3607'
+source-wordcount: '3647'
 ht-degree: 11%
 
 ---
@@ -381,7 +381,7 @@ Dynamic Media整合使用下列指令碼：
     </ul>
     <div>
       銳利化說明於
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">銳利化影像</a>。
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">將影像銳利化與AEM Dynamic Media</a>影片搭配使用、在<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">銳利化影像</a>線上說明主題中，以及在<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Dynamic Media Classic</a>可下載PDF中銳利化影像的最佳實務中。
     </div> </td>
   </tr>
   <tr>
