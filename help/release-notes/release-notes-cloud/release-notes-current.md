@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
+source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '721'
 ht-degree: 3%
 
 ---
@@ -43,9 +43,11 @@ ht-degree: 3%
 
 * 可直接在內容片段編輯器中預覽JSON輸出。
 
-### 漸進式網頁應用程式(PWA){#pwa}
+<!--
+### Progressive Web Apps (PWAs) {#pwa}
 
-* [現在，可透過簡單的設定，在專](/help/sites-cloud/authoring/features/enable-pwa.md)  案層級啟用網站的漸進式網頁應用程式(PWA)版本。
+* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
+-->
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
