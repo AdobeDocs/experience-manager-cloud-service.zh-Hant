@@ -3,9 +3,9 @@ title: AEM與Magento整合的商務整合框架
 description: AEM和Magento可使用Commerce Integration Framework(CIF)完美整合。 CIF可讓AEM存取Magento執行個體，並透過GraphQL與Magento通訊。 此外，還可讓AEM作者使用「產品與類別選擇器」和「產品主控台」來瀏覽從Magento隨選擷取的產品與類別資料。 此外，CIF還提供了一個現成的店面，可以加快商業項目。
 thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 36e0fd66c9119571cde5c8791862abed8b552d5a
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,14 @@ ht-degree: 0%
 # 使用Commerce Integration Framework {#aem-magento-framework}進行AEM和Magento整合
 
 AEM和Magento可使用Commerce Integration Framework(CIF)完美整合。 CIF可讓AEM存取Magento執行個體，並透過GraphQL與Magento通訊。 此外，還可讓AEM作者使用「產品與類別選擇器」和「產品主控台」來瀏覽從Magento隨選擷取的產品與類別資料。 此外，CIF還提供了一個現成的店面，可以加快商業項目。
+
+>[!NOTE]
+>
+>GraphQL目前用於Adobe Experience Manager(AEM)的兩個（個別）藍本中，做為雲端服務：
+>
+>* AEM Commerce透過GraphQL從商務平台取用資料。
+>* [AEM內容片段可與AEM GraphQL API（以標準GraphQL為基礎的自訂實作）搭配運作，以提供結構化內容以用於您的應用程式](/help/assets/content-fragments/graphql-api-content-fragments.md)。
+
 
 ## 體系結構概述{#overview}
 
