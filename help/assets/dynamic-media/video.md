@@ -2,9 +2,9 @@
 title: 影片
 description: 瞭解如何在動態媒體中處理視訊。
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '9536'
+source-wordcount: '9537'
 ht-degree: 9%
 
 ---
@@ -404,7 +404,7 @@ VBR編碼時間較長，但結果最好；媒體檔案的品質更優越。 VBR�
 |--- |--- |--- |--- |
 | 來源 | 1920x1080 | 1 | 1 |
 | 編碼 | 960 x 540 | 2 | 2 |
-| 編碼 | 640 x 360 | 3 | 3 |
+| 編碼 | 640 x 360 | 3 | 1 |
 | 編碼 | 480 x 270 | 4 | 4 |
 
 ### 編碼視訊檔案格式{#encoded-video-file-format}
@@ -704,7 +704,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 在「YouTube發佈」標題下，按一下「YouTube隱私權&#x200B;]**」。**[!UICONTROL 
 1. 在頁面右側的&#x200B;**[!UICONTROL Settings]**&#x200B;標籤下，執行下列動作：
 
-   * 在&#x200B;**[!UICONTROL 映射到屬性]**文本欄位中，選擇並複製值。
+   * 在&#x200B;**[!UICONTROL 映射至屬性]**文字欄位中，選取並複製值。
 將複製的值貼入開啟的文字編輯器中。 當您稍後建立中繼資料處理設定檔時，將需要此值。 讓文字編輯器保持開啟。
 
    * 在&#x200B;**[!UICONTROL Choices]**下，選擇並複製您要使用的預設值。 請注意，「選擇」(Choices)分成兩對。 對中的底部欄位是要複製的預設值，如公用、未列出或專用。
@@ -772,7 +772,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 在視訊屬性頁面的右上角，按一下「儲存並關閉」。****
 1. 在工具列上，按一下「快速發佈」。****
 
-   另請參閱[搭配使用出版物管理與AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html)。
+   另請參閱[搭配使用出版物管理與AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)。
 
    您可以選擇在YouTube頻道上驗證已發佈的視訊。
 
@@ -983,7 +983,7 @@ For YouTube publishing jobs, do the following:
 
 1. 在列出熱門發佈影片的表格中，點選影片名稱以播放影片，並檢視影片的觀眾保留（下拉式）報表。
 
-<!-- OBSOLETE CONTENT OBSOLETE CONTENT SDK ONLY AVAILABLE INTERNALLY NOW 
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT - SDK ONLY AVAILABLE INTERNALLY NOW 
 ### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Dynamic Media HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
