@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 translation-type: tm+mt
-source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
+source-git-commit: d4b7aed89e587750b96b13d07a9252ecabee6c03
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Define DISABLE_DEFAULT_CACHING
 * 可以由以下apache mod_headers指令在更精細的級別上覆蓋：
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -43,7 +43,7 @@ Define DISABLE_DEFAULT_CACHING
    設定全域快取控制標題或符合寬規則運算式的標題時，請格外小心，以免套用至您可能想要保持私密的內容。 請考慮使用多個指令，以確保以更精細的方式套用規則。 如此一來，如果AEM偵測到快取標題已套用至Dispatcher偵測到的可由Dispatcher執行的功能，則AEM作為Cloud Service將會移除該快取標題，如Dispatcher檔案所述。 為了強制AEM一律套用快取，您可以新增「always」選項，如下所示：
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -59,7 +59,7 @@ Define DISABLE_DEFAULT_CACHING
 * 為防止特定內容被快取，請將「快取控制」標題設為&#x200B;*private*。 例如，下列項目會防止快取名為&#x200B;**myfolder**&#x200B;之目錄下的html內容：
 
    ```
-      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
       Header set Cache-Control “private”
      </LocationMatch>
    ```
@@ -78,7 +78,7 @@ Define DISABLE_DEFAULT_CACHING
 * 可以通過以下apache `mod_headers`指令在更精細的級別上設定：
 
    ```
-      <LocationMatch "^\.*.(jpeg|jpg)$">
+      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
         Header set Cache-Control "max-age=222"
         Header set Age 0
       </LocationMatch>
