@@ -2,9 +2,9 @@
 title: AEM GraphQL API，用於內容片段
 description: 瞭解如何搭配AEM GraphQL API將Adobe Experience Manager(AEM)中的內容片段用作雲端服務，以進行無頭內容傳送。
 translation-type: tm+mt
-source-git-commit: 20f90d46d24fa211d51ef4b59bb56f4b9f963bc3
+source-git-commit: 36e0fd66c9119571cde5c8791862abed8b552d5a
 workflow-type: tm+mt
-source-wordcount: '3167'
+source-wordcount: '3220'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,14 @@ ht-degree: 1%
 * 避免重複的API要求，就像REST一樣，
 * 確保交付內容僅限於特定要求，
 * 允許大量傳送呈現為單一API查詢回應所需的內容。
+
+>[!NOTE]
+>
+>GraphQL目前用於Adobe Experience Manager(AEM)的兩個（個別）藍本中，做為雲端服務：
+>
+>* [AEM Commerce透過GraphQL從商務平台取用資料](/help/commerce-cloud/architecture/magento.md)。
+>* AEM內容片段可與AEM GraphQL API（以標準GraphQL為基礎的自訂實作）搭配運作，以提供結構化內容以用於您的應用程式。
+
 
 ## GraphQL API {#graphql-api}
 
@@ -252,7 +260,7 @@ GraphQL規範提供了一系列指引，說明如何建立用於查詢特定實�
 >
 >這表示您需要確保沒有敏感資料可供使用，因為敏感資料可能會以此方式洩露；例如，這包括在模型定義中可能顯示為欄位名稱的資訊。
 
-例如，如果使用者建立名為`Article`的內容片段模型，AEM會產生類型為`ArticleModel`的物件`article`。 此類型中的欄位與模型中定義的欄位和資料類型相對應。
+例如，如果使用者建立名為`Article`的內容片段模型，AEM會產生類型為`ArticleModel`的物件`article`。 此類型中的欄位對應於模型中定義的欄位和資料類型。
 
 1. 內容片段模型：
 
