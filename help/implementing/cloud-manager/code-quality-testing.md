@@ -2,7 +2,7 @@
 title: 程式碼品質測試——雲端服務
 description: 程式碼品質測試——雲端服務
 translation-type: tm+mt
-source-git-commit: ba20916bf6048cb7dff054d9c10f6e1606ae8506
+source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 在「程式碼品質測試」中，會掃描原始碼，以確保其符合特定品質標準。 目前，這是由SonarQube和使用OakPAL的內容封裝層級檢查組合來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 部分AEM特定規則是根據AEM Engineering的最佳實務建立，並稱為「[自訂代碼品質規則」](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
 
 >[!NOTE]
->您可以下載規則的完整清單[這裡](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)。
+>您可以下載規則的完整清單[這裡](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)。
 
 **三層門**
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 品質掃描程式不完善，有時會錯誤地識別實際上沒有問題的問題。 這稱為&#x200B;*false陽性*。
 
-在這些情況下，原始碼可以用標準Java `@SuppressWarnings`注釋加以注釋，該標準Java &lt;a0/>注釋指定規則ID作為注釋屬性。 例如，一個常見問題是，用於檢測硬編碼密碼的SonarQube規則對於如何識別硬編碼密碼具有攻擊性。
+在這些情況下，原始碼可以用標準Java `@SuppressWarnings`注釋加以注釋，該標準Java 注釋指定規則ID作為注釋屬性。 例如，一個常見問題是，用於檢測硬編碼密碼的SonarQube規則對於如何識別硬編碼密碼具有攻擊性。
 
 若要檢視特定範例，此程式碼在AEM專案中相當常見，該專案具有連接至某些外部服務的程式碼：
 
