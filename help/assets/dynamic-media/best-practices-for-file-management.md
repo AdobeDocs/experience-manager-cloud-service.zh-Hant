@@ -1,8 +1,9 @@
 ---
 title: 組織數位資產以使用動態媒體影像描述檔或視訊描述檔的最佳實務
 description: 命名、組織和管理動態媒體影像和視訊資產檔案的秘訣與最佳實務。
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
