@@ -4,9 +4,9 @@ description: 最佳實務將Experience Manager部署與Adobe Creative Cloud整�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: eaf08018fbbf1cf1e71db2edce9ea673d546073a
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3294'
 ht-degree: 18%
 
 ---
@@ -37,7 +37,7 @@ Adobe Creative Cloud為創意團隊提供解決方案與服務生態系統，以
 | 相關人員的價值主張 | Adobe產品 | 涉及的曲面 |
 |---|---|---|
 | 創意使用者可從AEM發現資產、開啟並使用資產、編輯和上傳對AEM的變更，以及將新檔案上傳至AEM，而不需離開Creative Cloud應用程式。 | [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign |
-| 商業使用者可簡化開啟和使用資產、編輯和上傳對AEM的變更，以及從案頭環境將新檔案上傳至AEM。 他們會使用一般整合來開啟原生案頭應用程式中的任何資產類型，包括非Adobe的資產類型。 | [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Win和Mac案頭版的AEM案頭應用程式 |
+| 商業使用者可簡化開啟和使用資產、編輯和上傳對AEM的變更，以及從案頭環境將新檔案上傳至AEM。 他們會使用一般整合來開啟原生案頭應用程式中的任何資產類型，包括非Adobe的資產類型。 | [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Win和Mac案頭版的AEM案頭應用程式 |
 | 行銷人員和商業使用者可從AEM中發現、預覽、授權及儲存及管理Adobe Stock資產。 授權和儲存的資產提供精選的Adobe Stock中繼資料，以提升治理。 | [Experience Manager與Adobe Stock整合](aem-assets-adobe-stock.md) | AEM網頁介面 |
 
 本文主要針對協作需求的前兩個方面。資產規模分配和採購作為一個使用案例被簡要提及。針對這些需求解決方案，請考慮Adobe品牌入口網站或資產共用公域。其他解決方案，例如 [AEM Brand Portal](https://helpx.adobe.com/tw/experience-manager/brand-portal/user-guide.html)，這些解決方案可以根據 [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) 元件、 [Link Share](share-assets.md)，使用 [](/help/assets/manage-digital-assets.md) AEM Web UI Assets建立，應根據特定需求審查。
@@ -48,7 +48,7 @@ Adobe Creative Cloud為創意團隊提供解決方案與服務生態系統，以
 
 ### 使用案例與Adobe解決方案的對應{#mapping-of-use-cases-and-adobe-solutions}
 
-| 使用案例 | Adobe Asset Link | AEM案頭應用程式 | 注釋或替代方法 |
+| 使用案例 | Adobe Asset Link | AEM 桌面應用程式 | 注釋或替代方法 |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Discover —— 瀏覽AEM檔案夾 | 是 | AEM Web UI +案頭動作 | 瀏覽網路共用時，請關閉縮圖以避免下載資產的二進位檔案。 |
 | Discover —— 存取AEM系列 | 是 | AEM Web UI +案頭動作 |  |
@@ -70,7 +70,7 @@ Adobe Creative Cloud為創意團隊提供解決方案與服務生態系統，以
 
 為支援資產散發使用案例，應考慮其他解決方案：
 
-* [AEM Assets品牌門](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) 戶，以取得可設定、SaaS附加元件至AEM Assets以發佈資產。
+* [AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portal，以取得可設定的資產附加元件，以發佈資產。
 
 * 自訂解決方案是根據[資產共用共用共用](https://adobe-marketing-cloud.github.io/asset-share-commons/)程式碼庫建立。
 * AEM [連結共用](/help/assets/share-assets.md)以使用連結臨機共用資產。
