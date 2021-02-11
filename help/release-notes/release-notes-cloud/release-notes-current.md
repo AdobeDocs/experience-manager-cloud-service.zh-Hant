@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: f1a54ac3f995a6e8cc51f9ef16e14df6210a02cd
+source-git-commit: 6c40641333f2297d7004d792e87f16a7cf081970
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 3%
@@ -146,7 +146,7 @@ AEM as a Cloud Service SDK Build Analyzer Maven Plugin會偵測主要專案中�
 
 Best Practices Analyzer v2.1.0的發行日期為2021年2月11日。
 
-### [!DNL Best-Practices-Analyzer] {#what-is-new-bpa}的新增功能
+### [!DNL Best Practices Analyzer] {#what-is-new-bpa}的新增功能
 
 * 能夠偵測AEM Forms和AEM Forms實作的使用，並指出與移轉至AEM Forms as a Cloud Service相關的區域。
 * 能夠偵測並報告自訂元件和範本的使用情況和計數。
