@@ -2,9 +2,9 @@
 title: AEM中Cloud Manager的Cloud Manager版本注意事項2021.2.0版
 description: AEM中Cloud Manager的Cloud Manager版本注意事項2021.2.0版
 translation-type: tm+mt
-source-git-commit: bca0519b3f27ee21df41b2292d19e330c4aa5f7d
+source-git-commit: 968775b24441457143f497c2cfb1f9ece392d475
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '399'
 ht-degree: 2%
 
 ---
@@ -38,6 +38,7 @@ AEM中Cloud Manager作為Cloud Service 2021.2.0的發行日期為2021年2月11�
 
 * Cloud Manager UI會通知使用者，如果目前部署的網域名稱正在使用SSL憑證，可能暫時無法選取該憑證。
 
+* 已新增其他程式碼品質規則，以涵蓋雲端服務相容性問題。
 
 ### 錯誤修正 {#bug-fixes}
 
