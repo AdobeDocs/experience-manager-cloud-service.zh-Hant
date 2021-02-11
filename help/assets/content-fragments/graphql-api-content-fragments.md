@@ -2,9 +2,9 @@
 title: AEM GraphQL API，用於內容片段
 description: 瞭解如何搭配AEM GraphQL API將Adobe Experience Manager(AEM)中的內容片段用作雲端服務，以進行無頭內容傳送。
 translation-type: tm+mt
-source-git-commit: 36e0fd66c9119571cde5c8791862abed8b552d5a
+source-git-commit: 48b889e2357f9564c7a0e529c2bde5a05f7fcea1
 workflow-type: tm+mt
-source-wordcount: '3220'
+source-wordcount: '3228'
 ht-degree: 1%
 
 ---
@@ -140,9 +140,9 @@ GraphQL for AEM端點的儲存庫路徑為：
 
 >[!CAUTION]
 >
->端點目前存在已知問題：
+>在某些版本中，端點目前存在已知問題：
 >
->* 在&#x200B;**Sites**&#x200B;控制台中看到`cq:graphql`條目；在頂層。
+>* 視使用的版本而定，`cq:graphql`項目會顯示在&#x200B;**Sites**主控台中；在頂層。
    >  不得使用。
 
 
