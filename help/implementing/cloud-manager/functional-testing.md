@@ -2,9 +2,9 @@
 title: 功能測試——雲端服務
 description: 功能測試——雲端服務
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '469'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 4%
 
 * 產品功能測試
 * 自訂功能測試
+* 自訂UI測試
 
 ## 產品功能測試{#product-functional-testing}
 
@@ -33,6 +34,12 @@ ht-degree: 4%
 
 >[!NOTE]
 >「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。這些記錄檔不包含實際AEM執行階段程式的記錄檔——這些記錄檔可使用一般的「下載」或「尾部記錄檔」功能來存取。 有關詳細資訊，請參閱[訪問和管理日誌](/help/implementing/cloud-manager/manage-logs.md)。
+
+## 自訂UI測試{#custom-ui-testing}
+
+您可編寫自訂UI測試，讓客戶快速建立測試自動化套件，以驗證以AEM為基礎的網頁和行動應用程式。
+
+若要進一步瞭解如何編寫自訂UI測試，請參閱[建立UI測試](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html#building-ui-tests)。
 
 
 ### 編寫功能測試{#writing-functional-tests}
