@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 75caf21c399271b23e71c7c0045e3a41cda8a851
+source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '611'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Dynamic Media跨製作使用者介面支援鍵盤控制和輔助技術，例如J
 * 能夠使用`Tab`和`Shift+Tab`鍵擊，在頁面上的互動元素之間導航。
 使用`Tab`將輸入焦點提前到Tabbing順序中的下一個用戶介面元素；使用`Shift+Tab`將輸入焦點重新帶回先前的使用者介面元素。
 焦點遍歷會遵循畫面上自然的使用者介面元素位置，並依從左至右、從上至下的順序移動。 此外，如果有欄位有錯誤，您可以按`Tab`將焦點移至該欄位。
-* 能夠使用`Spacebar`和`Enter`鍵來啟動標準使用者介面元素，例如按鈕、下拉式清單等。
+* 能夠使用`Spacebar`和`Enter`鍵來啟動標準的使用者介面元素，例如按鈕和下拉式清單。
 * 能夠查看活動元素上的鍵盤焦點反白顯示。 具有輸入焦點的用戶介面元件接收視覺焦點指示，作為圍繞用戶介面元件呈現的邊框。
 * 在熱點編輯器中，您可以使用一些自定義的按鍵操作（如箭頭鍵）來與複雜的用戶介面元素交互以重新定位熱點。
 * 在「互動式視訊」編輯器中，您可以使用`Spacebar`來選取影像，並將它新增至區段。 此外，您還可以使用`Backspace`鍵從&#x200B;**[!UICONTROL Content]**&#x200B;標籤中刪除所選項目。 此外，按`Tab`可視需要在頁面上的互動式元素之間導覽。
