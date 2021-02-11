@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
+source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '978'
 ht-degree: 3%
 
 ---
@@ -69,15 +69,37 @@ ht-degree: 3%
 
 ### 發行日期 {#release-date-cm}
 
-AEM中Cloud Manager作為Cloud Service 2021.1.0的發行日期為2021年1月14日。
+AEM中Cloud Manager作為Cloud Service 2021.2.0的發行日期為2021年2月11日。
+
+### 新增功能 {#what-is-new-cloud-manager}
+
+* Cloud Manager生產管道現在將包含自訂UI測試功能。
+
+* 資產客戶現在可以選擇透過Cloud Manager UI以自助方式部署其品牌入口網站實例的時間和地點。 對於具有資產解決方案的一般（非沙盒）方案，現在可在生產環境中布建品牌入口網站。 在生產環境上只能執行一次置備。
+
+* 「專案與沙盒建立」中使用的AEM專案原型已更新為版本25。
+
+* 程式碼掃描期間識別的已過時API清單已改良，加入最新Cloud Service SDK版本中已淘汰的其他類別和方法。
+
+* SonarQube的Cloud Manager描述檔已更新，以移除Sonar規則squid:S2142。 這將不再與「線程中斷檢查」衝突。
+
+* Cloud Manager UI會通知暫時無法新增／更新網域名稱的使用者，因為相關環境會附加一個執行中的管道，或目前正在等待核准步驟。
+
+* 現在，客戶`pom.xml`檔案中預先設定的Sonar屬性將會動態移除，以避免建置和品質掃描失敗。
+
+* Cloud Manager UI會通知使用者，如果目前部署的網域名稱正在使用SSL憑證，可能暫時無法選取該憑證。
 
 ### 錯誤修正 {#bug-fixes-cloud-manager}
 
-* 資產生產實例有時可能會將&#x200B;**環境**&#x200B;詳細資訊頁面上的品牌入口網站狀態顯示為&#x200B;*待定*，而不允許使用者採取任何動作。
+* 比對SSL憑證與網域名稱不再區分大小寫。
 
-* 從Cloud Manager觸發解除休眠時，有時即使成功啟動解除休眠，仍會顯示失敗訊息。
+* 如果憑證私密金鑰不符合2048位元限制，Cloud Manager UI現在會通知使用者並顯示適當的錯誤訊息。
 
-* 已解決在環境建立或刪除中遇到的罕見故障。
+* Cloud Manager UI會通知使用者，如果目前部署的網域名稱正在使用SSL憑證，可能暫時無法選取該憑證。
+
+* 在某些情況下，內部問題可能導致環境刪除停滯。
+
+* 某些管線故障錯誤報告為管線錯誤。
 
 ## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
