@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
+source-git-commit: bca0519b3f27ee21df41b2292d19e330c4aa5f7d
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 3%
@@ -85,7 +85,7 @@ AEM中Cloud Manager作為Cloud Service 2021.2.0的發行日期為2021年2月11�
 
 * Cloud Manager UI會通知暫時無法新增／更新網域名稱的使用者，因為相關環境會附加一個執行中的管道，或目前正在等待核准步驟。
 
-* 現在，客戶`pom.xml`檔案中預先設定的Sonar屬性將會動態移除，以避免建置和品質掃描失敗。
+* 現在會動態移除客戶`pom.xml`檔案中預先加上聲納的屬性，以避免建置和品質掃描失敗。
 
 * Cloud Manager UI會通知使用者，如果目前部署的網域名稱正在使用SSL憑證，可能暫時無法選取該憑證。
 
