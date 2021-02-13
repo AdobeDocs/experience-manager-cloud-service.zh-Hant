@@ -3,10 +3,10 @@ title: AEM Assets與AEM MediaLibrary的比較
 description: AEM Assets和的常見問題。 AEM Media Library，包括兩者的差異。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '693'
+ht-degree: 3%
 
 ---
 
@@ -28,9 +28,9 @@ AEM Media Library是AEM WCM內容存放庫的指定部分，影像和其他共�
 AEM Assets客戶僅能使用的獨特功能包括：
 
 1. 擷取和編輯除標題、標籤和說明以外之中繼資料的能力。
-1. 「AEM資產管理員」，按一下網站管理員旁的第二個按鈕，即可從歡迎畫面取得。
+1. AEM Assets Admin，可從歡迎畫面按一下`siteadmin`旁邊的第二個選項即可使用。
 1. 所有與數位資產管理相關的工作流程步驟，即AEM Assets Ingestion、AEM Assets Deletion、AEM Assets Sub-Asset-Handling、AEM Assets中繼資料擷取。
-1. 程式庫，包括「dam」im封裝空間。
+1. 程式庫，包括封裝空間中的「dam」。
 
 使用這些功能需要有效的AEM Assets授權。
 
@@ -54,7 +54,7 @@ AEM Assets客戶僅能使用的獨特功能包括：
 
 影像元件是AEM WCM的一部分。 影像元件（但也由AEM Assets）使用的圖形庫是AEM平台的一部分，不需要AEM Assets授權。
 
-## 如果我未授權AEM Assets，該如何防止使用者使用AEM Assets?{#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
+## 如果我未授權AEM Assets，該如何防止我的使用者使用AEM Assets?{#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
 您可以從AEM移除所有AEM Assets專屬的工作流程、元件、分類、選項和AEM Assets管理員。 如此可避免使用者意外使用您未授權的AEM Assets功能。
 
@@ -69,14 +69,14 @@ AEM Assets客戶僅能使用的獨特功能包括：
 * 系列和燈箱
 * 進階的中繼資料屬性與管理
 * Adobe Asset Link（連線至適用於企業的Creative Cloud）
-* AEM案頭應用程式
+* AEM 桌面應用程式
 * 處理設定檔
 * InDesign Server整合
 * 資產範本和型錄製作者架構
 * Adobe Photoshop、Illustrator和InDesign連結資產
 * 多語言資產管理
 * PIM整合
-* Rights Management
+* 版權管理
 * Camera RAW支援
 * 搜尋Facet管理與設定
 * 預先建立的DAM工作流程（例如像片拍攝）
