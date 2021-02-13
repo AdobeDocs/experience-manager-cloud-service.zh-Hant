@@ -2,7 +2,7 @@
 title: 將您的數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager] 透過豐富的中繼資料、智慧標籤、轉譯和其他數位資產管理(DAM)服務，豐富上傳數位檔案的二進位內容。您可以從本機資料夾或網路磁碟機上傳各種檔案類型，例如影像、檔案和原始影像檔案至[!DNL Experience Manager Assets]。
 
-提供了多種上載方法。 除了最常用的瀏覽器上傳外，還有其他將資產新增至[!DNL Experience Manager]儲存庫的方法，包括案頭用戶端（例如Adobe Asset Link或[!DNL Experience Manager]案頭應用程式）、上傳和擷取指令碼，以及自動擷取整合新增至[!DNL Experience Manager]擴充功能。
+提供了多種上載方法。 除了最常用的瀏覽器上傳外，還有其他將資產新增至[!DNL Experience Manager]儲存庫的方法，包括案頭用戶端（例如Adobe Asset Link或[!DNL Experience Manager]案頭應用程式）、上傳和擷取客戶要建立的指令碼，以及自動擷取整合新增至[!DNL Experience Manager]擴充功能。
 
 我們將著重於此處為使用者上傳方法，並提供文章連結，說明使用[!DNL Experience Manager] API和SDK進行資產上傳和擷取的技術層面。
 
@@ -34,7 +34,7 @@ ht-degree: 1%
 |---------------------|----------------|-----------------|
 | [Assets Console使用者介面](#upload-assets) | 偶爾上傳、輕鬆壓制和拖曳、搜尋器上傳。 請勿用來上傳大量資產。 | 所有使用者 |
 | [上傳API](#upload-using-apis) | 用於上傳期間的動態決策。 | 開發人員 |
-| [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 大量資產擷取量低，但適用於移轉。 | 管理員、行銷人員 |
+| [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 大量資產擷取量低，但適用於移轉。 | 管理員、行銷人員 |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 當創意人員和行銷人員從支援的[!DNL Creative Cloud]案頭應用程式中處理資產時，就很有用。 | 創意，行銷人員 |
 | [資產大量內嵌](#asset-bulk-ingestor) | 建議進行大規模遷移和偶爾批量提取。 僅適用於支援的資料儲存區。 | 管理員、開發人員 |
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
-   The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
+   The [!UICONTROL Pause] option does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** option appears.
 
    To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
@@ -202,7 +202,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!NOTE]
 >
->[!DNL Dynamic Media] 對資產的裁切和其他操作不具破壞性，也就是說，這些操作不會變更上傳的原稿。它會提供參數，以便在傳送資產時進行裁切或變形。
+>[!DNL Dynamic Media] 對資產的裁切和其他作業不具破壞性，即作業不會變更上傳的原稿。它會提供參數，以便在傳送資產時進行裁切或變形。
 
 對於已指派處理設定檔的檔案夾，描述檔名稱會出現在卡片檢視的縮圖上。 在清單視圖中，配置檔案名稱將顯示在&#x200B;**[!UICONTROL 處理配置檔案]**&#x200B;列中。
 
@@ -212,7 +212,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Adobe Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [[!DNL Adobe Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [關於 [!DNL Adobe Asset Link]](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 文件](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [資產上傳的技術參考](developer-reference-material-apis.md#asset-upload-technical)
