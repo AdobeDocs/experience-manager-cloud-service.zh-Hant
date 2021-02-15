@@ -2,10 +2,10 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: c3fd7b5a6311eded51b13ab9fea1ca6af4a050eb
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 10%
+source-wordcount: '1894'
+ht-degree: 8%
 
 ---
 
@@ -20,63 +20,55 @@ ht-degree: 10%
 
 ### 基本 {#basic}
 
-* **標題**
+* **標題與標籤**
 
-   * 頁面標題會顯示在不同的位置。 例如，**Websites**&#x200B;標籤清單和&#x200B;**Sites**&#x200B;卡片／清單檢視。
-   * 這是必要欄位。
+   * **Title**  —— 頁面標題會顯示在不同位置。例如，**Websites**&#x200B;標籤清單和&#x200B;**Sites**&#x200B;卡片／清單檢視。
+      * 這是必要欄位。
+   * **標籤** -您可以在這裡新增標籤，或透過更新選取方塊中的清單，從頁面中移除標籤。
+      * 選取標籤後，標籤會列在選取方塊下方。 您可以使用x從此清單中移除標籤。
+      * 您可以在空的選取方塊中輸入名稱，以輸入全新的標籤。
+         * 當您按Enter時，將會建立新標籤。
+         * 然後，新標籤會在右側顯示，並加上一個小星號，表示它是新標籤。
+      * 透過下拉式功能，您可從現有標籤中選取。
+      * 當您將滑鼠移至選取方塊中的標籤項目上時，會顯示x，可用來移除此頁面的標籤。
+      * 如需標籤的詳細資訊，請參閱[使用標籤](/help/sites-cloud/authoring/features/tags.md)。
+   * **在導覽中隱藏** -指出在產生的網站的頁面導覽中是否顯示或隱藏頁面。
 
-* **標記**
+* **品牌化**
 
-   * 您可以在這裡，透過更新選取方塊中的清單，新增或移除頁面中的標籤。
-   * 選取標籤後，標籤會列在選取方塊下方。 您可以使用x從此清單中移除標籤。
-   * 您可以在空的選取方塊中輸入名稱，以輸入全新的標籤。
-      * 當您按Enter時，將會建立新標籤。
-      * 然後，新標籤會在右側顯示，並加上一個小星號，表示它是新標籤。
-   * 透過下拉式功能，您可從現有標籤中選取。
-   * 當您將滑鼠移至選取方塊中的標籤項目上時，會顯示x，可用來移除此頁面的標籤。
-   * 如需標籤的詳細資訊，請參閱[使用標籤](/help/sites-cloud/authoring/features/tags.md)。
+   將品牌邊界附加至每個頁面標題，以跨頁套用一致的品牌識別。 此功能需要使用[核心元件2.14.0版或更新版本的頁面元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
 
-* **於導覽中隱藏**
-
-   * 指出在產生的網站的頁面導覽中是否顯示或隱藏頁面。
+   * **覆寫** -勾選以定義此頁面上的品牌印刷邊界。
+      * 任何子頁面都將繼承該值，除非它們也設定了&#x200B;**Override**&#x200B;值。
+   * **覆寫值** -要附加至頁面標題的品牌印刷邊界文字。
+      * 該值會附加在垂直號字元（例如「循環圖表」）後的頁面標題中 |隨時為WKND做好準備&quot;
 
 * **HTML ID**
 
-   * HTML ID以套用至元件。
+   * **ID**  —— 套用至元件的HTML ID。
 
-* **頁面標題**
+* **更多標題和說明**
 
-   * 要在頁面上使用的標題。 通常由標題元件使用。 如果空白，則會使用&#x200B;**Title**。
+   * **頁面標題** -用於頁面上的標題。通常由標題元件使用。 如果空白，則會使用&#x200B;**Title**。
+   * **導覽標題** -您可以指定個別的標題，以用於導覽（例如，如果您想要更簡潔的內容）。如果為空，則使用&#x200B;**Title**。
+   * **副標題** -頁面上使用的副標題。
+   * **說明** -您對頁面、其用途或您要新增的任何其他詳細資訊的說明。
 
-* **導覽標題**
+* **開啟/關閉時間**
 
-   * 您可以指定個別標題以用於導覽（例如，如果您想要更簡潔的內容）。 如果為空，則使用&#x200B;**Title**。
-
-* **子標題**
-
-   * 頁面上使用的副標題。
-
-* **說明**
-
-   * 您對頁面的說明、其用途，或您要新增的任何其他詳細資訊。
-
-* **開啟時間**
-
-   * 發佈環境中顯示（轉譯）發佈頁面的日期和時間。 必須手動或預先設定的自動複製來發佈頁面。
+   * **On Time**  —— 發佈環境上顯示（轉譯）發佈頁面的日期和時間。必須手動或預先設定的自動複製來發佈頁面。
 
       >[!NOTE]
       >
       > 有關如何配置相關自動複製的詳細資訊，請參見[開啟和關閉時間——觸發器配置](/help/operations/replication.md#on-and-off-times-trigger-configuration)。
 
       * 如果[已發佈（手動）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)，則此頁面將保持休眠（隱藏），直到在指定時間顯示。
-      * 如果未發佈，且已針對自動複製設定，則頁面會在指定的時間自動發佈，然後轉譯。
+      * 如果未發佈，且已針對自動複製設定，則會在指定時間自動發佈頁面，然後呈現頁面。
       * 如果未發佈，且未針對自動複製進行設定，則不會自動發佈頁面，因此當嘗試存取頁面時，會看到404。
+   * **關閉時間** -與「開啟時間」類似，並常與「開啟時間 ****」搭配使用，這會定義發佈頁面在發佈環境中隱藏的時間。
+
    * 對於您要立即發佈的頁面，請將這些欄位（**On Time**&#x200B;和&#x200B;**Off Time**）留空，並在發佈環境中使用，直到它們停用（一般情形）為止。
 
-* **關閉時間**
-
-   * 與&#x200B;**On Time**&#x200B;平行，這定義發佈頁面在發佈環境中隱藏的時間。
-   * 對於您要立即發佈的頁面，請將這些欄位（**On Time**&#x200B;和&#x200B;**Off Time**）留空，並在發佈環境中使用，直到它們停用（一般情形）為止。
 
 * **虛名 URL**
 
@@ -92,31 +84,24 @@ ht-degree: 10%
    >* 不應設為現有頁面。
 
 
-* **重新導向虛名 URL**
+   * **新增** -點選或按一下以顯示欄位，以定義頁面的虛名URL。
+      * 點選或再按一下以新增多個。
+      * 點選或按一下「移除&#x200B;****」圖示，以刪除虛名URL。
+   * **重新導向虛名URL** -指出您是否希望頁面使用虛名URL。
 
-   * 指出您是否希望頁面使用虛名URL。
+
+
 
 ### 進階 {#advanced}
 
-* **語言**
+* **設定**
 
-   * 頁面語言。
+   * **語言** -頁面語言
+   * **語言根目錄** -如果頁面是語言副本的根目錄，則必須勾選
+   * **重新導向** -指出此頁面應自動重新導向至的頁面
+   * **Design**  —— 指出在產生的網站的頁面導覽中是否顯示或隱藏頁面
+   * **別名** -指定要與此頁一起使用的別名
 
-* **語言根目錄**
-
-   * 如果頁面是語言副本的根目錄，則必須勾選。
-
-* **重新導向**
-
-   * 指出此頁面應自動重新導向至的頁面。
-
-* **設計**
-
-   * 指出在產生的網站的頁面導覽中是否顯示或隱藏頁面。
-
-* **別名**
-
-   * 指定要與此頁一起使用的別名。
    >[!NOTE]
    >
    >別名設定`sling:alias`屬性以定義資源的別名（這僅影響資源，不影響路徑）。
@@ -129,52 +114,36 @@ ht-degree: 10%
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **繼承自  &lt;path>**
+* **設定**
 
-   * 指出頁面是否繼承。 以及從何而來。
+   * **雲端設定** -設定的路徑
 
-* **雲端設定**
+* **範本設定**
 
-   * 配置的路徑。
+   * **允許的模板** - [定義此子分支中](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) 可用的模板清單
 
-* **允許的範本**
+* **驗證需求**
 
-   * [定義此子分支中可](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) 用的模板清單。
+   * **啟用** -啟用驗證以存取頁面
 
-* **啟用** （驗證要求）
+      >[!NOTE]
+      >
+      >頁面的已關閉使用者群組是在&#x200B;**[Permissions](#permissions)**&#x200B;標籤上定義。
 
-   * 啟用（或停用）驗證的使用以存取頁面。
-   >[!NOTE]
-   >
-   >頁面的已關閉使用者群組是在&#x200B;**[Permissions](#permissions)**&#x200B;標籤上定義。
+   * **登錄頁** -用於登錄的頁
 
-* **登入頁面**
+* **匯出**
 
-   * 用於登入的頁面。
-
-* **匯出設定**
-
-   * 指定匯出設定。
+   * **導出配置** -指定導出配置
 
 ### 縮圖 {#thumbnail}
 
-顯示頁面縮圖影像。 您可以：
+設定頁面縮圖
 
-* **產生預覽**
-
-   * 產生頁面的預覽以做為縮圖。
-
-* **上傳影像**
-
-   * 上傳影像以當做縮圖使用。
-
-* **選取影像**
-
-   * 選取現有的資產以當做縮圖。
-
-* **回復**
-
-   * 在您變更縮圖後，此選項便可用。 如果您不想保留變更，可以在儲存前回復該變更。
+* **產生預覽** -產生要當做縮圖使用的頁面預覽
+* **上傳影像** -上傳影像以當做縮圖
+* **選取影像** -選取現有的資產做為縮圖
+* **回復** -對縮圖進行更改後，此選項將變為可用。如果您不想保留變更，可以在儲存前回復該變更。
 
 ### 社交媒體 {#social-media}
 
@@ -189,9 +158,7 @@ ht-degree: 10%
 
 ### 雲端服務 {#cloud-services}
 
-* **雲端服務設定**
-
-   * 定義雲端服務的屬性。
+* **雲端服務設定** -定義雲端服務的屬性
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -200,16 +167,14 @@ ht-degree: 10%
 
 * **ContextHub 組態**
 
-   * 選擇ContextHub設定和區段路徑。
-
-   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
-  -->
+   * **ContextHub路徑** -定義 [ContextHub組態](/help/sites-cloud/authoring/personalization/contexthub.md)
+   * **區段路徑** -定義區段 [路徑](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
 * **定位組態**
 
-   * 選擇[品牌以指定定位範圍](/help/sites-cloud/authoring/personalization/targeted-content.md)。
+   * **品牌** -定義品 [牌以指定定位範圍](/help/sites-cloud/authoring/personalization/targeted-content.md)。
    >[!NOTE]
-   >此選項要求使用者帳戶位於`Target Adminstrators`群組中。
+   >此選項要求使用者帳戶位於`Target Administrators`群組中。
 
 ### 權限 {#permissions}
 
@@ -227,25 +192,33 @@ ht-degree: 10%
 
 ### Blueprint {#blueprint}
 
-* **Blueprint**
+此頁籤僅對用作藍圖的頁面可見。
 
-   * 在多網站管理中定義Blueprint頁面的屬性。
+* **目前的即時副本** -列出以此藍圖頁面為基礎（亦即，即即時副本）的頁面
 
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
-
-   * 控制修改將傳播至即時副本的情況。
-
+* **轉出設定** -控制修改傳播至即時副本的情況
 
 ### 即時副本 {#live-copy}
 
-* **即時副本**
+* **同步** -將即時副本與Blueprint同步，保留本機修改
+* **重設** -將即時副本重設為Blueprint的狀態，移除本機修改
+* **暫停** -暫停即時副本以進一步轉出修改
+* **分離** -從Blueprint中分離即時副本
 
-   * 在多網站管理中定義即時副本頁面的屬性。<!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
-   * 控制從Blueprint傳播修改的情況。
+* **來源**
 
-### 網站結構 {#site-structure}
+   * 顯示此即時副本的Blueprint路徑
 
-* 提供提供全網站功能的頁面連結，例如&#x200B;**註冊頁面**、**離線頁面**&#x200B;等。
+* **狀態**
+
+   * 列出頁面的目前即時副本狀態
+
+* **設定**
+
+   * **即時副本繼承** -如果勾選此選項，即時副本配置對所有子項都有效
+   * **從父代繼承轉出配置** -如果選中，轉出配置將繼承自頁面的父代
+   * **選擇轉出配置** -定義在何種情況下，修改將從Blueprint傳播，並且僅當未選擇從Parentis中繼出配置 **時才可** 用。
 
 ## 編輯頁面屬性{#editing-page-properties-1}
 
