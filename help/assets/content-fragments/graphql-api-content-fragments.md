@@ -2,9 +2,9 @@
 title: AEM GraphQL API，用於內容片段
 description: 瞭解如何搭配AEM GraphQL API將Adobe Experience Manager(AEM)中的內容片段用作雲端服務，以進行無頭內容傳送。
 translation-type: tm+mt
-source-git-commit: 48b889e2357f9564c7a0e529c2bde5a05f7fcea1
+source-git-commit: 05dd9c9111409a67bf949b0fd8a13041eae6ef1d
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3296'
 ht-degree: 1%
 
 ---
@@ -725,23 +725,90 @@ query {
 
 ## 從外部網站{#query-graphql-endpoint-from-external-website}查詢GraphQL端點
 
+要從外部網站訪問GraphQL端點，您需要配置：
+
+* [CORS篩選](#cors-filter)
+* [反向連結篩選](#referrer-filter)
+
+### CORS篩選{#cors-filter}
+
 >[!NOTE]
 >
 >如需AEM中CORS資源共用原則的詳細概觀，請參閱[瞭解跨原始資源共用(CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))。
 
-若要允許協力廠商網站使用JSON輸出，必須在客戶Git儲存庫中設定CORS原則。 若要這麼做，請新增適當的OSGi CORS設定檔以用於所需端點。 此設定應指定應授與存取權的受信任網站名稱（或regex）。
+若要存取GraphQL端點，必須在客戶Git儲存庫中設定CORS原則。 若要這麼做，請新增適當的OSGi CORS設定檔，以用於所需的端點。
 
-* 訪問GraphQL端點：
+此配置必須指定必須授予訪問權的受信任網站源`alloworigin`或`alloworiginregexp`。
 
-   * alloworgin:[您的域]或alloworiginregexp:[您的網域regex]
-   * 支援的方法：[POST]
-   * 允許路徑：[&quot;/content/graphql/global/endpoint.json&quot;]
+例如，要授予對`https://my.domain`的GraphQL端點和持久查詢端點的訪問權，可以使用：
 
-* 訪問GraphQL持久查詢端點：
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json",
+    "/graphql/execute.json/.*"
+  ]
+}
+```
 
-   * alloworgin:[您的域]或alloworiginregexp:[您的網域regex]
-   * 支援的方法：[GET]
-   * 允許路徑：[&quot;/graphql/execute.json/.*&quot;]
+如果您已為端點配置虛名路徑，也可以在`allowedpaths`中使用該路徑。
+
+### 反向連結篩選器{#referrer-filter}
+
+除了CORS設定外，必須設定「反向連結」篩選器，才能允許第三方主機的存取。
+
+若要這麼做，請新增適當的OSGi反向連結篩選設定檔案，其中：
+
+* 指定可信網站主機名；`allow.hosts`或`allow.hosts.regexp`,
+* 授予此主機名的訪問權限。
+
+例如，若要授與反向連結`my.domain`的請求存取權，您可以：
+
+```xml
+{
+    "allow.empty":false,
+    "allow.hosts":[
+      "my.domain"
+    ],
+    "allow.hosts.regexp":[
+      ""
+    ],
+    "filter.methods":[
+      "POST",
+      "PUT",
+      "DELETE",
+      "COPY",
+      "MOVE"
+    ],
+    "exclude.agents.regexp":[
+      ""
+    ]
+}
+```
 
 >[!CAUTION]
 >
