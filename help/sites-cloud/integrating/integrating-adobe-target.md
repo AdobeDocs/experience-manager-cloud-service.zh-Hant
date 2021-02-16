@@ -2,9 +2,9 @@
 title: 整合 Adobe Target
 description: '整合 Adobe Target '
 translation-type: tm+mt
-source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
+source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1047'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ Launch和Target的IMS設定必須能正確整合Target與AEM和Launch。 雖然L
 
 >[!NOTE]
 >
-> 如果要編輯現有的Target設定：
+> 如果要更改現有的Target配置：
 >
 > 1. 重新輸入租用戶ID。
 > 2. 重新連線至Target。
