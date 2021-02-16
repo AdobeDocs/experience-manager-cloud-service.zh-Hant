@@ -2,9 +2,9 @@
 title: 部署您的程式碼——雲端服務
 description: 部署您的程式碼——雲端服務
 translation-type: tm+mt
-source-git-commit: aef8afd3efca4d6d5db9f457e952958ee9ca38de
+source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '985'
 ht-degree: 1%
 
 ---
@@ -56,13 +56,9 @@ ht-degree: 1%
    * 自訂功能測試：管線中的此步驟始終存在，不能跳過。 但是，如果構建版本未生成測試JAR，則預設情況下測試通過。\
       如需詳細資訊，請參閱[自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。
 
-   * 自訂UI測試：管線中的此步驟始終存在，不能跳過。 您可編寫自訂UI測試，讓客戶快速建立測試自動化套件，以驗證以AEM為基礎的網頁和行動應用程式。
-如需詳細資訊，請參閱[自訂UI測試](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)。
 
    * 體驗審核：管線中的此步驟始終存在，不能跳過。 執行生產管線時，會在執行檢查的自訂功能測試後加入體驗稽核步驟。 所設定的頁面將會提交至服務並進行評估。 這些結果是提供資訊的，讓使用者可以查看目前和先前的分數之間的分數和變更。 此見解對於判斷目前部署中是否會引入回歸，十分有用。
 如需詳細資訊，請參閱[瞭解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
-
-      ![](/help/implementing/cloud-manager/assets/deploy-testingscreen.png)
 
 
 
