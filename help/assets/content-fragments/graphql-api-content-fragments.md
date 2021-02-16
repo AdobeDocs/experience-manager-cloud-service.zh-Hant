@@ -2,9 +2,9 @@
 title: AEM GraphQL API，用於內容片段
 description: 瞭解如何搭配AEM GraphQL API將Adobe Experience Manager(AEM)中的內容片段用作雲端服務，以進行無頭內容傳送。
 translation-type: tm+mt
-source-git-commit: 05dd9c9111409a67bf949b0fd8a13041eae6ef1d
+source-git-commit: 89a51faa08adc1a87d86c8e280919b3a890aae8b
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '2935'
 ht-degree: 1%
 
 ---
@@ -98,9 +98,11 @@ GraphQL使用下列功能：
 
 * **[條目清單](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-您也可以執行：
+<!--
+You can also perform:
 
-* [持續查詢，已快取](#persisted-queries-caching)
+* [Persisted Queries, that are cached](#persisted-queries-caching)
+-->
 
 ## 適用於AEM端點的GraphQL {#graphql-aem-endpoint}
 
@@ -531,20 +533,21 @@ query {
 
 * [基於WKND項目的示例查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
-## 持續查詢（快取）{#persisted-queries-caching}
+<!--
+## Persisted Queries (Caching) {#persisted-queries-caching}
 
-在準備具有POST請求的查詢後，就可以使用GET請求執行，而HTTP快取或CDN可快取該查詢。
+After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
 
-這是必要的，因為POST查詢通常不進行快取，而且如果將GET與查詢搭配使用，則參數對HTTP服務和中間產品而言變得過大的風險很大。
+This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
 
-以下是保存給定查詢所需的步驟：
+Here are the steps required to persist a given query:
 
 >[!NOTE]
->在此之前，**GraphQL持久性查詢**&#x200B;需要啟用，以便進行相應的配置。 如需詳細資訊，請參閱設定瀏覽器中的[啟用內容片段功能。](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
+>Prior to this the **GraphQL Persistence Queries** need to be enabled, for the appropriate configuration. See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
 
-1. 將查詢PUTing到新的端點URL `/graphql/persist.json/<config>/<persisted-label>`來準備該查詢。
+1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
 
-   例如，建立持續查詢：
+   For example, create a persisted query:
 
    ```xml
    $ curl -X PUT \
@@ -565,32 +568,32 @@ query {
    }'
    ```
 
-1. 此時，請檢查回應。
+1. At this point, check the response.
 
-   例如，檢查是否成功：
+   For example, check for success:
 
-   ```xml
-   {
-     "action": "create",
-     "configurationName": "wknd",
-     "name": "plain-article-query",
-     "shortPath": "/wknd/plain-article-query",
-     "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
-   }
-   ```
+     ```xml
+     {
+       "action": "create",
+       "configurationName": "wknd",
+       "name": "plain-article-query",
+       "shortPath": "/wknd/plain-article-query",
+       "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
+     }
+     ```
 
-1. 然後，您可以透過GETing the URL `/graphql/execute.json/<shortPath>`來重播持續查詢。
+1. You can then replay the persisted query by GETing the URL `/graphql/execute.json/<shortPath>`.
 
-   例如，使用持續查詢：
+   For example, use the persisted query:
 
    ```xml
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
 
-1. 將POSTing的持續查詢更新為現有的查詢路徑。
+1. Update a persisted query by POSTing to an already existing query path.
 
-   例如，使用持續查詢：
+   For example, use the persisted query:
 
    ```xml
    $ curl -X POST \
@@ -614,9 +617,9 @@ query {
    }'
    ```
 
-1. 建立包裝的普通查詢。
+1. Create a wrapped plain query.
 
-   例如：
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -627,9 +630,9 @@ query {
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
    ```
 
-1. 使用快取控制建立包裝的純查詢。
+1. Create a wrapped plain query with cache control.
 
-   例如：
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -640,9 +643,9 @@ query {
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
    ```
 
-1. 使用參數建立持續查詢：
+1. Create a persisted query with parameters:
 
-   例如：
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -666,62 +669,62 @@ query {
      }'
    ```
 
-1. 使用參數執行查詢。
+1. Executing a query with parameters.
 
-   例如：
+   For example:
 
    ```xml
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   
+
    $ curl -X GET \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-1. 要在發佈時執行查詢，需要複製相關的持久樹
+1. To execute the query on publish, the related persist tree need to replicated
 
-   * 使用POST進行複製：
+   * Using a POST for replication:
 
-      ```xml
-      $curl -X POST   http://localhost:4502/bin/replicate.json \
-        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-        -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-        -F cmd=activate
-      ```
+     ```xml
+     $curl -X POST   http://localhost:4502/bin/replicate.json \
+       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
+       -F cmd=activate
+     ```
 
-   * 使用包：
-      1. 建立新包定義。
-      1. 包括配置（例如`/conf/wknd/settings/graphql/persistentQueries`）。
-      1. 建立套件。
-      1. 複製包。
-   * 使用複製／分發工具。
-      1. 前往「散發」工具。
-      1. 為配置選擇樹激活（例如`/conf/wknd/settings/graphql/persistentQueries`）。
-   * 使用工作流（通過工作流啟動程式配置）:
-      1. 定義工作流啟動程式規則，用於執行將複製不同事件（例如，建立、修改等）上的配置的工作流模型。
+   * Using a package:
+     1. Create a new package definition.
+     1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
+     1. Build the package.
+     1. Replicate the package.
 
+   * Using replication/distribution tool.
+     1. Go to the Distribution tool.
+     1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
+   * Using a workflow (via workflow launcher configuration):
+     1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 
-1. 在查詢設定開啟發佈後，就會套用相同的原則，只要使用發佈端點。
-
-   >[!NOTE]
-   >
-   >對於匿名訪問，系統假定ACL允許「每個人」訪問查詢配置。
-   >
-   >如果不是這樣，它將無法執行。
+1. Once the query configuration is on publish, the same principles apply, just using the publish endpoint.
 
    >[!NOTE]
    >
-   >URL中的任何分號(&quot;;&quot;)都需要進行編碼。
+   >For anonymous access the system assumes that the ACL allows "everyone" to have access to the query configuration.
    >
-   >例如，如同在「執行持續查詢」的請求中：
+   >If that is not the case it will not be able to execute.
+
+   >[!NOTE]
    >
+   >Any semicolons (";") in the URLs need to be encoded.
    >
-   ```xml
+   >For example, as in the request to Execute a persisted query:
+   >
+   >```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
+-->
 
 ## 從外部網站{#query-graphql-endpoint-from-external-website}查詢GraphQL端點
 
@@ -740,8 +743,13 @@ query {
 
 此配置必須指定必須授予訪問權的受信任網站源`alloworigin`或`alloworiginregexp`。
 
-例如，要授予對`https://my.domain`的GraphQL端點和持久查詢端點的訪問權，可以使用：
+<!--
+For example, to grant access to the GraphQL endpoint and persisted queries endpoint for `https://my.domain` you can use:
+-->
 
+例如，要授予對`https://my.domain`的GraphQL端點的訪問權，可使用：
+
+<!--
 ```xml
 {
   "supportscredentials":true,
@@ -771,6 +779,39 @@ query {
   "allowedpaths":[
     "/content/_cq_graphql/global/endpoint.json",
     "/graphql/execute.json/.*"
+  ]
+}
+```
+-->
+
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json"
   ]
 }
 ```
