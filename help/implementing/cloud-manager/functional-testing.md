@@ -2,9 +2,9 @@
 title: 功能測試——雲端服務
 description: 功能測試——雲端服務
 translation-type: tm+mt
-source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
+source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '415'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 4%
 
 * 產品功能測試
 * 自訂功能測試
-* 自訂UI測試
 
 ## 產品功能測試{#product-functional-testing}
 
@@ -34,12 +33,6 @@ ht-degree: 4%
 
 >[!NOTE]
 >「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。這些記錄檔不包含實際AEM執行階段程式的記錄檔——這些記錄檔可使用一般的「下載」或「尾部記錄檔」功能來存取。 有關詳細資訊，請參閱[訪問和管理日誌](/help/implementing/cloud-manager/manage-logs.md)。
-
-## 自訂UI測試{#custom-ui-testing}
-
-您可編寫自訂UI測試，讓客戶快速建立測試自動化套件，以驗證以AEM為基礎的網頁和行動應用程式。
-
-若要進一步瞭解如何編寫自訂UI測試，請參閱[建立UI測試](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html#building-ui-tests)。
 
 
 ### 編寫功能測試{#writing-functional-tests}
@@ -87,7 +80,7 @@ ht-degree: 4%
 
 ### 本地測試執行{#local-test-execution}
 
-由於測試類是JUnit測試，因此可以從主流Java IDE（如Eclipse、IntelliJ、NetBeans等）運行。
+由於測試類是JUnit測試，因此可以從主流Java IDE（如Eclipse、IntelliJ、NetBeans等）中運行。
 
 不過，在執行這些測試時，必須設定aem-testing-clients（和基礎Sling Testing Clients）預期的各種系統屬性。
 
