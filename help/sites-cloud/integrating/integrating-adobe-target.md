@@ -2,9 +2,9 @@
 title: 整合 Adobe Target
 description: '整合 Adobe Target '
 translation-type: tm+mt
-source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
+source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '1048'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Adobe Target是Adobe Marketing Cloud的一部分，可讓您透過跨所有通�
 
 ## 建立Adobe Target設定{#create-configuration}
 
-1. 導覽至「**工具**」→「**雲端服務**」。
+1. 導覽至&#x200B;**工具** → **雲端服務**。
    ![導](assets/cloudservice1.png "覽")
 2. 選擇&#x200B;**Adobe Target**。
 3. 選擇&#x200B;**建立**按鈕。
@@ -33,9 +33,33 @@ Adobe Target是Adobe Marketing Cloud的一部分，可讓您透過跨所有通�
 4. 填寫詳細資訊（請參閱下面），然後選擇&#x200B;**Connect**。
    ![](assets/open_screen1.png "ConnectConnect")
 
-### IMS 設定
+### IMS 設定 {#ims-configuration}
 
 Launch和Target的IMS設定必須能正確整合Target與AEM和Launch。 雖然Launch的IMS設定已預先設定在AEM中為雲端服務，但必須建立Target IMS設定（在布建Target後）。 請參閱[此視訊](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)和[本頁](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)以瞭解如何建立Target IMS設定。
+
+### Adobe Target租用戶ID和Adobe Target用戶端代碼{#tenant-client}
+
+設定Adobe Target租用戶ID和Adobe Target用戶端代碼欄位時，請注意下列事項：
+
+1. 對於大部分客戶而言，租用戶ID和用戶端代碼是相同的。 這表示這兩個欄位都包含相同的資訊，而且完全相同。 請務必在這兩個欄位中輸入租用戶ID。
+2. 為了舊版用途，您也可以在「租用戶ID」和「用戶端代碼」欄位中輸入不同的值。
+
+在這兩種情況下，請注意：
+
+* 依預設，用戶端代碼（如果先新增）也會自動複製至「租用戶ID」欄位。
+* 您可以選擇變更預設租用戶ID集。
+* 因此，對Target的後端呼叫將以租用戶ID為基礎，而對Target的用戶端呼叫則以用戶端代碼為基礎。
+
+如前所述，第一個案例是AEM做為雲端服務最常見的案例。 無論如何，請根據您的需求，確定&#x200B;**both**&#x200B;欄位皆包含正確的資訊。
+
+>[!NOTE]
+>
+> 如果要編輯現有的Target設定：
+>
+> 1. 重新輸入租用戶ID。
+> 2. 重新連線至Target。
+> 3. 儲存設定。
+
 
 ### 編輯目標配置{#edit-target-configuration}
 
@@ -52,7 +76,7 @@ Launch和Target的IMS設定必須能正確整合Target與AEM和Launch。 雖然L
 
 ## 使用Adobe Launch {#integrate-target-launch}將Adobe Target整合在AEM網站上
 
-AEM提供與Experience Platform Launch的立即可用整合。 借由將Adobe Target擴充功能新增至Experience Platform Launch，您就可以在AEM網頁上使用Adobe Target的功能。Target程式庫僅會使用Launch來轉換。
+AEM提供與Experience Platform Launch的立即可用整合。 借由將Adobe Target擴充功能新增至Experience Platform Launch，您就可以在AEM網頁上使用Adobe Target的功能。Target程式庫僅會使用Launch呈現。
 
 >[!NOTE]
 >
