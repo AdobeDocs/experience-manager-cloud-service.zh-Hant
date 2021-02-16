@@ -2,17 +2,17 @@
 title: ' [!DNL Adobe Experience Manager Assets] 中a [!DNL Cloud Service]的顯著變化'
 description: 與[!DNL Adobe Experience Manager 6.5相比， [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 的顯著變更。
 translation-type: tm+mt
-source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
+source-git-commit: 035d77ee4a6f9ef3593a34b2691ab6545d9e4f11
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 3%
+source-wordcount: '697'
+ht-degree: 4%
 
 ---
 
 
 # [!DNL Experience Manager Assets]變更為[!DNL Cloud Service] {#notable-changes}
 
-[!DNL Adobe Experience Manager] 這為管 [!DNL Cloud Service] 理您的Experience Manager專案帶來了許多新功能和可能。與[!DNL Experience Manager]作為[!DNL Cloud Service]的&lt;a1/>相比，[!DNL Experience Manager Assets]內部部署或代管為Adobe Managed Service有許多不同。 本文著重說明[!DNL Assets]功能的重要差異。
+[!DNL Adobe Experience Manager] 這為管 [!DNL Cloud Service] 理您的Experience Manager專案帶來了許多新功能和可能。與[!DNL Experience Manager]作為[!DNL Cloud Service]的相比，[!DNL Experience Manager Assets]內部部署或代管為Adobe Managed Service有許多不同。 本文著重說明[!DNL Assets]功能的重要差異。
 
 與[Experience Manager] 6.5相比，主要差異在於：
 
@@ -31,10 +31,14 @@ ht-degree: 3%
 * 舊版 已不提供預設的工作流程 **[!UICONTROL DAM Asset Update]**。[!DNL Experience Manager]相反，資產微服務提供可擴充、可立即使用的服務，涵蓋大部分預設資產處理（轉譯、中繼資料擷取和文字擷取，以利建立索引）。
    * 請參閱[配置和使用資產微服務](/help/assets/asset-microservices-configure-and-use.md)
    * 若要在處理中自訂工作流程步驟，可使用[後處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。
+* 不支援中繼資料回寫。
 * 使用Package Manager上載的資產需要使用[!DNL Assets]介面中的&#x200B;**[!UICONTROL 重新處理資產]**&#x200B;動作進行手動重新處理。
-* 沒有副檔名或副檔名錯誤的數位資產不會視需要處理。 例如，上傳此類資產時，資產不會發生任何情況，或是會套用錯誤的處理設定檔。 使用者仍可將二進位檔案儲存在DAM中。
+* 沒有副檔名或副檔名錯誤的數位資產不會視需要處理。 [無法自動](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html) 偵測MIME類型。例如，上傳此類資產時，資產不會發生任何情況，或是會套用錯誤的處理設定檔。 使用者仍可在DAM中儲存二進位檔案，但無副檔名。
+* [[!DNL Assets] 首頁體](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) 驗無法使用。
+* 與[在Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)中的運作方式相比，重複資產偵測的運作方式不同。
+* 僅用於位置(FPO)轉譯的產生方式與在舊版[!DNL Experience Manager]中的運作方式不同。 請參閱「Experience Manager的FPO轉譯為雲端服務」[。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)
 
-使用資產微服務產生的標準轉譯會以向後相容的方式儲存在資產儲存庫節點中（相同的命名慣例）。
+使用相同命名慣例以相容方式在資產儲存庫節點中儲存與資產Microservices生成的標準轉譯。
 
 ## 開發和測試資產微服務{#asset-microservices}
 
