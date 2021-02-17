@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager Assets] 中a [!DNL Cloud Service]的顯著變化'
 description: 與[!DNL Adobe Experience Manager 6.5相比， [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 的顯著變更。
 translation-type: tm+mt
-source-git-commit: 3e7613aa50e69e2c9789df4f2fb429ab74654110
+source-git-commit: db08a4365d264383cc143727e423ac9886bed66c
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '714'
 ht-degree: 4%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 4%
 * 不支援中繼資料回寫。 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html)中的[中繼資料回寫。
 * 使用「封裝管理器」上傳的資產需要使用[!DNL Assets]使用者介面中的「重新處理資產」動作，手動重新處理。****
 * [!DNL Assets] 不會自動偵測已上傳資產的MIME類型。沒有副檔名或副檔名錯誤的數位資產不會視需要處理。 例如，上傳此類資產時，資產不會發生任何情況，或是會套用錯誤的處理設定檔。 使用者仍可在DAM中儲存二進位檔案，但無副檔名。 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)中的[MIME類型檢測。
+* [!DNL Experience Manager] 不會 [!DNL Cloud Service] 為複合資產產生子資產。請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)中的[子資產建立。
 * [!DNL Assets] 無法使用首頁體驗。請參閱[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html)。
 * 與 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)中的[工作方式相比，重複資產偵測的運作方式不同。
 * 僅用於位置(FPO)轉譯的產生方式與舊版[!DNL Experience Manager]不同。 請參閱[ [!DNL Experience Manager] 的FPO轉譯，如a [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)。
