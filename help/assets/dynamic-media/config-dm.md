@@ -2,9 +2,9 @@
 title: 設定 Dynamic Media Cloud Service
 description: 有關如何在Adobe Experience Manager中將動態媒體設定為雲端服務的資訊。
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 5a50226bfae12440d07f9a21233ea06e118addac
 workflow-type: tm+mt
-source-wordcount: '3869'
+source-wordcount: '3868'
 ht-degree: 7%
 
 ---
@@ -46,7 +46,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## 在雲端服務中建立新的動態媒體設定{#configuring-dynamic-media-cloud-services}
+## 在雲端服務中建立動態媒體設定{#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
@@ -200,7 +200,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 #### 影像伺服器{#publishing-setup-for-image-server}的發佈設定
 
-「發佈設定」設定會決定預設如何從動態媒體傳送資產。 如果未指定任何設定，動態媒體會根據發佈設定中定義的預設設定來傳送資產。 例如，傳送不含解析度屬性的影像請求，會產生具有「預設物件解析度」設定的影像。
+「發佈設定」設定會決定預設如何從動態媒體傳送資產。 如果未指定任何設定，動態媒體會根據發佈設定中定義的預設設定來傳送資產。 例如，傳送不含解析度屬性的影像請求，會產生具有預設物件解析度設定的影像。
 
 若要設定發佈設定：在Dynamic Media Classic中，按一下「**[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器」。]**
 
