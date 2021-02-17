@@ -5,10 +5,10 @@ breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
+source-git-commit: 2749703c569b5ce060041b1c479a465fb3d0ca01
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 74%
+source-wordcount: '474'
+ht-degree: 72%
 
 ---
 
@@ -123,6 +123,6 @@ ht-degree: 74%
    + [發佈 Dynamic Media 資產](dynamic-media/publishing-dynamicmedia-assets.md)
    + [在 Dynamic Media 中使用選擇性發佈](dynamic-media/selective-publishing.md)
    + [使用選取工具](dynamic-media/working-with-selectors.md)
-   + [DHTML 檢視器生命週期結束常見問答集](dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + [Flash 檢視器生命週期結束注意事項](dynamic-media/flash-viewers-eol.md)
    + [HTTP2 傳送內容常見問答集](dynamic-media/http2faq.md)
+   + [Flash檢視器停售](dynamic-media/flash-viewers-eol.md)
+   + [DHTML檢視器生命週期結束](dynamic-media/dhtml-viewer-endoflifefaqs.md)
