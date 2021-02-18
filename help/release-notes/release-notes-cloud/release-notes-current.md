@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 77d0ae925ed3837c70e58c110b6c8360790b6aee
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1103'
 ht-degree: 3%
 
 ---
@@ -133,9 +133,10 @@ AEM as a Cloud Service SDK Build Analyzer Maven Plugin會偵測主要專案中�
 
 內容傳輸工具v1.2.2的發行日期為2021年2月1日。
 
-### [!DNL Content Transfer Tool] {#what-is-new-ctt}的新增功能
+### 內容傳輸工具{#what-is-new-ctt}的新增功能
 
-* 內容傳輸工具——使用者對應工具新增功能和UI。 這項功能會自動將現有的使用者和群組對應至其Adobe Identity Management System ID，做為內容移轉活動的一部分。 如需詳細資訊，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
+* 內容傳輸工具——使用者對應工具新增功能和UI。 這項功能會自動將現有的使用者和群組對應至其Adobe Identity Management System ID，做為內容移轉活動的一部分。
+如需詳細資訊，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
 * 內容傳輸工具現在會移轉移移集（包括子系）中參考的所有群組和使用者。
 * 在建立遷移集時，允許用戶選擇`/etc`下的某些路徑。
 
@@ -145,7 +146,7 @@ AEM as a Cloud Service SDK Build Analyzer Maven Plugin會偵測主要專案中�
 
 Best Practices Analyzer v2.1.0的發行日期為2021年2月11日。
 
-### [!DNL Best Practices Analyzer] {#what-is-new-bpa}的新增功能
+### Best Practices Analyzer {#what-is-new-bpa}的新增功能
 
 * 能夠偵測AEM Forms和AEM Forms實作的使用，並指出與移轉至AEM Forms as a Cloud Service相關的區域。
 * 能夠偵測並報告自訂元件和範本的使用情況和計數。
