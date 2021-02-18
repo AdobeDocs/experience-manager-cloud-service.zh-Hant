@@ -2,9 +2,9 @@
 title: Adobe Experience Manager雲端服務的不同與新功能
 description: '不同與新功能- Adobe Experience Manager(AEM)雲端服務。 '
 translation-type: tm+mt
-source-git-commit: 1563da55c3dfed52088d5309eeac071918ff0d51
+source-git-commit: 938f2b45a99e8884c166656694424d2123121369
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1885'
 ht-degree: 10%
 
 ---
@@ -121,13 +121,7 @@ Cloud Manager已發展為自助服務入口網站，可在其中建立並設定A
 
 * 收到這些元件的重要生命週期事件通知（例如產品更新）。
 
-目前，Cloud Manager能夠在3個地理區域（下面有更多區域）建立環境：
-
-* 美國（東部）
-
-* EMEA（荷蘭）
-
-* 亞太地區（澳洲）
+Cloud Manager在多個地理區域的資料中心建立環境，提供全球覆蓋。 CDN線上存放點(PoP)可確保為全球各地的客戶提供低延遲的內容。
 
 >[!NOTE]
 >請參閱[以雲端服務形式存取Experience Manager](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md)，以便在AEM中以雲端服務形式開始使用Cloud Manager。
@@ -266,11 +260,11 @@ Adobe Experience Manager Assets as a Cloud Service為企業提供雲端原生Paa
 
 資產產品包括雲端的新一代資產處理，以及高效能資產擷取與搜尋。
 
-有關詳細資訊，請參閱[概述和資產作為雲服務的簡介](/help/assets/overview.md)。
+如需詳細資訊，請參閱[概觀和「資產即雲端服務」簡介](/help/assets/overview.md)。
 
 ## 了解 Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
-有關詳細資訊，請參閱：
+如需詳細資訊，請參閱：
 
 * [Adobe Experience Manager as a Cloud Service 簡介](/help/overview/introduction.md)
 * Adobe Experience Manager as a Cloud Service [架構](/help/core-concepts/architecture.md)
