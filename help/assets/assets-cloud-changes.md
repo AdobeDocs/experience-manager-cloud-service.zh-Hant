@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager Assets] 中a [!DNL Cloud Service]的顯著變化'
 description: 與[!DNL Adobe Experience Manager 6.5相比， [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 的顯著變更。
 translation-type: tm+mt
-source-git-commit: db08a4365d264383cc143727e423ac9886bed66c
+source-git-commit: 6dc6445e4019664525629fe2204d255cfee37a81
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '743'
 ht-degree: 4%
 
 ---
@@ -38,6 +38,7 @@ ht-degree: 4%
 * [!DNL Assets] 無法使用首頁體驗。請參閱[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html)。
 * 與 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)中的[工作方式相比，重複資產偵測的運作方式不同。
 * 僅用於位置(FPO)轉譯的產生方式與舊版[!DNL Experience Manager]不同。 請參閱[ [!DNL Experience Manager] 的FPO轉譯，如a [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)。
+* 上傳ZIP封存檔時，[!DNL Experience Manager]作為[!DNL Cloud Service]不會解壓縮封裝在封存中的資產。 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)中的[ZIP解壓縮。
 
 使用相同的命名慣例，以向後相容的方式在資產儲存庫節點中儲存與資產Microservices生成的標準轉譯。
 
