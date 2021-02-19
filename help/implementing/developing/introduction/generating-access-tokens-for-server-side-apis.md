@@ -2,9 +2,9 @@
 title: 產生伺服器端API的存取Token
 description: 瞭解如何透過產生安全的JWT Token，以促進協力廠商伺服器與AEM之間的雲端服務通訊
 translation-type: tm+mt
-source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
+source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ exchange(config).then(accessToken => {
 
 同樣的交換可以用任何能夠生成具有正確格式的簽名的JWT令牌並調用IMS令牌交換API的語言來執行。
 
-存取Token會定義其過期的時間，通常為12小時。 Git儲存庫中有范常式式碼，可管理存取Token並在存取Token過期前加以重新整理。
+存取Token會定義其過期的時間，通常為24小時。 Git儲存庫中有范常式式碼，可管理存取Token並在存取Token過期前加以重新整理。
 
 ### 呼叫AEM API {#calling-the-aem-api}
 
@@ -120,7 +120,7 @@ AEM中的此技術帳戶使用者可使用一般方法，以權限進一步收�
 
 >[!NOTE]
 >
->本端開發存取Token的有效期為24小時，之後必須使用相同的方法重新產生它。
+>本機開發存取Token的有效期上限為24小時，之後必須使用相同的方法重新產生。
 
 開發人員可使用此Token，從其非AEM測試應用程式，以雲端服務環境的形式呼叫AEM。 通常，開發人員會將此Token與非AEM應用程式搭配使用於其膝上型電腦。 此外，AEM as a Cloud通常是非生產環境。
 
