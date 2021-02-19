@@ -2,15 +2,22 @@
 title: 正確的人，正確的角色
 description: 正確的人，正確的角色
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
 
 
 # **首先，讓適當的人擔任適當的角色**
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_chooseteam"
+>title="選擇正確的團隊"
+>abstract="將適當的人員安排在適當的工作中，協助您推動Adobe Experience Manager部署成功。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="協調KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="評估KPI"
 
 在您的組織中，可能有幾個部門擁有不同的數位體驗。 沒有治理，舞台上就會有無休止的辯論、內鬥和混亂。
 
