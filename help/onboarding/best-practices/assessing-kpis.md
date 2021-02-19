@@ -2,15 +2,22 @@
 title: 存取KPI
 description: 存取KPI
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
 
 
 # 你是在測量最重要的東西嗎？
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_assesskpis"
+>title="評估KPI"
+>abstract="在您開始Adobe Experience Manager啟動之前，所有參與專案的人都應該知道您的三大KPI是什麼，以及它們的重要性。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="協調KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="選擇合適的團隊"
 
 在您開始Adobe Experience Manager啟動之前，所有參與專案的人都應該知道您的三大KPI是什麼，以及它們的重要性。
 
