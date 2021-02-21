@@ -2,7 +2,7 @@
 title: 將動態媒體視訊或影像檢視器內嵌至網頁
 description: 瞭解如何將動態媒體視訊或影像資產內嵌在網頁上。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 22%
@@ -42,7 +42,7 @@ ht-degree: 22%
 
    請參閱[發佈影像預設集](managing-image-presets.md#publishing-image-presets)。
 
-1. 在左側導軌中，選擇下拉式選單並點選「**[!UICONTROL 檢視器]**」。
+1. 在左側導軌中，選擇下拉式清單並點選「**[!UICONTROL 檢視器]**」。
 1. 在左側導軌中，點選檢視器預設集名稱。 檢視器預設會套用至資產。
 1. 點選&#x200B;**[!UICONTROL Embed]**。
 1. 在&#x200B;**[!UICONTROL 內嵌代碼]**&#x200B;對話方塊中，將整個代碼複製到剪貼簿，然後點選&#x200B;**[!UICONTROL 關閉]**。
