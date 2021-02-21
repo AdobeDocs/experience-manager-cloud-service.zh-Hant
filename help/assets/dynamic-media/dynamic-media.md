@@ -2,10 +2,10 @@
 title: 使用 Dynamic Media
 description: 瞭解如何使用動態媒體來提供資產，以便在網頁、行動裝置和社交網站上使用。
 translation-type: tm+mt
-source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 7%
+source-wordcount: '397'
+ht-degree: 6%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 7%
 * [影片](video.md)
 * [提供動態媒體資產](delivering-dynamic-media-assets.md)
 * [管理資產](managing-assets.md)
-* [使用「快速檢視」建立自訂快顯視窗](custom-pop-ups.md)
+* [使用快速檢視來建立自訂快顯視窗](custom-pop-ups.md)
 
 另請參閱[設定動態媒體](administering-dynamic-media.md)。
 
