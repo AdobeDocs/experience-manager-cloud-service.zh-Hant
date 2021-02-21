@@ -2,9 +2,9 @@
 title: HTTP2 傳送內容常見問答集
 description: 瞭解HTTP2內容傳送。
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '758'
 ht-degree: 3%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # HTTP2 傳送內容常見問答集{#http-delivery-of-content-faq}
 
-Adobe很高興宣佈推出HTTP/2內容傳送。 使用HTTP/2時，您會注意到整體效能有所提升。
+Adobe很高興宣佈推出HTTP/2內容傳送。 使用HTTP/2時，整體效能會有所提升。
 
 ## 什麼是HTTP/2?{#what-is-http}
 
@@ -24,7 +24,7 @@ HTTP/2改善了瀏覽器和伺服器通訊的方式，讓資訊傳輸更快速�
 
 ## 轉換至HTTP/2以進行內容傳送的主要優點為何？{#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-效能的提升會因您網站的程式碼、您使用動態媒體的方式、消費者的裝置、螢幕和位置等因素而有所不同。
+由於效能改進基於各種因素，因此存在很大差異。 例如，您網站的程式碼、您如何使用動態媒體、消費者的裝置、螢幕和位置。
 
 Adobe自己的測試產生了下列結果：
 
@@ -49,7 +49,7 @@ Adobe自己的測試產生了下列結果：
 
 ## 為我的動態媒體帳戶啟用HTTP/2的程式為何？{#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-您必須[使用管理控制台建立支援案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)並要求切換至HTTP/2;它不會自動為您完成。
+[使用Admin Console建立支援案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 並要求切換至HTTP/2;它不會自動為您完成。
 
 1. 在您的支援案例中提供下列資訊：
 
@@ -69,7 +69,7 @@ Adobe自己的測試產生了下列結果：
    按一 **[!UICONTROL 下「設定>應用程式設定>一般設定」]**。查找標有&#x200B;**[!UICONTROL 「已發佈伺服器名稱」的欄位。]**&#x200B;如果您目前使用一般的動態媒體網域，您可以請求移至您自己的自訂網域，做為此移轉的一部分。
 
    1. 技術支援會根據提交請求的順序，將您新增至HTTP/2客戶候補清單。
-   1. 當Adobe準備好處理您的請求時，支援部門會與您聯絡，協調轉場並設定目標日期。
+   1. 當Adobe準備好處理您的請求時，客戶服務會聯絡您以協調轉場並設定目標日期。
    1. 完成後，您將會收到通知，並可驗證是否成功轉換至HTTP2。
 
 
@@ -80,14 +80,14 @@ Adobe自己的測試產生了下列結果：
 
 >[!NOTE]
 >
->由於轉換至HTTP/2需要清除快取，因此可能需要較長的前置時間。 因此，一次只能處理幾次客戶轉場。
+>因為轉換至HTTP/2需要清除快取，所以前置時間較長。 因此，一次只能處理幾次客戶轉場。
 
 ## 改用HTTP/2有哪些風險？{#what-are-the-risks-with-moving-to-http}
 
 轉換至HTTP/2會清除CDN中的快取，因為它需要移至新的CDN設定。
 
-非快取內容會直接點擊Adobe的原始伺服器，直到重新建立快取為止。 因此，Adobe計劃一次處理數個客戶轉場，以便在從我們的來源提取要求時仍能維持可接受的效能。
+非快取內容會直接點擊Adobe的原始伺服器，直到重新建立快取為止。 由於這項動作，Adobe計劃一次處理數個客戶轉場。 此方法可確保在從來源提取請求時仍能維持可接受的效能。
 
 ## 如何驗證URL或網站是否已使用HTTP/2啟動？{#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-您需要下載外部版本，才能與網頁瀏覽器搭配使用。 對於Firefox和Chrome，有一個名為&#x200B;**[!UICONTROL HTTP/2和SPDY Indicator]**&#x200B;的擴充功能。 瀏覽器僅安全支援HTTP/2，因此必須使用HTTPS呼叫URL以進行驗證。 如果支援HTTP/2，則以藍色Flash符號形式的擴充功能來指出，並加上標題&quot;X-Firefox-Spdy&quot;:&quot;h2&quot;。
+下載擴充功能以搭配您的網頁瀏覽器使用。 對於Firefox和Chrome，有一個名為&#x200B;**[!UICONTROL HTTP/2和SPDY Indicator]**&#x200B;的擴充功能。 瀏覽器僅安全支援HTTP/2，因此必須使用HTTPS呼叫URL以進行驗證。 如果支援HTTP/2，則會以藍色Flash符號的擴充功能，以及標題&quot;X-Firefox-Spdy&quot;:&quot;h2&quot;。
