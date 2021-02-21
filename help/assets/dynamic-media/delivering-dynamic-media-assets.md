@@ -2,7 +2,7 @@
 title: 提供動態媒體資產
 description: 瞭解如何提供動態媒體資產。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 您如何提供動態媒體資產（包括視訊和影像）取決於網站的實作方式。
 
-使用動態媒體時，您有數個選項：
+有了Dynamic Media，您有數個選項：
 
 * 如果您的網站是由AEM代管，則您想要直接將動態媒體資產新增至您的頁面。
 * 如果您的網站未在AEM上，您可以選擇：
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->智慧型影像功能可與您現有的影像預設集搭配使用，並在傳送時的最後一毫秒使用智慧功能，根據瀏覽器或網路連線速度進一步降低影像檔案大小。 如需詳細資訊，請參閱[智慧型影像](/help/assets/dynamic-media/imaging-faq.md)。
+>智慧型影像功能可與您現有的影像預設集搭配使用。 它使用傳送時最後一毫秒的智慧，根據瀏覽器或網路連線速度進一步降低影像檔案大小。 如需詳細資訊，請參閱[智慧型影像](/help/assets/dynamic-media/imaging-faq.md)。
 
 如需詳細資訊，請參閱下列主題：
 
