@@ -1,18 +1,18 @@
 ---
-title: 使用「快速檢視」建立自訂快顯視窗
-description: 在電子商務體驗中使用預設的Quickview，以便顯示包含產品資訊的快顯視窗來推動購買。 您可以觸發自訂內容以顯示在快顯視窗中。
+title: 使用快速檢視建立自訂快顯視窗
+description: 電子商務體驗會使用預設的快速檢視，以便顯示含產品資訊的快顯視窗來推動購買。 您可以觸發自訂內容以顯示在快顯視窗中。
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 1%
+source-wordcount: '1023'
+ht-degree: 0%
 
 ---
 
 
-# 使用「快速檢視」建立自訂快顯視窗 {#using-quickviews-to-create-custom-pop-ups}
+# 使用快速檢視建立自訂快顯視窗{#using-quickviews-to-create-custom-pop-ups}
 
-在電子商務體驗中使用預設的Quickview，以便顯示包含產品資訊的快顯視窗來推動購買。 不過，您可以觸發自訂內容以顯示在快顯視窗中。 根據您使用的檢視器，此功能可讓使用者按一下熱點、縮圖影像或影像地圖，以檢視資訊或相關內容。
+電子商務體驗會使用預設的快速檢視，以便顯示含產品資訊的快顯視窗來推動購買。 不過，您可以觸發自訂內容以顯示在快顯視窗中。 根據您使用的檢視器，客戶可以點選熱點、縮圖影像或影像地圖來查看資訊或相關內容。
 
 動態媒體中的下列檢視器支援快速檢視：
 
@@ -20,11 +20,11 @@ ht-degree: 1%
 * 互動式視訊（視訊播放時可點選的縮圖影像）
 * 轉盤橫幅（可點選的熱點或影像地圖）
 
-雖然每個檢視器的功能不同，但建立Quickview的程式在所有三個支援的檢視器上都相同。
+雖然每個檢視器的功能不同，但建立快速檢視的程式在所有三個支援的檢視器上都相同。
 
-**使用Quickviews建立自訂快顯視窗**
+**使用快速檢視來建立自訂快顯視窗**
 
-1. 為已上傳的資產建立快速檢視。
+1. 建立已上傳資產的快速檢視。
 
    您通常會在編輯資產時建立快速檢視，以便與您使用的檢視器搭配使用。
 
@@ -32,7 +32,7 @@ ht-degree: 1%
     <tbody>
     <tr>
     <td><strong>您使用的檢視器</strong></td>
-    <td><strong>完成這些步驟以建立Quickview</strong></td>
+    <td><strong>若要建立快速檢視，請完成下列步驟</strong></td>
     </tr>
     <tr>
     <td>互動影像</td>
@@ -55,7 +55,7 @@ ht-degree: 1%
     <tbody>
     <tr>
     <td><strong>您使用的檢視器</strong><br /> </td>
-    <td><strong>完成這些步驟，將檢視器與您的網站整合</strong></td>
+    <td><strong>若要將檢視器與您的網站整合，請完成下列步驟</strong></td>
     </tr>
     <tr>
     <td>互動式影像</td>
@@ -72,9 +72,9 @@ ht-degree: 1%
     </tbody>
    </table>
 
-1. 您使用的檢視器現在需要瞭解如何使用Quickview。
+1. 您使用的檢視器必須知道如何使用快速檢視。
 
-   若要這麼做，檢視器會使用名為`QuickViewActive`的處理常式。
+   檢視器使用名為`QuickViewActive`的處理常式。
 
    **范**
 例假設您在網頁上使用下列互動式影像的範例內嵌程式碼：
@@ -85,7 +85,7 @@ ht-degree: 1%
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **使用上述範例內嵌程式碼範例，我們有下列程式碼：**
+   **使用上述範例內嵌程式碼範例，您有下列程式碼：**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -103,12 +103,12 @@ ht-degree: 1%
    * 互動式影像檢視器：[sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * 互動式視訊檢視器：[sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. 您現在需要設定`quickViewActivate`處理常式。
+1. 現在，請設定`quickViewActivate`處理常式。
 
-   `quickViewActivate`處理常式控制檢視器中的Quickviews。 處理常式包含變數清單和函式呼叫，以便與Quickview搭配使用。 內嵌代碼提供Quickview中設定的SKU變數對應，以及範例`loadQuickView`函式呼叫。
+   `quickViewActivate`處理常式控制檢視器中的「快速檢視」。 處理常式包含變數清單和函式呼叫，以便與「快速檢視」搭配使用。 內嵌代碼提供「快速檢視」中SKU變數集的對應。 它還調用了示例`loadQuickView`函式。
 
    **變**
-數mappingMap變數，用於您的網頁中，以至Quickview中包含的SKU值和一般變數：
+數mappingMap變數，用於您的網頁中，以至「快速檢視」中包含的SKU值和一般變數：
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -116,7 +116,7 @@ ht-degree: 1%
 
    `var sku=inData.sku`
 
-   也從Quickview映射其他變數，如下所示：
+   從「快速檢視」中映射其他變數，如下所示：
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
@@ -124,7 +124,7 @@ ht-degree: 1%
    ```
 
    **函式**
-呼叫處理常式也需要函式呼叫，讓Quickview運作。您的主機頁面會假設該函式可存取。 內嵌代碼提供範例函式呼叫：
+呼叫處理常式也需要函式呼叫，才能使快速檢視運作。您的主機頁面會假設該函式可存取。 內嵌代碼提供範例函式呼叫：
 
    `loadQuickView(sku)`
 
@@ -136,15 +136,15 @@ ht-degree: 1%
    * 互動式視訊檢視器- [事件回呼](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
    * 互動式視訊檢視器中的互動式資料支援- [互動式資料支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
-1. 執行下列動作：
+1. 請執行下列動作：
 
    * 取消對embed代碼的setHandlers部分的注釋。
-   * 映射Quickview中包含的任何其他變數。
+   * 映射快速檢視中包含的任何其他變數。
 
-      * 如果您要新增其他變數，請更新`loadQuickView(sku,*var1*,*var2*)`呼叫。
+      * 如果新增更多變數，請更新`loadQuickView(sku,*var1*,*var2*)`呼叫。
    * 在檢視器外部的頁面上建立簡單的`loadQuickView`()函式。
 
-      例如，下列程式將sku值寫入瀏覽器主控台：
+      例如，下列程式碼會將SKU值寫入瀏覽器主控台：
 
    ```xml
    function loadQuickView(sku){
@@ -154,12 +154,12 @@ ht-degree: 1%
 
    * 將測試HTML頁面上傳至網頁伺服器並開啟。
 
-      在映射了Quickview中的變數並就地調用了函式後，瀏覽器控制台使用提供的示例函式將變數值寫入瀏覽器控制台。
+      快速檢視中的變數會被映射。 函式呼叫就位。 瀏覽器主控台會將變數值寫入瀏覽器主控台。 它使用提供的樣例函式來執行此操作。
 
 
 
-1. 您現在可以使用函式來叫用Quickview中的簡單快顯視窗。 下列範例會針對快顯視窗使用`DIV`。
-1. 按以下方式設定彈出式菜單`DIV`的樣式。 視需要新增您自己的其他樣式。
+1. 您現在可以使用函式來叫用「快速檢視」中的簡單快顯視窗。 下列範例會針對快顯視窗使用`DIV`。
+1. 按以下方式設定彈出式菜單`DIV`的樣式。 視需要新增額外的樣式。
 
    ```xml
    <style type="text/css">
@@ -173,7 +173,7 @@ ht-degree: 1%
 
 1. 將快顯視窗`DIV`置於HTML頁面的正文中。
 
-   其中一個元素會以ID設定，當使用者叫用Quickview時，ID會以sku值更新。 此範例也包含一個簡單按鈕，可在快顯視窗顯示後再次隱藏快顯視窗。
+   其中一個元素會以ID設定，當使用者叫用「快速檢視」時，ID會以SKU值更新。 此範例也包含一個簡單按鈕，可在快顯視窗顯示後再次隱藏。
 
    ```xml
    <div id="quickview_div" >
@@ -184,7 +184,7 @@ ht-degree: 1%
    </div>
    ```
 
-1. 新增函式以更新快顯視窗中的sku值；取代步驟5中建立的簡單函式，讓快顯視覺化。 與下列項目搭配：
+1. 若要在快顯視窗中更新SKU值，請新增函式。 將步驟5中建立的簡單函式取代為下列項目，讓快顯視窗可見：
 
    ```xml
    <script type="text/javascript">
@@ -195,14 +195,14 @@ ht-degree: 1%
    </script>
    ```
 
-1. 將測試HTML頁面上傳至您的網站伺服器並開啟。 當使用者叫用Quickview時，檢視器會顯示快顯視窗`DIV`。
+1. 將測試HTML頁面上傳至您的網站伺服器並開啟。 當使用者叫用「快速檢視」時，檢視器會顯示快顯視窗`DIV`。
 1. **如何以全螢幕模式顯示自訂快顯視窗**
 
    有些檢視器（例如互動式視訊檢視器）支援全螢幕模式顯示。 不過，如前述步驟所述，使用快顯功能會使它在全螢幕模式下顯示在檢視器後方。
 
-   若要在標準和全螢幕模式中都顯示快顯視窗，請將快顯視窗附加至檢視器容器。 要完成此操作，可使用第二個處理程式方法`initComplete`。
+   若要讓快顯視窗以標準和全螢幕模式顯示，請將快顯視窗附加至檢視器容器。 在此例中，請使用第二個處理常式方法`initComplete`。
 
-   在初始化檢視器後，會呼叫`initComplete`處理器。
+   在初始化檢視器後，會呼叫`initComplete`處理常式。
 
    ```xml
    "initComplete":function() { code block }
@@ -225,14 +225,14 @@ ht-degree: 1%
    }
    ```
 
-   在上述程式碼中，我們已執行下列動作：
+   在上述程式碼中，您已執行下列作業：
 
-   * 已識別我們的自訂快顯視窗。
+   * 已識別您的自訂快顯視窗。
    * 從DOM中移除。
    * 已識別檢視器容器。
    * 已將快顯視窗連接至檢視器容器。
 
-1. 您的整個setHandlers程式碼現在看起來應類似下列（使用互動式視訊檢視器）:
+1. 您的整個setHandlers程式碼類似於下列程式碼（使用互動式視訊檢視器）:
 
    ```xml
    s7interactivevideoviewer.setHandlers({
@@ -260,5 +260,5 @@ ht-degree: 1%
 
    `s7interactiveimageviewer.init()`
 
-   將檢視器內嵌至主機頁面後，請務必先建立檢視器例項，然後再載入處理常式，再使用`init()`呼叫檢視器。
+   將檢視器內嵌至主機頁面後，請確定已建立檢視器例項。 此外，請確定在使用`init()`呼叫檢視器之前已載入處理常式。
 
