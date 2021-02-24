@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: f4ac8168dcf394fa66460e6f4cffaff0ee6fdbab
+source-git-commit: e9dd057f3389264a7743d16133f66a9e944d13b1
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '634'
 ht-degree: 5%
 
 ---
@@ -48,7 +48,7 @@ AEM管理的CDN將可滿足大部分客戶的效能與安全性需求。 對於�
 1. 使用域名設定`X-Forwarded-Host`標頭。
 1. 使用原始網域（即AEM CDN的入口）設定「主機」標題。 價值應來自Adobe。
 1. 將SNI報頭髮送到源。 與主機標頭一樣， sni標頭必須是源域。
-1. 設定`X-Edge-Key`，以正確將流量路由至AEM伺服器。 價值應來自Adobe。
+1. 設定`X-Edge-Key`或`X-AEM-Edge-Key`（如果您的CDN刪除X-Edge-*），以正確將流量路由至AEM伺服器。 價值應來自Adobe。 如果您想要直接存取Adobe CDN的入口，請通知Adobe（當`X-Edge-Key`不存在時，將被封鎖）。
 
 在接受即時流量之前，您應向Adobe客戶支援驗證端對端流量路由是否正常運作。
 
