@@ -2,9 +2,9 @@
 title: 學習搭配使用GraphQL與AEM —— 範例內容與查詢
 description: 瞭解如何搭配AEM使用GraphQL —— 範例內容與查詢。
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1707'
 ht-degree: 5%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 5%
 * 您可以查詢與內容片段模型中欄位對應的欄位名稱
    * 請參閱[範例查詢——公司CEO和員工的完整詳細資訊](#sample-full-details-company-ceos-employees)
 
-* 除了模型中的欄位外，還有一些系統產生的欄位（以底線為先）:
+* 除了模型中的欄位外，還有一些系統產生的欄位（前面有底線）:
 
    * 針對內容：
 
@@ -59,7 +59,7 @@ ht-degree: 5%
          * 請參閱[中繼資料的範例查詢——列出標題為GB](#sample-metadata-awards-gb)的獎項中繼資料
       * `_model` :允許查詢內容片段模型（路徑和標題）
          * 請參閱[範例查詢，以瞭解來自模型的內容片段模型](#sample-wknd-content-fragment-model-from-model)
-      * `_path` :儲存庫內內容碎片的路徑
+      * `_path` :儲存庫內內容片段的路徑
          * 請參閱[範例查詢——單一特定城市片段](#sample-single-specific-city-fragment)
       * `_reference` :顯示參照；包括RTF編輯器中的內嵌引用
          * 請參閱[使用預先擷取的參照的多個內容片段的範例查詢](#sample-wknd-multiple-fragments-prefetched-references)
