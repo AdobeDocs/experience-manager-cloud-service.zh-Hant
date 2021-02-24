@@ -2,7 +2,7 @@
 title: AEM GraphQL API，用於內容片段
 description: 瞭解如何搭配AEM GraphQL API將Adobe Experience Manager(AEM)中的內容片段用作雲端服務，以進行無頭內容傳送。
 translation-type: tm+mt
-source-git-commit: 89a51faa08adc1a87d86c8e280919b3a890aae8b
+source-git-commit: e6553e5f46d87c7214fdfd888a984ca725c773d9
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 1%
@@ -268,14 +268,14 @@ GraphQL規範提供了一系列指引，說明如何建立用於查詢特定實�
 
    ![用於GraphQL的內容片](assets/cfm-graphqlapi-01.png "段模型用於GraphQL")
 
-1. 對應的GraphQL模式（從GraphiQL自動文檔輸出i）:
+1. 對應的GraphQL模式（從GraphiQL自動文檔輸出）:
    ![基於內容片段模型的GraphQL](assets/cfm-graphqlapi-02.png "模式基於內容片段模型的GraphQL模式")
 
    這表示產生的類型`ArticleModel`包含數個[欄位](#fields)。
 
    * 其中3個由用戶控制：`author`、`main`和`referencearticle`。
 
-   * AEM會自動新增其他欄位，並代表提供特定內容片段相關資訊的實用方法；在此範例中，`_path`、`_metadata`、`_variations`。 這些[幫助欄位](#helper-fields)標有前面的`_`，以區分由用戶定義的內容和已自動生成的內容。
+   * AEM會自動新增其他欄位，並代表提供特定內容片段相關資訊的實用方法；在此範例中，`_path`、`_metadata`、`_variations`。 這些[幫助欄位](#helper-fields)標有前面的`_`，以區分用戶定義的內容和自動生成的內容。
 
 1. 當使用者根據文章模型建立內容片段後，就可透過GraphQL進行詢問。 如需範例，請參閱[範例查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries)（根據[範例內容片段結構，以便與GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)搭配使用）。
 
@@ -321,8 +321,8 @@ GraphQL for AEM支援類型清單。 所有支援的內容片段模型資料類�
 
 | 內容片段模型——資料類型 | GraphQL類型 | 說明 |
 |--- |--- |--- |
-| 單行文字 | 字串、[字串] |  用於簡單字串，例如作者名稱、位置名稱等 |
-| 多行文字 | 字串 |  用於輸出文字，例如文章的正文 |
+| 單行文字 | 字串、[字串] |  用於簡單字串，例如作者名稱、位置名稱等。 |
+| 多行文字 | 字串 |  用於輸出諸如文章主體的文本 |
 | 數量 |  浮點、[浮點] | 用於顯示浮點數和常規數 |
 | 布林值 (Boolean) |  布林函數 |  用於顯示複選框→簡單的true/false語句 |
 | 日期和時間 | 日曆 |  用於以ISO 8086格式顯示日期和時間 |
