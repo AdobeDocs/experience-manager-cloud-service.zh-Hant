@@ -2,9 +2,9 @@
 title: 智慧型影像處理
 description: 智慧型影像功能可套用每位使用者獨特的檢視特性，自動提供最適合其體驗的影像，進而提升效能與參與度。
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1856'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 2%
 ## 什麼是「智慧型影像」?{#what-is-smart-imaging}
 
 智慧型影像技術可套用Adobe Sensei AI功能，並可與現有的「影像預設集」搭配使用。 它可根據用戶端瀏覽器功能自動最佳化影像格式、大小和品質，以增強影像傳送效能。
+
+>[!NOTE]
+>
+>這項功能需要您使用Adobe Experience Manager Dynamic Media隨附的現成可用CDN。 此功能不支援任何其他自訂CDN。
 
 Smart Imaging也受益於與Adobe同級最佳的優質CDN（內容放送網路）服務完全整合的額外效能提升。 此服務可在伺服器、網路和互連點之間找到最佳的Internet路由。 它會考慮最低的延遲或最低的資料包丟失率，或兩者兼而有之，而不只是使用網際網路上的預設路由。
 
