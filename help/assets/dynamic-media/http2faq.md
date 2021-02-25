@@ -2,9 +2,9 @@
 title: HTTP2 傳送內容常見問答集
 description: 瞭解HTTP2內容傳送。
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '786'
 ht-degree: 3%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 3%
 # HTTP2 傳送內容常見問答集{#http-delivery-of-content-faq}
 
 Adobe很高興宣佈推出HTTP/2內容傳送。 使用HTTP/2時，整體效能會有所提升。
+
+>[!NOTE]
+>
+>這項功能需要您使用Adobe Experience Manager Dynamic Media隨附的現成可用CDN。 此功能不支援任何其他自訂CDN。
 
 ## 什麼是HTTP/2?{#what-is-http}
 
