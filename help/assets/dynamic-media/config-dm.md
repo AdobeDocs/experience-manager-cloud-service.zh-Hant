@@ -2,9 +2,9 @@
 title: 設定 Dynamic Media Cloud Service
 description: 有關如何在Adobe Experience Manager中將動態媒體設定為雲端服務的資訊。
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3893'
 ht-degree: 4%
 
 ---
@@ -18,13 +18,26 @@ ht-degree: 4%
 
 下列架構圖說明Dynamic Media的運作方式。
 
-有了新的架構，AEM負責主要來源資產並與Dynamic Media同步處理和發佈資產：
+有了新的架構，Experience Manager負責主要來源資產，並與Dynamic Media同步處理和發佈資產：
 
 1. 當主要來源資產上傳至AEM時，它會複製至動態媒體。 此時，Dynamic Media會處理所有資產處理和轉譯產生，例如影像的視訊編碼和動態變數。
 1. 產生轉譯後，AEM可以安全地存取和預覽遠端的Dynamic Media轉譯（不會將二進位檔傳回至AEM例項）。
 1. 內容準備好發佈及核准後，它會觸發Dynamic Media服務將內容推送至傳送伺服器，並在CDN快取內容。
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
+
+>[!NOTE]
+>
+>下列功能清單要求您使用Adobe Experience Manager - Dynamic Media隨附的現成可用CDN。 這些功能不支援任何其他自訂CDN。
+>
+>* [智慧型影像](/help/assets/dynamic-media/imaging-faq.md)
+>* [快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+>* [熱連結保護](/help/assets/dynamic-media/hotlink-protection.md)
+>* [HTTP/2 內容傳送](/help/assets/dynamic-media/http2faq.md)
+>* [將動態媒體檢視器與Adobe Analytics和Experience Platform Launch整合](/help/assets/dynamic-media/launch.md)
+>* CDN層級的URL重新導向
+>* Akamai ChinaCDN（在中國以最佳方式傳送）
+
 
 <!-- OBSOLETE CONTENT
 
