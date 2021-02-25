@@ -2,17 +2,21 @@
 title: 使用Dynamic Media Classic驗證CDN快取
 description: 停用CDN（內容傳送網路）快取內容可讓您快速更新由動態媒體傳送的資產，而不需等待快取過期。
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 26%
+source-wordcount: '691'
+ht-degree: 25%
 
 ---
 
 
 # 透過Dynamic Media Classic {#invalidating-your-cdn-cached-content}使CDN快取失效
 
-CDN會快取動態媒體資產，以便快速傳送。 不過，當您更新資產時，可能會希望這些變更立即生效。 停用CDN（內容傳送網路）快取內容可讓您快速更新由動態媒體傳送的資產，而不需等待快取過期。
+動態媒體資產由CDN（內容傳送網路）快取，以快速傳送。 不過，當您更新資產時，可能會希望這些變更立即生效。 停用CDN快取內容可讓您快速更新由Dynamic Media傳送的資產，而不需等待快取過期。
+
+>[!NOTE]
+>
+>這項功能需要您使用Adobe Experience Manager Dynamic Media隨附的現成可用CDN。 此功能不支援任何其他自訂CDN。
 
 >[!IMPORTANT]
 >
