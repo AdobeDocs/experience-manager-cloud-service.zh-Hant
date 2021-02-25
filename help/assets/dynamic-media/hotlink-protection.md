@@ -2,7 +2,7 @@
 title: 在 Dynamic Media 中啟用超連結保護
 description: 有關如何在動態媒體中啟用熱連結保護的資訊。
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 5c221505c6a56411b17b52c70ce941258993bfb3
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 6%
@@ -18,6 +18,4 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->這項功能需要您使用Adobe Experience Manager Dynamic Media隨附的現成可用CDN。 此功能不支援任何其他自訂CDN。
-
-若要啟用熱連結保護，管理員必須建立支援票證，以請求對您的Dynamic Media帳戶進行配置變更。 啟動熱鏈路保護不需要額外費用。
+>這項功能需要您使用Adobe Experience Manager Dynamic Media隨附的現成可用CDN。 此功能不支援任何其他自訂CDN。 若要啟用熱連結保護，管理員必須建立支援票證，以請求對您的Dynamic Media帳戶進行配置變更。 啟動熱鏈路保護不需要額外費用。
