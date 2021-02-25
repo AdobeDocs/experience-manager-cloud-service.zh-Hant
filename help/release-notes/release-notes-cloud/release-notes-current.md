@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
 translation-type: tm+mt
-source-git-commit: 6f48b5daa5b47ad19db8b3431350111364f962fc
+source-git-commit: ad80ea25abf06fd18dd781641f215e134a18a037
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '961'
 ht-degree: 3%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 3%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為Cloud Service 2021.1.0的發行日期為2021年2月3日。
-下列版本(2021.2.0)將於2021年2月25日發行。
+[!DNL Adobe Experience Manager]作為Cloud Service 2021.2.0的發行日期為2021年2月25日。
+下列版本(2021.3.0)將於2021年3月25日發行。
 
 ## [!DNL Adobe Experience Manager Sites] 雲端服務  {#sites}
 
@@ -51,19 +51,24 @@ ht-degree: 3%
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-* [!DNL Experience Manager] 延伸「 [!DNL Cloud Service] 智慧標籤」功能，以支援在文字型資產中識別關鍵字和實體。文字會被識別、建立索引，並可做為中繼資料使用，以改善搜尋體驗，而不需進行任何設定。 請參閱[智慧型標籤](/help/assets/smart-tags.md)。
+## [!DNL Assets] {#what-is-new-assets}的新增功能
 
-* 現在支援MXF檔案格式。 請參閱[支援的檔案格式](/help/assets/file-format-support.md#video-formats)。
+* 資產可使用[!DNL Experience Manager Assets Brand Portal]來源。 它有助於從廣告公司使用者那裡蒐集資產，以用於新的行銷宣傳、攝影和專案。
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+<!-- TBD: refine this list of features and enh. for Feb release.
 
-### 新增功能 {#what-is-new-commerce}
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
 
-* 產品體驗管理：資產和體驗片段的新「商務」屬性標籤。 此標籤可讓您將產品／類別連結至資產和體驗片段。 此標籤也會顯示連結產品／類別的即時資料，以及在產品主控台中顯示詳細資料的連結。
+Indicators for expired, approved, and rejected statuses now available for assets in Column view.
 
-* 發佈的CIF Venia參考網站- 2021.02.02，其中包含最新的CIF核心元件1.7.0版。如需詳細資訊，請參閱[CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02)。
+Ability to select a root path. select if a minimum number of tags is required. 
 
-* 已發佈CIF核心元件v1.7.0。有關詳細資訊，請參閱[CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0)。
+Add a Boolean or radio widget type to metadata schema setup. -->
+
+## [!DNL Assets] {#bug-fixes-assets}中的錯誤修正
+
+* 在解決命名衝突後建立新版本的現有資產時，會覆寫原始資產的中繼資料。 (CQ-4313594)
+* 當打印具有長注釋文本的資產時，即使有空格，注釋文本也會被修剪。 (CQ-4314101)
 
 ## Cloud Manager {#cloud-manager}
 
@@ -101,23 +106,6 @@ AEM中Cloud Manager作為Cloud Service 2021.2.0的發行日期為2021年2月11�
 * 在某些情況下，內部問題可能導致環境刪除停滯。
 
 * 某些管線故障錯誤報告為管線錯誤。
-
-## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
-
-### 新增功能 {#what-is-new-foundation}
-
-* 伺服器對伺服器的驗證API呼叫——產生適當的存取Token，以便在您的外部應用程式與AEM之間，以雲端服務環境的形式進行驗證的伺服器對伺服器API呼叫。 閱讀[說明檔案](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)或參閱[教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)，瞭解更多資訊。
-
-### SDK Build Analyzers {#sdk-build-analyzers}
-
-AEM as a Cloud Service SDK Build Analyzer Maven Plugin會偵測主要專案中的問題，包括缺少相依性。 它為開發人員提供了在本機開發期間發現問題的機會，而遠在使用Cloud Manager部署至雲端環境之前。
-
-此版本新增了兩個分析器：
-
-* 重點分析器
-* bundle-nativecode
-
-如需詳細資訊，請參閱說明檔案[這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing)。
 
 ## 內容轉移工具 {#content-transfer-tool}
 
