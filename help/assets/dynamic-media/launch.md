@@ -1,20 +1,20 @@
 ---
-title: 整合 Dynamic Media 檢視器以及 Adobe Analytics 和 Adobe Launch
-description: 適用於 Adobe Launch 的 Dynamic Media 檢視器擴充功能及 Dynamic Media 檢視器 5.13 版的發行，可讓 Dynamic Media、Adobe Analytics 和 Adobe Launch 的客戶以其 Adobe Launch 設定使用 Dynamic Media 檢視器專屬的事件和資料。
+title: 將動態媒體檢視器與Adobe Analytics和Experience Platform Launch整合
+description: Adobe Experience Platform Launch的Dynamic Media Viewers擴充功能，以及Dynamic Media Viewers 5.13的發行，可讓Dynamic Media、Adobe Analytics和Experience Platform Launch的客戶在其Experience Platform Launch設定中，使用動態媒體檢視器專屬的事件和資料。
 translation-type: tm+mt
-source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '6626'
-ht-degree: 18%
+source-wordcount: '6727'
+ht-degree: 14%
 
 ---
 
 
-# 整合 Dynamic Media 檢視器以及 Adobe Analytics 和 Adobe Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# 將動態媒體檢視器與Adobe Analytics和Experience Platform Launch整合{#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
-## 什麼是動態媒體檢視器與Adobe Analytics和Adobe Launch的整合？{#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
+## 什麼是Dynamic Media Viewers與Adobe Analytics和Experience Platform Launch的整合？{#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-Adobe Launch的全新&#x200B;*動態媒體檢視器*&#x200B;擴充功能，以及最新版的Dynamic Media Viewers 5.13，可讓Dynamic Media、Adobe Analytics和Adobe Launch的客戶在其Adobe Launch設定中，使用動態媒體檢視器專用的事件和資料。
+Experience Platform Launch的全新&#x200B;*Dynamic Media Viewers*&#x200B;擴充功能，以及最新版的Dynamic Media Viewers 5.13，可讓Dynamic Media、Adobe Analytics和Experience Platform Launch的客戶在其Experience Platform Launch設定中，使用動態媒體檢視器的特定事件和資料。
 
 此整合意味著您可以使用Adobe Analytics追蹤網站上動態媒體檢視器的使用情形。 同時，您也可以將檢視者公開的事件和資料與來自Adobe或第三方的任何其他Launch擴充功能搭配使用。
 
@@ -24,19 +24,19 @@ Adobe Launch的全新&#x200B;*動態媒體檢視器*&#x200B;擴充功能，以�
 
 ### 整合的限制{#limitations-of-the-integration}
 
-* Adobe Launch的Dynamic Media檢視器整合無法在AEM作者節點中運作。 在WCM頁面發佈之前，您無法看到任何追蹤。
-* 「快顯」操作模式不支援Adobe Launch整合動態媒體檢視器，其中檢視器URL是使用「資產詳細資訊」頁面上的「URL」按鈕取得。
-* Adobe Launch整合無法與舊版檢視器Analytics整合同時使用（透過`config2=`參數）。
+* Experience Platform Launch的動態媒體檢視器整合無法在AEM作者節點中運作。 在WCM頁面發佈之前，您無法看到任何追蹤。
+* 「快顯」操作模式不支援動態媒體檢視器的Experience Platform Launch整合，其中檢視器URL是使用「資產詳細資訊」頁面上的「URL」按鈕取得。
+* Experience Platform Launch整合無法與舊版檢視器Analytics整合同時使用（透過`config2=`參數）。
 * 視訊追蹤的支援僅限核心播放追蹤，如[追蹤概述](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events)所述。 尤其是，不支援QoS、廣告、章節／區段或錯誤追蹤。
 * 使用&#x200B;*動態媒體檢視器*&#x200B;擴充功能的資料元素不支援資料元素的儲存時間設定。 儲存持續時間必須設定為&#x200B;**[!UICONTROL 無]**。
 
 ### 整合{#use-cases-for-the-integration}的使用案例
 
-與Adobe Launch整合的主要使用案例是同時使用AEM Assets和AEM Sites的客戶。 在這類情況下，您可以在AEM作者節點和Adobe Launch之間設定標準整合，然後將您的Sites例項與Adobe Launch屬性建立關聯。 之後，任何新增至「網站」頁面的Dynamic Media WCM元件都會追蹤檢視器的資料和事件。
+與Experience Platform Launch整合的主要使用案例是同時使用AEM Assets和AEM Sites的客戶。 在這類情況下，您可以在AEM作者節點和Experience Platform Launch之間設定標準整合，然後將您的Sites例項與Experience Platform Launch屬性建立關聯。 之後，任何新增至「網站」頁面的Dynamic Media WCM元件都會追蹤檢視器的資料和事件。
 
 請參閱[關於在AEM Sites中追蹤動態媒體檢視器](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites)。
 
-整合支援的次要使用案例是那些僅使用AEM Assets或Dynamic Media Classic的客戶。 在這種情況下，您會取得檢視器的內嵌代碼，並將其新增至網站頁面。 然後，從Adobe Launch取得Adobe Launch程式庫生產URL，並手動將它新增至網頁程式碼。
+整合支援的次要使用案例是那些僅使用AEM Assets或Dynamic Media Classic的客戶。 在這種情況下，您會取得檢視器的內嵌程式碼，並將它新增至網站頁面。 然後，從Experience Platform Launch取得Experience Platform Launch程式庫生產URL，並手動將其新增至網頁程式碼。
 
 請參閱[關於使用內嵌程式碼追蹤動態媒體檢視器。](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode)
 
@@ -48,31 +48,31 @@ Adobe Launch的全新&#x200B;*動態媒體檢視器*&#x200B;擴充功能，以�
 
 Adobe Analytics可讓您追蹤使用者在與網站上的動態媒體檢視器互動時所執行的動作。 Adobe Analytics也可讓您追蹤檢視器特定的資料。 例如，您可以追蹤和記錄檢視載入事件以及資產名稱、發生的任何縮放動作、視訊播放動作等。
 
-在Adobe Launch中，*資料元素*&#x200B;和&#x200B;*規則*&#x200B;的概念可搭配運作，以啟用Adobe Analytics追蹤。
+在Experience Platform Launch中，*資料元素*&#x200B;和&#x200B;*規則*&#x200B;的概念可搭配運作，以啟用Adobe Analytics追蹤。
 
-#### 關於Adobe Launch {#about-data-elements-in-adobe-launch}中的資料元素
+#### 關於Experience Platform Launch {#about-data-elements-in-adobe-launch}中的資料元素
 
-Adobe Launch中的「資料元素」是指名稱的屬性，其值會以靜態方式定義，或根據網頁狀態或動態媒體檢視器資料動態計算。
+Experience Platform Launch中的資料元素是指名的屬性，其值會以靜態方式定義，或根據網頁狀態或動態媒體檢視器資料動態計算。
 
-「資料元素」定義的可用選項取決於Adobe Launch屬性中安裝的擴充功能清單。 「核心」擴充功能已預先安裝，在任何組態中都可立即使用。 此「核心」擴充功能可定義來自Cookie、JavaScript程式碼、查詢字串和許多其他來源的資料元素。
+「資料元素」定義的可用選項取決於「Experience Platform Launch屬性」中安裝的擴充功能清單。 「核心」擴充功能已預先安裝，在任何組態中都可立即使用。 此「核心」擴充功能可定義來自Cookie、JavaScript程式碼、查詢字串和許多其他來源的資料元素。
 
 對於Adobe Analytics追蹤，需要安裝數個額外的擴充功能，如[安裝與設定擴充功能](#installing-and-setup-of-extensions)所述。 動態媒體檢視器擴充功能可新增定義資料元素的功能，其值是動態檢視器事件的引數。 例如，可參考檢視器類型，或載入時檢視器所報告的資產名稱、使用者縮放時所報告的縮放等級等等。
 
 動態媒體檢視器擴充功能會自動更新其資料元素的值。
 
-在您定義資料元素後，您就可以使用「資料元素」選擇器Widget，在Adobe Launch UI的其他位置使用資料元素。 尤其是，為「動態媒體檢視器」追蹤而定義的「資料元素」，將會由規則中Adobe Analytics擴充功能的「設定變數動作」引用（請參閱下文）。
+定義後，「資料元素」可以使用「資料元素」選擇器Widget，用於Experience Platform Launch UI的其他位置。 尤其是，為「動態媒體檢視器」追蹤而定義的「資料元素」，將會由規則中Adobe Analytics擴充功能的「設定變數動作」引用（請參閱下文）。
 
 如需詳細資訊，請參閱Experience Platform Launch使用指南中的[資料元素](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference)。
 
-#### 關於Adobe Launch {#about-rules-in-adobe-launch}中的規則
+#### 關於Experience Platform Launch {#about-rules-in-adobe-launch}中的規則
 
-Adobe Launch中的規則是一種不可知的設定，可定義構成規則的三個區域：*Events*、*Conditions*&#x200B;和&#x200B;*Actions*:
+Experience Platform Launch中的規則是一種不可知的設定，可定義組成規則的三個區域：*Events*、*Conditions*&#x200B;和&#x200B;*Actions*:
 
-* *事件* （如果）會告訴Adobe Launch何時觸發規則。
-* *條件* （如果）告知Adobe Launch在觸發規則時允許或禁止哪些其他限制。
-* *動作* （接著）會告訴Adobe Launch在觸發規則時要做什麼。
+* *事件* （如果）會告訴Experience Platform Launch何時觸發規則。
+* *條件* （如果）告知Experience Platform Launch在觸發規則時允許或禁止哪些其他限制。
+* *動作* （接著）告訴「體驗平台啟動」在觸發規則時要執行什麼動作。
 
-「事件」、「條件」和「動作」區段中可用的選項，取決於Adobe Launch屬性中安裝的擴充功能。 *Core*&#x200B;擴充功能已預先安裝，在任何組態中都可立即使用。 此擴充功能提供數個事件選項，例如基本的瀏覽器層級動作，包括焦點變更、按鍵、表單提交等。 它也包含條件選項，例如Cookie值、瀏覽器類型等。 對於「動作」，只有「自訂代碼」選項可用。
+「事件」、「條件」和「動作」區段中可用的選項，取決於Experience Platform Launch屬性中安裝的擴充功能。 *Core*&#x200B;擴充功能已預先安裝，在任何組態中都可立即使用。 此擴充功能提供數個事件選項，例如基本的瀏覽器層級動作，包括焦點變更、按鍵、表單提交等。 它也包含條件選項，例如Cookie值、瀏覽器類型等。 對於「動作」，只有「自訂代碼」選項可用。
 
 對於Adobe Analytics追蹤，必須安裝數個額外的擴充功能，如[安裝與設定擴充功能](#installing-and-setup-of-extensions)所述。 具體而言：
 
@@ -92,7 +92,7 @@ Adobe Launch中的規則是一種不可知的設定，可定義構成規則的�
 
 #### 配置示例{#sample-configuration}
 
-Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資產名稱。
+Experience Platform Launch中的下列範例設定示範如何在檢視器載入時追蹤資產名稱。
 
 1. 在&#x200B;**[!UICONTROL 資料元素]**&#x200B;標籤中，定義資料元素`AssetName`，該資料元素參考動態媒體檢視器擴充功能中`LOAD`事件的`asset`參數。
 
@@ -126,11 +126,11 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 ## 使用動態媒體檢視器擴充功能{#using-the-dynamic-media-viewers-extension}
 
-如[整合的使用案例](#use-cases-for-the-integration)所述，您可在AEM Sites中使用新的Adobe Launch整合以及使用內嵌代碼來追蹤動態媒體檢視器。
+如[整合的使用案例](#use-cases-for-the-integration)所述，您可在AEM Sites中使用新的Experience Platform Launch整合，並使用內嵌代碼來追蹤動態媒體檢視器。
 
 ### 追蹤AEM Sites {#tracking-dynamic-media-viewers-in-aem-sites}中的動態媒體檢視器
 
-若要追蹤AEM Sites中的Dynamic Media檢視器，必須執行[「設定所有整合項目](#configuring-all-the-integration-pieces)」區段下列出的所有步驟。 具體而言，您必須建立IMS設定和Adobe Launch Cloud設定。
+若要追蹤AEM Sites中的Dynamic Media檢視器，必須執行[「設定所有整合項目](#configuring-all-the-integration-pieces)」區段下列出的所有步驟。 具體而言，您必須建立IMS設定和Experience Platform Launch Cloud設定。
 
 在正確設定後，您使用動態媒體支援的WCM元件新增至「網站」頁面的任何動態媒體檢視器，都會自動追蹤資料至Adobe Analytics、Adobe Analytics for Video，或兩者。
 
@@ -138,36 +138,36 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 ### 使用內嵌代碼{#tracking-dynamic-media-viewers-using-embed-code}追蹤動態媒體檢視器
 
-未使用AEM Sites或將Dynamic Media檢視器內嵌至AEM Sites以外網頁（或兩者皆未使用）的客戶，仍可使用Adobe Launch整合。
+未使用AEM Sites或將Dynamic Media檢視器內嵌至AEM Sites以外網頁（或兩者皆未使用）的客戶，仍可使用Experience Platform Launch整合。
 
-您必須完成「設定Adobe Analytics」和「 [設定Adobe Launch](#configuring-adobe-analytics-for-the-integration)[」區段的設定步驟](#configuring-adobe-launch-for-the-integration) 。不過，不需要AEM相關的設定步驟。
+您必須完成[設定Adobe Analytics](#configuring-adobe-analytics-for-the-integration)和[設定Experience Platform Launch](#configuring-adobe-launch-for-the-integration)章節中的設定步驟。 不過，不需要AEM相關的設定步驟。
 
-在正確設定後，您可以使用Dynamic Media檢視器將Adobe Launch支援新增至網頁。
+在正確設定後，您可以使用Dynamic Media檢視器將Experience Platform Launch支援新增至網頁。
 
-請參閱[新增Launch內嵌代碼](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch)以進一步瞭解如何使用Adobe Launch程式庫內嵌代碼。
+請參閱[新增Launch內嵌代碼](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch)以進一步瞭解如何使用Experience Platform Launch程式庫內嵌代碼。
 
 請參閱[將視訊或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)，進一步瞭解如何使用AEM Dynamic Media的內嵌程式碼功能。
 
 **若要使用內嵌程式碼追蹤動態媒體檢視器**
 
 1. 讓網頁準備好嵌入動態媒體檢視器。
-1. 先登入Adobe Launch，以取得Adobe Launch程式庫的內嵌代碼（請參閱「設定Adobe Launch](#configuring-adobe-launch-for-the-integration)」）。[
+1. 首先登入Experience Platform Launch，以取得Experience Platform Launch程式庫的內嵌代碼（請參閱[設定Experience Platform Launch](#configuring-adobe-launch-for-the-integration)）。
 1. 按一下&#x200B;**[!UICONTROL 屬性]** ，然後按一下&#x200B;**[!UICONTROL 環境]**&#x200B;頁籤。
 1. 選擇與網頁環境相關的環境級別。 然後，在&#x200B;**[!UICONTROL Install]**&#x200B;欄中，按一下框表徵圖。
-1. **[!UICONTROL 在「Web Install]** Instructions」（網頁安裝指示）對話方塊中，複製完整的Adobe Launch程式庫內嵌程式碼以及周圍的 `<script/>` 標籤。
+1. **[!UICONTROL 在「Web Install]** Instructions」（網頁安裝指示）對話方塊中，複製完整的Experience Platform Launch程式庫內嵌代碼以及周圍的 `<script/>` 標籤。
 
 ## 動態媒體檢視器擴充功能參考指南{#reference-guide-for-the-dynamic-media-viewers-extension}
 
 ### 關於動態媒體檢視器組態{#about-the-dynamic-media-viewers-configuration}
 
-如果下列所有條件都成立，Dynamic Media Viewer擴充功能會自動與Adobe Launch程式庫整合：
+如果下列所有條件成立，Dynamic Media Viewer擴充功能會自動與Experience Platform Launch程式庫整合：
 
-* Adobe Launch程式庫全域物件(`_satellite`)會出現在頁面上。
+* Experience Platform Launch程式庫全域物件(`_satellite`)出現在頁面上。
 * 動態媒體檢視器擴充功能`_dmviewers_v001()`定義於`_satellite`。
 
 * `config2=` 未指定檢視器參數，這表示檢視器不使用舊版Analytics整合。
 
-此外，還有選項可在檢視器的設定中指定`launch=0`參數，以明確停用檢視器中的Adobe Launch整合。 此參數的預設值為`1`。
+此外，還有選項可在檢視器的設定中指定`launch=0`參數，以明確停用檢視器中的Experience Platform Launch整合。 此參數的預設值為`1`。
 
 ### 設定動態媒體檢視器擴充功能{#configuring-the-dynamic-media-viewers-extension}
 
@@ -198,7 +198,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 任何動態媒體檢視器在網頁上都有唯一識別碼。「資料元素」會追蹤值本身，以及填入值的檢視器。這表示，如果同一頁面上有數個檢視器，且有 **[!UICONTROL AssetName]** Data Element指向 **[!UICONTROL LOAD事件及其「asset」引數，]** AssetName **** Data Element會維護與頁面上載入的每個檢視器相關聯的資產名稱集合。
 
-「資料元素」傳回的確切值取決於上下文。 如果「規則」中要求「資料元素」，而「規則」是由動態媒體檢視器事件觸發，則會傳回啟動「規則」的檢視器的「資料元素」值。 此外，如果「資料元素」是在某個規則中請求，而該規則是由某個事件從某個其他Adobe Launch擴充功能觸發，則「資料元素」的值是檢視器中最後一個用來更新此「資料元素」的值。
+「資料元素」傳回的確切值取決於上下文。 如果「規則」中要求「資料元素」，而「規則」是由動態媒體檢視器事件觸發，則會傳回啟動「規則」的檢視器的「資料元素」值。 此外，如果「資料元素」是在某個規則中請求，而該規則是由某個事件從其他「體驗平台啟動」擴充功能觸發，則「資料元素」的值是檢視器中最後一個用來更新此「資料元素」的值。
 
 **請考慮下列範例設定**:
 
@@ -212,7 +212,7 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 * **[!UICONTROL TrackKeyRule]** 包含下列項目：
 
-   * 使用核心Adobe Launch擴充功能的按鍵事件做為觸發器。
+   * 使用核心體驗平台啟動擴充功能的按鍵事件做為觸發器。
    * 傳送&#x200B;**[!UICONTROL ZoomScale]**&#x200B;資料元素的值至Adobe Analytics。
 
 現在，假設使用者載入含有兩個檢視器的網頁。 在&#x200B;*viewer1*&#x200B;中，它們放大至50%比例；然後，在&#x200B;*viewer2*&#x200B;中，它們會放大至25%的比例。 在&#x200B;*viewer1*&#x200B;中，它們會平移影像，最後按鍵盤上的鍵。
@@ -222,9 +222,9 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 * 第一次呼叫的發生是因為當使用者在&#x200B;*viewer1*&#x200B;中平移時，會觸發&#x200B;**[!UICONTROL TrackPan]**&#x200B;規則。 此呼叫會傳送50%作為&#x200B;**[!UICONTROL ZoomScale]**&#x200B;資料元素的值，因為資料元素會知道規則是由&#x200B;*viewer1*&#x200B;觸發，並擷取對應的比例值；
 * 第二次呼叫是因為當使用者按下鍵盤上的鍵時，會觸發&#x200B;**[!UICONTROL TrackKey]**&#x200B;規則。 該呼叫會以&#x200B;**[!UICONTROL ZoomScale]**&#x200B;資料元素的值傳送25%，因為檢視器未觸發規則。 因此，「資料元素」會傳回最新的值。
 
-上述設定的範例也會影響「資料元素」值的壽命。 即使檢視器本身已置於網頁上，動態媒體檢視器所管理的資料元素值仍會儲存在Adobe Launch程式庫程式碼中。 這表示如果規則是由非動態媒體檢視器擴充功能所觸發並參考資料元素，資料元素會傳回最後一個已知值，即使檢視器不再存在於網頁上亦然。
+上述設定的範例也會影響「資料元素」值的壽命。 即使檢視器本身已置於網頁上，動態媒體檢視器管理的資料元素值仍會儲存在Experience Platform Launch程式庫程式碼中。 這表示如果規則是由非動態媒體檢視器擴充功能所觸發並參考資料元素，資料元素會傳回最後一個已知值，即使檢視器不再存在於網頁上亦然。
 
-無論如何，動態媒體檢視器所驅動之資料元素的值不會儲存在本機儲存或伺服器上；而是僅保留在用戶端的Adobe Launch程式庫中。 當網頁重新載入時，此類「資料元素」的值會消失。
+無論如何，動態媒體檢視器所驅動之資料元素的值不會儲存在本機儲存或伺服器上；而是僅保留在用戶端的Experience Platform Launch程式庫中。 當網頁重新載入時，此類「資料元素」的值會消失。
 
 通常，「資料元素」編輯器支援[儲存持續時間選擇](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=en#create-a-data-element)。 不過，使用動態媒體檢視器擴充功能的資料元素僅支援儲存期間選項&#x200B;**[!UICONTROL 無]**。 在使用者介面中可以設定任何其他值，但「資料元素」行為在此例中並未定義。 擴充功能可自行管理資料元素的值：在整個檢視器生命週期中維護檢視器事件引數值的資料元素。
 
@@ -398,19 +398,19 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
 如果您尚未完成此作業，Adobe建議您在本節之前仔細檢視所有檔案，以瞭解完整整合。
 
-本節說明整合動態媒體檢視器與Adobe Analytics和Adobe Analytics for Audio and Video的必要設定步驟。 雖然Adobe Launch可能會將動態媒體檢視器擴充功能用於其他用途，但本檔案未涵蓋此類案例。
+本節說明整合動態媒體檢視器與Adobe Analytics和Adobe Analytics for Audio and Video的必要設定步驟。 雖然可在Experience Platform Launch中將動態媒體檢視器擴充功能用於其他用途，但本檔案未涵蓋此類案例。
 
 您將在下列Adobe產品中設定整合：
 
 * Adobe Analytics —— 您將設定追蹤變數和報表。
-* Adobe Launch —— 您將定義屬性、一或多個規則以及一或多個資料元素，以啟用檢視器追蹤。
+* Experience Platform Launch —— 您將定義屬性、一或多個規則以及一或多個資料元素，以啟用檢視器追蹤。
 
 此外，如果此整合解決方案與AEM Sites搭配使用，也需要進行下列設定：
 
-* Adobe I/O Console —— 已針對Adobe Launch建立整合。
-* AEM作者節點- IMS設定和Adobe Launch雲端設定。
+* Adobe I/O Console —— 為Experience Platform Launch建立整合。
+* AEM作者節點- IMS設定和Experience Platform Launch雲端設定。
 
-在設定中，請確定您有權存取已啟用Adobe Analytics和Adobe Launch的Adobe Experience Cloud公司。
+在設定中，請確定您有權存取已啟用Adobe Analytics和Experience Platform Launch的Adobe Experience Cloud公司。
 
 ## 設定整合{#configuring-adobe-analytics-for-the-integration}的Adobe Analytics
 
@@ -479,43 +479,43 @@ Adobe Launch中的下列範例設定示範如何在檢視器載入時追蹤資�
 
    ![image2019-6-26_23-12-49](/help/assets/dynamic-media/assets/image2019-6-26_23-12-49.png)
 
-## 設定整合{#configuring-adobe-launch-for-the-integration}的Adobe Launch
+## 設定整合{#configuring-adobe-launch-for-the-integration}的Experience Platform Launch
 
-在您設定Adobe Launch後，將會針對整合設定下列項目：
+在您設定Experience Platform Launch後，將針對整合設定下列項目：
 
 * 建立新屬性，讓您的所有組態保持一致。
 * 擴充功能的安裝與設定。 屬性中安裝的所有擴充功能的用戶端程式碼會一起編譯為程式庫。 此程式庫稍後會由網頁使用。
 * 設定資料元素和規則。 此設定定義要從動態媒體檢視器擷取哪些資料、何時觸發追蹤邏輯，以及在Adobe Analytics中傳送檢視器資料的位置。
 * 發佈資料庫。
 
-**若要設定整合的Adobe Launch**:
+**若要設定整合的Experience Platform Launch**:
 
-1. 從Experience Cloud [首頁](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)存取Adobe Launch開始。 在功能表列上，按一下頁面右上角的「解決方案」圖示（三乘三個點表），然後按一下&#x200B;**[!UICONTROL Launch]**。
+1. 首先，從Experience Cloud [首頁](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)存取Experience Platform Launch。 在功能表列上，按一下頁面右上角的「解決方案」圖示（三乘三個點表），然後按一下&#x200B;**[!UICONTROL Launch]**。
 
-   您也可以[直接開啟Adobe Launch](https://launch.adobe.com/)。
+   您也可以[直接開啟Experience Platform Launch](https://launch.adobe.com/)。
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
-### 在Adobe Launch中建立屬性{#creating-a-property-in-adobe-launch}
+### 在Experience Platform Launch中建立屬性{#creating-a-property-in-adobe-launch}
 
-Adobe Launch中的屬性是指名的設定，可讓所有設定保持一致。 會產生組態設定的程式庫，並發佈至不同的環境層級（開發、接移和生產）。
+Experience Platform Launch中的屬性是指名的設定，可讓所有設定保持一致。 會產生組態設定的程式庫，並發佈至不同的環境層級（開發、接移和生產）。
 
 另請參閱[建立啟動屬性](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch)。
 
-1. 在Adobe Launch中，按一下「新增屬性」。****
+1. 在Experience Platform Launch中，按一下「新增屬性」。****
 1. 在「建 **[!UICONTROL 立屬性]** 」對話方塊的「名稱 **** 」欄位中，輸入描述性名稱，例如網站的標題。例如， `DynamicMediaViewersProp.`
 1. 在&#x200B;**[!UICONTROL 網域]**&#x200B;欄位中，輸入您網站的網域。
 1. 在「進 **[!UICONTROL 階選項]** 」下拉式清單中，啟用「設定擴充功能」開發 (以後無法修改) ******，以備您要使用的擴充功能 (在本例中為「動態媒體檢視器」) 尚未發行時使用。
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
+1. 按一下「**[!UICONTROL 儲存]**」。
 
    按一下新建立的屬性，然後繼續至&#x200B;*安裝與設定擴充功能*。
 
 ### 安裝和設定擴展{#installing-and-setup-of-extensions}
 
-Adobe Launch中所有可用的擴充功能都列在&#x200B;**[!UICONTROL 擴充功能>目錄]**&#x200B;下。
+Experience Platform Launch中所有可用的擴充功能都列在&#x200B;**[!UICONTROL 擴充功能> Catalog]**&#x200B;下。
 
 要安裝擴展，請按一下&#x200B;**[!UICONTROL Install]**。 如果需要，請執行一次性擴充設定，然後按一下「儲存」。****
 
@@ -543,7 +543,7 @@ Adobe Launch中所有可用的擴充功能都列在&#x200B;**[!UICONTROL 擴充�
 
 在&#x200B;**[!UICONTROL 安裝擴充功能]**&#x200B;頁面上，展開&#x200B;**[!UICONTROL 一般]**，然後指定追蹤伺服器。 追蹤伺服器會遵循範本`<trackingNamespace>.sc.omtrdc.net`，其中`<trackingNamespace>`是布建電子郵件中取得的資訊。
 
-按一下&#x200B;**[!UICONTROL 「儲存」]**。
+按一下「**[!UICONTROL 儲存]**」。
 
 請參閱[Adobe Analytics Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref)。
 
@@ -559,31 +559,31 @@ Adobe Launch中所有可用的擴充功能都列在&#x200B;**[!UICONTROL 擴充�
 
 選取 **[!UICONTROL 啟用Adobe Analytics for Video]** ，以啟用 (開啟) 視訊心率追蹤。
 
-請注意，在編寫本文時，*動態媒體檢視器*&#x200B;擴充功能僅在建立Adobe Launch屬性以進行開發時才可用。
+請注意，在撰寫本文時，*動態媒體檢視器*&#x200B;擴充功能僅在建立Experience Platform Launch屬性以進行開發時才可用。
 
-請參閱[在Adobe Launch中建立屬性](#creating-a-property-in-adobe-launch)。
+請參閱「在Experience Platform Launch中建立屬性」[。](#creating-a-property-in-adobe-launch)
 
-安裝和安裝擴充功能後，至少會在「擴充功能>安裝」區域列出下列五個擴充功能（若您未追蹤視訊則為四個）。
+安裝和安裝擴充功能後，至少會在「擴充功能>安裝」區域列出下列五個擴充功能（若您未追蹤視訊，則會列出四個擴充功能）。
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
 ### 設定資料元素和規則{#setting-up-data-elements-and-rules}
 
-在Adobe Launch中，建立追蹤動態媒體檢視器所需的資料元素和規則。
+在Experience Platform Launch中，建立追蹤動態媒體檢視器所需的資料元素和規則。
 
-如需使用Adobe Launch進行追蹤的概觀，請參閱[整合中的資料和事件追蹤的運作方式](#how-data-and-event-tracking-works-in-the-integration)。
+請參閱[整合中的資料和事件追蹤如何運作](#how-data-and-event-tracking-works-in-the-integration)，以取得使用Experience Platform Launch進行追蹤的概觀。
 
-如需Adobe Launch中示範如何在檢視器載入時追蹤資產名稱的範例設定，請參閱[Sample configuration](#sample-configuration)。
+請參閱[Sample configuration](#sample-configuration)，以取得Experience Platform Launch中示範如何在檢視器載入時追蹤資產名稱的範例設定。
 
 如需擴充功能的詳細資訊，請參閱[設定動態媒體檢視器擴充功能](#configuring-the-dynamic-media-viewers-extension)。
 
 ### 發佈資料庫{#publishing-a-library}
 
-若要在Adobe Launch設定中進行變更（包括設定「屬性」、「擴充功能」、「規則」和「資料元素」），您必須&#x200B;*publish*&#x200B;進行此類變更。 在Adobe Launch中進行發佈是從「屬性」設定下的「發佈」標籤執行。
+若要變更Experience Platform Launch組態（包括屬性、擴充功能、規則和資料元素設定），您必須&#x200B;*publish*&#x200B;進行此類變更。 「在Experience Platform中發佈」是從「屬性」設定下的「發佈」標籤執行。
 
-Adobe Launch可能有多個開發環境、一個測試環境和一個生產環境。 依預設，AEM中的Adobe Launch Cloud設定會將AEM作者節點指向Adobe Launch的「舞台」環境，並將AEM發佈節點指向Adobe Launch的「生產」環境。 這種安排表示，有了預設的AEM設定，就必須將Adobe Launch程式庫發佈至「測試」環境，以便在AEM作者中使用它，然後將它發佈至「生產」環境，以便用於AEM發佈。
+Experience Platform Launch可能有多個開發環境、一個測試環境和一個生產環境。 依預設，AEM中的Experience Platform Launch Cloud設定會將AEM作者節點指向Experience Platform Launch的「舞台環境」，並將AEM發佈節點指向Experience Platform Launch的「生產環境」。 這種安排表示，有了預設的AEM設定，就必須將Experience Platform Launch程式庫發佈至「測試」環境，以便在AEM作者中使用它，然後將它發佈至「生產」環境，以便用於AEM發佈。
 
-如需Adobe Launch環境的詳細資訊，請參閱[Environments](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types)。
+如需Experience Platform Launch環境的詳細資訊，請參閱[環境](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types)。
 
 發佈程式庫包含下列兩個步驟：
 
@@ -592,7 +592,7 @@ Adobe Launch可能有多個開發環境、一個測試環境和一個生產環�
 
 #### 添加和構建新庫{#adding-and-building-a-new-library}
 
-1. 第一次在Adobe Launch中開啟「發佈」標籤時，程式庫清單是空的。
+1. 第一次在Experience Platform Launch中開啟「發佈」標籤時，程式庫清單是空的。
 
    在左欄中，按一下「新增程式庫」。****
 
@@ -614,7 +614,7 @@ Adobe Launch可能有多個開發環境、一個測試環境和一個生產環�
 
    >[!NOTE]
    >
-   >下次您變更Adobe Launch設定時，請前往「屬性設定」下的「 **[!UICONTROL Publishing]****** 」標籤，然後按一下先前建立的程式庫。
+   >下次您變更Experience Platform Launch設定時，請前往&#x200B;**[!UICONTROL Property]**&#x200B;設定下的&#x200B;**[!UICONTROL Publishing]**&#x200B;標籤，然後按一下先前建立的程式庫。
    >
    >
    >在程式庫發佈畫面中，按一下「新增所有變更的資源」]**，然後按一下「儲存並建立以供開發」]**。**[!UICONTROL **[!UICONTROL 
@@ -641,7 +641,7 @@ Adobe Launch可能有多個開發環境、一個測試環境和一個生產環�
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   如需Adobe Launch中發佈程式的詳細資訊，請參閱[Publishing](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference)。
+   如需Experience Platform Launch中發佈程式的詳細資訊，請參閱[Publishing](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference)。
 
 ## 為{#configuring-adobe-experience-manager-for-the-integration}整合設定Adobe Experience Manager
 
@@ -656,7 +656,7 @@ Adobe Launch可能有多個開發環境、一個測試環境和一個生產環�
 AEM設定包含下列兩個主要步驟：
 
 * AEM IMS的設定
-* Adobe Launch Cloud的設定。
+* Experience Platform Launch Cloud的設定。
 
 ### 設定AEM IMS {#configuring-aem-ims}
 
@@ -665,7 +665,7 @@ AEM設定包含下列兩個主要步驟：
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
 1. 在Adobe IMC配置頁的左上角附近，按一下&#x200B;**[!UICONTROL 建立]**。
-1. 在「 **[!UICONTROL Adobe IMS技術帳戶設定]** 」頁面的「 **[!UICONTROL Cloud Solution]** 」下拉式清單中，按一下「 **[!UICONTROL Adobe Launch]**」。
+1. 在&#x200B;**[!UICONTROL Adobe IMS技術帳戶設定]**&#x200B;頁面的&#x200B;**[!UICONTROL 雲端解決方案]**&#x200B;下拉式清單中，按一下&#x200B;**[!UICONTROL 體驗平台啟動]**。
 1. 啟用&#x200B;**[!UICONTROL 建立新憑證]**，然後在文字欄位中，為憑證輸入任何有意義的值。 例如，*AdobeLaunchIMSCert*。 按一下&#x200B;**[!UICONTROL 建立憑證]**。
 
    將顯示以下資訊消息：
@@ -725,7 +725,7 @@ AEM設定包含下列兩個主要步驟：
 
 1. 返回您先前 **[!UICONTROL 未開啟的「Adobe IMS技術帳戶設定]** 」頁面。在頁面的右上角，按一下「下一 **[!UICONTROL 步]** 」以開啟「 **** Adobe IMS Technical Account Configuration **[!UICONTROL 」視窗中的「Account]** 」 (帳戶) 頁面。
 
-   (如果您先前意外關閉頁面，請返回AEM作者，然後按一下「工 **[!UICONTROL 具>安全性> Adobe IMS設定」]**。按一下&#x200B;**[!UICONTROL 建立]**。在「雲 **[!UICONTROL 端解決方案]** 」下拉式清單中，選 **[!UICONTROL 取Adobe Launch]**。在「證 **[!UICONTROL 書]** 」下拉式清單中，選取先前建立之憑證的名稱。
+   (如果您先前意外關閉頁面，請返回AEM作者，然後按一下「工 **[!UICONTROL 具>安全性> Adobe IMS設定」]**。按一下&#x200B;**[!UICONTROL 建立]**。在&#x200B;**[!UICONTROL 雲端解決方案]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 體驗平台啟動]**。 在「證 **[!UICONTROL 書]** 」下拉式清單中，選取先前建立之憑證的名稱。
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
    _Adobe IMS技術帳戶設定——認證頁面_
@@ -774,20 +774,20 @@ AEM設定包含下列兩個主要步驟：
 
    ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-## 設定整合{#configuring-adobe-launch-cloud-for-the-integration}的Adobe Launch Cloud
+## 設定整合{#configuring-adobe-launch-cloud-for-the-integration}的Experience Platform Launch Cloud
 
-1. 在AEM作者中，在左上角附近按一下「工具」圖示（槌子），然後按一下「**[!UICONTROL 雲端服務> Adobe Launch Configurations]**」。
+1. 在AEM作者中，在左上角附近按一下「工具」圖示（槌子），然後按一下「**[!UICONTROL 雲端服務> Experience Platform Launch Configurations」（]**&#x200B;體驗平台啟動設定）。
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
-1. 在&#x200B;**[!UICONTROL Adobe Launch Configurations]**&#x200B;頁面的左側面板中，選取您要套用Adobe Launch Configuration的AEM網站。
+1. 在&#x200B;**[!UICONTROL Experience Platform Launch Configurations]**&#x200B;頁面的左側面板中，選取您要套用Experience Platform Launch Configuration的AEM網站。
 
    僅供圖解之用，在下方的螢幕擷取中選取了&#x200B;**[!UICONTROL We.Retail]**&#x200B;網站。
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
 1. 在頁面左上角附近，按一下「建 **[!UICONTROL 立」]**。
-1. 在「建 **[!UICONTROL 立]** Adobe啟動設定」視窗的「一般資訊」頁面 (1/3頁) **** 上，填寫下列欄位：
+1. 在&#x200B;**[!UICONTROL 建立體驗平台啟動設定]**&#x200B;視窗的&#x200B;**[!UICONTROL 一般]**&#x200B;頁面（1/3頁）中，填寫下列欄位：
 
    * **[!UICONTROL 標題]** -輸入描述性配置標題。例如，`We.Retail Launch cloud configuration`。
 
@@ -795,17 +795,17 @@ AEM設定包含下列兩個主要步驟：
 
    * **[!UICONTROL 公司]** -從「公 **** 司」下拉式清單中，選取您的Experience Cloud公司。清單會自動填入。
 
-   * **[!UICONTROL 屬性]** -從「屬性」下拉式清單中，選取您先前建立的Adobe Launch屬性。清單會自動填入。
+   * **[!UICONTROL 屬性]** -從「屬性」下拉式清單中，選取您先前建立的「體驗平台啟動」屬性。清單會自動填入。
    完成所有欄位後，您的&#x200B;**[!UICONTROL General]**&#x200B;頁面看起來會類似下列：
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
 1. 在左上角附近，按一下&#x200B;**[!UICONTROL Next]**。
-1. 在「建 **[!UICONTROL 立]** Adobe啟動設定」視窗的「預備」頁面 (2/3頁) **** 上，填入下列欄位：
+1. 在&#x200B;**[!UICONTROL 建立體驗平台啟動設定]**&#x200B;視窗的&#x200B;**[!UICONTROL 測試]**&#x200B;頁面（2/3頁）中，填入下列欄位：
 
-   在「程 **[!UICONTROL 式庫URI]** 」欄位中，檢查Adobe Launch程式庫的測試版本位置。AEM會自動填入此欄位。
+   在&#x200B;**[!UICONTROL 程式庫URI]**&#x200B;欄位中，檢查Experience Platform Launch程式庫的測試版本位置。 AEM會自動填入此欄位。
 
-   僅供圖例之用，此步驟將使用部署至Adobe CDN的Adobe Launch程式庫。
+   僅供圖例之用，此步驟將使用部署至Adobe CDN的Experience Platform Launch程式庫。
 
    >[!NOTE]
    >
@@ -819,19 +819,19 @@ AEM設定包含下列兩個主要步驟：
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
 1. 在右上角附近，按一下&#x200B;**[!UICONTROL Next]**。
-1. 在「建 **[!UICONTROL 立]** Adobe Launch Configuration **[!UICONTROL 」視窗的「生產」頁面 (3/3頁) 上，視需要修正自動填入的生產URI，就像在上一個「測試」頁面上所做的]****** 一樣。
+1. 在&#x200B;**[!UICONTROL 「建立體驗平台啟動設定」視窗的**[!UICONTROL  Production ]**頁面（3/3頁）上，視需要修正自動填入的生產URI，類似於在上一個**[!UICONTROL  Staging ]**頁面上所做的動作。]**
 1. 在右上角附近，按一下&#x200B;**[!UICONTROL 建立]**。
 
-   您的新Adobe Launch Cloud設定現在已建立並列在您的網站旁。
+   您的新Experience Platform Launch Cloud設定現在會建立並列在您的網站旁邊。
 
-1. 選取您的新Adobe Launch Cloud設定（選取時，設定標題左側會出現核取標籤）。 在工具列上，按一下「**[!UICONTROL 發佈]**」。
+1. 選取您的新Experience Platform Launch Cloud設定（選取時，設定標題左側會出現核取標籤）。 在工具列上，按一下「**[!UICONTROL 發佈]**」。
 
    ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
-目前，AEM作者不支援Dynamic Media Viewers與Adobe Launch的整合。
+目前，AEM作者不支援Dynamic Media Viewers與Experience Platform Launch的整合。
 
-不過，AEM發佈節點也支援它。 AEM發佈會使用Adobe Launch Cloud設定的預設設定，來使用Adobe Launch的生產環境。 因此，在測試期間，每次都必須將Adobe Launch程式庫更新從「開發」推送至「生產」環境。
+不過，AEM發佈節點也支援它。 AEM發佈會使用Experience Platform Launch Cloud設定的預設設定，使用Experience Platform Launch的生產環境。 因此，在測試期間，每次都必須將Experience Platform Launch程式庫更新從「開發」推送至「生產」環境。
 
-在上述AEM發佈的Adobe Launch Cloud設定中，指定Adobe Launch程式庫的「開發」或「測試URL」，即可解決此限制。 如此，AEM發佈節點就會使用Adobe Launch程式庫的「開發」或「測試」版本。
+在上述AEM發佈的Experience Platform Launch Cloud設定中，指定Experience Platform Launch程式庫的開發或測試URL，即可解決此限制。 如此，AEM發佈節點就會使用Experience Platform Launch程式庫的「開發」或「測試」版本。
 
-如需設定Adobe Launch Cloud設定的詳細資訊，請參閱[整合Experience Platform Launch和AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations)。
+如需設定Experience Platform Launch Cloud設定的詳細資訊，請參閱[整合Experience Platform Launch和Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations)。
