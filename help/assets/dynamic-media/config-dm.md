@@ -2,9 +2,9 @@
 title: 設定 Dynamic Media Cloud Service
 description: 有關如何在Adobe Experience Manager中將動態媒體設定為雲端服務的資訊。
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
 workflow-type: tm+mt
-source-wordcount: '3893'
+source-wordcount: '3883'
 ht-degree: 4%
 
 ---
@@ -28,13 +28,12 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->下列功能清單要求您使用Adobe Experience Manager - Dynamic Media隨附的現成可用CDN。 這些功能不支援任何其他自訂CDN。
+>下列功能清單要求您使用隨附於Adobe Experience Manager - Dynamic Media的現成可用CDN。 這些功能不支援任何其他自訂CDN。
 >
 >* [智慧型影像](/help/assets/dynamic-media/imaging-faq.md)
 >* [快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [熱連結保護](/help/assets/dynamic-media/hotlink-protection.md)
 >* [HTTP/2 內容傳送](/help/assets/dynamic-media/http2faq.md)
->* [將動態媒體檢視器與Adobe Analytics和Experience Platform Launch整合](/help/assets/dynamic-media/launch.md)
 >* CDN層級的URL重新導向
 >* Akamai ChinaCDN（在中國以最佳方式傳送）
 
@@ -151,7 +150,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. 在&#x200B;**[!UICONTROL DMSETUP]**&#x200B;頁上，查看說明故障的配置詳細資訊。 尤其要注意任何錯誤資訊或錯誤代碼。 請連絡Adobe客戶服務以取得此項資訊。
 
-   ![「動態媒體設定」頁](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+   ![「動態媒體設定」頁面](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
 ### 將密碼更改為動態媒體{#change-dm-password}
 
