@@ -2,9 +2,9 @@
 title: AEM GraphQL API，用於內容片段
 description: 瞭解如何搭配AEM GraphQL API將Adobe Experience Manager(AEM)中的內容片段用作雲端服務，以進行無頭內容傳送。
 translation-type: tm+mt
-source-git-commit: e6553e5f46d87c7214fdfd888a984ca725c773d9
+source-git-commit: 8d1e5891b72a9d3587957df5b2553265d66896d5
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2901'
 ht-degree: 1%
 
 ---
@@ -139,14 +139,6 @@ GraphQL for AEM端點的儲存庫路徑為：
 
 * 節點`cq:graphql`和`global`必須為`sling:Folder`類型。
 * 節點`endpoint`必須為`nt:unstructured`類型，並包含`graphql/sites/components/endpoint`的`sling:resourceType`。
-
->[!CAUTION]
->
->在某些版本中，端點目前存在已知問題：
->
->* 視使用的版本而定，`cq:graphql`項目會顯示在&#x200B;**Sites**主控台中；在頂層。
-   >  不得使用。
-
 
 >[!CAUTION]
 >
