@@ -4,9 +4,9 @@ description: 瞭解各種資產管理和編輯方法。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: de313ebc7a4fe89784b9083edbb790dc444caac9
+source-git-commit: 61e3f77b7d503b252a00178cebe654038ac6df83
 workflow-type: tm+mt
-source-wordcount: '4358'
+source-wordcount: '4336'
 ht-degree: 12%
 
 ---
@@ -443,7 +443,7 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
 >對於內容片段，[註解是在片段編輯器](content-fragments/content-fragments.md)中建立的。
 
 1. 導覽至您要新增附註的資產位置。
-1. 點選／按一下下列其中一項的「註解&#x200B;**[!UICONTROL 」圖示：]**
+1. 點選／按一下下列其中一項的「註解&#x200B;]**」圖示：**[!UICONTROL 
 
    * [快速動作](#quick-actions)
    * 在選取資產或導覽至資產頁面後，從工具列
@@ -541,17 +541,13 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
 
    您可以根據要在打印的PDF中顯示注釋/狀態的位置選擇其他設定。如果您希望註解/狀態顯示在與印刷資產不同的頁面中，請選擇「下 **[!UICONTROL 一頁」]**。
 
-   >[!NOTE]
-   >
-   >冗長的註解可能無法在PDF檔案中正確呈現。 為獲得最佳演算效果，Adobe建議您將註解限制在50字以內。
-
-1. 點選/按一下「 **[!UICONTROL 列印]**」。根據您在步驟2中選擇的選項，產生的PDF會在指定位置顯示註解/狀態。例如，如果您選擇使用左上角設定打印注釋和審閱狀態 **** ，則生成的輸出類似於此處所示的PDF檔案。
+1. 按一下&#x200B;**[!UICONTROL Print]**。 根據您在步驟2中選擇的選項，產生的PDF會在指定位置顯示註解/狀態。例如，如果您選擇使用左上角設定打印注釋和審閱狀態 **** ，則生成的輸出類似於此處所示的PDF檔案。
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
 1. 使用右上角的選項下載或列印PDF。
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
    要修改渲染的PDF檔案的外觀，例如注釋和狀態的字型顏色、大小和樣式、背景顏色，請從「配置管理器」中開啟&#x200B;**[!UICONTROL 「注釋PDF配置」，並修改所需的選項。]**&#x200B;例如，要更改批准狀態的顯示顏色，請修改相應欄位中的顏色代碼。 有關更改批注的字型顏色的資訊，請參閱[注釋](/help/assets/manage-digital-assets.md#annotating)。
 
@@ -559,7 +555,7 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
 
    返回轉譯的PDF檔案並重新整理它。 重新整理的PDF會反映您所做的變更。
 
-## 資產版本控制{#asset-versioning}
+## 資產版本設定 {#asset-versioning}
 
 版本設定會建立數位資產在特定時間點的快照。版本修訂功能有助於將資產還原為先前的狀態。 例如，如果您想要還原對資產所做的變更，請還原未編輯的資產版本。
 
@@ -628,7 +624,7 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. 點選／按一下清單中的「開始工作流程&#x200B;**[!UICONTROL 」。]**
+1. 點選／按一下清單中的「開始工作流程&#x200B;]**」。**[!UICONTROL 
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
