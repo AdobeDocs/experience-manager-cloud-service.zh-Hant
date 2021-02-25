@@ -2,10 +2,10 @@
 title: 在 Dynamic Media 中啟用超連結保護
 description: 有關如何在動態媒體中啟用熱連結保護的資訊。
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 7%
+source-wordcount: '191'
+ht-degree: 6%
 
 ---
 
@@ -16,4 +16,8 @@ ht-degree: 7%
 
 [Adobe客戶](https://helpx.adobe.com/support.html) 資料可在CDN層級設定反向連結篩選。如此可確保動態媒體內容僅提供給您網域許可網站清單上的網站。
 
-您必須使用Adobe的搭售CDN，才能提供Hotlink保護。 若要啟用熱連結保護，管理員必須建立支援票證以請求對動態媒體帳戶進行配置更改。 激活熱鏈路保護無需額外費用。
+>[!NOTE]
+>
+>這項功能需要您使用Adobe Experience Manager Dynamic Media隨附的現成可用CDN。 此功能不支援任何其他自訂CDN。
+
+若要啟用熱連結保護，管理員必須建立支援票證，以請求對您的Dynamic Media帳戶進行配置變更。 啟動熱鏈路保護不需要額外費用。
