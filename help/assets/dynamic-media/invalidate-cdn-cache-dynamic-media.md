@@ -2,9 +2,9 @@
 title: 透過動態媒體使CDN快取失效
 description: 停用CDN（內容傳送網路）快取內容可讓您快速更新由動態媒體傳送的資產，而不需等待快取過期。
 translation-type: tm+mt
-source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1305'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 動態媒體資產由CDN（內容傳送網路）快取，以便快速傳送給客戶。 不過，當您更新這些資產時，您可能會希望這些變更立即在您的網站上生效。 清除或停用CDN快取可讓您快速更新由動態媒體傳送的資產。 您不需等待快取使用TTL（存留時間）值（預設值為10小時）過期，而是可在動態媒體使用者介面內傳送要求，讓快取在數分鐘內過期。
 
->[!IMPORTANT]
+>[!NOTE]
 >
->這項功能需要您使用隨附於AEM Dynamic Media的現成可用CDN;不支援任何其他自訂CDN。<!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>這項功能需要您使用Adobe Experience Manager Dynamic Media隨附的現成可用CDN。 此功能不支援任何其他自訂CDN。
 
 另請參閱動態媒體中的[快取概觀。](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)
 
