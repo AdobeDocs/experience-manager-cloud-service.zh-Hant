@@ -1,10 +1,10 @@
 ---
-title: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
-description: ' [!DNL Adobe Experience Manager] 做為雲端服務的最新發行說明。'
+title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
+description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: ad80ea25abf06fd18dd781641f215e134a18a037
+source-git-commit: a93db92689928a900662a39b11bb5a7ea9724e62
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1017'
 ht-degree: 3%
 
 ---
@@ -12,14 +12,14 @@ ht-degree: 3%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 版發行說明 {#release-notes}
 
-以下章節概述[!DNL Experience Manager]做為雲端服務的一般發行說明。
+以下章節將[!DNL Experience Manager]的一般發行說明概述為Cloud Service。
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為Cloud Service 2021.2.0的發行日期為2021年2月25日。
+[!DNL Adobe Experience Manager]作為Cloud Service2021.2.0的發行日期為2021年2月25日。
 下列版本(2021.3.0)將於2021年3月25日發行。
 
-## [!DNL Adobe Experience Manager Sites] 雲端服務  {#sites}
+## [!DNL Adobe Experience Manager Sites] Cloud Service  {#sites}
 
 ### 無頭內容管理{#headless}
 
@@ -27,9 +27,9 @@ ht-degree: 3%
 
 * **[GraphQL API請求的驗證支援](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**:能夠使用伺服器端API的存取Token來驗證GraphQL API請求。
 
-* **[RemotePage元件](/help/implementing/developing/hybrid/remote-page.md)**:新增支援使用在AEM中檢視和編輯外部SPA。
+* **[RemotePage元件](/help/implementing/developing/hybrid/remote-page.md)**:新增支援在使用中檢視和編SPA輯外AEM部。
 
-* **[在AEM中編輯外部SPA](/help/implementing/developing/hybrid/editing-external-spa.md)**:新增將獨立單頁應用程式上傳至AEM例項、新增可編輯的內容區段，以及啟用編寫功能的能力。
+* **[在中編SPA輯外AEM部](/help/implementing/developing/hybrid/editing-external-spa.md)**:新增將獨立單頁應用程式上傳至例項、新增可編AEM輯的內容區段，以及啟用編寫功能的能力。
 
 * 從GraphQL API增強JSON輸出，包括以JSON格式和地區設定輸出豐富型文字的功能。
 
@@ -53,37 +53,33 @@ ht-degree: 3%
 
 ## [!DNL Assets] {#what-is-new-assets}的新增功能
 
-* 資產可使用[!DNL Experience Manager Assets Brand Portal]來源。 它有助於從廣告公司使用者那裡蒐集資產，以用於新的行銷宣傳、攝影和專案。
+* 在[!DNL Brand Portal]中，會引入新的下載設定，可讓您在下載檔案夾、系列等時，為每個資產建立個別的檔案夾。 請參閱[下載設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)。
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
-
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
-
-Ability to select a root path. select if a minimum number of tags is required. 
-
-Add a Boolean or radio widget type to metadata schema setup. -->
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## [!DNL Assets] {#bug-fixes-assets}中的錯誤修正
 
 * 在解決命名衝突後建立新版本的現有資產時，會覆寫原始資產的中繼資料。 (CQ-4313594)
 * 當打印具有長注釋文本的資產時，即使有空格，注釋文本也會被修剪。 (CQ-4314101)
+* 當選取多個資產以更新屬性時，有時候會發生錯誤，或未選取資產的屬性會更新。 (CQ-4316532)
+* 當嘗試開啟[!UICONTROL 資產管理搜尋邊欄]時，頁面仍為空白，按一下[!UICONTROL 編輯] > [!UICONTROL 設定]會產生錯誤。 (CQ-4315079)
 
 ## Cloud Manager {#cloud-manager}
 
 ### 發行日期 {#release-date-cm}
 
-AEM中Cloud Manager作為Cloud Service 2021.2.0的發行日期為2021年2月11日。
+Cloud Manager作為2021.2.0Cloud ServiceAEM的發行日期為2021年2月11日。
 
 ### 新增功能 {#what-is-new-cloud-manager}
 
 
 * 資產客戶現在可以選擇透過Cloud Manager UI以自助方式部署其品牌入口網站實例的時間和地點。 對於具有資產解決方案的一般（非沙盒）方案，現在可在生產環境中布建品牌入口網站。 在生產環境上只能執行一次置備。
 
-* 「專案與沙盒建立」中使用的AEM專案原型已更新為版本25。
+* 「專AEM案與沙盒建立」中使用的「專案原型」已更新為第25版。
 
-* 程式碼掃描期間識別的已過時API清單已改良，加入最新Cloud Service SDK版本中已淘汰的其他類別和方法。
+* 在程式碼掃描期間識別的已過時API清單已經過改良，以包含最新版Cloud ServiceSDK中已過時的其他類別和方法。
 
 * SonarQube的Cloud Manager設定檔已更新，以移除Sonar規則squid:S2142。 這將不再與「線程中斷檢查」衝突。
 
@@ -93,7 +89,7 @@ AEM中Cloud Manager作為Cloud Service 2021.2.0的發行日期為2021年2月11�
 
 * Cloud Manager UI會通知使用者，如果目前部署的網域名稱正在使用SSL憑證，可能暫時無法選取該憑證。
 
-* 已新增其他程式碼品質規則，以涵蓋雲端服務相容性問題。
+* 已新增其他程式碼品質規則，以涵蓋Cloud Service相容性問題。
 
 ### 錯誤修正 {#bug-fixes-cloud-manager}
 
@@ -123,7 +119,7 @@ AEM中Cloud Manager作為Cloud Service 2021.2.0的發行日期為2021年2月11�
 
 ### 內容傳輸工具{#what-is-new-ctt}的新增功能
 
-* 內容傳輸工具——使用者對應工具新增功能和UI。 這項功能會自動將現有的使用者和群組對應至其Adobe Identity Management System ID，做為內容移轉活動的一部分。
+* 內容傳輸工具——使用者對應工具新增功能和UI。 此功能會自動將現有的使用者和群組對應至其Adobe的Identity Management系統ID，做為內容移轉活動的一部分。
 如需詳細資訊，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
 * 內容傳輸工具現在會移轉移移集（包括子系）中參考的所有群組和使用者。
 * 在建立遷移集時，允許用戶選擇`/etc`下的某些路徑。
@@ -136,10 +132,10 @@ Best Practices Analyzer v2.1.2的發行日期為2021年2月18日。
 
 ### Best Practices Analyzer {#what-is-new-bpa}的新增功能
 
-* 能夠偵測AEM Forms和AEM Forms實作的使用，並指出與移轉至AEM Forms as a Cloud Service相關的區域。
+* 能夠發現AEM Forms和AEM Forms執行情況的使用情況，並指出與移徙到AEM Forms有關的Cloud Service。
 * 能夠偵測並報告自訂元件和範本的使用情況和計數。
 * 能夠檢測所使用的節點儲存和資料儲存的類型。
-* 能夠偵測動態媒體的使用情形。
+* 能夠偵測到Dynamic Media的使用情況。
 * 可偵測使用的Java版本。
 
 ## 程式碼重構工具 {#code-refactoring-tools}
