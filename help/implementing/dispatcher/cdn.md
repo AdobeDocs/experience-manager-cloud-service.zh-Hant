@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: e9dd057f3389264a7743d16133f66a9e944d13b1
+source-git-commit: 852a4742a17065b9d38bd78d1e68a92854001842
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 5%
 
 ---
@@ -12,53 +12,53 @@ ht-degree: 5%
 
 # AEM as a Cloud Service 中的 CDN {#cdn}
 
-AEM as Cloud Service隨附內建CDN。 其主要目的是透過從邊緣的CDN節點（在瀏覽器附近）傳送可快取的內容，來減少延遲。 它已完全受管理，並且已設定為提供最佳的 AEM 應用程式效能。
+因AEM為Cloud Service隨附內建CDN。 其主要目的是透過從邊緣的CDN節點（在瀏覽器附近）傳送可快取的內容，來減少延遲。 它已完全受管理，並且已設定為提供最佳的 AEM 應用程式效能。
 
-AEM管理的CDN將可滿足大部分客戶的效能與安全性需求。 對於發佈層，客戶可選擇從自己的CDN指向它，而他們需要管理CDN。 這將根據符合特定先決條件（包括但不限於與其CDN廠商舊有整合且難以放棄的客戶）而逐個允許。
+受管AEM理的CDN將滿足大部分客戶的效能與安全性需求。 對於發佈層，客戶可選擇從自己的CDN指向它，而他們需要管理CDN。 這將根據符合特定先決條件（包括但不限於與其CDN廠商舊有整合且難以放棄的客戶）而逐個允許。
 
-## AEM Managed CDN {#aem-managed-cdn}
+## AEM受管理的CDN {#aem-managed-cdn}
 
-請依照下列章節，使用Cloud Manager自助服務UI，使用AEM的現成可用CDN來準備內容傳送：
+請依照下列章節，使用Cloud Manager自助服務UI，使用現成可用的CDNAEM準備內容傳送：
 
 1. [管理SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **限制流量**
 
-依預設，對於AEM管理的CDN設定，所有公開流量都可以進入發佈服務，適用於生產與非生產（開發與階段）環境。 如果您希望限制特定環境的發佈服務流量（例如，限制IP位址範圍的轉移），您可以透過Cloud Manager UI以自助方式進行。
+依預設，對於AEM受管理的CDN設定，所有公開流量都可以進入發佈服務，適用於製作和非製作（開發和舞台）環境。 如果您希望限制特定環境的發佈服務流量（例如，限制IP位址範圍的轉移），您可以透過Cloud Manager UI以自助方式進行。
 
 請參閱[管理IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)以瞭解更多資訊。
 
 >[!CAUTION]
 >
->AEM的受管CDN只會提供允許IP的要求。 如果您將自己的CDN指向AEM管理的CDN，請確定您的CDN的IP已包含在allowlist中。
+>只有允許的IP要求才會由受管AEM理的CDN提供。 如果您將自己的CDN指向受AEM管理的CDN，請確定您的CDN的IP已包含在允許清單中。
 
-## 客戶CDN指向AEM Managed CDN {#point-to-point-CDN}
+## 客戶CDN指向AEM受管理的CDN {#point-to-point-CDN}
 
-如果客戶必須使用其現有的CDN，他們可以管理它並將其指向AEM管理的CDN，但必須符合下列條件：
+如果客戶必須使用其現有的CDN，則可以管理它並將它指向受AEM管理的CDN，前提是滿足以下條件：
 
 * 客戶必須有現有的CDN，而且要取代的工作量很大。
 * 客戶必須加以管理。
-* 客戶必須能夠設定CDN以搭配AEM做為雲端服務使用——請參閱下方的設定指示。
+* 客戶必須能夠設定CDN以搭配使用AEM為Cloud Service-請參閱下列設定指示。
 * 客戶必須有工程CDN專家隨時待命，以備相關問題出現時使用。
 * 客戶必須先執行並成功通過負載測試，才能開始生產。
 
 配置說明：
 
 1. 使用域名設定`X-Forwarded-Host`標頭。
-1. 使用原始網域（即AEM CDN的入口）設定「主機」標題。 價值應來自Adobe。
+1. 使用原始網域(即AEMCDN的入口)設定主機標題。 價值應該來自Adobe。
 1. 將SNI報頭髮送到源。 與主機標頭一樣， sni標頭必須是源域。
-1. 設定`X-Edge-Key`或`X-AEM-Edge-Key`（如果您的CDN刪除X-Edge-*），以正確將流量路由至AEM伺服器。 價值應來自Adobe。 如果您想要直接存取Adobe CDN的入口，請通知Adobe（當`X-Edge-Key`不存在時，將被封鎖）。
+1. 設定`X-Edge-Key`或`X-AEM-Edge-Key`（如果您的CDN刪除X-Edge-*），以正確將流量路由至伺服器AEM。 價值應該來自Adobe。 如果您想要直接存取AdobeCDN的入口，請通知Adobe（當`X-Edge-Key`不存在時，將被封鎖）。
 
 在接受即時流量之前，您應向Adobe客戶支援驗證端對端流量路由是否正常運作。
 
-由於額外的跳數，可能會造成小幅效能點擊，不過從客戶CDN到AEM管理CDN的跳數可能會很有效率。
+雖然從客戶CDN到受管理CDN的跳數可能會很有效，但由於額外的跳數，可能會AEM造成小的效能點擊。
 
 請注意，此客戶CDN設定支援發佈層，但不支援在作者層之前。
 
 ## 地理位置標題{#geo-headers}
 
-AEM管理的CDN將會透過下列項目新增標題至每個請求：
+受管AEM理的CDN會透過下列項目，將標題新增至每個請求：
 
 * 國家代碼：`x-aem-client-country`
 * 大陸代碼：`x-aem-client-continent`
@@ -75,4 +75,4 @@ AEM管理的CDN將會透過下列項目新增標題至每個請求：
 * 大洋洲OC
 * SA南美洲
 
-這些資訊對於使用案例可能很有用，例如根據請求的來源（國家）重新導向至不同的URL。 不過，在此特定使用案例中，重新導向不應快取，因為它會有所不同。 如有需要，您可以使用`Cache-Control: private`來防止快取。 另請參見[Caching](/help/implementing/dispatcher/caching.md#html-text)。
+這些資訊對於使用案例可能很有用，例如根據請求的來源（國家）重新導向至不同的URL。 請使用「變更」標題來快取依地理資訊的回應。 例如，重新導向至特定國家／地區著陸頁面時，應一律包含`Vary: x-aem-client-country`。 如有需要，您可以使用`Cache-Control: private`來防止快取。 另請參見[Caching](/help/implementing/dispatcher/caching.md#html-text)。
