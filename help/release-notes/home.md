@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 description: 'Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。 '
 translation-type: tm+mt
-source-git-commit: c0dfcf46dc0cc69008e48061b79a35314e09d994
+source-git-commit: 80c135b5527764d7c4edd541118870e4d5b0f8cf
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 93%
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 | 產品 | Adobe Experience Manager as a Cloud Service  |
 |---|---|
-| 版本 | 2021.01.0 |
+| 版本 | 2021.02.0 |
 | 類型 | 持續更新 |
 | 推出日期 | 持續更新 |
 
@@ -41,7 +41,7 @@ ht-degree: 93%
 | [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 後端的操作方式，例如製作索引和執行維護任務。 |
-| [商務使用指南](/help/commerce-cloud/home.md) | 瞭解AEM上的Commerce Integration Framework as a Cloud Service。 |
+| [商務使用指南](/help/commerce-cloud/home.md) | 以Cloud Service的身分了AEM解Commerce Integration Framework。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
