@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 description: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 translation-type: tm+mt
-source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
+source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 96%
+source-wordcount: '832'
+ht-degree: 90%
 
 ---
 
@@ -65,11 +65,10 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 
 ## 禁止變更發佈用儲存庫 {#changes-to-publish-repo}
 
-AEM 雲端服務禁止直接變更發佈用儲存庫。在舊版內部部署 AEM 或 AMS 上的 AEM 中，可直接變更發佈用儲存庫的程式碼，以建立使用者、更新使用者設定檔及建立節點。現在已無法這麼做，但可透過下列方式緩解：
+除了發佈層`/home`資料夾下的變更外，不允許在Cloud Service中直接變更發佈存放AEM庫。 在舊版的內部部署或AMSAEM上AEM，可直接對發佈儲存庫進行程式碼變更。 有些限制可透過下列方式加以緩解：
 
 * 內容和以內容為基礎的設定：變更作者例項並發佈。
 * 程式碼和設定：在 GIT 儲存庫中變更，並執行 CI/CD 管線以轉出這些變更。
-* 使用者相關資料 (例如提交的表單或設定檔資料)：使用 Experience Cloud Platform 或其他第三方工作階段感知存放區的統一設定檔服務。
 
 ## 禁止自訂執行模式 {#custom-runmodes}
 
@@ -109,7 +108,7 @@ AEM 雲端服務預設啟用 HTTP 加速功能，包括適用於作者與發佈�
 
 ## 資產處理與傳送 {#asset-handling}
 
-資產上傳、處理和下載已在Assets中最佳化為雲端服務，以提高擴充效率，並加快上傳和下載的速度。 然而，這可能會影響部分現有的自訂程式碼。
+資產上傳、處理和下載已在資產中最佳化，因此Cloud Service更有效率，可提升縮放比例，並加速上傳和下載。 然而，這可能會影響部分現有的自訂程式碼。
 
 * 舊版 AEM 已不提供預設的工作流程 **DAM Asset Update**。
 * 若要&#x200B;**在不轉換的情況下**&#x200B;傳送二進位的網站元件，應使用直接下載。
