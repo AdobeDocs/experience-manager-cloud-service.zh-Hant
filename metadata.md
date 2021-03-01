@@ -1,8 +1,9 @@
 ---
 product: adobe experience manager
+description: 這是AEMaaCS檔案頁面所需的中繼資料
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.zh-Hant
 index: y
-type: Documentation
+type: 文件
 solution-title: 'Adobe Experience Manager as a Cloud Service '
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html
 getting-started-title: 快速入門
@@ -10,10 +11,10 @@ getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-
 tutorials-title: 教學課程
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
+source-git-commit: 28de20620a7cc8a3df231abacde4b3daa98cbcdb
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 10%
+source-wordcount: '120'
+ht-degree: 19%
 
 ---
 
