@@ -1,6 +1,6 @@
 ---
 sub-product: AEM Commerce as a Cloud Service
-user-guide-title: AEM Commerce as a Cloud Service
+user-guide-title: 商AEM務Cloud Service
 breadcrumb-title: Commerce 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Commerce as a Cloud Service。
 translation-type: tm+mt
@@ -21,7 +21,7 @@ ht-degree: 56%
    + [Magento整合](architecture/magento.md)
    + [第三方商務整合](architecture/third-party.md)
 + [快速入門](getting-started.md)
-+ [使用AEM Cloud Service SDK進行開發](develop.md)
++ [使用AEMCloud ServiceSDK進行開發](develop.md)
 + 設定 {#configure}
    + [多範本使用](configuring/multi-template-usage.md)
    + [多商店設定](configuring/multi-store-setup.md)
