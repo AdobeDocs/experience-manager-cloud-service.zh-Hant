@@ -2,7 +2,7 @@
 title: 編輯啟動
 description: '為頁面（或一組頁面）建立啟動後，您可以編輯頁面啟動副本中的內容。 '
 translation-type: tm+mt
-source-git-commit: 914eb7f7b040b99c11d9f109549eb13868058320
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 18%
@@ -25,7 +25,7 @@ ht-degree: 18%
 
 ### 編輯受即時副本約束的啟動頁面{#editing-launch-pages-subject-to-a-live-copy}
 
-如果您的啟動是以即時副本為基礎，則您將：<!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
+如果您的啟動是以[即時副本](/help/sites-cloud/administering/msm/overview.md)為基礎，則您會：
 
 * 當您編輯元件（內容和／或屬性）時，請參閱鎖定符號（小掛鎖）。
 * 請參閱&#x200B;**頁面屬性**&#x200B;中的&#x200B;**即時副本**&#x200B;標籤
@@ -37,7 +37,7 @@ livecopy可用來將來源 *分支的內容*** 同步到啟動分支 (以便讓�
 * 按一下已關閉的掛鎖將中斷此同步，並允許您在啟動中對內容進行新更新。 解鎖（開啟掛鎖）後，源分支中同一位置所做的任何更改將不會覆蓋您的更改。
 * **暫停** (和 **繼續**)特定頁面的繼承。
 
-如需詳細資訊，請參閱變更即時副本內容。<!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
+如需詳細資訊，請參閱[變更即時副本內容](/help/sites-cloud/administering/msm/creating-live-copies.md)。
 
 ## 將啟動頁與其源頁比較{#comparing-a-launch-page-to-its-source-page}
 
