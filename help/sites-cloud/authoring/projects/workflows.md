@@ -2,7 +2,7 @@
 title: 使用專案工作流程
 description: 您可立即使用各種專案工作流程。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 15%
@@ -35,20 +35,17 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->&amp;ast;這些工作流不是從「項目」中的&#x200B;**Workflow**&#x200B;表徵圖啟動的。 請參閱建立資產的語言副本。
-<!--
->&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-administering/tc-manage.md)
--->
+>&amp;ast;這些工作流不是從「項目」中的&#x200B;**Workflow**&#x200B;表徵圖啟動的。 請參閱[建立資產的語言副本。](/help/sites-cloud/administering/translation/managing-projects.md)
 
 不論您選擇何種工作流程，啟動和完成工作流程的步驟都相同。 只有步驟會變更。
 
 您可以直接在「專案」中啟動工作流程（DAM建立語言副本或DAM建立和翻譯語言副本除外）。 有關項目中任何未完成任務的資訊列在&#x200B;**任務**&#x200B;表徵圖中。 需要完成的任務的通知會顯示在用戶表徵圖旁邊。
 
-如需在AEM中使用工作流程的詳細資訊，請參閱下列：
+有關在中使用工作流的詳細信AEM息，請參閱：
 
 * [參與工作流程](/help/sites-cloud/authoring/workflows/participating.md)
 * [將工作流程套用至頁面](/help/sites-cloud/authoring/workflows/applying.md)
-* 設定工作流程<!--* [Configuring workflows](/help/sites-administering/workflows.md)-->
+* [設定工作流程](/help/sites-cloud/administering/workflows-administering.md)
 
 本節說明適用於「專案」的工作流程。
 
