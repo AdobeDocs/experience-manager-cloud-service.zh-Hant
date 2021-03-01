@@ -2,7 +2,7 @@
 title: '建立啟動 '
 description: 您可以建立啟動來更新現有網頁的新版本，以供日後啟動。
 translation-type: tm+mt
-source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 12%
@@ -16,7 +16,7 @@ ht-degree: 12%
 
 * 標題會顯示在[References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)邊欄中，作者可從中存取這些標題以處理它們。
 * 依預設，來源頁面的子頁面會包含在啟動中。 視需要，您只能使用來源頁面。
-* 依預設，即時副本會隨著來源頁面的變更自動更新啟動頁面。 您可以指定建立靜態副本以防止自動更改。<!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
+* 依預設，[即時副本](/help/sites-cloud/administering/msm/overview.md)會隨著來源頁面的變更自動更新啟動頁面。 您可以指定建立靜態副本以防止自動更改。
 
 (可選) 您可以指定 **啟動日期**  (和時間)，以定義啟動頁面要升級和啟動的時間。不過，「 **啟動日期** 」只會搭配「生產就緒 **」旗標運作(請** 參閱編輯啟動設定 [](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration));要讓動作實際自動發生，必須同時設定。
 
@@ -84,7 +84,7 @@ ht-degree: 12%
    * **啟動標題**:啟動的名稱。名稱對作者應有意義。
    * **使用現有內容**:原始內容將用來建立啟動。
    * **使用新範本來取代頁面**:如需詳 [細資訊，請參閱「使用新](#create-launch-with-new-template) 範本建立啟動」。
-   * **繼承來源頁面即時資料**:選取此選項，可在來源頁面變更時自動更新啟動頁面的內容。此選項可讓啟動成為即時副本，以達成此目的。 預設會選取此選項。<!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
+   * **繼承來源頁面即時資料**:選取此選項，可在來源頁面變更時自動更新啟動頁面的內容。此選項可讓啟動為[即時副本](/help/sites-cloud/administering/msm/overview.md)來達成此目的。 預設情況下，此選項處於選中狀態。—>
    * **啟動日期**:啟動副本要啟動的日期和時間(取決於 **Production** Readyflag;請 [參閱啟動——事件順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events))。
 
    ![啟動屬性](/help/sites-cloud/authoring/assets/launches-properties.png)
