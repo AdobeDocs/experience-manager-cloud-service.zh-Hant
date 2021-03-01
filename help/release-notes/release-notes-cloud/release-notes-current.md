@@ -2,17 +2,24 @@
 title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: a93db92689928a900662a39b11bb5a7ea9724e62
+source-git-commit: 7c9eea58b8e42902842f5e9658f0fa677f1dc51d
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1064'
 ht-degree: 3%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 版發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager]作為{#release-notes}Cloud Service的當前發行說明
 
-以下章節將[!DNL Experience Manager]的一般發行說明概述為Cloud Service。
+以下章節概述[!DNL Experience Manager]目前（最新）版本的一般發行說明，做為Cloud Service。
+
+>[!NOTE]
+>您可從此處瀏覽至舊版的發行說明；例如2020年、2021年等。
+
+>[!NOTE]
+>
+>如需與發行版本無直接關聯的檔案更新詳細資訊，請參閱[最新檔案更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 發行日期 {#release-date}
 
