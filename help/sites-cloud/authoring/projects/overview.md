@@ -2,7 +2,7 @@
 title: 專案
 description: 專案可讓您將資源群組至一個共同的共用環境，讓您輕鬆管理專案
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 4f52c08674148776c29c0a3130c60a34f6ed30cd
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 12%
@@ -12,7 +12,7 @@ ht-degree: 12%
 
 # 專案 {#projects}
 
-專案可讓您將資源群組至一個實體。 共用的共用環境讓您輕鬆管理專案。 您可與專案關聯的資源類型在AEM中稱為「拼貼」。 拼貼可以包括項目和團隊資訊、資產、工作流和其他類型的資訊，如[項目拼貼中詳細說明。](#project-tiles)
+專案可讓您將資源群組至一個實體。 共用的共用環境讓您輕鬆管理專案。 可與項目關聯的資源類型稱為「AEM拼貼」。 拼貼可以包括項目和團隊資訊、資產、工作流和其他類型的資訊，如[項目拼貼中詳細說明。](#project-tiles)
 
 >[!CAUTION]
 >
@@ -33,7 +33,7 @@ ht-degree: 12%
 
 ## 項目控制台{#projects-console}
 
-專案主控台是您在AEM中存取和管理專案的地方。
+專案主控台是您在其中存取和管理專案的AEM地方。
 
 ![專案主控台](/help/sites-cloud/authoring/assets/projects-console.png)
 
@@ -66,7 +66,7 @@ ht-degree: 12%
 
 ![資產圖格](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
-您直接在方塊中上傳資產。 此外，如果您有動態媒體附加元件，也可以建立影像集、回轉集或混合媒體集。
+您直接在方塊中上傳資產。 此外，如果您有Dynamic Media附加元件，還可以建立影像集、回轉集或混合媒體集。
 
 ![影像集](/help/sites-cloud/authoring/assets/projects-image-sets.png)
 
@@ -154,11 +154,11 @@ Tasks可讓您監控任何專案相關工作的狀態，包括工作流程。 �
 
 ## 項目模板{#project-templates}
 
-AEM隨附3種不同的範本：
+出廠AEM時提供3種不同的模板：
 
 * 簡單專案——任何不符合其他類別的專案的參考範例（全部皆可）。 它包含三個基本角色（擁有者、編輯和觀察員）和四個工作流程（專案核准、請求啟動、請求著陸頁面和請求電子郵件）。
 * 媒體專案——媒體相關活動的參考範例專案。 它包含數個媒體相關專案角色（攝影師、編輯、文案撰稿人、設計人員、擁有者和觀察者）。 此外，它還包含兩個與媒體內容相關的工作流程- 「請求文案」（用於請求和檢閱文字）和「產品像片拍攝」（用於管理與產品相關的像片）
-* 翻譯項目——用於管理翻譯相關活動的參考示例。 它包含三個基本角色（擁有者、編輯和觀察者）。 它包含兩個可在「工作流」使用者介面中存取的工作流程。<!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
+* A [翻譯項目](/help/sites-cloud/administering/translation/overview.md) —— 用於管理翻譯相關活動的參考示例。 它包含三個基本角色（擁有者、編輯和觀察者）。 它包含兩個可在「工作流」使用者介面中存取的工作流程。
 
 根據您選取的範本，您有不同的選項可供使用，尤其是使用者角色和工作流程。
 
