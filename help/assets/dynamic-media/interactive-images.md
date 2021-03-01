@@ -1,10 +1,10 @@
 ---
 title: 互動式影像
-description: 瞭解如何在動態媒體中處理互動式影像。
+description: 瞭解如何在Dynamic Media使用互動式影像。
 translation-type: tm+mt
-source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
+source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
 workflow-type: tm+mt
-source-wordcount: '4246'
+source-wordcount: '4245'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## 快速入門：互動式影像{#quick-start-interactive-images}
 
-下列逐步工作流程說明旨在協助您在AEM Assets中快速啟動並執行互動式影像。
+下列逐步工作流程說明旨在協助您在AEM Assets快速上手使用互動式影像。
 
 在某些快速入門任務中查找&#x200B;**Example**&#x200B;標題。 它包含以[網頁範例為基礎的簡短教學課程，該範例尚未新增互動式影像至](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)。
 
@@ -36,8 +36,8 @@ ht-degree: 1%
 
 互動式影像步驟：
 
-1. **（可選）識別熱點變數**。如果您單獨使用Adobe Experience Manager Assets和Dynamic Media，請識別現有快速檢視實作中使用的動態變數。 如此可確保在建立互動式影像時輸入熱點資料。 請參閱[（可選）識別熱點變數](#optional-identifying-hotspot-variables)。
-不過，如果您使用AEM Sites或AEM eCommerce，或兩者皆使用，則不需要此步驟。
+1. **（可選）識別熱點變數**。如果您使用Adobe Experience Manager資產和Dynamic Media獨立版，請識別用於現有快速檢視實作的動態變數。 如此可確保在建立互動式影像時輸入熱點資料。 請參閱[（可選）識別熱點變數](#optional-identifying-hotspot-variables)。
+不過，如果您使用AEM Sites或AEM電子商務或兩者，則不需要此步驟。
 
 1. **（可選）建立互動式影像檢視器預設集**。自訂用於表示熱點的圖形影像。 如果您想要改用名為`Shoppable_Banner`的現成可用的互動式影像檢視器預設集，則不需要建立您自己的互動式影像檢視器預設集。
 請參閱[（可選）建立互動式影像檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)。
@@ -50,8 +50,8 @@ ht-degree: 1%
 請參閱[預覽互動式影像](#optional-previewing-interactive-images) —— 選用。 視需要，您可以檢視可購買橫幅的呈現方式，並測試其互動性。
 如需如何發佈互動式影像資產的詳細資訊，請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-1. **在Experience Manager中將互動式影像新增至網站或網站**。如果您使用Sites、電子商務或兩者，您可以直接在Experience Manager的網頁中新增互動式影像。 將互動式媒體元件拖曳至頁面上。 請參閱[新增動態媒體資產至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-如果您單獨使用Experience ManagerAssets和Dynamic Media，請複製網站上的內嵌代碼。然後，將它與您現有的快速檢視整合。 請參閱[整合互動式影像與您的網站](#integrating-an-interactive-image-with-your-website)。
+1. **將互動式影像新增至您的網站或以Experience Manager新增至網站**。如果您使用網站、電子商務或兩者，則可直接將互動影像新增至Experience Manager的網頁。 將互動式媒體元件拖曳至頁面上。 請參閱[將Dynamic Media資產新增至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+如果您單獨使用Experience Manager資產和Dynamic Media，請複製網站上的內嵌代碼。然後，將它與您現有的快速檢視整合。 請參閱[整合互動式影像與您的網站](#integrating-an-interactive-image-with-your-website)。
 如果您使用協力廠商的WCM(Web Content Manager)，請將新的互動式視訊與網站上使用的現有快速檢視整合。 請參閱[整合互動式影像與現有的快速檢視](#integrating-an-interactive-image-with-an-existing-quickview)。
 
 ## （可選）識別熱點變數{#optional-identifying-hotspot-variables}
@@ -61,15 +61,15 @@ ht-degree: 1%
 >只有在以下情況下，才需要此任務：
 >
 >* 您想要透過觸發至快速檢視，將互動功能加入影像。
->* 您實作的Experience Manager會&#x200B;*not*&#x200B;使用電子商務整合架構，從任何電子商務解決方案將產品資料拉入Experience Manager。 此類解決方案包括IBM WebSphere® Commerce、Elastic Path、hybris或Intershop。
+>* 您的Experience Manager實作&#x200B;*not*&#x200B;會使用電子商務整合架構，從任何電子商務解決方案將產品資料拉入Experience Manager。 此類解決方案包括IBM WebSphere® Commerce、Elastic Path、hybris或Intershop。
 
 >
 >
-如果您的AEM實作使用電子商務，您可以略過此工作並繼續下一個工作。
+如果您的實AEM作使用電子商務，您可以略過此工作，繼續下一個工作。
 
 首先，識別您現有快速檢視實作所使用的動態變數，以便輸入熱點資料以建立互動式影像。
 
-當您在Experience Manager Assets中將熱點新增至橫幅影像時，請指派SKU（庫存保留單位）。 SKU是您提供之每個不同產品或服務的唯一識別碼。 此外，還可新增任何額外的可選變數至每個熱點。 這些熱點變數稍後會用來比對熱點與快速檢視內容。
+在「Experience Manager資產」中將熱點新增至橫幅影像時，請指派SKU（庫存保留單位）。 SKU是您提供之每個不同產品或服務的唯一識別碼。 此外，還可新增任何額外的可選變數至每個熱點。 這些熱點變數稍後會用來比對熱點與快速檢視內容。
 
 請務必正確識別要與熱點資料關聯的變數數目和類型。 每個新增至橫幅影像的熱點都必須包含足夠的資訊，以明確識別現有後端系統中的產品。
 
@@ -102,7 +102,7 @@ ht-degree: 1%
 
 在最簡單的情況下，「快速檢視URL」中唯一的變數部分是產品SKU。 在這種情況下，SKU值是您在橫幅影像中新增熱點所需的唯一資料片段。
 
-但是，在複雜情況下，快速檢視URL除了SKU以外，還有不同的元素。 例如，變更的元素可能包括類別ID、顏色代碼和大小代碼。 在這種情況下，Experience Manager Assets中可購買的互動式影像功能中，每個元素都是熱點資料定義中的個別變數。
+但是，在複雜情況下，快速檢視URL除了SKU以外，還有不同的元素。 例如，變更的元素可能包括類別ID、顏色代碼和大小代碼。 在這種情況下，每個元素都是Experience Manager資產中可購物互動影像功能中熱點資料定義中的個別變數。
 
 請考慮下列快速檢視URL的範例及其產生的熱點變數：
 
@@ -166,15 +166,15 @@ ht-degree: 1%
 
 基於此類分析，您應使用`categoryId`和`SKU`作為熱點。
 
-您現在可以使用AEM Assets中可購買的互動式影像功能，上傳影像橫幅並新增熱點。
+您現在可以使用AEM Assets的可購買互動影像功能，上傳影像橫幅並新增熱點。
 
 ## （可選）建立互動式影像檢視器預設集{#optional-creating-an-interactive-image-viewer-preset}
 
-您可以選擇使用AEM Assets隨附的預設、立即可用的互動式影像檢視器預設集，稱為`Shoppable_Banner`。 或者，您也可以建立您自己的自訂檢視器預設集，以便用於互動式影像。
+您可以選擇使用隨附於AEM Assets的預設、現成可用的互動式影像檢視器預設集，稱為`Shoppable_Banner`。 或者，您也可以建立您自己的自訂檢視器預設集，以便用於互動式影像。
 
 當您建立自訂的互動式影像檢視器預設集時，可以決定影像橫幅上熱點的外觀。 在建立檢視器預設集時，您可以選擇使用預先定義影像收藏館中的熱點圖形。
 
-儲存檢視器預設集後，就會在AEM Assets的「檢視器預設集」清單頁面上自動啟動（開啟）它。 此功能表示它可在互動式媒體元件中顯示，且在您檢視資產時也可顯示。 不過，若要使用此檢視器預設集傳送&#x200B;*互動式橫幅，* publish *您的檢視器預設集。*&#x200B;此規則適用於自訂或現成可用的檢視器預設集。
+儲存檢視器預設集後，它會自動在AEM Assets的「檢視器預設集」清單頁面上啟動（開啟）。 此功能表示它可在互動式媒體元件中顯示，且在您檢視資產時也可顯示。 不過，若要使用此檢視器預設集傳送&#x200B;*互動式橫幅，* publish *您的檢視器預設集。*&#x200B;此規則適用於自訂或現成可用的檢視器預設集。
 
 **若要建立互動式影像檢視器預設集**
 
@@ -256,7 +256,7 @@ ht-degree: 1%
    1. 在「熱點管理」頁的左上角附近，按一下&#x200B;**[!UICONTROL 熱點]**。
    1. 在影像上，點選您要熱點出現的位置。如有必要，請拖動熱點以調整其位置。或者，使用鍵盤箭頭鍵控制所選熱點的位置。
    1. 通過重複步驟a和b，根據需要添加更多熱點。
-   1. （可選）要刪除熱點，請在影像上選擇該熱點，然後在&#x200B;**[!UICONTROL 熱點]**&#x200B;標題下按一下&#x200B;**[!UICONTROL 刪除]**（垃圾桶表徵圖）。
+   1. （可選）若要刪除熱點，請在影像上選取它，然後點選&#x200B;**[!UICONTROL 熱點]**&#x200B;標題下的&#x200B;**[!UICONTROL 刪除]**（垃圾筒圖示）。
 
 1. 在「名稱」文本欄位中，鍵入熱點的名稱。 此名稱也會出現在「選定熱點」下拉清單中。
 1. 執行下列任一項作業：
@@ -264,14 +264,14 @@ ht-degree: 1%
    * 點選&#x200B;**[!UICONTROL 快速檢視]**。
 
       * 如果您是AEM Sites或電子商務客戶，請點選或按一下「產品選擇器」圖示（放大鏡）以開啟「選擇產品」頁面。 點選您要使用的產品，然後點選頁面右上角的&#x200B;**Select**。 您將返回熱點管理頁。
-      * 如果您&#x200B;*not*&#x200B;是Experience Manager Sites或電子商務客戶
+      * 如果您&#x200B;*not*&#x200B;是Experience Manager網站或電子商務客戶
 
          * 請參閱[識別熱點變數](#optional-identifying-hotspot-variables);您必須定義這些變數。
          * 然後，手動輸入SKU值。 在「SKU值」文字欄位中，輸入產品的SKU。 輸入的SKU值會自動填入「快速檢視」範本的變數部分。 它可確保系統知道將點選熱點與特定SKU的「快速」檢視建立關聯。
          * （可選）如果快速檢視中有其他變數可用來進一步識別產品，請點選&#x200B;**[!UICONTROL 新增一般變數]**。 在文字欄位中，指定額外的變數。 例如，`category=Mens`是新增的變數。
    * 點選&#x200B;**[!UICONTROL 超連結]**。
 
-      * 如果您是Experience Manager Sites客戶，請點選「網站選擇器」圖示（資料夾）。 導覽至URL。 如果您的互動式內容具有相對URL的連結，尤其是Experience Manager Sites頁面的連結，則無法使用以URL為基礎的連結方法。
+      * 如果您是Experience Manager網站客戶，請點選網站選擇器圖示（資料夾）。 導覽至URL。 如果您的互動式內容具有相對URL的連結，尤其是「Experience Manager網站」頁面的連結，則無法使用以URL為基礎的連結方法。
       * 如果您是獨立客戶，請在HREF文字欄位中，指定連結網頁的完整URL路徑。
 
    請確定您要指定是在新的瀏覽器標籤（建議預設值）或相同的標籤中開啟連結。
@@ -308,8 +308,8 @@ ht-degree: 1%
 
 當您對互動式影像感到滿意時，就可以發佈它。
 請參閱[將視訊或影像檢視器內嵌至網頁](/help/assets/dynamic-media/embed-code.md)。
-請參閱[將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，則無法使用以URL為基礎的連結方法。
-請參閱[新增動態媒體資產至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+請參閱[將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 如果您的互動式內容具有相對URL的連結，尤其是連結至AEM Sites頁面，則無法使用以URL為基礎的連結方法。
+請參閱[將Dynamic Media資產新增至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **若要預覽互動式影像**
 
@@ -326,7 +326,7 @@ ht-degree: 1%
 
 上傳橫幅影像、新增熱點並發佈互動式影像後，您就可以將它新增至網站頁面。
 
-如果您是AEM Sites客戶，可將互動式媒體元件拖曳至您的頁面，以新增互動式影像。 請參閱[新增動態媒體資產至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+如果您是AEM Sites的客戶，可將互動式媒體元件拖曳至頁面上，以新增互動式影像。 請參閱[將Dynamic Media資產新增至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 如果您是獨立的AEM Assets客戶，您可以依本節所述手動將互動式影像新增至您的網站。
 
@@ -344,7 +344,7 @@ ht-degree: 1%
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-整合就像移除`IMG`標籤，並從AEM Assets中以複製的內嵌代碼取代它一樣簡單。 您可以看到結果[顯示頁面上具有三個圓形熱點](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)的可購物互動影像。
+整合就像移除`IMG`標籤，並從AEM Assets以複製的內嵌代碼取代它一樣簡單。 您可以看到結果[顯示頁面上具有三個圓形熱點](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)的可購物互動影像。
 
 >[!NOTE]
 因此，展示網站的可購物互動影像上的熱點僅供顯示之用。 它們尚未與現有的快速檢視整合。
@@ -360,7 +360,7 @@ ht-degree: 1%
 ## 將互動式影像與現有的快速檢視整合{#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
-此工作僅在您是獨立AEM Assets客戶時適用。
+此任務僅在您是獨立的AEM Assets客戶時才適用。
 
 此程式的最後一個步驟是將互動式影像與網站上現有的快速檢視實施整合。 沒有適合所有情況的整合解決方案。 每個快速檢視實作都是獨一無二的，而且需要特定的方法。 因此，在前端IT人員的協助下提供協助是有益的。
 
@@ -376,7 +376,7 @@ ht-degree: 1%
 
 這些呼叫不一定代表由網頁邏輯從任意步驟呼叫的獨立公用API呼叫。 相反地，它是連結呼叫，在此連結呼叫中，前一個步驟的最後一個階段（回呼）中將隱藏下一個步驟。
 
-當可購物互動影像取代步驟1和部分步驟2時，使用者會在可購物影像中點選熱點。 此類使用者互動由檢視器處理。 檢視器會將事件傳回至網頁，其中包含先前新增至AEM Assets的所有熱點資料。
+當可購物互動影像取代步驟1和部分步驟2時，使用者會在可購物影像中點選熱點。 此類使用者互動由檢視器處理。 檢視器會傳回事件至網頁，其中包含先前新增至AEM Assets的所有熱點資料。
 
 在此類事件處理常式中，前端程式碼會執行下列動作：
 
@@ -384,7 +384,7 @@ ht-degree: 1%
 * 根據熱點資料建構快速檢視URL。
 * 觸發從後端載入快速檢視並在螢幕上顯示的程式。
 
-Experience Manager Assets傳回的內嵌代碼具有可供使用的事件處理常式，已加以註解，如下列反白顯示的程式碼片段所示：
+「Experience Manager資產」傳回的內嵌程式碼具有可供使用的事件處理常式，已加上註解，如下列反白顯示的程式碼片段所示：
 
 ```xml
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
