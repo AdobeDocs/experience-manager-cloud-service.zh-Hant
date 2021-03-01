@@ -1,29 +1,26 @@
 ---
 title: 在多個網站中使用目標內容
-description: 如果您需要管理目標內容，例如網站間的活動、體驗和優惠，您可以運用AEM針對目標內容的內建多網站支援
+description: 如果您需要管理目標內容，例如網站間的活動、體驗和優惠，您可以運用內建AEM的多網站目標內容支援
 translation-type: tm+mt
-source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2915'
-ht-degree: 4%
+source-wordcount: '2900'
+ht-degree: 5%
 
 ---
 
 
 # 在多個網站中使用目標內容 {#working-with-targeted-content-in-multisites}
 
-如果您需要管理目標內容，例如網站間的活動、體驗和優惠，您可以運用AEM針對目標內容的內建多網站支援。
+如果您需要管理目標內容，例如網站間的活動、體驗和優惠，您可以運用針對目標內容AEM的內建多網站支援。
 
 >[!NOTE]
 >
->使用多網站支援來處理目標內容是一項進階功能。 若要使用此功能，您應熟悉Multi Site Manager以及與AEM的Adobe Target整合。
-<!--
->Working with Multisite support for targeted content is an advanced feature. To use this feature, you should be familiar with [Multi Site Manager](/help/sites-administering/msm.md) and the [Adobe Target integration](/help/sites-administering/target.md) with AEM.
--->
+>使用多網站支援來處理目標內容是一項進階功能。 要使用此功能，您應熟悉[多站點管理器](/help/sites-cloud/administering/msm/overview.md)和[Adobe Target整合](/help/sites-cloud/integrating/integrating-adobe-target.md)AEM。
 
 本檔案說明下列內容：
 
-* 提供AEM針對目標內容的多網站支援的簡短概述。
+* 提供針對目標內容AEM的多網站支援簡介。
 * 說明如何連結網站（在單一品牌中）的一些可能使用情形。
 * 提供行銷人員使用此功能的範例逐步說明。
 * 有關如何針對目標內容實作多網站支援的詳細說明。
@@ -40,7 +37,7 @@ ht-degree: 4%
 
 您可立即使用針對目標內容的多網站支援，並可讓您將透過MSM管理的主版頁面中的目標內容推送至本機即時副本，或讓您管理此類內容的全域和本機修改。
 
-您可在&#x200B;**Area**&#x200B;中管理此項。 區域區隔了不同網站中使用的目標內容（活動、體驗和選件），並提供以MSM為基礎的機制，以建立和管理目標內容的繼承以及網站繼承。 這可避免您必須在繼承的網站中重新建立目標內容，就像6.2之前的AEM所要求的一樣。
+您可在&#x200B;**Area**&#x200B;中管理此項。 區域區隔了不同網站中使用的目標內容（活動、體驗和選件），並提供以MSM為基礎的機制，以建立和管理目標內容的繼承以及網站繼承。 這樣，您就不必像6.2之前的要求那樣，在繼承的網站中重新建立AEM目標內容。
 
 在區域中，只有連結至該區域的活動會推送至即時副本。 預設情況下，主區域被選中。 建立其他區域後，您可以將這些區域連結至您的網站或頁面，以指出推送哪些目標內容。
 
@@ -51,7 +48,7 @@ ht-degree: 4%
 >對目標內容使用多網站支援時，您應注意下列事項：
 >
 >* 當您使用推出或即時復本時，需要MSM授權。
->* 當您使用同步至Adobe Target時，需要Adobe Target授權。
+>* 當您使用與Adobe Target的同步時，需要Adobe Target許可證。
 
 >
 
@@ -110,7 +107,7 @@ ht-degree: 4%
 
 ![變更版本](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-行銷人員想要將這些變更推展至歐洲地區，並點選或按一下「展示頁面」**以推出即時副本。**&#x200B;重新整理索引標籤後，大不列顛網站會有新的影像，因為歐洲區會繼承主區域（在推出後）。<!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
+行銷人員想要將這些變更推展至歐洲地區，而[則點選或按一下「推廣頁面」，即時版本](/help/sites-cloud/administering/msm/creating-live-copies.md)。 ****&#x200B;重新整理索引標籤後，大不列顛網站會有新的影像，因為歐洲區會繼承主區域（在推出後）。
 
 ![轉出即時副本](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
@@ -126,7 +123,7 @@ ht-degree: 4%
 
 ### 建立新區域與建立新區域作為livecopy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-在AEM中，您可以選擇建立新區域或建立新區域做為即時副本。 建立新區域，將活動和屬於這些活動的任何項目（例如選件、體驗等）分組。 當您想要建立完全不同的目標內容集或想要共用一組目標內容時，可建立新區域。
+在中AEM，您可以選擇建立新區域或建立新區域作為livecopy。 建立新區域，將活動和屬於這些活動的任何項目（例如選件、體驗等）分組。 當您想要建立完全不同的目標內容集或想要共用一組目標內容時，可建立新區域。
 
 但是，如果您在兩個站點之間通過MSM設定了繼承，則可能希望繼承活動。 在這種情況下，您會建立新區域作為即時副本，其中Y是X的即時副本，因此也會繼承所有活動。
 
@@ -138,10 +135,10 @@ ht-degree: 4%
 
 ![圖表詳細資訊](/help/sites-cloud/authoring/assets/multisite-diagram-detail.png)
 
-若要在AEM中達成此目標，您應執行下列動作：
+若要在中AEM實現此目的，請執行下列動作：
 
-* 網站A連結至主版區域——不需建立區域。 AEM預設會選取「主版區域」。 網站A和B共用活動等。
-* 網站B連結至主版區域——不需建立區域。 AEM預設會選取「主版區域」。 網站A和B共用活動等。
+* 網站A連結至主版區域——不需建立區域。 預設情況下，主區域在中被選AEM中。 網站A和B共用活動等。
+* 網站B連結至主版區域——不需建立區域。 預設情況下，主區域在中被選AEM中。 網站A和B共用活動等。
 * 「繼承區域」的網站C連結，此為「主版區域——建立區域為即時副本」的即時副本，您可在此根據主版區域建立即時副本。 轉出後，繼承區域繼承主區域中的活動。
 * 網站D連結至其專屬的隔離區域——建立區域，您可在其中建立全新的區域，但尚未定義任何活動。 隔離區域不會與任何其他站點共用活動。
 
@@ -164,7 +161,7 @@ ht-degree: 4%
 1. 在&#x200B;**Title**&#x200B;欄位中，輸入新區域的名稱。 （可選）選擇標籤。
 1. 點選或按一下「建立&#x200B;**」。**
 
-   AEM會重新導向至品牌視窗，其中會列出任何已建立的區域。 如果主版區域以外還有其他區域，則您可以直接在品牌主控台中建立區域。
+   重新導AEM向至品牌視窗，其中會列出任何已建立的區域。 如果主版區域以外還有其他區域，則您可以直接在品牌主控台中建立區域。
 
    ![建立](/help/sites-cloud/authoring/assets/multisite-create.png)
 
@@ -189,9 +186,9 @@ ht-degree: 4%
 
 1. 在&#x200B;**轉出配置**&#x200B;下拉菜單中，選擇適當的配置。
 
-   有關每個選項的說明，請參見[安裝的轉出配置](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations)。
+   有關每個選項的說明，請參見[安裝的轉出配置](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-and-custom-rollout-configurations)。
 
-   如需即時副本的詳細資訊，請參閱[建立和同步即時副本](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html)。
+   如需即時副本的詳細資訊，請參閱[建立和同步即時副本](/help/sites-cloud/administering/msm/creating-live-copies.md)。
 
    >[!NOTE]
    >
@@ -199,7 +196,7 @@ ht-degree: 4%
 
 1. 點選或按一下「建立&#x200B;**」。**
 
-   AEM會重新導向至品牌視窗，其中會列出任何已建立的區域。 如果除了「主版區域」以外還有其他區域，則您可以直接從品牌視窗建立區域。
+   重新導AEM向至品牌視窗，其中會列出任何已建立的區域。 如果除了「主版區域」以外還有其他區域，則您可以直接從品牌視窗建立區域。
 
    ![建立區域](/help/sites-cloud/authoring/assets/multisite-create-2.png)
 
@@ -218,7 +215,7 @@ ht-degree: 4%
 1. 導覽至您要連結至某個區域的網站（或頁面）。
 1. 選擇網站或頁面，點選或按一下「檢視屬性」**。**
 1. 點選或按一下&#x200B;**個人化**&#x200B;標籤。
-1. 在&#x200B;**品牌**&#x200B;功能表中，選取您要將您的區域連結至的品牌。 選擇品牌後，**區域參考**&#x200B;功能表中將提供可用區域。
+1. 在&#x200B;**品牌**&#x200B;功能表中，選取您要將您的區域連結至的品牌。 選擇品牌後，**區域參考**&#x200B;功能表中會提供可用區域。
 
    ![連結網站](/help/sites-cloud/authoring/assets/multisite-english.png)
 
@@ -253,7 +250,7 @@ ht-degree: 4%
 1. 如果您的頁面已連結至即時副本的區域，您會看到繼承狀態。 點選或按一下「開始定位」**。**
 1. 若要暫停活動，請執行下列其中一項作業：
 
-   1. 選取活動的元素，例如對象。 AEM會自動顯示「暫停即時副本」確認方塊。 （您可以在整個「定位」程式中點選或按一下任何元素，暫停即時副本。）
+   1. 選取活動的元素，例如對象。 自AEM動顯示「暫停即時副本」確認方塊。 （您可以在整個「定位」程式中點選或按一下任何元素，暫停即時副本。）
    1. 從工具列的下拉式選單中選取「暫停即時副本」。****
 
    ![暫停即時副本](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
@@ -289,7 +286,7 @@ ht-degree: 4%
 
 ## 刪除區域{#deleting-areas}
 
-刪除區域時，會刪除該區域中的所有活動。 AEM會先警告您，然後您才能刪除區域。 如果您確實刪除了網站所連結的區域，此品牌的對應會自動重新對應至主版區域。
+刪除區域時，會刪除該區域中的所有活動。 在刪AEM除區域之前，會發出警告。 如果您確實刪除了網站所連結的區域，此品牌的對應會自動重新對應至主版區域。
 
 要刪除區域：
 
