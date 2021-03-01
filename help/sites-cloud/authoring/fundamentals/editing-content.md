@@ -2,7 +2,7 @@
 title: 編輯頁面內容
 description: 建立頁面後，您就可以編輯內容以進行所需的更新
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 6%
@@ -31,7 +31,7 @@ ht-degree: 6%
 
 >[!TIP]
 >
->在&#x200B;**Edit**&#x200B;模式下，內容中的連結是可見的，但&#x200B;**不可存取**。 如果您想使用內容中的連結來導覽，請使用[預覽模式](#previewing-pages)。
+>在&#x200B;**Edit**&#x200B;模式中，您的內容中的連結是可見的，但&#x200B;**不可存取**。 如果您想使用內容中的連結來導覽，請使用[預覽模式](#previewing-pages)。
 
 ## 頁面工具列{#page-toolbar}
 
@@ -105,7 +105,7 @@ ht-degree: 6%
 * **委派** -開啟「完 **整工作項** 目」對話框
 * **查看詳細資訊** -開啟工作流 **** 的「詳細資訊」窗口
 
-通過通知欄完成和委託工作流步驟的工作方式與從通知收件箱中參與工作流[時相同。](/help/sites-cloud/authoring/workflows/participating.md)
+通過通知欄完成和委託工作流步驟的工作方式與從通知收件箱中參與工作流](/help/sites-cloud/authoring/workflows/participating.md)時相同。[
 
 如果頁面受多個工作流程的約束，則通知的右端會顯示工作流程數目，並附上箭頭按鈕，讓您捲動整個工作流程。
 
@@ -161,7 +161,7 @@ ht-degree: 6%
 
 您也可以從[assets瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)拖曳資產，將新元件新增至頁面。 這會自動建立適當類型的新元件（並包含資產）。
 
-此行為可針對您的安裝進行設定。 如需詳細資訊，請參閱設定段落系統，讓拖曳資產可建立元件例項。<!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
+您可以針對安裝設定此行為。 如需詳細資訊，請參閱設定段落系統，讓拖曳資產可建立元件例項。<!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
 要通過拖動上述資產類型之一來建立元件，請執行以下操作：
 
@@ -321,7 +321,7 @@ ht-degree: 6%
 要移動段落元件，請執行以下操作：
 
 1. 選擇要使用點選並按住或按一下並按住移動的段落。
-1. 將段落拖曳至新位置。 AEM會指出可將段落存放在何處。 將它拖放至您所要的位置。
+1. 將段落拖曳至新位置。 指AEM明段落的存放位置。 將它拖放至您所要的位置。
 
    ![移動元件](/help/sites-cloud/authoring/assets/editing-moving-component.png)
 
@@ -367,7 +367,7 @@ ht-degree: 6%
 
 繼承是一種機制，可自動將內容從一個元件推送到另一個元件。 繼承的元件可以是各種情況的產品，包括：
 
-* 多站點管理<!--[Multi site management](/help/sites-administering/msm.md)-->
+* [多網站管理](/help/sites-cloud/administering/msm/overview.md)
 * [啟動](/help/sites-cloud/authoring/launches/overview.md) （根據即時副本）。
 
 您可以取消（然後重新啟用）繼承。 視元件而定，如果元件位於即時副本或啟動的頁面上（根據即時副本），則可從元件工具列取得此功能。
@@ -441,11 +441,11 @@ ht-degree: 6%
 
 ### 以已發佈狀態檢視 {#view-as-published}
 
-從&#x200B;**頁面資訊**&#x200B;功能表可使用「檢視為已發佈」選項。 [](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)如此會在新標籤中開啟頁面，重新整理內容，並完全顯示頁面在發佈環境中的顯示效果。
+從[頁面資訊](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)功能表可使用「檢視為已發佈」選項。 ****&#x200B;如此會在新標籤中開啟頁面，重新整理內容，並完全顯示頁面在發佈環境中的顯示效果。
 
 ## 鎖定頁面{#locking-a-page}
 
-AEM可讓您鎖定頁面，讓其他人無法修改內容。 當您對特定頁面進行大量編輯或需要將頁面凍結一段時間時，這項功能會很有用。
+可AEM讓您鎖定頁面，讓其他人無法修改內容。 當您對特定頁面進行大量編輯或需要將頁面凍結一段時間時，這項功能會很有用。
 
 頁面可從以下任一位置鎖定：
 
@@ -509,7 +509,7 @@ AEM可讓您鎖定頁面，讓其他人無法修改內容。 當您對特定頁�
 
 ## 還原和重做頁面編輯——理論{#undoing-and-redoing-page-edits-the-theory}
 
-AEM會儲存您執行之動作的記錄和執行動作的順序，如此您就可以依執行動作的順序還原多個動作，並視需要重做以重新套用一或多個動作。
+AEM儲存您執行之動作的記錄和執行動作的順序，讓您可以依執行動作的順序還原多個動作，並視需要重做以重新套用一或多個動作。
 
 如果選取內容頁面上的元素（例如文字元件），則還原和重做命令會套用至選取的項目。
 
