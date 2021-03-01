@@ -2,9 +2,9 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 translation-type: tm+mt
-source-git-commit: c3fd7b5a6311eded51b13ab9fea1ca6af4a050eb
+source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1909'
 ht-degree: 8%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 8%
       > 有關如何配置相關自動複製的詳細資訊，請參見[開啟和關閉時間——觸發器配置](/help/operations/replication.md#on-and-off-times-trigger-configuration)。
 
       * 如果[已發佈（手動）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)，則此頁面將保持休眠（隱藏），直到在指定時間顯示。
-      * 如果未發佈，且已針對自動複製設定，則會在指定時間自動發佈頁面，然後呈現頁面。
+      * 如果未發佈，且已針對自動複製設定，則頁面會在指定的時間自動發佈，然後轉譯。
       * 如果未發佈，且未針對自動複製進行設定，則不會自動發佈頁面，因此當嘗試存取頁面時，會看到404。
    * **關閉時間** -與「開啟時間」類似，並常與「開啟時間 ****」搭配使用，這會定義發佈頁面在發佈環境中隱藏的時間。
 
@@ -158,7 +158,7 @@ ht-degree: 8%
 
 ### 雲端服務 {#cloud-services}
 
-* **雲端服務設定** -定義雲端服務的屬性
+* **Cloud Service配置** -定義雲端服務的屬性
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -192,11 +192,10 @@ ht-degree: 8%
 
 ### Blueprint {#blueprint}
 
-此頁籤僅對用作藍圖的頁面可見。
+此頁籤僅對用作藍圖的頁面可見。 「Blueprints」（藍圖）作為「Live Copies」（即時副本）的基礎是「[多站點管理」的一部分。](/help/sites-cloud/administering/msm/overview.md)
 
 * **目前的即時副本** -列出以此藍圖頁面為基礎（亦即，即即時副本）的頁面
 
-   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 * **轉出設定** -控制修改傳播至即時副本的情況
 
 ### 即時副本 {#live-copy}
