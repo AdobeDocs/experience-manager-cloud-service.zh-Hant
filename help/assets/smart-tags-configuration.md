@@ -3,17 +3,17 @@ title: 增強型智慧標記
 description: 使用 Adobe Sensei 的 AI 和 ML 服務套用關聯式和描述性商業標記，以提升探索資產和處理內容的速度。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 96%
+source-wordcount: '1031'
+ht-degree: 83%
 
 ---
 
 
-# 設定 Experience Manager 以使用資產的智慧標記 {#configure-aem-for-smart-tagging}
+# 配置[!DNL Experience Manager]以智慧標籤資產{#configure-aem-for-smart-tagging}
 
-使用分類控制的詞彙來標記資產，以確保藉由標記式搜尋輕鬆識別及擷取資產。Adobe 提供的智慧標記可運用人工智慧和機器學習演算法來訓練影像。智慧標記會使用 [Adobe Sensei](https://www.adobe.com/tw/sensei/experience-cloud-artificial-intelligence.html) 的人工智慧架構，根據您的標記結構和商業分類訓練其影像識別演算法。
+使用分類控制的詞彙來標記資產，以確保藉由標記式搜尋輕鬆識別及擷取資產。Adobe提供智慧型標籤，使用人工智慧和機器學習演算法來訓練影像。 智慧標記會使用 [Adobe Sensei](https://www.adobe.com/tw/sensei/experience-cloud-artificial-intelligence.html) 的人工智慧架構，根據您的標記結構和商業分類訓練其影像識別演算法。
 
 智慧標記功能可以 [!DNL Experience Manager] 附加元件的形式購買。在您購買後，系統會傳送電子郵件給您組織的管理員，並附上 Adobe 開發人員控制台的連結。管理員可存取該連結，以使用 Adobe 開發人員控制台將智慧標記與 [!DNL Experience Manager] 整合。
 
@@ -25,7 +25,7 @@ ht-degree: 96%
 
 >[!IMPORTANT]
 >
->[!DNL Experience Manager Assets] 在2020年8月發行 [後建立的部](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) 署預設會與 [!DNL Adobe Developer Console] 整合。它可協助您更快速地設定智慧標籤功能。 在舊版部署中，管理員可依照下列步驟來設定整合。
+>如果您的[!DNL Experience Manager Assets]部署是在[2020年8月發行](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets)之後建立的，則預設會整合[!DNL Adobe Developer Console]。 它可協助您更快速地設定智慧標籤功能。 在舊版部署中，管理員可依照下列指示手動設定整合。
 
 ## 使用 Adobe 開發人員控制台進行整合 {#aio-integration}
 
@@ -56,7 +56,7 @@ ht-degree: 96%
 
 1. 按一下&#x200B;**[!UICONTROL 「下載公開金鑰」]**。
 
-   ![Experience Manager 智慧標記建立公開金鑰](assets/aem_smarttags-config1.png)
+   ![[!DNL Experience Manager] 智慧型標籤建立公開金鑰](assets/aem_smarttags-config1.png)
 
 ### 建立整合 {#create-aio-integration}
 
@@ -64,10 +64,10 @@ ht-degree: 96%
 
 1. 在瀏覽器中存取 [https://console.adobe.io](https://console.adobe.io/)。選取適當的帳戶，並確認相關聯的組織角色是系統管理員。
 1. 以任何所需的名稱建立專案。按一下&#x200B;**[!UICONTROL 「新增 API」]**。
-1. 在&#x200B;**[!UICONTROL 新增 API]** 頁面上選取&#x200B;**[!UICONTROL 「Experience Cloud」]**，然後選取&#x200B;**[!UICONTROL 「智慧內容」]**。按一下&#x200B;**[!UICONTROL 下一步]**。
+1. 在&#x200B;**[!UICONTROL 新增API]**&#x200B;頁面上，選擇&#x200B;**[!UICONTROL Experience Cloud]**，然後選擇&#x200B;**[!UICONTROL 智慧型內容]**。 按一下&#x200B;**[!UICONTROL 下一步]**。
 1. 選取&#x200B;**[!UICONTROL 「上傳您的公開金鑰」]**。提供從 [!DNL Experience Manager] 下載的憑證檔案。畫面上會顯示[!UICONTROL 已成功上傳公開金鑰]訊息。按一下&#x200B;**[!UICONTROL 下一步]**。
-1. [!UICONTROL 建立新的服務帳戶(JWT) 憑證]頁面會顯示剛設定的服務帳戶的公開金鑰。按一下&#x200B;**[!UICONTROL 下一步]**。
-1. 在&#x200B;**[!UICONTROL 選取產品設定檔]**&#x200B;頁面上，選取&#x200B;**[!UICONTROL 「智慧內容服務」]**。按一下&#x200B;**[!UICONTROL 「儲存已設定的 API」]**。此時會出現一個頁面，顯示更多關於設定的資訊。請保持此頁面開啟，以便您在 [!DNL Experience Manager] 中進一步設定智慧標記時複製這些值，並將其新增至 Experience Manager 中。
+1. [!UICONTROL 建立新服務帳戶(JWT)認證頁] 顯示服務帳戶的公鑰。按一下&#x200B;**[!UICONTROL 下一步]**。
+1. 在&#x200B;**[!UICONTROL 選取產品設定檔]**&#x200B;頁面上，選取&#x200B;**[!UICONTROL 「智慧內容服務」]**。按一下&#x200B;**[!UICONTROL 「儲存已設定的 API」]**。此時會出現一個頁面，顯示更多關於設定的資訊。當在[!DNL Experience Manager]中進一步配置「智慧標籤」時，請保持此頁面的開啟狀態，以複製並在[!DNL Experience Manager]中添加這些值。
 
    ![在「概覽」索引標籤中，您可以檢閱為整合提供的資訊。](assets/integration_details.png)
 
@@ -94,16 +94,16 @@ ht-degree: 96%
 
 ### 在憑證過期時重新設定 {#certrenew}
 
-憑證過期後，即不再受到信任。若要新增憑證，請依照下列步驟操作。您無法更新已過期的憑證。
+當憑證過期時，將不再受信任。 若要新增憑證，請依照下列步驟進行。 您無法更新已過期的憑證。
 
 1. 以管理員身分登入您的 [!DNL Experience Manager] 部署。按一 **[!UICONTROL 下「工具]** >安 **[!UICONTROL 全性]** >使 **[!UICONTROL 用者]**」。
 
-1. 找到 **[!UICONTROL dam-update-service]** 使用者後按一下該使用者。按一下&#x200B;**[!UICONTROL 金鑰存放區]**&#x200B;索引標籤。
+1. 找到 **[!UICONTROL dam-update-service]** 使用者後按一下該使用者。按一下「**[!UICONTROL 密鑰庫]**」頁籤。
 1. 刪除憑證已過期的現有 **[!UICONTROL similaritysearch]** 金鑰存放區。按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
 
-   ![刪除金鑰存放區中現有的 similaritysearch 項目，以新增安全性憑證](assets/smarttags_delete_similaritysearch_keystore.png)
+   ![刪除Keystore中現有的相似性搜尋項目，以新增安全憑證](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *圖：刪除金鑰存放區中現有的 `similaritysearch` 項目，以新增安全性憑證。*
+   *圖：刪除Keystore中 `similaritysearch` 的現有條目以添加安全證書。*
 
 1. 在 [!DNL Experience Manager] 使用者介面中，存取&#x200B;**[!UICONTROL 「工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS 設定」]**。開啟可用的「智慧標記」設定。若要下載公開憑證，請按一下&#x200B;**[!UICONTROL 「下載公開憑證」]**。
 
@@ -126,7 +126,7 @@ ht-degree: 96%
 
 1. 在&#x200B;**[!UICONTROL 引數]**&#x200B;索引標籤中，如果您要讓工作流程在預測標記時忽略失敗，請選取&#x200B;**[!UICONTROL 「忽略錯誤」]**。若無論是否對資料夾啟用智慧標記，都要在資產上傳時標記資產，請選取&#x200B;**[!UICONTROL 「忽略智慧標記旗標」]**。
 
-1. 按一下&#x200B;**[!UICONTROL 「確定」]**&#x200B;關閉程序步驟，然後儲存工作流程。按一下&#x200B;**[!UICONTROL 「同步」]**。
+1. 按一下&#x200B;**[!UICONTROL 「確定」]**。它將關閉流程步驟。 儲存工作流程。 按一下&#x200B;**[!UICONTROL 「同步」]**。
 
 >[!MORELIKETHIS]
 >
