@@ -15,5 +15,5 @@ ht-degree: 84%
 # 安全性 {#security}
 
 + [AEM as a Cloud Service 安全性](/help/security/home.md)
-+ [AEM雲端服務的安全性概觀](/help/security/cloud-service-security-overview.md)
++ [安全性概AEM述(作為Cloud Service)](/help/security/cloud-service-security-overview.md)
 + [AEM as a Cloud Service 的 IMS 支援](ims-support.md)
