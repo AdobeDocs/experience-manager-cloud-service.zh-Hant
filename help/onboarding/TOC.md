@@ -95,7 +95,7 @@ ht-degree: 35%
    + [AEM as a Cloud Service 與網頁協助工具准則](accessibility/web-accessibility.md)
    + [WCAG 2.1 快速指南](accessibility/quick-guide-wcag.md)
 + 遷移方法{#migration-methodology}
-   + [移轉至Adobe Experience Manager作為雲端服務](migration-methodology/getting-started.md)
+   + [作為Cloud Service移民到Adobe Experience Manager](migration-methodology/getting-started.md)
 + 最佳作法 {#best-practices}
    + [SEO 和 URL 管理](best-practices/seo-and-url-management.md)
    + [評估KPI](best-practices/assessing-kpis.md)
