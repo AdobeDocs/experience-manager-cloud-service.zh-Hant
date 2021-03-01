@@ -1,10 +1,10 @@
 ---
 title: 製作環境與工具
-description: AEM的製作環境提供多種機制來組織和編輯您的內容
+description: 的製作環境提AEM供多種機制來組織和編輯您的內容
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2163'
+source-wordcount: '2152'
 ht-degree: 13%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 13%
 
 # 製作環境與工具{#authoring-the-environment-and-tools}
 
-AEM的製作環境提供多種機制來組織和編輯您的內容。 提供的工具可從各種控制台和頁面編輯器中存取。
+的製作環境提AEM供多種機制來組織和編輯您的內容。 提供的工具可從各種控制台和頁面編輯器中存取。
 
 ## 管理您的網站{#managing-your-site}
 
@@ -43,11 +43,11 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 * [**頁面資訊**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)&#x200B;選擇器，顯示簡介投影片（如您第一次存取編輯器時所顯示）
 * 特定元件的[configuration](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)對話方塊(使用？ 表徵圖)，顯示上下文相關幫助
 
-控制台[還提供與幫助相關的其他資源。](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
+控制台](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)還提供與幫助相關的其他資源。[
 
 ## 元件瀏覽器{#components-browser}
 
-元件是AEM內容的建立區塊。 您在頁面上放置多個元件並設定其選項，以便使用AEM建立您的內容頁面。
+元件是內容的建AEM構區塊。 您可以在頁面上放置多個元件並設定其選項，以便使用來建立內容頁面AEM。
 
 元件瀏覽器會顯示目前頁面上可用的所有元件。 這些內容可拖曳至適當位置，然後進行編輯以新增內容。
 
@@ -191,7 +191,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
    ![內容樹編輯按鈕](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* 作為livecopy的一部分的頁面（其中元件繼承自另一頁面）將減少選項的選擇，包括繼承選項。<!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
+* 屬於[livecopy](/help/sites-cloud/administering/msm/overview.md)一部分的頁面，其中元件繼承自其他頁面。
 
 >[!NOTE]
 >
@@ -225,9 +225,9 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 * **傳入連結**，提供參考頁面的頁面清單，以及當您選取特定連結時，可直接存取這些頁 **** 面的「編輯」功能
 * 使用&#x200B;**Reference**&#x200B;元件借閱和借閱內容的例項，您可從這裡導覽至參考／參考頁面
 * [啟動](/help/sites-cloud/authoring/launches/overview.md)，提供相關啟動的存取權
-* 「即時副本」會顯示所有基於所選資源的即時副本的路徑。<!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
-* Blueprint提供了詳細資訊和各種操作<!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* 「語言副本」提供詳細資訊和各種操作<!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* [即時](/help/sites-cloud/administering/msm/overview.md) 副本顯示所有基於所選資源的即時副本的路徑。
+* [Blueprint](/help/sites-cloud/administering/msm/best-practices.md)，提供詳細資訊和各種動作
+* [語言復本](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel)，提供詳細資訊和各種動作
 
 ## 事件——時間軸{#events-timeline}
 
@@ -248,7 +248,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 ![頁面資訊選項](/help/sites-cloud/authoring/assets/page-information.png)
 
 * [開啟屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-* 轉出頁面 <!--[Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)-->
+* [轉出頁面](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [啟動工作流程](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [鎖定頁面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
@@ -283,6 +283,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 >* 存取某些模式需要適當的權限／權限。
 >* 由於空間限制，行動裝置無法使用開發人員模式。
 >* 有一個鍵 [盤](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`可切換 **)，在「預覽」和目前選取的模式之間切換(例如，「編輯」、「排版**********」等)。
+
 >
 
 
@@ -301,7 +302,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
 ![「開啟選擇對話框」按鈕](/help/sites-cloud/authoring/assets/open-selection-dialog-button.png)
 
-或者，您可以開始在路徑欄位中輸入，AEM會在您輸入時提供相符的路徑。
+或者，您可以開始在路徑欄位中輸入，AEM並在輸入時提供相符的路徑。
 
 ![「開啟選擇對話框」按鈕](/help/sites-cloud/authoring/assets/path-selection-completion.png)
 
