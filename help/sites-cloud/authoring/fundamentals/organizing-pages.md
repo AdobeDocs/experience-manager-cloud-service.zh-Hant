@@ -1,8 +1,8 @@
 ---
 title: 建立及組織頁面
-description: 如何使用AEM建立和組織頁面
+description: 如何使用
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 7%
@@ -12,7 +12,7 @@ ht-degree: 7%
 
 # 建立及組織頁面 {#creating-and-organizing-pages}
 
-本檔案說明如何使用Adobe Experience Manager Cloud Service建立和管理頁面，如此您就可以在這些頁面上[建立內容](/help/sites-cloud/authoring/fundamentals/editing-content.md)。
+本檔案說明如何使用Adobe Experience ManagerCloud Service建立和管理頁面，如此您就可以在這些頁面上[建立內容](/help/sites-cloud/authoring/fundamentals/editing-content.md)。
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ ht-degree: 7%
 
 ## 組織您的網站{#organizing-your-website}
 
-身為作者，您將需要在AEM中組織您的網站。 這包括建立和命名您的內容頁面，以便：
+身為作者，您需要組織網站AEM。 這包括建立和命名您的內容頁面，以便：
 
 * 您可在作者環境中輕鬆找到它們
 * 瀏覽您網站的訪客可在發佈環境中輕鬆瀏覽他們
@@ -84,7 +84,7 @@ ht-degree: 7%
 
 頁面 **標題****和名稱可以單獨建立** ，但是是相關的：
 
-* 建立頁面時，只需&#x200B;**Title**&#x200B;欄位。 如果建立頁面時未提供&#x200B;**Name**,AEM將從標題的前64個字元產生名稱（遵循下列的驗證）。 僅使用前64個字元，以支援簡短頁面名稱的最佳實務。
+* 建立頁面時，只需&#x200B;**Title**&#x200B;欄位。 如果在建立頁面時未提供&#x200B;**Name**,AEM將從標題的前64個字元產生名稱（遵循下列的驗證）。 僅使用前64個字元，以支援簡短頁面名稱的最佳實務。
 * 如果作者手動指定頁面名稱，則64個字元的限制不適用，但頁面名稱長度的其他技術限制可能不適用。
 
 >[!TIP]
@@ -93,7 +93,7 @@ ht-degree: 7%
 >
 >同時請記住，有些瀏覽器（例如舊版IE）只能接受一定長度的URL，因此也有技術理由保留頁面名稱簡短。
 
-建立新頁面時，AEM會根據AEM和JCR所強加的慣例[驗證頁面名稱。](/help/implementing/developing/introduction/naming-conventions.md)
+建立新頁面時，AEM[會根據JCR所強加的慣例](/help/implementing/developing/introduction/naming-conventions.md)驗證頁AEM面名稱。
 
 允許的字元數量下限為：
 
@@ -122,7 +122,7 @@ ht-degree: 7%
 
 #### 名稱 {#name}
 
-當您建立新頁面時提供頁面&#x200B;**Name**&#x200B;時，AEM會根據AEM和JCR所強制的慣例[驗證名稱。 ](/help/implementing/developing/introduction/naming-conventions.md)您不能在&#x200B;**Name**&#x200B;欄位中提交無效字元。 當AEM偵測到無效字元時，欄位會以說明性訊息反白顯示。
+當您在建立新頁面時提供頁面&#x200B;**Name**&#x200B;時，AEM[會根據與JCR所強制的慣例](/help/implementing/developing/introduction/naming-conventions.md)驗證AEM名稱。 您不能在&#x200B;**Name**&#x200B;欄位中提交無效字元。 當偵AEM測到無效字元時，欄位會以說明性訊息反白顯示。
 
 ![輸入無效頁面名稱的範例](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -130,18 +130,15 @@ ht-degree: 7%
 >
 >您應避免使用由ISO-639-1定義的雙字母代碼作為頁面名稱，除非它是語言根目錄。
 >
->如需詳細資訊，請參閱準備翻譯內容。
-<!--
->See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
--->
+>有關詳細資訊，請參閱[準備翻譯內容](/help/sites-cloud/administering/translation/preparation.md)。
 
 ### 範本 {#templates}
 
-在AEM中，範本會指定專用的頁面類型。 範本將用作建立任何新頁面的基礎。
+在AEM中，模板指定專用的頁面類型。 範本將用作建立任何新頁面的基礎。
 
 範本會定義包含縮圖影像和其他屬性的頁面結構。 例如，您可能有個別的產品頁面、網站地圖和連絡資訊範本。 範本由[元件](#components)組成。
 
-AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 主要欄位包括：
+隨附AEM了數個現成可用的範本。 可用的範本取決於個別網站。 主要欄位包括：
 
 * **標**
 題顯示在結果網頁上的標題。
@@ -158,7 +155,7 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
 
 ### 元件 {#components}
 
-元件是AEM提供的元素，讓您可以新增特定類型的內容。 AEM隨附一系列現成可用的元件，提供完整的功能。 其中包括：
+元件是您提供的元AEM素，以便您新增特定類型的內容。 隨附AEM一系列現成可用的元件，提供完整的功能。 其中包括：
 
 * 文字
 * 影像
@@ -166,7 +163,7 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
 * 傳送
 * 還有更多
 
-建立並開啟頁面後，您就可使用](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component)元件瀏覽器[提供的元件[新增內容。](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)
+建立並開啟頁面後，您就可使用[元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)提供的元件](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component)新增內容。[
 
 >[!TIP]
 >
@@ -206,8 +203,8 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
    * **名稱**:
 
       * 這用於生成URI。 如果未指定，則名稱是從標題衍生而來。
-      * 如果您在建立新頁面時提供頁面&#x200B;**Name**,AEM會根據AEM和JCR所強制的慣例[驗證名稱。](/help/implementing/developing/introduction/naming-conventions.md)
-      * **無法在**&#x200B;名稱&#x200B;**欄位中提交無效字元**。 當AEM偵測到無效字元時，欄位會反白顯示，並顯示說明訊息，指出需要移除／取代的字元。
+      * 如果在建立新頁面時提供頁面&#x200B;**Name**,AEM則[將根據和JCR強加的約定驗證AEM名稱。](/help/implementing/developing/introduction/naming-conventions.md)
+      * **無法在**&#x200B;名稱&#x200B;**欄位中提交無效字元**。 當檢AEM測到無效字元時，將突出顯示該欄位，並顯示一條說明性消息，以指示需要刪除／替換的字元。
 
    >[!TIP]
    >
@@ -294,7 +291,7 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
 * 移動頁面而不重新命名
 * 同時移動和重新命名
 
-AEM提供您更新任何參照重新命名／移動之頁面的內部連結的功能。 這可逐頁執行，以提供完整的彈性。
+提AEM供您更新任何參照重新命名／移動之頁面的內部連結的功能。 這可逐頁執行，以提供完整的彈性。
 
 1. 導覽，直到您找到要移動的頁面。
 1. 使用下列任一項選擇您的頁面：
@@ -373,7 +370,7 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
 
 不過，如果受影響的頁數超過定義的限制，動作會以非同步方式處理，讓使用者可不受頁面移動或重新命名動作的影響，在UI中繼續製作。
 
-* 當按一下上述最後一個步驟中的&#x200B;**Move**&#x200B;時，AEM會檢查已設定的限制。
+* 在上述最後一個步驟中按一下&#x200B;**移動**&#x200B;時，檢查AEM配置的限制。
 * 如果受影響的頁數低於限制，則會執行同步作業。
 * 如果受影響的頁數超過限制，則會執行非同步作業。
    * 用戶必須定義何時應執行非同步操作
