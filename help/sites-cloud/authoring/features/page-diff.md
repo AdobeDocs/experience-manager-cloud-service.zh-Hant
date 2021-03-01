@@ -2,7 +2,7 @@
 title: 頁面差異
 description: 頁面比較功能可方便並排比較兩頁的差異。
 translation-type: tm+mt
-source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 1%
@@ -29,9 +29,9 @@ ht-degree: 1%
 並排比較可以比較：
 
 * [版本](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) -頁面的舊版，其目前狀態
-* 即時副本——即時副本及其Blueprint <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [即時副本](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page) -即時副本及其藍圖
 * [啟動](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) -啟動及其來源
-* 語言副本——翻譯<!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->前後的頁面
+* [語言副本](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies) -翻譯前後的頁面
 
 請參見有關如何在這些上下文中啟動差異的各個主題。
 
