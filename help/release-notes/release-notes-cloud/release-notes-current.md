@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: c631e23f714b58c3b906e9ab521f9e88b638d044
+source-git-commit: 5b702dd33169939d7b16df07f29f8149cafa82bd
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 2%
+source-wordcount: '1078'
+ht-degree: 3%
 
 ---
 
@@ -28,27 +28,9 @@ ht-degree: 2%
 
 ## [!DNL Adobe Experience Manager Sites] Cloud Service  {#sites}
 
-### 無頭內容管理{#headless}
-
-* **[內容片段傳送的GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**:能夠使用GraphQL語法查詢內容片段，並根據內容片段模型來結構，以便以JSON格式輸出。
-
-* **[GraphQL API請求的驗證支援](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**:能夠使用伺服器端API的存取Token來驗證GraphQL API請求。
-
 * **[RemotePage元件](/help/implementing/developing/hybrid/remote-page.md)**:新增支援在使用中檢視和編SPA輯外AEM部。
 
 * **[在中編SPA輯外AEM部](/help/implementing/developing/hybrid/editing-external-spa.md)**:新增將獨立單頁應用程式上傳至例項、新增可編AEM輯的內容區段，以及啟用編寫功能的能力。
-
-* 從GraphQL API增強JSON輸出，包括以JSON格式和地區設定輸出豐富型文字的功能。
-
-* 支援巢狀內容片段模型，以允許透過多行文字欄位中的專屬內容片段參考資料類型或內容片段參考，建立巢狀內容片段結構。
-
-* 內容片段模型資料類型中提供的其他驗證規則，包括「唯一」、「必要」和「可翻譯」。
-
-* 可標籤內容片段模型，並允許在資料夾中依標籤或路徑建立內容片段原則。
-
-* 內容片段編輯器中的可用性增強功能，包括發佈動作和片段所依據的模型顯示。
-
-* 可直接在內容片段編輯器中預覽JSON輸出。
 
 <!--
 ### Progressive Web Apps (PWAs) {#pwa}
@@ -76,6 +58,18 @@ Customers using the Connected Assets feature can now easily view and track asset
 * 當打印具有長注釋文本的資產時，即使有空格，注釋文本也會被修剪。 (CQ-4314101)
 * 當選取多個資產以更新屬性時，有時候會發生錯誤，或未選取資產的屬性會更新。 (CQ-4316532)
 * 當嘗試開啟[!UICONTROL 資產管理搜尋邊欄]時，頁面仍為空白，按一下[!UICONTROL 編輯] > [!UICONTROL 設定]會產生錯誤。 (CQ-4315079)
+
+## Adobe Experience Manager商務Cloud Service{#cloud-services-commerce}
+
+### 新增功能 {#what-is-new-commerce}
+
+* 產品體驗管理：使用體驗片段讓產品目錄頁面更加豐富。
+
+* 延伸產品主控台屬性以顯示連結的資產和體驗片段，包括快速導覽至相關內容的動作。
+
+* 發佈的CIF Venia參考網站- 2021.02.24，其中包含最新的CIF核心元件1.8.0版。如需詳細資訊，請參閱[CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24)。
+
+* 已發佈CIF核心元件v1.8.0。有關詳細資訊，請參閱[CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0)。
 
 ## Cloud Manager {#cloud-manager}
 
