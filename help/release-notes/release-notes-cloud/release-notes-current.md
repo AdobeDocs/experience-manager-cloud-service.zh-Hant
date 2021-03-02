@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: 7c9eea58b8e42902842f5e9658f0fa677f1dc51d
+source-git-commit: c631e23f714b58c3b906e9ab521f9e88b638d044
 workflow-type: tm+mt
-source-wordcount: '1064'
-ht-degree: 3%
+source-wordcount: '1142'
+ht-degree: 2%
 
 ---
 
@@ -59,6 +59,10 @@ ht-degree: 3%
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ## [!DNL Assets] {#what-is-new-assets}的新增功能
+
+* 企業現在可以使用[!DNL Brand Portal]來源資產。 資產來源搜尋功能運用[!DNL Brand Portal]，協助客戶與代理商使用者互動，為新的行銷宣傳、攝影和專案搜尋資產。 請參閱 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)中的[資產來源補充。
+
+* [!DNL Brand Portal]使用狀況報表現在只會顯示作用中的使用者。 現在不會顯示非作用中的使用者。 作用中使用者是指其帳戶已指派至[!DNL Admin Console]中產品描述檔的使用者。 請參閱[[!DNL Brand Portal] reports](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html)。
 
 * 在[!DNL Brand Portal]中，會引入新的下載設定，可讓您在下載檔案夾、系列等時，為每個資產建立個別的檔案夾。 請參閱[下載設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)。
 
