@@ -1,47 +1,47 @@
 ---
-title: '使用品牌入口網站將AEM資產設定為a [!DNL Cloud Service] '
+title: '將AEM Assets配置為具有品牌門戶的a [!DNL Cloud Service] '
 description: 使用 Brand Portal 設定 AEM Assets.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1651'
 ht-degree: 14%
 
 ---
 
 
-# 將AEM Assets設定為[!DNL Cloud Service]及品牌入口網站{#configure-aem-assets-with-brand-portal}
+# 將AEM Assets配置為[!DNL Cloud Service]和品牌門戶{#configure-aem-assets-with-brand-portal}
 
-設定Adobe Experience Manager Assets Brand Portal可讓您將Adobe Experience Manager Assets中已核准的品牌資產發佈為[!DNL Cloud Service]例項至品牌入口網站，並將其發佈至品牌入口網站使用者。
+設定Adobe Experience Manager資產品牌入口網站可讓您將Adobe Experience Manager資產的已核准品牌資產發佈為[!DNL Cloud Service]例項至品牌入口網站，並將其發佈至品牌入口網站使用者。
 
 **設定工作流程**
 
-AEM Assets as a [!DNL Cloud Service]是透過Adobe Developer Console設定品牌入口網站，該網站會購買Adobe Identity Management Services(IMS)帳戶代號以授權品牌入口網站租戶。 這需要AEM Assets和Adobe Developer Console中的設定。
+AEM Assets是[!DNL Cloud Service]的一員，透過Adobe開發人員主控台設定品牌入口網站，該主控台會購買AdobeIdentity Management服務(IMS)帳戶代號以授權品牌入口網站租戶。 它需要在AEM Assets和Adobe開發人員主控台中進行配置。
 
-1. 在AEM Assets中，建立IMS帳戶並產生公開金鑰（憑證）。
-1. 在Adobe Developer Console中，為您的品牌入口網站租用戶（組織）建立專案。
+1. 在AEM Assets，建立IMS帳戶並產生公開金鑰（憑證）。
+1. 在Adobe開發人員主控台中，為您的品牌入口網站租用戶（組織）建立專案。
 1. 在專案下，使用公開金鑰來設定API，以建立服務帳戶連線。
 1. 取得服務帳戶認證和JSON Web Token(JWT)裝載資訊。
-1. 在AEM Assets中，使用服務帳戶認證和JWT裝載來設定IMS帳戶。
-1. 在AEM Assets中，使用IMS帳戶和品牌入口端端點（組織URL）來設定品牌入口網站雲端服務。
+1. 在AEM Assets，使用服務帳戶憑證和JWT裝載來設定IMS帳戶。
+1. 在AEM Assets，使用IMS帳戶和品牌入口端端點（組織URL）來設定品牌入口網站雲端服務。
 1. 將資產從AEM Assets發佈至品牌入口網站，以測試您的設定。
 
 >[!NOTE]
 >
->AEM Assets作為[!DNL Cloud Service]例項，只能設定一個品牌入口網站租用戶。
+>作為[!DNL Cloud Service]實例的AEM Assets僅應配置一個品牌門戶租戶。
 
 ## 必備條件 {#prerequisites}
 
 您需要下列項目才能使用 Brand Portal 設定 AEM Assets：
 
-* 以[!DNL Cloud Service]例項啟動並執行AEM Assets
+* 啟動並運行AEM Assets作為[!DNL Cloud Service]實例
 * 品牌入口網站租用戶URL
 * 對品牌入口網站的IMS組織具有系統管理員權限的使用者
 
 ## 建立設定 {#create-new-configuration}
 
-在指定的序列中執行下列步驟，以設定具有品牌入口網站的AEM資產。
+在指定的序列中執行下列步驟，以使用品牌入口網站配置AEM Assets。
 
 1. [取得公開憑證](#public-certificate)
 1. [建立服務帳戶(JWT)連接](#createnewintegration)
@@ -51,7 +51,7 @@ AEM Assets as a [!DNL Cloud Service]是透過Adobe Developer Console設定品牌
 
 ### 建立 IMS 設定 {#create-ims-configuration}
 
-IMS設定會以[!DNL Cloud Service]例項驗證您的AEM資產，並與品牌入口網站租用戶一起使用。
+IMS設定會將您的AEM Assets驗證為品牌入口網站的[!DNL Cloud Service]實例。
 
 IMS 設定包括兩個步驟：
 
@@ -60,36 +60,36 @@ IMS 設定包括兩個步驟：
 
 ### 取得公開憑證 {#public-certificate}
 
-公開金鑰（憑證）會在Adobe Developer Console上驗證您的個人檔案。
+公開金鑰（憑證）會在Adobe開發人員主控台上驗證您的個人檔案。
 
 1. 登入AEM Assets。
-1. 從&#x200B;**工具**&#x200B;面板，導覽至&#x200B;**[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS設定]**。
-1. 在「Adobe IMS設定」頁面中，按一下「**[!UICONTROL 建立]**」。 它會重新導向至&#x200B;**[!UICONTROL Adobe IMS技術帳戶設定]**&#x200B;頁面。 預設情況下，**Certificate**&#x200B;頁籤開啟。
+1. 從&#x200B;**工具**&#x200B;面板，瀏覽至&#x200B;**[!UICONTROL 安全]** > **[!UICONTROL AdobeIMS配置]**。
+1. 在「AdobeIMS配置」頁中，按一下&#x200B;**[!UICONTROL 建立]**。 它將重定向至「**[!UICONTROL AdobeIMS技術帳戶配置]**」頁。 預設情況下，**Certificate**&#x200B;頁籤開啟。
 1. 在&#x200B;**[!UICONTROL 雲端解決方案]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL Adobe品牌入口網站]**。
-1. 選擇「建立新證書」複選框，並為公鑰指定&#x200B;**[!UICONTROL 別名]**。 ****&#x200B;別名用作公共密鑰的名稱。
+1. 選擇「建立新證書」複選框，並為公鑰指定&#x200B;**別名**。 ****&#x200B;別名用作公共密鑰的名稱。
 1. 按一下&#x200B;**[!UICONTROL 建立憑證]**。然後，按一下&#x200B;**[!UICONTROL OK]**&#x200B;以生成公鑰。
 
    ![建立憑證](assets/ims-config2.png)
 
 1. 按一下&#x200B;**[!UICONTROL 下載公開密鑰]**&#x200B;表徵圖，並將公開密鑰(CRT)檔案保存在電腦上。
 
-   公開金鑰稍後將用於為您的品牌入口網站租用戶設定API，並在Adobe Developer Console中產生服務帳戶認證。
+   公開金鑰稍後將用於為您的品牌入口網站租用戶設定API，並在Adobe開發人員主控台中產生服務帳戶認證。
 
    ![下載憑證](assets/ims-config3.png)
 
 1. 按一下&#x200B;**[!UICONTROL 下一步]**。
 
-   在&#x200B;**Account**&#x200B;標籤中，會建立Adobe IMS帳戶，此帳戶需要Adobe Developer Console中產生的服務帳戶認證。 暫時保持此頁面開啟。
+   在&#x200B;**Account**&#x200B;標籤中，建立AdobeIMS帳戶，此帳戶需要在Adobe開發人員主控台中產生的服務帳戶認證。 暫時保持此頁面開啟。
 
-   在Adobe Developer Console[中開啟新標籤並建立服務帳戶(JWT)連線，以取得用於設定IMS帳戶的認證和JWT裝載。](#createnewintegration)
+   開啟新標籤，並在Adobe開發人員主控台(Developer Console)中建立服務帳戶(JWT)連線，以取得用於設定IMS帳戶的認證和JWT裝載。[](#createnewintegration)
 
 ### 建立服務帳戶(JWT)連接{#createnewintegration}
 
-在Adobe Developer Console中，專案和API是在品牌入口網站租用戶（組織）層級設定。 配置API會建立服務帳戶(JWT)連接。 有兩種方法可用來設定API：產生金鑰對（私用和公開金鑰）或上傳公開金鑰。 若要使用品牌入口網站設定AEM資產，您必須在AEM資產中產生公開金鑰（憑證），並透過上傳公開金鑰在Adobe Developer Console中建立認證。 在AEM資產中設定IMS帳戶時，需要這些認證。 在設定IMS帳戶後，您就可以在AEM Assets中設定品牌入口網站雲端服務。
+在Adobe開發人員主控台中，專案和API是在品牌入口網站租用戶（組織）層級設定。 配置API會建立服務帳戶(JWT)連接。 有兩種方法可用來設定API：產生金鑰對（私用和公開金鑰）或上傳公開金鑰。 若要使用品牌入口網站來設定AEM Assets，您必須在AEM Assets產生公開金鑰（憑證），並上傳公開金鑰以在Adobe開發人員主控台中建立認證。 必須有這些認證才能在AEM Assets設定IMS帳戶。 一旦設定IMS帳戶後，您就可以在AEM Assets設定品牌入口網站雲端服務。
 
 執行以下步驟以生成服務帳戶憑據和JWT裝載：
 
-1. 以IMS組織（品牌入口網站租用戶）的系統管理員權限登入Adobe Developer Console。 預設URL為[https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui)。
+1. 以IMS組織（品牌入口租戶）的系統管理員權限登入Adobe開發人員主控台。 預設URL為[https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui)。
 
 
    >[!NOTE]
@@ -102,9 +102,9 @@ IMS 設定包括兩個步驟：
 
 1. 在&#x200B;**[!UICONTROL Project overview]**&#x200B;標籤中，按一下&#x200B;**[!UICONTROL Add API]**。
 
-1. 在&#x200B;**[!UICONTROL 新增API視窗]**&#x200B;中，選取&#x200B;**[!UICONTROL AEM品牌入口網站]**，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL 新增API視窗]**&#x200B;中，選擇&#x200B;**[!UICONTROL AEM品牌入口網站]**，然後按一下&#x200B;**[!UICONTROL Next]**。
 
-   請確定您擁有AEM品牌入口網站服務的存取權。
+   確保您擁有品牌入口網站AEM服務的存取權。
 
 1. 在&#x200B;**[!UICONTROL 配置API]**&#x200B;窗口中，按一下&#x200B;**[!UICONTROL 上傳公開密鑰]**。 然後，按一下「**[!UICONTROL 選擇檔案]**」並上傳您在[獲取公共證書](#public-certificate)部分中下載的公開密鑰（.crt檔案）。
 
@@ -136,7 +136,7 @@ IMS 設定包括兩個步驟：
 
 1. 導航至「生成JWT ]**」頁籤並複製**[!UICONTROL  JWT Payload ]**資訊。**[!UICONTROL 
 
-您現在可以使用用戶端ID（API金鑰）、用戶端密碼和JWT裝載至[，在AEM資產中設定IMS帳戶](#create-ims-account-configuration)。
+您現在可以使用用戶端ID（API金鑰）、用戶端密碼和JWT裝載至[，在AEM Assets設定IMS帳戶](#create-ims-account-configuration)。
 
 <!--
 1. Click **[!UICONTROL Create Integration]**.
@@ -217,7 +217,7 @@ IMS 設定包括兩個步驟：
 
 1. 登入AEM Assets。
 
-1. 從&#x200B;**工具**&#x200B;面板，導覽至&#x200B;**[!UICONTROL 雲端服務]** > **[!UICONTROL AEM品牌入口網站]**。
+1. 從&#x200B;**工具**&#x200B;面板，導覽至&#x200B;**[!UICONTROL Cloud Services]** > **[!UICONTROL 品AEM牌入口網站]**。
 
 1. 在「品牌入口網站設定」頁面中，按一下「建立&#x200B;**[!UICONTROL 」。]**
 
@@ -231,7 +231,7 @@ IMS 設定包括兩個步驟：
 
 1. 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。雲端設定此時已建立。
 
-   您的AEM Assets（[!DNL Cloud Service]例項）現在已設定為品牌入口網站租用戶。
+   您的[!DNL Cloud Service]例項AEM Assets現在已設定為品牌入口網站租用戶。
 
 ### 測試設定 {#test-configuration}
 
@@ -262,7 +262,7 @@ IMS 設定包括兩個步驟：
 
    ![](assets/test-bpconfig3.png)
 
-1. 若要驗證AEM Assets([!DNL Cloud Service])與品牌入口網站之間的連線，請按一下&#x200B;**[!UICONTROL Test Connection（測試連線）]**&#x200B;圖示。
+1. 要驗證作為[!DNL Cloud Service]和品牌門戶的AEM Assets之間的連接，請按一下&#x200B;**[!UICONTROL 測試連接]**&#x200B;表徵圖。
 
    ![](assets/test-bpconfig4.png)
 
@@ -277,6 +277,7 @@ IMS 設定包括兩個步驟：
 * [從 AEM Assets 發佈資產到 Brand Portal](publish-to-brand-portal.md)
 * [從 AEM Assets 發佈資料夾到 Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [從 AEM Assets 發佈集合到 Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [將資產從品牌入口網站發佈至AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) -品牌入口網站中的資產來源補充
 * [將預設集、結構和 Facet 發佈至 Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [將標記發佈至 Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
@@ -303,18 +304,18 @@ IMS 設定包括兩個步驟：
 **發佈代理程式請求**：
 
 * DSTRQ2 (請求 2)：觸發資產發佈請求。
-* DSTRQ3（請求3）:系統會觸發另一個請求，以發佈AEM Assets檔案夾（資產存在其中）並複製品牌入口網站中的檔案夾。
+* DSTRQ3（請求3）:系統會觸發另一個請求，以發佈AEM Assets資料夾（資產存在於其中）並複製品牌入口網站中的資料夾。
 
 **發佈代理程式回應**：
 
 * queue-bpdistributionagent0 (DSTRQ2)：資產已發佈至 Brand Portal。
-* queue-bpdistributionagent0(DSTRQ3):系統會複製品牌入口網站中的「AEM資產」檔案夾（包含資產）。
+* queue-bpdistributionagent0(DSTRQ3):系統會複製品牌入口網站中的AEM Assets資料夾（包含資產）。
 
 在上述範例中，系統會觸發其他請求和回應。系統無法在品牌入口網站中找到父資料夾（新增路徑），因為資產是第一次發佈，因此會觸發額外請求，在發佈資產的品牌入口網站中建立同名的父資料夾。
 
 >[!NOTE]
 >
->當父資料夾不存在於品牌入口網站中或已在AEM Assets中修改時，會產生其他請求。
+>當父資料夾不存在於Brand Portal中或已修改於AEM Assets時，會產生其他請求。
 
 <!--
 
