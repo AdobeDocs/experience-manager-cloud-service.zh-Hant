@@ -2,10 +2,10 @@
 title: 編輯啟動
 description: '為頁面（或一組頁面）建立啟動後，您可以編輯頁面啟動副本中的內容。 '
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: ba7a8f5027b71ebdee7c84ed35d374fe22645a5a
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 18%
+source-wordcount: '555'
+ht-degree: 17%
 
 ---
 
@@ -22,6 +22,13 @@ ht-degree: 18%
 編輯頁面時，您會在頂端工具列中看到指示，以及&#x200B;**Leave**&#x200B;和&#x200B;**Navigate**&#x200B;選項：
 
 ![離開頁面編輯器並導覽啟動](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+
+>[!NOTE]
+>
+>您不允許在啟動中移動頁面。 嘗試此動作將觸發警告訊息：
+>
+>* 警告：此頁面是啟動的來源。 不允許移動頁面。
+
 
 ### 編輯受即時副本約束的啟動頁面{#editing-launch-pages-subject-to-a-live-copy}
 
