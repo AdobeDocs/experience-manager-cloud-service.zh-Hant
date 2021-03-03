@@ -3,10 +3,10 @@ title: 關於使用與共用的報告
 description: ' [!DNL Adobe Experience Manager Assets] 中有關您資產的報表，可協助您瞭解數位資產的使用、活動和共用。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
+source-git-commit: 6586dfeeef1732ae115eea433a665191773ed283
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 6%
+source-wordcount: '939'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 報表管理介面是直覺式的，包含存取已封存報表及檢視報表執行狀態（成功、失敗和佇列）的精細選項和控制項。
 
-生成報告時，<!-- through an email (optional) and -->收件箱通知會通知您。 您可以從報表清單頁面檢視、下載或刪除報表，其中會顯示所有先前產生的報表。
+產生報告時，會透過<!-- through an email (optional) and -->收件匣通知您。 您可以從報表清單頁面檢視、下載或刪除報表，其中會顯示所有先前產生的報表。
 
 ## 產生報告{#generate-reports}
 
@@ -56,7 +56,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->依預設，「內容片段」和連結分享會包含在「資產[!UICONTROL 下載]」報表中。 選取適當的選項，以建立連結共用的報表，或從下載報表中排除內容片段。
+>依預設，「內容片段」和連結分享會包含在資產[!UICONTROL Download]報表中。 選取適當的選項，以建立連結共用的報表，或從下載報表中排除內容片段。
 
 >[!NOTE]
 >
@@ -66,9 +66,7 @@ ht-degree: 6%
 
    ![新增報表詳細資訊的頁面](assets/report_configuration.png)
 
-   選擇報表的日期範圍。
-
-   您可以選擇立即產生報表，或在未來的日期和時間產生報表。
+   選擇報表的日期範圍。 您可以選擇立即產生報表，或在未來的日期和時間產生報表。
 
    >[!NOTE]
    >
@@ -109,7 +107,7 @@ ht-degree: 6%
 
    按一下工具列中的&#x200B;**[!UICONTROL 下載]**，以下載CSV格式的報表。
 
-## 新增自訂欄{#add-custom-columns}
+## 新增自訂欄至報表{#add-custom-columns}
 
 您可以新增自訂欄至下列報表，以顯示更多符合自訂需求的資料：
 
@@ -126,10 +124,11 @@ ht-degree: 6%
 1. 在[!DNL Manager interface]中，按一下「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 報表]**」。
 1. 在[!UICONTROL 資產報表]頁面上，從工具列按一下&#x200B;**[!UICONTROL 建立]**。
 
-1. 從&#x200B;**[!UICONTROL 建立報表]**&#x200B;頁面中，選擇您要建立的報表，然後按一下&#x200B;**[!UICONTROL 下一步]**。
-1. 視需要設定報表詳細資訊，例如標題、說明、縮圖、資料夾路徑和日期範圍。
+1. 從&#x200B;**[!UICONTROL 建立報表]**&#x200B;頁面，選擇要建立的報表。 按一下&#x200B;**[!UICONTROL 下一步]**。
 
-1. 要顯示自定義列，請在「自定義列」下指定列 **[!UICONTROL 的名稱]**。
+1. 視需要設定報表詳細資訊，例如標題、說明、縮圖、資料夾路徑和日期範圍。 按一下&#x200B;**[!UICONTROL 下一步]**。
+
+1. 從&#x200B;**[!UICONTROL 預設列]**&#x200B;清單中選擇適用資訊。 要顯示自定義列，請在&#x200B;**[!UICONTROL 自定義列]**&#x200B;下指定列的名稱。
 
    ![指定報表的自訂欄名稱](assets/custom_columns-1.png)
 
@@ -137,7 +136,7 @@ ht-degree: 6%
 
    ![從jcr:content中的路徑映射屬性路徑](assets/property_picker.png)
 
-   若要新增更多自訂欄，請按一下「新增&#x200B;****」，然後重複步驟5和6。
+   若要新增更多自訂欄，請按一下「新增&#x200B;****」，然後重複上述步驟。
 
 1. 從工具列按一下「建立」。 ****&#x200B;訊息會通知報表產生已開始。
 
@@ -153,6 +152,6 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## 疑難排解資訊、提示和限制{#best-practices-and-limitations}
+## 疑難排解資訊與提示{#tips-troubleshoot}
 
-* 如果未產生「磁碟使用狀況報表」，而您正在使用[!DNL Dynamic Media]，請確定所有資產都正確進行。 若要解決，請重新處理資產，然後再次產生報表。
+* 如果[!UICONTROL 磁碟使用狀況報表]未產生，且您使用[!DNL Dynamic Media]，請確定所有資產都正確進行。 若要解決，請重新處理資產並重新產生報表。
