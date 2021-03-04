@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
+source-git-commit: 8887aff8924da538c94f2ca6ebde64518b4aa019
 workflow-type: tm+mt
-source-wordcount: '1969'
-ht-degree: 62%
+source-wordcount: '2055'
+ht-degree: 58%
 
 ---
 
@@ -65,16 +65,23 @@ ht-degree: 62%
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
+
 1. 當您建立第一個移轉集時，會顯示下列主控台。 按一下&#x200B;**建立移轉集**&#x200B;以建立新的移轉集。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
+
 
    >[!NOTE]
    >如果您有現有的移轉集，主控台將顯示現有移轉集的清單，其目前狀態為。
 
-1. 請依照下方敘述，填入&#x200B;**內容移轉集詳細資訊**&#x200B;畫面中的欄位。
+   此外，按一下&#x200B;**建立用戶映射配置**&#x200B;以訪問[用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
+1. 如下所述，填入「內容移轉集」畫面中的欄位。****
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+
+   >[!NOTE]
+   >選擇&#x200B;**包含來自IMS使用者和群組的對應**，如上圖所反白顯示。 如需詳細資訊，請參閱[使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
 
 
    1. **名稱**：輸入移轉集名稱。
@@ -119,7 +126,6 @@ ht-degree: 62%
    * *黃色圖示*&#x200B;表示您並未建立現有移轉集，且該特定移轉集是由相同例項中的其他使用者所建立。
 
 1. 從「綜覽」頁面選取移轉集，然後按一下&#x200B;**屬性**&#x200B;以檢視或編輯移轉集屬性。編輯屬性時，無法變更容器名稱或服務URL。
-
 
 
 ### 內容轉移中的提取程序 {#extraction-process}
@@ -174,6 +180,7 @@ ht-degree: 62%
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
+
 1. 擷取完成後，**PUBLISH INGESTION**&#x200B;欄位中的狀態會更新為&#x200B;**FINISHED**。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
@@ -190,11 +197,13 @@ ht-degree: 62%
 
 1. 導覽至&#x200B;*綜覽*&#x200B;頁面，並選取您要執行追加擷取的移轉集。按一下&#x200B;**擷取**&#x200B;即可開始追加提取。**移轉集擷取**&#x200B;對話框隨即顯示。
 
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+
    >[!IMPORTANT]
    >
    >您應停用「擷取&#x200B;**之前先擦除雲端例項上的現有內容」選項，以防止從先前的擷取活動中刪除現有內容。**
-   >
-   >![影像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+
+   此外，請參閱[使用內容傳輸工具的重要注意事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以瞭解如何新增至客戶服務票證。
 
 ### 檢視移轉集記錄 {#viewing-logs-migration-set}
 
