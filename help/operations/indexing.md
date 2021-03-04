@@ -2,7 +2,7 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 translation-type: tm+mt
-source-git-commit: 610615534cb5a798e37d34fadb9a3bf341565526
+source-git-commit: c915580247e1b99db8a9f5228eec8cffece8a003
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 2%
@@ -12,15 +12,15 @@ ht-degree: 2%
 
 # 內容搜尋與索引 {#indexing}
 
-## AEM作為雲端服務的變更{#changes-in-aem-as-a-cloud-service}
+## 變更AEM為Cloud Service{#changes-in-aem-as-a-cloud-service}
 
-以AEM為雲端服務，Adobe將從AEM實例導向服務型檢視，並在Cloud Manager的CI/CD管道驅動下，從AEM實例導向檢視。 必須在部署前先指定「索引」設定，而非在單一AEM例項上設定和維護「索引」。 生產中的配置更改明顯違反了CI/CD策略。 索引更改也是如此，因為如果未指定測試並重新編製索引，則可能會影響系統穩定性和效能，然後再將它們投入生產。
+作為一AEM個Cloud Service,Adobe正從例項AEM導向模型移至Cloud Manager中由CI/CD管道驅動、具有n-x AEM Containers的服務型檢視。 必須在部署之前指定索引配置，AEM而不是在單個實例上配置和維護索引。 生產中的配置更改明顯違反了CI/CD策略。 索引更改也是如此，因為如果未指定測試並重新編製索引，則可能會影響系統穩定性和效能，然後再將它們投入生產。
 
-以下是與AEM 6.5及舊版比較的主要變更清單：
+以下列出與6.5及舊版相AEM比的主要變更：
 
-1. 使用者將無法再存取單一AEM例項的「索引管理員」來除錯、設定或維護索引。 它僅用於本機開發和預先部署。
+1. 用戶將無法再訪問單個實例的「索引管理器」AEM來調試、配置或維護索引。 它僅用於本機開發和預先部署。
 
-1. 使用者不會在單一AEM例項上變更「索引」，也不必再擔心一致性檢查或重新建立索引。
+1. 用戶不會更改單個實例上的索AEM引，也不必再擔心一致性檢查或重新編製索引。
 
 1. 一般而言，索引變更是在開始生產之前先開始的，以避免規避Cloud Manager CI/CD管道中的品質閘道，而不會影響生產中的業務KPI。
 
@@ -32,19 +32,11 @@ ht-degree: 2%
 
 1. 索引配置會透過部署進行變更。 索引定義變更的設定方式與其他內容變更一樣。
 
-1. 在AEM的雲端服務層級，隨著[Blue-Green部署模型](#index-management-using-blue-green-deployments)推出兩組索引：一組是舊版（藍色），另一組是新版（綠色）。
+1. 作為Cloud Service,AEM在高級別上，隨著[Blue-Green部署模型](#index-management-using-blue-green-deployments)的引入，將存在兩組索引：一組是舊版（藍色），另一組是新版（綠色）。
 
 1. 客戶可以在Cloud Manager構建頁面上查看索引作業是否已完成，並在新版本準備好接收流量時收到通知。
 
-1. 限制：目前，AEM雲端服務的索引管理僅支援lucene類型的索引。
-
-<!-- ## Sizing Considerations {#sizing-considerations}
-
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
-
-AS NOTE: the above is internal for now.
-
--->
+1. 限制：目前，僅支AEM持對類型lucene的索引進行作為Cloud Service的索引管理。
 
 ## 使用方式 {#how-to-use}
 
@@ -54,7 +46,7 @@ AS NOTE: the above is internal for now.
 1. 更新現有索引定義。 這實際上意味著添加現有索引定義的新版本
 1. 刪除冗餘或過時的現有索引。
 
-對於上述第1點和第2點，您需要在各自的Cloud Manager發行排程中，建立新的索引定義，作為自訂程式碼庫的一部分。 如需詳細資訊，請參閱[「部署至AEM為雲端服務」檔案](/help/implementing/deploying/overview.md)。
+對於上述第1點和第2點，您需要在各自的Cloud Manager發行排程中，建立新的索引定義，作為自訂程式碼庫的一部分。 如需詳細資訊，請參閱[部署AEM至Cloud Service檔案](/help/implementing/deploying/overview.md)。
 
 ### 準備新索引定義{#preparing-the-new-index-definition}
 
@@ -63,8 +55,6 @@ AS NOTE: the above is internal for now.
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
 那麼就得在`ui.apps/src/main/content/jcr_root`下。 目前不支援子根資料夾。
-
-<!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
 上述示例中的軟體包構建為`com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`。
 
@@ -84,7 +74,7 @@ AS NOTE: the above is internal for now.
 
 >[!TIP]
 >
->如需AEM作為雲端服務所需套件結構的詳細資訊，請參閱檔案[AEM專案結構。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>有關作為Cloud Service所需的包AEM結構的詳細資訊，請參閱[AEM項目結構。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## 使用藍綠部署的索引管理{#index-management-using-blue-green-deployments}
 
@@ -124,7 +114,7 @@ AS NOTE: the above is internal for now.
 
 >[!NOTE]
 >
->`<indexName>-custom-<customerVersionNumber>` AEM需要做為Cloud服務，才能將它標示為現有索引的取代。
+>`<indexName>-custom-<customerVersionNumber>` 需要將AEM此標籤為現有索引的替換Cloud Service。
 
 | 索引 | 現成可用的索引 | 用於第1版 | 用於第2版 |
 |---|---|---|---|
