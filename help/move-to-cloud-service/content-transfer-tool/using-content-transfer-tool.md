@@ -2,7 +2,7 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: 495a292eceb7abf6439df15a092d71b58cf2f2f3
+source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
 workflow-type: tm+mt
 source-wordcount: '2053'
 ht-degree: 58%
@@ -178,7 +178,7 @@ ht-degree: 58%
    >[!IMPORTANT]
    >啟用&#x200B;**在擷取**&#x200B;選項前擦除雲端例項上的現有內容時，它會刪除整個現有儲存庫並建立新儲存庫，以將內容擷取至。 這表示會重設目標Cloud Service例項的所有設定，包括權限。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
 
 
 1. 擷取完成後，**PUBLISH INGESTION**&#x200B;欄位中的狀態會更新為&#x200B;**FINISHED**。
