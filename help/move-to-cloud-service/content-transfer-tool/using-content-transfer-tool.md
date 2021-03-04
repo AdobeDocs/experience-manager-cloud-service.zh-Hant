@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
+source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
 workflow-type: tm+mt
-source-wordcount: '1916'
-ht-degree: 63%
+source-wordcount: '1969'
+ht-degree: 62%
 
 ---
 
@@ -19,6 +19,8 @@ ht-degree: 63%
 * 「內容轉移工具」的最低系統需求為 AEM 6.3 + 和 JAVA 8。如果您使用較舊版本的 AEM，您必須將內容存放庫升級至 AEM 6.5 才能使用「內容轉移工具」。
 
 * 必須在環境上配置AEMJava，以便啟動的用戶可以執行`java`命AEM令。
+
+* 在安裝1.3.0版時，建議解除安裝舊版內容傳輸工具，因為該工具在架構上有重大變更。 在1.3.0中，您還應建立新的遷移集，並重新運行對新遷移集的提取和提取。
 
 * 內容傳輸工具可與下列類型的資料儲存區搭配使用：檔案資料儲存、S3資料儲存、共用S3資料儲存和Azure Blob儲存資料儲存。
 
@@ -101,7 +103,7 @@ ht-degree: 63%
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc`
+         >* `/etc` (允許 `/etc` 在CTT中選取某些路徑)
 
 
 1. 在填入&#x200B;**內容移轉集詳細資訊**&#x200B;畫面中的所有欄位後，請按一下&#x200B;**儲存**。
