@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
+source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 64%
+source-wordcount: '1916'
+ht-degree: 63%
 
 ---
 
@@ -18,21 +18,21 @@ ht-degree: 64%
 
 * 「內容轉移工具」的最低系統需求為 AEM 6.3 + 和 JAVA 8。如果您使用較舊版本的 AEM，您必須將內容存放庫升級至 AEM 6.5 才能使用「內容轉移工具」。
 
-* Java必須在AEM環境上設定，如此`java`命令就可由啟動AEM的使用者執行。
+* 必須在環境上配置AEMJava，以便啟動的用戶可以執行`java`命AEM令。
 
 * 內容傳輸工具可與下列類型的資料儲存區搭配使用：檔案資料儲存、S3資料儲存、共用S3資料儲存和Azure Blob儲存資料儲存。
 
 * 如果您使用&#x200B;*沙盒環境*，請確定您的環境是最新的，並升級至最新的版本。 如果您使用&#x200B;*生產環境*，則會自動更新。
 
-* 若要使用「內容傳輸工具」，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud服務例項中的本機AEM管理員群組。 無權限的使用者將無法擷取能使用「內容轉移工具」的存取 Token。
+* 若要使用「內容傳輸工具」，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud Service例項的本AEM機管理員群組。 無權限的使用者將無法擷取能使用「內容轉移工具」的存取 Token。
 
-* 存取Token可在特定時段後或雲端服務環境升級後定期到期。 如果存取Token已過期，您將無法連線至Cloud Service實例，而您必須擷取新的存取Token。 與現有移轉集相關聯的狀態圖示將變更為紅色雲端，並會在您將滑鼠暫留在紅色雲端時顯示訊息。
+* 存取Token可在特定時段後或Cloud Service環境升級後定期到期。 如果存取Token已過期，您將無法連線至Cloud Service例項，而您必須擷取新的存取Token。 與現有移轉集相關聯的狀態圖示將變更為紅色雲端，並會在您將滑鼠暫留在紅色雲端時顯示訊息。
 
 * 內容傳輸工具所傳輸的使用者和群組僅是內容滿足權限所需的使用者和群組。 *Extraction*&#x200B;進程將整個`/home`複製到遷移集中，而&#x200B;*Ingestion*&#x200B;進程複製遷移內容ACL中引用的所有用戶和組。 若要自動將現有使用者和群組對應至其IMS ID，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)。
 
 * 在提取階段中，「內容轉移工具」會在作用中的 AEM 來源例項上執行。
 
-* 在完成內容傳輸程式的&#x200B;*Extraction*&#x200B;階段後，以及開始&#x200B;*Ingestion Phase*&#x200B;將內容以雲端服務&#x200B;*Stage*&#x200B;或&#x200B;*Production*&#x200B;執行個體形式收錄至AEM之前，您將需要記錄支援票證以通知Adobe執行&#x200B;*Ingestion*，讓Adobe可以確保在&#x200B;*Ingestion*&#x200B;程式期間不會發生中斷。 您需要在計畫的&#x200B;*Ingestion*&#x200B;日期前1週記錄支援票證。 一旦您提交了支援票證，支援團隊將提供後續步驟的指導。
+* 在完成內容傳輸過程的&#x200B;*提取*&#x200B;階段後，並在開始&#x200B;*提取階段*&#x200B;將內容作為&#x200B;*Stage*&#x200B;或&#x200B;*Production*&#x200B;實例Cloud Service到您的內容之前，您需要記錄支援票證以通知Adobe您打算運行&#x200B;*攝取*，這樣Adobe可以確保在&#x200B;*攝取*&#x200B;過程期間不發生中斷。 您需要在計畫的&#x200B;*Ingestion*&#x200B;日期前1週記錄支援票證。 一旦您提交了支援票證，支援團隊將提供後續步驟的指導。
    * 使用下列詳細資訊記錄支援票證：
       * 當您計劃開始&#x200B;*Ingestion*&#x200B;階段時，請精確確定日期和估計時間（與時區相同）。
       * 您打算將資料收錄到的環境類型（「舞台」或「生產」）。
@@ -55,9 +55,13 @@ ht-degree: 64%
 
 請依照以下章節了解如何使用「內容轉移工具」，將內容移轉至 AEM as a Cloud Service (製作/發佈)：
 
-1. 選擇 Adobe Experience Manager 並導覽至工具 -> **操作** -> **內容轉移**。
+1. 選擇Adobe Experience Manager並導航至工具-> **操作** -> **內容遷移**。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+
+1. 從&#x200B;**內容遷移嚮導中選擇**&#x200B;內容傳輸&#x200B;**選項。**
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
 1. 當您建立第一個移轉集時，會顯示下列主控台。 按一下&#x200B;**建立移轉集**&#x200B;以建立新的移轉集。
 
@@ -84,7 +88,7 @@ ht-degree: 64%
    1. **存取 Token**：輸入存取 Token。
 
       >[!NOTE]
-      >您可以使用&#x200B;**開啟存取Token**&#x200B;按鈕來擷取存取Token。 您必須確定您屬於目標Cloud服務例項中的AEM管理員群組。
+      >您可以使用&#x200B;**開啟存取Token**&#x200B;按鈕來擷取存取Token。 您需要確保您屬於目標Cloud Service實AEM例中的管理員組。
 
    1. **參數**：選取以下參數以建立移轉集：
 
@@ -164,7 +168,7 @@ ht-degree: 64%
 1. 從&#x200B;*綜覽*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**擷取**&#x200B;即可開始擷取。**移轉集擷取**&#x200B;對話框隨即顯示。按一下&#x200B;**Ingest**&#x200B;以開始接收階段。 為了示範，已停用&#x200B;**將內容擷取至製作例項**。您可以同時將內容擷取至「製作」和「發佈」。
 
    >[!IMPORTANT]
-   >啟用&#x200B;**在擷取**&#x200B;選項前擦除雲端例項上的現有內容時，它會刪除整個現有儲存庫並建立新儲存庫，以將內容擷取至。 這表示它會重設目標Cloud服務例項的所有設定，包括權限。
+   >啟用&#x200B;**在擷取**&#x200B;選項前擦除雲端例項上的現有內容時，它會刪除整個現有儲存庫並建立新儲存庫，以將內容擷取至。 這表示會重設目標Cloud Service例項的所有設定，包括權限。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
