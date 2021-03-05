@@ -2,9 +2,9 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: e6a35e20dbbcbaa8385abe7ea36973418978ef04
+source-git-commit: 4a328148fc169b6ee134ea3924e0315e44cda052
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2065'
 ht-degree: 58%
 
 ---
@@ -201,7 +201,7 @@ ht-degree: 58%
    >
    >您應停用「擷取&#x200B;**之前先擦除雲端例項上的現有內容」選項，以防止從先前的擷取活動中刪除現有內容。**
 
-   此外，請參閱[使用內容傳輸工具的重要注意事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以瞭解如何新增至客戶服務票證。
+   此外，按一下&#x200B;**客戶服務**&#x200B;以記錄票證，如上圖所示。 此外，請參閱[使用內容傳輸工具的重要注意事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以瞭解更多資訊。
 
 ### 檢視移轉集記錄 {#viewing-logs-migration-set}
 
