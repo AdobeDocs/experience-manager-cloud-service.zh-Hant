@@ -2,7 +2,7 @@
 title: 和SPA伺服器端演算
 description: 在您的伺服器端演算(SSR)SPA中，可加速頁面的初始載入，然後將進一步演算傳遞至用戶端。
 translation-type: tm+mt
-source-git-commit: 10012f6dc75da0c199dd5452ceef16ec7f29389b
+source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 何時使用SSR {#when-to-use-ssr}
 
-並非所有項目都需要SSR。 雖然AEM完全支援聯署材料的SPASSR，但Adobe不建議對每個項目系統地實施。
+並非所有項目都需要SSR。 雖然AEM完全支援聯署材料的SSRSPA，但Adobe不建議對每個項目系統地實施。
 
 在決定實施SSR時，首先必須估計項目的額外複雜性、努力和成本增加的實際表現，包括長期維護。 只有當增加值明顯超過估計成本時，才應選擇SSR結構。
 
