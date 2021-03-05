@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
+source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 58%
+source-wordcount: '2049'
+ht-degree: 59%
 
 ---
 
@@ -76,13 +76,9 @@ ht-degree: 58%
 
    此外，按一下&#x200B;**建立用戶映射配置**&#x200B;以訪問[用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)。
 
-1. 如下所述，填入「內容移轉集」畫面中的欄位。****
+1. 按如下所述，在&#x200B;**「建立遷移集」螢幕中填入欄位。**
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
-
-   >[!NOTE]
-   >選擇&#x200B;**包含來自IMS使用者和群組的對應**，如上圖所反白顯示。 如需詳細資訊，請參閱[使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
-
 
    1. **名稱**：輸入移轉集名稱。
       >[!NOTE]
@@ -102,6 +98,8 @@ ht-degree: 58%
    1. **參數**：選取以下參數以建立移轉集：
 
       1. **包含版本**：視需要選取。
+
+      1. **包含來自IMS使用者和群組的對應**:選擇選項。如需詳細資訊，請參閱[使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
 
       1. **欲包含的路徑**：使用路徑瀏覽器來選取需要移轉的路徑。路徑選擇器可通過輸入或選擇接受輸入。
 
@@ -178,7 +176,7 @@ ht-degree: 58%
    >[!IMPORTANT]
    >啟用&#x200B;**在擷取**&#x200B;選項前擦除雲端例項上的現有內容時，它會刪除整個現有儲存庫並建立新儲存庫，以將內容擷取至。 這表示會重設目標Cloud Service例項的所有設定，包括權限。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
 
 1. 擷取完成後，**PUBLISH INGESTION**&#x200B;欄位中的狀態會更新為&#x200B;**FINISHED**。
