@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: cef8c78e5fec840ea1cc4d391240e3bf9a4d7c02
+source-git-commit: c1c352712d88667faa2364160bdb60cc7ef94f63
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 58%
+source-wordcount: '2068'
+ht-degree: 57%
 
 ---
 
@@ -176,7 +176,7 @@ ht-degree: 58%
    >[!IMPORTANT]
    >啟用&#x200B;**在擷取**&#x200B;選項前擦除雲端例項上的現有內容時，它會刪除整個現有儲存庫並建立新儲存庫，以將內容擷取至。 這表示會重設目標Cloud Service例項的所有設定，包括權限。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    此外，按一下&#x200B;**客戶服務**&#x200B;以記錄票證，如上圖所示。 此外，請參閱[使用內容傳輸工具的重要注意事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以瞭解更多資訊。
 
@@ -199,7 +199,7 @@ ht-degree: 58%
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >您應停用「擷取&#x200B;**之前先擦除雲端例項上的現有內容」選項，以防止從先前的擷取活動中刪除現有內容。**
+   >您應停用「擷取&#x200B;**之前先擦除雲端例項上的現有內容」選項，以防止從先前的擷取活動中刪除現有內容。**&#x200B;此外，按一下&#x200B;**客戶服務**&#x200B;以記錄票證，如上圖所示。
 
 
 ### 檢視移轉集記錄 {#viewing-logs-migration-set}
