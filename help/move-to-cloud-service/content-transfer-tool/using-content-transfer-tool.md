@@ -2,9 +2,9 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: 4a328148fc169b6ee134ea3924e0315e44cda052
+source-git-commit: cef8c78e5fec840ea1cc4d391240e3bf9a4d7c02
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2053'
 ht-degree: 58%
 
 ---
@@ -171,13 +171,14 @@ ht-degree: 58%
 
 請依照下列步驟，從「內容轉移工具」中擷取您的移轉集：
 
-1. 從&#x200B;*綜覽*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**擷取**&#x200B;即可開始擷取。**移轉集擷取**&#x200B;對話框隨即顯示。按一下&#x200B;**Ingest**&#x200B;以開始接收階段。 為了示範，已停用&#x200B;**將內容擷取至製作例項**。您可以同時將內容擷取至「製作」和「發佈」。
+1. 從&#x200B;*綜覽*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**擷取**&#x200B;即可開始擷取。**移轉集擷取**&#x200B;對話框隨即顯示。按一下&#x200B;**Ingest**&#x200B;以開始接收階段。 您可以同時將內容擷取至「製作」和「發佈」。
 
    >[!IMPORTANT]
    >啟用&#x200B;**在擷取**&#x200B;選項前擦除雲端例項上的現有內容時，它會刪除整個現有儲存庫並建立新儲存庫，以將內容擷取至。 這表示會重設目標Cloud Service例項的所有設定，包括權限。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
+   此外，按一下&#x200B;**客戶服務**&#x200B;以記錄票證，如上圖所示。 此外，請參閱[使用內容傳輸工具的重要注意事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以瞭解更多資訊。
 
 1. 擷取完成後，**PUBLISH INGESTION**&#x200B;欄位中的狀態會更新為&#x200B;**FINISHED**。
 
@@ -198,10 +199,8 @@ ht-degree: 58%
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >
    >您應停用「擷取&#x200B;**之前先擦除雲端例項上的現有內容」選項，以防止從先前的擷取活動中刪除現有內容。**
 
-   此外，按一下&#x200B;**客戶服務**&#x200B;以記錄票證，如上圖所示。 此外，請參閱[使用內容傳輸工具的重要注意事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以瞭解更多資訊。
 
 ### 檢視移轉集記錄 {#viewing-logs-migration-set}
 
