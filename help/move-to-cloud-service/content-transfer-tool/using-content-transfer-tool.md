@@ -2,7 +2,7 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
+source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 57%
@@ -111,7 +111,7 @@ ht-degree: 57%
          >* `/etc` (允許 `/etc` 在CTT中選取某些路徑)
 
 
-1. 在填入&#x200B;**內容移轉集詳細資訊**&#x200B;畫面中的所有欄位後，請按一下&#x200B;**儲存**。
+1. 在&#x200B;**建立遷移集**&#x200B;詳細資訊螢幕中填入所有欄位後，按一下&#x200B;**保存**。
 
 1. 您的移轉集會顯示在&#x200B;*綜覽*&#x200B;頁面中。
 
