@@ -1,94 +1,105 @@
 ---
 title: XMP 中繼資料
-description: 瞭解XMP（可擴充中繼資料平台）中繼資料管理標準。 AEM將它當做建立、處理和交換中繼資料的標準格式。
+description: 瞭解中繼資XMP料管理的（可擴充中繼資料平台）中繼資料標準。 它被用AEM作建立、處理和交換中繼資料的標準格式。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8110259a910c891a5bcf7507cfa9897603a45c91
+source-git-commit: 0aac16705342f9652f38beef956a55d3f8f5df7d
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 17%
+source-wordcount: '1000'
+ht-degree: 16%
 
 ---
 
 
 # XMP 中繼資料 {#xmp-metadata}
 
-XMP（可擴充中繼資料平台）是AEM Assets用於所有中繼資料管理的中繼資料標準。 XMP提供標準格式，讓您針對多種應用程式建立、處理和交換中繼資料。
+(可XMP擴充中繼資料平台)是AEM Assets用於所有中繼資料管理的中繼資料標準。 為XMP各種應用程式建立、處理和交換中繼資料提供標準格式。
 
-除了提供可嵌入所有檔案格式的通用中繼資料編碼外，XMP還提供多樣化的[內容模型](#xmp-core-concepts)，並受Adobe](#advantages-of-xmp)和其他公司支援[，讓XMP的使用者結合AEM Assets擁有強大的平台來建立內容。
+除了提供可嵌入所有檔案格式的通用中繼資料編碼外XMP，還提供多樣化的[內容模型](#xmp-core-concepts)，並受Adobe](#advantages-of-xmp)等公司支援[，讓與AEM Assets合作的使用者擁有強大的平台來建立。
 
-## XMP概觀和生態系統{#xmp-ecosystem}
+## XMP概觀與生態系統{#xmp-ecosystem}
 
-AEM Assets原生支援XMP中繼資料標準。 XMP是處理和儲存數位資產中標準化和專屬中繼資料的標準。 XMP是通用的標準，可讓多個應用程式有效地處理中繼資料。
+AEM Assets本身支援XMP中繼資料標準。 XMP是處理和儲存數位資產中標準化和專屬中繼資料的標準。 設XMP計為通用標準，可讓多個應用程式有效地處理中繼資料。
 
-例如，生產專業人員可使用Adobe應用程式內建的XMP支援，跨多種檔案格式傳遞資訊。 AEM Assets儲存庫會擷取XMP中繼資料，並使用它來管理內容生命週期，並提供建立自動化工作流程的功能。
+例如，生產專業人員可使用Adobe應用程式內建XMP的支援，跨多種檔案格式傳遞資訊。 AEM Assets儲存庫提取元XMP資料並使用它管理內容生命週期，並提供建立自動化工作流的能力。
 
-XMP透過提供資料模型、儲存模型和結構描述，標準化中繼資料的定義、建立和處理方式。 本節將介紹這些概念。
+XMP透過提供資料模型、儲存模型和結構，標準化中繼資料的定義、建立和處理方式。 本節將介紹這些概念。
 
-EXIF、ID3或Microsoft Office的所有舊式中繼資料都會自動轉譯為XMP,XMP可加以擴充，以支援客戶特定的中繼資料架構，例如產品型錄。
+EXIF、ID3或Microsoft Office的所有舊式中繼資料都會自動轉譯為XMP，可加以擴充以支援客戶特定的中繼資料架構，例如產品型錄。
 
-XMP中的中繼資料由一組屬性組成。 這些屬性始終與稱為資源的特定實體相關聯；即，屬性是關於資源的。 對於XMP，資源永遠是資產。
+中的元XMP資料由一組屬性組成。 這些屬性始終與稱為資源的特定實體相關聯；即，屬性是關於資源的。 在這種情況XMP下，資源始終是資產。
 
 XMP定義了 [中繼資料](https://en.wikipedia.org/wiki/Metadata) 模型，可與任何已定義的中繼資料項目集搭配使用。XMP也定義了基本屬性的特定結構 [](https://en.wikipedia.org/wiki/XML_schema) ，這些基本屬性可用於記錄資源在經過多個處理步驟 (從被拍攝、掃描或創作為文字) 、通過照片編輯步驟(如 [](https://en.wikipedia.org/wiki/Image_scanner)[](https://en.wikipedia.org/wiki/Cropping_%28image%29) or color adjustment)到組合成最終影像時的歷史記錄。XMP可讓每個軟體程式或裝置沿途將其資訊新增至數位資源，然後再保留在最終數位檔案中。
 
 XMP最常是使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium)[Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF)的子集進行序列化和儲存，該子集又以 [XML表示](https://en.wikipedia.org/wiki/XML)。
 
-### XMP {#advantages-of-xmp}的優點
+### &lt;a0/XMP>的優點{#advantages-of-xmp}
 
-XMP比其他編碼標準和圖式具有以下優點：
+與其XMP他編碼標準和模式相比，具有以下優勢：
 
-* 以XMP為基礎的中繼資料功能強大，而且具備細緻的功能。
-* XMP可讓您針對一個屬性擁有多個值。
-* XMP具備標準化編碼，可讓您輕鬆交換中繼資料。
-* XMP具有可擴充性。 您可以新增其他資訊至資產。
+* 基XMP於元資料的功能非常強大，而且細緻。
+* 可讓XMP您對一個屬性有多個值。
+* XMP有標準化編碼，讓您輕鬆交換中繼資料。
+* 可XMP擴充。 您可以新增其他資訊至資產。
 
-XMP標準可擴充，讓您在XMP資料中新增自訂的中繼資料類型。 而EXIF則否——它有固定的屬性清單，無法延伸。
+此標XMP準可擴充，讓您在資料中新增自訂的中繼資料類XMP型。 而EXIF則否——它有固定的屬性清單，無法延伸。
 
 >[!NOTE]
 >
->XMP通常不允許嵌入二進位資料類型。 若要以XMP格式傳送二進位資料（例如縮圖影像），必須以XML友好格式（例如`Base64`）加以編碼。
+>通XMP常不允許嵌入二進位資料類型。 若要將二進位資XMP料（例如縮圖影像）傳入，它們必須以XML友好格式編碼，例如`Base64`。
 
 ### XMP核心概念{#xmp-core-concepts}
 
 **命名空間和圖式**
 
-XMP架構是一組通用XML命名空間中的屬性名稱，其中包含
-資料類型和描述性資訊。 XMP架構由其XML命名空間URI來識別。 使用名稱空間可防止名稱相同但含義不同之不同結構中屬性之間的衝突。
+架XMP構是一組通用XML命名空間中的屬性名稱，其中包含
+資料類型和描述性資訊。 架構XMP由其XML命名空間URI標識。 使用名稱空間可防止名稱相同但含義不同之不同結構中屬性之間的衝突。
 
-例如，兩個獨立設計結構中的&#x200B;**Creator**&#x200B;屬性可能代表建立資產的人員，也可能代表建立資產的應用程式（例如Adobe Photoshop）。
+例如，兩個獨立設計結構中的&#x200B;**Creator**&#x200B;屬性可能代表資產的建立者，也可能代表資產建立者的應用程式(例如Adobe Photoshop)。
 
 **XMP屬性和值**
 
-XMP可以包括來自一個或多個方案的屬性。 例如，許多Adobe應用程式使用的典型子集可能包括：
+可XMP以包括來自一個或多個方案的屬性。 例如，許多Adobe應用程式使用的典型子集可能包括：
 
 * 都柏林核心架構：`dc:title`、`dc:creator`、`dc:subject`、`dc:format`、`dc:rights`
 * XMP基本架構：`xmp:CreateDate`、`xmp:CreatorTool`、`xmp:ModifyDate`、`xmp:metadataDate`
-* XMP權限管理架構：`xmpRights:WebStatement`, `xmpRights:Marked`
-* XMP媒體管理架構：`xmpMM:DocumentID`
+* XMP權限管理架構`xmpRights:WebStatement`, `xmpRights:Marked`
+* XMP媒體管理架構`xmpMM:DocumentID`
 
 **替代語言**
 
-XMP可讓您將`xml:lang`屬性新增至文字屬性，以指定文字的語言。
+提XMP供將`xml:lang`屬性新增至文字屬性以指定文字語言的功能。
 
-## XMP回寫到轉譯{#xmp-writeback-to-renditions}
+## XMP回寫至轉譯{#xmp-writeback-to-renditions}
 
-Adobe Experience Manager(AEM)Assets中的此XMP回寫功能會將資產中繼資料變更複製至資產的轉譯。
-
-當您從AEM Assets中變更資產的中繼資料，或在上傳資產時，變更最初會儲存在CRXDE的資產節點中。
-
-XMP回寫功能會將中繼資料變更傳播至資產的所有或特定轉譯。
+&lt;a0/XMP>中的此回寫功能會將中繼資料變更複製到原始資產的轉譯。 [!DNL Adobe Experience Manager Assets]當您從[!DNL Assets]中變更資產的中繼資料，或在上傳資產時，這些變更最初會儲存在儲存庫的資產節點中。 回寫功XMP能會將中繼資料變更傳播至資產的所有或特定轉譯。
 
 考慮將`Classic Leather`資產[!UICONTROL Title]屬性修改為`Nylon`的藍本。
 
 ![中繼資料](assets/metadata.png)
 
-在此情況下，AEM Assets會針對儲存在資產階層中的資產中繼資料，在`dc:title`參數中儲存對&#x200B;**[!UICONTROL Title]**&#x200B;屬性的變更。
+在這種情況下，[!DNL Assets]會針對資產階層中儲存的資產中繼資料，在`dc:title`參數中儲存對&#x200B;**[!UICONTROL Title]**&#x200B;屬性的變更。
 
 ![metadata_stored](assets/metadata_stored.png)
 
-不過，AEM Assets不會自動將任何中繼資料變更傳播至資產的轉譯。
+不過，[!DNL Assets]不會自動將任何中繼資料變更傳播至資產的轉譯。
 
-XMP回寫功能可讓您將中繼資料變更傳播至資產的所有或特定轉譯。 不過，這些變更不會儲存在資產階層的中繼資料節點下。 此功能會在二進位檔案中內嵌轉譯的變更。
+回寫功XMP能可讓您將中繼資料變更傳播至資產的所有或特定轉譯。 不過，這些變更不會儲存在資產階層的中繼資料節點下。 此功能會在轉譯的二進位檔案中內嵌變更。
+
+在[!DNL Assets]中，預設未啟用回寫功能。 瞭解如何[啟用中繼資料回寫](#enable-xmp-writeback)。
+
+### 啟XMP用回寫{#enable-xmp-writeback}
+
+[!UICONTROL DAM中繼資] 料回寫工作流程可用來回寫資產的中繼資料。要啟用回寫，請執行以下步驟：
+
+1. 作為管理員，訪問&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 啟動器]**。
+1. 選擇[!UICONTROL Launcher]，其中&#x200B;**[!UICONTROL Workflow]**&#x200B;欄顯示&#x200B;**[!UICONTROL DAM MetaData Writeback]**。 按一下工具欄中的&#x200B;**[!UICONTROL 屬性]**。
+
+   ![選取DAM中繼資料回寫啟動程式以修改其屬性並加以啟動](assets/launcher-properties-metadata-writeback1.png)
+
+1. 在[!UICONTROL 啟動器屬性]頁面上選擇&#x200B;**[!UICONTROL 激活]**。 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
+
+若要只將此工作流程套用至資產一次，請從左側導軌套用工作流程[!UICONTROL DAM中繼資料回寫]。 若要將工作流程套用至已上傳的資產，請將工作流程新增至後處理設定檔。
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
@@ -125,8 +136,3 @@ For the XMP write-back feature to propagate metadata to the rendition thumbnails
 
 The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
 -->
-
->[!MORELIKETHIS]
->
->* [Adobe的XMP規格](https://www.adobe.com/devnet/xmp.html)
-
