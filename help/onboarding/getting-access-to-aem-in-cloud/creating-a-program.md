@@ -1,10 +1,10 @@
 ---
-title: 建立方案——雲端服務
-description: 建立方案——雲端服務
+title: 建立程式-Cloud Service
+description: 建立程式-Cloud Service
 translation-type: tm+mt
-source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
+source-git-commit: d85c0e9035ee09cf86aeea1cae20d545823eaca0
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '607'
 ht-degree: 3%
 
 ---
@@ -27,10 +27,6 @@ ht-degree: 3%
 
 ![](assets/create-sandbox.png)
 
->[!NOTE]
->如果程式已存在，則您將看到登錄頁右上角的&#x200B;**添加程式**，如下圖所示。
-
-![](assets/create-program-add.png)
 
 ## 建立沙箱程式{#create-sandbox-program}
 
@@ -53,7 +49,7 @@ ht-degree: 3%
    >要瞭解有關使用Cloud Manager UI的自助服務Git帳戶管理訪問和管理Git儲存庫的更多資訊，請參閱[訪問Git](/help/implementing/cloud-manager/accessing-git.md)。
 
 
-1. 在建立開發環境後，使用者就可以&#x200B;**存取AEM**&#x200B;連結，如下圖所示：
+1. 在建立開發環境後，用戶可以&#x200B;**訪問AEM**&#x200B;連結，如下圖所示：
 
    ![](assets/create-program-5.png)
 
@@ -86,7 +82,7 @@ Cloud Manager中&#x200B;*業務擁有者*&#x200B;或&#x200B;*部署管理員*&#x
 
 ## 建立常規程式{#create-regular-program}
 
-*Regular*&#x200B;程式是專為熟悉AEM和Cloud Manager並準備開始編寫、建立和測試程式碼的使用者而設計，其目的是將程式碼部署至「生產」。
+*Regular*&#x200B;程式適用於熟悉和Cloud Manager並準備開始編寫、建立和測試程式碼的使用者，其目的是將程式碼部署至生產環境。
 
 請依照下列步驟建立一般方案：
 
