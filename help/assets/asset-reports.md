@@ -3,9 +3,9 @@ title: 關於使用與共用的報告
 description: ' [!DNL Adobe Experience Manager Assets] 中有關您資產的報表，可協助您瞭解數位資產的使用、活動和共用。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6586dfeeef1732ae115eea433a665191773ed283
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '945'
 ht-degree: 4%
 
 ---
@@ -92,13 +92,13 @@ ht-degree: 4%
 
 1. 從工具列按一下「下一步」。****
 
-1. 在&#x200B;**[!UICONTROL 設定欄]**&#x200B;頁面中，依預設會選取某些欄以顯示在報表中。 您可以選取更多欄。 取消選取選取的欄，將其排除在報表中。
+1. 在&#x200B;**[!UICONTROL 設定欄]**&#x200B;頁面中，依預設會選取某些欄以顯示在報表中。 您可以選取更多欄。 取消選取的欄以排除在報表中。
 
-   ![選取或取消選取報表欄](assets/configure_columns.png)
+   ![選擇或取消選擇報表欄](assets/configure_columns.png)
 
    要顯示自定義列名或屬性路徑，請在CRX的`jcr:content`節點下配置資產二進位檔案的屬性。 或者，透過屬性路徑選擇器加入。
 
-   ![選取或取消選取報表欄](assets/custom_columns.png)
+   ![選擇或取消選擇報表欄](assets/custom_columns.png)
 
 1. 從工具列按一下「建立」。 ****&#x200B;訊息會通知報表產生已開始。
 1. 在[!UICONTROL 資產報表]頁面上，報表產生狀態是根據報表作業的目前狀態，例如[!UICONTROL Success]、[!UICONTROL Failed]、[!UICONTROL Queued]或[!UICONTROL Scheduled]。 通知收件箱中會顯示相同的狀態。要查看報告頁，請按一下報告連結。 或者，選擇報告，然後從工具欄中按一下&#x200B;**[!UICONTROL View]**。
