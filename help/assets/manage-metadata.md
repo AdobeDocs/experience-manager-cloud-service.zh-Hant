@@ -4,9 +4,9 @@ description: '瞭解中繼資料的類型，以及如何根據資產的中繼資
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
-source-wordcount: '1850'
+source-wordcount: '1854'
 ht-degree: 3%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 3%
 技術中繼資料對於處理數位資產且不應手動維護的軟體應用程式非常有用。 [!DNL Experience Manager Assets] 而其他軟體會自動決定技術中繼資料，而當資產修改時，中繼資料可能會變更。資產的可用技術中繼資料主要取決於資產的檔案類型。 技術中繼資料的一些範例包括：
 
 * 檔案大小。
-* 影像的尺寸（高度和寬度）。
+* Dimension（高度和寬度）。
 * 音訊或視訊檔案的位元速率。
 * 影像的解析度（詳細程度）。
 
@@ -84,7 +84,7 @@ ht-degree: 3%
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP)是開放標準，供所有中繼資料 [!DNL Experience Manager Assets] 管理使用。此標準提供通用中繼資料編碼，可嵌入所有檔案格式。 Adobe和其他公司支援XMP標準，因為它提供多樣化內容模型。 使用XMP標準和[!DNL Experience Manager Assets]的使用者擁有強大的平台可以建立。 如需詳細資訊，請參閱[XMP](https://www.adobe.com/products/xmp.html)。
+[!DNL Extensible Metadata Platform] (XMP)是開放標準，供所有中繼資 [!DNL Experience Manager Assets] 料管理使用。此標準提供通用中繼資料編碼，可嵌入所有檔案格式。 Adobe和其他公司支XMP援標準，因為它提供多樣化內容模型。 標準版XMP和[!DNL Experience Manager Assets]版的使用者擁有強大的平台可以建立。 如需詳細資訊，請參閱[XMP](https://www.adobe.com/products/xmp.html)。
 
 ### ID3 {#id}
 
@@ -104,7 +104,7 @@ ID3標籤是針對MP3檔案格式而設計。 有關格式的其他資訊：
 
 Exif的主要限制是不支援一些常用的影像檔案格式，例如BMP、GIF或PNG。
 
-Exif定義的中繼資料欄位通常具有技術性，在描述性中繼資料管理中使用有限。 因此，[!DNL Experience Manager Assets]提供Exif屬性映射至[常用中繼資料圖式](metadata-schemas.md)和XMP。
+Exif定義的中繼資料欄位通常具有技術性，在描述性中繼資料管理中使用有限。 因此，[!DNL Experience Manager Assets]提供Exif屬性映射至[常用中繼資料圖式](metadata-schemas.md)並映射至XMP。
 
 #### 其他中繼資料{#other-metadata}
 
@@ -116,7 +116,7 @@ Enterprise Manager Assets可讓您同時編輯多個資產的中繼資料，以�
 
 >[!NOTE]
 >
->大量編輯方法適用於資料夾或系列中的可用資產。 對於跨資料夾可用或符合一般准則的資產，可在搜尋[後，大量更新中繼資料。](/help/assets/search-assets.md#metadataupdates)
+>大量編輯方法適用於資料夾或系列中的可用資產。 對於跨資料夾可用或符合一般准則的資產，可在搜尋](/help/assets/search-assets.md#metadataupdates)後，大量更新中繼資料。[
 
 1. 導覽至您要編輯的資產所在的位置。
 1. 選取您要編輯其常用屬性的資產。
@@ -127,11 +127,11 @@ Enterprise Manager Assets可讓您同時編輯多個資產的中繼資料，以�
    >當您選取多個資產時，會為資產選取最低的共同父級表單。 換言之，[!UICONTROL 屬性]頁面只會顯示所有個別資產的[!UICONTROL 屬性]頁面中共用的中繼資料欄位。
 
 1. 修改各種標籤下所選資產的中繼資料屬性。
-1. 若要檢視特定資產的中繼資料編輯器，請取消選取清單中的其餘資產。 中繼資料編輯器欄位會填入特定資產的中繼資料。
+1. 若要檢視特定資產的中繼資料編輯器，請取消在清單中選取剩餘資產。 中繼資料編輯器欄位會填入特定資產的中繼資料。
 
    >[!NOTE]
    >
-   >* 在[!UICONTROL 屬性]頁面中，您可以取消選取資產，從資產清單中移除資產。 資產清單預設會選取所有資產。 您從清單中移除的資產的中繼資料不會更新。
+   >* 在[!UICONTROL 屬性]頁面中，您可以取消選擇，從資產清單中移除資產。 資產清單預設會選取所有資產。 您從清單中移除的資產的中繼資料不會更新。
    >* 在資產清單頂端，選取&#x200B;**[!UICONTROL Title]**&#x200B;附近的核取方塊，在選取資產和清除清單之間切換。
 
 
@@ -167,7 +167,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 
 中繼資料結構是一組預先定義的中繼資料屬性定義，可用於各種應用程式。 屬性始終與資產相關聯，這表示屬性與資源「相關」。
 
-如果沒有符合您需求的中繼資料架構，您也可以設計您自己的中繼資料架構。 請勿複製現有資訊。 在組織內，分離圖式資料可讓共用中繼資料更輕鬆。 [!DNL Experience Manager] 提供您最常用中繼資料架構的預設清單。此清單可協助您快速開始中繼資料策略，並快速挑選您需要的中繼資料屬性。
+如果沒有符合您需求的中繼資料架構，您也可以設計您自己的中繼資料架構。 請勿複製現有資訊。 在組織內，分離圖式資料可讓共用中繼資料更輕鬆。 [!DNL Experience Manager] 提供您最受歡迎中繼資料架構的預設清單。此清單可協助您快速開始中繼資料策略，並快速挑選您需要的中繼資料屬性。
 
 支援的中繼資料架構列於下方。
 
@@ -189,14 +189,14 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * CQ -[!DNL Experience Manager Assets]使用。
 * DAM -[!DNL Experience Manager Assets]使用。
 * DEX - [Optima SC說明瀏覽器](http://www.optimasc.com/products/dex/index.html)是Windows作業系統中繼資料和檔案管理工具的集合。
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html)。
+* CRS - [Adobe Photoshop CameraRaw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html)。
 * LR - [!DNL Adobe Lightroom]。
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro)。
 * MicrosoftPhoto和MP - Microsoft Photo。
 * PDF和PDF/X。
 * Photoshop和psAux - [!DNL Adobe Photoshop]。
 
-### Digital Rights Management中繼資料{#digital-rights-management-metadata}
+### Digital Rights Management元資料{#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights]。
@@ -204,7 +204,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * PRISM - [發佈業界標準中繼資料的需求](https://www.idealliance.org/prism-metadata)。
 * PRL —— 稜鏡版權語言。
 * PUR —— 稜鏡使用權。
-* `xmpPlus` -將PLUS與XMP整合。
+* `xmpPlus` - PLUS與整合XMP。
 
 ### 攝影專用中繼資料{#photography-specific-metadata}
 
@@ -215,10 +215,10 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 
 ### 列印專用的中繼資料{#print-specific-metadata}
 
-* PDF和PDF/X - Adobe PDF和協力廠商應用程式。
+* PDF和PDF/X -Adobe PDF和協力廠商應用程式。
 * PRISM - [發佈業界標準中繼資料的需求](https://www.idealliance.org/prism-metadata)。
 * XMP - [!DNL Extensible Metadata Platform]。
-* `xmpPG` -分頁文字的XMP中繼資料。
+* `xmpPG` -分頁XMP文本的元資料。
 
 ### 多媒體特定中繼資料{#multimedia-specific-metadata}
 
@@ -231,4 +231,4 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 
 * 工作流程可以檢查影像是否有標題。 如果沒有，系統會通知您新增標題。
 * 工作流程可以檢查資產上的版權聲明是否允許散發。 因此，系統會將資產傳送至一或另一伺服器。
-* 工作流可以檢查沒有預先定義、強制性中繼資料的資產，或具有&#x200B;*無效*&#x200B;中繼資料的資產。
+* 工作流可以檢查沒有預先定義、強制性中繼資料的資產，或具有&#x200B;*invalid*&#x200B;中繼資料的資產。
