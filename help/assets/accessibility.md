@@ -3,7 +3,7 @@ title: ' [!DNL Experience Manager Assets]中的輔助功能'
 description: 瞭解 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中的協助功能如何協助殘障人士使用。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
 source-wordcount: '1912'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Possible topics to cover in this article are below.
 
 # [!DNL Adobe Experience Manager Assets]中的協助功能： [!DNL Cloud Service] {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] 可讓內容建立者和發佈者在網路上提供絕佳的體驗。Adobe致力於讓殘障人士也能參與其中，改善[!DNL Experience Manager]的協助功能。 本軟體不斷增強，以符合各種使用者的需求，並符合包括視覺、聽覺、行動或其他障礙者在內的全球標準。
+[!DNL Adobe Experience Manager] 可讓內容建立者和發佈者在網路上提供絕佳的體驗。Adobe努力通過改進[!DNL Experience Manager]的可訪問性，將殘疾創作者納入其中。 本軟體不斷增強，以符合各種使用者的需求，並符合包括視覺、聽覺、行動或其他障礙者在內的全球標準。
 
 [!DNL Experience Manager] 發佈符合性資訊，說明符合的標準、概述產品中的協助功能，並說明符合性等級。協助工具符合性報告可協助[!DNL Experience Manager]使用者瞭解各種標準的遵守程度。 [!DNL Assets]中的增強功能可讓所有使用者透過鍵盤、螢幕閱讀程式、放大鏡和其他輔助技術，輕鬆使用介面。
 
@@ -40,7 +40,7 @@ Possible topics to cover in this article are below.
 * [協助工具計畫- W3C提供的協助工具Rich Internet Applications(WAI-ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/)。
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549)。
 
-要閱讀包含法規遵從性級別詳細資訊的報告，請參閱[輔助功能符合性報告](https://www.adobe.com/accessibility/compliance.html)(ACR)頁。
+要閱讀包含合規性級別詳細資訊的報告，請參閱[輔助功能符合性報告](https://www.adobe.com/accessibility/compliance.html)(ACR)頁。
 
 <!-- TBD: Add link after release.
 To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](/). -->
@@ -96,7 +96,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 | 已選取資產或資料夾 | `e` | 編輯選取的資產。 |
 | 已選取資產或資料夾 | `m` | 移動選定資產。 |
 | 已選取資產或資料夾 | `Ctrl + c` | 複製選取的資產。 |
-| 已選取資產或資料夾 | `Esc` | 取消選取選取範圍。 |
+| 已選取資產或資料夾 | `Esc` | 取消選擇。 |
 | 對話框開啟並位於焦點中 | `Esc` | 關閉對話框。 |
 | 在DAM的資料夾內 | `Ctrl + v` | 貼上複製的資產。 |
 | [!DNL Assets] 主控台 | `Ctrl + A` | 選取所有資產。 |
@@ -163,7 +163,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 
 許多資產管理工作（例如CRUD作業、下載資產、新增中繼資料）都可以不同程度地存取。 [!DNL Assets] 可讓您使用各種輔助技術完成工作，尤其是螢幕閱讀器和鍵盤。
 
-觀看如何使用鍵盤瀏覽儲存庫並下載資產[的視頻演示。](https://youtu.be/K3dgqMRQJys)
+觀看如何使用鍵盤瀏覽儲存庫並下載資產](https://youtu.be/K3dgqMRQJys)的視頻演示。[
 
 對於通常由行銷人員和管理員等角色執行的中繼資料作業，下列功能可改善協助工具：
 
@@ -208,7 +208,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 
 ## 可存取的檔案{#accessible-docs}
 
-[!DNL Experience Manager] 提供協助工具的說明檔案供殘障人士使用。以下內容可讓您立即存取內容，而Adobe也會持續改善範本和內容：
+[!DNL Experience Manager] 提供協助工具的說明檔案供殘障人士使用。以下內容可協助您立即存取內容，而Adobe則持續改善範本和內容：
 
 * 螢幕閱讀程式可以閱讀文字。
 * 影像和插圖有替代文字可供使用。
@@ -226,5 +226,5 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 >
 >* [每個版本中增強功能的發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 >* [[!DNL Adobe Experience Manager] 協助工具指引](/help/onboarding/accessibility/web-accessibility.md)。
->* [Adobe解決方案的符合性報告(ACR)和VPAT清單](https://www.adobe.com/accessibility/compliance.html)。
+>* [Adobe解決方ACR案的符合性報告()和VPAT清單](https://www.adobe.com/accessibility/compliance.html)。
 
