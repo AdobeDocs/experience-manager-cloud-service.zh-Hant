@@ -1,13 +1,16 @@
 ---
-source-git-commit: 8d15605dd696f0163229a677b57aa0837dc11704
-workflow-type: tm+mt
+title: 角色與責任
+description: 角色與責任
 translation-type: tm+mt
-source-wordcount: '417'
+source-git-commit: 843e425e446a4e9ce140fe7d7111b69bd9f4545e
+workflow-type: tm+mt
+source-wordcount: '423'
 ht-degree: 18%
 
 ---
 
-# Adobe Experience Manager是Cloud Service:角色與責任
+
+# Adobe Experience Manager是Cloud Service:角色和責任{#roles-responsibilities}
 
 <br></br>
 Adobe提供一組服務，以Experience Manager的供應、開發、轉移和生產為Cloud Service。為了盡可能高效地開發和部署解決方案，客戶和定制者必須瞭解並履行其職責，如下所述。
@@ -49,5 +52,8 @@ Adobe提供一組服務，以Experience Manager的供應、開發、轉移和生
 | 生產 | 更新為AEMCloud Service應用程式 |  |  | 所有者 |  |
 | 生產 | 生產備份和災難恢復 |  |  | 所有者 |  |
 
-<br></br>
-上述假設包括Premier Support。表格可能需經客戶與定製者之間的協定修改。 如果您需要對上述任一項作出澄清，建議您與Adobe銷售和自訂團隊合作。 不想自行處理自訂的客戶應取得Adobe的專業服務團隊或Experience Manager合作夥伴的服務。 為維持高品質水準，Adobe需要Experience Manager合作夥伴(作為Cloud Service開發專案)的人員必須至少配備一名取得Experience Manager軟體進階開發人員認證的人員。
+>[!NOTE]
+>
+> 上述假設包括Premier Support。 表格可能需經客戶與定製者之間的協定修改。 如果您需要對上述任一項作出澄清，建議您與Adobe銷售和自訂團隊合作。
+> 不想自行處理自訂的客戶應取得Adobe的專業服務團隊或Experience Manager合作夥伴的服務。
+>為維持高品質水準，Adobe需要Experience Manager合作夥伴(作為Cloud Service開發專案)的人員必須至少配備一名取得Experience Manager軟體進階開發人員認證的人員。
