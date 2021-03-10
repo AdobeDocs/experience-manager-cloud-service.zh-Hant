@@ -1,11 +1,15 @@
 ---
-source-git-commit: d2a24f55d5b89f1abe64702d5f1ad39f793429d5
-workflow-type: tm+mt
+title: 布建程式——概述
+description: 布建程式——概述
 translation-type: tm+mt
-source-wordcount: '334'
-ht-degree: 5%
+source-git-commit: bb5a84c915e9b94bed021dacefd75b4e18fa9eb3
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
+
 # AEMCloud Service:入門與存取
 
 本頁列出了有關將Experience Manager作為Cloud Service的置備過程的自助資源。
@@ -46,7 +50,7 @@ ht-degree: 5%
 
 ### 2.將組織帶到Adobe Admin Console:
 
- >   ![processoverview2.jpg](./assets/processOverview2.jpg)
+>   ![processoverview2.jpg](./assets/processOverview2.jpg)
 * 系統管理員：
    * 布AEM建方案和環境。
    * 導航至管理任務的Admin Console。
@@ -70,5 +74,5 @@ ht-degree: 5%
 
 ## 說明與資源
 
-[首次登入-Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)\
-[將訪AEM問配置為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
+* [首次登入-Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)
+* [將訪AEM問配置為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
