@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service 入門
 breadcrumb-title: 入門指南
 user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。
 translation-type: tm+mt
-source-git-commit: 4482fe36339db0c544b0b550e0bd414b2a47809e
+source-git-commit: 0c5eac38ca9da8c0a3bd00fe1dd0472710dd3866
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '684'
 ht-degree: 35%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 35%
    + [執行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
    + [上線後](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + 在雲端中存取 AEM {#getting-access}
-   + [AEMCloud Service:布建程式概述](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
+   + [布建程式概述](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
    + [存取 Experience Manager as a Cloud Service ](getting-access-to-aem-in-cloud/navigation.md)
    + 雲端服務方案 {#cloud-service-programs}
       + [存取方案](getting-access-to-aem-in-cloud/first-time-login.md)
@@ -88,7 +88,8 @@ ht-degree: 35%
       + [2020.4.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
       + [2020.3.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
       + [2020.2.0 版發行說明](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
-   + [瞭解角色和責任](getting-access-to-aem-in-cloud/roles-responsibilities.md)
+   + 瞭解角色和責任{#getting-access-to-aem-in-cloud}
+      + [瞭解角色和責任](getting-access-to-aem-in-cloud/roles-responsibilities.md)
 + 資料隱私權和保護整備 {#data-privacy}
    + [AEM 對資料保護與資料隱私權法規的整備](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM 對資料保護與資料隱私權法規的基礎整備](data-privacy-and-protection-readiness/foundation-readiness.md)
