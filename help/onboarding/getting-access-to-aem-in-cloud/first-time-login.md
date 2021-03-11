@@ -2,9 +2,9 @@
 title: Cloud Manager首頁
 description: Cloud Manager首頁
 translation-type: tm+mt
-source-git-commit: 94740ff155aeea8f912598bedc4c17d4bc9d00e6
+source-git-commit: 2f5b15a4fcd46114f923a387fa71da22d143dfc1
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,10 @@ ht-degree: 0%
 一旦您成功登入[!UICONTROL Cloud Manager]後，登陸頁面就會顯示您組織中任何現有程式的資訊卡。
 
 >[!NOTE]
->
->Cloud Service上的程式由副標題&#x200B;**Experience Manager雲**(與AMS程式的&#x200B;**Experience Manager**&#x200B;相反)指示，如下所示。
+>Cloud Service上的程式由副標題&#x200B;**Experience Manager雲**(與AMS程式的&#x200B;**Experience Manager**相反)指示。
+>例如，在下圖中，**We.Retail Global**&#x200B;是AMS程式，而&#x200B;**We.Retail-Prod Program - Prod**&#x200B;是可通過Cloud Service獲得的程式。
 
 ![](assets/first_timelogin1.png)
-
 
 根據您的情況，您將會看到以下兩種選項：
 
@@ -54,9 +53,6 @@ ht-degree: 0%
 
 ![](assets/first_timelogin1.png)
 
->[!NOTE]
->Cloud Service上的程式由副標題&#x200B;**Experience Manager雲**(與AMS程式的&#x200B;**Experience Manager**相反)指示。
->例如，在上圖中，**We.Retail Global**&#x200B;是AMS程式，而&#x200B;**We.Retail-Prod程式- Prod**&#x200B;是通過Cloud Service提供的程式。
 
 若要瞭解如何在Cloud Manager中新增程式，請參閱：
 
