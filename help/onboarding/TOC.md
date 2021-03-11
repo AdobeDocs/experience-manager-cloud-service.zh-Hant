@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service 入門
 breadcrumb-title: 入門指南
 user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。
 translation-type: tm+mt
-source-git-commit: 6bbcbb75076a537a78b92415549f631842f028ce
+source-git-commit: 5cc16391573b6f65990c771667d4c393aa5eb38b
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '692'
 ht-degree: 32%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 32%
 + 在雲端中存取 AEM {#getting-access}
    + [以Cloud Service的身分取AEM得Cloud Manager的存取權](getting-access-to-aem-in-cloud/navigation.md)
    + 存取 Cloud Manager {#cloud-service-programs}
-      + [Cloud Manager首頁](getting-access-to-aem-in-cloud/first-time-login.md)
+      + [Cloud Manager登錄頁](getting-access-to-aem-in-cloud/first-time-login.md)
       + [了解方案和方案類型](getting-access-to-aem-in-cloud/understand-program-types.md)
       + 生產程式{#production-programs}
          + [簡介](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
