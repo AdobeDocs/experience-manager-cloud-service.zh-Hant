@@ -2,9 +2,9 @@
 title: '編輯沙盒程式 '
 description: '編輯沙盒程式 '
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,11 @@ ht-degree: 0%
 
 請依照下列步驟編輯沙盒程式：
 
-1. 導航至&#x200B;**編輯程式**&#x200B;頁。
+1. 從Cloud Manager的&#x200B;*Overview*&#x200B;頁面導覽至「編輯程式&#x200B;**」頁面。**
 
 1. **編輯程式**頁面顯示生產程式和沙盒程式的兩個頁籤（常規和解決方案）。
    ![](assets/edit-program.png)
 
-   >[!NOTE]
-   >雖然會同時顯示「網站」和「資產」，但其中一個網站可能會根據已購買和未使用的項目而停用。 具體而言，如果組織沒有特定解決方案的未使用權益，則會顯示該解決方案，但會停用。
 
 ## 編輯程式{#considerations-editing}時的注意事項
 
