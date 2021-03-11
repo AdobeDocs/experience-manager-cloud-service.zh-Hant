@@ -2,7 +2,7 @@
 title: 瞭解方案和方案類型
 description: 瞭解方案和方案類型-Cloud Services
 translation-type: tm+mt
-source-git-commit: e1d805e1e5b5850ecf3154cd69a3955c4dbe1e65
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 3%
@@ -26,6 +26,6 @@ ht-degree: 3%
 如需詳細資訊，請參閱[生產程式簡介](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)。
 
 
-* *沙盒程式*通常是為了提供訓練、執行示範、啟用、POC或說明檔案的目的而建立。 它不是要承載即時流量，而且會有常規程式所無法達到的限制。 它將包含網站和資產，並會自動填入Git分支，其中包含范常式式碼、開發環境和非生產管道。
+* *沙盒程式*通常是為了提供訓練、執行示範、啟用、POC或說明檔案的目的而建立。 它不是要傳送即時流量，而且會有生產程式不會受到的限制。 它將包含網站和資產，並會自動填入Git分支，其中包含范常式式碼、開發環境和非生產管道。
 如需詳細資訊，請參閱[沙盒程式簡介](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
 
