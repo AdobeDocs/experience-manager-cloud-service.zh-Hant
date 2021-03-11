@@ -2,7 +2,7 @@
 title: '冬眠和冬眠沙盒環境 '
 description: '冬眠和冬眠沙盒環境 '
 translation-type: tm+mt
-source-git-commit: 213a7237abd4de75be43af430181f4aa914196f4
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 如果在某段時間內未檢測到任何活動，則沙箱程式環境進入&#x200B;*休眠模式*。
 
 >[!NOTE]
->Hibernation是沙盒程式環境獨有的。 常規程式環境不休眠。
+>Hibernation是沙盒程式環境獨有的。 生產計畫環境不休眠。
 
 ## 休眠{#hibernation-introduction}
 
