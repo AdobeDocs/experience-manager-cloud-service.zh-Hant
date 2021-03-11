@@ -2,9 +2,9 @@
 title: 功能測試-Cloud Services
 description: 功能測試-Cloud Services
 translation-type: tm+mt
-source-git-commit: 1e0765e6bf2818754c5603c08f055a7c7453bc33
+source-git-commit: 765334cff443d56e37f578647af4bcd133509481
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '847'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # 功能測試{#functional-testing}
 
-功能測試分為兩種類型：
+功能測試分為三種類型：
 
 * 產品功能測試
 * 自訂功能測試
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 為客AEM戶提供一套整合的Cloud Manager品質門檻，以確保其應用程式的順暢更新。 尤其是，IT測試閘道已允許客戶建立並自動化使用API的自AEM己測試。
 
-「自訂UI測試」功能是一項選用功能，可讓我們的客戶為其應用程式建立並自動執行UI測試。 UI測試是以Selenium為基礎的測試，封裝在Docker影像中，以允許在語言和架構（例如Java和Maven、Node和WebDriver.io，或任何以Selenium為基礎的其他架構和技術）中有廣泛選擇。 您可從這裡進一步瞭解如何建立UI和編寫UI測試。 此外，使用「專案原型」可輕鬆產生「UI測試AEM」專案。
+「自訂UI測試」功能是選用功能[「客戶選擇加入」](#customer-opt-in)，可讓我們的客戶為其應用程式建立並自動執行UI測試。 UI測試是以Selenium為基礎的測試，封裝在Docker影像中，以允許在語言和架構（例如Java和Maven、Node和WebDriver.io，或任何以Selenium為基礎的其他架構和技術）中有廣泛選擇。 您可從這裡進一步瞭解如何建立UI和編寫UI測試。 此外，使用「專案原型」可輕鬆產生「UI測試AEM」專案。
 
 客戶可以建立（透過GIT）UI的自訂測試和測試套件。 UI測試將作為每個Cloud Manager管道的特定質量門的一部分執行，並包含其特定步驟和反饋資訊。 任何UI測試（包括回歸和新功能）都可讓您在客戶內容中偵測並報告錯誤。
 
