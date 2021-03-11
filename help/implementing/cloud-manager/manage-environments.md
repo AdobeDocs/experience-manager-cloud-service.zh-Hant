@@ -1,8 +1,8 @@
 ---
-title: 管理環境——雲端服務
-description: 管理環境——雲端服務
+title: 管理環境-Cloud Service
+description: 管理環境-Cloud Service
 translation-type: tm+mt
-source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 4%
@@ -53,7 +53,7 @@ ht-degree: 4%
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >建立環境時，會在Adobe I/O中建立一或多個&#x200B;*整合*。這些內容對可存取Adobe I/O Console的客戶使用者可見，且不得刪除。 Adobe I/O Console的說明中會說明此點。
+   >建立環境時，將在Adobe I/O中建立一個或多個&#x200B;*integrations*。對於具有Adobe I/O控制台訪問權限的客戶用戶，這些對象是可見的，並且不能刪除。 這在「Adobe I/O控制台」的說明中顯示。
 
    ![](assets/add-environment-image1.png)
 
@@ -82,9 +82,9 @@ ht-degree: 4%
 
 ## 更新環境{#updating-dev-environment}
 
-Adobe會自動管理Stage和生產環境的更新。
+Stage和生產環境的更新由Adobe自動管理。
 
-開發環境的更新由方案的使用者管理。 當環境未執行最新公開可用的AEM版本時，「首頁畫面」上「環境卡」的狀態會顯示&#x200B;**UPDATE AVAILABLE**。
+開發環境的更新由方案的使用者管理。 當環境未運行最新的公開AEM發行版本時，主螢幕上的「環境卡」狀態將顯示&#x200B;**UPDATE AVAILABLE**。
 
 ![](assets/environ-update.png)
 
@@ -113,7 +113,7 @@ Adobe會自動管理Stage和生產環境的更新。
 
 >[!NOTE]
 >
->此功能不適用於為生產目的而在常規程式中設定的生產／階段環境。 不過，這項功能適用於沙盒程式中的「生產／階段」環境。
+>此功能不適用於為生產目的而在生產程式中設定的生產／階段環境。 不過，這項功能適用於沙盒程式中的「生產／階段」環境。
 
 ## 管理訪問{#managing-access}
 
@@ -139,7 +139,7 @@ Adobe會自動管理Stage和生產環境的更新。
 
 ## 本地登錄{#login-locally}
 
-從&#x200B;**環境**&#x200B;資訊卡的下拉式選單選擇&#x200B;**本機登入**，以本機登入Adobe Experience Manager。
+從&#x200B;**Environments**&#x200B;卡的下拉菜單中選擇&#x200B;**本地登錄**&#x200B;以本地登錄到Adobe Experience Manager。
 
 ![](assets/environ-login-locally.png)
 
@@ -149,7 +149,7 @@ Adobe會自動管理Stage和生產環境的更新。
 
 ## 管理自定義域名{#manage-cdn}
 
-從「環境摘要」頁面導航至「環境&#x200B;****&#x200B;詳細資訊」頁面。
+從「環境摘要」頁面導航到&#x200B;**環境**&#x200B;詳細資訊頁面。
 
 可對環境的「發佈」服務執行下列操作，如下所述：
 
