@@ -1,30 +1,38 @@
 ---
-title: 首次登入——雲端服務
-description: 首次登入——雲端服務
+title: Cloud Manager首頁
+description: Cloud Manager首頁
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
 
-# 存取方案 {#first-time-login}
+# Cloud Manager首頁{#first-time-login}
 
+若要存取Cloud Manager:
+
+1. 使用您的Adobe ID導覽至[Experience Cloud](https://experience.adobe.com/)。
+1. 選擇&#x200B;**Experience Manager**。
+   ![](assets/landing-page1.png)
+
+1. 從Cloud Manager卡按一下&#x200B;**Launch**。
 成功登入[!UICONTROL Cloud Manager]後，您就可以使用使用者介面(UI)。
+   ![](assets/landing-page2.png)
 
->[!NOTE]
->
->根據[!UICONTROL Cloud Manager]中指派的角色和應用程式的狀態，您在使用[!UICONTROL Cloud Manager] UI時會看到不同的畫面。
+   >[!NOTE]
+   >
+   >根據[!UICONTROL Cloud Manager]中指派的角色和應用程式的狀態，您在使用[!UICONTROL Cloud Manager] UI時會看到不同的畫面。
 
 ## Cloud Manager登錄頁{#landing-page}
 
-成功登入[!UICONTROL Cloud Manager]後，您會看到登陸頁面，如下圖所示。
+一旦您成功登入[!UICONTROL Cloud Manager]後，登陸頁面就會顯示您組織中任何現有程式的資訊卡。
 
 >[!NOTE]
 >
->雲端服務上的程式會以&#x200B;**Experience Manager Cloud**&#x200B;字幕（與AMS程式的&#x200B;**Experience Manager**&#x200B;相反）標示，如下所示。
+>Cloud Service上的程式由副標題&#x200B;**Experience Manager雲**(與AMS程式的&#x200B;**Experience Manager**&#x200B;相反)指示，如下所示。
 
 ![](assets/first_timelogin1.png)
 
@@ -35,25 +43,29 @@ ht-degree: 0%
 
 * **Cloud Manager中已存在的程式**
 
-## 在沒有現有程式的雲服務中添加新程式{#no-program}
+
+## 在沒有現有程式的Cloud Service中添加新程式{#no-program}
 
 
 著陸頁面會引導您建立第一個程式，如下圖所示。
 ![](assets/first_timelogin0.png)
 
 
-## 使用現有程式在雲服務中添加新程式{#existing-program}
+## 與現有程式Cloud Service添加新程式{#existing-program}
 
 
-1. 登入&#x200B;**Adobe [!UICONTROL Experience Cloud]**，您會看到&#x200B;**Programs &amp; Products**&#x200B;的清單。
+1. 登入&#x200B;**Adobe[!UICONTROL Experience Cloud]**，您會看到&#x200B;**程式與產品**&#x200B;的清單。
 
    ![](assets/first_timelogin1.png)
 
-   雲端服務上的程式會以&#x200B;**Experience Manager Cloud**&#x200B;字幕來表示（與AMS程式的&#x200B;**Experience Manager**&#x200B;相反）。
+   Cloud Service上的程式由副標題&#x200B;**Experience Manager雲**(與AMS程式的&#x200B;**Experience Manager**&#x200B;相反)指示。
 
    >[!NOTE]
-   >例如，在上圖中，**We.Retail Global**&#x200B;是AMS程式，而&#x200B;**We.Retail-Prod Program - Prod**&#x200B;是可透過雲端服務取得的程式。
+   >例如，在上圖中，**We.Retail Global**&#x200B;是AMS程式，而&#x200B;**We.Retail-Prod程式- Prod**&#x200B;是通過Cloud Service提供的程式。
 
-1. 要瞭解如何從&#x200B;**Programs &amp; Products**&#x200B;螢幕添加程式以在雲服務中建立新程式，請參閱[ Create a Program](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)。
+1. 要瞭解如何從&#x200B;**程式與產品**&#x200B;螢幕添加程式以在Cloud Service中建立新程式，請參閱：
+
+   * [建立生產計畫](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+   * [建立沙盒程式](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
 
 
