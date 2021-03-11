@@ -2,17 +2,19 @@
 title: Cloud Manager首頁
 description: Cloud Manager首頁
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 94740ff155aeea8f912598bedc4c17d4bc9d00e6
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
 
-# Cloud Manager首頁{#first-time-login}
+# Cloud Manager登錄頁{#first-time-login}
 
-若要存取Cloud Manager:
+一旦系統管理員授予您Cloud Manager的存取權，您就會收到電子郵件，將您帶往Cloud Manager登入頁面。
+
+請依照下列步驟存取Cloud Manager:
 
 1. 使用您的Adobe ID導覽至[Experience Cloud](https://experience.adobe.com/)。
 1. 選擇&#x200B;**Experience Manager**。
@@ -26,7 +28,7 @@ ht-degree: 0%
    >
    >根據[!UICONTROL Cloud Manager]中指派的角色和應用程式的狀態，您在使用[!UICONTROL Cloud Manager] UI時會看到不同的畫面。
 
-## Cloud Manager登錄頁{#landing-page}
+## Cloud Manager中的程式{#cloud-manager-landing-page}
 
 一旦您成功登入[!UICONTROL Cloud Manager]後，登陸頁面就會顯示您組織中任何現有程式的資訊卡。
 
@@ -44,28 +46,21 @@ ht-degree: 0%
 * **Cloud Manager中已存在的程式**
 
 
-## 在沒有現有程式的Cloud Service中添加新程式{#no-program}
-
-
-著陸頁面會引導您建立第一個程式，如下圖所示。
+如果組織中沒有程式，則著陸頁面會指示您建立第一個程式，如下圖所示。
 ![](assets/first_timelogin0.png)
 
 
-## 與現有程式Cloud Service添加新程式{#existing-program}
+如果您的組織中已有程式，則著陸頁面會指示您新增其他程式，並顯示您所有現有的程式，如下圖所示。
 
+![](assets/first_timelogin1.png)
 
-1. 登入&#x200B;**Adobe[!UICONTROL Experience Cloud]**，您會看到&#x200B;**程式與產品**&#x200B;的清單。
+>[!NOTE]
+>Cloud Service上的程式由副標題&#x200B;**Experience Manager雲**(與AMS程式的&#x200B;**Experience Manager**相反)指示。
+>例如，在上圖中，**We.Retail Global**&#x200B;是AMS程式，而&#x200B;**We.Retail-Prod程式- Prod**&#x200B;是通過Cloud Service提供的程式。
 
-   ![](assets/first_timelogin1.png)
+若要瞭解如何在Cloud Manager中新增程式，請參閱：
 
-   Cloud Service上的程式由副標題&#x200B;**Experience Manager雲**(與AMS程式的&#x200B;**Experience Manager**&#x200B;相反)指示。
-
-   >[!NOTE]
-   >例如，在上圖中，**We.Retail Global**&#x200B;是AMS程式，而&#x200B;**We.Retail-Prod程式- Prod**&#x200B;是通過Cloud Service提供的程式。
-
-1. 要瞭解如何從&#x200B;**程式與產品**&#x200B;螢幕添加程式以在Cloud Service中建立新程式，請參閱：
-
-   * [建立生產計畫](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
-   * [建立沙盒程式](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+* [建立生產計畫](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+* [建立沙盒程式](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
 
 
