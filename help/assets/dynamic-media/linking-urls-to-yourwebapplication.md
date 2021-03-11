@@ -2,7 +2,7 @@
 title: 將 URL 連結至您的 Web 應用程式
 description: 如何將URL連結至您在Dynamic Media的Web應用程式。
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '1265'
 ht-degree: 10%
@@ -20,7 +20,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->URL字串僅適用於資產的動態轉譯。 它們目前不適用於駐留在DAM中的靜態資產，而非動態媒體伺服器。 URL按鈕不會針對靜態轉譯顯示。
+>URL字串僅適用於資產的動態轉譯。 它們目前不適用於駐留在DAM中的靜態資產，而不適用於Dynamic Media伺服器。 URL按鈕不會針對靜態轉譯顯示。
 
 另請參閱[將視訊或影像檢視器內嵌在網頁上](embed-code.md)。
 
