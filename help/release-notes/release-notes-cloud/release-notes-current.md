@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: 137be7fd0fe89429c0d1f028d81e54ce69cc4ef1
+source-git-commit: 707c5daf5c48b2054fd684b4557143fbd8d873c7
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1532'
 ht-degree: 3%
 
 ---
@@ -82,7 +82,7 @@ Cloud Manager作為2021.3.0Cloud ServiceAEM的發行日期為2021年3月11日。
 
 ### 新功能 {#what-is-new-march}
 
-* 具有IP允許清單、SSL憑證和自訂網域名稱之CDN預先存在組態的環境的客戶，將會看到下列訊息，並可透過UI自助服務。
+* 具有IP允許清單、SSL憑證和自訂網域名稱之CDN預先存在組態的客戶，將會看到有關其先前現有組態的訊息，並可透過UI自助服務。
 
 * 擁有必要權限的使用者現在可以編輯程式，讓他們以自助方式執行下列作業。
 
