@@ -2,9 +2,9 @@
 title: 以Cloud Service的身分取AEM得Cloud Manager的存取權
 description: 以Cloud Service的身分取AEM得Cloud Manager的存取權
 translation-type: tm+mt
-source-git-commit: 55f3b8bd1c21197fd004073cfabd9092678cfdcd
+source-git-commit: 4904d7728befd3562940b35c7d44dbf9cae87fee
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -68,11 +68,10 @@ SysAdmin角色中的用戶可以選擇&#x200B;**管理訪問**&#x200B;以直接�
 
 如果您未看到&#x200B;**添加程式**&#x200B;按鈕並對訪問Cloud Service有疑問，請與您的Adobe代表聯繫。
 
-有關詳細資訊，請參閱[與現有程式Cloud Service的「添加新程式」。](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program)
-
 ## 針對新Cloud Service客戶{#new-cloud-services}
 
 如果您是新的Cloud Service客戶，則會在空的登陸頁面右上角看到「新增程式」按鈕。 ****&#x200B;您將希望向Cloud Service添加新程式。
 
-有關詳細資訊，請參閱[在沒有現有程式的Cloud Service中添加新程式](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program)。
-
+若要瞭解如何在Cloud Manager中新增程式，請參閱：
+* [建立生產計畫](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+* [建立沙盒程式](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
