@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: aadfc38f62a1e3543810447e91910cf71fa93583
+source-git-commit: 137be7fd0fe89429c0d1f028d81e54ce69cc4ef1
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1528'
 ht-degree: 3%
 
 ---
@@ -72,6 +72,52 @@ Customers using the Connected Assets feature can now easily view and track asset
 * 已發佈CIF核心元件v1.8.0。有關詳細資訊，請參閱[CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0)。
 
 ## Cloud Manager {#cloud-manager}
+
+本頁概述了Cloud Manager的發行說明，AEM作為Cloud Service2021.3.0。
+
+## 發行日期 {#release-date-cm-march}
+
+Cloud Manager作為2021.3.0Cloud ServiceAEM的發行日期為2021年3月11日。
+
+
+### 新功能 {#what-is-new-march}
+
+* 具有IP允許清單、SSL憑證和自訂網域名稱之CDN預先存在組態的環境的客戶，將會看到下列訊息，並可透過UI自助服務。
+
+* 擁有必要權限的使用者現在可以編輯程式，讓他們以自助方式執行下列作業。
+
+* 現在AEM會針對「Pipeline Execution」和「Activity」畫面顯示「推播更新」標籤。
+
+* 如果某個環境已休眠，但也有可用的更AEM新，則「已休眠」狀態將優先於「可用的更新」。
+
+* 現在，在導覽至Unified Shell的「使用者設定檔」圖示（右上角）後，使用者可以選取「檢視雲端管理員角色」選項，以查看其Cloud Manager角色。
+
+* 「申請核准」標籤已重新標示為「生產核准」，以更清楚明瞭。
+
+* 「版本」標籤已在「生產管道」執行畫面中重新標示為「Git Tag」。
+
+* 當重要量度不符合定義的臨界值時，定義行為的標籤已重新標籤，以反映其真實行為——立即取消和立即核准。
+
+* 類別和方法取代清單已根據Cloud ServiceSDK的`2021.3.4997.20210303T022849Z-210225`版AEM本更新。
+
+* Cloud Manager生產管道現在將包含自訂UI測試功能。
+
+### 錯誤修正 {#bug-fixes-cm-march}
+
+* 在推播升級期間，在某些情況下會略過套AEM件版本。
+
+* 在將包嵌入其他包時，未正確發現某些質量問題。
+
+* 在模糊的情況下，開啟「添加程式」對話框時生成的預設程式名稱可能是現有程式名稱的副本。
+
+* 有時，如果用戶在啟動管線後立即導航離開管線執行頁面，則會顯示一條錯誤消息，指出操作失敗，儘管實際上執行開始。
+
+* 當客戶建置導致無效包時，不必要地重新啟動建置步驟。
+
+* 有時，即使未部署IP允許清單，用戶也會看到該配置旁邊的綠色「活動」狀態。
+
+* 所有現有的生產管道都會透過體驗稽核步驟自動啟用。
+
 
 ### 發行日期 {#release-date-cm}
 
