@@ -1,18 +1,18 @@
 ---
 title: Dynamic Media 影片設定檔
-description: 動態媒體已隨附預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 您也可以將智慧裁切新增至影片。
+description: Dynamic Media已提供預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 您也可以將智慧裁切新增至影片。
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '3680'
-ht-degree: 16%
+ht-degree: 14%
 
 ---
 
 
 # Dynamic Media 影片設定檔{#video-profiles}
 
-動態媒體已隨附預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 當您使用「最適化視訊編碼」設定檔來編碼主要來源視訊時，視訊播放器會在播放期間根據客戶的網際網路連線速度自動調整視訊串流的品質。 這稱為可調式串流。
+Dynamic Media已提供預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 當您使用「最適化視訊編碼」設定檔來編碼主要來源視訊時，視訊播放器會在播放期間根據客戶的網際網路連線速度自動調整視訊串流的品質。 這稱為可調式串流。
 
 以下是決定影片品質的其他因素：
 
@@ -30,9 +30,9 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->若要產生視訊的中繼資料和相關的視訊影像縮圖，視訊本身需要在動態媒體中執行編碼程式。在AEM中，如果您已啟用動態媒 **** 體並設定視訊雲端服務，「動態媒體編碼視訊」工作流程會對視訊進行編碼。此工作流程會擷取工作流程處理歷程記錄和失敗資訊。請參閱 [監控視訊編碼和YouTube發佈進度](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress)。如果您已啟用動態媒體並設定視訊雲端服務，當您上傳視訊時，「動態媒體編碼視訊 **** 」工作流程會自動生效。(如果您未使用動態媒體， **[!UICONTROL DAM更新資產工作流程將生效]** 。)
+>若要產生視訊的中繼資料和相關的視訊影像縮圖，視訊本身需要在動態媒體中執行編碼程式。在中AEM，如果您已啟用Dynamic Media並設定視訊雲端服務，**[!UICONTROL Dynamic Media編碼視訊]**&#x200B;工作流程會對視訊進行編碼。 此工作流程會擷取工作流程處理歷程記錄和失敗資訊。請參閱 [監控視訊編碼和YouTube發佈進度](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress)。如果您已啟用Dynamic Media並設定視訊雲端服務，**[!UICONTROL Dynamic Media編碼視訊]**&#x200B;工作流程會在您上傳視訊時自動生效。 (如果您未使用Dynamic Media,**[!UICONTROL DAM Update Asset]**&#x200B;工作流程將生效。)
 >
->在搜尋資產時，中繼資料很實用。 縮圖是編碼期間產生的靜態視訊影像。 AEM系統需要這些視訊，並用於使用者介面，以協助您在「卡片」檢視、「搜尋結果」檢視和「資產清單」檢視中以視覺化方式識別視訊。 當您點選編碼視訊的「轉譯」圖示（畫家的浮動視窗）時，可看到產生的縮圖。
+>在搜尋資產時，中繼資料很實用。 縮圖是編碼期間產生的靜態視訊影像。 系統需要這些視訊，AEM並用於使用者介面中，以協助您在「卡片」檢視、「搜尋結果」檢視和「資產清單」檢視中以視覺化方式識別視訊。 當您點選編碼視訊的「轉譯」圖示（畫家的浮動視窗）時，可看到產生的縮圖。
 
 完成視訊描述檔的建立後，即可將它套用至資料夾或多個資料夾。 請參閱[將視訊描述檔套用至資料夾。](#applying-a-video-profile-to-folders)
 
@@ -91,7 +91,7 @@ ht-degree: 16%
 
 ## 關於在視訊描述檔{#about-smart-crop-video}中使用智慧裁切
 
-智慧型裁切視訊（視訊描述檔中的選用功能）是一種工具，可運用Adobe Sensei中的人工智慧功能，自動偵測並裁切您上傳的任何最適化視訊或漸進式視訊中的焦點，不論其大小。
+視訊智慧裁切（視訊描述檔中的選用功能）是一種工具，可運用Adobe Sensei的人工智慧功能，自動偵測並裁切您上傳的任何最適化視訊或漸進式視訊中的焦點，而不論其大小。
 
 智慧型裁切支援的視訊格式包括MP4、MKV、MOV、AVI、FLV和WMV。
 
@@ -101,7 +101,7 @@ ht-degree: 16%
 * 每秒30幀(FPS)。
 * 300 MB檔案大小。
 
-請注意，Adobe Sensei目前限制為9000個影格。 也就是說，在30 FPS時5分鐘。 如果您的視訊的FPS較高，則支援的視訊持續時間上限會降低。 例如，60 FPS視訊的長度必須為2.5分鐘，Adobe Sensai和智慧型裁切才能支援。
+請注意，Adobe Sensei目前限制為9000幀。 也就是說，在30 FPS時5分鐘。 如果您的視訊的FPS較高，則支援的視訊持續時間上限會降低。 例如，60 FPS視訊的長度必須為2.5分鐘，才能由AdobeSensai和智慧裁切所支援。
 
 ![智慧型裁切視訊](assets/smart-crop-video.png)
 
@@ -123,7 +123,7 @@ ht-degree: 16%
 
 ## 建立最適化串流的視訊設定檔{#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-動態媒體已隨附預先定義的最適化視訊編碼設定檔- MP4 H.264的視訊上傳設定群組——已最佳化，以提供最佳的檢視體驗。 您可以在上傳影片時使用此設定檔。
+Dynamic Media已提供預先定義的最適化視訊編碼設定檔- MP4 H.264的視訊上傳設定群組——已最佳化以提供最佳的檢視體驗。 您可以在上傳影片時使用此設定檔。
 
 不過，如果此預先定義的描述檔不符合您的需求，您可以選擇建立自己的最適化視訊編碼描述檔。 當您使用設定&#x200B;**[!UICONTROL Encode for adaptive streaming]**-作為最佳實務時，您新增至描述檔的所有編碼預設集都會經過驗證，以確保所有視訊都有相同的外觀比例。 此外，編碼視訊會視為串流的多位元速率集。
 
@@ -207,7 +207,7 @@ ht-degree: 16%
 1. 在&#x200B;**[!UICONTROL Basic]**標籤上，設定視訊和音訊選項。
 請點選每個選項旁的資訊圖示，以根據選取的視訊格式codec取得其他說明或建議的設定。
 1. （可選）在「Video Size（視頻大小）」標題下，取消選中「Keep aspect ratio（保持高寬比）」。****
-1. 執行下列動作：
+1. 請執行下列動作：
    * 在&#x200B;**[!UICONTROL Width]**&#x200B;欄位中，輸入&#x200B;**[!UICONTROL auto]**。
    * 在&#x200B;**[!UICONTROL Height]**欄位中，輸入以像素為單位的值。
 若要協助您視覺化視訊的大小，請點選「高度」的資訊圖示以開啟「大小計算器」(**[!UICONTROL Size Calculator)]**&#x200B;頁面。 使用&#x200B;**[!UICONTROL 大小計算器]**&#x200B;頁可以進一步設定視頻維（藍色框），如何設定。 完成後，在對話框的右上角按一下&#x200B;**[!UICONTROL X]**。
@@ -239,14 +239,14 @@ ht-degree: 16%
 
 您現在可以將描述檔套用至包含影片的檔案夾。 請參閱[將視訊描述檔套用至資料夾](#applying-a-video-profile-to-folders)或[全域套用視訊描述檔](#applying-a-video-profile-globally)。
 
-## 使用自訂新增的視訊編碼參數{#using-custom-added-video-encoding-parameters}
+## 使用自訂新增的視訊編碼參數 {#using-custom-added-video-encoding-parameters}
 
-您可以編輯現有的視訊編碼設定檔，以利用在AEM中建立或編輯視訊設定檔時，使用者介面中找不到的進階視訊編碼參數。 您可自訂將一或多個進階參數（例如minBitrate和maxBitrate）新增至現有的描述檔。
+您可以編輯現有的視訊編碼描述檔，以利用在中建立或編輯視訊描述檔時，使用者介面中找不到的進階視訊編碼參數AEM。 您可自訂將一或多個進階參數（例如minBitrate和maxBitrate）新增至現有的描述檔。
 
 **若要使用自訂新增的視訊編碼參數**:
 
 1. 點選AEM標誌，然後導覽至「工 **[!UICONTROL 具]** >一 **[!UICONTROL 般]** > **[!UICONTROL CRXDE Lite]**」。
-1. 從CRXDE Lite頁面，在左側的「檔案總管」面板中，導覽至下列：
+1. 從CRXDE Lite頁面，在左側的「檔案總管」面板中，導覽至下列項目：
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
 
@@ -303,13 +303,13 @@ ht-degree: 16%
    * 重複步驟3和4，將另一個參數新增至視訊編碼設定檔。
    * 在頁面左上角附近，點選&#x200B;**[!UICONTROL 全部儲存]**。
 
-1. 在CRXDE Lite頁面的左上角，點選&#x200B;**[!UICONTROL 「Back Home」（返回首頁）]**&#x200B;圖示以返回AEM。
+1. 在CRXDE Lite頁面的左上角，點選&#x200B;**[!UICONTROL 「Back Home]**（後門）」圖示以返回AEM。
 
 ### 編輯視頻配置檔案{#editing-a-video-encoding-profile}
 
 您可以編輯您建立的任何視訊設定檔，以新增、編輯或刪除該設定檔中的視訊預設集。
 
-依預設，您無法編輯動態媒體隨附的預先定義、現成可用的「最適化視訊編碼」描述檔。 ]****[!UICONTROL &#x200B;您可以輕鬆地複製描述檔，並使用新名稱加以儲存。 然後，您可以在複製的描述檔中編輯所需的預設集。
+依預設，您無法編輯隨附於Dynamic Media的預先定義、現成可用的「最適化視訊編碼」描述檔。 ****&#x200B;您可以輕鬆地複製描述檔，並使用新名稱加以儲存。 然後，您可以在複製的描述檔中編輯所需的預設集。
 
 另請參閱[視訊編碼的最佳實務](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)。
 
@@ -336,7 +336,7 @@ ht-degree: 16%
 1. 在「視訊編碼描述檔」頁面上，輸入描述檔的新名稱。
 1. 最佳實務是，請確定已選取「 **[!UICONTROL 最適化串流編碼]** 」核取方塊。點選資訊圖示以取得最適化串流的說明。（如果您要複製漸進式視訊設定檔，請勿選取核取方塊。）
 
-   在「動態媒體——混合」模式中，如果WebM視訊預設集是視訊設定檔的一部分，則無法進行最適化串流的&#x200B;**[!UICONTROL 編碼]**，因為所有預設集都必須是MP4。
+   在Dynamic Media-混合模式中，如果WebM視訊預設集是視訊設定檔的一部分，則無法進行最適化串流的&#x200B;**[!UICONTROL 編碼]**，因為所有預設集都必須是MP4。
 1. 在「視訊編碼預設集」標題下，新增、編輯或刪除構成描述檔的視訊編碼預設集。
 
    點選「基本」和「進階」標籤上每個選項旁的資訊圖示，以取得建議的設定和說明。
@@ -380,7 +380,7 @@ ht-degree: 16%
 
 #### 將視頻配置檔案應用到屬性{#applying-video-profiles-to-folders-from-properties}中的資料夾
 
-1. 點選或按一下AEM標誌，並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用視訊設定檔的檔案夾。
+1. 點選或按一AEM下標誌，並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用視訊描述檔的資料夾。
 1. 在資料夾上，點選核取標籤以選取它，然後點選&#x200B;**[!UICONTROL 屬性]**。
 1. 選擇「 **[!UICONTROL 視訊描述檔]** 」標籤，然後從下拉式選單中選取描述檔，然後按一下「 **[!UICONTROL 儲存並關閉」]**。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
@@ -389,13 +389,13 @@ ht-degree: 16%
 
 ### 全局應用視頻配置檔案{#applying-a-video-profile-globally}
 
-除了將描述檔套用至檔案夾外，您也可以全域套用一個，如此任何檔案夾中上傳至AEM資產的內容都會套用選取的描述檔。
+除了將描述檔套用至資料夾外，您也可以全域套用一個，如此任何上傳至任何資料夾中資產的AEM內容都會套用選取的描述檔。
 
 另請參閱[重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
 **若要全域套用視訊設定檔**,
 
-* 導覽至CRXDE Lite至下列節點：`/content/dam/jcr:content`。 新增屬性`videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>`並點選&#x200B;**[!UICONTROL 全部儲存]**。
+* 導航到CRXDE Lite到以下節點：`/content/dam/jcr:content`。 新增屬性`videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>`並點選&#x200B;**[!UICONTROL 全部儲存]**。
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * 您可以[監控視頻配置檔案處理作業的進度](#monitoring-the-progress-of-an-encoding-job)。
@@ -404,7 +404,7 @@ ht-degree: 16%
 
 會顯示處理指示器（或進度列），以便您能夠以視覺方式監控視頻配置檔案處理作業的進度。
 
-您也可以檢視`error.log`檔案，以監控編碼工作的進度、查看編碼是否完成，或查看任何作業錯誤。 `error.log`位於安裝AEM實例的`logs`資料夾中。
+您也可以檢視`error.log`檔案，以監控編碼工作的進度、查看編碼是否完成，或查看任何工作錯誤。 `error.log`位於安裝實例的`logs`資料夾AEM中。
 
 ## 從資料夾{#removing-a-video-profile-from-folders}中刪除視頻配置檔案
 
@@ -422,7 +422,7 @@ ht-degree: 16%
 
 ### 通過屬性{#removing-video-profiles-from-folders-by-way-of-properties}從資料夾中刪除視頻配置檔案
 
-1. 點選或按一下AEM標誌，並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要從中移除視訊設定檔的檔案夾。
+1. 點選或按一AEM下標誌，並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要從中移除視訊描述檔的資料夾。
 1. 在資料夾上點選或按一下核取標籤以選取它，然後點選&#x200B;**[!UICONTROL 屬性]**。
 1. 選擇「 **[!UICONTROL 視訊描述檔]** 」標籤，並從下拉式選單中選 **[!UICONTROL 取「無]** 」，然後按一下「 **[!UICONTROL 儲存並關閉」]**。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
