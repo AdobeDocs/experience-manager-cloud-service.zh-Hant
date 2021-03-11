@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
+source-git-commit: 7d51252abcc5fe2def9a55c6324bf75479ef449a
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 57%
+source-wordcount: '2274'
+ht-degree: 51%
 
 ---
 
@@ -26,9 +26,13 @@ ht-degree: 57%
 
 * 如果您使用&#x200B;*沙盒環境*，請確定您的環境是最新的，並升級至最新的版本。 如果您使用&#x200B;*生產環境*，則會自動更新。
 
-* 若要使用「內容傳輸工具」，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud Service例項的本AEM機管理員群組。 無權限的使用者將無法擷取能使用「內容轉移工具」的存取 Token。
+* 若要使用「內容傳輸工具」，您必須是來源例項的管理員使用者，且屬於您要傳輸內容至之Cloud Service例項的本機AEM **administrators**&#x200B;群組。 無權限的使用者將無法擷取能使用「內容轉移工具」的存取 Token。
+
+* 如果啟用「在擷取&#x200B;**之前擦除雲端例項上的現有內容」設定，則會刪除整個現有儲存庫並建立新儲存庫，以將內容擷取至。**&#x200B;這表示會重設目標Cloud Service例項的所有設定，包括權限。 對於添加到&#x200B;**administrators**&#x200B;組的管理員用戶，也是如此。 用戶需要重新添加到&#x200B;**administrators**&#x200B;組中，以檢索CTT的訪問Token。
 
 * 存取Token可在特定時段後或Cloud Service環境升級後定期到期。 如果存取Token已過期，您將無法連線至Cloud Service例項，而您必須擷取新的存取Token。 與現有移轉集相關聯的狀態圖示將變更為紅色雲端，並會在您將滑鼠暫留在紅色雲端時顯示訊息。
+
+* 內容傳輸工具不會在將內容從來源例項傳輸至目標例項之前執行任何類型的內容分析。 例如，CTT在將內容擷取至「發佈」環境時，不會區分已發佈和未發佈的內容。 無論在移轉集中指定什麼內容，都將被收錄到所選目標實例中。 使用者可將移轉集內嵌至「作者」例項或「發佈」例項或兩者。 建議在將內容移至Production執行個體時，安裝CTT來源Author執行個體，以將內容移至目標Author執行個體，並同樣將CTT安裝在來源Publish執行個體，以將內容移至目標Publish執行個體。
 
 * 內容傳輸工具所傳輸的使用者和群組僅是內容滿足權限所需的使用者和群組。 *Extraction*&#x200B;進程將整個`/home`複製到遷移集中，而&#x200B;*Ingestion*&#x200B;進程複製遷移內容ACL中引用的所有用戶和組。 若要自動將現有使用者和群組對應至其IMS ID，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)。
 
@@ -174,7 +178,7 @@ ht-degree: 57%
 1. 從&#x200B;*綜覽*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**擷取**&#x200B;即可開始擷取。**移轉集擷取**&#x200B;對話框隨即顯示。按一下&#x200B;**Ingest**&#x200B;以開始接收階段。 您可以同時將內容擷取至「製作」和「發佈」。
 
    >[!IMPORTANT]
-   >啟用&#x200B;**在擷取**&#x200B;選項前擦除雲端例項上的現有內容時，它會刪除整個現有儲存庫並建立新儲存庫，以將內容擷取至。 這表示會重設目標Cloud Service例項的所有設定，包括權限。
+   >啟用&#x200B;**在擷取**&#x200B;選項前擦除雲端例項上的現有內容時，它會刪除整個現有儲存庫並建立新儲存庫，以將內容擷取至。 這表示會重設目標Cloud Service例項的所有設定，包括權限。 對於添加到&#x200B;**administrators**&#x200B;組的管理員用戶，也是如此。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
