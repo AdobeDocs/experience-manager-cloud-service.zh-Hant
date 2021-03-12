@@ -2,9 +2,9 @@
 title: 對Adobe Experience Manager網站的Cookie支援與Cloud Service相同
 description: 對Adobe Experience Manager網站的Cookie支援與Cloud Service相同
 translation-type: tm+mt
-source-git-commit: e51d9c3e4691fb58f3c4b6a2565cc8cad2a1acb0
+source-git-commit: 4f25aa54bd40644912e0e430a81f1a17d545e3f8
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -28,3 +28,5 @@ ht-degree: 0%
 1. 按一下「儲存」
 1. 請依照使用SDK快速入門(Quickstart)[「產生OSGi設定」中所述的步驟，產生此AEM特定設定的JSON格式設定](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)
 1. 按照[Cloud Manager API Format for Setting Properties](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi文檔中的步驟應用設定。
+
+更新此設定後，使用者登出並再次登入，`login-token` Cookie就會設定`None`屬性，並包含在跨網站請求中。
