@@ -2,17 +2,17 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: 6c9a0779cfb9c3c2088a17e67437c76b589276f0
+source-git-commit: c71117de502b1ee756e06e756a643c987113ea45
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 4%
+source-wordcount: '695'
+ht-degree: 7%
 
 ---
 
 
 # AEM as a Cloud Service 中的 CDN {#cdn}
 
-因AEM為Cloud Service隨附內建CDN。 其主要目的是透過從邊緣的CDN節點（在瀏覽器附近）傳送可快取的內容，來減少延遲。 它已完全受管理，並且已設定為提供最佳的 AEM 應用程式效能。
+因AEM為Cloud Service隨附內建CDN。 其主要用途，就是透過從瀏覽器附近的邊緣 CDN 節點傳遞可快取的內容，以便減少延遲的情形。它已完全受管理，並且已設定為提供最佳的 AEM 應用程式效能。
 
 受管AEM理的CDN將滿足大部分客戶的效能與安全性需求。 對於發佈層，客戶可選擇從自己的CDN指向它，而他們需要管理CDN。 這將根據符合特定先決條件（包括但不限於與其CDN廠商舊有整合且難以放棄的客戶）而逐個允許。
 
@@ -31,7 +31,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->只有允許的IP要求才會由受管AEM理的CDN提供。 如果您將自己的CDN指向受AEM管理的CDN，請確定您的CDN的IP已包含在允許清單中。
+>只有允許的IP要求才會由受管AEM理的CDN提供。 如果您將自己的CDN指向受AEM管理的CDN，請確定您的CDN的IP已包含在allowlist中。
 
 ## 客戶CDN指向AEM受管理的CDN {#point-to-point-CDN}
 
@@ -47,10 +47,10 @@ ht-degree: 4%
 
 1. 使用域名設定`X-Forwarded-Host`標頭。
 1. 使用原始網域(即AEMCDN的入口)設定主機標題。 價值應該來自Adobe。
-1. 將SNI報頭髮送到源。 與主機標頭一樣， sni標頭必須是源域。
+1. 將SNI報頭髮送到源。 與主機標題一樣， SNI標題必須是源域。
 1. 設定`X-Edge-Key`或`X-AEM-Edge-Key`（如果您的CDN刪除X-Edge-*），以正確將流量路由至伺服器AEM。 價值應該來自Adobe。 如果您想要直接存取AdobeCDN的入口，請通知Adobe（當`X-Edge-Key`不存在時，將被封鎖）。
 
-在接受即時流量之前，您應向Adobe客戶支援驗證端對端流量路由是否正常運作。
+在接受即時流量之前，您應向Adobe的客戶支援驗證端對端流量路由是否正常運作。
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ ht-degree: 4%
 
 ## 地理位置標題{#geo-headers}
 
-受管AEM理的CDN會透過下列項目，將標題新增至每個請求：
+受管AEM理的CDN會透過下列項目將標題新增至每個請求：
 
 * 國家代碼：`x-aem-client-country`
 * 大陸代碼：`x-aem-client-continent`
