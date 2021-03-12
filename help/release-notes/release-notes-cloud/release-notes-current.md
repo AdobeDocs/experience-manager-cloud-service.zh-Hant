@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: fb0700f2b25917dd97381e0270995d7cef646edb
+source-git-commit: 608c512831ea7b0a516a4100a2d76e91f47ec73c
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1667'
 ht-degree: 2%
 
 ---
@@ -210,13 +210,20 @@ Best Practices Analyzer v2.1.2的發行日期為2021年2月18日。
 
 ### 程式碼重構工具{#what-is-new-crt}的新增功能
 
-* 新版AIO-CLI增效模組已發行。 此插件的最新版本包含Repository Modernizer的幾個錯誤修正。
-請參閱[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)以進一步瞭解此外掛程式。
+* 新版AIO-CLI增效模組已發行。 此插件的最新版本包含Repository Modernizer和Dispatcher Converter的幾項新功能和錯誤修正。    請參閱[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)以進一步瞭解此外掛程式。
 
-### 錯誤修正 {#bug-fixes-crt}
+* Repository Modernizer的新功能和增強功能。 請參閱[GitHub資源：最新版本的Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
+   * 將OSGi組態標準化為偏好的。cfg.json格式（RepoInit組態除外）。
+   * 將OSGi配置資料夾更名為指定格式。
+   * 產生ui.apps.structure專案。
+   * 建立分析模組。
 
-* 在Repository Modernizer上完成的幾個錯誤修正。
-請參閱[GitHub資源：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)以取得詳細資訊。
+* Dispatcher Converter的新功能和增強功能。 請參閱[GitHub資源：Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+   * 為不同內含項目建立個別檔案，而非內容內嵌。
+   * 能夠同時處理vhosts的資料夾路徑和vhost檔案的路徑。
+   * 以超過600種客戶配置生成群檔案。
+
+
 
 
 
