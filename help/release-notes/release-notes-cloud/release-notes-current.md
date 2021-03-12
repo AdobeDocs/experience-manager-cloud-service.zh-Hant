@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: 608c512831ea7b0a516a4100a2d76e91f47ec73c
+source-git-commit: 612885895dda73afb3406f73e59ef3eec6202f5d
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 2%
@@ -73,7 +73,7 @@ Customers using the Connected Assets feature can now easily view and track asset
 
 ## Cloud Manager {#cloud-manager}
 
-本頁概述了Cloud Manager的發行說明，AEM作為Cloud Service2021.3.0。
+本節將Cloud Manager發行說明概AEM述為Cloud Service2021.3.0。
 
 ## 發行日期 {#release-date-cm-march}
 
