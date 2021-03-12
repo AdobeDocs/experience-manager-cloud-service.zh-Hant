@@ -2,7 +2,7 @@
 title: 授予的訪問權限——需要什麼
 description: 授予的訪問權限——需要什麼
 translation-type: tm+mt
-source-git-commit: 4904d7728befd3562940b35c7d44dbf9cae87fee
+source-git-commit: 4b62401fd1d0654cf758092176bd815a7fa56159
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 9%
@@ -36,8 +36,8 @@ Adobe將在AdobeIdentity Management系統(IMS)中為您的公司建立&#x200B;**
    * [管理角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-roles)
    * [管理對作者實例的訪問](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-access-aem)
 
->[!NOTE]
->請造訪[使用者與角色](#users-roles)一節，以進一步瞭解Cloud Manager中的使用者與角色定義。
+      >[!NOTE]
+      >請造訪[使用者與角色](#users-roles)一節，以進一步瞭解Cloud Manager中的使用者與角色定義。
 
 授予這些權限後，管理員現在會設定單一登入(使用Adobe ID)來存取[!UICONTROL Experience Cloud]服務、登入您的雲端環境AEM，以及使用[!UICONTROL Cloud Manager]。
 
