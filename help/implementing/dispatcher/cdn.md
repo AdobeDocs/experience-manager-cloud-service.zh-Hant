@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 translation-type: tm+mt
-source-git-commit: 852a4742a17065b9d38bd78d1e68a92854001842
+source-git-commit: 6c9a0779cfb9c3c2088a17e67437c76b589276f0
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 5%
+source-wordcount: '696'
+ht-degree: 4%
 
 ---
 
@@ -51,6 +51,10 @@ ht-degree: 5%
 1. 設定`X-Edge-Key`或`X-AEM-Edge-Key`（如果您的CDN刪除X-Edge-*），以正確將流量路由至伺服器AEM。 價值應該來自Adobe。 如果您想要直接存取AdobeCDN的入口，請通知Adobe（當`X-Edge-Key`不存在時，將被封鎖）。
 
 在接受即時流量之前，您應向Adobe客戶支援驗證端對端流量路由是否正常運作。
+
+>[!NOTE]
+>
+>管理其CDN的客戶應確保傳送至CDN的標題的完整AEM性。 例如，建議客戶清除所有`X-Forwarded-*`標題，並將其設為已知和控制值。 例如，`X-Forwarded-For`應包含客戶端的IP地址，而`X-Forwarded-Host`應包含站點的主機。
 
 雖然從客戶CDN到受管理CDN的跳數可能會很有效，但由於額外的跳數，可能會AEM造成小的效能點擊。
 
