@@ -2,9 +2,9 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 translation-type: tm+mt
-source-git-commit: 7d51252abcc5fe2def9a55c6324bf75479ef449a
+source-git-commit: 23943db6fbdf82a1d1be47e5a8777064b3750a95
 workflow-type: tm+mt
-source-wordcount: '2274'
+source-wordcount: '2307'
 ht-degree: 51%
 
 ---
@@ -208,6 +208,8 @@ ht-degree: 51%
 
 ### 檢視移轉集記錄 {#viewing-logs-migration-set}
 
+完成每個步驟（擷取和擷取）後，請檢查記錄並尋找錯誤。  任何錯誤都應立即解決，方法是處理所報告的問題，或聯絡Adobe支援。
+
 您可以在&#x200B;*綜覽*頁面中檢視現有移轉集記錄。
 請遵循下列步驟：
 
@@ -267,6 +269,7 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 如需詳細資訊，請參考 [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)。
 
 接著，即可針對上述在 *OUT_DIR* 中建立、有一致性問題的檔案，檢查是否有路徑遺失二進位檔案，以及是否有採取適當操作如透過備份還原、刪除路徑、重新索引等等。
+
 
 ### UI 行為 {#ui-behavior}
 
