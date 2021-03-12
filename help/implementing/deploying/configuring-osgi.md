@@ -2,7 +2,7 @@
 title: 為 AEM as a Cloud Service 設定 OSGi
 description: '具有機密值和環境特定值的OSGi配置 '
 translation-type: tm+mt
-source-git-commit: a04935b3b71cff9f5f0fbc85b4d3db4dd96a28fc
+source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
 workflow-type: tm+mt
 source-wordcount: '2737'
 ht-degree: 1%
@@ -180,7 +180,7 @@ JSON格式的OSGi組態檔可直接手動寫入專AEM案。 這通常是為知�
 1. 將更改保存到新的`.cfg.json`檔案
 1. 將新的OSGi配置檔案添加並提交到Git
 
-### 使用AEMSDK Quickstart {#generating-osgi-configuratuions-using-the-aem-sdk-quickstart}生成OSGi配置
+### 使用AEMSDK Quickstart {#generating-osgi-configurations-using-the-aem-sdk-quickstart}生成OSGi配置
 
 SDK Quickstart AEM Jar的Web AEM Console可用來設定OSGi元件，並將OSGi組態匯出為JSON。 這對於配置提供AEM的OSGi元件非常有用，其OSGi屬性及其值格式可能無法由項目中定義OSGi配置的開發人員充分理AEM解。 請注意，使用AEMWeb Console的配置UI會將`.cfg.json`檔案寫入儲存庫，因此請注意，當項目定義的OSGi配置可能與生成的配置不同時，在本地開發過程中，要避免出現意外行為。
 
