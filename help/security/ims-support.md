@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 40ea422718a3613889d73fcf30d6482e9c82907d
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 100%
@@ -203,7 +203,7 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 
 若要能夠存取 Cloud Manager 或 AEM as a Cloud Service 環境，系統必須將您指派給 Cloud Manager 產品的設定檔。
 
-請參閱[角色定義](/help/onboarding/what-is-required/add-users-roles.md#role-definitions)深入了解使用者的角色，這些角色能控制使用者能否使用 Cloud Manager 的特定功能。
+請參閱[角色定義](/help/onboarding/what-is-required/access-rights-granted.md##role-definitions)深入了解使用者的角色，這些角色能控制使用者能否使用 Cloud Manager 的特定功能。
 
 >[!NOTE]
 >Cloud Manager 已預先設定角色，賦予適當權限。若要了解各個具有特定權限的角色、預先設定的任務或每個角色的相關權限，請參閱[角色型權限](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)。
