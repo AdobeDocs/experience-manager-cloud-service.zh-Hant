@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 安全性
 description: Adobe Experience Manager as a Cloud Service 安全性自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: c0a66239e949ee4b460142e392d61e22938896bc
+source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 91%
+source-wordcount: '406'
+ht-degree: 89%
 
 ---
 
@@ -16,8 +16,9 @@ ht-degree: 91%
 
 ## 安全性重要文章 {#key-articles}
 
-* [AEM雲端服務的安全性概觀](/help/security/cloud-service-security-overview.md)
+* [安全性概AEM述(作為Cloud Service)](/help/security/cloud-service-security-overview.md)
 * [AEM as a Cloud Service 的 IMS 支援](ims-support.md)
+* [與Cloud Service相AEM同的網站Cookie支援](same-site-cookie-support.md)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
@@ -34,7 +35,7 @@ ht-degree: 91%
 | [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 後端的操作方式，例如製作索引和執行維護任務。 |
-| [商務使用指南](/help/commerce-cloud/home.md) | 瞭解AEM上的Commerce Integration Framework as a Cloud Service。 |
+| [商務使用指南](/help/commerce-cloud/home.md) | 以Cloud Service的身分了AEM解Commerce Integration Framework。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
