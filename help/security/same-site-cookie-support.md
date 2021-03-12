@@ -2,9 +2,9 @@
 title: 對Adobe Experience Manager網站的Cookie支援與Cloud Service相同
 description: 對Adobe Experience Manager網站的Cookie支援與Cloud Service相同
 translation-type: tm+mt
-source-git-commit: 4f25aa54bd40644912e0e430a81f1a17d545e3f8
+source-git-commit: 7195709a96422eb701722ef6b398d6577e080058
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 此設定的預設值(`SameSite=Lax`)可能會導致例項或服務之AEM間的驗證無法運作。 這是因為這些服務的網域或URL結構可能不受此Cookie原則的限制。
 
-為避免此問題，您必須將登入Token的SameSite Cookieattribe設定為`None`。
+為避免此問題，您必須將登入Token的SameSite Cookie屬性設為`None`。
 
 您可依照下列步驟執行：
 
