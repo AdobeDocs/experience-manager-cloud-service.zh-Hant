@@ -1,8 +1,8 @@
 ---
 title: 對Adobe Experience Manager網站的Cookie支援與Cloud Service相同
-description: ISame網站Cookie支援Adobe Experience Manager做為Cloud Service
+description: 對Adobe Experience Manager網站的Cookie支援與Cloud Service相同
 translation-type: tm+mt
-source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
+source-git-commit: e51d9c3e4691fb58f3c4b6a2565cc8cad2a1acb0
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
