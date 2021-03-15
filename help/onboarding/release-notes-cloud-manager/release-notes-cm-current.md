@@ -2,9 +2,9 @@
 title: Cloud Manager的發行說明，作AEM為Cloud Service版本2021.3.0
 description: Cloud Manager的發行說明，作AEM為Cloud Service版本2021.3.0
 translation-type: tm+mt
-source-git-commit: 707c5daf5c48b2054fd684b4557143fbd8d873c7
+source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '456'
 ht-degree: 1%
 
 ---
@@ -17,12 +17,16 @@ ht-degree: 1%
 ## 發行日期 {#release-date}
 
 Cloud Manager作為2021.3.0Cloud ServiceAEM的發行日期為2021年3月11日。
+下一版預計於2021年4月08日推出。
 
 ## Cloud Manager {#cloud-manager}
 
 ### 新功能 {#what-is-new}
 
-* 具有IP允許清單、SSL憑證和自訂網域名稱之CDN預先存在組態的客戶，將會看到有關其先前現有組態的訊息，並可透過UI自助服務。
+* 具有[IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)和[自訂域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)的現有自訂域名配置的環境的客戶將看到有關其先前現有配置的消息，並能夠通過UI自助服務。 使用者現在可以：
+   * 將Sites解決方案新增至包含資產的現有計畫（反之亦然）。
+   * 將網站（或資產）從現有的計畫中移除，同時包含網站和資產。
+   * 將第二個未使用的解決方案權益新增至現有的方案，或新增為新的方案。
 
 * 擁有必要權限的使用者現在可以編輯程式，讓他們以自助方式執行下列作業。
 
