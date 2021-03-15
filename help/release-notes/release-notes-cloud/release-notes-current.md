@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 2%
@@ -87,8 +87,8 @@ Cloud Manager作為2021.3.0Cloud ServiceAEM的發行日期為2021年3月11日。
 
 * 具備必要權限的使用者現在可以編輯程式，讓他們以自助方式進行下列作業：
 
-   * 將Sites解決方案新增至包含資產的現有計畫（反之亦然）。
-   * 將網站（或資產）從現有的計畫中移除，同時包含網站和資產。
+   * 將Sites解決方案新增至包含資產的現有計畫，反之亦然。
+   * 將網站或資產從既有的計畫中移除，同時包含網站和資產。
    * 將第二個未使用的解決方案權益新增至現有的方案，或新增為新的方案。
 
 * **現AEM在，「Pipeline  Execution」（管線執行）和「Activity」（活動）畫面都會** 顯 *示推播更新*  ** 標籤。
