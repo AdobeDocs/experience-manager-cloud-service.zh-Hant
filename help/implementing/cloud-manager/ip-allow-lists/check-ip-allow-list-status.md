@@ -2,9 +2,9 @@
 title: 檢查IP允許清單狀態
 description: 檢查IP允許清單狀態
 translation-type: tm+mt
-source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -41,4 +41,15 @@ ht-degree: 0%
    * 即使取消應用失敗，狀態仍為「刪除失敗」。
    * 在清除所有故障之前，狀態將保持「刪除失敗」狀態。 用戶必須從&#x200B;**中選擇「刪除」...**&#x200B;選單，以清除任何故障。
    * 當狀態為「失敗」時，使用者將不會是「允許更新IP允許清單」。
+
+## IP允許清單{#pre-existing-cdn}的預先存在的CDN設定
+
+具備IP允許清單、SSL憑證或自訂網域名稱之CDN預先存在組態的客戶，將會在&#x200B;**IP允許清單**&#x200B;和&#x200B;**環境**&#x200B;詳細資訊頁面中看到下列訊息。
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+>[!NOTE]
+>為了查看並管理預先存在的配置，必須通過UI添加這些配置，如下圖所示。
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
 
