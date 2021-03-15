@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
+source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 2%
@@ -101,11 +101,11 @@ Cloud Manager作為2021.3.0Cloud ServiceAEM的發行日期為2021年3月11日。
 
 * **版本**&#x200B;標籤已重新標籤至「生產管線」執行畫面中的&#x200B;**Git Tag**。
 
-* 當重要量度不符合定義的臨界值時，定義行為的標籤已重新標籤，以反映其真實行為- **取消立即**&#x200B;和&#x200B;**批准立即**。
+* 當重要量度不符合定義的臨界值時，定義行為的標籤已重新標籤，以反映其真實行為：**取消立即**&#x200B;和&#x200B;**批准立即**。
 
 * 類別和方法取代清單已根據Cloud ServiceSDK的`2021.3.4997.20210303T022849Z-210225`版AEM本更新。
 
-* Cloud Manager生產管道現在將包含自訂UI測試功能。
+* Cloud Manager生產管道現在將包含[自訂UI測試](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)功能。
 
 ### 錯誤修正 {#bug-fixes-cm-march}
 
