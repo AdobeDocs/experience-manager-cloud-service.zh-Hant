@@ -2,9 +2,9 @@
 title: 檢查域名狀態
 description: 檢查域名狀態
 translation-type: tm+mt
-source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
+source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -41,3 +41,12 @@ FailedTXT驗證成功。但是，CDN部署失敗。 Adobe代表會自動收到�
 * **刪除**
 自定義域名失敗刪除失敗。您必須重試。 請參閱[刪除自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)以瞭解詳細資訊。
 
+
+## IP允許清單{#pre-existing-cdn}的預先存在的CDN設定
+
+具備IP允許清單（SSL憑證或自訂網域名稱）之預先存在的CDN設定的環境的客戶，會在&#x200B;**IP允許清單**&#x200B;和&#x200B;**環境**&#x200B;詳細資訊頁面中看到下列訊息。
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+若要查看並管理預先存在的組態，必須透過UI加入。
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
