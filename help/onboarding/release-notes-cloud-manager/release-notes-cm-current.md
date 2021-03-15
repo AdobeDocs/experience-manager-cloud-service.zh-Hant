@@ -2,9 +2,9 @@
 title: Cloud Manager的發行說明，作AEM為Cloud Service版本2021.3.0
 description: Cloud Manager的發行說明，作AEM為Cloud Service版本2021.3.0
 translation-type: tm+mt
-source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
+source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '454'
 ht-degree: 1%
 
 ---
@@ -23,12 +23,12 @@ Cloud Manager作為2021.3.0Cloud ServiceAEM的發行日期為2021年3月11日。
 
 ### 新功能 {#what-is-new}
 
-* 具有[IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)和[自訂域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)的現有自訂域名配置的環境的客戶將看到有關其先前現有配置的消息，並能夠通過UI自助服務。 使用者現在可以：
+* 具有[IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)和[自訂域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)的現有自訂域名配置的環境的客戶將看到有關其先前現有配置的消息，並能夠通過UI自助服務。
+
+* 具備必要權限的使用者現在可以編輯程式，讓他們以自助方式進行下列作業：
    * 將Sites解決方案新增至包含資產的現有計畫（反之亦然）。
    * 將網站（或資產）從現有的計畫中移除，同時包含網站和資產。
    * 將第二個未使用的解決方案權益新增至現有的方案，或新增為新的方案。
-
-* 擁有必要權限的使用者現在可以編輯程式，讓他們以自助方式執行下列作業。
 
 * 現在AEM會針對「Pipeline Execution」和「Activity」畫面顯示「推播更新」標籤。
 
