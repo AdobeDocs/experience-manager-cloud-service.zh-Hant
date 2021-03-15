@@ -2,9 +2,9 @@
 title: 檢查SSL證書的狀態——管理SSL證書
 description: 檢查SSL證書的狀態——管理SSL證書
 translation-type: tm+mt
-source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
+source-git-commit: 0b04d43c8b5bb28286e616f0bd902c05ec56ec05
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## IP允許清單{#pre-existing-cdn}的預先存在的CDN設定
 
-具備IP允許清單、SSL憑證或自訂網域名稱之CDN預先存在組態的客戶，將會在&#x200B;**IP允許清單**&#x200B;和&#x200B;**環境**&#x200B;詳細資訊頁面中看到下列訊息。
+具備IP允許清單、SSL憑證或自訂網域名稱之CDN預先存在組態的客戶，將會在&#x200B;**IP允許清單**&#x200B;和&#x200B;**環境**&#x200B;詳細資訊頁面中看到下列訊息。 當客戶透過UI完全移轉所有預先存在的環境設定後，UI上顯示的訊息將會消失，而且訊息可能需要1-2個工作天才能消失。
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
