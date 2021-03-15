@@ -3,10 +3,10 @@ title: 使用「連線資產」在 中共用 DAM 資產 [!DNL Sites]
 description: 使用遠程 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署上可用的資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f548a4eecbd2a7c6bad2a848ce493c2dcff3f248
+source-git-commit: f3c02cc79d5d56b67224761efd6a70ae597fe7fe
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 28%
+source-wordcount: '2707'
+ht-degree: 29%
 
 ---
 
@@ -28,9 +28,9 @@ ht-degree: 28%
 使用或設定此功能之前，請先確定下列事項：
 
 * 使用者是每個部署中適當使用者群組的一部分。
-* 對於[!DNL Adobe Experience Manager]部署類型，符合其中一個支援的標準。 如需此功能在[!DNL Experience Manager] 6.5中運作的詳細資訊，請參閱Experience Manager 6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)中的[連線資產。
+* 對於[!DNL Adobe Experience Manager]部署類型，符合其中一個支援的標準。 如需此功能在[!DNL Experience Manager] 6.5中運作的詳細資訊，請參閱 [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)中的[連線資產。
 
-   |  | [!DNL Sites] as a  [!DNL Cloud Service] | [!DNL Experience Manager] 6.5  [!DNL Sites] on AMS. | [!DNL Experience Manager] 6.5內 [!DNL Sites] 部部署 |
+   |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5  [!DNL Sites] on AMS. | [!DNL Experience Manager] 6.5內 [!DNL Sites] 部部署 |
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 支援 | 支援 | 支援 |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] on AMS.** | 支援 | 支援 | 支援 |
@@ -45,7 +45,7 @@ ht-degree: 28%
 
 ### 相關使用者和群組 {#users-and-groups-involved}
 
-以下說明設定及使用功能以及其相對應的使用者群組時，相關的各種角色。本機範圍用於作者建立網頁的使用案例。 遠程範圍用於DAM部署。 [!DNL Sites]作者會讀取這些遠程資產。
+以下說明設定及使用功能以及其相對應的使用者群組時，相關的各種角色。本機範圍用於作者建立網頁的使用案例。 遠端範圍適用於託管所需資產的 DAM 部署。[!DNL Sites]作者會讀取這些遠程資產。
 
 | 角色 | 範圍 | 使用者群組 | 逐步說明中的使用者名稱 | 需求 |
 |------|--------|-----------|-----|----------|
@@ -69,7 +69,7 @@ ht-degree: 28%
 
 1. 確保[!DNL Sites]部署和[!DNL Assets]部署AMS上存在具有適當範圍的用戶和角色。 在[!DNL Assets]部署上建立技術用戶，並添加到[涉及的用戶和組中提及的用戶組](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved)。
 
-1. 訪問`https://[sites_servername]:port`的本地[!DNL Sites]部署。 按一下「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 連線資產設定]**」。提供下列值：
+1. 訪問`https://[sites_servername]:port`的本地[!DNL Sites]部署。 按一下&#x200B;**[!UICONTROL 「工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 連線資產設定」]**，並提供下列各值：
 
    1. 配置的&#x200B;**[!UICONTROL Title]**。
    1. **[!UICONTROL 遠端DAM]** URL是格式中 [!DNL Assets] 位置的URL `https://[assets_servername]:[port]`。
@@ -84,7 +84,7 @@ ht-degree: 28%
 
    *圖：Connected Assets功能的典型配置。*
 
-1. 已處理[!DNL Assets]部署上的現有數位資產，並產生轉譯。 使用此功能會擷取這些轉譯，因此不需要重新產生轉譯。 停用工作流程啟動器以防止重新產生轉譯。 調整([!DNL Sites])部署上的啟動器配置以排除`connectedassets`資料夾（資產會擷取至此資料夾）。
+1. 已處理[!DNL Assets]部署上的現有數位資產，並產生轉譯。 這些轉譯會使用此功能擷取，因此不需要重新產生轉譯。 停用工作流程啟動器以防止重新產生轉譯。 調整([!DNL Sites])部署上的啟動器配置以排除`connectedassets`資料夾（資產會擷取至此資料夾）。
 
    1. 在[!DNL Sites]部署中，按一下&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 啟動器]**。
 
@@ -95,7 +95,7 @@ ht-degree: 28%
    1. 在[!UICONTROL 屬性]精靈中，將&#x200B;**[!UICONTROL 路徑]**&#x200B;欄位變更為下列對應，以更新其規則運算式，排除已連線資產&#x200B;]**的裝載點。**[!UICONTROL 
 
    | 變更前 | 變更後 |
-   | ------------------------------------------------------- | -------------------------------------------------------------------------- |
+   | ------ | ------------ |
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
    | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
    | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
