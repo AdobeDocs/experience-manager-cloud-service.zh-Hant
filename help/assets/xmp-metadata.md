@@ -3,9 +3,9 @@ title: XMP 中繼資料
 description: 瞭解中繼資XMP料管理的（可擴充中繼資料平台）中繼資料標準。 它被用AEM作建立、處理和交換中繼資料的標準格式。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0aac16705342f9652f38beef956a55d3f8f5df7d
+source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1003'
 ht-degree: 16%
 
 ---
@@ -72,21 +72,19 @@ XMP最常是使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium
 
 ## XMP回寫至轉譯{#xmp-writeback-to-renditions}
 
-&lt;a0/XMP>中的此回寫功能會將中繼資料變更複製到原始資產的轉譯。 [!DNL Adobe Experience Manager Assets]當您從[!DNL Assets]中變更資產的中繼資料，或在上傳資產時，這些變更最初會儲存在儲存庫的資產節點中。 回寫功XMP能會將中繼資料變更傳播至資產的所有或特定轉譯。
+&lt;a0/XMP>中的此回寫功能會將中繼資料變更複製到原始資產的轉譯。 [!DNL Adobe Experience Manager Assets]當您從[!DNL Assets]中變更資產的中繼資料，或在上傳資產時，這些變更最初會儲存在儲存庫的資產節點中。 不過，[!DNL Assets]不會自動將任何中繼資料變更傳播至資產的轉譯。 回寫功XMP能可讓您將中繼資料變更傳播至資產的所有或特定轉譯。 更新會儲存在資產階層的中繼資料節點中。 此功能也會將更新內嵌在轉譯的二進位檔案中。 此功能僅會回寫使用`jcr`命名空間的中繼資料屬性。
 
-考慮將`Classic Leather`資產[!UICONTROL Title]屬性修改為`Nylon`的藍本。
+例如，假設您將`Classic Leather`資產的[!UICONTROL Title]屬性修改為`Nylon`的藍本。
 
 ![中繼資料](assets/metadata.png)
 
 在這種情況下，[!DNL Assets]會針對資產階層中儲存的資產中繼資料，在`dc:title`參數中儲存對&#x200B;**[!UICONTROL Title]**&#x200B;屬性的變更。
 
-![metadata_stored](assets/metadata_stored.png)
+![儲存在儲存庫中資產節點中的元資料](assets/metadata_stored.png)
 
-不過，[!DNL Assets]不會自動將任何中繼資料變更傳播至資產的轉譯。
-
-回寫功XMP能可讓您將中繼資料變更傳播至資產的所有或特定轉譯。 不過，這些變更不會儲存在資產階層的中繼資料節點下。 此功能會在轉譯的二進位檔案中內嵌變更。
-
-在[!DNL Assets]中，預設未啟用回寫功能。 瞭解如何[啟用中繼資料回寫](#enable-xmp-writeback)。
+>[!NOTE]
+>
+>在[!DNL Assets]中，預設未啟用回寫功能。 瞭解如何[啟用中繼資料回寫](#enable-xmp-writeback)。
 
 ### 啟XMP用回寫{#enable-xmp-writeback}
 
@@ -95,11 +93,11 @@ XMP最常是使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium
 1. 作為管理員，訪問&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 啟動器]**。
 1. 選擇[!UICONTROL Launcher]，其中&#x200B;**[!UICONTROL Workflow]**&#x200B;欄顯示&#x200B;**[!UICONTROL DAM MetaData Writeback]**。 按一下工具欄中的&#x200B;**[!UICONTROL 屬性]**。
 
-   ![選取DAM中繼資料回寫啟動程式以修改其屬性並加以啟動](assets/launcher-properties-metadata-writeback1.png)
+   ![選擇DAM中繼資料回寫啟動程式以修改其屬性並加以啟用](assets/launcher-properties-metadata-writeback1.png)
 
-1. 在[!UICONTROL 啟動器屬性]頁面上選擇&#x200B;**[!UICONTROL 激活]**。 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
+1. 在&#x200B;**[!UICONTROL 啟動器屬性]**&#x200B;頁面上選擇&#x200B;**[!UICONTROL 激活]**。 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
 
-若要只將此工作流程套用至資產一次，請從左側導軌套用工作流程[!UICONTROL DAM中繼資料回寫]。 若要將工作流程套用至已上傳的資產，請將工作流程新增至後處理設定檔。
+若要將此工作流程只套用一次至資產，請從左側導軌套用工作流程[!UICONTROL DAM中繼資料回寫]。 若要將工作流程套用至所有已上傳的資產，請將工作流程新增至後處理設定檔。
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
