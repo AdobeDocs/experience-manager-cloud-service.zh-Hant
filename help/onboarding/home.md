@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: c843240b419fe1c40292e6cdb44b9811bc809bf3
+source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 94%
+source-wordcount: '416'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 本節提供下列主題的重要文章：
 
-* 存取 Experience Manager as a Cloud Service 的需求
+* 開始使AEM用Cloud Service
 * 了解控制特定功能開放情形的使用者角色
 * 設定 Cloud Manager Git 存放庫
 * 存取 Experience Manager as a Cloud Service 
@@ -39,7 +39,7 @@ ht-degree: 94%
 | [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 後端的操作方式，例如製作索引和執行維護任務。 |
-| [商務使用指南](/help/commerce-cloud/home.md) | 瞭解AEM上的Commerce Integration Framework as a Cloud Service。 |
+| [商務使用指南](/help/commerce-cloud/home.md) | 以Cloud Service的身分了AEM解Commerce Integration Framework。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
