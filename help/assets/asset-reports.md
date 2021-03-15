@@ -3,17 +3,17 @@ title: 關於使用與共用的報告
 description: ' [!DNL Adobe Experience Manager Assets] 中有關您資產的報表，可協助您瞭解數位資產的使用、活動和共用。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: dc6823d9a0dabcc4fe1537073d90ca53da205556
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 4%
+source-wordcount: '869'
+ht-degree: 5%
 
 ---
 
 
-# 資產報表{#asset-reports}
+# 資產報表 {#asset-reports}
 
-資產報表可讓您評估[!DNL Adobe Experience Manager Assets]部署的公用程式。 使用[!DNL Assets]，您可以產生各種數位資產的報表。 這些報表提供您系統使用情況、使用者與資產的互動方式，以及哪些資產被下載和共用的實用資訊。
+資產報表可讓您評估[!DNL Adobe Experience Manager Assets]部署的公用程式。 使用[!DNL Assets]，您可以產生各種數位資產的報表。 這些報告提供您系統使用情況、使用者與資產的互動方式，以及哪些資產是共用的有用資訊。<!-- downloaded and -->
 
 使用報表中的資訊衍生關鍵成功度量，以測量企業內部及客戶對[!DNL Assets]的接受度。
 
@@ -28,7 +28,6 @@ ht-degree: 4%
 [!DNL Experience Manager Assets] 為您生成以下標準報表：
 
 * 上傳
-* 下載
 * 過期
 * 修改
 * 發佈
@@ -36,6 +35,18 @@ ht-degree: 4%
 * 磁碟使用情況
 * 檔案
 * 連結共用
+
+<!-- Removed download report.
+* Upload
+* Download
+* Expiration
+* Modification
+* Publish
+* [!DNL Brand Portal] publish
+* Disk Usage
+* Files
+* Link Share
+-->
 
 [!DNL Adobe Experience Manager] 管理員可輕鬆產生和自訂這些報表，以供您的實作使用。管理員可依照下列步驟產生報表：
 
@@ -47,20 +58,6 @@ ht-degree: 4%
 1. 從&#x200B;**[!UICONTROL 建立報表]**&#x200B;頁面中，選擇您要建立的報表，然後按一下&#x200B;**[!UICONTROL 下一步]**。
 
    ![選擇報表類型](assets/choose_report.png)
-
-<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
-   >[!NOTE]
-   >
-   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
--->
-
->[!NOTE]
->
->依預設，「內容片段」和連結分享會包含在資產[!UICONTROL Download]報表中。 選取適當的選項，以建立連結共用的報表，或從下載報表中排除內容片段。
-
->[!NOTE]
->
->[!UICONTROL Download]報表只會顯示在個別選取後下載或使用快速動作下載的資產詳細資訊。 但是，它不包含已下載資料夾中資產的詳細資料。
 
 1. 在儲存報表的CRX儲存庫中設定報表詳細資訊，例如標題、說明、縮圖和資料夾路徑。 預設情況下，資料夾路徑為`/content/dam`。 您可以指定不同的路徑。
 
@@ -111,6 +108,16 @@ ht-degree: 4%
 
 您可以新增自訂欄至下列報表，以顯示更多符合自訂需求的資料：
 
+<!-- Remove download report.
+* Upload
+* Download
+* Expiration
+* Modification
+* Publish
+* [!DNL Brand Portal] publish
+* Files
+-->
+
 * 上傳
 * 下載
 * 過期
@@ -152,6 +159,24 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## 疑難排解資訊與提示{#tips-troubleshoot}
+## 疑難排解資訊{#tips-troubleshoot}
 
 * 如果[!UICONTROL 磁碟使用狀況報表]未產生，且您使用[!DNL Dynamic Media]，請確定所有資產都正確進行。 若要解決，請重新處理資產並重新產生報表。
+
+<!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
+
+TBD: How do enable this in CS now? Is it done using some OSGi config now?
+   >[!NOTE]
+   >
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
+
+<!-- Removed download report.
+   >[!NOTE]
+   >
+   >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.
+
+   >[!NOTE]
+   >
+   >The [!UICONTROL Download] report displays details of only those assets which are downloaded after selecting individually or are downloaded using Quick Action. However, it does not include the details of the assets that are inside a downloaded folder.
+-->
