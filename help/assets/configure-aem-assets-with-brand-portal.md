@@ -3,10 +3,10 @@ title: '將AEM Assets配置為具有品牌門戶的a [!DNL Cloud Service] '
 description: 使用 Brand Portal 設定 AEM Assets.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: b6283cfff0a0476cc45eb9da75a3a9b2bfdef7bd
+source-git-commit: 4a22ef2913e88b037a65746f782e4c6a20afdddb
 workflow-type: tm+mt
-source-wordcount: '2248'
-ht-degree: 10%
+source-wordcount: '2411'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## 使用Cloud Manager {#activate-brand-portal}啟用品牌入口網站
 
-Cloud Manager使用者會啟動AEM Assets的品牌入口網站作為[!DNL Cloud Service]例項。 啟動工作流程會在後端建立必要的設定（授權Token、IMS設定和品牌入口雲端服務），並反映Cloud Manager中品牌入口租戶的狀態。
+Cloud Manager使用者會啟動AEM Assets的品牌入口網站作為[!DNL Cloud Service]例項。 啟動工作流程會在後端建立必要的設定（授權Token、IMS設定和品牌入口雲端服務），並反映Cloud Manager中品牌入口租戶的狀態。 啟用品牌入口網站可讓AEM Assets使用者將資產發佈至品牌入口網站，並將資產分發至品牌入口網站使用者。
 
 **必備條件**
 
@@ -28,7 +28,7 @@ Cloud Manager使用者會啟動AEM Assets的品牌入口網站作為[!DNL Cloud 
 
 >[!NOTE]
 >
->[!DNL Cloud Service]實例的AEM Assets僅有權連接一個品牌入口網站租用戶。 您可以將AEM Assets建立為[!DNL Cloud Service]例項的多個環境（開發、生產和階段），其中品牌入口網站僅在一個環境中啟動。
+>[!DNL Cloud Service]實例的AEM Assets僅有權與一個品牌入口網站租用戶連接。 您可以將AEM Assets的多個環境（開發、生產和階段）當作[!DNL Cloud Service]實例，其中品牌入口網站在一個環境上啟動。
 
 **啟動品牌入口網站的步驟**
 
@@ -46,9 +46,18 @@ Cloud Manager使用者會啟動AEM Assets的品牌入口網站作為[!DNL Cloud 
 
    ![啟動品牌入口網站](assets/create-environment4.png)
 
-1. 啟動工作流程會在後端建立必要的組態時，啟動品牌入口網站租用戶可能需要幾分鐘的時間。 啟用品牌入口網站租用戶後，狀態會變更為「已啟用」。
+1. 啟動工作流程會在後端建立必要的組態時，啟動品牌入口網站租用戶只需幾分鐘。 啟用品牌入口網站租用戶後，狀態會變更為「已啟用」。
 
    ![檢視狀態](assets/create-environment5.png)
+
+
+>[!NOTE]
+>
+>品牌入口網站必須在與AEM Assets相同的IMS組織上啟動為[!DNL Cloud Service]例項。
+>
+>如果您對IMS組織（組織1-現有）有現有的品牌入口網站雲端設定([使用Adobe開發人員主控台](#manual-configuration)手動設定)，而您的AEM Assets為[!DNL Cloud Service]例項，則會針對其他IMS組織（組織2-新）設定，從雲端管理員啟動品牌入口網站會將品牌入口網站IMS組織重設為`org2-new`。 雖然`org1-existing`上的手動設定雲端設定會顯示在AEM Assets作者例項中，但在從Cloud Manager啟動品牌入口網站後，將不再使用。
+>
+>如果現有的品牌入口網站雲端設定和[!DNL Cloud Service]例項的AEM Assets使用相同的IMS組織（組織1），您只需從Cloud Manager啟動品牌入口網站。
 
 **另請參閱**:
 * [將AEM Assets的用戶和角色添加為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
@@ -62,13 +71,15 @@ Cloud Manager使用者會啟動AEM Assets的品牌入口網站作為[!DNL Cloud 
 
 您的品牌入口網站租用戶的預設URL為：`https://<tenant-id>.brand-portal.adobe.com/`。
 
+其中，租用戶ID為IMS組織。
+
 如果您不確定品牌入口網站URL，請執行下列步驟：
 
 1. 登入[Admin Console](http://adminconsole.adobe.com/)並導覽至&#x200B;**[!UICONTROL 產品]**。
 1. 從左側導軌中，選擇&#x200B;**[!UICONTROL Adobe Experience Manager品牌入口網站——品牌入口網站]**。
 1. 按一下&#x200B;**[!UICONTROL 前往品牌入口網站]**，直接在瀏覽器中開啟品牌入口網站。
 
-   或者，複製品牌入口網站租用戶URL並貼到您的瀏覽器中以開啟品牌入口網站介面。
+   或者，從&#x200B;**[!UICONTROL 前往品牌入口網站]**&#x200B;連結複製品牌入口網站URL，並貼到您的瀏覽器中以開啟品牌入口網站介面。
 
    ![存取品牌入口網站](assets/access-bp-on-cloud.png)
 
@@ -130,16 +141,16 @@ Cloud Manager使用者會啟動AEM Assets的品牌入口網站作為[!DNL Cloud 
 
 您可以監視資產發佈工作流程的散發代理記錄檔。
 
-例如，我們已將資產從AEM Assets發佈至品牌入口網站，以驗證設定。
+現在，讓我們將資產從AEM Assets發佈至品牌入口網站，並查看記錄檔。
 
-1. 按照[測試配置](#test-configuration)部分中顯示的步驟（從1到4），導航到分發代理頁面。
+1. 按照&#x200B;**測試連接**&#x200B;部分中顯示的步驟（從1到4），導航到分發代理頁面。
 1. 按一下&#x200B;**[!UICONTROL 日誌]**&#x200B;查看處理和錯誤日誌。
 
    ![](assets/test-bpconfig5.png)
 
 分發代理已生成以下日誌：
 
-* 資訊：這是系統生成的日誌，在成功配置分發代理時觸發。
+* 資訊：它是系統生成的日誌，在成功配置分發代理時觸發。
 * DSTRQ1（請求1）:測試連線時的觸發器。
 
 發佈資產時，會產生下列請求和回應記錄檔：
@@ -154,7 +165,7 @@ Cloud Manager使用者會啟動AEM Assets的品牌入口網站作為[!DNL Cloud 
 * queue-bpdistributionagent0 (DSTRQ2)：資產已發佈至 Brand Portal。
 * queue-bpdistributionagent0(DSTRQ3):系統會複製品牌入口網站中的AEM Assets資料夾（包含資產）。
 
-在上述範例中，系統會觸發其他請求和回應。系統無法在品牌入口網站中找到父資料夾（新增路徑），因為資產是第一次發佈，因此會觸發額外請求，在發佈資產的品牌入口網站中建立同名的父資料夾。
+在上述範例中，會觸發額外的請求和回應。 系統無法在品牌入口網站中找到父資料夾（新增路徑），因為資產是第一次發佈，因此會觸發額外請求，在發佈資產的品牌入口網站中建立同名的父資料夾。
 
 >[!NOTE]
 >
@@ -225,7 +236,7 @@ IMS 設定包括兩個步驟：
 
 1. 按一下&#x200B;**[!UICONTROL 下載公開密鑰]**&#x200B;表徵圖，並將公開密鑰(CRT)檔案保存在電腦上。
 
-   公開金鑰稍後將用於為您的品牌入口網站租用戶設定API，並在Adobe開發人員主控台中產生服務帳戶認證。
+   公開金鑰稍後會用來為您的品牌入口網站租用戶設定API，並在Adobe開發人員主控台中產生服務帳戶認證。
 
    ![下載憑證](assets/ims-config3.png)
 
