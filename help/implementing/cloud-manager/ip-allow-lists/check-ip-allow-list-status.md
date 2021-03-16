@@ -2,9 +2,9 @@
 title: 檢查IP允許清單狀態
 description: 檢查IP允許清單狀態
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -46,10 +46,11 @@ ht-degree: 0%
 
 具備IP允許清單、SSL憑證或自訂網域名稱之CDN預先存在組態的客戶，將會在&#x200B;**IP允許清單**&#x200B;和&#x200B;**環境**&#x200B;詳細資訊頁面中看到下列訊息。 當客戶透過UI完全移轉所有預先存在的環境設定後，UI上顯示的訊息將會消失，而且訊息可能需要1-2個工作天才能消失。
 
+>[!NOTE]
+>若要查看並管理預先存在的組態，必須透過UI加入。 有關詳細資訊，請參閱[添加IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。
+
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
->[!NOTE]
->為了查看並管理預先存在的配置，必須通過UI添加這些配置，如下圖所示。
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
 
