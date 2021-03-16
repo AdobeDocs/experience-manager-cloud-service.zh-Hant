@@ -2,9 +2,9 @@
 title: 檢查域名狀態
 description: 檢查域名狀態
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: dbf64ec2b4b7e5c549ef5942b1c7bd0ca75eb66f
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -46,9 +46,9 @@ FailedTXT驗證成功。但是，CDN部署失敗。 Adobe代表會自動收到�
 
 具備IP允許清單、SSL憑證或自訂網域名稱之CDN預先存在組態的客戶，將會在&#x200B;**IP允許清單**&#x200B;和&#x200B;**環境**&#x200B;詳細資訊頁面中看到下列訊息。 當客戶透過UI完全移轉所有預先存在的環境設定後，UI上顯示的訊息將會消失，而且訊息可能需要1-2個工作天才能消失。
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
-
 >[!NOTE]
->為了查看並管理預先存在的配置，必須通過UI添加這些配置，如下圖所示。
+>若要查看並管理預先存在的組態，必須透過UI加入。 如需詳細資訊，請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
