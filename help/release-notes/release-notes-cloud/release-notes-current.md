@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: b3e6cc15e283ca7996b4a55ccb88ef9880b09903
+source-git-commit: 64106e167270271c84b9f68a2babdf09f79aae86
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1760'
 ht-degree: 2%
 
 ---
@@ -233,7 +233,7 @@ Best Practices Analyzer v2.1.2的發行日期為2021年2月18日。
 
 **某些本機建置可能會失敗，因為本機建置分析器外掛程式發生問題**
 
-在某些情況下，本地項目構建在`aemanalyser-maven-plugin`執行期間可能失敗，並出現以下錯誤消息：
+在某些情況下，項目構建版本在執行`aemanalyser-maven-plugin`時可能失敗，並顯示以下錯誤消息：
 
 ```
 [ERROR] repoinit: Parsing error in repoinit from extension : Encountered "" at line 15, column 37.
