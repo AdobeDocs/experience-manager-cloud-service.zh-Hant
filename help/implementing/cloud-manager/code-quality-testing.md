@@ -1,8 +1,8 @@
 ---
-title: 程式碼品質測試——雲端服務
-description: 程式碼品質測試——雲端服務
+title: 程式碼品質測試-Cloud Services
+description: 程式碼品質測試-Cloud Services
 translation-type: tm+mt
-source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
+source-git-commit: 5a945cbb138aea64ecc6da3728827531569d6d63
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 1%
@@ -18,10 +18,10 @@ ht-degree: 1%
 
 ## 瞭解代碼質量規則{#understanding-code-quality-rules}
 
-在「程式碼品質測試」中，會掃描原始碼，以確保其符合特定品質標準。 目前，這是由SonarQube和使用OakPAL的內容封裝層級檢查組合來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 部分AEM特定規則是根據AEM Engineering的最佳實務建立，並稱為「[自訂代碼品質規則」](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
+在「程式碼品質測試」中，會掃描原始碼，以確保其符合特定品質標準。 目前，這是由SonarQube和使用OakPAL的內容封裝層級檢查組合來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 有些特定AEM規則是根據工程部門的最佳實踐AEM而建立，稱為[自訂代碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
 
 >[!NOTE]
->您可以下載規則的完整清單[這裡](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)。
+>您可以下載規則的完整清單[這裡](/help/implementing/cloud-manager/assets/CodeQuality-rules-CS.xlsx)。
 
 **三層門**
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 | 跳過的設備測試 | 跳過的單元測試數。 | 資訊 | > 1 |
 | 未結問題 | 整體問題類型——弱點、錯誤和程式碼氣味 | 資訊 | > 0 |
 | 複製行 | 重複塊中涉及的行數。 <br/>對於要視為複製的代碼塊：  <br/><ul><li>**非Java專案：**</li><li>至少應有100個連續和重複的Token。</li><li>這些預付碼應至少分散於： </li><li>COBOL的30行代碼 </li><li>ABAP的20行代碼 </li><li>10行其他語言的程式碼</li><li>**Java專案：**</li><li> 不論預付碼和行數為何，至少應有10個連續和重複的陳述式。</li></ul> <br/>在檢測重複時，會忽略縮排和字串文字的差異。 | 資訊 | > 1% |
-| 雲端服務相容性 | 已識別的雲端服務相容性問題數目。 | 資訊 | > 0 |
+| Cloud Service相容性 | 已識別的Cloud Service相容性問題數。 | 資訊 | > 0 |
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ ht-degree: 1%
 
 在這些情況下，原始碼可以用標準Java `@SuppressWarnings`注釋加以注釋，該標準Java 注釋指定規則ID作為注釋屬性。 例如，一個常見問題是，用於檢測硬編碼密碼的SonarQube規則對於如何識別硬編碼密碼具有攻擊性。
 
-若要檢視特定範例，此程式碼在AEM專案中相當常見，該專案具有連接至某些外部服務的程式碼：
+若要檢視特定範例，此程式碼在專案中相當常見，AEM專案中有程式碼可連接至某些外部服務：
 
 ```java
 @Property(label = "Service Password")
@@ -92,4 +92,4 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >儘管最佳做法是盡可能使`@SuppressWarnings`注釋具體，即僅注釋導致問題的特定語句或塊，但可以在類別級別注釋。
 
 >[!NOTE]
->雖然沒有明確的「安全性測試」步驟，但在代碼品質步驟中仍會評估與安全性相關的代碼品質規則。 請參閱[AEM的Security Overview as a Cloud Service](/help/security/cloud-service-security-overview.md)，以進一步瞭解Cloud Service中的安全性。
+>雖然沒有明確的「安全性測試」步驟，但在代碼品質步驟中仍會評估與安全性相關的代碼品質規則。 請參閱[安全性概述，以AEM作為Cloud Service](/help/security/cloud-service-security-overview.md)，以進一步瞭解Cloud Service中的安全性。
