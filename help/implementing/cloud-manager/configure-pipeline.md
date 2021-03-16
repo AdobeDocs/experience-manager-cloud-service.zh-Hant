@@ -1,8 +1,8 @@
 ---
-title: 配置CI/CD管線——雲服務
-description: 配置CI/CD管線——雲服務
+title: 配置CI/CD管線-Cloud Services
+description: 配置CI/CD管線-Cloud Services
 translation-type: tm+mt
-source-git-commit: 4d5ad99e44446ac40d9798df1c7fabb862065495
+source-git-commit: 97c3ddd5331d55c5d9b45a29251f584e4bac878b
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 請依照下列步驟來設定管道的行為和偏好設定：
 
-1. 按一下「設定管線」(Setup Pipeline)「**」(&lt;a0/>)以設定和配置管線。**
+1. 按一下「設定管線」(Setup Pipeline)「**」(**)以設定和配置管線。
 
    ![](assets/set-up-pipeline1.png)
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 1. 設定您的部署選項。
 
-   ![](assets/setup-2.png)
+   ![](assets/setup-pipeline.png)
 
    可定義觸發器以啟動管線：
 
@@ -74,8 +74,8 @@ ht-degree: 0%
    這對希望實現更自動化流程的客戶非常有用。 可用的選項包括：
 
    * **每次詢問** -這是預設設定，需要手動干預任何重要故障。
-   * **立即失敗** -如果選中此選項，當出現「重要」(Impertient)故障時，管線將被取消。這實際上是模擬使用者手動拒絕每個失敗。
-   * **立即繼續** -如果選中此選項，當出現「重要」(Importent)故障時，管線將自動繼續。這實際上是在模擬用戶手動批准每個故障。
+   * **立即取消** -如果選中此選項，則每當出現「重要」(Impertient)故障時，管線將被取消。這實際上是模擬使用者手動拒絕每個失敗。
+   * **立即批准** -如果選中此選項，當出現「重要」(Importent)故障時，管線將自動繼續。這實際上是在模擬用戶手動批准每個故障。
 
 
 1. 生產管線設定包含標示為&#x200B;**體驗稽核**&#x200B;的第三個標籤。 此選項提供應一律包含在「體驗稽核」中的URL路徑表格。
