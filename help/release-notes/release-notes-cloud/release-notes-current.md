@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
+source-git-commit: ebd2e870255dc0a62a4369e0eead9f6981856746
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1704'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,8 @@ ht-degree: 2%
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ## [!DNL Assets] {#what-is-new-assets}的新增功能
+
+* [!DNL Experience Manager Assets] as  [!DNL Cloud Service] a有權擁有預先配置的實 [!DNL Brand Portal] 例。[!DNL Cloud Manager]使用者可以在[!DNL Experience Manager Assets]上啟動[!DNL Brand Portal]作為[!DNL Cloud Service]。 請參閱[啟用品牌入口網站](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en)。
 
 * 企業現在可以使用[!DNL Brand Portal]來源資產。 資產來源搜尋功能運用[!DNL Brand Portal]，協助客戶與代理商使用者互動，為新的行銷宣傳、攝影和專案搜尋資產。 請參閱 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)中的[資產來源補充。
 
