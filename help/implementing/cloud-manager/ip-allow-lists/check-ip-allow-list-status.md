@@ -2,7 +2,7 @@
 title: 檢查IP允許清單狀態
 description: 檢查IP允許清單狀態
 translation-type: tm+mt
-source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
+source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -49,8 +49,7 @@ ht-degree: 0%
 >[!NOTE]
 >若要查看並管理預先存在的組態，必須透過UI加入。 有關詳細資訊，請參閱[添加IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
 
