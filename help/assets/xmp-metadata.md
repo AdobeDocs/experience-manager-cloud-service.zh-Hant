@@ -3,9 +3,9 @@ title: XMP 中繼資料
 description: 瞭解中繼資XMP料管理的（可擴充中繼資料平台）中繼資料標準。 它被用AEM作建立、處理和交換中繼資料的標準格式。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
+source-git-commit: c3da535db4bf2b0f71e338f542d388437d6c1623
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '979'
 ht-degree: 16%
 
 ---
@@ -72,7 +72,10 @@ XMP最常是使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium
 
 ## XMP回寫至轉譯{#xmp-writeback-to-renditions}
 
-&lt;a0/XMP>中的此回寫功能會將中繼資料變更複製到原始資產的轉譯。 [!DNL Adobe Experience Manager Assets]當您從[!DNL Assets]中變更資產的中繼資料，或在上傳資產時，這些變更最初會儲存在儲存庫的資產節點中。 不過，[!DNL Assets]不會自動將任何中繼資料變更傳播至資產的轉譯。 回寫功XMP能可讓您將中繼資料變更傳播至資產的所有或特定轉譯。 更新會儲存在資產階層的中繼資料節點中。 此功能也會將更新內嵌在轉譯的二進位檔案中。 此功能僅會回寫使用`jcr`命名空間的中繼資料屬性。
+&lt;a0/XMP>中的此回寫功能會將中繼資料變更複製到原始資產的轉譯。
+[!DNL Adobe Experience Manager Assets]當您從「資產」中變更資產的中繼資料，或在上傳資產時，這些變更最初會儲存在資產階層的中繼資料節點中。
+
+回寫功XMP能可讓您將中繼資料變更傳播至資產的所有或特定轉譯。 該功能僅回寫那些使用`jcr`命名空間的元資料屬性，即，將回寫名為`dc:title`的屬性，但不回寫名為`mytitle`的屬性。
 
 例如，假設您將`Classic Leather`資產的[!UICONTROL Title]屬性修改為`Nylon`的藍本。
 
