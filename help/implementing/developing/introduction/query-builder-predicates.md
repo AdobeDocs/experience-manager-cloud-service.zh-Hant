@@ -2,10 +2,10 @@
 title: Query Builder Predicate Reference
 description: 查詢產生器API的謂詞參考。
 translation-type: tm+mt
-source-git-commit: 90b635cb31af910e08bdee7925cec0c7beb05318
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '2221'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -178,7 +178,7 @@ group.2_group.type=dam:Asset
 
 ### 語言 {#language}
 
-此謂語尋找特定語言的AEM頁面。 這會查看頁面語言屬性和頁面路徑，這些路徑通常包含頂層網站結構中的語言或地區設定。
+此謂語會尋找AEM特定語言的頁面。 這會查看頁面語言屬性和頁面路徑，這些路徑通常包含頂層網站結構中的語言或地區設定。
 
 這是僅限篩選的謂語，無法運用搜尋索引。
 
@@ -202,7 +202,7 @@ group.2_group.type=dam:Asset
 
 ### {#memberof}的成員
 
-此謂語會尋找屬於特定[sling resource collection](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)成員的項目。
+此謂語會尋找屬於特定[sling resource collection](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html)成員的項目。
 
 這是僅限篩選的謂語，無法運用搜尋索引。
 
@@ -297,7 +297,7 @@ group.2_group.type=dam:Asset
 例如：
 
 * `upperBound=1h` (且無 `lowerBound`)在下一小時內選取任何項目
-* `lowerBound=-1d` (且無 `upperBound`)在過去24小時內選擇任何項目
+* `lowerBound=-1d` (且無 `upperBound`)在過去24小時內選取任何項目
 * `lowerBound=-6M` 在 `upperBound=-3M` 過去3到6個月裡選擇任何
 * `lowerBound=-1500` 並選 `upperBound=5500` 擇1500毫秒到5500毫秒之間的任意選項
 * `lowerBound=1d` 然後 `upperBound=2d` 在後天選擇任何東西
