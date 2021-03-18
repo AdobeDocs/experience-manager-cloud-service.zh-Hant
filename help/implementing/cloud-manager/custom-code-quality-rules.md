@@ -2,9 +2,9 @@
 title: 自訂代碼品質規則-Cloud Services
 description: 自訂代碼品質規則-Cloud Services
 translation-type: tm+mt
-source-git-commit: 78d9c1345ed0642f7cb493a50ff117c5fad7632a
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3299'
+source-wordcount: '3278'
 ht-degree: 4%
 
 ---
@@ -747,7 +747,7 @@ OSGi配置`com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl`定義了中的�
 
 **自**:2021.2.0版
 
-用戶AEM端程式庫可能包含靜態資源，例如影像和字型。 如[使用預處理器](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors)中所述，在使用預處理器客戶端庫時，這些靜態資源必須包含在名為resources的子資料夾中，以便在發佈實例上有效地引用。
+用戶AEM端程式庫可能包含靜態資源，例如影像和字型。 如[使用預處理器](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)中所述，在使用預處理器客戶端庫時，這些靜態資源必須包含在名為resources的子資料夾中，以便在發佈實例上有效地引用。
 
 #### 不符合代碼{#non-compliant-proxy-enabled}
 
@@ -793,7 +793,7 @@ OSGi配置`com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl`定義了中的�
 
 **自**:2021.2.0版
 
-雖然靜態範本的使用在專案中很常見，但強烈建議使用可編輯AEM的範本，因為這些範本可提供最大的彈性，並支援靜態範本中未顯示的其他功能。 如需詳細資訊，請參閱[頁面範本- Editable](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en)。 從靜態範本移轉至可編輯的範本，可使用[現代化工具AEM](https://opensource.adobe.com/aem-modernize-tools/)大幅自動化。
+雖然靜態範本的使用在專案中很常見，但強烈建議使用可編輯AEM的範本，因為這些範本可提供最大的彈性，並支援靜態範本中未顯示的其他功能。 如需詳細資訊，請參閱[頁面範本。](/help/implementing/developing/components/templates.md) 從靜態範本到可編輯範本的移轉，可使用「現代化工具」 [AEM大幅自動化](https://opensource.adobe.com/aem-modernize-tools/)。
 
 ### OakPAL —— 不建議使用舊版基礎元件{#oakpal-usage-legacy}
 
