@@ -2,10 +2,10 @@
 title: '部署至 AEM as a Cloud Service '
 description: '部署至 AEM as a Cloud Service  '
 translation-type: tm+mt
-source-git-commit: 9c1fc1f1d5b744497673db5e96104d5cf1f570ce
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3229'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 1%
    * 上下文感知配置（`/conf`下的任何內容）（添加、修改、刪除）
    * 指令碼(軟體包可以在軟體包安裝過程中的各個階段觸發安裝掛接
 
-可將可變內容安裝限制為製作或發佈，方法是將套件內嵌在`/apps`下的install.author或install.publish資料夾中。 有關建議的項目重組的詳細資訊，請參AEM閱[文檔](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)。
+可將可變內容安裝限制為製作或發佈，方法是將套件內嵌在`/apps`下的install.author或install.publish資料夾中。 在6.5中進行了重組，以反映AEM這一分離情況，建議的項目重組細節可在[AEM 6.5文檔中找到。](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >內容包部署到所有環境類型(dev、stage、prod)。 無法將部署限制在特定環境。 此限制是為了確保自動執行測試執行的選項。 特定於環境的內容需要通過Package Manager手動安裝。
@@ -111,7 +111,7 @@ ht-degree: 1%
 
 所有包含的第三方軟體包都必須經過驗證AEM為與Cloud Service服務相容，否則其包含將導致部署失敗。
 
-如上所述，現有代碼庫的客戶應遵守[文檔](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html)中介紹的資AEM料庫重構練習。
+如上所述，現有代碼庫的客戶應符合[AEM 6.5文檔中描述的6.5儲存庫更改所需的儲存庫重構練習。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 ## 重新指向{#repoinit}
 
