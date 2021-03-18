@@ -2,10 +2,10 @@
 title: 配置翻譯整合框架
 description: 瞭解如何配置翻譯整合框架以與第三方翻譯服務整合。
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,6 @@ ht-degree: 1%
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [阿爾特朗](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 
 在安裝連接器套件後，您可以為連接器建立雲端組態。 通常，您需要提供認證，以便向翻譯服務進行驗證。 有關為Microsoft Translator連接器添加雲配置的資訊，請參閱[與Microsoft Translator整合](connect-ms-translator.md)。
 
