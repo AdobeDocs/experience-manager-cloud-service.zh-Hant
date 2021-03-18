@@ -1,20 +1,20 @@
 ---
-title: 建立標籤至AEM應用程式
-description: 以程式設計方式在自訂AEM應用程式中處理標籤或擴充標籤
+title: 在應用程式中建AEM立標籤
+description: 以程式設計方式在自訂應用程式中處理標籤或擴充標AEM記
 translation-type: tm+mt
-source-git-commit: ce55065c3ae6a2350ed06811af76477df7c11291
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# 建立標籤至AEM應用程式{#building-tagging-into-aem-applications}
+# 在應用程AEM式中建立標籤{#building-tagging-into-aem-applications}
 
-為了以程式設計方式處理自訂AEM應用程式中的標籤或擴充標籤，本檔案說明
+為了以程式設計方式處理自訂應用程式中的標籤或擴充AEM標籤，本檔案說明
 
-* [標籤API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html)
+* [標籤API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)
 
 與
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 標籤API {#overview-of-the-tagging-api}概述
 
-在AEM中實施[標籤架構](tagging-framework.md)可讓您使用JCR API管理標籤和標籤內容。 `TagManager` 確保在字串陣列屬性中輸入的 `cq:tags` 標籤不會重複，它會移除指 `TagID`向非現有標籤的標籤，以及移 `TagID`動或合併標籤的更新。`TagManager` 使用JCR觀察偵聽器來恢復任何不正確的更改。主類位於[com.day.cq.tating](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html)軟體包中：
+在中實施[標籤框架](tagging-framework.md)AEM允許使用JCR API管理標籤和標籤內容。 `TagManager` 確保在字串陣列屬性中輸入的 `cq:tags` 標籤不會重複，它會移除指 `TagID`向非現有標籤的標籤，以及移 `TagID`動或合併標籤的更新。`TagManager` 使用JCR觀察偵聽器來恢復任何不正確的更改。主類位於[com.day.cq.tating](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)軟體包中：
 
 * `JcrTagManagerFactory` -返回基於JCR的實施 `TagManager`。這是標籤API的參考實作。
 * `TagManager` -允許依路徑和名稱來解析和建立標籤。
@@ -143,18 +143,18 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 伺服器端API已本地化`title`相關方法：
 
-* [`com.day.cq.tagging.Tag`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [`com.day.cq.tagging.Tag`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
    * `getLocalizedTitlePaths()`
    * `getLocalizedTitles()`
    * `getTitle(Locale locale)`
    * `getTitlePath(Locale locale)`
-* [`com.day.cq.tagging.TagManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [`com.day.cq.tagging.TagManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
    * `canCreateTagByTitle(String tagTitlePath, Locale locale)`
    * `createTagByTitle(String tagTitlePath, Locale locale)`
    * `resolveByTitle(String tagTitlePath, Locale locale)`
 
-在AEM中，語言可從頁面語言或使用者語言取得。
+在中AEM，語言可從頁面語言或使用者語言取得。
 
 對於標籤，本地化取決於上下文，因為標籤`titles`可以以頁面語言、用戶語言或任何其他語言顯示。
 
@@ -169,4 +169,4 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 >[!NOTE]
 >
->新語言必須是AEM認可的語言之一，即它必須是`/libs/wcm/core/resources/languages`下方的節點。
+>新語言必須是其中一AEM種公認的語言，即它必須作為`/libs/wcm/core/resources/languages`下的節點提供。
