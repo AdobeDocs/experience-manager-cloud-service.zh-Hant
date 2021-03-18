@@ -1,10 +1,10 @@
 ---
 title: Implementing a Custom Predicate Evaluator for the Query Builder
-description: AEM中的Query Builder提供簡單、可自訂的方式來查詢內容儲存庫
+description: Query Builder提供了一AEM種簡單、可自訂的方式來查詢內容儲存庫
 translation-type: tm+mt
-source-git-commit: 21a0e6967a17ea30435d0343c4aa497f54134cda
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 概覽 {#overview}
 
-[查詢產生器](query-builder-api.md)提供了查詢內容儲存庫的簡單方法。 AEM隨附[一組謂語求值器](#query-builder-predicates.md)，可協助您查詢資料。
+[查詢產生器](query-builder-api.md)提供了查詢內容儲存庫的簡單方法。 隨附AEM[一組謂語求值器](#query-builder-predicates.md)，可協助您查詢資料。
 
 但是，您可能希望通過實施自定義謂詞求值器來簡化查詢，該求值器隱藏某些複雜性並確保更好的語義。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->有關`PredicateEvaluator`和`com.day.cq.search`軟體包的詳細資訊，請參閱[ Java文檔](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/search/package-summary.html)。
+>有關`PredicateEvaluator`和`com.day.cq.search`軟體包的詳細資訊，請參閱[ Java文檔](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html?com/day/cq/search/package-summary.html)。
 
 ### Implementing a Custom Predicate Evaluator for Replication Metadata {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -101,7 +101,7 @@ replic.action=Activate
 
 >[!TIP]
 >
->WKND教學課程[詳細說明新AEM專案的設定，包括使用maven。](develop-wknd-tutorial.md)
+>WKND教學課程[詳細說AEM明瞭包括使用maven在內的新項目的設定。](develop-wknd-tutorial.md)
 
 首先，您需要更新專案的Maven相依性。 `PredicateEvaluator`是`cq-search`對象的一部分，因此需要將其添加到Maven pom檔案中。
 
@@ -132,7 +132,7 @@ replic.action=Activate
 
 >[!NOTE]
 >
->下列程式說明如何建立`Xpath`運算式來篩選資料。 另一個選項是實施`includes`方法，該方法以行為基礎選擇資料。 如需詳細資訊，請參閱[Java檔案](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29)。
+>下列程式說明如何建立`Xpath`運算式來篩選資料。 另一個選項是實施`includes`方法，該方法以行為基礎選擇資料。 如需詳細資訊，請參閱[Java檔案](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。
 
 1. 建立擴展`com.day.cq.search.eval.AbstractPredicateEvaluator`的新Java類
 1. 使用[統一比較格式](https://en.wikipedia.org/wiki/Diff#Unified_format)中顯示的`@Component`類別程式碼片段為類別加上註解
@@ -159,7 +159,7 @@ replic.action=Activate
    >
    >`PredicateEvaluator`的名稱是謂語名稱，用於構建查詢。
 
-1. 覆寫：
+1. 覆寫:
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
