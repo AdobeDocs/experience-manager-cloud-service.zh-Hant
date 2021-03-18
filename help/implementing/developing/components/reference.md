@@ -2,23 +2,23 @@
 title: 元件參考指南
 description: 元件及其結構詳細資訊的開發人員參考指南
 translation-type: tm+mt
-source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
+source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
 workflow-type: tm+mt
-source-wordcount: '3720'
-ht-degree: 0%
+source-wordcount: '3675'
+ht-degree: 1%
 
 ---
 
 
 # 元件參考指南{#components-reference-guide}
 
-元件是建立AEM體驗的核心。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)讓您輕鬆開始使用一組現成、強穩的元件。 [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)教學課程會引導開發人員瞭解如何使用這些工具以及如何建立自訂元件以建立新的AEM網站。
+元件是建立體驗的核心AEM。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)和[AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)讓您輕鬆開始使用現成、強穩的元件工具集。 [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)教學課程會引導開發人員瞭解如何使用這些工具以及如何建立自訂元件以建立新網AEM站。
 
 >[!TIP]
 >
->在參考本檔案之前，請確定您已完成[WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)，因此熟悉[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[AEM Project Archetype。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+>在參考本文檔之前，請確定您已完成[WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)，因此熟悉[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[AEM Project Archetype。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 
-由於WKND教學課程涵蓋大部分的使用案例，本檔案僅作為這些資源的補充。 它提供有關元件在AEM中如何結構化和設定的深入技術細節，並非做為快速入門手冊。
+由於WKND教學課程涵蓋大部分的使用案例，本檔案僅作為這些資源的補充。 它提供了有關元件結構和配置方式的深入技術細節，AEM並非作為入門指南。
 
 ## 概覽 {#overview}
 
@@ -60,17 +60,17 @@ ht-degree: 0%
 
 建議將負責標籤和轉換的代碼與控制用於選擇元件內容的邏輯的代碼分開。
 
-[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)支援此理念，該模板語言被特意限制以確保使用真正的寫程式語言來定義底層業務邏輯。 此機制會反白標示為特定檢視所呼叫的程式碼，並視需要允許相同元件不同檢視的特定邏輯。
+[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)支援此理念，該模板語言被特意限制以確保使用真正的寫程式語言來定義底層業務邏輯。 此機制會反白標示為特定檢視所呼叫的程式碼，並視需要允許相同元件不同檢視的特定邏輯。
 
 此（選用）邏輯可以不同的方式實作，並可從HTL以特定命令叫用：
 
 * 使用Java - [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html)可讓HTL檔案存取自訂Java類別中的輔助方法。 這可讓您使用Java程式碼來實作邏輯，以選取和設定元件內容。
 * 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html)可讓HTL檔案存取以JavaScript編寫的輔助程式碼。 這可讓您使用JavaScript程式碼來實作邏輯，以選取和設定元件內容。
-* 使用用戶端程式庫——現代網站嚴重依賴由複雜JavaScript和CSS程式碼驅動的用戶端處理。 如需詳細資訊，請參閱檔案[「在AEM上使用用戶端程式庫做為雲端服務」。](/help/implementing/developing/introduction/clientlibs.md)
+* 使用用戶端程式庫——現代網站嚴重依賴由複雜JavaScript和CSS程式碼驅動的用戶端處理。 如需詳細資訊，請參閱檔案[將用戶端程式AEM庫當做Cloud Service](/help/implementing/developing/introduction/clientlibs.md)。
 
 ## 元件結構{#structure}
 
-AEM元件的結構強大而有彈性。 主要部分有：
+本發明結構AEM強大、靈活。 主要部分有：
 
 * [資源類型](#resource-type)
 * [元件定義](#component-definition)
@@ -91,10 +91,10 @@ AEM元件的結構強大而有彈性。 主要部分有：
 
 元件的定義可以按如下方式劃分：
 
-* AEM元件是以[Sling.](https://sling.apache.org/documentation.html)為基礎
-* AEM元件位於`/libs/core/wcm/components`下方。
+* 元AEM件是以[Sling.](https://sling.apache.org/documentation.html)為基礎
+* 元AEM件位於`/libs/core/wcm/components`下。
 * 項目／站點特定元件位於`/apps/<myApp>/components`下。
-* AEM標準元件定義為`cq:Component`，並具有關鍵元素：
+* AEM標準元件定義為`cq:Component`，並具有以下關鍵元素：
    * jcr屬性-jcr屬性的清單。 這些是變數，雖然元件節點的基本結構、其屬性和子節點由`cq:Component`定義定義，但有些是可選的。
    * 資源——這些定義元件使用的靜態元素。
    * 指令碼——這些指令碼用於實作元件產生例項的行為。
@@ -118,7 +118,7 @@ AEM元件的結構強大而有彈性。 主要部分有：
 
 當開發人員建立元件時，元件的圖示或縮寫會透過元件的JCR屬性來定義。 這些屬性依下列順序計算，並使用第一個找到的有效屬性。
 
-1. `cq:icon` -指向 [Coral UI程式庫中標準圖示的字串屬](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 性，以顯示在元件瀏覽器中
+1. `cq:icon` -指向 [Coral UI程式庫中標準圖示的字串屬](https://opensource.adobe.com/coral-spectrum/examples/#icon) 性，以顯示在元件瀏覽器中
    * 使用Coral圖示的HTML屬性值。
 1. `abbreviation` -字串屬性，用於自定義元件瀏覽器中元件名稱的縮寫
    * 縮寫應限制為兩個字元。
@@ -182,7 +182,7 @@ AEM元件的結構強大而有彈性。 主要部分有：
 | `component.html` | `nt:file` | 這是元件的HTL指令檔。 |
 | `cq:icon` | `String` | 此值指向元件](#component-icon)的[表徵圖，並顯示在元件瀏覽器中。 |
 
-如果我們查看&#x200B;**Text**&#x200B;元件，我們可以看到以下幾個元素：
+如果我們查看&#x200B;**Text**&#x200B;元件，我們可以看到以下一些元素：
 
 ![文字元件結構](assets/components-text.png)
 
@@ -204,7 +204,7 @@ AEM元件的結構強大而有彈性。 主要部分有：
 
 視元件的複雜性而定，您的對話方塊可能需要一個或多個標籤。
 
-AEM元件的對話方塊：
+元件的對AEM話方塊：
 
 * 是`cq:dialog`類型`nt:unstructured`的節點。
 * 位於其`cq:Component`節點下方，並位於其元件定義旁。
@@ -228,24 +228,22 @@ AEM元件的對話方塊：
 
 ### Coral UI和Granite UI {#coral-and-granite}
 
-Coral UI和Granite UI可定義AEM的外觀和感覺。
+Coral UI和Granite UI定義外觀和感覺AEM。
 
-* [Coral ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) UI在所有雲端解決方案中提供一致的UI。
+* [Coral ](https://opensource.adobe.com/coral-spectrum/documentation/) UI在所有雲端解決方案中提供一致的UI。
 * [Granite ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) UI提供Coral UI標籤，並封裝在Sling元件中，以建立UI主控台和對話方塊。
 
 Granite UI提供在製作環境上建立對話方塊所需的各種基本Widget。 如有需要，您可以延伸此選取範圍並建立您自己的介面工具集。
 
 如需詳細資訊，請參閱下列資源：
 
-* [Coral UI指南](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
-* [Granite UI檔案](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
-* [AEM UI的結構](/help/implementing/developing/introduction/ui-structure.md)
+* [UI的結AEM構](/help/implementing/developing/introduction/ui-structure.md)
 
 ### 自定義對話框欄位{#customizing-dialog-fields}
 
 >[!TIP]
 >
->請參閱「自訂對話方塊欄位」的[AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)。
+>有關自定義對話框欄位，請參AEM閱[ Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)。
 
 若要建立新介面工具集以用於元件對話方塊，您必須建立新的Granite UI欄位元件。
 
@@ -298,7 +296,7 @@ Granite UI提供在製作環境上建立對話方塊所需的各種基本Widget�
 
 ## 元件層次和繼承{#component-hierarchy-and-inheritance}
 
-AEM中的元件受&#x200B;**資源類型階層**&#x200B;的規範。 這用於使用屬性`sling:resourceSuperType`擴展元件。 這可讓元件繼承其他元件。
+中的AEM元件受&#x200B;**資源類型層次結構**&#x200B;的約束。 這用於使用屬性`sling:resourceSuperType`擴展元件。 這可讓元件繼承其他元件。
 
 如需詳細資訊，請參閱[重複使用元件](#reusing-components)一節。
 
@@ -314,7 +312,7 @@ AEM中的元件受&#x200B;**資源類型階層**&#x200B;的規範。 這用於�
    * `cq:inplaceEditing` (節點類 `cq:InplaceEditingConfig`型):定義元件的就地編輯配置
    * `cq:listeners` (節點類 `cq:EditListenersConfig`型):定義在元件上執行動作之前或之後發生的動作
 
-AEM中有許多現有的設定。 使用&#x200B;**CRXDE Lite**&#x200B;中的查詢工具，可以輕鬆地搜索特定屬性或子節點。
+中有許多現有的配置AEM。 使用&#x200B;**CRXDE Lite**&#x200B;中的查詢工具，可以輕鬆搜索特定屬性或子節點。
 
 ### 元件佔位符{#component-placeholders}
 
@@ -389,7 +387,7 @@ AEM中有許多現有的設定。 使用&#x200B;**CRXDE Lite**&#x200B;中的查�
 * 將您的欄位標示為指定的CSS類別（勾選）。
 * 在用戶端程式庫中定義連結該CSS類別名稱的JS接聽程式（這可確保您的自訂邏輯僅限於您的欄位，而不會影響同類型的其他欄位）。
 
-若要達成此目的，您必須瞭解您要與之互動的基礎Widget程式庫。 [請參閱Coral UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) 檔案，以識別您要回應的事件。
+若要達成此目的，您必須瞭解您要與之互動的基礎Widget程式庫。 [請參閱Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) 檔案，以識別您要回應的事件。
 
 `cq:listeners`節點（節點類型`cq:EditListenersConfig`）定義在元件上執行操作之前或之後會發生什麼。 下表定義了其可能的屬性。
 
@@ -406,7 +404,7 @@ AEM中有許多現有的設定。 使用&#x200B;**CRXDE Lite**&#x200B;中的查�
 | `aftercopy` | 在複製元件後觸發處理程式。 |
 | `afterinsert` | 在插入元件後觸發處理程式。 |
 | `aftermove` | 在移動元件後觸發處理程式。 |
-| `afterchildinsert` | 在將元件插入其他元件（僅限容器）後，就會觸發處理常式。 |
+| `afterchildinsert` | 在將元件插入另一個元件（僅限容器）後，就會觸發處理常式。 |
 
 >[!NOTE]
 >
@@ -449,7 +447,7 @@ AEM中有許多現有的設定。 使用&#x200B;**CRXDE Lite**&#x200B;中的查�
 
 ## 預覽行為{#preview-behavior}
 
-在切換至「預覽」模式時，即使頁面未重新整理，也會設定[WCM模式](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie。
+在切換至「預覽」模式時，即使頁面未重新整理，也會設定[WCM模式](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie。
 
 對於具有對WCM模式敏感的轉譯元件，需要定義這些元件，以明確重新整理它們，然後依賴Cookie的值。
 
