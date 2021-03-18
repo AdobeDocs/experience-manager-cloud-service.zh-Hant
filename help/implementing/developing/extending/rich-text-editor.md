@@ -1,11 +1,11 @@
 ---
-title: 設定Rich Text Editor，將 [!DNL Adobe Experience Manager] 中的內容製作為雲端服務。
-description: 設定Rich Text Editor，將 [!DNL Adobe Experience Manager] 中的內容製作為雲端服務。
+title: 設定Rich Text Editor，將 [!DNL Adobe Experience Manager] 中的內容製作為Cloud Service。
+description: 設定Rich Text Editor，將 [!DNL Adobe Experience Manager] 中的內容製作為Cloud Service。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1969'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 配置富格文本編輯器{#configure-the-rich-text-editor}
 
-富格文本編輯器(RTE)為作者提供了多種編輯文本內容的功能。 提供圖示、選擇方塊、工具列和選單，以提供WYSIWYG文字編輯體驗。 管理員將RTE配置為啟用、禁用和擴展編寫元件中可用的功能。 瞭解作者如何使用RTE編寫[網頁內容。](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+富格文本編輯器(RTE)為作者提供了多種編輯文本內容的功能。 提供圖示、選擇方塊、工具列和選單，以提供WYSIWYG文字編輯體驗。 管理員將RTE配置為啟用、禁用和擴展編寫元件中可用的功能。 瞭解作者如何使用RTE編寫](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)網頁內容。[
 
 下面列出了配置RTE的概念和所需步驟。
 
@@ -287,5 +287,4 @@ RTE中的可用選項從用戶介面配置到內容策略的下游。
 >* [配置RTE插件](configure-rich-text-editor-plug-ins.md)
 >* [使用Rich Text Editor進行編寫](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [為可訪問站點配置RTE](rte-accessible-content.md)
->* [建立複合多欄位元件的教學課程範例](https://experience-aem.blogspot.com/2019/05/aem-65-touchui-composite-multifield-with-coral3-rte-rich-text.html)
 
