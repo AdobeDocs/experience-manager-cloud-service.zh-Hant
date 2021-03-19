@@ -1,10 +1,12 @@
 ---
 title: 互動式影像
 description: 瞭解如何在Dynamic Media使用互動式影像。
+feature: 互動影像
+topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4245'
+source-wordcount: '4249'
 ht-degree: 1%
 
 ---
