@@ -1,10 +1,12 @@
 ---
 title: 連接到Microsoft Translator
 description: 瞭解如AEM何立即連接至Microsoft Translator以自動化您的翻譯工作流程。
+feature: 語言副本
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 5902e026c47aac0c1ea62a2b74be6109b216fb74
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
