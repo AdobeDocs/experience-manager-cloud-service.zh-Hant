@@ -1,13 +1,14 @@
 ---
 title: Dynamic Media 無障礙內容
-description: 瞭解動態媒體和動態媒體檢視器中的協助功能。
+description: 瞭解Dynamic Media和Dynamic Media檢視器的協助功能。
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
+topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '613'
 ht-degree: 1%
 
 ---
@@ -15,13 +16,13 @@ ht-degree: 1%
 
 # Dynamic Media 無障礙內容 {#accessibility-in-dm}
 
-Dynamic Media跨製作使用者介面支援鍵盤控制和輔助技術，例如JAWS和NVDA螢幕閱讀程式。
+Dynamic Media支援鍵盤控制和輔助技術，例如JAWS和NVDA螢幕閱讀程式，可跨製作使用者介面使用。
 
-## 動態媒體{#keyboard-support-in-dm}中的鍵盤協助功能支援
+## Dynamic Media{#keyboard-support-in-dm}的鍵盤協助功能支援
 
-由於Dynamic Media是Experience Manager Assets的外掛程式，因此大部份的鍵盤控制行為都與Experience Manager Assets相同。 例如，動態媒體中的`Cancel`按鈕與Experience Manager Assets中的焦點反白顯示相同。 它也會對`Spacebar`鍵產生反應，如Experience Manager Assets中。 請參閱Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[鍵盤快速鍵。
+由於Dynamic Media是Experience Manager資產的外掛程式，因此大部份的鍵盤控制行為都與Experience Manager資產相同。 例如，Dynamic Media的`Cancel`按鈕與「Experience Manager資產」中的焦點反白顯示相同。 它也會對`Spacebar`鍵產生反應，如Experience Manager資產中。 請參閱Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[鍵盤快速鍵。
 
-動態媒體中個別使用者介面元素支援的按鍵輸入，在大多數情況下都十分明顯，而且容易找到。 動態媒體中的鍵盤控制項如下：
+在大多數情況下，由Dynamic Media的單個用戶介面元素支援的按鍵操作是顯而易見的，而且易於查找。 Dynamic Media的鍵盤控制項如下：
 
 * 能夠使用`Tab`和`Shift+Tab`鍵擊，在頁面上的互動元素之間導航。
 使用`Tab`將輸入焦點提前到Tabbing順序中的下一個用戶介面元素；使用`Shift+Tab`將輸入焦點重新帶回先前的使用者介面元素。
@@ -44,23 +45,23 @@ Dynamic Media跨製作使用者介面支援鍵盤控制和輔助技術，例如J
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## 動態媒體中的輔助技術支援{#assistive-technology=support-for-dm}
+## Dynamic Media的輔助技術支援{#assistive-technology=support-for-dm}
 
-動態媒體使用者介面元素可與輔助技術搭配使用，例如螢幕閱讀程式。 例如，當您使用鍵盤快速鍵`D`導覽標誌時，它會識別頁面上的標誌，或使用鍵盤快速鍵`R`導覽區域。 它也會在使用標題鍵盤快速鍵`H`導覽時旁白標題。
+Dynamic Media的使用者介面元素可與輔助技術搭配使用，例如螢幕閱讀器。 例如，當您使用鍵盤快速鍵`D`導覽標誌時，它會識別頁面上的標誌，或使用鍵盤快速鍵`R`導覽區域。 它也會在使用標題鍵盤快速鍵`H`導覽時旁白標題。
 
-## 動態媒體檢視器中的鍵盤協助功能支援{#keyboard-accessibility-for-dm-viewers}
+## Dynamic Media查看器的鍵盤輔助功能支援{#keyboard-accessibility-for-dm-viewers}
 
-所有現成可用的動態媒體檢視器元件都支援為客戶提供鍵盤協助功能。
+所有現成可用的Dynamic Media檢視器元件都支援為客戶提供鍵盤協助功能。
 
-請參閱動態媒體檢視器參考指南中的[鍵盤協助功能和導覽](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
+請參閱《Dynamic Media檢視器參考指南》中的[鍵盤協助功能和導覽](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
-## 動態媒體檢視器中的輔助技術支援{#assistive-technology=support-for-dm-viewers}
+## Dynamic Media檢視器中的輔助技術支援{#assistive-technology=support-for-dm-viewers}
 
 所有Dynamic Media檢視器元件都支援ARIA（可存取的Rich Internet Applications）角色和屬性，以改善與輔助技術（例如螢幕閱讀器）的整合。
-請參閱動態媒體檢視器參考指南中任何自訂檢視器主題的**輔助技術支援**&#x200B;說明主題。 例如，請參閱視頻查看器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html)或互動式影像查看器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only)。
+請參閱《Dynamic Media檢視器參考指南》中任何自訂檢視器主題的**輔助技術支援**&#x200B;說明主題。 例如，請參閱視頻查看器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html)或互動式影像查看器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only)。
 
 >[!MORELIKETHIS]
 >
 >* [Adobe解決方案的協助功能](https://www.adobe.com/accessibility.html)
->* [Experience Manager Assets中的協助功能](/help/assets/dynamic-media/accessibility-dm.md)
+>* [Experience Manager資產中的協助功能](/help/assets/dynamic-media/accessibility-dm.md)
 
