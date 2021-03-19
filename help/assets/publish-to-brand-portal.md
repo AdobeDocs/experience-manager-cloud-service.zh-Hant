@@ -2,11 +2,13 @@
 title: 將資產、資料夾和集合發佈至 Brand Portal
 description: 將資產、資料夾和集合發佈至 Brand Portal。
 contentOwner: Vishabh Gupta
+feature: 品牌入口網站
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 100%
+source-wordcount: '1164'
+ht-degree: 99%
 
 ---
 
