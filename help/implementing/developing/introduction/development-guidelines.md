@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發方針
 description: AEM as a Cloud Service 開發方針
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: ce797518714a4919bcdb6187aeaaf35dd1cb76b4
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2283'
 ht-degree: 1%
 
 ---
@@ -128,7 +128,7 @@ Adobe建議使用提供的[Apache HttpComponents客戶端4.x庫](https://hc.apac
 
 對於本端開發，開發人員可完整存取CRXDE Lite(`/crx/de`)AEM和Web主控台(`/system/console`)。
 
-請注意，在本機開發（使用雲就緒快速入門）中，`/apps`和`/libs`可直接寫入，這與那些頂級資料夾不可變的雲環境不同。
+請注意，在本機開發（使用SDK）中，`/apps`和`/libs`可直接寫入，這與不可變的雲端環境不同。
 
 ### 作AEM為Cloud Service開發工具{#aem-as-a-cloud-service-development-tools}
 
