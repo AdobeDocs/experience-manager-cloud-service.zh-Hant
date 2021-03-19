@@ -1,11 +1,13 @@
 ---
 title: 翻譯多語言網站的內容
 description: 概略瞭解如何翻譯多語言網站的內容。
+feature: 語言副本
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 0%
+source-wordcount: '257'
+ht-degree: 1%
 
 ---
 
