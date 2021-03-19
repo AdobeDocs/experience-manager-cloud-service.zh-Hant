@@ -1,11 +1,13 @@
 ---
 title: 配置翻譯整合框架
 description: 瞭解如何配置翻譯整合框架以與第三方翻譯服務整合。
+feature: 語言副本
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1384'
+ht-degree: 1%
 
 ---
 
