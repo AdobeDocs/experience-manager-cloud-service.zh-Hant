@@ -1,10 +1,12 @@
 ---
 title: 整合 Adobe Analytics
 description: '整合 Adobe Analytics '
+feature: 管理
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 76db5314369ca0f854482586d5c96474014a47af
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '541'
 ht-degree: 4%
 
 ---
@@ -12,37 +14,37 @@ ht-degree: 4%
 
 # 整合 Adobe Analytics{#integrating-with-adobe-analytics}
 
-將Adobe Analytics和AEM整合為雲端服務，可讓您追蹤網頁活動。 整合需要：
+將Adobe AnalyticsAEM與Cloud Service整合，讓您追蹤網頁活動。 整合需要：
 
-* 使用Touch UI在AEM中建立Analytics設定作為雲端服務。
-* 在[Adobe Launch](#analytics-launch)中新增及設定Adobe Analytics做為擴充功能。 如需Adobe Launch的詳細資訊，請參閱[本頁](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
+* 使用Touch UI建立Analytics組態AEM做為Cloud Service。
+* 在[AdobeLaunch](#analytics-launch)中添加和配置Adobe Analytics作為擴展。 如需Adobe啟動的詳細資訊，請參閱[本頁](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
-與舊版AEM相比，AEM中的Analytics設定中未提供架構支援（即雲端服務）。 現在可以透過Adobe Launch完成，Adobe Launch是實際工具，可用來使用Analytics功能（JS資料庫）來檢測AEM網站。 在Adobe Launch中，會建立屬性，可在其中設定Adobe Analytics擴充功能，並建立規則以傳送資料至Adobe Analytics。 Adobe Launch已取代sitecatalyst提供的分析工作。
+與舊版相AEM比，Analytics設定中不提供架構支援做為AEMCloud Service。 現在，它是透過Adobe啟動完成，而啟動實際上是利用Analytics功能(JSAEM程式庫)檢測網站的工具。 在「Adobe啟動」中，會建立屬性，可在其中設定Adobe Analytics擴充功能，並建立規則以傳送資料至Adobe Analytics。 Adobe啟動已取代sitecatalyst提供的分析工作。
 
 >[!NOTE]
 >
->Adobe Experience Manager是Cloud Service客戶，如果客戶沒有現有的Analytics帳戶，可以要求存取Analytics Foundation Pack for Experience Cloud。 此Foundation Pack提供Analytics的使用量有限。
+>Adobe Experience Manager是沒有現有Analytics帳戶的Cloud Service客戶，可要求存取Analytics Foundation Pack以進行Experience Cloud。 此Foundation Pack提供Analytics的使用量有限。
 
-## 建立Adobe Analytics設定{#analytics-configuration}
+## 建立Adobe Analytics配置{#analytics-configuration}
 
-1. 導覽至「**工具**」→「**雲端服務**」。
+1. 導覽至&#x200B;**工具** → **Cloud Services**。
 2. 選擇&#x200B;**Adobe Analytics**。
-   ![Adobe Analytics視](assets/analytics_screen2.png "窗Adobe Analytics視窗")
+   ![Adobe Analytics](assets/analytics_screen2.png "視窗Adobe Analytics視窗")
 3. 選擇&#x200B;**建立**&#x200B;按鈕。
 4. 填寫詳細資訊（請參閱下面），然後按一下&#x200B;**Connect**。
 
 ### 配置參數{#configuration-parameters}
 
-「Adobe Analytics設定」視窗中的設定欄位包括：
+「Adobe Analytics配置」窗口中的配置欄位包括：
 
 ![配置參](assets/properties_field1.png "數配置參數")
 
 | 屬性 | 說明 |
 |---|---|
 | 公司 | Adobe Analytics登入公司 |
-| 使用者名稱 | Adobe Analytics API使用者 |
+| 使用者名稱 | Adobe AnalyticsAPI使用者 |
 | 密碼 | 用於驗證的Adobe Analytics密碼 |
-| 資料中心 | 您帳戶所關聯的Adobe Analytics資料中心（例如San Jose, London等伺服器） |
+| 資料中心 | 您帳戶所關聯的Adobe Analytics資料中心（例如，San Jose, London） |
 | 區段 | 使用目前報表套裝中定義之Analytics區段的選項。 Analytics報表會根據區段進行篩選。 如需詳細資訊，請參閱[本頁](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-overview.html)。 |
 | 報表套裝 | 傳送資料和提取報表的儲存庫。 報表套裝會定義所選網站、網站集或網站頁面子集的完整獨立報表。 您可以檢視從單一報表套裝擷取的報表，並可隨時根據您的需求在設定中編輯此欄位。 |
 
@@ -50,9 +52,9 @@ ht-degree: 4%
 
 若要將Touch UI設定套用至網站，請前往：**Sites** → **選擇任何站點頁** → **Properties** → **Advanced** → **Configuration** →選擇配置租用戶。
 
-## 使用Adobe Launch {#analytics-launch}將Adobe Analytics整合在AEM網站上
+## 使用AdobeAEM啟動{#analytics-launch}將Adobe Analytics整合在網站上
 
-Adobe Analytics可新增為Launch屬性中的擴充功能。 可定義規則，以執行對應並對Adobe Analytics進行貼文呼叫：
+Adobe Analytics可以新增為Launch屬性的擴充功能。 可定義規則以執行映射並對Adobe Analytics進行後置調用：
 
 * 觀看[此影片](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html)，瞭解如何在Launch中為基本網站設定Analytics擴充功能。
 
@@ -64,4 +66,4 @@ Adobe Analytics可新增為Launch屬性中的擴充功能。 可定義規則，�
 
 >[!NOTE]
 >
->Launch的IMS設定（技術帳戶）已在AEM中預先設定為雲端服務。 使用者不必建立此設定。
+>Launch的IMS設定（技術帳戶）已預先設定為AEMCloud Service。 使用者不必建立此設定。
