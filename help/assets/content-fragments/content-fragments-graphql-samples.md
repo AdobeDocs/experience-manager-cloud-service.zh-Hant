@@ -1,16 +1,16 @@
 ---
-title: 學習搭配使用GraphQL與AEM —— 範例內容與查詢
-description: 瞭解如何搭配AEM使用GraphQL —— 範例內容與查詢。
+title: 學習如何搭配使用GraphQL AEM —— 範例內容與查詢
+description: 學習搭配使用GraphQL AEM —— 範例內容與查詢。
 translation-type: tm+mt
-source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
+source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1742'
 ht-degree: 5%
 
 ---
 
 
-# 瞭解如何搭配AEM使用GraphQL —— 範例內容與查詢{#learn-graphql-with-aem-sample-content-queries}
+# 學習將GraphQL與AEM-示例內容和查詢{#learn-graphql-with-aem-sample-content-queries}一起使用
 
 >[!NOTE]
 >
@@ -18,10 +18,10 @@ ht-degree: 5%
 >
 >* [內容片段](/help/assets/content-fragments/content-fragments.md)
 >* [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
->* [AEM GraphQL API，用於內容片段](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [與內AEM容片段搭配使用的GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
-若要開始使用GraphQL查詢，以及查詢如何使用AEM內容片段，請參閱一些實用範例。
+要開始使用GraphQL查詢，以及它們如何使用內容AEM片段，查看一些實用示例會有所幫助。
 
 若要協助此項作業，請參閱：
 
@@ -31,7 +31,7 @@ ht-degree: 5%
 
 ## GraphQL for AEM —— 擴展集{#graphql-extensions}摘要
 
-使用GraphQL for AEM對查詢的基本操作符合標準GraphQL規範。 對於具有AEM的GraphQL查詢，有幾個擴充功能：
+使用GraphQL對查詢進行基本操AEM作，以符合標準GraphQL規範。 對於具有以下擴展AEM名的GraphQL查詢：
 
 * 如果您需要單一結果：
    * 使用模型名稱；eg城市
@@ -67,12 +67,14 @@ ht-degree: 5%
          * 請參閱[範例查詢——具有命名變數的所有城市](#sample-cities-named-variation)
    * 及營運：
 
-      * `_operator` :適用特定運算子； `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`
+      * `_operator` :適用特定運算子； `EQUALS`、 `EQUALS_NOT`、 `GREATER_EQUAL`、 `LOWER`、 `CONTAINS`、  `STARTS_WITH`
          * 請參閱[示例查詢——所有名稱不為&quot;Jobs&quot;的人員](#sample-all-persons-not-jobs)
+         * 請參閱[範例查詢——所有`_path`以特定首碼](#sample-wknd-all-adventures-cycling-path-filter)開頭的歷險記
       * `_apply` :適用特定條件；例如，   `AT_LEAST_ONCE`
          * 請參閱[範例查詢——篩選陣列上必須至少發生一次的項目](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` :在查詢時忽略大小寫
          * 請參閱[示例查詢——名稱中包含SAN的所有城市，而不考慮大小寫](#sample-all-cities-san-ignore-case)
+
 
 
 
@@ -93,7 +95,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->根據您的例項，您可以直接存取AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)隨附的[Graph *i* QL介面，以提交和測試查詢。
+>根據您的實例，您可以直接訪問GraphQL APIAEM](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)隨附的[Graph *i* QL介面，以提交和測試查詢。
 >
 >例如：`http://localhost:4502/content/graphiql.html`
 
@@ -653,6 +655,51 @@ query {
         {
           "name": "Caulfield",
           "firstName": "Max"
+        }
+      ]
+    }
+  }
+}
+```
+
+### 範例查詢——所有`_path`開頭為特定首碼{#sample-wknd-all-adventures-cycling-path-filter}的冒險
+
+`_path`開頭為特定首碼(`/content/dam/wknd/en/adventures/cycling`)的所有`adventures`。
+
+**範例查詢**
+
+```xml
+query {
+  adventureList(
+    filter: {
+      _path: {
+        _expressions: [
+        {
+          value: "/content/dam/wknd/en/adventures/cycling"
+         _operator: STARTS_WITH
+        }]
+       }
+    })
+    {
+    items {
+      _path
+    }
+  }
+}
+```
+
+**範例結果**
+
+```xml
+{
+  "data": {
+    "adventureList": {
+      "items": [
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-southern-utah/cycling-southern-utah"
+        },
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-tuscany/cycling-tuscany"
         }
       ]
     }
