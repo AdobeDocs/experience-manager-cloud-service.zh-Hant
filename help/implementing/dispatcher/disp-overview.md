@@ -1,10 +1,11 @@
 ---
 title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
+feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4119'
+source-wordcount: '4120'
 ht-degree: 8%
 
 ---
@@ -14,24 +15,24 @@ ht-degree: 8%
 
 ## Apache和Dispatcher配置和測試{#apache-and-dispatcher-configuration-and-testing}
 
-本節說明如何將AEM架構為雲端服務Apache和Dispatcher組態，以及如何在部署至雲端環境之前在本機驗證並執行它。 此外，也說明在雲端環境中進行除錯。 有關Dispatcher的其他資訊，請參閱[AEM Dispatcher檔案](https://docs.adobe.com/content/help/zh-Hant/experience-manager-dispatcher/using/dispatcher.html)。
+本節介紹如何將Apache和AEMDispatcher配置結構為Cloud Service，以及如何在部署到雲環境之前在本地驗證和運行它。 此外，也說明在雲端環境中進行除錯。 有關Dispatcher的其他資訊，請參見[ AEM Dispatcher文檔](https://docs.adobe.com/content/help/zh-Hant/experience-manager-dispatcher/using/dispatcher.html)。
 
 >[!NOTE]
 >Windows使用者將需要使用Windows 10 Professional或其他支援Docker的散發版本。 這是在本地電腦上運行和調試Dispatcher的先決條件。 以下各節包含使用Mac或Linux版本SDK的命令，但Windows SDK也可以使用類似的方式。
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
-Dispatcher Tools是整體AEM的一部分，做為Cloud Service SDK，並提供：
+Dispatcher Tools是整體的一部分，AEM做為Cloud ServiceSDK，並提供：
 
 * 一種Vanilla檔案結構，其包含要包含在調度程式的Maven項目中的配置檔案。
-* 為客戶提供工具，以驗證分派器組態是否僅包含AEM作為雲端服務支援的指令。        此外，工具也會驗證語法是否正確，以便Apache能成功啟動。
+* 為客戶提供工具，以驗證調度器配置是否僅包AEM含作為Cloud Service支援的指令。        此外，工具也會驗證語法是否正確，以便Apache能成功啟動。
 * 將調度程式本地化的Docker映像。
 
 ## 下載並解壓工具{#extracting-the-sdk}
 
-Dispatcher Tools是[AEM的一部分，是雲端服務SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)，可從[軟體散發](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)入口網站的zip檔案下載。 該新Dispatcher Tools版本中提供的任何新設定都可用來部署至在Cloud或更高版本中執行該AEM版本的Cloud環境。
+Dispatcher Tools是[的一部分，AEM作為Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)，可從[軟體散發](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)入口網站的zip檔案下載。 該新Dispatcher Tools版本中提供的任何新配置都可用於部署到運行該版本的Cloud或更高版本AEM的Cloud環境。
 
-解壓縮SDK，此SDK搭售適用於macOS/Linux和Windows的Dispatcher Tools。
+解壓縮SDK，此SDK搭售Dispatcher Tools，適用於macOS/Linux和Windows。
 
 **對於macOS/Linux**，請使調度器工具對象可執行並運行它。它將自動將Dispatcher Tools檔案解壓到儲存到的目錄下（其中`version`是Dispatcher Tools的版本）。
 
@@ -187,7 +188,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 >[!NOTE]
 >
->AEM（Cloud Service，雲端服務）主要原型將產生相同的分派程式設定檔案結構。
+>作為AEMCloud Service主原型，將生成相同的調度程式配置檔案結構。
 
 以下各節說明如何在本機驗證配置，以便在部署內部版本時，在Cloud Manager中傳遞相關的品質門。
 
@@ -197,7 +198,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 它被調用為：`validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-此工具會以模式`conf.d/enabled_vhosts/*.vhost`掃描所有檔案，以驗證分派程式設定是否使用AEM支援的適當指令做為雲端服務。 通過運行驗證器的allowlist命令，可以列出Apache配置檔案中允許的指令：
+該工具通過掃描模式為`conf.d/enabled_vhosts/*.vhost`的所有檔案來驗證調度器配置是否使用了作為雲AEM服務支援的適當指令。 通過運行驗證器的allowlist命令，可以列出Apache配置檔案中允許的指令：
 
 ```
 $ validator allowlist
@@ -349,7 +350,7 @@ Apache虛擬主機配置中有兩種類型的檔案可指定為包括：重寫�
 
 ## 本地驗證調度程式配置語法，以便apache httpd可以啟動{#local-validation}
 
-在確定分發程式模組配置僅包含受支援指令後，您應檢查語法是否正確，以便Apache能夠啟動。 為了測試此功能，Docker必須安裝在本地。 請注意，AEM不需要執行。
+在確定分發程式模組配置僅包含受支援指令後，您應檢查語法是否正確，以便Apache能夠啟動。 為了測試此功能，Docker必須安裝在本地。 請注意，您不需要執行AEM此動作。
 
 使用`validate.sh`指令碼，如下所示：
 
@@ -376,7 +377,7 @@ Phase 2 finished
 
 1. 它從上一節運行驗證器，以確保僅包含受支援的指令。 如果配置無效，則指令碼將失敗。
 2. 它會執行`httpd -t command`以測試語法是否正確，以便Apache httpd可以啟動。 如果成功，配置應準備好進行部署。
-3. 檢查未修改發送器SDK配置檔案的子集（如[檔案結構部分](#file-structure)所述）。 這是AEM SDK v2021.1.4738版新增的檢查，其中也包含Dispatcher Tools 2.0.36版。在此更新之前，客戶可能錯誤地認為這些不可變檔案的任何本機SDK修改也會套用至雲端環境。
+3. 檢查未修改發送器SDK配置檔案的子集（如[檔案結構部分](#file-structure)所述）。 這是SDK v2021.1.4738版中新推出的檢查，其中也包含Dispatcher Tools 2.0.36版。在此更新之前，客戶可能錯誤地認為這些不可變檔案的任何本機SDK修改也會套用至雲端環境。
 
 在Cloud Manager部署期間，`httpd -t syntax`檢查也會執行，Cloud Manager `Build Images step failure`記錄檔中會包含任何錯誤。
 
@@ -399,7 +400,7 @@ Starting httpd server
 ...
 ```
 
-這會在容器中啟動Dispatcher，其後端會指向在您本機Mac OS機器上執行的AEM例項，埠為4503。
+這會在容器中啟動調度程式，其後端會指向在您本機Mac OSAEM機器上執行的埠4503的例項。
 
 ## 調試Apache和Dispatcher配置{#debugging-apache-and-dispatcher-configuration}
 
@@ -435,7 +436,7 @@ Starting httpd server
 
 ## 每個環境{#different-dispatcher-configurations-per-environment}的不同Dispatcher配置
 
-目前，相同的Dispatcher設定會套用至所有AEM做為雲端服務環境。 運行時將具有環境變數`ENVIRONMENT_TYPE`，其中包含當前運行模式（dev、stage或prod）以及定義。 定義可以是`ENVIRONMENT_DEV`、`ENVIRONMENT_STAGE`或`ENVIRONMENT_PROD`。 在Apache設定中，變數可直接用於運算式中。 或者，可使用定義來建立邏輯：
+此時，同一調度器配置將作為Cloud Service環境應AEM用於所有配置。 運行時將具有環境變數`ENVIRONMENT_TYPE`，其中包含當前運行模式（dev、stage或prod）以及定義。 定義可以是`ENVIRONMENT_DEV`、`ENVIRONMENT_STAGE`或`ENVIRONMENT_PROD`。 在Apache設定中，變數可直接用於運算式中。 或者，可使用定義來建立邏輯：
 
 ```
 # Simple usage of the environment variable
@@ -492,19 +493,19 @@ $ docker exec d75fbd23b29 httpd-test
 ...
 ```
 
-## AMS Dispatcher與AEM作為雲端服務的主要差異{#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
+## AMS Dispatcher與作為{#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}Cloud Service的AEMAMS Dispatcher之間的主要差異
 
-如上述參考頁面所述，AEM中Apache和Dispatcher的Cloud Service組態與AMS組態非常類似。 主要差異是：
+如上面的參考頁所述，作為Cloud Service的ApacheAEM和Dispatcher配置與AMS配置非常相似。 主要差異是：
 
-* 在AEM中，某些Apache指令可能不會使用（例如`Listen`或`LogLevel`）
-* 在AEM中，Dispatcher設定只能放入部分項目，其命名很重要。 例如，您要在不同主機間重複使用的篩選規則必須放入名為`filters/filters.any`的檔案中。 如需詳細資訊，請參閱參考頁面。
-* 在AEM中，「雲端服務」中有額外的驗證，可禁止使用`/glob`撰寫的篩選規則，以防止發生安全性問題。 由於`deny *`將被使用，而不是`allow *`（不能使用），因此客戶將從在本地運行Dispatcher以及執行試用和錯誤中獲益，查看日誌以確切知道Dispatcher篩選器為了添加這些篩選器而阻塞的路徑。
+* 在作AEM為Cloud Service中，某些Apache指令不能使用（例如`Listen`或`LogLevel`）
+* 作AEM為Cloud Service，只能將Dispatcher配置的某些部分放入包含檔案中，其命名非常重要。 例如，您要在不同主機間重複使用的篩選規則必須放入名為`filters/filters.any`的檔案中。 如需詳細資訊，請參閱參考頁面。
+* 作AEM為Cloud Service，有額外的驗證來禁止使用`/glob`編寫的篩選器規則，以防止出現安全性問題。 由於`deny *`將被使用，而不是`allow *`（不能使用），因此客戶將從在本地運行Dispatcher以及執行試用和錯誤中獲益，查看日誌以確切知道Dispatcher篩選器為了添加這些篩選器而阻塞的路徑。
 
-## 將Dispatcher組態從AMS移轉至AEM做為雲端服務的准則
+## 將調度程式配置從AMS遷移到作AEM為Cloud Service的准則
 
-Dispatcher配置結構在Managed Services和AEM（即雲服務）之間有差異。 以下是如何從AMS Dispatcher設定第2版移轉至AEM做為雲端服務的逐步指南。
+調度器配置結構在Managed Services和作為Cloud ServiceAEM之間有差異。 下面是如何從AMS Dispatcher配置版本2遷移到作為Cloud Service的逐步指AEM南。
 
-## 如何將AMS轉換為AEM做為Cloud服務分派程式設定
+## 如何將AMS轉換為Cloud服AEM務調度器配置
 
 下節提供如何轉換AMS配置的逐步說明。 它假設
 具有與[Cloud Manager Dispatcher configuration](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中所述結構類似的歸檔檔案
@@ -620,7 +621,7 @@ $ validator httpd .
 刪除尾碼為`_invalidate_allowed.any`的任何檔案。
 
 從預設位置複製檔案`conf.dispatcher.d/cache/default_invalidate_any`
-Cloud Dispatcher設定中的AEM。
+CloudAEM Dispatcher配置中。
 
 在每個群檔案中，刪除`cache/allowedClients`部分中的所有內容並將其替換
 with:
@@ -643,7 +644,7 @@ $include "../cache/default_invalidate.any"
 應複製到群檔案中參照它們的`$include`語句。
 
 從預設位置複製檔案`conf.dispatcher/clientheaders/default_clientheaders.any`
-AEM做為該位置的Cloud Service分派程式設定。
+作AEM為Cloud Service調度器配置。
 
 在每個伺服器陣列檔案中，取代任何如下所示的「clientheader include」陳述式：
 
@@ -672,7 +673,7 @@ $include "../clientheaders/default_clientheaders.any"
 應複製到群檔案中參照它們的`$include`語句。
 
 從預設位置複製檔案`conf.dispatcher/filters/default_filters.any`
-AEM做為該位置的Cloud Service分派程式設定。
+作AEM為Cloud Service調度器配置。
 
 在每個伺服器陣列檔案中，取代任何如下所示的 filter include 陳述式：
 
@@ -693,7 +694,7 @@ $include "../filters/default_filters.any"
 移除該資料夾中的所有檔案。
 
 從預設位置複製檔案`conf.dispatcher.d/renders/default_renders.any`
-AEM做為該位置的Cloud Service分派程式設定。
+作AEM為Cloud Service調度器配置。
 
 在每個群檔案中，刪除`renders`部分中的所有內容並將其替換
 with:
@@ -716,7 +717,7 @@ $include "../renders/default_renders.any"
 應複製到群檔案中參照它們的`$include`語句。
 
 從預設位置複製檔案`conf.dispatcher/virtualhosts/default_virtualhosts.any`
-AEM做為該位置的Cloud Service分派程式設定。
+作AEM為Cloud Service調度器配置。
 
 在每個伺服器陣列檔案中，取代任何如下所示的 filter include 陳述式：
 
@@ -732,7 +733,7 @@ $include "../virtualhosts/default_virtualhosts.any"
 
 ### 執行驗證器以檢查狀態
 
-使用`dispatcher`子命令，在您的目錄中以Cloud Service Dispatcher Validator身分執行AEM:
+使用&lt;a0/AEM>子命令在目錄中以Cloud Service調度器驗證器的形式運行：`dispatcher`
 
 ```
 $ validator dispatcher .
@@ -746,7 +747,7 @@ $ validator dispatcher .
 
 ### 使用本機部署測試您的組態（需要安裝Docker）
 
-使用AEM中的指令碼`docker_run.sh`做為Cloud Service Dispatcher Tools，您可以測試
+使用`docker_run.sh`中的指令碼作為AEMCloud Service調度器工具，可以測試
 您的設定不包含任何其他只會顯示在
 部署：
 
