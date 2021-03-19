@@ -1,10 +1,12 @@
 ---
 title: 準備翻譯內容
 description: 瞭解如何準備翻譯內容。
+feature: 語言副本
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
