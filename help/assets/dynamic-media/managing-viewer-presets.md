@@ -1,10 +1,12 @@
 ---
 title: 管理檢視器預設集
-description: 如何在Dynamic Media建立和管理檢視器預設集。
+description: 瞭解如何在Dynamic Media建立和管理檢視器預設集。
+feature: 檢視器預設集，檢視器
+topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '4239'
+source-wordcount: '4245'
 ht-degree: 12%
 
 ---
