@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: eeb9dfba87a6fa980c2f44b52813e4d3ca8e3e57
+source-git-commit: 93ae24247ae36f44e659211f1e7ab2f0888e4ad6
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1793'
 ht-degree: 2%
 
 ---
@@ -163,6 +163,15 @@ Cloud Manager作為2021.2.0Cloud ServiceAEM的發行日期為2021年2月11日。
 
 ## 內容轉移工具 {#content-transfer-tool}
 
+### 發行日期 {#release-date-ctt}
+
+內容傳輸工具v1.3.4的發行日期為2021年3月19日。
+
+### 錯誤修正 {#bug-fixes-ctt}
+
+* CTT正在跳過同名但名稱中帶有連字型大小的資料夾中的內容。 這個問題已經修正。
+
+
 ### 發行日期 {#release-date-ctt-march}
 
 內容傳輸工具v1.3.0的發行日期為2021年3月04日。
@@ -177,15 +186,15 @@ Cloud Manager作為2021.2.0Cloud ServiceAEM的發行日期為2021年2月11日。
 * 從特定路徑移轉內容時，CTT會提取不相關的資源。 此問題已修正
 
 
-### 發行日期 {#release-date-ctt}
+### 發行日期 {#release-date-ctt-feb}
 
 內容傳輸工具v1.2.4的發行日期為2021年2月10日。
 
-### 錯誤修正 {#bug-fixes-ctt}
+### 錯誤修正 {#bug-fixes-ctt-feb}
 
 * 對應多個使用者時，有些使用者的IMS ID映射不正確。 這個問題已經修正。
 
-### 發行日期 {#release-date-ctt-feb}
+### 發行日期 {#release-date-ctt-feb01}
 
 內容傳輸工具v1.2.2的發行日期為2021年2月1日。
 
