@@ -1,16 +1,18 @@
 ---
-title: 套用動態媒體檢視器預設集
-description: 瞭解如何在動態媒體中套用檢視器預設集。
+title: 套用Dynamic Media檢視器預設集
+description: 瞭解如何在Dynamic Media套用檢視器預設集。
+feature: 檢視器預設集，檢視器
+topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 25%
+source-wordcount: '221'
+ht-degree: 24%
 
 ---
 
 
-# 套用動態媒體檢視器預設集{#applying-viewer-presets}
+# 套用Dynamic Media檢視器預設集{#applying-viewer-presets}
 
 「檢視器預設集」是一組設定，可決定使用者在電腦螢幕和行動裝置上檢視多媒體資產的方式。 您可以將管理員建立的任何檢視器預設集套用至資產。
 
@@ -19,9 +21,9 @@ ht-degree: 25%
 另請參閱[Publishing Viewer預設集](managing-viewer-presets.md#publishing-viewer-presets)。
 
 視您使用的發佈模式而定，您可能不需要發佈檢視器預設集。
-如果檢視器預設集有問題，請參閱[疑難排解動態媒體](troubleshoot-dm.md#viewers)。
+如果檢視器預設集有問題，請參閱[疑難排解Dynamic Media](troubleshoot-dm.md#viewers)。
 
-## 將動態媒體檢視器預設集套用至資產{#applying-a-viewer-preset-to-an-asset}
+## 將Dynamic Media檢視器預設套用至資產{#applying-a-viewer-preset-to-an-asset}
 
 1. 開啟資產並在左側導軌中，然後點選「檢 **[!UICONTROL 視器]**」。
 
