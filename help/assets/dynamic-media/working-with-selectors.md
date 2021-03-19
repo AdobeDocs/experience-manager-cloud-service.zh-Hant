@@ -1,16 +1,17 @@
 ---
 title: 使用選取工具
-description: 瞭解您可在動態媒體中用來選取互動式影像、互動式視訊和轉盤橫幅的素材的方法。
+description: 瞭解您可在Dynamic Media選取互動式影像、互動式視訊和轉盤橫幅的素材時，使用的方法。
+topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '750'
 ht-degree: 18%
 
 ---
 
 
-# 在動態媒體{#working-with-selectors}中使用選擇器
+# 在Dynamic Media使用選擇器{#working-with-selectors}
 
 使用互動式影像、互動式視訊或轉盤橫幅時，您會選取資產，並選取熱點和影像地圖的網站和產品以連結至。 使用影像集、回轉集和多媒體集時，您也可以使用資產選擇器來選取資產。
 
@@ -22,9 +23,9 @@ ht-degree: 18%
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-選擇熱點或影像映射所到的位置（而不是手動輸入）時，您使用選擇器。 只有您是AEM Sites客戶時，「網站」選擇器才能運作。 產品選擇器也需要AEM Commerce。
+選擇熱點或影像映射所到的位置（而不是手動輸入）時，您使用選擇器。 只有您是AEM Sites客戶時，網站選擇器才能運作。 產品選擇器也需要AEM商務。
 
-## 在動態媒體中選擇產品{#selecting-products}
+## 在Dynamic Media選擇產品{#selecting-products}
 
 當您想要在產品目錄中提供特定產品的快速檢視時，使用產品選擇器來選擇產品。
 
@@ -42,11 +43,11 @@ ht-degree: 18%
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   您可以點選&#x200B;**[!UICONTROL Browse]**&#x200B;並導覽至其他資料夾，以變更AEM瀏覽產品資料的位置。
+   您可以點選AEM **[!UICONTROL Browse]**&#x200B;並導覽至其他資料夾，以變更產品資料的瀏覽位置。
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   點選&#x200B;**[!UICONTROL 排序方式]**&#x200B;以變更AEM依最新到最舊或最舊到最新排序。
+   點選&#x200B;**[!UICONTROL 排序方式]**&#x200B;以變更排序方式，AEM依最新至最舊或最舊至最新。
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -62,9 +63,9 @@ ht-degree: 18%
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## 在動態媒體中選擇站點{#selecting-sites}
+## 在Dynamic Media選擇站點{#selecting-sites}
 
-當您想要將熱點或影像地圖連結至AEM網站內管理的網頁時，請使用網站選擇器來選擇網頁。
+當您想要將熱點或影像地圖連結至網站內管理的網頁時，請使用網站選擇器來選擇網AEM頁。
 
 1. 導覽至「轉盤集」、「互動式影像」或「互動式視訊」，然後點選「動作 **** 」標籤 (僅在您已定義熱點或影像地圖時可用)。
 
@@ -80,9 +81,9 @@ ht-degree: 18%
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. 當您在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中點選熱點或影像地圖時，您會導覽至您指定的AEM網站頁面。
+1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中，如果您點選熱點或影像地圖，則導覽至您指AEM定的網站頁面。
 
-## 在動態媒體中選擇資產{#selecting-assets}
+## 在Dynamic Media選擇資產{#selecting-assets}
 
 使用此選擇器來選擇影像以用於轉盤橫幅、互動式視訊、影像集、混合媒體集和回轉集。 在互動式視訊中，當您點選&#x200B;**[!UICONTROL 內容]**&#x200B;標籤中的&#x200B;**[!UICONTROL 選取資產]**&#x200B;時，即可使用資產選擇器。 在「轉盤集」中，當您建立新投影片時，可使用資產選擇器。 在影像集、混合媒體集和回轉集中，當您分別建立新的影像集、混合媒體集或回轉集時，就可使用資產選擇器。
 
@@ -97,7 +98,7 @@ ht-degree: 18%
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   您可以在&#x200B;**[!UICONTROL Path]**&#x200B;欄位中導覽至另一個檔案夾，以變更AEM瀏覽資產的位置。
+   您可以在&#x200B;**[!UICONTROL AEM路徑]**&#x200B;欄位中導覽至另一個資料夾，以變更資產的瀏覽位置。
 
    點選「**[!UICONTROL Collection]**」，僅搜尋系列中的資產。
 
