@@ -1,11 +1,13 @@
 ---
 title: 重複使用內容——多網站管理員和即時副本
 description: 簡介如何運用強大的即時副本AEM和多網站管理員功能來重複使用內容。
+feature: 多站點管理員
+role: 管理員
 translation-type: tm+mt
-source-git-commit: b22d972adeaec6af4f15e11fa3359758a1ed77c3
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2682'
-ht-degree: 0%
+source-wordcount: '2686'
+ht-degree: 1%
 
 ---
 
@@ -151,7 +153,7 @@ MSM可直接在UI中使用適當主控台的各種選項存取。
 | 來源 | 作為即時副本基礎的原始頁面 | 與「藍圖」和／或「藍圖」頁面同義 |
 | 即時副本 | 由同步操作維護的源副本（源副本），如轉出配置所定義 |  |
 | 即時副本設定 | 即時副本的設定詳細資訊定義 |  |
-| 即時關係 | 對給定資源繼承的有效定義，即源和即時拷貝之間的連接 | 確保對源的更改可以與即時副本同步 |
+| 即時關係 | 對給定資源繼承的有效定義，即源和即時副本之間的連接 | 確保對源的更改可以與即時副本同步 |
 | Blueprint | 與來源同義 | 可由Blueprint組態定義 |
 | Blueprint設定 | 指定源路徑的預定義配置 | 當藍圖設定中參考藍圖頁面時，「轉出」命令便可使用 |
 | 章 | 要包含在即時副本中的Blueprint區段 | 這些通常是根目錄的子頁面 |
