@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 translation-type: tm+mt
-source-git-commit: c915580247e1b99db8a9f5228eec8cffece8a003
+source-git-commit: fd2009eab27ac14e722f2e9da28fc734834ab892
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1738'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 ## 變更AEM為Cloud Service{#changes-in-aem-as-a-cloud-service}
 
-作為一AEM個Cloud Service,Adobe正從例項AEM導向模型移至Cloud Manager中由CI/CD管道驅動、具有n-x AEM Containers的服務型檢視。 必須在部署之前指定索引配置，AEM而不是在單個實例上配置和維護索引。 生產中的配置更改明顯違反了CI/CD策略。 索引更改也是如此，因為如果未指定測試並重新編製索引，則可能會影響系統穩定性和效能，然後再將它們投入生產。
+作為一AEM個Cloud Service,Adobe正在從以實例為中心的模型，轉向以Cloud Manager中的CI/CD管道為驅動的基於AEMn-x AEM Containers的服務視圖。 必須在部署之前指定索引配置，AEM而不是在單個實例上配置和維護索引。 生產中的配置更改明顯違反了CI/CD策略。 索引更改也是如此，因為如果未指定測試並重新編製索引，則可能會影響系統穩定性和效能，然後再將它們投入生產。
 
 以下列出與6.5及舊版相AEM比的主要變更：
 
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 ## 使用方式 {#how-to-use}
 
-定義索引可包括3個使用案例：
+定義索引可包括以下三種使用案例：
 
 1. 添加新客戶索引定義
 1. 更新現有索引定義。 這實際上意味著添加現有索引定義的新版本
@@ -110,7 +110,7 @@ ht-degree: 2%
 
 使用藍綠部署，不會停機。 但是，對於索引管理，這要求索引僅用於某些版本的應用程式。 例如，在應用程式第2版中新增索引時，您仍不希望該索引用於應用程式第1版。 如果刪除索引，則情況正好相反：第2版中移除的索引在第1版中仍然需要。 更改索引定義時，我們希望舊版索引僅用於版本1，新版索引僅用於版本2。
 
-下表顯示5個索引定義：索引`cqPageLucene`用於兩個版本，而索引`damAssetLucene-custom-1`僅用於版本2。
+下表顯示了五個索引定義：索引`cqPageLucene`用於兩個版本，而索引`damAssetLucene-custom-1`僅用於版本2。
 
 >[!NOTE]
 >
@@ -124,7 +124,7 @@ ht-degree: 2%
 | /oak:index/acme.product-custom-2 | 否 | 否 | 是 |
 | /oak:index/cqPageLucene | 是 | 是 | 是 |
 
-每次變更索引時，版本號碼都會遞增。 為避免自訂索引名稱與產品本身的索引名稱發生衝突，自訂索引以及對現成索引的變更必須以`-custom-<number>`結尾。
+每次變更索引時，版本號碼都會遞增。 為避免自訂索引名稱與產品本身的索引名稱發生衝突，自訂索引以及對開箱後索引的變更必須以`-custom-<number>`結尾。
 
 ### 對出廠索引{#changes-to-out-of-the-box-indexes}的更改
 
@@ -137,17 +137,13 @@ ht-degree: 2%
 | /oak:index/cqPageLucene | 是 | 是 | 否 |
 | /oak:index/cqPageLucene-2 | 是 | 否 | 是 |
 
-### 限制 {#limitations}
+### 當前限制{#current-limitations}
 
 目前僅支援類型`lucene`的索引的索引管理。
 
-### 刪除索引{#removing-an-index}
-
-如果要在應用程式的較新版本中刪除索引，則可以定義一個空索引（一個沒有要索引的資料的索引），並使用新名稱。 例如，您可以將其命名為`/oak:index/acme.product-custom-3`。 這將替換索引`/oak:index/acme.product-custom-2`。 系統刪除`/oak:index/acme.product-custom-2`後，也可以刪除空索引`/oak:index/acme.product-custom-3`。
-
 ### 添加索引{#adding-an-index}
 
-若要新增名為&quot;/oak:index/acme.product-custom-1&quot;的索引，以便用於新版本的應用程式和更新版本，索引必須依下列方式設定：
+要添加名為`/oak:index/acme.product-custom-1`的索引以用於新版本的應用程式和更高版本，必須按如下方式配置索引：
 
 `acme.product-1-custom-1`
 
@@ -157,7 +153,7 @@ ht-degree: 2%
 
 ### 更改索引{#changing-an-index}
 
-更改現有索引時，需要使用更改的索引定義添加新索引。 例如，請考慮變更現有索引&quot;/oak:index/acme.product-custom-1&quot;。 舊索引儲存在`/oak:index/acme.product-custom-1`下，新索引儲存在`/oak:index/acme.product-custom-2`下。
+更改現有索引時，需要使用更改的索引定義添加新索引。 例如，請考慮更改現有索引`/oak:index/acme.product-custom-1`。 舊索引儲存在`/oak:index/acme.product-custom-1`下，新索引儲存在`/oak:index/acme.product-custom-2`下。
 
 舊版應用程式使用下列組態：
 
@@ -167,6 +163,43 @@ ht-degree: 2%
 
 `/oak:index/acme.product-custom-2`
 
-### Index-Availability/Fault-Tolerance {#index-availability}
+>[!NOTE]
+>
+>作為Cloud ServiceAEM的索引定義可能與本地開發實例上的索引定義不完全匹配。 開發實例沒有Tika配置，而作為AEMCloud Service實例則有。 如果您使用Tika組態自訂索引，請保留Tika組態。
 
-建議為極其重要的功能（請記住上述索引的命名慣例）建立重複索引，因此，在發生索引損毀或任何此類未預見的事件時，有備援索引可用來回應查詢。
+### 撤消更改{#undoing-a-change}
+
+有時，需要回復索引定義中的更改。 原因可能是錯誤地做出了改變，或者不再需要改變。 例如，索引定義`damAssetAssetLucene-8-custom-3`是錯誤建立的，已部署。 因此，您可能希望恢復到上一個索引定義`damAssetAssetLucene-8-custom-2`。 為此，您需要添加一個名為`damAssetAssetLucene-8-custom-4`的新索引，該索引包含前一個索引`damAssetAssetLucene-8-custom-2`的定義。
+
+### 刪除索引{#removing-an-index}
+
+以下僅適用於自定義索引。 產品索引不能被刪除，因為它們由使用AEM。
+
+如果要在應用程式的較新版本中刪除索引，則可以使用新名稱定義空索引（一個從未使用過且不包含任何資料的空索引）。 在本範例中，您可將其命名為`/oak:index/acme.product-custom-3`。 這將替換索引`/oak:index/acme.product-custom-2`。 系統刪除`/oak:index/acme.product-custom-2`後，也可以刪除空索引`/oak:index/acme.product-custom-3`。 此類空索引的示例為：
+
+```xml
+<acme.product-custom-3
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="async"
+        compatVersion="2"
+        includedPaths="/dummy"
+        queryPaths="/dummy"
+        type="lucene">
+        <indexRules jcr:primaryType="nt:unstructured">
+            <rep:root jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <dummy
+                        jcr:primaryType="nt:unstructured"
+                        name="dummy"
+                        propertyIndex="{Boolean}true"/>
+                </properties>
+            </rep:root>
+        </indexRules>
+    </acme.product-custom-3>
+```
+
+如果不再需要自訂現成可用的索引，則必須複製現成可用的索引定義。 例如，如果您已部署`damAssetAssetLucene-8-custom-3`，但不再需要自定義，而想要切換回預設的`damAssetAssetLucene-8`索引，則必須添加包含`damAssetAssetLucene-8`索引定義的索引`damAssetAssetLucene-8-custom-4`。
+
+### 索引可用性和容錯{#index-availability-and-fault-tolerance}
+
+建議為重要功能建立重複索引（請記住上述索引的命名慣例），因此，在發生索引損毀或任何此類未預見的事件時，都有備援索引可用來回應查詢。
