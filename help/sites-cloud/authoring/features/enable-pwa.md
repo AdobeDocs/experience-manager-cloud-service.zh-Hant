@@ -4,9 +4,9 @@ description: AEM Sites允許內容作者透過簡單的設定，而非編碼，�
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 54c4755207d84f6f11effea72e94e20027446ba9
+source-git-commit: 8fa74c2c575409659f482c669c4939a623ef6707
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2032'
 ht-degree: 0%
 
 ---
@@ -208,7 +208,6 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 並非所有PWA功能都適用於AEM Sites。 這些是一些顯著的限制。
 
-* 使用者必須至少瀏覽一次頁面，才能離線快取頁面。
 * 如果使用者未使用應用程式，則不會自動同步或更新頁面。
 
 Adobe在實施PWA時也會提出下列建議。
