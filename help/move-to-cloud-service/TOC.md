@@ -3,11 +3,14 @@ sub-product: 轉移至 AEM as a Cloud Service
 user-guide-title: 轉移至 AEM as a Cloud Service
 breadcrumb-title: 移轉指南
 user-guide-description: 了解轉換至雲端服務的過程。
+feature-set: Experience Manager Sites
+feature: 部署
+role: 架構設計人員
 translation-type: tm+mt
-source-git-commit: b729e3fe4ef572877ae185c37f30b9b1fc78fc2a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 80%
+source-wordcount: '90'
+ht-degree: 77%
 
 ---
 
