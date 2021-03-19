@@ -1,10 +1,12 @@
 ---
 title: 套用 Dynamic Media 影像預設集
-description: 瞭解如何在動態媒體中套用影像預設集。
+description: 瞭解如何在Dynamic Media套用影像預設集。
+feature: 影像預設集、檢視器、轉譯
+topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '311'
 ht-degree: 5%
 
 ---
@@ -24,7 +26,7 @@ ht-degree: 5%
 
 您可以隨時預覽影像，將影像預設集套用至影像。
 
-**套用動態媒體影像預設集**
+**套用Dynamic Media影像預設集**
 
 1. 開啟資產，然後在左側導軌中點選下拉式清單，然後點選「轉譯」****。
 
@@ -47,5 +49,5 @@ ht-degree: 5%
    >
    >如果資產&#x200B;*和*&#x200B;影像預設集尚未發佈，則&#x200B;**[!UICONTROL URL]**&#x200B;按鈕(或URL和RESS按鈕（如果適用）不可用。
    >
-   >另請注意，影像預設集會自動發佈在Dynamic Media S7伺服器上。
+   >另請注意，影像預設集會自動發佈在Dynamic MediaS7伺服器上。
 
