@@ -1,10 +1,12 @@
 ---
 title: 整合Dynamic Media觀眾與Adobe Analytics和Experience Platform Launch
-description: Dynamic Media檢視器擴充功能適用於Platform launch和Dynamic Media檢視器5.13，可讓Adobe Analytics和Platform launch的客戶在其Platform launch組態中使用檢視器專屬的事件和資料。
+description: 瞭解Dynamic Media檢視器擴充功能的Platform launch和Dynamic Media檢視器5.13。它可讓Adobe Analytics和Platform launch的客戶在其Platform launch組態中使用檢視器專屬的事件和資料。
+feature: 資產報表
+topic: 「資料工程師、管理員、業務從業人員」
 translation-type: tm+mt
-source-git-commit: 0f20bf7de87fb3635f77a45f532c3ffe2f361adf
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '6658'
+source-wordcount: '6668'
 ht-degree: 9%
 
 ---
