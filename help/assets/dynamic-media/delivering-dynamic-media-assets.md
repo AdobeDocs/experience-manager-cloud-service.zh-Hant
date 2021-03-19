@@ -1,10 +1,12 @@
 ---
 title: 交付Dynamic Media資產
 description: 瞭解如何提供Dynamic Media資產。
+feature: 資產管理
+topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '319'
 ht-degree: 1%
 
 ---
