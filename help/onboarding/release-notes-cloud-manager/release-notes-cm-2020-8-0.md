@@ -1,26 +1,27 @@
 ---
-title: AEM中Cloud Manager的Cloud Manager版本注意事項2020.8.0版
-description: AEM中Cloud Manager的Cloud Manager版本注意事項2020.8.0版
+title: Cloud Manager的發行說明，作AEM為Cloud Service版本2020.8.0
+description: Cloud Manager的發行說明，作AEM為Cloud Service版本2020.8.0
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 1%
+source-wordcount: '425'
+ht-degree: 2%
 
 ---
 
 
-# Adobe Experience Manager中Cloud Manager的Cloud Manager版本說明：Cloud Service 2020.8.0 {#release-notes}
+# Adobe Experience ManagerCloud Manager的發行說明，Cloud Service2020.8.0 {#release-notes}
 
-本頁概述AEM中Cloud Manager的發行說明，即Cloud Service 2020.8.0。
+本頁概述了Cloud Manager的發行說明，AEM作為Cloud Service2020.8.0。
 
 ## 發行日期 {#release-date}
 
-AEM中Cloud Manager作為Cloud Service 2020.8.0的發行日期為2020年8月06日。
+Cloud Manager作為2020.8.0Cloud ServiceAEM的發行日期為2020年8月6日。
 
 ## 新功能 {#whats-new-cloud-manager}
 
-* 「內容審核」是在Cloud Manager Sites生產管道上啟用的功能。 具有Sites的程式的Production Pipeline配置現在包含名為&#x200B;**Content Audit**&#x200B;的第三個頁籤。 每當生產管道執行時，在自訂功能測試後，管道中就會包含新的「內容稽核」步驟，以根據多項維度評估網站，包括效能、搜尋引擎最佳化(SEO)、協助工具、最佳實務和PWA（漸進式網頁應用程式）。
+* 「內容審核」是在Cloud Manager Sites生產管道上啟用的功能。 具有Sites的程式的Production Pipeline配置現在包含名為&#x200B;**Content Audit**&#x200B;的第三個頁籤。 每當生產管道執行時，在自訂功能測試後，管道中就會包含新的「內容稽核」步驟，以根據多項維度評估網站，包括效能、搜尋引擎最佳化(SEO)、協助功能、最佳實務和PWA（漸進式Web應用程式）。
 
 
    >[!NOTE]
