@@ -1,10 +1,12 @@
 ---
 title: 建立和同步即時副本
 description: 瞭解如何建立和同步即時副本，以便在您的網站上重複使用您的內容。
+feature: 多站點管理員
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4188'
+source-wordcount: '4192'
 ht-degree: 1%
 
 ---
