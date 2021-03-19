@@ -1,19 +1,20 @@
 ---
-title: 設定動態媒體
-description: 若要設定動態媒體，您必須設定動態媒體並管理影像和檢視器預設集。
+title: 設定Dynamic Media
+description: 若要設定Dynamic Media，您必須設定Dynamic Media並管理影像和檢視器預設集。
 contentOwner: Rick Brough
+topic: 管理員
 translation-type: tm+mt
-source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 6%
+source-wordcount: '180'
+ht-degree: 7%
 
 ---
 
 
-# 設定動態媒體{#setting-up-dynamic-media}
+# 設定Dynamic Media{#setting-up-dynamic-media}
 
-[動態](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media可協助您管理資產，提供豐富的視覺化銷售和隨選行銷資產，並可自動縮放，以供網頁、行動裝置和社交網站使用。Dynamic Media使用一組主要來源資產，透過其全球、可擴充、最佳化效能的網路，即時產生並提供多種多樣化內容變化。
+[動態](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media可協助您管理資產，提供豐富的視覺化銷售和隨選行銷資產，並可自動縮放，以供網頁、行動裝置和社交網站使用。Dynamic Media使用一組主要來源資產，透過其全球、可擴充、最佳化效能的網路，即時產生並提供多種多樣化內容。
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -25,7 +26,7 @@ ht-degree: 6%
 
 -->
 
-如果您要管理動態媒體，請關注下列主題：
+如果您管理Dynamic Media，請關注下列主題：
 
 * [設定 Dynamic Media](config-dm.md)
 * [管理影像預設集](managing-image-presets.md)
@@ -41,4 +42,4 @@ ht-degree: 6%
 >
 >**如果您要升級：**
 >
->* 在您啟動並執行Experience Manager後，您上傳的任何資產都會自動啟用動態媒體（除非系統管理員明確停用它）。 如果您是Experience Manager的升級實例，而且是Dynamic Media的新手，則可能必須重新處理資產，才能啟用動態媒體。 請參閱[重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
+>* Experience Manager啟動並執行後，您上傳的任何資產都會自動啟用Dynamic Media（除非系統管理員已明確停用它）。 如果您是升級版Experience Manager，而且是Dynamic Media新手，則可能必須重新處理資產，以啟用Dynamic Media。 請參閱[重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
