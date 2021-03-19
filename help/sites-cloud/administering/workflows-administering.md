@@ -1,16 +1,18 @@
 ---
-title: 管理工作流實例
+title: 管理工作流程例項
 description: 瞭解如何管理工作流程例項
+feature: 管理
+role: 管理員
 translation-type: tm+mt
-source-git-commit: c19079b1be36c4e87962491f263ddf97ab98f831
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 0%
+source-wordcount: '936'
+ht-degree: 1%
 
 ---
 
 
-# 管理工作流實例{#administering-workflow-instances}
+# 管理工作流程例項 {#administering-workflow-instances}
 
 工作流控制台提供多種工具來管理工作流實例，以確保它們正如預期執行。
 
@@ -83,7 +85,7 @@ ht-degree: 0%
 
 ## 修正工作流程例項失敗{#fixing-workflow-instance-failures}
 
-當工作流程失敗時，AEM會提供&#x200B;**Failures**&#x200B;主控台，讓您在原始原因得到處理後，調查並採取適當的動作：
+當工作流失AEM敗時，提供&#x200B;**Failures**&#x200B;控制台，允許您在處理原始原因後調查並採取適當的操作：
 
 * **失敗詳**
 細資料開啟視窗以顯示 
@@ -93,7 +95,7 @@ ht-degree: 0%
 史記錄顯示工作流程歷史記錄的詳細資料。
 
 * **重試** 步驟再次執行指令碼步驟元件實例。修正原始錯誤的原因後，請使用「重試步驟」命令。 例如，在修正「處理步驟」執行之指令碼中的錯誤後，請重試該步驟。
-* **終** 止如果錯誤導致工作流不可調和的情況，則終止工作流。例如，工作流可以依賴環境條件，如儲存庫中對工作流實例不再有效的資訊。
+* **終** 止如果錯誤導致工作流不可調和的情況，則終止工作流。例如，工作流可以依賴於環境條件，如儲存庫中對工作流實例不再有效的資訊。
 * **終止和重** 試與 **** 終止類似，只不過新的工作流程例項是使用原始裝載、標題和說明啟動的。
 
 若要調查失敗，然後在之後繼續或終止工作流程，請執行下列步驟：
@@ -109,7 +111,7 @@ ht-degree: 0%
 
 最小化工作流實例數可提高工作流引擎的效能，因此您可以定期從儲存庫中清除已完成或正在運行的工作流實例。
 
-設定&#x200B;**Adobe Granite Workflow Purge Configuration**，以根據工作流程例項的年齡和狀態來清除工作流程例項。 您也可以清除所有模型或特定模型的工作流實例。
+配置&#x200B;**Adobe花崗岩工作流清除配置**&#x200B;以根據工作流實例的年齡和狀態來清除工作流實例。 您也可以清除所有模型或特定模型的工作流實例。
 
 您也可以建立服務的多個配置，以清除滿足不同標準的工作流實例。 例如，建立設定，當特定工作流程模型的執行時間比預期長時，會清除這些例項。 建立另一個配置，該配置在特定天數後清除所有已完成的工作流，以最小化儲存庫的大小。
 
@@ -157,7 +159,7 @@ ht-degree: 0%
 
 ## 設定收件箱的最大大小{#setting-the-maximum-size-of-the-inbox}
 
-通過配置&#x200B;**Adobe Granite Workflow Service**，您可以設定收件箱的最大大小，請參閱[向儲存庫](/help/implementing/deploying/configuring-osgi.md)添加OSGi配置。 下表說明您所配置的屬性。
+通過配置&#x200B;**AdobeGranite Workflow Service** ，可以設定收件箱的最大大小，請參閱[向儲存庫](/help/implementing/deploying/configuring-osgi.md)添加OSGi配置。 下表說明您所配置的屬性。
 
 >[!NOTE]
 >要將配置添加到儲存庫，服務PID為：
