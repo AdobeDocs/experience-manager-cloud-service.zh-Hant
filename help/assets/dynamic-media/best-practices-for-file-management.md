@@ -1,11 +1,13 @@
 ---
-title: 組織數位資產以使用動態媒體影像描述檔或視訊描述檔的最佳實務
-description: 命名、組織和管理動態媒體影像和視訊資產檔案的秘訣與最佳實務。
+title: 組織數位資產以使用Dynamic Media影像描述檔或視訊描述檔的最佳實務
+description: 「命名、組織和管理Dynamic Media影像檔案和視訊資產檔案的秘訣與最佳實務。」
 contentOwner: Rick Brough
+feature: 資產管理，影像描述檔，視訊描述檔
+topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: a64a7274f0037789be1a5e2f7427aba551f14ed7
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -13,11 +15,11 @@ ht-degree: 0%
 
 # 組織數位資產以使用影像描述檔或視訊描述檔的最佳範例{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-使用「動態媒體影像描述檔」或「視訊描述檔」的重要概念，是指派給資料夾。 描述檔中是影像或視訊的設定。 這些設定會處理資料夾的內容及其任何子檔案夾。 因此，命名檔案和檔案夾、排列子檔案夾和處理這些檔案夾中檔案的方式，會影響描述檔處理這些資產的方式。
+使用「Dynamic Media影像描述檔」或「視訊描述檔」的重要概念，是指派給資料夾。 描述檔中是影像或視訊的設定。 這些設定會處理資料夾的內容及其任何子檔案夾。 因此，命名檔案和檔案夾、排列子檔案夾和處理這些檔案夾中檔案的方式，會影響描述檔處理這些資產的方式。
 
 透過使用一致且適當的檔案和資料夾命名策略，以及良好的中繼資料實務，您可以充份運用您的數位資產收集，並確保正確的檔案由正確的描述檔處理。
 
-請參閱[關於動態媒體影像描述檔和視訊描述檔](about-image-video-profiles.md)。
+請參閱[關於Dynamic Media影像配置檔案和視頻配置檔案](about-image-video-profiles.md)。
 
 以下是組織數位資產檔案的最佳實務秘訣。
 
@@ -40,5 +42,5 @@ ht-degree: 0%
    * **日期型資料夾** -包含以建立日期或上次修改日期為基礎的數位資產。
 
 * 建立不太可能更改的資料夾目錄，以便所有分配的配置檔案不中斷。
-* 假設資產已發佈，則您會使用Adobe Experience Manager將資產移至另一個檔案夾，並從其新位置重新發佈。 原始發佈的資產位置仍可供使用，以及新重新發佈的資產。 但是，原始發佈的資產會「遺失」至Experience Manager，且無法解除發佈。 因此，在將資產移至其他資料夾之前，請先解除發佈資產，這是最佳作法。
+* 假設資產已發佈，則您會使用Adobe Experience Manager將資產移至另一個檔案夾，並從其新位置重新發佈。 原始發佈的資產位置仍可供使用，以及新重新發佈的資產。 但是，原始發佈的資產「遺失」至Experience Manager，無法解除發佈。 因此，在將資產移至其他資料夾之前，請先解除發佈資產，這是最佳作法。
 
