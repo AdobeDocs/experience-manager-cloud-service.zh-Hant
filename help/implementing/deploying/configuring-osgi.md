@@ -1,10 +1,11 @@
 ---
 title: 將Adobe Experience Manager的OSGi配置為Cloud Service
 description: '具有機密值和環境特定值的OSGi配置 '
+feature: 部署
 translation-type: tm+mt
-source-git-commit: 7195709a96422eb701722ef6b398d6577e080058
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '2729'
+source-wordcount: '2730'
 ht-degree: 0%
 
 ---
@@ -158,7 +159,7 @@ SDK Quickstart AEM Jar的Web AEM Console可用來設定OSGi元件，並將OSGi�
 1. 視需要透過Web UI編輯OSGi組態屬性值
 1. 將永久性身分(PID)記錄到安全位置。 稍後會用來產生OSGi設定JSON
 1. 點選「儲存」
-1. 導覽至「OSGi > OSGi安裝程式設定印表機」
+1. 導覽至「OSGi > OSGi Installer Configuration Printer」
 1. 在步驟5中複製的PID中貼上，確保「序列化格式」已設為「OSGi Configurator JSON」
 1. 點選列印
 1. JSON格式的OSGi設定將顯示在「序列化設定屬性」區段中
