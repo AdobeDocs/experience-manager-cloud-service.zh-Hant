@@ -1,22 +1,23 @@
 ---
-title: AEM中Cloud Manager的Cloud Manager版本注意事項2020.12.0版
-description: AEM中Cloud Manager的Cloud Manager版本注意事項2020.12.0版
+title: Cloud Manager的發行說明，作AEM為Cloud Service版本2020.12.0
+description: Cloud Manager的發行說明，作AEM為Cloud Service版本2020.12.0
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 6%
+source-wordcount: '132'
+ht-degree: 7%
 
 ---
 
 
-# Adobe Experience Manager中Cloud Manager的Cloud Manager版本說明：Cloud Service 2020.12.0 {#release-notes}
+# Adobe Experience ManagerCloud Manager發行說明，Cloud Service2020.12.0 {#release-notes}
 
-本頁概述AEM中Cloud Manager的發行說明，即Cloud Service 2020.12.0版。
+本頁概述了Cloud Manager的發行說明，AEM作為Cloud Service2020.12.0。
 
 ## 發行日期 {#release-date}
 
-AEM中Cloud Manager作為Cloud Service 2020.12.0的發行日期為2020年12月10日。
+Cloud Manager作為2020.12.0Cloud ServiceAEM的發行日期為2020年12月10日。
 
 ## Cloud Manager {#cloud-manager}
 
