@@ -1,10 +1,12 @@
 ---
 title: 多網站管理員與翻譯
 description: 瞭解如何在專案中重複使用您的內容，以及在中管理多語言網站AEM。
+feature: 管理
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
