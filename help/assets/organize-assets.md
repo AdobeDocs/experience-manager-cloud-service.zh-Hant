@@ -1,11 +1,13 @@
 ---
 title: 組織數位資產
-description: 使用Adobe Experience Manager Assets中提供的各種方法組織您的數位資產。
+description: 使用Adobe Experience Manager資產中提供的各種方法組織您的數位資產。
 contentOwner: AG
+feature: 資產管理
+topic: '"管理員，業務從業人員"'
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -19,11 +21,11 @@ AEM Assets支援多種組織內容的方式。 您可以使用資料夾以階層
 
 ## 建立資料夾{#create-folders}
 
-組織資產集合（例如，所有&#x200B;*Nature*&#x200B;影像）時，您可以建立資料夾以將資產保持在一起。 您可以使用資料夾來分類和組織您的資產。 AEM Assets不需要您在檔案夾中組織資產，以提高工作效率。
+組織資產集合（例如，所有&#x200B;*Nature*&#x200B;影像）時，您可以建立資料夾以將資產保持在一起。 您可以使用資料夾來分類和組織您的資產。 AEM Assets不要求您在資料夾中組織資產，以提升工作效率。
 
 >[!NOTE]
 >
->不支援共用類型`sling:OrderedFolder`的「資產」檔案夾（在Marketing Cloud中）。 如果要共用資料夾，請不要在建立資料夾時選擇「已排序」。
+>不支援共用`sling:OrderedFolder`類型的「資產」檔案夾(Marketing Cloud)。 如果要共用資料夾，請不要在建立資料夾時選擇「已排序」。
 
 1. 導覽至您要建立新資料夾的數位資產檔案夾。
 1. 在菜單中，按一下&#x200B;**[!UICONTROL 建立]**。 選擇&#x200B;**[!UICONTROL 新建資料夾]**。
