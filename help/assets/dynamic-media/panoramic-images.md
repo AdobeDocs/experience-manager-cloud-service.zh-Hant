@@ -1,11 +1,13 @@
 ---
 title: 全景影像
-description: 瞭解如何在動態媒體中處理全景影像。
+description: 瞭解如何在Dynamic Media處理全景影像。
+feature: 全景影像
+topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 2%
+source-wordcount: '151'
+ht-degree: 3%
 
 ---
 
