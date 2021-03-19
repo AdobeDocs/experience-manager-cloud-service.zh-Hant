@@ -1,10 +1,12 @@
 ---
 title: 管理影像預設集
-description: 瞭解影像預設集，並瞭解如何建立、修改及管理影像預設集。
+description: 「瞭解影像預設集，以及如何建立、修改及管理影像預設集。」
+feature: 影像預設集、檢視器、轉譯
+topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '3640'
+source-wordcount: '3646'
 ht-degree: 9%
 
 ---
