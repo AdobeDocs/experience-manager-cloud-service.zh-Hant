@@ -2,9 +2,9 @@
 title: 學習如何搭配使用GraphQL AEM —— 範例內容與查詢
 description: 學習搭配使用GraphQL AEM —— 範例內容與查詢。
 translation-type: tm+mt
-source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
+source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1741'
 ht-degree: 5%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 5%
 
       * `_operator` :適用特定運算子； `EQUALS`、 `EQUALS_NOT`、 `GREATER_EQUAL`、 `LOWER`、 `CONTAINS`、  `STARTS_WITH`
          * 請參閱[示例查詢——所有名稱不為&quot;Jobs&quot;的人員](#sample-all-persons-not-jobs)
-         * 請參閱[範例查詢——所有`_path`以特定首碼](#sample-wknd-all-adventures-cycling-path-filter)開頭的歷險記
+         * 請參閱[範例查詢——所有冒險，其中`_path`以特定首碼](#sample-wknd-all-adventures-cycling-path-filter)開頭
       * `_apply` :適用特定條件；例如，   `AT_LEAST_ONCE`
          * 請參閱[範例查詢——篩選陣列上必須至少發生一次的項目](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` :在查詢時忽略大小寫
@@ -664,7 +664,7 @@ query {
 
 ### 範例查詢——所有`_path`開頭為特定首碼{#sample-wknd-all-adventures-cycling-path-filter}的冒險
 
-`_path`開頭為特定首碼(`/content/dam/wknd/en/adventures/cycling`)的所有`adventures`。
+所有`adventures`，其中`_path`以特定首碼(`/content/dam/wknd/en/adventures/cycling`)開頭。
 
 **範例查詢**
 
