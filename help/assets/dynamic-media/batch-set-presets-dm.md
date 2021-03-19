@@ -2,10 +2,12 @@
 title: 批次集預設集
 description: 了解如何使用 Dynamic Media 中的批次集預設集自動建立影像集和迴轉集。
 contentOwner: Rick Brough
+feature: 影像預設集，檢視器預設集
+topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 5a50226bfae12440d07f9a21233ea06e118addac
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '3427'
+source-wordcount: '3433'
 ht-degree: 1%
 
 ---
@@ -17,16 +19,16 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->如果您在[!DNL Dynamic Media Classic]中使用批次集預設集，而您要從[!DNL Dynamic Media Classic]移轉至Adobe Experience Manager做為Cloud Service，則必須在[!DNL Adobe Experience Manager as a Cloud Service]中手動重新建立批次集預設集定義。
+>如果您在[!DNL Dynamic Media Classic]中使用批集預設集，而您要從[!DNL Dynamic Media Classic]移轉至Adobe Experience Manager作為Cloud Service，則必須手動在[!DNL Adobe Experience Manager as a Cloud Service]中重新建立批集預設集定義。
 
-**Best Practice**  —— 使用批次集預設集時，Adobe建議使用下列工作流程：
+**最佳實務** -使用批次集預設集時，Adobe建議使用下列工作流程：
 
 1. 建立批次集預設集。 請參閱[為影像集或回轉集建立批次集預設集](#creating-bsp)。
 1. 建立資產資料夾或使用現有的資產資料夾，並確保它與[!DNL Dynamic Media]同步。 請參閱[建立資料夾](/help/assets/manage-digital-assets.md#creating-folders)。
 1. 將批集預設套用至資產檔案夾。 請參閱[關於將批集預設集套用至資料夾](#apply-bsp)。
 1. 上傳影像至資產檔案夾。 請參閱[上傳影像集的資產](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets)、[上傳回轉集的資產](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets)或[將數位資產新增至Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager)。
 1. 建立影像集或回轉集。 請參閱[影像集](/help/assets/dynamic-media/image-sets.md)或[回轉集](/help/assets/dynamic-media/spin-sets.md)。
-1. 發佈影像集或回轉集。 請參閱[發佈動態媒體資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+1. 發佈影像集或回轉集。 請參閱[發佈Dynamic Media資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 為影像集或回轉集{#creating-bsp}建立批次集預設集
 
@@ -65,7 +67,7 @@ ht-degree: 1%
 
 **要為影像集或回轉集建立批集預設集：**
 
-1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集]**」。
+1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -109,7 +111,7 @@ ht-degree: 1%
 | 預設集名稱 | 唯讀. 首次建立批集時指定的名稱。 如果必須更名預設，則可以複製現有批集預設並指定新名稱。 請參閱[複製現有批集預設集](#copy-bsp)。 |
 | 類型 | 唯讀. 首次建立批集時指定了類型。 複製現有批集預設集不允許您更改其[!UICONTROL Type];您必須改為建立預設集。 |
 | 包括衍生資產 | 選填。要使[!DNL Dynamic Media]的IPS（映像生產系統）包含已生成或「派生」的映像以及回轉集或映像集，請選擇&#x200B;**[!UICONTROL 是]**（預設）。 衍生資產是使用者未直接上傳的影像。 而是由IPS在上傳主資產時產生的資產。 例如，IPS在[!DNL Dynamic Media]中上傳PDF時，從PDF的頁面產生的影像資產，會被視為衍生資產。 |
-| 目的地資料夾 | 選填。如果您定義大量的影像集或回轉集，Adobe建議您將這些集與包含資產本身的檔案夾分開。 因此，請考慮建立「影像集」或「回轉集」檔案夾，並將應用程式重新導向至此處放置產生的批次集。<br>在這種情況下，請指定Experience Manager Assets檔案夾結構(`/content/dam`)中哪個檔案夾具有作用中的批次集預設集。請確定該資料夾已啟用[!DNL Dynamic Media]同步，以允許其作為目標資料夾。 請參閱Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)中的[在資料夾層級設定選擇性發佈。<br>如果您透過資料夾的「屬性」套用預設集，多個資料夾可以指派給指定的批次集預 **[!UICONTROL 設集]**。請參閱[從資產資料夾的「屬性」頁面](#apply-bsp-to-folders-via-properties)套用批次集預設集。<br>如果您未指定檔案夾，批次集預設會建立在與資產上傳檔案夾相同的檔案夾中。 |
+| 目的地資料夾 | 選填。如果您定義大量的影像集或回轉集，Adobe建議您將這些集與包含資產本身的檔案夾分開。 因此，請考慮建立「影像集」或「回轉集」檔案夾，並將應用程式重新導向至此處放置產生的批次集。<br>在這種情況下，請指定「Experience Manager資產」檔案夾結構(`/content/dam`)中哪個檔案夾具有作用中的批次集預設集。請確定該資料夾已啟用[!DNL Dynamic Media]同步，以允許其作為目標資料夾。 請參閱[在Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)的資料夾層級設定選擇性發佈。<br>如果您透過資料夾的「屬性」套用預設集，多個資料夾可以指派給指定的批次集預 **[!UICONTROL 設集]**。請參閱[從資產資料夾的「屬性」頁面](#apply-bsp-to-folders-via-properties)套用批次集預設集。<br>如果您未指定檔案夾，批次集預設會建立在與資產上傳檔案夾相同的檔案夾中。 |
 | **[!UICONTROL 設定命名慣例]** |  |
 | 前置詞<br>或<br>尾碼 | 選填。在各自的欄位中輸入前置詞、尾碼或兩者。<br>前置詞和尾碼欄位允許您使用特定內容集的備用自定義檔案命名慣例建立盡可能多的批集預設。在公司定義的預設命名方案有例外的情況下，此方法特別有用。<br>首碼或尾碼將添加到您在「資 **[!UICONTROL 產命]** 名約定」區域中定 **[!UICONTROL 義的「基本]** 名稱」。借由新增前置詞或後置詞，您可以確保影像集或回轉集會以獨立方式與其他資產建立。 它也可協助其他人識別檔案類型。 例如，要確定使用的顏色模式，可以添加前置詞或尾碼`rgb`或`cmyk`。<br>雖然使用批處理集預設功能不需要指定集命名約定，但最佳做法建議您使用集命名約定。此實務可讓您定義想要在一組中分組的命名慣例元素，以簡化批次集的建立。 |
 | **[!UICONTROL 規則結果 - RegX]** |  |
@@ -141,7 +143,7 @@ ht-degree: 1%
 
 ### 從「批集預設集」頁{#apply-bsp-to-folders-via-bsp-page}將批集預設集套用至資產檔案夾
 
-1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集]**」。
+1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
 1. 在&#x200B;**[!UICONTROL 批集預設集]**&#x200B;頁面的&#x200B;**[!UICONTROL 預設集名稱]**&#x200B;列左側，選中要應用於資料夾的每個批集預設集的複選框。
 1. 在工具列中，點選「**[!UICONTROL 將批次預設套用至資料夾]**」。
 1. 在&#x200B;**[!UICONTROL 「選擇資料夾]**」頁上，選中要應用批集預設的每個資料夾的複選框。
@@ -153,7 +155,7 @@ ht-degree: 1%
 1. 導覽至您要套用一或多個批次集預設集的檔案夾。
 1. 在頁面上，選擇&#x200B;**[!UICONTROL Name]**&#x200B;列左側的資料夾複選框。
 1. 在工具列中，點選&#x200B;**[!UICONTROL 屬性]**。
-1. 在資料夾的「屬性」頁面上，點選&#x200B;**[!UICONTROL 動態媒體處理]**&#x200B;標籤。
+1. 在資料夾的「屬性」頁面上，點選「**[!UICONTROL Dynamic Media處理]**」標籤。
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
@@ -177,7 +179,7 @@ ht-degree: 1%
 
 **要編輯批集預設集，請執行以下操作：**
 
-1. 點選Adobe Experience Manager標誌並導覽至「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集」。]**
+1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集」。]**
 1. 在&#x200B;**[!UICONTROL 批集預設集]**&#x200B;頁面的&#x200B;**[!UICONTROL 預設集名稱]**&#x200B;欄左側，勾選您要變更的批集預設集。
 1. 在工具列中，點選「編輯批集預設」。]****[!UICONTROL 
 1. 視需要編輯預設集。
@@ -191,7 +193,7 @@ ht-degree: 1%
 
 **要複製現有批集預設集，請執行以下操作：**
 
-1. 點選Adobe Experience Manager標誌並導覽至「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集」。]**
+1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集」。]**
 1. 在&#x200B;**[!UICONTROL 批集預設集]**&#x200B;頁面的&#x200B;**[!UICONTROL 預設集名稱]**&#x200B;列左側，選中要複製的批集預設集複選框。
 1. 在工具列中，點選&#x200B;**[!UICONTROL Copy]**。
 1. 在&#x200B;**[!UICONTROL 複製批集預設集]**&#x200B;對話框的&#x200B;**[!UICONTROL 標題]**&#x200B;文本框中，為預設集鍵入新名稱。
@@ -213,7 +215,7 @@ ht-degree: 1%
 
 ### 通過「批集預設集」頁{#remove-bsp-from-folders-via-bsp-page}從資料夾中刪除批集預設集
 
-1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集]**」。
+1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
 1. 在&#x200B;**[!UICONTROL 批集預設集]**&#x200B;頁面的&#x200B;**[!UICONTROL 預設集名稱]**&#x200B;欄左側，選中要從一個或多個資料夾中刪除的一個或多個批集預設集的複選框。
 1. 在工具列中，點選&#x200B;**[!UICONTROL 從資料夾中移除批次預設集]**。
 
@@ -230,7 +232,7 @@ ht-degree: 1%
 1. 導覽至您要移除一或多個批次集預設集的檔案夾。
 1. 在頁面上，選擇&#x200B;**[!UICONTROL Name]**&#x200B;列左側的資料夾複選框。
 1. 在工具列中，點選&#x200B;**[!UICONTROL 屬性]**。
-1. 在資料夾的「屬性」頁面上，點選「**[!UICONTROL 動態媒體處理]**」。
+1. 在資料夾的「屬性」頁面上，點選「Dynamic Media處理」**[!UICONTROL 。]**
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
@@ -240,7 +242,7 @@ ht-degree: 1%
 
 ## 刪除批集預設集{#delete-bsp}
 
-您可以刪除批集預設集，以便從[!DNL Dynamic Media]中永久移除。 也就是說，它們不再顯示在[!UICONTROL 批次集預設集]頁面上，也不再顯示在資料夾的&#x200B;**[!UICONTROL 屬性]**&#x200B;頁面上&#x200B;**[!UICONTROL 動態媒體處理]**&#x200B;標籤的&#x200B;**[!UICONTROL 批次集預設集]**&#x200B;下拉式清單中。 因此，預設集不會套用至資料夾重新處理上的現有資產，或是在資料夾中上傳新資產時。
+您可以刪除批集預設集，以便從[!DNL Dynamic Media]中永久移除。 也就是說，它們不再顯示在[!UICONTROL 批集預設集]頁面上，也不再顯示在資料夾的&#x200B;**[!UICONTROL 屬性]**&#x200B;頁面上&#x200B;**[!UICONTROL 「批集預設集」下拉式清單中。]******&#x200B;因此，預設集不會套用至資料夾重新處理上的現有資產，或是在資料夾中上傳新資產時。
 
 如果您刪除先前已套用至一或多個檔案夾的預設集，從這些檔案夾中的資產建立的任何影像集或回轉集會繼續「原樣」顯示。
 
@@ -248,7 +250,7 @@ ht-degree: 1%
 
 **要刪除批集預設集，請執行以下操作：**
 
-1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次集預設集]**」。
+1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
 1. 在&#x200B;**[!UICONTROL 批集預設集]**&#x200B;頁面的&#x200B;**[!UICONTROL 預設集名稱]**&#x200B;欄左側，選中要刪除的一個或多個批集預設集的複選框。
 1. 在工具列中，點選「刪除批集預設集」**[!UICONTROL 。]**
 
@@ -264,5 +266,5 @@ ht-degree: 1%
 >
 >* [影像集](/help/assets/dynamic-media/image-sets.md)
 >* [迴轉集](/help/assets/dynamic-media/spin-sets.md)
->* [在動態媒體的資料夾層級設定選擇性發佈](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) -請參閱主題中的「同步模式」，以進一步瞭解將單一資料夾同步至的相關資訊 [!DNL Dynamic Media]。
->* [在雲端服務中建立動態媒體設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) -請參閱主題中的「動態媒體同步模式」，以進一步瞭解將所有資料夾同步至 [!DNL Dynamic Media]。
+>* [在Dynamic Media的資料夾層級設定選擇性發佈](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) -請參閱主題中的「同步模式」，以進一步瞭解將單一資料夾同步至的相關資訊 [!DNL Dynamic Media]。
+>* [在Cloud Services中建立Dynamic Media配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) -請參閱主題中的「Dynamic Media同步模式」，瞭解有關將所有資料夾同步到的詳細資訊 [!DNL Dynamic Media]。
