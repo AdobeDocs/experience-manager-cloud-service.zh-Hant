@@ -3,7 +3,7 @@ title: ' [!DNL Assets]的開發人員參考'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
+source-git-commit: 77b4d9f07626419ddab3a7363b06c382447ec982
 workflow-type: tm+mt
 source-wordcount: '1400'
 ht-degree: 2%
@@ -29,7 +29,7 @@ ht-degree: 2%
 | × | 不支援. 請勿使用。 |
 | - | 不可用 |
 
-| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava APIs | [資產計算服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _（預覽）_ |
+| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [AEM  / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava APIs | [Asset compute服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html)servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _（預覽）_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **原始二進位** |  |  |  |  |  |  |
 | 建立原稿 | ý | × | - | × | × | - |
@@ -68,7 +68,7 @@ ht-degree: 2%
 [!DNL Experience Manager] as  [!DNL Cloud Service] o provides a new method to upload assets to the repository.使用者可使用HTTP API直接將資產上傳至雲端儲存空間。 上傳二進位檔案的步驟如下：
 
 1. [提交HTTP請求](#initiate-upload)。它會通知[!DNL Experience Manage]r部署您上傳新二進位檔的意圖。
-1. [將二進位元的內](#upload-binary) 容張貼至啟動要求所提供的一或多個URI。
+1. [將二進位內容](#upload-binary) POST到由啟動請求提供的一個或多個URI。
 1. [提交HTTP請](#complete-upload) 求，通知伺服器二進位內容已成功上傳。
 
 ![直接二進位上傳通訊協定概觀](assets/add-assets-technical.png)
@@ -83,7 +83,7 @@ ht-degree: 2%
 
 ### 開始上傳{#initiate-upload}
 
-將HTTP POST請求提交至所需的資料夾。 資產會在此資料夾中建立或更新。 請加入選擇器`.initiateUpload.json`以指出要求是啟動二進位檔案的上傳。 例如，資產應建立所在的資料夾路徑為`/assets/folder`。 開機自檢請求為`POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`。
+將HTTPPOST請求提交至所需的資料夾。 資產會在此資料夾中建立或更新。 請加入選擇器`.initiateUpload.json`以指出要求是啟動二進位檔案的上傳。 例如，資產應建立所在的資料夾路徑為`/assets/folder`。 POST請求為`POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`。
 
 請求主體的內容類型應為`application/x-www-form-urlencoded`表單資料，包含下列欄位：
 
@@ -126,14 +126,14 @@ ht-degree: 2%
 實現此目的的可能方法是根據API提供的上傳URI數量計算零件大小。 例如，假設二進位檔的總大小為20,000位元組，而上傳URI的數目為2。 然後，請遵循下列步驟：
 
 * 通過總大小除以URI數計算零件大小：20,000 / 2 = 10,000。
-* 上傳URI清單中第一個URI的二進位元組範圍0-9,999。
-* 上傳URI清單中二進位元組到第二個URI的POST位元組範圍10,000 - 19,999。
+* 將二進位檔案的0-9,999POST到上載URI清單中第一個URI的位元組範圍。
+* POST位元組範圍10,000 —— 上傳URI清單中二進位元組到第二個URI的19,999。
 
 如果上傳成功，伺服器會以`201`狀態碼回應每個請求。
 
 ### 完成上傳{#complete-upload}
 
-在上傳二進位檔案的所有部分後，將HTTP POST要求提交至啟動資料所提供的完整URI。 請求主體的內容類型應為`application/x-www-form-urlencoded`表單資料，包含下列欄位。
+在上傳二進位檔案的所有部分後，將HTTPPOST要求提交至啟動資料所提供的完整URI。 請求主體的內容類型應為`application/x-www-form-urlencoded`表單資料，包含下列欄位。
 
 | 欄位 | 類型 | 必要與否 | 說明 |
 |---|---|---|---|
@@ -145,7 +145,7 @@ ht-degree: 2%
 | `versionComment` | 字串 | 可選 | 如果已建立新版本，則與該版本關聯的注釋。 |
 | `replace` | 布林值 (Boolean) | 可選 | 如果`True`和具有指定名稱的資產存在， [!DNL Experience Manager]會刪除該資產，然後重新建立它。 |
 
->!![NOTE]
+>[!NOTE]
 如果資產存在且未指定`createVersion`或`replace`，則[!DNL Experience Manager]會使用新二進位檔更新資產的目前版本。
 
 如同啟動程式，完整的請求資料可能包含多個檔案的資訊。
@@ -167,7 +167,7 @@ ht-degree: 2%
 
 新的上載方法僅支援[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]。 [!DNL Adobe Experience Manager] 6.5的API已過時。 與上傳或更新資產或轉譯（任何二進位上傳）相關的方法在下列API中已過時：
 
-* [Experience Manager Assets HTTP API](mac-api-assets.md)
+* [Experience Manager資產HTTP API](mac-api-assets.md)
 * `AssetManager` Java API，例如  `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
@@ -240,5 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [Experience Cloud即 [!DNL Cloud Service] aSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
+* [Experience Cloud [!DNL Cloud Service] aSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
 
