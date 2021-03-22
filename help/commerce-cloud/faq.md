@@ -2,9 +2,9 @@
 title: AEM-使用商務整合架構的商務整合常見問答集
 description: AEM-使用商務整合架構的商務整合常見問答集
 translation-type: tm+mt
-source-git-commit: 903a78d98082b937128073d5edce23dc70b01a1d
+source-git-commit: ad831b2cc3657666678662eeff0eaf371ce4da49
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ CIF附加元件與Cloud Service搭配使AEM用，讓資料從商務解決方案�
 
 ## 7.CIF支援的型AEM錄大小為何？
 
-當產品資料和目錄頁面動態建立和快取時，沒有修正大小限制。 但是，目錄大小只有一個方面需要考慮。 快取率、並行資料要求和頁面建立都可能會影響擴充性和效能。
+這取決於您必須考慮的其他幾個方面。 目錄資料和頁面的快取比率為何？ 在尖峰時段，您預期會有多少個並行請求？ 您的商務解決方案的API有多大可擴充性？
 
 ## 8.PIM如何在此框架中運作？
 
