@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 translation-type: tm+mt
-source-git-commit: 25b998014f9706da7de7b7ed6e2c8a03404d1950
+source-git-commit: 5d3a183efcd1355c1c5dc34519fbabee34e87578
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1837'
 ht-degree: 2%
 
 ---
@@ -202,6 +202,14 @@ Cloud Manager作為2021.2.0Cloud ServiceAEM的發行日期為2021年2月11日。
 * 在建立遷移集時，允許用戶選擇`/etc`下的某些路徑。
 
 ## 最佳做法分析器{#best-practices-analyzer}
+
+### 發行日期 {#release-date-bpa-march}
+
+Best Practices Analyzer v2.1.8的發行日期為2021年3月22日。
+
+### Best Practices Analyzer {#what-is-new-bpa-march}的新增功能
+
+* 能夠從UI中的BPA報告以及導出為CSV檔案的報告中過濾掉ACS公域查找結果。
 
 ### 發行日期 {#release-date-bpa}
 
