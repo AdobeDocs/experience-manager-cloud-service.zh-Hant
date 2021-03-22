@@ -2,10 +2,10 @@
 title: 使用最佳實踐分析器
 description: 使用最佳實踐分析器
 translation-type: tm+mt
-source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
+source-git-commit: 3d1aa714bacc74f77672ce2d7265da5239a6c6ff
 workflow-type: tm+mt
-source-wordcount: '2362'
-ht-degree: 46%
+source-wordcount: '2512'
+ht-degree: 43%
 
 ---
 
@@ -16,25 +16,25 @@ ht-degree: 46%
 >id="aemcloud_bpa_using"
 >title="使用最佳實踐分析器"
 >abstract="請檢閱使用最佳實務分析程式（舊稱雲端就緒性分析程式）的檔案，以及產生的報表。 「最佳做法分析器報告」用於獲得對一般升級準備情況的高級瞭解。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 使用最佳實踐分析器的重要注意事項{#imp-considerations}
 
 請依照以下章節瞭解執行最佳實務分析器(BPA)的重要考量事項：
 
-* BPA報表是使用Adobe Experience Manager(AEM)[Pattern Detector](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/deploying/upgrading/pattern-detector.html)的輸出建立。 BPA使用的Pattern Detector版本包含在BPA安裝包中。
+* BPA報告是使用Adobe Experience Manager(AEM)[模式檢測器](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/deploying/upgrading/pattern-detector.html)的輸出建立的。 BPA使用的Pattern Detector版本包含在BPA安裝包中。
 
 * BPA只能由&#x200B;**admin**&#x200B;用戶或&#x200B;**administrators**&#x200B;組中的用戶運行。
 
-* BPA在6.1版及更高版本的AEM例項上受支援。
+* 6.1版及更高版AEM本的實例支援BPA。
 
    >[!NOTE]
-如需在 [AEM 6.1上安裝BPA的](#installing-on-aem61) 特殊要求，請參閱「在AEM 6.1上安裝」。
+有關在 [6.1安裝BPA的特殊要求，請參見AEM在6.1](#installing-on-aem61) 上安裝BPA的AEM特殊要求。
 
 * BPA可在任何環境上運行，但是最好在&#x200B;*Stage*&#x200B;環境上運行。
 
    >[!NOTE]
-為避免對業務關鍵型實例造成影響，建議您在自定義、配置、內容和用戶應用程式方面盡可能靠近 ** Production環境的 ** Authorenvironment上運行BPA。或者，您可以在複製的生產&#x200B;*製作*&#x200B;環境中執行 CRA。
+為避免對業務關鍵型實例造成影響，建議您在定制、配置、內容和用戶應用程式方面盡可能靠近 ** Production環境的 ** Authorenvironment上運行BPA。或者，您可以在複製的生產&#x200B;*製作*&#x200B;環境中執行 CRA。
 
 * 生成BPA報告內容可能需要相當長的時間，從幾分鐘到幾小時。 所需的時間主要取決於 AEM 存放庫內容的大小和性質、AEM 版本和其他因素。
 
@@ -58,7 +58,7 @@ Best Practices Analyzer可從「軟體散發」入口網站下載為zip檔案。
 
 請依照本節內容瞭解如何查看最佳實踐分析器報告：
 
-1. 選擇Adobe Experience Manager並導覽至工具-> **操作** -> **最佳實務分析器**。
+1. 選擇「Adobe Experience Manager」並導航至「工具」->「**操作」** -> 「最佳做法分析器」**。**
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
@@ -79,7 +79,7 @@ Best Practices Analyzer可從「軟體散發」入口網站下載為zip檔案。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. 您可以選擇按一下&#x200B;**CSV**，以逗號分隔值(CSV)格式下載報表，如下圖所示。
+1. 您可以選擇按一下「匯出至CSV」（如下圖所示），以逗號分隔值(CSV)格式下載報表。****
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
@@ -94,9 +94,28 @@ Best Practices Analyzer可從「軟體散發」入口網站下載為zip檔案。
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
 
+#### 在最佳實踐分析器報告{#bpa-filters}中使用篩選器
+
+要過濾與[ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)相關的查找結果，請執行以下步驟：
+
+1. 按一下頁面左側的左側邊欄圖示。 這將顯示&#x200B;**ACS Commons Filter**。 按一下&#x200B;**ACS Commons Filter**&#x200B;以顯示交互複選框，如下圖所示。
+
+   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
+
+   >[!NOTE]
+僅當BPA檢測到ACS公域的使用時，左邊欄表徵圖才會顯示。
+
+1. 取消選擇該框可過濾掉與ACS公域相關的所有查找結果。 您應該會在報表上看到&#x200B;**篩選的尋找計數**，如下圖所示。 以逗號分隔值(CSV)格式匯出時，篩選器也會套用至報表。
+
+   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
+
+   >[!NOTE]
+不應忽視ACS下議院的調查結果。請參閱[documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)以判斷與作為Cloud Service的相AEM容性。
+
+
 ### Adobe Experience Manager 6.2 和 6.1 {#aem-specific-versions}
 
-Adobe Experience Manager 6.2中的「最佳實務分析器」工具僅限於產生和下載CSV報表的連結。
+「最佳實務分析器」工具在Adobe Experience Manager6.2中僅限於產生和下載CSV報表的連結。
 
 在 Adobe Experience Manager 6.1 中，此工具無法運作，而只能使用 HTTP 介面。
 
@@ -107,10 +126,10 @@ Adobe Experience Manager 6.2中的「最佳實務分析器」工具僅限於產�
 [!CONTEXTUALHELP]
 id="aemcloud_bpa_interpreting"
 title="解讀最佳實踐分析器報告"
-abstract="查看BPA報告輸出有兩個選項：UI和CSV。 在AEM例項中執行「最佳實務分析器」工具時，UI報表會在工具視窗中顯示為結果。 CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和組織。"
+abstract="查看BPA報告輸出有兩個選項：UI和CSV。 在實例中運行「最佳實踐分析器」工AEM具時，UI報告將在工具窗口中顯示為結果。 CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和組織。"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="瞭解最佳實踐分析器報告類別"
 
-在AEM例項中執行「最佳實務分析器」工具時，報表會在工具視窗中顯示為結果。
+在實例中運行Best Practices Analyzer工具時，AEM報告將在工具窗口中顯示為結果。
 
 報表格式為：
 
@@ -119,7 +138,7 @@ additional-url="https://experienceleague.adobe.com/docs/experience-manager-patte
    * **到期時間**：報表內容快取的到期時間。
    * **產生時段**：報表內容產生程序所花費的時間。
    * **結果計數**：報表中包含的結果總數。
-* **系統概述**:有關執行BPA的AEM系統的資訊。
+* **系統概述**:有關運行AEMBPA的系統的資訊。
 * **結果類別**：分別處理一或多個同類結果的多個區段。每個區段各包含下列項目：類別名稱、子類型、結果計數和重要性、摘要、類別文件的連結，以及個別結果資訊。
 
 系統會為每個結果指派一個重要性層級，以指出動作的概略優先順序。
@@ -139,7 +158,7 @@ additional-url="https://experienceleague.adobe.com/docs/experience-manager-patte
 
 ## 解讀最佳實踐分析器CSV報告{#cra-csv-report}
 
-當您從AEM例項按一下&#x200B;**CSV**&#x200B;選項時，「最佳實務分析器」報表的CSV格式會從內容快取建立，並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報表將會以檔案格式自動下載，且具有預設名稱 `results.csv`。
+當您按一下例項的&#x200B;**CSV**&#x200B;選項AEM時，「最佳實務分析器」報表的CSV格式會從內容快取建立，並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報表將會以檔案格式自動下載，且具有預設名稱 `results.csv`。
 
 如果快取已過期，則會在 CSV 檔案建置和下載之前重新產生報表。
 
@@ -161,7 +180,7 @@ CSV 格式報表的欄包括：
 
 ## HTTP 介面 {#http-interface}
 
-BPA提供HTTP介面，可用作AEM中使用者介面的替代選項。 該介面同時支援 HEAD 和 GET 命令。它可用於生成BPA報告並以三種格式之一返回：JSON、CSV和Tab分隔值(TSV)。
+BPA提供HTTP介面，可用作內部使用者介面的替代AEM選擇。 該介面同時支援 HEAD 和 GET 命令。它可用於生成BPA報告並以三種格式之一返回：JSON、CSV和Tab分隔值(TSV)。
 
 以下URL可用於HTTP訪問，其中`<host>`是安裝BPA的伺服器的主機名和埠（如果需要）:
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` (JSON 格式)
@@ -200,7 +219,7 @@ HTTP 介面可用於多種方法中。
 要透過 HTTP 介面開始產生報表，有個簡單的方式是使用下列命令：
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`。
 
-在提出要求後，用戶端無須維持作用中狀態，即可產生報表。報表產生可以由一個用戶端使用HTTP GET請求啟動，報表產生後，就可透過另一個用戶端的快取或AEM使用者介面中的BPA工具從快取中檢視。
+在提出要求後，用戶端無須維持作用中狀態，即可產生報表。報表產生可由一個用戶端使用HTTPGET請求啟動，報表產生後，可從另一個用戶端的快取或使用者介面中的BPA工具檢AEM視。
 
 ### 回應 {#http-responses}
 
@@ -217,7 +236,7 @@ HTTP 介面可用於多種方法中。
 
 ### 快取存留期調整 {#cache-adjustment}
 
-預設的BPA快取存留期為24小時。 透過AEM例項和HTTP介面中重新整理報表和重新產生快取的選項，此預設值可能適用於BPA的大部分使用。 如果您 AEM 例項中的報表產生時間特別長，您可以調整快取存留期，以盡快重新產生報表。
+預設的BPA快取存留期為24小時。 在例項和HTTP介面中，使用重新整理報表和重新產生快取的選項AEM，此預設值可能適用於BPA的大部分使用。 如果您 AEM 例項中的報表產生時間特別長，您可以調整快取存留期，以盡快重新產生報表。
 
 快取存留期值會儲存為下列存放庫節點上的 `maxCacheAge` 屬性：
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
@@ -226,10 +245,10 @@ HTTP 介面可用於多種方法中。
 
 ### 在 AEM 6.1 上安裝 {#installing-on-aem61}
 
-BPA利用名為`repository-reader-service`的系統服務用戶帳戶來執行模式檢測器。 此帳戶適用於 AEM 6.2 和更新版本。在AEM 6.1上，必須在&#x200B;*安裝BPA之前先建立此帳戶，方法如下：*
+BPA利用名為`repository-reader-service`的系統服務用戶帳戶來執行模式檢測器。 此帳戶適用於 AEM 6.2 和更新版本。在AEM6.1上，必須在&#x200B;*安裝BPA之前建立*&#x200B;帳戶，方法是執行以下步驟：
 
 1. 依照[建立新的服務使用者](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)中的指示建立使用者。將 UserID 設為 `repository-reader-service`，並將中繼路徑保留為空白，然後按一下綠色核取記號。
 
 2. 依照[管理使用者和群組](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/administering/security/security.html#managing-users-and-groups)中的指示 (尤其是「將使用者新增至群組」的指示)，將 `repository-reader-service` 使用者新增至 `administrators` 群組。
 
-3. 透過Package Manager在您的來源AEM例項上安裝BPA套件。 (這將會在 `repository-reader-service` 系統服務使用者的 ServiceUserMapper 設定中新增必要的設定修正。)
+3. 通過源實例上的包管理器安裝BPA包AEM。 (這將會在 `repository-reader-service` 系統服務使用者的 ServiceUserMapper 設定中新增必要的設定修正。)
