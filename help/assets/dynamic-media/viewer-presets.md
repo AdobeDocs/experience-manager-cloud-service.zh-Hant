@@ -2,9 +2,9 @@
 title: 套用Dynamic Media檢視器預設集
 description: 瞭解如何在Dynamic Media套用檢視器預設集。
 feature: 檢視器預設集，檢視器
-topic: 業務從業人員
+topic: 管理員，業務從業人員
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 24%
@@ -16,7 +16,7 @@ ht-degree: 24%
 
 「檢視器預設集」是一組設定，可決定使用者在電腦螢幕和行動裝置上檢視多媒體資產的方式。 您可以將管理員建立的任何檢視器預設集套用至資產。
 
-如果您是管理員，需要管理、建立、排序和刪除檢視器預設集，請參閱[管理檢視器預設集](managing-viewer-presets.md)。
+如果您是管理員，且必須管理、建立、排序和刪除檢視器預設集，請參閱[管理檢視器預設集](managing-viewer-presets.md)。
 
 另請參閱[Publishing Viewer預設集](managing-viewer-presets.md#publishing-viewer-presets)。
 
