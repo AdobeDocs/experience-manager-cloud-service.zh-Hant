@@ -3,9 +3,9 @@ title: ' [!DNL Assets]的開發人員參考'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77b4d9f07626419ddab3a7363b06c382447ec982
+source-git-commit: 044740339ea7f164dd4c28650fe71a5eb11615d6
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1388'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->某些API仍然存在，但不受主動支援（以×表示），且不得使用。
+>某些API仍然存在，但不受主動支援（以×表示）。 請盡量勿使用這些API。
 
 | 支援等級 | 說明 |
 | ------------- | --------------------------- |
@@ -65,7 +65,7 @@ ht-degree: 2%
 
 ## 資產上傳{#asset-upload-technical}
 
-[!DNL Experience Manager] as  [!DNL Cloud Service] o provides a new method to upload assets to the repository.使用者可使用HTTP API直接將資產上傳至雲端儲存空間。 上傳二進位檔案的步驟如下：
+在[!DNL Experience Manager]中，您可以以[!DNL Cloud Service]的身分，使用HTTP API直接將資產上傳至雲端儲存空間。 上傳二進位檔案的步驟如下：
 
 1. [提交HTTP請求](#initiate-upload)。它會通知[!DNL Experience Manage]r部署您上傳新二進位檔的意圖。
 1. [將二進位內容](#upload-binary) POST到由啟動請求提供的一個或多個URI。
@@ -116,8 +116,8 @@ ht-degree: 2%
 * `mimeType` （字串）:相應二進位的MIME類型，如啟動請求中提供。此值應包含在完整請求中。
 * `uploadToken` （字串）:對應二進位碼的上傳Token。此值應包含在完整請求中。
 * `uploadURIs` （陣列）:字串的清單，其值為應上傳二進位檔內容的完整URI(請參 [閱上傳二進位](#upload-binary))。
-* `minPartSize` （數字）:如果有多個URI，則可提供給任何一個uploadURI的資料的最小長度（以位元組為單位）。
-* `maxPartSize` （數字）:如果有多個URI，則可提供給上載URI中任何一個的資料的最大長度（以位元組為單位）。
+* `minPartSize` （數字）:如果有多個URI，則可提供給任一個URI的 `uploadURIs`資料的最小長度（以位元組為單位）。
+* `maxPartSize` （數字）:如果有多個URI，則可提供給任一個URI的最大資料長 `uploadURIs`度（以位元組為單位）。
 
 ### 上傳二進位元{#upload-binary}
 
@@ -240,5 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [Experience Cloud [!DNL Cloud Service] aSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
 
