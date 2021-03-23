@@ -1,11 +1,11 @@
 ---
 title: 使用規則集轉換URL
-description: 瞭解如何在Dynamic Media部署規則集以轉換URL。 規則集是以指令碼語言（例如JavaScript）編寫的指令集，可評估XML資料，並在資料符合特定條件時採取特定動作。
+description: 瞭解如何在Dynamic Media部署規則集以轉換URL。 規則集是以指令碼語言（例如JavaScript™）編寫的指令集，可評估XML資料，並在資料符合特定條件時採取特定動作。
 topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '768'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 使用規則集轉換URL {#using-rulesets-to-transform-urls}
 
-您可以在Dynamic Media部署規則集以轉換URL。 規則集是以指令碼語言（例如JavaScript）編寫的指令集，可評估XML資料，並在資料符合特定條件時採取特定動作。 每個規則都包含至少一個條件和至少一個動作。 規則會根據條件評估XML資料，如果符合條件，則會採取適當的動作。 規則集的範例包括：
+您可以在Dynamic Media部署規則集以轉換URL。 規則集是以指令碼語言（例如JavaScript™）編寫的指令集，可評估XML資料，並在資料符合特定條件時採取特定動作。 每個規則都包含至少一個條件和至少一個動作。 規則會根據條件評估XML資料，如果符合條件，則會採取適當的動作。 規則集的範例包括：
 
 * 添加MIME類型尾碼。 許多服務和網站都需要影像字尾，例如將`.jpg`新增至URL。
 * 建立URL的資料夾路徑以用於搜尋引擎最佳化(SEO)。
@@ -67,7 +67,7 @@ ht-degree: 5%
    * 在&#x200B;**[!UICONTROL 開啟]**&#x200B;對話方塊中，瀏覽至您的規則集檔案(XML)。
    * 選擇檔案，然後按一下&#x200B;**[!UICONTROL 開啟]**。
    * 在&#x200B;**[!UICONTROL Upload]**&#x200B;頁的右側，為規則集檔案選擇目標資料夾。
-   * 在頁面底部附近，請確定已勾選「上傳後發佈」。****
+   * 在頁面底部附近，請確定已勾選「上傳後發佈」。
    * 在頁面的右下角，按一下「提交上傳」。****
    * 在全局導航欄上，按一下&#x200B;**[!UICONTROL Jobs]**&#x200B;以檢查上載作業的狀態。 當&#x200B;**[!UICONTROL Job]**&#x200B;頁面上的&#x200B;**[!UICONTROL Status]**&#x200B;欄顯示「上傳完成」時，請繼續下一步驟。
 
@@ -79,5 +79,5 @@ ht-degree: 5%
 
    規則集條件會套用至即時Dynamic Media影像伺服器的請求。
 
-   如果您對規則集檔案進行變更，在您重新上傳並重新發佈更新的規則集檔案時，會立即套用變更。
+   如果您變更規則集檔案，在您重新上傳並重新發佈更新的規則集檔案時，會立即套用變更。
 
