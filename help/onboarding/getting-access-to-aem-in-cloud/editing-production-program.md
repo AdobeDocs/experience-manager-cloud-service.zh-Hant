@@ -2,7 +2,7 @@
 title: '編輯製作程式 '
 description: '編輯製作程式 '
 translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+source-git-commit: c34b9cbd019ee74059e13be4f19c1bb9a54fa2ba
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -23,8 +23,7 @@ ht-degree: 0%
 
 請依照下列步驟編輯生產程式：
 
-1. 
-   1. 從Cloud Manager的&#x200B;*概述*&#x200B;頁面導覽至「編輯程式&#x200B;**」頁面**
+1. 從Cloud Manager的&#x200B;*概述*&#x200B;頁面導覽至「編輯程式&#x200B;**」頁面**
 
 1. **編輯程式**&#x200B;頁面將顯示生產程式和沙盒程式的兩個頁籤（常規和解決方案）。
 
