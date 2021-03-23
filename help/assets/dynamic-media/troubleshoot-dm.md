@@ -3,10 +3,10 @@ title: Dynamic Media 疑難排解
 description: 使用Dynamic Media時的疑難排解提示。
 topic: '"管理員，業務從業人員"'
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ### 資產同步狀態屬性{#asset-synchronization-status-properties}
 
-以下資產屬性可以在CRXDE Lite中查看，以確認資產是否成功同步AEM到Dynamic Media:
+以下資產屬性可以在CRXDE Lite中查看，以確認資產從Adobe Experience Manager到Dynamic Media的成功同步：
 
 | **屬性** | **範例** | **說明** |
 |---|---|---|
@@ -36,15 +36,15 @@ ht-degree: 1%
 
 ### 同步記錄{#synchronization-logging}
 
-同步錯誤和問題記錄在`error.log`(AEM伺服器目錄`/crx-quickstart/logs/`)中。 您可使用充份的記錄功能來判斷大多數問題的根本原因，不過您可以透過Sling Console([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))，將`com.adobe.cq.dam.ips`套件上的記錄功能增加為DEBUG，以收集更多資訊。
+同步錯誤和問題記錄在`error.log`(Experience Manager伺服器目錄`/crx-quickstart/logs/`)中。 您可使用充份的記錄功能來判斷大多數問題的根本原因，不過您可以透過Sling Console([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))，將`com.adobe.cq.dam.ips`套件上的記錄功能增加為DEBUG，以收集更多資訊。
 
 ### 版本控制 {#version-control}
 
-取代現有的Dynamic Media資產（相同名稱和位置）時，您可以選擇保留兩個資產或取代／建立版本：
+取代現有的Dynamic Media資產（相同名稱和位置）時，您可以同時保留這兩個資產或取代／建立版本：
 
-* 保留兩者皆可建立具有已發佈資產URL唯一名稱的新資產。 例如，`image.jpg`是原始資產，而`image1.jpg`是新上傳的資產。
+* 同時保留兩者會為已發佈的資產URL建立具有唯一名稱的資產。 例如，`image.jpg`是原始資產，而`image1.jpg`是新上傳的資產。
 
-* Dynamic Media不支援建立版本。 新版本將取代傳送中的現有資產。
+* Dynamic Media不支援建立版本。 新版本會取代傳送中的現有資產。
 
 ## 影像和集{#images-and-sets}
 
@@ -63,11 +63,11 @@ ht-degree: 1%
     <ol>
      <li><p>前往CRX/DE:</p>
       <ul>
-       <li>檢查JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code>中是否定義了預設集。 請注意，如果您從AEM6.x升級至6.4並選擇退出移轉，則此位置適用。 否則，位置為<code>/conf/global/settings/dam/dm/presets/viewer</code>。</li>
+       <li>檢查JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code>中是否定義了預設集。 如果您從Experience Manager6.x升級到6.4，並選擇退出遷移，則此位置適用。 否則，位置為<code>/conf/global/settings/dam/dm/presets/viewer</code>。</li>
        <li>檢查以確定JCR中的資產在「中繼資料」下有<code>dam:scene7FileStatus</code><strong> </strong>顯示為<code>PublishComplete</code>。</li>
       </ul> </li>
     </ol> </td>
-   <td><p>重新整理頁面／導覽至另一頁並返回（需重新編譯側欄JSP）</p> <p>如果這不管用：</p>
+   <td><p>重新整理頁面／導覽至另一頁並返回（必須重新編譯側欄JSP）</p> <p>如果這不管用：</p>
     <ul>
      <li>發佈資產。</li>
      <li>重新上傳資產並發佈。</li>
@@ -125,15 +125,15 @@ ht-degree: 1%
      <li>將視訊描述檔指派給資料夾。</li>
      <li>編輯視訊設定檔以包含多個編碼預設集。</li>
      <li>等待視訊完成處理。</li>
-     <li>如果您重新載入視訊，請確定Dynamic Media編碼視訊工作流程未執行。<br/> </li>
-     <li>重新上傳視訊。</li>
+     <li>在重新載入視訊之前，請確定Dynamic Media編碼視訊工作流程未執行。<br/> </li>
+     <li>重新上傳影片。</li>
     </ol> </td>
   </tr>
   <tr>
    <td>視訊未編碼</td>
    <td>
     <ul>
-     <li>檢查是否已配置Dynamic Media雲服務。</li>
+     <li>檢查是否配置了Dynamic MediaCloud Service。</li>
      <li>檢查視訊描述檔是否與上傳資料夾相關聯。</li>
     </ul> </td>
    <td>
@@ -179,7 +179,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>檢視器預設集未發佈</td>
-   <td><p>繼續到示例管理器診斷頁： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>觀察計算值。 當正確運作時，您應看到：</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>繼續到示例管理器診斷頁： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>觀察計算值。 當正確運作時，您會看到：</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>:設定檢視器資產的Dynamic Media雲端設定進行同步後，大約需要10分鐘。</p> <p>如果未啟動的資產仍保留，請按一下<strong>列出所有未啟動的資產</strong>按鈕以檢視詳細資訊。</p> </td>
    <td>
     <ol>
@@ -211,10 +211,10 @@ ht-degree: 1%
      <li>按順序選擇以下操作：
       <ol>
        <li>刪除同步資料夾。</li>
-       <li>刪除預設資料夾（<code>/conf</code>下方）。
+       <li>刪除預設集資料夾（<code>/conf</code>下方）。
        <li>觸發DM設定非同步作業。</li>
       </ol> </li>
-     <li>等候收件匣中同步成功的通AEM知。
+     <li>等待Experience Manager收件箱中成功同步的通知。
      </li>
     </ol> </td>
   </tr>
