@@ -4,9 +4,9 @@ description: 瞭解可用的強大即時副本同步選項，以及如何根據�
 feature: 多站點管理員
 role: 管理員
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2340'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,11 @@ Adobe Experience Manager提供了一些現成可用的同步配置。 在使用�
 
 ### 轉出設定 {#rollout-configurations}
 
-下表列出隨附提供的轉出設定AEM。 該表包括每個轉出配置的觸發器和同步操作。 如果安裝的轉出配置操作不符合您的要求，您可以[建立新的轉出配置](#creating-a-rollout-configuration)。
+下表列出隨附提供的轉出設定AEM。 該表包括每個轉出配置的觸發器和同步操作。
+
+<!--
+If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
+-->
 
 | 名稱 | 說明 | 觸發器 | [同步操作](#synchronization-actions) |
 |---|---|---|---|
