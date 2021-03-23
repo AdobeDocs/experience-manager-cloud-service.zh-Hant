@@ -4,7 +4,7 @@ description: 瞭解如何在Dynamic Media使用視訊。
 feature: 視訊設定檔
 topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '9512'
 ht-degree: 6%
@@ -404,9 +404,9 @@ VBR編碼時間較長，但結果最好；媒體檔案的品質更優越。 VBR�
 
 | 視訊類型 | 寬x高 | 寬度比例 | 高度比 |
 |--- |--- |--- |--- |
-| 來源 | 1920x1080 | 1 | 1 |
+| 來源 | 1920x1080 | 1 | 3 |
 | 編碼 | 960 x 540 | 2 | 2 |
-| 編碼 | 640 x 360 | 3 | 3 |
+| 編碼 | 640 x 360 | 3 | 1 |
 | 編碼 | 480 x 270 | 4 | 4 |
 
 ### 編碼視訊檔案格式{#encoded-video-file-format}
@@ -551,9 +551,9 @@ Google會定期變更其使用者介面。 因此，發佈視訊至YouTube的步
 若要建立YouTube頻道：
 
 1. 前往[https://www.youtube.com](https://www.youtube.com/)，並使用您的Google帳戶認證登入。
-1. 在YouTube頁面的右上角，按一下您的描述檔圖片（也可以顯示為純色圓圈中的字母），然後按一下「YouTube設定」**[!UICONTROL （圓齒輪圖示）。]**
-1. 在「概述」頁面的「其他功能」標題下，按一下「查看我的所有頻道」或建立新頻道&#x200B;]**。**[!UICONTROL 
-1. 在「頻道」頁面上，按一下「建立新頻道」。****
+1. 在YouTube頁面的右上角，按一下您的描述檔圖片（也可以顯示為純色圓圈中的字母），然後點選「YouTube設定」（圓齒輪圖示）。****
+1. 在「概述」頁面的「其他功能」標題下，點選&#x200B;**[!UICONTROL 查看所有我的頻道或建立新頻道]**。
+1. 在「頻道」頁面上，點選&#x200B;**[!UICONTROL 建立新頻道]**。
 1. 在「品牌帳戶」頁面的「品牌帳戶名稱」欄位中，輸入您要發佈視訊資產的商業名稱或任何其他頻道名稱，然後按一下「建立&#x200B;****」。
 
    請記住您在此處輸入的名稱，因為在Experience Manager中設定YouTube時，您必須再次輸入。
