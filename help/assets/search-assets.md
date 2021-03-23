@@ -4,9 +4,9 @@ description: 瞭解如何使用「篩選器」面板在 [!DNL Adobe Experience M
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: 0e5d49b8781ebe0c5785a14800bcaec223da809c
 workflow-type: tm+mt
-source-wordcount: '4741'
+source-wordcount: '4755'
 ht-degree: 5%
 
 ---
@@ -18,22 +18,22 @@ ht-degree: 5%
 
 [!DNL Experience Manager Assets] 支援下列使用案例，而本文則說明這些使用案例的使用、概念、設定、限制和疑難排解。
 
-| 搜尋資產 | 配置和管理 | 使用搜尋結果 |
+| 搜尋資產 | 配置和管理搜索功能 | 使用搜尋結果 |
 |---|---|---|
 | [基本搜尋](#searchbasics) | [搜尋索引](#searchindex) | [排序結果](#sort) |
-| [瞭解搜尋UI](#searchui) |  | [檢查資產的屬性和中繼資料](#checkinfo) |
+| [瞭解搜尋UI](#searchui) | [文字擷取](#extracttextupload) | [檢查資產的屬性和中繼資料](#checkinfo) |
 | [搜尋建議](#searchsuggestions) | [必備中繼資料](#mandatorymetadata) | [下載](#download) |
 | [瞭解搜尋結果和行為](#searchbehavior) | [修改搜尋刻面](#searchfacets) | [大量中繼資料更新](#metadataupdates) |
-| [搜尋排名與提升](#searchrank) | [文字擷取](#extracttextupload) | [智慧型系列](#collections) |
-| [進階搜尋：篩選和搜尋範圍](#scope) | [自訂謂語](#custompredicates) | [瞭解並疑難排解意外結果](#unexpectedresults) |
-| [從其他解決方案和應用程式搜尋](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[品牌入口網站](#brandportal)</li><li>[Experience Manager案頭應用程式](#desktopapp)</li><li>[Adobe Stock影像](#adobestock)</li><li>[動態媒體資產](#dynamicmedia)</li></ul> |  |  |
+| [搜尋排名與提升](#searchrank) | [自訂謂語](#custompredicates) | [智慧型系列](#collections) |
+| [進階搜尋：篩選和搜尋範圍](#scope) |  | [瞭解並疑難排解意外結果](#unexpectedresults) |
+| [從其他解決方案和應用程式搜尋](#beyondomnisearch):<ul><li>[Adobe資產連結](#aal)</li><li>[品牌入口網站](#brand-portal)</li><li>[Experience Manager案頭應用程式](#desktop-app)</li><li>[Adobe Stock影像](#adobe-stock)</li><li>[Dynamic Media資產](#search-dynamic-media-assets)</li></ul> |  |  |
 | [資產選擇器](#assetselector) |  |  |
 | [限](#tips) 制和提 [示](#limitations) |  |  |
 | [圖示範例](#samples) |  |  |
 
 使用[!DNL Experience Manager]網頁介面頂端的Omnisearch欄位搜尋資產。 前往[!DNL Experience Manager]中的&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**，按一下頂端列中的![search_icon](assets/do-not-localize/search_icon.png)，輸入搜尋關鍵字，然後選取`Return`。 或者，使用關鍵字快速鍵`/`（正斜線）來開啟Omnisearch欄位。 `Location:Assets` 已預先選取，以限制搜尋DAM資產。[!DNL Experience Manager] 在您開始輸入搜尋關鍵字時提供建議。
 
-使用&#x200B;**[!UICONTROL Filters]**&#x200B;面板來搜尋資產、資料夾、標籤和中繼資料。 您可以根據各種選項（謂語）來篩選搜尋結果，例如檔案類型、檔案大小、上次修改的日期、資產狀態、前瞻分析資料和Adobe Stock授權。 您可以使用[search facets](/help/assets/search-facets.md)自訂「篩選」面板並新增或移除搜尋謂語。 [!UICONTROL Filters]面板中的[!UICONTROL File Type]篩選器具有混合狀態複選框。 因此，除非選擇所有嵌套的謂語（或格式），否則第一級複選框將被部分選中。
+使用&#x200B;**[!UICONTROL Filters]**&#x200B;面板來搜尋資產、資料夾、標籤和中繼資料。 您可以根據各種選項（謂語）來篩選搜尋結果，例如檔案類型、檔案大小、上次修改日期、資產狀態、前瞻分析資料和Adobe Stock授權。 您可以使用[search facets](/help/assets/search-facets.md)自訂「篩選」面板並新增或移除搜尋謂語。 [!UICONTROL Filters]面板中的[!UICONTROL File Type]篩選器具有混合狀態複選框。 因此，除非選擇所有嵌套的謂語（或格式），否則第一級複選框將被部分選中。
 
 [!DNL Experience Manager] 搜尋功能支援搜尋系列和搜尋系列中的資產。請參閱[搜尋系列](/help/assets/manage-collections.md)。
 
@@ -41,7 +41,7 @@ ht-degree: 5%
 
 熟悉搜尋介面和可用動作。
 
-![瞭解Experience Manager Assets搜尋結果介面](assets/aem_search_results.png)
+![瞭解Experience Manager資產搜尋結果介面](assets/aem_search_results.png)
 
 *圖：瞭解 [!DNL Experience Manager Assets] 搜尋結果介面。*
 
@@ -57,7 +57,7 @@ ht-degree: 5%
 
 ## 鍵入{#searchsuggestions}時搜尋建議
 
-當您開始輸入關鍵字時，AEM會建議可能的搜尋關鍵字或片語。 建議是以AEM中的資產為基礎。 AEM為所有中繼資料欄位建立索引，以協助搜尋。 為提供搜尋建議，系統會使用下列數個中繼資料欄位的值。 若要提供搜尋建議，請考慮將適當的關鍵字填入下列欄位：
+當您開始輸入關鍵字時，建議AEM可能的搜尋關鍵字或片語。 建議以中的資產為基礎AEM。 索引AEM所有中繼資料欄位，以協助搜尋。 為提供搜尋建議，系統會使用下列數個中繼資料欄位的值。 若要提供搜尋建議，請考慮將適當的關鍵字填入下列欄位：
 
 * 資產標籤。 （映射至`jcr:content/metadata/cq:tags`）
 * 資產標題。 （映射至`jcr:content/metadata/dc:title`）
@@ -79,7 +79,7 @@ ht-degree: 5%
 
 有時候，您會在搜尋結果中看到一些非預期的資產。 如需詳細資訊，請參閱[未預期的結果](#unexpectedresults)。
 
-AEM可搜尋許多檔案格式，而且可自訂搜尋篩選器以符合您的業務需求。 請洽詢您的管理員，以瞭解您的DAM儲存庫有哪些搜尋選項，以及您的登入可能有哪些限制。
+可以AEM搜索許多檔案格式，並且可以自定義搜索篩選器以滿足您的業務要求。 請洽詢您的管理員，以瞭解您的DAM儲存庫有哪些搜尋選項，以及您的登入可能有哪些限制。
 
 <!-- 
 ### Results with and without Enhanced Smart Tags {#withsmarttags}
@@ -120,7 +120,7 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 
 ## 進階搜尋{#scope}
 
-AEM提供各種方法，例如套用至已搜尋資產的篩選器，以協助您更快找到所需的資產。 以下說明一些常用的方法。 以下共用了一些[示例](#samples)。
+提AEM供各種方法，例如套用至已搜尋資產的篩選，以協助您更快找到所需資產。 以下說明一些常用的方法。 以下共用了一些[示例](#samples)。
 
 **搜索檔案或資料夾**:在搜索結果中，查看檔案、資料夾或兩者。從&#x200B;**[!UICONTROL Filters]**&#x200B;面板中，您可以選擇適當的選項。 請參閱[search interface](#searchui)。
 
@@ -139,17 +139,17 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 *Figure: Find similar images using the option in the card view*
 -->
 
-### Adobe Stock影像{#adobestock}
+### Adobe Stock影像{#adobe-stock}
 
-在AEM使用者介面中，使用者可以搜尋[Adobe Stock資產](/help/assets/aem-assets-adobe-stock.md)並授權所需的資產。 在Omnisearch列中新增`Location: Adobe Stock`。 您也可以使用「篩選」面板來尋找所有授權或未授權的資產，或使用Adobe Stock檔案號碼搜尋特定資產。
+在使用者介AEM面中，使用者可搜尋[Adobe Stock資產](/help/assets/aem-assets-adobe-stock.md)並授權所需資產。 在Omnisearch列中新增`Location: Adobe Stock`。 您也可以使用「篩選」面板來尋找所有授權或未授權的資產，或使用Adobe Stock檔案號碼搜尋特定資產。
 
-### 動態媒體資產{#dmassets}
+### Dynamic Media資產{#dmassets}
 
 您可以從&#x200B;**[!UICONTROL 「篩選器」]**&#x200B;面板中選取&#x200B;**[!UICONTROL 「動態媒體」>「集合」]**，以篩選動態媒體影像。這樣可以篩選並顯示影像集、旋轉木馬、混合媒體集和迴轉集等資產。
 
-### 在中繼資料欄位{#gqlsearch}中使用特定值進行搜尋
+### 在元資料欄位{#gql-search}中使用特定值進行GQL搜索
 
-您可以根據特定中繼資料欄位的確切值，例如標題、說明和作者，來建立資產。 GQL全文搜索功能僅提取那些元資料值與搜索查詢完全匹配的資產。 屬性的名稱（例如作者、標題等）和值會區分大小寫。
+您可以根據中繼資料欄位的確切值來搜尋資產，例如標題、說明和製作程式。 GQL全文搜索功能僅提取那些元資料值與搜索查詢完全匹配的資產。 屬性的名稱（建立者、標題等）和值區分大小寫。
 
 | 中繼資料欄位 | Facet值與使用 |
 |---|---|
@@ -157,8 +157,8 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 | 產生器 | 建立者：John |
 | 位置 | 位置： NA |
 | 說明 | 說明：「範例影像」 |
-| 製作工具 | 創作工具：「Adobe Photoshop CC 2015」 |
-| 版權擁有者 | copyrightowner:「Adobe Systems」 |
+| 製作工具 | 創作工具：「Adobe Photoshop CC2015」 |
+| 版權擁有者 | 版權人：「Adobe Systems」 |
 | 參與者 | 投稿人：John |
 | 使用條款 | 使用條款：「保留CopyRights」 |
 | 建立日期 | 已建立：YYYY-MM-DDTHH |
@@ -167,7 +167,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 | 關閉時間 | offtime:YYYY-MM-DDTHH |
 | 時間範圍（過期的dateontime,offtime） | facet欄位：下限……上界 |
 | 路徑 | /content/dam/&lt;資料夾名稱> |
-| PDF 標題 | pdftitle:「Adobe檔案」 |
+| PDF 標題 | pdftitle:&quot;Adobe檔案&quot; |
 | 主旨 | 主旨：「訓練」 |
 | 標記 | 標籤：「位置與旅行」 |
 | 類型 | 類型：&quot;image\png&quot; |
@@ -175,13 +175,16 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 | 影像高度 | 高度：下限。上界 |
 | 人員 | 人：John |
 
-屬性路徑、限制、大小和orderby不能與任何其他屬性一起使用ORed。
+屬性`path`、`limit`、`size`和`orderby`不能與任何其他屬性搭配使用。
+
+<!-- TBD: Where are the limit, size, orderby properties defined?
+-->
 
 使用者產生屬性的關鍵字是屬性編輯器中的小寫欄位標籤，並移除空格。
 
 以下是複雜查詢的搜尋格式範例：
 
-* 若要顯示具有多個刻面欄位的所有資產(例如：title=John Doe and creator tool = Adobe Photoshop):`title:"John Doe" creatortool : Adobe*`
+* 若要顯示具有多個刻面欄位的所有資產(例如：title=John Doe和創作工具=Adobe Photoshop):`title:"John Doe" creatortool : Adobe*`
 * 若要在Facet值不是單字而是句子時顯示所有資產(例如：title=Scott Reynolds):`title:"Scott Reynolds"`
 * 若要顯示具有單一屬性多個值的資產(例如：title=Scott Reynolds或John Doe):`title:"Scott Reynolds" OR "John Doe"`
 * 若要顯示屬性值以特定字串開頭的資產(例如：標題是Scott Reynolds):`title:Scott*`
@@ -189,27 +192,27 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 * 若要顯示包含特定字串的屬性值的資產(例如：標題=巴塞爾會議室):`title:*Meeting*`
 * 若要顯示包含特定字串且具有特定屬性值的資產(例如：在具有title=John Doe的資產中搜尋字串Adobe):`*Adobe* title:"John Doe"`
 
-## 從其他AEM產品或介面{#beyondomnisearch}搜尋資產
+## 從其他產AEM品或介面搜尋資產{#beyondomnisearch}
 
-Adobe Experience Manager(AEM)將DAM存放庫與各種其他AEM解決方案連結，讓您更快速地存取數位資產，並簡化創意工作流程。 任何資產搜尋都從瀏覽或搜尋開始。 在不同的曲面和解決方案上，搜索行為基本保持不變。 有些搜尋方法會隨著目標對象、使用案例和使用者介面而變更，而且AEM解決方案的使用者介面會有所不同。 以下連結說明個別解決方案的特定方法。 本文將說明普遍適用的提示和行為。
+Adobe Experience Manager(AEM)將DAM存放庫與各種其他解決方案連AEM接，讓您更快速存取數位資產並簡化創意工作流程。 任何資產搜尋都從瀏覽或搜尋開始。 在不同的曲面和解決方案上，搜索行為基本保持不變。 有些搜尋方法會隨著目標對象、使用案例和使用者介面而改變，而且各解決方案的使用者介AEM面也不同。 以下連結說明個別解決方案的特定方法。 本文將說明普遍適用的提示和行為。
 
-### 從Adobe Asset Link面板{#aal}搜尋資產
+### 從「Adobe資產連結」面板{#aal}搜尋資產
 
-使用Adobe Asset Link，創意專業人員現在可以存取儲存在AEM Assets中的內容，而不需離開支援的Adobe Creative Cloud應用程式。 創意人員可使用Creative Cloud應用程式中的應用程式內面板，順暢地瀏覽、搜尋、結帳和結帳資產：Photoshop、Illustrator和InDesign。 資產連結也可讓使用者搜尋視覺上類似的結果。 視覺化搜尋顯示結果由Adobe Sensei的機器學習演算法提供支援，並協助使用者尋找美學上類似的影像。 請參閱「使用Adobe資產連結搜尋及瀏覽資產」。[](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)
+使用Adobe資產連結，創意專業人員現在可以存取儲存在AEM Assets的內容，而不需離開支援的Adobe Creative Cloud應用程式。 創意人員可使用Creative Cloud應用程式中的應用程式內面板，順暢地瀏覽、搜尋、結帳和登入資產：Photoshop,Illustrator和InDesign。 資產連結也可讓使用者搜尋視覺上類似的結果。 視覺搜尋顯示結果採用Adobe Sensei的機器學習演算法，並協助使用者尋找美學上類似的影像。 請參閱使用Adobe資產連結搜尋及瀏覽資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)。[
 
-### 在AEM案頭應用程式中搜尋資產{#desktopapp}
+### 在Experience Manager案頭應用程式{#desktop-app}中搜尋資產
 
-創意專業人員使用案頭應用程式，讓AEM Assets可輕鬆搜尋，並可在其本機案頭（Win或Mac）上使用。 創意人員可以輕鬆地在Mac Finder或Windows檔案總管中顯示所需資產、在案頭應用程式中開啟並在本機變更——這些變更會以儲存庫中建立的新版本儲存回AEM。 應用程式支援使用一或多個關鍵字*和？的基本搜尋 萬用字元和AND運算子。 請參閱案頭應用程式中的[瀏覽、搜尋和預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。
+創意專業人員使用案頭應用程式，讓AEM Assets可輕鬆搜尋，並可在其本機案頭（Win或Mac）上使用。 創意人員可以輕鬆地在Mac Finder或Windows檔案總管中顯示所需資產、在案頭應用程式中開啟，並在本機進行變更——這些變更會儲存回儲存庫中建立AEM的新版本。 應用程式支援使用一或多個關鍵字*和？的基本搜尋 萬用字元和AND運算子。 請參閱案頭應用程式中的[瀏覽、搜尋和預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。
 
-### 在品牌入口網站{#brandportal}中搜尋資產
+### 在品牌入口網站{#brand-portal}中搜尋資產
 
 業務線使用者和行銷人員使用品牌入口網站，以有效且安全的方式與延伸的內部團隊、合作夥伴和經銷商共用經過核准的數位資產。 請參閱品牌入口網站上的[搜尋資產](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html)。
 
-### 搜尋Adobe Stock影像{#adobestock-1}
+### 搜尋Adobe Stock影像{#adobe-stock2}
 
-在AEM使用者介面中，使用者可以搜尋Adobe Stock資產並授權所需的資產。 在Omnisearch欄位中新增`Location: Adobe Stock`。 您也可以使用&#x200B;**[!UICONTROL Filters]**&#x200B;面板來尋找所有授權或未授權的資產，或使用Adobe Stock檔案號碼搜尋特定資產。 請參閱「在AEM[中管理Adobe Stock影像」。](/help/assets/aem-assets-adobe-stock.md#usemanage)
+在使用者介AEM面中，使用者可搜尋Adobe Stock資產並授權所需資產。 在Omnisearch欄位中新增`Location: Adobe Stock`。 您也可以使用&#x200B;**[!UICONTROL Filters]**&#x200B;面板來尋找所有授權或未授權的資產，或使用Adobe Stock檔案號碼搜尋特定資產。 請參閱[管理](/help/assets/aem-assets-adobe-stock.md#usemanage)中的AEMAdobe Stock映像。
 
-### 搜尋動態媒體資產{#dynamicmedia}
+### 搜尋Dynamic Media資產{#search-dynamic-media-assets}
 
 您可以從&#x200B;**[!UICONTROL 「篩選器」]**&#x200B;面板中選取&#x200B;**[!UICONTROL 「動態媒體」]**>**[!UICONTROL 「集合」]**，以篩選動態媒體影像。這樣可以篩選並顯示影像集、旋轉木馬、混合媒體集和迴轉集等資產。在製作網頁時，作者可在內容尋找工具中搜尋集合。集合的篩選器可從快顯功能表中取得。
 
@@ -222,7 +225,7 @@ Adobe Experience Manager(AEM)將DAM存放庫與各種其他AEM解決方案連結
 
 ### 搜尋系列{#collections}
 
-AEM搜尋功能支援搜尋系列並搜尋系列中的資產。 請參閱[搜尋系列](/help/assets/manage-collections.md)。
+搜AEM尋功能支援搜尋系列和搜尋系列中的資產。 請參閱[搜尋系列](/help/assets/manage-collections.md)。
 
 ## 資產選擇器{#assetselector}
 
@@ -255,6 +258,7 @@ AEM搜尋功能支援搜尋系列並搜尋系列中的資產。 請參閱[搜尋
 * [!DNL Experience Manager] 在您從搜尋結果中選取資產屬性，然後取消搜尋後，可能會繼續顯示搜尋詞。  <!-- (CQ-4273540) -->
 * 搜索資料夾或檔案和資料夾時，不能對任何參數對搜索結果進行排序。
 * 如果您選擇`Return`而未在Omnisearch列中鍵入， [!DNL Experience Manager]將返回僅檔案而非資料夾的清單。 如果您不使用關鍵字而專門搜索資料夾，[!DNL Experience Manager]不會返回任何結果。
+* 您可以對資料夾執行全文搜尋。 指定搜尋詞，讓搜尋生效。
 
 視覺搜尋或相似性搜尋有下列限制：
 
@@ -275,7 +279,7 @@ AEM搜尋功能支援搜尋系列並搜尋系列中的資產。 請參閱[搜尋
 * 全文搜索支援`-`和`^`等運算子。 要將這些字母作為字串文本搜索，請用雙引號將搜索表達式括起來。 例如，請使用`"Notebook - Beauty"`取代`Notebook - Beauty`。
 * 如果搜尋結果太多，請將所要資產的搜尋範圍限制為[](#scope)為零。 當您對如何更好地尋找所需資產（例如特定檔案類型、特定位置、特定中繼資料等）有一些概念時，效果最佳。
 
-* **標籤**:標籤可協助您將可以更有效率地瀏覽和搜尋的資產分類。標籤有助於將適當的分類傳播給其他用戶和工作流。 [!DNL Experience Manager] 提供使用Adobe Sensei人為智慧服務自動標籤資產的方法，這些服務在使用和訓練中不斷改進對資產的標籤。當您搜尋資產時，如果您的帳戶已啟用功能，智慧標籤會加入。 它可與內建搜尋功能搭配使用。 請參閱[搜尋行為](#searchbehavior)。 若要最佳化搜尋結果的顯示順序，您可以[提升少數選取資產的搜尋排名](#searchrank)。
+* **標籤**:標籤可協助您將可以更有效率地瀏覽和搜尋的資產分類。標籤有助於將適當的分類傳播給其他用戶和工作流。 [!DNL Experience Manager] 提供使用Adobe Sensei人為智慧型服務自動標籤資產的方法，讓您在使用和訓練中更能標籤資產。當您搜尋資產時，如果您的帳戶已啟用功能，智慧標籤會加入。 它可與內建搜尋功能搭配使用。 請參閱[搜尋行為](#searchbehavior)。 若要最佳化搜尋結果的顯示順序，您可以[提升少數選取資產的搜尋排名](#searchrank)。
 
 * **索引**:搜尋結果中只會傳回已建立索引的中繼資料和資產。為了獲得更好的覆蓋面和效能，請確保正確編製索引並遵循最佳做法。 請參閱[索引](#searchindex)。
 
@@ -413,7 +417,7 @@ You can search for digital assets based on one or more of the following properti
 
 對搜尋結果排序，以更快發現所需資產。 只有當您從&#x200B;**[!UICONTROL Filters]**&#x200B;面板中選擇&#x200B;**[[!UICONTROL Files]](#searchui)**&#x200B;時，才能在清單視圖中對搜索結果進行排序。 [!DNL Assets]使用伺服器端排序功能，快速排序資料夾或搜尋查詢結果中的所有資產 (無論多少)。伺服器端排序比用戶端排序提供更快速且更精確的結果。
 
-在清單檢視中，您可以像排序任何資料夾中的資產一樣，對搜尋結果進行排序。 排序功能適用於這些欄——名稱、標題、狀態、維度、大小、評分、使用狀況、（日期）建立、（日期）修改、（日期）發佈、工作流程和檢出。
+在清單檢視中，您可以像排序任何資料夾中的資產一樣，對搜尋結果進行排序。 排序適用於這些列— 「名稱」、「標題」、「狀態」、「Dimension」、「大小」、「評級」、「使用」、「（建立日期）」、「（修改日期）」、「（發佈日期）」、「工作流」和「簽出」。
 
 有關排序功能的限制，請參見[limitations](#limitations)。
 
