@@ -3,9 +3,9 @@ title: 設定 Dynamic Media Cloud Service
 description: 瞭解如何將Adobe Experience Manager的Dynamic Media設為Cloud Service。
 topic: 管理員
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: eb00eb6edaebc4dd0a16a99e1223bb806fa7abd9
 workflow-type: tm+mt
-source-wordcount: '3883'
+source-wordcount: '4017'
 ht-degree: 4%
 
 ---
@@ -21,8 +21,8 @@ ht-degree: 4%
 
 有了新的架構，Experience Manager負責主要來源資產並與Dynamic Media同步處理及發佈資產：
 
-1. 將主源資產上載到時AEM，將其複製到Dynamic Media。 此時，Dynamic Media會處理所有資產處理和轉譯產生，例如視訊編碼和影像的動態變體。
-1. 產生轉譯後，您AEM可以安全地存取和預覽遠端Dynamic Media轉譯(不會將二進位檔傳回AEM執行個體)。
+1. 當主要來源資產作為Cloud Service上傳到Adobe Experience Manager時，它將複製到Dynamic Media。 此時，Dynamic Media會處理所有資產處理和轉譯產生，例如視訊編碼和影像的動態變體。
+1. 產生轉譯後，Experience ManagerCloud Service可以安全地存取和預覽遠端Dynamic Media轉譯(不會以Cloud Service實例的形式將二進位檔案傳回Experience Manager)。
 1. 在內容準備好發佈及核准後，它會觸發Dynamic Media服務將內容推送至傳送伺服器，並在CDN快取內容。
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
@@ -43,11 +43,11 @@ ht-degree: 4%
 
 ## (Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-If you are upgrading AEM Dynamic Media from 6.3 to 6.4 or 6.5 (which now includes the ability for zero downtime deployments), you are required to run the following curl command to migrate all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
+If you are upgrading Experience Manager as a Cloud Service Dynamic Media from 6.3 to 6.4 or 6.5 (which now includes the ability for zero downtime deployments), you are required to run the following curl command to migrate all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
 
 >[!NOTE]
 >
->If you run your AEM instance in compatibility mode--that is, you have the compatibility packaged installed--you do not need to run these commands.
+>If you run your Experience Manager as a Cloud Service instance in compatibility mode--that is, you have the compatibility packaged installed--you do not need to run these commands.
 
 For all upgrades, either with or without the compatibility package, you can copy the default, out-of-the-box viewer presets that originally came with Dynamic Media by running the following Linux curl command:
 
@@ -63,7 +63,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
-1. 在中AEM，點選AEM標誌以存取全域導覽主控台。
+1. 在Experience Manager為Cloud Service時，點選Experience Manager為Cloud Service標誌以存取全域導覽主控台。
 1. 在控制台左側，點選「工具」圖示，然後點選「**[!UICONTROL Cloud Services>Dynamic Media組態]**」。
 1. 在「Dynamic Media配置瀏覽器」頁面的左窗格中，點選&#x200B;**[!UICONTROL global]**（請勿點選或選取&#x200B;**[!UICONTROL global]**&#x200B;左側的資料夾圖示）。 然後點選「**[!UICONTROL 建立]**」。
 1. 在&#x200B;**[!UICONTROL 建立Dynamic Media組態]**&#x200B;頁面上，輸入標題、Dynamic Media帳戶電子郵件地址、密碼，然後選取您的地區。 此資訊是透過布建電子郵件中的Adobe提供給您。 如果您未收到此電子郵件，請聯絡Adobe客戶服務。
@@ -93,8 +93,8 @@ To migrate any custom viewer presets and configurations that you have created fr
    |---|---|
    | 公司 | Dynamic Media帳戶的名稱。 您可能有多個Dynamic Media帳戶用於不同的子品牌、部門或階移／生產環境。 |
    | 公司根資料夾路徑 | 您公司的根資料夾路徑。 |
-   | 發佈資產 | 您可以從下列三個選項中選擇：<br>**[!UICONTROL Immedialed ]**:上傳資產時，系統會收錄資產並立即提供URL/內嵌。 發佈資產不需要使用者干預。<br>**[!UICONTROL 啟動後]**:您必須先明確發佈資產，才能提供URL/內嵌連結。<br>**[!UICONTROL 選擇性發佈&#x200B;]**:資產會自動發佈，僅供安全預覽。您也可以明確發佈至AEMDMS7，而不發佈至DMS7，以便在公共網域中傳送。 未來，此選項打算將資產發佈至AEMDynamic Media，並將資產發佈至彼此互不相容。 也就是說，您可以將資產發佈到DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您可以只發佈資產以供AEM預覽；這些相同的資產不會發佈在DMS7中，以便在公共域中交付。 |
-   | 安全預覽伺服器 | 可讓您指定安全轉譯預覽伺服器的URL路徑。 也就是說，在產生轉譯後，AEM可以安全地存取和預覽遠端Dynamic Media轉譯(不會將二進位檔傳回AEM執行個體)。<br>除非您有特殊安排來使用您公司的伺服器或特殊伺服器，否則Adobe建議您依指定的方式保留此設定。 |
+   | 發佈資產 | 您可以從下列三個選項中選擇：<br>**[!UICONTROL Immedialed ]**:上傳資產時，系統會收錄資產並立即提供URL/內嵌。 發佈資產不需要使用者干預。<br>**[!UICONTROL 啟動後]**:您必須先明確發佈資產，才能提供URL/內嵌連結。<br>**[!UICONTROL 選擇性發佈&#x200B;]**:資產會自動發佈，僅供安全預覽。也可以明確地以Cloud Service形式發佈到Experience Manager，而不發佈到DMS7，以便在公共域中發佈。 未來，這個選項打算以Cloud Service形式將資產發佈至Experience Manager，並將資產發佈至Dynamic Media，彼此排斥。 也就是說，您可以將資產發佈到DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您可以獨家以Experience Manager方式發佈資產做為預覽Cloud Service;這些相同的資產不會發佈在DMS7中，以便在公共域中交付。 |
+   | 安全預覽伺服器 | 可讓您指定安全轉譯預覽伺服器的URL路徑。 也就是說，在產生轉譯後，Experience ManagerCloud Service可以安全地存取和預覽遠端Dynamic Media轉譯(沒有二進位檔會以Cloud Service例項傳回Experience Manager)。<br>除非您有特殊安排來使用您公司的伺服器或特殊伺服器，否則Adobe建議您依指定的方式保留此設定。 |
    | 同步處理所有內容 | 依預設選取。 如果您想要選擇性地包含或排除同步至Dynamic Media的資產，請取消選取此選項。 取消選擇此選項可讓您從以下兩種Dynamic Media同步模式中選擇：<br>**[!UICONTROL Dynamic Media同步模式]**<br>**[!UICONTROL 預設啟用&#x200B;]**:預設情況下，配置將應用於所有資料夾，除非您專門標籤要排除的資料夾。 <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 依預設停用]**:在您明確標籤要同步到Dynamic Media的選定資料夾之前，配置不會應用於任何資料夾。<br>若要將選取的檔案夾標示為同步至Dynamic Media，請選取資產檔案夾，然後在工具列中，點選「屬 **[!UICONTROL 性」]**。在&#x200B;**[!UICONTROL Details]**&#x200B;標籤的&#x200B;**[!UICONTROL Dynamic Media同步模式]**&#x200B;下拉式清單中，從下列三個選項中選擇。 完成後，點選&#x200B;**[!UICONTROL Save]**。 *記住：如果您選取「同步所有內容工具」，這三個&#x200B;**選項將**無法使用。* 另請參 [閱Dynamic Media資料夾層級的「使用選擇性發佈」。](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 繼承&#x200B;]**:資料夾上沒有明確的同步值。資料夾會從其上級資料夾或雲端設定的預設模式繼承同步值。 繼承的詳細狀態會透過工具提示顯示。<br>**[!UICONTROL 啟用子檔案夾]**:將所有內容包含在此子樹中，以便與Dynamic Media同步。資料夾特定的設定會覆寫雲端設定中的預設模式。<br>**[!UICONTROL 子檔案夾已停用&#x200B;]**:排除此子樹中的所有項目，以免與Dynamic Media同步。 |
 
    >[!NOTE]
@@ -111,19 +111,18 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    >[!IMPORTANT]
    >
-   >當新的Dynamic Media配置完成設定時，您將在收件箱中收到狀態AEM通知。
+   >當新的Dynamic Media配置完成設定時，您將作為Cloud Service的收件箱在Experience Manager中收到狀態通知。
    >
    >此收件箱通知會通知您配置是否成功。
    > 如需詳細資訊，請參閱[疑難排解新的Dynamic Media配置](#troubleshoot-dm-config)和[您的收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)。
 
-1. 若要在發佈Dynamic Media內容之前安全地預覽，您必須「允許清單」作者AEM例項以連線至Dynamic Media。 若要設定此動作，請執行下列動作：
+1. 若要在發佈前安全地預覽Dynamic Media內容，Experience Manager為Cloud Service預設會使用Token型驗證。 不過，您也可以「允許清單」更多IP，讓使用者存取安全地預覽內容。 若要設定此動作，請執行下列動作：<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
-   * 開啟[Dynamic Media經典案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。 您的認證和登入詳細資訊是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
-   * 在頁面右上角的導覽列上，按一下「設定>應用程式設定>發佈設定>影像伺服器」]**。**[!UICONTROL 
-
-   * 在「影像伺服器發佈」頁面的「發佈內容」下拉式清單中，選取「測試影像伺服」**[!UICONTROL 。]**
+   * 開啟[Dynamic Media經典案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。 您的認證和登入詳細資訊是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡Adobe客戶服務。
+   * 在頁面右上角的導覽列上，點選「Setup **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**」。
+   * 在「影像伺服器發佈」頁面的「發佈內容」下拉式清單中，選取「測試影像伺服」**[!UICONTROL 。****]**
    * 對於「Client Address Filter」（客戶端地址過濾器），請按一下「Add **[!UICONTROL （添加]**）」。
-   * 若要啟用（開啟）此位址，請選取核取方塊，然後輸入AEM Author例項的IP位址（而非Dispatcher IP）。
+   * 要啟用（開啟）該地址，請選中該複選框，然後輸入Experience Manager作者實例的IP地址（而非Dispatcher IP）。
    * 按一下「**[!UICONTROL 儲存]**」。
 
 您現在已完成基本配置；你準備好用Dynamic Media了。
@@ -132,7 +131,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ### 診斷新的Dynamic Media配置{#troubleshoot-dm-config}
 
-當新的Dynamic Media配置完成設定時，您將在收件箱中收到狀態AEM通知。 此通知會通知您配置是否成功，如下列收件箱中的相應影像所示。
+當新的Dynamic Media配置完成設定時，您將作為Cloud Service的收件箱在Experience Manager中收到狀態通知。 此通知會通知您配置是否成功，如下列收件箱中的相應影像所示。
 
 ![Experience Manager收件匣成功](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
 
@@ -142,7 +141,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 **要診斷新的Dynamic Media配置故障**
 
-1. 在頁面的右上角附AEM近，點選鈴狀圖示，然後點選&#x200B;**[!UICONTROL 檢視全部]**。
+1. 在Experience Manager的右上角附近，點選Cloud Service圖示，然後點選「View All」（檢視全部）]**。**[!UICONTROL 
 1. 在「收件匣」頁面上，點選成功通知以讀取設定狀態和記錄檔的概述。
 
    如果設定失敗，請點選類似下列螢幕擷取的失敗通知。
@@ -168,7 +167,7 @@ Dynamic Media的密碼過期時間設為從當前系統日期開始100年。
 
 當您點選&#x200B;**[!UICONTROL 編輯Dynamic Media組態]**&#x200B;頁面右上角的&#x200B;**[!UICONTROL Save]**&#x200B;時，會儲存變更的密碼。
 
-1. 在中AEM，點選AEM標誌以存取全域導覽主控台。
+1. 在Experience Manager為Cloud Service時，點選Experience Manager為Cloud Service標誌以存取全域導覽主控台。
 1. 在控制台左側，點選「工具」圖示，然後點選「**[!UICONTROL Cloud Services>Dynamic Media組態」。]**
 1. 在「Dynamic Media配置瀏覽器」頁面的左窗格中，按一下&#x200B;**[!UICONTROL global]**。請勿點選或選取&#x200B;**[!UICONTROL global]**&#x200B;左側的資料夾圖示。 然後，點選「**[!UICONTROL 編輯」。]**
 1. 在&#x200B;**[!UICONTROL 編輯Dynamic Media配置]**&#x200B;頁面的&#x200B;**[!UICONTROL 密碼]**&#x200B;欄位正下方，按一下&#x200B;**[!UICONTROL 更改密碼。]**
@@ -225,9 +224,10 @@ Dynamic Media的密碼過期時間設為從當前系統日期開始100年。
 
 要開啟「應用程式常規設定」頁，請在「Dynamic Media經典全局導航」欄中按一下「設定」>「應用程式設定」>「常規設定」。]****[!UICONTROL 
 
-**[!UICONTROL Servers]**  —— 在帳戶布建時，Dynamic Media會自動為您的公司提供指派的伺服器。這些伺服器可用來建構網站和應用程式的URL字串。 這些URL呼叫是您帳戶專屬的。 除非得到支援明確指示，否則不要更改任何伺服器AEM名稱。
+**[!UICONTROL Servers]**  —— 在帳戶布建時，Dynamic Media會自動為您的公司提供指派的伺服器。這些伺服器可用來建構網站和應用程式的URL字串。 這些URL呼叫是您帳戶專屬的。 除非Experience Manager作為Cloud Service支援明確指示，否則不要更改任何伺服器名稱。
 **[!UICONTROL 覆寫影像]** -Dynamic Media不允許兩個檔案具有相同名稱。每個項目的URL ID（檔案名稱減去副檔名）必須是唯一的。 這些選項指定如何上傳取代資產：不論是替換原稿還是變成重複。 重複資產會以&quot;-1&quot;（例如chair.tif會更名為chair-1.tif）重新命名。 這些選項會影響上傳至不同於原始檔案夾的資產，或具有不同於原始檔案副檔名的資產。
-**[!UICONTROL 在目前資料夾中覆寫相同的基本影像名稱／副檔名]** -此選項是最嚴格的取代規則。它要求您將取代影像上傳至與原始影像相同的檔案夾，且檔案副檔名與原始影像相同。 如果未滿足這些要求，則會建立重複項。 若要維持與AEM的一致性，請一律選擇「覆寫目前資料夾中的基本影像名稱／副檔名&#x200B;]**」。**[!UICONTROL **[!UICONTROL 在任何資料夾中覆寫基本資產名稱／副檔名]** -需要取代的影像與原始影像具有相同的副檔名。例如，chair.jpg必須取代chair.jpg，而非chair.tif。 不過，您可以將取代影像上傳至原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中；在檔案的原始位置中無法再找到該檔案。
+**[!UICONTROL 在目前資料夾中覆寫相同的基本影像名稱／副檔名]** -此選項是最嚴格的取代規則。它要求您將取代影像上傳至與原始影像相同的檔案夾，且檔案副檔名與原始影像相同。 如果未滿足這些要求，則會建立重複項。 要與Experience Manager保持一致性，請始終選擇&#x200B;**[!UICONTROL 在當前資料夾中覆蓋，相同的基本映像名／副檔名]**。
+**[!UICONTROL 在任何資料夾中覆寫基本資產名稱／副檔名]** -需要取代的影像與原始影像具有相同的副檔名。例如，chair.jpg必須取代chair.jpg，而非chair.tif。 不過，您可以將取代影像上傳至原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中；在檔案的原始位置中無法再找到該檔案。
 **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱(不論副檔名為何]** )-此選項是最包含的取代規則。您可以將取代影像上傳至原始檔案夾以外的其他檔案夾、以不同的副檔名上傳檔案，以及取代原始檔案。 如果原始檔案位於不同的檔案夾中，則取代影像會位於上傳檔案的新檔案夾中。
 **[!UICONTROL 預設色彩描述檔]** -如需詳細 [資訊，](#configuring-color-management) 請參閱設定色彩管理。依預設，當您選取「轉譯」時，系統會顯示15個轉譯，當您在資產的詳細資料檢視中選取「檢視器 ******** 」時，系統會顯示15個檢視器預設集。您可以提高此限制。請參 [閱增加或減少顯示的影像預設集數目](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) , [或增加或減少顯示的檢視器預設集數目](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)。
 
@@ -275,7 +275,7 @@ Dynamic Media色彩管理可讓您為正確資產加上色彩。 透過色彩校
 
 **要編輯支援格式的MIME類型**
 
-1. 在AEM中，單AEM擊徽標以訪問全局導航控制台，然後按一下&#x200B;**[!UICONTROL 常規>CRXDE Lite]**。
+1. 在Experience ManagerCloud Service中，按一下Experience Manager作為Cloud Service徽標以訪問全局導航控制台，然後按一下&#x200B;**[!UICONTROL 常規>CRXDE Lite]**。
 1. 在左側導軌中，導覽至下列項目：
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -293,7 +293,7 @@ Dynamic Media色彩管理可讓您為正確資產加上色彩。 透過色彩校
    * 重複步驟3-4以編輯更多MIME類型。
    * 在CRXDE Lite頁的菜單欄上，按一下「全部保存」。]****[!UICONTROL 
 
-1. 在頁面的左上角，點選&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;返回AEM。
+1. 在頁面的左上角，點選&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;以返回Experience Manager作為Cloud Service。
 
 #### 為不支援的格式添加MIME類型{#adding-mime-types-for-unsupported-formats}
 
@@ -301,7 +301,7 @@ Dynamic Media色彩管理可讓您為正確資產加上色彩。 透過色彩校
 
 **要為不支援的格式添加MIME類型**
 
-1. 從AEM中，按一下&#x200B;**[!UICONTROL 工具>操作> Web控制台。]**
+1. 從Experience Manager作為Cloud Service，點選&#x200B;**[!UICONTROL 工具>操作> Web控制台。]**
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -327,8 +327,8 @@ Dynamic Media色彩管理可讓您為正確資產加上色彩。 透過色彩校
 
    此時，您可以關閉具有開啟的「Adobe Experience ManagerWeb控制台配置」頁的瀏覽器頁籤。
 
-1. 返回具有開啟的控制台的瀏覽器AEM頁籤。
-1. 從AEM，點選&#x200B;**[!UICONTROL 工具>一般>CRXDE Lite]**。
+1. 返回瀏覽器頁籤，該頁籤將開啟的Experience Manager作為Cloud Service控制台。
+1. 從Experience Manager作為Cloud Service，點選&#x200B;**[!UICONTROL 工具>一般>CRXDE Lite]**。
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -441,11 +441,11 @@ Adobe建議對PDF、PostScript®和PSD檔案使用下列「已調整」的工作
 
 ### (Optional) Filtering assets for replication {#optional-filtering-assets-for-replication}
 
-In non-Dynamic Media deployments, you replicate *all* assets (both images and video) from your AEM author environment to the AEM publish node. This workflow is necessary because the AEM publish servers also deliver the assets.
+In non-Dynamic Media deployments, you replicate *all* assets (both images and video) from your Experience Manager as a Cloud Service author environment to the Experience Manager as a Cloud Service publish node. This workflow is necessary because the Experience Manager as a Cloud Service publish servers also deliver the assets.
 
-However, in Dynamic Media deployments, because assets are delivered by way of the cloud service, there is no need to replicate those same assets to AEM publish nodes. Such a "hybrid publishing" workflow avoids extra storage costs and longer processing times to replicate assets. Other content, such as Site pages, continue to be served from the AEM publish nodes.
+However, in Dynamic Media deployments, because assets are delivered by way of the cloud service, there is no need to replicate those same assets to Experience Manager as a Cloud Service publish nodes. Such a "hybrid publishing" workflow avoids extra storage costs and longer processing times to replicate assets. Other content, such as Site pages, continue to be served from the Experience Manager as a Cloud Service publish nodes.
 
-The filters provide a way for you to *exclude* assets from being replicated to the AEM publish node.
+The filters provide a way for you to *exclude* assets from being replicated to the Experience Manager as a Cloud Service publish node.
 
 #### Using default asset filters for replication {#using-default-asset-filters-for-replication}
 
@@ -486,7 +486,7 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
 
 #### Customizing asset filters for replication {#customizing-asset-filters-for-replication}
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap the **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. In Experience Manager as a Cloud Service, tap the Experience Manager as a Cloud Service logo to access the global navigation console and tap the **[!UICONTROL Tools > General > CRXDE Lite]**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` to review the filters.
 
    ![chlimage_1-17](assets/chlimage_1-2.png)
