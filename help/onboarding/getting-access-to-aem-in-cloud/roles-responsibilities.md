@@ -2,15 +2,22 @@
 title: 角色與責任
 description: 角色與責任
 translation-type: tm+mt
-source-git-commit: 843e425e446a4e9ce140fe7d7111b69bd9f4545e
+source-git-commit: 34eecf5d210376c534ad3c1918db466226c2f9c5
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 18%
+source-wordcount: '500'
+ht-degree: 15%
 
 ---
 
 
 # Adobe Experience Manager是Cloud Service:角色和責任{#roles-responsibilities}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_raci"
+>title="角色與責任"
+>abstract="Adobe提供一組服務，以Experience Manager的供應、開發、轉移和生產為Cloud Service。 為了盡可能高效地開發和部署解決方案，客戶和定制者必須瞭解並履行其職責，如此處所述。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="選擇合適的人、合適的角色"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="協調KPI"
 
 <br></br>
 Adobe提供一組服務，以Experience Manager的供應、開發、轉移和生產為Cloud Service。為了盡可能高效地開發和部署解決方案，客戶和定制者必須瞭解並履行其職責，如下所述。
