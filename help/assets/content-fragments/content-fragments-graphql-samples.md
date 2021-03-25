@@ -2,10 +2,10 @@
 title: 學習如何搭配使用GraphQL AEM —— 範例內容與查詢
 description: 學習搭配使用GraphQL AEM —— 範例內容與查詢。
 translation-type: tm+mt
-source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
+source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 5%
+source-wordcount: '1396'
+ht-degree: 6%
 
 ---
 
@@ -29,65 +29,6 @@ ht-degree: 5%
 
 * 以及一些[範例GraphQL查詢](#graphql-sample-queries)，基於範例內容片段結構（內容片段模型和相關內容片段）。
 
-## GraphQL for AEM —— 擴展集{#graphql-extensions}摘要
-
-使用GraphQL對查詢進行基本操AEM作，以符合標準GraphQL規範。 對於具有以下擴展AEM名的GraphQL查詢：
-
-* 如果您需要單一結果：
-   * 使用模型名稱；eg城市
-
-* 如果您希望得到結果清單：
-   * 將`List`添加到型號名稱；例如，`cityList`
-   * 請參閱[範例查詢——所有城市的所有資訊](#sample-all-information-all-cities)
-
-* 如果要使用邏輯OR:
-   * 使用` _logOp: OR`
-   * 請參閱[示例查詢——名稱為&quot;Jobs&quot;或&quot;Smith&quot;](#sample-all-persons-jobs-smith)的所有人員
-
-* 邏輯AND也存在，但是是（通常）隱式的
-
-* 您可以查詢與內容片段模型中欄位對應的欄位名稱
-   * 請參閱[範例查詢——公司CEO和員工的完整詳細資訊](#sample-full-details-company-ceos-employees)
-
-* 除了模型中的欄位外，還有一些系統產生的欄位（前面有底線）:
-
-   * 針對內容：
-
-      * `_locale` :揭露語言；基於語言管理器
-         * 請參閱[特定地區設定之多個內容片段的範例查詢](#sample-wknd-multiple-fragments-given-locale)
-      * `_metadata` :顯示片段的中繼資料
-         * 請參閱[中繼資料的範例查詢——列出標題為GB](#sample-metadata-awards-gb)的獎項中繼資料
-      * `_model` :允許查詢內容片段模型（路徑和標題）
-         * 請參閱[範例查詢，以瞭解來自模型的內容片段模型](#sample-wknd-content-fragment-model-from-model)
-      * `_path` :儲存庫內內容片段的路徑
-         * 請參閱[範例查詢——單一特定城市片段](#sample-single-specific-city-fragment)
-      * `_reference` :顯示參照；包括RTF編輯器中的內嵌引用
-         * 請參閱[使用預先擷取的參照的多個內容片段的範例查詢](#sample-wknd-multiple-fragments-prefetched-references)
-      * `_variation` :以顯示內容片段中的特定變化
-         * 請參閱[範例查詢——具有命名變數的所有城市](#sample-cities-named-variation)
-   * 及營運：
-
-      * `_operator` :適用特定運算子； `EQUALS`、 `EQUALS_NOT`、 `GREATER_EQUAL`、 `LOWER`、 `CONTAINS`、  `STARTS_WITH`
-         * 請參閱[示例查詢——所有名稱不為&quot;Jobs&quot;的人員](#sample-all-persons-not-jobs)
-         * 請參閱[範例查詢——所有冒險，其中`_path`以特定首碼](#sample-wknd-all-adventures-cycling-path-filter)開頭
-      * `_apply` :適用特定條件；例如，   `AT_LEAST_ONCE`
-         * 請參閱[範例查詢——篩選陣列上必須至少發生一次的項目](#sample-array-item-occur-at-least-once)
-      * `_ignoreCase` :在查詢時忽略大小寫
-         * 請參閱[示例查詢——名稱中包含SAN的所有城市，而不考慮大小寫](#sample-all-cities-san-ignore-case)
-
-
-
-
-
-
-
-
-
-
-* 支援GraphQL聯合類型：
-
-   * 使用`... on`
-      * 請參閱[範例查詢，以瞭解具有內容參考的特定模型內容片段](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL —— 使用示例內容片段結構{#graphql-sample-queries-sample-content-fragment-structure}的示例查詢
 
