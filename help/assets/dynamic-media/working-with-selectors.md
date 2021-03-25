@@ -3,7 +3,7 @@ title: 使用選取工具
 description: 瞭解您可在Dynamic Media選取互動式影像、互動式視訊和轉盤橫幅的素材時，使用的方法。
 topic: 業務從業人員
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 14%
@@ -87,7 +87,7 @@ ht-degree: 14%
 
 使用此選擇器來選擇影像以用於轉盤橫幅、互動式視訊、影像集、混合媒體集和回轉集。 在互動式視訊中，當您點選&#x200B;**[!UICONTROL 內容]**&#x200B;標籤中的&#x200B;**[!UICONTROL 選取資產]**&#x200B;時，即可使用資產選擇器。 在「轉盤集」中，當您建立投影片時，可使用資產選擇器。 在影像集、混合媒體集和回轉集中，當您分別建立影像集、混合媒體集或回轉集時，就可使用資產選擇器。
 
-如需詳細資訊，請參閱[資產選擇器](/help/assets/search-assets.md#assetselector)。
+如需詳細資訊，請參閱[資產選擇器](/help/assets/search-assets.md#asset-selector)。
 
 1. 導覽至轉盤集並建立投影片。 或者，導覽至「互動式視訊」，前往&#x200B;**[!UICONTROL Content]**&#x200B;標籤，然後選取資產。 或者，建立混合媒體集、影像集或回轉集。
 1. 點選「資 **[!UICONTROL 產選擇器]** 」圖示 (含放大鏡的資料夾) 並導覽至資產。
