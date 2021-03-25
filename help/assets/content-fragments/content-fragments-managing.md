@@ -2,10 +2,10 @@
 title: 管理內容片段
 description: 內容片段會儲存為資產，因此主要是從資產主控台管理。
 translation-type: tm+mt
-source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
+source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
 workflow-type: tm+mt
-source-wordcount: '1593'
-ht-degree: 11%
+source-wordcount: '1616'
+ht-degree: 9%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->其中許多是[ Assets](/help/assets/manage-digital-assets.md)和／或[AEM案頭應用程式](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)的標準動作。
+>其中許多是[ Assets](/help/assets/manage-digital-assets.md)和／或[案頭應用程式AEM](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)的標準動作。
 
 ## 開啟片段編輯器{#opening-the-fragment-editor}
 
@@ -127,21 +127,15 @@ ht-degree: 11%
    * 按一下／點選片段連結（這取決於控制台檢視）。
    * 選擇片段，然後從工具欄中選擇&#x200B;**編輯**。
 
-   片段編輯器將開啟：
+1. 片段編輯器將會開啟。 視需要進行變更：
 
    ![片段編輯器](assets/cfm-managing-03.png)
 
-   >[!NOTE]
-   >
-   >1. 當內容頁面上已參考片段時，會顯示訊息。
-   >2. 使用&#x200B;**切換側面板**&#x200B;圖示可隱藏／顯示側面板。
-
-
-1. 進行更改後，根據需要使用&#x200B;**Save**&#x200B;或&#x200B;**Cancel**。
+1. 進行更改後，根據需要使用&#x200B;**保存並關閉**&#x200B;或&#x200B;**取消**。
 
    >[!NOTE]
    >
-   >「儲 **存** 」和「取 **消」都會退出編輯器——請參閱「**[](#save-cancel-and-versions) 儲存」、「取消」和「版本」，以取得有關這兩個選項如何對內容片段運作的完整資訊。
+   >**儲存並關閉**&#x200B;和&#x200B;**取消**&#x200B;都將退出編輯器——請參閱[儲存、取消和版本](#save-cancel-and-versions)，以取得有關這兩個選項如何對內容片段運作的完整資訊。
 
 ## 內容片段編輯器{#modes-actions-content-fragment-editor}中的模式和動作
 
@@ -167,19 +161,25 @@ ht-degree: 11%
 
 ![模式](assets/cfm-managing-top-toolbar.png)
 
+* 當內容頁面上已參考片段時，會顯示訊息。 您可以&#x200B;**關閉**&#x200B;訊息。
+
+* 使用&#x200B;**切換側面板**&#x200B;圖示可隱藏／顯示側面板。
+
 * 在片段名稱下方，您可以看到用於建立當前片段的[內容片段模型](/help/assets/content-fragments/content-fragments-models.md)的名稱：
 
    * 名稱也是一個將開啟模型編輯器的連結。
 
 * 查看碎片的狀態；例如，有關建立、修改或發佈時間的資訊。 狀態也會以色碼標示：
 
-   * 新增：灰色
-   * 草稿：藍色
-   * 已發佈：綠色
-   * 已修改：橘子
-   * 已停用：紅色
+   * **新增**:灰色
+   * **草稿**:藍色
+   * **已發佈**:綠色
+   * **已修改**:橘子
+   * **已停用**:紅色
 
-* **[發](#publishing-and-referencing-a-fragment)** 布片段。
+* 三個點(**...**)下拉式清單可存取其他動作：
+   * **[快速發佈](#publishing-and-referencing-a-fragment)**
+   * **[管理發佈](#publishing-and-referencing-a-fragment)**
 
 ## 保存、取消和{#save-cancel-and-versions}版本
 
@@ -203,7 +203,7 @@ ht-degree: 11%
 
    >[!CAUTION]
    >
-   >除了簡單地保存更改外，**Save**&#x200B;還會更新任何引用，並確保調度程式根據需要刷新。 這些變更可能需要時間處理。 因此，對於大型／複雜／重負載系統，效能可能會受到影響。
+   >除了簡單地保存更改外，**Save**&#x200B;還會更新任何引用，並確保Dispatcher按需刷新。 這些變更可能需要時間處理。 因此，對於大型／複雜／重負載系統，效能可能會受到影響。
    >
    >
    >使用&#x200B;**Save**，然後快速重新輸入片段編輯器以進行並儲存進一步的變更時，請記住這一點。
@@ -212,9 +212,9 @@ ht-degree: 11%
 
    將退出編輯器，而不保存最新的更改。
 
-編輯您的內容片段時，AEM會自動建立版本，以確保在您&#x200B;**Cancel**&#x200B;變更時，先前的內容可以復原：
+編輯內容片段時，會自AEM動建立版本，以確保在您&#x200B;**Cancel**&#x200B;變更時，舊版內容可以復原：
 
-1. 當開啟內容片段以進行編輯時，AEM會檢查是否有Cookie型Token，指出是否存在&#x200B;*編輯工作階段*:
+1. 當開啟內容片段進行編輯時AEM，會檢查是否存在Cookie型Token，指出&#x200B;*編輯工作階段*&#x200B;是否存在：
 
    1. 如果找到代號，則片段會視為現有編輯工作階段的一部分。
    2. 如果代號是&#x200B;*not*，且使用者開始編輯內容，則會建立版本，並傳送此新編輯工作階段的代號給用戶端，並儲存在Cookie中。
@@ -325,14 +325,14 @@ ht-degree: 11%
 如果您的片段是以模型為基礎，則應確定[模型已發佈](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
 如果您發佈模型尚未發佈的內容片段，則選擇清單會指出此點，而模型將會隨片段一起發佈。
 
-必須發佈內容片段，才能在發佈環境中使用。 可發佈：
+必須發佈內容片段才能在發佈環境中使用。 可發佈：
 
 * 建立後；使用「資產」控制台](#actions-for-a-content-fragment-assets-console)中可用的[動作。
 * 從[內容片段編輯器](#toolbar-actions-in-the-content-fragment-editor)。
 * 當您[發佈使用片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)的頁面時；片段將列在頁面參考中。
 
 >[!CAUTION]
-發佈和／或參考片段後，當作者開啟片段以進行重新編輯時，AEM會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
+發佈和／或參考片段後，當作AEM者開啟片段以進行重新編輯時，會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
 
 ## 刪除片段{#deleting-a-fragment}
 
