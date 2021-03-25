@@ -6,7 +6,7 @@ user-guide-description: 了解如何使用及管理 Experience Manager Assets as
 solution: Experience Manager, Experience Manager Assets
 feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 9f47f53524ab89c368ab260bc0d16e47ee81a230
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 71%
@@ -72,9 +72,9 @@ ht-degree: 71%
 + 內容片段 {#content-fragments}
    + [使用內容片段](content-fragments/content-fragments.md)
    + [使用內容片段和GraphQL進行無頭傳送](content-fragments/content-fragments-graphql.md)
-   + [管理內容片段](content-fragments/content-fragments-managing.md)
    + [為實例啟用內容片段功能](content-fragments/content-fragments-configuration-browser.md)
    + [內容片段模型](content-fragments/content-fragments-models.md)
+   + [管理內容片段](content-fragments/content-fragments-managing.md)
    + [變化 - 編寫片段內容](content-fragments/content-fragments-variations.md)
    + [內容片段關聯內容](content-fragments/content-fragments-assoc-content.md)
    + [中繼資料 - 片段屬性](content-fragments/content-fragments-metadata.md)
