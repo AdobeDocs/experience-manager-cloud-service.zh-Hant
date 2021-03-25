@@ -2,9 +2,9 @@
 title: 將您的數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '2017'
 ht-degree: 1%
 
 ---
@@ -174,8 +174,20 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 乾涸]:叫用大量擷取的測試執行。
    * [!UICONTROL 執行]:執行所選配置。
    * [!UICONTROL 停止]:終止活動配置。
+   * [!UICONTROL 排程]:設定單次或循環排程以收錄資產。
    * [!UICONTROL 工作狀態]:查看配置在正在進行的導入作業中使用或用於已完成作業時的狀態。
+   * [!UICONTROL 工作記錄]:作業的先前例項。
    * [!UICONTROL 檢視資產]:查看目標資料夾（如果存在）。
+
+   ![用於收錄機配置的工具列選項](assets/bulk-ingest-toolbar-options.png)
+
+若要排程一次性或循環性大量匯入，請依照下列步驟進行：
+
+1. 建立大量匯入設定。
+1. 選擇配置並從工具欄中選擇&#x200B;**[!UICONTROL Schedule]**。
+1. 設定一次性擷取或排程每小時、每日或每週排程。 按一下&#x200B;**[!UICONTROL 提交]**。
+
+   ![排程大量收錄工作](assets/bulk-ingest-schedule1.png)
 
 ## 使用案頭用戶端上傳資產{#upload-assets-desktop-clients}
 
