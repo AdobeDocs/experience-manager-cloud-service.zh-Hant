@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 開發方針
 description: AEM as a Cloud Service 開發方針
 translation-type: tm+mt
-source-git-commit: ce797518714a4919bcdb6187aeaaf35dd1cb76b4
+source-git-commit: e70135d7f59fc46c24f73f109d027f3536ffbbd7
 workflow-type: tm+mt
 source-wordcount: '2283'
 ht-degree: 1%
@@ -161,7 +161,6 @@ Developer Console提供一組工具，AEM可讓您在開發、階段和生產環
 ![開發控制台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
 對於「生產」程式，「開發人員主控台」的存取權是由Admin Console中的「雲端管理員——開發人員角色」定義，而對於沙盒程式，「開發人員主控台」則可供任何具有產品設定檔的使用者以Cloud Service的身分AEM存取。 對於所有程式，狀態轉儲都需要「Cloud Manager - Developer Role」，而且用戶還必須在作者和發佈服務的「用戶或管理員產品配置檔案」中定義，才能查看來自這兩個服務的狀態轉儲資料。 如需有關設定使用者權限的詳細資訊，請參閱[Cloud Manager檔案](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
-
 
 ### AEM Staging and Production Service {#aem-staging-and-production-service}
 
