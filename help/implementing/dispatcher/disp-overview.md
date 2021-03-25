@@ -3,9 +3,9 @@ title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
+source-git-commit: c11d8e36fe8ba120847c675f40e09a0388943d51
 workflow-type: tm+mt
-source-wordcount: '4113'
+source-wordcount: '4169'
 ht-degree: 6%
 
 ---
@@ -198,7 +198,21 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 它被調用為：`validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-該工具通過掃描模式為`conf.d/enabled_vhosts/*.vhost`的所有檔案來驗證Dispatcher配置是否使用了作為雲AEM服務支援的適當指令。 通過運行驗證器的allowlist命令，可以列出Apache配置檔案中允許的指令：
+該工具通過掃描模式為`conf.d/enabled_vhosts/*.vhost`的所有檔案來驗證Dispatcher配置是否使用了作為雲AEM服務支援的適當指令。
+
+在Windows上，dispatcher validator區分大小寫。 因此，如果不遵守配置所在路徑的大寫，則無法驗證配置，例如：
+
+```
+bin\validator.exe full src
+Cloud manager validator 2.0.xx
+2021/03/15 18:15:40 Dispatcher configuration validation failed:
+  conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
+  
+```
+
+通過從Windows資源管理器中複製並貼上路徑，然後在命令提示符下使用`cd`命令將該路徑複製並貼上到該路徑中，避免出現此錯誤。
+
+通過運行驗證器的allowlist命令，可以列出Apache配置檔案中允許的指令：
 
 ```
 $ validator allowlist
