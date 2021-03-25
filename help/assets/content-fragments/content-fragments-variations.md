@@ -2,10 +2,10 @@
 title: 變化 - 編寫片段內容
 description: 變數可讓您為片段製作內容，然後根據用途建立該內容的變數（如有需要）。
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
 workflow-type: tm+mt
-source-wordcount: '2186'
-ht-degree: 13%
+source-wordcount: '2236'
+ht-degree: 12%
 
 ---
 
@@ -35,13 +35,16 @@ ht-degree: 13%
 
 >[!CAUTION]
 >
->發佈和／或參考片段後，當作者開啟片段以進行重新編輯時，AEM會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
+>發佈和／或參考片段後，當作AEM者開啟片段以進行重新編輯時，會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
 
 ## 編寫您的內容{#authoring-your-content}
 
 當您開啟內容片段進行編輯時，預設會開啟&#x200B;**Valuations**&#x200B;標籤。 您可以在這裡為「主版」或您擁有的任何變體製作內容。 結構化片段包含在內容模型中定義的各種資料類型的欄位。
 
-您可以：
+例如：
+
+![全螢幕編](assets/cfm-variations-02.png)
+輯器您可以：
 
 * 直接在&#x200B;**Valuations**&#x200B;標籤中編輯
 
@@ -53,9 +56,7 @@ ht-degree: 13%
    * 檢視更多編輯選項（適用於[Rich Text](#rich-text)格式）
    * 訪問[操作](#actions)的範圍
 
-例如：
-
-![全螢幕編輯器](assets/cfm-variations-02.png)
+* 對於&#x200B;**片段參考**&#x200B;欄位，**[編輯內容片段](#fragment-references-edit-content-fragment)**&#x200B;選項可以使用，具體取決於模型定義。
 
 ### 全螢幕編輯器{#full-screen-editor}
 
@@ -164,8 +165,11 @@ ht-degree: 13%
 
 #### 編輯內容片段{#fragment-references-edit-content-fragment}
 
-將會開啟「編輯內容片段&#x200B;**」選項
-新的瀏覽器標籤，內容片段會在內容片段編輯器中開啟。**
+選項&#x200B;**編輯內容片段**&#x200B;將在新的編輯器頁籤（在相同的瀏覽器頁籤中）中開啟該片段。
+
+再次選擇原始標籤（例如&#x200B;**Little Pony Inc.**），將關閉此次頁籤（在本例中為&#x200B;**Adam Smith**）。
+
+![片段參考](assets/cfm-variations-editreference.png)
 
 #### 新內容片段 {#fragment-references-new-content-fragment}
 
@@ -240,6 +244,8 @@ ht-degree: 13%
    * 任何要刪除的句子都會以紅色強調顯示，並加上刪除。
    * 按一下任何反白顯示的句子，將它保留在摘要內容中。
    * 按一下任何未反白顯示的句子，即可將其刪除。
+   * 總結統計資料如下：**Actual**&#x200B;和&#x200B;**Target**-
+   * 您可以&#x200B;**預覽**&#x200B;變更。
 
    ![總結比較](assets/cfm-variations-06.png)
 
@@ -417,7 +423,7 @@ ht-degree: 13%
 
 ### 與主{#synchronizing-with-master}同步
 
-**** Masteris是內容片段的完整部分，根據定義，它包含內容的主版本，而變數則包含該內容的個別更新及自訂版本。更新主版時，這些更改可能也與變化有關，因此需要傳播到它們。
+**** Masteris是內容片段的完整部分，根據定義，它包含內容的主版本，而變數則包含該內容的個別更新及自訂版本。更新主版時，這些更改可能也與變化相關，因此需要傳播到變化。
 
 在編輯變數時，您可以存取動作，以便將變數的目前元素與「主版」同步。 這可讓您自動將對「主版」所做的變更複製到所需的變更。
 
