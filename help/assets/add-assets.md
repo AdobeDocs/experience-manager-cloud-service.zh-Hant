@@ -2,9 +2,9 @@
 title: 將您的數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
 translation-type: tm+mt
-source-git-commit: d66377444815123d7a4db3c5e9e04b2970841b13
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
@@ -118,7 +118,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >如果啟用「資產前瞻分析」以追蹤[!DNL Adobe Analytics]的曝光或點按次數，則重新產生的資產ID會使[!DNL Analytics]上為資產擷取的資料無效。
 
-若要保留[!DNL Assets]中的重複資產，請按一下「保留&#x200B;**[!UICONTROL 」。]**&#x200B;若要刪除您上傳的重複資產，請點選／按一下「刪除&#x200B;**[!UICONTROL 」。]**
+若要保留[!DNL Assets]中的重複資產，請按一下「保留&#x200B;**[!UICONTROL 」。]**&#x200B;若要刪除您上傳的重複資產，請按一下「刪除」。****
 
 ### 檔案名稱處理與禁止字元{#filename-handling}
 
