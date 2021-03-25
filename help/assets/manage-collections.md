@@ -4,7 +4,7 @@ description: 瞭解Adobe Experience Manager資產中的收集概念。 瞭解如
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '2397'
 ht-degree: 19%
@@ -185,7 +185,7 @@ AdobeEnterprise Manager資產可讓您大量編輯許多系列的中繼資料。
 
 >[!NOTE]
 >
->大量編輯方法適用於系列中的可用資產。 對於跨資料夾可用或符合一般准則的資產，可在搜尋](/help/assets/search-assets.md#metadataupdates)後，大量更新中繼資料。[
+>大量編輯方法適用於系列中的可用資產。 對於跨資料夾可用或符合一般准則的資產，可在搜尋](/help/assets/search-assets.md#metadata-updates)後，大量更新中繼資料。[
 
 1. 從系列控制台中，選取您要編輯的系列。
 1. 在工具列中點選／按一下「屬性&#x200B;****」，以開啟所選系列的「屬性」頁面。
