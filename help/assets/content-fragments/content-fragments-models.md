@@ -2,9 +2,9 @@
 title: 內容片段模型
 description: 內容片段模型可用來建立包含結構化內容的內容片段。
 translation-type: tm+mt
-source-git-commit: 3538c03a6a455cd22423ca5a4fd69c1fe57b3e5e
+source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
 workflow-type: tm+mt
-source-wordcount: '2156'
+source-wordcount: '2177'
 ht-degree: 7%
 
 ---
@@ -116,7 +116,7 @@ ht-degree: 7%
       * 根據適當的模型建立新的內容片段
 * **JSON 物件**
    * 允許內容片段作者在片段的對應元素中輸入JSON語法。
-      * 若要允許AEM儲存您已從其他服務複製／貼上的直接JSON。
+      * 若要AEM允許儲存您已從其他服務複製／貼上的直接JSON。
       * JSON將會傳遞，並在GraphQL中輸出為JSON。
       * 在內容片段編輯器中包含JSON語法反白顯示、自動完成和錯誤反白顯示。
 
@@ -203,12 +203,12 @@ ht-degree: 7%
    * 可針對一個或多個引用（在產生的片段中）進行配置。
 
 >[!NOTE]
-AEM提供下列項目的定期保護：
+對AEM以下項目提供定期保護：
 * 內容參考
 這可防止用戶向當前片段添加引用。 這可能會導致空白的「片段參考」選擇器對話框。
 
 * GraphQL中的片段參考
-如果您建立可傳回彼此參照之多個內容片段的深層查詢，則它會在首次出現時傳回null。
+如果您建立可傳回彼此參考之多個內容片段的深層查詢，它會在首次出現時傳回null。
 
 
 ### 內容參考資料 {#content-reference}
@@ -349,7 +349,7 @@ GraphQL中還對片段引用提供定期保護。 如果您在兩個相互參照
 資料夾允許的內容片段模型解析如下：
 * ****&#x200B;允許的內容片段模型&#x200B;**的Policys**。
 * 如果為空，請嘗試使用繼承規則確定策略。
-* 如果繼承鏈未傳遞結果，則查看該資料夾的&#x200B;**雲服務**&#x200B;配置（也首先直接，然後通過繼承）。
+* 如果繼承鏈未傳遞結果，則查看該資料夾的&#x200B;**Cloud Services**&#x200B;配置（也首先直接，然後通過繼承）。
 * 如果上述項目均未提供任何結果，則該資料夾不允許使用模型。
 
 ## 刪除內容片段模型{#deleting-a-content-fragment-model}
@@ -393,3 +393,27 @@ GraphQL中還對片段引用提供定期保護。 如果您在兩個相互參照
 1. 導覽至包含內容片段模型的檔案夾。
 1. 從工具列中選取您的模型，然後按&#x200B;**Unpublish**。
 發佈狀態將在控制台中指示。
+
+## 內容片段模型——屬性{#content-fragment-model-properties}
+
+您可以編輯內容片段模型的&#x200B;**屬性**:
+
+* **基本**
+   * **模型標題**
+   * **標記**
+   * **說明**
+   * **上傳影像**
+
+<!--
+* **GraphQL**
+  
+  >[!CAUTION]
+  >
+  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
+  >
+  >Updating these properties can impact dependent applications.
+
+  * **API Name**
+  * **Single Query Field Name**
+  * **Multiple Query Field Name**
+-->
