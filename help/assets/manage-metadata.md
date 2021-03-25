@@ -4,7 +4,7 @@ description: '瞭解中繼資料的類型，以及如何根據資產的中繼資
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '1854'
 ht-degree: 3%
@@ -116,7 +116,7 @@ Enterprise Manager Assets可讓您同時編輯多個資產的中繼資料，以�
 
 >[!NOTE]
 >
->大量編輯方法適用於資料夾或系列中的可用資產。 對於跨資料夾可用或符合一般准則的資產，可在搜尋](/help/assets/search-assets.md#metadataupdates)後，大量更新中繼資料。[
+>大量編輯方法適用於資料夾或系列中的可用資產。 對於跨資料夾可用或符合一般准則的資產，可在搜尋](/help/assets/search-assets.md#metadata-updates)後，大量更新中繼資料。[
 
 1. 導覽至您要編輯的資產所在的位置。
 1. 選取您要編輯其常用屬性的資產。
