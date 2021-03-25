@@ -1,10 +1,8 @@
 ---
 title: 啟用漸進式網頁應用程式功能
 description: AEM Sites允許內容作者透過簡單的設定，而非編碼，為任何網站啟用漸進式網頁應用程式功能。
-hide: true
-hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 8fa74c2c575409659f482c669c4939a623ef6707
+source-git-commit: f130fe34e5c57b9fc78697374a5a9772da3c4c17
 workflow-type: tm+mt
 source-wordcount: '2032'
 ht-degree: 0%
