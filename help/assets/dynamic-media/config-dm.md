@@ -3,9 +3,9 @@ title: 設定 Dynamic Media Cloud Service
 description: 瞭解如何將Adobe Experience Manager的Dynamic Media設為Cloud Service。
 topic: 管理員
 translation-type: tm+mt
-source-git-commit: 5772a62c52af9db3cf94f4a2fff66f540b43d010
+source-git-commit: 0e951053a690d091d9b6462138042fd0c59fe5d3
 workflow-type: tm+mt
-source-wordcount: '4030'
+source-wordcount: '4054'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 1. 當主要來源資產作為Cloud Service上傳到Adobe Experience Manager時，它將複製到Dynamic Media。 此時，Dynamic Media會處理所有資產處理和轉譯產生，例如視訊編碼和影像的動態變體。
 1. 產生轉譯後，Experience ManagerCloud Service可以安全地存取和預覽遠端Dynamic Media轉譯(不會以Cloud Service實例的形式將二進位檔案傳回Experience Manager)。
-1. 在內容準備好發佈及核准後，它會觸發Dynamic Media服務將內容推送至傳送伺服器，並在CDN快取內容。
+1. 內容準備好發佈及核准後，會觸發Dynamic Media服務將內容推送至傳送伺服器，並在CDN（內容傳送網路）快取內容。
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -376,7 +376,9 @@ Adobe建議對PDF、PostScript®和PSD檔案使用下列「已調整」的工作
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+要更新這些參數，請參閱[編輯支援格式的MIME類型](#editing-mime-types-for-supported-formats)。
+
+另請參見[為不支援的格式添加MIME類型](#adding-mime-types-for-unsupported-formats)。
 
 #### 更新Granite Transient Workflow queue {#updating-the-granite-transient-workflow-queue}
 
