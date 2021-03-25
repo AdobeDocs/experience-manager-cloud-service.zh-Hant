@@ -3,10 +3,10 @@ title: 使用「連線資產」在 中共用 DAM 資產 [!DNL Sites]
 description: 使用遠程 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署上可用的資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f3c02cc79d5d56b67224761efd6a70ae597fe7fe
+source-git-commit: 0f42ba52f8e9f593e95fc4187c6461a660ff696d
 workflow-type: tm+mt
-source-wordcount: '2707'
-ht-degree: 29%
+source-wordcount: '2898'
+ht-degree: 27%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 29%
 
 作者在Content Finder中搜尋影像和下列類型的檔案，並在「頁面編輯器」中使用搜尋的資產。 文檔將添加到`Download`元件中，影像將添加到`Image`元件中。 作者也會將遠端資產新增至任何可擴充預設`Download`或`Image`元件的自訂[!DNL Experience Manager]元件。 支援的格式包括：
 
-* **影像格式**:Image元件支援 [的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 格式。[!DNL Dynamic Media] 不支援影像。
+* **影像格式**:Image元件支援 [的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 格式。
 * **檔案格式**:請參閱支 [援的檔案格式](file-format-support.md#document-formats)。
 
 ### 相關使用者和群組 {#users-and-groups-involved}
@@ -111,6 +111,23 @@ ht-degree: 29%
 ![已配置已連接資產的連接測試  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
+
+## 配置[!DNL Sites]和[!DNL Dynamic Media]部署{#sites-dynamic-media-connected-assets}之間的連接
+
+您可以設定[!DNL Sites]部署與[!DNL Dynamic Media]部署之間的連線，讓網頁作者在其網頁中使用[!DNL Dynamic Media]影像。 在製作網頁時，使用遠端資產和遠端[!DNL Dynamic Media]部署的體驗保持不變。 這可讓您透過「連線的資產」功能（例如智慧型裁切和影像預設集）來運用[!DNL Dynamic Media]功能。
+
+要配置此連接，請遵循以下步驟。
+
+1. 如上所述，建立已連接的資產組態。 在對話框中選擇複選框&#x200B;**[!UICONTROL 為[!DNL Dynamic Media]已連接資產]**&#x200B;提取原始格式副本。
+
+1. 在本地[!DNL Sites]和遠程[!DNL Assets]部署上配置[!DNL Dynamic Media]。 按照[configure [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services)的說明操作。
+
+   * 在所有組態中使用相同的公司名稱。
+   * 在本地[!DNL Sites]上，在[!UICONTROL Dynamic Media同步模式]中，選擇&#x200B;**[!UICONTROL 預設禁用]**。 站點部署只需要對[!DNL Dynamic Media]帳戶的只讀訪問。
+   * 在本地[!DNL Sites]上，在&#x200B;**[!UICONTROL 發佈資產]**&#x200B;選項中，選擇&#x200B;**[!UICONTROL 選擇性發佈]**。 請勿選擇「同步所有內容」。****
+   * 在遠程[!DNL Assets]部署中，在[!UICONTROL Dynamic Media同步模式]中，選擇&#x200B;**[!UICONTROL 預設啟用]**。
+
+1. 啟用映像核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)中的[[!DNL Dynamic Media] 支援。 當作者在本機[!DNL Sites]部署的網頁中使用[!DNL Dynamic Media]影像時，此功能可讓預設影像元件顯示[!DNL Dynamic Media]影像。
 
 ## 使用遠端資產 {#use-remote-assets}
 
@@ -184,7 +201,7 @@ ht-degree: 29%
 * 本機資產不會與遠端部署上的原始資產同步。對 DAM 部署所做的任何編輯、刪除或撤銷權限操作都不會傳播到下游。
 * 本機資產為唯讀副本。[!DNL Experience Manager] 元件會對資產執行非破壞性的編輯作業。不允許執行其他編輯作業。
 * 本機擷取的資產僅適用於編寫用途。無法套用資產更新工作流程，也無法編輯中繼資料。
-* 僅支援影像和列出的文件格式。[!DNL Dynamic Media] 不支援資產、內容片段和體驗片段。
+* 僅支援影像和列出的文件格式。不支援內容片段和體驗片段。
 * [!DNL Experience Manager] 不會擷取中繼資料結構。這表示可能無法顯示所有擷取的中繼資料。 如果模式單獨更新，則顯示所有屬性。
 * 所有[!DNL Sites]作者都對讀取的副本具有讀取權限，即使作者無法訪問遠程DAM部署。
 * 不提供 API 以支援自訂整合。
