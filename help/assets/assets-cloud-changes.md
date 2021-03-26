@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager Assets] 中a [!DNL Cloud Service]的顯著變化'
 description: 與[!DNLAdobe Experience Manager6.5相比， [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 的顯著變化。
 translation-type: tm+mt
-source-git-commit: 201abba4352362b1bb97b6a25bd84f95e8ed8483
+source-git-commit: ab8cc0e3d685b5aba29e3320453ed7789f53083a
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 5%
 | MIME類型檢測 | 不支援. | 如果您上傳的數位資產沒有副檔名或副檔名不正確，可能無法視需要處理。 使用者仍可在DAM中儲存二進位檔案，但無副檔名。 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)中的[MIME類型檢測。 |
 | 複合資產的子資產產生 | 不支援. | 相依使用案例未完成。 例如，多頁PDF檔案的註解會受到影響。 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)中的[子資產建立。 |
 | 首頁 | 不支援. | 請參閱[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
-| 從ZIP封存擷取資產 | 不支援. | 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)中的[ZIP解壓縮。 |
+| 從ZIP封存擷取資產 | 不支援. | 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)中的[ZIP解壓縮。 |
 | 傳統 UI | 不支援. | 僅提供可觸控的UI。 |
 
 >[!MORELIKETHIS]
