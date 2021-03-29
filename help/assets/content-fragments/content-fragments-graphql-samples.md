@@ -1,16 +1,18 @@
 ---
 title: 學習如何搭配使用GraphQL AEM —— 範例內容與查詢
-description: 學習搭配使用GraphQL AEM —— 範例內容與查詢。
+description: 瞭解如何搭配使用GraphQLAEM來探索範例內容和查詢，以無拘無束地提供內容。
 translation-type: tm+mt
-source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1418'
 ht-degree: 6%
 
 ---
 
 
 # 學習將GraphQL與AEM-示例內容和查詢{#learn-graphql-with-aem-sample-content-queries}一起使用
+
+瞭解如何搭配使用GraphQLAEM來探索範例內容和查詢，以無拘無束地提供內容。
 
 >[!NOTE]
 >
