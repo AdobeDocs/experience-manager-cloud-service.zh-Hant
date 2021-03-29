@@ -1,16 +1,18 @@
 ---
 title: 內容片段 - 刪除考量事項
-description: 內容片段 - 刪除考量事項
+description: 在中定義內容片段刪除原則之前，請先檢閱這些重要考量AEM事項。 內容片段是提供無頭內容的強大工具，必須仔細考慮刪除這些片段的含義。
 translation-type: tm+mt
-source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 12%
+source-wordcount: '470'
+ht-degree: 9%
 
 ---
 
 
-# 內容片段 - 刪除考量事項{#content-fragments-delete-considerations}
+# 內容片段 - 刪除考量事項 {#content-fragments-delete-considerations}
+
+在中定義內容片段刪除原則之前，請先檢閱這些重要考量AEM事項。 內容片段是提供無頭內容的強大工具，必須仔細考慮刪除這些片段的含義。
 
 ## 權限——刪除或不刪除{#permissions-delete-or-not-delete}
 
@@ -36,7 +38,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->另請參閱How to Audit User Management Operations in AEM。<!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
+>另請參閱中的How to Audit User Management OperationsAEM。<!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
 ## 僅{#permissions-required-for-editor-functionality-only}編輯器功能所需的權限
 
