@@ -1,16 +1,18 @@
 ---
 title: 管理內容片段
-description: 內容片段會儲存為資產，因此主要是從資產主控台管理。
+description: 瞭解如何使用Assets主控台來管理您的AEM內容片段，這是您無頭內容的基礎。
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1640'
 ht-degree: 9%
 
 ---
 
 
-# 管理內容片段{#managing-content-fragments}
+# 管理內容片段 {#managing-content-fragments}
+
+瞭解如何使用Assets主控台來管理您的AEM內容片段，這是您無頭內容的基礎。
 
 內容片段會儲存為&#x200B;**Assets**，因此主要是從&#x200B;**Assets**&#x200B;主控台管理。
 
