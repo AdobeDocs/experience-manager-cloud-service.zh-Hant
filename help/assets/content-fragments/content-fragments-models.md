@@ -1,10 +1,10 @@
 ---
 title: 內容片段模型
-description: 內容片段模型可用來建立包含結構化內容的內容片段。
+description: 瞭解內容片段模型如何做為您無頭內容的基礎，以及AEM如何使用結構化內容建立內容片段。
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2199'
 ht-degree: 7%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 7%
 
 # 內容片段模型 {#content-fragment-models}
 
-內容片段模型定義[內容片段](/help/assets/content-fragments/content-fragments.md)的內容結構。
+內容片段模AEM型定義[內容片段的內容結構，](/help/assets/content-fragments/content-fragments.md)是您無頭內容的基礎。
 
 若要使用內容片段模型，請：
 
@@ -35,7 +35,7 @@ ht-degree: 7%
 
    ![標題和說明](assets/cfm-models-02.png)
 
-1. 使用&#x200B;**Create**&#x200B;來儲存空的模型。 一條消息將指示操作成功，您可以選擇&#x200B;**Open**&#x200B;立即編輯模型，或選擇&#x200B;**Done**&#x200B;返回控制台。
+1. 使用&#x200B;**Create**&#x200B;保存空模型。 一條消息將指示操作成功，您可以選擇&#x200B;**Open**&#x200B;立即編輯模型，或選擇&#x200B;**Done**&#x200B;返回控制台。
 
 ## 定義內容片段模型{#defining-your-content-fragment-model}
 
