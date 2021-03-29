@@ -3,7 +3,7 @@ title: '部署至 AEM as a Cloud Service '
 description: '部署至 AEM as a Cloud Service  '
 feature: 部署
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
 workflow-type: tm+mt
 source-wordcount: '3247'
 ht-degree: 1%
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 客戶可透過Cloud Manager將自訂代碼部署至雲端環境。 請注意，Cloud Manager會將本機組裝的內容套件轉換為符合Sling Feature Model的物件，這是當在雲端環境中執行時，將作AEM為Cloud Service應用程式的描述方式。 因此，在查看Cloud環境上的Package Manager中的包時，名稱將包含「cp2fm」，而轉換的包會移除所有元資料。 無法與之互動，亦即無法下載、複製或開啟。 有關轉換器的詳細文檔可以在[這裡找到](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)。
 
-作為Cloud Service應用AEM程式寫入的內容包必須在不可變內容和可變內容之間保持乾淨的隔離，Cloud Manager將通過失敗構建來強制執行，並輸出如下消息：
+作為Cloud Service應用AEM程式寫入的內容包必須在不可變內容和可變內容之間保持乾淨的隔離，Cloud Manager將只安裝可變內容，並輸出如下消息：
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
