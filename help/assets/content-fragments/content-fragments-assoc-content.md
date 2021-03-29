@@ -1,18 +1,18 @@
 ---
 title: 相關聯的內容
-description: 關聯的內容提供連線，讓資產在新增至內容頁面時（可選）可與片段一起使用。
+description: 瞭解相AEM關內容功能如何提供連線，讓資產在新增至內容頁面時可選擇性地與片段搭配使用，為無頭內容傳送增加額外的彈性。
 translation-type: tm+mt
-source-git-commit: 29ce1175e3fcc606d12dd4f1ef7b6d8f26c1d47a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 7%
+source-wordcount: '244'
+ht-degree: 6%
 
 ---
 
 
 # 相關聯的內容{#associated-content}
 
-關聯內容提供連接，以便當資產（即，可選）被添加到內容頁面時可與片段一起使用。 這提供了[在使用頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)上的內容片段時可存取的資產範圍的彈性，同時也有助於縮短搜尋適當資產所需的時間。
+相AEM關內容功能提供連線，讓資產在新增至內容頁面時，可選擇與片段搭配使用。 這提供了透過[傳送無頭內容的彈性，提供在使用頁面上的內容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)時可存取的資產範圍，同時也有助於縮短搜尋適當資產所需的時間。
 
 ## 添加關聯內容{#adding-associated-content}
 
