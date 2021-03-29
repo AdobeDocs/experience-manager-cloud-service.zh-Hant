@@ -1,10 +1,10 @@
 ---
 title: 變化 - 編寫片段內容
-description: 變數可讓您為片段製作內容，然後根據用途建立該內容的變數（如有需要）。
+description: 瞭解各種變化如何讓您的無頭內容更有AEM彈性，讓您為片段製作內容，然後根據目的建立該內容的變化。
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2236'
+source-wordcount: '2255'
 ht-degree: 12%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 12%
 
 # 變化 - 編寫片段內容{#variations-authoring-fragment-content}
 
-[變](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 數是內容片段的重要功能，可讓您建立和編輯主要內容的復本，以用於特定頻道和／或藍本。
+[變AEM數是內容片段的重要功能，可讓您建立和編輯主要內容的復本，以用於特定通道和／或藍本，讓無頭內容傳送更有彈性。](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 
 
 從&#x200B;**Valuations**&#x200B;標籤中，您可以：
 
