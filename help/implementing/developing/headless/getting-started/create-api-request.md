@@ -1,10 +1,10 @@
 ---
 title: 存取和傳送內容片段無頭快速入門手冊
-description: Assets REST API允許管理內容片段，而GraphQL API允許簡單無頭地傳送內容片段內容。
+description: 瞭解如何使用AEMAssets REST API來管理內容片段，以及GraphQL API來無頭傳送內容片段內容。
 translation-type: tm+mt
-source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # 存取和傳送內容片段無頭快速入門手冊{#accessing-delivering-content-fragments}
 
-Assets REST API允許管理內容片段，而GraphQL API允許簡單無頭地傳送內容片段內容。
+瞭解如何使用AEMAssets REST API來管理內容片段，以及GraphQL API來無頭傳送內容片段內容。
 
 ## 什麼是GraphQL和Assets REST API?{#what-are-the-apis}
 
-[現在您已建立一些內容片段，](create-content-fragment.md) 您可以使用AEM的API無端傳遞這些片段。
+[現在您已建立一些內容片段，](create-content-fragment.md) 您可以AEM使用API無端傳遞。
 
 * [GraphQL ](/help/assets/content-fragments/graphql-api-content-fragments.md) API可讓您建立存取和傳送內容片段的請求。
 * [「資產REST ](/help/assets/content-fragments/assets-api-content-fragments.md) API」可讓您建立和修改「內容片段」（和其他資產）。
@@ -33,7 +33,7 @@ Assets REST API允許管理內容片段，而GraphQL API允許簡單無頭地傳
    * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
 -->
 
-1. 以雲端服務身分登入AEM並存取GraphiQL介面：
+1. 以Cloud Service身AEM份登錄並訪問GraphiQL介面：
    * 例如：`https://<host>:<port>/content/graphiql.html`。
 
 1. GraphiQL是GraphQL的瀏覽器內查詢編輯器。 您可使用它來建立查詢以擷取內容片段，以JSON形式直接傳遞這些片段。
@@ -73,9 +73,9 @@ GraphQL可避免重複的API要求以及過度傳送，而允許大量傳送呈�
 
 ## 後續步驟{#next-steps}
 
-就這樣！ 您現在對AEM中的無頭內容管理有基本的瞭解。 當然，您還有更多資源可讓您更深入地瞭解可用功能。
+就這樣！ 您現在對中的無頭內容管理有了基本的瞭解AEM。 當然，您還有更多資源可讓您更深入地瞭解可用功能。
 
-* **設定瀏覽器** -如需AEM設定瀏覽器的詳細資訊
+* **配置瀏覽器** -有關配置瀏覽器的詳細AEM資訊
 * **[內容片段](/help/assets/content-fragments/content-fragments.md)** -如需建立和管理內容片段的詳細資訊
-* **[AEM Assets HTTP API中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)** -如需透過HTTP API直接存取AEM內容(透過CRUD作業（建立、讀取、更新、刪除）的詳細資訊
+* **[AEM AssetsHTTP API中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)** -如需透過HTTP API直接存取AEM內容（透過CRUD作業）（建立、讀取、更新、刪除）的詳細資訊
 * **[GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)** -如需如何無故傳送內容片段的詳細資訊
