@@ -1,8 +1,8 @@
 ---
 title: Markdown
-description: 當您製作內容時，內容片段編輯器會使用標籤語法，讓您輕鬆編寫內容。
+description: 瞭解內容片段編輯器如何使用標籤語法，讓您輕鬆建立無頭內容。
 translation-type: tm+mt
-source-git-commit: 05e2ccd53749fe7b0ac516688a1d205d46fc3492
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 4%
@@ -10,9 +10,9 @@ ht-degree: 4%
 ---
 
 
-# Markdown{#markdown}
+# Markdown {#markdown}
 
-當您在撰寫[時，內容片段編輯器會使用&#x200B;*markdown*&#x200B;語法，讓您輕鬆編寫內容：](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)
+當您在編寫[](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)時，內容片段編輯器會使用&#x200B;*markdown*&#x200B;語法，讓您輕鬆編寫無頭內容：
 
 ![標籤下編輯器](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
