@@ -2,17 +2,17 @@
 title: AEM 現代化工具
 description: 'AEM 現代化工具 '
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 20aba41de904cf765037ef70fc137773fc602bc0
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 100%
+source-wordcount: '131'
+ht-degree: 77%
 
 ---
 
 
 # AEM 現代化工具 {#aem-moderization-tools}
 
-「AEM 現代化工具」套裝為 AEM 開發團隊提供工具，將目前的舊版 AEM 功能轉換為目前支援的功能。
+現代化AEM工具提供一套公用程式，可用來將舊有功能AEM轉換為Cloud Service的現代化和支AEM援功能。
 
 
 ## 簡介 {#introduction}
