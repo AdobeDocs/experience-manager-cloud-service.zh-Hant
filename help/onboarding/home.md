@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
+source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 92%
+ht-degree: 86%
 
 ---
 
@@ -19,10 +19,14 @@ ht-degree: 92%
 本節提供下列主題的重要文章：
 
 * 開始使AEM用Cloud Service
-* 了解控制特定功能開放情形的使用者角色
-* 設定 Cloud Manager Git 存放庫
+
+* 瞭解控制特定功能可用性的使用者角色
+
+* 設定Cloud Manager的git儲存庫
+
 * 存取 Experience Manager as a Cloud Service 
-* 資料保護與隱私權法規基礎介紹
+
+* 資料保護與隱私權法規的基礎
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
