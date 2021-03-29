@@ -1,18 +1,18 @@
 ---
 title: 建立內容片段無頭快速入門手冊
-description: 內容片段可讓您設計、建立、組織和使用AEM可無端傳送的頁面無關內容。
+description: 瞭解如何使用內AEM容片段來設計、建立、組織和使用不受頁面限制的內容，以進行無頭傳送。
 translation-type: tm+mt
-source-git-commit: fa2fee3139acd60ea96222752785cf397978a2bc
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 1%
+source-wordcount: '390'
+ht-degree: 2%
 
 ---
 
 
 # 建立內容片段無頭快速入門手冊{#creating-content-fragments}
 
-內容片段可讓您設計、建立、組織和使用AEM可無端傳送的頁面無關內容。
+瞭解如何使用內AEM容片段來設計、建立、組織和使用不受頁面限制的內容，以進行無頭傳送。
 
 ## 什麼是內容片段？{#what-are-content-fragments}
 
@@ -24,9 +24,9 @@ ht-degree: 1%
 
 ## 如何建立內容片段{#how-to-create-a-content-fragment}
 
-內容作者將建立任意數目的內容片段，以代表他們建立的內容。 這將是他們在AEM中的主要工作。 為了本快速入門手冊的目的，我們只需建立一個指南。
+內容作者將建立任意數目的內容片段，以代表他們建立的內容。 這將是他們的主要任務AEM。 為了本快速入門手冊的目的，我們只需建立一個指南。
 
-1. 以雲端服務的身分登入AEM，並從主功能表選擇「**導覽->資產」**。
+1. 以Cloud ServiceAEM身分登入，並從主功能表選擇&#x200B;**Navigation -> Assets**。
 1. 點選或按一下您先前建立的[資料夾。](create-assets-folder.md)
 1. 點選或按一下「建立->內容片段&#x200B;**」。**
 1. 內容片段的建立會在兩個步驟中顯示為精靈。 首先，選取您要用來建立內容片段的模型，然後點選或按一下「下一步」**。**
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 內容片段可參照其他內容片段，如有需要，可允許巢狀內容結構。
 
-「內容片段」也可以參考AEM中的其他資產。 [這些資產必須先儲存在](/help/assets/manage-digital-assets.md) AEM中，才能建立參照的內容片段。
+內容片段也可以參考中的其他AEM資產。 [這些資產必須先儲存在](/help/assets/manage-digital-assets.md) AEM中，才能建立參照的內容片段。
 
 ## 後續步驟{#next-steps}
 
