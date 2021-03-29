@@ -1,16 +1,18 @@
 ---
 title: 內容片段——設定瀏覽器
-description: 瞭解如何在設定瀏覽器中啟用特定內容片段功能。
+description: 瞭解如何在設定瀏覽器中啟用特定內容片段功能，以運用強大AEM的無頭傳送功能。
 translation-type: tm+mt
-source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 21%
+source-wordcount: '271'
+ht-degree: 19%
 
 ---
 
 
 # 內容片段——設定瀏覽器{#content-fragments-configuration-browser}
+
+瞭解如何在設定瀏覽器中啟用特定內容片段功能，以運用強大AEM的無頭傳送功能。
 
 ## 啟用實例{#enable-content-fragment-functionality-instance}的內容片段功能
 
