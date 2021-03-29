@@ -1,10 +1,10 @@
 ---
 title: 建立內容片段模型無頭快速入門手冊
-description: 「內容片段模型」會使用AEM的無頭功能定義您要建立和提供的內容結構。
+description: 使用內容片段模型，使用無頭功能定義您要建AEM立和提供的內容結構。
 translation-type: tm+mt
-source-git-commit: d37342feb794b9f1385bb5edd38b2d9bb6e7dff9
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -12,19 +12,19 @@ ht-degree: 0%
 
 # 建立內容片段模型無頭快速入門手冊{#creating-content-fragment-models}
 
-「內容片段模型」會使用AEM的無頭功能定義您要建立和提供的內容結構。
+使用內容片段模型，使用無頭功能定義您要建AEM立和提供的內容結構。
 
 ## 什麼是內容片段模型？{#what-are-content-fragment-models}
 
 [現在您已建立設定，您可](create-configuration.md) 以用它來建立內容片段模型。
 
-「內容片段模型」會定義您要在AEM中建立和管理的資料和內容結構。 它們是您內容的支架。 選擇建立內容時，您的作者會從您定義的「內容片段模型」中選取，以引導他們建立內容。
+內容片段模型定義您要在中建立和管理的資料和內容結構AEM。 它們是您內容的支架。 選擇建立內容時，您的作者會從您定義的「內容片段模型」中選取，以引導他們建立內容。
 
 ## 如何建立內容片段模型{#how-to-create-a-content-fragment-model}
 
 資訊架構設計人員只會隨著需要新模型而偶爾執行這些工作。 為了本快速入門手冊的目的，我們只需要建立一個模型。
 
-1. 以雲端服務的身分登入AEM，並從主功能表選取「**工具->資產->內容片段模型」**。
+1. 以Cloud ServiceAEM身份登錄，從主菜單中選擇&#x200B;**工具->資產->內容片段模型**。
 1. 點選或按一下建立您的設定所建立的資料夾。
 
    ![模型資料夾](../assets/models-folder.png)
