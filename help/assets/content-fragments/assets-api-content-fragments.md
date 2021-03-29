@@ -1,18 +1,20 @@
 ---
-title: Adobe Experience Manager作為Assets HTTP API中的雲端服務內容片段支援
-description: 瞭解Adobe Experience Manager如何在資產HTTP API中以雲端服務內容片段支援的方式提供。
+title: Adobe Experience Manager作為資產HTTP API中的Cloud Service內容片段支援
+description: 瞭解資產HTTP API中對內容片段的支援，這是一項重要的無頭傳AEM送功能。
 translation-type: tm+mt
-source-git-commit: 8563a87bdfc251166590210993b7d9e4cbdee385
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1953'
 ht-degree: 2%
 
 ---
 
 
-# AEM Assets HTTP API 內容片段支援{#content-fragments-support-in-aem-assets-http-api}
+# AEM Assets HTTP API 內容片段支援 {#content-fragments-support-in-aem-assets-http-api}
 
 ## 概覽 {#overview}
+
+瞭解資產HTTP API中對內容片段的支援，這是一項重要的無頭傳AEM送功能。
 
 >[!NOTE]
 >
@@ -25,13 +27,13 @@ ht-degree: 2%
 >
 資產HTTP API的目前實作是以[REST](https://en.wikipedia.org/wiki/Representational_state_transfer)架構樣式為基礎。
 
-[Assets REST API](/help/assets/mac-api-assets.md)可讓Adobe Experience Manager做為雲端服務的開發人員透過HTTP API直接存取內容（儲存在AEM中），透過CRUD作業（建立、讀取、更新、刪除）。
+[Assets REST API](/help/assets/mac-api-assets.md)可讓Adobe Experience Manager的開發人員以Cloud Service的身分，透過CRUD作業（建立、讀取、更新、刪除），直接透過HTTP API存取內容(儲存AEM於)。
 
-此API可讓您將Adobe Experience Manager當成雲端服務，以無頭CMS（內容管理系統）的形式運作，為JavaScript前端應用程式提供內容服務。 或是任何其他可執行HTTP要求和處理JSON回應的應用程式。
+此API可讓您將Adobe Experience Manager作為無頭CMS（內容管理系統）的Cloud Service來運作，為JavaScript前端應用程式提供內容服務。 或是任何其他可執行HTTP要求和處理JSON回應的應用程式。
 
-例如，單頁應用程式(SPA)、架構或自訂需要透過HTTP API提供的內容，通常是JSON格式。
+例如，「單頁應用程式」(SPASingle Page Applications)、架構或自訂需要透過HTTP API提供的內容，通常是JSON格式。
 
-雖然[AEM核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)提供非常完整、有彈性且可自訂的API，可針對此用途提供必要的讀取作業，而且可自訂其JSON輸出，但是它們確實需要AEM WCM(Web Content Management)專業知識，才能在以專用AEM範本為基礎的頁面中代管實作。 並非每個SPA開發組織都能直接獲得此類知識。
+雖然[核心元件&lt;a1/AEM>提供非常完整、有彈性且可自訂的API，可針對此目的提供必要的讀取作業，而且可自訂其JSON輸出，但它們確實需要AEMWCM(Web Content Management)的專業知識來實作，因為它們必須裝載在以專用範本為基礎的頁面AEM中。 ](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)並非每SPA個開發組織都能直接獲得此類知識。
 
 此時即可使用資產REST API。 它可讓開發人員直接存取資產（例如影像和內容片段），而不需先將資產內嵌在頁面中，然後以序號化JSON格式傳送其內容。
 
@@ -49,11 +51,11 @@ Assets REST API也允許開發人員建立新資產、內容片段和資料夾�
 
 ## 必備條件 {#prerequisites}
 
-資產REST API可在最新Adobe Experience Manager的每次即裝即用安裝中，以雲端服務版本提供。
+Assets REST API是以Cloud Service版本形式提供於最近Adobe Experience Manager的每次現成安裝。
 
 ## 重要概念 {#key-concepts}
 
-Assets REST API提供對儲存在AEM例項中的資產的[REST](https://en.wikipedia.org/wiki/Representational_state_transfer)樣式存取。
+資產REST API提供對實體內儲存資產的[REST](https://en.wikipedia.org/wiki/Representational_state_transfer)樣式存AEM取。
 
 它使用`/api/assets`端點，並要求資產的路徑來存取它（沒有前導`/content/dam`）。
 
@@ -75,8 +77,8 @@ HTTP方法確定要執行的操作：
 
 * **GET** -擷取資產或資料夾的JSON表示法
 * **POST** -建立新資產或檔案夾
-* **PUT**  —— 更新資產或資料夾的屬性
-* **刪除** -刪除資產或資料夾
+* **PUT** -更新資產或資料夾的屬性
+* **DELETE** -刪除資產或資料夾
 
 >[!NOTE]
 >
@@ -90,7 +92,7 @@ HTTP方法確定要執行的操作：
 
 這表示後續(`write`)請求無法合併為單一實體可能成功或失敗的單一交易。
 
-### AEM(Assets)REST API與AEM元件{#aem-assets-rest-api-versus-aem-components}
+### (AEMAssets)REST API與AEM元件{#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <thead>
@@ -104,7 +106,7 @@ HTTP方法確定要執行的操作：
   <tr>
    <td>支援的使用案例</td>
    <td>一般用途。</td>
-   <td><p>已針對單頁應用程式(SPA)或任何其他（內容消費）內容的使用最佳化。</p> <p>也可以包含版面資訊。</p> </td>
+   <td><p>已針對單頁應用程式(SPA)或任何其他（內容使用）內容的使用最佳化。</p> <p>也可以包含版面資訊。</p> </td>
   </tr>
   <tr>
    <td>支援的作業</td>
@@ -116,13 +118,13 @@ HTTP方法確定要執行的操作：
    <td><p>可直接存取。</p> <p>使用映射到<code>/content/dam</code>（在儲存庫中）的<code>/api/assets </code>端點。</p> 
    <p>範例路徑如下所示： <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
-    <td><p>需要透過AEM頁面上的AEM元件來參考。</p> <p>使用<code>.model</code>選擇器來建立JSON表示法。</p> <p>範例路徑如下所示：<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
+    <td><p>需要透過頁面上的AEM元件AEM參考。</p> <p>使用<code>.model</code>選擇器來建立JSON表示法。</p> <p>範例路徑如下所示：<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
    </td>
   </tr>
   <tr>
    <td>安全性</td>
    <td><p>有多種選項。</p> <p>OAuth的提出；可與標準設定分開設定。</p> </td>
-   <td>使用AEM的標準設定。</td>
+   <td>使用AEM標準設定。</td>
   </tr>
   <tr>
    <td>建築注釋</td>
@@ -139,14 +141,14 @@ HTTP方法確定要執行的操作：
 
 ### 安全性 {#security}
 
-如果Assets REST API是在沒有特定驗證要求的環境中使用，AEM的CORS篩選器必須正確設定。
+如果Assets REST API是在沒有特定驗證要求的環境中使用，AEMCORS篩選器必須正確設定。
 
 >[!NOTE]
 >
 >如需詳細資訊，請參閱：
 >
 >* [CORS/AEM說明](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
->* [影片——使用AEM針對CORS進行開發](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+>* [視訊——針對CORS進行開發，具AEM備](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 
 >
 
@@ -165,7 +167,7 @@ HTTP方法確定要執行的操作：
 
 ### 尋呼{#paging}
 
-資產REST API支援透過URL參數進行分頁（針對GET請求）:
+資產REST API支援透過URL參數進行分頁(針對GET請求):
 
 * `offset` -要檢索的第一個（子）實體的編號
 * `limit` -傳回的實體數上限
@@ -198,7 +200,7 @@ HTTP方法確定要執行的操作：
 
 ### 資料夾 {#folders}
 
-資料夾可當成資產和其他資料夾的容器。 它們反映AEM內容存放庫的結構。
+資料夾可當成資產和其他資料夾的容器。 它們反映了內容儲存庫AEM的結構。
 
 Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題等。 資產會以資料夾的子實體和子資料夾的形式公開。
 
@@ -241,22 +243,22 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 
 ## 使用 {#using}
 
-使用情形可能會因您使用AEM作者或發佈環境以及您的特定使用案例而異。
+使用情形可能因您使用作者或發AEM布環境以及特定使用案例而異。
 
 * 強烈建議建立作業系結至作者例項（[，目前無法使用此API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)復製片段以發佈）。
-* 兩者皆可傳送，因為AEM僅以JSON格式提供要求的內容。
+* 兩者皆可傳送，因AEM為僅以JSON格式提供要求的內容。
 
-   * 從AEM作者實例儲存和傳送的內容，應該足以滿足防火牆後、媒體程式庫應用程式的需求。
+   * 從作者實例AEM儲存和傳送應足以在防火牆後提供媒體庫應用程式。
 
-   * 若是即時網路傳送，建議使用AEM發佈例項。
+   * 若是即時Web傳送，建議使AEM用發佈例項。
 
 >[!CAUTION]
 >
->AEM雲端例項上的Dispatcher設定可能會封鎖對`/api`的存取。
+>雲端例項上的AEMDispatcher設定可能會封鎖對`/api`的存取。
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager Assets API —— 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>如需詳細資訊，請參閱[API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager資產API —— 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
 
 ### 讀取／傳送{#read-delivery}
 
@@ -374,7 +376,7 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 
 如需詳細的API參考，請參閱此處：
 
-* [Adobe Experience Manager Assets API —— 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager資產API —— 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
@@ -385,5 +387,5 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 如需詳細資訊，請參閱：
 
 * [資產HTTP API檔案](/help/assets/mac-api-assets.md)
-* [AEM Gem作業：OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEMGem會話：OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
 
