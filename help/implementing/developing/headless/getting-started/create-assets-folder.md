@@ -1,18 +1,18 @@
 ---
 title: 建立資產資料夾無頭快速入門手冊
-description: 內容片段模型定義內容片段的結構。 內容片段接著會儲存在資產檔案夾中。
+description: 使用AEM內容片段模型來定義內容片段的結構，這是您無頭內容的基礎。
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
 
-# 《 Creating an Assets Folder Headless Quick Start Guide》（建立資產資料夾無頭快速入門手冊）{#creating-an-assets-folder}
+# 《 Creating an Assets Folder Headless Quick Start Guide {#creating-an-assets-folder}》
 
-內容片段模型定義內容片段的結構。 內容片段接著會儲存在資產檔案夾中。
+使用AEM內容片段模型來定義內容片段的結構，這是您無頭內容的基礎。 內容片段接著會儲存在資產檔案夾中。
 
 ##  什麼是資產資料夾？{#what-is-an-assets-folder}
 
@@ -26,17 +26,17 @@ ht-degree: 0%
 
 管理員只需要偶爾建立資料夾，即可在建立內容時加以組織。 為了本快速入門手冊的目的，我們只需要建立一個資料夾。
 
-1. 以雲端服務的身分登入AEM，並從主功能表選取「**導覽->資產->檔案**」。
+1. 以Cloud ServiceAEM身份登錄，從主菜單中選擇&#x200B;**導航->資產->檔案**。
 1. 點選或按一下「建立->資料夾&#x200B;**」。**
 1. 為資料夾提供&#x200B;**Title**&#x200B;和&#x200B;**Name**。
    * **Title**&#x200B;應為描述性。
    * **Name**&#x200B;將成為儲存庫中的節點名。
-      * 系統會根據標題自動產生，並根據[AEM命名慣例進行調整。](/help/implementing/developing/introduction/naming-conventions.md)
+      * 系統會根據標題自動產生，並根據[命AEM名慣例進行調整。](/help/implementing/developing/introduction/naming-conventions.md)
       * 如有需要，可加以調整。
 
    ![建立資料夾](../assets/assets-folder-create.png)
 1. 選擇剛建立的資料夾，然後從工具欄中選擇&#x200B;**屬性**（或使用`p` [鍵盤快捷鍵。](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)）
-1. 在&#x200B;**屬性**&#x200B;視窗中，選取&#x200B;**雲端服務**&#x200B;標籤。
+1. 在&#x200B;**屬性**&#x200B;窗口中，選擇&#x200B;**Cloud Services**&#x200B;頁籤。
 1. 對於&#x200B;**雲配置**&#x200B;選擇您先前建立的[配置。](create-configuration.md)
 
    ![設定資產資料夾](../assets/assets-folder-configure.png)
