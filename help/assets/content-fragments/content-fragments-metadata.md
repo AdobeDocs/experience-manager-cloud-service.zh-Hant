@@ -1,16 +1,18 @@
 ---
 title: 中繼資料 - 片段屬性
-description: 您可以檢視和編輯內容片段的中繼資料（屬性）。
+description: 瞭解如何在中檢視和編輯內容片段的中繼資料屬性，AEM以調整無頭內容。
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 9%
+source-wordcount: '140'
+ht-degree: 7%
 
 ---
 
 
-# 中繼資料 - 片段屬性{#metadata-fragment-properties}
+# 中繼資料 - 片段屬性 {#metadata-fragment-properties}
+
+瞭解如何在中檢視和編輯內容片段的中繼資料屬性，AEM以調整無頭內容。
 
 ## 編輯屬性／中繼資料{#editing-properties-meta-data}
 
