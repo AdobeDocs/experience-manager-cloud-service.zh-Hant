@@ -1,16 +1,18 @@
 ---
 title: 內容片段結構樹
-description: 在「內容片段編輯器」中，您可以檢視結構樹狀結構。
+description: 使用「內容片段編輯器」的「結構樹」功能，AEM以更好地瞭解您的無頭內容。
 translation-type: tm+mt
-source-git-commit: 46e179faa7875c4b3e9da30356d2b82d4b25b130
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
 
 # 內容片段結構樹{#content-fragment-structure-tree}
+
+使用「內容片段編輯器」的「結構樹」功能，AEM以更好地瞭解您的無頭內容。
 
 在「內容片段編輯器」中，您可以選取「結構樹」圖示：
 
