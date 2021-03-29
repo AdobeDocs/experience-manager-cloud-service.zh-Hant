@@ -1,18 +1,18 @@
 ---
 title: 使用內容片段
-description: 瞭解Adobe Experience Manager(AEM)中的內容片段如何讓您設計、建立、組織和使用不受頁面影響的內容。
+description: 瞭解Adobe Experience Manager(AEM)的內容片段做為Cloud Service如何讓您設計、建立、組織和使用不受頁面限制的內容，最適合無頭傳送。
 translation-type: tm+mt
-source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2035'
 ht-degree: 3%
 
 ---
 
 
-# 使用內容片段{#working-with-content-fragments}
+# 使用內容片段 {#working-with-content-fragments}
 
-以Adobe Experience Manager(AEM)為雲端服務，內容片段可讓您設計、建立、組織及[發佈不受頁面影響的內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。 它們可讓您準備內容，以便在多個位置／多個通道中使用。
+以Adobe Experience Manager(AEM)為Cloud Service，內容片段可讓您設計、建立、組織及[發佈與頁面無關的內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。它們可讓您準備內容，以便在多個位置／多個頻道上使用，最適合無頭傳送。
 
 內容片段包含結構化內容：
 
@@ -28,7 +28,7 @@ ht-degree: 3%
       * 可用的參考資料類型可讓您巢狀內嵌內容。
       * 通常用於傳送至您的應用程式。
 
-內容片段也可以使用AEM核心元件的Sling Model(JSON)匯出功能，以JSON格式傳送。 這種交付形式：
+內容片段也可以使用核心元件的Sling Model(JSON)匯出功能，以JSON格式AEM傳送。 這種交付形式：
 
 * 可讓您使用元件來管理要傳送的片段元素
 * 允許大量傳送，方法是在用於API傳送的頁面上新增多個內容片段核心元件
@@ -52,10 +52,10 @@ ht-degree: 3%
 >* [自訂和擴充內容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [轉譯專用內容片段設定元件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API 內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)
->* [AEM GraphQL API，用於內容片段](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [與內AEM容片段搭配使用的GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
-通訊管道的數量逐年增加。 通常渠道是指傳送機制，例如：
+通訊頻道的數量逐年增加。 通常渠道是指傳送機制，例如：
 
 * 物理通道；例如桌上型電腦、行動裝置。
 * 實體渠道的交付形式；例如，「產品詳細資訊頁面」、「產品類別頁面」（適用於桌上型電腦）或「行動網頁」（適用於行動裝置）、「行動應用程式」（適用於行動裝置）。
@@ -75,7 +75,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->**內容** 片段和 **[體驗](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** 片段是AEM中的不同功能：
+>**內容** 片段和 **[體驗](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** 片段是以下各項功能AEM:
 >* **內容** 片段是編輯內容，可用來存取結構化資料，包括文字、數字和日期等。它們是純內容，具有定義和結構，但不需額外的視覺設計和／或版面。
 >* **體驗** 片段內容已完整排版；網頁的片段。
 
@@ -83,27 +83,27 @@ ht-degree: 3%
 >
 「體驗片段」可以包含內容片段的形式，但不能以相反的方式包含。
 >
->如需詳細資訊，請參閱[瞭解AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments)中的內容片段和體驗片段。
+>如需詳細資訊，請參閱](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments)中的「瞭解內容片段和體AEM驗片段」。[
 
 ## 內容片段和內容服務{#content-fragments-and-content-services}
 
-AEM Content Services的設計目的，是將AEM中／來自AEM的內容描述和傳送，從而延伸到網頁。
+內AEM容服務旨在將內容的描述和傳遞從網頁AEM的焦點推廣到外。
 
-它們使用可供任何用戶端使用的標準化方法，將內容傳送至非傳統AEM網頁的頻道。 這些渠道可以包括：
+它們使用可供任何用戶端使用的標準化方法，將內AEM容傳送至非傳統網頁的通道。 這些渠道可以包括：
 
 * 單頁應用程式
 * 原生行動應用程式
-* AEM外部的其他通道和觸點
+* 其他通道和觸控點位於
 
 使用JSON匯出器以JSON格式進行傳送。
 
-AEM內容片段可用來描述和管理結構化內容。 結構化內容定義在可包含多種內容類型的模型中；包括文字、數值資料、布林值、日期和時間等。
+內AEM容片段可用來描述和管理結構化內容。 結構化內容定義在可包含多種內容類型的模型中；包括文字、數值資料、布林值、日期和時間等。
 
-此結構化內容可搭配AEM核心元件的JSON匯出功能，用來將AEM內容傳送至AEM頁面以外的通道。
+結合核心元件的JSON匯出功能AEM，此結構化內容可用來將內AEM容傳送至頁面以外的AEM頻道。
 
 >[!NOTE]
 >
->如需AEM Sites的雲端服務無頭開發簡介，請參閱[無頭和AEM](/help/implementing/developing/headless/introduction.md)。
+>有關AEM Sites作為Cloud Service的無頭開AEM發的簡介，請參閱[無頭和](/help/implementing/developing/headless/introduction.md)。
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
 
    * **內容片段**&#x200B;元件可供頁面作者使用。 它可讓使用者參考並傳送HTML或JSON格式的必要內容片段。
 
-* 使用[AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)存取。
+* 可使用[AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)訪問。
 
 內容片段是一種內容結構，可：
 
@@ -292,7 +292,7 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
 
 ### WKND示例{#wknd-sample}
 
-提供[WKND網站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)範例，協助您瞭解AEM為雲端服務。
+提供[WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md)樣本以協助您了AEM解Cloud Service。
 
 WKND項目包括：
 
