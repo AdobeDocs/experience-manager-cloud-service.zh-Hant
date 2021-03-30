@@ -2,9 +2,9 @@
 title: 導覽至Cloud Manager
 description: 請依照本頁瞭解如何導覽至Cloud Manager登陸頁面
 translation-type: tm+mt
-source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
+source-git-commit: 1faadf46f38c5c6ac2e2fbc56f0c82214e0bfb6c
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,8 @@ ht-degree: 0%
 >[!NOTE]
 >您必須以用戶身份添加，並由系統管理員分配給Cloud Manager角色(Admin Console中的產品配置檔案)。
 
-1. 在歡迎電子郵件中，選擇&#x200B;**開始使用**&#x200B;或導覽至[Cloud Manager](https://experience.adobe.com)並使用您的Adobe ID登入。
+1. 在歡迎電子郵件中，按一下&#x200B;**開始**，如下圖所示，或導航至[Cloud Manager](https://experience.adobe.com)並使用您的Adobe ID登錄。\
+   ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
 1. 選擇&#x200B;**Experience Manager**。
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
@@ -34,7 +35,7 @@ ht-degree: 0%
 >[!NOTE]
 >根據[!UICONTROL Cloud Manager]中指派的角色和應用程式的狀態，您在使用[!UICONTROL Cloud Manager] UI時會看到不同的畫面。
 
-您會看到下列三個選項之一：
+您會看到下列三種選項之一：
 
 * **當Cloud Manager中不存在程式時**
 
