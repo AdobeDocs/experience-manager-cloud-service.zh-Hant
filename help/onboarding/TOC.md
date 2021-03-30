@@ -7,9 +7,9 @@ feature-set: Experience Manager Sites
 feature: 部署
 role: 架構設計人員
 translation-type: tm+mt
-source-git-commit: 307a471be8b1fb2a19cb7315a91a8e55cbe40f4b
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '671'
 ht-degree: 29%
 
 ---
@@ -19,10 +19,11 @@ ht-degree: 29%
 
 + [AEM as a Cloud Service 入門](/help/onboarding/home.md)
 + 開始使AEM用Cloud Service{#what-is-required}
-   + [獲取您的Adobe ID](what-is-required/get-your-adobe-id.md)
-   + [添加用戶和分配給Cloud Manager角色](what-is-required/add-users-assign-cm-roles.md)
+   + [取得您的Adobe ID](what-is-required/get-your-adobe-id.md)
+   + [使用者角色和權限](what-is-required/user-roles-permissions.md)
+   + [系統管理員任務](what-is-required/add-users-assign-cm-roles.md)
    + [導覽至Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
-   + [訪問實AEM例](/help/onboarding/what-is-required/accessing-aem-instance.md)
+   + [存取實AEM例](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager程式{#getting-access}
    + [了解方案和方案類型](getting-access-to-aem-in-cloud/understand-program-types.md)
    + 生產程式{#production-programs}
