@@ -2,9 +2,9 @@
 title: '存取例AEM項 '
 description: 請依照本頁瞭解如何存取例AEM項
 translation-type: tm+mt
-source-git-commit: 7ab5c624ccb2b321462c9759946becd79d03689c
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 訪問AEM實例{#accessing-aem-instance}
 
-請依照下列步驟，從Cloud Manager管理存取權：
+請依照下列步驟，從Cloud Manager存AEM取實例：
 
 1. 導覽至Cloud Manager，然後按一下&#x200B;**Environments**&#x200B;卡上的&#x200B;**管理存取**&#x200B;按鈕，如下所示。
 
