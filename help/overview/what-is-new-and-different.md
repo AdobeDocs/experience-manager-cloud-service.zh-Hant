@@ -2,7 +2,7 @@
 title: Adobe Experience Manager是Cloud Service
 description: '什麼不同，什麼新—Adobe Experience Manager(AEM)作為Cloud Service。 '
 translation-type: tm+mt
-source-git-commit: b77113ccc55f2063c684d49e2babdd7563b9d6fc
+source-git-commit: d2786f51edcb84e3d206c400e4faaecb46a54981
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 10%
@@ -124,7 +124,7 @@ Cloud Manager已發展為自助服務門戶，可以建立和配置作為AEMClou
 Cloud Manager在多個地理區域的資料中心建立環境，提供全球覆蓋。 CDN線上存放點(PoP)可確保為全球各地的客戶提供低延遲的內容。
 
 >[!NOTE]
->請參閱[以Cloud Service形式訪問Experience Manager](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md)以開始以Cloud Service形式使用Cloud ManagerAEM。
+>請參閱[以Cloud Service形式訪問Experience Manager](/help/onboarding/what-is-required/accessing-aem-instance.md)以開始以Cloud Service形式使用Cloud ManagerAEM。
 
 ## 入門 {#onboarding}
 
