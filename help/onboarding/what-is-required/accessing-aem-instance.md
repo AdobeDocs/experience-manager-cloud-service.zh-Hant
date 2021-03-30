@@ -1,18 +1,18 @@
 ---
-title: '存取例AEM項 '
-description: 請依照本頁瞭解如何存取例AEM項
+title: '授予用戶對實例的訪AEM問權 '
+description: 請依照本頁瞭解系統管理員如何授與使用者對例項的存AEM取權
 translation-type: tm+mt
-source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
 
 
-# 訪問AEM實例{#accessing-aem-instance}
+# 授與實例AEM{#accessing-aem-instance}的用戶訪問權
 
-請依照下列步驟，從Cloud Manager存AEM取實例：
+身為系統管理員，請遵循下列步驟授予使用者對例項的存AEM取權：
 
 1. 導覽至Cloud Manager，然後按一下&#x200B;**Environments**&#x200B;卡上的&#x200B;**管理存取**&#x200B;按鈕，如下所示。
 
