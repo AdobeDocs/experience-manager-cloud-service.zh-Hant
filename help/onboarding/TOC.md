@@ -7,9 +7,9 @@ feature-set: Experience Manager Sites
 feature: 部署
 role: 架構設計人員
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '674'
 ht-degree: 29%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 29%
    + [使用者角色和權限](what-is-required/user-roles-permissions.md)
    + [系統管理員任務](what-is-required/add-users-assign-cm-roles.md)
    + [導覽至Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
-   + [存取實AEM例](/help/onboarding/what-is-required/accessing-aem-instance.md)
+   + [授予用戶對實例的訪AEM問權](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager程式{#getting-access}
    + [了解方案和方案類型](getting-access-to-aem-in-cloud/understand-program-types.md)
    + 生產程式{#production-programs}
