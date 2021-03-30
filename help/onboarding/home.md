@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
+source-git-commit: 06764b9e908a96f9cee26d7312bfc7c100da85a4
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 51%
+source-wordcount: '649'
+ht-degree: 50%
 
 ---
 
@@ -24,24 +24,24 @@ ht-degree: 51%
 
 1. 您的組織的系統管理員將會收到歡迎電子郵件，允許他們執行[管理員任務](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)，包括添加用戶、將用戶分配給角色，從而為他們提供對Cloud Manager的適當訪問權。
 
-1. 由系統管理員新增的使用者會收到歡迎電子郵件，通知他們有權存取Cloud Manager。 使用者現在可以從這裡開始使用Cloud Manager。
+1. 由系統管理員新增的使用者會收到歡迎電子郵件，通知他們有權存取Cloud Manager。 使用者現在可以使用[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)登入，並從這裡開始使用Cloud Manager。
 
 1. 此外，為了開發目的，還可為用AEM戶授予對實例的[訪問權。](/help/onboarding/what-is-required/accessing-aem-instance.md)
 
-**團隊、角色和權限**
+**[團隊、角色和權限](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
 您的系統管理員可以新增使用者，並將他們指派給Cloud Manager角色。 本節可幫助您瞭解[Cloud Manager角色](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles)是什麼，以及與角色關聯的[權限](/help/onboarding/what-is-required/user-roles-permissions.md#permissions)，然後再開始使用。
 
-**系統管理員任務**
+**[系統管理員任務](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
 系統管理員管理其使用者的所有方面，從存取到權限。 以下文檔頁包括描述基本組織任務的資訊，即[添加用戶和將用戶分配給Cloud Manager角色和權限](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)
 
 
-**導覽至Cloud Manager**
+**[導覽至Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
 存取Cloud Manager，開始您的雲端歷程AEM。 現在您已新增為使用者並指派給Cloud Manager角色，您可以執行各種工作，例如建立程式[、[新增環境](/help/implementing/cloud-manager/manage-environments.md)、[存取Git](/help/implementing/cloud-manager/accessing-git.md)、[設定管道](/help/implementing/cloud-manager/configure-pipeline.md)和[部署程式碼](/help/implementing/cloud-manager/deploy-code.md)。](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)
 
-**存取實AEM例**
+**[存取實AEM例](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
