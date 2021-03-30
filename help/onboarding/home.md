@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: d6721940f2260cf61c83f01106fa2781e2f35b1f
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 49%
+source-wordcount: '695'
+ht-degree: 47%
 
 ---
 
@@ -30,20 +30,19 @@ ht-degree: 49%
 
 **[團隊、角色和權限](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
-您的系統管理員可以新增使用者，並將他們指派給Cloud Manager角色。 本節可幫助您瞭解[Cloud Manager角色](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles)是什麼，以及與角色關聯的[權限](/help/onboarding/what-is-required/user-roles-permissions.md#permissions)，然後再開始使用。
+您的系統管理員可以新增使用者，並將他們指派給Cloud Manager角色。 本節可幫助您瞭解[Cloud Manager角色](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles)和[權限](/help/onboarding/what-is-required/user-roles-permissions.md#permissions)與角色相關聯的內容，然後再開始使用。
 
 **[系統管理員任務](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
 系統管理員管理其使用者的所有方面，從存取到權限。 以下文檔頁包括描述基本組織任務的資訊，即[添加用戶和將用戶分配給Cloud Manager角色和權限](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)
 
-
 **[導覽至Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-存取Cloud Manager，開始您的雲端歷程AEM。 現在您已新增為使用者並指派給Cloud Manager角色，您可以執行各種工作，例如建立程式[、[新增環境](/help/implementing/cloud-manager/manage-environments.md)、[存取Git](/help/implementing/cloud-manager/accessing-git.md)、[設定管道](/help/implementing/cloud-manager/configure-pipeline.md)和[部署程式碼](/help/implementing/cloud-manager/deploy-code.md)。](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)
+請依照本節內容，瞭解如何存取Cloud Manager，以開始您的雲端歷程AEM。 現在，您已經添加為用戶並分配給Cloud Manager角色，您可以執行各種任務，如建立程式[、[添加環境](/help/implementing/cloud-manager/manage-environments.md)、[訪問Git](/help/implementing/cloud-manager/accessing-git.md)、[配置管線](/help/implementing/cloud-manager/configure-pipeline.md)和[部署代碼](/help/implementing/cloud-manager/deploy-code.md)。](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)
 
-**[存取實AEM例](/help/onboarding/what-is-required/accessing-aem-instance.md)**
+**[授予用戶對實例的訪AEM問權](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
-系統管理員可以授與使用者從Cloud Manager UIAEM或從Admin Console存取執行個體的權限。
+請依照本節說明系統管理員如何授予使用者對例項的存取權AEM，或建立環境的使用者如何授予其他使用者對例項的存AEM取權。
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
