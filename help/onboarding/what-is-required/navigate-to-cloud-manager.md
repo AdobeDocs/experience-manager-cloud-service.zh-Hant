@@ -2,7 +2,7 @@
 title: 導覽至Cloud Manager
 description: 請依照本頁瞭解如何導覽至Cloud Manager登陸頁面
 translation-type: tm+mt
-source-git-commit: 1faadf46f38c5c6ac2e2fbc56f0c82214e0bfb6c
+source-git-commit: 159a1619e2cb1243e056dcc6182abceeeff01730
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -54,7 +54,7 @@ ht-degree: 0%
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-在此處，具有權限的用戶（如Cloud Manager中的「業務所有者」角色）可以選擇&#x200B;**添加程式**&#x200B;啟動嚮導。
+在此處，具有權限的用戶（如Cloud Manager中的業務所有者角色）可以選擇&#x200B;**添加程式**&#x200B;來啟動[嚮導](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md)。
 
 若要瞭解如何在Cloud Manager中新增程式，請參閱：
 
