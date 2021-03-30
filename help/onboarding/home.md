@@ -2,31 +2,46 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 86%
+source-wordcount: '642'
+ht-degree: 51%
 
 ---
 
 
 # Experience Manager as a Cloud Service 入門 {#aem-onboarding-guide}
 
-此頁面提供 Experience Manager as a Cloud Service 入門的相關自助資源。
+祝賀您以Cloud Service的身分AEM開始您的旅程！ 不論您是要部署新應用程式或移轉現有應用程式，本指南都是您的起點，可確保您的應用程式已最佳化，並可在Cloud Service時成功。
 
 ## 入門重要文章 {#key-articles}
 
-本節提供下列主題的重要文章：
+本節將介紹以Cloud Service為起點，著重於您旅程的AEM主要文章：
 
-* 開始使AEM用Cloud Service
+**入職時的預期**
 
-* 瞭解控制特定功能可用性的使用者角色
+在您的合約簽署後，將會發生下列事件：
 
-* 設定Cloud Manager的git儲存庫
+1. 您的組織的系統管理員將會收到歡迎電子郵件，允許他們執行[管理員任務](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)，包括添加用戶、將用戶分配給角色，從而為他們提供對Cloud Manager的適當訪問權。
 
-* 存取 Experience Manager as a Cloud Service 
+1. 由系統管理員新增的使用者會收到歡迎電子郵件，通知他們有權存取Cloud Manager。 使用者現在可以從這裡開始使用Cloud Manager。
 
-* 資料保護與隱私權法規的基礎
+1. 此外，為了開發目的，還可為用AEM戶授予對實例的[訪問權。](/help/onboarding/what-is-required/accessing-aem-instance.md)
+
+**團隊、角色和權限**
+
+您的系統管理員可以新增使用者，並將他們指派給Cloud Manager角色。 本節將幫助您瞭解&#x200B;*Cloud Manager角色*&#x200B;是什麼，以及與角色相關的權限，然後再開始使用。
+
+**系統管理員任務**
+
+系統管理員管理其使用者的所有方面，從存取到權限。 以下文檔頁包括描述基本組織任務的資訊，即[添加用戶和將用戶分配給Cloud Manager角色和權限](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)
+
+
+**導覽至Cloud Manager**
+
+存取Cloud Manager，開始您的雲端歷程AEM。 現在，您已新增為使用者並指派給Cloud Manager角色，您就可以執行各種工作，例如建立程式、新增環境、管理Git、設定管道和部署程式碼。
+
+**存取實AEM例**
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
