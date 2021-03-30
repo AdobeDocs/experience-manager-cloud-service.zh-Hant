@@ -2,7 +2,7 @@
 title: '建立沙盒程式 '
 description: '建立沙盒程式 '
 translation-type: tm+mt
-source-git-commit: 3884529aaa717b13f2771095a4f7e8102abfd1ec
+source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
    ![](assets/first_timelogin1.png)
 
    >[!NOTE]
-   >如需詳細資訊，請參閱[Cloud Manager登陸頁面](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md)以取得Cloud Manager的存取權。
+   >如需詳細資訊，請參閱[Cloud Manager登陸頁面](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)以取得Cloud Manager的存取權。
 
 1. 在建立程式嚮導中，選擇&#x200B;**設定沙箱**。 用戶在選擇&#x200B;**建立**&#x200B;之前提交程式名。
 
