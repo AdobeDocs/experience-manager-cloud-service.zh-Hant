@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 99417790e5770d7b340baf78539f5985056dc0f7
+source-git-commit: 834d41cfb9b2988b5e7ffa03ad0f45d78c53f915
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '691'
 ht-degree: 47%
 
 ---
@@ -22,23 +22,27 @@ ht-degree: 47%
 
 在您的合約簽署後，將會發生下列事件：
 
-1. 您的組織的系統管理員將會收到歡迎電子郵件，允許他們執行[管理員任務](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)，包括添加用戶、將用戶分配給角色，從而為他們提供對Cloud Manager的適當訪問權。
+1. Adobe將完成您組織的布建，您的組織的系統管理員將會收到歡迎電子郵件，允許他們執行[管理員任務](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)，包括添加用戶、將用戶分配給角色，從而為他們提供對Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)的適當訪問權。[
 
-1. 當系統管理員新增使用者時，使用者會收到歡迎電子郵件，通知他們有權存取Cloud Manager。 使用者現在可以使用[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)登入，並從這裡開始使用Cloud Manager。
+1. 您的系統管理員新增的使用者會收到歡迎電子郵件，通知他們有[ Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)的存取權。 使用者現在可以使用[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)登入，並從這裡開始使用Cloud Manager。
+
 
 1. 此外，為了開發目的，還可為用AEM戶授予對實例的[訪問權。](/help/onboarding/what-is-required/accessing-aem-instance.md)
 
-**[團隊、角色和權限](/help/onboarding/what-is-required/user-roles-permissions.md)**
+**[使用者角色和權限](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
-您的系統管理員可以新增使用者，並將他們指派給Cloud Manager角色。 本節可幫助您瞭解[Cloud Manager角色](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles)和[權限](/help/onboarding/what-is-required/user-roles-permissions.md#permissions)與角色相關聯的內容，然後再開始使用。
+您的系統管理員可以新增使用者，並將他們指派給Cloud Manager角色。 本節將幫助您瞭解&#x200B;*Cloud Manager角色*&#x200B;是什麼，以及與角色相關的權限，然後再開始使用。
 
 **[系統管理員任務](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-系統管理員管理其使用者的所有方面，從存取到權限。 以下文檔頁包括描述基本組織任務的資訊，即[添加用戶和將用戶分配給Cloud Manager角色和權限](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)。
+系統管理員管理其使用者的所有方面，從存取到權限。 以下文檔頁包括說明基本組織任務的資訊：
+
+* 新增使用者
+* 指派使用者至Cloud Manager角色和權限
 
 **[導覽至Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-請依照本節內容，瞭解如何存取Cloud Manager，以開始您的雲端歷程AEM。 現在，您已經添加為用戶並分配給Cloud Manager角色，您可以執行各種任務，如建立程式[、[添加環境](/help/implementing/cloud-manager/manage-environments.md)、[訪問Git](/help/implementing/cloud-manager/accessing-git.md)、[配置管線](/help/implementing/cloud-manager/configure-pipeline.md)和[部署代碼](/help/implementing/cloud-manager/deploy-code.md)。](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)
+存取Cloud Manager，開始您的雲端歷程AEM。 現在您已新增為使用者並指派給Cloud Manager角色，您可以執行各種工作，例如建立程式[、[新增環境](/help/implementing/cloud-manager/manage-environments.md)、[存取Git](/help/implementing/cloud-manager/accessing-git.md)、[設定管道](/help/implementing/cloud-manager/configure-pipeline.md)和[部署程式碼](/help/implementing/cloud-manager/deploy-code.md)。](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)
 
 **[授予用戶對實例的訪AEM問權](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
