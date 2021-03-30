@@ -2,10 +2,10 @@
 title: 使用者角色和權限
 description: 本頁說明使用者角色和權限。 請依照本頁瞭解如何新增使用者並指派他們至Cloud Manager角色。
 translation-type: tm+mt
-source-git-commit: f09b688db23024d59f39b53766060b6f3b14e564
+source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 7%
+source-wordcount: '624'
+ht-degree: 6%
 
 ---
 
@@ -18,6 +18,10 @@ Adobe將在AdobeIdentity Management系統(IMS)中為您的公司建立&#x200B;**
 
 Cloud Manager中的許多功能需要特定權限才能運作。
 
+Cloud Manager中的許多功能需要特定權限才能執行，並根據指派的角色和權限限制您在使用者介面中執行的動作。 在某些情況下，如果您沒有執行動作的權限，則介面控制項會存在，但會停用。
+
+如果您有要執行但無法執行的動作，請勾選與角色定義](#permissions)相關的[權限。 根據您的目標，您可以聯絡系統管理員並請求所需的角色。
+
 Cloud Manager目前為控制特定功能可用性的用戶定義四個角色：
 
 * 企業負責人
@@ -28,6 +32,8 @@ Cloud Manager目前為控制特定功能可用性的用戶定義四個角色：
 >[!NOTE]
 >Admin Console中的「開發人員」角色與[!UICONTROL Cloud Manager]中的「開發人員」角色無關。
 
+## 角色定義{#role-definitions}
+
 下表匯總了角色：
 
 | [!UICONTROL Cloud ] Manager角色 | 說明 |
@@ -37,6 +43,12 @@ Cloud Manager目前為控制特定功能可用性的用戶定義四個角色：
 | 部署管理員 | 管理部署操作。 使用[!UICONTROL Cloud Manager]執行階段／生產部署。 可編輯CI/CD管線。 可以批准重要的3層故障。 可以訪問Git儲存庫。 |
 | 開發人員 | 開發並測試自訂的應用程式碼。 主要使用[!UICONTROL Cloud Manager]來檢視狀態。 可以訪問Git儲存庫以進行代碼提交。 |
 | 內容作者 | 通常不與[!UICONTROL Cloud Manager]互動。 可以使用[!UICONTROL Cloud Manager]程式切換器(已從[!UICONTROL Experience Cloud]導航)訪問AEM。 |
+
+### 查看角色{#view-roles}
+
+若要在Cloud Manager中檢視您的角色，請登入Cloud Manager UI，在右上角選取您的設定檔圖示，然後選取&#x200B;**使用者角色**，如下圖所示。
+
+![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### 整合產品設定檔{#integration-product-profile}
 
