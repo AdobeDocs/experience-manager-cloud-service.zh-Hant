@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
+source-git-commit: 99417790e5770d7b340baf78539f5985056dc0f7
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 47%
@@ -34,7 +34,7 @@ ht-degree: 47%
 
 **[系統管理員任務](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-系統管理員管理其使用者的所有方面，從存取到權限。 以下文檔頁包括描述基本組織任務的資訊，即[添加用戶和將用戶分配給Cloud Manager角色和權限](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)
+系統管理員管理其使用者的所有方面，從存取到權限。 以下文檔頁包括描述基本組織任務的資訊，即[添加用戶和將用戶分配給Cloud Manager角色和權限](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)。
 
 **[導覽至Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
