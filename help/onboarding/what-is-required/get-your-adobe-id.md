@@ -2,7 +2,7 @@
 title: 取得您的Adobe ID
 description: 取得您的Adobe ID
 translation-type: tm+mt
-source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
+source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 獲取您的Adobe ID{#adobe-id}
+# 取得您的Adobe ID{#adobe-id}
 
 本指南將提供檢查清單，讓您和您的團隊迅速開始使用Cloud Manager。 您需要您的Adobe ID，以及系統管理員的協助，將使用者新增至Cloud Manager，以取得其指派的角色(Admin Console中的產品設定檔)和相關權限。 說明系統管理員如何通過Admin Console完成此操作。
 
