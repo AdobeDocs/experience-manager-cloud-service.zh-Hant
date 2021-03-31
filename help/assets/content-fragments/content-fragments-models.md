@@ -1,10 +1,12 @@
 ---
 title: 內容片段模型
 description: 瞭解內容片段模型如何做為您無頭內容的基礎，以及AEM如何使用結構化內容建立內容片段。
+feature: 內容片段
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2203'
 ht-degree: 7%
 
 ---
