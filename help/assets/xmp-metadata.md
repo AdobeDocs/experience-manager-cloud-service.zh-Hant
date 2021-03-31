@@ -2,10 +2,12 @@
 title: XMP 中繼資料
 description: 瞭解中繼資XMP料管理的（可擴充中繼資料平台）中繼資料標準。 它被用AEM作建立、處理和交換中繼資料的標準格式。
 contentOwner: AG
+feature: 中繼資料
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: c3da535db4bf2b0f71e338f542d388437d6c1623
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '983'
 ht-degree: 16%
 
 ---
