@@ -2,11 +2,13 @@
 title: 下載資產
 description: 從 [!DNL Adobe Experience Manager Assets] 下載資產，並啟用或停用下載功能。
 contentOwner: AG
+feature: 資產管理
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 4%
+source-wordcount: '888'
+ht-degree: 5%
 
 ---
 
@@ -31,7 +33,7 @@ ht-degree: 4%
 
 ## 使用[!DNL Experience Manager]介面{#download-in-aem}下載資產
 
-非同步下載服務提供架構，可順暢地下載大型資產。 從使用者介面即時下載較小的檔案。 大型檔案會非同步下載，而且使用者會透過收件匣中的Experience Manager通知得知完成。 請參閱[瞭解Experience Manager inbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)。
+非同步下載服務提供架構，可順暢地下載大型資產。 從使用者介面即時下載較小的檔案。 大型檔案會以非同步方式下載，而且使用者會透過收件匣中的Experience Manager通知，得知完成。 請參閱[瞭解Experience Manager收件箱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)。
 
 ![下載通知](assets/download-notification.png)
 
@@ -68,7 +70,7 @@ ht-degree: 4%
 
 [!DNL Experience Manager]中的預設servlet可讓已驗證的使用者發出任意大型的並行下載請求，以建立資產的ZIP檔案。 下載準備可能會影響效能，甚至會使伺服器和網路過載。 為了降低此功能造成的類似DoS的潛在風險，發佈例項會停用`AssetDownloadServlet` OSGi元件。
 
-若要允許從DAM下載資產，例如，當使用資產共用共用共用或其他類似入口網站的實施時，請透過OSGi組態手動啟用servlet。 Adobe建議盡可能將允許的下載大小設定得盡可能低，而不會影響日常下載需求。 高價值可能會影響效能。
+若要允許從DAM下載資產，例如，當使用資產共用共用共用或其他類似入口網站的實施時，請透過OSGi組態手動啟用servlet。 Adobe建議盡可能低地設定允許的下載大小，而不會影響日常下載需求。 高價值可能會影響效能。
 
 1. 使用命名慣例建立資料夾，以發佈執行模式為目標，即`config.publish`:
 
@@ -93,6 +95,6 @@ ht-degree: 4%
 >[!MORELIKETHIS]
 >
 >* [下載受DRM保護的資產](drm.md)
->* [在Win或Mac案頭上使用Experience Manager案頭應用程式下載資產](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
->* [從支援的Adobe Creative Cloud應用程式使用Adobe Assets Link下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [在Win或Mac案頭上使用Experience Manager案頭應用程式下載資產](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)
+>* [從支援的Adobe Creative Cloud應用程式內使用Adobe資產連結下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
