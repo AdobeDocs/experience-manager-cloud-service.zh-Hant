@@ -4,10 +4,11 @@ description: 了解如何使用 Dynamic Media 中的批次集預設集自動建�
 contentOwner: Rick Brough
 feature: 影像預設集，檢視器預設集
 topic: 業務從業人員
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '3433'
+source-wordcount: '3435'
 ht-degree: 1%
 
 ---
