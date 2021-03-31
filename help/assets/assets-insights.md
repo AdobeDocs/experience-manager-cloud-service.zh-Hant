@@ -1,19 +1,21 @@
 ---
 title: 資產 Insights
-description: 瞭解「資產前瞻分析」功能如何讓您追蹤第三方網站、行銷宣傳和Adobe創意解決方案所使用影像的使用者評分和使用統計資料。
+description: 瞭解「資產前瞻分析」功能如何讓您追蹤第三方網站、行銷活動和Adobe創意解決方案中使用的影像的使用者評分和使用統計資料。
 contentOwner: AG
+feature: 資產分析，資產報表
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 8%
+source-wordcount: '805'
+ht-degree: 9%
 
 ---
 
 
 # 資產 Insights {#asset-insights}
 
-Asset Insights會追蹤使用者評分和使用統計資料，這些資料會用於協力廠商網站、行銷宣傳和Adobe的創意解決方案。 它可協助您深入瞭解影像的效能與人氣。
+Asset Insights會追蹤在協力廠商網站、行銷宣傳和Adobe創意解決方案中使用的影像的使用者評分和使用統計資料。 它可協助您深入瞭解影像的效能與人氣。
 
 Assets Insights會擷取使用者活動詳細資訊，例如影像被評等、點按和曝光（影像在網站上載入的次數）。 它會根據這些統計資料來指派分數給影像。 您可以使用分數和績效統計資料來選取要納入目錄、行銷活動等的熱門影像。 您甚至可以根據這些統計資料來制定封存和授權續約政策。
 
@@ -41,7 +43,7 @@ Assets Insights會擷取使用者活動詳細資訊，例如影像被評等、�
 
    * **[!UICONTROL 資產]**:資產屬於系列或複合資產的次數。
    * **[!UICONTROL 網頁與行動裝置]**:資產加入網站和應用程式的次數。
-   * **[!UICONTROL Social]**:資產在解決方案（例如Adobe Social和Adobe Campaign）中使用的次數。
+   * **[!UICONTROL Social]**:該資產用於解決方案(例如Adobe Social和Adobe Campaign)的次數。
    * **[!UICONTROL 電子郵件]**:資產用於電子郵件促銷活動的次數。
 
    ![usage_statistics](assets/usage_statistics.png)
@@ -58,7 +60,7 @@ Assets Insights會擷取使用者活動詳細資訊，例如影像被評等、�
    >
    >與「解決方案」區段中的資料不同，「效能統計資料」區段會顯示最新的資料。
 
-1. 若要取得您包含在網站中的資產的內嵌代碼以取得效能資料，請點選／按一下資產縮圖下方的「取得內嵌代碼」。****<!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. 若要取得您包含在網站中的資產的內嵌代碼以取得效能資料，請點選／按一下資產縮圖下方的「取得內嵌代碼」。<!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->****
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -99,16 +101,16 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 1. 按一下「 **[!UICONTROL 前瞻分析設定]** 」資訊卡。
 1. 在精靈中，選取資料中心並提供您的認證，包括您的組織名稱、使用者名稱和共用密碼。
 
-   ![設定Adobe Analytics的資產分析，位於  [!DNL Experience Manager]](assets/insights_config2.png)
+   ![設定Adobe Analytics的資產分析  [!DNL Experience Manager]](assets/insights_config2.png)
 
-   *圖：設定Adobe Analytics的資產分析，位於[!DNL Experience Manager]*
+   *圖：設定Adobe Analytics的資產分析[!DNL Experience Manager]*
 
-1. 按一下/點選「 **[!UICONTROL 驗證]**」。在[!DNL Experience Manager]驗證您的認證後，從&#x200B;**[!UICONTROL 報表套裝]**&#x200B;清單中，選擇Adobe Analytics報表套裝，讓資產前瞻分析擷取資料。 按一下&#x200B;**[!UICONTROL 「新增」]**。
+1. 按一下/點選「 **[!UICONTROL 驗證]**」。在[!DNL Experience Manager]驗證您的認證後，從&#x200B;**[!UICONTROL 報表套裝]**&#x200B;清單中，選擇您要從中擷取資產分析的Adobe Analytics報表套裝。 按一下&#x200B;**[!UICONTROL 「新增」]**。
 1. 在[!DNL Experience Manager]設定報表套裝後，點選&#x200B;**[!UICONTROL Done]**。
 
 ### 頁面追蹤器{#page-tracker}
 
-在您設定Adobe Analytics帳戶後，就會產生頁面追蹤器代碼。 若要啟用「資產前瞻分析」來追蹤第三方網站中使用的[!DNL Experience Manager]資產，請在網站程式碼中加入頁面追蹤器程式碼。 使用資產中的頁面追蹤器公用程式，產生頁面追蹤器代碼。<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+在您設定Adobe Analytics帳戶後，會為您產生頁面追蹤器代碼。 若要啟用「資產前瞻分析」來追蹤第三方網站中使用的[!DNL Experience Manager]資產，請在網站程式碼中加入頁面追蹤器程式碼。 使用資產中的頁面追蹤器公用程式，產生頁面追蹤器代碼。<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
 1. 在[!DNL Experience Manager]中，按一下&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]**。
 
