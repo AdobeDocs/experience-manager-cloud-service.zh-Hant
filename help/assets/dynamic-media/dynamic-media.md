@@ -2,11 +2,12 @@
 title: 使用 Dynamic Media
 description: 瞭解如何使用Dynamic Media來提供資產，以便在網路、行動裝置和社交網站上使用。
 topic: '"管理員，業務從業人員"'
+role: 管理員，業務從業人員
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 6%
+source-wordcount: '403'
+ht-degree: 5%
 
 ---
 
