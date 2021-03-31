@@ -3,11 +3,12 @@ title: 關於管理Dynamic Media資產
 description: 瞭解如何使用Dynamic Media資產。
 feature: 資產管理
 topic: 業務從業人員
+role: 管理員，業務從業人員
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 13%
+source-wordcount: '126'
+ht-degree: 14%
 
 ---
 
