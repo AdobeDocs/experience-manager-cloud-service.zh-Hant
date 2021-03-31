@@ -3,11 +3,12 @@ title: 為互動式網站提供最佳化影像
 description: 瞭解如何使用回應式程式碼功能來提供來自Dynamic Media的最佳化影像。
 feature: 資產管理
 topic: 業務從業人員
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 12%
+source-wordcount: '328'
+ht-degree: 14%
 
 ---
 
