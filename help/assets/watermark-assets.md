@@ -2,10 +2,12 @@
 title: 浮水印資產
 description: 將浮水印新增至您的數位資產。
 contentOwner: AG
+feature: 資產管理，發佈
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
