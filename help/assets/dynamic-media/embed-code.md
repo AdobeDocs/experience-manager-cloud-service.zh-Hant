@@ -3,11 +3,12 @@ title: 將Dynamic Media視訊或影像檢視器內嵌在網頁上
 description: 瞭解如何將Dynamic Media視訊或影像資產內嵌在網頁上。
 feature: 資產管理
 topic: 業務從業人員
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 21%
+source-wordcount: '378'
+ht-degree: 22%
 
 ---
 
