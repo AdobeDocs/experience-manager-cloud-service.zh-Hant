@@ -3,10 +3,12 @@ title: 管理數位資產集合
 description: 瞭解Adobe Experience Manager資產中的收集概念。 瞭解如何與其他使用者一起收集、管理、編輯和編輯系列。
 contentOwner: AG
 mini-toc-levels: 1
+feature: 收集，資產管理
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2402'
 ht-degree: 19%
 
 ---
