@@ -1,11 +1,13 @@
 ---
 title: 內容片段 - 刪除考量事項
 description: 在中定義內容片段刪除原則之前，請先檢閱這些重要考量AEM事項。 內容片段是提供無頭內容的強大工具，必須仔細考慮刪除這些片段的含義。
+feature: 內容片段
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 9%
+source-wordcount: '474'
+ht-degree: 10%
 
 ---
 
