@@ -2,7 +2,7 @@
 title: 導覽至Cloud Manager
 description: 請依照本頁瞭解如何導覽至Cloud Manager登陸頁面
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 9fa8c6632188874036ccfe7570e53a6971ff74b4
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 7%
@@ -27,7 +27,7 @@ Cloud Manager是Cloud Service的重AEM要組成部分。 它可讓組織自行�
 
 1. 從Cloud Manager卡按一下&#x200B;**Launch**。
 成功登入[!UICONTROL Cloud Manager]後，您就可以使用使用者介面(UI)。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Cloud Manager登錄頁{#cloud-manager-landing}
