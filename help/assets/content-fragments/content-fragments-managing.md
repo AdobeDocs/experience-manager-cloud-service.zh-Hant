@@ -1,10 +1,12 @@
 ---
 title: 管理內容片段
 description: 瞭解如何使用Assets主控台來管理您的AEM內容片段，這是您無頭內容的基礎。
+feature: 內容片段
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1644'
 ht-degree: 9%
 
 ---
