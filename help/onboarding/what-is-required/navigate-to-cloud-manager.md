@@ -2,7 +2,7 @@
 title: 導覽至Cloud Manager
 description: 請依照本頁瞭解如何導覽至Cloud Manager登陸頁面
 translation-type: tm+mt
-source-git-commit: eeee28ac5889f18ae147d390e6dc8c2d7cb96591
+source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 7%
@@ -24,7 +24,7 @@ Cloud Manager是Cloud Service的重AEM要組成部分。 它可讓組織自行�
 
    或,
 
-   1. 從[Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)導覽至Cloud Manager登入頁面
+   1. 從[Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)導覽至Cloud Manager登入頁面。
 
    1. 選擇&#x200B;**Experience Manager**。
       ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
