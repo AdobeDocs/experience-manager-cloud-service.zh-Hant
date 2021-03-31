@@ -2,10 +2,12 @@
 title: 建立並管理多種語言的數位資產
 description: 瞭解如何將資產（包括二進位檔、中繼資料和標籤）轉譯為多種語言的工作流程自動化。
 contentOwner: AG
+feature: 資產管理，翻譯
+role: 管理員，業務從業人員
 translation-type: tm+mt
-source-git-commit: 100171693837dcdcef0efeab8d61b567114c5ef0
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '2587'
+source-wordcount: '2593'
 ht-degree: 23%
 
 ---
@@ -13,11 +15,11 @@ ht-degree: 23%
 
 # 多語言資產{#multilingual-assets}
 
-多語言資產是指包含多種語言的二進位檔、中繼資料和標籤的資產。 一般而言，資產的二進位檔、中繼資料和標籤都以一種語言存在，然後會翻譯成其他語言，以用於多語言專案。 Adobe Experience Manager(AEM)Assets可讓您自動處理資產（包括二進位檔、中繼資料和標籤）的翻譯工作流程，以產生其他語言的資產，以便用於多語言專案。
+多語言資產是指包含多種語言的二進位檔、中繼資料和標籤的資產。 一般而言，資產的二進位檔、中繼資料和標籤都以一種語言存在，然後會翻譯成其他語言，以用於多語言專案。 Adobe Experience Manager(AEM)Assets可讓您將資產（包括二進位檔、中繼資料和標籤）的翻譯工作流程自動化，以產生其他語言的資產，以用於多語言專案。
 
-為自動化翻譯工作流程，您將翻譯服務供應商與AEM整合，並建立專案，將資產翻譯成多種語言。 AEM支援人文和機器翻譯工作流程。
+為自動化翻譯工作流程，您將翻譯服務提供商與AEM建立項目，以便將資產翻譯成多種語言。 AEM支援人文和機器翻譯工作流程。
 
-人類翻譯：轉譯的資產會傳回並匯入至AEM。 當您的翻譯提供者與AEM整合時，資產會自動在AEM和翻譯提供者之間傳送。
+人類翻譯：轉換的資產會傳回並匯入AEM。 當您的翻譯提供者與之整合時AEM，資產會自動在與翻譯提供AEM者之間傳送。
 
 機器翻譯：機器翻譯服務會立即轉譯資產的中繼資料和標籤。
 
@@ -51,7 +53,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 多語言資產是指包含多種語言的二進位檔、中繼資料和標籤的資產。 一般而言，資產的二進位檔、中繼資料和標籤都以一種語言存在，然後會翻譯成其他語言，以用於多語言專案。
 
-在Adobe Experience Manager(AEM)Assets中，多語言資產會包含在檔案夾中，其中每個檔案夾都包含不同語言的資產。
+在Adobe Experience Manager(AEM)資產中，多語言資產包含在資料夾中，其中每個資料夾都包含不同語言的資產。
 
 每個語言資料夾都稱為語言副本。 語言副本的根資料夾（稱為語言根目錄）標識語言副本中內容的語言。 例如，`/content/dam/it`是義大利文語言副本的義大利文根。 語言副本必須使用[正確配置的語言root](#create-a-language-root)，以便在執行源資產翻譯時定位正確的語言。
 
@@ -88,7 +90,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ### 查看語言根{#view-language-roots}
 
-觸控最佳化的UI提供「參考」面板，顯示已在AEM Assets中建立的語言根目錄清單。
+觸控最佳化的UI提供「參考」面板，顯示在AEM Assets境內建立的語言根目錄清單。
 
 1. 在「資產」主控台中，選取您要建立語言副本的語言主要版本。
 1. 按一下或點選GlobalNav表徵圖，然後選擇&#x200B;**[!UICONTROL References]**&#x200B;以開啟「Reference（參考）」窗格。
@@ -168,7 +170,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ### 建立臨時語言副本{#creating-temporary-language-copies}
 
-當您執行翻譯工作流程以更新具有原始資產編輯版本的語言副本時，會保留現有的語言副本，直到您核准翻譯的資產為止。 AEM Assets會將新翻譯的資產儲存在臨時位置，並在您明確核准資產後更新現有的語言副本。 如果您拒絕資產，語言副本將保持不變。
+當您執行翻譯工作流程以更新具有原始資產編輯版本的語言副本時，會保留現有的語言副本，直到您核准翻譯的資產為止。 AEM Assets將新翻譯的資產儲存在臨時位置，並在您明確核准資產後更新現有語言版本。 如果您拒絕資產，語言副本將保持不變。
 
 1. 按一下/點選「語言副本」下方的「來源根」檔案夾( **[!UICONTROL Language Copies]** )，然後按一下/點選「 **[!UICONTROL Reveal in Assets]** 」 (在資產中顯現) 以開啟「AEM Assets」(AEM Assets)中的檔案夾。
 1. 從「資產」使用者介面中，選取已翻譯的資產，然後從工具列按一下／點選「編輯&#x200B;**[!UICONTROL 」圖示，以在編輯模式中開啟資產。]**
@@ -209,7 +211,7 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 
 >[!NOTE]
 >
->如果您針對複雜資產（例如PDF檔案和Adobe InDesign檔案）啟動轉譯工作流程，則不會提交其子資產或轉譯（如果有）以進行轉譯。
+>如果您針對複雜資產(例如PDF檔案和Adobe InDesign檔案)啟動翻譯工作流程，則不會提交其子資產或轉譯（如果有）以供翻譯。
 
 ### 建立並翻譯工作流{#create-and-translate-workflow}
 
@@ -247,7 +249,7 @@ Adobe Experience Manager(AEM)可讓您從您選擇的翻譯供應商取得雲端
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. 導覽至「 **[!UICONTROL 雲端服務]** 」標籤。
-1. 從「雲端服務設定」清單中，選擇所要的轉譯提供者。 例如，如果要從Microsoft獲得翻譯服務，請選擇&#x200B;**[!UICONTROL Microsoft Translator]**。
+1. 從「Cloud Service配置」清單中，選擇所需的翻譯提供程式。 例如，如果要從Microsoft獲得翻譯服務，請選擇&#x200B;**[!UICONTROL Microsoft Translator]**。
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -262,7 +264,7 @@ Adobe Experience Manager(AEM)可讓您從您選擇的翻譯供應商取得雲端
 如果要為要用於翻譯工作流的翻譯服務應用自定義連接器。若要套用自訂連接器，請先從「封裝管理員」安裝連接器。然後，從雲端服務主控台設定連接器。在您設定連接器後，「套用轉譯服務」中所述的「雲端服務」標籤中的連接器清 [單中會顯示此連接器](#applying-the-translation-services)。在您應用自定義連接器並運行翻譯工作流後，翻譯項目的「 **[!UICONTROL Translation Summary]** 」 (翻譯摘要) 表徵圖會在heads **[!UICONTROL Provider]** and **[!UICONTROL Method下顯示連接器詳細資訊]**。
 
 1. 從「包管理器」安裝連接器。
-1. 按一下／點選AEM標誌，並導覽至「**[!UICONTROL 工具>部署>雲端服務」]**。
+1. 按一下／點AEM選標誌，並導覽至「**[!UICONTROL 工具>部署>Cloud Services]**」。
 1. 在「雲端服務」頁面的「 **[!UICONTROL 協力廠商服務]** 」下，找 **[!UICONTROL 出您安裝的連接器]** 。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
