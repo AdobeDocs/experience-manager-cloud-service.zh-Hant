@@ -2,10 +2,12 @@
 title: 如何編輯或新增中繼資料
 description: 以 [!DNL Experience Manager Assets] 瞭解資產中繼資料，並透過各種方式編輯資產中繼資料。
 contentOwner: AG
+feature: 中繼資料
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '426'
 ht-degree: 8%
 
 ---
@@ -23,7 +25,7 @@ ht-degree: 8%
 
 1. 執行下列任一項作業：
 
-   * 從「資產」UI中，選取資產，然後從工具列按一下／點選「檢視屬性&#x200B;**[!UICONTROL 」圖示。]**
+   * 從「資產」UI中，選取資產，然後從工具列按一下／點選「檢視屬性&#x200B;]**」圖示。**[!UICONTROL 
    * 從資產縮圖中，選擇&#x200B;**[!UICONTROL 檢視屬性]**&#x200B;快速動作。
    * 在資產頁面中，從工具列按一下／點選「檢視屬性」。****
 
@@ -35,7 +37,7 @@ ht-degree: 8%
    >
    >如果文字欄位空白，則沒有現有的中繼資料集。 您可以在欄位中輸入值，並儲存它以新增該中繼資料屬性。
 
-對資產中繼資料所做的任何變更都會寫入原始二進位檔，作為其XMP資料的一部分。 這是透過AEM中繼資料回寫工作流程來完成的。 對現有屬性（如`dc:title`）所做的變更會被覆寫，新建立的屬性（包括如`cq:tags`的自訂屬性）會與架構一起新增。
+對資產中繼資料所做的任何變更都會寫入原始二進位檔，作為其資料的一XMP部分。 這是透過中繼AEM資料回寫工作流程來完成。 對現有屬性（如`dc:title`）所做的變更會被覆寫，新建立的屬性（包括如`cq:tags`的自訂屬性）會與架構一起新增。
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -43,9 +45,9 @@ ht-degree: 8%
 
 有關如何編輯元資料架構的詳細資訊，請參閱[編輯元資料架構表單](metadata-schemas.md#edit-metadata-schema-forms)。
 
-## 在AEM {#registering-a-custom-namespace-within-aem}中註冊自訂命名空間
+## 在{#registering-a-custom-namespace-within-aem}中註冊自AEM訂命名空間
 
-您可以在AEM中新增自己的名稱空間。 就像有預先定義的名稱空間（例如cq、jcr和sling）一樣，您也可以擁有儲存庫中繼資料和xml處理的名稱空間。
+您可以在中新增您自己的命名空AEM間。 就像有預先定義的名稱空間（例如cq、jcr和sling）一樣，您也可以擁有儲存庫中繼資料和xml處理的名稱空間。
 
 1. 轉至節點類型管理頁&#x200B;*https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*。
 1. 按一下或點選頁面頂端的「名稱空間&#x200B;****」。 命名空間管理頁面會顯示在視窗中。
