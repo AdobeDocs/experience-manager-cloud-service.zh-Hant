@@ -1,10 +1,11 @@
 ---
 title: 內容片段的AEM遠程GraphQL查詢驗證
 description: 瞭解遠程GraphQL查詢AEM的驗證，以確保無頭內容發送的安全。
+feature: 內容片段，GraphQL API
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
