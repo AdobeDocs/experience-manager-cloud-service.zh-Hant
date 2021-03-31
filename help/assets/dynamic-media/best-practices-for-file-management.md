@@ -4,10 +4,11 @@ description: 「命名、組織和管理Dynamic Media影像檔案和視訊資產
 contentOwner: Rick Brough
 feature: 資產管理，影像描述檔，視訊描述檔
 topic: 業務從業人員
+role: 管理員，業務從業人員
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
