@@ -2,9 +2,9 @@
 title: '授予用戶對實例的訪AEM問權 '
 description: 請依照本頁瞭解系統管理員如何授與使用者對例項的存AEM取權
 translation-type: tm+mt
-source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 1. 導覽至Cloud Manager，然後按一下&#x200B;**Environments**&#x200B;卡上的&#x200B;**管理存取**&#x200B;按鈕，如下所示。
 
    >[!NOTE]
-   >您必須是系統管理員或建立環境的用戶，才能在Admin Console中添加用戶。 只有「業務所有者」或「部署管理員」角色具有建立環境的權限。 請參閱[新增使用者和指派Cloud Manager角色](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)以進一步瞭解角色和相關權限。
+   >您必須是系統管理員或建立環境的用戶，才能在Admin Console中添加用戶。 只有「業務所有者」或「部署管理員」角色具有建立環境的權限。 請參閱[使用者角色和權限](/help/onboarding/what-is-required/user-roles-permissions.md)以進一步瞭解角色和相關權限。 此外，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)以瞭解環境。
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
