@@ -2,10 +2,10 @@
 title: 導覽至Cloud Manager
 description: 請依照本頁瞭解如何導覽至Cloud Manager登陸頁面
 translation-type: tm+mt
-source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
+source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 7%
+source-wordcount: '445'
+ht-degree: 6%
 
 ---
 
@@ -14,24 +14,22 @@ ht-degree: 7%
 
 Cloud Manager是Cloud Service的重AEM要組成部分。 它可讓組織自行管理雲端的Experience Manager。 其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。使用用戶介面，可以配置和啟動CI/CD管線。
 
-一旦系統管理員授予您Cloud Manager的存取權，您就會收到一封電子郵件，將您帶往Cloud Manager登入頁面，也可透過[Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)存取。
+一旦系統管理員授予您Cloud Manager的存取權，您就會收到一封電子郵件，將您帶往[Adobe Experience Cloud](https://experience.adobe.com)首頁。
 
 >[!NOTE]
->您必須以用戶身份添加，並由系統管理員分配給Cloud Manager角色(Admin Console中的產品配置檔案)。
+>您必須以用戶身份添加，且系統管理員必須至少指派一個Cloud Manager角色(Admin Console中的產品配置檔案)。
 
 1. 在歡迎電子郵件中，按一下&#x200B;**開始**，如下圖所示。
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-   或,
+   >[!NOTE]
+   >或者，您也可以從[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接導覽至Cloud Manager登入頁面。 根據[!UICONTROL Cloud Manager]中指派的角色和應用程式的狀態，您在使用[!UICONTROL Cloud Manager] UI時會看到不同的畫面。 如需詳細資訊，請參閱以下[Cloud Manager Landing頁面](#cloud-manager-landing)一節。
 
-   1. 從[Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)導覽至Cloud Manager登入頁面。
+1. 選擇&#x200B;**Experience Manager**。
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
-   1. 選擇&#x200B;**Experience Manager**。
-      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
-
-   1. 從Cloud Manager卡按一下&#x200B;**Launch**。
-成功登入[!UICONTROL Cloud Manager]後，您就可以使用使用者介面(UI)。
-      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+1. 從Cloud Manager卡按一下&#x200B;**Launch**。 成功登入[!UICONTROL Cloud Manager]後，您就可以使用使用者介面(UI)。
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Cloud Manager登錄頁{#cloud-manager-landing}
