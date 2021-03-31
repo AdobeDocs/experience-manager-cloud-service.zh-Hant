@@ -2,15 +2,17 @@
 title: 導覽至Cloud Manager
 description: 請依照本頁瞭解如何導覽至Cloud Manager登陸頁面
 translation-type: tm+mt
-source-git-commit: 159a1619e2cb1243e056dcc6182abceeeff01730
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
+source-wordcount: '410'
+ht-degree: 7%
 
 ---
 
 
 # 導覽至Cloud Manager {#cloud-manager}
+
+Cloud Manager是Cloud Service的重AEM要組成部分。 它可讓組織自行管理雲端的Experience Manager。 其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。使用用戶介面，可以配置和啟動CI/CD管線。
 
 一旦系統管理員授予您Cloud Manager的存取權，您就會收到一封電子郵件，將您帶往Cloud Manager登入頁面，也可透過[Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)存取。
 
