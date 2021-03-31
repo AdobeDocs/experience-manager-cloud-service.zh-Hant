@@ -3,10 +3,11 @@ title: 影片
 description: 瞭解如何在Dynamic Media使用視訊。
 feature: 視訊設定檔
 topic: 業務從業人員
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '9512'
+source-wordcount: '9514'
 ht-degree: 6%
 
 ---
@@ -406,7 +407,7 @@ VBR編碼時間較長，但結果最好；媒體檔案的品質更優越。 VBR�
 |--- |--- |--- |--- |
 | 來源 | 1920x1080 | 1 | 3 |
 | 編碼 | 960 x 540 | 2 | 2 |
-| 編碼 | 640 x 360 | 3 | 1 |
+| 編碼 | 640 x 360 | 3 | 3 |
 | 編碼 | 480 x 270 | 4 | 4 |
 
 ### 編碼視訊檔案格式{#encoded-video-file-format}
