@@ -3,11 +3,12 @@ title: 套用 Dynamic Media 影像預設集
 description: 瞭解如何在Dynamic Media套用影像預設集。
 feature: 影像預設集、檢視器、轉譯
 topic: 業務從業人員
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 5%
+source-wordcount: '313'
+ht-degree: 7%
 
 ---
 
