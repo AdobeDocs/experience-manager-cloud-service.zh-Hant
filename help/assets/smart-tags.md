@@ -2,10 +2,12 @@
 title: 使用AI產生的標籤自動標籤資產
 description: 使用人工智慧服務來標籤資產，使用 [!DNL Adobe Sensei] 服務套用情境式和描述性商業標籤。
 contentOwner: AG
+feature: 智慧標籤，標籤
+role: 管理員，業務從業人員
 translation-type: tm+mt
-source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2806'
 ht-degree: 6%
 
 ---
