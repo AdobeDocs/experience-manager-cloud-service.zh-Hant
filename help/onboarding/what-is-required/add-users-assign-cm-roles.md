@@ -2,15 +2,21 @@
 title: '系統管理員任務 '
 description: 請依照本頁瞭解如何新增使用者，並將他們指派為系統管理員的Cloud Manager角色
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
 # 系統管理員任務{#add-users-assign}
+
+系統管理員管理其使用者的所有方面，從存取到權限。 此使用者是第一個可以開始在Admin Console和雲端管理員中執行工作的使用者。
+系統管理員執行下列組織任務：
+
+* 新增使用者
+* 指派使用者至Cloud Manager角色和權限
 
 ## 添加用戶{#add-users}
 
