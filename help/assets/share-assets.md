@@ -2,10 +2,12 @@
 title: 將資產、檔案夾和系列共用為連結
 description: 本文說明如何將 [!DNL Experience Manager Assets] 內的資產、檔案夾和系列共用為超連結。
 contentOwner: AG
+feature: 資產管理、協作、資產分發
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: 77170e7ea2e75215a4615e7cd560179756005b6f
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '747'
 ht-degree: 1%
 
 ---
