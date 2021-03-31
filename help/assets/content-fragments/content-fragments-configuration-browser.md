@@ -1,11 +1,13 @@
 ---
 title: 內容片段——設定瀏覽器
 description: 瞭解如何在設定瀏覽器中啟用特定內容片段功能，以運用強大AEM的無頭傳送功能。
+feature: 內容片段
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 19%
+source-wordcount: '275'
+ht-degree: 20%
 
 ---
 
