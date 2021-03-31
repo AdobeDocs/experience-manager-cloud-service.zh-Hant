@@ -3,11 +3,12 @@ title: 套用Dynamic Media檢視器預設集
 description: 瞭解如何在Dynamic Media套用檢視器預設集。
 feature: 檢視器預設集，檢視器
 topic: 管理員，業務從業人員
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 24%
+source-wordcount: '223'
+ht-degree: 25%
 
 ---
 
