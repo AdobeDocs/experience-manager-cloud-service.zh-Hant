@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 7271f8146af09dc340a608f1e48f7b9f59dbb5ad
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 47%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,18 +37,20 @@ ht-degree: 47%
 
 **[系統管理員任務](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-系統管理員管理其使用者的所有方面，從存取到權限。 下列檔案包含說明基本組織工作的資訊，例如：
+系統管理員管理其使用者的所有方面，從存取到權限。 此使用者是第一個可以開始在Admin Console和雲端管理員中執行工作的使用者。
+以下文檔頁包括說明基本組織任務的資訊：
 
 * 新增使用者
 * 指派使用者至Cloud Manager角色和權限
 
 **[導覽至Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-存取Cloud Manager，開始您的雲端歷程AEM。 現在，您已經添加為用戶並分配給Cloud Manager角色，您可以執行各種任務，如建立程式[、[添加環境](/help/implementing/cloud-manager/manage-environments.md)、[訪問Git](/help/implementing/cloud-manager/accessing-git.md)、[配置管線](/help/implementing/cloud-manager/configure-pipeline.md)和[部署代碼](/help/implementing/cloud-manager/deploy-code.md)。](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)
+現在，您已新增為使用者並指派給Cloud Manager角色，您可以存取Cloud Manager，開始使用您的雲端歷程AEM。 用戶可以執行各種任務，如建立程式](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)、[添加環境](/help/implementing/cloud-manager/manage-environments.md)、[訪問Git](/help/implementing/cloud-manager/accessing-git.md)、[配置流水線](/help/implementing/cloud-manager/configure-pipeline.md)和[部署代碼](/help/implementing/cloud-manager/deploy-code.md)。
+[Cloud Manager是Cloud Service的重AEM要組成部分。 它可讓組織自行管理雲端的Experience Manager。 其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。使用用戶介面，可以配置和啟動CI/CD管線。
 
 **[授予用戶對實例的訪AEM問權](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
-請依照本節說明系統管理員如何授予使用者對例項的存取權AEM，或建立環境的使用者如何授予其他使用者對例項的存AEM取權。
+請依照本節說明系統管理員或建立環境的使用者如何授予其他使用者對例項的存AEM取權。
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
