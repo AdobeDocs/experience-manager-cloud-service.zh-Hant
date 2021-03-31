@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 98d840cf618052dd0fab5e1e6bfce6cb1bee441b
+source-git-commit: 2779b20f3b4c13ef604fa2ad61f17c836e228422
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 41%
+source-wordcount: '904'
+ht-degree: 39%
 
 ---
 
@@ -14,9 +14,11 @@ ht-degree: 41%
 
 祝賀您以Cloud Service的身分AEM開始您的旅程！ 不論您是要部署新應用程式或移轉現有應用程式，本指南都是您的起點，可確保您的應用程式已最佳化，並可在Cloud Service時成功。
 
-本指南將提供檢查清單，讓您和您的團隊迅速開始使用Cloud Manager。 您需要您的Adobe ID，以及系統管理員的協助，才能將使用者新增至Cloud Manager，以取得其指派的角色(Admin Console中的產品設定檔)和相關權限。 說明系統管理員如何通過Admin Console完成此操作。 Cloud Manager角色清單(在Admin Console中稱為「產品配置檔案」)及其相關權限已詳細列出，以便您確定組織中的不同用戶可能需要哪些角色。
+本指南將提供檢查清單，讓您和您的團隊迅速開始使用Cloud Manager。 您需要您的Adobe ID，以及系統管理員的協助，才能將使用者新增至Cloud Manager，以取得其指派的角色(Admin Console中的產品設定檔)和相關權限。 有關係統管理員如何通過Admin Console做到這一點的說明，請參閱[此處](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)。 Cloud Manager角色清單(在Admin Console中稱為「產品配置檔案」)及其相關權限已詳細列出，以便您確定組織中的不同用戶可能需要哪些角色。
 
-![](/help/onboarding/getting-access-to-aem-in-cloud/assets/customer-journey.png)
+下圖說明您的入職歷程，從系統管理員收到的歡迎電子郵件開始，並以Cloud Service的形式讓使用者存取Cloud ManagerAEM達到高潮。
+
+![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
 ## 入門重要文章 {#key-articles}
 
