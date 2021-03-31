@@ -2,10 +2,12 @@
 title: 管理影片資產
 description: 在 [!DNL Adobe Experience Manager]中上傳、預覽、註解和發佈視訊資產。
 contentOwner: AG
+feature: 資產管理，出版，協作，視訊
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '626'
 ht-degree: 6%
 
 ---
@@ -55,7 +57,7 @@ ht-degree: 6%
 * 沒有[!DNL Dynamic Media]授權，您只能使用處理設定檔來處理MP4檔案。
 * 使用處理設定檔轉碼MP4檔案時，會套用下列准則和限制：
 
-   * Apple ProRes檔案只能將程式碼轉碼至最高解析度1080p。
+   * Apple ProRes檔案只能轉碼至最高解析度1080p。
    * 如果源檔案的位元速率>200 Mbps，則只能將代碼轉碼到最大解析度1080p。
    * 如果來源影格>=60 fps，則您可使用的來源檔案大小上限為：
 
@@ -67,6 +69,6 @@ ht-degree: 6%
 
 >[!MORELIKETHIS]
 >
->* [動態媒體視訊檔案](/help/assets/dynamic-media/video.md)。
+>* [Dynamic Media視訊檔案](/help/assets/dynamic-media/video.md)。
 >* [進一步瞭解處理設定檔的使用、類型和設定](/help/assets/asset-microservices-configure-and-use.md)。
 
