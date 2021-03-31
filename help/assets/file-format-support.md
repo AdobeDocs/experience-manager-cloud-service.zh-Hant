@@ -2,10 +2,12 @@
 title: 支援的檔案格式和MIME類型
 description: ' [!DNL Experience Manager Assets] 支援的檔案格式和MIME類型為a [!DNL Cloud Service]。'
 contentOwner: AG
+feature: 資產管理，轉譯
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '824'
 ht-degree: 8%
 
 ---
@@ -19,9 +21,9 @@ ht-degree: 8%
 
 使用資產微服務進行資產轉換的重點包括：
 
-* 關鍵[Adobe應用程式與服務產生的Adobe檔案格式](#adobe-formats)，包括[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]和[!DNL Adobe Acrobat]或PDF。
+* 關鍵[Adobe檔案格式](#adobe-formats)由Adobe應用程式和服務產生，包括[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]和[!DNL Adobe Acrobat]或PDF。
 * 鍵[映像檔案格式](#image-formats)。
-* [Camera Raw檔案格](#camera-raw-formats) 式適用於多種相機，包括Canon、Nikon、Fujifilm、Olympus和其他製造商（採用Adobe Camera Raw）。
+* [Camera Raw檔](#camera-raw-formats) 案格式，適用於各種相機，包括Canon、Nikon、Fujifilm、Olympus和其他製造商(採用Adobe Camera Raw)。
 * 常見的[檔案格式](#document-formats)，包括Microsoft Office和Open Document格式。
 * 各種視訊 [和音訊](#video-formats)[格式.](#audio-formats)
 
@@ -94,9 +96,9 @@ ht-degree: 8%
 
 支援下列3D格式。
 
-另請參閱[在動態媒體中使用3D資產。](/help/assets/dynamic-media/assets-3d.md)
+另請參閱[在Dynamic Media使用3D資產。](/help/assets/dynamic-media/assets-3d.md)
 
-| 格式 | 儲存 | 版本設定 | 工作流程 | 發佈 | 存取控制 | 縮圖預覽 | 3D預覽 | 動態媒體傳送 |
+| 格式 | 儲存 | 版本設定 | 工作流程 | 發佈 | 存取控制 | 縮圖預覽 | 3D預覽 | Dynamic Media交付 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ý | ý | ý | - | ý | ý | - | - |
 | gLB | ý | ý | ý | ý | ý | - | ý | ý |
@@ -205,7 +207,7 @@ ht-degree: 8%
 |------------------------|--------------------|--------|-------|
 | MP4 | MPEG-4 | H264/AVC（所有描述檔） | - |
 | MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422 &amp; HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV(DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHDAvid AVR | Apple Intemiderate、Apple Animation |
-| FLV、F4V | Adobe Flash | H264/AVC、Flix VP6、H263、Sorenson | SWF（向量動畫檔案） |
+| FLV、F4V | AdobeFlash | H264/AVC、Flix VP6、H263、Sorenson | SWF（向量動畫檔案） |
 | WMV | Windows Media 9 | WMV3(v9)、WMV2(v8)、WMV1(v7)、GoToMeeting(G2M2、G2M3、G2M4) | Microsoft螢幕(MSS2)、Microsoft Photo Story(WVP2) |
 | MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
 | M4V | Apple iTunes | H264/AVC | - |
@@ -222,7 +224,7 @@ ht-degree: 8%
 
 ## 音訊格式{#audio-formats}
 
-[!DNL Assets] as  [!DNL Cloud Service] s provides XMP metadata extraction support for AIF, ASF, M4A, MP3, WAV, and WMA audio formats.
+[!DNL Assets] as  [!DNL Cloud Service] XMP provides metadata recustration support for AIF, ASF, M4A, MP3, WAV, and WMA audio formats.
 
 ## 提示和限制{#limitations-and-tips}
 
