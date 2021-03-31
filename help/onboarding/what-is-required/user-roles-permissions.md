@@ -2,10 +2,10 @@
 title: 使用者角色和權限
 description: 本頁說明使用者角色和權限。 請依照本頁瞭解如何新增使用者並指派他們至Cloud Manager角色。
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 2779b20f3b4c13ef604fa2ad61f17c836e228422
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '624'
+ht-degree: 6%
 
 ---
 
@@ -44,7 +44,7 @@ Cloud Manager目前為控制特定功能可用性的用戶定義四個角色：
 | 開發人員 | 開發並測試自訂的應用程式碼。 主要使用[!UICONTROL Cloud Manager]來檢視狀態。 可以訪問Git儲存庫以進行代碼提交。 |
 | 內容作者 | 通常不與[!UICONTROL Cloud Manager]互動。 可以使用[!UICONTROL Cloud Manager]程式切換器(已從[!UICONTROL Experience Cloud]導航)訪問AEM。 |
 
-### 查看角色{#view-roles}
+## 查看角色{#view-roles}
 
 若要在Cloud Manager中檢視您的角色，請登入Cloud Manager UI，在右上角選取您的設定檔圖示，然後選取&#x200B;**使用者角色**，如下圖所示。
 
