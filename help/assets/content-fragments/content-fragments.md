@@ -1,11 +1,13 @@
 ---
 title: 使用內容片段
 description: 瞭解Adobe Experience Manager(AEM)的內容片段做為Cloud Service如何讓您設計、建立、組織和使用不受頁面限制的內容，最適合無頭傳送。
+feature: 內容片段
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 3%
+source-wordcount: '2039'
+ht-degree: 4%
 
 ---
 
@@ -55,7 +57,7 @@ ht-degree: 3%
 >* [與內AEM容片段搭配使用的GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
-通訊頻道的數量逐年增加。 通常渠道是指傳送機制，例如：
+通訊管道的數量逐年增加。 通常渠道是指傳送機制，例如：
 
 * 物理通道；例如桌上型電腦、行動裝置。
 * 實體渠道的交付形式；例如，「產品詳細資訊頁面」、「產品類別頁面」（適用於桌上型電腦）或「行動網頁」（適用於行動裝置）、「行動應用程式」（適用於行動裝置）。
