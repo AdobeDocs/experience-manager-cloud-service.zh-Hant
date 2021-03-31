@@ -7,11 +7,12 @@ topic-tags: introduction
 content-type: reference
 feature: 3D資產
 topic: 業務從業人員
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 890b4d6b519ca682470d40c6615f17c228d233f9
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2271'
-ht-degree: 1%
+source-wordcount: '2273'
+ht-degree: 2%
 
 ---
 
