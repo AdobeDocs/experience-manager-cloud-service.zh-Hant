@@ -3,11 +3,12 @@ title: 全景影像
 description: 瞭解如何在Dynamic Media處理全景影像。
 feature: 全景影像
 topic: 業務從業人員
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 3%
+source-wordcount: '153'
+ht-degree: 5%
 
 ---
 
