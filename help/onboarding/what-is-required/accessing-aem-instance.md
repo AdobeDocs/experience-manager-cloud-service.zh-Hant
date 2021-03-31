@@ -2,9 +2,9 @@
 title: '授予用戶對實例的訪AEM問權 '
 description: 請依照本頁瞭解系統管理員如何授與使用者對例項的存AEM取權
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
