@@ -2,17 +2,17 @@
 title: 使用者角色和權限
 description: 本頁說明使用者角色和權限。 請依照本頁瞭解如何新增使用者並指派他們至Cloud Manager角色。
 translation-type: tm+mt
-source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # 用戶角色和權限{#user-roles-permissions}
 
-Adobe將在AdobeIdentity Management系統(IMS)中為您的公司建立&#x200B;**組織**&#x200B;識別碼，以便管理您的所有使用者及其權限。 每位使用者必須是本組織的成員，且將獲得[!UICONTROL Experience Cloud]服務的存取權，必須擁有自己的&#x200B;**Adobe ID**。
+Adobe將在AdobeIdentity Management系統(IMS)中為您的公司建立&#x200B;**組織**&#x200B;識別碼，以便管理您的所有使用者及其權限。 每位使用者必須是本組織的成員，且將獲得[!UICONTROL Experience Cloud]服務的存取權，必須擁有自己的&#x200B;**[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**。
 
 ## 使用者角色 {#user-roles}
 
