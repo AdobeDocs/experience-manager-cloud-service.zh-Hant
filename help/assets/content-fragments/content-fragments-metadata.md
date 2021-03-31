@@ -1,11 +1,13 @@
 ---
 title: 中繼資料 - 片段屬性
 description: 瞭解如何在中檢視和編輯內容片段的中繼資料屬性，AEM以調整無頭內容。
+feature: 內容片段
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 7%
+source-wordcount: '144'
+ht-degree: 10%
 
 ---
 
