@@ -3,10 +3,11 @@ title: 利用Dynamic MediaClassic對CDN快取進行失效
 description: 「瞭解如何使您的CDN（內容傳送網路）快取內容失效，讓您快速更新由Dynamic Media傳送的資產，而不需等待快取過期。」
 feature: 資產管理，Dynamic Media經典
 topic: 業務從業人員
+role: 管理員，業務從業人員
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '693'
 ht-degree: 14%
 
 ---
