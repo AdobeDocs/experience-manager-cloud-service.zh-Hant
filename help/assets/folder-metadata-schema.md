@@ -2,10 +2,12 @@
 title: 資料夾中繼資料結構
 description: 瞭解如何在 [!DNL Experience Manager Assets]中為資產資料夾建立中繼資料結構
 contentOwner: AG
+feature: 中繼資料
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1033'
 ht-degree: 8%
 
 ---
@@ -17,11 +19,11 @@ ht-degree: 8%
 
 ## 從{#add-a-folder-metadata-schema-form}中添加資料夾元資料架構
 
-使用資料夾元資料結構表單編輯器可建立和編輯資料夾的元資料結構。
+使用資料夾元資料結構Forms編輯器建立和編輯資料夾的元資料結構。
 
 1. 點選／按一下[!DNL Experience Manager]標誌，並前往&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 資料夾中繼資料結構]**。
-1. 在「資料夾元資料結構表單」頁中，點選／按一下&#x200B;**[!UICONTROL 建立]**。
-1. 指定表單的名稱，然後點選／按一下「建立&#x200B;**[!UICONTROL 」。]**&#x200B;新的架構表單列在「架構表單」頁中。
+1. 在「資料夾元資料結構」Forms頁中，點選／按一下&#x200B;**[!UICONTROL 建立]**。
+1. 指定表單的名稱，然後點選／按一下「建立&#x200B;**[!UICONTROL 」。]**&#x200B;新模式表單列在「模式Forms」頁中。
 
 ## 編輯資料夾元資料結構表單{#edit-folder-metadata-schema-forms}
 
@@ -32,7 +34,7 @@ ht-degree: 8%
 
 您可以將這些表單項目映射／配置到CRX儲存庫中元資料節點中的欄位。 您可以將新標籤或表單項目新增至中繼資料結構表單。
 
-1. 在「方案表單」頁中，選擇您建立的表單，然後從工具欄中點選／按一下「編輯」表徵圖。****
+1. 在「方案Forms」頁中，選擇您建立的表單，然後從工具欄中點選／按一下&#x200B;**[!UICONTROL 編輯]**&#x200B;表徵圖。
 1. 在「資料夾元資料結構編輯器」頁中，點選／按一下&#x200B;**[!UICONTROL +]**&#x200B;表徵圖以向表單添加頁籤。 若要重新命名標籤，請點選／按一下預設名稱，並在&#x200B;**[!UICONTROL Settings]**&#x200B;下指定新名稱。
 
    ![custom_tab](assets/custom_tab.png)
@@ -110,7 +112,7 @@ ht-degree: 8%
 
 * `./jcr:content/metadata/dc:title`:將值儲存在資料夾的元資料節點中作為屬性 `dc:title`。
 
-* `./jcr:created`:儲存資產的建立日期和時間。它是受保護的屬性。 如果您設定這些屬性，Adobe建議您將其標示為[!UICONTROL 停用編輯]。
+* `./jcr:created`:儲存資產的建立日期和時間。它是受保護的屬性。 如果配置這些屬性，Adobe建議將其標籤為[!UICONTROL 禁用編輯]。
 
 要確保元資料架構表單中元件正確顯示，請勿在屬性路徑中包含空格。
 
@@ -126,21 +128,21 @@ ht-degree: 8%
 
 ## 刪除資料夾元資料架構表單{#delete-folder-metadata-schema-forms}
 
-可以從「資料夾元資料結構表單」頁刪除資料夾元資料結構表單。 若要刪除表單，請選取表單並點選／按一下工具列中的「刪除」圖示。
+可以從「資料夾元資料結構」「Forms」頁刪除資料夾元資料結構表單。 若要刪除表單，請選取表單並點選／按一下工具列中的「刪除」圖示。
 
 ![delete_form](assets/delete_form.png)
 
 ## 指派資料夾中繼資料結構{#assign-a-folder-metadata-schema}
 
-您可以從「資料夾元資料結構表單」頁或建立資料夾時，將資料夾元資料結構分配給資料夾。
+您可以從「資料夾元資料結構」「Forms」頁或在建立資料夾時將資料夾元資料結構分配給資料夾。
 
 如果為資料夾配置元資料模式，則模式表單的路徑將儲存在資料夾節點的`folderMetadataSchema`屬性中。*/jcr:content*.
 
 ### 從「資料夾元資料結構」頁{#assign-to-a-schema-from-the-folder-metadata-schema-page}分配到結構
 
 1. 點選／按一下[!DNL Experience Manager]標誌，並前往&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]**> **[!UICONTROL 資料夾中繼資料結構]**。
-1. 從「資料夾元資料結構表單」頁中，選擇要應用於資料夾的結構結構表單。
-1. 從工具列點選／按一下「套用至資料夾」**[!UICONTROL 。]**
+1. 從「資料夾元資料結構」「Forms」頁中，選擇要應用於資料夾的結構形式。
+1. 從工具列點選／按一下「套用至資料夾」]**。**[!UICONTROL 
 
 1. 選擇要應用模式的資料夾，然後按一下／點選&#x200B;**[!UICONTROL 應用]**。 如果資料夾上已套用中繼資料結構，會出現警告訊息通知您即將覆寫現有的中繼資料結構。 點選／按一下「覆寫&#x200B;**[!UICONTROL 」。]**
 1. 開啟您套用中繼資料結構之資料夾的中繼資料屬性。
