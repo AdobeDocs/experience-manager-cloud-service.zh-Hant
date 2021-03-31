@@ -3,10 +3,11 @@ title: 互動影片
 description: 瞭解如何在Dynamic Media使用互動式視訊和可購買視訊。
 feature: 互動影片
 topic: 業務從業人員
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '6066'
+source-wordcount: '6068'
 ht-degree: 3%
 
 ---
