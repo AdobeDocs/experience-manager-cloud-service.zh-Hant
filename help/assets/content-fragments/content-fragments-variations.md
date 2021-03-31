@@ -1,10 +1,12 @@
 ---
 title: 變化 - 編寫片段內容
 description: 瞭解各種變化如何讓您的無頭內容更有AEM彈性，讓您為片段製作內容，然後根據目的建立該內容的變化。
+feature: 內容片段
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2255'
+source-wordcount: '2259'
 ht-degree: 12%
 
 ---
