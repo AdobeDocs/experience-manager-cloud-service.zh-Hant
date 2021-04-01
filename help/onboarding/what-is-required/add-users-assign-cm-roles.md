@@ -2,9 +2,9 @@
 title: '系統管理員任務 '
 description: 請依照本頁瞭解如何新增使用者，並將他們指派為系統管理員的Cloud Manager角色
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 3afed5a76c7dd82952ed15f582b7f2c7a36b9db9
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >請參閱[使用者角色與權限](#user-roles)和[與角色定義相關的權限](#permissions)，以確保在&#x200B;**Admin Console**&#x200B;中為適當的使用者指派適當的角色。
+   >請參閱[Cloud Manager角色](/help/onboarding/what-is-required/user-roles-permissions.md)以進一步瞭解Cloud Manager中提供的角色和權限。
 
    現在，您已將使用者新增至Adobe Experience Manager做為Cloud Service產品內容，並設定了正確的角色或產品設定檔。
 
