@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: 826c15ecca494f98fbe7a4c3ef129a45bd4cea7c
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 39%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 39%
 
 您需要您的Adobe ID，以及系統管理員的協助，才能將使用者新增至Cloud Manager，以取得指派的角色。
 
-**[使用者角色和權限](/help/onboarding/what-is-required/user-roles-permissions.md)**
+**[Cloud Manager角色](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
 您的系統管理員可以新增使用者，並將他們指派給Cloud Manager角色。 本節將幫助您瞭解&#x200B;*Cloud Manager角色*&#x200B;是什麼，以及與角色相關的權限，然後再開始使用。
 
