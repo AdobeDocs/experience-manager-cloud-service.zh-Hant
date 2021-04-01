@@ -2,7 +2,7 @@
 title: Cloud Manager角色
 description: 本頁說明使用者角色和權限。 請依照本頁瞭解如何新增使用者並指派他們至Cloud Manager角色。
 translation-type: tm+mt
-source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
+source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 6%
@@ -65,7 +65,7 @@ Cloud Manager目前為控制特定功能可用性的用戶定義四個角色：
 | 添加程式<br>編輯程式 | 新增計畫。<br>編輯程式——添加或刪除解決方案或附加元件 | x |  |  |  |
 | 建立環境 | 建立Prod+Stage、Dev、環境。 | x | x |  |  |
 | 更新環境 | 更新Prod+Stage、Dev、環境。 | x | x |  |  |
-| 刪除環境 | 刪除非prod、開發、環境。 | x | x |  |  |
+| 刪除開發環境 | 刪除開發環境。 | x | x |  |  |
 | 管線設定 | 設定或編輯管線。 |  | x |  |  |
 | 管線執行 | 啟動管線。 | x | x |  |  |
 | 管線執行 | 拒絕／批准重要的3層故障。 | x | x | x |  |
