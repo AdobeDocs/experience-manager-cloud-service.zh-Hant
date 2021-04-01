@@ -2,15 +2,15 @@
 title: 使用者角色和權限
 description: 本頁說明使用者角色和權限。 請依照本頁瞭解如何新增使用者並指派他們至Cloud Manager角色。
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 8%
+source-wordcount: '568'
+ht-degree: 6%
 
 ---
 
 
-# 用戶角色和權限{#user-roles-permissions}
+# Cloud Manager角色{#user-roles-permissions}
 
 ## 使用者角色 {#user-roles}
 
@@ -44,13 +44,25 @@ Cloud Manager目前為控制特定功能可用性的用戶定義四個角色：
 
 ## 用戶角色和權限{#permissions}
 
-[!UICONTROL Cloud Manager 已預先設定角色，賦予適當權限。]例如，開發人員會開發程式碼，並具有將程式碼推送至&#x200B;**Git Repository**&#x200B;的權限。 或者，企業擁有者擁有不同的權限，可讓他們新增和編輯程式、新增環境及核准部署。
+[!UICONTROL Cloud Manager 已預先設定角色，賦予適當權限。]例如，開發人員會開發程式碼，並具有將程式碼推送至Git儲存庫的權限。 或者，企業擁有者擁有不同的權限，可讓他們新增和編輯程式、新增環境及核准部署。
 
-每個角色都具有與每個角色關聯的特定權限。 下表匯總了角色，列出了可用的函式，以及可執行該函式的角色。
+每個角色都具有與其關聯的特定權限。 例如，如果您是：
+
+* ***Business Owner***，則您擁有「新增程式」或「編輯程式」、新增或更新環境、新增／編輯／刪除管道並執行任何管道，以及將程式碼部署至環境或程AEM式碼品質的權限。
+
+* ***Deployment Manager***，則您有權添加或更新環境、運行任何管線，以及將代碼部署到環AEM境或代碼質量。
+
+* ***開發人員***，您擁有產生個人存取Token以存取Git的權限。
+
+   >[!NOTE]
+   > 用戶可以被指派給多個角色。 例如，將「業務所有者」和「部署管理員」角色分配給用戶時，會為用戶提供這些權限的組合或總和。
+
+
+下表摘要了Cloud Manager中的角色及其關聯權限。
 
 | 權限 | 說明 | 企業負責人 | 部署管理員 | 計畫經理 | 開發人員 |
 |--- |--- |--- |--- |--- |--- |
-| 添加程式 | 新增計畫。 | x |  |  |  |
+| 添加程式<br>編輯程式 | 新增計畫。<br>編輯程式——添加或刪除解決方案或附加元件 | x |  |  |  |
 | 建立環境 | 建立Prod+Stage、Dev、環境。 | x | x |  |  |
 | 更新環境 | 更新Prod+Stage、Dev、環境。 | x | x |  |  |
 | 刪除環境 | 刪除非prod、開發、環境。 | x | x |  |  |
@@ -62,3 +74,4 @@ Cloud Manager目前為控制特定功能可用性的用戶定義四個角色：
 | 管線刪除 | 允許刪除管線。 |  | x |  |  |
 | 執行取消 | 取消當前執行。 |  | x |  |  |
 | 產生個人存取Token | 存取Git。 |  | x |  | x |
+
