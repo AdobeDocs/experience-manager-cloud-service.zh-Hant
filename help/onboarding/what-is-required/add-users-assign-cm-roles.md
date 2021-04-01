@@ -2,9 +2,9 @@
 title: '系統管理員任務 '
 description: 請依照本頁瞭解如何新增使用者，並將他們指派為系統管理員的Cloud Manager角色
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -44,17 +44,7 @@ ht-degree: 0%
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >請參閱以上各節[「用戶角色和權限」](#user-roles)和[與「角色定義」相關的「權限」](#permissions)，以確保在&#x200B;**Admin Console**&#x200B;中為正確的用戶分配了正確的角色。
+   >請參閱[使用者角色與權限](#user-roles)和[與角色定義相關的權限](#permissions)，以確保在&#x200B;**Admin Console**&#x200B;中為適當的使用者指派適當的角色。
 
    現在，您已將使用者新增至Adobe Experience Manager做為Cloud Service產品內容，並設定了正確的角色或產品設定檔。
 
-   例如，如果您是：
-
-   * ***Business Owner***，則您擁有「新增程式」或「編輯程式」、新增或更新環境、新增／編輯／刪除管道並執行任何管道，以及將程式碼部署至環境或程AEM式碼品質的權限。
-
-   * ***Deployment Manager***，則您有權添加或更新環境、運行任何管線，以及將代碼部署到環AEM境或代碼質量。
-
-   * ***開發人員***，您擁有產生個人存取Token以存取Git的權限。
-
-      >[!NOTE]
-      > 用戶可以被指派給多個角色。 例如，將「業務所有者」和「部署管理員」角色分配給用戶時，會為用戶提供這些權限的組合或總和。
