@@ -2,9 +2,9 @@
 title: 導覽至Cloud Manager
 description: 請依照本頁瞭解如何導覽至Cloud Manager登陸頁面
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '458'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,7 @@ Cloud Manager是Cloud Service的重AEM要組成部分。 它可讓組織自行�
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-在此處，具有權限的用戶（如Cloud Manager中的業務所有者角色）可以選擇&#x200B;**添加程式**&#x200B;來啟動[嚮導](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md)。
+在此處，具有權限的用戶（如Cloud Manager中的業務所有者角色）可以選擇&#x200B;**添加程式**&#x200B;以啟動[添加程式嚮導](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access)。
 
 若要瞭解如何在Cloud Manager中新增程式，請參閱：
 
