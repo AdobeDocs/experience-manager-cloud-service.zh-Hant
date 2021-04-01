@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 6ce8b5c53de45d6466c5a835eea27a5acfff0a40
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '923'
 ht-degree: 39%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 39%
 
 祝賀您以Cloud Service的身分AEM開始您的旅程！ 不論您是要部署新應用程式或移轉現有應用程式，本指南都是您的起點，可確保您的應用程式已最佳化，並可在Cloud Service時成功。
 
-本指南將幫助您和您的團隊迅速開始使用Cloud Manager。 您需要您的Adobe ID，以及系統管理員的協助，才能將使用者新增至Cloud Manager，以取得其指派的角色(Admin Console中的產品設定檔)和相關權限。 說明系統管理員如何通過Admin Console完成此操作。 Cloud Manager角色清單(在Admin Console中稱為「產品配置檔案」)及其相關權限已詳細列出，以便您確定組織中的不同用戶可能需要哪些角色。
+本指南將幫助您和您的團隊迅速開始使用Cloud Manager。 您需要您的Adobe ID和系統管理員的協助，才能將使用者新增至Cloud Manager，以取得其指派的角色(Admin Console中的產品設定檔)和相關權限。 說明系統管理員如何通過Admin Console完成此操作。 Cloud Manager角色清單(在Admin Console中稱為「產品配置檔案」)及其相關權限已詳細列出，以便您確定組織中的不同用戶可能需要哪些角色。
 
 下圖說明您的上線歷程，從系統管理員收到的歡迎電子郵件開始，最終以Cloud Service的形式存取Cloud ManagerAEM。
 
@@ -28,15 +28,15 @@ ht-degree: 39%
 
 在您的合約簽署後，將會發生下列事件：
 
-1. Adobe將完成您組織的設定，隨後您的組織的系統管理員將收到一封歡迎電子郵件，允許他們執行[系統管理員任務](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)，包括添加用戶、將用戶分配給角色，從而授予他們對Cloud Manager的適當訪問權限。
+1. Adobe將完成您組織的布建，隨後您的組織的系統管理員將收到一封歡迎電子郵件，允許他們執行[系統管理員任務](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)，包括添加用戶、將用戶分配給角色，從而授予他們對Cloud Manager的適當訪問權限。
 
-1. 系統管理員新增的使用者將會收到歡迎電子郵件，因此可成功[導覽至Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)。 使用者現在可以使用其Adobe ID登入，並從這裡開始使用Cloud Manager。
+1. 系統管理員新增的使用者將會收到歡迎電子郵件，如此可讓他們成功[導覽至Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)。 使用者現在可以使用其Adobe ID登入，並從這裡開始使用Cloud Manager。
 
 1. 系統管理員可以[授予用戶對實例AEM的訪問權限，以用於開發目的。](/help/onboarding/what-is-required/accessing-aem-instance.md)
 
 **[取得您的Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**
 
-您需要您的Adobe ID，以及系統管理員的協助，才能將使用者新增至Cloud Manager，以取得指派的角色。
+您需要您的Adobe ID和系統管理員的幫助，才能將用戶添加到Cloud Manager中，以獲得其指派的角色。
 
 **[Cloud Manager角色](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
