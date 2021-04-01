@@ -2,9 +2,9 @@
 title: '授予用戶對實例的訪AEM問權 '
 description: 請依照本頁瞭解系統管理員如何授與使用者對例項的存AEM取權
 translation-type: tm+mt
-source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 1. 導覽至Cloud Manager，然後按一下&#x200B;**Environments**&#x200B;卡上的&#x200B;**管理存取**&#x200B;按鈕，如下所示。
 
    >[!NOTE]
-   >您必須是系統管理員或建立環境的用戶，才能在Admin Console中添加用戶。 只有「業務所有者」或「部署管理員」角色具有建立環境的權限。 請參閱[使用者角色和權限](/help/onboarding/what-is-required/user-roles-permissions.md)以進一步瞭解角色和相關權限。 此外，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)以瞭解環境。
+   >您必須是系統管理員或建立環境的用戶，才能在Admin Console中添加用戶。 只有「業務所有者」或「部署管理員」角色具有建立環境的權限。 請參閱[雲端管理員角色](/help/onboarding/what-is-required/user-roles-permissions.md)以進一步瞭解角色和相關權限。 此外，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)以瞭解環境。
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    或,
 
-   **如果** 按一下「環境」標 **** 準中的「詳細資訊」，則「管理」按鈕 **** 也可以使用「管 **** 理訪問」。
+   在「**環境**&#x200B;頁面」中，選擇&#x200B;**管理** —> **管理訪問**。
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
