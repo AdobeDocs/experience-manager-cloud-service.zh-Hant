@@ -2,7 +2,7 @@
 title: Cloud Manager角色
 description: 本頁說明使用者角色和權限。 請依照本頁瞭解如何新增使用者並指派他們至Cloud Manager角色。
 translation-type: tm+mt
-source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
+source-git-commit: 7b5973aef0d3296a54bcf1e57bda616cdd618346
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 6%
