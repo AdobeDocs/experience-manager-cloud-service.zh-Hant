@@ -5,15 +5,15 @@ contentOwner: AG
 feature: API，資產HTTP API
 role: 開發人員、架構設計人員、管理員
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1397'
 ht-degree: 2%
 
 ---
 
 
-# [!DNL Adobe Experience Manager Assets] API和開發人員參考資料  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] 開發人員使用案例、API和參考資料  {#assets-cloud-service-apis}
 
 文章包含[!DNL Assets]開發人員的建議、參考資料和資源，做為[!DNL Cloud Service]。 它包含新的資產上傳模組、API參考，以及後處理工作流程中提供的支援資訊。
 
