@@ -4,10 +4,10 @@ description: 與[!DNLAdobe Experience Manager6.5相比， [!DNL Adobe Experience
 feature: 發行資訊
 role: 業務從業人員，領導者，架構師，管理員
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 6%
+source-wordcount: '770'
+ht-degree: 5%
 
 ---
 
@@ -65,6 +65,7 @@ ht-degree: 6%
 >
 >[!DNL Experience Manager]作為[!DNL Cloud Service]提供以下資源：
 >
+>* [已過時和已移除功能的清單](/help/release-notes/deprecated-removed-features.md)
 >* [簡介](/help/overview/introduction.md)
 >* [新增功能與不同之處](/help/overview/what-is-new-and-different.md)
 >* [建築](/help/core-concepts/architecture.md)
