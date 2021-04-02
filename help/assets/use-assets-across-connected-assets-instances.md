@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 資產管理，關聯資產，資產分發
 role: 管理員，業務從業人員，架構師
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2902'
 ht-degree: 27%
 
 ---
@@ -120,9 +120,9 @@ ht-degree: 27%
 
 要配置此連接，請遵循以下步驟。
 
-1. 如上所述，建立已連接的資產組態。 在對話框中選擇複選框&#x200B;**[!UICONTROL 為[!DNL Dynamic Media]已連接資產]**&#x200B;提取原始格式副本。
+1. 如上所述，建立已連接的資產組態。 在配置功能時，選擇「為Dynamic Media連接的資產提取原始格式副本」選項。****
 
-1. 在本地[!DNL Sites]和遠程[!DNL Assets]部署上配置[!DNL Dynamic Media]。 按照[configure [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services)的說明操作。
+1. 在本地[!DNL Sites]和遠程[!DNL Assets]部署上配置[!DNL Dynamic Media]。 按照[configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)的說明操作。
 
    * 在所有組態中使用相同的公司名稱。
    * 在本地[!DNL Sites]上，在[!UICONTROL Dynamic Media同步模式]中，選擇&#x200B;**[!UICONTROL 預設禁用]**。 站點部署只需要對[!DNL Dynamic Media]帳戶的只讀訪問。
