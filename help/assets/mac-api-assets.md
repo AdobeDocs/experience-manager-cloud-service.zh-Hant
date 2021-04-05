@@ -4,14 +4,14 @@ description: 使用 [!DNL Experience Manager Assets]中的HTTP API建立、讀�
 contentOwner: AG
 feature: 資產HTTP API,API
 role: 開發人員、架構設計人員、管理員
+exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1522'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets] HTTP API  {#assets-http-api}
 
@@ -268,6 +268,8 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 ## 提示、最佳實務和限制{#tips-limitations}
 
 * 在[!UICONTROL 關閉時間]之後，資產及其轉譯無法透過[!DNL Assets]網頁介面和HTTP API使用。 如果[!UICONTROL 開機時間]是將來或[!UICONTROL 關機時間]是過去，則API會傳回404錯誤訊息。
+
+* 資產HTTP API不會傳回完整的中繼資料。 命名空間會以硬式編碼，且只會傳回這些名稱空間。 如需完整的中繼資料，請參閱資產路徑`/jcr_content/metadata.json`。
 
 * 使用API更新時，檔案夾或資產的某些屬性會對應至不同的首碼。 `jcr:title`、`jcr:description`和`jcr:language`的`jcr`前置詞被`dc`前置詞替換。 因此，在傳回的JSON中，`dc:title`和`dc:description`分別包含`jcr:title`和`jcr:description`的值。
 
