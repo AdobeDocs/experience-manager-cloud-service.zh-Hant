@@ -1,14 +1,14 @@
 ---
 title: 建立內容片段無頭快速入門手冊
 description: 瞭解如何使用內AEM容片段來設計、建立、組織和使用不受頁面限制的內容，以進行無頭傳送。
+exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 088fa5c90d549c52ca2832bd026be4fcddb31b78
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '392'
 ht-degree: 2%
 
 ---
-
 
 # 建立內容片段無頭快速入門手冊{#creating-content-fragments}
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 1. 在內容片段編輯器中提供內容片段的詳細資訊。
 
    ![內容片段編輯器](../assets/content-fragment-edit.png)
-1. 點選或按一下「儲存並關閉」**。**
+1. 點選或按一下「儲存&#x200B;****」或「儲存並關閉&#x200B;**」。**
 
 內容片段可參照其他內容片段，如有需要，可允許巢狀內容結構。
 
