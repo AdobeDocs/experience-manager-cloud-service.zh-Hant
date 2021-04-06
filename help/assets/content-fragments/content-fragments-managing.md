@@ -3,20 +3,30 @@ title: 管理內容片段
 description: 瞭解如何使用Assets主控台來管理您的AEM內容片段，這是您無頭內容的基礎。
 feature: 內容片段
 role: 業務從業人員
+exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1748'
 ht-degree: 9%
 
 ---
-
 
 # 管理內容片段 {#managing-content-fragments}
 
 瞭解如何使用Assets主控台來管理您的AEM內容片段，這是您無頭內容的基礎。
 
-內容片段會儲存為&#x200B;**Assets**，因此主要是從&#x200B;**Assets**&#x200B;主控台管理。
+定義[內容片段模型](#creating-a-content-model)後，您可使用這些模型來建立內容片段](#creating-a-content-fragment)。[
+
+[內容片段編輯器](#opening-the-fragment-editor)提供各種[模式](#modes-in-the-content-fragment-editor)，讓您能夠：
+
+* [編輯內容](#editing-the-content-of-your-fragment) 並管 [理變數](#creating-and-managing-variations-within-your-fragment)
+* [為片段加上註解](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [將內容與片段建立關聯](#associating-content-with-your-fragment)
+* [設定中繼資料](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [查看結構樹](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [預覽JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
+
 
 >[!NOTE]
 >
@@ -25,6 +35,10 @@ ht-degree: 9%
 >* 網頁製作時；請參閱[使用內容片段編寫頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
 >* 用於使用含GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)的內容片段進行無頭內容傳送。[
 
+
+>[!NOTE]
+>
+>內容片段會儲存為&#x200B;**Assets**，因此主要是從&#x200B;**Assets**&#x200B;主控台管理。
 
 ## 建立內容片段{#creating-content-fragments}
 
@@ -135,11 +149,15 @@ ht-degree: 9%
 
    ![片段編輯器](assets/cfm-managing-03.png)
 
-1. 進行更改後，根據需要使用&#x200B;**保存並關閉**&#x200B;或&#x200B;**取消**。
+1. 進行更改後，根據需要使用&#x200B;**Save**、**Save &amp; close**&#x200B;或&#x200B;**Close**。
 
    >[!NOTE]
    >
-   >**儲存並關閉**&#x200B;和&#x200B;**取消**&#x200B;都將退出編輯器——請參閱[儲存、取消和版本](#save-cancel-and-versions)，以取得有關這兩個選項如何對內容片段運作的完整資訊。
+   >**「儲存」下** 拉式清單可供您 **** 儲存並關閉。
+
+   >[!NOTE]
+   >
+   >**儲存與關閉**&#x200B;和&#x200B;**關閉**&#x200B;都會退出編輯器——請參閱[儲存、關閉和版本](#save-close-and-versions)以取得內容片段各種選項運作的完整資訊。
 
 ## 內容片段編輯器{#modes-actions-content-fragment-editor}中的模式和動作
 
@@ -181,21 +199,29 @@ ht-degree: 9%
    * **已修改**:橘子
    * **已停用**:紅色
 
+* **「保** 存」提供對「保存 **和關閉」** 選項的訪問。
+
 * 三個點(**...**)下拉式清單可存取其他動作：
+   * **更新頁面參考**
+      * 這會更新任何頁面參考。
    * **[快速發佈](#publishing-and-referencing-a-fragment)**
    * **[管理發佈](#publishing-and-referencing-a-fragment)**
 
-## 保存、取消和{#save-cancel-and-versions}版本
+<!--
+This updates any page references and ensures that the Dispatcher is flushed as required. -->
+
+## 保存、關閉和版本{#save-close-and-versions}
 
 >[!NOTE]
 >
 >版本也可以從時間軸](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)建立、比較和回復。[
 
-編輯器有兩個選項：
+編輯器有各種選項：
 
-* **儲存**
+* **儲** 存並 **儲存並關閉**
 
-   將保存最新更改並退出編輯器。
+   * **保存** 將保存最新更改並保留在編輯器中。
+   * **儲存並關** 閉會儲存最新變更並退出編輯器。
 
    >[!CAUTION]
    >
@@ -203,20 +229,19 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >在選擇&#x200B;**Save**&#x200B;之前，可以保留在編輯器中，進行一系列更改。
+   >在儲存之前，可以先保留在編輯器中，進行一系列變更。
 
    >[!CAUTION]
    >
-   >除了簡單地保存更改外，**Save**&#x200B;還會更新任何引用，並確保Dispatcher按需刷新。 這些變更可能需要時間處理。 因此，對於大型／複雜／重負載系統，效能可能會受到影響。
+   >除了簡單地保存更改外，這些操作還會更新任何引用，並確保Dispatcher按需刷新。 這些變更可能需要時間處理。 因此，對於大型／複雜／重負載系統，效能可能會受到影響。
    >
-   >
-   >使用&#x200B;**Save**，然後快速重新輸入片段編輯器以進行並儲存進一步的變更時，請記住這一點。
+   >使用&#x200B;**儲存並關閉**，然後快速重新輸入片段編輯器以進行並儲存進一步變更時，請記住這一點。
 
-* **取消**
+* **關閉**
 
-   將退出編輯器，而不保存最新的更改。
+   將退出編輯器，而不保存最新的更改（即自最後&#x200B;**Save**&#x200B;以來所做的更改）。
 
-編輯內容片段時，會自AEM動建立版本，以確保在您&#x200B;**Cancel**&#x200B;變更時，舊版內容可以復原：
+編輯內容片段時，會自AEM動建立版本，以確保在您取消變更時（使用&#x200B;**Close**&#x200B;而不儲存），可還原先前的內容：
 
 1. 當開啟內容片段進行編輯時AEM，會檢查是否存在Cookie型Token，指出&#x200B;*編輯工作階段*&#x200B;是否存在：
 
@@ -232,7 +257,7 @@ ht-degree: 9%
    >預設值，請參閱：
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. 如果用戶選擇&#x200B;**取消**&#x200B;編輯，則恢復在編輯會話開始時建立的版本，並刪除令牌以結束編輯會話。
+3. 如果使用者取消編輯，則會還原在編輯工作階段開始時建立的版本，並移除Token以結束編輯工作階段。
 4. 如果用戶選擇「保存」編輯，則更新的元素／變化將被保存，並且標籤被移除以結束編輯會話。****
 
 ## 編輯片段{#editing-the-content-of-your-fragment}的內容
