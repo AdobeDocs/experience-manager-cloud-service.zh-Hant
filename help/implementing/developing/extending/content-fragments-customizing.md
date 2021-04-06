@@ -1,18 +1,18 @@
 ---
 title: 自訂和擴充內容片段
 description: 內容片段可延伸標準資產。
+exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 translation-type: tm+mt
-source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
+source-git-commit: 24da05afce75a16ed2223130ac1825b10ee964e1
 workflow-type: tm+mt
 source-wordcount: '1818'
 ht-degree: 1%
 
 ---
 
-
 # 自訂和擴充內容片段{#customizing-and-extending-content-fragments}
 
-在Adobe Experience Manager中，內容片段延伸了標準資產；請參閱：
+在Adobe Experience Manager，內容片段作為Cloud Service延伸了標準資產；請參閱：
 
 * [使用內容片段建](/help/assets/content-fragments/content-fragments.md) 立和管 [理內容片段和](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 頁面編寫，以取得內容片段的詳細資訊。
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ### 整合網站與資產{#integration-of-sites-with-assets}
 
-內容片段管理(CFM)是AEM資產的一部份，其格式為：
+內容片段管理(CFM)是AEM Assets的一部分，具體為：
 
 * 內容片段是資產。
 * 他們使用現有的資產功能。
@@ -104,7 +104,7 @@ ht-degree: 1%
 >
 >[內容片段元件是核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)的一部分。 如需詳細資訊，請參閱[開發核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)。
 
-您可從AEM頁面參考內容片段，就像任何其他資產類型一樣。 AEM提供&#x200B;**[內容片段核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)** - [元件，可讓您在您的頁面上包含內容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)。 您也可以延伸此&#x200B;**[內容片段](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)**&#x200B;核心元件。
+您可從頁面參考內容AEM片段，就像其他資產類型一樣。 提供AEM **[內容片段核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)** - [元件，可讓您在頁面上包含內容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)。 您也可以延伸此&#x200B;**[內容片段](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)**&#x200B;核心元件。
 
 * 元件使用`fragmentPath`屬性來引用實際內容片段。 `fragmentPath`屬性的處理方式與其他資產類型的相似屬性相同；例如，當內容片段移至其他位置時。
 
@@ -136,7 +136,7 @@ ht-degree: 1%
 
 * **翻譯**
 
-   內容片段與AEM轉譯工作流程完全整合。 在建築層面，這意味著：
+   內容片段與翻譯工作流程完AEM全整合。 在建築層面，這意味著：
 
    * 內容片段的個別翻譯實際上是分開的片段；例如：
 
@@ -150,7 +150,7 @@ ht-degree: 1%
    * 除了基於規則的路徑外，內容片段的不同語言版本之間沒有進一步的聯繫；雖然UI提供在語言變數之間導覽的方式，但是它們會以兩個不同的片段處理。
    >[!NOTE]
    >
-   >AEM轉譯工作流程可搭配`/content`使用：
+   >翻譯工AEM作流可與`/content`一起使用：
    >
    >* 由於內容片段模型位於`/conf`中，因此這些轉換中不包括這些模型。 您可以將UI字串國際化。
 
@@ -289,14 +289,14 @@ ht-degree: 1%
 >
 >請考慮此背景資訊。 您不應在此更改任何內容（因為儲存庫中標籤為&#x200B;*專用區域*），但在某些情況下，它可能有助於瞭解引擎蓋下的操作方式。
 
-編輯可跨多個檢視（= HTML頁面）的內容片段是原子。 因為原子式多檢視編輯功能不是典型的AEM概念，所以內容片段使用稱為&#x200B;*編輯工作階段*&#x200B;的內容片段。
+編輯可跨多個檢視（= HTML頁面）的內容片段是原子。 由於原子多視圖編輯功能不是典型的概AEM念，因此內容片段使用稱為&#x200B;*編輯會話*&#x200B;的內容片段。
 
 當用戶在編輯器中開啟內容片段時，將啟動編輯會話。 當用戶離開編輯器時，通過選擇&#x200B;**保存**&#x200B;或&#x200B;**取消**&#x200B;完成編輯會話。
 
-從技術上講，所有編輯作業都是在&#x200B;*live*&#x200B;內容上完成，就像所有其他AEM編輯作業一樣。 啟動編輯會話時，將建立當前未編輯狀態的版本。 如果使用者取消編輯，則會還原該版本。 如果使用者按一下&#x200B;**Save**，則不會執行任何特定動作，因為所有編輯作業都是在&#x200B;*live*&#x200B;內容上執行，因此所有變更都已持續存在。 此外，按一下&#x200B;**Save**&#x200B;會觸發一些背景處理（例如建立全文搜尋資訊和／或處理混合媒體資產）。
+從技術上講，所有編輯作業都是在&#x200B;*live*&#x200B;內容上完成，就像所有其他編輯作業一AEM樣。 啟動編輯會話時，將建立當前未編輯狀態的版本。 如果使用者取消編輯，則會還原該版本。 如果使用者按一下&#x200B;**Save**，則不會執行任何特定動作，因為所有編輯作業都是在&#x200B;*live*&#x200B;內容上執行，因此所有變更都已持續存在。 此外，按一下&#x200B;**Save**&#x200B;會觸發一些背景處理（例如建立全文搜尋資訊和／或處理混合媒體資產）。
 
 邊緣案件有一些安全措施；例如，如果使用者嘗試離開編輯器而未儲存或取消編輯工作階段。 此外，還提供定期自動儲存功能，以防止資料遺失。
-請注意，兩個使用者可同時編輯相同的內容片段，因此可能覆寫彼此的變更。 為避免此情況，必須對片段套用DAM管理員的*Checkout*&#x200B;動作，以鎖定內容片段。
+請注意，兩個使用者可同時編輯相同的內容片段，因此可能覆寫彼此的變更。 為避免此情況，內容片段必須套用DAM管理對片段的*Checkout*&#x200B;動作來鎖定。
 
 ## 範例{#examples}
 
@@ -333,7 +333,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### 範例：指定自動保存間隔{#example-specifying-the-auto-save-interval}
 
-[自動保存間隔](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions)（以秒為單位）可使用配置管理器(ConfMgr)定義：
+[自動保存間隔](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions)（以秒為單位）可使用配置管理器(ConfMgr)定義：
 
 * 節點：`<conf-root>/settings/dam/cfm/jcr:content`
 * 屬性名稱: `autoSaveInterval`
