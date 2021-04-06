@@ -1,43 +1,43 @@
 ---
-title: AEM中的Maintenance Tasks as a Cloud Service
-description: 'AEM中的Maintenance Tasks as a Cloud Service '
+title: 維護任AEM務作為Cloud Service
+description: 維護任AEM務作為Cloud Service
+exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: c3af507716ef60541ecca8dafb797651e8ece9d3
+source-git-commit: d53d34e86b5e5bac6a66be8d288cf4ab8fb00ac4
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '899'
 ht-degree: 2%
 
 ---
 
+# 維護任AEM務作為Cloud Service
 
-# AEM中的Maintenance Tasks as a Cloud Service
-
-維護任務是按計畫運行以優化儲存庫的進程。 將AEM視為雲端服務，客戶對維護工作的營運屬性設定的需求微乎其微。 客戶可將資源集中在應用程式層級的考量上，將基礎架構作業交給Adobe。
+維護任務是按計畫運行以優化儲存庫的進程。 作為AEMCloud Service，客戶對於配置維護任務的操作屬性的需求非常小。 客戶可將資源集中在應用程式級別上，讓基礎架構操作與Adobe。
 
 有關維護任務的其他資訊，請參見以下頁：
 
-* [AEM維護指南](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)
+* [維AEM護指南](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)
 * [Operations Dashboard維護任務](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks)
 
 ## 配置維護任務
 
-在舊版AEM中，您可以使用維護卡（「工具>作業>維護」）來設定維護工作。 對於AEM做為雲端服務，維護卡已不再提供，因此應使用Cloud Manager將設定提交至來源控制並部署。 Adobe將管理不需要客戶決策的維護工作（例如，Datastore Garbage Collection），而客戶可以設定其他維護工作（請參閱下表）。
+在舊版中，您可AEM以使用維護卡（「工具」>「操作」>「維護」）來設定維護工作。 作為AEMCloud Service，維護卡已不再可用，因此應使用Cloud Manager將配置提交到源控制並部署。 Adobe將管理不需要客戶決策的維護任務（例如，資料儲存廢棄項收集），而客戶可以配置其他維護任務（請參見下表）。
 
 >[!CAUTION]
 >
->Adobe保留覆寫客戶維護工作組態設定的權利，以緩解效能降低等問題。
+>Adobe保留覆寫客戶維護任務配置設定的權利，以緩解效能降低等問題。
 
-下表說明在AEM發行時可用的「雲端服務」維護工作。
+下表說明了作為Cloud Service在發行時可用的維AEM護任務。
 
 | 維護任務 | 誰擁有配置 | 如何設定（選用） |
 |---|---|---|
-| 資料儲存廢棄項目收集 | Adobe | 不適用——完全由Adobe擁有 |
-| 版本清除 | Adobe | Adobe完全擁有，但客戶日後將可設定特定參數。 |
-| 審核日誌清除 | Adobe | Adobe完全擁有，但客戶日後將可設定特定參數。 |
-| Lucene 二進位清理 | Adobe | 未使用，因此Adobe已停用。 |
-| 臨機任務清除 | 客戶 | 必須用github完成。 <br> 通過在資料夾或下建立屬性，覆蓋下 `/libs` 的「現成維護」窗口配 `/apps/settings/granite/operations/maintenance/granite_weekly` 置節點 `granite_daily`。有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上述節點下添加另一個節點(命名該節點 `granite_TaskPurgeTask`)和相應屬性來啟用維護任務。<br> 設定OSGI屬性，請參閱 [AEM 6.5維護工作檔案](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| 工作流程清除 | 客戶 | 必須用github完成。 <br> 通過在資料夾下建立屬性，覆蓋下的「現成維護」 `/libs` 窗口配置節`/apps/settings/granite/operations/maintenance/granite_weekly` 點 `granite_daily`。有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上述節點下添加另一個節點(命名該節點 `granite_WorkflowPurgeTask`)和相應屬性來啟用維護任務。<br> 設定OSGI屬性，請參 [閱AEM 6.5維護工作檔案](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| 專案清除 | 客戶 | 必須用github完成。 <br> 通過在資料夾或下建立屬性，覆蓋下 `/libs` 的「現成維護」窗口配 `/apps/settings/granite/operations/maintenance/granite_weekly` 置節點 `granite_daily`。有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上面的節點下添加節點（將其命名）並添加相應的屬 `granite_ProjectPurgeTask`性來啟用維護任務。<br> 設定OSGI屬性，請參 [閱AEM 6.5維護工作檔案](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 資料儲存廢棄項目收集 | Adobe | N/A —— 完全擁有Adobe |
+| 版本清除 | Adobe | 完全歸Adobe所有，但是在未來，客戶將能夠設定特定參數。 |
+| 審核日誌清除 | Adobe | 完全歸Adobe所有，但是在未來，客戶將能夠設定特定參數。 |
+| Lucene 二進位清理 | Adobe | 未使用，因此被Adobe禁用。 |
+| 臨機任務清除 | 客戶 | 必須用github完成。 <br> 通過在資料夾或下建立屬性，覆蓋下 `/libs` 的「現成維護」窗口配 `/apps/settings/granite/operations/maintenance/granite_weekly` 置節點 `granite_daily`。有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上述節點下添加另一個節點(命名該節點 `granite_TaskPurgeTask`)和相應屬性來啟用維護任務。<br> 配置OSGI屬性，請參 [閱AEM6.5維護任務文檔](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 工作流程清除 | 客戶 | 必須用github完成。 <br> 通過在資料夾下建立屬性，覆蓋下的「現成維護」 `/libs` 窗口配置節`/apps/settings/granite/operations/maintenance/granite_weekly` 點 `granite_daily`。有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上述節點下添加另一個節點(命名該節點 `granite_WorkflowPurgeTask`)和相應屬性來啟用維護任務。<br> 配置OSGI屬性，請參 [閱AEM6.5維護任務文檔](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 專案清除 | 客戶 | 必須用github完成。 <br> 通過在資料夾或下建立屬性，覆蓋下 `/libs` 的「現成維護」窗口配 `/apps/settings/granite/operations/maintenance/granite_weekly` 置節點 `granite_daily`。有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上面的節點下添加節點（將其命名）並添加相應的屬 `granite_ProjectPurgeTask`性來啟用維護任務。<br> 配置OSGI屬性，請 [參AEM閱6.5維護任務文檔](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 客戶可以計畫在每日、每週或每月維護窗口期間執行的每個工作流清除、臨機任務清除和項目清除維護任務。 這些配置應直接在原始碼控制中編輯。 下表說明每個窗口可用的配置參數。
 
@@ -54,8 +54,8 @@ ht-degree: 2%
     <td>每日</td>
     <td>客戶</td>
     <td>JCR節點定義</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_daily </code></td>
-    <td>請參閱下方的程式碼範例1</td>
+    <td>/apps/settings/granite/operations/maintenance/granite_daily</td>
+    <td>請參閱程式碼範例1標籤</td>
    <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily（此值不應更改）</li>
