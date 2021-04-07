@@ -3,15 +3,15 @@ title: 智慧型影像處理
 description: 「瞭解智慧型影像如何套用每位使用者獨特的檢視特性，自動提供最適合其體驗的影像，進而提升效能和參與度。」
 feature: 資產管理，轉譯
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e1ca8c3a26fae6e421a087ade03cfeddc7a94a0e
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1926'
 ht-degree: 2%
 
 ---
-
 
 # 智慧型影像 {#smart-imaging}
 
@@ -21,9 +21,9 @@ Smart Imaging技術採用Adobe SenseiAI功能，並可與現有的「影像預�
 
 >[!NOTE]
 >
->此功能需要您使用隨附於Adobe Experience Manager·Dynamic Media的現成可用CDN。 此功能不支援任何其他自訂CDN。
+>此功能需要您使用隨附於Adobe Experience Manager·Dynamic Media的現成可用CDN（內容傳送網路）。 此功能不支援任何其他自訂CDN。
 
-Smart Imaging也受益於與Adobe同級最佳的優質CDN（內容傳送網路）服務完全整合的額外效能提升。 此服務可在伺服器、網路和互連點之間找到最佳的Internet路由。 它會考慮最低的延遲或最低的資料包丟失率，或兩者兼而有之，而不只是使用網際網路上的預設路由。
+Smart Imaging也受益於與Adobe同級最佳的優質CDN（內容傳送網路）服務完全整合的額外效能提升。 此服務可在伺服器、網路和互連點之間找到最佳的Internet路由。 它查找的路由具有最低的延遲和最低的資料包丟失率，而不是使用Internet上的預設路由。
 
 以下影像資產範例說明新增的智慧型影像最佳化：
 
@@ -43,6 +43,7 @@ Smart Imaging也受益於與Adobe同級最佳的優質CDN（內容傳送網路�
 
 最新版Smart Imaging的增強功能：
 
+* 改善使用最新智慧型影像的網頁Google SEO排名。
 * 立即（在執行時期）提供最佳化內容。
 * 使用Adobe Sensei技術根據影像要求中指定的品質(qlt)進行轉換。
 * 智慧型影像可以使用「bfc」 URL參數關閉。
@@ -58,25 +59,26 @@ Smart Imaging也受益於與Adobe同級最佳的優質CDN（內容傳送網路�
 >
 >Smart Imaging不適用於Dynamic Media- Hybrid客戶。
 
-
 ## 智慧型影像處理如何運作？{#how-does-smart-imaging-work}
 
-當消費者要求影像時，智慧型影像會檢查使用者特性。 然後，它會根據使用中的瀏覽器，轉換為適當的影像格式。 這些格式轉換的方式不會降低視覺精確度。 智慧型影像功能可根據瀏覽器功能，以下列方式自動將影像轉換為不同格式。
+當消費者要求影像時，智慧型影像功能會檢查使用者特性，並根據使用中的瀏覽器轉換為適當的影像格式。 這些格式轉換的方式不會降低視覺精確度。 智慧型影像功能可根據瀏覽器功能，以下列方式自動將影像轉換為不同格式。
+
+<!--   * Safari 14.0 +
+    * Safari 14 only with iOS 14.0 and above and macOS BigSur and above -->
 
 * 針對下列瀏覽器自動轉換為WebP:
    * Chrome
    * Firefox
-   * Microsoft Edge
-   * Safari 14.0 +
-      * Safari 14僅包含iOS 14.0和更新版本，以及macOS BigSur和更新版本
-   * Android
+   * Microsoft® Edge
+   * Safari（跨iOS、macOS、iPadOS），提供瀏覽器和作業系統版本支援WebP
+   * Android™
    * Opera
 * 舊版瀏覽器支援：
 
    | 瀏覽器 | 瀏覽器／作業系統版本 | 格式 |
    | --- | --- | --- |
-   | Safari | iOS 14.0或更舊版本 | JPEG2000 |
-   | Edge | 18或舊版 | JPEGXR |
+   | Safari | 早於iOS/iPad 14.0或macOS BigSur | JPEG2000 |
+   | Edge | 早於18 | JPEGXR |
    | Internet Explorer | 9+ | JPEGXR |
 * 對於不支援這些格式的瀏覽器，會提供原本要求的影像格式。
 
@@ -85,6 +87,7 @@ Smart Imaging也受益於與Adobe同級最佳的優質CDN（內容傳送網路�
 ## 支援哪些影像格式？{#what-image-formats-are-supported}
 
 智慧型影像支援下列影像格式：
+
 * JPEG
 * PNG
 
@@ -97,17 +100,17 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## Smart Imaging如何與您現有的已使用影像預設集搭配運作？{#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-智慧型影像功能可與您現有的「影像預設集」搭配使用。 如果要求的檔案格式為JPEG或PNG，則會觀察所有影像設定，但品質(qlt)和格式(fmt)除外。 對於格式轉換，智慧型影像功能可維持影像預設集設定所定義的完整視覺完整性，但檔案大小較小。 如果原始影像大小小於智慧型影像產生的大小，則會提供原始影像。
+智慧型影像功能可與您現有的「影像預設集」搭配使用。 如果要求的檔案格式為JPEG或PNG，則會觀察所有影像設定，但品質(`qlt`)和格式(`fmt`)除外。 對於格式轉換，智慧型影像功能可維持影像預設集設定所定義的完整視覺完整性，但檔案大小較小。 如果原始影像大小小於智慧型影像產生的大小，則會提供原始影像。
 
 <!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
 ## 我是否必須變更任何URL、影像預設集，或在我的網站上部署智慧型影像的新程式碼？{#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-如果您在現有的自訂網域上設定Smart Imaging,Smart Imaging將可與您現有的影像URL和影像預設集順暢地運作。 此外，智慧型影像功能不需要您在網站上新增任何程式碼來偵測使用者的瀏覽器。 所有這些功能都會自動處理。
+如果您在現有的自訂網域上設定Smart Imaging,Smart Imaging將可與您現有的影像URL和影像預設集順暢地運作。 此外，智慧型影像功能不需要您在網站上新增任何程式碼來偵測使用者的瀏覽器。 這些都會自動處理。
 
 如果您必須設定新的自訂網域以使用智慧型影像，則必須更新URL以反映此自訂網域。
 
-要瞭解Smart Imaging的先決條件，請參閱[我是否有資格使用Smart Imaging?](#am-i-eligible-to-use-smart-imaging)。
+要瞭解Smart Imaging的先決條件，請參閱[我是否符合使用Smart Imaging的資格？](#am-i-eligible-to-use-smart-imaging)
 
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
@@ -124,7 +127,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 * 使用Adobe搭售的CDN（內容傳送網路）做為您授權的一部分。
 * 使用專用網域（例如`images.company.com`或`mycompany.scene7.com`），而不使用一般網域（例如`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
 
-若要尋找您的網域，請登入您的公司帳戶或帳戶。
+若要尋找您的網域，請開啟[Dynamic MediaClassic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶或帳戶。
 
 點選「**[!UICONTROL 設定>應用程式設定>一般設定]**」。 查找標有&#x200B;**[!UICONTROL 「已發佈伺服器名稱」的欄位。]**&#x200B;如果您目前使用一般網域，則可要求移至您自己的自訂網域。 提交技術支援票證時，請提出此轉場請求。
 
@@ -140,7 +143,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
    1. 主要聯絡人姓名、電子郵件、電話。
    1. 要啟用智慧映像的所有域（即`images.company.com`或`mycompany.scene7.com`）。
 
-      若要尋找您的網域，請登入您的公司帳戶或帳戶。
+      若要尋找您的網域，請開啟[Dynamic MediaClassic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶或帳戶。
 
       按一 **[!UICONTROL 下「設定>應用程式設定>一般設定」]**。
 
@@ -148,7 +151,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
    1. 驗證您是否透過Adobe使用CDN，而非直接關係管理。
    1. 確認您使用的是專用網域，例如`images.company.com`或`mycompany.scene7.com`，而不是通用網域，例如`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`。
 
-      若要尋找您的網域，請登入您的公司帳戶或帳戶。
+      若要尋找您的網域，請開啟[Dynamic MediaClassic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶或帳戶。
 
       按一 **[!UICONTROL 下「設定>應用程式設定>一般設定」]**。
 
@@ -166,10 +169,11 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 我何時可以期待我的帳戶啟用Smart Imaging?{#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-請求的處理順序依技術支援部門接收的順序，依等待清單而定。
+客戶服務會根據等待清單，依照收到請求的順序處理請求。
 
 >[!NOTE]
-有時，由於啟用智慧映像需要Adobe清除快取，因此需要較長的提前期。 因此，在任何指定時間，都只能處理少數客戶轉場。
+>
+>啟用「智慧映像」可能需要較長的前置時間，因為Adobe會清除快取。 因此，在任何指定時間，都只能處理少數客戶轉場。
 
 ## 切換到使用Smart Imaging時有哪些風險？{#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -179,19 +183,20 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 如何驗證智慧映像是否如預期般工作？{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. 在您的帳戶設定智慧型影像後，請在瀏覽器上載入Dynamic Media經典(Scene7)/Dynamic Media影像URL。
+1. 在您的帳戶設定智慧型影像後，請在瀏覽器上載入Dynamic Media經典或Adobe Experience Manager-Dynamic Media影像URL。
 1. 在瀏覽器中按一下「**[!UICONTROL 檢視>開發人員>開發人員工具]**」，以開啟Chrome開發人員窗格。 或者，選擇您選擇的任何瀏覽器開發人員工具。
 
 1. 請確定開啟開發人員工具時已停用快取。
 
-   * 在Windows上——導覽至開發人員工具窗格中的設定，然後選取&#x200B;**[!UICONTROL 停用快取（在開啟裝置工具時）]**&#x200B;核取方塊。
-   * 在Mac上——在開發人員窗格的&#x200B;**[!UICONTROL Network]**&#x200B;標籤下，選擇&#x200B;**[!UICONTROL disable cache]**。
+   * 在Windows®上，導覽至「開發人員工具」窗格中的設定，然後選取「停用快取（在開啟裝置工具時）」]**核取方塊。**[!UICONTROL 
+   * 在macOS上，在開發人員窗格的&#x200B;**[!UICONTROL Network]**&#x200B;標籤下，選擇&#x200B;**[!UICONTROL disable cache]**。
 
 1. 觀察「內容類型」已轉換為適當的格式。 下列螢幕擷取顯示在Chrome上動態轉換為WebP的PNG影像。
 1. 在不同的瀏覽器和使用者條件上重複此測試。
 
 >[!NOTE]
-並非所有影像都會轉換。 Smart Imaging決定是否需要轉換來改善效能。 有時，若沒有預期的效能提升，或格式不是JPEG或PNG，則不會轉換影像。
+>
+>並非所有影像都會轉換。 Smart Imaging決定轉換是否可以改善效能。 有時，若沒有預期的效能提升，或格式不是JPEG或PNG，則不會轉換影像。
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
