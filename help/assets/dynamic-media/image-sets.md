@@ -3,15 +3,15 @@ title: 影像集
 description: 瞭解如何在Dynamic Media處理影像集。
 feature: 影像集
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2051'
 ht-degree: 9%
 
 ---
-
 
 # 影像集 {#image-sets}
 
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 影像集由具有單字的橫幅指定 `IMAGESET`。此外，如果影像集已發佈，則橫幅上會顯示以&#x200B;**[!UICONTROL World]**&#x200B;圖示指示的發佈日期。 此外，還顯示由&#x200B;**[!UICONTROL Pencil]**&#x200B;表徵圖指示的最後修改日期。
 
-![chlimage_1-135](assets/chlimage_1-339.png)
+![chlimage_1-133](assets/chlimage_1-339.png)
 
 在影像集中，您也可以建立「影像集」並新增縮圖，以建立色票。
 
@@ -43,11 +43,11 @@ ht-degree: 9%
    >
    >批集由IPS(Image Production System)建立，作為資產提取的一部分。
 
-1. [上傳多個檢視的主要來源影像。](#uploading-assets-in-image-sets)
+1. [上傳多個檢視的主要來源影像](#uploading-assets-in-image-sets)。
 
    上傳影像集的影像。 請記住，使用者可以在「影像集檢視器」中縮放影像。 因此，請謹慎選擇您的影像。 請確定影像在最大尺寸中至少為2000像素。「Experience Manager資產」支援許多影像檔案格式，但建議使用無損TIFF、PNG和EPS影像。
 
-1. [建立影像集。](#creating-image-sets)
+1. [建立影像集](#creating-image-sets)。
 
    在「影像集」中，使用者按一下「影像集檢視器」中的縮圖影像。
 
@@ -55,7 +55,7 @@ ht-degree: 9%
 
    請參閱[準備要上傳和上傳檔案的影像集資產](#uploading-assets-in-image-sets)。
 
-   請參閱[使用選擇器。](/help/assets/dynamic-media/working-with-selectors.md)
+   請參閱[使用選擇器](/help/assets/dynamic-media/working-with-selectors.md)。
 
 1. 視需要新增[影像集檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
@@ -64,11 +64,11 @@ ht-degree: 9%
    若要建立或編輯檢視器預設集，請參閱&#x200B;**[!UICONTROL 工具>資產>檢視器預設集]**。
 
 1. （可選）[檢視使用批集預設集建立的影像集](/help/assets/dynamic-media/image-sets.md#viewing-image-sets)。
-1. [預覽影像集。](/help/assets/dynamic-media/previewing-assets.md)
+1. [預覽影像集](/help/assets/dynamic-media/previewing-assets.md)。
 
    選取「影像集」，您就可以預覽它。 若要在選取的檢視器中檢查影像集，請點選縮圖圖示。 您可以從左側導軌下拉式清單中的&#x200B;**[!UICONTROL 檢視器]**&#x200B;選單選擇不同的檢視器。
 
-1. [發佈影像集。](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [發佈影像集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
    發佈影像集會啟動URL和內嵌字串。 此外，您必須[發佈您所建立的任何自訂檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。 現成可用的檢視器預設集已發佈。
 
@@ -80,7 +80,7 @@ ht-degree: 9%
 
    請參 [閱連結影像集至網頁](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[和內嵌影片或影像檢視器](/help/assets/dynamic-media/embed-code.md)。
 
-要編輯影像集，請參閱[編輯影像集。](#editing-image-sets) 此外，您還可以檢視和編輯 [影像集屬性](/help/assets/manage-digital-assets.md#editing-properties)。
+要編輯影像集，請參閱[編輯影像集](#editing-image-sets)。 此外，您還可以檢視和編輯[影像集屬性](/help/assets/manage-digital-assets.md#editing-properties)。
 
 如果建立集時遇到問題，請參閱[疑難排解Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)中的映像和集。
 
@@ -104,7 +104,7 @@ ht-degree: 9%
 >
 >如果您使用縮圖來表示產品色票，請執行下列動作：
 >
->為相同影像建立暈映或不同的像片，以不同的顏色、圖樣或光潔度顯示。 您也需要對應不同顏色、圖樣或修飾的縮圖檔案。 例如，若要以影像集呈現縮圖，並以黑色、棕色和綠色顯示相同的外套，您需要：
+>為相同影像建立暈映或不同的像片，以不同的顏色、圖樣或光潔度顯示。 您也需要對應不同顏色、圖樣或結束的縮圖檔案。 例如，若要以影像集呈現縮圖，並以黑色、棕色和綠色顯示相同的外套，您需要：
 >
 >* 黑色、棕色和綠色的相同夾克。
 >* 黑色、棕色和綠色縮圖。
@@ -147,7 +147,7 @@ ht-degree: 9%
 
    使用「資產選擇器」，您可以輸入關鍵字並點選或按一下「退貨」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選擇篩選器，然後點選工具列中的&#x200B;**[!UICONTROL Filter]**&#x200B;圖示。 點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 ****。
 
-   請參閱[使用選擇器。](/help/assets/dynamic-media/working-with-selectors.md)
+   請參閱[使用選擇器](/help/assets/dynamic-media/working-with-selectors.md)。
 
    ![6_5-影像集——新增資產](assets/6_5_imageset-addingassets.png)
 
