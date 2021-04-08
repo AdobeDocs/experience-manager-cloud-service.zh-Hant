@@ -3,15 +3,15 @@ title: 管理影像預設集
 description: 「瞭解影像預設集，以及如何建立、修改及管理影像預設集。」
 feature: 影像預設集、檢視器、轉譯
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3646'
 ht-degree: 9%
 
 ---
-
 
 # 管理影像預設集{#managing-image-presets}
 
@@ -49,7 +49,7 @@ ht-degree: 9%
 >
 >您&#x200B;*not*&#x200B;需要發佈影像預設集，因為影像預設集會自動發佈。
 >
->請參閱[發佈影像預設集。](#publishing-image-presets)
+>請參閱[發佈影像預設集](#publishing-image-presets)。
 
 >[!NOTE]
 >
