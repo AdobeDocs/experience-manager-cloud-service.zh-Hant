@@ -2,15 +2,15 @@
 title: Dynamic Media 疑難排解
 description: 使用Dynamic Media時的疑難排解提示。
 topic: '"管理員，業務從業人員"'
-role: 管理員，業務從業人員
+role: Administrator,Business Practitioner
+exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
-
 
 # Dynamic Media 疑難排解 {#troubleshooting-dynamic-media-scene-mode}
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 新Dynamic Media配置{#new-dm-config}
 
-請參閱[疑難排解新的Dynamic Media配置。](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
+請參閱[疑難排解新的Dynamic Media配置](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)。
 
 ## 一般（所有資產）{#general-all-assets}
 
@@ -221,4 +221,3 @@ ht-degree: 1%
   </tr>
  </tbody>
 </table>
-
