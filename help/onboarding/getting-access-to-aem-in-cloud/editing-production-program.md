@@ -3,7 +3,7 @@ title: '編輯製作程式 '
 description: 編輯製作程式
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
+source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -33,12 +33,12 @@ ht-degree: 0%
 
    ![](assets/edit-program-general.png)
 
-   **Solutions &amp; Add-ons**&#x200B;標籤顯示兩個選項，例如&#x200B;**Sites**&#x200B;和&#x200B;**Assets**（適用於生產和沙盒程式）。 此外，您還可以選擇&#x200B;**Commerce**&#x200B;附加選項，此選項可在&#x200B;**Sites**&#x200B;下方使用，如下圖所示。
+   **Solutions &amp; Add-ons**&#x200B;標籤顯示兩個選項，例如&#x200B;**Sites**&#x200B;和&#x200B;**Assets**（適用於生產和沙盒程式）。 此外，您也可以選擇&#x200B;**Commerce**&#x200B;附加選項，此選項可在&#x200B;**Sites**&#x200B;下方使用，如下圖所示。
 
    ![](assets/edit-prg.png)
 
    >[!NOTE]
-   >至少必須為程式選取一個解決方案，即在「編輯程式」工作流程中，使用者不得取消選取所有解決方案。
+   >至少必須為程式選擇一個解決方案，即不允許用戶在編輯程式工作流程中取消選擇所有解決方案。
 
 1. 按一下&#x200B;**保存**&#x200B;以完成編輯程式過程。
 
