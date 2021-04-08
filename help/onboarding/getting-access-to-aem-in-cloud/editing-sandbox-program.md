@@ -3,9 +3,9 @@ title: '編輯沙盒程式 '
 description: 編輯沙盒程式
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,14 @@ ht-degree: 0%
 
 1. 從Cloud Manager的&#x200B;*Overview*&#x200B;頁面導覽至「編輯程式&#x200B;**」頁面。**
 
-1. **編輯程式**&#x200B;頁面顯示生產和沙盒程式的三個選項（**Sites**、**Commerce**&#x200B;和&#x200B;**Assets**）。
+1. **編輯程式**&#x200B;頁面將顯示生產和沙盒程式的三個選項（**Sites**&#x200B;和&#x200B;**Assets**）。 此外，您還可以選擇&#x200B;**Commerce**&#x200B;附加選項，此選項可在&#x200B;**Sites**&#x200B;下方使用，如下圖所示。
+
    ![](assets/edit-prg.png)
+
+   >[!NOTE]
+   >至少必須為程式選取一個解決方案，即在「編輯程式」工作流程中，使用者不得取消選取所有解決方案。
+
+1. 按一下&#x200B;**保存**&#x200B;以完成編輯程式過程。
 
 
 ## 編輯程式{#considerations-editing}時的注意事項
