@@ -3,9 +3,9 @@ title: '編輯沙盒程式 '
 description: 編輯沙盒程式
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
+source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,17 @@ ht-degree: 0%
 
 請依照下列步驟編輯沙盒程式：
 
-1. 從Cloud Manager的&#x200B;*Overview*&#x200B;頁面導覽至「編輯程式&#x200B;**」頁面。**
+1. 從Cloud Manager的&#x200B;*概述*&#x200B;頁面按一下「編輯程式&#x200B;**」選項**
 
-1. **編輯程式**&#x200B;頁面將顯示生產和沙盒程式的三個選項（**Sites**&#x200B;和&#x200B;**Assets**）。 此外，您還可以選擇&#x200B;**Commerce**&#x200B;附加選項，此選項可在&#x200B;**Sites**&#x200B;下方使用，如下圖所示。
+   ![](assets/edit-program-overview.png)
+
+1. **編輯程式**&#x200B;頁顯示兩個&#x200B;**General**&#x200B;和&#x200B;**Solutions &amp; Add-ons**&#x200B;標籤。
+
+   導航至&#x200B;**General**&#x200B;頁籤以編輯程式說明。
+
+   ![](assets/edit-program-general.png)
+
+   **Solutions &amp; Add-ons**&#x200B;標籤顯示兩個選項，例如&#x200B;**Sites**&#x200B;和&#x200B;**Assets**（適用於生產和沙盒程式）。 此外，您還可以選擇&#x200B;**Commerce**&#x200B;附加選項，此選項可在&#x200B;**Sites**&#x200B;下方使用，如下圖所示。
 
    ![](assets/edit-prg.png)
 
