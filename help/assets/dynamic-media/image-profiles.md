@@ -3,15 +3,15 @@ title: Dynamic Media 影像設定檔
 description: 「瞭解如何建立包含非銳利遮色片設定、智慧裁切或智慧色票（或兩者皆有）的Dynamic Media影像描述檔。 然後，將描述檔套用至影像資產的資料夾。」
 feature: 資產管理，影像設定檔，轉譯
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2705'
 ht-degree: 8%
 
 ---
-
 
 # Dynamic Media 影像設定檔 {#image-profiles}
 
@@ -96,7 +96,7 @@ ht-degree: 8%
  </tbody>
 </table>
 
-銳利化在[銳利化影像中有說明。](/help/assets/dynamic-media/assets/sharpening_images.pdf)
+銳利化描述於[銳利化影像](/help/assets/dynamic-media/assets/sharpening_images.pdf)。
 
 ## 建立Dynamic Media映像配置檔案{#creating-image-profiles}
 
@@ -248,7 +248,7 @@ ht-degree: 8%
       * 如果影像只有智慧型裁切或智慧型色票，請在影像上拖曳裁切方塊的角部控點。 調整裁切的可檢視區域大小。
       * 如果影像同時具有智慧型裁切和智慧型色票，請在影像上拖曳裁切方塊的角部控點。 調整裁切的可檢視區域大小。 或者，點選影像下方的智慧色票（色票為靜態），然後拖曳裁切方塊的角部控點。 調整色票的可視區域大小。
 
-      ![調整影像的智慧裁切大小。](assets/edit_smart_crops-resize.png)
+      ![調整影像的智慧裁切大小](assets/edit_smart_crops-resize.png)。
 
    * 移動智慧型裁切方塊。 執行下列任一項作業：
 
