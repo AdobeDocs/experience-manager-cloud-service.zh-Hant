@@ -3,15 +3,15 @@ title: 支援的檔案格式和MIME類型
 description: ' [!DNL Experience Manager Assets] 支援的檔案格式和MIME類型為a [!DNL Cloud Service]。'
 contentOwner: AG
 feature: 資產管理，轉譯
-role: 業務從業人員，管理員
+role: Business Practitioner,Administrator
+exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '821'
 ht-degree: 8%
 
 ---
-
 
 # [!DNL Assets] 支援的檔案格式  {#supported-file-formats}
 
@@ -96,7 +96,7 @@ ht-degree: 8%
 
 支援下列3D格式。
 
-另請參閱[在Dynamic Media使用3D資產。](/help/assets/dynamic-media/assets-3d.md)
+另請參閱[在Dynamic Media使用3D資產](/help/assets/dynamic-media/assets-3d.md)。
 
 | 格式 | 儲存 | 版本設定 | 工作流程 | 發佈 | 存取控制 | 縮圖預覽 | 3D預覽 | Dynamic Media交付 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
