@@ -3,15 +3,15 @@ title: 管理檢視器預設集
 description: 瞭解如何在Dynamic Media建立和管理檢視器預設集。
 feature: 檢視器預設集，檢視器
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4247'
+source-wordcount: '4245'
 ht-degree: 12%
 
 ---
-
 
 # 管理檢視器預設集{#managing-viewer-presets}
 
@@ -59,7 +59,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 >[!NOTE]
 >
 >先發佈所有立即可用的檢視器，然後再將它們用於第一個檢視器。
->請參閱[發佈檢視器預設集。](#publishing-viewer-presets)
+>請參閱[Publishing Viewer Presets](#publishing-viewer-presets)。
 
 ### 檢視器預設集系統相容性{#viewer-preset-system-compatibility}
 
