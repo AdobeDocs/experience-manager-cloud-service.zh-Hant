@@ -1,14 +1,14 @@
 ---
 title: 自訂代碼品質規則-Cloud Services
 description: 自訂代碼品質規則-Cloud Services
+exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: d4fb51aa1b5f0bc469c961b0e7287758ec17e9e9
 workflow-type: tm+mt
 source-wordcount: '3278'
 ht-degree: 4%
 
 ---
-
 
 # 自訂程式碼品質規則 {#custom-code-quality-rules}
 
@@ -613,7 +613,7 @@ APIAEM表面處於常數修訂之下，以識別不建議使用且因此被視�
 在複雜項目上發生的常見問題是，同一個OSGi元件被多次配置。 這就產生了關於哪些配置可操作的模糊性。 此規則是「執行模式感知」，因為它只會識別在相同執行模式（或執行模式組合）中多次設定相同元件的問題。
 
 >[!NOTE]
->此規則將產生在多個軟體包中定義相同配置（位於同一路徑）的問題，包括在構建的軟體包的整個清單中複製相同軟體包的情況。 例如，如果構建版本生成名為`com.myco:com.myco.ui.apps`和`com.myco:com.myco.all`的包，其中`com.myco:com.myco.all`嵌入`com.myco:com.myco.ui.apps`，則`com.myco:com.myco.ui.apps`內的所有配置都將報告為重複的。 這通常是不遵循[內容封裝結構准則](/help/implementing/developing/aem-project-content-package-structure.md)的情況；在此特定示例中，包`com.myco:com.myco.ui.apps`缺少`<cloudManagerTarget>none</cloudManagerTarget>`屬性。
+>此規則將產生在多個軟體包中定義相同配置（位於同一路徑）的問題，包括在構建的軟體包的整個清單中複製相同軟體包的情況。 例如，如果構建版本生成名為`com.myco:com.myco.ui.apps`和`com.myco:com.myco.all`的包，其中`com.myco:com.myco.all`嵌入`com.myco:com.myco.ui.apps`，則`com.myco:com.myco.ui.apps`內的所有配置都將報告為重複的。 這通常是不遵循[內容封裝結構准則](/help/implementing/developing/introduction/aem-project-content-package-structure.md)的情況；在此特定示例中，包`com.myco:com.myco.ui.apps`缺少`<cloudManagerTarget>none</cloudManagerTarget>`屬性。
 
 #### 不符合代碼{#non-compliant-code-osgi}
 
@@ -914,9 +914,3 @@ AEMCloud Service禁止自定義搜索索引定義（即`oak:QueryIndexDefinition
 **自**:2021.2.0版
 
 AEMCloud Service禁止自定義搜索索引定義（即`oak:QueryIndexDefinition`類型的節點）包含名為reindex的屬性。 使用此屬性進行索引必須在遷移到Cloud Service之AEM前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
-
-
-
-
-
-
