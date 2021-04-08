@@ -1,14 +1,14 @@
 ---
 title: '編輯沙盒程式 '
-description: '編輯沙盒程式 '
+description: 編輯沙盒程式
+exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
-
 
 # 編輯沙盒程式{#create-sandbox-program}
 
@@ -25,8 +25,8 @@ ht-degree: 0%
 
 1. 從Cloud Manager的&#x200B;*Overview*&#x200B;頁面導覽至「編輯程式&#x200B;**」頁面。**
 
-1. **編輯程式**頁面顯示生產程式和沙盒程式的兩個頁籤（常規和解決方案）。
-   ![](assets/edit-program.png)
+1. **編輯程式**&#x200B;頁面顯示生產和沙盒程式的三個選項（**Sites**、**Commerce**&#x200B;和&#x200B;**Assets**）。
+   ![](assets/edit-prg.png)
 
 
 ## 編輯程式{#considerations-editing}時的注意事項
