@@ -3,15 +3,15 @@ title: 互動式影像
 description: 瞭解如何在Dynamic Media使用互動式影像。
 feature: 互動影像
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4251'
+source-wordcount: '4249'
 ht-degree: 1%
 
 ---
-
 
 # 互動式影像{#interactive-images}
 
@@ -53,8 +53,8 @@ ht-degree: 1%
 請參閱[預覽互動式影像](#optional-previewing-interactive-images) —— 選用。 視需要，您可以檢視可購買橫幅的呈現方式，並測試其互動性。
 如需如何發佈互動式影像資產的詳細資訊，請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-1. **將互動式影像新增至您的網站或以Experience Manager新增至網站**。如果您使用網站、電子商務或兩者，則可直接將互動影像新增至Experience Manager的網頁。 將互動式媒體元件拖曳至頁面上。 請參閱[將Dynamic Media資產新增至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-如果您單獨使用Experience Manager資產和Dynamic Media，請複製網站上的內嵌代碼。然後，將它與您現有的快速檢視整合。 請參閱[整合互動式影像與您的網站](#integrating-an-interactive-image-with-your-website)。
+1. **將互動式影像新增至您的網站或以Experience Manager新增至網站**。如果您使用網站、電子商務或兩者，則可直接將互動影像新增至Experience Manager的網頁。 將互動式媒體元件拖曳至頁面上。 請參閱[將Dynamic Media資產新增至Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+如果您單獨使用Experience Manager資產和Dynamic Media，請複製網站上的內嵌代碼。 然後，將它與您現有的快速檢視整合。 請參閱[整合互動式影像與您的網站](#integrating-an-interactive-image-with-your-website)。
 如果您使用協力廠商的WCM(Web Content Manager)，請將新的互動式視訊與網站上使用的現有快速檢視整合。 請參閱[整合互動式影像與現有的快速檢視](#integrating-an-interactive-image-with-an-existing-quickview)。
 
 ## （可選）識別熱點變數{#optional-identifying-hotspot-variables}
@@ -312,7 +312,7 @@ ht-degree: 1%
 當您對互動式影像感到滿意時，就可以發佈它。
 請參閱[將視訊或影像檢視器內嵌至網頁](/help/assets/dynamic-media/embed-code.md)。
 請參閱[將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 如果您的互動式內容具有相對URL的連結，尤其是連結至AEM Sites頁面，則無法使用以URL為基礎的連結方法。
-請參閱[將Dynamic Media資產新增至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+請參閱[將Dynamic Media資產新增至Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 **若要預覽互動式影像**
 
@@ -329,7 +329,7 @@ ht-degree: 1%
 
 上傳橫幅影像、新增熱點並發佈互動式影像後，您就可以將它新增至網站頁面。
 
-如果您是AEM Sites的客戶，可將互動式媒體元件拖曳至頁面上，以新增互動式影像。 請參閱[將Dynamic Media資產新增至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+如果您是AEM Sites的客戶，可將互動式媒體元件拖曳至頁面上，以新增互動式影像。 請參閱[將Dynamic Media資產新增至Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 如果您是獨立的AEM Assets客戶，您可以依本節所述手動將互動式影像新增至您的網站。
 
