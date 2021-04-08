@@ -6,9 +6,9 @@ topic: 業務從業人員
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: e1ca8c3a26fae6e421a087ade03cfeddc7a94a0e
+source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1924'
 ht-degree: 2%
 
 ---
@@ -45,11 +45,11 @@ Smart Imaging也受益於與Adobe同級最佳的優質CDN（內容傳送網路�
 
 * 改善使用最新智慧型影像的網頁Google SEO排名。
 * 立即（在執行時期）提供最佳化內容。
-* 使用Adobe Sensei技術根據影像要求中指定的品質(qlt)進行轉換。
-* 智慧型影像可以使用「bfc」 URL參數關閉。
+* 使用Adobe Sensei技術根據影像要求中指定的品質(`qlt`)進行轉換。
+* 可以使用`bfc` URL參數關閉智慧型影像。
 * TTL（存留時間）獨立。 以前，Smart Imaging的最低TTL為12小時。
 * 以前，原始和衍生影像都會進行快取，而使快取失效的步驟是2個步驟。 在最新的智慧型影像中，只有衍生產品會被快取，允許單步驟快取失效程式。
-* 在規則集中使用自訂標題的客戶。 例如，[新增自訂標頭值至影像回應|Dynamic Media經典影像](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建議的「允許計時原點」、「X-Robot」可從最新的智慧型影像獲益。 與舊版Smart Imaging不同，這些標題不會被封鎖。
+* 在規則集中使用自訂標題的客戶可從最新的智慧型影像中獲益，因為這些標題與舊版智慧型影像不同，不會遭到封鎖。 例如，[新增自訂標題值至影像回應|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建議的&quot;Timing Allow Origin&quot;、&quot;X-Robot&quot;。
 
 ## 智慧型影像處理是否有相關的授權成本？{#are-there-any-licensing-costs-associated-with-smart-imaging}
 
