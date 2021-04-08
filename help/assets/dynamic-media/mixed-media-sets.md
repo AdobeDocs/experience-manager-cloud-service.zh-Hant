@@ -3,15 +3,15 @@ title: 混合媒體集
 description: 瞭解如何在Dynamic Media使用混合媒體集。
 feature: 混合媒體集
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1469'
 ht-degree: 22%
 
 ---
-
 
 # 混合媒體集{#mixed-media-sets}
 
@@ -33,11 +33,11 @@ ht-degree: 22%
 
    首先，上傳混合媒體集的影像和視訊。如有必要，請建立 [影像集](/help/assets/dynamic-media/image-sets.md)[和回轉集](/help/assets/dynamic-media/spin-sets.md)。由於使用者可在混合媒體集檢視器中放大影像，因此當您選擇影像時，請務必考慮縮放。 請確定影像在最大尺寸中至少為2000像素。
 
-1. [建立混合媒體集。](#creating-mixed-media-sets)
+1. [建立混合媒體集](#creating-mixed-media-sets)。
 
    若要建立混合媒體集，請從「資產」頁面，點選「建立>混合媒體集 **** 」，然後命名該集合，選擇資產，然後選擇影像的顯示順序。
 
-   請參閱[使用選擇器。](/help/assets/dynamic-media/working-with-selectors.md)
+   請參閱[使用選擇器](/help/assets/dynamic-media/working-with-selectors.md)。
 
 1. 視需要設定[混合媒體檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
@@ -45,13 +45,13 @@ ht-degree: 22%
 
    若要建立或編輯檢視器預設集，請參閱&#x200B;**[!UICONTROL 工具>資產>檢視器預設集]**。
 
-   請參閱[新增和編輯檢視器預設集。](/help/assets/dynamic-media/managing-viewer-presets.md)
+   請參閱[新增和編輯檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
-1. [預覽混合媒體集。](#previewing-mixed-media-sets)
+1. [預覽混合媒體集](#previewing-mixed-media-sets)。
 
    選取「混合媒體集」，您就可以預覽它。 若要在選取的檢視器中檢查混合媒體集，請按一下縮圖圖示。 您可以從左側導軌下拉式選單的&#x200B;**[!UICONTROL 檢視器]**&#x200B;選單中選擇不同的檢視器。
 
-1. [發佈混合媒體集。](#publishing-mixed-media-sets)
+1. [發佈混合媒體集](#publishing-mixed-media-sets)。
 
    發佈混合媒體集會啟動URL和內嵌字串。 此外，您必須[發佈檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)。
 
@@ -174,4 +174,3 @@ ht-degree: 22%
 >[!NOTE]
 >
 >如果混合媒體集未在您第一次發佈時完全進入傳送服務，請第二次發佈混合媒體集。
-
