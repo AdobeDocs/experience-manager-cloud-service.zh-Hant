@@ -3,15 +3,15 @@ title: 交付Dynamic Media資產
 description: 瞭解如何提供Dynamic Media資產。
 feature: 資產管理
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 3%
+source-wordcount: '319'
+ht-degree: 2%
 
 ---
-
 
 # 交付Dynamic Media資產{#delivering-dynamic-media-assets}
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 
    * 將您的視訊或影像內嵌在您的網站上。
    * 將URL連結至您的Web應用程式。 當您想要將視訊播放器發佈為快顯視窗或強制視窗時，請使用連結。
-   * 如果您的網站回應速度快，您可以[傳送最佳化的影像。](/help/assets/dynamic-media/responsive-site.md)
+   * 如果您的網站回應速度快，您可以[傳送最佳化影像](/help/assets/dynamic-media/responsive-site.md)。
 
 >[!NOTE]
 >
