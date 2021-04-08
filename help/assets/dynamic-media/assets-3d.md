@@ -7,15 +7,15 @@ topic-tags: introduction
 content-type: reference
 feature: 3D資產
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2273'
-ht-degree: 2%
+source-wordcount: '2271'
+ht-degree: 1%
 
 ---
-
 
 # 在Dynamic Media使用3D資產{#working-with-three-d-assets-dm}
 
@@ -29,7 +29,7 @@ Dynamic Media可讓您上傳、管理、檢視和傳遞3D資產，成為身歷�
 
 ![3D鞋](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
 
-<!-- See also [Dynamic Media 3D Release Notes.](/help/release-notes/aem3d-release-notes.md) -->
+<!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
 ## Dynamic Media{#supported-three-d-file-formats-in-dm}支援的3D格式
 
@@ -50,7 +50,7 @@ Dynamic Media支援下列3D檔案格式。
 
 在您使用Dynamic Media的3D資產之前，請確定您的Experience Manager管理員已啟用並設定了Dynamic MediaCloud Services。
 
-請參閱[配置Dynamic MediaCloud Services。](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
+請參閱[配置Dynamic MediaCloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)。
 
 1. **上傳3D資產**
 
@@ -97,17 +97,17 @@ Dynamic Media支援下列3D檔案格式。
 >
 >您可以在檢視器預設集編輯器中開啟維度檢視器預設集，以練習導覽3D資產，而不需先上傳任何3D檔案。 維度檢視器預設集內建3D資產供您互動。
 >
->請參閱[管理檢視器預設集。](/help/assets/dynamic-media/managing-viewer-presets.md)
+>請參閱[管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
 ## 從資產詳細資料頁面{#viewing-three-d-assets-from-asset-details-page}檢視並與3D資產互動
 
-另請參閱[使用軟體介面預覽資產。](/help/assets/dynamic-media/previewing-assets.md)
+另請參閱[使用軟體介面預覽資產](/help/assets/dynamic-media/previewing-assets.md)。
 
 **若要從資產詳細資訊頁面檢視並與3D資產互動**
 
 1. 請確定您已將3D資產上傳至Experience Manager。
 
-   請參閱[上傳您的3D資產以用於Dynamic Media。](/help/assets/add-assets.md#upload-assets)
+   請參閱[上傳您的3D資產以用於Dynamic Media](/help/assets/add-assets.md#upload-assets)。
 
 1. 從Experience Manager，在&#x200B;**[!UICONTROL Navigation]**&#x200B;頁面上，點選&#x200B;**[!UICONTROL 資產>檔案]**。
 1. 在頁面的右上角附近，從&#x200B;**[!UICONTROL View]**&#x200B;下拉式清單中，點選&#x200B;**[!UICONTROL Card View]**。
@@ -138,9 +138,9 @@ Dynamic Media支援下列3D檔案格式。
 
 >[!IMPORTANT]
 >
->只有在將3D媒體元件新增至網頁並指派3D資產至元件後，您才能完成此工作。 請參閱[將3D媒體元件新增至網頁](#adding-the-three-d-media-component-to-a-web-page)和[將3D資產指派至3D媒體元件。](#assigning-a-three-d-asset-to-the-component)
+>只有在將3D媒體元件新增至網頁並指派3D資產至元件後，您才能完成此工作。 請參閱[將3D媒體元件新增至網頁](#adding-the-three-d-media-component-to-a-web-page)和[將3D資產指派至3D媒體元件](#assigning-a-three-d-asset-to-the-component)。
 
-另請參閱[使用軟體介面預覽資產。](/help/assets/dynamic-media/previewing-assets.md)
+另請參閱[使用軟體介面預覽資產](/help/assets/dynamic-media/previewing-assets.md)。
 
 **若要在3D媒體元件內檢視3D資產並與之互動**
 
@@ -199,7 +199,7 @@ Dynamic Media包含Dynamic Media3D媒體元件，您可在Experience Manager網�
 
 如果您使用Experience Manager作為網頁內容管理系統，可以透過3D媒體元件將3D資產新增至網頁。
 
-另請參閱[將Dynamic Media資產添加到頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+另請參閱[將Dynamic Media資產新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 1. 開啟Experience Manager網站，並選取您要新增Dynamic Media3D媒體元件的網頁。
 1. 若要在頁面編輯器中開啟頁面，請點選&#x200B;**[!UICONTROL Edit]**（鉛筆）圖示。 請確定在頁面右上角附近選取了&#x200B;**[!UICONTROL 編輯]**&#x200B;模式。
@@ -235,7 +235,7 @@ Dynamic Media包含Dynamic Media3D媒體元件，您可在Experience Manager網�
 
 將3D媒體元件新增至網頁後，您就可以指派3D資產給該網頁。
 
-請參閱[將3D媒體元件新增至網頁。](#adding-the-three-d-media-component-to-a-web-page)
+請參閱[將3D媒體元件新增至網頁](#adding-the-three-d-media-component-to-a-web-page)。
 
 1. 在「Experience Manager網站」頁面編輯器中，按一下「資產」圖示以開啟側面板中的「資產」。********
 1. 在下拉式清單中，選取&#x200B;**[!UICONTROL 3D]**&#x200B;以僅顯示3D資產檔案類型。
@@ -252,15 +252,15 @@ Dynamic Media包含Dynamic Media3D媒體元件，您可在Experience Manager網�
 
 Dynamic Media接受Dynamic Media支援的各種3D檔案格式，作為&#x200B;*static content*。 靜態內容表示您可以上傳和發佈3D資產，但是不支援與3D資產相關的&#x200B;*dynamic*&#x200B;影像或影像重新整理。 原因是Dynamic Media影像伺服器無法辨識3D格式。 因此，在Dynamic Media發佈3D資產後，您就可以複製立即URL。 3D資產的URL會遵循通常的Dynamic MediaURL結構。 不過，您無法編輯資產URL中的任何參數，這與Dynamic Media的傳統影像資產不同。
 
-另請參閱[獲取靜態資產的URL。](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)
+另請參閱[取得靜態資產的URL](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)。
 
 在&#x200B;**[!UICONTROL 資訊卡檢視]**&#x200B;中，資產名稱正下方及其日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **** 欄會指出已發佈或未發佈的資產。
 
 如果您使用Experience Manager做為WCM，請使用此發佈方法，直接在網頁上新增Dynamic Media3D資產。
 
-另請參閱[發佈Dynamic Media資產。](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+另請參閱[發佈Dynamic Media資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-另請參閱[發佈頁面。](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
+另請參閱[發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)。
 
 **若要發佈靜態Dynamic Media3D資產**
 
@@ -289,8 +289,8 @@ Dynamic Media接受Dynamic Media支援的各種3D檔案格式，作為&#x200B;*s
 
 * **[!UICONTROL URL]** -使用 **** URL如果您使用協力廠商的網頁內容管理系統，而且您想要使用維度檢視器將Dynamic Media3D資產連結至您的網頁。
 
-   請參閱[將URL連結至您的Web應用程式。](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)
+   請參閱[將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)。
 
 * **[!UICONTROL 內嵌]** -當您 **** 想要使用維度檢視器檢視內嵌在網頁上的Dynamic Media3D資產時，請使用「內嵌」。您可將內嵌代碼複製到剪貼簿，以便貼到網頁中。不允許在&#x200B;**[!UICONTROL Embed]**&#x200B;對話方塊中編輯程式碼。
 
-   請參閱[將Dynamic Media視訊、影像檢視器或維度檢視器內嵌在網頁上。](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)
+   請參閱[將Dynamic Media視訊、影像檢視器或維度檢視器內嵌在網頁](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)。
