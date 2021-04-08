@@ -3,9 +3,9 @@ title: '編輯沙盒程式 '
 description: 編輯沙盒程式
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
+source-git-commit: 87d4e7d17b6a035a1127b8f8599214bfd763644a
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,6 @@ ht-degree: 0%
 
 編輯程式時，應該審查幾點事項：
 
-* 至少必須為程式選擇一個解決方案，即，在編輯程式工作流程中，不允許使用該解決方案取消選擇所有解決方案。
+* 至少必須為程式選擇一個解決方案，即，不允許用戶在編輯程式工作流程期間取消選擇所有解決方案。
 
 * 按一下&#x200B;**保存**&#x200B;按鈕，如果選定的解決方案已更改，則環境的解決方案更新將在下次部署後生效。
