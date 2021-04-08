@@ -1,14 +1,14 @@
 ---
 title: '編輯製作程式 '
-description: '編輯製作程式 '
+description: 編輯製作程式
+exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: c34b9cbd019ee74059e13be4f19c1bb9a54fa2ba
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
-
 
 # 編輯生產程式{#create-production-program}
 
@@ -25,12 +25,10 @@ ht-degree: 0%
 
 1. 從Cloud Manager的&#x200B;*概述*&#x200B;頁面導覽至「編輯程式&#x200B;**」頁面**
 
-1. **編輯程式**&#x200B;頁面將顯示生產程式和沙盒程式的兩個頁籤（常規和解決方案）。
+1. **編輯程式**&#x200B;頁面將顯示生產和沙盒程式的三個選項（**Sites**、**Commerce**&#x200B;和&#x200B;**Assets**）。
 
-   ![](assets/edit-program.png)
+   ![](assets/edit-prg.png)
 
-   >[!NOTE]
-   >雖然會同時顯示「網站」和「資產」，但其中一個網站可能會根據已購買和未使用的項目而停用。 具體而言，如果組織沒有特定解決方案的未使用權益，則會顯示該解決方案，但會停用。
 
 ## 編輯程式{#considerations-editing}時的注意事項
 
