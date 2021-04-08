@@ -6,7 +6,7 @@ topic: 業務從業人員
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 2%
@@ -137,7 +137,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 您會提出使用智慧型影像的要求；不會自動啟用。
 
-1. [使用Admin Console建立支援案例。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [使用Admin Console建立支援案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 1. 在您的支援案例中提供下列資訊：
 
    1. 主要聯絡人姓名、電子郵件、電話。
