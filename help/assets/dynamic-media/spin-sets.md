@@ -3,15 +3,15 @@ title: 迴轉集
 description: 瞭解如何在Dynamic Media處理回轉集。
 feature: 迴轉集
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1831'
 ht-degree: 12%
 
 ---
-
 
 # 迴轉集{#spin-sets}
 
@@ -39,11 +39,11 @@ ht-degree: 12%
    >
    >批集由IPS(Image Production System)建立，作為資產提取的一部分。
 
-1. [上傳影像以進行多次檢視。](#uploading-assets-for-spin-sets)
+1. [上傳多個檢視的影像](#uploading-assets-for-spin-sets)。
 
    至少，一維自旋集需要8-12個項目鏡頭，二維自旋集需要16-24個項目鏡頭。 拍攝時間必須定期，以呈現項目旋轉和翻轉的印象。 例如，如果一維回轉集包含12個鏡頭，請針對每個鏡頭旋轉項目30°(360/12)。
 
-1. [建立回轉集。](#creating-spin-sets)
+1. [建立回轉集](#creating-spin-sets)。
 
    若要建立回轉集，請選取「建立>回轉集」，然後命名該回轉集，選擇資產，然後選擇影像的顯示順序。****
 
@@ -55,15 +55,15 @@ ht-degree: 12%
 
    若要建立或編輯檢視器預設集，請參閱&#x200B;**[!UICONTROL 工具>資產>檢視器預設集]**。
 
-   請參閱[新增和編輯檢視器預設集。](/help/assets/dynamic-media/managing-viewer-presets.md)
+   請參閱[新增和編輯檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
    您可以三種不同的方式檢視和存取以批次集預設集方式建立的集合。 （使用批集預設集建立的集，請&#x200B;*not*&#x200B;顯示在用戶介面中。）
 
-1. [預覽回轉集。](/help/assets/dynamic-media/previewing-assets.md)
+1. [預覽回轉集](/help/assets/dynamic-media/previewing-assets.md)。
 
    選取「回轉集」(Spin Set)，您就可以預覽它。 旋轉回轉集。 您可以從左側導軌下拉式選單的&#x200B;**[!UICONTROL 檢視器]**&#x200B;選單中選擇不同的檢視器。
 
-1. [發佈回轉集。](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [發佈回轉集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
    發佈回轉集會啟動URL和內嵌字串。 此外，您必須[發佈檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
@@ -138,7 +138,7 @@ ht-degree: 12%
 
    如有必要，請將資產的「重新排序」圖示拖曳至資產檔案名稱的右側，以在設定清單上或下重新排序影像。
 
-   ![將回轉集中的畫格11拖曳至新位置，以重新排序。](assets/6_5_spinset-reorderassets.png)
+   ![將回轉集中的畫格11拖曳至新位置，以重新排序](assets/6_5_spinset-reorderassets.png)
 
    將回轉集中的畫格11拖曳至新位置，以重新排序。
 
