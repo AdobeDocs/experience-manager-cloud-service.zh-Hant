@@ -4,21 +4,21 @@ description: 瞭解如何發佈Dynamic Media資產。
 contentOwner: Rick Brough
 feature: 資產管理
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 5%
+source-wordcount: '465'
+ht-degree: 3%
 
 ---
-
 
 # 發佈Dynamic Media資產{#publishing-dynamic-media-assets}
 
 您可以選擇已上傳的資產，然後點選&#x200B;**[!UICONTROL Publish]**&#x200B;或&#x200B;**[!UICONTROL Quick Publish]**，以發佈您的Dynamic Media資產。 發佈您的Dynamic Media資產後，您就可透過URL或在頁面上內嵌程式碼，將其加入網頁。
 
-您也可以立即發佈上傳的資產，不需任何使用者干預。 或者，您可以選擇性地發佈這些資產。 請參閱[配置Dynamic Media。](config-dm.md) 或者，您可以使用資料夾層級的「選擇性發佈」，選擇性地將資產發佈至Dynamic Media或Adobe Experience Manager，彼此互斥。 **** 請參閱[在 Dynamic Media 中使用選擇性發佈](/help/assets/dynamic-media/selective-publishing.md)。
+您也可以立即發佈上傳的資產，不需任何使用者干預。 或者，您可以選擇性地發佈這些資產。 請參閱[配置Dynamic Media](config-dm.md)。 或者，您可以使用資料夾層級的&#x200B;**[!UICONTROL 選擇性發佈]**，選擇性地將資產發佈至彼此互斥的Dynamic Media或Adobe Experience Manager。 請參閱[在Dynamic Media使用選擇性發佈](/help/assets/dynamic-media/selective-publishing.md)。
 
 在&#x200B;**[!UICONTROL 資訊卡檢視]**&#x200B;中，資產名稱正下方以及日期與時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **** 欄會指出已發佈或未發佈的資產。
 
@@ -28,9 +28,9 @@ ht-degree: 5%
 
 如果您想在編碼後立即發佈視訊資產，請確定已完成編碼。 當視訊正在編碼時，系統會讓您知道視訊處理工作流程正在進行中。 完成視訊編碼後，您就可以預覽視訊轉譯。 此時，您可以放心地發佈視訊，而不會發生任何發佈錯誤。
 
-另請參閱[將URL連結到Web應用程式。](linking-urls-to-yourwebapplication.md)
+另請參閱[將URL連結到Web應用程式](linking-urls-to-yourwebapplication.md)。
 
-另請參閱[將Dynamic Media視頻查看器或影像查看器嵌入到網頁中。](embed-code.md)
+另請參閱[將Dynamic Media視頻查看器或影像查看器嵌入網頁](embed-code.md)。
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 5%
 
 
 
-如需發佈集合或資產的詳細資訊，請參閱[發佈資產。](/help/assets/manage-digital-assets.md)
+如需發佈集合或資產的詳細資訊，請參閱[發佈資產](/help/assets/manage-digital-assets.md)。
 
 ## HTTP/2交付Dynamic Media資產{#http-delivery-of-dynamic-media-assets}
 
