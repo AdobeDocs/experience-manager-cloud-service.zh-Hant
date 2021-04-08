@@ -3,9 +3,9 @@ title: '建立生產計畫 '
 description: 建立生產計畫
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,14 @@ ht-degree: 0%
 
    ![](assets/create-prod1.png)
 
-1. 用戶將在螢幕上選擇要包含在程式中的解決方案，該螢幕將在上面螢幕後面顯示。
+1. 用戶將在螢幕上選擇要包含在程式中的解決方案，該螢幕將在上面螢幕後面顯示。 選擇所需的解決方案或解決方案後，按一下&#x200B;**建立**。
 
 
-   ![](assets/set-up-prod-2.png)
+   ![](assets/setup-prod-select.png)
 
-1. 選擇解決方案後，按一下&#x200B;**建立**。
+   此外，您可以在&#x200B;**Sites**&#x200B;下選擇&#x200B;**Commerce**&#x200B;附加選項，如下圖所示，然後按一下&#x200B;**Create**。
 
+   ![](assets/setup-prod-commerce.png)
 
 1. 在登陸頁面上看到您的程式卡片後，將滑鼠指標暫留在其上，以選取Cloud Manager圖示，以導覽至Cloud Manager **Overview**&#x200B;頁面。
 
