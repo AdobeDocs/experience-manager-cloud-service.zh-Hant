@@ -3,15 +3,15 @@ title: 輪播橫幅
 description: 瞭解如何使用Dynamic Media的轉盤橫幅。
 feature: 輪播橫幅
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4567'
+source-wordcount: '4565'
 ht-degree: 3%
 
 ---
-
 
 # 輪播橫幅{#carousel-banners}
 
@@ -74,11 +74,11 @@ ht-degree: 3%
 
    若要在資產中建立轉盤集，請點選「 **[!UICONTROL 建立]**」，然後選 **[!UICONTROL 取轉盤集]**。將資產新增至投影片並點選「 **[!UICONTROL 儲存]**」。您也可以直接在編輯器中編輯轉盤的外觀和行為。
 
-1. [將熱點或影像映射添加到影像橫幅。](#adding-hotspots-or-image-maps-to-an-image-banner)
+1. [將熱點或影像映射添加到影像橫幅](#adding-hotspots-or-image-maps-to-an-image-banner)。
 
    將一個或多個熱點或影像映射添加到影像橫幅。 然後，將每個動作與連結、快速檢視或體驗片段等動作產生關聯。 添加熱點或影像映射後，通過發佈轉盤集完成此任務。 發佈會建立可用來複製並套用至網站登陸頁面的內嵌代碼。
 
-   請參閱[（選用）預覽轉盤橫幅。](#optional-previewing-carousel-banners) - 可選. 視需要，您可以檢視轉盤集的呈現方式並測試其互動性。
+   請參閱[（選用）預覽轉盤橫幅](#optional-previewing-carousel-banners) —— 選用。 視需要，您可以檢視轉盤集的呈現方式並測試其互動性。
 
 1. [發佈轉盤橫幅](#publishing-carousel-banners)。
 
@@ -92,7 +92,7 @@ ht-degree: 3%
    * [將轉盤橫幅新增至您的網站，並以Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。如果您是Experience Manager網站客戶，可使用互動式媒體元件將轉盤集直接新增至頁面。
 
 
-如果必須編輯轉盤集，請參閱[編輯轉盤集。](#editing-carousel-sets) 此外，您還可以檢視和編輯「轉盤 [集」屬性](/help/assets/manage-digital-assets.md#editing-properties)。
+如果必須編輯轉盤集，請參閱[編輯轉盤集](#editing-carousel-sets)。 此外，您還可以檢視和編輯[轉盤集屬性](/help/assets/manage-digital-assets.md#editing-properties)。
 
 ## 識別熱點和影像映射變數{#identifying-hotspot-and-image-map-variables}
 
@@ -252,7 +252,7 @@ ht-degree: 3%
 
 完成轉盤橫幅的建立後，您可選擇使用「預覽」來查看轉盤橫幅對客戶的呈現方式。
 
-請參閱[（可選）預覽轉盤橫幅。](#optional-previewing-carousel-banners)
+請參閱[（可選）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
 
 >[!NOTE]
 >
@@ -370,7 +370,7 @@ ht-degree: 3%
 當您對轉盤橫幅感到滿意時，可以發佈它。
 請參閱[將視訊或影像檢視器內嵌至網頁](/help/assets/dynamic-media/embed-code.md)。
 請參閱[將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 如果您的互動式內容具有相對URL的連結，尤其是連結至AEM Sites頁面，則無法使用以URL為基礎的連結方法。
-請參閱[將Dynamic Media資產新增至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+請參閱[將Dynamic Media資產新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 您可以從轉盤編輯器（首選方法）或&#x200B;**[!UICONTROL 檢視器]**&#x200B;清單中預覽轉盤橫幅。
 
@@ -407,7 +407,7 @@ ht-degree: 3%
 在您上傳橫幅影像以建立轉盤、新增的熱點或影像地圖（或兩者）至橫幅後。 已發佈轉盤集。 您現在可以將它新增至現有的網站頁面。
 
 >[!NOTE]
-如果您是AEM Sites的客戶，可將互動式媒體元件拖曳至頁面，直接將轉盤橫幅加入您的頁面。 請參閱[將Dynamic Media資產新增至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+如果您是AEM Sites的客戶，可將互動式媒體元件拖曳至頁面，直接將轉盤橫幅加入您的頁面。 請參閱[將Dynamic Media資產新增至Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 不過，如果您是獨立的Experience Manager資產客戶，您可以手動將轉盤橫幅新增至網站登陸頁面。
 
