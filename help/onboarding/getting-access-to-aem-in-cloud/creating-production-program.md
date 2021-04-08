@@ -3,7 +3,7 @@ title: '建立生產計畫 '
 description: 建立生產計畫
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
+source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -23,18 +23,17 @@ ht-degree: 0%
    >[!NOTE]
    >如需詳細資訊，請參閱[Cloud Manager登陸頁面](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)以取得Cloud Manager的存取權。
 
-1. 在「建立程式」嚮導中選擇「為生產設定」，以建立生產程式。 ****&#x200B;用戶可以接受預設程式名或在選擇&#x200B;**繼續**&#x200B;之前對其進行編輯。
+1. 在「建立程式」嚮導中選擇「為生產設定」，以建立生產程式。 ****&#x200B;用戶可以接受預設程式名或在選擇&#x200B;**建立**&#x200B;之前對其進行編輯。
 
    ![](assets/create-prod1.png)
 
 1. 用戶將在螢幕上選擇要包含在程式中的解決方案，該螢幕將在上面螢幕後面顯示。
 
 
-   ![](assets/set-up-prod2.png)
+   ![](assets/set-up-prod-2.png)
 
 1. 選擇解決方案後，按一下&#x200B;**建立**。
 
-   ![](assets/set-up-prod3.png)
 
 1. 在登陸頁面上看到您的程式卡片後，將滑鼠指標暫留在其上，以選取Cloud Manager圖示，以導覽至Cloud Manager **Overview**&#x200B;頁面。
 
@@ -45,5 +44,4 @@ ht-degree: 0%
 
 
    >[!NOTE]
-   >
    >生產程式沒有&#x200B;**自動設定**&#x200B;功能。
