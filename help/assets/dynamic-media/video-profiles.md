@@ -3,15 +3,15 @@ title: Dynamic Media 影片設定檔
 description: Dynamic Media已提供預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 您也可以將智慧裁切新增至影片。
 feature: 資產管理，視訊設定檔，轉譯
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3668'
+source-wordcount: '3666'
 ht-degree: 9%
 
 ---
-
 
 # Dynamic Media 影片設定檔{#video-profiles}
 
@@ -37,7 +37,7 @@ Dynamic Media已提供預先定義的最適化視訊編碼設定檔。 此現成
 >
 >在搜尋資產時，中繼資料很實用。 縮圖是編碼期間產生的靜態視訊影像。 Experience Manager系統需要這些視訊，並用於使用者介面，以協助您在「卡片」檢視、「搜尋結果」檢視和「資產清單」檢視中以視覺化方式識別視訊。 當您點選編碼視訊的「轉譯」圖示（「畫家」的浮動視窗）時，可看到產生的縮圖。
 
-完成視訊描述檔的建立後，即可將它套用至資料夾或多個資料夾。 請參閱[將視訊描述檔套用至資料夾。](#applying-a-video-profile-to-folders)
+完成視訊描述檔的建立後，即可將它套用至資料夾或多個資料夾。 請參閱[將視訊描述檔套用至資料夾](#applying-a-video-profile-to-folders)。
 
 要定義其他資產類型的高級處理參數，請參閱[配置資產處理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)。
 
@@ -427,4 +427,3 @@ Dynamic Media已提供預先定義的最適化視訊編碼設定檔- MP4 H.264�
 1. 點選或按一下Experience Manager標誌，並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要從中移除視訊描述檔的檔案夾。
 1. 在資料夾上點選或按一下核取標籤以選取它，然後點選&#x200B;**[!UICONTROL 屬性]**。
 1. 選擇「 **[!UICONTROL 視訊描述檔]** 」標籤，並從下拉式選單中選 **[!UICONTROL 取「無]** 」，然後按一下「 **[!UICONTROL 儲存並關閉」]**。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
-
