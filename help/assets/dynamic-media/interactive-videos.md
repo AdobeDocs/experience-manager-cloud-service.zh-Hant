@@ -3,15 +3,15 @@ title: 互動影片
 description: 瞭解如何在Dynamic Media使用互動式視訊和可購買視訊。
 feature: 互動影片
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '6068'
+source-wordcount: '6066'
 ht-degree: 3%
 
 ---
-
 
 # 互動影片{#interactive-videos}
 
@@ -84,8 +84,8 @@ There was a link here that showed the video frame of an interactive video and wh
 發佈互動式視訊資產以完成。 發佈會建立您最終複製並套用至網站登陸頁面的內嵌代碼或URL。 請參閱[新增視訊的互動功能](#adding-interactivity-to-your-video)。
 請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-1. **將互動式視訊新增至您的網站或Experience Manager網站** -如果您使用Experience Manager網站或Experience Manager電子商務，或兩者皆使用，您可以直接將互動式視訊新增至Experience Manager的網頁。將互動式媒體元件拖曳至頁面上。 請參閱[將Dynamic Media資產新增至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-使用內嵌程式碼或URL，將您的互動式視訊與網站體驗整合。請參閱[將互動式視訊與您的網站整合](#integrating-an-interactive-video-with-your-website)。
+1. **將互動式視訊新增至您的網站或Experience Manager網站** -如果您使用Experience Manager網站或Experience Manager電子商務，或兩者皆使用，您可以直接將互動式視訊新增至Experience Manager的網頁。將互動式媒體元件拖曳至頁面上。 請參閱[將Dynamic Media資產新增至Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+使用內嵌程式碼或URL，將您的互動式視訊與網站體驗整合。 請參閱[將互動式視訊與您的網站整合](#integrating-an-interactive-video-with-your-website)。
 如果您使用協力廠商WCM(Web Content Manager)，您必須將新的互動式視訊與網站上使用的現有快速檢視實作整合。 請參閱[整合互動式視訊與現有的快速檢視](#integrating-an-interactive-video-with-an-existing-quickview)。
    [新增Dynamic Media資產至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
@@ -490,7 +490,7 @@ There was a link here that showed the video frame of an interactive video and wh
    >[!NOTE]
    若要發佈具有快速檢視功能的可購物視訊，請確定您也會從您的商務區個別發佈視訊的相關影像資產。
 
-   新增時間軸區段並發佈互動式視訊後，您就可將它新增至現有的網站登陸頁面。 請參閱[整合互動式視訊與您的網站。](#integrating-an-interactive-video-with-your-website)
+   新增時間軸區段並發佈互動式視訊後，您就可將它新增至現有的網站登陸頁面。 請參閱[將互動式視訊與您的網站整合](#integrating-an-interactive-video-with-your-website)。
 
 ## 發佈互動式視訊資產{#publishing-interactive-video-assets}
 
@@ -500,7 +500,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 在您上傳視訊、新增時間軸區段至該視訊並發佈互動式視訊後，您現在可以將它新增至現有網站。
 
-如果您是Experience Manager網站客戶，可將互動式媒體元件拖曳至您的頁面，以新增互動式視訊。 請參閱[將Dynamic Media資產新增至頁面。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+如果您是Experience Manager網站客戶，可將互動式媒體元件拖曳至您的頁面，以新增互動式視訊。 請參閱[將Dynamic Media資產新增至Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 
 如果您是獨立的Experience Manager資產客戶，您可以依本節所述手動將互動式視訊新增至網站。
 
