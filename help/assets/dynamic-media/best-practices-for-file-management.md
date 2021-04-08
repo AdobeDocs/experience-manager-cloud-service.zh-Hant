@@ -4,15 +4,15 @@ description: 「命名、組織和管理Dynamic Media影像檔案和視訊資產
 contentOwner: Rick Brough
 feature: 資產管理，影像描述檔，視訊描述檔
 topic: 業務從業人員
-role: 管理員，業務從業人員
+role: Administrator,Business Practitioner
+exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # 組織數位資產以使用影像描述檔或視訊描述檔的最佳範例{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * 根據您新增的中繼資料來組織檔案，而不是根據檔案所在的資料夾。 您可以新增中繼資料設定檔來完成此作業。
 
-   * 請參閱[中繼資料描述檔。](/help/assets/metadata-profiles.md)
+   * 請參閱[中繼資料描述檔](/help/assets/metadata-profiles.md)。
    * 請參閱[數位資產管理的中繼資料](/help/assets/manage-metadata.md)。
 
 * 通常，您的數位資產收集量會不斷增加。 因此，您必須先將所有上傳資產的中繼資料使用、檔案夾結構和檔案命名正規化，這一點在稍早之前就很重要。 標準化這些功能可確保隨著數位資產庫的擴充，您可以更精確地將處理設定檔套用至資料夾，並保有一致性。
@@ -44,4 +44,3 @@ ht-degree: 0%
 
 * 建立不太可能更改的資料夾目錄，以便所有分配的配置檔案不中斷。
 * 假設資產已發佈，則您會使用Adobe Experience Manager將資產移至另一個檔案夾，並從其新位置重新發佈。 原始發佈的資產位置仍可供使用，以及新重新發佈的資產。 但是，原始發佈的資產「遺失」至Experience Manager，無法解除發佈。 因此，在將資產移至其他資料夾之前，請先解除發佈資產，這是最佳作法。
-
