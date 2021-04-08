@@ -1,14 +1,14 @@
 ---
 title: '建立生產計畫 '
-description: '建立生產計畫 '
+description: 建立生產計畫
+exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
-
 
 # 建立生產程式{#create-production-program}
 
@@ -29,11 +29,6 @@ ht-degree: 0%
 
 1. 用戶將在螢幕上選擇要包含在程式中的解決方案，該螢幕將在上面螢幕後面顯示。
 
-
-
-   >[!NOTE]
-   >
-   >以下畫面僅會針對已購買多個解決方案的客戶群顯示。 對於只購買一個解決方案的客戶，將不會顯示下列解決方案選擇畫面。
 
    ![](assets/set-up-prod2.png)
 
