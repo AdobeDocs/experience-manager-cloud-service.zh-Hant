@@ -3,15 +3,15 @@ title: 影片
 description: 瞭解如何在Dynamic Media使用視訊。
 feature: 視訊設定檔
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '9514'
+source-wordcount: '9512'
 ht-degree: 6%
 
 ---
-
 
 # 影片{#video}
 
@@ -407,7 +407,7 @@ VBR編碼時間較長，但結果最好；媒體檔案的品質更優越。 VBR�
 |--- |--- |--- |--- |
 | 來源 | 1920x1080 | 1 | 3 |
 | 編碼 | 960 x 540 | 2 | 2 |
-| 編碼 | 640 x 360 | 3 | 3 |
+| 編碼 | 640 x 360 | 3 | 1 |
 | 編碼 | 480 x 270 | 4 | 4 |
 
 ### 編碼視訊檔案格式{#encoded-video-file-format}
@@ -1091,7 +1091,7 @@ Dynamic Media可以將標題檔案轉換為JSON（JavaScript™物件註解）�
 
    請記住，URL僅可在您首次發 *布資產* 後 *複製* 。
 
-   請參閱[發佈資產。](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 1. 執行下列任一項作業：
 
@@ -1295,7 +1295,7 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 1. Tap **[!UICONTROL OK]** to return to the Properties tab.
 1. Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**, then tap the Back Home icon in the upper-left corner to return to Experience Manager.
 
-   See [Adding a video thumbnail.](#adding-a-video-thumbnail)
+   See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
 -->
 
