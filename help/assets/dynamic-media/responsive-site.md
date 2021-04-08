@@ -3,15 +3,15 @@ title: 為互動式網站提供最佳化影像
 description: 瞭解如何使用回應式程式碼功能來提供來自Dynamic Media的最佳化影像。
 feature: 資產管理
 topic: 業務從業人員
-role: 業務從業人員
+role: Business Practitioner
+exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 14%
+source-wordcount: '326'
+ht-degree: 13%
 
 ---
-
 
 # 為回應式網站傳送最佳化影像 {#delivering-optimized-images-for-a-responsive-site}
 
@@ -19,9 +19,9 @@ ht-degree: 14%
 
 如果您的網站位於協力廠商WCM上，則使用此功能是合理的。 不過，若您的網站已開啟，AEM則Offsite影像伺服器會轉譯影像並提供給網頁。
 
-另請參閱[將視訊檢視器內嵌在網頁上。](embed-code.md)
+另請參閱[將視訊檢視器內嵌至網頁](embed-code.md)。
 
-另請參閱[將URL連結到Web應用程式。](linking-urls-to-yourwebapplication.md)
+另請參閱[將URL連結到Web應用程式](linking-urls-to-yourwebapplication.md)。
 
 **為互動式網站提供最佳化影像**:
 
