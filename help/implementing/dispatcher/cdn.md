@@ -2,14 +2,14 @@
 title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
+exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 753d023e1b2c5b76ed5c402c002046cc2c5c1de4
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '758'
 ht-degree: 7%
 
 ---
-
 
 # AEM as a Cloud Service 中的 CDN {#cdn}
 
@@ -46,10 +46,12 @@ ht-degree: 7%
 
 配置說明：
 
-1. 使用域名設定`X-Forwarded-Host`標頭。
-1. 使用原始網域(即AEMCDN的入口)設定主機標題。 價值應該來自Adobe。
+1. 使用域名設定`X-Forwarded-Host`標頭。 例如：`X-Forwarded-Host: example.com`。
+1. 使用原始網域(即AEMCDN的入口)設定主機標題。 例如：`Host: publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
 1. 將SNI報頭髮送到源。 與主機標題一樣， SNI標題必須是源域。
-1. 設定`X-Edge-Key`或`X-AEM-Edge-Key`（如果您的CDN刪除X-Edge-*），以正確將流量路由至伺服器AEM。 價值應該來自Adobe。 如果您想要直接存取AdobeCDN的入口，請通知Adobe（當`X-Edge-Key`不存在時，將被封鎖）。
+1. 設定`X-Edge-Key`或`X-AEM-Edge-Key`（如果您的CDN刪除`X-Edge-*`）。值應來自Adobe。
+   * 這是必要的，以便AdobeCDN可驗證請求來源，並將`X-Forwarded-*`標題傳遞至應用程AEM式。 例如，`X-Forwarded-Host`用於確AEM定主機標題，`X-Forwarded-For`用於確定客戶機IP。 因此，它成為受信任呼叫者（即客戶管理的CDN）的責任，以確保`X-Forwarded-*`標題的正確性（請參閱下方的附註）。
+   * 或者，當`X-Edge-Key`不存在時，可以封鎖對AdobeCDN入口的存取。 如果您需要直接存取AdobeCDN的入口（待封鎖），請通知Adobe。
 
 在接受即時流量之前，您應向Adobe的客戶支援驗證端對端流量路由是否正常運作。
 
