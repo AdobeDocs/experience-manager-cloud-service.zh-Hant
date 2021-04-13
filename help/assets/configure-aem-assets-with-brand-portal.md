@@ -2,16 +2,16 @@
 title: '將AEM Assets配置為具有品牌門戶的a [!DNL Cloud Service] '
 description: 使用 Brand Portal 設定 AEM Assets.
 contentOwner: Vishabh Gupta
-feature: 品牌入口網站
-role: 管理員
+feature: 品牌入口網站，資產分發，配置
+role: Administrator
+exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '2416'
 ht-degree: 9%
 
 ---
-
 
 # 將AEM Assets配置為[!DNL Cloud Service]和品牌門戶{#configure-aem-assets-with-brand-portal}
 
