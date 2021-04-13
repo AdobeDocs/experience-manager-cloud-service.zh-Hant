@@ -3,15 +3,15 @@ title: Digital Rights Management在 [!DNL Assets]
 description: 瞭解如何以 [!DNL Experience Manager] a [!DNL Cloud Service]的形式管理授權資產的資產到期狀態和資訊。
 contentOwner: AG
 feature: 資產管理，DRM
-role: 業務從業人員，管理員
+role: Business Practitioner,Administrator
+exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1345'
 ht-degree: 7%
 
 ---
-
 
 # Digital Rights Management資產{#digital-rights-management-in-assets}
 
@@ -37,7 +37,7 @@ ht-degree: 7%
 
 您可以在「搜尋」面板中搜尋過期的資產，包括過期的子資產。
 
-1. 在[!DNL Assets]控制台中，按一下工具欄中的&#x200B;**[!UICONTROL Search]**&#x200B;以顯示「Omnisearch」框。
+1. 在[!DNL Assets]控制台中，按一下工具欄中的&#x200B;**[!UICONTROL 搜索]**&#x200B;以顯示[!DNL Experience Manager]搜索框。
 
 1. 在「Omnisearch」（搜索）框中，選擇`Enter`鍵以顯示搜索結果頁。
 
