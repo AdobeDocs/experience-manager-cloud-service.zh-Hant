@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說�
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: bea158d45f8f66febe47d0580074358ec2b69c16
+source-git-commit: b412ec6b554684b9b41fe6c8991124bc76e200af
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 2%
+source-wordcount: '1588'
+ht-degree: 3%
 
 ---
 
@@ -195,11 +195,13 @@ Cloud Manager作為2021.3.0Cloud ServiceAEM的發行日期為2021年3月11日。
 
 ### 發行日期 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.8的發行日期為2021年3月22日。
+Best Practices Analyzer v2.1.12的發行日期為2021年4月12日。
 
-### Best Practices Analyzer {#what-is-new-bpa}的新增功能
+### 錯誤修正 {#bug-fixes-bpa-april}
 
-* 能夠從UI中的BPA報告以及導出為CSV檔案的報告中過濾掉ACS公域查找結果。
+* 報告的BPA中出現重複行。 這個問題已經修正。
+* 6.4.2版AEM的BPA UI會造成JS錯誤，此錯誤會停用「產生報表」按鈕。 此問題已修正
+
 
 ## 程式碼重構工具 {#code-refactoring-tools}
 
