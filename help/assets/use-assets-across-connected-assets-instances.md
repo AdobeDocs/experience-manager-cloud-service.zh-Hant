@@ -2,13 +2,13 @@
 title: 使用「連線資產」在 中共用 DAM 資產 [!DNL Sites]
 description: 使用遠程 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署上可用的資產。
 contentOwner: AG
-feature: 資產管理，關聯資產，資產分發
+feature: 資產管理，關聯資產，資產分發，用戶和組
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: 88f2a5d71513feb9a8198402dda491bcc978bff6
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '2922'
+source-wordcount: '2932'
 ht-degree: 27%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 27%
 使用或設定此功能之前，請先確定下列事項：
 
 * 使用者是每個部署中適當使用者群組的一部分。
-* 對於[!DNL Adobe Experience Manager]部署類型，符合其中一個支援的標準。 如需此功能在[!DNL Experience Manager] 6.5中運作的詳細資訊，請參閱 [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)中的[連線資產。
+* 對於[!DNL Adobe Experience Manager]部署類型，符合其中一個支援的標準。 [!DNL Experience Manager] Cloud Service可 [!DNL Assets] 以 [!DNL Experience Manager] 使用6.5如需此功能在 [!DNL Experience Manager] 6.5中運作的詳細資訊，請參 [閱 [!DNL Experience Manager] 6.5中的Connected Assets [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)。
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5  [!DNL Sites] on AMS. | [!DNL Experience Manager] 6.5內 [!DNL Sites] 部部署 |
    |---|---|---|---|
@@ -42,7 +42,7 @@ ht-degree: 27%
 
 作者在Content Finder中搜尋影像和下列類型的檔案，並在「頁面編輯器」中使用搜尋的資產。 文檔將添加到`Download`元件中，影像將添加到`Image`元件中。 作者也會將遠端資產新增至任何可擴充預設`Download`或`Image`元件的自訂[!DNL Experience Manager]元件。 支援的格式包括：
 
-* **影像格式**:Image元件支援 [的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 格式。
+* **影像格式**:Image元件支援 [的](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 格式。
 * **檔案格式**:請參閱支 [援的檔案格式](file-format-support.md#document-formats)。
 
 ### 相關使用者和群組 {#users-and-groups-involved}
@@ -189,7 +189,7 @@ ht-degree: 27%
 1. 在[!DNL Assets]控制台中選擇資產，然後從工具欄中按一下&#x200B;**[!UICONTROL 屬性]**。
 1. 按一下&#x200B;**[!UICONTROL References]**&#x200B;頁籤。 有關在[!DNL Assets]部署中使用資產的資訊，請參閱&#x200B;**[!UICONTROL 本地引用]**。 有關使用「已連接資產」功能提取資產的[!DNL Sites]部署中資產的使用，請參閱**[!UICONTROL 遠端參考]。
 
-   ![資產屬性中的遠端參考](assets/connected-assets-remote-reference.png)
+   ![「資產屬性」頁中的遠程引用](assets/connected-assets-remote-reference.png)
 
 1. [!DNL Sites]頁面的參考會顯示每個本機[!DNL Sites]的參考總數。 查找所有參照並顯示參照總數可能需要一些時間。
 1. 參考清單是互動式的，DAM使用者可以按一下參考以開啟參考頁面。 如果由於某些原因無法提取遠程引用，則顯示通知，通知用戶故障。
@@ -243,4 +243,4 @@ ht-degree: 27%
 
 * 如果未檢索遠程引用並導致錯誤消息，請檢查[!DNL Sites]部署是否可用，並檢查網路連接問題。 稍後重試以檢查。 [!DNL Assets] 部署嘗試兩次建立與部署的 [!DNL Sites] 連線，然後報告失敗。
 
-![重試資產遠端參考失敗](assets/reference-report-failure.png)
+   ![無法檢索資產遠程引用](assets/reference-report-failure.png)
