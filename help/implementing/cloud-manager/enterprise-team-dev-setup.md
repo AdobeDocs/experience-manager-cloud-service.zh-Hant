@@ -2,7 +2,7 @@
 title: 企業團隊開發設定-Cloud Services
 description: 請依照本頁進一步瞭解企業團隊開發設定
 translation-type: tm+mt
-source-git-commit: 8197defd4a73173106e1f013627547a085e51dab
+source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Cloud Manager的git儲存庫中的設定有兩個分支：
 * A *穩定的發行分支*，包含所有團隊的生產代碼
 * A *開發分支*，包含所有團隊的開發代碼
 
-在開發或穩定分支中，每次推送至團隊的git儲存庫，都會觸發[github動作](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)。 所有項目都遵循穩定分支的相同設定。 推播專案的穩定分支會自動推送至Cloud Managers Git儲存庫中的穩定分支。 Cloud Manager中的生產管道配置為通過推送到穩定分支來觸發。 因此，生產流水線由任何團隊的每個推入到穩定的分支中來執行，並且如果所有質量門都通過，生產部署會更新。
+在開發或穩定分支中，每次推送至團隊的git儲存庫，都會觸發[github動作](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)。 所有項目都遵循穩定分支的相同設定。 推送專案的穩定分支會自動推送至Cloud Manager的git儲存庫中的穩定分支。 Cloud Manager中的生產管道配置為通過推送到穩定分支來觸發。 因此，生產流水線由任何團隊的每個推入到穩定的分支中來執行，並且如果所有質量門都通過，生產部署會更新。
 
 ![](assets/team-setup2.png)
 
