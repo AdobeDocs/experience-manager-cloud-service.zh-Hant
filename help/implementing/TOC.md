@@ -5,11 +5,11 @@ breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 feature-set: Experience Manager
 feature: 開發人員工具
-role: 開發人員、架構設計人員
+role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: d4aacc8d5f0b355cae9f79c10de496f26b3e395a
+source-git-commit: cef4c40a0a4af7b3cc7cbe696ceb1a197bbef56a
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '888'
 ht-degree: 36%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 36%
    + [存取 Git](cloud-manager/accessing-git.md)
    + [整合 Git 與 Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [使用多源Git儲存庫](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
+   + [企業團隊開發設AEM置(作為Cloud Service)](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + 為 AEM as a Cloud Service 開發 {#developing}
    + [AEM 專案結構](developing/introduction/aem-project-content-package-structure.md)
    + [AEM 專案存放庫結構套件](developing/introduction/repository-structure-package.md)
