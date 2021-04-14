@@ -2,9 +2,9 @@
 title: 企業團隊開發設定-Cloud Services
 description: 請依照本頁進一步瞭解企業團隊開發設定
 translation-type: tm+mt
-source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
+source-git-commit: 833f8d5bcfb88a6a4c9c945c433bbb731bb5d8a2
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Cloud Manager支援靈活的多組設定，可根據企業需求進行調整。 
 
 每個企業都有不同的需求，包括不同的團隊設定、流程和開發工作流程。 以下所述的設定是Adobe用於數個專案，以Cloud Service的形式提供體AEM驗。
 
-例如，Adobe Creative Cloud應用程式(例如Adobe Photoshop或Adobe Illustrator)包含教學課程、範例和指南等內容資源，供其使用者使用。 用戶端應用程式會以&#x200B;*無頭&lt;a1/AEM>的方式使用此內容做為Cloud Service，方法是對AEMCloud發佈層進行API呼叫以擷取結構化內容做為JSON串流，並運用AEMCloud ServiceCDN以最佳效能同時提供結構化和非結構化內容。*
+例如，Adobe Creative Cloud應用程式(例如Adobe Photoshop或Adobe Illustrator)包含教學課程、範例和指南等內容資源，供其使用者使用。 用戶端應用程式會以&#x200B;*無頭*&#x200B;的方式使用此內容作為Cloud ServiceAEM，透過對AEMCloud發佈層進行API呼叫以擷取結構化內容作為JSON串流，並運用[內容放送網路(CDN)作為Cloud ServiceAEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/cdn.html?lang=en#content-delivery)以最佳效能同時提供結構化和非結構化內容。
 
 為此項目作出貢獻的團隊遵循以下所述的流程。
 
@@ -68,13 +68,13 @@ Cloud Manager的git儲存庫中的設定有兩個分支：
 * A *穩定的發行分支*，包含所有團隊的生產代碼
 * A *開發分支*，包含所有團隊的開發代碼
 
-在開發或穩定分支中，每次推送至團隊的git儲存庫，都會觸發[github動作](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)。 所有項目都遵循穩定分支的相同設定。 推送專案的穩定分支會自動推送至Cloud Manager的git儲存庫中的穩定分支。 Cloud Manager中的生產管道配置為通過推送到穩定分支來觸發。 因此，生產流水線由任何團隊的每個推入到穩定的分支中來執行，並且如果所有質量門都通過，生產部署會更新。
+在開發或穩定分支中，每次推送至團隊的git儲存庫，都會觸發[github動作](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)。 所有項目都遵循穩定分支的相同設定。 推送至專案的穩定分支會自動推送至Cloud Manager的git儲存庫中的穩定分支。 Cloud Manager中的生產管道配置為通過推送到穩定分支來觸發。 因此，生產流水線由任何團隊的每個推入到穩定的分支中來執行，並且如果所有質量門都通過，生產部署會更新。
 
 ![](assets/team-setup2.png)
 
 推送至開發分支的處理方式不同。 推送至團隊Git儲存庫中的開發人員分支也會觸發github動作，而程式碼會自動推送至Cloud Manager的git儲存庫中的開發分支，但非生產管道不會由程式碼推送自動觸發。 它是由呼叫Cloud Manager的api所觸發。
 執行生產管道包括透過提供的品質閘道檢查所有團隊的程式碼。 在將程式碼部署至舞台後，會執行測試和稽核，以確保一切正常運作。 一旦所有門都通過，這些更改就可以在不中斷或停機的情況下向生產部門推廣。
-本端開發使用SDK進行Cloud Service。 SDK可讓本機作者、發佈和分派程式進行設定。 這可讓離線開發和快速週轉。 有時只有作者用於開發，但快速設定分發程式和發佈可讓您在推送至Git儲存庫之前，先在本機測試所有內容。 每個團隊成員通常會從共用的Git結帳程式碼，以及自己的專案程式碼。 由於專案是獨立的，因此不需要結帳其他專案。
+對於本端開發，會使用[SDKAEM作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)。 SDK可讓本機作者、發佈和分派程式進行設定。 這可讓離線開發和快速週轉。 有時只有作者用於開發，但快速設定分發程式和發佈可讓您在推送至Git儲存庫之前，先在本機測試所有內容。 每個團隊成員通常會從共用的Git結帳程式碼，以及自己的專案程式碼。 由於專案是獨立的，因此不需要結帳其他專案。
 
 ![](assets/team-setup3.png)
 
