@@ -1,14 +1,14 @@
 ---
 title: AEM 專案結構
 description: 瞭解如何定義部署至Adobe Experience ManagerCloud Service的套件結構。
+exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 translation-type: tm+mt
-source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
+source-git-commit: 800c6db7fed43d706dcf1c26235b2f88ed0a5b62
 workflow-type: tm+mt
-source-wordcount: '2836'
+source-wordcount: '2873'
 ht-degree: 13%
 
 ---
-
 
 # AEM 專案結構
 
@@ -86,6 +86,10 @@ Oak索引(`/oak:index`)是由作為Cloud Service部AEM署過程專門管理的�
          + 服務使用者
          + 群組
          + ACL（權限）
+
+>[!NOTE]
+>
+>必須將相同的程式碼部署至所有環境。 為確保在生產階段環境上進行可信度驗證，需要這樣做。 如需詳細資訊，請參閱[回滾的保守編碼](/help/implementing/deploying/overview.md#conservative-coding-for-rollbacks)。
 
 
 ### 內容套件
@@ -243,7 +247,7 @@ Repo Init提供了定義JCR結構的指令或指令碼，這些結構從常見�
 
 例如，包含作者和發佈AEM特定套件的部署可能如下所示：
 
-+ `all` 容器套件內嵌下列套件，以建立單一部署工件
++ `all` 容器套件內嵌下列套件，以建立單一的部署工件
    + `ui.apps` 內嵌於 `/apps/my-app-packages/application/install` 部署程式碼至AEM作者和AEM發佈
    + `ui.apps.author` 內嵌於 `/apps/my-app-packages/application/install.author` 僅將程式碼部署AEM至
    + `ui.content` 內嵌於 `/apps/my-app-packages/content/install` 將內容和設定部署至作AEM者和發AEM布
