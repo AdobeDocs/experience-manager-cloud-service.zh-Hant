@@ -2,15 +2,15 @@
 title: 建立和同步即時副本
 description: 瞭解如何建立和同步即時副本，以便在您的網站上重複使用您的內容。
 feature: 多站點管理員
-role: 管理員
+role: Administrator
+exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
 workflow-type: tm+mt
 source-wordcount: '4192'
 ht-degree: 1%
 
 ---
-
 
 # 建立和同步即時拷貝{#creating-and-synchronizing-live-copies}
 
@@ -238,7 +238,7 @@ Blueprint頁面（在Blueprint設定中參考）提供您使用目前(Blueprint)
 
 #### 從參考邊欄{#roll-out-a-blueprint-from-the-reference-rail}推出藍圖
 
-1. 在&#x200B;**Sites**&#x200B;控制台中，選擇Blueprint中的頁面，並開啟&#x200B;**[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;面板（從工具列）。
+1. 在&#x200B;**Sites**&#x200B;控制台中，選擇即時副本中的頁面，並開啟&#x200B;**[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;面板（從工具列）。
 1. 從清單中選擇&#x200B;**Blueprint**&#x200B;選項，以顯示與此頁關聯的藍圖。
 1. 從清單中選取所需的藍圖。
 1. 按一下或點選&#x200B;**Rovolt**。
