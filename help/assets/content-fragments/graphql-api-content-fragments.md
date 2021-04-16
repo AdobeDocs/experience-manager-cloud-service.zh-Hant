@@ -2,14 +2,14 @@
 title: 與內AEM容片段搭配使用的GraphQL API
 description: 瞭解如何使用Adobe Experience Manager(AEM)的內容片段做為GraphQL API的Cloud Service,AEM以進行無頭內容傳送。
 feature: 內容片段，GraphQL API
+exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 1e005f7eace2fa2c40acddc215833606342a9357
 workflow-type: tm+mt
 source-wordcount: '3257'
 ht-degree: 1%
 
 ---
-
 
 # 用AEM於內容片段{#graphql-api-for-use-with-content-fragments}的GraphQL API
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 >
 >GraphQL目前用於Adobe Experience Manager()的兩個（單獨）情AEM形中作為Cloud Service:
 >
->* [AEM商務透過GraphQL從商務平台取用資料](/help/commerce-cloud/architecture/magento.md)。
+>* [AEM商務透過GraphQL從商務平台取用資料](/help/commerce-cloud/integrating/magento.md)。
 >* 內AEM容片段與AEMGraphQL API（以標準GraphQL為基礎的自訂實作）搭配運作，以提供結構化內容供您的應用程式使用。
 
 
