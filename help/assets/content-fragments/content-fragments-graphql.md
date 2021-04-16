@@ -2,15 +2,15 @@
 title: 使用內容片段與GraphQL進行無頭內容傳送
 description: 瞭解如何搭配GraphQLAEM使用內容片段來傳送無頭內容。
 feature: 內容片段
-role: 業務從業人員
+role: Business Practitioner
+exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 1d0343dc7940566b88ad490bb8fb08a5ad4ff5c2
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
-
 
 # 使用內容片段與GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}進行無頭內容傳送
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 >
 >GraphQL目前用於Adobe Experience Manager()的兩個（單獨）情AEM形中作為Cloud Service:
 >
->* [AEM商務會透過GraphQL從商務平台取用資料](/help/commerce-cloud/architecture/magento.md)。
+>* [AEM商務會透過GraphQL從商務平台取用資料](/help/commerce-cloud/integrating/magento.md)。
 >* [內AEM容片段與AEMGraphQL API（以標準GraphQL為基礎的自訂實作）搭配運作，以提供結構化內容供您的應用程式使用](/help/assets/content-fragments/graphql-api-content-fragments.md)。
 
 
