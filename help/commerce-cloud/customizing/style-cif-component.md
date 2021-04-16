@@ -10,14 +10,14 @@ audience: developer
 feature: 商務整合框架
 kt: 3456
 thumbnail: 3456-style-cif.jpg
+exl-id: 75df606f-b22f-4f7e-bd8a-576d215f72bc
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: 1bbe48c772f6e664a6afaff450da7d7987061562
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2567'
+ht-degree: 1%
 
 ---
-
 
 # 樣式AEMCIF核心元件{#style-aem-cif-core-components}
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 完成本教學課程時，需要有本機開發環境。 這包括已配置並連AEM接到Magento實例的運行實例。 檢視[設定本機開發的需求和步驟，其中AEM包含Cloud ServiceSDK](../develop.md)。
 
-## 克隆Venia項目{#clone-venia-project}
+## 克隆Venia Project {#clone-venia-project}
 
 我們將仿製[Venia Project](https://github.com/adobe/aem-cif-guides-venia)，然後覆寫預設樣式。
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 ## 更新摘要樣式{#ui-frontend-module}
 
-接下來，對摘要樣式進行小幅變更，以瞭解`ui.frontend`模組和clientlibraries的運作方式。 使用您選擇的[IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide)來導入Venia項目。 使用的截屏來自[Visual Studio代碼IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)。
+接著，對摘要樣式進行小幅變更，以瞭解`ui.frontend`模組和用戶端程式庫的運作方式。 使用您選擇的[IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide)來導入Venia項目。 使用的截屏來自[Visual Studio代碼IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)。
 
 1. 導覽並展開&#x200B;**ui.frontend**&#x200B;模組，並將資料夾階層展開為：`ui.frontend/src/main/styles/commerce`:
 
@@ -136,7 +136,7 @@ ht-degree: 0%
 
    ![編譯網站CSS](../assets/style-cif-component/comiled-site-css.png)
 
-   該檔案是項目中所有Sass檔案的相容和精簡版。
+   該檔案是項目中所有Sass檔案的編譯和精簡版本。
 
    >[!NOTE]
    >
@@ -228,7 +228,7 @@ ht-degree: 0%
 
    ![以已發佈狀態檢視](../assets/style-cif-component/view-as-published.png)
 
-   如此會開啟未載入任何作AEM者javascript的頁面，因為它會顯示在發佈的網站上。 請注意，URL會附加查詢參數`?wcmmode=disabled`。 在開發CSS和Javascript時，最好使用此參數來簡化頁面，而不需任何作者的AEM協助。
+   如此會開啟未載入任何作AEM者javascript的頁面，因為它會顯示在發佈的網站上。 請注意，URL已附加查詢參數`?wcmmode=disabled`。 在開發CSS和Javascript時，最好使用此參數來簡化頁面，而不需任何作者的AEM協助。
 
 1. 檢視頁面來源，您應該能夠識別包含的數個用戶端程式庫：
 
@@ -254,7 +254,7 @@ ht-degree: 0%
 
    注意`venia/clientlibs/clientlib-site.min.css`和`venia/clientlibs/clientlib-site.min.js`。 這些是從`ui.frontend`模組衍生的已編譯CSS和Javascript檔案。
 
-## 包含頁面範本{#client-library-inclusion-pagetemplates}的客戶端庫
+## 包含頁面範本的客戶端庫包含{#client-library-inclusion-pagetemplates}
 
 如何包含用戶端程式庫有幾個選項。 接下來，請透過[頁面範本](/help/implementing/developing/components/templates.md)檢查產生的專案如何包含`clientlib-site`程式庫。
 
@@ -287,7 +287,7 @@ ht-degree: 0%
 
    使用「範本」和「頁面」原則管理包含用戶端程式庫的好處是，您可以依範本變更原則。 例如，您可能在同一個實例中管理兩個不同的AEM品牌。 每個品牌都有其獨特的樣式或&#x200B;*theme*，但基本資料庫和程式碼會相同。 另一個範例是，如果您有較大的用戶端程式庫，而您只想要顯示在特定頁面上，則可針對該範本建立唯一的頁面原則。
 
-## 本機Web Pack開發{#local-webpack-development}
+## 本地Webpack開發{#local-webpack-development}
 
 在上一練習中，對`ui.frontend`模組中的Sass檔案進行了更新，然後在執行Maven構建後，將更改部署到AEM。 接下來，我們將探討如何運用webpack-dev-server來快速開發前端樣式。
 
@@ -432,7 +432,7 @@ webpack-dev-server proxy影像和本機例項中的部分CSS/JavaScriptAEM，但
    }
    ```
 
-   您現在應該會看到webpack-dev-server中反映的卡片式：
+   您現在應該會看到webpack-dev-server中反映的卡片樣式：
 
    ![Webpack Dev Server摘要變更](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
