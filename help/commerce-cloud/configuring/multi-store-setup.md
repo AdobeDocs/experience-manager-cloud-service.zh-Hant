@@ -1,5 +1,5 @@
 ---
-title: 多商店設定
+title: 商務多商店設定
 description: 瞭解如何將多個商店檢視從Magento對應至AEM。 這可讓專案支援多租用戶和多語言使用案例。
 sub-product: 商務
 version: cloud-service
@@ -9,16 +9,16 @@ audience: administrator
 feature: 商務整合框架
 kt: 3046
 thumbnail: 28952.jpg
+exl-id: 7f6e04a2-89e9-4613-8ea8-9dac1acea30b
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: 577e5cb9d465c794f29e1b7ed11d26a954e1c072
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
 
-
-# 多商店設定{#multi-store}
+# 商務多商店設定{#multi-store}
 
 CIF核心AEM元件可用於多個站點結AEM構，基礎GraphQL客戶端實現可以連接到不同的Magento儲存／儲存視圖。 這可讓專案建置複雜的多商店／多網站設定。
 
@@ -45,6 +45,10 @@ Live Copy和AEM Language Copy的多網站管理功能與Commerce Integration Fra
    * 使用上述第2點所述的步驟建立新組態
 
    此新配置將建立為基本配置的子配置。 您現在可以前往「工具」->「一般」->「設定瀏覽器」並建立設定設定。
+
+   >[!TIP]
+   >
+   > 商務型錄可透過使用ID或UID來解決。 UID在2.4.2Magento中引入。只有在您的商務後端支援2.4.2版或更新版本的GraphQL架構時，才能啟用此功能。
 
 4. 將子配置分配給站AEM點
 
