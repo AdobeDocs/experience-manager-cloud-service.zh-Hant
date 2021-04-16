@@ -7,14 +7,14 @@ version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
+exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 translation-type: tm+mt
-source-git-commit: a9c9a866c03bc15ebddddc7f2086f1f3ffd38a07
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 11%
+source-wordcount: '1011'
+ht-degree: 10%
 
 ---
-
 
 # 開AEM發商AEM務作為Cloud Service{#develop}
 
@@ -53,7 +53,7 @@ CIF附加元件可從[軟體散發入口網站](https://experience.adobe.com/#/d
 >
 >請務必使用最新的CIF附加元件版本。
 
-### 本機設定
+### 本地設定
 
 若要進行本機CIF附加元件開發，請使AEM用Cloud ServiceSDK:
 
@@ -83,7 +83,7 @@ CIF附加元件可從[軟體散發入口網站](https://experience.adobe.com/#/d
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
    ```
 
-   此變數可用AEM來連線至您的商務系統。 此外，CIF附加元件包括本地反向代理，使MagentoGraphQL端點在本地可用。 CIF製作工具（產品主控台和挑選器）和CIF用戶端元件直接呼叫GraphQL時，都會使用這個工具。
+   此變數可用AEM來連線至您的商務系統。 此外，CIF附加元件包含本機反向代理，讓Commerce GraphQL端點可在本機使用。 CIF製作工具（產品主控台和挑選器）和CIF用戶端元件直接呼叫GraphQL時，都會使用這個工具。
 
    此變數也必須設AEM定為Cloud Service環境。 有關變數的詳細資訊，請參見[將OSGi配置AEM為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)。
 
@@ -98,6 +98,10 @@ CIF附加元件可從[軟體散發入口網站](https://experience.adobe.com/#/d
    有關機密的詳細資訊，請參見[將OSGi配置AEM為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)。
 
 1. 開始AEM為Cloud ServiceSDK
+
+>[!NOTE]
+>
+>請確定您在AEM步驟5中設定的Cloud Service變數，在相同的終端視窗中以SDK的身分開始。 如果您是在單獨的終端窗口中啟動它，或按兩下。jar檔案，請確保環境變數可見。
 
 通過OSGI控制台驗證設定： `http://localhost:4502/system/console/osgi-installer`。 清單中應包含CIF附加元件相關的組合、內容封裝和OSGI組態，如特徵模型檔中所定義。
 
@@ -131,7 +135,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-CIF核心元件可通過包括提供的`all`包或單獨使用CIF內容包和相關OSGI包來用於任何項目。 要手動將CIF核心元件添加到項目，請使用以下相關性：
+CIF核心元件可以通過包括提供的`all`包或單獨使用CIF內容包和相關OSGI包來用於任何項目。 要手動將CIF核心元件添加到項目，請使用以下相關性：
 
 ```java
 <dependency>
@@ -165,7 +169,7 @@ CIF核心元件可通過包括提供的`all`包或單獨使用CIF內容包和相
 
 ### 使用AEMVenia Reference Store
 
-啟動CIF項目的第二個選擇是克隆並使用[AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)。 Venia Reference StoreAEM是範例參考店面應用程式，示範CIF核心元件的使用AEM方式。 它旨在做為一組最佳範例，以及開發您自己功能的潛在起點。
+啟動CIF項目的第二個選擇是克隆並使用[AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)。 Venia Reference StoreAEM是範例參考店面應用程式，示範CIF核心元件的使用AEM方式。 它是一組最佳實務範例，是開發您自己功能的潛在起點。
 
 若要開始使用Venia Reference Store，只需仿製Git儲存庫，然後開始根據您的需求自訂專案。
 
