@@ -3,16 +3,16 @@ title: 與 [!DNL Adobe Creative Cloud]整合的最佳做法
 description: 最佳實務將Experience Manager部署與Adobe Creative Cloud整合，以簡化資產轉讓工作流程並達到最高效率。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 協作，Adobe資產連結，Experience Manager案頭應用程式
-role: 架構師，業務從業人員，管理員
+feature: 協作，Adobe資產連結，案頭應用程式
+role: Architect,Business Practitioner,Administrator
+exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 522d0363c0207afbed2c51e9d54d921ce9b66c70
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3300'
 ht-degree: 18%
 
 ---
-
 
 # 和AEMCreative Cloud整合最佳實踐{#aem-and-creative-cloud-integration-best-practices}
 
