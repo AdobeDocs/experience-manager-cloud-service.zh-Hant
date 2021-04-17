@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說�
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: baa9f84e8a32bbfdfa6717225fb706ea81b94e06
+source-git-commit: affe1f0be3f3448e15787cdd831474e0a9d5de6b
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1588'
 ht-degree: 3%
 
 ---
@@ -169,21 +169,6 @@ Cloud Manager作為2021.3.0Cloud ServiceAEM的發行日期為2021年3月11日。
 * 所有現有的生產管道都會透過體驗稽核步驟自動啟用。
 
 ## 內容轉移工具 {#content-transfer-tool}
-
-### 發行日期 {#release-date-ctt-april}
-
-內容傳輸工具v1.3.8的發行日期為2021年4月15日。
-
-### 錯誤修正 {#bug-fixes-ctt-april}
-
-* CTT未建立資產的文字轉譯。 當資產移轉至Cloud Service時，需要文字轉譯才能允許依文字內容進行搜尋。 此問題已修正。
-
-* 使用wee=true的CTT導致目標Cloud Service實例上的計數器索引不正確。 這個問題已經修正。
-
-* CTT UI中的自動重新整理功能造成多個錯誤。 這些問題已經修正。
-
-* CTT UI中的文字標題重疊。 這個問題已經修正。
-
 
 ### 發行日期 {#release-date-ctt}
 
