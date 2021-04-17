@@ -1,14 +1,14 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的 IMS 支援
+exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 translation-type: tm+mt
-source-git-commit: 70726c373d88f36cdcc9a4a1a944bc8d4c99238c
+source-git-commit: 460cefde9a203b4237aedf01b01e026d37eadfe6
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 100%
+source-wordcount: '1952'
+ht-degree: 95%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service 的 IMS 支援 {#ims-support-for-aem-as-a-cloud-service}
 
@@ -125,15 +125,15 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 ### 在 Admin Console 中管理產品和使用者存取權限 {#managing-products-and-user-access-in-admin-console}
 
-產品管理員登入 Admin Console 後，會看到 AEM Managed Services 產品內容的多個例項，如下所示：
+當產品管理員登入Admin Console時，他們會將多個例項視為AEMCloud Service產品內容，如下所示。 例如，從&#x200B;**概述**&#x200B;頁面選擇任何產品：
 
 ![例項登入](/help/security/assets/ims6.png)
 
-此範例中，組織 **AEM-MS-Onboard** 具有 32 個例項，橫跨不同的拓撲和環境，例如 Stage 或 Prod。
+您會看到現有例項的清單：
 
 ![例項登入 2](/help/security/assets/ims7.png)
 
-每個「產品內容」例項中都會包含相關聯的產品設定檔。這些產品設定檔的主要功用在於指派存取權限給具有必要權限的使用者和群組。
+在每個「產品內容」例項下，都會有跨生產、舞台或開發環境的「作者」或「發佈」服務執行個體。 每個實例都與「產品配置檔案」或「雲端管理員」角色關聯。 這些產品設定檔可用來指派具有必要權限的使用者和群組存取權。
 
 **Administrator_xxx** 設定檔可授與相關聯 AEM 例項的管理員權限，而 **User_xxx** 設定檔則可新增一般使用者。
 
@@ -241,4 +241,3 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 每個作者例項都會有 AEM 管理員和 AEM 使用者設定檔，而每個發佈例項都有 AEM 使用者設定檔。您可以視需求新增其他設定檔。
 
 若要取得管理員層級的 AEM 例項存取權限，使用者需新增至特定產品的 AEM 管理員設定檔。
-
