@@ -7,9 +7,9 @@ feature: 資產管理，發佈，協作，資產處理
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 78bddc170d2deacc39fd0bd32a65803987dc6a49
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4505'
 ht-degree: 11%
 
 ---
@@ -47,8 +47,6 @@ ht-degree: 11%
 
 如果DAM用戶上傳儲存庫中已存在的一個或多個資產， [!DNL Experience Manager]將檢測複製並通知用戶。 重複偵測預設會停用，因為它可能會根據儲存庫大小和上傳的資產數量，對效能產生影響。 若要啟用此功能，請設定[!UICONTROL AdobeAEM雲端資產複製偵測器]。 請參閱[如何執行OSGi配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 複製檢測基於儲存在`jcr:content/metadata/dam:sha1`的唯一`dam:sha1`值。 這表示即使檔案名稱不同，也會偵測到重複資產。
 
-![偵測重複資產OSGi組態](assets/duplicate-detection.png)
-
 您可以在自訂代碼中新增設定檔案`/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json`，而且該檔案可包含下列項目：
 
 ```json
@@ -58,7 +56,7 @@ ht-degree: 11%
 }
 ```
 
-啟用後，Experience Manager會將重複資產的通知傳送至收件匣。 它是多重複項的匯總結果。 使用者可以選擇根據結果移除資產。
+啟用後，Experience Manager會將重複資產的通知發送到Experience Manager收件箱。 它是多重複項的匯總結果。 使用者可以選擇根據結果移除資產。
 
 ![重複資產的收件匣通知](assets/duplicate-detect-inbox-notification.png)
 
