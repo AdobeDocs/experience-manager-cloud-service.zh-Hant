@@ -5,32 +5,26 @@ feature: 資產管理，上傳
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2065'
 ht-degree: 1%
 
 ---
 
-# 將數位資產新增至Adobe Experience Manager{#add-assets-to-experience-manager}
+# 將數位資產新增至[!DNL Adobe Experience Manager]作為[!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
+
+[!DNL Adobe Experience Manager Assets] 接受來自許多來源的多種類型數位資產。它可儲存二進位檔和建立的轉譯，並可使用各種工作流程和[!DNL Adobe Sensei]服務進行資產處理，允許透過許多通道在多個介面間散發。
 
 [!DNL Adobe Experience Manager] 透過豐富的中繼資料、智慧標籤、轉譯和其他數位資產管理(DAM)服務，豐富上傳數位檔案的二進位內容。您可以從本機資料夾或網路磁碟機上傳各種檔案類型，例如影像、檔案和原始影像檔案至[!DNL Experience Manager Assets]。
 
-提供了多種上載方法。 除了最常用的瀏覽器上傳外，還有其他將資產新增至[!DNL Experience Manager]儲存庫的方法，包括案頭用戶端(例如Adobe資產連結或[!DNL Experience Manager]案頭應用程式)、上傳和擷取指令碼，以及自動擷取整合新增至[!DNL Experience Manager]擴充功能。
-
-我們將著重於此處為使用者上傳方法，並提供文章連結，說明使用[!DNL Experience Manager] API和SDK進行資產上傳和擷取的技術層面。
+除了最常用的瀏覽器上傳外，還有其他將資產新增至[!DNL Experience Manager]儲存庫的方法，包括案頭用戶端(例如Adobe資產連結或[!DNL Experience Manager]案頭應用程式)、上傳和擷取指令碼，以及自動擷取整合新增至[!DNL Experience Manager]擴充功能。
 
 雖然您可以上傳並管理[!DNL Experience Manager]中的任何二進位檔案，但最常用的檔案格式支援其他服務，例如中繼資料擷取或預覽／轉譯產生。 如需詳細資訊，請參閱[支援的檔案格式](file-format-support.md)。
 
 您也可以選擇對已上傳的資產進行其他處理。 可在上傳資產的資料夾上設定多個資產處理設定檔，以新增特定中繼資料、轉譯或影像處理服務。 請參閱[上載時處理資產](#process-when-uploaded)。
 
->[!NOTE]
->
->[!DNL Experience Manager] 運用 [!DNL Cloud Service] 新的上傳資產方式——直接二進位上傳。預設會支援現成可用的產品功能和用戶端，例如[!DNL Experience Manager]使用者介面、[!DNL Adobe Asset Link]、[!DNL Experience Manager]案頭應用程式，因此對一般使用者是透明的。
->
->上傳由技術團隊自訂或擴充的程式碼，客戶需要使用新的上傳API和通訊協定。
-
-資產(a [!DNL Cloud Service])提供下列上傳方法。 Adobe建議您先瞭解上傳選項的使用案例和適用性，再加以使用。
+[!DNL Assets] 提供下列上傳方法。Adobe建議您先瞭解上傳選項的使用案例和適用性，再加以使用。
 
 | 上傳方法 | 何時使用？ | 主要角色 |
 |---------------------|----------------|-----------------|
@@ -112,19 +106,13 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 * 取代現有資產：如果您取代現有資產，資產的中繼資料以及您對現有資產所做的任何先前修改（例如註解、裁切等）都會被刪除。
 * 建立其他版本：系統會在儲存庫中建立現有資產的新版本。 您可以在[!UICONTROL 時間軸]中檢視兩個版本，並視需要回復為先前現有的版本。
-* 保留兩者：如果您選擇保留這兩個資產，新資產會重新命名，名稱會附加數字`1`。
-
->[!NOTE]
->
->當您在[!UICONTROL 名稱衝突]對話方塊中選取&#x200B;**[!UICONTROL 取代]**&#x200B;時，會重新產生新資產的資產ID。 此ID與先前資產的ID不同。
->
->如果啟用「資產前瞻分析」以追蹤[!DNL Adobe Analytics]的曝光或點按次數，則重新產生的資產ID會使[!DNL Analytics]上為資產擷取的資料無效。
+* 保留兩者：如果您選擇保留這兩個資產，新資產會重新命名。
 
 若要保留[!DNL Assets]中的重複資產，請按一下「保留&#x200B;**[!UICONTROL 」。]**&#x200B;若要刪除您上傳的重複資產，請按一下「刪除」。****
 
 ### 檔案名稱處理與禁止字元{#filename-handling}
 
-[!DNL Experience Manager Assets] 嘗試防止上傳檔案名稱中包含禁止字元的資產。如果您嘗試上傳包含不允許之字元或以上之檔案名稱的資產，[!DNL Assets]會顯示警告訊息並停止上傳，直到您移除這些字元或以允許的名稱上傳為止。 有些上傳方法不會阻止您上傳檔案名稱中包含禁止字元的資產，但會以`-`取代字元。
+[!DNL Experience Manager Assets] 嘗試防止上傳檔案名稱中包含禁止字元的資產。如果您嘗試上傳包含不允許之字元或以上之檔案名稱的資產，[!DNL Assets]會顯示警告訊息並停止上傳，直到您移除這些字元或以允許的名稱上傳為止。
 
 為符合貴組織的特定檔案命名慣例，[!UICONTROL 「上傳資產」對話方塊可讓您為上傳的檔案指定長名稱。 ]不支援下列（以空格分隔的）字元清單：
 
@@ -226,7 +214,18 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## 提示、最佳實務和限制{#tips-limitations}
 
+* 直接二進位上傳是上傳資產的新方法。 預設情況下，產品功能和用戶端都支援它，例如[!DNL Experience Manager]使用者介面、[!DNL Adobe Asset Link]和[!DNL Experience Manager]案頭應用程式。 任何由客戶技術團隊自訂或擴充的自訂程式碼，都必須使用新的上傳API和通訊協定。
+
 * Adobe建議在[!DNL Experience Manager Assets]的每個檔案夾中新增多達1000個資產。 雖然您可以新增更多資產至資料夾，但您可能會看到效能問題，例如導覽這類資料夾的速度變慢。
+
+* 當您在[!UICONTROL 名稱衝突]對話方塊中選取&#x200B;**[!UICONTROL 取代]**&#x200B;時，會重新產生新資產的資產ID。 此ID與先前資產的ID不同。 如果[資產前瞻分析](/help/assets/assets-insights.md)已啟用[!DNL Adobe Analytics]來追蹤印象或點按，則重新產生的資產ID會使[!DNL Analytics]上為資產擷取的資料無效。
+
+* 有些上傳方法無法阻止您上傳檔案名稱中包含[forbidden字元](#filename-handling)的資產。 字元將替換為`-`符號。
+
+* 使用瀏覽器上傳資產只支援平面檔案清單，而不支援巢狀資料夾階層。 若要上傳巢狀資料夾內的所有資產，請考慮使用[案頭應用程式](#upload-assets-desktop-clients)。
+
+<!-- TBD: Link to file name handling in DA docs when it is documented. 
+-->
 
 >[!MORELIKETHIS]
 >
