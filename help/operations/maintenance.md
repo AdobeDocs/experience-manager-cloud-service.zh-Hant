@@ -3,7 +3,7 @@ title: 維護任AEM務作為Cloud Service
 description: 維護任AEM務作為Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
+source-git-commit: c74da6ebf54f9455f427d5fdcfe55415543f4c73
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 2%
@@ -57,11 +57,10 @@ ht-degree: 2%
     <td>請參閱下方的位置1</td>
     <td>請參閱下方的程式碼範例1</td>
    <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = daily（此值不應更改）</li>
-    <li><strong>windowStartTime</strong> = HH:MM，用作24小時時鐘。定義與Daily Maintenance Windows關聯的Maintenance Tasks何時應開始執行。</li>
-    <li><strong>windowEndTime</strong> = HH:MM，用作24小時時鐘。定義與「每日維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。</li>
-    </ul> </td> 
+    <strong>windowSchedule</strong> = daily（此值不應變更）
+    <strong>windowStartTime</strong> = HH:MM，以24小時時鐘形式使用。定義與Daily Maintenance Windows關聯的Maintenance Tasks何時應開始執行。
+    <strong>windowEndTime</strong> = HH:MM，用作24小時時鐘。定義與「每日維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。
+    </td> 
   </tr>
   <tr>
     <td>每週</td>
