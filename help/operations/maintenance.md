@@ -3,9 +3,9 @@ title: 維護任AEM務作為Cloud Service
 description: 維護任AEM務作為Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8adead735a5c3c0a03ee6f81372c1714634932ec
+source-git-commit: 256363d166591137b53d4a6b5a31436064dfb3d2
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '999'
 ht-degree: 2%
 
 ---
@@ -147,4 +147,4 @@ ht-degree: 2%
 
 | 維護窗口配置 | 誰擁有配置 | 配置類型 | 位置 | 範例 | 參數 |
 |---|---|---|---|---|---|
-| 每日 | 客戶 | JCR節點定義 | 請參閱下方位置2 | 請參閱下方的程式碼範例2 | **windowSchedule= daily** （此值不應更改）。  <br> **windowStartTime= HH:** Mmusing as 24小時鐘。定義與Daily Maintenance Windows關聯的Maintenance Tasks何時應開始執行。<br> **windowEndTime= HH:** Mmusing as 24小時鐘。定義與「每日維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。 |
+| 每日 | 客戶 | JCR節點定義 | 請參閱下方位置2 | 請參閱下方的程式碼範例2 | `windowSchedule= daily` （此值不應變更）。  <br> `windowStartTime=HH:MM` 24小時。定義與Daily Maintenance Windows關聯的Maintenance Tasks何時應開始執行。<br> **windowEndTime= HH:** Mmusing as 24小時鐘。定義與「每日維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。 |
