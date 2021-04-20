@@ -2,14 +2,14 @@
 title: '部署至 AEM as a Cloud Service '
 description: '部署至 AEM as a Cloud Service  '
 feature: 部署
+exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
+source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3266'
 ht-degree: 1%
 
 ---
-
 
 # 部署至 AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
@@ -101,7 +101,7 @@ ht-degree: 1%
    * 資料夾（添加、修改、刪除）
    * 可編輯的範本（新增、修改、移除）
    * 上下文感知配置（`/conf`下的任何內容）（添加、修改、刪除）
-   * 指令碼(軟體包可以在軟體包安裝過程中的各個階段觸發安裝掛接
+   * 指令碼(軟體包可以在軟體包安裝過程中的各個階段觸發安裝掛接。 請參閱[Jackrabbit filevault documentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)關於安裝掛接，其中包含允許的用戶執行這些掛接)。
 
 可將可變內容安裝限制為製作或發佈，方法是將套件內嵌在`/apps`下的install.author或install.publish資料夾中。 在6.5中進行了重組，以反映AEM這一分離情況，建議的項目重組細節可在[AEM 6.5文檔中找到。](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
