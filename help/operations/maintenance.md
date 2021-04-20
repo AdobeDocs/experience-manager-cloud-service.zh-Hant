@@ -3,7 +3,7 @@ title: 維護任AEM務作為Cloud Service
 description: 維護任AEM務作為Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 0c7f413be7b7f2222c5487426b74f2a954d0b21f
+source-git-commit: 90b35554b1238b51ca181c720c86f4062c6d9592
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 2%
@@ -81,15 +81,14 @@ ht-degree: 2%
     <td>JCR節點定義</td>
     <td>請參閱下方的位置3</td>
     <td>請參閱下方的程式碼範例3</td>
-     <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = daily（此值不應更改）</li>
-    <li><strong>windowStartTime</strong> = HH:MM，用作24小時時鐘。定義與「每月維護」窗口關聯的維護任務何時開始執行。</li>
-    <li><strong>windowEndTime</strong> = HH:MM，用作24小時時鐘。定義與「每月維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。</li>
-    <li><strong>windowScheduleWekdays = 1-7之間的2個值陣列。例如，[5,5]</strong> 陣列的第一個值是調度作業的開始日，第二個值是停止作業的結束日。開始和結束的確切時間分別由windowStartTime和windowEndTime控制。</li>
-    <li><strong>windowFirstLastStartDay - 0/1</strong> 0，排程每月的第一週，或排程每月的最後一週。如果缺少值，則有效地每天排程工作，並受每月windowScheduleWeekdays的管理。</li>
-    </ul> </td> 
-  </tr>
+    <td>
+    <strong>windowSchedule</strong> = daily（此值不應變更）
+    <strong>windowStartTime</strong> = HH:MM，以24小時時鐘形式使用。定義與「每月維護」窗口關聯的維護任務何時開始執行。
+    <strong>windowEndTime</strong> = HH:MM，用作24小時時鐘。定義與「每月維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。
+    <strong>windowScheduleWekdays = 1-7之間的2個值陣列。例如，[5,5]</strong> 陣列的第一個值是調度作業的開始日，第二個值是停止作業的結束日。開始和結束的確切時間分別由windowStartTime和windowEndTime控制。
+    <strong>windowFirstLastStartDay - 0/1</strong> 0，排程每月的第一週，或排程每月的最後一週。如果缺少值，則有效地每天排程工作，並受每月windowScheduleWeekdays的管理。
+    </td> 
+    </tr>
 </table>
 
 位置:
