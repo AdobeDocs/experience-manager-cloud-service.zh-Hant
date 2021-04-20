@@ -2,7 +2,7 @@
 title: 資產 Insights
 description: 追蹤使用者評分和影像使用統計資料，這些資料用於協力廠商網站、行銷宣傳和Adobe的創意解決方案。
 contentOwner: AG
-feature: 資產分析，資產報表
+feature: Asset Insights,Asset Reports
 role: Business Practitioner
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 translation-type: tm+mt

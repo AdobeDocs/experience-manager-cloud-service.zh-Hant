@@ -2,8 +2,8 @@
 title: 發佈Dynamic Media資產
 description: 瞭解如何發佈Dynamic Media資產。
 contentOwner: Rick Brough
-feature: 資產管理
-topic: 業務從業人員
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 translation-type: tm+mt

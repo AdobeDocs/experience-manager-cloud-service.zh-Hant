@@ -1,7 +1,7 @@
 ---
 title: Cloud Manager的發行說明，作AEM為Cloud Service版本2020.4.0
 description: Cloud Manager的發行說明，作AEM為Cloud Service版本2020.4.0
-feature: 發行資訊
+feature: Release Information
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

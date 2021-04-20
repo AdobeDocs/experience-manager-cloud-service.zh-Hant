@@ -1,8 +1,8 @@
 ---
 title: 管理影像預設集
 description: 「瞭解影像預設集，以及如何建立、修改及管理影像預設集。」
-feature: 影像預設集、檢視器、轉譯
-topic: 業務從業人員
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt

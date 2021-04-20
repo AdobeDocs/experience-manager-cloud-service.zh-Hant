@@ -2,7 +2,7 @@
 title: 發展AEM商業AEM做為Cloud Service
 description: 瞭解如何使用專案原型產生AEM具商務功能AEM的專案。 瞭解如何使用Cloud ServiceSDK來建立專案並部署至本AEM機開發環境。
 topics: Commerce, Development
-feature: 商務整合框架
+feature: Commerce Integration Framework
 version: cloud-service
 doc-type: tutorial
 kt: 5826

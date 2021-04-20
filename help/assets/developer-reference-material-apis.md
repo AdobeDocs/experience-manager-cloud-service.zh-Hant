@@ -2,8 +2,8 @@
 title: ' [!DNL Assets]的開發人員參考'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
 contentOwner: AG
-feature: API，資產HTTP API
-role: 開發人員、架構設計人員、管理員
+feature: APIs,Assets HTTP API
+role: Developer,Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: 交付Dynamic Media資產
 description: 瞭解如何提供Dynamic Media資產。
-feature: 資產管理
-topic: 業務從業人員
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt

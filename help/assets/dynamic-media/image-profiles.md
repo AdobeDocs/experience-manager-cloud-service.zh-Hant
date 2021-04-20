@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media 影像設定檔
 description: 「瞭解如何建立包含非銳利遮色片設定、智慧裁切或智慧色票（或兩者皆有）的Dynamic Media影像描述檔。 然後，將描述檔套用至影像資產的資料夾。」
-feature: 資產管理，影像設定檔，轉譯
-topic: 業務從業人員
+feature: Asset Management,Image Profiles,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt

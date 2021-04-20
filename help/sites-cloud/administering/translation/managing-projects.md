@@ -1,8 +1,8 @@
 ---
 title: 管理翻譯項目
 description: 瞭解如何在中建立和管理機器和人類翻譯專AEM案。
-feature: 語言副本
-role: 管理員
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt

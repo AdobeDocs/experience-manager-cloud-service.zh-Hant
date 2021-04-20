@@ -1,8 +1,8 @@
 ---
 title: 相關聯的內容
 description: 瞭解相AEM關內容功能如何提供連線，讓資產在新增至內容頁面時可選擇性地與片段搭配使用，為無頭內容傳送增加額外的彈性。
-feature: 內容片段
-role: 業務從業人員
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

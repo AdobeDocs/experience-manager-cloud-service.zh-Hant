@@ -1,8 +1,8 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] 中a [!DNL Cloud Service]的顯著變化'
 description: 與[!DNLAdobe Experience Manager6.5相比， [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 的顯著變化。
-feature: 發行資訊
-role: 業務從業人員，領導者，架構師，管理員
+feature: Release Information
+role: Business Practitioner,Leader,Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt

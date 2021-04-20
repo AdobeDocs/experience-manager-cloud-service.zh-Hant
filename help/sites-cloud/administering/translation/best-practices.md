@@ -1,8 +1,8 @@
 ---
 title: 翻譯最佳做法
 description: 瞭解由Adobe工程和咨詢團隊編譯的最佳實踐，以幫助您啟動並執行翻譯項目。
-feature: 語言副本
-role: 管理員
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

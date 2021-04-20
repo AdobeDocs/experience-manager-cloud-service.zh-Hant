@@ -1,8 +1,8 @@
 ---
 title: 即時副本概述主控台
 description: 瞭解即時副本概觀主控台的基本功能，以快速瞭解即時副本的狀態，以便同步化內容。
-feature: 多站點管理員
-role: 管理員
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: 將 URL 連結至您的 Web 應用程式
 description: 瞭解如何將URL連結至您在Dynamic Media的Web應用程式。
-topic: 業務從業人員
-role: 業務從業人員
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

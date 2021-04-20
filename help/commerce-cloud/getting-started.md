@@ -2,7 +2,7 @@
 title: 以商務AEM為Cloud Service快速入門
 description: 瞭解如何將啟用商務的AEM專案部署至以雲AEM端服務環境執行。 使用Adobe雲管理器和CI/CD管道的功能，將Venia參考店面建置到運行環境。
 topics: Commerce
-feature: Cloud Manager的Commerce Integration Framework
+feature: Commerce Integration Framework, Cloud Manager
 version: cloud-service
 doc-type: tutorial
 kt: 4947

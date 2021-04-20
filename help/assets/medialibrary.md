@@ -2,8 +2,8 @@
 title: 使用媒體庫進行基本數位資產管理
 description: '[!DNL Experience Manager Assets] 和媒體庫，以進行資產管理。'
 contentOwner: AG
-feature: 資產管理，發佈
-role: 業務從業人員、建築師、領導者
+feature: Asset Management,Publishing
+role: Business Practitioner,Architect,Leader
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

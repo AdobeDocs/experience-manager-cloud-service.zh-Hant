@@ -1,8 +1,8 @@
 ---
 title: 關於Dynamic Media影像配置檔案和視頻配置檔案
 description: 「影像描述檔」或「視訊描述檔」是套用至您上傳至資料夾之資產的選項的方式。 例如，您可以指定要套用至您上傳之Dynamic Media視訊資產的視訊編碼。 或者，要套用至Dynamic Media影像資產的影像描述檔，以便正確裁切。
-feature: 資產管理，影像描述檔，視訊描述檔
-role: 管理員，業務從業人員
+feature: Asset Management,Image Profiles,Video Profiles
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: 混合媒體集
 description: 瞭解如何在Dynamic Media使用混合媒體集。
-feature: 混合媒體集
-topic: 業務從業人員
+feature: Mixed Media Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt

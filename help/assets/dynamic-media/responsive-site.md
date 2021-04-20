@@ -1,8 +1,8 @@
 ---
 title: 為互動式網站提供最佳化影像
 description: 瞭解如何使用回應式程式碼功能來提供來自Dynamic Media的最佳化影像。
-feature: 資產管理
-topic: 業務從業人員
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt

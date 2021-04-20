@@ -1,8 +1,8 @@
 ---
 title: 使用內容片段
 description: 瞭解Adobe Experience Manager(AEM)的內容片段做為Cloud Service如何讓您設計、建立、組織和使用不受頁面限制的內容，最適合無頭傳送。
-feature: 內容片段
-role: 業務從業人員
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: 將Dynamic Media視訊或影像檢視器內嵌在網頁上
 description: 瞭解如何將Dynamic Media視訊或影像資產內嵌在網頁上。
-feature: 資產管理
-topic: 業務從業人員
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt

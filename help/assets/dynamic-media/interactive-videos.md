@@ -1,8 +1,8 @@
 ---
 title: 互動影片
 description: 瞭解如何在Dynamic Media使用互動式視訊和可購買視訊。
-feature: 互動影片
-topic: 業務從業人員
+feature: Interactive Videos
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt

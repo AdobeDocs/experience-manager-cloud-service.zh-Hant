@@ -1,8 +1,8 @@
 ---
 title: 影像集
 description: 瞭解如何在Dynamic Media處理影像集。
-feature: 影像集
-topic: 業務從業人員
+feature: Image Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt

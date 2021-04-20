@@ -1,8 +1,8 @@
 ---
 title: 整合 Adobe Target
 description: '整合 Adobe Target '
-feature: 管理
-role: 管理員
+feature: Administering
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt

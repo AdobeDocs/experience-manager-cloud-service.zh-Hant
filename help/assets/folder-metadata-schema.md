@@ -2,8 +2,8 @@
 title: 資料夾中繼資料結構
 description: 瞭解如何在 [!DNL Experience Manager Assets]中為資產資料夾建立中繼資料結構
 contentOwner: AG
-feature: 中繼資料
-role: 業務從業人員，管理員
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: 預覽- JSON表示法
 description: 瞭解如何在實作無頭解決方案時輕鬆預覽內容片段的JSONAEM呈現。
-feature: 內容片段
-role: 業務從業人員
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

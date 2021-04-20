@@ -3,7 +3,7 @@ title: 與 [!DNL Adobe Creative Cloud]整合的最佳做法
 description: 最佳實務將Experience Manager部署與Adobe Creative Cloud整合，以簡化資產轉讓工作流程並達到最高效率。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 協作，Adobe資產連結，案頭應用程式
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,Business Practitioner,Administrator
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 translation-type: tm+mt

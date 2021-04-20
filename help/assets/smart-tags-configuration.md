@@ -2,8 +2,8 @@
 title: 增強型智慧標記
 description: 使用 Adobe Sensei 的 AI 和 ML 服務套用關聯式和描述性商業標記，以提升探索資產和處理內容的速度。
 contentOwner: AG
-feature: 智慧型標籤，標籤
-role: 管理員
+feature: Smart Tags, Tagging
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: DHTML檢視器生命週期結束
 description: 自2014年1月31日起，DHTML檢視器平台正式停售。
-topic: 業務從業人員
-role: 管理員，業務從業人員
+topic: Business Practitioner
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

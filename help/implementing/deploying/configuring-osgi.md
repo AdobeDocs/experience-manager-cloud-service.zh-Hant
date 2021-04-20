@@ -1,7 +1,7 @@
 ---
 title: 將Adobe Experience Manager的OSGi配置為Cloud Service
 description: '具有機密值和環境特定值的OSGi配置 '
-feature: 部署
+feature: Deploying
 translation-type: tm+mt
 source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
 workflow-type: tm+mt

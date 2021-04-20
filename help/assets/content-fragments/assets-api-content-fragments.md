@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager作為資產HTTP API中的Cloud Service內容片段支援
 description: 瞭解資產HTTP API中對內容片段的支援，這是一項重要的無頭傳AEM送功能。
-feature: 內容片段，資產HTTP API
+feature: Content Fragments,Assets HTTP API
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

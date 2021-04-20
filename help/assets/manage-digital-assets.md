@@ -3,7 +3,7 @@ title: 管理數位資產
 description: 瞭解各種資產管理和編輯方法。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 資產管理，發佈，協作，資產處理
+feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: MSM最佳實務
 description: 瞭解由Adobe工程和諮詢團隊編譯的最佳實務，以協助您快速上手使用AEMMulti Site Manager。
-feature: 多站點管理員
-role: 管理員
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

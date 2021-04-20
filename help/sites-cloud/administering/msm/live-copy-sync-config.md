@@ -1,8 +1,8 @@
 ---
 title: 配置即時拷貝同步
 description: 瞭解可用的強大即時副本同步選項，以及如何根據專案需求來設定和自訂這些選項。
-feature: 多站點管理員
-role: 管理員
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
 workflow-type: tm+mt

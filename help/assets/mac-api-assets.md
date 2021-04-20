@@ -2,8 +2,8 @@
 title: Assets HTTP API
 description: 使用 [!DNL Experience Manager Assets]中的HTTP API建立、讀取、更新、刪除、管理數位資產。
 contentOwner: AG
-feature: 資產HTTP API,API
-role: 開發人員、架構設計人員、管理員
+feature: Assets HTTP API,APIs
+role: Developer,Architect,Administrator
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 translation-type: tm+mt
 source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb

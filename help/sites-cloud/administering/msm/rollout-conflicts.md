@@ -1,8 +1,8 @@
 ---
 title: 推出衝突
 description: 瞭解如何管理和解決Multi Site Manager的推出衝突。
-feature: 多站點管理員
-role: 管理員
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media 影片設定檔
 description: Dynamic Media已提供預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 您也可以將智慧裁切新增至影片。
-feature: 資產管理，視訊設定檔，轉譯
-topic: 業務從業人員
+feature: Asset Management,Video Profiles,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt

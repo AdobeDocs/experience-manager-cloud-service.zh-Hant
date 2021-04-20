@@ -1,7 +1,7 @@
 ---
 title: Cloud Manager的發行說明，AEM作為Cloud Service版本2021.4.0
 description: Cloud Manager的發行說明，AEM作為Cloud Service版本2021.4.0
-feature: 發行資訊
+feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
 translation-type: tm+mt
 source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6

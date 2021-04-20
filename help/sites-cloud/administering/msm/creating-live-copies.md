@@ -1,7 +1,7 @@
 ---
 title: 建立和同步即時副本
 description: 瞭解如何建立和同步即時副本，以便在您的網站上重複使用您的內容。
-feature: 多站點管理員
+feature: Multi Site Manager
 role: Administrator
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: 重複使用內容——多網站管理員和即時副本
 description: 簡介如何運用強大的即時副本AEM和多網站管理員功能來重複使用內容。
-feature: 多站點管理員
-role: 管理員
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: 迴轉集
 description: 瞭解如何在Dynamic Media處理回轉集。
-feature: 迴轉集
-topic: 業務從業人員
+feature: Spin Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt

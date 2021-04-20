@@ -1,8 +1,8 @@
 ---
 title: Flash 檢視器生命週期結束注意事項
 description: 自2017年1月31日起，對Flash檢視器平台的支援正式終止。
-topic: 業務從業人員
-role: 管理員，業務從業人員
+topic: Business Practitioner
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

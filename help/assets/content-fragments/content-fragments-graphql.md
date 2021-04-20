@@ -1,7 +1,7 @@
 ---
 title: 使用內容片段與GraphQL進行無頭內容傳送
 description: 瞭解如何搭配GraphQLAEM使用內容片段來傳送無頭內容。
-feature: 內容片段
+feature: Content Fragments
 role: Business Practitioner
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 translation-type: tm+mt

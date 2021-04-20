@@ -1,8 +1,8 @@
 ---
 title: 智慧標籤您的視訊資產
 description: Experience Manager會使用 [!DNL Adobe Sensei]自動將內容相關和描述性的智慧型標籤加入影片。
-feature: 智慧標籤，標籤
-role: 管理員，業務從業人員
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

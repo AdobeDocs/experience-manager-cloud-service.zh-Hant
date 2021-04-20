@@ -3,7 +3,7 @@ product: adobe experience manager
 description: Adobe Experience Manager是Cloud Service檔案。
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.zh-Hant
 index: y
-type: 文件
+type: Documentation
 solution: Experience Manager
 version: Cloud Service
 cloud: Experience Cloud

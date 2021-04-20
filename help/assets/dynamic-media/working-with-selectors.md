@@ -1,8 +1,8 @@
 ---
 title: 使用選取工具
 description: 瞭解您可在Dynamic Media選取互動式影像、互動式視訊和轉盤橫幅的素材時，使用的方法。
-topic: 業務從業人員
-role: 業務從業人員
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

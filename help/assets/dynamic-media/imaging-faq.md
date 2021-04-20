@@ -1,8 +1,8 @@
 ---
 title: 智慧型影像處理
 description: 「瞭解智慧型影像如何套用每位使用者獨特的檢視特性，自動提供最適合其體驗的影像，進而提升效能和參與度。」
-feature: 資產管理，轉譯
-topic: 業務從業人員
+feature: Asset Management,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt

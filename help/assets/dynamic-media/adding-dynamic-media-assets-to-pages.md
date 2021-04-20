@@ -2,9 +2,9 @@
 title: 新增Dynamic Media資產至頁面
 description: 瞭解如何將Dynamic Media元件加入Adobe Experience Manager的網頁做為Cloud Service。
 contentOwner: Rick Brough
-feature: 資產管理
-topic: 業務從業人員
-role: 業務從業人員
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

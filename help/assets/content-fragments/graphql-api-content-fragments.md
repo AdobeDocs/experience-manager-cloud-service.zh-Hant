@@ -1,7 +1,7 @@
 ---
 title: 與內AEM容片段搭配使用的GraphQL API
 description: 瞭解如何使用Adobe Experience Manager(AEM)的內容片段做為GraphQL API的Cloud Service,AEM以進行無頭內容傳送。
-feature: 內容片段，GraphQL API
+feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
 source-git-commit: 1e005f7eace2fa2c40acddc215833606342a9357

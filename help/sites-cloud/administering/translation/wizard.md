@@ -1,8 +1,8 @@
 ---
 title: 語言複製精靈
 description: 瞭解如何使用中的語言複製精AEM靈。
-feature: 語言副本
-role: 管理員
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

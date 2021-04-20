@@ -1,8 +1,8 @@
 ---
 title: 識別要翻譯的內容
 description: 瞭解翻譯規則如何識別需要翻譯的內容。
-feature: 語言副本
-role: 管理員
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: 連接到Microsoft Translator
 description: 瞭解如AEM何立即連接至Microsoft Translator以自動化您的翻譯工作流程。
-feature: 語言副本
-role: 管理員
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

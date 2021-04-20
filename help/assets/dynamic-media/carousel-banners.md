@@ -1,8 +1,8 @@
 ---
 title: 輪播橫幅
 description: 瞭解如何使用Dynamic Media的轉盤橫幅。
-feature: 輪播橫幅
-topic: 業務從業人員
+feature: Carousel Banners
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt

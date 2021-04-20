@@ -2,7 +2,7 @@
 title: 支援的檔案格式和MIME類型
 description: ' [!DNL Experience Manager Assets] 支援的檔案格式和MIME類型為a [!DNL Cloud Service]。'
 contentOwner: AG
-feature: 資產管理，轉譯
+feature: Asset Management,Renditions
 role: Business Practitioner,Administrator
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 translation-type: tm+mt

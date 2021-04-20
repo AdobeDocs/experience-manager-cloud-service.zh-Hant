@@ -1,8 +1,8 @@
 ---
 title: 互動式影像
 description: 瞭解如何在Dynamic Media使用互動式影像。
-feature: 互動影像
-topic: 業務從業人員
+feature: Interactive Images
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 translation-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: 疑難排解MSM問題及常見問題
 description: 瞭解如何疑難排解最常見的MSM相關問題，並取得最常見的MSM相關問題的解答。
-feature: 多站點管理員
-role: 管理員
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

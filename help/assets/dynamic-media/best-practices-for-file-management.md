@@ -2,8 +2,8 @@
 title: 組織數位資產以使用Dynamic Media影像描述檔或視訊描述檔的最佳實務
 description: 「命名、組織和管理Dynamic Media影像檔案和視訊資產檔案的秘訣與最佳實務。」
 contentOwner: Rick Brough
-feature: 資產管理，影像描述檔，視訊描述檔
-topic: 業務從業人員
+feature: Asset Management,Image Profiles,Video Profiles
+topic: Business Practitioner
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt

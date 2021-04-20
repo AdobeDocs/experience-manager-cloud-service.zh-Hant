@@ -1,8 +1,8 @@
 ---
 title: 影片
 description: 瞭解如何在Dynamic Media使用視訊。
-feature: 視訊設定檔
-topic: 業務從業人員
+feature: Video Profiles
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt

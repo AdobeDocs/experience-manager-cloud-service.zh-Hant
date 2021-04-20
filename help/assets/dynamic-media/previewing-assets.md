@@ -1,9 +1,9 @@
 ---
 title: 預覽資產
 description: 瞭解如何在Dynamic Media預覽資產。
-feature: 資產管理
-topic: 業務從業人員
-role: 業務從業人員
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

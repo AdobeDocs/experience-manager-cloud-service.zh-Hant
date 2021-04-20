@@ -1,9 +1,9 @@
 ---
 title: 使用快速檢視建立自訂快顯視窗
 description: 「瞭解電子商務體驗中如何使用預設的快速檢視，從而顯示包含產品資訊的快顯視窗來推動購買。 您可以觸發自訂內容，以便在快顯視窗中顯示。」
-topic: 「開發人員、管理員、商業從業人員」
-feature: 互動式影像，互動式影片，轉盤橫幅
-role: 管理員，業務從業人員
+topic: "Developer,Administrator,Business Practitioner"
+feature: Interactive Images,Interactive Videos,Carousel Banners
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

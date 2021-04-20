@@ -1,7 +1,7 @@
 ---
 title: 學習如何搭配使用GraphQL AEM —— 範例內容與查詢
 description: 瞭解如何搭配使用GraphQLAEM來探索範例內容和查詢，以無拘無束地提供內容。
-feature: 內容片段，GraphQL API
+feature: Content Fragments,GraphQL API
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 使用資產微服務處理資產
 description: 使用雲端原生和可擴充的資產處理微服務來處理您的數位資產。
 contentOwner: AG
-feature: asset compute微服務，工作流，發行資訊，資產處理
-role: 架構師，管理員
+feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
