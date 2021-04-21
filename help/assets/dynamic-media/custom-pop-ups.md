@@ -1,17 +1,16 @@
 ---
 title: 使用快速檢視建立自訂快顯視窗
 description: 「瞭解電子商務體驗中如何使用預設的快速檢視，從而顯示包含產品資訊的快顯視窗來推動購買。 您可以觸發自訂內容，以便在快顯視窗中顯示。」
-topic: "Developer,Administrator,Business Practitioner"
-feature: Interactive Images,Interactive Videos,Carousel Banners
+feature: 互動式影像，互動式影片，轉盤橫幅
 role: Administrator,Business Practitioner
+exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
-
 
 # 使用快速檢視建立自訂快顯視窗{#using-quickviews-to-create-custom-pop-ups}
 
@@ -264,4 +263,3 @@ Dynamic Media的下列檢視器支援快速檢視：
    `s7interactiveimageviewer.init()`
 
    將檢視器內嵌至主機頁面後，請確定已建立檢視器例項。 此外，請確定在使用`init()`呼叫檢視器之前已載入處理常式。
-
