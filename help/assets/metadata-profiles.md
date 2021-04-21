@@ -2,16 +2,16 @@
 title: 中繼資料設定檔
 description: 瞭解資產的中繼資料設定檔。 瞭解如何建立中繼資料描述檔並將它套用至資料夾資產。
 contentOwner: AG
-feature: Metadata
+feature: 中繼資料
 role: Business Practitioner,Administrator
+exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 7ad68c071d9a4089ec8612a3c55067dc0b072fc8
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1236'
 ht-degree: 20%
 
 ---
-
 
 # 中繼資料設定檔 {#metadata-profiles}
 
@@ -63,13 +63,11 @@ ht-degree: 20%
 
 ## 將元資料配置檔案應用於資料夾{#applying-a-metadata-profile-to-folders}
 
-將元資料配置檔案分配給資料夾時，任何子資料夾都會自動從其父資料夾繼承該配置檔案。 這表示您只能將一個中繼資料描述檔指派給資料夾。 因此，請仔細考慮您上傳、儲存、使用和封存資產的檔案夾結構。
+將元資料配置檔案分配給資料夾時，任何子資料夾都會自動從其父資料夾繼承該配置檔案。 將不同的配置檔案應用於子資料夾時，繼承將停止。 您只能將一個中繼資料描述檔指派給資料夾。 因此，請仔細考慮上傳、儲存、使用和封存資產的檔案夾結構。
 
-如果您指派不同的中繼資料描述檔給資料夾，新的描述檔會覆寫先前的描述檔。 舊有的資料夾資產仍維持不變。 新的描述檔會套用至稍後新增至資料夾的資產。
+如果您指派不同的中繼資料描述檔給資料夾，新的描述檔會覆寫先前的描述檔。 舊有的資料夾資產仍維持不變。 新設定檔會套用至變更後新增至資料夾的資產。 您可以將中繼資料設定檔套用至特定資料夾，或全域套用至所有資產。
 
 在用戶介面中，配置有配置檔案的資料夾將通過卡名稱中顯示的配置檔案名稱來指示。
-
-您可以將中繼資料設定檔套用至特定資料夾，或全域套用至所有資產。
 
 您可以重新處理已有現有中繼資料設定檔的資料夾中的資產，而您稍後會加以變更。<!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
