@@ -1,17 +1,16 @@
 ---
 title: 利用Dynamic MediaClassic對CDN快取進行失效
 description: 「瞭解如何使您的CDN（內容傳送網路）快取內容失效，讓您快速更新由Dynamic Media傳送的資產，而不需等待快取過期。」
-feature: Asset Management,Dynamic Media Classic
-topic: Business Practitioner
+feature: 資產管理，Dynamic Media經典
 role: Administrator,Business Practitioner
+exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '688'
 ht-degree: 14%
 
 ---
-
 
 # 透過Dynamic MediaClassic {#invalidating-your-cdn-cached-content}使CDN快取失效
 
@@ -62,4 +61,3 @@ Dynamic Media資產由CDN（內容傳送網路）快取，以快速傳送。 不
    >當您選取資產，然後點選「**[!UICONTROL 檔案>使CDN失效]**」時，Dynamic Media會使用無效的CDN範本，自動建立要從CDN中失效的URL。 如果「 **[!UICONTROL CDN失效範本」文字方塊中沒有任何項目]** ，則會顯示空白的URL清單。CDN的快取並非以資產為基礎；它是以URL為基礎。因此，您必須注意您網站上的完整URL。在您決定這些URL後，可以在步驟的前面將它們新 **[!UICONTROL 增至「使CDN範本無效]** 」文字方塊。然後，您可以選取這些資產，並在單一步驟中使URL無效。
    >
    >另一個選項是將完整的URL新增至&#x200B;**[!UICONTROL 使CDN]**&#x200B;清單無效。 如果您遵循此方法，在前往「**[!UICONTROL 檔案>使CDN]**」選項之前，不必先在Dynamic MediaClassic中選取資產。
-
