@@ -2,14 +2,13 @@
 title: 批次集預設集
 description: 了解如何使用 Dynamic Media 中的批次集預設集自動建立影像集和迴轉集。
 contentOwner: Rick Brough
-feature: Image Presets,Viewer Presets
-topic: Business Practitioner
+feature: 影像預設集，檢視器預設集
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '3446'
+source-wordcount: '3444'
 ht-degree: 1%
 
 ---
