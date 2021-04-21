@@ -1,14 +1,13 @@
 ---
 title: 管理檢視器預設集
 description: 瞭解如何在Dynamic Media建立和管理檢視器預設集。
-feature: Viewer Presets,Viewers
-topic: Business Practitioner
+feature: 檢視器預設集，檢視器
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '4245'
+source-wordcount: '4243'
 ht-degree: 12%
 
 ---
