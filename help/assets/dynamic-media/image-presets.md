@@ -1,17 +1,16 @@
 ---
 title: 套用 Dynamic Media 影像預設集
 description: 瞭解如何在Dynamic Media套用影像預設集。
-feature: Image Presets,Viewers,Renditions
-topic: Business Practitioner
+feature: 影像預設集、檢視器、轉譯
 role: Business Practitioner
+exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 7%
+source-wordcount: '309'
+ht-degree: 5%
 
 ---
-
 
 # 套用 Dynamic Media 影像預設集 {#applying-image-presets}
 
@@ -51,4 +50,3 @@ ht-degree: 7%
    >如果資產&#x200B;*和*&#x200B;影像預設集尚未發佈，則&#x200B;**[!UICONTROL URL]**&#x200B;按鈕(或URL和RESS按鈕（如果適用）不可用。
    >
    >另請注意，影像預設集會自動發佈在Dynamic MediaS7伺服器上。
-
