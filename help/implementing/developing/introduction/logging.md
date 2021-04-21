@@ -1,44 +1,44 @@
 ---
-title: 記錄
-description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
+title: 記錄AEM為Cloud Service
+description: 瞭解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何以Cloud Service的形式要求資AEM料登入。
+exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 translation-type: tm+mt
-source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
+source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 3%
+source-wordcount: '2332'
+ht-degree: 2%
 
 ---
 
+# 以&lt;AEMa0/>Cloud Service記錄{#logging-for-aem-as-a-cloud-service}
 
-# 記錄 {#logging}
+作AEM為Cloud Service，客戶可以加入自訂程式碼，為客戶群建立獨特的體驗。 有鑑於此，記錄是本端開發和雲端環境(尤其是Cloud Service的開發環境)上除錯和瞭解程式碼執行的AEM重要功能。
 
-AEM即雲端服務是客戶可加入自訂程式碼的平台，可為客戶群建立獨特的體驗。 有鑑於此，記錄是本端開發和雲端環境（尤其是雲端服務的Dev環境）上除錯和瞭解程式碼執行的重要功能。
+記AEM錄和日誌級別在配置檔案中進行管理，這些配置檔案以Git形式儲存為AEM項目的一部分，並通過Cloud Manager作為項目AEM的一部分進行部署。 以Cloud Service身AEM份登錄可以分為兩個邏輯集：
 
-AEM記錄和記錄檔層級會在設定檔中管理，這些設定檔會以Git儲存為AEM專案的一部分，並透過Cloud Manager部署為AEM專案的一部分。 以雲端服務身分登入AEM可分為兩個邏輯集：
-
-* AEM記錄，在AEM應用程式層級執行記錄
+* AEM日誌，在應用程式級別執AEM行日誌
 * Apache HTTPD Web Server/Dispatcher日誌記錄，它在發佈層執行Web伺服器和Dispatcher的日誌記錄。
 
-## AEM記錄{#aem-loggin}
+## 記AEM錄{#aem-loggin}
 
-在AEM應用程式層級登入，由三個記錄檔處理：
+在應用程AEM式層級登入，由三個記錄檔處理：
 
-1. AEM Java記錄檔，可為AEM應用程式轉譯Java記錄陳述式。
-1. HTTP請求記錄檔，此記錄檔記錄有關HTTP請求及其由AEM提供之回應的資訊
-1. HTTP存取記錄檔，記錄AEM所提供的摘要資訊和HTTP要求
+1. Java日AEM志，用於為應用程式生成Java日誌AEM語句。
+1. HTTP請求記錄檔，其中記錄有關HTTP請求及其回應的資訊AEM,
+1. HTTP存取記錄檔，記錄摘要資訊和HTTP要求AEM,
 
 >[!NOTE]
 >
 >從發佈層的Dispatcher快取或上游CDN提供的HTTP要求不會反映在這些記錄檔中。
 
-## AEM Java記錄{#aem-java-logging}
+## AEM Java日誌{#aem-java-logging}
 
-AEM as a Cloud Service&#39;s提供Java記錄陳述式的存取權。 AEM應用程式開發人員應遵循一般Java記錄最佳實務，在下列記錄層級記錄有關執行自訂程式碼的相關陳述式：
+作AEM為Cloud Service提供對Java日誌語句的訪問。 應用程式開發AEM人員應遵循一般Java記錄最佳實務，在下列記錄層級記錄有關自訂程式碼執行的相關陳述式：
 
 <table>
 <tr>
 <td>
-<b>AEM環境</b></td>
+<b>環AEM境</b></td>
 <td>
 <b>記錄層級</b></td>
 <td>
@@ -93,9 +93,9 @@ AEM as a Cloud Service&#39;s提供Java記錄陳述式的存取權。 AEM應用�
 </tr>
 </table>
 
-雖然Java記錄支援其他數種記錄詳細程度層級，但AEM作為雲端服務建議使用上述三個層級。
+雖然Java記錄功能支援數個其他記錄詳細程度層級，AEM但Cloud Service建議使用上述三個層級。
 
-AEM記錄檔層級是透過OSGi組態依環境類型設定，而OSGi組態會提交至Git，並透過Cloud Manager部署至AEM做為雲端服務。 因此，最好讓記錄檔陳述式與環境類型一致且廣為人知，以確保透過AEM提供的雲端服務可用的記錄檔位於最佳記錄檔層級，而不需使用更新的記錄檔層級設定重新部署應用程式。
+AEM日誌級別是通過OSGi配置按環境類型設定的，而OSGi配置又提交到Git，並通過Cloud Manager部署到作AEM為Cloud Service。 因此，最好保持日誌語句的一致性，並且對環境類型眾所周知，以確保通過「Cloud Service」提供的日誌在最佳日誌級別上可用，而不需要使用更新的日誌級別配置重新部署應用程式。
 
 **日誌輸出示例**
 
@@ -116,7 +116,7 @@ AEM記錄檔層級是透過OSGi組態依環境類型設定，而OSGi組態會提
 <td>29.04.2020 21:50:13.398</td>
 </tr>
 <tr>
-<td>AEM做為雲端服務節點ID</td>
+<td>AEM作為Cloud Service節點ID</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ AEM記錄檔層級是透過OSGi組態依環境類型設定，而OSGi組態會提
 
 ### 配置記錄器{#configuration-loggers}
 
-AEM Java記錄檔已定義為OSGi設定，因此可使用執行模式資料夾將特定AEM定位為雲端服務環境。
+JavaAEM日誌被定義為OSGi配置，因此使用運行模式檔案AEM夾將特定目標定位為Cloud Service環境。
 
 透過Sling LogManager工廠的OSGi組態，為自訂Java封裝設定Java記錄。 支援兩種配置屬性：
 
@@ -149,9 +149,9 @@ AEM Java記錄檔已定義為OSGi設定，因此可使用執行模式資料夾�
 | org.apache.sling.commons.log.names | 要收集其日誌語句的Java包。 |
 | org.apache.sling.commons.log.level | 記錄Java封裝的記錄層級，由org.apache.sling.commons.log.names指定 |
 
-變更其他LogManager OSGi組態屬性可能會導致AEM的雲端服務可用性問題。
+更改其他LogManager OSGi配置屬性可能會導致以Cloud Service形式出現AEM可用性問題。
 
-以下是三個AEM的建議記錄設定範例（使用`com.example`的預留位置Java套件），做為雲端服務環境類型。
+以下是建議的記錄配置示例（使用`com.example`的預留位置Java包），作為這三AEM種Cloud Service環境類型。
 
 ### 開發 {#development}
 
@@ -186,9 +186,9 @@ AEM Java記錄檔已定義為OSGi設定，因此可使用執行模式資料夾�
 }
 ```
 
-## AEM HTTP請求記錄{#aem-http-request-logging}
+## AEMHTTP請求記錄{#aem-http-request-logging}
 
-AEM作為雲端服務的HTTP要求記錄功能，可依時間順序深入瞭解對AEM提出的HTTP要求及其HTTP回應。 此記錄檔有助於瞭解對AEM提出的HTTP要求，以及處理和回覆的順序。
+因AEM為Cloud Service的HTTP請求記錄可依時間順序深入瞭解對AEM其HTTP回應的HTTP要求。 此記錄有助於瞭解對HTTP請求的處AEM理和回應順序。
 
 瞭解此記錄檔的關鍵，是將HTTP請求和回應配對對應至其ID，由方括弧中的數值表示。 請注意，請求及其對應的回應通常會在記錄中插入其他HTTP請求和回應。
 
@@ -218,7 +218,7 @@ AEM作為雲端服務的HTTP要求記錄功能，可依時間順序深入瞭解�
 </tr>
 <tr>
 <td>HTTP 方法</td>
-<td>貼文</td>
+<td>POST</td>
 </tr>
 <tr>
 <td>URL</td>
@@ -230,7 +230,7 @@ AEM作為雲端服務的HTTP要求記錄功能，可依時間順序深入瞭解�
 </td>
 </tr>
 <tr>
-<td>AEM做為雲端服務節點ID</td>
+<td>AEM作為Cloud Service節點ID</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 </tbody>
@@ -238,13 +238,13 @@ AEM作為雲端服務的HTTP要求記錄功能，可依時間順序深入瞭解�
 
 ### 配置日誌{#configuring-the-log}
 
-AEM中的AEM HTTP請求記錄檔無法設定為雲端服務。
+HTTP請AEM求日誌在中不可配AEM置為Cloud Service。
 
-## AEM HTTP Access Logging {#aem-http-access-logging}
+## AEM HTTP訪問記錄{#aem-http-access-logging}
 
-AEM as Cloud Service HTTP存取記錄會依時間順序顯示HTTP請求。 每個記錄項目代表存取AEM的HTTP請求。
+AEM因為Cloud ServiceHTTP存取記錄會依時間順序顯示HTTP請求。 每個記錄項代表存取的HTTP請求AEM。
 
-此記錄檔有助於快速瞭解AEM的HTTP要求，如果它們成功，請查看隨附的HTTP回應狀態程式碼，以及HTTP要求完成所需的時間。 此記錄檔也有助於依使用者篩選記錄檔項目，以除錯特定使用者的活動。
+此記錄有助於快速瞭解HTTP請求的執行時間AEM，如果它們成功，請查看隨附的HTTP回應狀態程式碼，以及完成HTTP請求所花的時間。 此記錄檔也有助於依使用者篩選記錄檔項目，以除錯特定使用者的活動。
 
 **日誌輸出示例**
 
@@ -259,7 +259,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 <table>
 <tbody>
 <tr>
-<td>AEM做為雲端服務節點ID</td>
+<td>AEM作為Cloud Service節點ID</td>
 <td>cm-p1235-e2644-aem-author-5955cb5b8-8kgr2</td>
 </tr>
 <tr>
@@ -276,7 +276,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 </tr>
 <tr>
 <td>HTTP方法</td>
-<td>取得</td>
+<td>GET</td>
 </tr>
 <tr>
 <td>URL</td>
@@ -307,11 +307,11 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 ### 配置HTTP訪問日誌{#configuring-the-http-access-log}
 
-AEM中的HTTP存取記錄檔無法設定為雲端服務。
+HTTP訪問日誌不可配置AEM為Cloud Service。
 
 ## Apache Web Server和Dispatcher Logging {#apache-web-server-and-dispatcher-logging}
 
-AEM as a Cloud Service為Publish上的Apache Web Servers和分派程式層提供三個記錄檔：
+作為AEMCloud Service，在「發佈」上為Apache Web Servers和dispatcher層提供三個日誌：
 
 * Apache HTTPD Web Server訪問日誌
 * Apache HTTPD Web Server錯誤日誌
@@ -319,7 +319,7 @@ AEM as a Cloud Service為Publish上的Apache Web Servers和分派程式層提供
 
 請注意，這些記錄檔僅適用於「發佈」層。
 
-在AEM應用程式收到HTTP請求之前，此組記錄檔會以雲端服務發佈層的形式，提供HTTP請求的見解。 請務必瞭解，最理想的情況是，對「發佈」層伺服器的大部分HTTP請求都是由Apache HTTPD Web Server和AEM Dispatcher快取的內容所提供，而且絕不會觸及AEM應用程式本身。 因此，AEM的Java、Request或Access記錄檔中沒有這些請求的記錄陳述式。
+這組記錄檔在HTTP要求送達應用程式之前，將HTTP要AEM求的見解作為Cloud Service發佈層AEM提供。 請務必瞭解，最理想的情況是，對發佈層伺服器的大部分HTTP請求都是由Apache HTTPD Web Server和AEMDispatcher快取的內容所提供，而且絕不會觸及應用程AEM式本身。 因此，在Java、Request或Access日誌中，沒AEM有這些請求的日誌語句。
 
 ### Apache HTTPD Web Server訪問日誌{#apache-httpd-web-server-access-log}
 
@@ -340,7 +340,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <table>
 <tbody>
 <tr>
-<td>AEM作為雲端服務節點ID</td>
+<td>作AEM為雲端服務節點ID</td>
 <td>cm-p1234-e26813-aem-publish-5c787687c-lqlxr</td>
 </tr>
 <tr>
@@ -357,7 +357,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>HTTP 方法</td>
-<td>取得</td>
+<td>GET</td>
 </tr>
 <tr>
 <td>URL</td>
@@ -388,7 +388,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 
 ### 配置Apache HTTPD Web Server訪問日誌{#configuring-the-apache-httpd-webs-server-access-log}
 
-此記錄檔在AEM中無法設定為雲端服務。
+此日誌在中不可配AEM置為Cloud Service。
 
 ## Apache HTTPD Web Server錯誤日誌{#apache-httpd-web-server-error-log}
 
@@ -480,7 +480,7 @@ Define REWRITE_LOG_LEVEL Debug
 </tr>
 <tr>
 <td>協定</td>
-<td>取得</td>
+<td>GET</td>
 </tr>
 <tr>
 <td>URL</td>
@@ -515,7 +515,7 @@ Define REWRITE_LOG_LEVEL Debug
 
 它可以設定為Error、Warn、Info、Debug和Trace1，預設值為Warn。
 
-雖然Dispatcher記錄支援數個其他記錄詳細程度層級，但AEM作為雲端服務建議使用下述層級。
+雖然Dispatcher日誌記錄支援其他幾個級別的日誌記錄詳細程度，AEM但Cloud Service建議使用以下所述級別。
 
 要設定每個環境的日誌級別，請在`global.var`檔案中使用相應的條件分支，如下所述：
 
@@ -538,17 +538,17 @@ Define DISP_LOG_LEVEL Debug
 
 ### 雲環境{#cloud-environments}
 
-AEM是雲端服務的雲端服務記錄檔，可透過Cloud Manager介面下載，或使用Adobe I/O命令列介面追蹤命令列的記錄檔來存取。 如需詳細資訊，請參閱[Cloud Manager記錄檔案](/help/implementing/cloud-manager/manage-logs.md)。
+作AEM為雲服務的Cloud Service日誌，可通過Cloud Manager介面下載或使用Adobe I/O命令行介面跟蹤命令行日誌來訪問。 如需詳細資訊，請參閱[Cloud Manager記錄檔案](/help/implementing/cloud-manager/manage-logs.md)。
 
 ### 本機SDK {#local-sdk}
 
-AEM as a Cloud Service SDK提供記錄檔，以支援本機開發。
+作AEM為Cloud ServiceSDK提供記錄檔以支援本端開發。
 
-AEM記錄檔位於資料夾`crx-quickstart/logs`中，您可在其中檢視下列記錄檔：
+AEM日誌位於`crx-quickstart/logs`資料夾中，可在其中查看以下日誌：
 
-* AEM Java記錄檔：`error.log`
-* AEM HTTP請求記錄：`request.log`
-* AEM HTTP Access Log:`access.log`
+* AEM Java log:`error.log`
+* AEMHTTP請求記錄：`request.log`
+* AEMHTTP存取記錄：`access.log`
 
 Apache層日誌（包括調度程式）位於Docker容器中，該容器中保存Dispatcher。 有關如何啟動Dispatcher的資訊，請參見[ Dispatcher文檔](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
 
@@ -558,7 +558,7 @@ Apache層日誌（包括調度程式）位於Docker容器中，該容器中保�
 1. 若要登入容器，請輸入&quot;`docker exec -it <container> /bin/sh`&quot;，其中`<container>`是上一步驟的分派器容器ID
 1. 導覽至`/mnt/var/www/html`下的快取根目錄
 1. 日誌位於`/etc/httpd/logs`下
-1. 檢查日誌：可以在資料夾XYZ下訪問這些日誌，在該資料夾中可以查看以下日誌：
+1. Inspect:可以在資料夾XYZ下訪問這些日誌，在該資料夾中可以查看以下日誌：
    * Apache HTTPD Web伺服器訪問日誌- `httpd_access.log`
    * Apache HTTPD Web伺服器錯誤日誌- `httpd_error.log`
    * Dispatcher logs - `dispatcher.log`
@@ -571,7 +571,7 @@ Apache層日誌（包括調度程式）位於Docker容器中，該容器中保�
 
 在特殊情況下，需要變更記錄檔層級，才能在「舞台(Stage)」或「生產(Production)」環境中以更精細的粒度登入。
 
-雖然這是可能的，但需要將Git中的設定檔的記錄檔層級從「警告」和「錯誤」變更為「除錯」，並執行AEM的部署作為Cloud Service，以便將這些設定變更註冊至環境。
+雖然這是可能的，但它需要對Git中配置檔案中的日誌級別進行從「警告」和「錯誤」到「調試」的更改，並執行部署AEM到Cloud Service，以便向環境註冊這些配置更改。
 
 根據流量和Debug編寫的日誌語句的數量，這可能會對環境造成不利的效能影響，因此，建議對「舞台(Stage)」和「生產(Production)」調試級別進行更改：
 
@@ -580,7 +580,7 @@ Apache層日誌（包括調度程式）位於Docker容器中，該容器中保�
 
 ## Splunk Logs {#splunk-logs}
 
-擁有Splunk帳戶的客戶可透過客戶支援票證要求將其AEM Cloud服務記錄轉送至適當的索引。 記錄資料等同於透過Cloud Manager記錄檔下載取得的資料，但客戶可能會發現，運用Splunk產品中的查詢功能十分方便。
+擁有Splunk帳戶的客戶可以通過客戶支援票證請求將其AEMCloud Service日誌轉發到相應的索引。 記錄資料等同於透過Cloud Manager記錄檔下載取得的資料，但客戶可能會發現，運用Splunk產品中的查詢功能十分方便。
 
 與發送到Splunk的日誌相關的網路頻寬被視為客戶網路I/O使用的一部分。
 
