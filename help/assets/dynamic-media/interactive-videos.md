@@ -1,14 +1,13 @@
 ---
 title: 互動影片
 description: 瞭解如何在Dynamic Media使用互動式視訊和可購買視訊。
-feature: Interactive Videos
-topic: Business Practitioner
+feature: 互動影片
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '6066'
+source-wordcount: '6064'
 ht-degree: 3%
 
 ---
@@ -55,7 +54,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 ### Adobe客戶成功網路研討會{#adobe-customer-success-webinar}
 
-[在「Experience Manager資產」中使用互動式視訊、連結分享和YouTube分享](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)網路研討會教您如何使用互動式視訊和其他功能，將轉換導向的事件連結至您的視訊行銷內容。
+[在Experience Manager資產中使用互動式視訊、連結分享和YouTube分享](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)網路研討會教您如何使用互動式視訊和其他功能，將轉換導向的活動連結至視訊行銷內容。
 
 ## 快速入門：互動式影片{#quick-start-interactive-videos}
 
