@@ -5,13 +5,12 @@ contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-topic: Business Practitioner
 role: Business Practitioner
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2935'
 ht-degree: 3%
 
 ---
@@ -75,7 +74,7 @@ ht-degree: 3%
 
    | Dynamic Media發佈模式選項 | 說明 |
    | --- | --- |
-   | **[!UICONTROL 立即]** | 當資產上傳至此檔案夾時，系統會將資產收錄至Experience Manager，並立即提供URL/內嵌。 此選項僅系結至Experience Manager發佈，而且不需要使用者干預來發佈資產。<br>如果在上一步 ** 中選擇了「從Dynamic Media同步同步模 **[!UICONTROL 式中排除此資料夾子樹中的所有內容」，則]** 此選 **** 項不可用。 |
+   | **[!UICONTROL 立即]** | 當資產上傳至此檔案夾時，系統會將資產收錄至Experience Manager，並立即提供URL/內嵌。 此選項僅系結至Experience Manager發佈，而且發佈資產不需要使用者干預。<br>如果在上一步 ** 中選擇了「從Dynamic Media同步同步模 **[!UICONTROL 式中排除此資料夾子樹中的所有內容」，則]** 此選 **** 項不可用。 |
    | **[!UICONTROL 啟動時]** | 資產上傳至此檔案夾時，您必須先明確發佈資產，才能提供URL/內嵌連結。 此選項僅系結至Experience Manager發佈。<br>如果在上一步 ** 中選擇了「從Dynamic Media同步同步模 **[!UICONTROL 式中排除此資料夾子樹中的所有內容」，則]** 此選 **** 項不可用。 |
    | **[!UICONTROL 選擇性發佈]** | 資產會發佈至您選擇的Experience Manager或Dynamic Media，以便在公共網域中傳送。 兩種發佈方式互斥。 也就是說，您可以將資產發佈到DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您可以將資產獨家發佈至Experience Manager，以進行安全預覽；這些相同的資產&#x200B;*not*&#x200B;會發佈到DMS7，以便在公共域中交付。 如果在上一步中選擇了「從&#x200B;**[!UICONTROL 同步模式]**&#x200B;中的Dynamic Media同步&#x200B;]**中排除此資料夾子樹中的所有內容」，則此選項不可用。**[!UICONTROL  |
 
