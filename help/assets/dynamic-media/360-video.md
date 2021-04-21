@@ -1,14 +1,13 @@
 ---
 title: 360/VR視訊
 description: 瞭解如何在Dynamic Media處理360和虛擬實境(VR)視訊。
-feature: 360 VR Video
-topic: Business Practitioner
+feature: 360 VR 影片
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
