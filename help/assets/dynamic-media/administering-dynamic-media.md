@@ -2,16 +2,15 @@
 title: 設定Dynamic Media
 description: 若要設定Dynamic Media，您必須設定Dynamic Media並管理影像和檢視器預設集。
 contentOwner: Rick Brough
-topic: Administrator
 role: Administrator,Business Practitioner
+exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 7%
+source-wordcount: '179'
+ht-degree: 6%
 
 ---
-
 
 # 設定Dynamic Media{#setting-up-dynamic-media}
 
@@ -44,3 +43,4 @@ ht-degree: 7%
 >**如果您要升級：**
 >
 >* Experience Manager啟動並執行後，您上傳的任何資產都會自動啟用Dynamic Media（除非系統管理員已明確停用它）。 如果您是升級版Experience Manager，而且是Dynamic Media新手，則可能必須重新處理資產，以啟用Dynamic Media。 請參閱[重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
+
