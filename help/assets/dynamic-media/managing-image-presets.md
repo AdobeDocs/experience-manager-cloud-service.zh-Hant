@@ -1,14 +1,13 @@
 ---
 title: 管理影像預設集
 description: 「瞭解影像預設集，以及如何建立、修改及管理影像預設集。」
-feature: Image Presets,Viewers,Renditions
-topic: Business Practitioner
+feature: 影像預設集、檢視器、轉譯
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '3646'
+source-wordcount: '3644'
 ht-degree: 9%
 
 ---
