@@ -2,17 +2,16 @@
 title: 影像品質最佳化的最佳作法
 description: 瞭解您可在Dynamic Media使用的最佳實務，以最佳化影像資產的品質。
 contentOwner: Rick Brough
-feature: Asset Management
-topic: Business Practitioner
+feature: 資產管理
 role: Business Practitioner
+exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1454'
 ht-degree: 5%
 
 ---
-
 
 # 影像品質最佳化的最佳作法 {#best-practices-for-optimizing-the-quality-of-your-images}
 
@@ -125,4 +124,3 @@ JPG壓縮的最佳實務是使用`&qlt=85,0`。
 * 直接在URL上即時嘗試並測試不同的參數。
 * 請記住，您可以將「Dynamic Media影像伺服」指令群組至影像預設集。 影像預設集基本上是具有自訂預設集名稱（例如`$thumb_low$`和`&product_high$`）的URL命令巨集。 URL路徑中的自訂預設集名稱會呼叫這些預設集。 這些功能可協助您管理網站上不同影像使用模式的命令和品質設定，並縮短URL的整體長度。
 * Experience Manager也提供更進階的影像品質調整方式，例如在擷取時套用銳利化影像。 若要調整並最佳化演算結果，[Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html)可協助您自訂見解和最佳實務。
-
