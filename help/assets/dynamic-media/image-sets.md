@@ -1,14 +1,13 @@
 ---
 title: 影像集
 description: 瞭解如何在Dynamic Media處理影像集。
-feature: Image Sets
-topic: Business Practitioner
+feature: 影像集
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '2051'
+source-wordcount: '2049'
 ht-degree: 9%
 
 ---
@@ -104,7 +103,7 @@ ht-degree: 9%
 >
 >如果您使用縮圖來表示產品色票，請執行下列動作：
 >
->為相同影像建立暈映或不同的像片，以不同的顏色、圖樣或光潔度顯示。 您也需要對應不同顏色、圖樣或結束的縮圖檔案。 例如，若要以影像集呈現縮圖，並以黑色、棕色和綠色顯示相同的外套，您需要：
+>為相同影像建立暈映或不同的像片，以不同的顏色、圖樣或光潔度顯示。 您也需要對應不同顏色、圖樣或修飾的縮圖檔案。 例如，若要以影像集呈現縮圖，並以黑色、棕色和綠色顯示相同的外套，您需要：
 >
 >* 黑色、棕色和綠色的相同夾克。
 >* 黑色、棕色和綠色縮圖。
