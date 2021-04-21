@@ -3,9 +3,8 @@ sub-product: 內容AEM與商務Cloud Service
 user-guide-title: 內容AEM與商務Cloud Service
 breadcrumb-title: 內AEM容與商務指南
 user-guide-description: 瞭解如何將Experience Manager內容與商務當成Cloud Service使用與管理。
-feature-set: Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: 4b4741926381818e44b2293f9bed86782e689c49
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 2%
