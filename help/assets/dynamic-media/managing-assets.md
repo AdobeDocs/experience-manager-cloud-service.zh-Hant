@@ -1,17 +1,16 @@
 ---
 title: 關於管理Dynamic Media資產
 description: 瞭解如何使用Dynamic Media資產。
-feature: Asset Management
-topic: Business Practitioner
+feature: 資產管理
 role: Administrator,Business Practitioner
+exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 14%
+source-wordcount: '121'
+ht-degree: 13%
 
 ---
-
 
 # 關於管理Dynamic Media資產{#managing-assets}
 
@@ -27,4 +26,3 @@ ht-degree: 14%
 * [預覽 Dynamic Media 資產](previewing-assets.md)
 * [發佈Dynamic Media資產](publishing-dynamicmedia-assets.md)
 * [使用選取工具](working-with-selectors.md)
-
