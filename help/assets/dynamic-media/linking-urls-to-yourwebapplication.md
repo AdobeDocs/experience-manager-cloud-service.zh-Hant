@@ -1,16 +1,15 @@
 ---
 title: 將 URL 連結至您的 Web 應用程式
 description: 瞭解如何將URL連結至您在Dynamic Media的Web應用程式。
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1266'
 ht-degree: 10%
 
 ---
-
 
 # 將 URL 連結至您的 Web 應用程式 {#linking-urls-to-your-web-application}
 
@@ -26,7 +25,7 @@ ht-degree: 10%
 
 另請參閱[將視訊或影像檢視器內嵌在網頁上](embed-code.md)。
 
-另請參閱[將YouTube URL連結至您的Web應用程式](video.md)。
+另請參閱[將YouTubeURL連結到Web應用程式](video.md)。
 
 另請參閱[為自適應網站提供最佳化影像](responsive-site.md)。
 
