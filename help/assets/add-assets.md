@@ -1,13 +1,13 @@
 ---
 title: 將您的數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
-feature: Asset Management,Upload
+feature: 資產管理，上傳
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
+source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2067'
 ht-degree: 1%
 
 ---
@@ -216,7 +216,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 * 直接二進位上傳是上傳資產的新方法。 預設情況下，產品功能和用戶端都支援它，例如[!DNL Experience Manager]使用者介面、[!DNL Adobe Asset Link]和[!DNL Experience Manager]案頭應用程式。 任何由客戶技術團隊自訂或擴充的自訂程式碼，都必須使用新的上傳API和通訊協定。
 
-* Adobe建議在[!DNL Experience Manager Assets]的每個檔案夾中新增多達1000個資產。 雖然您可以新增更多資產至資料夾，但您可能會看到效能問題，例如導覽這類資料夾的速度變慢。
+* Adobe建議在[!DNL Experience Manager Assets]的每個檔案夾中新增不超過1000個資產。 雖然您可以新增更多資產至資料夾，但您可能會遇到效能問題，例如導覽這類資料夾的速度變慢。
 
 * 當您在[!UICONTROL 名稱衝突]對話方塊中選取&#x200B;**[!UICONTROL 取代]**&#x200B;時，會重新產生新資產的資產ID。 此ID與先前資產的ID不同。 如果[資產前瞻分析](/help/assets/assets-insights.md)已啟用[!DNL Adobe Analytics]來追蹤印象或點按，則重新產生的資產ID會使[!DNL Analytics]上為資產擷取的資料無效。
 
