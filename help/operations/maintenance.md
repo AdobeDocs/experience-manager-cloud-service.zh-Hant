@@ -3,9 +3,9 @@ title: 維護任AEM務作為Cloud Service
 description: 維護任AEM務作為Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
+source-git-commit: c7e954e3ed49d6189d050b2c33c04a9266853758
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '919'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 | 工作流程清除 | 客戶 | 必須用github完成。 <br> 通過在資料夾下建立屬性，覆蓋下的「現成維護」 `/libs` 窗口配置節`/apps/settings/granite/operations/maintenance/granite_weekly` 點 `granite_daily`。有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上述節點下添加另一個節點(命名該節點 `granite_WorkflowPurgeTask`)和相應屬性來啟用維護任務。<br> 配置OSGI屬性，請參 [閱AEM6.5維護任務文檔](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 | 專案清除 | 客戶 | 必須用github完成。 <br> 通過在資料夾或下建立屬性，覆蓋下 `/libs` 的「現成維護」窗口配 `/apps/settings/granite/operations/maintenance/granite_weekly` 置節點 `granite_daily`。有關其他配置詳細資訊，請參閱下面的維護窗口表。 <br> 通過在上面的節點下添加節點（將其命名）並添加相應的屬 `granite_ProjectPurgeTask`性來啟用維護任務。<br> 配置OSGI屬性，請 [參AEM閱6.5維護任務文檔](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-客戶可以計畫在每日、每週或每月維護窗口期間執行的每個工作流清除、臨機任務清除和項目清除維護任務。 這些配置應直接在原始碼控制中編輯。 下表說明每個窗口可用的配置參數。
+客戶可以計畫在每日、每週或每月維護窗口期間執行的每個工作流清除、臨機任務清除和項目清除維護任務。 這些配置應直接在原始碼控制中編輯。 下表說明每個窗口可用的配置參數。 此外，請參閱表格後面提供的位置和程式碼範例。
 
 <table>
  <tbody>
@@ -85,15 +85,15 @@ ht-degree: 1%
     </tbody>
 </table>
 
-位置:
+**位置**:
 
-1. /apps/settings/granite/operations/maintenance/granite_daily
-2. /apps/settings/granite/operations/maintenance/granite_weekly
-3. /apps/settings/granite/operations/maintenance/granite_monthly
+* 每日- /apps/settings/granite/operations/maintenance/granite_daily
+* 每週- /apps/settings/granite/operations/maintenance/granite_weekly
+* 每月- /apps/settings/granite/operations/maintenance/granite_monthly
 
-程式碼範例：
+**程式碼範例**:
 
-程式碼範例1
+程式碼範例1（每日）
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -108,7 +108,7 @@ ht-degree: 1%
  />
 ```
 
-程式碼範例2
+程式碼範例2（每週）
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -123,7 +123,7 @@ ht-degree: 1%
    windowStartTime="14:30"/>
 ```
 
-程式碼範例3
+程式碼範例3（每月）
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
