@@ -2,20 +2,20 @@
 title: 使用「連線資產」在 中共用 DAM 資產 [!DNL Sites]
 description: 使用遠程 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署上可用的資產。
 contentOwner: AG
-feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
+feature: 資產管理，關聯資產，資產分發，用戶和組
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: bbc396fbe7b3c11f8011a32fa78577957422fcf2
 workflow-type: tm+mt
 source-wordcount: '2932'
-ht-degree: 27%
+ht-degree: 26%
 
 ---
 
 # 使用「連線資產」在 中共用 DAM 資產 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-大型企業中，建立網站所需的基礎架構可能很分散。有時候，建立這些網站的網站建立功能和數位資產可能會存放在不同的部署中。一個原因可能是現有部署在地理位置分散，需要協同工作。 另一個原因可能是收購導致母公司希望共同使用的異質基礎設施。
+大型企業中，建立網站所需的基礎架構可能很分散。有時候，建立這些網站的網站建立功能和數位資產可能會存放在不同的部署中。一個原因是，現有部署在地理位置分散，需要共同工作。 另一個原因可能是收購導致母公司希望共同使用的異質基礎設施。
 
 使用者可在[!DNL Experience Manager Sites]中建立網頁。 [!DNL Experience Manager Assets] 是數位資產管理(DAM)系統，可為網站提供所需資產。[!DNL Experience Manager] 現在可透過整合和來支援上述使 [!DNL Sites] 用案例 [!DNL Assets]。
 
@@ -53,7 +53,7 @@ ht-degree: 27%
 |------|--------|-----------|-----|----------|
 | [!DNL Sites] 管理員 | 本機 | [!DNL Experience Manager] `administrators` | `admin` | 設定[!DNL Experience Manager]並配置與遠程[!DNL Assets]部署的整合。 |
 | DAM 使用者 | 本機 | `Authors` | `ksaner` | 用於檢視及複製 `/content/DAM/connectedassets/` 中擷取的資產。 |
-| [!DNL Sites] 作者 | 本機 | <ul><li>`Authors` (在遠端DAM上具有讀取存取權，在本機上具有作者存取權 [!DNL Sites]) </li> <li>`dam-users` 本地  [!DNL Sites]</li></ul> | `ksaner` | 使用者為[!DNL Sites]作者，他們使用此整合來改善其內容速度。 作者使用[!UICONTROL Content Finder]在遠端DAM中搜尋及瀏覽資產，並使用本機網頁中的必要影像。 已採用 `ksaner` DAM 使用者的認證。 |
+| [!DNL Sites] 作者 | 本機 | <ul><li>`Authors` (在遠端DAM上具有讀取存取權，在本機上具有作者存取權 [!DNL Sites]) </li> <li>`dam-users` 本地  [!DNL Sites]</li></ul> | `ksaner` | 使用者為[!DNL Sites]作者，他們使用此整合來改善其內容速度。 作者可使用[!UICONTROL Content Finder]在遠端DAM中搜尋及瀏覽資產，並使用本機網頁中的必要影像。 已採用 `ksaner` DAM 使用者的認證。 |
 | [!DNL Assets] 管理員 | 遠端 | [!DNL Experience Manager] `administrators` | `admin` 遠程  [!DNL Experience Manager] | 設定跨原始資源共用 (CORS)。 |
 | DAM 使用者 | 遠端 | `Authors` | `ksaner` 遠程  [!DNL Experience Manager] | 在遠程[!DNL Experience Manager]部署上的作者角色。 使用[!UICONTROL 內容搜尋器]搜尋及瀏覽已連線資產中的資產。 |
 | DAM 經銷商 (技術使用者) | 遠端 | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` 遠程  [!DNL Experience Manager] | [!DNL Experience Manager]本機伺服器（非[!DNL Sites]作者角色）會代表[!DNL Sites]作者使用此位於遠端部署的使用者來擷取遠端資產。 此角色與上述的兩個 `ksaner` 角色不一樣，而且屬於不同的使用者群組。 |
@@ -148,7 +148,7 @@ ht-degree: 27%
 
 1. 從[!DNL Experience Manager]工作區訪問&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**，導航到遠程部署上的[!DNL Assets]介面。 或者，您也可以在瀏覽器中存取 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上傳您選擇的資產。
 1. 在[!DNL Sites]部署中，在右上角的描述檔激活器中，按一下&#x200B;**[!UICONTROL Impersonate as]**。 輸入 `ksaner` 作為使用者名稱，選取畫面上提供的選項，然後按一下&#x200B;**[!UICONTROL 「確定」]**。
-1. 在&#x200B;**[!UICONTROL 「Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL tw]** > **[!UICONTROL zh」]**&#x200B;開啟「We.Retail」網頁。編輯頁面。或者，您也可以在瀏覽器中存取 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html`，進而編輯頁面。
+1. 在&#x200B;**[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**&#x200B;開啟`We.Retail`網站頁面。 編輯頁面。或者，您也可以在瀏覽器中存取 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html`，進而編輯頁面。
 
    按一下頁面左上角的&#x200B;**[!UICONTROL 「切換側面板」]**。
 
@@ -182,7 +182,7 @@ ht-degree: 27%
 
 ### 檢查跨網頁{#asset-usage-references}的資產使用情況
 
-[!DNL Experience Manager] 可讓DAM使用者檢查資產的所有參考。它有助於理解和管理遠程[!DNL Sites]和複合資產中資產的使用情況。 許多[!DNL Experience Manager Sites]部署網頁的作者可以在不同網頁的遠端[!DNL Assets]上使用資產。 為了簡化資產管理，而不會造成參考損壞，DAM使用者必須檢查資產在本機和遠端網頁上的使用情形。 資產的[!UICONTROL 屬性]頁面中的[!UICONTROL 參考]標籤會列出資產的本機和遠端參考。
+[!DNL Experience Manager] 可讓DAM使用者檢查資產的所有參考。它有助於理解和管理遠程[!DNL Sites]和複合資產中資產的使用情況。 許多[!DNL Experience Manager Sites]部署網頁的作者可以在不同網頁中使用遠端DAM上的資產。 為了簡化資產管理，而不會造成參考損壞，DAM使用者必須檢查資產在本機和遠端網頁上的使用情形。 資產的[!UICONTROL 屬性]頁面中的[!UICONTROL 參考]標籤會列出資產的本機和遠端參考。
 
 要查看和管理[!DNL Assets]部署上的引用，請執行以下步驟：
 
@@ -191,7 +191,7 @@ ht-degree: 27%
 
    ![「資產屬性」頁中的遠程引用](assets/connected-assets-remote-reference.png)
 
-1. [!DNL Sites]頁面的參考會顯示每個本機[!DNL Sites]的參考總數。 查找所有參照並顯示參照總數可能需要一些時間。
+1. [!DNL Sites]頁面的參考顯示每個本地[!DNL Sites]的參考總數。 查找所有參照並顯示參照總數可能需要一些時間。
 1. 參考清單是互動式的，DAM使用者可以按一下參考以開啟參考頁面。 如果由於某些原因無法提取遠程引用，則顯示通知，通知用戶故障。
 1. 使用者可以移動或刪除資產。 移動或刪除資產時，所有選定資產／資料夾的參考總數會顯示在警告對話方塊中。 刪除尚未顯示參照的資產時，將顯示警告對話框。
 
@@ -227,7 +227,7 @@ ht-degree: 27%
 * 您可以對擷取的資產執行非破壞性的簡單編輯作業，也能執行透過 `Image` 元件支援的編輯工作。資產僅供唯讀。
 * 唯一可重新擷取資產的方法，就是將資產拖曳至頁面上。 沒有API支援或其他方法可重新擷取資產以進行更新。
 * 如果資產從DAM中終止運作，則這些資產會繼續在[!DNL Sites]頁面上使用。
-* 非同步讀取資產的遠端參考項目。 參考和總計計數不是即時的，如果網站作者在DAM使用者檢視參考時使用資產，則可能會有所不同。 DAM使用者可重新整理頁面，並在幾分鐘內再試一次以取得總計數。
+* 非同步讀取資產的遠端參考項目。 參照和總計數不是即時的，如果[!DNL Sites]作者在DAM使用者檢視參考時使用資產，則可能會有所不同。 DAM使用者可重新整理頁面，並在幾分鐘內再試一次以取得總計數。
 
 ## 疑難排解問題 {#troubleshoot}
 
