@@ -3,10 +3,10 @@ title: 維護任AEM務作為Cloud Service
 description: 維護任AEM務作為Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 5892ef2998b8bb0e955998662a3cbe8aaa624e97
+source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 2%
+source-wordcount: '902'
+ht-degree: 1%
 
 ---
 
@@ -47,16 +47,12 @@ ht-degree: 2%
     <th>維護窗口配置</th>
     <th>誰擁有配置</th>
     <th>配置類型</th>
-    <th>位置</th>
-    <th>範例</th>
     <th>參數</th>
   </tr>
   <tr>
     <td>每日</td>
     <td>客戶</td>
     <td>JCR節點定義</td>
-    <td>1</td>
-    <td>3</td>
   <td>
   <p><strong>windowSchedule= daily</strong> （此值不應更改）</p>
   <p><strong>windowStartTime= HH:</strong> Mmusing as 24小時鐘。定義與Daily Maintenance Windows關聯的Maintenance Tasks何時應開始執行。</p>
@@ -67,8 +63,6 @@ ht-degree: 2%
     <td>每週</td>
     <td>客戶</td>
     <td>JCR節點定義</td>
-    <td>請參閱下方位置2</td>
-    <td>請參閱下方的程式碼範例2</td>
     <td>
     <p><strong>windowSchedule= weekly</strong> （此值不應變更）</p>
     <p><strong>windowStartTime= HH:</strong> Mmusing as 24小時鐘。定義與每週維護窗口關聯的維護任務何時開始執行。</p>
@@ -80,8 +74,6 @@ ht-degree: 2%
     <td>每月</td>
     <td>客戶</td>
     <td>JCR節點定義</td>
-    <td>請參閱下方的位置3</td>
-    <td>請參閱下方的程式碼範例3</td>
     <td>
     <p><strong>windowSchedule= daily</strong> （此值不應更改）</p>
     <p><strong>windowStartTime= HH:</strong> Mmusing as 24小時鐘。定義與「每月維護」窗口關聯的維護任務何時開始執行。</p>
