@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >正在進行中的工作——本檔案的建立工作正在進行中，不應將其理解為完整或明確，也不應將其用於生產目的。
 
-在此[無頭開發人員歷程的選購續航中，您瞭解如何結合無頭傳送與AEM傳統全堆疊CMS功能，以及如何使用SPAEditor架構來建立可編輯的SPAAEM，以及視需要整合外部Headless Developer Journey，啟用編輯功能。](#overview.md)
+在此[無頭開發人員歷程的選購續航中，您瞭解如何結合無頭傳送與AEM傳統全堆疊CMS功能，以及如何使用SPAEditor架構來建立可編輯的SPAAEM，以及視需要整合外部Headless Developer Journey，啟用編輯功能。](overview.md)
 
 ## 到目前為止的故事{#story-so-far}
 
