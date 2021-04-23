@@ -6,10 +6,10 @@ user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service
 feature: 開發人員工具
 role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: eb404db0cf45bf2ef5003c6e4c07c29758c8166b
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 36%
+source-wordcount: '969'
+ht-degree: 33%
 
 ---
 
@@ -73,6 +73,18 @@ ht-degree: 36%
    + [技AEM術基礎](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [產生伺服器端API的存取Token](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + 無頭開發人員歷程{#headless-journey}
+      + [瞭解無頭AEM](developing/headless-journey/overview.md)
+      + [瞭解CMS無頭開發](developing/headless-journey/learn-about.md)
+      + [開始使用AEM無頭Cloud Service](developing/headless-journey/getting-started.md)
+      + [使用無頭體驗，獲得您第一次體AEM驗的途徑](developing/headless-journey/path-to-first-experience.md)
+      + [如何將您的內容模型AEM化為內容模型](developing/headless-journey/model-your-content.md)
+      + [如何透過傳送API存取您AEM的內容](developing/headless-journey/access-your-content.md)
+      + [如何透過資產API更新AEM您的內容](developing/headless-journey/update-your-content.md)
+      + [如何將它整合在一起](developing/headless-journey/put-it-all-together.md)
+      + [如何與無頭應用程式一起上線](developing/headless-journey/go-live.md)
+      + [貼文啟動](developing/headless-journey/post-launch.md)
+      + [可選——如何使用](developing/headless-journey/create-spa.md)
    + [Headful and Headless in AEM](developing/headful-headless.md)
    + 完整AEM堆疊開發{#full-stack}
       + [開始開發 AEM Sites - WKND 教學課程](developing/introduction/develop-wknd-tutorial.md)
