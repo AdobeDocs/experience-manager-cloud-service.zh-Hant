@@ -3,10 +3,10 @@ title: 維護任AEM務作為Cloud Service
 description: 維護任AEM務作為Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
+source-git-commit: 5892ef2998b8bb0e955998662a3cbe8aaa624e97
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '920'
+ht-degree: 2%
 
 ---
 
@@ -55,9 +55,10 @@ ht-degree: 0%
     <td>每日</td>
     <td>客戶</td>
     <td>JCR節點定義</td>
-    <td>請參閱下方的位置1</td>
-    <td>請參閱下方的程式碼範例1</td>
-  <td><p><strong>windowSchedule=每日</strong></p> （此值不應變更）
+    <td>1</td>
+    <td>3</td>
+  <td>
+  <p><strong>windowSchedule= daily</strong> （此值不應更改）</p>
   <p><strong>windowStartTime= HH:</strong> Mmusing as 24小時鐘。定義與Daily Maintenance Windows關聯的Maintenance Tasks何時應開始執行。</p>
   <p><strong>windowEndTime= HH:</strong> Mmusing as 24小時鐘。定義與「每日維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。</p>
   </td> 
@@ -69,11 +70,11 @@ ht-degree: 0%
     <td>請參閱下方位置2</td>
     <td>請參閱下方的程式碼範例2</td>
     <td>
-    <strong>windowSchedule= weekly</strong> （此值不應變更）windowStartTime= 
-    <strong>HH:</strong> MmUsing as 24 hor clock。定義與每週維護窗口關聯的維護任務何時開始執行。
-    <strong>windowEndTime= HH:</strong> Mmusing as 24小時鐘。定義與「每週維護窗口」關聯的維護任務何時應停止執行（如果尚未完成）。
-    <strong>windowScheduleWekdays=1-7的2個值陣列(例如[5,5])</strong> 陣列的第一個值是調度作業的開始日，第二個值是停止作業的結束日。開始和結束的確切時間分別由windowStartTime和windowEndTime控制。
-    </td> 
+    <p><strong>windowSchedule= weekly</strong> （此值不應變更）</p>
+    <p><strong>windowStartTime= HH:</strong> Mmusing as 24小時鐘。定義與每週維護窗口關聯的維護任務何時開始執行。</p>
+    <p><strong>windowEndTime= HH:</strong> Mmusing as 24小時鐘。定義與「每週維護窗口」關聯的維護任務何時應停止執行（如果尚未完成）。</p>
+    <p><strong>windowScheduleWekdays=1-7的2個值陣列(例如[5,5])</strong> 陣列的第一個值是調度作業的開始日，第二個值是停止作業的結束日。開始和結束的確切時間分別由windowStartTime和windowEndTime控制。</p>
+    </td>
   </tr>
   <tr>
     <td>每月</td>
@@ -82,11 +83,11 @@ ht-degree: 0%
     <td>請參閱下方的位置3</td>
     <td>請參閱下方的程式碼範例3</td>
     <td>
-    <strong>windowSchedule= daily</strong> （此值不應變更）windowStartTime= HH:
-    <strong></strong> MmUsing as 24 hor clock。定義與「每月維護」窗口關聯的維護任務何時開始執行。
-    <strong>windowEndTime= HH:</strong> Mmusing as 24小時鐘。定義與「每月維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。
-    <strong>windowScheduleWekdays = 1-7的2個值陣列(例如[5,5])</strong> 陣列的第一個值是調度作業的開始日，第二個值是停止作業的結束日。開始和結束的確切時間分別由windowStartTime和windowEndTime控制。
-    <strong>windowFirstLastStartDay= 0/1</strong> 0，排程當月的第一週，或排程當月的最後一週。如果缺少值，則有效地每天排程工作，並受每月windowScheduleWeekdays的管理。
+    <p><strong>windowSchedule= daily</strong> （此值不應更改）</p>
+    <p><strong>windowStartTime= HH:</strong> Mmusing as 24小時鐘。定義與「每月維護」窗口關聯的維護任務何時開始執行。</p>
+    <p><strong>windowEndTime= HH:</strong> Mmusing as 24小時鐘。定義與「每月維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。</p>
+    <p><strong>windowScheduleWekdays = 1-7的2個值陣列(例如[5,5])</strong> 陣列的第一個值是調度作業的開始日，第二個值是停止作業的結束日。開始和結束的確切時間分別由windowStartTime和windowEndTime控制。</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0，排程當月的第一週，或排程當月的最後一週。如果缺少值，則有效地每天排程工作，並受每月windowScheduleWeekdays的管理。</p>
     </td> 
     </tr>
     </tbody>
