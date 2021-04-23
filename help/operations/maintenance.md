@@ -3,9 +3,9 @@ title: 維護任AEM務作為Cloud Service
 description: 維護任AEM務作為Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 4c1c14fae5819e7f7e1bf5d04350c54b6cbe80bb
+source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '914'
 ht-degree: 2%
 
 ---
@@ -42,6 +42,7 @@ ht-degree: 2%
 客戶可以計畫在每日、每週或每月維護窗口期間執行的每個工作流清除、臨機任務清除和項目清除維護任務。 這些配置應直接在原始碼控制中編輯。 下表說明每個窗口可用的配置參數。
 
 <table>
+ <tbody>
   <tr>
     <th>維護窗口配置</th>
     <th>誰擁有配置</th>
@@ -54,12 +55,11 @@ ht-degree: 2%
     <td>每日</td>
     <td>客戶</td>
     <td>JCR節點定義</td>
-    <td>請參閱下方的位置1</td>
+    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
     <td>請參閱下方的程式碼範例1</td>
-  <td>
-  <strong>windowSchedule= daily</strong> （此值不應變更）windowStartTime= HH:
-  <strong></strong> MmUsing as 24 hor clock。定義與Daily Maintenance Windows關聯的Maintenance Tasks何時應開始執行。
-  <strong>windowEndTime= HH:</strong> Mmusing as 24小時鐘。定義與「每日維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。
+  <td><p><code>windowSchedule= daily</code></p> （此值不應變更）
+  <p><code>windowStartTime= HH:MM</code> 24小時。 定義與Daily Maintenance Windows關聯的Maintenance Tasks何時應開始執行。</p>
+  <p><code>windowEndTime= HH:MM</code> 24小時。 定義與「每日維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。</p>
   </td> 
   </tr>
   <tr>
@@ -89,6 +89,7 @@ ht-degree: 2%
     <strong>windowFirstLastStartDay= 0/1</strong> 0，排程當月的第一週，或排程當月的最後一週。如果缺少值，則有效地每天排程工作，並受每月windowScheduleWeekdays的管理。
     </td> 
     </tr>
+    </tbody>
 </table>
 
 位置:
