@@ -3,10 +3,10 @@ title: 維護任AEM務作為Cloud Service
 description: 維護任AEM務作為Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
+source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -55,11 +55,11 @@ ht-degree: 2%
     <td>每日</td>
     <td>客戶</td>
     <td>JCR節點定義</td>
-    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
+    <td>請參閱下方的位置1</td>
     <td>請參閱下方的程式碼範例1</td>
-  <td><p><code>windowSchedule= daily</code></p> （此值不應變更）
-  <p><code>windowStartTime= HH:MM</code> 24小時。 定義與Daily Maintenance Windows關聯的Maintenance Tasks何時應開始執行。</p>
-  <p><code>windowEndTime= HH:MM</code> 24小時。 定義與「每日維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。</p>
+  <td><p><strong>windowSchedule=每日</strong></p> （此值不應變更）
+  <p><strong>windowStartTime= HH:</strong> Mmusing as 24小時鐘。定義與Daily Maintenance Windows關聯的Maintenance Tasks何時應開始執行。</p>
+  <p><strong>windowEndTime= HH:</strong> Mmusing as 24小時鐘。定義與「每日維護」窗口關聯的維護任務何時應停止執行（如果尚未完成）。</p>
   </td> 
   </tr>
   <tr>
