@@ -1,0 +1,54 @@
+---
+title: 無頭開AEM發人員歷程
+description: 從這裡開始進行引導式歷程，瞭解其強大而有彈性的無頭功能AEM、功能，以及如何在您的第一個開發專案中運用這些功能。
+hide: true
+hidefromtoc: true
+index: false
+translation-type: tm+mt
+source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 2%
+
+---
+
+
+# 無AEM頭開發人員歷程{#aem-headless-developer-journey}
+
+>[!CAUTION]
+>
+>正在進行中的工作——本檔案的建立工作正在進行中，不應將其理解為完整或明確，也不應將其用於生產目的。
+
+從這裡開始進行引導式歷程，瞭解其強大而有彈性的無頭功能AEM、功能，以及如何在您的第一個開發專案中運用這些功能。
+
+## 簡介 {#introduction}
+
+無頭實作對於為受眾提供體驗變得越來越重要，無論其身在何處，無論其通道為何。
+
+無頭實作會與完整堆疊解決方案中的傳統方式一樣，將頁面和元件管理轉換為無頭實作，並著重於建立不受通道限制、可重複使用的內容片段及其跨通道傳送。 它是一種現代化的動態開發模式，可用來建置網頁體驗。
+
+本指南會引導您瞭解最重要的主題，讓您在完成時：
+
+* 充分瞭解無頭內容的傳遞方式及其優點。
+* 瞭解無AEM頭功能，以及它們如何搭配運作，以提供無頭體驗。
+* 能夠採取實作第一個無頭專案的AEM第一步。
+
+## 無頭之旅{#the-journey}
+
+您將在此歷程中探索許多主題。 以下文章提供您無頭的基本知識，並AEM連結至詳細的技術檔案。
+
+雖然您可以直接進入旅程的特定部分，但許多概念都建立在先前文章中的概念上。 因此，如果您不熟悉無頭AEM功能，建議您從開頭開始並依序進行。
+
+| # | 文章 | 說明 |
+|---|---|---|
+| 0 | 無頭開AEM發人員歷程 | 本檔案 |
+| 1 | [瞭解CMS無頭開發](learn-about.md) | 瞭解無頭技術，以及其使用時機。 |
+| 2 | [開始使用AEM無頭Cloud Service](getting-started.md) | 瞭解無頭AEM先決條件 |
+| 3 | [使用無頭體驗，獲得您第一次體AEM驗的途徑](path-to-first-experience.md) | 設定您的開發環境，並瞭解如何將簡單的應用程式與AEMHeadless整合 |
+| 4 | [如何建立內容模型](model-your-content.md) | 瞭解如何建立內容結構的模型。 然後，瞭解Adobe Experience Manager(AEM)使用內容片段模型和內容片段的結構，以便跨通道重複使用。 |
+| 5 | [如何透過傳送API存取您AEM的內容](access-your-content.md) | 瞭解如何使用GraphQL查詢來存取您的內容片段內容。 |
+| 6 | [如何透過資產API更新AEM您的內容](update-your-content.md) | 瞭解如何使用REST API存取和更新您的內容片段內容。 |
+| 7 | [如何將所有內容整合在一起——您的應用程式和您的內容AEM在Headless](put-it-all-together.md) | 瞭解如何將您的專AEM案（包括內容片段）、您的GraphQL呼叫、您的REST API呼叫和您的應用程式)準備上線。 |
+| 8 | [如何與無頭應用程式一起上線](go-live.md) | 瞭解如何即時部署應用程式並將您的本機程式碼以Git格式移至Cloud Manager Git for CI/CD管道。 |
+| 9 | [貼文啟動](post-launch.md) | 瞭解如何維持您的無頭體驗。 |
+| 10 | [可選——如何使用](create-spa.md) | 瞭解無頭功AEM能後，請探索如何結合無頭和無頭傳送，並瞭解如何使用編輯器架構來SPA建AEM立可編SPA輯的內容。 |
