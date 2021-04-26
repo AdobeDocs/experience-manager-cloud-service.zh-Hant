@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >正在進行中的工作——本檔案的建立工作正在進行中，不應將其理解為完整或明確，也不應將其用於生產目的。
 
-在[AEM Headless Developer Journey（無頭開發人員歷程）中，您將瞭解實作您第一次無頭體驗（包括規劃考量）的步驟，並學習最佳實務，讓您的路徑盡可能順暢。](#overview.md)
+在[AEM Headless Developer Journey（無頭開發人員歷程）中，您將瞭解實作您第一次無頭體驗（包括規劃考量）的步驟，並學習最佳實務，讓您的路徑盡可能順暢。](overview.md)
 
 ## 到目前為止的故事{#story-so-far}
 
