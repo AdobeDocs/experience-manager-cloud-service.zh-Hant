@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 >
 >正在進行中的工作——本檔案的建立工作正在進行中，不應將其理解為完整或明確，也不應將其用於生產目的。
 
-在[無頭開發人AEM員歷程的這部分，](#overview.md)瞭解如何使用GraphQL查詢存取您的內容片段。
+在[無頭開發人AEM員歷程的這部分，](overview.md)瞭解如何使用GraphQL查詢存取您的內容片段。
 
 ## 到目前為止的故事{#story-so-far}
 
