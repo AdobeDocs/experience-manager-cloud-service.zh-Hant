@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 5fd190b50f52a3182365a31e1539c5864f42afb4
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1671'
 ht-degree: 1%
 
 ---
@@ -241,6 +241,7 @@ tbc...
 
 ## 其他資源 {#additional-resources}
 
+* [開始使用無AEM頭功能](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) -簡短的教學課程系列影片，概述如何使用無頭功AEM能，包括資料建模和GraphQL
 * [使用內容片段](/help/assets/content-fragments/content-fragments.md) -內容片段的引入頁面
    * [配置瀏覽器中的內容片段](/help/assets/content-fragments/content-fragments-configuration-browser.md) -在配置瀏覽器中啟用內容片段功能
    * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md) -建立和編輯內容片段模型
