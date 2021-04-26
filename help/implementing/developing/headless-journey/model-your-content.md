@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >正在進行中的工作——本檔案的建立工作正在進行中，不應將其理解為完整或明確，也不應將其用於生產目的。
 
-在[無頭開發人AEM員旅程](#overview.md)的這部分，您可以學習如何對內容結構建模。 然後，瞭解Adobe Experience Manager(AEM)使用內容片段模型和內容片段的結構，以便跨通道重複使用。
+在[無頭開發人AEM員旅程](overview.md)的這部分，您可以學習如何對內容結構建模。 然後，瞭解Adobe Experience Manager(AEM)使用內容片段模型和內容片段的結構，以便跨通道重複使用。
 
 ## 到目前為止的故事{#story-so-far}
 
