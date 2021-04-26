@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >正在進行中的工作——本檔案的建立工作正在進行中，不應將其理解為完整或明確，也不應將其用於生產目的。
 
-在[無頭開發人AEM員旅程的這部分，](#overview.md)瞭解無頭技術以及您使用它的原因。
+在[無頭開發人AEM員旅程的這部分，](overview.md)瞭解無頭技術以及您使用它的原因。
 
 ## 目標 {#objective}
 
