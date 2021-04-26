@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 >
 >正在進行中的工作——本檔案的建立工作正在進行中，不應將其理解為完整或明確，也不應將其用於生產目的。
 
-在[AEM Headless Developer Journey的這部分，](#overview.md)瞭解如何讓您的專案（包括內容片段）、您的GraphQL呼叫、您的REST API呼叫和您的應用程式)做好上線準備。
+在[AEM Headless Developer Journey的這部分，](overview.md)瞭解如何讓您的專案（包括內容片段）、您的GraphQL呼叫、您的REST API呼叫和您的應用程式)做好上線準備。
 
 ## 到目前為止的故事{#story-so-far}
 
