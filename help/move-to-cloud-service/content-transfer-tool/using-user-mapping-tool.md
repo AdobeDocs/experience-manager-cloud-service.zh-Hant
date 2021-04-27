@@ -1,18 +1,26 @@
 ---
 title: 使用用戶映射工具
 description: 使用用戶映射工具
+exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
 translation-type: tm+mt
-source-git-commit: 7c7ae680932849cf2ed0be3dc10618d55acc8366
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1185'
 ht-degree: 3%
 
 ---
 
-
 # 使用用戶映射工具{#user-mapping-tool}
 
 ## 概覽 {#overview}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_usermapping"
+>title="使用者對應工具"
+>abstract="內容傳輸工具可協助您將使用者和群組從現有系統移AEM動至AEMCloud Service。 現有的使用者和群組必須對應至其IMS ID，以避免在Cloud Service作者例項上出現重複的使用者和群組。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="使用用戶映射工具的重要注意事項"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="使用用戶映射工具"
+
 
 在將使用者和群組從現有系統移AEM至Adobe Experience Manager()做為Cloud Service的過渡歷程中，您需要將使用者AEM和群組移AEM至Cloud Service。 這是由內容傳輸工具完成。
 
@@ -102,4 +110,3 @@ Cloud Service的主AEM要變更是完全整合使用AdobeID來存取作者層。
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. 要運行提取階段，請參閱[運行內容傳輸工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool)。
-
