@@ -1,18 +1,24 @@
 ---
 title: 使用內容轉移工具
 description: 使用內容轉移工具
+exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: 23943db6fbdf82a1d1be47e5a8777064b3750a95
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '2307'
-ht-degree: 51%
+source-wordcount: '2685'
+ht-degree: 47%
 
 ---
-
 
 # 使用內容轉移工具 {#using-content-transfer-tool}
 
 ## 使用內容轉移工具的重要考量 {#pre-reqs}
+
+>id=&quot;aemcloud_ctt_prereqs&quot;
+>title=&quot;使用內容傳輸工具的重要考量&quot;
+>abstract=&quot;請檢閱使用內容傳輸工具的重要考量事項，包括Java和AEM版本、支援的資料儲存類型、使用者群組考量事項等。&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices&quot; text=&quot;最佳實務與准則&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability&quot; text=&quot;Download Content Transfer Tool&quot;
 
 請跟隨以下章節，了解執行「內容轉移工具」時的重要考量：
 
@@ -49,12 +55,26 @@ ht-degree: 51%
 
 ## 可用性 {#availability}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_download"
+>title="下載"
+>abstract="內容傳輸工具可從軟體散發入口網站下載為zip檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。請確定下載最新版本。"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="發行說明"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="軟體散發入口網站"
+
 內容傳輸工具可從軟體散發入口網站下載為zip檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。請確定下載最新版本。 有關最新版本的詳細資訊，請參閱[發行說明](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)。
 
 >[!NOTE]
 >從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)入口網站下載內容轉移工具。
 
 ## 執行「內容轉移工具」 {#running-tool}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_demo"
+>title="執行內容傳輸工具"
+>abstract="瞭解如何使用內容傳輸工具將內容移轉AEM為Cloud Service（作者／發佈）。"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" 請參閱示範"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="教學課程——使用內容傳輸工具"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
@@ -132,6 +152,13 @@ ht-degree: 51%
 
 ### 內容轉移中的提取程序 {#extraction-process}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_extraction"
+>title="內容擷取"
+>abstract="提取是指從源實例中提取內AEM容到稱為遷移集的臨時區域。 移轉集是 Adobe 提供的雲端儲存空間，可供暫時儲存在來源 AEM 例項與雲端服務 AEM 例項間轉移的內容。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="擷取程式"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="向上提取"
+
 請依照下列步驟，從「內容轉移工具」中提取您的移轉集：
 
 1. 從&#x200B;*「綜覽」*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**提取**&#x200B;即可開始提取。將顯示&#x200B;**遷移集抽取**&#x200B;對話框，然後按一下&#x200B;**抽取**&#x200B;以啟動抽取階段。
@@ -173,6 +200,13 @@ ht-degree: 51%
 
 ### 內容轉移中的擷取程序 {#ingestion-process}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion"
+>title="內容擷取"
+>abstract="擷取是指將內容從&#x200B;*移轉集*&#x200B;擷取至目標Cloud Service例項。 「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="提取過程"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="追加擷取"
+
 請依照下列步驟，從「內容轉移工具」中擷取您的移轉集：
 
 1. 從&#x200B;*綜覽*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**擷取**&#x200B;即可開始擷取。**移轉集擷取**&#x200B;對話框隨即顯示。按一下&#x200B;**Ingest**&#x200B;以開始接收階段。 您可以同時將內容擷取至「製作」和「發佈」。
@@ -207,6 +241,13 @@ ht-degree: 51%
 
 
 ### 檢視移轉集記錄 {#viewing-logs-migration-set}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_logs"
+>title="查看日誌"
+>abstract="擷取擷取完成後，檢查記錄檔是否有任何錯誤／警告。 任何錯誤都應立即解決，方法是處理所報告的問題，或聯絡Adobe支援。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#troubleshooting" text="疑難排解"
+>additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="聯絡Adobe支援"
 
 完成每個步驟（擷取和擷取）後，請檢查記錄並尋找錯誤。  任何錯誤都應立即解決，方法是處理所報告的問題，或聯絡Adobe支援。
 
@@ -276,5 +317,3 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 身為使用者，您可能會在「內容轉移工具」的使用者介面 (UI) 中看到下列行為變更：
 
 * 「內容轉移工具」UI 中的圖示可能與本指南中顯示的螢幕擷圖不同，也可能完全不顯示 (取決於來源 AEM 例項的版本)。
-
-
