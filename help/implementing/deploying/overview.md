@@ -1,12 +1,12 @@
 ---
 title: '部署至 AEM as a Cloud Service '
 description: '部署至 AEM as a Cloud Service  '
-feature: Deploying
+feature: 部署
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '3266'
+source-wordcount: '3334'
 ht-degree: 1%
 
 ---
@@ -163,6 +163,12 @@ ht-degree: 1%
 above appears to be internal, to confirm with Brian -->
 
 ### 可變內容包的包管理器{#package-manager-oneoffs-for-mutable-content-packages}的「一次性」
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_packagemanager"
+>title="包管理器——遷移可變內容包"
+>abstract="探索套件管理員的使用情形，瞭解應將內容套件安裝為「一次性」的使用情形，包括將特定內容從生產環境匯入到測試環境，以除錯生產問題、將小型內容套件從內部部署環境傳輸至AEMCloud環境等。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="內容轉移工具"
 
 有些使用案例會將內容套件安裝為「一次性」。 例如，將特定內容從生產導入到測試階段，以除錯生產問題。 對於這些情況，可將包管理器用作AEMCloud Service環境。
 
