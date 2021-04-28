@@ -1,16 +1,16 @@
 ---
 title: 智慧標籤您的視訊資產
 description: Experience Manager會使用 [!DNL Adobe Sensei]自動將內容相關和描述性的智慧型標籤加入影片。
-feature: Smart Tags,Tagging
+feature: 智慧標籤，標籤
 role: Administrator,Business Practitioner
+exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
-
 
 # 智慧標籤您的視訊資產{#video-smart-tags}
 
@@ -64,7 +64,7 @@ DAM中現有的視訊資產不會自動加上智慧標籤。 您需要手動[!UI
 
 搜尋結果會根據您指定的標籤顯示視訊資產。
 
-您的搜尋結果是中繼資料中視訊資產與搜尋關鍵字的組合，以及以搜尋關鍵字智慧標籤的視訊資產。 但是，會先顯示符合中繼資料欄位中所有搜尋詞的搜尋結果，接著顯示符合智慧標籤中任何搜尋詞的搜尋結果。 如需詳細資訊，請參閱[瞭解 [!DNL Experience Manager] 含智慧型標籤的搜尋結果](smart-tags.md#understandsearch)。
+您的搜尋結果是中繼資料中視訊資產與搜尋關鍵字的組合，以及以搜尋關鍵字智慧標籤的視訊資產。 但是，會先顯示符合中繼資料欄位中所有搜尋詞的搜尋結果，接著顯示符合智慧標籤中任何搜尋詞的搜尋結果。 如需詳細資訊，請參閱[瞭解 [!DNL Experience Manager] 含智慧型標籤的搜尋結果](smart-tags.md#understand-search)。
 
 ## 協調視訊智慧標籤{#moderate-video-smart-tags}
 
@@ -106,7 +106,7 @@ DAM中現有的視訊資產不會自動加上智慧標籤。 您需要手動[!UI
 
 ## 信賴分數{#confidence-score-video-tag}
 
-[!DNL Adobe Experience Manager] 套用物件和動作智慧標籤的最小信賴臨界值，以避免每個視訊資產的標籤過多，進而降低索引速度。您的資產搜尋結果會根據信賴分數進行排名，這通常會改善搜尋結果，超出任何視訊資產的指派標籤檢查所暗示的程度。 不正確的標籤通常會有低可信度分數，因此很少出現在資產的「智慧標籤」清單頂端。
+[!DNL Adobe Experience Manager] 套用物件和動作智慧標籤的最小信賴臨界值，以避免每個視訊資產的標籤過多，進而降低索引速度。您的資產搜尋結果會根據信賴分數進行排名，這通常會改善搜尋結果，超出任何視訊資產的指派標籤檢查所暗示的程度。 不正確的標籤通常會有低可信度分數，因此很少會出現在資產的「智慧標籤」清單頂端。
 
 [!DNL Adobe Experience Manager]中動作和物件標籤的預設臨界值為0.7（值應介於0和1之間）。 如果某些視訊資產未由特定標籤標籤，則表示演算法對預測標籤的信心低於70%。 預設臨界值不一定對所有使用者都是最佳值。 因此，您可以變更OSGI設定中的信賴分數值。
 
