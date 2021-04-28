@@ -1,13 +1,14 @@
 ---
-title: 使用AI產生的標籤自動標籤資產
-description: 使用人工智慧服務來標籤資產，使用 [!DNL Adobe Sensei] 服務套用情境式和描述性商業標籤。
+title: 使用 [!DNL Adobe Sensei] smart服務自動標籤資產
+description: 使用人工智慧型服務來標籤資產，該服務會套用情境式和描述性的商業標籤。
 contentOwner: AG
-feature: Smart Tags,Tagging
+feature: 智慧標籤，標籤
 role: Administrator,Business Practitioner
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2709'
 ht-degree: 6%
 
 ---
@@ -19,21 +20,19 @@ ht-degree: 6%
 
 與自然語言辭彙相比，基於業務分類法的標籤有助於使資產與公司的業務保持一致，並確保最相關的資產出現在搜索中。 例如，汽車製造商可以使用型號名稱來標籤汽車影像，以便在搜尋以設計促銷活動時只顯示相關影像。
 
-在背景中，該功能使用人為智慧的[Adobe Sensei](https://www.adobe.com/tw/sensei/experience-cloud-artificial-intelligence.html)框架，在標籤結構和業務分類上訓練其影像識別算法。 然後，此內容智慧會用來將相關標籤套用至不同的資產集。
+在背景中，該功能使用人為智慧的[Adobe Sensei](https://www.adobe.com/tw/sensei/experience-cloud-artificial-intelligence.html)框架，在標籤結構和業務分類上訓練其影像識別算法。 然後，此內容智慧會用來將相關標籤套用至不同的資產集。 預設情況下，新的[!DNL Experience Manager Assets]部署與[!DNL Adobe Developer Console]整合。 它可協助您更快速地設定智慧標籤功能。 在舊版部署中，管理員可以手動[設定智慧標籤整合](/help/assets/smart-tags-configuration.md#aio-integration)。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-您可以標籤下列資產類型：
-
-* **影像**:使用Adobe Sensei的智慧型內容服務，標籤許多格式的影像。您[建立訓練模型](#train-model)，然後[將智慧標籤](#tag-assets)套用至影像。
-* **視訊資產**:視訊標籤預設會以 [!DNL Adobe Experience Manager] a的形式啟用 [!DNL Cloud Service]。[當您上傳新視訊或](/help/assets/smart-tags-video-assets.md) 重新處理現有視訊時，視訊會自動標籤。
-* **文字型資產**: [!DNL Experience Manager Assets] 在上傳時自動標籤支援的文字型資產。進一步瞭解[標籤文字型資產](#smart-tag-text-based-assets)。
-
 ## 支援的資產類型{#smart-tags-supported-file-formats}
 
-智慧型標籤會套用至支援的檔案類型，這些檔案類型會產生JPG和PNG格式的轉譯。 下列資產類型支援此功能：
+您可以標籤下列資產類型：
+
+* **影像**:使用Adobe Sensei的智慧型內容服務，標籤許多格式的影像。您[建立訓練模型](#train-model)，然後[將智慧標籤](#tag-assets)套用至影像。 智慧型標籤會套用至支援的檔案類型，這些檔案類型會產生JPG和PNG格式的轉譯。
+* **文字型資產**: [!DNL Experience Manager Assets] 在上傳時自動標籤支援的文字型資產。進一步瞭解[標籤文字型資產](#smart-tag-text-based-assets)。
+* **視訊資產**:視訊標籤預設會以 [!DNL Adobe Experience Manager] a的形式啟用 [!DNL Cloud Service]。[當您上傳新視訊或](/help/assets/smart-tags-video-assets.md) 重新處理現有視訊時，視訊會自動標籤。
 
 | 影像（MIME類型） | 文字型資產（檔案格式） | 視訊資產（檔案格式和轉碼器） |
 |----|-----|------|
@@ -58,15 +57,10 @@ ht-degree: 6%
 
 [!DNL Experience Manager] 依預設，自動將智慧型標籤新增至文字型資產和視訊。若要自動將智慧型標籤新增至影像，請完成下列工作。
 
-* [ [!DNL Adobe Experience Manager] 使用 Adobe 開發人員控制台進行整合](#integrate-aem-with-aio).
 * [瞭解標籤模型和准則](#understand-tag-models-guidelines)。
 * [訓練模型](#train-model)。
 * [標籤您的數位資產](#tag-assets)。
 * [管理標籤和搜尋](#manage-smart-tags-and-searches)。
-
->[!TIP]
->
->智慧型標籤僅適用於[!DNL Adobe Experience Manager Assets]客戶。 智慧型標籤可作為[!DNL Experience Manager]的附加元件購買。
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -75,14 +69,6 @@ ht-degree: 6%
 上傳時，支援的文字型資產會由[!DNL Experience Manager Assets]自動標籤。 預設會啟用。 智慧型標籤的效能不取決於資產中的文字數量，而取決於資產文字中顯示的相關關鍵字或實體。 對於文字型資產，智慧型標籤是顯示在文字中的關鍵字，但是最能說明資產的關鍵字。 對於受支援的資產，[!DNL Experience Manager]已擷取文字，接著會建立索引並用來搜尋資產。 不過，文字中以關鍵字為基礎的智慧型標籤提供專用、結構化和較高優先順序的搜尋Facet，與完整搜尋索引相比，可用來改善資產搜尋。
 
 相較之下，對於影像和視訊，智慧型標籤是根據某些視覺方面衍生而來。
-
-## 將[!DNL Experience Manager]與Adobe開發人員主控台{#integrate-aem-with-aio}整合
-
->[!IMPORTANT]
->
->預設情況下，新的[!DNL Experience Manager Assets]部署與[!DNL Adobe Developer Console]整合。 它可協助您更快速地設定智慧標籤功能。 在舊版部署中，管理員可以手動[設定智慧標籤整合](/help/assets/smart-tags-configuration.md#aio-integration)。
-
-您可以使用[!DNL Adobe Developer Console]將[!DNL Adobe Experience Manager]與「智慧標籤」整合。 使用此配置可從[!DNL Experience Manager]中訪問「智慧標籤」服務。 請參閱[configure [!DNL Experience Manager] 以標籤資產](smart-tags-configuration.md)，以取得設定智慧標籤的工作。 在後端，[!DNL Experience Manager]伺服器會先使用Adobe開發人員主控台閘道驗證您的服務認證，再將您的要求轉送至智慧標籤服務。
 
 ## 瞭解標籤模型和准則{#understand-tag-models-guidelines}
 
@@ -155,7 +141,7 @@ ht-degree: 6%
 
 若要檢查智慧型標籤服務是否在訓練資產集中的標籤上接受訓練，請從報告主控台檢視訓練工作流程報告。
 
-1. 在[!DNL Experience Manager]介面中，前往「**[!UICONTROL 工具] > **[!UICONTROL 資產] > **[!UICONTROL 報表]**」。
+1. 在[!DNL Experience Manager]介面中，移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 報表]**。
 1. 在&#x200B;**[!UICONTROL 資產報表]**&#x200B;頁面中，按一下&#x200B;**[!UICONTROL 建立]**。
 1. 選擇&#x200B;**[!UICONTROL 智慧型標籤訓練]**&#x200B;報表，然後從工具列按一下&#x200B;**[!UICONTROL Next]**。
 1. 指定報表的標題和說明。在「 **[!UICONTROL 排程報表]**」下，保 **[!UICONTROL 留「現在]** 」選項。如果您想要排程報表以供稍後使用，請選 **[!UICONTROL 取]** 「稍後」並指定日期和時間。然後，從工具列按一下「建立」。****
@@ -165,7 +151,7 @@ ht-degree: 6%
 
 ## 標籤資產{#tag-assets}
 
-在您培訓了「智慧標籤」服務後，可以觸發標籤工作流程，以便自動在不同的類似資產集上套用適當的標籤。 您可以定期或視需要套用標籤工作流程。 標籤工作流程同時套用至資產和資料夾。
+在您培訓了「智慧標籤」服務後，可以觸發標籤工作流程，以自動套用標籤至不同的資產集。 您可以隨選套用標籤工作流程，或排程它定期執行。 標籤工作流程同時套用至資產和資料夾。
 
 ### 從工作流程控制台{#tagging-assets-from-the-workflow-console}標籤資產
 
@@ -224,7 +210,7 @@ ht-degree: 6%
 
 1. 導覽至資產的[!UICONTROL 屬性]頁面。 請注意，您促銷的標籤已指派高關聯性，因此在搜尋結果中會顯示高度。
 
-### 使用AEM智慧型標籤{#understandsearch}瞭解搜尋結果
+### 使用AEM智慧型標籤{#understand-search}瞭解搜尋結果
 
 依預設，AEM搜尋會將搜尋詞與`AND`子句結合。 使用智慧型標籤不會變更此預設行為。 使用智慧型標籤會新增`OR`子句，以尋找套用智慧型標籤中的任何搜尋詞。 例如，請考慮搜索`woman running`。 預設情況下，中繼資料中只包含`woman`或`running`關鍵字的資產不會出現在搜尋結果中。 但是，使用智慧標籤標籤以`woman`或`running`標籤的資產會出現在此類搜尋查詢中。 所以搜索結果是，
 
