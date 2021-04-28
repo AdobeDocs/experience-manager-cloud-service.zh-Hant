@@ -1,13 +1,13 @@
 ---
 title: 建立和同步即時副本
 description: 瞭解如何建立和同步即時副本，以便在您的網站上重複使用您的內容。
-feature: Multi Site Manager
+feature: 多站點管理員
 role: Administrator
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
+source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4277'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,15 @@ Blueprint設定可識別您要用作一或多個即時副本頁面來源的現�
 
 當您的Blueprint設定被使用時，您可將它與轉出設定建立關聯，此設定可決定來源/Blueprint的即時副本同步化方式。 請參閱[指定要使用的轉出配置](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)。
 
-### 建立Blueprint配置{#creating-a-blueprint-configuration}
+### 建立和編輯Blueprint配置{#creating-editing-blueprint-configurations}
+
+Blueprint組態會視為不可變的資料，因此在執行時期無法編輯。 因此，任何組態變更都必須透過Git使用CI/CD管道進行部署。
+
+如需詳細資訊，請參閱[文章「Adobe Experience Manager(AEM)的Cloud Service顯著變更」。](/help/release-notes/aem-cloud-changes.md)
+
+以下步驟僅供本地開發實例的管理員用於測試和開發。 這些選項不適用於任何AEMaaCS雲端例項。
+
+#### 在本地建立Blueprint配置{#creating-a-blueprint-configuration}
 
 要建立Blueprint配置：
 
@@ -61,7 +69,7 @@ Blueprint設定可識別您要用作一或多個即時副本頁面來源的現�
 
 1. **Create將** 根據您的規格建立藍圖設定。
 
-### 編輯或刪除Blueprint配置{#editing-or-deleting-a-blueprint-configuration}
+### 在本機編輯或刪除Blueprint配置{#editing-or-deleting-a-blueprint-configuration}
 
 您可以編輯或刪除現有的Blueprint設定：
 
