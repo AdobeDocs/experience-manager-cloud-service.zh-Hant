@@ -1,40 +1,40 @@
 ---
-title: Adobe Content Package Maven Plugin
-description: 使用Content Package Maven增效模組來部署AEM應用程式
+title: Adobe內容套件Maven外掛程式
+description: 使用Content Package Maven增效模組來部署應用AEM程式
+exl-id: d631d6df-7507-4752-862b-9094af9759a0
 translation-type: tm+mt
-source-git-commit: 2cdbbe9b8f6608cbdd299889be515d421e3d9ad3
+source-git-commit: 03b2237dfde6ec605d8dcd8789ec4f2aa67716ca
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 5%
+source-wordcount: '1855'
+ht-degree: 7%
 
 ---
 
+# Adobe內容包Maven Plugin {#adobe-content-package-maven-plugin}
 
-# Adobe Content Package Maven Plugin {#adobe-content-package-maven-plugin}
+使用Adobe內容套件Maven增效模組，將套件部署與管理工作整合到您的Maven專案中。
 
-使用Adobe Content Package Maven增效模組，將套件部署與管理工作整合至您的Maven專案。
-
-將已建構的封裝部署至AEM是由Adobe Content Package Maven增效模組執行，並可自動執行通常使用AEM Package Manager執行的工作：
+將構建的包部署到AEM的Adobe內容包Maven插件執行，並啟用通常使用包管理器執行的AEM任務自動化：
 
 * 從檔案系統中的檔案建立新包。
-* 在AEM上安裝和解除安裝套件。
-* 建立已在AEM上定義的套件。
-* 取得AEM上安裝的套件清單。
-* 從AEM移除套件。
+* 在上安裝和卸載包AEM。
+* 生成已在上定義的包AEM。
+* 獲取安裝在上的軟體包清單AEM。
+* 從中刪除包AEM。
 
-本檔案詳細說明如何使用Maven來管理這些工作。 但是，請務必瞭解[AEM專案及其套件的結構。](#aem-project-structure)
+本檔案詳細說明如何使用Maven來管理這些工作。 但是，瞭解[項目及其包的結AEM構方式也很重要。](#aem-project-structure)
 
 >[!NOTE]
 >
->軟體包建立現在由[Apache Jackrabbit FileVault Package Maven plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/)擁有。 將已建構的封裝部署至AEM是由Adobe Content Package Maven外掛程式執行，如此處所述。
+>軟體包建立現在由[Apache Jackrabbit FileVault Package Maven plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/)擁有。 將構建的包部署到AEM的Adobe內容包Maven插件由此處所述執行。
 
-## 套件和AEM Project Structure {#aem-project-structure}
+## 包和AEM項目結構{#aem-project-structure}
 
-AEM 6.5遵循封裝管理和專案結構的最新最佳實務，由最新的AEM Project Archetype實作，適用於內部和AMS實作。
+作AEM為Cloud Service，遵守最新「專案原型」所實施之套件管理和專案架構的最AEM新最佳實務。
 
 >[!TIP]
 >
->如需詳細資訊，請參閱AEM中的[AEM Project Structure](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章，作為雲端服務檔案，以及[AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)檔案。 這兩者都完全支援AEM 6.5。
+>如需詳細資訊，請參閱[AEM](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)中的專案結構文AEM章，以及[ AEM Project Archetype](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/archetype/overview.html)檔案。 兩者均完全支援AEM6.5版。
 
 ## 取得Content Package Maven Plugin {#obtaining-the-content-package-maven-plugin}
 
@@ -79,7 +79,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ### Proxy {#proxies}
 
-使用AEM之Proxy的目標會使用Maven設定中找到的第一個有效的Proxy設定。 如果未找到代理配置，則不使用代理。 請參閱[Common Parameters](#common-parameters)部分中的`useProxy`參數。
+使用Proxy來使用Maven設AEM定中找到的第一個有效Proxy設定的目標。 如果未找到代理配置，則不使用代理。 請參閱[Common Parameters](#common-parameters)部分中的`useProxy`參數。
 
 ### 常見參數{#common-parameters}
 
@@ -89,17 +89,17 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 |---|---|---|---|---|---|
 | `failOnError` | `boolean` | 否 | `false` | 值`true`會在發生錯誤時導致組建失敗。 值`false`會使構建版本忽略錯誤。 | 除`package`以外的所有目標 |
 | `name` | `String` | `build`:是的，  `install`:不，  `rm`:是 | `build`:無預設值，  `install`:Maven項目 `artifactId` 的屬性 | 要執行操作的包的名稱 | 除`ls`以外的所有目標 |
-| `password` | `String` | 是 | `admin` | 用於AEM驗證的密碼 | 除`package`以外的所有目標 |
+| `password` | `String` | 是 | `admin` | 用於驗證的密碼AEM | 除`package`以外的所有目標 |
 | `serverId` | `String` | 否 | 要從中檢索用戶名和口令以進行驗證的伺服器ID | 除`package`以外的所有目標 |
-| `targetURL` | `String` | 是 | `http://localhost:4502/crx/packmgr/service.jsp` | AEM套件管理員的HTTP服務API URL | 除`package`以外的所有目標 |
+| `targetURL` | `String` | 是 | `http://localhost:4502/crx/packmgr/service.jsp` | 套件管理員的HTTP服務APIAEM URL | 除`package`以外的所有目標 |
 | `timeout` | `int` | 否 | `5` | 與包管理器服務通信的連接超時（以秒為單位） | 除`package`以外的所有目標 |
 | `useProxy` | `boolean` | 否 | `true` | 值`true`使Maven使用找到的第一個活動代理配置，以便將請求代理到包管理器。 | 除`package`以外的所有目標 |
-| `userId` | `String` | 是 | `admin` | 要向AEM驗證的使用者名稱 | 除`package`以外的所有目標 |
+| `userId` | `String` | 是 | `admin` | 要驗證的用戶名AEM | 除`package`以外的所有目標 |
 | `verbose` | `boolean` | 否 | `false` | 啟用或停用詳細記錄 | 除`package`以外的所有目標 |
 
 ### 組建{#build}
 
-建立已在AEM例項上定義的內容套件。
+建立已在例項上定義的內容AEM套件。
 
 >[!NOTE]
 >
@@ -223,14 +223,14 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 |---|---|---|---|---|
 | `detail` | `boolean` | 否 | `false` | 確定是否顯示每個目標的所有可設定屬性 |
 | `goal` | `String` | 否 | 無 | 此參數定義要顯示幫助的目標名稱。 如果未指定任何值，則會顯示所有目標的說明。 |
-| `indentSize` | `int` | 否 | `2` | 用於每個級別縮排的空格數（如果已定義，則必須為正） |
+| `indentSize` | `int` | 否 | `2` | 用於每個級別縮進的空格數（如果已定義，則必須為正） |
 | `lineLength` | `int` | 否 | `80` | 顯示線的最大長度（如果已定義，則必須為正） |
 
 ## 在包{#including-a-thumbnail-image-or-properties-file-in-the-package}中包括縮圖影像或屬性檔案
 
 替換預設包配置檔案以自定義包屬性。 例如，在「套件管理員」和「套件共用」中加入縮圖影像以區分套件。
 
-源檔案可以位於檔案系統中的任意位置。 在POM檔案中，定義構建資源，將源檔案複製到`target/vault-work/META-INF`中，以便包含在包中。
+源檔案可以位於檔案系統中的任意位置。 在POM檔案中，定義構建資源，將源檔案複製到`target/vault-work/META-INF`，以便包含在包中。
 
 以下POM代碼將項目源的`META-INF`資料夾中的檔案添加到包中：
 
@@ -260,10 +260,10 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 </build>
 ```
 
-## 使用AEM Project Archetype產生AEM Projects {#using-archetypes}
+## 使用AEM項目原型生成AEM項目{#using-archetypes}
 
-最新的AEM Project Archetype會針對內部實作和AMS實作實作實作最佳實作套件結構，而且建議用於所有AEM專案。
+最新的AEMProject Archetype為內部實施和AMS實施實施最佳實務套件結構，並建議用於所有項AEM目。
 
 >[!TIP]
 >
->如需詳細資訊，請參閱AEM中的[AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章，作為雲端服務檔案，以及[AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)檔案。 這兩者都完全支援AEM 6.5。
+>如需詳細資訊，請參閱[AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)中的專案結構文AEM章，以及[ AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)檔案。 兩者均完全支援AEM6.5版。
