@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 translation-type: tm+mt
-source-git-commit: 460cefde9a203b4237aedf01b01e026d37eadfe6
+source-git-commit: 75071cb1793b9b670ebbc029bf9fb41f4de119f9
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 95%
+source-wordcount: '2009'
+ht-degree: 92%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 95%
 * AEM as a Cloud Service 包含適用於 AEM 例項和 Adobe 身分管理系統 (簡稱 IMS) 驗證的 Admin Console 支援。
 * Admin Console 可讓管理員集中管理所有 Experience Cloud 使用者。
 * 管理員可將使用者和群組指派給與 AEM as a Cloud Service 例項相關聯的產品設定檔，讓他們能登入該例項。
+
+>[!TIP]
+>
+>請參閱我們的Experience League課程[為管理員設定存取權&lt;a1/AEM>，以瞭解使用者如何使用AdobeIMS驗證為Cloud Service，以及如何使用AdobeIMS使用者、使用者群組和產品設定檔來控制存取AEM及其功能。 ](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)Adobe ID需要。
 
 ## 重要焦點 {#key-highlights}
 
