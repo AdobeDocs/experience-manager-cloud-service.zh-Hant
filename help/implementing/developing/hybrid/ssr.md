@@ -1,14 +1,14 @@
 ---
 title: 和SPA伺服器端演算
 description: 在您的伺服器端演算(SSR)SPA中，可加速頁面的初始載入，然後將進一步演算傳遞至用戶端。
+exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 translation-type: tm+mt
-source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
+source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
-
 
 # 和SPA伺服器端演算{#spa-and-server-side-rendering}
 
@@ -45,7 +45,9 @@ SSR通常在以下任一問題有明確的「是」時提供一些值：
 
 >[!NOTE]
 >
->Adobe建議針對每個環境(作AEM者、發佈、舞台等)建立個別的Adobe I/O Runtime例項。
+>Adobe建議每個環境（舞台、prod、測試等）使用單獨的Adobe I/O Runtime工作區。 這允許典型的系統開發生命週期(SDLC)模式，將不同版本的單個應用程式部署到不同的環境中。 如需詳細資訊，請參閱[專案Firefly應用程式的CI/CD檔案](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md)。
+>
+>每個例項（作者、發佈）不需要個別的工作區，除非每個例項類型的執行時期實作有所差異。
 
 ## 遠程渲染器配置{#remote-content-renderer-configuration}
 
