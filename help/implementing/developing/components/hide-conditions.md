@@ -1,14 +1,14 @@
 ---
 title: 使用隱藏條件
 description: 隱藏條件可用於確定是否渲染元件資源。
+exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: fa3280defb2a97954c5ab1b70e7600382e370606
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 1%
 
 ---
-
 
 # 使用隱藏條件{#using-hide-conditions}
 
@@ -50,7 +50,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 ## 範例 {#example}
 
-您可在AEM中找到隱藏條件的範例，尤其是[核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)。 例如，請考慮[清單核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html)，如[WKND教學課程中所實作。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+隱藏條件的範例可AEM以在整個中找到，尤其是[核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)。 例如，請考慮[清單核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html)，如[WKND教學課程中所實作。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
 [使用範本編輯器](/help/sites-cloud/authoring/features/templates.md)，範本作者可在設計對話方塊中定義頁面作者可使用的清單元件選項。例如是否允許清單為靜態清單、子頁清單、標籤頁清單等。 可以啟用或停用。
 
@@ -72,7 +72,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
    ![隱藏條件的評估](assets/hide-conditions-evaluation.png)
 
-1. 從設計配置提取`disableChildren`的值，表達式`${cdDesign.disableChildren}`的求值為`false`，這表示該選項不會作為元件的一部分呈現。
+1. 從設計配置提取`disableChildren`的值，表達式`${cqDesign.disableChildren}`的求值為`false`，這表示該選項不會作為元件的一部分呈現。
 
 1. 當使用清單元件時，頁面作者不再呈現選項&#x200B;**子頁面**。
 
