@@ -1,15 +1,15 @@
 ---
 title: 將Adobe Experience Manager的OSGi配置為Cloud Service
 description: '具有機密值和環境特定值的OSGi配置 '
-feature: Deploying
+feature: 部署
+exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 translation-type: tm+mt
-source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
+source-git-commit: 7baacc953c88e1beb13be9878b635b6e5273dea2
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
-
 
 # 將Adobe Experience Manager的OSGi配置為Cloud Service{#configuring-osgi-for-aem-as-a-cloud-service}
 
@@ -159,7 +159,7 @@ SDK Quickstart AEM Jar的Web AEM Console可用來設定OSGi元件，並將OSGi�
 1. 視需要透過Web UI編輯OSGi組態屬性值
 1. 將永久性身分(PID)記錄到安全位置。 稍後會用來產生OSGi設定JSON
 1. 點選「儲存」
-1. 導覽至「OSGi > OSGi Installer Configuration Printer」
+1. 導覽至「OSGi > OSGi安裝程式設定印表機」
 1. 在步驟5中複製的PID中貼上，確保「序列化格式」已設為「OSGi Configurator JSON」
 1. 點選列印
 1. JSON格式的OSGi設定將顯示在「序列化設定屬性」區段中
@@ -219,6 +219,10 @@ use $[secret:SECRET_VAR_NAME]
 
 變數的值不得超過2048個字元。
 
+>[!NOTE]
+>
+>前置`INTERNAL_`的變數名稱由Adobe保留。 任何以此首碼開頭的客戶設定變數都將被忽略。
+
 ### 預設值 {#default-values}
 
 以下內容適用於特定環境和機密配置值。
@@ -252,7 +256,10 @@ export ENV_VAR_NAME=my_value
 如果OSGI屬性要求作者與發佈的值不同：
 
 * 必須使用單獨的`config.author`和`config.publish` OSGi資料夾，如[ Runmode Resolution部分](#runmode-resolution)中所述。
-* 應使用獨立變數名稱。 建議使用變數名稱相同的前置詞，例如`author_<variablename>`和`publish_<variablename>`
+* 建立獨立變數名有兩個選項應使用：
+   * 第一個選項，建議使用：在宣告為定義不同值的所有OSGI檔案夾（例如`config.author`和`config.publish`）中，請使用相同的變數名稱。 例如
+      `$[env:ENV_VAR_NAME;default=<value>]`，其中預設值與該層（作者或發佈）的預設值相對應。當透過[Cloud Manager API](#cloud-manager-api-format-for-setting-properties)或透過用戶端設定環境變數時，請使用[API參考檔案](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)中所述的「service」參數來區分各層。 &quot;service&quot;參數會將變數的值系結至適當的OSGI層。
+   * 第二個選項，即使用前置詞（如`author_<samevariablename>`和`publish_<samevariablename>`）聲明不同的變數
 
 ### 配置示例{#configuration-examples}
 
