@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
 translation-type: tm+mt
-source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
+source-git-commit: e8eb9d2c96d24601e50c48f6846a8c8bac8b0252
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ ht-degree: 0%
 
 ## 目標 {#objective}
 
+* 瞭解本端開發工作流程的適用范AEM圍
 * 安裝AEMSDK以取得本端開發執行階段，您可用來在
-* 瞭解您所需的開發工具
-* 在上線前先在本機測試您的程式碼和內容
+* 瞭解您在本機開發執行時期旁邊需要使用的開發工具
 
 ## 本機開發工作流程{#the-local-development-workflow}
 
