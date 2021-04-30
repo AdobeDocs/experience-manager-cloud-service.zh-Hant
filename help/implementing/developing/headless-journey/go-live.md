@@ -4,14 +4,14 @@ description: 在「無頭開發人AEM員歷程」的這部分，瞭解如何即�
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
-
 
 # 如何與您的無頭應用程式一起上線{#go-live}
 
@@ -63,6 +63,8 @@ ht-degree: 0%
 3. 設定快取和調整彈性
 
 ## 部署至生產{#deploy-to-production}
+
+在本機測試完所有程式碼和內容後，您現在可以開始使用進行生產部署AEM。
 
 ### 模型結構與GraphQL輸出{#structure-vs-output}
 
