@@ -3,9 +3,9 @@ title: 使用內容轉移工具
 description: 使用內容轉移工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: ca03de9095a5b85bd93edba93097356fbcd2e9c8
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2675'
 ht-degree: 47%
 
 ---
@@ -14,11 +14,12 @@ ht-degree: 47%
 
 ## 使用內容轉移工具的重要考量 {#pre-reqs}
 
->id=&quot;aemcloud_ctt_prereqs&quot;
->title=&quot;使用內容傳輸工具的重要考量&quot;
->abstract=&quot;請檢閱使用內容傳輸工具的重要考量事項，包括Java和AEM版本、支援的資料儲存類型、使用者群組考量事項等。&quot;
->additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices&quot; text=&quot;最佳實務與准則&quot;
->additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability&quot; text=&quot;Download Content Transfer Tool&quot;
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_prereqs"
+>title="使用內容傳輸工具的重要考量"
+>abstract="查看使用內容傳輸工具的重要考慮事項，包括Java和AEM版本、支援的資料儲存類型、用戶組考慮事項等。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="最佳實務與准則"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability" text="下載內容傳輸工具"
 
 請跟隨以下章節，了解執行「內容轉移工具」時的重要考量：
 
