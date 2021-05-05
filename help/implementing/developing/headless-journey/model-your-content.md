@@ -4,14 +4,14 @@ description: 在「無頭開發人AEM員歷程」的這部分，瞭解如何使�
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 1%
 
 ---
-
 
 # 如何建立內容的模型{#model-your-content}
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ## 資料建模{#data-modeling}
 
-*外面的世界很糟糕*。
+*外面的世界很糟*。
 
 也許，也許不是，但是它確實是一個大的&#x200B;***複雜的***&#x200B;世界，資料模型被用來定義一個非常（非常）小的子區段的簡化表示，使用特定目的所需的特定資訊。
 
@@ -241,10 +241,10 @@ tbc...
 
 ## 其他資源 {#additional-resources}
 
-* [開始使用無AEM頭功能](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) -簡短的教學課程系列影片，概述如何使用無頭功AEM能，包括資料建模和GraphQL
 * [使用內容片段](/help/assets/content-fragments/content-fragments.md) -內容片段的引入頁面
    * [配置瀏覽器中的內容片段](/help/assets/content-fragments/content-fragments-configuration-browser.md) -在配置瀏覽器中啟用內容片段功能
    * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md) -建立和編輯內容片段模型
    * [管理內容片段](/help/assets/content-fragments/content-fragments-managing.md) -建立和製作內容片段；此頁面將引導您進入其他詳細章節
 * [AEM GraphQL方案](/help/implementing/developing/headless-journey/access-your-content.md) - GraphQL如何實現模型
 * [範例內容片段結構](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [開始使用無AEM頭](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) -簡短的教學課程系列影片，概述如何使用無頭功AEM能，包括資料建模和GraphQL
