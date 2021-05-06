@@ -6,9 +6,9 @@ user-guide-description: 本指南提供 Experience Manager as a Cloud Service �
 feature: 發行資訊
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1916ff5f9cd6227e548d809c0cb1a584d76afb75
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '115'
 ht-degree: 100%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 100%
 + 發行說明 {#release-notes}
    + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021 {#2021}
+      + [2021.3.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
       + [2021.2.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
       + [2021.1.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
    + 2020 {#2020}
