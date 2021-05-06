@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說�
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 6e21c6ffe50d6c030873650e7dd26246dea76b59
+source-git-commit: 26bd32d88b04d107a24e5e601af6e01d309b8e0e
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -140,14 +140,53 @@ ht-degree: 2%
 
 * 類別頁面的頁面屬性中，根類別欄位未顯示在商務標籤下方
 
+
 ## Cloud Manager {#cloud-manager}
 
-本節將Cloud Manager發行說明概AEM述為Cloud Service2021.4.0。
+本節將以Cloud Service2021.5.0和AEM2021.4.0概述Cloud Manager的發行說明。
+
+### 發行日期 {#release-date-cm-may}
+
+Cloud Manager作為2021.5.0版Cloud ServiceAEM的發行日期為2021年5月6日。
+下一版預計於2021年6月03日推出。
+
+### 新功能 {#what-is-new-may}
+
+* PackageOverlaps品質規則現在會偵測在相同部署的套件集中，同一套件已部署多次（即在多個內嵌位置）的情況。
+
+* Public API中的儲存庫端點現在包含Git URL。
+
+* 由Cloud Manager用戶下載的部署日誌將更加深入，現在將包含有關失敗和成功案例的詳細資訊。
+
+* 現在已解決將程式碼推送至AdobeGit時間不斷發生的故障。
+
+* 商務附加元件現在可在編輯程式工作流程中套用至沙盒程式。
+
+* 編輯程式體驗已重新整理。
+
+* 「環境詳細資訊」(Environment Details)頁中的「域名」(Domain Names)表將通過分頁顯示多達250個域名。
+
+* 「新增方案」和「編輯方案」工作流程中的「解決方案」索引標籤會顯示解決方案，即使方案只提供一個解決方案。
+
+* 當組建未產生任何已部署的內容封裝時，不清楚組建步驟記錄中的錯誤訊息。
+
+### 錯誤修正 {#bug-fixes-cm-may}
+
+* 有時，即使未部署IP允許清單，使用者仍可能在該設定旁看到綠色的「作用中」狀態。
+
+* 管線變數API不會移除&#39;deleted&#39;變數，而只會以狀態&#x200B;**DELETED**&#x200B;來標籤它們。
+
+* 某些「程式碼氣味」類型的品質問題錯誤地影響「可靠性評等」。
+
+* 由於不支援萬用字元網域，因此UI將不允許使用者提交萬用字元網域。
+
+* 當管道執行在午夜到凌晨1點之間啟動時，Cloud Manager生成的對象版本不保證大於前一天建立的版本。
+
+* 在沙盒程式設定期間，當已成功建立包含范常式式碼的專案後，「管理Git」就會在「概述」頁面中顯示為英雄卡的連結。
 
 ### 發行日期 {#release-date-cm-april}
 
 Cloud Manager作為2021.4.0Cloud ServiceAEM的發行日期為2021年4月08日。
-下一版預計於2021年5月06日推出。
 
 ### 新功能 {#what-is-new-april}
 
