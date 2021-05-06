@@ -1,53 +1,55 @@
 ---
-title: Cloud Manager的發行說明，AEM作為Cloud Service版本2021.4.0
-description: Cloud Manager的發行說明，AEM作為Cloud Service版本2021.4.0
-feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
+title: Cloud Manager的發行說明，作AEM為Cloud Service版本2021.5.0
+description: Cloud Manager的發行說明，作AEM為Cloud Service版本2021.5.0
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
+source-git-commit: e2d4bb7649fad3ee172c6f049ecfdedc71417ee2
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Adobe Experience ManagerCloud Manager的發行說明，Cloud Service2021.4.0 {#release-notes}
 
-本頁概述了Cloud Manager的發行說明，AEM作為Cloud Service2021.4.0。
+# Adobe Experience ManagerCloud Manager的發行說明，Cloud Service2021.5.0 {#release-notes}
+
+本頁概述了Cloud Manager的發行說明，AEM作為Cloud Service2021.5.0。
 
 ## 發行日期 {#release-date}
 
-Cloud Manager作為2021.4.0Cloud ServiceAEM的發行日期為2021年4月08日。
-下一版預計於2021年5月06日推出。
+Cloud Manager作為2021.5.0版Cloud ServiceAEM的發行日期為2021年5月6日。
+下一版預計於2021年6月03日推出。
 
-### 新功能 {#what-is-new-april}
+### 新功能 {#what-is-new}
 
-* UI更新至「新增及編輯程式」工作流程，使其更直覺。
+* PackageOverlaps品質規則現在會偵測在相同部署的套件集中，同一套件已部署多次（即在多個內嵌位置）的情況。
 
-* 具備必要權限的使用者現在可以透過UI提交商務端點。
+* Public API中的儲存庫端點現在包含Git URL。
 
-* 環境變數現在可以限定到特定服務的範圍，可以是作者或發佈。 需要AEM版本`2021.03.5104.20210328T185548Z`或更高版本。
+* 由Cloud Manager用戶下載的部署日誌將更加深入，現在將包含有關失敗和成功案例的詳細資訊。
 
-* 即使未配置管線，「管理Git」（管理Git）按鈕也會顯示在「管線」卡上。****
+* 現在已解決將程式碼推送至AdobeGit時間不斷發生的故障。
 
-* Cloud Manager使用的AEM專案原型版本已更新為27版。
+* 商務附加元件現在可在編輯程式工作流程中套用至沙盒程式。
 
-* 由Cloud Manager建立的Adobe I/O開發人員主控台中的專案，不會再無意間被編輯或刪除。
+* 編輯程式體驗已重新整理。
 
-* 當用戶添加新環境時，他們將被告知，一旦建立了環境，就不能將其移動到其他區域。
+* 「環境詳細資訊」(Environment Details)頁中的「域名」(Domain Names)表將通過分頁顯示多達250個域名。
 
-* 環境變數現在可以限定到特定服務的範圍，可以是作者或發佈。 需AEM要2021.03.5104.20210328T185548Z或更高版本。
+* 「新增方案」和「編輯方案」工作流程中的「解決方案」索引標籤會顯示解決方案，即使方案只提供一個解決方案。
 
-* 刪除環境時啟動管線時的錯誤消息已被澄清。
+* 當組建未產生任何已部署的內容封裝時，不清楚組建步驟記錄中的錯誤訊息。
 
-* Eclipse專案提供的OSGi組合現在已排除在規則`CQBP-84--dependencies`之外。
+### 錯誤修正 {#bug-fixes}
 
-### 錯誤修正 {#bug-fixes-cm-april}
+* 有時，即使未部署IP允許清單，使用者仍可能在該設定旁看到綠色的「作用中」狀態。
 
-* 編輯管線的「體驗」稽核頁面時，以斜線`( / )`開頭的輸入路徑不會再導致步驟卡在擱置狀態。
+* 管線變數API不會移除&#39;deleted&#39;變數，而只會以狀態&#x200B;**DELETED**&#x200B;來標籤它們。
 
-* 當建立新的生產管道時，如果使用者未新增內容審核覆寫，則不會審核預設首頁。
+* 某些「程式碼氣味」類型的品質問題錯誤地影響「可靠性評等」。
 
-* `CloudServiceIncompatibleWorkflowProcess`的問題在可下載的問題CSV檔案中嚴重性不正確。
+* 由於不支援萬用字元網域，因此UI將不允許使用者提交萬用字元網域。
 
-* `Runmode`檢查對非資料夾節點產生誤報。
+* 當管道執行在午夜到凌晨1點之間啟動時，Cloud Manager生成的對象版本不保證大於前一天建立的版本。
+
+* 在沙盒程式設定期間，當已成功建立包含范常式式碼的專案後，「管理Git」就會在「概述」頁面中顯示為英雄卡的連結。
