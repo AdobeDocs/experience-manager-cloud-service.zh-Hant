@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '2181'
+source-wordcount: '2120'
 ht-degree: 1%
 
 ---
@@ -146,24 +146,6 @@ GraphQL API的使AEM用案例取決於作為Cloud Service環境AEM的類型：
 ### JSON預覽{#json-preview}
 
 若要協助您設計和開發內容片段模型，您可以在內容片段編輯器中預覽JSON輸出。
-
-### 建立內容片段模型和內容片段{#creating-content-fragment-models-and-content-fragments}
-
-首先，您的網站會啟用內容片段模型，這是在設定瀏覽器中完成：
-
-![定義配置](assets/cfm-configuration.png)
-
-然後可以建立內容片段模型：
-
-![內容片段模型](assets/cfm-model.png)
-
-在選取適當的模型後，內容片段會開啟以在內容片段編輯器中編輯：
-
-![內容片段編輯器](assets/cfm-editor.png)
-
->[!NOTE]
->
->請參閱使用內容片段。
 
 ## 從內容片段{#graphql-schema-generation-content-fragments}生成GraphQL模式
 
