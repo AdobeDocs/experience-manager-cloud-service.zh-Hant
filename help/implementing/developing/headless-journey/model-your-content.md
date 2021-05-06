@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1752'
 ht-degree: 1%
 
 ---
@@ -209,6 +209,20 @@ ht-degree: 1%
    * 直接編輯參考的片段。
    * 根據適當的模型建立新的內容片段
 
+### 建立內容片段模型{#creating-content-fragment-models}
+
+首先，您的網站會啟用內容片段模型，這是在設定瀏覽器中完成：
+
+![定義配置](assets/cfm-configuration.png)
+
+然後可以建立內容片段模型：
+
+![內容片段模型](assets/cfm-model.png)
+
+>[!NOTE]
+>
+>請參閱使用內容片段。
+
 ## 使用模型製作內容片段{#use-content-to-author-content}
 
 內容片段一律以內容片段模型為基礎。 模型提供結構，片段保存內容。
@@ -228,6 +242,16 @@ ht-degree: 1%
 * 編輯中繼資料。
 * 顯示樹結構。
 * 預覽JSON表示法。
+
+### 建立內容片段{#creating-content-fragments}
+
+在選取適當的模型後，內容片段會開啟以在內容片段編輯器中編輯：
+
+![內容片段編輯器](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>請參閱使用內容片段。
 
 ## 開始使用某些範例{#getting-started-examples}
 
