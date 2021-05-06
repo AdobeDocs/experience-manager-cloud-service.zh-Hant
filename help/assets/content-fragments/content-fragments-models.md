@@ -1,16 +1,16 @@
 ---
 title: 內容片段模型
 description: 瞭解內容片段模型如何做為您無頭內容的基礎，以及AEM如何使用結構化內容建立內容片段。
-feature: Content Fragments
+feature: 內容片段
 role: Business Practitioner
+exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2309'
 ht-degree: 7%
 
 ---
-
 
 # 內容片段模型 {#content-fragment-models}
 
@@ -61,7 +61,7 @@ ht-degree: 7%
    >
    >當欄位為「必 **要**」時，左側窗格中指出的「標籤 **」將會標示為字元(** *****)。
 
-   ![屬性](assets/cfm-models-03.png)
+![屬性](assets/cfm-models-03.png)
 
 1. **要添加欄位**
 
@@ -111,6 +111,7 @@ ht-degree: 7%
    * 允許片段作者存取和選取標籤區域
 * **內容參考資料**
    * 參考任何類型的其他內容；可用於[建立巢狀內容](#using-references-to-form-nested-content)
+   * 如果參考影像，您可以選擇顯示縮圖
 * **片段引用**
    * 參考其他內容片段；可用於[建立巢狀內容](#using-references-to-form-nested-content)
    * 可以配置資料類型以允許片段作者：
@@ -121,6 +122,13 @@ ht-degree: 7%
       * 若要AEM允許儲存您已從其他服務複製／貼上的直接JSON。
       * JSON將會傳遞，並在GraphQL中輸出為JSON。
       * 在內容片段編輯器中包含JSON語法反白顯示、自動完成和錯誤反白顯示。
+* **標籤預留位置**
+   * 允許在編輯內容片段內容時使用標籤。
+這將在模型編輯器中顯示為分隔線，可分隔內容資料類型清單的區段。 每個例項代表新標籤的開頭。
+在片段編輯器中，每個例項都會顯示為標籤。
+
+      >[!NOTE]
+      此資料類型僅用於格式設定，GraphQL模式將忽AEM略它。
 
 ## 屬性 {#properties}
 
@@ -165,6 +173,8 @@ ht-degree: 7%
    * 確保欄位的屬性名稱已添加到翻譯配置`/content/dam/<tenant>`中（如果尚未出現）。
    * 對於GraphQL:將「內容片段」欄位上的`<translatable>`屬性設為`yes`，以允許GraphQL查詢篩選器只針對可轉譯內容進行JSON輸出。
 
+* 如需該特定資料類型及其屬性的詳細資訊，請參閱&#x200B;**[內容參考](#content-reference)**。
+
 * 有關該特定資料類型及其屬性的詳細資訊，請參閱&#x200B;**[片段參考（嵌套片段）](#fragment-reference-nested-fragments)**。
 
 ## 驗證{#validation}
@@ -181,12 +191,6 @@ ht-degree: 7%
    * 只能參考預先定義的寬度和／或高度範圍（以像素為單位）內的影像。
 * **片段引用**
    * 測試特定內容片段模型。
-
-<!--
-  * Only predefined file types can be referenced.
-  * No more than the predefined number of assets can be referenced. 
-  * No more than the predefined number of fragments can be referenced.
--->
 
 ## 使用參照來建立巢狀內容{#using-references-to-form-nested-content}
 
@@ -219,12 +223,14 @@ ht-degree: 7%
 
 除了標準屬性外，您還可以指定：
 
-* 任何參考內容的&#x200B;**根路徑**。
-* 可參考的內容類型。
-* 檔案大小的限制。
-* 影像限制。
-   <!-- Check screenshot - might need update -->
-   ![內容參考資料](assets/cfm-content-reference.png)
+* 任何參考內容的&#x200B;**根路徑**
+* 可參考的內容類型
+* 檔案大小限制
+* 如果參考影像：
+   * 顯示縮圖
+   * 影像高度和寬度限制
+
+![內容參考資料](assets/cfm-content-reference.png)
 
 ### 片段參考（巢狀片段）{#fragment-reference-nested-fragments}
 
@@ -272,7 +278,6 @@ type CompanyModel {
 
    * **fragmenterferenccompresition** -允許片段作者選取多個片段來建立合成
 
-   <!-- Check screenshot - might need update -->
    ![片段引用](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
@@ -405,17 +410,3 @@ GraphQL中還對片段引用提供定期保護。 如果您在兩個相互參照
    * **標記**
    * **說明**
    * **上傳影像**
-
-<!--
-* **GraphQL**
-  
-  >[!CAUTION]
-  >
-  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
-  >
-  >Updating these properties can impact dependent applications.
-
-  * **API Name**
-  * **Single Query Field Name**
-  * **Multiple Query Field Name**
--->
