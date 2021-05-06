@@ -1,8 +1,9 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.1.0 版發行說明。'
-description: '[!DNL Adobe Experience Manager] 2021.1.0版雲端服務發行說明。'
+description: '[!DNL Adobe Experience Manager] 作為2021.1.0的Cloud Service發行說明。'
+exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 translation-type: tm+mt
-source-git-commit: 361b90b2d6bbd8f9fc141743fb80aa60faec3598
+source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 4%
@@ -12,14 +13,14 @@ ht-degree: 4%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 版發行說明 {#release-notes}
 
-以下章節概述[!DNL Experience Manager]做為雲端服務的一般發行說明。
+以下章節將[!DNL Experience Manager]的一般發行說明概述為Cloud Service。
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為Cloud Service 2021.1.0的發行日期為2021年2月3日。
+[!DNL Adobe Experience Manager]作為Cloud Service2021.1.0的發行日期為2021年2月3日。
 下列版本(2021.2.0)將於2021年2月25日發行。
 
-## [!DNL Adobe Experience Manager Sites] 雲端服務  {#sites}
+## [!DNL Adobe Experience Manager Sites] Cloud Service  {#sites}
 
 * **[內容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:新增使用HTTP API新增／更新和刪除內容片段變數的能力。
 
@@ -46,7 +47,7 @@ ht-degree: 4%
 
 * 現在支援MXF檔案格式。 請參閱[支援的檔案格式](/help/assets/file-format-support.md#video-formats)。
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager商務Cloud Service{#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
@@ -60,7 +61,7 @@ ht-degree: 4%
 
 ### 發行日期 {#release-date-cm}
 
-AEM中Cloud Manager作為Cloud Service 2021.1.0的發行日期為2021年1月14日。
+Cloud Manager作為2021.1.0Cloud ServiceAEM的發行日期為2021年1月14日。
 
 ### 錯誤修正 {#bug-fixes-cloud-manager}
 
@@ -74,25 +75,25 @@ AEM中Cloud Manager作為Cloud Service 2021.1.0的發行日期為2021年1月14�
 
 ### [!DNL Code Refactoring Tools] {#what-is-new-crt}的新增功能
 
-* 新版AIO-CLI增效模組已發行。 此外掛程式的最新版本包含AEM Dispatcher Converter和Repository Modernizer的錯誤修正，也支援新的公用程式- Index Converter。 請參閱[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)以進一步瞭解此外掛程式。
+* 新版AIO-CLI增效模組已發行。 此插件的最新版本包括Dispatcher Converter和Repository Modernizer的錯AEM誤修正，還支援新的實用程式- Index Converter。 請參閱[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)以進一步瞭解此外掛程式。
 
-* Index Converter是一個公用程式，可用來將客戶的自訂OAK索引定義轉換為AEM，做為CLoud Service相容的OAK索引定義。 有關詳細資訊，請參閱[索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)。
+* Index Converter是一個實用程式，可用於將客戶的自定義OAK索引定義轉換為AEMCloud Service相容的OAK索引定義。 有關詳細資訊，請參閱[索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)。
 
 * 新增至[Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)的新功能，可建立個別的套件`ui.config`以包含所有OSGi組態。
 
 ### 錯誤修正 {#crt-bug-fixes}
 
-* 在AEM Dispatcher Converter和Repository Modernizer工具上完成數個錯誤修正。 請參閱[AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)和[Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
+* 在Dispatcher Converter和Repository Modernizer工具AEM上完成的幾個錯誤修正。 請參閱[AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)和[ Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
 
-## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
+## 作AEM為Cloud Service基金會{#aem-as-a-cloud-service-foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 伺服器對伺服器的驗證API呼叫——產生適當的存取Token，以便在您的外部應用程式與AEM之間，以雲端服務環境的形式進行驗證的伺服器對伺服器API呼叫。 閱讀[說明檔案](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)或參閱[教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)，瞭解更多資訊。
+* 伺服器對伺服器的已驗證API呼叫——產生適當的存取Token，以便在外部應用程式之間以及作為Cloud Service環境進行已驗證的伺服器AEM對伺服器API呼叫。 閱讀[說明檔案](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)或參閱[教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)，瞭解更多資訊。
 
 ### SDK Build Analyzers {#sdk-build-analyzers}
 
-AEM as a Cloud Service SDK Build Analyzer Maven Plugin會偵測主要專案中的問題，包括缺少相依性。 它為開發人員提供了在本機開發期間發現問題的機會，而遠在使用Cloud Manager部署至雲端環境之前。
+作為AEMCloud ServiceSDK Build Analyzer Maven Plugin可檢測主項目中的問題，包括缺少依賴項。 它為開發人員提供了在本機開發期間發現問題的機會，而遠在使用Cloud Manager部署至雲端環境之前。
 
 此版本新增了兩個分析器：
 
@@ -109,6 +110,6 @@ AEM as a Cloud Service SDK Build Analyzer Maven Plugin會偵測主要專案中�
 
 ### [!DNL Content Transfer Tool] {#what-is-new-ctt}的新增功能
 
-* 內容傳輸工具——使用者對應工具新增功能和UI。 這項功能會自動將現有的使用者和群組對應至其Adobe Identity Management System ID，做為內容移轉活動的一部分。 如需詳細資訊，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
+* 內容傳輸工具——使用者對應工具新增功能和UI。 此功能會自動將現有的使用者和群組對應至其Adobe的Identity Management系統ID，做為內容移轉活動的一部分。 如需詳細資訊，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
 * 內容傳輸工具現在會移轉移移集（包括子系）中參考的所有群組和使用者。
 * 在建立遷移集時，允許用戶選擇`/etc`下的某些路徑。
