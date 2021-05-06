@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 861ef15a0060d51fd32e2d056871d1679f77a21e
+source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 0%
+source-wordcount: '2181'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >正在進行中的工作——本檔案的建立工作正在進行中，不應將其理解為完整或明確，也不應將其用於生產目的。
 
-在[AEM Headless Developer Journey（無頭開發人員歷程）的這部分，您可以學習如何使用GraphQL查詢來存取您的內容片段。](overview.md)
+在[無頭開發人員旅程的這部分AEM,](overview.md)您可以瞭解如何使用GraphQL查詢來存取您的內容片段，並將它餵送至您的應用程式（無頭傳送）。
 
 ## 到目前為止的故事{#story-so-far}
 
@@ -135,9 +135,7 @@ GraphQL API的使AEM用案例取決於作為Cloud Service環境AEM的類型：
 
 **片段參考**:
 
-* 與GraphQL結合使用特別受到關注。
-
-* 是定義內容片段模型時可使用的特定資料類型。
+* 是定義內容片段模型時可用的特定資料類型。
 
 * 參照另一個片段，取決於特定的內容片段模型。
 
@@ -148,6 +146,24 @@ GraphQL API的使AEM用案例取決於作為Cloud Service環境AEM的類型：
 ### JSON預覽{#json-preview}
 
 若要協助您設計和開發內容片段模型，您可以在內容片段編輯器中預覽JSON輸出。
+
+### 建立內容片段模型和內容片段{#creating-content-fragment-models-and-content-fragments}
+
+首先，您的網站會啟用內容片段模型，這是在設定瀏覽器中完成：
+
+![定義配置](assets/cfm-configuration.png)
+
+然後可以建立內容片段模型：
+
+![內容片段模型](assets/cfm-model.png)
+
+在選取適當的模型後，內容片段會開啟以在內容片段編輯器中編輯：
+
+![內容片段編輯器](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>請參閱使用內容片段。
 
 ## 從內容片段{#graphql-schema-generation-content-fragments}生成GraphQL模式
 
@@ -239,9 +255,98 @@ AEM允許：
 
 ![GraphiQL接](assets/graphiql-interface.png "口GraphiQL介面")
 
-## 使AEM用GraphQL API {#using-aem-graphiql}
+## 實際使AEM用GraphQL API {#actually-using-aem-graphiql}
 
-有關使用GraphQL API的詳AEM細資訊，以及配置必要的元素，您可以參考：
+要在查詢中實AEM際使用GraphQL API，我們可以使用兩個非常基本的內容片段模型結構：
+
+* 公司
+   * 名稱
+   * CEO（人員）
+   * 員工（人員）
+* 人員
+   * 名稱
+   * 名字
+
+如您所見，CEO和員工欄位中會參考「人員」片段。
+
+將使用碎片模型：
+
+* 在內容片段編輯器中建立內容時
+* 生成要查詢的GraphQL方案
+
+查詢可在GraphiQL介面中輸入，例如：
+
+* `http://localhost:4502/content/graphiql.html `
+
+直接查詢是返回公司架構中所有條目的名稱。 在此，您會要求列出所有公司名稱：
+
+```xml
+query {
+  companyList {
+    items {
+      name
+    }
+  }
+}
+```
+
+稍為複雜的查詢是選擇沒有「工作」名稱的所有人員。 這將過濾所有沒有「Jobs」名稱的人員。 這是使用EQUALS_NOT運算子實現的（還有更多）:
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _expressions: [
+        {
+          value: "Jobs"
+          _operator: EQUALS_NOT
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+您也可以建立更複雜的查詢。 例如，查詢至少擁有一名名為&quot;Smith&quot;的員工的所有公司。 此查詢說明對名稱為&quot;Smith&quot;的任何人員進行篩選，從巢狀片段返回資訊：
+
+```xml
+query {
+  companyList(filter: {
+    employees: {
+      _match: {
+        name: {
+          _expressions: [
+            {
+              value: "Smith"
+            }
+          ]
+        }
+      }
+    }
+  }) {
+    items {
+      name
+      ceo {
+        name
+        firstName
+      }
+      employees {
+        name
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- need code / curl / cli examples-->
+
+有關使用GraphQL API的完AEM整詳細資訊，以及配置必要的元素，您可以參考：
 
 * 學習搭配使用GraphQL AEM
 * 範例內容片段結構
