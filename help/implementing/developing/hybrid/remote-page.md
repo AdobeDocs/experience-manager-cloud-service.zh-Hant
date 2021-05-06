@@ -3,9 +3,9 @@ title: RemotePage元件
 description: RemotePage元件是用於編輯遠程React的自定義頁面組SPA件AEM。
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 translation-type: tm+mt
-source-git-commit: a46a2b3951d2fcc8468b29b4fa2c1faada643243
+source-git-commit: eaa59b6ecfa50c4a6b4e316e5e305e48cb3d5676
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,7 @@ RemotePage元件從應用程式生成的`asset-manifest.json`中提取所有必�
 
 ## 限制 {#limitations}
 
+* RemotePage元件的當前實施僅支援遠程React應用程式。
 * 在中執行遠端演算時，無法使用應用程式根HTML檔案中定義的內部CSS以及根DOM節點上的內嵌CSSAEM。
 
 ## 技術詳細資訊{#technical-details}
