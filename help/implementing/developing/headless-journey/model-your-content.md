@@ -1,14 +1,14 @@
 ---
 title: 如何建立內容模型
-description: 在「無頭開發人AEM員歷程」的這部分，瞭解如何使用內容片段模型和內容片段的資料AEM模型來建立內容模型，以進行無頭髮傳送。
+description: 在「無頭開發人AEM員歷程」的這部分，瞭解如何使用內容片段模型和內容片段的內容AEM模型來建立內容模型，以便進行無頭髮放。
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
+source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1686'
 ht-degree: 1%
 
 ---
@@ -38,10 +38,10 @@ ht-degree: 1%
 
 * **觀眾**:初學者
 * **目標**:瞭解如何建立內容結構模型，然後使用內容片段模型和內AEM容片段來實現該結構：
-   * 介紹與[資料建模](#data-modeling)相關的概念和術語。
-   * 瞭解[為何無頭內容傳送需要建立資料模型](#data-modeling-for-aem-headless)。
-   * 瞭解如何使用內容片段模型AEM（以及使用[內容片段](#use-content-to-author-content)製作內容）來實現此結構。[](#create-structure-content-fragment-models)
-   * 瞭解[如何建立內容模型](#getting-started-examples);基本樣本的原則。
+   * 介紹與資料／內容建模相關的概念和術語。
+   * 瞭解為何需要建立內容模型來傳送無頭內容。
+   * 瞭解如何使用內容片段模型AEM（以及使用內容片段製作內容）來實現此結構。
+   * 瞭解如何建立內容模型；基本樣本的原則。
 
 >[!NOTE]
 >
@@ -49,11 +49,15 @@ ht-degree: 1%
 >
 >我們只會在建立資料模型以便與Headless搭配使用時，考慮相關的AEM方面。
 
-## 資料建模{#data-modeling}
+## 內容建模{#content-modeling}
 
 *外面的世界很糟*。
 
 也許，也許不是，但是它確實是一個大的&#x200B;***複雜的***&#x200B;世界，資料模型被用來定義一個非常（非常）小的子區段的簡化表示，使用特定目的所需的特定資訊。
+
+>[!NOTE]
+>
+>在內AEM容方面，我們稱資料模型為內容模型。
 
 例如：
 
@@ -91,7 +95,7 @@ ht-degree: 1%
 
 然後，實體之間有各種&#x200B;**關係**。 例如，一所學校通常只有一位校長，而許多教師（而校長通常也是一位教師）。
 
-分析和定義此資訊以及它們之間的關係的過程稱為&#x200B;**資料建模**。
+分析和定義此資訊以及它們之間的關係的過程稱為&#x200B;**內容建模**。
 
 ### 基本資訊 {#basics}
 
@@ -128,9 +132,9 @@ ht-degree: 1%
 
 * 如果查詢必須存取多個巢狀（參考）內容片段以擷取所需內容，就會嚴重影響效能。
 
-## 無頭&lt;AEMa0/>的資料建模{#data-modeling-for-aem-headless}
+## 無頭內容AEM模型{#content-modeling-for-aem-headless}
 
-資料建模是一組既有的技術，在開發關係資料庫時經常使用，對於Headless來說，它意味著什AEM麼？
+資料建模是一組既有的技術，在開發關係資料庫時經常使用，因此內容建模對於無頭公司意味著AEM什麼？
 
 ### 為什麼？{#why}
 
@@ -142,7 +146,7 @@ ht-degree: 1%
 
 使AEM用內容片段來提供將內容無頭傳送至應用程式所需的結構。
 
-您的資料模型結構為：
+內容模型的結構為：
 
 * 內容片段模型的定義，
 * 做為內容產生所用內容片段的基礎。
@@ -172,7 +176,7 @@ ht-degree: 1%
 
 1. **「資** 料類型」可讓您定義個別屬性。例如，將教師姓名的欄位定義為&#x200B;**Text**，其服務年限定為&#x200B;**Number**。
 1. 資料類型&#x200B;**內容參考**&#x200B;和&#x200B;**片段參考**&#x200B;可讓您建立與內容中其他內容的關係AEM。
-1. **片段參考**&#x200B;資料類型可讓您巢狀化內容片段（根據模型類型），以實現多層結構。 這對您的資料模型至關重要。
+1. **片段參考**&#x200B;資料類型可讓您巢狀化內容片段（根據模型類型），以實現多層結構。 這對您的內容模型至關重要。
 
 例如：
 ![使用內容片段建立內容模型](assets/headless-modeling-01.png "使用內容片段建立內容模型")
@@ -247,4 +251,4 @@ tbc...
    * [管理內容片段](/help/assets/content-fragments/content-fragments-managing.md) -建立和製作內容片段；此頁面將引導您進入其他詳細章節
 * [AEM GraphQL方案](/help/implementing/developing/headless-journey/access-your-content.md) - GraphQL如何實現模型
 * [範例內容片段結構](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [開始使用無AEM頭](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) -簡短的教學課程系列影片，概述如何使用無頭功AEM能，包括資料建模和GraphQL
+* [開始使用無AEM頭——簡短的教學課程系列影片，提供使用無頭功能的概AEM觀，包括內容建模和GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) 
