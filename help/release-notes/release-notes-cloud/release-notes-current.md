@@ -3,12 +3,13 @@ title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說�
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 9a2b52a873e4e0662da252bba2af6ac2a46cd08e
+source-git-commit: 6e21c6ffe50d6c030873650e7dd26246dea76b59
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 3%
+source-wordcount: '1473'
+ht-degree: 2%
 
 ---
+
 
 # [!DNL Adobe Experience Manager]作為{#release-notes}Cloud Service的當前發行說明
 
@@ -23,66 +24,125 @@ ht-degree: 3%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為Cloud Service2021.3.0的發行日期為2021年3月25日。
-下列版本(2021.4.0)將於2021年4月29日發行。
+[!DNL Adobe Experience Manager]作為Cloud Service2021.4.0的發行日期為2021年5月6日。
+下列版本(2021.5.0)將於2021年5月27日發行。
 
-## [!DNL Adobe Experience Manager Sites] Cloud Service  {#sites}
+## 作AEM為Cloud Service基金會{#aem-as-a-cloud-service-foundation}
 
-* [現在，可透過簡單的設定，在專](/help/sites-cloud/authoring/features/enable-pwa.md) 案層級啟用網站的漸進式網頁應用程式(PWA)版本。
-* 內容片段模型擴充功能——現在可將多行文字資料類型定義為多欄位清單。
-* 內容片段編輯器UX增強功能——巢狀子片段現在顯示在階層連結中，並改善發佈、儲存和儲存與退出動作的檢視
+### 新增功能 {#what-is-new-foundation}
 
-## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+* [發佈內容樹工作流程](/help/operations/replication.md#publish-content-tree-workflow) -新的工作流程模型和步驟可在發佈內容的深層階層時，提供更高的效能。
+
+## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### [!DNL Sites] {#what-is-new-sites}的新增功能
+
+* GraphQL端點——現在可以為各個AEM SitesAEM配置啟用GraphQL API，並通過使用新的GraphQL控制台UI為這些配置建立自定義GraphQL端點。 UI還允許管理GraphQL端點。
+
+* 內容模型、增強的日期與時間資料類型——現在可以設定日期與時間日期類型，讓您只能編寫日期、時間或日期和時間資訊。
+
+* 內容模型、增強的標籤資料類型——現在可以設定標籤資料類型，以允許製作單一或多個標籤。
+
+* 內容模型、新的標籤預留位置資料類型——新的標籤預留位置資料類型可將資料類型分組到內容片段編輯器中標籤下方的區段中。
+
+### [!DNL Sites] {#bug-fixes-sites}中的錯誤修正
+
+* 內容片段——移動內容片段或資料夾現在會更新片段內的巢狀參照(CQ-4320815)
+
+* GraphQL —— 持久查詢現在支援特定於AEM Sites配置的用戶定義端點(CQ-4315928)
+
+## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] {#what-is-new-assets}的新增功能
 
-<!-- TBD: refine this list of features and enh. for Feb release.
+* [!DNL Experience Manager] 不會封存下載原始檔案的單一資產下載。此增強功能可讓下載更快速。
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
+* 透過linkshare選項下載資產時，您現在可以選擇下載或不下載轉譯。 以前，會下載所有資產轉譯。
 
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
+* 管理員可以設定[!DNL Experience Manager]，在執行大量資產擷取後刪除資產來源。 請參閱[大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-Ability to select a root path. select if a minimum number of tags is required. 
+* 當執行健康檢查以大量匯入資產時，Experience Manager現在會提供失敗的更多資訊原因。 請參閱[大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-Add a Boolean or radio widget type to metadata schema setup. -->
+* 使用大量匯入工具匯入資產時，管理員現在可以選擇在匯入成功後刪除來源檔案。 請參閱[大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-* [!DNL Experience Manager] 擴充Connected Assets功能，以支援在支 [!DNL Dynamic Media] 援的核心元件中使用影像。請參閱[使用連接的資產](/help/assets/use-assets-across-connected-assets-instances.md)。
-* Experience Manager管理員可以在特定日期或時間排程大量資產收錄。 此外，管理員也可以根據日期和時間排程週期性收錄。 請參閱[大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor)。
+* 編輯中繼資料結構時，新的根路徑選擇器欄位可讓管理員快速輕鬆地進行選擇，進而縮短設定時間。
+
+* 許多資產的中繼資料可使用CSV檔案大量匯入，並可匯出至CSV檔案。 預設日期格式現在為`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`。 使用者可以透過更新欄標題來運用不同的格式。 例如，在CSV檔案中新增`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`作為欄標題，而非字詞`Date`。
+
+* 在「欄」檢視中瀏覽資產時，視覺指標會顯示每個資產的已核准或已拒絕狀態。
+
+* 在「欄」檢視中瀏覽資產時，會顯示過期資產的視覺指標。
 
 ### [!DNL Assets] {#bug-fixes-assets}中的錯誤修正
 
-* 嘗試下載多個版權管理的資產時，不會顯示版權頁面。 (CQ-4314403)
-* 選擇編輯INDD檔案時，解析度意外更改。 (CQ-4317376)
-* 「PDF轉譯」中只有「InDesign範本」的最後一頁。 (CQ-4317305)
-* 當選擇器是複雜中繼資料結構的一部分時，開啟標籤選擇器需要很長的時間。 (CQ-4316426)
-* 上傳與現有檔案名稱相同的資產時，不會顯示名稱衝突對話方塊，提示使用者建立版本。 (CQ-4315424)
-* 可以在資料夾的「屬性」頁面的彈出菜單中設定和保存資料夾元資料屬性。 選擇保存在儲存庫中時，當再次開啟資料夾元資料屬性時不顯示。 (CQ-4314429)
-* 檔案名稱包含空格或特殊字元的資產會使用瀏覽器上傳。 (CQ-4318381)
+* 嘗試移動多個資產或檔案夾時，主控台中會記錄錯誤，且移動作業尚未完成。 如果無法更新標題，移動操作將失敗。 (CQ-4322080)
+
+* 元資料欄位可以基於規則進行隱藏，以便當滿足預定條件時，元資料不是強制的。 不過，這類隱藏的中繼資料欄位會顯示為必要欄位。 (CQ-4321285)
+
+* 大量中繼資料匯入因日期格式不正確而失敗。 (CQ-4319014)
+
+* 當在「屬性」頁面中選擇更新中繼資料時，當架構提供許多選項時，介面的回應速度會變慢。 (CQ-4318538)
+
+* 在單行文字欄位中更新和儲存中繼資料值時，即使在下拉式功能表中停用編輯，下拉式功能表中的值也會被刪除。 (CQ-4317077)
+
+* 您可以使用省略號做為註解來檢閱資產。 使用小橢圓時，橢圓與打印版本中的注釋數重疊。 (CQ-4316792)
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-AEM Forms多年來協助許多組織提供絕佳的入門和註冊體驗。 這些體驗可協助組織將潛在客戶轉化為銷售、處理擷取的客戶資料、根據受眾個人檔案提供互動式體驗等。 現在，AEM Forms提供雲端服務。
+### [!DNL Forms] {#what-is-new-forms}的新增功能
 
-您可以使用[AEM FormsCloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)來建立數位表單、將表單連接至現有資料來源、將表單與Adobe Sign整合以新增電子簽名至表單、產生記錄檔案(DoR)以將提交的表單封存為PDF檔案。 此服務也可將您現有的PDF forms轉換為數位表單。 除了標準的AEM Forms功能外，該服務還提供數種雲端原生功能，例如自動縮放、升級零停機和雲端原生開發環境。 閱讀[此部落格文章](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)，瞭解AEM Forms作為Cloud Service的功能與功能。
+* **在啟用Adobe Sign的自適應Forms中使用政府ID身份驗證方法**
 
-您可以聯絡Adobe代表以取得示範或註冊服務。
+   在進階機器學習演算法的支援下，Adobe Sign的政府ID程式可讓全球各地的公司確保接受者身分的高品質驗證。 現在，您可以在啟用Adobe Sign的最適化Forms中使用政府ID身分驗證方法。
+
+   政府ID是高階身分驗證方法，可指示收件者[上傳政府核發的身分檔案（駕照、國家ID、護照）](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)的影像，然後評估該檔案以確保其真實性。
+
+* **支援使用表單內簽署體驗進行非同步的調適性表單提交**
+
+   您現在可以針對非同步自適應表單提交使用表單內簽署體驗。 您也可以在[!DNL Experience Manager Sites]頁面中內嵌最適化表單，並使用表單中的簽署體驗來提交最適化表單。
+
+* **支援在為「分配任務」步驟預填充「最適化表單」時使用變數指定附件**
+
+   在為分配任務步驟預填充最適化表單時，您現在可以使用文檔類型變數為最適化表單選擇輸入附件。
+
+* **支援使用常值選項來設定JSON類型變數的值**
+
+   您可以使用常值選項，在「工作流程」的設定變數步驟中設定JSON類型變AEM數的值。 常值選項可讓您以字串的形式指定JSON。
+
+* **使用本機開發環境來建立記錄檔案(DoR)**
+
+   您可以在Cloud Service實例上使用XDP作為記錄文檔模板，而AEM Forms作為Cloud ServiceSDK（本地開發環境）。 以前，支援僅限Cloud Service例項。
+
+### [!DNL Forms] {#bug-fixes-forms}中的錯誤修正
+
+* 將配置為不生成記錄文檔的最適化表單提交到配置為生成記錄文檔的AEM工作流時，不顯示錯誤消息，並且任務無法提交。
+
+### 其他更新{#misc-2021-04-0-forms}
+
+* 為了更容易辨識內容，服務現在會針對XDP、動態PDF和架構檔案產生即時縮圖。
+* 新增將PDF檔案移至AEM FormsUI中資料夾的功能。
 
 ## Adobe Experience Manager商務Cloud Service{#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 支援Magento2.4.2
+* 支援類別UID —— 這可為使用類別ID字串的系統解除協力廠商商務整合鎖定
 
-* 產品詳細資訊元件現在可在任何內容頁面上使用和設定
+* AEM擴充PWA Studio 範例整合
 
-* 發佈的CIF Venia參考網站- 2021.03.25，其中包含最新的CIF核心元件1.9.0版。如需詳細資訊，請參閱[CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25)。
+* 擴充WCM導覽核心元件的全新CIF導覽核心元件
 
-* 已發佈CIF核心元件v1.9.0。有關詳細資訊，請參閱[CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)。
+* 店面中分段型錄資料的可視指AEM示器
 
+* 商務端點現在可透過Cloud Manager UI進行設定
+
+### 錯誤修正 {#bug-fixes-commerce}
+
+* 類別頁面的頁面屬性中，根類別欄位未顯示在商務標籤下方
 
 ## Cloud Manager {#cloud-manager}
 
-本節將以Cloud Service2021.4.0和AEM2021.3.0概述Cloud Manager的發行說明。
+本節將Cloud Manager發行說明概AEM述為Cloud Service2021.4.0。
 
 ### 發行日期 {#release-date-cm-april}
 
@@ -121,76 +181,6 @@ Cloud Manager作為2021.4.0Cloud ServiceAEM的發行日期為2021年4月08日。
 
 * `Runmode`檢查對非資料夾節點產生誤報。
 
-
-### 發行日期 {#release-date-cm-march}
-
-Cloud Manager作為2021.3.0Cloud ServiceAEM的發行日期為2021年3月11日。
-
-### 新功能 {#what-is-new-march}
-
-* 具有[IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)和[自訂域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)的現有自訂域名配置的環境的客戶將看到有關其先前現有配置的消息，並能夠通過UI自助服務。
-
-* 具備必要權限的使用者現在可以編輯程式，讓他們以自助方式進行下列作業：
-
-   * 將Sites解決方案新增至包含資產的現有計畫，反之亦然。
-   * 將網站或資產從既有的計畫中移除，同時包含網站和資產。
-   * 將第二個未使用的解決方案權益新增至現有的方案，或新增為新的方案。
-
-* **現AEM在，「Pipeline  Execution」（管線執行）和「Activity」（活動）畫面都會** 顯 *示推播更新*  ** 標籤。
-
-* 如果環境已休眠，但也有可用的更AEM新，則&#x200B;**已休眠**&#x200B;狀態將優先於&#x200B;**可用更新**。
-
-* 現在，在導覽至Unified Shell的「使用者設定檔」圖示（右上角）後，使用者可以選取「檢視雲端管理員角色」選項，以查看其Cloud Manager角色。
-
-* **申請批准**&#x200B;標籤已重新標籤至&#x200B;**生產批准**，以更清楚明瞭。
-
-* **版本**&#x200B;標籤已重新標籤至「生產管線」執行畫面中的&#x200B;**Git Tag**。
-
-* 當重要量度不符合定義的臨界值時，定義行為的標籤已重新標籤，以反映其真實行為：**取消立即**&#x200B;和&#x200B;**批准立即**。
-
-* 類別和方法取代清單已根據Cloud ServiceSDK的`2021.3.4997.20210303T022849Z-210225`版AEM本更新。
-
-* Cloud Manager生產管道現在將包含[自訂UI測試](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)功能。
-
-### 錯誤修正 {#bug-fixes-cm-march}
-
-* 在推播升級期間，在某些情況下會略過套AEM件版本。
-
-* 在將包嵌入其他包時，未正確發現某些質量問題。
-
-* 在模糊的情況下，開啟「添加程式」對話框時生成的預設程式名稱可能是現有程式名稱的副本。
-
-* 有時，如果用戶在啟動管線後立即導航離開管線執行頁面，則會顯示一條錯誤消息，指出操作失敗，儘管實際上執行開始。
-
-* 當客戶建置導致無效包時，不必要地重新啟動建置步驟。
-
-* 有時，即使未部署IP允許清單，用戶也會看到該配置旁邊的綠色「活動」狀態。
-
-* 所有現有的生產管道都會透過體驗稽核步驟自動啟用。
-
-## 內容轉移工具 {#content-transfer-tool}
-
-### 發行日期 {#release-date-ctt}
-
-內容傳輸工具v1.3.4的發行日期為2021年3月19日。
-
-### 錯誤修正 {#bug-fixes-ctt}
-
-* CTT正在跳過同名但名稱中帶有連字型大小的資料夾中的內容。 這個問題已經修正。
-
-### 發行日期 {#release-date-ctt-march}
-
-內容傳輸工具v1.3.0的發行日期為2021年3月04日。
-
-### 內容傳輸工具{#what-is-new-ctt-march}的新增功能
-
-* CTT現在會安裝至`/apps`，而非`/libs`特定頁面的瀏覽器書籤可能不再有效。
-* 當安裝CTT時，使用者將必須導覽其他層級，才能進入「內容傳輸」頁面。 如需詳細資訊，請參閱[使用內容傳輸工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html)。
-
-### 錯誤修正 {#bug-fixes-ctt-march}
-
-* 從特定路徑移轉內容時，CTT會提取不相關的資源。 此問題已修正
-
 ## 最佳做法分析器{#best-practices-analyzer}
 
 ### 發行日期 {#release-date-bpa}
@@ -202,18 +192,3 @@ Best Practices Analyzer v2.1.12的發行日期為2021年4月12日。
 * 報告的BPA中出現重複行。 這個問題已經修正。
 * 6.4.2版AEM的BPA UI會造成JS錯誤，此錯誤會停用「產生報表」按鈕。 此問題已修正
 
-
-## 程式碼重構工具 {#code-refactoring-tools}
-
-### 程式碼重構工具{#what-is-new-crt}的新增功能
-
-* Repository Modernizer的新功能和增強功能。 請參閱[GitHub資源：最新版本的Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
-   * 將OSGi組態標準化為偏好的。cfg.json格式（RepoInit組態除外）。
-   * 將OSGi配置資料夾更名為指定格式。
-   * 產生ui.apps.structure專案。
-   * 建立分析模組。
-
-* Dispatcher Converter的新功能和增強功能。 請參閱[GitHub資源：Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
-   * 為不同內含項目建立個別檔案，而非內容內嵌。
-   * 能夠同時處理vhosts的資料夾路徑和vhost檔案的路徑。
-   * 以超過600種客戶配置生成群檔案。
