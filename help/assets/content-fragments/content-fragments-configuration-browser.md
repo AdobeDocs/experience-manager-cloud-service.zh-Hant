@@ -1,16 +1,16 @@
 ---
 title: 內容片段——設定瀏覽器
 description: 瞭解如何在設定瀏覽器中啟用特定內容片段功能，以運用強大AEM的無頭傳送功能。
-feature: Content Fragments
+feature: 內容片段
 role: Business Practitioner
+exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 20%
+source-wordcount: '287'
+ht-degree: 18%
 
 ---
-
 
 # 內容片段——設定瀏覽器{#content-fragments-configuration-browser}
 
@@ -25,7 +25,11 @@ ht-degree: 20%
 
 >[!CAUTION]
 >
->如果未啟用「內容片段模型」****，則「建立」**選項將不可用於建立新模型。**
+>如果未啟用&#x200B;**內容片段模型**:
+>
+>* **Create**&#x200B;選項將不可用於建立新模型。
+>* 您將無法[選擇租用戶以建立相關的端點](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)。
+
 
 若要啟用內容片段功能，您需要：
 
