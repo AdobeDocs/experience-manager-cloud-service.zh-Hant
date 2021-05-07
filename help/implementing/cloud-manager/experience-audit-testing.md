@@ -1,16 +1,21 @@
 ---
-title: 體驗審核測試——雲端服務
-description: 體驗審核測試——雲端服務
+title: 體驗審核測試-Cloud Services
+description: 體驗審核測試-Cloud Services
+exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 translation-type: tm+mt
-source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
 
-
 # 體驗審核測試{#experience-audit-testing}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_expaudittesting"
+>title="體驗審核測試"
+>abstract="Experience Audit是Cloud Manager Sites Production管道中的一項功能，由Google的開放原始碼工具Google Lighthouse提供支援。 所有Cloud Manager生產管道都啟用了此功能。"
 
 Experience Audit是Cloud Manager Sites Production管道中的一項功能，由Google的開放原始碼工具Google Lighthouse提供支援。 所有Cloud Manager生產管道都啟用了此功能。
 
@@ -28,7 +33,7 @@ Cloud Manager中的「體驗審核」可確保網站上的使用者數位體驗�
 
 * 匯總層級度量會測量已針對效能、協助功能、最佳實務、搜尋引擎最佳化（SEO，搜尋引擎最佳化）所審核之頁面的平均分數。
    >[!NOTE]
-   >「漸進式網頁應用程式」(PWA)分數不包含在摘要分數中，而且只會顯示在頁面層級的報表詳細資料畫面中。
+   >「漸進式網頁應用程式(PWA)」分數不包含在摘要分數中，而且只會顯示在頁面層級的報表詳細資料畫面中。
 * 您也可以透過向下切入來取得個別頁面層級的分數。
 * 您可以取得分數的詳細資訊，以查看個別測試的結果，以及如何修正在體驗審核期間發現的任何問題的指引。
 * 測試結果的歷史記錄保存在Cloud Manager中，因此客戶可以查看在管道運行中引入的更改是否包含先前運行的任何回歸。
@@ -37,13 +42,13 @@ Cloud Manager中的「體驗審核」可確保網站上的使用者數位體驗�
 
 每種測試類型（例如效能、協助功能、SEO和最佳實務）都有匯總的等級分數。
 >[!NOTE]
->「漸進式網頁應用程式」(PWA)分數不包含在摘要分數中，而且只會顯示在頁面層級的報表詳細資料畫面中。
+>「漸進式網頁應用程式(PWA)」分數不包含在摘要分數中，而且只會顯示在頁面層級的報表詳細資料畫面中。
 
 匯總層級分數會取得執行中所包含之頁面的平均分數。 匯總層級的變更代表目前執行中頁面的平均分數，與前次執行的平均分數相比，即使設定為包含的頁面集合在執行之間已變更亦然。
 
 「變更」量度的值可能是下列其中一項：
 
-* **正值** -自上次生產管道執行以來，頁面在所選測試上已改善
+* **正值** -自上次生產管道執行以來，頁面在所選測試上已有所改善
 
 * **負值** -自上次生產管線執行以來，頁面在所選測試上已退縮
 
@@ -61,4 +66,3 @@ Cloud Manager中的「體驗審核」可確保網站上的使用者數位體驗�
 按一下任何個別頁面的詳細資訊，將會提供已評估頁面元素的資訊，並指引您在偵測到改善機會時修正問題。 Google Lighthouse提供測試的詳細資訊和相關指引。
 
 ![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
-
