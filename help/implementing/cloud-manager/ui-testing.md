@@ -1,18 +1,23 @@
 ---
-title: UI測試——雲端服務
-description: UI測試——雲端服務
+title: UI測試-Cloud Services
+description: UI測試-Cloud Services
+exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 translation-type: tm+mt
-source-git-commit: ea0c9675ca03b1d247c7e5fd13e03072fb4a13ae
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
 
-
 # UI測試{#ui-testing}
 
-UI測試是以Selenium為基礎的測試，封裝在Docker影像中，以允許在語言和架構（例如Java和Maven、Node和WebDriver.io，或任何以Selenium為基礎的其他架構和技術）中有廣泛選擇。 Docker映像可以使用標準工具建立，但在執行時必須遵守某些約定。 運行Docker映像時，會自動設定Selenium伺服器。 下列說明的執行時期慣例可讓您的測試程式碼同時存取Selenium伺服器和測試中的AEM例項。
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_uitesting"
+>title="UI測試"
+>abstract="UI測試是以Selenium為基礎的測試，封裝在Docker影像中，以允許在語言和架構（例如Java和Maven、Node和WebDriver.io，或任何以Selenium為基礎的其他架構和技術）中有廣泛選擇。 Docker映像可以使用標準工具建立，但在執行時必須遵守某些約定。 運行Docker映像時，會自動設定Selenium伺服器。 下面所述的執行時期慣例可讓您的測試程式碼同時存取Selenium伺服器和AEM測試中的例項。"
+
+UI測試是以Selenium為基礎的測試，封裝在Docker影像中，以允許在語言和架構（例如Java和Maven、Node和WebDriver.io，或任何以Selenium為基礎的其他架構和技術）中有廣泛選擇。 Docker映像可以使用標準工具建立，但在執行時必須遵守某些約定。 運行Docker映像時，會自動設定Selenium伺服器。 下面所述的執行時期慣例可讓您的測試程式碼同時存取Selenium伺服器和AEM測試中的例項。
 
 >[!NOTE]
 > 2021年2月10日之前建立的階段和生產管道需要更新，才能使用本頁所述的UI測試。
@@ -28,10 +33,10 @@ UI測試是以Maven專案產生的Docker建置內容為基礎。 Cloud Manager�
 
 為了生成Docker構建上下文，您需要一個Maven模組，該模組具有：
 
-- 生成一個包含`Dockerfile`的歸檔檔案，以及使用測試構建Docker映像所需的每個其他檔案。
+- 生成一個包含`Dockerfile`的歸檔檔案，以及使用測試構建Docker映像所需的所有其他檔案。
 - 使用`ui-test-docker-context`類元標籤存檔。
 
-要做到這一點，最簡單的方法是配置[Maven Assembly Plugin](http://maven.apache.org/plugins/maven-assembly-plugin/)以建立Docker構建上下文歸檔檔案並為其分配正確的類元。
+要做到這一點，最簡單的方法是配置[Maven Assembly Plugin](http://maven.apache.org/plugins/maven-assembly-plugin/)以建立Docker構建上下文歸檔檔案並為其指定正確的類元。
 
 您可以使用不同的技術和架構來建立UI測試，但本節假設您的專案是以類似下列的方式排版。
 
@@ -121,12 +126,12 @@ UI測試是以Maven專案產生的Docker建置內容為基礎。 Cloud Manager�
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium伺服器的URL |
 | `SELENIUM_BROWSER` | `chrome`, `firefox` | Selenium Server使用的瀏覽器實作 |
-| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM作者例項的URL |
-| `AEM_AUTHOR_USERNAME` | `admin` | 要登入AEM作者例項的使用者名稱 |
-| `AEM_AUTHOR_PASSWORD` | `admin` | 登入AEM作者例項的密碼 |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM發佈例項的URL |
-| `AEM_PUBLISH_USERNAME` | `admin` | 要登入AEM發佈例項的使用者名稱 |
-| `AEM_PUBLISH_PASSWORD` | `admin` | 登入AEM發佈例項的密碼 |
+| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | 作者例項的AEMURL |
+| `AEM_AUTHOR_USERNAME` | `admin` | 要登入作者例項的使AEM用者名稱 |
+| `AEM_AUTHOR_PASSWORD` | `admin` | 登入作者例項的AEM密碼 |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | 發佈例項的AEMURL |
+| `AEM_PUBLISH_USERNAME` | `admin` | 要登入發佈例項的使AEM用者名稱 |
+| `AEM_PUBLISH_PASSWORD` | `admin` | 登入發佈例項的AEM密碼 |
 | `REPORTS_PATH` | `/usr/src/app/reports` | 必須儲存測試結果的XML報表的路徑 |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | 必須上傳檔案至的URL，才能讓Selenium存取檔案 |
 
@@ -141,11 +146,11 @@ UI測試是以Maven專案產生的Docker建置內容為基礎。 Cloud Manager�
 
 ### 產生測試報表{#generate-test-reports}
 
-Docker映像必須以JUnit XML格式生成測試報告，並將其保存在環境變數`REPORTS_PATH`指定的路徑中。 JUnit XML格式是報告測試結果的一種廣泛格式。 如果Docker映像使用Java和Maven，則[Maven Surefire Plugin](https://maven.apache.org/surefire/maven-surefire-plugin/)和[Maven Failsafe Plugin](https://maven.apache.org/surefire/maven-failsafe-plugin/)。 如果Docker映像是使用其他寫程式語言或測試運行者實施的，請查看文檔中的所選工具以瞭解如何生成JUnit XML報告。
+Docker映像必須生成JUnit XML格式的測試報告，並將它們保存在環境變數`REPORTS_PATH`指定的路徑中。 JUnit XML格式是報告測試結果的一種廣泛格式。 如果Docker映像使用Java和Maven，則[Maven Surefire Plugin](https://maven.apache.org/surefire/maven-surefire-plugin/)和[Maven Failsafe Plugin](https://maven.apache.org/surefire/maven-failsafe-plugin/)。 如果Docker映像是使用其他寫程式語言或測試運行者實施的，請查看文檔中的所選工具以瞭解如何生成JUnit XML報告。
 
 ### 上傳檔案(#upload-files)
 
 測試有時必須將檔案上傳至測試中的應用程式。 為了維持Selenium相對於測試的部署彈性，無法直接將資產上傳至Selenium。 而上傳檔案則會執行一些中介步驟：
 
-1. 在`UPLOAD_URL`環境變數指定的URL上傳檔案。 上傳必須在含多部分表單的單一POST請求中執行。 多部件表單必須有一個檔案欄位。 這等效於`curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`。 請參閱Docker影像中使用之程式設計語言的檔案和程式庫，瞭解如何執行此類HTTP要求。
+1. 在`UPLOAD_URL`環境變數指定的URL上傳檔案。 上傳必須在具有多部分表單的POST請求中執行。 多部件表單必須有一個檔案欄位。 這等效於`curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`。 請參閱Docker影像中使用之程式設計語言的檔案和程式庫，瞭解如何執行此類HTTP要求。
 2. 如果上傳成功，請求會傳回類型`text/plain`的`200 OK`回應。 響應的內容是不透明檔案句柄。 您可以使用此控制代碼來取代`<input>`元素中的檔案路徑，以測試應用程式中的檔案上傳。
