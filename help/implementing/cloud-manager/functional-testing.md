@@ -1,18 +1,25 @@
 ---
 title: 功能測試-Cloud Services
 description: 功能測試-Cloud Services
+exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 translation-type: tm+mt
-source-git-commit: 765334cff443d56e37f578647af4bcd133509481
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '865'
 ht-degree: 2%
 
 ---
 
-
 # 功能測試{#functional-testing}
 
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_functionaltesting"
+>title="功能測試"
+>abstract="功能測試分為產品功能測試、自訂功能測試、自訂UI測試三種類型"
+
 功能測試分為三種類型：
+
 
 * 產品功能測試
 * 自訂功能測試
@@ -124,4 +131,3 @@ ht-degree: 2%
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
-
