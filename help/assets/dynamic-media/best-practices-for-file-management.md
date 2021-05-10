@@ -6,9 +6,9 @@ feature: 資產管理，影像描述檔，視訊描述檔
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 使用「Dynamic Media影像描述檔」或「視訊描述檔」的重要概念，是指派給資料夾。 描述檔中是影像或視訊的設定。 這些設定會處理資料夾的內容及其任何子檔案夾。 因此，命名檔案和檔案夾、排列子檔案夾和處理這些檔案夾中檔案的方式，會影響描述檔處理這些資產的方式。
 
-透過使用一致且適當的檔案和資料夾命名策略，以及良好的中繼資料實務，您可以充份運用您的數位資產收集，並確保正確的檔案由正確的描述檔處理。
+透過使用一致且適當的檔案和資料夾命名策略，以及良好的中繼資料實務，您可充份運用您的數位資產收集，並確保正確的檔案由正確的描述檔處理。
 
 請參閱[關於Dynamic Media影像配置檔案和視頻配置檔案](about-image-video-profiles.md)。
 
