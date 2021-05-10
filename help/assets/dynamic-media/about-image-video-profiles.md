@@ -1,16 +1,16 @@
 ---
 title: 關於Dynamic Media影像配置檔案和視頻配置檔案
 description: 「影像描述檔」或「視訊描述檔」是套用至您上傳至資料夾之資產的選項的方式。 例如，您可以指定要套用至您上傳之Dynamic Media視訊資產的視訊編碼。 或者，要套用至Dynamic Media影像資產的影像描述檔，以便正確裁切。
-feature: Asset Management,Image Profiles,Video Profiles
+feature: 資產管理，影像描述檔，視訊描述檔
 role: Administrator,Business Practitioner
+exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1282'
 ht-degree: 2%
 
 ---
-
 
 # 關於Dynamic Media影像配置檔案和視頻配置檔案{#about-dm-image-video-profiles}
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 您可以對第一次處理失敗的資產執行重新處理工作流程。 即使您尚未編輯影像描述檔或視訊描述檔，或已套用影像描述檔或視訊描述檔，您仍可隨時對資產資料夾執行重新處理工作流程。
 
-您可以選擇調整重新處理工作流的批大小，從預設的50個資產調整到1000個資產。 運行&#x200B;_Scene7時：在資料夾上重新處理資產_&#x200B;工作流程，資產會分批分組，然後傳送至Dynamic Media伺服器進行處理。 處理後，整個批集中每個資產的中繼資料會在上更新AEM。 如果批次大小較大，您會遇到處理延遲。 或者，如果批次大小太小，則可能導致往返Dynamic Media伺服器的次數過多。
+您可以選擇調整重新處理工作流的批大小，從預設的50個資產調整到1000個資產。 運行&#x200B;_Scene7時：在資料夾上重新處理資產_&#x200B;工作流程，資產會分批分組，然後傳送至Dynamic Media伺服器進行處理。 在處理後，整個批集中每個資產的中繼資料會在Adobe Experience Manager更新。 如果批次大小較大，您會遇到處理延遲。 或者，如果批次大小太小，則可能導致往返Dynamic Media伺服器的次數過多。
 
 請參閱[調整重新處理工作流的批大小](#adjusting-load)。
 
@@ -59,8 +59,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**要重新處理資料夾中的Dynamic Media資產**:
-1. 在Adobe Experience Manager，從「資產」頁面瀏覽至已指派影像描述檔或視訊描述檔且您要套用&#x200B;**Scene7的Dynamic Media資產資料夾：重新處理資產**&#x200B;工作流程，
+**要重新處理資料夾中的Dynamic Media資產，請執行以下操作：**
+1. 在Experience Manager中，從「資產」頁面瀏覽至資產檔案夾，該檔案夾已指派影像描述檔或視訊描述檔，且您要套用&#x200B;**Scene7:重新處理資產**&#x200B;工作流。
 
    指派影像描述檔或視訊描述檔的檔案夾，其名稱會直接顯示在「卡片檢視」中的檔案夾名稱下方。
 
@@ -87,7 +87,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### 調整重新處理工作流的批大小{#adjusting-load}
 
-（可選）重新處理工作流程中的預設批次大小是每個工作50個資產。 此最佳批次大小由執行重新處理之資產的平均資產大小和MIME類型所控制。 值越高，表示您在單一重新處理工作中擁有許多檔案。 因此，處理橫幅會在Experience Manager資產上停留較長時間。 但是，如果平均檔案大小為1 MB或以下，則建議您將值增加到幾百，但不要超過1000。 如果檔案的平均大小為數百MB,Adobe建議您將批處理大小降低至10。
+（可選）重新處理工作流程中的預設批次大小是每個工作50個資產。 此最佳批次大小由執行重新處理之資產的平均資產大小和MIME類型所控制。 值越高，表示您在單一重新處理工作中擁有許多檔案。 因此，處理橫幅會在Experience Manager資產上停留較長時間。 但是，如果平均檔案大小為1 MB或以下，則建議您將值增加為100，但不要超過1000。 如果平均檔案大小為數百兆位元組，Adobe建議您將批處理大小最多降低10。
 
 **（可選）要調整重新處理工作流的批大小**:
 
