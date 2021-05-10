@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
+source-git-commit: 7732a291d070a5d93a6f490877b909e1331be1e2
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1270'
 ht-degree: 2%
 
 ---
@@ -55,102 +55,99 @@ Assets REST API是以Cloud Service版本形式提供於最近Adobe Experience Ma
 
 ## Assets HTTP API {#assets-http-api}
 
-[Assets HTTP API](/help/assets/mac-api-assets.md)包含：
+資產HTTP API包含：
 
 * 資產REST API
 * 包括支援內容片段
 
-資產HTTP API的目前實作是以&#x200B;**REST**&#x200B;架構樣式為基礎。
-
-Assets REST API可讓Adobe Experience Manager的開發人員以Cloud Service身分，透過&#x200B;**CRUD**&#x200B;作業（建立、讀取、更新、刪除），直接透過HTTP API存取內容(儲存於AEM)。
+資產HTTP API的目前實作是以&#x200B;**REST**&#x200B;架構樣式為基礎，可讓您透過&#x200B;**CRUD**&#x200B;作業（建立、讀取、更新、刪除）存取內容(儲存於AEM)。
 
 透過這些操作，API可讓您將Adobe Experience Manager作為無頭CMS（內容管理系統）的Cloud Service，以JavaScript前端應用程式提供內容服務的方式運作。 或是任何其他可執行HTTP要求和處理JSON回應的應用程式。 例如，「單頁應用程式」(SPASingle Page Applications)、架構或自訂需要透過API提供的內容，通常是JSON格式。
 
+<!--
 >[!NOTE]
 >
->無法從Assets REST API自訂JSON輸出。
+>It is not possible to customize JSON output from the Assets REST API. 
 
-資產REST API:
+The Assets REST API:
 
-* 遵循HATEOAS原則
-* 實現SIREN格式
+* follows the HATEOAS principle
+* implements the SIREN format
 
-## 重要概念 {#key-concepts}
+## Key Concepts {#key-concepts}
 
-資產REST API提供對儲存在例項中的資產的REST樣式AEM存取。
+The Assets REST API offers REST-style access to assets stored within an AEM instance. 
 
-它使用`/api/assets`端點，並要求資產的路徑來存取它（沒有前導`/content/dam`）。
+It uses the `/api/assets` endpoint and requires the path of the asset to access it (without the leading `/content/dam`). 
 
-* 這表示若要存取資產，請造訪：
-   * `/content/dam/path/to/asset`
-* 您需要要求：
-   * `/api/assets/path/to/asset`
+* This means that to access the asset at:
+  * `/content/dam/path/to/asset`
+* You need to request:
+  * `/api/assets/path/to/asset` 
 
-例如，若要存取`/content/dam/wknd/en/adventures/cycling-tuscany`，請求`/api/assets/wknd/en/adventures/cycling-tuscany.json`
-
->[!NOTE]
->存取：
->
->* `/api/assets` **不** 需要使用選擇 `.model` 器。
->* `/content/path/to/page` **需** 要使用選擇 `.model` 器。
-
-
-HTTP方法確定要執行的操作：
-
-* **GET** -擷取資產或資料夾的JSON表示法
-* **POST** -建立新資產或檔案夾
-* **PUT** -更新資產或資料夾的屬性
-* **DELETE** -刪除資產或資料夾
+For example, to access `/content/dam/wknd/en/adventures/cycling-tuscany`, request `/api/assets/wknd/en/adventures/cycling-tuscany.json` 
 
 >[!NOTE]
+>Access over:
 >
->請求正文和／或URL參數可用於配置其中的一些操作；例如，定義資料夾或資產應由&#x200B;**POST**&#x200B;請求建立。
+>* `/api/assets` **does not** need the use of the `.model` selector.
+>* `/content/path/to/page` **does** require the use of the `.model` selector.
 
-支援請求的確切格式已在API參考檔案中定義。
+The HTTP method determines the operation to be executed:
 
-### 事務行為{#transactional-behavior}
-
-所有請求都是原子的。
-
-這表示後續(`write`)請求無法合併為單一實體可能成功或失敗的單一交易。
-
-### 安全性 {#security}
-
-如果Assets REST API是在沒有特定驗證要求的環境中使用，AEMCORS篩選器必須正確設定。
+* **GET** - to retrieve a JSON representation of an asset or a folder
+* **POST** - to create new assets or folders
+* **PUT** - to update the properties of an asset or folder
+* **DELETE** - to delete an asset or folder
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱：
->
->* CORS/AEM說明
->* 視訊——針對CORS進行開發，具AEM備
+>The request body and/or URL parameters can be used to configure some of these operations; for example, define that a folder or an asset should be created by a **POST** request.
 
+The exact format of supported requests is defined in the API Reference documentation. 
 
-在具有特定驗證需求的環境中，建議使用OAuth。
+### Transactional Behavior {#transactional-behavior}
 
-## 可用功能{#available-features}
+All requests are atomic.
 
-「內容片段」是特定的資產類型，請參閱使用內容片段。
+This means that subsequent (`write`) requests cannot be combined into a single transaction that could succeed or fail as a single entity.
 
-如需透過API提供之功能的詳細資訊，請參閱：
+### Security {#security}
 
-* 資產REST API（其他資源）
-* 實體類型，其中說明每個支援類型的特定功能（與內容片段相關）
-
-### 尋呼{#paging}
-
-資產REST API支援透過URL參數進行分頁(針對GET請求):
-
-* `offset` -要檢索的第一個（子）實體的編號
-* `limit` -傳回的實體數上限
-
-響應將包含作為SIREN輸出`properties`部分的分頁資訊。 此`srn:paging`屬性包含請求中指定的（子）實體(`total`)總數、偏移和限制(`offset`、`limit`)。
+If the Assets REST API is used within an environment without specific authentication requirements, AEM's CORS filter needs to be configured correctly.
 
 >[!NOTE]
 >
->分頁通常套用至容器實體（即資料夾或具有轉譯的資產），因為它與所請求實體的子系相關。
+>For further information see:
+>
+>* CORS/AEM explained
+>* Video - Developing for CORS with AEM
 
-#### 範例：尋呼{#example-paging}
+In environments with specific authentication requirements, OAuth is recommended.
+
+## Available Features {#available-features}
+
+Content Fragments are a specific type of Asset, see Working with Content Fragments.
+
+For further information about features available through the API see:
+
+* The Assets REST API (Additional Resources) 
+* Entity Types, where the features specific to each supported type (as relevant to Content Fragments) are explained 
+
+### Paging {#paging}
+
+The Assets REST API supports paging (for GET requests) via the URL parameters:
+
+* `offset` - the number of the first (child) entity to retrieve
+* `limit` - the maximum number of entities returned
+
+The response will contain paging information as part of the `properties` section of the SIREN output. This `srn:paging` property contains the total number of (child) entities ( `total`), the offset and the limit ( `offset`, `limit`) as specified in the request.
+
+>[!NOTE]
+>
+>Paging is typically applied on container entities (i.e. folders or assets with renditions), as it relates to the children of the requested entity.
+
+#### Example: Paging {#example-paging}
 
 `GET /api/assets.json?offset=2&limit=3`
 
@@ -168,33 +165,34 @@ HTTP方法確定要執行的操作：
 ...
 ```
 
-## 實體類型{#entity-types}
+## Entity Types {#entity-types}
 
-### 資料夾 {#folders}
+### Folders {#folders}
 
-資料夾可當成資產和其他資料夾的容器。 它們反映了內容儲存庫AEM的結構。
+Folders act as containers for assets and other folders. They reflect the structure of the AEM content repository.
 
-Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題等。 資產會以資料夾的子實體和子資料夾的形式公開。
+The Assets REST API exposes access to the properties of a folder; for example its name, title, etc. Assets are exposed as child entities of folders, and sub-folders.
 
 >[!NOTE]
 >
->根據子資產和資料夾的資產類型，子實體清單可能已包含定義各子實體的完整屬性集。 或者，在該子實體清單中，僅可針對實體公開一組縮小的屬性。
+>Depending on the asset type of the child assets and folders the list of child entities may already contain the full set of properties that defines the respective child entity. Alternatively, only a reduced set of properties may be exposed for an entity in this list of child entities.
 
-### 資產 {#assets}
+### Assets {#assets}
 
-如果要求資產，回應會傳回其中繼資料；例如標題、名稱及由個別資產架構定義的其他資訊。
+If an asset is requested, the response will return its metadata; such as title, name and other information as defined by the respective asset schema.
 
-資產的二進位資料以`content`類型的SIREN連結的形式公開。
+The binary data of an asset is exposed as a SIREN link of type `content`.
 
-資產可以有多個轉譯。 這些項目通常以子實體形式公開，但有一個例外是縮略圖格式副本，它以類型`thumbnail`(`rel="thumbnail"`)的連結形式公開。
+Assets can have multiple renditions. These are typically exposed as child entities, one exception being a thumbnail rendition, which is exposed as a link of type `thumbnail` ( `rel="thumbnail"`).
+-->
 
-### 內容片段 {#content-fragments}
+## 資產HTTP API和內容片段{#assets-http-api-content-fragments}
 
-「內容片段」是特殊的資產類型。 它們可用於存取結構化資料，例如文字、數字、日期等。
+內容片段用於無頭傳送，而內容片段是特殊類型的資產。 它們用於存取結構化資料，例如文字、數字、日期等。
 
 由於&#x200B;*standard*&#x200B;資產（例如影像或音訊）有數項差異，因此處理資產時會套用一些其他規則。
 
-#### 表示{#representation}
+### 表示{#representation}
 
 內容片段：
 
@@ -203,21 +201,54 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 
 * 也被視為原子，即元素和變化作為片段屬性的一部分而暴露，而不是作為連結或子實體。 這允許有效訪問片段的負載。
 
-#### 內容模型和內容片段{#content-models-and-content-fragments}
+### 內容模型和內容片段{#content-models-and-content-fragments}
 
 目前，定義內容片段結構的模型不會透過HTTP API公開。 因此，*consumer*&#x200B;需要瞭解片段的模型（至少是最小值）-儘管大部分資訊可以從負載中推斷出來；資料類型等。 是定義的一部分。
 
 要建立新內容片段，必須提供模型的（內部儲存庫）路徑。
 
-#### 相關聯的內容 {#associated-content}
+### 相關聯的內容 {#associated-content}
 
 相關內容目前未公開。
 
 ## 使用資產REST API {#using-aem-assets-rest-api}
 
+### 存取 {#access}
+
+Assets REST API使用`/api/assets`端點，並需要資產路徑來存取它（沒有前導`/content/dam`）。
+
+* 這表示若要存取資產，請造訪：
+   * `/content/dam/path/to/asset`
+* 您需要要求：
+   * `/api/assets/path/to/asset`
+
+例如，若要存取`/content/dam/wknd/en/adventures/cycling-tuscany`，請求`/api/assets/wknd/en/adventures/cycling-tuscany.json`
+
+>[!NOTE]
+>存取：
+>
+>* `/api/assets` **不** 需要使用選擇 `.model` 器。
+>* `/content/path/to/page` **需** 要使用選擇 `.model` 器。
+
+
+### 操作{#operation}
+
+HTTP方法確定要執行的操作：
+
+* **GET** -擷取資產或資料夾的JSON表示法
+* **POST** -建立新資產或檔案夾
+* **PUT** -更新資產或資料夾的屬性
+* **DELETE** -刪除資產或資料夾
+
+>[!NOTE]
+>
+>請求正文和／或URL參數可用於配置其中的一些操作；例如，定義資料夾或資產應由&#x200B;**POST**&#x200B;請求建立。
+
+支援請求的確切格式已在API參考檔案中定義。
+
 使用情形可能因您使用作者或發AEM布環境以及特定使用案例而異。
 
-* 強烈建議建立作業系結至作者例項（[，目前無法使用此API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)復製片段以發佈）。
+* 強烈建議建立作業系結至作者例項（目前無法使用此API復製片段以發佈）。
 * 兩者皆可傳送，因AEM為僅以JSON格式提供要求的內容。
 
    * 從作者實例AEM儲存和傳送應足以在防火牆後提供媒體庫應用程式。
@@ -230,7 +261,7 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager資產API —— 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>如需詳細資訊，請參閱API參考。 尤其是[Adobe Experience Manager資產API —— 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
 
 ### 讀取／傳送{#read-delivery}
 
@@ -299,6 +330,7 @@ Assets REST API會公開資料夾屬性的存取權；例如其名稱、標題�
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [內容片段REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
+* [Adobe Experience Manager資產API —— 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 * [使用內容片段](/help/assets/content-fragments/content-fragments.md)
 * [AEM 核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM說明](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
