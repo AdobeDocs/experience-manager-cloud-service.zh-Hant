@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
+source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
 workflow-type: tm+mt
-source-wordcount: '1752'
-ht-degree: 1%
+source-wordcount: '1830'
+ht-degree: 2%
 
 ---
 
@@ -211,17 +211,21 @@ ht-degree: 1%
 
 ### 建立內容片段模型{#creating-content-fragment-models}
 
-首先，您的網站會啟用內容片段模型，這是在設定瀏覽器中完成：
+一開始，您需要為您的網站啟用內容片段模型，這是在設定瀏覽器中完成；在「工具」->「常規」->「配置瀏覽器」下。 您可以選擇配置全局條目或建立新配置。 例如：
 
 ![定義配置](assets/cfm-configuration.png)
 
-然後可以建立內容片段模型：
+>[!NOTE]
+>
+>請參閱設定瀏覽器中的其他資源——內容片段
+
+然後可建立內容片段模型並定義結構。 這可在「工具」->「資產」->「內容片段模型」下完成。 例如：
 
 ![內容片段模型](assets/cfm-model.png)
 
 >[!NOTE]
 >
->請參閱使用內容片段。
+>請參閱其他資源——內容片段模型。
 
 ## 使用模型製作內容片段{#use-content-to-author-content}
 
@@ -229,7 +233,9 @@ ht-degree: 1%
 
 ### 選擇適當的型號{#select-model}
 
-實際建立內容的第一步是建立內容片段。 這是以特定的內容片段模型為基礎，您會選取該模型作為建立程式的第一步。
+實際建立內容的第一步是建立內容片段。 這是使用「資產」->「檔案」下所需資料夾中的「建立->內容片段」來完成。 嚮導將引導您完成這些步驟。
+
+內容片段是以您選取做為建立程式第一步的特定內容片段模型為基礎。
 
 ### 建立和編輯結構化內容{#create-edit-structured-content}
 
@@ -251,7 +257,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->請參閱使用內容片段。
+>請參閱其他資源——使用內容片段。
 
 ## 開始使用某些範例{#getting-started-examples}
 
