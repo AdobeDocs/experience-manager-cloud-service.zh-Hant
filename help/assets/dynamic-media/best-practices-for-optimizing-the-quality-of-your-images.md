@@ -1,14 +1,14 @@
 ---
 title: 影像品質最佳化的最佳作法
-description: 瞭解您可在Dynamic Media使用的最佳實務，以最佳化影像資產的品質。
+description: 瞭解使用Dynamic Media最佳化影像資產品質的最佳範例。
 contentOwner: Rick Brough
 feature: 資產管理
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1478'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 最佳化影像品質可能相當耗時，因為許多因素都有助於產生可接受的結果。 結果部分是主觀的，因為個體對影像質量的看法不同。 結構化實驗是關鍵。
 
-包AEM含超過100個Dynamic Media影像傳送指令，以調整和最佳化影像和轉譯結果。 以下准則可協助您使用一些基本指令和最佳實務，簡化程式並快速達成良好效果。
+Adobe Experience Manager公司提供100多個Dynamic Media影像傳送命令，用於調整和優化影像和渲染結果。 以下准則可協助您使用一些基本指令和最佳實務，簡化程式並快速達成良好效果。
 
 ## 影像格式(`&fmt=`){#best-practices-for-image-format-fmt}的最佳實務
 
@@ -41,13 +41,13 @@ ht-degree: 5%
 
 ## 影像銳利化的最佳範例{#best-practices-for-image-sharpening}
 
-影像銳利化是控制網站上影像最複雜的方面，也是許多錯誤的發生地。 請花點時間參考下列實用資源，進一步瞭解銳利化和反銳AEM化遮色片的運作方式：
+影像銳利化是控制網站上影像最複雜的方面，也是許多錯誤的發生地。 請花點時間參考下列實用資源，進一步瞭解銳利化和反銳利化遮色片在Experience Manager中的運作方式：
 
-* 最佳實務白皮書[「銳利化AdobeDynamic Media經典影像」(Sharpening images in Section Design Classic)也適AEM用於。](/help/assets/dynamic-media/assets/sharpening_images.pdf)
+* 最佳實務白皮書[「AdobeDynamic Media經典影像品質與銳利化最佳實務」](/help/assets/dynamic-media/assets/sharpening_images.pdf)也適用於Experience Manager。
 
-* 觀看「使用影像銳利化與Dynamic MediaAEM](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)」。[
+* 觀看[使用Experience Manager銳利化影像-Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)。
 
-您可AEM以在擷取、傳送或兩者上銳利化影像。 但是，通常最好只使用一種或另一種方法來銳利化影像，但不同時使用兩種方法。 在URL上的傳送時銳利化影像，通常能提供最佳效果。
+有了Experience Manager，您就可以在擷取、傳送或兩者上銳利化影像。 但是，通常最好只使用一種或另一種方法來銳利化影像，但不同時使用兩種方法。 在URL上的傳送時銳利化影像，通常能提供最佳效果。
 
 您可使用兩種影像銳利化方法：
 
@@ -66,11 +66,11 @@ ht-degree: 5%
 
       如需如何設定這三個參數的詳細資訊，包括搭配篩選器使用的最佳實務，請參閱下列資源：
 
-      銳AEM化影像的說明主題。
+      * 最佳實務白皮書[「AdobeDynamic Media經典影像品質與銳利化最佳實務」](/help/assets/dynamic-media/assets/sharpening_images.pdf)也適用於Experience Manager。
 
-      最佳實務白皮書[AdobeDynamic Media經典影像品質與銳利化最佳實務](/help/assets/dynamic-media/assets/sharpening_images.pdf)。
+      * 觀看[使用Experience Manager銳利化影像-Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)。
 
-      * AEM也可讓您控制第四個參數：單色(0,1)。 此參數確定是否使用值0將銳利化遮色片分別套用至每個顏色元件，或使用值1將遮色片套用至影像亮度／強度。
+      * Experience Manager也可讓您控制第四個參數：單色(0,1)。 此參數確定是否使用值0將銳利化遮色片分別套用至每個顏色元件，或使用值1將遮色片套用至影像亮度／強度。
 
 
 
@@ -100,7 +100,7 @@ JPG壓縮的最佳實務是使用`&qlt=85,0`。
 
 ## JPEG大小調整(`&jpegSize=`){#best-practices-for-jpeg-sizing-jpegsize}的最佳做法
 
-`jpegSize` 如果您想要確保影像不會超過傳送至記憶體有限之裝置的特定大小，則此參數很實用。
+如果您想要保證影像不會超過特定大小，以傳送至記憶體有限的裝置，則`jpegSize`參數很實用。
 
 * 此參數以千位元組(`jpegSize=&lt;size_in_kilobytes&gt;`)為單位設定。 它定義影像傳送的允許大小上限。
 * `&jpegSize=` 與JPG壓縮參數互動 `&qlt=`。如果具有指定JPG壓縮參數(`&qlt=`)的JPG回應未超過jpegSize值，則會傳回已定義的`&qlt=`影像。 否則，`&qlt=`會逐漸縮小，直到影像符合允許的最大大小，或直到系統判斷它無法符合併傳回錯誤為止。
@@ -123,4 +123,4 @@ JPG壓縮的最佳實務是使用`&qlt=85,0`。
 
 * 直接在URL上即時嘗試並測試不同的參數。
 * 請記住，您可以將「Dynamic Media影像伺服」指令群組至影像預設集。 影像預設集基本上是具有自訂預設集名稱（例如`$thumb_low$`和`&product_high$`）的URL命令巨集。 URL路徑中的自訂預設集名稱會呼叫這些預設集。 這些功能可協助您管理網站上不同影像使用模式的命令和品質設定，並縮短URL的整體長度。
-* Experience Manager也提供更進階的影像品質調整方式，例如在擷取時套用銳利化影像。 若要調整並最佳化演算結果，[Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html)可協助您自訂見解和最佳實務。
+* Experience Manager也提供更進階的影像品質調整方式，例如在擷取時套用銳利化影像。 若要調整並最佳化演算結果，[Adobe的諮詢服務](https://business.adobe.com/customers/consulting-services/main.html)可協助您取得自訂見解和最佳實務。
