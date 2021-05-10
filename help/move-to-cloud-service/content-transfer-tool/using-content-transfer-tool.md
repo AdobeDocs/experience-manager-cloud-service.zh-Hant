@@ -3,10 +3,10 @@ title: 使用內容轉移工具
 description: 使用內容轉移工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: d55eb86afd9973e428c8738db181f79dcd55accb
+source-git-commit: 42c6d904fb484435572544147936b50b9a277dcf
 workflow-type: tm+mt
-source-wordcount: '2675'
-ht-degree: 47%
+source-wordcount: '2731'
+ht-degree: 46%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 47%
 
 * 製作的&#x200B;*擷取階段*&#x200B;將縮小整個製作部署。這表示在整段擷取程序中，將無法使用製作 AEM。此外，請確保在運行&#x200B;*Ingestion*&#x200B;階段時不執行Cloud Manager管道。
 
+* 當使用`Amazon S3`或`Azure`作為源系統上的資料儲存時，應配置資料儲存AEM，以便不能刪除儲存的Blob（垃圾回收）。 這是為了確保索引資料的完整性。 如果未能以這種方式配置，可能會導致提取失敗，因為此索引資料缺乏完整性。
 
 ## 可用性 {#availability}
 
