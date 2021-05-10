@@ -6,9 +6,9 @@ feature: 影像預設集，檢視器預設集
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '3444'
+source-wordcount: '3435'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ ht-degree: 1%
 
 [!DNL Dynamic Media]中的&#x200B;**[!UICONTROL 批集預設集]**&#x200B;頁面可讓您建立、編輯或刪除批集預設集，以及將批集預設集套用或從資產檔案夾移除。 您可以使用表單欄位下拉式清單來定義批次集預設集，或使用「原始程式碼」欄位（可讓您輸入規則運算式語法）。****
 
-您可以視需要建立任意數量的批次集預設集，以涵蓋所有需要的資產收錄工作。
+您可以建立許多批次設定預設集，以涵蓋所有需要的資產收錄工作。
 
-**關於資產命名慣例**
+### 關於資產命名慣例
 
 **[!UICONTROL 批集預設集]**&#x200B;頁面上的&#x200B;**[!UICONTROL 資產命名約定]**&#x200B;區域包含兩個元素，可用來定義批集預設集：**[!UICONTROL Match]**&#x200B;和&#x200B;**[!UICONTROL 基本名稱]**。 這些元素可讓您定義命名慣例，並識別用來命名其所包含之集之約定的部分。<!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 `(\w+)-\w+-\w+`
 
-**關於序列順序**
+### 關於序列順序
 
 您可以選擇定義在[!DNL Dynamic Media]中對影像集或旋轉集分組後顯示影像的順序。 依預設，資產會以英數字元排序。 不過，您可以使用逗號分隔的規則運算式清單來定義順序。
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 **要為影像集或回轉集建立批集預設集：**
 
-1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
+1. 點選Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -113,7 +113,7 @@ ht-degree: 1%
 | 包括衍生資產 | 選填。要使[!DNL Dynamic Media]的IPS（映像生產系統）包含已生成或「派生」的映像以及回轉集或映像集，請選擇&#x200B;**[!UICONTROL 是]**（預設）。 衍生資產是使用者未直接上傳的影像。 而是由IPS在上傳主資產時產生的資產。 例如，IPS在[!DNL Dynamic Media]中上傳PDF時，從PDF的頁面產生的影像資產，會被視為衍生資產。 |
 | 目的地資料夾 | 選填。如果您定義大量的影像集或回轉集，Adobe建議您將這些集與包含資產本身的檔案夾分開。 因此，請考慮建立「影像集」或「回轉集」檔案夾，並將應用程式重新導向至此處放置產生的批次集。<br>在這種情況下，請指定「Experience Manager資產」檔案夾結構(`/content/dam`)中哪個檔案夾具有作用中的批次集預設集。請確定該資料夾已啟用[!DNL Dynamic Media]同步，以允許其作為目標資料夾。 請參閱[在Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)的資料夾層級設定選擇性發佈。<br>如果您透過資料夾的「屬性」套用預設集，多個資料夾可以指派給指定的批次集預 **[!UICONTROL 設集]**。請參閱[從資產資料夾的「屬性」頁面](#apply-bsp-to-folders-via-properties)套用批次集預設集。<br>如果您未指定檔案夾，則會在與您上傳的資產檔案夾相同的檔案夾中，建立批次集預設產生的影像集或回轉集。 |
 | **[!UICONTROL 設定命名慣例]** |  |
-| 前置詞<br>或<br>尾碼 | 選填。在各自的欄位中輸入前置詞、尾碼或兩者。<br>前置詞和尾碼欄位允許您使用特定內容集的備用自定義檔案命名慣例建立盡可能多的批集預設。在公司定義的預設命名方案有例外的情況下，此方法特別有用。<br>首碼或尾碼將添加到您在「資 **[!UICONTROL 產命]** 名約定」區域中定 **[!UICONTROL 義的「基本]** 名稱」。借由新增前置詞或後置詞，您可以確保影像集或回轉集會以獨立方式與其他資產建立。 它也可協助其他人識別檔案類型。 例如，要確定使用的顏色模式，可以添加前置詞或尾碼`rgb`或`cmyk`。<br>雖然使用批處理集預設功能不需要指定集命名約定，但最佳做法建議您使用集命名約定。此實務可讓您定義想要在一組中分組的命名慣例元素，以簡化批次集的建立。 |
+| 前置詞<br>或<br>尾碼 | 選填。在各自的欄位中輸入前置詞、尾碼或兩者。<br>前置詞和尾碼欄位允許您使用特定內容集的替代自定義檔案命名慣例建立許多批集預設。在公司定義的預設命名方案有例外的情況下，此方法特別有用。<br>首碼或尾碼將添加到您在「資 **[!UICONTROL 產命]** 名約定」區域中定 **[!UICONTROL 義的「基本]** 名稱」。借由新增前置詞或後置詞，您可以確保影像集或回轉集會以獨立方式與其他資產建立。 它也可協助其他人識別檔案類型。 例如，要確定使用的顏色模式，可以添加前置詞或尾碼`rgb`或`cmyk`。<br>雖然使用批處理集預設功能不需要指定集命名約定，但最佳做法建議您使用集命名約定。此實務可讓您定義想要在一組中分組的命名慣例元素，以簡化批次集的建立。 |
 | **[!UICONTROL 規則結果 - RegX]** |  |
 | 資產命名慣例——符合 | 唯讀. 根據您選擇的「符合」表單選項或您輸入的原始程式碼，顯示規則運算式語法。 |
 | 資產命名慣例——基本名稱 | 唯讀. 根據您選擇的「基本名稱」表單選項或您輸入的原始程式碼顯示規則運算式語法。 |
@@ -143,7 +143,7 @@ ht-degree: 1%
 
 ### 從「批集預設集」頁{#apply-bsp-to-folders-via-bsp-page}將批集預設集套用至資產檔案夾
 
-1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
+1. 點選Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
 1. 在&#x200B;**[!UICONTROL 批集預設集]**&#x200B;頁面的&#x200B;**[!UICONTROL 預設集名稱]**&#x200B;列左側，選中要應用於資料夾的每個批集預設集的複選框。
 1. 在工具列中，點選「**[!UICONTROL 將批次預設套用至資料夾]**」。
 1. 在&#x200B;**[!UICONTROL 「選擇資料夾]**」頁上，選中要應用批集預設的每個資料夾的複選框。
@@ -151,7 +151,7 @@ ht-degree: 1%
 
 ### 從資產資料夾的「屬性」頁面{#apply-bsp-to-folders-via-properties}套用批次集預設集
 
-1. 點選Adobe Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**。
+1. 點選Experience Manager標誌並導覽至「**[!UICONTROL 資產]** > **[!UICONTROL 檔案]**」。
 1. 導覽至您要套用一或多個批次集預設集的檔案夾。
 1. 在頁面上，選擇&#x200B;**[!UICONTROL Name]**&#x200B;列左側的資料夾複選框。
 1. 在工具列中，點選&#x200B;**[!UICONTROL 屬性]**。
@@ -179,7 +179,7 @@ ht-degree: 1%
 
 **要編輯批集預設集，請執行以下操作：**
 
-1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
+1. 點選Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
 1. 在&#x200B;**[!UICONTROL 批集預設集]**&#x200B;頁面的&#x200B;**[!UICONTROL 預設集名稱]**&#x200B;欄左側，勾選您要變更的批集預設集。
 1. 在工具列中，點選&#x200B;**[!UICONTROL 編輯批次集預設集]**。
 1. 視需要編輯預設集。
@@ -193,7 +193,7 @@ ht-degree: 1%
 
 **要複製現有批集預設集，請執行以下操作：**
 
-1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
+1. 點選Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
 1. 在&#x200B;**[!UICONTROL 批集預設集]**&#x200B;頁面的&#x200B;**[!UICONTROL 預設集名稱]**&#x200B;列左側，選中要複製的批集預設集複選框。
 1. 在工具列中，點選&#x200B;**[!UICONTROL Copy]**。
 1. 在&#x200B;**[!UICONTROL 複製批集預設集]**&#x200B;對話框的&#x200B;**[!UICONTROL 標題]**&#x200B;文本框中，為預設集鍵入新名稱。
@@ -215,7 +215,7 @@ ht-degree: 1%
 
 ### 通過「批集預設集」頁{#remove-bsp-from-folders-via-bsp-page}從資料夾中刪除批集預設集
 
-1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
+1. 點選Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
 1. 在&#x200B;**[!UICONTROL 批集預設集]**&#x200B;頁面的&#x200B;**[!UICONTROL 預設集名稱]**&#x200B;欄左側，選中要從一個或多個資料夾中刪除的一個或多個批集預設集的複選框。
 1. 在工具列中，點選&#x200B;**[!UICONTROL 從資料夾中移除批次預設集]**。
 
@@ -228,7 +228,7 @@ ht-degree: 1%
 
 ### 從資料夾的「屬性」頁面{#remove-bsp-from-folders-via-properties}刪除批集預設集
 
-1. 點選Adobe Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**。
+1. 點選Experience Manager標誌並導覽至「**[!UICONTROL 資產]** > **[!UICONTROL 檔案]**」。
 1. 導覽至您要移除一或多個批次集預設集的檔案夾。
 1. 在頁面上，選擇&#x200B;**[!UICONTROL Name]**&#x200B;列左側的資料夾複選框。
 1. 在工具列中，點選&#x200B;**[!UICONTROL 屬性]**。
@@ -250,7 +250,7 @@ ht-degree: 1%
 
 **要刪除批集預設集，請執行以下操作：**
 
-1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
+1. 點選Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 批次設定預設集]**」。
 1. 在&#x200B;**[!UICONTROL 批集預設集]**&#x200B;頁面的&#x200B;**[!UICONTROL 預設集名稱]**&#x200B;欄左側，選中要刪除的一個或多個批集預設集的複選框。
 1. 在工具列中，點選「刪除批集預設集」**[!UICONTROL 。]**
 
