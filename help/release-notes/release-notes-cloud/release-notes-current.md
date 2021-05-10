@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說�
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 26bd32d88b04d107a24e5e601af6e01d309b8e0e
+source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1879'
+ht-degree: 2%
 
 ---
 
@@ -90,6 +90,8 @@ ht-degree: 0%
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] {#what-is-new-forms}的新增功能
+
+您可以使用[AEM FormsCloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)來建立數位表單、將表單連接至現有資料來源、將表單與Adobe Sign整合以新增電子簽名至表單、產生記錄檔案(DoR)以將提交的表單封存為PDF檔案。 此服務也可將您現有的PDF forms轉換為數位表單。 除了標準的AEM Forms功能外，該服務還提供數種雲端原生功能，例如自動縮放、升級零停機和雲端原生開發環境。 閱讀[此部落格文章](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)，瞭解AEM Forms作為Cloud Service的功能與功能。
 
 * **在啟用Adobe Sign的自適應Forms中使用政府ID身份驗證方法**
 
