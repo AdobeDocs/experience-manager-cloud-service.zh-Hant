@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
+source-git-commit: d21d5a496d4a82dd569e582b5b7d7425bd50077f
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2155'
 ht-degree: 1%
 
 ---
@@ -239,6 +239,14 @@ AEM允許：
 
 ## 實際使AEM用GraphQL API {#actually-using-aem-graphiql}
 
+在開始查詢您的內容之前，您需要：
+
+* 啟用端點
+   * 使用工具->站點-> GraphQL
+
+* 安裝GraphiQL（如果需要）
+   * 安裝為專用軟體包
+
 要在查詢中實AEM際使用GraphQL API，我們可以使用兩個非常基本的內容片段模型結構：
 
 * 公司
@@ -346,6 +354,8 @@ query {
    * [GraphQL Java庫](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [學習搭配使用GraphQL AEM](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * [啟用GraphQL端點](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [安裝AEMGraphiQL介面](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
 * [範例內容片段結構](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [學習如何搭配使用GraphQL AEM —— 範例內容與查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    * [範例查詢——單一特定城市片段](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
