@@ -5,9 +5,9 @@ breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '482'
 ht-degree: 71%
 
 ---
@@ -50,7 +50,6 @@ ht-degree: 71%
    + [開發人員檔案和API參考](developer-reference-material-apis.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
    + [使用影像和視訊設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [設定影像的智慧標籤](smart-tags-configuration.md)
    + [多語言資產與翻譯](translate-assets.md)
    + [搜尋 Facet](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
