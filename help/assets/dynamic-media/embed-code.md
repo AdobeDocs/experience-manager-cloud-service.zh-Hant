@@ -5,9 +5,9 @@ feature: 資產管理
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '377'
 ht-degree: 21%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 21%
 
 當您想 **** 要播放視訊或檢視內嵌在網頁上的資產時，請使用「內嵌代碼」功能。您可將內嵌代碼複製到剪貼簿，以便貼到網頁中。「內嵌代碼」對話方塊中不允許編 **[!UICONTROL 輯代碼]** 。
 
-只有當您&#x200B;_not_&#x200B;使用作為WCM時，才會嵌入AEMURL。 如果您使AEM用作WCM,[會直接在頁面](adding-dynamic-media-assets-to-pages.md)上新增資產。
+只有當您&#x200B;_not_&#x200B;使用Adobe Experience Manager做為WCM時，才嵌入URL。 如果您使用Experience Manager做為WCM，則[會直接在頁面](adding-dynamic-media-assets-to-pages.md)上新增資產。
 
 請參閱[將URL連結至您的Web應用程式](linking-urls-to-yourwebapplication.md)。
 
@@ -32,7 +32,7 @@ ht-degree: 21%
 >
 >請參閱[發佈影像預設集](managing-image-presets.md#publishing-image-presets)。
 
-**將Dynamic Media視訊或影像檢視器內嵌在網頁上**
+**若要將Dynamic Media視訊或影像檢視器內嵌在網頁上：**
 
 1. 導覽至您要複製其內嵌代碼的&#x200B;*published*&#x200B;視訊或影像資產。
 
