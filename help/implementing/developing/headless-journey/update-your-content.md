@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
+source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1130'
 ht-degree: 2%
 
 ---
@@ -324,11 +324,10 @@ HTTP方法確定要執行的操作：
 
 您應繼AEM續無頭歷程，請閱讀[檔案](put-it-all-together.md)如何將一切整合在一起——無頭中的應用程式和您的內容&lt;a1/AEM>，以瞭解如何將無頭專案帶入現場並做好準備。
 
+[如何使用SPAAEM建立單頁應用程式(SPA)也將說明您如何使用SPAAEMEditor架構來建立可編輯的檔案，以及整合SPA外部，以視需要啟用編輯功能。](create-spa.md) 
+
 ## 其他資源 {#additional-resources}
 
-* [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
-* [HATEOAS原則](https://en.wikipedia.org/wiki/HATEOAS)
-* [SIREN格式](https://github.com/kevinswiber/siren)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [內容片段REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
