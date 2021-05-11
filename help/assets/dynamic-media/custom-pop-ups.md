@@ -1,18 +1,18 @@
 ---
 title: 使用快速檢視建立自訂快顯視窗
-description: 「瞭解電子商務體驗中如何使用預設的快速檢視，從而顯示包含產品資訊的快顯視窗來推動購買。 您可以觸發自訂內容，以便在快顯視窗中顯示。」
+description: 「瞭解電子商務體驗中如何使用預設的快速檢視，從而顯示包含產品資訊的快顯視窗來推動購買。 您可以觸發自訂內容，以便在快顯視窗®中顯示。」
 feature: 互動式影像，互動式影片，轉盤橫幅
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
 
 ---
 
-# 使用快速檢視建立自訂快顯視窗{#using-quickviews-to-create-custom-pop-ups}
+# 使用快速檢視建立自訂快顯視窗® {#using-quickviews-to-create-custom-pop-ups}
 
 電子商務體驗會使用預設的快速檢視，以便顯示含產品資訊的快顯視窗來推動購買。 不過，您可以觸發自訂內容以顯示在快顯視窗中。 根據您使用的檢視器，客戶可以點選熱點、縮圖影像或影像地圖來查看資訊或相關內容。
 
@@ -24,7 +24,7 @@ Dynamic Media的下列檢視器支援快速檢視：
 
 雖然每個檢視器的功能不同，但建立快速檢視的程式在所有三個支援的檢視器上都相同。
 
-**使用快速檢視來建立自訂快顯視窗**
+**若要使用快速檢視來建立自訂快顯視窗®:**
 
 1. 建立已上傳資產的快速檢視。
 
@@ -102,8 +102,8 @@ Dynamic Media的下列檢視器支援快速檢視：
 
    如需`setHandlers()`方法的詳細資訊，請參閱：
 
-   * 互動式影像檢視器：[sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * 互動式視訊檢視器：[sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * 互動式影像檢視器- [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * 互動式視訊檢視器- [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. 現在，請設定`quickViewActivate`處理常式。
 
