@@ -5,7 +5,7 @@ feature: 內容片段
 role: Business Practitioner
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 7%
@@ -37,7 +37,7 @@ ht-degree: 7%
 
    ![標題和說明](assets/cfm-models-02.png)
 
-1. 使用&#x200B;**Create**&#x200B;保存空模型。 一條消息將指示操作成功，您可以選擇&#x200B;**Open**&#x200B;立即編輯模型，或選擇&#x200B;**Done**&#x200B;返回控制台。
+1. 使用&#x200B;**Create**&#x200B;來儲存空的模型。 一條消息將指示操作成功，您可以選擇&#x200B;**Open**&#x200B;立即編輯模型，或選擇&#x200B;**Done**&#x200B;返回控制台。
 
 ## 定義內容片段模型{#defining-your-content-fragment-model}
 
@@ -170,7 +170,7 @@ ht-degree: 7%
 * **可**
 翻譯在CF模型編輯器中選中欄位上的「可翻譯」複選框
 
-   * 確保欄位的屬性名稱已添加到翻譯配置`/content/dam/<tenant>`中（如果尚未出現）。
+   * 確保欄位的屬性名稱已添加到翻譯配置`/content/dam/<sites-configuration>`中（如果尚未出現）。
    * 對於GraphQL:將「內容片段」欄位上的`<translatable>`屬性設為`yes`，以允許GraphQL查詢篩選器只針對可轉譯內容進行JSON輸出。
 
 * 如需該特定資料類型及其屬性的詳細資訊，請參閱&#x200B;**[內容參考](#content-reference)**。
