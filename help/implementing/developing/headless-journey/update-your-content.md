@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 7732a291d070a5d93a6f490877b909e1331be1e2
+source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1115'
 ht-degree: 2%
 
 ---
@@ -190,26 +190,28 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 內容片段用於無頭傳送，而內容片段是特殊類型的資產。 它們用於存取結構化資料，例如文字、數字、日期等。
 
-由於&#x200B;*standard*&#x200B;資產（例如影像或音訊）有數項差異，因此處理資產時會套用一些其他規則。
+<!--
+As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
 
-### 表示{#representation}
+### Representation {#representation}
 
-內容片段：
+Content fragments:
 
-* 請勿公開任何二進位資料。
-* 完全包含在JSON輸出中（位於`properties`屬性中）。
+* Do not expose any binary data.
+* Are completely contained in the JSON output (within the `properties` property).
 
-* 也被視為原子，即元素和變化作為片段屬性的一部分而暴露，而不是作為連結或子實體。 這允許有效訪問片段的負載。
+* Are also considered atomic, i.e. the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
 
-### 內容模型和內容片段{#content-models-and-content-fragments}
+### Content Models and Content Fragments {#content-models-and-content-fragments}
 
-目前，定義內容片段結構的模型不會透過HTTP API公開。 因此，*consumer*&#x200B;需要瞭解片段的模型（至少是最小值）-儘管大部分資訊可以從負載中推斷出來；資料類型等。 是定義的一部分。
+Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
 
-要建立新內容片段，必須提供模型的（內部儲存庫）路徑。
+To create a new content fragment, the (internal repository) path of the model has to be provided.
 
-### 相關聯的內容 {#associated-content}
+### Associated Content {#associated-content}
 
-相關內容目前未公開。
+Associated content is currently not exposed.
+-->
 
 ## 使用資產REST API {#using-aem-assets-rest-api}
 
