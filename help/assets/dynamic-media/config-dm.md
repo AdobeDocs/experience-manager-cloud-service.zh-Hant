@@ -4,9 +4,9 @@ description: 瞭解如何將Adobe Experience Manager的Dynamic Media設為Cloud 
 role: Administrator,Business Practitioner
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
-source-wordcount: '4053'
+source-wordcount: '4054'
 ht-degree: 4%
 
 ---
@@ -93,9 +93,9 @@ To migrate any custom viewer presets and configurations that you have created fr
    |---|---|
    | 公司 | Dynamic Media帳戶的名稱。 您可能有多個Dynamic Media帳戶用於不同的子品牌、部門或階移／生產環境。 |
    | 公司根資料夾路徑 | 您公司的根資料夾路徑。 |
-   | 發佈資產 | 您可以從下列三個選項中選擇：<br>**[!UICONTROL Immedialed ]**:上傳資產時，系統會收錄資產並立即提供URL/內嵌。 發佈資產不需要使用者干預。<br>**[!UICONTROL 啟動後]**:您必須先明確發佈資產，才能提供URL/內嵌連結。<br>**[!UICONTROL 選擇性發佈&#x200B;]**:資產會自動發佈，僅供安全預覽。也可以明確地以Cloud Service形式發佈到Experience Manager，而不發佈到DMS7，以便在公共域中發佈。 未來，這個選項打算以Cloud Service形式將資產發佈至Experience Manager，並將資產發佈至Dynamic Media，彼此排斥。 也就是說，您可以將資產發佈到DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您可以獨家以Experience Manager方式發佈資產做為預覽Cloud Service;這些相同的資產不會發佈在DMS7中，以便在公共域中交付。 |
+   | 發佈資產 | 您可以從下列三個選項中選擇：<br>**[!UICONTROL Immedialed ]**—— 當資產上傳時，系統會擷取資產並立即提供URL/Embed。 發佈資產不需要使用者干預。<br>**[!UICONTROL 啟動時]** -您必須先明確發佈資產，才能提供URL/內嵌連結。<br>**[!UICONTROL 選擇性發佈&#x200B;]**-資產會自動發佈，僅供安全預覽使用。也可以明確地以Cloud Service形式發佈到Experience Manager，而不發佈到DMS7，以便在公共域中發佈。 未來，這個選項打算以Cloud Service形式將資產發佈至Experience Manager，並將資產發佈至Dynamic Media，彼此排斥。 也就是說，您可以將資產發佈到DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您可以獨家以Experience Manager方式發佈資產做為預覽Cloud Service;這些相同的資產不會發佈在DMS7中，以便在公共域中交付。 |
    | 安全預覽伺服器 | 可讓您指定安全轉譯預覽伺服器的URL路徑。 也就是說，在產生轉譯後，Experience ManagerCloud Service可以安全地存取和預覽遠端Dynamic Media轉譯(沒有二進位檔會以Cloud Service例項傳回Experience Manager)。<br>除非您有特殊安排來使用您公司的伺服器或特殊伺服器，否則Adobe建議您依指定的方式保留此設定。 |
-   | 同步處理所有內容 | 依預設選取。 如果您想要選擇性地包含或排除同步至Dynamic Media的資產，請取消選取此選項。 取消選擇此選項可讓您從以下兩種Dynamic Media同步模式中選擇：<br>**[!UICONTROL Dynamic Media同步模式]**<br>**[!UICONTROL 預設啟用&#x200B;]**:預設情況下，配置將應用於所有資料夾，除非您專門標籤要排除的資料夾。 <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 依預設停用]**:在您明確標籤要同步到Dynamic Media的選定資料夾之前，配置不會應用於任何資料夾。<br>若要將選取的檔案夾標示為同步至Dynamic Media，請選取資產檔案夾，然後在工具列中，點選「屬 **[!UICONTROL 性」]**。在&#x200B;**[!UICONTROL Details]**&#x200B;標籤的&#x200B;**[!UICONTROL Dynamic Media同步模式]**&#x200B;下拉式清單中，從下列三個選項中選擇。 完成後，點選&#x200B;**[!UICONTROL Save]**。 *記住：如果您選取「同步所有內容工具」，這三個&#x200B;**選項將**無法使用。* 另請參 [閱Dynamic Media資料夾層級的「使用選擇性發佈」](/help/assets/dynamic-media/selective-publishing.md)。<br>**[!UICONTROL 繼承&#x200B;]**:資料夾上沒有明確的同步值。資料夾會從其上級資料夾或雲端設定的預設模式繼承同步值。 繼承的詳細狀態會透過工具提示顯示。<br>**[!UICONTROL 啟用子檔案夾]**:將所有內容包含在此子樹中，以便與Dynamic Media同步。資料夾特定的設定會覆寫雲端設定中的預設模式。<br>**[!UICONTROL 子檔案夾已停用&#x200B;]**:排除此子樹中的所有項目，以免與Dynamic Media同步。 |
+   | 同步處理所有內容 | 依預設選取。 如果您想要選擇性地包含或排除同步至Dynamic Media的資產，請取消選取此選項。 取消選擇此選項可讓您從以下兩種Dynamic Media同步模式中進行選擇：<br>**[!UICONTROL Dynamic Media同步模式]**<br>**[!UICONTROL 預設啟用&#x200B;]**—— 預設情況下，配置將應用於所有資料夾，除非您專門標籤要排除的資料夾。 <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 預設禁用]** -在您明確標籤要同步到Dynamic Media的選定資料夾之前，配置不會應用於任何資料夾。<br>若要將選取的檔案夾標示為同步至Dynamic Media，請選取資產檔案夾，然後在工具列中，點選「屬 **[!UICONTROL 性」]**。在&#x200B;**[!UICONTROL Details]**&#x200B;標籤的&#x200B;**[!UICONTROL Dynamic Media同步模式]**&#x200B;下拉式清單中，從下列三個選項中選擇。 完成後，點選&#x200B;**[!UICONTROL Save]**。 *記住：如果您選取「同步所有內容工具」，這三個&#x200B;**選項將**無法使用。* 另請參 [閱Dynamic Media資料夾層級的「使用選擇性發佈」](/help/assets/dynamic-media/selective-publishing.md)。<br>**[!UICONTROL 繼承&#x200B;]**-資料夾上沒有明確的同步值。資料夾會從其上級資料夾或雲端設定的預設模式繼承同步值。 繼承的詳細狀態會透過工具提示顯示。<br>**[!UICONTROL 為子資料夾啟用]** -包括此子樹中的所有內容，以便同步到Dynamic Media。資料夾特定的設定會覆寫雲端設定中的預設模式。<br>**[!UICONTROL 子檔案夾停用&#x200B;]**-排除此子樹中的所有項目，以免同步至Dynamic Media。 |
 
    >[!NOTE]
    >
@@ -116,7 +116,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >此收件箱通知會通知您配置是否成功。
    > 如需詳細資訊，請參閱[疑難排解新的Dynamic Media配置](#troubleshoot-dm-config)和[您的收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)。
 
-1. 若要在發佈前安全地預覽Dynamic Media內容，Experience Manager為Cloud Service預設會使用Token型驗證。 不過，您也可以「允許清單」更多IP，讓使用者存取安全地預覽內容。 若要設定此動作，請執行下列動作：<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. 若要在發佈前安全地預覽Dynamic Media內容，Experience Manager為Cloud Service，預設會使用以代號為基礎的驗證。 不過，您也可以「允許清單」更多IP，讓使用者存取安全地預覽內容。 若要設定此動作，請執行下列動作：<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
    * 開啟[Dynamic Media經典案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。 您的認證和登入詳細資訊是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡Adobe客戶服務。
    * 在頁面右上角的導覽列上，點選「Setup **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**」。
@@ -139,7 +139,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 另請參閱[收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)。
 
-**要診斷新的Dynamic Media配置故障**
+**要診斷新的Dynamic Media配置故障：**
 
 1. 在Experience Manager的右上角附近，點選Cloud Service圖示，然後點選「View All」（檢視全部）]**。**[!UICONTROL 
 1. 在「收件匣」頁面上，點選成功通知以讀取設定狀態和記錄檔的概述。
@@ -273,7 +273,7 @@ Dynamic Media色彩管理可讓您為正確資產加上色彩。 透過色彩校
 
 請參閱[上傳資產](/help/assets/add-assets.md)。
 
-**要編輯支援格式的MIME類型**
+**要編輯支援格式的MIME類型：**
 
 1. 在Experience ManagerCloud Service中，按一下Experience Manager作為Cloud Service徽標以訪問全局導航控制台，然後按一下&#x200B;**[!UICONTROL 常規>CRXDE Lite]**。
 1. 在左側導軌中，導覽至下列項目：
@@ -299,7 +299,7 @@ Dynamic Media色彩管理可讓您為正確資產加上色彩。 透過色彩校
 
 您可以在「Experience Manager資產」中為不支援的格式新增自訂MIME類型。 要確保CRXDE Lite中添加的任何新節點不被Experience Manager刪除，請在`image_`之前移動MIME類型。 此外，請確定其啟用值設為&#x200B;**[!UICONTROL false]**。
 
-**要為不支援的格式添加MIME類型**
+**要為不支援的格式添加MIME類型：**
 
 1. 從Experience Manager作為Cloud Service，點選「**[!UICONTROL 工具>操作> Web Console]**」。
 
@@ -319,7 +319,7 @@ Dynamic Media色彩管理可讓您為正確資產加上色彩。 透過色彩校
 
 1. 在您剛新增的空白文字欄位中鍵入`DWG=image/vnd.dwg`。
 
-   範例`DWG=image/vnd.dwg`僅供圖例之用。 您在此處添加的MIME類型可以是任何其他不支援的格式。
+   `DWG=image/vnd.dwg` MIME類型僅用於示例。 您在此處添加的MIME類型可以是任何其他不支援的格式。
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
