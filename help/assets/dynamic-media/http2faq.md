@@ -4,9 +4,9 @@ description: 瞭解HTTP2內容傳送。
 role: Administrator,Business Practitioner
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '794'
 ht-degree: 3%
 
 ---
@@ -17,15 +17,13 @@ Adobe很高興宣佈推出HTTP/2內容傳送。 使用HTTP/2時，整體效能�
 
 >[!NOTE]
 >
->此功能需要您使用隨附於Adobe Experience Manager·Dynamic Media的現成可用CDN。 此功能不支援任何其他自訂CDN。
+>此功能要求您使用隨附於Adobe Experience Manager-Dynamic Media的現成可用內容傳送網路。 此功能不支援任何其他自訂內容傳送網路。
 
 ## 什麼是HTTP/2?{#what-is-http}
 
 HTTP/2改善了瀏覽器和伺服器通訊的方式，讓資訊傳輸更快速，同時降低了所需的處理能力。
 
-以下網站以簡單簡單的方式說明HTTP/2及其優點：
-
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+網站文章[您必須瞭解的HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)以簡單簡單的方式說明HTTP/2及其優點。
 
 ## 轉換至HTTP/2以進行內容傳送的主要優點為何？{#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
