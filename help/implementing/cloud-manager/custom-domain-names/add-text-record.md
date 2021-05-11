@@ -1,14 +1,14 @@
 ---
 title: 添加TXT記錄
 description: 新增自訂網域名稱
+exl-id: d441de29-af41-4d3e-9155-531af9702841
 translation-type: tm+mt
-source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
+source-git-commit: 4903f97c1bf0e7c8e96d604feb005d9611a7d9bb
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # 添加TXT記錄{#adding-txt}
 
@@ -27,8 +27,8 @@ DNS TXT記錄會授權網域以裝載於CDN服務中。 客戶必須在授權Clo
 
 | 網域 | 名稱 | TXT值 |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | 顯示在Cloud Manager UI中，並且特定於域和Cloud Manager環境 |
-| `test.example.com` | `_aemverification.test.example.com` | 顯示在Cloud Manager UI中，並且特定於域和Cloud Manager環境 |
+| `example.com` | `_aemverification` | 顯示在Cloud Manager UI中，並且特定於域和Cloud Manager環境 |
+| `test.example.com` | `_aemverification` | 顯示在Cloud Manager UI中，並且特定於域和Cloud Manager環境 |
 
 完成後，您可以通過運行：`dig _aemverification.[yourdomainname] -t txt`。
 預期結果應顯示Cloud Manager UI中提供的TXT值。
@@ -37,4 +37,3 @@ DNS TXT記錄會授權網域以裝載於CDN服務中。 客戶必須在授權Clo
 
 >[!NOTE]
 >此外，還有各種[DNS查閱工具](https://www.ultratools.com/tools/dnsLookup),Google DoH可用來查閱TXT記錄項目並識別TXT記錄是否遺失或錯誤。
-
