@@ -5,9 +5,9 @@ feature: 輪播橫幅
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
-source-wordcount: '4563'
+source-wordcount: '4556'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-在這裡，您可以按一下數字來瀏覽影像。 此外，投影片會根據您可自訂的時間間隔自動旋轉。 您在轉盤橫幅中新增的影像支援熱點和影像地圖。 使用者可以點選或前往超連結，或存取「快速檢視」視窗。
+在這裡，您可以按一下數字來瀏覽影像。 此外，投影片會根據您可自訂的時間間隔自動旋轉。 轉盤橫幅中的影像同時支援熱點和影像地圖。 使用者可以點選或前往超連結，或存取「快速檢視」視窗。
 
 在此範例中，使用者點選或點選影像地圖，並存取手套的「快速檢視」視窗：
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 ## 觀看轉盤橫幅的建立方式{#watch-how-carousel-banners-are-created}
 
-觀看[如何建立轉盤橫幅的10分鐘33秒逐步解說。 ](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)您也會瞭解如何預覽、編輯和傳遞轉盤橫幅。
+觀看[如何建立轉盤橫幅的逐步說明](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(持續時間：10分33秒)。 您也會瞭解如何預覽、編輯和傳遞轉盤橫幅。
 
 >[!NOTE]
 >
@@ -122,12 +122,12 @@ ht-degree: 3%
 * 快速檢視資料會轉譯為內容，以準備在網頁上轉譯。
 * 最後，前端程式碼會以視覺化方式在螢幕上呈現此類內容。
 
-然後，方法是造訪實施快速檢視功能的現有網站的不同區域。 然後觸發快速檢視並擷取網頁所傳送的Ajax URL，以載入快速檢視資料或內容。
+然後，方法是造訪實施快速檢視功能的現有網站的不同區域。 然後觸發快速檢視並取得網頁所傳送的Ajax URL，以載入快速檢視資料或內容。
 
 通常您不需使用任何專用的除錯工具。 現代網頁瀏覽器採用Web檢視器，可讓您完成適當的工作。 以下是包含Web檢視程式的Web瀏覽器範例：
 
-* 若要在Google Chrome中查看所有傳出的HTTP要求，請按F12(Windows)或Command-Option-I(Mac)以開啟「開發人員工具」面板。 按一下「Network（網路）」頁籤。
-* 在Firefox中，您可以按F12(Windows)或Command-Option-I(Mac)來啟動Firebug外掛程式。 使用其「網路」標籤，或使用內建的「偵測器」工具及其「網路」標籤。
+* 若要在Google Chrome中查看所有傳出的HTTP要求，請按F12(Windows®)或Command-Option-I(Mac)以開啟「開發人員工具」面板。 按一下「Network（網路）」頁籤。
+* 在Firefox中，您可以按F12(Windows®)或Command-Option-I(Mac)來啟動Firebug外掛程式。 使用其「網路」標籤，或使用內建的「偵測器」工具及其「網路」標籤。
 
 在瀏覽器中開啟網路監視時，觸發頁面上的快速檢視。
 
@@ -191,7 +191,7 @@ ht-degree: 3%
 >
 >必須將非管理使用者新增至&#x200B;**[!UICONTROL dam-users]**&#x200B;群組，才能建立或編輯轉盤橫幅。 如果您在建立或編輯時遇到問題，請洽詢系統管理員，該系統管理員可將您新增至&#x200B;**[!UICONTROL dam-users]**&#x200B;群組。
 
-**要建立轉盤集**
+**要建立轉盤集，請執行以下操作：**
 
 1. 在「資產」中，導覽至您要建立轉盤集的檔案夾，然後點選「建立>轉盤集」]**。**[!UICONTROL 
 1. 在「轉盤橫幅編輯器」頁面上，點選&#x200B;**[!UICONTROL 以開啟「資產選擇器」]**&#x200B;以選取您第一張投影片的影像。
@@ -217,16 +217,17 @@ ht-degree: 3%
    若要刪除投影片，請點選或按一下投影片，然後點選或按一下工具列中的「刪除投影片」。 ****&#x200B;若要移動投影片，請點選重新排序圖示並按住並移至所需位置。
 
 1. 在投影片中新增影像後，您可以將熱點、影像地圖或兩者新增至影像。 請參閱[添加熱點或影像映射](#adding-hotspots-or-image-maps-to-an-image-banner)。
-1. 您可以變更轉盤集的視覺設計和行為。 點選或按一下「行為」和「外觀」標籤，並調整轉盤橫幅的外觀或特定元件的行為。 如需如何使用檢視器編輯器的詳細資訊，請參閱[管理檢視器預設集](/help/assets/dynamic-media/viewer-presets.md)。
+1. 您可以變更轉盤集的視覺設計和行為。 點選或按一下「行為」(**[!UICONTROL Behavior)]**&#x200B;和「外觀」(**[!UICONTROL Appearance)]**&#x200B;標籤，並調整轉盤橫幅的顯示方式或特定元件的行為。 如需如何使用檢視器編輯器的詳細資訊，請參閱[管理檢視器預設集](/help/assets/dynamic-media/viewer-presets.md)。
 
    >[!NOTE]
    >
    >對於轉盤橫幅，您可以調整下列項目：
-   >    * 影像顯示的持續時間。 依預設，每張影像會顯示9秒。
-   >    * 動畫. 依預設，每張投影片轉場都是淡入。 您可以將它變更為投影片轉場。
-   >    * 按鈕的樣式。 使用者可以點選每個點或數字，在橫幅中旋轉。 您可以變更設定指標按鈕的顯示位置（如果是數值或虛線樣式），以及其大小。
-   >    * 更改影像映射或用於熱點的表徵圖的加亮樣式。
-   >    * 編輯檢視器預設集之前，請選擇您要建立預設集的樣式。 如果您不選擇樣式，當您開始編輯檢視器預設集時，如果您變更為其他預設集，將會遺失所有變更。
+   >
+   >* 影像顯示的持續時間。 依預設，每張影像會顯示9秒。
+   >* 動畫. 依預設，每張投影片轉場都是淡入。 您可以將它變更為投影片轉場。
+   >* 按鈕的樣式。 使用者可以點選每個點或數字，在橫幅中旋轉。 您可以變更設定指標按鈕的顯示位置（如果是數值或虛線樣式），以及其大小。
+   >* 更改影像映射或用於熱點的表徵圖的加亮樣式。
+   >* 編輯檢視器預設集之前，請選擇您要建立預設集的樣式。 如果您不選擇樣式，當您開始編輯檢視器預設集時，如果您變更為其他預設集，將會遺失所有變更。
 
 
    您也可以預覽轉盤橫幅的外觀。 請參閱[（可選）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
@@ -263,7 +264,7 @@ ht-degree: 3%
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
-**要將熱點或影像映射添加到影像橫幅**
+**要將熱點或影像映射添加到影像橫幅：**
 
 1. 從「資產」導覽至您要建立互動功能的轉盤集。
 1. 選擇轉盤集，然後點選&#x200B;**[!UICONTROL 編輯]**。 「轉盤檢視器編輯器」隨即開啟。
@@ -339,7 +340,7 @@ ht-degree: 3%
 * 刪除轉盤集。
 * 添加或編輯熱點和影像映射。 另請參閱[使用選擇器](/help/assets/dynamic-media/working-with-selectors.md)。
 
-**要編輯轉盤集**
+**要編輯轉盤集：**
 
 1. 執行下列任一項作業：
 
@@ -364,7 +365,7 @@ ht-degree: 3%
 
 ## （可選）預覽轉盤橫幅{#optional-previewing-carousel-banners}
 
-您可以使用「預覽」來查看您的轉盤橫幅對客戶的外觀。 使用「預覽」也可讓您測試轉盤橫幅的熱點和影像地圖，以確保它們如預期般運作。
+您可以使用「預覽」來查看轉盤橫幅對客戶的呈現方式。 使用「預覽」也可讓您測試轉盤橫幅的熱點和影像地圖，以確保它們如預期般運作。
 
 當您對轉盤橫幅感到滿意時，可以發佈它。
 請參閱[將視訊或影像檢視器內嵌至網頁](/help/assets/dynamic-media/embed-code.md)。
@@ -373,7 +374,7 @@ ht-degree: 3%
 
 您可以從轉盤編輯器（首選方法）或&#x200B;**[!UICONTROL 檢視器]**&#x200B;清單中預覽轉盤橫幅。
 
-**若要預覽轉盤橫幅**
+**若要預覽轉盤橫幅：**
 
 1. 在&#x200B;**[!UICONTROL Assets]**&#x200B;中，導覽至您所建立的現有轉盤橫幅，並點選以開啟它。
 1. 點選&#x200B;**[!UICONTROL 編輯]**。
@@ -384,7 +385,7 @@ ht-degree: 3%
 1. 點選&#x200B;**[!UICONTROL 預覽]**。
 1. 若要測試其相關動作，請點選影像上的熱點或影像地圖。
 
-**若要從檢視器清單預覽轉盤橫幅**
+**若要從「檢視器」清單預覽轉盤橫幅：**
 
 1. 在&#x200B;**[!UICONTROL Assets]**&#x200B;中，導覽至您所建立的現有轉盤橫幅，並點選以開啟它。
 1. 在「預覽」頁面的左上角附近，按一下「內容」圖示。
@@ -452,6 +453,6 @@ AEM Assets傳回的內嵌程式碼已有可供使用的事件處理常式，已�
 
 觸發快速檢視URL並啟動快速檢視面板的最後一個步驟，很可能需要IT部門的前端IT人員協助。 他們具備最佳的知識，瞭解如何從正確的步驟精確觸發快速檢視實作，並擁有現成可用的快速檢視URL。
 
-## 使用快速檢視建立自訂快顯視窗{#using-quickviews-to-create-custom-pop-ups}
+## 使用快速檢視建立自訂快顯視窗® {#using-quickviews-to-create-custom-pop-ups}
 
-請參閱[使用快速檢視建立自訂快顯視窗](/help/assets/dynamic-media/custom-pop-ups.md)。
+請參閱[使用快速檢視建立自訂快顯視窗Windows®](/help/assets/dynamic-media/custom-pop-ups.md)。
