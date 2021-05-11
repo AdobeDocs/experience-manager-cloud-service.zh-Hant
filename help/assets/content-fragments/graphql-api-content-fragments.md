@@ -4,9 +4,9 @@ description: 瞭解如何使用Adobe Experience Manager(AEM)的內容片段做�
 feature: 內容片段，GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '3901'
+source-wordcount: '3935'
 ht-degree: 1%
 
 ---
@@ -121,20 +121,20 @@ GraphQL使用下列功能：
 
 * 全域
    * 可供所有網站使用。
-   * 此端點可使用所有租戶的所有內容片段模型。
-   * 如果有任何內容片段模型應在租戶之間共用，則應在全域租戶下建立。
-* 租用戶:
-   * 與租用戶配置相對應，如[Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中所定義。
+   * 此端點可使用所有Sites組態（在[Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中定義）中的所有Content Fragment Models。
+   * 如果有任何內容片段模型應在網站組態之間共用，則應在全域網站組態下建立。
+* 站點配置：
+   * 與[配置瀏覽器](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)中定義的站點配置相對應。
    * 特定於指定的網站／專案。
-   * 租用戶特定端點會使用該特定租用戶的內容片段模型與全球租用戶的內容片段模型。
+   * 特定站點配置的端點將使用該特定站點配置的內容片段模型以及全局站點配置的內容片段模型。
 
 >[!CAUTION]
 >
->內容片段編輯器可允許一個租用戶的內容片段參考另一個租用戶的內容片段（透過政策）。
+>內容片段編輯器可允許一個網站設定的內容片段參考另一個網站設定的內容片段（透過原則）。
 >
->在這種情況下，並非所有內容都可以使用租用戶特定端點進行檢索。
+>在這種情況下，並非所有內容都可以使用站點配置特定端點進行檢索。
 >
->內容作者應控制此情形；例如，考慮將共用內容片段模型放在「全域」租用戶下，可能會很有用。
+>內容作者應控制此情形；例如，考慮將共用內容片段模型放在全域網站組態下可能很有用。
 
 GraphQL用於全局端點的存AEM儲庫路徑為：
 
@@ -196,6 +196,10 @@ GraphQL用於全局端點的存AEM儲庫路徑為：
 ## 圖形QL介面{#graphiql-interface}
 
 標準[GraphQL](https://graphql.org/learn/serving-over-http/#graphiql)介面的實現可用於GraphQLAEM。 這可與](#installing-graphiql-interface)一起安裝AEM[。
+
+>[!NOTE]
+>
+>GraphiQL綁定了全局端點（不適用於特定站點配置的其他端點）。
 
 此介面可讓您直接輸入並測試查詢。
 
@@ -587,21 +591,21 @@ query {
 
 這是必要的，因為POST查詢通常不進行快取，而且如果將查詢與GET搭配使用作為參數，則很可能會使參數對HTTP服務和中間體過大。
 
-持久查詢必須始終使用與[適當（租用戶）配置](#graphql-aem-endpoint)相關的端點；這樣，它們就可以使用其中一種或兩種：
+持久查詢必須始終使用與[相應Sites配置](#graphql-aem-endpoint)相關的端點；這樣，它們就可以使用其中一種或兩種：
 
 * 全局配置和端點
 查詢可存取所有內容片段模型。
-* 特定租用戶組態和端點
-建立特定租用戶設定的持續查詢時，需要對應的租用戶特定端點（以提供對相關內容片段模型的存取）。
-例如，若要為WKND租用戶特別建立持續查詢，必須事先建立對應的WKND特定租用戶組態，以及WKND特定端點。
+* 特定站點配置和端點
+建立特定網站設定的持續查詢時，需要對應的網站設定特定端點（以提供對相關內容片段模型的存取）。
+例如，要為WKND站點配置建立持久查詢，必須事先建立相應的WKND特定站點配置和WKND特定端點。
 
 >[!NOTE]
 >
 >如需詳細資訊，請參閱設定瀏覽器中的[啟用內容片段功能。](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 >
->**GraphQL持久性查詢**&#x200B;需要為適當的租用戶配置啟用。
+>**GraphQL持久性查詢**&#x200B;需要啟用，以便進行適當的站點配置。
 
-例如，如果有一個名為`my-query`的特定查詢，它使用租用戶配置`my-conf`中的模型`my-model`:
+例如，如果有一個名為`my-query`的特定查詢，它使用Sites配置`my-conf`中的`my-model`模型：
 
 * 您可以使用`my-conf`特定端點建立查詢，然後將查詢保存為：
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
