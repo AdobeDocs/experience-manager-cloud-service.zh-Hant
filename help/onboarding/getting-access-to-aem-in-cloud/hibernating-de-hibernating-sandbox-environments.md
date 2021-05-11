@@ -1,14 +1,14 @@
 ---
 title: '冬眠和冬眠沙盒環境 '
-description: '冬眠和冬眠沙盒環境 '
+description: 冬眠和冬眠沙盒環境
+exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
-
 
 # 冬眠和冬眠沙盒環境{#hibernating-introduction}
 
@@ -121,8 +121,12 @@ ht-degree: 0%
 
 * 升AEM級可套用至休眠環境，客戶可從Cloud Manager手動觸發。 該環境將保持休眠狀態，新版本將在解除休眠後出現在環境中。
 
->[!NOTE]
->目前，Cloud Manager不會指出環境是否已休眠。
+* 沙盒在閒置8小時後會放入休眠節點中，在此之後，它們就可以解除休眠。
+
+* 沙盒在連續休眠模式6個月後即會刪除，然後再重新建立。
+
+   >[!NOTE]
+   >目前，Cloud Manager不會指出環境是否已休眠。
 
 ## 沙AEM盒環境的更新{#aem-updates-sandbox}
 
@@ -135,9 +139,4 @@ ht-degree: 0%
 >[!NOTE]
 >* 手動更新只能在目標環境具有正確配置的管線時運行。
 >* 手動更新&#x200B;*Production*&#x200B;或&#x200B;*Stage*&#x200B;環境將自動更新另一個環境。 Production+Stage環境集必須位於同一版AEM本。
-
-
-
-
-
 
