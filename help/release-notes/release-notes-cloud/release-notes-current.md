@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說�
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
+source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1906'
 ht-degree: 2%
 
 ---
@@ -72,6 +72,8 @@ ht-degree: 2%
 * 在「欄」檢視中瀏覽資產時，視覺指標會顯示每個資產的已核准或已拒絕狀態。
 
 * 在「欄」檢視中瀏覽資產時，會顯示過期資產的視覺指標。
+
+* 在[!DNL Assets]中繼資料編輯器中可使用文字區域資料類型。 您可以使用這個選項，讓使用者在自由格式的文字欄位中輸入中繼資料。
 
 ### [!DNL Assets] {#bug-fixes-assets}中的錯誤修正
 
