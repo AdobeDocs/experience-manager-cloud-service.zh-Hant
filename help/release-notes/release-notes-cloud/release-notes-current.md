@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說�
 description: ' [!DNL Adobe Experience Manager] 做為Cloud Service的目前發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
+source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '2002'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 以下章節概述[!DNL Experience Manager]目前（最新）版本的一般發行說明，做為Cloud Service。
 
 >[!NOTE]
->您可從此處瀏覽至舊版的發行說明；例如2020年、2021年等。
+>從這裡，您可以瀏覽至舊版的發行說明；例如2020年、2021年等。
 
 >[!NOTE]
 >
@@ -223,6 +223,22 @@ Cloud Manager作為2021.4.0Cloud ServiceAEM的發行日期為2021年4月08日。
 * `CloudServiceIncompatibleWorkflowProcess`的問題在可下載的問題CSV檔案中嚴重性不正確。
 
 * `Runmode`檢查對非資料夾節點產生誤報。
+
+## 內容轉移工具 {#content-transfer-tool}
+
+### 發行日期 {#release-date-ctt}
+
+內容傳輸工具v1.4.0的發行日期為2021年5月11日。
+
+### 新功能 {#what-is-new-ctt-may}
+
+* 此版本的內容傳輸工具會針對要移轉至Cloud Service的資產建立文字轉譯。 需要文字轉譯，才能支援對收錄資產進行全文搜尋。
+* 內容傳輸工具移轉集的使用者可建立的最大數目已從4個增加為10個。
+
+### 錯誤修正 {#bug-fixes-ctt-may}
+
+* 內容傳輸工具UI中與自動重新整理功能相關的多個錯誤修正。
+* 內容傳輸工具（含`wipe=true`）導致目標上的計數器索引不正確。 這個問題已經修正。
 
 ## 最佳做法分析器{#best-practices-analyzer}
 
