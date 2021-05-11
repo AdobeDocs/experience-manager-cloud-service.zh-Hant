@@ -1,14 +1,14 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 版發行說明
 description: Experience Manager 2020.6.0 版發行說明
+exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 99%
+source-wordcount: '1951'
+ht-degree: 98%
 
 ---
-
 
 # AEM as a Cloud Service 2020.6.0 版發行說明 {#release-notes}
 
@@ -109,7 +109,7 @@ AEM 專案的 pom.xml 中所有的參照移至遠端存放庫 `https://downloads
 
 增強型智慧標記可讓組織訓練智慧標記模型，以在一般智慧標記以外，還能根據客戶特定的商業標記來識別影像。
 
-此版本提供了新的引導式使用者體驗，有助於針對客戶特定的標記集設定智慧標記訓練，並使用資產加以訓練，以便在日後以標記來辨識和標示這些資產。現在的體驗更符合直覺。訓練增強型智慧標記，讓智慧標記的訓練更符合直覺。請參閱[如何將智慧標記新增至資產](/help/assets/smart-tags.md)和[設定智慧標記](/help/assets/smart-tags-configuration.md)。
+此版本提供了新的引導式使用者體驗，有助於針對客戶特定的標記集設定智慧標記訓練，並使用資產加以訓練，以便在日後以標記來辨識和標示這些資產。現在的體驗更符合直覺。訓練增強型智慧標記，讓智慧標記的訓練更符合直覺。請參閱[如何新增智慧標籤至資產](/help/assets/smart-tags.md)。
 
 **擷取、預覽和傳遞 3D 內容的支援**
 
