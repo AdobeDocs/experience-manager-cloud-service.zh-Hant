@@ -4,16 +4,16 @@ description: 瞭解如何使用Dynamic Media來提供資產，以便在網路、
 role: Administrator,Business Practitioner
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '399'
 ht-degree: 6%
 
 ---
 
 # 使用 Dynamic Media {#working-with-dynamic-media}
 
-[動態](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media可協助您隨選提供豐富的視覺化銷售和行銷資產，並自動調整規模，以供網頁、行動裝置和社交網站使用。Dynamic Media使用一組主要來源資產，透過其全球、可擴充、最佳化效能的網路，即時產生並提供多種多樣化內容。
+[動態](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media可協助您隨選提供豐富的視覺化銷售和行銷資產，並自動調整規模，以供網頁、行動裝置和社交網站使用。Dynamic Media使用一組主要來源資產，透過其全球、可擴充、最佳化效能的網路，即時產生並提供多種多樣化內容。
 
 Dynamic Media提供互動式檢視體驗，包括縮放、360度旋轉和視訊。 Dynamic Media獨一無二地整合了Adobe Experience Manager數位資產管理(Assets)解決方案的工作流程，以簡化數位宣傳管理流程。
 
@@ -38,7 +38,7 @@ Dynamic Media專用的功能包括：
 * [影片](video.md)
 * [交付Dynamic Media資產](delivering-dynamic-media-assets.md)
 * [管理資產](managing-assets.md)
-* [使用快速檢視來建立自訂快顯視窗](custom-pop-ups.md)
+* [使用快速檢視建立自訂快顯視窗®](custom-pop-ups.md)
 
 另請參閱[設定Dynamic Media](administering-dynamic-media.md)。
 
@@ -81,7 +81,7 @@ Dynamic Media啟用的資產包括`pyramid.tiffs`。
 
 ### 資產檢視變更{#asset-views-change}
 
-啟用Dynamic Media後，您可以按一下`+`和`-`按鈕，以放大和縮小。 您也可以按一下／點選以放大檢視特定區域。 Revert會將您帶到原始版本，您可以按一下對角線箭頭，使影像成為全螢幕。 Dynamic Media啟用後，
+啟用Dynamic Media後，您可以按一下`+`和`-`按鈕，以放大和縮小。 您也可以按一下／點選以放大檢視特定區域。 Revert會將您帶到原始版本，您可以按一下對角線箭頭，使影像成為全螢幕。 Dynamic Media啟用後，如下所示：
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
