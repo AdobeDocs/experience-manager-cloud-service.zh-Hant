@@ -5,9 +5,9 @@ feature: 內容片段
 role: Business Practitioner
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '288'
 ht-degree: 18%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 18%
 >如果未啟用&#x200B;**內容片段模型**:
 >
 >* **Create**&#x200B;選項將不可用於建立新模型。
->* 您將無法[選擇租用戶以建立相關的端點](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)。
+>* 您將無法[選擇站點配置以建立相關的端點](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)。
 
 
 若要啟用內容片段功能，您需要：
