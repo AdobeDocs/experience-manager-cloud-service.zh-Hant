@@ -1,14 +1,14 @@
 ---
 title: '沙盒程式簡介 '
-description: '沙盒程式簡介 '
+description: 沙盒程式簡介
+exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 translation-type: tm+mt
-source-git-commit: d98e3ba930690627bfbe9b90ce5cb93328c30503
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # 沙盒程式簡介{#sandbox-programs}
 
@@ -37,5 +37,7 @@ ht-degree: 0%
 
 1. **更新AEM：更** 新可手AEM動套用至沙盒程式中的環境，且不會自動推送。如需詳細資訊，請參AEM閱[沙盒環境更新](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox)。
 
-1. **休眠：如** 果在某段時間內未檢測到任何活動，則沙盒程式中的環境會自動休眠。休眠的環境可以手動解除休眠。
+1. **休眠：如** 果在某段時間內未檢測到任何活動，則沙盒程式中的環境會自動休眠。沙盒在閒置8小時後會放入休眠節點中，在此之後，它們就可以解除休眠。 休眠的環境可以手動解除休眠。
 如需詳細資訊，請參閱[冬眠和解除冬眠沙盒環境](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)。
+
+1. **刪除**:沙盒在連續休眠模式6個月後即會刪除，然後再重新建立。
