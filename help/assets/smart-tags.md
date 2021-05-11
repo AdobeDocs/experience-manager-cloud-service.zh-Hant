@@ -6,9 +6,9 @@ feature: 智慧標籤，標籤
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: d86581f61c9dd7339f7deb8ee1f5e469ce2b5f7c
+source-git-commit: 2633a8fdd8301a38cd044ba822494ed54c564863
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2401'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 與自然語言辭彙相比，基於業務分類法的標籤有助於使資產與公司的業務保持一致，並確保最相關的資產出現在搜索中。 例如，汽車製造商可以使用型號名稱來標籤汽車影像，以便在搜尋以設計促銷活動時只顯示相關影像。
 
-在背景中，該功能使用人為智慧的[Adobe Sensei](https://www.adobe.com/tw/sensei/experience-cloud-artificial-intelligence.html)框架，在標籤結構和業務分類上訓練其影像識別算法。 然後，此內容智慧會用來將相關標籤套用至不同的資產集。 預設情況下，新的[!DNL Experience Manager Assets]部署與[!DNL Adobe Developer Console]整合。 它可協助您更快速地設定智慧標籤功能。 在舊版部署中，管理員可以手動[設定智慧標籤整合](/help/assets/smart-tags-configuration.md#aio-integration)。
+在背景中，該功能使用人為智慧的[Adobe Sensei](https://www.adobe.com/tw/sensei/experience-cloud-artificial-intelligence.html)框架，在標籤結構和業務分類上訓練其影像識別算法。 然後，此內容智慧會用來將相關標籤套用至不同的資產集。 [!DNL Experience Manager Assets] 部署預設會 [!DNL Adobe Developer Console] 與整合。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -151,40 +151,42 @@ ht-degree: 6%
 
 ## 標籤資產{#tag-assets}
 
-在您培訓了「智慧標籤」服務後，可以觸發標籤工作流程，以自動套用標籤至不同的資產集。 您可以隨選套用標籤工作流程，或排程它定期執行。 標籤工作流程同時套用至資產和資料夾。
+在您訓練「智慧標籤」服務後，就會自動標籤上傳的資產。 [!DNL Experience Manager] 近乎即時地套用適當的標籤。您可以隨選套用標籤工作流程，或排程它定期執行。 標籤工作流程同時套用至資產和資料夾。
 
-### 從工作流程控制台{#tagging-assets-from-the-workflow-console}標籤資產
+<!--
+### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
-1. 在[!DNL Experience Manager]介面中，轉至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**。
-1. 從&#x200B;**[!UICONTROL 工作流模型]**&#x200B;頁面中，選擇&#x200B;**[!UICONTROL DAM智慧標籤資產]**&#x200B;工作流，然後從工具欄中按一下&#x200B;**[!UICONTROL 啟動工作流]**。
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. 在&#x200B;**[!UICONTROL 執行工作流程]**&#x200B;對話方塊中，瀏覽至包含您要自動套用標籤之資產的裝載資料夾。
-1. 指定工作流程的標題和選用的註解。 按一下&#x200B;**[!UICONTROL 運行]**。
+1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
+1. Specify a title for the workflow and an optional comment. Click **[!UICONTROL Run]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   *圖：導覽至資產資料夾並檢閱標籤，以確認您的資產是否已正確標籤。如需詳細資訊，請參閱[管理智慧型標籤](#manage-smart-tags-and-searches)。*
+   *Figure: Navigate to the asset folder and review the tags to verify whether your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).*
 
-### 從時間軸{#tagging-assets-from-the-timeline}標籤資產
+### Tag assets from the timeline {#tagging-assets-from-the-timeline}
 
-1. 從[!DNL Assets]使用者介面中，選取包含您要套用智慧標籤之資產或特定資產的檔案夾。
-1. 從左上角開啟&#x200B;**[!UICONTROL 時間軸]**。
-1. 從左側邊欄底部開啟動作，然後按一下「開始工作流程」。****
+1. From the [!DNL Assets] user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
+1. From upper-left corner, open the **[!UICONTROL Timeline]**.
+1. Open actions from the bottom of the left sidebar and click **[!UICONTROL Start Workflow]**.
 
    ![start_workflow](assets/start_workflow.png)
 
-1. 選擇&#x200B;**[!UICONTROL DAM智慧型標籤資產]**&#x200B;工作流程，並指定工作流程的標題。
-1. 按一下&#x200B;**[!UICONTROL 開始]**。 工作流程會將您的標籤套用在資產上。 導覽至資產資料夾並檢閱標籤，以確認您的資產已正確標籤。 如需詳細資訊，請參閱[管理智慧型標籤](#manage-smart-tags-and-searches)。
+1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
+1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify that your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->在後續的標籤週期中，只有修改過的資產會再次使用新訓練的標籤進行標籤。 不過，如果標籤工作流程的最後一個與目前標籤週期之間的間隔超過24小時，則即使未變更的資產也會被標籤。 對於定期標籤工作流程，未變更的資產會在時間間隔超過6個月時加以標籤。
+>In the subsequent tagging cycles, only the modified assets are tagged again with newly trained tags. However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds six months.
 
-### 標籤已上傳的資產{#tag-uploaded-assets}
+### Tag uploaded assets {#tag-uploaded-assets}
 
-[!DNL Experience Manager] 可自動標籤使用者上傳至DAM的資產。為此，管理員會設定工作流程，以新增可標籤資產的可用步驟。 請參閱[如何為已上傳的資產啟用智慧標籤](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)。
+[!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+-->
 
 ## 管理智慧標籤和資產搜尋{#manage-smart-tags-and-searches}
 
@@ -247,7 +249,6 @@ ht-degree: 6%
 
 >[!MORELIKETHIS]
 >
->* [配 [!DNL Experience Manager] 置智慧標籤](smart-tags-configuration.md)
 >* [瞭解智慧型標籤如何協助管理資產](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 >* [智慧標籤視訊資產](smart-tags-video-assets.md)
 
