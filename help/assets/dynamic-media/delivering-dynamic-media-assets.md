@@ -5,9 +5,9 @@ feature: 資產管理
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '321'
 ht-degree: 1%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 1%
 
 有了Dynamic Media，你有幾種選擇：
 
-* 如果您的網站是裝載AEM在上，則您要直接將Dynamic Media資產新增至您的頁面。
-* 如果您的網站未AEM開啟，您可以選擇：
+* 如果您的網站是在Adobe Experience Manager代管，則您要直接將Dynamic Media資產新增至您的頁面。
+* 如果您的網站未在Experience Manager，則可以選擇：
 
    * 將您的視訊或影像內嵌在您的網站上。
    * 將URL連結至您的Web應用程式。 當您想要將視訊播放器發佈為快顯視窗或強制視窗時，請使用連結。
@@ -43,6 +43,6 @@ ht-degree: 1%
 
 ## HTTP/2交付Dynamic Media資產{#http-delivery-of-dynamic-media-assets}
 
-現在AEM支援透過HTTP/2傳送所有Dynamic Media內容（影像和視訊）。 也就是說，影像或視訊的已發佈URL或內嵌程式碼可與任何接受代管資產的應用程式整合。 然後，該已發佈資產會透過HTTP/2通訊協定傳送。 這種傳送方式改善了瀏覽器和伺服器通訊的方式，讓所有Dynamic Media資產的回應和載入時間都更佳。
+Experience Manager現在支援透過HTTP/2傳送所有Dynamic Media內容（影像和視訊）。 也就是說，影像或視訊的已發佈URL或內嵌程式碼可與任何接受代管資產的應用程式整合。 然後，該已發佈資產會透過HTTP/2通訊協定傳送。 這種傳送方式改善了瀏覽器和伺服器通訊的方式，讓所有Dynamic Media資產的回應和載入時間都更佳。
 
 如需詳細資訊，請參閱[HTTP/2內容傳送常見問題](/help/assets/dynamic-media/http2faq.md)。
