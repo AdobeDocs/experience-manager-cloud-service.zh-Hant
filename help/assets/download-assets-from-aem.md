@@ -2,16 +2,16 @@
 title: 下載資產
 description: 從 [!DNL Adobe Experience Manager Assets] 下載資產，並啟用或停用下載功能。
 contentOwner: AG
-feature: Asset Management
+feature: 資產管理
 role: Business Practitioner
+exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: a14d5ec69889ef3d89e595cd837f182c499d0ebc
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 5%
+source-wordcount: '921'
+ht-degree: 4%
 
 ---
-
 
 # 從[!DNL Adobe Experience Manager] {#download-assets-from-aem}下載資產
 
@@ -68,7 +68,7 @@ ht-degree: 5%
 
 ## 啟用資產下載servlet {#enable-asset-download-servlet}
 
-[!DNL Experience Manager]中的預設servlet可讓已驗證的使用者發出任意大型的並行下載請求，以建立資產的ZIP檔案。 下載準備可能會影響效能，甚至會使伺服器和網路過載。 為了降低此功能造成的類似DoS的潛在風險，發佈例項會停用`AssetDownloadServlet` OSGi元件。
+[!DNL Experience Manager]中的預設servlet可讓已驗證的使用者發出任意大型的並行下載請求，以建立資產的ZIP檔案。 下載準備可能會影響效能，甚至會使伺服器和網路過載。 為了降低此功能造成的類似DoS的潛在風險，發佈例項會停用`AssetDownloadServlet` OSGi元件。 如果您不需要作者例項的下載功能，請停用作者上的servlet。
 
 若要允許從DAM下載資產，例如，當使用資產共用共用共用或其他類似入口網站的實施時，請透過OSGi組態手動啟用servlet。 Adobe建議盡可能低地設定允許的下載大小，而不會影響日常下載需求。 高價值可能會影響效能。
 
@@ -86,7 +86,7 @@ ht-degree: 5%
 
 ## 停用資產下載servlet {#disable-asset-download-servlet}
 
-`Asset Download Servlet`可在[!DNL Experience Manager]發佈實例上禁用，方法是更新調度程式配置以阻止任何資產下載請求。 也可以通過OSGi控制台手動禁用servlet。
+如果您不需要下載功能，請停用servlet以防止任何類似DoS的風險。 `Asset Download Servlet`可在[!DNL Experience Manager]作者上停用，並透過更新分派程式設定來封鎖任何資產下載請求來發佈例項。 也可以通過OSGi控制台手動禁用servlet。
 
 1. 若要透過分派器組態來封鎖資產下載請求，請編輯`dispatcher.any`組態，並新增規則至[篩選區段](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring)。
 
