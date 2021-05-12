@@ -4,14 +4,14 @@ description: 在這部分的AEM無頭開發人員歷程中，您將瞭解實作�
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
-
 
 # 使用無頭&lt;a0/AEM>的首次體驗路徑{#path-to-first-experience}
 
@@ -137,7 +137,14 @@ ht-degree: 0%
 * 瞭解需要哪些必要AEM的工具和配置。
 * 瞭解最佳實務，讓您的無頭體驗更順暢、讓內容製作更有效率，並確保內容能快速傳遞。
 
-您應繼續無AEM頭之旅，接下來檢閱檔案[如何將您的內容模型化為內容模型AEM](model-your-content.md)，以瞭解如何在中建立內容結構模型AEM。
+我們希望您以此基礎知識為基礎，充分瞭解AEMHeadless的強大功能和靈活性，以便您能夠將其運用在自己的專案中。 要做到這一點，您有選擇。
+
+### 選擇您自己的冒險{#choose-your-path}
+
+不論您的學習風格為何，Adobe都希望您能成功開始使用您的AEMHeadless專案。
+
+* 如果您偏好&#x200B;**繼續學習無頭概念和無頭技術AEM**，您應繼續無頭歷程AEM，先檢閱檔案[如何將您的內容建模為內容模型AEM](model-your-content.md)，以瞭解如何在中建模您的內容結構AEM。
+* 如果您偏好&#x200B;**透過執行**&#x200B;來學習，可跳至[開始使用AEMHeadless實作教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)，透過實作簡單專案來公開無頭內容，您將直接跳至無頭開AEM發。
 
 ## 其他資源 {#additional-resources}
 
