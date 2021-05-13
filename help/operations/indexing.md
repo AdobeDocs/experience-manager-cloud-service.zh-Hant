@@ -2,10 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-translation-type: tm+mt
-source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
+source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1829'
 ht-degree: 2%
 
 ---
@@ -49,6 +48,10 @@ ht-degree: 2%
 對於上述第1點和第2點，您需要在各自的Cloud Manager發行排程中，建立新的索引定義，作為自訂程式碼庫的一部分。 如需詳細資訊，請參閱[部署AEM至Cloud Service檔案](/help/implementing/deploying/overview.md)。
 
 ### 準備新索引定義{#preparing-the-new-index-definition}
+
+>[!NOTE]
+>
+>如果自訂現成可用的索引（例如`damAssetLucene-6`），請從&#x200B;*Cloud Service環境*&#x200B;複製最新的現成可用的索引定義，並將自訂加入最上方，這可確保不會不慎移除必要的設定。 例如，`/oak:index/damAssetLucene-6/tika`下方的`tika`節點是必要節點，也應是您自訂索引的一部分，而且它不存在於Cloud SDK中。
 
 您需要準備一個新的索引定義包，該包包含實際的索引定義，請遵循以下命名模式：
 
