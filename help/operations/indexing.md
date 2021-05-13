@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
+source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1780'
 ht-degree: 2%
 
 ---
@@ -208,7 +208,3 @@ ht-degree: 2%
 ```
 
 如果不再需要自訂現成可用的索引，則必須複製現成可用的索引定義。 例如，如果您已部署`damAssetLucene-8-custom-3`，但不再需要自定義，而想要切換回預設的`damAssetLucene-8`索引，則必須添加包含`damAssetLucene-8`索引定義的索引`damAssetLucene-8-custom-4`。
-
-### 索引可用性和容錯{#index-availability-and-fault-tolerance}
-
-建議為重要功能建立重複索引（請記住上述索引的命名慣例），因此，在發生索引損毀或任何此類未預見的事件時，都有備援索引可用來回應查詢。
