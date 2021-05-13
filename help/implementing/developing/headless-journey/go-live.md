@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-translation-type: tm+mt
-source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
+source-git-commit: 0960c354eb9a5156d9200b2c6f54761f1a8383a2
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1811'
 ht-degree: 0%
 
 ---
@@ -33,38 +32,97 @@ ht-degree: 0%
 
 本檔案可協助您瞭解無頭AEM出版管道，以及您在應用程式上線前需要注意的效能考量。
 
+* 瞭解AEMSDK及所需的開發工具
+* 設定本機開發執行階段，以模擬內容上線前的內容
 * 瞭解內AEM容複製和快取基礎知識
-* 設定模擬無頭應用程式上線所需的工具
 * 在啟動前保護並調整應用程式的規模
 * 監視效能和調試問題
 
-## 內容複製和快取基礎知識{#content-replication-and-caching}
+## AEMSDK {#the-aem-sdk}
 
-完整AEM的環境由Author、Publish和Dispatcher組成。
+它包含下列對象：
+
+* Quickstart jar —— 可執行的jar檔案，可用於設定作者和發佈實例
+* Dispatcher tools - Dispatcher模組及其對基於Windows和UNIX的系統的依賴性
+* Java API Jar - Java Jar/Maven Dependency，它公開所有允許的可用於開發的Java API AEM
+* Javadocjar - Java APIjar的javadoc
+
+## 開發工具{#development-tools}
+
+除了SDK之AEM外，您還需要其他工具，以協助在本端開發和測試您的程式碼和內容：
+
+* Java
+* SDKAEM
+* Git
+* 阿帕奇·馬文
+* Node.js程式庫
+* 您選擇的IDE
+
+由AEM於是Java應用程式，您必須安裝Java和Java SDK，才能支援將AEM其開發為Cloud Service。
+
+SDKAEM可用來建立和部署自訂程式碼。 它是您在上線前測試無頭應用程式所需的主要工具。
+
+Git是您用來管理來源控制以及簽入Cloud Manager的變更，然後將其部署至生產實例的工具。
+
+使AEM用Apache Maven來建立從Maven Project原型產生AEM的專案。 所有主要IDE都提供Maven的整合支援。
+
+Node.js是JavaScript執行時期環境，用於處理專案的ui.frontendAEM子專案的前端資產。 Node.js與npm一起分發，實際上是Node.js包管理器，用於管理JavaScript依賴性。
+
+## 系統AEM元件總覽{#components-of-an-aem-system-at-a-glance}
+
+完整AEM的環境由Author、Publish和Dispatcher組成。 這些相同的元件將會在本機開發執行時期中提供，讓您更輕鬆地在上線前預覽程式碼和內容。
 
 * **作者服務** 是內部使用者建立、管理和預覽內容的地方。
 
-* **Publish服** 務被視為「即時」環境，一般是使用者與之互動的環境。內容在「作者」服務上經過編輯和核准後，會分發至「發佈」服務。
+* **Publish服** 務被視為「即時」環境，一般是使用者與之互動的環境。內容在「作者」服務上經過編輯和核准後，會分發至「發佈」服務。 無頭應用程式最常AEM見的部署模式是讓生產版應用程式連接至AEM Publish服務。
 
 * **Dispatcher是** 一種靜態Web伺服器，與Dispatcher模組AEM一起擴展。它會快取由發佈例項產生的網頁，以改善效能。
 
-無頭應用程式最常AEM見的部署模式是讓生產版應用程式連接至AEM Publish服務。
+## 本機開發工作流程{#the-local-development-workflow}
 
-## 要求和配置{#requirements-and-configuration}
+本端開發專案是以Apache Maven為基礎，並使用Git進行來源控制。 為了更新專案，開發人員可使用他們偏好的整合開發環境，例如Eclipse、Visual Studio程式碼或IntelliJ等。
 
-1. 使用[作為雲端服務SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)來設定[本機執行階段AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#install-java)
-2. 安裝[WKND示例內容](/help/implementing/developing/introduction/develop-wknd-tutorial.md)和後續的GraphQL端點
-3. 部署和配置[靜態節點伺服器](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/production-deployment.html?lang=en#static-server)。
+若要測試無頭應用程式所擷取的程式碼或內容更新，您必須將更新部署至本機執行階段，其中包AEM含作者的本機例AEM項和發佈服務。
 
-## 在啟動{#secure-and-scale-before-launch}之前，保護並縮放您的無頭應用程式
+請務必注意本端執行階段中各元件之AEM差異，因為在最重要的地方測試更新非常重要。 例如，測試作者的內容更新或在發佈例項上測試新程式碼。
 
-1. 配置[基於令牌的驗證](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-2. 安全網頁掛接
-3. 設定快取和調整彈性
+在生產系統中，調度程式和http Apache伺服器將始終位於發佈實例AEM前面。 它們為系統提供快取和安全AEM服務，因此必須針對分派程式測試程式碼和內容更新。
+
+一旦您確定所有項目都經過測試並正常運作後，就可將程式碼更新推送至Cloud Manager的集中式Git儲存庫。
+
+將更新上傳到Cloud Manager後，即可使用Cloud Manager的CI/CD管道將AEM其部署為Cloud Service。
+
+## 使用本機開發環境在本機預覽程式碼和內容{#previewing-your-code-and-content-locally-with-the-local-development-environment}
+
+為了讓您的無頭專AEM案準備啟動，您需要確保專案的所有組成部分都正常運作。
+
+要做到這一點，您需要將一切整合在一起：程式碼、內容和設定，並在本機開發環境中進行測試，以便上線準備。
+
+地方發展環境由三個主要領域組成：
+
+1. 專AEM案——這將包含開發人員將要處理的所有自訂程AEM式碼、設定和內容
+1. 本機執AEM行階段——作AEM者和發佈服務的本機版本，將用來從專案部署程AEM式碼
+1. The Local Dispatcher Runtime - Apache httpd webserver的本地版本，其中包含Dispatcher模組
+
+在設定本機開發環境後，您就可以在本機部署靜態Node伺服器，來模擬內容對React應用程式的服務。
+
+若要深入瞭解如何設定本機開發環境，以及內容預覽所需的所有相依性，請參閱「使用AEM Publish Service進行生產部署」（英文）[](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)。
 
 ## 部署至生產{#deploy-to-production}
 
-在本機測試完所有程式碼和內容後，您現在可以開始使用進行生產部署AEM。
+在本機測試完所有程式碼和內容後，您就可開始使用進行生產部署AEM。
+
+您可以利用Cloud Manager CI/CD管道開始部署代碼，該管道在[此處](/help/implementing/deploying/overview.md)廣泛介紹。
+
+## 準備您AEM的無頭應用程式上線{#prepare-your-aem-headless-application-for-golive}
+
+現在，您應該依照下列最AEM佳實務，讓無頭應用程式準備好啟動。
+
+### 在啟動{#secure-and-scale-before-launch}之前，保護並縮放您的無頭應用程式
+
+1. 配置[基於令牌的驗證](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+1. 安全網頁掛接
+1. 設定快取和調整彈性
 
 ### 模型結構與GraphQL輸出{#structure-vs-output}
 
@@ -89,9 +147,9 @@ ht-degree: 0%
 * 利用`Last-modified-since`刷新資源。
 * 使用JSON檔案中的`_reference`輸出，即可開始下載資產，毋需剖析完整的JSON檔案。
 
-## 監控 {#monitoring}
+## 效能監控{#performance-monitoring}
 
-### 如何檢查整體效能{#check-overall-performance}
+為了讓使用者在使用無頭應用程式時擁有最佳AEM的體驗，您務必要監控關鍵效能量度，如下所述：
 
 * 驗證應用程式的預覽和生產版本
 * 驗證當AEM前服務可用性狀態頁
@@ -109,9 +167,9 @@ ht-degree: 0%
 
 ## 疑難排解 {#troubleshooting}
 
-### 調試{#debugging}
+### 除錯 {#debugging}
 
-為了在啟動之前確定您的應用程式是否正常運作，建議您依照下列步驟進行除錯：
+請遵循下列最佳實務做法，做為除錯的一般方法：
 
 * 使用應用程式的預覽版本驗證功能與效能
 * 使用應用程式的生產版本驗證功能與效能
@@ -140,3 +198,8 @@ ht-degree: 0%
 您應繼續無AEM頭之旅，接下來檢閱檔案[Post Launch](post-launch.md)，以瞭解如何維持無頭之體驗。
 
 ## 其他資源 {#additional-resources}
+
+* [開始使用無AEM頭生產部署](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [部署為Cloud ServiceAEM概述](/help/implementing/deploying/overview.md)
+* [設定本地環AEM境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [使用Cloud Manager部署您的程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
