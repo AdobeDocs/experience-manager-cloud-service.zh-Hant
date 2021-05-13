@@ -2,10 +2,9 @@
 title: 內容轉移工具綜覽
 description: 內容轉移工具綜覽
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-translation-type: tm+mt
-source-git-commit: 1fb9814f10ef8eae87a7eef9f390700f2f2127d8
+source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '860'
 ht-degree: 73%
 
 ---
@@ -81,4 +80,4 @@ ht-degree: 73%
    * *資料存放區大小*：「內容轉移工具」會使用 64GB，即使實際資料存放區較大亦然。
    * *節點存放區大小*：區段存放區目錄大小或 MongoDB 資料庫大小。因此，若區段存放區的大小為 20GB，則需要的可用磁碟空間為 94GB。
 
-* 需要在整個內容傳輸活動中維護移轉集，以支援內容頂層。 由於在內容傳輸活動期間，最多可以一次建立和維護10個遷移集，因此建議相應地分拆內容儲存庫，以確保遷移集不會用完。  其移轉集在其中。
+* 需要在整個內容傳輸活動中維護移轉集，以支援內容頂層。 由於在內容傳輸活動期間，最多可以一次建立和維護10個遷移集，因此建議相應地分拆內容儲存庫，以確保遷移集不會用完。
