@@ -4,17 +4,16 @@ description: 瞭解如何在Dynamic Media套用影像預設集。
 feature: 影像預設集、檢視器、轉譯
 role: Business Practitioner
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '306'
 ht-degree: 5%
 
 ---
 
 # 套用 Dynamic Media 影像預設集 {#applying-image-presets}
 
-「影像預設集」可讓資產動態傳遞不同大小、不同格式的影像，或動態產生的其他影像屬性。 匯出影像時，您可以選擇預設集，並依管理員指定的規格重新格式化影像。
+「影像預設集」可讓資產動態傳遞不同大小、不同格式的影像，或動態產生的其他影像屬性。 在導出時，您可以選擇預設集，以按照管理員概述的規格重新格式化影像。
 
 此外，您還可以選擇自適應的影像預設集（在選取後由&#x200B;**[!UICONTROL RESS]**&#x200B;按鈕指定）。
 
@@ -26,7 +25,7 @@ ht-degree: 5%
 
 您可以隨時預覽影像，將影像預設集套用至影像。
 
-**套用Dynamic Media影像預設集**
+**要應用Dynamic Media影像預設集：**
 
 1. 開啟資產，然後在左側導軌中點選下拉式清單，然後點選「轉譯」****。
 
