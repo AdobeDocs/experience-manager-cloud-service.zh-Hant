@@ -4,10 +4,9 @@ description: 「瞭解影像預設集，以及如何建立、修改及管理影�
 feature: 影像預設集、檢視器、轉譯
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3653'
 ht-degree: 9%
 
 ---
@@ -30,7 +29,7 @@ ht-degree: 9%
 
 像宏一樣，「影像預設集」是預先定義的一組大小和格式命令，這些命令以名稱保存。 若要瞭解影像預設集的運作方式，請假設您的網站要求每個產品影像以不同的大小、不同的格式和壓縮率顯示，以便桌上型電腦和行動裝置提供。
 
-您可以建立兩個影像預設集：桌上型電腦版本為500 x 500像素，行動版本為150 x 150像素。 您可以建立兩個影像預設集，一個稱為`Enlarge`，以500x500像素顯示影像，另一個稱為`Thumbnail`，以150x150像素顯示影像。 若要以`Enlarge`和`Thumbnail`大小傳送影像，Experience Manager會尋找放大影像預設集和縮圖影像預設集的定義。 然後，Experience Manager會動態產生每個影像預設集的大小和格式規格的影像。
+您可以建立兩個影像預設集：桌上型電腦版本為500 x 500像素，行動版本為150 x 150像素。 您可以建立兩個影像預設集，一個稱為`Enlarge`，以500x500像素顯示影像，另一個稱為`Thumbnail`，以150x150像素顯示影像。 要以`Enlarge`和`Thumbnail`大小傳送影像，Experience Manager將找到放大影像預設和縮圖影像預設的定義。 然後，Experience Manager會動態產生每個影像預設集的大小和格式規格的影像。
 
 動態傳送時，影像大小會變小，而影像會失去清晰度和細節。 因此，每個影像預設集都包含格式控制項，以最佳化以特定大小傳送的影像。 這些控制項可確保您的影像在傳送到您的網站或應用程式時清晰銳利。
 
@@ -38,7 +37,7 @@ ht-degree: 9%
 
 ## 管理影像預設集{#managing-image-presets-1}
 
-您可以點選或按一下Experience Manager標誌來存取全域導覽主控台，然後點選或按一下「工具」圖示，並導覽至「**[!UICONTROL 資產>影像預設集」]**，以管理您的Experience Manager影像預設集。
+您可以點選或按一下Experience Manager標誌來存取全域導覽主控台，然後點選或按一下「工具」圖示，並導覽至「資產」**[!UICONTROL >>「影像預設集」**[!UICONTROL ，以管理您的Experience Manager影像預設集。]**]**
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -63,7 +62,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 在Experience Manager資產�
 * Adobe Illustrator檔案由單一頁面和多圖層組成。 每個圖層都會擷取為主要Illustrator資產下的PNG子資產。
 * PDF檔案由一或多頁組成。 每個頁面都會擷取為主多頁PDF檔案下的單一頁面PDF子資產。
 
-子資產由`Create Sub Asset process`元件在整體`DAM Update Asset`工作流中建立。 要在工作流中查看此流程元件，請按一下&#x200B;**[!UICONTROL 工具>工作流>模型> DAM更新資產>編輯]**。
+子資產由`Create Sub Asset process`元件在整體`DAM Update Asset`工作流中建立。 要在工作流中查看此流程元件，請按一下「工具」>「工具」>「工作流」]**>>「模型」>「DAM更新資產」]**>>「編輯」]**。******[!UICONTROL ******[!UICONTROL **[!UICONTROL 
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
@@ -88,7 +87,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 在Experience Manager資產�
 
 通過`DAM Update Asset`工作流可以訪問`Rasterize PDF/AI Image Preview Rendition`進程元件選項。
 
-點選左上角的Adobe Experience Manager，導覽至「**[!UICONTROL 工具>工作流程>模型]**」。 在「工作流模型」頁面上，選擇&#x200B;**[!UICONTROL DAM Update Asset]**，然後在工具列上點選&#x200B;**[!UICONTROL Edit]**。 在「DAM更新資產」工作流頁面上，點選兩下`Rasterize PDF/AI Image Preview Rendition`流程元件以開啟其「步驟屬性」對話方塊。
+點選左上角的Adobe Experience Manager，導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模型]**。 在「工作流模型」頁面上，選擇&#x200B;**[!UICONTROL DAM Update Asset]**，然後在工具列上點選&#x200B;**[!UICONTROL Edit]**。 在「DAM更新資產」工作流頁面上，點選兩下`Rasterize PDF/AI Image Preview Rendition`流程元件以開啟其「步驟屬性」對話方塊。
 
 #### 點陣化PDF/AI影像預覽轉譯選項{#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -96,41 +95,18 @@ Adobe Illustrator的檔案格式是PDF的變體。 在Experience Manager資產�
 
 點陣化PDF或AI工作流程的引數
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>進程參數</strong></td>
-   <td><strong>預設設定</strong></td>
-   <td><strong>說明</strong></td>
-  </tr>
-  <tr>
-   <td>Mime 類型</td>
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td>
-   <td>檔案MIME類型的清單，這些類型被視為PDF或Illustrator檔案。<br /> </td>
-  </tr>
-  <tr>
-   <td>寬度上限</td>
-   <td>二零四八年</td>
-   <td>產生的預覽轉譯的最大寬度（像素）。<br /> </td>
-  </tr>
-  <tr>
-   <td>高度上限</td>
-   <td>二零四八年</td>
-   <td>產生的預覽轉譯的最高高度（以像素為單位）。<br /> </td>
-  </tr>
-  <tr>
-   <td>解析度</td>
-   <td>72</td>
-   <td>解析度，以ppi為單位點陣化第一頁（每英吋像素）。</td>
-  </tr>
- </tbody>
-</table>
+| 進程參數 | 預設設定 | 說明 |
+|---|---|---|
+| Mime 類型 | application/pdf<br>application/postscript<br>application/illustrator | 檔案MIME類型的清單，這些類型被視為PDF或Illustrator檔案。 |
+| 寬度上限 | 二零四八年 | 產生的預覽轉譯的最大寬度（以像素為單位）。 |
+| 高度上限 | 二零四八年 | 產生的預覽轉譯的最高高度（以像素為單位）。 |
+| 解析度 | 72 | 解析度，以ppi為單位點陣化第一頁（每英吋像素）。 |
 
 使用預設的處理引數，PDF/AI檔案的第一頁點陣化為72 ppi，而產生的預覽影像大小為2048 x 2048像素。 對於一般部署，您可將解析度提高至至少150 ppi或以上。 例如，美國字母大小為300 ppi的檔案要求最大寬度和高度分別為2550 x 3300像素。
 
 「最大寬度」和「最大高度」會限制點陣化的解析度。 例如，如果最大值未變更，而「解析度」設為300 ppi，則美國字母檔案點陣化為186 ppi。 也就是說，檔案是1581 x 2046像素。
 
-`Rasterize PDF/AI Image Preview Rendition`進程元件已定義最大值，以確保它不會在記憶體中建立過大的映像。 此類大型映像可能會使提供給JVM（Java虛擬機）的記憶體溢出。 請務必為JVM提供足夠的記憶體來管理已配置的並行工作流數，每個工作流都有可能以最大配置的大小建立映像。
+`Rasterize PDF/AI Image Preview Rendition`進程元件已定義最大值，以確保它不會在記憶體中建立過大的映像。 如此大的影像可能會使提供給JVM(Java™ Virtual Machine)的記憶體溢位。 請務必為JVM提供足夠的記憶體來管理已配置的並行工作流數，每個工作流都有可能以最大配置的大小建立映像。
 
 ### InDesign(INDD)檔案格式{#indesign-indd-file-format}
 
@@ -148,30 +124,12 @@ DAM更新資產工作流程中媒體提取流程元件參數中的ExtendScript�
 
 以下指令碼由Dynamic Media整合使用：
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>ExtendScript名稱</strong></td>
-   <td><strong>預設</strong></td>
-   <td><strong>說明</strong></td>
-  </tr>
-  <tr>
-   <td>ThumbnailExport.jsx</td>
-   <td>是</td>
-   <td>產生300 ppi <code>thumbnail.jpg</code>轉譯，並由<code>Dynamic Media Process Image Assets</code>處理元件最佳化並轉換為PTIFF轉譯。<br /> </td>
-  </tr>
-  <tr>
-   <td>JPEGPagesExport.jsx</td>
-   <td>是</td>
-   <td>為每個頁面產生300 ppi的JPEG子資產。 JPEG子資產是儲存在InDesign資產下的實際資產。 此外，還通過<code>DAM Update Asset</code>工作流程對其進行優化並轉換為PTIFF。<br /> </td>
-  </tr>
-  <tr>
-   <td>PDFPagesExport.jsx</td>
-   <td>否</td>
-   <td>為每個頁面產生PDF子資產。 PDF子資產會如前所述處理。 由於PDF僅包含單一頁面，因此不會產生子資產。<br /> </td>
-  </tr>
- </tbody>
-</table>
+
+| ExtendScript名稱 | 預設 | 說明 |
+|---|---|---|
+| ThumbnailExport.jsx | 是 | 產生300 ppi `thumbnail.jpg`轉譯，並由`Dynamic Media Process Image Assets`處理元件最佳化並轉換為PTIFF轉譯。 |
+| JPEGPagesExport.jsx | 是 | 為每個頁面產生300 ppi的JPEG子資產。 JPEG子資產是儲存在InDesign資產下的實際資產。 此外，還可透過`DAM Update Asset`工作流程最佳化並轉換為PTIFF。 |
+| PDFPagesExport.jsx | 否 | 為每個頁面產生PDF子資產。 PDF子資產會如前所述處理。 由於PDF僅包含單一頁面，因此不會產生子資產。 |
 
 ### 設定影像縮圖大小{#configuring-image-thumbnail-size}
 
@@ -194,7 +152,7 @@ DAM更新資產工作流程中媒體提取流程元件參數中的ExtendScript�
 
 **若要設定影像縮圖大小**
 
-1. 點選「**[!UICONTROL 工具>工作流程>模型> DAM更新資產>編輯]**」。
+1. 點選「**[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新資產]** > **[!UICONTROL 編輯]**」。
 1. 點選「**[!UICONTROL Dynamic Media處理影像資產」步驟，並點選「**[!UICONTROL &#x200B;縮圖&#x200B;]**」標籤。]**&#x200B;視需要變更縮圖大小，然後點選「 **[!UICONTROL 確定]**」。
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
@@ -211,7 +169,7 @@ DAM更新資產工作流程中媒體提取流程元件參數中的ExtendScript�
 
 當您預覽資產時，您建立的影像預設集會以動態轉譯的形式提供。 Experience Manager顯示從&#x200B;**[!UICONTROL 詳細資料檢視>轉譯]**&#x200B;檢視資產時的各種動態轉譯。 您可以增加或減少顯示的轉譯限制。
 
-**要增加或減少顯示的影像預設集數**:
+**要增加或減少顯示的影像預設集數：**
 
 1. 導覽至CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
 1. 導覽至`/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`的影像預設集清單節點
@@ -239,11 +197,12 @@ DAM更新資產工作流程中媒體提取流程元件參數中的ExtendScript�
 請參閱[Adobe Illustrator(AI)、PostScript®(EPS)和PDF檔案格式](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)。
 
 如果您想要支援擷取INDD檔案，以便產生此檔案格式的動態轉譯，請在建立影像預設集之前先檢閱下列資訊。
+
 請參閱[InDesign(INDD)檔案格式](#indesign-indd-file-format)。
 
-**要建立影像預設集**:
+**要建立影像預設：**
 
-1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，然後點選&#x200B;**[!UICONTROL 工具>資產>影像預設集]**。
+1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，然後點選「工具」**[!UICONTROL >>「**[!UICONTROL &#x200B;資產」>「影像預設集」]**。]**]****[!UICONTROL 
 1. 按一下&#x200B;**[!UICONTROL 建立]**。將開啟&#x200B;**[!UICONTROL 編輯影像預設集]**&#x200B;窗口。
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -324,7 +283,7 @@ DAM更新資產工作流程中媒體提取流程元件參數中的ExtendScript�
      <strong>含alpha</strong>的TIFF提供下列額外選項：
     </div>
     <ul>
-     <li><strong>壓縮</strong> -選擇壓縮算法。PDF的演算法選項為<strong>None</strong>、<strong>Zip</strong>和<strong>Jpeg</strong>;對於TIFF為<strong>None</strong>、<strong>LZW</strong>、<strong>Jpeg</strong>和<strong>Zip</strong>;而含Alpha的TIFF為<strong>None</strong>、<strong>LZW</strong>和<strong>Zip</strong>。</li>
+     <li><strong>壓縮</strong> -選擇壓縮算法。PDF的演算法選項為<strong>None</strong>、<strong>Zip</strong>和<strong>Jpeg</strong>;對於TIFF，它們是<strong>None</strong>、<strong>LZW</strong>、<strong>Jpeg</strong>和<strong>Zip</strong>;而含Alpha的TIFF為<strong>None</strong>、<strong>LZW</strong>和<strong>Zip</strong>。</li>
     </ul> <p>選擇<strong>PNG</strong>、<strong>PNG with Alpha、</strong>或<strong>EPS</strong>不提供其他選項。</p> </td>
   </tr>
   <tr>
@@ -356,7 +315,7 @@ DAM更新資產工作流程中媒體提取流程元件參數中的ExtendScript�
     <ul>
      <li>選擇<strong>「感知</strong>」，當原始影像中的一個或多個顏色超出目標色域的色域時，將總色域從一個色域壓縮到另一個色域。</li>
      <li>當當前顏色空間中的顏色超出目標顏色空間的色域時，選擇<strong>相對比色</strong>。 此外，您也想將它對應至目標色彩空間色域內最接近的色彩，而不會影響任何其他色彩。 </li>
-     <li>選擇<strong>飽和度</strong>以在轉換到目標顏色空間時重制原始影像顏色飽和度。 </li>
+     <li>如果要在轉換為目標色域時重現原始影像色彩飽和度，請選擇<strong>飽和度</strong>。 </li>
      <li>選擇<strong>絕對比色</strong>以完全匹配顏色，而不對會改變影像亮度的白點或黑點進行調整。</li>
     </ul> </td>
   </tr>
@@ -372,9 +331,9 @@ DAM更新資產工作流程中媒體提取流程元件參數中的ExtendScript�
    <td><strong>銳利化文字</strong></td>
    <td><p>選擇「無」、「銳利化」或「銳利化」。<strong></strong><strong></strong><strong></strong> </p>
     <ul>
-     <li>選擇<strong>無</strong>禁用銳利化。</li>
+     <li>如果要禁用銳利化，請選擇<strong>無</strong>。</li>
      <li>選擇「銳化<strong></strong>」，在進行所有縮放後對影像應用基本銳化濾鏡。 銳利化有助於補償以不同大小顯示影像時可能產生的模糊性。 </li>
-     <li>選擇「銳利化遮色片」(Unsharp mask)「銳利化遮色片」(A1/)，對最終縮減取樣的影像微調銳利化濾鏡效果。 <strong></strong>您可以控制效果的強度、效果的半徑（以像素計量）以及忽略的對比度臨界值。 此效果使用的選項與 Photoshop的「遮色片銳利化」濾鏡相同。</li>
+     <li>如果要微調最終縮減取樣影像的銳利化濾鏡效果，請選擇<strong> 「銳利化遮色片」</strong>。 您可以控制效果的強度、效果的半徑（以像素計量）以及忽略的對比度臨界值。 此效果使用的選項與 Photoshop的「遮色片銳利化」濾鏡相同。</li>
     </ul> <p>在<strong>銳利化遮色片</strong>中，您有下列選項：</p>
     <ul>
      <li><strong>量</strong> -控制套用至邊緣像素的對比度。預設實數值為1.0。對於高解析度的影像，您可將影像放大至高達5.0。將「量」視為濾鏡強度的度量。</li>
@@ -471,7 +430,7 @@ DAM更新資產工作流程中媒體提取流程元件參數中的ExtendScript�
 
 ### 編輯影像預設集{#modifying-image-presets}
 
-1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，然後點選&#x200B;**[!UICONTROL 工具>資產>影像預設集]**。
+1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，然後點選「工具」**[!UICONTROL >>「**[!UICONTROL &#x200B;資產」>「影像預設集」]**。]**]****[!UICONTROL 
 
    ![6_5_imagepreset_editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -484,5 +443,5 @@ DAM更新資產工作流程中媒體提取流程元件參數中的ExtendScript�
 
 ### 刪除影像預設集{#deleting-image-presets}
 
-1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，點選或按一下「工具」圖示，並導覽至「**[!UICONTROL 資產>影像預設集]**」。
+1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，點選或按一下「工具」圖示，並導覽至「資產」**[!UICONTROL >>「影像預設集」]**。]****[!UICONTROL 
 1. 選取預設集，然後按一下「刪除」。 **** Dynamic Media確認您要刪除它。 點選「**[!UICONTROL 刪除]**」以刪除，或點選「取消」以中止。****
