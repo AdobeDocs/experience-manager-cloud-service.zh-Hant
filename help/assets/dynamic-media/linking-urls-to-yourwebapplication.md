@@ -3,10 +3,9 @@ title: 將 URL 連結至您的 Web 應用程式
 description: 瞭解如何將URL連結至您在Dynamic Media的Web應用程式。
 role: Business Practitioner
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1275'
 ht-degree: 10%
 
 ---
@@ -15,7 +14,7 @@ ht-degree: 10%
 
 您的網站和應用程式會透過URL呼叫存取Dynamic Media服務。 在您發佈資產後，Dynamic Media會啟動參照資產的URL字串。 您可以將這些URL貼入網頁瀏覽器以進行測試。
 
-只有當您&#x200B;*not*&#x200B;使用作為WCM時，才會連AEM結至URL。 連結與內嵌——是當您想要將視訊播放器當成快顯視窗或強制視窗時使用。 如果您使AEM用作WCM,[會直接在頁面上新增資產。](adding-dynamic-media-assets-to-pages.md)
+只有當您&#x200B;*not*&#x200B;使用Adobe Experience Manager做為WCM時，才會連結至URL。 連結——與內嵌——是當您想要將視訊播放器當成快顯視窗或強制視窗時使用。 如果您使用Experience Manager做為WCM，則[會直接在頁面上新增資產。](adding-dynamic-media-assets-to-pages.md)
 
 若要將這些URL字串置於您的網頁和應用程式中，請從Dynamic Media複製。
 
@@ -47,7 +46,7 @@ ht-degree: 10%
 
 您有幾種不同的方式可取得URL字串。 不過，下列步驟僅顯示一個可使用的方法。
 
-**若要取得資產的URL**
+**若要取得資產的URL:**
 
 1. 導覽至您要複製其影像預設集URL或檢視器預設集URL的&#x200B;*已發佈*&#x200B;資產，然後點選資產以開啟它。
 
@@ -89,15 +88,15 @@ Dynamic Media支援靜態資產的傳送，而靜態資產則不只是影像和�
 * GIF動畫
 * 音訊檔案
 * CSS
-* JavaScript（當您的公司設定了自己的網域時）
+* JavaScript™（當您的公司設定了自己的網域時）
 * PDF
 * SVG
 * XML
 * ZIP
 
-**若要取得靜態資產的URL**
+**若要取得靜態資產的URL:**
 
-1. 導覽至您要複製其URL的*plished *static資產，然後點選資產以開啟它。
+1. 導覽至您要複製其URL的&#x200B;*published*&#x200B;靜態資產，然後點選資產以開啟它。
 
    請記住，URL僅可在&#x200B;*之後複製*&#x200B;靜態資產，*已發佈*。
 
@@ -117,7 +116,7 @@ Dynamic Media支援靜態資產的傳送，而靜態資產則不只是影像和�
 
 ## 取得已發佈的視訊轉譯的視訊URL {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. 在AEM中，導覽至&#x200B;**[!UICONTROL 工具>部署>雲端>Cloud Services]**。
+1. 在Experience Manager中，導航至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 雲]** > **[!UICONTROL Cloud Services]**。
 1. 在「 **[!UICONTROL Cloud Services]** 」頁面上 **[!UICONTROL ，向下捲動至「]** Dynamic Media Cloud Services **[!UICONTROL 」標題，然後點選「]** Show Configurations」。
 1. 在「 **[!UICONTROL 可用配置]**」下，點選所需配置的名稱。
 
@@ -127,20 +126,20 @@ Dynamic Media支援靜態資產的傳送，而靜態資產則不只是影像和�
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
+   (以上路徑僅供說明之用；它不是您複製的實際路徑)。
 
 1. 在「 **[!UICONTROL 註冊ID]**」下方，複製ID最後一部分中找到的客戶名稱。
 
    例如，如果註冊ID為`87654321|MyCompany`，則客戶名稱為`MyCompany`。
 
-1. 在頁面左上角附近，點選&#x200B;**[!UICONTROL Cloud Services]**，然後點選圖AEM示並導覽至&#x200B;**[!UICONTROL 一般>CRXDE Lite]**。
-1. 從JCR(Java Content Repository)複製整個視訊轉譯路徑。
+1. 在頁面的左上角附近，點選&#x200B;**[!UICONTROL Cloud Services]**，然後點選Experience Manager圖示並導覽至&#x200B;**[!UICONTROL 一般]** > **[!UICONTROL CRXDE Lite]**。
+1. 從JCR（Java™內容儲存庫）下載整個視訊轉譯路徑。
 
    例如，視訊的轉譯路徑可能會如下所示：
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
+   (以上路徑僅供說明之用；它不是您複製的實際路徑)。
 
 1. 若要形成完整的URL路徑，請依下列順序排列複製的資訊：
 
@@ -154,7 +153,7 @@ Dynamic Media支援靜態資產的傳送，而靜態資產則不只是影像和�
 
 ## 取得最適化串流(HLS){#obtaining-a-video-url-for-adaptive-streaming-hls}的視訊URL
 
-1. 在AEM中，導覽至&#x200B;**[!UICONTROL 工具>部署>雲端>Cloud Services]**。
+1. 在Experience Manager中，導航至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 雲]** > **[!UICONTROL Cloud Services]**。
 1. 在「 **[!UICONTROL Cloud Services]** 」頁面上 **[!UICONTROL ，向下捲動至「]** Dynamic Media Cloud Services **[!UICONTROL 」標題，然後點選「]** Show Configurations」。
 1. 在「 **[!UICONTROL 可用配置]**」下，點選所需配置的名稱。
 1. 在&#x200B;**[!UICONTROL Dynamic MediaCloud Services設定]**&#x200B;頁上，執行以下操作：
@@ -163,7 +162,7 @@ Dynamic Media支援靜態資產的傳送，而靜態資產則不只是影像和�
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
+   (以上路徑僅供說明之用；它不是您複製的實際路徑)。
 
    * 在「 **[!UICONTROL 註冊ID]**」下方，複製ID最後一部分中找到的客戶名稱。您稍後需要在這些步驟中複製的客戶名稱。
 
@@ -189,7 +188,7 @@ Dynamic Media支援靜態資產的傳送，而靜態資產則不只是影像和�
     </tbody>
    </table>
 
-1. 複製中的完整視訊資產路AEM徑，由Dynamic Media處理。 您稍後需要這些步驟中複製的視訊資產路徑。
+1. 複製由Dynamic Media處理的Experience Manager中的完整視訊資產路徑。 您稍後需要這些步驟中複製的視訊資產路徑。
 
    例如：
 
