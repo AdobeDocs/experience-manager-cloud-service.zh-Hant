@@ -5,10 +5,9 @@ contentOwner: Rick Brough
 feature: 資產管理
 role: Business Practitioner
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '464'
 ht-degree: 3%
 
 ---
