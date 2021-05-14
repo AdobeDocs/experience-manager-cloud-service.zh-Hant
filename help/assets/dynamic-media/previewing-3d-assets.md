@@ -1,10 +1,9 @@
 ---
 title: 預覽 3D 資產
 description: 瞭解如何在Dynamic Media預覽3D資產。
-translation-type: tm+mt
-source-git-commit: 2fd39221eca36f520d0095339423ac2c6a0c322e
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '562'
 ht-degree: 11%
 
 ---
@@ -25,7 +24,7 @@ Experience Manager中的互動式3D預覽支援下列檔案格式：
 | 3D副檔名 | 檔案格式 | MIME類型 | 附註 |
 |---|---|---|---|
 | GLB | 二進位GL傳輸 | 模型/gltf-binary |  |
-| GLTF | GL傳輸格式 | model/gltf+json | 請參閱下面的&#x200B;**注意**。 |
+| GLTF | GL傳輸格式 | model/gltf+json | 請參閱下面的&#x200B;**Note**。 |
 | OBJ | WaveFront 3D物件檔案 | application/x-tgif |  |
 | STL | 立體成形 | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | 僅支援擷取；預覽無法使用。 |
@@ -52,13 +51,13 @@ Experience Manager中的互動式3D預覽支援下列檔案格式：
 
 1. 請確定您已將3D資產上傳至Experience Manager。
 請參閱[3D預覽支援的格式](#supported-3d-previewing-assets)和[上傳資產](/help/assets/manage-digital-assets.md#uploading-assets)。
-1. 從Experience Manager，在&#x200B;**[!UICONTROL Navigation]**&#x200B;頁面上，點選&#x200B;**[!UICONTROL 資產>檔案]**。
+1. 從Experience Manager，在&#x200B;**[!UICONTROL Navigation]**&#x200B;頁面上，點選&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**。
 
    ![導覽頁面](/help/assets/dynamic-media/assets/navigation-assets.png)
 
 1. 在頁面的右上角，從「檢視」下拉式清單中，點選「卡片檢視」 ****，然後導覽至您要預覽的3D資產。
 
-   ![3D卡片選擇](/help/assets/dynamic-media/assets/3d-card-select.png)
+   ![3D卡的選擇](/help/assets/dynamic-media/assets/3d-card-select.png)
    _在「卡片檢視」中，點選您要預覽的3D資產卡片。_
 
 1. 點選3D資產的卡片。
