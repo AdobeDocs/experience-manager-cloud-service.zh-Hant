@@ -1,13 +1,12 @@
 ---
-title: 通過Dynamic Media使CDN快取失效
+title: 透過Dynamic Media使CDN（內容傳送網路）快取失效
 description: 「瞭解如何使您的CDN（內容傳送網路）快取內容失效，讓您快速更新由Dynamic Media傳送的資產，而不需等待快取過期。」
 feature: 資產管理
 role: Administrator,Business Practitioner
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1308'
 ht-degree: 1%
 
 ---
@@ -22,11 +21,11 @@ Dynamic Media資產由CDN（內容傳送網路）快取，以便快速傳送給�
 
 另請參閱「Dynamic Media的快取概觀」中的「a0/>快取概觀」。[](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)
 
-**利用Dynamic Media使CDN快取失效**
+**要通過Dynamic Media使CDN快取失效：**
 
 *第1部分（共2部分）:建立CDN失效範本*
 
-1. 在AEMCloud Service中，點選「**[!UICONTROL 工具>資產> CDN失效範本」。]**
+1. 在Adobe Experience Manager，以Cloud Service的形式點選&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL CDN失效範本]**。
 
    ![CDN驗證功能](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -35,7 +34,7 @@ Dynamic Media資產由CDN（內容傳送網路）快取，以便快速傳送給�
    | 藍本 | 選項 |
    | --- | --- |
    | 我過去已使用Dynamic Media經典建立CDN失效範本。 | **[!UICONTROL 建立範本]**&#x200B;文字欄位已預先填入範本資料。 在這種情況下，您可以編輯範本，或繼續下一步驟。 |
-   | 我必須建立範本。 我要輸入什麼？ | 在&#x200B;**[!UICONTROL 建立範本]**&#x200B;文字欄位中，輸入參照`<ID>`的影像URL（包括影像預設集或修飾元），而非下列範例中的特定影像ID:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>如果範本僅包含`<ID>`，則Dynamic Media會填入`https://<publishserver_name>/is/image/<company_name>/<ID>`，其中`<publishserver_name>`是Publish Server中定義的名稱《Dynamic Media經典》中的一般設定。 `<company_name>`是與此實例關聯的公司根目錄的名稱，AEM而`<ID>`是通過要失效的資產選擇器選擇的資產。<br>任何預設集／修飾 `<ID>` 元貼文都會如同在URL定義中複製。<br>只有影像(即， `/is/image`可以根據範本自動形成)。<br>對於 `/is/content/`而言，使用資產選擇器新增資產（例如影片或PDF）並不會自動產生URL。您必須改為在「CDN失效」範本中指定此類資產，或者您可以在&#x200B;*第2部分中手動將URL新增至此類資產：設定CDN失效選項*。<br>**範例：**<br>&#x200B;在第一個範例中，失效範本包含 `<ID>` 與資產URL一起包含 `/is/content`。例如，`http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`。 Dynamic Media會根據此路徑來建立URL，其中`<ID>`是您要使其失效的資產選擇器中選取的資產。<br>在第二個範例中，失效範本包含Web屬性中使用之資產的完整URL，且 `/is/content` 與資產選擇器無關。例如，`http://my.publishserver.com:8080/is/content/dms7snapshot/backpack`其中背包是資產ID。<br>Dynamic Media支援的資產格式可失效。*not*&#x200B;支援的CDN失效資產檔案類型包括PostScript®、封裝PostScript®、Adobe Illustrator、Adobe InDesign、Microsoft Powerpoint、Microsoft Excel、Microsoft Word和Rich Text格式。<br>建立範本時，請務必注意語法和錯字；Dynamic Media不進行任何範本驗證。<br>在此CDN失效範本或第2部分的「新增URL」文字欄位中，為影像智慧裁切指 ****  *定URL:設定CDN失效選項。*<br>**重要：**CDN失效範本中的每個項目都必須位於自己的行上。<br>*以下範本範例僅供圖例之用。* |
+   | 我必須建立範本。 我要輸入什麼？ | 在&#x200B;**[!UICONTROL 建立範本]**&#x200B;文字欄位中，輸入參照`<ID>`的影像URL（包括影像預設集或修飾元），而非下列範例中的特定影像ID:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>如果範本僅包含`<ID>`，則Dynamic Media會填入`https://<publishserver_name>/is/image/<company_name>/<ID>`，其中`<publishserver_name>`是Publish Server中定義的名稱《Dynamic Media經典》中的一般設定。 `<company_name>`是與此Experience Manager實例關聯的公司根目錄的名稱，而`<ID>`是通過要失效的資產選擇器選擇的資產。<br>後續的任何預設集/ `<ID>` 修飾元會依原樣複製在URL定義中。<br>只有影像(即， `/is/image`可以根據範本自動形成)。<br>對於 `/is/content/`而言，使用資產選擇器新增資產（例如影片或PDF）並不會自動產生URL。您必須改為在「CDN失效」範本中指定此類資產，或者您可以在&#x200B;*第2部分中手動將URL新增至此類資產：設定CDN失效選項*。<br>**範例：**<br>&#x200B;在第一個範例中，失效範本包含 `<ID>` 與資產URL一起包含 `/is/content`。例如，`http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`。 Dynamic Media會根據此路徑來建立URL，其中`<ID>`是您要使其失效的資產選擇器中選取的資產。<br>在第二個範例中，失效範本包含Web屬性中使用之資產的完整URL，且 `/is/content` 與資產選擇器無關。例如，`http://my.publishserver.com:8080/is/content/dms7snapshot/backpack`其中背包是資產ID。<br>Dynamic Media支援的資產格式可失效。*不*&#x200B;的支援CDN失效的資產檔案類型包括PostScript®、封裝PostScript®、Adobe Illustrator、Adobe InDesign、Microsoft® Powerpoint、Microsoft® Excel、Microsoft® Word和Rich Text格式。<br>建立範本時，請務必注意語法和錯字；Dynamic Media不進行任何範本驗證。<br>在此CDN失效範本或第2部分的「新增URL」文字欄位中，為影像智慧裁切指 ****  *定URL:設定CDN失效選項。*<br>**重要：**CDN失效範本中的每個項目都必須位於自己的行上。<br>*以下範本範例僅供說明之用。* |
 
    ![CDN失效範本——建立](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
@@ -44,7 +43,7 @@ Dynamic Media資產由CDN（內容傳送網路）快取，以便快速傳送給�
    *第2部分（共2部分）:設定CDN失效選項*
    <br>
 
-1. 在AEMCloud Service中，點選「**[!UICONTROL 工具>資產> CDN失效」]**。
+1. 在Experience Manager中，點選&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL CDN失效]**。
 
    ![CDN驗證功能](/help/assets/assets-dm/cdn-invalidation-path.png)
 
