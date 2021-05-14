@@ -4,10 +4,9 @@ description: 瞭解Dynamic Media檢視器擴充功能的Platform launch和Dynami
 feature: 資產報表
 role: Administrator,Business Practitioner
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '6663'
+source-wordcount: '6661'
 ht-degree: 9%
 
 ---
@@ -24,7 +23,7 @@ ht-degree: 9%
 
 如需擴充功能的詳細資訊，請參閱Adobe使用指南中的[Experience Platform Launch擴充功能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension)。
 
-**本主題適用於以下主題：網** 站管理員、Adobe Experience Manager平台的開發人員和營運人員。
+**本主題適用於以下主題：網** 站管理員、Adobe Experience Manager程式的開發人員和營運人員。
 
 ### 整合的限制{#limitations-of-the-integration}
 
@@ -58,7 +57,7 @@ Adobe Analytics可讓您追蹤使用者在網站上與Dynamic Media檢視器互�
 
 「Experience Platform Launch中的資料元素」是指其值是靜態定義，或根據網頁或「Dynamic Media檢視器」資料的狀態動態計算的命名屬性。
 
-「資料元素」定義的可用選項取決於「Experience Platform Launch」屬性中安裝的「擴充功能」清單。 「核心」擴充功能已預先安裝，在任何組態中都可立即使用。 此「核心」擴充功能可定義來自Cookie、JavaScript程式碼、查詢字串及許多其他來源的資料元素。
+「資料元素」定義的可用選項取決於「Experience Platform Launch」屬性中安裝的「擴充功能」清單。 「核心」擴充功能已預先安裝，在任何組態中都可立即使用。 此「核心」擴充功能可定義來自Cookie、JavaScript™程式碼、查詢字串及許多其他來源的資料元素。
 
 對於Adobe Analytics跟蹤，必須安裝其他幾個擴展，如[安裝和設定擴展](#installing-and-setup-of-extensions)中所述。 Dynamic Media檢視器擴充功能可新增定義資料元素的能力，此值是動態檢視器事件的引數。 例如，可參考檢視器類型，或載入時檢視器所報告的資產名稱、使用者縮放時所報告的縮放等級等等。
 
@@ -66,7 +65,7 @@ Dynamic Media檢視器擴充功能會自動將其「資料元素」的值保持�
 
 定義後，「資料元素」可以使用「資料元素」選取器介面工具集，用於Experience Platform LaunchUI的其他位置。 尤其是，為Dynamic Media檢視器追蹤而定義的資料元素，在規則中由Adobe Analytics擴充功能的設定變數動作引用（請參閱下文）。
 
-請參閱《Experience Platform Launch使用手冊》中的[資料元素](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference)。
+請參閱《Experience Platform Launch使用手冊》中的[資料元素](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html#ui)。
 
 #### 關於Experience Platform Launch{#about-rules-in-adobe-launch}中的規則
 
@@ -92,7 +91,7 @@ Dynamic Media檢視器擴充功能會自動將其「資料元素」的值保持�
 
 *設定變數*&#x200B;動作後面必須有&#x200B;*傳送信標*&#x200B;動作。 *傳送信標*&#x200B;動作實際會傳送資料至分析追蹤伺服器。 *設定變數*&#x200B;和&#x200B;*傳送信標*&#x200B;這兩個動作都來自Adobe Analytics分機。
 
-請參閱《Experience Platform Launch使用手冊》中的[Rules](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/rules.html#reference)。
+請參閱《Experience Platform Launch使用手冊》中的[Rules](https://experienceleague.adobe.com/docs/launch/using/ui/rules.html#ui)。
 
 #### 配置示例{#sample-configuration}
 
@@ -116,7 +115,7 @@ Experience Platform Launch中的下列範例設定示範如何在檢視器載入
 
    ![image2019-3](assets/image2019-3.png)
 
-1. 產生的規則設定如下所示：
+1. 產生的規則設定會如下所示：
 
    ![image2019-4](assets/image2019-4.png)
 
@@ -152,7 +151,7 @@ Experience Platform Launch中的下列範例設定示範如何在檢視器載入
 
 若要進一步瞭解如何使用Dynamic MediaExperience Manager的內嵌程式碼功能，請參閱[將視訊或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)。
 
-**若要使用內嵌代碼追蹤Dynamic Media檢視器**:
+**若要使用內嵌代碼追蹤Dynamic Media檢視器：**
 
 1. 準備網頁以嵌入Dynamic Media檢視器。
 1. 首先登入Experience Platform Launch，以取得Experience Platform Launch程式庫的內嵌程式碼(請參閱[設定Experience Platform Launch](#configuring-adobe-launch-for-the-integration))。
@@ -204,7 +203,7 @@ Experience Platform Launch中的下列範例設定示範如何在檢視器載入
 
 「資料元素」傳回的確切值取決於上下文。 如果在由Dynamic Media檢視器事件觸發的規則中要求資料元素，則會傳回啟動規則的檢視器的資料元素值。 此外，資料元素會在規則中提出要求，而規則是由某個事件從某個其他Platform launch副檔名觸發。 此時，「資料元素」的值來自上次更新此「資料元素」的檢視器。
 
-**請考慮下列範例設定**:
+**請考慮下列範例設定：**
 
 * 具有兩個Dynamic Media縮放檢視器的網頁：*viewer1*&#x200B;和&#x200B;*viewer2*。
 
@@ -230,7 +229,7 @@ Experience Platform Launch中的下列範例設定示範如何在檢視器載入
 
 無論如何，由Dynamic Media檢視器驅動的資料元素值不會儲存在本機儲存或伺服器上；而是僅保留在用戶端Experience Platform Launch庫中。 當網頁重新載入時，此類「資料元素」的值會消失。
 
-通常，「資料元素」編輯器支援[儲存持續時間選擇](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=en#create-a-data-element)。 不過，使用「Dynamic Media查看器」擴展的「資料元素」僅支援&#x200B;**[!UICONTROL 無]**&#x200B;的儲存持續時間選項。 在使用者介面中可以設定任何其他值，但「資料元素」行為在此例中並未定義。 擴充功能可自行管理資料元素的值：在整個檢視器生命週期中維護檢視器事件引數值的資料元素。
+通常，「資料元素」編輯器支援[儲存持續時間選擇](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html?lang=en#create-a-data-element)。 不過，使用「Dynamic Media查看器」擴展的「資料元素」僅支援&#x200B;**[!UICONTROL 無]**&#x200B;的儲存持續時間選項。 在使用者介面中可以設定任何其他值，但「資料元素」行為在此例中並未定義。 擴充功能可自行管理資料元素的值：在整個檢視器生命週期中維護檢視器事件引數值的資料元素。
 
 ### 關於Dynamic Media查看器擴展{#about-rules-in-the-dynamic-media-viewers-extension}中的規則
 
@@ -426,7 +425,7 @@ Adobe建議您在本節之前仔細閱讀所有檔案，以瞭解完整整合。
 
 另請參閱[Analytics實施指南](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)。
 
-**要為整合配置Adobe Analytics**:
+**要為整合配置Adobe Analytics:**
 
 1. 首先，從Experience Cloud[首頁](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)訪問Adobe Analytics。 在功能表列上，按一下頁面右上角的「解決方案」圖示（3×3個點表格），然後按一下&#x200B;**[!UICONTROL Analytics]**。
 
@@ -438,11 +437,11 @@ Adobe建議您在本節之前仔細閱讀所有檔案，以瞭解完整整合。
 
 1. 在Adobe Analytics頁面的右上角，「搜尋報表」欄位的右側，從下拉式清單中選取正確的報表套裝。****&#x200B;如果有多個報表套裝可供使用，而您不確定要使用哪個報表套裝，請連絡您的Adobe Analytics管理員，以協助您選取要使用哪個報表套裝。
 
-   在下圖中，使用者建立了名為&#x200B;*DynamicMediaViewersExtensionDoc*&#x200B;的報表套裝，並從下拉式清單中選取它。 報表套裝名稱僅供圖例之用。 您最終選擇的報表套裝名稱由您決定。
+   在下列範例中，使用者建立了名為&#x200B;*DynamicMediaViewersExtensionDoc*&#x200B;的報表套裝，並從下拉式清單中選取它。 報表套裝名稱僅為範例。 您最終選擇的報表套裝名稱由您決定。
 
    如果沒有可用的報表套裝，您或您的Adobe Analytics管理員必須先建立報表套裝，您才能繼續進一步進行設定。
 
-   請參閱[報表與報表套裝](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites)和[建立報表套裝](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/create-report-suite.html#admin-console)。
+   請參閱[報表與報表套裝](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites)和[建立報表套裝](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#manage-report-suites)。
 
    在Adobe Analytics，報表套裝是在&#x200B;**[!UICONTROL 管理>報表套裝]**&#x200B;下管理。
 
@@ -462,8 +461,8 @@ Adobe建議您在本節之前仔細閱讀所有檔案，以瞭解完整整合。
 
    若要啟用新的自訂流量變數，請在工具列的Adobe Analytics，按一下「管理>報表套裝&#x200B;]**」。**[!UICONTROL 
 
-1. 在「報 **[!UICONTROL 表套裝管理器]** 」頁面上，選取正確的報表，然後在工具列上按一下「編輯 **[!UICONTROL 設定>流量>流量變數」]**。
-1. 在這裡，挑選一個未使用的變數，為其指定描述性名稱(**[!UICONTROL 檢視器資產(prop 30)]**)，並在「已啟用」欄中將組合方塊變更為「已啟用」。
+1. 在&#x200B;**[!UICONTROL 報表套裝管理員]**&#x200B;頁面上，選取正確的報表，然後在工具列上按一下「編輯設定&#x200B;**[!UICONTROL >**[!UICONTROL &#x200B;流量&#x200B;]**>**[!UICONTROL &#x200B;流量變數&#x200B;]**」。]**
+1. 挑選未使用的變數，為其指定描述性名稱(**[!UICONTROL 檢視器資產(prop 30)]**)，然後將「已啟用」欄中的組合方塊變更為「已啟用」。
 
    以下螢幕擷取是自訂流量變數(**[!UICONTROL prop30]**)的範例，用於追蹤檢視器使用的資產名稱：
 
@@ -489,10 +488,10 @@ Adobe建議您在本節之前仔細閱讀所有檔案，以瞭解完整整合。
 
 * 建立新屬性，讓您的所有組態保持一致。
 * 擴充功能的安裝與設定。 屬性中安裝的所有擴充功能的用戶端程式碼會一起編譯為程式庫。 此程式庫稍後會由網頁使用。
-* 設定資料元素和規則。 此設定定義要從Dynamic Media檢視器擷取哪些資料、何時觸發追蹤邏輯，以及在Adobe Analytics傳送檢視器資料的位置。
+* 設定資料元素和規則。 此設定定義從Dynamic Media檢視器取得哪些資料、何時觸發追蹤邏輯，以及在Adobe Analytics傳送檢視器資料的位置。
 * 發佈資料庫。
 
-**要配置整合的Experience Platform Launch**:
+**要配置整合的Experience Platform Launch:**
 
 1. 首先，從Experience Cloud[首頁](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)訪問Experience Platform Launch。 在功能表列上，按一下頁面右上角的「解決方案」圖示（三乘三個點表），然後按一下&#x200B;**[!UICONTROL Launch]**。
 
@@ -543,7 +542,7 @@ Experience Platform Launch中的所有可用擴展都列在&#x200B;**[!UICONTROL
 
 ![image2019-7-8_16-47-40](assets/image2019-7-8_16-47-40.png)
 
-*只有在您打算使用視訊追蹤時，才設定下列項目：*
+*只有在您要使用視訊追蹤時，才設定下列項目：*
 
 在&#x200B;**[!UICONTROL 安裝擴充功能]**&#x200B;頁面上，展開&#x200B;**[!UICONTROL 一般]**，然後指定追蹤伺服器。 追蹤伺服器會遵循範本`<trackingNamespace>.sc.omtrdc.net`，其中`<trackingNamespace>`是布建電子郵件中取得的資訊。
 
@@ -585,9 +584,9 @@ Experience Platform Launch中的所有可用擴展都列在&#x200B;**[!UICONTROL
 
 若要變更Experience Platform Launch設定（包括設定的屬性、擴充功能、規則和資料元素），您必須&#x200B;*publish*&#x200B;此類變更。 「Experience Platform Launch中發佈」是從「屬性」設定下的「發佈」標籤執行。
 
-platform launch可能有多個開發環境、一個測試環境和一個生產環境。 預設情況下，Platform launch中的「Experience Manager雲配置」將Experience Manager作者節點指向Platform launch的「舞台」環境。 Experience Manager發佈節點指向Platform launch的生產環境。 此安排表示有了預設的Experience Manager設定，就必須將Platform launch程式庫發佈至測試環境。 如此可讓您在Experience Manager作者中使用它。 然後，您可將它發佈至「生產」環境，以便用於Experience Manager發佈。
+platform launch可能有多個開發環境、一個測試環境和一個生產環境。 預設情況下，Platform launch中的「Experience Manager雲配置」將Experience Manager作者節點指向Platform launch的「舞台」環境。 「Experience Manager發佈」節點指向「Platform launch」的「生產環境。 此安排表示有了預設的Experience Manager設定，就必須將Platform launch程式庫發佈至測試環境。 如此可讓您在Experience Manager作者中使用它。 然後，您可將它發佈至「生產」環境，以便用於Experience Manager發佈。
 
-有關Experience Platform Launch環境的詳細資訊，請參閱[環境](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types)。
+有關Experience Platform Launch環境的詳細資訊，請參閱[環境](https://experienceleague.adobe.com/docs/launch/using/publish/environments/environments.html#environment-types)。
 
 發佈程式庫包含下列兩個步驟：
 
@@ -645,7 +644,7 @@ platform launch可能有多個開發環境、一個測試環境和一個生產�
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   如需Experience Platform Launch中發佈程式的詳細資訊，請參閱[Publishing](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference)。
+   如需Experience Platform Launch中發佈程式的詳細資訊，請參閱[Publishing](https://experienceleague.adobe.com/docs/launch/using/publish/overview.html#publish)。
 
 ## 為整合配置Adobe Experience Manager{#configuring-adobe-experience-manager-for-the-integration}
 
@@ -744,8 +743,8 @@ Experience Manager配置由以下兩個主要步驟組成：
    * **[!UICONTROL 標題]** -輸入描述性帳戶標題。
    * **[!UICONTROL 授權伺服器]** -返回您先前開啟的「整合詳細資訊」頁面。按一下&#x200B;**[!UICONTROL JWT]**&#x200B;頁籤。 複製伺服器名稱（不含路徑），如下所強調。
 
-（範例伺服器名稱僅供圖例之用）   返回「帳 **[!UICONTROL 戶]** 」頁面，然後將名稱貼到相應欄位。例如，`https://ims-na1.adobelogin.com/`
-（範例伺服器名稱僅供圖例之用）
+（範例伺服器名稱僅供說明之用）   返回「帳 **[!UICONTROL 戶]** 」頁面，然後將名稱貼到相應欄位。例如，`https://ims-na1.adobelogin.com/`
+（範例伺服器名稱僅供說明之用）
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
    _整合詳細資訊頁- JWT頁籤_
@@ -768,7 +767,7 @@ Experience Manager配置由以下兩個主要步驟組成：
    ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
    _整合詳細資訊頁- JWT頁籤_
 
-   「帳戶」頁面（所有欄位皆已填寫）看起來類似下列：
+   「帳戶」頁面（所有欄位皆已填寫）的顯示方式類似於下列：
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
@@ -786,7 +785,7 @@ Experience Manager配置由以下兩個主要步驟組成：
 
 1. 在&#x200B;**[!UICONTROL Experience Platform Launch配置]**&#x200B;頁面的左側面板中，選擇要為其應用Experience Platform Launch配置的Experience Manager站點。
 
-   僅供圖解之用，在下方的螢幕擷取中選取了&#x200B;**[!UICONTROL We.Retail]**&#x200B;網站。
+   僅供說明之用，在下方的螢幕擷取中會選取&#x200B;**[!UICONTROL We.Retail]**&#x200B;網站。
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
@@ -809,7 +808,7 @@ Experience Manager配置由以下兩個主要步驟組成：
 
    在&#x200B;**[!UICONTROL 程式庫URI]**&#x200B;欄位中，檢查Experience Platform Launch程式庫的測試版本位置。 Experience Manager會自動填入此欄位。
 
-   僅供圖例之用，此步驟使用部署至Experience Platform LaunchCDN的Adobe程式庫。
+   僅供說明之用，此步驟會使用部署至Experience Platform LaunchCDN的Adobe程式庫。
 
    >[!NOTE]
    >
