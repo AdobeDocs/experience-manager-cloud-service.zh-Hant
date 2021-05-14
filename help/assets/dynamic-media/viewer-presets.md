@@ -4,10 +4,9 @@ description: 瞭解如何在Dynamic Media套用檢視器預設集。
 feature: 檢視器預設集，檢視器
 role: Business Practitioner
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '220'
 ht-degree: 25%
 
 ---
@@ -20,7 +19,8 @@ ht-degree: 25%
 
 另請參閱[Publishing Viewer預設集](managing-viewer-presets.md#publishing-viewer-presets)。
 
-視您使用的發佈模式而定，您可能不需要發佈檢視器預設集。
+您不需要根據您使用的發佈模式來發佈檢視器預設集。
+
 如果檢視器預設集有問題，請參閱[疑難排解Dynamic Media](troubleshoot-dm.md#viewers)。
 
 ## 將Dynamic Media檢視器預設套用至資產{#applying-a-viewer-preset-to-an-asset}
@@ -32,7 +32,7 @@ ht-degree: 25%
    * URL **[!UICONTROL 和]****[!UICONTROL Embed]** 按鈕會在您選取檢視器預設集後顯示。
    * 當您在資產的「詳細資料檢視」中選取「檢視器」時，系統會顯示許多檢 **[!UICONTROL 視器預設集]**。您可以增加所檢視的預設集數目。請參 [閱增加顯示的檢視器預設集數目](managing-viewer-presets.md)。
 
-1. 從左窗格選取檢視器，將它套用至資產，如右窗格所示。 您也可以[複製URL以與其他使用者共用](linking-urls-to-yourwebapplication.md)。
+1. 從左窗格選取檢視器，以便套用至資產，如右窗格所示。 您也可以[複製URL以與其他使用者共用](linking-urls-to-yourwebapplication.md)。
 
 ## 取得檢視器預設集URL {#obtaining-viewer-preset-urls}
 
