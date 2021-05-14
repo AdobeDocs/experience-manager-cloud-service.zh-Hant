@@ -4,10 +4,9 @@ description: Dynamic Media已提供預先定義的最適化視訊編碼設定檔
 feature: 資產管理，視訊設定檔，轉譯
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3664'
+source-wordcount: '3665'
 ht-degree: 9%
 
 ---
@@ -101,7 +100,7 @@ Dynamic Media已提供預先定義的最適化視訊編碼設定檔。 此現成
 
 * 持續5分鐘。
 * 每秒30幀(FPS)。
-* 300 MB檔案大小。
+* 檔案大小為300 MB。
 
 Adobe Sensei限制為9000幀。 也就是說，在30 FPS時5分鐘。 如果您的視訊的FPS較高，則支援的視訊持續時間上限會降低。 例如，60 FPS視訊必須長達2.5分鐘，才能獲得Adobe Sensei和智慧型裁切的支援。
 
@@ -211,7 +210,7 @@ Dynamic Media已提供預先定義的最適化視訊編碼設定檔- MP4 H.264�
 1. 請執行下列動作：
    * 在&#x200B;**[!UICONTROL Width]**&#x200B;欄位中，輸入&#x200B;**[!UICONTROL auto]**。
    * 在&#x200B;**[!UICONTROL Height]**欄位中，輸入以像素為單位的值。
-若要協助您視覺化視訊的大小，請點選「高度」的資訊圖示以開啟「大小計算器」(**[!UICONTROL Size Calculator)]**&#x200B;頁面。 使用&#x200B;**[!UICONTROL 大小計算器]**&#x200B;頁可以進一步設定視頻維（藍色框），如何設定。 完成後，在對話框的右上角按一下&#x200B;**[!UICONTROL X]**。
+若要協助您視覺化視訊的大小，請點選「高度」的資訊圖示以開啟「大小計算器」(**[!UICONTROL Size Calculator)]**&#x200B;頁面。 使用「**[!UICONTROL 大小計算器]**」頁面，進一步設定您想要的視訊大小（藍色方塊）。 完成後，在對話框的右上角按一下&#x200B;**[!UICONTROL X]**。
 1. （可選）執行下列任一項作業：
 
    * 點選「**[!UICONTROL 進階]**」標籤，並確定已選取「使用預設值&#x200B;]**」核取方塊（建議）。**[!UICONTROL 
@@ -244,7 +243,7 @@ Dynamic Media已提供預先定義的最適化視訊編碼設定檔- MP4 H.264�
 
 您可以編輯現有的視訊編碼設定檔，以利用在Experience Manager中建立或編輯視訊設定檔時，使用者介面中找不到的進階視訊編碼參數。 您可以自訂新增一或多個進階參數，例如minBitrate和maxBitrate，至您現有的描述檔。
 
-**若要使用自訂新增的視訊編碼參數**:
+**若要使用自訂新增的視訊編碼參數：**
 
 1. 點選Experience Manager標誌，然後導覽至「工具&#x200B;**** > **[!UICONTROL 一般]** > **[!UICONTROL CRXDE Lite]**」。
 1. 從CRXDE Lite頁面，在左側的「檔案總管」面板中，導覽至下列項目：
@@ -271,7 +270,7 @@ Dynamic Media已提供預先定義的最適化視訊編碼設定檔- MP4 H.264�
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>關鍵影格之間的影格目標數目。 計算此值，每2-10秒產生一個關鍵影格。 例如，每秒30個畫格，關鍵影格間隔是60-300。<br /> <br /> 較低的關鍵影格間隔可改善最適化視訊編碼的串流搜尋和串流切換行為，也可改善具有大量動作的視訊品質。不過，由於關鍵影格會增加檔案大小，因此較低的關鍵影格間隔通常會導致特定位元速率的整體視訊品質較低。</td>
+   <td>關鍵影格之間的影格目標數目。 計算此值，以便每2-10秒生成一個關鍵幀。 例如，每秒30個畫格，關鍵影格間隔是60-300。<br /> <br /> 較低的關鍵影格間隔可改善最適化視訊編碼的串流搜尋和串流切換行為，也可改善具有大量動作的視訊品質。不過，由於關鍵影格會增加檔案大小，因此較低的關鍵影格間隔通常會導致特定位元速率的整體視訊品質較低。</td>
    <td><code>String</code></td>
    <td><p>正數。</p> <p>預設值為300。</p> <p>HLS（HTTP即時串流）的建議值為60-90。</p> </td>
   </tr>
@@ -316,7 +315,7 @@ Dynamic Media已提供預先定義的最適化視訊編碼設定檔- MP4 H.264�
 
 要定義其他資產類型的高級處理參數，請參閱[配置資產處理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)。
 
-**要編輯視頻配置檔案**:
+**若要編輯視訊設定檔：**
 
 1. 點選Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 視訊設定檔]**」。
 1. 在「視訊描述檔」頁面上，勾選一個視訊描述檔名稱。
@@ -381,7 +380,7 @@ Dynamic Media已提供預先定義的最適化視訊編碼設定檔- MP4 H.264�
 
 #### 將視頻配置檔案應用到屬性{#applying-video-profiles-to-folders-from-properties}中的資料夾
 
-1. 點選或按一下Experience Manager標誌，並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用視訊描述檔的資料夾。
+1. 點選Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用視訊描述檔的資料夾。
 1. 在資料夾上，點選核取標籤以選取它，然後點選&#x200B;**[!UICONTROL 屬性]**。
 1. 選擇「 **[!UICONTROL 視訊描述檔]** 」標籤，然後從下拉式選單中選取描述檔，然後按一下「 **[!UICONTROL 儲存並關閉」]**。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
@@ -394,7 +393,7 @@ Dynamic Media已提供預先定義的最適化視訊編碼設定檔- MP4 H.264�
 
 另請參閱[重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
-**若要全域套用視訊設定檔**,
+**若要全域套用視訊設定檔：**
 
 * 導航到CRXDE Lite到以下節點：`/content/dam/jcr:content`。 新增屬性`videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>`並點選&#x200B;**[!UICONTROL 全部儲存]**。
 
