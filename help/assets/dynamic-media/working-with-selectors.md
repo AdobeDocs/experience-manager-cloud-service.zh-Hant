@@ -3,10 +3,9 @@ title: 使用選取工具
 description: 瞭解您可在Dynamic Media選取互動式影像、互動式視訊和轉盤橫幅的素材時，使用的方法。
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '750'
 ht-degree: 14%
 
 ---
@@ -59,7 +58,7 @@ ht-degree: 14%
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式下，您可以點選熱點或影像地圖，並查看快速檢視的外觀。
+1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中，您可以點選熱點或影像地圖，並查看快速檢視的顯示方式。
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
