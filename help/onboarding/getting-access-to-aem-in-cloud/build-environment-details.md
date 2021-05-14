@@ -1,14 +1,13 @@
 ---
 title: 構建環境詳細資訊
-description: 構建環境詳細資訊——雲服務
-translation-type: tm+mt
-source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
+description: 構建環境詳細資訊-Cloud Services
+exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
+source-git-commit: c3b70f513455dfeaac6bc20c05fc9c35dcddf73e
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
-
 
 # 瞭解構建環境{#understanding-build-environment}
 
@@ -18,7 +17,7 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
 
 * 構建環境基於Linux，源自Ubuntu 18.04。
 * 已安裝Apache Maven 3.6.0。
-* 安裝的Java版本是Oracle JDK 8u202和11.0.2。
+* 安裝的Java版本是OracleJDK 8u202和11.0.2。
 * 安裝了一些其他系統軟體包是必要的：
 
    * bzip2
@@ -34,7 +33,7 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Maven在系統層級設定有設定。xml檔案，此檔案會自動包含公用Adobe **Artifact**&#x200B;儲存庫。 （如需詳細資訊，請參閱[Adobe Public Maven Repository](https://repo.adobe.com/)）。
+* Maven在系統級別配置了settings.xml檔案，該檔案使用名為`adobe-public`的配置檔案自動包括公共Adobe **Artifact**&#x200B;儲存庫。 (有關詳細資訊，請參閱[Adobe公共Maven儲存庫](https://repo.adobe.com/))。
 
 >[!NOTE]
 >雖然Cloud Manager未定義`jacoco-maven-plugin`的特定版本，但使用的版本至少必須是`0.7.5.201505241946`。
@@ -187,4 +186,4 @@ Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這
 同樣的技術也可用於安裝語言特定的軟體包，即使用`gem`（對於RubyGems）或`pip`（對於Python軟體包）。
 
 >[!NOTE]
->以此方式安裝系統套件會&#x200B;**not**&#x200B;將它安裝在用於執行Adobe Experience Manager的執行時期環境中。 如果您需要在AEM環境中安裝系統套件，請連絡您的Adobe代表。
+>以此方式安裝系統軟體包會&#x200B;**not**&#x200B;在運行Adobe Experience Manager的運行時環境中安裝它。 如果您需要在環境中安裝系統包，請AEM與Adobe代表聯繫。
