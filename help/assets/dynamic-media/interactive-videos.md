@@ -4,10 +4,9 @@ description: 瞭解如何在Dynamic Media使用互動式視訊和可購買視訊
 feature: 互動影片
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '6064'
+source-wordcount: '6051'
 ht-degree: 3%
 
 ---
@@ -49,7 +48,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 ### 觀看互動式視訊的建立方式{#watch-how-interactive-videos-are-created}
 
-觀看如何建立互動式視訊的7分 [鐘30秒逐步解說](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)[](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA)。
+觀看[如何建立互動式視訊的逐步說明](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)（7分30秒）。
 (雖然視訊逐步解說已加上隨選資產的品牌，但原則和步驟仍適用於「Adobe Experience Manager資產」中的互動式視訊。)
 
 ### Adobe客戶成功網路研討會{#adobe-customer-success-webinar}
@@ -70,20 +69,22 @@ There was a link here that showed the video frame of an interactive video and wh
 
 互動式視訊步驟：
 
-1. **（可選）識別快速檢視變數** -從識別現有快速檢視實作所使用的動態變數開始。當您建立互動式視訊時，可使用變數將產品縮圖對應至其對應的產品快速檢視。 請參閱[（可選）識別快速檢視變數](#optional-identifying-quickview-variables)。
-   **只有在以下所有步驟都正確時，才需要此步驟**:·您想要透過觸發至「快速檢視」，為視訊新增互動功能。·您的Experience Manager實作&#x200B;*not*&#x200B;會使用電子商務整合架構，將產品資料從任何電子商務解決方案（例如IBM WebSphere® Commerce、Elastic Path、hybris或Intershop）提取至Experience Manager。
+1. **（可選）識別快速檢視變數** -從識別現有快速檢視實作使用的動態變數開始。當您建立互動式視訊時，可使用變數將產品縮圖對應至其對應的產品快速檢視。 請參閱[（可選）識別快速檢視變數](#optional-identifying-quickview-variables)。
+   **只有在以下所有條件都成立時，才需要此步驟：**
+·您要透過觸發至「快速檢視」，為視訊新增互動功能。·您實作的Experience Manager 
+*不* 要使用電子商務整合架構，將產品資料從任何電子商務解決方案（例如IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop）拉入Experience Manager。
 
 1. **（可選）建立互動式視訊檢視器預設集** -自訂各種元件的外觀和行為，這些元件是播放器的組成元件，例如視訊筆畫和互動式縮圖。如果您想要改用現成可用的互動式視訊檢視器預設集`Shoppable_Video_Light`或`Shoppable_Video_Dark`，則不需要建立您自己的互動式視訊檢視器預設集。
 請參閱[建立新檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)（選用）和[建立互動檢視器預設集的特殊注意事項](/help/assets/dynamic-media/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset)。
 
 1. **上傳視訊及其相關影像資產** -上傳您要製作互動內容的視訊和相關影像。請參閱[上傳視訊及其相關縮圖資產](#uploading-a-video-and-its-associated-thumbnail-assets)。
 
-1. **在視訊中新增互動功能** -在視訊中新增一或多個時間區段。然後，在這些時間區段內建立影像縮圖的關聯。 將每個影像縮圖指派給動作，例如超連結、快速檢視或體驗片段。
+1. **為您的視訊新增互動功能** -在視訊中新增一或多個時間區段。然後，在這些時間區段內建立影像縮圖的關聯。 將每個影像縮圖指派給動作，例如超連結、快速檢視或體驗片段。
 (如果您的互動式內容具有相對URL的連結，尤其是連結至「Experience Manager網站」頁面，則無法使用以URL為基礎的連結方法。)
 發佈互動式視訊資產以完成。 發佈會建立您最終複製並套用至網站登陸頁面的內嵌代碼或URL。 請參閱[新增視訊的互動功能](#adding-interactivity-to-your-video)。
 請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-1. **將互動式視訊新增至您的網站或Experience Manager網站** -如果您使用Experience Manager網站或Experience Manager電子商務，或兩者皆使用，您可以直接將互動式視訊新增至Experience Manager的網頁。將互動式媒體元件拖曳至頁面上。 請參閱[將Dynamic Media資產新增至Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+1. **將互動式視訊新增至您的網站或Experience Manager網站** -如果您使用Experience Manager網站或電子商務，或兩者皆使用，請將互動式視訊新增至Experience Manager的網頁。將互動式媒體元件拖曳至頁面上。 請參閱[將Dynamic Media資產新增至Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 使用內嵌程式碼或URL，將您的互動式視訊與網站體驗整合。 請參閱[將互動式視訊與您的網站整合](#integrating-an-interactive-video-with-your-website)。
 如果您使用協力廠商WCM(Web Content Manager)，您必須將新的互動式視訊與網站上使用的現有快速檢視實作整合。 請參閱[整合互動式視訊與現有的快速檢視](#integrating-an-interactive-video-with-an-existing-quickview)。
    [新增Dynamic Media資產至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -93,7 +94,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >[!NOTE]
 只有在以下情況下，才需要此任務：
 * 您想要透過觸發至「快速檢視」，將互動功能加入視訊。
-* 您的Experience Manager實作&#x200B;*not*&#x200B;會使用電子商務整合架構，將產品資料從任何電子商務解決方案（例如IBM WebSphere® Commerce、Elastic Path、hybris或Intershop）拉入Experience Manager。<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
+* 您的Experience Manager實作&#x200B;*not*&#x200B;會使用電子商務整合架構，將產品資料從任何電子商務解決方案（例如IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop）拉入Experience Manager。<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 
 如果您的Experience Manager實作使用電子商務，則可略過此工作並繼續下一個工作。
 
@@ -112,13 +113,13 @@ There was a link here that showed the video frame of an interactive video and wh
 * 快速檢視資料會轉譯為內容，以準備在網頁上轉譯。
 * 最後，前端程式碼會以視覺化方式在螢幕上呈現此類內容。
 
-因此，方法是造訪您現有網站中實作快速檢視的不同區域。 然後觸發快速檢視，並擷取網頁所傳送的Ajax URL，以載入快速檢視資料或內容。
+因此，方法是造訪您現有網站中實作快速檢視的不同區域。 然後觸發快速檢視，並取得網頁所傳送的Ajax URL，以載入快速檢視資料或內容。
 
 通常您不需使用任何專用的除錯工具。 現代網頁瀏覽器採用Web檢視器，可讓您完成適當的工作。 以下是包含Web檢視程式的Web瀏覽器範例：
 
-* 若要在Google Chrome中查看所有傳出的HTTP要求，請按&#x200B;**F12**(Windows)或&#x200B;**Command+Options+I**(Mac)以開啟「開發人員工具」面板，然後按一下「網路」標籤。****
+* 若要在Google Chrome中查看所有傳出的HTTP要求，請按&#x200B;**F12**(Windows®)或&#x200B;**Command+Options+I**(Mac)以開啟「開發人員工具」面板，然後按一下「網路」標籤。****
 
-* 在Firefox中，您可以按&#x200B;**F12**(Windows)或&#x200B;**Command+Option+I**(Mac)啟動Firebug外掛程式，並使用其&#x200B;**[!UICONTROL Net]**&#x200B;標籤，或使用內建的偵測工具及其網路標籤。
+* 在Firefox中，您可以按&#x200B;**F12**(Windows®)或&#x200B;**Command+Option+I**(Mac)啟動Firebug外掛程式，並使用其&#x200B;**[!UICONTROL Net]**&#x200B;標籤，或使用內建的檢查工具及其網路標籤。
 
 * 在Internet Explorer中，按&#x200B;**F12**&#x200B;啟動除錯工具。
 
@@ -263,7 +264,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 儲存互動式視訊後，視訊會立即開啟至「預覽」。 您可以從中選取互動式視訊檢視器預設集，並播放視訊，以大致呈現它對客戶的呈現方式。
 
-**若要新增互動功能至視訊**:
+**若要在視訊中加入互動功能：**
 
 1. 在「資產」檢視中，導覽至您上傳並想要製作互動式影片。
 1. 執行下列任一項作業：
@@ -434,7 +435,7 @@ There was a link here that showed the video frame of an interactive video and wh
       <td><p>依預設，文字標籤會使用縮圖影像的<code>Title</code>中繼資料欄位。 如果<code>Title</code>不存在，則會改用縮圖影像的檔案名稱，但不使用副檔名。</p> <p>若要變更縮圖影像的文字標籤，請在顯示影像資產正下方的<strong>動作</strong>標籤下，輸入所要的文字。 請參閱下圖。</p> <p>新文字標籤僅供視訊播放器本身及顯示在時間軸區段中的縮圖文字使用。 標籤變更不會影響縮圖影像的「標題」中繼資料欄位，也不會影響其檔案名稱。</p> </td> 
       </tr> 
       <tr> 
-      <td>要恢復您所做的更改</td> 
+      <td>恢復更改</td> 
       <td>在頁面的右上角附近，點選「<strong>還原</strong>」或「<strong>重做</strong>」。</td> 
       </tr> 
     </tbody> 
@@ -453,7 +454,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
    * **[!UICONTROL 合併區段]** -您可以將兩個相鄰的區段（無論是否已指派產品縮圖）合併為一個區段。
 
-      在時間軸上，點選兩或多個要合併為一個的連續區段。 在下圖中，兩個選定段上沒有藍色的橢圓拖動控制滑塊。
+      在時間軸上，點選兩或多個要合併為一個的連續區段。 在下方的影像中，兩個選取的區段上沒有藍色的橢圓形拖曳控點。
 
       點選工具列上的「合併區段」。****
    ![chlimage_1-134](assets/chlimage_1-134.png)
@@ -685,7 +686,7 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 loadQuickView(quickViewUrl);
 ```
 
-最後，請確定您的「快速檢視」對話方塊已附加至檢視器的容器元素。 預設內嵌程式碼提供實現此功能的範例步驟。 若要取得檢視器容器元素的參考，您可以使用下列程式碼行：
+最後，請確定您的「快速檢視」對話方塊已附加至檢視器的容器元素。 內嵌程式碼預設值提供實現此功能的範例步驟。 若要取得檢視器容器元素的參考，您可以使用下列程式碼行：
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -751,7 +752,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
 
-## 使用快速檢視建立自訂快顯視窗{#using-quickviews-to-create-custom-pop-ups}
+## 使用快速檢視建立自訂快顯視窗® {#using-quickviews-to-create-custom-pop-ups}
 
-請參閱[使用快速檢視建立自訂快顯視窗](/help/assets/dynamic-media/custom-pop-ups.md)。
+請參閱[使用快速檢視建立自訂快顯視窗Windows®](/help/assets/dynamic-media/custom-pop-ups.md)。
 —>
