@@ -1,13 +1,12 @@
 ---
 title: Dynamic Media 影像設定檔
-description: 「瞭解如何建立包含非銳利遮色片設定、智慧裁切或智慧色票（或兩者皆有）的Dynamic Media影像描述檔。 然後，將描述檔套用至影像資產的資料夾。」
+description: 瞭解如何建立包含非銳利遮色片設定、智慧裁切或智慧色票（或兩者）的Dynamic Media影像描述檔。 然後，將描述檔套用至影像資產的檔案夾。
 feature: 資產管理，影像設定檔，轉譯
 role: Business Practitioner
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '2703'
+source-wordcount: '2714'
 ht-degree: 8%
 
 ---
@@ -45,14 +44,14 @@ ht-degree: 8%
      <li>值有「上」、「下」、「左」和「右」。</li>
      <li>左上角會視為0,0，而像素裁切會從那裡計算。</li>
      <li>裁切起點：左邊是X，上邊是Y</li>
-     <li>水準計算：原始影像的水準像素尺寸減去「左」，然後減去「右」。</li>
+     <li>水準計算：原始影像的水準像素大小減去「左」，然後減去「右」。</li>
      <li>垂直計算：垂直像素高度減去「頂端」，然後減去「底部」。</li>
     </ul> <p>例如，假設您有4000 x 3000像素的影像。 您使用值：Top=250,Bottom=500,Left=300,Right=700。</p> <p>從左上角(300,250)裁切，使用填滿空間（4000-300-700、3000-250-500或3000,2250）進行裁切。</p> </td>
   </tr>
   <tr>
    <td>智慧型裁切</td>
    <td>根據影像的視覺焦點大量裁切影像。</td>
-   <td><p>Smart Crop運用Adobe Sensei人工智慧的力量，快速將大量影像裁切自動化。 智慧型裁切會自動偵測任何影像中的焦點並裁切至焦點，以擷取預期的興趣點，而不論螢幕大小。</p> <p>若要使用智慧型裁切，請從「裁切選項」下拉式清單中選取「智慧型裁切」<strong>「智慧型裁切」</strong>，然後在「回應式影像裁切」的右側，啟用（開啟）功能。</p> <p>預設的中斷點大小（大、中、小）涵蓋行動與平板電腦裝置、桌上型電腦和橫幅上使用的大多數影像大小。 如果需要，您可以編輯「大」、「中」和「小」的預設名稱。</p> <p>若要新增更多中斷點，請按一下「新增裁切</strong>」;若要刪除裁切，請按一下「廢棄項目可以」圖示。<strong></strong></p> </td>
+   <td><p>Smart Crop運用Adobe Sensei人工智慧的力量，快速將大量影像裁切自動化。 智慧型裁切會自動偵測任何影像中的焦點並裁切至焦點，以取得預期的興趣點，而不論螢幕大小。</p> <p>若要使用智慧型裁切，請從「裁切選項」下拉式清單中選取「智慧型裁切」<strong>「智慧型裁切」</strong>，然後在「回應式影像裁切」的右側，啟用（開啟）功能。</p> <p>預設的中斷點大小（大、中、小）涵蓋行動與平板電腦裝置、桌上型電腦和橫幅上使用的大多數影像大小。 如果需要，您可以編輯「大」、「中」和「小」的預設名稱。</p> <p>若要新增更多中斷點，請按一下「新增裁切</strong>」;若要刪除裁切，請按一下「廢棄項目可以」圖示。<strong></strong></p> </td>
   </tr>
   <tr>
    <td>顏色及影像樣本</td>
@@ -70,7 +69,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->非銳利化遮色片只會套用至PTIFF（金字塔型Tiff）中縮小取樣超過50%的轉譯。 這表示Ptiff中最大尺寸的轉譯不受非銳利遮色片影響。 但是，縮小的轉譯（例如縮圖）會變更（並顯示不銳利的遮色片）。
+>非銳利化遮色片只會套用至PTIFF（金字塔型Tiff）中縮小取樣超過50%的轉譯。 這表示Ptiff中最大尺寸的轉譯不受非銳利遮色片影響。 而縮小的轉譯（例如縮圖）則會變更（並顯示不銳利的遮色片）。
 
 在&#x200B;**[!UICONTROL 銳利化遮色片]**&#x200B;中，您有下列篩選選項：
 
@@ -105,9 +104,9 @@ ht-degree: 8%
 
 另請參閱[組織數位資產使用處理設定檔的最佳實務](/help/assets/dynamic-media/best-practices-for-file-management.md)。
 
-**建立Dynamic Media映像配置檔案**
+**要建立Dynamic Media映像配置檔案：**
 
-1. 點選標AEM志並導覽至&#x200B;**[!UICONTROL 工具>資產>影像描述檔]**。
+1. 點選Adobe Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 影像描述檔]**」。
 1. 若要新增影像設定檔，請點選&#x200B;**[!UICONTROL Create]**。
 1. 輸入遮色片、裁切或色票或兩者的描述檔名稱和值。
 
@@ -121,7 +120,7 @@ ht-degree: 8%
 
 ## 編輯或刪除Dynamic Media映像配置檔案{#editing-or-deleting-image-profiles}
 
-1. 點選標AEM志並導覽至&#x200B;**[!UICONTROL 工具>資產>影像描述檔]**。
+1. 點選Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 影像描述檔]**」。
 1. 選擇要編輯或移除的影像描述檔。 要編輯它，請選擇&#x200B;**[!UICONTROL 編輯影像處理配置檔案]**。 要刪除它，請選擇&#x200B;**[!UICONTROL 刪除影像處理配置檔案]**。
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
@@ -152,7 +151,7 @@ ht-degree: 8%
 
 #### 將Dynamic Media映像配置檔案應用到配置檔案用戶介面{#applying-image-profiles-to-folders-from-profiles-user-interface}中的資料夾
 
-1. 點選標AEM志並導覽至&#x200B;**[!UICONTROL 工具>資產>影像描述檔]**。
+1. 點選Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 影像描述檔]**」。
 1. 選擇要應用於資料夾或多個資料夾的映像配置檔案。
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
@@ -161,7 +160,7 @@ ht-degree: 8%
 
 #### 將Dynamic Media映像配置檔案應用到屬性{#applying-image-profiles-to-folders-from-properties}中的資料夾
 
-1. 點選標AEM志並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用影像描述檔的資料夾。
+1. 點選Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用影像描述檔的資料夾。
 1. 在資料夾上，點選核取標籤以選取它，然後點選&#x200B;**[!UICONTROL 屬性]**。
 1. 點選「影 **[!UICONTROL 像描述檔]** 」標籤。從「描 **[!UICONTROL 述檔名稱]** 」下拉式清單中，選取描述檔，然後點選「 **[!UICONTROL 儲存並關閉」]**。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
@@ -173,7 +172,7 @@ ht-degree: 8%
 
 您可以重新處理已有現有視訊設定檔的資料夾中的資產，您稍後會加以變更。 請參閱編輯資料夾的處理設定檔](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)後，重新處理資料夾中的資產。[
 
-**若要全球套用Dynamic Media影像設定檔**:
+**若要全球套用Dynamic Media影像設定檔：**
 
 1. 執行下列任一項作業：
 
@@ -197,10 +196,9 @@ ht-degree: 8%
 
 另請參閱[編輯多張影像的智慧裁切或智慧色票](#editing-the-smart-crop-or-smart-swatch-of-multiple-images)。
 
-**要編輯單一影像的智慧裁切或智慧色票**
+**要編輯單張影像的智慧裁切或智慧色板：**
 
-1. 點選標AEM志並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至套用智慧型裁切或智慧型色票影像描述檔的資料夾。
-
+1. 點選Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至套用智慧型裁切或智慧型色票影像描述檔的資料夾。
 1. 若要開啟其內容，請點選資料夾。
 1. 點選您要調整其智慧裁切或智慧色票的影像。
 1. 在工具列中，點選&#x200B;**[!UICONTROL 智慧型裁切]**。
@@ -223,9 +221,9 @@ ht-degree: 8%
 
 如有必要，您可以重新執行智慧型裁切，再次產生其他裁切。
 
-**若要編輯多張影像的智慧裁切或智慧色票**
+**若要編輯多張影像的智慧裁切或智慧色票：**
 
-1. 點選標AEM志並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至套用智慧型裁切或智慧型色票影像描述檔的資料夾。
+1. 點選Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至套用智慧裁切或智慧色票影像描述檔的資料夾。
 1. 在資料夾上，點選「**[!UICONTROL 更多動作]**(...)」圖示，然後點選「智慧裁切&#x200B;]**」。**[!UICONTROL 
 
 1. 在&#x200B;**[!UICONTROL 編輯智慧裁切]**&#x200B;頁面上，執行下列任一操作：
@@ -274,7 +272,7 @@ ht-degree: 8%
 
 ### 通過Profiles用戶介面{#removing-image-profiles-from-folders-via-profiles-user-interface}從資料夾中刪除Dynamic Media映像配置檔案
 
-1. 點選標AEM志並導覽至&#x200B;**[!UICONTROL 工具>資產>影像描述檔]**。
+1. 點選Experience Manager標誌並導覽至「工具&#x200B;**** > **[!UICONTROL 資產]** > **[!UICONTROL 影像描述檔]**」。
 1. 選擇要從資料夾或多個資料夾中刪除的映像配置檔案。
 1. 點選&#x200B;**[!UICONTROL 「從資料夾中刪除處理配置檔案」並選擇要從中刪除配置檔案的資料夾或多個資料夾，然後點選**[!UICONTROL 「刪除&#x200B;]**」。]**
 
@@ -282,7 +280,7 @@ ht-degree: 8%
 
 ### 通過屬性{#removing-image-profiles-from-folders-via-properties}從資料夾中刪除Dynamic Media映像配置檔案
 
-1. 點選標AEM志並導覽&#x200B;**[!UICONTROL Assets]**，然後導覽至您要從中移除影像描述檔的檔案夾。
+1. 點選Experience Manager標誌並導覽&#x200B;**[!UICONTROL Assets]**，然後導覽至您要從中移除影像描述檔的檔案夾。
 1. 在資料夾上點選核取標籤以選取它，然後點選&#x200B;**[!UICONTROL 屬性]**。
 1. 選擇&#x200B;**[!UICONTROL Image Profiles]**&#x200B;標籤。
 1. 從&#x200B;**[!UICONTROL 描述檔名稱]**&#x200B;下拉式清單中，選擇&#x200B;**[!UICONTROL 無]**，然後點選&#x200B;**[!UICONTROL 儲存並關閉]**。
