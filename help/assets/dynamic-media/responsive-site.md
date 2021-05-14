@@ -4,10 +4,9 @@ description: 瞭解如何使用回應式程式碼功能來提供來自Dynamic Me
 feature: 資產管理
 role: Business Practitioner
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '328'
 ht-degree: 12%
 
 ---
@@ -16,13 +15,13 @@ ht-degree: 12%
 
 當您想要與網頁開發人員共用用於互動式服務的程式碼時，請使用「互動式程式碼」功能。 您可將回應式(**[!UICONTROL RESS]**)程式碼複製到剪貼簿，以便與網頁開發人員共用。
 
-如果您的網站位於協力廠商WCM上，則使用此功能是合理的。 不過，若您的網站已開啟，AEM則Offsite影像伺服器會轉譯影像並提供給網頁。
+如果您的網站位於協力廠商WCM上，則使用此功能是合理的。 不過，如果您的網站位於Adobe Experience Manager,Offsite影像伺服器會轉譯影像並提供給網頁。
 
 另請參閱[將視訊檢視器內嵌至網頁](embed-code.md)。
 
 另請參閱[將URL連結到Web應用程式](linking-urls-to-yourwebapplication.md)。
 
-**為互動式網站提供最佳化影像**:
+**為互動式網站提供最佳化影像：**
 
 1. 導覽至您要為其提供回應式程式碼的影像，然後在下拉式選單中，點選「轉譯」****。
 
@@ -42,8 +41,8 @@ ht-degree: 12%
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. 在&#x200B;**[!UICONTROL 內嵌回應式影像]**&#x200B;對話方塊中，選取並複製回應式程式碼文字，並貼入您的網站以存取回應式資產。
-1. 編輯內嵌程式碼中的預設中斷點，以直接比對程式碼中回應式網站的中斷點。 此外，測試在不同頁面中斷點處提供的不同影像解析度。
+1. 在&#x200B;**[!UICONTROL 內嵌回應式影像]**&#x200B;對話方塊中，選取並複製回應式程式碼文字，然後貼到您的網站中，以存取回應式資產。
+1. 編輯內嵌程式碼中的預設中斷點，以符合在回應式網站中直接在程式碼中找到的中斷點。 此外，測試在不同頁面中斷點處提供的不同影像解析度。
 
 ## 使用HTTP/2傳送您的Dynamic Media資產{#using-http-to-delivery-your-dynamic-media-assets}
 
