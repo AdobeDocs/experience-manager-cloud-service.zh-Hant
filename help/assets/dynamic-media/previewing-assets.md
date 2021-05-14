@@ -4,17 +4,16 @@ description: 瞭解如何在Dynamic Media預覽資產。
 feature: 資產管理
 role: Business Practitioner
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1214'
 ht-degree: 1%
 
 ---
 
 # 預覽資產{#previewing-assets}
 
-您可以使用「預覽」來查看您上傳的數位資產在客戶在其網頁瀏覽器中檢視時的外觀。 指派給資產的預設內嵌、跨裝置檢視器會用於預覽。
+您可以使用「預覽」，查看客戶在其網頁瀏覽器中檢視您上傳的數位資產時，其顯示效果。 指派給資產的預設內嵌、跨裝置檢視器會用於預覽。
 
 檢視器是各種設定或「預設集」的集合。 例如，檢視器的顯示大小、縮放行為、色彩配置、邊框和字型，可決定使用者在電腦螢幕和行動裝置上檢視多媒體資產的方式。
 
@@ -25,11 +24,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->當您在Adobe Experience Manager的網頁（網站）上時，無法在&#x200B;**編輯**&#x200B;模式中預覽資產。 請改為按一下頁面右上角的&#x200B;**預覽**，移至&#x200B;**預覽**&#x200B;模式。
+>當您在Adobe Experience Manager的網頁（網站）上時，無法在&#x200B;**[!UICONTROL 編輯]**&#x200B;模式中預覽資產。 請改為按一下頁面右上角的&#x200B;**[!UICONTROL Preview]**，以前往「預覽」模式。
 
 若要在使用者介面中啟用或停用檢視器預設集，請參閱[管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
-**若要預覽資產**
+**若要預覽資產：**
 
 1. 在&#x200B;**[!UICONTROL Experience Manager]**&#x200B;的&#x200B;**[!UICONTROL 導覽]**&#x200B;頁面上，點選&#x200B;**[!UICONTROL 資產]**，然後點選&#x200B;**[!UICONTROL 檔案]**&#x200B;以存取資產。
 1. 在頁面的右上角附近，從&#x200B;**[!UICONTROL View]**&#x200B;下拉式清單中，點選&#x200B;**[!UICONTROL List View]**。
@@ -58,7 +57,7 @@ ht-degree: 1%
       <ul>
       <li><p><strong>轉動您的3D相機</strong> -圍繞3D場景和物件環繞視圖。</p> 滑鼠：左鍵按一下+拖動。</p> 觸控螢幕：按+拖曳。</p></li>
       <li><p><strong>平移您的相機</strong> -向左、向右、向上和向下平移您的視圖。</p> 滑鼠：按一下右鍵+拖動。</p> 觸控螢幕：雙指按+拖曳。</p></li>
-      <li><p><strong>縮放您的相機</strong> -縮放您的相機，以在3D場景中移入和移出區域。</p> 滑鼠：滾輪。</p> 觸控螢幕：手指捏。</p></li>
+      <li><p><strong>縮放您的相機</strong> -如果您想要在3D場景中移入或移出區域，請縮放您的相機。</p> 滑鼠：滾輪。</p> 觸控螢幕：手指捏。</p></li>
       <li><p><strong>重新輸入您的相機</strong> -環繞3D場景和物件環繞視圖。</p> 滑鼠：按兩下。</p> 觸控螢幕：點兩下。</li></ul></td>
       </tr>
       <tr>
