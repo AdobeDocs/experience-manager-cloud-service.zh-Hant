@@ -4,10 +4,9 @@ description: 瞭解如何在Dynamic Media使用視訊。
 feature: 視訊設定檔
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '9510'
+source-wordcount: '9475'
 ht-degree: 6%
 
 ---
@@ -164,7 +163,7 @@ Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可在下列位置
 
 請參閱[動態視訊播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)範例。
 
-另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的[Experience Manager資產的檢視器和[Experience Manager資產的檢視器。](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)
+另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)中的[Experience Manager資產的檢視器和[Experience Manager資產的檢視器。](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)
 
 ## 最佳實務：使用HTML5視訊檢視器{#best-practice-using-the-html-video-viewer}
 
@@ -176,7 +175,7 @@ Dynamic MediaHTML5視訊檢視器預設集是強穩的視訊播放器。 您可�
 
 您可結合為單一播放器，以使用HTML5和CSS來設計播放元件。 它可提供內嵌的播放功能，並視瀏覽器的功能而使用可調式和漸進式串流。 這些功能意味著，您可以將豐富型媒體內容的觸角延伸到案頭和行動使用者，並確保簡化視訊體驗。
 
-另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的[僅供Experience Manager資產的檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)。
+另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)中的[僅供Experience Manager資產的檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)。
 
 ### 使用HTML5視訊檢視器{#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}在桌上型電腦和行動裝置上播放視訊
 
@@ -281,10 +280,10 @@ HLS是Apple自適應視訊串流的標準，可根據網路頻寬容量自動調
 
 以下是編碼來源視訊檔案的最佳實務秘訣。
 
-如需視訊編碼的建議，請參閱下列：
+<!-- For advice about video encoding, see the following:
 
-* [串流101:基本功能— 轉碼器、頻寬、資料速率和解析度](https://www.adobe.com/go/learn_s7_streaming101_en)。
-* [視訊編碼基礎](https://www.adobe.com/go/learn_s7_encoding_en)。
+* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
+* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
 ### 源視頻檔案{#source-video-files}
 
@@ -368,7 +367,7 @@ VBR編碼時間較長，但結果最好；媒體檔案的品質更優越。 VBR�
 
 640 x 480檔案的每個畫格像素數是原來的四倍。 若要針對這兩個範例解析度取得相同的資料速率，請將640 x 480檔案的壓縮率套用四倍，以降低視訊品質。 因此，250 Kbps的視訊資料速率可產生320 x 240的解析度，但640 x 480的解析度的高品質檢視。
 
-一般而言，您使用的資料速率越高，視訊的外觀越好，使用的解析度越高，您必須維持檢視品質的資料速率就越高（與解析度較低的比較）。
+一般而言，您使用的資料速率越高，視訊的顯示效果越好，而您使用的解析度越高，您必須維持檢視品質的資料速率就越高（與解析度較低相比）。
 
 由於解析度和資料速率是連結的，因此在編碼視訊時有兩個選項：
 
@@ -404,9 +403,9 @@ VBR編碼時間較長，但結果最好；媒體檔案的品質更優越。 VBR�
 
 | 視訊類型 | 寬x高 | 寬度比例 | 高度比 |
 |--- |--- |--- |--- |
-| 來源 | 1920x1080 | 1 | 3 |
+| 來源 | 1920x1080 | 1 | 1 |
 | 編碼 | 960 x 540 | 2 | 2 |
-| 編碼 | 640 x 360 | 3 | 3 |
+| 編碼 | 640 x 360 | 3 | 1 |
 | 編碼 | 480 x 270 | 4 | 4 |
 
 ### 編碼視訊檔案格式{#encoded-video-file-format}
@@ -448,7 +447,7 @@ Google會定期變更其使用者介面。 因此，發佈影片至YouTube的步
 >
 >在編寫本文時，以下步驟是正確的。 不過，Google會定期更新其網站，恕不另行通知。 因此，這些步驟可能略有不同。
 
-若要設定Google Cloud設定：
+**若要設定Google Cloud設定：**
 
 1. 建立Google帳戶。
    [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
@@ -506,7 +505,7 @@ Google會定期變更其使用者介面。 因此，發佈影片至YouTube的步
 
    例如， `https://1a2b3c.mycompany.com:4321`
 
-   **注意**:上述路徑範例僅供圖例之用。
+   **注意**:上述路徑範例僅供說明之用。
 
    ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
 
@@ -516,7 +515,7 @@ Google會定期變更其使用者介面。 因此，發佈影片至YouTube的步
 
    例如， `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **注意**:上述路徑範例僅供圖例之用。
+   **注意**:上述路徑範例僅供說明之用。
 
 1. 按一下「建立OAuth用戶端ID ]**」。**[!UICONTROL 
 1. 在「 **[!UICONTROL 新增認證至您的專案]****** 」頁面的「設定OAuth 2.0同意書」畫面標題下方，選取您目前使用的Gmail電子郵件地址。
@@ -546,17 +545,17 @@ Google會定期變更其使用者介面。 因此，發佈影片至YouTube的步
 
 >[!CAUTION]
 >
->請確定您已在YouTube的「YouTubeExperience Manager設定」下(請參閱下面的「在Experience Manager中設定YouTube」)*之前在*&#x200B;設定一個或多個通道。 [](#setting-up-youtube-in-aem)如果您未能設定渠道，則不會警告您沒有現有渠道。 不過，當您新增頻道時仍會發生Google驗證，但無法選擇視訊傳送的頻道。
+>請確定您已在YouTube的「YouTubeExperience Manager設定」下(請參閱下面的「在Experience Manager中設定YouTube」)*之前在*&#x200B;設定一個或多個通道。 [](#setting-up-youtube-in-aem)如果您未能設定渠道，則不會警告您沒有現有渠道。 不過，當您新增頻道時，仍會進行Google驗證，但無法選擇視訊傳送的頻道。
 
-若要建立YouTube頻道：
+**若要建立YouTube頻道：**
 
 1. 前往[https://www.youtube.com](https://www.youtube.com/)，並使用您的Google帳戶認證登入。
 1. 在YouTube頁面的右上角，按一下您的描述檔圖片（也可以顯示為純色圓內的字母），然後點選&#x200B;**[!UICONTROL YouTube設定]**（圓齒輪圖示）。
 1. 在「概述」頁面的「其他功能」標題下，點選&#x200B;**[!UICONTROL 查看所有我的頻道或建立新頻道]**。
 1. 在「頻道」頁面上，點選&#x200B;**[!UICONTROL 建立新頻道]**。
-1. 在「品牌帳戶」頁面的「品牌帳戶名稱」欄位中，輸入您要發佈視訊資產的商業名稱或任何其他頻道名稱，然後按一下「建立&#x200B;****」。
+1. 在「品牌帳戶」頁面的「品牌帳戶名稱」欄位中，輸入公司名稱或您選擇要發佈視訊資產的任何其他頻道名稱，然後按一下「建立&#x200B;****」。
 
-   記住您在此處輸入的名稱，因為在Experience Manager中設定YouTube時必須再次輸入該名稱。
+   記住您在此輸入的名稱；當你必須在Experience Manager中設定YouTube時，你必須再次輸入。
 
 1. （可選）視需要新增更多渠道。
 
@@ -576,7 +575,7 @@ Google會定期變更其使用者介面。 因此，發佈影片至YouTube的步
 
 After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
-1. In the upper-left corner of Experience Manager, click the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Replication]** &gt; **[!UICONTROL Agents on Author]**.
+1. In the upper-left corner of Experience Manager, click the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on Author]**.
 1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
 1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
@@ -688,7 +687,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 若要建立中繼資料處理設定檔，您必須先從「欄位標籤 **[!UICONTROL 」、「對應至屬性]********** 」和「選擇」欄位複製值，這些全都可在視訊的中繼資料結構中找到。然後，您就可以新增這些值來建立您的YouTube視訊中繼資料處理設定檔。
 
-若要自動設定已上傳影片的預設YouTube屬性：
+**若要自動設定已上傳影片的預設YouTube屬性：**
 
 1. 在Experience Manager的左上角，按一下Experience Manager徽標，然後在左側導軌中，按一下「工具」（槌子表徵圖）>「資產」>「元資料結構」]**「元資料結構」]**。******[!UICONTROL **[!UICONTROL 
 1. 按一下&#x200B;**[!UICONTROL default]**。 （請勿在「預設」左側的選取方塊中新增核取標籤。）
@@ -760,7 +759,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 請參閱 [監控視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 有關更詳細的進度資訊，可以在複製下監視YouTube日誌。 但是，請注意，此類監控需要管理員訪問權限。
 
-**若要將影片發佈至您的YouTube頻道**:
+**若要將影片發佈至您的YouTube頻道：**
 
 1. 在Experience Manager中，導覽至您要發佈至YouTube頻道的視訊資產。
 1. 選取視訊資產（最適化視訊集）。
@@ -820,7 +819,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 導覽至您要從YouTube頻道取消發佈的視訊資產。
 1. 在資產選擇模式中，選取一或多個已發佈的視訊資產。
-1. 在工具欄上，按一下&#x200B;**[!UICONTROL 管理出版物]**。 視需要點選三個點圖示(...) 在工具欄上，查看&#x200B;**[!UICONTROL 管理出版物]**。
+1. 在工具欄上，按一下&#x200B;**[!UICONTROL 管理出版物]**。 如有必要，點選工具列上的三個點圖示(`. . .`)，以查看「管理出版物」。****
 1. 在「管理出版物」頁面上，點選&#x200B;**[!UICONTROL 取消發佈]**。
 1. 在頁面的右上角，點選&#x200B;**[!UICONTROL Next]**。
 1. 在頁面的右上角，點選&#x200B;**[!UICONTROL 取消發佈]**。
@@ -831,7 +830,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 ### 監控進度{#monitoring-progress}
 
-要監視進度(包括失敗的編碼/YouTube發佈):
+**若要監控進度，包括失敗的編碼/YouTube發佈：**
 
 1. 在資產檔案夾中檢視視訊編碼進度：
 
@@ -908,11 +907,11 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 How you configure notification depends on whether you want notifications for YouTube publishing jobs.
 
-* For encoding jobs, you can access the configuration page for all Experience Manager workflow email notifications at **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.
+* For encoding jobs, you can access the configuration page for all Experience Manager workflow email notifications at **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.
 
 For YouTube publishing jobs, do the following:
 
-1. In Experience Manager, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. On the Workflow Models page, select **[!UICONTROL Publish to YouTube]**, then tap **[!UICONTROL Edit]** on the toolbar.
 1. Near the upper-right corner of the Publish to YouTube workflow page, tap **[!UICONTROL Edit]**.
 1. Hover the mouse pointer on the YouTube Upload component, then tap once to display the inline toolbar.
@@ -1058,7 +1057,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 >[!NOTE]
 您使用的視訊播放器必須支援標題的顯示。
 
-Dynamic Media可以將標題檔案轉換為JSON（JavaScript™物件註解）格式。 此轉換表示您可將JSON文字內嵌至網頁，做為視訊的隱藏但完整記錄。 然後搜尋引擎可以搜尋並索引內容，讓影片更容易被發現，並提供客戶更多有關視訊內容的詳細資訊。
+Dynamic Media可以將標題檔案轉換為JSON（JavaScript™物件註解）格式。 此轉換表示您可將JSON文字內嵌至網頁，做為視訊的隱藏但完整記錄。 然後搜尋引擎可以搜尋／索引內容，讓視訊更容易被發現，並提供客戶更多視訊內容的詳細資訊。
 
 如需在URL中使用JSON函式的詳細資訊，請參閱[伺服靜態（非影像）內容](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)。
 
@@ -1068,7 +1067,7 @@ Dynamic Media可以將標題檔案轉換為JSON（JavaScript™物件註解）�
 
    請確定您建立的檔案符合WebVTT(Web Video Text Tracks)標準。 字幕副檔名為。VTT。 您可以進一步瞭解WebVTT字幕標準。
 
-   請參閱[WebVTT:網頁視訊文字軌道格式](https://dev.w3.org/html5/webvtt/)。
+   請參閱[WebVTT:網頁視訊文字軌道格式](https://w3c.github.io/webvtt/)。
 
    您可以使用免費和優質的工具和服務，在Dynamic Media以外製作字幕／字幕檔案。 例如，若要建立沒有樣式的簡單視訊標題檔案，您可以使用下列免費的線上標題製作和編輯工具：
 
@@ -1078,7 +1077,7 @@ Dynamic Media可以將標題檔案轉換為JSON（JavaScript™物件註解）�
 
    在工具的&#x200B;**[!UICONTROL 輸入視訊檔的URL]**&#x200B;欄位中，貼上視訊檔複製的URL，然後按一下&#x200B;**[!UICONTROL 載入]**。 請參 [閱取得資產的URL](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) ，以取得視訊檔案本身的URL，然後您可將它貼入視訊檔案 **[!UICONTROL 的「輸入URL」欄位中]**。然後，Internet Explorer、Chrome或Safari就可以原生播放視訊。
 
-   現在請依照網站的螢幕上指示來製作和儲存您的WebVTT檔案。 完成後，複製標題檔案內容並將其貼上到純文字檔案編輯器中，然後以。VTT檔案副檔名保存。
+   現在請依照網站的螢幕上指示來製作和儲存您的WebVTT檔案。 完成後，複製標題檔案內容並將其貼上到純文字檔案編輯器中，然後使用VTT檔案副檔名保存它。
 
    >[!NOTE]
    為全域支援多種語言的視訊字幕，WebVTT標準要求您針對想要支援的每種語言分別建立。vtt檔案和呼叫。
@@ -1098,17 +1097,17 @@ Dynamic Media可以將標題檔案轉換為JSON（JavaScript™物件註解）�
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      請注意標題路徑結尾的`,1`。 緊接在路徑中的。VTT副檔名後，您可以選擇性地啟用（開啟）或停用（關閉）視訊播放器列上的隱藏字幕按鈕，方法是分別設定為`,1`或`,0`。
+      請注意標題路徑結尾的`,1`。 緊接在路徑中的VTT副檔名後，您可以選擇性地啟用（開啟）或停用（關閉）視訊播放器列上的隱藏字幕按鈕，方法是分別設定為`,1`或`,0`。
 
    * 如需內嵌的視訊檢視器體驗，請點選「內嵌代碼」。 ****&#x200B;在「內嵌代碼」對話方塊中，選取內嵌代碼並將其複製至剪貼簿，然後將代碼貼入簡單的文字編輯器。 以下列語法附加複製的內嵌代碼：
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      請注意標題路徑結尾的`,1`。 緊接在路徑中的。VTT副檔名後，您可以選擇性地啟用（開啟）或停用（關閉）視訊播放器列上的隱藏字幕按鈕，方法是分別設定為`,1`或`,0`。
+      請注意標題路徑結尾的`,1`。 緊接在路徑中的VTT副檔名後，您可以選擇性地啟用（開啟）或停用（關閉）視訊播放器列上的隱藏字幕按鈕，方法是分別設定為`,1`或`,0`。
 
 ## 將章節標籤新增至影片{#adding-chapter-markers-to-video}
 
-您可以在單一影片或最適化影片集中新增章節標籤，讓長篇影片的觀賞和導覽更輕鬆。 當使用者播放視訊時，可以按一下視訊時間軸上的章節標籤（也稱為視訊筆畫）。 他們可輕鬆導覽至興趣點，或立即跳至新內容、展示和教學課程。
+您可以在單一影片或最適化影片集中新增章節標籤，讓長篇影片的觀賞和導覽更輕鬆。 當使用者播放視訊時，可以按一下視訊時間軸上的章節標籤（也稱為視訊筆畫）。 他們可輕鬆導覽至興趣點，或立即跳至新內容、訓練和展示。
 
 >[!NOTE]
 使用的視訊播放器必須支援章節標籤的使用。 Dynamic Media視訊播放器確實支援章節標籤，但使用協力廠商視訊播放器則不支援。
@@ -1141,11 +1140,11 @@ Cost-efficient access to rapidly evolving technology.
 
 由於您使用的是HTML5視訊檢視器，請確定您建立的章節檔案符合WebVTT（Web視訊文字軌道）標準。 章節副檔名為。VTT。 您可以進一步瞭解WebVTT字幕標準。
 
-請參閱[WebVTT:網頁視訊文字軌道格式](https://dev.w3.org/html5/webvtt/)
+請參閱[WebVTT:網頁視訊文字軌道格式](https://w3c.github.io/webvtt/)。
 
 **若要將章節標籤新增至影片：**
 
-1. 將。VTT檔案儲存為UTF8編碼，以避免章節標題文字中的字元轉譯問題。
+1. 將VTT檔案儲存為UTF8編碼，以避免章節標題文字中的字元轉譯問題。
 
    通常，您要將章節VTT檔案命名為與視訊檔案相同的名稱，並附加章節。 如此，它可協助您使用您現有的網頁內容管理系統自動產生視訊URL。
 1. 在Experience Manager中，上傳您的WebVTT章節檔案。
@@ -1165,7 +1164,7 @@ Cost-efficient access to rapidly evolving technology.
        <li>在左側導軌中，點選或按一下視訊檢視器預設集名稱。 視訊的預覽會在個別頁面中開啟。</li>
        <li>在左側導軌底部，按一下<strong>URL</strong>。</li>
        <li>在「URL」對話方塊中，選取並複製URL至剪貼簿，然後將URL移至簡單的文字編輯器。</li>
-       <li>使用下列語法附加視訊的複製URL，將它與複製的URL關聯至您的章節檔案：<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
+       <li>使用下列語法附加視訊的複製URL，以便將它與複製的URL關聯至您的章節檔案：<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
       </tr>
       <tr>
@@ -1177,7 +1176,7 @@ Cost-efficient access to rapidly evolving technology.
        <li>在左側導軌中，點選或按一下視訊檢視器預設集名稱。 視訊的預覽會在個別頁面中開啟。</li>
        <li>在左側導軌底部，按一下「<strong>Embed</strong>」。</li>
        <li>在「內嵌代碼」對話方塊中，選取整個代碼，並將它複製到剪貼簿，然後貼到簡單的文字編輯器中。</li>
-       <li>以下列語法附加視訊的內嵌代碼，將它與複製的URL建立關聯至您的章節檔案：<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
+       <li>使用下列語法附加視訊的內嵌代碼，以便將它與複製的URL建立關聯至您的章節檔案：<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt>"</code></li>
        </ol> </td>
       </tr>
      </tbody>
@@ -1278,11 +1277,11 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
 **To configure the default time interval that video thumbnails are generated,**
 
-1. In Experience Manager, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL General]** &gt; **[!UICONTROL CRXDE Lite]**.
+1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 
 1. In the CRXDE Lite page, in the directory panel on the left, navigate t `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
-   if the directory panel is not visible, you may need to tap the &gt;&gt; icon to the left of the Home tab.
+   if the directory panel is not visible, you may need to tap the >> icon to the left of the Home tab.
 
 1. On the lower-right panel, in the Properties tab, double-tap `thumbnailtime`.
 1. In the Edit thumbnailtime dialog box, use the text fields to enter interval values as percentages.
