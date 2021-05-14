@@ -7,17 +7,16 @@ content-type: reference
 docset: aem65
 role: Business Practitioner
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2939'
 ht-degree: 3%
 
 ---
 
 # 在Dynamic Media{#selective-publish-configure-folder}的資料夾級別配置選擇性發佈
 
-您可以使用&#x200B;**[!UICONTROL 管理出版物]**&#x200B;或&#x200B;**[!UICONTROL 快速發佈]**，選擇在資料夾層級將資產發佈或從Adobe Experience Manager或Dynamic Media取消發佈。 此發佈方法很有用，因為它不僅依賴於&#x200B;**[!UICONTROL Dynamic Media配置]**，其設定對Dynamic Media實例中的所有資料夾都是全局的。
+您可以選擇將資產發佈或取消發佈至Adobe Experience Manager或Dynamic Media。 您可以使用&#x200B;**[!UICONTROL 管理出版物]**&#x200B;或&#x200B;**[!UICONTROL 快速發佈]**，在資料夾層級執行此動作。 此發佈方法很有用，因為它不僅依賴於&#x200B;**[!UICONTROL Dynamic Media配置]**，其設定對Dynamic Media實例中的所有資料夾都是全局的。
 
 例如，透過選擇性發佈，您可以針對尚未上線的產品處理資產。 在這種情況下，行銷團隊可以存取與Dynamic Media同步的智慧型裁切影像和動態轉譯。 他們可以製作宣傳材料，完全不需要將這些資產發佈到Dynamic Media，以便在全球進行交付。
 
@@ -40,7 +39,7 @@ ht-degree: 3%
 * 在&#x200B;**[!UICONTROL Dynamic Media配置]**&#x200B;中設定的&#x200B;**[!UICONTROL 發佈資產]**&#x200B;值
 * 或者，在資料夾層級屬性中設定的&#x200B;**[!UICONTROL Dynamic Media發佈模式]**&#x200B;值
 
-您仍然可以選擇「啟動時立即」(**[!UICONTROL Immedialed]**)、「啟動時」(]**)或「選擇性發佈」(**[!UICONTROL )。 ****&#x200B;例如，您可以將&#x200B;**[!UICONTROL Dynamic Media配置]**&#x200B;中的&#x200B;**[!UICONTROL 發佈資產]**&#x200B;值設為&#x200B;**[!UICONTROL 在啟動時]**。 此外，您可將資料夾層級的&#x200B;**[!UICONTROL Dynamic Media發佈]**&#x200B;模式值設為&#x200B;**[!UICONTROL 選擇性發佈]**，依此類推。
+您仍然可以選擇「啟動時立即」(**[!UICONTROL Immedialed]**)、「啟動時」(]**)或「選擇性發佈」(**[!UICONTROL )。 ****&#x200B;例如，您可將&#x200B;**[!UICONTROL Dynamic Media組態]**&#x200B;中的&#x200B;**[!UICONTROL 發佈資產]**&#x200B;值設為&#x200B;**[!UICONTROL 啟動時]**。 此外，您可將資料夾層級的&#x200B;**[!UICONTROL Dynamic Media發佈]**&#x200B;模式值設為&#x200B;**[!UICONTROL 選擇性發佈]**，依此類推。
 
 在資料夾中設定選擇性發佈後，您可以執行下列任一項作業：
 
@@ -49,9 +48,9 @@ ht-degree: 3%
 * [使用「快速發佈」將資產發佈至Dynamic Media或Experience Manager](#quick-publish-aem-dm)。
 * [透過搜尋結果，選擇性地發佈或取消發佈資產](#selective-publish-unpublish-search-results)。
 
-**在Dynamic Media的資料夾級別配置選擇性發佈**
+**若要在Dynamic Media的資料夾層級設定選擇性發佈：**
 
-1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台。 在左側，點選「導覽」圖示（就在「工具」圖示上方），然後點選「**[!UICONTROL 資產>檔案]**」。
+1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台。 在左側，點選「導覽」圖示（就在「工具」圖示上方），然後點選「**[!UICONTROL 資產]** > **[!UICONTROL 檔案]**」。
 1. 執行下列任一項作業：
    * 編輯現有資料夾的屬性——在&#x200B;**[!UICONTROL 卡片視圖]**、**[!UICONTROL 列視圖]**&#x200B;或&#x200B;**[!UICONTROL 清單視圖]**&#x200B;中，導航到要編輯其屬性的資料夾。 選擇資料夾，然後在工具欄上，按一下&#x200B;**[!UICONTROL 屬性]**。
    * 編輯新資料夾的屬性——在&#x200B;**[!UICONTROL 卡片視圖]**、**[!UICONTROL 列視圖]**&#x200B;或&#x200B;**[!UICONTROL 清單視圖]**&#x200B;中，在頁面右上角附近，按一下&#x200B;**[!UICONTROL 建立>資料夾]**。 在&#x200B;**[!UICONTROL 建立資料夾]**&#x200B;對話方塊中，輸入資料夾的標題（必要），然後點選&#x200B;**[!UICONTROL 建立]**。 選擇資料夾，然後在工具欄上，按一下&#x200B;**[!UICONTROL 屬性]**。
@@ -99,9 +98,9 @@ ht-degree: 3%
 >
 >*復* 制資產至資料夾和從資料夾複製資產會清除這些資產的發佈狀態。但是，當&#x200B;*將*&#x200B;資產移至資料夾屬性設為&#x200B;**[!UICONTROL 選擇性發佈]**&#x200B;的資料夾時，這些資產的發佈狀態會維持。
 
-**使用「管理出版物」將資產選擇性地發佈至Dynamic Media或Experience Manager做為Cloud Service**
+**若要使用「管理出版物」選擇性地將資產發佈至Dynamic Media或Experience Manager做為Cloud Service:**
 
-1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台。 在左側，點選「導覽」圖示（就在「工具」圖示上方），然後點選「**[!UICONTROL 資產>檔案]**」。
+1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台。 在左側，點選「導覽」圖示（就在「工具」圖示上方），然後點選「**[!UICONTROL 資產]** > **[!UICONTROL 檔案]**」。
 1. 在&#x200B;**[!UICONTROL 卡片檢視]**、**[!UICONTROL 欄檢視]**&#x200B;或&#x200B;**[!UICONTROL 清單檢視]**&#x200B;中，執行下列其中一項作業：
    * 導覽至您要發佈其資產的檔案夾。 選擇資料夾，然後在工具欄上，按一下「管理出版物」。 ****&#x200B;使用&#x200B;**[!UICONTROL 清單檢視]**，讓您更輕鬆地檢查特定資料夾的發佈狀態。
    * 導覽至您要發佈其資產的檔案夾。 開啟檔案夾，然後選取一或多個資產。 在工具列上，點選&#x200B;**[!UICONTROL 管理出版物]**。 使用&#x200B;**[!UICONTROL 清單檢視]**，讓您更輕鬆地檢查特定資產的發佈狀態。
@@ -132,7 +131,7 @@ ht-degree: 3%
 
 ### 使用管理出版物{#selective-unpublish-manage-publication}從Dynamic Media或Experience Manager選擇性地取消發佈資產
 
-1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台。 在左側，點選「導覽」圖示（就在「工具」圖示上方），然後點選「**[!UICONTROL 資產>檔案]**」。
+1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台。 在左側，點選「導覽」圖示（就在「工具」圖示上方），然後點選「**[!UICONTROL 資產]** > **[!UICONTROL 檔案]**」。
 1. 在&#x200B;**[!UICONTROL 卡片檢視]**、**[!UICONTROL 欄檢視]**&#x200B;或&#x200B;**[!UICONTROL 清單檢視]**&#x200B;中，執行下列其中一項作業：
    * 導覽至您要解除發佈其資產的檔案夾。 選擇資料夾，然後在工具欄上，按一下「管理出版物」。 ****&#x200B;使用&#x200B;**[!UICONTROL 清單檢視]**，讓您更輕鬆地檢查特定資料夾的發佈狀態。
    * 導覽至您要解除發佈其資產的檔案夾。 開啟檔案夾，然後選取一或多個資產。 在工具列上，點選&#x200B;**[!UICONTROL 管理出版物]**。 使用&#x200B;**[!UICONTROL 清單檢視]**，讓您更輕鬆地檢查特定資產的發佈狀態。
@@ -171,7 +170,7 @@ ht-degree: 3%
 
 **若要使用「快速發佈」將資產發佈至Dynamic Media或Experience Manager:**
 
-1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台。 在頁面的左側，點選「導覽」圖示（就在「工具」圖示上方），然後在頁面的右側點選「**[!UICONTROL 資產>檔案]**」。
+1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台。 在頁面的左側，點選「導覽」圖示（就在「工具」圖示的上方），然後在頁面的右側點選「資產」**[!UICONTROL >>「檔案」**[!UICONTROL 。]**]**
 1. 在&#x200B;**[!UICONTROL 卡片檢視]**、**[!UICONTROL 欄檢視]**&#x200B;或&#x200B;**[!UICONTROL 清單檢視]**&#x200B;中，執行下列其中一項作業：
    * 導覽至您要發佈其資產的檔案夾。 選取資料夾，然後在工具列上，點選&#x200B;**[!UICONTROL 快速發佈]**。 使用&#x200B;**[!UICONTROL 清單檢視]**，讓您更輕鬆地檢查特定資料夾的發佈狀態。
    * 導覽至您要發佈其資產的檔案夾。 開啟檔案夾，然後選取一或多個資產。 在工具列上，點選&#x200B;**[!UICONTROL 快速發佈]**。 使用&#x200B;**[!UICONTROL 清單檢視]**，讓您更輕鬆地檢查特定資產的發佈狀態。
@@ -190,7 +189,7 @@ ht-degree: 3%
    | 發佈至 Brand Portal 網站 | 將選取的資產立即發佈至&#x200B;**[!UICONTROL 品牌入口網站]**。<br>只有在您的Experience Manager資產實例已配置品牌端 **[!UICONTROL 口]** 時，此選項才可用。 |
    | 發佈至 Dynamic Media | 將選定資產立即發佈至Dynamic Media。<br>資產必須已經同步到Dynamic Media。如有必要，請確定資料夾屬性中的&#x200B;**[!UICONTROL 同步模式]**&#x200B;已設定為&#x200B;**[!UICONTROL 將此資料夾子樹中的所有內容同步到Dynamic Media]**。 |
 
-1. 點選&#x200B;**[!UICONTROL 確定，]**&#x200B;然後點選&#x200B;**[!UICONTROL 關閉]**。
+1. 點選&#x200B;**[!UICONTROL OK]**，然後點選&#x200B;**[!UICONTROL Close]**。
 
 ## 透過搜尋結果{#selective-publish-unpublish-search-results}選擇性地發佈或取消發佈資產
 
@@ -198,9 +197,9 @@ ht-degree: 3%
 
 另請參閱[Experience Manager](/help/assets/search-assets.md)中的搜尋資產。
 
-**若要透過搜尋結果選擇性地發佈或取消發佈資產**
+**若要透過搜尋結果選擇性地發佈或取消發佈資產：**
 
-1. 在Experience Manager中，在頁面的左上角，點選Experience Manager標誌以存取全域導覽主控台。 在頁面的左側，點選「導覽」圖示（就在「工具」圖示上方），然後點選「**[!UICONTROL 資產>檔案]**」。
+1. 在Experience Manager中，在頁面的左上角，點選Experience Manager標誌以存取全域導覽主控台。 在頁面的左側，點選「導覽」圖示（就在「工具」圖示上方），然後點選「**[!UICONTROL 資產]** > **[!UICONTROL 檔案]**」。
 1. 在工具列上，在頁面右上角附近點選「搜尋」圖示（放大鏡）。
 1. 在&#x200B;**[!UICONTROL Type to search]**&#x200B;文字欄位中，輸入關鍵字，然後按&#x200B;**[!UICONTROL Enter]**。
 1. 在頁面的右上角，點選「**[!UICONTROL 清單檢視]**」圖示。
@@ -258,9 +257,9 @@ ht-degree: 3%
 
 您可以在Experience Manager中使用&#x200B;**[!UICONTROL 時間軸]**&#x200B;與&#x200B;**[!UICONTROL 卡片檢視]**、**[!UICONTROL 欄檢視]**&#x200B;或&#x200B;**[!UICONTROL 清單檢視]**&#x200B;搭配使用，以快速檢查資產的發佈狀態。
 
-**若要檢查資產的發佈狀態**
+**若要檢查資產的發佈狀態：**
 
-1. 在Experience Manager中，在頁面的左上角，點選Experience Manager標誌以存取全域導覽主控台。 在頁面的左側，點選「導覽」圖示（就在「工具」圖示上方），然後點選「**[!UICONTROL 資產>檔案]**」。
+1. 在Experience Manager中，在頁面的左上角，點選Experience Manager標誌以存取全域導覽主控台。 在頁面的左側，點選「導覽」圖示（就在「工具」圖示上方），然後點選「**[!UICONTROL 資產]** > **[!UICONTROL 檔案]**」。
 1. 在&#x200B;**[!UICONTROL 卡片檢視]**、**[!UICONTROL 欄檢視]**&#x200B;或&#x200B;**[!UICONTROL 清單檢視]**（下方的螢幕擷取顯示&#x200B;**[!UICONTROL 清單檢視]**）中，開啟包含您已發佈或未發佈之資產的檔案夾。
 1. 選取資產，以便以勾號顯示。 請參閱以下螢幕擷取範例。
 1. 在頁面左上角附近，從下拉式選單中選擇&#x200B;**[!UICONTROL 時間軸]**。 左側面板中的&#x200B;**[!UICONTROL Status]**區域會顯示所選資產的發佈狀態。
