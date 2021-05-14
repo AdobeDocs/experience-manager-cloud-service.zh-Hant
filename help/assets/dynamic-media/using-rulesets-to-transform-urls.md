@@ -3,8 +3,7 @@ title: 使用規則集轉換URL
 description: 瞭解如何在Dynamic Media部署規則集以轉換URL。 規則集是以指令碼語言（例如JavaScript™）編寫的指令集，可評估XML資料，並在資料符合特定條件時採取特定動作。
 role: Business Practitioner
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
@@ -31,7 +30,7 @@ ht-degree: 5%
 
    請參閱[從URL中移除特殊字元。](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)
 
-在Dynamic Media，使用XML系統來管理資產資訊的網站可將XML檔案上傳至Dynamic Media。 您可以指定其中一個檔案為預先處理規則集檔案，以供Dynamic Media資產使用。 該檔案重構標準URL協定格式，以滿足與Dynamic Media整合的系統的業務邏輯。 您可以指定XML檔案作為規則集定義檔案路徑。
+在Dynamic Media，使用XML系統來管理資產資訊的網站可將XML檔案上傳至Dynamic Media。 您可以指定其中一個檔案為預先處理規則集檔案，以供Dynamic Media資產使用。 此檔案會重新架構標準URL通訊協定格式，以符合與Dynamic Media整合之系統的公司邏輯。 您可以指定XML檔案作為規則集定義檔案路徑。
 
 >[!CAUTION]
 >
@@ -71,7 +70,7 @@ ht-degree: 5%
    * 在頁面的右下角，按一下「提交上傳」。****
    * 在全局導航欄上，按一下&#x200B;**[!UICONTROL Jobs]**&#x200B;以檢查上載作業的狀態。 當&#x200B;**[!UICONTROL Job]**&#x200B;頁面上的&#x200B;**[!UICONTROL Status]**&#x200B;欄顯示「上傳完成」時，請繼續下一步驟。
 
-1. 在頁面頂部的導覽列上，按一下「設定>應用程式設定>發佈設定>影像伺服器」。****
+1. 在頁面頂部附近的導航欄上，按一下「Setup **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**」。
 1. 在「映 **[!UICONTROL 像伺服器發佈]** 」頁的「目錄管理」組下，找到「規則集定義檔案路徑」 **[!UICONTROL ，然後按一下]**********「選擇」。
 1. 在「選 **[!UICONTROL 擇規則集定義檔案(XML)]** 」頁上，瀏覽到規則集檔案，然後在頁的右下角按一下「選 **[!UICONTROL 擇」]**。
 1. 在「設定」頁面的右下角，按一下「關閉」。****
