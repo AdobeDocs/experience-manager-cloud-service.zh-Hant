@@ -4,10 +4,9 @@ description: 瞭解如何在Dynamic Media建立和管理檢視器預設集。
 feature: 檢視器預設集，檢視器
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '4243'
+source-wordcount: '4236'
 ht-degree: 12%
 
 ---
@@ -25,7 +24,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 -->
 
-另請參閱[Dynamic Media查看器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)。
+另請參閱[Dynamic Media查看器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)。
 
 本節說明如何建立、編輯和管理檢視器預設集。 您可以隨時預覽資產，將檢視器預設套用至資產。 請參閱[套用檢視器預設集](#applying-a-viewer-preset-to-an-asset)。
 
@@ -67,9 +66,9 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 * 台式機
 * Apple iPhone
 * Apple iPad
-* Android Smartphone
-* Android Tablet
-* 對於視訊，為[BlackBerry](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)提供額外的MP4播放支援。
+* Android™智慧型手機
+* Android™平板電腦
+* 對於視訊，為[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)提供額外的MP4播放支援。
 
 ### 檢視器預設集的豐富型媒體類型{#rich-media-types-for-viewer-presets}
 
@@ -79,7 +78,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
  <tbody>
   <tr>
    <td><strong>傳送集</strong><br /> </td>
-   <td><p>熱點或影像映射，或兩者都添加到一系列兩個或多個影像中。 客戶可以向左或向右平移影像，然後按一下影像上的熱點以取得詳細資訊，或直接從網站的類別、首頁或登陸頁面購買。</p> </td>
+   <td><p>熱點或影像映射，或兩者都添加到一系列兩個或多個影像中。 客戶可以向左或向右平移影像，然後按一下影像上的熱點以取得詳細資訊，或直接從網站的登陸、類別或首頁購買。</p> </td>
   </tr>
     <tr>
    <td><strong>維度</strong><br /> </td>
@@ -99,11 +98,11 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
   </tr>
   <tr>
    <td><strong>互動影像</strong></td>
-   <td>熱點會新增至影像的部分，客戶可按一下這些部分以取得詳細資訊，或直接從網站的類別、首頁或登陸頁面購買。</td>
+   <td>熱點會新增至影像的部分，客戶可按一下這些部分以取得詳細資訊，或直接從網站的登陸、類別或首頁購買。</td>
   </tr>
   <tr>
    <td><strong>互動視訊</strong></td>
-   <td>縮圖會新增至視訊中的時間軸區段，客戶可按一下該區段以取得詳細資訊，或直接從網站的類別、首頁或登陸頁面購買。</td>
+   <td>縮圖會新增至視訊中的時間軸區段，客戶可按一下該區段以取得詳細資訊，或直接從網站的登陸、類別或首頁購買。</td>
   </tr>
   <tr>
    <td><strong>混合媒體</strong></td>
@@ -156,7 +155,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 如需檢視器支援網頁瀏覽器和作業系統版本的詳細資訊，請參閱檢視器版本注意事項。
 
-請參閱[檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)目錄中的「檢視器版本注意事項」。
+請參閱[檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)目錄中的「檢視器版本注意事項」。
 
 >[!NOTE]
 >
@@ -313,7 +312,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 ### 支援的行動檢視器手勢矩陣{#supported-mobile-viewers-gestures-matrix}
 
-下表識別iOS、Android 2.x和Android 3.x裝置上支援的行動檢視器手勢。
+下表列出iOS、Android™ 2.x和Android™ 3.x裝置支援的行動檢視器手勢。
 
 <table>
  <tbody>
@@ -344,14 +343,14 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
   <tr>
    <td><p><strong>夾捏開啟</strong></p> </td>
    <td><p>不適用</p> </td>
-   <td><p>放大（僅限iOS和Android 3x）</p> </td>
-   <td><p>放大（僅限iOS和Android 3x）</p> </td>
+   <td><p>放大（僅限iOS和Android™ 3x）</p> </td>
+   <td><p>放大（僅限iOS和Android™ 3x）</p> </td>
   </tr>
   <tr>
    <td><p><strong>夾捏關閉</strong></p> </td>
    <td><p>不適用</p> </td>
-   <td><p>縮小（僅限iOS和Android 3x）</p> </td>
-   <td><p>縮小（僅限iOS和Android 3x）</p> </td>
+   <td><p>縮小（僅限iOS和Android™ 3x）</p> </td>
+   <td><p>縮小（僅限iOS和Android™ 3x）</p> </td>
   </tr>
   <tr>
    <td><p><strong>撥動</strong></p> </td>
@@ -372,7 +371,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 Experience Manager從&#x200B;**[!UICONTROL 詳細資料檢視>檢視器]**&#x200B;檢視資產時，會顯示各種檢視器預設集。 您可以增加或減少顯示的檢視器數目。
 
-**若要增加顯示的檢視器預設集數目**:
+**若要增加顯示的檢視器預設集數目：**
 
 1. 導覽至CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
 1. 導覽至`/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`的檢視器預設集清單節點
@@ -399,7 +398,7 @@ Experience Manager從&#x200B;**[!UICONTROL 詳細資料檢視>檢視器]**&#x200
 
 請參閱[建立轉盤橫幅檢視器預設集的特殊考量事項](#special-considerations-for-creating-a-carousel-banner-viewer-preset)。
 
-**若要建立檢視器預設集**:
+**若要建立檢視器預設集：**
 
 1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「工具&#x200B;****（槌子圖示）>**[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
 
@@ -421,13 +420,13 @@ Experience Manager從&#x200B;**[!UICONTROL 詳細資料檢視>檢視器]**&#x200
 
       視覺編輯器可讓您查看特定屬性對樣式有何影響。 使用編輯器左側的範例，設定或調整任何屬性，以立即查看它對檢視器有何影響。
 
-      [檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的「自訂&#x200B;*`<viewer name>`*&#x200B;檢視器」說明主題，說明每種檢視器預設集的CSS樣式屬性。 例如，如果您要建立類型`Mixed_Media`的檢視器預設集，請參閱[自訂混合媒體檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)，以取得每個屬性的清單和說明。
+      [檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)中的「自訂&#x200B;*`<viewer name>`*&#x200B;檢視器」說明主題，說明每種檢視器預設集的CSS樣式屬性。 例如，如果您要建立類型`Mixed_Media`的檢視器預設集，請參閱[自訂混合媒體檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)，以取得每個屬性的清單和說明。
 
    * 如果您已在個別的CSS檔案中定義樣式設定，則可將CSS檔案上傳至「Experience Manager資產」。 若要尋找已上傳的CSS檔案並將其與檢視器預設集建立關聯，請點選&#x200B;**[!UICONTROL 選取類型]**&#x200B;下方的「匯入CSS」(Import CSS ]**)（如有必要，請向上捲動視覺編輯器以檢視）。**[!UICONTROL 
 
       當您匯入CSS檔案時，視覺編輯器會檢查CSS是否使用正確的檢視器標籤。 例如，如果您要建立縮放檢視器，您匯入的所有CSS規則都必須使用父檢視器元素上定義的檢視器類別名稱`.s7mixedmediaviewer`來定義。
 
-      只要正確定義特定檢視器的CSS標籤，您就可匯入任意手工的CSS。 (CSS標籤在[檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的「自訂&#x200B;*檢視器名稱>*&#x200B;檢視器」說明主題中有說明。 例如，如果您想要閱讀有關縮放檢視器的CSS標籤，請參閱[自訂縮放檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，視覺編輯器可能不瞭解某些CSS值。 在這種情況下，視覺編輯器會嘗試覆寫錯誤，讓CSS仍能運作。
+      只要正確定義特定檢視器的CSS標籤，您就可匯入任意手工的CSS。 (CSS標籤在[檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)中的「自訂&#x200B;*檢視器名稱>*&#x200B;檢視器」說明主題中有說明。 例如，如果您想要閱讀有關縮放檢視器的CSS標籤，請參閱[自訂縮放檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，視覺編輯器可能不瞭解某些CSS值。 在這種情況下，視覺編輯器會嘗試覆寫錯誤，讓CSS仍能運作。
    >[!NOTE]
    >
    >如果您偏好直接以原始格式編輯CSS，請點選「選取類型」下拉式選單下方的「顯示／隱藏CSS」（若有需要，請向上捲動視覺編輯器以檢視）。****
@@ -459,7 +458,7 @@ Experience Manager從&#x200B;**[!UICONTROL 詳細資料檢視>檢視器]**&#x200
 
 ### 建立互動式檢視器預設集的特殊考量事項{#special-considerations-for-creating-an-interactive-viewer-preset}
 
-**關於面板中影像縮圖的顯示模式**:
+**關於面板中影像縮圖的顯示模式：**
 
 當您建立或編輯互動式視訊檢視器預設集時，可以選擇要使用的顯示模式設定。 當您從&#x200B;**[!UICONTROL 行為]**&#x200B;標籤下的&#x200B;**[!UICONTROL 選擇的元件]**&#x200B;下拉菜單中選擇`InteractiveSwatches`時，就會出現此選擇。 您選擇的「顯示」模式會影響縮圖在視訊播放時的顯示方式和時間。您可以選擇「顯 `segment`示」模式 (預設) 或「顯 `continuous` 示」模式。
 
@@ -480,7 +479,7 @@ Experience Manager從&#x200B;**[!UICONTROL 詳細資料檢視>檢視器]**&#x200
  </tbody>
 </table>
 
-**關於互動式視訊檢視器中的自動捲動行為**:
+**關於互動式視訊檢視器中的自動捲動行為：**
 
 縮圖在互動式視訊檢視器中的自動捲動行為，與您選擇的顯示模式無關。
 
@@ -490,7 +489,7 @@ Experience Manager從&#x200B;**[!UICONTROL 詳細資料檢視>檢視器]**&#x200
 
 當您在檢視器預設集中啟用 (選取) 「自動捲動 **** 」時，在視訊播放期間，指派給視訊區段的縮圖影像會在區段開始時捲動至檢視中。但是，有些例項會顯示區段中某些縮圖的長度，是其前後縮圖的兩倍。發生此行為是因為區段中的縮圖數目大於面板中顯示的數目，且不可平均分割。
 
-舉例來說，假設您有一個30秒的視訊區段。 此外，在30秒內共可顯示9個縮圖。 您的瀏覽器的大小調整得在顯示面板中有四個可見的縮圖位置。 30秒視訊時間區段分為3個子區段。 下表顯示特定時間子區段的縮圖顯示劃分：
+舉例來說，假設您有一個30秒的視訊區段。 此外，在30秒內共可顯示9個縮圖。 您的瀏覽器的大小調整得在顯示面板中有四個可見的縮圖位置。 30秒的視訊時間區段分為三個子區段。 下表顯示特定時間子區段的縮圖顯示劃分：
 
 | **視訊子區段** | **子區段時間（以秒為單位）** | **面板中可見的縮圖** |
 |---|---|---|
@@ -523,7 +522,7 @@ Experience Manager從&#x200B;**[!UICONTROL 詳細資料檢視>檢視器]**&#x200
 
 使用者介面中可用的檢視器預設集，會視作者模式中的作用中檢視器預設集而定。 依預設，檢視器預設集在您建立後為「開啟」。 如果您關閉預設集，在「作者」模式中就看不到它。 如果預設集已發佈，則無論它是開啟還是關閉，都一律會發佈。 如果清單變得太笨重，或您不想讓檢視器預設集可供使用，請停用檢視器預設集。
 
-**若要啟用或停用檢視器預設集**:
+**若要啟用或停用檢視器預設集：**
 
 1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「工具&#x200B;****（槌子圖示）>**[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
 1. 在「檢視器預設集」頁面的&#x200B;**[!UICONTROL State]**&#x200B;欄標題下，點選切換以啟用或停用檢視器預設集。
@@ -540,7 +539,7 @@ Experience Manager從&#x200B;**[!UICONTROL 詳細資料檢視>檢視器]**&#x200
 
 另請參閱[預覽資產](/help/assets/dynamic-media/previewing-assets.md)。
 
-**若要發佈檢視器預設集**:
+**若要發佈檢視器預設集：**
 
 1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「工具&#x200B;****（槌子圖示）>**[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
 1. 選取一或多個您要發佈的檢視器預設集。
@@ -555,7 +554,7 @@ Experience Manager從&#x200B;**[!UICONTROL 詳細資料檢視>檢視器]**&#x200
 
 不支援編輯任何預先定義、立即可用的檢視器預設集&#x200B;*。*&#x200B;如果您編輯現成可用的檢視器預設集，系統會提示您以新名稱儲存它。
 
-**若要編輯檢視器預設集**:
+**若要編輯檢視器預設集：**
 
 1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「工具&#x200B;****（槌子圖示）>**[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
 1. 勾選檢視器預設集標題左側的方塊，以選取預設集。
@@ -573,7 +572,7 @@ Experience Manager從&#x200B;**[!UICONTROL 詳細資料檢視>檢視器]**&#x200
 
 您可以刪除已建立並新增至Dynamic Media的檢視器預設集。
 
-**若要刪除自訂檢視器預設集**:
+**若要刪除自訂檢視器預設集：**
 
 1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「工具&#x200B;****（槌子圖示）>**[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
 1. 在「檢視器預設集」頁面上，勾選「預設集標題」，然後點選&#x200B;**[!UICONTROL 垃圾筒]**&#x200B;圖示。
@@ -583,7 +582,7 @@ Experience Manager從&#x200B;**[!UICONTROL 詳細資料檢視>檢視器]**&#x200
 
 如果您已發佈資產和選取的檢視器， **[!UICONTROL URL]** 和 **[!UICONTROL Embed]**  (內嵌) 按鈕會在您選取檢視器預設集後顯示。
 
-**若要將檢視器預設套用至資產**:
+**若要將檢視器預設套用至資產：**
 
 1. 開啟資產並靠近頁面的左上角，點選下拉式功能表，然後選取「**[!UICONTROL 檢視器]**」。
 
