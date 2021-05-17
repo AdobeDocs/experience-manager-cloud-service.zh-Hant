@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 9fdc139f5a945de931a2bebb95e5ea006e5b91be
+source-git-commit: 74816a99a74b86330efb5ff8ca37b4fe64fdbe8c
 workflow-type: tm+mt
 source-wordcount: '2762'
-ht-degree: 43%
+ht-degree: 42%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 43%
    1. **Cloud Service 設定**：輸入目標 AEM as a Cloud Service 製作 URL。
 
       >[!NOTE]
-      >在內容轉移活動期間，您一次最多可以建立並維護四個移轉集。
+      >在內容傳輸活動期間，您一次最多可以建立和維護10個移轉集。
       >此外，您還須針對每個特定環境 (*預備*、*開發*&#x200B;或&#x200B;*生產*) 分別建立移轉。
 
    1. **存取 Token**：輸入存取 Token。
