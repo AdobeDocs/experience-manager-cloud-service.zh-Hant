@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
-translation-type: tm+mt
-source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -41,7 +40,7 @@ ht-degree: 0%
 * 瞭解需要哪些必要AEM的工具和配置。
 * 瞭解最佳實務，讓您的無頭體驗更順暢、讓內容製作更有效率，並確保內容能快速傳遞。
 
-## 要求{#requirements}
+## 需求 {#requirements}
 
 繼續本檔案之前，請確定您已檢閱AEMHeadless Developer Journey [Getting Started with AEM Headless as a direction](getting-started.md)中的先前檔案，確定您：
 
@@ -74,7 +73,7 @@ ht-degree: 0%
 
 在開發階段，建議您使用開發和測試環境。 當您轉向效能測試時，您會想要移至生產環境。
 
-### 開發人員與內容作者的合作{#cooperation}
+### 開發人員與內容作者的合作 {#cooperation}
 
 開發人員需AEM要使用已填入的內容模型來設定開發環境。 開發人員會開發用戶端，當內容作者仍在建AEM立內容時，會從無頭部使用內容。 這就是為什麼API定義非常重要。 借由運用AEMSDK，開發人員可建立測試掛接，以建立用戶端和裝置測試，以確保用戶端能夠正確呈現內容。
 
@@ -116,13 +115,13 @@ ht-degree: 0%
    * 允許AEM為每個資料夾設定允許的型號，因此&#x200B;**建立新**&#x200B;按鈕將僅顯示該位置支援的型號。
 * 如果在模型中設定根資料夾，則可簡化建立新內容片段的內嵌內容片段編輯器。 從業人員不必選擇位置，只需提供名稱，就可以開始編輯新參照。
 
-### 編寫內容{#authoring}
+### 製作內容 {#authoring}
 
 * 針對特定頻道版本的內容，請考慮使用內容片段變化。 變數會與內容主版同步，以簡化內容變更管理。
 * 邀請其他內容製作者檢閱內容，並提供附註和注釋意見回饋，這些註解和注釋可在內容片段編輯器中使用，而全域可在內容片段管理控制台中跨片段使用。
 * 只要盡可能少的必備元素，就能讓事物保持動態。 強制元素可以封鎖工作流程。
 
-### 編寫全域內容{#localization}
+### 製作全域內容 {#localization}
 
 * 建立內容翻譯的規則與管理。 為了減少系統負載，請將轉換建立為非同步過程，該過程可以在較長的時間間隔內運行。 為本地化質量控制和錯誤修正留出時間。
 * 利用翻譯技術系統提供的所有功能，與翻譯記憶庫AEM等整合。
@@ -141,9 +140,9 @@ ht-degree: 0%
 
 ### 選擇您自己的冒險{#choose-your-path}
 
-不論您的學習風格為何，Adobe都希望您能成功開始使用您的AEMHeadless專案。
+無論您的學習風格如何，Adobe都希望您在開始使用無頭專案時AEM獲得成功。
 
-* 如果您偏好&#x200B;**繼續學習無頭概念和無頭技術AEM**，您應繼續無頭歷程AEM，先檢閱檔案[如何將您的內容建模為內容模型AEM](model-your-content.md)，以瞭解如何在中建模您的內容結構AEM。
+* 如果您想要繼續&#x200B;**瞭解無頭概念和無頭技術AEM**，您應繼續無頭歷程AEM，先檢閱檔案[如何將您的內容建模為內容模型AEM](model-your-content.md)，以瞭解如何在中建立內容結構模型AEM。
 * 如果您偏好&#x200B;**透過執行**&#x200B;來學習，可跳至[開始使用AEMHeadless實作教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)，透過實作簡單專案來公開無頭內容，您將直接跳至無頭開AEM發。
 
 ## 其他資源 {#additional-resources}
