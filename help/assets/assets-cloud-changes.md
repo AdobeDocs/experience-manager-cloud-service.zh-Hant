@@ -1,16 +1,15 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] 中a [!DNL Cloud Service]的顯著變化'
 description: 與[!DNLAdobe Experience Manager6.5相比， [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 的顯著變化。
-feature: Release Information
+feature: 發行資訊
 role: Business Practitioner,Leader,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
+source-git-commit: bcb747517595943e1ed65d19424f002136877903
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
-
 
 # [!DNL Experience Manager Assets]變更為[!DNL Cloud Service] {#notable-changes}
 
@@ -53,7 +52,7 @@ ht-degree: 5%
 |-----|-----|-----|
 | [重複資產偵測](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 工作方式不同。 | 請參閱[它在 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)中的運作方式。 |
 | [僅限位置(FPO)轉譯](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | 工作方式不同 |  |
-| 中繼資料回寫 | 不支援. | 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html)中的[中繼資料回寫 |
+| 中繼資料回寫 | 工作方式不同 | 預設為停用. 視需要啟用對應的工作流程啟動程式。 回寫由資產微服務處理。 |
 | 處理使用Package Manager上傳的資產 | 需要人工干預。 | 使用&#x200B;**[!UICONTROL 重新處理資產]**&#x200B;動作手動重新處理。 |
 | MIME類型檢測 | 不支援. | 如果您上傳的數位資產沒有副檔名或副檔名不正確，可能無法視需要處理。 使用者仍可在DAM中儲存二進位檔案，但無副檔名。 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)中的[MIME類型檢測。 |
 | 複合資產的子資產產生 | 不支援. | 相依使用案例未完成。 例如，多頁PDF檔案的註解會受到影響。 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)中的[子資產建立。 |
@@ -66,10 +65,10 @@ ht-degree: 5%
 >[!DNL Experience Manager]作為[!DNL Cloud Service]提供以下資源：
 >
 >* [已過時和已移除功能的清單](/help/release-notes/deprecated-removed-features.md)
->* [簡介](/help/overview/introduction.md)
->* [新增功能與不同之處](/help/overview/what-is-new-and-different.md)
->* [建築](/help/core-concepts/architecture.md)
->* [顯著變更](/help/release-notes/aem-cloud-changes.md)
->* [顯著變更 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [簡介](/help/overview/introduction.md)
+* [新增功能與不同之處](/help/overview/what-is-new-and-different.md)
+* [建築](/help/core-concepts/architecture.md)
+* [顯著變更](/help/release-notes/aem-cloud-changes.md)
+* [顯著更改 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+* [教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
