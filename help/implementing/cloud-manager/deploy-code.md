@@ -1,18 +1,17 @@
 ---
 title: 部署您的程式碼-Cloud Services
 description: 部署您的程式碼-Cloud Services
-translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
+source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1071'
 ht-degree: 1%
 
 ---
 
-
 # 部署程式碼 {#deploy-your-code}
 
-## 使用Cloud Manager部署代碼{#deploying-code-with-cloud-manager}
+## 將Cloud Manager中的代碼作AEM為{#deploying-code-with-cloud-manager}Cloud Service部署
 
 一旦配置了生產管線（儲存庫、環境和測試環境），您就可以部署代碼。
 
@@ -125,5 +124,3 @@ Cloud Manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
 1. 將包部AEM署到publish2 ，將調度程式包部署到dispatcher2 ，刷新調度程式快取。
 1. 將dispatcher2放回負載平衡器。
 此過程將繼續，直到部署到拓撲中所有發佈者和調度程式為止。
-
-
