@@ -2,11 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-translation-type: tm+mt
-source-git-commit: d2b0fa9448ec3c1150d3c35860ffddb9e4d60d3e
+source-git-commit: 3b89e701e080f27f490a6c8a7bb38792c07d6abc
 workflow-type: tm+mt
-source-wordcount: '2729'
-ht-degree: 46%
+source-wordcount: '2769'
+ht-degree: 45%
 
 ---
 
@@ -54,6 +53,8 @@ ht-degree: 46%
 * 製作的&#x200B;*擷取階段*&#x200B;將縮小整個製作部署。這表示在整段擷取程序中，將無法使用製作 AEM。此外，請確保在運行&#x200B;*Ingestion*&#x200B;階段時不執行Cloud Manager管道。
 
 * 當使用`Amazon S3`或`Azure`作為源系統上的資料儲存時，應配置資料儲存AEM，以便不能刪除儲存的Blob（垃圾回收）。 這樣可確保索引資料的完整性，並且如果未能配置這種方式，可能會導致提取失敗，因為此索引資料缺乏完整性。
+
+* 如果您使用自訂索引，則必須確保在運行內容傳輸工具之前使用`tika`節點配置自訂索引。 有關詳細資訊，請參閱[準備新索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition)。
 
 ## 可用性 {#availability}
 
