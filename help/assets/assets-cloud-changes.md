@@ -4,9 +4,9 @@ description: 與[!DNLAdobe Experience Manager6.5相比， [!DNL Adobe Experience
 feature: 發行資訊
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bcb747517595943e1ed65d19424f002136877903
+source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '778'
 ht-degree: 6%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 6%
 
 ## 功能奇偶校驗([!DNL Experience Manager] 6.5 {#cloud-service-feature-status})
 
-[!DNL Experience Manager] 為現 [!DNL Cloud Service] 有功能提供許多新功能和更高效能的方式。但是，當從[!DNL Experience Manager] 6.5移至[!DNL Experience Manager]作為[!DNL Cloud Service]時，您可能會注意到有些功能的運作方式不同、不可用或部分可用。 以下是這些功能的清單：
+[!DNL Experience Manager] 為現 [!DNL Cloud Service] 有功能提供許多新功能和更高效能的方式。但是，當從[!DNL Experience Manager] 6.5移至[!DNL Experience Manager]作為[!DNL Cloud Service]時，您可能會注意到有些功能的運作方式不同、不可用或部分可用。 以下是這些功能的清單。 此外，請參閱[已過時和已移除的功能](/help/release-notes/deprecated-removed-features.md)。
 
 | 功能或使用案例 | [!DNL Experience Manager]的狀態為[!DNL Cloud Service] | 評論 |
 |-----|-----|-----|
