@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 2%
+source-wordcount: '782'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,13 @@ ht-degree: 2%
 * 瞭解無AEM頭功能，以及它們如何搭配運作，以提供無頭體驗。
 * 能夠採取實作第一個無頭專案的AEM第一步。
 
-## 無頭之旅{#the-journey}
+## 對象 {#audience}
+
+本旅程是專為開發人員人物所設計，從開發人員的角度來規劃AEMHeadless專案的需求、步驟和方法。 此歷程將定義開發人員在成功專案中必須與之互動的額外角色，但歷程的觀點是開發人員。
+
+這段旅程中的資訊當然對其他角色有用，但有些資訊對某些角色是多餘的。 敬請期待即將到來的旅程，涵蓋更多角色。
+
+## 無頭開發人員歷程{#the-journey}
 
 您將在此歷程中探索許多主題。 以下文章提供您無頭的基本知識，並AEM連結至詳細的技術檔案。
 
