@@ -5,10 +5,9 @@ contentOwner: AG
 feature: 智慧標籤，標籤
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-translation-type: tm+mt
-source-git-commit: 2633a8fdd8301a38cd044ba822494ed54c564863
+source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
 workflow-type: tm+mt
-source-wordcount: '2401'
+source-wordcount: '2357'
 ht-degree: 6%
 
 ---
@@ -30,8 +29,8 @@ ht-degree: 6%
 
 您可以標籤下列資產類型：
 
-* **影像**:使用Adobe Sensei的智慧型內容服務，標籤許多格式的影像。您[建立訓練模型](#train-model)，然後[將智慧標籤](#tag-assets)套用至影像。 智慧型標籤會套用至支援的檔案類型，這些檔案類型會產生JPG和PNG格式的轉譯。
-* **文字型資產**: [!DNL Experience Manager Assets] 在上傳時自動標籤支援的文字型資產。進一步瞭解[標籤文字型資產](#smart-tag-text-based-assets)。
+* **影像**:使用Adobe Sensei的智慧型內容服務，標籤許多格式的影像。您[建立訓練模型](#train-model)，然後上傳的影像會自動標籤。 智慧型標籤會套用至支援的檔案類型，這些檔案類型會產生JPG和PNG格式的轉譯。
+* **文字型資產**: [!DNL Experience Manager Assets] 在上傳時自動標籤支援的文字型資產。
 * **視訊資產**:視訊標籤預設會以 [!DNL Adobe Experience Manager] a的形式啟用 [!DNL Cloud Service]。[當您上傳新視訊或](/help/assets/smart-tags-video-assets.md) 重新處理現有視訊時，視訊會自動標籤。
 
 | 影像（MIME類型） | 文字型資產（檔案格式） | 視訊資產（檔案格式和轉碼器） |
@@ -62,14 +61,6 @@ ht-degree: 6%
 * [標籤您的數位資產](#tag-assets)。
 * [管理標籤和搜尋](#manage-smart-tags-and-searches)。
 
-<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
-
-## 使用智慧型標籤{#smart-tag-text-based-assets}標籤文字型資產
-
-上傳時，支援的文字型資產會由[!DNL Experience Manager Assets]自動標籤。 預設會啟用。 智慧型標籤的效能不取決於資產中的文字數量，而取決於資產文字中顯示的相關關鍵字或實體。 對於文字型資產，智慧型標籤是顯示在文字中的關鍵字，但是最能說明資產的關鍵字。 對於受支援的資產，[!DNL Experience Manager]已擷取文字，接著會建立索引並用來搜尋資產。 不過，文字中以關鍵字為基礎的智慧型標籤提供專用、結構化和較高優先順序的搜尋Facet，與完整搜尋索引相比，可用來改善資產搜尋。
-
-相較之下，對於影像和視訊，智慧型標籤是根據某些視覺方面衍生而來。
-
 ## 瞭解標籤模型和准則{#understand-tag-models-guidelines}
 
 標籤模型是一組相關標籤，這些標籤與要標籤的影像的各種視覺方面相關聯。 標籤與影像的視覺方面有明顯不同的關係，因此套用標籤時，標籤有助於搜尋特定類型的影像。 例如，鞋類系列可以有不同的標籤，但所有標籤都與鞋類相關，且可屬於相同的標籤模型。 套用時，標籤會協助您尋找不同類型的鞋，例如依顏色、依設計或依使用情形。 若要瞭解[!DNL Experience Manager]中訓練模型的內容呈現，請將訓練模型視為頂層實體，由一組手動新增的標籤和每個標籤的範例影像組成。 每個標籤都可以排他性地套用至影像。
@@ -86,7 +77,7 @@ ht-degree: 6%
 
 ![示例性影像，以示訓練指南](assets/do-not-localize/coherence.png)
 
-**涵蓋範圍**:培訓中的影像應該有足夠的多樣性。我們的想法是提供一些比較多樣化的例子，AEM讓學習將注意力放在正確的事上。 如果您要在視覺上不相同的影像上套用相同的標籤，請至少包含5種不同類型的範例。 例如，對於標籤&#x200B;*model-down-pose*，為服務加入更多類似下方反白顯示影像的訓練影像，以便在標籤期間更精確地識別類似影像。
+**涵蓋範圍**:培訓中的影像應該有足夠的多樣性。我們的想法是提供一些比較多樣化的例子，讓[!DNL Experience Manager]學會專注在正確的事物上。 如果您要在視覺上不相同的影像上套用相同的標籤，請至少包含5種不同類型的範例。 例如，對於標籤&#x200B;*model-down-pose*，為服務加入更多類似下方反白顯示影像的訓練影像，以便在標籤期間更精確地識別類似影像。
 
 ![示例性影像，以示訓練指南](assets/do-not-localize/coverage_1.png)
 
@@ -149,10 +140,6 @@ ht-degree: 6%
 1. 檢閱報表的詳細資訊。 報表會顯示您所訓練之標籤的訓練狀態。**[!UICONTROL 訓練狀態]**&#x200B;欄中的綠色表示智慧型標籤服務已接受標籤訓練。 黃色表示服務未針對特定標籤進行完整訓練。在這種情況下，請使用特定標籤新增更多影像，並執行培訓工作流程，以完全在標籤上訓練服務。如果您在此報表中未看到標籤，請針對這些標籤重新執行培訓工作流程。標籤
 1. 若要下載報表，請從清單中選取報表，然後從工具列按一下「下載&#x200B;**[!UICONTROL 」。]**&#x200B;報表會以[!DNL Microsoft Excel]試算表的形式下載。
 
-## 標籤資產{#tag-assets}
-
-在您訓練「智慧標籤」服務後，就會自動標籤上傳的資產。 [!DNL Experience Manager] 近乎即時地套用適當的標籤。您可以隨選套用標籤工作流程，或排程它定期執行。 標籤工作流程同時套用至資產和資料夾。
-
 <!--
 ### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
@@ -188,6 +175,14 @@ ht-degree: 6%
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
+## 使用智慧標籤標籤資產{#tag-assets}
+
+上載時，所有類型的受支援資產都會自動由[!DNL Experience Manager Assets]標籤。 預設會啟用標籤。 [!DNL Experience Manager] 近乎即時地套用適當的標籤。  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+
+對於影像和視訊，智慧型標籤是根據某些視覺方面衍生而來。
+
+對於文字型資產，智慧型標籤的效能不取決於資產中的文字數量，而取決於資產文字中顯示的相關關鍵字或實體。 對於文字型資產，智慧型標籤是顯示在文字中的關鍵字，但是最能說明資產的關鍵字。 對於受支援的資產，[!DNL Experience Manager]已擷取文字，接著會建立索引並用來搜尋資產。 不過，文字中以關鍵字為基礎的智慧型標籤提供專用、結構化和較高優先順序的搜尋Facet，與完整搜尋索引相比，可用來改善資產搜尋。
+
 ## 管理智慧標籤和資產搜尋{#manage-smart-tags-and-searches}
 
 您可以組織智慧型標籤，移除可能指派給品牌資產的任何不正確標籤，如此只會顯示最相關的標籤。
@@ -212,9 +207,9 @@ ht-degree: 6%
 
 1. 導覽至資產的[!UICONTROL 屬性]頁面。 請注意，您促銷的標籤已指派高關聯性，因此在搜尋結果中會顯示高度。
 
-### 使用AEM智慧型標籤{#understand-search}瞭解搜尋結果
+### 瞭解[!DNL Experience Manager]搜尋結果與智慧標籤{#understand-search}
 
-依預設，AEM搜尋會將搜尋詞與`AND`子句結合。 使用智慧型標籤不會變更此預設行為。 使用智慧型標籤會新增`OR`子句，以尋找套用智慧型標籤中的任何搜尋詞。 例如，請考慮搜索`woman running`。 預設情況下，中繼資料中只包含`woman`或`running`關鍵字的資產不會出現在搜尋結果中。 但是，使用智慧標籤標籤以`woman`或`running`標籤的資產會出現在此類搜尋查詢中。 所以搜索結果是，
+依預設，[!DNL Experience Manager]搜尋會將搜尋詞與`AND`子句結合。 使用智慧型標籤不會變更此預設行為。 使用智慧型標籤會新增`OR`子句，以尋找套用智慧型標籤中的任何搜尋詞。 例如，請考慮搜索`woman running`。 預設情況下，中繼資料中只包含`woman`或`running`關鍵字的資產不會出現在搜尋結果中。 但是，使用智慧標籤標籤以`woman`或`running`標籤的資產會出現在此類搜尋查詢中。 所以搜索結果是，
 
 * 資產，其中包含中繼資料中的`woman`和`running`關鍵字。
 
@@ -226,12 +221,12 @@ ht-degree: 6%
 1. 與智慧型標籤中`woman running`的相符項目。
 1. 在智慧型標籤中符合`woman`或`running`。
 
-## 標籤限制和最佳做法{#limitations}
+## 標籤限制和最佳做法 {#limitations}
 
 增強的智慧型標籤是以學習影像模型及其標籤為基礎。 這些模型在識別標籤時並不總是十分完美。 智慧標籤的目前版本有下列限制：
 
 * 無法辨識影像的細微差異。 例如，修身與普通襯衫。
-* 無法根據影像的微小圖樣／部分來識別標籤。 例如，T恤上的標誌。
+* 無法根據影像的微小圖樣或部分來識別標籤。 例如，襯衫上的標誌。
 * [!DNL Experience Manager]支援的語言支援標籤。 如需語言清單，請參閱[智慧型內容服務發行說明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)。
 * 未實際處理的標籤與：
 
