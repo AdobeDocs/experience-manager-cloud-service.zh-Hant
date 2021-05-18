@@ -2,16 +2,15 @@
 title: XMP 中繼資料
 description: 瞭解中繼資XMP料管理的（可擴充中繼資料平台）中繼資料標準。 它被用AEM作建立、處理和交換中繼資料的標準格式。
 contentOwner: AG
-feature: Metadata
+feature: 中繼資料
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
+source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '1000'
 ht-degree: 16%
 
 ---
-
 
 # XMP 中繼資料 {#xmp-metadata}
 
@@ -75,9 +74,7 @@ XMP最常是使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium
 ## XMP回寫至轉譯{#xmp-writeback-to-renditions}
 
 &lt;a0/XMP>中的此回寫功能會將中繼資料變更複製到原始資產的轉譯。
-[!DNL Adobe Experience Manager Assets]當您從「資產」中變更資產的中繼資料，或在上傳資產時，這些變更最初會儲存在資產階層的中繼資料節點中。
-
-回寫功XMP能可讓您將中繼資料變更傳播至資產的所有或特定轉譯。 該功能僅回寫那些使用`jcr`命名空間的元資料屬性，即，將回寫名為`dc:title`的屬性，但不回寫名為`mytitle`的屬性。
+[!DNL Adobe Experience Manager Assets]當您從[!DNL Assets]中變更資產的中繼資料，或在上傳資產時，這些變更最初會儲存在資產階層的中繼資料節點中。 回寫功能可讓您將中繼資料變更傳播至資產的所有或特定轉譯。 該功能僅回寫那些使用`jcr`命名空間的元資料屬性，即，將回寫名為`dc:title`的屬性，但不回寫名為`mytitle`的屬性。
 
 例如，假設您將`Classic Leather`資產的[!UICONTROL Title]屬性修改為`Nylon`的藍本。
 
@@ -93,7 +90,13 @@ XMP最常是使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium
 
 ### 啟XMP用回寫{#enable-xmp-writeback}
 
-[!UICONTROL DAM中繼資] 料回寫工作流程可用來回寫資產的中繼資料。要啟用回寫，請執行以下步驟：
+[!UICONTROL DAM中繼資] 料回寫工作流程可用來回寫資產的中繼資料。要啟用回寫，請遵循以下三種方法之一：
+
+* 使用啟動器。
+* 手動啟動`DAM MetaData Writeback`工作流。
+* 將工作流程設定為後處理的一部分。
+
+要使用啟動器，請執行以下步驟：
 
 1. 作為管理員，訪問&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 啟動器]**。
 1. 選擇[!UICONTROL Launcher]，其中&#x200B;**[!UICONTROL Workflow]**&#x200B;欄顯示&#x200B;**[!UICONTROL DAM MetaData Writeback]**。 按一下工具欄中的&#x200B;**[!UICONTROL 屬性]**。
@@ -102,16 +105,14 @@ XMP最常是使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium
 
 1. 在&#x200B;**[!UICONTROL 啟動器屬性]**&#x200B;頁面上選擇&#x200B;**[!UICONTROL 激活]**。 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
 
-若要將此工作流程只套用一次至資產，請從左側導軌套用工作流程[!UICONTROL DAM中繼資料回寫]。 若要將工作流程套用至所有已上傳的資產，請將工作流程新增至後處理設定檔。
+若要手動將工作流程只套用一次至資產，請從左側導軌套用[!UICONTROL DAM中繼資料回寫]工作流程。
+
+若要將工作流程套用至所有已上傳的資產，請將工作流程新增至後處理設定檔。
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
--->
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes. -->
-
-<!-- 
 To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
 1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
