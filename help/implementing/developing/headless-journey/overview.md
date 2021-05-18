@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '772'
 ht-degree: 1%
 
 ---
@@ -55,8 +55,7 @@ ht-degree: 1%
 | 6 | [如何透過資產API更新AEM您的內容](update-your-content.md) | 瞭解如何使用REST API存取和更新您的內容片段內容。 |
 | 7 | [如何將所有內容整合在一起——您的應用程式和您的內容AEM在Headless](put-it-all-together.md) | 瞭解如何將您的專AEM案（包括內容片段）、您的GraphQL呼叫、您的REST API呼叫和您的應用程式)準備上線。 |
 | 8 | [如何與無頭應用程式一起上線](go-live.md) | 瞭解如何即時部署應用程式並將您的本機程式碼以Git格式移至Cloud Manager Git for CI/CD管道。 |
-| 9 | [貼文啟動](post-launch.md) | 瞭解如何維持您的無頭體驗。 |
-| 10 | [可選——如何使用](create-spa.md) | 瞭解無頭功AEM能後，請探索如何結合無頭和無頭傳送，並瞭解如何使用編輯器架構來SPA建AEM立可編SPA輯的內容。 |
+| 9 | [可選——如何使用](create-spa.md) | 瞭解無頭功AEM能後，請探索如何結合無頭和無頭傳送，並瞭解如何使用編輯器架構來SPA建AEM立可編SPA輯的內容。 |
 
 ## 下一個{#what-is-next}
 
