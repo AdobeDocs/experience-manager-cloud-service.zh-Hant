@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1986'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,23 @@ Node.js是JavaScript執行時期環境，用於處理專案的ui.frontendAEM子�
 * 瞭解如何在啟動之前保護和擴充您的應用程式。
 * 瞭解如何監控效能和除錯問題。
 
-您應繼續無AEM頭之旅，接下來檢閱檔案[Post Launch](post-launch.md)，以瞭解如何維持無頭之體驗。
+## 旅程結束了嗎？{#journey-ends}
+
+恭喜！ 您已完成無AEM頭開發人員歷程！ 您現在應瞭解：
+
+* 無頭內容與無頭內容傳送的差異。
+* 無頭AEM功能。
+* 如何組織和無AEM頭專案。
+* 如何在中建立無頭內容AEM。
+* 如何擷取和更新中的無頭內容AEM。
+* 如何與無頭專案AEM一起上線。
+* 上線後該怎麼辦。
+
+您已啟動您的第一個AEM無頭專案，或現在已具備所需的一切知識。 幹得好！
+
+但店裡AEM的無頭店不必停在這裡。 您可能還記得在[旅程的「開始」部分](getting-started.md#integration-levels)中，我們簡要地討論了AEM，如何不僅支援無頭傳送和傳統的全棧模型，還支援結合兩者優點的混合模型。
+
+如果您需要這種彈性，請繼續進行此程式的選擇性附加部分[如何建立單頁應用程式(SPA)AEM。](create-spa.md)
 
 ## 其他資源 {#additional-resources}
 
