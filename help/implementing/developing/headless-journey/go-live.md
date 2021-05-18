@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
+source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '1886'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >正在進行中的工作——本檔案的建立工作正在進行中，不應將其理解為完整或明確，也不應將其用於生產目的。
 
-在[AEM Headless Developer Journey中，](overview.md)瞭解如何即時部署無頭應用程式，方法是將您的本機程式碼以Git格式移至Cloud Manager Git，以取得CI/CD管道。
+在[AEM Headless Developer Journey](overview.md)的這部分，瞭解如何即時部署無頭應用程式，方法是將您的本機程式碼以Git格式匯入Cloud Manager Git，以利CI/CD管道。
 
 ## 到目前為止的故事{#story-so-far}
 
@@ -40,19 +40,18 @@ ht-degree: 0%
 
 ## AEMSDK {#the-aem-sdk}
 
-它包含下列對象：
+SDKAEM可用來建立和部署自訂程式碼。 它是您開發和測試無頭應用程式之前所需的主要工具。 它包含下列對象：
 
 * Quickstart jar —— 可執行的jar檔案，可用於設定作者和發佈實例
 * Dispatcher tools - Dispatcher模組及其對基於Windows和UNIX的系統的依賴性
 * Java API Jar - Java Jar/Maven Dependency，它公開所有允許的可用於開發的Java API AEM
 * Javadocjar - Java APIjar的javadoc
 
-## 開發工具{#development-tools}
+## 其他開發工具{#additional-development-tools}
 
 除了SDK之AEM外，您還需要其他工具，以協助在本端開發和測試您的程式碼和內容：
 
 * Java
-* SDKAEM
 * Git
 * 阿帕奇·馬文
 * Node.js程式庫
@@ -60,15 +59,15 @@ ht-degree: 0%
 
 由AEM於是Java應用程式，您必須安裝Java和Java SDK，才能支援將AEM其開發為Cloud Service。
 
-SDKAEM可用來建立和部署自訂程式碼。 它是您在上線前測試無頭應用程式所需的主要工具。
-
 Git是您用來管理來源控制以及簽入Cloud Manager的變更，然後將其部署至生產實例的工具。
 
 使AEM用Apache Maven來建立從Maven Project原型產生AEM的專案。 所有主要IDE都提供Maven的整合支援。
 
-Node.js是JavaScript執行時期環境，用於處理專案的ui.frontendAEM子專案的前端資產。 Node.js與npm一起分發，實際上是Node.js包管理器，用於管理JavaScript依賴性。
+Node.js是JavaScript執行時期環境，用於處理專案的AEM`ui.frontend`子專案的前端資產。 Node.js與npm一起分發，實際上是Node.js包管理器，用於管理JavaScript依賴性。
 
 ## 系統AEM元件總覽{#components-of-an-aem-system-at-a-glance}
+
+接下來，我們來看一下環境的構成AEM部分。
 
 完整AEM的環境由Author、Publish和Dispatcher組成。 這些相同的元件將會在本機開發執行時期中提供，讓您更輕鬆地在上線前預覽程式碼和內容。
 
@@ -88,10 +87,6 @@ Node.js是JavaScript執行時期環境，用於處理專案的ui.frontendAEM子�
 
 在生產系統中，調度程式和http Apache伺服器將始終位於發佈實例AEM前面。 它們為系統提供快取和安全AEM服務，因此必須針對分派程式測試程式碼和內容更新。
 
-一旦您確定所有項目都經過測試並正常運作後，就可將程式碼更新推送至Cloud Manager的集中式Git儲存庫。
-
-將更新上傳到Cloud Manager後，即可使用Cloud Manager的CI/CD管道將AEM其部署為Cloud Service。
-
 ## 使用本機開發環境在本機預覽程式碼和內容{#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
 為了讓您的無頭專AEM案準備啟動，您需要確保專案的所有組成部分都正常運作。
@@ -106,23 +101,16 @@ Node.js是JavaScript執行時期環境，用於處理專案的ui.frontendAEM子�
 
 在設定本機開發環境後，您就可以在本機部署靜態Node伺服器，來模擬內容對React應用程式的服務。
 
-若要深入瞭解如何設定本機開發環境，以及內容預覽所需的所有相依性，請參閱「使用AEM Publish Service進行生產部署」（英文）[](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)。
-
-## 部署至生產{#deploy-to-production}
-
-在本機測試完所有程式碼和內容後，您就可開始使用進行生產部署AEM。
-
-您可以利用Cloud Manager CI/CD管道開始部署代碼，該管道在[此處](/help/implementing/deploying/overview.md)廣泛介紹。
+若要深入瞭解如何設定本端開發環境，以及內容預覽所需的所有相依性，請參閱[生產部署檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)。
 
 ## 準備您AEM的無頭應用程式上線{#prepare-your-aem-headless-application-for-golive}
 
-現在，您應該依照下列最AEM佳實務，讓無頭應用程式準備好啟動。
+現在，您應該依照下列最AEM佳實務，將無頭應用程式準備好啟動。
 
 ### 在啟動{#secure-and-scale-before-launch}之前，保護並縮放您的無頭應用程式
 
-1. 配置[基於令牌的驗證](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-1. 安全網頁掛接
-1. 設定快取和調整彈性
+1. 使用您的GraphQL請求配置[基於令牌的驗證](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
+1. 配置[Caching](/help/implementing/dispatcher/caching.md)。
 
 ### 模型結構與GraphQL輸出{#structure-vs-output}
 
@@ -133,8 +121,8 @@ Node.js是JavaScript執行時期環境，用於處理專案的ui.frontendAEM子�
 ### 最大化CDN快取點擊率{#maximize-cdn}
 
 * 請勿使用直接GraphQL查詢，除非您要從表面請求即時內容。
-   * 請改用持續查詢。
-   * 提供超過600秒的CDN TTL，讓CDN可快取它們。
+   * 盡可能使用持續查詢。
+   * 提供超過600秒的CDN TTL，讓CDN快取。
    * 可AEM以計算模型更改對現有查詢的影響。
 * 將JSON檔案/GraphQL查詢分割為低和高內容變更率，以減少CDN的用戶端流量並指派較高的TTL。 如此可將CDN與原始伺服器重新驗證JSON的程式碼減到最少。
 * 若要主動使CDN的內容無效，請使用「軟清除」。 這可讓CDN重新下載內容，而不會造成快取遺失。
@@ -146,6 +134,14 @@ Node.js是JavaScript執行時期環境，用於處理專案的ui.frontendAEM子�
 * 將用來裝載JSON和參考對象的網域數減到最少。
 * 利用`Last-modified-since`刷新資源。
 * 使用JSON檔案中的`_reference`輸出，即可開始下載資產，毋需剖析完整的JSON檔案。
+
+## 部署至生產{#deploy-to-production}
+
+一旦您確定所有項目都經過測試並正常運作後，您就可以將程式碼更新推送至Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)中的[集中式Git儲存庫。
+
+將更新上傳到Cloud Manager後，可以使用[Cloud Manager的CI/CD管線](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)將AEM其部署為Cloud Service。
+
+您可以利用Cloud Manager CI/CD管道開始部署代碼，該管道在[此處](/help/implementing/deploying/overview.md)廣泛介紹。
 
 ## 效能監控{#performance-monitoring}
 
@@ -207,16 +203,10 @@ Node.js是JavaScript執行時期環境，用於處理專案的ui.frontendAEM子�
 * 如何與無頭專案AEM一起上線。
 * 上線後該怎麼辦。
 
-您已啟動您的第一個AEM無頭專案，或現在已具備所需的一切知識。 幹得好！
-
-但店裡AEM的無頭店不必停在這裡。 您可能還記得在[旅程的「開始」部分](getting-started.md#integration-levels)中，我們簡要地討論了AEM，如何不僅支援無頭傳送和傳統的全棧模型，還支援結合兩者優點的混合模型。
-
-如果您需要這種彈性，請繼續進行此程式的選擇性附加部分[如何建立單頁應用程式(SPA)AEM。](create-spa.md)
-
 ## 其他資源 {#additional-resources}
 
-* [設定本地環AEM境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [作AEM為Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 * [部署為Cloud ServiceAEM概述](/help/implementing/deploying/overview.md)
+* [作AEM為Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [設定本地環AEM境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 * [使用Cloud Manager部署您的程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [將Cloud Manager Git儲存庫與外部Git儲存庫整合，並將項目部署AEM為Cloud Service](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
+* [將Cloud Manager Git儲存庫與外部Git儲存庫整合，並將項目部署AEM為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
