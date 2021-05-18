@@ -4,14 +4,13 @@ description: 在這部分的無頭開AEM發人員歷程中，瞭解無頭開AEM�
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
 source-wordcount: '3087'
 ht-degree: 0%
 
 ---
-
 
 # 開始使AEM用無頭Cloud Service{#getting-started}
 
@@ -44,13 +43,13 @@ ht-degree: 0%
 
 在定義您的無頭專案之AEM前，請務必瞭解一些基本AEM概念。
 
-### 作者實例{#author}
+### 作者實例 {#author}
 
 最簡單的AEM是，由作者實例和[publish實例](#publish)組成，可搭配運作以建立、管理和發佈您的內容。
 
 內容從作者實例開始。 您的內容作者可在此建立其內容。 作者環境提供多種工具，讓作者可建立、組織和重複使用其內容。
 
-### 發佈實例{#publish}
+### 發佈例項 {#publish}
 
 內容在作者例項中建立後，就必須發佈，才能供其他服務使用。 發佈例項包含所有已發佈的內容。
 
@@ -63,7 +62,8 @@ ht-degree: 0%
 在最簡單的層次上，建立數位體驗AEM需要下列步驟：
 
 1. 您的內容作者將在作者實例中建立您的無頭內容。
-1. 當此內容準備就緒時，就會複製到發佈實例。 然後可呼叫API以擷取此內容。
+1. 當此內容準備就緒時，就會複製到發佈實例。
+1. 然後可呼叫API以擷取此內容。
 
 AEM此技術基礎的無頭基礎提供強大的工具來管理下一節所述的無頭內容。](#aem-headless-basics)[
 
@@ -128,7 +128,7 @@ AEM此技術基礎的無頭基礎提供強大的工具來管理下一節所述�
 
 在開始無頭專案之前，有許多需AEM求。
 
-### 知識{#knowledge}
+### 知識 {#knowledge}
 
 * GraphQL
 * 使用React或Angular架SPA構進行創作的開發經驗
@@ -173,7 +173,7 @@ AEM此技術基礎的無頭基礎提供強大的工具來管理下一節所述�
 
 內容作者應牢記下列最佳實務。
 
-#### 本地化計畫{#localization}
+#### 本地化計畫 {#localization}
 
 在專案開始時規劃翻譯和當地語系化。 將「國際化專案經理」視為個別角色，負責定義哪些內容應翻譯，哪些內容應翻譯，哪些翻譯內容可由區域或本地內容製作者修改。
 
