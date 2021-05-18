@@ -3,26 +3,19 @@ title: 管理數位資產的中繼資料
 description: '瞭解中繼資料的類型，以及如何根據資產的中繼資料自動組織和處理資產。 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] '
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Metadata
+feature: 資產管理，中繼資料
 role: Business Practitioner,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
+source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1857'
 ht-degree: 3%
 
 ---
 
-
 # 管理數位資產的中繼資料{#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] 保留每個資產的中繼資料。它可讓資產的分類和組織更輕鬆，並協助尋找特定資產的人。 透過從上傳至[!DNL Experience Manager Assets]的檔案擷取中繼資料的功能，中繼資料管理與創意工作流程整合。 透過使用資產保留和管理中繼資料的能力，您可以根據資產的中繼資料自動組織及處理資產。
-
->[!MORELIKETHIS]
->
->* [XMP 中繼資料](xmp-metadata.md)
->* [如何編輯或新增中繼資料](meta-edit.md)
-
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -234,3 +227,9 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * 工作流程可以檢查影像是否有標題。 如果沒有，系統會通知您新增標題。
 * 工作流程可以檢查資產上的版權聲明是否允許散發。 因此，系統會將資產傳送至一或另一伺服器。
 * 工作流可以檢查沒有預先定義、強制性中繼資料的資產，或具有&#x200B;*invalid*&#x200B;中繼資料的資產。
+
+>[!MORELIKETHIS]
+>
+>* [XMP 中繼資料](xmp-metadata.md)
+* [如何編輯或新增中繼資料](meta-edit.md)
+
