@@ -5,10 +5,9 @@ breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 feature: 開發人員工具
 role: Developer, Architect
-translation-type: tm+mt
-source-git-commit: 77668ff0937c2af24d73da7f8d6b3c8956acb350
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '970'
 ht-degree: 33%
 
 ---
@@ -83,7 +82,6 @@ ht-degree: 33%
       + [如何透過資產API更新AEM您的內容](developing/headless-journey/update-your-content.md)
       + [如何將它整合在一起](developing/headless-journey/put-it-all-together.md)
       + [如何與無頭應用程式一起上線](developing/headless-journey/go-live.md)
-      + [貼文啟動](developing/headless-journey/post-launch.md)
       + [可選——如何使用](developing/headless-journey/create-spa.md)
    + [Headful and Headless in AEM](developing/headful-headless.md)
    + 完整AEM堆疊開發{#full-stack}
