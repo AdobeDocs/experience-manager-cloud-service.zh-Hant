@@ -2,16 +2,15 @@
 title: 大量匯入和匯出資產中繼資料
 description: 本文說明如何大量匯入和匯出中繼資料。
 contentOwner: AG
-feature: Metadata
+feature: 中繼資料
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: fb70a068-3ba3-4459-952d-79155d286c42
+source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '666'
 ht-degree: 10%
 
 ---
-
 
 # 大量匯入和匯出資產中繼資料{#import-and-export-asset-metadata-in-bulk}
 
@@ -19,7 +18,7 @@ AEM Assets可讓您使用CSV檔案大量匯入資產中繼資料。 您可以匯
 
 ## 匯入中繼資料{#import-metadata}
 
-中繼資料匯入是非同步的，不會影響系統效能。 同時更新多個資產的中繼資料可能會耗費大量資源，因為使用資產微XMP型服務進行回寫活動。 Adobe建議您在精簡伺服器使用期間規劃任何大量作業，以免影響其他使用者的效能。
+中繼資料匯入是非同步的，不會影響系統效能。 由於使用資產微服務的中繼資料回寫活動，因此同步更新多個資產的中繼資料可能會耗費大量資源。 Adobe建議您在精簡伺服器使用期間規劃任何大量作業，以免影響其他使用者的效能。
 
 >[!NOTE]
 >
