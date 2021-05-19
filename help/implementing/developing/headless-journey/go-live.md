@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 ## 到目前為止的故事{#story-so-far}
 
-在上一份無頭歷程的AEM檔案中，[如何將所有內容整合在一起——您的應用程式與您的無頭內容AEM](put-it-all-together.md)您學習了如何準備自己的無頭AEM專案上線，您現在應：
+在上一份無頭歷程的AEM檔案中，[如何透過AEM AssetsAPI更新您的內容](update-your-content.md)您已學會如何透過API更新您現有的無頭內AEM容，您現在應：
 
-* 瞭解上線的需求。
+* 瞭解AEM AssetsHTTP API。
 
-本文以這些基礎為基礎，讓您瞭解如何實際實作AEM無頭專案。
+本文以這些基礎為基礎，讓您瞭解如何準備您自己的無AEM頭專案上線。
 
 ## 目標 {#objective}
 
@@ -151,13 +151,13 @@ Node.js是JavaScript執行時期環境，用於處理專案的AEM`ui.frontend`�
 * 驗證當AEM前服務可用性狀態頁
 * 存取效能報告
    * 傳送效能
-      * 快速檢查呼叫數、快取速率、錯誤率、裝載流量
+      * CDN(Empetly)效能——檢查呼叫數、快取速率、錯誤率和裝載流量
       * 原始伺服器——呼叫數、錯誤率、CPU負載、裝載流量
    * 作者效能
       * 檢查使用者、請求和載入的數目
 * 存取應用程式和空間專用的效能報表
    * 伺服器啟動後，檢查一般量度是否為綠色／橘色／紅色，然後找出特定應用程式問題
-   * 開啟上方篩選至應用程式／空間的相同報表(例如Photoshop案頭、付費牆等)
+   * 在篩選到應用程式或空間的上方開啟相同的報表(例如Photoshop案頭、付費牆)
    * 使用Splunk記錄檔API存取服務和應用程式效能
    * 如有其他問題，請聯絡客戶支援。
 
@@ -181,15 +181,6 @@ Node.js是JavaScript執行時期環境，用於處理專案的AEM`ui.frontend`�
 * 記錄重制期刊的方式
 * 記錄期刊以
 * 以適當的優先順序AEM透過支援入口網站記錄問題
-
-## 下一個{#what-is-next}
-
-現在，您已完成這部分的無AEM頭開發人員旅程，您應：
-
-* 瞭解內AEM容複製和快取基礎知識。
-* 瞭解如何設定模擬無頭應用程式上線所需的工具。
-* 瞭解如何在啟動之前保護和擴充您的應用程式。
-* 瞭解如何監控效能和除錯問題。
 
 ## 旅程結束了嗎？{#journey-ends}
 
