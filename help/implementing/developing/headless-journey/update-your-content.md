@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
-translation-type: tm+mt
-source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -233,7 +232,7 @@ Assets REST API使用`/api/assets`端點，並需要資產路徑來存取它（�
 >* `/content/path/to/page` **需** 要使用選擇 `.model` 器。
 
 
-### 操作{#operation}
+### 操作 {#operation}
 
 HTTP方法確定要執行的操作：
 
@@ -322,7 +321,11 @@ HTTP方法確定要執行的操作：
 * Have experience with sample code and know how the API works in practice.
 -->
 
-您應繼AEM續無頭歷程，請閱讀[檔案](put-it-all-together.md)如何將一切整合在一起——無頭中的應用程式和您的內容&lt;a1/AEM>，以瞭解如何將無頭專案帶入現場並做好準備。
+<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+
+<!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
+
+您應繼AEM續無頭之旅，請先檢閱檔案[如何與無頭應用程式一起上線](go-live.md)，您將無頭專案實際上AEM線！
 
 [如何使用SPAAEM建立單頁應用程式(SPA)也將說明您如何使用SPAAEMEditor架構來建立可編輯的檔案，以及整合SPA外部，以視需要啟用編輯功能。](create-spa.md) 
 
