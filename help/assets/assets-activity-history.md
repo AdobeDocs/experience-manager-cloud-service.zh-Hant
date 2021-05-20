@@ -1,23 +1,22 @@
 ---
-title: 時間軸中的活動串流
-description: 本文說明如何在時間軸上顯示資產的活動記錄檔。
+title: 時間軸中的活動資料流
+description: 本文說明如何在時間軸上顯示資產的活動記錄。
 contentOwner: AG
-feature: Asset Reports,Asset Management
+feature: 資產報表，資產管理
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '213'
 ht-degree: 23%
 
 ---
 
-
 # 在活動流{#activity-stream-in-timeline}中查看資產操作日誌
 
-此功能會在時間軸上顯示資產的活動記錄。 如果您在[!DNL Experience Manager Assets]中執行下列任何與資產相關的作業，「活動串流」功能會更新時間軸以反映活動。
+此功能會顯示時間軸上資產的活動記錄。 如果您在[!DNL Experience Manager Assets]中執行下列任何資產相關操作，活動資料流功能會更新時間軸以反映活動。
 
-活動流中記錄了以下操作：
+活動資料流中記錄下列操作：
 
 * 建立
 * 刪除
@@ -32,9 +31,9 @@ ht-degree: 23%
 
 >[!NOTE]
 >
->暫時性工作流程不會顯示在時間軸中，因為不會儲存這些工作流程的歷史記錄資訊。
+>時間軸中不會顯示暫時性工作流程，因為不會儲存這些工作流程的歷史資訊。
 
-若要檢視活動串流，請對資產執行一或多個作業，選取資產，然後從GlobalNav清單中選擇&#x200B;**[!UICONTROL Timeline]**。
+若要檢視活動資料流，請對資產執行一或多個操作，選取資產，然後從GlobalNav清單中選擇&#x200B;**[!UICONTROL 時間軸]**。
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 
