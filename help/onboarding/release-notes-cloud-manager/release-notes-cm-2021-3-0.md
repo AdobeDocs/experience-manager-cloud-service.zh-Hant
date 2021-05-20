@@ -1,63 +1,62 @@
 ---
-title: Cloud Manager的發行說明，作AEM為Cloud Service版本2021.3.0
-description: Cloud Manager的發行說明，作AEM為Cloud Service版本2021.3.0
-feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4,feb7592e-7b41-43d0-84a1-e92d76a049b3
-translation-type: tm+mt
-source-git-commit: 388a21f7740a3a598f905fc433f54e37df799e6d
+title: AEM as aCloud Service中Cloud Manager的發行說明2021.3.0版
+description: AEM as aCloud Service中Cloud Manager的發行說明2021.3.0版
+feature: 發行資訊
+exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
+source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 2%
 
 ---
 
-# Adobe Experience ManagerCloud Manager的發行說明，Cloud Service2021.3.0 {#release-notes}
+# Adobe Experience Manager as aCloud Service2021.3.0 {#release-notes}中的Cloud Manager發行說明
 
-本頁概述了Cloud Manager的發行說明，AEM作為Cloud Service2021.3.0。
+本頁概述AEM as a 2021.3.0Cloud Service中Cloud Manager的發行說明。
 
 ## 發行日期 {#release-date}
 
-Cloud Manager作為2021.3.0Cloud ServiceAEM的發行日期為2021年3月11日。
+AEM as aCloud Service2021.3.0中的Cloud Manager發行日期為2021年3月11日。
 
 ## Cloud Manager {#cloud-manager}
 
 ### 新功能 {#what-is-new}
 
-* 具有[IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)和[自訂域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)的現有自訂域名配置的環境的客戶將看到有關其先前現有配置的消息，並能夠通過UI自助服務。
+* 若客戶的環境中已有[IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)和[自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)的先前自訂網域名稱設定，則會看到有關其先前現有設定的訊息，且將能透過UI自行服務。
 
-* 具備必要權限的使用者現在可以編輯程式，讓他們以自助方式進行下列作業：
-   * 將Sites解決方案新增至包含資產的現有計畫，反之亦然。
-   * 將網站或資產從既有的計畫中移除，同時包含網站和資產。
-   * 將第二個未使用的解決方案權益新增至現有的方案，或新增為新的方案。
+* 擁有必要權限的使用者現在可以編輯方案，讓他們能以自助方式執行下列作業：
+   * 使用資產將Sites解決方案新增至現有計畫，反之亦然。
+   * 從同時具有Sites和Assets的現有程式中移除Sites或Assets。
+   * 將第二個未使用的解決方案權利添加到現有程式或作為新程式添加。
 
-* **現AEM在，「Pipeline執** 行」和「活動」畫面都會顯示推播更新標籤。
+* **AEM Push** Updatelabel現在會針對Pipeline Execution和Activity畫面顯示。
 
-* 如果環境已休眠，但也有可用的更AEM新，則&#x200B;**已休眠**&#x200B;狀態將優先於&#x200B;**可用更新**。
+* 如果環境已休眠，但也有AEM更新可用，則&#x200B;**已休眠**&#x200B;狀態將優先於&#x200B;**可用更新**。
 
-* 現在，在導覽至Unified Shell的「使用者設定檔」圖示（右上角）後，使用者可以選取「檢視雲端管理員角色」選項，以查看其Cloud Manager角色。
+* 使用者現在可以在導覽至統一殼層的「使用者設定檔」圖示（右上）後，選取「檢視Cloud Manager角色」選項，查看其Cloud Manager角色。
 
-* **申請批准**&#x200B;標籤已重新標籤至&#x200B;**生產批准**，以更清楚明瞭。
+* 標籤&#x200B;**申請核准**&#x200B;已重新標示為&#x200B;**生產核准**，以更清楚明瞭。
 
-* **版本**&#x200B;標籤已重新標籤至「生產管線」執行畫面中的&#x200B;**Git Tag**。
+* 在「生產管道」執行畫面中，**Version**&#x200B;標籤已重新標示為&#x200B;**Git Tag**。
 
-* 當重要量度不符合定義的臨界值時，定義行為的標籤已重新標籤，以反映其真實行為：**取消立即**&#x200B;和&#x200B;**批准立即**。
+* 當重要量度不符合定義的臨界值時，定義行為的標籤已重新標示，以反映其真實行為：**取消立即**&#x200B;和&#x200B;**立即批准**。
 
-* 類別和方法取代清單已根據Cloud ServiceSDK的`2021.3.4997.20210303T022849Z-210225`版AEM本更新。
+* 類別和方法取代清單已根據AEMCloud ServiceSDK的`2021.3.4997.20210303T022849Z-210225`版本更新。
 
 * Cloud Manager生產管道現在將包含[自訂UI測試](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)功能。
 
 ### 錯誤修正 {#bug-fixes}
 
-* 在推播升級期間，在某些情況下會略過套AEM件版本。
+* 在AEM推送升級期間，在某些情況下會略過套件版本設定。
 
-* 在將包嵌入其他包時，未正確發現某些質量問題。
+* 將包嵌入其他包時，未正確發現某些質量問題。
 
-* 在模糊的情況下，開啟「添加程式」對話框時生成的預設程式名稱可能是現有程式名稱的副本。
+* 在模糊的情況下，開啟「添加程式」對話框時生成的預設程式名稱可能與現有程式名稱重複。
 
-* 有時，如果用戶在啟動管線後立即導航離開管線執行頁面，則會顯示一條錯誤消息，指出操作失敗，儘管實際上執行開始。
+* 有時，如果使用者在啟動管道後立即離開管道執行頁面進行導覽，雖然實際上會開始執行，但會顯示錯誤訊息，指出動作失敗。
 
-* 當客戶建置導致無效包時，不必要地重新啟動建置步驟。
+* 當客戶建置導致無效的套件時，建置步驟會不必要地重新啟動。
 
-* 有時，即使未部署IP允許清單，用戶也會看到該配置旁邊的綠色「活動」狀態。
+* 有時，即使未部署該設定，使用者仍可能會在IP允許清單旁看到綠色的「作用中」狀態。
 
 * 所有現有的生產管道都會透過體驗稽核步驟自動啟用。
