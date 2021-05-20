@@ -1,14 +1,13 @@
 ---
 title: 非同步作業
 description: Adobe Experience Manager 能以非同步方式完成部分耗用大量資源的工作，實現效能最佳化。
-translation-type: tm+mt
-source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
+exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 
 ---
-
 
 # 非同步操作 {#asynchronous-operations}
 
@@ -144,6 +143,6 @@ AEM 每天 01:00 會執行清除作業，將超過一天的已完成非同步作
 >[!MORELIKETHIS]
 >
 >* [建立及組織頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
->* [大量匯入和匯出資產的中繼資料](/help/assets/metadata-import-export.md)。
->* [透過連線資產共用遠端部署的 DAM 資產](/help/assets/use-assets-across-connected-assets-instances.md)。
+* [大量匯入和匯出資產的中繼資料](/help/assets/metadata-import-export.md)。
+* [透過連線資產共用遠端部署的 DAM 資產](/help/assets/use-assets-across-connected-assets-instances.md)。
 
