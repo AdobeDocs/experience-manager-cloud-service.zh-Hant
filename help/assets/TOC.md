@@ -4,24 +4,23 @@ user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
-translation-type: tm+mt
 source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '480'
 ht-degree: 71%
 
 ---
 
 
-# [!DNL Assets] 指南  {#assets}
+# [!DNL Assets] 指南 {#assets}
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [概覽與新增功能](overview.md)
-+ [As  [!DNL Assets] a的顯著變更 [!DNL Cloud Service]](assets-cloud-changes.md)
++ [ [!DNL Assets] 作為a [!DNL Cloud Service]的重大變更](assets-cloud-changes.md)
 + [[!DNL Assets] 架構](architecture.md)
 + [支援的檔案格式](file-format-support.md)
 + [資產微服務概覽](asset-microservices-overview.md)
-+ [無障礙環境支援 [!DNL Assets]](accessibility.md)
++ [ [!DNL Assets]中的輔助功能](accessibility.md)
 + 管理數位資產{#manage}
    + [共用資產](share-assets.md)
    + [監控活動和 DAM 任務](assets-activity-history.md)
@@ -29,13 +28,13 @@ ht-degree: 71%
    + [新增和上傳資產](add-assets.md)
    + [搜尋資產](search-assets.md)
    + [資產管理常見任務](manage-digital-assets.md)
-   + [影像的智慧型標籤](smart-tags.md)
+   + [影像智慧標籤](smart-tags.md)
    + [智慧標籤您的視訊資產](smart-tags-video-assets.md)
    + [如何組織資產](organize-assets.md)
-   + [使 [!DNL Adobe Stock] 用資AEM產](aem-assets-adobe-stock.md)
+   + [在AEM中使用 [!DNL Adobe Stock] 資產](aem-assets-adobe-stock.md)
    + [管理集合](manage-collections.md)
    + [中繼資料概覽](manage-metadata.md)
-   + [與 [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
+   + [與 [!DNL Adobe Creative Cloud]整合](aem-cc-integration-best-practices.md)
    + [如何新增或編輯中繼資料](meta-edit.md)
    + [查看資料夾資產和集合](bulk-approval.md)
    + [使用和設定 Assets Insights](assets-insights.md)
@@ -50,13 +49,13 @@ ht-degree: 71%
    + [開發人員檔案和API參考](developer-reference-material-apis.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
    + [使用影像和視訊設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [多語言資產與翻譯](translate-assets.md)
+   + [多語言資產和翻譯](translate-assets.md)
    + [搜尋 Facet](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
    + [資產HTTP API中的內容片段支援](content-fragments/assets-api-content-fragments.md)
-   + [內AEM容片段的GraphQL API](content-fragments/graphql-api-content-fragments.md)
-   + [內容片段的AEM遠程GraphQL查詢驗證](content-fragments/graphql-authentication-content-fragments.md)
-   + [含內AEM容片段的GraphQL API —— 內容與查詢範例](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [AEM GraphQL API，適用於內容片段](content-fragments/graphql-api-content-fragments.md)
+   + [內容片段的遠端AEM GraphQL查詢驗證](content-fragments/graphql-authentication-content-fragments.md)
+   + [AEM GraphQL API，含內容片段 — 範例內容與查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [連線資產](use-assets-across-connected-assets-instances.md)
    + [資產報表](asset-reports.md)
    + [階層式中繼資料](cascading-metadata.md)
@@ -64,13 +63,13 @@ ht-degree: 71%
    + [MediaLibrary 功能](medialibrary.md)
    + [匯入和匯出資產中繼資料](metadata-import-export.md)
 + 共用與發佈資產 {#brand-portal}
-   + [配 [!DNL Assets] 置 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [使用 [!DNL Brand Portal]配置 [!DNL Assets] ](configure-aem-assets-with-brand-portal.md)
    + [將資產發佈至 [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [將資產發 [!DNL Brand Portal] 布至 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
+   + [從發佈資 [!DNL Brand Portal] 產到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + 內容片段 {#content-fragments}
    + [使用內容片段](content-fragments/content-fragments.md)
-   + [使用內容片段和GraphQL進行無頭傳送](content-fragments/content-fragments-graphql.md)
-   + [為實例啟用內容片段功能](content-fragments/content-fragments-configuration-browser.md)
+   + [以內容片段和GraphQL無周邊傳送](content-fragments/content-fragments-graphql.md)
+   + [為您的執行個體啟用內容片段功能](content-fragments/content-fragments-configuration-browser.md)
    + [內容片段模型](content-fragments/content-fragments-models.md)
    + [管理內容片段](content-fragments/content-fragments-managing.md)
    + [變化 - 編寫片段內容](content-fragments/content-fragments-variations.md)
@@ -79,7 +78,7 @@ ht-degree: 71%
    + [內容片段 - 刪除考量事項](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
    + [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   + [預覽- JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
+   + [預覽 — JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
 + 動態媒體 {#dynamicmedia}
    + [Experience League 的 Dynamic Media 電子報](dynamic-media/dynamic-media-newsletter.md)
    + [建立 Dynamic Media](dynamic-media/administering-dynamic-media.md)
@@ -97,8 +96,8 @@ ht-degree: 71%
    + [管理 Dynamic Media 檢視器預設集](dynamic-media/managing-viewer-presets.md)
    + [套用 Dynamic Media 檢視器預設集](dynamic-media/viewer-presets.md)
    + [批次集預設集](dynamic-media/batch-set-presets-dm.md)
-   + [通過Dynamic Media使CDN快取失效](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [利用Dynamic MediaClassic對CDN快取進行失效](dynamic-media/invalidate-cdn-cache-dm-classic.md)
+   + [透過Dynamic Media使CDN快取失效](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [透過Dynamic Media Classic使CDN快取失效](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [智慧型影像](dynamic-media/imaging-faq.md)
    + [傳送 Dynamic Media 資產](dynamic-media/delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中啟用超連結保護](dynamic-media/hotlink-protection.md)
