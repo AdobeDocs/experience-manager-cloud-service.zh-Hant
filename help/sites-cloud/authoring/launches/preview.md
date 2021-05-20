@@ -1,25 +1,24 @@
 ---
-title: 使用您的Launch預覽未來
-description: 使用「時間彎曲」，您可以根據啟動來檢視您的內容。
-translation-type: tm+mt
-source-git-commit: a0ff556098d2dc9a2734401fe180d25c0f78a5a6
+title: 使用Launch預覽未來
+description: 透過「時間扭曲」，您可以根據啟動來檢視內容。
+exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
 
 ---
 
+# 使用時間扭曲預覽{#preview-with-timewarp}
 
-# 使用Timewarp {#preview-with-timewarp}預覽
+[](/help/sites-cloud/authoring/features/page-versions.md#timewarp) Timewarp可搭配Launch中也包含的頁面使用：
 
-[Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) 可與同時包含在啟動中的頁面搭配使用：
-
-1. 從頁面編輯器中選擇&#x200B;**Timewarp**模式時，將要求您輸入日期。 選擇啟動的升級日期之後的日期：
+1. 從頁面編輯器選取&#x200B;**Timewarp**模式時，會要求您輸入日期。 選取啟動促銷日期之後的日期：
    ![從頁面編輯器導覽啟動](/help/sites-cloud/authoring/assets/launches-timewarp-01.png)
 
-1. 將會顯示該日期適當的內容：
+1. 將顯示當天適當的內容：
    ![從頁面編輯器導覽啟動](/help/sites-cloud/authoring/assets/launches-timewarp-02.png)
 
    >[!NOTE]
    >
-   >無論啟動的即時日期是最接近——和之前——的日期，都適用，並會顯示其內容。
+   >任何啟動的上線日期最接近 — 和之前的日期，都將適用選取的日期，並顯示其內容。
