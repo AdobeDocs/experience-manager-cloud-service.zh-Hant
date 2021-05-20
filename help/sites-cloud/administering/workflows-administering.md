@@ -1,31 +1,30 @@
 ---
 title: 管理工作流程例項
-description: 瞭解如何管理工作流程例項
-feature: Administering
+description: 了解如何管理工作流程例項
+feature: 管理
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '935'
 ht-degree: 1%
 
 ---
 
-
 # 管理工作流程例項 {#administering-workflow-instances}
 
-工作流控制台提供多種工具來管理工作流實例，以確保它們正如預期執行。
+工作流程控制台提供數種管理工作流程例項的工具，以確保這些例項可如預期般執行。
 
-管理工作流程時可使用多種控制台。 使用[全域導覽](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)開啟&#x200B;**工具**&#x200B;窗格，然後選取&#x200B;**工作流程**:
+管理工作流程時可使用多種主控台。 使用[全局導航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)開啟&#x200B;**工具**&#x200B;窗格，然後選擇&#x200B;**工作流**:
 
-* **型號**:管理工作流程定義
-* **例項**:檢視並管理執行中的工作流程例項
-* **啟動器**:管理啟動工作流程的方式
-* **封存**:檢視成功完成之工作流程的歷史記錄
-* **失敗**:檢視已完成但有錯誤的工作流程記錄
-* **自動指派**:設定範本的自動指派工作流程
+* **模型**:管理工作流程定義
+* **例項**:檢視及管理執行中的工作流程例項
+* **啟動器**:管理工作流程的啟動方式
+* **封存**:檢視成功完成的工作流程記錄
+* **失敗**:檢視已完成但有錯誤的工作流程的歷史記錄
+* **自動指派**:設定為範本自動指派工作流程
 
-## 監視工作流實例的狀態{#monitoring-the-status-of-workflow-instances}
+## 監控工作流實例的狀態{#monitoring-the-status-of-workflow-instances}
 
 1. 使用導航選擇&#x200B;**工具**，然後選擇&#x200B;**工作流**。
 1. 選擇&#x200B;**實例**&#x200B;以顯示當前正在進行的工作流實例清單。
@@ -36,19 +35,19 @@ ht-degree: 1%
 ## 搜索工作流實例{#search-workflow-instances}
 
 1. 使用導航選擇&#x200B;**工具**，然後選擇&#x200B;**工作流**。
-1. 選擇&#x200B;**實例**&#x200B;以顯示當前正在進行的工作流實例清單。 在上邊欄的左角，選擇&#x200B;**Filters**。 或者，您也可以使用按鍵按鍵alt+1。 將顯示以下對話框：
+1. 選擇&#x200B;**實例**&#x200B;以顯示當前正在進行的工作流實例清單。 在頂端邊欄的左角，選取「**篩選器**」。 或者，您可以使用鍵擊alt+1。 將顯示以下對話框：
 
    ![wf-99-1](/help/sites-cloud/administering/assets/wf-99-1.png)
 
-1. 在「篩選」對話方塊中，選取工作流程搜尋准則。 您可以根據以下輸入進行搜尋：
+1. 在「篩選」對話方塊中，選取工作流程搜尋條件。 您可以根據以下輸入進行搜尋：
 
-   * 裝載路徑：選擇特定路徑
-   * 工作流程模型：選擇工作流模型
-   * 受託人：選擇工作流程受託人
+   * 裝載路徑：選取特定路徑
+   * 工作流模型：選擇工作流模型
+   * 受託人：選擇工作流受託人
    * 類型：任務、工作流項或工作流失敗
    * 任務狀態：活動、完成或終止
-   * 我身在何處：擁有者AND受託人，僅限擁有者，僅限受託人
-   * 開始日期：開始日期在指定日期之前或之後
+   * 我的位置：OWNER AND Assignee，僅限Owner，僅受託人
+   * 開始日期：指定日期之前或之後的開始日期
    * 結束日期：指定日期之前或之後的結束日期
    * 到期日：指定日期之前或之後的到期日
    * 更新日期：在指定日期之前或之後更新日期
@@ -60,11 +59,11 @@ ht-degree: 1%
 
    ![wf-96-1](/help/sites-cloud/administering/assets/wf-96-1.png)
 
-1. 選擇特定項目，然後視需要使用&#x200B;**Terminate**、**Suspend**&#x200B;或&#x200B;**Resume**;確認及／或需要進一步詳細資訊：
+1. 選擇特定項目，然後根據需要使用&#x200B;**終止**、**掛起**&#x200B;或&#x200B;**恢復**;確認，和/或更多詳細資訊是必要的：
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
-## 查看歸檔工作流{#viewing-archived-workflows}
+## 查看存檔的工作流{#viewing-archived-workflows}
 
 1. 使用導航選擇&#x200B;**工具**，然後選擇&#x200B;**工作流**。
 
@@ -73,84 +72,84 @@ ht-degree: 1%
    ![wf-98](/help/sites-cloud/administering/assets/wf-98.png)
 
    >[!NOTE]
-   >中止狀態被視為由於用戶操作而成功終止；例如：
+   >中止狀態被視為成功終止，因為它是由於用戶操作而發生的；例如：
    >
-   >* 使用&#x200B;**Terminate**&#x200B;動作
+   >* **終止**&#x200B;操作的使用
    >* 當受工作流約束的頁面被（強制）刪除時，工作流將被終止
 
 
-1. 選擇特定項目，然後選擇&#x200B;**開啟歷史記錄**&#x200B;以查看詳細資訊：
+1. 選擇特定項目，然後選擇&#x200B;**開啟歷史記錄**&#x200B;以查看更多詳細資訊：
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
 
-## 修正工作流程例項失敗{#fixing-workflow-instance-failures}
+## 修正工作流實例失敗{#fixing-workflow-instance-failures}
 
-當工作流失AEM敗時，提供&#x200B;**Failures**&#x200B;控制台，允許您在處理原始原因後調查並採取適當的操作：
+當工作流失敗時，AEM會提供&#x200B;**Failures**&#x200B;控制台，讓您在處理原始原因後調查並採取適當動作：
 
 * **失敗詳**
-細資料開啟視窗以顯示 
-**故障消息**、 **** 步驟和 **故障棧**。
+細資訊開啟一個窗口以顯示 
+**失敗訊息**、 **** 步驟 **和失敗堆疊**。
 
-* **開啟歷**
-史記錄顯示工作流程歷史記錄的詳細資料。
+* **開啟**
+歷史記錄顯示工作流歷史記錄的詳細資訊。
 
-* **重試** 步驟再次執行指令碼步驟元件實例。修正原始錯誤的原因後，請使用「重試步驟」命令。 例如，在修正「處理步驟」執行之指令碼中的錯誤後，請重試該步驟。
-* **終** 止如果錯誤導致工作流不可調和的情況，則終止工作流。例如，工作流可以依賴於環境條件，如儲存庫中對工作流實例不再有效的資訊。
-* **終止和重** 試與 **** 終止類似，只不過新的工作流程例項是使用原始裝載、標題和說明啟動的。
+* **重試** 步驟再次執行指令碼步驟元件實例。修正了原始錯誤的原因後，請使用「重試步驟」命令。 例如，在您修正了「處理步驟」所執行指令碼中的錯誤後，請重試該步驟。
+* **** 終止如果錯誤導致工作流不可調解的情況，則終止工作流。例如，工作流可以依賴環境條件，例如對工作流實例不再有效的儲存庫中的資訊。
+* **終止和重** 試類似 **** 於終止，只是使用原始裝載、標題和說明啟動了新的工作流實例。
 
-若要調查失敗，然後在之後繼續或終止工作流程，請執行下列步驟：
+要調查失敗，然後恢復或之後終止工作流，請執行以下步驟：
 
 1. 使用導航選擇&#x200B;**工具**，然後選擇&#x200B;**工作流**。
 
-1. 選擇&#x200B;**失敗**&#x200B;以顯示未成功完成的工作流實例清單。
+1. 選擇&#x200B;**Failures**&#x200B;以顯示未成功完成的工作流實例清單。
 1. 選擇特定項目，然後選擇相應的操作：
 
    ![wf-47](/help/sites-cloud/administering/assets/wf-47.png)
 
 ## 定期清除工作流實例{#regular-purging-of-workflow-instances}
 
-最小化工作流實例數可提高工作流引擎的效能，因此您可以定期從儲存庫中清除已完成或正在運行的工作流實例。
+將工作流實例數減到最少會提高工作流引擎的效能，因此您可以定期從儲存庫中清除已完成或正在運行的工作流實例。
 
-配置&#x200B;**Adobe花崗岩工作流清除配置**&#x200B;以根據工作流實例的年齡和狀態來清除工作流實例。 您也可以清除所有模型或特定模型的工作流實例。
+配置&#x200B;**AdobeGranite工作流清除配置**&#x200B;以根據其年齡和狀態清除工作流實例。 您也可以清除所有模型或特定模型的工作流實例。
 
-您也可以建立服務的多個配置，以清除滿足不同標準的工作流實例。 例如，建立設定，當特定工作流程模型的執行時間比預期長時，會清除這些例項。 建立另一個配置，該配置在特定天數後清除所有已完成的工作流，以最小化儲存庫的大小。
+您也可以建立服務的多個設定，以清除滿足不同標準的工作流實例。 例如，建立設定，在特定工作流程模型的執行個體執行時間長於預期時間時清除這些例項。 建立另一個設定，該設定在特定天數後清除所有已完成的工作流程，以將存放庫的大小降至最低。
 
-要配置服務，可以配置OSGi配置檔案，請參閱[ OSGi配置檔案](/help/implementing/deploying/configuring-osgi.md)。 下表說明了這兩種方法所需的屬性。
+要配置服務，可以配置OSGi配置檔案，請參閱[OSGi配置檔案](/help/implementing/deploying/configuring-osgi.md)。 下表說明了任何一種方法所需的屬性。
 
 >[!NOTE]
->要將配置添加到儲存庫，服務PID為：
+>若要將設定新增至存放庫，服務PID為：
 >`com.adobe.granite.workflow.purge.Scheduler`
->由於服務是工廠服務，`sling:OsgiConfig`節點的名稱需要一個標識符尾碼，例如：
+>由於服務是工廠服務，`sling:OsgiConfig`節點的名稱需要標識符尾碼，例如：
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
 <table>
  <tbody>
   <tr>
-   <th>屬性名稱（Web控制台）</th>
+   <th>屬性名稱（Web主控台）</th>
    <th>OSGi屬性名稱</th>
    <th>說明</th>
   </tr>
   <tr>
    <td>工作名稱</td>
    <td>scheduledpurge.name</td>
-   <td>計劃清除的描述性名稱。</td>
+   <td>排程清除的描述性名稱。</td>
   </tr>
   <tr>
    <td>工作流程狀態</td>
    <td>scheduledpurge.workflowStatus</td>
    <td><p>要清除的工作流實例的狀態。 下列值有效：</p>
     <ul>
-     <li>完成：已完成的工作流實例將被清除。</li>
-     <li>正在運行：執行中的工作流程例項會被清除。</li>
+     <li>已完成：已完成的工作流實例將被清除。</li>
+     <li>正在運行：正在執行的工作流實例將被清除。</li>
     </ul> </td>
   </tr>
   <tr>
    <td>要清除的模型</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>要清除的工作流模型的ID。 ID是模型節點的路徑，例如：<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br />指定不值來清除所有工作流模型的實例。</p> <p>要指定多個型號，請按一下Web控制台中的+按鈕。 </p> </td>
+   <td><p>要清除的工作流模型的ID。 ID是模型節點的路徑，例如：<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br />指定不要清除所有工作流模型的實例的值。</p> <p>若要指定多個模型，請按一下Web控制台中的+按鈕。 </p> </td>
   </tr>
   <tr>
-   <td>工作流程時代</td>
+   <td>工作流程年齡</td>
    <td>scheduledpurge.daysold</td>
    <td>要清除的工作流實例的年齡（以天為單位）。</td>
   </tr>
@@ -159,13 +158,12 @@ ht-degree: 1%
 
 ## 設定收件箱的最大大小{#setting-the-maximum-size-of-the-inbox}
 
-通過配置&#x200B;**AdobeGranite Workflow Service** ，可以設定收件箱的最大大小，請參閱[向儲存庫](/help/implementing/deploying/configuring-osgi.md)添加OSGi配置。 下表說明您所配置的屬性。
+您可以設定&#x200B;**AdobeGranite工作流服務**&#x200B;來設定收件匣的最大大小，請參閱將OSGi設定新增至存放庫](/help/implementing/deploying/configuring-osgi.md)。 [下表說明了您配置的屬性。
 
 >[!NOTE]
->要將配置添加到儲存庫，服務PID為：
+>若要將設定新增至存放庫，服務PID為：
 >`com.adobe.granite.workflow.core.WorkflowSessionFactory`。
 
-| 屬性名稱（Web控制台） | OSGi屬性名稱 |
+| 屬性名稱（Web主控台） | OSGi屬性名稱 |
 |---|---|
 | 最大收件箱查詢大小 | granite.workflow.inboxQuerySize |
-
