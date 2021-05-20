@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
+source-git-commit: bc717c544bd4f0449d358b831a5132f85fa85e86
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1818'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Node.js是JavaScript執行階段環境，用於搭配AEM專案`ui.frontend`子�
 
 * **內部使** 用者可在Author服務中建立、管理和預覽內容。
 
-* **發佈服** 務被視為「即時」環境，且通常是使用者與之互動的環境。內容在Author服務上經過編輯和核准後，會分發至Publish服務。 AEM無頭式應用程式最常見的部署模式是讓生產版本的應用程式連線至AEM發佈服務。
+* **發佈服** 務被視為「即時」環境，且通常是使用者與之互動的環境。內容經過編輯並套用至Author服務後，會分發至Publish服務。 AEM無頭式應用程式最常見的部署模式是讓生產版本的應用程式連線至AEM發佈服務。
 
 * **Dispatcher** 是一種靜態Web伺服器，可與AEM Dispatcher模組搭配使用。它會快取由發佈例項產生的網頁，以提升效能。
 
@@ -99,11 +99,11 @@ Node.js是JavaScript執行階段環境，用於搭配AEM專案`ui.frontend`子�
 1. 本機AEM執行階段 — 用於從AEM專案部署程式碼的AEM製作與發佈服務的本機版本
 1. 本機Dispatcher執行階段 — 包含Dispatcher模組的Apache httpd網站伺服器的本機版本
 
-設定本機開發環境後，您就可以在本機部署靜態節點伺服器，以模擬提供給React應用程式的內容。
+設定本機開發環境後，您就可以在本機部署靜態節點伺服器，以模擬為React應用程式提供內容。
 
 若要深入了解如何設定本機開發環境，以及內容預覽所需的所有相依性，請參閱[生產部署檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)。
 
-## 準備AEM無頭應用程式以投入使用{#prepare-your-aem-headless-application-for-golive}
+## 準備AEM Headless應用程式以上線{#prepare-your-aem-headless-application-for-golive}
 
 現在，您可以遵循以下概述的最佳實務，為您的AEM無頭應用程式做好啟動準備。
 
@@ -156,9 +156,9 @@ Node.js是JavaScript執行階段環境，用於搭配AEM專案`ui.frontend`子�
    * 作者效能
       * 檢查使用者、請求和載入數量
 * 訪問特定於應用程式和空間的效能報告
-   * 伺服器上線後，檢查一般量度是否為綠色/橙色/紅色，然後找出特定的應用程式問題
-   * 開啟上方篩選至應用程式或空間的相同報表(例如Photoshop案頭、付費牆)
-   * 使用Splunk日誌API訪問服務和應用程式效能
+   * 伺服器開機後，檢查一般量度是否為綠色/橙色/紅色，然後找出特定的應用程式問題
+   * 開啟上述報表，但將其篩選至應用程式或空間(例如Photoshop案頭、付費牆)
+   * [使用Splunk日誌](/help/implementing/developing/introduction/logging.md#splunk-logs) API訪問服務和應用程式效能
    * 如有其他問題，請聯絡客戶支援。
 
 ## 疑難排解 {#troubleshooting}
@@ -169,7 +169,7 @@ Node.js是JavaScript執行階段環境，用於搭配AEM專案`ui.frontend`子�
 
 * 使用應用程式的預覽版本驗證功能和效能
 * 使用應用程式的生產版本驗證功能和效能
-* 使用內容片段編輯器的JSON預覽進行驗證
+* 使用內容片段編輯器的[ JSON預覽](/help/assets/content-fragments/content-fragments-json-preview.md)進行驗證
 * Inspect用戶端應用程式中的JSON，以檢查用戶端應用程式是否存在或傳送問題
 * Inspect JSON使用GraphQL來檢查是否有與快取內容或AEM相關的問題
 
@@ -180,7 +180,7 @@ Node.js是JavaScript執行階段環境，用於搭配AEM專案`ui.frontend`子�
 * 如有必要，請拍攝問題的螢幕截圖
 * 記錄重現問題的方法
 * 記錄問題用重制的內容
-* 透過AEM支援入口網站以適當優先順序記錄問題
+* 透過AEM支援入口網站，以應用程式適當的優先順序記錄問題
 
 ## 歷程結束了，還是結束了？{#journey-ends}
 
