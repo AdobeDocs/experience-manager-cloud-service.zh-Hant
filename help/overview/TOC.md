@@ -5,7 +5,6 @@ breadcrumb-title: 概觀指南
 user-guide-description: 如需 Experience Manager as a Cloud Service 綜覽，包括簡介、術語等等，請由此開始。
 feature: 發行資訊
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '62'
