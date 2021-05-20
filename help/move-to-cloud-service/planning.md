@@ -1,22 +1,21 @@
 ---
 title: 規劃階段
 description: 規劃階段
-translation-type: tm+mt
-source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
+exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 91%
 
 ---
 
-
 # 規劃 {#planning-phase}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
->title="規劃您的轉換"
+>title="規劃您的轉變"
 >abstract="在展開轉換至 Cloud Service 的過程前，您應該先熟悉 AEM as a Cloud Service、檢視針對其採取的重大變更，並檢視已遭取代或淘汰的功能。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="最佳實務分析器"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer"
 
 在展開轉換至 Cloud Service 的過程前，您應該先熟悉 AEM as a Cloud Service、檢視針對其採取的重大變更，並檢視已遭取代或淘汰的功能。
 
@@ -46,7 +45,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 您必須對照重大變更和過時的功能，對目前的 AEM 原始碼進行綜合評估，以便判斷轉換過程中預期的投入程度。
 
-您可以在目前的AEM版本上執行「最佳實務分析器」，以加速評估步驟。 有關詳細資訊，請參閱[ Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)。
+您可以在目前的AEM版本上執行Best Practices Analyzer，以加速評估步驟。 有關更多詳細資訊，請參閱[Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)。
 
 >[!NOTE]
 >如果您已經能存取 Cloud Manager 和雲端服務環境，建議您在 Cloud Manager 品質管線中執行目前的程式碼，評估需針對原始碼採取哪些變更，以便與雲端服務相容。
@@ -60,4 +59,3 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 如果您先前尚未建立關鍵績效指標 (KPI)，我們建議您為 Adobe Experience Manager (AEM) 實作建立 KPI，協助您的團隊專注於最重要的事項。
 
 請參考[開發 KPI](https://guided.adobe.com/welcome/aem/part6.html)，了解如何為您的企業目標選擇正確的 KPI。
-
