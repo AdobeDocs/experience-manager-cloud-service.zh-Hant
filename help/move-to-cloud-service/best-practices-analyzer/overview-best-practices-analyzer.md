@@ -1,31 +1,30 @@
 ---
-title: 最佳實務分析器概述
-description: 最佳實務分析器概述
-translation-type: tm+mt
-source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
+title: Best Practices Analyzer概述
+description: Best Practices Analyzer概述
+exl-id: 2c45f527-3bcd-489b-a3be-b5c6f371429e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 29%
 
 ---
 
-
 # 概覽 {#overview-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
->title="最佳實務分析器總覽"
->abstract="The Best Practices Analyzer provides an assessment of your current AEM implementation by indiging areas not following AEM best practices. 此外，也提供採用AEM最佳實務之後續步驟的指引。 此外，它還有助於加速評估準備程度的流程，以便從現有的Adobe Experience Manager(AEM)部署移轉至AEM做為雲端服務。"
+>title="Best Practices Analyzer概述"
+>abstract="Best Practices Analyzer會指出未遵循AEM最佳實務的區域，以評估您目前的AEM實作。 它也提供採用AEM最佳實務的後續步驟指引。 此外，還有助於加速評估從現有Adobe Experience Manager(AEM)部署移轉至AEM作為Cloud Service的準備程式。"
 
-The Best Practices Analyzer provides an assessment of your current AEM implementation by indiging areas not following AEM best practices. 此外，也提供採用AEM最佳實務之後續步驟的指引。 此外，它還有助於加速評估準備程度的流程，以便從現有的Adobe Experience Manager(AEM)部署移轉至AEM做為雲端服務。
+Best Practices Analyzer會指出未遵循AEM最佳實務的區域，以評估您目前的AEM實作。 它也提供採用AEM最佳實務的後續步驟指引。 此外，還有助於加速評估從現有Adobe Experience Manager(AEM)部署移轉至AEM作為Cloud Service的準備程式。
 
 此工具會產生一份報表以識別可能重構的部分，這是轉換為 AEM as a Cloud Service 的第一步。
 
-## 最佳做法分析器報告{#bpa-report}
+## Best Practices Analyzer報表{#bpa-report}
 
-「最佳做法分析器報告」用於獲得對一般升級準備情況的高級瞭解。 此報表包含在成功部署至 AEM as a Cloud Service 之前必須解決的問題類別。
+Best Practices Analyzer報表可用來取得對一般升級整備程度的高層了解。 此報表包含在成功部署至 AEM as a Cloud Service 之前必須解決的問題類別。
 
-「Best Practices Analyzer」報告包括以下類別：
+Best Practices Analyzer報表包含下列類別：
 
 * 必須重構的應用程式功能
 * 必須移至支援位置的存放庫項目
@@ -33,9 +32,9 @@ The Best Practices Analyzer provides an assessment of your current AEM implement
 * 部署和設定問題
 * 已由新功能取代，或 AEM as a Cloud Service 目前不支援的 AEM 6.x 功能
 
-有關這些類別的其他資訊以及與這些類別相關的可能影響和解決方案，可通過「最佳做法分析器報告」中的連結提供。
+有關這些類別和可能的影響以及與這些類別關聯的解決方案的其他資訊，可通過Best Practices Analyzer報表中的連結提供。
 
 >[!NOTE]
->「最佳實務分析器報告」提供必須手動收集和評估的資訊，以加速評估轉換為AEM（雲端服務）所需時間和成本的程式。
+>「最佳實務分析器報表」可提供您原本必須手動收集和評估的資訊，以加速評估轉換為AEM作為Cloud Service所需的時間和成本。
 
-您也可以從AEM例項下載「最佳實務分析器」報表。 有關詳細資訊，請參閱[查看最佳實踐分析器報告](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report)。
+您也可以從AEM例項下載Best Practices Analyzer報表。 如需詳細資訊，請參閱[檢視Best Practices Analyzer報表](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) 。
