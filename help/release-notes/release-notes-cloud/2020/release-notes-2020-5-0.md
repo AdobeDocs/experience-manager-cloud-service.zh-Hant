@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.5.0 版發行說明
 description: Experience Manager 2020.5.0 版發行說明
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
 ---
-
 
 # AEM as a Cloud Service 2020.5.0 版發行說明 {#release-notes}
 
@@ -49,5 +48,3 @@ ht-degree: 100%
 * 「建立環境」對話框在 Safari 中無法正確顯示。
 * 概覽頁面中的特定卡片未正確顯示實體名稱。
 * 某些情況下，「建置影像」無法成功下載客戶封裝。
-
-
