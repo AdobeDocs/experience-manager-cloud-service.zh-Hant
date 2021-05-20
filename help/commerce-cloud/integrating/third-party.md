@@ -1,54 +1,53 @@
 ---
-title: 利AEM用商務整合框架實現第三方商務整合
-description: 企業可能需要額外的第三方商務解決方案來支撐其店面。 商務整合框架(CIF)可用於此類整合情境，以便使用I/O Runtime將第三方商務解決方案連接至Adobe Experience Manager。
+title: AEM與使用Commerce Integration Framework的第三方商務整合
+description: 企業可能需要額外的第三方商務解決方案來支援其店面。 商務整合架構(CIF)可用於這類整合案例，以使用I/O Runtime將第三方商務解決方案連結至Adobe Experience Manager。
 thumbnail: cif-third-party-architecture.jpg
-exl-id: 42dd8922-540d-4a93-9e45-b5e83dc11e16
-translation-type: tm+mt
-source-git-commit: c0a79d9ffefba06b64d48aed79e9a00baa4987df
+exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c,42dd8922-540d-4a93-9e45-b5e83dc11e16
+source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
-# 和使AEM用Commerce Integration Framework {#aem-third-party}的第三方商務整合
+# 使用Commerce Integration Framework {#aem-third-party}進行AEM和第三方商務整合
 
-非Adobe商務解決方案的整合是CIF的常見情況。 使用不同API和結構描述的協力廠商解決方案可透過整合層連結。
+整合非Adobe商務解決方案是CIF的常見案例。 透過整合層連線具有不同API和結構的第三方解決方案。
 
 ## 架構 {#architecture}
 
-總體架構如下：
+整體架構如下：
 
-![非AEMMagento/第三方體系結構概述](../assets//AEM_nonMagento_Architecture.png)
+![AEM非Magento/第三方架構概述](../assets//AEM_nonMagento_Architecture.png)
 
-此整合層的目的是將第三方API和結構描述映射到Adobe之外的支援的Experience ManagerCommerce GraphQL API和結構描述。 有了這種封裝，整合邏輯和系統就可以更新，而不需變更Experience Manager內的程式碼。
+此整合層的用途是根據支援的Adobe商務GraphQL API和Experience Manager以外的結構，對應第三方API和結構。 有了這種封裝，整合邏輯和系統可以更新，而無需更改Experience Manager內的代碼。
 
 ## 整合的解決方案需求
 
-當Experience Manager擷取隨選資料時，需要即時的產品目錄API。
+當Experience Manager隨選擷取資料時，就需要產品目錄的即時API。
 
 >[!TIP]
 >
->如果沒有可用的即時API，則應使用含API的外部產品快取進行整合。 示例[Magentoopen-source](https://magento.com/products/magento-open-source)。
+>如果沒有可用的即時API，則整合應使用具有API的外部產品快取。 範例[Magento開放原始碼](https://magento.com/products/magento-open-source)。
 
-無需實施完整的GraphQL模式，只要模式的對象，即可啟用所需的使用案例。
+不需要實作完整的GraphQL架構，只需架構的物件即可啟用所需的使用案例。
 
 ## 後端使用案例
 
-CIF通過即時產品目錄訪問和產品體驗管理工具擴展了Experience Manager. 此順暢整合可讓作者在需要時使用內嵌的UI來存取商務資料，而不需離開內容內容內容。
+CIF透過即時產品目錄存取和產品體驗管理工具，延伸Experience Manager。 這項緊密整合可讓作者在需要時使用內嵌的UI來存取商務資料，而不需離開內容內容。
 
-必須整合產品目錄API才能解除這些使用案例的鎖定。
+必須整合產品目錄API才能解鎖這些使用案例。
 
 ## 前端使用案例
 
-[AEMCIF核心元](https://github.com/adobe/aem-core-cif-components) 件透過CIF支援的Adobe商務API擷取和交換資料。若要重複使用元件，必須實作個別的API。
+[AEM CIF核心元](https://github.com/adobe/aem-core-cif-components) 件透過CIF支援的Adobe商務API擷取和交換資料。若要重複使用元件，必須實作個別API。
 
-效能關鍵的客戶端元件建議直接與第三方解決方案通信，以避免延遲。
+效能關鍵用戶端元件的建議是直接與第三方解決方案通訊，以避免延遲。
 
 ## 開發整合{#develop-integration}
 
-我們建議使用[Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)作為整合層。 它包括在CIF第三方的附加產品中。 當它與類似微服務的方法搭配運作時，它非常適合於輕鬆整合多種解決方案。
+建議將[Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)用於整合層。 CIF附加元件中包含了該ID。 由於它與類似微服務的方法配合使用，因此非常適合於輕鬆整合多個解決方案。
 
-[參考實作](https://github.com/adobe/commerce-cif-graphql-integration-reference)是建立與商務解決方案整合的絕佳起點。 雖然它支援GraphQL，但也可以與任何其他類型的API（例如REST）整合。
+[參考實作](https://github.com/adobe/commerce-cif-graphql-integration-reference)是建立與您商務解決方案整合的絕佳起點。 雖然支援GraphQL，但也可與任何其他類型的API（例如REST）整合。
 
-如果有第三方層可用（例如Mulesoft），或整合以第三方解決方案為基礎，則不需要此整合層。
+如果第三方層可用（例如Mulesoft），或整合是在第三方解決方案之上建置，則不需要此整合層。
