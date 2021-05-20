@@ -1,9 +1,9 @@
 ---
 title: AEM Headless Developer Journey
 description: 從這裡開始，引導您逐步了解AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個開發專案中運用這些功能。
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+source-git-commit: 1ac93a066f808e7dd2ed7e34aa7635e9914a4ea9
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '736'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 1%
 | 4 | [如何建立內容模型](model-your-content.md) | 了解如何建立內容結構的模型。 然後，使用內容片段模型和內容片段來實現Adobe Experience Manager(AEM)的結構，以便跨頻道重複使用。 |
 | 5 | [如何透過AEM傳送API存取您的內容](access-your-content.md) | 了解如何使用GraphQL查詢來存取您的內容片段內容。 |
 | 6 | [如何透過AEM Assets API更新您的內容](update-your-content.md) | 了解如何使用REST API存取和更新您的內容片段內容。 |
-| 7 | [如何將所有內容放在一起 — 您的應用程式和AEM Headless中的內容](put-it-all-together.md) | 了解如何取得您的AEM專案，包括內容片段、GraphQL呼叫、REST API呼叫和應用程式，並為其上線做準備。 |
+| 7 | [如何將所有內容放在一起 — 您的應用程式和AEM Headless中的內容](put-it-all-together.md) | 了解如何取得您的AEM專案，並準備以使用AEM Headless SDK上線。 |
 | 8 | [如何與無頭應用程式一起運行](go-live.md) | 了解如何即時部署應用程式，並在Git中取用您的本機程式碼，並移至Cloud Manager Git，以便使用CI/CD管道。 |
 | 9 | [選用 — 如何使用AEM建立單頁應用程式(SPA)](create-spa.md) | 了解AEM無頭功能後，請探索如何結合無頭和無頭傳送，並了解如何使用AEM SPA Editor架構建立可編輯的SPA。 |
 
