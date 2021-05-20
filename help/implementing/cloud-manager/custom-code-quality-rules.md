@@ -1,8 +1,7 @@
 ---
-title: 自訂代碼品質規則-Cloud Services
-description: 自訂代碼品質規則-Cloud Services
+title: 自訂程式碼品質規則 — Cloud Services
+description: 自訂程式碼品質規則 — Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-translation-type: tm+mt
 source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
 source-wordcount: '3302'
@@ -15,30 +14,30 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="自訂程式碼品質規則"
->abstract="本頁說明由Cloud Manager根據「工程」的最佳實務所建立的自訂程式碼品質規則AEM。"
+>abstract="本頁說明由Cloud Manager根據AEM Engineering最佳實務建立而執行的自訂程式碼品質規則。"
 
-本頁說明由Cloud Manager根據「工程」的最佳實務所建立的自訂程式碼品質規則AEM。
+本頁說明由Cloud Manager根據AEM Engineering最佳實務建立而執行的自訂程式碼品質規則。
 
 >[!NOTE]
->此處提供的程式碼範例僅供說明之用。 請參閱[概念](https://docs.sonarqube.org/7.4/user-guide/concepts/)以瞭解SonarQube概念和品質規則。
+>此處提供的程式碼範例僅供說明之用。 請參閱[概念](https://docs.sonarqube.org/7.4/user-guide/concepts/)以了解SonarQube概念和品質規則。
 
 ## SonarQube規則{#sonarqube-rules}
 
 以下章節重點說明SonarQube規則：
 
-### 請勿使用潛在的危險函式{#do-not-use-potentially-dangerous-functions}
+### 請勿使用潛在危險的函式{#do-not-use-potentially-dangerous-functions}
 
-**密鑰**:CQRules:CWE-676
+**索引鍵**:CQRules:CWE-676
 
-**類型**:弱點
+**類型**:漏洞
 
-**嚴重性**:主修
+**嚴重性**:主要
 
 **自**:2018.4.0版
 
 方法 ***Thread.stop()*** 和 ***Thread.interrupt()*** 可產生難以重制的問題，在某些情況下，還可能產生安全漏洞。它們的使用應受到嚴密監控和驗證。總的來說，傳遞資訊是實現類似目標的更安全的方式。
 
-#### 不符合代碼{#non-compliant-code}
+#### 不相容代碼{#non-compliant-code}
 
 ```java
 public class DontDoThis implements Runnable {
@@ -85,19 +84,19 @@ public class DoThis implements Runnable {
 }
 ```
 
-### 請勿使用可能由外部控制的格式字串{#do-not-use-format-strings-which-may-be-externally-controlled}
+### 請勿使用可由外部控制的格式字串{#do-not-use-format-strings-which-may-be-externally-controlled}
 
-**密鑰**:CQRules:CWE-134
+**索引鍵**:CQRules:CWE-134
 
-**類型**:弱點
+**類型**:漏洞
 
-**嚴重性**:主修
+**嚴重性**:主要
 
 **自**:2018.4.0版
 
-使用來自外部源（如請求參數或用戶生成的內容）的格式字串可以使應用程式暴露於拒絕服務攻擊。 在某些情況下，格式字串可能受到外部控制，但僅允許來自受信任來源。
+使用來自外部源的格式字串（如請求參數或用戶生成的內容）可以生成，使應用程式暴露於拒絕服務攻擊。 在某些情況下，格式字串可能受外部控制，但僅允許來自受信任的源。
 
-#### 不符合代碼{#non-compliant-code-1}
+#### 不相容代碼{#non-compliant-code-1}
 
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
@@ -107,19 +106,19 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-### HTTP請求應始終具有套接字和連接超時{#http-requests-should-always-have-socket-and-connect-timeouts}
+### HTTP要求應一律有通訊端和連線逾時{#http-requests-should-always-have-socket-and-connect-timeouts}
 
-**密鑰**:CQRules:ConnectionTimeoutMechanism
+**索引鍵**:CQRules:ConnectionTimeoutMechanism
 
 **類型**:錯誤
 
-**嚴重性**:重要
+**嚴重性**:關鍵
 
 **自**:2018.6.0版
 
-當從應用程式內部執行HTTP請AEM求時，請務必確保已設定適當逾時，以避免不必要的執行緒耗用。 很遺憾，Java的預設HTTP客戶端(java.net.HttpUrlConnection)和常用的Apache HTTP Components客戶端的預設行為都是永不超時，因此必須明確設定超時。 此外，作為最佳實務，這些逾時秒數不應超過60秒。
+從AEM應用程式內執行HTTP要求時，請務必確保已設定正確逾時，以避免不必要的執行緒耗用。 很可惜，Java的預設HTTP用戶端(java.net.HttpUrlConnection)和常用的Apache HTTP元件用戶端的預設行為永遠不會逾時，因此必須明確設定逾時。 此外，作為最佳實務，這些逾時不應超過60秒。
 
-#### 不符合代碼{#non-compliant-code-2}
+#### 不相容代碼{#non-compliant-code-2}
 
 ```java
 @Reference
@@ -185,13 +184,13 @@ public void orDoThis() {
 }
 ```
 
-### 客戶{#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}不應實作或擴充以@ProviderType註解的產品API
+### 客戶{#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}不應實作或擴充以@ProviderType加上註解的產品API
 
-**密鑰**:CQBP-84、CQBP-84-dependicies
+**索引鍵**:CQBP-84、CQBP-84依賴項
 
 **類型**:錯誤
 
-**嚴重性**:重要
+**嚴重性**:關鍵
 
 **自**:2018.7.0版
 
@@ -199,9 +198,9 @@ AEM API包含Java介面和類別，這些介面和類別僅能由自訂程式碼
 
 將新方法添加到這些介面時，這些附加方法不會影響使用這些介面的現有代碼，因此，在這些介面中添加新方法會被視為向後相容。但是，如果自訂程 ***式碼實作*** 其中一個介面，該自訂程式碼會給客戶帶來向後相容性風險。
 
-僅要由實施的介面（和類）AEM將用&#x200B;*org.osgi.annotation.versioning.ProviderType*(或者，在某些情況下，類似的舊式注釋&#x200B;*aQute.bnd.annotation.ProviderType*&#x200B;進行注釋。 此規則可識別自訂程式碼實作（或擴充類別）此類介面的情況。
+僅打算由AEM實作的介面（和類）會以&#x200B;*org.osgi.annotation.versioning.ProviderType*（在某些情況下，為類似的舊批注&#x200B;*aQute.bnd.annotation.ProviderType*）進行注釋。 此規則可識別由自訂程式碼實作這類介面（或擴充類別）的案例。
 
-#### 不符合代碼{#non-compliant-code-3}
+#### 不相容代碼{#non-compliant-code-3}
 
 ```java
 import com.day.cq.wcm.api.Page;
@@ -211,21 +210,21 @@ public class DontDoThis implements Page {
 }
 ```
 
-### ResourceResolver對象應始終關閉{#resourceresolver-objects-should-always-be-closed}
+### ResourceResolver物件應一律關閉{#resourceresolver-objects-should-always-be-closed}
 
-**密鑰**:CQRules:CQBP-72
+**索引鍵**:CQRules:CQBP-72
 
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
-**嚴重性**:主修
+**嚴重性**:主要
 
 **自**:2018.4.0版
 
-從ResourceResolverFactory中獲取的ResourceResolver對象會佔用系統資源。 雖然在ResourceResolver不再使用時，有措施可回收這些資源，但通過調用close()方法明確關閉任何已開啟的ResourceResolver對象會更有效。
+從ResourceResolverFactory獲取的ResourceResolver對象使用系統資源。 雖然在不再使用ResourceResolver時已有可回收這些資源的措施，但通過調用close()方法來顯式關閉任何已開啟的ResourceResolver對象會更有效。
 
-一個相對常見的誤解是，使用現有JCR會話建立的ResourceResolver對象不應顯式關閉，或者這樣做會關閉基礎的JCR會話。 不是這樣的——無論如何開啟資源解析器，都應在不再使用時關閉它。 由於ResourceResolver實施了可關閉介面，因此也可以使用try-with-resources語法，而不是顯式調用close()。
+一個相對常見的誤解是，使用現有JCR會話建立的ResourceResolver對象不應顯式關閉，或者這樣將關閉基礎的JCR會話。 但情況並非如此 — 無論ResourceResolver如何開啟，只要不再使用，就應關閉。 由於ResourceResolver實現了Closeable介面，因此也可以使用try-with-resources語法，而不是顯式調用close()。
 
-#### 不符合代碼{#non-compliant-code-4}
+#### 不相容代碼{#non-compliant-code-4}
 
 ```java
 public void dontDoThis(Session session) throws Exception {
@@ -258,17 +257,17 @@ public void orDoThis(Session session) throws Exception {
 
 ### 請勿使用Sling servlet路徑來註冊servlet {#do-not-use-sling-servlet-paths-to-register-servlets}
 
-**密鑰**:CQRules:CQBP-75
+**索引鍵**:CQRules:CQBP-75
 
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
-**嚴重性**:主修
+**嚴重性**:主要
 
 **自**:2018.4.0版
 
-如[Sling documentation](http://sling.apache.org/documentation/the-sling-engine/servlets.html)中所述，不建議依路徑來系結servlet。 路徑綁定的servlet不能使用標準JCR訪問控制，因此需要額外的安全性嚴格性。 建議您不要使用路徑綁定的servlet，而是在儲存庫中建立節點並按資源類型註冊servlet。
+如[Sling檔案](http://sling.apache.org/documentation/the-sling-engine/servlets.html)中所述，不建議依路徑系結servlet。 路徑綁定的servlet無法使用標準JCR訪問控制，因此需要額外的安全嚴格性。 建議您不要使用路徑限制的servlet，而是在存放庫中建立節點，並依資源類型註冊servlet。
 
-#### 不符合代碼{#non-compliant-code-5}
+#### 不相容代碼{#non-compliant-code-5}
 
 ```java
 @Component(property = {
@@ -279,19 +278,19 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### 捕獲的異常應記錄或拋出，但不應同時記錄{#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### 捕獲的例外應記錄或擲回，但不應同時記錄或擲回{#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
-**密鑰**:CQRules:CQBP-44—CatchAndEitherLogOrThrow
+**索引鍵**:CQRules:CQBP-44—CatchAndOtherLogOrThow
 
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
 **自**:2018.4.0版
 
-一般而言，例外應只記錄一次。 多次記錄例外可能會造成混淆，因為不清楚發生例外的次數。 導致這種情況的最常見模式是記錄並拋出一個捕獲到的異常。
+一般而言，例外只應記錄一次。 多次記錄例外可能會造成混淆，因為不清楚例外發生的次數。 導致此情況的最常見模式是記錄並擲回已捕捉的例外。
 
-#### 不符合代碼{#non-compliant-code-6}
+#### 不相容代碼{#non-compliant-code-6}
 
 ```java
 public void dontDoThis() throws Exception {
@@ -324,19 +323,19 @@ public void orDoThis() throws MyCustomException {
 }
 ```
 
-### 請避免在日誌語句後面立即加上throw語句{#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
+### 請避免後面緊接有log陳述式和throw陳述式{#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
-**密鑰**:CQRules:CQBP-44—ConcentilueLogAndThrow
+**索引鍵**:CQRules:CQBP-44—ConsellyLogAndThrow
 
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
 **自**:2018.4.0版
 
-另一個避免的常見模式是記錄訊息，然後立即擲回例外。 這通常表示異常消息將在日誌檔案中重複。
+另一種常見的避免模式是記錄訊息，然後立即擲回例外狀況。 這通常表示異常消息將在日誌檔案中重複。
 
-#### 不符合代碼{#non-compliant-code-7}
+#### 不相容代碼{#non-compliant-code-7}
 
 ```java
 public void dontDoThis() throws Exception {
@@ -353,21 +352,21 @@ public void doThis() throws Exception {
 }
 ```
 
-### 在處理GET或HEAD請求{#avoid-logging-at-info-when-handling-get-or-head-requests}時，避免在INFO上登錄
+### 處理GET或HEAD請求{#avoid-logging-at-info-when-handling-get-or-head-requests}時，請避免在INFO記錄
 
-**密鑰**:CQRules:CQBP-44—LogInfoInGetOrHeadRequests
+**索引鍵**:CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
-一般而言，INFO記錄檔層級應用於區分重要動作，並依預設設定AEM為在INFO層級或以上記錄檔。 GET和HEAD方式只能是唯讀操作，因此不構成重要行動。 響應GET或HEAD請求而在INFO級別登錄可能會產生明顯的日誌雜訊，從而更難識別日誌檔案中的有用資訊。 處理GET或HEAD請求時，如果更深入的疑難排解資訊有幫助，則記錄應位於發生錯誤時的「警告」或「錯誤」層級，或位於「除錯」或「TRACE」層級。
+一般而言，INFO記錄層級應用來標定重要動作，且依預設，AEM會設定為在INFO層級或以上記錄。 GET和HEAD方法只應是只讀操作，因此不構成重要行動。 響應GET或HEAD請求而以INFO級別記錄可能會產生顯著的日誌噪音，因此在日誌檔案中更難識別有用資訊。 處理GET或HEAD要求時的記錄應位於發生錯誤時的「警告」或「錯誤」層級，或位於「除錯」或「TRACE」層級（如果更深入的疑難排解資訊有幫助的話）。
 
 >[!CAUTION]
 >
 >這不適用於每個請求的access.log類型記錄。
 
-#### 不符合代碼{#non-compliant-code-8}
+#### 不相容代碼{#non-compliant-code-8}
 
 ```java
 public void doGet() throws Exception {
@@ -383,19 +382,19 @@ public void doGet() throws Exception {
 }
 ```
 
-### 請勿將Exception.getMessage()用作記錄語句{#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}的第一個參數
+### 請勿將Exception.getMessage()用作記錄陳述式{#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}的第一個參數
 
-**密鑰**:CQRules:CQBP-44 - ExceptionGetMessageIsFirstLogParam
+**索引鍵**:CQRules:CQBP-44—ExceptionGetMessageIsFirstLogParam
 
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
 **自**:2018.4.0版
 
-作為最佳做法，日誌消息應提供有關應用程式中發生異常的位置的上下文資訊。 雖然上下文也可以透過使用堆疊追蹤來判斷，但一般而言，記錄訊息會更容易讀取和瞭解。 因此，在記錄例外時，將例外消息用作日誌消息的做法是不好的——例外消息將包含出錯的內容，而日誌消息應用於告知日誌讀取器發生例外時應用程式正在執行什麼操作。 例外消息仍將記錄；指定您自己的訊息，讓記錄檔更容易理解。
+記錄訊息應提供關於應用程式中發生例外狀況的內容資訊，此為最佳作法。 雖然上下文也可以通過使用堆棧跟蹤來確定，但通常日誌消息將更容易讀取和理解。 因此，在記錄例外時，將例外消息用作日誌消息是一種錯誤的做法，例外消息將包含出錯的內容，而日誌消息應用於告知日誌讀取器發生例外時應用程式正在執行什麼操作。 例外訊息仍會記錄；透過指定您自己的訊息，記錄將更容易理解。
 
-#### 不符合代碼{#non-compliant-code-9}
+#### 不相容代碼{#non-compliant-code-9}
 
 ```java
 public void dontDoThis() {
@@ -419,19 +418,19 @@ public void doThis() {
 }
 ```
 
-### 登錄捕獲塊應位於WARN或ERROR級別{#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
+### 登錄捕獲塊應位於「警告」或「錯誤」級別{#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
-**密鑰**:CQRules:CQBP-44—WrongLogLevelInCatchBlock
+**索引鍵**:CQRules:CQBP-44—WrongLogLevelInCatchBlock
 
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
 **自**:2018.4.0版
 
-如名稱所示，在&#x200B;*exceptional*&#x200B;的情況下，應始終使用Java例外。 因此，在捕獲到異常時，務必確保日誌消息記錄在適當的級別- WARN或ERROR。 這可確保這些消息在日誌中正確顯示。
+如名稱所示，在&#x200B;*exception*&#x200B;環境中應始終使用Java異常。 因此，當捕獲到異常時，務必確保日誌消息記錄在適當的級別，即「警告」或「錯誤」。 這可確保這些訊息在記錄檔中正確顯示。
 
-#### 不符合代碼{#non-compliant-code-10}
+#### 不相容代碼{#non-compliant-code-10}
 
 ```java
 public void dontDoThis() {
@@ -457,17 +456,17 @@ public void doThis() {
 
 ### 不將堆棧跟蹤打印到控制台{#do-not-print-stack-traces-to-the-console}
 
-**密鑰**:CQRules:CQBP-44 - ExceptionPrintStackTrace
+**索引鍵**:CQRules:CQBP-44 - ExceptionPrintStackTrace
 
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
 **自**:2018.4.0版
 
-如前所述，瞭解日誌消息時，上下文至關重要。 使用Exception.printStackTrace()僅使&#x200B;****&#x200B;堆棧跟蹤輸出到標準錯誤流，從而丟失所有上下文。 此外，在多線程應用中，如AEM果使用該方法並行打印多個例外，其堆棧跡線可能重疊，從而產生明顯的混淆。 只應通過記錄框架記錄異常。
+如前所述，了解日誌消息時，上下文至關重要。 使用Exception.printStackTrace()會導致&#x200B;**only**&#x200B;堆棧跟蹤輸出到標準錯誤流，從而丟失所有上下文。 此外，在諸如AEM的多線程應用程式中，如果使用此方法並行打印了多個例外，則其堆棧跡線可能重疊，從而產生明顯的混淆。 只有記錄架構才應記錄例外。
 
-#### 不符合代碼{#non-compliant-code-11}
+#### 不相容代碼{#non-compliant-code-11}
 
 ```java
 public void dontDoThis() {
@@ -491,19 +490,19 @@ public void doThis() {
 }
 ```
 
-### 不輸出到「標準輸出」或「標準錯誤{#do-not-output-to-standard-output-or-standard-error}」
+### 不輸出到標準輸出或標準錯誤{#do-not-output-to-standard-output-or-standard-error}
 
-**密鑰**:CQRules:CQBP-44—LogLevelConsolePrinters
+**索引鍵**:CQRules:CQBP-44—LogLevelConsolePrinters
 
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
 **自**:2018.4.0版
 
-登入應AEM一律透過登入架構(SLF4J)進行。 直接輸出到標準輸出或標準錯誤流會丟失記錄框架提供的結構和上下文資訊，在某些情況下可能導致效能問題。
+登入AEM的作業一律應透過記錄架構(SLF4J)完成。 直接輸出到標準輸出或標準錯誤流會丟失由日誌記錄框架提供的結構和上下文資訊，在某些情況下，可能會導致效能問題。
 
-#### 不符合代碼{#non-compliant-code-12}
+#### 不相容代碼{#non-compliant-code-12}
 
 ```java
 public void dontDoThis() {
@@ -529,17 +528,17 @@ public void doThis() {
 
 ### 避免硬式編碼/apps和/libs路徑{#avoid-hardcoded-apps-and-libs-paths}
 
-**密鑰**:CQRules:CQBP-71
+**索引鍵**:CQRules:CQBP-71
 
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
 **自**:2018.4.0版
 
-一般而言，以/libs和/apps開頭的路徑不應硬式編碼為它們所參照的路徑，最常儲存為相對於Sling搜尋路徑的路徑（依預設會設為/libs,/apps）。 使用絕對路徑可能會帶來細微的缺陷，這些缺陷只會在項目生命週期的後期出現。
+一般而言，以/libs和/apps開頭的路徑不應以硬式編碼撰寫，因為它們參考的路徑最常儲存為相對於Sling搜尋路徑（預設為/libs、/apps）的路徑。 使用絕對路徑可能會引入細微缺陷，這些缺陷只會在項目生命週期的稍後出現。
 
-#### 不符合代碼{#non-compliant-code-13}
+#### 不相容代碼{#non-compliant-code-13}
 
 ```java
 public boolean dontDoThis(Resource resource) {
@@ -555,46 +554,46 @@ public void doThis(Resource resource) {
 }
 ```
 
-### Sling Scheduler Should Not Be Used {#sonarqube-sling-scheduler}
+### Sling排程器不應使用{#sonarqube-sling-scheduler}
 
-**密鑰**:CQRules:AMSCORE-554
+**索引鍵**:CQRules:AMSCORE-554
 
-**類型**:程式碼氣味/Cloud Service相容性
-
-**嚴重性**:次要
-
-**自**:2020.5.0版
-
-Sling Scheduler不得用於需要保證執行的任務。 Sling Scheduled Jobs可確保執行，更適合叢集和非叢集環境。
-
-請參閱[Apache Sling Eventing和Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)以進一步瞭解Sling Jobs如何在叢集環境中處理。
-
-### 不AEM應使用已過時的API {#sonarqube-aem-deprecated}
-
-**密鑰**:AMSCORE-553
-
-**類型**:程式碼氣味/Cloud Service相容性
+**類型**:代碼氣味/Cloud Service相容性
 
 **嚴重性**:次要
 
 **自**:2020.5.0版
 
-APIAEM表面處於常數修訂之下，以識別不建議使用且因此被視為已過時的API。
+Sling排程器不得用於需要保證執行的工作。 Sling排程作業可確保執行，且更適合叢集和非叢集環境。
 
-在許多情況下，這些API會使用標準Java *@Deprecated*&#x200B;注釋來取代，如`squid:CallToDeprecatedMethod`所識別。
+請參閱[Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) ，深入了解如何在叢集環境中處理Sling作業。
 
-但是，有時API在上下文中已過時，但在其AEM他上下文中可能不再過時。 此規則可識別此第二類。
+### AEM已棄用的API不應使用{#sonarqube-aem-deprecated}
+
+**索引鍵**:AMSCORE-553
+
+**類型**:代碼氣味/Cloud Service相容性
+
+**嚴重性**:次要
+
+**自**:2020.5.0版
+
+AEM API表面不斷修訂，以識別不建議使用且因此視為已過時的API。
+
+在許多情況下，這些API會使用標準Java *@Deprecated*&#x200B;附註來取代，因此也會由`squid:CallToDeprecatedMethod`來識別。
+
+不過，在AEM的內容中，API有時會遭到取代，但在其他內容中，API可能不會遭到取代。 此規則可識別此第二類。
 
 ## OakPAL內容規則{#oakpal-rules}
 
-請在Cloud Manager執行的OakPAL檢查下方尋找。
+請在OakPAL檢查下方找到由Cloud Manager執行。
 
 >[!NOTE]
->OakPAL是由合作夥伴(AEM2019年Rockstar North America的得獎者)開發的架構，可使用獨立的Oak資料庫來驗證內容套件。
+>OakPAL是AEM合作夥伴(2019年AEM Rockstar北美地區獲勝者)開發的架構，可使用獨立Oak存放庫驗證內容套件。
 
-### 客戶軟體包不應在/libs {#oakpal-customer-package}下建立或修改節點
+### 客戶包不應在/libs {#oakpal-customer-package}下建立或修改節點
 
-**密鑰**:UnbandedPaths
+**索引鍵**:UnpandedPaths
 
 **類型**:錯誤
 
@@ -602,24 +601,24 @@ APIAEM表面處於常數修訂之下，以識別不建議使用且因此被視�
 
 **自**:2019.6.0版
 
-客戶應將內容存放庫中的/libs內容樹視為唯讀，這AEM是一種長期的最佳做法。 修改&#x200B;*/libs*&#x200B;下的節點和屬性會對主要和次要更新造成重大風險。 對&#x200B;*/libs*&#x200B;的修改僅應通過正式渠道Adobe。
+客戶應將AEM內容存放庫中的/libs內容樹狀結構視為唯讀，這是長期以來的最佳作法。 在&#x200B;*/libs*&#x200B;下修改節點和屬性會造成重大和次要更新的重大風險。 */libs*&#x200B;的修改僅應由Adobe透過官方管道進行。
 
-### 軟體包不應包含重複的OSGi配置{#oakpal-package-osgi}
+### 包不應包含重複的OSGi配置{#oakpal-package-osgi}
 
-**密鑰**:DuplicateOsgiConfigurations
+**索引鍵**:DuplicateOsgiConfigurations
 
 **類型**:錯誤
 
-**嚴重性**:主修
+**嚴重性**:主要
 
 **自**:2019.6.0版
 
-在複雜項目上發生的常見問題是，同一個OSGi元件被多次配置。 這就產生了關於哪些配置可操作的模糊性。 此規則是「執行模式感知」，因為它只會識別在相同執行模式（或執行模式組合）中多次設定相同元件的問題。
+複雜專案中發生的常見問題是多次設定相同的OSGi元件。 這就產生了關於哪個配置可操作的模糊。 此規則「執行模式感知」，因為它只會識別在同一執行模式（或執行模式組合）中多次設定相同元件的問題。
 
 >[!NOTE]
->此規則將產生在多個軟體包中定義相同配置（位於同一路徑）的問題，包括在構建的軟體包的整個清單中複製相同軟體包的情況。 例如，如果構建版本生成名為`com.myco:com.myco.ui.apps`和`com.myco:com.myco.all`的包，其中`com.myco:com.myco.all`嵌入`com.myco:com.myco.ui.apps`，則`com.myco:com.myco.ui.apps`內的所有配置都將報告為重複的。 這通常是不遵循[內容封裝結構准則](/help/implementing/developing/introduction/aem-project-content-package-structure.md)的情況；在此特定示例中，包`com.myco:com.myco.ui.apps`缺少`<cloudManagerTarget>none</cloudManagerTarget>`屬性。
+>此規則會產生多個套件中定義相同配置（在相同路徑）的問題，包括內建套件的整體清單中複製相同套件的情況。 例如，如果組建產生名為`com.myco:com.myco.ui.apps`和`com.myco:com.myco.all`的套件，其中`com.myco:com.myco.all`內嵌`com.myco:com.myco.ui.apps`，則`com.myco:com.myco.ui.apps`內的所有設定都會報告為重複項目。 這通常是不遵循[內容封裝結構准則](/help/implementing/developing/introduction/aem-project-content-package-structure.md)的情況；在此特定範例中，套件`com.myco:com.myco.ui.apps`缺少`<cloudManagerTarget>none</cloudManagerTarget>`屬性。
 
-#### 不符合代碼{#non-compliant-code-osgi}
+#### 不相容代碼{#non-compliant-code-osgi}
 
 ```+ apps
   + projectA
@@ -640,19 +639,19 @@ APIAEM表面處於常數修訂之下，以識別不建議使用且因此被視�
 
 ### 配置和安裝資料夾應僅包含OSGi節點{#oakpal-config-install}
 
-**密鑰**:ConfigAndInstallShouldOnlyContainOsgiNodes
+**索引鍵**:ConfigAndInstallShouldOnlyContainOsgiNodes
 
 **類型**:錯誤
 
-**嚴重性**:主修
+**嚴重性**:主要
 
 **自**:2019.6.0版
 
-出於安全原因，包含&#x200B;*/config/和/install/*&#x200B;的路徑只能由中的管理用戶讀取AEM，並且應僅用於OSGi配置和OSGi捆綁包。 將其他類型的內容置於包含這些區段的路徑下，會導致應用程式行為在管理使用者與非管理使用者之間無意間有所不同。
+基於安全理由，包含&#x200B;*/config/和/install/*&#x200B;的路徑只能由AEM中的管理使用者讀取，並應僅用於OSGi設定和OSGi套件組合。 將其他類型的內容置於包含這些區段的路徑之下，會導致應用程式行為，這會無意中在管理使用者和非管理使用者之間有所差異。
 
-常見的問題是，在元件對話框中或指定用於內嵌編輯的富格文本編輯器配置時，使用名為`config`的節點。 要解決此問題，應將違規節點更名為相容名稱。 對於富格文本編輯器配置，請使用`cq:inplaceEditing`節點上的`configPath`屬性來指定新位置。
+常見的問題是，在元件對話方塊內或指定RTF編輯器設定以進行內嵌編輯時，使用名為`config`的節點。 要解決此問題，應將違規節點重新命名為符合規範的名稱。 對於RTF編輯器配置，請使用`cq:inplaceEditing`節點上的`configPath`屬性來指定新位置。
 
-#### 不符合代碼{#non-compliant-code-config-install}
+#### 不相容代碼{#non-compliant-code-config-install}
 
 ```
 + cq:editConfig [cq:EditConfig]
@@ -671,79 +670,79 @@ APIAEM表面處於常數修訂之下，以識別不建議使用且因此被視�
       + rtePlugins [nt:unstructured]
 ```
 
-### 軟體包不應重疊{#oakpal-no-overlap}
+### 包不應重疊{#oakpal-no-overlap}
 
-**密鑰**:PackageOverlaps
+**索引鍵**:封裝重疊
 
 **類型**:錯誤
 
-**嚴重性**:主修
+**嚴重性**:主要
 
 **自**:2019.6.0版
 
-與&#x200B;*軟體包不應包含重複的OSGi配置*&#x200B;類似，在由多個獨立內容軟體包寫入相同節點路徑的複雜項目中，這是一個常見問題。 雖然使用內容封裝相依性可確保結果一致，但最好避免完全重疊。
+與&#x200B;*包不應包含重複的OSGi配置*&#x200B;類似，這是複雜項目中常見的問題，其中同一節點路徑由多個單獨的內容包寫入。 雖然可使用內容套件相依性來確保結果一致，但最好避免完全重疊。
 
-### 預設的編寫模式不應是Classic UI {#oakpal-default-authoring}
+### 預設編寫模式不應為傳統UI {#oakpal-default-authoring}
 
-**密鑰**:ClassicUIAuthoringMode
+**索引鍵**:ClassicUIAuthoringMode
 
-**類型**:程式碼氣味/Cloud Service相容性
-
-**嚴重性**:次要
-
-**自**:2020.5.0版
-
-OSGi配置`com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl`定義了中的預設編寫模AEM式。 自6.4以來，Classic UI已不再支援AEM，現在當預設編寫模式設定為Classic UI時，會引發問題。
-
-### 具有對話框的元件應具有觸摸UI對話框{#oakpal-components-dialogs}
-
-**密鑰**:ComponentWithOnlyClassicUIDialog
-
-**類型**:程式碼氣味/Cloud Service相容性
+**類型**:代碼氣味/Cloud Service相容性
 
 **嚴重性**:次要
 
 **自**:2020.5.0版
 
-具AEM有Classic UI對話方塊的元件應一律具有對應的Touch UI對話方塊，以提供最佳的製作體驗，並與不支援Classic UI的Cloud Service部署模型相容。 此規則會驗證下列案例：
+OSGi配置`com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl`定義了AEM中的預設創作模式。 由於AEM 6.4後即已棄用傳統UI，因此現在當將預設編寫模式設為傳統UI時，會引發問題。
 
-* 具有Classic UI對話框的元件（即，對話子節點）必須具有相應的Touch UI對話框（即`cq:dialog`子節點）。
-* 具有Classic UI設計對話框的元件（即design_dialog節點）必須具有相應的Touch UI設計對話框（即`cq:design_dialog`子節點）。
-* 具有「傳統型」UI對話框和「傳統型」UI設計對話框的元件必須具有相應的「觸控型」UI對話框和相應的「觸控型」UI設計對話框。
+### 具有對話框的元件應具有觸控式UI對話框{#oakpal-components-dialogs}
 
-「現代化工AEM具」檔案提供如何將元件從傳統UI轉換為Touch UI的檔案和工具。 如需詳細資訊，請參AEM閱「現代化工具」。[](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html)
+**索引鍵**:ComponentWithOnlyClassicUIDialog
 
-### 軟體包不應混合可變內容和不可變內容{#oakpal-packages-immutable}
-
-**密鑰**:ImmutableMutableMixedPackage
-
-**類型**:程式碼氣味/Cloud Service相容性
+**類型**:代碼氣味/Cloud Service相容性
 
 **嚴重性**:次要
 
 **自**:2020.5.0版
 
-為了與Cloud Service部署模型相容，單個內容包必須包含儲存庫不可變區域的內容（即`/apps and /libs, although /libs`不應由客戶代碼修改，並將導致單獨違規）或可變區域（即，其他所有內容），但不能同時包含兩者。 例如，同時包含`/apps/myco/components/text and /etc/clientlibs/myco`的套件與Cloud Service不相容，且會造成問題報告。
+具有傳統UI對話方塊的AEM元件應一律具有對應的觸控式UI對話方塊，以提供最佳的製作體驗，並與不支援傳統UI的Cloud Service部署模型相容。 此規則會驗證下列情況：
 
-如需詳細資訊，請參AEM閱[專案結構](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)。
+* 具有傳統UI對話框的元件（即對話框子節點）必須具有相應的觸控式UI對話框（即`cq:dialog`子節點）。
+* 具有傳統UI設計對話框的元件（即design_dialog節點）必須具有相應的觸控式UI設計對話框（即`cq:design_dialog`子節點）。
+* 元件具有傳統UI對話方塊和傳統UI設計對話方塊，必須同時具有對應的觸控式UI對話方塊和對應的觸控式UI設計對話方塊。
+
+AEM現代化工具檔案提供如何將元件從傳統UI轉換為觸控式UI的檔案和工具。 如需詳細資訊，請參閱[AEM現代化工具](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html)。
+
+### 包不應混用可變內容和不可變內容{#oakpal-packages-immutable}
+
+**索引鍵**:ImmutableMutableMixedPackage
+
+**類型**:代碼氣味/Cloud Service相容性
+
+**嚴重性**:次要
+
+**自**:2020.5.0版
+
+為了與Cloud Service部署模型相容，單個內容包必須包含儲存庫不可變區域的內容（即`/apps and /libs, although /libs`不應由客戶代碼修改，並且將導致單獨違規）或可變區域（即其他所有內容），但不能同時包含這兩個內容。 例如，包含`/apps/myco/components/text and /etc/clientlibs/myco`的包與Cloud Service不相容，並且會導致報告問題。
+
+如需詳細資訊，請參閱[AEM專案結構](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)。
 
 ### 不應使用反向複製代理{#oakpal-reverse-replication}
 
-**密鑰**:反向複製
+**索引鍵**:反向複製
 
-**類型**:程式碼氣味/Cloud Service相容性
+**類型**:代碼氣味/Cloud Service相容性
 
 **嚴重性**:次要
 
 **自**:2020.5.0版
 
-在Cloud Service部署中不支援反向複製，如[發行說明中所述：刪除複製代理](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)。
+如[發行說明所述，Cloud Service部署中不支援反向復寫：刪除複製代理](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)。
 
-使用反向複製的客戶應與Adobe聯繫，以獲得其他解決方案。
+使用反向復寫的Adobe應聯絡其他解決方案的客戶。
 
-### OakPAL —— 啟用Proxy的用戶端程式庫中包含的資源應位於名為resources {#oakpal-resources-proxy}的資料夾中
+### OakPAL — 啟用Proxy的用戶端程式庫中所包含的資源應位於名為「resources {#oakpal-resources-proxy}」的資料夾中
 
-**密鑰**:ClientlibProxyResource
+**索引鍵**:ClientlibProxyResource
 
 **類型**:錯誤
 
@@ -751,9 +750,9 @@ OSGi配置`com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl`定義了中的�
 
 **自**:2021.2.0版
 
-用戶AEM端程式庫可能包含靜態資源，例如影像和字型。 如[使用預處理器](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)中所述，在使用預處理器客戶端庫時，這些靜態資源必須包含在名為resources的子資料夾中，以便在發佈實例上有效地引用。
+AEM用戶端程式庫可包含靜態資源，例如影像和字型。 如[使用前置處理器](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)中所述，使用代理客戶端庫時，這些靜態資源必須包含在名為資源的子資料夾中，才能在發佈實例上有效引用。
 
-#### 不符合代碼{#non-compliant-proxy-enabled}
+#### 不相容代碼{#non-compliant-proxy-enabled}
 
 ```
 + apps
@@ -775,146 +774,146 @@ OSGi配置`com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl`定義了中的�
         + myimage.jpg
 ```
 
-### OakPAL -Cloud Service不相容工作流程的使用{#oakpal-usage-cloud-service}
+### OakPAL — 使用Cloud Service不相容的工作流程程式{#oakpal-usage-cloud-service}
 
-**密鑰**:CloudServiceIncomplativeWorkflowProcess
+**索引鍵**:CloudServiceIncomplatedWorkflowProcess
 
 **類型**:錯誤
 
-**嚴重性**:主修
+**嚴重性**:主要
 
 **自**:2021.2.0版
 
-隨著移至資產微服務以進行資產處理的AEMCloud Service，在內部部署和AMS版本中使用的數個工作流程程式變成不支援AEM或不必要。 位於[aem-cloud-migration](https://github.com/adobe/aem-cloud-migration)的移轉工具可用於在Cloud Service移轉期間更新工作AEM流程模型。
+隨著移至AEMCloud Service上資產處理的資產微服務，內部部署和AEM AMS版本中使用的數個工作流程程式，已變得不支援或不必要。 位於[aem-cloud-migration](https://github.com/adobe/aem-cloud-migration)的移轉工具可用於在AEMCloud Service移轉期間更新工作流程模型。
 
-### OakPAL —— 不建議使用靜態範本，而改用可編輯的範本{#oakpal-static-template}
+### OakPAL — 不建議使用靜態範本，改用可編輯的範本{#oakpal-static-template}
 
-**密鑰**:StaticTemplateUsage
+**索引鍵**:StaticTemplateUsage
 
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
 **自**:2021.2.0版
 
-雖然靜態範本的使用在專案中很常見，但強烈建議使用可編輯AEM的範本，因為這些範本可提供最大的彈性，並支援靜態範本中未顯示的其他功能。 如需詳細資訊，請參閱[頁面範本。](/help/implementing/developing/components/templates.md) 從靜態範本到可編輯範本的移轉，可使用「現代化工具」 [AEM大幅自動化](https://opensource.adobe.com/aem-modernize-tools/)。
+雖然靜態範本的使用在AEM專案中向來很常見，但強烈建議使用可編輯的範本，因為這些範本可提供最大的彈性，並支援靜態範本中未出現的其他功能。 如需詳細資訊，請參閱[頁面範本。](/help/implementing/developing/components/templates.md) 使用AEM現代化工具，從靜態範本移轉至可編輯的範本大 [幅自動化](https://opensource.adobe.com/aem-modernize-tools/)。
 
-### OakPAL —— 不建議使用舊版基礎元件{#oakpal-usage-legacy}
+### OakPAL — 不建議使用舊版基礎元件{#oakpal-usage-legacy}
 
-**密鑰**:LegacyFoundationComponentUsage
+**索引鍵**:LegacyFoundationComponentUsage
 
-**類型**:程式碼氣味
-
-**嚴重性**:次要
-
-**自**:2021.2.0版
-
-在多個版本中，支援WCM核心元件的舊式基礎元件（即`/libs/foundation`下的元件）已AEM被淘汰。 不建議使用舊式基礎元件做為自訂元件的基礎——不論是透過覆蓋或繼承——並應轉換為對應的核心元件。 [現代化工具](https://opensource.adobe.com/aem-modernize-tools/)AEM可促進這種轉換。
-
-### OakPAL —— 應使用{#oakpal-supported-runmodes}僅支援的執行模式名稱和順序
-
-**密鑰**:支援的執行模式
-
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
 **自**:2021.2.0版
 
-AEMCloud Service會針對執行模式名稱執行嚴格的命名原則，並對這些執行模式執行嚴格的排序。 支援的執行模式清單可在[Runmodes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes)上找到，任何偏離此模式的情況都會視為問題。
+若干AEM版本已棄用舊版基礎元件（即`/libs/foundation`底下的元件），改用WCM核心元件。 不鼓勵使用舊版基礎元件作為自訂元件的基礎（不論是透過覆蓋或繼承），且應轉換為對應的核心元件。 [AEM現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可促進此轉換。
 
-### OakPAL —— 自訂搜尋索引定義節點必須是/oak:index {#oakpal-custom-search}的直接子項
+### OakPAL — 僅使用支援的執行模式名稱和排序{#oakpal-supported-runmodes}
 
-**密鑰**:OakIndexLocation
+**索引鍵**:支援的運行模式
 
-**類型**:程式碼氣味
-
-**嚴重性**:次要
-
-**自**:2021.2.0版
-
-AEMCloud Service要求自訂搜尋索引定義（即oak:QueryIndexDefinition類型的節點）是`/oak:index`的直接子節點。 其他位置的索引必須移動，才能與AEMCloud Service相容。 有關搜索索引的詳細資訊，請參閱[內容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)。
-
-### OakPAL —— 自訂搜尋索引定義節點必須有2 {#oakpal-custom-search-compatVersion}的compat版本
-
-**密鑰**:IndexCompatVersion
-
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
 **自**:2021.2.0版
 
-AEMCloud Service要求自訂搜尋索引定義（即oak:QueryIndexDefinition類型的節點）必須將compatVersion屬性設為2。 Cloud Service不支援任何其他值AEM。 有關搜索索引的詳細資訊，請參閱[內容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)。
+AEMCloud Service會針對執行模式名稱強制執行嚴格的命名原則，並針對這些執行模式執行嚴格的排序。 可在[Runmodes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes)上找到支援的運行模式清單，因此與此的任何偏差都將被確定為問題。
 
-### OakPAL —— 自定義搜索索引定義節點的後代節點必須為Nt:Unstructured {#oakpal-descendent-nodes}類型
+### OakPAL — 自訂搜尋索引定義節點必須是/oak:index {#oakpal-custom-search}的直接子項
 
-**密鑰**:IndexDescendantNodeType
+**索引鍵**:OakIndexLocation
 
-**類型**:程式碼氣味
-
-**嚴重性**:次要
-
-**自**:2021.2.0版
-
-當自訂搜尋索引定義節點具有無序的子節點時，可能會發生難以疑難排解的問題。 為避免這些情況，建議`oak:QueryIndexDefinition`節點的所有子節點都為nt:unstructured類型。
-
-### OakPAL —— 自訂搜尋索引定義節點必須包含名為indexRules的子節點，該子節點具有{#oakpal-custom-search-index}子節點
-
-**密鑰**:IndexRulesNode
-
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
 **自**:2021.2.0版
 
-正確定義的自定義搜索索引定義節點必須包含名為indexRules的子節點，而該子節點必須至少有一個子節點。 如需詳細資訊，請參閱[Oak Documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html)。
+AEMCloud Service要求自訂搜尋索引定義（即oak:QueryIndexDefinition類型的節點）是`/oak:index`的直接子節點。 其他位置中的索引必須移動以與AEMCloud Service相容。 有關搜索索引的更多資訊，請參見[內容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)。
 
-### OakPAL —— 自訂搜尋索引定義節點必須遵循命名慣例{#oakpal-custom-search-definitions}
+### OakPAL — 自訂搜尋索引定義節點必須有2 {#oakpal-custom-search-compatVersion}的compatVersion
 
-**密鑰**:IndexName
+**索引鍵**:IndexCompatVersion
 
-**類型**:程式碼氣味
-
-**嚴重性**:次要
-
-**自**:2021.2.0版
-
-AEMCloud Service要求自定義搜索索引定義（即，`oak:QueryIndexDefinition`類型的節點）必須按照[內容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)中描述的特定模式命名。
-
-### OakPAL —— 自訂搜尋索引定義節點必須使用索引類型lucene {#oakpal-index-type-lucene}
-
-**密鑰**:IndexType
-
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
 **自**:2021.2.0版
 
-AEMCloud Service要求自訂搜尋索引定義（即oak:QueryIndexDefinition類型的節點）具有type屬性，其值設定為&#x200B;**lucene**。 使用舊索引類型的索引必須在遷移到Cloud Service之前AEM更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
+AEMCloud Service要求自訂搜尋索引定義（即oak:QueryIndexDefinition類型的節點）必須將compatVersion屬性設為2。 AEMCloud Service不支援任何其他值。 有關搜索索引的更多資訊，請參見[內容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)。
 
-### OakPAL —— 自訂搜尋索引定義節點不得包含名為seed {#oakpal-property-name-seed}的屬性
+### OakPAL — 自定義搜索索引定義節點的子節點類型必須為Nt:Unstructured {#oakpal-descendent-nodes}
 
-**密鑰**:IndexSeedProperty
+**索引鍵**:IndexDescendationNodeType
 
-**類型**:程式碼氣味
-
-**嚴重性**:次要
-
-**自**:2021.2.0版
-
-AEMCloud Service禁止自定義搜索索引定義（即`oak:QueryIndexDefinition`類型的節點）包含名為seed的屬性。 使用此屬性進行索引必須在遷移到Cloud Service之AEM前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
-
-### OakPAL —— 自訂搜尋索引定義節點不得包含名為reindex {#oakpal-reindex-property}的屬性
-
-**密鑰**:IndexReindexProperty
-
-**類型**:程式碼氣味
+**類型**:代碼氣味
 
 **嚴重性**:次要
 
 **自**:2021.2.0版
 
-AEMCloud Service禁止自定義搜索索引定義（即`oak:QueryIndexDefinition`類型的節點）包含名為reindex的屬性。 使用此屬性進行索引必須在遷移到Cloud Service之AEM前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
+當自訂搜尋索引定義節點具有無序的子節點時，可能會發生難以疑難排解的問題。 要避免這些情況，建議`oak:QueryIndexDefinition`節點的所有子代節點都屬於nt:unstructured類型。
+
+### OakPAL — 自訂搜尋索引定義節點必須包含子節點，名為indexRules，且其子節點為{#oakpal-custom-search-index}
+
+**索引鍵**:IndexRulesNode
+
+**類型**:代碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+正確定義的自定義搜索索引定義節點必須包含名為indexRules的子節點，而該子節點又必須至少包含一個子節點。 如需詳細資訊，請參閱[Oak Documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html)。
+
+### OakPAL — 自訂搜尋索引定義節點必須遵循命名慣例{#oakpal-custom-search-definitions}
+
+**索引鍵**:IndexName
+
+**類型**:代碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+AEMCloud Service要求必須按照[內容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)上描述的特定模式來命名自定義搜索索引定義（即`oak:QueryIndexDefinition`類型的節點）。
+
+### OakPAL — 自訂搜尋索引定義節點必須使用索引類型lucene {#oakpal-index-type-lucene}
+
+**索引鍵**:IndexType
+
+**類型**:代碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+AEMCloud Service要求自訂搜尋索引定義（即oak:QueryIndexDefinition類型的節點）具有type屬性，且值設為&#x200B;**lucene**。 使用舊式索引類型建立索引的過程必須在遷移到AEMCloud Service之前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) 。
+
+### OakPAL — 自訂搜尋索引定義節點不得包含名為seed {#oakpal-property-name-seed}的屬性
+
+**索引鍵**:IndexSeedProperty
+
+**類型**:代碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+AEMCloud Service禁止自訂搜尋索引定義（即`oak:QueryIndexDefinition`類型的節點）包含名為seed的屬性。 使用此屬性建立索引必須在遷移到AEMCloud Service之前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) 。
+
+### OakPAL — 自訂搜尋索引定義節點不得包含名為reindex {#oakpal-reindex-property}的屬性
+
+**索引鍵**:IndexReindexProperty
+
+**類型**:代碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+AEMCloud Service禁止自訂搜尋索引定義（即`oak:QueryIndexDefinition`類型的節點）包含名為reindex的屬性。 使用此屬性建立索引必須在遷移到AEMCloud Service之前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) 。
