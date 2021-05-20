@@ -5,7 +5,6 @@ breadcrumb-title: 核心概念指南
 user-guide-description: 本指南介紹 Experience Manager as a Cloud Service 的核心概念，包括新服務的架構。
 feature: 發行資訊
 role: Architect
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '65'
