@@ -1,36 +1,35 @@
 ---
-title: 資料保護與資料隱私權法規- Adobe Experience Manager作為雲端服務基礎準備
-description: '瞭解Adobe Experience Manager如何以雲端服務基礎的身分，支援各種資料保護與資料隱私權規定；包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及如何在將新AEM實作為雲端服務專案時符合規定。 '
-translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+title: 資料保護與資料隱私權法規 — Adobe Experience Manager作為Cloud Service基礎整備
+description: 了解Adobe Experience Manager作為各種資料保護和資料隱私權法規的Cloud Service基礎支援；包括歐盟一般資料保護規範(GDPR)、加州消費者隱私法，以及實作新AEM as aCloud Service專案時如何遵循。
+exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 5%
 
 ---
 
-
-# Adobe Experience Manager作為雲端服務基金會的準備，適用於資料保護和資料隱私權法規{#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager作為Cloud Service對資料保護和資料隱私權法規的基礎整備{#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
->本檔案內容不構成法律咨詢，不代表法律咨詢。
+>本檔案的內容不構成法律建議，且用意並非取代法律建議。
 >
->請洽詢貴公司的法律部門，以取得有關資料保護與資料隱私權法規的建議。
+>如需資料保護與資料隱私權法規的相關建議，請諮詢貴公司的法律部門。
 
 >[!NOTE]
 >
->如需Adobe對隱私權問題之回應，以及這對您身為Adobe客戶意味著什麼的詳細資訊，請參閱[Adobe的隱私權中心](https://www.adobe.com/privacy.html)。
+>如需有關Adobe對隱私權問題的回應，以及這對您身為Adobe客戶所代表之意義的詳細資訊，請參閱[Adobe的隱私權中心](https://www.adobe.com/privacy.html)。
 
-## AEM Foundation資料隱私與保護支援{#aem-foundation-data-privacy-and-protection-support}
+## AEM Foundation資料隱私權與保護支援{#aem-foundation-data-privacy-and-protection-support}
 
-在AEM Foundation層級，儲存的個人資料會保存在「使用者設定檔」中。 因此，本文的資訊主要涉及如何訪問和刪除用戶配置檔案，分別解決訪問和刪除請求。
+在AEM Foundation層級，儲存的個人資料會保留在使用者設定檔中。 因此，本文的資訊主要探討如何分別存取和刪除使用者設定檔，以處理存取和刪除請求。
 
 ## 訪問用戶配置檔案{#accessing-a-user-profile}
 
 ### 手動步驟{#manual-steps}
 
-1. 開啟「使用者管理」主控台，方法是瀏覽至&#x200B;**[!UICONTROL 工具——安全性——使用者]**，或直接瀏覽至`https://<serveraddress>:<serverport>/security/users.html`
+1. 開啟「用戶管理」控制台，方法是瀏覽至&#x200B;**[!UICONTROL Tools - Security - Users]**，或直接瀏覽至`https://<serveraddress>:<serverport>/security/users.html`
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -38,15 +37,15 @@ ht-degree: 5%
 
 1. 然後，在頁面頂端的搜尋列中輸入名稱，以搜尋有問題的使用者：
 
-   ![搜尋帳戶](assets/dpp-foundation-01.png)
+   ![搜索帳戶](assets/dpp-foundation-01.png)
 
-1. 最後，按一下使用者描述檔以開啟該描述檔，然後檢查&#x200B;**[!UICONTROL Details]**&#x200B;標籤下方。
+1. 最後，按一下該用戶配置檔案以開啟該用戶配置檔案，然後檢查&#x200B;**[!UICONTROL Details]**&#x200B;頁簽下。
 
-   ![用戶配置檔案](assets/dpp-foundation-02.png)
+   ![使用者設定檔](assets/dpp-foundation-02.png)
 
 ### HTTP API {#http-api}
 
-如前所述，Adobe提供API來存取使用者資料，以利自動化。 您可使用幾種API:
+如前所述，Adobe提供存取使用者資料的API，以促進自動化。 您可以使用數種API:
 
 **UserProperties API**
 
@@ -56,7 +55,7 @@ curl -u user:password http://localhost:4502/libs/granite/security/search/profile
 
 **Sling API**
 
-**搜索用戶首頁：**
+**探索使用者首頁：**
 
 ```xml
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
@@ -65,7 +64,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **正在檢索用戶資料：**
 
-使用上述命令傳回之JSON裝載之home屬性的節點路徑：
+使用從上述命令傳回之JSON裝載的home屬性中的節點路徑：
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -75,34 +74,34 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## 禁用用戶並刪除關聯的配置檔案{#disabling-a-user-and-deleting-the-associated-profiles}
+## 禁用用戶並刪除關聯的配置式{#disabling-a-user-and-deleting-the-associated-profiles}
 
 ### 禁用用戶{#disable-user}
 
-1. 開啟「使用者管理」主控台，並依上述說明搜尋相關使用者。
-2. 將滑鼠指標暫留在使用者上，然後按一下選取圖示。 描述檔會變成灰色，表示已選取。
+1. 開啟「使用者管理」主控台，並依上述說明搜尋有問題的使用者。
+2. 將滑鼠指標暫留在使用者上，然後按一下選取圖示。 輪廓將變為灰色，表示已選中。
 
-3. 按上方菜單中的&#x200B;**禁用**&#x200B;按鈕禁用用戶：
+3. 按上方菜單中的&#x200B;**禁用**&#x200B;按鈕以禁用用戶：
 
-   ![禁用帳戶](assets/dpp-foundation-03.png)
+   ![停用帳戶](assets/dpp-foundation-03.png)
 
 4. 最後，確認動作。
 
-   然後，使用者介面會指出已停用使用者帳戶，方法是移除並新增鎖定至描述檔卡：
+   然後，使用者介面會移除並新增鎖定至設定檔卡片，以指出使用者帳戶已停用：
 
-   ![已禁用帳戶](assets/dpp-foundation-04.png)
+   ![帳戶已停用](assets/dpp-foundation-04.png)
 
 ### 刪除用戶配置檔案資訊{#delete-user-profile-information}
 
 >[!NOTE]
 >
->對於AEM做為雲端服務，UI中沒有可刪除使用者設定檔的手動程式，因為無法存取CRXDE。
+>針對AEM as aCloud Service,UI中沒有可用於刪除使用者設定檔的手動程式，因為無法存取CRXDE。
 
 ### HTTP API {#http-api-1}
 
 以下過程使用命 `curl` 令行工具說明如何禁用具有預設位置 **[!UICONTROL 的用]**`userId` 戶並刪除其配置檔案。
 
-**搜索用戶首頁：**
+**探索使用者首頁：**
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
@@ -111,7 +110,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **禁用用戶：**
 
-使用上述命令傳回之JSON裝載之home屬性的節點路徑：
+使用從上述命令傳回之JSON裝載的home屬性中的節點路徑：
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
@@ -119,7 +118,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 **刪除用戶配置檔案**
 
-使用從帳戶探索命令傳回的JSON裝載首頁屬性中的節點路徑，以及已知的開箱外描述檔節點位置：
+使用從帳戶探索命令傳回之JSON裝載的首頁屬性中的節點路徑，以及現成可用的設定檔節點位置：
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
