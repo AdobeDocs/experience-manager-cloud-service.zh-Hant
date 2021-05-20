@@ -2,7 +2,6 @@
 title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-translation-type: tm+mt
 source-git-commit: 75071cb1793b9b670ebbc029bf9fb41f4de119f9
 workflow-type: tm+mt
 source-wordcount: '2009'
@@ -20,7 +19,7 @@ ht-degree: 92%
 
 >[!TIP]
 >
->請參閱我們的Experience League課程[為管理員設定存取權&lt;a1/AEM>，以瞭解使用者如何使用AdobeIMS驗證為Cloud Service，以及如何使用AdobeIMS使用者、使用者群組和產品設定檔來控制存取AEM及其功能。 ](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)Adobe ID需要。
+>請參閱我們的Experience League課程[設定AEM的存取權限（管理員](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)），了解使用者如何使用AdobeIMS進行AEM身分Cloud Service驗證，以及如何使用AdobeIMS使用者、使用者群組和產品設定檔來控制AEM存取權及其功能。 Adobe ID為必要。
 
 ## 重要焦點 {#key-highlights}
 
@@ -129,7 +128,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 ### 在 Admin Console 中管理產品和使用者存取權限 {#managing-products-and-user-access-in-admin-console}
 
-當產品管理員登入Admin Console時，他們會將多個例項視為AEMCloud Service產品內容，如下所示。 例如，從&#x200B;**概述**&#x200B;頁面選擇任何產品：
+產品管理員登入Admin Console時，會將AEM的多個例項視為Cloud Service產品內容，如下所示。 例如，從&#x200B;**概述**&#x200B;頁面中選取任何產品：
 
 ![例項登入](/help/security/assets/ims6.png)
 
@@ -137,7 +136,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 ![例項登入 2](/help/security/assets/ims7.png)
 
-在每個「產品內容」例項下，都會有跨生產、舞台或開發環境的「作者」或「發佈」服務執行個體。 每個實例都與「產品配置檔案」或「雲端管理員」角色關聯。 這些產品設定檔可用來指派具有必要權限的使用者和群組存取權。
+在每個「產品內容」例項下，都有橫跨生產、預備或開發環境之製作或發佈服務的例項。 每個例項都會與產品設定檔或Cloud Manager角色相關聯。 這些產品設定檔可用來指派存取權給具有必要權限的使用者和群組。
 
 **Administrator_xxx** 設定檔可授與相關聯 AEM 例項的管理員權限，而 **User_xxx** 設定檔則可新增一般使用者。
 
