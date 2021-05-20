@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 description: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
-translation-type: tm+mt
-source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
+exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 90%
 
 ---
-
 
 # Adobe Experience Manager (AEM) as a Cloud Service 重大變更 {#notable-changes-aem-cloud}
 
@@ -18,10 +17,10 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 >本文件著重說明 AEM 整體的重大變更。如需詳細資訊和解決方案的特定變更，請參閱：
 >
 >* [Adobe Experience Manager as a Cloud Service 簡介](/help/overview/introduction.md)
->* Adobe Experience Manager as a Cloud Service 與舊版的[新增功能與不同之處](/help/overview/what-is-new-and-different.md)
->* Adobe Experience Manager as a Cloud Service [架構](/help/core-concepts/architecture.md)
->* [AEM Sites as a Cloud Service 重大變更](/help/sites-cloud/sites-cloud-changes.md)
->* [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
+* Adobe Experience Manager as a Cloud Service 與舊版的[新增功能與不同之處](/help/overview/what-is-new-and-different.md)
+* Adobe Experience Manager as a Cloud Service [架構](/help/core-concepts/architecture.md)
+* [AEM Sites as a Cloud Service 重大變更](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 
 
 主要差異在於以下方面：
@@ -65,7 +64,7 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 
 ## 禁止變更發佈用儲存庫 {#changes-to-publish-repo}
 
-除了發佈層`/home`資料夾下的變更外，不允許在Cloud Service中直接變更發佈存放AEM庫。 在舊版的內部部署或AMSAEM上AEM，可直接對發佈儲存庫進行程式碼變更。 有些限制可透過下列方式加以緩解：
+除了發佈層級`/home`資料夾下的變更外，AEMCloud Service不允許直接變更發佈存放庫。 在舊版內部部署AEM或AMS上的AEM中，程式碼可直接變更發佈用存放庫。 可透過下列方式緩解部分限制：
 
 * 內容和以內容為基礎的設定：變更作者例項並發佈。
 * 程式碼和設定：在 GIT 儲存庫中變更，並執行 CI/CD 管線以轉出這些變更。
@@ -108,7 +107,7 @@ AEM 雲端服務預設啟用 HTTP 加速功能，包括適用於作者與發佈�
 
 ## 資產處理與傳送 {#asset-handling}
 
-資產上傳、處理和下載已在資產中最佳化，因此Cloud Service更有效率，可提升縮放比例，並加速上傳和下載。 然而，這可能會影響部分現有的自訂程式碼。
+資產上傳、處理和下載作業已在Assets中最佳化，以提供更有效率的Cloud Service，同時可提升擴充功能，並加快上傳和下載速度。 然而，這可能會影響部分現有的自訂程式碼。
 
 * 舊版 AEM 已不提供預設的工作流程 **DAM Asset Update**。
 * 若要&#x200B;**在不轉換的情況下**&#x200B;傳送二進位的網站元件，應使用直接下載。
