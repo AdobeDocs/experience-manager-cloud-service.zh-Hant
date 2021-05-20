@@ -1,14 +1,13 @@
 ---
 title: 已知問題
 description: Adobe Experience Manager as a Cloud Service 已知問題的發行說明
-translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
-
 
 # 已知問題 {#known-issues}
 
@@ -22,7 +21,7 @@ ht-degree: 100%
 ## Sites {#sites}
 -->
 
-## Assets {#assets}
+## 資產 {#assets}
 
 <!-- Jira label: assets-cloud-known-issues -->
 
@@ -44,6 +43,6 @@ Adobe Experience Manager Assets 的少數功能需仰賴基礎功能，這些基
 >[!MORELIKETHIS]
 >
 >* [AEM 重大變更](aem-cloud-changes.md)
->* [過時和移除的功能](deprecated-removed-features.md)
->* [發行說明](home.md)
+* [過時和移除的功能](deprecated-removed-features.md)
+* [發行說明](home.md)
 
