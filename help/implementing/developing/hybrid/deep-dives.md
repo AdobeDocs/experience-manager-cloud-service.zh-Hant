@@ -1,21 +1,20 @@
 ---
-title: SPA深潛
-description: AEM SPA Editor SDK已包含在一系列AEM Gems工作階段中。 本系列由Adobe工程師代管，是深入瞭解AEM SPA Editor SDK的絕佳指南，由Adobe工程師代管。
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+title: SPA深度潛水
+description: 一系列AEM Gem課程都精選了AEM SPA Editor SDK。 此系列由Adobe工程師主持，可做為一份絕佳指南，讓Adobe工程師主持，以更深入了解AEM SPA Editor SDK。
+exl-id: 93c950be-be80-42d5-93eb-805a91b6ebba
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
 
 ---
 
-
 # SPA深潛{#spa-deep-dives}
 
-AEM SPA Editor SDK已包含在一系列AEM Gems工作階段中。 [Adobe Experience Manager ](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) Gemsis是Adobe專家提供的一系列技術深入探討。本系列由Adobe工程師代管，可做為深入瞭解AEM SPA Editor SDK的絕佳指南。
+一系列AEM Gem課程都精選了AEM SPA Editor SDK。 [Adobe Experience Manager](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) ·格密斯Adobe專家進行了一系列技術深潛。此系列由Adobe工程師主持，可做為一份絕佳的指南，讓您從低層級更深入了解AEM SPA Editor SDK。
 
 ## Gem會話{#gem-sessions}
 
-* **[AEM SPA編輯器](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html) [](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html)** - SPA編輯器的入門者概觀。如果您剛開始使用AEM中的SPA，請從這裡開始。
-* **[SPA編輯器SDK深入探討——第1部分](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-React.html)** - React-深入探討可使用AEM頁面編輯器製作的單頁應用程式開發。涵蓋專案結構的考量與建議、審查構成專案架構的所有圖層、AEM和SPA元件的角色、模型物件的結構與關鍵JSON欄位等！
-* **[SPA編輯器SDK深入探討——第2部分](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-Angular.html)** - Angular-深入探討可使用AEM頁面編輯器製作的單頁應用程式開發。涵蓋專案結構的考量與建議、審查構成專案架構的所有圖層、AEM和SPA元件的角色、模型物件的結構與關鍵JSON欄位等！
+* **[AEM SPA編輯器](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html) [](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html)**  - SPA編輯器的入門概述。如果您剛開始使用AEM中的SPA，請從這裡開始。
+* **[SPA Editor SDK深入探討 — 第1部分 — React](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-React.html)**  — 深入探討單頁應用程式的開發，這些應用程式可使用AEM頁面編輯器製作。涵蓋關於專案結構的考量事項和建議、審查構成專案架構的所有層、AEM和SPA元件的角色、模型物件的結構和關鍵JSON欄位等！
+* **[SPA Editor SDK深入探討 — 第2部分 — Angular](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-Angular.html)**  — 深入探討單頁應用程式的開發，這些應用程式可使用AEM頁面編輯器進行製作。涵蓋關於專案結構的考量事項和建議、審查構成專案架構的所有層、AEM和SPA元件的角色、模型物件的結構和關鍵JSON欄位等！
