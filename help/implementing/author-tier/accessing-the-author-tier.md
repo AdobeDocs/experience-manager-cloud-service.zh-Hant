@@ -1,14 +1,13 @@
 ---
 title: 存取作者階層
 description: 存取作者階層
-translation-type: tm+mt
-source-git-commit: e772687c4034a364912aa426a133134571246db9
+exl-id: 4143a125-3d46-4c44-b52c-f55c5194fb9c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 100%
 
 ---
-
 
 # 存取作者階層{#accessing-the-author-tier}
 
