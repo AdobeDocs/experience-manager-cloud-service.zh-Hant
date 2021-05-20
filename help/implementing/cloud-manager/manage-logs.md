@@ -1,38 +1,37 @@
 ---
-title: 管理記錄檔——雲端服務
-description: 管理記錄檔——雲端服務
-translation-type: tm+mt
-source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
+title: 管理記錄 — Cloud Service
+description: 管理記錄 — Cloud Service
+exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 17%
 
 ---
 
-
 # 存取和管理記錄檔 {#manage-logs}
 
-用戶可以使用環境卡訪問選定環境的可用日誌檔案清單。  使用者可以存取所選環境的可用記錄檔清單。
+使用者可以使用「環境卡」存取所選環境的可用記錄檔清單。  使用者可以存取所選環境的可用記錄檔清單。
 
-這些檔案可透過UI下載，可從&#x200B;**概述**&#x200B;頁面：
+這些檔案可透過UI，從&#x200B;**概述**&#x200B;頁面下載：
 
 ![](assets/download-logs1.png)
 
-或者， **Environments**&#x200B;頁：
+或者， **Environments**&#x200B;頁面：
 
 ![](assets/download-logs.png)
 
 >[!NOTE]
->不論其開啟位置為何，都會出現相同的對話方塊，並允許下載個別記錄檔。
+>無論其開啟位置為何，都會顯示相同的對話方塊，並允許下載個別記錄檔。
 
 ![](assets/download-logs2.png)
 
 
-## 透過API {#logs-through-api}記錄檔
+## 透過API {#logs-through-api}記錄
 
 除了透過UI下載記錄檔外，記錄檔也可透過API和命令列介面使用。
 
-例如，要下載特定環境的日誌檔案，命令將是
+例如，要下載特定環境的日誌檔案，該命令將是
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
@@ -44,7 +43,7 @@ $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-為了獲得環境ID（在本例中為1884）和可用的服務或日誌名稱選項，您可以使用：
+為了取得環境ID（在此例中為1884），以及您可以使用的可用服務或記錄名選項：
 
 ```java
 $ aio cloudmanager:list-environments
@@ -72,7 +71,7 @@ Environment Id Service    Name
 
 ### 其他資源 {#resources}
 
-請參閱下列其他資源，以進一步瞭解Cloud Manager API和Adobe I/O CLI:
+請參考下列其他資源，以進一步了解Cloud Manager API和Adobe I/OCLI:
 
 * [Cloud Manager API檔案](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Adobe I/OCLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
