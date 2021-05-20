@@ -1,44 +1,43 @@
 ---
-title: 產生伺服器端API的存取Token
-description: 瞭解如何透過產生安全的JWT Token，促進協AEM力廠商伺服器與Cloud Service之間的通訊
-translation-type: tm+mt
-source-git-commit: 41b4bb3a63089c05750a40e910ee7578727d8b15
+title: 產生伺服器端API的存取權杖
+description: 了解如何產生安全的JWT代號，以促進協力廠商伺服器與AEM作為Cloud Service之間的通訊
+exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 0%
 
 ---
 
-
 # 簡介 {#introduction}
 
-有些架構依賴於從位於基礎架AEM構外部伺服器上的應用程式，以Cloud Service的形式呼叫AEM。 例如，呼叫伺服器的行動應用程式，接著會以Cloud Service的形AEM式提出API要求。
+有些架構依賴從AEM基礎架構外的伺服器上托管的應用程式Cloud Service對AEM進行呼叫。 例如，呼叫伺服器的行動應用程式，接著會向AEM提出API要求作為Cloud Service。
 
-伺服器對伺服器的流程說明如下，以及簡化的開發流程。 作AEM為Cloud Service[開發人員控制台](development-guidelines.md#crxde-lite-and-developer-console)用於生成驗證過程所需的令牌。
+伺服器對伺服器的流程及簡化的開發流程如下所述。 AEM作為Cloud Service[開發人員控制台](development-guidelines.md#crxde-lite-and-developer-console)用於產生驗證程式所需的代號。
 
 >[!NOTE]
 >
->除了本檔案外，您也可以參閱[Token型驗證的教學課程，以AEM做為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)。
+>除了本檔案外，您也可以參閱[AEM as aCloud Service的Token型驗證的教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)。
 
-## 伺服器到伺服器流{#the-server-to-server-flow}
+## 伺服器對伺服器流{#the-server-to-server-flow}
 
-具有IMS組織管理員角色的用戶可以生成作為Cloud Service憑據的用戶，該證書隨後可由具有AEMCloud Service環境管理員角色的用戶檢索，並且應該安裝在伺服器上，並需要謹慎地作為密鑰處理。 此JSON格式檔案包含與Cloud ServiceAPI整合所需AEM的所有資料。 該資料用於建立與IMS交換的已簽名JWT令牌，以用於IMS訪問令牌。 然後，此存取Token可用作「承載」驗證Token，以AEM做為Cloud Service。
+具有IMS組織管理員角色的使用者可產生AEM作為Cloud Service憑證，之後以AEM作為Cloud Service環境管理員角色的使用者便可擷取該憑證，且應安裝在伺服器上，且需要謹慎處理為機密金鑰。 此JSON格式檔案包含與AEM整合為Cloud ServiceAPI所需的所有資料。 資料可用來建立已簽署的JWT代號，此代號會與IMS交換以取得IMS存取代號。 然後，此存取權杖可作為承載驗證權杖，以向AEM提出作為Cloud Service的要求。
 
-伺服器對伺服器的流程包含下列步驟：
+伺服器對伺服器流程涉及下列步驟：
 
-* 從Developer ConsoleAEM擷取Cloud Service憑證
-* 在非伺服AEM器上，以Cloud Service憑證的形式安AEM裝至
-* 產生JWT Token，並使用Adobe的IMS API將該Token交換為存取Token。
-* 以存取AEMToken作為承載驗證Token呼叫API
-* 為環境中的技術帳戶用戶設定適當的權AEM限
+* 從開發人員控制台擷取AEM作為Cloud Service憑證
+* 在對AEM進行呼叫的非AEM伺服器上，將AEM安裝為Cloud Service憑證
+* 使用Adobe的IMS API產生JWT代號，並交換存取代號的代號
+* 使用存取權杖作為承載驗證權杖來呼叫AEM API
+* 在AEM環境中為技術帳戶使用者設定適當的權限
 
-### 將AEM作為Cloud Service憑據{#fetch-the-aem-as-a-cloud-service-credentials}
+### 將AEM擷取為Cloud Service憑證{#fetch-the-aem-as-a-cloud-service-credentials}
 
-以Cloud Service開發人員主控AEM台身分存取的使用者，將會看到「開發人員主控台」中針對特定環境的整合標籤，以及兩個按鈕。 具有「Cloud Service環境管理員」角色的用戶可以按一下「獲取服務憑據」按鈕來顯示服務憑據json，該憑據將包含非伺服器所需的所有資訊（包括客戶端ID、客戶機密鑰、私鑰、證書和環境的作者和發佈層的配置），而不考慮選擇Pod。****
+具有AEM as aCloud Service開發人員控制台存取權的使用者，將會在指定環境的開發人員控制台中看到整合標籤，以及兩個按鈕。 具有AEM作為Cloud Service環境管理員角色的使用者可以按一下&#x200B;**取得服務憑證**&#x200B;按鈕以顯示服務憑證json，其中包含非AEM伺服器所需的所有資訊，包括用戶端ID、用戶端密碼、私密金鑰、憑證，以及環境製作和發佈層級的設定，無論選擇何種Pod。
 
-![JWT Generation](assets/JWTtoken3.png)
+![JWT產生](assets/JWTtoken3.png)
 
-輸出將類似於：
+輸出將類似於以下內容：
 
 ```
 {
@@ -62,17 +61,17 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->IMS組織管理員（通常是透過Cloud Manager布建環境的相同使用者）必須先存取Developer Console，然後按一下「取得服務認證」按鈕，才能產生認證，然後由具有Cloud Service環境管理權限的使用者AEM擷取。 ****&#x200B;如果IMS組織管理員尚未執行此動作，會收到訊息通知他們需要IMS組織管理員角色。
+>IMS組織管理員（通常是透過Cloud Manager布建環境的相同使用者）必須先存取開發人員主控台，然後按一下&#x200B;**取得服務憑證**&#x200B;按鈕，憑證便能產生，且之後會由具有AEMCloud Service環境管理員權限的使用者擷取。 如果IMS組織管理員尚未執行此動作，系統會傳送訊息通知他們需要IMS組織管理員角色。
 
-### 在非服AEM務器&lt;a0/AEM>上安裝服務憑據{#install-the-aem-service-credentials-on-a-non-aem-server}
+### 在非AEM伺服器{#install-the-aem-service-credentials-on-a-non-aem-server}上安裝AEM服務憑證
 
-呼叫的非AEM應用程式應AEM該能夠以Cloud Service憑證AEM的形式存取，將其視為機密。
+對AEM發出呼叫的非AEM應用程式應能以Cloud Service憑證的形式存取AEM，並將其視為機密。
 
-### 產生JWT Token並將它交換為存取Token{#generate-a-jwt-token-and-exchange-it-for-an-access-token}
+### 產生JWT代號並交換存取代號{#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-在呼叫Adobe的IMS服務時，使用憑證來建立JWT Token，以擷取存取Token，此Token的有效期為24小時。
+在呼叫Adobe的IMS服務時使用憑證建立JWT代號，以擷取有效期為24小時的存取代號。
 
-CSAEM服務認證可使用為此目的而設計的用戶端程式庫來交換為存取Token。 客戶端庫可從[Adobe的公共GitHub儲存庫](https://github.com/adobe/aemcs-api-client-lib)獲得，其中包含更詳細的指導和最新資訊。
+AEM CS服務憑證可使用為此目的而設計的用戶端程式庫，以取代存取權杖。 用戶端程式庫可從[Adobe的公用GitHub存放庫](https://github.com/adobe/aemcs-api-client-lib)取得，其中包含更詳細的指引和最新資訊。
 
 ```
 /*jshint node:true */
@@ -92,60 +91,60 @@ exchange(config).then(accessToken => {
 });
 ```
 
-同樣的交換可以用任何能夠生成具有正確格式的簽名的JWT令牌並調用IMS令牌交換API的語言來執行。
+同樣的交換可以以任何語言執行，這些語言能夠以正確的格式產生簽名的JWT令牌並調用IMS令牌交換API。
 
-存取Token會定義其過期的時間，通常為24小時。 Git儲存庫中有范常式式碼，可管理存取Token並在存取Token過期前加以重新整理。
+存取權杖會在何時過期（通常為24小時）加以定義。 Git存放庫中有范常式式碼，可管理存取權杖，並在存取權杖過期前重新整理。
 
-### 呼叫AEMAPI {#calling-the-aem-api}
+### 呼叫AEM API {#calling-the-aem-api}
 
-將適當的伺服器對伺服器API呼叫當做AEMCloud Service環境，包括標題中的存取Token。 因此，對於「授權」標題，請使用值`"Bearer <access_token>"`。 例如，使用`curl`:
+將適當的伺服器對伺服器API呼叫作為Cloud Service環境，包括標題中的存取權杖。 因此，對於「授權」標頭，請使用值`"Bearer <access_token>"`。 例如，使用`curl`:
 
 ```curlc
 curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
 ```
 
-### 在{#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}中為技術帳戶用戶設定AEM適當的權限
+### 在AEM {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}中為技術帳戶使用者設定適當的權限
 
-在中建立技術帳戶使用者(這發生在第一個具有AEM相應存取Token的請求之後)後，技術帳戶使用者必須在&#x200B;**中獲得適當的權限AEM。**
+在AEM中建立技術帳戶使用者後（這會發生在具有對應存取權杖的第一個要求之後），技術帳戶使用者必須在&#x200B;**AEM中獲得適當的權限**。
 
-請注意，在AEM Author服務中，技術帳戶使用者依預設會新增至提供讀取存取權的「參與者」使用者群AEM組。
+請注意，依預設，在AEM Author服務中，技術帳戶使用者會新增至提供讀取存取權AEM的貢獻者使用者群組。
 
-中的此技術帳戶使AEM用者可使用一般方法，以權限進一步付費。
+AEM中的此技術帳戶使用者可透過慣用方法進一步以權限預先設定。
 
-## 開發人員流程{#developer-flow}
+## 開發人員流{#developer-flow}
 
-開發人員可能會想要使用其非應用程式的開發執行個體AEM（在其膝上型電腦或代管上執行）進行測試，以要求將開發當成AEMCloud Service開發環境。 但是，由於開發人員不一定擁有IMS管理員角色權限，因此我們不能假設他們可以產生一般伺服器對伺服器流程中所描述的JWT載體。 因此，我們提供一種機制，讓開發人員直接產生存取Token，該存取Token可用於要求，AEM做為他們可存取的Cloud Service環境。
+開發人員可能會想使用其非AEM應用程式的開發例項（在筆記型電腦上執行或托管）進行測試，該例項會將開發AEM作為Cloud Service開發環境提出請求。 不過，由於開發人員不一定擁有IMS管理員角色權限，因此我們無法假設他們可以產生一般伺服器對伺服器流程中所述的JWT承載。 因此，我們提供一種機制，讓開發人員直接產生存取權杖，該權杖可用於要求AEM作為其可存取的Cloud Service環境。
 
-如需使用Cloud Service開發人員主控台所需權限的詳細資訊，請參閱[開發人員指南檔案&lt;a1/AEM>。](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)
+請參閱[開發人員指南檔案](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) ，取得使用AEM作為Cloud Service開發人員主控台所需權限的相關資訊。
 
 >[!NOTE]
 >
->本機開發存取Token的有效期上限為24小時，之後必須使用相同的方法重新產生。
+>本機開發存取權杖的有效期最長為24小時，之後必須使用相同的方法重新產生。
 
-開發人員可使用此Token，從其非測試應用程AEM式呼叫AEM至Cloud Service環境。 通常，開發人員會將此Token與非應用程式搭配使用AEM在自己的筆記型電腦上。 此外，AEM雲通常是非生產環境。
+開發人員可使用此代號，從其非AEM測試應用程式，以AEM為Cloud Service環境進行呼叫。 通常，開發人員會在自己的筆記型電腦上，將此代號與非AEM應用程式搭配使用。 此外，AEM as a Cloud通常是非生產環境。
 
 開發人員流程包含下列步驟：
 
-* 從Developer Console產生存取Token
-* 使用存取AEMToken呼叫應用程式。
+* 從開發人員控制台產生存取權杖
+* 使用存取權杖呼叫AEM應用程式。
 
-開發人員也可以對在本機AEM電腦上執行的專案進行API呼叫，在此情況下不需要存取Token。
+開發人員也可以對在其本機電腦上執行的AEM專案進行API呼叫，在此情況下就不需要存取權杖。
 
-### 產生存取Token {#generating-the-access-token}
+### 產生存取權杖{#generating-the-access-token}
 
-按一下「開發人員主控台」中的「取得本機開發Token **」按鈕，產生存取Token。**
+按一下開發人員控制台中的&#x200B;**取得本機開發代號**&#x200B;按鈕，產生存取代號。
 
-### 然後呼AEM叫使用存取Token {#call-the-aem-application-with-an-access-token}的應用程式
+### 然後使用存取權杖{#call-the-aem-application-with-an-access-token}呼叫AEM應用程式
 
-將非應用程式的伺服器對伺服器API呼AEM叫作Cloud ServiceAEM環境，包括標題中的存取Token。 因此，對於「授權」標題，請使用值`"Bearer <access_token>"`。
+將適當的伺服器對伺服器API呼叫從非AEM應用程式呼叫至AEM作為Cloud Service環境，包括標題中的存取權杖。 因此，對於「授權」標頭，請使用值`"Bearer <access_token>"`。
 
-## 服務憑據撤銷{#service-credentials-revocation}
+## 服務憑據吊銷{#service-credentials-revocation}
 
 如果需要撤銷憑證，您需要使用下列步驟向客戶支援提交請求：
 
-1. 在用戶介面中禁用Adobe Admin Console的技術帳戶用戶：
+1. 在使用者介面中停用Adobe Admin Console的技術帳戶使用者：
    * 在Cloud Manager中，按&#x200B;**...**&#x200B;按鈕。 這會開啟產品設定檔頁面
    * 現在，按一下&#x200B;**AEM Users**&#x200B;設定檔，以顯示使用者清單
-   * 按一下「**API認證**」標籤，然後尋找適當的技術帳戶使用者並加以刪除
-2. 聯絡客戶支援，並要求刪除該特定環境的服務認證
+   * 按一下&#x200B;**API憑證**&#x200B;標籤，然後找到適當的技術帳戶使用者並將其刪除
+2. 請連絡客戶支援，並要求刪除該特定環境的服務憑證
 3. 最後，您可以再次產生憑證，如本檔案所述。 同時，請確定所建立的新技術帳戶使用者擁有適當的權限。
