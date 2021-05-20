@@ -1,14 +1,13 @@
 ---
 title: 2020.3.0 版發行說明
 description: 2020.3.0 版發行說明
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
 
 ---
-
 
 # AEM as a Cloud Service 2020.3.0 版發行說明 {#release-notes}
 
@@ -36,4 +35,3 @@ Experience Manager as a Cloud Service 的 2020.3.0 的發行日期為 2020 年 3
 * 在同一個雲端服務程式中同時建立多個開發環境時，可能會發生只能成功建立一個環境的情況。
 * 未能穩定收到雲端服務程式的 Experience Cloud 通知。
 * 特定專案中，*ResourceResolver 物件應一律關閉*，這會產生 Null 指標異常，但不會影響管道執行。
-
