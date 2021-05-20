@@ -1,32 +1,31 @@
 ---
 title: 控制台的鍵盤快速鍵
-description: 使用這些鍵盤快速鍵，以節省製作時間
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+description: 使用這些鍵盤快速鍵進行編寫時節省時間
+exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 4%
 
 ---
 
+# 控制台的鍵盤快捷鍵{#keyboard-shortcuts-for-consoles}
 
-# 控制台的鍵盤快速鍵{#keyboard-shortcuts-for-consoles}
+下列捷徑可供「網站」、「資產」、「使用者」、「群組」、「專案」和「體驗片段」主控台使用。
 
-下列快速鍵可用於「網站」、「資產」、「使用者」、「群組」、「專案」和「體驗片段」控制台。
-
-| 位置 | 捷徑 | 說明 |
+| 位置 | 快速鍵 | 說明 |
 |---|---|---|
 | 一般 | `Ctrl+Click` | 多選 |
-| 控制台——列視圖和內容視圖 | `Right Arrow` | 向下導覽至您網站的結構／展開樹節點 |
-|  | `Left Arrow` | 向上導航樹結構／折疊樹節點 |
-|  | `Down Arrow` | 下移相同層級的頁面清單 |
-|  | `Up Arrow` | 向上移動同一級別的頁面清單 |
-| 控制台——列視圖 | `Shift-Up/Down Arrow` | 向上移動同一級別的頁面清單 |
-|  | `Esc` | 向上移動同一級別的頁面清單 |
-| 控制台 | `?` | 鍵盤快速鍵說明 |
+| 主控台 — 欄檢視與內容檢視 | `Right Arrow` | 向下導覽至您網站的結構/展開樹狀節點 |
+|  | `Left Arrow` | 向上導航樹結構/折疊樹節點 |
+|  | `Down Arrow` | 下移同一層的頁面清單 |
+|  | `Up Arrow` | 上移同一層的頁面清單 |
+| 控制台 — 列視圖 | `Shift-Up/Down Arrow` | 上移同一層的頁面清單 |
+|  | `Esc` | 上移同一層的頁面清單 |
+| 主控台 | `?` | 鍵盤快速鍵說明 |
 |  | `/` | 叫用[search](/help/sites-cloud/authoring/getting-started/search.md) |
-|  | `Alt+`&lt;`Number`> | 切換要檢視的[滑軌選擇器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)選項 |
-|  | 「 | 隱藏邊欄 |
+|  | `Alt+`&lt;`Number`> | 切換要檢視的[邊欄選取器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)選項 |
+|  | &#39; | 隱藏邊欄 |
 |  | `e` | 編輯 |
 |  | `p` | 屬性 |
 |  | `m` | 移動 |
@@ -35,11 +34,11 @@ ht-degree: 4%
 |  | `Backspace` | 刪除 |
 | 屬性頁面 | `Ctrl+s` | 儲存 |
 
-鍵組合與Windows [修飾鍵](#os-specific-modifier-keys)一起列出。
+鍵組合與Windows [修飾符鍵](#os-specific-modifier-keys)一起列出。
 
-## 作業系統專用的修飾鍵{#os-specific-modifier-keys}
+## OS特定修飾詞鍵{#os-specific-modifier-keys}
 
-用於鍵盤快速鍵的修飾鍵依用戶端使用的作業系統而異。
+鍵盤快速鍵使用的修飾鍵會因用戶端使用的作業系統而異。
 
 | Windows/Linux | macOS |
 |---|---|
@@ -48,37 +47,37 @@ ht-degree: 4%
 
 ## 瀏覽器和鍵盤快速鍵{#browsers-and-keyboard-shortcuts}
 
-AEM可避免常用瀏覽器已使用的常用捷徑，但AEM捷徑不會覆寫預設的瀏覽器行為。
+AEM會避免常用瀏覽器已使用的常見捷徑，但AEM捷徑不會覆寫預設瀏覽器行為。
 
-此外，所有地區設定和鍵盤版面的鍵盤快速鍵都相同。
+此外，所有語言環境和鍵盤佈局的鍵盤快捷鍵都相同。
 
 >[!NOTE]
 >
->AEM捷徑不會覆寫預設的瀏覽器行為。
+>AEM快速鍵不會覆寫預設瀏覽器行為。
 >
->如果AEM和瀏覽器捷徑之間發生衝突，AEM捷徑將無法運作，因此會產生瀏覽器功能。
+>如果AEM和瀏覽器捷徑之間發生衝突，AEM捷徑將無法運作，因而轉讓至瀏覽器功能。
 
 >[!CAUTION]
 >
->AEM鍵盤快速鍵可能會干擾螢幕閱讀器、部分瀏覽器功能和其他協助工具。
+>AEM鍵盤快速鍵可能會干擾螢幕助讀程式、某些瀏覽器功能和其他協助工具。
 >
->Adobe建議在使用螢幕閱讀程式時，[停用AEM鍵盤快速鍵](#deactivating-keyboard-shortcuts)。
+>Adobe建議在使用螢幕助讀程式時[停用AEM鍵盤快速鍵](#deactivating-keyboard-shortcuts)。
 
 ## 停用鍵盤快速鍵{#deactivating-keyboard-shortcuts}
 
-AEM提供一些常用功能（編輯、屬性、複製／貼上、顯示各種側欄選單等）的鍵盤快速鍵。
+AEM提供一些常用功能（編輯、屬性、複製/貼上、顯示各種側欄功能表等）的鍵盤快速鍵。
 
-對於未使用鍵盤快速鍵或具有特定協助工具需求的使用者，所有鍵盤快速鍵皆可停用。
+對於未使用鍵盤快捷方式或具有特定輔助功能要求的用戶，可以禁用所有鍵盤快捷方式。
 
-您可以停用兩個位置的鍵盤快速鍵：
+您可以在兩個位置中停用鍵盤快速鍵：
 
 * [我的喜好設定](/help/sites-cloud/authoring/getting-started/account-environment.md#my-preferences)
 * [幫助菜單](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 
 >[!NOTE]
 >
->欄檢視和內容樹狀結構的導覽快速鍵一律為作用中。
+>列視圖和內容樹的導航快捷鍵始終處於活動狀態。
 
-## 頁面編輯器的鍵盤快速鍵{#keyboard-shortcuts-for-the-page-editor}
+## 頁面編輯器{#keyboard-shortcuts-for-the-page-editor}的鍵盤快速鍵
 
-AEM中提供各種鍵盤快速鍵。 有些適用於控制台的使用，有些適用於[頁面編輯](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)。
+AEM提供各種鍵盤快速鍵。 有些適用於控制台的使用，有些則適用於[頁面編輯](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)。
