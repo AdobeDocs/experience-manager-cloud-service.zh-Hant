@@ -5,7 +5,6 @@ breadcrumb-title: 連接器指南
 user-guide-description: 了解如何將連接器與 Experience Manager as a Cloud Service 整合。
 feature: 開發人員工具
 role: Developer
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '51'
