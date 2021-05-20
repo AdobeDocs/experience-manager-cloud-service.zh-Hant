@@ -1,40 +1,39 @@
 ---
-title: 開發與頁面比較
-description: 瞭解「頁面比較」功能的運作方式，以及它對開發人員的影響
-translation-type: tm+mt
-source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
+title: 開發與頁面差異
+description: 了解頁面差異功能的運作方式，以及如何影響開發人員
+exl-id: 03c08616-2203-4b90-bed6-4836266e2507
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
 # 開發和頁面差異{#developing-and-page-diff}
 
-## 功能概觀{#feature-overview}
+## 功能概述{#feature-overview}
 
-內容建立是一個反覆的過程。 製作具效率的內容需要能夠查看從一個迭代到另一個迭代的變化。 檢視一個頁面版本，然後檢視另一個頁面版本則無效率且容易出錯。 作者想要能夠並排比較目前頁面與先前版本的差異。
+內容建立是一個迭代過程。 以效率製作需要能夠查看從一個迭代到另一個迭代的更改。 檢視一個頁面版本，而另一個頁面版本則效率低下且容易出錯。 作者想要能夠並排比較目前的頁面與上一個版本，並反白顯示差異。
 
-頁面差異可讓使用者比較目前頁面與啟動、舊版等。 有關此用戶功能的詳細資訊，請參見[頁面差異](/help/sites-cloud/authoring/features/page-diff.md)。
+頁面差異可讓使用者比較目前的頁面與啟動、舊版等。 有關此用戶功能的詳細資訊，請參閱[頁面差異](/help/sites-cloud/authoring/features/page-diff.md)。
 
 ## 操作詳細資訊{#operation-details}
 
-比較頁面版本時，使用者想要比較的舊版會由AEM在背景重新建立，以利比較。 這需要能夠呈現內容[以便並排比較](/help/sites-cloud/authoring/features/page-diff.md)。
+比較頁面版本時，使用者想要比較的舊版本會由AEM在背景重新建立，以利比較。 這需要能夠呈現內容[，以便並排比較](/help/sites-cloud/authoring/features/page-diff.md)。
 
-此娛樂作業由AEM在內部完成，而且對使用者透明，不需要干預。 但是，在CRX DE Lite中查看儲存庫的管理員在內容結構中可以看到這些重新建立的版本。
+此休閒作業由AEM內部完成，且對使用者而言是透明的，不需要干預。 但是，如果管理員檢視儲存庫（例如在CRX DE Lite中），會在內容結構中看到這些重新建立的版本。
 
-比較內容時，會在下列位置重新建立整個要比較頁面的樹狀結構：
+比較內容時，會在下列位置重新建立要比較的頁面前整個樹狀結構：
 
 `/tmp/versionhistory/`
 
-自動執行清除任務以清除此臨時內容。
+清除任務會自動運行以清除此臨時內容。
 
 ## 限制 {#limitations}
 
-比較是透過DOM比較在用戶端進行，讓比較程式變得簡單，但開發人員需要考慮許多限制。
+差異會透過DOM比較在用戶端發生，使得差異處理程式更簡單，但開發人員需要考慮許多限制。
 
-* 此功能使用的CSS類別名稱與AEM產品間隔不開。 如果頁面上包含其他具有相同名稱的自訂CSS類別或第三方CSS類別，則會影響比較的顯示。
+* 此功能使用的CSS類別名稱與AEM Product不同。 如果頁面上包含其他具有相同名稱的自訂CSS類或第三方CSS類，則差異的顯示可能會受到影響。
 
    * `html-added`
    * `html-removed`
@@ -43,8 +42,8 @@ ht-degree: 0%
    * `cq-component-moved`
    * `cq-component-changed`
 
-* 由於比較是客戶端，並在頁面載入時執行，因此在客戶端比較服務運行後對DOM的任何調整都不會計算在內。 這可能會影響
+* 由於差異是用戶端並會在頁面載入時執行，因此在用戶端差異服務執行後對DOM所做的任何調整都不會計入。 這可能會影響
 
    * 使用AJAX來包含內容的元件
    * 單頁應用程式
-   * 在使用者互動時控制DOM的Javascript型元件。
+   * 在使用者互動時操控DOM的Javascript型元件。
