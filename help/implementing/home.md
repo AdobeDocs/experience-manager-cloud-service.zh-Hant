@@ -1,14 +1,13 @@
 ---
 title: '實作 Adobe Experience Manager as a Cloud Service '
 description: Adobe Experience Manager as a Cloud Service 實作自助資源與文件連結
-translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 94%
+source-wordcount: '454'
+ht-degree: 86%
 
 ---
-
 
 # 為 AEM as a Cloud Service 實作應用程式 {#aem-implementation-guide}
 
@@ -19,6 +18,7 @@ ht-degree: 94%
 * [使用 Cloud Manager 管理環境](cloud-manager/manage-environments.md)
 * [部署 AEM as a Cloud Service ](deploying/overview.md)
 * [為 AEM as a Cloud Service 開發](developing/introduction/development-guidelines.md)
+* [無頭式開發人員歷程](/help/journey-headless/developer/overview.md)
 * [AEM as a Cloud Service 上的 Dispatcher](dispatcher/overview.md)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
@@ -33,10 +33,12 @@ ht-degree: 94%
 | [入門](/help/onboarding/home.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何使用及管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何使用及管理 Experience Manager Assets as a Cloud Service。 |
-| [轉移至 AEM as a Cloud Service ](/help/move-to-cloud-service/home.md) | 了解轉換至雲端服務的過程。 |
+| [實作使用手冊](/help/implementing/home.md) | 了解如何使用AEM強大功能來建立和自訂體驗。 |
+| [無頭式開發人員歷程](/help/journey-headless/developer/overview.md) | 探索此引導式歷程，了解AEM強大且靈活的無頭式功能，為您的第一個無頭式專案做好準備。 |
+| [轉移至 AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | 了解轉換至雲端服務的過程。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 後端的操作方式，例如製作索引和執行維護任務。 |
-| [商務使用指南](/help/commerce-cloud/home.md) | 瞭解AEM上的Commerce Integration Framework as a Cloud Service。 |
+| [商務使用手冊](/help/commerce-cloud/home.md) | 了解AEM as aCloud Service上的Commerce Integration Framework。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
