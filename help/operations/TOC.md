@@ -5,7 +5,6 @@ breadcrumb-title: 操作指南
 user-guide-description: 了解 Experience Manager as a Cloud Service 後端的操作方式，例如製作索引和執行維護任務。
 feature: 設定
 role: Administrator
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '63'
