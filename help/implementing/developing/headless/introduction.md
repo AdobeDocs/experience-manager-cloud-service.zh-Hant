@@ -1,74 +1,58 @@
 ---
-title: AEM Sites作為Cloud Service的無頭髮展
-description: 了AEM解Cloud Service的強大無頭功能（例如內容模型、內容片段和GraphQL API）如何搭配運作，讓您集中管理體驗並跨通道提供。
-translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+title: AEM Sites無頭開發(Headless Development as aCloud Service)
+description: 了解AEM作為Cloud Service的強大無周邊功能（例如內容模型、內容片段和GraphQL API）如何搭配運作，讓您集中管理體驗，並跨管道提供體驗。
+exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
+source-git-commit: 469579cfe10227ab22bbe055d4c503d8ea978150
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---
 
 
-# AEM Sites作為Cloud Service的無頭髮展{#headless-development}
+# AEM Sites as aCloud Service無頭開發{#headless-development}
 
-了AEM解Cloud Service的強大無頭功能（例如內容模型、內容片段和GraphQL API）如何搭配運作，讓您集中管理體驗並跨通道提供。
+了解AEM作為Cloud Service的強大無周邊功能（例如內容模型、內容片段和GraphQL API）如何搭配運作，讓您集中管理體驗，並跨管道提供體驗。
 
 ## 概覽 {#overview}
 
-無頭實作對於為受眾提供體驗變得越來越重要，無論其身在何處，無論其通道為何。
+無頭式實作對於將體驗提供給對象（無論對象在何處、無論管道為何）越來越重要。
 
-無頭實作會與完整堆疊和混合解決方案中的傳統方式一樣，將頁面和元件管理轉換為無頭實作，並著重於建立不受通道限制、可重複使用的內容片段及其跨通道傳送。 它是一種現代化的動態開發模式，可用來建置網頁體驗。
+無頭實作會放棄頁面和元件管理，如同傳統的完整堆疊和混合解決方案一樣，著重於建立不受管道影響、可重複使用的內容片段及其跨管道傳送。 這是實作Web體驗的現代化、動態開發模式。
 
-![實AEM施模型](assets/aem-implementation-models.png)
+![AEM實作模型](assets/aem-implementation-models.png)
 
 ## 比較Headful和Headless {#headful-headless}
 
-本文著重於的完全無頭實作模AEM型。 不過，無頭與無頭不一定是二進位選擇AEM。 無頭功能可用來管理內容並將內容傳送至多種端點，同時讓內容作者編輯單頁應用程式。 全部AEM。
+本檔案著重於AEM的完整無頭式實作模型。 不過，在AEM中，無頭與無頭並非二進位選擇。 無頭功能可用來管理內容，並將內容傳遞至各種端點，同時讓內容作者編輯單頁應用程式。 全部在AEM。
 
 >[!TIP]
 >
->如需詳細資訊，請參閱](/help/implementing/developing/headful-headless.md)中的[AEM Headful和Headless檔案。
+>如需詳細資訊，請參閱AEM](/help/implementing/developing/headful-headless.md)中的檔案[Headful和Headless 。
 
-## 作AEM為Cloud Service和無頭{#aem-headless}
+## AEM as aCloud Service與Headless {#aem-headless}
 
-作AEM為Cloud Service，提供三種強大的服務，為無頭實作模型提供靈活的工具：
+AEM as aCloud Service是無頭式實作模型的彈性工具，提供三種強大的服務：
 
 1. 內容模型
    * 內容模型是內容的結構化表示。
-   * 這些定義由「內容片段模型」編輯器中的AEM資訊架構師定義。
+   * 這些由AEM內容片段模型編輯器中的資訊架構師定義。
    * 內容模型是內容片段的基礎。
 1. 內容片段
    * 內容片段是內容模型的實例化。
-   * 這些是由內容作者使用內容片段編輯器AEM建立的。
-   * 它們儲存在AEM Assets，並在「資產管理員UI」中管理。
-1. 內容API以進行傳送
-   * GraphQL AEM API支援內容片段傳送。
-   * AEM AssetsREST API支援內容片段CRUD作業。
-   * 透過[內容片段核心元件的JSON匯出，也可直接傳送內容。](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+   * 這些是由內容作者使用AEM內容片段編輯器建立。
+   * 這些資產會儲存在AEM Assets中，並在Assets管理UI中進行管理。
+1. 傳遞的內容API
+   * AEM GraphQL API支援內容片段傳送。
+   * AEM Assets REST API支援內容片段CRUD操作。
+   * [內容片段核心元件的JSON匯出也可以直接傳送內容。](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
 
-## 無頭入門手冊{#getting-started}
+## 使用AEM Headless {#first-steps}執行的第一步
 
-「無頭入門手冊」針對建立、管理和提供體驗的簡單途徑，透過五個步驟排AEM列出簡單的步驟，以做為Cloud Service。 每本指南都以前一版為基礎，因此建議您依序徹底地探索。
+有許多資源可供您開始使用AEM無頭功能。 這些範本適用於不同的使用案例，但都能提供AEM無頭功能的實體概述。
 
-1. [建立配置](getting-started/create-configuration.md)
-1. [建立內容片段模型](getting-started/create-content-model.md)
-1. [建立資產資料夾](getting-started/create-assets-folder.md)
-1. [建立內容片段](getting-started/create-content-fragment.md)
-1. [存取和傳送內容片段](getting-started/create-api-request.md)
-
-## 對象 {#audience}
-
-[無頭入門指南](#getting-started)中描述的任務對於基本的無頭功能端到端演示是必AEM要的。 任何擁有測試例項存取權的管AEM理員都可依照這些指南來瞭解無頭傳送，AEM不過有開發人員經驗的人最適合。
-
-但是，在生產情況下，任務將由不同角色執行，但次數不同。 例如：
-
-* **管** 理員通常只需要設定內容的初始設定和資料夾結構一次或偶爾。
-* **資訊** 體系結構通常會隨著組織需求的發展而添加新的模型。
-* **內容** 作者會根據架構設計人員定義的模型，持續建立新內容作為內容片段。
-
-《無頭入門指南》指出，一般由誰執行描述的工作以及執行頻率。
-
-## 下一步 {#next-step}
-
-準備好要進一步瞭解嗎？ 然後，請先閱讀《無頭入門手冊》的第一部分：[建立配置。](getting-started/create-configuration.md)
+| 資源 | 說明 | 類型 | 對象 | Est. 時間 |
+|---|---|---|---|---|
+| [無頭式開發人員歷程](/help/implementing/developing/headless-journey/overview.md) | 如需從無頭理論到實作您的第一個無頭專案，全面概述AEM無頭功能，請從這裡開始。 | 指南 | 開發人員 | 1小時 |
+| [無頭入門手冊](/help/implementing/developing/headless/getting-started/introduction.md) | 如需主要AEM無頭功能的簡短摘要，請參閱此快速入門概述。 | 快速入門 | 開發人員、管理員 | 20分鐘 |
+| [AEM Headless實作教學課程快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | 如果您偏好使用實作方法，本教學課程會直接深入探討如何建立簡單的無頭專案。 | 教學課程 | 開發人員 | 2小時 |
