@@ -6,7 +6,6 @@ breadcrumb-title: Authoring 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Sites as a Cloud Service。
 feature: 製作
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '308'
@@ -31,7 +30,7 @@ ht-degree: 72%
    + 製作基礎知識 {#fundamentals}
       + [環境與工具](authoring/fundamentals/environment-tools.md)
       + [新增頁面註解](authoring/fundamentals/annotations.md)
-      + [建立和組織頁面](authoring/fundamentals/organizing-pages.md)
+      + [建立及組織頁面](authoring/fundamentals/organizing-pages.md)
       + [編輯頁面內容](authoring/fundamentals/editing-content.md)
       + [RTF 編輯器](authoring/fundamentals/rich-text-editor.md)
       + [頁面內容](authoring/fundamentals/page-properties.md)
@@ -61,9 +60,9 @@ ht-degree: 72%
    + 啟動 {#launches}
       + [使用啟動](authoring/launches/overview.md)
       + [建立啟動 ](authoring/launches/creating.md)
-      + [在啟動中管理頁面](authoring/launches/managing-pages.md)
+      + [管理啟動中的頁面](authoring/launches/managing-pages.md)
       + [編輯啟動](authoring/launches/editing.md)
-      + [使用時間彎曲預覽啟動](authoring/launches/preview.md)
+      + [使用時間扭曲預覽啟動](authoring/launches/preview.md)
       + [提升啟動](authoring/launches/promoting.md)
    + 工作流程 {#workflows}
       + [使用工作流程](authoring/workflows/overview.md)
@@ -86,22 +85,22 @@ ht-degree: 72%
    + 重複使用內容{#reusing-content}
       + [MSM與翻譯](administering/msm-and-translation.md)
       + 多站點管理員 {#msm}
-         + [MSM和即時副本概觀](administering/msm/overview.md)
-         + [配置即時拷貝同步](administering/msm/live-copy-sync-config.md)
-         + [建立和同步即時副本](administering/msm/creating-live-copies.md)
-         + [即時副本概述主控台](administering/msm/live-copy-overview.md)
-         + [推出衝突](administering/msm/rollout-conflicts.md)
+         + [MSM和Live Copy概述](administering/msm/overview.md)
+         + [配置Live Copy同步](administering/msm/live-copy-sync-config.md)
+         + [建立和同步Live Copy](administering/msm/creating-live-copies.md)
+         + [Live Copy概述主控台](administering/msm/live-copy-overview.md)
+         + [轉出衝突](administering/msm/rollout-conflicts.md)
          + [MSM最佳實務](administering/msm/best-practices.md)
-         + [疑難排解與常見問答集](administering/msm/troubleshooting.md)
+         + [疑難排解和常見問題集](administering/msm/troubleshooting.md)
       + 轉換 {#translation}
-         + [翻譯多語言網站的內容](administering/translation/overview.md)
+         + [轉譯多語言網站的內容](administering/translation/overview.md)
          + [準備翻譯內容](administering/translation/preparation.md)
-         + [管理翻譯項目](administering/translation/managing-projects.md)
-         + [語言複製精靈](administering/translation/wizard.md)
+         + [管理翻譯專案](administering/translation/managing-projects.md)
+         + [語言副本嚮導](administering/translation/wizard.md)
          + [識別要翻譯的內容](administering/translation/rules.md)
          + [配置翻譯整合框架](administering/translation/integration-framework.md)
          + [連接到Microsoft Translator](administering/translation/connect-ms-translator.md)
-         + [翻譯最佳做法](administering/translation/best-practices.md)
+         + [翻譯最佳實務](administering/translation/best-practices.md)
 + 整合 AEM as a Cloud Service {#integrations}
    + [整合 Adobe Analytics](integrating/integrating-adobe-analytics.md)
    + [整合 Adobe Target](integrating/integrating-adobe-target.md)
