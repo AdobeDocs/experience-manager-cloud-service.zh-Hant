@@ -1,10 +1,9 @@
 ---
 title: 全景影像
-description: 瞭解如何在Dynamic Media處理全景影像。
+description: 了解如何在Dynamic Media中使用全景影像。
 feature: 全景影像
 role: Business Practitioner
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '149'
@@ -14,25 +13,25 @@ ht-degree: 3%
 
 # 全景影像{#panoramic-images}
 
-本節將說明如何與全景影像檢視器搭配使用，以呈現球面全景影像，提供如臨現場的360°房間、屬性、位置或風景觀賞體驗。
+本節介紹如何使用全景影像查看器來呈現球形全景影像，以提供沈浸式360°的房間、屬性、位置或景觀的觀看體驗。
 
 另請參閱[管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
-## 上傳資產以搭配全景影像檢視器{#uploading-assets-for-use-with-the-panoramic-image-viewer}使用
+## 上傳資產以便與全景影像檢視器{#uploading-assets-for-use-with-the-panoramic-image-viewer}搭配使用
 
-若要將已上傳的資產視為要搭配全景影像檢視器使用的球形全景影像，該資產必須具備下列其中一項或兩項：
+若要讓上傳的資產符合要與全景影像檢視器搭配使用之球面全景影像的資格，資產必須具備下列其中一項或兩項：
 
-* 寬高比為2。
+* 長寬比為2。
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* 標籤有關鍵字`equirectangular`、`spherical`和`panorama`，或`spherical`和`panoramic`。 請參閱[使用標籤](/help/sites-cloud/authoring/features/tags.md)。
+* 使用關鍵字`equirectangular`、`spherical`和`panorama`、`spherical`和`panoramic`進行標籤。 請參閱[使用標籤](/help/sites-cloud/authoring/features/tags.md)。
 
-外觀比例和關鍵字准則都適用於資產詳細資料頁面和`Panoramic Media` WCM元件的全景資產。
+外觀比例和關鍵字條件都適用於資產詳細資訊頁面和`Panoramic Media` WCM元件的全景資產。
 
-若要上傳資產以搭配全景影像檢視器使用，請參閱[上傳資產](/help/assets/manage-digital-assets.md#uploading-assets)。
+若要上傳資產以便與全景影像檢視器搭配使用，請參閱[上傳資產](/help/assets/manage-digital-assets.md#uploading-assets)。
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -79,7 +78,7 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 ## 預覽全景影像{#previewing-panoramic-images}
 
-請參閱[預覽資產](/help/assets/dynamic-media/previewing-assets.md)。
+請參閱「預覽資產」[。](/help/assets/dynamic-media/previewing-assets.md)
 
 ## 發佈全景影像{#publishing-panoramic-images}
 
