@@ -1,28 +1,27 @@
 ---
-title: 內AEM容與商務
-description: 內AEM容與商務自助資源與檔案連結
+title: AEM Content and Commerce
+description: AEM內容與商務自助資源與檔案連結
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-translation-type: tm+mt
-source-git-commit: 5eba36477fff65bae40ab14daada027fba5dc5db
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 78%
+source-wordcount: '402'
+ht-degree: 71%
 
 ---
 
-# 內AEM容與商務{#commerce-guide}
+# AEM Content and Commerce {#commerce-guide}
 
-本頁列出內容與商務相關的自AEM助資源。
+此頁面提供AEM內容與商務的相關自助資源。
 
 >[!NOTE]
 >
->如需AEM具有AEM6.5和傳統CIF的內容與商務，請參閱&lt;a0/AEM> 6.5內容與商務](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html)。[
+>如需AEM 6.5和傳統CIF的AEM內容與商務，請參閱[AEM 6.5內容與商務](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html)。
 
 
-## 關鍵內容與商務文章{#key-articles}
+## 重要內容與商務文章{#key-articles}
 
-* [內容與AEM商務簡介](introduction.md)
-* [內容與商AEM務快速入門](/help/commerce-cloud/getting-started.md)
+* [AEM內容與商務簡介](introduction.md)
+* [AEM內容與商務快速入門](/help/commerce-cloud/getting-started.md)
 * [開發AEM內容與商務](/help/commerce-cloud/develop.md)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
@@ -37,7 +36,8 @@ ht-degree: 78%
 | [入門](/help/onboarding/home.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何管理 Experience Manager Assets as a Cloud Service。 |
-| [實作使用手冊](/help/implementing/home.md) | 了解如何自訂 Experience Manager as a Cloud Service 部署，包括開發部署主題。 |
+| [實作使用手冊](/help/implementing/home.md) | 透過探索這些開發和部署主題，了解如何使用AEM強大功能來建立和自訂體驗。 |
+| [無頭式開發人員歷程](/help/journey-headless/developer/overview.md) | 探索此引導式歷程，了解AEM強大且靈活的無頭式功能，為您的第一個無頭式專案做好準備。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將解決方案與 Experience Manager as a Cloud Service 整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 後端的操作方式，例如製作索引和執行維護任務。 |
 
