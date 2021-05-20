@@ -1,31 +1,30 @@
 ---
 title: 提交 AEM 連接器
 description: 提交 AEM 連接器
-translation-type: tm+mt
-source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
+exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 11%
 
 ---
 
-
 提交 AEM 連接器
 ===========================
 
 以下提供有用的AEM連接器提交資訊，並應與實作與維護連接器的相關文 [章一](implement.md) 起 [閱讀](maintain.md) 。
 
-AEM連接器列在[Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud)中。
+AEM連接器列於[AdobeExchange](https://partners.adobe.com/exchangeprogram/experiencecloud)中。
 
-在先前的AEM解決方案中，Package Manager可用來在各種AEM例項上安裝連接器。 不過，以AEM為雲端服務，在Cloud Manager的CI/CD程式期間會部署連接器。 為了部署連接器，需要在maven專案的pom.xml中參考連接器。
+在舊版AEM解決方案中，套件管理器用於在各種AEM執行個體上安裝連接器。 不過，以AEM作為Cloud Service，在Cloud Manager的CI/CD程式期間會部署連接器。 為了部署連接器，必須在maven專案的pom.xml中參考連接器。
 
-項目中包含各種選項：
+有多種選項可讓您將套件納入專案中：
 
-1. 合作夥伴的公共儲存庫——合作夥伴將將內容包托管在可公開訪問的主儲存庫中
-1. 合作夥伴的受密碼保護的儲存庫——合作夥伴會將內容封裝主控在受密碼保護的儲存庫中。 有關說明，請參見](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)上的[密碼保護的Maven儲存庫。
-1. 打包的對象——在本例中，連接器軟體包包括在客戶的主項目中的本地。
+1. 合作夥伴的公用存放庫 — 合作夥伴會將內容套件托管於公開存取的Maven存放庫
+1. 合作夥伴的受密碼保護的儲存庫 — 合作夥伴將將內容包托管在受密碼保護的Maven儲存庫中。 有關說明，請參閱](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)上的[受密碼保護的maven儲存庫。
+1. 套件 — 在此情況下，連接器封裝會包含在客戶的Maven專案本機中。
 
-無論封裝在何處，都需要像供應商提供的那樣，在pom.xml中將封裝參照為相依性。
+無論封裝托管於何處，都需如廠商所提供，在pom.xml中將封裝參照為相依性。
 
 ```xml
 <!-- UberJAR Dependency to be added to the project's Reactor pom.xml -->
@@ -38,7 +37,7 @@ AEM連接器列在[Adobe Exchange](https://partners.adobe.com/exchangeprogram/ex
 </dependency>
 ```
 
-如果ISV合作夥伴將連接器托管在可訪問Internet（如可訪問Cloud Manager的）主儲存庫上，ISV應提供存放pom.xml的儲存庫配置，以便在構建時（本地和Cloud Manager）解決連接器依賴性（上述）。
+如果ISV合作夥伴將連接器托管在網際網路上可訪問（如可訪問的Cloud Manager）的主儲存庫上，則ISV應提供存放pom.xml的儲存庫配置，以便在構建時（本地和Cloud Manager）解決連接器依賴關係（如上）。
 
 ```xml
 <repository>
@@ -55,4 +54,4 @@ AEM連接器列在[Adobe Exchange](https://partners.adobe.com/exchangeprogram/ex
 </repository>
 ```
 
-如果ISV合作夥伴選擇將Connector分發為可下載的檔案，ISV應提供如何將檔案部署至本機檔案系統管理儲存庫（需要在AEM專案中籤入Git）的指示，讓Cloud Manager能夠解決這些相依性。
+如果ISV合作夥伴選擇將Connector作為可下載的檔案分發，則ISV應提供有關如何將這些檔案部署到需要作為AEM項目一部分簽入Git的本地檔案系統主儲存庫的說明，以便Cloud Manager能夠解決這些依賴項。
