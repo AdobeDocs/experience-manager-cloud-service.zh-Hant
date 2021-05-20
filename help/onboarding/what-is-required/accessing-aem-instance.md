@@ -1,38 +1,37 @@
 ---
-title: '授予用戶對實例的訪AEM問權 '
-description: 請依照本頁瞭解系統管理員如何授與使用者對例項的存AEM取權
-translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+title: '授予使用者AEM例項的存取權 '
+description: 請參閱本頁面，了解系統管理員如何授與使用者AEM例項的存取權
+exl-id: 9f637030-dbcf-4330-9360-99d6aaea45b8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
+# 授予AEM例項{#accessing-aem-instance}的使用者存取權
 
-# 授與實例AEM{#accessing-aem-instance}的用戶訪問權
+身為系統管理員，請依照下列步驟，授與使用者對AEM例項的存取權：
 
-身為系統管理員，請遵循下列步驟授予使用者對例項的存AEM取權：
-
-1. 導覽至Cloud Manager，然後按一下&#x200B;**Environments**&#x200B;卡上的&#x200B;**管理存取**&#x200B;按鈕，如下所示。
+1. 導覽至Cloud Manager，然後按一下&#x200B;**Environments**&#x200B;卡片中的&#x200B;**管理存取**&#x200B;按鈕，如下所示。
 
    >[!NOTE]
-   >您必須是系統管理員或建立環境的用戶，才能在Admin Console中添加用戶。 只有「業務所有者」或「部署管理員」角色具有建立環境的權限。 請參閱[雲端管理員角色](/help/onboarding/what-is-required/user-roles-permissions.md)以進一步瞭解角色和相關權限。 此外，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)以瞭解環境。
+   >您必須是系統管理員或建立環境的使用者，才能在Admin Console中新增使用者。 只有業務所有者或部署管理員角色具有建立環境的權限。 請參閱[Cloud Manager角色](/help/onboarding/what-is-required/user-roles-permissions.md)以深入了解角色和相關權限。 此外，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)以了解環境。
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    或,
 
-   在「**環境**&#x200B;頁面」中，選擇&#x200B;**管理** —> **管理訪問**。
+   從「**環境**」頁中，選擇「**管理** —> **管理訪問**」。
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
 
-1. 按一下&#x200B;**管理訪問**&#x200B;後，新頁籤將導航到&#x200B;**Admin Console**，您可以從此處訪問環境的作者實例。
+1. 在您按一下&#x200B;**管理存取**&#x200B;後，新索引標籤會將您導覽至&#x200B;**Admin Console**，您可在此存取環境的製作例項。
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin-2.png)
 
-1. 選擇&#x200B;**Users**&#x200B;標籤，然後按一下&#x200B;**Add User**。
+1. 選擇&#x200B;**用戶**&#x200B;頁簽，然後按一下&#x200B;**添加用戶**。
 
    ![](/help/onboarding/what-is-required/assets/admin-console-5.png)
 
@@ -42,7 +41,7 @@ ht-degree: 0%
 
    您也可以直接導覽至[Admin Console](https://adminconsole.adobe.com)以新增使用者。
 
-   1. 從Admin ConsoleAEM中選擇感興趣的實例，如下所示。 您可以選擇Adobe Experience Manager作為Cloud Service（產品上下文）卡，以訪問包含實例清單的AEM表。
+   1. 從Admin Console中選取目標的AEM例項，如下所示。 您可以選取Adobe Experience Manager作為Cloud Service（產品內容）卡片，以取得包含AEM例項清單的表格。
 
       ![](/help/onboarding/what-is-required/assets/admin-console-6.png)
 
@@ -51,10 +50,9 @@ ht-degree: 0%
       ![](/help/onboarding/what-is-required/assets/admin-console-7.png)
 
 
-   1. 按一下&#x200B;**添加用戶**&#x200B;以添加要授予訪問權限的用戶。
+   1. 按一下&#x200B;**Add User**&#x200B;以添加要授予其訪問權限的用戶。
 
       ![](/help/onboarding/what-is-required/assets/admin-console-8.png)
 
       >[!NOTE]
-      >對於在2020年1月之AEM前獲准以Cloud Service形式存取的某些組織，這些組織將被帶到Adobe Admin Console，並且必須選擇「產品和環境產品概要檔案」。
-
+      >對於某些在2020年1月之前以Cloud Service形式獲得AEM存取權的組織，這些將會帶入Adobe Admin Console，且必須選取產品與環境產品設定檔。
