@@ -4,7 +4,6 @@ description: 若要設定Dynamic Media，您必須設定Dynamic Media並管理�
 contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-translation-type: tm+mt
 source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
 source-wordcount: '181'
@@ -12,9 +11,9 @@ ht-degree: 6%
 
 ---
 
-# 設定Dynamic Media{#setting-up-dynamic-media}
+# 設定Dynamic Media {#setting-up-dynamic-media}
 
-[動態](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media可協助您管理資產，提供豐富的視覺化銷售和隨選行銷資產，並可自動縮放，以供網頁、行動裝置和社交網站使用。Dynamic Media使用一組主要來源資產，透過其全球、可擴充、最佳化效能的網路，即時產生並提供多種多樣化內容。
+[Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media可協助您依需求提供豐富的視覺化銷售和行銷資產，並自動調整規模以供網頁、行動裝置和社交網站使用，借此管理資產。Dynamic Media使用一組主要來源資產，透過其全球、可擴充、效能最佳化的網路，即時產生並提供多種豐富內容變異。
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -26,7 +25,7 @@ ht-degree: 6%
 
 -->
 
-如果您管理Dynamic Media，請關注下列主題：
+如果您是管理Dynamic Media，請注意下列主題：
 
 * [設定 Dynamic Media](config-dm.md)
 * [管理影像預設集](managing-image-presets.md)
@@ -36,11 +35,11 @@ ht-degree: 6%
 另請參閱下列主題：
 
 * [視訊編碼和視訊設定檔](video-profiles.md)
-* [影像描述檔](image-profiles.md)
+* [影像設定檔](image-profiles.md)
 
 >[!NOTE]
 >
 >**如果您要升級：**
 >
->* 在您啟動並執行Adobe Experience Manager後，您上傳的任何資產都會自動啟用Dynamic Media（除非系統管理員已明確停用它）。 如果您是升級版Experience Manager，而且是Dynamic Media新手，則可能必須重新處理資產，以啟用Dynamic Media。 請參閱[重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
+>* 在您啟動並執行Adobe Experience Manager後，您上傳的任何資產都會自動啟用Dynamic Media（除非系統管理員明確停用）。 如果您位在升級的Experience Manager例項中，且為Dynamic Media新執行個體，則您可能必須重新處理資產，使其啟用Dynamic Media。 請參閱[重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
