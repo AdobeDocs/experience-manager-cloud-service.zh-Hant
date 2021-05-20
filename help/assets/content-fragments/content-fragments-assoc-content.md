@@ -1,53 +1,52 @@
 ---
 title: 相關聯的內容
-description: 瞭解相AEM關內容功能如何提供連線，讓資產在新增至內容頁面時可選擇性地與片段搭配使用，為無頭內容傳送增加額外的彈性。
-feature: Content Fragments
+description: 了解AEM相關內容功能如何提供連線，讓資產可在新增至內容頁面時選擇性地與片段搭配使用，為無標題內容傳送增加額外的彈性。
+feature: 內容片段
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 8%
+source-wordcount: '246'
+ht-degree: 7%
 
 ---
 
-
 # 相關聯的內容{#associated-content}
 
-相AEM關內容功能提供連線，讓資產在新增至內容頁面時，可選擇與片段搭配使用。 這提供了透過[傳送無頭內容的彈性，提供在使用頁面上的內容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)時可存取的資產範圍，同時也有助於縮短搜尋適當資產所需的時間。
+AEM相關內容功能提供連線，讓資產可在新增至內容頁面時選擇性地與片段搭配使用。 這可讓您透過[靈活傳送無頭式內容，提供在頁面上使用內容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)時可存取的資產範圍，同時有助於縮短搜尋適當資產所需的時間。
 
-## 添加關聯內容{#adding-associated-content}
+## 新增關聯內容{#adding-associated-content}
 
 >[!NOTE]
 >
->有各種方法可將[視覺資產（例如，影像）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)新增至片段和／或頁面。
+>有各種方法可將[視覺資產（例如影像）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)新增至片段和/或頁面。
 
-若要建立關聯，您首先需要[將媒體資產新增至系列](/help/assets/manage-collections.md)。 完成後，您可以：
+若要建立關聯，您必須先[將媒體資產新增至集合](/help/assets/manage-collections.md)。 完成後，您可以：
 
 1. 開啟您的片段，然後從 **側面板選取** 「關聯內容」。
 
    ![相關聯的內容](assets/cfm-assoc-content-01.png)
 
-1. 視是否已關聯任何系列而定——請選取：
+1. 視是否已關聯任何集合而定 — 選擇以下任一選項：
 
-   * **關聯內容** -這將是第一個關聯的系列
-   * **關聯繫列** -關聯的系列已經設定好
+   * **關聯內容**  — 這將是第一個關聯的集合
+   * **關聯集合**  — 已配置關聯的集合
 
-1. 選取所需的系列。
+1. 選取所需的集合。
 
-   您可以選擇將片段本身新增至選取的系列；這個艾滋病追蹤。
+   您可以選擇將片段本身新增至選取的集合；這是艾滋病追蹤。
 
-   ![選取系列](assets/cfm-assoc-content-02.png)
+   ![選擇集合](assets/cfm-assoc-content-02.png)
 
-1. 確認（使用&#x200B;**選擇**）。 系列會列為相關聯。
+1. 確認（使用&#x200B;**Select**）。 集合會列為相關聯。
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
 ## 編輯關聯內容{#editing-associated-content}
 
-在您關聯繫列後，您可以：
+關聯集合後，您可以：
 
-* **移** 除關聯。
-* **新增** 資產至系列。
-* 選擇資產以執行進一步動作。
+* **** 移除關聯。
+* **新增** 資產至集合。
+* 選取資產以執行進一步動作。
 * 編輯資產。
