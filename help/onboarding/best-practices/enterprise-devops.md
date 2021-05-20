@@ -1,7 +1,6 @@
 ---
 title: 企業 DevOps
 description: 了解輕鬆部署、簡化共同作業所需的程序、方法和溝通方式。
-translation-type: tm+mt
 source-git-commit: 5fe4eb9f9cad4ad2f1d259ebb5fa0302ea5c515f
 workflow-type: tm+mt
 source-wordcount: '1001'
