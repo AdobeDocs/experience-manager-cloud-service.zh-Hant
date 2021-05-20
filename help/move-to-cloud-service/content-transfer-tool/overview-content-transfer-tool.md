@@ -14,8 +14,8 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="概覽"
->abstract="內容傳輸工具是由Adobe開發的工具，可用來將現有內容從來源例項（內部部署或AMS）移AEM至目標AEMCloud Service例項。 此工具也會自動轉移主體 (使用者或群組)。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="提取過程"
+>abstract="「內容轉移工具」是由Adobe開發的工具，可用來將現有內容從來源AEM例項（內部部署或AMS）移至目標AEMCloud Service例項。 此工具也會自動轉移主體 (使用者或群組)。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="提取程式"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="擷取程式"
 
 「內容轉移工具」是 Adobe 開發的工具，可用來將現有內容從來源 AEM 例項 (內部部署或 AMS) 移至目標 AEM 雲端服務例項。
@@ -30,7 +30,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
-> 建議您在擷取階段中執行使用者對應工具。 如需詳細資訊，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)。
+> 建議在提取階段中執行使用者對應工具。 如需詳細資訊，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) 。
 
 1. **擷取**：擷取指的是從&#x200B;*移轉集*&#x200B;擷取內容，並存放至目標雲端服務例項。
 
@@ -38,7 +38,7 @@ ht-degree: 73%
 
 *移轉集*&#x200B;有下列屬性：
 
-* 在內容傳輸活動期間，最多可以一次建立和維護10個遷移集。
+* 在內容轉移活動期間，一次最多可建立並維護10個移轉集。
 * 每個移轉集的名稱必須是唯一的。
 * 如果移轉集已停用超過 30 天，則會自動刪除。
 * 無論何時建立移轉集，它都與特定環境有關聯。您只能將內容擷取至相同環境中的製作或發佈例項。
@@ -60,9 +60,9 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_guidelines"
 >title="准則與最佳作法"
->abstract="查看使用內容傳輸工具的准則和最佳做法，包括修訂清除任務、磁碟空間注意事項等。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="使用內容傳輸工具的重要考量"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="使用用戶映射工具的重要注意事項"
+>abstract="檢閱使用「內容轉移」工具的准則和最佳實務，包括修訂清除任務、磁碟空間考量事項等。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="使用內容轉移工具的重要考量"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="使用使用者對應工具的重要考量"
 
 請依照以下章節了解使用「內容轉移工具」的准則與最佳作法：
 
@@ -80,4 +80,4 @@ ht-degree: 73%
    * *資料存放區大小*：「內容轉移工具」會使用 64GB，即使實際資料存放區較大亦然。
    * *節點存放區大小*：區段存放區目錄大小或 MongoDB 資料庫大小。因此，若區段存放區的大小為 20GB，則需要的可用磁碟空間為 94GB。
 
-* 需要在整個內容傳輸活動中維護移轉集，以支援內容頂層。 由於在內容傳輸活動期間，最多可以一次建立和維護10個遷移集，因此建議相應地分拆內容儲存庫，以確保遷移集不會用完。
+* 需要在整個內容轉移活動中維護移轉集，以支援追加內容。 由於在內容轉移活動期間，一次最多可建立並維護10個移轉集，因此建議您據以劃分內容存放庫，以確保移轉集不會用完。
