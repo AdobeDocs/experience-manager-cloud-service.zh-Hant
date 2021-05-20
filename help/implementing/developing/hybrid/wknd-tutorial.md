@@ -1,24 +1,23 @@
 ---
-title: WKND SPA項目
-description: 本多部分教學課程可引導您完成專案設定、元件對應、前端開發工具和應用程式路由選擇，以利使用React和Angular來建置您自己的SPA，讓您沈浸在SPA開發中。
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+title: WKND SPA專案
+description: 透過此多部分教學課程，讓您沈浸於SPA開發中，逐步完成專案設定、元件對應、前端開發工具和應用程式路由，以便透過React和Angular實作您自己的SPA。
+exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
+# WKND SPA專案{#wknd-spa-project}
 
-# WKND SPA項目{#wknd-spa-project}
+透過此多部分教學課程，讓您沈浸於SPA開發中，逐步完成專案設定、元件對應、前端開發工具，以及應用程式路由選擇，以實作您自己的SPA。
 
-本多部分教學課程可引導您完成專案設定、元件對應、前端開發工具和應用程式路由選擇，以建置您自己的SPA，讓您沈浸在SPA開發中。
+![WKND SPA專案](assets/wknd-spa-project.png)
 
-![WKND SPA項目](assets/wknd-spa-project.png)
+與AEM WKND教學課程類似，此以SPA為重點的對應方提供端對端範例，說明如何建立您自己的單頁應用程式，讓AEM從專案設定開始，透過應用程式路由進行編輯。
 
-與「AEM WKND教學課程」類似，這個以SPA為主的對應方提供端對端範例，說明如何建立您自己的單頁應用程式，讓AEM從專案設定開始，透過應用程式路由來編輯。
+* [建立您在 AEM 的第一個 Angular SPA](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [在AEM中建立第一個React SPA](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
-* [在AEM中建立您的第一個Angular SPA](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [在AEM中建立您的第一個React SPA](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-
-不過，在您開始針對AEM的SPA專案之前，您可能也想要檢閱「針對AEM開發SPA」檔案。[](developing.md)
+不過，在開始自己的SPA專案之前，您也可以先檢閱[開發SPA for AEM](developing.md)檔案。
