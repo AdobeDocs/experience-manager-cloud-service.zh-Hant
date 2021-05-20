@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 中繼資料
 role: Business Practitioner,Administrator
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
+source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 16%
+source-wordcount: '1016'
+ht-degree: 15%
 
 ---
 
@@ -84,9 +84,9 @@ XMP最常是使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium
 
 ![儲存在儲存庫中資產節點中的元資料](assets/metadata_stored.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->在[!DNL Assets]中，預設未啟用回寫功能。 瞭解如何[啟用中繼資料回寫](#enable-xmp-writeback)。
+>在[!DNL Assets]中，預設未啟用回寫功能。 瞭解如何[啟用中繼資料回寫](#enable-xmp-writeback)。 啟用中繼資料回寫時，MSM的數位資產無法運作。 在回寫時，繼承會中斷。
 
 ### 啟XMP用回寫{#enable-xmp-writeback}
 
