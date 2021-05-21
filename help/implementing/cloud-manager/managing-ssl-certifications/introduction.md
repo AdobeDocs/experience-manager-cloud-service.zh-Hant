@@ -2,7 +2,7 @@
 title: 簡介 — 管理SSL憑證
 description: 簡介 — 管理SSL憑證
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 8e09031d1cf17bda9d4eb379f84462b2d29e1aa5
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -19,7 +19,9 @@ Cloud Manager可讓客戶透過Cloud Manager UI自行安裝SSL憑證。 Cloud Ma
 
 * AEM as aCloud Service僅支援安全的`https`網站。 具有多個自訂網域的客戶不想在每次新增網域時上傳憑證。 因此，此類客戶將受益於一個具有多個網域的憑證。
 
-* AEM as aCloud Service只會接受OV（組織驗證）或EV（延伸驗證）憑證。 不接受DV（域驗證）證書。 此外，任何證書都必須是來自受信任認證機構(CA)的X.509 TLS證書，且具有相符的2048位RSA私鑰。 AEM as aCloud Service會接受網域的萬用字元SSL憑證。
+* AEM as aCloud Service只會接受OV（組織驗證）或EV（延伸驗證）憑證。 不接受DV（域驗證）證書。 此外，任何證書都必須是來自受信任認證機構(CA)的X.509 TLS證書，且具有相符的2048位RSA私鑰。
+
+* AEM as aCloud Service會接受網域的萬用字元SSL憑證。
 
 Cloud Manager支援下列客戶SSL憑證需求：
 
