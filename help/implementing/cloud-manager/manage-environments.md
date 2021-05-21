@@ -2,7 +2,7 @@
 title: 管理環境 — Cloud Service
 description: 管理環境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 4%
@@ -62,7 +62,7 @@ ht-degree: 4%
    >如果您尚未設定非生產管道，*概述*&#x200B;畫面會顯示卡片，您可從此處建立非生產管道。
 
 
-## 查看環境{#viewing-environment}
+## 環境詳細資訊{#viewing-environment}
 
 「概述」頁面上的&#x200B;**Environments**&#x200B;卡片最多列出三個環境。
 
@@ -111,7 +111,6 @@ ht-degree: 4%
 
 
 >[!NOTE]
->
 >此功能不適用於為生產目的而設定的生產程式中設定的生產/預備環境。 不過，此功能也適用於沙箱方案中的生產/預備環境。
 
 ## 管理訪問{#managing-access}
