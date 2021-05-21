@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 資產管理
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
+source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '921'
 ht-degree: 4%
 
 ---
@@ -24,14 +24,14 @@ ht-degree: 4%
 
 您可以使用下列方法下載Experience Manager資產：
 
-* [Experience Manager使用者介面](#download-in-aem)
+* [Experience Manager使用者介面](#download-assets)
 * [資產共用公域](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [品牌入口網站](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## 使用[!DNL Experience Manager]介面{#download-in-aem}下載資產
+## 使用[!DNL Experience Manager]介面{#download-assets}下載資產
 
-非同步下載服務提供大型資產無縫下載的架構。 從使用者介面即時下載較小的檔案。 非同步下載大型檔案，系統會透過收件匣中的Experience Manager通知，告知使用者完成操作。 請參閱[了解Experience Manager收件匣](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)。
+非同步下載服務提供大型資產無縫下載的架構。 從使用者介面即時下載較小的檔案。 [!DNL Experience Manager] 不會封存下載原始檔案的單一資產下載。此功能可加快下載速度。 大型檔案會以非同步方式下載，而[!DNL Experience Manager]會透過收件匣中的通知通知完成。 請參閱[了解 [!DNL Experience Manager] 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)。
 
 ![下載通知](assets/download-notification.png)
 
@@ -51,7 +51,7 @@ ht-degree: 4%
 
    *圖：下載對話框選項。*
 
-1. 在「下載」對話方塊中，選取您想要的下載選項。
+1. 在下載對話方塊中，選取您想要的下載選項。
 
    | 下載選項 | 說明 |
    |---|---|
