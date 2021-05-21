@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '1996'
 ht-degree: 2%
 
 ---
@@ -54,19 +54,17 @@ ht-degree: 2%
 
 ### [!DNL Assets] {#what-is-new-assets}中的新增功能
 
-* [!DNL Experience Manager] 不會封存下載原始檔案的單一資產下載。此增強功能可加快下載速度。
+* [!DNL Experience Manager] 不會封存下載原始檔案的單一資產下載。此增強功能可加快下載速度。 請參閱[下載資產](/help/assets/download-assets-from-aem.md)。
 
-* 透過linkshare選項下載資產時，您現在可以選擇下載或不下載轉譯。 之前，會下載所有資產轉譯。
-
-* 管理員可以設定[!DNL Experience Manager]在執行大量資產擷取後刪除資產來源。 請參閱[大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor)。
+* 透過Linkshare選項下載資產時，您現在可以選擇下載或不下載轉譯。 之前，會下載所有資產轉譯。 請參閱[下載選項](/help/assets/download-assets-from-aem.md)。
 
 * 執行健全狀態檢查以大量匯入資產時，Experience Manager現在會提供失敗的詳細資訊原因。 請參閱[大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
 * 使用大量匯入工具匯入資產時，管理員現在可以選擇在匯入成功後刪除來源檔案。 請參閱[大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-* 編輯中繼資料結構時，新的根路徑選擇器欄位可讓管理員快速輕鬆地進行選擇，從而縮短配置時間。
+* 編輯中繼資料結構時，新的根路徑選擇器欄位可讓管理員快速輕鬆地進行選取。 此增強功能有助於縮短中繼資料設定時間。
 
-* 許多資產的中繼資料可使用CSV檔案大量匯入，也可匯出為CSV檔案。 預設日期格式現在為`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`。 使用者可更新欄標題，以運用不同格式。 例如，將`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`新增為CSV檔案中的欄標題，而非字詞`Date`。
+* 許多資產的中繼資料可使用CSV檔案大量匯入，也可匯出為CSV檔案。 預設日期格式現在為`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`。 使用者可更新欄標題，以運用不同格式。 例如，將`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`新增為CSV檔案中的欄標題，而非字詞`Date`。 請參閱[匯入中繼資料](/help/assets/metadata-import-export.md)。
 
 * 在「欄」檢視中瀏覽資產時，視覺指標會顯示每個資產的已核准或已拒絕狀態。
 
