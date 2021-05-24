@@ -4,9 +4,9 @@ description: 了解適用於Platform launch和Dynamic Media檢視器5.13的Dynam
 feature: 資產報表
 role: Administrator,Business Practitioner
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 2fa40e8ee71f881df68337c99ccdb3437d50a0f3
 workflow-type: tm+mt
-source-wordcount: '6661'
+source-wordcount: '6662'
 ht-degree: 9%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 9%
 
 ## 什麼是Dynamic Media檢視器與Adobe Analytics和Experience Platform Launch整合？{#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch -->
+<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch 
+
+name used to be Experience Platform Launch. Changed to Experience Platform Data Collection-->
 
 適用於Platform launch和Dynamic Media檢視器5.13的全新&#x200B;*Dynamic Media檢視器*&#x200B;擴充功能可讓Adobe Analytics和Platform launch的客戶在其Platform launch設定中使用檢視器專用的事件和資料。
 
@@ -668,7 +670,7 @@ Experience Manager設定包含下列兩個主要步驟：
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
 1. 在「AdobeIMC配置」頁的左上角附近，按一下&#x200B;**[!UICONTROL Create]**。
-1. 在&#x200B;**[!UICONTROL AdobeIMS技術帳戶設定]**&#x200B;頁面的&#x200B;**[!UICONTROL 雲端解決方案]**&#x200B;下拉式清單中，按一下&#x200B;**[!UICONTROL Experience Platform Launch]**。
+1. 在&#x200B;**[!UICONTROL AdobeIMS技術帳戶設定]**&#x200B;頁面的&#x200B;**[!UICONTROL 雲端解決方案]**&#x200B;下拉式清單中，按一下&#x200B;**[!UICONTROL Experience Platform資料收集]**。
 1. 啟用&#x200B;**[!UICONTROL 建立新憑證]**，然後在文字欄位中，為憑證輸入任何有意義的值。 例如， *AdobeLaunchIMSCert*。 按一下&#x200B;**[!UICONTROL 建立憑證]**。
 
    將顯示以下資訊消息：
