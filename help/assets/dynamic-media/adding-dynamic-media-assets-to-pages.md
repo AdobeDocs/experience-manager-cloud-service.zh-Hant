@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: 資產管理
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
 workflow-type: tm+mt
-source-wordcount: '3098'
+source-wordcount: '3242'
 ht-degree: 5%
 
 ---
@@ -165,6 +165,17 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
    您可以點選元件中的&#x200B;**[!UICONTROL Edit]**&#x200B;以編輯下列進階設定。
 
+* **[!UICONTROL 針對高解析度裝置最佳化]**  — 選取（預設）核取方塊，以允許最佳化DPR（裝置像素比率）。
+
+   另請參閱[關於裝置像素比例最佳化](/help/assets/dynamic-media/imaging-faq.md#dpr)。
+
+   請注意，會忽略任何Adobe Experience Manager Dynamic Media智慧型影像處理DPR值。
+
+   **[!UICONTROL 僅當以下情況為真時，才會顯示]**&#x200B;為高解析度設備優化選項：
+   * 在「預設類型」下，選擇&#x200B;**[!UICONTROL 影像預設集]**，並從&#x200B;**[!UICONTROL 影像預設集]**&#x200B;下拉清單中選擇&#x200B;**[!UICONTROL RESS_IP]**。
+
+   ![影像預設集中的裝置像素比率設定](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+
 * **[!UICONTROL 標題]**  — 變更影像的標題。
 
 * **[!UICONTROL 替代文字]**  — 為關閉圖形的使用者新增影像標題。
@@ -178,7 +189,6 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 * **[!UICONTROL 寬度]**  — 如果要讓影像大小固定，請輸入像素值。將此值保留為空白可讓資產最適化。
 
 * **[!UICONTROL 高度]**  — 如果影像大小固定，請輸入像素值。將此值保留為空白可讓資產最適化。
-
 
 #### 使用視訊{#when-working-with-video}時
 
@@ -232,6 +242,18 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
    您可以按一下元件中的&#x200B;**[!UICONTROL Edit]**&#x200B;編輯下列進階設定。
 
 * **[!UICONTROL 啟用外觀比例比對]**  — 若要讓Dynamic Media挑選外觀比例最符合原始影像外觀比例的智慧型裁切輸出，請選取此選項。
+
+* **[!UICONTROL 針對高解析度裝置最佳化]**  — 選取（預設）核取方塊，以允許最佳化DPR（裝置像素比率）。
+
+   另請參閱[關於裝置像素比例最佳化](/help/assets/dynamic-media/imaging-faq.md#dpr)。
+
+   請注意，會忽略任何Adobe Experience Manager Dynamic Media智慧型影像處理DPR值。
+
+   **[!UICONTROL 僅當以下情況為真時，才會顯示]**&#x200B;為高解析度設備優化選項：
+
+   * 在「預設類型」下，選擇了「智慧型裁切」]**選項。**[!UICONTROL 
+
+   ![智慧作物的裝置像素比例設定](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
 * **[!UICONTROL 標題]**  — 變更智慧型裁切影像的標題。
 
