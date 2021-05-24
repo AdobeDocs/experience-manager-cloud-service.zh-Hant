@@ -4,7 +4,7 @@ description: 了解Adobe Sensei AI的智慧型影像處理如何套用每位使�
 feature: 資產管理，轉譯
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: eef1760407986e47876416c90df6dfb6f5693c1a
+source-git-commit: f500dd32a3f71357ced9687800945604a3455b48
 workflow-type: tm+mt
 source-wordcount: '2634'
 ht-degree: 1%
@@ -98,7 +98,7 @@ ht-degree: 1%
 
 ## 是否存在與智慧映像相關的許可成本？{#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-否. 智慧影像處理隨附於您現有的授權。 Dynamic Media Classic或Experience ManagerDynamic Media(內部部署、AMS和Experience Manager作為Cloud Service)的此規則皆為true。
+否. 智慧影像處理隨附於您現有的授權。 Dynamic Media Classic或Experience Manager- Dynamic Media(內部部署、AMS和Experience Manager作為Cloud Service)適用此規則。
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶或帳戶。
 
-點選「 **[!UICONTROL 設定>應用程式設定>一般設定]**」。 查找標籤為&#x200B;**[!UICONTROL 已發佈伺服器名稱]**&#x200B;的欄位。 如果您目前使用一般網域，可以要求移至您自己的自訂網域。 提交技術支援票證時，提出此轉換請求。
+點選&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**。 查找標籤為&#x200B;**[!UICONTROL 已發佈伺服器名稱]**&#x200B;的欄位。 如果您目前使用一般網域，可以要求移至您自己的自訂網域。 提交技術支援票證時，提出此轉換請求。
 
 使用Dynamic Media授權，您的第一個自訂網域不需額外付費。
 
