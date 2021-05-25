@@ -1,9 +1,9 @@
 ---
 title: 內容轉移工具的必要條件
 description: 內容轉移工具的必要條件
-source-git-commit: f70959efd9d0382c083ac05b9ccd63cf79947bc2
+source-git-commit: ea179642442b7b246df3096fa52d94f9b5e865ac
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 |--- |--- |
 | AEM版本 | 「內容轉移工具」僅能在AEM 6.3或更新版本上執行。 若要搭配AEM 6.2或更舊版本使用「內容轉移工具」，需要將內容存放庫就地升級至AEM 6.5。 不需要將程式碼升級至AEM 6.5即可。 |
 | 區段存放區大小 | 「內容轉移工具」目前在&#x200B;*Author*&#x200B;上支援高達83 GB，在&#x200B;*Publish*&#x200B;上支援高達31 GB。 |
-| 內容存放庫總大小&#x200B;<br>*（內容存放區+資料存放區）* | 「內容轉移工具」的設計目的是將內容轉移至高達10 TB。 目前不支援高於10 TB的任何項目。 與Adobe客戶服務建立支援票證，討論大於10 TB內容的選項。 |
-| 不可變路徑中的內容 | 「內容轉移工具」無法移轉不可變路徑（例如`“/etc”`）中的內容。 <br>請參考「 [共用資](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) 料庫重構」，深入了解存放庫重構和工作流程模型。 |
+| 內容存放庫總大小&#x200B;<br>*（區段存放區+資料存放區）* | 「內容轉移工具」的設計目的是將內容轉移至高達10 TB。 目前不支援高於10 TB的任何項目。 與Adobe客戶服務建立支援票證，討論大於10 TB內容的選項。 |
+| 不可變路徑中的內容 | 「內容轉移工具」無法用來移轉不可修改路徑（例如`“/etc”`）中的內容。 有某些`"/etc"`路徑可供選取，但僅支援[AEM Forms以AEM Forms為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets)。 有關其他所有使用案例，請參閱[Common Repository Restruct](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring)以了解有關資料庫重組的更多資訊。 |
 
 ## 下一步是什麼{#whats-next}
 
-檢閱必要條件後，您現在可以了解如何執行「內容轉移工具」。 如需詳細資訊，請參閱[使用內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) 。
+檢閱必要條件，並決定是否可以在移轉專案中使用內容轉移工具後，請在使用內容轉移工具時參閱[其他最佳作法和考量事項](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)。
