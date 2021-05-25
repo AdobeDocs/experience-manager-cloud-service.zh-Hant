@@ -2,9 +2,9 @@
 title: 將URL外部化
 description: Externalizer是OSGi服務，可讓您以程式設計方式將資源路徑轉換為外部和絕對URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: ce43bdc94f14faa69add16139e22ea3f34dfc52f
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Externalizer的預設行為和How to Override {#default-behavior}
 
-現成可用的Externalizer服務已設定`author-p12345-e6789.adobeaemcloud.com`和`publish-p12345-e6789.adobeaemcloud.com`等值，如此一來，若不進行任何干預，您的AEM as aCloud Service安裝程式就會使用您的自訂網域。
+現成可用的Externalizer服務具有`author-p12345-e6789.adobeaemcloud.com`和`publish-p12345-e6789.adobeaemcloud.com`等值。
 
 若要覆寫這些值，請使用[為AEM設定OSGi作為Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)一文所述的Cloud Manager環境變數，並設定預先定義的`AEM_CDN_DOMAIN_AUTHOR`和`AEM_CDN_DOMAIN_PUBLISH`變數。
 
