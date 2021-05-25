@@ -5,10 +5,10 @@ breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 feature: 開發人員工具
 role: Developer, Architect
-source-git-commit: a902fda5b5ecaa438c690082f65ed9f9cba9a1ee
+source-git-commit: b625eb8a7f293df8022bc24fae66fe1b6825c375
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 33%
+source-wordcount: '904'
+ht-degree: 35%
 
 ---
 
@@ -72,17 +72,6 @@ ht-degree: 33%
    + [AEM技術基礎](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [產生伺服器端API的存取權杖](developing/introduction/generating-access-tokens-for-server-side-apis.md)
-   + 無頭式開發人員歷程{#headless-journey}
-      + [了解AEM中的無頭](developing/headless-journey/overview.md)
-      + [了解CMS無頭開發](developing/headless-journey/learn-about.md)
-      + [開始使用AEM Headless作為Cloud Service](developing/headless-journey/getting-started.md)
-      + [使用AEM Headless的第一次體驗路徑](developing/headless-journey/path-to-first-experience.md)
-      + [如何將內容模型為AEM內容模型](developing/headless-journey/model-your-content.md)
-      + [如何透過AEM傳送API存取您的內容](developing/headless-journey/access-your-content.md)
-      + [如何透過AEM Assets API更新您的內容](developing/headless-journey/update-your-content.md)
-      + [如何把它們拼在一起](developing/headless-journey/put-it-all-together.md)
-      + [如何與無頭應用程式一起運行](developing/headless-journey/go-live.md)
-      + [選用 — 如何使用AEM建立單頁應用程式](developing/headless-journey/create-spa.md)
    + [AEM中的Headful和Headless](developing/headful-headless.md)
    + 完整堆棧AEM開發{#full-stack}
       + [開始開發 AEM Sites - WKND 教學課程](developing/introduction/develop-wknd-tutorial.md)
@@ -115,27 +104,6 @@ ht-degree: 33%
       + [自訂錯誤頁面](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM節點類型](/help/implementing/developing/introduction/node-types.md)
       + [Java API准則](/help/implementing/developing/introduction/java-api-guidelines.md)
-   + 混合AEM開發{#hybrid}
-      + [混合SPA與AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-      + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
-      + [SPA簡介和逐步說明](developing/hybrid/introduction.md)
-      + [SPA WKND教學課程](developing/hybrid/wknd-tutorial.md)
-      + [React快速入門](developing/hybrid/getting-started-react.md)
-      + [開始使用Angular](developing/hybrid/getting-started-angular.md)
-      + [SPA深度潛水](developing/hybrid/deep-dives.md)
-      + [開發SPA for AEM](developing/hybrid/developing.md)
-      + [SPA編輯器概述](developing/hybrid/editor-overview.md)
-      + [SPA Blueprint](developing/hybrid/blueprint.md)
-      + [SPA頁面元件](developing/hybrid/page-component.md)
-      + [元件映射的動態模型](developing/hybrid/model-to-component-mapping.md)
-      + [模型路由](developing/hybrid/routing.md)
-      + [RemotePage元件](developing/hybrid/remote-page.md)
-      + [在AEM中編輯外部SPA](developing/hybrid/editing-external-spa.md)
-      + [SPA中的複合元件](developing/hybrid/composite-components.md)
-      + [伺服器端轉譯](developing/hybrid/ssr.md)
-      + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
-      + [Launch整合](developing/hybrid/launch-integration.md)
-      + [SPA參考檔案](developing/hybrid/reference-materials.md)
    + 無頭式體驗管理 {#headless}
       + [無頭式與AEM](developing/headless/introduction.md)
       + [無頭式開發人員歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
@@ -163,6 +131,27 @@ ht-degree: 33%
          + [內容片段GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
          + [AEM GraphQL API，含內容片段 — 範例內容與查詢](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
          + [內容片段的遠端AEM GraphQL查詢驗證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
+   + 混合與SPA AEM開發{#hybrid}
+      + [混合SPA與AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+      + [SPA簡介和逐步說明](developing/hybrid/introduction.md)
+      + [SPA WKND教學課程](developing/hybrid/wknd-tutorial.md)
+      + [React快速入門](developing/hybrid/getting-started-react.md)
+      + [開始使用Angular](developing/hybrid/getting-started-angular.md)
+      + [SPA深度潛水](developing/hybrid/deep-dives.md)
+      + [開發SPA for AEM](developing/hybrid/developing.md)
+      + [SPA編輯器概述](developing/hybrid/editor-overview.md)
+      + [SPA Blueprint](developing/hybrid/blueprint.md)
+      + [SPA頁面元件](developing/hybrid/page-component.md)
+      + [元件映射的動態模型](developing/hybrid/model-to-component-mapping.md)
+      + [模型路由](developing/hybrid/routing.md)
+      + [RemotePage元件](developing/hybrid/remote-page.md)
+      + [在AEM中編輯外部SPA](developing/hybrid/editing-external-spa.md)
+      + [SPA中的複合元件](developing/hybrid/composite-components.md)
+      + [伺服器端轉譯](developing/hybrid/ssr.md)
+      + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+      + [Launch整合](developing/hybrid/launch-integration.md)
+      + [SPA參考檔案](developing/hybrid/reference-materials.md)
 + 開發人員工具 {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [內容套件Maven外掛程式](/help/implementing/developing/tools/maven-plugin.md)
