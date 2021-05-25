@@ -1,9 +1,9 @@
 ---
 title: 內容轉移工具的必要條件
 description: 內容轉移工具的必要條件
-source-git-commit: ea179642442b7b246df3096fa52d94f9b5e865ac
+source-git-commit: becb8368af8a8228bf3248bde66ad7164187a9c4
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -23,4 +23,4 @@ ht-degree: 0%
 
 ## 下一步是什麼{#whats-next}
 
-檢閱必要條件，並決定是否可以在移轉專案中使用內容轉移工具後，請在使用內容轉移工具時參閱[其他最佳作法和考量事項](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)。
+檢閱必要條件，並決定是否可在移轉專案中使用內容轉移工具後，請在使用內容轉移工具時參閱[其他最佳作法和考量事項](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)。
