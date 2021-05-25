@@ -5,18 +5,18 @@ contentOwner: AG
 feature: 資產管理，連接資產，資產分發，用戶和組
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: bbc396fbe7b3c11f8011a32fa78577957422fcf2
+source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
 workflow-type: tm+mt
-source-wordcount: '2932'
+source-wordcount: '2966'
 ht-degree: 26%
 
 ---
 
 # 使用「連線資產」在 中共用 DAM 資產 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-大型企業中，建立網站所需的基礎架構可能很分散。有時候，建立這些網站的網站建立功能和數位資產可能會存放在不同的部署中。原因之一，是現有部署分散，需要搭配使用。 另一個原因可能是收購導致基礎架構迥異，母公司希望能夠共同使用。
+大型企業中，建立網站所需的基礎架構可能很分散。有時候，建立這些網站的網站建立功能和數位資產可能會存放在不同的部署中。原因之一，是現有部署分散，需要搭配使用。 另一個原因可能是收購導致基礎架構的差異，包括母公司希望一起使用的不同[!DNL Experience Manager]版本。
 
-用戶可以在[!DNL Experience Manager Sites]中建立網頁。 [!DNL Experience Manager Assets] 是數位資產管理(DAM)系統，可為網站提供所需資產。[!DNL Experience Manager] 現在透過整合和支援上述使 [!DNL Sites] 用案 [!DNL Assets]例。
+「連線資產」功能整合[!DNL Experience Manager Sites]和[!DNL Experience Manager Assets]，可支援上述使用案例。 使用者可以在[!DNL Sites]中建立網頁，使用個別[!DNL Assets]部署中的數位資產。
 
 ## 連線資產概觀 {#overview-of-connected-assets}
 
@@ -127,7 +127,7 @@ ht-degree: 26%
 1. 在本地[!DNL Sites]和遠程[!DNL Assets]部署上配置[!DNL Dynamic Media]。 請依照[configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)的指示操作。
 
    * 在所有設定中使用相同的公司名稱。
-   * 在本地[!DNL Sites]上，在[!UICONTROL Dynamic Media同步模式]中，選擇&#x200B;**[!UICONTROL 預設情況下禁用]**。 Sites部署只需要對[!DNL Dynamic Media]帳戶的只讀訪問。
+   * 在本地[!DNL Sites]上，在[!UICONTROL Dynamic Media同步模式]中，選擇&#x200B;**[!UICONTROL 預設情況下禁用]**。 [!DNL Sites]部署只需要對[!DNL Dynamic Media]帳戶的只讀訪問。
    * 在本機[!DNL Sites]上，在&#x200B;**[!UICONTROL 發佈資產]**&#x200B;選項中，選取&#x200B;**[!UICONTROL 選擇性發佈]**。 請勿選取&#x200B;**[!UICONTROL 同步所有內容]**。
    * 在遠程[!DNL Assets]部署中，在[!UICONTROL Dynamic Media同步模式]中，選擇&#x200B;**[!UICONTROL 預設啟用]**。
 
@@ -205,8 +205,9 @@ ht-degree: 26%
 * 本機資產不會與遠端部署上的原始資產同步。對 DAM 部署所做的任何編輯、刪除或撤銷權限操作都不會傳播到下游。
 * 本機資產為唯讀副本。[!DNL Experience Manager] 元件會對資產執行非破壞性的編輯作業。不允許執行其他編輯作業。
 * 本機擷取的資產僅適用於編寫用途。無法套用資產更新工作流程，也無法編輯中繼資料。
-* 僅支援影像和列出的文件格式。不支援內容片段和體驗片段。
-* [!DNL Experience Manager] 不會擷取中繼資料結構。這表示所有擷取的中繼資料都可能無法顯示。 如果單獨更新架構，則會顯示所有屬性。
+* 在[!DNL Sites]頁面中使用[!DNL Dynamic Media]時，原始資產不會擷取並儲存在本機部署上。 `dam:Asset`部署生成的[!DNL Assets]節點、元資料和格式副本都在[!DNL Sites]部署上獲取。
+* 僅支援影像和列出的文件格式。[!DNL Content Fragments] 不 [!DNL Experience Fragments] 支援和。
+* [!DNL Experience Manager] 不會擷取中繼資料結構。這表示所有擷取的中繼資料都可能無法顯示。 如果在[!DNL Sites]部署上單獨更新架構，則會顯示所有元資料屬性。
 * 所有[!DNL Sites]作者都對擷取的復本擁有讀取權限，即使作者無法存取遠端DAM部署亦然。
 * 不提供 API 以支援自訂整合。
 * 此功能可支援順暢的搜尋作業及使用遠端資產。若要在本機部署中一次提供多個遠端資產，不妨考慮移轉資產。
@@ -216,8 +217,8 @@ ht-degree: 26%
 
 * [!DNL Assets] 支援在 [!DNL Adobe Managed Services] 上部署。
 * [!DNL Sites] 一次可連線至 [!DNL Assets] 單一存放庫。
-* [!DNL Assets]的許可證，作為遠程儲存庫使用。
-* [!DNL Sites]的一個或多個許可證用作本地編寫部署。
+* 需要[!DNL Assets]的許可證才能作為遠程儲存庫使用。
+* 需要[!DNL Sites]的一個或多個許可證作為本地編寫部署。
 
 ### 使用狀況 {#usage}
 
