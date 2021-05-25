@@ -1,16 +1,18 @@
 ---
 title: 內容轉移工具的必要條件
 description: 內容轉移工具的必要條件
-source-git-commit: ebe12a71df610a68c43048667136e331c1bd8f86
+source-git-commit: f70959efd9d0382c083ac05b9ccd63cf79947bc2
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # 內容轉移工具的必要條件 {#prerequisites}
 
-下表概述使用「內容轉移工具」的先決條件。 請檢閱下列所有考量事項：
+下表概述使用「內容轉移工具」的先決條件。
+
+請檢閱下列所有考量事項：
 
 | 考量事項 | 目前支援的項目 |
 |--- |--- |
@@ -18,3 +20,7 @@ ht-degree: 0%
 | 區段存放區大小 | 「內容轉移工具」目前在&#x200B;*Author*&#x200B;上支援高達83 GB，在&#x200B;*Publish*&#x200B;上支援高達31 GB。 |
 | 內容存放庫總大小&#x200B;<br>*（內容存放區+資料存放區）* | 「內容轉移工具」的設計目的是將內容轉移至高達10 TB。 目前不支援高於10 TB的任何項目。 與Adobe客戶服務建立支援票證，討論大於10 TB內容的選項。 |
 | 不可變路徑中的內容 | 「內容轉移工具」無法移轉不可變路徑（例如`“/etc”`）中的內容。 <br>請參考「 [共用資](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) 料庫重構」，深入了解存放庫重構和工作流程模型。 |
+
+## 下一步是什麼{#whats-next}
+
+檢閱必要條件後，您現在可以了解如何執行「內容轉移工具」。 如需詳細資訊，請參閱[使用內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) 。
