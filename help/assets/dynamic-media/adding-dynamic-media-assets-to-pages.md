@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: 資產管理
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3226'
 ht-degree: 5%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 5%
 
 若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360全景媒體元件。您可以進入「配置」模式並啟用Dynamic Media元件。 接著，您將這些元件新增至頁面，並新增資產至元件。 動態媒體元件是智慧型的——他們知道您是新增影像還是視訊，而可用的設定選項也會隨之變更。
 
-如果您使用Dynamic Media作為WCM，請直接將Experience Manager新增至頁面。 如果您使用協力廠商來處理WCM，請[link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[embed](/help/assets/dynamic-media/embed-code.md)您的資產。 如需回應式第三方網站，請參閱將最佳化影像傳送至回應式網站](/help/assets/dynamic-media/responsive-site.md)。[
+如果您使用[!DNL Adobe Experience Manager]作為WCM，請直接將Dynamic Media資產新增至頁面。 如果您使用協力廠商來處理WCM，請[link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[embed](/help/assets/dynamic-media/embed-code.md)您的資產。 如需回應式第三方網站，請參閱將最佳化影像傳送至回應式網站](/help/assets/dynamic-media/responsive-site.md)。[
 
 >[!NOTE]
 >
->請務必先發佈資產，再將其新增至Experience Manager中的頁面。 請參閱[發佈Dynamic Media資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+>將資產新增至[!DNL Experience Manager]中的頁面之前，請務必先發佈資產。 請參閱[發佈Dynamic Media資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 將Dynamic Media元件新增至頁面{#adding-a-dynamic-media-component-to-a-page}
 
@@ -28,7 +28,7 @@ ht-degree: 5%
 
 **若要將Dynamic Media元件新增至頁面：**
 
-1. 在Experience Manager中，開啟您要新增Dynamic Media元件的頁面。
+1. 在[!DNL Experience Manager]中，開啟您要新增Dynamic Media元件的頁面。
 1. 在左窗格中，點選&#x200B;**[!UICONTROL 元件]**&#x200B;圖示，然後篩選Dynamic Media。
 
    如果沒有可用的Dynamic Media元件清單，您可能必須啟用您要使用的Dynamic Media元件。 請參閱[啟用Dynamic Media元件](#enabling-dynamic-media-components)。
@@ -55,7 +55,7 @@ ht-degree: 5%
 
 如果沒有可新增至頁面的Dynamic Media元件，這可能表示您必須啟用您要使用的元件。
 
-1. 在Experience Manager中，開啟您要新增Dynamic Media元件的頁面。
+1. 在[!DNL Experience Manager]中，開啟您要新增Dynamic Media元件的頁面。
 1. 在工具列的靠近頁面頂端的左側，點選「頁面資訊」圖示，然後從下拉式清單中點選「 **[!UICONTROL 編輯範本]** 」。
 
    ![編輯範本](/help/assets/assets-dm/edit-template.png)
@@ -106,7 +106,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->這些元件預設不可用，且必須先透過範本編輯器使用，才能使用。 在範本編輯器中使用元件後，您就可以像新增任何其他Experience Manager元件一樣，將元件新增至頁面。
+>這些元件預設不可用，且必須先透過範本編輯器使用，才能使用。 在範本編輯器中使用元件後，您就可以將元件新增至頁面，如同其他[!DNL Experience Manager]元件一樣。
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -169,7 +169,7 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
    另請參閱[關於裝置像素比例最佳化](/help/assets/dynamic-media/imaging-faq.md#dpr)。
 
-   請注意，會忽略任何Adobe Experience Manager Dynamic Media智慧型影像處理DPR值。
+   請注意，會忽略任何[!DNL Experience Manager] Dynamic Media智慧型影像處理DPR值。
 
    **[!UICONTROL 僅當以下情況為真時，才會顯示]**&#x200B;為高解析度設備優化選項：
    * 在「預設類型」下，選擇&#x200B;**[!UICONTROL 影像預設集]**，並從&#x200B;**[!UICONTROL 影像預設集]**&#x200B;下拉清單中選擇&#x200B;**[!UICONTROL RESS_IP]**。
@@ -247,7 +247,7 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
    另請參閱[關於裝置像素比例最佳化](/help/assets/dynamic-media/imaging-faq.md#dpr)。
 
-   請注意，會忽略任何Adobe Experience Manager Dynamic Media智慧型影像處理DPR值。
+   請注意，會忽略任何[!DNL Experience Manager] Dynamic Media智慧型影像處理DPR值。
 
    **[!UICONTROL 僅當以下情況為真時，才會顯示]**&#x200B;為高解析度設備優化選項：
 
