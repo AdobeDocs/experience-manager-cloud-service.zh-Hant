@@ -2,14 +2,20 @@
 title: 過時和移除的功能
 description: 特定於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中已棄用和已移除功能的發行說明。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
+source-git-commit: 725cc82aa5794b53e5a43d95359fe1fd148b59ac
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 44%
+source-wordcount: '484'
+ht-degree: 41%
 
 ---
 
 # 過時和移除的功能 {#deprecated-and-removed-features}
+
+>[!CONTEXTUALHELP]
+>id="aem_cloud_deprecated_features"
+>title="AEM as aCloud Service中已棄用和已移除的功能"
+>abstract="AEM as aCloud Service採用雲端原生部署模型。 雲端原生對應功能已更換某些功能，此索引標籤會顯示這些功能。"
+
 
 Adobe 持續評估產品功能，以更新或替代的方式來改善或取代舊功能，以提升客戶享有的整體價值，且隨時謹慎考慮是否回溯相容。此外，由於[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]提供雲端原生部署模型，因此某些功能已由雲端原生對應項目取代。
 
