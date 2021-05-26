@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Assets HTTP API,API
 role: Developer,Architect,Administrator
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 0%
@@ -27,7 +27,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 >[!NOTE]
 >
->[!DNL Experience Manager]的[!DNL Cloud Service]部署會不建議使用與上傳或更新一般資產或二進位檔（如轉譯）相關的所有API呼叫。 若是上傳二進位檔，請改用[直接二進位上傳API](developer-reference-material-apis.md#asset-upload-technical)。
+>[!DNL Experience Manager]的[!DNL Cloud Service]部署會不建議使用與上傳或更新一般資產或二進位檔（如轉譯）相關的所有API呼叫。 若是上傳二進位檔，請改用[直接二進位上傳API](developer-reference-material-apis.md#asset-upload)。
 
 ## 內容片段 {#content-fragments}
 
