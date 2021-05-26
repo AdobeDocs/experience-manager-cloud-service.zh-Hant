@@ -4,7 +4,7 @@ description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作�
 feature: 資產管理，上傳
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
@@ -128,7 +128,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 若要上傳較多檔案，請使用下列其中一種方法。 另請參閱[使用案例和方法](#upload-methods-comparison)
 
-* [資產上傳API](developer-reference-material-apis.md#asset-upload-technical):視需要使用自訂上傳指令碼或工具，利用API來新增資產的其他處理方式（例如轉譯中繼資料或重新命名檔案）。
+* [資產上傳API](developer-reference-material-apis.md#asset-upload):視需要使用自訂上傳指令碼或工具，利用API來新增資產的其他處理方式（例如轉譯中繼資料或重新命名檔案）。
 * [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):適合從本機檔案系統上傳資產的創意專業人員和行銷人員。使用它上傳可在本機使用的巢狀資料夾。
 * [大量擷取工具](#asset-bulk-ingestor):部署時，偶爾或最初擷取大量資產時使用 [!DNL Experience Manager]。
 
@@ -209,7 +209,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## 使用API {#upload-using-apis}上傳或內嵌資產
 
-開發人員參考的[asset upload](developer-reference-material-apis.md#asset-upload-technical)區段提供上傳API和通訊協定的技術詳細資訊，以及開放原始碼SDK和範例用戶端的連結。
+開發人員參考的[asset upload](developer-reference-material-apis.md#asset-upload)區段提供上傳API和通訊協定的技術詳細資訊，以及開放原始碼SDK和範例用戶端的連結。
 
 ## 提示、最佳作法和限制{#tips-limitations}
 
@@ -231,5 +231,5 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >* [[!DNL Adobe Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [關於 [!DNL Adobe Asset Link]](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 文件](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [資產上傳技術參考](developer-reference-material-apis.md#asset-upload-technical)
+>* [資產上傳技術參考](developer-reference-material-apis.md#asset-upload)
 
