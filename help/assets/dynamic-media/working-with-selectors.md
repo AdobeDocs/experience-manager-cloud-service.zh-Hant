@@ -3,10 +3,10 @@ title: 使用選取工具
 description: 了解您可以使用哪些方法來選取Dynamic Media中互動式影像、互動式視訊和輪播橫幅的資產。
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 14%
+source-wordcount: '731'
+ht-degree: 18%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 14%
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-選擇熱點或影像映射的位置時（而不是手動輸入），使用的是選擇器。 「網站選取器」只有在您是Adobe Experience Manager Sites客戶時才有效。 產品選擇器也需要Experience Manager商務。
+選擇熱點或影像映射的位置時（而不是手動輸入），使用的是選擇器。 網站選取器只有在您是[!DNL Adobe Experience Manager Sites]客戶時才有效。 產品選擇器也需要[!DNL Experience Manager Commerce]。
 
 ## 在Dynamic Media中選擇產品{#selecting-products}
 
@@ -42,11 +42,11 @@ ht-degree: 14%
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   您可以點選&#x200B;**[!UICONTROL Browse]**&#x200B;並導覽至其他資料夾，以變更Experience Manager瀏覽產品資料的位置。
+   您可以點選&#x200B;**[!UICONTROL Browse]**&#x200B;並導覽至其他資料夾，以變更[!DNL Experience Manager]瀏覽產品資料的位置。
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   點選&#x200B;**[!UICONTROL 依]**&#x200B;排序，以變更Experience Manager是依最新到最舊或最舊到最新排序。
+   點選&#x200B;**[!UICONTROL 依]**&#x200B;排序，以變更[!DNL Experience Manager]是依最新到最舊或最舊到最新排序。
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,7 +64,7 @@ ht-degree: 14%
 
 ## 在Dynamic Media中選取網站{#selecting-sites}
 
-當您希望熱點或影像地圖連結到在Experience Manager網站內管理的網頁時，請使用網站選擇器來選擇網頁。
+當您希望熱點或影像映射連結到[!DNL Experience Manager]網站內管理的網頁時，請使用網站選擇器選擇網頁。
 
 1. 導覽至「轉盤集」、「互動式影像」或「互動式視訊」，然後點選「動作 **** 」標籤 (僅在您已定義熱點或影像地圖時可用)。
 
@@ -72,7 +72,7 @@ ht-degree: 14%
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. 點選&#x200B;**[!UICONTROL 網站選取器]**&#x200B;圖示（含放大鏡的資料夾），並導覽至您Experience Manager網站中要連結熱點或影像地圖的頁面。
+1. 點選「**[!UICONTROL 網站選擇器]**」圖示 (含放大鏡的資料夾)，並導覽至您 網站中要連結熱點或影像地圖的頁面。[!DNL Experience Manager]
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,7 +80,7 @@ ht-degree: 14%
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中，如果點選熱點或影像地圖，則導覽至您指定的Experience Manager網站頁面。
+1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中，如果點選熱點或影像地圖，則導覽至您指定的[!DNL Experience Manager]網站頁面。
 
 ## 在Dynamic Media中選取資產{#selecting-assets}
 
@@ -97,7 +97,7 @@ ht-degree: 14%
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   您可以導覽至&#x200B;**[!UICONTROL Path]**&#x200B;欄位中的其他資料夾，以變更Experience Manager瀏覽資產的位置。
+   您可以導覽至&#x200B;**[!UICONTROL Path]**&#x200B;欄位中的其他資料夾，以變更[!DNL Experience Manager]瀏覽資產的位置。
 
    點選&#x200B;**[!UICONTROL 集合]**&#x200B;以僅搜尋集合內的資產。
 
