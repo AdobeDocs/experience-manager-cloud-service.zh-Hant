@@ -5,10 +5,10 @@ contentOwner: AG
 feature: API,Assets HTTP API
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
-source-wordcount: '1394'
-ht-degree: 2%
+source-wordcount: '1406'
+ht-degree: 1%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 2%
 | 複製資料夾 | ✓ | ✓ | - | ✓ | - | - |
 | 移動資料夾 | ✓ | ✓ | - | ✓ | - | - |
 
-## 資產上傳{#asset-upload-technical}
+## 資產上傳{#asset-upload}
 
 在[!DNL Experience Manager]中，以[!DNL Cloud Service]的形式使用HTTP API將資產直接上傳至雲端儲存空間。 上傳二進位檔案的步驟如下：
 
@@ -73,6 +73,9 @@ ht-degree: 2%
 1. [提交HTTP](#complete-upload) 請求，通知伺服器已成功上傳二進位檔的內容。
 
 ![直接二進位上傳通訊協定概述](assets/add-assets-technical.png)
+
+>[!IMPORTANT]
+在外部應用程式中執行這些步驟，而不是在[!DNL Experience Manager] JVM中執行。
 
 此方法提供可擴充且效能更高的資產上傳處理功能。 與[!DNL Experience Manager] 6.5相比的差異如下：
 
