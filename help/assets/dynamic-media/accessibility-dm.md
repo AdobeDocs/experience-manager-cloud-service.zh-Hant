@@ -6,9 +6,9 @@ topic-tags: introduction
 content-type: reference
 feature: 協助工具
 role: Administrator,Business Practitioner
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Dynamic Media支援製作使用者介面的鍵盤控制和輔助技術，例如J
 
 ## Dynamic Media {#keyboard-support-in-dm}中的鍵盤協助工具支援
 
-由於Dynamic Media是Experience Manager資產的外掛程式，因此大部分的鍵盤控制行為與Experience Manager資產相同。 例如，Dynamic Media中的`Cancel`按鈕與Experience Manager資產中的焦點醒目提示相同。 它也會回應`Spacebar`索引鍵，如同Experience Manager資產。 請參閱Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[鍵盤快速鍵。
+由於Dynamic Media是[!DNL Experience Manager Assets]的外掛程式，因此大部分的鍵盤控制行為與[!DNL Experience Manager Assets]中相同。 例如，Dynamic Media中的`Cancel`按鈕與[!DNL Experience Manager Assets]中的按鈕焦點醒目提示相同。 它也會回應`Spacebar`鍵，如[!DNL Experience Manager Assets]中。 請參閱Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[鍵盤快速鍵。
 
 Dynamic Media中個別使用者介面元素支援的鍵擊，在大多數情況下都顯而易見且易於找到。 Dynamic Media中的鍵盤控制項關於下列項目：
 
