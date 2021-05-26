@@ -2,9 +2,9 @@
 title: 複寫
 description: 散佈 和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: eb92c66f2b9e8e6ec859114da2de049747ec251e
+source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '802'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
 * `replicateAsParticipant` （布林值，預設值） `false`)。如果配置為`true`，則複製使用執行參與者步驟的主體的`userid`。
 * `enableVersion` （布林值，預設值） `true`)。此參數會決定是否在復寫時建立新版本。
-* `agentId` （字串值，預設值表示已使用所有啟用的代理）。
+* `agentId` （字串值，預設值表示已使用所有啟用的代理）。建議您明確說明agentId;例如，設定它：發佈
 * `filters` （字串值，預設值表示所有路徑皆已啟用）。可用值包括：
    * `onlyActivated`  — 只有未標示為已啟用的路徑才會啟用。
    * `onlyModified`  — 僅啟用已啟用且修改日期晚於啟用日期的路徑。
