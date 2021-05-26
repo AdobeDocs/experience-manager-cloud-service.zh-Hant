@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,Assets HTTP API
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1407'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 1%
 ![直接二進位上傳通訊協定概述](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
-在外部應用程式中執行這些步驟，而不是在[!DNL Experience Manager] JVM中執行。
+在外部應用程式中而不是在[!DNL Experience Manager] JVM中執行上述步驟。
 
 此方法提供可擴充且效能更高的資產上傳處理功能。 與[!DNL Experience Manager] 6.5相比的差異如下：
 
