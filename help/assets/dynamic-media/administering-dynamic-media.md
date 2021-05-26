@@ -4,9 +4,9 @@ description: 若要設定Dynamic Media，您必須設定Dynamic Media並管理�
 contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '177'
 ht-degree: 6%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->This documentation describes Dynamic Media capabilites, which are integrated directly into Experience Manager. If you are using Dynamic Media Classic (previously called Scene7) integrated into Experience Manager, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
+>This documentation describes Dynamic Media capabilites, which are integrated directly into [!DNL Experience Manager]. If you are using Dynamic Media Classic (previously called Scene7) integrated into [!DNL Experience Manager], see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
 >
->See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use Experience Manager integrated with Dynamic Media Classic along with Dynamic Media.
+>See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use [!DNL Experience Manager] integrated with Dynamic Media Classic along with Dynamic Media.
 
 -->
 
@@ -41,5 +41,5 @@ ht-degree: 6%
 >
 >**如果您要升級：**
 >
->* 在您啟動並執行Adobe Experience Manager後，您上傳的任何資產都會自動啟用Dynamic Media（除非系統管理員明確停用）。 如果您位在升級的Experience Manager例項中，且為Dynamic Media新執行個體，則您可能必須重新處理資產，使其啟用Dynamic Media。 請參閱[重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
+>* Adobe[!DNL Experience Manager]啟動並執行後，您上傳的任何資產都會自動啟用Dynamic Media（除非系統管理員明確停用）。 如果您位在升級後的[!DNL Experience Manager]執行個體，且為Dynamic Media新執行個體，則您可能必須重新處理資產，使其啟用Dynamic Media。 請參閱[重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
