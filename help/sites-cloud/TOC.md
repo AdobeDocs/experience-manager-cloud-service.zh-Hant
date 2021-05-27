@@ -6,10 +6,10 @@ breadcrumb-title: Authoring 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Sites as a Cloud Service。
 feature: 製作
 role: Business Practitioner
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: e736b80e0bee80b5f3df6451b63b306c546d0912
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 72%
+source-wordcount: '310'
+ht-degree: 71%
 
 ---
 
@@ -34,6 +34,7 @@ ht-degree: 72%
       + [編輯頁面內容](authoring/fundamentals/editing-content.md)
       + [RTF 編輯器](authoring/fundamentals/rich-text-editor.md)
       + [頁面內容](authoring/fundamentals/page-properties.md)
+      + [預覽內容](authoring/fundamentals/previewing-content.md)
       + [發佈頁面](authoring/fundamentals/publishing-pages.md)
       + [內容片段](authoring/fundamentals/content-fragments.md)
       + [體驗片段](authoring/fundamentals/experience-fragments.md)
