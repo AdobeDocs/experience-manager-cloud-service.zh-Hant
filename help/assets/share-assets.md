@@ -1,13 +1,13 @@
 ---
-title: 將資產、資料夾和集合共用為連結
-description: 本文說明如何以超連結形式共用 [!DNL Experience Manager Assets] 內的資產、資料夾和集合。
+title: 分發和共用資產、資料夾和集合
+description: 使用共用作為連結、下載和透過 [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link]等方法來分發您的數位資產。
 contentOwner: AG
 feature: 資產管理，協作，資產分發
 role: Business Practitioner,Administrator
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 [!DNL Adobe Experience Manager Assets] 可讓您與組織成員及外部實體（包括合作夥伴和廠商）共用資產、資料夾和集合。使用下列方法從[!DNL Experience Manager Assets]以[!DNL Cloud Service]共用資產：
 
-* 以連結的形式共用。
+* [以連結的形式共用](#sharelink)。
 * [下載](/help/assets/download-assets-from-aem.md) 資產並分開共用。
 * 使用[[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)共用。
 * 使用[[!DNL Adobe Asset Link]](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)共用。
@@ -26,10 +26,12 @@ ht-degree: 2%
 
 若要產生您要與使用者共用之資產的URL，請使用「連結共用」對話方塊。 具有管理員權限或在`/var/dam/share`位置具有讀取權限的用戶可以查看與他們共用的連結。 透過連結共用資產是讓外部使用者無須先登入[!DNL Assets]即可取得資源的便利方式。
 
+![連結共用對話方塊](assets/link-share-dialog.png)
+
 >[!NOTE]
 >
 >* 您需要資料夾或要以連結形式共用的資產的編輯ACL權限。
->* 在與使用者共用連結之前，請確定[已啟用](/help/implementing/developing/introduction/development-guidelines.md#sending-email)傳出電子郵件。 否則，會發生錯誤。
+>* 在與用戶共用連結之前，請[啟用出站電子郵件](/help/implementing/developing/introduction/development-guidelines.md#sending-email)。 否則，會發生錯誤。
 
 
 1. 在[!DNL Assets]使用者介面中，選取要以連結形式共用的資產。
