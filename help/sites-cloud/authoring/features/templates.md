@@ -2,10 +2,10 @@
 title: 建立頁面範本
 description: 範本會定義產生頁面的結構，並使用範本編輯器，建立和維護範本不再是開發人員專屬的工作
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4600'
-ht-degree: 12%
+source-wordcount: '4596'
+ht-degree: 11%
 
 ---
 
@@ -91,7 +91,7 @@ ht-degree: 12%
 >
 >切勿輸入需要國際化到模板中的任何資訊。<!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->對於必須本地化的範本元素，例如頁首和頁尾，請使用核心元件的[本地化功能。](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/get-started/localization.html)
+>對於必須本地化的範本元素，例如頁首和頁尾，請使用核心元件的[本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
 ### 建立範本資料夾 — 管理員{#creating-a-template-folder-admin}
 
@@ -532,7 +532,7 @@ ht-degree: 12%
 >
 >初始內容的用途是準備元件和頁面版面，以作為建立內容的起點。 其目的並非實際內容可維持原樣。 因此，無法翻譯初始內容。
 >
->如果您需要在範本中（例如頁首或頁尾）包含可翻譯的文字，則可以使用核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)的[本地化功能。
+>如果您需要在範本中（例如頁首或頁尾）包含可翻譯的文字，則可以使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)的[本地化功能。
 
 ### 編輯範本 — 版面 — 範本作者{#editing-a-template-layout-template-author}
 
