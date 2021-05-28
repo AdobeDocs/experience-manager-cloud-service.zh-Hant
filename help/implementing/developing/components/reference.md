@@ -2,9 +2,9 @@
 title: 元件參考指南
 description: 元件及其結構的詳細資訊開發人員參考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3675'
+source-wordcount: '3657'
 ht-degree: 1%
 
 ---
@@ -240,9 +240,13 @@ Granite UI提供在製作環境中建立對話方塊所需的大量基本Widget�
 
 ### 自定義對話框欄位{#customizing-dialog-fields}
 
+<!--
+Content not found
+
 >[!TIP]
 >
->請參閱[AEM Gems工作階段](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) ，了解如何自訂對話方塊欄位。
+>See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
+-->
 
 若要建立新介面工具集以用於元件對話方塊，您必須建立新的Granite UI欄位元件。
 
@@ -446,7 +450,7 @@ Granite UI和Granite UI介面工具集中的欄位驗證是使用`foundation-val
 
 ## 預覽行為{#preview-behavior}
 
-切換至「預覽」模式時，即使未重新整理頁面，也會設定[WCM模式](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie。
+切換至「預覽」模式時，即使未重新整理頁面，也會設定[WCM模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie。
 
 對於呈現時對WCM模式敏感的元件，必須定義元件以明確重新整理元件，然後仰賴Cookie的值。
 
