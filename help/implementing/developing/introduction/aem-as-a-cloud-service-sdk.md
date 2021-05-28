@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service SDK
 description: AEM as a Cloud Service軟體開發套件概觀
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1177'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ AEM as a Custom SDK可用來建置和部署自訂程式碼。 如需詳細資訊
 
 建議您經常更新SDK（例如每兩週），並每天處理完整的本機狀態，以免意外依賴應用程式中的狀態資料。
 
-如果您依賴CryptoSupport([，通過配置AEM中的Cloudservices或SMTP Mail服務的憑據，或通過應用程式](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/granite/crypto/CryptoSupport.html)中的CryptoSupport API)，則加密的屬性將通過在AEM環境的第一個啟動時自動生成的密鑰進行加密。 雖然cloudsetup會自動重複使用特定於環境的CryptoKey，但有必要將加密金鑰插入本地開發環境。
+如果您依賴CryptoSupport([，通過配置AEM中的Cloudservices或SMTP Mail服務的憑據，或通過應用程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/granite/crypto/CryptoSupport.html)中的CryptoSupport API)，則加密的屬性將通過在AEM環境的第一個啟動時自動生成的密鑰進行加密。 雖然cloudsetup會自動重複使用特定於環境的CryptoKey，但有必要將加密金鑰插入本地開發環境。
 
 預設情況下，AEM會設定為將關鍵資料儲存在資料夾的資料夾內，但為了方便在開發中重複使用，AEM程式可在首次啟動時以「`-Dcom.adobe.granite.crypto.file.disable=true`」初始化。 這將在「`/etc/key`」生成加密資料。
 
