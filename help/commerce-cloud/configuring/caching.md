@@ -2,10 +2,10 @@
 title: 快取與效能
 description: 了解可啟用GraphQL和內容快取以最佳化商務實作效能的不同設定。
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 2%
+source-wordcount: '842'
+ht-degree: 1%
 
 ---
 
@@ -47,11 +47,11 @@ venia/components/structure/navigation:true:10:600
 
 ## Dispatcher快取 {#dispatcher}
 
-快取[AEM Dispatcher](https://docs.adobe.com/content/help/zh-Hant/experience-manager-dispatcher/using/dispatcher.html)中的AEM頁面或片段，是任何AEM專案的最佳作法。 通常會仰賴無效技術，以確保AEM中變更的任何內容都能在Dispatcher中正確更新。 這是AEM Dispatcher快取策略的核心功能。
+快取[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)中的AEM頁面或片段，是任何AEM專案的最佳作法。 通常會仰賴無效技術，以確保AEM中變更的任何內容都能在Dispatcher中正確更新。 這是AEM Dispatcher快取策略的核心功能。
 
 除了純AEM管理內容CIF外，頁面通常還可顯示透過GraphQL從Magento動態擷取的商務資料。 雖然頁面結構本身可能永遠不會變更，但商務內容可能會變更，例如，如果某些產品資料（名稱、價格等）在Magento中變更。
 
-為了確保在AEM Dispatcher中快取CIF頁面的時間有限，因此建議在AEM Dispatcher中快取CIF頁面時，使用[時間型快取無效](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl)（也稱為TTL型快取）。 可在AEM中使用額外的[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)套件來設定此功能。
+為了確保在AEM Dispatcher中快取CIF頁面的時間有限，因此建議在AEM Dispatcher中快取CIF頁面時，使用[時間型快取無效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl)（也稱為TTL型快取）。 可在AEM中使用額外的[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)套件來設定此功能。
 
 使用TTL型快取功能，開發人員通常會為選取的AEM頁面定義一或多個快取持續時間。 這可確保在設定的持續時間內，AEM Dispatcher只會快取CIF頁面，且內容會經常更新。
 
@@ -63,4 +63,4 @@ venia/components/structure/navigation:true:10:600
 
 - [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [GraphQL快取配置](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
