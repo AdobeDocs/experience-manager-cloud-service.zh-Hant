@@ -2,14 +2,22 @@
 title: 簡介 — 管理SSL憑證
 description: 簡介 — 管理SSL憑證
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 8e09031d1cf17bda9d4eb379f84462b2d29e1aa5
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
 # 簡介 {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_sslcert"
+>title="管理SSL憑證"
+>abstract="Cloud Manager可讓客戶透過Cloud Manager UI自行安裝SSL憑證。 Cloud Manager使用Platform TLS服務來管理客戶擁有且通常從第三方認證機構取得的SSL憑證和私密金鑰。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html" text="檢視、更新和取代SSL憑證"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html" text="檢查SSL憑證的狀態"
+
 
 Cloud Manager可讓客戶透過Cloud Manager UI自行安裝SSL憑證。 Cloud Manager使用Platform TLS服務來管理客戶擁有的SSL憑證和私密金鑰，且通常從協力廠商認證機構取得，例如&#x200B;*我們加密*。
 
