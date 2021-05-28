@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Adobe Experience Manager] 作為Cloud Service發行前管道'
 description: '[!DNL Adobe Experience Manager] 作為Cloud Service發行前管道'
-source-git-commit: 7519c937fdc36711a5f558d787257cee713baf7e
+source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 [!DNL Adobe Experience Manager] as aCloud Service會根據Experience Manager發行藍圖排程，以每月順序提 [供新功能](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service)。為了熟悉排定於下個月上線的功能，客戶可以訂閱發行前管道，在標準方案開發環境或任何沙箱方案環境中適當設定即可存取。 客戶可以預覽Sites主控台的變更，並根據任何新的發行前API建立程式碼。
 
 特定月份的發行前功能清單會發佈在[每月發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)中。
+
+>[！視頻](/help/release-notes/assets/prerelease-overview.mp4)
 
 ## 如何啟用發行前{#enable-prerelease}
 
@@ -110,8 +112,7 @@ Javadoc發佈到Maven Central。
 1. 如果滿足於在本機正常運作，請將程式碼提交至開發分支，並使用Cloud Manager非生產管道部署至訂閱發行前管道的環境
 
 >[!CAUTION]
-> 
-> 部署至Stage或Production時，絕不得使用`aem-prerelease-sdk-api` artifactId。 透過生產管道部署時，請一律使用aem-sdk-api。 同樣地，參考發行前API的程式碼也不應透過生產管道部署。
+部署至Stage或Production時，絕不得使用`aem-prerelease-sdk-api` artifactId。 透過生產管道部署時，請一律使用aem-sdk-api。 同樣地，參考發行前API的程式碼也不應透過生產管道部署。
 
 [AEM CS SDK組建Analyzer maven外掛程式v1.0和更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing)會檢查相依性，以偵測專案中是否使用發行前api。 如果分析器找到，則會使用發行前sdk api來分析專案。
 
