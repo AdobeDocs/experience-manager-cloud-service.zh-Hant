@@ -2,10 +2,10 @@
 title: 內容轉移工具綜覽
 description: 內容轉移工具綜覽
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 73%
+source-wordcount: '858'
+ht-degree: 72%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 73%
 
 請依照以下章節了解使用「內容轉移工具」的准則與最佳作法：
 
-* 建議您對&#x200B;**來源**&#x200B;存放庫執行[修訂清理](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/deploying/deploying/revision-cleanup.html)和[資料存放區一致性檢查](https://helpx.adobe.com/tw/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)，以找出潛在問題並降低存放庫大小。
+* 建議您對&#x200B;**來源**&#x200B;存放庫執行[修訂清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html)和[資料存放區一致性檢查](https://helpx.adobe.com/tw/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)，以找出潛在問題並降低存放庫大小。
 
 * 如果 AEM 雲端製作內容傳遞網路 (CDN) 已設定好 IP 白名單，則應確實將來源環境 IP 也新增至允許清單中。讓來源環境和 AEM 雲端環境可互相通訊。
 
