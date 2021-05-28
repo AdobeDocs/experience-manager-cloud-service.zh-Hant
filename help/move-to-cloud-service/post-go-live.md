@@ -2,14 +2,22 @@
 title: 上線後階段
 description: 上線後階段
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 73%
 
 ---
 
 # 上線後 {#post-go-live}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_troubleshooting"
+>title="疑難排解AEM"
+>abstract="檢閱持續開發的最佳實務，並管理記錄，以及開發人員主控台和CRXDE Lite等工具，以協助疑難排解AEM的問題"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="存取和管理記錄檔"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service開發工具"
+
 
 在「上線後」階段中，您應該確保有清理暫存檔案，並回顧最佳作法以便持續開發及留下管理記錄。
 
@@ -43,4 +51,10 @@ ht-degree: 100%
 
 ### 其他支援 {#additional-support}
 
-如有關於存取雲端服務的疑問，請洽詢您的 Adobe 代表或 Adobe AEM CQ 支援入口網站。
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_support"
+>title="說明與支援"
+>abstract="請洽詢AEM支援團隊，以取得說明或解決任何疑慮。"
+>additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="支援Experience Cloud"
+
+如果您對存取Cloud Service有任何疑問，請聯絡您的Adobe代表，或[Experience Cloud支援](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)以取得詳細資訊。
