@@ -2,9 +2,9 @@
 title: AEM技術基礎
 description: 概述AEM的技術基礎，包括AEM的結構方式和基本技術（例如JCR、Sling和OSGi）。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8ba7968ee7f4d3c808740054bf841dbaf9dd4254
 workflow-type: tm+mt
-source-wordcount: '2187'
+source-wordcount: '2188'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ AEM是以經驗證、可擴充且靈活的技術為基礎而打造的強大平�
 
 Java內容儲存庫(JCR)標準[JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)指定了獨立於供應商和獨立於實施的方式，以在內容儲存庫的精細級別上雙向訪問內容。 Adobe研究（瑞士）AG持有規格領頭。
 
-[JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)套件`javax.jcr.*`用於直接存取和操作存放庫內容。
+[JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)套件`javax.jcr.*`用於直接存取和操作存放庫內容。
 
 AEM建置在JCR上。
 
