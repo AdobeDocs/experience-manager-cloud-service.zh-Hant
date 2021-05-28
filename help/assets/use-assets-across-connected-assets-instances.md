@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 資產管理，連接資產，資產分發，用戶和組
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2966'
 ht-degree: 26%
@@ -198,7 +198,7 @@ ht-degree: 26%
 
 ## 限制和最佳實務{#tip-and-limitations}
 
-* 若要取得資產使用情形的相關分析，請在[!DNL Sites]例項上設定[資產分析](/help/assets/assets-insights.md)功能。
+* 若要取得資產使用情形的相關分析，請在[!DNL Sites]例項上設定[ Assets Insight](/help/assets/assets-insights.md)功能。
 
 ### 權限與資產管理{#permissions-and-managing-assets}
 
