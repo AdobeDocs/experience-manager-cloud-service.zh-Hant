@@ -2,9 +2,9 @@
 title: 使用定位模式製作目標內容
 description: 鎖定目標模式和Target元件提供工具，用於建立體驗的內容
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '5348'
+source-wordcount: '5342'
 ht-degree: 6%
 
 ---
@@ -463,7 +463,7 @@ ht-degree: 6%
 | 增加計數、釋出使用者並允許重新進入 | 選取訪客如果重新進入活動會看到的體驗：相同的體驗，隨機的體驗，看不見的體驗 |
 | 增加計數、釋出使用者及禁止重新進入 | 決定使用者可看見的內容，而非活動內容：相同體驗，不追蹤、預設內容或其他活動內容 |
 
-如需成功量度的詳細資訊，請參閱[Adobe Target檔案](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html)。
+如需成功量度的詳細資訊，請參閱[Adobe Target檔案](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)。
 
 ### 配置設定(AEM定位){#configuring-settings-aem-targeting}
 
@@ -502,13 +502,13 @@ ht-degree: 6%
 
    ![報表來源](../assets/targeted-reporting-source.png)
 
-1. 在「目 **標量度** 」區域的「我的主要目標 **** 」下方，選取您要追蹤的成功量度——轉換、收入、參與——並輸入量度的測量方式 (或觀眾採取哪些動作來指出已達成目標)。請參閱上表中目標量度的定義，並參閱 [Adobe Target成功量度的相關檔案](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) 。
+1. 在「目 **標量度** 」區域的「我的主要目標 **** 」下方，選取您要追蹤的成功量度——轉換、收入、參與——並輸入量度的測量方式 (或觀眾採取哪些動作來指出已達成目標)。請參閱上表中目標量度的定義，並參閱 [Adobe Target成功量度的相關檔案](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) 。
 
    您可以按一下右上角的三個點並選取「重新命名」，以重新命名目 **標**。
 
    如果您需要清除所有欄位，請按一下右上角的三個點，然後選取「清除所 **有欄位」**。
 
-   所有量度也有您可定義的進階設定。 選擇&#x200B;**高級設定**&#x200B;以訪問這些設定。 請參閱上表中成功量度計算方式的定義，並參閱[Adobe Target檔案](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html)。
+   所有量度也有您可定義的進階設定。 選擇&#x200B;**高級設定**&#x200B;以訪問這些設定。 請參閱上表中成功量度計算方式的定義，並參閱[Adobe Target檔案](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)。
 
    >[!NOTE]
    >
