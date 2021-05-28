@@ -2,9 +2,9 @@
 title: 自訂程式碼品質規則 — Cloud Services
 description: 自訂程式碼品質規則 — Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '3302'
+source-wordcount: '3298'
 ht-degree: 4%
 
 ---
@@ -724,7 +724,7 @@ AEM現代化工具檔案提供如何將元件從傳統UI轉換為觸控式UI的�
 
 為了與Cloud Service部署模型相容，單個內容包必須包含儲存庫不可變區域的內容（即`/apps and /libs, although /libs`不應由客戶代碼修改，並且將導致單獨違規）或可變區域（即其他所有內容），但不能同時包含這兩個內容。 例如，包含`/apps/myco/components/text and /etc/clientlibs/myco`的包與Cloud Service不相容，並且會導致報告問題。
 
-如需詳細資訊，請參閱[AEM專案結構](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)。
+如需詳細資訊，請參閱[AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)。
 
 ### 不應使用反向複製代理{#oakpal-reverse-replication}
 
@@ -736,7 +736,7 @@ AEM現代化工具檔案提供如何將元件從傳統UI轉換為觸控式UI的�
 
 **自**:2020.5.0版
 
-如[發行說明所述，Cloud Service部署中不支援反向復寫：刪除複製代理](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)。
+如[發行說明所述，Cloud Service部署中不支援反向復寫：刪除複製代理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)。
 
 使用反向復寫的Adobe應聯絡其他解決方案的客戶。
 
