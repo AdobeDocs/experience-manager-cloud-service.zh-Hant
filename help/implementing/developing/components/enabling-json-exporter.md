@@ -2,10 +2,10 @@
 title: 為元件啟用JSON匯出
 description: 元件可適合根據建模器架構產生其內容的JSON匯出。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 5%
+source-wordcount: '478'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ JSON匯出以[Sling Models](https://sling.apache.org/documentation/bundles/model
 
 >[!NOTE]
 >
->如需使用Sling模型的範例，請參閱[在AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)中開發Sling模型匯出工具一文。
+>如需使用Sling模型的範例，請參閱[在AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)中開發Sling模型匯出工具一文。
 
 Sling Model實作類別必須加上下列註解：
 
@@ -70,7 +70,7 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 ## 範例 {#example}
 
-[核心元](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) 件支援JSON匯出，且可作為參考使用。
+[核心元](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 件支援JSON匯出，且可作為參考使用。
 
 如需範例，請參閱影像核心元件及其註解介面的Sling模型實作。
 
@@ -81,4 +81,4 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 * [資產使用手冊中的內容片段](/help/assets/content-fragments/content-fragments.md)
 * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 * [使用內容片段製作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [核心](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) 元件和內 [容片段元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+* [核心](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 元件和內 [容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
