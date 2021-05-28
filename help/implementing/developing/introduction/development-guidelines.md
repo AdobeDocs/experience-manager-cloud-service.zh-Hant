@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發方針
 description: AEM as a Cloud Service 開發方針
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -87,7 +87,7 @@ AEM as aCloud Service不支援從「發佈」反向復寫至「作者」。 如�
 
 對於本地開發，日誌條目將寫入`/crx-quickstart/logs`資料夾中的本地檔案。
 
-在雲端環境中，開發人員可以透過Cloud Manager下載記錄檔，或使用命令列工具追蹤記錄檔。<!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+在雲端環境中，開發人員可以透過Cloud Manager下載記錄檔，或使用命令列工具追蹤記錄檔。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **設定記錄層級**
 
@@ -159,7 +159,7 @@ AEM as aCloud Service不支援從「發佈」反向復寫至「作者」。 如�
 
 ![開發主控台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-若為生產計畫，使用者可以透過Admin Console中的「雲端管理員 — 開發人員角色」來定義對開發人員控制台的存取權，若為沙箱計畫，只要使用者具備產品設定檔，便能以Cloud Service存取AEM。 對於所有程式，狀態轉儲都需要「Cloud Manager — 開發人員角色」，且使用者也必須在製作和發佈服務的AEM使用者或AEM管理員產品設定檔中定義，才能檢視兩個服務的狀態轉儲資料。 如需設定使用者權限的詳細資訊，請參閱[Cloud Manager檔案](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
+若為生產計畫，使用者可以透過Admin Console中的「雲端管理員 — 開發人員角色」來定義對開發人員控制台的存取權，若為沙箱計畫，只要使用者具備產品設定檔，便能以Cloud Service存取AEM。 對於所有程式，狀態轉儲都需要「Cloud Manager — 開發人員角色」，且使用者也必須在製作和發佈服務的AEM使用者或AEM管理員產品設定檔中定義，才能檢視兩個服務的狀態轉儲資料。 如需設定使用者權限的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
 ### AEM測試與生產服務{#aem-staging-and-production-service}
 
@@ -226,7 +226,7 @@ AEM as aCloud Service需要加密傳出郵件。 以下各節說明如何要求�
 
 ### 傳送電子郵件{#sending-emails}
 
-應使用[Day CQ Mail Service OSGI服務](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，且必須將電子郵件傳送至支援請求中指出的郵件伺服器，而非直接傳送給收件者。
+應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，且必須將電子郵件傳送至支援請求中指出的郵件伺服器，而非直接傳送給收件者。
 
 AEM CS要求透過連接埠465發送郵件。 如果郵件伺服器不支援埠465，則只要啟用TLS選項，就可以使用埠587。
 
@@ -236,9 +236,9 @@ AEM CS要求透過連接埠465發送郵件。 如果郵件伺服器不支援埠4
 
 ### 設定 {#email-configuration}
 
-AEM中的電子郵件應使用[Day CQ Mail Service OSGi服務](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)傳送。
+AEM中的電子郵件應使用[Day CQ Mail Service OSGi服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)傳送。
 
-如需設定電子郵件設定的詳細資訊，請參閱[AEM 6.5檔案](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html)。 對於AEM as aCloud Service，必須對`com.day.cq.mailer.DefaultMailService OSGI`服務進行下列調整：
+如需設定電子郵件設定的詳細資訊，請參閱[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)。 對於AEM as aCloud Service，必須對`com.day.cq.mailer.DefaultMailService OSGI`服務進行下列調整：
 
 如果已請求埠465:
 
