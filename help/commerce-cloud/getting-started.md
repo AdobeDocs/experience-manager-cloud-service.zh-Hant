@@ -8,16 +8,16 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 2%
+source-wordcount: '1065'
+ht-degree: 1%
 
 ---
 
 # AEM Commerce as aCloud Service快速入門 {#start}
 
-若要開始以AEM Commerce as aCloud Service的形式使用，您的Experience Manager Cloud Service必須布建Commerce Integration Framework(CIF)附加元件。 CIF附加元件是位於[AEM Sites上方的額外模組，作為Cloud Service](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/sites/home.html)。
+若要開始以AEM Commerce as aCloud Service的形式使用，您的Experience Manager Cloud Service必須布建Commerce Integration Framework(CIF)附加元件。 CIF附加元件是位於[AEM Sites上方的額外模組，作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/home.html)。
 
 ## 入門 {#onboarding}
 
@@ -28,7 +28,7 @@ AEM Commerce as a Cloud Service的上線程式為兩個步驟：
 
 第一步上線步驟由Adobe完成。 如需定價和布建的詳細資訊，您需要聯絡您的銷售代表。
 
-布建CIF附加元件後，該元件即會套用至任何現有的Cloud Manager程式。 如果您沒有Cloud Manager計畫，則需要建立新計畫。 有關詳細資訊，請參閱[設定程式](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/setting-up-program.html)。
+布建CIF附加元件後，該元件即會套用至任何現有的Cloud Manager程式。 如果您沒有Cloud Manager計畫，則需要建立新計畫。 有關詳細資訊，請參閱[設定程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html)。
 
 第二步是針對每個AEM做為Cloud Service環境進行自助服務。 CIF附加元件初次布建後，您還需要執行一些額外設定。
 
@@ -69,7 +69,7 @@ AEM Commerce as a Cloud Service的上線程式為兩個步驟：
 
 1. 使用Cloud Manager外掛程式取得Adobe I/OCLI
 
-   查看[AdobeCloud Manager文檔](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)，了解如何下載、設定和使用[Adobe I/OCLI](https://github.com/adobe/aio-cli)以及[Cloud Manager CLI插件](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
+   查看[AdobeCloud Manager文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant)，了解如何下載、設定和使用[Adobe I/OCLI](https://github.com/adobe/aio-cli)以及[Cloud Manager CLI插件](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
 
 2. 使用AEM as a Adobe I/O程式驗證Cloud ServiceCLI
 
