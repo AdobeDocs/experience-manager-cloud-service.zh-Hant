@@ -2,10 +2,10 @@
 title: 開發SPA for AEM
 description: 本文提出在請前端開發人員開發SPA for AEM時應考慮的重要問題，並概述AEM的SPA架構，以備在AEM上部署開發的SPA時時所銘記。
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2078'
-ht-degree: 1%
+source-wordcount: '2076'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +54,7 @@ SPA應僅依賴內容的動態轉譯。 這是AEM擷取並轉譯內容結構的�
 
 ## AEM 專案原型 {#aem-project-archetype}
 
-任何AEM專案都應運用[AEM專案原型](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/archetype/overview.html)，這可支援使用React或Angular的SPA專案，並運用SPA SDK。
+任何AEM專案都應運用[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，這可支援使用React或Angular的SPA專案，並運用SPA SDK。
 
 ## SPA設計模型{#spa-design-models}
 
