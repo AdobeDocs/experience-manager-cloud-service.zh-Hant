@@ -1,18 +1,18 @@
 ---
-title: 資產 Insights
+title: Assets Insights
 description: 追蹤在協力廠商網站、行銷活動和Adobe創意解決方案中使用的影像的使用者評等和使用統計資料。
 contentOwner: AG
 feature: 資產分析，資產報表
 role: Business Practitioner,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 8%
 
 ---
 
-# 資產 Insights {#asset-insights}
+# Assets Insights {#asset-insights}
 
 「資產前瞻分析」功能可讓您追蹤使用者評等，以及第三方網站、行銷活動和Adobe創意解決方案所使用影像的使用統計資料。 有助於深入分析影像的效能和受歡迎程度。
 
@@ -20,7 +20,7 @@ Assets Insights會擷取使用者活動詳細資料，例如影像的分級、�
 
 若要讓「資產分析」擷取網站影像的使用量統計資料，您必須在網站程式碼中包含影像的內嵌程式碼。
 
-若要讓「資產前瞻分析」顯示資產的使用量統計資料，請先設定從[!DNL Adobe Analytics]擷取報表資料的功能。 如需詳細資訊，請參閱[設定資產前瞻分析](#configure-asset-insights)。 若要使用此功能，請分別購買[!DNL Adobe Analytics]授權。
+若要讓「資產前瞻分析」顯示資產的使用統計資料，請先設定從[!DNL Adobe Analytics]擷取報表資料的功能。 如需詳細資訊，請參閱[設定Assets Insights](#configure-asset-insights)。 若要使用此功能，請分別購買[!DNL Adobe Analytics]授權。
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Assets Insights會擷取使用者活動詳細資料，例如影像的分級、�
 
 ## 查看影像{#viewing-statistics-for-an-image}的統計資訊
 
-您可以從中繼資料頁面檢視資產前瞻分析分數。
+您可以從中繼資料頁面檢視「資產前瞻分析」分數。
 
 1. 從「資產」使用者介面中，選取影像，然後從工具列按一下「屬性」 ****。
 1. 在「屬性」頁面中，按一下&#x200B;**[!UICONTROL Insights]**。
@@ -49,7 +49,7 @@ Assets Insights會擷取使用者活動詳細資料，例如影像的分級、�
 
    >[!NOTE]
    >
-   >由於「資產前瞻分析」功能通常會定期從[!DNL Adobe Analytics]擷取解決方案資料，因此「解決方案」區段可能不會顯示最新的資料。 顯示資料的時段取決於Asset Insights執行擷取Analytics資料的擷取作業排程。
+   >由於「資產前瞻分析」功能通常會定期從[!DNL Adobe Analytics]擷取解決方案資料，因此「解決方案」區段可能不會顯示最新的資料。 顯示資料的時段取決於Assets Insights執行擷取Analytics資料的擷取作業排程。
 
 1. 要以圖形方式查看某個時段內資產的效能統計資訊，請在「效能統計資訊」部分中 **[!UICONTROL 選擇該時段]** 。詳細資訊 (包括點按次數和印象) 會顯示為圖形的趨勢線。
 
@@ -75,7 +75,7 @@ Assets Insights會擷取使用者活動詳細資料，例如影像的分級、�
 
 ## Schedule background job {#scheduling-background-job}
 
-Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
+Assets Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Assets Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
 
 1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
@@ -85,9 +85,9 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.
 -->
 
-## 設定Asset Insights {#configure-asset-insights}
+## 設定Assets Insights {#configure-asset-insights}
 
-[!DNL Experience Manager Assets] 從中擷取協力廠商網站所使用數位資產的使用資料 [!DNL Adobe Analytics]。若要讓Asset Insights擷取此資料並產生深入分析，請先設定功能以與[!DNL Adobe Analytics]整合。
+[!DNL Experience Manager Assets] 從中擷取協力廠商網站所使用數位資產的使用資料 [!DNL Adobe Analytics]。若要啟用Assets Insights以擷取此資料並產生深入分析，請先設定功能以與[!DNL Adobe Analytics]整合。
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
    *圖：在中設定Adobe Analytics for Assets Insights[!DNL Experience Manager]*
 
-1. 按一下「**[!UICONTROL 驗證]**」。 在[!DNL Experience Manager]驗證您的憑證後，從&#x200B;**[!UICONTROL 報表套裝]**&#x200B;清單中，選擇您要讓Asset Insights擷取資料的Adobe Analytics報表套裝。 按一下&#x200B;**[!UICONTROL 「新增」]**。
+1. 按一下「**[!UICONTROL 驗證]**」。 在[!DNL Experience Manager]驗證您的憑證後，從&#x200B;**[!UICONTROL 報表套裝]**&#x200B;清單中，選擇您要讓Assets Insights擷取資料的Adobe Analytics報表套裝。 按一下&#x200B;**[!UICONTROL 「新增」]**。
 1. 在[!DNL Experience Manager]設定報表套裝後，按一下&#x200B;**[!UICONTROL Done]**。
 
 ### 頁面追蹤器{#page-tracker}
@@ -120,11 +120,11 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
 <!--
 
-## Using demo package for Asset Insights {#using-demo-package-for-asset-insights}
+## Using demo package for Assets Insights {#using-demo-package-for-asset-insights}
 
-Using the demo package, you can enable Adobe Asset Insights to capture data from and generate insights for a sample web page.
+Using the demo package, you can enable Adobe Assets Insights to capture data from and generate insights for a sample web page.
 
-1. Configure Asset Insights using the instructions in [Configure Asset Insights](#configure-asset-insights).
+1. Configure Assets Insights using the instructions in [Configure Assets Insights](#configure-asset-insights).
 1. Download the sample [!DNL Experience Manager Assets] package from below and install the package from CRXDE package manager.
 
    [Get File](assets/insightsdemo.zip)
