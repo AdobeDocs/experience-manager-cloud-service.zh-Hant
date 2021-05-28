@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] as a 2020.8.0的Cloud Service發行說明。'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1046'
 ht-degree: 5%
 
 ---
@@ -40,9 +40,9 @@ ht-degree: 5%
 
 * 使用處理設定檔，使用計算服務產生自訂中繼資料。 請參閱[使用處理設定檔的自訂中繼資料](/help/assets/manage-metadata.md#metadata-compute-service)。
 
-* 更簡單的下載體驗，供Brand Portal使用者使用，供管理員進行設定。 請參閱[下載體驗概述](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
+* 更簡單的下載體驗，供Brand Portal使用者使用，供管理員進行設定。 請參閱[下載體驗概述](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
 
-* 原生和高保真PDF檔案預覽現在可在Brand Portal中使用。 請參閱[文檔查看器概述](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
+* 原生和高保真PDF檔案預覽現在可在Brand Portal中使用。 請參閱[文檔查看器概述](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
 
 * 您現在可以直接從AEM中的[!DNL Dynamic Media]作為Cloud Service使CDN（內容傳遞網路）快取失效（與使用[!DNL Dynamic Media Classic]相反）。 這可確保在數分鐘內提供最新資產，而非數小時。 請參閱透過Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN快取失效。[
 
