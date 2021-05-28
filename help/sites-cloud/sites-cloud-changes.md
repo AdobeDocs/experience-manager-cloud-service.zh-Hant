@@ -2,10 +2,10 @@
 title: AEM 雲端服務中 AEM Sites 的重大變更
 description: AEM 雲端服務中 AEM Sites 的重大變更
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 21%
+source-wordcount: '532'
+ht-degree: 17%
 
 ---
 
@@ -22,7 +22,7 @@ AEM Sites as aCloud Service是雲端原生AEM as aCloud Service平台的一部�
 * [AEM as a Cloud Service 重大變更 (發行說明)](/help/release-notes/aem-cloud-changes.md)
 * [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as aCloud Service簡介](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 AEM Sites as aCloud Service的變更和新增如下：
@@ -44,9 +44,9 @@ AEM Sites as aCloud Service的變更和新增如下：
 
 ## 新參考站點和教程{#new-reference-site-and-tutorial}
 
-[新的AEM參考網站WKND ](https://wknd.site/)已更新並發佈，以反映使用AEM建立網站的最佳實務，以及AEM中可用的完整功能、元件和部署模型集。新的參考網站和[隨附的教學課程](https://docs.adobe.com/content/help/zh-Hant/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)涵蓋基本主題，例如專案設定、核心元件、可編輯範本、用戶端程式庫，以及使用Adobe Experience Manager Sites開發元件。
+[新的AEM參考網站WKND ](https://wknd.site/)已更新並發佈，以反映使用AEM建立網站的最佳實務，以及AEM中可用的完整功能、元件和部署模型集。新的參考網站和[隨附的教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)涵蓋基本主題，例如專案設定、核心元件、可編輯範本、用戶端程式庫，以及使用Adobe Experience Manager Sites開發元件。
 
-之前，We.Retail預設會與AEM一起安裝（生產模式中啟動時除外）。  現在，以後預設不會安裝參考網站。  而是提供附有更新WKND參考網站代碼的[git repo](https://github.com/adobe/aem-guides-wknd/)和[教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)。
+之前，We.Retail預設會與AEM一起安裝（生產模式中啟動時除外）。  現在，以後預設不會安裝參考網站。  而是提供附有更新WKND參考網站代碼的[git repo](https://github.com/adobe/aem-guides-wknd/)和[教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)。
 
 ## 運行時{#capabilities-not-available-at-runtime}中不可用的功能
 
