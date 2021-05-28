@@ -3,9 +3,9 @@ title: '部署至 AEM as a Cloud Service '
 description: '部署至 AEM as a Cloud Service  '
 feature: 部署
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3290'
 ht-degree: 1%
 
 ---
@@ -20,8 +20,10 @@ ht-degree: 1%
 
 本檔案的其餘部分將說明開發人員如何調整其實務，以便搭配AEM作為Cloud Service的版本更新和客戶更新使用。
 
+<!--
 >[!NOTE]
->建議使用現有程式碼基底的客戶進行[AEM檔案](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)中所述的存放庫重組練習。
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+-->
 
 ## 客戶版本{#customer-releases}
 
@@ -40,8 +42,10 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
+<!--
 >[!NOTE]
->建議使用現有程式碼基底的客戶進行[AEM檔案](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)中所述的存放庫重組練習。
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
+-->
 
 ## 透過Cloud Manager和Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}部署內容套件
 
@@ -102,7 +106,7 @@ ht-degree: 1%
    * 內容感知配置（`/conf`下的任何項）（添加、修改、刪除）
    * 指令碼(軟體包可在軟體包安裝過程的各個階段觸發安裝掛接。 請參閱[Jackrabbit filevault檔案](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)，了解安裝鈎點。 請注意，AEM CS目前使用Filevault 3.4.0版，此版本限制管理員使用者、系統使用者和管理員群組成員的安裝鈎點)。
 
-可借由將套件內嵌在`/apps`下的install.author或install.publish資料夾中，將可變內容安裝限制為製作或發佈。 為反映這一分離，已在AEM 6.5中完成重組，建議的專案重組詳細資訊可在[AEM 6.5檔案中找到。](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+可借由將套件內嵌在`/apps`下的install.author或install.publish資料夾中，將可變內容安裝限制為製作或發佈。 為反映這一分離，已在AEM 6.5中完成重組，建議的專案重組詳細資訊可在[AEM 6.5檔案中找到。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >內容包部署到所有環境類型（開發、預備、生產）。 無法將部署限制在特定環境。 此限制的設定是為了確保自動執行的測試執行選項。 環境特定內容需要透過套件管理器手動安裝。
