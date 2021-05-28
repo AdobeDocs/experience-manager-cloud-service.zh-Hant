@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal，資產分送，設定
 role: Business Practitioner
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 99%
+source-wordcount: '1159'
+ht-degree: 97%
 
 ---
 
@@ -226,11 +226,11 @@ ht-degree: 99%
 
 除了上述操作，您也可以從 AEM Assets 將中繼資料結構、影像預設集、搜尋 Facet 和標籤發佈至 Brand Portal。
 
-* [將預設集、結構和 Facet 發佈至 Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [將標記發佈至 Brand Portal](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [將預設集、結構和 Facet 發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [將標記發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-如需詳細資訊，請參閱 [Brand Portal 文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/home.html)。
+如需詳細資訊，請參閱 [Brand Portal 文件](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)。
 
 
 <!--
