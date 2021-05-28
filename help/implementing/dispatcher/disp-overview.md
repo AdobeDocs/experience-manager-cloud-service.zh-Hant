@@ -3,9 +3,9 @@ title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4211'
+source-wordcount: '4207'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 ## Apache和Dispatcher設定及測試{#apache-and-dispatcher-configuration-and-testing}
 
-本節說明如何將AEM建構為Cloud ServiceApache和Dispatcher設定，以及如何在部署至雲端環境之前，先在本機驗證並執行。 此外，也說明在雲端環境中進行除錯的方式。 如需Dispatcher的其他資訊，請參閱[AEM Dispatcher檔案](https://docs.adobe.com/content/help/zh-Hant/experience-manager-dispatcher/using/dispatcher.html)。
+本節說明如何將AEM建構為Cloud ServiceApache和Dispatcher設定，以及如何在部署至雲端環境之前，先在本機驗證並執行。 此外，也說明在雲端環境中進行除錯的方式。 如需Dispatcher的其他資訊，請參閱[AEM Dispatcher檔案](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)。
 
 >[!NOTE]
 >Windows用戶需要使用Windows 10專業版或支援Docker的其他分發版。 這是在本機電腦上執行和偵錯Dispatcher的必要條件。 以下各節包含使用SDK的Mac或Linux版本的命令，但Windows SDK也能以類似方式使用。
@@ -526,7 +526,7 @@ Managed Services和AEM as aCloud Service之間的Dispatcher設定結構有差異
 ## 如何將AMS轉換為AEM as a Cloud service Dispatcher設定
 
 以下章節提供如何轉換AMS設定的逐步指示。 這是假設
-封存的結構類似於[Cloud Manager Dispatcher設定](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中所述的結構
+封存的結構類似於[Cloud Manager Dispatcher設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中所述的結構
 
 ### 提取封存並移除最終首碼
 
