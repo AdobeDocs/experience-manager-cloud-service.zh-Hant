@@ -4,7 +4,7 @@ description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作�
 feature: 資產管理，上傳
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
@@ -217,7 +217,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 * Adobe建議在[!DNL Experience Manager Assets]中的每個資料夾中新增不超過1000個資產。 雖然您可以新增更多資產至資料夾，但您可能會遇到效能問題，例如導覽至這類資料夾的速度變慢。
 
-* 在[!UICONTROL 名稱衝突]對話方塊中選取&#x200B;**[!UICONTROL 取代]**&#x200B;時，會為新資產重新產生資產ID。 此ID與先前資產的ID不同。 如果啟用[資產分析](/help/assets/assets-insights.md)以追蹤曝光數或點按[!DNL Adobe Analytics]，重新產生的資產ID會讓[!DNL Analytics]上為資產擷取的資料失效。
+* 在[!UICONTROL 名稱衝突]對話方塊中選取&#x200B;**[!UICONTROL 取代]**&#x200B;時，會為新資產重新產生資產ID。 此ID與先前資產的ID不同。 如果啟用[Assets Insights](/help/assets/assets-insights.md)以追蹤曝光數或點按[!DNL Adobe Analytics]，重新產生的資產ID會讓[!DNL Analytics]上為資產擷取的資料失效。
 
 * 有些上傳方法無法阻止您上傳檔案名稱中包含[禁止字元](#filename-handling)的資產。 字元將替換為`-`符號。
 
