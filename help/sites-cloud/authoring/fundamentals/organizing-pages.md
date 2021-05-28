@@ -2,9 +2,9 @@
 title: 建立及組織頁面
 description: 如何使用AEM建立及組織頁面
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2552'
 ht-degree: 7%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 7%
 
 網站的結構可視為內含您內容頁面的樹狀結構。 這些內容頁面的名稱會用來形成URL，而標題會在檢視頁面內容時顯示。
 
-以下顯示[WKND Tutorial](https://docs.adobe.com/content/help/zh-Hant/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)網站中訪問有關滑板園(`la-skateparks`)的文章的示例：
+以下顯示[WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)網站中訪問有關滑板園(`la-skateparks`)的文章的示例：
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
