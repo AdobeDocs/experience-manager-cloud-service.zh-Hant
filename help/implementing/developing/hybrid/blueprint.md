@@ -2,9 +2,9 @@
 title: SPA Blueprint
 description: 本檔案說明任何SPA架構都應履行的一般、獨立於架構的合約，以便在AEM中實作可編輯的SPA元件。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2056'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ SPA元件必須與頁面模型同步，並隨著內容的任何變更而更新�
 * `:itemsOrder`:訂了孩子的名單。JSON地圖物件無法保證其欄位的順序。 API的使用者同時擁有地圖和目前的陣列，便能享有這兩種結構的優點
 * `:path`:項目的內容路徑（顯示在代表頁面的項目上）
 
-另請參閱[AEM Content Services快速入門。](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+另請參閱[AEM Content Services快速入門。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 
 ### 框架特定模組{#framework-specific-module}
 
