@@ -2,9 +2,9 @@
 title: 裝飾標記
 description: 轉譯網頁中的元件時可產生 HTML 元素，將轉譯的元件圍在其中。對於開發人員來說，AEM 提供簡單清晰的邏輯，可控制圍住所含元件的裝飾標記。
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '789'
 ht-degree: 10%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 10%
 
 您可以完全控制HTL指令碼中包裝函式標籤的行為及其相關邏輯。
 
-如需有關以HTL開發的詳細資訊，請參閱[ HTL檔案](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)。
+如需有關以HTL開發的詳細資訊，請參閱[ HTL檔案](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)。
 
 ### 決策樹{#decision-tree}
 
