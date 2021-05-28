@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 之運作與維護
 description: Adobe Experience Manager as a Cloud Service 運作與維護自助資源和文件連結
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '408'
 ht-degree: 84%
 
 ---
@@ -41,10 +41,10 @@ ht-degree: 84%
 
 * [近期文件更新](https://helpx.adobe.com/tw/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher 文件](/help/implementing/dispatcher/overview.md)
-* [HTL 文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)
-* [核心元件文件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager 文件](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [HTL 文件](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
+* [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [GDPR 整備](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager as a Cloud Service 教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社群論壇](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
