@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] as a 2020.9.0的Cloud Service發行說明。'
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 12%
+source-wordcount: '724'
+ht-degree: 11%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 12%
    * 選擇性發佈 — 現在，行銷團隊可以存取同步至[!DNL Dynamic Media]的智慧型裁切影像和動態轉譯，以便建立促銷文宣，而完全無須將這些資產發佈至[!DNL Dynamic Media]以進行全域傳送。 [!DNL Dynamic Media][!DNL Experience Manager] 和發 [!DNL Dynamic Media] 布是分離的，可個別執行以達成此目的。請參閱[選擇性發佈](/help/assets/dynamic-media/selective-publishing.md)。
    * 管理員現在可以重設在布建時收到的[!DNL Dynamic Media]Cloud Service密碼。 重設可在[!DNL Experience Manager]使用者介面中完成，不需使用[!DNL Dynamic Media Classic]案頭應用程式。
 
-* 若要了解下列增強功能，請參閱[Brand Portal中的新增功能](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/introduction/whats-new.html)。
+* 若要了解下列增強功能，請參閱[Brand Portal中的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
    * 整合Adobe Document Cloud檢視SDK，增強PDF預覽。
    * 按一下即可下載功能。
