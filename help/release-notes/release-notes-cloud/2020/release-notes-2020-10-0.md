@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] as a 2020.10.0的Cloud Service發行說明。'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 25%
+source-wordcount: '1032'
+ht-degree: 21%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 25%
 
 * **[!DNL Adobe Sensei]支援的視訊智慧標籤**:運用AI模型來分析物件和動作專用標籤的視訊內容，DAM使用者可以花更少的時間新增標籤，並花更多時間利用公開的豐富資訊，為客戶提供適當的體驗。請參閱[智慧標籤視訊資產](/help/assets/smart-tags-video-assets.md)。
 
-* **Brand Portal增強功能**:提供下列新功能及更多 [!DNL Brand Portal]項。如需詳細資訊，請參閱[[!DNL Brand Portal] 發行說明](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html)。
+* **Brand Portal增強功能**:提供下列新功能及更多 [!DNL Brand Portal]項。如需詳細資訊，請參閱[[!DNL Brand Portal] 發行說明](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html)。
 
-   * [增強的下載](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) 體驗，提供簡化且快速的下載。管理員可設定額外的下載組態，以提供符合使用者和企業需求的體驗。
-   * 現在可以從任何頁面按一下即可導覽至檔案、[集合](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)和共用連結。
-   * 使用者現在可以[選取並下載特定轉譯](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page)。 可透過「資產」詳細內容頁面的「轉譯」面板新的轉譯下載選項。
+   * [增強的下載](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) 體驗，提供簡化且快速的下載。管理員可設定額外的下載組態，以提供符合使用者和企業需求的體驗。
+   * 現在可以從任何頁面按一下即可導覽至檔案、[集合](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)和共用連結。
+   * 使用者現在可以[選取並下載特定轉譯](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page)。 可透過「資產」詳細內容頁面的「轉譯」面板新的轉譯下載選項。
    * 來賓使用者工作階段逾時15分鐘，可確保所有同時使用者獲得更佳體驗。
 
 * **[!DNL Adobe Asset Link]版本2.1**:適用於、和 [的Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 資產 [!DNL Adobe Photoshop]連結擴 [!DNL Adobe Illustrator]充功能 [!DNL Adobe InDesign] 的新版本已推出。它新增了與2020年10月發行的2021版最新[!DNL Adobe Creative Cloud]應用程式的相容性。
@@ -98,11 +98,11 @@ AEM as aCloud Service中的Cloud Manager 2020.10.0的發行日期為2020年10月
 
 ### 工作流程 {#workflows}
 
-* 新增了根據「工作流程標題」、「工作流模型」、「狀態」、「發起人」、「裝載路徑」和「開始日期」搜尋工作流程例項的支援。 請參閱[搜尋工作流程例項](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html)。
+* 新增了根據「工作流程標題」、「工作流模型」、「狀態」、「發起人」、「裝載路徑」和「開始日期」搜尋工作流程例項的支援。 請參閱[搜尋工作流程例項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html)。
 
 ## 內容轉移工具 {#content-transfer-tool}
 
-請詳閱本節，了解[內容轉移工具](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)版本v1.1.12的新增功能和更新。
+請詳閱本節，了解[內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)版本v1.1.12的新增功能和更新。
 
 ### 新增功能 {#what-is-new-ctt}
 
