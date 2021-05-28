@@ -2,10 +2,10 @@
 title: 元件概觀
 description: 元件是模組化單元，可實現特定功能，以在您的網站上呈現您的內容
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 4%
+source-wordcount: '387'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ AEM中的元件包括：
 * 有標準化的使用者介面。
 * 具有可設定的編輯行為。
 * 使用根據Granite UI元件使用子元素建置的對話方塊。
-* 使用[HTL](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)開發。
+* 使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)開發。
 * 可開發以建立可擴充預設功能的自訂元件。
 
 由於元件是模組化的，因此您可以：
@@ -44,7 +44,7 @@ AEM中的元件包括：
 
 ## AEM 核心元件 {#aem-core-components}
 
-[AEM核心元](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) 件是一組適用於AEM的標準化網頁內容管理(WCM)元件，可縮短開發時間並降低網站的維護成本。
+[AEM核心元](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 件是一組適用於AEM的標準化網頁內容管理(WCM)元件，可縮短開發時間並降低網站的維護成本。
 
 核心元件以AEM as aCloud Service的形式提供，而[WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)說明如何實作和使用元件。 這些元件提供了所有原始碼，可以按原樣使用，也可以作為修改或擴展元件的起始點。
 
