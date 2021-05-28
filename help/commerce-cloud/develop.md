@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 10%
+source-wordcount: '1001'
+ht-degree: 8%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 10%
 
 根據AEM Integration Framework(CIF)開發AEM as aCloud Service的AEM商務專案，會遵循與上其他AEM專案相同的規則和最佳實務，如同Cloud Service。 請先查看以下內容：
 
-- [AEM 專案結構](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
-- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [AEM as a Cloud Service 開發方針](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+- [AEM 專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
+- [AEM as a Cloud Service 開發方針](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
 ## 以AEM作為Cloud ServiceSDK的本機開發 {#local}
 
@@ -31,13 +31,13 @@ ht-degree: 10%
 
 CIF附加元件以Sling功能封存檔形式提供。 Software Distribution入口網站上提供的zip檔案包含兩個Sling Feature封存檔，一個用於AEM作者，另一個用於AEM發佈執行個體。
 
-**AEM as a Cloud Service 的新手嗎？** 請參 [閱更詳細的指南，以使用AEM作為Cloud ServiceSDK來設定本機開發環境](https://docs.adobe.com/content/help/zh-Hant/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)。
+**AEM as a Cloud Service 的新手嗎？** 請參 [閱更詳細的指南，以使用AEM作為Cloud ServiceSDK來設定本機開發環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)。
 
 ### 所需軟體
 
 應在本機安裝下列項目：
 
-- [AEM as a Cloud ServiceSDK](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud ServiceSDK](https://experienceleague.adobe.com/docs/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 或更新版本)
 - [Node.js v10+](https://nodejs.org/en/)
