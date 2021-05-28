@@ -2,10 +2,10 @@
 title: 樣式系統
 description: 樣式系統允許模板作者在元件的內容策略中定義樣式類，以便內容作者能夠在編輯頁面上的元件時選擇它們。 這些樣式可作為元件的替代視覺變化，使其更具彈性。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1329'
-ht-degree: 2%
+source-wordcount: '1327'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 ## 使用 {#use}
 
-為了展示功能，我們將以[WKND](https://docs.adobe.com/content/help/zh-Hant/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)核心元件[標題元件](https://www.adobe.com/go/aem_cmp_title_v2)的實作為範例。
+為了展示功能，我們將以[WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)核心元件[標題元件](https://www.adobe.com/go/aem_cmp_title_v2)的實作為範例。
 
 以下各節[As a Content Author](#as-a-content-author)和[As a Template Author](#as-a-template-author)說明如何使用WKND的樣式系統測試樣式系統的功能。
 
