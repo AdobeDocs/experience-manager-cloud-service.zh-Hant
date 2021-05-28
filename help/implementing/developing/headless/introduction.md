@@ -2,9 +2,9 @@
 title: AEM Sites無頭開發(Headless Development as aCloud Service)
 description: 了解AEM作為Cloud Service的強大無周邊功能（例如內容模型、內容片段和GraphQL API）如何搭配運作，讓您集中管理體驗，並跨管道提供體驗。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '487'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ AEM as aCloud Service是無頭式實作模型的彈性工具，提供三種強�
 1. 傳遞的內容API
    * AEM GraphQL API支援內容片段傳送。
    * AEM Assets REST API支援內容片段CRUD操作。
-   * [內容片段核心元件的JSON匯出也可以直接傳送內容。](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+   * [內容片段核心元件的JSON匯出也可以直接傳送內容。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 ## 使用AEM Headless {#first-steps}執行的第一步
 
