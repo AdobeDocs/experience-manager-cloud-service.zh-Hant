@@ -1,9 +1,9 @@
 ---
 title: 已棄用的API
 description: 發行說明，專供 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中已棄用和已移除的API。
-source-git-commit: 3c4b8f8d9b252cfc90823c475a4e21eefd1dfcf7
+source-git-commit: 788727ce2e6b26f5da647c9ffd8267d958e3b226
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '394'
 ht-degree: 7%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 7%
     <td>org.apache.sling.settings</td>
     <td>AEM as aCloud Service不支援執行階段的執行模式或檔案系統存取。 </td>
     <td>10/5/20</td>
-    <td>6/1/21</td>
+    <td>2021年底</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
