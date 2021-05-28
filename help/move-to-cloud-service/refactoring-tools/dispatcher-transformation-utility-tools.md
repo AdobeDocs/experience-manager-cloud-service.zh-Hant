@@ -2,10 +2,10 @@
 title: AEM Dispatcher 轉換工具
 description: AEM Dispatcher 轉換工具
 exl-id: 97eb4f3f-dc03-461a-8d7e-164065bd1e4c
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 51%
+source-wordcount: '337'
+ht-degree: 48%
 
 ---
 
@@ -25,13 +25,13 @@ Dispatcher 是 Adobe Experience manager 的快取和/或負載平衡工具。使
 >[!NOTE]
 >Dispatcher 最常見的用法是快取來自 **AEM Publish 例項**&#x200B;的回應，以提高您對外發佈網站的回應速度與安全性。
 
-請參考 [Dispatcher 綜覽](https://docs.adobe.com/content/help/zh-Hant/experience-manager-dispatcher/using/dispatcher.html)，了解 Dispatcher 如何執行快取、傳回文件和執行負載平衡。
+請參考 [Dispatcher 綜覽](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)，了解 Dispatcher 如何執行快取、傳回文件和執行負載平衡。
 
 ### Apache 和 Dispatcher 設定和測試 {#dispatcher-configurations-cloud}
 
 您必須了解如何構成 AEM as a Cloud Service Apache 和 Dispatcher 設定，以及如何在部署至雲端環境前，先在本機上驗證並執行。
 
-如需詳細資訊，請參考[雲端上的 Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
+如需詳細資訊，請參考[雲端上的 Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
 
 ## AEM Dispatcher 轉換工具 {#aem-dispatcher-converter}
 
