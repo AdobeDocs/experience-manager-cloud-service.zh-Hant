@@ -2,14 +2,21 @@
 title: AEM as aCloud Service中的維護任務
 description: AEM as aCloud Service中的維護任務
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 068ae08fddd482e4367b4bf1c8cc3776bbb4cc6b
+source-git-commit: 22228ebfbc754551f93907502c53427ba43983b3
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 1%
+source-wordcount: '992'
+ht-degree: 2%
 
 ---
 
 # AEM as aCloud Service中的維護任務
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_maintenance"
+>title="維護任務"
+>abstract="維護任務是按計畫運行以優化儲存庫的進程。 以AEM為Cloud Service，客戶配置維護任務的操作屬性的需求極低。 客戶可以將資源集中在應用程式級別的問題上，使基礎架構操作留待Adobe。"
+>additional-url="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html" text="AEM維護指南"
+>additional-url="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks" text="操作儀表板維護任務"
 
 維護任務是按計畫運行以優化儲存庫的進程。 以AEM為Cloud Service，客戶配置維護任務的操作屬性的需求極低。 客戶可以將資源集中在應用程式級別的問題上，使基礎架構操作留待Adobe。
 
