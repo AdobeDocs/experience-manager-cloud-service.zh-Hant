@@ -2,9 +2,9 @@
 title: SPA簡介和逐步說明
 description: 本文會介紹SPA的概念，並逐步說明如何使用基本的SPA應用程式進行製作，說明它與基礎AEM SPA編輯器的關聯。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '1984'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ SPA編輯器提供全方位的解決方案，可支援AEM中的SPA。 本文逐�
 
 >[!TIP]
 >
->任何AEM專案都應運用[AEM專案原型](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/archetype/overview.html)，這可支援使用React或Angular的SPA專案，並運用SPA SDK。
+>任何AEM專案都應運用[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，這可支援使用React或Angular的SPA專案，並運用SPA SDK。
 
 ### 什麼是SPA?{#what-is-a-spa}
 
