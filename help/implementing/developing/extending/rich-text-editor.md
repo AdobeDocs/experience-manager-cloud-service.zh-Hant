@@ -3,9 +3,9 @@ title: 設定RTF編輯器以製作 [!DNL Adobe Experience Manager] 中的內容�
 description: 設定RTF編輯器以製作 [!DNL Adobe Experience Manager] 中的內容作為Cloud Service。
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '1969'
+source-wordcount: '1964'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ RTE的基本功能會由適當外掛程式特定節點上的`features`屬性值�
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-[核心元件文字元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)可讓範本編輯器以使用者介面作為內容原則來設定許多RTE外掛程式，而不需要進行技術設定。 內容原則可搭配RTE UI設定使用，如本檔案所述。 如需詳細資訊，請參閱[建立頁面範本](/help/sites-cloud/authoring/features/templates.md)和[核心元件開發人員檔案](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)。
+[核心元件文字元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)可讓範本編輯器以使用者介面作為內容原則來設定許多RTE外掛程式，而不需要進行技術設定。 內容原則可搭配RTE UI設定使用，如本檔案所述。 如需詳細資訊，請參閱[建立頁面範本](/help/sites-cloud/authoring/features/templates.md)和[核心元件開發人員檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)。
 
 >如需參考，可在以下網址找到預設的文字元件（在標準安裝中提供）:
 >
@@ -230,7 +230,7 @@ RTE中的可用選項從用戶介面配置流向內容策略。
 * 如果RTE的用戶介面配置已刪除或未啟用項目，則內容策略無法配置它。
 * 作者只能存取使用者介面設定和內容原則所提供的功能。
 
-例如，您可以看到[文字核心元件檔案](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)。
+例如，您可以看到[文字核心元件檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)。
 
 ## 自定義工具欄表徵圖和命令之間的映射 {#iconstoolbar}
 
