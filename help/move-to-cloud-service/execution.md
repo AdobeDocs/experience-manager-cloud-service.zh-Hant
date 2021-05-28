@@ -2,10 +2,10 @@
 title: 執行階段
 description: 執行階段
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 100%
+source-wordcount: '1054'
+ht-degree: 96%
 
 ---
 
@@ -111,6 +111,11 @@ AEM Maven 專案必須進行某些變更，才能與 AEM as a Cloud Service 相�
 * [部署程式碼](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
 
 ## 上線準備作業的最佳作法 {#go-live}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_prep"
+>title="上線準備"
+>abstract="為確保順利成功地在AEM as aCloud Service上線，您應針對程式碼和內容凍結期間、測試反覆項目、內容追加、效能測試、安全性測試等進行規劃。"
 
 如果要確保順利成功地上線至 AEM as a Cloud Service，您應該考慮執行下列步驟：
 
