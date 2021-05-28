@@ -2,10 +2,10 @@
 title: 上線後階段
 description: 上線後階段
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 73%
+source-wordcount: '314'
+ht-degree: 63%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 73%
 >id="aemcloud_golive_troubleshooting"
 >title="疑難排解AEM"
 >abstract="檢閱持續開發的最佳實務，並管理記錄，以及開發人員主控台和CRXDE Lite等工具，以協助疑難排解AEM的問題"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="存取和管理記錄檔"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service開發工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="存取和管理記錄檔"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service開發工具"
 
 
 在「上線後」階段中，您應該確保有清理暫存檔案，並回顧最佳作法以便持續開發及留下管理記錄。
@@ -32,7 +32,7 @@ ht-degree: 73%
 
 可以在開發、預備和生產環境的開發人員控制台中，針對 AEM as a Cloud Service 開發人員環境進行除錯。
 
-請參考[實作 AEM as a Cloud Service](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)，深入了解開發工具。
+請參考[實作 AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)，深入了解開發工具。
 
 ## CRX/DE Lite {#crxde-lite}
 
@@ -47,7 +47,7 @@ ht-degree: 73%
 
 使用者可以存取所選環境的可用記錄檔清單。
 
-請參考[存取和管理記錄](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html)，了解如何透過 UI 或 Cloud Manager 的 API 存取和管理記錄。
+請參考[存取和管理記錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html)，了解如何透過 UI 或 Cloud Manager 的 API 存取和管理記錄。
 
 ### 其他支援 {#additional-support}
 
