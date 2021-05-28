@@ -1,7 +1,7 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] as a 2021.3.0的Cloud Service發行說明。'
-source-git-commit: 63b7c11683425cc20851ee5a16ee099511429b17
+source-git-commit: 3ff105507f4d42f5858a7e3a4c703d9135b36e5b
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 3%
@@ -62,7 +62,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 AEM Forms多年來協助許多組織提供絕佳的入門和註冊體驗。 這些體驗可協助組織將銷售機會轉換為銷售機會、處理擷取的客戶資料、根據受眾設定檔提供回應式體驗，以及執行其他更多功能。 現在，AEM Forms能以雲端服務形式提供使用。
 
-您可以使用[AEM Forms作為Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)來建立數位表單、將表單連接至現有的資料來源、將表單與Adobe Sign整合以將電子簽名新增至表單、產生記錄檔(DoR)以將提交的表單封存為PDF檔案。 此服務也可將您現有的PDF forms轉換為數位表單。 除了標準AEM Forms功能外，此服務還提供數種雲端原生功能，例如自動調整規模、為升級停機時間零，以及雲端原生開發環境。 請閱讀[此部落格文章](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)以了解AEM Forms as aCloud Service的功能和特色。
+您可以使用[AEM Forms作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)來建立數位表單、將表單連接至現有的資料來源、將表單與Adobe Sign整合以將電子簽名新增至表單、產生記錄檔(DoR)以將提交的表單封存為PDF檔案。 此服務也可將您現有的PDF forms轉換為數位表單。 除了標準AEM Forms功能外，此服務還提供數種雲端原生功能，例如自動調整規模、為升級停機時間零，以及雲端原生開發環境。 請閱讀[此部落格文章](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)以了解AEM Forms as aCloud Service的功能和特色。
 
 您可以聯絡Adobe代表以觀看示範或註冊服務。
 
