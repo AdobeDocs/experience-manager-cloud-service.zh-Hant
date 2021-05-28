@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: 資產管理
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 8442353b016ccd143b7265b5f20901a11bd48102
 workflow-type: tm+mt
-source-wordcount: '3226'
+source-wordcount: '3084'
 ht-degree: 5%
 
 ---
@@ -112,7 +112,7 @@ ht-degree: 5%
 
 ### 元件：Dynamic Media {#dynamic-media-component}
 
-Dynamic Media元件很智慧。 視您新增影像或影片而定，您有各種選項。 元件支援影像預設集、以影像為基礎的檢視器，例如影像集、回轉集、混合媒體集和視訊。 此外，檢視器具有回應性 — 螢幕大小會根據螢幕大小自動變更。 所有檢視器都是HTML5檢視器。
+Dynamic Media元件很智慧。 無論您新增影像或影片，您都有各種選項。 元件支援影像預設集、以影像為基礎的檢視器，例如影像集、回轉集、混合媒體集和視訊。 此外，檢視器具有回應性 — 螢幕大小會根據螢幕大小自動變更。 所有檢視器都是HTML5檢視器。
 
 >[!NOTE]
 >
@@ -165,16 +165,16 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
    您可以點選元件中的&#x200B;**[!UICONTROL Edit]**&#x200B;以編輯下列進階設定。
 
-* **[!UICONTROL 針對高解析度裝置最佳化]**  — 選取（預設）核取方塊，以允許最佳化DPR（裝置像素比率）。
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
-   另請參閱[關於裝置像素比例最佳化](/help/assets/dynamic-media/imaging-faq.md#dpr)。
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   請注意，會忽略任何[!DNL Experience Manager] Dynamic Media智慧型影像處理DPR值。
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   **[!UICONTROL 僅當以下情況為真時，才會顯示]**&#x200B;為高解析度設備優化選項：
-   * 在「預設類型」下，選擇&#x200B;**[!UICONTROL 影像預設集]**，並從&#x200B;**[!UICONTROL 影像預設集]**&#x200B;下拉清單中選擇&#x200B;**[!UICONTROL RESS_IP]**。
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
-   ![影像預設集中的裝置像素比率設定](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png) -->
 
 * **[!UICONTROL 標題]**  — 變更影像的標題。
 
@@ -243,17 +243,17 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
 * **[!UICONTROL 啟用外觀比例比對]**  — 若要讓Dynamic Media挑選外觀比例最符合原始影像外觀比例的智慧型裁切輸出，請選取此選項。
 
-* **[!UICONTROL 針對高解析度裝置最佳化]**  — 選取（預設）核取方塊，以允許最佳化DPR（裝置像素比率）。
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 
-   另請參閱[關於裝置像素比例最佳化](/help/assets/dynamic-media/imaging-faq.md#dpr)。
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   請注意，會忽略任何[!DNL Experience Manager] Dynamic Media智慧型影像處理DPR值。
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   **[!UICONTROL 僅當以下情況為真時，才會顯示]**&#x200B;為高解析度設備優化選項：
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
-   * 在「預設類型」下，選擇了「智慧型裁切」]**選項。**[!UICONTROL 
+  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
 
-   ![智慧作物的裝置像素比例設定](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png) -->
 
 * **[!UICONTROL 標題]**  — 變更智慧型裁切影像的標題。
 
@@ -273,7 +273,7 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
 互動式媒體元件適用於在這些資產上具有互動的熱點或影像地圖。 如果您有互動式影像、互動式視訊或輪播橫幅，請使用&#x200B;**[!UICONTROL 互動式媒體]**&#x200B;元件。
 
-互動式媒體元件是智慧型的。 視您新增影像或影片而定，您有各種選項。 此外，檢視器回應式 — 螢幕大小會根據螢幕大小自動變更。 所有檢視器都是HTML5檢視器。
+互動式媒體元件是智慧型的。 無論您新增影像或影片，您都有各種選項。 此外，檢視器回應式 — 螢幕大小會根據螢幕大小自動變更。 所有檢視器都是HTML5檢視器。
 
 >[!NOTE]
 >
