@@ -2,16 +2,16 @@
 title: 使用隱藏條件
 description: 隱藏條件可用來判斷元件資源是否已呈現。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: fa3280defb2a97954c5ab1b70e7600382e370606
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '614'
 ht-degree: 1%
 
 ---
 
 # 使用隱藏條件{#using-hide-conditions}
 
-隱藏條件可用來判斷元件資源是否已呈現。 範本作者在[範本編輯器](/help/sites-cloud/authoring/features/templates.md)中設定核心元件[清單元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html)並決定停用根據子頁面建立清單的選項時，就會是這個例子。 在設計對話框中禁用此選項會設定一個屬性，以便在呈現清單元件時計算隱藏條件，並且不顯示顯示子頁的選項。
+隱藏條件可用來判斷元件資源是否已呈現。 範本作者在[範本編輯器](/help/sites-cloud/authoring/features/templates.md)中設定核心元件[清單元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html)並決定停用根據子頁面建立清單的選項時，就會是這個例子。 在設計對話框中禁用此選項會設定一個屬性，以便在呈現清單元件時計算隱藏條件，並且不顯示顯示子頁的選項。
 
 ## 概覽 {#overview}
 
@@ -49,7 +49,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 ## 範例 {#example}
 
-您可以在AEM中找到隱藏條件的範例，尤其是[核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)。 例如，請考慮[清單核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html)，如[WKND教學課程中實作。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+您可以在AEM中找到隱藏條件的範例，尤其是[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)。 例如，請考慮[清單核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html)，如[WKND教學課程中實作。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
 [範本作者可使用範本編輯器](/help/sites-cloud/authoring/features/templates.md)，在設計對話方塊中定義頁面作者可使用的清單元件選項。例如是否允許該清單為靜態清單、子頁清單、標籤頁清單等。 可啟用或停用。
 
