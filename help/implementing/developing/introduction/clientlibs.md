@@ -2,16 +2,16 @@
 title: 在AEM上使用用戶端程式庫作為Cloud Service
 description: AEM提供用戶端程式庫資料夾，可讓您將用戶端程式碼(clientlibs)儲存在存放庫中、將其組織為類別，以及定義將每個類別的程式碼提供給用戶端的時間和方式
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2561'
 ht-degree: 0%
 
 ---
 
 # 在AEM上使用用戶端程式庫作為Cloud Service{#using-client-side-libraries}
 
-數位體驗嚴重依賴由複雜JavaScript和CSS程式碼驅動的用戶端處理。 AEM用戶端程式庫(clientlibs)可讓您組織這些用戶端程式庫，並集中儲存在存放庫中。 與AEM專案原型中的[前端建置程式結合，](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)管理AEM專案的前端程式碼變得簡單。
+數位體驗嚴重依賴由複雜JavaScript和CSS程式碼驅動的用戶端處理。 AEM用戶端程式庫(clientlibs)可讓您組織這些用戶端程式庫，並集中儲存在存放庫中。 與AEM專案原型中的[前端建置程式結合，](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)管理AEM專案的前端程式碼變得簡單。
 
 在AEM中使用clientlib的優點包括：
 
@@ -24,7 +24,7 @@ Clientlibs是從AEM傳送CSS和Javascript的內建解決方案。
 
 >[!TIP]
 >
->為AEM專案建立CSS和Javascript的前端開發人員也應熟悉[AEM專案原型及其自動化前端建置程式。](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>為AEM專案建立CSS和Javascript的前端開發人員也應熟悉[AEM專案原型及其自動化前端建置程式。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
 
 ## 什麼是用戶端程式庫{#what-are-clientlibs}
 
@@ -34,7 +34,7 @@ AEM會將網站的CSS和Javascript收集到集中位置的單一檔案，以確�
 
 ## AEM as aCloud Service的前端開發{#fed-for-aemaacs}
 
-所有JavaScript、CSS和其他前端資產都應維護在AEM專案原型的[ui.frontend模組中。](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) 原型的彈性可讓您使用您所選擇的現代化網頁工具來建立及管理這些資源。
+所有JavaScript、CSS和其他前端資產都應維護在AEM專案原型的[ui.frontend模組中。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) 原型的彈性可讓您使用您所選擇的現代化網頁工具來建立及管理這些資源。
 
 原型隨後可將資源編譯為單一CSS和JS檔案，並自動將其內嵌至存放庫的`cq:clientLibraryFolder`中。
 
@@ -89,7 +89,7 @@ AEM會將網站的CSS和Javascript收集到集中位置的單一檔案，以確�
 1. 如果需要管理靜態資源，請在客戶端庫資料夾下建立名為`resources`的子資料夾。
    * 如果將靜態資源儲存在資料夾`resources`下，則無法在發佈執行個體上參照這些資源。
 1. 將源檔案添加到庫資料夾。
-   * 這通常是由[AEM專案原型的前端建置程式來完成。](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+   * 這通常是由[AEM專案原型的前端建置程式來完成。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * 您可以視需要在子資料夾中組織源檔案。
 1. 選擇客戶端庫資料夾，然後按一下&#x200B;**建立>建立檔案**。
 1. 在檔案名框中，鍵入以下檔案名之一，然後按一下「確定」：
@@ -124,7 +124,7 @@ AEM會將網站的CSS和Javascript收集到集中位置的單一檔案，以確�
 
 每個幫助程式模板都需要一個`categories`選項來引用所需的客戶端庫。 該選項可以是字串值的陣列，或包含逗號分隔值清單的字串。
 
-[如需透過HTL載](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) 入clientlibs的詳細資訊，請參閱HTL檔案。
+[如需透過HTL載](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) 入clientlibs的詳細資訊，請參閱HTL檔案。
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
