@@ -1,7 +1,7 @@
 ---
 title: 如何透過AEM傳送API存取您的內容
 description: 在AEM無周邊開發人員歷程的這部分，了解如何使用GraphQL查詢來存取您的內容片段內容。
-source-git-commit: 8e96827f9353d6ffdf1e01645f2bc8bdaac2610f
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 開始使用內容查詢之前，您需要：
 
 * 啟用端點
-   * 使用工具 — >站點 — > GraphQL
+   * 使用工具 — >資產 — > GraphQL
    * [啟用GraphQL端點](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
 * 安裝GraphiQL（如果需要）
