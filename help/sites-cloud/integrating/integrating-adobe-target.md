@@ -4,9 +4,9 @@ description: '整合 Adobe Target '
 feature: 管理
 role: Administrator
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1037'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 作為Adobe Marketing Cloud的一部分，Adobe Target可讓您透過鎖定目標並測量所有管道，來提升內容相關性。 將Adobe Target和AEM整合為Cloud Service需要：
 
 * 使用觸控式UI在AEM中建立Target設定作為Cloud Service（需要IMS設定）。
-* 在[AdobeLaunch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)中新增並設定Adobe Target為擴充功能。
+* 在[AdobeLaunch](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)中新增並設定Adobe Target為擴充功能。
 
 AdobeLaunch是管理AEM頁面（JS程式庫/標籤）中Analytics和Target的用戶端屬性的必要。 也就是說，「體驗鎖定目標」需要與Launch整合。 若要將體驗片段匯出至Target，您只需要Adobe Target設定和IMS。
 
@@ -36,7 +36,7 @@ AdobeLaunch是管理AEM頁面（JS程式庫/標籤）中Analytics和Target的用
 
 ### IMS 設定 {#ims-configuration}
 
-若要正確整合Target與AEM和Launch,Launch和Target的IMS設定是必要的。 雖然AEM中的Launch IMS設定已預先設定為Cloud Service，但必須建立Target IMS設定（布建Target後）。 請參閱[此影片](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)和[本頁面](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)以了解如何建立Target IMS設定。
+若要正確整合Target與AEM和Launch,Launch和Target的IMS設定是必要的。 雖然AEM中的Launch IMS設定已預先設定為Cloud Service，但必須建立Target IMS設定（布建Target後）。 請參閱[此影片](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)和[本頁面](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)以了解如何建立Target IMS設定。
 
 ### Adobe Target租用戶ID和Adobe Target用戶端代碼{#tenant-client}
 
@@ -134,7 +134,7 @@ AEM提供立即可用的與Experience Platform Launch整合。 將Adobe Target�
 
 ### 建立並發佈{#build-publish}
 
-若要了解如何建立和發佈，請參閱此[page](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)。
+若要了解如何建立和發佈，請參閱此[page](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)。
 
 ## 傳統和觸控式UI設定之間的內容結構變更{#changes-content-structure}
 
