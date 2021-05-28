@@ -2,9 +2,9 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1907'
 ht-degree: 8%
 
 ---
@@ -148,7 +148,7 @@ ht-degree: 8%
 
 * **社交媒體分享**
 
-   定義頁面上可用的共用選項。 顯示[共用核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html)的可用選項。
+   定義頁面上可用的共用選項。 顯示[共用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html)的可用選項。
 
    * **啟用Facebook的使用者共用**
    * **啟用Pinterest的使用者共用**
