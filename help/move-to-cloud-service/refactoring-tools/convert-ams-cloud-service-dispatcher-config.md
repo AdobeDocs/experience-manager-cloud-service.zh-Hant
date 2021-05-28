@@ -1,10 +1,10 @@
 ---
 title: 將 AMS 轉換為 Adobe Experience Manager as a Cloud Service Dispatcher 設定
 description: 將 AMS 轉換為 Adobe Experience Manager as a Cloud Service Dispatcher 設定
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 100%
+source-wordcount: '1340'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 本節提供逐步指示，說明如何轉換 AMS 設定。
 
 >[!NOTE]
->此工具假設您有一個封存，其結構類似於[管理 Dispatcher 設定](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中所述的結構。
+>此工具假設您有一個封存，其結構類似於[管理 Dispatcher 設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中所述的結構。
 
 ## 將 AMS 轉換為 AEM as a Cloud Service Dispatcher 設定的步驟
 
