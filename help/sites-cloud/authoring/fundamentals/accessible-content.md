@@ -2,9 +2,9 @@
 title: 為Adobe Experience Manager as aCloud Service建立可存取的內容（符合WCAG 2.1）
 description: 使用AEM作為Cloud Service，協助殘疾人存取及使用網頁內容
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '14060'
+source-wordcount: '14050'
 ht-degree: 5%
 
 ---
@@ -68,15 +68,15 @@ ht-degree: 5%
 
 #### 如何符合 — 非文字內容(1.1.1){#how-to-meet-non-text-content}
 
-對於靜態圖形，基本要求是為圖形提供等效文本替代。 您可以在&#x200B;**替代文字**&#x200B;欄位中完成此操作；請參閱核心元件&#x200B;**[Image](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/components/image.translate.html)**。
+對於靜態圖形，基本要求是為圖形提供等效文本替代。 您可以在&#x200B;**替代文字**&#x200B;欄位中完成此操作；請參閱核心元件&#x200B;**[Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)**。
 
 >[!NOTE]
 >
->有些現成的核心元件，例如&#x200B;**[Carousel](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/components/carousel.html)**&#x200B;不提供用於將替代文字說明新增至個別影像的&#x200B;**替代文字**&#x200B;欄位，不過整個元件有&#x200B;**Label**&#x200B;欄位（**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;標籤）。
+>有些現成的核心元件，例如&#x200B;**[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**&#x200B;不提供用於將替代文字說明新增至個別影像的&#x200B;**替代文字**&#x200B;欄位，不過整個元件有&#x200B;**Label**&#x200B;欄位（**[Accessibility](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;標籤）。
 >
 >當針對您的AEM例項實作這些版本時，您的開發團隊將需要設定這些元件以支援屬性，讓作者可以將其新增至內容 (請參閱新增支援其他HTML元素和屬性)。`alt`
 >
->有些現成的核心元件，例如&#x200B;**[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**&#x200B;不提供用於將替代文字說明新增至個別影像的&#x200B;**替代文字**&#x200B;欄位，不過整個元件有&#x200B;**Label**&#x200B;欄位（**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;標籤）。
+>有些現成的核心元件，例如&#x200B;**[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**&#x200B;不提供用於將替代文字說明新增至個別影像的&#x200B;**替代文字**&#x200B;欄位，不過整個元件有&#x200B;**Label**&#x200B;欄位（**[Accessibility](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;標籤）。
 >
 >當針對您的AEM例項實作這些版本時，您的開發團隊將需要設定這些元件以支援`alt`屬性，讓作者可將其新增至內容（請參閱[新增支援其他HTML元素和屬性](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)）。
 
