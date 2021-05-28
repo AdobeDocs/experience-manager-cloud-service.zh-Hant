@@ -2,9 +2,9 @@
 title: 整合 Adobe Target
 description: 整合 Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '723'
 ht-degree: 1%
 
 ---
@@ -27,12 +27,12 @@ ht-degree: 1%
 
 若要與Target整合，請執行下列工作：
 
-* [執行先決條件任務](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html):向Adobe Target註冊，並設定AEM製作例項的某些方面。您的Adobe Target帳戶至少必須具有&#x200B;**核准者**&#x200B;層級權限。 此外，您必須保護發佈節點上的活動設定，讓使用者無法存取該設定。
+* [執行先決條件任務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html):向Adobe Target註冊，並設定AEM製作例項的某些方面。您的Adobe Target帳戶至少必須具有&#x200B;**核准者**&#x200B;層級權限。 此外，您必須保護發佈節點上的活動設定，讓使用者無法存取該設定。
 
 * Launch by Adobe是實際上用來檢測具有Target功能（JS資料庫）的AEM網站的工具。 因此，將AEM as aCloud Service與Launch和Adobe Target整合為一體（請參閱下方連結）。
 
-   * [與Adobe Target整合，使用Adobe I/O](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
-   * [整合Launch by Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
+   * [與Adobe Target整合，使用Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
+   * [整合Launch by Adobe](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
    * [透過AEM將Adobe I/O與AdobeLaunch整合](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
    * [了解AEM與Launch by Adobe、Analytics和Target的整合](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 >
 >Launch by Adobe的IMS設定（技術帳戶）已在AEM中預先設定為Cloud Service。 使用者不需要建立此設定。
 
-1. [設定活動](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html):將活動與Target雲端設定建立關聯。
+1. [設定活動](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html):將活動與Target雲端設定建立關聯。
 
 >[!CAUTION]
 >
@@ -61,9 +61,9 @@ ht-degree: 1%
 >
 >您必須保護發佈執行個體上的活動設定節點&#x200B;**cq:ActivitySettings**，使一般使用者無法存取該節點。 處理活動同步至Adobe Target的服務只應能存取活動設定節點。
 >
->如需詳細資訊，請參閱[與Adobe Target整合的必要條件](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node) 。
+>如需詳細資訊，請參閱[與Adobe Target整合的必要條件](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node) 。
 
-整合完成時，您可以[製作將訪客資料傳送至Adobe Target的目標內容](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/content-targeting-touch.html)。 請注意，頁面元件需要特定的程式碼才能啟用內容鎖定目標。 (請參閱[針對目標內容開發](https://docs.adobe.com/content/help/en/experience-manager-65/developing/personlization/target.html)。
+整合完成時，您可以[製作將訪客資料傳送至Adobe Target的目標內容](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html)。 請注意，頁面元件需要特定的程式碼才能啟用內容鎖定目標。 (請參閱[針對目標內容開發](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html)。
 
 >[!NOTE]
 >
@@ -73,9 +73,9 @@ ht-degree: 1%
 
 將AEM as aCloud Service與Adobe Target整合時，需要了解Adobe Target、AEM活動管理和AEM對象管理。 您應熟悉下列資訊：
 
-* Adobe Target(請參閱[Adobe Target檔案](https://docs.adobe.com/content/help/en/target/using/target-home.html))。
-* AEM活動主控台(請參閱[管理活動](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html)。
-* AEM對象(請參閱[管理對象](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/managing-audiences.html)。
+* Adobe Target(請參閱[Adobe Target檔案](https://experienceleague.adobe.com/docs/target/using/target-home.html))。
+* AEM活動主控台(請參閱[管理活動](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)。
+* AEM對象(請參閱[管理對象](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html)。
 
 >[!NOTE]
 >
