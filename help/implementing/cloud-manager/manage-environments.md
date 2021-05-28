@@ -2,9 +2,9 @@
 title: 管理環境 — Cloud Service
 description: 管理環境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1264'
 ht-degree: 4%
 
 ---
@@ -128,7 +128,7 @@ ht-degree: 4%
 
 只有「開發人員」角色中的使用者才能存取&#x200B;**「開發人員控制台」**。 沙箱方案例外，任何有權存取Cloud Manager沙箱方案的使用者都可存取&#x200B;**開發人員控制台**。
 
-如需詳細資訊，請參閱[休眠和解除休眠沙箱環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) 。
+如需詳細資訊，請參閱[休眠和解除休眠沙箱環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) 。
 
 
 ![](assets/environ-devconsole.png)
