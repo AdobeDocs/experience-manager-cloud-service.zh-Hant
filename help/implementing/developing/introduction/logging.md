@@ -2,9 +2,9 @@
 title: 登入AEM作為Cloud Service
 description: 了解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何以Cloud Service形式在AEM中要求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2332'
+source-wordcount: '2330'
 ht-degree: 2%
 
 ---
@@ -549,7 +549,7 @@ AEM記錄檔位於資料夾`crx-quickstart/logs`中，可在此檢視下列記�
 * AEM HTTP請求記錄：`request.log`
 * AEM HTTP存取記錄：`access.log`
 
-Apache層記錄檔（包括Dispatcher）位於Docker容器中，該容器保有Dispatcher。 如需如何啟動Dispatcher的資訊，請參閱[Dispatcher檔案](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
+Apache層記錄檔（包括Dispatcher）位於Docker容器中，該容器保有Dispatcher。 如需如何啟動Dispatcher的資訊，請參閱[Dispatcher檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
 
 若要擷取記錄檔：
 
