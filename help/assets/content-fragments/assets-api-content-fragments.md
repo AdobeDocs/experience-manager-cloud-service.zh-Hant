@@ -3,9 +3,9 @@ title: Adobe Experience Manager as assets HTTP API中的Cloud Service內容片�
 description: 了解在AEM無頭傳送功能的重要一環Assets HTTP API中支援內容片段。
 feature: 內容片段，Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1952'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 例如，單頁應用程式(SPA)（以架構為基礎或自訂）需要透過HTTP API提供的內容，通常為JSON格式。
 
-雖然[AEM核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)提供非常全面、彈性且可自訂的API，可針對此用途提供必要的讀取作業，且可自訂其JSON輸出，但實作時確實需要AEM WCM（Web內容管理）的專業知識，因為它們必須托管於以專用AEM範本為基礎的頁面中。 並非每個SPA開發組織都能直接取得這些知識。
+雖然[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)提供非常全面、彈性且可自訂的API，可針對此用途提供必要的讀取作業，且可自訂其JSON輸出，但實作時確實需要AEM WCM（Web內容管理）的專業知識，因為它們必須托管於以專用AEM範本為基礎的頁面中。 並非每個SPA開發組織都能直接取得這些知識。
 
 此時即可使用Assets REST API。 開發人員可直接存取資產（例如影像和內容片段），不需先將資產內嵌在頁面中，然後以序列化JSON格式傳送其內容。
 
@@ -258,7 +258,7 @@ GETREST API支援透過URL參數進行分頁（適用於資產要求）:
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[ API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager Assets API — 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>如需詳細資訊，請參閱[ API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager Assets API — 內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
 
 ### 讀取/傳送{#read-delivery}
 
@@ -376,7 +376,7 @@ GETREST API支援透過URL參數進行分頁（適用於資產要求）:
 
 如需詳細的API參考，請參閱這裡：
 
-* [Adobe Experience Manager Assets API — 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API — 內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
