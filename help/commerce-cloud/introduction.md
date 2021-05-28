@@ -3,10 +3,10 @@ title: 簡介和概述
 description: 內容與商務的簡介和概述。 Experience Manager商務整合架構(CIF)是Adobe的建議模式，可將Magento及其他第三方商務解決方案的商務服務與Experience Cloud整合及延伸。
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 1%
+source-wordcount: '874'
+ht-degree: 0%
 
 ---
 
@@ -58,7 +58,7 @@ AEM中功能強大的CIF工具，可讓內容建立者以可擴充且不受傳�
 
 ### 值時間(TTV)
 
-透過[AEM核心元件](https://www.aemcomponents.dev/)、[AEM Venia參考storefront](https://github.com/adobe/aem-cif-guides-venia)、[AEM專案原型](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/archetype/overview.html)和PWA的整合模式（無頭內容與商務）來加速專案開發。
+透過[AEM核心元件](https://www.aemcomponents.dev/)、[AEM Venia參考storefront](https://github.com/adobe/aem-cif-guides-venia)、[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)和PWA的整合模式（無頭內容與商務）來加速專案開發。
 
 CIF的建置宗旨是持續創新，提供隨時更新的附加元件，讓客戶能存取新功能和改良功能。
 
