@@ -2,10 +2,10 @@
 title: 執行階段
 description: 執行階段
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 96%
+source-wordcount: '1028'
+ht-degree: 87%
 
 ---
 
@@ -17,11 +17,11 @@ Cloud Manager 可讓組織在雲端中自行管理 AEM。其內容包含持續�
 
 如需詳細資訊，請參考下列資源：
 
-* [加入 Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/onboarding/home.html)，了解有關加入 Experience Manager as a Cloud Service 的自助資源。
+* [加入 Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)，了解有關加入 Experience Manager as a Cloud Service 的自助資源。
 
-* [整合 Git 與 Adobe Cloud Manager](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)，了解如何使用 Single Git 存放庫來部署程式碼。
+* [整合 Git 與 Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)，了解如何使用 Single Git 存放庫來部署程式碼。
 
-* [Adobe Experience as a Cloud Service 設定](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/security/ims-support.html#aem-configuration)，了解如何「在 Admin Console 中管理產品與使用者存取」。
+* [Adobe Experience as a Cloud Service 設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#aem-configuration)，了解如何「在 Admin Console 中管理產品與使用者存取」。
 
 
 ## 簡介 {#introduction}
@@ -56,11 +56,11 @@ AEM Maven 專案必須進行某些變更，才能與 AEM as a Cloud Service 相�
 
 * 存放庫中的所有其它項目如 `/content`、`/conf`、`/var`、`/home`、`/etc`、`/oak:index`、`/system`、`/tmp` 等都是可變區域，這表示可在執行時期變更它們。
 
-如需詳細資訊，請參考[建議封裝結構](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure)。
+如需詳細資訊，請參考[建議封裝結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure)。
 
-在使用 AEM as a Cloud Service 開發時，您需要留意一些額外的開發准則。請參考 [AEM as a Cloud Service 開發准則](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/development-guidelines.html)以深入了解。
+在使用 AEM as a Cloud Service 開發時，您需要留意一些額外的開發准則。請參考 [AEM as a Cloud Service 開發准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)以深入了解。
 
-您應該從「規劃」階段開始，便列出需要重構以便與雲端服務相容的區域。您也應該檢視[開發准則](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)以取得詳細資訊，了解如何重構和最佳化程式碼以便移轉至雲端服務。
+您應該從「規劃」階段開始，便列出需要重構以便與雲端服務相容的區域。您也應該檢視[開發准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)以取得詳細資訊，了解如何重構和最佳化程式碼以便移轉至雲端服務。
 
 如果要加速某些程式碼重構任務，您可以使用下列工具：
 
@@ -70,7 +70,7 @@ AEM Maven 專案必須進行某些變更，才能與 AEM as a Cloud Service 相�
 
 建議您先在本機上重構並測試程式碼，然後再透過 Cloud Manager Git 推送至雲端服務環境。
 
-請檢視 [AEM SDK](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk) 文件以深入了解。
+請檢視 [AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk) 文件以深入了解。
 
 以下列出其他資源：
 
@@ -82,7 +82,7 @@ AEM Maven 專案必須進行某些變更，才能與 AEM as a Cloud Service 相�
 
    >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
-* 檢視[本機開發設定](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)文件，以便設定本機開發環境
+* 檢視[本機開發設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)文件，以便設定本機開發環境
 
 
 如果要管理您正在作用中 AEM 上開發的程式碼，以及轉換過程中的程式碼重構任務，建議先排程程式碼凍結期間，直到您的 Maven 專案重建完畢、可以與 AEM as a Cloud Service 相容為止。
@@ -96,19 +96,19 @@ AEM Maven 專案必須進行某些變更，才能與 AEM as a Cloud Service 相�
 
 使用 Cloud Manager 進行雲端服務管線執行時，會支援針對預備環境執行的測試。
 
-請參考[程式碼品質測試](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing)，了解如何編寫測試指令碼。當中會建議您將涵蓋範圍設為至少 50%。
+請參考[程式碼品質測試](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing)，了解如何編寫測試指令碼。當中會建議您將涵蓋範圍設為至少 50%。
 
-此外，請參考[了解自訂程式碼品質規則](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html)，深入了解 Cloud Manager 根據 AEM Engineering 最佳作法建立並執行的自訂程式碼品質規則。
+此外，請參考[了解自訂程式碼品質規則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html)，深入了解 Cloud Manager 根據 AEM Engineering 最佳作法建立並執行的自訂程式碼品質規則。
 
 使用 Cloud Manager 是將程式碼部署至雲端服務環境的唯一辦法。
 
 請依照以下資源，了解如何使用 Cloud Manager 管理和部署您的程式碼。
 
-* [管理環境](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
+* [管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
 
-* [設定 CI-CD 管線](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
+* [設定 CI-CD 管線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
 
-* [部署程式碼](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
+* [部署程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
 
 ## 上線準備作業的最佳作法 {#go-live}
 
