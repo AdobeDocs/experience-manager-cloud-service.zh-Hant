@@ -2,9 +2,9 @@
 title: 內容片段
 description: Adobe Experience Manager作為Cloud Service內容片段可讓您設計、建立、組織及使用頁面獨立內容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1163'
 ht-degree: 5%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 5%
 開啟片段的&#x200B;**Configuration**&#x200B;對話方塊，以設定片段以用於目前頁面。 對話方塊取決於使用的元件。
 
 >[!NOTE]
-另請參閱[核心元件，內容片段元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+另請參閱[核心元件，內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 在適當的設定對話方塊中，您可以選取可用的參數，包括：
 
