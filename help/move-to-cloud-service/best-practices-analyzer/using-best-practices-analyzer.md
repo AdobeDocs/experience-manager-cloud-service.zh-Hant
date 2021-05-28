@@ -2,10 +2,10 @@
 title: 使用Best Practices Analyzer
 description: 使用Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 43%
+source-wordcount: '2506'
+ht-degree: 42%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 43%
 >id="aemcloud_bpa_using"
 >title="使用Best Practices Analyzer"
 >abstract="檢閱使用Best Practices Analyzer（原稱為Cloud Readiness Analyzer）的說明檔案以及產生的報表。 Best Practices Analyzer報表可用來取得對一般升級整備程度的高層了解。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 使用Best Practices Analyzer {#imp-considerations}的重要考量
 
 請依照以下章節了解執行Best Practices Analyzer(BPA)時的重要考量：
 
-* BPA報表是使用Adobe Experience Manager(AEM)[模式偵測器](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/deploying/upgrading/pattern-detector.html)的輸出所建置。 BPA使用的模式檢測器版本包含在BPA安裝包中。
+* BPA報表是使用Adobe Experience Manager(AEM)[模式偵測器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html)的輸出所建置。 BPA使用的模式檢測器版本包含在BPA安裝包中。
 
 * BPA只能由&#x200B;**admin**&#x200B;用戶或&#x200B;**administrators**&#x200B;組中的用戶運行。
 
@@ -246,8 +246,8 @@ HTTP 介面可用於多種方法中。
 
 BPA使用名為`repository-reader-service`的系統服務用戶帳戶來執行模式檢測器。 此帳戶適用於 AEM 6.2 和更新版本。在AEM 6.1上，必須執行下列步驟，在&#x200B;*安裝BPA之前建立此帳戶：*
 
-1. 依照[建立新的服務使用者](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)中的指示建立使用者。將 UserID 設為 `repository-reader-service`，並將中繼路徑保留為空白，然後按一下綠色核取記號。
+1. 依照[建立新的服務使用者](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)中的指示建立使用者。將 UserID 設為 `repository-reader-service`，並將中繼路徑保留為空白，然後按一下綠色核取記號。
 
-2. 依照[管理使用者和群組](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/administering/security/security.html#managing-users-and-groups)中的指示 (尤其是「將使用者新增至群組」的指示)，將 `repository-reader-service` 使用者新增至 `administrators` 群組。
+2. 依照[管理使用者和群組](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups)中的指示 (尤其是「將使用者新增至群組」的指示)，將 `repository-reader-service` 使用者新增至 `administrators` 群組。
 
 3. 在您的來源AEM例項上，透過封裝管理器安裝BPA封裝。 (這將會在 `repository-reader-service` 系統服務使用者的 ServiceUserMapper 設定中新增必要的設定修正。)
