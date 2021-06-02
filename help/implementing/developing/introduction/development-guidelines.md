@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發方針
 description: AEM as a Cloud Service 開發方針
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 07a03d603e2a5e0a7d55a64862f991fedebbf93d
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2301'
 ht-degree: 1%
 
 ---
@@ -251,3 +251,7 @@ AEM中的電子郵件應使用[Day CQ Mail Service OSGi服務](https://experienc
 * 將`smtp.ssl`設為&lt;a1/`false`
 
 AEM會在執行階段將`smtp.starttls`屬性自動設定為適當的Cloud Service。 因此，如果`smtp.tls`設為true，則會忽略`smtp.startls`。 如果將`smtp.ssl`設為false，則將`smtp.starttls`設為true。 無論在OSGI設定中設定的`smtp.starttls`值為何。
+
+## Recommendations和[!DNL Assets] {#use-cases-assets}指引
+
+若要了解以Cloud Service形式使用資產的開發使用案例、建議和參考資料，請參閱[資產的開發人員參考](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)。
