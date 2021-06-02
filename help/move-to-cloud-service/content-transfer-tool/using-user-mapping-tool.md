@@ -2,7 +2,7 @@
 title: 使用使用者對應工具
 description: 使用使用者對應工具
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: d7f74356db14c40ce2e1e76f96211a277fed8b93
+source-git-commit: a9119ac04762c91230d52d6418b7808bca7e9f9f
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 2%
@@ -26,7 +26,7 @@ AEM as aCloud Service的重大變更，是完整整合使用AdobeID來存取製�
 
 ### 用戶映射工具{#mapping-tool}
 
-「內容轉移工具」（不含「使用者對應」）將移轉與要移轉之內容相關聯的任何使用者和群組。  「使用者對應工具」是「內容轉移工具」的一部分，其唯一用途是修改使用者和群組，以便讓IMS(AEM作為Cloud Service使用的單一登入功能)正確識別。  完成這些修改後，「內容轉移工具」會照常移轉指定內容的使用者和群組。
+「內容轉移工具」（不含「使用者對應」）將移轉與要移轉之內容相關聯的任何使用者和群組。 「使用者對應工具」是「內容轉移工具」的一部分，其唯一用途是修改使用者和群組，以便讓IMS(AEM作為Cloud Service使用的單一登入功能)正確識別。 完成這些修改後，「內容轉移工具」會照常移轉指定內容的使用者和群組。
 
 ## 重要注意事項{#important-considerations}
 
