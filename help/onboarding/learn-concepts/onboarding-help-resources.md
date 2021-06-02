@@ -1,7 +1,7 @@
 ---
 title: Adobe支援
 description: 請詳閱本頁，了解入門說明資源和Adobe支援。
-source-git-commit: 312b1ce7dc660d1bb4fe199be0e7403069d30161
+source-git-commit: c6898326b887e564bf1a5935a11c36baba4b1be1
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Adobe支援可透過Adobe Admin Console存取，您可在其中管理支援案�
 
 ![影像](/help/onboarding/learn-concepts/assets/support-menu.png)
 
-此介面可讓您建立和管理案例、直接與Adobe客戶支援代表聊天，以及排程與專家的會議。
+此介面可讓您建立和管理案例、直接與Adobe客戶支援代表聊天，以及排程與專家的會議。 [系統](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) 管理員和 [支援](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) 管理員必須登入才能存取支援案例和專家工作階段選項。
 
 >[!NOTE]
->[系統管理員](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html)和[支援管理員](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html)必須登錄才能訪問支援案例和專家會話選項。 請參閱[Experience Cloud |支援與專家座談](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以取得詳細資訊。
+> 請參閱[Experience Cloud |支援與專家座談](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以取得詳細資訊。
