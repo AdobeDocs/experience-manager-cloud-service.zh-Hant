@@ -1,9 +1,9 @@
 ---
 title: 了解什麼是Cloud Manager
 description: 請詳閱本頁，了解Cloud Manager、Cloud Manager程式和環境。
-source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
+source-git-commit: 185a933e12ad81689168ad88574019ed219db06d
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager是AEM的必要元件，可作為Cloud Service，也是您團隊的
 
 ## Cloud Manager程式{#cloud-manager-programs}
 
-Cloud Manager計畫表示一組Cloud Manager環境，支援業務計畫的邏輯集，通常對應於購買的服務級別協定(SLA)。 例如，一個方案可代表支援全域公用網站的AEM資源，而另一個方案則代表內部中央DAM。 請觀看此影片以深入了解。
+Cloud Manager計畫表示一組Cloud Manager環境，支援業務計畫的邏輯集，通常對應於購買的服務級別協定(SLA)。 例如，一個方案可代表支援全域公用網站的AEM資源，而另一個方案則代表內部中央DAM。 請觀看此[影片](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)，以進一步了解使用Cloud Manager程式。
 
 使用者可以建立&#x200B;**沙箱**&#x200B;或&#x200B;**生產**&#x200B;程式。
 
