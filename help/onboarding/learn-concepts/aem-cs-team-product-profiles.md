@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Service團隊和產品設定檔
 description: 請詳閱本頁面，了解AEM as a Product Team and Product Profiles。
-source-git-commit: fbf2ddff7d3b54f76afbd2431a6b5d5772620fd3
+source-git-commit: 5c74c3f011ed8d77fc20b7a802603d37b67d2e7c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 0%
@@ -26,6 +26,8 @@ AEM as aCloud Service是提供AEM as a service的完全雲端原生產品。 它
 * **AEM管理員**:通常會將AEM管理員指派給開發人員，尤其是需要存取開發環境的開發人員。AEM管理員產品設定檔將用來授予相關聯AEM例項的管理員權限。
 
 * **AEM使用者**:AEM使用者是貴組織中使用AEM作為Cloud Service，並與Adobe簽訂合約的使用者。這些成員需要存取AEM才能執行其工作。 AEM使用者產品設定檔通常會指派給建立及檢閱內容的AEM內容作者(這可以是數種類型；例如頁面、資產、出版物等)，再發佈到您的網站。 系統會將下列AEM使用者產品設定檔指派給這些成員。
+
+   ![](/help/onboarding/learn-concepts/assets/admin-console-profiles.png)
 
    >[!NOTE]
    >指派給AEM作為Cloud Service產品設定檔的每位使用者都擁有Cloud Manager的（唯讀）存取權。
