@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service團隊和產品設定檔
 description: 請詳閱本頁面，了解AEM as a Product Team and Product Profiles。
-source-git-commit: 529b70daf58a98fd5fcbe758a2c86ac8322f945b
+source-git-commit: 02e954d294100a17fff327742fa442fc4759860c
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## 產品設定檔 {#profiles}
 
-授與使用者特定Adobe解決方案的存取權時，您不一定想授予他們完整存取權。 產品設定檔可讓每個解決方案擁有自己的一組使用者權限。 您可透過Adobe Admin Console存取這些檔案。
+授與使用者特定Adobe解決方案的存取權時，您不一定想授予他們完整存取權。 產品設定檔可讓每個解決方案擁有自己的一組使用者權限。 這些檔案可透過[Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md)取得。
 
 深入了解[AEM as a Cloud Service產品設定檔](#aem-product-profiles)和[Cloud Manager產品設定檔](#cloud-manager-product-profiles)，以了解在您的團隊設定時，這些設定檔如何搭配運作。
 
@@ -40,13 +40,13 @@ Cloud Manager已預先設定產品設定檔，或更簡單的角色型權限。 
 
 每個產品設定檔都有與其相關聯的特定權限。 例如，如果您的角色為：
 
-* **業務擁有者**，您便擁有新增程式或編輯程式、新增或更新環境、新增/編輯/刪除管道和執行任何管道，以及將程式碼部署至AEM環境或程式碼品質的權限。
+* **業務擁有者**，您就擁有新增程式或編輯程式、新增或更新環境、新增/編輯/刪除管道和執行任何管道，以及將程式碼部署至AEM環境或程式碼品質的權限。
 
 * **部署管理員**，則您有權新增或更新環境、執行任何管道，以及將程式碼部署至AEM環境或程式碼品質。
 
 * **開發人員**，您便有權產生個人存取權杖以存取Git。
 
-* **方案管理員**，您就擁有存取Git的權限。
+* **計畫管理員**，您有權計畫管道、覆蓋3層質量門並提供生產批准。
 
 可將使用者指派給多個產品設定檔。 例如，將業務所有者和部署管理器角色分配給用戶時，會為其提供這些權限的組合或總和。
 
@@ -57,4 +57,4 @@ Cloud Manager已預先設定產品設定檔，或更簡單的角色型權限。 
 * 一位開發人員
 
    >[!NOTE]
-   >若要授與AEM as aCloud Service的存取權，使用者必須屬於兩個產品設定檔`AEM Users-xxx`或`AEM Administrators-xxx`中的一個，您必須擁有該例項的權限。 管理相關Cloud Manager的權限不足。
+   >若要授與AEM as aCloud Service的存取權，使用者必須屬於兩個產品設定檔之一，例如`AEM Users`或`AEM Administrators`。 您必須獲得執行個體的權限，但管理相關Cloud Manager的權限是不夠的。
