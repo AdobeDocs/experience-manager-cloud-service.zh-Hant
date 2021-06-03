@@ -2,7 +2,7 @@
 title: 新增頁面註解
 description: 使用批注模式在頁面上保留批注和草繪，就像使用註解幫助內容審閱過程一樣
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5d533354a29237aeafc00e5570ede3ab00b721fd
+source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. 按一下或點選注釋以開啟注釋對話框並查看其詳細資訊。
 
-   ![註解詳細資訊](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+   ![註解詳細資訊](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
 1. 若要退出「注釋」模式，並返回先前使用的模式，請點選/按一下頂端工具列右側的x按鈕。
 
