@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
+source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1496'
 ht-degree: 3%
 
 ---
@@ -85,6 +85,8 @@ ht-degree: 3%
 * 在單行文字欄位中更新和儲存中繼資料值時，下拉式選單中的值會遭到刪除，即使下拉式選單中已停用編輯亦然。 (CQ-4317077)
 
 * 您可以使用刪節號作為註解來檢閱資產。 使用小橢圓時，橢圓與打印版本中的注釋數重疊。 (CQ-4316792)
+
+* 搜尋後從搜尋結果中選取資產時，不會顯示快速發佈選項。 (CQ-4317748)
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
