@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -163,7 +163,7 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 
 >[!NOTE]
 >
->在 IMS 中建立的任何使用者都可使用 Adobe ID 或 Federated ID 來建立。若是使用 Adobe ID 設定使用者，使用者需透過公司合作之身分服務供應商登入，以完成身分驗證。
+>在 IMS 中建立的任何使用者都可使用 Adobe ID 或 Federated ID 來建立。如果使用Federated ID來設定使用者，則使用者需透過公司的身分提供者來登入，以通過驗證。
 
 接著，系統會將使用者重新導向至 IMS 登入畫面，此時使用者需輸入憑證：
 
