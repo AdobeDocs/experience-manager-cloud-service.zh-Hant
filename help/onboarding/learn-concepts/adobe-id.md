@@ -1,9 +1,9 @@
 ---
 title: Adobe ID
 description: 本頁說明Adobe ID的簡介。
-source-git-commit: 312b1ce7dc660d1bb4fe199be0e7403069d30161
+source-git-commit: d8e4635bba1b8a3e825e70c921a5d0c5aff52990
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '291'
 ht-degree: 1%
 
 ---
@@ -11,11 +11,9 @@ ht-degree: 1%
 
 # Adobe ID {#adobe-id}
 
-Adobe ID只是電子郵件地址，您可用來登入及存取AEM作為Cloud Service或任何您的Adobe解決方案。 這是與您的[identity]((https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html)相關聯的電子郵件地址，您的系統管理員使用此地址來提供對您組織擁有的任何Adobe解決方案的訪問。
+Adobe ID只是您用來登入和存取AEM的電子郵件，以Cloud Service或您的任何Adobe解決方案形式。 這是系統管理員在設定您的團隊時使用的電子郵件ID。 使用Adobe ID，即可將所有Adobe計畫和產品保留在單一帳戶中。 Adobe ID對於使用Adobe應用程式和服務提供安全且個人化的體驗至關重要。
 
->[!IMPORTANT]
->Adobe ID是使用Adobe應用程式和服務提供安全且個人化體驗的必要工具，當您想要購買Adobe產品時，也需使用。 使用Adobe ID，即可將所有Adobe計畫和產品保留在單一帳戶中。 請參閱[建立或更新您的Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID)以深入了解。
-
+請參閱[建立或更新您的Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID)以深入了解。
 
 Adobe ID有三種類型：
 
