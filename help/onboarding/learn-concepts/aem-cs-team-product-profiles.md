@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service團隊和產品設定檔
 description: 請詳閱本頁面，了解AEM as a Product Team and Product Profiles。
-source-git-commit: 312b1ce7dc660d1bb4fe199be0e7403069d30161
+source-git-commit: fbf2ddff7d3b54f76afbd2431a6b5d5772620fd3
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -11,14 +11,17 @@ ht-degree: 0%
 
 # AEM as a Cloud Service團隊和產品設定檔{#product-profiles}
 
-AEM as aCloud Service是提供AEM as a service的完全雲端原生產品。 它以雲端原生方式提供AEM，並提供新屬性，例如永遠開啟、隨時最新、一律安全且隨時可擴充。 同時，它保留了AEM作為可自訂平台提供給客戶的主要價值主張，並允許企業級團隊整合到其開發和交付過程中。 請參閱[Adobe Experience Manager as aCloud Service簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en)以深入了解AEM as aCloud Service。
+## 產品設定檔 {#profiles}
 
-您的AEM作為Cloud Service團隊成員將會在上線期間，透過Admin Console新增並指派給下列一或多個產品設定檔。
+授與使用者特定Adobe解決方案的存取權時，您不一定想授予他們完整存取權。 產品設定檔可讓每個解決方案擁有自己的一組使用者權限。 您可透過Adobe Admin Console存取這些檔案。
 
+深入了解[AEM as a Cloud Service產品設定檔](#aem-product-profiles)和[Cloud Manager產品設定檔](#cloud-manager-product-profiles)，以了解在您的團隊設定時，這些設定檔如何搭配運作。
 
 ## AEM as a Cloud Service產品設定檔{#aem-product-profiles}
 
-以下產品設定檔可在AEM as aCloud Service團隊中使用：
+AEM as aCloud Service是提供AEM as a service的完全雲端原生產品。 它以雲端原生方式提供AEM，並提供新屬性，例如永遠開啟、隨時最新、一律安全且隨時可擴充。 同時，它保留了AEM作為可自訂平台提供給客戶的主要價值主張，並允許企業級團隊整合到其開發和交付過程中。 請參閱[Adobe Experience Manager as aCloud Service簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en)以深入了解AEM as aCloud Service。
+
+您的AEM作為Cloud Service團隊成員將會在上線期間，透過Admin Console新增並指派給下列一或多個產品設定檔。
 
 * **AEM管理員**:通常會將AEM管理員指派給開發人員，尤其是需要存取開發環境的開發人員。AEM管理員產品設定檔將用來授予相關聯AEM例項的管理員權限。
 
@@ -52,4 +55,4 @@ Cloud Manager已預先設定產品設定檔，或更簡單的角色型權限。 
 * 一位開發人員
 
    >[!NOTE]
-   >若要授與AEM as aCloud Service的存取權，使用者必須屬於兩個產品設定檔`AEM Users-xxx`或`AEM Administrators-xxx`中的一個。 您必須擁有執行個體的權限。 管理相關Cloud Manager的權限不足。
+   >若要授與AEM as aCloud Service的存取權，使用者必須屬於兩個產品設定檔`AEM Users-xxx`或`AEM Administrators-xxx`中的一個，您必須擁有該例項的權限。 管理相關Cloud Manager的權限不足。
