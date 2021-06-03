@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 40897b9194de56251da73cbea8718845882f98af
+source-git-commit: 181cda0c3f4ec48262ccbe2743ba75bb0d213934
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 3%
+source-wordcount: '1349'
+ht-degree: 2%
 
 ---
 
@@ -96,6 +96,29 @@ ht-degree: 3%
       >
    * 2021年6月24日。
 
+
+## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
+
+### [!DNL Forms] {#what-is-new-forms}中的新增功能
+
+* **內容說明**:新增適用性表單編輯器、範本編輯器和主題編輯器的內容說明，協助作者更清楚了解編輯器的各種功能。
+* **屬性瀏覽器中的錯誤訊息**:已針對適用性Forms屬性瀏覽器中的每個屬性新增錯誤訊息。這些訊息有助於了解欄位的允許值。
+
+### [!DNL Forms] {#what-is-new-forms-prerelease}即將推出的測試版功能
+
+輸出雲端服務：輸出服務可協助您結合XDP範本和XML資料，以產生各種格式的列印檔案。 此服務可讓您以同步和非同步批次模式產生檔案。 通過輸出服務，您可以建立應用程式，以便您：
+
+* 使用XML資料填入範本檔案，以產生最終表單檔案。
+* 以各種格式產生輸出表單，包括非互動式PDF列印資料流。
+* 從XFA表單PDF產生列印PDF。
+
+您可以寫信到formscsbeta@adobe.com註冊測試版計畫。
+
+### [!DNL Forms] {#forms-bugs-fixed}中修正的錯誤
+
+* 在AEM Forms工作流程的「指派任務」步驟中，當您以珊瑚圖示取代動作按鈕的預設圖示時，工作流程會停止運作並記錄例外狀況。 使用預設圖示時，工作流程會如預期般執行。
+* 在版面層中，當您變更欄數時，請開啟編輯層，並拖曳面板中的某些元件，適用性表單編輯器的內容區域會開始出現方形藍色方塊，而編輯器會停止回應。
+* 與提供適用性或外部資產的URL相關的規則編輯器選項的錯誤訊息太長，且不方便使用。
 
 ## Cloud Manager {#cloud-manager}
 
