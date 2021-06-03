@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service團隊和產品設定檔
 description: 請詳閱本頁面，了解AEM as a Product Team and Product Profiles。
-source-git-commit: 02e954d294100a17fff327742fa442fc4759860c
+source-git-commit: 976fc51be0ba8c407ff7d6f7c1a6efecbbdad5c9
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,4 @@ Cloud Manager已預先設定產品設定檔，或更簡單的角色型權限。 
 * 一位開發人員
 
    >[!NOTE]
-   >若要授與AEM as aCloud Service的存取權，使用者必須屬於兩個產品設定檔之一，例如`AEM Users`或`AEM Administrators`。 您必須獲得執行個體的權限，但管理相關Cloud Manager的權限是不夠的。
+   >若要授與AEM as aCloud Service的存取權，使用者必須屬於下列兩個產品設定檔之一：`AEM Users`或`AEM Administrators`。 您必須獲得執行個體的權限，但管理相關Cloud Manager的權限是不夠的。
