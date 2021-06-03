@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 10e08b100c637db968b405b65d72a896ad411308
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 19%
@@ -29,7 +29,7 @@ ht-degree: 19%
 
 本節涵蓋以AEM as aCloud Service開始時，您歷程中聚焦的重要文章：
 
-**入職時有何期望**
+**上線時的期望**
 
 簽妥合約後，將發生下列事件：
 
