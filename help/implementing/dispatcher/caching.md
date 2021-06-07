@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1530'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ Define DISABLE_DEFAULT_CACHING
 2. 直接呼叫`invalidate.cache` API（例如`POST /dispatcher/invalidate.cache`）
 
 不再支援Dispatcher的`invalidate.cache` API方法，因為它只處理特定的Dispatcher節點。 AEM as aCloud Service在服務層級運作，而非個別節點層級，因此[使來自AEM的快取頁面失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html)頁面中的失效指示對AEM as aCloud Service不再有效。
-而應使用復寫刷新代理。 這可以使用復寫API來完成。 復寫API檔案可在[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html)取得，如需快取排清的範例，請參閱[ API範例頁面](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html)，具體為向所有可用代理髮出「啟動」類型復寫動作的`CustomStep`範例。 無法設定排清代理端點，但已預先設定為指向調度程式，與運行排清代理的發佈服務相匹配。 排清代理程式通常可由OSGi事件或工作流程觸發。
+而應使用復寫刷新代理。 這可以使用復寫API來完成。 復寫API檔案可在[此處](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html)取得，如需快取排清的範例，請參閱[ API範例頁面](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html)，具體為向所有可用代理髮出「啟動」類型復寫動作的`CustomStep`範例。 無法設定排清代理端點，但已預先設定為指向調度程式，與運行排清代理的發佈服務相匹配。 排清代理程式通常可由OSGi事件或工作流程觸發。
 
 下圖說明此情況。
 
