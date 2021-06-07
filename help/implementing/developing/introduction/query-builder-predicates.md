@@ -2,9 +2,9 @@
 title: 查詢產生器述詞參考
 description: 查詢產生器API的述詞參考。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2219'
 ht-degree: 1%
 
 ---
@@ -201,7 +201,7 @@ group.2_group.type=dam:Asset
 
 ### memberOf {#memberof}
 
-此謂語查找屬於特定[sling資源集合](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html)的項。
+此謂語查找屬於特定[sling資源集合](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html)的項。
 
 這是僅限篩選的謂語，無法使用搜尋索引。
 
