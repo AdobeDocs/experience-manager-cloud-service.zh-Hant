@@ -3,9 +3,9 @@ title: Adobe Experience Manager as assets HTTP API中的Cloud Service內容片�
 description: 了解在AEM無頭傳送功能的重要一環Assets HTTP API中支援內容片段。
 feature: 內容片段，Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1956'
 ht-degree: 2%
 
 ---
@@ -258,7 +258,7 @@ GETREST API支援透過URL參數進行分頁（適用於資產要求）:
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[ API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager Assets API — 內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>如需詳細資訊，請參閱[ API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager Assets API — 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
 
 ### 讀取/傳送{#read-delivery}
 
@@ -376,7 +376,7 @@ GETREST API支援透過URL參數進行分頁（適用於資產要求）:
 
 如需詳細的API參考，請參閱這裡：
 
-* [Adobe Experience Manager Assets API — 內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API — 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
