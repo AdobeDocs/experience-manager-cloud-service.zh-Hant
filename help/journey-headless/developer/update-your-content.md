@@ -1,9 +1,9 @@
 ---
 title: 如何透過AEM Assets API更新您的內容
 description: 在AEM無頭開發人員歷程的這部分，了解如何使用REST API存取及更新內容片段的內容。
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1053'
 ht-degree: 2%
 
 ---
@@ -255,7 +255,7 @@ API參考檔案中已定義支援請求的確切格式。
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱API參考。 尤其是[Adobe Experience Manager Assets API — 內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>如需詳細資訊，請參閱API參考。 尤其是[Adobe Experience Manager Assets API — 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
 
 ### 讀取/傳送{#read-delivery}
 
@@ -325,7 +325,7 @@ API參考檔案中已定義支援請求的確切格式。
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [內容片段REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API — 內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API — 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 * [使用內容片段](/help/assets/content-fragments/content-fragments.md)
 * [AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
 * [CORS/AEM說明](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
