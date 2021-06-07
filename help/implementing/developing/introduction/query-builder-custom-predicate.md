@@ -2,9 +2,9 @@
 title: 為查詢產生器實作自訂述詞求值器
 description: AEM中的查詢產生器提供簡單且可自訂的方式，可查詢內容存放庫
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->有關`PredicateEvaluator`和`com.day.cq.search`包的詳細資訊，請參閱[Java文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html?com/day/cq/search/package-summary.html)。
+>有關`PredicateEvaluator`和`com.day.cq.search`包的詳細資訊，請參閱[Java文檔](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html?com/day/cq/search/package-summary.html)。
 
 ### 為複製元資料{#implementing-a-custom-predicate-evaluator-for-replication-metadata}實作自訂述詞求值器
 
@@ -131,7 +131,7 @@ replic.action=Activate
 
 >[!NOTE]
 >
->以下過程說明如何構建`Xpath`表達式以篩選資料。 另一個選項是實作`includes`方法，以依列選取資料。 如需詳細資訊，請參閱[Java檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。
+>以下過程說明如何構建`Xpath`表達式以篩選資料。 另一個選項是實作`includes`方法，以依列選取資料。 如需詳細資訊，請參閱[Java檔案](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。
 
 1. 建立擴展`com.day.cq.search.eval.AbstractPredicateEvaluator`的新Java類
 1. 使用`@Component`類似程式碼片段，以[統一差異格式](https://en.wikipedia.org/wiki/Diff#Unified_format)注釋類別
