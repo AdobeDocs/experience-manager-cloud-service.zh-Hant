@@ -2,9 +2,9 @@
 title: 命名慣例
 description: 儲存庫中的節點受Java內容儲存庫的命名慣例的約束
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ### JCR實用程式{#jcr-utilities}
 
-[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis JCR公用程式的AEM實施。要驗證名稱，特別需要的是它所控制的字元映射，以及以下驗證：
+[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis JCR公用程式的AEM實施。要驗證名稱，特別需要的是它所控制的字元映射，以及以下驗證：
 
 * `isValidName`
    * 檢查名稱是否非空白，且僅包含有效字元。
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ### 頁面管理器{#page-manager}
 
-[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) PageManager根據JCRUtil提供頁面層級操作 [的方法](#jcr-utilities)。
+[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) PageManager根據JCRUtil提供頁面層級操作 [的方法](#jcr-utilities)。
 
 ### AEM UI行為{#ui-behavior}
 
