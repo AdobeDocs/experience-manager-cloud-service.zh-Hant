@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中使用影片。
 feature: 視訊設定檔
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 94ee4dde39a59dff0b351a36dacf66d9f4b22872
 workflow-type: tm+mt
-source-wordcount: '9475'
+source-wordcount: '9471'
 ht-degree: 6%
 
 ---
@@ -499,7 +499,7 @@ Google會定期變更其使用者介面。 因此，將影片發佈至YouTube的
 
 1. 點選&#x200B;**[!UICONTROL 我需要什麼憑證？]**
 1. 在「 **[!UICONTROL 新增認證至您的專案]** 」頁面的「建立OAuth 2.0用戶端ID **** 」標題下，視需要在「名稱」欄位中輸入唯一名稱。或者，您可以使用Google指定的預設名稱。
-1. 在「**[!UICONTROL 授權的JavaScript™ origins]**」標題下，在文本欄位中輸入以下路徑，在路徑中替換您自己的域和埠號，然後按&#x200B;**[!UICONTROL Enter]**&#x200B;將路徑添加到清單中：
+1. 在「**[!UICONTROL 授權的JavaScript原始項]**」標題下，在文本欄位中輸入以下路徑，在路徑中替換您自己的域和埠號，然後按&#x200B;**[!UICONTROL Enter]**&#x200B;將路徑添加到清單中：
 
    `https://<servername.domain>:<port_number>`
 
@@ -545,7 +545,7 @@ Google會定期變更其使用者介面。 因此，將影片發佈至YouTube的
 
 >[!CAUTION]
 >
->請確定您已在&#x200B;*之前的YouTube*&#x200B;中設定一或多個管道，並在「Experience Manager」的「YouTube設定」下新增管道(請參閱下方的「在Experience Manager](#setting-up-youtube-in-aem)中設定YouTube」)。 [如果您未能設定管道，系統就不會警告您沒有現有管道。 不過，新增頻道時仍會進行Google驗證，但無法選擇要傳送視訊的頻道。
+>請確定您已在&#x200B;*之前的YouTube*&#x200B;中設定一或多個管道，並在「Experience Manager」的「YouTube設定」下新增管道(請參閱下方的「在Experience Manager](#setting-up-youtube-in-aem)中設定YouTube」)。 [如果您未進行管道設定，系統不會警告您沒有任何現有管道。 不過，新增頻道時仍會進行Google驗證，但無法選擇要傳送視訊的頻道。
 
 **若要建立YouTube管道：**
 
@@ -607,7 +607,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 返回YouTube帳戶設定對話方塊。在「 **[!UICONTROL JSON設定」欄位中]** ，貼上JSON文字。
 1. 在頁面的右上角附近，點選&#x200B;**[!UICONTROL Save]**。
 
-   您現在將在Experience Manager中設定YouTube管道。
+   現在在Experience Manager中設定YouTube頻道。
 
 1. 點選「**[!UICONTROL 新增通道]**」。
 1. 在「頻道名稱」欄位中，輸入您在「先前將一或多個頻道新增至YouTube ]**」任務中建立的頻道名稱。**[!UICONTROL 
@@ -623,7 +623,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 點選&#x200B;**[!UICONTROL 允許]**。
 
-   您現在將設定發佈的標籤。
+   現在設定發佈的標籤。
 
 1. **[!UICONTROL 設定要發佈的標籤]**  — 在「Cloud Services> YouTube」頁面上，點選鉛筆圖示以編輯您要使用的標籤清單。
 1. 若要以Experience Manager顯示可用標籤的清單，請點選下拉式清單圖示（倒轉插入號）。
@@ -653,7 +653,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 返回YouTube帳戶設定對話方塊。在「 **[!UICONTROL JSON設定」欄位中]** ，貼上JSON文字。
 1. 點選&#x200B;**[!UICONTROL 確定]**。
 
-   您現在將在Experience Manager中設定YouTube管道。
+   現在在Experience Manager中設定YouTube頻道。
 
 1. 在「可用頻道」 **[!UICONTROL 的右側]**，點 **選+**  (加號圖示)。
 1. 在「YouTube頻道設定」對話方塊的「標題」欄位中，輸入您在「先前新增一或多個頻道至YouTube」工作中建立的頻道名稱 **** 。
@@ -669,7 +669,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 點選&#x200B;**[!UICONTROL 允許]**。
 
-   您現在將設定發佈的標籤。
+   現在設定發佈的標籤。
 
 1. **[!UICONTROL 設定要發佈的標籤]**  — 在「Cloud Services> YouTube」頁面上，點選鉛筆圖示以編輯您要使用的標籤清單。
 1. 若要以Experience Manager顯示可用標籤的清單，請點選下拉式清單圖示（倒轉插入號）。
@@ -1057,7 +1057,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 >[!NOTE]
 您使用的視訊播放器必須支援字幕的顯示。
 
-Dynamic Media可將註解檔案轉換為JSON(JavaScript™物件標籤法)格式。 這種轉換表示您可以將JSON文字內嵌至網頁，作為視訊的隱藏但完整的記錄。 然後，搜尋引擎可對內容進行編目/索引，讓影片更容易找到，並提供客戶有關影片內容的詳細資訊。
+Dynamic Media可將註解檔案轉換為JSON（JavaScript物件標籤法）格式。 這種轉換表示您可以將JSON文字內嵌至網頁，作為視訊的隱藏但完整的記錄。 然後，搜尋引擎可對內容進行編目/索引，讓影片更容易找到，並提供客戶有關影片內容的詳細資訊。
 
 如需在URL中使用JSON函式的詳細資訊，請參閱[提供靜態（非影像）內容](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)。
 
