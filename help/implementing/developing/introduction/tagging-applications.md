@@ -2,9 +2,9 @@
 title: 在AEM應用程式中建立標籤
 description: 以程式設計方式使用標籤，或在自訂AEM應用程式中擴充標籤
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 為了以程式設計方式使用自訂AEM應用程式中的標籤或擴充標籤，本檔案說明的使用
 
-* [標籤API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)
+* [標籤API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)
 
 與
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 標籤API {#overview-of-the-tagging-api}概述
 
-在AEM中實作[標籤架構](tagging-framework.md)可使用JCR API管理標籤和標籤內容。 `TagManager` 確保在字串陣列屬性上輸入 `cq:tags` 為值的標籤不會重複，它會移 `TagID`除指向非現有標籤的標籤，以及移 `TagID`動或合併標籤的更新。`TagManager` 使用JCR觀察接聽程式來回復任何不正確的變更。主類位於[com.day.cq.tagging](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)包中：
+在AEM中實作[標籤架構](tagging-framework.md)可使用JCR API管理標籤和標籤內容。 `TagManager` 確保在字串陣列屬性上輸入 `cq:tags` 為值的標籤不會重複，它會移 `TagID`除指向非現有標籤的標籤，以及移 `TagID`動或合併標籤的更新。`TagManager` 使用JCR觀察接聽程式來回復任何不正確的變更。主類位於[com.day.cq.tagging](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)包中：
 
 * `JcrTagManagerFactory`  — 傳回以JCR為基礎的實作 `TagManager`。這是標籤API的參考實作。
 * `TagManager`  — 可依路徑和名稱解析及建立標籤。
@@ -142,13 +142,13 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 伺服器端API已本地化`title`相關方法：
 
-* [`com.day.cq.tagging.Tag`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
+* [`com.day.cq.tagging.Tag`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
    * `getLocalizedTitlePaths()`
    * `getLocalizedTitles()`
    * `getTitle(Locale locale)`
    * `getTitlePath(Locale locale)`
-* [`com.day.cq.tagging.TagManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
+* [`com.day.cq.tagging.TagManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
    * `canCreateTagByTitle(String tagTitlePath, Locale locale)`
    * `createTagByTitle(String tagTitlePath, Locale locale)`
    * `resolveByTitle(String tagTitlePath, Locale locale)`
