@@ -4,9 +4,9 @@ description: 本頁面說明如何在Screens中以Cloud Service形式建立專�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 46d1fcd548ca304563f8a0ba0410be053bcccee8
+source-git-commit: 2e572e0b25e1add25016191b55a78eea050b4ad0
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -26,15 +26,38 @@ ht-degree: 0%
 
 1. 導覽至「Screens內容提供者」。
 
-1. 按一下動作列右上角的&#x200B;**建立螢幕專案** 。
+   >[!NOTE]
+   >請參閱[使用螢幕內容提供者](/help/screens-cloud/setting-up-project/using-screens-content-provider.md) ，了解如何存取螢幕內容提供者以建立您的專案。
+
+1. 按一下動作列右上角的&#x200B;**Create** —> **Create Entity**。
+
+   ![](/help/screens-cloud/assets/create-content/create-project1.png)
+
+1. 從&#x200B;**建立**&#x200B;嚮導中選擇&#x200B;**螢幕項目**。 按一下&#x200B;**Next**。
+
+   ![](/help/screens-cloud/assets/create-content/create-project2.png)
 
 1. 在&#x200B;**建立螢幕專案**&#x200B;對話方塊中，輸入專案的&#x200B;**標題**，例如&#x200B;*FirstDigitalExperience*。
+
+   ![](/help/screens-cloud/assets/create-content/create-project3.png)
 
    >[!NOTE]
    >根據您選擇的標題，在&#x200B;**建立螢幕專案**&#x200B;對話方塊中自動填入&#x200B;**名稱**&#x200B;欄位。
 
-1. 按一下&#x200B;**Save**。 您會在「螢幕內容提供者」中看到Screens專案，標題為&#x200B;*FirstDigitalExperience*。
+1. 按一下&#x200B;**Create**。 您會在「螢幕內容提供者」中看到Screens專案，標題為&#x200B;*FirstDigitalExperience*。
 
+   ![](/help/screens-cloud/assets/create-content/create-project4.png)
+
+
+   或,
+
+   1. 按一下動作列中的&#x200B;**建立畫面專案**。
+
+      ![](/help/screens-cloud/assets/create-content/create-project7.png)
+
+   1. 輸入項目的&#x200B;**標題**。 按一下&#x200B;**Save**。
+
+      ![](/help/screens-cloud/assets/create-content/create-project6.png)
    現在您已設定AEM Screens專案，可以開始將管道和位置新增至專案。
 
 ### 刪除現有項目{#deleting-project}
@@ -45,6 +68,9 @@ ht-degree: 0%
 1. 導覽至「Screens內容提供者」。
 1. 選取您要刪除的專案。
 1. 按一下動作列中的&#x200B;**Delete**&#x200B;以刪除專案。
+
+   ![](/help/screens-cloud/assets/create-content/create-project5.png)
+
 1. 按一下&#x200B;**Delete**&#x200B;以確認刪除專案。
 
    >[!NOTE]
