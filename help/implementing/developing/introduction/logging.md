@@ -2,18 +2,18 @@
 title: 登入AEM作為Cloud Service
 description: 了解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何以Cloud Service形式在AEM中要求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a4b21fe922d7b4ff77b01425e0a8cf1c904d7922
 workflow-type: tm+mt
-source-wordcount: '2330'
+source-wordcount: '2333'
 ht-degree: 2%
 
 ---
 
 # 登入AEM作為Cloud Service{#logging-for-aem-as-a-cloud-service}
 
-AEM as aCloud Service是客戶納入自訂程式碼的平台，可為其客戶群建立獨特體驗。 有鑑於此，記錄是重要功能，可針對本機開發和雲端環境(尤其是AEM as aCloud Service的開發環境)進行除錯和了解程式碼執行情形。
+AEM as aCloud Service是客戶納入自訂程式碼的平台，可為其客戶群建立獨特體驗。 有鑑於此，記錄服務是重要功能，可針對本機開發和雲端環境(尤其是AEM as aCloud Service的開發環境)進行除錯和了解程式碼執行情形。
 
-AEM記錄和記錄層級可在設定檔中進行管理，這些設定檔儲存為Git中AEM專案的一部分，並透過Cloud Manager部署為AEM專案的一部分。 以Cloud Service身分登入AEM可劃分為兩個邏輯集：
+AEM記錄設定和記錄層級可在組態檔中進行管理，這些組態檔儲存為Git中AEM專案的一部分，並透過Cloud Manager部署為AEM專案的一部分。 以Cloud Service身分登入AEM可劃分為兩個邏輯集：
 
 * AEM記錄，在AEM應用程式層級執行記錄
 * Apache HTTPD Web Server/Dispatcher記錄，可在「發佈」層級上執行Web伺服器和Dispatcher的記錄。
