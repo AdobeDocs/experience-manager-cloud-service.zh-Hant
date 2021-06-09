@@ -4,7 +4,7 @@ description: 本頁說明如何以Cloud Service的形式在Screens中建立和�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 46d1fcd548ca304563f8a0ba0410be053bcccee8
+source-git-commit: 49b7af411e26f0f56a159e288c5aa12c51b81a19
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -33,7 +33,11 @@ ht-degree: 0%
 請依照下列步驟，在Screens中建立新的序列管道作為Cloud Service:
 
 1. 導覽至「Screens內容提供者」。
-1. 導覽至您的AEM Screens專案，例如SanJoseCafe。
+
+1. 導覽至您的AEM Screens專案，例如&#x200B;*FirstDigitalExperience*。
+
+   ![](/help/screens-cloud/assets/create-content/create-channel1.png)
+
 1. 從項目中選擇&#x200B;**通道**&#x200B;資料夾，如SanJoseCafe —>通道。
 1. 按一下動作列中的&#x200B;**建立**。
 1. 從&#x200B;**Create**&#x200B;嚮導中選擇模板，如&#x200B;**Sequence Channel**，然後按一下&#x200B;**Next**。
