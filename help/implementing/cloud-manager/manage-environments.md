@@ -2,9 +2,9 @@
 title: 管理環境 — Cloud Service
 description: 管理環境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
+source-git-commit: 7e4d75d90b3f6fad024304781225dfcef6df0e2b
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1652'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 3%
 
    擁有必要權限的使用者必須執行下列其中一項操作，才能&#x200B;*解除鎖定*&#x200B;預覽服務的存取權，並提供所需的存取權：
 
-   * 建立適當的IP允許清單，並將其套用至預覽服務。 請立即取消從預覽服務中應用`Preview Default [Env ID] IP Allow List`。
+   * 建立適當的IP允許清單，並將其套用至預覽服務。 請立即取消從預覽服務中應用`Preview Default [Env ID] IP Allow List`。 如需詳細資訊，請參閱[取消套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) 。
 
       *或*,
 
