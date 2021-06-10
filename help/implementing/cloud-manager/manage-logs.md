@@ -2,10 +2,10 @@
 title: 管理記錄 — Cloud Service
 description: 管理記錄 — Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2411c2d1472abaa2af7b2a71938d753bb98db95c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 17%
+source-wordcount: '264'
+ht-degree: 13%
 
 ---
 
@@ -25,6 +25,21 @@ ht-degree: 17%
 >無論其開啟位置為何，都會顯示相同的對話方塊，並允許下載個別記錄檔。
 
 ![](assets/download-logs2.png)
+
+## 下載預覽服務的日誌{#download-preview-service}
+
+使用者可以下載預覽服務的記錄檔
+
+1. 從Cloud Manager的&#x200B;**概述**&#x200B;頁面導覽至&#x200B;**環境**&#x200B;卡片。
+
+1. 從……菜單中選擇下載日誌。
+
+1. 從服務下拉式選項中，選取&#x200B;**預覽**&#x200B;或&#x200B;**預覽Dispatcher**，然後按一下下載圖示。
+
+   >[!NOTE]
+   >您也可以從「環境詳細資訊」頁面完成此動作。
+
+   ![](assets/download-preview.png)
 
 
 ## 透過API {#logs-through-api}記錄
