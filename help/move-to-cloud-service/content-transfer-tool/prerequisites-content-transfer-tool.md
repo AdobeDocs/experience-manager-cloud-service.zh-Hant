@@ -1,14 +1,21 @@
 ---
 title: 內容轉移工具的必要條件
 description: 內容轉移工具的必要條件
-source-git-commit: becb8368af8a8228bf3248bde66ad7164187a9c4
+source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 0%
+source-wordcount: '322'
+ht-degree: 2%
 
 ---
 
 # 內容轉移工具的必要條件 {#prerequisites}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_prereqs"
+>title="使用內容轉移工具的重要考量"
+>abstract="檢閱使用「內容轉移」工具的重要考量事項，包括Java和AEM版本、支援的資料存放區類型、使用者群組考量事項等。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="使用內容轉移工具的重要考量"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="最佳實務與准則"
 
 下表概述使用「內容轉移工具」的先決條件。
 
