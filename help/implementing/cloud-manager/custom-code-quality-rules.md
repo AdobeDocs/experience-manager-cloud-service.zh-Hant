@@ -2,9 +2,9 @@
 title: 自訂程式碼品質規則 — Cloud Services
 description: 自訂程式碼品質規則 — Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: bd9cb35016b91e247f14a851ad195a48ac30fda0
 workflow-type: tm+mt
-source-wordcount: '3298'
+source-wordcount: '3403'
 ht-degree: 4%
 
 ---
@@ -181,32 +181,6 @@ public void orDoThis() {
   }
  
   in.close();
-}
-```
-
-### 客戶{#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}不應實作或擴充以@ProviderType加上註解的產品API
-
-**索引鍵**:CQBP-84、CQBP-84依賴項
-
-**類型**:錯誤
-
-**嚴重性**:關鍵
-
-**自**:2018.7.0版
-
-AEM API包含Java介面和類別，這些介面和類別僅能由自訂程式碼使用，但不能實作。例如，介面 *com.day.cq.wcm.api.Page* 僅由 ***AEM實作***。
-
-將新方法添加到這些介面時，這些附加方法不會影響使用這些介面的現有代碼，因此，在這些介面中添加新方法會被視為向後相容。但是，如果自訂程 ***式碼實作*** 其中一個介面，該自訂程式碼會給客戶帶來向後相容性風險。
-
-僅打算由AEM實作的介面（和類）會以&#x200B;*org.osgi.annotation.versioning.ProviderType*（在某些情況下，為類似的舊批注&#x200B;*aQute.bnd.annotation.ProviderType*）進行注釋。 此規則可識別由自訂程式碼實作這類介面（或擴充類別）的案例。
-
-#### 不相容代碼{#non-compliant-code-3}
-
-```java
-import com.day.cq.wcm.api.Page;
-
-public class DontDoThis implements Page {
-// implementation here
 }
 ```
 
@@ -584,12 +558,85 @@ AEM API表面不斷修訂，以識別不建議使用且因此視為已過時的A
 
 不過，在AEM的內容中，API有時會遭到取代，但在其他內容中，API可能不會遭到取代。 此規則可識別此第二類。
 
+
 ## OakPAL內容規則{#oakpal-rules}
 
 請在OakPAL檢查下方找到由Cloud Manager執行。
 
 >[!NOTE]
 >OakPAL是AEM合作夥伴(2019年AEM Rockstar北美地區獲勝者)開發的架構，可使用獨立Oak存放庫驗證內容套件。
+
+### 客戶{#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}不應實作或擴充以@ProviderType加上註解的產品API
+
+**索引鍵**:CQBP-84
+
+**類型**:錯誤
+
+**嚴重性**:關鍵
+
+**自**:2018.7.0版
+
+AEM API包含Java介面和類別，這些介面和類別僅能由自訂程式碼使用，但不能實作。例如，介面 *com.day.cq.wcm.api.Page* 僅由 ***AEM實作***。
+
+將新方法添加到這些介面時，這些附加方法不會影響使用這些介面的現有代碼，因此，在這些介面中添加新方法會被視為向後相容。但是，如果自訂程 ***式碼實作*** 其中一個介面，該自訂程式碼會給客戶帶來向後相容性風險。
+
+僅打算由AEM實作的介面（和類）會以&#x200B;*org.osgi.annotation.versioning.ProviderType*（在某些情況下，為類似的舊批注&#x200B;*aQute.bnd.annotation.ProviderType*）進行注釋。 此規則可識別由自訂程式碼實作這類介面（或擴充類別）的案例。
+
+#### 不相容代碼{#non-compliant-code-3}
+
+```java
+import com.day.cq.wcm.api.Page;
+
+public class DontDoThis implements Page {
+// implementation here
+}
+```
+
+### 自訂DAM資產Lucene Oak索引已正確建構{#oakpal-damAssetLucene-sanity-check}
+
+**索引鍵**:IndexDamAssetLucene
+
+**類型**:錯誤
+
+**嚴重性**:封鎖程式
+
+**自**:2021.6.0
+
+為了讓資產搜尋在AEM Assets中正常運作，`damAssetLucene` Oak索引必須遵循一組准則。 此規則專門檢查名稱包含`damAssetLucene`的索引的以下模式：
+
+名稱必須遵循以下說明的自定義索引定義的准則。
+
+* 具體來說，名稱必須遵循`damAssetLucene-<indexNumber>-custom-<customerVersionNumber>`模式。
+
+* 索引定義必須具有名為標籤的多值屬性，該屬性包含值`visualSimilaritySearch`。
+
+* 索引定義必須具有名為`tika`的子節點，且該子節點必須具有名為config.xml的子節點。
+
+#### 不相容代碼{#non-compliant-code-damAssetLucene}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+```
+
+#### 相容代碼{#compliant-code-damAssetLucene}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - reindexCount: -6952249853801250000
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
 
 ### 客戶包不應在/libs {#oakpal-customer-package}下建立或修改節點
 
