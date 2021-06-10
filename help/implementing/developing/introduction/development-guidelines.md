@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 開發方針
 description: AEM as a Cloud Service 開發方針
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 7fc99376522238f74eb24efd93f079c03f854aa1
+source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -214,6 +214,10 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 ## 傳送電子郵件{#sending-email}
 
 AEM as aCloud Service需要加密傳出郵件。 以下各節說明如何要求、設定及傳送電子郵件。
+
+>[!NOTE]
+>
+>可以使用OAuth2支援來設定郵件服務。 如需詳細資訊，請參閱[OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md)。
 
 ### 請求訪問{#requesting-access}
 
