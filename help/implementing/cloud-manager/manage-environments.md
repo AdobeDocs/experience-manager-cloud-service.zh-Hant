@@ -2,10 +2,10 @@
 title: 管理環境 — Cloud Service
 description: 管理環境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 4%
+source-wordcount: '1620'
+ht-degree: 3%
 
 ---
 
@@ -61,7 +61,6 @@ ht-degree: 4%
    >[!NOTE]
    >如果您尚未設定非生產管道，*概述*&#x200B;畫面會顯示卡片，您可從此處建立非生產管道。
 
-
 ## 環境詳細資訊{#viewing-environment}
 
 「概述」頁面上的&#x200B;**Environments**&#x200B;卡片最多列出三個環境。
@@ -76,8 +75,36 @@ ht-degree: 4%
 
 1. 從清單中選取任何一個環境，以檢視環境詳細資訊。
 
-   ![](assets/environment-view-3.png)
+   >[!NOTE]
+   >預覽服務將以滾動方式部署到所有程式。 當客戶的計畫啟用預覽服務時，將在產品中收到通知。 如需詳細資訊，請參閱[存取預覽服務](#access-preview-service)一節。
 
+   ![](assets/environ-preview1.png)
+
+
+### 訪問預覽服務{#access-preview-service}
+
+「預覽服務」功能透過Cloud Manager為每個AEM提供額外的預覽（發佈）服務，作為Cloud Service環境。
+
+在到達發佈環境且可供公開之前，先預覽網站的最終體驗。 在您看到並使用預覽服務之前，請提供幾個指針：
+
+1. **AEM版本**:您的環境必須使用AEM版 `2021.5.5343.20210542T070738Z` 本或更新版本。請確定更新管道已在您的環境中成功執行，以完成此作業。
+
+1. **預設IP允許清單鎖**:首次建立時，您必須主動從環境中的預覽服務中取消套用預設的IP允許清單，才能啟用存取權。
+
+1. **發佈內容以預覽**:您可以使用AEM內的「管理出版物UI」 ，將內容發佈至預覽服務。如需詳細資訊，請參閱[預覽內容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) 。
+
+擁有必要權限的使用者必須執行下列其中一項操作，才能&#x200B;*解除鎖定*&#x200B;存取權以預覽服務並提供所需的存取權：
+
+1. 建立適當的IP允許清單，並將其套用至預覽服務。 請立即取消從預覽服務中應用`Preview Default [Env ID] IP Allow List`。
+
+   或,
+
+1. 使用更新IP允許清單工作流程來移除預設IP，並視情況新增IP。 請參閱[檢視和更新IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)以了解詳細資訊。
+
+   >[!NOTE]
+   >您必須先完成上述步驟，才能與任何團隊共用預覽服務URL，以確保團隊的適當成員能夠存取預覽URL。
+
+   一旦預覽服務的存取解除鎖定後，將不再顯示鎖定圖示。
 
 ## 更新環境{#updating-dev-environment}
 
@@ -145,9 +172,13 @@ ht-degree: 4%
 
 ![](assets/environ-login-locally-2.png)
 
+
 ## 管理自定義域名{#manage-cdn}
 
 從「環境摘要」頁面導覽至「**環境**&#x200B;詳細資訊」頁面。
+
+>[!NOTE]
+>Cloud Manager現在支援自訂網域名稱，適用於發佈和預覽服務的Sites程式。 每個Cloud Manager環境最多可托管每個環境250個自訂網域。
 
 您可在環境的發佈服務上執行下列動作，如下所述：
 
@@ -161,9 +192,13 @@ ht-degree: 4%
 
 1. [檢查IP允許清單的狀態](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
+
 ## 管理IP允許清單{#manage-ip-allow-lists}
 
 從「環境摘要」頁面導覽至「環境詳細資訊」頁面。 您可以在此處針對您的環境，對發佈和/或作者服務執行下列動作。
+
+>[!NOTE]
+>Cloud Manager現在支援「製作」、「發佈」和「預覽服務」的「IP允許清單」功能（可在Sites程式中取得）。
 
 ### 應用IP允許清單{#apply-ip-allow-list}
 
