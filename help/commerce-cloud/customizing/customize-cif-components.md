@@ -11,9 +11,9 @@ feature: 商務整合架構
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 73822fb3b74472d48a3db59267ed133fc1a40ad6
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2582'
 ht-degree: 1%
 
 ---
@@ -336,6 +336,10 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 若要這麼做�
 
 在此情況下，我們想在預告頂端呈現橫幅，以根據自訂屬性指出產品為「生態友好」。 [自訂元件標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup)的設計模式實際上是所有AEM元件的標準，而不只是AEM CIF核心元件。
 
+>[!NOTE]
+>
+> 如果您使用CIF產品和類別選擇器（例如此產品預告）或CIF頁面元件來自訂元件，請務必在元件對話方塊中加入所需的`cif.shell.picker` clientlib。 如需詳細資訊，請參閱[CIF產品與類別選擇器使用](use-cif-pickers.md) 。
+
 1. 在IDE中，導航並展開`ui.apps`模組，然後展開資料夾層次結構以：`ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser`並檢查`.content.xml`檔案。
 
    ![Product Teaser ui.apps](../assets/customize-cif-components/product-teaser-ui-apps-ide.png)
@@ -499,3 +503,4 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 若要這麼做�
 - [自訂AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [自訂核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 - [開始使用AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [CIF產品和類別選擇器的使用](use-cif-pickers.md)
