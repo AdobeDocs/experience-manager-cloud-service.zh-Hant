@@ -8,9 +8,9 @@ activity: develop
 audience: developer
 feature: 商務整合架構
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 764d70db8026bad1683fffdb44092f1d2a8e8d28
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,9 @@ AEM內容與商務製作提供一組製作工具，可協助AEM作者和行銷�
 
 此外，也支援標準診斷欄位屬性，例如`name`、`fieldLabel`或`fieldDescription`。
 
-`cifproductfield`元件需要cif.shell.picker clientlib。 若要將clientlib新增至對話方塊，您可以使用extraClientlibs屬性。
+>[!CAUTION]
+>
+>`cifproductfield`元件需要`cif.shell.picker` clientlib。 若要將clientlib新增至對話方塊，您可以使用extraClientlibs屬性。
 
 [CIF核心元件](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml)專案中提供`cifproductfield`的完整運作範例。 另請參閱AEM核心元件檔案的[自訂對話方塊](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) 。
 
@@ -69,6 +71,8 @@ AEM內容與商務製作提供一組製作工具，可協助AEM作者和行銷�
 
 此外，也支援標準診斷欄位屬性，例如`name`、`fieldLabel`或`fieldDescription`。
 
-與`cifproductfield`元件相同， `cifcategoryfield`元件也需要cif.shell.picker clientlib。 若要將clientlib新增至對話方塊，您可以使用`extraClientlibs`屬性。 請參閱AEM核心元件檔案的[自訂對話方塊](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) 。
+>[!CAUTION]
+>
+>與`cifproductfield`元件相同， `cifcategoryfield`元件也需要`cif.shell.picker` clientlib。 若要將clientlib新增至對話方塊，您可以使用`extraClientlibs`屬性。 請參閱AEM核心元件檔案的[自訂對話方塊](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) 。
 
 [CIF核心元件](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml)專案中提供`cifcategoryfield`的完整運作範例。
