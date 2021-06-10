@@ -2,7 +2,7 @@
 title: '編輯沙箱方案 '
 description: 編輯沙箱方案
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
-source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
+source-git-commit: 8974217f8a3db6cfe96082fe2ed0277c243fa7e1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
    導航到&#x200B;**General**&#x200B;頁簽以編輯程式說明。
 
-   ![](assets/edit-program-general.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/edit-program-sandboxa.png)
 
    **Solutions &amp; Add-ons**&#x200B;標籤顯示兩個選項，例如：**Sites**&#x200B;和&#x200B;**Assets**（適用於生產和沙箱方案）。 您也可以選取&#x200B;**Commerce**&#x200B;附加元件選項，該選項可在&#x200B;**Sites**&#x200B;下使用，如下圖所示。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
    >[!NOTE]
    >必須為程式至少選擇一個解決方案，即在編輯程式工作流程期間，不允許用戶取消選擇所有解決方案。
 
-1. 按一下&#x200B;**Save**&#x200B;以完成編輯程式工作流。
+1. 按一下&#x200B;**更新**&#x200B;以完成編輯程式工作流。
 
 
 ## 編輯程式{#considerations-editing}時的考量事項
