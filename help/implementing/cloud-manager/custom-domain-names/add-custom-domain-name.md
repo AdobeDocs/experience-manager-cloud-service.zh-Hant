@@ -2,9 +2,9 @@
 title: 新增自訂網域名稱
 description: 新增自訂網域名稱
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 * AEM as aCloud Service不支援萬用字元網域。
 
-* 每個Cloud Manager環境最多可托管100個每個環境的自訂網域。
+* 每個Cloud Manager環境最多可托管每個環境250個自訂網域。
 
 * 同一個域名不能用於多個環境。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**添加域**&#x200B;按鈕以開啟&#x200B;**添加域名**&#x200B;對話框。
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
+   ![](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
 1. 在&#x200B;**域名**&#x200B;中輸入自定義域名。
 
@@ -47,6 +47,11 @@ ht-degree: 0%
    >在域中輸入時，不應包含`http://`、`https://`或空格。
 
 1. 選擇其發佈服務將與域名關聯的&#x200B;**環境**。
+
+1. 選擇服務作為&#x200B;**Publish**&#x200B;或&#x200B;**Preview**。
+
+   >[!NOTE]
+   >Cloud Manager現在支援自訂網域名稱，適用於發佈和預覽服務的Sites程式。 每個Cloud Manager環境最多可托管每個環境250個自訂網域。 若要深入了解預覽服務，請參閱[預覽服務](/help/implementing/cloud-manager/manage-environments.md#preview-service)。
 
 1. 從下拉式清單中選取&#x200B;**網域SSL憑證**，然後選取&#x200B;**繼續**。
 
