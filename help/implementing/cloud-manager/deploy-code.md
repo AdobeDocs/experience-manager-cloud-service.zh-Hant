@@ -2,10 +2,10 @@
 title: 部署程式碼 — Cloud Services
 description: 部署程式碼 — Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
+source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 1%
+source-wordcount: '616'
+ht-degree: 2%
 
 ---
 
@@ -69,46 +69,7 @@ ht-degree: 1%
 
 ## 部署過程{#deployment-process}
 
-以下章節說明如何在階段階段和生產階段部署AEM和Dispatcher套件。
-
-Cloud Manager會將建置程式產生的所有target/*.zip檔案上傳至儲存位置。  在管道的部署階段，會從此位置檢索這些對象。
-
-當Cloud Manager部署至非生產拓撲時，目標是盡快完成部署，因此成品會同時部署至所有節點，如下所示：
-
-1. Cloud Manager會判斷每個工件是AEM或Dispatcher套件。
-1. Cloud Manager會從負載平衡器中移除所有調度程式，以在部署期間隔離環境。
-
-   除非另有配置，否則您可以跳過開發和階段部署中的負載平衡器更改，即分離和附加非生產管道中的步驟，用於開發環境，以及生產管道，用於預備環境。
-
-   >[!NOTE]
-   >
-   >此功能預計主要供1-1-1名客戶使用。
-
-1. 每個AEM工件都會透過套件管理器API部署至每個AEM執行個體，且套件相依性會決定部署順序。
-
-   要進一步了解如何使用包來安裝新功能、在實例之間轉移內容以及備份儲存庫內容，請參閱如何使用包。
-
-   >[!NOTE]
-   >
-   >所有AEM成品都部署至作者和發佈者。 需要節點特定設定時，應運用執行模式。 若要進一步了解執行模式可如何讓您針對特定用途調整AEM執行個體，請參閱執行模式。
-
-1. Dispatcher工件會依下列方式部署至每個Dispatcher:
-
-   1. 當前配置被備份並複製到臨時位置
-   1. 除不可變的檔案外，所有配置都將被刪除。 如需詳細資訊，請參閱管理Dispatcher設定。 這會清除目錄，以確保不會留下任何孤立的檔案。
-   1. 將對象提取到`httpd`目錄。  不可覆寫的檔案。 在部署時，您對Git存放庫中不可變的檔案所做的任何變更都會被忽略。  這些檔案是AMS Dispatcher架構的核心，無法變更。
-   1. Apache會執行設定測試。 若未找到錯誤，則會重新載入服務。 如果發生錯誤，則會從備份還原設定、重新載入服務，並將錯誤回報至Cloud Manager。
-   1. 管道設定中指定的每個路徑都會失效或從Dispatcher快取中清除。
-
-   >[!NOTE]
-   >
-   >Cloud Manager預期Dispatcher工件會包含完整的檔案集。  所有Dispatcher設定檔都必須存在於Git存放庫中。 缺少檔案或資料夾將導致部署失敗。
-
-1. 成功將所有AEM和Dispatcher套件部署至所有節點後，Dispatcher會新增回負載平衡器，且部署完成。
-
-   >[!NOTE]
-   >
-   >您可以跳過開發和預備部署中的負載平衡器更改，即在非生產管道、開發人員環境和生產管道中（用於預備環境）分離和附加步驟。
+所有Cloud Service部署都會依循滾動程式，確保零停機時間。 請參閱[滾動部署如何運作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work)以了解詳細資訊。
 
 ### 部署到生產階段{#deployment-production-phase}
 
