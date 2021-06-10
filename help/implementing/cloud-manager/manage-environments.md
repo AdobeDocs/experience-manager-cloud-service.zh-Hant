@@ -2,9 +2,9 @@
 title: 管理環境 — Cloud Service
 description: 管理環境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: b6b1e5a1f3e16d7c9ddffb27ca8f3da039832787
+source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1642'
 ht-degree: 3%
 
 ---
@@ -89,9 +89,7 @@ ht-degree: 3%
 
 1. **AEM版本**:您的環境必須使用AEM版 `2021.5.5343.20210542T070738Z` 本或更新版本。請確定更新管道已在您的環境中成功執行，以完成此作業。
 
-1. **預設IP允許清單鎖**:建立預覽服務後，會套用標示為的預設IP允許清單，如 `Preview Default [Env ID]`下圖所示。
-
-   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-preview.png)
+1. **預設IP允許清單鎖**:建立預覽服務時，會套用預設的IP允許清單(標示為 `Preview Default [Env ID]`)。
 
    >[!NOTE]
    >首次建立時，您必須主動從環境中的預覽服務中取消套用預設的IP允許清單，才能啟用存取權。
