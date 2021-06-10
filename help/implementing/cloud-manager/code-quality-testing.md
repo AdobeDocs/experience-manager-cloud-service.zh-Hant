@@ -2,7 +2,7 @@
 title: 程式碼品質測試 — Cloud Services
 description: 程式碼品質測試 — Cloud Services
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 在程式碼品質測試中，會掃描原始碼，以確保其符合特定品質標準。 目前，這是透過SonarQube與內容封裝層級檢查的組合，使用OakPAL來實作。 有100多個規則結合一般Java規則和AEM專用規則。 有些AEM專用規則是根據AEM Engineering的最佳實務建立，並稱為[自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
 
 >[!NOTE]
->您可以在此處[下載規則完整清單。](/help/implementing/cloud-manager/assets/CodeQuality-rules-CS.xlsx)
+>您可以在此處[下載規則完整清單。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
 
 **三層門**
 
