@@ -2,7 +2,7 @@
 title: 管理環境 — Cloud Service
 description: 管理環境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
+source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 3%
@@ -91,22 +91,22 @@ ht-degree: 3%
 
 1. **預設IP允許清單鎖**:首次建立時，您必須主動從環境中的預覽服務中取消套用預設的IP允許清單，才能啟用存取權。
 
+   擁有必要權限的使用者必須執行下列其中一項操作，才能&#x200B;*解除鎖定*&#x200B;存取權以預覽服務並提供所需的存取權：
+
+   1. 建立適當的IP允許清單，並將其套用至預覽服務。 請立即取消從預覽服務中應用`Preview Default [Env ID] IP Allow List`。
+
+      或,
+
+   1. 使用更新IP允許清單工作流程來移除預設IP，並視情況新增IP。 請參閱[檢視和更新IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)以了解詳細資訊。
+
+      >[!NOTE]
+      >您必須先完成上述步驟，才能與任何團隊共用預覽服務URL，以確保團隊的適當成員能夠存取預覽URL。
+
+      一旦預覽服務的存取解除鎖定後，將不再顯示鎖定圖示，如下所示。
+
+      ![](/help/implementing/cloud-manager/assets/preview-service1.png)
+
 1. **發佈內容以預覽**:您可以使用AEM內的「管理出版物UI」 ，將內容發佈至預覽服務。如需詳細資訊，請參閱[預覽內容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) 。
-
-擁有必要權限的使用者必須執行下列其中一項操作，才能&#x200B;*解除鎖定*&#x200B;存取權以預覽服務並提供所需的存取權：
-
-1. 建立適當的IP允許清單，並將其套用至預覽服務。 請立即取消從預覽服務中應用`Preview Default [Env ID] IP Allow List`。
-
-   或,
-
-1. 使用更新IP允許清單工作流程來移除預設IP，並視情況新增IP。 請參閱[檢視和更新IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)以了解詳細資訊。
-
-   >[!NOTE]
-   >您必須先完成上述步驟，才能與任何團隊共用預覽服務URL，以確保團隊的適當成員能夠存取預覽URL。
-
-   一旦預覽服務的存取解除鎖定後，將不再顯示鎖定圖示，如下所示。
-
-   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## 更新環境{#updating-dev-environment}
 
