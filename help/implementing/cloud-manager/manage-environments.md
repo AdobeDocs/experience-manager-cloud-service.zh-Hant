@@ -2,9 +2,9 @@
 title: 管理環境 — Cloud Service
 description: 管理環境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
+source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1623'
 ht-degree: 3%
 
 ---
@@ -104,7 +104,9 @@ ht-degree: 3%
    >[!NOTE]
    >您必須先完成上述步驟，才能與任何團隊共用預覽服務URL，以確保團隊的適當成員能夠存取預覽URL。
 
-   一旦預覽服務的存取解除鎖定後，將不再顯示鎖定圖示。
+   一旦預覽服務的存取解除鎖定後，將不再顯示鎖定圖示，如下所示。
+
+   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## 更新環境{#updating-dev-environment}
 
