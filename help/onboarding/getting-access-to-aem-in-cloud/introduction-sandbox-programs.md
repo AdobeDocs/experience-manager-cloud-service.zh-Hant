@@ -2,9 +2,9 @@
 title: '沙箱方案簡介 '
 description: 沙箱方案簡介
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
+source-git-commit: 1ecadc0d2b45ee8c94af8d91b35dbd40b08e89b5
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 在沙箱中建立的環境沒有針對自動縮放進行設定。 因此，這些環境不適合進行效能或負載測試。
 
-沙箱方案包括Sites和Assets，並會自動填入Git存放庫、開發環境和非生產管道。  Git存放庫會根據AEM專案原型填入範例專案。
+沙箱方案包含[!DNL Sites]和[!DNL Assets]，並會自動填入Git存放庫、開發環境和非生產管道。  Git存放庫會根據AEM專案原型填入範例專案。
 
 請參閱[了解程式和程式類型](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)以深入了解程式類型。
 
@@ -32,7 +32,7 @@ ht-degree: 0%
    * 開發環境的創造
    * 建立非生產管道部署至開發環境（主分支部署至開發環境）
 
-1. **解決方案：** 沙箱方案包含AEM Sites和Assets。
+1. **解決方案：** 沙箱方案包含 [!DNL Sites] AEM [!DNL Assets]和。
 
 1. **AEM更新：** AEM更新可手動套用至沙箱方案中的環境，且不會自動推播。如需詳細資訊，請參閱[AEM沙箱環境更新](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) 。
 
