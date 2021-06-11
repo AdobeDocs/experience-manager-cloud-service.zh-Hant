@@ -2,37 +2,39 @@
 title: 管理記錄 — Cloud Service
 description: 管理記錄 — Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: fa1dd46798d2b8f9b0476e5ad8eb74679fb4beb7
+source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 9%
+source-wordcount: '235'
+ht-degree: 10%
 
 ---
 
 # 存取和管理記錄檔 {#manage-logs}
 
-使用者可以使用「環境卡」存取所選環境的可用記錄檔清單。
+使用者可以使用&#x200B;**概述**&#x200B;頁面或環境詳細資訊頁面中的&#x200B;**環境**&#x200B;卡，存取所選環境的可用日誌檔案清單。
 
 ## 正在下載日誌{#download-logs}
 
-請依照下列步驟下載記錄檔：
+請依照下列步驟下載記錄檔。
 
-1. 您可以透過UI，從&#x200B;**概述**&#x200B;頁面的&#x200B;**環境**&#x200B;卡片下載記錄：
+1. 從&#x200B;**概述**&#x200B;頁面導覽至&#x200B;**環境**&#x200B;卡片。
 
-![](assets/download-logs1.png)
+1. 從&#x200B;**中選擇**&#x200B;下載日誌&#x200B;**...**&#x200B;功能表。
 
-或者，從「環境詳細資訊」頁面：
+   ![](assets/download-logs1.png)
 
-![](assets/download-logs.png)
+   *或*,
 
->[!NOTE]
->無論其開啟位置為何，都會顯示相同的對話方塊，並允許下載個別記錄檔。
+   從「環境詳細資訊」頁：
 
-1.從&#x200B;**中選擇**&#x200B;下載日誌&#x200B;**...**&#x200B;功能表。
+   ![](assets/download-logs.png)
 
-1. 從&#x200B;**Service**&#x200B;下拉式選單中，選取&#x200B;**Preview**&#x200B;或&#x200B;**Preview Dispatcher**&#x200B;等選項，然後按一下下載圖示。 您也可以從「環境詳細資訊」頁面完成此動作。
+   >[!NOTE]
+   >無論其開啟位置為何，都會顯示相同的對話方塊，並允許下載個別記錄檔。
 
-![](assets/download-preview.png)
+1. 從&#x200B;**Service**&#x200B;下拉式選單中，選取&#x200B;**Preview**&#x200B;或&#x200B;**Preview Dispatcher**&#x200B;等選項，然後按一下下載圖示。
+
+   ![](assets/download-preview.png)
 
 
 ## 透過API {#logs-through-api}記錄
