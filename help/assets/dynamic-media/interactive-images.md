@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中使用互動式影像。
 feature: 互動影像
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
 workflow-type: tm+mt
-source-wordcount: '4263'
+source-wordcount: '4245'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-請參閱上圖所示網頁上的[互動式影像在動作中](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) 。
+請參閱上圖所示網頁上的[互動式影像在動作中](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) 。
 
 ## 觀看互動式影像橫幅的建立方式{#watch-how-interactive-image-banners-are-created}
 
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 下列逐步工作流程說明旨在協助您在Adobe Experience Manager Assets中快速上手並執行互動式影像。
 
-查看某些快速入門任務中的&#x200B;**Example**&#x200B;標題。 其中包含以[網頁範例為基礎的簡短教學課程，該範例尚未新增互動式影像](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)。
+查看某些快速入門任務中的&#x200B;**Example**&#x200B;標題。 其中包含以[網頁範例為基礎的簡短教學課程，該範例尚未新增互動式影像](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)。
 
 
 
@@ -147,7 +147,7 @@ ht-degree: 1%
 
 **範例**
 
-您可以將上述三個範例中使用的相同方法套用至[示範網頁](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)。
+您可以將上述三個範例中使用的相同方法套用至[示範網頁](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)。
 
 示範網頁有數個產品縮圖，每個縮圖都有標示為「查看更多」的快速檢視按鈕。 在Web瀏覽器的調試工具仍處於激活狀態時，按一下每個按鈕並記下記錄的快速查看URL。 啟動頁面上所有的四個產品快速檢視後，您會有向後端提出的快速檢視請求清單：
 
@@ -339,13 +339,13 @@ ht-degree: 1%
 
 **範例**
 
-以[示範網站為範例](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)，請注意這三個人的圖片是靜態`IMG`標籤：
+以[示範網站為範例](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)，請注意這三個人的圖片是靜態`IMG`標籤：
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-只要移除`IMG`標籤，並以「Experience Manager資產」中複製的內嵌程式碼取代，整合就很簡單。 您可以看到結果[在具有三個圓形熱點](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)的頁面上顯示可購買的交互影像。
+只要移除`IMG`標籤，並以「Experience Manager資產」中複製的內嵌程式碼取代，整合就很簡單。 您可以看到結果[在具有三個圓形熱點](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)的頁面上顯示可購買的交互影像。
 
 >[!NOTE]
 因此，演示網站的可購買交互影像上的熱點僅用於顯示。 它們尚未與現有的快速檢視整合。
@@ -490,7 +490,7 @@ loadQuickView(quickViewUrl);
  s7interactiveimageviewer.init();
 ```
 
-具有完全整合的互動式影像](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)的[最終示範網站。
+具有完全整合的互動式影像](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)的[最終示範網站。
 
 ## 使用快速檢視建立自訂快顯視窗{#using-quickviews-to-create-custom-pop-ups}
 
