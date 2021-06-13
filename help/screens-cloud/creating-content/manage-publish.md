@@ -4,9 +4,9 @@ description: 本頁說明如何以Cloud Service形式在Screens中發佈管道�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2f49c34a0d45e4fe2793f0a5bfe04f85dbb892ad
+source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,22 @@ ht-degree: 0%
 
 請依照下列步驟發佈管道：
 
-1. 導覽並從專案中選取管道，例如&#x200B;**FirstDigitalExperience** —>管道 — >管道食品。
+1. 導覽並選取專案中的通道，例如&#x200B;**FirstDigitalExperience** —> **Channels** —> **LoopChannelOne**。
+
+   ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. 按一下動作列中的&#x200B;**管理出版物** 。
 
-1. 從「管理出版物」嚮導中選擇「立即發佈」和「立即計畫」操作，然後按一下&#x200B;**Next**。
+1. 從&#x200B;**管理出版物嚮導**&#x200B;中選擇&#x200B;**Action**&#x200B;作為&#x200B;**Publish**&#x200B;和&#x200B;**Scheduling**&#x200B;作為&#x200B;**Now**，然後按一下&#x200B;**Next**。
+
+   ![](/help/screens-cloud/assets/create-content/managepub-2.png)
+
+   >[!NOTE]
+   >按一下動作列中的「**+包含子項**」 ，並取消勾選所有選項以發佈專案中的所有模組，然後按一下「新增」以發佈。 依預設，會勾選所有方塊，您必須手動取消勾選方塊，以發佈專案中的所有模組。
 
 1. 從&#x200B;**管理出版物**&#x200B;精靈中選取通道後，按一下&#x200B;**發佈**&#x200B;以發佈該通道。
+
+   ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## 下一步是什麼{#whats-next}
@@ -48,4 +57,4 @@ ht-degree: 0%
 * 從Screens內容提供者建立和管理位置
 * 從Screens服務提供者建立和管理播放器
 
-   您應繼續以Cloud Service網路管理員身分使用Screens，繼續進行後續檢閱檔案。
+   您應該繼續以Cloud Service的形式來檢視檔案。
