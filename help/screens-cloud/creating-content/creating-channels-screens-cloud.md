@@ -4,10 +4,10 @@ description: 本頁說明如何以Cloud Service的形式在Screens中建立和�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 49b7af411e26f0f56a159e288c5aa12c51b81a19
+source-git-commit: ece3fae8b65b4dbdc38e63a211a3f55f4eb91333
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 0%
+source-wordcount: '547'
+ht-degree: 1%
 
 ---
 
@@ -36,26 +36,61 @@ ht-degree: 0%
 
 1. 導覽至您的AEM Screens專案，例如&#x200B;*FirstDigitalExperience*。
 
-   ![](/help/screens-cloud/assets/create-content/create-channel1.png)
+1. 從專案選取&#x200B;**Channels**&#x200B;資料夾，例如&#x200B;**FirstDigitalExperience** —> **Channels**，然後按一下動作列中的&#x200B;**Create**。
 
-1. 從項目中選擇&#x200B;**通道**&#x200B;資料夾，如SanJoseCafe —>通道。
-1. 按一下動作列中的&#x200B;**建立**。
+   ![](/help/screens-cloud/assets/create-content/channel-create1.png)
+
 1. 從&#x200B;**Create**&#x200B;嚮導中選擇模板，如&#x200B;**Sequence Channel**，然後按一下&#x200B;**Next**。
 
+   ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
    > **建立**&#x200B;精靈在建立通道時提供不同類型的範本。 如需詳細資訊，請參閱建立精靈中可用的範本區段。
 
-1. 輸入序列通道的名稱，如&#x200B;**LoopingChannelOne** ，然後按一下&#x200B;**Create**。
-您現在會在AEM Screens專案的「管道」資料夾中看到**LoopingChannelOne**。
+1. 輸入序列通道的名稱，例如&#x200B;**LoopingChannelOne**，然後按一下&#x200B;**Create**。
 
-## 管理現有通道{#managing-channels}
+   ![](/help/screens-cloud/assets/create-content/channel-create3.png)
+
+   您現在會在AEM Screens專案的「管道」資料夾中看到&#x200B;**LoopingChannelOne**。
+
+1. 建立管道後，您現在可以新增內容至管道。 請參閱[將內容新增至頻道](#add-content) ，了解如何將資產（影像/視訊）新增至頻道。
+
+## 管理通道{#managing-channels}
 
 您可以編輯、檢視屬性和控制面板、複製、預覽和刪除管道。
+
+從專案導覽至管道，然後選取管道，如下圖所示。 您現在可以選取選項，例如編輯頻道、檢視屬性、預覽內容、管理發布或從動作列刪除頻道。
+
+![](/help/screens-cloud/assets/create-content/channelprop1.png)
+
+### 將內容新增至頻道{#add-content}
+
+若要新增或編輯頻道中的內容，請遵循下列步驟：
+
+1. 選擇要編輯的通道，如下圖所示。 按一下動作列左上角的「**編輯**」以開啟編輯器。
+
+   ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
+
+1. 編輯器可讓您新增資產/元件至要發佈的管道。
+
+1. 從左側窗格拖放資產，並將其新增至編輯器。
+
+   ![](/help/screens-cloud/assets/create-content/edit-channel2.png)
+
+   >[!NOTE]
+   >按一下&#x200B;**預覽**以預覽頻道內容。
+   >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 建立嚮導{#available-templates}中的可用模板
 
 使用&#x200B;**Create**&#x200B;通道精靈時，可使用下列範本，例如：
 
+| 可用範本 | 說明 |
+|--- |--- |
+| 頻道資料夾 | 允許建立資料夾以儲存管道集合。 |
+| 順序頻道 | 可建立循序播放元件的管道（在幻燈片放映中逐個播放）。 |
+| 左或右L形分屏通道 | 可讓內容作者在適當大小的區域中檢視不同類型的資產。 |
+
+
 ## 下一步是什麼{#whats-next}
 
-現在，您已在專案中設定AEM Screens管道後，就需要發佈管道。 在從Screens服務提供者管理播放器之前，請參閱[以Cloud Service形式發佈Screens中的頻道](/help/screens-cloud/creating-content/manage-publish.md)。
+現在，您已在專案中設定AEM Screens管道後，就需要發佈管道。 在從Screens服務提供者管理您的播放器之前，請參閱[以Cloud Service形式發佈Screens中的頻道](/help/screens-cloud/creating-content/manage-publish.md)。
