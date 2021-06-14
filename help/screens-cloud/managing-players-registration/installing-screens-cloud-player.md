@@ -1,12 +1,12 @@
 ---
-title: 在Screens中安裝播放器作為Cloud Service
-description: 本頁面說明如何以Cloud Service的形式在Screens中安裝播放器。
+title: 在螢幕中安裝和設定播放器作為Cloud Service
+description: 本頁面說明如何在Screens中安裝和設定播放器，作為Cloud Service。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '271'
 ht-degree: 1%
 
 ---
@@ -48,4 +48,4 @@ ht-degree: 1%
 
 ## 下一步是什麼{#whats-next}
 
-現在，您已安裝播放器並設定了必要的設定，您應繼續以Cloud Service的形式來執行Screens歷程，方法是接下來檢閱檔案&#x200B;**從Screens服務提供者**&#x200B;建立播放器。
+現在，您已安裝播放器並將播放器設定為雲端模式，您應該繼續以Cloud Service的形式來執行Screens歷程，方法是接下來檢閱檔案[「從Screens服務提供者將Screens中的播放器註冊為Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)」。
