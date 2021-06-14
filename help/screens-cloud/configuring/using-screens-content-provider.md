@@ -4,10 +4,10 @@ description: 本頁面說明如何使用Screens內容提供者來建立內容。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 864c9cf72b0c552867422ee59bf85b11b9673ac7
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,11 @@ ht-degree: 1%
 >**必備條件**
 >開始閱讀此部分之前，請參閱[設定Screens Services Provider](/help/screens-cloud/setting-up-project/setting-up-screens-services-provider.md)以了解如何從Screens Services Provider導航到此用戶介面。
 
-登入Screens內容提供者後，您就可以在內容播放中建立內容。
+登入Screens內容提供者後，您就可以在內容播放中建立內容。 使用Screens內容提供者來建立和管理：
+
+* 專案
+* 頻道
+* 位置
 
 ## 下一步是什麼{#whats-next}
 
