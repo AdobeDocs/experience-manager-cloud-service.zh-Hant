@@ -1,18 +1,18 @@
 ---
-title: 設定Screens服務提供商
-description: 本頁介紹如何設定Screens服務提供商。
+title: 導覽至Screens Services Provider
+description: 本頁面說明如何導覽至Screens Services Provider。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '211'
 ht-degree: 1%
 
 ---
 
 
-# 設定Screens服務提供程式{#setup-screens-services-provider}
+# 導航至Screens服務提供程式{#setup-screens-services-provider}
 
 ## 簡介 {#introduction}
 
@@ -44,5 +44,5 @@ ht-degree: 1%
 
 ## 下一步是什麼{#whats-next}
 
-學會如何設定Screens Services Provider後，您可以導覽至Screens Content Provider ，以取得詳細資訊。
+學會如何設定Screens Services Provider後，可以導航到[ Using Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md)以獲取詳細資訊。
 
