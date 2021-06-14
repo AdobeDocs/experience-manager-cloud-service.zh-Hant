@@ -4,15 +4,15 @@ description: 本頁面說明如何以Cloud Service的形式在Screens中安裝�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '262'
 ht-degree: 1%
 
 ---
 
 
-# 在螢幕中將播放器安裝為Cloud Service{#installing-players-screens-cloud}
+# 在螢幕中安裝和配置播放器作為Cloud Service{#installing-players-screens-cloud}
 
 以下章節說明如何安裝已註冊至內部部署AEM例項的AEM Screens播放器。 此外，您必須對現有播放器進行工廠重設，然後針對AEM Screens註冊新播放器作為Cloud Service。
 
