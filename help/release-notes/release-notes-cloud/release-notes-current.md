@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3f579f6871da8e8b2fcea921e5abf57dfc14f5f8
+source-git-commit: f447303d3618eb2e9ea38873c88ed04280670218
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1685'
 ht-degree: 2%
 
 ---
@@ -143,7 +143,7 @@ AEM as aCloud Service2021.6.0中的Cloud Manager發行日期為2021年6月10日�
 
 * 品質規則`ImmutableMutableMixCheck`已更新，將`/oak:index`節點分類為不可變。
 
-* 品質規則`CQBP-84`和`CQBP-84--dependencies`已整合為單一規則。
+* 品質規則`CQBP-84`和`CQBP-84--dependencies`已整合為單一規則。 作為此整合的一部分，對依賴項的掃描可以更準確地識別部署到AEM運行時的第三方依賴項中的問題。
 
 * 為避免混淆，「環境詳細資料」頁面上的「發佈AEM」和「發佈Dispatcher」區段列已整合。
 
