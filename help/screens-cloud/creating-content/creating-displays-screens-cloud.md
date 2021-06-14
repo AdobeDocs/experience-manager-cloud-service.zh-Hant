@@ -4,9 +4,9 @@ description: 本頁面說明如何建立和管理Screens中的顯示作為Cloud 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '283'
 ht-degree: 2%
 
 ---
@@ -53,3 +53,6 @@ ht-degree: 2%
 
 ![影像](/help/screens-cloud/assets/display/disp-5.png)
 
+## 下一步是什麼{#whats-next}
+
+現在，您已了解如何建立及管理專案的顯示器，您應繼續以Cloud Service的形式來執行Screens歷程，方法是先檢閱檔案[安裝和設定AEM as a Cloud Service的Screens Player](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)。
