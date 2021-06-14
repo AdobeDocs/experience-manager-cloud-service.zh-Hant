@@ -4,9 +4,9 @@ description: 本頁面說明如何將播放器指派給Screens中的顯示器，
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '218'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 目標 {#objective}
 
-本檔案可協助您了解如何建立及管理Screens服務提供者中的顯示。 閱讀後，您應該能了解如何指派播放器至顯示器。
+本檔案可協助您了解如何將播放器指派給Screens服務提供者中的顯示器。 這些是內容在以Cloud Service播放器形式在Screens中開始播放之前的最後必要步驟。
 
 ## 將播放器指派給顯示器的步驟{#create-display}
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 1. 在按一下「選擇」後，您將在&#x200B;**ASSIGNED DISPLAY**&#x200B;面板下看到指派的顯示。
 
-   現在，顯示畫面已指派給您的播放器，頻道將開始播放內容。 播放器現在應該下載並開始播放內容。 恭喜！
+   現在，顯示畫面已指派給您的播放器，頻道將開始播放內容。 播放器現在應該下載並開始播放內容。 **恭喜！**
 
    ![影像](/help/screens-cloud/assets/player/output.gif)
 
