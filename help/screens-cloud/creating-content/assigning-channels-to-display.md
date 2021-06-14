@@ -4,7 +4,7 @@ description: 本頁說明如何將頻道指派給Screens中的顯示器，作為
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 1%
@@ -71,4 +71,4 @@ ht-degree: 1%
 
 ## 下一步是什麼{#whats-next}
 
-現在，您已將頻道指派給顯示器後，您應繼續以Cloud Service的形式來執行Screens歷程，方法是先檢閱檔案&#x200B;**安裝並設定AEM適用的Screens播放器作為Cloud Service**。
+現在，您已將頻道指派給顯示器後，您應繼續以Cloud Service的形式來執行Screens歷程，方法是先檢閱檔案[安裝並設定AEM適用的Screens播放器作為Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)。
