@@ -1,12 +1,12 @@
 ---
 title: 使用Up Screens內容提供者
-description: 本頁面說明如何使用Screens內容提供者。
+description: 本頁面說明如何使用Screens內容提供者來建立內容。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '179'
 ht-degree: 1%
 
 ---
@@ -32,5 +32,6 @@ ht-degree: 1%
 
 ## 下一步是什麼{#whats-next}
 
-學會如何導覽至Screens內容提供者後，您就可以導覽至下一個步驟，即在Screens中建立及管理專案，作為Cloud Service。
+現在，您已學會如何導覽至「Screens內容提供者」，您現在應繼續以「Cloud Service」的方式，檢閱檔案[在Screens中建立及管理Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)。
+
 
