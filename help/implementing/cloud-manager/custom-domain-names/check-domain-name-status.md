@@ -2,7 +2,7 @@
 title: 檢查域名狀態
 description: 檢查域名狀態
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 417939cb7a206d2b98b5e631a09307edc6724c17
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Cloud Manager會透過TXT值驗證網域擁有權，並顯示下列其中一個�
 失敗刪除自定義域名失敗。您必須重試。 請參閱[刪除自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)以深入了解。
 
 
-## IP允許清單的預先存在CDN設定{#pre-existing-cdn}
+## 自訂網域名稱{#pre-existing-cdn}的現有CDN設定
 
 若環境中包含IP允許清單、SSL憑證或自訂網域名稱的現有CDN設定，則客戶會在&#x200B;**IP允許清單**&#x200B;和&#x200B;**環境**&#x200B;詳細資訊頁面中看到下列訊息。 當客戶透過UI完全移轉所有預先存在的環境設定後，UI上顯示的訊息就會消失，而訊息可能需要1到2個工作天才會消失。
 
