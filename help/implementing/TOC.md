@@ -5,9 +5,9 @@ breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 feature: 開發人員工具
 role: Developer, Architect
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 34%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 34%
    + [記錄](developing/introduction/logging.md)
    + [配置和配置瀏覽器](developing/introduction/configurations.md)
    + [AEM技術基礎](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
    + [產生伺服器端API的存取權杖](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [AEM中的Headful和Headless](developing/headful-headless.md)
    + 完整堆棧AEM開發{#full-stack}
