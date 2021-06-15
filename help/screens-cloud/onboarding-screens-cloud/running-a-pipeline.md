@@ -4,7 +4,7 @@ description: 本頁面說明如何在Cloud Manager中以Cloud Service專案的�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 371cfaeb0e526197fdf98dea65ed5bc2ca0481a2
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 2%
@@ -59,4 +59,4 @@ ht-degree: 2%
 
 ## 下一步是什麼{#whats-next}
 
-一旦您學會如何在Cloud Manager中為程式執行管道，現在就可以繼續執行下一步了。 下一步是設定和設定您的Screens專案。
+一旦您學會如何在Cloud Manager中為您的程式設定環境，現在就可以開始進行入門程式的下一個步驟，即[導覽至Screens服務提供者](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)。
