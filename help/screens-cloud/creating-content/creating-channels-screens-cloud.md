@@ -4,9 +4,9 @@ description: 本頁說明如何以Cloud Service的形式在Screens中建立和�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ece3fae8b65b4dbdc38e63a211a3f55f4eb91333
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '540'
 ht-degree: 1%
 
 ---
@@ -19,10 +19,10 @@ ht-degree: 1%
 
 ## 目標 {#objective}
 
-本檔案可協助您了解如何在Screens內容提供者中為您的AEM Screens專案建立和管理管道。 閱讀後，您應：
+本檔案可協助您了解如何在Screens內容提供者中為您的AEM Screens專案建立和管理管道。 閱讀後，您應該：
 
-* 了解如何為Screens內容提供者建立管道。
-* 就範圍而言，可在AEM Screens專案中管理您的管道。
+* 了解如何為Screens內容提供者建立管道
+* 管理和編輯頻道中的內容
 
 ## 在Screens中建立新序列通道作為Cloud Service的步驟{#create-new-channel}
 
@@ -44,7 +44,7 @@ ht-degree: 1%
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > **建立**&#x200B;精靈在建立通道時提供不同類型的範本。 如需詳細資訊，請參閱建立精靈中可用的範本區段。
+   > **建立**&#x200B;精靈在建立通道時提供不同類型的範本。 如需詳細資訊，請參閱建立精靈中的[可用範本](#available-templates)區段。
 
 1. 輸入序列通道的名稱，例如&#x200B;**LoopingChannelOne**，然後按一下&#x200B;**Create**。
 
@@ -52,7 +52,7 @@ ht-degree: 1%
 
    您現在會在AEM Screens專案的「管道」資料夾中看到&#x200B;**LoopingChannelOne**。
 
-1. 建立管道後，您現在可以新增內容至管道。 請參閱[將內容新增至頻道](#add-content) ，了解如何將資產（影像/視訊）新增至頻道。
+   建立管道後，您現在可以新增內容至管道。 請參閱[將內容新增至頻道](#add-content) ，了解如何將資產（影像/視訊）新增至頻道。
 
 ## 管理通道{#managing-channels}
 
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 若要新增或編輯頻道中的內容，請遵循下列步驟：
 
-1. 選擇要編輯的通道，如下圖所示。 按一下動作列左上角的「**編輯**」以開啟編輯器。
+1. 選擇要編輯的通道，如下圖所示。 按一下動作列左上角的&#x200B;**Edit**&#x200B;以開啟編輯器。
 
    ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 
 ## 建立嚮導{#available-templates}中的可用模板
 
-使用&#x200B;**Create**&#x200B;通道精靈時，可使用下列範本，例如：
+使用&#x200B;**Create**&#x200B;通道嚮導時，可使用以下模板：
 
 | 可用範本 | 說明 |
 |--- |--- |
