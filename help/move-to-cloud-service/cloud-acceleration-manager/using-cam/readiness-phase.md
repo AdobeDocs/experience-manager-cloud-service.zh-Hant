@@ -4,9 +4,9 @@ description: 本頁概述Cloud Acceleration Manager的整備階段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 3%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 3%
    * 使用詳細資訊圖示來檢視每個報表結果的詳細資訊
    * 上傳新報表會重設所有評估
 
-## 使用計畫和設定{#planning-setup}
+## 使用計畫和設定卡{#planning-setup}
 
 請按照本節，探索「規劃和設定」活動卡。
 
