@@ -4,9 +4,9 @@ description: 本頁概略說明如何使用和開始使用Cloud Acceleration Man
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a8e6b9e2c001c135bf2739ef873e75c22b8c025e
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '480'
 ht-degree: 1%
 
 ---
@@ -54,14 +54,41 @@ Cloud Acceleration Manager(CAM)的登錄頁面可讓您建立和編輯多個專�
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-3.png)
 
-   選取專案並將游標暫留在專案上，以編輯或刪除專案，如下圖所示。
+1. 專案現在已建立，並顯示在&#x200B;**Cloud Acceleration Manager**&#x200B;登陸頁面上。
 
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing.png)
 
 1. 按一下專案卡以輸入專案。 這會帶您前往專案登陸頁面。
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
 
+## 管理項目{#manage-project}
+
+您可以編輯專案名稱、說明、縮圖影像或刪除專案。
+
+### 編輯項目{#edit-project}
+
+請依照下列步驟編輯您的專案：
+
+1. 選取專案並將游標暫留在專案上，然後按一下鉛筆圖示以編輯專案，如下圖所示。
+
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. 您可以編輯專案名稱、說明，甚至上傳新影像，或從&#x200B;**Edit project**&#x200B;對話方塊編輯現有影像。
+
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-edit.png)
+
+1. 按一下&#x200B;**Update**&#x200B;以提交更改。
+
+### 刪除項目{#delete-project}
+
+請依照下列步驟刪除您的專案：
+
+1. 選取專案並暫留在專案上，然後按一下貯體圖示以刪除專案，如下圖所示。
+
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. 按一下&#x200B;**Delete**&#x200B;以確認步驟。
 
 ## 下一步是什麼{#whats-next}
 
