@@ -4,9 +4,9 @@ description: 本頁概述Cloud Acceleration Manager的實作階段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
+source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '563'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,14 @@ ht-degree: 2%
 * [AEM as a Cloud Service部署](#aem-as-a-cloud-service-deployment)
 * [內容轉移](#content-transfer)
 
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
+
+按一下您的專案卡片以開啟專案登錄頁面，並導覽至&#x200B;**實作**&#x200B;區段，如下圖所示。
+
+![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
+
+>[!NOTE]
+>請參考[在Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)中建立和管理專案以深入了解。
+
 
 ## 使用本地開發卡{#local-development}
 
@@ -62,13 +69,13 @@ AEM as a Cloud Service部署卡提供所有相關內容，可協助您將程式�
 
 請依照以下小節，探索AEM as a Cloud Service部署卡活動卡：
 
-1. 按一下&#x200B;**AEM as a Cloud Service部署**&#x200B;卡中的&#x200B;**View**&#x200B;按鈕。
+1. 按一下&#x200B;**AEM as a Cloud Service部署**&#x200B;活動卡中的&#x200B;**View**&#x200B;按鈕。
 
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-4.png)
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. 隨即顯示內容輪播，其中包含移轉歷程這個階段的相關資訊。
 
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
 
 
 ## 使用內容轉移卡{#content-transfer}
@@ -77,17 +84,25 @@ AEM as a Cloud Service部署卡提供所有相關內容，可協助您將程式�
 
 請依照以下章節，探索「內容轉移」活動卡：
 
-1. 按一下&#x200B;**Local Development**&#x200B;卡片中的&#x200B;**View**&#x200B;按鈕。
+1. 按一下&#x200B;**內容轉移**&#x200B;活動卡上的&#x200B;**檢視**&#x200B;按鈕。
 
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-4.png)
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
 
 1. 隨即顯示內容輪播，其中包含移轉歷程這個階段的相關資訊。
 
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
 
->[!NOTE]
->使用內容轉移工具之前，請先檢閱[必要條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en)及[最佳作法和准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en)。
+   >[!NOTE]
+   >使用內容轉移工具之前，請先檢閱[必要條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en)及[最佳作法和准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en)。
 
-提供全新的內容轉移工具電腦，可估計完成內容轉移活動可能需要多久的時間。 您可以使用內容存放庫大小滑桿來選取套用至專案的大小。 提取和擷取階段的傳輸時間會有所不同。 要估計AEM儲存庫的大小，可以運行`http://HOST:PORT/etc/reports/diskusage.html`下的「磁碟使用情況」報告。
+### 預估內容轉移工具活動 {#calculating}
+
+提供全新的內容轉移工具電腦，可估計完成內容轉移活動可能需要多久的時間。 您可以使用內容存放庫大小滑桿來選取套用至專案的大小。 提取和擷取階段的傳輸時間會有所不同。
+
+要估計AEM儲存庫的大小，可以運行`http://HOST:PORT/etc/reports/diskusage.html`下的「磁碟使用情況」報告。
 
 您也可以使用`path`參數（例如`http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`）來估計特定存放庫路徑的大小。
+
+## 下一步是什麼{#whats-next}
+
+一旦您了解如何登入Cloud Acceleration Manager及如何運用「實作」階段，您現在就可以繼續檢閱下一個步驟：使用「GoLive」階段。
