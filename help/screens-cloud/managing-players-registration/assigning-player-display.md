@@ -4,9 +4,9 @@ description: 本頁面說明如何將播放器指派給Screens中的顯示器，
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '229'
 ht-degree: 1%
 
 ---
@@ -34,9 +34,11 @@ ht-degree: 1%
 
    ![影像](/help/screens-cloud/assets/player/register-player8.png)
 
-1. 在按一下「選擇」後，您將在&#x200B;**ASSIGNED DISPLAY**&#x200B;面板下看到指派的顯示。
+## 內容播放{#content-playback}
 
-   現在，顯示畫面已指派給您的播放器，頻道將開始播放內容。 播放器現在應該下載並開始播放內容。 **恭喜！**
+將顯示畫面指派給播放器後（如前一節所示），您會在&#x200B;**ASSIGNED DISPLAY**&#x200B;面板下看到指派的顯示畫面。
 
-   ![影像](/help/screens-cloud/assets/player/output.gif)
+現在，顯示畫面已指派給您的播放器，頻道將開始播放內容。 播放器現在應該下載並開始播放內容。 **恭喜！**
+
+![影像](/help/screens-cloud/assets/player/output.gif)
 
