@@ -4,9 +4,9 @@ description: 本頁面說明如何在Screens中以Cloud Service形式建立專�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7e1e1a96b4657c536b999b6deaccfe8d537263bd
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 目標 {#objective}
 
-本檔案可協助您了解如何在Screens內容提供者中為您的AEM Screens專案建立新專案。 閱讀後，您應該就範圍而言，能夠建立AEM Screens專案。
+本檔案可協助您了解如何在Screens內容提供者中建立新的AEM Screens專案。 閱讀後，您應該就範圍而言，能夠建立AEM Screens專案。
 
 ## 建立新項目{#create-new-project}
 
@@ -40,13 +40,9 @@ ht-degree: 0%
    >[!NOTE]
    >根據您選擇的標題，在&#x200B;**建立螢幕專案**&#x200B;對話方塊中自動填入&#x200B;**名稱**&#x200B;欄位。
 
-1. 按一下&#x200B;**Save**。 您會在「螢幕內容提供者」中看到Screens專案，標題為&#x200B;*FirstDigitalExperience*。
+1. 按一下&#x200B;**Save**。 您會在「螢幕內容提供者」中看到Screens專案，標題為&#x200B;*FirstDigitalExperience*。 您會在「Screens內容提供者」中看到您的專案，其中包含兩個資料夾，標題為&#x200B;**Locations**&#x200B;和&#x200B;**Channels**。
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
-
-1. 您會在「Screens內容提供者」中看到您的專案，其中包含兩個資料夾，標題為&#x200B;**Locations**&#x200B;和&#x200B;**Channels**。
-
-   ![](/help/screens-cloud/assets/create-content/create-screens-project4.png)
 
    現在您已設定AEM Screens專案，可以開始將管道和位置新增至專案。
 
