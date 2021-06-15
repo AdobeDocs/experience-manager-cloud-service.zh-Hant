@@ -4,9 +4,9 @@ description: 本頁概述Cloud Acceleration Manager的整備階段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
+source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '349'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,12 @@ ht-degree: 3%
 * [最佳實務分析](#best-practices-analysis)
 * [規劃和設定](#planning-setup)
 
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+按一下您的專案卡片以開啟專案登錄頁面，並導覽至&#x200B;**Readiness**&#x200B;區段，如下圖所示。
+
+![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+>[!NOTE]
+>請參考[在Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)中建立和管理專案以深入了解。
 
 ## 使用最佳實務分析卡{#best-practices-analysis}
 
