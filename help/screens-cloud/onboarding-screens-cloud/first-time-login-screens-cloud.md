@@ -4,9 +4,9 @@ description: 本頁面說明以Screens作為Cloud Service入門的前幾個步�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0cc505b7ed96ddf81cae1f92d50d6aa0c9eb7db8
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ AMS-Screens-Cloud Feature Pack可透過軟體發佈入口網站取得。
 
 ## 將使用者新增至Adobe Admin Console {#admin-console}
 
-布建AdobeIdentity Management系統(IMS)組織ID後，您現在可以在[Adobe Admin Console](https://adminconsole.adobe.com/)上架。 請參閱[Adobe Admin Console使用者](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html)以進一步了解如何將使用者新增至Admin Console。
+布建AdobeIdentity Management系統(IMS)組織ID後，您現在可以存取[Adobe Admin Console](https://adminconsole.adobe.com/)。 請參閱[Adobe Admin Console使用者](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html)以進一步了解如何將使用者新增至Admin Console。
 
 >[!NOTE]
 >使用者可存取AEMCloud Service產品設定檔，以便使用Adobe ID或Federated ID登入AEM。
 
 ## 下一步是什麼{#whats-next}
 
-現在您已布建IMS組織ID並以使用者身分新增至Adobe Admin Console，您可以在Cloud Manager中將Screens附加元件新增至新的或現有的ScreensCloud Service。
+現在您已布建IMS組織ID並以使用者身分新增至Adobe Admin Console，您可以將[Screens附加元件新增至新方案](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)或[現有方案](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md)，以供Screens在Cloud Manager中作為Cloud Service使用。
