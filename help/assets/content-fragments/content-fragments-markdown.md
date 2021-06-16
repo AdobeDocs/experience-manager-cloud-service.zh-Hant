@@ -4,9 +4,9 @@ description: 了解內容片段編輯器如何使用Markdown語法，輕鬆建�
 feature: 內容片段
 role: Business Practitioner
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '524'
 ht-degree: 4%
 
 ---
@@ -165,7 +165,7 @@ ht-degree: 4%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-若要指出程式碼的跨度，請以反勾號(&#39;)括住。 與預格式化的代碼塊不同，代碼範圍指示正常段落中的代碼。
+若要指出程式碼的範圍，請以反勾號括住(&amp;grave;)。 與預格式化的代碼塊不同，代碼範圍指示正常段落中的代碼。
 
 例如：
 
