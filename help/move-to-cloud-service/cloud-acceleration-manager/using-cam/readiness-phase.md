@@ -4,9 +4,9 @@ description: 本頁概述Cloud Acceleration Manager的整備階段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '441'
 ht-degree: 3%
 
 ---
@@ -21,12 +21,18 @@ ht-degree: 3%
 * [最佳實務分析](#best-practices-analysis)
 * [規劃和設定](#planning-setup)
 
-按一下您的專案卡片以開啟專案登錄頁面，並導覽至&#x200B;**Readiness**&#x200B;區段，如下圖所示。
+請依照下列步驟導覽至整備階段：
 
-![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+1. 按一下您的專案卡，開啟專案登陸頁面。
 
->[!NOTE]
->請參考[在Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)中建立和管理專案以深入了解。
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+
+1. 導覽至&#x200B;**Readiness**&#x200B;區段，如下圖所示。
+
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+   >[!NOTE]
+   >請參考[在Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)中建立和管理專案以深入了解。
 
 ## 使用最佳實務分析卡{#best-practices-analysis}
 
@@ -49,12 +55,35 @@ ht-degree: 3%
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
-1. 查看並探索CAM中的「最佳做法分析」儀表板。
+1. 上傳新報表後，您會看到「最佳實務分析」報表。
 
-   * 按一下每張卡片以開啟其相關聯的索引標籤
-   * 您可以為所有報表標籤建立書籤（包括篩選），以供共用或日後擷取
-   * 使用詳細資訊圖示來檢視每個報表結果的詳細資訊
-   * 上傳新報表會重設所有評估
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
+1. 查看並探索CAM中的「最佳做法分析」儀表板。 如需詳細資訊，請參閱以下的[檢閱最佳實務分析報表](#analysis-report)一節。
+
+### 檢閱最佳實務分析報表{#analysis-report}
+
+探索報表頁面中可用的下列卡片：
+
+>[!NOTE]
+>上傳新報表會重設所有評估。
+
+1. **報表屬性**:此卡片提供報表屬性中的資訊，例如報表日期、持續時間、篩選器、上傳日期等。
+
+1. **報表概述**:
+
+   此卡片提供報告結果
+
+1. **最佳做法評估**
+
+1. **遷移複雜性評估**
+
+   >[!NOTE]
+   > 此外，您還具備以下功能：
+   >* 按一下每個卡片以開啟其關聯的標籤
+   >* 將所有報表標籤加入書籤（包括篩選），以便共用或日後擷取
+   >* 使用「詳細資料」圖示來檢視每個報表結果的詳細資料
+
 
 ## 使用計畫和設定卡{#planning-setup}
 
