@@ -4,10 +4,10 @@ description: 本頁概述Cloud Acceleration Manager的整備階段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
+source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 3%
+source-wordcount: '511'
+ht-degree: 4%
 
 ---
 
@@ -68,6 +68,8 @@ ht-degree: 3%
 
 探索「最佳實務分析報表」頁面中可用的下列資訊卡：
 
+![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
 >[!NOTE]
 > 使用每張卡片，您可以：
 >* 按一下每個卡片以開啟其關聯的標籤
@@ -77,11 +79,26 @@ ht-degree: 3%
 
 #### 報表屬性 {#report-properties}
 
-此卡片提供報表屬性中的資訊，例如報表日期、持續時間、篩選器、上傳日期等。
+此卡片提供報表屬性的相關資訊，例如報表日期、持續時間、篩選器、上傳日期，以及Adobe Experience Manager(AEM)詳細資料。
+
+![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### 報表概述{#report-overview}
 
 此卡片提供報告結果
+
+![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+
+按一下此報告會開啟&#x200B;**Report**&#x200B;標籤，如下圖所示。
+
+![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+
+您可以根據重要性、子類型或計數來篩選報表。
+
+![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+
+>[!NOTE]
+>請參閱[解譯Best Practices Analyzer報表](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) ，了解調查結果類別和重要性層級。
 
 #### 最佳做法評估{#best-practices-assessment}
 
