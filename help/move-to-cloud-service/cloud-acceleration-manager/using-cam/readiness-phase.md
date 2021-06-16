@@ -4,9 +4,9 @@ description: 本頁概述Cloud Acceleration Manager的整備階段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
+source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -61,28 +61,35 @@ ht-degree: 3%
 
 1. 查看並探索CAM中的「最佳做法分析」儀表板。 如需詳細資訊，請參閱以下的[檢閱最佳實務分析報表](#analysis-report)一節。
 
+   >[!NOTE]
+   >上傳新報表會重設所有評估。
+
 ### 檢閱最佳實務分析報表{#analysis-report}
 
-探索報表頁面中可用的下列卡片：
+探索「最佳實務分析報表」頁面中可用的下列資訊卡：
 
 >[!NOTE]
->上傳新報表會重設所有評估。
+> 使用每張卡片，您可以：
+>* 按一下每個卡片以開啟其關聯的標籤
+>* 將所有報表標籤加入書籤（包括篩選），以便共用或日後擷取
+>* 使用「詳細資料」圖示來檢視每個報表結果的詳細資料
 
-1. **報表屬性**:此卡片提供報表屬性中的資訊，例如報表日期、持續時間、篩選器、上傳日期等。
 
-1. **報表概述**:
+#### 報表屬性 {#report-properties}
 
-   此卡片提供報告結果
+此卡片提供報表屬性中的資訊，例如報表日期、持續時間、篩選器、上傳日期等。
 
-1. **最佳做法評估**
+#### 報表概述{#report-overview}
 
-1. **遷移複雜性評估**
+此卡片提供報告結果
 
-   >[!NOTE]
-   > 此外，您還具備以下功能：
-   >* 按一下每個卡片以開啟其關聯的標籤
-   >* 將所有報表標籤加入書籤（包括篩選），以便共用或日後擷取
-   >* 使用「詳細資料」圖示來檢視每個報表結果的詳細資料
+#### 最佳做法評估{#best-practices-assessment}
+
+此卡片提供
+
+#### 遷移複雜性評估{#migration-complexity-assessment}
+
+此卡提供
 
 
 ## 使用計畫和設定卡{#planning-setup}
