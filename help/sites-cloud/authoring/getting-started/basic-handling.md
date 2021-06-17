@@ -2,9 +2,9 @@
 title: 基本處理
 description: 熟悉如何導覽AEM及其基本用途
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
 workflow-type: tm+mt
-source-wordcount: '2864'
+source-wordcount: '2876'
 ht-degree: 6%
 
 ---
@@ -71,7 +71,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 | 專案 | 專案主控台可讓您直接存取您的專案。 [專案是可](/help/sites-cloud/authoring/projects/overview.md) 用來建立團隊的虛擬控制面板。然後，您可以讓該團隊存取資源、工作流程和任務，讓人員能夠朝著共同目標努力。 |
 | 網站 | Sites主控台可讓您[建立、檢視及管理在AEM執行個體上執行的網站](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)。 您可以透過此主控台建立、編輯、複製、移動和刪除頁面、啟動工作流程及發佈頁面。 |
 | 體驗片段 | [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)是獨立的體驗，可跨管道重複使用，且有變數，因此可避免重複複製和貼上體驗或體驗的某些部分。 |
-| 資產 | Assets主控台可讓您匯入和管理數位資產，例如影像、影片、檔案和音訊檔案。 然後，同一AEM執行個體上執行的任何網站都可以使用這些資產。<!--add some kind of assets link--> |
+| 資產 | Assets主控台可讓您匯入和管理[數位資產，例如影像、視訊、檔案和音訊檔案](/help/assets/overview.md)。 然後，同一AEM執行個體上執行的任何網站都可以使用這些資產。 您也可以從Assets主控台建立和管理[內容片段](/help/assets/content-fragments/content-fragments.md)。 |
 | 個性化 | 此控制台提供用於[創作目標內容和呈現個人化體驗的工具框架。](/help/sites-cloud/authoring/personalization/overview.md) |
 
 ## 工具面板{#tools-panel}
