@@ -3,7 +3,7 @@ title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 7b8b9ca2881d07482888ac2a53b8c3bdff02b6dd
+source-git-commit: cf42e530136d5eb8afe7204ae0af1353b1f31cbd
 workflow-type: tm+mt
 source-wordcount: '4247'
 ht-degree: 6%
@@ -34,9 +34,9 @@ Dispatcher工具是整體AEM的一部分，作為Cloud ServiceSDK，並提供：
 
 ## 下載和解壓縮工具{#extracting-the-sdk}
 
-[AEM as a Dispatcher SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)的一部分，可從[Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)入口網站的zip檔案下載Dispatcher工具。 該新Dispatcher工具版本中可用的任何新設定，皆可用來部署至在雲端或更新版本中執行該AEM版本的雲端環境。
+[AEM as a Dispatcher SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)的一部分，可從[Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)入口網站的zip檔案下載Dispatcher工具。 該新Dispatcher工具版本中可用的任何新設定，皆可部署至在雲端或更新版本中執行該AEM版本的雲端環境。
 
-將SDK解壓縮，此SDK捆綁了macOS/Linux和Windows的Dispatcher工具。
+將SDK解壓縮，此SDK會結合macOS、Linux和Windows的Dispatcher工具。
 
 **對於macOS/Linux**，請讓Dispatcher工具工件可執行並執行它。它會自行擷取您儲存Dispatcher工具的目錄下的Dispatcher工具檔案（其中`version`是Dispatcher工具的版本）。
 
@@ -112,7 +112,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 * `conf.d/variables/custom.vars`
 
-此檔案包含自`.vhost`檔案內。 您可以在此位置放入Apache變數的定義。
+此檔案包含自`.vhost`檔案內。 您可以在此位置為Apache變數新增定義。
 
 * `conf.d/variables/global.vars`
 
@@ -366,7 +366,7 @@ Apache虛擬主機配置中有兩種類型的檔案，可以指定為包括：�
 **檢測到已棄用的配置佈局，啟用相容性模式**
 
 此訊息指出您的設定已棄用第1版配置，包含完整
-具有`ams_`前置詞的Apache配置和檔案。 雖然仍支援向後
+具有`ams_`前置詞的Apache配置和檔案。 雖然仍支援回溯
 相容性，您應切換至新版面。
 
 ## Dispatcher設定語法的本機驗證，以便apache httpd可以啟動{#local-validation}
