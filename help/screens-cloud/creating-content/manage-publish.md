@@ -4,9 +4,9 @@ description: 本頁說明如何以Cloud Service形式在Screens中發佈管道�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: 3da578d544ab82c61bdfecc0b470b1cd3315f996
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 ## 目標 {#objective}
 
-本檔案可協助您了解如何在Screens內容提供者中為您的AEM Screens專案建立新專案。 閱讀後，您應該能夠：
+本檔案可協助您了解將編輯的內容發佈至Screens服務提供者和播放器。 閱讀後，您應該能夠：
 
-* 了解如何發佈管道。
+* 了解如何發佈管道
 * 按範圍管理出版物
 
 ## 發佈通道{#publish-channel}的步驟
