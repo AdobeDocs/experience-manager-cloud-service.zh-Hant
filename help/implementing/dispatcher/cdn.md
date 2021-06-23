@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 6c48b25d78ecbf3e30f42b2c2e69687b1f3094b8
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '891'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ AEM asCloud Service隨附內建的CDN。 其主要用途，就是透過從瀏覽
 
 AEM管理的CDN將可滿足大部分客戶的效能和安全性需求。 對於發佈層級，客戶可選擇從自己需要管理的CDN指向該層級。 我們將根據符合特定必要條件（包括但不限於與其CDN廠商進行舊版整合且難以放棄的客戶），逐個允許這項操作。
 
-## AEM Managed CDN {#aem-managed-cdn}
+## AEM Managed CDN  {#aem-managed-cdn}
 
 請依照下節所述，使用Cloud Manager自助服務UI，透過現成可用的AEM CDN來準備內容傳遞：
 
@@ -70,11 +70,15 @@ AEM管理的CDN將可滿足大部分客戶的效能和安全性需求。 對於�
 >
 >管理自己CDN的客戶應確保傳送至AEM CDN的標題完整無缺。 例如，建議客戶清除所有`X-Forwarded-*`標題，並將其設為已知和控制的值。 例如，`X-Forwarded-For`應包含用戶端的IP位址，而`X-Forwarded-Host`應包含網站的主機。
 
+>[!NOTE]
+>
+>沙箱方案環境不支援客戶提供的CDN。
+
 由於額外的躍點，可能會導致效能點擊較小，但從客戶CDN到AEM管理CDN的躍點可能會很有效。
 
 請注意，此客戶CDN設定支援發佈層級，但不支援在製作層級之前。
 
-## 地理位置標題{#geo-headers}
+## 地理位置標題 {#geo-headers}
 
 AEM管理的CDN會透過下列方式將標題新增至每個請求：
 
