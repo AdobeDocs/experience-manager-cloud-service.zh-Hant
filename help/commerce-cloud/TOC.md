@@ -3,17 +3,17 @@ sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM內容與商務作為Cloud Service
 breadcrumb-title: AEM 內容和商務指南
 user-guide-description: 了解如何使用及管理 Experience Manager Content and Commerce as a Cloud Service。
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 4c6f7cafba4be20d7501fbe33b38c843a638305c
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 46%
+source-wordcount: '105'
+ht-degree: 43%
 
 ---
 
 
 # AEM Content and Commerce {#content-and-commerce}
 
-+ [AEM Content and Commerce](/help/commerce-cloud/home.md)
++ [AEM內容與商務](/help/commerce-cloud/home.md)
 + [AEM內容與商務作為Cloud Service的重大變更](changes.md)
 + [簡介和概述](introduction.md)
 + Integrations {#integrations}
@@ -24,6 +24,7 @@ ht-degree: 46%
    + 管理{#administering}
       + [多商店設定](configuring/multi-store-setup.md)
       + [多範本使用](configuring/multi-template-usage.md)
+      + [使產品資料與相關內容更豐富](configuring/enrich-product-associated-content.md)
       + [配置SEO的URL](configuring/advanced-url-configuration.md)
       + [快取選項](configuring/caching.md)
    + 開發 {#developing}
