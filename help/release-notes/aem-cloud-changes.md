@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 description: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 71f05dda4ccd52c66bbf1d9025900976f07227f3
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 85%
+source-wordcount: '810'
+ht-degree: 82%
 
 ---
 
@@ -114,10 +114,4 @@ AEM 雲端服務預設啟用 HTTP 加速功能，包括適用於作者與發佈�
 
 ## 資產處理與傳送 {#asset-handling}
 
-資產上傳、處理和下載作業已在Assets中最佳化，以提供更有效率的Cloud Service，同時可提升擴充功能，並加快上傳和下載速度。 然而，這可能會影響部分現有的自訂程式碼。
-
-* 舊版 AEM 已不提供預設的工作流程 **DAM Asset Update**。
-* 若要&#x200B;**在不轉換的情況下**&#x200B;傳送二進位的網站元件，應使用直接下載。
-   * Sling GET servlet 已變更為預設執行此動作。
-* **在轉換的情況下**&#x200B;傳送二進位的網站元件 (例如透過 servlet 調整大小) 仍可繼續運作。
-* 若是透過封裝管理程式傳入資產，須使用 Assets 介面中的&#x200B;**「重新處理資產」**&#x200B;動作，手動重新處理。
+資產上傳、處理和下載作業會在Experience Manager資產中以Cloud Service方式最佳化。 它現在更有效率，可讓您擴充空間，並加快上傳和下載速度。 此外，這也會影響現有的自訂程式碼和某些操作。 請參閱[對 [!DNL Assets]](/help/assets/assets-cloud-changes.md)的變更。
