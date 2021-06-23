@@ -10,9 +10,9 @@ feature: 商務整合架構
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 4c6f7cafba4be20d7501fbe33b38c843a638305c
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
@@ -26,3 +26,7 @@ ht-degree: 0%
 您可以透過下列資源找到有關本主題的詳細資訊：
 
 - [AEM CIF核心元件 — 多目錄頁面設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+
+## 相關資源
+
+您也可以動態鎖定頁面的特定區域，並重複使用相同的範本。 了解如何[使產品資料與相關AEM內容](./enrich-product-associated-content.md)更豐富。
