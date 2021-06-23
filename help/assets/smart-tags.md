@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 智慧標籤，標籤
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 ---
 
 
-# 將智慧標籤新增至資產以改善搜尋體驗{#smart-tag-assets-for-faster-search}
+# 將智慧標籤新增至資產以改善搜尋體驗 {#smart-tag-assets-for-faster-search}
 
 處理數位資產的組織，在資產中繼資料中越來越多地使用分類法控制的辭匯。 基本上，它包含員工、合作夥伴和客戶通常用來參考和搜尋其數位資產的關鍵字清單。 使用分類控制的辭匯來標籤資產，以確保在搜尋中輕鬆識別及擷取資產。
 
@@ -25,7 +25,7 @@ ht-degree: 6%
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## 支援的資產類型{#smart-tags-supported-file-formats}
+## 支援的資產類型 {#smart-tags-supported-file-formats}
 
 您可以標籤下列類型的資產：
 
@@ -61,13 +61,13 @@ ht-degree: 6%
 * [標籤數位資產](#tag-assets)。
 * [管理標籤和搜尋](#manage-smart-tags-and-searches)。
 
-## 了解標籤模型和准則{#understand-tag-models-guidelines}
+## 了解標籤模型和准則 {#understand-tag-models-guidelines}
 
 標籤模型是一組相關標籤，它們與被標籤影像的各種視覺方面相關聯。 標籤與影像的明顯不同的視覺方面相關，以便當應用時，標籤有助於搜索特定類型的影像。 例如，鞋類集合可以有不同的標籤，但所有標籤都與鞋類相關，且可屬於相同的標籤模型。 套用時，標籤有助於尋找不同類型的鞋，例如依顏色、設計或使用方式。 要了解[!DNL Experience Manager]中訓練模型的內容表示，請將訓練模型視為由一組手動添加的標籤和每個標籤的示例影像組成的頂級實體。 每個標籤皆可專門套用至影像。
 
 在建立標籤模型並訓練服務之前，請先識別一組唯一標籤，以最好地描述業務環境中影像中的物件。 確定已組織集中的資產符合[訓練准則](#training-guidelines)。
 
-### 培訓指南{#training-guidelines}
+### 培訓准則 {#training-guidelines}
 
 確保訓練集中的影像符合以下准則：
 
@@ -109,7 +109,7 @@ ht-degree: 6%
 
 您無法撤消培訓。 上述准則應可協助您選擇要訓練的良好影像。
 
-## 訓練自訂標籤的模型{#train-model}
+## 訓練自訂標籤的模型 {#train-model}
 
 若要建立並訓練業務特定標籤的模型，請遵循下列步驟：
 
@@ -128,7 +128,7 @@ ht-degree: 6%
 
 *圖：訓練工作流程步驟，以訓練標籤模型。*
 
-### 查看培訓狀態並報告{#training-status}
+### 查看培訓狀態和報告 {#training-status}
 
 若要檢查智慧標籤服務是否在資產訓練集的標籤上接受訓練，請從報表控制台檢閱訓練工作流程報表。
 
@@ -175,7 +175,7 @@ ht-degree: 6%
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## 使用智慧標籤標籤標籤資產{#tag-assets}
+## 使用智慧標籤標籤資產 {#tag-assets}
 
 上傳時，所有支援的資產類型都會自動加上[!DNL Experience Manager Assets]標籤。 預設會啟用標籤。 [!DNL Experience Manager] 以近乎即時的方式套用適當的標籤。  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
@@ -183,7 +183,7 @@ ht-degree: 6%
 
 對於文字型資產，智慧標籤的功效不取決於資產中的文字數量，而取決於資產文字中出現的相關關鍵字或實體。 對於文字型資產，智慧標籤是顯示在文字中的關鍵字，但是最能說明資產的關鍵字。 對於支援的資產，[!DNL Experience Manager]已擷取文字，然後加以索引並用於搜尋資產。 不過，與完整搜尋索引相比，基於文字中關鍵字的智慧標籤可提供專用、結構化和較高優先順序的搜尋面向，用來改善資產探索。
 
-## 管理智慧標籤和資產搜尋{#manage-smart-tags-and-searches}
+## 管理智慧標籤和資產搜尋 {#manage-smart-tags-and-searches}
 
 您可以組織智慧標籤，移除可能指派給您品牌資產的任何不正確標籤，以便僅顯示最相關的標籤。
 
@@ -207,7 +207,7 @@ ht-degree: 6%
 
 1. 導覽至資產的[!UICONTROL 屬性]頁面。 請注意，您促銷的標籤被指派為高關聯性，因此在搜尋結果中會顯示得較高。
 
-### 了解使用智慧標籤{#understand-search}的[!DNL Experience Manager]搜尋結果
+### 了解使用智慧標籤的[!DNL Experience Manager]搜尋結果 {#understand-search}
 
 預設情況下， [!DNL Experience Manager]搜索將搜索詞與`AND`子句組合。 使用智慧標籤不會變更此預設行為。 使用智慧標籤會新增`OR`子句，以尋找套用的智慧標籤中的任何搜尋詞。 例如，請考慮搜尋`woman running`。 依預設，中繼資料中只有`woman`或只有`running`關鍵字的資產不會出現在搜尋結果中。 不過，使用智慧標籤標示為`woman`或`running`的資產會顯示在這類搜尋查詢中。 搜索結果是，
 
