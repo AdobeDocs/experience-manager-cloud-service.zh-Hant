@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: de756a469f2be7b4f93d647b500cd4e8dc046342
+source-git-commit: 35137687e51d54454d3a4b7aed247a28d98dc291
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ AEM Commerce as a Cloud Service的上線程式為兩個步驟：
 
 有兩個選項可設定端點：
 
-### 透過Cloud Manager UI（預設）{#cm-ui}
+### 透過Cloud Manager UI（預設） {#cm-ui}
 
 您可以使用「環境詳細資訊」頁面上的對話方塊來完成此作業。 查看啟用Commerce的程式的此頁時，如果當前未配置終結點，則將顯示一個按鈕：
 
@@ -61,7 +61,7 @@ AEM Commerce as a Cloud Service的上線程式為兩個步驟：
 
 ![CM環境資訊](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### 通過Adobe I/OCLI {#adobe-cli}
+### 通過Adobe I/OCLI  {#adobe-cli}
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -128,6 +128,9 @@ CIF附加元件和[CIF核心元件](https://github.com/adobe/aem-core-cif-compon
    >
    > Adobe商務(Magento)2.4.2已推出UID支援。請僅在您的商務後端支援2.4.2版或更新版本的GraphQL架構時啟用。
 - 目錄根類別標識符 — 儲存目錄根的標識符（UID或ID）
+   >[!CAUTION]
+   >
+   > 從CIF核心元件2.0.0版開始，`id`的支援已移除，並改為`uid`。 如果您的專案使用CIF核心元件2.0.0版，則必須啟用目錄UID支援，並使用有效的類別UID作為「目錄根類別識別碼」。
 
 上述組態供參考。 專案應提供自己的設定。
 
