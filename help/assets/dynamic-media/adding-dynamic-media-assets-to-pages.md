@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 feature: 資產管理
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 33d5e756379af671f345e6f4e02d4a955f73a3c9
+source-git-commit: 230c5a20696684ec69ab154f97609139dbddfea4
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3222'
 ht-degree: 5%
 
 ---
 
-# 將Dynamic Media資產新增至頁面{#adding-dynamic-media-assets-to-pages}
+# 將Dynamic Media Assets新增至頁面{#adding-dynamic-media-assets-to-pages}
 
 若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360全景媒體元件。您可以進入「配置」模式並啟用Dynamic Media元件。 接著，您將這些元件新增至頁面，並新增資產至元件。 動態媒體元件是智慧型的——他們知道您是新增影像還是視訊，而可用的設定選項也會隨之變更。
 
@@ -22,7 +22,7 @@ ht-degree: 5%
 >
 >將資產新增至[!DNL Experience Manager]中的頁面之前，請務必先發佈資產。 請參閱[發佈Dynamic Media資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-## 將Dynamic Media元件新增至頁面{#adding-a-dynamic-media-component-to-a-page}
+## 新增Dynamic Media元件至頁面 {#adding-a-dynamic-media-component-to-a-page}
 
 將3D媒體、Dynamic Media、互動式媒體、全景媒體、智慧型裁切視訊或視訊360媒體元件新增至頁面，與將元件新增至任何頁面相同。
 
@@ -51,7 +51,7 @@ ht-degree: 5%
 
 1. 完成後，在對話框的右上角，點選複選標籤以保存更改。
 
-### 啟用Dynamic Media元件{#enabling-dynamic-media-components}
+### 啟用Dynamic Media元件 {#enabling-dynamic-media-components}
 
 如果沒有可新增至頁面的Dynamic Media元件，這可能表示您必須啟用您要使用的元件。
 
@@ -79,7 +79,7 @@ ht-degree: 5%
 1. 在工具列的靠近頁面頂端的右側，從下拉式清單中，點選&#x200B;**[!UICONTROL 初始內容]**。
 1. [照常將Dynamic Media元件新](#adding-a-dynamic-media-component-to-a-page) 增至頁面。
 
-## 將Dynamic Media元件當地語系化{#localizing-dynamic-media-components}
+## 將Dynamic Media元件當地語系化 {#localizing-dynamic-media-components}
 
 您可以透過下列兩種方式之一，將Dynamic Media元件當地化：
 
@@ -93,7 +93,7 @@ ht-degree: 5%
    >
    >並非所有在&#x200B;**[!UICONTROL Language]**&#x200B;功能表中可用的語言都當前已分配令牌。
 
-## 可用的Dynamic Media元件{#dynamic-media-components}
+## 可用的Dynamic Media元件 {#dynamic-media-components}
 
 點選「**[!UICONTROL 元件]**」圖示，然後依&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;篩選時，可使用Dynamic Media元件。
 
@@ -131,7 +131,7 @@ Dynamic Media元件很智慧。 無論您新增影像或影片，您都有各種
 
 * 影像具有金字塔Tiff檔案。 在啟用Dynamic Media之前匯入的影像沒有金字塔Tiff檔案。
 
-#### 使用影像{#when-working-with-images}時
+#### 使用影像時 {#when-working-with-images}
 
 Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和混合媒體集。 您可以放大、縮小，如果適用，可以在回轉集內開啟影像，或從另一類型的集合中選取影像。
 
@@ -172,9 +172,9 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
    ![影像預設集中的裝置像素比率設定](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   另請參閱[關於裝置像素比例最佳化](/help/assets/dynamic-media/imaging-faq.md#dpr)。
 
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+   請注意，會忽略任何[!DNL Experience Manager] Dynamic Media智慧型影像處理DPR值。
 
 * **[!UICONTROL 標題]**  — 變更影像的標題。
 
@@ -190,7 +190,7 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
 * **[!UICONTROL 高度]**  — 如果影像大小固定，請輸入像素值。將此值保留為空白可讓資產最適化。
 
-#### 使用視訊{#when-working-with-video}時
+#### 使用視訊時 {#when-working-with-video}
 
 使用Dynamic Media元件將動態視訊新增至網頁。 編輯元件時，您可以選擇使用預先定義的視訊檢視器預設集來在頁面上播放視訊。
 
@@ -219,7 +219,7 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
 * **[!UICONTROL 高度]**  — 如果影像大小固定，請輸入像素值。將此值保留為空白可讓資產最適化。
 
-#### 使用智慧型裁切{#when-working-with-smart-crop}時
+#### 使用智慧型裁切時 {#when-working-with-smart-crop}
 
 使用Dynamic Media元件將智慧型裁切影像資產新增至網頁。 編輯元件時，您可以選擇使用預先定義的視訊檢視器預設集來在頁面上播放視訊。
 
@@ -251,9 +251,9 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
    ![智慧作物的裝置像素比例設定](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr). -->
+   另請參閱[關於裝置像素比例最佳化](/help/assets/dynamic-media/imaging-faq.md#dpr)。
 
-<!--   Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+   請注意，會忽略任何[!DNL Experience Manager] Dynamic Media智慧型影像處理DPR值。
 
 * **[!UICONTROL 標題]**  — 變更智慧型裁切影像的標題。
 
@@ -269,7 +269,7 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
 * **[!UICONTROL 高度]**  — 如果影像大小固定，請輸入像素值。將此值保留為空白可讓資產最適化。
 
-### 元件：互動式媒體{#interactive-media-component}
+### 元件：互動式媒體 {#interactive-media-component}
 
 互動式媒體元件適用於在這些資產上具有互動的熱點或影像地圖。 如果您有互動式影像、互動式視訊或輪播橫幅，請使用&#x200B;**[!UICONTROL 互動式媒體]**&#x200B;元件。
 
@@ -308,7 +308,7 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
 * **[!UICONTROL 顯示產品表單]**  — 依預設，未選取此值。產品表單包含任何產品變體，例如大小和顏色。 清除勾號以不顯示產品變體。
 
-### 元件：全景媒體{#panoramic-media-component}
+### 元件：全景媒體 {#panoramic-media-component}
 
 全景媒體元件用於那些為球形全景影像的資產。 這些影像提供360°的房間、屬性、位置或景觀的觀看體驗。 要使影像符合球形全景，它必須具有以下一個或兩個：
 
@@ -338,7 +338,7 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
 如果您要尋找的檢視器預設集未顯示，請核取以確認其已發佈。 請先發佈檢視器預設集，再加以使用。 請參閱[管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
-### 元件：視頻360媒體{#video-media-component}
+### 元件：影片360媒體 {#video-media-component}
 
 使用&#x200B;**[!UICONTROL Video 360 Media]**&#x200B;元件在您的網頁上呈現等矩形視訊。 這樣可確保房間、屬性、位置、景觀或醫療程式的沈浸式觀看體驗。
 
@@ -354,7 +354,7 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
 如果您要尋找的檢視器預設集未顯示，請核取以確認其已發佈。 請先發佈檢視器預設集，再加以使用。 請參閱[管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
-### 使用HTTP/2來傳送Dynamic Media資產{#using-http-to-delivery-dynamic-media-assets}
+### 使用HTTP/2傳送Dynamic Media資產 {#using-http-to-delivery-dynamic-media-assets}
 
 HTTP/2是全新、更新的Web通訊協定，可改善瀏覽器和伺服器的通訊方式。 它提供了更快的資訊傳輸，並降低了所需的處理能力。 Dynamic Media資產的傳送現在可透過HTTP/2，提供更理想的回應和載入時間。
 
