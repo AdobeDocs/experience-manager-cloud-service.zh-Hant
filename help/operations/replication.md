@@ -2,9 +2,9 @@
 title: 複寫
 description: 散佈 和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
+source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '1071'
 ht-degree: 1%
 
 ---
@@ -17,13 +17,13 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 >
 >如需詳細資訊，請參閱[分送](/help/core-concepts/architecture.md#content-distribution) 。
 
-## 發佈內容的方法{#methods-of-publishing-content}
+## 發佈內容的方法 {#methods-of-publishing-content}
 
-### 快速取消發佈 — 計畫取消發佈{#publish-unpublish}
+### 快速取消/發佈 — 計畫取消/發佈 {#publish-unpublish}
 
 作者適用的這些標準AEM功能不會隨著AEMCloud Service而變更。
 
-### 開啟和關閉時間 — 觸發配置{#on-and-off-times-trigger-configuration}
+### 開啟和關閉時間 — 觸發配置 {#on-and-off-times-trigger-configuration}
 
 從「頁面屬性」的「[基本」頁簽中可以找到&#x200B;**「開啟時間」**&#x200B;和&#x200B;**「關閉時間」**&#x200B;的其他可能性。](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
@@ -31,7 +31,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
 ![OSGi On Off觸發器配置](/help/operations/assets/replication-on-off-trigger.png)
 
-### 樹激活{#tree-activation}
+### 樹激活 {#tree-activation}
 
 要執行樹激活：
 
@@ -42,7 +42,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
    ![](assets/distribute.png "DistributeDistribute")
 4. 在路徑瀏覽器中選擇路徑，根據需要選擇添加節點、樹或刪除，然後選擇&#x200B;**Submit**
 
-### 發佈內容樹工作流{#publish-content-tree-workflow}
+### 發佈內容樹工作流 {#publish-content-tree-workflow}
 
 您可以選擇&#x200B;**工具 — 工作流 — 模型**&#x200B;並複製&#x200B;**發佈內容樹**&#x200B;現成可用的工作流模型，如下所示：
 
@@ -82,7 +82,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
 * `replicateAsParticipant` （布林值，預設值） `false`)。如果配置為`true`，則複製使用執行參與者步驟的主體的`userid`。
 * `enableVersion` （布林值，預設值） `true`)。此參數會決定是否在復寫時建立新版本。
-* `agentId` （字串值，預設值表示已使用所有啟用的代理）。建議您明確說明agentId;例如，設定它：發佈
+* `agentId` （字串值，預設值表示僅使用發佈的代理）。建議您明確說明agentId;例如，設定它：發佈。 將代理設定為`preview`將發佈到預覽服務
 * `filters` （字串值，預設值表示所有路徑皆已啟用）。可用值包括：
    * `onlyActivated`  — 只有未標示為已啟用的路徑才會啟用。
    * `onlyModified`  — 僅啟用已啟用且修改日期晚於啟用日期的路徑。
@@ -111,6 +111,66 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 **繼續支援**
 
 工作流程會以區塊處理內容，每個區塊代表要發佈之完整內容的子集。 如果由於任何原因，工作流被系統停止，它將重新啟動並處理尚未處理的區塊。 記錄陳述式會指出內容已從特定路徑繼續。
+
+### 復寫API {#replication-api}
+
+您可以使用AEM中精選的取代API作為Cloud Service來發佈內容。
+
+如需詳細資訊，請參閱[API檔案](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html)。
+
+**API的基本使用**
+
+```
+@Reference
+Replicator replicator;
+@Reference
+ReplicationStatusProvider replicationStatusProvider;
+
+....
+Session session = ...
+// Activate a single page to all agents, which are active by default
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en");
+// Activate multiple pages (but try to limit it to approx 100 at max)
+replicator.replicate(session,ReplicationActionType.ACTIVATE, new String[]{"/content/we-retail/en","/content/we-retail/de"});
+
+// ways to get the replication status
+Resource enResource = resourceResolver.getResource("/content/we-retail/en");
+Resource deResource = resourceResolver.getResource("/content/we-retail/de");
+ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
+// if you need to get the status for more more than 1 resource at once, this approach is more performant
+Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
+```
+
+**使用特定代理進行複製**
+
+如上例所示，複製資源時，將僅使用預設活動的代理。 在AEM as aCloud Service中，這只會是名為「發佈」的代理程式，將作者連接至發佈層級。
+
+為支援預覽功能，已新增名為「預覽」的新代理，預設為非作用中。 此代理程式用於將作者連接至預覽層。 如果只想通過預覽代理進行複製，則需要通過`AgentFilter`顯式選擇此預覽代理。
+
+請參閱下列範例，了解如何執行此作業：
+
+```
+private static final String PREVIEW_AGENT = "preview";
+
+ReplicationStatus beforeStatus = enResource.adaptTo(ReplicationStatus.class); // beforeStatus.isActivated == false
+
+ReplicationOptions options = new ReplicationOptions();
+options.setFilter(new AgentFilter() {
+  @Override
+  public boolean isIncluded (Agent agent) {
+    return agent.getId().equals(PREVIEW_AGENT);
+  }
+});
+// will replicate only to preview
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en", options);
+
+ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // afterStatus.isActivated == false
+ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
+```
+
+如果您未提供此類篩選器且僅使用「發佈」代理，則不會使用「預覽」代理，且復寫動作不會影響預覽層。
+
+僅當複製操作包含至少一個預設活動的代理時，才會修改資源的整體`ReplicationStatus`。 在上例中，情況並非如此，因為復寫僅使用「預覽」代理。 因此，您需要使用新的`getStatusForAgent()`方法，該方法允許查詢特定代理的狀態。 此方法也適用於「發佈」代理程式。 如果使用提供的代理完成了任何複製操作，則返回非空值。
 
 ## 疑難排解 {#troubleshooting}
 
