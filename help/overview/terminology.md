@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 簡介 - 術語
 description: Adobe Experience Manager as a Cloud Service 簡介 - 術語。
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 100%
+source-wordcount: '345'
+ht-degree: 97%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 100%
 |---|---|
 | Adobe Pipeline | 承接作者發佈的內容並進一步發佈的機制。 |
 | AEM 作者階層 | 說明 Sites 和 Assets 的製作環境。 |
+| AEM預覽層 | 說明Sites的預覽環境。 |
 | AEM 發佈階層 | 說明 Sites 的發佈環境。 |
 
 
