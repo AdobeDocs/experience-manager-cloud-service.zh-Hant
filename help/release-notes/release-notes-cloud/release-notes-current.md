@@ -2,15 +2,15 @@
 title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f447303d3618eb2e9ea38873c88ed04280670218
+source-git-commit: 344a42f31444d30e9304b3a2198b1a4df17aa9c0
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1663'
 ht-degree: 2%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] as aCloud Service{#release-notes}的最新發行說明
+# [!DNL Adobe Experience Manager]作為Cloud Service的最新發行說明 {#release-notes}
 
 以下章節概述[!DNL Experience Manager]作為Cloud Service的目前（最新）版本的一般發行說明。
 
@@ -26,13 +26,13 @@ ht-degree: 2%
 [!DNL Adobe Experience Manager]作為Cloud Service2021.5.0的發行日期為2021年5月27日。
 下列版本(2021.6.0)將於2021年6月24日發行。
 
-## 發行視頻{#release-video}
+## 發行影片 {#release-video}
 
 查看2021年5月[發行概述](https://video.tv.adobe.com/v/333602)影片，以取得新增功能的摘要。
 
 ## AEM as a Cloud Service基礎 {#foundation}
 
-### AEM as a A Porting Foundation的新增功能{#what-is-new-foundation}
+### AEM as a A A Experience Foundation的新功能 {#what-is-new-foundation}
 
 * [發行前管道](/help/release-notes/prerelease.md):在即將推出的功能投入生產前，預覽一整個月！
 
@@ -42,13 +42,13 @@ ht-degree: 2%
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites] {#what-is-new-sites}中的新增功能
+### [!DNL Sites]中的新增功能 {#what-is-new-sites}
 
 * 您很快就能驗證新[預覽層級](/help/sites-cloud/authoring/fundamentals/previewing-content.md)上的內容，以模擬最終體驗的外觀和感覺，就像您在發佈層級上一樣。 這是由AEM Sites托管出版物精靈啟用，現在可讓您在「發佈」或「預覽」之間選擇發佈目的地。 接著，您就可以透過專用的URL存取預覽體驗。 在預覽上進行驗證之後，內容可照常從「作者」發佈至「發佈」。 在AEM as aCloud Service環境中啟用預覽服務將於未來幾週逐步推出。
 
 ## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
 
-### 發行前通道{#what-is-new-assets-prerelease}中提供的新功能
+### 發行前管道提供的新功能 {#what-is-new-assets-prerelease}
 
 * 中繼資料結構可直接套用至資料夾屬性。
 
@@ -60,51 +60,25 @@ ht-degree: 2%
 
    ![介面上會顯示資料夾中的資產數](/help/assets/assets/browse-folder-number-of-assets.png)
 
-### [!DNL Assets] {#assets-bugs-fixed}中修正的錯誤
+### [!DNL Assets]中修正的錯誤 {#assets-bugs-fixed}
 
 * 上傳超大型檔案會導致[!DNL Experience Manager desktop app]當機。 (CQ-4320942)
 * 從資料夾內選取相同集合，以及從搜尋結果選取集合時，工具列選項會不同。 (CQ-4321406)
 
-#### [!DNL Dynamic Media] {#what-is-new-dm}中的新增功能
+#### [!DNL Dynamic Media]中的新增功能 {#what-is-new-dm}
 
 * 智慧型影像設備像素比(DPR)和網路頻寬優化使您能夠在具有高解析度顯示器且網路頻寬受限的設備上高效地提供最佳質量影像。 請參閱[智慧影像常見問題集](/help/assets/dynamic-media/imaging-faq.md)。
 
-   >[!NOTE]
-   >
-   >上述智慧型影像處理增強功能的發行時間軸為：
-   >
-   >* 北美2021年5月24日於納歐州，
-      >
-      >
-   * 歐洲、中東和非洲2021年6月25日，
-      >
-      >
-   * 亞太2021年7月19日。
-
-
-* 在[!DNL Dynamic Media]傳送（fmt URL修飾符）中引入了對下一代影像格式AVIF的支援。
-
-   >[!NOTE]
-   >
-   >AVIF支援的發行時間表為：
-   >
-   >* 北美2021年5月10日，
-      >
-      >
-   * 歐洲、中東和非洲2021年5月24日，
-      >
-      >
-   * 2021年6月24日。
-
+* 在[!DNL Dynamic Media]傳送（`fmt` URL修飾元）中，引入對新一代影像格式AVIF的支援。 有關更多詳細資訊和時間軸，請參閱[影像提供和呈現API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)。
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] {#what-is-new-forms}中的新增功能
+### [!DNL Forms]中的新增功能 {#what-is-new-forms}
 
 * **內容說明**:新增適用性表單編輯器、範本編輯器和主題編輯器的內容說明，協助作者更清楚了解編輯器的各種功能。
 * **屬性瀏覽器中的錯誤訊息**:已針對適用性Forms屬性瀏覽器中的每個屬性新增錯誤訊息。這些訊息有助於了解欄位的允許值。
 
-### [!DNL Forms] {#what-is-new-forms-prerelease}即將推出的測試版功能
+### [!DNL Forms]即將推出的測試版功能 {#what-is-new-forms-prerelease}
 
 輸出雲端服務：輸出服務可協助您結合XDP範本和XML資料，以產生各種格式的列印檔案。 此服務可讓您以同步和非同步批次模式產生檔案。 通過輸出服務，您可以建立應用程式，以便您：
 
@@ -114,7 +88,7 @@ ht-degree: 2%
 
 您可以寫信到formscsbeta@adobe.com註冊測試版計畫。
 
-### [!DNL Forms] {#forms-bugs-fixed}中修正的錯誤
+### [!DNL Forms]中修正的錯誤 {#forms-bugs-fixed}
 
 * 在AEM Forms工作流程的「指派任務」步驟中，當您以珊瑚圖示取代動作按鈕的預設圖示時，工作流程會停止運作並記錄例外狀況。 使用預設圖示時，工作流程會如預期般執行。
 * 在版面層中，當您變更欄數時，請開啟編輯層，並拖曳面板中的某些元件，適用性表單編輯器的內容區域會開始出現方形藍色方塊，而編輯器會停止回應。
@@ -129,7 +103,7 @@ ht-degree: 2%
 AEM as aCloud Service2021.6.0中的Cloud Manager發行日期為2021年6月10日。
 下一版預計於2021年7月15日發行。
 
-### 新功能 {#what-is-new-junecm}
+### 新增功能 {#what-is-new-junecm}
 
 * 預覽服務將以滾動方式部署到所有程式。 當客戶的計畫啟用預覽服務時，將在產品中收到通知。 如需詳細資訊，請參閱[存取預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 。
 
@@ -172,7 +146,7 @@ AEM as aCloud Service2021.6.0中的Cloud Manager發行日期為2021年6月10日�
 
 AEM as aCloud Service中的Cloud Manager 2021.5.0的發行日期為2021年5月6日。
 
-### 新功能 {#what-is-new-may}
+### 新增功能 {#what-is-new-may}
 
 * PackageOverlaps質量規則現在會檢測在同一部署的包集中多次部署相同包的情況，即在多個嵌入位置中。
 
@@ -212,7 +186,7 @@ AEM as aCloud Service中的Cloud Manager 2021.5.0的發行日期為2021年5月6�
 
 內容轉移工具1.4.6版的發行日期為2021年5月27日。
 
-### 新功能 {#what-is-new-ctt-latest}
+### 新增功能 {#what-is-new-ctt-latest}
 
 * 如果用戶對Java執行檔沒有執行權限，則Quickstart的錯誤日誌中將添加新的日誌記錄語句。
 
@@ -228,7 +202,7 @@ AEM as aCloud Service中的Cloud Manager 2021.5.0的發行日期為2021年5月6�
 
 內容轉移工具1.4.0版的發行日期為2021年5月11日。
 
-### 新功能 {#what-is-new-ctt-may}
+### 新增功能 {#what-is-new-ctt-may}
 
 * 此版本的「內容轉移工具」會針對要移轉至Cloud Service的資產建立文字轉譯。 需要文字轉譯才能支援對擷取資產進行全文搜尋。
 * 使用者可建立的「內容轉移工具」移轉集數上限已從4個增加至10個。
@@ -238,7 +212,7 @@ AEM as aCloud Service中的Cloud Manager 2021.5.0的發行日期為2021年5月6�
 * 修正與「內容轉移工具」UI中的自動重新整理功能相關的多項錯誤。
 * 包含`wipe=true`的內容轉移工具導致目標上的計數器索引不正確。 此問題已修正。
 
-## 商務附加元件{#cloud-services-commerce}
+## 商務附加元件 {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
