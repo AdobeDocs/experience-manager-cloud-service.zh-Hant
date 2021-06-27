@@ -4,9 +4,9 @@ description: 與[!DNL Adobe Experience Manager 6.5相比， [!DNL Adobe Experien
 feature: 發行資訊
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
+source-git-commit: 19e64cc8239afefd1f17b6cffee5e681f220a68c
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '846'
 ht-degree: 5%
 
 ---
@@ -59,8 +59,8 @@ ht-degree: 5%
 | 複合資產的子資產產生 | 不支援. | 相依使用案例未履行。 例如，多頁PDF檔案的註解會受到影響。 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)中的[子資產建立。 |
 | 首頁 | 不支援. | 請參閱[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | 從ZIP封存解壓縮資產 | 不支援. | 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)中的[ZIP解壓縮。 |
-| 資產評等 | 不支援. | 不支援中繼資料結構編輯器中提供資產評等選項的介面工具集。 |
-| 傳統 UI | 不支援. | 僅提供觸控式UI。 |
+| 資產評等 | 不支援. | 不支援中繼資料結構編輯器中的評等Widget。 |
+| 傳統 UI | 不支援. | 僅提供觸控式使用者介面。 |
 
 >[!MORELIKETHIS]
 >
