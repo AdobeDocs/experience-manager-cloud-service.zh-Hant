@@ -1,10 +1,7 @@
 ---
 title: 在Screens中發佈管道作為Cloud Service
 description: 本頁說明如何以Cloud Service形式在Screens中發佈管道。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 3da578d544ab82c61bdfecc0b470b1cd3315f996
+source-git-commit: 148fb0adf5c8ed60053225e84ddc42532fd7483c
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -12,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# 以Cloud Service{#publish-channel-screens-cloud}發佈螢幕中的頻道
+# 以Cloud Service形式發佈Screens中的頻道 {#publish-channel-screens-cloud}
 
 ## 簡介 {#introduction}
 
@@ -28,7 +25,7 @@ ht-degree: 0%
 * 了解如何發佈管道
 * 按範圍管理出版物
 
-## 發佈通道{#publish-channel}的步驟
+## 發佈管道的步驟 {#publish-channel}
 
 請依照下列步驟發佈管道：
 
@@ -50,6 +47,6 @@ ht-degree: 0%
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
-## 下一步是什麼{#whats-next}
+## 下一步 {#whats-next}
 
 現在，您已在專案中發佈管道，您現在應繼續以Cloud Service的形式來執行Screens歷程，方法是接下來檢閱檔案[在Screens中安裝和設定播放器作為Cloud Service](/help/screens-cloud/creating-content/manage-publish.md)。
