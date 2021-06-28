@@ -2,9 +2,9 @@
 title: 預覽內容
 description: 了解如何使用AEM預覽服務在上線前預覽內容。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 53a3fb91dcf093d55e80c7dfcdef3a7855731841
+source-git-commit: f5e37a4ac8b179ac869609edc87f52858607ad36
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 ```
 
 請參閱[管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) ，以取得如何取得環境URL的詳細資訊。
+
+也可以使用將agentId參數設定為預覽的[發佈內容樹工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/replication.html?lang=en#publish-content-tree-workflow)，或使用[複製API](/help/operations/replication.md#replication-api)並配置為預覽的AgentFilter，來發佈內容以預覽。
 
 ## 為預覽層配置OSGi設定 {#configuring-osgi-settings-for-the-preview-tier}
 
