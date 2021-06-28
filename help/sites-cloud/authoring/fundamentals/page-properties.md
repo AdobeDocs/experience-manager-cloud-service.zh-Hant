@@ -2,14 +2,14 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1930'
 ht-degree: 8%
 
 ---
 
-# 編輯頁面屬性{#editing-page-properties}
+# 編輯頁面屬性 {#editing-page-properties}
 
 您可以定義頁面的必要屬性。 這些項目可能會因頁面性質而異。 例如，某些頁面可能連線至即時副本，而其他頁面則未連線，且即時副本資訊將可視情況提供。
 
@@ -218,7 +218,13 @@ ht-degree: 8%
    * **從父項繼承轉出設定**  — 如果勾選此選項，則轉出設定繼承自頁面的父項
    * **選擇轉出設定**  — 定義將從Blueprint傳播修改的情況，且僅當未選取從Parentis繼承轉出 **設定時** 可用
 
-## 編輯頁面屬性{#editing-page-properties-1}
+### 預覽 {#preview}
+
+「預覽」環境啟用後，您會看到：
+
+* 預覽URL — 用於存取預覽環境中內容的URL
+
+## 編輯頁面屬性 {#editing-page-properties-1}
 
 * 從&#x200B;**Sites**&#x200B;控制台：
    * [建立新頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) （屬性的子集）
@@ -228,7 +234,7 @@ ht-degree: 8%
 * 從頁面編輯器：
    * 使用 **頁面資訊** (接著 **開啟屬性**)
 
-### 從Sites Console — 單頁{#from-the-sites-console-single-page}
+### 從Sites Console — 單頁 {#from-the-sites-console-single-page}
 
 按一下或點選&#x200B;**屬性**&#x200B;以定義頁面屬性：
 
@@ -240,7 +246,7 @@ ht-degree: 8%
 1. 視需要檢視或編輯屬性。
 1. 然後使用&#x200B;**Save**&#x200B;保存更新，然後使用&#x200B;**Close**&#x200B;返回控制台。
 
-### 編輯頁面{#when-editing-a-page}時
+### 編輯頁面時 {#when-editing-a-page}
 
 編輯頁面時，您可以使用&#x200B;**頁面資訊**&#x200B;來定義頁面屬性：
 
@@ -251,7 +257,7 @@ ht-degree: 8%
    * **儲存並關閉**
 1. 使用&#x200B;**儲存並關閉**&#x200B;按鈕來儲存變更。
 
-### 從Sites Console — 多頁{#from-the-sites-console-multiple-pages}
+### 從Sites Console — 多個頁面 {#from-the-sites-console-multiple-pages}
 
 從Sites **** Console中，您可以選取數個頁面，然後使用 **View Properties**  (檢視屬性) 來檢視和/或編輯頁面屬性。這稱為頁面屬性的大量編輯。
 
