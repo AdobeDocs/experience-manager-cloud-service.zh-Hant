@@ -4,9 +4,9 @@ description: 與[!DNL Adobe Experience Manager 6.5相比， [!DNL Adobe Experien
 feature: 發行資訊
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: e3efbaf5cb590b079ccc228a0f130ecec198d2ff
+source-git-commit: ab40ce5b9b57f83562cf279b75979795f5433eda
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '925'
 ht-degree: 5%
 
 ---
@@ -60,6 +60,7 @@ ht-degree: 5%
 | 首頁 | 不支援. | 請參閱[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | 從ZIP封存解壓縮資產 | 不支援. | 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)中的[ZIP解壓縮。 |
 | 資產評等 | 不支援. | 不支援中繼資料結構編輯器中的評等Widget。 |
+| 內容分送篩選器 | 不支援. | `ContentDispositionFilter`的一個常見使用案例是讓管理員設定[!DNL Experience Manager]以提供HTML檔案，並內嵌開啟PDF檔案，而非下載這些檔案。 在發佈例項上，您可以使用Dispatcher設定來管理處置。 在「製作」例項上，Adobe不建議修改「內容處置」標題。 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html)中的[內容處置篩選器。 |
 | 傳統 UI | 不支援. | 僅提供觸控式使用者介面。 |
 
 >[!MORELIKETHIS]
