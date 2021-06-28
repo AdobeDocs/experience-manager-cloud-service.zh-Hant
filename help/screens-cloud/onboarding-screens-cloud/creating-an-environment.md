@@ -1,10 +1,7 @@
 ---
 title: 建立分支
 description: 本頁說明如何在Cloud Manager中以Screens作為Cloud Service建立分支。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 0042b0ba6b652a61ee0ac880bc5b4db8aa679359
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# 在Cloud Manager {#create-environment-screens-cloud}中建立環境
+# 在Cloud Manager中建立環境 {#create-environment-screens-cloud}
 
 本節說明如何在Cloud Manager中為您的程式建立環境。
 
@@ -23,7 +20,7 @@ ht-degree: 1%
 
 以下章節說明如何在Cloud Manager中為您的程式建立環境。
 
-## 在Cloud Manager {#steps-branch-creation}中為Screens專案建立環境的步驟
+## 在Cloud Manager中為Screens專案建立環境的步驟 {#steps-branch-creation}
 
 專案建立完成後，您會在Cloud Manager的「概觀」頁面中看到動作呼叫卡更新。
 
@@ -41,7 +38,7 @@ ht-degree: 1%
 
    ![影像](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
-## 下一步是什麼{#whats-next}
+## 下一步 {#whats-next}
 
 在您學習如何在Cloud Manager中為程式設定環境後，現在就可以開始執行入門程式的下一個步驟，即[執行管道](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)。
 
