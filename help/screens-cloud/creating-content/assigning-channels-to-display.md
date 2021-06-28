@@ -1,10 +1,7 @@
 ---
 title: 將頻道指派給螢幕中的顯示作為Cloud Service
 description: 本頁說明如何將頻道指派給Screens中的顯示器，作為Cloud Service。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# 將通道指派給螢幕中的顯示，作為Cloud Service{#assign-channel-displays-screens-cloud}
+# 將頻道指派給螢幕中的顯示作為Cloud Service {#assign-channel-displays-screens-cloud}
 
 專案設定完成後，您必須將頻道指派給顯示器以檢視內容。
 
@@ -27,7 +24,7 @@ ht-degree: 1%
 * 建立和管理顯示
 * 建立和管理管道
 
-## 將通道分配給顯示器的步驟{#assign-channel-to-display}
+## 將管道指派給顯示器的步驟 {#assign-channel-to-display}
 
 請依照下列步驟，將管道指派給顯示器：
 
@@ -69,6 +66,6 @@ ht-degree: 1%
    ![影像](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
-## 下一步是什麼{#whats-next}
+## 下一步 {#whats-next}
 
 現在，您已將頻道指派給顯示器後，您應繼續以Cloud Service的形式來執行Screens歷程，方法是先檢閱檔案[安裝並設定AEM適用的Screens播放器作為Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)。
