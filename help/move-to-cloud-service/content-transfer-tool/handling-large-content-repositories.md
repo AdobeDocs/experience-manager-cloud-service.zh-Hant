@@ -1,7 +1,7 @@
 ---
 title: 處理大型內容存放庫
 description: 本節介紹如何處理大型內容儲存庫
-source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
+source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -38,13 +38,13 @@ ht-degree: 1%
 
 ### 0.決定資料儲存區中所有內容的總大小 {#determine-total-size}
 
-#### Azure Blob儲存資料儲存
+#### Azure Blob儲存資料儲存 {#azure-blob-storage}
 
 從Azure入口網站的容器屬性頁面，使用&#x200B;**計算大小**&#x200B;按鈕來判斷容器中所有內容的大小。 例如：
 
 ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
-#### Amazon S3 Data Store
+#### Amazon S3 Data Store {#amazon-data}
 
 您可以使用容器的「量度」標籤來判斷容器中所有內容的大小。 例如：
 
@@ -67,7 +67,7 @@ CTT 1.5.4版中包含了AzCopy支援。 您可以從[Software Distribution](http
 
 此設定檔案的內容會因您的來源AEM例項是否使用Azure或Amazon S3資料存放區而異。
 
-#### Azure Blob儲存資料儲存
+#### Azure Blob儲存資料儲存 {#azure-blob-storage-data}
 
 您的azcopy.config檔案應包含下列屬性（請務必為執行個體使用正確的azCopyPath和azureSas）。
 
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Amazon S3 Data Store
+#### Amazon S3 Data Store {#amazon-data-store}
 
 您的azcopy.config檔案應包含下列屬性（請務必為執行個體使用正確的值）。
 
