@@ -1,10 +1,7 @@
 ---
 title: 執行管道
 description: 本頁面說明如何在Cloud Manager中以Cloud Service專案的形式執行Screens管道。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 2%
@@ -12,7 +9,7 @@ ht-degree: 2%
 ---
 
 
-# 在Cloud Manager {#run-pipeline-screens-cloud}中執行以Cloud Service程式形式呈現畫面的管道
+# 在Cloud Manager中執行以Cloud Service程式形式顯示畫面的管道 {#run-pipeline-screens-cloud}
 
 本節說明如何在Cloud Manager中執行管道，以及為程式部署程式的程式碼。
 
@@ -23,7 +20,7 @@ ht-degree: 2%
 
 以下章節說明如何在Cloud Manager中設定CI/CD管道，以及部署程式的程式碼。
 
-## 在Cloud Manager {#steps-branch-creation}中為Screens專案執行管道的步驟
+## 在Cloud Manager中為Screens專案執行管道的步驟 {#steps-branch-creation}
 
 1. 環境設定一旦成功完成，您就會在Cloud Manager的&#x200B;**概述**&#x200B;頁面中看到動作呼叫卡更新。
 
@@ -57,6 +54,6 @@ ht-degree: 2%
 
    ![影像](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
-## 下一步是什麼{#whats-next}
+## 下一步 {#whats-next}
 
 一旦您學會如何在Cloud Manager中為您的程式設定環境，現在就可以開始進行入門程式的下一個步驟，即[導覽至Screens服務提供者](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)。
