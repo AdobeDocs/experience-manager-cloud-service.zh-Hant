@@ -1,10 +1,7 @@
 ---
 title: 在Screens中建立專案作為Cloud Service
 description: 本頁面說明如何在Screens中以Cloud Service形式建立專案。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: c8c8eec6aab6e66e3e4eb96525e6f4f55633a5a0
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -12,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# 在Screens中建立和管理專案作為Cloud Service{#creating-project-screens-cloud}
+# 在Screens中建立和管理專案作為Cloud Service {#creating-project-screens-cloud}
 
 在Screens as aCloud Service中實作新專案的第一步，是建立新專案。
 
@@ -20,14 +17,14 @@ ht-degree: 0%
 
 本檔案可協助您了解如何在Screens內容提供者中建立新的AEM Screens專案。 閱讀後，您應該就範圍而言，能夠建立AEM Screens專案。
 
-## 建立新項目{#create-new-project}
+## 建立新專案 {#create-new-project}
 
 請依照下列步驟，在Screens中以Cloud Service形式建立新專案：
 
 1. 導覽至「Screens內容提供者」。
 
    >[!NOTE]
-   >請參閱[使用螢幕內容提供者](/help/screens-cloud/setting-up-project/using-screens-content-provider.md) ，了解如何存取螢幕內容提供者以建立您的專案。
+   >請參閱[使用螢幕內容提供者] ，了解如何存取螢幕內容提供者以建立您的專案。
 
 1. 按一下動作列右上角的&#x200B;**建立螢幕專案** 。
 
@@ -46,7 +43,7 @@ ht-degree: 0%
 
    現在您已設定AEM Screens專案，可以開始將管道和位置新增至專案。
 
-### 刪除現有項目{#deleting-project}
+### 刪除現有專案 {#deleting-project}
 
 您可以將現有的畫面刪除為Cloud Service專案。
 請依照下列步驟，從Screens內容提供者中刪除現有專案：
@@ -62,6 +59,6 @@ ht-degree: 0%
    >[!NOTE]
    >您可以選取多個專案，因此可以在單一步驟中刪除多個專案。
 
-## 下一步是什麼{#whats-next}
+## 下一步 {#whats-next}
 
-現在您已設定AEM Screens專案，可以建立新頻道並新增內容至頻道。 請參閱[建立和管理頻道](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)以了解如何建立和管理頻道中的內容。
+現在您已設定AEM Screens專案，可以建立新頻道並新增內容至頻道。 請參閱[建立和管理頻道]以了解如何建立和管理頻道中的內容。
