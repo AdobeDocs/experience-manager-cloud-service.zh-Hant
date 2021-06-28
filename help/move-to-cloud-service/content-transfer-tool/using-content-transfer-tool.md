@@ -2,9 +2,9 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d08fc076306c54f8551c9df499efa0ded7bcc131
+source-git-commit: 5c5ddac1a3b948d1efbd06aa188ac6d8d897d37f
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2929'
 ht-degree: 40%
 
 ---
@@ -208,7 +208,7 @@ ht-degree: 40%
 
 請依照下列步驟，從「內容轉移工具」中擷取您的移轉集：
 >[!NOTE]
->如果使用Amazon S3或Azure資料存放區作為資料存放區類型，您可以執行選用的預複製步驟，大幅加快擷取階段。 有關詳細資訊，請參閱[使用AzCopy擷取] 。
+>如果使用Amazon S3或Azure資料存放區作為資料存放區類型，您可以執行選用的預複製步驟，大幅加快擷取階段。 有關詳細資訊，請參閱[使用AzCopy擷取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) 。
 
 1. 從&#x200B;*概述*&#x200B;頁面中選取移轉集，然後按一下&#x200B;**擷取**&#x200B;以開始擷取。 **移轉集擷取**&#x200B;對話框隨即顯示。按一下&#x200B;**擷取**&#x200B;以開始擷取階段。 您可以同時將內容擷取至「製作」和「發佈」。
 
