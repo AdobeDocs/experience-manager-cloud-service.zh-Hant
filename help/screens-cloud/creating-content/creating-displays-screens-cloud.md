@@ -1,10 +1,7 @@
 ---
 title: 建立和管理螢幕中的顯示作為Cloud Service
 description: 本頁面說明如何建立和管理Screens中的顯示作為Cloud Service。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 2%
@@ -12,7 +9,7 @@ ht-degree: 2%
 ---
 
 
-# 以Cloud Service{#create-displays-screens-cloud}的形式在螢幕中建立和管理顯示
+# 建立和管理螢幕中的顯示作為Cloud Service {#create-displays-screens-cloud}
 
 發佈管道後，現在可以在Screens服務提供者中建立顯示。
 
@@ -24,7 +21,7 @@ ht-degree: 2%
 
 * 了解如何建立顯示。
 
-## 建立顯示的步驟{#create-display}
+## 建立顯示的步驟 {#create-display}
 
 請依照下列步驟，從Screens服務提供者建立顯示畫面：
 
@@ -45,7 +42,7 @@ ht-degree: 2%
 
    ![影像](/help/screens-cloud/assets/display/disp-4.png)
 
-### 刪除顯示{#deleting-display}
+### 刪除顯示 {#deleting-display}
 
 您可以從Screens服務提供者刪除顯示。
 
@@ -53,6 +50,6 @@ ht-degree: 2%
 
 ![影像](/help/screens-cloud/assets/display/disp-5.png)
 
-## 下一步是什麼{#whats-next}
+## 下一步 {#whats-next}
 
 現在，您已了解如何為專案建立和管理顯示器，您應繼續將Screens作為Cloud Service歷程，方法是接下來檢閱檔案[將頻道指派給Screens中的顯示器作為Cloud Service](/help/screens-cloud/creating-content/assigning-channels-to-display.md)。
