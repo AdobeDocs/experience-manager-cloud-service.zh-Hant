@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
+source-git-commit: 641fd1716555806311e62a020e70b799ab3c621d
 workflow-type: tm+mt
-source-wordcount: '2785'
-ht-degree: 42%
+source-wordcount: '2907'
+ht-degree: 40%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 42%
 
 * 如果您使用自訂索引，則在執行「內容轉移工具」之前，必須確保以`tika`節點配置自訂索引。 有關詳細資訊，請參閱[準備新索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition)。
 
-* 如果您要追加提取，則必須不要變更現有內容的內容結構，從進行初始提取到執行追加提取的時間皆然。 自初始擷取後，無法對結構已變更的內容執行追加。 請務必在移轉程式期間加以限制。
+* 如果您要追加提取，則必須不要變更現有內容的內容結構，從進行初始提取到執行追加提取的時間皆然。 自初始擷取後，結構已變更的內容無法執行追加。 請務必在移轉程式期間加以限制。
 
 ## 可用性 {#availability}
 
@@ -65,7 +65,7 @@ ht-degree: 42%
 >[!NOTE]
 >從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)入口網站下載內容轉移工具。
 
-## 執行「內容轉移工具」 {#running-tool}
+## 執行「內容轉移工具」  {#running-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
@@ -157,6 +157,8 @@ ht-degree: 42%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="追加提取"
 
 請依照下列步驟，從「內容轉移工具」中提取您的移轉集：
+>[!NOTE]
+>如果使用Amazon S3或Azure資料存放區作為資料存放區類型，您可以執行選用的預複製步驟，大幅加速提取階段。 若要這麼做，您必須先設定azcopy.config檔案，才能執行解壓縮。 如需詳細資訊，請參閱[處理大型內容存放庫] 。
 
 1. 從&#x200B;*「綜覽」*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**提取**&#x200B;即可開始提取。顯示&#x200B;**遷移集提取**&#x200B;對話框，然後按一下&#x200B;**提取**&#x200B;以啟動提取階段。
 
@@ -184,7 +186,7 @@ ht-degree: 42%
 
 >[!NOTE]
 >初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
->此外，必須不要將現有內容的內容結構從採取初始擷取時變更為執行追加擷取時。 自初始擷取後，無法對結構已變更的內容執行追加。 請務必在移轉程式期間加以限制。
+>此外，必須不要將現有內容的內容結構從採取初始擷取時變更為執行追加擷取時。 自初始擷取後，結構已變更的內容無法執行追加。 請務必在移轉程式期間加以限制。
 
 提取程序一旦完成，您即可使用追加提取方法來轉移差異內容。請遵循下列步驟：
 
@@ -205,8 +207,13 @@ ht-degree: 42%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="追加擷取"
 
 請依照下列步驟，從「內容轉移工具」中擷取您的移轉集：
+>[!NOTE]
+>如果使用Amazon S3或Azure資料存放區作為資料存放區類型，您可以執行選用的預複製步驟，大幅加快擷取階段。 有關詳細資訊，請參閱[使用AzCopy擷取] 。
 
-1. 從&#x200B;*綜覽*&#x200B;頁面選取一個移轉集，然後按一下&#x200B;**擷取**&#x200B;即可開始擷取。**移轉集擷取**&#x200B;對話框隨即顯示。按一下&#x200B;**擷取**&#x200B;以開始擷取階段。 您可以同時將內容擷取至「製作」和「發佈」。
+1. 從&#x200B;*概述*&#x200B;頁面中選取移轉集，然後按一下&#x200B;**擷取**&#x200B;以開始擷取。 **移轉集擷取**&#x200B;對話框隨即顯示。按一下&#x200B;**擷取**&#x200B;以開始擷取階段。 您可以同時將內容擷取至「製作」和「發佈」。
+
+   >[!IMPORTANT]
+   >如果使用預復本擷取（適用於S3或Azure資料存放區），建議您先單獨執行製作擷取。 這會在稍後執行時加速發佈擷取。
 
    >[!IMPORTANT]
    >啟用「在擷取&#x200B;**之前擦去雲端例項上的現有內容」選項時，它會刪除整個現有存放庫，並建立新存放庫以將內容擷取至中。**&#x200B;這表示會重設所有設定，包括目標Cloud Service例項的權限。 對於新增至&#x200B;**administrators**&#x200B;群組的管理員使用者，也是如此。
