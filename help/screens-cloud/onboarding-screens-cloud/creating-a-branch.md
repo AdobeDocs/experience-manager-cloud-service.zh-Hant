@@ -1,10 +1,7 @@
 ---
 title: 建立分支
 description: 本頁說明如何在Cloud Manager中以Screens作為Cloud Service建立分支。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f1a21aa8ff832bd8fa460a2ef8013b8e3d1acfde
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 2%
@@ -12,7 +9,7 @@ ht-degree: 2%
 ---
 
 
-# 在Cloud Manager中建立分支{#create-branch-screens-cloud}
+# 在Cloud Manager中建立分支 {#create-branch-screens-cloud}
 
 本節說明如何在Cloud Manager中為您的方案建立分支。
 
@@ -23,7 +20,7 @@ ht-degree: 2%
 
 以下章節說明如何使用精靈在Cloud Manager中為您的方案建立分支。
 
-## 在Cloud Manager {#steps-branch-creation}中為Screens專案建立分支的步驟
+## 在Cloud Manager中為Screens專案建立分支的步驟 {#steps-branch-creation}
 
 1. 導覽至Cloud Manager，並選取圖示以取得Cloud Manager概觀頁面。
 
@@ -43,6 +40,6 @@ ht-degree: 2%
 
    ![影像](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
-## 下一步是什麼{#whats-next}
+## 下一步 {#whats-next}
 
 在您學會如何在Cloud Manager中為專案建立分支後，現在就可以開始進行入門程式的下一個步驟，即[建立和設定環境](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md)。
