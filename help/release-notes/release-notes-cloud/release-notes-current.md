@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1254'
 ht-degree: 2%
 
 ---
@@ -154,5 +154,25 @@ AEM as aCloud Service2021.6.0中的Cloud Manager發行日期為2021年6月10日�
 * 商務核心元件支援Adobe商務Sensei Recs資料收集
 * 改善類別頁面的SEO易記URL
 * 支援每個網站/設定的自訂HTTP標題
+
+## 內容轉移工具 {#content-transfer-tool}
+
+### 發行日期 {#release-date-ctt-latest}
+
+內容轉移工具1.5.4版的發行日期為2021年6月28日。
+
+### 新增功能 {#what-is-new-ctt-latest}
+
+* 支援選用的[pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)步驟，以便與CTT搭配使用。 當來源AEM例項設定為使用Amazon S3或Azure Blob儲存資料存放區時，預先複製步驟可用來大幅加快內容傳輸活動的擷取和擷取階段。
+
+* CTT新增了防護性功能，以防止使用者在擷取階段期間達到關鍵點時停止擷取，並可能損毀資料。
+
+* 提取記錄檔的描述性更強，有助於疑難排解。
+
+* 在UI中新增了較清楚描述的擷取狀態訊息。
+
+### 錯誤修正 {#bug-fixes-ctt-latest}
+
+* 在製作例項上停止擷取時，UI會從`FINISHED`覆寫發佈例項上先前完成的擷取至`STOPPED`。 此問題已修正。
 
 
