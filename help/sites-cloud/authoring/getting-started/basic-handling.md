@@ -2,9 +2,9 @@
 title: 基本處理
 description: 熟悉如何導覽AEM及其基本用途
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2881'
 ht-degree: 6%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 6%
 
 AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控功能，透過點選、觸控並按住和滑動等手勢與軟體互動。 由於AEM UI為觸控式，因此您可以在行動電話或平板電腦等觸控裝置上使用觸控手勢。 不過，傳統案頭裝置上也提供滑鼠動作，讓您能靈活選擇編寫內容的方式。
 
-## 第一步{#first-steps}
+## 第一步 {#first-steps}
 
 登入後，您會立即進入[導覽面板](#navigation-panel)。 選取其中一個選項會開啟個別主控台。
 
@@ -41,7 +41,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 除非您查看所有幻燈片或選中「**不再顯示**」選項，否則概覽將在下次訪問控制台時重新啟動。
 
-## 全局導航{#global-navigation}
+## 全域導覽 {#global-navigation}
 
 您可以使用全域導覽面板，在主控台之間導覽。 當您按一下或點選畫面左上角的Adobe Experience Manager連結，就會以全螢幕下拉式清單觸發。
 
@@ -56,7 +56,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 以下說明這些面板上可用的選項。
 
-### 導航面板{#navigation-panel}
+### 導覽面板 {#navigation-panel}
 
 導覽面板：
 
@@ -74,13 +74,13 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 | 資產 | Assets主控台可讓您匯入和管理[數位資產，例如影像、視訊、檔案和音訊檔案](/help/assets/overview.md)。 然後，同一AEM執行個體上執行的任何網站都可以使用這些資產。 您也可以從Assets主控台建立和管理[內容片段](/help/assets/content-fragments/content-fragments.md)。 |
 | 個性化 | 此控制台提供用於[創作目標內容和呈現個人化體驗的工具框架。](/help/sites-cloud/authoring/personalization/overview.md) |
 
-## 工具面板{#tools-panel}
+## 工具面板 {#tools-panel}
 
 在「工具」面板中，有一個側面板，其中包含一系列類別，這些類別將類似的「工具」控制台分組在一起。 「工具」主控台可讓您存取許多專門的工具和主控台，協助您管理網站、數位資產和內容存放庫的其他方面。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![工具面板](/help/sites-cloud/authoring/assets/tools-panel.png)
 
-## 標題{#the-header}
+## 標題 {#the-header}
 
 標題一律顯示在畫面頂端。 雖然無論您位於系統中的哪個位置，標題中的大多數選項都保持不變，但有些選項是內容專屬的。
 
@@ -162,7 +162,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
    ![跳至主要內容](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
-## 訪問幫助{#accessing-help}
+## 存取說明 {#accessing-help}
 
 提供多種說明資源：
 
@@ -205,7 +205,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
    * [控制台的鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
-## 操作工具欄{#actions-toolbar}
+## 動作工具列 {#actions-toolbar}
 
 每當選取資源（例如頁面或資產）時，工具列中就會有說明文字的圖示來指出各種動作。 這些動作取決於：
 
@@ -232,7 +232,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 ![其他選項](/help/sites-cloud/authoring/assets/quick-actions.png)
 
-## 查看和選擇資源{#viewing-and-selecting-resources}
+## 檢視及選取資源 {#viewing-and-selecting-resources}
 
 檢視、導覽和選取在所有檢視中的概念上都相同，但處理方式的變異很小，取決於您使用的檢視。
 
@@ -245,7 +245,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 >[!NOTE]
 依預設，AEM Assets不會在UI中以縮圖的形式顯示資產的原始轉譯。 如果您是管理員，可以使用覆蓋來設定AEM Assets，將原始轉譯顯示為縮圖。
 
-### 選擇資源{#selecting-resources}
+### 選擇資源 {#selecting-resources}
 
 選取特定資源取決於檢視與裝置的組合：
 
@@ -265,7 +265,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 ![全選](/help/sites-cloud/authoring/assets/select-all.png)
 
-#### 取消選擇全部{#deselecting-all}
+#### 取消選取全部 {#deselecting-all}
 
 在所有情況下，當您選取項目時，所選項目的計數會顯示在工具列的右上角。
 
@@ -278,7 +278,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
 在所有檢視中，如果您使用桌上型電腦裝置，點選鍵盤上的逸出即可取消選取所有項目。
 
-#### 選擇示例{#selecting-example}
+#### 選取範例 {#selecting-example}
 
 1. 例如，在卡片檢視中：
 
@@ -315,7 +315,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
    * 頁面所依據的範本
    * 修改詳細資訊
    * 頁面語言
-   * 發佈詳細資訊
+   * 發佈和預覽詳細資訊
 
 
 ### 卡片檢視 {#card-view}
@@ -361,6 +361,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
    * **名稱**  — 頁面名稱，這在多語言編寫環境中很實用，因為它是頁面URL的一部分，不會變更（不論語言為何）
    * **已修改**  — 上次修改日期和上次由使用者修改日期
    * **已發佈**  — 發佈狀態
+   * **預覽**  — 預覽狀態
    * **範本**  — 頁面所依據的範本
    * **工作流程**  — 目前套用至頁面的工作流程。當您滑鼠或開啟時間軸時，會提供更多資訊。
    * **頁面分析**
@@ -381,7 +382,7 @@ AEM使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸控�
 
    ![訂單清單](/help/sites-cloud/authoring/assets/order-list.png)
 
-## 邊欄選取器{#rail-selector}
+## 邊欄選取器 {#rail-selector}
 
 **邊欄選取器**&#x200B;位於視窗左上角，並根據您目前的主控台顯示選項。
 
