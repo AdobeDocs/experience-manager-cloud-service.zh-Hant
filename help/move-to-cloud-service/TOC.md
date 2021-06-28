@@ -5,10 +5,10 @@ breadcrumb-title: 移轉指南
 user-guide-description: 了解轉換至雲端服務的過程。
 feature: 部署
 role: Architect, Developer
-source-git-commit: 64794b387efe6995cda6b58fb19ba36a04cbe577
+source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 75%
+source-wordcount: '97'
+ht-degree: 72%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 75%
    + 內容轉移工具 {#content-transfer-tool}
       + [概覽](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [內容轉移工具的必要條件](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [處理大型內容存放庫](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
       + [使用使用者對應工具](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [使用內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + 程式碼重構工具 {#refactoring-tools}
