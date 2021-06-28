@@ -2,9 +2,9 @@
 title: 預覽內容
 description: 了解如何使用AEM預覽服務在上線前預覽內容。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
+source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,15 @@ AEM提供網站預覽服務，其設計是讓開發人員和內容作者在到�
 
 1. 按一下&#x200B;**Next**，然後按一下&#x200B;**Publish**&#x200B;以確認。
 
-請參閱預覽內容，將&#x200B;**preview**&#x200B;附加至生產執行個體的發佈URL。 URL的建構方式如下：
+1. 對話方塊會顯示用於存取預覽環境中內容的URL。
 
-```
-https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
-```
+   或者，若要查看預覽內容，您也可以將&#x200B;**preview**&#x200B;附加至生產執行個體的發佈URL。
+
+   URL的建構方式如下：
+
+   ```
+   https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
+   ```
 
 請參閱[管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) ，以取得如何取得環境URL的詳細資訊。
 
