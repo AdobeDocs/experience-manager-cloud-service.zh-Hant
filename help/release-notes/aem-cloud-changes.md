@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 description: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: ab40ce5b9b57f83562cf279b75979795f5433eda
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 82%
+source-wordcount: '819'
+ht-degree: 81%
 
 ---
 
@@ -114,4 +114,4 @@ AEM 雲端服務預設啟用 HTTP 加速功能，包括適用於作者與發佈�
 
 ## 資產處理與傳送 {#asset-handling}
 
-資產上傳、處理和下載作業會在Experience Manager資產中以Cloud Service方式最佳化。 它現在更有效率，可讓您擴充空間，並加快上傳和下載速度。 此外，這也會影響現有的自訂程式碼和某些操作。 請參閱[對 [!DNL Assets]](/help/assets/assets-cloud-changes.md)的變更。
+資產上傳、處理和下載會在[!DNL Experience Manager Assets]中以[!DNL Cloud Service]的形式最佳化。 [!DNL Assets] 現在更有效率、更能擴充，並且讓您以更快的速度上傳和下載。此外，這也會影響現有的自訂程式碼和某些操作。 有關[!DNL Experience Manager] 6.5功能的更改和奇偶校驗的清單，請參閱[ [!DNL Assets]](/help/assets/assets-cloud-changes.md)的更改。
