@@ -1,10 +1,7 @@
 ---
 title: 將播放器指派給螢幕中的顯示，作為Cloud Service
 description: 本頁面說明如何將播放器指派給Screens中的顯示器，作為Cloud Service。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# 在螢幕中將播放器指派為Cloud Service{#assign-player-displays-screens-cloud}
+# 將播放器指派給螢幕中的顯示，作為Cloud Service {#assign-player-displays-screens-cloud}
 
 專案設定完成後，您必須將播放器指派給顯示器，才能檢視內容。
 
@@ -20,7 +17,7 @@ ht-degree: 1%
 
 本檔案可協助您了解如何將播放器指派給Screens服務提供者中的顯示器。 這些是內容在以Cloud Service播放器形式在Screens中開始播放之前的最後必要步驟。
 
-## 將播放器指派給顯示器的步驟{#create-display}
+## 將播放器指派給顯示器的步驟 {#create-display}
 
 註冊您的播放器後，必須將播放器指派給必要的顯示器，讓您的內容開始在播放器中播放。
 
@@ -34,7 +31,7 @@ ht-degree: 1%
 
    ![影像](/help/screens-cloud/assets/player/register-player8.png)
 
-## 內容播放{#content-playback}
+## 內容播放 {#content-playback}
 
 將顯示畫面指派給播放器後（如前一節所示），您會在&#x200B;**ASSIGNED DISPLAY**&#x200B;面板下看到指派的顯示畫面。
 
