@@ -1,7 +1,7 @@
 ---
 title: 處理大型內容存放庫
 description: 本節介紹如何處理大型內容儲存庫
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -134,7 +134,6 @@ AzCopy會在後續運行時自動跳過在錯誤之前複製的任何Blob，而�
 隨著內容轉移工具1.5.4的推出，我們為製作擷取新增了AzCopy支援。
 
 >[!NOTE]
->
 > 建議先單獨執行「作者」擷取。 這會在稍後執行時加速發佈擷取。
 
 要在獲取過程中利用AzCopy，我們要求您使用AEM作為至少2021.6.5561版的Cloud Service版本。
