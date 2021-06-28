@@ -1,10 +1,7 @@
 ---
 title: 在Screens中建立和管理頻道作為Cloud Service
 description: 本頁說明如何以Cloud Service的形式在Screens中建立和管理頻道。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# 以Cloud Service{#creating-channels-screens-cloud}的形式在Screens中建立和管理通道
+# 在Screens中建立和管理頻道作為Cloud Service {#creating-channels-screens-cloud}
 
 建立AEM Screens專案後，您必須建立管道。
 ***頻道***、顯示一系列內容（影像和視訊）、網站或單頁應用程式。
@@ -24,7 +21,7 @@ ht-degree: 1%
 * 了解如何為Screens內容提供者建立管道
 * 管理和編輯頻道中的內容
 
-## 在Screens中建立新序列通道作為Cloud Service的步驟{#create-new-channel}
+## 在Screens中建立新序列管道作為Cloud Service的步驟 {#create-new-channel}
 
 >[!NOTE]
 >**必備條件**
@@ -54,7 +51,7 @@ ht-degree: 1%
 
    建立管道後，您現在可以新增內容至管道。 請參閱[將內容新增至頻道](#add-content) ，了解如何將資產（影像/視訊）新增至頻道。
 
-## 管理通道{#managing-channels}
+## 管理管道 {#managing-channels}
 
 您可以編輯、檢視屬性和控制面板、複製、預覽和刪除管道。
 
@@ -62,7 +59,7 @@ ht-degree: 1%
 
 ![](/help/screens-cloud/assets/create-content/channelprop1.png)
 
-### 將內容新增至頻道{#add-content}
+### 新增內容至管道 {#add-content}
 
 若要新增或編輯頻道中的內容，請遵循下列步驟：
 
@@ -80,7 +77,7 @@ ht-degree: 1%
    >按一下&#x200B;**預覽**以預覽頻道內容。
    >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
-## 建立嚮導{#available-templates}中的可用模板
+## 建立嚮導中的可用模板 {#available-templates}
 
 使用&#x200B;**Create**&#x200B;通道嚮導時，可使用以下模板：
 
@@ -91,6 +88,6 @@ ht-degree: 1%
 | 左或右L形分屏通道 | 可讓內容作者在適當大小的區域中檢視不同類型的資產。 |
 
 
-## 下一步是什麼{#whats-next}
+## 下一步 {#whats-next}
 
 現在，您已在專案中設定AEM Screens管道後，就需要發佈管道。 在從Screens服務提供者管理您的播放器之前，請參閱[以Cloud Service形式發佈Screens中的頻道](/help/screens-cloud/creating-content/manage-publish.md)。
