@@ -1,10 +1,7 @@
 ---
 title: 在Cloud Manager中將Screens附加元件新增至現有程式
 description: 本頁面說明如何將Screens附加元件新增至Cloud Manager for Screens中的現有程式，作為Cloud Service。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# 在Cloud Manager {#adding-screens-program}中將Screens附加元件添加到現有程式
+# 在Cloud Manager中將Screens附加元件新增至現有程式 {#adding-screens-program}
 
 本節說明如何將Screens新增為Cloud Manager中現有程式的附加元件。
 
@@ -23,7 +20,7 @@ ht-degree: 1%
 
 下列步驟可讓您了解如何將Screens附加元件新增至Cloud Manager中的現有程式。
 
-## 在Cloud Manager {#edit-programs-screens-cloud}中將Screens附加元件新增至現有程式的步驟
+## 在Cloud Manager中將Screens附加元件新增至現有程式的步驟 {#edit-programs-screens-cloud}
 
 請依照下列步驟，將Screens新增為現有程式的附加元件：
 
@@ -45,6 +42,6 @@ ht-degree: 1%
 
 1. 在您選擇了選項後，按一下&#x200B;**更新**。
 
-## 下一步是什麼{#whats-next}
+## 下一步 {#whats-next}
 
 一旦您學會如何將Screens作為附加元件新增至現有的Cloud Manager程式，並在Cloud Manager的「程式和產品」下看到您的程式，您現在就可以繼續進行入門程式的下一個步驟，即[在Cloud Manager中為您的專案建立分支](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)。
