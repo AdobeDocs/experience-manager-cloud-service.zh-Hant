@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 資產報表，資產管理
 role: Administrator,Business Practitioner
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '872'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 5%
 
 產生報表時，系統會透過<!-- through an email (optional) and -->收件匣通知通知您。 您可以從報表清單頁面檢視、下載或刪除報表，該頁面會顯示所有先前產生的報表。
 
-## 生成報告{#generate-reports}
+## 產生報表 {#generate-reports}
 
 [!DNL Experience Manager Assets] 會為您產生下列標準報表：
 
@@ -105,7 +105,7 @@ ht-degree: 5%
 
    按一下工具列中的「**[!UICONTROL 下載]**」 ，以下載CSV格式的報表。
 
-## 將自訂欄新增至報表{#add-custom-columns}
+## 新增自訂欄至報表 {#add-custom-columns}
 
 您可以新增自訂欄至下列報表，以根據自訂需求顯示更多資料：
 
@@ -120,7 +120,6 @@ ht-degree: 5%
 -->
 
 * 上傳
-* 下載
 * 過期
 * 修改
 * 發佈
@@ -160,7 +159,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## 疑難排解資訊{#tips-troubleshoot}
+## 疑難排解資訊 {#tips-troubleshoot}
 
 * 如果未產生[!UICONTROL 磁碟使用情況報表]，且您使用[!DNL Dynamic Media]，請確定所有資產皆正確處理。 若要解析，請重新處理資產並重新產生報表。
 
