@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 資產管理，連接資產，資產分發，用戶和組
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: 192762e3efb23d84eb4378755975dc9b9d3158e8
 workflow-type: tm+mt
-source-wordcount: '2966'
+source-wordcount: '2967'
 ht-degree: 26%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 26%
 | DAM 經銷商 (技術使用者) | 遠端 | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` 遠端  [!DNL Experience Manager] | [!DNL Experience Manager]本機伺服器（非[!DNL Sites]作者角色）會代表[!DNL Sites]作者，使用遠端部署上的此使用者來擷取遠端資產。 此角色與上述的兩個 `ksaner` 角色不一樣，而且屬於不同的使用者群組。 |
 | [!DNL Sites] 技術使用者 | 本機 | `connectedassets-sites-techaccts` | - | 允許[!DNL Assets]部署以搜尋[!DNL Sites]網頁中資產的參考。 |
 
-## 配置[!DNL Sites]和[!DNL Assets]部署{#configure-a-connection-between-sites-and-assets-deployments}之間的連接
+## 配置[!DNL Sites]和[!DNL Assets]部署之間的連接 {#configure-a-connection-between-sites-and-assets-deployments}
 
 [!DNL Experience Manager]管理員可以建立此整合。 建立後，需要的使用權限會透過使用者群組建立。 在[!DNL Sites]部署和DAM部署中定義使用者群組。
 
@@ -116,13 +116,13 @@ ht-degree: 26%
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
-## 配置[!DNL Sites]和[!DNL Dynamic Media]部署{#sites-dynamic-media-connected-assets}之間的連接
+## 配置[!DNL Sites]和[!DNL Dynamic Media]部署之間的連接 {#sites-dynamic-media-connected-assets}
 
 您可以配置[!DNL Sites]部署和[!DNL Dynamic Media]部署之間的連接，使網頁作者可以在其網頁中使用[!DNL Dynamic Media]映像。 編寫網頁時，使用遠端資產和遠端[!DNL Dynamic Media]部署的體驗維持不變。 這可讓您透過「連線資產」功能（例如智慧型裁切和影像預設集）運用[!DNL Dynamic Media]功能。
 
-要配置此連接，請執行以下步驟。
+要配置連接，請執行以下步驟：
 
-1. 依上述方式建立連線資產設定。 設定功能時，請選取「**[!UICONTROL 為Dynamic Media連線資產擷取原始轉譯]**」選項。
+1. 如上所述建立連線資產設定，除了設定功能外，請選取「**[!UICONTROL 為Dynamic Media連線資產擷取原始轉譯]**」選項。
 
 1. 在本地[!DNL Sites]和遠程[!DNL Assets]部署上配置[!DNL Dynamic Media]。 請依照[configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)的指示操作。
 
@@ -179,7 +179,7 @@ ht-degree: 26%
 
 擷取的資產可設為其他任何本機資產以供使用，只是相關聯的中繼資料無法編輯。
 
-### 檢查跨網頁{#asset-usage-references}使用資產的情況
+### 檢查跨網頁的資產使用情形 {#asset-usage-references}
 
 [!DNL Experience Manager] 可讓DAM使用者檢查資產的所有參考。它有助於了解及管理遠端[!DNL Sites]和複合資產中資產的使用情形。 [!DNL Experience Manager Sites]部署的許多網頁作者都可以在不同網頁的遠端DAM上使用資產。 為了簡化資產管理，避免導致參考損毀，DAM使用者必須檢查本機和遠端網頁上資產的使用情形。 資產的[!UICONTROL 屬性]頁面中的[!UICONTROL 參考]標籤會列出資產的本機和遠端參考。
 
@@ -196,11 +196,11 @@ ht-degree: 26%
 
    ![強制刪除警告](assets/delete-referenced-asset.png)
 
-## 限制和最佳實務{#tip-and-limitations}
+## 限制和最佳實務 {#tip-and-limitations}
 
 * 若要取得資產使用情形的相關分析，請在[!DNL Sites]例項上設定[ Assets Insight](/help/assets/assets-insights.md)功能。
 
-### 權限與資產管理{#permissions-and-managing-assets}
+### 權限與資產管理 {#permissions-and-managing-assets}
 
 * 本機資產不會與遠端部署上的原始資產同步。對 DAM 部署所做的任何編輯、刪除或撤銷權限操作都不會傳播到下游。
 * 本機資產為唯讀副本。[!DNL Experience Manager] 元件會對資產執行非破壞性的編輯作業。不允許執行其他編輯作業。
