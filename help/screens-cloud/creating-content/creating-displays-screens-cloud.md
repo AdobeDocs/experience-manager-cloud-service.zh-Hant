@@ -1,9 +1,9 @@
 ---
 title: 建立和管理螢幕中的顯示作為Cloud Service
 description: 本頁面說明如何建立和管理Screens中的顯示作為Cloud Service。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '292'
 ht-degree: 2%
 
 ---
@@ -52,4 +52,4 @@ ht-degree: 2%
 
 ## 下一步 {#whats-next}
 
-現在，您已了解如何為專案建立和管理顯示器，您應繼續將Screens作為Cloud Service歷程，方法是接下來檢閱檔案[將頻道指派給Screens中的顯示器作為Cloud Service](/help/screens-cloud/creating-content/assigning-channels-to-display.md)。
+現在，您已了解如何為專案建立和管理顯示器，您應繼續將Screens作為Cloud Service歷程，方法是接下來檢閱檔案[將頻道指派給Screens中的顯示器作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en)。
