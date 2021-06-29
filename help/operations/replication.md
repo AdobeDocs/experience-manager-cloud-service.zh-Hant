@@ -2,9 +2,9 @@
 title: 複寫
 description: 散佈 和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
+source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1185'
 ht-degree: 1%
 
 ---
@@ -34,6 +34,10 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 ![OSGi On Off觸發器配置](/help/operations/assets/replication-on-off-trigger.png)
 
 ### 樹激活 {#tree-activation}
+
+>[!NOTE]
+>
+>此方法不會保留狀態，且可擴充性較其他方法低，因此應視為已棄用。 Adobe的建議是改用管理發布或工作流程方法
 
 要執行樹激活：
 
