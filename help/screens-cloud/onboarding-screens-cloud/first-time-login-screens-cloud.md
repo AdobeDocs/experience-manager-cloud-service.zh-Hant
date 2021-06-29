@@ -1,10 +1,10 @@
 ---
 title: 首次登入Screens作為Cloud Service
 description: 本頁面說明以Screens作為Cloud Service入門的前幾個步驟。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3962d736778e4d17bb57296e9401503ce712a6cd
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 0%
+source-wordcount: '237'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Feature Pack可用性 {#availability}
 
-AMS-Screens-Cloud Feature Pack可透過軟體發佈入口網站取得。
+AMS-Screens-Cloud Feature Pack可透過[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)取得。
 按一下這裡以下載最新的Feature Pack。
 
 ## 新增使用者至Adobe Admin Console {#admin-console}
