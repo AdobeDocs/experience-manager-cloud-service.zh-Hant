@@ -4,10 +4,10 @@ description: 若要設定Dynamic Media，您必須設定Dynamic Media並管理�
 contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
@@ -27,10 +27,10 @@ ht-degree: 6%
 
 如果您是管理Dynamic Media，請注意下列主題：
 
-* [設定 Dynamic Media](config-dm.md)
+* [設定Dynamic Media](config-dm.md)
 * [管理影像預設集](managing-image-presets.md)
 * [管理檢視器預設集](managing-viewer-presets.md)
-* [Dynamic Media 疑難排解](troubleshoot-dm.md)
+* [疑難排解Dynamic Media](troubleshoot-dm.md)
 
 另請參閱下列主題：
 
