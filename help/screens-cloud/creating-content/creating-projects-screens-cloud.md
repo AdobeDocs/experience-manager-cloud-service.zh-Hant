@@ -1,9 +1,9 @@
 ---
 title: 在Screens中建立專案作為Cloud Service
 description: 本頁面說明如何在Screens中以Cloud Service形式建立專案。
-source-git-commit: c8c8eec6aab6e66e3e4eb96525e6f4f55633a5a0
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-現在您已設定AEM Screens專案，可以建立新頻道並新增內容至頻道。 請參閱[建立和管理頻道]以了解如何建立和管理頻道中的內容。
+現在您已設定AEM Screens專案，可以建立新頻道並新增內容至頻道。 請參考[建立和管理頻道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en)，了解如何建立和管理頻道中的內容。
