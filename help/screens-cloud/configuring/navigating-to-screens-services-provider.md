@@ -1,7 +1,7 @@
 ---
 title: 導覽至Screens Services Provider
 description: 本頁面說明如何導覽至Screens Services Provider。
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: e856724c678195d632461c9dc99dcf1bfd1c79a1
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 1. 從[這裡](https://experience.adobe.com/screens)導覽至Screens服務提供者。
 
-   >[!NOTE]
+   >[!CAUTION]
    >如果您有多個組織的存取權，請確定您已登入正確的組織。 若要變更組織，請按一下畫面右上角的組織名稱，然後選擇您需要存取的必要組織。
 
 1. 從左側導航欄中選擇&#x200B;**頻道**，然後按一下&#x200B;**在內容提供程式**&#x200B;中開啟。
