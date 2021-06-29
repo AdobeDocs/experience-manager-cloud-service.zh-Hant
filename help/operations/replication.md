@@ -2,9 +2,9 @@
 title: 複寫
 description: 散佈 和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
+source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1155'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,9 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
 ### 快速取消/發佈 — 計畫取消/發佈 {#publish-unpublish}
 
-作者適用的這些標準AEM功能不會隨著AEMCloud Service而變更。
+這可讓您立即發佈所選頁面，而無需透過「管理出版物」方法提供其他選項。
+
+如需詳細資訊，請參閱[管理出版物](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)。
 
 ### 開啟和關閉時間 — 觸發配置 {#on-and-off-times-trigger-configuration}
 
@@ -171,6 +173,14 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 如果您未提供此類篩選器且僅使用「發佈」代理，則不會使用「預覽」代理，且復寫動作不會影響預覽層。
 
 僅當複製操作包含至少一個預設活動的代理時，才會修改資源的整體`ReplicationStatus`。 在上例中，情況並非如此，因為復寫僅使用「預覽」代理。 因此，您需要使用新的`getStatusForAgent()`方法，該方法允許查詢特定代理的狀態。 此方法也適用於「發佈」代理程式。 如果使用提供的代理完成了任何複製操作，則返回非空值。
+
+### 管理發佈 {#manage-publication}
+
+「管理出版物」提供的選項比「快速發佈」更多，可包含子頁面、自訂參考、啟動任何適用的工作流程，以及提供在稍後發佈的選項。
+
+將「稍後發佈」選項的資料夾子項納入會叫用「發佈內容樹」工作流程，如本文所述。
+
+您可以在[Publishing Fundamentals檔案](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)中找到有關管理發布的更多詳細資訊。
 
 ## 疑難排解 {#troubleshooting}
 
