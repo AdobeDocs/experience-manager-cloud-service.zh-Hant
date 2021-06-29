@@ -1,7 +1,7 @@
 ---
 title: 處理大型內容存放庫
 description: 本節介紹如何處理大型內容儲存庫
-source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
+source-git-commit: 3611b9ede7c7f516c4773ac4b22e8ba9b14b5220
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Amazon S3 Data Store {#amazon-data-store}
+#### Amazon S3 Data Store {#amazon-sdata-store}
 
 您的azcopy.config檔案應包含下列屬性（請務必為執行個體使用正確的值）。
 
@@ -134,7 +134,7 @@ AzCopy會在後續運行時自動跳過在錯誤之前複製的任何Blob，而�
 隨著內容轉移工具1.5.4的推出，我們為製作擷取新增了AzCopy支援。
 
 >[!NOTE]
-> 建議先單獨執行「作者」擷取。 這會在稍後執行時加速發佈擷取。
+>建議先單獨執行「作者」擷取。 這會在稍後執行時加速發佈擷取。
 
 要在獲取過程中利用AzCopy，我們要求您使用AEM作為至少2021.6.5561版的Cloud Service版本。
 
