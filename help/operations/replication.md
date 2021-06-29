@@ -2,7 +2,7 @@
 title: 複寫
 description: 散佈 和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
+source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 1%
@@ -42,17 +42,17 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 要執行樹激活：
 
 1. 從AEM「開始」功能表導覽至「**工具>部署>發佈**」
-2. 選擇卡片&#x200B;**forwardPublisher**
-3. 在forwardPublisher Web控制台UI中，選擇&#x200B;**Distribute**
+2. 選取卡片&#x200B;**publish**
+3. 進入發佈Web控制台UI後，**選擇Distribute**
 
-   ![](assets/distribute.png "DistributeDistribute")
+   ![](assets/publish-distribute.png "DistributeDistribute")
 4. 在路徑瀏覽器中選擇路徑，根據需要選擇添加節點、樹或刪除，然後選擇&#x200B;**Submit**
 
 ### 發佈內容樹工作流 {#publish-content-tree-workflow}
 
 您可以選擇&#x200B;**工具 — 工作流 — 模型**&#x200B;並複製&#x200B;**發佈內容樹**&#x200B;現成可用的工作流模型，如下所示：
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![](/help/operations/assets/publish-distribute.png)
 
 請勿修改或調用原始模型。 請務必先複製模型，然後修改或叫用該復本。
 
@@ -191,13 +191,13 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 若要疑難排解復寫，請導覽至AEM製作服務Web UI中的復寫佇列：
 
 1. 從AEM「開始」功能表導覽至「**工具>部署>發佈**」
-2. 選擇卡片&#x200B;**forwardPublisher**
-   ![](assets/status.png "StatusStatus")
+2. 選取卡片&#x200B;**publish**
+   ![](assets/publish-status.png "StatusStatus")
 3. 檢查應為綠色的隊列狀態
 4. 您可以測試與復寫服務的連線
 5. 選擇&#x200B;**Logs**&#x200B;頁簽，該頁簽顯示內容發佈的歷史記錄
 
-![](assets/logs.png "LogsLogs")
+![](assets/publish-logs.png "LogsLogs")
 
 如果無法發佈內容，則會從AEM發佈服務還原整個發佈。
 在這種情況下，應審查隊列，以確定哪些項目導致取消發佈。 按一下顯示紅色狀態的佇列，就會顯示含有待處理項目的佇列，如有需要，可從中清除單一或所有項目。
