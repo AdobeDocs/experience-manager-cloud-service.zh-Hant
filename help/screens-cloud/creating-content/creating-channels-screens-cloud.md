@@ -1,15 +1,15 @@
 ---
 title: 在Screens中建立和管理頻道作為Cloud Service
 description: 本頁說明如何以Cloud Service的形式在Screens中建立和管理頻道。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '550'
 ht-degree: 1%
 
 ---
 
 
-# 在Screens中建立和管理頻道作為Cloud Service {#creating-channels-screens-cloud}
+# 在Screens中建立和管理管道作為Cloud Service {#creating-channels-screens-cloud}
 
 建立AEM Screens專案後，您必須建立管道。
 ***頻道***、顯示一系列內容（影像和視訊）、網站或單頁應用程式。
@@ -90,4 +90,4 @@ ht-degree: 1%
 
 ## 下一步 {#whats-next}
 
-現在，您已在專案中設定AEM Screens管道後，就需要發佈管道。 在從Screens服務提供者管理您的播放器之前，請參閱[以Cloud Service形式發佈Screens中的頻道](/help/screens-cloud/creating-content/manage-publish.md)。
+現在，您已在專案中設定AEM Screens管道後，就需要發佈管道。 在從Screens服務提供者管理您的播放器之前，請參閱[以Cloud Service形式發佈Screens中的頻道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en)。
