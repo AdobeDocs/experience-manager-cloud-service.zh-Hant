@@ -1,9 +1,9 @@
 ---
 title: 使用Up Screens內容提供者
 description: 本頁面說明如何使用Screens內容提供者來建立內容。
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: ffeb82345ad2fe243e09f227d495afca70da5977
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '220'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## 目標 {#objective}
 
-在您設定了Screens Services Provider後，以下部分將介紹如何使用Screens內容提供程式。
+在您設定[Screens服務提供程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)後，以下部分將介紹如何使用Screens內容提供程式。
 
 ## 使用Screens內容提供者 {#screens-content-provider}
 
@@ -25,7 +25,9 @@ ht-degree: 2%
 >**必備條件**
 >開始閱讀此部分之前，請參閱[設定Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)以了解如何從Screens Services Provider導航到此用戶介面。
 
-登入Screens內容提供者後，您就可以在內容播放中建立內容。 使用Screens內容提供者來建立和管理：
+登入Screens內容提供者後，您就可以在內容播放中建立內容。
+
+您必須使用Screens內容提供者來建立和管理：
 
 * 專案
 * 頻道
