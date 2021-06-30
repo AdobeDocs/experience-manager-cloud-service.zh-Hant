@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
+source-git-commit: ed24f9ad81e7686f0a33260c44011628bc7c4cf9
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 2%
+source-wordcount: '1491'
+ht-degree: 3%
 
 ---
 
@@ -92,7 +92,7 @@ AEM as aCloud Service2021.6.0中的Cloud Manager發行日期為2021年6月10日�
 
 * 「內容自動化」功能可讓[!DNL Experience Manager Assets]運用[!DNL Adobe Creative Cloud] API大規模自動化資產生產。 它可大幅減少建立相同資產變異所需的時間和迭代次數，借此改善內容速度。 此功能不需要任何程式設計，也可在DAM內運作。 請參閱[使用Creative Cloud整合產生資產變異](/help/assets/cc-api-integration.md)。
 
-* [!DNL Adobe Asset Link] v3.0(適 [!DNL Adobe Photoshop]用於 [!DNL Adobe Illustrator]、 [!DNL Adobe InDesign] 和) [!DNL Adobe Asset Link] 以及v2. [!DNL Adobe XD] 0（適用於）它提供：
+* [[!DNL Adobe Asset Link] v3.0](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) (適 [!DNL Adobe Photoshop]用) [!DNL Adobe Illustrator]和 [!DNL Adobe InDesign] v2. [[!DNL Adobe Asset Link] 0](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link-for-xd.html) (適 [!DNL Adobe XD] 用)。它提供：
 
    * 支援[!DNL Assets Essentials]。
    * 能以[!DNL Cloud Service]或[!DNL Assets Essentials]形式自動連接到[!DNL Experience Manager]。
@@ -114,6 +114,14 @@ AEM as aCloud Service2021.6.0中的Cloud Manager發行日期為2021年6月10日�
 * [!DNL Experience Manager Assets] 嵌入PDF查看器以預覽支援的文檔格式。它由[!DNL Adobe Document Cloud]提供。 此功能可讓使用者預覽PDF和其他多頁檔案，而不需進行任何複雜的處理。 這改善了[!DNL Experience Manager] 6.5的功能奇偶校驗。
 
    ![使用PDF查看器 [!DNL Experience Manager] 預覽PDF檔案](/help/assets/assets/preview-pdf-file-viewer.png)
+
+* 使用者體驗增強功能會顯示資料夾中存在的資產數量。 若資料夾中超過1000個資產， [!DNL Assets]會顯示1000+。
+
+   ![介面上會顯示資料夾中的資產數](/help/assets/assets/browse-folder-number-of-assets.png)
+
+* 您可以將中繼資料結構直接套用至其[!UICONTROL Properties]中的資料夾。
+
+   ![從資料夾屬性新增中繼資料結構](/help/assets/assets/metadata-schema-folder-properties.png)
 
 ### [!DNL Assets]中修正的錯誤 {#bugs-fixed-assets}
 
