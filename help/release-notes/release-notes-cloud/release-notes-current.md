@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ed24f9ad81e7686f0a33260c44011628bc7c4cf9
+source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1544'
 ht-degree: 3%
 
 ---
@@ -111,7 +111,7 @@ AEM as aCloud Service2021.6.0中的Cloud Manager發行日期為2021年6月10日�
 
    ![使用搜索謂詞篩選搜索資料夾](/help/assets/assets/search-folders-via-predicates.png)
 
-* [!DNL Experience Manager Assets] 嵌入PDF查看器以預覽支援的文檔格式。它由[!DNL Adobe Document Cloud]提供。 此功能可讓使用者預覽PDF和其他多頁檔案，而不需進行任何複雜的處理。 這改善了[!DNL Experience Manager] 6.5的功能奇偶校驗。
+* [!DNL Experience Manager Assets] 嵌入PDF查看器以預覽支援的文檔格式。它由[!DNL Adobe Document Cloud]提供。 此功能可讓使用者預覽PDF和其他多頁檔案，而不需進行任何複雜的處理。 這改進了[!DNL Experience Manager] 6.5的同等功能。預覽中可用的控制項是縮放、導覽至頁面、取消固定控制項，以及全螢幕檢視。 整合的PDF檢視器支援AI、DOCX、INDD、PDF和PSD檔案格式。 您可以對資產本身加上註解，但不支援在PDF檔案中加上註解和註解。
 
    ![使用PDF查看器 [!DNL Experience Manager] 預覽PDF檔案](/help/assets/assets/preview-pdf-file-viewer.png)
 
