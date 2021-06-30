@@ -4,9 +4,9 @@ user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: ec5510d68c2c38be7755070e84b98d519c10e02a
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '484'
 ht-degree: 71%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 71%
    + [要編輯的簽入和簽出資產](check-out-and-submit-assets.md)
    + [資產的數位版權管理](drm.md)
    + [浮水印資產](watermark-assets.md)
+   + [使用 [!DNL Creative Cloud] API處理資產](cc-api-integration.md)
 + 設定、管理及擴充 [!DNL Assets] {#admin}
    + [開發人員檔案和API參考](developer-reference-material-apis.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
