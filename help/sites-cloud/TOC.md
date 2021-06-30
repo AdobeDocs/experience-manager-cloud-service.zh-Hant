@@ -1,12 +1,12 @@
 ---
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager as a Cloud Service
 sub-product: AEM as a Cloud Service 的內容製作
 user-guide-title: AEM as a Cloud Service 的內容製作
 breadcrumb-title: Authoring 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Sites as a Cloud Service。
 feature: 製作
 role: Business Practitioner
-source-git-commit: e736b80e0bee80b5f3df6451b63b306c546d0912
+source-git-commit: c19c15c4e71c8ead1c3cb05add052a8ffae79d0a
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 71%
