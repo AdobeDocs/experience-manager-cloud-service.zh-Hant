@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 智慧標籤，標籤
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2355'
 ht-degree: 6%
 
 ---
@@ -97,13 +97,16 @@ ht-degree: 6%
 
 **範例**:指引的其他範例包括：
 
-* 建立標籤模型，包括：
-   * 只有與車型相關的標籤。
-   * 只有與襯衫顏色相關的標籤。
-   * 只有男女夾克的標籤。
+* 建立僅包含、
+
+   * 與車型相關的標籤。
+   * 與襯衫顏色相關的標籤。
+   * 與男女夾克相關的標籤。
+
 * 請勿建立
-   * 一種標籤模型，包括2019年和2020年發行的車型。
-   * 包含相同數量汽車型號的多個標籤型號。
+
+   * 一種標籤型號，包括2019年和2020年發行的車型。
+   * 包含相同數量車型的多個標籤模型。
 
 **用於訓練的影像**:您可以使用相同的影像來訓練不同的標籤模型。不過，請勿將影像與標籤模型中的多個標籤建立關聯。 可以使用屬於不同標籤模型的不同標籤來標籤相同影像。
 
