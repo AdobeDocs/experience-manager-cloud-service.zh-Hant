@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
+source-git-commit: e4f49fd71451805d48d5f22dcf2f6d097a4d8d10
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1545'
 ht-degree: 3%
 
 ---
@@ -140,15 +140,16 @@ AEM as aCloud Service2021.6.0中的Cloud Manager發行日期為2021年6月10日�
 
 ### [!DNL Forms]中的新增功能 {#what-is-new-forms}
 
-* 新增篩選AEM收件匣中自訂欄的功能。
-* 新增使用最適化表單編輯器的主題編輯器和樣式層來設定驗證碼元件樣式的功能。
-* 已改善自動偵測來源PDF forms中邏輯區段並將其轉換為相應最適化表單面板的速度和準確度。
-* 新增移動動作，可將PDF或XDP檔案從一個資料夾移動至另一個資料夾。
+* Forms管理員可以篩選AEM收件匣中的自訂欄。
+* Forms開發人員可使用最適化表單編輯器的主題編輯器和樣式層，為驗證碼元件設定樣式。
+* 已改善自動偵測來源表單中邏輯區段並將這些區段轉換為相應最適化表單面板的準確度。
+* 新增移動動作，協助將PDF或XDP檔案從一個資料夾移至另一個資料夾。
+* 縮短載入時間，並改善最適化表單編輯器和主題編輯器的效能。
 
 ### [!DNL Forms]的Beta功能 {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**:通訊API可協助您結合XDP範本和XML資料，以產生各種格式的列印檔案。此服務可讓您以同步模式產生檔案。 API可讓您建立應用程式，以便您：
-   * 使用XML資料填入範本檔案，以產生最終表單檔案。
+   * 使用XML資料填入範本檔案，以產生檔案。
    * 以各種格式產生輸出表單，包括非互動式PDF列印資料流。
    * 從XFA表單產生列印PDF PDF和Adobe Acrobat表單(AcroForm)。
 
@@ -159,7 +160,7 @@ AEM as aCloud Service2021.6.0中的Cloud Manager發行日期為2021年6月10日�
 ### [!DNL Forms]中修正的錯誤 {#forms-bugs-fixed}
 
 * 在透過表單資料模型(FDM)將資料提交至後端服務之前驗證欄位時，驗證會成功，但表單資料模型服務無法叫用後期驗證。
-* 當您從Apple iOS裝置提交包含標準HTML上傳欄位的表單時，有時不會傳送檔案內容，而會在另一端收到0位元組檔案。 這是Apple iOS中的已知問題。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* 當您從Apple iOS裝置提交包含標準HTML上傳欄位的表單時，有時不會傳送檔案內容，而會在另一端收到0位元組檔案。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Adobe Experience Manager Screens] as a  [!DNL Cloud Service] {#screens}
 
