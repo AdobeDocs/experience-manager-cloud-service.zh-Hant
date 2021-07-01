@@ -1,13 +1,13 @@
 ---
 title: 影像品質最佳化的最佳作法
-description: 了解使用Dynamic Media最佳化影像資產品質的最佳實務。
+description: 了解可協助您使用Dynamic Media最佳化影像資產品質的最佳實務。
 contentOwner: Rick Brough
 feature: 資產管理
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1480'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ Adobe Experience Manager包含超過100個Dynamic Media影像傳送命令，用�
 
 影像格式的最佳實務，請從最常見的設定`&fmt=JPG`開始。
 
-## 影像大小{#best-practices-for-image-size}最佳實務
+## 影像大小最佳實務 {#best-practices-for-image-size}
 
 動態縮小影像大小是最常見的任務之一。 它涉及指定大小，以及（可選）使用哪個縮減取樣模式來縮小影像。
 
@@ -38,7 +38,7 @@ Adobe Experience Manager包含超過100個Dynamic Media影像傳送命令，用�
 
 使用`&wid=<value>&hei=<value>&resMode=sharp2`或`&hei=<value>&resMode=sharp2`作為影像大小調整的最佳實務
 
-## 影像銳利化最佳作法{#best-practices-for-image-sharpening}
+## 影像銳利化最佳作法 {#best-practices-for-image-sharpening}
 
 影像銳利化是控制網站上影像的最複雜環節，也是常有錯誤發生的地方。 請參考下列實用資源，以深入了解銳利化和遮色片銳利化在Experience Manager中的運作方式：
 
@@ -106,7 +106,7 @@ Adobe Experience Manager包含超過100個Dynamic Media影像傳送命令，用�
 
 如果要將JPG影像傳送至記憶體有限的裝置，請設定`&jpegSize=`並新增參數`&qlt=`，這是最佳作法。
 
-## 最佳做法摘要{#best-practices-summary}
+## 最佳實務摘要 {#best-practices-summary}
 
 最佳實務是要達到高影像品質和小檔案大小，請從以下參陣列合開始：
 
