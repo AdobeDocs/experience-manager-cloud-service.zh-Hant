@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4f49fd71451805d48d5f22dcf2f6d097a4d8d10
+source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1524'
 ht-degree: 3%
 
 ---
@@ -138,7 +138,7 @@ AEM as aCloud Service2021.6.0中的Cloud Manager發行日期為2021年6月10日�
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms]中的新增功能 {#what-is-new-forms}
+### [!DNL Forms]中的新功能 {#what-is-new-forms}
 
 * Forms管理員可以篩選AEM收件匣中的自訂欄。
 * Forms開發人員可使用最適化表單編輯器的主題編輯器和樣式層，為驗證碼元件設定樣式。
@@ -152,8 +152,6 @@ AEM as aCloud Service2021.6.0中的Cloud Manager發行日期為2021年6月10日�
    * 使用XML資料填入範本檔案，以產生檔案。
    * 以各種格式產生輸出表單，包括非互動式PDF列印資料流。
    * 從XFA表單產生列印PDF PDF和Adobe Acrobat表單(AcroForm)。
-
-* **變數資料外部化程式**:您可以將AEM工作流程變數的資料儲存在您的組織所管理的外部儲存系統上。
 
 您可以寫入[!DNL formscsbeta@adobe.com]以註冊測試版程式。
 
