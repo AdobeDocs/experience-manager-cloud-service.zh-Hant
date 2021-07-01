@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 feature: 資產管理，影像設定檔，影片設定檔
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 
-# 組織數位資產以使用影像設定檔或視訊設定檔的最佳作法{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
+# 組織數位資產以使用影像設定檔或影片設定檔的最佳作法{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
 使用Dynamic Media影像設定檔或視訊設定檔的重要概念，是指派給資料夾。 設定檔內是影像或視訊的設定。 這些設定會處理資料夾的內容及其任何子資料夾。 因此，您為檔案和資料夾命名、排列子資料夾和處理這些資料夾內檔案的方式，將影響設定檔處理這些資產的方式。
 
