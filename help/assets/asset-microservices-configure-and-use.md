@@ -5,18 +5,18 @@ contentOwner: AG
 feature: asset compute微服務，工作流，資產處理
 role: Architect,Administrator
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '2582'
+source-wordcount: '2635'
 ht-degree: 1%
 
 ---
 
-# 使用資產微服務和處理設定檔{#get-started-using-asset-microservices}
+# 使用資產微服務和處理設定檔 {#get-started-using-asset-microservices}
 
 資產微服務提供使用雲端原生應用程式（也稱為背景工作）的資產可擴充且具彈性的處理功能。 Adobe管理服務，以最佳處理不同資產類型和處理選項。
 
-與舊版[!DNL Experience Manager]相比，資產微服務可讓您處理[廣泛的檔案類型](/help/assets/file-format-support.md)，涵蓋更多現成可用格式。 例如，現在可以擷取PSD和PSB格式的縮圖，而先前需要的協力廠商解決方案，例如ImageMagick。
+與舊版[!DNL Experience Manager]相比，資產微服務可讓您處理[廣泛的檔案類型](/help/assets/file-format-support.md)，涵蓋更多現成可用格式。 例如，現在可以擷取PSD和PSB格式的縮圖，但先前需要的協力廠商解決方案，例如[!DNL ImageMagick]。
 
 資產處理取決於&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;中的設定。 Experience Manager提供基本預設設定，並讓管理員新增更具體的資產處理設定。 管理員建立、維護和修改後置處理工作流程的設定，包括可選自訂。 自訂工作流程可讓開發人員擴充預設產品。
 
@@ -31,9 +31,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 >
 >此處所述的資產處理會取代`DAM Update Asset`舊版[!DNL Experience Manager]中存在的工作流程模型。 大部分標準轉譯產生和中繼資料相關步驟會由資產微服務處理取代，其餘步驟（若有）則可由後置處理工作流程設定取代。
 
-## 了解資產處理選項{#get-started}
+## 了解資產處理選項 {#get-started}
 
-Experience Manager可進行下列處理層級。
+[!DNL Experience Manager] 允許下列處理層級。
 
 | 選項 | 說明 | 涵蓋的使用案例 |
 |---|---|---|
@@ -57,7 +57,7 @@ Experience Manager可進行下列處理層級。
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
-## 標準配置{#standard-config}
+## 標準配置 {#standard-config}
 
 [!DNL Experience Manager] 根據使用者需求，提供針對常用格式產生更特定轉譯的功能。管理員可以建立其他[!UICONTROL 處理設定檔]以便建立這類轉譯。 然後，使用者將一或多個可用的設定檔指派給特定資料夾，以完成其他處理作業。 例如，額外的處理可產生網頁、行動裝置和平板電腦的轉譯。 以下影片說明如何建立和套用[!UICONTROL 處理設定檔]，以及如何存取已建立的轉譯。
 
@@ -69,7 +69,7 @@ Experience Manager可進行下列處理層級。
 
 處理設定檔可包含FPO（僅限For Placement）轉譯。 請參閱[!DNL Adobe Asset Link] [檔案](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)了解您是否需要為處理設定檔開啟它。 如需詳細資訊，請參閱[Adobe資產連結完成檔案](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。
 
-### 建立標準配置檔案{#create-standard-profile}
+### 建立標準設定檔 {#create-standard-profile}
 
 若要建立標準處理設定檔，請依照下列步驟操作：
 
@@ -99,7 +99,7 @@ The following video demonstrates the usefulness and usage of standard profile.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
-## 自訂設定檔和使用案例{#custom-config}
+## 自訂設定檔和使用案例 {#custom-config}
 
 [!DNL Asset Compute Service]支援多種使用案例，例如預設處理、處理Adobe特定格式(如Photoshop檔案)，以及實作自訂或組織特定處理。 過去需要的DAM更新資產工作流程自訂會自動處理，或透過處理設定檔設定。 如果這些處理選項不滿足業務需求，Adobe建議開發並使用[!DNL Asset Compute Service]擴展預設功能。 如需概覽，請參閱[了解擴充性，以及其使用時機](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)。
 
@@ -120,7 +120,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 >
 >您無法使用自訂應用程式編輯標準中繼資料。 您只能修改自訂中繼資料。
 
-### 建立自訂設定檔{#create-custom-profile}
+### 建立自訂設定檔 {#create-custom-profile}
 
 若要建立自訂設定檔，請執行下列步驟：
 
@@ -141,7 +141,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 >
 >如果Firefly應用程式和[!DNL Experience Manager]帳戶不來自相同的組織，則整合無法運作。
 
-### 自訂設定檔{#custom-profile-example}的範例
+### 自訂設定檔的範例 {#custom-profile-example}
 
 為了說明自訂設定檔的使用方式，我們將考慮使用案例，將一些自訂文字套用至促銷活動影像。 您可以建立處理設定檔，利用Photoshop API來編輯影像。
 
@@ -153,7 +153,7 @@ asset compute服務整合允許Experience Manager使用[!UICONTROL 服務參數]
 
 *圖：使用 [!UICONTROL Service ] Parametersfield將新增資訊傳遞至自訂應用程式中建立的預先定義參數。在此範例中，上傳促銷活動影像時，會以`Arial-BoldMT`字型的`Jumanji`文字更新影像。*
 
-## 使用處理設定檔來處理資產{#use-profiles}
+## 使用處理設定檔來處理資產 {#use-profiles}
 
 建立其他自訂處理設定檔，並套用至特定資料夾，以便Experience Manager處理上傳至或更新在這些資料夾中的資產。 預設的內建標準處理設定檔一律會執行，但使用者介面上不會顯示。 如果您新增自訂設定檔，則兩個設定檔都用來處理上傳的資產。
 
@@ -179,7 +179,7 @@ asset compute服務整合允許Experience Manager使用[!UICONTROL 服務參數]
 
 *圖：處理設定檔套用至上層資料夾時產生的兩個額外轉譯範例。*
 
-## 後置處理工作流程{#post-processing-workflows}
+## 後置處理工作流程 {#post-processing-workflows}
 
 若是使用處理設定檔無法達成的資產需要額外處理的情況，可將其他後續處理工作流程新增至設定。 這可讓您在使用資產微服務的可設定處理上，新增完全自訂的處理。
 
@@ -196,7 +196,7 @@ asset compute服務整合允許Experience Manager使用[!UICONTROL 服務參數]
 * 在結尾新增[!UICONTROL DAM更新資產工作流程完成的程式]步驟。 新增此步驟可確保Experience Manager知道處理何時結束，且資產可標示為已處理，資產上會顯示&#x200B;*New*。
 * 為「自訂工作流程執行者服務」建立設定，可讓您透過路徑（資料夾位置）或規則運算式來設定處理後工作流程模型的執行。
 
-### 建立後處理工作流模型{#create-post-processing-workflow-models}
+### 建立後置處理工作流程模型 {#create-post-processing-workflow-models}
 
 後處理工作流模型是一般的[!DNL Experience Manager]工作流模型。 如果您需要針對不同存放庫位置或資產類型進行不同處理，請建立不同的模型。
 
@@ -204,13 +204,16 @@ asset compute服務整合允許Experience Manager使用[!UICONTROL 服務參數]
 
 請確定每個後置處理工作流程的最後一個步驟為`DAM Update Asset Workflow Completed Process`。 最後一個步驟有助於確保Experience Manager知道資產處理何時完成。
 
-### 配置後處理工作流執行{#configure-post-processing-workflow-execution}
+### 設定後置處理工作流程執行 {#configure-post-processing-workflow-execution}
 
-若要設定在資產微服務處理完成後，針對系統中上傳或更新的資產執行後續處理工作流程模型，必須設定自訂工作流程執行者服務。
+資產微服務完成處理上傳的資產後，您可以定義後續處理，以進一步處理某些資產。 若要使用工作流程模型來設定後續處理，您可以執行下列其中一項操作：
+
+* 設定自訂工作流程執行者服務。
+* 在資料夾[!UICONTROL 屬性]中應用工作流模型。
 
 Adobe CQ DAM自訂工作流程執行器(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服務，提供兩個設定選項：
 
-* 依路徑(`postProcWorkflowsByPath`)的後置處理工作流程：可以根據不同的存放庫路徑列出多個工作流程模型。 路徑和模型應以冒號分隔。 支援簡單的儲存庫路徑，應該映射到`/var`路徑中的工作流模型。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
+* 依路徑(`postProcWorkflowsByPath`)的後置處理工作流程：可以根據不同的存放庫路徑列出多個工作流程模型。 使用冒號分隔路徑和模型。 支援簡單的存放庫路徑。 將這些參數映射到`/var`路徑中的工作流模型。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
 * 依運算式(`postProcWorkflowsByExpression`)進行後續處理工作流程：可以根據不同的規則運算式列出多個工作流程模型。 運算式和模型應以冒號分隔。 規則運算式應直接指向「資產」節點，而非任何一個轉譯或檔案。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
 
 >[!NOTE]
@@ -218,9 +221,15 @@ Adobe CQ DAM自訂工作流程執行器(`com.adobe.cq.dam.processor.nui.impl.wor
 >「自訂工作流程執行者」的設定是OSGi服務的設定。 有關如何部署OSGi配置的資訊，請參閱[部署到Experience Manager](/help/implementing/deploying/overview.md)。
 >與[!DNL Experience Manager]的內部部署和托管服務部署不同，OSGi Web主控台不直接在雲端服務部署中提供。
 
+要在資料夾[!UICONTROL 屬性]中應用工作流模型，請執行以下步驟：
+
+1. 建立工作流模型。
+1. 選取資料夾，從工具列按一下「**[!UICONTROL 屬性]**」，然後按一下「資產處理&#x200B;]**」標籤。**[!UICONTROL 
+1. 在&#x200B;**[!UICONTROL 自動啟動工作流]**&#x200B;下，選擇所需的工作流，提供工作流的標題，然後保存更改。
+
 如需可在後置處理工作流程中使用標準工作流程步驟的詳細資訊，請參閱開發人員參考中的後置處理工作流程](developer-reference-material-apis.md#post-processing-workflows-steps)中的[工作流程步驟。
 
-## 最佳做法和限制{#best-practices-limitations-tips}
+## 最佳實務和限制 {#best-practices-limitations-tips}
 
 * 設計工作流程時，請考量您對所有轉譯類型的需求。 如果您預計未來不需要轉譯，請從工作流程移除其建立步驟。 之後無法大量刪除轉譯。 長時間使用[!DNL Experience Manager]後，不適當的轉譯可能會佔用大量儲存空間。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自訂[!DNL Experience Manager]以刪除特定轉譯或刪除資產並再次上傳這些資產。
 * 目前，支援僅限於產生轉譯。 不支援產生新資產。
