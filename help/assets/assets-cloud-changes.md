@@ -4,9 +4,9 @@ description: 與[!DNL Adobe Experience Manager 6.5相比， [!DNL Adobe Experien
 feature: 發行資訊
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 2b6e67503b212f0da0064e1955a82ccf7beaddea
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '967'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 ## 開發和測試資產微服務 {#asset-microservices}
 
-資產微服務使用雲端服務提供資產的可擴充且可復原處理功能。 Adobe管理雲端服務，以最佳處理不同資產類型和處理選項。 資產微服務有助於避免需要第三方轉譯工具和方法（例如ImageMagick）並簡化設定，同時為常見檔案類型提供現成可用的功能。 您現在可以處理[範圍廣泛的檔案類型](/help/assets/file-format-support.md)，其中包含比舊版Experience Manager更多現成的格式。 例如，現在可以擷取PSD和PSB格式的縮圖，而先前需要的協力廠商解決方案，例如ImageMagick。 不能對[!UICONTROL 處理配置檔案]配置使用ImageMagick的複雜配置。 使用[!DNL Dynamic Media]進階FFmpeg影片轉碼，並使用處理設定檔來將MP4影片](/help/assets/manage-video-assets.md#transcode-video)基本轉碼。[
+資產微服務使用雲端服務提供資產的可擴充且可復原處理功能。 Adobe管理雲端服務，以最佳處理不同資產類型和處理選項。 資產微服務有助於避免需要第三方轉譯工具和方法（例如[!DNL ImageMagick]）並簡化設定，同時為常見檔案類型提供現成可用的功能。 您現在可以處理[範圍廣泛的檔案類型](/help/assets/file-format-support.md)，其中包含比舊版Experience Manager更多現成的格式。 例如，現在可以擷取PSD和PSB格式的縮圖，先前需要的協力廠商解決方案，例如[!DNL ImageMagick]。 對於[!UICONTROL 處理配置檔案]配置，不能使用[!DNL ImageMagick]的複雜配置。 使用[!DNL Dynamic Media]進階FFmpeg影片轉碼，並使用處理設定檔來將MP4影片](/help/assets/manage-video-assets.md#transcode-video)基本轉碼。[
 
 資產微服務是雲端原生服務，會在Cloud Manager中管理的客戶程式和環境中，自動布建並連線至[!DNL Experience Manager]。 若要擴充或自訂[!DNL Experience Manager]，開發人員可使用在雲端環境中產生的現有內容或資產與轉譯，以使用、顯示、下載資產來測試及驗證其程式碼。
 
