@@ -5,18 +5,18 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal，資產分送，設定
 role: Administrator
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 9d219b8de11fd977dab4f75468836892cb13364a
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2409'
 ht-degree: 8%
 
 ---
 
-# 使用Brand Portal {#configure-aem-assets-with-brand-portal}將AEM Assets設定為[!DNL Cloud Service]
+# 使用Brand Portal將AEM Assets設定為[!DNL Cloud Service] {#configure-aem-assets-with-brand-portal}
 
 設定Adobe Experience Manager Assets Brand Portal可讓您將已核准的品牌資產以[!DNL Cloud Service]例項的形式發佈至Brand Portal，並分發給Brand Portal使用者。
 
-## 使用Cloud Manager {#activate-brand-portal}啟用Brand Portal
+## 使用Cloud Manager啟用Brand Portal {#activate-brand-portal}
 
 Cloud Manager使用者會為AEM Assets啟用Brand Portal作為[!DNL Cloud Service]例項。 啟動工作流程會在後端建立必要的設定(授權Token、IMS設定和Brand Portal雲端服務)，並反映Cloud Manager中Brand Portal租用戶的狀態。 啟用Brand Portal可讓AEM Assets使用者將資產發佈至Brand Portal，並分發給Brand Portal使用者。
 
@@ -61,7 +61,7 @@ Cloud Manager使用者會為AEM Assets啟用Brand Portal作為[!DNL Cloud Servic
 >如果現有的Brand Portal雲端設定和AEM Assets作為[!DNL Cloud Service]例項使用相同的IMS組織(org1)，您只需從Cloud Manager啟用Brand Portal即可。
 
 **另請參閱**:
-* [在AEM Assets中新增使用者和角色作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
+* [在AEM Assets中新增使用者和角色作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en)
 
 * [在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
 
@@ -178,7 +178,7 @@ Brand Portal租用戶的預設URL為：`https://<tenant-id>.brand-portal.adobe.c
 >
 >如果您在啟用Brand Portal租用戶時遇到任何問題，請聯絡Adobe支援。
 
-## 使用Adobe開發人員控制台{#manual-configuration}手動配置
+## 使用Adobe開發人員控制台手動配置 {#manual-configuration}
 
 以下章節說明如何使用「Adobe開發人員控制台」，以手動方式將AEM Assets設為[!DNL Cloud Service]搭配Brand Portal。
 
@@ -339,7 +339,7 @@ IMS 設定包括兩個步驟：
 
 -->
 
-### 配置IMS帳戶{#create-ims-account-configuration}
+### 設定IMS帳戶 {#create-ims-account-configuration}
 
 請確認您已執行下列步驟：
 
