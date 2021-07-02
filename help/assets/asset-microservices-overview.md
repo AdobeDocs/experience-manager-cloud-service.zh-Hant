@@ -5,14 +5,14 @@ contentOwner: AG
 feature: asset compute微服務，工作流，發行資訊，資產處理
 role: Architect,Administrator
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '828'
 ht-degree: 1%
 
 ---
 
-# 資產微服務資產擷取與處理概述{#asset-microservices-overview}
+# 使用資產微服務擷取和處理資產概述 {#asset-microservices-overview}
 
 Adobe Experience Manager as a [!DNL Cloud Service]提供雲端原生方法，可運用Experience Manager應用程式和功能。 此新架構的其中一項關鍵元素是資產擷取與處理，由資產微服務提供技術支援。 資產微服務使用雲端服務提供資產的可擴充且可復原處理功能。 Adobe管理雲端服務，以最佳處理不同資產類型和處理選項。 雲端原生資產微服務的主要優點為：
 
@@ -25,9 +25,9 @@ Adobe Experience Manager as a [!DNL Cloud Service]提供雲端原生方法，可
 * 在適用的情況下使用本機Adobe檔案處理服務，提供高保真輸出，並有效處理Adobe專有格式](file-format-support.md)。[
 * 可設定後置處理工作流程，以新增使用者專屬動作和整合。
 
-資產微服務有助於避免需要協力廠商轉譯工具和方法（例如ImageMagick和FFmpeg轉碼）並簡化設定，同時依預設為常見檔案類型提供基本功能。
+資產微服務有助於避免需要第三方轉譯工具和方法（例如[!DNL ImageMagick]和FFmpeg轉碼）並簡化配置，同時依預設為一般檔案格式提供基本功能。
 
-## 高級體系結構{#asset-microservices-architecture}
+## 高級體系結構 {#asset-microservices-architecture}
 
 高階架構圖表可描繪資產擷取、處理以及整個系統中資產流程的關鍵元素。
 
@@ -40,21 +40,21 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 使用資產微服務擷取和處理的關鍵步驟為：
 
-* 用戶端(例如網頁瀏覽器或Adobe資產連結)會傳送上傳請求以Experience Manager，並開始直接將二進位檔上傳至二進位雲端儲存空間。
-* 當直接二進位上傳完成時，用戶端會通知Experience Manager。
-* Experience Manager傳送處理要求至資產微服務。 請求內容取決於Experience Manager中的處理設定檔組態，需指定哪些轉譯項目。
+* 用戶端(例如網頁瀏覽器或Adobe資產連結)會傳送上傳請求至[!DNL Experience Manager]，然後開始直接將二進位檔上傳至二進位雲端儲存空間。
+* 直接二進位上傳完成時，用戶端會通知[!DNL Experience Manager]。
+* [!DNL Experience Manager] 傳送處理要求至資產微服務。請求內容取決於[!DNL Experience Manager]中指定要產生哪些轉譯的處理設定檔設定。
 * 資產微服務後端接收請求，根據請求將其分派給一或多個微服務。 每個微服務直接從二進位雲儲存中訪問原始二進位。
 * 處理結果（例如轉譯）會儲存在二進位雲端儲存空間中。
-* Experience Manager會收到處理完成的通知，並附上產生二進位檔（轉譯）的直接指標。 產生的轉譯可以Experience Manager供上傳的資產使用。
+* Experience Manager會收到處理完成的通知，並附上產生二進位檔（轉譯）的直接指標。 產生的轉譯可在[!DNL Experience Manager]中用於上傳的資產。
 
 這是資產擷取與處理的基本流程。 如果已設定，Experience Manager也可以啟動自訂工作流程模型，以執行資產的後置處理。 例如，執行您環境專屬的自訂步驟，例如從企業系統擷取資訊並新增至資產屬性。
 
 擷取和處理流程是Experience Manager資產微服務架構的重要概念。
 
 * **直接二進位存取**:一旦為Experience Manager環境設定了資產，資產就會傳輸（並上傳）至雲端二進位存放區，然後再 [!DNL Experience Manager]由資產微服務，最後由用戶端直接存取資產，以執行其工作。這樣可最大限度地減少網路負載和儲存的二進位檔的重複
-* **外部化處理**:資產的處理在環境之外完 [!DNL Experience Manager] 成，並節省其資源（CPU、記憶體），以提供關鍵的數字資產管理功能，並支援與系統進行互動式工作，供最終用戶使用
+* **外部化處理**:資產的處理在環境之外完 [!DNL Experience Manager] 成，並節省其資源（CPU、記憶體），以提供關鍵的數位資產管理(DAM)功能，並支援與系統的互動式工作，供一般使用者使用
 
-## 具有直接二進位存取{#asset-upload-with-direct-binary-access}的資產上傳
+## 具有直接二進位存取的資產上傳 {#asset-upload-with-direct-binary-access}
 
 Experience Manager用戶端是產品產品的一部分，預設情況下，所有支援以直接二進位存取方式上傳。 這些包括使用網頁介面、Adobe資產連結和[!DNL Experience Manager]案頭應用程式上傳。
 
@@ -65,7 +65,7 @@ Experience Manager用戶端是產品產品的一部分，預設情況下，所�
 
 如需詳細資訊，請參閱[上傳資產](add-assets.md)。
 
-## 新增自訂資產後續處理{#add-custom-asset-post-processing}
+## 新增自訂資產後續處理 {#add-custom-asset-post-processing}
 
 雖然大部分的客戶應該能透過可設定的資產微服務獲得其所有資產處理需求，但有些客戶可能需要額外的資產處理。 如果需要根據透過整合來自其他系統的資訊處理資產，則此情況尤為常見。 在這類情況下，可使用自訂的後置處理工作流程。
 
