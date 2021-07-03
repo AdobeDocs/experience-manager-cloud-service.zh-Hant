@@ -3,9 +3,9 @@ title: 使用Media Library進行基本數位資產管理
 description: '[!DNL Experience Manager Assets] 和Media Library進行資產管理。'
 contentOwner: AG
 feature: 資產管理，發佈
-role: Business Practitioner,Architect,Leader
+role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Define what is not included
 
 -->
 
-# 使用Media Library進行基本資產管理{#manage-assets-using-media-library}
+# 使用Media Library進行基本資產管理 {#manage-assets-using-media-library}
 
 [!DNL Adobe Experience Manager] platform提供不同的資產管理功能。Media Library可讓使用者將少量資產上傳至存放庫、搜尋及使用網頁中的資產，並完成資產的簡單資產管理工作。
 
@@ -29,13 +29,13 @@ Media Library是輕量型數位資產管理(DAM)解決方案，隨附[!DNL Adobe
 
 [!DNL Adobe Experience Manager Assets] 許可證可單獨購買。[!DNL Experience Manager Assets] 可透過企業使用案例、中繼資料的自訂、結構、搜尋和使用者介面，以及Media Library提供的其他功能，來強大處理資產。
 
-## 許可要求{#avail-media-library-license}
+## 授權需求 {#avail-media-library-license}
 
 擁有[!DNL Sites]授權的客戶有權使用Media Library。 它適用於[!DNL Experience Manager]的所有元件。
 
 Media Library會隨Sites一併安裝。 除了Sites授權和安裝外，不需要其他授權或套件。
 
-## [!DNL Assets] 與Media Library  {#assets-and-media-library}
+## [!DNL Assets] 與Media Library {#assets-and-media-library}
 
 Experience Manager資產提供企業級DAM功能。 資產功能透過單一套件[!DNL Experience Manager]提供。 不過，尚未購買Assets授權的使用者無權使用進階DAM功能。 若沒有Assets授權，僅[Media Library功能](#use-media-library)可供使用。
 
