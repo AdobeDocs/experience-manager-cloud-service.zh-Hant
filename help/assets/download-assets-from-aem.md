@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 資產管理
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '1024'
 ht-degree: 4%
 
 ---
@@ -66,17 +66,19 @@ ht-degree: 4%
 
 1. 在對話框中，按一下&#x200B;**[!UICONTROL Download]**。
 
-<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
-## Download assets shared using link sharing {#link-share-download}
+## 下載使用連結共用共用的資產 {#link-share-download}
 
-Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
+>[!NOTE]
+>
+>此功能可在Experience Manager發行前管道中使用。
 
-When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
+使用連結共用資產是讓感興趣的人能使用的便利方式，而不需先登入[!DNL Assets]。 若要產生共用資產的URL，請使用[連結共用功能](/help/assets/share-assets.md#sharelink)。
 
-The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
+使用者從共用連結下載資產時，[!DNL Assets]會使用非同步服務，提供更快速且不間斷的下載。 要下載的資產會在收件匣的背景中排入佇列，並放入可管理檔案大小的ZIP封存檔中。 若是下載量非常大，下載會分塊為大小為100 GB的檔案。
 
-![Download inbox](assets/download-inbox.png)
--->
+收件匣會顯示每個封存的處理狀態。 處理完成後，您就可以從收件匣下載封存檔。
+
+![下載收件匣](assets/download-inbox.png)
 
 ## 啟用資產下載servlet {#enable-asset-download-servlet}
 
