@@ -2,10 +2,10 @@
 title: 使用專案工作流程
 description: 各種專案工作流程都可立即使用。
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 15%
+source-wordcount: '542'
+ht-degree: 14%
 
 ---
 
@@ -24,7 +24,6 @@ ht-degree: 15%
 |  | **簡單專案** | **媒體專案** | **翻譯專案** |
 |---|:-:|:-:|:-:|
 | 請求副本 |  | x |  |
-| 產品像片拍攝 |  | x |  |
 | 專案核准 | x |  |  |
 | 請求啟動 | x |  |  |
 | 要求登陸頁面 | x |  |  |
@@ -48,7 +47,7 @@ ht-degree: 15%
 
 本節說明「專案」可用的工作流程。
 
-## 請求複製工作流{#request-copy-workflow}
+## 請求複製工作流程 {#request-copy-workflow}
 
 此工作流程可讓您向使用者請求手稿，然後核准。 要啟動請求複製工作流，請執行以下操作：
 
@@ -61,7 +60,7 @@ ht-degree: 15%
 
    ![已新增請求副本](/help/sites-cloud/authoring/assets/projects-request-copy-add.png)
 
-## 項目批准工作流{#project-approval-workflow}
+## 專案核准工作流程 {#project-approval-workflow}
 
 在「專案核准」工作流程中，您會將內容指派給使用者、檢閱，然後核准內容。
 
@@ -74,7 +73,7 @@ ht-degree: 15%
 
    ![已新增請求核准](/help/sites-cloud/authoring/assets/projects-approval-add.png)
 
-## 請求啟動工作流程{#request-launch-workflow}
+## 請求啟動工作流程 {#request-launch-workflow}
 
 此工作流程可讓您要求啟動。
 
@@ -85,6 +84,6 @@ ht-degree: 15%
 
 1. 按一下&#x200B;**建立**。工作流程會開始。 工作流程會顯示在&#x200B;**Workflows**&#x200B;清單中(按一下點&#x200B;**...**&#x200B;工作流程&#x200B;**圖磚上的**&#x200B;以存取此清單)。
 
-## 建立（和翻譯）資產的語言複製工作流程{#create-and-translate-language-copy-workflow-for-assets}
+## 建立（和翻譯）資產的語言複製工作流程 {#create-and-translate-language-copy-workflow-for-assets}
 
 「建 **立語言復本** 」和「 **** 建立和翻譯語言復本」工作流程在建立資產的語言復本時會有詳細說明。
