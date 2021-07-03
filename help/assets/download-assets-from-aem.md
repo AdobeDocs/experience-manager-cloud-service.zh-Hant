@@ -3,16 +3,16 @@ title: 下載資產
 description: 從 [!DNL Adobe Experience Manager Assets] 下載資產，並啟用或停用下載功能。
 contentOwner: AG
 feature: 資產管理
-role: Business Practitioner
+role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 4%
 
 ---
 
-# 從[!DNL Adobe Experience Manager] {#download-assets-from-aem}下載資產
+# 從[!DNL Adobe Experience Manager]下載資產 {#download-assets-from-aem}
 
 您可以下載資產，包括靜態和動態轉譯。 或者，您也可以直接從[!DNL Adobe Experience Manager Assets]傳送包含資產連結的電子郵件。 下載的資產會以ZIP檔案整合。<!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
@@ -31,7 +31,7 @@ ht-degree: 4%
 * [品牌入口網站](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## 使用[!DNL Experience Manager]介面{#download-assets}下載資產
+## 使用[!DNL Experience Manager]介面下載資產 {#download-assets}
 
 非同步下載服務提供大型資產無縫下載的架構。 從使用者介面即時下載較小的檔案。 [!DNL Experience Manager] 不會封存下載原始檔案的單一資產下載。此功能可加快下載速度。 大型檔案會以非同步方式下載，而[!DNL Experience Manager]會透過收件匣中的通知通知完成。 請參閱[了解 [!DNL Experience Manager] 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)。
 
