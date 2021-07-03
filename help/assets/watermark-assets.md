@@ -3,16 +3,16 @@ title: 為資產加上浮水印
 description: 為您的數位資產加上浮水印。
 contentOwner: AG
 feature: 資產管理，發佈
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
 
 ---
 
-# 為資產加上浮水印{#watermark-assets}
+# 為您的資產加上浮水印 {#watermark-assets}
 
 [!DNL Adobe Experience Manager Assets] 可讓您為影像新增數位浮水印。[!DNL Assets] 支援將影像作為浮水印套用至其他影像檔案。水印可以幫助用戶驗證資產的真實性和版權所有權。 此外，水印可用於指示文檔的狀態，如機密、草稿、有效性等。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. [將處理設定檔套用至資料夾，](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 以建立加上浮水印的資產。
 
-## 提示和限制{#tips-limitations-bestpractices}
+## 提示和限制 {#tips-limitations-bestpractices}
 
 * 您可以使用單一設定為所有資產加上浮水印。 水印僅使用一幅影像，其寬度是固定的。
 * 您可以將浮水印置於中心，而不需進行拼貼。
