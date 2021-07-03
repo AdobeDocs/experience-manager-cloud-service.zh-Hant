@@ -3,16 +3,16 @@ title: 時間軸中的活動資料流
 description: 本文說明如何在時間軸上顯示資產的活動記錄。
 contentOwner: AG
 feature: 資產報表，資產管理
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 23%
 
 ---
 
-# 在活動流{#activity-stream-in-timeline}中查看資產操作日誌
+# 在活動資料流中檢視資產作業記錄 {#activity-stream-in-timeline}
 
 此功能會顯示時間軸上資產的活動記錄。 如果您在[!DNL Experience Manager Assets]中執行下列任何資產相關操作，活動資料流功能會更新時間軸以反映活動。
 
