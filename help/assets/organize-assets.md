@@ -3,9 +3,9 @@ title: 組織數位資產
 description: 使用Adobe Experience Manager Assets中提供的各種方法組織您的數位資產。
 contentOwner: AG
 feature: 資產管理，標籤，資產分發
-role: Business Practitioner
+role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 7256300afd83434839c21a32682919f80097f376
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
