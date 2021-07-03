@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
+source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1586'
 ht-degree: 3%
 
 ---
@@ -105,7 +105,9 @@ AEM as aCloud Service2021.6.0中的Cloud Manager發行日期為2021年6月10日�
 
    ![在「視圖設定」中設定預設視圖](/help/assets/assets/view-settings-for-defaults.png)
 
-* Linkshare下載功能使用非同步下載，可大幅提升下載速度。
+* Linkshare下載功能使用非同步下載，可大幅提升下載速度。 請參閱[下載使用連結共用的共用資產](/help/assets/download-assets-from-aem.md#link-share-download)。
+
+   ![下載收件匣](/help/assets/assets/download-inbox.png)
 
 * 使用者可以根據屬性述詞來搜尋和篩選資料夾。
 
