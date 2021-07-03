@@ -3,8 +3,8 @@ title: Creative Cloud整合的內容自動化
 description: 使用Creative Cloud整合產生資產變數
 contentOwner: AG
 feature: 上傳，資產處理，發佈，Asset compute微服務，工作流程
-role: Business Practitioner,Administrator
-source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
+role: User,Admin
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
