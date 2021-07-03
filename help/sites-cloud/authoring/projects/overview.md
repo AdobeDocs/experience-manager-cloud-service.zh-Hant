@@ -2,9 +2,9 @@
 title: 專案
 description: 專案可讓您將資源分組為一個實體，其共同的共用環境可讓您輕鬆管理專案
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1256'
 ht-degree: 12%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 12%
 * [使用任務](/help/sites-cloud/authoring/projects/tasks.md)
 * [使用專案工作流程](/help/sites-cloud/authoring/projects/workflows.md)
 
-## 項目控制台{#projects-console}
+## 專案主控台 {#projects-console}
 
 專案主控台是您在AEM中存取及管理專案的位置。
 
@@ -42,7 +42,7 @@ ht-degree: 12%
 * **切換「作** 用中專案」 ，即可在所有專案之間切換，而只切換作用中的專案。
 * **顯示統** 計資訊查看有關任務完成的項目統計資訊。
 
-## 專案圖磚{#project-tiles}
+## 專案圖磚 {#project-tiles}
 
 使用「專案」，可將不同類型的資訊與專案建立關聯。 這些名稱為&#x200B;**圖磚**。 本節將說明每個圖磚及其包含的資訊類型。
 
@@ -69,7 +69,7 @@ ht-degree: 12%
 
 ![影像集](/help/sites-cloud/authoring/assets/projects-image-sets.png)
 
-### 資產集合{#asset-collections}
+### 資產集合 {#asset-collections}
 
 與資產類似，您可以直接將[資產集合](/help/assets/manage-collections.md)新增至專案。 您可以在資產中定義集合。
 
@@ -151,17 +151,17 @@ ht-degree: 12%
 
 ![任務](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
-## 項目模板{#project-templates}
+## 專案範本 {#project-templates}
 
 AEM隨附三個不同的範本：
 
 * 簡單專案 — 任何不符合其他類別（包羅永珍）的專案的參考範例。 它包含三個基本角色（擁有者、編輯者和觀察者）和四個工作流程（專案核准、請求啟動、請求登錄頁面和請求電子郵件）。
-* 媒體專案 — 媒體相關活動的參考範例專案。 它包含數個與媒體相關的專案角色（攝影師、編輯、文案撰寫者、設計師、擁有者和觀察者）。 此外，還包含與媒體內容相關的兩個工作流程： 「要求復本」（用於要求和檢閱文字）和「產品像片拍攝」（用於管理與產品相關的像片）
+* 媒體專案 — 媒體相關活動的參考範例專案。 它包含數個與媒體相關的專案角色（攝影師、編輯、文案撰寫者、設計師、擁有者和觀察者）。 它也提供「請求複製」工作流程以請求和檢閱文字。
 * [翻譯專案](/help/sites-cloud/administering/translation/overview.md) — 管理翻譯相關活動的參考範例。 它包含三個基本角色（擁有者、編輯和觀察者）。 它包含可在工作流程使用者介面中存取的兩個工作流程。
 
 根據您選取的範本，您有不同的選項可供使用，尤其是使用者角色和工作流程。
 
-## 項目{#user-roles-in-a-project}中的用戶角色
+## 專案中的使用者角色 {#user-roles-in-a-project}
 
 不同的使用者角色會在專案範本中設定，其使用原因有二：
 
@@ -173,7 +173,7 @@ AEM隨附三個不同的範本：
 | 角色 | 說明 | 權限 | 群組成員資格 |
 |---|---|---|---|
 | 觀察者 | 此角色的使用者可以檢視專案詳細資訊，包括專案狀態。 | 專案的唯讀權限 | `workflow-users` 群組 |
-| 編輯者 | 此角色的使用者可以上傳和編輯專案的內容。 | 對專案、相關中繼資料和相關資產的讀取和寫入存取權；上傳照片清單、像片拍攝，以及審核及核准資產的權限；/etc/commerce的寫權限；修改特定專案的權限 | 工作流程使用者群組 |
+| 編輯者 | 此角色的使用者可以上傳和編輯專案的內容。 | 對專案、相關中繼資料和相關資產的讀取和寫入存取權；上傳快照清單，以及審核和核准資產的權限；/etc/commerce的寫權限；修改特定專案的權限 | 工作流程使用者群組 |
 | 所有者 | 此角色的使用者可以起始專案。 擁有者可以建立專案、起始專案中的工作，以及將已核准的資產移至生產資料夾。 雖然項目中的所有其他任務也可以由所有者查看和執行。 | `/etc/commerce`上的寫入權限 | `dam-users` 群組（以建立專案）專案管理員群組（以便建立專案和移動資產） |
 
 >[!NOTE]
