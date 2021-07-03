@@ -3,16 +3,16 @@ title: 支援的檔案格式和MIME類型
 description: ' [!DNL Experience Manager Assets] as a [!DNL Cloud Service]支援的檔案格式和MIME類型。'
 contentOwner: AG
 feature: 資產管理，轉譯
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 8%
 
 ---
 
-# [!DNL Assets] 支援的檔案格式  {#supported-file-formats}
+# [!DNL Assets] 支援的檔案格式 {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] as a支 [!DNL Cloud Service] 援任何二進位檔案的基本內容管理功能（儲存、線上管理元資料、版本設定、上傳和下載等），不受其格式影響。[!DNL Adobe Experience Manager Assets] 支援多種檔案格式，每種產品功能對不同格式的支援各不相同。
 
@@ -34,7 +34,7 @@ ht-degree: 8%
 | * | 請參閱表格下方的備注 |
 | - | 不適用 |
 
-## Adobe格式{#adobe-formats}
+## Adobe格式 {#adobe-formats}
 
 | 檔案格式 | 縮圖產生 | 全文擷取 | 中繼資料擷取 | 寬度/高度 |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
@@ -52,7 +52,7 @@ ht-degree: 8%
 
 \*對於[!DNL Adobe InDesign]檔案(INDD)，格式副本的大小由INDD檔案中嵌入的預覽確定。 在[!DNL InDesign]（**[!UICONTROL 首選項>檔案處理>始終使用文檔保存預覽影像，預覽大小]**）中配置首選項以嵌入較大的格式副本。
 
-## 影像格式{#image-formats}
+## 影像格式 {#image-formats}
 
 | 檔案格式 | 縮圖產生 | 中繼資料擷取 | 寬度/高度 | 裁切 |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
@@ -67,7 +67,7 @@ ht-degree: 8%
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 
-## [!DNL Dynamic Media] {#image-support-dynamic-media}中的影像格式
+## [!DNL Dynamic Media]中的影像格式 {#image-support-dynamic-media}
 
 | 格式 | 上傳（輸入格式） | 建立影像預設集（輸出格式） | 預覽動態轉譯 | 傳送動態轉譯 | 下載動態轉譯 |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -91,7 +91,7 @@ ht-degree: 8%
 * 具有浮點資料的TIFF檔案。
 * 具有Lab色域的TIFF檔案。
 
-## 3D格式{#support-3d-formats}
+## 3D格式 {#support-3d-formats}
 
 支援下列3D格式。
 
@@ -106,7 +106,7 @@ ht-degree: 8%
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
-## [!DNL Camera RAW] 格式  {#camera-raw-formats}
+## [!DNL Camera RAW] 格式 {#camera-raw-formats}
 
 | 檔案格式 | 縮圖產生 | 中繼資料擷取 | 寬度/高度 |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -138,7 +138,7 @@ ht-degree: 8%
 | SRW | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ |
 
-## 文檔格式{#document-formats}
+## 檔案格式 {#document-formats}
 
 資產管理功能支援的文檔格式如下。
 
@@ -164,7 +164,7 @@ ht-degree: 8%
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-## [!DNL Dynamic Media] {#document-support-dynamic-media}中的文檔格式
+## [!DNL Dynamic Media]中的文檔格式 {#document-support-dynamic-media}
 
 | 格式 | 上傳（輸入格式） | 建立影像預設集（輸出格式） | 預覽動態轉譯 | 傳送動態轉譯 | 下載動態轉譯 |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -172,7 +172,7 @@ ht-degree: 8%
 | INDD | ✓ | - | - | - | - |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## 視頻格式{#video-formats}
+## 視訊格式 {#video-formats}
 
 | 檔案格式 | 縮圖產生 | 中繼資料擷取 | 寬度/高度 |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -200,7 +200,7 @@ ht-degree: 8%
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-## 用於轉碼{#video-dynamic-media-transcoding}的[!DNL Dynamic Media]中的視頻格式
+## 用於轉碼的[!DNL Dynamic Media]中的視頻格式 {#video-dynamic-media-transcoding}
 
 | 影片副檔名 | 容器 | 建議的視訊轉碼器 | 不支援的視訊轉碼器 |
 |------------------------|--------------------|--------|-------|
@@ -221,11 +221,11 @@ ht-degree: 8%
 | FLAC | 原生片段 | 免費無損音頻編解碼器 | - |
 | MJ2 | 動作JPEG 2000 | 運動JPEG 2000編解碼器 | - |
 
-## 音頻格式{#audio-formats}
+## 音訊格式 {#audio-formats}
 
 [!DNL Assets] as a提 [!DNL Cloud Service] 供XMP中繼資料擷取支援，以支援AIF、ASF、M4A、MP3、WAV和WMA音訊格式。
 
-## 提示和限制{#limitations-and-tips}
+## 提示和限制 {#limitations-and-tips}
 
 * 目前，中繼資料擷取的檔案大小限制約為10 GB。 上傳超大型資產時，有時中繼資料擷取作業會失敗。
 
