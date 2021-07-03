@@ -5,9 +5,9 @@ contentOwner: AG
 feature: asset compute微服務，工作流，資產處理
 role: Architect,Administrator
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2678'
 ht-degree: 1%
 
 ---
@@ -181,7 +181,7 @@ asset compute服務整合允許Experience Manager使用[!UICONTROL 服務參數]
 
 ## 後置處理工作流程 {#post-processing-workflows}
 
-若是使用處理設定檔無法達成的資產需要額外處理的情況，可將其他後續處理工作流程新增至設定。 這可讓您在使用資產微服務的可設定處理上，新增完全自訂的處理。
+若是使用處理設定檔無法達成的資產需要額外處理的情況，可將其他後續處理工作流程新增至設定。 後置處理可讓您在使用資產微服務的可設定處理之上新增完全自訂的處理。
 
 若已設定，微服務處理完成後，處理後工作流程會由[!DNL Experience Manager]自動執行。 不需要手動新增工作流程啟動器來觸發工作流程。 範例包括：
 
@@ -196,38 +196,41 @@ asset compute服務整合允許Experience Manager使用[!UICONTROL 服務參數]
 * 在結尾新增[!UICONTROL DAM更新資產工作流程完成的程式]步驟。 新增此步驟可確保Experience Manager知道處理何時結束，且資產可標示為已處理，資產上會顯示&#x200B;*New*。
 * 為「自訂工作流程執行者服務」建立設定，可讓您透過路徑（資料夾位置）或規則運算式來設定處理後工作流程模型的執行。
 
+如需可在後置處理工作流程中使用標準工作流程步驟的詳細資訊，請參閱開發人員參考中的後置處理工作流程](developer-reference-material-apis.md#post-processing-workflows-steps)中的[工作流程步驟。
+
 ### 建立後置處理工作流程模型 {#create-post-processing-workflow-models}
 
 後處理工作流模型是一般的[!DNL Experience Manager]工作流模型。 如果您需要針對不同存放庫位置或資產類型進行不同處理，請建立不同的模型。
 
-應根據需求新增處理步驟。 您可以使用任何可用的支援步驟，以及任何自訂實作的工作流程步驟。
+視需要新增處理步驟。 您可以同時使用可用的支援步驟，以及任何自訂實作的工作流程步驟。
 
 請確定每個後置處理工作流程的最後一個步驟為`DAM Update Asset Workflow Completed Process`。 最後一個步驟有助於確保Experience Manager知道資產處理何時完成。
 
 ### 設定後置處理工作流程執行 {#configure-post-processing-workflow-execution}
 
-資產微服務完成處理上傳的資產後，您可以定義後續處理，以進一步處理某些資產。 若要使用工作流程模型來設定後續處理，您可以執行下列其中一項操作：
+資產微服務完成上傳資產的處理後，您可以定義後置處理工作流程以進一步處理資產。 若要使用工作流程模型來設定後續處理，您可以執行下列其中一項操作：
 
-* 設定自訂工作流程執行者服務。
-* 在資料夾[!UICONTROL 屬性]中應用工作流模型。
+* [在資料夾屬性中套用工作流程模型](#apply-workflow-model-to-folder)。
+* [設定自訂工作流程執行者服務](#configure-custom-workflow-runner-service)。
 
-Adobe CQ DAM自訂工作流程執行器(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服務，提供兩個設定選項：
+#### 將工作流模型應用於資料夾 {#apply-workflow-model-to-folder}
 
-* 依路徑(`postProcWorkflowsByPath`)的後置處理工作流程：可以根據不同的存放庫路徑列出多個工作流程模型。 使用冒號分隔路徑和模型。 支援簡單的存放庫路徑。 將這些參數映射到`/var`路徑中的工作流模型。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
-* 依運算式(`postProcWorkflowsByExpression`)進行後續處理工作流程：可以根據不同的規則運算式列出多個工作流程模型。 運算式和模型應以冒號分隔。 規則運算式應直接指向「資產」節點，而非任何一個轉譯或檔案。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
-
->[!NOTE]
->
->「自訂工作流程執行者」的設定是OSGi服務的設定。 有關如何部署OSGi配置的資訊，請參閱[部署到Experience Manager](/help/implementing/deploying/overview.md)。
->與[!DNL Experience Manager]的內部部署和托管服務部署不同，OSGi Web主控台不直接在雲端服務部署中提供。
-
-要在資料夾[!UICONTROL 屬性]中應用工作流模型，請執行以下步驟：
+對於典型的後置處理使用案例，請考慮使用方法將工作流程套用至資料夾。 要在資料夾[!UICONTROL 屬性]中應用工作流模型，請執行以下步驟：
 
 1. 建立工作流模型。
 1. 選取資料夾，從工具列按一下「**[!UICONTROL 屬性]**」，然後按一下「資產處理&#x200B;]**」標籤。**[!UICONTROL 
 1. 在&#x200B;**[!UICONTROL 自動啟動工作流]**&#x200B;下，選擇所需的工作流，提供工作流的標題，然後保存更改。
 
-如需可在後置處理工作流程中使用標準工作流程步驟的詳細資訊，請參閱開發人員參考中的後置處理工作流程](developer-reference-material-apis.md#post-processing-workflows-steps)中的[工作流程步驟。
+   ![將後處理工作流程套用至其屬性中的資料夾](assets/post-processing-profile-workflow-for-folders.png)
+
+#### 設定自訂工作流程執行者服務 {#configure-custom-workflow-runner-service}
+
+您可以為無法透過將工作流程套用至資料夾而輕鬆履行的進階設定，設定自訂工作流程執行者服務。 例如，使用規則運算式的工作流程。 Adobe CQ DAM自訂工作流程執行者(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服務。 它提供下列兩個設定選項：
+
+* 依路徑(`postProcWorkflowsByPath`)的後置處理工作流程：可以根據不同的存放庫路徑列出多個工作流程模型。 使用冒號分隔路徑和模型。 支援簡單的存放庫路徑。 將這些參數映射到`/var`路徑中的工作流模型。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
+* 依運算式(`postProcWorkflowsByExpression`)進行後續處理工作流程：可以根據不同的規則運算式列出多個工作流程模型。 運算式和模型應以冒號分隔。 規則運算式應直接指向「資產」節點，而非任何一個轉譯或檔案。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
+
+要了解如何部署OSGi配置，請參閱[部署到 [!DNL Experience Manager]](/help/implementing/deploying/overview.md)。
 
 ## 最佳實務和限制 {#best-practices-limitations-tips}
 
