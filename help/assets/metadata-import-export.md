@@ -3,20 +3,20 @@ title: 大量匯入和匯出資產中繼資料
 description: 本文說明如何大量匯入和匯出中繼資料。
 contentOwner: AG
 feature: 中繼資料
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 10%
 
 ---
 
-# 大量匯入和匯出資產中繼資料{#import-and-export-asset-metadata-in-bulk}
+# 大量匯入和匯出資產中繼資料 {#import-and-export-asset-metadata-in-bulk}
 
 AEM Assets可讓您使用CSV檔案大量匯入資產中繼資料。 您可以匯入CSV檔案，針對最近上傳的資產或現有資產執行大量更新。 您也可以從協力廠商系統以CSV格式大量內嵌資產中繼資料。
 
-## 導入元資料{#import-metadata}
+## 匯入中繼資料 {#import-metadata}
 
 中繼資料匯入為非同步，不會影響系統效能。 由於使用資產微服務的中繼資料回寫活動，同時更新多個資產的中繼資料可能會耗用大量資源。 Adobe建議您在精益伺服器使用期間規劃任何大量作業，以免影響其他使用者的效能。
 
@@ -39,7 +39,7 @@ AEM Assets可讓您使用CSV檔案大量匯入資產中繼資料。 您可以匯
 
 1. 按一下工具列中的&#x200B;**[!UICONTROL 匯入]**。 匯入中繼資料後，通知會傳送至您的通知收件匣。 導覽至資產屬性頁面，並確認是否已為資產正確匯入中繼資料值。
 
-若要在匯入中繼資料時新增日期和時間戳記，請對日期和時間使用`YYYY-MM-DDThh:mm:ss.fff-00:00`格式。 日期和時間以`T`分隔， `hh`以24小時格式表示小時， `fff`為納秒，而`-00:00`為時區偏移。 例如， `2020-03-26T11:26:00.000-07:00`是2020年3月26日，太平洋時間11:26:00.000 AM。
+若要在匯入中繼資料時新增日期和時間戳記，請對日期和時間使用`YYYY-MM-DDThh:mm:ss.fff-00:00`格式。 日期和時間以`T`分隔， `hh`以24小時格式表示小時， `fff`為納秒，而`-00:00`為時區偏移。 例如， `2020-03-26T11:26:00.000-07:00`是2020年3月26日11:26:00.000 AM PST時間。
 
 >[!CAUTION]
 >
