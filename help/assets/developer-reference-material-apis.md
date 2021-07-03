@@ -3,20 +3,20 @@ title: ' [!DNL Assets]的開發者引用'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
 contentOwner: AG
 feature: API,Assets HTTP API
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 9d0fbffa0f66deb230a85fa8d09f9f3be45db3f8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] 開發人員使用案例、API和參考資料  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] 開發人員使用案例、API和參考資料 {#assets-cloud-service-apis}
 
 本文包含[!DNL Assets]作為[!DNL Cloud Service]的開發人員的建議、參考資料和資源。 其中包含新的資產上傳模組、API參考，以及後置處理工作流程中所提供支援的相關資訊。
 
-## [!DNL Experience Manager Assets] API與操作  {#use-cases-and-apis}
+## [!DNL Experience Manager Assets] API與操作 {#use-cases-and-apis}
 
 [!DNL Assets] as a提供 [!DNL Cloud Service] 數個API，以程式設計方式與數位資產互動。每個API都支援特定使用案例，如下表所述。 [!DNL Assets]用戶介面、[!DNL Experience Manager]案頭應用程式和[!DNL Adobe Asset Link]支援所有或部分操作。
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 | 複製資料夾 | ✓ | ✓ | - | ✓ | - | - |
 | 移動資料夾 | ✓ | ✓ | - | ✓ | - | - |
 
-## 資產上傳{#asset-upload}
+## 資產上傳 {#asset-upload}
 
 在[!DNL Experience Manager]中，以[!DNL Cloud Service]的形式使用HTTP API將資產直接上傳至雲端儲存空間。 上傳二進位檔案的步驟如下。 在外部應用程式中執行這些步驟，而不是在[!DNL Experience Manager] JVM中執行。
 
@@ -85,7 +85,7 @@ ht-degree: 1%
 >[!NOTE]
 請參閱用戶端程式碼，在開放原始碼[aem-upload library](https://github.com/adobe/aem-upload)中實作此方法。
 
-### 啟動上載{#initiate-upload}
+### 起始上傳 {#initiate-upload}
 
 將HTTPPOST請求提交至所需的資料夾。 資產會在此資料夾中建立或更新。 納入選取器`.initiateUpload.json`以指出要求是起始上傳二進位檔案。 例如，應建立資產的資料夾路徑為`/assets/folder`。 POST請求為`POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`。
 
@@ -123,7 +123,7 @@ ht-degree: 1%
 * `minPartSize` （數字）:如果有多個URI，則可提供給任何一個URI的資料的最 `uploadURIs`小長度（以位元組為單位）。
 * `maxPartSize` （數字）:如果有多個URI，則可提供給任何一個URI的資料的 `uploadURIs`最大長度（以位元組為單位）。
 
-### 上傳二進位{#upload-binary}
+### 上傳二進位檔 {#upload-binary}
 
 啟動上載的輸出包括一個或多個上載URI值。 如果提供了多個URI，則客戶端將二進位檔分割為多個部分，並按順序對每個URI發出每個部分的POST請求。 使用所有URI。 確保每個部件的大小在初始響應中指定的最小和最大大小範圍內。 CDN邊緣節點有助於加速請求上傳二進位檔。
 
@@ -135,7 +135,7 @@ ht-degree: 1%
 
 如果上傳成功，伺服器會以`201`狀態代碼回應每個請求。
 
-### 完成上載{#complete-upload}
+### 完成上傳 {#complete-upload}
 
 上傳二進位檔案的所有部分後，請將HTTPPOST請求提交到啟動資料提供的完整URI。 請求內文的內容類型應為`application/x-www-form-urlencoded`表單資料，包含下列欄位。
 
@@ -158,7 +158,7 @@ ht-degree: 1%
 
 如果成功，則伺服器使用`200`狀態代碼進行響應。
 
-### 開放原始碼上傳程式庫{#open-source-upload-library}
+### 開放原始碼上傳程式庫 {#open-source-upload-library}
 
 若要進一步了解上傳演算法或建立專屬的上傳指令碼和工具，Analytics提供開放原始碼程式庫和工具：
 
@@ -179,13 +179,13 @@ ht-degree: 1%
 * [開放原始碼命令列工具](https://github.com/adobe/aio-cli-plugin-aem)。
 
 
-## 資產處理與後續處理工作流程{#post-processing-workflows}
+## 資產處理與後續處理工作流程 {#post-processing-workflows}
 
 在[!DNL Experience Manager]中，資產處理是以使用[資產微服務](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)的&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;組態為基礎。 處理程式不需要開發人員擴充功能。
 
 若要進行後置處理工作流程設定，請使用具有擴充功能的標準工作流程及自訂步驟。
 
-## 支援後置處理工作流{#post-processing-workflows-steps}中的工作流步驟
+## 支援後置處理工作流程中的工作流程步驟 {#post-processing-workflows-steps}
 
 從舊版[!DNL Experience Manager]升級的客戶可使用資產微服務來處理資產。 雲端原生資產微服務的設定與使用更簡單。 不支援舊版[!UICONTROL DAM更新資產]工作流程中使用的一些工作流程步驟。
 
