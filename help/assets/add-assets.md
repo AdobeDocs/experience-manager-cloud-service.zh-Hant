@@ -2,9 +2,9 @@
 title: 將數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作為a [!DNL Cloud Service]。
 feature: 資產管理，上傳
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
@@ -33,7 +33,7 @@ ht-degree: 1%
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 當創意人員和行銷人員從支援的[!DNL Creative Cloud]案頭應用程式內處理資產時，此功能相當實用。 | 創意、行銷人員 |
 | [資產大量內嵌](#asset-bulk-ingestor) | 建議進行大規模遷移和偶爾批量遷移。 僅適用於支援的資料存放區。 | 管理員、開發人員 |
 
-## 上傳資產{#upload-assets}
+## 上傳資產 {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -99,7 +99,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
 -->
 
-### 當資產已存在時處理上傳{#handling-upload-existing-file}
+### 資產已存在時處理上傳 {#handling-upload-existing-file}
 
 您可以上傳與現有資產路徑相同（名稱和位置相同）的資產。 不過，會顯示警告對話方塊，其中包含下列選項：
 
@@ -109,7 +109,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 若要在[!DNL Assets]中保留重複資產，請按一下&#x200B;**[!UICONTROL Keep]**。 若要刪除您上傳的重複資產，請按一下「**[!UICONTROL 刪除]**」。
 
-### 檔案名處理和禁止字元{#filename-handling}
+### 檔案名稱處理和禁止的字元 {#filename-handling}
 
 [!DNL Experience Manager Assets] 會嘗試防止上傳檔案名稱中含有禁止字元的資產。如果您嘗試上傳檔案名稱包含不允許的字元或更多字元的資產， [!DNL Assets]會顯示警告訊息並停止上傳，直到您移除這些字元或上傳了允許的名稱為止。
 
@@ -118,7 +118,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * 資產檔案名`* / : [ \\ ] | # % { } ? &`中的字元無效
 * 資產資料夾名稱`* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`中的字元無效
 
-## 大量上傳資產{#bulk-upload}
+## 大量上傳資產 {#bulk-upload}
 
 大量資產擷取工具可有效處理大量資產。 不過，大規模擷取不只是廣泛的檔案傾印或臨時移轉。 為了將大規模擷取作為符合您業務目的且有效率的有意義的專案，請規劃移轉並組織資產組織。 所有收集都不同，因此在細緻的儲存庫構成和業務需求中，不能概括性地考慮。 以下是計畫及執行大量擷取的幾項總體建議：
 
@@ -132,7 +132,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):適合從本機檔案系統上傳資產的創意專業人員和行銷人員。使用它上傳可在本機使用的巢狀資料夾。
 * [大量擷取工具](#asset-bulk-ingestor):部署時，偶爾或最初擷取大量資產時使用 [!DNL Experience Manager]。
 
-### 資產大量擷取工具{#asset-bulk-ingestor}
+### 資產大量內嵌工具 {#asset-bulk-ingestor}
 
 此工具僅提供給管理員群組，以用於從Azure或S3資料存放區大量擷取資產。 請參閱設定和擷取的影片逐步說明。
 
@@ -178,14 +178,14 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
    ![排程大量內嵌作業](assets/bulk-ingest-schedule1.png)
 
-## 使用案頭用戶端上傳資產{#upload-assets-desktop-clients}
+## 使用案頭用戶端上傳資產 {#upload-assets-desktop-clients}
 
 除了Web瀏覽器用戶介面外，[!DNL Experience Manager]還支援案頭上的其他客戶端。 此外，它們也提供上傳體驗，而無需前往網頁瀏覽器。
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) 可從Adobe Photoshop、Adobe Illustrator和 [!DNL Experience Manager] Adobe InDesign案頭應用程式存取資產。您可以從這些案頭應用程式內，直接從Adobe資產連結使用者介面將目前開啟的檔案上傳至[!DNL Experience Manager]。
 * [[!DNL Experience Manager] 案頭](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 應用程式可簡化在案頭上使用資產的作業，不受其檔案類型或處理資產的原生應用程式所影響。從本機檔案系統上傳巢狀資料夾階層中的檔案特別實用，因為瀏覽器上傳僅支援上傳平面檔案清單。
 
-## 上傳{#process-when-uploaded}時處理資產
+## 上傳時處理資產 {#process-when-uploaded}
 
 若要對上傳的資產執行其他處理，您可以在上傳資料夾上套用處理設定檔。 這些配置檔案在[!DNL Assets]資料夾的&#x200B;**[!UICONTROL 屬性]**&#x200B;頁中可用。 沒有擴充功能或擴充功能不正確的數位資產不會視需要處理。 例如，上傳這類資產時，資產不會發生任何情況，或可能會套用錯誤的處理設定檔。 使用者仍可將二進位檔案儲存在DAM中。
 
@@ -207,11 +207,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 若資料夾已指派處理設定檔，設定檔名稱會顯示在卡片檢視的縮圖上。 在清單檢視中，設定檔名稱會顯示在&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;欄中。
 
-## 使用API {#upload-using-apis}上傳或內嵌資產
+## 使用API上傳或內嵌資產 {#upload-using-apis}
 
 開發人員參考的[asset upload](developer-reference-material-apis.md#asset-upload)區段提供上傳API和通訊協定的技術詳細資訊，以及開放原始碼SDK和範例用戶端的連結。
 
-## 提示、最佳作法和限制{#tips-limitations}
+## 提示、最佳實務和限制 {#tips-limitations}
 
 * 直接二進位上傳是上傳資產的新方法。 預設情況下，產品功能和客戶端（如[!DNL Experience Manager]用戶介面、[!DNL Adobe Asset Link]和[!DNL Experience Manager]案頭應用程式）均支援此功能。 由客戶技術團隊自訂或延伸的任何自訂程式碼，都必須使用新的上傳API和通訊協定。
 
