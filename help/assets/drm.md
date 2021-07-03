@@ -5,18 +5,18 @@ contentOwner: AG
 feature: 資產管理，DRM
 role: Business Practitioner,Administrator
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 7%
 
 ---
 
-# Digital Rights Management資產{#digital-rights-management-in-assets}
+# Digital Rights Management資產 {#digital-rights-management-in-assets}
 
 數位資產通常與指定使用條款和持續時間的授權相關聯。 因為[!DNL Adobe Experience Manager Assets]已與[!DNL Experience Manager]平台完全整合，因此您可以有效管理資產到期資訊和資產狀態。 您也可以將授權資訊與資產建立關聯。
 
-## 資產到期日{#asset-expiration}
+## 資產過期 {#asset-expiration}
 
 資產到期是強制執行資產授權要求的有效方式。 它可確保已發佈的資產在過期時未發佈，以免發生任何違反授權的情況。 沒有管理員權限的使用者無法編輯、複製、移動、發佈和下載過期的資產。
 
@@ -32,7 +32,7 @@ ht-degree: 7%
 1. 從菜單中選擇&#x200B;**[!UICONTROL 引用]**。
 1. 對於過期的資產，「參考」邊欄會在頂端顯示到期狀態&#x200B;**[!UICONTROL 資產已到期]**。 如果資產已過期的子資產，「參考」邊欄會顯示狀態&#x200B;**[!UICONTROL 資產已過期的子資產]**。
 
-### 搜尋過期的資產{#search-expired-assets}
+### 搜尋過期的資產 {#search-expired-assets}
 
 您可以在「搜尋」面板中搜尋過期的資產，包括過期的子資產。
 
@@ -72,7 +72,7 @@ ht-degree: 7%
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
-## 資產狀態{#asset-states}
+## 資產狀態 {#asset-states}
 
 [!DNL Assets]控制台可顯示資產的各種狀態。 根據特定資產的目前狀態，其卡片檢視會顯示描述其狀態的標籤，例如「已到期」、「已發佈」、「已核准」、「已拒絕」等。
 
@@ -105,7 +105,7 @@ ht-degree: 7%
 
 1. 您也可以根據各種搜尋刻面下的狀態組合來搜尋資產。 例如，您可以在搜尋Facet中選取適當的選項，以搜尋已在審核任務中核准且尚未過期的已發佈資產。
 
-## [!DNL Assets] {#digital-rights-management-in-assets-1}中的Digital Rights Management
+## [!DNL Assets]中的Digital Rights Management {#digital-rights-management-in-assets-1}
 
 此功能可強制您接受授權合約，之後您才能從[!DNL Adobe Experience Manager Assets]下載授權資產。
 
@@ -124,7 +124,7 @@ ht-degree: 7%
 >
 >如果建立或修改許可證頁，或將其連接到以前的[!DNL Experience Manager]版本，則Adobe建議將它們儲存在`/apps/settings/dam/drm/licenses`或`/conf/*/settings/dam/drm/licenses`下。
 
-### 下載受DRM保護的資產{#downloading-drm-assets}
+### 下載受DRM保護的資產 {#downloading-drm-assets}
 
 1. 在卡片檢視中，選取您要下載的資產，然後按一下&#x200B;**[!UICONTROL 下載]**。
 1. 在「版 **[!UICONTROL 權管理]** 」頁面中，從清單中選取您要下載的資產。
