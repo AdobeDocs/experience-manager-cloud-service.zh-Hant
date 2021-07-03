@@ -3,16 +3,16 @@ title: 階層式中繼資料
 description: 本文說明如何定義資產的階層式中繼資料。
 contentOwner: AG
 feature: 中繼資料
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 12%
 
 ---
 
-# 級聯元資料{#cascading-metadata}
+# 階層式中繼資料 {#cascading-metadata}
 
 擷取資產的中繼資料資訊時，使用者會在各種可用欄位中提供資訊。 您可以顯示與在其他欄位中選取的選項相關的特定中繼資料欄位或欄位值。 這種元資料的條件顯示稱為級聯元資料。 換言之，您可以在特定中繼資料欄位/值與一或多個欄位及/或其值之間建立相依性。
 
@@ -27,7 +27,7 @@ ht-degree: 12%
 * 根據在另一個欄位中指定的值，變更特定欄位所顯示的選項。
 * 根據其他欄位中指定的值，在特定欄位中設定預設中繼資料值。
 
-## 在[!DNL Experience Manager] {#configure-cascading-metadata-in-aem}中配置級聯元資料
+## 在[!DNL Experience Manager]中配置級聯元資料 {#configure-cascading-metadata-in-aem}
 
 假設您要根據選取的資產類型顯示階層式中繼資料。 一些範例
 
