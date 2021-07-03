@@ -3,9 +3,9 @@ title: 使用資產微服務處理資產
 description: 使用雲端原生和可擴充的資產處理微服務處理您的數位資產。
 contentOwner: AG
 feature: asset compute微服務，工作流，發行資訊，資產處理
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 1%
