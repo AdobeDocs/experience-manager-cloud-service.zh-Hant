@@ -3,9 +3,9 @@ title: XMP 中繼資料
 description: 了解用於中繼資料管理的XMP（可擴充中繼資料平台）中繼資料標準。 它被AEM用作建立、處理和交換元資料的標準格式。
 contentOwner: AG
 feature: 中繼資料
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 15%
@@ -18,7 +18,7 @@ XMP（可擴充中繼資料平台）是AEM Assets用於所有中繼資料管理�
 
 除了提供可嵌入到所有檔案格式的通用元資料編碼，XMP還提供豐富的[內容模型](#xmp-core-concepts)，並受Adobe](#advantages-of-xmp)和其他公司支援[，因此XMP的用戶與AEM Assets相結合擁有一個強大的平台來構建。
 
-## XMP概述和生態系統{#xmp-ecosystem}
+## XMP概述與生態系統 {#xmp-ecosystem}
 
 AEM Assets原生支援XMP中繼資料標準。 XMP是處理和儲存數位資產中標準化和專屬中繼資料的標準。 XMP的設計是通用標準，可讓多個應用程式有效處理中繼資料。
 
@@ -34,7 +34,7 @@ XMP定義了 [中繼資料](https://en.wikipedia.org/wiki/Metadata) 模型，可
 
 XMP最常是使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium)[Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF)的子集進行序列化和儲存，該子集又以 [XML表示](https://en.wikipedia.org/wiki/XML)。
 
-### XMP {#advantages-of-xmp}的優點
+### XMP的優點 {#advantages-of-xmp}
 
 XMP比其他編碼標準和架構有下列優點：
 
@@ -49,7 +49,7 @@ XMP標準的設計可擴充，可讓您將自訂中繼資料類型新增至XMP�
 >
 >XMP通常不允許嵌入二進位資料類型。 若要在XMP中傳送二進位資料（例如縮圖影像），必須以XML友好格式（例如`Base64`）進行編碼。
 
-### XMP核心概念{#xmp-core-concepts}
+### XMP核心概念 {#xmp-core-concepts}
 
 **命名空間和架構**
 
@@ -71,7 +71,7 @@ XMP可包含一或多個結構中的屬性。 例如，許多Adobe應用程式�
 
 XMP可讓您將`xml:lang`屬性新增至文字屬性，以指定文字的語言。
 
-## XMP回寫至轉譯{#xmp-writeback-to-renditions}
+## XMP回寫至轉譯 {#xmp-writeback-to-renditions}
 
 [!DNL Adobe Experience Manager Assets]中的此XMP回寫功能會將中繼資料變更複製到原始資產的轉譯。
 當您從[!DNL Assets]內變更資產的中繼資料，或在上傳資產時，變更會最初儲存在資產階層的中繼資料節點中。 回寫功能可讓您將中繼資料變更傳播至資產的所有或特定轉譯。 該功能僅寫回那些使用`jcr`命名空間的元資料屬性，即，名為`dc:title`的屬性被寫回，但名為`mytitle`的屬性沒有。
@@ -88,7 +88,7 @@ XMP可讓您將`xml:lang`屬性新增至文字屬性，以指定文字的語言�
 >
 >預設情況下，[!DNL Assets]中未啟用回寫功能。 請參閱如何[啟用元資料回寫](#enable-xmp-writeback)。 數位資產的MSM無法搭配啟用中繼資料回寫運作。 回寫時，繼承會中斷。
 
-### 啟用XMP回寫{#enable-xmp-writeback}
+### 啟用XMP回寫 {#enable-xmp-writeback}
 
 [!UICONTROL DAM中繼] 資料回寫工作流程可用來回寫資產的中繼資料。要啟用回寫，請遵循以下三種方法之一：
 
