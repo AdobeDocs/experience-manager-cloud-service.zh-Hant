@@ -5,14 +5,14 @@ contentOwner: AG
 feature: 資產管理
 role: Business Practitioner,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
 
 ---
 
-# 將資產引入[!DNL Cloud Service] {#assets-cloud-service-introduction}
+# 將資產作為[!DNL Cloud Service]簡介 {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -26,7 +26,7 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service]提供雲端原生的Pa
 
 請閱讀以了解新Assets功能](#whats-new-assets)的詳細資訊，以及[已知問題](/help/release-notes/known-issues.md)。 [請參閱[已棄用或已移除功能的清單](/help/release-notes/deprecated-removed-features.md) ，了解此版本中已移除的內容，並參閱此[即將推出的功能清單](/help/release-notes/known-issues.md#upcoming-assets-capabilities) ，了解近期即將推出的內容。 最後，借助此[字彙表](/help/overview/terminology.md)了解AEM術語。
 
-## 解決方案優勢{#solution-benefits}
+## 解決方案優點 {#solution-benefits}
 
 以下是資產作為[!DNL Cloud Service]的主要優點。 如需詳細資訊，請參閱[Experience Manager概觀as a [!DNL Cloud Service]](/help/overview/introduction.md)。
 
@@ -37,7 +37,7 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service]提供雲端原生的Pa
 * **持續監控**:系統的監控是自動的、內建的檢查和觸發器，有助於維護效能、可用性和整體健全性。
 * **輕鬆部署**:AEM在雲端作業中是完全自動化的，不需要手動干預。對於自動部署，Cloud Manager(CM)元件會自動建立包含您自訂程式碼的可部署Docker影像。
 
-## 新資產功能{#whats-new-assets}
+## 新資產功能 {#whats-new-assets}
 
 重要的新功能包括：
 
