@@ -2,9 +2,9 @@
 title: 管理專案
 description: 專案可讓您將資源分組為一個實體，以便在專案主控台中存取和管理，借此組織專案
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '915'
 ht-degree: 12%
 
 ---
@@ -19,14 +19,17 @@ ht-degree: 12%
 
 在「專案」中，您可以建立專案、將資源與專案建立關聯，以及刪除專案或資源連結。 您可能想要開啟圖磚以檢視其內容，並新增項目至圖磚。 本主題說明這些程式。
 
-## 建立項目{#creating-a-project}
+## 建立專案 {#creating-a-project}
 
 AEM提供下列範本，供您在建立專案時自行選擇：
 
 * 簡單專案
 * 媒體專案
-* 產品像片拍攝專案
 * 翻譯專案
+
+<!-- Hiding product photoshoot via cqdoc-18072 as it is not available in Skyline.
+* Product Photo Shoot Project 
+-->
 
 從專案到專案，建立專案的程式都相同。專案類型之間的差異包括可用的使 [用者角色](/help/sites-cloud/authoring/projects/overview.md)[和工作流程](/help/sites-cloud/authoring/projects/workflows.md)。要建立新項目，請執行以下操作：
 
@@ -41,7 +44,7 @@ AEM提供下列範本，供您在建立專案時自行選擇：
 
 1. 點選/按一下&#x200B;**建立**。 確認會詢問您是否要開啟新專案或返回主控台。
 
-### 將資源與項目{#associating-resources-with-your-project}關聯
+### 將資源與項目關聯 {#associating-resources-with-your-project}
 
 由於項目使您可以將資源分組到一個實體，因此您要將資源與項目關聯。 這些資源稱為&#x200B;**圖磚**。 [專案圖磚](/help/sites-cloud/authoring/projects/overview.md#project-tiles)中會說明您可新增的資源類型。
 
@@ -58,7 +61,7 @@ AEM提供下列範本，供您在建立專案時自行選擇：
 
 1. 點選/按一下&#x200B;**建立**。 您的資源已連結至專案，從現在開始，您就可以從專案存取。
 
-### 刪除項目或資源連結{#deleting-a-project-or-resource-link}
+### 刪除專案或資源連結 {#deleting-a-project-or-resource-link}
 
 從主控台刪除專案或從專案刪除連結資源時，會使用相同的方法：
 
@@ -76,7 +79,7 @@ AEM提供下列範本，供您在建立專案時自行選擇：
 >
 >當您建立專案並將使用者新增至各種角色時，系統會自動建立與專案相關的群組，以管理相關的權限。例如，名為Myproject的專案會有三個群組 **Myproject Owners**、 **Myproject Editors**、 **Myproject Obsertors**。不過，如果刪除專案，這些群組不會自動刪除。管理員需要手動刪除「工具 **>安全** 性 **>** 群組 ****」。
 
-### 將項添加到磁貼{#adding-items-to-a-tile}
+### 將項目新增至圖磚 {#adding-items-to-a-tile}
 
 在某些圖磚中，您可能想要新增多個項目。 例如，您可能一次執行多個工作流程或執行多個體驗。
 
@@ -90,7 +93,7 @@ AEM提供下列範本，供您在建立專案時自行選擇：
 
    ![新增至圖磚的其他項目](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
-### 開啟磁貼{#opening-a-tile}
+### 開啟磁貼 {#opening-a-tile}
 
 您可能想要查看當前表徵圖中包含的項目，或修改或刪除表徵圖中的項目。
 
@@ -104,19 +107,19 @@ AEM提供下列範本，供您在建立專案時自行選擇：
 
    ![磁貼已開啟](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
 
-## 查看項目統計資料{#viewing-project-statistics}
+## 查看項目統計資訊 {#viewing-project-statistics}
 
 要查看項目統計資訊，請在&#x200B;**項目**&#x200B;控制台中，按一下&#x200B;**顯示統計資訊視圖**。 隨即顯示每個專案的完成層級。 再次按一下「**顯示統計資訊視圖**」以轉到&#x200B;**項目**&#x200B;控制台。
 
 ![項目統計](/help/sites-cloud/authoring/assets/projects-stats.png)
 
-### 查看項目時間軸{#viewing-a-project-timeline}
+### 檢視專案時間軸 {#viewing-a-project-timeline}
 
 專案時間軸提供上次使用專案中資產的時間。 若要檢視專案時間軸，請按一下/點選&#x200B;**時間軸**，然後進入選取模式並選取專案。 資產會顯示在左窗格中。 按一下/點選&#x200B;**時間軸**&#x200B;以返回&#x200B;**專案**&#x200B;主控台。
 
 ![專案時間表](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
-### 查看活動/非活動項目{#viewing-active-inactive-projects}
+### 檢視作用中/非作用中專案 {#viewing-active-inactive-projects}
 
 若要在使用中和非使用中專案之間切換，請在&#x200B;**專案**&#x200B;主控台中，按一下&#x200B;**切換使用中專案**。 如果圖示旁邊有核取記號，則會顯示使用中的專案。
 
@@ -126,7 +129,7 @@ AEM提供下列範本，供您在建立專案時自行選擇：
 
 ![切換非使用中專案按鈕](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
-## 將項目設為非活動或活動{#making-projects-inactive-or-active}
+## 將專案設為非作用中或作用中 {#making-projects-inactive-or-active}
 
 如果已完成項目，您可能希望將其設為非活動項目，但仍希望保留有關該項目的資訊。
 
