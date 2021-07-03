@@ -3,16 +3,16 @@ title: 簽入和簽出 [!DNL Assets]中的檔案
 description: 了解如何簽出要編輯的資產，並在變更完成後重新簽入。
 contentOwner: AG
 feature: 資產管理
-role: Business Practitioner
+role: User
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
 
-# [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}中的簽入和簽出檔案
+# [!DNL Experience Manager] DAM中的簽入和簽出檔案 {#check-in-and-check-out-files-in-assets}
 
 [!DNL Adobe Experience Manager Assets] 可讓您簽出要編輯的資產，並在完成變更後重新簽入。結帳資產後，只有您可以編輯、注釋、發佈、移動或刪除資產。 簽出資產會鎖定資產。 在您將資產簽回[!DNL Assets]之前，其他使用者無法對資產執行任何這些操作。 不過，他們仍可以變更鎖定資產的中繼資料。
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 此功能可協助防止其他使用者覆寫作者所做的變更，讓多位使用者共同合作編輯團隊間的工作流程。
 
-## 查看資產{#checking-out-assets}
+## 結帳資產 {#checking-out-assets}
 
 1. 從[!DNL Assets]使用者介面中，選取您要結帳的資產。 您也可以選取多個要結帳的資產。
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 1. 從[!DNL Assets]介面中選擇已編輯的資產，然後從工具欄按一下&#x200B;**[!UICONTROL 簽入]**。 已修改的資產已簽入[!DNL Assets]，可供其他使用者編輯。
 
-## 在{#forced-check-in}中強制檢查
+## 強制簽入 {#forced-check-in}
 
 管理員可以簽入其他用戶簽出的資產。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 1. 在工具欄中，按一下&#x200B;**[!UICONTROL 釋放鎖定]**。 資產會重新簽入，供其他使用者編輯。
 
-## 最佳做法和限制{#tips-limitations}
+## 最佳實務和限制 {#tips-limitations}
 
 * 可以刪除包含已簽出資產檔案的&#x200B;*資料夾*。 刪除資料夾前，請確定使用者未簽出任何數位資產。
 
