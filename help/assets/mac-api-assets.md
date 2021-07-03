@@ -3,16 +3,16 @@ title: Assets HTTP API
 description: 使用 [!DNL Experience Manager Assets]中的HTTP API建立、讀取、更新、刪除、管理數位資產。
 contentOwner: AG
 feature: Assets HTTP API,API
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] HTTP API  {#assets-http-api}
+# [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
 
 ## 概覽 {#overview}
 
@@ -35,7 +35,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 如需詳細資訊，請參閱 [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)中的[內容片段支援。
 
-## 資料模型{#data-model}
+## 資料模型 {#data-model}
 
 [!DNL Assets] HTTP API公開兩個主要元素、資料夾和資產（適用於標準資產）。 此外，也會針對描述內容片段中結構化內容的自訂資料模型，公開更詳細的元素。 如需詳細資訊，請參閱[內容片段資料模型](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)。
 
@@ -77,7 +77,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 * 屬性.
 * 連結.
 
-## 可用功能{#available-features}
+## 可用功能 {#available-features}
 
 [!DNL Assets] HTTP API包含下列功能：
 
@@ -106,7 +106,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 * Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
 -->
 
-## 檢索清單{#retrieve-a-folder-listing}的資料夾
+## 檢索資料夾清單 {#retrieve-a-folder-listing}
 
 檢索現有資料夾及其子實體（子資料夾或資產）的Siren表示。
 
@@ -120,7 +120,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 **回應**:傳回的實體類別為資產或資料夾。包含的實體的屬性是每個實體的全部屬性集的子集。 為了獲得實體的完整表示，客戶端應檢索連結所指向的URL的內容，該連結具有`self`的`rel`。
 
-## 建立資料夾{#create-a-folder}
+## 建立資料夾 {#create-a-folder}
 
 建立`sling`:`OrderedFolder`。 如果提供`*`而非節點名稱，則servlet將參數名稱用作節點名稱。 請求接受以下任一項：
 
@@ -145,15 +145,15 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 * 412 - PINCEPORATE FAILED — 如果找不到或存取根集合。
 * 500 — 內部伺服器錯誤 — 如果有其他問題。
 
-## 建立資產{#create-an-asset}
+## 建立資產 {#create-an-asset}
 
 如需如何建立資產的詳細資訊，請參閱[資產上傳](developer-reference-material-apis.md)。 您無法使用HTTP API建立資產。
 
-## 更新資產二進位檔{#update-asset-binary}
+## 更新資產二進位檔 {#update-asset-binary}
 
 如需如何更新資產二進位檔的資訊，請參閱[資產上傳](developer-reference-material-apis.md)。 您無法使用HTTP API更新資產二進位檔。
 
-## 更新資產{#update-asset-metadata}的中繼資料
+## 更新資產的中繼資料 {#update-asset-metadata}
 
 更新資產中繼資料屬性。 如果您更新`dc:`命名空間中的任何屬性，API會更新`jcr`命名空間中的相同屬性。 API不會同步兩個命名空間下的屬性。
 
@@ -166,7 +166,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 * 412 - PINCEPORATE FAILED — 如果找不到或存取根集合。
 * 500 — 內部伺服器錯誤 — 如果有其他問題。
 
-## 建立資產轉譯{#create-an-asset-rendition}
+## 建立資產轉譯 {#create-an-asset-rendition}
 
 為資產建立轉譯。 如果未提供請求參數名稱，則會將檔案名稱用作格式副本名稱。
 
@@ -184,7 +184,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 * 412 - PINCEPORATE FAILED — 如果找不到或存取根集合。
 * 500 — 內部伺服器錯誤 — 如果有其他問題。
 
-## 更新資產轉譯{#update-an-asset-rendition}
+## 更新資產轉譯 {#update-an-asset-rendition}
 
 更新會分別以新的二進位資料取代資產轉譯。
 
@@ -197,7 +197,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 * 412 - PINCEPORATE FAILED — 如果找不到或存取根集合。
 * 500 — 內部伺服器錯誤 — 如果有其他問題。
 
-## 在資產{#create-an-asset-comment}上新增註解
+## 在資產上新增註解 {#create-an-asset-comment}
 
 **參數**:參數適 `message` 用於註解的訊息內文，以 `annotationData` 及JSON格式的附註資料。
 
@@ -210,7 +210,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 * 412 - PINCEPORATE FAILED — 如果找不到或存取根集合。
 * 500 — 內部伺服器錯誤 — 如果有其他問題。
 
-## 複製資料夾或資產{#copy-a-folder-or-asset}
+## 複製資料夾或資產 {#copy-a-folder-or-asset}
 
 複製提供路徑中可用的資料夾或資產，以前往新目的地。
 
@@ -229,7 +229,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 * 412 — 先決條件失敗 — 如果缺少請求標題。
 * 500 — 內部伺服器錯誤 — 如果有其他問題。
 
-## 移動資料夾或資產{#move-a-folder-or-asset}
+## 移動資料夾或資產 {#move-a-folder-or-asset}
 
 將指定路徑的資料夾或資產移至新目的地。
 
@@ -248,7 +248,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 * 412 — 先決條件失敗 — 如果缺少請求標題。
 * 500 — 內部伺服器錯誤 — 如果有其他問題。
 
-## 刪除資料夾、資產或轉譯{#delete-a-folder-asset-or-rendition}
+## 刪除資料夾、資產或轉譯 {#delete-a-folder-asset-or-rendition}
 
 刪除提供路徑上的資源(-tree)。
 
@@ -264,7 +264,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 * 412 - PINCEPORATE FAILED — 如果找不到或存取根集合。
 * 500 — 內部伺服器錯誤 — 如果有其他問題。
 
-## 提示、最佳作法和限制{#tips-limitations}
+## 提示、最佳實務和限制 {#tips-limitations}
 
 * 在[!UICONTROL 關閉時間]之後，資產及其轉譯無法透過[!DNL Assets]網頁介面和HTTP API使用。 如果[!UICONTROL 準時]為將來或[!UICONTROL 非時間]為過去，則API會傳回404錯誤訊息。
 
