@@ -3,9 +3,9 @@ title: 使用與共用的相關報表
 description: ' [!DNL Adobe Experience Manager Assets] 中有關資產的報表，可協助您了解數位資產的使用情形、活動和共用情形。'
 contentOwner: AG
 feature: 資產報表，資產管理
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 5%
