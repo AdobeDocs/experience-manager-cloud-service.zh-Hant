@@ -4,9 +4,9 @@ description: 了解Adobe Experience Manager Assets中的收集概念。 了解�
 contentOwner: AG
 mini-toc-levels: 1
 feature: 集合，資產管理
-role: Business Practitioner
+role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2400'
 ht-degree: 19%
@@ -27,17 +27,17 @@ ht-degree: 19%
 
 * 智慧型集合，根據搜尋條件以動態方式包含資產。
 
-## 訪問集合控制台{#navigate-the-collections-console}
+## 存取集合主控台 {#navigate-the-collections-console}
 
 若要開啟&#x200B;**[!UICONTROL 集合]**&#x200B;控制台：
 
 若要開啟&#x200B;**[!UICONTROL 集合]**，請點選或按一下Experience Manager標誌。 從導覽頁面，前往&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Collections]**。
 
-## 建立集合{#create-a-collection}
+## 建立集合 {#create-a-collection}
 
 您可以使用[靜態參考](#create-a-collection-with-static-references)或根據[搜尋准則型篩選器](#create-a-smart-collection)建立集合。 您也可以從燈箱建立集合。
 
-### 使用靜態參考{#create-a-collection-with-static-references}建立集合
+### 使用靜態參考建立集合 {#create-a-collection-with-static-references}
 
 您可以建立包含靜態參照的集合，例如，包含資產、資料夾、集合、回轉集和影像集參考的集合。
 
@@ -59,7 +59,7 @@ ht-degree: 19%
 
    若要新增資產至集合，請導覽至「資產」使用者介面。 如需詳細資訊，請參閱[將資產新增至集合](#add-assets-to-a-collection)。
 
-### 使用dropzone {#create-collections-using-dropzone}建立集合
+### 使用放置區建立集合 {#create-collections-using-dropzone}
 
 您可以從資產UI將資產拖曳至集合。 您也可以建立集合的復本，並將資產拖曳至該處。
 
@@ -69,7 +69,7 @@ ht-degree: 19%
 1. 在「建 **[!UICONTROL 立新系列]** 」對話方塊中，指定系列的名稱。如果您希望系列可供所有使用者存取，請選取「公用 **[!UICONTROL 系列」]**。
 1. 點選/按一下&#x200B;**[!UICONTROL 繼續]**&#x200B;以建立系列。
 
-### 建立智慧型集合{#create-a-smart-collection}
+### 建立智慧型集合 {#create-a-smart-collection}
 
 智慧型集合會使用搜尋條件來動態填入資產。 您可以僅使用檔案而不使用資料夾或檔案和資料夾來建立智慧集合。
 
@@ -86,7 +86,7 @@ ht-degree: 19%
 1. 點選/按一 **[!UICONTROL 下「儲存]** 」以建立智慧型系列，然後關閉訊息方塊以完成程式。新的智慧型系列也會新增至「已儲存的搜 **[!UICONTROL 尋」清單]** 。.
 「建立智慧選 **[!UICONTROL 擇」按鈕的標籤將更改為]** 「編 **[!UICONTROL 輯智慧選擇」]**。要編輯智慧系列的設定，請從「檔案和文 **[!UICONTROL 件夾]** 」列 **[!UICONTROL 表中選擇「檔案]** 」。然後，點選/按一下「編 **[!UICONTROL 輯智慧型選取]** 」按鈕。
 
-## 將資產新增至集合{#add-assets-to-a-collection}
+## 新增資產至集合 {#add-assets-to-a-collection}
 
 您可以新增資產至包含參考資產或資料夾清單的集合。
 
@@ -99,7 +99,7 @@ ht-degree: 19%
 1. 在&#x200B;**[!UICONTROL 新增至集合]**&#x200B;頁面中，選取您要新增資產的集合。
 1. 點選/按一下&#x200B;**[!UICONTROL 新增]**，然後關閉確認訊息。 資產會新增至集合。
 
-## 編輯智慧集合{#edit-a-smart-collection}
+## 編輯智慧型集合 {#edit-a-smart-collection}
 
 智慧型集合是透過儲存搜尋來建立，因此您可以修改[已儲存搜尋](#saved-searches)的搜尋參數來變更其內容。
 
@@ -113,7 +113,7 @@ ht-degree: 19%
 1. 點選/按一下「**[!UICONTROL 覆寫]**」 ，將原始智慧型系列取代為已編輯的系列。 或者，選取&#x200B;**[!UICONTROL 另存新檔]**&#x200B;以個別儲存已編輯的集合。
 1. 在確認對話方塊中，點選/按一下&#x200B;**[!UICONTROL 儲存]**&#x200B;以完成程式。
 
-## 查看和編輯集合元資料{#view-and-edit-collection-metadata}
+## 檢視及編輯系列中繼資料 {#view-and-edit-collection-metadata}
 
 集合中繼資料包含關於集合的資料，包括所新增的任何標籤。
 
@@ -121,7 +121,7 @@ ht-degree: 19%
 1. 在「系列 **[!UICONTROL 中繼資料]** 」頁面中，從「基本」和「進階」標籤檢視系 **[!UICONTROL 列中繼資]** 料 **** 。
 1. 視需要修改中繼資料，然後從工具列點選/按一下「儲存並關閉&#x200B;]**」以儲存變更。**[!UICONTROL 
 
-### 大量編輯集合元資料{#edit-collection-metadata-in-bulk}
+### 大量編輯集合中繼資料 {#edit-collection-metadata-in-bulk}
 
 您可以同時編輯多個集合的中繼資料。 此功能可協助您快速復寫多個集合中的通用中繼資料。
 
@@ -139,19 +139,19 @@ ht-degree: 19%
 
 集合內的搜尋功能支援「搜尋集合」[和「搜尋集合」](#search-collections)和「搜尋集合」](#search-within-collections)內的資產」。[
 
-### 搜尋集合{#search-collections}
+### 搜尋集合 {#search-collections}
 
 您可以從集合控制台搜尋集合。 當您在Omnisearch方塊中搜尋關鍵字時，[!DNL Experience Manager Assets]會搜尋集合名稱、中繼資料，以及新增至集合的標籤。
 
 如果您從頂層搜尋集合，則搜尋結果中只會傳回個別的集合。 集合內的資產或資料夾會遭排除。 在所有其他情況下（例如在個別集合或資料夾階層中），會傳回所有相關資產、資料夾和集合。
 
-### 在集合內搜尋{#search-within-collections}
+### 在集合內搜尋 {#search-within-collections}
 
 在「系列」主控台中，點選/按一下系列以開啟它。
 
 在集合內，[!DNL Experience Manager]搜尋僅限於您檢視的集合內的資產（及其標籤和中繼資料）。 在資料夾內搜尋時，會傳回目前資料夾內所有相符的資產和子資料夾。 在集合內搜尋時，系統只會傳回相符的資產、資料夾和其他集合，這些集合是集合的直接成員。
 
-## 編輯集合設定{#edit-collection-settings}
+## 編輯集合設定 {#edit-collection-settings}
 
 您可以編輯系列設定，例如標題和說明，或將成員新增至系列。
 
@@ -159,7 +159,7 @@ ht-degree: 19%
 1. 修改「系列設定」頁面中 **[!UICONTROL 的系列設定]** 。例如，修改系列標題、說明、成員和權限，如「新增系列」中所 [述](#create-a-collection)。
 1. 點選/按一下&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存變更。
 
-## 刪除集合{#delete-a-collection}
+## 刪除集合 {#delete-a-collection}
 
 1. 從「系列」主控台中，選取一或多個系列，然後點選/按一下工具列中的刪除圖示。
 1. 在對話方塊中，點選/按一下&#x200B;**[!UICONTROL Delete]**&#x200B;以確認刪除動作。
@@ -168,7 +168,7 @@ ht-degree: 19%
    >
    >您也可以透過[刪除已儲存的搜尋](#saved-searches)刪除智慧型集合。
 
-## 下載集合{#download-a-collection}
+## 下載集合 {#download-a-collection}
 
 下載集合時，會下載集合內的整個資產階層，包括資料夾和子集合。
 
@@ -178,7 +178,7 @@ ht-degree: 19%
 
    當您選取要下載的集合時，會下載集合下的完整資料夾階層。 若要將您下載的每個系列（包括父系列下巢狀的子系列中的資產）包含在個別資料夾中，請選取「為每個資產建立個別資料夾」 ****。
 
-## 編輯多個集合的元資料屬性{#editing-metadata-properties-of-multiple-collections}
+## 編輯多個集合的中繼資料屬性 {#editing-metadata-properties-of-multiple-collections}
 
 AdobeEnterprise Manager Assets可讓您大量編輯許多集合的中繼資料。 使用「[!UICONTROL 屬性]」頁可在多個集合上執行元資料更改，例如，將元資料屬性更改為公共值或添加或修改標籤。
 
@@ -206,7 +206,7 @@ AdobeEnterprise Manager Assets可讓您大量編輯許多集合的中繼資料�
 
 1. 儲存變更。
 
-## 建立巢狀集合{#create-nested-collections}
+## 建立巢狀集合 {#create-nested-collections}
 
 您可以將集合新增至其他集合，借此建立巢狀集合。
 
@@ -223,7 +223,7 @@ AdobeEnterprise Manager Assets可讓您大量編輯許多集合的中繼資料�
 >
 >智慧型集合無法巢狀。 換言之，智慧型集合不能包含任何其他集合。
 
-## 已保存的搜索{#saved-searches}
+## 已儲存的搜尋 {#saved-searches}
 
 在「資產」使用者介面中，您可以根據特定規則、搜尋准則或自訂搜尋刻面來搜尋或篩選資產。如果您將這些項目儲存為「 **[!UICONTROL 已儲存的搜尋]**」，您稍後可從「篩選」面板的「已儲存的搜尋 **** 」清單中存取。建立儲存的搜尋也會建立智慧型系列。
 
@@ -244,7 +244,7 @@ AdobeEnterprise Manager Assets可讓您大量編輯許多集合的中繼資料�
 1. 從「儲 **[!UICONTROL 存的搜尋]** 」清單中，點選/按一 **** 下您要刪除的智慧型系列旁的「刪除」。
 1. 在對話方塊中，點選/按一下&#x200B;**[!UICONTROL Delete]**&#x200B;以刪除儲存的搜尋。
 
-## 對集合{#run-a-workflow-on-a-collection}執行工作流
+## 對集合執行工作流程 {#run-a-workflow-on-a-collection}
 
 您可以為集合內的資產執行工作流程。 如果集合包含巢狀集合，工作流程也會在巢狀集合內的資產上執行。 不過，如果集合和巢狀集合包含重複資產，工作流程只會針對這些資產執行一次。
 
