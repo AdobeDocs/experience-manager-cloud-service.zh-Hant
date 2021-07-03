@@ -2,9 +2,9 @@
 title: 搜尋 Facet.
 description: 本文說明如何在AEM中建立、修改及使用搜尋Facet。
 feature: 搜尋，中繼資料
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2361'
 ht-degree: 21%
