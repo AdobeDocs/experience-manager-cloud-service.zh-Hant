@@ -3,22 +3,22 @@ title: 如何編輯或新增中繼資料
 description: 透過 [!DNL Experience Manager Assets] 了解資產中繼資料的各種編輯資產中繼資料的方式。
 contentOwner: AG
 feature: 中繼資料
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 8%
 
 ---
 
-# 如何編輯或添加元資料{#how-to-edit-or-add-metadata}
+# 如何編輯或新增中繼資料 {#how-to-edit-or-add-metadata}
 
 中繼資料是可搜尋資產的其他相關資訊。 上傳影像時，會自動擷取它。 您可以編輯現有中繼資料，或將新中繼資料屬性新增至現有欄位（例如，中繼資料欄位空白時）。
 
 由於公司需要可控且可靠的中繼資料辭匯，[!DNL Experience Manager Assets]不允許臨時新增新中繼資料屬性。 雖然作者無法為資產新增中繼資料欄位，但開發人員可以。 請參閱[為資產建立新中繼資料屬性](meta-edit.md#editing-metadata-schema)。
 
-## 編輯資產{#editing-metadata-for-an-asset}的中繼資料
+## 編輯資產的中繼資料 {#editing-metadata-for-an-asset}
 
 若要編輯中繼資料：
 
@@ -40,11 +40,11 @@ ht-degree: 8%
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
-## 編輯元資料架構{#editing-metadata-schema}
+## 編輯中繼資料結構 {#editing-metadata-schema}
 
 有關如何編輯元資料架構的詳細資訊，請參閱[編輯元資料架構表單](metadata-schemas.md#edit-metadata-schema-forms)。
 
-## 在AEM {#registering-a-custom-namespace-within-aem}中註冊自訂命名空間
+## 在AEM中註冊自訂命名空間 {#registering-a-custom-namespace-within-aem}
 
 您可以在AEM中新增您自己的命名空間。 就像有預先定義的命名空間，例如cq、jcr和sling，您也可以擁有儲存庫中繼資料和xml處理的命名空間。
 
