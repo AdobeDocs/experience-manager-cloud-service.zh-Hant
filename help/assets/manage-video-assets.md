@@ -3,9 +3,9 @@ title: 管理影片資產
 description: 在 [!DNL Adobe Experience Manager]中上傳、預覽、加上注釋及發佈視訊資產。
 contentOwner: AG
 feature: 資產管理，發佈，協作，視頻
-role: Business Practitioner
+role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 6%
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 了解如何在[!DNL Adobe Experience Manager Assets]中管理和編輯視訊資產。 可使用「處理設定檔」和使用[!DNL Dynamic Media]整合，對視訊編碼和轉碼（例如FFmpeg轉碼）進行編碼。 若沒有[!DNL Dynamic Media]授權，[!DNL Experience Manager]便提供視訊的基本支援，例如使用FFmpeg轉碼、擷取支援檔案格式的預覽縮圖，以及在使用者介面中預覽直接支援在瀏覽器中播放的格式。
 
-## 上傳和預覽視訊資產{#upload-and-preview-video-assets}
+## 上傳和預覽視訊資產 {#upload-and-preview-video-assets}
 
 [!DNL Adobe Experience Manager Assets] 以副檔名MP4產生視訊資產的預覽。您可以在[!DNL Assets]使用者介面中預覽轉譯。
 
@@ -27,11 +27,11 @@ ht-degree: 6%
 1. 若要在卡片檢視中預覽視訊，請按一下視訊資產上的&#x200B;**[!UICONTROL Play]** ![play選項](assets/do-not-localize/play.png)選項。 您只能在卡片檢視中暫停或播放視訊。 清單檢視中無法使用[!UICONTROL Play]和[!UICONTROL Pause]選項。
 1. 若要在資產詳細資訊頁面中預覽視訊，請選取卡片上的&#x200B;**[!UICONTROL Edit]** 。 視訊會在瀏覽器的原生視訊播放器中播放。 您可以播放、暫停、控制音量，以及將視訊縮放至全螢幕。
 
-## 發佈視訊資產{#publish-video-assets}
+## 發佈視訊資產 {#publish-video-assets}
 
 發佈後，您可以將視訊資產以URL的形式包含在網頁中，或直接內嵌資產。 如需詳細資訊，請參閱[publish [!DNL Dynamic Media] assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-## 使用處理設定檔{#transcode-video}進行轉碼
+## 使用處理設定檔進行轉碼 {#transcode-video}
 
 [!DNL Experience Manager] as a可讓 [!DNL Cloud Service] 您使用「處理設定檔」來執行MP4視訊檔案的基本轉碼。此功能不僅可讓您上傳，還可預覽和縮放MP4視訊檔案。
 
@@ -43,7 +43,7 @@ ht-degree: 6%
 
 若要使用處理設定檔來處理資產，請新增設定檔至資料夾。 請參閱[使用處理設定檔來處理資產](/help/assets/asset-microservices-configure-and-use.md#use-profiles)。
 
-## 為視訊資產加上注釋{#annotate-video-assets}
+## 為視訊資產加上注釋 {#annotate-video-assets}
 
 1. 在[!DNL Assets]控制台中，選取資產卡上的&#x200B;**[!UICONTROL 編輯]**&#x200B;以顯示資產詳細資訊頁面。
 1. 若要播放視訊，請按一下&#x200B;**[!UICONTROL 預覽]**。
@@ -51,7 +51,7 @@ ht-degree: 6%
 1. 尋找視訊中的特定點，在&#x200B;**「文字」**&#x200B;欄位中指定時間 (以秒為單位)，然後按一下&#x200B;**「跳至」**。例如，若要略過前 20 秒的視訊，請在文字欄位中輸入 20。
 1. 要在時間軸中查看它，請按一下注釋。 要從時間軸中刪除注釋，請按一下&#x200B;**[!UICONTROL Delete]**。
 
-## 最佳做法和限制{#tips-limitations}
+## 最佳實務和限制 {#tips-limitations}
 
 * 若沒有[!DNL Dynamic Media]授權，您只能使用處理設定檔來處理MP4檔案。
 * 使用處理設定檔將MP4檔案轉碼時，會套用下列准則和限制：
