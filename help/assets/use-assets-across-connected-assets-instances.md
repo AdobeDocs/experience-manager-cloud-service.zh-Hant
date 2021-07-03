@@ -3,9 +3,9 @@ title: 使用「連線資產」在 中共用 DAM 資產 [!DNL Sites]
 description: 使用遠端 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署上可用的資產。
 contentOwner: AG
 feature: 資產管理，連接資產，資產分發，用戶和組
-role: Administrator,Business Practitioner,Architect
+role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 192762e3efb23d84eb4378755975dc9b9d3158e8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2967'
 ht-degree: 26%
