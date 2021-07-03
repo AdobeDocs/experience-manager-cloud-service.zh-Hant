@@ -5,20 +5,20 @@ contentOwner: AG
 feature: 資產管理，標籤，資產分發
 role: Business Practitioner
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
 
 ---
 
-# 組織數位資產{#organize-digital-assets}
+# 組織數位資產 {#organize-digital-assets}
 
-擷取Microsoft Office和PDF檔案的所有數位資產、中繼資料和內容，並使其可供搜尋。 搜尋可針對資產進行精密的篩選，並完全尊重適當的權限。 數位資產管理的中繼資料將詳細說明中繼資料。
+擷取Microsoft Office和PDF檔案的所有數位資產、中繼資料和內容，並使其可供搜尋。 搜尋可針對資產進行精密的篩選，並完全尊重正確的權限。 數位資產管理的中繼資料將詳細說明中繼資料。
 
 AEM Assets支援多種組織內容的方式。 您可以使用資料夾以階層方式組織資料夾，或使用標籤等方式，以無序、隨選的方式組織資料夾。 使用者可以在DAM Asset Editor中編輯標籤，以顯示子資產、轉譯和中繼資料。
 
-## 建立資料夾{#create-folders}
+## 建立資料夾 {#create-folders}
 
 組織資產集合時（例如所有&#x200B;*Nature*&#x200B;影像），您可以建立資料夾以將其保持在一起。 您可以使用資料夾來分類及組織資產。 AEM Assets不會要求您組織資料夾中的資產，以提高運作效率。
 
@@ -31,7 +31,7 @@ AEM Assets支援多種組織內容的方式。 您可以使用資料夾以階層
 1. 在&#x200B;**[!UICONTROL Title]**&#x200B;欄位中，提供資料夾名稱。 依預設，DAM會使用您提供的標題作為資料夾名稱。 建立資料夾後，您可以覆寫預設值並指定其他資料夾名稱。
 1. 按一下&#x200B;**[!UICONTROL 建立]**。您的資料夾會顯示在數位資產資料夾中。
 
-## 將CUG屬性添加到資料夾{#add-cug-properties-to-folders}
+## 將CUG屬性添加到資料夾 {#add-cug-properties-to-folders}
 
 您可以將資料夾設為封閉使用者群組(CUG)的一部分，借此限制可存取資產中特定資料夾的人員。 要使資料夾成為CUG的一部分，請執行以下操作：
 
@@ -40,7 +40,7 @@ AEM Assets支援多種組織內容的方式。 您可以使用資料夾以階層
 1. 選取「**啟用**」核取方塊，讓資料夾及其資產僅供封閉的使用者群組使用。
 1. 瀏覽至登入頁面（如果有的話）以新增該資訊。 按一下「**新增項目**」以新增已允許的群組。 如有必要，請添加領域。 按一下&#x200B;**OK**&#x200B;以儲存變更。
 
-## 使用標籤來組織資產{#use-tags-to-organize-assets}
+## 使用標籤來組織資產 {#use-tags-to-organize-assets}
 
 您可以使用資料夾或標籤，或同時使用兩者來組織資產。 將標籤新增至資產可讓搜尋期間更容易擷取。 若要新增標籤至資產，請依照下列步驟操作：
 
