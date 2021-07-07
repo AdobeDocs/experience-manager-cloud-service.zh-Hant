@@ -1,9 +1,9 @@
 ---
 title: API參考資料
 description: AEM提供廣泛而強大的API，可供您運用於數位體驗專案。
-source-git-commit: 4134d87ca40f7834605c7d3496f05ef80fbab554
+source-git-commit: f8d16e515de5ce740398d45a30038793fe021b69
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '665'
 ht-degree: 4%
 
 ---
@@ -58,15 +58,15 @@ AEM是以下四個主要Java API集建置，依優先順序遞減。
 
 AEM提供可自訂的元件和內容傳遞選項。
 
-| API | 說明 |
+| 功能 | 說明 |
 |---|---|
 | [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) | 針對AEM的標準化網頁內容管理(WCM)元件，可縮短開發時間並降低網站的維護成本 |
 | [JSON匯出工具](/help/implementing/developing/components/json-exporter.md) | 以JSON資料模型格式傳送任何AEM頁面的內容 |
 | [為元件啟用JSON匯出](/help/implementing/developing/components/enabling-json-exporter.md) | 根據建模器架構產生元件內容的JSON匯出 |
-| [資產](/help/assets/mac-api-assets.md) | 允許對資產執行建立 — 讀取 — 更新 — 刪除(CRUD)操作，包括二進位、中繼資料、轉譯和註解。 請參閱AEM Assets HTTP API |
-| [內容片段HTTP](/help/assets/content-fragments/assets-api-content-fragments.md) | 透過CRUD作業直接透過HTTP API存取內容片段內容 |
-| [內容片段GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) | 在無頭式CMS實作中，可讓內容片段有效傳送至JavaScript用戶端 |
-| [內容片段資產HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 支援的HTTP資產要求的確切格式 |
+| [Assets API](/help/assets/mac-api-assets.md) | 允許對資產執行建立 — 讀取 — 更新 — 刪除(CRUD)操作，包括二進位、中繼資料、轉譯和註解。 請參閱AEM Assets HTTP API |
+| [內容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | 透過CRUD作業直接透過HTTP API存取內容片段內容 |
+| [內容片段GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) | 在無頭式CMS實作中，可讓內容片段有效傳送至JavaScript用戶端 |
+| [內容片段資產HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 支援的HTTP資產要求的確切格式 |
 
 ## SPA專用API {#spa-apis}
 
