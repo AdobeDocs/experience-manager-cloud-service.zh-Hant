@@ -4,9 +4,9 @@ description: 本頁概述Cloud Acceleration Manager的整備階段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: b5b6a4a84c57805770ec1c72741c2d56d4711309
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '594'
 ht-degree: 4%
 
 ---
@@ -102,12 +102,23 @@ ht-degree: 4%
 
 #### 最佳做法評估 {#best-practices-assessment}
 
-此卡片提供
+最佳實務評估選項可評估您目前的AEM例項，並提供採用AEM最佳實務的後續步驟指引。 您可以從此索引標籤檢閱下列資訊：
+
+* AEM例項概述
+* 自訂元件和範本
+* 其他調查結果
+* 查詢緩慢
+* 維護任務
 
 #### 遷移複雜性評估 {#migration-complexity-assessment}
 
-此卡提供
+「移轉複雜性評估」選項可評估將現有AEM實作移轉至AEM作為Cloud Service的複雜性。 您可以從此索引標籤檢閱下列資訊：
 
+* AEM例項概述
+* 評估
+* 內容移轉考量事項
+
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## 使用計畫和設定卡 {#planning-setup}
 
@@ -119,10 +130,8 @@ ht-degree: 4%
 
 1. 隨即顯示內容輪播，其中包含移轉歷程這個階段的相關資訊。
 
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## 下一步 {#whats-next}
 
 學習如何登入Cloud Acceleration Manager及如何建立專案後，您現在可以繼續檢閱下一個步驟：使用實作階段。
-
-
