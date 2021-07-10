@@ -4,15 +4,15 @@ description: 本頁概述Cloud Acceleration Manager的整備階段。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
+source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '515'
 ht-degree: 4%
 
 ---
 
 
-# Cloud Acceleration Manager {#readiness-phase-cam}中的就緒階段
+# Cloud Acceleration Manager的整備階段 {#readiness-phase-cam}
 
 在Cloud Acceleration Manager中建立專案後，您現在可以開始執行「整備」階段中的可用工具。
 
@@ -34,7 +34,7 @@ ht-degree: 4%
    >[!NOTE]
    >請參考[在Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)中建立和管理專案以深入了解。
 
-## 使用最佳實務分析卡{#best-practices-analysis}
+## 使用最佳實務分析卡 {#best-practices-analysis}
 
 請依照下列步驟，使用「最佳實務分析」卡：
 
@@ -64,7 +64,7 @@ ht-degree: 4%
    >[!NOTE]
    >上傳新報表會重設所有評估。
 
-### 檢閱最佳實務分析報表{#analysis-report}
+### 檢閱最佳實務分析報表 {#analysis-report}
 
 探索「最佳實務分析報表」頁面中可用的下列資訊卡：
 
@@ -79,17 +79,17 @@ ht-degree: 4%
 
 #### 報表屬性 {#report-properties}
 
-此卡片提供報表屬性的相關資訊，例如報表日期、持續時間、篩選器、上傳日期，以及Adobe Experience Manager(AEM)詳細資料。
+**報表屬性**&#x200B;卡片提供報表屬性的相關資訊，例如報表日期、持續時間、篩選器、上傳日期和Adobe Experience Manager(AEM)詳細資訊。
 
 ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
-#### 報表概述{#report-overview}
+#### 報表概述 {#report-overview}
 
-此卡片提供報告結果
+此&#x200B;**報表概述**&#x200B;卡片提供報表結果，如下圖所示。
 
 ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
-按一下此報告會開啟&#x200B;**Report**&#x200B;標籤，如下圖所示。
+按一下此報告會開啟&#x200B;**Report**&#x200B;標籤。
 
 ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
@@ -100,16 +100,16 @@ ht-degree: 4%
 >[!NOTE]
 >請參閱[解譯Best Practices Analyzer報表](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) ，了解調查結果類別和重要性層級。
 
-#### 最佳做法評估{#best-practices-assessment}
+#### 最佳做法評估 {#best-practices-assessment}
 
 此卡片提供
 
-#### 遷移複雜性評估{#migration-complexity-assessment}
+#### 遷移複雜性評估 {#migration-complexity-assessment}
 
 此卡提供
 
 
-## 使用計畫和設定卡{#planning-setup}
+## 使用計畫和設定卡 {#planning-setup}
 
 請按照本節，探索「規劃和設定」活動卡。
 
@@ -121,7 +121,7 @@ ht-degree: 4%
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
-## 下一步是什麼{#whats-next}
+## 下一步 {#whats-next}
 
 學習如何登入Cloud Acceleration Manager及如何建立專案後，您現在可以繼續檢閱下一個步驟：使用實作階段。
 
