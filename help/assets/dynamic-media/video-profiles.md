@@ -2,9 +2,9 @@
 title: Dynamic Media 影片設定檔
 description: Dynamic Media已隨附預先定義的最適化視訊編碼設定檔。 此現成可用設定檔中的設定已最佳化，可為客戶提供最佳的檢視體驗。 您也可以將智慧型裁切新增至影片。
 feature: 資產管理，視訊設定檔，轉譯
-role: Business Practitioner
+role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3665'
 ht-degree: 9%
@@ -41,7 +41,7 @@ Dynamic Media已隨附預先定義的最適化視訊編碼設定檔。 此現成
 
 另請參閱[處理中繼資料、影像和視訊的設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)。
 
-## 最適化視訊編碼預設集{#adaptive-video-encoding-presets}
+## 最適化視訊編碼預設集 {#adaptive-video-encoding-presets}
 
 下表列出將設定檔編碼為行動裝置、平板電腦裝置和桌上型電腦的最適化視訊串流的最佳實務。 您可以將這些預設集用於任何外觀比例視訊。
 
@@ -90,7 +90,7 @@ Dynamic Media已隨附預先定義的最適化視訊編碼設定檔。 此現成
  </tbody>
 </table>
 
-## 關於在視訊描述檔中使用智慧型裁切{#about-smart-crop-video}
+## 關於在視訊描述檔中使用智慧型裁切 {#about-smart-crop-video}
 
 智慧型裁切視訊是「視訊描述檔」中的選用功能。 此工具使用Adobe Sensei來自動偵測並裁切您上傳之任何最適化視訊或漸進式視訊中的焦點（不論大小）。
 
@@ -122,7 +122,7 @@ Adobe Sensei限制為9000幀。 即，以30 FPS為單位，5分鐘。 如果您�
 
 另請參閱[影像的智慧型裁切](image-profiles.md)。
 
-## 建立最適化串流的視訊設定檔{#creating-a-video-encoding-profile-for-adaptive-streaming}
+## 建立視訊設定檔以進行最適化串流 {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定檔為一組適用於MP4 H.264的視訊上傳設定，並針對最佳的檢視體驗進行最佳化。 上傳影片時，您可以使用此設定檔。
 
@@ -186,7 +186,7 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
 您現在可以將設定檔套用至包含視訊的資料夾。 請參閱[將視訊描述檔套用至資料夾](#applying-a-video-profile-to-folders)或[全域套用視訊描述檔](#applying-a-video-profile-globally)。
 
-## 建立用於漸進式串流的視訊設定檔{#creating-a-video-encoding-profile-for-progressive-streaming}
+## 建立視訊設定檔以進行漸進式串流 {#creating-a-video-encoding-profile-for-progressive-streaming}
 
 如果您選擇不使用「**[!UICONTROL 編碼」選項進行最適化串流]**，則您新增至設定檔的所有編碼預設集都會被視為個別視訊轉譯，以用於單位元速率串流或漸進式視訊傳送。 此外，沒有驗證可確保所有視訊轉譯具有相同的外觀比例。
 
@@ -305,7 +305,7 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
 1. 在CRXDE Lite頁面的左上角，點選&#x200B;**[!UICONTROL Back Home]**&#x200B;圖示以返回Experience Manager。
 
-### 編輯視訊設定檔{#editing-a-video-encoding-profile}
+### 編輯視訊設定檔 {#editing-a-video-encoding-profile}
 
 您可以編輯已建立的任何視訊設定檔，以新增、編輯或刪除該設定檔中的視訊預設集。
 
@@ -328,7 +328,7 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
 1. 在頁面的右上角，點選&#x200B;**[!UICONTROL Save]**。
 
-### 複製視訊設定檔{#copying-a-video-encoding-profile}
+### 複製視訊設定檔 {#copying-a-video-encoding-profile}
 
 1. 點選Experience Manager標誌，並導覽至「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 視訊描述檔]**」。
 1. 在視訊描述檔頁面上，勾選一個視訊描述檔名稱。
@@ -343,14 +343,14 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
 1. 在頁面的右上角，點選&#x200B;**[!UICONTROL Save]**。
 
-### 刪除視訊設定檔{#deleting-a-video-encoding-profile}
+### 刪除視訊設定檔 {#deleting-a-video-encoding-profile}
 
 1. 點選Experience Manager標誌，並導覽至「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 視訊描述檔]**」。
 1. 在視訊描述檔頁面上，檢查一或多個視訊描述檔名稱。
 1. 在工具列上，點選&#x200B;**[!UICONTROL Delete]**。
 1. 點選&#x200B;**[!UICONTROL 確定]**。
 
-## 將視頻配置檔案應用到資料夾{#applying-a-video-profile-to-folders}
+## 將視訊描述檔套用至資料夾 {#applying-a-video-profile-to-folders}
 
 將視訊描述檔指派給資料夾時，任何子資料夾都會自動從其父資料夾繼承描述檔。 因此，您只能將一個視訊描述檔指派給資料夾。 因此，請仔細考慮上傳、儲存、使用和封存資產的資料夾結構。
 
@@ -364,7 +364,7 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
 若資料夾中已有您後來變更的現有視訊設定檔，您可以重新處理該資料夾中的資產。 請參閱[重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
-### 將視頻配置檔案應用到特定資料夾{#applying-video-profiles-to-specific-folders}
+### 將視訊設定檔套用至特定資料夾 {#applying-video-profiles-to-specific-folders}
 
 您可以從&#x200B;**[!UICONTROL Tools]**&#x200B;菜單或在資料夾中從&#x200B;**[!UICONTROL Properties]**&#x200B;將視頻配置檔案應用到資料夾。 本節說明如何以兩種方式將視訊描述檔套用至資料夾。
 
@@ -372,13 +372,13 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
 另請參閱[在編輯資料夾的處理設定檔](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)後，重新處理資料夾中的資產。
 
-#### 透過設定檔使用者介面{#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}將視訊設定檔套用至資料夾
+#### 透過「設定檔」使用者介面，將視訊設定檔套用至資料夾 {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
 1. 點選Experience Manager標誌，並導覽至「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 視訊描述檔]**」。
 1. 選取您要套用至資料夾或多個資料夾的視訊描述檔。
 1. 點選「**[!UICONTROL 將描述檔套用至資料夾]**」，然後選取您要用來接收新上傳資產的資料夾或多個資料夾，並點選「**[!UICONTROL 套用]**」。 在「卡片檢視」中，資料夾名稱正下方會顯示資料夾名稱，以指出已指派給資料夾的 **[!UICONTROL 資料夾]**。您可以[監視視訊設定檔處理工作](#monitoring-the-progress-of-an-encoding-job)的進度。
 
-#### 將視訊描述檔套用至屬性{#applying-video-profiles-to-folders-from-properties}中的資料夾
+#### 從屬性將視訊描述檔套用至資料夾 {#applying-video-profiles-to-folders-from-properties}
 
 1. 點選Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用視訊描述檔的資料夾。
 1. 在資料夾中，點選核取標籤以選取，然後點選&#x200B;**[!UICONTROL 屬性]**。
@@ -387,7 +387,7 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
    ![chlimage_1-518](assets/chlimage_1-518.png)
 您可以 [監控視訊設定檔處理工作的進度](#monitoring-the-progress-of-an-encoding-job)。
 
-### 全域套用視訊設定檔{#applying-a-video-profile-globally}
+### 全域套用視訊設定檔 {#applying-a-video-profile-globally}
 
 除了將設定檔套用至資料夾之外，您也可以全域套用一個設定檔，讓任何資料夾中上傳至Experience Manager資產的內容都會套用選取的設定檔。
 
@@ -400,19 +400,19 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * 您可以[監視視訊設定檔處理工作](#monitoring-the-progress-of-an-encoding-job)的進度。
 
-## 監控視訊設定檔處理工作{#monitoring-the-progress-of-an-encoding-job}的進度
+## 監控視訊設定檔處理工作的進度 {#monitoring-the-progress-of-an-encoding-job}
 
 會顯示處理指標（或進度列），讓您以視覺化方式監控視訊設定檔處理工作的進度。
 
 您也可以檢視`error.log`檔案，以監控編碼作業的進度、查看編碼是否已完成，或查看任何作業錯誤。 在`logs`資料夾中找到`error.log` ，其中安裝了Experience Manager實例。
 
-## 從資料夾{#removing-a-video-profile-from-folders}中刪除視頻配置檔案
+## 從資料夾移除視訊描述檔 {#removing-a-video-profile-from-folders}
 
 從資料夾中移除視訊描述檔時，任何子資料夾都會自動繼承從其父資料夾移除描述檔的功能。 不過，資料夾內發生的檔案處理仍維持不變。
 
 您可以從&#x200B;**[!UICONTROL Tools]**&#x200B;功能表內的資料夾或在資料夾內的&#x200B;**[!UICONTROL Folder Settings]**&#x200B;中移除「視訊描述檔」。 本節說明如何以兩種方式從資料夾中移除視訊描述檔。
 
-### 透過Profiles使用者介面{#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}從資料夾中移除視訊描述檔
+### 透過「描述檔」使用者介面，從資料夾中移除視訊描述檔 {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
 1. 點選Experience Manager標誌，並導覽至「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 視訊描述檔]**」。
 1. 選取您要從資料夾或多個資料夾中移除的視訊描述檔。
@@ -420,7 +420,7 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
    您可以確認視訊描述檔不再套用至資料夾，因為資料夾名稱下方不再顯示該名稱。
 
-### 通過屬性{#removing-video-profiles-from-folders-by-way-of-properties}從資料夾中刪除視頻配置檔案
+### 透過屬性從資料夾中移除視訊描述檔 {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. 點選或按一下Experience Manager標誌，並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要移除視訊描述檔的資料夾。
 1. 在資料夾中，點選或按一下勾選記號以選取，然後點選&#x200B;**[!UICONTROL 屬性]**。
