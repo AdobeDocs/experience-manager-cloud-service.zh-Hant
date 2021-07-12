@@ -2,25 +2,25 @@
 title: 疑難排解MSM問題和常見問題集
 description: 了解如何疑難排解最常見的MSM相關問題，並取得最常見的MSM相關問題的解答。
 feature: 多站點管理員
-role: Administrator
+role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 0%
 
 ---
 
-# 疑難排解MSM問題和常見問題{#troubleshooting-msm}
+# 疑難排解MSM問題和常見問題集 {#troubleshooting-msm}
 
-## 疑難排解第一步{#first-steps}
+## 疑難排解第一步 {#first-steps}
 
 如果您遇到MSM中的錯誤或行為不正確，請務必在開始和詳細的疑難排解之前：
 
 * 請查看[MSM常見問題集](#faq)，因為您的問題或問題可能已在該處解決。
 * 查看[MSM最佳實務文章](best-practices.md)，因為此處提供了一些提示，並澄清了一些誤解。
 
-## 查找有關Blueprint和Live Copy狀態{#advanced-info}的高級資訊
+## 尋找關於您的Blueprint和Live Copy狀態的進階資訊 {#advanced-info}
 
 MSM會註冊多個可向資源URL上的選取器要求的servlet。 UI會使用這些狀態，但也可以直接請求，以直接查看頁面的其他進階計算MSM狀態：
 
@@ -31,7 +31,7 @@ MSM會註冊多個可向資源URL上的選取器要求的servlet。 UI會使用�
 
 這些servlet會透過`com.day.cq.wcm.msm`記錄器產生DEBUG記錄訊息，這也會很實用。
 
-## 檢查儲存庫{#checking-repo}中的MSM特定資訊
+## 在存放庫中檢查MSM專屬資訊 {#checking-repo}
 
 先前的servlet根據MSM特定節點和mixin返回計算資訊。 資訊將以下方式儲存在儲存庫中。
 
@@ -58,13 +58,13 @@ MSM會註冊多個可向資源URL上的選取器要求的servlet。 UI會使用�
 
 以下是一些與MSM和Live Copy相關的常見問題。
 
-### 為何MSM轉出期間沒有更新某些屬性（例如標題、註解）?{#missing-properties}
+### 為何MSM轉出期間沒有更新某些屬性（例如標題、註解）? {#missing-properties}
 
 MSM同步動作可高度設定。 轉出期間修改的屬性或元件直接取決於這些設定的屬性。
 
 有關本主題的詳細資訊，請參閱[本文](best-practices.md)。
 
-### 如何移除一組作者的轉出權限？{#remove-rollout-permissions}
+### 如何移除一組作者的轉出權限？ {#remove-rollout-permissions}
 
 沒有可為AEM主體（用戶或組）設定或刪除的&#x200B;**轉出**&#x200B;權限。
 
@@ -73,7 +73,7 @@ MSM同步動作可高度設定。 轉出期間修改的屬性或元件直接取�
 * 自訂產品UI以隱藏指定承擔者的轉出動作。
 * 從Live Copy樹中為不允許轉出的作者刪除寫權限。
 
-### 為何會看到尾碼為「_msm_moved」的Live Copy頁面？{#moved-pages}
+### 為何會看到尾碼為「_msm_moved」的Live Copy頁面？ {#moved-pages}
 
 如果Blueprint頁面已推出，它會更新其「即時副本」頁面，或在尚未存在時建立新的「即時副本」頁面（例如首次推出或手動刪除「即時副本」頁面）。
 
