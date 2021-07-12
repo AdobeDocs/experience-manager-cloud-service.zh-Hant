@@ -2,16 +2,16 @@
 title: 透過Dynamic Media使CDN（內容傳遞網路）快取失效
 description: 「了解如何使您的CDN（內容傳遞網路）快取內容失效，讓您快速更新Dynamic Media所傳遞的資產，而不必等待快取過期。」
 feature: 資產管理
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 1%
 
 ---
 
-# 透過Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}使CDN快取失效
+# 透過Dynamic Media使CDN快取失效 {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
 Dynamic Media資產會由CDN（內容傳遞網路）快取，以快速傳遞給客戶。 不過，當您更新這些資產時，您希望這些變更立即在您的網站上生效。 清除或使CDN快取失效，可讓您快速更新由Dynamic Media傳送的資產。 您不再需要等待快取使用TTL（存留時間）值（預設為10小時）到期。 反之，您可以從Dynamic Media使用者介面傳送要求，讓快取在數分鐘內過期。
 
