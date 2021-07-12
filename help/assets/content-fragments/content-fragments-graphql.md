@@ -2,16 +2,16 @@
 title: 使用內容片段搭配GraphQL的無周邊內容傳送
 description: 了解如何搭配GraphQL使用AEM內容片段進行無周邊內容傳送。
 feature: 內容片段
-role: Business Practitioner
+role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 1d0343dc7940566b88ad490bb8fb08a5ad4ff5c2
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
 
 ---
 
-# 使用內容片段搭配GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}的無周邊內容傳送
+# 使用內容片段搭配GraphQL的無周邊內容傳送 {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 以Adobe Experience Manager(AEM)為Cloud Service，您可以使用內容片段，搭配AEM GraphQL API（以標準GraphQL為基礎的自訂實作），無條件地提供結構化內容，以便在您的應用程式中使用。 自訂單一API查詢的功能可讓您擷取並傳送您要/需要呈現的特定內容（作為單一API查詢的回應）。
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 >* [AEM內容片段可與AEM GraphQL API（以標準GraphQL為基礎的自訂實作）搭配使用，提供結構化內容以供您的應用程式使用](/help/assets/content-fragments/graphql-api-content-fragments.md)。
 
 
-## 無頭CMS {#headless-cms}
+## 無頭式CMS {#headless-cms}
 
 無頭式內容管理系統(CMS)是：
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 * 內容片段的內容將根據內容片段模型以預先決定的方式建構。 這可簡化應用程式的存取，進而處理您的內容。
 
-## GraphQL — 概述{#graphql-overview}
+## GraphQL — 概觀 {#graphql-overview}
 
 GraphQL為：
 
@@ -57,7 +57,7 @@ GraphQL為：
 
 AEM GraphQL API實作以[GraphQL Java程式庫](https://graphql.org/code/#java)為基礎。
 
-## 與AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}搭配使用的內容片段
+## 與AEM GraphQL API搭配使用的內容片段 {#content-fragments-use-with-aem-graphql-api}
 
 [內](#content-fragments) 容片段可作為AEM查詢的GraphQL基礎，如下：
 
@@ -85,7 +85,7 @@ AEM GraphQL API實作以[GraphQL Java程式庫](https://graphql.org/code/#java)�
 
 * 資料類型&#x200B;**[片段參考](#fragment-references)**&#x200B;可在模型中使用以參考其他內容片段，因此引入其他層級的結構。
 
-### 片段參考{#fragment-references}
+### 片段參考 {#fragment-references}
 
 **[片段參考](/help/assets/content-fragments/content-fragments-models.md#fragment-reference-nested-fragments)**:
 
@@ -99,11 +99,11 @@ AEM GraphQL API實作以[GraphQL Java程式庫](https://graphql.org/code/#java)�
 
    * 定義為&#x200B;**multifeed**&#x200B;時，主片段可以參照（擷取）多個子片段。
 
-### JSON預覽{#json-preview}
+### JSON預覽 {#json-preview}
 
 若要協助您設計和開發內容片段模型，您可以預覽[JSON輸出](/help/assets/content-fragments/content-fragments-json-preview.md)。
 
-## 學習如何搭配AEM使用GraphQL — 範例內容與查詢{#learn-graphql-with-aem-sample-content-queries}
+## 學習如何搭配AEM使用GraphQL — 範例內容與查詢 {#learn-graphql-with-aem-sample-content-queries}
 
 如需使用AEM GraphQL API的簡介，請參閱[學習如何搭配AEM使用GraphQL — 範例內容與查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md) 。
 
