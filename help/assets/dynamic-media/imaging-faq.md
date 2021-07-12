@@ -2,9 +2,9 @@
 title: 智慧型影像
 description: 了解Adobe Sensei AI的智慧型影像處理如何套用每位使用者的獨特檢視特性，自動提供符合其體驗最佳化的適當影像，進而提升效能和參與度。
 feature: 資產管理，轉譯
-role: Business Practitioner
+role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 0946383504aec025bda8c4087495deb2526b5fe3
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2634'
 ht-degree: 1%
