@@ -2,16 +2,16 @@
 title: 識別要翻譯的內容
 description: 了解翻譯規則如何識別需要翻譯的內容。
 feature: 語言副本
-role: Administrator
+role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 0%
 
 ---
 
-# 識別要翻譯的內容{#identifying-content-to-translate}
+# 識別要翻譯的內容 {#identifying-content-to-translate}
 
 翻譯規則可識別要翻譯的頁面、元件及翻譯專案中包含或排除的資產內容。 翻譯頁面或資產時，AEM會擷取此內容，以便傳送至翻譯服務。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 >
 >AEM支援資源類型和參考屬性之間的一對一對應，以轉譯頁面上的參考內容。
 
-## 頁面、元件和資產的規則語法{#rule-syntax-for-pages-components-and-assets}
+## 頁面、元件和資產的規則語法 {#rule-syntax-for-pages-components-and-assets}
 
 規則是`node`元素，其中包含一個或多個子`property`元素以及零個或多個子`node`元素：
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 </node>
 ```
 
-## 從頁面擷取資產的規則語法{#rule-syntax-for-extracting-assets-from-pages}
+## 從頁面擷取資產的規則語法  {#rule-syntax-for-extracting-assets-from-pages}
 
 使用下列規則語法來包含內嵌在元件中或從元件參照的資產：
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 <assetNode resourceType="core/wcm/components/image/v2/image" assetReferenceAttribute="fileReference"/>
 ```
 
-## 覆蓋規則{#overriding-rules}
+## 覆寫規則 {#overriding-rules}
 
 `translation_rules.xml`檔案由`nodelist`元素組成，其中包含多個子`node`元素。 AEM會從上到下讀取節點清單。 當多個規則以相同節點為目標時，會使用檔案中較低的規則。 例如，下列規則會導致除頁面的`/content/mysite/en`分支外，`text`屬性中的所有內容都翻譯：
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 <nodelist>
 ```
 
-## 篩選屬性{#filtering-properties}
+## 篩選屬性 {#filtering-properties}
 
 您可以使用`filter`元素來篩選具有特定屬性的節點。
 
@@ -215,7 +215,7 @@ xml中的結果如下所示：
 <property inherit="true" name="jcr:language" translate="false" updateDestinationLanguage="true"/>
 ```
 
-## 手動編輯規則檔案{#editing-the-rules-file-manually}
+## 手動編輯規則檔案 {#editing-the-rules-file-manually}
 
 隨AEM安裝的`translation_rules.xml`檔案包含一組預設的翻譯規則。 您可以編輯檔案以支援翻譯專案的需求。 例如，您可以新增規則，以便翻譯自訂元件的內容。
 
@@ -225,7 +225,7 @@ xml中的結果如下所示：
 >
 >建立內容套件後，請在每次編輯檔案時重建套件。
 
-## 翻譯規則檔案範例{#example-translation-rules-file}
+## 翻譯規則檔案範例 {#example-translation-rules-file}
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><nodelist>
