@@ -1,16 +1,16 @@
 ---
 title: 使用規則集轉換URL
 description: 了解如何在Dynamic Media中部署規則集以轉換URL。 規則集是以指令碼語言(如JavaScript™)編寫的一組指令集，這些指令可評估XML資料，並在資料滿足特定條件時採取某些操作。
-role: Business Practitioner
+role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
 
 ---
 
-# 使用規則集來轉換URL {#using-rulesets-to-transform-urls}
+# 使用規則集轉換URL {#using-rulesets-to-transform-urls}
 
 您可以在Dynamic Media中部署規則集以轉換URL。 規則集是以指令碼語言(如JavaScript™)編寫的一組指令集，這些指令可評估XML資料，並在資料滿足特定條件時採取某些操作。 每個規則至少包含一個條件和至少一個動作。 規則會根據條件評估XML資料，如果符合條件，則會採取適當的動作。 規則集的範例包括：
 
