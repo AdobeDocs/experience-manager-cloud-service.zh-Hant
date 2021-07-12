@@ -2,20 +2,20 @@
 title: 轉出衝突
 description: 了解如何管理和解決多網站管理員轉出衝突。
 feature: 多站點管理員
-role: Administrator
+role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 2%
 
 ---
 
-# 轉出衝突{#msm-rollout-conflicts}
+# 轉出衝突 {#msm-rollout-conflicts}
 
 如果在Blueprint分支和相依的Live Copy分支中建立了具有相同頁面名稱的新頁面，則可能會發生衝突。 這類衝突需要在推出時處理和解決。
 
-## 衝突處理{#conflict-handling}
+## 衝突處理 {#conflict-handling}
 
 當發生衝突的頁面確實存在時（在Blueprint和Live Copy分支中）,MSM可讓您定義應如何（甚至是如何）處理這些頁面。
 
@@ -29,7 +29,7 @@ AEM的預設現成行為是已發佈內容將不會受到影響。 因此，如�
 
 除了標準功能外，還可以添加自定義衝突處理程式以實施不同的規則。 這些也可允許以個別程式發佈動作。
 
-### 範例案例{#example-scenario}
+### 範例案例 {#example-scenario}
 
 在以下幾節中，我們使用在Blueprint和Live Copy分支（手動建立）中建立的新頁面`b`的示例來說明各種衝突解決方法：
 
@@ -43,7 +43,7 @@ AEM的預設現成行為是已發佈內容將不會受到影響。 因此，如�
 
    * 發佈時啟動為`/b`，連同子頁面
 
-#### 轉出前{#before-rollout}
+#### 轉出前 {#before-rollout}
 
 |  | 轉出前的Blueprint | 轉出前即時副本 | 轉出前發佈 |
 |---|---|---|---|
@@ -52,7 +52,7 @@ AEM的預設現成行為是已發佈內容將不會受到影響。 因此，如�
 | 值 | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | 評論 |  | 在Live Copy分支中手動建立 | 包含在Live Copy分支中手動建立之頁面`child-level-1`的內容 |
 
-## 轉出管理器和衝突處理{#rollout-manager-and-conflict-handling}
+## 轉出管理員和衝突處理 {#rollout-manager-and-conflict-handling}
 
 轉出管理器可讓您啟用或停用衝突管理。
 
@@ -60,7 +60,7 @@ AEM的預設現成行為是已發佈內容將不會受到影響。 因此，如�
 
 AEM具有[在停用衝突管理時預先定義的行為。](#behavior-when-conflict-handling-deactivated)
 
-## 衝突處理程式{#conflict-handlers}
+## 衝突處理程式 {#conflict-handlers}
 
 AEM使用衝突處理常式來解決從Blueprint將內容轉出至Live Copy時存在的任何頁面衝突。 更名頁面是解決此類衝突的常用（不僅是）方法。 可以操作多個衝突處理程式以允許選擇不同的行為。
 
@@ -72,7 +72,7 @@ AEM提供：
 * 可讓您設定每個個別處理常式之優先順序的服務排名機制
    * 會使用排名最高的服務。
 
-### 預設衝突處理程式{#default-conflict-handler}
+### 預設衝突處理程式 {#default-conflict-handler}
 
 預設衝突處理程式為`ResourceNameRolloutConflictHandler`
 
@@ -93,7 +93,7 @@ AEM提供：
 
    * `bp-level-1` 會轉出至Live Copy。
 
-#### 轉出後{#after-rollout}
+#### 轉出後 {#after-rollout}
 
 |  | 轉出後的Blueprint | 轉出後即時副本 | 轉出後即時副本 | 轉出後發佈 |
 |---|---|---|---|---|
@@ -102,7 +102,7 @@ AEM提供：
 | 值 | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | 評論 |  |  | 無更改 | 無更改 |
 
-### 自定義處理程式{#customized-handlers}
+### 自訂處理常式 {#customized-handlers}
 
 自定義的衝突處理程式允許您實施自己的規則。 使用服務排名機制，您也可以定義它們與其他處理常式的互動方式。
 
@@ -115,7 +115,7 @@ AEM提供：
    * **服務** 排名定義了與其他衝突處理程式( `service.ranking`)相關的順序。
       * 預設值為 `0`.
 
-### 停用衝突處理{#behavior-when-conflict-handling-deactivated}時的行為
+### 停用衝突處理時的行為 {#behavior-when-conflict-handling-deactivated}
 
 如果您手動[停用衝突處理，](#rollout-manager-and-conflict-handling) AEM不會在任何衝突頁面上採取任何動作。 非衝突頁面會如預期般推出。
 
@@ -133,7 +133,7 @@ AEM提供：
 
    保持不變。
 
-#### 轉出後{#after-rollout-no-conflict}
+#### 轉出後 {#after-rollout-no-conflict}
 
 |  | 轉出後的Blueprint | 轉出後即時副本 | 轉出後發佈 |
 |---|---|---|---|
@@ -142,6 +142,6 @@ AEM提供：
 | 值 | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | 評論 |  | 無更改 | 無更改 |
 
-### 服務排名{#service-rankings}
+### 服務排名 {#service-rankings}
 
 [OSGi](https://www.osgi.org/)服務排名可用於定義單個衝突處理程式的優先順序。
