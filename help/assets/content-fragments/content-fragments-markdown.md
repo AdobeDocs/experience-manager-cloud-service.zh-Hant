@@ -2,9 +2,9 @@
 title: Markdown
 description: 了解內容片段編輯器如何使用Markdown語法，輕鬆建立無標題內容。
 feature: 內容片段
-role: Business Practitioner
+role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 4%
@@ -29,7 +29,7 @@ ht-degree: 4%
 * [程式碼區塊](/help/assets/content-fragments/content-fragments-markdown.md#code-blocks)
 * [反斜線逸出](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
 
-## 標題記號{#heading-notation}
+## 標題標籤法 {#heading-notation}
 
 若要建立標題，請將雜湊標籤(#)放在標題前面。 一個雜湊標籤(#)用於H1，兩個雜湊標籤(##)用於H2等。 您最多可以使用6個雜湊標籤。 例如：
 
@@ -49,7 +49,7 @@ ht-degree: 4%
 
     `-------------`
 
-## 段落和分行符{#paragraphs-and-line-breaks}
+## 段落和分行 {#paragraphs-and-line-breaks}
 
 段落只是一行或多行連續文本，用一行或多行空白行分隔。 空白行是不含空格或制表符的行。 普通段落不應縮進空格或制表符。
 
@@ -103,7 +103,7 @@ ht-degree: 4%
 
     `[id]: url/to/image "Optional title attribute"`
 
-## 塊引號{#block-quotes}
+## 塊引號 {#block-quotes}
 
 您可以在文字前面新增>符號，以引用文字。 例如：
 
@@ -171,7 +171,7 @@ ht-degree: 4%
 
     ``Use the `printf()` function.``
 
-## 代碼塊{#code-blocks}
+## 程式碼區塊 {#code-blocks}
 
 代碼塊通常用於說明原始碼。 您可以使用索引標籤縮進程式碼，或至少縮進4個空格，以建立程式碼區塊。 例如：
 
@@ -179,7 +179,7 @@ ht-degree: 4%
 
         `This is a code block.`
 
-## 反斜線逸出{#backslash-escapes}
+## 反斜線逸出 {#backslash-escapes}
 
 您可以使用反斜線逸出來產生文字字元，這些字元在格式語法中有特殊意義。 例如，如果您想要以常值星號括住單字（而非HTML &lt;em>標籤），您可以在星號前使用反斜線，例如：
 
