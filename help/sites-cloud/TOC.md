@@ -5,8 +5,8 @@ user-guide-title: AEM as a Cloud Service 的內容製作
 breadcrumb-title: Authoring 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Sites as a Cloud Service。
 feature: 製作
-role: Business Practitioner
-source-git-commit: c19c15c4e71c8ead1c3cb05add052a8ffae79d0a
+role: User
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 71%
