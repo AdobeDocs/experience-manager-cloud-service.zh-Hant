@@ -2,9 +2,9 @@
 title: 整合 Adobe Analytics
 description: '整合 Adobe Analytics '
 feature: 管理
-role: Administrator
+role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 4%
@@ -24,7 +24,7 @@ ht-degree: 4%
 >
 >Adobe Experience Manager作為沒有現有Analytics帳戶的Cloud Service客戶，可以要求存取Analytics Foundation Pack以進行Experience Cloud。 此Foundation Pack提供Analytics的有限量使用。
 
-## 建立Adobe Analytics配置{#analytics-configuration}
+## 建立Adobe Analytics設定 {#analytics-configuration}
 
 1. 導覽至&#x200B;**工具** → **Cloud Services**。
 2. 選擇&#x200B;**Adobe Analytics**。
@@ -32,7 +32,7 @@ ht-degree: 4%
 3. 選擇&#x200B;**Create**&#x200B;按鈕。
 4. 填寫詳細資訊（請參閱下面），然後按一下&#x200B;**Connect**。
 
-### 配置參數{#configuration-parameters}
+### 設定參數 {#configuration-parameters}
 
 「 Adobe Analytics設定」視窗中顯示的設定欄位為：
 
@@ -47,11 +47,11 @@ ht-degree: 4%
 | 區段 | 使用目前報表套裝中定義之Analytics區段的選項。 系統會根據區段來篩選Analytics報表。 如需其他詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)。 |
 | 報表套裝 | 您傳送資料和提取報表的存放庫。 報表套裝可全面而獨立地定義針對選定網站、一組網站或網站頁面子集的報告。 您可以檢視從單一報表套裝擷取的報表，並隨時根據您的需求在設定中編輯此欄位。 |
 
-### 將配置添加到站點{#add-configuration}
+### 將配置添加到站點 {#add-configuration}
 
 若要將觸控式UI設定套用至網站，請前往：**Sites** → **選擇任何站點頁面** → **屬性** → **Advanced** → **Configuration** →選擇配置租戶。
 
-## 使用Launch {#analytics-launch}在AEM網站上整合Adobe Analytics
+## 使用Launch整合AEM網站上的Adobe Analytics {#analytics-launch}
 
 Adobe Analytics可在Launch屬性中以擴充功能的形式新增。 可定義規則，以執行對應及對Adobe Analytics進行後置呼叫：
 
