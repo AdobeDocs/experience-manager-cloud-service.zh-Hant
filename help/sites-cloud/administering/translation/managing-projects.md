@@ -2,16 +2,16 @@
 title: 管理翻譯專案
 description: 了解如何在AEM中建立和管理機器和人類翻譯專案。
 feature: 語言副本
-role: Administrator
+role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3827'
 ht-degree: 0%
 
 ---
 
-# 管理翻譯專案{#managing-translation-projects}
+# 管理翻譯專案 {#managing-translation-projects}
 
 翻譯專案可讓您管理AEM內容的翻譯。 翻譯專案是AEM [project](/help/sites-cloud/authoring/projects/overview.md)的類型，包含要翻譯成其他語言的資源。 這些資源是從語言主版建立的[語言副本](preparation.md)的頁面和資產。
 
@@ -38,11 +38,11 @@ AEM會偵測正在為內容的初始翻譯建立翻譯專案，還是更新已�
 * 系統會為`/content/wknd/en/products`頁面和所有子頁面建立翻譯專案，目標為法文語言副本。 由於語言副本不包含`/content/wknd/fr/products`頁面，AEM會立即將`/content/wknd/en/products`頁面和所有子頁面複製為法文語言副本。 翻譯專案中也包含這些副本。
 * 系統會為`/content/wknd/en`頁面和所有子頁面建立翻譯專案，目標為法文語言副本。 由於語言副本包含與`/content/wknd/en`頁面（語言根）對應的頁面，因此AEM會複製`/content/wknd/en`頁面和所有子頁面，並將它們新增至啟動。 翻譯專案中也包含這些副本。
 
-## 從站點控制台{#performing-initial-translations-and-updating-existing-translations}進行翻譯
+## 從Sites Console進行翻譯 {#performing-initial-translations-and-updating-existing-translations}
 
 可直接從網站主控台建立或更新翻譯專案。
 
-### 使用「參考」面板{#creating-translation-projects-using-the-references-panel}建立翻譯專案
+### 使用「參考」面板建立翻譯專案 {#creating-translation-projects-using-the-references-panel}
 
 建立翻譯專案，以便執行和管理翻譯語言主版資源的工作流程。 建立項目時，可以在要翻譯的語言主版中指定頁面，並指定要執行翻譯的語言副本：
 
@@ -58,7 +58,7 @@ AEM會偵測正在為內容的初始翻譯建立翻譯專案，還是更新已�
 >
 >若要建立專案，您的帳戶必須是`project-administrators`群組的成員。
 
-### 初始翻譯和更新翻譯{#initial-and-updating}
+### 初始翻譯和更新翻譯 {#initial-and-updating}
 
 「參考」面板指示您是更新現有語言副本，還是建立語言副本的第一版本。 當選定頁面的語言副本存在時，「更新語言副本」頁簽將顯示為提供對與項目相關的命令的訪問。
 
@@ -68,7 +68,7 @@ AEM會偵測正在為內容的初始翻譯建立翻譯專案，還是更新已�
 
 ![建立和翻譯](../assets/create-and-translate.png)
 
-### 為新語言副本建立翻譯項目{#create-translation-projects-for-a-new-language-copy}
+### 為新語言副本建立翻譯項目 {#create-translation-projects-for-a-new-language-copy}
 
 1. 使用Sites Console來選取要新增至翻譯專案的頁面。
 
@@ -90,7 +90,7 @@ AEM會偵測正在為內容的初始翻譯建立翻譯專案，還是更新已�
 
 1. 按一下或點選&#x200B;**建立**。
 
-### 為現有語言副本{#create-translation-projects-for-an-existing-language-copy}建立翻譯項目
+### 為現有語言副本建立翻譯項目 {#create-translation-projects-for-an-existing-language-copy}
 
 1. 使用Sites控制台來選擇要添加到翻譯項目的頁面。
 
@@ -110,7 +110,7 @@ AEM會偵測正在為內容的初始翻譯建立翻譯專案，還是更新已�
 
 1. 按一下或點選&#x200B;**建立**。
 
-### 向翻譯專案{#adding-pages-to-a-translation-project}新增頁面
+### 新增頁面至翻譯專案 {#adding-pages-to-a-translation-project}
 
 建立翻譯專案後，您可以使用&#x200B;**資源**&#x200B;邊欄來新增頁面至專案。 在相同專案中包含來自不同分支的頁面時，新增頁面很實用。
 
@@ -140,7 +140,7 @@ AEM會偵測正在為內容的初始翻譯建立翻譯專案，還是更新已�
 
 1. 按一下或點選&#x200B;**更新**。
 
-### 建立語言副本的結構{#creating-the-structure-of-a-language-copy}
+### 建立語言副本的結構 {#creating-the-structure-of-a-language-copy}
 
 只能建立語言副本的結構，允許您將語言主版中的內容和結構更改複製到（未翻譯）語言副本。 這與翻譯工作或專案無關。 您可以使用這個功能來保持語言主版的同步，即使不需要翻譯。
 
@@ -164,7 +164,7 @@ AEM會偵測正在為內容的初始翻譯建立翻譯專案，還是更新已�
 
 1. 按一下或點選&#x200B;**更新**。
 
-### 更新翻譯記憶庫{#updating-translation-memory}
+### 更新翻譯記憶體 {#updating-translation-memory}
 
 翻譯內容的手動編輯可以同步回翻譯管理系統(TMS)以訓練其翻譯記憶體。
 
@@ -175,7 +175,7 @@ AEM會偵測正在為內容的初始翻譯建立翻譯專案，還是更新已�
 
 AEM會將選取的字串傳回翻譯管理系統。
 
-### 檢查頁面{#check-translation-status}的翻譯狀態
+### 檢查頁面的翻譯狀態 {#check-translation-status}
 
 可在網站控制台的清單檢視中選取屬性，顯示頁面是已翻譯、正在翻譯或尚未翻譯。
 
@@ -210,7 +210,7 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 
 ![刪節號按鈕](../assets/ellipsis.png)
 
-### 使用項目控制台{#creating-a-translation-project-using-the-projects-console}建立翻譯項目
+### 使用專案主控台建立翻譯專案 {#creating-a-translation-project-using-the-projects-console}
 
 如果您偏好使用專案主控台而非網站主控台，可以手動建立翻譯專案。
 
@@ -232,7 +232,7 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 1. 按一下或點選&#x200B;**進階**，並提供與翻譯相關的屬性的值。
 1. 按一下或點選&#x200B;**建立**。 在確認方塊中，按一下或點選&#x200B;**Done**&#x200B;以返回專案主控台，或按一下或點選&#x200B;**Open Project**&#x200B;以開啟並開始管理專案。
 
-### 將頁面和資產新增至翻譯工作{#adding-pages-assets-to-a-translation-job}
+### 新增頁面和資產至翻譯工作 {#adding-pages-assets-to-a-translation-job}
 
 您可以將頁面、資產或標籤新增至翻譯專案的翻譯工作。 若要新增頁面或資產：
 
@@ -258,11 +258,11 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 >
 >此方法會將頁面/資產及其子項新增至專案。 如果您只想新增父項，請選取&#x200B;**資產/頁面（不含子項）**。
 
-### 向翻譯工作{#adding-tags-to-a-translation-job}添加標籤
+### 為翻譯工作新增標籤 {#adding-tags-to-a-translation-job}
 
 您可以將標籤新增至翻譯專案，類似於[如何將資產和頁面新增至專案。](#adding-pages-assets-to-a-translation-job) 只需在「 **** 新增」功能表 **** 下選取「標籤」，然後遵循相同步驟即可。
 
-### 查看翻譯項目詳細資訊{#seeing-translation-project-details}
+### 查看翻譯項目詳細資訊 {#seeing-translation-project-details}
 
 您可以透過專案摘要圖磚的刪節號按鈕，存取翻譯專案屬性。 除了通用[項目資訊](/help/sites-cloud/authoring/projects/overview.md#project-info)之外，翻譯項目屬性還包含特定於翻譯的屬性。
 
@@ -284,7 +284,7 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 
 ![翻譯專案屬性](../assets/translation-project-properties.png)
 
-### 監視翻譯作業的狀態{#monitoring-the-status-of-a-translation-job}
+### 監控翻譯工作的狀態 {#monitoring-the-status-of-a-translation-job}
 
 翻譯專案的翻譯工作方塊會提供翻譯工作的狀態，以及工作中的頁數和資產。
 
@@ -309,7 +309,7 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 
 若要查看工作中每個檔案的狀態，請按一下或點選圖磚底部的刪節號。
 
-### 設定翻譯作業的到期日{#setting-the-due-date-of-translation-jobs}
+### 設定翻譯作業的到期日 {#setting-the-due-date-of-translation-jobs}
 
 指定翻譯供應商需要返回翻譯檔案的日期。 只有當所使用的翻譯供應商支援此功能時，才能正確設定到期日。
 
@@ -323,7 +323,7 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 
 1. 按一下或點選&#x200B;**儲存並關閉**。
 
-### 規劃翻譯作業{#scoping-a-translation-job}
+### 規範翻譯工作 {#scoping-a-translation-job}
 
 從翻譯服務提供商處獲取翻譯成本的估計值。 當您調整作業範圍時，會將源檔案提交給翻譯供應商，該供應商將文本與儲存的翻譯庫（翻譯記憶庫）進行比較。 範圍通常是需要翻譯的字詞數。
 
@@ -341,7 +341,7 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 1. 在翻譯工作的標題上，點選或按一下命令菜單，然後點選或按一下&#x200B;**Request Scope**。
 1. 當作業狀態更改為&#x200B;**Scope Completed**&#x200B;時，按一下或點選命令菜單，然後按一下或點選&#x200B;**Show Scope**。
 
-### 開始翻譯作業{#starting-translation-jobs}
+### 開始翻譯工作 {#starting-translation-jobs}
 
 啟動翻譯工作，將源頁面翻譯為目標語言。 根據翻譯摘要表徵圖的屬性值執行翻譯。
 
@@ -359,7 +359,7 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 1. 在工具列中點選或按一下「**開始翻譯工作」**。
 1. 在對話方塊中，檢閱要啟動的作業清單，然後使用&#x200B;**Start**&#x200B;確認，或使用&#x200B;**Cancel**&#x200B;中止。
 
-### 取消翻譯作業{#canceling-a-translation-job}
+### 取消翻譯工作 {#canceling-a-translation-job}
 
 取消翻譯工作以停止翻譯過程並阻止翻譯供應商執行任何進一步的翻譯。 當作業具有&#x200B;**Committed For Translation**&#x200B;或&#x200B;**Translation In Progress**&#x200B;狀態時，可以取消作業。
 
@@ -367,7 +367,7 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 1. 在翻譯工作方塊上，按一下或點選命令功能表，然後按一下或點選&#x200B;**取消**。
 1. 在確認翻譯取消的動作對話方塊中，按一下或點選&#x200B;**OK**。
 
-### 接受和拒絕工作流{#accept-reject-workflow}
+### 接受和拒絕工作流 {#accept-reject-workflow}
 
 當內容在翻譯後返回且處於&#x200B;**準備審閱**&#x200B;狀態時，您可以進入翻譯工作並接受/拒絕內容。
 
@@ -375,7 +375,7 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 
 拒絕內容會將內容傳回翻譯廠商，讓他們可以在其中看到評論。
 
-### 完成和歸檔翻譯作業{#completing-and-archiving-translation-jobs}
+### 完成和歸檔翻譯工作 {#completing-and-archiving-translation-jobs}
 
 審核供應商翻譯的檔案後，完成翻譯工作。
 
@@ -392,11 +392,11 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 
 封存工作時，翻譯工作標題會從專案中移除。
 
-## 查看和使用翻譯的內容{#reviewing-and-promoting-updated-content}
+## 檢閱和使用翻譯的內容 {#reviewing-and-promoting-updated-content}
 
 您可以使用網站主控台來檢閱內容、比較語言復本及啟用內容。
 
-### 提升更新的內容{#promoting-updated-content}
+### 提升更新的內容 {#promoting-updated-content}
 
 當針對現有語言副本翻譯內容時，請查看翻譯內容，視需要進行更改，然後升級翻譯以將其移到語言副本中。 當翻譯工作顯示&#x200B;**Ready For Review**&#x200B;狀態時，可以查看翻譯的檔案。
 
@@ -415,7 +415,7 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 1. 檢閱內容並進行必要變更後，若要促銷啟動副本，請按一下「**Promote**」。
 1. 在&#x200B;**Promote Launch**&#x200B;頁面上，指定要促銷的頁面，然後按一下或點選&#x200B;**Promote**。
 
-### 比較語言副本{#comparing-language-copies}
+### 比較語言副本 {#comparing-language-copies}
 
 要比較語言副本與語言主版：
 
@@ -429,11 +429,11 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 1. 兩個頁面（啟動和來源）將並排開啟。
    * 有關使用此功能的完整資訊，請參閱[頁面差異](/help/sites-cloud/authoring/features/page-diff.md)。
 
-## 導入和導出翻譯作業{#import-export}
+## 匯入和匯出翻譯工作 {#import-export}
 
 雖然AEM提供許多翻譯解決方案和介面，但您也可以手動匯入和匯出翻譯工作資訊。
 
-### 導出翻譯作業{#exporting-a-translation-job}
+### 匯出翻譯工作 {#exporting-a-translation-job}
 
 您可以下載翻譯工作的內容，例如傳送至未透過連接器與AEM整合的翻譯提供者，或檢閱內容。
 
@@ -441,7 +441,7 @@ AEM中的翻譯專案使用標準[AEM專案主控台。](/help/sites-cloud/autho
 1. 在對話方塊中，按一下或點選「下載已匯出的檔案」**，並視需要使用網頁瀏覽器對話方塊來儲存檔案。**
 1. 在對話方塊中，按一下或點選&#x200B;**關閉**。
 
-### 導入翻譯作業{#importing-a-translation-job}
+### 匯入翻譯工作 {#importing-a-translation-job}
 
 您可以將翻譯的內容匯入AEM，例如當翻譯提供者將翻譯內容傳送給您時，因為這些內容並未透過連接器與AEM整合。
 
