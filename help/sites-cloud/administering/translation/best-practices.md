@@ -2,16 +2,16 @@
 title: 翻譯最佳實務
 description: 了解由Adobe工程和諮詢團隊編譯的最佳實務，協助您快速上手處理翻譯專案。
 feature: 語言副本
-role: Administrator
+role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%
 
 ---
 
-# 翻譯最佳實務{#translation-best-practices}
+# 翻譯最佳實務 {#translation-best-practices}
 
 ## 一般 {#general}
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 * 使用MSM從翻譯的語言主版建立國家/地區網站，並將內容推出至共用相同語言的網站。 例如，法文母版可推出至法國、比利時和瑞士網站。
 * 先規劃、建立原型並進行測試，再開始實作。
 
-## 翻譯流程和方法{#translation-processes-and-methods}
+## 翻譯程式和方法 {#translation-processes-and-methods}
 
 * 與&#x200B;**本地化服務提供商(LSP)**&#x200B;接洽，以了解翻譯和相關本地化活動的專業知識。 LSP通過提供多種資源和技術來提高效率並節約翻譯成本，可幫助擴展您的全球業務：
    * 某些LSP既是服務提供商，也是技術提供商。 還有獨立技術提供商允許許多LSP參與其翻譯平台。
