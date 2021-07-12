@@ -1,16 +1,16 @@
 ---
 title: 使用選取工具
 description: 了解您可以使用哪些方法來選取Dynamic Media中互動式影像、互動式視訊和輪播橫幅的資產。
-role: Business Practitioner
+role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 18%
 
 ---
 
-# 使用Dynamic Media中的選取器{#working-with-selectors}
+# 在Dynamic Media中使用選取器 {#working-with-selectors}
 
 使用互動式影像、互動式視訊或轉盤橫幅時，您會選取資產，然後選取熱點和影像地圖的網站和產品以連結至。 使用影像集、回轉集和多媒體集時，您也可以使用資產選擇器選取資產。
 
@@ -24,7 +24,7 @@ ht-degree: 18%
 
 選擇熱點或影像映射的位置時（而不是手動輸入），使用的是選擇器。 網站選取器只有在您是[!DNL Adobe Experience Manager Sites]客戶時才有效。 產品選擇器也需要[!DNL Experience Manager Commerce]。
 
-## 在Dynamic Media中選擇產品{#selecting-products}
+## 在Dynamic Media中選取產品 {#selecting-products}
 
 當您想要熱點或影像地圖提供產品目錄中特定產品的快速檢視時，請使用產品選取器來選擇產品。
 
@@ -62,7 +62,7 @@ ht-degree: 18%
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## 在Dynamic Media中選取網站{#selecting-sites}
+## 在Dynamic Media中選取網站 {#selecting-sites}
 
 當您希望熱點或影像映射連結到[!DNL Experience Manager]網站內管理的網頁時，請使用網站選擇器選擇網頁。
 
@@ -82,7 +82,7 @@ ht-degree: 18%
 
 1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中，如果點選熱點或影像地圖，則導覽至您指定的[!DNL Experience Manager]網站頁面。
 
-## 在Dynamic Media中選取資產{#selecting-assets}
+## 在Dynamic Media中選取資產 {#selecting-assets}
 
 使用此選取器來選擇要用於轉盤橫幅、互動式視訊、影像集、混合媒體集和回轉集的影像。 在互動式視訊中，當您點選&#x200B;**[!UICONTROL **[!UICONTROL  Content ]**標籤中的「選取資產」]**&#x200B;時，即可使用資產選取器。 在轉盤集中，當您建立投影片時，可使用資產選取器。 在影像集、混合媒體集和回轉集中，當您分別建立影像集、混合媒體集或回轉集時，可使用資產選取器。
 
