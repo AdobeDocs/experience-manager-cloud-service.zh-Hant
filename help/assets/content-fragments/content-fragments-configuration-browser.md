@@ -2,9 +2,9 @@
 title: 內容片段 — 設定瀏覽器
 description: 了解如何在設定瀏覽器中啟用特定內容片段功能，以運用AEM強大的無頭傳送功能。
 feature: 內容片段
-role: Business Practitioner
+role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 18%
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 了解如何在設定瀏覽器中啟用特定內容片段功能，以運用AEM強大的無頭傳送功能。
 
-## 為您的執行個體{#enable-content-fragment-functionality-instance}啟用內容片段功能
+## 為您的執行個體啟用內容片段功能 {#enable-content-fragment-functionality-instance}
 
 使用內容片段之前，您需要使用&#x200B;**設定瀏覽器**&#x200B;以啟用：
 
@@ -35,7 +35,7 @@ ht-degree: 18%
 * 透過設定瀏覽器啟用內容片段功能的使用
 * 將設定套用至資產資料夾
 
-### 在設定瀏覽器{#enable-content-fragment-functionality-in-configuration-browser}中啟用內容片段功能
+### 在設定瀏覽器中啟用內容片段功能 {#enable-content-fragment-functionality-in-configuration-browser}
 
 若要[使用某些內容片段功能](#creating-a-content-fragment-model)，您&#x200B;**必須**&#x200B;先透過&#x200B;**設定瀏覽器**&#x200B;啟用它們：
 
@@ -63,7 +63,7 @@ ht-degree: 18%
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### 將設定套用至資產資料夾{#apply-the-configuration-to-your-assets-folder}
+### 將設定套用至資產資料夾 {#apply-the-configuration-to-your-assets-folder}
 
 為內容片段功能啟用設定&#x200B;**global**&#x200B;時，則套用至任何「資產」資料夾。
 
