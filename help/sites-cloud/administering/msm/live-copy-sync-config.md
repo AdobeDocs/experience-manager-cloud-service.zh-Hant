@@ -2,16 +2,16 @@
 title: 配置Live Copy同步
 description: 了解功能強大的Live Copy同步選項，以及如何根據專案需求進行設定和自訂。
 feature: 多站點管理員
-role: Administrator
+role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2339'
 ht-degree: 2%
 
 ---
 
-# 配置Live Copy同步{#configuring-live-copy-synchronization}
+# 配置Live Copy同步 {#configuring-live-copy-synchronization}
 
 Adobe Experience Manager提供許多現成的同步設定。 使用Live Copy之前，您應考慮下列事項，以定義Live Copy與其來源內容同步的方式和時間。
 
@@ -19,7 +19,7 @@ Adobe Experience Manager提供許多現成的同步設定。 使用Live Copy之�
 1. 如果現有的轉出設定沒有，請決定您是否需要建立自己的轉出設定。
 1. 指定要用於Live Copy的轉出設定。
 
-## 安裝和自訂轉出設定{#installed-and-custom-rollout-configurations}
+## 安裝和自訂轉出設定 {#installed-and-custom-rollout-configurations}
 
 本節提供有關已安裝轉出設定及其使用的同步動作，以及如有需要如何建立自訂設定的資訊。
 
@@ -27,7 +27,7 @@ Adobe Experience Manager提供許多現成的同步設定。 使用Live Copy之�
 >
 >更新或變更現成可用的轉出設定是&#x200B;**not**&#x200B;建議。 如果需要自訂即時動作，則應將其新增至自訂轉出設定。
 
-### 轉出觸發器{#rollout-triggers}
+### 轉出觸發器 {#rollout-triggers}
 
 每個轉出設定都使用轉出觸發器，而導致轉出發生。 轉出設定可使用下列其中一個觸發器：
 
@@ -57,7 +57,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | 在發生修改時推送 (淺層) | 修改Blueprint頁面時推送內容至Live Copy，而不更新參照（例如淺層復本）<br>使用「修改時」觸發器時，請謹慎使用此轉出設定。 | 於修改 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | 提升啟動 | 提升啟動頁面的標準轉出設定。 | 於轉出 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
-### 同步操作{#synchronization-actions}
+### 同步操作 {#synchronization-actions}
 
 下表列出隨AEM提供的現成同步動作。
 
@@ -94,7 +94,7 @@ You can [create a rollout configuration](/help/sites-developing/extending-msm.md
 The new rollout configuration is then available to you when configuring rollout configurations on a blueprint or Live Copy page.
 -->
 
-### 從同步{#excluding-properties-and-node-types-from-synchronization}中排除屬性和節點類型
+### 從同步中排除屬性和節點類型 {#excluding-properties-and-node-types-from-synchronization}
 
 您可以配置多個支援相應同步操作的OSGi服務，以使其不影響特定節點類型和屬性。 例如，Live Copy中不應包含許多與AEM內部功能相關的屬性和子節點。 只應複製與頁面使用者相關的內容。
 
@@ -119,7 +119,7 @@ The new rollout configuration is then available to you when configuring rollout 
 | 排除的頁面屬性 | `cq.wcm.msm.action.excludedprops` | 符合要從同步動作中排除之頁面屬性的規則運算式 |
 | 忽略的Mixin NodeTypes | `cq.wcm.msm.action.ignoredMixin` | 匹配要從同步操作中排除的混合節點類型名稱的規則表達式（僅適用於`contentUpdate`操作） |
 
-#### CQ MSM內容更新動作 — 排除{#cq-msm-content-update-action-exclusions}
+#### CQ MSM內容更新動作 — 排除項目 {#cq-msm-content-update-action-exclusions}
 
 預設情況下，會排除數個屬性和節點類型，這些會定義在&#x200B;**CQ MSM內容更新動作**&#x200B;的&#x200B;**排除的頁面屬性**&#x200B;下的OSGi設定中。
 
@@ -133,7 +133,7 @@ The new rollout configuration is then available to you when configuring rollout 
 
 `jcr:(?!(title)$).*`
 
-### 配置更新引用的同步{#configuring-synchronization-for-updating-references}
+### 配置更新引用的同步 {#configuring-synchronization-for-updating-references}
 
 您可以配置多個OSGi服務，這些服務支援與更新引用相關的相應同步操作。
 
@@ -146,7 +146,7 @@ The new rollout configuration is then available to you when configuring rollout 
 | 跨巢狀LiveCopy更新參考 | `cq.wcm.msm.impl.action.referencesupdate.prop_updateNested` | 在Web控制台中選擇此選項，或使用儲存庫配置將此布爾屬性設定為`true`以替換指向位於最頂層Live Copy分支內的任何資源的引用。 僅適用於`referencesUpdate`操作。 |
 | 更新引用頁面 | `cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate` | 在Web控制台中選擇此選項，或使用儲存庫配置將此布爾屬性設定為`true`以更新任何引用，以使用原始頁來改為引用Live Copy頁。 僅適用於`PageMoveAction`。 |
 
-## 指定要使用{#specifying-the-rollout-configurations-to-use}的轉出組態
+## 指定要使用的轉出設定 {#specifying-the-rollout-configurations-to-use}
 
 MSM可讓您指定一般使用的轉出設定集，並在需要時，您可以針對特定Live Copy覆寫這些設定。 MSM提供數個位置，用以指定要使用的轉出設定。 位置會決定設定是否套用至特定Live Copy。
 
@@ -163,7 +163,7 @@ MSM可讓您指定一般使用的轉出設定集，並在需要時，您可以�
 * WKND網站的根頁面已設定數個轉出設定。 MSM會對所有Live Copy頁面使用這些轉出設定。
 * WKND網站的根頁面已設定數個轉出設定，而Live Copy網站的根頁面則設定了一組不同的轉出設定。 MSM會使用在Live Copy網站的根頁面上設定的轉出設定。
 
-### 設定即時副本頁面{#setting-the-rollout-configurations-for-a-live-copy-page}的轉出設定
+### 設定即時副本頁面的轉出設定 {#setting-the-rollout-configurations-for-a-live-copy-page}
 
 使用轉出設定設定設定「即時副本」頁面，以在轉出來源頁面時使用。 子頁預設繼承配置。 將轉出設定設為使用時，會覆寫即時副本頁面從其父項繼承的設定。
 
@@ -187,7 +187,7 @@ MSM可讓您指定一般使用的轉出設定集，並在需要時，您可以�
 
 1. 按一下或點選&#x200B;**儲存並關閉**。
 
-### 設定Blueprint頁面{#setting-the-rollout-configuration-for-a-blueprint-page}的轉出設定
+### 設定Blueprint頁面的轉出設定 {#setting-the-rollout-configuration-for-a-blueprint-page}
 
 使用轉出設定設定設定藍圖頁面，以在Blueprint頁面推出時使用。
 
@@ -199,7 +199,7 @@ MSM可讓您指定一般使用的轉出設定集，並在需要時，您可以�
 1. 使用下拉式選取器選取一或多個&#x200B;**轉出設定**。
 1. 使用&#x200B;**Save**&#x200B;保存更新。
 
-### 設定系統預設轉出配置{#setting-the-system-default-rollout-configuration}
+### 設定系統預設轉出配置 {#setting-the-system-default-rollout-configuration}
 
 若要指定轉出設定以作為系統預設值，請設定下列OSGi服務。
 
