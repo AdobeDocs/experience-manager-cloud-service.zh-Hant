@@ -2,10 +2,10 @@
 title: 複寫
 description: 散佈 和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 225c47db1af35b29d79ebd16fa437681987b1372
+source-git-commit: e6e5fb6eebcd39b46dc4234999e18de9b8e3950e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1185'
+ht-degree: 1%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
 您可以選擇&#x200B;**工具 — 工作流 — 模型**&#x200B;並複製&#x200B;**發佈內容樹**&#x200B;現成可用的工作流模型，如下所示：
 
-![](/help/operations/assets/publish-distribute.png)
+![](/help/operations/assets/publishcontenttreeworkflow.png)
 
 請勿修改或調用原始模型。 請務必先複製模型，然後修改或叫用該復本。
 
