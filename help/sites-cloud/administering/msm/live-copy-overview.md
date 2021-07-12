@@ -2,16 +2,16 @@
 title: Live Copy概述主控台
 description: 了解Live Copy概觀主控台的基本知識，以便快速了解Live Copy的狀態，以便同步內容。
 feature: 多站點管理員
-role: Administrator
+role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 1%
 
 ---
 
-# Live Copy概述主控台{#live-copy-overview-console}
+# Live Copy概述主控台 {#live-copy-overview-console}
 
 **Live Copy概述**&#x200B;主控台可讓您：
 
@@ -21,14 +21,14 @@ ht-degree: 1%
    * 檢視Blueprint和Live Copy屬性
 * 執行轉出動作。
 
-## 開啟即時副本概述{#opening-the-live-copy-overview}
+## 開啟即時副本概述 {#opening-the-live-copy-overview}
 
 您可以從以下位置開啟「即時副本概述」：
 
 * [參考Blueprint頁面的側面板（網站主控台）](#opening-live-copy-overview-references-for-a-blueprint-page)
 * [Blueprint頁面的屬性](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
-### Blueprint頁面{#references-to-a-blueprint-page}的參考
+### Blueprint頁面的參考 {#references-to-a-blueprint-page}
 
 您可以從&#x200B;**Sites**&#x200B;控制台的&#x200B;**References**&#x200B;側面板開啟&#x200B;**Live Copy概述**:
 
@@ -44,7 +44,7 @@ ht-degree: 1%
 1. 選擇「即時副本概述」(**Live Copy Overview**)以顯示並使用與所選藍圖相關的所有即時副本的概述。
 1. 使用&#x200B;**關閉**&#x200B;退出並返回&#x200B;**Sites**&#x200B;控制台。
 
-### Blueprint頁面{#properties-of-a-blueprint-page}的屬性
+### Blueprint頁面的屬性 {#properties-of-a-blueprint-page}
 
 檢視Blueprint頁面的屬性時，可以開啟&#x200B;**即時副本概述**:
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 1. 使用&#x200B;**關閉**&#x200B;退出並返回&#x200B;**Sites**&#x200B;控制台。
 
-## 使用即時副本概述{#using-the-live-copy-overview}
+## 使用即時副本概述 {#using-the-live-copy-overview}
 
 **Live Copy概述**&#x200B;窗口提供和概述與選定頁面相關的Live Copy的狀態。
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 1. 開啟&#x200B;**即時副本概述**。
 1. 選取所需的Blueprint或Live Copy頁面，工具列將會更新以顯示可用的動作。 可用的[actions](overview.md#terms-used)取決於您選取的是[blueprint](#actions-for-a-blueprint-page)或[即時副本](#actions-for-a-live-copy-page)頁面。
 
-### Blueprint頁面{#actions-for-a-blueprint-page}的動作
+### Blueprint頁面的動作 {#actions-for-a-blueprint-page}
 
 選取Blueprint頁面時，可執行下列動作：
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 * **編輯**  — 開啟Blueprint頁面進行編輯。
 * **[轉出](overview.md#rollout-and-synchronize)**  — 執行轉出以從來源推送變更至即時副本。
 
-### 即時副本頁面{#actions-for-a-live-copy-page}的動作
+### 即時副本頁面的動作 {#actions-for-a-live-copy-page}
 
 選取「即時副本」頁面時，可使用下列動作：
 
