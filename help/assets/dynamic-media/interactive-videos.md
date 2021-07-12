@@ -2,9 +2,9 @@
 title: 互動影片
 description: 了解如何在Dynamic Media中使用互動式視訊和可購買視訊。
 feature: 互動影片
-role: Business Practitioner
+role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '6021'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 另請參閱[互動式影像](/help/assets/dynamic-media/interactive-images.md)。
 
-## 互動式視訊的實際運作{#interactive-video-in-action}
+## 互動式視訊的實際運作 {#interactive-video-in-action}
 
 若要檢視互動式可購買視訊的實際運作，請按一下「 [Live Demos](https://landing.adobe.com/tw/na/dynamic-media/ctir-2755/live-demos.html)」 (即時展示)，捲動至頁面上的 **[!UICONTROL Shopbable Media]** 標題，然後按一下可購買視訊以開始播放。
 
@@ -46,16 +46,16 @@ There was a link here that showed the video frame of an interactive video and wh
 >
 >如果您建立互動式視訊，在使用者點選縮圖影像時啟動網頁，有些裝置會封鎖快顯網頁以開啟。 在這種情況下，請更改設備上的彈出窗口阻止程式設定。 例如，在Apple iPhone 6上，點選「**[!UICONTROL 設定> Safari >封鎖快顯視窗]**」，然後將控制項滑動至「**[!UICONTROL 關閉]**」。 現在，當您播放互動式視訊並按一下縮圖時，如果您想要開啟快顯視窗，則會提示您。 若您接受，則會開啟網頁。
 
-### 觀看互動式視訊的建立方式{#watch-how-interactive-videos-are-created}
+### 觀看互動式視訊的建立方式 {#watch-how-interactive-videos-are-created}
 
 觀看[如何建立互動式視訊的逐步說明](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)（7分鐘30秒）。
 (雖然視訊逐步說明已加上「隨選資產」品牌，但Adobe Experience Manager Assets中的「互動式視訊」仍適用原則和步驟。)
 
-### Adobe客戶成功網路研討會{#adobe-customer-success-webinar}
+### Adobe客戶成功網路研討會 {#adobe-customer-success-webinar}
 
 [在Experience Manager資產中使用互動式視訊、連結共用和YouTube共用](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)網路研討會教您如何使用互動式視訊和其他功能，將轉換導向的事件連結至您的視訊行銷內容。
 
-## 快速入門：互動式影片{#quick-start-interactive-videos}
+## 快速入門：互動影片 {#quick-start-interactive-videos}
 
 下列逐步工作流程說明旨在協助您在Dynamic Media中快速上手並執行互動式影片。
 
@@ -89,7 +89,7 @@ There was a link here that showed the video frame of an interactive video and wh
 如果您使用協力廠商WCM（網頁內容管理員），您必須將新的互動式視訊與網站上使用的現有快速檢視實施整合。 請參閱[將互動式視訊與現有的快速檢視整合](#integrating-an-interactive-video-with-an-existing-quickview)。
    [將Dynamic Media Assets新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-## （可選）識別快速檢視變數{#optional-identifying-quickview-variables}
+## （可選）識別快速檢視變數 {#optional-identifying-quickview-variables}
 
 >[!NOTE]
 只有在以下情況為真時才需要此任務：
@@ -215,7 +215,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 您現在可以上傳視訊及其相關的縮圖資產。
 
-## （可選）建立互動式視訊檢視器預設集{#optional-creating-an-interactive-video-viewer-preset}
+## （可選）建立互動式視訊檢視器預設集 {#optional-creating-an-interactive-video-viewer-preset}
 
 如果要使用預設的、現成的互動式視頻查看器預設類型`Shoppable_Video_dark`或`Shoppable_Video_light`中的一種，您可以跳過此任務並繼續下一步。
 
@@ -246,7 +246,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
    現在為影片增加互動功能。
 
-## 為視頻添加交互功能{#adding-interactivity-to-your-video}
+## 為視訊新增互動功能 {#adding-interactivity-to-your-video}
 
 使用「建立互動式視訊」頁面上的就地視覺編輯器，將時間軸區段新增至視訊。
 
@@ -466,7 +466,7 @@ There was a link here that showed the video frame of an interactive video and wh
       在時間軸上，點選您要分成兩半的區段，然後點選工具列上的「分割區段」 ****。
 
       選取兩個或多個區段會停用&#x200B;**[!UICONTROL 分割區段]**&#x200B;功能。
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    將選取的10秒區段分割為兩個區段，每個區段5秒。
 
@@ -492,11 +492,11 @@ There was a link here that showed the video frame of an interactive video and wh
 
    新增時間軸區段並發佈互動式視訊後，您就可以將其新增至現有的網站登陸頁面。 請參閱[將互動式視訊與您的網站整合](#integrating-an-interactive-video-with-your-website)。
 
-## 發佈互動式視訊資產{#publishing-interactive-video-assets}
+## 發佈互動式視訊資產 {#publishing-interactive-video-assets}
 
 如需如何發佈互動式視訊資產的詳細資訊，請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-## 將互動式視訊與您的網站{#integrating-an-interactive-video-with-your-website}整合
+## 將互動式視訊與您的網站整合 {#integrating-an-interactive-video-with-your-website}
 
 上傳影片、新增時間軸區段並發佈互動式影片後，您現在可以將其新增至現有網站。
 
@@ -553,7 +553,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## 將互動式視訊與現有的快速檢視{#integrating-an-interactive-video-with-an-existing-quickview}整合
+## 將互動式視訊與現有的快速檢視整合 {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 只有當您是獨立Experience Manager資產客戶時，才適用此工作。
@@ -752,7 +752,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## 使用快速視圖建立自定義彈出窗口Windows® {#using-quickviews-to-create-custom-pop-ups}
+## 使用快速視圖建立自定義彈出窗口® {#using-quickviews-to-create-custom-pop-ups}
 
 請參閱[使用快速視圖建立自定義彈出窗口Windows®](/help/assets/dynamic-media/custom-pop-ups.md)。
 —>
