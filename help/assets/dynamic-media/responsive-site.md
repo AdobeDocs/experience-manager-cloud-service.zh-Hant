@@ -2,9 +2,9 @@
 title: 為回應式網站傳送最佳化影像
 description: 了解如何使用回應式程式碼功能，從Dynamic Media提供最佳化的影像。
 feature: 資產管理
-role: Business Practitioner
+role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 12%
@@ -44,7 +44,7 @@ ht-degree: 12%
 1. 在&#x200B;**[!UICONTROL 內嵌回應式影像]**&#x200B;對話方塊中，選取並複製回應式程式碼文字，然後貼到您的網站以存取回應式資產。
 1. 編輯內嵌程式碼中的預設中斷點，以便直接在程式碼中符合在回應式網站中找到的內容。 此外，測試在不同頁面斷點處提供的不同影像解析度。
 
-## 使用HTTP/2傳送Dynamic Media資產{#using-http-to-delivery-your-dynamic-media-assets}
+## 使用HTTP/2傳送Dynamic Media資產 {#using-http-to-delivery-your-dynamic-media-assets}
 
 HTTP/2是全新、更新的Web通訊協定，可改善瀏覽器和伺服器的通訊方式。 它提供了更快的資訊傳輸，並降低了所需的處理能力。 支援使用HTTP/2來傳送Dynamic Media資產，以提供更理想的回應和載入時間。
 
