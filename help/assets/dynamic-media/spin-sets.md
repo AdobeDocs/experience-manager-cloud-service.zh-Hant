@@ -2,9 +2,9 @@
 title: 迴轉集
 description: 了解如何在Dynamic Media中使用回轉集。
 feature: 迴轉集
-role: Business Practitioner
+role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 12%
@@ -25,7 +25,7 @@ ht-degree: 12%
 >
 >如需Assets使用者介面的資訊，請參閱[使用觸控式UI](/help/assets/manage-digital-assets.md)管理資產，並將其套用至上傳影像集資產的新資料夾。
 
-## 快速入門：回轉集{#quick-start-spin-sets}
+## 快速入門：回轉集 {#quick-start-spin-sets}
 
 若要使用回轉集快速上手並執行，請執行下列步驟：
 
@@ -75,13 +75,13 @@ ht-degree: 12%
 
 如有必要，您可以[編輯回轉集](#editing-spin-sets)。 此外，還可以查看和修改[回轉集屬性](/help/assets/manage-digital-assets.md#editing-properties)。
 
-## 上傳回轉集的資產{#uploading-assets-for-spin-sets}
+## 上傳回轉集的資產 {#uploading-assets-for-spin-sets}
 
 一維度回轉集至少需要8-12個項目鏡頭。 必須定期拍攝照片，以給人以項目正在旋轉和被翻轉的印象。 例如，如果一維度回轉集包含12個鏡頭，請為每個鏡頭旋轉項目30° (360/12)。
 
 您可以上傳回轉集的影像，如同[上傳Experience Manager資產](/help/assets/manage-digital-assets.md)中的任何其他資產。
 
-### 回轉集{#guidelines-for-shooting-spin-set-images}影像擷取指南
+### 為回轉集擷取影像的准則 {#guidelines-for-shooting-spin-set-images}
 
 以下是回轉集影像的一些最佳實務。 一般而言，旋轉集中的影像越多，影像旋轉效果就越好。 但是，集合中包含許多影像也會增加影像載入所花費的時間。 Experience Manager建議拍攝影像以用於回轉集的以下准則：
 
@@ -91,7 +91,7 @@ ht-degree: 12%
 * 請確定產品詳細資訊清晰明瞭，且清晰明瞭。
 * 給裝模特或模特的時尚服裝拍照。 人體模型通常是蒙面的（使用玻璃人體模型），或者在影像中顯示一個風格化的人體模型/裁縫。 通過定義角度數，可以建立模型上的回轉集。 在地板上用磁帶標籤每個角度，以便引導模型按照每個拍攝的方向進行步驟和查看。
 
-## 建立回轉集{#creating-spin-sets}
+## 建立回轉集 {#creating-spin-sets}
 
 本節說明如何建立回轉集。
 
@@ -148,7 +148,7 @@ ht-degree: 12%
 
 1. 按一下「**[!UICONTROL 儲存]**」。新建立的回轉集會顯示在您建立該回轉集的資料夾中。
 
-## 查看回轉集{#viewing-spin-sets}
+## 檢視回轉集 {#viewing-spin-sets}
 
 您可以在使用者介面中建立回轉集，或自動使用[批次集預設集](/help/assets/dynamic-media/config-dm.md)。 但是，使用批集預設集建立的集，do *not*&#x200B;將出現在用戶介面中。 您可以透過三種不同方式存取透過批次集預設集建立的集。 （即使您在使用者介面中建立回轉集，這些方法仍可供使用）。
 
@@ -172,7 +172,7 @@ ht-degree: 12%
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
-## 編輯回轉集{#editing-spin-sets}
+## 編輯回轉集 {#editing-spin-sets}
 
 您可以對回轉集執行各種編輯工作，例如：
 
@@ -207,10 +207,10 @@ ht-degree: 12%
 
 1. 完成編輯時，按一下「**[!UICONTROL 儲存]**」。
 
-## 預覽回轉集{#previewing-spin-sets}
+## 預覽回轉集 {#previewing-spin-sets}
 
 請參閱「預覽資產」[。](/help/assets/dynamic-media/previewing-assets.md)
 
-## 發佈回轉集{#publishing-spin-sets}
+## 發佈回轉集 {#publishing-spin-sets}
 
 請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
