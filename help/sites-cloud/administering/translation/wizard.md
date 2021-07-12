@@ -2,16 +2,16 @@
 title: 語言副本嚮導
 description: 了解如何在AEM中使用語言副本精靈。
 feature: 語言副本
-role: Administrator
+role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
 
 ---
 
-# 語言複製嚮導{#language-copy-wizard}
+# 語言副本嚮導 {#language-copy-wizard}
 
 「語言復本精靈」是建立和檢測多語言內容結構的引導式體驗。 該嚮導使建立語言副本變得簡單而快速。
 
