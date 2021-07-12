@@ -2,20 +2,20 @@
 title: 建立和同步Live Copy
 description: 了解如何建立和同步Live Copy，以在整個網站上重複使用您的內容。
 feature: 多站點管理員
-role: Administrator
+role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 1%
 
 ---
 
-# 建立並同步Live Copy {#creating-and-synchronizing-live-copies}
+# 建立和同步Live Copy {#creating-and-synchronizing-live-copies}
 
 您可以從頁面或Blueprint設定建立即時副本，以便在您的網站上重複使用該內容。 管理繼承和同步，您可以控制內容的變更傳播方式。
 
-## 管理Blueprint配置{#managing-blueprint-configurations}
+## 管理Blueprint設定 {#managing-blueprint-configurations}
 
 Blueprint設定可識別您要用作一或多個Live Copy頁面之來源的現有網站。
 
@@ -41,7 +41,7 @@ Blueprint設定可識別您要用作一或多個Live Copy頁面之來源的現�
 
 使用Blueprint設定時，您可將其與轉出設定建立關聯，此設定可決定來源/Blueprint的即時副本同步方式。 請參閱[指定要使用的轉出組態](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)。
 
-### 建立和編輯Blueprint配置{#creating-editing-blueprint-configurations}
+### 建立和編輯Blueprint設定 {#creating-editing-blueprint-configurations}
 
 Blueprint設定視為不可修改的資料，因此在執行階段無法編輯。 因此，任何設定變更都必須透過Git，使用CI/CD管道部署。
 
@@ -49,7 +49,7 @@ Blueprint設定視為不可修改的資料，因此在執行階段無法編輯�
 
 下列步驟僅供本機開發執行個體的管理員用於測試和開發用途。 任何AEMaaCS雲端例項都無法使用這些選項。
 
-#### 在本地{#creating-a-blueprint-configuration}建立Blueprint配置
+#### 在本機建立Blueprint設定 {#creating-a-blueprint-configuration}
 
 要建立Blueprint配置：
 
@@ -68,7 +68,7 @@ Blueprint設定視為不可修改的資料，因此在執行階段無法編輯�
 
 1. **** Create將根據您的規範建立Blueprint配置。
 
-### 在本機編輯或刪除Blueprint配置{#editing-or-deleting-a-blueprint-configuration}
+### 在本機編輯或刪除Blueprint設定{#editing-or-deleting-a-blueprint-configuration}
 
 您可以編輯或刪除現有的Blueprint設定：
 
@@ -82,11 +82,11 @@ Blueprint設定視為不可修改的資料，因此在執行階段無法編輯�
    * **屬性**;您可以使用它來檢視，然後編輯設定的屬性。
    * **刪除**
 
-## 建立即時副本{#creating-a-live-copy}
+## 建立即時副本 {#creating-a-live-copy}
 
 建立即時副本的方式有很多。
 
-### 建立頁面的即時副本{#creating-a-live-copy-of-a-page}
+### 建立頁面的即時副本 {#creating-a-live-copy-of-a-page}
 
 您可以建立任何頁面或分支的即時副本。 當您建立「即時副本」時，可以指定用於同步內容的轉出設定：
 
@@ -137,7 +137,7 @@ Blueprint設定視為不可修改的資料，因此在執行階段無法編輯�
 1. （選用）若要指定要用於即時副本的一或多個轉出設定，請使用&#x200B;**轉出設定**&#x200B;下拉式清單來選取它們。 選取的設定會顯示在下拉式選取器下方。
 1. 按一下或點選&#x200B;**建立**。 將顯示確認消息，從此處，您可以選擇&#x200B;**Open**&#x200B;或&#x200B;**Done**。
 
-### 從Blueprint配置{#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}建立網站的即時副本
+### 從Blueprint設定建立網站的即時副本 {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
 使用Blueprint設定建立Live Copy，以根據Blueprint（來源）內容建立網站。 當您從Blueprint設定建立Live Copy時，請選取要複製的Blueprint來源的一或多個語言分支，然後選取要從語言分支複製的章節。 請參閱[建立Blueprint配置](#creating-a-blueprint-configuration)。
 
@@ -176,13 +176,13 @@ Blueprint設定視為不可修改的資料，因此在執行階段無法編輯�
 1. 使用&#x200B;**初始章節**&#x200B;下拉式清單，選取要包含在即時副本中的Blueprint區段。 預設會包含所有可用章節，但可移除。
 1. 提供其餘屬性的值，然後選擇&#x200B;**Create**。 在確認對話框中，選擇&#x200B;**Done**&#x200B;以返回&#x200B;**Sites**&#x200B;控制台，或選擇&#x200B;**Open Site**&#x200B;以開啟站點的根頁。
 
-### 在即時副本內建立即時副本（Blueprint設定）{#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
+### 在即時副本中建立即時副本（Blueprint設定） {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
 
 當您在現有即時副本內建立即時副本時（使用Blueprint設定建立），您可以插入任何原本建立即時副本時未包含的語言副本或章節。
 
 ## 監控您的Live Copy {#monitoring-your-live-copy}
 
-### 查看即時副本的狀態{#seeing-the-status-of-a-live-copy}
+### 查看即時副本的狀態 {#seeing-the-status-of-a-live-copy}
 
 Live Copy頁面的屬性會顯示有關Live Copy的下列資訊：
 
@@ -205,13 +205,13 @@ Live Copy頁面的屬性會顯示有關Live Copy的下列資訊：
 
    如需詳細資訊，請參閱Live Copy概述主控台文章中的[使用Live Copy概述](live-copy-overview.md#using-the-live-copy-overview)一節。
 
-### 查看Blueprint頁面的即時副本{#seeing-the-live-copies-of-a-blueprint-page}
+### 查看Blueprint頁面的即時副本 {#seeing-the-live-copies-of-a-blueprint-page}
 
 Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面清單，這些頁面會以目前(Blueprint)頁面作為來源。 使用此清單來追蹤即時副本。 清單會顯示在[頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md)的&#x200B;**Blueprint**&#x200B;標籤上。
 
 ![頁面屬性的Blueprint索引標籤](../assets/live-copy-blueprint-tab.png)
 
-## 同步即時副本{#synchronizing-your-live-copy}
+## 同步您的即時副本 {#synchronizing-your-live-copy}
 
 有許多方法可同步您的即時副本。
 
@@ -225,7 +225,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 >
 >這類[衝突需要在轉出時處理和解決](rollout-conflicts.md)。
 
-#### 從頁面屬性{#rolling-out-a-blueprint-from-page-properties}轉出Blueprint
+#### 從頁面屬性轉出Blueprint {#rolling-out-a-blueprint-from-page-properties}
 
 1. 在&#x200B;**Sites**&#x200B;控制台中，選取Blueprint中的頁面並開啟屬性。
 1. 開啟&#x200B;**Blueprint**&#x200B;標籤。
@@ -243,7 +243,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 
 轉出會以非同步作業處理，並可在[***非同步作業狀態**&#x200B;頁面上檢查。](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
-#### 從參考邊欄{#roll-out-a-blueprint-from-the-reference-rail}轉出Blueprint
+#### 從參考邊欄展開Blueprint {#roll-out-a-blueprint-from-the-reference-rail}
 
 1. 在&#x200B;**Sites**&#x200B;控制台中，選取即時副本中的頁面，並開啟&#x200B;**[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;面板（從工具列）。
 1. 從清單中選擇&#x200B;**Blueprint**&#x200B;選項，以顯示與此頁面關聯的藍圖。
@@ -268,7 +268,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 
 轉出會以非同步作業處理，並可在「[**非同步作業狀態**」頁面上進行檢查。](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
-#### 從即時副本概述{#roll-out-a-blueprint-from-the-live-copy-overview}推出Blueprint
+#### 從即時副本概述中展開Blueprint {#roll-out-a-blueprint-from-the-live-copy-overview}
 
 選取「Blueprint」頁面時，也可從「即時副本概述」中使用&#x200B;[**轉出**&#x200B;動作。](live-copy-overview.md#using-the-live-copy-overview)
 
@@ -287,11 +287,11 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 
 轉出會以非同步作業處理，並可在「[**非同步作業狀態**」頁面上進行檢查。](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
-### 同步即時副本{#synchronizing-a-live-copy}
+### 同步即時副本 {#synchronizing-a-live-copy}
 
 同步「即時副本」頁面，以從來源提取內容變更至「即時副本」。
 
-#### 從頁面屬性同步即時副本{#synchronize-a-live-copy-from-page-properties}
+#### 從頁面屬性同步即時副本 {#synchronize-a-live-copy-from-page-properties}
 
 同步即時副本，以從來源提取變更至即時副本。
 
@@ -307,7 +307,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 
    將請求確認，請使用&#x200B;**Sync**&#x200B;繼續。
 
-#### 從即時副本概述{#synchronize-a-live-copy-from-the-live-copy-overview}同步即時副本
+#### 從即時副本概述同步即時副本 {#synchronize-a-live-copy-from-the-live-copy-overview}
 
 選取「即時副本」頁面時，「即時副本概述」](live-copy-overview.md#using-the-live-copy-overview)中也提供「同步」動作。[
 
@@ -320,7 +320,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 
    ![含有或不含子頁面的轉出頁面](../assets/rollout-page-and-subpages.png)
 
-## 變更即時副本內容{#changing-live-copy-content}
+## 變更即時副本內容 {#changing-live-copy-content}
 
 若要變更即時副本內容，您可以：
 
@@ -339,7 +339,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 >
 >這類[衝突需要在轉出時處理和解決](rollout-conflicts.md)。
 
-### 將元件新增至即時副本頁面{#adding-components-to-a-live-copy-page}
+### 將元件新增至即時副本頁面 {#adding-components-to-a-live-copy-page}
 
 您隨時都可以將元件新增至Live Copy頁面。 即時副本及其段落系統的繼承狀態無法控制您新增元件的能力。
 
@@ -349,7 +349,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 >
 >在本機對標示為容器的元件所做的變更，將不會由轉出時的Blueprint內容覆寫。 如需詳細資訊，請參閱[MSM最佳實務](best-practices.md#components-and-container-synchronization) 。
 
-### 暫停頁面{#suspending-inheritance-for-a-page}的繼承
+### 暫停頁面的繼承 {#suspending-inheritance-for-a-page}
 
 建立Live Copy時，Live Copy設定會儲存在複製頁面的根頁面上。 根頁面的所有子頁面都會繼承Live Copy設定。 Live Copy頁面上的元件也會繼承Live Copy設定。
 
@@ -359,7 +359,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 >
 >您也可以從Blueprint中[分離Live Copy](#detaching-a-live-copy)以移除所有連線。 與暫停繼承不同，分離操作是永久的且不可逆的。
 
-#### 暫停頁面屬性的繼承{#suspending-inheritance-from-page-properties}
+#### 暫停頁面屬性的繼承 {#suspending-inheritance-from-page-properties}
 
 暫停頁面上的繼承：
 
@@ -372,7 +372,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 
 1. 在確認對話框中選擇&#x200B;**掛起**。
 
-#### 暫停即時副本概述{#suspending-inheritance-from-the-live-copy-overview}中的繼承
+#### 暫停即時副本的繼承概述 {#suspending-inheritance-from-the-live-copy-overview}
 
 選取「即時副本」頁面時，也可從「即時副本概述」](live-copy-overview.md#using-the-live-copy-overview)使用「暫停」動作。[
 
@@ -389,7 +389,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 
    ![確認暫停](../assets/confirm-suspend.png)
 
-### 繼續頁面{#resuming-inheritance-for-a-page}的繼承
+### 繼續頁面的繼承 {#resuming-inheritance-for-a-page}
 
 暫停頁面的即時副本繼承是暫時動作。 暫停後，**Resume**&#x200B;動作就可用，允許您恢復即時關係。
 
@@ -407,7 +407,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 >
 >當您重新啟用繼承時，頁面不會自動與來源同步。 如果需要，您可以在繼續或稍後手動請求同步。
 
-#### 繼續從頁面屬性{#resuming-inheritance-from-page-properties}繼承
+#### 繼續從頁面屬性繼承 {#resuming-inheritance-from-page-properties}
 
 一旦[暫停](#suspending-inheritance-from-page-properties),**Resume**&#x200B;動作就會變成頁面屬性的工具列中：
 
@@ -415,7 +415,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 
 選取後，會顯示對話方塊。 您可以視需要選取同步，然後確認動作。
 
-#### 從即時副本概述{#resume-a-live-copy-page-from-the-live-copy-overview}繼續即時副本頁面
+#### 從即時副本概觀繼續即時副本頁面 {#resume-a-live-copy-page-from-the-live-copy-overview}
 
 選取「即時副本」頁面時，也可從「即時副本概述」](live-copy-overview.md#using-the-live-copy-overview)使用[恢復動作。
 
@@ -423,7 +423,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 1. 從工具欄中選擇&#x200B;**Resume**。
 1. 指出您是否要在還原繼承後同步頁面，然後在&#x200B;**Resume Live Copy**&#x200B;對話方塊中確認&#x200B;**Resume**&#x200B;動作。
 
-### 更改繼承深度（淺層/深層）{#changing-inheritance-depth-shallow-deep}
+### 變更繼承深度（淺層/深層） {#changing-inheritance-depth-shallow-deep}
 
 在現有的Live Copy上，您可以變更頁面的深度，亦即是否包含子頁面。
 
@@ -461,7 +461,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 
 1. 按一下或點選&#x200B;**儲存**&#x200B;以保存更新。
 
-### 取消元件{#cancelling-inheritance-for-a-component}的繼承
+### 取消元件的繼承 {#cancelling-inheritance-for-a-component}
 
 取消元件的「即時副本」繼承，使元件不再與源元件同步。 您可以在稍後視需要啟用繼承。
 
@@ -483,13 +483,13 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 
    元件工具列會更新為包含所有（適當）的編輯命令。
 
-### 重新啟用元件{#re-enabling-inheritance-for-a-component}的繼承
+### 重新啟用元件的繼承 {#re-enabling-inheritance-for-a-component}
 
 若要啟用元件的繼承，請按一下或點選元件工具列上的&#x200B;**重新啟用繼承**&#x200B;圖示。
 
 ![重新啟用繼承圖示](../assets/re-enable-inheritance-icon.png)
 
-### 變更即時副本頁面上的元件順序{#changing-the-order-of-components-on-a-live-copy-page}
+### 變更即時副本頁面上的元件順序 {#changing-the-order-of-components-on-a-live-copy-page}
 
 如果「即時副本」包含屬於段落系統的元件，則該段落系統的繼承遵循以下規則：
 
@@ -507,7 +507,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 1. 將現有元件拖曳至頁面上的新位置。
 1. 在&#x200B;**取消繼承**&#x200B;對話方塊中，使用&#x200B;**Yes**&#x200B;確認動作。
 
-### 覆寫即時副本頁面{#overriding-properties-of-a-live-copy-page}的屬性
+### 覆寫即時副本頁面的屬性 {#overriding-properties-of-a-live-copy-page}
 
 Live Copy頁面的頁面屬性預設會繼承自來源頁面，且無法編輯。
 
@@ -532,13 +532,13 @@ Live Copy頁面的頁面屬性預設會繼承自來源頁面，且無法編輯�
 
 1. 在&#x200B;**取消繼承**&#x200B;確認對話方塊中，按一下或點選&#x200B;**是**。
 
-### 還原即時副本頁面{#revert-properties-of-a-live-copy-page}的屬性
+### 還原即時副本頁面的屬性 {#revert-properties-of-a-live-copy-page}
 
 若要啟用屬性的繼承，請按一下或點選屬性旁出現的&#x200B;**還原繼承**&#x200B;圖示。
 
 ![還原繼承按鈕](../assets/revert-inheritance-button.png)
 
-### 重設即時副本頁面{#resetting-a-live-copy-page}
+### 重設即時副本頁面 {#resetting-a-live-copy-page}
 
 您可以重設「即時副本」頁面，以便：
 
@@ -547,7 +547,7 @@ Live Copy頁面的頁面屬性預設會繼承自來源頁面，且無法編輯�
 
 重設會影響您對頁面屬性、段落系統和元件所做的變更。
 
-#### 從頁面屬性{#reset-a-live-copy-page-from-the-page-properties}重設即時副本頁面
+#### 從頁面屬性重設即時副本頁面 {#reset-a-live-copy-page-from-the-page-properties}
 
 1. 在&#x200B;**Sites**&#x200B;控制台中，選擇「Live Copy」頁，然後選擇&#x200B;**View Properties**。
 1. 開啟&#x200B;**Live Copy**&#x200B;標籤。
@@ -557,7 +557,7 @@ Live Copy頁面的頁面屬性預設會繼承自來源頁面，且無法編輯�
 
 1. 在&#x200B;**重設即時副本**&#x200B;對話方塊中，使用&#x200B;**重設**&#x200B;確認。
 
-#### 從Live Copy概述{#reset-a-live-copy-page-from-the-live-copy-overview}重設Live Copy頁面
+#### 從Live Copy概述重設Live Copy頁面 {#reset-a-live-copy-page-from-the-live-copy-overview}
 
 選取「即時副本」頁面時，「即時副本概述」中也提供「[**重設**」動作。](live-copy-overview.md#using-the-live-copy-overview)
 
@@ -567,7 +567,7 @@ Live Copy頁面的頁面屬性預設會繼承自來源頁面，且無法編輯�
 
    ![確認重設即時副本](../assets/reset-live-copy.png)
 
-## 比較即時副本頁面與Blueprint頁面{#comparing-a-live-copy-page-with-a-blueprint-page}
+## 比較即時副本頁面與Blueprint頁面 {#comparing-a-live-copy-page-with-a-blueprint-page}
 
 若要追蹤您所做的變更，您可以在&#x200B;**參考**&#x200B;中檢視Blueprint頁面，並與其即時副本頁面比較：
 
@@ -590,7 +590,7 @@ Live Copy頁面的頁面屬性預設會繼承自來源頁面，且無法編輯�
 
    有關使用比較功能的完整資訊，請參閱[頁面差異](/help/sites-cloud/authoring/features/page-diff.md)。
 
-## 分離即時副本{#detaching-a-live-copy}
+## 分離即時副本 {#detaching-a-live-copy}
 
 分離動作會永久移除即時副本與其來源/藍圖頁面之間的即時關係。 所有與MSM相關的屬性會從Live Copy中移除，而Live Copy頁面會變成獨立副本。
 
@@ -626,7 +626,7 @@ Live Copy頁面的頁面屬性預設會繼承自來源頁面，且無法編輯�
    >
    >如需此類情況的詳細資訊，請參閱[MSM轉出衝突](rollout-conflicts.md)。
 
-### 從「頁面屬性」 {#detach-a-live-copy-page-from-the-page-properties}中分離「即時副本」頁
+### 從「頁面屬性」中分離「即時副本」頁面 {#detach-a-live-copy-page-from-the-page-properties}
 
 要分離即時副本，請執行以下操作：
 
@@ -638,7 +638,7 @@ Live Copy頁面的頁面屬性預設會繼承自來源頁面，且無法編輯�
 
 1. 將顯示確認對話框，請選擇&#x200B;**Detach**&#x200B;以完成操作。
 
-### 從Live Copy概述{#detach-a-live-copy-page-from-the-live-copy-overview}中分離Live Copy頁
+### 從「即時副本概述」中分離即時副本頁面 {#detach-a-live-copy-page-from-the-live-copy-overview}
 
 選取「即時副本」頁面時，「即時副本概述」](live-copy-overview.md#using-the-live-copy-overview)中也提供「分離」動作。[
 
