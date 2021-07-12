@@ -2,9 +2,9 @@
 title: 使用內容片段
 description: 了解Adobe Experience Manager(AEM)中的內容片段作為Cloud Service時，如何讓您設計、建立、組織及使用不受頁面影響的內容，最適合無頭式傳送。
 feature: 內容片段
-role: Business Practitioner
+role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2037'
 ht-degree: 3%
@@ -82,7 +82,7 @@ ht-degree: 3%
 體驗片段可以包含內容片段形式的內容，但不能以相反的方式。
 如需詳細資訊，請參閱[了解AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments)中的內容片段和體驗片段。
 
-## 內容片段與內容服務{#content-fragments-and-content-services}
+## 內容片段與內容服務 {#content-fragments-and-content-services}
 
 AEM Content Services的設計目的，是為了將AEM中/來自的內容的說明和傳送，歸納為網頁上的重點以外。
 
@@ -131,7 +131,7 @@ AEM也支援片段內容的翻譯。 如需詳細資訊，請參閱[轉譯資產
 
 * 與傳送機制（即頁面、通道）無關。
 
-### 具有可視化資產的片段{#fragments-with-visual-assets}
+### 具有視覺資產的片段 {#fragments-with-visual-assets}
 
 為了讓作者更能控制其內容，可將影像新增至內容片段及/或與其整合。
 
@@ -160,7 +160,7 @@ AEM也支援片段內容的翻譯。 如需詳細資訊，請參閱[轉譯資產
    * 不提供針對特定片段核准的概念。
    * 如需詳細資訊，請參閱[資產瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) 。
 
-### 內容片段{#constituent-parts-of-a-content-fragment}的組成部分
+### 內容片段的組成部分 {#constituent-parts-of-a-content-fragment}
 
 內容片段資產由下列部分組成（直接或間接）:
 
@@ -237,7 +237,7 @@ AEM也支援片段內容的翻譯。 如需詳細資訊，請參閱[轉譯資產
    * 可以是[摘要](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text)，以快速截斷文字至預先定義的長度。
    * 在片段編輯器的[Valuations](/help/assets/content-fragments/content-fragments-variations.md)標籤下可用。
 
-### 使用內容片段製作頁面時的內容之間{#in-between-content-when-page-authoring-with-content-fragments}
+### 使用內容片段製作頁面時的內容之間 {#in-between-content-when-page-authoring-with-content-fragments}
 
 中間內容：
 
@@ -250,7 +250,7 @@ AEM也支援片段內容的翻譯。 如需詳細資訊，請參閱[轉譯資產
 >[!CAUTION]
 中間內容是頁面內容。 它不會儲存在內容片段中。
 
-### 片段{#required-by-fragments}所需
+### 片段所需 {#required-by-fragments}
 
 若要建立所需的內容片段：
 
@@ -275,11 +275,11 @@ AEM也支援片段內容的翻譯。 如需詳細資訊，請參閱[轉譯資產
    * 片段需要一或多個專用元件來定義版面，並傳送部分或所有元素/變異和相關內容。
    * 在製作時將片段拖曳至頁面會自動建立所需元件的關聯。
 
-## 使用範例{#example-usage}
+## 使用範例 {#example-usage}
 
 片段及其元素和變數可用來建立多個頻道的一致內容。 設計片段時，您需要考慮要在哪個位置使用。
 
-### WKND示例{#wknd-sample}
+### WKND範例 {#wknd-sample}
 
 提供[WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md)範例，協助您了解AEM as aCloud Service。
 
