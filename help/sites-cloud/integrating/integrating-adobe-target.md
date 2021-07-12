@@ -2,9 +2,9 @@
 title: 整合 Adobe Target
 description: '整合 Adobe Target '
 feature: 管理
-role: Administrator
+role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 1%
@@ -24,7 +24,7 @@ AdobeLaunch是管理AEM頁面（JS程式庫/標籤）中Analytics和Target的用
 >
 >Adobe Experience Manager作為沒有現有Target帳戶的Cloud Service客戶，可以要求存取Target Foundation Pack以進行Experience Cloud。 Foundation Pack提供對Target的卷有限使用。
 
-## 建立Adobe Target配置{#create-configuration}
+## 建立Adobe Target設定 {#create-configuration}
 
 1. 導覽至&#x200B;**工具** → **Cloud Services**。
    ![](assets/cloudservice1.png "導覽導覽")
@@ -38,7 +38,7 @@ AdobeLaunch是管理AEM頁面（JS程式庫/標籤）中Analytics和Target的用
 
 若要正確整合Target與AEM和Launch,Launch和Target的IMS設定是必要的。 雖然AEM中的Launch IMS設定已預先設定為Cloud Service，但必須建立Target IMS設定（布建Target後）。 請參閱[此影片](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)和[本頁面](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)以了解如何建立Target IMS設定。
 
-### Adobe Target租用戶ID和Adobe Target用戶端代碼{#tenant-client}
+### Adobe Target租用戶ID和Adobe Target用戶端代碼 {#tenant-client}
 
 設定Adobe Target租用戶ID和Adobe Target用戶端代碼欄位時，請注意下列事項：
 
@@ -62,7 +62,7 @@ AdobeLaunch是管理AEM頁面（JS程式庫/標籤）中Analytics和Target的用
 > 3. 儲存設定。
 
 
-### 編輯目標配置{#edit-target-configuration}
+### 編輯目標配置 {#edit-target-configuration}
 
 若要編輯Target設定，請依照下列步驟操作：
 
@@ -71,11 +71,11 @@ AdobeLaunch是管理AEM頁面（JS程式庫/標籤）中Analytics和Target的用
 3. 選擇&#x200B;**重新連接到Adobe Target**。
 4. 選擇&#x200B;**保存並關閉**。
 
-### 將配置添加到站點{#add-configuration}
+### 將配置添加到站點 {#add-configuration}
 
 若要將觸控式UI設定套用至網站，請前往：**Sites** → **選擇任何站點頁面** → **屬性** → **Advanced** → **Configuration** →選擇配置租戶。
 
-## 使用Launch {#integrate-target-launch}在AEM網站上整合Adobe Target
+## 使用Launch整合AEM網站上的Adobe Target {#integrate-target-launch}
 
 AEM提供立即可用的與Experience Platform Launch整合。 將Adobe Target擴充功能新增至Experience Platform Launch後，您就可以在AEM網頁上使用Adobe Target的功能。 Target程式庫只能透過Launch來轉譯。
 
@@ -91,7 +91,7 @@ AEM提供立即可用的與Experience Platform Launch整合。 將Adobe Target�
 4. 建立頁面規則
 5. 建置和發佈
 
-### 建立Launch屬性{#create-property}
+### 建立Launch屬性 {#create-property}
 
 屬性是一個容器，裡面裝滿擴充功能、規則、資料元素。
 
@@ -101,7 +101,7 @@ AEM提供立即可用的與Experience Platform Launch整合。 將Adobe Target�
 4. 選擇&#x200B;**保存**按鈕。
    ![](assets/properties_newproperty1.png "LaunchpropertyLaunchproperty")
 
-### 新增所需的擴充功能{#add-extension}
+### 新增所需的擴充功能 {#add-extension}
 
 **** 擴充管理核心程式庫設定的容器。Adobe Target擴充功能可在現代網路at.js中使用Target JavaScript SDK來支援用戶端實作。 您必須同時新增&#x200B;**Adobe Target**&#x200B;和&#x200B;**AdobeContextHub**&#x200B;擴充功能。
 
@@ -113,7 +113,7 @@ AEM提供立即可用的與Experience Platform Launch整合。 將Adobe Target�
    ![儲存擴充](assets/configure_extension1.png "功能儲存擴充功能")
 5. 重複上述步驟以搜尋&#x200B;**AdobeContextHub**&#x200B;擴充功能並加以安裝（這是與ContextHub參數整合的必要項目，且會根據該參數進行定位）。
 
-### 建立資料元素{#data-element}
+### 建立資料元素 {#data-element}
 
 **資** 料元素是可將內容中樞參數對應到的預留位置。
 
@@ -123,7 +123,7 @@ AEM提供立即可用的與Experience Platform Launch整合。 將Adobe Target�
 4. 選擇&#x200B;**保存**。
    ![資料](assets/data_elem1.png "元素資料元素")
 
-### 建立頁面規則{#page-rule}
+### 建立頁面規則 {#page-rule}
 
 在&#x200B;**Rule**&#x200B;中，我們定義並排序在網站上執行的動作序列，以達成鎖定目標。
 
@@ -132,11 +132,11 @@ AEM提供立即可用的與Experience Platform Launch整合。 將Adobe Target�
 2. 在新增參數至所有mbox中，將先前設定的資料元素（請參閱上述資料元素）新增至將在mbox呼叫中傳送的參數。
    ![](assets/map_data1.png "MboxActions")
 
-### 建立並發佈{#build-publish}
+### 建置和發佈 {#build-publish}
 
 若要了解如何建立和發佈，請參閱此[page](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)。
 
-## 傳統和觸控式UI設定之間的內容結構變更{#changes-content-structure}
+## 傳統版和觸控式UI組態之間的內容結構變更 {#changes-content-structure}
 
 | **變更** | **傳統UI配置** | **觸控式UI設定** | **後果** |
 |---|---|---|---|
