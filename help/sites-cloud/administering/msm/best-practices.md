@@ -2,16 +2,16 @@
 title: MSM最佳實務
 description: 了解由Adobe工程和諮詢團隊編譯的最佳實務，以協助您快速上手並執行AEM Multi Site Manager。
 feature: 多站點管理員
-role: Administrator
+role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
 
 ---
 
-# MSM最佳實務{#msm-best-practices}
+# MSM最佳實務 {#msm-best-practices}
 
 ## 一般 {#general}
 
@@ -23,7 +23,7 @@ MSM是可自動部署內容的可設定架構。 實作通常涉及網站的主�
 * 一旦您的結構、內容流、自動化和控管有了計畫，**原型並在開始即時實施之前徹底測試您的系統**。
 * 請記住，**Adobe諮詢與領先的系統整合商**&#x200B;擁有透過MSM進行內容自動化規劃與實作的豐富經驗，因此可協助您開始使用MSM專案，以及完成整個實作。
 
-## 即時副本來源和Blueprint設定{#live-copy-sources-and-blueprint-configurations}
+## 即時副本來源和Blueprint設定 {#live-copy-sources-and-blueprint-configurations}
 
 請記住，可使用[一般頁面](creating-live-copies.md#creating-a-live-copy-of-a-page)或[Blueprint設定](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)來建立Live Copy。 兩者皆為有效的使用案例。
 
@@ -41,7 +41,7 @@ MSM是可自動部署內容的可設定架構。 實作通常涉及網站的主�
 >
 > 請注意，「權限」頁簽中的CUG無法從Blueprint轉出到Live Copy。 設定Live Copy時，請針對此進行規劃。
 
-## 元件和容器同步{#components-and-container-synchronization}
+## 元件和容器同步 {#components-and-container-synchronization}
 
 一般而言，MSM中關於元件同步的轉出規則為：
 
@@ -75,7 +75,7 @@ MSM是可自動部署內容的可設定架構。 實作通常涉及網站的主�
 * 在Blueprint中手動新增語言（在第一層下）。
 * 手動在語言根目錄正下方新增內容，因為這不會導致在轉出時自動將此新內容傳送到Live Copy。
 
-## MSM和多語言網站{#msm-and-multilingual-websites}
+## MSM與多語言網站 {#msm-and-multilingual-websites}
 
 MSM可以以兩種方式協助建立多語言網站：
 
@@ -89,7 +89,7 @@ MSM可以以兩種方式協助建立多語言網站：
 
 如需詳細資訊，請參閱[翻譯多語言網站的內容](/help/sites-cloud/administering/translation/overview.md)和[翻譯最佳實務。](/help/sites-cloud/administering/translation/best-practices.md)
 
-## 結構變更與轉出{#structure-changes-and-rollouts}
+## 結構變更和轉出 {#structure-changes-and-rollouts}
 
 Blueprint/來源樹狀結構中對內容結構的修改，在Live Copy中的反映方式不同。 這取決於修改類型：
 
@@ -100,7 +100,7 @@ Blueprint/來源樹狀結構中對內容結構的修改，在Live Copy中的反�
       * 會更新個別Live Copy頁面中的內容繼承，以反映其來源在Blueprint中的新位置。
       * 要完全實現從Blueprint到Live Copy的頁面移動，請考慮[頁面移動最佳實踐。](#page-move)
 
-### 頁面移動最佳實務{#page-move}
+### 頁面移動最佳作法 {#page-move}
 
 考慮在Live Copy中移動頁面時，請考慮下列最佳實務。
 
@@ -117,7 +117,7 @@ Blueprint/來源樹狀結構中對內容結構的修改，在Live Copy中的反�
       * 若要展開頁面移動，同時將個別頁面保留在Live Copy的舊位置（基本上重複內容）:
          * 在標準轉出設定後，放置新建立的設定。 這可確保Live Copy中不會刪除任何內容，或從發佈中停用。
 
-## 自訂轉出{#customizing-rollouts}
+## 自訂轉出 {#customizing-rollouts}
 
 MSM轉出設定可高度自訂。 請注意，自動轉出可能會產生深遠的後果。 在進行下列活動之前，您應謹慎規劃，此為最佳作法：
 
@@ -138,7 +138,7 @@ MSM轉出設定可高度自訂。 請注意，自動轉出可能會產生深遠�
 
 因此，建議您只在自動轉出啟動的好處超過任何潛在效能問題時，才使用`onModify`觸發器。
 
-### 節點類型/屬性{#node-types-properties}
+### 節點類型/屬性 {#node-types-properties}
 
 除了自訂轉出動作，MSM也可讓您自訂正在轉出的節點屬性。 [MSM OSGi設定可讓您排除節點類型](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization)，以避免從來源複製到Live Copy。
 
