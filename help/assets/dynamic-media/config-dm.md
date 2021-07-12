@@ -1,9 +1,9 @@
 ---
 title: 設定 Dynamic Media Cloud Service
 description: 了解如何在Adobe Experience Manager中將Dynamic Media設為Cloud Service。
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4057'
 ht-degree: 3%
