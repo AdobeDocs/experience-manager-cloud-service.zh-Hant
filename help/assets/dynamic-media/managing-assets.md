@@ -2,16 +2,16 @@
 title: 關於管理Dynamic Media資產
 description: 了解如何使用Dynamic Media資產。
 feature: 資產管理
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 13%
 
 ---
 
-# 關於管理Dynamic Media資產{#managing-assets}
+# 關於管理Dynamic Media資產 {#managing-assets}
 
 管理Dynamic Media資產（影像、影片和互動式資產）在上傳後，會涉及許多工作，包括預覽、下載或發佈。
 
