@@ -2,9 +2,9 @@
 title: 傳送Dynamic Media資產
 description: 了解如何傳送Dynamic Media資產。
 feature: 資產管理
-role: Business Practitioner
+role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 1%
@@ -40,7 +40,7 @@ ht-degree: 1%
 * [透過Dynamic Media Classic使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [使用規則集轉換URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
-## HTTP/2傳送Dynamic Media資產{#http-delivery-of-dynamic-media-assets}
+## HTTP/2傳送Dynamic Media資產 {#http-delivery-of-dynamic-media-assets}
 
 Experience Manager現在支援透過HTTP/2傳送所有Dynamic Media內容（影像和影片）。 也就是說，影像或視訊的已發佈URL或內嵌程式碼可與接受託管資產的任何應用程式整合。 然後會透過HTTP/2通訊協定來傳送已發佈的資產。 此傳遞方法可改善瀏覽器和伺服器通訊的方式，讓所有Dynamic Media資產的回應和載入時間都更佳。
 
