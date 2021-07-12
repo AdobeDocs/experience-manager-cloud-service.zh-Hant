@@ -2,16 +2,16 @@
 title: 轉譯多語言網站的內容
 description: 概略了解如何翻譯多語言網站的內容。
 feature: 語言副本
-role: Administrator
+role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 1%
 
 ---
 
-# 轉譯多語言網站的內容{#translating-content-for-multilingual-sites}
+# 轉譯多語言網站的內容 {#translating-content-for-multilingual-sites}
 
 自動翻譯頁面內容和資產，以建立和維護多語言網站。 為了自動化翻譯工作流，您將翻譯服務提供商與AEM整合，並建立項目以將內容翻譯成多種語言。 AEM支援人工和機器翻譯工作流程。
 
