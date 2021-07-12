@@ -1,9 +1,9 @@
 ---
 title: 使用 Dynamic Media
 description: 了解如何使用Dynamic Media來傳送資產，供網站、行動裝置和社交網站使用。
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 6%
@@ -20,7 +20,7 @@ Dynamic Media提供互動式檢視體驗，包括縮放、360度回轉和視訊�
 >
 >A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## 可以使用Dynamic Media {#what-you-can-do-with-dynamic-media}做什麼
+## 你能用Dynamic Media做什麼 {#what-you-can-do-with-dynamic-media}
 
 Dynamic Media可讓您在發佈資產之前先管理資產。 [使用數位資產](/help/assets/manage-digital-assets.md)中會詳細說明如何使用資產。 一般主題包括上傳、下載、編輯和發佈資產；檢視及編輯屬性，以及搜尋資產。
 
@@ -50,7 +50,7 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 -->
 
-## Dynamic Media已啟用與Dynamic Media已停用{#dynamic-media-on-versus-dynamic-media-off}
+## Dynamic Media啟用與Dynamic Media停用 {#dynamic-media-on-versus-dynamic-media-off}
 
 您可以借由下列特性來判斷Dynamic Media是否已啟用（開啟）:
 
@@ -60,25 +60,25 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 當您按一下影像資產時，啟用Dynamic Media時，資產的檢視會不同。 Dynamic Media使用隨選HTML5檢視器。
 
-### 動態轉譯{#dynamic-renditions}
+### 動態轉譯 {#dynamic-renditions}
 
 啟用Dynamic Media時，可使用動態轉譯，例如影像和檢視器預設集（位於&#x200B;**[!UICONTROL Dynamic]**&#x200B;下）。
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
-### 影像集、旋轉集、混合媒體集{#image-sets-spins-sets-mixed-media-sets}
+### 影像集，旋轉集，混合媒體集 {#image-sets-spins-sets-mixed-media-sets}
 
 如果已啟用Dynamic Media，則可使用影像集、回轉集和混合媒體集。
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
-### PTIFF轉譯{#ptiff-renditions}
+### PTIFF轉譯 {#ptiff-renditions}
 
 Dynamic Media啟用的資產包括`pyramid.tiffs`。
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
-### 資產檢視變更{#asset-views-change}
+### 資產檢視變更 {#asset-views-change}
 
 啟用Dynamic Media後，按一下`+`和`-`按鈕即可放大和縮小。 您也可以按一下/點選以放大至特定區域。 還原功能可將您帶到原始版本，您可以按一下對角線箭頭來使影像成為全螢幕。 啟用Dynamic Media的顯示如下：
 
