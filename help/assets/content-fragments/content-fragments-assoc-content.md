@@ -2,9 +2,9 @@
 title: 相關聯的內容
 description: 了解AEM相關內容功能如何提供連線，讓資產可在新增至內容頁面時選擇性地與片段搭配使用，為無標題內容傳送增加額外的彈性。
 feature: 內容片段
-role: Business Practitioner
+role: User
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 AEM相關內容功能提供連線，讓資產可在新增至內容頁面時選擇性地與片段搭配使用。 這可讓您透過[靈活傳送無頭式內容，提供在頁面上使用內容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)時可存取的資產範圍，同時有助於縮短搜尋適當資產所需的時間。
 
-## 新增關聯內容{#adding-associated-content}
+## 新增相關內容 {#adding-associated-content}
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ AEM相關內容功能提供連線，讓資產可在新增至內容頁面時選�
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
-## 編輯關聯內容{#editing-associated-content}
+## 編輯相關內容 {#editing-associated-content}
 
 關聯集合後，您可以：
 
