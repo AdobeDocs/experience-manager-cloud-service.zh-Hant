@@ -1,9 +1,9 @@
 ---
 title: Dynamic Media 疑難排解
 description: 使用Dynamic Media時的疑難排解提示。
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 1%
@@ -14,15 +14,15 @@ ht-degree: 1%
 
 以下主題說明Dynamic Media的疑難排解。
 
-## 新Dynamic Media配置{#new-dm-config}
+## 新Dynamic Media設定 {#new-dm-config}
 
 請參閱[疑難排解新的Dynamic Media設定](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)。
 
-## 一般（所有資產）{#general-all-assets}
+## 一般（所有資產） {#general-all-assets}
 
 以下是所有資產的一些一般提示和秘訣。
 
-### 資產同步狀態屬性{#asset-synchronization-status-properties}
+### 資產同步狀態屬性 {#asset-synchronization-status-properties}
 
 您可以在CRXDE Lite中檢閱下列資產屬性，以確認資產是否成功從Adobe Experience Manager同步至Dynamic Media:
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | 必須填入，才能產生URL至Dynamic Media的遠端資產。 |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **** 後繼 **失敗：`<error text>`** | 集（回轉集、影像集等）、影像預設集、檢視器預設集、資產的影像地圖更新或已編輯影像的同步狀態。 |
 
-### 同步記錄{#synchronization-logging}
+### 同步記錄 {#synchronization-logging}
 
 同步錯誤和問題記錄在`error.log`(Experience Manager伺服器目錄`/crx-quickstart/logs/`)中。 有足夠的記錄可供判斷大部分問題的根本原因，但您可以透過Sling主控台([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))增加`com.adobe.cq.dam.ips`套件上的DEBUG記錄，以收集詳細資訊。
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 * Dynamic Media不支援建立版本。 新版本會取代傳送中的現有資產。
 
-## 影像和集{#images-and-sets}
+## 影像和集 {#images-and-sets}
 
 如果您對影像和集有問題，請參閱下列疑難排解指南。
 
