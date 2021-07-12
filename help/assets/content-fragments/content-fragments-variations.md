@@ -2,9 +2,9 @@
 title: 變化 - 編寫片段內容
 description: 了解變異如何讓您在AEM中的無頭式內容更有彈性，方法是允許您為片段製作內容，然後根據目的建立該內容的變異。
 feature: 內容片段
-role: Business Practitioner
+role: User
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 12%
@@ -38,7 +38,7 @@ ht-degree: 12%
 >
 >發佈和/或參考片段後，製作者開啟片段並再次編輯時AEM會顯示警告。 這將警告對片段的變更也會影響參考的頁面。
 
-## 編寫內容{#authoring-your-content}
+## 編寫內容 {#authoring-your-content}
 
 當您開啟內容片段進行編輯時，**Variations**&#x200B;標籤將依預設開啟。 您可以在此為「主版」或您擁有的任何變體製作內容。 結構化片段包含內容模型中定義之各種資料類型的各種欄位。
 
@@ -59,7 +59,7 @@ ht-degree: 12%
 
 * 對於&#x200B;**片段參考**&#x200B;欄位，視模型定義而定，**[編輯內容片段](#fragment-references-edit-content-fragment)**&#x200B;選項可供使用。
 
-### 全螢幕編輯器{#full-screen-editor}
+### 全螢幕編輯器 {#full-screen-editor}
 
 編輯多行文本欄位時，可以開啟全螢幕編輯器；點選或按一下實際文字，然後選取下列動作圖示：
 
@@ -155,7 +155,7 @@ RTF編輯可讓您設定格式：
 >
 >如果您在 **Rich Text** 和 **** Markdown之間切換，可能會在區塊引號和程式碼區塊中遇到意外的效果，因為這兩種格式在處理方式上可能會有差異。
 
-### 片段參考{#fragment-references}
+### 片段參考 {#fragment-references}
 
 如果內容片段模型包含片段參考，您的片段作者可能有其他選項：
 
@@ -186,7 +186,7 @@ RTF編輯可讓您設定格式：
    1. **** Donewill會傳回（至原始片段）並參考新片段。
    1. **** Open將參考新片段，以及在新瀏覽器索引標籤中開啟新片段以進行編輯。
 
-### 查看密鑰統計資料{#viewing-key-statistics}
+### 查看關鍵統計資訊 {#viewing-key-statistics}
 
 當全螢幕編輯器開啟時，「文字統計 **資料** 」動作會顯示一系列有關文字的資訊。
 
@@ -194,11 +194,11 @@ RTF編輯可讓您設定格式：
 
 ![統計](assets/cfm-variations-04.png)
 
-### 上傳內容{#uploading-content}
+### 上傳內容 {#uploading-content}
 
 若要簡化製作內容片段的程式，您可以上傳在外部編輯器中準備的文字，並直接將其新增至片段。
 
-### 摘要文字{#summarizing-text}
+### 摘要文字 {#summarizing-text}
 
 摘要文字旨在協助使用者將文字長度縮短為預先定義的字數，同時保留關鍵點和整體意義。
 
@@ -250,7 +250,7 @@ RTF編輯可讓您設定格式：
 
    ![摘要比較](assets/cfm-variations-06.png)
 
-### 為內容片段{#annotating-a-content-fragment}加上註解
+### 為內容片段加上註解 {#annotating-a-content-fragment}
 
 若要注釋片段：
 
@@ -282,7 +282,7 @@ RTF編輯可讓您設定格式：
 
    ![注釋](assets/cfm-variations-07c.png)
 
-### 查看、編輯、刪除注釋{#viewing-editing-deleting-annotations}
+### 查看、編輯、刪除注釋 {#viewing-editing-deleting-annotations}
 
 註解:
 
@@ -299,7 +299,7 @@ RTF編輯可讓您設定格式：
 
 * 可在[時間軸](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中查看和刪除所選片段。
 
-### 在片段{#inserting-assets-into-your-fragment}中插入資產
+### 在片段中插入資產 {#inserting-assets-into-your-fragment}
 
 若要簡化製作內容片段的程式，您可以直接將[Assets](/help/assets/manage-digital-assets.md)（影像）新增至片段。
 
@@ -332,7 +332,7 @@ RTF編輯可讓您設定格式：
    * **Markdown**:資產將不可見，但當您返回 **Rich Text時，資產仍會存在**。
 
 
-### 將內容片段插入您的片段{#inserting-content-fragment-into-your-fragment}
+### 在片段中插入內容片段 {#inserting-content-fragment-into-your-fragment}
 
 若要簡化編寫內容片段的程式，您也可以新增其他內容片段至您的片段。
 
@@ -368,9 +368,9 @@ RTF編輯可讓您設定格式：
    * **Markdown**:參考將保留。
 
 
-## 管理變數{#managing-variations}
+## 管理變數 {#managing-variations}
 
-### 建立變數{#creating-a-variation}
+### 建立變異 {#creating-a-variation}
 
 變數可讓您取用&#x200B;**Master**&#x200B;內容，並根據用途（如有需要）加以變更。
 
@@ -385,7 +385,7 @@ RTF編輯可讓您設定格式：
    >[!NOTE]
    建立新變異時，一律會複製&#x200B;**Master**，而非目前開啟的變異。
 
-### 編輯變數{#editing-a-variation}
+### 編輯變異 {#editing-a-variation}
 
 您可以在下列任一項之後，變更變異內容：
 
@@ -394,7 +394,7 @@ RTF編輯可讓您設定格式：
 
 ![編輯變異](assets/cfm-variations-10.png)
 
-### 更名變數{#renaming-a-variation}
+### 更名變數 {#renaming-a-variation}
 
 要更名現有變數：
 
@@ -409,7 +409,7 @@ RTF編輯可讓您設定格式：
 >[!NOTE]
 這只會影響變數&#x200B;**Title**。
 
-### 刪除變數{#deleting-a-variation}
+### 刪除變數 {#deleting-a-variation}
 
 要刪除現有變數：
 
@@ -422,7 +422,7 @@ RTF編輯可讓您設定格式：
 >[!NOTE]
 無法刪除&#x200B;**Master**。
 
-### 與主{#synchronizing-with-master}同步
+### 與主伺服器同步 {#synchronizing-with-master}
 
 **** Master是內容片段的必要部分，根據定義，它保留內容的主副本，而變數保留該內容的個別更新和定製版本。更新主版時，這些變更也可能與變更相關，因此需要傳播至變更。
 
