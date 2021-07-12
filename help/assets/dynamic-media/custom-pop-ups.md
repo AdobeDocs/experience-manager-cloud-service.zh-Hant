@@ -2,9 +2,9 @@
 title: 使用Quickview建立自訂快顯視窗
 description: 「了解預設快速檢視如何用於電子商務體驗，借此顯示含有產品資訊的快顯視窗以促進購買。 您可以觸發自訂內容以在快顯視窗®中顯示。」
 feature: 互動式影像，互動式影片，輪播橫幅
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 0%
