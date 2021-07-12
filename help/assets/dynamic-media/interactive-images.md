@@ -2,9 +2,9 @@
 title: 互動式影像
 description: 了解如何在Dynamic Media中使用互動式影像。
 feature: 互動影像
-role: Business Practitioner
+role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4245'
 ht-degree: 1%
@@ -21,11 +21,11 @@ ht-degree: 1%
 
 請參閱上圖所示網頁上的[互動式影像在動作中](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) 。
 
-## 觀看互動式影像橫幅的建立方式{#watch-how-interactive-image-banners-are-created}
+## 觀看互動式影像橫幅的建立方式 {#watch-how-interactive-image-banners-are-created}
 
 觀看[如何建立互動式影像橫幅的逐步說明](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)（10分鐘33秒）。 您也可以了解如何預覽、編輯和傳送互動式影像橫幅。
 
-## 快速入門：互動式影像{#quick-start-interactive-images}
+## 快速入門：互動式影像 {#quick-start-interactive-images}
 
 下列逐步工作流程說明旨在協助您在Adobe Experience Manager Assets中快速上手並執行互動式影像。
 
@@ -55,7 +55,7 @@ ht-degree: 1%
 如果您使用獨立式Experience Manager資產和Dynamic Media，請複製網站上的內嵌程式碼。 然後，將其與您現有的快速視圖整合。 請參閱[整合互動式影像與您的網站](#integrating-an-interactive-image-with-your-website)。
 如果您使用協力廠商WCM（網頁內容管理員），請將新的互動式視訊與網站上使用的現有快速檢視整合。 請參閱[將互動式影像與現有的快速檢視整合](#integrating-an-interactive-image-with-an-existing-quickview)。
 
-## （可選）識別熱點變數{#optional-identifying-hotspot-variables}
+## （可選）識別熱點變數 {#optional-identifying-hotspot-variables}
 
 >[!NOTE]
 >
@@ -169,7 +169,7 @@ ht-degree: 1%
 
 您現在可以使用Experience Manager資產中的可購買互動式影像功能，上傳影像橫幅並新增熱點。
 
-## （可選）建立互動式影像檢視器預設集{#optional-creating-an-interactive-image-viewer-preset}
+## （可選）建立互動式影像檢視器預設集 {#optional-creating-an-interactive-image-viewer-preset}
 
 您可以選擇使用隨Experience Manager資產提供的預設現成互動式影像檢視器預設集，稱為`Shoppable_Banner`。 或者，您可以建立自己的自訂檢視器預設集以搭配互動式影像使用。
 
@@ -201,7 +201,7 @@ ht-degree: 1%
 
    您現在可以上傳影像橫幅了。
 
-## 上傳影像橫幅{#uploading-an-image-banner}
+## 上傳影像橫幅 {#uploading-an-image-banner}
 
 如果已上傳要使用的影像，請前進到下一步[向影像橫幅添加熱點](#adding-hotspots-to-an-image-banner)。
 
@@ -213,7 +213,7 @@ ht-degree: 1%
 
    您現在可以將熱點添加到影像橫幅中；請參閱下面的下一個任務。
 
-## 將熱點添加到影像橫幅{#adding-hotspots-to-an-image-banner}
+## 向影像橫幅添加熱點 {#adding-hotspots-to-an-image-banner}
 
 可以使用「熱點管理」頁上的編輯器將熱點添加到影像橫幅。
 
@@ -303,7 +303,7 @@ ht-degree: 1%
    >[!NOTE]
    如果您正在使用熱點編輯互動式影像並裁切影像，則會刪除熱點。
 
-### （可選）預覽互動式影像{#optional-previewing-interactive-images}
+### （可選）預覽互動式影像 {#optional-previewing-interactive-images}
 
 您可以使用「預覽」來查看客戶對互動式影像的呈現方式。 預覽也可讓您測試影像的熱點，以確保它們如預期般運作。
 
@@ -319,11 +319,11 @@ ht-degree: 1%
 1. 在「檢視器」清單中，點選&#x200B;**[!UICONTROL Shopbable_Banner]**&#x200B;或您建立的互動式影像檢視器預設集的名稱。
 1. 要測試熱點的相關操作，請點選影像上的熱點。
 
-## 發佈互動式影像資產{#publishing-interactive-image-assets}
+## 發佈互動式影像資產 {#publishing-interactive-image-assets}
 
 如需如何發佈互動式影像資產的詳細資訊，請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-## 將互動式影像與您的網站{#integrating-an-interactive-image-with-your-website}整合
+## 將互動式影像與您的網站整合 {#integrating-an-interactive-image-with-your-website}
 
 上傳橫幅影像、新增熱點並發佈互動式影像後，您就可以將其新增至網站頁面。
 
@@ -358,7 +358,7 @@ ht-degree: 1%
 
 您現在可以整合互動式影像與網站上現有的快速檢視。
 
-## 將互動式影像與現有快速檢視整合{#integrating-an-interactive-image-with-an-existing-quickview}
+## 將互動式影像與現有的快速檢視整合 {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 只有當您是獨立Experience Manager資產客戶時，才適用此工作。
@@ -492,6 +492,6 @@ loadQuickView(quickViewUrl);
 
 具有完全整合的互動式影像](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)的[最終示範網站。
 
-## 使用快速檢視建立自訂快顯視窗{#using-quickviews-to-create-custom-pop-ups}
+## 使用快速檢視建立自訂快顯視窗 {#using-quickviews-to-create-custom-pop-ups}
 
 請參閱[使用快速視圖建立自定義彈出窗口Windows®](/help/assets/dynamic-media/custom-pop-ups.md)。
