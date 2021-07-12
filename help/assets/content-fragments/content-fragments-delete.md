@@ -2,9 +2,9 @@
 title: 內容片段 - 刪除考量事項
 description: 在AEM中定義內容片段刪除原則前，請先檢閱這些重要考量事項。 內容片段是傳遞無頭內容的強大工具，刪除這些片段的含意必須謹慎考量。
 feature: 內容片段
-role: Business Practitioner
+role: User
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 在AEM中定義內容片段刪除原則前，請先檢閱這些重要考量事項。 內容片段是傳遞無頭內容的強大工具，刪除這些片段的含意必須謹慎考量。
 
-## 權限 — 刪除或不刪除{#permissions-delete-or-not-delete}
+## 權限 — 刪除或不刪除 {#permissions-delete-or-not-delete}
 
 刪除內容的能力強大，但可能很敏感，許多行業需要限制和控制這些權限的分配方式。
 
@@ -41,7 +41,7 @@ ht-degree: 10%
 >
 >另請參閱如何在AEM中審核用戶管理操作。 <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
-## 僅{#permissions-required-for-editor-functionality-only}編輯器功能所需的權限
+## 僅編輯器功能所需的權限 {#permissions-required-for-editor-functionality-only}
 
 對於需要編輯/更新內容片段而不允許他們刪除整個片段的使用者 ****，必須指派特定權限，因為內容片段編輯器的基本操作要求可以刪除暫時的子元素。
 
