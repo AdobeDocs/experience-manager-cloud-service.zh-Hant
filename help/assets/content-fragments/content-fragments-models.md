@@ -2,9 +2,9 @@
 title: 內容片段模型
 description: 了解內容片段模型如何成為AEM中無頭內容的基礎，以及如何使用結構化內容建立內容片段。
 feature: 內容片段
-role: Business Practitioner
+role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 7%
@@ -22,7 +22,7 @@ AEM中的內容片段模型定義[內容片段的內容結構，](/help/assets/c
 1. [啟用內容片段模](#enabling-disabling-a-content-fragment-model) 型，以便在建立內容片段時使用
 1. [透過設定原則，在必要的資產資料夾上允](#allowing-content-fragment-models-assets-folder) 許您的內容 **片段模型**。
 
-## 建立內容片段模型{#creating-a-content-fragment-model}
+## 建立內容片段模型 {#creating-a-content-fragment-model}
 
 1. 導覽至&#x200B;**工具**、**資產**，然後開啟&#x200B;**內容片段模型**。
 1. 導覽至適合您的[configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md)的資料夾。
@@ -38,7 +38,7 @@ AEM中的內容片段模型定義[內容片段的內容結構，](/help/assets/c
 
 1. 使用&#x200B;**Create**&#x200B;保存空模型。 訊息會指出動作是否成功，您可以選取&#x200B;**開啟**&#x200B;以立即編輯模型，或選取&#x200B;**完成**&#x200B;以返回主控台。
 
-## 定義內容片段模型{#defining-your-content-fragment-model}
+## 定義內容片段模型 {#defining-your-content-fragment-model}
 
 內容片段模型使用&#x200B;**[資料類型](#data-types)**&#x200B;的選擇有效地定義了所產生內容片段的結構。 使用模型編輯器，可以新增資料類型的例項，然後設定它們以建立必要欄位：
 
@@ -191,7 +191,7 @@ UniqueContent（針對特定欄位）在從目前模型建立的所有內容片�
 * **片段引用**
    * 測試特定內容片段模型。
 
-## 使用參考來形成巢狀內容{#using-references-to-form-nested-content}
+## 使用參考來形成巢狀內容 {#using-references-to-form-nested-content}
 
 內容片段可使用下列其中一種資料類型，以形成巢狀內容：
 
@@ -231,7 +231,7 @@ AEM對以下項目提供重複防護：
 
 ![內容參考資料](assets/cfm-content-reference.png)
 
-### 片段參考（巢狀片段）{#fragment-reference-nested-fragments}
+### 片段參考（巢狀片段） {#fragment-reference-nested-fragments}
 
 片段參考會參考一或多個內容片段。 擷取要在您應用程式中使用的內容時，這項功能特別受關注，因為它可讓您擷取含有多個圖層的結構化資料。
 
@@ -283,11 +283,11 @@ type CompanyModel {
 已建立重複保護機制。 它禁止使用者在片段參考中選取目前的內容片段。 這可能會導致空白的片段參考選擇器對話方塊。
 GraphQL中的片段參考也提供週期性保護。 如果您在互相參照的兩個內容片段間建立深層查詢，則會傳回null。
 
-## 啟用或停用內容片段模型{#enabling-disabling-a-content-fragment-model}
+## 啟用或停用內容片段模型 {#enabling-disabling-a-content-fragment-model}
 
 若要完全控制內容片段模型的使用，他們的狀態可供您設定。
 
-### 啟用內容片段模型{#enabling-a-content-fragment-model}
+### 啟用內容片段模型 {#enabling-a-content-fragment-model}
 
 建立模型後，必須啟用該模型，以便：
 
@@ -307,7 +307,7 @@ GraphQL中的片段參考也提供週期性保護。 如果您在互相參照的
 
 ![啟用拔模或禁用的模型](assets/cfm-status-enable.png)
 
-### 禁用內容片段模型{#disabling-a-content-fragment-model}
+### 停用內容片段模型 {#disabling-a-content-fragment-model}
 
 也可以停用模型，以便：
 
@@ -324,7 +324,7 @@ GraphQL中的片段參考也提供週期性保護。 如果您在互相參照的
 
 ![禁用啟用的模型](assets/cfm-status-disable.png)
 
-## 允許資產資料夾上的內容片段模型{#allowing-content-fragment-models-assets-folder}
+## 允許資產資料夾上的內容片段模型 {#allowing-content-fragment-models-assets-folder}
 
 若要實作內容控管，您可以在「資產」資料夾上設定&#x200B;**Policys**，以控制可在該資料夾中建立片段的內容片段模型。
 
@@ -358,7 +358,7 @@ GraphQL中的片段參考也提供週期性保護。 如果您在互相參照的
 * 如果繼承鏈未傳送結果，則查看該資料夾的&#x200B;**Cloud Services**&#x200B;配置（也先直接，然後通過繼承）。
 * 如果上述任何項均未傳送任何結果，則該資料夾將不允許使用模型。
 
-## 刪除內容片段模型{#deleting-a-content-fragment-model}
+## 刪除內容片段模型 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 刪除內容片段模型可能會影響相依片段。
@@ -373,7 +373,7 @@ GraphQL中的片段參考也提供週期性保護。 如果您在互相參照的
    >[!NOTE]
    如果參考模型，則會發出警告。 採取適當行動。
 
-## 發佈內容片段模型{#publishing-a-content-fragment-model}
+## 發佈內容片段模型 {#publishing-a-content-fragment-model}
 
 發佈任何相依內容片段時/之前，必須發佈內容片段模型。
 
@@ -388,7 +388,7 @@ GraphQL中的片段參考也提供週期性保護。 如果您在互相參照的
    >[!NOTE]
    如果您發佈的內容片段尚未發佈模型，則選取清單會指出此點，且模型將會隨片段發佈。
 
-## 取消發佈內容片段模型{#unpublishing-a-content-fragment-model}
+## 取消發佈內容片段模型 {#unpublishing-a-content-fragment-model}
 
 如果任何片段未參考內容片段模型，則可以取消發佈這些模型。
 
@@ -400,7 +400,7 @@ GraphQL中的片段參考也提供週期性保護。 如果您在互相參照的
 1. 從工具列選取您的模型，然後依序選取&#x200B;**取消發佈**。
 已發佈狀態會在主控台中指出。
 
-## 內容片段模型 — 屬性{#content-fragment-model-properties}
+## 內容片段模型 — 屬性 {#content-fragment-model-properties}
 
 您可以編輯內容片段模型的&#x200B;**屬性**:
 
