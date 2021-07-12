@@ -3,9 +3,9 @@ title: 組織數位資產以使用Dynamic Media影像設定檔或影片設定檔
 description: 「命名、組織和管理Dynamic Media影像檔案和視訊資產檔案的提示和最佳實務。」
 contentOwner: Rick Brough
 feature: 資產管理，影像設定檔，影片設定檔
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%
