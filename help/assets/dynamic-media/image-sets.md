@@ -2,9 +2,9 @@
 title: 影像集
 description: 了解如何在Dynamic Media中使用影像集。
 feature: 影像集
-role: Business Practitioner
+role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 影像集由具有單字的橫幅指定 `IMAGESET`。此外，如果已發佈影像集，則橫幅上會出現以&#x200B;**[!UICONTROL World]**&#x200B;圖示指示的發佈日期。 此外，還會顯示以&#x200B;**[!UICONTROL Pencil]**&#x200B;圖示指示的上次修改日期。
 
-![chlimage_1-135](assets/chlimage_1-339.png)
+![chlimage_1-133](assets/chlimage_1-339.png)
 
 在影像集內，您也可以建立「影像集」並新增縮圖來建立色票。
 
@@ -29,7 +29,7 @@ ht-degree: 8%
 >
 >如需Assets使用者介面的詳細資訊，請參閱使用觸控式UI](/help/assets/manage-digital-assets.md)管理資產。[
 
-## 快速入門：影像集{#quick-start-image-sets}
+## 快速入門：影像集 {#quick-start-image-sets}
 
 快速啟動並運行：
 
@@ -82,7 +82,7 @@ ht-degree: 8%
 
 如果您建立集時遇到問題，請參閱[疑難排解Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)中的影像和集。
 
-## 上傳影像集{#uploading-assets-in-image-sets}的資產
+## 上傳影像集的資產 {#uploading-assets-in-image-sets}
 
 首先，請上傳影像集的影像資產。 請記住，用戶可以在影像集查看器中放大影像。 因此，請謹慎選擇影像。 請確定影像大小最大，至少為2000像素，以獲得最佳縮放詳細資訊。 Dynamic Media可以每張2500萬像素的影像呈現。 例如，您可以使用5000x5000萬像素影像或任何其他大小組合，最高2500萬像素。
 
@@ -90,7 +90,7 @@ ht-degree: 8%
 
 您可以像上傳[資產](/help/assets/manage-digital-assets.md#uploading-assets)中的任何其他資產一樣，上傳影像集的影像。
 
-### 準備要上傳的影像集資產{#preparing-image-set-assets-for-upload}
+### 準備要上傳的影像集資產 {#preparing-image-set-assets-for-upload}
 
 建立影像集之前，請確定影像的大小和格式正確。
 
@@ -108,7 +108,7 @@ ht-degree: 8%
 >* 黑色、棕色和綠色縮圖。
 
 
-## 建立影像集{#creating-image-sets}
+## 建立影像集 {#creating-image-sets}
 
 您可以透過使用者介面或API來建立影像集。
 
@@ -168,7 +168,7 @@ ht-degree: 8%
 
 1. 按一下「**[!UICONTROL 儲存]**」。新建立的「影像集」(Image Set)會顯示在您建立它的資料夾中。
 
-## 查看影像集{#viewing-image-sets}
+## 檢視影像集 {#viewing-image-sets}
 
 您可以在用戶介面中建立影像集，或自動使用[批集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md)。
 
@@ -196,7 +196,7 @@ ht-degree: 8%
 >
 >您可以透過使用者介面來檢視集，如[編輯影像集](#editing-image-sets)所述。
 
-## 編輯影像集{#editing-image-sets}
+## 編輯影像集 {#editing-image-sets}
 
 您可以對影像集執行各種編輯任務，如：
 
@@ -234,10 +234,10 @@ ht-degree: 8%
 
 1. 完成編輯時，點選「**[!UICONTROL 儲存]**」。
 
-## 預覽影像集{#previewing-image-sets}
+## 預覽影像集 {#previewing-image-sets}
 
 請參閱「預覽資產](/help/assets/dynamic-media/previewing-assets.md)」。[
 
-## 發佈影像集{#publishing-image-sets}
+## 發佈影像集 {#publishing-image-sets}
 
 請參閱[發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
