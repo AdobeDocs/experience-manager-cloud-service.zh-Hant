@@ -3,9 +3,9 @@ title: 影像品質最佳化的最佳作法
 description: 了解可協助您使用Dynamic Media最佳化影像資產品質的最佳實務。
 contentOwner: Rick Brough
 feature: 資產管理
-role: Business Practitioner
+role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1480'
 ht-degree: 5%
