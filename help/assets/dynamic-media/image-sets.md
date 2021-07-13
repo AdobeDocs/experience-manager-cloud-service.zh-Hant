@@ -4,10 +4,10 @@ description: 了解如何在Dynamic Media中使用影像集。
 feature: 影像集
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '2050'
-ht-degree: 8%
+source-wordcount: '2044'
+ht-degree: 5%
 
 ---
 
@@ -49,9 +49,9 @@ ht-degree: 8%
 
    在「影像集」中，用戶按一下「影像集查看器」中的縮圖影像。
 
-   若要在「資產」中建立影像集，請點選或按一下「建立>影像集」]**。**[!UICONTROL &#x200B;然後，添加影像，然後按一下&#x200B;**[!UICONTROL Save]**。
+   若要在資產中建立影像集，請選取「**[!UICONTROL 建立]** > **[!UICONTROL 影像集]**」。 然後，添加影像，然後按一下&#x200B;**[!UICONTROL Save]**。
 
-   請參閱[準備要上傳和上傳檔案的影像集資產](#uploading-assets-in-image-sets)。
+   請參閱[準備影像集資產以上傳和上傳您的檔案](#uploading-assets-in-image-sets)。
 
    請參閱[使用選取器](/help/assets/dynamic-media/working-with-selectors.md)。
 
@@ -59,12 +59,12 @@ ht-degree: 8%
 
    管理員可以建立或修改影像集檢視器預設集。 若要檢視您使用檢視器預設集所設定的影像集，請選取該影像集，然後在左側導軌下拉式清單中，選取「**[!UICONTROL 檢視器]**」。
 
-   若要建立或編輯檢視器預設集，請參閱&#x200B;**[!UICONTROL 工具>資產>檢視器預設集]**。
+   若要建立或編輯檢視器預設集，請參閱&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 檢視器預設集]**。
 
-1. （可選）[查看使用批集預設集建立的影像集](/help/assets/dynamic-media/image-sets.md#viewing-image-sets)。
+1. （可選）使用批集預設集建立的[查看影像集](/help/assets/dynamic-media/image-sets.md#viewing-image-sets)。
 1. [預覽影像集](/help/assets/dynamic-media/previewing-assets.md)。
 
-   選取「影像集」，即可預覽。 若要在選取的檢視器中檢查您的影像集，請點選縮圖圖示。 您可以從&#x200B;**[!UICONTROL 檢視器]**&#x200B;選單中選擇不同的檢視器，該選單可從左側邊欄下拉式清單中取得。
+   選取「影像集」，即可預覽。 若要在選取的檢視器中檢查影像集，請選取縮圖圖示。 您可以從&#x200B;**[!UICONTROL 檢視器]**&#x200B;選單中選擇不同的檢視器，該選單可從左側邊欄下拉式清單中取得。
 
 1. [發佈影像集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
@@ -76,7 +76,7 @@ ht-degree: 8%
 
    選取「影像集」，然後在左側導軌下拉式清單中，選取「**[!UICONTROL 檢視器]**」。
 
-   請參 [閱連結影像集至網頁](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[和內嵌影片或影像檢視器](/help/assets/dynamic-media/embed-code.md)。
+   請參閱[將影像集連結至網頁](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)和[內嵌視訊或影像檢視器](/help/assets/dynamic-media/embed-code.md)。
 
 要編輯影像集，請參閱[編輯影像集](#editing-image-sets)。 此外，還可以查看和編輯[影像集屬性](/help/assets/manage-digital-assets.md#editing-properties)。
 
@@ -90,7 +90,7 @@ ht-degree: 8%
 
 您可以像上傳[資產](/help/assets/manage-digital-assets.md#uploading-assets)中的任何其他資產一樣，上傳影像集的影像。
 
-### 準備要上傳的影像集資產 {#preparing-image-set-assets-for-upload}
+### 準備影像集資產以供上傳 {#preparing-image-set-assets-for-upload}
 
 建立影像集之前，請確定影像的大小和格式正確。
 
@@ -123,10 +123,10 @@ ht-degree: 8%
 >
 >檔案名稱中包含「，」（逗號）的資產不支援影像集。
 
-**建立影像集：**
+**要建立影像集：**
 
-1. 在Adobe Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台。
-1. 點選&#x200B;**[!UICONTROL 導覽>資產]**。 導覽至您要建立影像集的位置，然後點選「建 **[!UICONTROL 立>影像集]** 」以開啟「影像集編輯器」頁面。
+1. 在Adobe Experience Manager中，選取Experience Manager標誌以存取全域導覽主控台。
+1. 點選「**[!UICONTROL 導覽]** > **[!UICONTROL 資產]**」。 導覽至您要建立影像集的位置，然後前往&#x200B;**[!UICONTROL Create]** > **[!UICONTROL Image Set]**&#x200B;以開啟「影像集編輯器」頁面。
 
    您也可以從包含資產的資料夾內建立資產集。
 
@@ -138,12 +138,12 @@ ht-degree: 8%
 
 1. 執行下列任一操作：
 
-   * 在「影像集編輯器」頁面的左上角附近，點選「**[!UICONTROL 新增資產]**」。
+   * 在「影像集編輯器」頁面的左上角附近，選擇「**[!UICONTROL 新增資產]**」。
 
-   * 在「影像集編輯器」頁面的中間附近，點選&#x200B;**[!UICONTROL 點選以開啟「資產選取器」]**。
-   點選以選取您要納入影像集的資產。 選取的資產上面有核取標籤圖示。 完成後，在頁面右上角附近，點選「 **[!UICONTROL Select]** 」。
+   * 在「影像集編輯器」頁面的中間，選取「**[!UICONTROL 點選」以開啟「資產選取器」]**。
+   點選以選取您要納入影像集的資產。 選取的資產上面有核取標籤圖示。 完成後，在頁面右上角附近，選擇&#x200B;**[!UICONTROL Select]**。
 
-   使用「資產選擇器」，您可以輸入關鍵字並點選或按一下「退貨」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後點選工具列中的&#x200B;**[!UICONTROL 篩選]**&#x200B;圖示。 點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 ****。
+   使用「資產選擇器」，您可以輸入關鍵字並選取&#x200B;**[!UICONTROL Return]**&#x200B;來搜尋資產。 您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後選取工具列中的&#x200B;**[!UICONTROL 篩選]**&#x200B;圖示。 通過選擇「查看」表徵圖並選擇&#x200B;**[!UICONTROL 列視圖]**、**[!UICONTROL 卡片視圖]**&#x200B;或&#x200B;**[!UICONTROL 清單視圖]**&#x200B;來更改視圖。
 
    請參閱[使用選取器](/help/assets/dynamic-media/working-with-selectors.md)。
 
@@ -159,12 +159,12 @@ ht-degree: 8%
 
 1. （選用）執行下列任一操作：
 
-   * 若要刪除影像，請選取影像並點選&#x200B;**[!UICONTROL 刪除資產]**。
+   * 若要刪除影像，請選取影像並選取&#x200B;**[!UICONTROL 刪除資產]**。
 
-   * 若要套用預設集，在頁面右上角附近，點選&#x200B;**[!UICONTROL Preset]**，然後選取一個預設集，一次套用至所有資產。
+   * 若要套用預設集，在頁面右上角附近，選取「**[!UICONTROL Preset]**」，然後選取要一次套用至所有資產的預設集。
    >[!NOTE]
    >
-   >建立影像集時，您可以變更影像集縮圖。 或者，您可以讓Experience Manager根據影像集中的資產自動選取縮圖。 若要選取縮圖，請點選「影像集編輯器」頁面上「標題」欄位上方的「變更縮圖&#x200B;]**」。然後，選取任何影像（您也可以導覽至其他資料夾以尋找影像）。**[!UICONTROL &#x200B;如果您選取縮圖，然後決定要Experience Manager從影像集產生縮圖，請選取「**[!UICONTROL 切換至]** **[!UICONTROL 自動縮圖]**」。
+   >建立影像集時，您可以變更影像集縮圖。 或者，您可以讓Experience Manager根據影像集中的資產自動選取縮圖。 若要選取縮圖，請選取「影像集編輯器」頁面上「標題」欄位上方的「變更縮圖&#x200B;]**」。**[!UICONTROL &#x200B;然後，選取任何影像（您也可以導覽至其他資料夾以尋找影像）。 如果您選取縮圖，然後決定要Experience Manager從影像集產生縮圖，請選取「**[!UICONTROL 切換至]** **[!UICONTROL 自動縮圖]**」。
 
 1. 按一下「**[!UICONTROL 儲存]**」。新建立的「影像集」(Image Set)會顯示在您建立它的資料夾中。
 
@@ -178,7 +178,7 @@ ht-degree: 8%
 
 但是，使用批集預設集建立的集，do *not*&#x200B;將出現在用戶介面中。 您可以透過三種不同方式來檢視這些集合。 （即使您在使用者介面中建立影像集，這些方法仍可供使用）。
 
-* 開啟資產的屬性。 屬性會指出所參考之選定資產或其成員的設定。 若要查看整個集，請點選集名稱。
+* 開啟資產的屬性。 屬性會指出所參考之選定資產或其成員的設定。 要查看整個集，請選擇集名。
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
@@ -210,33 +210,33 @@ ht-degree: 8%
 
 1. 執行下列任一操作：
 
-   * 暫留在「影像集」資產上，然後點選&#x200B;**[!UICONTROL Edit]**（鉛筆圖示）。
-   * 暫留在「影像集」資產上，點選「**[!UICONTROL 選取]**」（核取標籤圖示），然後點選工具列中的「**[!UICONTROL 編輯]**」。
-   * 點選「影像集」資產，然後點選工具列中的「 **[!UICONTROL Edit]**（鉛筆圖示）」。
+   * 暫留在「影像集」資產上，然後選取「**[!UICONTROL 編輯]**」（鉛筆圖示）。
+   * 暫留在「影像集」資產上，選取「**[!UICONTROL 選取]**」（勾選圖示），然後在工具列中選取「**[!UICONTROL 編輯]**」。
+   * 點選「影像集」資產，然後選取工具列中的「編輯&#x200B;****（鉛筆圖示）」。
 
 1. 要編輯「影像集」中的影像，請執行以下操作之一：
 
    * 若要重新排序資產，請拖曳影像至新位置（選取重新排序圖示以移動項目）。
    * 若要依遞增或遞減順序排序項目，請按一下欄標題。
-   * 若要新增資產或更新現有資產，請按一下「**[!UICONTROL 新增資產]**」。 導覽至資產，選取資產，然後點選頁面右上角的&#x200B;**[!UICONTROL 選取]**。
+   * 若要新增資產或更新現有資產，請按一下「**[!UICONTROL 新增資產]**」。 導覽至資產，選取資產，然後選取頁面右上角的&#x200B;**[!UICONTROL 選取]**。
 
       >[!NOTE]
       >
       >如果您以其他影像取代縮圖，以刪除Experience Manager用於縮圖的影像，仍會顯示原始資產。
-   * 若要刪除資產，請選取資產，然後點選或按一下「刪除資產」**[!UICONTROL 「]**」。
-   * 若要套用預設集，在頁面右上角附近，點選&#x200B;**[!UICONTROL Preset]**，然後選取檢視器預設集。
-   * 若要新增或變更縮圖，請選取資產右側的縮圖圖示。 導覽至新的縮圖或色票資產，選取它，然後點選&#x200B;**[!UICONTROL 選取]**。
-   * 若要刪除整個影像集，請導覽至影像集，選取它，然後點選&#x200B;**[!UICONTROL Delete]**。
+   * 若要刪除資產，請選取資產並選取&#x200B;**[!UICONTROL 刪除資產]**。
+   * 若要套用預設集，在頁面右上角附近，選取&#x200B;**[!UICONTROL Preset]**，然後選取檢視器預設集。
+   * 若要新增或變更縮圖，請選取資產右側的縮圖圖示。 導覽至新的縮圖或色票資產，選取它，然後選取&#x200B;**[!UICONTROL 選取]**。
+   * 若要刪除整個影像集，請導覽至影像集，選取它，然後選取&#x200B;**[!UICONTROL Delete]**。
 
    >[!NOTE]
    >
-   >您可以編輯影像集中的影像。 導覽至該集，然後點選左側邊欄中的「設定成員&#x200B;]**」。**[!UICONTROL &#x200B;若要開啟編輯視窗，請點選資產上的「鉛筆」圖示。
+   >您可以編輯影像集中的影像。 導覽至該集，然後在左側邊欄中選取&#x200B;**[!UICONTROL 設定成員]**。 若要開啟編輯視窗，請選取資產上的鉛筆圖示。
 
 1. 完成編輯時，點選「**[!UICONTROL 儲存]**」。
 
 ## 預覽影像集 {#previewing-image-sets}
 
-請參閱「預覽資產](/help/assets/dynamic-media/previewing-assets.md)」。[
+請參閱[預覽資產](/help/assets/dynamic-media/previewing-assets.md)。
 
 ## 發佈影像集 {#publishing-image-sets}
 
