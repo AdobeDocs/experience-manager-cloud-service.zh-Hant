@@ -1,15 +1,15 @@
 ---
-title: 使用 Dynamic Media
+title: 使用Dynamic Media
 description: Dynamic Media可協助您隨需提供豐富的視覺化銷售和行銷資產，並自動調整規模以供網頁、行動裝置及社交網站使用。 Dynamic Media使用一組主要來源資產，透過其全球、可擴充、效能最佳化的網路，即時產生並提供多種豐富內容變異
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
 
-# 使用 Dynamic Media{#working-with-dynamic-media}
+# 使用Dynamic Media{#working-with-dynamic-media}
 
 [動態](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) 媒體可協助您隨需提供豐富的視覺化銷售和行銷資產，並自動調整規模以供網頁、行動裝置和社交網站使用。Dynamic Media使用一組主要來源資產，透過其全球、可擴充、效能最佳化的網路，即時產生並提供多種豐富內容變異。
 
