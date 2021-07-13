@@ -4,10 +4,10 @@ description: 了解適用於Platform launch和Dynamic Media檢視器5.13的Dynam
 feature: 資產報表
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '6662'
-ht-degree: 9%
+source-wordcount: '6676'
+ht-degree: 7%
 
 ---
 
@@ -39,7 +39,7 @@ name used to be Experience Platform Launch. Changed to Experience Platform Data 
 
 與Experience Platform Launch整合的主要使用案例是同時使用Experience Manager資產和Experience Manager網站的客戶。 在這類情況下，您可以在Experience Manager製作節點和Experience Platform Launch之間設定標準整合，然後將您的Sites例項與Experience Platform Launch屬性建立關聯。 之後，任何新增至Sites頁面的Dynamic Media WCM元件都會追蹤檢視器的資料和事件。
 
-請參閱在Experience Manager網站](#tracking-dynamic-media-viewers-in-aem-sites)中追蹤Dynamic Media檢視器。[
+請參閱[在Experience Manager網站](#tracking-dynamic-media-viewers-in-aem-sites)中追蹤Dynamic Media檢視器。
 
 整合支援的次要使用案例為僅使用Experience Manager資產或Dynamic Media Classic的客戶。 在這種情況下，您會取得檢視器的內嵌程式碼，並將其新增至網站頁面。 然後，從Experience Platform Launch取得Experience Platform Launch程式庫生產URL，並手動將其新增至網頁代碼。
 
@@ -59,7 +59,7 @@ Adobe Analytics可讓您追蹤使用者在您網站上與Dynamic Media檢視器�
 
 Experience Platform Launch中的資料元素是已命名的屬性，其值會靜態定義，或根據網頁或Dynamic Media檢視器資料的狀態動態計算。
 
-資料元素定義可用的選項取決於Experience Platform Launch屬性中安裝的擴充功能清單。 「核心」擴充功能已預先安裝，且可在任何設定中立即使用。 此「核心」擴充功能可定義資料元素，其值來自Cookie、JavaScript™程式碼、查詢字串和許多其他來源。
+資料元素定義可用的選項取決於Experience Platform Launch屬性中安裝的擴充功能清單。 「核心」擴充功能已預先安裝，且可在任何設定中立即使用。 此「核心」擴充功能可定義資料元素，其值來自Cookie、JavaScript程式碼、查詢字串和許多其他來源。
 
 針對Adobe Analytics追蹤，必須安裝數個其他擴充功能，如[擴充功能的安裝與設定](#installing-and-setup-of-extensions)所述。 Dynamic Media檢視器擴充功能新增了定義資料元素的功能，該值是動態檢視器事件的引數。 例如，可參考檢視器類型或檢視器在載入時報告的資產名稱、使用者縮放時報告的縮放等級等等。
 
@@ -153,12 +153,12 @@ Experience Platform Launch中的規則是一種多種結構的配置，它定義
 
 若要進一步了解如何使用Experience ManagerDynamic Media的內嵌程式碼功能，請參閱在網頁上內嵌視訊或影像檢視器](/help/assets/dynamic-media/embed-code.md)。[
 
-**若要使用內嵌程式碼追蹤Dynamic Media檢視器：**
+**使用內嵌程式碼追蹤Dynamic Media檢視器：**
 
 1. 為內嵌Dynamic Media檢視器的網頁做好準備。
 1. 先登入Experience Platform Launch，取得Experience Platform Launch程式庫的內嵌程式碼(請參閱[設定Experience Platform Launch](#configuring-adobe-launch-for-the-integration))。
-1. 按一下「**[!UICONTROL 屬性]**」，然後按一下「**[!UICONTROL 環境]**」標籤。
-1. 挑選與網頁環境相關的環境層級。 然後，在&#x200B;**[!UICONTROL Install]**&#x200B;欄中，按一下方塊圖示。
+1. 選擇&#x200B;**[!UICONTROL 屬性]**，然後選擇&#x200B;**[!UICONTROL 環境]**&#x200B;頁簽。
+1. 挑選與網頁環境相關的環境層級。 然後，在&#x200B;**[!UICONTROL Install]**&#x200B;列中，選擇框表徵圖。
 1. **[!UICONTROL 在「Web安裝指]** 示」對話方塊中，複製完整的Experience Platform Launch程式庫內嵌程式碼以及周圍的 `<script/>` 標籤。
 
 ## Dynamic Media檢視器擴充功能參考指南 {#reference-guide-for-the-dynamic-media-viewers-extension}
@@ -195,7 +195,7 @@ Dynamic Media檢視器擴充功能的唯一設定選項是「**[!UICONTROL 啟�
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-如需各檢視器類型支援的事件清單，請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html);前往「特定檢視器」區段，然後按一下「支援Adobe Analytics追蹤」區段。 目前，Dynamic Media檢視器參考指南不會記錄事件引數。
+如需各檢視器類型支援的事件清單，請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html);前往「特定檢視器」區段，然後選取「支援Adobe Analytics追蹤」區段。 目前，Dynamic Media檢視器參考指南不會記錄事件引數。
 
 現在，我們來考慮Dynamic Media檢視器&#x200B;*資料元素*&#x200B;的生命週期。 此類「資料元素」的值會在頁面上發生對應的Dynamic Media檢視器事件後填入。 例如，假設資料元素指向&#x200B;**[!UICONTROL LOAD]**&#x200B;事件及其&quot;asset&quot;引數。 檢視器首次執行LOAD事件後，此類資料元素的值會接收有效資料。 如果資料元素指向&#x200B;**[!UICONTROL ZOOM]**&#x200B;事件及其&quot;scale&quot;引數，則此類資料元素的值會保持空白，直到檢視器首次傳送&#x200B;**[!UICONTROL ZOOM]**&#x200B;事件為止。
 
@@ -252,7 +252,7 @@ Dynamic Media檢視器擴充功能可讓您使用Dynamic Media檢視器的事件
 最簡單的方法是完成下列兩步驟程式：
 
 * 首先，定義一或多個資料元素，其中每個資料元素代表Dynamic Media檢視器事件的參數。
-* 最後，在Adobe Analytics擴充功能的「設定變數」編輯器中，按一下「資料元素」選取器圖示（三個堆疊磁碟）以開啟「選取資料元素」對話方塊，然後從中選取資料元素。
+* 最後，在Adobe Analytics擴充功能的「設定變數」編輯器中，選取「資料元素」選取器圖示（三個堆疊磁碟）以開啟「選取資料元素」對話方塊，然後從中選取資料元素。
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
@@ -262,7 +262,7 @@ Dynamic Media檢視器擴充功能可讓您使用Dynamic Media檢視器的事件
 
 ![image2019-7-12_19-2-35](assets/image2019-7-12_19-2-35.png)
 
-使用資料元素和直接事件引數參考之間有重要的差異。 對於資料元素，哪個事件會觸發「設定變數」動作並不重要。 觸發規則的事件可能與動態檢視器無關（例如從核心擴充功能按一下網頁）。 但是，使用直接引數參考時，請務必確保觸發規則的事件與其參考的事件引數相對應。
+使用資料元素和直接事件引數參考之間有重要的差異。 對於資料元素，哪個事件會觸發「設定變數」動作並不重要。 觸發規則的事件可能與動態檢視器無關（例如從核心擴充功能中選取網頁）。 但是，使用直接引數參考時，請務必確保觸發規則的事件與其參考的事件引數相對應。
 
 例如，如果 `%event.detail.dm.LOAD.asset%` 規則是由動態媒體檢視器擴充功能的 **[!UICONTROL LOAD]** 事件觸發，則參照會傳回正確的資產名稱。但是，它會傳回任何其他事件的空白值。
 
@@ -397,7 +397,7 @@ Dynamic Media檢視器擴充功能可讓您使用Dynamic Media檢視器的事件
  </tbody>
 </table>
 
-## 配置所有整合部件 {#configuring-all-the-integration-pieces}
+## 配置所有整合元件 {#configuring-all-the-integration-pieces}
 
 **開始之前**
 
@@ -417,7 +417,7 @@ Adobe建議您仔細檢閱本節之前的所有檔案，以了解完整的整合
 
 在設定中，請確定您擁有已啟用Adobe Analytics和Experience Platform Launch之Adobe Experience Cloud中公司的存取權。
 
-## 為整合設定Adobe Analytics {#configuring-adobe-analytics-for-the-integration}
+## 設定Adobe Analytics以進行整合 {#configuring-adobe-analytics-for-the-integration}
 
 設定Adobe Analytics後，將針對整合設定下列項目：
 
@@ -429,7 +429,7 @@ Adobe建議您仔細檢閱本節之前的所有檔案，以了解完整的整合
 
 **若要設定Adobe Analytics以進行整合：**
 
-1. 首先，從Experience Cloud[首頁](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)存取Adobe Analytics。 在功能表列中，按一下頁面右上角附近的「解決方案」圖示（三乘三個點表），然後按一下&#x200B;**[!UICONTROL Analytics]**。
+1. 首先，從Experience Cloud[首頁](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)存取Adobe Analytics。 在功能表列中，選取頁面右上角附近的解決方案圖示（三乘三個點表），然後選取&#x200B;**[!UICONTROL Analytics]**。
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -445,7 +445,7 @@ Adobe建議您仔細檢閱本節之前的所有檔案，以了解完整的整合
 
    請參閱[報表與報表套裝](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites)和[建立報表套裝](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#manage-report-suites)。
 
-   在Adobe Analytics中，報表套裝是在&#x200B;**[!UICONTROL 管理員>報表套裝]**&#x200B;下管理。
+   在Adobe Analytics中，報表套裝是在&#x200B;**[!UICONTROL Admin]** > **[!UICONTROL 報表套裝]**&#x200B;下管理。
 
    ![2019-07-22_18-09-49](assets/2019-07-22_18-09-49.png)
 
@@ -461,16 +461,16 @@ Adobe建議您仔細檢閱本節之前的所有檔案，以了解完整的整合
 
    在本檔案中，只有自訂流量(prop)變數會被使用，因為這些變數會在網頁上發生動作後幾分鐘內，便可在Analytics報表中使用。
 
-   若要啟用新的自訂流量變數，請在Adobe Analytics的工具列上，按一下「**[!UICONTROL 管理員>報表套裝]**」。
+   若要啟用新的自訂流量變數，請在工具列的Adobe Analytics中前往&#x200B;**[!UICONTROL 管理]** > **[!UICONTROL 報表套裝]**。
 
-1. 在&#x200B;**[!UICONTROL 報表套裝管理器]**&#x200B;頁面上，選取正確的報表，然後在工具列上按一下「編輯設定&#x200B;**[!UICONTROL >**[!UICONTROL &#x200B;流量&#x200B;]**>**[!UICONTROL &#x200B;流量變數&#x200B;]**」。]**
+1. 在&#x200B;**[!UICONTROL 報表套裝管理器]**&#x200B;頁面上，選取正確的報表，然後在工具列上前往&#x200B;**[!UICONTROL 編輯設定]** > **[!UICONTROL 流量]** > **[!UICONTROL 流量變數]**。
 1. 挑選未使用的變數，為其指定描述性名稱(**[!UICONTROL 檢視器資產(prop 30)]**)，然後在「已啟用」欄中將下拉式方塊變更為「已啟用」。
 
    以下螢幕擷取是自訂流量變數(**[!UICONTROL prop30]**)的範例，用於追蹤檢視器使用的資產名稱：
 
    ![image2019-6-26_23-6-59](/help/assets/dynamic-media/assets/image2019-6-26_23-6-59.png)
 
-1. 在變數清單的底部，按一下「**[!UICONTROL 儲存]**」。
+1. 在變數清單的底部，選擇&#x200B;**[!UICONTROL Save]**。
 
 ### 設定報表 {#setting-up-a-report}
 
@@ -478,7 +478,7 @@ Adobe建議您仔細檢閱本節之前的所有檔案，以了解完整的整合
 
    不過，在您於&#x200B;**[設定Adobe Analytics變數](#setting-up-adobe-analytics-variables)**&#x200B;中設定自訂流量變數後，您就可以知道自訂流量報表在Adobe Analytics中自動可用了。
 
-   例如，檢視器資產( **[!UICONTROL prop 30)變數的報表可從「自訂流量>自訂流量21-30 >檢視器資產(prop 30)」下的「報表」功能表使用]******。
+   例如，**[!UICONTROL 檢視器資產(prop 30)]**&#x200B;變數的報表可從&#x200B;**[!UICONTROL 自訂流量]** > **[!UICONTROL 自訂流量21-30]** > **[!UICONTROL 檢視器資產(prop 30)]**&#x200B;下的「報表」功能表取得。
 
    在檢視器資產(prop 30)建 **[!UICONTROL 立後立即造訪此報表]** ，不會顯示任何資料；在這個整合階段，就是預期的。
 
@@ -495,7 +495,7 @@ Adobe建議您仔細檢閱本節之前的所有檔案，以了解完整的整合
 
 **若要設定整合的Experience Platform Launch:**
 
-1. 首先，從Experience Cloud[首頁](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)存取Experience Platform Launch。 在功能表列中，按一下頁面右上角附近的「解決方案」圖示（三乘三個點表），然後按一下&#x200B;**[!UICONTROL Launch]**。
+1. 首先，從Experience Cloud[首頁](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)存取Experience Platform Launch。 在功能表列中，選取頁面右上角附近的解決方案圖示（三乘三個點表格），然後選取&#x200B;**[!UICONTROL Launch]**。
 
    您也可以直接[開啟Experience Platform Launch](https://launch.adobe.com/)。
 
@@ -507,34 +507,36 @@ Experience Platform Launch中的屬性是已命名的設定，可讓所有設定
 
 另請參閱[建立Launch屬性](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch)。
 
-1. 在Experience Platform Launch中，按一下&#x200B;**[!UICONTROL 新屬性]**。
+**若要在Experience Platform Launch中建立屬性：**
+
+1. 在Experience Platform Launch中，選擇&#x200B;**[!UICONTROL 新屬性]**。
 1. 在「建 **[!UICONTROL 立屬性]** 」對話方塊的「名稱 **** 」欄位中，輸入描述性名稱，例如網站的標題。例如， `DynamicMediaViewersProp.`
 1. 在&#x200B;**[!UICONTROL 網域]**&#x200B;欄位中，輸入網站的網域。
 1. 在「進 **[!UICONTROL 階選項]** 」下拉式清單中，啟用「設定擴充功能」開發 (以後無法修改) ******，以備您要使用的擴充功能 (在本例中為「動態媒體檢視器」) 尚未發行時使用。
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 選擇&#x200B;**[!UICONTROL 保存]**。
 
-   按一下新建立的屬性，然後繼續&#x200B;*安裝和設定擴展*。
+   選擇新建立的屬性，然後繼續&#x200B;*安裝和設定擴展*。
 
-### 安裝和設定擴充功能 {#installing-and-setup-of-extensions}
+### 安裝及設定擴充功能 {#installing-and-setup-of-extensions}
 
-Experience Platform Launch中所有可用的擴充功能都會列在&#x200B;**[!UICONTROL 擴充功能>目錄]**&#x200B;下方。
+Experience Platform Launch中所有可用的擴充功能都列在&#x200B;**[!UICONTROL 擴充功能]** > **[!UICONTROL Catalog]**&#x200B;下方。
 
-若要安裝擴充功能，請按一下「**[!UICONTROL 安裝]**」。 如果需要，請執行一次性擴展配置，然後按一下&#x200B;**[!UICONTROL Save]**。
+要安裝擴展，請選擇&#x200B;**[!UICONTROL Install]**。 如果需要，請執行一次性擴展配置，然後選擇&#x200B;**[!UICONTROL 保存]**。
 
 視需要，必須安裝並設定下列擴充功能：
 
 * （必要）*Experience CloudID服務*&#x200B;擴充功能
 
-無需額外設定，接受任何建議的值。 完成後，請務必按一下&#x200B;**[!UICONTROL Save]**。
+無需額外設定，接受任何建議的值。 完成後，請務必選擇&#x200B;**[!UICONTROL Save]**。
 
 請參閱[Experience CloudID服務擴充功能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html#extensions-ref)。
 
 * （必要）*Adobe Analytics*&#x200B;擴充功能
 
-若要設定此擴充功能，您需要位於Adobe Analytics中&#x200B;**[!UICONTROL 管理>報表套裝]**&#x200B;下方的「報表套裝ID」（位於&#x200B;**[!UICONTROL 報表套裝ID]**&#x200B;欄標題下）。
+若要設定此擴充功能，您需要位於Adobe Analytics中&#x200B;**[!UICONTROL Admin]** > **[!UICONTROL Report Suite]**&#x200B;下方的&#x200B;**[!UICONTROL Report Suite ID]**&#x200B;欄標題下方的報表套裝ID。
 
 (僅供展示之用，**[!UICONTROL DynamicMediaViewersExtensionDoc]**&#x200B;報表套裝的報表套裝ID用於下列螢幕擷取畫面。 此ID已建立並用於 [選取報表套裝](#selecting-a-report-suite) 。)
 
@@ -548,7 +550,7 @@ Experience Platform Launch中所有可用的擴充功能都會列在&#x200B;**[!
 
 在&#x200B;**[!UICONTROL 安裝擴充功能]**&#x200B;頁面上，展開&#x200B;**[!UICONTROL 一般]**，然後指定追蹤伺服器。 追蹤伺服器會遵循範本`<trackingNamespace>.sc.omtrdc.net`，其中`<trackingNamespace>`是在布建電子郵件中取得的資訊。
 
-按一下「**[!UICONTROL 儲存]**」。
+選擇&#x200B;**[!UICONTROL 保存]**。
 
 請參閱[Adobe Analytics擴充功能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref)。
 
@@ -580,7 +582,7 @@ Experience Platform Launch中所有可用的擴充功能都會列在&#x200B;**[!
 
 如需Experience Platform Launch中的範例設定，如需示範如何在檢視器載入時追蹤資產名稱，請參閱[範例設定](#sample-configuration)。
 
-如需擴充功能功能的深入資訊，請參閱[設定Dynamic Media檢視器擴充功能](#configuring-the-dynamic-media-viewers-extension)。
+請參閱[設定Dynamic Media檢視器擴充功能](#configuring-the-dynamic-media-viewers-extension) ，以取得擴充功能的相關深入資訊。
 
 ### 發佈程式庫 {#publishing-a-library}
 
@@ -595,11 +597,11 @@ platform launch可能有多個開發環境、一個測試環境和一個生產�
 * 將所有必要的變更（新的變更和更新）加入程式庫，以新增和建置新程式庫。
 * 在不同環境層級（從開發到測試和生產）中向上移動程式庫。
 
-#### 新增及建立新程式庫 {#adding-and-building-a-new-library}
+#### 新增並建置新程式庫 {#adding-and-building-a-new-library}
 
 1. 第一次在Experience Platform Launch中開啟「發佈」索引標籤時，程式庫清單為空。
 
-   在左欄中，按一下&#x200B;**[!UICONTROL 新增程式庫]**。
+   在左欄中，選取&#x200B;**[!UICONTROL 新增程式庫]**。
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
@@ -607,11 +609,11 @@ platform launch可能有多個開發環境、一個測試環境和一個生產�
 
    *DynamicMediaViewersLib*
 
-   從「環境」下拉式清單中，選擇「環境」層級。 起初，僅可選取開發層級。 在頁面的左下側附近，按一下「**[!UICONTROL 新增所有已變更的資源]**」。
+   從「環境」下拉式清單中，選擇「環境」層級。 起初，僅可選取開發層級。 在頁面的左下側附近，選擇「**[!UICONTROL 新增所有已變更的資源]**」。
 
    ![image2019-7-15_14-49-41](assets/image2019-7-15_14-49-41.png)
 
-1. 在頁面的右上角附近，按一下「儲存並建置以開發」]**。**[!UICONTROL 
+1. 在頁面的右上角附近，選取「**[!UICONTROL 儲存並建置以供開發」]**。
 
    幾分鐘後，程式庫就會建立並可供使用。
 
@@ -619,36 +621,36 @@ platform launch可能有多個開發環境、一個測試環境和一個生產�
 
    >[!NOTE]
    >
-   >下次您變更Experience Platform Launch設定時，請前往&#x200B;**[!UICONTROL Property]**&#x200B;設定下的&#x200B;**[!UICONTROL Publishing]**&#x200B;標籤，然後按一下先前建立的程式庫。
+   >下次您變更Experience Platform Launch設定時，請前往&#x200B;**[!UICONTROL Property]**&#x200B;設定下的&#x200B;**[!UICONTROL Publishing]**&#x200B;標籤，然後選取先前建立的程式庫。
    >
    >
-   >在程式庫發佈畫面中，按一下&#x200B;**[!UICONTROL 新增所有變更的資源]**，然後按一下&#x200B;**[!UICONTROL 儲存並建置以開發]**。
+   >從程式庫發佈畫面中，選取&#x200B;**[!UICONTROL 新增所有變更的資源]**，然後選取&#x200B;**[!UICONTROL 儲存並建置以開發]**。
 
-#### 在環境層級中向上移動程式庫 {#moving-a-library-up-through-environment-levels}
+#### 在環境層級上移動程式庫 {#moving-a-library-up-through-environment-levels}
 
-1. 新增程式庫後，即可在開發環境中找到。 若要將其移至測試環境層級（對應至已提交欄），請在程式庫的下拉式功能表中，按一下「提交以進行核准」**[!UICONTROL 。]**
+1. 新增程式庫後，即可在開發環境中找到。 若要將其移至測試環境層級（與已提交欄相對應），請從程式庫的下拉式選單中選取&#x200B;**[!UICONTROL 提交以進行核准]**。
 
    ![image2019-7-15_15-52-37](assets/image2019-7-15_15-52-37.png)
 
-1. 在確認對話方塊中，按一下&#x200B;**[!UICONTROL 提交]**。
+1. 在確認對話框中，選擇&#x200B;**[!UICONTROL Submit]**。
 
-   程式庫移至「已提交」欄後，從程式庫的下拉式功能表中，按一下「為測試建置&#x200B;**[!UICONTROL 」。]**
+   程式庫移至「已提交」欄後，從程式庫的下拉式功能表中，選取&#x200B;**[!UICONTROL 為測試建置]**。
 
    ![image2019-7-15_15-54-37](assets/image2019-7-15_15-54-37.png)
 
 1. 若要將程式庫從測試環境移至生產環境（即「已發佈」欄），請遵循類似的程式。
 
-   首先，從下拉式功能表中按一下「核准以發佈」]**。**[!UICONTROL 
+   首先，從下拉式選單中選取「核准以發佈」]**。**[!UICONTROL 
 
    ![image2019-7-15_16-7-39](assets/image2019-7-15_16-7-39.png)
 
-1. 從下拉式功能表中，按一下「建立並發佈至生產環境」]**。**[!UICONTROL 
+1. 從下拉式功能表中，選取&#x200B;**[!UICONTROL 建置並發佈至生產]**。
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
    請參閱[發佈](https://experienceleague.adobe.com/docs/launch/using/publish/overview.html#publish) ，以取得Experience Platform Launch中發佈程式的詳細資訊。
 
-## 為整合設定Adobe Experience Manager {#configuring-adobe-experience-manager-for-the-integration}
+## 設定Adobe Experience Manager以進行整合 {#configuring-adobe-experience-manager-for-the-integration}
 
 <!-- Prerequisites list below should be verified by Sasha -->
 
@@ -665,38 +667,38 @@ Experience Manager設定包含下列兩個主要步驟：
 
 ### 設定Experience ManagerIMS {#configuring-aem-ims}
 
-1. 在Experience Manager作者中，按一下「工具」圖示（槌子），然後按一下&#x200B;**[!UICONTROL 安全性>AdobeIMS設定]**。
+1. 在Experience Manager作者中，選取工具圖示（槌子），然後前往&#x200B;**[!UICONTROL Security]** > **[!UICONTROL AdobeIMS設定]**。
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
-1. 在「AdobeIMC配置」頁的左上角附近，按一下&#x200B;**[!UICONTROL Create]**。
-1. 在&#x200B;**[!UICONTROL AdobeIMS技術帳戶設定]**&#x200B;頁面的&#x200B;**[!UICONTROL 雲端解決方案]**&#x200B;下拉式清單中，按一下&#x200B;**[!UICONTROL Experience Platform資料收集]**。
-1. 啟用&#x200B;**[!UICONTROL 建立新憑證]**，然後在文字欄位中，為憑證輸入任何有意義的值。 例如， *AdobeLaunchIMSCert*。 按一下&#x200B;**[!UICONTROL 建立憑證]**。
+1. 在「AdobeIMC配置」頁的左上角附近，選擇&#x200B;**[!UICONTROL Create]**。
+1. 在&#x200B;**[!UICONTROL AdobeIMS技術帳戶設定]**&#x200B;頁面的&#x200B;**[!UICONTROL 雲端解決方案]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL Experience Platform資料收集]**。
+1. 啟用&#x200B;**[!UICONTROL 建立新憑證]**，然後在文字欄位中，為憑證輸入任何有意義的值。 例如， *AdobeLaunchIMSCert*。 選擇&#x200B;**[!UICONTROL 建立證書]**。
 
    將顯示以下資訊消息：
 
    *若要擷取有效的存取權杖，必須將新憑證的公開金鑰新增至Adobe I/O的技術帳戶！*
 
-   要關閉「資訊」對話框，請按一下「確定」****。
+   要關閉「資訊」對話框，請選擇&#x200B;**[!UICONTROL OK]**。
 
    ![2019-07-25_12-09-24](assets/2019-07-25_12-09-24.png)
 
-1. 按一下&#x200B;**[!UICONTROL 下載公開金鑰]**&#x200B;將公開金鑰檔案(`*.crt`)下載到本地系統。
+1. 選擇&#x200B;**[!UICONTROL 下載公鑰]**&#x200B;以將公鑰檔案(`*.crt`)下載到本地系統。
 
    >[!NOTE]
    >
-   >此時，請 ***開啟*****[!UICONTROL Adobe IMS技術帳戶設定頁面]** ;不 ***要關閉頁面*** ，也不 ***要按「下一步*** 」。您稍後將在步驟中返回此頁面。
+   >此時， ***保持開啟*** **[!UICONTROL AdobeIMS技術帳戶設定]**&#x200B;頁面；***不***&#x200B;關閉頁面，***不***&#x200B;選擇&#x200B;**[!UICONTROL 下一步]**。 您稍後將在步驟中返回此頁面。
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
 1. 在新的瀏覽器標籤中，導覽至[Adobe I/O主控台](https://console.adobe.io/integrations)。
 
-1. 在&#x200B;**[!UICONTROL Adobe I/O主控台整合]**&#x200B;頁面右上角附近，按一下&#x200B;**[!UICONTROL 新整合]**。
-1. 在「建 **[!UICONTROL 立新整合]** 」對話方塊中，確定已選取「 **[!UICONTROL 存取API]** 」選項按鈕，然後按一下「繼 **[!UICONTROL 續]**」。
+1. 從&#x200B;**[!UICONTROL Adobe I/O主控台整合]**&#x200B;頁面右上角附近，選取&#x200B;**[!UICONTROL 新整合]**。
+1. 在&#x200B;**[!UICONTROL 建立新整合]**&#x200B;對話方塊中，確定已選取&#x200B;**[!UICONTROL 存取API]**&#x200B;選項按鈕，然後選取&#x200B;**[!UICONTROL 繼續]**。
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
-1. 在第二個「 **[!UICONTROL 建立新整合]** 」頁面上，啟用 (開啟) **** Experience Platform Launch API選項按鈕。在頁面的右下角，按一下「繼 **[!UICONTROL 續]**」。
+1. 在第二個「 **[!UICONTROL 建立新整合]** 」頁面上，啟用 (開啟) **** Experience Platform Launch API選項按鈕。在頁面的右下角，選擇&#x200B;**[!UICONTROL Continue]**。
 
    ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
 
@@ -714,8 +716,8 @@ Experience Manager設定包含下列兩個主要步驟：
 
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
-1. 按一下&#x200B;**[!UICONTROL 建立整合]**。
-1. 在&#x200B;**[!UICONTROL 已建立的整合]**&#x200B;頁面上，按一下&#x200B;**[!UICONTROL 繼續前往整合詳細資料]**。
+1. 選擇&#x200B;**[!UICONTROL 建立整合]**。
+1. 在&#x200B;**[!UICONTROL 已建立的整合]**&#x200B;頁面上，選取&#x200B;**[!UICONTROL 繼續前往整合詳細資料]**。
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
@@ -728,9 +730,9 @@ Experience Manager設定包含下列兩個主要步驟：
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
    _整合詳細資訊頁面_
 
-1. 返回您先前 **[!UICONTROL 未開啟的「Adobe IMS技術帳戶設定]** 」頁面。在頁面的右上角，按一下「下一 **[!UICONTROL 步]** 」以開啟「 **** Adobe IMS Technical Account Configuration **[!UICONTROL 」視窗中的「Account]** 」 (帳戶) 頁面。
+1. 返回您先前 **[!UICONTROL 未開啟的「Adobe IMS技術帳戶設定]** 」頁面。在頁面的右上角，選擇&#x200B;**[!UICONTROL Next]**&#x200B;以在&#x200B;**[!UICONTROL AdobeIMS技術帳戶設定]**&#x200B;視窗中開啟&#x200B;**[!UICONTROL 帳戶]**&#x200B;頁面。
 
-   (如果您先前關閉頁面，請返回Experience Manager作者，然後按一下「**[!UICONTROL 工具>安全性>AdobeIMS設定」]**。 按一下&#x200B;**[!UICONTROL 建立]**。在&#x200B;**[!UICONTROL 雲端解決方案]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL Experience Platform Launch]**。 在「證 **[!UICONTROL 書]** 」下拉式清單中，選取先前建立之憑證的名稱。
+   (如果您先前關閉頁面，請返回Experience Manager作者，然後前往&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL AdobeIMS設定]**。 選擇 **[!UICONTROL 建立]**。在&#x200B;**[!UICONTROL 雲端解決方案]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL Experience Platform Launch]**。 在「證 **[!UICONTROL 書]** 」下拉式清單中，選取先前建立之憑證的名稱。
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
    _AdobeIMS技術帳戶設定 — 憑證頁面_
@@ -743,7 +745,7 @@ Experience Manager設定包含下列兩個主要步驟：
 1. 在&#x200B;**[!UICONTROL Account]**&#x200B;頁面上，填寫下列欄位：
 
    * **[!UICONTROL 標題]**  — 輸入描述性帳戶標題。
-   * **[!UICONTROL 授權伺服器]**  — 返回您先前開啟的「整合詳細資訊」頁面。按一下&#x200B;**[!UICONTROL JWT]**&#x200B;標籤。 複製伺服器名稱（不含路徑），如下方強調顯示。
+   * **[!UICONTROL 授權伺服器]**  — 返回您先前開啟的「整合詳細資訊」頁面。選擇&#x200B;**[!UICONTROL JWT]**&#x200B;頁簽。 複製伺服器名稱（不含路徑），如下方強調顯示。
 
 （範例伺服器名稱僅供說明之用）   返回「帳 **[!UICONTROL 戶]** 」頁面，然後將名稱貼到相應欄位。例如， `https://ims-na1.adobelogin.com/`
 （範例伺服器名稱僅供說明之用）
@@ -751,14 +753,14 @@ Experience Manager設定包含下列兩個主要步驟：
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
    _整合詳細資料頁面 — JWT索引標籤_
 
-1. **[!UICONTROL API金鑰]** -返回「整合詳細資訊」頁面。按一 **[!UICONTROL 下「概述]** 」標籤，然後按一下「 **[!UICONTROL API金鑰 (用戶端ID) 」欄位右側的]** 「復 **[!UICONTROL 制」]**。
+1. **[!UICONTROL API金鑰]** -返回「整合詳細資訊」頁面。選擇&#x200B;**[!UICONTROL Overview]**&#x200B;頁簽，然後在&#x200B;**[!UICONTROL API密鑰（客戶端ID）]**&#x200B;欄位右側，選擇&#x200B;**[!UICONTROL Copy]**。
 
    返回「帳 **[!UICONTROL 戶]** 」頁面，然後將金鑰貼入個別欄位。
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
    _整合詳細資訊頁面_
 
-1. **[!UICONTROL 用戶端密碼]**-返回「整合詳細資訊」頁面。在「概述」 **[!UICONTROL 標籤中]** ，按一下「 **[!UICONTROL 擷取用戶端密碼」]**。在「用戶端密碼」欄位的 **[!UICONTROL 右側]** ，按一下「 **[!UICONTROL 複製」]**。
+1. **[!UICONTROL 用戶端密碼]**-返回「整合詳細資訊」頁面。從&#x200B;**[!UICONTROL Overview]**&#x200B;頁簽中，選擇&#x200B;**[!UICONTROL Retrieve Client Secret]**。 在&#x200B;**[!UICONTROL 客戶端密碼]**&#x200B;欄位的右側，選擇&#x200B;**[!UICONTROL 複製]**。
 
    返回「帳 **[!UICONTROL 戶]** 」頁面，然後將金鑰貼入個別欄位。
 
@@ -773,7 +775,7 @@ Experience Manager設定包含下列兩個主要步驟：
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
-1. 在&#x200B;**[!UICONTROL Account]**&#x200B;頁面的右上角附近，按一下&#x200B;**[!UICONTROL Create]**。
+1. 在&#x200B;**[!UICONTROL Account]**&#x200B;頁面的右上角附近，選擇&#x200B;**[!UICONTROL Create]**。
 
    設定Experience ManagerIMS後，您現在會在&#x200B;**[!UICONTROL AdobeIMS設定]**&#x200B;下方列出新的IMSAccount。
 
@@ -781,7 +783,7 @@ Experience Manager設定包含下列兩個主要步驟：
 
 ## 設定Experience Platform Launch雲以進行整合 {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. 在Experience Manager作者中，在左上角附近，按一下「工具」圖示（槌子），然後按一下「**[!UICONTROL Cloud Services>Experience Platform Launch設定」]**。
+1. 在Experience Manager作者中，在左上角附近選取「工具」圖示（槌子），然後前往&#x200B;**[!UICONTROL Cloud Services]** > **[!UICONTROL Experience Platform Launch設定]**。
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
@@ -791,7 +793,7 @@ Experience Manager設定包含下列兩個主要步驟：
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
-1. 在頁面左上角附近，按一下「建 **[!UICONTROL 立」]**。
+1. 在頁面的左上角附近，選擇&#x200B;**[!UICONTROL Create]**。
 1. 在&#x200B;**[!UICONTROL 建立Experience Platform Launch配置]**&#x200B;窗口的&#x200B;**[!UICONTROL 一般資訊]**&#x200B;頁（1/3頁）上，填寫以下欄位：
 
    * **[!UICONTROL 標題]**  — 輸入描述性的設定標題。例如， `We.Retail Launch cloud configuration`。
@@ -805,7 +807,7 @@ Experience Manager設定包含下列兩個主要步驟：
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
-1. 在左上角附近，按一下&#x200B;**[!UICONTROL Next]**。
+1. 在左上角附近，選擇&#x200B;**[!UICONTROL Next]**。
 1. 在&#x200B;**[!UICONTROL 建立Experience Platform Launch配置]**&#x200B;窗口的&#x200B;**[!UICONTROL 測試]**&#x200B;頁（2/3頁）上，填寫以下欄位：
 
    在&#x200B;**[!UICONTROL 程式庫URI]**&#x200B;欄位中，檢查Experience Platform Launch程式庫的測試版本位置。 Experience Manager會自動填入此欄位。
@@ -823,13 +825,13 @@ Experience Manager設定包含下列兩個主要步驟：
 
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
-1. 在右上角附近，按一下&#x200B;**[!UICONTROL Next]**。
+1. 在右上角附近，選擇&#x200B;**[!UICONTROL Next]**。
 1. 在&#x200B;**[!UICONTROL 建立Experience Platform Launch配置]**&#x200B;窗口的&#x200B;**[!UICONTROL 生產]**&#x200B;頁面（3/3頁）上，根據需要修復自動填入的生產URI，如同在前一個&#x200B;**[!UICONTROL 測試]**&#x200B;頁面上所做的操作。
-1. 在右上角附近，按一下&#x200B;**[!UICONTROL Create]**。
+1. 在右上角附近，選擇&#x200B;**[!UICONTROL Create]**。
 
    您的新Experience Platform Launch雲端設定現在已建立並列於您的網站旁。
 
-1. 選取新的Experience Platform Launch雲端設定（選取時，設定標題左側會顯示勾號）。 在工具列上，按一下&#x200B;**[!UICONTROL Publish]**。
+1. 選取新的Experience Platform Launch雲端設定（選取時，設定標題左側會顯示勾號）。 在工具欄上，選擇&#x200B;**[!UICONTROL Publish]**。
 
    ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
