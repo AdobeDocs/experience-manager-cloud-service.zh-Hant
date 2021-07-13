@@ -1,13 +1,13 @@
 ---
 title: 管理影像預設集
-description: '"了解影像預設集，以及如何建立、修改和管理影像預設集。"'
+description: 了解影像預設集，以及如何建立、修改和管理影像預設集。
 feature: 影像預設集，檢視器，轉譯
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
 workflow-type: tm+mt
-source-wordcount: '3652'
-ht-degree: 9%
+source-wordcount: '3634'
+ht-degree: 8%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 9%
 
 ## 管理影像預設集 {#managing-image-presets-1}
 
-您可以點選或按一下Experience Manager標誌以存取全域導覽主控台，然後點選或按一下「工具」圖示，並導覽至&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**，以管理Experience Manager中的影像預設集。
+若要管理Experience Manager中的影像預設集，請選取Experience Manager標誌以存取全域導覽主控台，然後選取「工具」圖示，並導覽至&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**。
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -51,7 +51,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->當您在資產的「詳細資料檢視」中選取「**[!UICONTROL 轉譯]**」時，系統會顯示各種轉譯。 您可以增加或減少顯示的影像預設集數目。 請參閱[增加顯示](#increasing-or-decreasing-the-number-of-image-presets-that-display)的影像預設集數目。
+>當您在資產的「詳細資料檢視」中選取「**[!UICONTROL 轉譯]**」時，系統會顯示各種轉譯。 您可以增加或減少顯示的影像預設集數目。 請參閱[增加顯示的影像預設集數](#increasing-or-decreasing-the-number-of-image-presets-that-display)。
 
 ### Adobe Illustrator(AI)、PostScript®(EPS)和PDF檔案格式 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
@@ -62,11 +62,11 @@ Adobe Illustrator的檔案格式是PDF的變體。 在Experience Manager資產�
 * Adobe Illustrator檔案包含單一頁面及多個層。 每個圖層都會擷取為主要Illustrator資產下的PNG子資產。
 * PDF文檔由一頁或多頁組成。 每個頁面都會擷取為主多頁PDF檔案下的單一頁面PDF子資產。
 
-整體`DAM Update Asset`工作流程中由`Create Sub Asset process`元件建立的子資產。 若要在工作流程中查看此程式元件，請點選「**[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新資產]** > **[!UICONTROL 編輯]**」。
+整體`DAM Update Asset`工作流程中由`Create Sub Asset process`元件建立的子資產。 若要在工作流中查看此流程元件，請導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新資產]** > **[!UICONTROL 編輯]**。
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
-開啟資產時，您可以檢視子資產或頁面，點選「內容」功能表，然後選取&#x200B;**[!UICONTROL 子資產]**&#x200B;或&#x200B;**[!UICONTROL 頁面]**。 子資產。 也就是說，PDF頁面由`Create Sub Asset`工作流程元件擷取。 接著會儲存為主要資產下方的`page1.pdf`、`page2.pdf`等項目。 儲存後， `DAM Update Asset`工作流程會處理它們。
+開啟資產時，您可以檢視子資產或頁面，選取「內容」功能表，然後選取&#x200B;**[!UICONTROL 子資產]**&#x200B;或&#x200B;**[!UICONTROL 頁面]**。 子資產。 也就是說，PDF頁面由`Create Sub Asset`工作流程元件擷取。 接著會儲存為主要資產下方的`page1.pdf`、`page2.pdf`等項目。 儲存後， `DAM Update Asset`工作流程會處理它們。
 
 若要使用Dynamic Media來預覽和產生AI、EPS或PDF檔案的動態轉譯，需要下列處理步驟：
 
@@ -87,7 +87,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 在Experience Manager資產�
 
 您可以通過`DAM Update Asset`工作流訪問`Rasterize PDF/AI Image Preview Rendition`進程元件選項。
 
-點選左上角的Adobe Experience Manager，導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模型]**。 在「工作流模型」頁面上，選擇「**[!UICONTROL DAM更新資產]**」，然後在工具欄點選「**[!UICONTROL 編輯]**」。 在「DAM更新資產」工作流程頁面上，點選兩下`Rasterize PDF/AI Image Preview Rendition`處理元件以開啟其「步驟屬性」對話方塊。
+在左上角的Adobe Experience Manager上，導覽至「**[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模型]**」。 在「工作流模型」頁面上，選擇&#x200B;**[!UICONTROL DAM更新資產]**，然後在工具欄上選擇&#x200B;**[!UICONTROL 編輯]**。 在「DAM更新資產」工作流程頁面上，點選兩下`Rasterize PDF/AI Image Preview Rendition`處理元件以開啟其「步驟屬性」對話方塊。
 
 #### 柵格化PDF/AI影像預覽轉譯選項 {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -114,7 +114,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 在Experience Manager資產�
 
 對於InDesign檔案，只有在Adobe InDesign Server與Experience Manager整合時，才會擷取子資產。 參考的資產會根據其中繼資料進行連結。 InDesign Server不是連結的必要項目。 不過，在處理InDesign檔案之前，Experience Manager內必須有參考的資產，才會在InDesign檔案與參考的資產之間建立連結。
 
-<!-- See [Integrating Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
+<!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
 
 `DAM Update Asset`工作流程中的媒體擷取程式元件會執行數個預先設定的擴充指令碼，以處理InDesign檔案。
 
@@ -127,8 +127,8 @@ ExtendScript會在「DAM更新資產」工作流程中，路徑為「媒體擷�
 
 | ExtendScript名稱 | 預設 | 說明 |
 |---|---|---|
-| ThumbnailExport.jsx | 是 | 產生300 ppi `thumbnail.jpg`轉譯，該轉譯經過最佳化，並由`Dynamic Media Process Image Assets`處理元件轉譯為PTIFF轉譯。 |
-| JPEGPagesExport.jsx | 是 | 為每個頁面產生300 ppi JPEG子資產。 JPEG子資產是儲存在InDesign資產下的實際資產。 此外，還會透過`DAM Update Asset`工作流程最佳化並轉換為PTIFF。 |
+| ThumbnailExport.jsx | 是 | 產生300 PPI `thumbnail.jpg`轉譯，該轉譯經過最佳化，並由`Dynamic Media Process Image Assets`處理元件轉換為PTIFF轉譯。 |
+| JPEGPagesExport.jsx | 是 | 為每個頁面產生300 PPI JPEG子資產。 JPEG子資產是儲存在InDesign資產下的實際資產。 此外，還會透過`DAM Update Asset`工作流程最佳化並轉換為PTIFF。 |
 | PDFPagesExport.jsx | 否 | 為每個頁面產生一個PDF子資產。 PDF子資產會依照先前所述進行處理。 由於PDF僅包含單一頁面，因此不會產生任何子資產。 |
 
 ### 設定影像縮圖大小 {#configuring-image-thumbnail-size}
@@ -137,7 +137,7 @@ ExtendScript會在「DAM更新資產」工作流程中，路徑為「媒體擷�
 
 在「動 **[!UICONTROL 態媒體處理影像資產」步驟中]** ，影像伺服器會產生縮圖，此組態與套用至「處理縮圖」步驟的組態無關 **** 。透過「處理縮圖 **[!UICONTROL 」步驟產生縮圖]** ，是建立縮圖的最慢且記憶體最耗用的方式。
 
-縮圖大小定義為下列格式：**[!UICONTROL width:height:center]**，例如&#x200B;*80:80:false*。 寬度和高度會以像素為單位決定縮圖的大小。 中心值為false或true。 如果設為true，表示縮圖影像的大小與設定中指定的大小完全相同。 如果調整大小的影像較小，則會置於縮圖中。
+縮圖大小定義為下列格式：**[!UICONTROL width:height:center]**，例如`80:80:false`。 寬度和高度會以像素為單位決定縮圖的大小。 中心值為false或true。 如果設為true，表示縮圖影像的大小與設定中指定的大小完全相同。 如果調整大小的影像較小，則會置於縮圖中。
 
 >[!NOTE]
 >
@@ -150,26 +150,26 @@ ExtendScript會在「DAM更新資產」工作流程中，路徑為「媒體擷�
 
 
 
-**設定影像縮圖大小**
+**若要設定影像縮圖大小：**
 
-1. 點選&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新資產]** > **[!UICONTROL 編輯]**。
-1. 點選&#x200B;**[!UICONTROL Dynamic Media處理影像資產]**&#x200B;步驟，然後點選&#x200B;**[!UICONTROL 縮圖]**&#x200B;標籤。 視需要變更縮圖大小，然後點選「 **[!UICONTROL 確定]**」。
+1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新資產]** > **[!UICONTROL 編輯]**。
+1. 選取「**[!UICONTROL Dynamic Media處理影像資產]**」步驟，然後選取「**[!UICONTROL 縮圖]**」標籤。 視需要變更縮圖大小，然後選取&#x200B;**[!UICONTROL OK]**。
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. 點選「處 **[!UICONTROL 理縮圖]** 」步驟，然後點選「縮 **[!UICONTROL 圖]** 」標籤。視需要變更縮圖大小，然後點選「 **[!UICONTROL 確定]**」。
+1. 選擇&#x200B;**[!UICONTROL 處理縮圖]**&#x200B;步驟，然後選擇&#x200B;**[!UICONTROL 縮圖]**&#x200B;頁簽。 視需要變更縮圖大小，然後選取&#x200B;**[!UICONTROL OK]**。
 
    >[!NOTE]
    >
    >「處理縮圖」步驟中縮圖引數中 **[!UICONTROL 的值必須與「動態媒體處理影像資產」]** 步驟中的縮圖引數相符 **** 。
 
-1. 點選&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存對工作流程的變更。
+1. 選擇&#x200B;**[!UICONTROL 保存]**&#x200B;以保存對工作流的更改。
 
-### 增加或減少顯示的影像預設集數目 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### 增加或減少顯示的影像預設集數量 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 您建立的影像預設集在您預覽資產時可以動態轉譯。 Experience Manager從&#x200B;**[!UICONTROL 詳細資料檢視>轉譯]**&#x200B;檢視資產時，會顯示各種動態轉譯。 您可以增加或減少顯示的轉譯限制。
 
-**要增加或減少顯示的影像預設集數：**
+**要增加或減少顯示的影像預設集數目，請執行以下操作：**
 
 1. 導覽至CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
 1. 導覽至`/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`處的影像預設集清單節點
@@ -182,11 +182,11 @@ ExtendScript會在「DAM更新資產」工作流程中，路徑為「媒體擷�
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. 在limit屬性中，將數字變更為所需數字，例如`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. 點選「**[!UICONTROL 儲存全部]**」。
+1. 選擇&#x200B;**[!UICONTROL 保存全部]**。
 
 ### 建立影像預設集 {#creating-image-presets}
 
-建立影像預設集可讓您在預覽或發佈時將這些設定套用至任何影像。
+建立影像預設集，以便在預覽或發佈時可一致地套用各個影像的設定。
 
 >[!NOTE]
 >
@@ -200,10 +200,10 @@ ExtendScript會在「DAM更新資產」工作流程中，路徑為「媒體擷�
 
 請參閱[InDesign(INDD)檔案格式](#indesign-indd-file-format)。
 
-**若要建立影像預設集：**
+**要建立影像預設集：**
 
-1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，然後點選&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 影像預設集]**。
-1. 按一下&#x200B;**[!UICONTROL 建立]**。將開啟「**[!UICONTROL 編輯影像預設集]**」窗口。
+1. 在「Experience Manager」中，選擇Experience Manager徽標以訪問全局導航控制台，然後轉至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 影像預設集]**。
+1. 選擇 **[!UICONTROL 建立]**。
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
@@ -211,11 +211,11 @@ ExtendScript會在「DAM更新資產」工作流程中，路徑為「媒體擷�
    >
    >若要讓此影像預設變得自適應，請擦除 **[!UICONTROL 寬度]****[!UICONTROL 和高度欄]** 位中的值，並保留空白。
 
-1. 視需要在「基 **[!UICONTROL 本]** 」和「 **[!UICONTROL 進階]** 」標籤中輸入值，包括名稱。這些選項在「影像預設 [集選項」中概述](#image-preset-options)。預設集會出現在左窗格中，並可與其他資產一起即時使用。
+1. 在&#x200B;**[!UICONTROL 編輯影像預設集]**&#x200B;窗口中，根據需要在&#x200B;**[!UICONTROL Basic]**&#x200B;和&#x200B;**[!UICONTROL Advanced]**&#x200B;頁簽中輸入值，包括名稱。 這些選項在「影像預設 [集選項」中概述](#image-preset-options)。預設集會出現在左窗格中，並可與其他資產一起即時使用。
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 選擇&#x200B;**[!UICONTROL 保存]**。
 
 ### 建立回應式影像預設集 {#creating-a-responsive-image-preset}
 
@@ -243,55 +243,12 @@ ExtendScript會在「DAM更新資產」工作流程中，路徑為「媒體擷�
 
 #### 基本索引標籤選項 {#basic-tab-options}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>欄位</strong></td>
-   <td><strong>說明</strong></td>
-  </tr>
-  <tr>
-   <td><strong>名稱</strong></td>
-   <td>輸入描述性名稱，不含任何空格。 要幫助用戶標識此影像預設集，請在名稱中包括影像大小規範。</td>
-  </tr>
-  <tr>
-   <td><strong>寬度和高度</strong></td>
-   <td>以像素輸入影像傳送的大小。 寬度和高度必須大於0像素。 如果其中一個值為0，則不會建立任何預設集。 如果兩個值皆空白，則會建立回應式影像預設集。</td>
-  </tr>
-  <tr>
-   <td><strong>格式</strong></td>
-   <td><p>從功能表中選擇格式。</p> <p>選擇<strong>JPEG</strong>提供以下其他選項：</p>
-    <ul>
-     <li><strong>品質</strong>  — 控制JPEG壓縮級別。此設定會同時影響檔案大小和影像品質。 JPEG質量比例為1-100。 拖曳滑桿時，比例會顯示。</li>
-     <li><strong>啟用JPG色度下採樣</strong>  — 由於眼睛對高頻顏色資訊的敏感度比高頻亮度低，因此JPEG影像將影像資訊劃分為亮度和顏色分量。當壓縮JPEG影像時，亮度分量以全解析度保持，而顏色分量通過平均一組像素來縮減採樣。 縮減取樣會將資料量減少一半或三分之一，幾乎不會影響感知的品質。 縮減採樣不適用於灰度影像。 此技術可減少對具有高對比度的影像（例如具有重疊文字的影像）有用的壓縮量。</li>
-    </ul>
-    <div>
-      選擇
-     <strong>GIF</strong>或
-     <strong>含alpha</strong>的GIF提供以下額外功能
-     <strong>GIF顏色量化</strong>選項：
-    </div>
-    <ul>
-     <li><strong>類 </strong>型 — 選 <strong>取「適應性」</strong> （預設值）、 <strong>「Web」</strong>或「 <strong>Macintosh」</strong>。如果選擇<strong>Alpha</strong>的GIF，則Macintosh選項不可用。</li>
-     <li><strong>Dither</strong>  — 選取「 <strong></strong> 差 <strong>異」或「關閉」</strong>。</li>
-     <li><strong>顏色數 </strong>量 — 輸入從2到256的數字。</li>
-     <li><strong>顏色清單</strong>  — 輸入逗號分隔的清單。例如，對於白色、灰色和黑色，請輸入000000、888888、ffffff。</li>
-    </ul>
-    <div>
-      選擇
-     <strong>PDF</strong>,
-     <strong>TIFF</strong>，或
-     <strong>含Alpha</strong>的TIFF提供以下額外選項：
-    </div>
-    <ul>
-     <li><strong>壓縮</strong>  — 選取壓縮演算法。PDF的演算法選項為<strong>None</strong>、<strong>Zip</strong>和<strong>Jpeg</strong>;對於TIFF，它們是<strong>None</strong>、<strong>LZW</strong>、<strong>Jpeg</strong>和<strong>Zip</strong>;而Alpha的TIFF為<strong>None</strong>、<strong>LZW</strong>和<strong>Zip</strong>。</li>
-    </ul> <p>選擇<strong>PNG</strong>、<strong>帶Alpha的PNG、</strong>或<strong>EPS</strong>不提供其他選項。</p> </td>
-  </tr>
-  <tr>
-   <td><strong>銳利化</strong></td>
-   <td>選擇<strong>「啟用簡單銳利化」</strong>選項，以便在所有縮放發生後將基本銳利化濾鏡應用到影像。銳利化有助於補償以不同大小顯示影像時可能產生的模糊性。 </td>
-  </tr>
- </tbody>
-</table>
+| 欄位 | 說明 |
+| --- | --- |
+| **名稱** | 輸入描述性名稱，不含任何空格。 要幫助用戶標識此影像預設集，請在名稱中包括影像大小規範。 |
+| **寬度和高度** | 以像素輸入影像傳送的大小。 寬度和高度必須大於0像素。 如果其中一個值為0，則不會建立任何預設集。 如果兩個值皆空白，則會建立回應式影像預設集。 |
+| **格式** | 從功能表中選擇格式。<br>選 **** 擇JPEG提供以下其他選項：<br>·  **品質**  - JPEG品質等級為1-100。拖曳滑桿時，比例會顯示。<br>· **啟用JPG色度下調採樣**  — 由於眼睛對高頻顏色資訊的敏感度比高頻亮度低，因此JPEG影像將影像資訊劃分為亮度和顏色分量。當壓縮JPEG影像時，亮度分量以全解析度保持，而顏色分量通過平均一組像素來縮減採樣。 縮減取樣會將資料量減少一半或三分之一，幾乎不會影響感知的品質。 縮減採樣不適用於灰度影像。 此技術可減少對具有高對比度的影像（例如具有重疊文字的影像）有用的壓縮量。<br><br>選 **** 擇GIF **或GIF並** 搭配使用可提 **供以下額外的GIF色彩** 量化選項：<br>·  **類型**  — 選取 **適用性**  **（預設值）、** Web **或** Macintosh。如果選擇&#x200B;**Alpha**&#x200B;的GIF，則Macintosh選項不可用。<br>·  **Dither**  — 選取「 **** 差 **異」或「關閉」**。<br>· **顏色數**  — 輸入數字2 - 256。<br>· **顏色清單**  — 輸入逗號分隔清單。例如，對於白色、灰色和黑色，請輸入`000000,888888,ffffff`。<br><br>選 **擇PDF**、 **TIFF**&#x200B;或帶 **有Alpha的TIFF提** 供了此額外選項：<br>·  **壓縮**  — 選取壓縮演算法。PDF的演算法選項為&#x200B;**None**、**Zip**&#x200B;和&#x200B;**Jpeg**;對於TIFF，它們是&#x200B;**None**、**LZW**、**Jpeg**&#x200B;和&#x200B;**Zip**;而Alpha的TIFF為&#x200B;**None**、**LZW**&#x200B;和&#x200B;**Zip**。<br><br>選 **擇PNG**、 **使用Alpha**&#x200B;或EPS不 **** 提供其他選項。 |
+| **銳利化** | 選擇「**啟用簡單銳利化」**&#x200B;以在所有縮放發生後將基本銳利化濾鏡應用到影像。 銳利化有助於補償以不同大小顯示影像時可能產生的模糊性。 |
 
 #### 進階索引標籤選項 {#advanced-tab-options}
 
@@ -430,12 +387,12 @@ ExtendScript會在「DAM更新資產」工作流程中，路徑為「媒體擷�
 
 ### 編輯影像預設集 {#modifying-image-presets}
 
-1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，然後點選&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 影像預設集]**。
+1. 在「Experience Manager」中，選擇Experience Manager徽標以訪問全局導航控制台，然後轉至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 影像預設集]**。
 
    ![6_5_imagepreset_editpreset](assets/6_5_imagepreset-editpreset.png)
 
-1. 選取預設集，然後按一下「**[!UICONTROL 編輯]**」。 將開啟「**[!UICONTROL 編輯影像預設集]**」窗口。
-1. 進行更改，然後按一下「保存&#x200B;****」以保存更改，或按一下「取消&#x200B;****」以取消更改。
+1. 選擇預設集，然後選擇&#x200B;**[!UICONTROL Edit]**。 將開啟「**[!UICONTROL 編輯影像預設集]**」窗口。
+1. 進行更改並選擇&#x200B;**[!UICONTROL 保存]**&#x200B;以保存更改，或選擇&#x200B;**[!UICONTROL 取消]**&#x200B;以取消更改。
 
 ### 發佈影像預設集 {#publishing-image-presets}
 
@@ -443,5 +400,6 @@ ExtendScript會在「DAM更新資產」工作流程中，路徑為「媒體擷�
 
 ### 刪除影像預設集 {#deleting-image-presets}
 
-1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，點選或按一下「工具」圖示，並導覽至&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**。
-1. 選取預設集，然後按一下&#x200B;**[!UICONTROL Delete]**。 Dynamic Media會確認您要刪除它。 點選&#x200B;**[!UICONTROL 刪除]**&#x200B;以刪除，或點選&#x200B;**[!UICONTROL 取消]**&#x200B;以中止。
+1. 在Experience Manager中，選擇Experience Manager徽標以訪問全局導航控制台並選擇「工具」表徵圖。
+1. 導覽至「**[!UICONTROL 資產]** > **[!UICONTROL 影像預設集]**」。
+1. 選取預設集，然後選取&#x200B;**[!UICONTROL Delete]**。 Dynamic Media會確認您要刪除它。 選擇&#x200B;**[!UICONTROL Delete]**&#x200B;以刪除，或選擇&#x200B;**[!UICONTROL Cancel]**&#x200B;以返回影像預設集。
