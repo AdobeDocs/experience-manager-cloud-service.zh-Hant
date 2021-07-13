@@ -1,17 +1,17 @@
 ---
-title: 傳送Dynamic Media資產
+title: 傳送Dynamic Media Assets
 description: 了解如何傳送Dynamic Media資產。
 feature: 資產管理
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# 傳送Dynamic Media資產{#delivering-dynamic-media-assets}
+# 傳送Dynamic Media Assets{#delivering-dynamic-media-assets}
 
 如何傳送Dynamic Media資產（包括視訊和影像）取決於網站的實作方式。
 
@@ -32,9 +32,9 @@ ht-degree: 1%
 
 * [將Dynamic Media Assets新增至網頁](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [將視訊或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)
-* [在 Dynamic Media 中啟用超連結保護](/help/assets/dynamic-media/hotlink-protection.md)
+* [在Dynamic Media中啟用快速連結保護](/help/assets/dynamic-media/hotlink-protection.md)
 * [將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-* [為回應式網站傳送最佳化影像](/help/assets/dynamic-media/responsive-site.md)
+* [為回應式網站提供最佳化的影像](/help/assets/dynamic-media/responsive-site.md)
 * [HTTP2內容傳送](/help/assets/dynamic-media/http2faq.md)
 * [透過Dynamic Media使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 * [透過Dynamic Media Classic使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
