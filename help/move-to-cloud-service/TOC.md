@@ -5,10 +5,10 @@ breadcrumb-title: 移轉指南
 user-guide-description: 了解轉換至雲端服務的過程。
 feature: 部署
 role: Architect, Developer
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 54%
+source-wordcount: '127'
+ht-degree: 53%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 54%
 + 轉換過程中的階段 {#phases}
    + [準備](/help/move-to-cloud-service/migration-readiness.md)
    + [實施](/help/move-to-cloud-service/migration-implementation.md)
+   + [上線](/help/move-to-cloud-service/migration-go-live.md)
    + [上線後](/help/move-to-cloud-service/migration-post-go-live.md)
 + Cloud Acceleration Manager {#cloud-acceleration-manager}
    + Cloud Acceleration Manager {#introduction-cam}簡介
