@@ -1,17 +1,17 @@
 ---
-title: 套用 Dynamic Media 影像預設集
+title: 套用Dynamic Media影像預設集
 description: 了解如何在Dynamic Media中套用影像預設集。
 feature: 影像預設集，檢視器，轉譯
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 
-# 套用 Dynamic Media 影像預設集 {#applying-image-presets}
+# 套用Dynamic Media影像預設集 {#applying-image-presets}
 
 「影像預設集」可讓資產以動態方式傳送不同大小、不同格式的影像，或以其他動態產生的影像屬性。 在導出時，可以選擇預設集，以按照管理員列出的規格重新格式化影像。
 
@@ -27,7 +27,7 @@ ht-degree: 5%
 
 **若要套用Dynamic Media影像預設集：**
 
-1. 開啟資產，在左側導軌中，點選下拉式清單，然後點選「**[!UICONTROL 轉譯]**」。
+1. 開啟資產，然後在左側邊欄中選取下拉式清單，然後選取&#x200B;**[!UICONTROL 轉譯]**。
 
    >[!NOTE]
    >
@@ -42,7 +42,7 @@ ht-degree: 5%
 1. 執行下列任一操作：
 
    * 若要預覽影像預設集，請選取動態轉譯。
-   * 若要顯示快顯視窗，請點選&#x200B;**[!UICONTROL URL]**、**[!UICONTROL Embed]**&#x200B;或&#x200B;**[!UICONTROL RESS]**。
+   * 要顯示彈出窗口，請選擇&#x200B;**[!UICONTROL URL]**、**[!UICONTROL Embed]**&#x200B;或&#x200B;**[!UICONTROL RESS]**。
 
    >[!NOTE]
    >
