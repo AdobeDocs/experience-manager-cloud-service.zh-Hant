@@ -1,10 +1,10 @@
 ---
 title: Cloud Acceleration Manager的上線階段
 description: 本頁概述Cloud Acceleration Manager的上線階段。
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 2%
+source-wordcount: '157'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ GoLive階段包含[上線](#go-live)。
 ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->如需詳細資訊，請參閱在Cloud Acceleration Manager中建立及管理專案。
+>請參考[在Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project)中建立和管理專案以深入了解。
 
 
 ## 使用「上線活動」卡 {#go-live}
