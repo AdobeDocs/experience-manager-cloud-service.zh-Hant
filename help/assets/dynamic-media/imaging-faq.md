@@ -4,9 +4,9 @@ description: 了解Adobe Sensei AI的智慧型影像處理如何套用每位使�
 feature: 資產管理，轉譯
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2639'
 ht-degree: 1%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 1%
 * 可使用`bfc` URL參數關閉智慧影像。
 * 獨立於TTL（存留時間）。 過去，智慧型影像處理必須具備至少12小時的TTL才能運作。
 * 之前，原始和衍生影像都會進行快取，而使快取失效需要兩步驟。 在最新的智慧型影像處理中，只會快取衍生產品，進而允許執行單步快取失效程式。
-* 在規則集中使用自訂標頭的客戶將受益於最新的智慧型影像處理，因為這些標頭不會遭到封鎖，這與舊版的智慧型影像處理不同。 例如，[新增自訂標頭值至影像回應|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建議的「計時允許來源」、「X-Robot」。
+* 在規則集中使用自訂標頭的客戶將受益於最新的智慧型影像處理，因為這些標頭不會遭到封鎖，這與舊版的智慧型影像處理不同。 例如，[將自訂標頭值新增至影像回應|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建議的「計時允許來源」、「X-Robot」。
 
 ## 是否存在與智慧映像相關的許可成本？ {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -174,7 +174,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶或帳戶。
 
-點選&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**。 查找標籤為&#x200B;**[!UICONTROL 已發佈伺服器名稱]**&#x200B;的欄位。 如果您目前使用一般網域，可以要求移至您自己的自訂網域。 提交技術支援票證時，提出此轉換請求。
+前往&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。 查找標籤為&#x200B;**[!UICONTROL 已發佈伺服器名稱]**&#x200B;的欄位。 如果您目前使用一般網域，可以要求移至您自己的自訂網域。 提交技術支援票證時，提出此轉換請求。
 
 使用Dynamic Media授權，您的第一個自訂網域不需額外付費。
 
@@ -200,7 +200,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
       若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶或帳戶。
 
-      按一下「**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**」。
+      前往&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。
 
       查找標籤為&#x200B;**[!UICONTROL 已發佈伺服器名稱]**&#x200B;的欄位。
    1. 確認您是透過Adobe使用CDN，而非以直接關係進行管理。
@@ -208,7 +208,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
       若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶或帳戶。
 
-      按一下「**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**」。
+      前往&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。
 
       查找標籤為&#x200B;**[!UICONTROL 已發佈伺服器名稱]**&#x200B;的欄位。 如果您目前使用一般Dynamic Media Classic網域，可以請求移轉至您自己的自訂網域，作為此轉變的一部分。
    1. 指出是否希望它透過HTTP/2運作。
@@ -219,7 +219,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 1. 客戶服務完成後，會通知您。
 1. 為最大程度提升智慧型影像處理的效能，Adobe建議將存留時間(TTL)設為24小時或更長。 TTL會定義CDN快取資產的時間長度。 要更改此設定：
 
-   1. 如果您使用Dynamic Media Classic，請按一下「**[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**」。 將&#x200B;**[!UICONTROL 預設客戶端快取時間設定為「Live]** 」值24或更長。
+   1. 如果您使用Dynamic Media Classic，請前往「**[!UICONTROL Setup]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 發佈設定]** > **[!UICONTROL 影像伺服器]**」。 將&#x200B;**[!UICONTROL 預設客戶端快取時間設定為「Live]** 」值24或更長。
    1. 如果您使用Dynamic Media，請依照[這些指示](config-dm.md)操作。 將&#x200B;**[!UICONTROL 過期]**&#x200B;值設定24小時或更久。
 
 ## 何時可以使用智慧影像處理啟用帳戶？ {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
@@ -239,7 +239,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 ## 如何驗證智慧映像是否正常工作？{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. 使用智慧型影像處理設定帳戶後，請在瀏覽器上載入Dynamic Media Classic或Adobe Experience Manager - Dynamic Media影像URL。
-1. 在瀏覽器中，按一下「**[!UICONTROL 檢視]** > **[!UICONTROL 開發人員]** > **[!UICONTROL 開發人員工具]**」，開啟Chrome開發人員窗格。 或者，選擇您選擇的任何瀏覽器開發人員工具。
+1. 開啟Chrome開發人員窗格，方法是前往瀏覽器中的&#x200B;**[!UICONTROL 檢視]** > **[!UICONTROL 開發人員]** > **[!UICONTROL 開發人員工具]**。 或者，選擇您選擇的任何瀏覽器開發人員工具。
 
 1. 開啟開發人員工具時，請確定已停用快取。
 
