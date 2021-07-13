@@ -4,10 +4,10 @@ description: 了解如何建立包含遮色片銳利化設定、智慧型裁切�
 feature: 資產管理，影像設定檔，轉譯
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 8%
+source-wordcount: '2711'
+ht-degree: 7%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 8%
   <tr>
    <td>智慧型裁切</td>
    <td>根據影像的視覺焦點來大量裁切影像。</td>
-   <td><p>智慧型裁切運用Adobe Sensei中人工智慧的強大功能，大量快速自動裁切影像。 智慧型裁切功能會自動偵測任何影像中的焦點並裁切至焦點，以取得預期的興趣點（不論螢幕大小）。</p> <p>若要使用智慧型裁切，請從「裁切選項」下拉式清單中選取「<strong>智慧型裁切</strong>」，然後在「回應式影像裁切」的右側啟用（開啟）功能。</p> <p>預設斷點大小（大、中、小）涵蓋移動和平板電腦設備、台式機和橫幅上使用的大多數影像的全部大小。 如果需要，可以編輯「大」、「中」和「小」的預設名稱。</p> <p>要添加更多斷點，請按一下「添加裁切</strong>」；若要刪除裁切，請按一下垃圾桶圖示。<strong></strong></p> </td>
+   <td><p>智慧型裁切運用Adobe Sensei中人工智慧的強大功能，大量快速自動裁切影像。 智慧型裁切功能會自動偵測任何影像中的焦點並裁切至焦點，以取得預期的興趣點（不論螢幕大小）。</p> <p>若要使用智慧型裁切，請從「裁切選項」下拉式清單中選取「<strong>智慧型裁切</strong>」，然後在「回應式影像裁切」的右側啟用（開啟）功能。</p> <p>預設斷點大小（大、中、小）涵蓋移動和平板電腦設備、台式機和橫幅上使用的大多數影像的全部大小。 如果需要，可以編輯「大」、「中」和「小」的預設名稱。</p> <p>要添加更多斷點，請選擇<strong>添加裁切</strong>;若要刪除裁切，請選取垃圾桶圖示。</p> </td>
   </tr>
   <tr>
    <td>顏色及影像樣本</td>
@@ -106,8 +106,8 @@ ht-degree: 8%
 
 **若要建立Dynamic Media影像設定檔：**
 
-1. 點選Adobe Experience Manager標誌，並導覽至「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 影像描述檔]**」。
-1. 若要新增影像描述檔，請點選&#x200B;**[!UICONTROL Create]**。
+1. 選取Adobe Experience Manager標誌，並導覽至&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**。
+1. 若要新增影像設定檔，請選取&#x200B;**[!UICONTROL Create]**。
 1. 輸入描述檔名稱和值，以用於遮色片、裁切或色票，或兩者。
 
    提示：使用符合其預定用途的設定檔名稱。 例如，假設您要建立僅產生色票的設定檔。 也就是說，智慧型裁切已停用（關閉），而顏色和影像色票已啟用（開啟）。 在這種情況下，您可以使用設定檔名稱「智慧色票」。
@@ -116,11 +116,11 @@ ht-degree: 8%
 
    ![農作物](assets/crop.png)
 
-1. 點選&#x200B;**[!UICONTROL 儲存]**。 新建立的配置檔案將顯示在可用配置檔案清單中。
+1. 選擇&#x200B;**[!UICONTROL 保存]**。 新建立的配置檔案將顯示在可用配置檔案清單中。
 
 ## 編輯或刪除Dynamic Media影像設定檔 {#editing-or-deleting-image-profiles}
 
-1. 點選Experience Manager標誌，並導覽至「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 影像描述檔]**」。
+1. 選取Experience Manager標誌，並導覽至&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**。
 1. 選擇要編輯或刪除的影像配置檔案。 要編輯它，請選擇&#x200B;**[!UICONTROL 編輯影像處理配置檔案]**。 要刪除它，請選擇&#x200B;**[!UICONTROL 刪除影像處理配置檔案]**。
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
@@ -139,7 +139,7 @@ ht-degree: 8%
 
 您可以將影像設定檔套用至特定資料夾，或全域套用至所有資產。
 
-您可以重新處理資料夾中的資產，該資料夾中已有您後來變更的現有影像設定檔。 請參閱在編輯資料夾的處理設定檔](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)後，重新處理資料夾中的資產。[
+您可以重新處理資料夾中的資產，該資料夾中已有您後來變更的現有影像設定檔。 請參閱[編輯資料夾的處理設定檔後，重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
 ### 將Dynamic Media影像設定檔套用至特定資料夾 {#applying-image-profiles-to-specific-folders}
 
@@ -147,22 +147,22 @@ ht-degree: 8%
 
 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
-若資料夾中已有您之後已變更的現有視訊設定檔，您可以重新處理該資料夾中的資產。 請參閱在編輯資料夾的處理設定檔](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)後，重新處理資料夾中的資產。[
+若資料夾中已有您之後已變更的現有視訊設定檔，您可以重新處理該資料夾中的資產。 請參閱[編輯資料夾的處理設定檔後，重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
-#### 從設定檔使用者介面將Dynamic Media影像設定檔套用至資料夾 {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### 將Dynamic Media影像設定檔套用至設定檔使用者介面的資料夾 {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. 點選Experience Manager標誌，並導覽至「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 影像描述檔]**」。
+1. 選取Experience Manager標誌，並導覽至&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**。
 1. 選擇要應用於資料夾或多個資料夾的影像配置檔案。
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. 點選「**[!UICONTROL 將處理描述檔套用至資料夾]**」，然後選取您要用來接收新上傳資產的資料夾或多個資料夾，並點選/按一下「**[!UICONTROL 套用]**」。 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+1. 選取&#x200B;**[!UICONTROL 將處理設定檔套用至資料夾]**，並選取您要用來接收新上傳資產的資料夾或多個資料夾，然後選取&#x200B;**[!UICONTROL 套用]**。 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
 #### 從屬性將Dynamic Media影像設定檔套用至資料夾 {#applying-image-profiles-to-folders-from-properties}
 
-1. 點選Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用影像描述檔的資料夾。
-1. 在資料夾中，點選核取標籤以選取，然後點選&#x200B;**[!UICONTROL 屬性]**。
-1. 點選「影 **[!UICONTROL 像描述檔]** 」標籤。從「描 **[!UICONTROL 述檔名稱]** 」下拉式清單中，選取描述檔，然後點選「 **[!UICONTROL 儲存並關閉」]**。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+1. 選取Experience Manager標誌，並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用影像設定檔的資料夾。
+1. 在資料夾中，選擇複選標籤以選擇它，然後選擇&#x200B;**[!UICONTROL 屬性]**。
+1. 選擇&#x200B;**[!UICONTROL Image Profiles]**&#x200B;頁簽。 從&#x200B;**[!UICONTROL 設定檔名稱]**&#x200B;下拉式清單中，選取設定檔，然後選取&#x200B;**[!UICONTROL 儲存並關閉]**。 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -170,19 +170,19 @@ ht-degree: 8%
 
 除了將設定檔套用至資料夾之外，您也可以全域套用一個設定檔。 任何資料夾中上傳至「Experience Manager資產」的任何內容皆已套用選取的設定檔。
 
-若資料夾中已有您之後已變更的現有視訊設定檔，您可以重新處理該資料夾中的資產。 請參閱在編輯資料夾的處理設定檔](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)後，重新處理資料夾中的資產。[
+若資料夾中已有您之後已變更的現有視訊設定檔，您可以重新處理該資料夾中的資產。 請參閱[編輯資料夾的處理設定檔後，重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。
 
 **若要全域套用Dynamic Media影像設定檔：**
 
 1. 執行下列任一操作：
 
-   * 導覽至`https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`並套用適當的設定檔，然後點選&#x200B;**[!UICONTROL Save]**。
+   * 導覽至`https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`並套用適當的設定檔，然後選取&#x200B;**[!UICONTROL 儲存]**。
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * 導覽至CRXDE Lite至下列節點：`/content/dam/jcr:content`。
 
-      新增屬性`imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>`，然後點選&#x200B;**[!UICONTROL 「儲存全部」]**。
+      添加屬性`imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>`並選擇&#x200B;**[!UICONTROL 保存全部]**。
 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
@@ -198,20 +198,20 @@ ht-degree: 8%
 
 **要編輯單個影像的智慧型裁切或智慧型色票：**
 
-1. 點選Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至套用智慧型裁切或智慧型色票影像描述檔的資料夾。
-1. 若要開啟其內容，請點選資料夾。
-1. 點選您要調整其智慧型裁切或智慧型色票的影像。
-1. 在工具列中，點選&#x200B;**[!UICONTROL 智慧型裁切]**。
+1. 選取Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至套用智慧型裁切或智慧型色票影像描述檔的資料夾。
+1. 要開啟其內容，請選擇資料夾。
+1. 選擇要調整其智慧裁切或智慧色票的影像。
+1. 在工具欄中，選擇&#x200B;**[!UICONTROL 智慧裁切]**。
 
 1. 執行下列任一操作：
 
    * 在頁面的右上角附近，向左或向右拖動滑桿，分別增加或減少影像顯示。
    * 在影像上，拖動角手柄以調整裁切或色板的可視區域的大小。
    * 在影像上，將方塊/色票拖曳至新位置。 只能編輯影像色板；色票為靜態。
-   * 在影像上方，點選&#x200B;**[!UICONTROL 還原]**&#x200B;以還原所有編輯內容並還原原始裁切或色票。
+   * 在影像上方，選取&#x200B;**[!UICONTROL 還原]**&#x200B;以還原所有編輯內容並還原原始裁切或色票。
    * 使用鍵盤箭頭鍵裁切幀大小，或重新定位影像，或兩者。
 
-1. 在頁面的右上角，點選&#x200B;**[!UICONTROL 儲存]**，然後點選&#x200B;**[!UICONTROL 關閉]**&#x200B;以返回資產的資料夾。
+1. 在頁面的右上角附近，選取&#x200B;**[!UICONTROL 儲存]**，然後選取&#x200B;**[!UICONTROL 關閉]**&#x200B;以返回資產資料夾。
 
 ## 編輯多個影像的智慧型裁切或智慧型色票 {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
@@ -223,8 +223,8 @@ ht-degree: 8%
 
 **要編輯多個影像的智慧型裁切或智慧型色票：**
 
-1. 點選Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至套用智慧型裁切或智慧型色票影像描述檔的資料夾。
-1. 在資料夾中，點選&#x200B;**[!UICONTROL 更多動作]**(...)圖示，然後點選&#x200B;**[!UICONTROL 智慧型裁切]**。
+1. 選取Experience Manager標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至套用智慧型裁切或智慧型色票影像描述檔的資料夾。
+1. 在資料夾中，選擇&#x200B;**[!UICONTROL 更多操作]**(...)表徵圖，然後選擇&#x200B;**[!UICONTROL 智慧裁切]**。
 
 1. 在&#x200B;**[!UICONTROL 編輯智慧作物]**&#x200B;頁面上，執行下列任一操作：
 
@@ -243,26 +243,26 @@ ht-degree: 8%
    * 調整智慧型裁切框的大小。 執行下列任一操作：
 
       * 如果影像具有智慧型裁切或僅智慧型色票，請在影像上拖動裁切框的角手柄。 調整裁切的可視區域的大小。
-      * 如果影像同時具有智慧型裁切和智慧型色票，請在影像上拖動裁切框的角手柄。 調整裁切的可視區域的大小。 或者，點選影像下方的智慧色板（顏色色板為靜態色板），然後拖曳裁切方塊的角部控點。 調整色板的可視區域的大小。
+      * 如果影像同時具有智慧型裁切和智慧型色票，請在影像上拖動裁切框的角手柄。 調整裁切的可視區域的大小。 或者，選取影像下方的智慧色板（顏色色板為靜態色板），然後拖動裁切框的角手柄。 調整色板的可視區域的大小。
 
       ![調整影像的智慧型裁切大小](assets/edit_smart_crops-resize.png)。
 
    * 移動智慧型裁切框。 執行下列任一操作：
 
       * 如果影像具有智慧型裁切或僅智慧型色票，請在影像上將裁切框拖曳至新位置。
-      * 如果影像同時具有智慧型裁切和智慧型色票，請在影像上將智慧型裁切方塊拖曳至新位置。 或者，點選或按一下影像下方的智慧色板（色板為靜態），然後將智慧色板裁切框拖曳至新位置。
+      * 如果影像同時具有智慧型裁切和智慧型色票，請在影像上將智慧型裁切方塊拖曳至新位置。 或者，選取影像下方的智慧型色板（色板為靜態色板），然後將智慧型色板裁切框拖到新位置。
 
       ![edit_smart_crobs-move](assets/edit_smart_crops-move.png)
 
    * 還原所有編輯內容並還原原始的智慧型裁切或智慧型色票（僅適用於目前的編輯工作階段）。
 
-      點選影像上方的&#x200B;**[!UICONTROL 還原]**。
+      在影像上方選擇&#x200B;**[!UICONTROL 還原]**。
 
       ![edit_smart_robs_revert](assets/edit_smart_crops-revert.png)
 
 
 
-1. 在頁面的右上角，點選&#x200B;**[!UICONTROL 儲存]**，然後點選&#x200B;**[!UICONTROL 關閉]**&#x200B;以返回資產的資料夾。
+1. 在頁面的右上角附近，選取&#x200B;**[!UICONTROL 儲存]**，然後選取&#x200B;**[!UICONTROL 關閉]**&#x200B;以返回資產資料夾。
 
 ## 從資料夾中刪除映像配置檔案 {#removing-an-image-profile-from-folders}
 
@@ -270,19 +270,19 @@ ht-degree: 8%
 
 您可以從&#x200B;**[!UICONTROL Tools]**&#x200B;菜單內的資料夾或在資料夾內的&#x200B;**[!UICONTROL Properties]**&#x200B;中刪除影像配置檔案。
 
-### 透過Profiles使用者介面從資料夾中移除Dynamic Media影像設定檔 {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### 透過Profiles使用者介面，從資料夾中移除Dynamic Media影像設定檔 {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. 點選Experience Manager標誌，並導覽至「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 影像描述檔]**」。
+1. 選取Experience Manager標誌，並導覽至&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**。
 1. 選擇要從資料夾或多個資料夾中刪除的影像配置檔案。
-1. 點選「**[!UICONTROL 從資料夾移除處理描述檔]**」，然後選取您要用來從中移除描述檔的資料夾或多個資料夾，並點選「**[!UICONTROL 移除]**」。
+1. 選擇&#x200B;**[!UICONTROL 從資料夾中刪除處理配置檔案]**&#x200B;並選擇要從中刪除配置檔案的資料夾或多個資料夾，然後選擇&#x200B;**[!UICONTROL 刪除]**。
 
    您可以確認「影像描述檔」不再套用至資料夾，因為名稱不再出現在資料夾名稱下方。
 
-### 透過屬性從資料夾移除Dynamic Media影像設定檔 {#removing-image-profiles-from-folders-via-properties}
+### 透過屬性從資料夾中移除Dynamic Media影像設定檔 {#removing-image-profiles-from-folders-via-properties}
 
-1. 點選Experience Manager標誌並導覽&#x200B;**[!UICONTROL Assets]**，然後導覽至您要移除影像描述檔的資料夾。
-1. 在資料夾中，點選核取標籤以選取，然後點選&#x200B;**[!UICONTROL 屬性]**。
+1. 選取Experience Manager標誌並導覽&#x200B;**[!UICONTROL Assets]**，然後導覽至您要移除影像設定檔的資料夾。
+1. 在資料夾中，選擇複選標籤以選擇它，然後選擇&#x200B;**[!UICONTROL 屬性]**。
 1. 選擇&#x200B;**[!UICONTROL Image Profiles]**&#x200B;頁簽。
-1. 從「**[!UICONTROL 描述檔名稱]**」下拉式清單中，選取「**[!UICONTROL 無]**」，然後點選「**[!UICONTROL 儲存並關閉]**」。
+1. 從&#x200B;**[!UICONTROL 設定檔名稱]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 無]**，然後選取&#x200B;**[!UICONTROL 儲存並關閉]**。
 
    已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
