@@ -1,12 +1,9 @@
 ---
 title: 使用Cloud Acceleration Manager的優點
 description: 本頁重點說明使用Cloud Acceleration Manager的主要優點。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -14,14 +11,26 @@ ht-degree: 0%
 
 # 使用Cloud Acceleration Manager的優點 {#benefits-cam}
 
-Cloud Acceleration Manager是免費的雲端應用程式，可評估客戶目前的Adobe Experience Manager(AEM)實作，並協助依照Adobe建議的移轉方法，以Cloud Service的形式管理其AEM歷程。
+有了廣泛的業務需求和自定義項，遷移到雲可能是一個相關項目。 Cloud Acceleration Manager(CAM)為您的團隊提供引導式體驗，並提供Adobe建議的最佳實務和方法，協助您的團隊規劃、實作和上線充滿信心。
 
 使用Cloud Acceleration Manager的主要優點如下：
 
-* 以易於使用的格式提供評估。
-* 引導和管理轉變歷程。
-* 提供最佳實務、相關說明和工具存取權，將移轉時間減至最少。
+1. 更好、更明智地規劃：
+
+   * 透過簡單易懂的結果視覺呈現來簡化目前例項的評估。
+
+   * 評估並了解以具有詳細自訂報表的AEM形式移轉至Analytics的Cloud Service的預計複雜度。
+
+1. 通過端到端指導來簡化遷移：
+
+   * 使用內建的智慧管理移轉歷程，並提供相關的說明。
+
+   * 檢閱並識別AEM中不支援為Cloud Service或需要重構的區域，以確保相容性。
+
+1. 優化工作：
+
+   存取Adobe建議的最佳實務和自動化工具，以協助加速移轉工作，並存取工具，將移轉時間減到最少。
 
 ## 下一步 {#whats-next}
 
-了解Cloud Acceleration Manager的概念後，您就可以開始使用Cloud Acceleration Manager了。
+了解Cloud Acceleration Manager的概念後，您現在就可以使用和[開始使用Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en)了。
