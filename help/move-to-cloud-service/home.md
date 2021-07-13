@@ -2,10 +2,10 @@
 title: '轉移至 AEM as a Cloud Service '
 description: 將 Adobe Experience Manager as a Cloud Service 轉移至 AEM as a Cloud Service 的自助資源與文件連結
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 8737463905ef604e7d42280e25fb1f48ed87c9f3
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 59%
+source-wordcount: '703'
+ht-degree: 58%
 
 ---
 
@@ -29,7 +29,7 @@ AEM as aCloud Service為Experience Manager資產、Forms和Screens提供可擴�
 
 * [準備](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-readiness.html?lang=en)
 * [實施](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-implementation.html?lang=en)
-* 上線
+* [上線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-go-live.html?lang=en)
 * [上線後](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-post-go-live.html?lang=en)
 
 為了順利成功轉換，您應該確保有正確規劃，並遵守本指南所綜覽的最佳作法。
