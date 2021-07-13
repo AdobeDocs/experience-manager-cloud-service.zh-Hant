@@ -1,10 +1,10 @@
 ---
 title: Cloud Acceleration Manager的上線階段
 description: 本頁概述Cloud Acceleration Manager的上線階段。
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 22ee20401a8c576ae56547cf678b9f5c0d69362d
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 1%
+source-wordcount: '150'
+ht-degree: 2%
 
 ---
 
@@ -12,8 +12,6 @@ ht-degree: 1%
 # Cloud Acceleration Manager的上線階段 {#golive-phase-cam}
 
 「上線」卡提供所有相關內容，其中著重說明準備、要採取的具體動作，並充分考慮，以確保以AEM形式順利成功上線。
-
-GoLive階段包含[上線](#go-live)。
 
 按一下您的專案卡片以開啟專案登錄頁面，並導覽至&#x200B;**上線**&#x200B;區段，如下圖所示。
 
@@ -31,6 +29,6 @@ GoLive階段包含[上線](#go-live)。
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
 
-1. 隨即顯示內容輪播，其中包含移轉歷程這個階段的相關資訊。
+1. 內容輪播會顯示移轉歷程這個階段的相關資訊。
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-2.png)
