@@ -4,16 +4,16 @@ description: 了解如何在Dynamic Media中建立和管理檢視器預設集。
 feature: 檢視器預設集，檢視器
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
 workflow-type: tm+mt
-source-wordcount: '4236'
-ht-degree: 12%
+source-wordcount: '4233'
+ht-degree: 9%
 
 ---
 
 # 管理檢視器預設集{#managing-viewer-presets}
 
-「檢視器預設集」是一組設定，可決定使用者在電腦畫面和行動裝置上檢視多媒體資產的方式。 如果您是管理員，可以建立檢視器預設集。 設定適用於檢視器組態選項的陣列。 例如，您可以變更檢視器的顯示大小或縮放行為。
+檢視器預設集是一組設定，可決定使用者在電腦畫面和行動裝置上檢視多媒體資產的方式。 如果您是管理員，可以建立檢視器預設集。 設定適用於檢視器組態選項的陣列。 例如，您可以變更檢視器的顯示大小或縮放行為。
 
 <!-- OBSOLETE SDK withdrawn from public view. Available internally only at `http://staging.scene7.com/s7sdk/3.8/docs/jsdoc/symbols/_s7sdk.html` 
 
@@ -40,13 +40,13 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 ## 管理檢視器預設集 {#managing-viewer-presets-1}
 
-您可以點選「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」，在Adobe Experience Manager中新增、編輯、刪除、發佈、取消發佈和預覽檢視器預設集。
+您可以導覽至&#x200B;**[!UICONTROL Tools]**（槌子圖示）> **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**，在Adobe Experience Manager中新增、編輯、刪除、發佈、取消發佈和預覽檢視器預設集。
 
 ![6_5_tools-assets-viewersets](assets/6_5_tools-assets-viewerpresets.png)
 
 >[!NOTE]
 >
->依預設，當您在資產的詳細資訊檢視中選取「檢視器」時，系統會顯示15個檢視器預設集。 您可以提高此限制。請參 [閱增加顯示的檢視器預設集數目](#increasing-the-number-of-viewer-presets-that-display)。
+>依預設，當您在資產的詳細資訊檢視中選取「檢視器」時，系統會顯示15個檢視器預設集。 您可以提高此限制。請參閱[增加顯示](#increasing-the-number-of-viewer-presets-that-display)的檢視器預設集數目。
 
 ### 回應式設計網頁的檢視器支援 {#viewer-support-for-responsive-designed-web-pages}
 
@@ -68,7 +68,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
 * Apple iPad
 * Android™智慧手機
 * Android™平板電腦
-* 對於視頻，為[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)提供了額外的MP4播放支援。
+* 對於視頻，為[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))提供了額外的MP4播放支援。
 
 ### 檢視器預設集的多媒體類型 {#rich-media-types-for-viewer-presets}
 
@@ -78,7 +78,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
  <tbody>
   <tr>
    <td><strong>傳送集</strong><br /> </td>
-   <td><p>熱點（或影像映射）或兩者都添加到一系列兩個或多個影像中。 客戶可以向左或向右平移影像，然後按一下影像上的熱點以取得詳細資訊，或直接從網站的登陸、類別或首頁購買。</p> </td>
+   <td><p>熱點（或影像映射）或兩者都添加到一系列兩個或多個影像中。 客戶可以向左或向右平移影像，然後在影像上選取熱點以取得詳細資訊，或直接從網站的登陸、類別或首頁購買。</p> </td>
   </tr>
     <tr>
    <td><strong>維度</strong><br /> </td>
@@ -94,15 +94,15 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
   </tr>
   <tr>
    <td><strong>影像集</strong></td>
-   <td>在「影像集」檢視器中，使用者可以按一下縮圖影像，以查看項目的不同檢視或顏色變化。 此檢視器也提供縮放工具，供您仔細檢查影像。</td>
+   <td>在「影像集」檢視器中，使用者可以選取縮圖影像，以查看項目的不同檢視或顏色變化。 此檢視器也提供縮放工具，供您仔細檢查影像。</td>
   </tr>
   <tr>
    <td><strong>互動影像</strong></td>
-   <td>熱點被添加到影像的某些部分，然後客戶可以按一下這些部分以獲取更多詳細資訊或直接從網站的登陸、類別或首頁購買。</td>
+   <td>熱點被添加到影像的某些部分，然後客戶可以選擇這些部分以獲取更多詳細資訊或直接從網站的登錄、類別或首頁購買。</td>
   </tr>
   <tr>
    <td><strong>互動視訊</strong></td>
-   <td>縮圖會新增至影片中的時間軸區段，客戶可以按一下該區段以取得詳細資訊，或直接從網站的登陸、類別或首頁購買。</td>
+   <td>縮圖會新增至影片中的時間軸區段，客戶可以選取該區段以取得詳細資訊，或直接從網站的登陸、類別或首頁購買。</td>
   </tr>
   <tr>
    <td><strong>混合媒體</strong></td>
@@ -142,7 +142,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
   </tr>
   <tr>
    <td><strong>縮放</strong></td>
-   <td>可讓使用者按一下區域來放大。 使用者可以按一下控制項來放大、縮小，以及將影像重設為其預設大小。</td>
+   <td>讓使用者透過選取區域來放大。 使用者可以選取控制項來放大、縮小，以及將影像重設為其預設大小。</td>
   </tr>
  </tbody>
 </table>
@@ -369,9 +369,9 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
 
 ## 增加顯示的檢視器預設集數目 {#increasing-the-number-of-viewer-presets-that-display}
 
-Experience Manager從&#x200B;**[!UICONTROL 「詳細檢視」>「檢視器」]**&#x200B;檢視資產時，會顯示各種檢視器預設集。 您可以增加或減少顯示的檢視器數量。
+Experience Manager從&#x200B;**[!UICONTROL Detail View]** > **[!UICONTROL Viewers]**&#x200B;檢視資產時，會顯示各種檢視器預設集。 您可以增加或減少顯示的檢視器數量。
 
-**要增加顯示的「查看器預設集」數量：**
+**要增加顯示的查看器預設數：**
 
 1. 導覽至CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
 1. 導覽至`/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`處的檢視器預設集清單節點
@@ -384,7 +384,7 @@ Experience Manager從&#x200B;**[!UICONTROL 「詳細檢視」>「檢視器」]**
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
 1. 在limit屬性中，將數字變更為所需數字，例如`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. 點選「**[!UICONTROL 儲存全部]**」。
+1. 選擇&#x200B;**[!UICONTROL 保存全部]**。
 
 ## 建立檢視器預設集 {#creating-a-new-viewer-preset}
 
@@ -398,46 +398,46 @@ Experience Manager從&#x200B;**[!UICONTROL 「詳細檢視」>「檢視器」]**
 
 請參閱[建立轉盤橫幅檢視器預設集的特殊考量](#special-considerations-for-creating-a-carousel-banner-viewer-preset)。
 
-**若要建立檢視器預設集：**
+**要建立查看器預設集：**
 
-1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
+1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，前往&#x200B;**[!UICONTROL Tools]**（槌子圖示）> **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**。
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
-1. 在「Viewer Presets（查看器預設集）」頁面的工具欄上，點選&#x200B;**[!UICONTROL Create]**。
-1. 在「**[!UICONTROL 新建查看器預設集]**」對話框的「預設集名稱&#x200B;]**」欄位中，輸入新預設集的名稱。**[!UICONTROL &#x200B;請謹慎選擇名稱——在您點選「建立」後，這些名稱就無法 **[!UICONTROL 編輯]**。
+1. 在「查看器預設集」頁的工具欄上，選擇&#x200B;**[!UICONTROL Create]**。
+1. 在「**[!UICONTROL 新建查看器預設集]**」對話框的「預設集名稱&#x200B;]**」欄位中，輸入新預設集的名稱。**[!UICONTROL &#x200B;請謹慎選擇名稱 — 在選擇&#x200B;**[!UICONTROL Create]**&#x200B;後，這些名稱將無法編輯。
 
    稍後在這些步驟中儲存預設時，名稱會出現在「預設集標題」欄標題下的「檢視器預設集」頁面上。
 
-1. 在「豐富型媒體類型」下拉式選單中，選取您要建立的檢視器預設集類型，然後在頁面的右上角，點選「**[!UICONTROL Create]**」。
+1. 在「豐富型媒體類型」下拉式選單中，選取您要建立的檢視器預設集類型，然後在頁面的右上角，選取「**[!UICONTROL 建立]**」。
 
    請參閱[檢視器預設集的多媒體類型](#rich-media-types-for-viewer-presets)。
 
-1. 在「檢視器預設集編輯器」頁面上，點選「外 **[!UICONTROL 觀]** 」標籤。
+1. 在「查看器預設集編輯器」頁面上，選擇&#x200B;**[!UICONTROL Appearance]**&#x200B;頁簽。
 1. 執行下列任一操作：
 
-   * 在&#x200B;**[!UICONTROL Selected Type]**&#x200B;下拉菜單中，選擇要自定義其視覺設計的元件。 或者，您也可以點選或按一下檢視器中的任何視覺元素，以選取它進行設定。
+   * 在&#x200B;**[!UICONTROL Selected Type]**&#x200B;下拉菜單中，選擇要自定義其視覺設計的元件。 或者，您也可以在檢視器中選取任何視覺元素，以選取它進行設定。
 
       視覺編輯器可讓您查看特定屬性對樣式有何影響。 使用編輯器左側的範例，設定或調整任何屬性以立即查看其對檢視器有何影響。
 
       [檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)中的「自訂&#x200B;*`<viewer name>`*&#x200B;檢視器」說明主題中說明每種檢視器預設集類型的CSS樣式屬性。 例如，如果您要建立`Mixed_Media`類型的檢視器預設集，請參閱[自訂混合媒體檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)以取得每個屬性的清單和說明。
 
-   * 如果您已在個別CSS檔案中定義樣式設定，則可以上傳CSS檔案至Experience Manager資產。 若要尋找已上傳的CSS檔案並將其與檢視器預設集建立關聯，請點選&#x200B;**[!UICONTROL Selected Type]**&#x200B;下拉式選單下方的「匯入CSS ]**」（如有需要，請向上捲動視覺編輯器即可檢視）。**[!UICONTROL 
+   * 如果您已在個別CSS檔案中定義樣式設定，則可以上傳CSS檔案至Experience Manager資產。 若要尋找上傳的CSS檔案並將其與檢視器預設集建立關聯，請選取&#x200B;**[!UICONTROL Selected Type]**&#x200B;下拉式選單下方的&#x200B;**[!UICONTROL Import CSS]**（如有必要，請向上捲動視覺編輯器以查看它）。
 
       當您匯入CSS檔案時，視覺編輯器會檢查CSS是否使用正確的檢視器標籤。 例如，如果要建立縮放查看器，則您導入的所有CSS規則必須使用其父級查看器元素上定義的查看器類名稱`.s7mixedmediaviewer`來定義。
 
       只要正確定義指定檢視器的CSS標籤，您就可以匯入任意的手工CSS。 (CSS標籤會說明在[檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)的任何「自訂&#x200B;*&lt;檢視器名稱>*&#x200B;檢視器」說明主題中。 例如，如果您想要閱讀縮放檢視器的CSS標籤，請參閱[自訂縮放檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 不過，視覺編輯器可能不了解某些CSS值。 在這種情況下，視覺編輯器會嘗試覆寫錯誤，讓CSS仍可運作。
    >[!NOTE]
    >
-   >如果您偏好直接以原始格式編輯CSS，請點選「選取類型」下拉式選單下方的「**[!UICONTROL 顯示/隱藏CSS]**（如有需要，請向上捲動視覺編輯器以查看）。
+   >如果您偏好直接以原始格式編輯CSS，請選取「選取類型」下拉式選單下方的「顯示/隱藏CSS ]**」（如有需要，請向上捲動視覺編輯器以查看）。**[!UICONTROL 
    >和視覺編輯器一樣，當您直接在CSS中變更屬性時，可以立即查看它對檢視器範例有何影響。 而且，同一屬性會在視覺編輯器中同時自動更新。 因此，您可以使用原始CSS編輯器或視覺編輯器，或兩者可交互使用。
 
    >[!NOTE]
    >
    >對於按鈕圖稿，請選擇2x影像並上傳高解析度的圖稿。 使用互動式影像和可購買的橫幅時，您也可以從各種現成可用的熱點按鈕中選取。
 
-1. (可選) 在「編輯檢視器預設集」頁面頂端附近，點選「 **[!UICONTROL Desktop]**」、「 **[!UICONTROL Tablet]**」或「 **[!UICONTROL Phone」]** ，以針對不同的裝置和螢幕類型唯一定義視覺樣式。
-1. 在「檢視器預設集編輯器」頁面上，點選「**[!UICONTROL Behavior]**」標籤。 或者，您也可以點選或按一下檢視器中的任何視覺元素，以選取它進行設定。
+1. （可選）在「編輯檢視器預設集」頁面頂端附近，選取&#x200B;**[!UICONTROL Desktop]**、**[!UICONTROL Tablet]**&#x200B;或&#x200B;**[!UICONTROL Phone]**，以針對不同的裝置和螢幕類型唯一定義視覺樣式。
+1. 在「檢視器預設集編輯器」頁面上，選取「**[!UICONTROL Behavior]**」標籤。 或者，您也可以在檢視器中選取任何視覺元素，以選取它進行設定。
 1. 從「選 **[!UICONTROL 定類型]** 」(Selected Type)下拉菜單中，選擇要更改其行為的元件。
 
    可視化編輯器中的許多元件都有與其相關聯的詳細說明。 展開元件以顯示其相關參數時，這些說明會顯示在藍色方塊中。
@@ -449,9 +449,9 @@ Experience Manager從&#x200B;**[!UICONTROL 「詳細檢視」>「檢視器」]**
    >**如果您使用觸控裝置，例如手機或平板電腦……**
    >
    >
-   >在文字欄位中輸入值後，請在使用者介面的其他位置點選以提交變更並關閉虛擬鍵盤。 如果您點選「Enter」，則不會執行任何動作。
+   >在文字欄位中輸入值後，請在使用者介面的其他位置選取以提交變更並關閉虛擬鍵盤。 如果選擇&#x200B;**[!UICONTROL Enter]**，則不會執行任何操作。
 
-1. 在頁面的右上角附近，點選&#x200B;**[!UICONTROL Save]**。
+1. 在頁面的右上角附近，選擇&#x200B;**[!UICONTROL Save]**。
 1. 發佈新的檢視器預設集。 您必須先發佈預設集，才能在網站上使用。
 
    請參閱[發佈檢視器預設集](#publishing-viewer-presets)。
@@ -483,7 +483,7 @@ Experience Manager從&#x200B;**[!UICONTROL 「詳細檢視」>「檢視器」]**
 
 互動式視訊檢視器中縮圖的自動捲動行為可獨立於您選擇的顯示模式運作。
 
-當您建立或編輯互動式視訊檢視器預設集時，可從「行為」標籤存取「自動捲動」。在「行為」標籤中，從「選 **[!UICONTROL 取的元件]** 」下拉式選單中點選「 **[!UICONTROL 互動色票」]**。「自動捲動」(Auto Scroll)複選框列在「IS命令」(IS Command)文本欄位下。
+當您建立或編輯互動式視訊檢視器預設集時，可從「行為」標籤存取「自動捲動」。在「行為」頁簽中，從&#x200B;**[!UICONTROL Selected Components]**&#x200B;下拉菜單中，選擇&#x200B;**[!UICONTROL InteractiveSwatches]**。 「自動捲動」(Auto Scroll)複選框列在「IS命令」(IS Command)文本欄位下。
 
 如果您在檢視器預設集中停用「自動捲動 **** 」 (清除核取方塊)，當使用者播放視訊時，面板只會顯示整個視訊長度的第一個縮圖影像。不過，使用者可視需要使用向上和向下箭頭圖示手動捲動縮圖。
 
@@ -516,7 +516,7 @@ Experience Manager從&#x200B;**[!UICONTROL 「詳細檢視」>「檢視器」]**
 
 |  | **說明** | **動作** |
 |---|---|---|
-| **[!UICONTROL 熱點表徵圖]** | 更改用於熱點的表徵圖 | 要更改熱點表徵圖影像，請在&#x200B;**[!UICONTROL Appearance]**&#x200B;頁簽的&#x200B;**[!UICONTROL Selected Component]**&#x200B;中，點選&#x200B;**[!UICONTROL ImageMapEffect]**。 在&#x200B;**[!UICONTROL Icon]**&#x200B;下，選擇&#x200B;**[!UICONTROL Background]**，然後在&#x200B;**[!UICONTROL Image]**&#x200B;欄位中導覽至您想要的背景影像。 |
+| **[!UICONTROL 熱點表徵圖]** | 更改用於熱點的表徵圖 | 要更改熱點表徵圖影像，請在&#x200B;**[!UICONTROL Appearance]**&#x200B;頁簽的&#x200B;**[!UICONTROL Selected Component]**&#x200B;中，選擇&#x200B;**[!UICONTROL ImageMapEffect]**。 在&#x200B;**[!UICONTROL Icon]**&#x200B;下，選擇&#x200B;**[!UICONTROL Background]**，然後在&#x200B;**[!UICONTROL Image]**&#x200B;欄位中導覽至您想要的背景影像。 |
 
 ## 啟用或停用檢視器預設集 {#activating-or-deactivating-viewer-presets}
 
@@ -524,8 +524,8 @@ Experience Manager從&#x200B;**[!UICONTROL 「詳細檢視」>「檢視器」]**
 
 **要激活或停用查看器預設集，請執行以下操作：**
 
-1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
-1. 在「檢視器預設集」頁面的&#x200B;**[!UICONTROL State]**&#x200B;欄標題下，點選切換以啟用或停用檢視器預設集。
+1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，選取「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產]** > **[!UICONTROL 檢視器預設集]**」。
+1. 在「檢視器預設集」頁面的&#x200B;**[!UICONTROL State]**&#x200B;欄標題下，選取切換以啟用或停用檢視器預設集。
 
    已啟動的檢視器預設集會讓切換按鈕顯示在右側、藍色方塊內；停用的檢視器預設集會讓切換按鈕顯示在左側的淺灰色方塊內。
 
@@ -541,14 +541,14 @@ Experience Manager從&#x200B;**[!UICONTROL 「詳細檢視」>「檢視器」]**
 
 **要發佈查看器預設集：**
 
-1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
+1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，選取「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
 1. 選取一或多個要發佈的檢視器預設集。
-1. 在工具列上，點選&#x200B;**[!UICONTROL Publish]**&#x200B;圖示。
+1. 在工具列上，選取&#x200B;**[!UICONTROL Publish]**&#x200B;圖示。
 
-## 排序檢視器預設集 {#sorting-viewer-presets}
+## 對查看器預設集排序 {#sorting-viewer-presets}
 
-1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
-1. 按一 **[!UICONTROL 下「標題]**」、「類型」、「發佈國 **[!UICONTROL 」或「國]********** 家預設」，依該欄標題排序。例如，按一下「 **[!UICONTROL 類型]** 」，以字母或反字母順序排序檢視器預設集類型。
+1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，選取「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
+1. 選擇&#x200B;**[!UICONTROL 預設標題]**、**[!UICONTROL 類型]**、**[!UICONTROL 已發佈]**&#x200B;或&#x200B;**[!UICONTROL 狀態]**&#x200B;以按該列標題排序。 例如，選取&#x200B;**[!UICONTROL Type]**，以字母或反字母順序排序檢視器預設集類型。
 
 ## 編輯檢視器預設集 {#editing-viewer-presets}
 
@@ -556,17 +556,17 @@ Experience Manager從&#x200B;**[!UICONTROL 「詳細檢視」>「檢視器」]**
 
 **要編輯查看器預設集：**
 
-1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
+1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，選取「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產]** > **[!UICONTROL 檢視器預設集]**」。
 1. 勾選檢視器預設集標題左側的方塊，以選取預設集。
-1. 在工具列上，點選&#x200B;**[!UICONTROL Edit]**。
+1. 在工具欄上，選擇&#x200B;**[!UICONTROL Edit]**。
 1. 在&#x200B;**[!UICONTROL 檢視器預設集編輯器]**&#x200B;頁面上，使用&#x200B;**[!UICONTROL 外觀]**&#x200B;和&#x200B;**[!UICONTROL 行為]**&#x200B;標籤上的選項，對檢視器預設集進行您想要的變更。
 
-   從「 **[!UICONTROL Appearance]** 」 (外觀) 頁籤 **[!UICONTROL ，在「Viewer Preset Editor」 (查看器預設編輯器) 頁面的左上角附近，點選「]** Desktop **[!UICONTROL 」 (案頭) 、]** Tablet **[!UICONTROL 、或「Phone]** 」 (手機) 以更改資產的演示模式。
+   從&#x200B;**[!UICONTROL Appearance]**&#x200B;標籤，在「查看器預設編輯器」頁的左上角附近，選擇&#x200B;**[!UICONTROL Desktop]**、**[!UICONTROL Tablet]**&#x200B;或&#x200B;**[!UICONTROL Phone]**&#x200B;以更改資產的演示模式。
 
 1. 在頁面的右上角附近，執行下列其中一項操作：
 
-   * 點選&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存您的變更並返回「檢視器預設集」頁面。
-   * 點選&#x200B;**[!UICONTROL 取消]**&#x200B;以撤消您所做的任何更改並返回「查看器預設集」頁。
+   * 選擇&#x200B;**[!UICONTROL Save]**&#x200B;以保存更改並返回「查看器預設集」頁。
+   * 選擇&#x200B;**[!UICONTROL 取消]**&#x200B;以撤消您所做的任何更改並返回「查看器預設集」頁。
 
 ## 刪除自訂檢視器預設集 {#deleting-custom-viewer-presets}
 
@@ -574,9 +574,9 @@ Experience Manager從&#x200B;**[!UICONTROL 「詳細檢視」>「檢視器」]**
 
 **要刪除自定義查看器預設集：**
 
-1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
-1. 在「檢視器預設集」頁面上，核取「預設集標題」，然後點選&#x200B;**[!UICONTROL Trash]**&#x200B;圖示。
-1. 點選&#x200B;**[!UICONTROL Delete]**。
+1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，選取「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**」。
+1. 在「檢視器預設集」頁面上，核取預設集標題，然後選取&#x200B;**[!UICONTROL 清除]**&#x200B;圖示。
+1. 選擇&#x200B;**[!UICONTROL Delete]**。
 
 ## 將檢視器預設集套用至資產 {#applying-a-viewer-preset-to-an-asset}
 
@@ -584,7 +584,7 @@ Experience Manager從&#x200B;**[!UICONTROL 「詳細檢視」>「檢視器」]**
 
 **若要將檢視器預設集套用至資產：**
 
-1. 開啟資產，在頁面左上角附近，點選下拉式選單，然後選取「**[!UICONTROL 檢視器]**」。
+1. 開啟資產，在頁面左上角附近，選取下拉式選單，然後選取&#x200B;**[!UICONTROL 檢視器]**。
 
    >[!NOTE]
    >
@@ -596,6 +596,6 @@ Experience Manager從&#x200B;**[!UICONTROL 「詳細檢視」>「檢視器」]**
 
 ## 使用檢視器預設集傳送資產 {#delivering-assets-with-viewer-presets}
 
-若要取得檢視器預設集的URL，請參閱[將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 另請參閱[在網頁上嵌入視頻查看器](/help/assets/dynamic-media/embed-code.md)。
+若要取得檢視器預設集的URL，請參閱[將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。 另請參閱[將視訊檢視器嵌入網頁](/help/assets/dynamic-media/embed-code.md)。
 
 如果您使用Experience Manager作為WCM，則可以直接在頁面上使用檢視器預設集來新增資產。 請參閱[將Dynamic Media資產新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
