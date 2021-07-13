@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Manager中的實作階段
 description: 本頁概述Cloud Acceleration Manager的實作階段。
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: b1a2b7b78349524e842e30f69729fb3351765582
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '610'
 ht-degree: 2%
 
 ---
@@ -37,14 +37,14 @@ ht-degree: 2%
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-2.png)
 
-1. 隨即顯示內容輪播，其中包含移轉歷程這個階段的相關資訊。
+1. 內容輪播會顯示移轉歷程這個階段的相關資訊。
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## 使用程式碼重構卡 {#code-refactoring}
 
-「程式碼重構」活動卡片提供所有相關資訊，並反白顯示移至AEM as aCloud Service時需要檢閱的程式碼重構區域。
+「程式碼重構」活動卡片提供所有相關資訊，並反白顯示移至AEM as aCloud Service時，您需要檢閱和解決的程式碼重構區域。
 
 請依照以下小節來探索「程式碼重構」活動卡：
 
@@ -70,7 +70,7 @@ AEM as a Cloud Service部署卡提供所有相關內容，可協助您將程式�
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
 
-1. 隨即顯示內容輪播，其中包含移轉歷程這個階段的相關資訊。
+1. 內容輪播會顯示移轉歷程這個階段的相關資訊。
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
@@ -85,16 +85,19 @@ AEM as a Cloud Service部署卡提供所有相關內容，可協助您將程式�
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
 
-1. 隨即顯示內容輪播，其中包含移轉歷程這個階段的相關資訊。
+1. 內容輪播會顯示移轉歷程這個階段的相關資訊。
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >使用內容轉移工具之前，請先檢閱[必要條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en)及[最佳作法和准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en)。
 
-### 預估內容轉移工具活動 {#calculating}
+### 預估內容轉移時間 {#calculating}
 
 提供全新的內容轉移工具電腦，可估計完成內容轉移活動可能需要多久的時間。 您可以使用內容存放庫大小滑桿來選取套用至專案的大小。 提取和擷取階段的傳輸時間會有所不同。
+
+>[!NOTE]
+>這些時候只是估計。 這些估計沒有考慮網路速度和擴展實例的時間等因素。
 
 要估計AEM儲存庫的大小，可以運行`http://HOST:PORT/etc/reports/diskusage.html`下的「磁碟使用情況」報告。
 
@@ -102,4 +105,4 @@ AEM as a Cloud Service部署卡提供所有相關內容，可協助您將程式�
 
 ## 下一步 {#whats-next}
 
-學習如何登入Cloud Acceleration Manager及如何運用實作階段後，您現在可以繼續檢閱下一個步驟[使用上線階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en)。
+學習如何登入Cloud Acceleration Manager及如何運用實作階段後，您現在可以繼續檢閱[上線階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en)中的下一個步驟。
