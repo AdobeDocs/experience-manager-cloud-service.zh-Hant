@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Manager中的實作階段
 description: 本頁概述Cloud Acceleration Manager的實作階段。
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '585'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->如需詳細資訊，請參閱在Cloud Acceleration Manager中建立及管理專案。
+>請參考[在Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project)中建立和管理專案以深入了解。
 
 
 ## 使用本機開發卡 {#local-development}
@@ -102,4 +102,4 @@ AEM as a Cloud Service部署卡提供所有相關內容，可協助您將程式�
 
 ## 下一步 {#whats-next}
 
-一旦您了解如何登入Cloud Acceleration Manager及如何運用「實作」階段，您現在就可以繼續檢閱下一個步驟：使用「GoLive」階段。
+學習如何登入Cloud Acceleration Manager及如何運用實作階段後，您現在可以繼續檢閱下一個步驟[使用上線階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en)。
