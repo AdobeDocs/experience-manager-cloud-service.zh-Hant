@@ -1,17 +1,17 @@
 ---
 title: Cloud Acceleration Manager的整備階段
 description: 本頁概述Cloud Acceleration Manager的整備階段。
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 4%
+source-wordcount: '670'
+ht-degree: 5%
 
 ---
 
 
 # Cloud Acceleration Manager的整備階段 {#readiness-phase-cam}
 
-在Cloud Acceleration Manager中建立專案後，您現在可以開始執行「整備」階段中的可用工具。
+在Cloud Acceleration Manager中建立專案後，您現在可以在整備階段中開始評估目前的AEM實作。
 
 準備階段包括：
 
@@ -39,7 +39,10 @@ ht-degree: 4%
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. 請依照下列步驟下載Best Practices Analyzer(BPA)，並在複製AEM系統上執行。
+1. 請依照下列步驟下載Best Practices Analyzer(BPA)。
+
+   >[!NOTE]
+   >為避免對業務關鍵例項造成影響，建議您在盡可能接近生產環境的製作環境中，對自訂、設定、內容和使用者應用程式等方面執行BPA。 或者，您可以在複製的生產製作環境中執行 CRA。
 
    1. 導覽至[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)入口網站，並以zip檔案形式下載Best Practices Analyzer。
 
@@ -82,7 +85,7 @@ ht-degree: 4%
 
 #### 報表概述 {#report-overview}
 
-此&#x200B;**報表概述**&#x200B;卡片提供報表結果，如下圖所示。
+此&#x200B;**報表概述**&#x200B;卡片提供評估是否準備好移至AEM作為Cloud Service時適用的報表結果和嚴重性等級，如下圖所示。
 
 ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -123,14 +126,14 @@ ht-degree: 4%
 
 請按照本節，探索「規劃和設定」活動卡。
 
-1. 按一下&#x200B;**規劃與設定**&#x200B;卡中的&#x200B;**檢視**&#x200B;按鈕，該卡提供有助於規劃和設定AEM遷移的所有相關內容。
+1. 按一下&#x200B;**Planning And Setup**&#x200B;卡中的&#x200B;**View**&#x200B;按鈕。 此卡片提供所有相關內容，可協助您規劃及設定AEM移轉。
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
-1. 隨即顯示內容輪播，其中包含移轉歷程這個階段的相關資訊。
+1. 內容輪播會顯示移轉歷程這個階段的所有相關資訊。
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## 下一步 {#whats-next}
 
-學習如何登入Cloud Acceleration Manager及如何建立專案後，您現在可以使用[實作階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en)繼續檢閱下一個步驟。
+學習如何登入Cloud Acceleration Manager及如何建立專案後，您現在可以繼續檢閱[實作階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en)中的下一個步驟。
