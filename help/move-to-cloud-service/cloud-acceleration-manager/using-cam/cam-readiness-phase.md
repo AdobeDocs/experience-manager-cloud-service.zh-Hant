@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Manager的整備階段
 description: 本頁概述Cloud Acceleration Manager的整備階段。
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '604'
 ht-degree: 4%
 
 ---
@@ -133,4 +133,4 @@ ht-degree: 4%
 
 ## 下一步 {#whats-next}
 
-學習如何登入Cloud Acceleration Manager及如何建立專案後，您現在可以繼續檢閱下一個步驟：使用實作階段。
+學習如何登入Cloud Acceleration Manager及如何建立專案後，您現在可以使用[實作階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en)繼續檢閱下一個步驟。
