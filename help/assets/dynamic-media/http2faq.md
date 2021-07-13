@@ -3,10 +3,10 @@ title: HTTP2 傳送內容常見問答集
 description: 了解HTTP2內容傳送。
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 3%
+source-wordcount: '797'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ Adobe自己的測試得出以下結果：
 
    若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
-   按一 **[!UICONTROL 下「設定>應用程式設定>一般設定」]**。查找標籤為&#x200B;**已發佈伺服器名稱**&#x200B;的欄位。 如果您目前使用一般Dynamic Media網域，可以請求移轉至您自己的自訂網域，作為此轉變的一部分。
+   前往&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。 查找標籤為&#x200B;**已發佈伺服器名稱**&#x200B;的欄位。 如果您目前使用一般Dynamic Media網域，可以請求移轉至您自己的自訂網域，作為此轉變的一部分。
 
 ## 為我的Dynamic Media帳戶啟用HTTP/2的程式為何？ {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -60,7 +60,7 @@ Adobe自己的測試得出以下結果：
 
    若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
-   按一 **[!UICONTROL 下「設定>應用程式設定>一般設定」]**。查找標籤為&#x200B;**[!UICONTROL 已發佈伺服器名稱]**&#x200B;的欄位。
+   前往&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。 查找標籤為&#x200B;**[!UICONTROL 已發佈伺服器名稱]**&#x200B;的欄位。
 
    * 確認您對多媒體請求使用安全HTTPS。
    * 確認您是透過Adobe使用CDN，而非以直接關係進行管理。
@@ -68,7 +68,7 @@ Adobe自己的測試得出以下結果：
 
    若要尋找您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
-   按一 **[!UICONTROL 下「設定>應用程式設定>一般設定」]**。查找標籤為&#x200B;**[!UICONTROL 已發佈伺服器名稱]**&#x200B;的欄位。 如果您目前使用一般Dynamic Media網域，可以請求移轉至您自己的自訂網域，作為此轉變的一部分。
+   前往&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。 查找標籤為&#x200B;**[!UICONTROL 已發佈伺服器名稱]**&#x200B;的欄位。 如果您目前使用一般Dynamic Media網域，可以請求移轉至您自己的自訂網域，作為此轉變的一部分。
 
    1. 技術支援會根據提交請求的順序，將您新增至HTTP/2客戶等待清單。
    1. 當Adobe準備好處理您的請求時，客戶服務會聯絡您以協調轉變並設定目標日期。
