@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal，資產分送，設定
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 13ea0161771776f23d3789adfb8487df06a7e4b1
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1158'
 ht-degree: 97%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 97%
 
 登入 Brand Portal 介面可查看已發佈的資產 (視您安排的日期或時間而定)。
 
-![bp_landing_page](assets/bp_landing_page.png)
+![bp_landingpage](assets/bp_landingpage.png)
 
 
 ## 將資料夾發佈至 Brand Portal {#publish-folders-to-brand-portal}
