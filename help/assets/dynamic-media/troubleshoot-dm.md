@@ -1,16 +1,16 @@
 ---
-title: Dynamic Media 疑難排解
+title: 疑難排解Dynamic Media
 description: 使用Dynamic Media時的疑難排解提示。
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
 
-# Dynamic Media 疑難排解 {#troubleshooting-dynamic-media-scene-mode}
+# 疑難排解Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
 以下主題說明Dynamic Media的疑難排解。
 
@@ -179,11 +179,11 @@ ht-degree: 1%
   <tr>
    <td>未發佈查看器預設集</td>
    <td><p>繼續到示例管理器診斷頁： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>觀察計算值。 正確運作時，您會看到：</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>:配置檢視器資產的Dynamic Media雲端設定後，可能需要約10分鐘的時間才能同步。</p> <p>如果未啟動的資產仍保留，請按一下<strong>列出所有未啟動的資產</strong>按鈕以查看詳細資訊。</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>:配置檢視器資產的Dynamic Media雲端設定後，可能需要約10分鐘的時間才能同步。</p> <p>如果未啟動的資產仍保留，請選取<strong>列出所有未啟動的資產</strong>按鈕中的任一個，以查看詳細資訊。</p> </td>
    <td>
     <ol>
      <li>導覽至管理工具中的檢視器預設集清單： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>選取所有檢視器預設集，然後按一下「<strong>發佈</strong>」。</li>
+     <li>選擇所有查看器預設集，然後選擇<strong>Publish</strong>。</li>
      <li>導覽回範例管理員，並觀察未啟動的資產計數現在為零。</li>
     </ol> </td>
   </tr>
