@@ -2,9 +2,9 @@
 title: 複寫
 description: 散佈 和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: e6e5fb6eebcd39b46dc4234999e18de9b8e3950e
+source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1189'
 ht-degree: 1%
 
 ---
@@ -200,4 +200,4 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 ![](assets/publish-logs.png "LogsLogs")
 
 如果無法發佈內容，則會從AEM發佈服務還原整個發佈。
-在這種情況下，應審查隊列，以確定哪些項目導致取消發佈。 按一下顯示紅色狀態的佇列，就會顯示含有待處理項目的佇列，如有需要，可從中清除單一或所有項目。
+在這種情況下，可編輯的主隊列將顯示紅色狀態，應進行審核，以確定哪些項導致取消發佈。 按一下該佇列，其待定項目便會顯示，如有需要，可從中清除單一項目或所有項目。
