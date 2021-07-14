@@ -1,12 +1,12 @@
 ---
-title: 使用選取工具
+title: 使用選取器
 description: 了解您可以使用哪些方法來選取Dynamic Media中互動式影像、互動式視訊和輪播橫幅的資產。
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 18%
+source-wordcount: '728'
+ht-degree: 1%
 
 ---
 
@@ -26,15 +26,15 @@ ht-degree: 18%
 
 ## 在Dynamic Media中選取產品 {#selecting-products}
 
-當您想要熱點或影像地圖提供產品目錄中特定產品的快速檢視時，請使用產品選取器來選擇產品。
+當您想要熱點或影像地圖為產品目錄中的特定產品提供快速檢視時，請使用產品選取器來選擇產品。
 
-1. 導覽至「轉盤集」、「互動式影像」或「互動式視訊」，然後點選「動作 **** 」標籤 (僅在您已定義熱點或影像地圖時可用)。
+1. 導覽至「轉盤集」、「互動式影像」或「互動式視訊」，然後選取「**[!UICONTROL 動作]**」標籤（僅在您已定義熱點或影像地圖時可用）。
 
    產品選擇器位於&#x200B;**[!UICONTROL 動作類型]**&#x200B;區域。
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. 點選&#x200B;**[!UICONTROL 產品選取器]**&#x200B;圖示（放大鏡），並導覽至目錄中的產品。
+1. 選取&#x200B;**[!UICONTROL 產品選取器]**&#x200B;圖示（放大鏡），並導覽至目錄中的產品。
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
@@ -46,11 +46,11 @@ ht-degree: 18%
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   點選&#x200B;**[!UICONTROL 依]**&#x200B;排序，以變更[!DNL Experience Manager]是依最新到最舊或最舊到最新排序。
+   選擇&#x200B;**[!UICONTROL 按]**&#x200B;排序以更改[!DNL Experience Manager]按最新到最舊或最舊到最新排序。
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   點選「 **[!UICONTROL 檢視方式]** 」以變更您檢視產品的方式- 「清單檢視 **[!UICONTROL 」或「資]** 訊卡檢視」 ****。
+   選擇&#x200B;**[!UICONTROL 以]**&#x200B;查看以更改查看產品的方式 — **[!UICONTROL 清單視圖]**&#x200B;或&#x200B;**[!UICONTROL 卡片視圖]**。
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -58,7 +58,7 @@ ht-degree: 18%
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式下，可以點選熱點或影像映射，並查看快速視圖的顯示方式。
+1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式下，可以選擇熱點或影像映射，並查看快速視圖的顯示方式。
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
@@ -66,13 +66,13 @@ ht-degree: 18%
 
 當您希望熱點或影像映射連結到[!DNL Experience Manager]網站內管理的網頁時，請使用網站選擇器選擇網頁。
 
-1. 導覽至「轉盤集」、「互動式影像」或「互動式視訊」，然後點選「動作 **** 」標籤 (僅在您已定義熱點或影像地圖時可用)。
+1. 導覽至「轉盤集」、「互動式影像」或「互動式視訊」，然後選取「**[!UICONTROL 動作]**」標籤（僅在您已定義熱點或影像地圖時可用）。
 
    「網站選擇器」位於「動 **[!UICONTROL 作類型]** 」區。
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. 點選「**[!UICONTROL 網站選擇器]**」圖示 (含放大鏡的資料夾)，並導覽至您 網站中要連結熱點或影像地圖的頁面。[!DNL Experience Manager]
+1. 選取&#x200B;**[!UICONTROL 網站選取器]**&#x200B;圖示（含放大鏡的資料夾），並導覽至您[!DNL Experience Manager]網站中要連結熱點或影像地圖的頁面。
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,16 +80,16 @@ ht-degree: 18%
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中，如果點選熱點或影像地圖，則導覽至您指定的[!DNL Experience Manager]網站頁面。
+1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中，如果選擇熱點或影像映射，則導航到您指定的[!DNL Experience Manager]網站頁。
 
 ## 在Dynamic Media中選取資產 {#selecting-assets}
 
-使用此選取器來選擇要用於轉盤橫幅、互動式視訊、影像集、混合媒體集和回轉集的影像。 在互動式視訊中，當您點選&#x200B;**[!UICONTROL **[!UICONTROL  Content ]**標籤中的「選取資產」]**&#x200B;時，即可使用資產選取器。 在轉盤集中，當您建立投影片時，可使用資產選取器。 在影像集、混合媒體集和回轉集中，當您分別建立影像集、混合媒體集或回轉集時，可使用資產選取器。
+使用此選取器來選擇要用於轉盤橫幅、互動式視訊、影像集、混合媒體集和回轉集的影像。 在互動式視訊中，當您在&#x200B;**[!UICONTROL Content]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Select Assets]**&#x200B;時，即可使用資產選取器。 在轉盤集中，當您建立投影片時，可使用資產選取器。 在影像集、混合媒體集和回轉集中，當您分別建立影像集、混合媒體集或回轉集時，可使用資產選取器。
 
 如需詳細資訊，請參閱[資產選擇器](/help/assets/search-assets.md#asset-selector)。
 
 1. 導覽至轉盤集並建立投影片。 或者，導覽至互動式視訊，前往&#x200B;**[!UICONTROL Content]**&#x200B;標籤，然後選取資產。 或者，建立混合媒體集、影像集或回轉集。
-1. 點選「資 **[!UICONTROL 產選擇器]** 」圖示 (含放大鏡的資料夾) 並導覽至資產。
+1. 選取&#x200B;**[!UICONTROL 資產選取器]**&#x200B;圖示（含放大鏡的資料夾）並導覽至資產。
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
@@ -99,15 +99,15 @@ ht-degree: 18%
 
    您可以導覽至&#x200B;**[!UICONTROL Path]**&#x200B;欄位中的其他資料夾，以變更[!DNL Experience Manager]瀏覽資產的位置。
 
-   點選&#x200B;**[!UICONTROL 集合]**&#x200B;以僅搜尋集合內的資產。
+   選取&#x200B;**[!UICONTROL 集合]**&#x200B;以僅搜尋集合內的資產。
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   點選「 **[!UICONTROL 檢視]** 」以變更您檢視產品的方式- 「清單檢視 **[!UICONTROL 」、「]**&#x200B;欄檢視」 **[!UICONTROL ，或「卡]******&#x200B;片檢視」。
+   選擇「**[!UICONTROL 以]**&#x200B;查看」以更改您查看產品的方式 — **[!UICONTROL 清單視圖]**、**[!UICONTROL 列視圖]**&#x200B;或&#x200B;**[!UICONTROL 卡片視圖]**。
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. 若要選取資產，請點選核取記號。 資產隨即顯示。
+1. 若要選取資產，請選取核取記號。 資產隨即顯示。
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
 —>
