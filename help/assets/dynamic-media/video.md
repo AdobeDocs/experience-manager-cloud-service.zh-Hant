@@ -4,10 +4,10 @@ description: 了解如何在Dynamic Media中使用影片。
 feature: 視訊設定檔
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '9471'
-ht-degree: 6%
+source-wordcount: '9467'
+ht-degree: 4%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 6%
    * 預覽和發佈視訊資產
 
       * 檢視來源視訊和編碼的視訊轉譯及其相關聯的縮圖：
-         [預覽](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 視訊或 [預覽資產](/help/assets/dynamic-media/previewing-assets.md)
+         [預覽](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 影片或 [預覽資產](/help/assets/dynamic-media/previewing-assets.md)
          [管理視訊轉譯](/help/assets/manage-digital-assets.md#managing-renditions)
 
 
@@ -107,14 +107,14 @@ ht-degree: 6%
    * 如果您使用協力廠商網頁內容管理系統，您可以將視訊連結或內嵌至您的網頁。
 
       * 使用URL整合視訊：
-         [將 URL 連結至您的 Web 應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
+         [將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。
 
       * 使用網頁上的內嵌程式碼整合視訊：
          [將視訊檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)。
    * [將影片發佈至YouTube](#publishing-videos-to-youtube)。
    * [產生視訊報表](#viewing-video-reports)。
 
-   * [為視訊新增字幕](#adding-captions-to-video)。
+   * [為視訊添加字幕](#adding-captions-to-video)。
 
 
 
@@ -151,7 +151,7 @@ Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品�
 
 Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可以在以下位置找到支援此視頻格式的BlackBerry®設備：[BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)上支援的視頻格式。
 
-您可以在以下位置找到支援此視頻格式的Windows®設備：[Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)上支援的視訊格式
+您可以在以下位置找到支援此視頻格式的Windows®設備：[Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105)?redirectedfrom=MSDN)上支援的視訊格式
 
 * 使用Dynamic Media視訊檢視器預設集播放視訊，包括下列內容：
 
@@ -276,7 +276,7 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
 
 ## 編碼視訊的最佳作法 {#best-practices-for-encoding-videos}
 
-如果您已啟用Dynamic Media並設定視訊Cloud Services, **Dynamic Media編碼視訊**&#x200B;工作流程會對視訊進行編碼。 此工作流程會擷取工作流程處理歷程記錄和失敗資訊。請參閱 [監控視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。如果您已啟用Dynamic Media並設定視訊Cloud Services，當您上傳視訊時，**[!UICONTROL Dynamic Media編碼視訊]**&#x200B;工作流程會自動生效。 (如果您未使用Dynamic Media, **[!UICONTROL DAM更新資產]**&#x200B;工作流程將生效。)
+如果您已啟用Dynamic Media並設定視訊Cloud Services, **Dynamic Media編碼視訊**&#x200B;工作流程會對視訊進行編碼。 此工作流程會擷取工作流程處理歷程記錄和失敗資訊。請參閱[監視視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。 如果您已啟用Dynamic Media並設定視訊Cloud Services，當您上傳視訊時，**[!UICONTROL Dynamic Media編碼視訊]**&#x200B;工作流程會自動生效。 (如果您未使用Dynamic Media, **[!UICONTROL DAM更新資產]**&#x200B;工作流程將生效。)
 
 以下是編碼來源視訊檔案的最佳實務提示。
 
@@ -426,18 +426,18 @@ YouTube會自行編碼。 因此，上傳至Experience Manager的原始視訊檔
 
 1. [配置Google雲端設定](#configuring-google-cloud-settings)
 1. [建立YouTube管道](#creating-a-youtube-channel)
-1. [新增要發佈的標籤](#adding-tags-for-publishing)
+1. [新增發佈標籤](#adding-tags-for-publishing)
 1. [在Experience Manager中設定YouTube](#setting-up-youtube-in-aem)
-1. [（選用）自動設定已上傳影片的預設YouTube屬性](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
+1. [（選用）自動設定您所上傳影片的預設YouTube屬性](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [將影片發佈至您的YouTube頻道](#publishing-videos-to-your-youtube-channel)
-1. [（選用）驗證YouTube上發佈的影片](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
+1. [（選用）驗證已發佈的YouTube影片](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
 1. [將YouTube URL連結至您的Web應用程式](#linking-youtube-urls-to-your-web-application)
 
 您也可以[取消發佈視訊，以從YouTube](#unpublishing-videos-to-remove-them-from-youtube)中移除視訊。
 
 ### 配置Google雲端設定 {#configuring-google-cloud-settings}
 
-若要發佈至YouTube，您需要Google帳戶。 如果你有Gmail賬戶，那麼你已經有Google賬戶了；如果您沒有Google帳戶，便可輕鬆建立帳戶。 您需要帳戶，因為您需要憑證才能將影片資產發佈至YouTube。 如果您已建立帳戶，請略過此任務，然後直接前往「建立YouTube通道」](#creating-a-youtube-channel)。[
+若要發佈至YouTube，您需要Google帳戶。 如果你有Gmail賬戶，那麼你已經有Google賬戶了；如果您沒有Google帳戶，便可輕鬆建立帳戶。 您需要帳戶，因為您需要憑證才能將影片資產發佈至YouTube。 如果您已建立帳戶，請略過此任務並直接前往[建立YouTube頻道](#creating-a-youtube-channel)。
 
 與Google Cloud搭配使用的帳戶和用於YouTube的Google帳戶不需相同。
 
@@ -455,12 +455,12 @@ Google會定期變更其使用者介面。 因此，將影片發佈至YouTube的
    如果您已有Google帳戶，請跳至下一個步驟。
 
 1. 前往[https://cloud.google.com/](https://cloud.google.com/)。
-1. 在Google cloud頁面的右上角，按一下「主控台」 ****。
+1. 在Google雲端頁面的右上角附近，選取&#x200B;**[!UICONTROL Console]**。
 
    如有必要，請使用您的Google帳戶憑證登入&#x200B;**[!UICONTROL 以查看**[!UICONTROL  Console ]**選項。]**
 
-1. 在「控制面板」頁面的&#x200B;**[!UICONTROL Google Cloud Platform]**&#x200B;右側，按一下「專案」下拉式清單以開啟「選取專案」對話方塊。
-1. 在「選取專案」對話方塊中，點選「**[!UICONTROL 新增專案]**」。
+1. 在「控制面板」頁面的&#x200B;**[!UICONTROL Google Cloud Platform]**&#x200B;右側，選取「專案」下拉式清單以開啟「選取專案」對話方塊。
+1. 在「選擇項目」對話框中，選擇「新建項目」****。
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
@@ -468,22 +468,22 @@ Google會定期變更其使用者介面。 因此，將影片發佈至YouTube的
 
    您的專案ID以您的專案名稱為基礎。 因此，請謹慎選擇專案名稱；建立後無法變更。 此外，您之後在Experience Manager中設定YouTube時，必須再次輸入相同的專案ID。 所以，把它寫下來。
 
-1. 按一下&#x200B;**[!UICONTROL 建立]**。
+1. 選擇 **[!UICONTROL 建立]**。
 
 1. 執行下列任一操作：
 
-   * 在專案的控制面板上，在「快速入門」卡片中，點選&#x200B;**[!UICONTROL 探索並啟用API]**。
-   * 在專案的控制面板上，在API卡片中，點選&#x200B;**[!UICONTROL 前往API overview]**。
+   * 在專案的控制面板上，在「快速入門」卡片中，選取「**[!UICONTROL 探索並啟用API]**」。
+   * 在專案的控制面板上，在API卡片中，選取&#x200B;**[!UICONTROL 前往API概覽]**。
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. 在「API與服務」頁面頂端附近，點選「 **[!UICONTROL 啟用API與服務」]**。
-1. 在「API資料庫」頁面的左側，在&#x200B;**[!UICONTROL Category]**&#x200B;下，點選&#x200B;**[!UICONTROL YouTube]**。 在頁面的右側，點選&#x200B;**[!UICONTROL YouTube Data API]**。
-1. 在YouTube Data API v3頁面上，點選&#x200B;**[!UICONTROL 啟用]**。
+1. 在「API與服務」頁面頂端附近，選取「啟用API與服務」**[!UICONTROL 。]**
+1. 在「API資料庫」頁面的左側，在&#x200B;**[!UICONTROL Category]**&#x200B;下，選取&#x200B;**[!UICONTROL YouTube]**。 在頁面右側，選取&#x200B;**[!UICONTROL YouTube資料API]**。
+1. 在「YouTube資料API v3」頁面上，選取&#x200B;**[!UICONTROL 啟用]**。
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
-1. 若要使用API，您需要憑證。 如有必要，請按一下&#x200B;**[!UICONTROL 建立憑據]**。
+1. 若要使用API，您需要憑證。 如有必要，請選擇&#x200B;**[!UICONTROL 建立憑據]**。
 
    ![6_5_googleaccount-api-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
 
@@ -493,11 +493,11 @@ Google會定期變更其使用者介面。 因此，將影片發佈至YouTube的
 
    * 從&#x200B;**[!UICONTROL 呼叫API的來源為何？]** 下拉式清單，選 **[!UICONTROL 取「Web伺服器」（例如node.js、Tomcat）]**。
 
-   * 從&#x200B;**[!UICONTROL 您正在訪問哪些資料？]** 下拉式清單，點選「使 **[!UICONTROL 用者資料」]**。
+   * 從&#x200B;**[!UICONTROL 您正在訪問哪些資料？]** 下拉式清單中，選取「使 **[!UICONTROL 用者資料」]**。
 
    ![6_5_googleaccount-api-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
-1. 點選&#x200B;**[!UICONTROL 我需要什麼憑證？]**
+1. 選擇&#x200B;**[!UICONTROL 我需要什麼憑據？]**
 1. 在「 **[!UICONTROL 新增認證至您的專案]** 」頁面的「建立OAuth 2.0用戶端ID **** 」標題下，視需要在「名稱」欄位中輸入唯一名稱。或者，您可以使用Google指定的預設名稱。
 1. 在「**[!UICONTROL 授權的JavaScript原始項]**」標題下，在文本欄位中輸入以下路徑，在路徑中替換您自己的域和埠號，然後按&#x200B;**[!UICONTROL Enter]**&#x200B;將路徑添加到清單中：
 
@@ -517,7 +517,7 @@ Google會定期變更其使用者介面。 因此，將影片發佈至YouTube的
 
    **注意**:上述路徑範例僅供說明之用。
 
-1. 按一下「**[!UICONTROL 建立OAuth用戶端ID]**」。
+1. 選擇&#x200B;**[!UICONTROL 建立OAuth客戶端ID]**。
 1. 在「 **[!UICONTROL 新增認證至您的專案]****** 」頁面的「設定OAuth 2.0同意書」畫面標題下方，選取您目前使用的Gmail電子郵件地址。
 
    ![6_5_googleaccount-api-createcredentials-accensscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
@@ -526,8 +526,8 @@ Google會定期變更其使用者介面。 因此，將影片發佈至YouTube的
 
    Experience Manager管理員向YouTube驗證時，會顯示同意畫面。 Experience Manager聯繫YouTube以獲取權限。
 
-1. 按一下&#x200B;**[!UICONTROL 繼續]**。
-1. 在「新增認證至您的專案」頁面的「下載認證」標題下，點選「 **[!UICONTROL 下載]** 」 **[!UICONTROL 步驟4]**。
+1. 選擇&#x200B;**[!UICONTROL 繼續]**。
+1. 在「向項目添加憑據」頁的「下載憑據&#x200B;]**」標題下，選擇「**[!UICONTROL &#x200B;下載&#x200B;]**」。**[!UICONTROL 
 
    ![6_5_googleaccount-api-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
 
@@ -535,7 +535,7 @@ Google會定期變更其使用者介面。 因此，將影片發佈至YouTube的
 
    稍後在Adobe Experience Manager中設定YouTube時，您需要此已下載的json檔案。
 
-1. 按一下&#x200B;**[!UICONTROL Done]**。
+1. 選擇&#x200B;**[!UICONTROL Done]**。
 
    登出您的Google帳戶。 現在建立YouTube管道。
 
@@ -550,10 +550,10 @@ Google會定期變更其使用者介面。 因此，將影片發佈至YouTube的
 **若要建立YouTube管道：**
 
 1. 前往[https://www.youtube.com](https://www.youtube.com/)並使用您的Google帳戶憑證登入。
-1. 在YouTube頁面的右上角，按一下您的描述檔圖片（也可以以實色圓圈內的字母顯示），然後點選&#x200B;**[!UICONTROL YouTube設定]**（圓齒輪圖示）。
-1. 在「概述」頁面的「其他功能」標題下，點選&#x200B;**[!UICONTROL 查看所有我的頻道或建立新頻道]**。
-1. 在「頻道」頁面上，點選&#x200B;**[!UICONTROL 建立新頻道]**。
-1. 在「品牌帳戶」頁面的「品牌帳戶名稱」欄位中，輸入公司名稱或您選擇要發佈視訊資產的任何其他管道名稱，然後按一下&#x200B;**[!UICONTROL 建立]**。
+1. 在YouTube頁面的右上角，選取您的描述檔圖片（也可以以字母形式顯示在實心彩色圓圈內），然後選取&#x200B;**[!UICONTROL YouTube設定]**（圓齒輪圖示）。
+1. 在「概述」頁面的「其他功能」標題下，選擇「**[!UICONTROL 查看所有我的頻道」或建立頻道]**。
+1. 在「通道」頁上，選擇&#x200B;**[!UICONTROL 建立新通道]**。
+1. 在「品牌帳戶」頁面的「品牌帳戶名稱」欄位中，輸入公司名稱或您選擇要發佈視訊資產的任何其他管道名稱，然後選取&#x200B;**[!UICONTROL 建立]**。
 
    記住你在這裡輸入的名字；您必須在Experience Manager中設定YouTube時，必須再次輸入。
 
@@ -561,9 +561,9 @@ Google會定期變更其使用者介面。 因此，將影片發佈至YouTube的
 
    現在您已新增要發佈的標籤。
 
-### 新增要發佈的標籤 {#adding-tags-for-publishing}
+### 新增發佈標籤 {#adding-tags-for-publishing}
 
-若要發佈至YouTube的影片，Experience Manager會將標籤關聯至一或多個YouTube頻道。 若要新增要發佈的標籤，請參閱[管理標籤](/help/sites-cloud/authoring/features/tags.md)。
+若要發佈至YouTube的影片，Experience Manager會將標籤關聯至一或多個YouTube頻道。 若要新增發佈標籤，請參閱[管理標籤](/help/sites-cloud/authoring/features/tags.md)。
 
 或者，如果您想在Experience Manager中使用預設標籤，可以跳過此任務並轉至[在Experience Manager](#setting-up-youtube-in-aem)中設定YouTube。
 
@@ -573,28 +573,28 @@ Google會定期變更其使用者介面。 因此，將影片發佈至YouTube的
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
-After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
+After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, select **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
-1. In the upper-left corner of Experience Manager, click the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on Author]**.
-1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
-1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
+1. In the upper-left corner of Experience Manager, select the Experience Manager logo, then in the left rail, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on Author]**.
+1. On the Agents of Author page, select **[!UICONTROL YouTube Publish (youtube)]**.
+1. On the toolbar, to the right of Settings, select **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
-1. Click **[!UICONTROL OK]**. -->
+1. Select **[!UICONTROL OK]**. -->
 
 ### 在Experience Manager中設定YouTube {#setting-up-youtube-in-aem}
 
 從Experience Manager6.4開始，引入新的觸控使用者介面方法，以在Experience Manager中設定YouTube發佈。 根據您使用的Experience Manager安裝例項，執行下列其中一項操作：
 
-* 若要在6.4之前的Experience Manager中設定YouTube，請參閱[在6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before)之前的Experience Manager中設定YouTube 。
+* 若要在6.4之前的Experience Manager中設定YouTube，請參閱[在6.4之前的Experience Manager中設定YouTube 。](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before)
 * 若要在Experience Manager6.4或更新版本中設定YouTube，請參閱[在Experience Manager6.4和更新版本中設定YouTube](#setting-up-youtube-in-aem-and-later)。
 
 #### 在Experience Manager6.4和更新版本中設定YouTube {#setting-up-youtube-in-aem-and-later}
 
 1. 請務必以管理員身分登入您的Dynamic Media例項。
-1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「**[!UICONTROL Tools]**（槌子圖示）> **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube Publishing Configuration]**」。
-1. 點選&#x200B;**[!UICONTROL global]**（請勿選取）。
+1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，導覽至「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube發佈設定]**」。
+1. 選擇&#x200B;**[!UICONTROL global]**（不選擇）。
 
-1. 在全域頁面的右上角附近，點選&#x200B;**[!UICONTROL Create]**。
+1. 在全局頁的右上角附近，選擇&#x200B;**[!UICONTROL Create]**。
 1. 在「建立YouTube設定」頁面的「Google cloud平台設定」下方的「應用程式名稱」欄位 **[!UICONTROL 中]** ，輸入Google專案ID。
 
    您最初設定Google Cloud設定時，已指定專案ID。
@@ -605,33 +605,33 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 使用純文字編輯器，開啟您先前在[設定Google雲端設定](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings)中下載並儲存的JSON檔案。
 1. 選取並複製整個JSON文字。
 1. 返回YouTube帳戶設定對話方塊。在「 **[!UICONTROL JSON設定」欄位中]** ，貼上JSON文字。
-1. 在頁面的右上角附近，點選&#x200B;**[!UICONTROL Save]**。
+1. 在頁面的右上角附近，選擇&#x200B;**[!UICONTROL Save]**。
 
    現在在Experience Manager中設定YouTube頻道。
 
-1. 點選「**[!UICONTROL 新增通道]**」。
+1. 選擇&#x200B;**[!UICONTROL 添加通道]**。
 1. 在「頻道名稱」欄位中，輸入您在「先前將一或多個頻道新增至YouTube ]**」任務中建立的頻道名稱。**[!UICONTROL 
 
    您可以視需要選擇新增說明。
 
-1. 點選&#x200B;**[!UICONTROL 新增]**。
+1. 選擇&#x200B;**[!UICONTROL 添加]**。
 1. YouTube/Google驗證隨即顯示。 如果您尚未登入Google雲端帳戶，請略過此步驟。
 
    * 輸入與上述Google專案ID和JSON文字相關聯的Google使用者名稱和密碼。
    * 視您的帳戶有多少管道而定，您會看到兩個或多個項目。 選取管道。 不要選擇電子郵件地址；它不是渠道。
-   * 在下一頁，點選&#x200B;**[!UICONTROL 接受]**&#x200B;以允許存取此通道。
+   * 在下一頁，選擇&#x200B;**[!UICONTROL 接受]**&#x200B;以允許訪問此通道。
 
-1. 點選&#x200B;**[!UICONTROL 允許]**。
+1. 選擇&#x200B;**[!UICONTROL 允許]**。
 
    現在設定發佈的標籤。
 
-1. **[!UICONTROL 設定要發佈的標籤]**  — 在「Cloud Services> YouTube」頁面上，點選鉛筆圖示以編輯您要使用的標籤清單。
-1. 若要以Experience Manager顯示可用標籤的清單，請點選下拉式清單圖示（倒轉插入號）。
-1. 若要新增標籤，請點選一或多個標籤。
+1. **[!UICONTROL 設定要發佈的標籤]**  — 在「Cloud Services> YouTube」頁面上，選取鉛筆圖示以編輯您要使用的標籤清單。
+1. 若要顯示Experience Manager中可用標籤的清單，請選取下拉式清單圖示（倒轉插入號）。
+1. 若要新增，請選取一或多個標籤。
 
-   若要刪除您已新增的標籤，請選取標籤，然後點選&#x200B;**[!UICONTROL X]**。
+   要刪除已添加的標籤，請選擇該標籤，然後選擇&#x200B;**[!UICONTROL X]**。
 
-1. 完成添加所需標籤後，點選&#x200B;**[!UICONTROL Save]**。
+1. 添加完所需標籤後，選擇&#x200B;**[!UICONTROL Save]**。
 
    現在您可將影片發佈至YouTube頻道。
 
@@ -639,10 +639,10 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 請務必以管理員身分登入您的Dynamic Media例項。
 
-1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 部署]** > **[!UICONTROL Cloud Services]**」。
-1. 在「協力廠商服務」標題下方的「YouTube」下，點選「**[!UICONTROL 立即設定]**」。
+1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，導覽至&#x200B;**[!UICONTROL Tools]**（槌子圖示）> **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**。
+1. 在「協力廠商服務」標題下方的「YouTube」下方，選取「**[!UICONTROL 立即設定]**」。
 1. 在「建立配置」對話框中，在相應欄位中輸入標題（必填）和名稱（選填）。
-1. 點選&#x200B;**[!UICONTROL 建立]**。
+1. 選擇 **[!UICONTROL 建立]**。
 1. 在「YouTube帳戶設定」對話方塊的「應用程式名 **[!UICONTROL 稱」欄位中]** ，輸入Google專案ID。
 
    您在先前[設定的Google雲端設定](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings)時指定了專案ID。
@@ -651,37 +651,37 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 使用純文字編輯器，開啟您先前在「設定Google雲端」設定工作中下載並儲存的JSON檔案。
 1. 選取並複製整個JSON文字。
 1. 返回YouTube帳戶設定對話方塊。在「 **[!UICONTROL JSON設定」欄位中]** ，貼上JSON文字。
-1. 點選&#x200B;**[!UICONTROL 確定]**。
+1. 選擇&#x200B;**[!UICONTROL OK]**。
 
    現在在Experience Manager中設定YouTube頻道。
 
-1. 在「可用頻道」 **[!UICONTROL 的右側]**，點 **選+**  (加號圖示)。
+1. 在&#x200B;**[!UICONTROL 可用通道]**&#x200B;的右側，選擇&#x200B;**+**（加號表徵圖）。
 1. 在「YouTube頻道設定」對話方塊的「標題」欄位中，輸入您在「先前新增一或多個頻道至YouTube」工作中建立的頻道名稱 **** 。
 
    您可以視需要選擇新增說明。
 
-1. 點選&#x200B;**[!UICONTROL 確定]**。
+1. 選擇&#x200B;**[!UICONTROL OK]**。
 1. YouTube/Google驗證隨即顯示。 如果您尚未登入Google雲端帳戶，請略過此步驟。
 
    * 輸入與上述Google專案ID和JSON文字相關聯的Google使用者名稱和密碼。
    * 視您的帳戶有多少管道而定，您會看到兩個或多個項目。 選取管道。 不要選擇電子郵件地址；它不是渠道。
-   * 在下一頁，點選&#x200B;**[!UICONTROL 接受]**&#x200B;以允許存取此通道。
+   * 在下一頁，選擇&#x200B;**[!UICONTROL 接受]**&#x200B;以允許訪問此通道。
 
-1. 點選&#x200B;**[!UICONTROL 允許]**。
+1. 選擇&#x200B;**[!UICONTROL 允許]**。
 
    現在設定發佈的標籤。
 
-1. **[!UICONTROL 設定要發佈的標籤]**  — 在「Cloud Services> YouTube」頁面上，點選鉛筆圖示以編輯您要使用的標籤清單。
-1. 若要以Experience Manager顯示可用標籤的清單，請點選下拉式清單圖示（倒轉插入號）。
-1. 若要新增標籤，請點選一或多個標籤。
+1. **[!UICONTROL 設定要發佈的標籤]**  — 在「Cloud Services> YouTube」頁面上，選取鉛筆圖示以編輯您要使用的標籤清單。
+1. 若要顯示Experience Manager中可用標籤的清單，請選取下拉式清單圖示（倒轉插入號）。
+1. 若要新增，請選取一或多個標籤。
 
-   若要刪除您已新增的標籤，請選取標籤，然後點選&#x200B;**X**。
+   要刪除已添加的標籤，請選擇該標籤，然後選擇&#x200B;**X**。
 
-1. 添加完所需標籤後，點選&#x200B;**[!UICONTROL OK]**。
+1. 添加完所需標籤後，選擇&#x200B;**[!UICONTROL OK]**。
 
    現在您可將影片發佈至YouTube頻道。
 
-### （選用）自動設定已上傳影片的預設YouTube屬性 {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
+### （選用）自動設定您所上傳影片的預設YouTube屬性 {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
 您可以選擇在上傳影片時自動設定YouTube屬性。 在Experience Manager中建立中繼資料處理設定檔。
 
@@ -689,11 +689,11 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 **若要自動設定已上傳影片的預設YouTube屬性：**
 
-1. 在Experience Manager的左上角，按一下Experience Manager標誌，然後在左側導軌中，按一下「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料結構]**」。
-1. 按一下&#x200B;**[!UICONTROL default]**。 （請勿在「預設」左側的選取方塊中新增核取記號。）
-1. 在&#x200B;**[!UICONTROL default]**&#x200B;頁面上，選中&#x200B;**[!UICONTROL video]**&#x200B;左側的框，然後按一下&#x200B;**[!UICONTROL 編輯]**。
-1. 在「元資料結構編輯器」頁上，按一下&#x200B;**[!UICONTROL Advanced]**&#x200B;頁簽。
-1. 在「YouTube發佈」標題下，按一下「 **[!UICONTROL YouTube類別」]**。
+1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，導覽至「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料結構]**」。
+1. 選擇&#x200B;**[!UICONTROL default]**。 （請勿在「預設」左側的選取方塊中新增核取記號。）
+1. 在&#x200B;**[!UICONTROL default]**&#x200B;頁面上，選中&#x200B;**[!UICONTROL video]**&#x200B;左側的框，然後選擇&#x200B;**[!UICONTROL Edit]**。
+1. 在「元資料結構編輯器」頁上，選擇&#x200B;**[!UICONTROL Advanced]**&#x200B;頁簽。
+1. 在「YouTube發佈」標題下，選取&#x200B;**[!UICONTROL YouTube類別]**。
 1. 在頁面右側的&#x200B;**[!UICONTROL Settings]**&#x200B;標籤下，執行下列操作：
 
    * 在&#x200B;**[!UICONTROL 映射至屬性]**文字欄位中，選取並複製值。
@@ -702,7 +702,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    * 在&#x200B;**[!UICONTROL Choices]**下，選擇並複製您要使用的預設值（如「人物和部落格」或「科學與技術」）。
 將複製的值貼到開啟的文字編輯器中。 稍後當您建立中繼資料處理設定檔時，將需要此值。 將文字編輯器保持開啟。
 
-1. 在「YouTube發佈」標題下，按一下&#x200B;**[!UICONTROL YouTube Privacy]**。
+1. 在「YouTube發佈」標題下，選取&#x200B;**[!UICONTROL YouTube隱私權]**。
 1. 在頁面右側的&#x200B;**[!UICONTROL Settings]**&#x200B;標籤下，執行下列操作：
 
    * 在&#x200B;**[!UICONTROL 映射至屬性]**文字欄位中，選取並複製值。
@@ -711,35 +711,35 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    * 在&#x200B;**[!UICONTROL Choices]**下，選擇並複製您要使用的預設值。 請注意，「選擇」會分組為兩組。 配對中的底部欄位是您要複製的預設值，例如公用、未列出或私用。
 將複製的值貼到開啟的文字編輯器中。 稍後當您建立中繼資料處理設定檔時，將需要此值。 將文字編輯器保持開啟。
 
-1. 在「元資料結構編輯器」頁的右上角附近，按一下「**[!UICONTROL 取消」]**。
-1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，按一下「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料描述檔]**」。
+1. 在「元資料結構編輯器」頁的右上角附近，選擇&#x200B;**[!UICONTROL 取消]**。
+1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，選取「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料描述檔]**」。
 
-1. 在「中繼資料描述檔」頁面的右上角附近，按一下&#x200B;**[!UICONTROL Create]**。
-1. 在「新增中繼資料描述檔」對話方塊的「描述檔標題 **[!UICONTROL 」文字欄位中，輸入名稱，]** 然後按一下「 `YouTube Video` 建立 ****」。
-1. 在「元資料配置檔案編輯器」頁上，按一下&#x200B;**[!UICONTROL Advance]**&#x200B;頁簽。
+1. 在「元資料配置檔案」頁的右上角附近，選擇&#x200B;**[!UICONTROL Create]**。
+1. 在「添加元資料配置檔案」對話框的&#x200B;**[!UICONTROL 配置檔案標題]**&#x200B;文本欄位中，輸入名稱`YouTube Video`，然後選擇&#x200B;**[!UICONTROL 建立]**。
+1. 在「元資料配置檔案編輯器」頁上，選擇&#x200B;**[!UICONTROL Advance]**&#x200B;頁簽。
 1. 執行下列動作，將複製的YouTube Publishing值新增至設定檔：
 
-   * 在頁面右側，按一下&#x200B;**[!UICONTROL Build Form]**&#x200B;標籤。
+   * 在頁面的右側，選擇&#x200B;**[!UICONTROL Build Form]**&#x200B;標籤。
    * （可選）將標籤為&#x200B;**[!UICONTROL Section Header]**&#x200B;的元件拖到左側，並將其拖放到表單區域中。
-   * （可選）按一下「**[!UICONTROL 欄位標籤]**」以選取元件。
+   * （可選）選擇&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;以選擇元件。
    * （可選）在頁面右側的「設定」標籤下，在「欄位標籤」文本欄位中，輸入`YouTube Publishing`。
-   * 按一下&#x200B;**[!UICONTROL 建置表單]**&#x200B;標籤，然後拖曳標示為&#x200B;**[!UICONTROL 多值文字]**&#x200B;的元件，並將其拖曳至您建立的&#x200B;**[!UICONTROL YouTube Publishing]**&#x200B;標題下方。
+   * 選取&#x200B;**[!UICONTROL 建置表單]**&#x200B;標籤，然後拖曳標示為&#x200B;**[!UICONTROL 多值文字]**&#x200B;的元件，並將其拖曳至您建立的&#x200B;**[!UICONTROL YouTube Publishing]**&#x200B;標題下方。
 
-   * 要選擇元件，請按一下「欄位標籤&#x200B;]**」。**[!UICONTROL 
+   * 要選擇元件，請選擇&#x200B;**[!UICONTROL 欄位標籤]**。
    * 在頁面右側的「設定」標籤下方，將您先前複製的YouTube發佈值（欄位標籤值和對應至屬性值）貼入表單上各自的欄位。 將選擇值貼入預設值欄位。
 
 1. 執行下列動作，將複製的YouTube隱私權值新增至設定檔：
 
-   * 在頁面右側，按一下&#x200B;**[!UICONTROL Build Form]**&#x200B;標籤。
+   * 在頁面的右側，選擇&#x200B;**[!UICONTROL Build Form]**&#x200B;標籤。
    * （可選）將標籤為&#x200B;**[!UICONTROL Section Header]**&#x200B;的元件拖到左側，並將其拖放到表單區域中。
-   * （可選）按一下「**[!UICONTROL 欄位標籤]**」以選取元件。
+   * （可選）選擇&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;以選擇元件。
    * （可選）在頁面右側的「設定」標籤下，在「欄位標籤」文本欄位中，輸入`YouTube Privacy`。
-   * 按一下&#x200B;**[!UICONTROL 建置表單]**&#x200B;標籤，然後拖曳標示為&#x200B;**[!UICONTROL 多值文字]**&#x200B;的元件，並將其拖曳至您建立的&#x200B;**[!UICONTROL YouTube隱私權]**&#x200B;標題下方。
+   * 選取「**[!UICONTROL 建置表單]**」標籤，然後拖曳標示為「**[!UICONTROL 多值文字]**」的元件，並將其拖曳至您建立的&#x200B;**[!UICONTROL YouTube隱私權]**&#x200B;標題下方。
 
-   * 要選擇元件，請按一下「欄位標籤&#x200B;]**」。**[!UICONTROL 
+   * 要選擇元件，請選擇&#x200B;**[!UICONTROL 欄位標籤]**。
    * 在頁面右側的「設定」標籤下方，將您先前複製的YouTube發佈值（欄位標籤值和對應至屬性值）貼入表單上各自的欄位。 將選擇值貼入預設值欄位。
 
-1. 在頁面的右上角附近，按一下「儲 **[!UICONTROL 存」]**。
+1. 在頁面的右上角附近，選擇&#x200B;**[!UICONTROL Save]**。
 1. 將YouTube發佈中繼資料設定檔套用至您要上傳影片的資料夾。 您必須同時設定「中繼資料描述檔」和「視訊描述檔」。
 
    請參 [閱中繼資料](/help/assets/metadata-profiles.md)[描述檔和視訊描述檔](/help/assets/dynamic-media/video-profiles.md)。
@@ -756,32 +756,32 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 >[!NOTE]
 若要從YouTube發佈內容，Experience Manager會使用&#x200B;**[!UICONTROL 發佈至YouTube]**&#x200B;工作流程，讓您監控進度並檢視任何失敗資訊。
-請參閱 [監控視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
+請參閱[監視視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 如需更詳細的進度資訊，您可以在復寫下監控YouTube記錄檔。 但請注意，此類監控需要管理員存取權。
 
 **若要將影片發佈至您的YouTube頻道：**
 
 1. 在Experience Manager中，導覽至您要發佈至YouTube管道的視訊資產。
 1. 選取視訊資產（最適化視訊集）。
-1. 在工具欄上，按一下&#x200B;**[!UICONTROL 屬性]**。
-1. 在「基本」頁簽的「元資料」標題下，按一下「標籤」欄位右側的&#x200B;**[!UICONTROL 開啟選擇對話框]**。
+1. 在工具欄上，選擇&#x200B;**[!UICONTROL 屬性]**。
+1. 在「基本」頁簽的「元資料」標題下，選擇「標籤」欄位右側的&#x200B;**[!UICONTROL 開啟選擇對話框]**。
 1. 在「選取標籤」頁面上，導覽至您要使用的標籤，然後選取一或多個標籤。
 
    請記住，標籤必須與YouTube管道相關聯。
 
-1. 在頁面的右上角，按一下&#x200B;**[!UICONTROL Select]**。
-1. 在視訊屬性頁面的右上角，按一下「**[!UICONTROL 儲存並關閉]**」。
-1. 在工具列上，按一下&#x200B;**[!UICONTROL 快速發佈]**。
+1. 在頁面的右上角，選擇&#x200B;**[!UICONTROL Select]**。
+1. 在視訊屬性頁面的右上角，選取&#x200B;**[!UICONTROL 儲存並關閉]**。
+1. 在工具欄上，選擇&#x200B;**[!UICONTROL 快速發佈]**。
 
-   另請參閱[將發佈管理與Experience Manager網站搭配使用](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)。
+   另請參閱[使用發佈管理搭配Experience Manager網站](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)。
 
    您可以選擇驗證您的YouTube頻道上已發佈的視訊。
 
-### （選用）驗證YouTube上發佈的影片 {#optional-verifying-the-published-video-on-youtube}
+### （選用）驗證已發佈的YouTube影片 {#optional-verifying-the-published-video-on-youtube}
 
 您可以選擇監控YouTube發佈（或取消發佈）的進度。
 
-請參閱 [監控視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
+請參閱[監視視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 
 發佈時間可能會因許多因素而大不相同，這些因素包括主要來源視訊的格式、檔案大小和上傳流量。 發佈程式可能需要幾分鐘到數小時的時間。 另外，更高解析度的格式的呈現速度要慢得多。 例如，720p和1080p的顯示時間比480p要長。
 
@@ -800,11 +800,11 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    請記住，YouTube URL僅可在&#x200B;*之後複製*，而您已先將&#x200B;*已發佈*&#x200B;視訊資產複製到YouTube。
 
-1. 在工具欄上，按一下&#x200B;**[!UICONTROL 屬性]**。
-1. 按一下&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤。
+1. 在工具欄上，選擇&#x200B;**[!UICONTROL 屬性]**。
+1. 選擇&#x200B;**[!UICONTROL Advanced]**&#x200B;頁簽。
 1. 在「YouTube發佈」標題下的「YouTube URL List」（ URL清單）中，選取URL文字，並將其複製至網頁瀏覽器，以預覽資產或新增至您的網頁內容頁面。
 
-### 取消發佈影片以將其從YouTube中移除 {#unpublishing-videos-to-remove-them-from-youtube}
+### 取消發佈影片，以便從YouTube中移除影片 {#unpublishing-videos-to-remove-them-from-youtube}
 
 在Experience Manager中取消發佈視訊資產時，視訊會從YouTube移除。
 
@@ -813,24 +813,24 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 >[!NOTE]
 若要從YouTube移除內容，Experience Manager會使用&#x200B;**[!UICONTROL 從YouTube]**&#x200B;取消發佈工作流程，讓您監控進度並檢視任何失敗資訊。
-請參閱 [監控視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
+請參閱[監視視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 
-若要取消發佈影片以從YouTube中移除影片：
+**若要取消發佈影片以從YouTube中移除影片：**
 
 1. 導覽至您要從YouTube管道取消發佈的視訊資產。
 1. 在資產選取模式中，選取一或多個已發佈的視訊資產。
-1. 在工具欄上，按一下&#x200B;**[!UICONTROL 管理出版物]**。 如有必要，點選工具列上的三個點圖示(`. . .`)，以查看&#x200B;**[!UICONTROL 管理出版物]**。
-1. 在「管理出版物」頁面，點選&#x200B;**[!UICONTROL 取消發佈]**。
-1. 在頁面的右上角，點選&#x200B;**[!UICONTROL Next]**。
-1. 在頁面的右上角，點選&#x200B;**[!UICONTROL 取消發佈]**。
+1. 在工具欄上，選擇&#x200B;**[!UICONTROL 管理出版物]**。 如有必要，請在工具列上選取三個點的圖示(`. . .`)，以查看&#x200B;**[!UICONTROL 管理出版物]**。
+1. 在管理出版物頁面上，選擇&#x200B;**[!UICONTROL 取消發佈]**。
+1. 在頁面的右上角，選擇&#x200B;**[!UICONTROL Next]**。
+1. 在頁面的右上角，選取&#x200B;**[!UICONTROL 取消發佈]**。
 
-## 監控視訊編碼和YouTube發佈進度 {#monitoring-video-encoding-and-youtube-publishing-progress}
+## 監視視訊編碼和YouTube發佈進度 {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 將新視訊上傳至已套用視訊編碼的資料夾時，或將視訊發佈至YouTube、監控視訊編碼/Youtube發佈的進度（或失敗）。 實際YouTube發佈進度僅透過記錄檔提供。 但無論失敗或成功，都會以下列程式中說明的其他方式列出。 此外，當YouTube發佈工作流程或視訊編碼完成或中斷時，您會收到電子郵件通知。
 
-### 監控進度 {#monitoring-progress}
+### 監視進度 {#monitoring-progress}
 
-**若要監控進度，包括編碼失敗/YouTube發佈：**
+您可以監控進度，包括編碼失敗/YouTube發佈。
 
 1. 在資產資料夾中檢視視訊編碼進度：
 
@@ -842,11 +842,11 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
-   預設不會顯示此欄。若要啟用欄，請從檢視下拉 **[!UICONTROL 式選單中選取「檢視設定]** 」，然後新增「處理狀態」欄，然後點選或按一下「更新」 ********。
+   預設不會顯示此欄。要啟用該列，請從視圖下拉菜單中選擇&#x200B;**[!UICONTROL 查看設定]**，然後添加&#x200B;**[!UICONTROL 處理狀態]**&#x200B;列並選擇&#x200B;**[!UICONTROL 更新]**。
 
    ![chlimage_1-431](/help/assets/dynamic-media/assets/chlimage_1-431.png)
 
-1. 在資產詳細資訊中檢視進度。 當您點選或按一下資產時，請開啟下拉式選單並選取「**[!UICONTROL 時間軸]**」。 若要將其縮小至編碼或YouTube發佈等工作流程活動，請選取「**[!UICONTROL 工作流程]**」。
+1. 在資產詳細資訊中檢視進度。 選取資產時，請開啟下拉式選單並選取&#x200B;**[!UICONTROL 時間軸]**。 若要將其縮小至編碼或YouTube發佈等工作流程活動，請選取「**[!UICONTROL 工作流程]**」。
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
@@ -867,7 +867,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
-   選取例項，然後點選或按一下「**[!UICONTROL 開啟歷史記錄]**」。
+   選擇實例並選擇&#x200B;**[!UICONTROL 開啟歷史記錄]**。
 
    ![chlimage_1-434](/help/assets/dynamic-media/assets/chlimage_1-434.png)
 
@@ -911,18 +911,18 @@ How you configure notification depends on whether you want notifications for You
 
 For YouTube publishing jobs, do the following:
 
-1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. On the Workflow Models page, select **[!UICONTROL Publish to YouTube]**, then tap **[!UICONTROL Edit]** on the toolbar.
-1. Near the upper-right corner of the Publish to YouTube workflow page, tap **[!UICONTROL Edit]**.
-1. Hover the mouse pointer on the YouTube Upload component, then tap once to display the inline toolbar.
+1. In Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. On the Workflow Models page, select **[!UICONTROL Publish to YouTube]**, then select **[!UICONTROL Edit]** on the toolbar.
+1. Near the upper-right corner of the Publish to YouTube workflow page, select **[!UICONTROL Edit]**.
+1. Hover the mouse pointer on the YouTube Upload component, then select once to display the inline toolbar.
 
    ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
 
-1. On the inline toolbar, tap the Configuration icon (wrench). Click the **[!UICONTROL Arguments]** tab.
+1. On the inline toolbar, select the Configuration icon (wrench). Select the **[!UICONTROL Arguments]** tab.
 
    ![6_5_publishtoyoutubeworkflow-configurationicon](assets/6_5_publishtoyoutubeworkflow-configurationicon.png)
 
-1. In the YouTube Upload Process - Step Properties dialog box, tap the **[!UICONTROL Arguments]** tab.
+1. In the YouTube Upload Process - Step Properties dialog box, select the **[!UICONTROL Arguments]** tab.
 
    ![6_5_publishtoyoutubeworkflow-arguments-tab](assets/6_5_publishtoyoutubeworkflow-arguments-tab.png)
 
@@ -938,8 +938,8 @@ For YouTube publishing jobs, do the following:
    >
    >These emails are specific to YouTube and are in addition to the generic workflow email notifications. As a result, you may receive two sets of email notification - the generic notification available in the **[!UICONTROL Day CQ Workflow Email Notification Service]** and one specific to YouTube depending on your configuration settings.
 
-1. When you are finished, near the upper-right corner of the dialog box, tap the **[!UICONTROL Done]** icon (check mark).
-1. On the Publish to YouTube workflow page, near the upper-right corner, tap **[!UICONTROL Sync]**.
+1. When you are finished, near the upper-right corner of the dialog box, select the **[!UICONTROL Done]** icon (check mark).
+1. On the Publish to YouTube workflow page, near the upper-right corner, select **[!UICONTROL Sync]**.
 
 -->
 
@@ -958,7 +958,7 @@ For YouTube publishing jobs, do the following:
 
 也會列出所有&#x200B;*已發佈*&#x200B;影片的表格，讓您能夠根據總視訊開始次數追蹤網站上最常檢視的影片。
 
-當您點選清單中的影片名稱時，它會以折線圖的形式顯示影片的對象保留率（下拉式清單）報表。 圖表會顯示視訊播放期間任何指定時刻的檢視次數。 當您播放視訊時，垂直條會與播放器中的時間指示器同步追蹤。 折線圖資料中斷，指出您的受眾從不感興趣的位置下降。
+當您在清單中選取視訊名稱時，該名稱會以折線圖的形式顯示視訊的對象保留（下拉式）報表。 圖表會顯示視訊播放期間任何指定時刻的檢視次數。 當您播放視訊時，垂直條會與播放器中的時間指示器同步追蹤。 折線圖資料中斷，指出您的受眾從不感興趣的位置下降。
 
 如果視訊在Adobe Experience Manager Dynamic Media外部編碼，就無法使用對象保留率（下拉式清單）圖表和表格中的播放百分比資料。
 
@@ -967,22 +967,22 @@ For YouTube publishing jobs, do the following:
 
 依預設，當您首次輸入視訊報表時，報表會顯示從當月的第一個開始，到當月的日期結束的視訊資料。 不過，您可以指定自己的日期範圍來覆寫預設日期範圍。 下次輸入視訊報表時，會使用您指定的日期範圍。
 
-為了讓視訊報表正常運作，設定Dynamic MediaCloud Services時，會自動建立報表套裝ID。 同時，報表套裝ID會推送至發佈伺服器，以便您在預覽資產時能使用「複製URL」功能。 不過，此功能需要已設定發佈伺服器。 如果未設定發佈伺服器，您仍可以發佈以查看視訊報表。 不過，您必須返回「Dynamic Media雲端設定」，然後點選「**[!UICONTROL 確定」]**。
+為了讓視訊報表正常運作，設定Dynamic MediaCloud Services時，會自動建立報表套裝ID。 同時，報表套裝ID會推送至發佈伺服器，以便您在預覽資產時能使用「複製URL」功能。 不過，此功能需要已設定發佈伺服器。 如果未設定發佈伺服器，您仍可以發佈以查看視訊報表。 不過，您必須返回Dynamic Media雲端設定，並選取&#x200B;**[!UICONTROL OK]**。
 
-若要檢視視訊報表：
+**若要檢視視訊報表：**
 
-1. 在Experience Manager的左上角，點選Experience Manager標誌，然後在左側導軌中，點選「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產]** > **[!UICONTROL 視訊報表]**」。
+1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，導覽至「**[!UICONTROL 工具]**（槌子圖示）> **[!UICONTROL 資產]** > **[!UICONTROL 視訊報表]**」。
 1. 在視訊報表頁面上，執行下列其中一項作業：
 
-   * 在右上角附近，點選「 **[!UICONTROL 重新整理視訊報表]**」圖示。
+   * 在右上角附近，選取「**[!UICONTROL 重新整理視訊報表]**」圖示。
 只有在報表的結束日期為當天時，才使用「重新整理」。 此功能可確保您查看自您上次執行報表以來發生的視訊追蹤。
 
-   * 在右上角附近，點選「**[!UICONTROL 日期選擇器]**」圖示。
-指定您要視訊資料的開始和結束日期範圍，然後點選**[!UICONTROL 執行報表]**。
+   * 在右上角附近，選取「**[!UICONTROL 日期選擇器]**」圖示。
+指定您要視訊資料的開始和結束日期範圍，然後選取**[!UICONTROL 執行報表]**。
 
-   「排名在前的量度」群組方塊可識別您網站上所有*已發佈*視訊的各種匯總測量。
+   「排名在前的量度」群組方塊可識別您網站上所有&#x200B;*已發佈*&#x200B;影片的各種匯總測量。
 
-1. 在列出最常發佈影片的表格中，點選影片名稱以播放影片，並查看影片的對象保留率（下拉式清單）報表。
+1. 在列出最熱門發佈影片的表格中，選取影片名稱以播放影片，並查看影片的對象保留率（下拉式清單）報表。
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT - SDK ONLY AVAILABLE INTERNALLY NOW 
 ### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
@@ -1048,7 +1048,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## 為視頻添加字幕 {#adding-captions-to-video}
+## 為視頻添加字幕或字幕 {#adding-captions-to-video}
 
 您可以在單一影片或最適化影片集中新增字幕，將影片的觸角延伸至全球市場。 通過添加字幕，您可以避免對音頻進行重音，或者使用母語者為每種語言重新錄制音頻。 影片以錄制的語言播放。 外語字幕出現，使不同語言的人仍然能夠理解音頻部分。
 
@@ -1075,7 +1075,7 @@ Dynamic Media可將註解檔案轉換為JSON（JavaScript物件標籤法）格�
 
    為獲得最佳結果，請使用Internet Explorer 9或更新版本、Google Chrome或Safari中的工具。
 
-   在工具的&#x200B;**[!UICONTROL 輸入視訊檔案]**&#x200B;欄位中，貼上視訊檔案的複製URL，然後按一下&#x200B;**[!UICONTROL 載入]**。 請參 [閱取得資產的URL](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) ，以取得視訊檔案本身的URL，然後您可將它貼入視訊檔案 **[!UICONTROL 的「輸入URL」欄位中]**。然後，Internet Explorer、Chrome或Safari就可以原生播放視訊。
+   在工具的&#x200B;**[!UICONTROL 輸入視訊檔案]**&#x200B;欄位中，貼上視訊檔案的複製URL，然後選取&#x200B;**[!UICONTROL 載入]**。 請參閱[取得資產](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)的URL ，以取得視訊檔案本身的URL，然後您可將該URL貼入視訊檔案欄位&#x200B;**[!UICONTROL 的「輸入URL」。]**&#x200B;然後，Internet Explorer、Chrome或Safari就可以原生播放視訊。
 
    現在請依照網站的螢幕指示製作和儲存您的WebVTT檔案。 完成後，複製字幕檔案內容並貼到純文字編輯器中，然後以VTT副檔名儲存。
 
@@ -1093,13 +1093,13 @@ Dynamic Media可將註解檔案轉換為JSON（JavaScript物件標籤法）格�
 
 1. 執行下列任一操作：
 
-   * 如需快顯視訊檢視器體驗，請點選&#x200B;**[!UICONTROL URL]**。 在「URL」對話方塊中，選取URL並將其複製到剪貼簿，然後將URL移至簡單文字編輯器中。 使用下列語法附加視訊的複製URL:
+   * 對於快顯視訊檢視器體驗，請選取&#x200B;**[!UICONTROL URL]**。 在「URL」對話方塊中，選取URL並將其複製到剪貼簿，然後將URL移至簡單文字編輯器中。 使用下列語法附加視訊的複製URL:
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
       注意標題路徑末尾的`,1`。 緊接在路徑中的VTT檔案名副檔名後面，您可以選擇性地啟用（開啟）或停用（關閉）視訊播放器列上的隱藏式字幕按鈕，方法是分別將設為`,1`或`,0`。
 
-   * 如需內嵌的視訊檢視器體驗，請點選「**[!UICONTROL 內嵌程式碼]**」。 在「內嵌程式碼」對話方塊中，選取內嵌程式碼，並將其複製到剪貼簿，然後將程式碼貼到簡單的文字編輯器中。 使用下列語法附加複製的內嵌程式碼：
+   * 針對內嵌的視訊檢視器體驗，選取&#x200B;**[!UICONTROL 內嵌程式碼]**。 在「內嵌程式碼」對話方塊中，選取內嵌程式碼，並將其複製到剪貼簿，然後將程式碼貼到簡單的文字編輯器中。 使用下列語法附加複製的內嵌程式碼：
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
@@ -1107,7 +1107,7 @@ Dynamic Media可將註解檔案轉換為JSON（JavaScript物件標籤法）格�
 
 ## 新增章節標籤至視訊 {#adding-chapter-markers-to-video}
 
-您可以將章節標籤新增至單一視訊或最適化視訊集，讓您更輕鬆觀看和導覽長型視訊。 使用者播放視訊時，可以按一下視訊時間軸上的章節標籤（也稱為視訊清除程式）。 他們可輕鬆導覽至其興趣點，或立即跳至新內容、訓練和示範。
+您可以將章節標籤新增至單一視訊或最適化視訊集，讓您更輕鬆觀看和導覽長型視訊。 當使用者播放視訊時，可以選取視訊時間軸上的章節標籤（也稱為視訊清除程式）。 他們可輕鬆導覽至其興趣點，或立即跳至新內容、訓練和示範。
 
 >[!NOTE]
 使用的視訊播放器必須支援使用章節標籤。 Dynamic Media視訊播放器確實支援章節標籤，但使用協力廠商視訊播放器則否。
@@ -1160,9 +1160,9 @@ Cost-efficient access to rapidly evolving technology.
        <td>
        <ol>
        <li>導覽至您要與您上傳之章節檔案建立關聯之<i>已發佈</i>視訊資產。 請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。請參閱<a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">發佈資產。</a></li>
-       <li>從下拉式選單中，按一下或點選「<strong>檢視器</strong>」。</li>
-       <li>在左側導軌中，點選或按一下視訊檢視器預設集名稱。 視訊的預覽會在個別頁面中開啟。</li>
-       <li>在左側邊欄的底部，按一下<strong>URL</strong>。</li>
+       <li>從下拉式選單中，選取<strong>檢視器</strong>。</li>
+       <li>在左側邊欄中，選取視訊檢視器預設集名稱。 視訊的預覽會在個別頁面中開啟。</li>
+       <li>在左側邊欄的底部，選取<strong>URL</strong>。</li>
        <li>在「URL」對話方塊中，選取URL並將其複製到剪貼簿，然後將URL移至簡單文字編輯器中。</li>
        <li>使用下列語法附加視訊的複製URL，以便將其與複製的URL建立關聯至您的章節檔案：<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
@@ -1172,9 +1172,9 @@ Cost-efficient access to rapidly evolving technology.
        <td>
        <ol>
        <li>導覽至您要與您上傳之章節檔案建立關聯之<i>已發佈</i>視訊資產。 請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。請參閱<a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">發佈資產。</a></li>
-       <li>從下拉式選單中，按一下或點選「<strong>檢視器</strong>」。</li>
-       <li>在左側導軌中，點選或按一下視訊檢視器預設集名稱。 視訊的預覽會在個別頁面中開啟。</li>
-       <li>在左側邊欄的底部，按一下<strong>Embed</strong>。</li>
+       <li>從下拉式選單中，選取<strong>檢視器</strong>。</li>
+       <li>在左側邊欄中，選取視訊檢視器預設集名稱。 視訊的預覽會在個別頁面中開啟。</li>
+       <li>在左側邊欄的底部，選取<strong>Embed</strong>。</li>
        <li>在「內嵌程式碼」對話方塊中，選取整個程式碼，並複製到剪貼簿，然後貼到簡單的文字編輯器中。</li>
        <li>使用下列語法附加視訊的內嵌程式碼，以便將它與複製的URL建立關聯至章節檔案：<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt>"</code></li>
        </ol> </td>
@@ -1186,7 +1186,7 @@ Cost-efficient access to rapidly evolving technology.
 
 ## About video thumbnails {#about-video-thumbnails}
 
-A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to click on the video.
+A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to select the video.
 
 All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use, or you can select an image asset that you have already uploaded and *published* in your digital asset manager.
 
@@ -1206,25 +1206,25 @@ The ability to customize a video thumbnail is only available after you have appl
     * [Uploaded your videos to the folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
 1. Navigate to an uploaded video asset whose thumbnail image you want to change.
-1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, tap the video asset.
-1. On the toolbar, tap the **[!UICONTROL Properties** icon (a circle with an "i" in it).
-1. On the video's Properties page, tap **[!UICONTROL Change Thumbnail]**.
+1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, select the video asset.
+1. On the toolbar, select the **[!UICONTROL Properties** icon (a circle with an "i" in it).
+1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
 1. On the Change Thumbnail page, do one of the following:
 
     * To use a frame from the video as the new thumbnail:
 
-        * On the toolbar, tap **[!UICONTROL Select Frame from video]**.
-        * Tap the Play button, then tap the Pause button on the frame you want to capture as the video's new thumbnail.
+        * On the toolbar, select **[!UICONTROL Select Frame from video]**.
+        * Select the Play button, then select the Pause button on the frame you want to capture as the video's new thumbnail.
 
     * To use an image asset as the new thumbnail:
 
-        * On the toolbar, tap **[!UICONTROL Select Thumbnail from Assets]**.
-        * Tap **[!UICONTROL Select Thumbnail]**.
+        * On the toolbar, select **[!UICONTROL Select Thumbnail from Assets]**.
+        * Select **[!UICONTROL Select Thumbnail]**.
         * Navigate to a previously uploaded and published image asset you want to use. Note that the asset will automatically be resized to serve as a thumbnail image for the video.
-        * Select the image asset, then tap **[!UICONTROL Select]**.
+        * Select the image asset, then select **[!UICONTROL Select]**.
 
-1. On the Change Thumbnail page, tap **[!UICONTROL Save Change]**.
-1. On the video's Properties page, in the upper-right corner, tap **[!UICONTROL Save & Close]**.
+1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.
+1. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
 
 -->
 
@@ -1232,7 +1232,7 @@ The ability to customize a video thumbnail is only available after you have appl
 
 ## About video thumbnails in Dynamic Media Hybrid mode{#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
-You can choose from one of ten thumbnail images automatically generated by Dynamic Media to add to your video. The video player displays your selected thumbnail when a video asset is used with the Dynamic Media component in the authoring environment of Experience Manager Sites, Experience Manager Mobile, or Experience Manager Screens. The thumbnail serves as a static picture that best represents the contents of your entire video and further encourages users to click the Play button.
+You can choose from one of ten thumbnail images automatically generated by Dynamic Media to add to your video. The video player displays your selected thumbnail when a video asset is used with the Dynamic Media component in the authoring environment of Experience Manager Sites, Experience Manager Mobile, or Experience Manager Screens. The thumbnail serves as a static picture that best represents the contents of your entire video and further encourages users to select the Play button.
 
 Based on the total time of the video, Dynamic Media captures ten (default) thumbnail images at 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81%, and 91% into the video. The ten thumbnails persist meaning that if you decide to choose a different thumbnail later on, you do not need to regenerate the series. You preview the ten thumbnail images and then select the one you want to use with your video. If you want to change to default you can use CRXDE Lite to configure the time interval that thumbnail images are generated. For example, if you only wanted to generate a series of four evenly spaced thumbnail images from your video, you can configure the interval time at 24%, 49%, 74%, and 99%.
 
@@ -1249,15 +1249,15 @@ See also [About video thumbnails](/help/assets/dynamic-media/video.md#about-vide
 ### Adding a video thumbnail {#adding-a-video-thumbnail}
 
 1. Navigate to an uploaded video asset that you want to add a video thumbnail.
-1. In asset selection mode either from the List View or the Card View, tap the video asset.
-1. On the toolbar, tap the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
-1. On the video's Properties page, tap **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, on the toolbar, tap **[!UICONTROL Select Frame]**.
+1. In asset selection mode either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
+1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
+1. On the Change Thumbnail page, on the toolbar, select **[!UICONTROL Select Frame]**.
 
    Dynamic Media generates a series thumbnail images from your video, based on the default time interval or time interval you customized.
 
 1. Preview the generated thumbnail images, then select the one you want to add to your video.
-1. Tap **[!UICONTROL Save Change]**.
+1. Select **[!UICONTROL Save Change]**.
 
    The video's thumbnail image is updated to use the thumbnail you selected. If you later decide to change the thumbnail image, you can return to the **[!UICONTROL Change Thumbnail]** page and select a new one.
 
@@ -1277,21 +1277,21 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
 **To configure the default time interval that video thumbnails are generated,**
 
-1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. In Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 
 1. In the CRXDE Lite page, in the directory panel on the left, navigate t `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
-   if the directory panel is not visible, you may need to tap the >> icon to the left of the Home tab.
+   if the directory panel is not visible, you may need to select the >> icon to the left of the Home tab.
 
 1. On the lower-right panel, in the Properties tab, double-tap `thumbnailtime`.
 1. In the Edit thumbnailtime dialog box, use the text fields to enter interval values as percentages.
 
-    * Tap the plus sign (+) icon to add one or more interval value fields. You may need to scroll to the bottom of the dialog box to see the icon.
-    * Tap the minus sign (-) icon to the right of an interval value field to delete it from the list.
-    * Tap the up arrow icon and the down arrow icon to reorder the interval values.
+    * Select the plus sign (+) icon to add one or more interval value fields. You may need to scroll to the bottom of the dialog box to see the icon.
+    * Select the minus sign (-) icon to the right of an interval value field to delete it from the list.
+    * Select the up arrow icon and the down arrow icon to reorder the interval values.
 
-1. Tap **[!UICONTROL OK]** to return to the Properties tab.
-1. Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**, then tap the Back Home icon in the upper-left corner to return to Experience Manager.
+1. Select **[!UICONTROL OK]** to return to the Properties tab.
+1. Near the upper-left corner of the CRXDE Lite page, select **[!UICONTROL Save All]**, then select the Back Home icon in the upper-left corner to return to Experience Manager.
 
    See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
@@ -1306,12 +1306,12 @@ These steps apply only to Dynamic Media running in Hybrid mode.
 T**o add a custom video thumbnail**,
 
 1. Navigate to an uploaded video asset that you want to add a custom video thumbnail.
-1. In asset selection mode either from the List View or the Card View, tap the video asset.
-1. On the toolbar, tap the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
-1. On the video's Properties page, tap **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, on the toolbar, tap **[!UICONTROL Upload New Thumbnail]**.
-1. Navigate to a thumbnail image you want to use, select it, then tap **[!UICONTROL Open]** to begin uploading the image into Experience Manager. Following the upload, be sure you publish the image.
-1. After you have successfully uploaded and published the image, in the Change Thumbnail page, tap **[!UICONTROL Save Changes]**.
+1. In asset selection mode either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
+1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
+1. On the Change Thumbnail page, on the toolbar, select **[!UICONTROL Upload New Thumbnail]**.
+1. Navigate to a thumbnail image you want to use, select it, then select **[!UICONTROL Open]** to begin uploading the image into Experience Manager. Following the upload, be sure you publish the image.
+1. After you have successfully uploaded and published the image, in the Change Thumbnail page, select **[!UICONTROL Save Changes]**.
 
    The custom thumbnail is added to your video.
 
