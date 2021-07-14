@@ -1,20 +1,20 @@
 ---
-title: 發佈Dynamic Media Assets
+title: 發佈Dynamic Media資產
 description: 了解如何發佈Dynamic Media資產。
 contentOwner: Rick Brough
 feature: 資產管理
 role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 3%
 
 ---
 
-# 發佈Dynamic Media Assets {#publishing-dynamic-media-assets}
+# 發佈Dynamic Media資產 {#publishing-dynamic-media-assets}
 
-您可以選取已上傳的資產，然後點選&#x200B;**[!UICONTROL Publish]**&#x200B;或&#x200B;**[!UICONTROL Quick Publish]**，以發佈Dynamic Media資產。 發佈Dynamic Media資產後，您就可以透過URL或在頁面上內嵌程式碼，將其加入網頁。
+您可以選取已上傳的資產，然後選取&#x200B;**[!UICONTROL Publish]**&#x200B;或&#x200B;**[!UICONTROL Quick Publish]**，以發佈Dynamic Media資產。 發佈Dynamic Media資產後，您就可以透過URL或在頁面上內嵌程式碼，將其加入網頁。
 
 您也可以立即發佈上傳的資產，不需任何使用者干預。 或者，您可以選擇性地發佈這些資產。 請參閱[設定Dynamic Media](config-dm.md)。 或者，您可以使用資料夾層級的&#x200B;**[!UICONTROL 選擇性發佈]**，選擇性地將資產發佈至Dynamic Media或Adobe Experience Manager，彼此互斥。 請參閱[在Dynamic Media中使用選擇性發佈](/help/assets/dynamic-media/selective-publishing.md)。
 
