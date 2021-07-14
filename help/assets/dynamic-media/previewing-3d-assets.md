@@ -1,10 +1,13 @@
 ---
 title: 預覽 3D 資產
 description: 了解如何在Dynamic Media中預覽3D資產。
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+feature: 3D資產
+role: User
+exl-id: null
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 11%
+source-wordcount: '565'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +20,7 @@ Experience Manager在製作程式中支援3D資產的上傳、傳送和互動式
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## 支援的Experience Manager3D預覽格式{#supported-3d-previewing-assets}
+## 支援的格式，可在Experience Manager中預覽3D{#supported-3d-previewing-assets}
 
 以Experience Manager顯示的互動式3D預覽支援下列檔案格式：
 
@@ -41,7 +44,7 @@ Experience Manager在製作程式中支援3D資產的上傳、傳送和互動式
     material_0_baseColor.
     jpegmaterial_0_normal.jpeg
 
-## 以Experience Manager{#performance-3d-previewing-assets}預覽3D資產時的效能考量事項
+## 以Experience Manager預覽3D資產時的效能考量{#performance-3d-previewing-assets}
 
 在資產詳細資訊檢視頁面中開啟3D資產所花的時間，取決於頻寬、影像複雜度和伺服器延遲等數項因素。
 
@@ -51,16 +54,16 @@ Experience Manager在製作程式中支援3D資產的上傳、傳送和互動式
 
 1. 請確定您已將3D資產上傳至Experience Manager。
 請參閱[支援的3D預覽格式](#supported-3d-previewing-assets)和[上傳資產](/help/assets/manage-digital-assets.md#uploading-assets)。
-1. 從Experience Manager，在&#x200B;**[!UICONTROL 導覽]**&#x200B;頁面上，點選&#x200B;**[!UICONTROL 資產]** > **[!UICONTROL 檔案]**。
+1. 從Experience Manager，在&#x200B;**[!UICONTROL 導航]**&#x200B;頁上，轉至&#x200B;**[!UICONTROL 資產]** > **[!UICONTROL 檔案]**。
 
    ![導覽頁面](/help/assets/dynamic-media/assets/navigation-assets.png)
 
-1. 在頁面的右上角，從「檢視」下拉式清單中，點選「卡片檢視」 ****，然後導覽至您要預覽的3D資產。
+1. 在頁面的右上角附近，從「檢視」下拉式清單中，選取「卡片檢視」 ****，然後導覽至您要預覽的3D資產。
 
    ![3D卡的選擇](/help/assets/dynamic-media/assets/3d-card-select.png)
-   _在「卡片檢視」中，點選您要預覽之3D資產的卡片。_
+   _在「卡片檢視」中，選取您要預覽之3D資產的卡片。_
 
-1. 點選3D資產的卡片。
+1. 選取3D資產的卡片。
 
    ![互動式3D預覽](/help/assets/dynamic-media/assets/3d-preview.png)
    _在資產詳細資訊檢視頁面中互動式預覽3D資產。_
@@ -72,7 +75,7 @@ Experience Manager在製作程式中支援3D資產的上傳、傳送和互動式
    | **平移您的相機** | 向左、向右、向上或向下平移視圖。 | 按一下右鍵+拖動。 | 用雙指按+拖。 |
    | **縮放您的相機** | 進出3D場景的區域。 | 滾輪。 | 雙指夾。 |
    | **重新輸入您的相機** | 將相機重新輸入到3D場景中某個對象上的某個點。 | 按兩下。 | 按兩下。 |
-   | **重設** | 在頁面的右下角附近，點選「重設」圖示，將檢視目標點還原到3D資產的中央。 重置還使相機更近或更遠地移開，以便以合理的觀看大小顯示資產的整體。 |  |  |
-   | **全螢幕模式** | 若要進入全螢幕模式，請在頁面的右下角，點選「全螢幕」圖示。 |  |  |
+   | **重設** | 在頁面的右下角附近，選取「重設」圖示，將檢視目標點還原到3D資產的中央。 重置還使相機更近或更遠地移開，以便以合理的觀看大小顯示資產的整體。 |  |  |
+   | **全螢幕模式** | 若要進入全螢幕模式，請在頁面的右下角，選取全螢幕圖示。 |  |  |
 
-1. 完成後，在頁面右上角附近，點選「**[!UICONTROL Close]**」。
+1. 完成後，在頁面右上角附近，選擇&#x200B;**[!UICONTROL Close]**。
