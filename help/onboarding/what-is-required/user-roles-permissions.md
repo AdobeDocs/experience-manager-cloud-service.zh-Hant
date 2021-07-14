@@ -2,14 +2,14 @@
 title: Cloud Manager角色
 description: 本頁面說明使用者角色和權限。 請詳閱本頁，了解如何新增使用者並將其指派給Cloud Manager角色。
 exl-id: d1689134-044a-4d96-97a2-cd09f735a680
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a0edbaf650fdfbc271a000ab4827a4c414321613
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '546'
 ht-degree: 6%
 
 ---
 
-# Cloud Manager角色{#user-roles-permissions}
+# Cloud Manager角色 {#user-roles-permissions}
 
 ## 使用者角色 {#user-roles}
 
@@ -27,7 +27,7 @@ Cloud Manager目前為使用者定義四個角色，這些角色可控制特定�
 >[!NOTE]
 >Admin Console中的開發人員角色與[!UICONTROL Cloud Manager]中的開發人員角色無關。
 
-## 查看角色{#view-roles}
+## 檢視您的角色 {#view-roles}
 
 若要在Cloud Manager中檢視您的角色，請登入Cloud Manager UI，選取右上角的設定檔圖示，然後選取&#x200B;**使用者角色**，如下圖所示。
 
@@ -36,7 +36,7 @@ Cloud Manager目前為使用者定義四個角色，這些角色可控制特定�
 
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
-### 整合產品設定檔{#integration-product-profile}
+### 整合產品設定檔 {#integration-product-profile}
 
 除了上述功能，Cloud Manager將自動建立名為「整合 — Cloud Service」的產品設定檔。 此產品設定檔用於整合Adobe Experience Manager與其他Adobe產品。 此產品配置檔案&#x200B;**必須**&#x200B;不能刪除。 如果您不小心刪除了此設定檔，則需要手動重新建立。 此配置檔案&#x200B;**的「顯示名稱」必須**&#x200B;為`CM_CS_DEFAULT`。
 
@@ -47,9 +47,9 @@ Cloud Manager目前為使用者定義四個角色，這些角色可控制特定�
 
 每個角色都有與其相關聯的特定權限。 例如，如果您的角色為：
 
-* ***業務擁有者***，您便擁有新增程式或編輯程式、新增或更新環境、新增/編輯/刪除管道和執行任何管道，以及將程式碼部署至AEM環境或程式碼品質的權限。
+* ***業務擁有者***，則您擁有新增程式或編輯程式、新增或更新環境，以及執行任何管道的權限。
 
-* ***部署管理員***，則您有權新增或更新環境、執行任何管道，以及將程式碼部署至AEM環境或程式碼品質。
+* ***部署管理器***，則您有權添加或更新環境，並運行任何管道。
 
 * ***開發人員***，您便有權產生個人存取權杖以存取Git。
 
