@@ -2,9 +2,9 @@
 title: 設定CI/CD管道 — Cloud Services
 description: 設定CI/CD管道 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e3575278fbfd523a2727e4d659deb057bf2cff9e
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 > * 配置效能測試參數。
 
 
-## 設定生產管道{#setting-up-production-pipeline}
+## 設定生產管道 {#setting-up-production-pipeline}
 
 部署管理員負責設定生產管道。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 >
 >可在初始設定後更改管道設定。
 
-## 從[!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}配置管道設定
+## 從[!UICONTROL Cloud Manager]配置管道設定 {#configuring-the-pipeline-settings-from-cloud-manager}
 
 設定程式並使用[!UICONTROL Cloud Manager] UI至少有一個環境後，您就可以設定部署管道。
 
@@ -108,9 +108,9 @@ ht-degree: 0%
    ![](assets/configure-pipeline5.png)
 
 
-## 僅限非生產和代碼質量管道{#non-production-pipelines}
+## 僅限非生產和代碼品質的管道 {#non-production-pipelines}
 
-除了部署到預備和生產的主管道外，客戶還可以設定其他管道，稱為&#x200B;**非生產管道**。 這些管道一律會執行建置和程式碼品質步驟。 他們也可以選擇部署至Adobe Managed Services環境。
+除了部署到預備和生產的主管道外，客戶還可以設定其他管道，稱為&#x200B;**非生產管道**。 這些管道一律會執行建置和程式碼品質步驟。 他們也可選擇部署至AEM作為Cloud Service環境。
 
 在主螢幕上，這些管道會列在新卡中：
 
@@ -132,7 +132,7 @@ ht-degree: 0%
    * **建置**  — 導覽至執行頁面，可從該頁面執行管道
    * **管理Git**  — 可讓使用者取得存取Cloud Manager Git存放庫所需的資訊
 
-## 後續步驟{#the-next-steps}
+## 後續步驟 {#the-next-steps}
 
 設定管道後，您需要部署程式碼。
 
