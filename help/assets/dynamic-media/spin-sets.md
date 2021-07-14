@@ -4,10 +4,10 @@ description: 了解如何在Dynamic Media中使用回轉集。
 feature: 迴轉集
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 12%
+source-wordcount: '1818'
+ht-degree: 9%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 12%
 
    選取「回轉集」，然後在左側導軌下拉式選單中選取「檢 **[!UICONTROL 視器]**」。
 
-   請參 [閱將回轉集連結至網頁](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[和內嵌視訊或影像檢視器](/help/assets/dynamic-media/embed-code.md)。
+   請參閱[將回轉集連結至網頁](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)和[內嵌視訊或影像檢視器](/help/assets/dynamic-media/embed-code.md)。
 
 如有必要，您可以[編輯回轉集](#editing-spin-sets)。 此外，還可以查看和修改[回轉集屬性](/help/assets/manage-digital-assets.md#editing-properties)。
 
@@ -107,7 +107,7 @@ ht-degree: 12%
 
 **若要建立回轉集：**
 
-1. 在「資產」中，導覽至您要建立回轉集的位置，按一下「建 **[!UICONTROL 立]**」，然後選取「 **[!UICONTROL 回轉集」]**。您也可以從包含資產的資料夾內建立資產集。隨即顯示回轉集編輯器。
+1. 在「資產」中，導覽至您要建立回轉集的位置，選取「**[!UICONTROL 建立]**」，然後選取「**[!UICONTROL 回轉集]**」。 您也可以從包含資產的資料夾內建立資產集。
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
@@ -117,16 +117,16 @@ ht-degree: 12%
 
    >[!NOTE]
    >
-   >建立回轉集時，您可以變更回轉集縮圖，或允許Experience Manager根據回轉集中的資產自動選取縮圖。 若要選取縮圖，請按一下「**[!UICONTROL 變更縮圖]**」並選取任何影像（您也可以導覽至其他資料夾以尋找影像）。 如果您已選取縮圖，然後決定要Experience Manager從回轉集產生縮圖，請選取「**[!UICONTROL 切換至自動縮圖]**」。
+   >建立回轉集時，您可以變更回轉集縮圖，或允許Experience Manager根據回轉集中的資產自動選取縮圖。 若要選取縮圖，請選取「**[!UICONTROL 變更縮圖]**」並選取任何影像（您也可以導覽至其他資料夾以尋找影像）。 如果您已選取縮圖，然後決定要Experience Manager從回轉集產生縮圖，請選取「**[!UICONTROL 切換至自動縮圖]**」。
 
 1. 執行下列任一操作：
 
-   * 在「回轉集編輯器」頁面的左上角附近，點選「**[!UICONTROL 新增資產]**」。
+   * 在「回轉集編輯器」頁面的左上角附近，選取「新增資產」**[!UICONTROL 。]**
 
-   * 在「回轉集編輯器」頁面的中間附近，點選&#x200B;**[!UICONTROL 點選以開啟「資產選取器」]**。
-   點選以選取您要納入回轉集的資產。 選取的資產上面有核取標籤圖示。完成後，在頁面右上角附近，點選「 **[!UICONTROL Select]** 」。
+   * 在「回轉集編輯器」頁面的中間附近，選取「**[!UICONTROL 點選」以開啟「資產選取器」]**。
+   選取您要納入回轉集的資產。 選取的資產上面有核取標籤圖示。完成後，在頁面右上角附近，選擇&#x200B;**[!UICONTROL Select]**。
 
-   使用「資產選擇器」，您可以輸入關鍵字並點選「回報」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後點選工具 **[!UICONTROL 列上的]** 「篩選」圖示。點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 ****。
+   使用「資產選擇器」，您可以輸入關鍵字並點選「回報」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後選取工具列上的&#x200B;**[!UICONTROL 篩選]**&#x200B;圖示。 點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 ****。
 
    請參閱[使用選取器](/help/assets/dynamic-media/working-with-selectors.md)。
 
@@ -136,17 +136,17 @@ ht-degree: 12%
 
    如有必要，請將資產的「重新排序」圖示拖曳至資產檔案名稱的右側，以在設定清單上或下重新排序影像。
 
-   ![將回轉集中的影格拖曳至新位置，重新排序影格11](assets/6_5_spinset-reorderassets.png)
+   ![將回轉集中的幀11拖到新位置，重新排序](assets/6_5_spinset-reorderassets.png)
 
    將回轉集中的影格拖曳至新位置，重新排序影格11。
 
 1. （選用）執行下列任一操作：
 
-   * 若要刪除影像，請選取影像並點選&#x200B;**[!UICONTROL 刪除資產]**。
+   * 若要刪除影像，請選取影像並選取&#x200B;**[!UICONTROL 刪除資產]**。
 
-   * 若要套用預設集，在頁面右上角附近，點選&#x200B;**[!UICONTROL Preset]**，然後選取一個預設集，一次套用至所有資產。
+   * 若要套用預設集，在頁面右上角附近，選取「**[!UICONTROL Preset]**」，然後選取要一次套用至所有資產的預設集。
 
-1. 按一下「**[!UICONTROL 儲存]**」。新建立的回轉集會顯示在您建立該回轉集的資料夾中。
+1. 選擇&#x200B;**[!UICONTROL 保存]**。 新建立的回轉集會顯示在您建立該回轉集的資料夾中。
 
 ## 檢視回轉集 {#viewing-spin-sets}
 
@@ -158,7 +158,7 @@ ht-degree: 12%
 
 **若要檢視回轉集：**
 
-1. 開啟個別資產的屬性時。 屬性指明所選資產是的成員（在&#x200B;**[!UICONTROL 整合員]**&#x200B;下）。 若要查看整個集，請點選集的名稱。
+1. 開啟個別資產的屬性時。 屬性指明所選資產是的成員（在&#x200B;**[!UICONTROL 整合員]**&#x200B;下）。 若要查看整個集，請選取集的名稱。
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
@@ -186,30 +186,30 @@ ht-degree: 12%
 
 1. 執行下列任一操作：
 
-   * 將滑鼠指標暫留在「回轉集」資產上，然後點選「**[!UICONTROL 編輯]**」（鉛筆圖示）。
-   * 暫留在「回轉集」資產上，點選「**[!UICONTROL 選取]**」（核取標籤圖示），然後點選工具列上的「**[!UICONTROL 編輯]**」。
+   * 將游標暫留在回轉集資產上，然後選取「**[!UICONTROL 編輯]**」（鉛筆圖示）。
+   * 暫留在回轉集資產上，選取「**[!UICONTROL 選取]**」（勾選圖示），然後選取工具列上的「**[!UICONTROL 編輯]**」。
 
-   * 點選「回轉集」資產，然後點選工具列上的「 **[!UICONTROL 編輯]**（鉛筆圖示）」。
+   * 選取「回轉集」資產，然後選取工具列上的「編輯」**[!UICONTROL （鉛筆圖示）。]**
 
 1. 若要編輯回轉集，請執行下列任一操作：
 
    * 若要重新排序影像，請拖曳影像至新位置（選取重新排序圖示以移動項目）。
-   * 若要依遞增或遞減順序排序項目，請按一下欄標題。
-   * 若要新增資產或更新現有資產，請按一下「新增資產」**[!UICONTROL 「]**」。 導覽至資產，選取資產，然後點選右上角的&#x200B;**[!UICONTROL 選取]**。
+   * 若要依遞增或遞減順序排序項目，請選取欄標題。
+   * 若要新增資產或更新現有資產，請選取「**[!UICONTROL 新增資產]**」。 導覽至資產，選取資產，然後選取右上角的&#x200B;**[!UICONTROL 選取]**。
 如果您以其他影像取代縮圖，以刪除Experience Manager用於縮圖的影像，仍會顯示原始資產。
-   * 若要刪除資產，請選取資產，然後按一下或點選「**[!UICONTROL 刪除資產]**」。
-   * 若要套用預設集，請點選或按一下「預設集」圖示，然後選取預設集。
+   * 若要刪除資產，請選取資產並選取&#x200B;**[!UICONTROL 刪除資產]**。
+   * 若要套用預設集，請選取「預設集」圖示並選取預設集。
    * 若要刪除整個回轉集，請導覽至回轉集，選取該回轉集，然後選取&#x200B;**[!UICONTROL Delete]**
 
    >[!NOTE]
    >
-   >您可以導覽至回轉集，點選左側導軌中的「設定成員&#x200B;****」，然後點選個別資產上的「鉛筆」圖示以開啟編輯視窗，以編輯影像。
+   >您可以導覽至回轉集編輯影像，在左側導軌中選取「**[!UICONTROL 設定成員]**」，然後選取個別資產上的「鉛筆」圖示以開啟編輯視窗。
 
-1. 完成編輯時，按一下「**[!UICONTROL 儲存]**」。
+1. 完成編輯時，選擇&#x200B;**[!UICONTROL 保存]**。
 
 ## 預覽回轉集 {#previewing-spin-sets}
 
-請參閱「預覽資產」[。](/help/assets/dynamic-media/previewing-assets.md)
+請參閱[預覽資產](/help/assets/dynamic-media/previewing-assets.md)。
 
 ## 發佈回轉集 {#publishing-spin-sets}
 
