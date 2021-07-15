@@ -2,9 +2,9 @@
 title: 簡介 — 管理SSL憑證
 description: 簡介 — 管理SSL憑證
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: d457d76d56a729a2e6eb729ad91a6e7877fd6a0c
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Cloud Manager可讓客戶透過Cloud Manager UI自行安裝SSL憑證。 Cloud Manager使用Platform TLS服務來管理客戶擁有的SSL憑證和私密金鑰，且通常從協力廠商認證機構取得，例如&#x200B;*我們加密*。
 
-## 重要注意事項{#important-considerations}
+## 重要考量 {#important-considerations}
 
 * Cloud Manager不提供SSL憑證或私密金鑰。 這些認證必須從第三方認證機構獲得。 請參閱[取得SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)以深入了解。
 
@@ -30,6 +30,8 @@ Cloud Manager可讓客戶透過Cloud Manager UI自行安裝SSL憑證。 Cloud Ma
 * AEM as aCloud Service只會接受OV（組織驗證）或EV（延伸驗證）憑證。 不接受DV（域驗證）證書。 此外，任何證書都必須是來自受信任認證機構(CA)的X.509 TLS證書，且具有相符的2048位RSA私鑰。
 
 * AEM as aCloud Service會接受網域的萬用字元SSL憑證。
+
+* 在任何指定時間，Cloud Manager最多可允許20個SSL憑證，此憑證可與您方案中的一或多個環境建立關聯，即使憑證已過期亦然。 不過，在具有此限制的程式中，Cloud Manager UI將允許安裝最多50個SSL憑證。 通常，證書可以覆蓋多個域（最多100個SAN），因此，請考慮將同一證書中的多個域分組以保持在此限制下。
 
 Cloud Manager支援下列客戶SSL憑證需求：
 
