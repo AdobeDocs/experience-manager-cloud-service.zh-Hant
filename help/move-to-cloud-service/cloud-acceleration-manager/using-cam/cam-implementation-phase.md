@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Manager中的實作階段
 description: 本頁概述Cloud Acceleration Manager的實作階段。
-source-git-commit: b1a2b7b78349524e842e30f69729fb3351765582
+source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '689'
 ht-degree: 2%
 
 ---
@@ -54,10 +54,27 @@ ht-degree: 2%
 
 1. 頁面顯示依嚴重性層級組織的程式碼重構活動清單。 您可以按一下兩個醒目提示的圖示，以深入了解。
 
+   頁面會在三個不同的標籤中顯示程式碼重構考量事項。
+
+   * 概覽:
+   * Dispatcher
+   * 測試
+
+   **概述**&#x200B;標籤會顯示程式碼重構活動的清單。
+
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+
+   **Dispatcher**&#x200B;標籤提供如何將AEM建構為Cloud ServiceApache和Dispatcher設定的資訊，以及如何在部署至雲端環境之前，在本機驗證和執行它。 此外，也說明在雲端環境中進行除錯的方式。
+
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+
+   **Testing**&#x200B;標籤提供功能、體驗稽核和UI測試的相關資訊。
+
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
+
+
    >[!NOTE]
    >此外，請查看頁面標籤中的內容，了解Best Practices Analyzer未涵蓋的其他部分。
-
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
 
 ## 使用AEM作為Cloud Service部署卡 {#aem-as-a-cloud-service-deployment}
