@@ -1,7 +1,7 @@
 ---
 title: Cloud Acceleration Manager中的實作階段
 description: 本頁概述Cloud Acceleration Manager的實作階段。
-source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
+source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 2%
@@ -54,9 +54,9 @@ ht-degree: 2%
 
 1. 頁面顯示依嚴重性層級組織的程式碼重構活動清單。 您可以按一下兩個醒目提示的圖示，以深入了解。
 
-   頁面會在三個不同的標籤中顯示程式碼重構考量事項。
+   頁面會在三個不同的標籤中顯示程式碼重構考量事項：
 
-   * 概覽:
+   * 概覽
    * Dispatcher
    * 測試
 
