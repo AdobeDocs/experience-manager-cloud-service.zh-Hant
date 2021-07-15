@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
+source-git-commit: d5cb722a47d9776e186aa2b47b142d0c22be8511
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1585'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 3%
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述AEM as a 2021.6.0和2021.5.0Cloud Service中Cloud Manager的發行說明。
+本節概述AEM as a 2021.6.0Cloud Service中Cloud Manager的發行說明。
 
 ### 發行日期 {#release-date-june-cm}
 
