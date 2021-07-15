@@ -2,7 +2,7 @@
 title: '建立生產計畫 '
 description: 建立生產計畫
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: e51ab417af5aa77019e8ba3fa5c452c9b25b2d35
+source-git-commit: ca960361bea8f62d908a9b6f1408a99722552c75
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/334954)
 
-或,
+此外，
 
 請依照下列步驟建立生產方案：
 
