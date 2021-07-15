@@ -2,9 +2,9 @@
 title: 設定CI/CD管道 — Cloud Services
 description: 設定CI/CD管道 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: e3575278fbfd523a2727e4d659deb057bf2cff9e
+source-git-commit: 8b8e65c68d8a835e19ddf34fe30981da7ad265d8
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ ht-degree: 0%
 
 1. 從Cloud Manager主畫面存取&#x200B;**非生產管道**&#x200B;方塊。
 
-   ![](assets/configure-pipeline6.png)
+   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
 
 1. 按一下&#x200B;**Add**&#x200B;按鈕，以指定管道名稱、管道類型和Git分支。
 
@@ -124,13 +124,15 @@ ht-degree: 0%
 
    ![](assets/non-prod-pipe1.png)
 
-1. 按一下「**儲存**」，主畫面的卡片上會顯示管道，內含三個動作，如下所示：
+1. 按一下「**儲存**」，主畫面的卡片上會顯示管道，包含五個動作，如下所示：
 
-   ![](assets/configure-pipeline8.png)
+   ![](/help/implementing/cloud-manager/assets/prod-one.png)
 
    * **編輯**  — 允許編輯管道設定
+   * **詳細資訊**  — 提供管道執行的詳細資訊
    * **建置**  — 導覽至執行頁面，可從該頁面執行管道
-   * **管理Git**  — 可讓使用者取得存取Cloud Manager Git存放庫所需的資訊
+   * **存取存放庫資訊**  — 可讓使用者取得存取Cloud Manager Git存放庫所需的資訊
+   * **了解更多**  — 導覽至了解CI/CD管道檔案資源。
 
 ## 後續步驟 {#the-next-steps}
 
