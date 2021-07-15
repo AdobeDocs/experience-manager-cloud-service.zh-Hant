@@ -3,9 +3,9 @@ title: AEM as aCloud Service中Cloud Manager的發行說明2021.7.0版
 description: AEM as aCloud Service中Cloud Manager的發行說明2021.7.0版
 feature: 發行資訊
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
+source-git-commit: e24610cef6d134ddf9ce8abe9a5893deac08eeb6
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '349'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ AEM as aCloud Service2021.7.0中的Cloud Manager發行日期為2021年7月15日�
 
 * 每個環境可配置的域數上限已增加到500個。
 
-* **管理Git**&#x200B;按鈕已取消&#x200B;**存取Git資訊**，對話方塊也已視覺化重新整理。
+* **管理Git**&#x200B;按鈕已重新命名為&#x200B;**存取Git資訊**，對話方塊也已視覺化重新整理。
 
 * Cloud Manager使用的AEM專案原型版本已更新為28版。
 
@@ -46,11 +46,9 @@ AEM as aCloud Service2021.7.0中的Cloud Manager發行日期為2021年7月15日�
 
 * 達到最大SSL憑證數時顯示的錯誤訊息並無幫助。
 
-* 在某些情況下，概觀頁面上的管道卡片所顯示的發行版本可能會不一致。
+* 在某些情況下，**概述**&#x200B;頁面上的管道卡片所顯示的發行版本可能會不一致。
 
 * 添加程式嚮導未正確說明建立後無法更改名稱。
-
-* 在某些情況下，將IP允許清單系結至環境時，「預覽」不是可用選項。
 
 ### 已知問題 {#known-issues}
 
