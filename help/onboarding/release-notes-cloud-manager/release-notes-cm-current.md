@@ -3,14 +3,14 @@ title: AEM as aCloud Service中Cloud Manager的發行說明2021.7.0版
 description: AEM as aCloud Service中Cloud Manager的發行說明2021.7.0版
 feature: 發行資訊
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 673ac234f0e9bfc0f5e6878abf5d01d38cbe918f
+source-git-commit: 06dca3b3e94b27f592681e661cd5c9883c0f6422
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 4%
 
 ---
 
-# Adobe Experience Manager as aCloud Service2021.6.0中的Cloud Manager發行說明 {#release-notes}
+# Adobe Experience Manager as aCloud Service2021.7.0中的Cloud Manager發行說明 {#release-notes}
 
 本頁概述AEM as a 2021.7.0Cloud Service中Cloud Manager的發行說明。
 
