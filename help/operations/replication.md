@@ -2,9 +2,9 @@
 title: 複寫
 description: 散佈 和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
+source-git-commit: 4f647b76860eac8e7c76df4a4ccb7f069534aea4
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1229'
 ht-degree: 1%
 
 ---
@@ -55,6 +55,10 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
    ![](assets/publish-distribute.png "DistributeDistribute")
 4. 在路徑瀏覽器中選擇路徑，根據需要選擇添加節點、樹或刪除，然後選擇&#x200B;**Submit**
+
+為獲得最佳效能，使用此功能時請遵循以下准則：
+* 為復寫生成的內容包的總大小必須低於5MB。
+* 建議一次複製少於100個路徑，並設定500個路徑硬限制。
 
 ### 發佈內容樹工作流 {#publish-content-tree-workflow}
 
