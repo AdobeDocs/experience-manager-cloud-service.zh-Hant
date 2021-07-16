@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute微服務，工作流，資產處理
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
 workflow-type: tm+mt
 source-wordcount: '2678'
 ht-degree: 1%
@@ -75,7 +75,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 1. 管理員可存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**。 按一下&#x200B;**[!UICONTROL 建立]**。
 1. 提供名稱，協助您在套用至資料夾時唯一識別設定檔。
-1. 要生成FPO格式副本，請在&#x200B;**[!UICONTROL Standard]**&#x200B;頁簽上啟用&#x200B;**[!UICONTROL 建立FPO格式副本]**。 輸入介於1和100之間的&#x200B;**[!UICONTROL Quality]**&#x200B;值。
+1. 要生成FPO格式副本，請在&#x200B;**[!UICONTROL Image]**&#x200B;頁簽上啟用&#x200B;**[!UICONTROL Create FPO Rendition]**。 輸入介於1和100之間的&#x200B;**[!UICONTROL Quality]**&#x200B;值。
 1. 若要產生其他轉譯，請按一下「新增」**[!UICONTROL 並提供下列資訊：]**
 
    * 每個格式副本的檔案名。
