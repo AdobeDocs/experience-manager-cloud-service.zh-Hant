@@ -2,9 +2,9 @@
 title: 複寫
 description: 散佈 和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 4f647b76860eac8e7c76df4a4ccb7f069534aea4
+source-git-commit: a585fd8994c00014243f628ac0abbcb6571137f6
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1338'
 ht-degree: 1%
 
 ---
@@ -57,8 +57,8 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 4. 在路徑瀏覽器中選擇路徑，根據需要選擇添加節點、樹或刪除，然後選擇&#x200B;**Submit**
 
 為獲得最佳效能，使用此功能時請遵循以下准則：
-* 為復寫生成的內容包的總大小必須低於5MB。
 * 建議一次複製少於100個路徑，並設定500個路徑硬限制。
+* 複製內容的總大小必須低於5 MB。 這僅包括節點和屬性，但不包括任何二進位檔，其中包括工作流程套件和內容套件。
 
 ### 發佈內容樹工作流 {#publish-content-tree-workflow}
 
@@ -189,6 +189,11 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 如果您未提供此類篩選器且僅使用「發佈」代理，則不會使用「預覽」代理，且復寫動作不會影響預覽層。
 
 僅當複製操作包含至少一個預設活動的代理時，才會修改資源的整體`ReplicationStatus`。 在上例中，情況並非如此，因為復寫僅使用「預覽」代理。 因此，您需要使用新的`getStatusForAgent()`方法，該方法允許查詢特定代理的狀態。 此方法也適用於「發佈」代理程式。 如果使用提供的代理完成了任何複製操作，則返回非空值。
+
+
+**復寫API路徑和大小限制**
+
+建議複製少於100個路徑，其中500個是硬限制。 超過硬限制時，將引發ReplicationException。 如果您的應用程式邏輯不需要原子複製，則可通過將ReplicationOptions.setUseAtomicCalls設定為false來克服此限制，這將接受任意數量的路徑，但在內部建立儲存桶以保持在此限制以下。 每個復寫呼叫傳輸的內容量不得超過5 MB，其中包含節點和屬性，但不得有任何二進位檔（工作流程套件和內容套件視為二進位檔）。
 
 ## 疑難排解 {#troubleshooting}
 
