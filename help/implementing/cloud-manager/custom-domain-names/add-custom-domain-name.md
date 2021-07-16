@@ -2,18 +2,18 @@
 title: 新增自訂網域名稱
 description: 新增自訂網域名稱
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
+source-git-commit: bee18f13a7261077821205cad1df5e68a63638e0
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
 
 ---
 
-# 添加自定義域名{#adding-cdn}
+# 新增自訂網域名稱 {#adding-cdn}
 
 使用者必須是業務擁有者或部署管理員，才能在Cloud Manager中新增自訂網域名稱。
 
-## 重要注意事項{#important-considerations}
+## 重要考量 {#important-considerations}
 
 * 添加自定義域名之前，必須先將包含自定義域名的有效SSL證書安裝到您的程式中。 請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)以深入了解。
 
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 * AEM as aCloud Service不支援萬用字元網域。
 
-* 每個Cloud Manager環境最多可托管每個環境250個自訂網域。
+* 每個Cloud Manager環境最多可托管每個環境500個自訂網域。
 
 * 同一個域名不能用於多個環境。
 
-## 從「域設定」頁{#adding-cdn-settings}添加自定義域名
+## 從「域設定」頁添加自定義域名 {#adding-cdn-settings}
 
 請依照下列步驟，從「網域設定」頁面新增「自訂網域名稱」 :
 
@@ -66,7 +66,7 @@ ht-degree: 0%
    >[!NOTE]
    >由於DNS傳播延遲，DNS校樣可能需要數小時才能識別。 Cloud Manager會驗證所有權並更新可在網域設定表格中看到的狀態。 如需詳細資訊，請參閱檢查網域名稱狀態。
 
-## 從環境頁面{#adding-cdn-environments}新增自訂網域名稱
+## 「從環境新增自訂網域名稱」頁面 {#adding-cdn-environments}
 
 1. 導覽至感興趣環境的環境詳細資料頁面。
 
