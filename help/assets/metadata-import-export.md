@@ -5,16 +5,16 @@ contentOwner: AG
 feature: 中繼資料
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '669'
 ht-degree: 10%
 
 ---
 
 # 大量匯入和匯出資產中繼資料 {#import-and-export-asset-metadata-in-bulk}
 
-AEM Assets可讓您使用CSV檔案大量匯入資產中繼資料。 您可以匯入CSV檔案，針對最近上傳的資產或現有資產執行大量更新。 您也可以從協力廠商系統以CSV格式大量內嵌資產中繼資料。
+Adobe Experience Manager Assets可讓您使用CSV檔案大量匯入資產中繼資料。 您可以匯入CSV檔案，針對最近上傳的資產或現有資產執行大量更新。 您也可以從協力廠商系統以CSV格式大量內嵌資產中繼資料。
 
 ## 匯入中繼資料 {#import-metadata}
 
@@ -47,7 +47,7 @@ AEM Assets可讓您使用CSV檔案大量匯入資產中繼資料。 您可以匯
 
 ## 匯出存中繼資料 {#export-metadata}
 
-您可以將多個資產的中繼資料匯出為CSV格式。 中繼資料會以非同步方式匯出，不會影響系統的效能。 若要匯出中繼資料，AEM會周遊資產節點`jcr:content/metadata`及其子節點的屬性，並將中繼資料屬性匯出為CSV檔案。
+您可以將多個資產的中繼資料匯出為CSV格式。 中繼資料會以非同步方式匯出，不會影響系統的效能。 若要匯出中繼資料，Experience Manager會周遊資產節點`jcr:content/metadata`及其子節點的屬性，並將中繼資料屬性匯出為CSV檔案。
 
 大量匯出中繼資料的幾個使用案例為：
 
