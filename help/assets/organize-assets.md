@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 資產管理，標籤，資產分發
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 擷取Microsoft Office和PDF檔案的所有數位資產、中繼資料和內容，並使其可供搜尋。 搜尋可針對資產進行精密的篩選，並完全尊重正確的權限。 數位資產管理的中繼資料將詳細說明中繼資料。
 
-AEM Assets支援多種組織內容的方式。 您可以使用資料夾以階層方式組織資料夾，或使用標籤等方式，以無序、隨選的方式組織資料夾。 使用者可以在DAM Asset Editor中編輯標籤，以顯示子資產、轉譯和中繼資料。
+Experience Manager資產支援多種組織內容的方式。 您可以使用資料夾以階層方式組織資料夾，或使用標籤等方式，以無序、隨選的方式組織資料夾。 使用者可以在DAM Asset Editor中編輯標籤，以顯示子資產、轉譯和中繼資料。
 
 ## 建立資料夾 {#create-folders}
 
-組織資產集合時（例如所有&#x200B;*Nature*&#x200B;影像），您可以建立資料夾以將其保持在一起。 您可以使用資料夾來分類及組織資產。 AEM Assets不會要求您組織資料夾中的資產，以提高運作效率。
+組織資產集合時（例如所有&#x200B;*Nature*&#x200B;影像），您可以建立資料夾以將其保持在一起。 您可以使用資料夾來分類及組織資產。 [!DNL Assets] 不要求您組織資料夾中的資產，以提高運作效率。
 
 >[!NOTE]
 >
