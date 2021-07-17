@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.4.0 版發行說明
 description: Experience Manager 2020.4.0 版發行說明
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 95%
 >* [關於 Adobe Asset Link](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [設定 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [設定 Experience Manager 以搭配 Asset Link 運作](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [使用資產微服務在 Experience Manager 中建立工作流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [使用資產微服務在Experience Manager中建立工作流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
 ## Cloud Manager 新增功能 {#whats-new-cloud-manager}
