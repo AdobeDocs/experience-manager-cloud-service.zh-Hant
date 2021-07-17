@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 3051475d20d5b534b74c84f9d541dcaf1a5492f9
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1436'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 1%
 在[!DNL Experience Manager]中，以[!DNL Cloud Service]的形式使用HTTP API將資產直接上傳至雲端儲存空間。 上傳二進位檔案的步驟如下。 在外部應用程式中執行這些步驟，而不是在[!DNL Experience Manager] JVM中執行。
 
 1. [提交HTTP要求](#initiate-upload)。它會通知[!DNL Experience Manage]r部署您上傳新二進位檔的目的。
-1. [將二進位檔的內](#upload-binary) 容POST到啟動請求提供的一個或多個URI。
+1. [將二進位檔的內](#upload-binary) 容PUT到啟動請求提供的一個或多個URI。
 1. [提交HTTP](#complete-upload) 請求，通知伺服器已成功上傳二進位檔的內容。
 
 ![直接二進位上傳通訊協定概述](assets/add-assets-technical.png)
@@ -113,7 +113,7 @@ ht-degree: 1%
 }
 ```
 
-* `completeURI` （字串）:當二進位檔完成上傳時，呼叫此URI。URI可以是絕對URI或相對URI，客戶端應能夠處理它們。 也就是說，值可以是`"https://author.acme.com/content/dam.completeUpload.json"`或`"/content/dam.completeUpload.json"`請參閱[complete upload](#complete-upload)。
+* `completeURI` （字串）:當二進位檔完成上傳時，呼叫此URI。URI可以是絕對URI或相對URI，客戶端應能夠處理它們。 也就是說，值可以是`"https://[aem_server]:[port]/content/dam.completeUpload.json"`或`"/content/dam.completeUpload.json"`請參閱[complete upload](#complete-upload)。
 * `folderPath` （字串）:上傳二進位檔的資料夾完整路徑。
 * `(files)` （陣列）:元素清單，其長度和順序與起始請求中提供的二進位資訊清單的長度和順序相匹配。
 * `fileName` （字串）:相應二進位的名稱，如起始請求中提供。此值應包含在完成請求中。
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 ### 上傳二進位檔 {#upload-binary}
 
-啟動上載的輸出包括一個或多個上載URI值。 如果提供了多個URI，則客戶端將二進位檔分割為多個部分，並按順序對每個URI發出每個部分的POST請求。 使用所有URI。 確保每個部件的大小在初始響應中指定的最小和最大大小範圍內。 CDN邊緣節點有助於加速請求上傳二進位檔。
+啟動上載的輸出包括一個或多個上載URI值。 如果提供了多個URI，則客戶端將二進位檔分割為多個部分，並按順序向每個URI發出每個部分的PUT請求。 使用所有URI。 確保每個部件的大小在初始響應中指定的最小和最大大小範圍內。 CDN邊緣節點有助於加速請求上傳二進位檔。
 
 實現此目的的可能方法是根據API提供的上傳URI數量計算零件大小。 例如，假設二進位檔的總大小為20,000位元組，而上傳URI的數量為2。 然後，請依照下列步驟操作：
 
@@ -154,9 +154,7 @@ ht-degree: 1%
 
 與起始程式一樣，完成請求資料可能包含多個檔案的資訊。
 
-上傳二進位檔的程式要等到為該檔案叫用完整URL後，才會完成。 上傳程式完成後會處理資產。 即使資產的二進位檔案已完整上傳，但上傳程式尚未完成，處理也不會開始。
-
-如果成功，則伺服器使用`200`狀態代碼進行響應。
+上傳二進位檔的程式要等到為該檔案叫用完整URL後，才會完成。 上傳程式完成後會處理資產。 即使資產的二進位檔案已完整上傳，但上傳程式尚未完成，處理也不會開始。 如果上傳成功，伺服器會以`200`狀態代碼回應。
 
 ### 開放原始碼上傳程式庫 {#open-source-upload-library}
 
