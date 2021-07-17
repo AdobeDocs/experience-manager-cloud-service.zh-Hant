@@ -5,20 +5,20 @@ contentOwner: AG
 feature: 資產管理，翻譯
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '2590'
-ht-degree: 23%
+source-wordcount: '2587'
+ht-degree: 21%
 
 ---
 
 # 多語言資產 {#multilingual-assets}
 
-多語言資產是指具有多種語言的二進位檔、中繼資料和標籤的資產。 資產的二進位檔、中繼資料和標籤通常以一種語言存在，然後轉譯為其他語言，以用於多語言專案。 Adobe Experience Manager(AEM)Assets可讓您自動處理資產的翻譯工作流程（包括二進位檔、中繼資料和標籤），以產生其他語言的資產，以便用於多語言專案。
+多語言資產是指具有多種語言的二進位檔、中繼資料和標籤的資產。 資產的二進位檔、中繼資料和標籤通常以一種語言存在，然後轉譯為其他語言，以用於多語言專案。 Adobe Experience Manager Assets可讓您自動處理資產的翻譯工作流程（包括二進位檔、中繼資料和標籤），以產生其他語言的資產，以用於多語言專案。
 
-為了自動化翻譯工作流程，您將翻譯服務提供者與AEM整合，並建立專案，將資產翻譯成多種語言。 AEM支援人工和機器翻譯工作流程。
+為了自動化翻譯工作流程，您整合了翻譯服務提供商與Experience Manager，並建立了將資產翻譯成多種語言的項目。 Experience Manager支援人工和機器翻譯工作流程。
 
-人類翻譯：翻譯的資產會傳回並匯入AEM。 當您的翻譯提供者與AEM整合時，資產會自動在AEM和翻譯提供者之間傳送。
+人類翻譯：翻譯的資產會傳回並匯入Experience Manager。 當您的翻譯提供者與Experience Manager整合時，資產會自動在Experience Manager與翻譯提供者之間傳送。
 
 機器翻譯：機器翻譯服務會立即轉譯資產的中繼資料和標籤。
 
@@ -36,13 +36,13 @@ One of these articles is a copy of [Preparing Content for Translation](https://e
 <!-- 
 Translating assets includes the following:
 
-1. [Connecting AEM with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [Connecting Experience Manager with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Creating translation integration framework configurations](/help/sites-administering/tc-tic.md)
 1. [Preparing assets for translation](prepare-assets-for-translation.md)
 1. [Applying translation cloud services to folders](transition-cloud-services.md)
 1. [Create translation projects](translation-projects.md)
 
-If your translation service provider does not provide a connector to integrate with AEM, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+If your translation service provider does not provide a connector to integrate with Experience Manager, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
 Also see, [Creating translation projects for content fragments](creating-translation-projects-for-content-fragments.md).
 
@@ -52,7 +52,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 多語言資產是指具有多種語言的二進位檔、中繼資料和標籤的資產。 資產的二進位檔、中繼資料和標籤通常以一種語言存在，然後轉譯為其他語言，以用於多語言專案。
 
-在Adobe Experience Manager(AEM)資產中，多語言資產會包含在資料夾中，每個資料夾都包含不同語言的資產。
+在Adobe Experience Manager Assets中，多語言資產會包含在資料夾中，每個資料夾都包含不同語言的資產。
 
 每個語言資料夾都稱為語言副本。 語言副本的根資料夾（稱為語言根）標識語言副本中內容的語言。 例如，`/content/dam/it`是義大利語語言副本的義大利語根。 語言副本必須使用[正確配置的語言根](#create-a-language-root)，以便在執行源資產翻譯時定位正確的語言。
 
@@ -89,7 +89,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ### 查看語言根 {#view-language-roots}
 
-觸控最佳化UI提供「參考」面板，顯示已在AEM Assets中建立的語言根清單。
+觸控最佳化UI提供「參考」面板，顯示已在[!DNL Assets]中建立的語言根清單。
 
 1. 在Assets控制台中，選取您要建立語言副本的主要語言。
 1. 按一下或點選GlobalNav表徵圖，然後選擇&#x200B;**[!UICONTROL References]**&#x200B;以開啟「Reference」窗格。
@@ -169,9 +169,9 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ### 建立臨時語言副本 {#creating-temporary-language-copies}
 
-當您執行翻譯工作流程以使用原始資產的編輯版本更新語言副本時，會保留現有語言副本，直到您核准翻譯的資產為止。 AEM Assets會將新翻譯的資產儲存在臨時位置，並在您明確核准資產後更新現有的語言副本。 如果您拒絕資產，語言副本將維持不變。
+當您執行翻譯工作流程以使用原始資產的編輯版本更新語言副本時，會保留現有語言副本，直到您核准翻譯的資產為止。 [!DNL Assets] 將新翻譯的資產儲存在臨時位置，並在您明確核准資產後更新現有的語言副本。如果您拒絕資產，語言副本將維持不變。
 
-1. 按一下/點選「語言副本」下方的「來源根」檔案夾( **[!UICONTROL Language Copies]** )，然後按一下/點選「 **[!UICONTROL Reveal in Assets]** 」 (在資產中顯現) 以開啟「AEM Assets」(AEM Assets)中的檔案夾。
+1. 按一下/點選「語言副本」下方的「來源根」檔案夾(****)，然後按一下/點選「**[!UICONTROL 在資產中顯現」(]**)以開啟「[!DNL Assets]」中的檔案夾。
 1. 從「資產」UI中，選取您已翻譯的資產，然後按一下/點選工具列中的&#x200B;**[!UICONTROL Edit]**&#x200B;圖示，以在編輯模式中開啟資產。
 1. 編輯資產，然後儲存變更。
 1. 執行[添加到現有翻譯項目](#add-to-existing-translation-project)過程的步驟2-14以更新語言副本。
@@ -227,14 +227,14 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 1. 在「資產」UI中，選取您要在目標語言根目錄中建立結構的來源資料夾。
 1. 開啟「參 **[!UICONTROL 考」窗格]** ，然後按一下「復本」下的「語言復本 **[!UICONTROL 」(Language Copies]****[!UICONTROL )]**。
 1. 按一下/點選底部的「建立並翻譯」]**。**[!UICONTROL 
-1. 從&#x200B;**[!UICONTROL 目標語言]**&#x200B;清單中，選擇要建立資料夾結構的語言。
+1. 從&#x200B;**[!UICONTROL 目標語言]**&#x200B;清單中，選擇要為其建立資料夾結構的語言。
 1. 從「專 **[!UICONTROL 案]** 」清單中，選 **[!UICONTROL 擇「僅建立結構」]**。
 1. 按一下/點選「 **[!UICONTROL 建立]**」。目標語言的新結構列在&#x200B;**[!UICONTROL 語言副本]**&#x200B;下。
 1. 按一下/點選清單中的結構，然後按一下/點選「在資產中顯現」]**以導覽至目標語言內的資料夾結構。**[!UICONTROL 
 
 ## 將翻譯雲服務應用於資料夾 {#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager(AEM)可讓您從所選翻譯提供者取得雲端型翻譯服務，確保資產能根據您的需求進行翻譯。
+Adobe Experience Manager可讓您從所選翻譯供應商處獲得雲端式翻譯服務，以確保根據您的需求翻譯您的資產。
 
 您可以直接將翻譯雲端服務套用至資產資料夾，以便在翻譯工作流程中使用。
 
@@ -263,7 +263,7 @@ Adobe Experience Manager(AEM)可讓您從所選翻譯提供者取得雲端型翻
 如果要為要用於翻譯工作流的翻譯服務應用自定義連接器。若要套用自訂連接器，請先從「封裝管理員」安裝連接器。然後，從雲端服務主控台設定連接器。在您設定連接器後，「套用轉譯服務」中所述的「雲端服務」標籤中的連接器清 [單中會顯示此連接器](#applying-the-translation-services)。在您應用自定義連接器並運行翻譯工作流後，翻譯項目的「 **[!UICONTROL Translation Summary]** 」 (翻譯摘要) 表徵圖會在heads **[!UICONTROL Provider]** and **[!UICONTROL Method下顯示連接器詳細資訊]**。
 
 1. 從「封裝管理器」安裝連接器。
-1. 按一下/點選AEM標誌，然後導覽至「**[!UICONTROL 工具>部署>Cloud Services」]**。
+1. 按一下/點選Experience Manager標誌，然後導覽至「**[!UICONTROL 工具>部署>Cloud Services」]**。
 1. 在「雲端服務」頁面的「 **[!UICONTROL 協力廠商服務]** 」下，找 **[!UICONTROL 出您安裝的連接器]** 。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
