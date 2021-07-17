@@ -5,10 +5,10 @@ contentOwner: AG
 feature: asset compute微服務，工作流，資產處理
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
+source-git-commit: 6d662a7350b851a450b8c20660d7a461d940c1b2
 workflow-type: tm+mt
-source-wordcount: '2678'
-ht-degree: 1%
+source-wordcount: '2709'
+ht-degree: 0%
 
 ---
 
@@ -160,8 +160,10 @@ asset compute服務整合允許Experience Manager使用[!UICONTROL 服務參數]
 使用下列其中一種方法，將處理設定檔套用至資料夾：
 
 * 管理員可以在&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**&#x200B;中選取處理設定檔定義，並使用&#x200B;**[!UICONTROL 將設定檔套用至資料夾]**&#x200B;動作。 它會開啟內容瀏覽器，讓您導覽至特定資料夾、選取資料夾並確認設定檔的應用程式。
-* 使用者可以在「資產」使用者介面中選取資料夾、使用&#x200B;**[!UICONTROL 屬性]**&#x200B;動作來開啟資料夾屬性畫面、按一下&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;標籤，然後在快顯清單中，為該資料夾選取適當的處理設定檔。 要保存更改，請按一下&#x200B;**[!UICONTROL 保存並關閉]**。
+* 使用者可以在「資產」使用者介面中選取資料夾、使用&#x200B;**[!UICONTROL 屬性]**&#x200B;動作來開啟資料夾屬性畫面，按一下&#x200B;**[!UICONTROL 資產處理]**&#x200B;標籤，然後在[!UICONTROL 處理設定檔]清單中，為該資料夾選取適當的處理設定檔。 要保存更改，請按一下&#x200B;**[!UICONTROL 保存並關閉]**。
    ![從「資產屬性」標籤將處理設定檔套用至資料夾](assets/folder-properties-processing-profile.png)
+
+* 使用者可以在「資產」使用者介面中選取資料夾或特定資產，以套用處理設定檔，然後從上方可用的選項中選取![資產重新處理圖示](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL 重新處理資產]**&#x200B;選項。
 
 >[!TIP]
 >
