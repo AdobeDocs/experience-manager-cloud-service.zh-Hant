@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 中繼資料
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1238'
 ht-degree: 20%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 20%
 
 **若要全域套用中繼資料設定檔，請執行下列其中一項作業**
 
-* 導覽至`https://<AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`並套用適當的設定檔，然後按一下&#x200B;**儲存**。
+* 導覽至`https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`並套用適當的設定檔，然後按一下&#x200B;**[!UICONTROL 儲存]**。
 
 * 導覽至CRXDE Lite至下列節點：`/content/dam/jcr:content`。 新增屬性`metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`。 按一下「**全部保存**」。
 
@@ -110,7 +110,7 @@ ht-degree: 20%
 
 ### 透過設定檔使用者介面從資料夾移除中繼資料設定檔 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. 按一下AEM標誌並導覽至&#x200B;**[!UICONTROL 工具>資產>中繼資料描述檔]**。
+1. 按一下Experience Manager標誌，並導覽至「**[!UICONTROL 工具>資產>中繼資料描述檔]**」。
 1. 選取要從資料夾或多個資料夾中移除的中繼資料設定檔。
 1. 按一下「從資料夾中刪除元資料配置檔案」]**，然後選擇要從中刪除配置檔案的資料夾或多個資料夾，然後按一下「**[!UICONTROL  Done ]**」。**[!UICONTROL 
 
@@ -118,6 +118,6 @@ ht-degree: 20%
 
 ### 透過屬性從資料夾中移除中繼資料描述檔 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. 按一下AEM標誌，導覽&#x200B;**[!UICONTROL Assets]**，然後導覽至您要移除中繼資料描述檔的資料夾。
+1. 按一下Experience Manager標誌，導覽&#x200B;**[!UICONTROL Assets]**，然後導覽至您要移除中繼資料描述檔的資料夾。
 1. 在資料夾中，按一下複選標籤以選取該標籤，然後按一下「屬性」****。
 1. 選擇「元 **[!UICONTROL 資料描述檔]** 」標籤，然後從下拉式選單中選 **[!UICONTROL 擇「無]** 」，然後按一下「 **[!UICONTROL 儲存]**」。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
