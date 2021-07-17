@@ -4,7 +4,7 @@ description: 使用Creative Cloud整合產生資產變數
 contentOwner: AG
 feature: 上傳，資產處理，發佈，Asset compute微服務，工作流程
 role: User,Admin
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: f21f8bf7975fd4e82785a4c368cf4956096608d4
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -42,7 +42,8 @@ ht-degree: 0%
 
 1. 選擇&#x200B;**[!UICONTROL Creative]**&#x200B;標籤，指定輸出資料夾，選擇&#x200B;**[!UICONTROL Add New]**&#x200B;以添加創作配置。
 
-1. 提供&#x200B;**[!UICONTROL 轉譯名稱]**（或輸出名稱）、**[!UICONTROL 副檔名]**（或檔案類型）、選擇&#x200B;**[!UICONTROL 質量]**（或輸出參數）、選擇&#x200B;**[!UICONTROL 包含]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME類型清單（或輸入資產篩選器），並選擇所需的創作操作。
+1. 提供&#x200B;**[!UICONTROL 轉譯名稱]**（或輸出名稱）、**[!UICONTROL 副檔名]**（或檔案類型）、選擇&#x200B;**[!UICONTROL 質量]**（或輸出參數）、選擇&#x200B;**[!UICONTROL 包含]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME類型清單（或輸入資產篩選器），並選擇所需的創作操作。<br/>
+
    ![處理設定檔中的創意標籤](assets/creative-processing-profile.png)
 
 1. 某些操作需要額外的參數（資產）。 視需要提供這些額外參數的值。
