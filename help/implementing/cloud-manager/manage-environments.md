@@ -2,7 +2,7 @@
 title: 管理環境 — Cloud Service
 description: 管理環境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 06de896e0f8180dc1acbbf490345527b92c15d40
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -67,7 +67,7 @@ ht-degree: 3%
 
 1. 選擇&#x200B;**全部顯示**&#x200B;按鈕以導航到&#x200B;**環境**&#x200B;摘要頁以查看包含完整環境清單的表。
 
-   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
+   ![](assets/environment-view-1.png)
 
 1. **環境**&#x200B;頁面會顯示所有現有環境的清單。
 
