@@ -3,10 +3,10 @@ sub-product: 'Adobe Experience Manager Assets as a Cloud Service '
 user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Assets as a Cloud Service。
-solution: Experience Manager, Experience Manager Assets, Experience Manager as a Cloud Service
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '479'
 ht-degree: 71%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 71%
    + [影像智慧標籤](smart-tags.md)
    + [智慧標籤您的視訊資產](smart-tags-video-assets.md)
    + [如何組織資產](organize-assets.md)
-   + [在AEM中使用 [!DNL Adobe Stock] 資產](aem-assets-adobe-stock.md)
+   + [使用 [!DNL Adobe Stock] 資產](aem-assets-adobe-stock.md)
    + [管理集合](manage-collections.md)
    + [中繼資料概覽](manage-metadata.md)
    + [與 [!DNL Adobe Creative Cloud]整合](aem-cc-integration-best-practices.md)
@@ -54,9 +54,9 @@ ht-degree: 71%
    + [搜尋 Facet](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
    + [資產HTTP API中的內容片段支援](content-fragments/assets-api-content-fragments.md)
-   + [AEM GraphQL API，適用於內容片段](content-fragments/graphql-api-content-fragments.md)
-   + [內容片段的遠端AEM GraphQL查詢驗證](content-fragments/graphql-authentication-content-fragments.md)
-   + [AEM GraphQL API，含內容片段 — 範例內容與查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [適用於內容片段的GraphQL API](content-fragments/graphql-api-content-fragments.md)
+   + [內容片段的遠端GraphQL查詢驗證](content-fragments/graphql-authentication-content-fragments.md)
+   + [含內容片段的GraphQL API — 範例內容與查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [連線資產](use-assets-across-connected-assets-instances.md)
    + [資產報表](asset-reports.md)
    + [階層式中繼資料](cascading-metadata.md)
