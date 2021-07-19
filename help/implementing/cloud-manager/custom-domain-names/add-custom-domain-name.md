@@ -2,7 +2,7 @@
 title: 新增自訂網域名稱
 description: 新增自訂網域名稱
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: bee18f13a7261077821205cad1df5e68a63638e0
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 * AEM as aCloud Service不支援萬用字元網域。
 
-* 每個Cloud Manager環境最多可托管每個環境500個自訂網域。
+* 每個Cloud Manager環境最多可托管每個環境250個自訂網域。
 
 * 同一個域名不能用於多個環境。
 
