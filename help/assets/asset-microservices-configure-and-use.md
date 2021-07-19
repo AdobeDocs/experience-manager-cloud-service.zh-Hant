@@ -5,10 +5,10 @@ contentOwner: AG
 feature: asset compute微服務，工作流，資產處理
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 6d662a7350b851a450b8c20660d7a461d940c1b2
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 0%
+source-wordcount: '2678'
+ht-degree: 1%
 
 ---
 
@@ -75,7 +75,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 1. 管理員可存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**。 按一下&#x200B;**[!UICONTROL 建立]**。
 1. 提供名稱，協助您在套用至資料夾時唯一識別設定檔。
-1. 要生成FPO格式副本，請在&#x200B;**[!UICONTROL Image]**&#x200B;頁簽上啟用&#x200B;**[!UICONTROL Create FPO Rendition]**。 輸入介於1和100之間的&#x200B;**[!UICONTROL Quality]**&#x200B;值。
+1. 要生成FPO格式副本，請在&#x200B;**[!UICONTROL Standard]**&#x200B;頁簽上啟用&#x200B;**[!UICONTROL 建立FPO格式副本]**。 輸入介於1和100之間的&#x200B;**[!UICONTROL Quality]**&#x200B;值。
 1. 若要產生其他轉譯，請按一下「新增」**[!UICONTROL 並提供下列資訊：]**
 
    * 每個格式副本的檔案名。
@@ -160,10 +160,8 @@ asset compute服務整合允許Experience Manager使用[!UICONTROL 服務參數]
 使用下列其中一種方法，將處理設定檔套用至資料夾：
 
 * 管理員可以在&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**&#x200B;中選取處理設定檔定義，並使用&#x200B;**[!UICONTROL 將設定檔套用至資料夾]**&#x200B;動作。 它會開啟內容瀏覽器，讓您導覽至特定資料夾、選取資料夾並確認設定檔的應用程式。
-* 使用者可以在「資產」使用者介面中選取資料夾、使用&#x200B;**[!UICONTROL 屬性]**&#x200B;動作來開啟資料夾屬性畫面，按一下&#x200B;**[!UICONTROL 資產處理]**&#x200B;標籤，然後在[!UICONTROL 處理設定檔]清單中，為該資料夾選取適當的處理設定檔。 要保存更改，請按一下&#x200B;**[!UICONTROL 保存並關閉]**。
+* 使用者可以在「資產」使用者介面中選取資料夾、使用&#x200B;**[!UICONTROL 屬性]**&#x200B;動作來開啟資料夾屬性畫面、按一下&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;標籤，然後在快顯清單中，為該資料夾選取適當的處理設定檔。 要保存更改，請按一下&#x200B;**[!UICONTROL 保存並關閉]**。
    ![從「資產屬性」標籤將處理設定檔套用至資料夾](assets/folder-properties-processing-profile.png)
-
-* 使用者可以在「資產」使用者介面中選取資料夾或特定資產，以套用處理設定檔，然後從上方可用的選項中選取![資產重新處理圖示](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL 重新處理資產]**&#x200B;選項。
 
 >[!TIP]
 >
