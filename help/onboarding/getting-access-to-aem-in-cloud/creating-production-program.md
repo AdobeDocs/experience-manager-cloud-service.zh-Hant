@@ -2,9 +2,9 @@
 title: '建立生產計畫 '
 description: 建立生產計畫
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 410986233a599638cb1c2a69f33c94ea67c530fb
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -12,14 +12,6 @@ ht-degree: 0%
 # 建立生產計畫 {#create-production-program}
 
 *Production*&#x200B;程式適用於熟悉AEM和Cloud Manager且準備好開始編寫、建立和測試程式碼，以將程式碼部署至生產環境的使用者。
-
-觀看兩部分教學課程影片，了解如何在Cloud Manager中建立方案：
-
->[!VIDEO](https://video.tv.adobe.com/v/334953)
-
->[!VIDEO](https://video.tv.adobe.com/v/334954)
-
-此外，
 
 請依照下列步驟建立生產方案：
 
