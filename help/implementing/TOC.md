@@ -5,10 +5,10 @@ breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 feature: 開發人員工具
 role: Developer, Architect
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 34%
+source-wordcount: '913'
+ht-degree: 33%
 
 ---
 
@@ -180,11 +180,15 @@ ht-degree: 34%
    + [部署至 AEM as a Cloud Service ](deploying/overview.md)
    + [AEM版本更新](deploying/aem-version-updates.md)
    + [為 AEM as a Cloud Service 設定 OSGi](deploying/configuring-osgi.md)
+   + [OSGi設定API](deploying/osgi-configuration-api.md)
 + 作者階層 {#author-tier}
    + [存取作者階層](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [保護作者階層](/help/implementing/author-tier/securing-the-author-tier.md)
 + 內容傳遞概覽 {#content-delivery}
    + [內容傳遞流程](dispatcher/overview.md)
    + [雲端中的 Dispatcher](dispatcher/disp-overview.md)
+   + [使用Dispatcher工具進行驗證和除錯](dispatcher/validation-debug.md)
+   + [將Dispatcher設定從AMS移轉至AEM作為Cloud Service](dispatcher/ams-aem.md)
+   + [使用舊版Dispatcher工具驗證和除錯](dispatcher/validation-debug-legacy.md)
    + [AEM as a Cloud Service 中的 CDN](dispatcher/cdn.md)
    + [AEM as a Cloud Service 中的快取](dispatcher/caching.md)
