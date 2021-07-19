@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute微服務，工作流，發行資訊，資產處理
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 1%
@@ -43,7 +43,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 * 用戶端(例如網頁瀏覽器或Adobe資產連結)會傳送上傳請求至[!DNL Experience Manager]，然後開始直接將二進位檔上傳至二進位雲端儲存空間。
 * 直接二進位上傳完成時，用戶端會通知[!DNL Experience Manager]。
 * [!DNL Experience Manager] 傳送處理要求至資產微服務。請求內容取決於[!DNL Experience Manager]中指定要產生哪些轉譯的處理設定檔設定。
-* 資產微服務後端接收請求，根據請求將其分派給一或多個微服務。 每個微服務直接從二進位雲儲存中訪問原始二進位。
+* 資產微服務後端接收請求，根據請求將其分派給一個或多個微服務。 每個微服務直接從二進位雲儲存中訪問原始二進位。
 * 處理結果（例如轉譯）會儲存在二進位雲端儲存空間中。
 * Experience Manager會收到處理完成的通知，並附上產生二進位檔（轉譯）的直接指標。 產生的轉譯可在[!DNL Experience Manager]中用於上傳的資產。
 
