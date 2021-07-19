@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 智慧標籤，標籤
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '2350'
+source-wordcount: '2346'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 與自然語言辭匯相比，基於業務分類法的標籤有助於使資產與公司的業務一致，並確保最相關的資產出現在搜尋中。 例如，汽車製造商可以用型號標籤汽車影像，以便在搜索以設計促銷活動時只顯示相關影像。
 
-在背景中，此功能使用人為智慧架構[Adobe Sensei](https://www.adobe.com/tw/sensei/experience-cloud-artificial-intelligence.html)，根據您的標籤結構和商業分類訓練其影像識別演算法。 然後，系統會使用此內容智慧，將相關標籤套用至不同的資產集。 [!DNL Experience Manager Assets] 依預設，會自動將智慧標籤套用至已上傳的資產。
+在背景中，此功能使用人為智慧架構[Adobe Sensei](https://www.adobe.com/tw/sensei/experience-cloud-artificial-intelligence.html)，根據您的標籤結構和商業分類訓練其影像識別演算法。 然後，系統會使用此內容智慧，將相關標籤套用至不同的資產集。 [!DNL Experience Manager Assets] 依預設，部署會 [!DNL Adobe Developer Console] 與整合。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -179,11 +179,11 @@ ht-degree: 6%
 
 ## 使用智慧標籤標籤資產 {#tag-assets}
 
-上傳時，所有支援的資產類型都會自動加上[!DNL Experience Manager Assets]標籤。 預設會啟用標籤並運作。 [!DNL Experience Manager] 以近乎即時的方式套用適當的標籤。  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+上傳時，所有支援的資產類型都會自動加上[!DNL Experience Manager Assets]標籤。 預設會啟用標籤。 [!DNL Experience Manager] 以近乎即時的方式套用適當的標籤。  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
-* 對於影像和視訊，智慧標籤會以某些視覺方面為基礎。
+對於影像和視訊，智慧標籤會根據某些視覺方面而衍生。
 
-* 對於文字型資產，智慧標籤的功效不取決於資產中的文字數量，而取決於資產文字中出現的相關關鍵字或實體。 對於文字型資產，智慧標籤是顯示在文字中的關鍵字，但是最能說明資產的關鍵字。 對於支援的資產，[!DNL Experience Manager]已擷取文字，然後加以索引並用於搜尋資產。 不過，與完整搜尋索引相比，基於文字中關鍵字的智慧標籤可提供專用、結構化和較高優先順序的搜尋面向，用來改善資產探索。
+對於文字型資產，智慧標籤的功效不取決於資產中的文字數量，而取決於資產文字中出現的相關關鍵字或實體。 對於文字型資產，智慧標籤是顯示在文字中的關鍵字，但是最能說明資產的關鍵字。 對於支援的資產，[!DNL Experience Manager]已擷取文字，然後加以索引並用於搜尋資產。 不過，與完整搜尋索引相比，基於文字中關鍵字的智慧標籤可提供專用、結構化和較高優先順序的搜尋面向，用來改善資產探索。
 
 ## 管理智慧標籤和資產搜尋 {#manage-smart-tags-and-searches}
 
