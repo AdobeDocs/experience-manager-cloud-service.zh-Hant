@@ -1,28 +1,28 @@
 ---
 title: XMP 中繼資料
-description: 了解用於中繼資料管理的XMP（可擴充中繼資料平台）中繼資料標準。 它被Experience Manager用作建立、處理和交換元資料的標準格式。
+description: 了解用於中繼資料管理的XMP（可擴充中繼資料平台）中繼資料標準。 它被AEM用作建立、處理和交換元資料的標準格式。
 contentOwner: AG
 feature: 中繼資料
 role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 16%
+source-wordcount: '1016'
+ht-degree: 15%
 
 ---
 
 # XMP 中繼資料 {#xmp-metadata}
 
-XMP（可擴充中繼資料平台）是Experience Manager資產用於所有中繼資料管理的中繼資料標準。 XMP提供標準格式，供多種應用程式建立、處理和交換中繼資料。
+XMP（可擴充中繼資料平台）是AEM Assets用於所有中繼資料管理的中繼資料標準。 XMP提供標準格式，供多種應用程式建立、處理和交換中繼資料。
 
-除了提供可嵌入到所有檔案格式的通用元資料編碼外，XMP還提供豐富的[內容模型](#xmp-core-concepts)，並且受Adobe](#advantages-of-xmp)和其他公司支援[，因此XMP的用戶與[!DNL Assets]相結合擁有一個強大的平台來構建。
+除了提供可嵌入到所有檔案格式的通用元資料編碼，XMP還提供豐富的[內容模型](#xmp-core-concepts)，並受Adobe](#advantages-of-xmp)和其他公司支援[，因此XMP的用戶與AEM Assets相結合擁有一個強大的平台來構建。
 
 ## XMP概述與生態系統 {#xmp-ecosystem}
 
-[!DNL Assets] 原生支援XMP中繼資料標準。XMP是處理和儲存數位資產中標準化和專屬中繼資料的標準。 XMP的設計是通用標準，可讓多個應用程式有效處理中繼資料。
+AEM Assets原生支援XMP中繼資料標準。 XMP是處理和儲存數位資產中標準化和專屬中繼資料的標準。 XMP的設計是通用標準，可讓多個應用程式有效處理中繼資料。
 
-例如，生產專業人員可在Adobe的應用程式中使用內建的XMP支援，以傳遞多種檔案格式的資訊。 [!DNL Assets]存放庫會擷取XMP中繼資料，並使用它來管理內容生命週期，並提供建立自動化工作流程的功能。
+例如，生產專業人員可在Adobe的應用程式中使用內建的XMP支援，以傳遞多種檔案格式的資訊。 AEM Assets存放庫會擷取XMP中繼資料，並使用它來管理內容生命週期，並提供建立自動化工作流程的功能。
 
 XMP借由提供資料模型、儲存模型和結構，標準化中繼資料的定義、建立和處理方式。 本節將介紹所有這些概念。
 
@@ -125,7 +125,7 @@ To let the XMP write-back feature propagate metadata changes to select rendition
 
 For the XMP write-back feature to propagate metadata to the rendition thumbnails 140.100.png and 319.319.png, perform these steps.
 
-1. Tap/click the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. Tap/click the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
 1. From the Models page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
 1. In the **[!UICONTROL DAM Metadata Writeback]** properties page, open the **[!UICONTROL XMP Writeback Process]** step.
 1. In the **[!UICONTROL Step Properties]** dialog box, tap/click the **[!UICONTROL Process]** tab.
