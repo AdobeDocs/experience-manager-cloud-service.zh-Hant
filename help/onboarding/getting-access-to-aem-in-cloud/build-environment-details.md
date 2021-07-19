@@ -2,9 +2,9 @@
 title: 建置環境詳細資訊
 description: 建置環境詳細資訊 — Cloud Services
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 558cd516a89d9012e96fb0b783d0df3eecfda73d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Cloud Manager會使用專用的建置環境來建立和測試您的程式碼。 
 
 * 建置環境是以Linux為基礎，衍生自Ubuntu 18.04。
 * 已安裝Apache Maven 3.6.0。
-* 安裝的Java版本為OracleJDK 8u202、Azul Zulu 8u292、OracleJDK 11.0.2和Azul Zulu 11.0.11。
+* 安裝的Java版本為OracleJDK 8u202和11.0.2。
 * 安裝了一些必需的附加系統軟體包：
 
    * bzip2
@@ -38,13 +38,13 @@ Cloud Manager會使用專用的建置環境來建立和測試您的程式碼。 
 >[!NOTE]
 >雖然Cloud Manager未定義`jacoco-maven-plugin`的特定版本，但使用的版本至少必須為`0.7.5.201505241946`。
 
-### 使用特定Java版本 {#using-java-support}
+### 使用Java 11支援 {#using-java-support}
 
-依預設，專案是由Cloud Manager建置程式使用Oracle8 JDK建置。 希望使用替代JDK的客戶有兩個選項：Maven工具鏈和為整個Maven執行過程選擇替代的JDK版本。
+Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設，專案是使用Java 8建置。
 
-#### Maven工具鏈 {#maven-toolchains}
+若客戶想在其專案中使用Java 11，可使用[Apache Maven工具鏈外掛程式](https://maven.apache.org/plugins/maven-toolchains-plugin/)執行此操作。
 
-[Maven工具鏈插件](https://maven.apache.org/plugins/maven-toolchains-plugin/)允許項目選擇特定JDK（或&#x200B;*工具鏈*），以用於工具鏈感知的Maven插件的上下文。 通過指定供應商和版本值，在項目的`pom.xml`檔案中完成此操作。 `pom.xml`檔案中的範例區段為：
+要執行此操作，請在pom.xml檔案中新增如下所示的`<plugin>`項目：
 
 ```
 <plugin>
@@ -63,37 +63,17 @@ Cloud Manager會使用專用的建置環境來建立和測試您的程式碼。 
             <jdk>
                 <version>11</version>
                 <vendor>oracle</vendor>
-            </jdk>
+           </jdk>
         </toolchains>
     </configuration>
 </plugin>
 ```
 
-這會導致所有工具鏈感知的Maven外掛程式都使用OracleJDK（第11版）。
-
-使用此方法時，Maven本身仍使用預設的JDK(Oracle8)執行。 因此，透過外掛程式（例如Apache Maven Enforcer外掛程式）檢查或強制執行Java版本時無法運作，且不得使用這類外掛程式。
-
-當前可用的供應商/版本組合包括：
-
-* oracle1.8
-* oracle1.11
-* oracle11
-* sun 1.8
-* sun 1.11
-* sun 11
-* azul 1.8
-* azul 1.11
-* azul 8
-
-#### 備用Maven執行JDK版本 {#alternate-maven-jdk-version}
-
-還可以選擇Azul 8或Azul 11作為JDK，以執行整個Maven執行。 與工具鏈選項不同，這會更改用於所有插件的JDK，除非還設定了工具鏈配置，在這種情況下，工具鏈配置仍應用於具有工具鏈的Maven插件。 因此，使用[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/)檢查並強制執行Java版本將有效。
-
-若要這麼做，請在管道使用的Git存放庫分支中建立名為`.cloudmanager/java-version`的檔案。 此檔案可包含內容11或8。 會忽略任何其他值。 如果指定了11，則使用Azul 11。 如果指定8，則使用Azul 8。
+>[!NOTE]
+>支援的供應商值為`oracle`和`sun`，支援的版本值為`1.8`、`1.11`和`11`。
 
 >[!NOTE]
->在Cloud Manager未來的版本中，預設JDK將被更改，預設JDK將為Azul 11。 不與Java 11相容的專案應盡快建立包含內容8的此檔案，以確保這些檔案不受此開關影響。
-
+>Cloud Manager專案組建仍使用Java 8來叫用Maven，因此無法透過[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/)等外掛程式，檢查或強制執行工具鏈外掛程式中設定的Java版本，因此不得使用這類外掛程式。
 
 ## 環境變數 {#environment-variables}
 
