@@ -4,9 +4,9 @@ description: 'Dynamic Media電子報(依Experience League)是每月電子報。 
 feature: 資產管理
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -123,15 +123,15 @@ ht-degree: 0%
    * 可讓您妥善管理高價值資產以放心地提供體驗，讓訪客持續回來的資源和資訊。
    * 了解即將舉辦的數位資產保護網路研討會。
    * 下一站是資訊豐富的Adobe內幕者導覽。
-   * 當您在Experience Manager資產(Experience Manager資產)中擁有Dynamic Media時，可提供令人興奮的功能。
+   * 當您在Experience Manager資產(AEM Assets)中擁有Dynamic Media時，可提供令人興奮的功能。
    * 新增360度影片和自訂影片縮圖至您的網站。
-   * 在Assets中與Dynamic Media首席解決方案顧問Andrew Hathaway會面。
+   * 見見AEM AssetsDynamic Media首席解決方案顧問Andrew Hathaway。
 
 * **[2019年6月，06期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
    此問題：
 
-   * 觀看影片，突顯Experience Manager資產升級至Dynamic Media的絕佳作法。
+   * 觀看影片，突顯在AEM Assets中升級至Dynamic Media的絕佳作法。
    * 觀看Experience League中的重要作法影片。
    * 深入了解即將推出的Adobe內幕者導覽。
    * 閱讀如何保護您的數位資產免遭盜版的相關資訊。
