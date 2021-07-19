@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 資產管理，DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 7%
@@ -63,7 +63,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
+   >Only the asset creator (the person who uploads a particular asset to Experience Manager Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall Experience Manager level.
 -->
 
 1. 在&#x200B;**[!UICONTROL 秒為的前通知欄位中]**，指定當您要接收到有關到期的通知時，資產到期前的秒數。 如果您是管理員或資產建立者，您會在資產到期前收到訊息，通知您資產將在指定時間後到期。
