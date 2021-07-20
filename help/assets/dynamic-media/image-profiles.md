@@ -4,9 +4,9 @@ description: 了解如何建立包含遮色片銳利化設定、智慧型裁切�
 feature: 資產管理，影像設定檔，轉譯
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
 workflow-type: tm+mt
-source-wordcount: '2711'
+source-wordcount: '2714'
 ht-degree: 7%
 
 ---
@@ -160,7 +160,7 @@ ht-degree: 7%
 
 #### 從屬性將Dynamic Media影像設定檔套用至資料夾 {#applying-image-profiles-to-folders-from-properties}
 
-1. 選取Experience Manager標誌，並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用影像設定檔的資料夾。
+1. 點選AEM標誌並導覽至「**[!UICONTROL 資產]**」。 然後導覽至您要套用影像設定檔之資料夾的父資料夾。
 1. 在資料夾中，選擇複選標籤以選擇它，然後選擇&#x200B;**[!UICONTROL 屬性]**。
 1. 選擇&#x200B;**[!UICONTROL Image Profiles]**&#x200B;頁簽。 從&#x200B;**[!UICONTROL 設定檔名稱]**&#x200B;下拉式清單中，選取設定檔，然後選取&#x200B;**[!UICONTROL 儲存並關閉]**。 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
