@@ -2,15 +2,15 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
+source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1535'
 ht-degree: 3%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] as aCloud Service{#release-notes}的最新發行說明
+# [!DNL Adobe Experience Manager]作為Cloud Service的最新發行說明 {#release-notes}
 
 以下章節概述[!DNL Experience Manager]作為Cloud Service的目前（最新）版本的一般發行說明。
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites] {#what-is-new-sites}中的新增功能
+### [!DNL Sites]中的新增功能 {#what-is-new-sites}
 
 * GraphQL端點 — 現在可以為個別AEM Sites設定啟用AEM GraphQL API，並可使用新的GraphQL主控台UI為這些設定建立自訂GraphQL端點。 UI也允許管理GraphQL端點。
 
@@ -44,7 +44,7 @@ ht-degree: 3%
 
 * 內容模型、新的標籤佔位符資料類型 — 新的標籤佔位符資料類型允許將資料類型分組到內容片段編輯器中標籤下呈現的部分。
 
-### [!DNL Sites] {#bug-fixes-sites}中的錯誤修正
+### [!DNL Sites]中的錯誤修正 {#bug-fixes-sites}
 
 * 內容片段 — 移動內容片段或資料夾現在會更新片段內的巢狀參考(CQ-4320815)
 
@@ -52,7 +52,7 @@ ht-degree: 3%
 
 ## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets] {#what-is-new-assets}中的新增功能
+### [!DNL Assets]中的新增功能 {#what-is-new-assets}
 
 * [!DNL Experience Manager] 不會封存下載原始檔案的單一資產下載。此增強功能可加快下載速度。
 
@@ -66,13 +66,15 @@ ht-degree: 3%
 
 * 編輯中繼資料結構時，新的根路徑選擇器欄位可讓管理員快速輕鬆地進行選擇，從而縮短配置時間。
 
+* 編輯中繼資料結構時，會新增資料類型，在中繼資料編輯器中提供自由格式文字區域。 使用者可使用此文字區域，輸入自由格式文字作為資產的中繼資料。 請參閱[中繼資料結構編輯器](/help/assets/metadata-schemas.md)。
+
 * 許多資產的中繼資料可使用CSV檔案大量匯入，也可匯出為CSV檔案。 預設日期格式現在為`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`。 使用者可更新欄標題，以運用不同格式。 例如，將`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`新增為CSV檔案中的欄標題，而非字詞`Date`。
 
 * 在「欄」檢視中瀏覽資產時，視覺指標會顯示每個資產的已核准或已拒絕狀態。
 
 * 在欄檢視中瀏覽資產時，會顯示過期資產的視覺指標。
 
-### [!DNL Assets] {#bug-fixes-assets}中的錯誤修正
+### [!DNL Assets]中的錯誤修正 {#bug-fixes-assets}
 
 * 嘗試移動多個資產或資料夾時，主控台中會記錄錯誤，且移動作業未完成。 如果無法更新標題，移動操作就會失敗。 (CQ-4322080)
 
@@ -90,7 +92,7 @@ ht-degree: 3%
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] {#what-is-new-forms}中的新增功能
+### [!DNL Forms]中的新增功能 {#what-is-new-forms}
 
 * **在啟用Adobe Sign的適用性Forms中使用政府ID身分驗證方法**
 
@@ -114,16 +116,16 @@ ht-degree: 3%
 
    您可以在Cloud Service例項上使用XDP作為記錄檔案範本，並在AEM Forms作為Cloud ServiceSDK（本機開發環境）。 過去，支援僅限於Cloud Service例項。
 
-### [!DNL Forms] {#bug-fixes-forms}中的錯誤修正
+### [!DNL Forms]中的錯誤修正 {#bug-fixes-forms}
 
 * 將配置為不生成記錄文檔的適用性表單提交到配置為生成記錄文檔的AEM工作流時，不會顯示錯誤消息，且任務無法提交。
 
-### 其他更新{#misc-2021-04-0-forms}
+### 其他更新 {#misc-2021-04-0-forms}
 
 * 為了更輕鬆辨識內容，服務現在會為XDP、動態PDF和結構檔案產生即時縮圖。
 * 新增將PDF檔案移至AEM Forms UI中放置之資料夾的功能。
 
-## Adobe Experience Manager Commerce as aCloud Service{#cloud-services-commerce}
+## Adobe Experience Manager Commerce as aCloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
@@ -150,7 +152,7 @@ ht-degree: 3%
 AEM as aCloud Service2021.4.0中的Cloud Manager發行日期為2021年4月8日。
 下一版預計於2021年5月6日發行。
 
-### 新功能 {#what-is-new-april}
+### 新增功能 {#what-is-new-april}
 
 * 新增和編輯方案工作流程的UI更新，讓工作流程更直覺。
 
