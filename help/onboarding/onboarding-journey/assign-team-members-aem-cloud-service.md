@@ -4,7 +4,7 @@ description: 請參照本頁面，了解如何將團隊成員指派給AEM as a C
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8b30fc9494e152aa742cf17c02f982f5c9479473
+source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## 目標 {#objective}
 
-本檔案可協助您了解系統管理員必須執行哪些步驟，才能將團隊成員指派給AEM as a Cloud Service產品設定檔，以及為何讓AEM作者能夠透過AEM開始其歷程至關重要。
+本檔案可協助您了解系統管理員必須執行哪些步驟，才能將您的團隊成員指派給AEM as a Cloud Service產品設定檔，以及為何讓AEM作者能夠透過AEM開始其歷程至關重要。
 
 閱讀本小節後，您應：
 
