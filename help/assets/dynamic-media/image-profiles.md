@@ -4,9 +4,9 @@ description: 了解如何建立包含遮色片銳利化設定、智慧型裁切�
 feature: 資產管理，影像設定檔，轉譯
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
+source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: '2762'
 ht-degree: 7%
 
 ---
@@ -160,9 +160,15 @@ ht-degree: 7%
 
 #### 從屬性將Dynamic Media影像設定檔套用至資料夾 {#applying-image-profiles-to-folders-from-properties}
 
-1. 點選AEM標誌並導覽至「**[!UICONTROL 資產]**」。 然後導覽至您要套用影像設定檔之資料夾的父資料夾。
-1. 在資料夾中，選擇複選標籤以選擇它，然後選擇&#x200B;**[!UICONTROL 屬性]**。
-1. 選擇&#x200B;**[!UICONTROL Image Profiles]**&#x200B;頁簽。 從&#x200B;**[!UICONTROL 設定檔名稱]**&#x200B;下拉式清單中，選取設定檔，然後選取&#x200B;**[!UICONTROL 儲存並關閉]**。 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+1. 點選Experience Manager標誌並導覽至「**[!UICONTROL 資產]**」。
+1. 導覽至您要套用影像設定檔的&#x200B;*資料夾*（非資產）。
+1. 視您所在的檢視而定，執行下列其中一項操作：
+   * 在「卡片檢視」中，將指標暫留在資料夾上，然後選取核取標籤加以選取。
+   * 在「列視圖」或「清單視圖」中，選擇資料夾名稱左側的複選框。
+1. 在工具欄上，選擇&#x200B;**[!UICONTROL 屬性]**。
+1. 選取&#x200B;**[!UICONTROL Dynamic Media處理]**&#x200B;標籤。
+1. 在&#x200B;**[!UICONTROL 影像描述檔]**&#x200B;下，從&#x200B;**[!UICONTROL 描述檔名稱]**&#x200B;下拉式清單中，選取要套用的描述檔。
+1. 在頁面的右上角附近，選取&#x200B;**[!UICONTROL 儲存並關閉]**。 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
