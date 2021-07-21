@@ -4,9 +4,9 @@ description: 請依照本頁所述，了解如何開始入門歷程
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -17,21 +17,15 @@ ht-degree: 1%
 
 ## 目標 {#objective}
 
-身為系統管理員，本檔案會摘要您入門歷程中的最初步驟。
+身為系統管理員，本檔案會摘要您上線歷程的最初步驟。
 
 閱讀本小節後，您應能：
 
-* 了解什麼是Admin Console
 * 如何存取及登入Admin Console
 * 通過Admin Console查看您作為系統管理員的權限
 
-## 了解Admin Console {#login-admin-console}
-
-簽署合約後，Adobe Managed Services(AMS)就會開始建立客戶。
-
-簽署合同後，Adobe將完成貴組織的布建，隨後您的組織的系統管理員將收到歡迎電子郵件，允許他們執行系統管理員任務，如添加用戶並將其分配給角色。
-
-Adobe管理控制台是管理和管理Adobe產品授權和使用者的集中位置。 您的系統管理員會登入「Adobe管理控制台」，以新增或移除使用者等。 按一下[這裡](https://adminconsole.adobe.com/)以存取Adobe管理控制台。
+>[!NOTE]
+>開始上線程式之前，請務必了解Adobe Admin Console。 Adobe管理控制台是管理和管理Adobe產品授權和使用者的集中位置。 您的系統管理員會登入「Adobe管理控制台」，以新增或移除使用者等。 如需詳細資訊，請參閱[這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)。
 
 
 ## 登入Admin Console {#steps-admin-console}
