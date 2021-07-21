@@ -4,9 +4,9 @@ description: 請依照本頁所述，了解如何開始入門歷程
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0931d0a6c53c850013b0162b9c027daec39ceb
+source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '709'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 1%
 | # | 文章 | 說明 |
 |---|---|---|
 | 0 | 入門歷程 | 此文檔 |
-| 1 | 了解入門概念，例如：<br>系統管理員<br>Admin Console<br>AdobeIdentity Management系統<br>Adobe ID<br>Cloud Manager<br>AEM as aCloud Service團隊和產品設定檔<br>Adobe支援 | 了解入門概念。 |
+| 1 | 了解入門概念，例如：<br>[系統管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[AdobeIdentity Management系統](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM as aCloud Service團隊和產品設定檔簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Adobe支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | 了解入門概念。 |
 | 2 | 入門 | 了解如何以系統管理員身分登入Admin Console和檢查您的設定檔 |
 | 3 | 將團隊成員指派給Cloud Manager產品設定檔 | 檢閱Cloud Manager產品設定檔，並了解如何將團隊成員指派給Cloud Manager產品設定檔。 |
 | 4 | 透過Cloud Manager設定雲端資源 | 了解雲端資源的建立方式，以及可由誰執行。 此外，也可了解雲端程式和環境的建立方式。 |
