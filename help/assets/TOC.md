@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 71%
+source-wordcount: '481'
+ht-degree: 66%
 
 ---
 
@@ -43,10 +43,10 @@ ht-degree: 71%
    + [管理影片資產](manage-video-assets.md)
    + [下載資產](download-assets-from-aem.md)
    + [要編輯的簽入和簽出資產](check-out-and-submit-assets.md)
-   + [資產的數位版權管理](drm.md)
+   + [Digital Rights Management資產](drm.md)
    + [浮水印資產](watermark-assets.md)
    + [使用 [!DNL Creative Cloud] API處理資產](cc-api-integration.md)
-+ 設定、管理及擴充 [!DNL Assets] {#admin}
++ 配置、管理和擴展[!DNL Assets] {#admin}
    + [開發人員檔案和API參考](developer-reference-material-apis.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
    + [使用影像和視訊設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -112,8 +112,8 @@ ht-degree: 71%
    + [互動影像](dynamic-media/interactive-images.md)
    + [互動影片](dynamic-media/interactive-videos.md)
    + [360 VR 影片](dynamic-media/360-video.md)
-   + [整合 Dynamic Media 檢視器以及 Adobe Analytics 和 Adobe Launch](dynamic-media/launch.md)
-   + [使用「快速檢視」建立自訂快顯視窗](dynamic-media/custom-pop-ups.md)
+   + [整合Dynamic Media檢視器以及Adobe Analytics和Adobe Experience Platform標籤](dynamic-media/tags.md)
+   + [使用Quickview建立自訂快顯視窗](dynamic-media/custom-pop-ups.md)
    + [為回應式網站傳送最佳化影像](dynamic-media/responsive-site.md)
    + [預覽 Dynamic Media 資產](dynamic-media/previewing-assets.md)
    + [將 Dynamic Media 資產新增至頁面](dynamic-media/adding-dynamic-media-assets-to-pages.md)
