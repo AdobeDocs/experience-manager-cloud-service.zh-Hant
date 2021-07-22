@@ -4,9 +4,9 @@ description: 請詳閱本頁，了解如何將團隊成員指派給Cloud Manager
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -155,12 +155,11 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-作為分配給&#x200B;*業務所有者*&#x200B;角色的系統管理員，您必須訪問並登錄Cloud Manager。
->[!NOTE]
->請參閱[導覽至Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) ，了解如何登入及存取Cloud Manager。
+1. 作為分配給&#x200B;*業務所有者*&#x200B;角色的系統管理員，您必須訪問並登錄Cloud Manager。 請參閱[導覽至Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) ，了解如何登入及存取Cloud Manager。
 
-業務擁有者角色中的Cloud Manager使用者可登入並設定您的雲端資源，包括您的方案和環境。 這可確保您的專家團隊能盡快開始以Cloud Service存取AEM。
-業務擁有者設定雲端資源後，已成功新增至Cloud Manager產品設定檔的開發人員和部署經理可以存取Cloud Manager，並熟悉如何繼續學習。
+1. 接下來，*業務擁有者*&#x200B;角色中的Cloud Manager使用者可以登入並設定您的雲端資源，包括您的雲端方案和環境。 這可確保您的專家團隊能盡快開始以Cloud Service存取AEM。
+
+1. 在您的&#x200B;*業務擁有者*&#x200B;設定雲資源後，成功新增至Cloud Manager產品設定檔的&#x200B;*開發人員*&#x200B;和&#x200B;*部署管理員*&#x200B;可以存取Cloud Manager，並熟悉如何繼續學習路徑。
 
 ## 其他資源 {#additional-resources}
 
