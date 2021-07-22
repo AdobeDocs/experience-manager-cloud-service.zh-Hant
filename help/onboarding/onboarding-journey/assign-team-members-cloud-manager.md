@@ -4,9 +4,9 @@ description: 請詳閱本頁，了解如何將團隊成員指派給Cloud Manager
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 57b29f8ef6c65b5a752aca680557e75ba55f64bd
+source-git-commit: 3dbcc5dd09479a84ed13aad0ee3d8c229520e10f
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -67,54 +67,90 @@ ht-degree: 0%
 
 您現在可以新增使用者，並將其指派給Cloud Manager Business Owner產品設定檔。
 
-為了成功執行此作業，您必須從Admin Console將使用者新增至產品(在此案例中是Cloud Service形式的AEM)和Cloud Manager業務擁有者產品設定檔。
+>[!NOTE]
+>為了成功執行此作業，您必須從Admin Console將使用者新增至產品(在此為Cloud Service的AEM)和[Cloud Manager業務擁有者產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)。
 
 下列步驟將引導您完成此操作：
 
-1. 識別將管理Cloud Manager程式的使用者，並將他們新增至業務擁有者產品設定檔。 系統管理員必須是第一個存取及登入Cloud Manager的人員。 您必須先將自己（系統管理員）新增至業務擁有者產品設定檔。
+1. 識別將管理Cloud Manager程式的使用者，並將他們新增至業務擁有者產品設定檔。 系統管理員必須是第一個存取及登入Cloud Manager的人員。 您必須先將自己（系統管理員）添加到業務所有者產品配置檔案中。
 
-1. 在「Admin Console概觀」頁面中，從產品和服務卡中選取Adobe Experience Manager作為Cloud Service產品，如下所示：
+1. 在[Admin Console](https://adminconsole.adobe.com/enterprise/overview) **概述**&#x200B;頁面中，從&#x200B;**產品與服務**&#x200B;卡中選擇&#x200B;**Adobe Experience Manager作為Cloud Service**&#x200B;產品，如下所示。
 
-1. 從頂端導覽列中選取「使用者」索引標籤，然後選取「新增使用者」。
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
-1. 在「新增使用者」對話方塊中，輸入您要新增之使用者的電子郵件ID。 對於ID類型，如果尚未設定團隊成員的Federated ID，請選取Adobe ID。
+1. 從頂部導航中選擇&#x200B;**用戶**&#x200B;頁簽，然後選擇&#x200B;**添加用戶**。
 
-1. 在「產品」選項中，選擇「Adobe Experience Manager as aCloud Service」，並將「業務擁有者」產品設定檔指派給使用者，如下所示。 請參閱Cloud Manager產品設定檔，確保在Admin Console中為正確的使用者指派正確的角色，如下所示。
+   ![](/help/onboarding/onboarding-journey/assets/assign-team4.png)
 
-1. 將使用者指派至少一個產品設定檔，讓使用者可以存取Cloud Manager。 請記得將您自己（系統管理員）指派給「業務擁有者」。
+1. 在&#x200B;**將使用者新增至您的團隊**&#x200B;對話方塊中，輸入您要新增之使用者的電子郵件ID。 如果尚未設定團隊成員的Federated ID，請為「ID類型」選取「Adobe ID」。
 
-1. 按一下「儲存」。歡迎電子郵件會傳送給您新增的使用者。 受邀的使用者可按一下歡迎電子郵件中的連結，並使用其Adobe ID登入，以存取Cloud Manager。
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+1. 在「產品」選項中，選擇&#x200B;**Adobe Experience Manager作為Cloud Service**，並將&#x200B;**業務所有者**&#x200B;產品配置檔案分配給用戶，如下所示。
+
+   >[!NOTE]
+   >請參閱[Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)，確保在Admin Console中為正確的使用者指派正確的角色，如下所示。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+   >[!NOTE]
+   >將使用者指派至少一個產品設定檔，讓使用者可以存取Cloud Manager。 請記得將您自己（系統管理員）指派給業務擁有者。
+
+1. 按一下「**儲存**」。歡迎電子郵件會傳送給您新增的使用者。 受邀的使用者可按一下歡迎電子郵件中的連結，並使用其Adobe ID登入，以存取Cloud Manager。
 
 恭喜！ 現在，您新組建的Cloud Manager團隊（包括您自己指派給「業務擁有者」角色的團隊）已完成設定。 會員會收到歡迎電子郵件，邀請他們登入並存取Cloud Manager。 在業務擁有者角色中，您現在只需一步即可登入Cloud Manager並啟用雲端資源的建立。
 
 ## 將用戶分配到Deployment Manager產品配置檔案 {#assign-users-deployment-manager}
 
-1. 識別將管理Cloud Manager程式的使用者，並將他們新增至業務擁有者產品設定檔。 系統管理員必須是第一個存取及登入Cloud Manager的人員。 您必須先將自己（系統管理員）新增至業務擁有者產品設定檔。
+1. 識別將管理Cloud Manager程式的使用者，並將他們新增至Deployment Manager產品設定檔。 系統管理員必須是第一個存取及登入Cloud Manager的人員。 您必須先將自己（系統管理員）添加到業務所有者產品配置檔案中。
 
-1. 在「Admin Console概觀」頁面中，從產品和服務卡中選取Adobe Experience Manager作為Cloud Service產品，如下所示：
+1. 在[Admin Console](https://adminconsole.adobe.com/enterprise/overview) **概述**&#x200B;頁面中，從&#x200B;**產品與服務**&#x200B;卡中選擇&#x200B;**Adobe Experience Manager作為Cloud Service**&#x200B;產品，如下所示。
 
-1. 從頂端導覽列中選取「使用者」索引標籤，然後選取「新增使用者」。
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
-1. 在「新增使用者」對話方塊中，輸入您要新增之使用者的電子郵件ID。 對於ID類型，如果尚未設定團隊成員的Federated ID，請選取Adobe ID。
+1. 從頂部導航中選擇&#x200B;**用戶**&#x200B;頁簽，然後選擇&#x200B;**添加用戶**。
 
-1. 在「產品」選項中，選擇「Adobe Experience Manager as aCloud Service」，並將「部署經理」產品配置檔案分配給用戶，如下所示。 請參閱Cloud Manager產品設定檔，確保在Admin Console中為正確的使用者指派正確的角色，如下所示。
+   ![](/help/onboarding/onboarding-journey/assets/assign-team4.png)
+
+1. 在&#x200B;**將使用者新增至您的團隊**&#x200B;對話方塊中，輸入您要新增之使用者的電子郵件ID。 如果尚未設定團隊成員的Federated ID，請為「ID類型」選取「Adobe ID」。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+1. 在「產品」選項中，選擇&#x200B;**Adobe Experience Manager作為Cloud Service**，並將&#x200B;**Deployment Manager**&#x200B;產品配置檔案分配給用戶，如下所示。
 
    >[!NOTE]
+   >請參閱[Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)，確保在Admin Console中為正確的使用者指派正確的角色，如下所示。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)。
+
+   >[!IMPORTANT]
    >建立Cloud Manager資源後，可將使用者新增至Deployment Manager產品設定檔。
 
 ## 將使用者指派給開發人員產品設定檔 {#assign-users-developer}
 
-1. 識別將管理Cloud Manager程式的使用者，並將他們新增至業務擁有者產品設定檔。 系統管理員必須是第一個存取及登入Cloud Manager的人員。 您必須先將自己（系統管理員）新增至業務擁有者產品設定檔。
+1. 識別將管理Cloud Manager程式的使用者，並將他們新增至開發人員產品設定檔。 系統管理員必須是第一個存取及登入Cloud Manager的人員。 您必須先將自己（系統管理員）添加到業務所有者產品配置檔案中。
 
-1. 在「Admin Console概觀」頁面中，從產品和服務卡中選取Adobe Experience Manager作為Cloud Service產品，如下所示：
+1. 在[Admin Console](https://adminconsole.adobe.com/enterprise/overview) **概述**&#x200B;頁面中，從&#x200B;**產品與服務**&#x200B;卡中選擇&#x200B;**Adobe Experience Manager作為Cloud Service**&#x200B;產品，如下所示。
 
-1. 從頂端導覽列中選取「使用者」索引標籤，然後選取「新增使用者」。
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
-1. 在「新增使用者」對話方塊中，輸入您要新增之使用者的電子郵件ID。 對於ID類型，如果尚未設定團隊成員的Federated ID，請選取Adobe ID。
+1. 從頂部導航中選擇&#x200B;**用戶**&#x200B;頁簽，然後選擇&#x200B;**添加用戶**。
 
-1. 在「產品」選項中，選取「Adobe Experience Manager as a Product」，並將「開發人員」產品設定檔指派給使用者，如下所示。 請參閱Cloud Manager產品設定檔，確保在Admin Console中為正確的使用者指派正確的角色，如下所示。
+   ![](/help/onboarding/onboarding-journey/assets/assign-team4.png)
+
+1. 在&#x200B;**將使用者新增至您的團隊**&#x200B;對話方塊中，輸入您要新增之使用者的電子郵件ID。 如果尚未設定團隊成員的Federated ID，請為「ID類型」選取「Adobe ID」。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+1. 在「產品」選項中，選擇&#x200B;**Adobe Experience Manager作為Cloud Service**，並將&#x200B;**Developer**&#x200B;產品配置檔案分配給用戶，如下所示。
 
    >[!NOTE]
+   >請參閱[Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)，確保在Admin Console中為正確的使用者指派正確的角色，如下所示。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)。
+
+
+   >[!IMPORTANT]
    >建立Cloud Manager資源後，可將使用者新增至開發人員產品設定檔。
 
 ## 下一步 {#whats-next}
@@ -130,6 +166,6 @@ ht-degree: 0%
 
 請依照其他資源了解：
 
-* Cloud Manager
-* Cloud Manager產品設定檔
-* Admin Console身分概述
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)
+* [Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)
+* [Admin Console身分概述](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html)
