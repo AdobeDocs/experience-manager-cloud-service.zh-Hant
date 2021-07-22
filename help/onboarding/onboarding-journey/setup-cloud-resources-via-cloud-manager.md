@@ -4,9 +4,9 @@ description: 請依照本頁所述了解如何透過Cloud Manager設定雲端資
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,7 @@ ht-degree: 0%
 
 ## 建立Cloud Service方案 {#create-cloud-service-program}
 
+請依照下列步驟，從Cloud Manager建立您的雲端服務方案：
 
 1. 導覽至Cloud Manager登陸頁面，如下所示。
 
@@ -103,9 +104,11 @@ ht-degree: 0%
 
 ## 建立雲端環境 {#create-cloud-environments}
 
+請依照下列步驟，從Cloud Manager建立您的雲端環境：
+
 1. 成功建立雲端程式後，請導覽至Cloud Manager概觀頁面並從環境卡片中選取「新增」 ，以建立雲端環境。
 
-   >[!NOTE]
+   >[!IMPORTANT]
    >必須登入業務擁有者或部署管理員角色中的Cloud Manager使用者，才能成功完成此步驟。
 
    此外，請觀看快速影片教學課程，以了解Cloud Manager環境，以及如何將其新增至您的方案。
@@ -119,7 +122,9 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-現在，您的團隊成員必須獲得執行個體的權限，因為管理Cloud Manager的權限是不夠的。 現在，您的雲資源已建立完畢且可供您的團隊存取，系統管理員必須從Admin Console將您的團隊成員指派給AEM作為Cloud Service產品設定檔。
+您的團隊成員必須獲得執行個體的權限，因為管理Cloud Manager的權限不足。 現在，您的雲端資源已建立且可供您的團隊存取，系統管理員必須從Admin Console將您的團隊成員指派給AEM作為Cloud Service產品設定檔。
+
+您應繼續進行入門歷程，接著檢閱將團隊成員指派給AEM as a Cloud Service產品設定檔的檔案。
 
 >[!NOTE]
 >若要以Cloud Service的身分授與AEM的存取權，使用者必須屬於「AEM使用者」或「AEM管理員」這兩個產品設定檔中的一個。 了解更多.
@@ -128,7 +133,7 @@ ht-degree: 0%
 
 請依照其他資源了解：
 
-* 程式類型和添加程式
-* 環境類型和新增環境
-* 管理Cloud Manager Git
-* 將AEM的存取權設為來自Admin Console的Cloud Service
+* [程式類型和添加程式](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)
+* [環境類型和新增環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)
+* [管理Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
+* [將AEM的存取權設為來自Admin Console的Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#adobe-ims-users)
