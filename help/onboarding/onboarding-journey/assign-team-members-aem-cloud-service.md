@@ -4,15 +4,15 @@ description: 請參照本頁面，了解如何將團隊成員指派給AEM as a C
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '680'
 ht-degree: 1%
 
 ---
 
 
-# 指派給AEM作為Cloud Service產品設定檔 {#assign-team-members-cloud-service}
+# 將團隊成員指派給AEM作為Cloud Service產品設定檔 {#assign-team-members-cloud-service}
 
 ## 目標 {#objective}
 
