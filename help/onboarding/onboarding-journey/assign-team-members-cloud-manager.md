@@ -4,7 +4,7 @@ description: 請詳閱本頁，了解如何將團隊成員指派給Cloud Manager
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 3dbcc5dd09479a84ed13aad0ee3d8c229520e10f
+source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 0%
@@ -91,7 +91,7 @@ ht-degree: 0%
    >[!NOTE]
    >請參閱[Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)，確保在Admin Console中為正確的使用者指派正確的角色，如下所示。
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)
 
    >[!NOTE]
    >將使用者指派至少一個產品設定檔，讓使用者可以存取Cloud Manager。 請記得將您自己（系統管理員）指派給業務擁有者。
@@ -121,7 +121,7 @@ ht-degree: 0%
    >[!NOTE]
    >請參閱[Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)，確保在Admin Console中為正確的使用者指派正確的角色，如下所示。
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)。
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)。
 
    >[!IMPORTANT]
    >建立Cloud Manager資源後，可將使用者新增至Deployment Manager產品設定檔。
@@ -147,7 +147,7 @@ ht-degree: 0%
    >[!NOTE]
    >請參閱[Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)，確保在Admin Console中為正確的使用者指派正確的角色，如下所示。
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)。
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)。
 
 
    >[!IMPORTANT]
