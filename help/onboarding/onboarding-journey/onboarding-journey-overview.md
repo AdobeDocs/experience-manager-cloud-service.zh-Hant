@@ -4,9 +4,9 @@ description: 請依照本頁所述，了解如何開始入門歷程
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '643'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 1%
 
 ## 簡介 {#introduction}
 
-本指南會引導您了解最重要的主題，以便您在完成時：
+本指南會引導您了解最重要的主題，以便您在完成後能有：
 
 * 完整了解AEM作為Cloud Service入門歷程期間的預期。
-* 讓您的團隊能夠上手並執行，並採取第一步步驟，了解如何編寫和開發AEM的Cloud Service應用程式內容。
+* 讓您的團隊能夠上手並執行，並採取第一步步驟，了解如何編寫和開發AEM的內容，作為Cloud Service應用程式。
 
 這表示：
 
@@ -35,6 +35,8 @@ ht-degree: 1%
 
 以下說明入門歷程，並在以下章節詳細說明歷程的每個步驟。
 
+![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
+
 ## 探索入門歷程 {#exploring-onboarding-journey}
 
 您將在此歷程中探索許多主題。 以下文章提供AEM as aCloud Service入門步驟的基本知識。 雖然您可以直接前往歷程的特定部分，但許多概念都是以先前文章中的概念為基礎而建立。 因此，如果您是剛上線的，建議您從頭開始，依序進行。
@@ -47,7 +49,7 @@ ht-degree: 1%
 | 3 | 將團隊成員指派給Cloud Manager產品設定檔 | 檢閱Cloud Manager產品設定檔，並了解如何將團隊成員指派給Cloud Manager產品設定檔。 |
 | 4 | 透過Cloud Manager設定雲端資源 | 了解雲端資源的建立方式，以及可由誰執行。 此外，也可了解雲端程式和環境的建立方式。 |
 | 5 | 將團隊成員指派給AEM作為Cloud Service產品設定檔 | 了解系統管理員如何將您的團隊成員指派給AEM作為Cloud Service產品設定檔。 |
-| 6 | AEM開發人員和部署經理的學習路徑 | 了解身為開發人員，您如何存取和管理Cloud Manager Git，以及Deployment Manager如何在Cloud Manager中設定管道和部署程式碼。 |
+| 6 | AEM開發人員和部署經理的學習路徑 | 了解身為開發人員，您如何存取和管理Cloud Manager Git，以及作為部署管理員，如何在Cloud Manager中設定管道和部署程式碼。 |
 | 7 | AEM使用者的學習路徑 | 了解身為AEM作者，您如何以Cloud Service例項存取AEM，並熟悉AEM as aCloud Service的編寫內容。 |
 
 ## 下一步 {#what-is-next}
