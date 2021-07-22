@@ -4,10 +4,10 @@ description: 使用AEM中內容片段編輯器的結構樹功能，更清楚了�
 feature: 內容片段
 role: User
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 61e3b1d883afe0e9a873991fb8fd148de0fbcd4f
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 2%
+source-wordcount: '105'
+ht-degree: 1%
 
 ---
 
@@ -19,6 +19,10 @@ ht-degree: 2%
 
 ![內容片段結構樹](assets/cfm-structuretree-01.png)
 
-這會開啟左側窗格中片段結構的表示：
+這會開啟左側窗格中片段結構的表示。 使用此功能，您可以導覽及導覽至參考的片段。
+
+>[!NOTE]
+>
+>使用主面板中的階層連結，您可以導覽回起始點。
 
 ![內容片段結構樹](assets/cfm-structuretree-02.png)
