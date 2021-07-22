@@ -4,14 +4,14 @@ description: 請依照本頁所述，了解如何開始入門歷程
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
-# 入門程式 {#getting-started}
+# 開始使用入門程式 {#getting-started}
 
 上線是指定系統管理員將AEM設為貴組織Cloud Service的程式。 這包括初始布建雲端資源，以及根據使用者的工作責任，將使用者指派給適當的角色，之後每個成員都能登入並存取其AEM作為Cloud Service資源。
 
