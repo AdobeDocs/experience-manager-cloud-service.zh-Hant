@@ -4,9 +4,9 @@ description: 請詳閱本頁，了解如何將團隊成員指派給Cloud Manager
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8b30fc9494e152aa742cf17c02f982f5c9479473
+source-git-commit: 57b29f8ef6c65b5a752aca680557e75ba55f64bd
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 將團隊成員指派給Cloud Manager產品設定檔 {#assign-team-members}
 
-學會登入Admin Console並以系統管理員身分檢視權限後，您現在就可以將團隊成員指派給Cloud Manager產品設定檔。
+學習如何登入[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)並以[系統管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)身分檢視您的權限後，您現在可以將團隊成員指派給Cloud Manager產品設定檔。
 
 ## 目標 {#objective}
 
@@ -24,24 +24,43 @@ ht-degree: 0%
 
 * 了解您必須新增團隊成員的原因及方式。
 * 了解3種不同的Cloud Manager產品設定檔，例如業務擁有者、部署管理員和開發人員。
-* 將團隊成員指派給Cloud Manager產品設定檔（業務擁有者、部署管理員和開發人員）。
+* 將團隊成員指派給Cloud Manager產品設定檔，例如業務擁有者、部署管理員和開發人員。
+
+## 必備條件 {#prerequisites}
+
+開始本節之前，應考慮下列必要條件。 您必須是：
+
+* 系統管理員並了解[Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)。
+* 了解[Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)基本知識。
+* 必須有關於團隊成員的詳細資訊。 系統管理員必須擁有需要以Cloud Service方式存取AEM的團隊成員的姓名和電子郵件地址，以及角色和責任。
+
+   >[!NOTE]
+   >為了上線，建議您先新增將參與即時工作的使用者，例如管理員、開發人員和內容作者。 您可以繼續上線的其餘部分，而不需新增所有使用者。 上線完成後，您稍後可以擴充至更多使用者。
 
 ## 檢閱Cloud Manager產品設定檔 {#review-product-profiles}
 
 從Admin Console中，您可以看到Cloud Manager設定檔清單。
 
 >[!NOTE]
->在您從Admin Console檢閱Cloud Manager產品設定檔之前，建議您先檢閱可用的Cloud Manager產品設定檔。
+>在您從Admin Console查看Cloud Manager產品設定檔之前，建議您先檢閱可用的[Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)。
 
 請依照下列步驟檢視Cloud Manager設定檔清單：
 
-1. 登入Adobe Admin Console。 從&#x200B;**概述**&#x200B;頁面，從「產品與服務」卡片中選取Adobe Experience Manager as a Cloud Service 。
+1. 登入[Adobe Admin Console](https://adminconsole.adobe.com/)。 從&#x200B;**概述**&#x200B;頁面，從&#x200B;**產品和服務**&#x200B;卡中選擇&#x200B;**Adobe Experience Manager作為Cloud Service**。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
    >[!NOTE]
    >請參閱登入Admin Console，了解如何使用Admin Console。
 
 
-1. 從表格導覽至cloud manager例項，並列出所有例項。 您會看到預先設定的Cloud Manager產品設定檔清單。
+1. 從表格導覽至&#x200B;**Cloud Manager**&#x200B;例項，並列出所有例項。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team2.png)
+
+1. 您會看到預先設定的[Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)清單。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team3.png)
 
 
 ## 將用戶分配給業務所有者產品配置檔案 {#assign-users-business-owner}
@@ -102,7 +121,7 @@ ht-degree: 0%
 
 作為分配給&#x200B;*業務所有者*&#x200B;角色的系統管理員，您必須訪問並登錄Cloud Manager。
 >[!NOTE]
->請參閱導覽至Cloud Manager ，了解如何登入及存取Cloud Manager。
+>請參閱[導覽至Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) ，了解如何登入及存取Cloud Manager。
 
 業務擁有者角色中的Cloud Manager使用者可登入並設定您的雲端資源，包括您的方案和環境。 這可確保您的專家團隊能盡快開始以Cloud Service存取AEM。
 業務擁有者設定雲端資源後，已成功新增至Cloud Manager產品設定檔的開發人員和部署經理可以存取Cloud Manager，並熟悉如何繼續學習。
