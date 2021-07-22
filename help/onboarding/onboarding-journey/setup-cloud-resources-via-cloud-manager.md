@@ -4,25 +4,25 @@ description: 請依照本頁所述了解如何透過Cloud Manager設定雲端資
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
 
 # 透過Cloud Manager設定雲端資源 {#setup-cloud-resources}
 
-指派給「業務擁有者」角色的系統管理員應存取並登入Cloud Manager。 之後，指派給「業務擁有者」產品設定檔的團隊成員必須登入Cloud Manager並建立雲端方案和環境，才能開始使用您的專家團隊。
+指派給&#x200B;*業務擁有者*&#x200B;角色的系統管理員應存取並登入Cloud Manager。 之後，指派給&#x200B;*業務擁有者*&#x200B;產品設定檔的團隊成員必須登入Cloud Manager並建立雲端程式和環境，才能開始使用您的專家團隊。
 
 ## 目標 {#objective}
 
 本檔案可協助您了解雲端資源的建立方式，以及由誰執行。
 
-閱讀本小節後，您應：
+閱讀本節後，您應了解：
 
-* 了解指派給「業務擁有者」角色的系統管理員必須是第一個存取及登入Cloud Manager的管理員
-* 了解雲端程式和環境的建立方式。
+* 指派給&#x200B;*業務擁有者*&#x200B;角色的系統管理員必須是第一個存取及登入Cloud Manager的管理員。
+* 雲端程式和環境的建立方式。
 
 ## 簡介 {#introduction}
 
@@ -32,36 +32,47 @@ ht-degree: 0%
 
 ### 先決條件 {#prerequisites}
 
-* 指派給「業務擁有者」角色的系統管理員應存取並登入Cloud Manager。
+* 指派給&#x200B;*業務擁有者*&#x200B;角色的系統管理員應存取並登入Cloud Manager。
 
-* 了解如何導覽及登入Cloud Manager
+* 了解如何[導覽並登入Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)。
 
-* 熟悉Cloud Manager產品設定檔
+* 請熟悉[Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)。
 
 * 了解建立方案時的考量事項。 請觀看此影片以深入了解。
 
-* 了解Cloud Manager程式和環境的概念
+* 了解Cloud Manager [programs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en)和[environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)的概念
 
 ## 導覽至Cloud Manager {#navigate-cloud-manager}
 
-1. 「業務擁有者」使用者會收到歡迎電子郵件，歡迎您從這裡開始使用，或如果找不到，請直接前往experience.adobe.com並使用您的Adobe ID登入。
+1. *業務擁有者*&#x200B;使用者會收到歡迎電子郵件，歡迎他們開始使用，或如果找不到，請直接前往[Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home)並使用您的Adobe ID登入。
 
-1. 從Experience Cloud首頁，選擇Experience Manager:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
 
+1. 從Adobe Experience Cloud首頁，選擇&#x200B;**Experience Manager**。
 
-1. 這會帶您前往AEM首頁。 在此選取Cloud Manager:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
 
+1. 這會帶您前往AEM首頁。 從這裡啟動&#x200B;**Cloud Manager** 。
 
-1. 這會帶您前往Cloud Manager登陸頁面，如下所示：
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
+1. Cloud Manager登陸頁面隨即顯示，如下圖所示。
 
-1. 現在，請確認您已獲派「業務擁有者產品設定檔」。 若要這麼做，請選取右上角的設定檔，如下所示：
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
+1. 確認您已獲派「業務擁有者產品設定檔」。 若要這麼做，請從右上方選取您的設定檔，如下所示。
 
-1. 現在，選擇「用戶角色」並確保已將您分配給「業務所有者」。
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
+1. 選擇&#x200B;**用戶角色**&#x200B;並確保您已分配給業務所有者。
 
-   幹得好！ 您已成功以業務擁有者身分登入Cloud Manager!
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources6.png)
+
+1. 這可確認您的使用者角色為業務擁有者。
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources7.png)
+
+   幹得好！ 您以業務擁有者身分成功登入Cloud Manager!
 
 ## 建立Cloud Service方案 {#create-cloud-service-program}
 
