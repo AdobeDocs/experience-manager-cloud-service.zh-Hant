@@ -4,9 +4,9 @@ description: 請依照本頁所述，了解如何開始入門歷程
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '646'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## 簡介 {#introduction}
 
-本指南會引導您閱讀最重要的主題，讓讀者在完成時：
+本指南會引導您了解最重要的主題，以便您在完成時：
 
 * 完整了解AEM作為Cloud Service入門歷程期間的預期。
 * 讓您的團隊能夠上手並執行，並採取第一步步驟，了解如何編寫和開發AEM的Cloud Service應用程式內容。
@@ -31,18 +31,13 @@ ht-degree: 1%
 
 ## 對象 {#audience}
 
-上線是指定系統管理員將AEM設為貴組織Cloud Service的程式。 這包括初始布建雲端資源，以及根據使用者的工作責任，將使用者指派給適當的角色，之後每個成員都能登入並存取其AEM作為Cloud Service資源。
+上線是指定的[系統管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)將AEM設定為貴組織Cloud Service的程式。 這包括初始布建雲端資源，以及根據使用者的工作責任，將使用者指派給適當的角色，之後每個成員都能登入並存取其AEM作為Cloud Service資源。
 
 以下說明入門歷程，並在以下章節詳細說明歷程的每個步驟。
 
 ## 探索入門歷程 {#exploring-onboarding-journey}
 
-
 您將在此歷程中探索許多主題。 以下文章提供AEM as aCloud Service入門步驟的基本知識。 雖然您可以直接前往歷程的特定部分，但許多概念都是以先前文章中的概念為基礎而建立。 因此，如果您是剛上線的，建議您從頭開始，依序進行。
-
-您將在此歷程中探索許多主題。 以下文章提供入門程式所需的基礎知識，並連結至詳細的技術檔案。
-
-雖然您可以直接前往歷程的特定部分，但許多概念都是以先前文章中的概念為基礎而建立。 因此，若您是初次加入，建議您先檢閱本指南的學習入門概念一節中提及的文章。
 
 | # | 文章 | 說明 |
 |---|---|---|
