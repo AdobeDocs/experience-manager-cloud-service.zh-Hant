@@ -1,17 +1,17 @@
 ---
-title: 入門歷程
+title: 入門程式
 description: 請依照本頁所述，了解如何開始入門歷程
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
-# 入門歷程 {#getting-started}
+# 入門程式 {#getting-started}
 
 上線是指定系統管理員將AEM設為貴組織Cloud Service的程式。 這包括初始布建雲端資源，以及根據使用者的工作責任，將使用者指派給適當的角色，之後每個成員都能登入並存取其AEM作為Cloud Service資源。
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 閱讀本小節後，您應能：
 
-* 如何存取及登入Admin Console
+* 存取及登入Admin Console
 * 通過Admin Console查看您作為系統管理員的權限
 
 >[!NOTE]
@@ -67,5 +67,5 @@ ht-degree: 1%
 
 ## 下一步 {#whats-next}
 
-現在，您已登入Admin Console並以系統管理員身分檢查設定檔，接著應檢閱「將團隊成員指派給Cloud Manager產品設定檔」檔案，以繼續入門歷程。
+現在，您已登入Admin Console並以系統管理員身分檢查設定檔，接著應檢閱「將團隊成員指派給Cloud Manager產品設定檔」檔案，以繼續上線歷程。
 
