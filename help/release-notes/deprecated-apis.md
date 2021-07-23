@@ -1,13 +1,13 @@
 ---
 title: 已棄用的API
 description: 發行說明，專供 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中已棄用和已移除的API。
-source-git-commit: 788727ce2e6b26f5da647c9ffd8267d958e3b226
+exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
+source-git-commit: 02b610b830911b737f8caa7356d0e446958bcc2f
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 7%
 
 ---
-
 
 # 已棄用的API {#deprecated-apis}
 
@@ -64,7 +64,7 @@ ht-degree: 7%
     <td>org.json</td>
     <td>建議使用<a href="https://johnzon.apache.org/index.html">javax.json</a>的Apache Johnzon實作，且應使用。 </td>
     <td>4/30/21</td>
-    <td>7/30/21</td>
+    <td>12/31/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
@@ -76,13 +76,13 @@ ht-degree: 7%
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
     <td>Commons Lang 2處於維護模式。 應該改用Commons Lang 3。</td>
     <td>4/30/21</td>
-    <td>7/30/21</td>
+    <td>12/31/21</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
     <td>Commons集合3處於維護模式。 應改用「公域集合4」。</td>
     <td>4/30/21</td>
-    <td>7/30/21</td>
+    <td>12/31/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.systemready</td>
