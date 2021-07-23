@@ -4,9 +4,9 @@ description: 請參照本頁面，了解如何將團隊成員指派給AEM as a C
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '743'
 ht-degree: 1%
 
 ---
@@ -18,26 +18,31 @@ ht-degree: 1%
 
 本檔案可協助您了解系統管理員必須執行哪些步驟，才能將您的團隊成員指派給AEM as a Cloud Service產品設定檔，以及為何讓AEM作者能夠透過AEM開始其歷程至關重要。
 
-閱讀本小節後，您應：
+閱讀本節後，您應了解：
 
-* 了解為何及如何將團隊成員指派給AEM作為Cloud Service產品設定檔
-* 了解如何將團隊成員新增至AEM User產品設定檔
-* 了解如何將團隊成員新增至AEM管理員產品設定檔
+* 將您的團隊成員指派給AEM作為Cloud Service產品設定檔的原因及方式。
+* 如何將團隊成員新增至AEM使用者產品設定檔。
+* 如何將團隊成員新增至AEM管理員產品設定檔。
 
 
 ## 簡介 {#introduction}
 
-若要以Cloud Service的身分授予AEM的存取權，使用者必須屬於「AEM使用者」或「AEM管理員」這兩個產品設定檔之一。 您的團隊成員必須獲得AEM例項的權限，因為管理Cloud Manager的權限不足。 了解更多.
+若要以Cloud Service的形式授予AEM存取權，使用者必須屬於兩個產品設定檔之一，例如&#x200B;*AEM Users*&#x200B;或&#x200B;*AEM Administrators*。 您的團隊成員必須獲得AEM例項的權限，因為管理Cloud Manager的權限不足。 了解更多.
 
 >[!NOTE]
->系統管理員指派給AEM User產品設定檔的每位使用者都擁有（唯讀）Cloud Manager的存取權。
+>系統管理員指派給AEM User產品設定檔的每位使用者都擁有Cloud Manager的（唯讀）存取權。
 
 ## 先決條件 {#prerequisites}
 
-* 了解AEM作為Cloud Service產品設定檔
-* 熟悉Admin Console
+開始閱讀本小節之前，您應先考慮下列先決條件：
+
+* 了解[AEM as a Cloud Service產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)
+* 熟悉[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)
 * Cloud Manager產品設定檔已視情況指派給您的團隊成員，且雲端資源已設定
-* 有關您的團隊成員的詳細資訊：系統管理員必須擁有需要以Cloud Service方式存取AEM的團隊成員的姓名和電子郵件地址，以及角色和責任。 為了上線，建議您先新增將參與即時工作的使用者，例如管理員、開發人員和內容作者。 您可以繼續上線的其餘部分，而不需新增所有使用者。 上線完成後，您稍後可以擴充至更多使用者。
+* 有關您的團隊成員的詳細資訊：系統管理員必須擁有需要以Cloud Service方式存取AEM的團隊成員的姓名和電子郵件地址，以及角色和責任。
+
+   >[!NOTE]
+   >為了上線，建議您先新增將參與即時工作的使用者，例如管理員、開發人員和內容作者。 您可以繼續上線的其餘部分，而不需新增所有使用者。 上線完成後，您稍後可以擴充至更多使用者。
 
 
 1. 登入Admin Console
@@ -55,11 +60,9 @@ ht-degree: 1%
    現在，您將能夠看到AEM的清單，它是Cloud Service產品設定檔，需要根據使用者的角色指派給使用者。 若要深入了解，請前往AEM as a Cloud Service產品設定檔。
 
 
-
-
 ## 將團隊成員新增至AEM使用者或AEM管理員產品設定檔 {#add-team-members}
 
-若要授與AEMaaCS例項使用者的存取權，使用者必須屬於「AEM使用者」或「AEM管理員」這兩個產品設定檔之一。
+若要以Cloud Service例項使用者身分授予AEM的存取權，使用者必須屬於「AEM使用者」或「AEM管理員」這兩個產品設定檔中的一個。
 
 >[!NOTE]
 >您必須獲得執行個體的權限，但管理Cloud Manager的權限不足。 了解更多.
@@ -68,7 +71,7 @@ ht-degree: 1%
 
 1. 從Cloud Manager，導覽至Cloud Manager，並從感興趣的環境內容中選取管理存取按鈕，如下所示：
 
-1. 按一下「管理存取」後，新的索引標籤會導覽至您可存取環境製作例項的Admin Console。 根據此個人需要授予的權限，選取「AEM管理員」或「AEM使用者」。 進一步了解AEM as a Cloud Service產品設定檔。
+1. 按一下「管理存取」後，新的索引標籤會導覽至您可存取環境製作例項的Admin Console。 根據此個人需要授予的權限，選取&#x200B;*AEM Administrators*&#x200B;或&#x200B;*AEM Users*。 進一步了解[AEM as aCloud Service產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)。
 
 1. 選擇添加用戶（如下所示），並提交完成添加團隊成員所需的詳細資訊：
 
@@ -80,7 +83,7 @@ ht-degree: 1%
 
 ## 下一步 {#whats-next}
 
-您指派給AEMaaCS產品設定檔的使用者現在已準備好學習如何存取「作者」，以及熟悉AEM as aCloud Service中的編寫頁面。 了解更多.
+您指派給AEM as a Cloud Service產品設定檔的使用者現在已準備好了解如何存取「作者」，以及熟悉AEM as a Cloud Service中的編寫頁面。 您應該遵循此路徑，接著檢閱AEM使用者的檔案學習路徑。
 
 ## 其他資源 {#additional-resources}
 
