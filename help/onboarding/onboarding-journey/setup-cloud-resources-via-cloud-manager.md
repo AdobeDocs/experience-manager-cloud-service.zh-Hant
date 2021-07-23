@@ -4,9 +4,9 @@ description: 請依照本頁所述了解如何透過Cloud Manager設定雲端資
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1112'
 ht-degree: 0%
 
 ---
@@ -83,40 +83,55 @@ ht-degree: 0%
    >[!NOTE]
    >您必須是指派給Cloud Manager業務擁有者產品設定檔的團隊成員，才能成功完成此步驟。
 
-1. 從此處，選擇添加程式以啟動添加程式嚮導。 觀看影片，了解如何建立您的AEMaaCS計畫，以及在建立計畫前的重要考量。
+   從此處，按一下&#x200B;**Add Program**&#x200B;以啟動Add Program（添加程式）嚮導。
 
-1. 有關如何使用「添加程式」嚮導的逐步說明，請轉至此處。
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
-   >[!CAUTION]
-   >請記住，建立後無法更改程式名。 建議您確定要提供程式的名稱。
+   >[!NOTE]
+   >觀看[影片](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)，了解如何建立AEM as a Cloud方案，並在建立方案之前了解重要考量事項。
 
-   如果您必須變更方案名稱，則需要開啟Adobe支援的案例，或聯絡您的Adobe代表。 他們將協助您有效刪除程式。 你必須重新開始，因為你的團隊可能會失去工作。
+   >[!IMPORTANT]
+   >有關如何使用「添加程式」嚮導的逐步說明，請轉至[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en)。
+   >
+   >* 請記住，建立後無法更改程式名。 建議您確定要提供程式的名稱。
+   >* 如果您必須變更方案名稱，則需要開啟Adobe支援的案例，或聯絡您的Adobe代表。 他們將協助您有效刪除程式。 你必須重新開始，因為你的團隊可能會失去工作。
 
-1. 成功建立雲端方案後，您可以導覽至方案，查看方案的概觀頁面，如下所示：
 
-1. 如果您尚未這麼做，現在是將開發人員成員新增至Cloud Manager團隊的最佳時機，請前往「將使用者新增至開發人員產品設定檔」，並遵循概述的步驟。
+1. 成功建立雲端程式後，您可以導覽至您的程式，查看程式的&#x200B;**概述**&#x200B;頁面，如下所示。
 
-1. 指派給開發人員產品設定檔的成員可登入Cloud Manager和Manage Cloud Manager Git。
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources8.png)
 
+   >[!NOTE]
+   >如果您尚未這麼做，現在是將開發人員成員新增至Cloud Manager團隊的最佳時機。 請參閱將使用者新增至開發人員產品設定檔，並遵循概述的步驟。
+
+1. 指派給開發人員產品設定檔的成員可登入Cloud Manager和[管理Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)。
 
    幹得好！ 現在程式已成功建立，您的Cloud Manager Git可供開發人員存取！
 
 
 ## 建立雲端環境 {#create-cloud-environments}
 
+成功建立雲端程式後，請建立雲端環境。
+
 請依照下列步驟，從Cloud Manager建立您的雲端環境：
 
-1. 成功建立雲端程式後，請導覽至Cloud Manager概觀頁面並從環境卡片中選取「新增」 ，以建立雲端環境。
+1. 導覽至Cloud Manager的&#x200B;**概述**&#x200B;頁面，然後從環境卡片中選取&#x200B;**新增**。
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources9.png)
 
    >[!IMPORTANT]
    >必須登入業務擁有者或部署管理員角色中的Cloud Manager使用者，才能成功完成此步驟。
 
-   此外，請觀看快速影片教學課程，以了解Cloud Manager環境，以及如何將其新增至您的方案。
+   此外，請觀看快速[影片](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)教學課程，了解Cloud Manager環境，以及如何將其新增至您的程式。
 
-1. 這會啟動「新增環境」精靈，引導您新增環境。 先新增您的開發環境，以熟悉。
+1. 這會啟動「新增環境」精靈，引導您新增環境。 先新增您的開發環境，以熟悉。 請參閱[新增環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)以了解詳細資訊。
 
-1. 如果您尚未這麼做，可以立即將開發人員成員新增至您的Cloud Manager團隊，前往「將使用者新增至開發人員產品設定檔」，並遵循概述的步驟。 如此一來，您的開發人員就能開始導覽至Cloud Manager及管理Cloud Manager Git。
+   >[!NOTE]
+   >如果您尚未這麼做，現在是將開發人員成員新增至Cloud Manager團隊的最佳時機。 請參閱將使用者新增至開發人員產品設定檔，並遵循概述的步驟。
 
+1. 指派給開發人員產品設定檔的成員可登入Cloud Manager和[管理Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)。
+
+   幹得好！ 現在程式已成功建立，您的Cloud Manager Git可供開發人員存取！
 
    恭喜！ 現在，您的雲端程式環境已建立完畢，且您的開發人員已新增至團隊中！
 
