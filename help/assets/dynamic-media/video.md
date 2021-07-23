@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中使用影片。
 feature: 視訊設定檔
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
 workflow-type: tm+mt
-source-wordcount: '9467'
+source-wordcount: '9459'
 ht-degree: 4%
 
 ---
@@ -151,7 +151,7 @@ Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品�
 
 Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可以在以下位置找到支援此視頻格式的BlackBerry®設備：[BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)上支援的視頻格式。
 
-您可以在以下位置找到支援此視頻格式的Windows®設備：[Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105)?redirectedfrom=MSDN)上支援的視訊格式
+在Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)上，可以找到支援此視頻格式的Windows®設備，其格式如下：[支援的視頻格式。
 
 * 使用Dynamic Media視訊檢視器預設集播放視訊，包括下列內容：
 
@@ -301,7 +301,7 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
 
 您可以使用視訊編輯工具檢視其中繼資料，或使用專為取得中繼資料而設計的應用程式，以取得檔案的中繼資料。 以下是使用協力廠商應用程式MediaInfo來取得視訊檔案中繼資料的指示：
 
-1. 轉到此網頁：[https://mediainfo.sourceforge.net/en/Download](https://mediainfo.sourceforge.net/en/Download)。
+1. 前往[MediaInfo Download](https://mediaarea.net/en/MediaInfo/Download)。
 1. 選擇並下載GUI版本的安裝程式，並按照安裝說明操作。
 1. 安裝後，按一下右鍵視頻檔案(僅限Windows®)並選擇MediaInfo，或開啟MediaInfo並將視頻檔案拖入應用程式。 您會看到與視訊檔案相關聯的所有中繼資料，包括其寬度、高度和fps。
 
