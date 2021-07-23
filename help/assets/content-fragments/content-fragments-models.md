@@ -4,9 +4,9 @@ description: 了解內容片段模型如何成為AEM中無頭內容的基礎，�
 feature: 內容片段
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c8462fe370045ad2dc977fdf2f8ce0a5d3e85bc1
+source-git-commit: f2ddd93d9a6f8e17dc0eb75ee5adab4354249091
 workflow-type: tm+mt
-source-wordcount: '2312'
+source-wordcount: '2258'
 ht-degree: 7%
 
 ---
@@ -166,16 +166,17 @@ UniqueContent（針對特定欄位）在從目前模型建立的所有內容片�
    >[!NOTE]
    變異可以具有與相同片段的變異相同的&#x200B;*唯一*&#x200B;值，但與其他片段的變異不同。
 
-* ****
-可翻譯檢查 
-**** 內容片段模型編輯器中欄位上的「翻譯」核取方塊將：
-
-   * 請確定欄位的屬性名稱已新增至翻譯設定內容`/content/dam/<sites-configuration>`（如果尚未出現）。
-   * 對於GraphQL:將「內容片段」欄位上的`<translatable>`屬性設為`yes`，以允許GraphQL查詢篩選器用於僅可翻譯內容的JSON輸出。
-
 * 如需特定資料類型及其屬性的詳細資訊，請參閱&#x200B;**[內容參考](#content-reference)**。
 
 * 如需特定資料類型及其屬性的詳細資訊，請參閱&#x200B;**[片段參考（巢狀片段）](#fragment-reference-nested-fragments)**。
+
+<!--
+* **Translatable**
+  Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
+
+  * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
+  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+-->
 
 ## 驗證 {#validation}
 
