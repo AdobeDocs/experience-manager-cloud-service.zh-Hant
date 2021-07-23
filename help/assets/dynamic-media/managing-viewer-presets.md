@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中建立和管理檢視器預設集。
 feature: 檢視器預設集，檢視器
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
 workflow-type: tm+mt
-source-wordcount: '4233'
+source-wordcount: '4231'
 ht-degree: 9%
 
 ---
@@ -68,7 +68,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
 * Apple iPad
 * Android™智慧手機
 * Android™平板電腦
-* 對於視頻，為[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))提供了額外的MP4播放支援。
+* 對於視頻，為[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)提供了額外的MP4播放支援。
 
 ### 檢視器預設集的多媒體類型 {#rich-media-types-for-viewer-presets}
 
