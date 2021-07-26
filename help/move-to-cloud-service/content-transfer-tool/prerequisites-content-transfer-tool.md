@@ -2,9 +2,9 @@
 title: 內容轉移工具的必要條件
 description: 內容轉移工具的必要條件
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: ac44eeda36a7c8e1232bfd3275fb872e6523f87d
+source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '488'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 | 考量事項 | 目前支援的項目 |
 |--- |--- |
 | AEM版本 | 「內容轉移工具」僅能在AEM 6.3或更新版本上執行。 若要搭配AEM 6.2或更舊版本使用「內容轉移工具」，需要將內容存放庫就地升級至AEM 6.5。 不需要將程式碼升級至AEM 6.5即可。 |
-| 區段存放區大小 | *Author*&#x200B;上最多支援83 GB,*Publish*&#x200B;上最多支援31 GB。 與Adobe客戶服務建立支援票證，討論區段存放區大小超過這些限制的選項。 |
+| 區段存放區大小 | 目前支援的現有存放庫，在&#x200B;*Author*&#x200B;上具有小於5,500萬個JCR節點，在&#x200B;*Publish*&#x200B;上具有高達83 GB（線上壓縮大小），在Publish上具有31 GB。 與Adobe客戶服務建立支援票證，討論區段存放區大小超過這些限制的選項。 |
 | 內容存放庫總大小&#x200B;<br>*（區段存放區+資料存放區）* | 「內容轉移工具」的設計目的是，針對「檔案資料儲存」類型的資料儲存傳輸高達10 TB的內容。 目前不支援高於10 TB的任何項目。 與Adobe客戶服務建立支援票證，討論大於10 TB內容的選項。 <br>若為Amazon S3和Azure資料存放區類型的資料存放區，可使用選 [用的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) 複製前步驟來大幅加快內容傳輸程式，並支援大於10 TB的資料存放區大小。 |
 | 總索引大小 | 目前支援的索引總大小最大為25GB。 與Adobe客戶服務建立支援票證，以討論索引大小超過此限制的選項。 |
 | 節點名稱長度 | 節點名稱的長度必須為150個位元組或更小。 長度超過150個位元組的節點名稱必須縮短為&lt;= 150個位元組，AEM中的Document節點儲存作為Cloud Service才能支援。 如果這些長節點名稱未修正，擷取將會失敗。 |
