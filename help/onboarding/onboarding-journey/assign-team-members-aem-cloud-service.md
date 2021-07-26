@@ -4,9 +4,9 @@ description: 請參照本頁面，了解如何將團隊成員指派給AEM as a C
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: c2301227eb65bedb77acd9754e2bc4b62527863d
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '779'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 簡介 {#introduction}
 
-若要以Cloud Service的形式授予AEM存取權，使用者必須屬於兩個產品設定檔之一，例如&#x200B;*AEM Users*&#x200B;或&#x200B;*AEM Administrators*。 您的團隊成員必須獲得AEM例項的權限，因為管理Cloud Manager的權限不足。 了解更多.
+若要以Cloud Service的形式授予AEM存取權，使用者必須屬於兩個產品設定檔之一，例如`AEM Users`或`AEM Administrators`。 您的團隊成員必須獲得AEM例項的權限，因為管理Cloud Manager的權限不足。 了解更多.
 
 >[!NOTE]
 >系統管理員指派給AEM User產品設定檔的每位使用者都擁有Cloud Manager的（唯讀）存取權。
@@ -45,24 +45,22 @@ ht-degree: 1%
    >為了上線，建議您先新增將參與即時工作的使用者，例如管理員、開發人員和內容作者。 您可以繼續上線的其餘部分，而不需新增所有使用者。 上線完成後，您稍後可以擴充至更多使用者。
 
 
-1. 登入Admin Console
-（與之前相同）
+1. 登入[Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)。 如需詳細資訊，請參閱登入Admin Console。
 
-1. 檢閱AEM as a Cloud Service產品設定檔
-從Admin Console中，您可以看到Cloud Manager設定檔清單。 要執行此操作：
+1. 查看[AEM as a Cloud Service產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)。
+
+請依照下列步驟，查看來自Adobe Admin Console的Cloud Manager設定檔清單：
 
 1. 登入Adobe Admin Console後，請從「產品與服務」卡片中選取「Adobe Experience Manager as a Cloud Service」 :
 
 1. 導覽並選取例項（開發環境的製作例項），如下圖所示。
-
-
 
    現在，您將能夠看到AEM的清單，它是Cloud Service產品設定檔，需要根據使用者的角色指派給使用者。 若要深入了解，請前往AEM as a Cloud Service產品設定檔。
 
 
 ## 將團隊成員新增至AEM使用者或AEM管理員產品設定檔 {#add-team-members}
 
-若要以Cloud Service例項使用者身分授予AEM的存取權，使用者必須屬於「AEM使用者」或「AEM管理員」這兩個產品設定檔中的一個。
+若要以Cloud Service例項的形式授予AEM存取權，使用者必須屬於兩個產品設定檔`AEM Users`或`AEM Administrators`之一。
 
 >[!NOTE]
 >您必須獲得執行個體的權限，但管理Cloud Manager的權限不足。 了解更多.
@@ -87,5 +85,5 @@ ht-degree: 1%
 
 ## 其他資源 {#additional-resources}
 
-設定AEM的存取權（影片逐步說明）
-製作頁面的快速入門手冊
+* [設定AEM存取權](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en)
+* [製作頁面的快速入門手冊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
