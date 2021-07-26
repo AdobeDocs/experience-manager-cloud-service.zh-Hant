@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 資產管理
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '1025'
+ht-degree: 3%
 
 ---
 
@@ -109,6 +109,6 @@ ht-degree: 4%
 >[!MORELIKETHIS]
 >
 >* [下載受DRM保護的資產](drm.md)
-* [在Win或Mac案頭上使用Experience Manager案頭應用程式下載資產](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)
+* [在Win或Mac案頭上使用Experience Manager案頭應用程式下載資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 * [從支援的Adobe Creative Cloud應用程式使用Adobe資產連結下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
