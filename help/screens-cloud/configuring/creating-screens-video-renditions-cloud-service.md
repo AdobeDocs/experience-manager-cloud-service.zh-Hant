@@ -1,9 +1,9 @@
 ---
 title: 在螢幕中建立螢幕視訊轉譯作為Cloud Service
 description: 本頁面說明如何在Screens中建立Screens視訊轉譯作為Cloud Service。
-source-git-commit: b8691bb77079eeb7efd141ce89c44c5a312262b3
+source-git-commit: ec939ac6a91523a9ba64a555943eba8e6da071eb
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,24 @@ ht-degree: 0%
 
 ## 在Screens中建立Screens視訊轉譯作為Cloud Service的步驟 {#steps-creating-screens-video-renditions}
 
-1. 導覽至Screens Cloud UI中的頻道。
-1. 按一下左上角的Adobe Experience Manager ，導覽至「螢幕內容提供者」，即AEM as aCloud Service。
-1. 按一下主導覽中的「工具」區段，然後按一下「資產」，然後按一下「處理設定檔」
+1. 在Screens內容提供者中導覽至您的頻道。
 
-1. 按一下「建立」以建立新的處理設定檔
-1. 提供「ScreensProcessingProfile」之類的名稱
-1. 導覽至「視訊」標籤以新增視訊編碼，然後按一下「新增」
+   >[!NOTE]
+   >如需詳細資訊，請參閱[使用螢幕內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) 。
+
+1. 按一下左側導覽列中的「工具」區段，然後按一下&#x200B;**Assets**，然後按一下&#x200B;**Processing Profiles**。
+
+   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+
+1. 按一下&#x200B;**建立**&#x200B;以建立新的處理設定檔。
+
+   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+
+1. 輸入&#x200B;**名稱**，例如&#x200B;**ScreensProcessingProfile**。
+
+   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+
+1. 導覽至&#x200B;**Video**&#x200B;標籤以新增視訊編碼，然後按一下&#x200B;**新增**。
 
 
    >[!IMPORTANT]
