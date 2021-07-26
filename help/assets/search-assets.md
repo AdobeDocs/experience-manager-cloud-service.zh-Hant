@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: 搜尋，中繼資料，資產發佈
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '4911'
+source-wordcount: '4902'
 ht-degree: 6%
 
 ---
@@ -226,11 +226,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ## 資產選擇器 {#asset-picker}
 
->[!NOTE]
->
->在舊版[!DNL Adobe Experience Manager]中，資產選擇器稱為[](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html)。
-
-資產選擇器可讓您以特殊方式搜尋、篩選及瀏覽DAM資產。 資產選擇器位於`https://[aem_server]:[port]/aem/assetpicker.html`。 您可以使用資產選取器來擷取所選資產的中繼資料。 您可以使用支援的請求參數來啟動它，例如資產類型（影像、視訊、文字）和選取模式（單選或多選）。 這些參數會設定特定搜尋例項的資產選取器內容，並在整個選取項目中保持不變。
+資產選取器（在舊版[!DNL Adobe Experience Manager]中稱為資產選取器）可讓您以特殊方式搜尋、篩選及瀏覽DAM資產。 資產選擇器位於`https://[aem_server]:[port]/aem/assetpicker.html`。 您可以使用資產選取器來擷取所選資產的中繼資料。 您可以使用支援的請求參數來啟動它，例如資產類型（影像、視訊、文字）和選取模式（單選或多選）。 這些參數會設定特定搜尋例項的資產選取器內容，並在整個選取項目中保持不變。
 
 資產選擇器使用HTML5 `Window.postMessage`訊息，將所選資產的資料傳送給收件者。 它只能在瀏覽模式下運作，且只能搭配Omnisearch結果頁面運作。
 
