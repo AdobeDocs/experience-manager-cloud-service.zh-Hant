@@ -4,9 +4,9 @@ description: 請依照本頁所述了解如何透過Cloud Manager設定雲端資
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
+source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -137,12 +137,13 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-您的團隊成員必須獲得執行個體的權限，因為管理Cloud Manager的權限不足。 現在，您的雲端資源已建立且可供您的團隊存取，系統管理員必須從Admin Console將您的團隊成員指派給AEM作為Cloud Service產品設定檔。
+您的團隊成員必須獲得執行個體的權限，因為管理Cloud Manager的權限不足。 現在，您的雲端資源已建立且可供您的團隊存取，系統管理員必須將您的團隊成員指派給AEM，作為Adobe Admin Console中的Cloud Service產品設定檔。
+
+>[!NOTE]
+>若要以Cloud Service的身分授予AEM的存取權，使用者必須屬於兩個產品設定檔`AEM Users`或`AEM Administrators`中的一個。 請參閱[管理Admin Console中的產品和使用者存取以深入了解。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console)
 
 您應繼續進行入門歷程，接著檢閱將團隊成員指派給AEM as a Cloud Service產品設定檔的檔案。
 
->[!NOTE]
->若要以Cloud Service的身分授與AEM的存取權，使用者必須屬於「AEM使用者」或「AEM管理員」這兩個產品設定檔中的一個。 了解更多.
 
 ## 其他資源 {#additional-resources}
 
