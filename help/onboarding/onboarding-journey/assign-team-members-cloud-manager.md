@@ -4,9 +4,9 @@ description: 請詳閱本頁，了解如何將團隊成員指派給Cloud Manager
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 目標 {#objective}
 
-本檔案概述如何從Admin Console將團隊成員指派給Cloud Manager產品設定檔。
+本檔案概述如何從Adobe Admin Console將團隊成員指派給Cloud Manager產品設定檔。
 
 閱讀本小節後，您應能：
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 檢閱Cloud Manager產品設定檔 {#review-product-profiles}
 
-從Admin Console中，您可以看到Cloud Manager設定檔清單。
+從Adobe Admin Console中，您可以看到Cloud Manager設定檔清單。
 
 >[!NOTE]
 >在您從Admin Console查看Cloud Manager產品設定檔之前，建議您先檢閱可用的[Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)。
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 1. 按一下「**儲存**」。歡迎電子郵件會傳送給您新增的使用者。 受邀的使用者可按一下歡迎電子郵件中的連結，並使用其Adobe ID登入，以存取Cloud Manager。
 
-恭喜！ 現在，您新組建的Cloud Manager團隊（包括您自己指派給「業務擁有者」角色的團隊）已完成設定。 會員會收到歡迎電子郵件，邀請他們登入並存取Cloud Manager。 在業務擁有者角色中，您現在只需一步即可登入Cloud Manager並啟用雲端資源的建立。
+   恭喜！ 現在，您新組建的Cloud Manager團隊（包括您自己指派給「業務擁有者」角色的團隊）已完成設定。 會員會收到歡迎電子郵件，邀請他們登入並存取Cloud Manager。 在業務擁有者角色中，您現在只需一步即可登入Cloud Manager並啟用雲端資源的建立。
 
 ## 將用戶分配到Deployment Manager產品配置檔案 {#assign-users-deployment-manager}
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-現在，您已了解了三個不同的Cloud Manager產品設定檔（如業務擁有者、部署管理員和開發人員），並將團隊成員指派給Cloud Manager產品設定檔（如業務擁有者、部署管理員和開發人員），接下來，您應該通過Cloud Manager檢閱檔案設定資源，以繼續上線歷程，您將在其中學習：
+現在，您已了解了三個不同的Cloud Manager產品設定檔（如業務擁有者、部署管理員和開發人員），並將團隊成員指派給Cloud Manager產品設定檔（如業務擁有者、部署管理員和開發人員），接下來，您應該通過Cloud Manager檢閱檔案「設定雲端資源」 ，以繼續進行入門歷程，您將在此了解：
 
 1. 作為分配給&#x200B;*業務所有者*&#x200B;角色的系統管理員，您必須訪問並登錄Cloud Manager。
 
