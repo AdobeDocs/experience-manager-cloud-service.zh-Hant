@@ -4,9 +4,9 @@ description: 請參照本頁面，了解如何將團隊成員指派給AEM as a C
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c2301227eb65bedb77acd9754e2bc4b62527863d
+source-git-commit: 196af2ab4801b12017063bc2aab59faabdae45f9
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -44,6 +44,7 @@ ht-degree: 1%
    >[!NOTE]
    >為了上線，建議您先新增將參與即時工作的使用者，例如管理員、開發人員和內容作者。 您可以繼續上線的其餘部分，而不需新增所有使用者。 上線完成後，您稍後可以擴充至更多使用者。
 
+開始檢閱將團隊成員指派給AEM as a Cloud Service產品設定檔的步驟之前，請務必遵循以下兩個步驟：
 
 1. 登入[Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)。 如需詳細資訊，請參閱登入Admin Console。
 
@@ -51,11 +52,21 @@ ht-degree: 1%
 
 請依照下列步驟，查看來自Adobe Admin Console的Cloud Manager設定檔清單：
 
-1. 登入Adobe Admin Console後，請從「產品與服務」卡片中選取「Adobe Experience Manager as a Cloud Service」 :
+1. 登入[Adobe Admin Console](https://adminconsole.adobe.com/)。 從&#x200B;**概述**&#x200B;頁面，從&#x200B;**產品和服務**&#x200B;卡中選擇&#x200B;**Adobe Experience Manager作為Cloud Service**。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
 1. 導覽並選取例項（開發環境的製作例項），如下圖所示。
 
-   現在，您將能夠看到AEM的清單，它是Cloud Service產品設定檔，需要根據使用者的角色指派給使用者。 若要深入了解，請前往AEM as a Cloud Service產品設定檔。
+   ![](/help/onboarding/onboarding-journey/assets/cloud-profiles-1.png)
+
+
+1. 您會看到AEM清單，此為Cloud Service產品設定檔，需要根據使用者的角色指派給使用者。
+
+   >[!NOTE]
+   >若要深入了解這些設定，請參閱[AEM as a Cloud Service產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)。
+
+   ![](/help/onboarding/onboarding-journey/assets/cloud-profiles-2.png)
 
 
 ## 將團隊成員新增至AEM使用者或AEM管理員產品設定檔 {#add-team-members}
