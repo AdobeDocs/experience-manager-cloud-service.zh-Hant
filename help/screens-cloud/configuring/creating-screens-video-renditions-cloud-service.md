@@ -1,15 +1,15 @@
 ---
-title: 在螢幕中建立螢幕視訊轉譯作為Cloud Service
-description: 本頁面說明如何在Screens中建立Screens視訊轉譯作為Cloud Service。
-source-git-commit: 0badd4209b35b4c8cdfa765a08b5d9db749f52b5
+title: 在螢幕中建立視訊轉譯作為Cloud Service
+description: 本頁面說明如何在Screens中建立視訊轉譯作為Cloud Service。
+source-git-commit: 102aab1d550e950ea880d9b9288bdab41866add6
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
 
-# 在螢幕中建立螢幕視訊轉譯作為Cloud Service {#creating-screens-video-renditions}
+# 在螢幕中建立視訊轉譯作為Cloud Service {#creating-screens-video-renditions}
 
 ## 簡介 {#introduction}
 
@@ -18,7 +18,9 @@ ht-degree: 0%
 >[!IMPORTANT]
 >如果您打算在Screens頻道中使用視訊，則必須設定本節強調顯示的步驟。
 
-## 在Screens中建立Screens視訊轉譯作為Cloud Service的步驟 {#steps-creating-screens-video-renditions}
+## 在Screens中建立視訊轉譯作為Cloud Service的步驟 {#steps-creating-screens-video-renditions}
+
+請依照下列步驟，從Screens內容提供者在Screens as a Cloud Service中建立視訊轉譯：
 
 1. 在Screens內容提供者中導覽至您的頻道。
 
