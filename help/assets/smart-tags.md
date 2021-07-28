@@ -5,21 +5,21 @@ contentOwner: AG
 feature: 智慧標籤，標籤
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 6%
+source-wordcount: '2379'
+ht-degree: 5%
 
 ---
 
 
-# 將智慧標籤新增至資產以改善搜尋體驗 {#smart-tag-assets-for-faster-search}
+# 新增智慧標籤至資產並改善搜尋體驗 {#smart-tag-assets-for-faster-search}
 
 處理數位資產的組織，在資產中繼資料中越來越多地使用分類法控制的辭匯。 基本上，它包含員工、合作夥伴和客戶通常用來參考和搜尋其數位資產的關鍵字清單。 使用分類控制的辭匯來標籤資產，以確保在搜尋中輕鬆識別及擷取資產。
 
 與自然語言辭匯相比，基於業務分類法的標籤有助於使資產與公司的業務一致，並確保最相關的資產出現在搜尋中。 例如，汽車製造商可以用型號標籤汽車影像，以便在搜索以設計促銷活動時只顯示相關影像。
 
-在背景中，此功能使用人為智慧架構[Adobe Sensei](https://www.adobe.com/tw/sensei/experience-cloud-artificial-intelligence.html)，根據您的標籤結構和商業分類訓練其影像識別演算法。 然後，系統會使用此內容智慧，將相關標籤套用至不同的資產集。 [!DNL Experience Manager Assets] 依預設，會自動將智慧標籤套用至已上傳的資產。
+在背景中，此功能使用人為智慧架構[Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html)，根據您的標籤結構和商業分類訓練其影像識別演算法。 然後，系統會使用此內容智慧，將相關標籤套用至不同的資產集。 [!DNL Experience Manager Assets] 依預設，會自動將智慧標籤套用至已上傳的資產。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -100,7 +100,7 @@ ht-degree: 6%
 * 建立僅包含、
 
    * 與車型相關的標籤。
-   * 與男女夾克相關的標籤。
+   * 與成人和孩子穿的夾克相關的標籤。
 
 * 請勿建立
 
@@ -139,8 +139,8 @@ ht-degree: 6%
 1. 選擇「**[!UICONTROL 智慧標籤培訓]**」報告，然後從工具欄按一下「**[!UICONTROL 下一步]**」。
 1. 指定報表的標題和說明。在「 **[!UICONTROL 排程報表]**」下，保 **[!UICONTROL 留「現在]** 」選項。如果您想要排程報表以供稍後使用，請選 **[!UICONTROL 取]** 「稍後」並指定日期和時間。然後，按一下工具列中的&#x200B;**[!UICONTROL Create]**。
 1. 在「資 **[!UICONTROL 產報表]** 」頁面中，選取您產生的報表。若要檢視報表，請按一下工具列中的&#x200B;**[!UICONTROL 檢視]**。
-1. 檢閱報表的詳細資訊。 報表會顯示您所訓練之標籤的訓練狀態。**[!UICONTROL 訓練狀態]**&#x200B;欄中的綠色表示智慧標籤服務已針對標籤進行訓練。 黃色表示服務未針對特定標籤進行完整訓練。在這種情況下，請使用特定標籤新增更多影像，並執行培訓工作流程，以完全在標籤上訓練服務。如果在此報告中看不到您的標籤，請針對這些標籤。標籤再次執行訓練工作流程
-1. 若要下載報表，請從清單中選取報表，然後從工具列按一下「下載&#x200B;****」。 報表會以[!DNL Microsoft Excel]試算表的形式下載。
+1. 檢閱報表的詳細資訊。 報表會顯示您所訓練之標籤的訓練狀態。**[!UICONTROL 訓練狀態]**&#x200B;欄中的綠色表示智慧標籤服務已針對標籤進行訓練。 黃色表示服務已針對特定標籤進行部分訓練。 若要完全針對標籤訓練服務，請使用特定標籤新增更多影像並執行訓練工作流程。 如果在此報告中看不到您的標籤，請再次執行這些標籤。標籤的培訓工作流
+1. 若要下載報表，請從清單中選取報表，然後從工具列按一下「下載&#x200B;****」。 報表會以試算表形式下載。
 
 <!--
 ### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
@@ -183,7 +183,7 @@ ht-degree: 6%
 
 * 對於影像和視訊，智慧標籤會以某些視覺方面為基礎。
 
-* 對於文字型資產，智慧標籤的功效不取決於資產中的文字數量，而取決於資產文字中出現的相關關鍵字或實體。 對於文字型資產，智慧標籤是顯示在文字中的關鍵字，但是最能說明資產的關鍵字。 對於支援的資產，[!DNL Experience Manager]已擷取文字，然後加以索引並用於搜尋資產。 不過，與完整搜尋索引相比，基於文字中關鍵字的智慧標籤可提供專用、結構化和較高優先順序的搜尋面向，用來改善資產探索。
+* 對於文字型資產，智慧標籤的功效不取決於資產中的文字數量，而取決於資產文字中出現的相關關鍵字或實體。 對於文字型資產，智慧標籤是顯示在文字中的關鍵字，但是最能說明資產的關鍵字。 對於支援的資產，[!DNL Experience Manager]已擷取文字，然後加以索引並用於搜尋資產。 不過，基於文字中關鍵字的智慧標籤可提供專用、結構化和高優先順序的搜尋面向。 與搜尋索引相比，後者有助於改善資產探索。
 
 ## 管理智慧標籤和資產搜尋 {#manage-smart-tags-and-searches}
 
@@ -193,11 +193,11 @@ ht-degree: 6%
 
 您也可以指派較高的排名給標籤，以提高標籤與資產的相關性。 根據特定標籤執行搜尋時，提升資產的標籤可增加資產出現在搜尋結果中的機會。
 
-若要協調資產的智慧標籤：
+若要協調數位資產的智慧標籤：
 
-1. 在搜尋欄位中，根據標籤搜尋資產。
+1. 在搜尋欄位中，根據標籤搜尋數位資產。
 
-1. Inspect搜尋結果，以識別您找不到與搜尋相關的資產。
+1. 若要識別您找不到與搜尋相關的數位資產，請檢查搜尋結果。
 
 1. 選取資產，然後從工具列選取![管理標籤圖示](assets/do-not-localize/manage-tags-icon.png)。
 
@@ -215,7 +215,7 @@ ht-degree: 6%
 
 * 中繼資料中具有`woman`和`running`關鍵字的資產。
 
-* 使用任一關鍵字標示的資產智慧型。
+* 以任一關鍵字標示的資產智慧型。
 
 會先顯示符合中繼資料欄位中所有搜尋詞的搜尋結果，接著顯示符合智慧標籤中任何搜尋詞的搜尋結果。 在上述範例中，搜尋結果的顯示約略順序為：
 
@@ -223,21 +223,23 @@ ht-degree: 6%
 1. 在智慧標籤中符合`woman running`。
 1. 在智慧標籤中符合`woman`或`running`。
 
-## 標籤限制和最佳作法 {#limitations}
+## 標籤相關限制和最佳作法 {#limitations}
 
 增強的智慧標籤是以學習影像及其標籤的模型為基礎。 這些模型在識別標籤時並非總是十分完美。 智慧標籤的目前版本有下列限制：
 
 * 無法識別影像中的細微差異。 例如，纖薄與普通襯衫。
 * 無法根據影像的微小模式或部分識別標籤。 例如，襯衫上的標誌。
 * [!DNL Experience Manager]支援的語言支援標籤。 如需語言清單，請參閱[智慧內容服務發行說明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)。
-* 未實際處理的標籤會與下列項目相關：
+* 未處理的標籤與下列項目相關：
 
-   * 非視覺、抽象的方面。 例如，產品的發佈年份或季數、影像所誘發的情緒或情緒、視訊的主觀內涵等。
+   * 非視覺、抽象的方面。 例如，產品的發佈年份或季數、影像所誘發的情緒或情緒，以及視訊的主觀內涵。
    * 產品中的細微視覺差異，例如襯衫與襯衫之間有無領結，或產品上嵌入的小產品標誌。
 
-<!-- TBD: Add limitations related to text-based assets. -->
+要訓練模型，請使用最合適的影像。 無法還原培訓或無法刪除培訓模型。 標籤的正確性取決於當前培訓，因此請小心。
 
-若要搜尋具有智慧標籤的資產（一般或增強），請使用[!DNL Assets]搜尋（全文搜尋）。 智慧標籤沒有單獨的搜尋述詞。
+<!-- TBD: Add limitations related to text files. -->
+
+要搜索帶有智慧標籤的檔案（常規或增強），請使用[!DNL Assets]搜索（全文搜索）。 智慧標籤沒有單獨的搜尋述詞。
 
 >[!NOTE]
 >
@@ -246,6 +248,6 @@ ht-degree: 6%
 
 >[!MORELIKETHIS]
 >
->* [了解智慧標籤如何協助管理資產](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [智慧標籤視訊資產](smart-tags-video-assets.md)
+>* [了解智慧標籤如何協助管理您的數位檔案](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [使用影片智慧標籤](smart-tags-video-assets.md)
 
