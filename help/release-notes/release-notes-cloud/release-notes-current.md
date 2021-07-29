@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
+source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1286'
 ht-degree: 2%
 
 ---
@@ -140,17 +140,17 @@ API `com.day.cq.dam.api.collection.SmartCollection`在[!DNL Experience Manager]�
 
 * `bulk-offline-update-service` 缺少某些環境的所有權限。
 
-* 更新說明連結以符合新的screens雲端檔案。
+* 更新說明連結，以符合新的screens雲端檔案。
 
-* 取消指派播放清單，並不允許移除已指派播放器的播放清單。
+* 取消指派播放清單，以及不允許移除已指派播放器的播放清單，現在已可運作。
 
 * 清除「全部」快取時，播放器現在會重新下載資產。
 
 * 如果為後一天設定了&#x200B;*結束時間*，則重複計畫現在可以運作。
 
-* `Back&Forward` 現在可在Screens雲端UI中運作。
+* `Back&Forward` 現在可在Screens中以Cloud ServiceUI的形式運作。
 
-* 無法建立名稱相同但命名空間不同的標籤。
+* 無法先建立名稱相同但命名空間不同的標籤。
 
 ## [!DNL Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
