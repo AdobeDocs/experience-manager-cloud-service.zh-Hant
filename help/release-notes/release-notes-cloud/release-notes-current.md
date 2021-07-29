@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ec1e83b344b0d237db479f66fbb761db2d8923d5
+source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1280'
 ht-degree: 2%
 
 ---
@@ -127,6 +127,30 @@ AEM as aCloud Service2021.7.0中的Cloud Manager發行日期為2021年7月15日�
 ### [!DNL Assets]中修正的錯誤 {#assets-bugs-fixed}
 
 API `com.day.cq.dam.api.collection.SmartCollection`在[!DNL Experience Manager]中不作為[!DNL Cloud Service]使用。 (CQ-4326322)
+
+## [!DNL Experience Manager Screens] as a  [!DNL Cloud Service] {#screens}
+
+### 錯誤修正 {#bug-fixes-screens}
+
+* 內容提供者設定現在會在建立或更新期間驗證。
+
+* 所有顯示的視圖都有資料夾列。
+
+* 您可以展開「螢幕」內容結構。
+
+* `bulk-offline-update-service` 缺少某些環境的所有權限。
+
+* 更新說明連結以符合新的screens雲端檔案。
+
+* 取消指派播放清單，並不允許移除已指派播放器的播放清單。
+
+* 清除「全部」快取時，播放器現在會重新下載資產。
+
+* 如果為後一天設定了&#x200B;*結束時間*，則重複計畫現在可以運作。
+
+* `Back&Forward` 現在可在Screens雲端UI中運作。
+
+* 無法建立名稱相同但命名空間不同的標籤。
 
 ## [!DNL Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
