@@ -5,9 +5,9 @@ breadcrumb-title: 發行說明
 user-guide-description: 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。
 feature: 發行資訊
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f3207681f16c7db3922c437ce5c57409fcd29f3b
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '128'
 ht-degree: 96%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 96%
 + 發行說明 {#release-notes}
    + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021年{#2021}
+      + [2021.5.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-6-0.md)
       + [2021.5.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-5-0.md)
       + [2021.4.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)
       + [2021.3.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
