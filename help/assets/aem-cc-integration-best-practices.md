@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: 協作，Adobe資產連結，案頭應用程式
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
 workflow-type: tm+mt
-source-wordcount: '3383'
-ht-degree: 15%
+source-wordcount: '3451'
+ht-degree: 14%
 
 ---
 
@@ -32,6 +32,7 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務生態系統，協
 | 簡化案頭創意人員的體驗 | 為創意專業人員（或更廣泛地說，為在原生資產建立應用程式中工作的案頭使用者）簡化從DAM([!DNL Assets])存取資產的作業。 他們需要簡單明瞭的方式來探索、使用（開啟）、編輯和儲存對Experience Manager的變更，以及上傳新檔案。 | Win或Mac案頭；Creative Cloud應用程式 |
 | 從[!DNL Adobe Stock]提供高品質且可供使用的資產 | 行銷人員可協助進行資產來源搜尋和探索，協助加速內容建立流程。 創意專業人員可直接在其創意工具中使用已核准的資產。 | [!DNL Assets]; [!DNL Adobe Stock] 市場；中繼資料欄位 |
 | 按組織分發和共用資產 | 內部部門/當地分支機構和外部合作夥伴、分銷商和代理使用母公司共用的已核准資產。 該組織希望安全無縫地共用已建立的資產，以便更廣泛地重複使用。 | [!DNL Brand Portal], [!DNL Asset Share Commons] |
+| 自動產生上傳資產的預先定義變數 | 運用Adobe獨特的媒體處理和轉換技術，針對預先定義的動作自動處理資產。 建立自訂邏輯，使用API和資產微服務定義您自己的動作。 | [!DNL Assets] 使用者介面 |
 
 ## Adobe產品以支援協作需求 {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -41,6 +42,7 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務生態系統，協
 | 業務用戶簡化了開啟和使用資產、編輯和上傳[!DNL Experience Manager]的更改，以及從案頭環境將新檔案上傳到[!DNL Experience Manager]。 他們會使用一般整合來開啟原生案頭應用程式中的任何資產類型，包括非Adobe的資產類型。 | [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Experience ManagerWin和Mac案頭上的案頭應用程式 |
 | 行銷人員和商務使用者可從Experience Manager中探索、預覽、授權及儲存及管理Adobe Stock資產。 授權和儲存的資產可提供選取的Adobe Stock中繼資料，以改善控管。 | [Experience Manager與Adobe Stock整合](aem-assets-adobe-stock.md) | [!DNL Experience Manager] 網頁介面 |
 | 改善數位產品設計人員和行銷人員之間的協作。 讓設計師在Adobe XD畫布上的設計和線框模型中使用數位資產。 | [[!DNL Adobe Asset Link] for [!DNL Adobe XD]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| 行銷人員可以根據上傳的資產和使用自訂功能建立的預先定義動作，自動建立變數和衍生產品。 使用此自動化來提高內容速度並減少手動工作量。 | [內容自動化](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] 網頁介面 |
 
 本文主要針對協作需求的前兩個方面。資產規模分配和採購作為一個使用案例被簡要提及。針對這些需求解決方案，請考慮Adobe品牌入口網站或資產共用公域。其他解決方案，例如[Experience ManagerAssets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)，應根據特定需求審查可以根據[資產共用公域](https://opensource.adobe.com/asset-share-commons/)元件、[連結共用](share-assets.md)，使用[Experience Manager資產Web UI](/help/assets/manage-digital-assets.md)建立的解決方案。
 
