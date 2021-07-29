@@ -4,9 +4,9 @@ description: 使用Creative Cloud整合產生資產變數
 contentOwner: AG
 feature: 上傳，資產處理，發佈，Asset compute微服務，工作流程
 role: User,Admin
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -14,21 +14,41 @@ ht-degree: 0%
 
 # 使用[!DNL Adobe Creative Cloud]整合產生資產變異 {#content-automation}
 
-內容自動化附加元件整合了[!DNL Adobe Experience Manager Assets as a Cloud Service]和[!DNL Adobe Creative Cloud] API，以創意方式大規模處理您的資產。 [!DNL Experience Manager] 使用雲端資 [產微](/help/assets/asset-microservices-overview.md) 服務來使用功能， [!DNL Adobe Creative Cloud] 並自動化資產建立和媒體處理。
+內容自動化附加元件整合[!DNL Adobe Experience Manager Assets]作為[!DNL Cloud Service]和[!DNL Adobe Creative Cloud] API，以創意方式大規模處理您的資產。 [!DNL Experience Manager] 使用雲端資 [產微](/help/assets/asset-microservices-overview.md) 服務來使用功能， [!DNL Adobe Creative Cloud] 並自動化資產建立和媒體處理。
 
 若要編輯[!DNL Adobe Photoshop]和[!DNL Adobe Lightroom]中的資產，您不必從[!DNL Experience Manager Assets]下載資產、編輯資產並再次上傳資產。 您可以在[!DNL Experience Manager]中建立和設定處理設定檔、將設定檔套用至資料夾，以及將資產上傳至資料夾。 您上傳的資產會根據處理設定檔重新處理，而您會得到這些資產的變體。 一致且輕鬆的大量處理功能可節省手動工作量並提升內容速度，而無須精湛的創意技能。 此外，開發人員和合作夥伴可以直接存取這些API，並包含自訂邏輯，以擴充資產微服務。
 
-使用者可以建立處理設定檔，以自動處理其資產的下列創意操作：\
-![自動執行Adobe Photoshop和AdobeLightroom資產操作](assets/content-automation.png)
+使用者可以建立處理設定檔，以自動處理其資產的下列創意操作：
+
 * **自動調音**:利用人工智慧分析影像的內容，並根據影像的獨特屬性智慧地進行光和顏色校正。
+
 * **自動直立**:利用人工智慧對影像內容進行分析，對影像中的傾斜透視進行修正。例如，要建立層視線。
+
+   ![自動色調](/help/assets/assets/content-automation-autotone.png)
+
+   *圖：自動調色和自動拉直有助於改善傾斜影像。*
+
 * **Lightroom預設集**:使用自訂預設集對影像套用使用者定義的外觀，以達到一致的外觀。
+
+   ![Lightroom預設集](/help/assets/assets/content-automation-lrpresets.png)
+
+   *圖：AdobeLightroom預設集，以一致方式改善許多影像的影像品質。*
+
 * **影像挖剪**:使用人工智慧在顯著對象周圍建立選擇，並使用單個命令刪除背景。
+
+   ![移除背景並從像片中剪下影像](/help/assets/assets/content-automation-backgroundremove.png)
+
 * **影像遮色片**:使用人工智慧在突出物體周圍使用單一命令建立掩模。
-* **Photoshop動作**:套用一系列工作(在Photoshop中)至檔案或一批檔案。
+
+   ![使用AI遮罩影像](/help/assets/assets/content-automation-mask.png)
+
+* **Photoshop動作**:將一系列任 [!DNL Adobe Photoshop] 務應用到檔案或批檔案。
+
+   ![Photoshop動作](/help/assets/assets/content-automation-psactions.png)
+
 * **智慧型物件取代**:允許您交換影像，同時保留PSD檔案內套用的所有效果和調整，以大規模個人化。
 
-
+   ![智慧替換對象](/help/assets/assets/content-automation-objectreplace.png)
 
 ## 使用處理設定檔大量編輯創意資產 {#process-assets}
 
@@ -42,9 +62,9 @@ ht-degree: 0%
 
 1. 選擇&#x200B;**[!UICONTROL Creative]**&#x200B;標籤，指定輸出資料夾，選擇&#x200B;**[!UICONTROL Add New]**&#x200B;以添加創作配置。
 
-1. 提供&#x200B;**[!UICONTROL 轉譯名稱]**（或輸出名稱）、**[!UICONTROL 副檔名]**（或檔案類型）、選擇&#x200B;**[!UICONTROL 質量]**（或輸出參數）、選擇&#x200B;**[!UICONTROL 包含]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME類型清單（或輸入資產篩選器），並選擇所需的創作操作。<br/>
+1. 提供&#x200B;**[!UICONTROL 轉譯名稱]**（或輸出名稱）、**[!UICONTROL 副檔名]**（或檔案類型）、選擇&#x200B;**[!UICONTROL 質量]**（或輸出參數）、選擇&#x200B;**[!UICONTROL 包含]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME類型清單（或輸入資產篩選器），並選擇所需的創作操作。
 
-   ![處理設定檔中的創意標籤](assets/creative-processing-profile.png)
+   ![ 處理設定檔中 [!UICONTROL 的Creative標籤]](assets/creative-processing-profile.png)
 
 1. 某些操作需要額外的參數（資產）。 視需要提供這些額外參數的值。
 
