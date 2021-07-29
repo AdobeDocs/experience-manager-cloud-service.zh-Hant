@@ -2,10 +2,10 @@
 title: 使用Best Practices Analyzer
 description: 使用Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 36ead0181ab9d1a0eb874d8e3584df2e4c760f30
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 42%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="使用Best Practices Analyzer"
 >abstract="檢閱使用Best Practices Analyzer（原稱為Cloud Readiness Analyzer）的說明檔案以及產生的報表。 Best Practices Analyzer報表可用來取得對一般升級整備程度的高層了解。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
-## 使用Best Practices Analyzer {#imp-considerations}的重要考量
+## 使用Best Practices Analyzer的重要考量 {#imp-considerations}
 
 請依照以下章節了解執行Best Practices Analyzer(BPA)時的重要考量：
 
@@ -51,7 +51,7 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
 >[!NOTE]
 從軟體發佈入口網站下載 [Best ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) Practices Analyzer。
 
-## 查看Best Practices Analyzer報表{#viewing-report}
+## 檢視Best Practices Analyzer報表 {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 和更新版本 {#aem-later-versions}
 
@@ -93,7 +93,7 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
 
-#### 在Best Practices Analyzer報表{#bpa-filters}中使用篩選器
+#### 在Best Practices Analyzer報表中使用篩選器 {#bpa-filters}
 
 要篩選與[ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)相關的發現，請執行以下步驟：
 
@@ -120,12 +120,13 @@ Adobe Experience Manager 6.2中，Best Practices Analyzer工具僅能用於產�
 
 >[!NOTE]在所有版本中，隨附的模式偵測器皆可獨立執行。
 
-## 解譯Best Practices Analyzer報表{#cra-report}
+## 解譯Best Practices Analyzer報表 {#cra-report}
 
 [!CONTEXTUALHELP]
 id="aemcloud_bpa_interpreting"
 title="解譯Best Practices Analyzer報表"
 abstract="查看BPA報表輸出有兩個選項：UI和CSV。 在AEM例項中執行Best Practices Analyzer工具時，UI報表會在工具視窗中顯示為結果。 CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和組織。"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="檢閱最佳實務分析報表"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="了解Best Practices Analyzer報表類別"
 
 在AEM例項中執行Best Practices Analyzer工具時，報表會在工具視窗中顯示為結果。
@@ -155,7 +156,7 @@ additional-url="https://experienceleague.adobe.com/docs/experience-manager-patte
 | 關鍵 | 此結果很可能是升級問題，必須解決以防止失去功能或效能。 |
 
 
-## 解譯Best Practices Analyzer CSV報表{#cra-csv-report}
+## 解譯Best Practices Analyzer CSV報表 {#cra-csv-report}
 
 當您按一下AEM例項的&#x200B;**CSV**&#x200B;選項時，最佳實務分析器報表的CSV格式會從內容快取建置，並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報表將會以檔案格式自動下載，且具有預設名稱 `results.csv`。
 
