@@ -10,9 +10,9 @@ feature: 商務整合架構
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: dbf32230042f39760733b711ffe8b5b4143e0544
+source-git-commit: 490a93cfcfdac5ba209e52b1de3e1f823e80d26f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '746'
 ht-degree: 3%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 3%
 
 ## 自訂Url格式 {#custom-url-format}
 
-若要提供自訂URL格式，專案可實作[`UrlFormat`介面](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)，並將實作記錄為OSGI服務，使用作為類別頁面或產品頁面url格式。 `UrlFormat#PROP_USE_AS`服務屬性以要替換的已配置、預定義格式指示：
+若要提供自訂URL格式，專案可實作[`UrlFormat`介面](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)，並將實作記錄為OSGI服務，以類別頁面或產品頁面url格式使用。 `UrlFormat#PROP_USE_AS`服務屬性指示要替換的配置預定義格式：
 
 * `useAs=productPageUrlFormat`，將取代已設定的產品頁面url格式
 * `useAs=categoryPageUrlFormat`，將取代已設定的類別頁面url格式
