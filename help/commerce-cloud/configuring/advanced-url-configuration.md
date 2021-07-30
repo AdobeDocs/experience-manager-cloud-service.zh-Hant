@@ -10,9 +10,9 @@ feature: 商務整合架構
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 490a93cfcfdac5ba209e52b1de3e1f823e80d26f
+source-git-commit: fe0e93d6f9ab16bf469e52e2b758f5e3f8600413
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '744'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 >
 > 自AEM CIF核心元件2.0.0版起，URL提供者設定僅提供預先定義的url格式，而非1.x版中可使用的自由文字設定格式。 此外，在URL中使用選取器傳遞資料的做法已取代為尾碼。
 
-### 產品頁面url格式 {#product}
+### 產品頁面URL格式 {#product}
 
 這可設定產品頁面的URL並支援下列選項：
 
@@ -41,7 +41,7 @@ ht-degree: 3%
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-其中，在[Venia參考儲存區](https://github.com/adobe/aem-cif-guides-venia)
+在[Venia Reference store](https://github.com/adobe/aem-cif-guides-venia)中：
 
 * `{{page}}` 將替換為  `/content/venia/us/en/products/product-page`
 * `{{sku}}` 將替換為產品的sku，例如  `VP09`
@@ -51,14 +51,14 @@ ht-degree: 3%
 
 使用上述範例資料，使用預設URL格式格式化的產品變體URL看起來會像`/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`。
 
-### 類別頁面url格式 {#product-list}
+### 類別頁面URL格式 {#product-list}
 
 這可設定類別或產品清單頁面的URL，並支援下列選項：
 
 * `{{page}}.html/{{url_path}}.html` (預設)
 * `{{page}}.html/{{url_key}}.html`
 
-其中，在[Venia參考儲存區](https://github.com/adobe/aem-cif-guides-venia)
+在[Venia Reference store](https://github.com/adobe/aem-cif-guides-venia)中：
 
 * `{{page}}` 將替換為  `/content/venia/us/en/products/category-page`
 * `{{url_key}}` 將替換為類別的屬 `url_key` 性
@@ -70,7 +70,7 @@ ht-degree: 3%
 > 
 > `url_path`是產品或類別祖先的`url_keys`與產品或類別的`url_key`的串連，以`/`斜線分隔。
 
-## 自訂Url格式 {#custom-url-format}
+## 自訂URL格式 {#custom-url-format}
 
 若要提供自訂URL格式，專案可實作[`UrlFormat`介面](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)，並將實作記錄為OSGI服務，以類別頁面或產品頁面url格式使用。 `UrlFormat#PROP_USE_AS`服務屬性指示要替換的配置預定義格式：
 
