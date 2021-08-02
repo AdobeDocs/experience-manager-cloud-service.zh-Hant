@@ -5,10 +5,10 @@ breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 feature: 開發人員工具
 role: Developer, Architect
-source-git-commit: ee32ab3659ee4696caa55b945b6b7895d94914a9
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 33%
+source-wordcount: '1034'
+ht-degree: 36%
 
 ---
 
@@ -17,6 +17,42 @@ ht-degree: 33%
 
 + [為 AEM as a Cloud Service 實作應用程式](/help/implementing/home.md)
 + 使用 Cloud Manager {#using-cloud-manager}
+   + Cloud Manager {#release-notes-cloud-manager}發行說明
+      + [最新發行說明 (2021.7.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + 2021年{#2021}
+         + [2021.6.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
+         + [2021.5.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
+         + [2021.4.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
+         + [2021.3.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
+         + [2021.2.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
+         + [2021.1.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
+      + 2020年{#2020}
+         + [2020.12.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
+         + [2020.11.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
+         + [2020.10.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+         + [2020.9.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
+         + [2020.8.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
+         + [2020.7.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
+         + [2020.6.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
+         + [2020.5.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
+         + [2020.4.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
+         + [2020.3.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
+         + [2020.2.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+   + [了解方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)
+   + 生產程式{#production-programs}
+      + [簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + [建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md)
+      + [編輯生產程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-production-program.md)
+   + 沙箱方案 {#sandbox-programs}
+      + [簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+      + [建立沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+      + [編輯沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+      + [刪除沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+      + [休眠和解除休眠沙箱環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
+   + 建立 AEM 應用程式專案 {#create-application-project}
+      + [使用精靈](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+      + [設定專案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+      + [了解建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
    + [管理環境](cloud-manager/manage-environments.md)
    + [設定 CI/CD 管道](cloud-manager/configure-pipeline.md)
    + [部署程式碼](cloud-manager/deploy-code.md)
