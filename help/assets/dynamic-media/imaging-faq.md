@@ -4,9 +4,9 @@ description: 了解Adobe Sensei AI的智慧型影像處理如何套用每位使�
 feature: 資產管理，轉譯
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 771e6b021c4da68ac35437d45ea36bb38eae2f34
 workflow-type: tm+mt
-source-wordcount: '2639'
+source-wordcount: '2613'
 ht-degree: 1%
 
 ---
@@ -184,13 +184,13 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 依預設，Dynamic Media公司帳戶的智慧型影像處理DPR和網路最佳化會停用（關閉）。 如果要啟用（開啟）上述一項或兩項現成可用的增強功能，請建立支援案例，如下所述。
 
-智慧影像處理DPR和網路最佳化的發行排程如下：
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is available in North as follows:
 
-| 區域 | 目標日期 |
+| Region | Target date |
 |---|---|
-| 北美 | 即時 |
-| 歐洲、中東、非洲 | 2021年8月13日 |
-| 亞太 | 2021年7月22日 |
+| North America | Live | 
+| Europe, Middle East, Africa | 13 August 2021 | 
+| Asia-Pacific | 22 July 2021 | -->
 
 1. [使用Admin Console建立支援案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 1. 在您的支援案例中提供下列資訊：
@@ -281,4 +281,4 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 * 根據預設，為了將Dynamic Media Foundation元件設定為DPR最佳化，為了避免因伺服器端智慧型影像處理DPR最佳化而造成影像過大，一律會將`dpr=off`新增至Dynamic Media Foundation元件影像。 即使客戶在DM Foundation元件中取消選取DPR最佳化，伺服器端智慧型影像處理DPR也不會生效。 總之，在DM基礎元件中，DPR優化僅基於DM基礎元件級別設定而生效。
 * 任何檢視器端DPR最佳化都會與伺服器端智慧型影像處理DPR最佳化搭配運作，而不會導致影像大小過大。 換言之，無論DPR是由檢視器處理的，例如只有啟用縮放的檢視器中的主檢視，伺服器端智慧型影像處理DPR值都不會觸發。 同樣地，只要檢視器元素（例如色票和縮圖）沒有DPR處理，就會觸發伺服器端智慧型影像處理DPR值。
 
-另請參閱[使用影像時](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images)和[使用智慧型裁切時](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)。—>
+另請參閱[使用影像時](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images)和[使用智慧型裁切時](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)。
