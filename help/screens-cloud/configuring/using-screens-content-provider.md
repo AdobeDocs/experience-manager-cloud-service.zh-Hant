@@ -1,7 +1,7 @@
 ---
 title: 使用Up Screens內容提供者
 description: 本頁面說明如何使用Screens內容提供者來建立內容。
-source-git-commit: aea66e38a54c8e96b0dfe06cc7cb8f7733e8bc09
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 1%
@@ -30,10 +30,10 @@ ht-degree: 1%
 1. 導覽至[Adobe Experience Cloud](https://experience.adobe.com)首頁。
 
 1. 選擇&#x200B;**Experience Manager**。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. 按一下Cloud Manager卡片中的&#x200B;**Launch**。 成功登入[!UICONTROL Cloud Manager]後，您就可以使用使用者介面(UI)了。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. 選取Screens作為Cloud Service的方案，然後按一下圖示，如下所示，開啟該特定方案的Cloud Manager的&#x200B;**概述**&#x200B;頁面。
 
