@@ -3,14 +3,14 @@ title: '部署至 AEM as a Cloud Service '
 description: '部署至 AEM as a Cloud Service  '
 feature: 部署
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '3290'
 ht-degree: 1%
 
 ---
 
-# 部署至 AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
+# 部署至 AEM as a Cloud Service  {#deploying-to-aem-as-a-cloud-service}
 
 ## 簡介 {#introduction}
 
@@ -25,9 +25,9 @@ ht-degree: 1%
 >It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
 -->
 
-## 客戶版本{#customer-releases}
+## 客戶發行 {#customer-releases}
 
-### 根據正確的AEM版本{#coding-against-the-right-aem-version}編碼
+### 根據正確的AEM版本編碼 {#coding-against-the-right-aem-version}
 
 針對先前的AEM解決方案，最新的AEM版本不常變更（大約每年每季提供一次Service Pack），客戶會自行將生產執行個體更新為最新的快速入門，並參考API Jar。 不過，AEM as a Cloud Service應用程式會更頻繁地自動更新為最新版本的AEM，因此內部版本的自訂程式碼應根據最新的AEM版本建置。
 
@@ -47,9 +47,9 @@ ht-degree: 1%
 >It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
 -->
 
-## 透過Cloud Manager和Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}部署內容套件
+## 透過Cloud Manager和Package Manager部署內容套件 {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
-### 透過Cloud Manager {#deployments-via-cloud-manager}部署
+### 透過Cloud Manager部署 {#deployments-via-cloud-manager}
 
 客戶透過Cloud Manager將自訂程式碼部署至雲端環境。 請注意，Cloud Manager會將本機組裝的內容套件轉換為符合Sling功能模型的成品，這是在雲端環境中執行時，AEM作為Cloud Service應用程式的描述方式。 因此，在雲端環境上查看套件管理器中的套件時，名稱將包含「cp2fm」，且轉換的套件已移除所有中繼資料。 無法互動，亦即無法下載、複製或開啟。 有關轉換器的詳細文檔可以在[此處找到](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)。
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 本節的其餘部分將介紹不可變和可變包的組成和含義。
 
-### 不可變的內容包{#immutabe-content-packages}
+### 不可變的內容包 {#immutabe-content-packages}
 
 所有保存在不可修改存放庫中的內容和程式碼都必須簽入git，並透過Cloud Manager部署。 換句話說，與目前的AEM解決方案不同，程式碼絕不會直接部署至執行中的AEM例項。 這可確保在任何雲端環境中針對指定版本執行的程式碼都相同，而可避免在生產環境中意外變更程式碼的風險。 例如，OSGI設定應提交至原始碼控制項，而非透過AEM Web主控台的設定管理員在執行階段進行管理。
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 不支援這些程式碼套件套用某些其他限制，例如[安裝鈎點](http://jackrabbit.apache.org/filevault/installhooks.html)。
 
-## OSGI配置{#osgi-configuration}
+## OSGI設定 {#osgi-configuration}
 
 如上所述，OSGI設定應提交至原始碼控制，而非透過Web主控台。 這樣做的技巧包括：
 
@@ -78,13 +78,13 @@ ht-degree: 1%
 
 請前往[為AEM設定OSGi作為Cloud Service](/help/implementing/deploying/configuring-osgi.md)，深入了解OSGI設定。
 
-## 可變內容{#mutable-content}
+## 可變內容 {#mutable-content}
 
 在某些情況下，在原始碼控制項中準備內容變更可能會很實用，這樣當環境更新時，Cloud Manager就能部署內容。 例如，為某些根資料夾結構種子或在可編輯的模板中排列更改，以便為那些由應用程式部署更新的元件啟用策略，這可能是合理的。
 
 有兩種策略可描述Cloud Manager將部署到可變儲存庫、可變內容包和重新指向語句的內容。
 
-### 可變內容包{#mutable-content-packages}
+### 可變內容包 {#mutable-content-packages}
 
 資料夾路徑階層、服務使用者和存取控制(ACL)等內容通常會提交至基於主架構的AEM專案。 技術包括從AEM匯出或直接寫入為XML。 在建置和部署程式期間，Cloud Manager會封裝產生的可變內容套件。 可變內容在管道的部署階段期間會安裝3次不同的時間：
 
@@ -165,7 +165,7 @@ Cloud Manager部署應用程式時，會執行這些陳述式，而不受安裝�
 
 above appears to be internal, to confirm with Brian -->
 
-### 可變內容包{#package-manager-oneoffs-for-mutable-content-packages}的包管理器「一次性」
+### 可變動內容包的包管理器「一個」 {#package-manager-oneoffs-for-mutable-content-packages}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
@@ -179,9 +179,9 @@ above appears to be internal, to confirm with Brian -->
 
 透過Cloud Manager安裝的任何內容套件（可變和不可變），都會在AEM Package Manager的使用者介面中顯示為凍結狀態。 無法重新安裝、重建或甚至下載這些軟體包，並將以&#x200B;**&quot;cp2fm&quot;**&#x200B;尾碼列出，表明其安裝由Cloud Manager管理。
 
-### 包括第三方包{#including-third-party}
+### 包括第三方套件 {#including-third-party}
 
-客戶通常會包含來自第三方來源(如Adobe的翻譯合作夥伴)的預先建立套件。 建議將這些包托管在遠程儲存庫中，並在`pom.xml`中引用它們。 公用儲存庫以及具有密碼保護的專用儲存庫都可以這樣做，如[受密碼保護的maven儲存庫](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)中所述。
+客戶通常會包含來自第三方來源(如Adobe的翻譯合作夥伴)的預先建立套件。 建議將這些包托管在遠程儲存庫中，並在`pom.xml`中引用它們。 公用儲存庫以及具有密碼保護的專用儲存庫都可以這樣做，如[受密碼保護的maven儲存庫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)中所述。
 
 如果無法將包儲存在遠程儲存庫中，則客戶可以將其置於基於本地檔案系統的Maven儲存庫中，該儲存庫作為項目的一部分提交到SCM，並由任何依賴它的資源引用。 儲存庫將在以下所示的項目計畫中聲明：
 
@@ -233,7 +233,7 @@ above appears to be internal, to confirm with Brian -->
 ...
 ```
 
-## 滾動部署如何運作{#how-rolling-deployments-work}
+## 滾動部署的運作方式 {#how-rolling-deployments-work}
 
 如同AEM更新，客戶版本也會使用滾動式部署策略進行部署，以在適當的情況下消除製作叢集的停機時間。 事件的一般順序如下所述，其中&#x200B;**Blue**&#x200B;是舊版客戶代碼，**Green**&#x200B;是新版本。 藍色和綠色執行的AEM程式碼版本相同。
 
@@ -261,21 +261,21 @@ above appears to be internal, to confirm with Brian -->
 
 若要使用雲端就緒型AEM快速入門來開發和測試復寫功能，必須搭配「作者/發佈」設定使用傳統復寫功能。 如果AEM Author的UI進入點已針對雲端移除，使用者會前往`http://localhost:4502/etc/replication`進行設定。
 
-## 滾動部署的向後相容代碼{#backwards-compatible-code-for-rolling-deployments}
+## 適用於滾動部署的回溯相容程式碼 {#backwards-compatible-code-for-rolling-deployments}
 
 如上所述，AEM as aCloud Service的滾動式部署策略表示舊版和新版本可能同時運作。 因此，請小心，回溯不相容於舊版AEM仍在運作的程式碼變更。
 
 此外，應測試舊版本在回滾時與新版本所套用的任何新可變內容結構是否相容，因為可變內容並未移除。
 
-### 服務用戶和ACL更改{#service-users-and-acl-changes}
+### 服務用戶和ACL更改 {#service-users-and-acl-changes}
 
-變更服務使用者或存取內容或程式碼所需的ACL，可能會導致舊版AEM發生錯誤，導致過時的服務使用者存取該內容或程式碼。 若要解決此問題，建議您先將變更擴散至至少2個版本，第一個版本先充當橋接器，然後再於後續版本中進行清理。
+變更服務使用者或存取內容或程式碼所需的ACL，可能會導致舊版AEM發生錯誤，導致服務使用者無法存取該內容或程式碼。 若要解決此問題，建議您先將變更擴散至至少2個版本，第一個版本先充當橋接器，然後再於後續版本中進行清理。
 
-### 索引更改{#index-changes}
+### 索引更改 {#index-changes}
 
 如果對索引進行了更改，則Blue版本必須繼續使用其索引，直到其終止，而Green版本則使用其自己修改的索引集。 開發人員應遵循本文](/help/operations/indexing.md)中描述的索引管理技術。[
 
-### 回傳的保守編碼{#conservative-coding-for-rollbacks}
+### 用於回傳的保守編碼 {#conservative-coding-for-rollbacks}
 
 如果在部署後報告或檢測到故障，則可能需要回滾到藍色版本。 最好確保藍色代碼與綠色版本建立的任何新結構相容，因為新結構（任何可變內容內容）將不會回滾。 如果舊程式碼不相容，則需要在後續的客戶版本中套用修正。
 
@@ -313,6 +313,6 @@ above appears to be internal, to confirm with Brian -->
 
 Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager. -->
 
-## 原始碼控制項{#maintenance-tasks-configuration-in-source-control}中的維護任務配置
+## 原始碼控制中的維護任務配置 {#maintenance-tasks-configuration-in-source-control}
 
 維護任務配置必須保留在原始碼控制中，因為&#x200B;**工具>操作**&#x200B;螢幕將不再在雲環境中可用。 這有益於確保更改被有意保留，而不是被重新應用，或許被遺忘。 有關詳細資訊，請參考[維護任務文章](/help/operations/maintenance.md)。
