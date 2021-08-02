@@ -2,14 +2,14 @@
 title: '授予使用者AEM例項的存取權 '
 description: 請參閱本頁面，了解系統管理員如何授與使用者AEM例項的存取權
 exl-id: 9f637030-dbcf-4330-9360-99d6aaea45b8
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-# 授予AEM例項{#accessing-aem-instance}的使用者存取權
+# 授予使用者AEM例項的存取權 {#accessing-aem-instance}
 
 身為系統管理員，請依照下列步驟，授與使用者對AEM例項的存取權：
 
@@ -18,18 +18,18 @@ ht-degree: 0%
    >[!NOTE]
    >您必須是系統管理員或建立環境的使用者，才能在Admin Console中新增使用者。 只有業務所有者或部署管理員角色具有建立環境的權限。 請參閱[Cloud Manager角色](/help/onboarding/what-is-required/user-roles-permissions.md)以深入了解角色和相關權限。 此外，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)以了解環境。
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    或,
 
    從「**環境**」頁中，選擇「**管理** —> **管理訪問**」。
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
 
 1. 在您按一下&#x200B;**管理存取**&#x200B;後，新索引標籤會將您導覽至&#x200B;**Admin Console**，您可在此存取環境的製作例項。
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin-2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin-2.png)
 
 1. 選擇&#x200B;**用戶**&#x200B;頁簽，然後按一下&#x200B;**添加用戶**。
 
