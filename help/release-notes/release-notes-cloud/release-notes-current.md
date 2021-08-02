@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d977ff765accb650daff4c35f2668489454305cd
+source-git-commit: 14dc3b308a839040fdf2efe42d2fa4ce35253df0
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1309'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 查看2021年7月[發行概述](https://video.tv.adobe.com/v/335580)影片，以取得新增功能的摘要。
 
-## Experience ManagerFoundation作為Cloud Service {#foundation}
+## [!DNL Experience Manager] as a  [!DNL Cloud Service] Foundation {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
