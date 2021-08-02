@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 3e3296f2c7cbc5c960560a3a6c380875e2ca64bd
+source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '942'
 ht-degree: 19%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 19%
 
 1. 系統管理員可以[為開發目的授予AEM例項](/help/onboarding/what-is-required/accessing-aem-instance.md)的使用者存取權。
 
-**[取得您的Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**
+**[取得您的Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)**
 
 您需要Adobe ID和系統管理員的協助，才能讓使用者新增至Cloud Manager，以取得其指派的角色。
 
@@ -56,14 +56,14 @@ ht-degree: 19%
 
 **[導覽至Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-現在您已新增為使用者，並獲派至Cloud Manager角色，您可以存取Cloud Manager，以開始使用AEM的雲端歷程。 用戶可以執行各種任務，如[建立程式](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)、[添加環境](/help/implementing/cloud-manager/manage-environments.md)、[訪問Git](/help/implementing/cloud-manager/accessing-git.md)、[配置管道](/help/implementing/cloud-manager/configure-pipeline.md)和[部署代碼](/help/implementing/cloud-manager/deploy-code.md)。
-Cloud Manager是AEM as a Cloud Service的重要一環。 它可讓組織在雲端中自行管理[!DNL Experience Manager]。 其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。使用者介面，您可以設定並啟動CI/CD管道。
+現在您已新增為使用者，並獲派至Cloud Manager角色，您可以存取Cloud Manager，以開始使用AEM的雲端歷程。 使用者可以執行各種工作，例如建立程式、新增環境、存取Git](/help/implementing/cloud-manager/accessing-git.md)、[設定管道](/help/implementing/cloud-manager/configure-pipeline.md)和[部署程式碼](/help/implementing/cloud-manager/deploy-code.md)。
+[Cloud Manager是AEM as a Cloud Service的重要一環。 它可讓組織在雲端中自行管理[!DNL Experience Manager]。 其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。使用者介面，您可以設定並啟動CI/CD管道。
 
 **[授予使用者AEM例項的存取權](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
 請依照本節所述，了解系統管理員或建立環境的使用者如何授予其他使用者對AEM例項的存取權。
 
-## [!DNL Experience Manager as a Cloud Service] 指南  {#aem-guides}
+## [!DNL Experience Manager as a Cloud Service] 指南 {#aem-guides}
 
 | 使用手冊 | 說明 |
 |---|---|
@@ -81,7 +81,7 @@ Cloud Manager是AEM as a Cloud Service的重要一環。 它可讓組織在雲�
 | [操作使用手冊](/help/operations/home.md) | 了解[!DNL Experience Manager as a Cloud Service]的後端操作，例如索引和維護任務。 |
 | [商務使用手冊](/help/commerce-cloud/home.md) | 了解[!DNL Experience Manager as a Cloud Service]上的Commerce Integration Framework。 |
 
-## 其他[!DNL Experience Manager]資源{#other-resources}
+## 其他[!DNL Experience Manager]資源 {#other-resources}
 
 * [近期文件更新](https://helpx.adobe.com/tw/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher 文件](/help/implementing/dispatcher/overview.md)
