@@ -2,9 +2,9 @@
 title: 提交 AEM 連接器
 description: 提交 AEM 連接器
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: eb6aa8741a07e14727b4e74df66b9643936e9231
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 11%
 
 ---
@@ -21,7 +21,7 @@ AEM連接器列於[AdobeExchange](https://partners.adobe.com/exchangeprogram/exp
 有多種選項可讓您將套件納入專案中：
 
 1. 合作夥伴的公用存放庫 — 合作夥伴會將內容套件托管於公開存取的Maven存放庫
-1. 合作夥伴的受密碼保護的儲存庫 — 合作夥伴將將內容包托管在受密碼保護的Maven儲存庫中。 有關說明，請參閱](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)上的[受密碼保護的maven儲存庫。
+1. 合作夥伴的受密碼保護的儲存庫 — 合作夥伴將將內容包托管在受密碼保護的Maven儲存庫中。 有關說明，請參閱受密碼保護的Maven儲存庫。
 1. 套件 — 在此情況下，連接器封裝會包含在客戶的Maven專案本機中。
 
 無論封裝托管於何處，都需如廠商所提供，在pom.xml中將封裝參照為相依性。
