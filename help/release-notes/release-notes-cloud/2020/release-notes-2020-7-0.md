@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版發行說明。'
 description: '[!DNL Adobe Experience Manager] as a 2020.7.0的Cloud Service發行說明。'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 76%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 版發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 版發行說明  {#release-notes}
 
 以下章節概述 Experience Manager as a Cloud Service 2020.7.0 版的一般發行說明。
 
@@ -19,7 +19,7 @@ ht-degree: 76%
 
 ## Adobe Experience Manager Sites as a Cloud Service {#cloud-services-sites}
 
-### 新功能 {#what-is-new-sites}
+### 新增功能 {#what-is-new-sites}
 
 適用於 [!DNL Adobe Target] 和 [!DNL Adobe Analytics] 的 [!DNL Experience Manager] as a Cloud Service 連接器已完成以下強化：
 
@@ -31,7 +31,7 @@ ht-degree: 76%
 
 ## [!DNL Adobe Experience Manager Assets] 作為Cloud Service {#assets}
 
-### [!DNL Assets] {#what-is-new-assets}中的新增功能
+### [!DNL Assets]中的新增功能 {#what-is-new-assets}
 
 * [!DNL Asset Compute Service] 是可擴充的資產處理服務。管理員可以配置[!DNL Experience Manager]以調用使用[!DNL Asset Compute Service]建立的自定義應用程式。 開發人員可使用此服務建立專門的自訂應用程式，以配合複雜的使用案例。 此Web服務可針對不同的檔案類型生成縮略圖、以Adobe檔案格式生成高質量的影像呈現、編碼視頻（將來）、提取元資料、提取全文作為索引的前導，以及通過所有可用的[!DNL Sensei]服務運行資產。 請參閱[使用資產微服務和處理設定檔](/help/assets/asset-microservices-configure-and-use.md)。
 
@@ -43,15 +43,15 @@ ht-degree: 76%
 
 * 在與[!DNL Cloud Manager]中環境相關聯的Git專案中，由客戶建立且部署至`/conf/global`的工作流程模型會自動部署至`/var`，因此可在[!DNL Experience Manager]中使用。 `/libs` 底下經客戶變更的產品工作流程模型則不會自動部署至 `/var`。
 
-### 修正的錯誤{#assets-bugs-fixed}
+### 修正錯誤 {#assets-bugs-fixed}
 
 * 「移動資產」精靈不會如預期般為「集合」中包含的資產載入。 (CQ-4296756)
 * `dam:size`和`dam:sha1`的值會從XMP回寫中排除。 (CQ-4237355)
 * 大量取消發佈資產時， [!DNL Brand Portal]會產生錯誤，指出請求URI太長。 (CQ-4299474)
 
-## Adobe Experience Manager Commerce as aCloud Service{#cloud-services-commerce}
+## Adobe Experience Manager Commerce as aCloud Service {#cloud-services-commerce}
 
-### 新功能 {#what-is-new-commerce}
+### 新增功能 {#what-is-new-commerce}
 
 AEM商務現在可在Cloud Service上使用。
 
@@ -59,7 +59,7 @@ AEM商務現在可在Cloud Service上使用。
 
 ## 核心元件 {#core-components}
 
-### 新功能 {#what-is-new-core-components}
+### 新增功能 {#what-is-new-core-components}
 
 [AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 2.11.0 版現在隨附於 AEM Sites，其中包含：
 
@@ -78,7 +78,7 @@ AEM商務現在可在Cloud Service上使用。
 
 [!UICONTROL Cloud Manager] 2020.7.0 版於 2020 年 7 月 9 日正式發佈。
 
-### 新功能 {#what-is-new-cloud-manager}
+### 新增功能 {#what-is-new-cloud-manager}
 
 * 環境頁面已重新設計。
 
@@ -88,11 +88,11 @@ AEM商務現在可在Cloud Service上使用。
 
 * Cloud Manager 管道現在支援客戶設定變數和機密。
 
-   如需詳細資訊，請參閱[管道變數](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)。
+   如需詳細資訊，請參閱管道變數。
 
 * 現在支援與驗證綁定的專用Maven儲存庫。
 
-* Cloud Manager 建置容器現可支援 Java 8 和 Java 11。如需詳細資訊，請參閱[使用Java 11支援](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 。
+* Cloud Manager 建置容器現可支援 Java 8 和 Java 11。如需詳細資訊，請參閱使用Java 11支援。
 
 ### 錯誤修正 {#bug-fixes-cm}
 
@@ -118,7 +118,7 @@ AEM商務現在可在Cloud Service上使用。
 
 ## Adobe Experience Manager as a Cloud Service 基礎 {#cloud-foundation}
 
-### 新功能 {#what-is-new-foundations}
+### 新增功能 {#what-is-new-foundations}
 
 * [記錄檔可以轉送至 Splunk 帳戶](/help/implementing/developing/introduction/logging.md#splunk-logs)，方便組織運用 Splunk 投資。
 
