@@ -2,7 +2,7 @@
 title: 不同與新增功能 — Adobe Experience Manager作為Cloud Service
 description: 不同與新增功能 — Adobe Experience Manager(AEM)作為Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 10%
@@ -65,7 +65,7 @@ AEM as a Cloud Service 現已具備：
 ![根據多變的使用模式自動調整規模](assets/introduction-04.png "根據多變的使用模式自動調整規模")
 
 
-## AEM更新{#aem-updates}
+## AEM更新 {#aem-updates}
 
 >[!NOTE]
 >如需詳細資訊，請參閱[AEM版本更新](/help/implementing/deploying/aem-version-updates.md)。
@@ -112,7 +112,7 @@ Cloud Manager是：
 
 Cloud Manager已演化為自助入口網站，可在此建立及設定AEM as aCloud Service的主要元件：
 
-* 建立和管理新方案。 有關詳細資訊，請參閱[了解程式和程式類型](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)。
+* 建立和管理新方案。 有關詳細資訊，請參閱[了解程式和程式類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)。
 
 * 在這些方案中建立和管理AEM環境。 如需詳細資訊，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md) 。
 
@@ -161,7 +161,7 @@ Cloud Manager在多個地理區域的資料中心中建立環境，提供全球�
 
 支援AEM as aCloud Service的新架構包含對整體開發人員體驗的一些重要變更。 AEM as aCloud Service的主要目標之一，是讓經驗豐富的客戶(在內部部署或Adobe Managed Services的情境下使用AEM)能盡快移轉至AEM作為Cloud Service，而無須重寫大量自訂程式碼。 然而，可能仍需要一些調整。
 
-### 雲端開發{#aem-as-a-cloud-service-developing-cloud-development}
+### 雲端開發 {#aem-as-a-cloud-service-developing-cloud-development}
 
 若要在AEM as a Cloud Service上執行現有AEM應用程式，請執行下列步驟：
 
@@ -191,7 +191,7 @@ AEM的使用者不再能直接存取Web主控台，因為Web主控台可管理OS
 
 * 服務使用者和使用者群組
 
-### 本地開發{#aem-as-a-cloud-service-developing-local-development}
+### 地方開發 {#aem-as-a-cloud-service-developing-local-development}
 
 為了支援快速的迭代和開發，也可以在AEM外部開發AEM應用程式，作為Cloud Service環境。 為此，開發人員可使用下列成品：
 
@@ -203,7 +203,7 @@ AEM的使用者不再能直接存取Web主控台，因為Web主控台可管理OS
 >
 >請注意，雲端快速入門不允許所有AEM Sites和AEM Assets功能。 它包含簡單的製作環境，可開發及測試大部分的擴充功能。
 
-## 操作和效能{#operations-and-performance}
+## 操作與效能 {#operations-and-performance}
 
 >[!NOTE]
 >
@@ -237,7 +237,7 @@ AEM as aCloud Service的重大變更，是完整整合使用AdobeID來存取製�
 
 * 使用者偏好設定會保留在AEM作為Cloud Service的每個特定例項的本機。
 
-## 編寫用戶介面{#authoring-user-interface}
+## 製作使用者介面 {#authoring-user-interface}
 
 >[!NOTE]
 >
