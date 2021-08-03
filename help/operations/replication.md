@@ -2,9 +2,9 @@
 title: 複寫
 description: 散佈 和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1347'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
 >[!NOTE]
 >
->此方法不會保留狀態，且可擴充性較其他方法低，因此應視為已棄用。 Adobe的建議是改用管理發布或工作流程方法
+>此方法應視為已過時，並將於2021年9月30日或之後移除，因為它不會保留狀態，且可擴充性較其他方法低。 Adobe的建議是改用管理發布或工作流程方法
 
 要執行樹激活：
 
