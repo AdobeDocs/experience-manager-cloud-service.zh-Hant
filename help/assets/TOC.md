@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
+source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 44%
+source-wordcount: '490'
+ht-degree: 43%
 
 ---
 
@@ -58,6 +58,7 @@ ht-degree: 44%
    + [內容片段的遠端GraphQL查詢驗證](content-fragments/graphql-authentication-content-fragments.md)
    + [含內容片段的GraphQL API — 範例內容與查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [連線資產](use-assets-across-connected-assets-instances.md)
+   + [產生Adobe InDesign的FPO轉譯](configure-fpo-renditions.md)
    + [資產報表](asset-reports.md)
    + [階層式中繼資料](cascading-metadata.md)
    + [XMP 中繼資料](xmp-metadata.md)
