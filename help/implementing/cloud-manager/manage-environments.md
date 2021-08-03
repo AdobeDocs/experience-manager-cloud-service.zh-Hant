@@ -2,9 +2,9 @@
 title: 管理環境 — Cloud Service
 description: 管理環境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1618'
 ht-degree: 3%
 
 ---
@@ -74,9 +74,6 @@ ht-degree: 3%
    ![](assets/environment-view-2.png)
 
 1. 從清單中選取任何一個環境，以檢視環境詳細資訊。
-
-   >[!NOTE]
-   >預覽服務將以滾動方式部署到所有程式。 當客戶的計畫啟用預覽服務時，將在產品中收到通知。 如需詳細資訊，請參閱[存取預覽服務](#access-preview-service)一節。
 
    ![](assets/environ-preview1.png)
 
