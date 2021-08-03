@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 資產分析，資產報表
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: def144cecaa7672e7af1807a5157730014c550b2
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 8%
+source-wordcount: '813'
+ht-degree: 7%
 
 ---
 
@@ -67,8 +67,8 @@ Assets Insights會擷取使用者活動詳細資料，例如影像的分級、�
 
 您可以使用前瞻分析檢視同時檢視資料夾內所有資產 **[!UICONTROL 的分數]**。
 
-1. 在「資產」UI中，導覽至包含您要檢視其分析之資產的資料夾。
-1. 按一下工具列中的「配置」選項，然後選擇&#x200B;**[!UICONTROL 前瞻分析視圖]**。
+1. 在「資產」使用者介面中，導覽至包含您要檢視深入分析之資產的資料夾。
+1. 按一下工具列中的&#x200B;**[!UICONTROL Layout]**&#x200B;選項，然後選擇&#x200B;**[!UICONTROL Insights View]**。
 1. 頁面會顯示資產的使用分數。 比較各種資產的評等並得出深入分析。
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -95,7 +95,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. 在[!DNL Experience Manager]中，按一下&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]**。
 
-   ![chlimage_1-72](assets/chlimage_1-72.png)
+   ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. 按一下「 **[!UICONTROL 前瞻分析設定]** 」資訊卡。
 1. 在精靈中，選取資料中心並提供您的認證，包括組織名稱、使用者名稱和共用機密。
@@ -117,6 +117,29 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. 在導覽頁 **[!UICONTROL 面中]** ，按一下 **** 前瞻分析頁面追蹤器卡片。
 1. 按一下&#x200B;**[!UICONTROL 下載]**&#x200B;以下載頁面追蹤器程式碼。
+
+<!--
+Add page tracker code, CQDOC-18045, 30/07/2021
+-->
+下列范常式式碼片段顯示範例網頁中包含的頁面追蹤器程式碼：
+
+```xml
+ <head>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/sitecatalyst/appmeasurement.js"></script>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/foundation/assetinsights/pagetracker.js"></script>
+            <script type="text/javascript">
+                                assetAnalytics.attrTrackable = 'trackable';
+                assetAnalytics.defaultTrackable = false;
+                assetAnalytics.attrAssetID = 'aem-asset-id';
+                assetAnalytics.assetImpressionPollInterval = 200; // interval in millis
+                assetAnalytics.charsLimitForGET = 2000; // bytes
+                assetAnalytics.dispatcher.init("assetstesting","abc.net","bee","list1","eVar3","event8","event7");
+            </script>
+
+ </head>
+```
+
+
 
 <!--
 
