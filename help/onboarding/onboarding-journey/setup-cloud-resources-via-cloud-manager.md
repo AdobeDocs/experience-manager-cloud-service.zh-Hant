@@ -4,9 +4,9 @@ description: 請依照本頁所述了解如何透過Cloud Manager設定雲端資
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
+source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1370'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,21 @@ ht-degree: 0%
 
 ## 導覽至Cloud Manager {#navigate-cloud-manager}
 
-1. *業務擁有者*&#x200B;使用者會收到歡迎電子郵件，歡迎他們開始使用，或如果找不到，請直接前往[Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home)並使用您的Adobe ID登入。
+*業務擁有者*&#x200B;使用者會收到歡迎電子郵件，歡迎他們開始使用，或如果找不到，請直接前往[Adobe Experience Cloud](https://experience.adobe.com)並使用您的Adobe ID登入。
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
+請依照下列步驟導覽至Cloud Manager:
+
+1. 在歡迎電子郵件中，按一下&#x200B;**Get started**，如下圖所示。
+   ![](/help/onboarding/onboarding-journey/assets/get-started-email.png)
+
+1. 您將導覽至Cloud Manager的&#x200B;**方案與產品**&#x200B;頁面。
+
+   >[!IMPORTANT]
+   >或者，您也可以從[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接導覽至Cloud Manager的登入頁面。
+
+此外，您也可以從Adobe Experience Cloud首頁導覽至Cloud Manager的&#x200B;**方案和產品**&#x200B;頁面。 請遵循下列步驟：
+
+1. 直接導覽至[Adobe Experience Cloud](https://experience.adobe.com)並使用您的Adobe ID登入。
 
 1. 從Adobe Experience Cloud首頁，選擇&#x200B;**Experience Manager**。
 
@@ -56,11 +68,37 @@ ht-degree: 0%
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. Cloud Manager登陸頁面隨即顯示，如下圖所示。
+1. 成功登入後，系統會將您導向至Cloud Manager的登陸頁面。
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
+   >[!NOTE]
+   >根據在[!UICONTROL Cloud Manager]中指派的角色和應用程式的狀態，使用[!UICONTROL Cloud Manager] UI時會看到不同的畫面。
 
-1. 確認您已獲派「業務擁有者產品設定檔」。 若要這麼做，請從右上方選取您的設定檔，如下所示。
+   您會看到以下三個選項之一：
+
+   * **當Cloud Manager中沒有程式時**
+
+      如果組織中沒有任何方案，您的登錄頁面會引導您建立第一個方案，如下圖所示。
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+
+   * **當Cloud Manager中已存在程式時**
+
+      如果方案已存在於您的組織中，則您的登錄頁面會引導您新增其他方案，並顯示您所有的現有方案，如下圖所示。
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+
+   * **當程式存在且用戶是系統管理員時**
+
+      如果您的組織中已存在程式，並且您是系統管理員，則您的登錄頁面將顯示&#x200B;**管理訪問**&#x200B;按鈕以及&#x200B;**添加程式**&#x200B;選項，如下圖所示。
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+
+
+
+## 驗證您的用戶角色 {#verify-user-roles}
+
+成功登入Cloud Manager後，請依照下列步驟確認您已獲派業務擁有者產品設定檔：
+
+1. 從右上方選取您的設定檔，如下所示。
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
