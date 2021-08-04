@@ -3,9 +3,9 @@ title: 為Adobe Experience Manager設定OSGi作為Cloud Service
 description: '具有機密值和環境特定值的OSGi設定 '
 feature: 部署
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: b28202a4e133f046b50477c07eb5a37271532c90
+source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
 workflow-type: tm+mt
-source-wordcount: '2927'
+source-wordcount: '2934'
 ht-degree: 0%
 
 ---
@@ -224,7 +224,7 @@ use $[secret:SECRET_VAR_NAME]
 
 >[!NOTE]
 >
->前置詞為`INTERNAL_`的變數名稱會由Adobe保留。 任何以此首碼開頭的客戶設定變數都將被忽略。
+>前置詞為`INTERNAL_`的變數名稱會由Adobe保留。 任何以此首碼開頭的客戶設定變數都將被忽略。 客戶也不得參考這些變數。
 
 ### 預設值 {#default-values}
 
