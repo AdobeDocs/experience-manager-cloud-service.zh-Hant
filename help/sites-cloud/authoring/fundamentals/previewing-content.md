@@ -2,9 +2,9 @@
 title: 預覽內容
 description: 了解如何使用AEM預覽服務在上線前預覽內容。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 78c5649c6b9c04cb459f5730161affeb452c916c
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->「預覽」功能是2021.5.0版的一部分，將在未來幾週逐步推出。
+>若要在2021年8月3日之前建立的環境上啟用預覽功能，請確定環境是AEM 2021.05.5368.20210529T101701Z或更新版本，然後執行客戶起始的管道。
 
 AEM提供網站預覽服務，其設計是讓開發人員和內容作者在到達發佈環境前，先預覽網站的最終體驗，然後才可公開使用。
 
 它有助於預覽原本無法從製作環境看到的頁面體驗，例如頁面轉變和其他僅發佈端內容。
+
+另請參閱[存取預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)。
 
 ## 發佈要預覽的內容 {#publishing-content-to-preview}
 
@@ -40,7 +42,7 @@ AEM提供網站預覽服務，其設計是讓開發人員和內容作者在到�
    https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
    ```
 
-請參閱[管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) ，以取得如何取得環境URL的詳細資訊。
+如需如何取得環境URL的詳細資訊，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)。
 
 也可以使用將agentId參數設定為預覽的[發佈內容樹工作流](/help/operations/replication.md#publish-content-tree-workflow)，或使用[複製API](/help/operations/replication.md#replication-api)並配置為預覽的AgentFilter，來發佈內容以預覽。
 
@@ -67,4 +69,4 @@ AEM提供網站預覽服務，其設計是讓開發人員和內容作者在到�
 
 * 在[開發人員控制台](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)中，選擇&#x200B;**— 所有預覽 —**&#x200B;或名稱中包含&#x200B;**prev**&#x200B;的生產環境
 * 生成預覽實例的相關資訊
-請參閱[管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) ，以取得如何取得環境URL的詳細資訊。
+如需如何取得環境URL的詳細資訊，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)。
