@@ -4,9 +4,9 @@ description: 如果您是開發人員或部署管理員，請依照本頁面了�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '456'
 ht-degree: 3%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 3%
 
 本檔案可協助您的開發人員和部署管理員存取Cloud Manager，並熟悉如何準備學習路徑。
 
-閱讀後，您應：
+閱讀本檔案後，您應：
 
-* 身為開發人員，您應該能了解如何存取和管理Cloud Manager Git
-* 身為部署管理員，您應該能夠了解如何在Cloud Manager中設定管道和部署程式碼
+* 身為開發人員，可了解如何存取和管理Cloud Manager Git
+* 身為部署管理員，您能了解如何在Cloud Manager中設定管道和部署程式碼
 
 ## 簡介 {#introduction}
 
@@ -39,11 +39,13 @@ ht-degree: 3%
 
 ## 管理Git {#manage-git}
 
-若要深入了解此主題，請前往這裡。
+您可以使用Cloud Manager UI中的自助服務Git帳戶管理來存取及管理您的Git存放庫。
+若要深入了解此主題，請參閱[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)。
 
 ## 設定管道 {#setup-pipeline}
 
-若要深入了解此主題，請前往這裡
+您可以從Cloud Manager UI設定生產或非生產管道。
+若要深入了解此主題，請參閱[設定CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)。
 
 ## 下一步 {#whats-next}
 
