@@ -4,9 +4,9 @@ description: 如果您是AEM使用者，請依照本頁面了解取得存取權�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '328'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,8 @@ ht-degree: 3%
 
 ## 下一步 {#whats-next}
 
-您現在可以開始編寫和發佈頁面的學習路徑。 您應該遵循此路徑，接著檢閱AEM使用者的檔案學習路徑。
+您現在可以編寫和發佈AEM頁面。 請前往下方的其他資源區段，以深入了解或尋找更多學習路徑。
+
 
 ## 其他資源 {#additional-resources}
 
