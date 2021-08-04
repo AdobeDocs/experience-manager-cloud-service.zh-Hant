@@ -2,9 +2,9 @@
 title: 導覽至Cloud Manager
 description: 請依照本頁面所述，了解如何導覽至Cloud Manager登陸頁面
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
+source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '489'
 ht-degree: 6%
 
 ---
@@ -21,14 +21,21 @@ Cloud Manager是AEM as a Cloud Service的重要一環。 它可讓組織在雲�
 1. 在歡迎電子郵件中，按一下&#x200B;**Get started**，如下圖所示。
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-   >[!NOTE]
-   >或者，您也可以從[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接導覽至Cloud Manager登入頁面。 根據在[!UICONTROL Cloud Manager]中指派的角色和應用程式的狀態，使用[!UICONTROL Cloud Manager] UI時會看到不同的畫面。 如需詳細資訊，請參閱以下的[Cloud Manager登陸頁面](#cloud-manager-landing)一節。
+
+   >[!IMPORTANT]
+   >或者，您也可以從[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接導覽至Cloud Manager的登入頁面。 請為此頁面加入書籤，以便日後直接導覽至Cloud Manager的登陸頁面。
+
+此外，您也可以從Adobe Experience Cloud首頁導覽至Cloud Manager的&#x200B;**方案和產品**&#x200B;頁面。 請遵循下列步驟：
+
+1. 直接導覽至[Adobe Experience Cloud](https://experience.adobe.com)並使用您的Adobe ID登入。
 
 1. 選擇&#x200B;**Experience Manager**。
    ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. 按一下Cloud Manager卡片中的&#x200B;**Launch**。 成功登入[!UICONTROL Cloud Manager]後，您就可以使用使用者介面(UI)了。
    ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+
+1. 成功登入後，系統會將您導向至Cloud Manager的登陸頁面。
 
 
 ## Cloud Manager登陸頁面 {#cloud-manager-landing}
