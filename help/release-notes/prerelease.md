@@ -1,15 +1,15 @@
 ---
 title: '[!DNL Adobe Experience Manager] 作為Cloud Service發行前管道'
 description: '[!DNL Adobe Experience Manager] 作為Cloud Service發行前管道'
-source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
+exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] 作為Cloud Service發行前管道  {#prerelease-channel}
+# [!DNL Adobe Experience Manager] 作為Cloud Service發行前管道 {#prerelease-channel}
 
 
 ## 簡介 {#introduction}
@@ -20,14 +20,14 @@ ht-degree: 0%
 
 >[！視頻](/help/release-notes/assets/prerelease-overview.mp4)
 
-## 如何啟用發行前{#enable-prerelease}
+## 如何啟用發行前版本 {#enable-prerelease}
 
 搶鮮版功能的體驗方式不同：
 
 * 雲端環境（標準方案開發環境或任何沙箱方案環境類型）
 * 本機SDK
 
-### 雲環境{#cloud-environments}
+### 雲端環境 {#cloud-environments}
 
 若要在雲端開發環境上查看Sites Console的新功能，以及任何專案自訂的結果：
 
@@ -54,7 +54,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 您可以在本機Quickstart SDK的Sites主控台中看到新功能，並讓您的Maven專案參考位於Maven Central的預發行版本`API Jar`，以針對搶鮮版中的新API編碼。 您也可以在本機電腦上透過在發行前模式中啟動一般的Quickstart SDK來查看下列發行前功能：
 
-* 從軟體發佈入口網站下載SDK，並依照[以Cloud ServiceSDK存取AEM](/help/implementing/developing/aem-as-a-cloud-service-sdk.md#accessing-the-aem-as-a-cloud-service-sdk.)所述進行安裝
+* 從軟體發佈入口網站下載SDK，並依照[以Cloud ServiceSDK存取AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)所述進行安裝。
 * 啟動SDK快速入門時，請加入引數`-r prerelease`。
 * 值為&#x200B;*sticky*，因此只能在第一次啟動時選取。 重新安裝SDK以更改命令行選項。
 
