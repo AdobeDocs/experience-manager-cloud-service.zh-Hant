@@ -4,7 +4,7 @@ description: 請參照本頁面，了解如何將團隊成員指派給AEM as a C
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 196af2ab4801b12017063bc2aab59faabdae45f9
+source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -44,11 +44,15 @@ ht-degree: 1%
    >[!NOTE]
    >為了上線，建議您先新增將參與即時工作的使用者，例如管理員、開發人員和內容作者。 您可以繼續上線的其餘部分，而不需新增所有使用者。 上線完成後，您稍後可以擴充至更多使用者。
 
-開始檢閱將團隊成員指派給AEM as a Cloud Service產品設定檔的步驟之前，請務必遵循以下兩個步驟：
 
-1. 登入[Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)。 如需詳細資訊，請參閱登入Admin Console。
+   >[!IMPORTANT]
+   >開始檢閱將團隊成員指派給AEM as a Cloud Service產品設定檔的步驟之前，請務必遵循以下兩個步驟：
+   >
+   >1. 登入[Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)。 如需詳細資訊，請參閱登入Admin Console。
+      >
+      >
+   1. 查看[AEM as a Cloud Service產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)。
 
-1. 查看[AEM as a Cloud Service產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)。
 
 請依照下列步驟，查看來自Adobe Admin Console的Cloud Manager設定檔清單：
 
@@ -69,7 +73,7 @@ ht-degree: 1%
    ![](/help/onboarding/onboarding-journey/assets/cloud-profiles-2.png)
 
 
-## 將團隊成員新增至AEM使用者或AEM管理員產品設定檔 {#add-team-members}
+## 新增團隊成員至AEM使用者或AEM管理員產品設定檔 {#add-team-members}
 
 若要以Cloud Service例項的形式授予AEM存取權，使用者必須屬於兩個產品設定檔`AEM Users`或`AEM Administrators`之一。
 
@@ -78,16 +82,22 @@ ht-degree: 1%
 
 下列步驟必須由同時處於業務所有者角色的系統管理員執行。
 
-1. 從Cloud Manager，導覽至Cloud Manager，並從感興趣的環境內容中選取管理存取按鈕，如下所示：
+1. 從Cloud Manager導覽至您的程式，並從感興趣環境的內容中選取&#x200B;**管理存取**&#x200B;按鈕，如下所示。
 
-1. 按一下「管理存取」後，新的索引標籤會導覽至您可存取環境製作例項的Admin Console。 根據此個人需要授予的權限，選取&#x200B;*AEM Administrators*&#x200B;或&#x200B;*AEM Users*。 進一步了解[AEM as aCloud Service產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)。
+   ![](/help/onboarding/onboarding-journey/assets/add-team1.png)
 
-1. 選擇添加用戶（如下所示），並提交完成添加團隊成員所需的詳細資訊：
+1. 新索引標籤會從您存取環境的製作例項的位置，將您導覽至Adobe Admin Console。 根據此個人需要授予的權限，選取&#x200B;*AEM Administrators*&#x200B;或&#x200B;*AEM Users*。 進一步了解[AEM as aCloud Service產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)。
 
+   ![](/help/onboarding/onboarding-journey/assets/add-team2.png)
 
-1. 如果您有需要存取權之團隊成員的資訊，您將想對所有環境（包括開發、預備和生產）重複執行這些步驟。
+1. 選擇`AEM Administrator`或`AEM User`，然後按一下&#x200B;**添加用戶**，如下所示，並提交必要的詳細資訊以完成添加團隊成員。
+
+   ![](/help/onboarding/onboarding-journey/assets/add-team3.png)
 
    您新增的使用者現在可以存取AEM作為Cloud Service作者服務！
+
+   >[!NOTE]
+   >如果您有需要存取權之團隊成員的資訊，您將想對所有環境（包括開發、預備和生產）重複執行這些步驟。
 
 
 ## 下一步 {#whats-next}
