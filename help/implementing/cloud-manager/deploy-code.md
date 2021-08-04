@@ -2,7 +2,7 @@
 title: 部署程式碼 — Cloud Services
 description: 部署程式碼 — Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 2%
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # 部署程式碼 {#deploy-your-code}
 
-## 在AEM as aCloud Service{#deploying-code-with-cloud-manager}中使用Cloud Manager部署程式碼
+## 在AEM as aCloud Service中使用Cloud Manager部署程式碼 {#deploying-code-with-cloud-manager}
 
 一旦配置了生產管道（儲存庫、環境和測試環境），您就可以部署代碼。
 
@@ -41,7 +41,7 @@ ht-degree: 2%
    「 **舞台部署**」涉及以下步驟：
 
    * 驗證：此步驟可確保管道配置為使用當前可用資源，例如，配置的分支存在，環境可用。
-   * 構建和單元測試：此步驟會執行容器化的建置程式。 如需有關建置環境的詳細資訊，請參閱[建置環境詳細資料](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md)。
+   * 構建和單元測試：此步驟會執行容器化的建置程式。 如需有關建置環境的詳細資訊，請參閱[建置環境詳細資料](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。
    * 代碼掃描：此步驟會評估應用程式程式碼的品質。 如需測試程式的詳細資訊，請參閱[程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)。
    * 生成映像：此步驟包含用來建立影像之程式的記錄檔。 此程式負責將建置步驟產生的內容和Dispatcher套件轉換為Docker影像和Kubernetes設定。
    * 部署至預備
@@ -67,11 +67,11 @@ ht-degree: 2%
 
 
 
-## 部署過程{#deployment-process}
+## 部署過程 {#deployment-process}
 
 所有Cloud Service部署都會依循滾動程式，確保零停機時間。 請參閱[滾動部署如何運作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work)以了解詳細資訊。
 
-### 部署到生產階段{#deployment-production-phase}
+### 部署至生產階段 {#deployment-production-phase}
 
 部署至生產拓撲的程式稍有不同，以將對AEM網站訪客的影響降至最低。
 
