@@ -4,9 +4,9 @@ description: 請參照本頁面，了解如何將團隊成員指派給AEM as a C
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ ht-degree: 1%
 
 ## 下一步 {#whats-next}
 
-您指派給AEM as a Cloud Service產品設定檔的使用者現在已準備好了解如何存取「作者」，以及熟悉AEM as a Cloud Service中的編寫頁面。 您應該遵循此路徑，接著檢閱AEM使用者的檔案學習路徑。
+您指派給AEM as a Cloud Service產品設定檔的使用者現在已準備好了解如何存取「作者」，以及熟悉AEM as a Cloud Service中的編寫頁面。 您應該遵循此路徑，方法是接下來查看文檔「AEM用戶的學習路徑」或「開發人員和部署經理的學習路徑」。
 
 ## 其他資源 {#additional-resources}
 
