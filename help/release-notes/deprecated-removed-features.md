@@ -2,10 +2,10 @@
 title: 過時和移除的功能
 description: 特定於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中已棄用和已移除功能的發行說明。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 8742c4058a5b89a0d6aca0d6e58ed993b01d084d
+source-git-commit: 6a850b03501c899cf5b91fca9012036cad2a78ef
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 38%
+source-wordcount: '550'
+ht-degree: 36%
 
 ---
 
@@ -52,3 +52,11 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | [!DNL Sites] | Design Importer | 此功能已被刪除，因為在運行時無法訪問[!DNL Experience Manager]儲存庫的不可修改部分。 |
 | [!DNL Assets] | [!DNL Assets] 無法與 Marketing Cloud Assets 核心服務和 Creative Cloud 服務共用。 | 若要與[!DNL Adobe Creative Cloud]整合，請使用[Adobe資產連結](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。 |
 | [!DNL Foundation] | 支援Apache Sling資料來源（OSGi套件組合org.apache.sling.datasource）。 | N/A |
+
+## Java API {#java-api}
+
+如需任何已棄用或已移除的Java API，請參閱[本頁](/help/release-notes/deprecated-apis.md)，這些API偶爾會導入。
+
+## OSGI設定 {#osgi-configuration}
+
+請參閱[本文](/help/implementing/deploying/osgi-configuration-api.md)以了解OSGI屬性設定的任何限制，其中有些可能會隨著時間推移而引入。
