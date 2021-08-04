@@ -4,9 +4,9 @@ description: 請依照本頁所述了解如何透過Cloud Manager設定雲端資
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
+source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 1. 您將導覽至Cloud Manager的&#x200B;**方案與產品**&#x200B;頁面。
 
    >[!IMPORTANT]
-   >或者，您也可以從[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接導覽至Cloud Manager的登入頁面。
+   >或者，您也可以從[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接導覽至Cloud Manager的登入頁面。 請為此頁面加入書籤，以便日後直接導覽至Cloud Manager的登陸頁面。
 
 此外，您也可以從Adobe Experience Cloud首頁導覽至Cloud Manager的&#x200B;**方案和產品**&#x200B;頁面。 請遵循下列步驟：
 
@@ -91,7 +91,6 @@ ht-degree: 0%
       如果您的組織中已存在程式，並且您是系統管理員，則您的登錄頁面將顯示&#x200B;**管理訪問**&#x200B;按鈕以及&#x200B;**添加程式**&#x200B;選項，如下圖所示。
 
       ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
-
 
 
 ## 驗證您的用戶角色 {#verify-user-roles}
