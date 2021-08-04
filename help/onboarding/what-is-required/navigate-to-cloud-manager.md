@@ -2,9 +2,9 @@
 title: 導覽至Cloud Manager
 description: 請依照本頁面所述，了解如何導覽至Cloud Manager登陸頁面
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 149776bdd7acce3e00710e50600d9bd1d7cc6b9b
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '506'
 ht-degree: 6%
 
 ---
@@ -66,7 +66,7 @@ Cloud Manager是AEM as a Cloud Service的重要一環。 它可讓組織在雲�
 
 在此處，具有權限的使用者（例如Cloud Manager中的業務擁有者角色）可以選取&#x200B;**新增程式**&#x200B;以啟動[新增程式精靈](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access)。
 
-若要了解如何在Cloud Manager中新增程式，請參閱：
+若要了解如何在Cloud Manager中新增程式，請參閱建立：
 
-* 建立生產計畫
-* 建立沙箱方案
+* [生產計畫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en)
+* [沙箱方案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/creating-sandbox-program.html?lang=en)
