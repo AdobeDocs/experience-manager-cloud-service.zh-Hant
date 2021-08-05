@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 中繼資料
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 8%
+source-wordcount: '1061'
+ht-degree: 7%
 
 ---
 
@@ -101,13 +101,13 @@ ht-degree: 8%
 
 ### 編輯表單項目 {#editing-form-items}
 
-若要編輯表單項目的屬性，請點選/按一下元件，然後在&#x200B;**[!UICONTROL Settings]**&#x200B;標籤中編輯以下屬性的全部或子集。
+若要編輯表單項目的屬性，請點選/按一下元件，然後在&#x200B;**[!UICONTROL Settings]**&#x200B;標籤中編輯以下屬性的全部或子集。 建議您只將一個欄位對應至中繼資料結構中的指定屬性。 否則，系統會挑選對應至屬性的最新新增欄位。
 
 **[!UICONTROL 欄位標籤]**:顯示在資料夾屬性頁面上的元資料屬性的名稱。
 
 **[!UICONTROL 對應至屬性]**:此屬性指定儲存CRX儲存庫中資料夾節點的相對路徑。開頭為&quot;**。/**&quot;，表示路徑位於資料夾的節點下。
 
-以下是此屬性的有效值：
+以下是屬性有效值的範例：
 
 * `./jcr:content/metadata/dc:title`:將值儲存在資料夾的中繼資料節點，作為屬 `dc:title`性。
 
