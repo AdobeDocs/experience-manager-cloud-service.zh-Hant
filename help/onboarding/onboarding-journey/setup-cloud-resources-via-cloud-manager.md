@@ -4,9 +4,9 @@ description: 請依照本頁所述了解如何透過Cloud Manager設定雲端資
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,8 @@ ht-degree: 0%
    >[!IMPORTANT]
    >或者，您也可以從[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接導覽至Cloud Manager的登入頁面。 請為此頁面加入書籤，以便日後直接導覽至Cloud Manager的登陸頁面。
 
+1. 系統會將您導向至Cloud Manager的登陸頁面。 如需詳細資訊，請參閱[檢視Cloud Manager的程式](#viewing-programs)區段。
+
 此外，您也可以從Adobe Experience Cloud首頁導覽至Cloud Manager的&#x200B;**方案和產品**&#x200B;頁面。 請遵循下列步驟：
 
 1. 直接導覽至[Adobe Experience Cloud](https://experience.adobe.com)並使用您的Adobe ID登入。
@@ -68,29 +70,32 @@ ht-degree: 0%
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. 成功登入後，系統會將您導向至Cloud Manager的登陸頁面。
+1. 成功登入後，系統會將您導向至Cloud Manager的登陸頁面。 如需詳細資訊，請參閱[檢視Cloud Manager的程式](#viewing-programs)區段。
 
    >[!NOTE]
    >根據在[!UICONTROL Cloud Manager]中指派的角色和應用程式的狀態，使用[!UICONTROL Cloud Manager] UI時會看到不同的畫面。
 
-   您會看到以下三個選項之一：
+### 在Cloud Manager登陸頁面中檢視程式 {#viewing-programs}
 
-   * **當Cloud Manager中沒有程式時**
+成功登入後，系統會將您導向至Cloud Manager的登陸頁面。 您會看到以下三個選項之一：
 
-      如果組織中沒有任何方案，您的登錄頁面會引導您建立第一個方案，如下圖所示。
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+#### 當Cloud Manager中沒有程式時 {#no-programs}
 
-   * **當Cloud Manager中已存在程式時**
+如果組織中沒有任何方案，您的登錄頁面會引導您建立第一個方案，如下圖所示。
 
-      如果方案已存在於您的組織中，則您的登錄頁面會引導您新增其他方案，並顯示您所有的現有方案，如下圖所示。
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+#### 當Cloud Manager中已存在程式時 {#programs-exist}
 
-   * **當程式存在且用戶是系統管理員時**
+如果方案已存在於您的組織中，則您的登錄頁面會引導您新增其他方案，並顯示您所有的現有方案，如下圖所示。
 
-      如果您的組織中已存在程式，並且您是系統管理員，則您的登錄頁面將顯示&#x200B;**管理訪問**&#x200B;按鈕以及&#x200B;**添加程式**&#x200B;選項，如下圖所示。
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+#### 當程式存在且用戶是系統管理員時 {#programs-exist-sysadmin}
+
+如果您的組織中已存在程式，並且您是系統管理員，則您的登錄頁面將顯示&#x200B;**管理訪問**&#x200B;按鈕以及&#x200B;**添加程式**&#x200B;選項，如下圖所示。
+
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 
 ## 驗證您的用戶角色 {#verify-user-roles}
