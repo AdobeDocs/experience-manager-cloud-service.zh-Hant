@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 中繼資料
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 1d7148e71e5a145a8dc62782e5f4dfb65e2a816b
+source-git-commit: a7da1deb71a7c6ebf9c73b8d33877fb56b73be47
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2594'
 ht-degree: 8%
 
 ---
@@ -105,13 +105,13 @@ ht-degree: 8%
 
 #### 編輯中繼資料元件 {#edit-the-metadata-component}
 
-要編輯表單上元資料元件的屬性，請按一下該元件以在&#x200B;**[!UICONTROL Settings]**&#x200B;頁簽中編輯以下所有屬性或以下屬性的子集。
+要編輯表單上元資料元件的屬性，請按一下該元件以在&#x200B;**[!UICONTROL Settings]**&#x200B;頁簽中編輯以下所有屬性或以下屬性的子集。 建議您只將一個欄位對應至中繼資料結構中的指定屬性。 否則，系統會挑選對應至屬性的最新新增欄位。
 
 **欄位標籤**:資產屬性頁面上顯示的中繼資料屬性名稱。
 
 **對應至屬性**:此屬性會指定資產節點的相對路徑或名稱，資產節點儲存在CRX存放庫中。其開頭為`./`，指出路徑位於資產節點下。
 
-以下是此屬性的有效值：
+以下是屬性的有效值範例：
 
 * `./jcr:content/metadata/dc:title`:將值儲存在資產的中繼資料節點，做為屬性 `dc:title`。
 
