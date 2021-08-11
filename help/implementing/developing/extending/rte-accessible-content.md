@@ -3,7 +3,7 @@ title: 配置RTE以建立可訪問的網頁和網站。
 description: 了解如何設定RTF編輯器，以在 [!DNL Adobe Experience Manager]中建立可存取的網站。
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
@@ -24,7 +24,7 @@ RTE功能可在許多元件中使用。 主要元件為`Text`元件。
 
 ![全螢幕模式的RTE文字元件](assets/rte-toolbar-full-screen-mode.png)
 
-## 配置插件功能{#configuring-the-plugin-features}
+## 設定外掛程式功能 {#configuring-the-plugin-features}
 
 如需設定RTE的指示，請參閱[設定RTF編輯器](rich-text-editor.md)頁面。 文章內容包括：
 
@@ -37,7 +37,7 @@ RTE功能可在許多元件中使用。 主要元件為`Text`元件。
 
 ![CRXDE Lite顯示範例rtePlugin](assets/example-rteplugin-crxde-lite.png)
 
-### 指定RTE選擇欄位{#example-specifying-paragraph-formats-available-in-rte-selection-field}中可用段落格式的示例
+### 指定RTE選擇欄位中可用段落格式的示例 {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
 新的語義塊格式可供選擇。
 
@@ -48,7 +48,7 @@ RTE功能可在許多元件中使用。 主要元件為`Text`元件。
 
 使用段落格式選項在RTE中可用的結構元素，[!DNL Experience Manager]為開發可訪問內容提供了良好的基礎。 內容作者無法使用RTE來設定字型大小、顏色或其他相關屬性的格式，因而無法建立內嵌格式。 相反地，作者可以選取適當的結構元素，例如標題，並使用從樣式選項中選取的全域樣式，以確保簡潔的標籤，以及為使用自己的樣式表和正確結構化內容瀏覽的使用者提供更多選項。
 
-## 使用源編輯功能{#use-of-the-source-edit-feature}
+## 使用源編輯功能 {#use-of-the-source-edit-feature}
 
 在某些情況下，內容作者會發現必須檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE內建立的內容片段可能需要更多標籤，以確保符合WCAG 2.0。這可以透過RTE的[來源edit](rich-text-editor.md#aboutplugins)選項完成。 您可以在`misctools`外掛程式](rich-text-editor.md#aboutplugins)上指定[`sourceedit`功能。
 
@@ -147,6 +147,6 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 
 >[!MORELIKETHIS]
 >
->* [WCAG標準快速指南](/help/onboarding/accessibility/quick-guide-wcag.md)
+>* [WCAG標準快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
 * [如何在Experience Manager中建立可存取的內容](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 
