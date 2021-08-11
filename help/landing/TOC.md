@@ -3,7 +3,7 @@ sub-product: Adobe Experience Manager as a Cloud Service 說明
 user-guide-title: Adobe Experience Manager as a Cloud Service 說明
 feature: 發行資訊
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 58%
@@ -27,3 +27,4 @@ ht-degree: 58%
 + [為 AEM as a Cloud Service 實作應用程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html)
 + [為 AEM as a Cloud Service 實作連接器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/connectors/home.html)
 + [AEM as a Cloud Service 之運作與維護](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/home.html)
+
