@@ -2,14 +2,14 @@
 title: Adobe Experience Manager as a Cloud Service Sites
 description: Adobe Experience Manager as a Cloud Service Sites 自助資源與文件連結
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 85%
 
 ---
 
-# AEM Sites as a Cloud Service {#aem-sites-guide}
+# AEM Sites as a Cloud Service  {#aem-sites-guide}
 
 此頁面提供 Experience Manager as a Cloud Service 上 Sites 的相關自助資源。
 
@@ -51,7 +51,7 @@ ht-degree: 85%
 * [HTL 文件](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
 * [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
 * [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
-* [GDPR 整備](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [GDPR 整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社群論壇](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
