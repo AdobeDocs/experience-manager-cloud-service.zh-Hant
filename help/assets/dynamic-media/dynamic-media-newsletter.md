@@ -4,9 +4,9 @@ description: 'Dynamic Media電子報(依Experience League)是每月電子報。 
 feature: 資產管理
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: af6ff1545c3aee8b67c47e97142419f1fdf0928e
+source-git-commit: 07f7ec3fae8af6739e49d5bce55a980aca391e06
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Dynamic Media電子報(依Experience League區分)旨在協助您快速熟悉Dyn
    * 觀看Dynamic Media Classic的隨需技能建立網路研討會。
    * 從2020線上Adobe Summit檢視Dynamic Media課程。
    * 進一步了解Adobe的免費Dynamic Media Classic稽核。
-   * 客戶成功服務高級計畫經理John Monroe。
+   * 客戶成功服務高級計畫經理Meet `John Monroe`。
 
 * **[2020年2月第2期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -72,7 +72,7 @@ Dynamic Media電子報(依Experience League區分)旨在協助您快速熟悉Dyn
    * 免費稽核，可協助您從Dynamic Media Classic中獲得更多價值。
    * 為Adobe的多媒體客戶創下紀錄的節日購物季。
    * 您的DAM（數位資產管理器）選擇指南可滿足您目前的需求，並為您準備迎接未來多媒體的新功能。
-   * 請見數位媒體專員Mark Dean。
+   * Meet `Mark Dean`，數位媒體專家。
 
 * **[2019年11月總第11期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
@@ -103,7 +103,7 @@ Dynamic Media電子報(依Experience League區分)旨在協助您快速熟悉Dyn
    * 了解Dynamic Media團隊如何協助您為一天的流量高於一般的訪客做準備。
    * 第二次觀看最近兩次技能培養網路研討會的機會。
    * 觀看保護數位資產免遭盜版的隨選網路研討會。
-   * 見見Experience Manager資產高級產品行銷經理Bridget Roman。
+   * 會見`Bridget Roman`,Experience Manager資產高級產品行銷經理。
    * 快速了解Dynamic Media和Dynamic Media Classic的Experience League。
 
 * **[2019年8月08期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
