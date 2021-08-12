@@ -1,56 +1,51 @@
 ---
-title: AEM as aCloud Service中Cloud Manager的發行說明2021.7.0版
-description: AEM as aCloud Service中Cloud Manager的發行說明2021.7.0版
+title: AEM as aCloud Service中Cloud Manager的發行說明2021.8.0版
+description: AEM as aCloud Service中Cloud Manager的發行說明2021.8.0版
 feature: 發行資訊
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 05cd993df7293691a0f8b91e9bde278ec7b7af69
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 4%
+source-wordcount: '289'
+ht-degree: 5%
 
 ---
 
-# Adobe Experience Manager as aCloud Service2021.7.0中的Cloud Manager發行說明 {#release-notes}
+# Adobe Experience Manager as aCloud Service2021.8.0中的Cloud Manager發行說明 {#release-notes}
 
-本頁概述AEM as a 2021.7.0Cloud Service中Cloud Manager的發行說明。
+本頁概述AEM as a 2021.8.0Cloud Service中Cloud Manager的發行說明。
 
 >[!NOTE]
 >若要查看Adobe Experience Manager as aCloud Service的最新發行說明，請按一下[here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)。
 
 ## 發行日期 {#release-date}
 
-AEM as aCloud Service2021.7.0中的Cloud Manager發行日期為2021年7月15日。
-下一版預計於2021年8月12日發行。
+AEM as aCloud Service2021.8.0中的Cloud Manager發行日期為2021年8月12日。
+下一版預計於2021年9月9日發行。
 
 ### 新增功能 {#what-is-new}
 
-* 客戶現在可以將Azul 8和11 JDK用於其Cloud Manager構建進程，並且可以選擇將其中一個JDK用於與工具鏈相容的Maven插件&#x200B;*或*&#x200B;整個Maven進程執行。
+* Cloud Service客戶現在可以在Cloud Manager中檢視「服務等級協定(SLA)」報表。 這將在今後幾個月內逐步提供。
 
-* 傳出輸出IP現在將記錄在建置步驟記錄檔中。
+* IndexType和`IndexDamAssetLucene`質量規則的類型和嚴重性已更改。 這兩個都是Blocker *serverity*&#x200B;的錯誤。
 
-* 執行舊版AEM的預備和生產環境現在會回報&#x200B;**可用更新**&#x200B;狀態。
+* 已引入新的Oak索引品質規則，涵蓋非同步和tika設定。
 
-* 支援的SSL憑證上限已提高至每個程式20個。
+* 將每個程式的SSL憑證上限提高至50個。
 
-* 每個環境可配置的域數上限已增加到500個。
+* 自助服務功能可讓使用者透過Cloud Manager UI建立和管理多個存放庫。
 
-* **管理Git**&#x200B;按鈕已重新命名為&#x200B;**存取Git資訊**，對話方塊也已視覺化重新整理。
+* SonarQube在不必要地閱讀Git歷史資料。 在大型程式碼基底中，這可能會導致不必要的組建效能損失。
+
+* 現在有API可用來使每個管道的Maven相依性快取失效。
 
 * Cloud Manager使用的AEM專案原型版本已更新為28版。
 
 ### 錯誤修正 {#bug-fixes}
 
-* 在某些情況下，將IP允許清單系結至環境時，「預覽」不是可用選項。
+* 最新版本小於目前版本時，不應顯示更新可用狀態。
 
-* 手動導覽至非現有執行的執行詳細資訊頁面時未顯示錯誤，只是無休止的載入畫面。
+* 名稱很長的新組織無法首次上線。
 
-* 達到最大SSL憑證數時顯示的錯誤訊息並無幫助。
+* 有時，當管道因某些原因觸發兩次時，會導致其中一個執行失敗，並出現&#x200B;*無法更新管道執行狀態*&#x200B;錯誤。
 
-* 在某些情況下，**概述**&#x200B;頁面上的管道卡片所顯示的發行版本可能會不一致。
-
-* 添加程式嚮導未正確說明建立後無法更改名稱。
-
-### 已知問題 {#known-issues}
-
-切換使用Azul JDK的客戶應注意，並非所有現有應用程式都會在Azul JDK上編譯，且不會出現錯誤。 強烈建議您在切換前先在本機測試。
 
