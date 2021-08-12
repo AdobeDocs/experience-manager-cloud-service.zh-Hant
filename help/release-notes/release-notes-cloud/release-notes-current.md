@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 14dc3b308a839040fdf2efe42d2fa4ce35253df0
+source-git-commit: 3f16144a95bdb3da08c15f15613031cdd069a977
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1406'
 ht-degree: 2%
 
 ---
@@ -182,6 +182,21 @@ AEM as aCloud Service2021.7.0中的Cloud Manager發行日期為2021年7月15日�
 ### 已知問題 {#known-issues-cm-july}
 
 切換使用Azul JDK的客戶應注意，並非所有現有應用程式都會在Azul JDK上編譯，且不會出現錯誤。 強烈建議您在切換前先在本機測試。
+
+## 內容轉移工具 {#content-transfer-tool}
+
+### 發行日期 {#release-date-ctt-latest}
+
+內容轉移工具1.5.6版的發行日期為2021年8月11日。
+
+### 錯誤修正 {#bug-fixes-ctt}
+
+* 在某些情況下，並非所有使用者都移轉至目標例項。 若要取得此修正CTT v1.5.6，必須在目標AEM上以Cloud Service例項的形式提供aem-ethos-tools 1.2.354或更新版本。
+
+* 在擷取至Publish執行個體期間，已停用&#x200B;**停止擷取**&#x200B;按鈕。 這不是必要的，因為在發佈擷取期間沒有進行單次還原步驟。
+
+* 成功提取後，CTT未清除`/tmp`目錄。 這有時會導致磁碟空間問題。
+
 
 ## Cloud Acceleration Manager {#cam}
 
