@@ -2,7 +2,7 @@
 title: 合規性
 description: 合規性
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: b994725c4af3c108aa7c957c8669181379b6728c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 79%
@@ -15,11 +15,11 @@ ht-degree: 79%
 
 ## 重要文章概覽 {#key-articles}
 
-* [對資料保護與資料隱私權法規的整備](aem-readiness.md)
-* [對資料保護與資料隱私權法規的基礎整備](foundation-readiness.md)
-* [Sites 對資料保護與資料隱私權法規的整備](sites-readiness.md)
-* [網頁協助工具准則](web-accessibility.md)
-* [WCAG 2.1 快速指南](quick-guide-wcag.md)
+* [對資料保護與資料隱私權法規的整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [對資料保護與資料隱私權法規的基礎整備](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
+* [Sites 對資料保護與資料隱私權法規的整備](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+* [網頁協助工具准則](/help/compliance/accessibility/web-accessibility.md)
+* [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
