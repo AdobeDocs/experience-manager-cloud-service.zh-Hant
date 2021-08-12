@@ -3,10 +3,10 @@ title: AEM as aCloud Service中Cloud Manager的發行說明2021.8.0版
 description: AEM as aCloud Service中Cloud Manager的發行說明2021.8.0版
 feature: 發行資訊
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 05cd993df7293691a0f8b91e9bde278ec7b7af69
+source-git-commit: d5e7354cb76369c36ee64866bcf8aa0c148ec472
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 5%
+source-wordcount: '302'
+ht-degree: 4%
 
 ---
 
@@ -25,6 +25,7 @@ AEM as aCloud Service2021.8.0中的Cloud Manager發行日期為2021年8月12日�
 ### 新增功能 {#what-is-new}
 
 * Cloud Service客戶現在可以在Cloud Manager中檢視「服務等級協定(SLA)」報表。 這將在今後幾個月內逐步提供。
+請參閱[SLA報告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html)以了解更多資訊。
 
 * IndexType和`IndexDamAssetLucene`質量規則的類型和嚴重性已更改。 這兩個都是Blocker *serverity*&#x200B;的錯誤。
 
