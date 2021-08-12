@@ -2,9 +2,9 @@
 title: 設定CI/CD管道 — Cloud Services
 description: 設定CI/CD管道 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: bcbb0cc739c3be8e39585dd752af1b1da801a434
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -107,6 +107,35 @@ ht-degree: 0%
 
    ![](assets/configure-pipeline5.png)
 
+### 編輯生產管道 {#editing-prod-pipeline}
+
+您可以從&#x200B;**程式概述**&#x200B;頁面編輯管道設定。
+
+請依照下列步驟編輯已設定的管道：
+
+1. 從&#x200B;**程式概述**&#x200B;頁面導覽至&#x200B;**管道**&#x200B;卡片。
+
+1. 按一下&#x200B;**管道**&#x200B;卡中的&#x200B;**編輯**。
+
+   ![](assets/configure-pipeline/edit-pipeline-1.png)
+
+1. **原始碼**&#x200B;頁簽允許您更新儲存庫。 按一下&#x200B;**存取存放庫資訊**&#x200B;以更新存放庫。
+
+   >[!NOTE]
+   >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos) ，了解如何在Cloud Manager中新增和管理存放庫。
+
+   ![](assets/configure-pipeline/edit-pipeline-2.png)
+
+
+1. **Environments**&#x200B;標籤可讓您更新預備和生產選項。
+
+   ![](assets/configure-pipeline/edit-pipeline-3.png)
+
+1. **體驗稽核**&#x200B;選項可讓您更新或新增頁面。
+
+   ![](assets/configure-pipeline/edit-pipeline-4.png)
+
+1. 編輯管道後，按一下「**儲存**」。
 
 ## 僅限非生產和代碼品質的管道 {#non-production-pipelines}
 
@@ -133,6 +162,22 @@ ht-degree: 0%
    * **建置**  — 導覽至執行頁面，可從該頁面執行管道
    * **存取存放庫資訊**  — 可讓使用者取得存取Cloud Manager Git存放庫所需的資訊
    * **了解更多**  — 導覽至了解CI/CD管道檔案資源。
+
+### 編輯非生產管道 {#editing-nonprod-pipeline}
+
+您可以從&#x200B;**程式概述**&#x200B;頁面編輯管道設定。
+
+請依照下列步驟編輯已設定的非生產管道：
+
+1. 從&#x200B;**程式概述**&#x200B;頁面導覽至&#x200B;**管道**&#x200B;卡片。
+
+1. 選擇&#x200B;**非生產**&#x200B;頁簽，並在選擇所需管道後按一下&#x200B;**編輯**。
+
+   ![](assets/configure-pipeline/non-prod-edit-1.png)
+
+1. 選擇所需的儲存庫，然後按一下&#x200B;**Save**。
+
+   ![](assets/configure-pipeline/non-prod-edit2.png)
 
 ## 後續步驟 {#the-next-steps}
 
