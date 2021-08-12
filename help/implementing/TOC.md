@@ -5,9 +5,9 @@ breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 feature: 開發人員工具
 role: Developer, Architect
-source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
+source-git-commit: a9b81e6bcefc95cac305f8387928cf515939aef0
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1043'
 ht-degree: 36%
 
 ---
@@ -18,8 +18,9 @@ ht-degree: 36%
 + [為 AEM as a Cloud Service 實作應用程式](/help/implementing/home.md)
 + 使用 Cloud Manager {#using-cloud-manager}
    + Cloud Manager {#release-notes-cloud-manager}發行說明
-      + [最新發行說明 (2021.7.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新發行說明 (2021.8.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021年{#2021}
+         + [2021.7.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
          + [2021.6.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
          + [2021.5.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
          + [2021.4.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
@@ -64,6 +65,7 @@ ht-degree: 36%
       + [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [UI測試](/help/implementing/cloud-manager/ui-testing.md)
    + [存取和管理記錄檔](cloud-manager/manage-logs.md)
+   + [SLA報告](cloud-manager/sla-reporting.md)
    + [了解通知](cloud-manager/notifications.md)
    + 管理SSL憑證{#manage-ssl-certificates}
       + [簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -94,7 +96,8 @@ ht-degree: 36%
    + [Cloud Manager常見問題集](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + 管理程式碼 {#managing-code}
    + [Maven 專案版本處理](cloud-manager/project-version-handling.md)
-   + [存取 Git](cloud-manager/accessing-git.md)
+   + [Cloud Manager中的存放庫](cloud-manager/cloud-manager-repositories.md)
+   + [存取儲存庫](cloud-manager/accessing-repos.md)
    + [整合 Git 與 Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [使用多個來源Git存放庫](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
    + [AEM as aCloud Service的企業團隊開發設定](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
