@@ -4,9 +4,9 @@ description: 'Dynamic Media電子報(依Experience League)是每月電子報。 
 feature: 資產管理
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 352b615971329600a82a08c5b5b286877ecac322
+source-git-commit: af6ff1545c3aee8b67c47e97142419f1fdf0928e
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Dynamic Media電子報(依Experience League區分)旨在協助您快速熟悉Dyn
    * 進一步了解Adobe的免費Dynamic Media Classic稽核。
    * 客戶成功服務高級計畫經理John Monroe。
 
-* **[2020年2月第2期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
+* **[2020年2月第2期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
    此問題：
 
