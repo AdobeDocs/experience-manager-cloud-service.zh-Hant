@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1438'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ ht-degree: 1%
 
 ## 支援後置處理工作流程中的工作流程步驟 {#post-processing-workflows-steps}
 
-如果您從舊版[!DNL Experience Manager]升級，可以使用資產微服務來處理資產。 雲端原生資產微服務的設定和使用更簡單。 不支援舊版[!UICONTROL DAM更新資產]工作流程中使用的一些工作流程步驟。 如需支援類別的詳細資訊，請參閱[Java API參考](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)。
+如果您從舊版[!DNL Experience Manager]升級，可以使用資產微服務來處理資產。 雲端原生資產微服務的設定和使用更簡單。 不支援舊版[!UICONTROL DAM更新資產]工作流程中使用的一些工作流程步驟。 有關支援類的詳細資訊，請參閱[Java API參考或Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)。
 
 下列技術工作流程模型會由資產微服務取代，或無法取得支援：
 
