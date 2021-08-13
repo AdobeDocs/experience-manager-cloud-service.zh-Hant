@@ -3,7 +3,7 @@ title: AEM as aCloud Service中Cloud Manager的發行說明2021.8.0版
 description: AEM as aCloud Service中Cloud Manager的發行說明2021.8.0版
 feature: 發行資訊
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: d5e7354cb76369c36ee64866bcf8aa0c148ec472
+source-git-commit: d04194bd83ced844dffc94da35c996d363c5ba30
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 4%
@@ -39,7 +39,7 @@ AEM as aCloud Service2021.8.0中的Cloud Manager發行日期為2021年8月12日�
 
 * 現在有API可用來使每個管道的Maven相依性快取失效。
 
-* Cloud Manager使用的AEM專案原型版本已更新為28版。
+* Cloud Manager使用的AEM專案原型版本已更新為29版。
 
 ### 錯誤修正 {#bug-fixes}
 
