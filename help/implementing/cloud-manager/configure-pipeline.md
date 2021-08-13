@@ -2,7 +2,7 @@
 title: 設定CI/CD管道 — Cloud Services
 description: 設定CI/CD管道 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 5dfe46c6a5cacc3d1d3d863ed5990214d778a1e7
+source-git-commit: 90d75ddd0ace3eff8c3e1cde68208cf0a483ef86
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -177,7 +177,7 @@ ht-degree: 0%
 
 1. 選擇所需的儲存庫和其他必需的更新，然後按一下&#x200B;**Save**。
 
-   ![](assets/configure-pipeline/non-prod-edit2.png)
+   ![](assets/configure-pipeline/edit-nonprodenv.png)
 
 ## 後續步驟 {#the-next-steps}
 
