@@ -4,10 +4,10 @@ description: 從這裡開始，引導您逐步了解AEM強大且有彈性的無�
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 1%
+source-wordcount: '734'
+ht-degree: 2%
 
 ---
 
@@ -66,3 +66,14 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 * If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
 * If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
 -->
+
+## 其他資源 {#additional-resources}
+
+說明檔案歷程會告訴您AEM如何透過提供敘述性，引導您完成複雜、相互關聯的程式和功能，進而解決業務問題。 歷程說明多個功能如何搭配運作以滿足單一業務需求。
+
+因此，這些旅程的設計是獨立的。 但是，其中許多是可以相互關聯的。 請查看這些其他歷程，深入了解AEM強大功能如何搭配運作。
+
+* [AEM無頭式翻譯歷程](/help/journey-headless/translation/overview.md)  — 本檔案歷程可讓您廣泛了解無頭式技術、AEM如何提供無頭式內容，以及如何翻譯內容。
+* [AEM無頭式開發人員歷程](/help/journey-headless/developer/overview.md)  — 從這裡開始，引導您一路探索AEM強大而有彈性的無頭式功能、其功能，以及如何在您的第一個開發專案中運用這些功能。
+* [無頭架構師歷程](/help/journey-headless/architect/overview.md)  — 從這裡開始，介紹Adobe Experience Manager作為Cloud Service的強大、靈活、無頭式功能，以及如何為專案建立內容模型。
+* [AEM as a Cloud Service技術檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  — 如果您已對AEM和無頭式技術有深入了解，建議您直接參閱我們的深入技術檔案。
