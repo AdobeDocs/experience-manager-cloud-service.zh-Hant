@@ -5,9 +5,9 @@ breadcrumb-title: AEM Headless Developer Journey
 user-guide-description: 從這裡開始，引導您逐步了解AEM強大且有彈性的無頭式功能、其功能，以及如何在專案中運用這些功能。
 feature: 開發人員工具
 role: Developer, Architect
-source-git-commit: 0048cd094b24c7ef1fb326c6a7419b700e87df23
+source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
@@ -26,3 +26,11 @@ ht-degree: 1%
    + [如何把它們拼在一起](developer/put-it-all-together.md)
    + [如何與無頭應用程式一起運行](developer/go-live.md)
    + [選用 — 如何使用AEM建立單頁應用程式](developer/create-spa.md)
++ AEM無頭翻譯歷程{#translation}
+   + [了解AEM中的無頭式本地化](translation/overview.md)
+   + [開始使用AEM無頭式本地化](translation/getting-started.md)
+   + [了解無頭式內容，以及如何在AEM中本地化](translation/learn-about.md)
+   + [配置翻譯連接器](translation/configure-connector.md)
+   + [配置翻譯規則](translation/translation-rules.md)
+   + [翻譯內容](translation/translate-content.md)
+   + [發佈翻譯的內容](translation/publish-content.md)
