@@ -1,9 +1,9 @@
 ---
 title: AEM檔案歷程
 description: 檔案歷程在AEM檔案中提供敘述性結構，將複雜和不同的功能結合在一起，以最佳實務方式解決業務目標。 歷程是以AEM初學者為核心而設計，會介紹概念和功能，以達成從A到Z的目標。
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1262'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,8 @@ AEM檔案歷程的主要目標是協助剛接觸AEM的讀者了解系統中有�
 | 歷程 | 說明 |
 |---|---|
 | [無頭式開發人員歷程](/help/journey-headless/developer/overview.md) | 從這裡開始，了解AEM如何支援無頭式開發模型，以及如何讓您的專案從規劃、實作到上線。 |
-| 無頭製作歷程 | 從這裡開始，了解如何在AEM中製作和管理無頭式內容。 |
+| [無頭製作歷程](/help/journey-headless/author/overview.md) | 從這裡開始，引導您逐步了解AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個無頭式專案中建立內容模型。 |
+| [無頭架構師歷程](/help/journey-headless/architect/overview.md) | 從這裡開始，介紹Adobe Experience Manager as aCloud Service的強大、靈活、無頭的功能，以及如何為專案建立內容模型。 |
 | [無頭翻譯歷程](/help/journey-headless/translation/overview.md) | 從這裡開始，了解如何在AEM中設定和管理無頭式翻譯專案。 |
 | AEM入門歷程 | 即將推出！ |
 | AEM Commerce Journey | 即將推出！ |
