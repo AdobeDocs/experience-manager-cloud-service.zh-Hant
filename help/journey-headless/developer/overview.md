@@ -1,15 +1,15 @@
 ---
 title: AEM Headless Developer Journey
 description: 從這裡開始，引導您逐步了解AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個開發專案中運用這些功能。
-source-git-commit: bec1e901e19abc9ae99dbf95878e51c9b000a5ee
+exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
+source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '1081'
 ht-degree: 1%
 
 ---
 
-
-# AEM無頭開發者歷程{#aem-headless-developer-journey}
+# AEM Headless Developer Journey {#aem-headless-developer-journey}
 
 從這裡開始，引導您逐步了解AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個無頭式開發專案中運用這些功能。
 
@@ -25,13 +25,31 @@ ht-degree: 1%
 * 了解AEM無頭功能，以及它們如何共同合作以提供無頭體驗。
 * 能夠採取實作第一個AEM無頭專案的前幾個步驟。
 
+## AEM檔案歷程 {#documentation-journeys}
+
+[說明檔](/help/journey-documentation/home.md) 案記錄將許多不同且可能複雜的主題和功能結合在一起，提供說明來協助讀者(對AEM而言是新手)從頭到尾了解並解決業務問題，同時假設先前主題或AEM知識最少。
+
+說明檔案歷程是根據最佳實務原則而設計，根據Adobe的最新研究、Adobe顧問經驗證的實作經驗，以及客戶專案的意見回饋。
+
+如果您想了解Adobe建議如何透過AEM解決無頭式業務案例，AEM無頭式歷程即為起點。
+
 ## 對象 {#audience}
 
-此歷程專為開發人員角色而設計，從開發人員的角度規劃AEM Headless專案的需求、步驟和方法。 歷程會定義其他角色，開發人員必須與這些角色互動，才能順利完成專案，但歷程的觀點是開發人員的觀點。
+此歷程專為開發人員角色而設計，從開發人員的角度規劃AEM Headless專案的需求、步驟和方法。 歷程會定義開發人員在成功的專案中必須與其互動的其他角色，但歷程的觀點是開發人員的角色。
 
-此歷程中的資訊當然對其他角色有用，但某些資訊對某些角色來說會是多餘的。 請持續關注即將提供的歷程，涵蓋其他角色。
+以下是在此歷程中互動的角色。
 
-## 無頭式開發人員歷程{#the-journey}
+| 角色 | 說明 | 歷程中的角色 |
+|---|---|---|
+| 開發人員 | 具有開發無頭應用程式的經驗，這些應用程式會從不同的來源消費內容 | 鎖定此歷程的受眾 |
+| 內容作者 | 建立和管理無謂傳送的內容 | 內容作者建立開發人員無端提供的內容。 |
+| 管理員 | 管理AEM的基本設定和配置 | 開發人員與管理員合作，以變更開發所需的設定。 |
+| 內容架構師 | 分析必須無謂傳送的資料需求，並定義此資料的結構 | 開發人員與內容架構師合作，了解資料的結構，以及無端傳送資料的需求。 |
+| 翻譯專家 | 定義應翻譯的內容並管理這些工作流程 | 翻譯專員與內容架構師合作，以定義內容的初始組織，並且可能需要與開發人員合作，以滿足任何翻譯特定需求。 |
+
+此歷程中的資訊當然對所有角色都有用，但某些資訊對某些角色可能是多餘的。 請持續關注[即將進行的包含其他角色的歷程。](/help/journey-documentation/home.md#journeys)
+
+## 無頭式開發人員歷程 {#the-journey}
 
 您將在此歷程中探索許多主題。 以下文章提供您AEM中無頭的基礎知識，並連結至詳細的技術檔案。
 
@@ -50,13 +68,21 @@ ht-degree: 1%
 | 8 | [如何與無頭應用程式一起運行](go-live.md) | 了解如何即時部署應用程式，並在Git中取用您的本機程式碼，並移至Cloud Manager Git，以便使用CI/CD管道。 |
 | 9 | [選用 — 如何使用AEM建立單頁應用程式(SPA)](create-spa.md) | 了解AEM無頭功能後，請探索如何結合無頭和無頭傳送，並了解如何使用AEM SPA Editor架構建立可編輯的SPA。 |
 
-## 下一步是什麼{#what-is-next}
+## 下一步 {#what-is-next}
 
 您現在已準備好開始Adobe無頭歷程。 我們鼓勵您繼續前往歷程的下一個部分，並閱讀[了解CMS無頭開發。](learn-about.md)
 
-### 選擇自己的冒險{#choose-your-path}
+### 選擇自己的冒險 {#choose-your-path}
 
 不過，無論您的學習風格如何，Adobe都希望您在開始使用AEM Headless專案時能成功。 所以請考慮這兩個選擇。
 
 * 如果您偏好繼續&#x200B;**了解無頭概念和AEM無頭技術**，您應繼續依建議進行AEM無頭歷程，接下來檢閱檔案[如何將內容模型為AEM內容模型](model-your-content.md)，了解如何在AEM中建立內容結構模型。
 * 如果您偏好透過&#x200B;**學習**，您可以跳至[AEM Headless實作快速入門教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)，透過實作簡單專案以公開AEM Headless內容，直接跳至AEM Headless開發。
+
+## 其他資源 {#additional-resources}
+
+說明檔案歷程會告訴您AEM如何透過提供敘述性，引導您完成複雜、相互關聯的程式和功能，進而解決業務問題。 歷程說明多個功能如何搭配運作以滿足單一業務需求。
+
+因此，這些旅程的設計是獨立的。 但是，其中許多是可以相互關聯的。 請查看這些其他歷程，深入了解AEM強大功能如何搭配運作。
+
+* [AEM無頭式翻譯歷程](/help/journey-headless/translation/overview.md)  — 本檔案歷程可讓您廣泛了解無頭式技術、AEM如何提供無頭式內容，以及如何翻譯內容。
