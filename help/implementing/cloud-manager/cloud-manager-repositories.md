@@ -2,9 +2,9 @@
 title: Cloud Manager儲存庫
 description: Cloud Manager儲存庫
 exl-id: Cloud Manager Repositories
-source-git-commit: d2a8329fff12be6581f2ee2caf7f9764c765d0e6
+source-git-commit: cebc603aab9c558239588f574f52568d05081b34
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Cloud Manager儲存庫 {#cloud-manager-repos}
 
 在Cloud Manager中建立和可用的儲存庫可透過「儲存庫」頁面來檢視和管理。
+
+>[!NOTE]
+>任何公司中所有程式或[Adobe的Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)中的儲存庫都有300個。
 
 ## 添加和管理儲存庫 {#add-manage-repos}
 
@@ -32,6 +35,9 @@ ht-degree: 0%
    ![](assets/repos/repo-1.png)
 
 1. 選擇&#x200B;**保存**。 新建立的存放庫會顯示在表格中，如下所示。
+
+   >[!NOTE]
+   >任何指定管道都有單個&#x200B;*primary*&#x200B;存放庫或分支。 透過[Git子模組支援](#git-submodule-support)，不過建置時可包含許多次要分支。
 
    ![](assets/repos/create-repo3.png)
 
