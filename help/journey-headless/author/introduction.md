@@ -1,9 +1,10 @@
 ---
 title: AEM無頭內容製作歷程
 description: 介紹Adobe Experience Manager as aCloud Service的強大、彈性、無頭式功能，以及如何為專案製作內容。
+index: false
 hide: true
 hidefromtoc: true
-source-git-commit: b860493d92e7886513fe08e3eb6c56bf88ca58c0
+source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 1%
