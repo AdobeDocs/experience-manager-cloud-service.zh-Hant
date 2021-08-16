@@ -2,9 +2,9 @@
 title: Cloud Manager儲存庫
 description: Cloud Manager儲存庫
 exl-id: Cloud Manager Repositories
-source-git-commit: 1f2109731b8efd1c05941b7a7db23e6497257cbf
+source-git-commit: 8a53641745ab2e0cfabdf0b6e13b163aaf6a68bd
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 在Cloud Manager中建立和可用的儲存庫可透過「儲存庫」頁面來檢視和管理。
 
 >[!NOTE]
->任何給定公司或[Adobe的Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)中的所有程式都有300個儲存庫的限制。
+>任何公司（或IMS組織）中所有方案的存放庫都有300個上限。
 
 ## 添加和管理儲存庫 {#add-manage-repos}
 
@@ -34,10 +34,10 @@ ht-degree: 0%
 
    ![](assets/repos/repo-1.png)
 
-1. 選擇&#x200B;**保存**。 新建立的存放庫會顯示在表格中，如下所示。 在Cloud Manager中建立的儲存庫也可供您在新增或編輯管道步驟期間選取。 請參閱[設定CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)以深入了解。
+1. 選擇&#x200B;**保存**。 新建立的存放庫會顯示在表格中，如下所示。
 
    >[!NOTE]
-   >任何指定管道都有單個&#x200B;*primary*&#x200B;存放庫或分支。 透過[Git子模組支援](#git-submodule-support)，不過建置時可包含許多次要分支。
+   >在Cloud Manager中建立的儲存庫也可供您在新增或編輯管道步驟期間選取。 請參閱[設定CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)以深入了解。 任何指定管道都有單個&#x200B;*primary*&#x200B;存放庫或分支。 透過[Git子模組支援](#git-submodule-support)，不過建置時可包含許多次要分支。
 
    ![](assets/repos/create-repo3.png)
 
