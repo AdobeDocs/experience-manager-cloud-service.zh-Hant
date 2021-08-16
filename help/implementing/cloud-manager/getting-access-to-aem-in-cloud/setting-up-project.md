@@ -2,9 +2,9 @@
 title: 項目設定詳細資訊
 description: 項目設定詳細資訊 — Cloud Services
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
+source-git-commit: b9bb9e7b63a53ea1a6ce1e126285bb84c8351083
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '845'
 ht-degree: 7%
 
 ---
@@ -107,7 +107,7 @@ ht-degree: 7%
 ## 受密碼保護的Maven儲存庫支援 {#password-protected-maven-repositories}
 
 >[!NOTE]
->密碼保護的Maven存放庫中的成品使用時應非常謹慎，因為目前透過此機制部署的程式碼並未透過Cloud Manager的品質閘道執行。 因此，它只應用在少數情況下，以及不系結至AEM的程式碼。 建議您同時使用二進位檔來部署Java來源以及整個專案原始碼。
+>密碼保護的Maven存放庫中的成品使用時應非常謹慎，因為目前透過此機制部署的程式碼並未透過Cloud Manager品質閘道中實作的所有品質規則執行。 因此，它只應用在少數情況下，以及不系結至AEM的程式碼。 建議您同時使用二進位檔來部署Java來源以及整個專案原始碼。
 
 若要從Cloud Manager使用受密碼保護的Maven存放庫，請將密碼（以及選擇性的使用者名稱）指定為機密管道變數，然後在Git存放庫中名為`.cloudmanager/maven/settings.xml`的檔案內參照該機密。 此檔案遵循[Maven設定檔案](https://maven.apache.org/settings.html)架構。 當Cloud Manager建置程式開始時，此檔案中的`<servers>`元素將合併至Cloud Manager提供的預設`settings.xml`檔案。 以`adobe`和`cloud-manager`開頭的伺服器ID視為保留，自訂伺服器不應使用。 Cloud Manager不會鏡像符合其中一個前置詞或預設ID `central`的伺服器ID **。**&#x200B;使用此檔案後，將從`<repository>`和/或`<pluginRepository>`檔案內的`pom.xml`元素內引用伺服器ID。 通常，這些`<repository>`和/或`<pluginRepository>`元素會包含在[Cloud Manager特定設定檔](#activating-maven-profiles-in-cloud-manager)中，儘管這並非嚴格必要。
 
