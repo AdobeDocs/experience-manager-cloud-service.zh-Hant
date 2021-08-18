@@ -2,7 +2,7 @@
 title: 整合 Adobe Target
 description: 整合 Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 1%
@@ -67,9 +67,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->當您在AEM作者中定位元件時，元件會向Adobe Target發出一系列伺服器端呼叫，以註冊促銷活動、設定選件及擷取Adobe Target區段（如果已設定）。 不會從AEM發佈至Adobe Target進行伺服器端呼叫。
+>當您在AEM作者中鎖定元件時，元件會對Adobe Target進行一系列伺服器端呼叫，以註冊促銷活動、設定選件及擷取Adobe Target區段（如果已設定）。 不會從AEM發佈至Adobe Target進行伺服器端呼叫。
 
-## 背景資訊源{#background-information-sources}
+## 背景資訊來源 {#background-information-sources}
 
 將AEM as aCloud Service與Adobe Target整合時，需要了解Adobe Target、AEM活動管理和AEM對象管理。 您應熟悉下列資訊：
 
@@ -85,7 +85,4 @@ ht-degree: 1%
 >* 2,000個體驗
 >* 50個量度
 >* 50個報告區段
-
->
-
 
