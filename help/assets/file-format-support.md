@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 資產管理，轉譯
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
+source-git-commit: 0c2c69423a042f6ef5b0dd0a2bdbcacc7103ddae
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '795'
 ht-degree: 8%
 
 ---
@@ -213,12 +213,8 @@ ht-degree: 8%
 | AVI | A/V插播 | XVID、DIVX、HDV、MiniDV(DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3(IV30)、MJPEG、Microsoft Video 1(MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | 奧格夫、奧格 | 奧格 | 蒂奧拉，VP3，狄拉克 | - |
-| MXF | MXF | Sony XDCAM、MPEG-2、MPEG-4、松下DVCPro | - |
-| MTS | AVCHD | H264/AVC | - |
 | MKV | 馬特羅斯卡 | H264/AVC | - |
-| R3D、RM | 紅色原始視頻 | MJPEG 2000 | - |
 | RAM、RM | RealVideo | 不支援 | Real G2(RV20)、Real 8(RV30)、Real 10(RV40) |
-| FLAC | 原生片段 | 免費無損音頻編解碼器 | - |
 | MJ2 | 動作JPEG 2000 | 運動JPEG 2000編解碼器 | - |
 
 ## 音訊格式 {#audio-formats}
