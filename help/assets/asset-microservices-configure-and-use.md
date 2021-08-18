@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute微服務，工作流，資產處理
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 0%
@@ -238,7 +238,7 @@ asset compute服務整合允許Experience Manager使用[!UICONTROL 服務參數]
 
 * 設計工作流程時，請考量您對所有轉譯類型的需求。 如果您預計未來不需要轉譯，請從工作流程移除其建立步驟。 之後無法大量刪除轉譯。 長時間使用[!DNL Experience Manager]後，不適當的轉譯可能會佔用大量儲存空間。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自訂[!DNL Experience Manager]以刪除特定轉譯或刪除資產並再次上傳這些資產。
 * 目前，支援僅限於產生轉譯。 不支援產生新資產。
-* 目前，中繼資料擷取的檔案大小限制約為10 GB。 上傳超大型資產時，有時中繼資料擷取作業會失敗。
+* 目前，中繼資料擷取的檔案大小限制約為15 GB。 上傳超大型資產時，有時中繼資料擷取作業會失敗。
 
 >[!MORELIKETHIS]
 >
