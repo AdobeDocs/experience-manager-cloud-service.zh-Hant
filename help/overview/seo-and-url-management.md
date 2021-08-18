@@ -46,6 +46,7 @@ ht-degree: 100%
    * 在網頁上使用選擇器時，建議使用提供語意值的選取器。
    * 如果使用者無法透過字面理解您的 URL，則搜尋引擎也無法。
    * 例如：
+
       `mybrand.com/products/product-detail.product-category.product-name.html`
 比  更適合 
 `mybrand.com/products/product-detail.1234.html`
@@ -363,8 +364,8 @@ Disallow: /
 >
 >您可以註冊 Sling Servlet，監聽副檔名為 `xml` 的選擇器 `sitemap`。這樣一來，每當結尾如下所示的 URL 受到請求時，Servlet 就會處理請求：
 >    `/<path-to>/page.sitemap.xml`
-接著，您就可以從請求中取得受請求的資源，並使用 JCR API 在內容樹狀結構中從該時間點產生 Sitemap。
-如果您從同一個例項為多個網站提供內容，採用這種方法就能受益。`/content/siteA.sitemap.xml` 的請求會產生 `siteA` Sitemap，而 `/content/siteB.sitemap.xml` 的請求則會產生 `siteB` Sitemap，不需要編寫其他程式碼。
+>接著，您就可以從請求中取得受請求的資源，並使用 JCR API 在內容樹狀結構中從該時間點產生 Sitemap。
+>如果您從同一個例項為多個網站提供內容，採用這種方法就能受益。`/content/siteA.sitemap.xml` 的請求會產生 `siteA` Sitemap，而 `/content/siteB.sitemap.xml` 的請求則會產生 `siteB` Sitemap，不需要編寫其他程式碼。
 
 ### 為舊版 URL 建立 301 重新導向 {#creating-redirects-for-legacy-urls}
 
