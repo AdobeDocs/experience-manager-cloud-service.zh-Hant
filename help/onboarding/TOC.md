@@ -5,9 +5,9 @@ breadcrumb-title: 入門指南
 user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。
 feature: 部署
 role: Architect, Developer
-source-git-commit: e029e0ffc7e8b1177f83354598307e411b756642
+source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '119'
 ht-degree: 47%
 
 ---
@@ -32,8 +32,3 @@ ht-degree: 47%
    + [授予使用者AEM例項的存取權](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + 遷移方法{#migration-methodology}
    + [移轉至Adobe Experience Manager作為Cloud Service](migration-methodology/getting-started.md)
-+ 最佳作法 {#best-practices}
-   + [SEO 和 URL 管理](best-practices/seo-and-url-management.md)
-   + [評估KPI](best-practices/assessing-kpis.md)
-   + [調整KPI](best-practices/aligning-kpis.md)
-   + [選擇正確的團隊](best-practices/choose-right-team.md)
