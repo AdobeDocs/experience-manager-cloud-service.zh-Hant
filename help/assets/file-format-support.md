@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 資產管理，轉譯
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 8%
@@ -227,7 +227,7 @@ ht-degree: 8%
 
 ## 提示和限制 {#limitations-and-tips}
 
-* 目前，中繼資料擷取的檔案大小限制約為10 GB。 上傳超大型資產時，有時中繼資料擷取作業會失敗。
+* 目前，中繼資料擷取的檔案大小限制約為15 GB。 上傳超大型資產時，有時中繼資料擷取作業會失敗。
 
 >[!MORELIKETHIS]
 >
