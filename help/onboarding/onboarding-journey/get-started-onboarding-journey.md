@@ -4,7 +4,7 @@ description: 請依照本頁所述，了解如何開始入門歷程
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
+source-git-commit: 1ce3849cee513d061df0664ca50d400e6cf41a8d
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 開始使用入門程式 {#getting-started}
 
-上線是指定的[系統管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)將AEM設定為貴組織Cloud Service的程式。 這包括初始布建雲端資源，以及根據使用者的工作職責，將使用者指派給適當的角色，之後每個成員都能登入並存取其AEM作為Cloud Service資源。
+上線是指定的[系統管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)將AEM設定為貴組織Cloud Service的程式。 這包括初始布建雲端資源，以及根據使用者的工作職責指派使用者角色。 因此，每個成員都能登入並存取其AEM作為Cloud Service資源。
 
 ## 目標 {#objective}
 
@@ -55,11 +55,11 @@ ht-degree: 0%
 
    ![](/help/onboarding/onboarding-journey/assets/get-started2.png)
 
-1. 在您按一下&#x200B;**使用者**&#x200B;卡片中的&#x200B;**管理員**&#x200B;後，即可在上一步驟中輸入Adobe ID電子郵件、使用者名稱、名字或姓氏以進行搜尋。
+1. 在您按一下&#x200B;**Users**&#x200B;卡片中的&#x200B;**Administrators**&#x200B;後，可以輸入您的Adobe ID電子郵件、使用者名稱、名字或姓氏進行搜尋。
 
    ![](/help/onboarding/onboarding-journey/assets/get-started3.png)
 
-1. 搜尋必須在標示為&#x200B;**ADMIN ROLE**&#x200B;的欄下，以&#x200B;**System**&#x200B;成功找到您的電子郵件記錄，如下所示。 這可確認您是系統管理員。
+1. 搜索必須成功找到您的電子郵件記錄。 此外，**ADMIN ROLE**&#x200B;必須顯示&#x200B;**System**，如下所示。 這可確認您是系統管理員。 這可確認您是系統管理員。
 
    ![](/help/onboarding/onboarding-journey/assets/get-started4.png)
 
