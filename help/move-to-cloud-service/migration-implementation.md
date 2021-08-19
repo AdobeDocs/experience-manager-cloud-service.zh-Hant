@@ -2,10 +2,10 @@
 title: 實作階段
 description: 實作階段
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 89%
+source-wordcount: '943'
+ht-degree: 90%
 
 ---
 
@@ -98,7 +98,7 @@ AEM Maven 專案必須進行某些變更，才能與 AEM as a Cloud Service 相�
 
 請參考[程式碼品質測試](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing)，了解如何編寫測試指令碼。當中會建議您將涵蓋範圍設為至少 50%。
 
-此外，請參考[了解自訂程式碼品質規則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html)，深入了解 Cloud Manager 根據 AEM Engineering 最佳作法建立並執行的自訂程式碼品質規則。
+此外，請參考[了解自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)，深入了解 Cloud Manager 根據 AEM Engineering 最佳作法建立並執行的自訂程式碼品質規則。
 
 使用 Cloud Manager 是將程式碼部署至雲端服務環境的唯一辦法。
 
