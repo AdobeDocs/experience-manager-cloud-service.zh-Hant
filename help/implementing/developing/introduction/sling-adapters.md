@@ -2,9 +2,9 @@
 title: 使用 Sling 介面卡
 description: Sling提供適配器模式，可方便轉換實作可適應介面的物件
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 04767681216ebee845fa6120e3da8db8e105f68f
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2234'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 Node node = resource.adaptTo(Node.class);
 ```
 
-## 使用案例{#use-cases}
+## 使用案例 {#use-cases}
 
 有下列使用案例：
 
@@ -29,13 +29,13 @@ Node node = resource.adaptTo(Node.class);
 
 * 需要傳遞內部上下文對象的對象的快捷方式建立。
 
-   例如，以JCR為基礎的[`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html)保存對請求的[`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)的引用，而許多將根據該請求會話工作的對象（如[`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html)或[`UserManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html)）都需要該引用。
+   例如，以JCR為基礎的[`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html)保存對請求的[`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)的引用，而許多將根據該請求會話工作的對象（如[`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html)或[`UserManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html)）都需要該引用。
 
 * 服務的捷徑。
 
    少見的案例 — `sling.getService()`也簡單。
 
-### Null返回值{#null-return-value}
+### Null返回值 {#null-return-value}
 
 `adaptTo()` 可返回null。
 
@@ -56,7 +56,7 @@ Node node = resource.adaptTo(Node.class);
 
 但是，沒有一般規則 — 物件可以是新例項或現有例項。 這表示您無法依賴任何一種行為。 因此，尤其在`AdapterFactory`內，對象在此情境中可重複使用非常重要。
 
-### 其運作方式{#how-it-works}
+### 運作方式 {#how-it-works}
 
 `Adaptable.adaptTo()`有多種實施方式：
 
