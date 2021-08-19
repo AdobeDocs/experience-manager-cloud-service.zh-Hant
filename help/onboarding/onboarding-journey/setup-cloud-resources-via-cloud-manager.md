@@ -4,16 +4,16 @@ description: 請依照本頁所述了解如何透過Cloud Manager設定雲端資
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
+source-git-commit: 5f599eb877565c65aad3d54af411bd8d40f4580d
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
 
 # 透過Cloud Manager設定雲端資源 {#setup-cloud-resources}
 
-指派給&#x200B;*業務擁有者*&#x200B;角色的系統管理員應存取並登入Cloud Manager。 之後，指派給&#x200B;*業務擁有者*&#x200B;產品設定檔的團隊成員必須登入Cloud Manager並建立雲端程式和環境，才能開始使用您的專家團隊。
+指派給業務擁有者角色的系統管理員應存取並登入Cloud Manager。 之後，指派給業務擁有者產品設定檔的團隊成員必須登入Cloud Manager並建立雲端方案和環境，才能開始使用您的專家團隊。
 
 ## 目標 {#objective}
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 閱讀本節後，您應了解：
 
-* 指派給&#x200B;*業務擁有者*&#x200B;角色的系統管理員必須是第一個存取及登入Cloud Manager的管理員。
+* 指派給業務擁有者角色的系統管理員必須是第一個存取及登入Cloud Manager的管理員。
 * 雲端程式和環境的建立方式。
 
 ## 簡介 {#introduction}
@@ -32,19 +32,17 @@ ht-degree: 0%
 
 ### 先決條件 {#prerequisites}
 
-* 指派給&#x200B;*業務擁有者*&#x200B;角色的系統管理員應存取並登入Cloud Manager。
+* 指派給業務擁有者角色的系統管理員應存取並登入Cloud Manager。
 
 * 了解如何[導覽並登入Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)。
 
 * 請熟悉[Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)。
 
-* 了解建立方案時的考量事項。 請觀看此影片以深入了解。
-
 * 了解Cloud Manager [programs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en)和[environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)的概念
 
 ## 導覽至Cloud Manager {#navigate-cloud-manager}
 
-*業務擁有者*&#x200B;使用者會收到歡迎電子郵件，歡迎他們開始使用，或如果找不到，請直接前往[Adobe Experience Cloud](https://experience.adobe.com)並使用您的Adobe ID登入。
+業務擁有者使用者會收到歡迎電子郵件並附上開始使用的連結，或如果找不到，請直接前往[Adobe Experience Cloud](https://experience.adobe.com)，使用您的Adobe ID登入。
 
 請依照下列步驟導覽至Cloud Manager:
 
@@ -54,7 +52,7 @@ ht-degree: 0%
 1. 您將導覽至Cloud Manager的&#x200B;**方案與產品**&#x200B;頁面。
 
    >[!IMPORTANT]
-   >或者，您也可以從[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接導覽至Cloud Manager的登入頁面。 請為此頁面加入書籤，以便日後直接導覽至Cloud Manager的登陸頁面。
+   >或者，您也可以從[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接導覽至Cloud Manager的登入頁面。 請將此頁面加入書籤，以供日後參考，並協助您直接導覽至Cloud Manager的登陸頁面。
 
 1. 系統會將您導向至Cloud Manager的登陸頁面。 如需詳細資訊，請參閱[檢視Cloud Manager的程式](#viewing-programs)區段。
 
@@ -100,7 +98,7 @@ ht-degree: 0%
 
 ## 驗證您的用戶角色 {#verify-user-roles}
 
-成功登入Cloud Manager後，請依照下列步驟確認您已獲派業務擁有者產品設定檔：
+成功登入Cloud Manager後，請依照下列步驟確認您是否已獲派業務擁有者產品設定檔：
 
 1. 從右上方選取您的設定檔，如下所示。
 
@@ -166,16 +164,16 @@ ht-degree: 0%
 
    此外，請觀看快速[影片](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)教學課程，了解Cloud Manager環境，以及如何將其新增至您的程式。
 
-1. 這會啟動「新增環境」精靈，引導您新增環境。 先新增您的開發環境，以熟悉。 請參閱[新增環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)以了解詳細資訊。
+1. 這會啟動「新增環境」精靈，引導您完成環境新增作業。 先新增您的開發環境，以熟悉精靈。 請參閱[新增環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)以了解詳細資訊。
 
    >[!NOTE]
    >如果您尚未這麼做，現在是將開發人員成員新增至Cloud Manager團隊的最佳時機。 請參閱將使用者新增至開發人員產品設定檔，並遵循概述的步驟。
 
 1. 指派給開發人員產品設定檔的成員可登入Cloud Manager和[管理Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)。
 
-   幹得好！ 現在程式已成功建立，您的Cloud Manager Git可供開發人員存取！
+   幹得好！ 現在您的程式已成功建立，而您的Cloud Manager Git可供開發人員存取！
 
-   恭喜！ 現在，您的雲端程式環境已建立完畢，且您的開發人員已新增至團隊中！
+   恭喜！ 現在，您的雲端方案環境已建立完畢，且您的開發人員已新增至團隊中！
 
 ## 下一步 {#whats-next}
 
