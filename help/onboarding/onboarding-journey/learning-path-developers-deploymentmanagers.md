@@ -4,10 +4,10 @@ description: 如果您是開發人員或部署管理員，請依照本頁面了�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 3%
+source-wordcount: '476'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 ## 目標 {#objective}
 
-本檔案可協助您的開發人員和部署管理員存取Cloud Manager，並熟悉如何準備學習路徑。
+本檔案可協助您的開發人員和部署經理存取Cloud Manager，並熟悉如何為學習路徑做好準備。
 
 閱讀本檔案後，您應：
 
@@ -33,11 +33,13 @@ ht-degree: 3%
 
 ## 先決條件 {#prerequisites}
 
-您的系統管理員已將開發人員和部署經理指派給各自的產品設定檔。 此外，開發人員必須指派給AEM使用者或AEM管理員產品設定檔。\
-雲資源已設定。
-您了解如何導覽及登入Cloud Manager
+開始之前，請確定：
 
-## 管理Git {#manage-git}
+* 您的系統管理員已將開發人員和部署經理指派給各自的產品設定檔。 此外，開發人員必須指派給AEM使用者或AEM管理員產品設定檔。
+* 雲資源已設定。
+* 您了解如何導覽及登入Cloud Manager
+
+## 管理GitHub {#manage-git}
 
 您可以使用Cloud Manager UI中的自助服務Git帳戶管理來存取及管理您的Git存放庫。
 若要深入了解此主題，請參閱[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)。
@@ -49,7 +51,7 @@ ht-degree: 3%
 
 ## 下一步 {#whats-next}
 
-開發人員和部署經理現在已準備好熟悉如何以Cloud Service方式在AEM中開發程式碼。 請前往下方的其他資源區段，以深入了解或尋找更多學習路徑。
+開發人員和部署經理現在已準備好熟悉如何以Cloud Service方式在AEM中開發程式碼。 請前往下方的其他資源區段，以深入了解或尋找更多學習路徑。 若要了解內容作者的學習歷程，請參閱AEM作者的學習路徑。
 
 ## 其他資源 {#additional-resources}
 
