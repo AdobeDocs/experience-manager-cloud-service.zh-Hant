@@ -4,9 +4,9 @@ description: 請參照本頁面，了解如何將團隊成員指派給AEM as a C
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '820'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 簡介 {#introduction}
 
-若要以Cloud Service的形式授予AEM存取權，使用者必須屬於兩個產品設定檔之一，例如`AEM Users`或`AEM Administrators`。 您的團隊成員必須獲得AEM例項的權限，因為管理Cloud Manager的權限不足。 了解更多.
+若要以Cloud Service身分授與AEM的存取權，使用者必須屬於兩個產品設定檔之一： `AEM Users`或`AEM Administrators`。 您的團隊成員必須獲得AEM例項的權限，因為管理Cloud Manager的權限不足。 了解更多.
 
 >[!NOTE]
 >系統管理員指派給AEM User產品設定檔的每位使用者都擁有Cloud Manager的（唯讀）存取權。
