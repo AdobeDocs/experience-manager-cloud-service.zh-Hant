@@ -2,9 +2,8 @@
 title: AEM使用者的學習路徑
 description: 如果您是AEM使用者，請依照本頁面了解取得存取權後的後續步驟
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: e4b0b026e72e3956503966cfc7a57b657501f0f8
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 3%
