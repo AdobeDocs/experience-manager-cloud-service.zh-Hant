@@ -4,7 +4,7 @@ description: 請參照本頁面，了解如何將團隊成員指派給AEM as a C
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
+source-git-commit: f0d7886c0bf88fe42d05a1cdd6eb03b07b165c52
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 1%
