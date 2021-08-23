@@ -3,7 +3,7 @@ title: 入門程式
 description: 請依照本頁所述，了解如何開始入門歷程
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -66,5 +66,5 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-現在，您已登入Admin Console並以系統管理員身分檢查設定檔，接著應檢閱「將團隊成員指派給Cloud Manager產品設定檔」檔案，以繼續上線歷程。
+現在，您已登入Admin Console並以系統管理員身分核取設定檔，您應該繼續上線歷程，方法是下一步檢閱檔案[將團隊成員指派給Cloud Manager產品設定檔](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md)。
 
