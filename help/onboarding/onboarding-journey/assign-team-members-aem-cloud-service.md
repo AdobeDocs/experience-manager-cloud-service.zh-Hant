@@ -3,9 +3,9 @@ title: '將團隊成員指派給AEM作為Cloud Service產品設定檔 '
 description: 請參照本頁面，了解如何將團隊成員指派給AEM as a Cloud Service產品設定檔
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '818'
 ht-degree: 1%
 
 ---
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 ## 下一步 {#whats-next}
 
-您指派給AEM as a Cloud Service產品設定檔的使用者現在已準備好了解如何存取「作者」，以及熟悉AEM as a Cloud Service中的編寫頁面。 您應該遵循此路徑，方法是接下來查看文檔「AEM用戶的學習路徑」或「開發人員和部署經理的學習路徑」。
+您指派給AEM as a Cloud Service產品設定檔的使用者現在已準備好了解如何存取「作者」，以及熟悉AEM as a Cloud Service中的編寫頁面。 您應該遵循此路徑，方法是接下來查看[AEM Users](/help/onboarding/onboarding-journey/learning-path-aem-users.md)或[Developers and Deployment Managers](/help/onboarding/onboarding-journey/learning-path-developers-deploymentmanagers.md)的文檔學習路徑。
 
 ## 其他資源 {#additional-resources}
 
