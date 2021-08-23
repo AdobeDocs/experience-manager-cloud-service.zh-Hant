@@ -3,7 +3,7 @@ title: 入門歷程
 description: 請依照本頁所述，了解如何開始入門歷程
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 47524cd63e0592f20818a1918423fdaf45970115
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 2%
@@ -64,4 +64,4 @@ ht-degree: 2%
 
 ## 下一步 {#what-is-next}
 
-您現在已準備好開始使用入門歷程。 建議您繼續前往歷程的下一個部分，並閱讀入門程式快速入門一文。
+您現在已準備好開始使用入門歷程。 建議您繼續前往歷程的下一個部分，並閱讀[開始使用入門程式](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md)一文。
