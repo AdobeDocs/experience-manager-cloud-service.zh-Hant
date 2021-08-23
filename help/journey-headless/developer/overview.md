@@ -2,10 +2,10 @@
 title: AEM Headless Developer Journey
 description: 從這裡開始，引導您逐步了解AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個開發專案中運用這些功能。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: d7d647e2114ed808ad29ed0802d838d257a9df03
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 2%
+source-wordcount: '1252'
+ht-degree: 1%
 
 ---
 
@@ -32,6 +32,10 @@ ht-degree: 2%
 說明檔案歷程是根據最佳實務原則而設計，根據Adobe的最新研究、Adobe顧問經驗證的實作經驗，以及客戶專案的意見回饋。
 
 如果您想了解Adobe建議如何透過AEM解決無頭式業務案例，AEM無頭式歷程即為起點。
+
+>[!TIP]
+>
+> 如果您偏好透過&#x200B;**學習**，而且在技術上有傾向，請造訪AEM無頭教學課程，這些教學課程由API和架構組織，可在本檔案結尾的[其他資源區段](#additional-resources)中取得。
 
 ## 對象 {#audience}
 
@@ -85,6 +89,7 @@ ht-degree: 2%
 
 因此，這些旅程的設計是獨立的。 但是，其中許多是可以相互關聯的。 請查看這些其他歷程，深入了解AEM強大功能如何搭配運作。
 
+* [AEM無頭教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 如果您偏好透過執行學習，且技術上傾向，請利用我們由API和架構組織的實作教學課程，探索建立和使用AEM無頭上建置的應用程式。
 * [AEM無頭式翻譯歷程](/help/journey-headless/translation/overview.md)  — 本檔案歷程可讓您廣泛了解無頭式技術、AEM如何提供無頭式內容，以及如何翻譯內容。
 * [無頭製作歷程](/help/journey-headless/author/overview.md)  — 從這裡開始，引導您一路探索AEM強大而有彈性的無頭式功能、其功能，以及如何在您的第一個無頭式專案中建立內容模型。
 * [無頭架構師歷程](/help/journey-headless/architect/overview.md)  — 從這裡開始，介紹Adobe Experience Manager作為Cloud Service的強大、靈活、無頭式功能，以及如何為專案建立內容模型。
