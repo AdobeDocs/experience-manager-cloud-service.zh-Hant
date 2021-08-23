@@ -4,10 +4,10 @@ description: 請依照本頁所述，了解如何開始入門歷程
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ec7a48165a5e1a30026b41a8cf1d63457ab922d
+source-git-commit: ae7b9f45b0a50bf6816c85934997c7562718c2be
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 1%
+source-wordcount: '834'
+ht-degree: 2%
 
 ---
 
@@ -36,6 +36,17 @@ ht-degree: 1%
 以下說明入門歷程，並在以下章節詳細說明歷程的每個步驟。
 
 ![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
+
+此歷程專為系統管理員角色而設計，列出需求、步驟和方法。 歷程會定義系統管理員為了成功的專案必須與其互動的其他角色，但歷程的觀點是管理員。
+
+以下是在此歷程中互動的角色。
+
+| 角色 | 說明 | 歷程中的角色 |
+|---|---|---|
+| 系統管理員 | 提供雲資源的初始配置，並根據其作業責任為用戶分配適當的角色，然後每個成員都能以Cloud Service資源的形式登錄和訪問其AEM。 | 管理其使用者的所有方面（從存取到權限）。 |
+| AEM 作者 | 建立並檢閱內容(這可以是數種類型；例如頁面、資產、出版物)，再發佈到您的網站。 | 獲得權限後，即可開始其自己的部署管理員歷程。 |
+| 開發人員 | 有開發AEM應用程式的經驗，這些應用程式會使用來自不同來源的內容 | 取得權限後，即可開始自己的開發人員歷程 |
+| 部署管理員 | 新增或更新環境、執行任何管道，以及將程式碼部署至AEM環境或程式碼品質。 | 獲得權限後，即可開始其自己的部署管理員歷程。 |
 
 ## 探索入門歷程 {#exploring-onboarding-journey}
 
