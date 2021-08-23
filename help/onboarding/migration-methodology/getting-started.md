@@ -2,9 +2,9 @@
 title: 移轉至Experience Manager作為Cloud Service
 description: 移轉至Experience Manager作為Cloud Service
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: c5b98c25ec8999c36e2aa44266ca42150c3b2906
+source-git-commit: 73c414ed636fea48c4c79a02e71d99fa8d16878f
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2103'
 ht-degree: 10%
 
 ---
@@ -79,7 +79,7 @@ Cloud Service將Adobe Experience Manager的豐富現成可用功能和擴充性�
    * [備份和還原](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en)
 
 >[!TIP]
-> 請參閱有關如何[將WKND部署到Experience Manager Cloud Service的教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html?lang=en)
+> 請參閱有關如何[將WKND部署到Experience Manager Cloud Service的教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ### 說明和資源
 
