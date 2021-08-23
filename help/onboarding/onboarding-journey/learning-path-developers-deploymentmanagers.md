@@ -3,7 +3,7 @@ title: 開發人員和部署經理的學習路徑
 description: 如果您是開發人員或部署管理員，請依照本頁面了解取得存取權後的後續步驟
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 2%
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 ## 下一步 {#whats-next}
 
-開發人員和部署經理現在已準備好熟悉如何以Cloud Service方式在AEM中開發程式碼。 請前往下方的其他資源區段，以深入了解或尋找更多學習路徑。 若要了解內容作者的學習歷程，請參閱AEM作者的學習路徑。
+開發人員和部署經理現在已準備好熟悉如何以Cloud Service方式在AEM中開發程式碼。 請前往下方的其他資源區段，以深入了解或尋找更多學習路徑。 若要了解內容作者的學習歷程，請參閱[AEM作者的學習路徑](/help/onboarding/onboarding-journey/learning-path-aem-users.md)。
 
 ## 其他資源 {#additional-resources}
 
