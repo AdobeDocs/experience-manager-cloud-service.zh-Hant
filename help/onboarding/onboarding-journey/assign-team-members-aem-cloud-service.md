@@ -2,9 +2,8 @@
 title: '將團隊成員指派給AEM作為Cloud Service產品設定檔 '
 description: 請參照本頁面，了解如何將團隊成員指派給AEM as a Cloud Service產品設定檔
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: f0d7886c0bf88fe42d05a1cdd6eb03b07b165c52
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 1%
