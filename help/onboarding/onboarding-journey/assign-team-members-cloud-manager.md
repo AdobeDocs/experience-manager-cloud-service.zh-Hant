@@ -2,9 +2,8 @@
 title: '將團隊成員指派給Cloud Manager產品設定檔 '
 description: 請詳閱本頁，了解如何將團隊成員指派給Cloud Manager產品設定檔
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: 00f1611b46e0f325802f3ed4bb2d96f8fcaf8535
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
