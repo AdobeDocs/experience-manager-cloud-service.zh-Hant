@@ -4,10 +4,10 @@ description: 從這裡開始，引導您逐步了解AEM強大且有彈性的無�
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: 0d7d1150e0156f08f4289054e8fb626713c7bc79
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 2%
+source-wordcount: '773'
+ht-degree: 1%
 
 ---
 
@@ -77,3 +77,4 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 * [AEM無頭式開發人員歷程](/help/journey-headless/developer/overview.md)  — 從這裡開始，引導您一路探索AEM強大而有彈性的無頭式功能、其功能，以及如何在您的第一個開發專案中運用這些功能。
 * [無頭架構師歷程](/help/journey-headless/architect/overview.md)  — 從這裡開始，介紹Adobe Experience Manager作為Cloud Service的強大、靈活、無頭式功能，以及如何為專案建立內容模型。
 * [AEM as a Cloud Service技術檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  — 如果您已對AEM和無頭式技術有深入了解，建議您直接參閱我們的深入技術檔案。
+* [AEM無頭教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 如果您偏好透過執行學習，且在技術上有傾向，請利用我們的實作教學課程，由API和架構組織，探索建立和使用AEM無頭上建置的應用程式。
