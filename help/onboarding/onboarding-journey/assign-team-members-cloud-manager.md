@@ -3,7 +3,7 @@ title: '將團隊成員指派給Cloud Manager產品設定檔 '
 description: 請詳閱本頁，了解如何將團隊成員指派給Cloud Manager產品設定檔
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
@@ -157,7 +157,7 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-您已經了解了三種不同的Cloud Manager產品設定檔，例如業務擁有者、部署經理和開發人員。 接下來，您將團隊成員指派給Cloud Manager產品設定檔，例如業務擁有者、部署管理員和開發人員。 您現在已準備好繼續入門歷程，接下來請檢閱檔案「透過Cloud Manager設定雲端資源」 ，以便了解：
+您已經了解了三種不同的Cloud Manager產品設定檔，例如業務擁有者、部署經理和開發人員。 接下來，您將團隊成員指派給Cloud Manager產品設定檔，例如業務擁有者、部署管理員和開發人員。 您現在已準備好繼續入門歷程，接下來請檢閱檔案[透過Cloud Manager](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md)設定雲端資源，以便了解：
 
 1. 作為分配給&#x200B;*業務所有者*&#x200B;角色的系統管理員，您必須訪問並登錄Cloud Manager。
 
