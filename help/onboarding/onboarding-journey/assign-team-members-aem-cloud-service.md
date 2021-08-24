@@ -3,10 +3,10 @@ title: '將團隊成員指派給AEM作為Cloud Service產品設定檔 '
 description: 請參照本頁面，了解如何將團隊成員指派給AEM as a Cloud Service產品設定檔
 hide: true
 index: false
-source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 1%
+source-wordcount: '833'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## 簡介 {#introduction}
 
-若要以Cloud Service身分授與AEM的存取權，使用者必須屬於兩個產品設定檔之一： `AEM Users`或`AEM Administrators`。 您的團隊成員必須獲得AEM例項的權限，因為管理Cloud Manager的權限不足。 了解更多.
+若要以Cloud Service身分授與AEM的存取權，使用者必須屬於兩個產品設定檔之一： `AEM Users`或`AEM Administrators`。 您的團隊成員必須獲得AEM例項的權限，因為管理Cloud Manager的權限不足。
 
 >[!NOTE]
 >系統管理員指派給AEM User產品設定檔的每位使用者都擁有Cloud Manager的（唯讀）存取權。
@@ -85,7 +85,7 @@ ht-degree: 1%
 
    ![](/help/onboarding/onboarding-journey/assets/add-team1.png)
 
-1. 新索引標籤會從您存取環境的製作例項的位置，將您導覽至Adobe Admin Console。 根據此個人需要授予的權限，選取&#x200B;*AEM Administrators*&#x200B;或&#x200B;*AEM Users*。 進一步了解[AEM as aCloud Service產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)。
+1. 新索引標籤會從您存取環境的製作例項的位置，將您導覽至Adobe Admin Console。 根據此個人需要授予的權限，選取&#x200B;**AEM Administrators**&#x200B;或&#x200B;**AEM Users**。 進一步了解[AEM as aCloud Service產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)。
 
    ![](/help/onboarding/onboarding-journey/assets/add-team2.png)
 
@@ -105,5 +105,6 @@ ht-degree: 1%
 
 ## 其他資源 {#additional-resources}
 
+* [在 Admin Console 中管理產品和使用者存取權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console)
 * [設定AEM存取權](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en)
 * [製作頁面的快速入門手冊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
