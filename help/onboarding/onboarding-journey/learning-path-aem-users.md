@@ -3,10 +3,10 @@ title: AEM使用者的學習路徑
 description: 如果您是AEM使用者，請依照本頁面了解取得存取權後的後續步驟
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 3%
+source-wordcount: '383'
+ht-degree: 2%
 
 ---
 
@@ -34,11 +34,24 @@ ht-degree: 3%
 
 ## 登入作者 {#login-author}
 
-若要存取「作者」，需執行下列步驟：
+請依照下列步驟存取作者：
 
-1. 請依照下列步驟導覽至Cloud Manager。 或者，您也可以直接前往Cloud Manager登入。
+1. 直接導覽至[Adobe Experience Cloud](https://experience.adobe.com)並使用您的Adobe ID登入。
+
+1. 從Adobe Experience Cloud首頁，選擇&#x200B;**Experience Manager**。
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
+
+1. 這會帶您前往AEM首頁。 從這裡啟動&#x200B;**Cloud Manager** 。
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
+
+   >[!IMPORTANT]
+   >或者，您也可以從[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接導覽至Cloud Manager的登入頁面。 請將此頁面加入書籤，以供日後參考，並協助您直接導覽至Cloud Manager的登陸頁面。
 
 1. 在Cloud Manager的&#x200B;**概述**&#x200B;頁面，按一下&#x200B;**環境**&#x200B;卡片中的製作連結。
+
+   ![](/help/onboarding/onboarding-journey/assets/author-environ.png)
 
 1. 這會開啟一個新標籤，讓您可在其中使用Adobe ID登入製作環境。
 
