@@ -3,9 +3,9 @@ title: 透過Cloud Manager設定雲端資源
 description: 請依照本頁所述了解如何透過Cloud Manager設定雲端資源
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## 導覽至Cloud Manager {#navigate-cloud-manager}
 
-業務擁有者使用者會收到歡迎電子郵件並附上開始使用的連結，或如果找不到，請直接前往[Adobe Experience Cloud](https://experience.adobe.com)，使用您的Adobe ID登入。
+業務擁有者使用者會收到歡迎電子郵件，內含要開始使用的連結，或如果找不到連結，請使用您的Adobe ID登入，直接存取[Cloud Manager](https://my.cloudmanager.adobe.com/)。
 
 請依照下列步驟導覽至Cloud Manager:
 
