@@ -3,9 +3,9 @@ title: 開發人員和部署經理的學習路徑
 description: 如果您是開發人員或部署管理員，請依照本頁面了解取得存取權後的後續步驟
 hide: true
 index: false
-source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '467'
 ht-degree: 2%
 
 ---
@@ -68,9 +68,3 @@ ht-degree: 2%
 
 * [開發人員專用AEM SPA編輯器快速入門](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
-### Experience League課程 {#experience-league-courses}
-
-* 傳統網站
-* SPA Editor
-* 無頭
-* 商務
