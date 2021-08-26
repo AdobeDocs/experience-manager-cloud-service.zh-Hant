@@ -1,9 +1,9 @@
 ---
 title: 在Screens中建立專案作為Cloud Service
 description: 本頁面說明如何在Screens中以Cloud Service形式建立專案。
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: d9d38f5949c9590ae68276452eea28044c7e5155
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 1. 導覽至「Screens內容提供者」。
 
    >[!NOTE]
-   >請參閱[使用螢幕內容提供者] ，了解如何存取螢幕內容提供者以建立您的專案。
+   >請參閱[使用螢幕內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) ，了解如何存取螢幕內容提供者以建立您的專案。
 
 1. 按一下動作列右上角的&#x200B;**建立螢幕專案** 。
 
