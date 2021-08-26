@@ -1,14 +1,14 @@
 ---
-sub-product: 轉移至 AEM as a Cloud Service
-user-guide-title: 轉移至 AEM as a Cloud Service
+sub-product: Move to AEM as a Cloud Service
+user-guide-title: '轉移至 AEM as a Cloud Service '
 breadcrumb-title: 移轉指南
 user-guide-description: 了解轉換至雲端服務的過程。
-feature: 部署
+feature: Deploying
 role: Architect, Developer
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: f193c4e81b9b16d07e7ccff6c2f9705b7234f80b
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 53%
+source-wordcount: '130'
+ht-degree: 46%
 
 ---
 
@@ -47,3 +47,4 @@ ht-degree: 53%
    + [資產工作流程移轉](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher 轉換工具](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [AEM 現代化工具](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
++ [移轉指南以Experience Manager為合作夥伴的Cloud Service](/help/move-to-cloud-service/getting-started.md)
