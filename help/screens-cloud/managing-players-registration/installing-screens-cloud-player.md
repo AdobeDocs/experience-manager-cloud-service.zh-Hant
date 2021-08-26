@@ -1,9 +1,9 @@
 ---
 title: 在螢幕中安裝和設定播放器作為Cloud Service
 description: 本頁面說明如何在Screens中安裝和設定播放器，作為Cloud Service。
-source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
+source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 1%
 
 ---
@@ -49,11 +49,11 @@ ht-degree: 1%
 
 AEM Screens播放器中的基本播放監控可讓您：
 
-* 遠程監視播放器是否正確播放內容
+* 如果播放器正確播放內容，則遠程監視。
 
-* 改善欄位中空白畫面或中斷體驗的再活動性
+* 改善欄位中空白畫面或體驗損毀的反應性。
 
-* 降低向使用者顯示中斷體驗的風險
+* 降低向使用者顯示中斷體驗的風險。
 
 ### 了解屬性 {#understand-properties}
 
@@ -78,11 +78,11 @@ AEM Screens播放器中的基本播放監控可讓您：
 
 以下列出基本播放監控的幾項限制：
 
-* 由於播放器向伺服器報告其自己的播放狀態，因此需要使用中的連線。
+* 播放器會向伺服器報告自己的播放狀態，因此需要使用中的連線。
 
 * 檢查GPU的`isContentRendering`屬性當前需要大量資源，預設情況下將啟用，並且需要從播放器首選項中明確選擇加入。 建議不要將其與影片搭配使用。
 
-* 支援序列通道。
+* 序列通道支援此功能。
 
 ## 下一步 {#whats-next}
 
