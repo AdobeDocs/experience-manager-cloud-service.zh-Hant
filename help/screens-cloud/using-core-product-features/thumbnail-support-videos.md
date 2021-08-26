@@ -3,9 +3,9 @@ title: 螢幕中視訊的縮圖支援作為Cloud Service
 description: 本頁面說明如何將螢幕中的視訊縮圖支援新增為Cloud Service。
 hide: true
 index: false
-source-git-commit: ea96e811c0164e3cc7d323e734c1617d3c0e9308
+source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,21 @@ ht-degree: 0%
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. 編輯視訊元件屬性。
+1. 選取影片，然後按一下&#x200B;*扳手*&#x200B;圖示以開啟影片屬性。
 
-1. 從資產選擇器拖曳影像至縮圖拖放區域。
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. 預覽通道。
+1. 將開啟&#x200B;**Video**&#x200B;對話框，您將在其中查看&#x200B;**縮圖**&#x200B;拖放區域。
 
-1. 如果元件上設定了視訊，則視訊會播放。 如果沒有，且已設定縮圖，則會播放縮圖。 否則，系統會將元件視為未設定，且會略過
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+
+1. 將影像從資產選擇器拖放至&#x200B;**縮圖**&#x200B;拖放區域，然後按一下&#x200B;**完成**。
+
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+
+1. 按一下&#x200B;**預覽**。
+
+1. 如果元件上設定了視訊，則視訊會播放。 如果沒有，且已設定縮圖，則會播放縮圖。 否則，系統會將元件視為未設定，且會略過。
 
 ## 在影片中使用縮圖時支援的使用案例 {#understand-use-case}
 
