@@ -1,12 +1,12 @@
 ---
 title: 內容片段模型
 description: 了解內容片段模型如何成為AEM中無頭內容的基礎，以及如何使用結構化內容建立內容片段。
-feature: 內容片段
+feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f2ddd93d9a6f8e17dc0eb75ee5adab4354249091
+source-git-commit: c82fdc8245846c4fa5daff898aec109579acc2fc
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2256'
 ht-degree: 7%
 
 ---
@@ -213,7 +213,6 @@ UniqueContent（針對特定欄位）在從目前模型建立的所有內容片�
 AEM對以下項目提供重複防護：
 * 內容參考
 這會防止使用者新增參考至目前的片段。 這可能會導致空白的片段參考選擇器對話方塊。
-
 * GraphQL中的片段參考
 如果您建立深層查詢，並傳回彼此參照的多個內容片段，則第一次出現時會傳回null。
 
@@ -284,6 +283,16 @@ type CompanyModel {
 >[!NOTE]
 已建立重複保護機制。 它禁止使用者在片段參考中選取目前的內容片段。 這可能會導致空白的片段參考選擇器對話方塊。
 GraphQL中的片段參考也提供週期性保護。 如果您在互相參照的兩個內容片段間建立深層查詢，則會傳回null。
+
+## 內容片段模型 — 屬性 {#content-fragment-model-properties}
+
+您可以編輯內容片段模型的&#x200B;**屬性**:
+
+* **基本**
+   * **模型標題**
+   * **標記**
+   * **說明**
+   * **上傳影像**
 
 ## 啟用或停用內容片段模型 {#enabling-disabling-a-content-fragment-model}
 
@@ -402,12 +411,28 @@ GraphQL中的片段參考也提供週期性保護。 如果您在互相參照的
 1. 從工具列選取您的模型，然後依序選取&#x200B;**取消發佈**。
 已發佈狀態會在主控台中指出。
 
-## 內容片段模型 — 屬性 {#content-fragment-model-properties}
+<!--
+## Locked Content Fragment Models {#locked-content-fragment-models}
 
-您可以編輯內容片段模型的&#x200B;**屬性**:
+This feature provides governance for Content Fragment Models that have been published. 
 
-* **基本**
-   * **模型標題**
-   * **標記**
-   * **說明**
-   * **上傳影像**
+The challenge:
+
+* Content Fragment Models determine the schema for GraphQL queries in AEM. 
+
+  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
+
+  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
+
+* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
+
+* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
+
+The solution:
+
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
+
+* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
+
+* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+-->
