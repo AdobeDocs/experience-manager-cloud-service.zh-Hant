@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
+source-git-commit: 6277325b80f1cdb8735f88b5ad856e405572bffe
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1367'
 ht-degree: 2%
 
 ---
@@ -90,6 +90,24 @@ ht-degree: 2%
 * **適用性Forms的Analytics**:您現在可以透過Adobe Analytics for Adaptive Forms擷取及追蹤一般使用者行為，以收集一般使用者分析。它有助於根據資料做出明智的決策，以改善一般使用者體驗。
 
 * **輕鬆連接AEM Forms與Microsoft Dynamics和Salesforce.com**:此服務為Microsoft Dynamics和Salesforce.com提供現成的資料源配置和資料模型，使開發 [人員能夠更快、更輕鬆地將Microsoft Dynamics和Salesforce.com配置為最適化表單的資料源](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html)。
+
+## [!DNL Screens] as a  [!DNL Cloud Service] {#screens}
+
+### 新增功能 {#what-is-new-screens}
+
+* 作為「內容作者」，您現在可以定義視訊的縮圖，以便將該影像當作預留位置，並在適當的團隊完成實際視訊時，正確測試內容播放和鎖定目標。
+如需詳細資訊，請參閱[基本播放監控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) 。
+
+* Screens as aCloud Service現在支援的視訊縮圖支援。 內容作者可以定義視訊的縮圖，以便影像可作為預留位置，並在適當團隊完成實際視訊時，正確測試內容播放和鎖定目標。 當視訊播放失敗時，也可以使用影像。
+
+### 錯誤修正 {#bug-fixes-screens}
+
+* 播放器無法顯示內嵌頁面的內容，此問題現已修正。
+
+* 成功登入後，導覽至預設頁面（管道）最後會顯示「內部伺服器錯誤」頁面。
+
+* 移除播放清單時，未移除相關的標籤項目。
+
 
 ## CIF附加元件 {#cloud-services-cif}
 
