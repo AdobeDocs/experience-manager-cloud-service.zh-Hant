@@ -1,11 +1,10 @@
 ---
 title: 螢幕中視訊的縮圖支援作為Cloud Service
 description: 本頁面說明如何將螢幕中的視訊縮圖支援新增為Cloud Service。
-hide: true
-index: false
-source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
+index: true
+source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -63,14 +62,12 @@ ht-degree: 0%
 
 ## 在影片中使用縮圖時支援的使用案例 {#understand-use-case}
 
-在影片中使用縮圖時，請參閱下列使用案例。
+影片中的縮圖支援下列使用案例：
 
-視訊元件包含：
+* 系統會略過未設定任何內容的視訊元件。
 
-* *不會* 略過任何設定
+* 只設定縮圖的視訊元件會播放縮圖。
 
-* *只有縮圖* 會播放縮圖
+* 同時設定視訊和縮圖的視訊元件將會播放視訊。
 
-* *視訊和縮圖視* 訊都會播放視訊
-
-* *如果* 有播放錯誤，視訊會傳送播放縮圖，或是略過至下一個項目，以備未設定縮圖時使用
+* 如果發生播放錯誤，設定了視訊的視訊元件會播放縮圖，如果未設定縮圖，則只會跳至下一個項目。
