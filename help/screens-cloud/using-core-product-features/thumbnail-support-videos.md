@@ -2,9 +2,9 @@
 title: 螢幕中視訊的縮圖支援作為Cloud Service
 description: 本頁面說明如何將螢幕中的視訊縮圖支援新增為Cloud Service。
 index: true
-source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
+source-git-commit: e5dc848ca58e176b89861414d0e711866f96eb0e
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 * 如果裝置上發生播放問題，請設定後援機制。
 
 ## 在影片中使用縮圖 {#using-thumbnails}
+
+>[!IMPORTANT]
+>**必備條件**
+>在了解如何將縮圖用於影片之前，請務必了解如何在Screens中以Cloud Service專案的形式為頻道建立影片轉譯。 如需詳細資訊，請參閱[此處](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)。
 
 請依照下列步驟，在影片中使用縮圖：
 
@@ -68,6 +72,6 @@ ht-degree: 0%
 
 * 只設定縮圖的視訊元件會播放縮圖。
 
-* 同時設定視訊和縮圖的視訊元件將會播放視訊。
+* 同時設定視訊（如果視訊有正確的轉譯）和縮圖的視訊元件會播放視訊。
 
 * 如果發生播放錯誤，設定了視訊的視訊元件會播放縮圖，如果未設定縮圖，則只會跳至下一個項目。
