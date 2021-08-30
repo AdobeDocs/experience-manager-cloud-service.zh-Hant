@@ -1,10 +1,9 @@
 ---
 title: '將團隊成員指派給Cloud Manager產品設定檔 '
 description: 請詳閱本頁，了解如何將團隊成員指派給Cloud Manager產品設定檔
-hide: true
 index: false
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: a9eacc44c6be9101fae131c6fb6b95612efeac53
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
