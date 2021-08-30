@@ -4,9 +4,9 @@ description: 了解使用內容片段為無頭CMS製作內容的概念和機制�
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: d925333421b4a9ec1e2a7c553b43e042bb1e6fbe
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1693'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ AEM安裝通常至少包含兩個環境：
 
 **Assets**&#x200B;控制台具有專用的&#x200B;**操作工具欄**&#x200B;和&#x200B;**快速操作**，您可以在選擇資源（例如資料夾或內容片段）後使用這些工具。
 
-「快速操作」(Quick Actions)適用於單一資源：
+「快速操作」適用於單一資源，請參閱以下範例中的&#x200B;**Basel**:
 
 ![快速動作](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -101,7 +101,7 @@ AEM安裝通常至少包含兩個環境：
 
 #### 建立資料夾 {#creating-folder}
 
-您可以在Assets控制台的&#x200B;**Files**&#x200B;區段內建立一系列資料夾，以達成此目的。 選擇&#x200B;**Create**&#x200B;選項（右上），後跟&#x200B;**Create Folder**:
+您可以在Assets控制台的&#x200B;**Files**&#x200B;區段內建立一系列資料夾，以達成此目的。 選擇&#x200B;**Create**&#x200B;選項（右上），後跟&#x200B;**Folder**:
 
 ![建立資料夾選項](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -113,7 +113,7 @@ AEM安裝通常至少包含兩個環境：
 
 本節稍微更進階。 如果您剛開始嘗試，並不需要它，但當您有許多片段時，它&#x200B;*very*&#x200B;很有用。 所以，即使你還沒用到它，也很好。
 
-您的內容架構師會建立目前專案所需的所有內容片段模型，可能也會建立其他專案。 為協助您讓作者操作簡單，您可以限制特定資料夾可用的模型清單。
+您的內容架構師會建立目前專案所需的所有內容片段模型，可能也會建立其他專案。 為協助您和其他作者將事情簡單明瞭，您可以限制特定資料夾可用的模型清單。
 
 建立資料夾後，可以開啟資料夾&#x200B;**屬性**。 此處提供各種標籤，其中包含資料夾的相關資訊和設定詳細資訊。 尤其是內容片段，您可以使用&#x200B;**Policys**&#x200B;標籤來定義此資料夾的特定路徑和/或標籤。 這會限制資料夾中可用的內容片段模型，因為這表示內容片段模型必須先符合這些需求，才能用來在此資料夾中產生片段。
 
@@ -147,7 +147,7 @@ AEM安裝通常至少包含兩個環境：
 
 ![建立內容片段 — 選取模型](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-繼續&#x200B;**Next**&#x200B;之後，您可以提供片段的詳細資訊：
+繼續&#x200B;**Next**&#x200B;之後，您可以為片段提供詳細資訊（**Basic**&#x200B;和&#x200B;**Advanced**）:
 
 ![建立內容片段 — 提供名稱](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
