@@ -3,9 +3,9 @@ title: 使用Dynamic Media
 description: 了解如何使用Dynamic Media來傳送資產，供網站、行動裝置和社交網站使用。
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 [動態](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) 媒體可協助您隨需提供豐富的視覺化銷售和行銷資產，並自動調整規模以供網頁、行動裝置和社交網站使用。Dynamic Media使用一組主要來源資產，透過其全球、可擴充、效能最佳化的網路，即時產生並提供多種豐富內容變異。
 
-Dynamic Media提供互動式檢視體驗，包括縮放、360度回轉和視訊。 Dynamic Media獨特地整合了Adobe Experience Manager數位資產管理(Assets)解決方案的工作流程，以簡化和簡化數位行銷活動管理流程。
+Dynamic Media提供互動式檢視體驗，包括縮放、360°回轉和視訊。 Dynamic Media獨特地整合了Adobe Experience Manager數位資產管理(Assets)解決方案的工作流程，以簡化和簡化數位行銷活動管理流程。
 
 <!-- >[!NOTE]
 >

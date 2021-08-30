@@ -1,12 +1,12 @@
 ---
 title: 互動影片
 description: 了解如何在Dynamic Media中使用互動式視訊和可購買視訊。
-feature: 互動影片
+feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '5941'
+source-wordcount: '5938'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 * 在播放期間，由於視訊中使用產品，因此右側會顯示相同的產品作為縮圖影像。
 
-* 若要暫停影片並開啟產品的「快速檢視」，請選取縮圖。 例如，在視頻中選擇KitchenAid縮圖影像，以體驗混合器的360度旋轉視圖，或放大以查看混合器詳細資訊。
+* 若要暫停影片並開啟產品的「快速檢視」，請選取縮圖。 例如，在視頻中選擇KitchenAid縮圖影像，以體驗混合器的360°旋轉視圖，或放大以查看混合器詳細資訊。
 
 另請參閱[使用互動式視訊搭配Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
 
@@ -96,8 +96,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >* 您的Experience Manager實作&#x200B;*not*&#x200B;使用電子商務整合框架，從任何電子商務解決方案(如IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop)將產品資料提取到Experience Manager中。<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 
 >
->
-如果您的Experience Manager實作使用電子商務，您可以略過此工作，並繼續執行下一個工作。
+>如果您的Experience Manager實作使用電子商務，您可以略過此工作，並繼續執行下一個工作。
 
 首先，找出您現有Quickview實作所使用的動態變數，以便您可以在互動式視訊建立程式期間，將產品縮圖對應至其對應的產品Quickview。
 

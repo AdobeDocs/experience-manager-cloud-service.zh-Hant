@@ -1,12 +1,12 @@
 ---
 title: 迴轉集
 description: 了解如何在Dynamic Media中使用回轉集。
-feature: 迴轉集
+feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1815'
 ht-degree: 9%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->影像在回轉集中的顯示順序。 請務必訂購，使回轉為360度的平滑檢視。
+>影像在回轉集中的顯示順序。 請務必訂購，使回轉為平滑的360°檢視。
 
 **若要建立回轉集：**
 
