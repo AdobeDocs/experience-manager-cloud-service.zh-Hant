@@ -5,10 +5,10 @@ breadcrumb-title: 入門指南
 user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: cef35b897c85040989150b1da1f868c1d7a10716
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 50%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
