@@ -2,9 +2,9 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
+source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1955'
 ht-degree: 8%
 
 ---
@@ -55,11 +55,14 @@ ht-degree: 8%
 
 * **開啟/關閉時間**
 
-   * **時間**  — 在發佈環境中顯示（轉譯）已發佈頁面的日期和時間。必須手動或預先設定的自動復寫來發佈頁面。
+   >[!NOTE]
+   >
+   > 有關如何配置相關自動複製的詳細資訊，請參閱[開啟和關閉時間 — 觸發配置](/help/operations/replication.md#on-and-off-times-trigger-configuration)。
 
-      >[!NOTE]
-      >
-      > 有關如何配置相關自動複製的詳細資訊，請參閱[開啟和關閉時間 — 觸發配置](/help/operations/replication.md#on-and-off-times-trigger-configuration)。
+   >[!NOTE]
+   >如果&#x200B;**On Time**&#x200B;或&#x200B;**Off Time**&#x200B;過去，且已設定自動復寫，則會立即觸發相關動作。
+
+   * **時間**  — 在發佈環境中顯示（轉譯）已發佈頁面的日期和時間。必須手動或預先設定的自動復寫來發佈頁面。
 
       * 如果已發佈[（手動）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)此頁面將保持休眠（隱藏），直到在指定時間呈現為止。
       * 如果未發佈並已針對自動復寫進行設定，則頁面將在指定時間自動發佈並呈現。
@@ -87,8 +90,6 @@ ht-degree: 8%
       * 點選或再按一下以新增多個。
       * 點選或按一下&#x200B;**移除**&#x200B;圖示以刪除虛名URL。
    * **重新導向虛名URL**  — 指出您是否希望頁面使用虛名URL。
-
-
 
 
 ### 進階 {#advanced}
@@ -301,7 +302,7 @@ ht-degree: 8%
       * 如果您將頁面選取範圍縮小為一個頁面，則所有屬性都會顯示。
    * 具有公用值的公用屬性
       * 「視圖」模式中只顯示具有公共值的屬性。
-      * 當欄位為多值時（例如「標籤」），只有&#x200B;*all*&#x200B;為共同值時，才會顯示值。 如果只有部分是常見的，則只會在編輯時顯示。
+      * 當欄位為多值時（例如「標籤」），只有&#x200B;*all*&#x200B;為共同值時才會顯示值。 如果只有部分是常見的，則只會在編輯時顯示。
       * 當不存在具有公用值的屬性時，將顯示一條消息。
 
 * **編輯**
