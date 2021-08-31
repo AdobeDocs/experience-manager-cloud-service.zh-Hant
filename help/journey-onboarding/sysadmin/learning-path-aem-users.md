@@ -4,9 +4,9 @@ description: 如果您是AEM使用者，請依照本頁面了解取得存取權�
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: 1b594017570cb2d8e144cbdf8ea56acdf8256a6d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '381'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 2%
 
 本檔案可協助您的AEM作為Cloud Service內容作者來存取Adobe Experience Manager(AEM)。
 
-讀完書後，你應該明白：
+閱讀後，您應了解如何：
 
-* 如何存取Cloud Manager。
-* 如何以AEM例項存取Cloud Service。
-* 製作AEM作為Cloud Service的內容。
+* 存取Cloud Manager
+* 以Cloud Service例項存取AEM
+* 製作AEM as aCloud Service的內容
 
 ## 簡介  {#introduction}
 
