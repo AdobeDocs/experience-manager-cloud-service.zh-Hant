@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 開發方針
 description: AEM as a Cloud Service 開發方針
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
+source-git-commit: bacc6335e25387933a1d39dba10c4cc930a71cdb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 如果需要識別叢集中的主要伺服器，則可使用Apache Sling Discovery API來偵測。
 
-## 記憶體{#state-in-memory}中的狀態
+## 記憶體中的狀態 {#state-in-memory}
 
 狀態不得保留在記憶體中，而應保存在儲存庫中。 否則，如果執行個體停止，則此狀態可能會遺失。
 
-## 檔案系統{#state-on-the-filesystem}上的狀態
+## 檔案系統上的狀態 {#state-on-the-filesystem}
 
 在AEM中，不應將執行個體的檔案系統作為Cloud Service。 磁碟是短暫的，當回收實例時，將處理該磁碟。 對與處理單個請求相關的臨時儲存使用檔案系統是可能的，但不應濫用於大型檔案。 這是因為它可能對資源使用配額產生負面影響，並受到磁碟限制。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 類似地，非同步發生的一切都會發生，例如在觀察事件上採取行動，無法保證會在本機執行，因此必須謹慎使用。 JCR事件和Sling資源事件均適用。 當發生變更時，例項可被取下，並由不同例項取代。 拓撲中當時處於活動狀態的其他實例將能夠對該事件做出反應。 但是，在這種情況下，這不會是地方性事件，而且，如果當事件發佈時，領導者選舉正在進行，甚至可能沒有活躍的領導者。
 
-## 後台任務和長時間運行的作業{#background-tasks-and-long-running-jobs}
+## 後台任務和長時間運行的作業 {#background-tasks-and-long-running-jobs}
 
 作為背景任務執行的代碼必須假設它正在運行的實例可以隨時刪除。 因此，程式碼必須具有彈性，且大部分匯入都可恢復。 這表示如果程式碼重新執行，應該不會從頭開始，而是從離開的位置開始。 雖然這並非這類程式碼的新需求，但在AEM as aCloud Service中，執行個體淘汰的可能性較大。
 
@@ -47,7 +47,7 @@ Sling Commons排程器不應用於排程，因為執行無法保證。 只是更
 
 同樣地，如果非同步發生所有動作，例如對觀察事件採取行動（無論是JCR事件或Sling資源事件），就無法保證執行，因此必須謹慎使用。 目前的AEM部署已採用此方法。
 
-## 傳出HTTP連線{#outgoing-http-connections}
+## 傳出HTTP連線 {#outgoing-http-connections}
 
 強烈建議所有傳出的HTTP連線都設定合理的連線和讀取逾時。 對於不套用這些逾時的程式碼，以Cloud Service形式在AEM上執行的AEM例項將強制執行全域逾時。 下列逾時值是連線呼叫的10秒，以及下列熱門Java程式庫所使用連線的讀取呼叫的60秒：
 
@@ -59,29 +59,29 @@ Adobe建議使用提供的[Apache HttpComponents Client 4.x library](https://hc.
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) （不建議使用，因為已過時並已由4.x版取代）
 * [OK Http](https://square.github.io/okhttp/) (AEM未提供)
 
-## 沒有傳統UI自定義{#no-classic-ui-customizations}
+## 沒有傳統UI自定義 {#no-classic-ui-customizations}
 
 AEM as aCloud Service僅支援第三方客戶程式碼的觸控式UI。 傳統UI無法自訂。
 
-## 避免本機二進位檔{#avoid-native-binaries}
+## 避免本機二進位檔 {#avoid-native-binaries}
 
 程式碼將無法在執行階段下載二進位檔，也無法加以修改。 例如，它將無法解壓縮`jar`或`tar`檔案。
 
-## 沒有透過AEM as aCloud Service{#no-streaming-binaries}串流二進位檔
+## 沒有透過AEM as aCloud Service串流二進位檔 {#no-streaming-binaries}
 
 二進位檔應透過CDN來存取，CDN將提供核心AEM服務以外的二進位檔。
 
 例如，請勿使用`asset.getOriginal().getStream()`，這會觸發將二進位檔下載至AEM服務的短暫磁碟。
 
-## 無反向複製代理{#no-reverse-replication-agents}
+## 無反向複製代理 {#no-reverse-replication-agents}
 
 AEM as aCloud Service不支援從「發佈」反向復寫至「作者」。 如果需要此策略，您可以使用在發佈執行個體群組（可能是製作叢集）中共用的外部永續性存放區。
 
-## 轉發複製代理可能需要移植{#forward-replication-agents}
+## 可能需要移植轉發複製代理 {#forward-replication-agents}
 
 內容會透過發佈子機制從製作複製到發佈。 不支援自定義複製代理。
 
-## 監視和調試{#monitoring-and-debugging}
+## 監控與除錯 {#monitoring-and-debugging}
 
 ### 記錄檔 {#logs}
 
@@ -117,19 +117,19 @@ AEM as aCloud Service不支援從「發佈」反向復寫至「作者」。 如�
 | 2 | 警告 | 操作已成功，但遇到問題。 CRX可能或無法正常運作。 |
 | 3 | 資訊 | 操作成功。 |
 
-### 線程轉儲{#thread-dumps}
+### 線程轉儲 {#thread-dumps}
 
 雲端環境上的執行緒傾印會持續收集，但目前無法以自助方式下載。 同時，如果需要執行緒傾印以偵錯問題，請連絡AEM支援，並指定確切的時間視窗。
 
-## CRX/DE Lite和開發人員控制台{#crxde-lite-and-developer-console}
+## CRX/DE Lite和開發人員控制台 {#crxde-lite-and-developer-console}
 
-### 本地開發{#local-development}
+### 地方開發 {#local-development}
 
 針對本機開發，開發人員可完整存取CRXDE Lite(`/crx/de`)和AEM Web主控台(`/system/console`)。
 
 請注意，在本機開發（使用SDK）上，`/apps`和`/libs`可直接寫入，這與雲端環境不同，雲端環境中的這些最上層資料夾不可修改。
 
-### AEM as a Cloud Service開發工具{#aem-as-a-cloud-service-development-tools}
+### AEM as a Cloud Service開發工具 {#aem-as-a-cloud-service-development-tools}
 
 客戶可在製作層級的開發環境中存取CRXDE lite，但無法預備或生產。 不可變的儲存庫(`/libs`, `/apps`)無法在運行時寫入，因此嘗試寫入將導致錯誤。
 
@@ -161,15 +161,15 @@ AEM as aCloud Service不支援從「發佈」反向復寫至「作者」。 如�
 
 若為生產計畫，使用者可以透過Admin Console中的「雲端管理員 — 開發人員角色」來定義對開發人員控制台的存取權，若為沙箱計畫，只要使用者具備產品設定檔，便能以Cloud Service存取AEM。 對於所有程式，狀態轉儲都需要「Cloud Manager — 開發人員角色」，且使用者也必須在製作和發佈服務的AEM使用者或AEM管理員產品設定檔中定義，才能檢視兩個服務的狀態轉儲資料。 如需設定使用者權限的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
-### AEM測試與生產服務{#aem-staging-and-production-service}
+### AEM測試與生產服務 {#aem-staging-and-production-service}
 
 客戶將無法存取測試和生產環境的開發人員工具。
 
-### 效能監視{#performance-monitoring}
+### 效能監控 {#performance-monitoring}
 
 Adobe會監控應用程式效能，並採取措施，以在出現惡化時加以處理。 目前無法查看應用程式量度。
 
-## 專用輸出IP地址{#dedicated-egress-ip-address}
+## 專用輸出IP地址 {#dedicated-egress-ip-address}
 
 應要求，AEM as aCloud Service會為以Java程式碼編寫的HTTP（埠80）和HTTPS（埠443）傳出流量布建靜態的專屬IP位址。
 
@@ -183,13 +183,13 @@ Adobe會監控應用程式效能，並採取措施，以在出現惡化時加以
 
 若要啟用專用IP位址，請向客戶支援人員提交請求，由客戶支援人員提供IP位址資訊。 如果新環境在初始要求後需要功能，要求應指定每個環境，並提出其他要求。 不支援沙箱方案環境。
 
-### 功能使用{#feature-usage}
+### 功能使用 {#feature-usage}
 
 若Java系統屬性用於Proxy設定，則此功能與會產生傳出流量的Java程式碼或程式庫相容。 實際上，這應包含最常見的程式庫。
 
 以下是程式碼範例：
 
-```
+```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
   String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
   URL finalUrl = endpointUri.resolve(relativeUri).toURL();
@@ -203,15 +203,35 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
+有些程式庫需要明確的設定，才能將標準Java系統屬性用於Proxy設定。
+
+使用Apache HttpClient的範例，此範例需要明確呼叫
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html)或使用
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
+  HttpGet request = new HttpGet(finalUrl.toURI());
+  request.setHeader("Accept", "application/json");
+  request.setHeader("X-API-KEY", apiKey);
+  HttpResponse response = httpClient.execute(request);
+  String result = EntityUtils.toString(response.getEntity());
+}
+```
+
 同一專用IP會套用至其Adobe組織中的所有客戶方案，以及每個客戶方案中的所有環境。 它適用於製作和發佈服務。
 
 僅支援HTTP和HTTPS埠。 這包括HTTP/1.1，以及加密時的HTTP/2。
 
-### 調試注意事項{#debugging-considerations}
+### 除錯考量事項 {#debugging-considerations}
 
 若要驗證流量是否確實在預期的專用IP位址上傳出，請檢查目的地服務的記錄（若有）。 否則，呼叫[https://ifconfig.me/ip](https://ifconfig.me/ip)等偵錯服務可能會很有用，這會傳回呼叫IP位址。
 
-## 傳送電子郵件{#sending-email}
+## 傳送電子郵件 {#sending-email}
 
 AEM as aCloud Service需要加密傳出郵件。 以下各節說明如何要求、設定及傳送電子郵件。
 
@@ -219,7 +239,7 @@ AEM as aCloud Service需要加密傳出郵件。 以下各節說明如何要求�
 >
 >可以使用OAuth2支援來設定郵件服務。 如需詳細資訊，請參閱[OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md)。
 
-### 請求訪問{#requesting-access}
+### 請求存取 {#requesting-access}
 
 依預設，會停用傳出電子郵件。 要激活它，請提交支援票證，具體包括：
 
@@ -228,7 +248,7 @@ AEM as aCloud Service需要加密傳出郵件。 以下各節說明如何要求�
 1. 想要寄出之環境的方案ID和環境ID
 1. 作者、發佈或兩者都需要SMTP存取權。
 
-### 傳送電子郵件{#sending-emails}
+### 傳送電子郵件 {#sending-emails}
 
 應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，且必須將電子郵件傳送至支援請求中指出的郵件伺服器，而非直接傳送給收件者。
 
@@ -256,6 +276,6 @@ AEM中的電子郵件應使用[Day CQ Mail Service OSGi服務](https://experienc
 
 AEM會在執行階段將`smtp.starttls`屬性自動設定為適當的Cloud Service。 因此，如果`smtp.tls`設為true，則會忽略`smtp.startls`。 如果將`smtp.ssl`設為false，則將`smtp.starttls`設為true。 無論在OSGI設定中設定的`smtp.starttls`值為何。
 
-## [!DNL Assets] 開發指南和使用案例  {#use-cases-assets}
+## [!DNL Assets] 開發指南和使用案例 {#use-cases-assets}
 
 若要了解以Cloud Service形式使用資產的開發使用案例、建議和參考資料，請參閱[資產的開發人員參考](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)。
