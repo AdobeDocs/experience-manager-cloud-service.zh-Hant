@@ -2,8 +2,9 @@
 title: 開發人員和部署經理的學習路徑
 description: 如果您是開發人員或部署管理員，請依照本頁面了解取得存取權後的後續步驟
 index: false
+feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: a9eacc44c6be9101fae131c6fb6b95612efeac53
+source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 2%

@@ -3,9 +3,9 @@ sub-product: Onboarding Journey
 user-guide-title: 入門歷程
 breadcrumb-title: 入門歷程
 user-guide-description: 從這裡開始，進行專為系統管理員角色設計的引導式歷程，說明需求、步驟和方法。 歷程會定義系統管理員為了成功的專案必須與其互動的其他角色，但歷程的觀點是管理員。
-feature: Developer Tools
+feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
