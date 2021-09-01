@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f2c0b3cca634b10b1b39532465968619d53b4e65
+source-git-commit: 58d9022b2b65aec4709a41ebfc80cc03c4c162a6
 workflow-type: tm+mt
 source-wordcount: '1427'
 ht-degree: 2%
@@ -95,7 +95,7 @@ ht-degree: 2%
 
 ### 新增功能 {#what-is-new-screens}
 
-* 以Cloud Service形式顯示的螢幕現在支援基本播放監控。 播放器現在會報告各種播放量度，並分別顯示「Ping」（預設為30秒）。 它可根據量度偵測各種邊緣案例（停滯體驗、空白畫面、排程問題等）。 此功能可讓團隊遠端監視播放器是否正確播放內容、改善對空白畫面或欄位中中斷體驗的再活動，並降低向使用者顯示中斷體驗的風險。
+* 以Cloud Service形式顯示的螢幕現在支援基本播放監控。 播放器現在會報告各種播放量度，每次偵測（預設為30秒）。 它可根據量度偵測各種邊緣案例（停滯體驗、空白畫面、排程問題等）。 此功能可讓團隊遠端監視播放器是否正確播放內容、改善對空白畫面或欄位中中斷體驗的再活動，並降低向使用者顯示中斷體驗的風險。
 如需詳細資訊，請參閱[基本播放監控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) 。
 
 * Screens as aCloud Service現在支援的視訊縮圖支援。 內容作者可以定義視訊的縮圖，以便影像可作為預留位置，並在適當團隊完成實際視訊時，正確測試內容播放和鎖定目標。 當視訊播放失敗時，也可以使用影像。
