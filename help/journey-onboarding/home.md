@@ -1,9 +1,9 @@
 ---
 title: 入門歷程
 description: 請從這裡開始，概略了解入門體驗的引導式入門歷程。
-source-git-commit: 7a8d21e9a5cd4f1767e55aaf68114199a6a0d1cf
+source-git-commit: 9cea7a8a7adf363b6b969a1a427ebf7ff473469b
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,14 @@ ht-degree: 1%
 * 您的團隊已設定且可存取雲端資源，
 * AEM作者可存取AEM as aCloud Service
 * AEM開發人員和部署管理員將能存取AEM as aCloud Service。
+
+## AEM檔案歷程 {#documentation-journeys}
+
+[說明檔](/help/journey-documentation/home.md) 案記錄將許多不同且可能複雜的主題和功能結合在一起，提供說明來協助讀者(對AEM而言是新手)從頭到尾了解並解決業務問題，同時假設先前主題或AEM知識最少。
+
+說明檔案歷程是根據最佳實務原則而設計，根據Adobe的最新研究、Adobe顧問經驗證的實作經驗，以及客戶專案的意見回饋。
+
+如果您想了解Adobe如何建議如何讓您的團隊以Cloud Service應用程式的形式，為您的AEM建立內容，請從這裡開始！
 
 ## 對象 {#audiences}
 

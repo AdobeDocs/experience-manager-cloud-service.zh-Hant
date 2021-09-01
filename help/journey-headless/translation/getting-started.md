@@ -1,10 +1,10 @@
 ---
 title: 開始使用AEM無頭翻譯
 description: 了解如何組織無頭內容，以及AEM翻譯工具的運作方式。
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 142c49b6b98dc78c3d36964dada1cfb900afee66
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 0%

@@ -1,13 +1,13 @@
 ---
 title: AEM無頭式內容架構者歷程
 description: 從這裡開始，引導您逐步了解AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個無頭式專案中建立內容模型。
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 1fb3665007439940617c48fd61de7a7c19aee8d2
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '789'
+ht-degree: 1%
 
 ---
 
@@ -27,6 +27,14 @@ ht-degree: 2%
 * 了解無頭式內容傳送的功能及其優點。
 * 了解如何為AEM無頭功能建立內容模型。
 * 能夠為您的第一個AEM無頭專案建立內容模型的前幾個步驟。
+
+## AEM檔案歷程 {#documentation-journeys}
+
+[說明檔](/help/journey-documentation/home.md) 案記錄將許多不同且可能複雜的主題和功能結合在一起，提供說明來協助讀者(對AEM而言是新手)從頭到尾了解並解決業務問題，同時假設先前主題或AEM知識最少。
+
+說明檔案歷程是根據最佳實務原則而設計，根據Adobe的最新研究、Adobe顧問經驗證的實作經驗，以及客戶專案的意見回饋。
+
+如果您想了解Adobe建議如何使用AEM解決無頭業務案例，從[AEM無頭歷程](/help/journey-headless/home.md)開始。
 
 ## 對象 {#audience}
 
