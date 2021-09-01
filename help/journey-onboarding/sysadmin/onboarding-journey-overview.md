@@ -4,30 +4,14 @@ description: 請依照本頁所述，了解如何開始入門歷程
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 792ec993bd9d628fac49b9553d5923c74195f4c7
+source-git-commit: 5a91f45b4ed933e37f5af61a194d08e204cd1514
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
 
 # 入門歷程 {#onboarding-jourrney}
-
-祝賀您以AEM as aCloud Service開始您的歷程！ 我們很高興您能在此，迫不及待地想要開始您的入門歷程。 無論您是要部署新應用程式還是移轉現有應用程式，本指南都是您的起點，可確保您的團隊已完成設定，且能以Cloud Service形式存取AEM 。
-
-## 簡介 {#introduction}
-
-本指南會引導您了解最重要的主題，以便您在完成後能有：
-
-* 完整了解AEM作為Cloud Service入門歷程期間的預期。
-* 讓您的團隊能夠上手並執行，並採取第一步步驟，了解如何編寫和開發AEM的內容，作為Cloud Service應用程式。
-
-這表示：
-
-* 您的團隊已設定且可存取雲端資源，
-* AEM作者可存取AEM as aCloud Service
-* AEM開發人員和部署管理員將能存取AEM as aCloud Service。
-
 
 ## 入門體驗 {#audience}
 
