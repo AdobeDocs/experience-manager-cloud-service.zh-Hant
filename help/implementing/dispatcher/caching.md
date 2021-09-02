@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1531'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 快取 {#caching}
 
-### HTML/文字{#html-text}
+### HTML/文字 {#html-text}
 
 * 依預設，會根據apache層發出的`cache-control`標題，由瀏覽器快取5分鐘。 CDN也會遵循此值。
 * 在`global.vars`中定義`DISABLE_DEFAULT_CACHING`變數，即可停用預設的HTML/文字快取設定：
@@ -40,10 +40,12 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
    ```
 
-   設定全域快取控制標題或符合寬規則運算式的標題時，請務必小心，這樣就不會將這些標題套用至您可能想保留為私密的內容。 請考慮使用多個指令，以確保以微調方式套用規則。 如此一來，如果AEM as aCloud Service偵測到快取標題已套用至其偵測到的Dispatcher無法執行的項目，則會移除快取標題，如Dispatcher檔案所述。 若要強制AEM一律套用快取，您可以新增「always」選項，如下所示：
+   設定全域快取控制標題或符合寬規則運算式的標題時，請務必小心，這樣就不會將這些標題套用至您可能想保留為私密的內容。 請考慮使用多個指令，以確保以微調方式套用規則。 如此一來，如果AEM as aCloud Service偵測到快取標題已套用至其偵測到的Dispatcher無法執行的項目，則會移除快取標題，如Dispatcher檔案所述。 若要強制AEM一律套用快取標題，您可以新增&#x200B;**always**&#x200B;選項，如下所示：
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
+        Header unset Cache-Control
+        Header unset Expires
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -56,18 +58,20 @@ Define DISABLE_DEFAULT_CACHING
    { /glob "*" /type "allow" }
    ```
 
-* 為防止快取特定內容，請將「快取控制」標頭設定為&#x200B;*private*。 例如，以下操作會阻止快取名為&#x200B;**myfolder**&#x200B;的目錄下的html內容：
+* 為防止快取特定內容，請將「快取控制」標頭設定為&#x200B;*private*。 例如，以下操作會防止快取名為&#x200B;**secure**&#x200B;的目錄下的html內容：
 
    ```
-      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
-      Header set Cache-Control “private”
+      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
+      Header unset Cache-Control
+      Header unset Expires
+      Header always set Cache-Control “private”
      </LocationMatch>
    ```
 
    >[!NOTE]
    >其他方法(包括[dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))將無法成功覆寫值。
 
-### 用戶端程式庫(js,css){#client-side-libraries}
+### 用戶端資料庫(js,css) {#client-side-libraries}
 
 * 使用AEM用戶端程式庫架構時，會產生JavaScript和CSS程式碼，讓瀏覽器可無限快取，因為任何變更都會以唯一路徑顯示為新檔案。  換句話說，會視需要產生參考用戶端資料庫的HTML，讓客戶在發佈新內容時能體驗新內容。 對於不遵守「不可變」值的舊版瀏覽器，快取控制項會設為「不可變」或30天。
 * 如需其他詳細資訊，請參閱[用戶端程式庫和版本一致性](#content-consistency)一節。
@@ -98,7 +102,7 @@ Define DISABLE_DEFAULT_CACHING
    >[!NOTE]
    >其他方法(包括[dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))將無法成功覆寫值。
 
-### 節點儲存區{#other-content}中的其他內容檔案類型
+### 節點儲存區中的其他內容檔案類型 {#other-content}
 
 * 無預設快取
 * 預設值無法使用用於html/text檔案類型的`EXPIRATION_TIME`變數進行設定
@@ -108,13 +112,13 @@ Define DISABLE_DEFAULT_CACHING
 
 一般而言，Dispatcher快取無需失效。 當內容重新發佈時，您應該仰賴Dispatcher重新整理其快取，並仰賴附有快取過期標題的CDN。
 
-### 啟用/停用{#cache-activation-deactivation}期間Dispatcher快取失效
+### 啟動/停用期間Dispatcher快取失效 {#cache-activation-deactivation}
 
 與舊版AEM一樣，發佈或取消發佈頁面也會從Dispatcher快取中清除內容。 如果懷疑發生快取問題，客戶應重新發佈相關頁面。
 
 當發佈例項從作者收到新版本的頁面或資產時，會使用排清代理程式使其Dispatcher上的適當路徑無效。 更新的路徑會從Dispatcher快取中及其父項中移除，直到達到某個層級(您可以使用[statfilelevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)來設定。
 
-### 顯式Dispatcher快取失效{#explicit-invalidation}
+### 顯式Dispatcher快取失效 {#explicit-invalidation}
 
 一般而言，不需要手動使Dispatcher中的內容無效，但如有需要，則可以如下所述。
 
@@ -134,7 +138,7 @@ Define DISABLE_DEFAULT_CACHING
 
 由Adobe管理的CDN會遵循TTL，因此不需要將其清除。 如果懷疑有問題，請[聯絡客戶支援](https://helpx.adobe.com/support.ec.html)支援，如有需要，可以排清Adobe管理的CDN快取。
 
-## 用戶端程式庫與版本一致性{#content-consistency}
+## 用戶端程式庫與版本一致性 {#content-consistency}
 
 頁面由HTML、Javascript、CSS和影像組成。 建議客戶運用[用戶端資料庫(clientlibs)架構](/help/implementing/developing/introduction/clientlibs.md)，將Javascript和CSS資源匯入HTML頁面，同時考慮到JS資料庫之間的相依性。
 
@@ -144,7 +148,7 @@ clientlibs架構提供自動版本管理，這表示開發人員可以在原始�
 
 此機制為序列化雜湊，會附加至用戶端程式庫連結，確保瀏覽器有唯一的版本化URL來快取CSS/JS。 只有當用戶端程式庫的內容變更時，才會更新序列化雜湊。 這表示即使是新部署，如果發生不相關的更新（即用戶端程式庫的基礎css/js未變更），參照仍會維持不變，確保減少瀏覽器快取的中斷。
 
-### 啟用用戶端程式庫的長快取版本 — AEM as aCloud ServiceSDK快速入門{#enabling-longcache}
+### 啟用用戶端程式庫的長快取版本 — AEM as aCloud ServiceSDK快速入門 {#enabling-longcache}
 
 HTML頁面上的預設clientlib包含如下列範例所示：
 
