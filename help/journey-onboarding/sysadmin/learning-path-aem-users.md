@@ -1,10 +1,9 @@
 ---
 title: AEM使用者的學習路徑
 description: 如果您是AEM使用者，請依照本頁面了解取得存取權後的後續步驟
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 1b594017570cb2d8e144cbdf8ea56acdf8256a6d
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 2%

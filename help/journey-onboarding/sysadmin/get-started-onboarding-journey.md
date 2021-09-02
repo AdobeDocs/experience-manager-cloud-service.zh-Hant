@@ -1,10 +1,9 @@
 ---
 title: 入門程式
 description: 請依照本頁所述，了解如何開始入門歷程
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 533e6cb780f908cfa4a30831bab7b80174872f24
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
