@@ -5,10 +5,10 @@ breadcrumb-title: 入門指南
 user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: 90ed13a2d86611aeb709f8e8f0d75aeb8dbd97dd
+source-git-commit: 786ff1c2e715869ecd12cf54ede0fb650e8ef33f
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 44%
+source-wordcount: '106'
+ht-degree: 46%
 
 ---
 
@@ -28,5 +28,4 @@ ht-degree: 44%
 + AEM as aCloud Service快速入門{#what-is-required}
    + [Cloud Manager角色](what-is-required/user-roles-permissions.md)
    + [系統管理員任務](what-is-required/add-users-assign-cm-roles.md)
-   + [導覽至Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
    + [授予使用者AEM例項的存取權](/help/onboarding/what-is-required/accessing-aem-instance.md)

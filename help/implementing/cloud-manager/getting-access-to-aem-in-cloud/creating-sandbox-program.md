@@ -2,9 +2,9 @@
 title: '建立沙箱方案 '
 description: 建立沙箱方案
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,6 @@ ht-degree: 0%
 1. 啟動Cloud Manager的登陸頁面，然後按一下畫面右上角的&#x200B;**新增方案**。
 
    ![](assets/first_timelogin1.png)
-
-   >[!NOTE]
-   >若要了解如何存取Cloud Manager，請參閱[Cloud Manager登陸頁面](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)以取得詳細資訊。
 
 1. 在建立程式嚮導中，選擇&#x200B;**設定沙箱**。 用戶在選擇&#x200B;**Create**&#x200B;之前提交程式名。
 

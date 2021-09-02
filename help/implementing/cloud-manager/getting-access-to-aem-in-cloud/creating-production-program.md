@@ -2,9 +2,9 @@
 title: '建立生產計畫 '
 description: 建立生產計畫
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,6 @@ ht-degree: 0%
 
    ![](assets/first_timelogin1.png)
 
-   >[!NOTE]
-   >若要了解如何存取Cloud Manager，請參閱[Cloud Manager登陸頁面](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)以取得詳細資訊。
 
 1. 在「建立程式」嚮導中選擇「為生產設定」 **以建立生產程式。**&#x200B;用戶可以接受預設程式名或在選擇&#x200B;**Create**&#x200B;之前對其進行編輯。
 
