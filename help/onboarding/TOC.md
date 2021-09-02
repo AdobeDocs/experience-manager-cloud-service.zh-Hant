@@ -5,10 +5,10 @@ breadcrumb-title: 入門指南
 user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: 7d95c29656fb0d7d54f200546f8b5b664c7f12fd
+source-git-commit: 90ed13a2d86611aeb709f8e8f0d75aeb8dbd97dd
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 43%
+source-wordcount: '110'
+ht-degree: 44%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 43%
    + [系統管理員](/help/onboarding/learn-concepts/system-administrator.md)
    + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
    + [AdobeIdentity Management系統](/help/onboarding/learn-concepts/ims.md)
+   + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
    + [Cloud Manager 簡介](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM as a Cloud Service團隊和產品設定檔](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Adobe支援](/help/onboarding/learn-concepts/onboarding-help-resources.md)
