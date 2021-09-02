@@ -2,7 +2,7 @@
 title: 了解什麼是Cloud Manager
 description: 請詳閱本頁，了解Cloud Manager、Cloud Manager程式和環境。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 900bcfd2b05b7c996c7ef51118d1f09a16020332
+source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Cloud Manager是AEM的必要元件，可作為Cloud Service，也是您團隊的
 
 1. 按一下Cloud Manager卡片中的&#x200B;**Launch**。 成功登入Cloud Manager後，您就可以使用使用者介面(UI)。
 
-成功登入後，系統會將您導向至Cloud Manager的登陸頁面。
+   成功登入後，系統會將您導向至Cloud Manager的登陸頁面。
 
 ## Cloud Manager方案 {#cloud-manager-programs}
 

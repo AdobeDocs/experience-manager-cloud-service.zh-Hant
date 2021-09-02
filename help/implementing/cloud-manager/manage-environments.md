@@ -2,9 +2,9 @@
 title: 管理環境 — Cloud Service
 description: 管理環境 — Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
+source-git-commit: c25756f16f5e86958c1cc9224e51d07c4d864da4
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1608'
 ht-degree: 3%
 
 ---
@@ -145,8 +145,6 @@ ht-degree: 3%
 ## 管理存取 {#managing-access}
 
 從&#x200B;**Environments**&#x200B;卡片的下拉菜單中選擇&#x200B;**管理訪問**。 您可以直接導覽至製作例項，並管理環境的存取權。
-
-請參閱[管理對製作例項的存取](/help/onboarding/what-is-required/accessing-aem-instance.md)以深入了解。
 
 ![](assets/environ-access.png)
 
