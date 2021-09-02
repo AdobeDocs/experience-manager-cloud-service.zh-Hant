@@ -5,10 +5,10 @@ breadcrumb-title: 入門指南
 user-guide-description: 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: 673340ba6e33daca2b1a371286ec38d6eaaca461
+source-git-commit: 7d95c29656fb0d7d54f200546f8b5b664c7f12fd
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 42%
+source-wordcount: '108'
+ht-degree: 43%
 
 ---
 
@@ -20,13 +20,11 @@ ht-degree: 42%
    + [系統管理員](/help/onboarding/learn-concepts/system-administrator.md)
    + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
    + [AdobeIdentity Management系統](/help/onboarding/learn-concepts/ims.md)
-   + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
    + [Cloud Manager 簡介](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM as a Cloud Service團隊和產品設定檔](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Adobe支援](/help/onboarding/learn-concepts/onboarding-help-resources.md)
 + [入門指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html){target=&quot;_blank&quot;}
 + AEM as aCloud Service快速入門{#what-is-required}
-   + [取得您的Adobe ID](what-is-required/get-your-adobe-id.md)
    + [Cloud Manager角色](what-is-required/user-roles-permissions.md)
    + [系統管理員任務](what-is-required/add-users-assign-cm-roles.md)
    + [導覽至Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
