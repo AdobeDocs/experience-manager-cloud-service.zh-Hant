@@ -5,9 +5,9 @@ breadcrumb-title: AEM檔案歷程
 user-guide-description: 從這裡開始，引導您逐步了解AEM強大且有彈性的無頭式功能、其功能，以及如何在專案中運用這些功能。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 65f0bc92d0ce60dd55b17b5ee8875d8e88033266
+source-git-commit: de797ba7a59afa911a5a0d719b4b905d6cfcbad4
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,14 @@ Please note that all links to other guides need to be absolute references with l
    + [將團隊成員指派給AEM作為Cloud Service產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/assign-team-members-aem-cloud-service.html)
    + [開發人員和部署經理的學習路徑](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-developers-deploymentmanagers.html)
    + [AEM使用者的學習路徑](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-aem-users.html)
++ 網站翻譯歷程{#sites-translation}
+   + [了解AEM中的網站翻譯](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
+   + [開始翻譯AEM網站](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/getting-started.html)
+   + [了解網站內容及在AEM中的翻譯方式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/learn-about.html)
+   + [配置翻譯連接器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/configure-connector.html)
+   + [配置翻譯規則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translation-rules.html)
+   + [翻譯內容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translate-content.html)
+   + [發佈翻譯的內容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/publish-content.html)
 + 無頭歷程{#headless}
    + [無頭歷程首頁](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
    + 無頭式開發人員歷程{#developer}
