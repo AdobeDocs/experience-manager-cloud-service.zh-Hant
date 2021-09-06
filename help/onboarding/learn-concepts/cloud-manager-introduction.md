@@ -2,10 +2,10 @@
 title: 了解什麼是Cloud Manager
 description: 請詳閱本頁，了解Cloud Manager、Cloud Manager程式和環境。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
+source-git-commit: a21116e9ea59e608590151dc2682ff6e73dde9ed
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 1%
+source-wordcount: '907'
+ht-degree: 3%
 
 ---
 
@@ -39,6 +39,26 @@ Cloud Manager是AEM的必要元件，可作為Cloud Service，也是您團隊的
 1. 按一下Cloud Manager卡片中的&#x200B;**Launch**。 成功登入Cloud Manager後，您就可以使用使用者介面(UI)。
 
    成功登入後，系統會將您導向至Cloud Manager的登陸頁面。
+
+## Cloud Manager中的角色型權限 {#role-based-permissions}
+
+| 權限 | 說明 | 業務負責人 | 部署管理員 | 計畫經理 | 開發人員 |
+|--- |--- |--- |--- |--- |--- |
+| 添加程式<br>編輯程式 | 新增方案。<br>編輯程式 — 添加或刪除解決方案或附加元件的 | x |  |  |  |
+| 建立環境 | 建立Prod+Stage、Dev、Environments。 | x | x |  |  |
+| 更新環境 | 更新Prod+Stage、Dev、Environments。 | x | x |  |  |
+| 刪除開發環境 | 刪除開發環境。 | x | x |  |  |
+| 管道設定 | 設定或編輯管道。 |  | x |  |  |
+| 管道執行 | 啟動管道。 | x | x |  |  |
+| 管道執行 | 拒絕/批准重要的3層故障。 | x | x | x |  |
+| 管道執行 | 提供GoLive核准。 | x | x | x |  |
+| 管道執行 | 排程生產部署。 | x | x | x |  |
+| 管道刪除 | 允許刪除管道。 |  | x |  |  |
+| 執行取消 | 取消當前執行。 |  | x |  |  |
+| 產生個人存取權杖 | 存取Git。 |  | x |  | x |
+
+>[!NOTE]
+>可以將用戶分配給多個角色。 例如，將業務所有者和部署管理員角色分配給用戶時，會為其提供這些權限的組合或總和。
 
 ## Cloud Manager方案 {#cloud-manager-programs}
 
