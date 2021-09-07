@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 5a0c744d848397d9eb9581e0a0a2cd143c5a7412
+source-git-commit: 620972f1a9b4cf9cc4cc888b440b59af28b1127a
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 19%
+source-wordcount: '595'
+ht-degree: 26%
 
 ---
 
@@ -24,44 +24,18 @@ ht-degree: 19%
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
-## 入門重要文章 {#key-articles}
+請參閱[入門歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html)以開始入門歷程。
 
-本節涵蓋以AEM as aCloud Service開始時，您歷程中聚焦的重要文章：
+>[!NOTE]
+>在深入探討入門歷程之前，建議您先檢閱涵蓋下列主題的「了解入門概念」章節：
+>* [系統管理員](/help/onboarding/learn-concepts/system-administrator.md)
+>* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
+>* [AdobeIdentity Management系統](/help/onboarding/learn-concepts/ims.md)
+>* [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
+>* [Cloud Manager 簡介](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+>* [AEM as a Cloud Service團隊和產品設定檔](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
+>* [Adobe支援](/help/onboarding/learn-concepts/onboarding-help-resources.md)
 
-**上線時的期望**
-
-簽妥合約後，將發生下列事件：
-
-1. Adobe將完成貴組織的布建，您的組織系統管理員會收到歡迎電子郵件，允許他們執行系統管理員工作，包括新增使用者、將使用者指派給角色，借此授與他們適當的Cloud Manager存取權。
-
-1. 系統管理員新增的使用者將會收到歡迎電子郵件，讓他們能成功導覽至Cloud Manager。 使用者現在可以從這裡使用Adobe ID登入，並透過Cloud Manager開始歷程。
-
-1. 系統管理員可授予使用者對AEM例項的存取權以用於開發用途。
-
-**取得您的Adobe ID**
-
-您需要Adobe ID和系統管理員的協助，才能讓使用者新增至Cloud Manager，以取得其指派的角色。
-
-**Cloud Manager角色**
-
-您的系統管理員可以新增使用者，並將其指派給Cloud Manager角色。 在開始之前，本節可協助您了解&#x200B;*Cloud Manager角色*&#x200B;是什麼，以及與這些角色相關聯的權限。
-
-**系統管理員任務**
-
-系統管理員管理其使用者的所有方面，從存取到權限。 此使用者是第一個可存取Admin Console和Cloud Manager中開始執行工作的人員。
-下列檔案頁面包含說明基本組織工作的資訊：
-
-* 新增使用者
-* 將使用者指派至Cloud Manager角色和權限
-
-**導覽至Cloud Manager**
-
-現在您已新增為使用者，並獲派至Cloud Manager角色，您可以存取Cloud Manager，以開始使用AEM的雲端歷程。 使用者可以執行各種工作，例如建立程式、新增環境、存取Git、[設定管道](/help/implementing/cloud-manager/configure-pipeline.md)和[部署程式碼](/help/implementing/cloud-manager/deploy-code.md)。
-Cloud Manager是AEM as a Cloud Service的重要一環。 它可讓組織在雲端中自行管理[!DNL Experience Manager]。 其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。使用者介面，您可以設定並啟動CI/CD管道。
-
-**授予使用者AEM例項的存取權**
-
-請依照本節所述，了解系統管理員或建立環境的使用者如何授予其他使用者對AEM例項的存取權。
 
 ## [!DNL Experience Manager as a Cloud Service] 指南 {#aem-guides}
 
