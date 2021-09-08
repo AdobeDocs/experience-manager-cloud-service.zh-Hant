@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 620972f1a9b4cf9cc4cc888b440b59af28b1127a
+source-git-commit: e45f3265feb7fbe9e3de5bd8975fa28e2b8c7e13
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 26%
@@ -24,7 +24,7 @@ ht-degree: 26%
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
-請參閱[入門歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html)以開始入門歷程。
+請參閱[入門歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html)以開始入門體驗。
 
 >[!NOTE]
 >在深入探討入門歷程之前，建議您先檢閱涵蓋下列主題的「了解入門概念」章節：
