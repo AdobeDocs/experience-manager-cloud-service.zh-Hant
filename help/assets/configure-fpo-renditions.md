@@ -3,11 +3,10 @@ title: 僅針對Adobe InDesign產生版位轉譯
 description: 使用「Experience Manager資產」工作流程和ImageMagick產生新資產和現有資產的FPO轉譯。
 contentOwner: Vishabh Gupta
 role: Admin
-feature: 轉譯
-exl-id: null
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+feature: Renditions
+source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
