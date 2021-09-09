@@ -2,8 +2,7 @@
 title: AEM as aCloud Service中Cloud Manager的發行說明2021.8.0版
 description: AEM as aCloud Service中Cloud Manager的發行說明2021.8.0版
 feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
+source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 4%
@@ -48,5 +47,3 @@ AEM as aCloud Service2021.8.0中的Cloud Manager發行日期為2021年8月12日�
 * 名稱很長的新組織無法首次上線。
 
 * 有時，當管道因某些原因觸發兩次時，會導致其中一個執行失敗，並出現&#x200B;*無法更新管道執行狀態*&#x200B;錯誤。
-
-
