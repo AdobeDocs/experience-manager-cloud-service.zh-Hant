@@ -2,7 +2,7 @@
 title: 自訂和擴充內容片段
 description: 內容片段會延伸標準資產。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 1%
@@ -16,10 +16,6 @@ ht-degree: 1%
 * [使用內容片段建](/help/assets/content-fragments/content-fragments.md) 立和管 [理內容片段和頁](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 面編寫，以取得內容片段的詳細資訊。
 
 * [管理](/help/assets/manage-digital-assets.md) 資產，以取得標準資產的詳細資訊。
-
-<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
-* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
--->
 
 ## 架構 {#architecture}
 
@@ -44,7 +40,7 @@ ht-degree: 1%
    >
    >對現有內容片段模型的任何變更都可能影響相依片段；這可能會導致這些片段中的孤立屬性。
 
-### Sites與資產的整合{#integration-of-sites-with-assets}
+### Sites與資產的整合 {#integration-of-sites-with-assets}
 
 內容片段管理(CFM)是AEM Assets的一部分，如下所示：
 
@@ -56,7 +52,7 @@ ht-degree: 1%
 
 * 編寫頁面時會使用這些參數。
 
-#### 將內容片段對應至資產{#mapping-content-fragments-to-assets}
+#### 將內容片段對應至資產 {#mapping-content-fragments-to-assets}
 
 ![內容片段至資產](assets/content-fragment-to-assets.png)
 
@@ -77,17 +73,17 @@ ht-degree: 1%
 除了標題和說明，這些內容不被視為傳統中繼資料並儲存在 
 `jcr:content`
 
-#### 資產位置{#asset-location}
+#### 資產位置 {#asset-location}
 
 與標準資產一樣，內容片段位於：
 
 `/content/dam`
 
-#### 資產權限{#asset-permissions}
+#### 資產權限 {#asset-permissions}
 
 如需詳細資訊，請參閱[內容片段 — 刪除考量事項](/help/assets/content-fragments/content-fragments-delete.md)。
 
-#### 功能整合{#feature-integration}
+#### 功能整合 {#feature-integration}
 
 若要與Assets整合核心：
 
@@ -97,7 +93,7 @@ ht-degree: 1%
 
 * 數個Assets元件已擴充，以符合內容片段。
 
-### 在頁面{#using-content-fragments-in-pages}中使用內容片段
+### 在頁面中使用內容片段 {#using-content-fragments-in-pages}
 
 >[!CAUTION]
 >
@@ -129,13 +125,13 @@ ht-degree: 1%
 >
 >這表示如果您在發佈頁面時尚未發佈模型，則會標籤此模型，並將模型新增至要隨頁面發佈的資源。
 
-### 與其他框架{#integration-with-other-frameworks}整合
+### 與其他架構整合 {#integration-with-other-frameworks}
 
 內容片段可與：
 
 * **翻譯**
 
-   內容片段已與AEM翻譯工作流程完全整合。 在架構層面，這表示：
+   內容片段已與[AEM翻譯工作流程](/help/sites-cloud/administering/translation/overview.md)完全整合。 在架構層面，這表示：
 
    * 內容片段的個別翻譯實際上是個別片段；例如：
 
@@ -166,7 +162,7 @@ ht-degree: 1%
 
    * 各個架構表單與片段編輯器整合。
 
-## 內容片段管理API — 伺服器端{#the-content-fragment-management-api-server-side}
+## 內容片段管理API — 伺服器端 {#the-content-fragment-management-api-server-side}
 
 您可以使用伺服器端API來存取您的內容片段；請參閱：
 
@@ -176,7 +172,7 @@ ht-degree: 1%
 >
 >強烈建議使用伺服器端API，而非直接存取內容結構。
 
-### 密鑰介面{#key-interfaces}
+### 密鑰介面 {#key-interfaces}
 
 以下三個介面可作為入口點：
 
@@ -236,7 +232,7 @@ ht-degree: 1%
 
 
 
-### 適應 — 使用adapTo(){#adapting-using-adaptto}
+### 適應 — 使用adapTo() {#adapting-using-adaptto}
 
 可調整下列項目：
 
@@ -268,7 +264,7 @@ ht-degree: 1%
 
    * 使用`ContentElement.removeVariation()`透過元素移除現有變異時，不會更新指派給變異的全域資料結構。 若要確保這些資料結構保持同步，請改用`ContentFragment.removeVariation()`，以全域移除變數。
 
-## 內容片段管理API — 用戶端{#the-content-fragment-management-api-client-side}
+## 內容片段管理API — 用戶端 {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
@@ -282,7 +278,7 @@ ht-degree: 1%
 
    內容片段管理的`filter.xml`已設定，使其與「資產」核心內容套件不重疊。
 
-## 編輯會話{#edit-sessions}
+## 編輯工作階段 {#edit-sessions}
 
 >[!CAUTION]
 >
@@ -299,7 +295,7 @@ ht-degree: 1%
 
 ## 範例 {#examples}
 
-### 範例：存取現有內容片段{#example-accessing-an-existing-content-fragment}
+### 範例：存取現有內容片段 {#example-accessing-an-existing-content-fragment}
 
 若要達成此目標，您可以調整代表API的資源，以：
 
@@ -317,7 +313,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### 範例：建立新內容片段{#example-creating-a-new-content-fragment}
+### 範例：建立新內容片段 {#example-creating-a-new-content-fragment}
 
 若要以程式設計方式建立新內容片段，您需要使用
 `FragmentTemplate`適應於模型資源。
@@ -330,7 +326,7 @@ FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### 範例：指定自動保存間隔{#example-specifying-the-auto-save-interval}
+### 範例：指定自動儲存間隔 {#example-specifying-the-auto-save-interval}
 
 可使用配置管理器(ConfMgr)定義[自動儲存間隔](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions)（以秒為單位）:
 
@@ -349,7 +345,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 * 值：`300`（5分鐘等於300秒）
 
-## 頁面編寫元件{#components-for-page-authoring}
+## 頁面製作元件 {#components-for-page-authoring}
 
 如需詳細資訊，請參閱
 

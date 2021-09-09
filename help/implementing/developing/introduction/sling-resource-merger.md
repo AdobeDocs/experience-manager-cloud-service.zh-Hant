@@ -2,7 +2,7 @@
 title: 在Adobe Experience Manager中使用Sling Resource Merger做為Cloud Service
 description: Sling Resource Merger提供存取和合併資源的服務
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 2%
@@ -25,13 +25,11 @@ Sling Resource Merger提供存取和合併資源的服務。 它為以下兩者�
 
 * 如有必要，在自訂中定義的[屬性](#properties)會指出如何使用從原始合併的內容。
 
-<!-- Still links to reference material in 6.5 -->
-
 >[!CAUTION]
 >
 >Sling Resource Merger及相關方法只能搭配觸控式UI使用(這是AEM as a Cloud Service唯一可用的UI)。
 
-### AEM的目標{#goals-for-aem}
+### AEM目標 {#goals-for-aem}
 
 在AEM中使用Sling Resource Merger的目標為：
 
@@ -47,12 +45,11 @@ Sling Resource Merger提供存取和合併資源的服務。 它為以下兩者�
 >這是因為每當將升級應用到您的實例時，`/libs`的內容都可能被覆蓋。
 >
 >* 覆蓋圖取決於[搜尋路徑](/help/implementing/developing/introduction/overlays.md#search-paths)。
-   >
-   >
-* 覆蓋不依賴於搜索路徑，它們使用屬性`sling:resourceSuperType`建立連接。
 >
+>* 覆蓋不依賴於搜索路徑，它們使用屬性`sling:resourceSuperType`建立連接。
+
 >
-不過，覆寫通常定義在`/apps`下，因為在AEM as aCloud Service中，最佳作法是在`/apps`下定義自訂；這是因為您不得變更`/libs`下的任何項目。
+>不過，覆寫通常定義在`/apps`下，因為在AEM as aCloud Service中，最佳作法是在`/apps`下定義自訂；這是因為您不得變更`/libs`下的任何項目。
 
 ### 屬性 {#properties}
 
@@ -80,7 +77,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為以下兩者�
 
 這些屬性會影響覆蓋/覆寫（通常在`/apps`中）使用對應/原始資源/屬性的方式（來自`/libs`）。
 
-### 建立結構{#creating-the-structure}
+### 建立結構 {#creating-the-structure}
 
 若要建立覆蓋或覆寫，您必須在目的地（通常為`/apps`）下，以等同的結構重新建立原始節點。 例如：
 
@@ -123,7 +120,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為以下兩者�
 >
 >使用Sling Resource Merger時（即處理標準的觸控式UI時），不建議從`/libs`複製整個結構，因為這會導致`/apps`中保留太多資訊。 這在系統以任何方式升級時都可能造成問題。
 
-### 使用案例{#use-cases}
+### 使用案例 {#use-cases}
 
 這些功能與標準功能結合，可讓您：
 
@@ -216,7 +213,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為以下兩者�
          * 類型: `String`
          * 值: `<before-SiblingName>`
 
-### 從您的程式碼{#invoking-the-sling-resource-merger-from-your-code}叫用Sling Resource Merger
+### 從程式碼叫用Sling Resource Merger {#invoking-the-sling-resource-merger-from-your-code}
 
 Sling Resource Merger包含兩個自訂資源提供者：一個用於覆蓋，另一個用於覆寫。 您可以使用裝載點在您的代碼中叫用其中的每一項：
 
@@ -244,17 +241,3 @@ Sling Resource Merger包含兩個自訂資源提供者：一個用於覆蓋，�
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
-<!--
-### Example of Usage {#example-of-usage}
-
-Some examples are covered:
-
-* Overlay:
-
-    * [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md)
-    * [Customizing Page Authoring](/help/sites-developing/customizing-page-authoring-touch.md)
-
-* Override:
-
-    * [Configuring your Page Properties](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
--->
