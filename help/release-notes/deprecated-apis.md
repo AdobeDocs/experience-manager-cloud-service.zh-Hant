@@ -2,10 +2,10 @@
 title: 已棄用的API
 description: 發行說明，專供 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中已棄用和已移除的API。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 70ca1cce6995634d330da68cf8bce8ee12c71f1e
+source-git-commit: ac72c6f668e36b0904459f4448dd3bf889a8a69e
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 7%
+source-wordcount: '498'
+ht-degree: 8%
 
 ---
 
@@ -113,6 +113,30 @@ ht-degree: 7%
     <td>不建議使用Apache Felix中繼類型和SCR API。  請改用OSGi中繼類型和宣告服務API。</td>
     <td>5/27/21</td>
     <td>8/26/21</td>
+  </tr>
+  <tr>
+    <td>oorg.slf4j.impl</td>
+    <td>記錄實作類別與AEM as aCloud Service不相容。</td>
+    <td>7/4/21</td>
+    <td>8/26/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
+    <td>此API已淘汰，因為Apache Abdera自2017年起已淘汰為專案。</td>
+    <td>7/29/21</td>
+    <td>09/29/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
+    <td>此API已淘汰，因為Apache Abdera自2017年起已淘汰為專案。</td>
+    <td>4/8/19</td>
+    <td>09/29/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.startupfilter</td>
+    <td>舊版AEM 6.x API。</td>
+    <td>4/8/19</td>
+    <td>09/29/21</td>
   </tr>
 </tbody>
 </table>
