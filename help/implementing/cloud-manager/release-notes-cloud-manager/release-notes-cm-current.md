@@ -3,7 +3,7 @@ title: AEM as aCloud Service中Cloud Manager的發行說明2021.9.0版
 description: AEM as aCloud Service中Cloud Manager的發行說明2021.9.0版
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 5%
@@ -24,6 +24,8 @@ AEM as aCloud Service2021.9.0中的Cloud Manager發行日期為2021年9月9日�
 
 ### 新增功能 {#what-is-new}
 
+* Cloud Manager使用的AEM專案原型版本已更新為30版。
+
 * Cloud Manager登陸頁面上的方案卡片和相關聯的體驗已重新整理。
 
 * 程式碼品質步驟記錄現在包含OakPal掃描程式的詳細記錄資訊。
@@ -31,8 +33,6 @@ AEM as aCloud Service2021.9.0中的Cloud Manager發行日期為2021年9月9日�
 * 「活動」頁面功能表選項現在包含已完成代碼產生器執行的&#x200B;**下載記錄**&#x200B;選項。 選取此選項將下載建置步驟的記錄檔。
 
 * 直接按一下「方案」卡片，現在會導覽至「Cloud Manager概觀」頁面。
-
-* Cloud Manager使用的AEM專案原型版本已更新為30版。
 
 ### 錯誤修正 {#bug-fixes}
 
