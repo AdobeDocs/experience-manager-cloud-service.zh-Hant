@@ -2,9 +2,9 @@
 title: '建立生產計畫 '
 description: 建立生產計畫
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
+source-git-commit: 0d3a4b296440becab8ef372a1061f1981cb05897
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ ht-degree: 0%
 
    ![](assets/setup-prod-commerce.png)
 
-1. 在登陸頁面上看到您的方案卡片後，將滑鼠指標暫留在該卡片上，以選取Cloud Manager圖示來導覽至Cloud Manager **概述**&#x200B;頁面。
+1. 在登錄頁面上看到程式卡後，請選取&#x200B;**...**，查看可用的功能表選項。 選取&#x200B;**Cloud Manager**，如下圖所示，以導覽至Cloud Manager的&#x200B;**概述**&#x200B;頁面。
 
-   ![](assets/set-up-prod4.png)
+   ![](assets/navigate-cm.png)
 
 1. 主要的動作呼叫卡將引導使用者建立環境、建立非生產管道，最後是生產管道。
    ![](assets/set-up-prod5.png)
