@@ -1,13 +1,13 @@
 ---
 title: 在螢幕中安裝和設定播放器作為Cloud Service
 description: 本頁面說明如何在Screens中安裝和設定播放器，作為Cloud Service。
-source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
+exl-id: a022738a-c543-4629-a244-f70fa294fe7f
+source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
-
 
 # 在螢幕中安裝和設定播放器作為Cloud Service {#installing-players-screens-cloud}
 
@@ -45,9 +45,9 @@ ht-degree: 1%
 
 ## 基本播放監控 {#playback-monitoring}
 
-播放器會報告各種播放量度，每個`ping`預設為30秒。 您可以根據量度偵測各種邊緣案例，例如體驗停滯、空白畫面和排程問題。 這可讓您了解和疑難排解裝置上的問題，進而加速調查和修正措施。
+播放器會報告各種播放量度，每個`ping`預設為30秒。 根據這些量度，我們可以偵測各種邊緣案例，例如體驗停滯、空白畫面和排程問題。 這可讓我們了解和疑難排解裝置上的問題，進而加速與您一起進行調查和採取糾正措施。
 
-AEM Screens播放器中的基本播放監控可讓您：
+AEM Screens播放器中的基本播放監控可讓我們：
 
 * 如果播放器正確播放內容，則遠程監視。
 
@@ -80,9 +80,11 @@ AEM Screens播放器中的基本播放監控可讓您：
 
 * 播放器會向伺服器報告自己的播放狀態，因此需要使用中的連線。
 
-* 檢查GPU的`isContentRendering`屬性當前需要大量資源，預設情況下將啟用，並且需要從播放器首選項中明確選擇加入。 建議不要將其與影片搭配使用。
+* 檢查GPU的`isContentRendering`屬性當前佔用的資源太多，預設情況下無法啟用，需要從播放器首選項中明確選擇加入。 建議您不要將其與生產中的影片搭配使用。
 
-* 序列通道支援此功能。
+* 此功能僅支援序列管道，不涵蓋互動式管道(SPA)使用案例。
+
+* 這些量度尚未完全公開給客戶，我們正在努力在不久的將來啟用類似控制面板的報表和警報機制。
 
 ## 下一步 {#whats-next}
 
