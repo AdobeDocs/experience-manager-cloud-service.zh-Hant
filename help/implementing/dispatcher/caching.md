@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
+source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1572'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Define DISABLE_DEFAULT_CACHING
    { /glob "*" /type "allow" }
    ```
 
-* 為防止快取特定內容，請將「快取控制」標頭設定為&#x200B;*private*。 例如，以下操作會防止快取名為&#x200B;**secure**&#x200B;的目錄下的html內容：
+* 為了防止在CDN **上快取特定內容，請將「快取控制」標題設定為&#x200B;*private*。**&#x200B;例如，下列項目可防止CDN快取名為&#x200B;**secure**&#x200B;的目錄下的html內容：
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -70,6 +70,9 @@ Define DISABLE_DEFAULT_CACHING
 
    >[!NOTE]
    >其他方法(包括[dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))將無法成功覆寫值。
+
+   >[!NOTE]
+   >請注意，Dispatcher仍可能根據其自己的[快取規則](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html)來快取內容。 若要讓內容真正私密，您應確保Dispatcher不會快取內容。
 
 ### 用戶端資料庫(js,css) {#client-side-libraries}
 
