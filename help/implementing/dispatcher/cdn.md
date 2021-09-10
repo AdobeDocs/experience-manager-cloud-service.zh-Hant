@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: b8466ace384657d972a55e39dbd2fcdac1a9d0b9
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 8%
+source-wordcount: '926'
+ht-degree: 7%
 
 ---
 
@@ -65,6 +65,12 @@ AEM管理的CDN將可滿足大部分客戶的效能和安全性需求。 對於�
    * 可選擇在`X-AEM-Edge-Key`不存在時封鎖AdobeCDN入口的存取。 如果您需要直接存取AdobeCDN的入口（待封鎖），請通知Adobe。
 
 在接受即時流量之前，您應向Adobe的客戶支援驗證端對端流量路由是否正常運作。
+
+取得`X-AEM-Edge-Key`後，您可以依照下列方式測試要求是否正確路由：
+
+```
+curl publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+```
 
 請注意，使用您自己的CDN時，不需要在Cloud Manager中安裝網域和憑證。 AdobeCDN中的路由將使用預設域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成。
 
