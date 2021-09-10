@@ -5,7 +5,7 @@ breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 35%
@@ -56,6 +56,13 @@ ht-degree: 35%
       + [設定專案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
       + [了解建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
    + [管理環境](cloud-manager/manage-environments.md)
+   + 管理程式碼 {#managing-code}
+      + [Maven 專案版本處理](cloud-manager/managing-code/project-version-handling.md)
+      + [Cloud Manager中的存放庫](cloud-manager/managing-code/cloud-manager-repositories.md)
+      + [存取儲存庫](cloud-manager/managing-code/accessing-repos.md)
+      + [整合 Git 與 Adobe Cloud Manager](cloud-manager/managing-code/integrating-with-git.md)
+      + [使用多個來源Git存放庫](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+      + [AEM as aCloud Service的企業團隊開發設定](cloud-manager/managing-code/enterprise-team-dev-setup.md)
    + [設定 CI/CD 管道](cloud-manager/configure-pipeline.md)
    + [部署程式碼](cloud-manager/deploy-code.md)
    + 了解測試結果 {#test-results}
@@ -95,13 +102,6 @@ ht-degree: 35%
       + [刪除IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [檢查IP允許清單狀態](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + [Cloud Manager常見問題集](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
-+ 管理程式碼 {#managing-code}
-   + [Maven 專案版本處理](cloud-manager/project-version-handling.md)
-   + [Cloud Manager中的存放庫](cloud-manager/cloud-manager-repositories.md)
-   + [存取儲存庫](cloud-manager/accessing-repos.md)
-   + [整合 Git 與 Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
-   + [使用多個來源Git存放庫](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-   + [AEM as aCloud Service的企業團隊開發設定](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + 為 AEM as a Cloud Service 開發 {#developing}
    + [AEM 專案結構](developing/introduction/aem-project-content-package-structure.md)
    + [AEM 專案存放庫結構套件](developing/introduction/repository-structure-package.md)

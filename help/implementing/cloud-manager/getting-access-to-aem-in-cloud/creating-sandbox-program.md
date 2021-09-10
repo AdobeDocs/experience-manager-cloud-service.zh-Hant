@@ -2,7 +2,7 @@
 title: '建立沙箱方案 '
 description: 建立沙箱方案
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >若要進一步了解如何使用Cloud Manager UI的自助服務Git帳戶管理來存取和管理您的Git存放庫，請參閱[存取Git](/help/implementing/cloud-manager/accessing-repos.md)。
+   >若要進一步了解如何使用Cloud Manager UI的自助服務Git帳戶管理來存取和管理您的Git存放庫，請參閱[存取Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)。
 
 
 1. 建立開發環境後，使用者就可以&#x200B;**存取AEM**&#x200B;連結，如下圖所示：

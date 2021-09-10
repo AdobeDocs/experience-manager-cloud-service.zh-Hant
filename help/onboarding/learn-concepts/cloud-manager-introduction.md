@@ -2,7 +2,7 @@
 title: 了解什麼是Cloud Manager
 description: 請詳閱本頁，了解Cloud Manager、Cloud Manager程式和環境。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a21116e9ea59e608590151dc2682ff6e73dde9ed
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 3%
@@ -17,7 +17,7 @@ Cloud Manager是AEM的必要元件，可作為Cloud Service，也是您團隊的
 
 為確保客戶能以AEM as aCloud Service快速上手，Cloud Manager提供以自助方式開始使用所需的一切，包括建立雲端資源和環境的能力。 如此一來，您的AEM開發人員就能透過Cloud Manager存取Git存放庫。 使用Cloud Manager，開發團隊可以自助方式經常致力於提交變更。
 
-您的系統管理員將負責設定您的Cloud Manager團隊，團隊中將包括將建立您雲端資源和開發人員的個人。 請參考[AEM as a Cloud Service的企業團隊開發設定](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)，了解Cloud Manager如何在企業團隊開發設定中支援。
+您的系統管理員將負責設定您的Cloud Manager團隊，團隊中將包括將建立您雲端資源和開發人員的個人。 請參考[AEM as a Cloud Service的企業團隊開發設定](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)，了解Cloud Manager如何在企業團隊開發設定中支援。
 
 ## 導覽至Cloud Manager的概觀頁面 {#navigate-cloud-manager}
 

@@ -2,7 +2,7 @@
 title: 了解方案和方案類型
 description: 了解方案和方案類型 — Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
+source-git-commit: aae4d942ef1e7ffd0065de73c3fbd044a19c3e8e
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Cloud Manager程式會自動布建並隨附自己的Git存放庫。
 
 若要讓使用者存取Cloud Manager Git存放庫，使用者需使用Git用戶端及命令列工具、獨立的視覺化Git用戶端，或使用者的IDE（例如Eclipse、IntelliJ、NetBeans）。
 
-設定Git用戶端後，您就可以從Cloud Manager UI管理Git存放庫。 若要了解如何使用Cloud Manager UI管理Git，請參閱[存取Git](/help/implementing/cloud-manager/accessing-repos.md)。
+設定Git用戶端後，您就可以從Cloud Manager UI管理Git存放庫。 若要了解如何使用Cloud Manager UI管理Git，請參閱[存取Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)。
 
 若要開始開發AEM雲端應用程式，必須從Cloud Manager存放庫簽出應用程式程式碼的本機副本，並存放至其本機電腦上要建立存放庫的位置。
 
