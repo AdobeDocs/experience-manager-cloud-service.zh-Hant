@@ -1,9 +1,9 @@
 ---
 title: Screens as aCloud Service中的Dispatcher設定
 description: 本頁將Screens中的Dispatcher設定描述為Cloud Service。
-source-git-commit: b00856e1be8842c4e9fa6ed4ada9129926c73ef5
+source-git-commit: f7a201ed72011df2ed603528ad80cf191c9f2d77
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,7 @@ ht-degree: 0%
 
 在Screens中，針對發佈例項，在Dispatcher中允許下列篩選器和快取規則作為Cloud Service。
 
-### 濾鏡 {#filters}
-
-## AEM Screens篩選器
+### AEM Screens篩選器 {#filters}
 
 ```
 ## # Content Configurations
@@ -32,12 +30,12 @@ ht-degree: 0%
 /0210 { /type "allow" /method "GET" /url "/etc.clientlibs/*" }
 ```
 
-## 快取規則 {#cache-rules}
+### 快取規則 {#cache-rules}
 
 * 將`/statfileslevel "10"`新增至`publish_farm.any`/中的`/cache`區段。
 
    >[!NOTE]
-   >這可支援從快取快取最多10個層級，且在內容發佈時會失效，而非讓所有內容失效。 您可以根據內容結構的深度來變更此層級。
+   >此快取規則支援從快取快取中快取高達10個層級，且內容發佈時會失效，而非使所有內容失效。 您可以根據內容結構的設定深度來變更此層級。
 
 * 將下列內容新增至`publish_farm.any`中的`/invalidate`區段。
 
@@ -56,7 +54,7 @@ ht-degree: 0%
         {
         /glob "/content/screens/*.html"
         /type "allow"
-            }
+        }
    
    ## Allow Dispatcher Cache for Screens offline manifests
    
