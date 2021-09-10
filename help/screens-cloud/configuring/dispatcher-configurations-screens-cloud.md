@@ -1,19 +1,19 @@
 ---
 title: Screens as aCloud Service中的Dispatcher設定
 description: 本頁將Screens中的Dispatcher設定描述為Cloud Service。
-source-git-commit: f7a201ed72011df2ed603528ad80cf191c9f2d77
+source-git-commit: b00fd1e3826a7d0b0a4bf80b002fffda8f3983d0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
 
 
-# Screens as aCloud Service中的Dispatcher設定{#dispatcher-configurations-screens-cloud}
+# Screens as aCloud Service中的Dispatcher設定 {#dispatcher-configurations-screens-cloud}
 
 本節將Screens的Dispatcher設定說明為Cloud Service。
 
-## 以Screens作為Cloud Service部署的Dispatcher設定 {#deployment}
+## 在Dispatcher for Screens中新增篩選器和快取規則作為Cloud Service部署 {#deployment}
 
 在Screens中，針對發佈例項，在Dispatcher中允許下列篩選器和快取規則作為Cloud Service。
 
