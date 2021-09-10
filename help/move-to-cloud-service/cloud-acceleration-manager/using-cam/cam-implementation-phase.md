@@ -1,13 +1,13 @@
 ---
 title: Cloud Acceleration Manager中的實作階段
 description: 本頁概述Cloud Acceleration Manager的實作階段。
-source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
+exl-id: 4ea13f12-7251-448f-9f54-c8d710aef2ba
+source-git-commit: e786fe40d97294b4ab5e8657920f2ecbb401d8e9
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '674'
 ht-degree: 2%
 
 ---
-
 
 # Cloud Acceleration Manager中的實作階段 {#implementation-phase-cam}
 
@@ -60,21 +60,16 @@ ht-degree: 2%
    * Dispatcher
    * 測試
 
-   **概述**&#x200B;標籤會顯示程式碼重構活動的清單。
+>[!NOTE]
+>請查看這些頁簽中的內容，了解Best Practices Analyzer未涵蓋的其他部分。
 
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+**Dispatcher**&#x200B;標籤提供如何將AEM建構為Cloud ServiceApache和Dispatcher設定的資訊，以及如何在部署至雲端環境之前，在本機驗證和執行它。 此外，也說明在雲端環境中進行除錯的方式。
 
-   **Dispatcher**&#x200B;標籤提供如何將AEM建構為Cloud ServiceApache和Dispatcher設定的資訊，以及如何在部署至雲端環境之前，在本機驗證和執行它。 此外，也說明在雲端環境中進行除錯的方式。
+![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+**Testing**&#x200B;標籤提供功能、體驗稽核和UI測試的相關資訊。
 
-   **Testing**&#x200B;標籤提供功能、體驗稽核和UI測試的相關資訊。
-
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
-
-
-   >[!NOTE]
-   >此外，請查看頁面標籤中的內容，了解Best Practices Analyzer未涵蓋的其他部分。
+![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## 使用AEM作為Cloud Service部署卡 {#aem-as-a-cloud-service-deployment}
