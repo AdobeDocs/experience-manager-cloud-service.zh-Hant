@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
+source-git-commit: 534fd193181fe22392fb598625d3a018a4a09e69
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1628'
 ht-degree: 2%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 2%
 如需詳細資訊，請參閱[基本播放監控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) 。
 
 * Screens as aCloud Service現在支援的視訊縮圖支援。 內容作者可以定義視訊的縮圖，以便影像可作為預留位置，並在適當團隊完成實際視訊時，正確測試內容播放和鎖定目標。 當視訊播放失敗時，也可以使用影像。
-如需詳細資訊，請參閱[視訊的縮圖支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=en) 。
+如需詳細資訊，請參閱[視訊的縮圖支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) 。
 
 ### 錯誤修正 {#bug-fixes-screens}
 

@@ -3,13 +3,13 @@ title: 與 [!DNL Adobe Creative Cloud]整合的最佳實務
 description: 最佳實務將Experience Manager部署與Adobe Creative Cloud整合，以簡化資產傳輸工作流程並達到最高效率。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 協作，Adobe資產連結，案頭應用程式
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '3451'
-ht-degree: 14%
+source-wordcount: '3443'
+ht-degree: 15%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務生態系統，協
 | 相關角色的價值主張 | Adobe產品 | 相關曲面 |
 |---|---|---|
 | 創意內容使用者可從[!DNL Experience Manager]探索資產、開啟並使用資產、編輯和上傳對[!DNL Experience Manager]的變更，以及將新檔案上傳至[!DNL Experience Manager]，而不需離開其[!DNL Creative Cloud]應用程式。 | [Adobe資產連結](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign。 |
-| 業務用戶簡化了開啟和使用資產、編輯和上傳[!DNL Experience Manager]的更改，以及從案頭環境將新檔案上傳到[!DNL Experience Manager]。 他們會使用一般整合來開啟原生案頭應用程式中的任何資產類型，包括非Adobe的資產類型。 | [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Experience ManagerWin和Mac案頭上的案頭應用程式 |
+| 業務用戶簡化了開啟和使用資產、編輯和上傳[!DNL Experience Manager]的更改，以及從案頭環境將新檔案上傳到[!DNL Experience Manager]。 他們會使用一般整合來開啟原生案頭應用程式中的任何資產類型，包括非Adobe的資產類型。 | [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Experience ManagerWin和Mac案頭上的案頭應用程式 |
 | 行銷人員和商務使用者可從Experience Manager中探索、預覽、授權及儲存及管理Adobe Stock資產。 授權和儲存的資產可提供選取的Adobe Stock中繼資料，以改善控管。 | [Experience Manager與Adobe Stock整合](aem-assets-adobe-stock.md) | [!DNL Experience Manager] 網頁介面 |
 | 改善數位產品設計人員和行銷人員之間的協作。 讓設計師在Adobe XD畫布上的設計和線框模型中使用數位資產。 | [[!DNL Adobe Asset Link] for [!DNL Adobe XD]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | 行銷人員可以根據上傳的資產和使用自訂功能建立的預先定義動作，自動建立變數和衍生產品。 使用此自動化來提高內容速度並減少手動工作量。 | [內容自動化](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] 網頁介面 |

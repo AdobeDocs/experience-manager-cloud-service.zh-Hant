@@ -2,12 +2,12 @@
 title: '使用Brand Portal將AEM Assets設定為a [!DNL Cloud Service] '
 description: 使用 Brand Portal 設定 AEM Assets.
 contentOwner: Vishabh Gupta
-feature: Brand Portal，資產分送，設定
+feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2396'
 ht-degree: 8%
 
 ---
@@ -25,7 +25,7 @@ Cloud Manager使用者會為AEM Assets啟用Brand Portal作為[!DNL Cloud Servic
 您需要下列項目，才能以[!DNL Cloud Service]例項形式在您的AEM Assets上啟用Brand Portal:
 
 * 以[!DNL Cloud Service]例項形式啟動且執行的AEM Assets。
-* 有權存取Cloud Manager的使用者，已指派給Cloud Manager產品的設定檔。 如需詳細資訊，請參閱[存取Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#accessing-cloud-manager) 。
+* 有權存取Cloud Manager的使用者，已指派給Cloud Manager產品的設定檔。 如需詳細資訊，請參閱[存取Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) 。
 
 >[!NOTE]
 >
@@ -61,9 +61,9 @@ Cloud Manager使用者會為AEM Assets啟用Brand Portal作為[!DNL Cloud Servic
 >如果現有的Brand Portal雲端設定和AEM Assets作為[!DNL Cloud Service]例項使用相同的IMS組織(org1)，您只需從Cloud Manager啟用Brand Portal即可。
 
 **另請參閱**:
-* [在AEM Assets中新增使用者和角色作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en)
+* [在AEM Assets中新增使用者和角色作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
-* [在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
+* [在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
 
 **登入您的Brand Portal租用戶**:
@@ -132,7 +132,7 @@ Brand Portal租用戶的預設URL為：`https://<tenant-id>.brand-portal.adobe.c
 * [從 AEM Assets 發佈資產到 Brand Portal](publish-to-brand-portal.md)
 * [從 AEM Assets 發佈資料夾到 Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [從 AEM Assets 發佈集合到 Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [從Brand Portal發佈資產至AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)  - Brand Portal中的Asset Sourcing
+* [從Brand Portal發佈資產至AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Brand Portal中的Asset Sourcing
 * [將預設集、結構和 Facet 發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [將標記發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
@@ -445,7 +445,7 @@ You can now:
 * [Publish assets from AEM Assets to Brand Portal](publish-to-brand-portal.md)
 * [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publish collections from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Asset Sourcing in Brand Portal
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Sourcing in Brand Portal
 * [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 

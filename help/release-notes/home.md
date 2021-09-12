@@ -2,9 +2,9 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: bd2a2fb37b7a89a41687e15eacf9dbb767cb272f
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '661'
 ht-degree: 44%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 44%
 
 準備發行：
 
-1. 標籤日曆：在[Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service)上查看每月發行的關鍵日期，並標籤日曆，為重要活動做好準備，以便準備發行。
+1. 標籤日曆：在[Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)上查看每月發行的關鍵日期，並標籤日曆，為重要活動做好準備，以便準備發行。
 1. 檢閱發行說明：請參閱[最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)，以熟悉發行和發行前功能。
 1. 訪問並嘗試新功能：在非生產環境中啟用[搶鮮通道](/help/release-notes/prerelease.md)，並開始嘗試在自訂環境中評估功能。
 1. 培訓您的用戶：使用檔案和Experience League資源，讓使用者快速熟悉新功能。

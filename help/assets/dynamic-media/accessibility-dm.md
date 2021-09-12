@@ -4,11 +4,11 @@ description: 了解Dynamic Media和Dynamic Media檢視器中的協助工具。
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: 協助工具
+feature: Accessibility
 role: Admin,User
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Dynamic Media使用者介面元素可搭配輔助技術使用，例如螢幕閱�
 ## Dynamic Media檢視器中的輔助技術支援{#assistive-technology=support-for-dm-viewers}
 
 所有Dynamic Media檢視器元件都支援ARIA（可存取的豐富網際網路應用程式）角色和屬性，以改善與輔助技術（例如螢幕閱讀器）的整合。
-請參閱Dynamic Media檢視器參考指南中任何自訂檢視器主題的**輔助技術支援**&#x200B;說明主題。 例如，請參閱視訊檢視器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html)，或互動式影像檢視器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only)。
+請參閱Dynamic Media檢視器參考指南中任何自訂檢視器主題的**輔助技術支援**&#x200B;說明主題。 例如，請參閱視訊檢視器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html)，或互動式影像檢視器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)。
 
 >[!MORELIKETHIS]
 >

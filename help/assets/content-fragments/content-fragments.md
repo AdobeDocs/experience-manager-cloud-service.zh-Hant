@@ -1,12 +1,12 @@
 ---
 title: 使用內容片段
 description: 了解Adobe Experience Manager(AEM)中的內容片段作為Cloud Service時，如何讓您設計、建立、組織及使用不受頁面影響的內容，最適合無頭式傳送。
-feature: 內容片段
+feature: Content Fragments
 role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2033'
 ht-degree: 3%
 
 ---
@@ -51,9 +51,9 @@ ht-degree: 3%
 >
 >* [使用內容片段進行頁面編寫](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
 >* [自訂和擴充內容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
-* [轉譯專用內容片段設定元件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-* [AEM Assets HTTP API 內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)
-* [AEM GraphQL API以搭配內容片段使用](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [轉譯專用內容片段設定元件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+>* [AEM Assets HTTP API 內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [AEM GraphQL API以搭配內容片段使用](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 通信渠道的數量每年都在增加。 通常管道是指傳送機制，如下所示：
@@ -75,12 +75,15 @@ ht-degree: 3%
 然後，可組合這些內容片段，以透過各種管道提供體驗。
 
 >[!NOTE]
-**內容** 片段和 **[體驗](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** 片段是AEM內的不同功能：
-* **內容** 片段是編輯內容，可用來存取結構化資料，包括文字、數字和日期等。它們是純內容，具有定義和結構，但沒有額外的視覺設計和/或版面。
-* **體驗** 片段內容已完整規劃；網頁的片段。
+>
+>**內容** 片段和 **[體驗](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** 片段是AEM內的不同功能：
+>* **內容** 片段是編輯內容，可用來存取結構化資料，包括文字、數字和日期等。它們是純內容，具有定義和結構，但沒有額外的視覺設計和/或版面。
+>* **體驗** 片段內容已完整規劃；網頁的片段。
 
-體驗片段可以包含內容片段形式的內容，但不能以相反的方式。
-如需詳細資訊，請參閱[了解AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments)中的內容片段和體驗片段。
+>
+>體驗片段可以包含內容片段形式的內容，但不能以相反的方式。
+>
+>如需詳細資訊，請參閱[了解AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)中的內容片段和體驗片段。
 
 ## 內容片段與內容服務 {#content-fragments-and-content-services}
 
@@ -99,13 +102,16 @@ AEM內容片段可用來說明及管理結構化內容。 結構化內容定義�
 此結構化內容再加上AEM核心元件的JSON匯出功能，便可用來將AEM內容傳送至AEM頁面以外的管道。
 
 >[!NOTE]
-如需AEM Sites as aCloud Service無頭開發的簡介，請參閱[無頭和AEM](/help/implementing/developing/headless/introduction.md)。
+>
+>如需AEM Sites as aCloud Service無頭開發的簡介，請參閱[無頭和AEM](/help/implementing/developing/headless/introduction.md)。
 
 >[!NOTE]
-AEM也支援片段內容的翻譯。
+>
+>AEM也支援片段內容的翻譯。
 
 >[!NOTE]
-AEM也支援片段內容的翻譯。 如需詳細資訊，請參閱[轉譯資產](/help/assets/translate-assets.md) 。
+>
+>AEM也支援片段內容的翻譯。 如需詳細資訊，請參閱[轉譯資產](/help/assets/translate-assets.md) 。
 
 ## 內容類型 {#content-type}
 
@@ -144,7 +150,8 @@ AEM也支援片段內容的翻譯。 如需詳細資訊，請參閱[轉譯資產
    * 如需詳細資訊，請參閱片段編輯器中的[將資產插入您的片段](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) 。
 
    >[!NOTE]
-   插入內容片段本身的視覺資產會附加至前一段。 將片段新增至頁面時，當內容介於之間時，這些資產會相對於該段落移動。
+   >
+   >插入內容片段本身的視覺資產會附加至前一段。 將片段新增至頁面時，當內容介於之間時，這些資產會相對於該段落移動。
 
 * **相關聯的內容**
 
@@ -188,10 +195,12 @@ AEM也支援片段內容的翻譯。 如需詳細資訊，請參閱[轉譯資產
    * 附於前文（段）。
 
       >[!CAUTION]
-      切換為純文字格式後，可能會（無意中）從片段中移除資產。
+      >
+      >切換為純文字格式後，可能會（無意中）從片段中移除資產。
 
       >[!NOTE]
-      在頁面上使用片段時，也可以將資產新增為[其他（介於）內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content);使用「資產」瀏覽器中的「關聯內容」或「資產」。
+      >
+      >在頁面上使用片段時，也可以將資產新增為[其他（介於）內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content);使用「資產」瀏覽器中的「關聯內容」或「資產」。
 
 * **相關聯的內容**
 
@@ -215,7 +224,8 @@ AEM也支援片段內容的翻譯。 如需詳細資訊，請參閱[轉譯資產
          * 在片段編輯器中編輯&#x200B;**中繼資料**&#x200B;時
 
    >[!CAUTION]
-   中繼資料處理設定檔不適用於內容片段。
+   >
+   >中繼資料處理設定檔不適用於內容片段。
 
 * **主版**
 
@@ -248,7 +258,8 @@ AEM也支援片段內容的翻譯。 如需詳細資訊，請參閱[轉譯資產
 * 您也可以使用相關內容，使用適當瀏覽器的資產和/或元件。
 
 >[!CAUTION]
-中間內容是頁面內容。 它不會儲存在內容片段中。
+>
+>中間內容是頁面內容。 它不會儲存在內容片段中。
 
 ### 片段所需 {#required-by-fragments}
 

@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中使用互動式視訊和可購買視
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '5938'
+source-wordcount: '5936'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 * 若要暫停影片並開啟產品的「快速檢視」，請選取縮圖。 例如，在視頻中選擇KitchenAid縮圖影像，以體驗混合器的360°旋轉視圖，或放大以查看混合器詳細資訊。
 
-另請參閱[使用互動式視訊搭配Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
+另請參閱[使用互動式視訊搭配Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
 
 <!-- 
 

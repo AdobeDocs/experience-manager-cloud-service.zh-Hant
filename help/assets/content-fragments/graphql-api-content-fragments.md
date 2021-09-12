@@ -1,17 +1,17 @@
 ---
 title: AEM GraphQL API以搭配內容片段使用
 description: 了解如何搭配AEM GraphQL API使用Adobe Experience Manager(AEM)中的內容片段作為Cloud Service，進行無周邊內容傳送。
-feature: 內容片段，GraphQL API
+feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '3935'
+source-wordcount: '3929'
 ht-degree: 1%
 
 ---
 
 
-# AEM GraphQL API以用於內容片段{#graphql-api-for-use-with-content-fragments}
+# AEM GraphQL API以搭配內容片段使用 {#graphql-api-for-use-with-content-fragments}
 
 了解如何搭配AEM GraphQL API使用Adobe Experience Manager(AEM)中的內容片段作為Cloud Service，進行無周邊內容傳送。
 
@@ -73,7 +73,7 @@ GraphQL為：
 
 * [GitHub上的GraphQL Java](https://github.com/graphql-java)
 
-### GraphQL術語{#graphql-terminology}
+### GraphQL術語 {#graphql-terminology}
 
 GraphQL使用下列功能：
 
@@ -93,7 +93,7 @@ GraphQL使用下列功能：
 
 請參閱[(GraphQL.org)GraphQL簡介](https://graphql.org/learn/)以取得完整詳細資訊，包括[最佳實務](https://graphql.org/learn/best-practices/)。
 
-### GraphQL查詢類型{#graphql-query-types}
+### GraphQL查詢類型 {#graphql-query-types}
 
 使用GraphQL，您可以執行查詢以返回：
 
@@ -108,7 +108,7 @@ GraphQL使用下列功能：
 >[!NOTE]
 >您可以使用[GraphiQL IDE](#graphiql-interface)測試和調試GraphQL查詢。
 
-## AEM端點{#graphql-aem-endpoint}的GraphQL
+## AEM端點的GraphQL {#graphql-aem-endpoint}
 
 端點是用來存取AEM適用的GraphQL的路徑。 使用此路徑，您（或您的應用程式）可以：
 
@@ -148,7 +148,7 @@ GraphQL for AEM全域端點的存放庫路徑為：
 * [啟用GraphQL端點](#enabling-graphql-endpoint)
 * [發佈GraphQL端點](#publishing-graphql-endpoint)
 
-### 啟用GraphQL端點{#enabling-graphql-endpoint}
+### 啟用GraphQL端點 {#enabling-graphql-endpoint}
 
 要啟用GraphQL端點，您首先需要有適當的配置。 請參閱[內容片段 — 設定瀏覽器](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
 
@@ -180,7 +180,7 @@ GraphQL for AEM全域端點的存放庫路徑為：
    >
    >您可以在端點上設定與您的使用案例相應的ACL。
 
-### 發佈GraphQL端點{#publishing-graphql-endpoint}
+### 發佈GraphQL端點 {#publishing-graphql-endpoint}
 
 選取新端點和&#x200B;**Publish**，使其可在所有環境中完全使用。
 
@@ -192,7 +192,7 @@ GraphQL for AEM全域端點的存放庫路徑為：
 >
 >您必須在端點上設定與您的使用案例相適用的ACL。
 
-## GraphiQL介面{#graphiql-interface}
+## GraphiQL介面 {#graphiql-interface}
 
 標準[GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)介面的實現可與AEM GraphQL搭配使用。 這可與AEM](#installing-graphiql-interface)一起安裝。[
 
@@ -210,11 +210,11 @@ GraphQL for AEM全域端點的存放庫路徑為：
 
 ![GraphiQL介](assets/cfm-graphiql-interface.png "面GraphiQL介面")
 
-### 安裝AEM GraphQL介面{#installing-graphiql-interface}
+### 安裝AEM GraphQL介面 {#installing-graphiql-interface}
 
 GraphiQL使用者介面可安裝在AEM上，並附上專用套件：[GraphiQL內容包v0.0.6(2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip)包。
 
-## 製作和發佈環境的使用案例{#use-cases-author-publish-environments}
+## 製作和發佈環境的使用案例 {#use-cases-author-publish-environments}
 
 使用案例視AEM作為Cloud Service環境的類型而定：
 
@@ -230,7 +230,7 @@ GraphiQL使用者介面可安裝在AEM上，並附上專用套件：[GraphiQL內
 
 權限是存取資產所需的權限。
 
-## 架構生成{#schema-generation}
+## 結構產生 {#schema-generation}
 
 GraphQL是強式類型的API，這表示資料必須依類型清楚地建構和組織。
 
@@ -283,7 +283,7 @@ Sites GraphQL服務會監聽（在背景）對內容片段模型所做的任何�
 
 該架構通過與GraphQL查詢相同的終結點提供，客戶端處理使用`GQLschema`擴展調用該架構的事實。 例如，對`/content/cq:graphql/global/endpoint.GQLschema`執行簡單`GET`請求將導致輸出具有Content-type的架構：`text/x-graphql-schema;charset=iso-8859-1`。
 
-### 架構生成 — 未發佈的模型{#schema-generation-unpublished-models}
+### 結構產生 — 取消發佈的模型 {#schema-generation-unpublished-models}
 
 巢狀內嵌內容片段時，可能會發佈上層內容片段模型，但未發佈參考模型。
 
@@ -307,7 +307,7 @@ Sites GraphQL服務會監聽（在背景）對內容片段模型所做的任何�
 
    這些用於識別內容片段，或用於取得有關內容片段的詳細資訊。
 
-### 欄位類型{#field-types}
+### 欄位類型 {#field-types}
 
 GraphQL for AEM支援類型清單。 所有支援的內容片段模型資料類型和對應的GraphQL類型均表示：
 
@@ -323,7 +323,7 @@ GraphQL for AEM支援類型清單。 所有支援的內容片段模型資料類�
 | 內容參考資料 |  字串 |  用於顯示AEM中其他資產的路徑 |
 | 片段引用 |  *模型類型* |  用於參照建立模型時定義的特定模型類型的另一個內容片段 |
 
-### 幫助欄位{#helper-fields}
+### 協助欄位 {#helper-fields}
 
 除了使用者產生欄位的資料類型外，AEM適用的GraphQL也會產生許多&#x200B;*helper*&#x200B;欄位，以協助識別內容片段，或提供關於內容片段的其他資訊。
 
@@ -434,7 +434,7 @@ AEM也會透過GraphQL公開內容片段的中繼資料。 中繼資料是描述
 ## Security Considerations {#security-considerations}
 -->
 
-## GraphQL變數{#graphql-variables}
+## GraphQL變數 {#graphql-variables}
 
 GraphQL允許將變數放置在查詢中。 如需詳細資訊，請參閱變數](https://graphql.org/learn/queries/#variables)的[GraphQL檔案。
 
@@ -459,7 +459,7 @@ query GetArticlesByVariation($variation: String!) {
 }
 ```
 
-## GraphQL指令{#graphql-directives}
+## GraphQL指令 {#graphql-directives}
 
 在GraphQL中，可以根據變數（稱為GraphQL指令）更改查詢。
 
@@ -525,7 +525,7 @@ query {
 
 * [基於WKND項目的查詢示例](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
-## GraphQL for AEM — 擴充功能摘要{#graphql-extensions}
+## GraphQL for AEM — 擴充功能摘要 {#graphql-extensions}
 
 使用AEM適用的GraphQL進行查詢的基本操作符合標準GraphQL規範。 若是使用AEM的GraphQL查詢，有幾個擴充功能：
 
@@ -584,7 +584,7 @@ query {
    * 使用`... on`
       * 請參閱[具有內容參考的特定模型的內容片段的範例查詢](#sample-wknd-fragment-specific-model-content-reference)
 
-## 持續查詢（快取）{#persisted-queries-caching}
+## 持續查詢（快取） {#persisted-queries-caching}
 
 使用POST要求準備查詢後，可使用HTTP快取或CDN快取的GET要求來執行查詢。
 
@@ -801,18 +801,18 @@ query {
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
 
-## 從外部網站{#query-graphql-endpoint-from-external-website}查詢GraphQL端點
+## 從外部網站查詢GraphQL端點 {#query-graphql-endpoint-from-external-website}
 
 若要從外部網站存取GraphQL端點，您需要設定：
 
 * [CORS篩選器](#cors-filter)
 * [反向連結篩選](#referrer-filter)
 
-### CORS篩選器{#cors-filter}
+### CORS篩選器 {#cors-filter}
 
 >[!NOTE]
 >
->如需AEM中CORS資源共用原則的詳細概覽，請參閱[了解跨原始資源共用(CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))。
+>如需AEM中CORS資源共用原則的詳細概覽，請參閱[了解跨原始資源共用(CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))。
 
 若要存取GraphQL端點，必須在客戶Git存放庫中設定CORS原則。 若要這麼做，請為所需端點新增適當的OSGi CORS設定檔案。
 
@@ -855,7 +855,7 @@ query {
 
 如果您已設定端點的虛名路徑，也可以在`allowedpaths`中使用。
 
-### 反向連結篩選器{#referrer-filter}
+### 反向連結篩選 {#referrer-filter}
 
 除了CORS設定，反向連結篩選器還必須設定為允許從第三方主機存取。
 

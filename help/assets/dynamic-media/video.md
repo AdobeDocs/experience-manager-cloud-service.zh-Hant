@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media中的影片
 description: 了解如何在Dynamic Media中使用影片。
-feature: 視訊設定檔
+feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '9499'
+source-wordcount: '9497'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,6 @@ ht-degree: 4%
 >* 請參閱設定Dynamic Media和[疑難排解Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)中的[設定Dynamic MediaCloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)。
 
 >
-
 
 
 1. **執行下列** 操作，上傳Dynamic Media影片：
@@ -996,7 +995,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
