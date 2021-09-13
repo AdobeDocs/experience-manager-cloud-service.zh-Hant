@@ -2,10 +2,10 @@
 title: 專案
 description: 專案可讓您將資源分組為一個實體，其共同的共用環境可讓您輕鬆管理專案
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 12%
+source-wordcount: '1259'
+ht-degree: 11%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 12%
 
 ![體驗](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-這些圖示會指出所呈現的體驗類型：網站、行動應用程式或出版物。按一下+號或按一下「新增體驗」 **並選取體驗類型** ，以新增體驗。
+這些圖示會指出所呈現的體驗類型：網站、行動應用程式或出版物。點選或按一下向下的>形圖，然後點選&#x200B;**新增體驗**&#x200B;並選取體驗類型，以新增體驗。
 
 ![新增體驗](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 

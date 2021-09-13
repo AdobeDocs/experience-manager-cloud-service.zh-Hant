@@ -1,12 +1,12 @@
 ---
 title: 語言副本嚮導
 description: 了解如何在AEM中使用語言副本精靈。
-feature: 語言副本
+feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 語言副本嚮導 {#language-copy-wizard}
 
 「語言復本精靈」是建立和檢測多語言內容結構的引導式體驗。 該嚮導使建立語言副本變得簡單而快速。
+
+>[!TIP]
+>
+>如果您是翻譯內容的新手，請參閱我們的[網站翻譯歷程](/help/journey-sites/translation/overview.md)，該路徑是使用AEM功能強大的翻譯工具來翻譯您的AEM Sites內容的引導路徑，最適合沒有AEM或翻譯經驗的人。
 
 >[!NOTE]
 >

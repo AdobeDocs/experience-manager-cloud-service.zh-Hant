@@ -1,12 +1,12 @@
 ---
 title: 配置翻譯整合框架
 description: 了解如何配置翻譯整合框架以與第三方翻譯服務整合。
-feature: 語言副本
+feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1419'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 1%
 1. [將雲端設定與您的頁面建立關聯。](#configuring-pages-for-translation)
 
 如需AEM中內容翻譯功能的概觀，請參閱[多語言網站的翻譯內容](overview.md)。
+
+>[!TIP]
+>
+>如果您是翻譯內容的新手，請參閱我們的[網站翻譯歷程](/help/journey-sites/translation/overview.md)，該路徑是使用AEM功能強大的翻譯工具來翻譯您的AEM Sites內容的引導路徑，最適合沒有AEM或翻譯經驗的人。
 
 ## 連接到翻譯服務提供商 {#connecting-to-a-translation-service-provider}
 

@@ -1,17 +1,21 @@
 ---
 title: 翻譯最佳實務
 description: 了解由Adobe工程和諮詢團隊編譯的最佳實務，協助您快速上手處理翻譯專案。
-feature: 語言副本
+feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
 
 # 翻譯最佳實務 {#translation-best-practices}
+
+>[!TIP]
+>
+>如果您是翻譯內容的新手，請參閱我們的[網站翻譯歷程](/help/journey-sites/translation/overview.md)，該路徑是使用AEM功能強大的翻譯工具來翻譯您的AEM Sites內容的引導路徑，最適合沒有AEM或翻譯經驗的人。
 
 ## 一般 {#general}
 

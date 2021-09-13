@@ -1,12 +1,12 @@
 ---
 title: 識別要翻譯的內容
 description: 了解翻譯規則如何識別需要翻譯的內容。
-feature: 語言副本
+feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1164'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 識別要翻譯的內容 {#identifying-content-to-translate}
 
 翻譯規則可識別要翻譯的頁面、元件及翻譯專案中包含或排除的資產內容。 翻譯頁面或資產時，AEM會擷取此內容，以便傳送至翻譯服務。
+
+>[!TIP]
+>
+>如果您是翻譯內容的新手，請參閱我們的[網站翻譯歷程](/help/journey-sites/translation/overview.md)，該路徑是使用AEM功能強大的翻譯工具來翻譯您的AEM Sites內容的引導路徑，最適合沒有AEM或翻譯經驗的人。
 
 頁面和資產在JCR存放庫中會以節點呈現。 提取的內容是節點的一個或多個屬性值。 翻譯規則可識別包含要擷取內容的屬性。
 

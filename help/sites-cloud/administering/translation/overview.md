@@ -1,13 +1,13 @@
 ---
 title: 轉譯多語言網站的內容
 description: 概略了解如何翻譯多語言網站的內容。
-feature: 語言副本
+feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 1%
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 1%
 
 * **人工翻譯：** 內容會傳送給您的翻譯提供者，並由專業翻譯人員翻譯。完成時，會傳回翻譯的內容並匯入AEM。 當您的翻譯提供者與AEM整合時，內容會自動在AEM和翻譯提供者之間傳送。
 * **機器翻譯：** 機器翻譯服務會立即翻譯您的內容。
+
+>[!TIP]
+>
+>如果您是翻譯內容的新手，請參閱我們的[網站翻譯歷程](/help/journey-sites/translation/overview.md)，該路徑是使用AEM功能強大的翻譯工具來翻譯您的AEM Sites內容的引導路徑，最適合沒有AEM或翻譯經驗的人。
 
 轉譯內容涉及下列步驟：
 

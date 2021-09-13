@@ -1,12 +1,12 @@
 ---
 title: 連接到Microsoft Translator
 description: 了解如何將AEM連接至Microsoft Translator的現成可用功能，以自動執行翻譯工作流程。
-feature: 語言副本
+feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '514'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 1%
 # 連接到Microsoft Translator {#connecting-to-microsoft-translator}
 
 為[Microsoft Translator](https://hub.microsofttranslator.com)雲服務建立配置，以使用您的Microsoft翻譯帳戶來轉譯AEM頁面內容或資產。
+
+>[!TIP]
+>
+>如果您是翻譯內容的新手，請參閱我們的[網站翻譯歷程](/help/journey-sites/translation/overview.md)，該路徑是使用AEM功能強大的翻譯工具來翻譯您的AEM Sites內容的引導路徑，最適合沒有AEM或翻譯經驗的人。
 
 >[!NOTE]
 >

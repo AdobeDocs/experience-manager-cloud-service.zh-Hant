@@ -2,9 +2,9 @@
 title: 管理專案
 description: 專案可讓您將資源分組為一個實體，以便在專案主控台中存取和管理，借此組織專案
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '894'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 在&#x200B;**專案**&#x200B;主控台中，您可以存取專案並採取動作：
 
-![專案主控台](/help/sites-cloud/authoring/assets/projects-console-detail.png)
+![專案主控台](/help/sites-cloud/authoring/assets/projects-console.png)
 
 在「專案」中，您可以建立專案、將資源與專案建立關聯，以及刪除專案或資源連結。 您可能想要開啟圖磚以檢視其內容，並新增項目至圖磚。 本主題說明這些程式。
 
@@ -40,7 +40,7 @@ AEM提供下列範本，供您在建立專案時自行選擇：
 
 1. 定義&#x200B;**Title**&#x200B;和&#x200B;**Description**，並視需要新增&#x200B;**縮圖**&#x200B;影像。 您也可以新增或刪除使用者，以及使用者所屬的群組。 此外，按一下&#x200B;**Advanced**&#x200B;以新增URL中使用的名稱。
 
-   ![新增專案詳細資料](/help/sites-cloud/authoring/assets/projects-title.png)
+   ![新增專案詳細資料](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. 點選/按一下&#x200B;**建立**。 確認會詢問您是否要開啟新專案或返回主控台。
 
@@ -85,13 +85,11 @@ AEM提供下列範本，供您在建立專案時自行選擇：
 
 若要將項目新增至圖磚：
 
-1. 在&#x200B;**「專案」**&#x200B;中，導覽至專案，然後按一下您要新增項目的方塊上的「新增+」圖示。
+1. 在&#x200B;**「專案」**&#x200B;中，導覽至專案，點選或按一下您要新增項目之圖磚上的向下形箭號。
 
-   ![將項目新增至圖磚](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![將項目新增至圖磚](/help/sites-cloud/authoring/assets/project-workflows.png)
 
 1. 將項目新增至圖磚，如同建立新圖磚時一樣。 [此處](/help/sites-cloud/authoring/projects/overview.md#project-tiles)說明專案圖磚。 在此範例中，新增了另一個工作流程。
-
-   ![新增至圖磚的其他項目](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### 開啟磁貼 {#opening-a-tile}
 
@@ -99,19 +97,17 @@ AEM提供下列範本，供您在建立專案時自行選擇：
 
 要開啟圖磚，以便查看或修改項目：
 
-1. 在專案主控台中，點選/按一下點(...)
+1. 在「專案」主控台中，點選/按一下卡片底部的點(...)圖示。
 
-   ![開啟磁貼](/help/sites-cloud/authoring/assets/projects-open-tile.png)
+   ![開啟磁貼](/help/sites-cloud/authoring/assets/project-links.png)
 
 1. AEM會列出該方塊中的項目。 您可以進入選擇模式以修改或刪除項目。
 
-   ![磁貼已開啟](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![磁貼已開啟](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ## 查看項目統計資訊 {#viewing-project-statistics}
 
-要查看項目統計資訊，請在&#x200B;**項目**&#x200B;控制台中，按一下&#x200B;**顯示統計資訊視圖**。 隨即顯示每個專案的完成層級。 再次按一下「**顯示統計資訊視圖**」以轉到&#x200B;**項目**&#x200B;控制台。
-
-![項目統計](/help/sites-cloud/authoring/assets/projects-stats.png)
+您可以在&#x200B;**Projects**&#x200B;控制台中查看項目統計資訊。
 
 ### 檢視專案時間軸 {#viewing-a-project-timeline}
 
@@ -143,6 +139,6 @@ AEM提供下列範本，供您在建立專案時自行選擇：
 1. 點選/按一下&#x200B;**編輯**。
 1. 將選取器從&#x200B;**Active**&#x200B;變更為&#x200B;**Inactive**（反之亦然）。
 
-   ![啟用專案](/help/sites-cloud/authoring/assets/projects-activate.png)
+   ![啟用專案](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. 點選/按一下&#x200B;**Done**&#x200B;以儲存您的變更。

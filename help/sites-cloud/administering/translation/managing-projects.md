@@ -1,12 +1,12 @@
 ---
 title: 管理翻譯專案
 description: 了解如何在AEM中建立和管理機器和人類翻譯專案。
-feature: 語言副本
+feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3863'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 管理翻譯專案 {#managing-translation-projects}
 
 翻譯專案可讓您管理AEM內容的翻譯。 翻譯專案是AEM [project](/help/sites-cloud/authoring/projects/overview.md)的類型，包含要翻譯成其他語言的資源。 這些資源是從語言主版建立的[語言副本](preparation.md)的頁面和資產。
+
+>[!TIP]
+>
+>如果您是翻譯內容的新手，請參閱我們的[網站翻譯歷程](/help/journey-sites/translation/overview.md)，該路徑是使用AEM功能強大的翻譯工具來翻譯您的AEM Sites內容的引導路徑，最適合沒有AEM或翻譯經驗的人。
 
 將資源新增至翻譯專案時，會為資源建立翻譯工作。 作業提供命令和狀態資訊，用於管理在資源上執行的人工翻譯和機器翻譯工作流。
 
