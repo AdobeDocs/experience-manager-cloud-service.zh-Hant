@@ -2,14 +2,14 @@
 title: 使用使用者對應工具
 description: 使用使用者對應工具
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: a9119ac04762c91230d52d6418b7808bca7e9f9f
+source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1315'
 ht-degree: 2%
 
 ---
 
-# 使用用戶映射工具{#user-mapping-tool}
+# 使用使用者對應工具 {#user-mapping-tool}
 
 ## 概覽 {#overview}
 
@@ -24,13 +24,13 @@ ht-degree: 2%
 
 AEM as aCloud Service的重大變更，是完整整合使用AdobeID來存取製作階層。  這需要使用[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)來管理使用者和使用者群組。 AdobeIdentity Management系統(IMS)會集中提供使用者設定檔資訊，以針對所有Adobe雲端應用程式提供單一登入。 如需詳細資訊，請參閱[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)。 因為此變更，現有的使用者和群組必須對應至其IMS ID，以避免Cloud Service製作例項上出現重複的使用者和群組。
 
-### 用戶映射工具{#mapping-tool}
+### 使用者對應工具 {#mapping-tool}
 
 「內容轉移工具」（不含「使用者對應」）將移轉與要移轉之內容相關聯的任何使用者和群組。 「使用者對應工具」是「內容轉移工具」的一部分，其唯一用途是修改使用者和群組，以便讓IMS(AEM作為Cloud Service使用的單一登入功能)正確識別。 完成這些修改後，「內容轉移工具」會照常移轉指定內容的使用者和群組。
 
-## 重要注意事項{#important-considerations}
+## 重要考量 {#important-considerations}
 
-### 例外案例{#exceptional-cases}
+### 例外案例 {#exceptional-cases}
 
 將記錄下列特定案例：
 
@@ -42,7 +42,7 @@ AEM as aCloud Service的重大變更，是完整整合使用AdobeID來存取製�
 
 1. 如果目標AEMCloud Service實例上存在與源AEM實例上的某個用戶具有相同用戶名(rep:principalName)的用戶，則不會遷移有關的用戶或組。
 
-### 其他注意事項{#additional-considerations}
+### 其他考量 {#additional-considerations}
 
 * 如果設定「在擷取&#x200B;**之前擦去雲端例項上的現有內容」 ，則Cloud Service例項上已轉移的使用者將會與整個現有存放庫一起刪除，並會建立新存放庫以將內容擷取至。**&#x200B;這也會重設所有設定，包括目標Cloud Service例項的權限，且新增至&#x200B;**administrators**&#x200B;群組的管理員使用者為true。 管理員使用者需要重新新增至&#x200B;**administrators**&#x200B;群組，才能擷取CTT的存取權杖。
 
@@ -50,13 +50,12 @@ AEM as aCloud Service的重大變更，是完整整合使用AdobeID來存取製�
 
 * 執行內容追加時，如果自上次轉移後內容未變更而未轉移，則與該內容相關聯的使用者和群組也不會轉移，即使在此期間使用者和群組已變更亦然。 這是因為使用者和群組會與其相關聯的內容一起移轉。
 
-* 在下列情況下擷取會失敗：
+* 如果目標AEMCloud Service實例的用戶具有與源AEM實例上的某個用戶不同的用戶名但電子郵件地址相同，並且啟用了用戶映射，則日誌中將寫入錯誤消息，並且源AEM用戶將不會被轉移，因為目標系統上只允許一個具有給定電子郵件地址的用戶。
 
-1. 如果目標AEMCloud Service例項的使用者具有不同的使用者名稱，但電子郵件地址與來源AEM例項上的其中一位使用者相同。
+* 如果源AEM實例上的兩個用戶具有相同的電子郵件地址，並且啟用了「用戶映射」，則日誌中將會寫入一條錯誤消息，並且不會傳輸一個源AEM用戶，因為目標系統上只允許一個具有指定電子郵件地址的用戶。
 
-1. 如果來源AEM例項上有兩個使用者，其使用者名稱不同，但電子郵件地址相同。 AEM as aCloud Service不允許兩個使用者擁有相同的電子郵件地址。
 
-## 使用用戶映射工具{#using-user-mapping-tool}
+## 使用使用者對應工具 {#using-user-mapping-tool}
 
 使用者對應工具使用API，可透過電子郵件查詢AdobeIdentity Management系統(IMS)使用者並傳回其IMS ID。 此API需要使用者為其組織、用戶端密碼和存取或承載權杖建立用戶端ID。
 
@@ -71,7 +70,7 @@ AEM as aCloud Service的重大變更，是完整整合使用AdobeID來存取製�
 1. 產生存取權杖（或JWT權杖或承載權杖）。
 1. 保存所有這些資訊，如&#x200B;**客戶端ID**、**客戶機密碼**、**技術帳戶ID**、**技術帳戶電子郵件**、**組織ID**&#x200B;和&#x200B;**安全訪問令牌**。
 
-## 使用者介面{#user-interface}
+## 使用者介面 {#user-interface}
 
 使用者對應工具已整合至內容轉移工具。 您可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下載「內容轉移工具」。 如需最新版本的詳細資訊，請參閱[最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
