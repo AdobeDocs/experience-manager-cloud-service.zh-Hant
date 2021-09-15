@@ -1,13 +1,13 @@
 ---
-sub-product: 'Adobe Experience Manager Assets as a Cloud Service '
+sub-product: Adobe Experience Manager Assets as a Cloud Service
 user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+source-git-commit: 8ed1d93a11c326df449164d35c7433f21b64d187
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 43%
+source-wordcount: '483'
+ht-degree: 42%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 43%
    + [中繼資料設定檔](metadata-profiles.md)
    + [中繼資料結構](metadata-schemas.md)
    + [管理影片資產](manage-video-assets.md)
+   + [使用MSM重複使用資產](reuse-assets-using-msm.md)
    + [下載資產](download-assets-from-aem.md)
    + [要編輯的簽入和簽出資產](check-out-and-submit-assets.md)
    + [Digital Rights Management資產](drm.md)
@@ -58,7 +59,7 @@ ht-degree: 43%
    + [內容片段的遠端GraphQL查詢驗證](content-fragments/graphql-authentication-content-fragments.md)
    + [含內容片段的GraphQL API — 範例內容與查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [連線資產](use-assets-across-connected-assets-instances.md)
-   + [產生Adobe InDesign的FPO轉譯](configure-fpo-renditions.md)
+   + [僅為版位轉譯產生](configure-fpo-renditions.md)
    + [資產報表](asset-reports.md)
    + [階層式中繼資料](cascading-metadata.md)
    + [XMP 中繼資料](xmp-metadata.md)
@@ -67,7 +68,7 @@ ht-degree: 43%
 + 共用與發佈資產 {#brand-portal}
    + [使用 [!DNL Brand Portal]配置 [!DNL Assets] ](configure-aem-assets-with-brand-portal.md)
    + [將資產發佈至 [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [從發佈資 [!DNL Brand Portal] 產到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
+   + [從發佈資 [!DNL Brand Portal] 產到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
 + 內容片段 {#content-fragments}
    + [使用內容片段](content-fragments/content-fragments.md)
    + [以內容片段和GraphQL無周邊傳送](content-fragments/content-fragments-graphql.md)
