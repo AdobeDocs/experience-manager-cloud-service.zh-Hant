@@ -1,10 +1,11 @@
 ---
 title: AEM Screens作為Cloud Service
 description: Adobe Experience Manager Screens作為Cloud Service的自助資源與檔案連結
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 60%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,10 +30,9 @@ ht-degree: 60%
 | 使用手冊 | 說明 |
 |---|---|
 | [Experience Manager as a Cloud Service 首頁](/help/landing/home.md) | 如需 Experience Manager as a Cloud Service 文件概覽，請由此開始。 |
-| [概覽](/help/overview/home.md) | 本指南提供 Experience Manager as a Cloud Service 概述，包括簡介、術語等等。 |
+| [概覽](/help/overview/home.md) | 本指南提供Experience Manager as a Cloud Service的概觀，包括簡介、術語、架構等。 |
 | [發行說明](/help/release-notes/home.md) | 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。 |
 | [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |
-| [核心概念](/help/core-concepts/home.md) | 本指南介紹 Experience Manager as a Cloud Service 的核心概念，包括新服務的架構。 |
 | [入門](/help/onboarding/home.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何管理 Experience Manager Assets as a Cloud Service。 |

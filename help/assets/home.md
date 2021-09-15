@@ -1,13 +1,13 @@
 ---
 title: '[!DNL Assets] as a [!DNL Cloud Service] 指南'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] 自助資源與檔案連結'
-feature: 資產管理
+feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 31%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,6 @@ ht-degree: 31%
 | [[!DNL Experience Manager] as a [!DNL Cloud Service] 首頁](/help/landing/home.md) | 完成[!DNL Experience Manager]作為[!DNL Cloud Service]的文檔。 |
 | [概覽](/help/overview/home.md) | [!DNL Experience Manager] as a [!DNL Cloud Service]的簡介和術語表。 |
 | [發行說明](/help/release-notes/home.md) | 內容包括發行說明、新增功能、過時和移除的功能，以及已知問題。 |
-| [核心概念](/help/core-concepts/home.md) | 本指南介紹[!DNL Experience Manager]作為[!DNL Cloud Service]的核心概念，包括新服務的架構。 |
 | [安全性使用手冊](/help/security/home.md) | 了解有關[!DNL Experience Manager] as a [!DNL Cloud Service]的重要安全性主題。 |
 | [入門](/help/onboarding/home.md) | 開始使用[!DNL Experience Manager]作為[!DNL Cloud Service] — 訪問並保護重要資料。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何使用[!DNL Experience Manager Sites]作為[!DNL Cloud Service]製作及管理。 |
