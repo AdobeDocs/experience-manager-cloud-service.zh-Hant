@@ -2,12 +2,12 @@
 title: 在 [!DNL Assets]中管理 [!DNL Adobe Stock] 資產。
 description: 從 [!DNL Adobe Experience Manager]內搜尋、擷取、授權及管理 [!DNL Adobe Stock] 資產。 將授權資產作為任何其他數位資產使用。
 contentOwner: AG
-feature: 搜尋，Adobe Stock
+feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '989'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## 整合[!DNL Experience Manager]和[!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
-若要允許[!DNL Experience Manager]和[!DNL Adobe Stock]之間通訊，請在[!DNL Experience Manager]中建立IMS設定和[!DNL Adobe Stock]設定。
+要在[!DNL Experience Manager]和[!DNL Adobe Stock]之間建立通信，請在[!DNL Experience Manager]中建立IMS配置和[!DNL Adobe Stock]配置。
 
 >[!NOTE]
 >
@@ -28,13 +28,13 @@ ht-degree: 3%
 
 ### 建立IMS設定 {#create-an-ims-configuration}
 
-1. 在[!DNL Experience Manager]使用者介面中，導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL AdobeIMS設定]**。 按一 **[!UICONTROL 下「建立]** 」，然後選 **[!UICONTROL 取「雲端解決方案]** > **[!UICONTROL Adobe Stock]**」。
+1. 在[!DNL Experience Manager]使用者介面中，導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS設定]**。 按一 **[!UICONTROL 下「建立]** 」，然後選 **[!UICONTROL 取「雲端解決方案]** > **[!UICONTROL Adobe Stock]**」。
 1. 重複使用現有證書或選擇&#x200B;**[!UICONTROL 建立新證書]**。
-1. 按一下&#x200B;**[!UICONTROL 建立憑證]**。建立後，下載公開金鑰。 按一下&#x200B;**[!UICONTROL 下一步]**。將[!UICONTROL AdobeIMS技術帳戶設定]畫面保持開啟，以便不久提供所需值。
+1. 按一下&#x200B;**[!UICONTROL 建立憑證]**。建立後，下載公開金鑰。 按一下&#x200B;**[!UICONTROL 下一步]**。[!UICONTROL Adobe IMS技術帳戶設定]畫面保持開啟，以便不久提供所需值。
 1. 訪問[Adobe開發人員控制台](https://console.adobe.io)。 確認您的帳戶擁有需要整合之組織的管理員權限。
 1. 按一下「**[!UICONTROL 建立新專案]**」，然後按一下「**[!UICONTROL 新增API]**」。 從可用的API清單中選取&#x200B;**[!UICONTROL Adobe Stock]**。 選擇[!UICONTROL OAUTH 2.0 Web]。
 1. 提供&#x200B;**[!UICONTROL 預設重定向URI]**&#x200B;和&#x200B;**[!UICONTROL 重定向URI模式]**&#x200B;值。 按一下&#x200B;**[!UICONTROL 「儲存已設定的 API」]**。複製產生的ID和機密。
-1. 在[!UICONTROL AdobeIMS技術帳戶設定]畫面中，提供標題為&#x200B;**[!UICONTROL Title]**、**[!UICONTROL 授權伺服器]**、**[!UICONTROL API金鑰]**、**[!UICONTROL 用戶端密碼]**&#x200B;和&#x200B;**[!UICONTROL Payload]**&#x200B;的方塊中的值。 有關這些值的詳細資訊，請參閱[JWT驗證快速入門](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)。
+1. 在[!UICONTROL Adobe IMS技術帳戶設定]畫面中，提供標題為&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Authorization Server]**、**[!UICONTROL API金鑰]**、**[!UICONTROL Client Secret]**&#x200B;和&#x200B;**[!UICONTROL Payload]**&#x200B;的方塊中的值。 有關這些值的詳細資訊，請參閱[JWT驗證快速入門](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)。
 
 <!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
@@ -53,7 +53,7 @@ ht-degree: 3%
 
 ## 在[!DNL Experience Manager]中使用及管理[!DNL Adobe Stock]資產 {#usemanage}
 
-使用此功能，組織可讓其使用者在[!DNL Experience Manager Assets]中使用[!DNL Adobe Stock]資產。 從[!DNL Experience Manager]使用者介面中，使用者可以搜尋[!DNL Adobe Stock]資產並授權所需資產。
+使用此功能，組織使用者可以在[!DNL Experience Manager Assets]中使用[!DNL Adobe Stock]資產。 從[!DNL Experience Manager]使用者介面中，使用者可以搜尋[!DNL Adobe Stock]資產並授權所需資產。
 
 在[!DNL Experience Manager]中授權[!DNL Adobe Stock]資產後，就可像一般資產一樣使用和管理該資產。 在[!DNL Experience Manager]中，使用者可以搜尋及預覽資產；複製並發佈資產；在[!DNL Brand Portal]上共用資產；透過[!DNL Experience Manager]案頭應用程式存取及使用資產；等等。
 

@@ -2,12 +2,12 @@
 title: 配置和使用資產微服務
 description: 設定並使用雲端原生資產微服務以大規模處理資產。
 contentOwner: AG
-feature: asset compute微服務，工作流，資產處理
+feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2704'
 ht-degree: 0%
 
 ---

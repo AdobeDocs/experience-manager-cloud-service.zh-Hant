@@ -2,12 +2,12 @@
 title: ' [!DNL Experience Manager Assets]中的輔助功能'
 description: 了解 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中的協助工具功能如何協助身心障礙的使用者。
 contentOwner: AG
-feature: 協助工具，資產管理
+feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1911'
 ht-degree: 1%
 
 ---

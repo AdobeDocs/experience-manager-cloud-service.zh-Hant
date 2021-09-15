@@ -1,12 +1,12 @@
 ---
 title: 將數位資產新增至 [!DNL Adobe Experience Manager]。
 description: 將您的數位資產新增至 [!DNL Adobe Experience Manager] 作為a [!DNL Cloud Service]。
-feature: 資產管理，上傳
+feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2063'
 ht-degree: 1%
 
 ---
