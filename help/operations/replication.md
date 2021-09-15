@@ -1,8 +1,8 @@
 ---
 title: 複寫
-description: 散佈 和疑難排解復寫。
+description: 發佈和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 1%
@@ -15,7 +15,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[分送](/help/core-concepts/architecture.md#content-distribution) 。
+>如需詳細資訊，請參閱[分送](/help/overview/architecture.md#content-distribution) 。
 
 ## 發佈內容的方法 {#methods-of-publishing-content}
 

@@ -1,15 +1,15 @@
 ---
 title: 了解CMS無頭開發
 description: 在AEM無頭式開發人員歷程的這部分，了解無頭式技術及您使用它的原因。
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
 
 ---
 
-
-# 了解CMS無頭開發{#learn-about}
+# 了解CMS無頭開發 {#learn-about}
 
 在[AEM無頭開發者歷程的這部分中，](overview.md)了解無頭技術以及您使用它的原因。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 * 了解需要無頭的原因和時機
 * 從高層了解無頭概念的使用方式及其相互關係
 
-## 完整堆疊內容傳送{#full-stack}
+## 完整堆疊內容傳送 {#full-stack}
 
 自易用、大規模的內容管理系統(CMS)興起以來，企業一直將它們作為管理報文傳送、品牌推廣和通信的中心位置。 將CMS作為管理體驗的中心點，可消除在不同系統中複製任務的需求，進而提高效率。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 無論平台或接觸點為何，使用者都期望參與度，因此在您提供體驗的方式上需要靈活度。  這種多通道方法是數位體驗的標準，而在某些情況下，完整堆疊方法可能會被證明是不靈活的。
 
-## 無頭的頭{#the-head}
+## 無頭的頭 {#the-head}
 
 任何系統的頭通常是該系統的輸出渲染器，通常以GUI或其它圖形輸出的形式。
 
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 預測未來是不可能的，但無頭可讓你靈活應對未來帶來的一切。
 
-## AEM和無頭{#aem-and-headless}
+## AEM和無頭 {#aem-and-headless}
 
 隨著您持續進行此開發人員歷程，您將了解AEM如何支援無頭式傳送，以及其完整堆疊傳送功能。
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 
 此歷程著重於內容傳送的無頭式模型。 不過，一旦您具備此基本知識，便可進一步探索如何運用這兩種模型的強大功能。
 
-## 下一步是什麼{#what-is-next}
+## 下一步 {#what-is-next}
 
 感謝您快速入門AEM無頭歷程！ 閱讀本檔案後，您應：
 
@@ -126,5 +126,5 @@ ht-degree: 0%
 
 雖然建議您透過檢閱檔案[以AEM Headless作為Cloud Service快速入門，繼續進行無頭式開發歷程的下一個部分，但以下是一些額外的選用資源，可深入探討本檔案提及的一些概念，但您不需要繼續進行無頭式開發歷程。](getting-started.md)
 
-* [Adobe Experience Manager as a Cloud Service架構簡介](/help/core-concepts/architecture.md)  — 了解AEM as a Cloud Service結構
+* [Adobe Experience Manager as a Cloud Service架構簡介](/help/overview/architecture.md)  — 了解AEM as a Cloud Service結構
 * [AEM無頭式Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 使用這些實作教學課程，探索如何使用各種選項，透過AEM將內容傳遞至無頭式端點，並選擇適合您的方式。

@@ -2,7 +2,7 @@
 title: 不同與新增功能 — Adobe Experience Manager作為Cloud Service
 description: 不同與新增功能 — Adobe Experience Manager(AEM)作為Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: c25756f16f5e86958c1cc9224e51d07c4d864da4
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1862'
 ht-degree: 10%
@@ -42,7 +42,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->有關詳細資訊，請參見[ Architecture](/help/core-concepts/architecture.md)。
+>有關詳細資訊，請參見[ Architecture](/help/overview/architecture.md)。
 
 AEM as a Cloud Service 現已具備：
 
@@ -264,7 +264,7 @@ Adobe Experience Manager Assets as aCloud Service提供雲端原生的PaaS解決
 如需詳細資訊，請參閱：
 
 * [Adobe Experience Manager as a Cloud Service 簡介](/help/overview/introduction.md)
-* Adobe Experience Manager as a Cloud Service [架構](/help/core-concepts/architecture.md)
+* Adobe Experience Manager as a Cloud Service [架構](/help/overview/architecture.md)
 * [AEM as a Cloud Service 重大變更 (發行說明)](/help/release-notes/aem-cloud-changes.md)
 * [AEM Sites as a Cloud Service 重大變更](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)

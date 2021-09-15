@@ -1,12 +1,12 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] 中a [!DNL Cloud Service]顯著變更'
 description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5的重大變更。'
-feature: 發行資訊
+feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: b2f68acaf4c88a3a7e0768410cee53eb2d07a76e
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '970'
 ht-degree: 5%
 
 ---
@@ -71,10 +71,10 @@ ht-degree: 5%
 >[!DNL Experience Manager]作為[!DNL Cloud Service]可使用下列資源：
 >
 >* [已棄用和已移除功能的清單](/help/release-notes/deprecated-removed-features.md)
-* [簡介](/help/overview/introduction.md)
-* [新增功能與不同之處](/help/overview/what-is-new-and-different.md)
-* [架構](/help/core-concepts/architecture.md)
-* [重大變更](/help/release-notes/aem-cloud-changes.md)
-* [重大更改 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
-* [教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [簡介](/help/overview/introduction.md)
+>* [新增功能與不同之處](/help/overview/what-is-new-and-different.md)
+>* [架構](/help/overview/architecture.md)
+>* [重大變更](/help/release-notes/aem-cloud-changes.md)
+>* [重大變更 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+>* [教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 

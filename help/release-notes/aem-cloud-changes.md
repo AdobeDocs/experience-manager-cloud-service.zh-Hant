@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 description: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: ab40ce5b9b57f83562cf279b75979795f5433eda
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 81%
@@ -24,10 +24,10 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 >本文件著重說明 AEM 整體的重大變更。如需詳細資訊和解決方案的特定變更，請參閱：
 >
 >* [Adobe Experience Manager as a Cloud Service 簡介](/help/overview/introduction.md)
-* Adobe Experience Manager as a Cloud Service 與舊版的[新增功能與不同之處](/help/overview/what-is-new-and-different.md)
-* Adobe Experience Manager as a Cloud Service [架構](/help/core-concepts/architecture.md)
-* [AEM Sites as a Cloud Service 重大變更](/help/sites-cloud/sites-cloud-changes.md)
-* [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
+>* Adobe Experience Manager as a Cloud Service 與舊版的[新增功能與不同之處](/help/overview/what-is-new-and-different.md)
+>* Adobe Experience Manager as a Cloud Service [架構](/help/overview/architecture.md)
+>* [AEM Sites as a Cloud Service 重大變更](/help/sites-cloud/sites-cloud-changes.md)
+>* [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 
 
 主要差異在於以下方面：

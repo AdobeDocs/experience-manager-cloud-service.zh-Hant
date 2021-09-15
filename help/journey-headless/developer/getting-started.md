@@ -2,7 +2,7 @@
 title: 開始使用AEM Headless作為Cloud Service
 description: 在AEM無頭式開發人員歷程的這部分，了解AEM無頭式必要條件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 0%
@@ -276,7 +276,7 @@ GraphQL是AEM與無周邊內容使用者之間的「膠水」。 GraphQL是用�
 雖然建議您透過檢閱檔案[使用AEM無頭式體驗到第一次體驗的路徑，以繼續進行無頭式開發歷程的下一個部分，但以下是一些額外的選用資源，可深入探討本檔案提及的一些概念，但您不需要繼續進行無頭式開發歷程。](path-to-first-experience.md)
 
 * [AEM無頭式翻譯歷程](/help/journey-headless/translation/overview.md)  — 本檔案歷程可讓您廣泛了解無頭式技術、AEM如何提供無頭式內容，以及如何翻譯內容。
-* [Adobe Experience Manager as a Cloud Service架構簡介](/help/core-concepts/architecture.md)  — 了解AEM as a Cloud Service結構
+* [Adobe Experience Manager as a Cloud Service架構簡介](/help/overview/architecture.md)  — 了解AEM as a Cloud Service結構
 * [AEM無頭式Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 使用這些實作教學課程，探索如何使用各種選項，透過AEM將內容傳遞至無頭式端點，並選擇適合您的方式。
 * [使用GraphQL API進行無周邊內容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  — 請依照本課程了解在AEM中實作的GraphQL API的概觀。需要透過AdobeID進行驗證。
 * [AEM指南WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  — 此GitHub專案包含醒目提示AEM GraphQL API的範例應用程式。
