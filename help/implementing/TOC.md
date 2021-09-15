@@ -5,9 +5,9 @@ breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
+source-git-commit: 8ee0eef4a46b2e2ebe0e94812db68e369bc0dfd0
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 35%
 
 ---
@@ -171,7 +171,7 @@ ht-degree: 35%
          + [AEM GraphQL API，含內容片段 — 範例內容與查詢](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
          + [內容片段的遠端AEM GraphQL查詢驗證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
    + 混合與SPA AEM開發{#hybrid}
-      + [混合SPA與AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [混合SPA與AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [SPA簡介和逐步說明](developing/hybrid/introduction.md)
       + [SPA WKND教學課程](developing/hybrid/wknd-tutorial.md)
