@@ -3,12 +3,12 @@ title: 管理數位資產
 description: 了解各種資產管理和編輯方法。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 資產管理，發佈，協作，資產處理
+feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '4550'
+source-wordcount: '4543'
 ht-degree: 11%
 
 ---
@@ -528,11 +528,9 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
 
 1. 使用右上角的選項下載或列印PDF。
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
    要修改所呈現的PDF檔案的外觀，例如注釋和狀態的字型顏色、大小和樣式、背景顏色，請從Configuration Manager中開啟&#x200B;**[!UICONTROL 注釋PDF配置]**，並修改所需的選項。 例如，若要變更已核准狀態的顯示顏色，請修改對應欄位中的顏色代碼。 有關更改批注的字型顏色的資訊，請參閱[批注](/help/assets/manage-digital-assets.md#annotating)。
-
-   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    返回轉譯的PDF檔案並重新整理。 重新整理的PDF會反映您所做的變更。
 

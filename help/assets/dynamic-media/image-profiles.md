@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media 影像設定檔
 description: 了解如何建立包含遮色片銳利化設定、智慧型裁切或智慧型色票（或兩者）的Dynamic Media影像描述檔。 接著，將設定檔套用至影像資產的資料夾。
-feature: 資產管理，影像設定檔，轉譯
+feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '2762'
+source-wordcount: '2757'
 ht-degree: 7%
 
 ---
@@ -102,7 +102,7 @@ ht-degree: 7%
 
 請參閱[關於Dynamic Media影像設定檔和視訊設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)。
 
-另請參閱[組織數位資產以使用處理設定檔的最佳實務](/help/assets/dynamic-media/best-practices-for-file-management.md)。
+另請參閱[組織數位資產以使用處理設定檔的最佳實務](/help/assets/organize-assets.md)。
 
 **若要建立Dynamic Media影像設定檔：**
 

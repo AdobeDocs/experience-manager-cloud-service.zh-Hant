@@ -4,14 +4,14 @@ description: 了解如何在Dynamic Media中使用影片。
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: d174ff3a27d9a0a3d89bb146b847cf253b8afbdc
 workflow-type: tm+mt
-source-wordcount: '9497'
+source-wordcount: '9427'
 ht-degree: 4%
 
 ---
 
-# 影片{#video}
+# 影片 {#video}
 
 本節說明如何在Dynamic Media中使用影片。
 
@@ -37,7 +37,6 @@ ht-degree: 4%
    * 將視訊處理設定檔關聯至您要上傳主要來源視訊的一或多個資料夾。
 
       * [將視訊描述檔套用至資料夾](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
-      * 深入了解[組織數位資產以使用處理設定檔的最佳實務](/help/assets/dynamic-media/best-practices-for-file-management.md)。
       * 深入了解[組織數位資產](/help/assets/organize-assets.md)。
    * 將您的主要來源影片上傳至資料夾。 將視訊新增至資料夾時，會根據您指派給資料夾的視訊處理設定檔進行編碼。
 
@@ -54,9 +53,7 @@ ht-degree: 4%
 
    * 組織、瀏覽及搜尋影片資產
 
-      * [組織數位資](/help/assets/organize-assets.md)
-產進一步了解 [組織數位資產以使用處理設定檔的最佳實務](/help/assets/dynamic-media/best-practices-for-file-management.md)
-
+      * [組織數位資產](/help/assets/organize-assets.md)
       * [搜尋視訊](/help/assets/search-assets.md#custompredicates) 資產 [或搜尋資產](/help/assets/manage-digital-assets.md#search-assets)
    * 預覽和發佈視訊資產
 
@@ -64,41 +61,27 @@ ht-degree: 4%
          [預覽](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 影片或 [預覽資產](/help/assets/dynamic-media/previewing-assets.md)
          [管理視訊轉譯](/help/assets/manage-digital-assets.md#managing-renditions)
 
+      * [管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)
+      * [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   * 使用視訊中繼資料
 
-<!-- Commented video-renditions.md as the file is not published yet and will lead to broken link.
-        * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
-          [Viewing video renditions](/help/assets/video-renditions.md)
-          [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions) -->
+      * 編輯視訊的屬性，例如標題、說明和標籤、自訂中繼資料欄位：
+         [編輯視訊屬性](/help/assets/manage-digital-assets.md#editing-properties)
 
-    * [管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)
-    * [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-    
-    *使用視訊中繼資料
+      * [管理數位資產的中繼資料](/help/assets/manage-metadata.md)
+      * [中繼資料結構](/help/assets/metadata-schemas.md)
+   * 檢閱、核准及註解影片，並維護完整版本控制
 
-<!--      * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
-          [Viewing video rendition properties](/help/assets/video-renditions.md) -->
+      * [為視訊](/help/assets/manage-video-assets.md#annotate-video-assets) 加上注 [解資產](/help/assets/manage-digital-assets.md#annotating)
 
-    *編輯視訊的屬性，例如標題、說明和標籤、自訂中繼資料欄位：
-    [編輯視訊屬性](/help/assets/manage-digital-assets.md#editing-properties)
-    
-    * [管理數位資產的中繼資料](/help/assets/manage-metadata.md)
-    * [中繼資料結構](/help/assets/metadata-schemas.md)
-    
-    *檢閱、核准和註解視訊，並維護完整版本控制
-    
-    * [註解視訊](/help/assets/manage-video-assets.md#annotate-video-assets)或[註解資產](/help/assets/manage-digital-assets.md#annotating)
-    
-    * [建立版本](/help/assets/manage-digital-assets.md#asset-versioning)
-    * [啟動資產的工作流程](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+      * [建立版本](/help/assets/manage-digital-assets.md#asset-versioning)
+      * [在資產上啟動工作流程](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
-<!-- Removing assets-workflow.md file link as it is not applicable anymore. Workflows are replaced by processing profiles.
-        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-        * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
--->
+      * [檢閱資料夾資產](/help/assets/bulk-approval.md)
+      * [專案](/help/sites-cloud/authoring/projects/overview.md)
 
-    * [查看資料夾資產](/help/assets/bulk-approval.md)
-    * [項目](/help/sites-cloud/authoring/projects/overview.md)
+
+
 
 1. **執行下列** 其中一項操作以發佈Dynamic Media影片：
 

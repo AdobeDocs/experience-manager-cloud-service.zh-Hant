@@ -4,12 +4,13 @@ description: 使用「Experience Manager資產」工作流程和ImageMagick產�
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
-source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
+source-git-commit: 7e82c3c5490c2f6d43167e6784cdbbb60f811a6f
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
+
 
 # 僅針對Adobe InDesign產生版位轉譯 {#fpo-renditions}
 
@@ -20,7 +21,9 @@ Assets提供僅用於版位(FPO)的轉譯。 這些FPO轉譯的檔案大小很�
 Experience Manager作為Cloud Service提供雲端原生資產處理功能，以產生FPO轉譯。 使用資產微服務產生轉譯。 您可以設定新上傳資產和Experience Manager中現有資產的轉譯產生。
 
 以下是產生FPO轉譯的步驟：
+
 1. [建立處理設定檔](#create-processing-profile)。
+
 1. 設定Experience Manager以使用此設定檔來處理新資產](#generate-renditions-of-new-assets)。[
 1. 使用設定檔來處理現有資產](#generate-renditions-of-existing-assets)。[
 

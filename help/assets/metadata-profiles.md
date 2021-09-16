@@ -2,19 +2,22 @@
 title: 中繼資料設定檔
 description: 了解資產的中繼資料設定檔。 了解如何建立中繼資料設定檔，並將其套用至資料夾資產。
 contentOwner: AG
-feature: 中繼資料
+feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 20%
+source-wordcount: '1356'
+ht-degree: 18%
 
 ---
 
 # 中繼資料設定檔 {#metadata-profiles}
 
 中繼資料設定檔可讓您將預設中繼資料套用至資料夾內的資產。 建立中繼資料描述檔並將其套用至資料夾。 您隨後上傳至資料夾的任何資產都會繼承您在中繼資料設定檔中設定的預設中繼資料。
+
+有關在Experience Manager資產中使用設定檔的重要概念，是將設定檔指派給資料夾。 設定檔中是中繼資料設定檔的設定，以及視訊設定檔或影像設定檔。 這些設定會處理資料夾的內容及其任何子資料夾。 因此，為檔案和資料夾命名的方式、子資料夾排列方式以及這些資料夾內檔案的處理方式，都會對設定檔處理這些資產的方式產生重大影響。
+透過使用一致且適當的檔案和資料夾命名策略，以及良好的中繼資料實務，您可充份運用數位資產集合，並確保正確的設定檔能處理正確的檔案。
 
 ## 新增中繼資料設定檔 {#adding-a-metadata-profile}
 

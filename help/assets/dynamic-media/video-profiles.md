@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media 影片設定檔
 description: Dynamic Media已隨附預先定義的最適化視訊編碼設定檔。 此現成可用設定檔中的設定已最佳化，可為客戶提供最佳的檢視體驗。 您也可以將智慧型裁切新增至影片。
-feature: 資產管理，視訊設定檔，轉譯
+feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '3661'
+source-wordcount: '3656'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,8 @@ Dynamic Media已隨附預先定義的最適化視訊編碼設定檔。 此現成
 
 請參閱[視訊編碼最佳實務](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)。
 
-另請參閱[組織數位資產以使用處理設定檔的最佳實務](/help/assets/dynamic-media/best-practices-for-file-management.md)。
+另請參閱[組織數位資產以使用處理設定檔的最佳實務](/help/assets/organize-assets.md)。
+
 
 >[!NOTE]
 >
