@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 6e7b2dd71f7e5a820ebca5e6e3928c712dfc359c
+source-git-commit: d46efe181fee238d355a67cafbd5e7220efb43dc
 workflow-type: tm+mt
-source-wordcount: '3086'
-ht-degree: 25%
+source-wordcount: '2986'
+ht-degree: 26%
 
 ---
 
@@ -23,8 +23,6 @@ ht-degree: 25%
 在[!UICONTROL 頁面編輯器]中編輯頁面時，作者可以順暢地搜尋、瀏覽及內嵌來自作為資產來源之不同[!DNL Assets]部署的資產。 管理員將具有[!DNL Sites]功能的[!DNL Experience Manager]部署與具有[!DNL Assets]功能的[!DNL Experience Manager]其他部署建立一次性整合。 您也可以透過「連線資產」在網站的網頁中使用Dynamic Media影像，並運用Dynamic Media功能，例如智慧型裁切和影像預設集。
 
 對於[!DNL Sites]作者，遠端資產以唯讀本機資產的形式提供。 此功能可支援順暢的搜尋作業，並允許一次使用數個遠端資產。若要一次在[!DNL Sites]部署中提供許多遠端資產，請考慮大量移轉資產。
-
-您可以設定Sites部署與Dynamic Media部署之間的連線，讓網頁作者在網頁中使用Dynamic Media影像。 編寫網頁時，使用遠端資產和遠端Dynamic Media部署的體驗維持不變。 這可讓您透過「連線資產」功能（例如智慧型裁切和影像預設集）運用Dynamic Media功能。
 
 ### 先決條件和支援的部署 {#prerequisites}
 
@@ -147,24 +145,18 @@ ht-degree: 25%
 
 不妨使用上述設定試著編寫體驗，以了解功能的運作方式。在遠端 DAM 部署中使用您所選擇的文件或影像。
 
-1. 從[!DNL Experience Manager]工作區存取&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**，導覽至遠端部署的[!DNL Assets]介面。 或者，您也可以在瀏覽器中存取 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上傳您選擇的資產。&lt;>
+1. 從[!DNL Experience Manager]工作區存取&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**，導覽至遠端部署的[!DNL Assets]介面。 或者，您也可以在瀏覽器中存取 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上傳您選擇的資產。
+
 1. 在[!DNL Sites]部署中，在右上角的配置式激活器中，按一下「模擬為&#x200B;]**」。**[!UICONTROL &#x200B;輸入 `ksaner` 作為使用者名稱，選取畫面上提供的選項，然後按一下&#x200B;**[!UICONTROL 「確定」]**。
-1. 在&#x200B;**[!UICONTROL Navigation]** > **[!UICONTROL Sites]**&#x200B;開啟網站頁面。 編輯頁面。或者，您也可以在瀏覽器中存取 `https://[aem_server]:[port]/editor.html/content/<site page>`，進而編輯頁面。
-=======
-1. 在[!DNL Sites]部署中，在右上角的配置式激活器中，按一下「模擬為&#x200B;]**」。**[!UICONTROL &#x200B;提供所需的用戶名，然後按一下&#x200B;**[!UICONTROL OK]**。
-1. 從&#x200B;**[!UICONTROL Navigation]** > **[Sites]**&#x200B;開啟網站頁面。 編輯頁面。或者，您也可以在瀏覽器中存取 `https://[aem_server]:[port]/editor.html/content/<page name>`，進而編輯頁面。
->>>>>>>>>>隱藏的變更
 
+1. 在&#x200B;**[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**&#x200B;開啟`We.Retail`網站頁面。 編輯頁面。或者，您也可以在瀏覽器中存取 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html`，進而編輯頁面。
 
-
-
-
-> 
-
-按一下頁面左上角的&#x200B;**[!UICONTROL 「切換側面板」]**。
+   按一下頁面左上角的&#x200B;**[!UICONTROL 「切換側面板」]**。
 
 1. 開啟[!UICONTROL Assets]標籤，然後按一下&#x200B;**[!UICONTROL 登入連線資產]**。
-1. 提供適當的憑證。 此使用者對這兩種[!DNL Experience Manager]部署都有編寫權限。
+
+1. 提供憑證 `ksaner` 作為使用者名稱，且以 `password` 作為密碼。此使用者對這兩種[!DNL Experience Manager]部署都有編寫權限。
+
 1. 搜尋您新增至 DAM 的資產。遠端資產會顯示於左側面板。篩選影像或文件，並進一步篩選支援的文件類型。拖曳 `Image` 元件上的影像和 `Download` 元件上的文件。
 
    本機[!DNL Sites]部署上，擷取的資產為唯讀狀態。 您仍可以使用[!DNL Sites]元件提供的選項來編輯擷取的資產。 由元件進行編輯屬於非破壞性動作。
@@ -182,10 +174,12 @@ ht-degree: 25%
 1. 發佈頁面時，[!DNL Experience Manager]會顯示頁面上使用的完整資產清單。 請確認發佈時，系統已成功擷取遠端資產。若要檢查所擷取資產的每個狀態，請參閱[非同步作業](/help/operations/asynchronous-jobs.md)使用者介面。
 
    >[!NOTE]
-   即使有一或多個遠端資產未成功擷取，頁面還是會照常發佈。使用遠端資產的元件會以空白形式發佈。[!DNL Experience Manager]通知區域會針對非同步作業頁面中顯示的錯誤顯示通知。
+   >
+   >即使有一或多個遠端資產未成功擷取，頁面還是會照常發佈。使用遠端資產的元件會以空白形式發佈。[!DNL Experience Manager]通知區域會針對非同步作業頁面中顯示的錯誤顯示通知。
 
 >[!CAUTION]
-擷取的遠端資產一旦用於網頁中，只要任何人有權存取本機資料夾，都可搜尋和使用。 擷取的資產會儲存在本機資料夾中（上述逐步說明中的`connectedassets`）。 這些資產也可供搜尋，並可透過[!UICONTROL 「內容尋找器」]顯示於本機存放庫。
+>
+>擷取的遠端資產一旦用於網頁中，只要任何人有權存取本機資料夾，都可搜尋和使用。 擷取的資產會儲存在本機資料夾中（上述逐步說明中的`connectedassets`）。 這些資產也可供搜尋，並可透過[!UICONTROL 「內容尋找器」]顯示於本機存放庫。
 
 擷取的資產可設為其他任何本機資產以供使用，只是相關聯的中繼資料無法編輯。
 
