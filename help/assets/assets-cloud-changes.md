@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manage
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: baa08b242e83d944bd7474c50e115a7c4b49900d
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '997'
 ht-degree: 5%
 
 ---
@@ -64,6 +64,7 @@ ht-degree: 5%
 | [下載報表](/help/assets/asset-reports.md) | 不支援. | 目前無法使用通知資產使用的下載報表。 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html)中的[下載報表。 |
 | 產品攝影模板 | 不支援. | 請參閱 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html)中的[產品像片模板。 |
 | 智慧翻譯 | 不支援. | [as ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) a不支援智 [!DNL Experience Manager] 慧轉 [!DNL Cloud Service]譯。 |
+| WebDAV | 不支援. | 如需替代項目，請參閱[[!DNL Creative Cloud] integration](/help/assets/aem-cc-integration-best-practices.md)或[開發人員參考資料](/help/assets/developer-reference-material-apis.md)。 |
 | 傳統 UI | 不支援. | 僅提供觸控式使用者介面。 |
 
 >[!MORELIKETHIS]
