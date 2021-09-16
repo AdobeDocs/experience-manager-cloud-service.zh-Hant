@@ -2,13 +2,13 @@
 title: 使用「連線資產」在 中共用 DAM 資產 [!DNL Sites]
 description: 使用遠端 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署上可用的資產。
 contentOwner: AG
-feature: 資產管理，連接資產，資產分發，用戶和組
+feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 69242846bcd27a4d70f31cc17688d651e4733b5f
 workflow-type: tm+mt
-source-wordcount: '2967'
-ht-degree: 26%
+source-wordcount: '3046'
+ht-degree: 25%
 
 ---
 
@@ -20,9 +20,11 @@ ht-degree: 26%
 
 ## 連線資產概觀 {#overview-of-connected-assets}
 
-在[!UICONTROL 頁面編輯器]中編輯頁面時，作者可以順暢地搜尋、瀏覽及內嵌來自作為資產來源之不同[!DNL Assets]部署的資產。 管理員將具有[!DNL Sites]功能的[!DNL Experience Manager]部署與具有[!DNL Assets]功能的[!DNL Experience Manager]其他部署建立一次性整合。
+在[!UICONTROL 頁面編輯器]中編輯頁面時，作者可以順暢地搜尋、瀏覽及內嵌來自作為資產來源之不同[!DNL Assets]部署的資產。 管理員將具有[!DNL Sites]功能的[!DNL Experience Manager]部署與具有[!DNL Assets]功能的[!DNL Experience Manager]其他部署建立一次性整合。 您也可以透過「連線資產」在網站的網頁中使用Dynamic Media影像，並運用Dynamic Media功能，例如智慧型裁切和影像預設集。
 
 對於[!DNL Sites]作者，遠端資產以唯讀本機資產的形式提供。 此功能可支援順暢的搜尋作業，並允許一次使用數個遠端資產。若要一次在[!DNL Sites]部署中提供許多遠端資產，請考慮大量移轉資產。
+
+您可以設定Sites部署與Dynamic Media部署之間的連線，讓網頁作者在網頁中使用Dynamic Media影像。 編寫網頁時，使用遠端資產和遠端Dynamic Media部署的體驗維持不變。 這可讓您透過「連線資產」功能（例如智慧型裁切和影像預設集）運用Dynamic Media功能。
 
 ### 先決條件和支援的部署 {#prerequisites}
 
@@ -147,7 +149,7 @@ ht-degree: 26%
 
 1. 從[!DNL Experience Manager]工作區存取&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**，導覽至遠端部署的[!DNL Assets]介面。 或者，您也可以在瀏覽器中存取 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上傳您選擇的資產。
 1. 在[!DNL Sites]部署中，在右上角的配置式激活器中，按一下「模擬為&#x200B;]**」。**[!UICONTROL &#x200B;輸入 `ksaner` 作為使用者名稱，選取畫面上提供的選項，然後按一下&#x200B;**[!UICONTROL 「確定」]**。
-1. 在&#x200B;**[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**&#x200B;開啟`We.Retail`網站頁面。 編輯頁面。或者，您也可以在瀏覽器中存取 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html`，進而編輯頁面。
+1. 在&#x200B;**[!UICONTROL Navigation]** > **[!UICONTROL Sites]**&#x200B;開啟網站頁面。 編輯頁面。或者，您也可以在瀏覽器中存取 `https://[aem_server]:[port]/editor.html/content/<site page>`，進而編輯頁面。
 
    按一下頁面左上角的&#x200B;**[!UICONTROL 「切換側面板」]**。
 
