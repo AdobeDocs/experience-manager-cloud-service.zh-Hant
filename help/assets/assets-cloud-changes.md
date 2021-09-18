@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manage
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ab2cc4e62886eaf67099d16312d255ea38686c9d
+source-git-commit: 9235dd41a77242655bf944666bdd5c14db8a83d6
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '995'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 [!DNL Adobe Experience Manager] as提供 [!DNL Cloud Service] 許多管理Experience Manager專案的新功能，並帶來許多可能性。與[!DNL Experience Manager]作為[!DNL Cloud Service]的相比，[!DNL Experience Manager Assets]內部部署或托管作為Adobe托管服務之間有許多差異。 本文著重說明[!DNL Assets]功能的重要差異。
 
-與[Experience Manager] 6.5相比，主要差異如下：
+與[!DNL Experience Manager] 6.5相比，主要差異如下：
 
 * [資產擷取、上傳和處理](#asset-ingestion)。
 * [適用於雲端原生處理的資產微服務](#asset-microservices)。
