@@ -2,16 +2,16 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
+source-git-commit: 8e978616bd1409c12e8a40eeeeb828c853faa408
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '2098'
 ht-degree: 2%
 
 ---
 
 # 內容搜尋與索引 {#indexing}
 
-## 在AEM中變更為Cloud Service{#changes-in-aem-as-a-cloud-service}
+## AEM as aCloud Service中的變更 {#changes-in-aem-as-a-cloud-service}
 
 以AEM為Cloud Service,Adobe正從AEM執行個體導向的模型，移至具有n-x AEM容器的服務型檢視，由Cloud Manager中的CI/CD管道驅動。 必須在部署之前指定索引配置，而不是在單個AEM實例上配置和維護索引。 生產環境中的組態變更明顯違反CI/CD原則。 索引更改也同樣適用，因為如果未指定測試和重新索引，在將其投入生產之前，它可能會影響系統穩定性和效能。
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 對於以上第1點和第2點，您需要在各自Cloud Manager發行排程的自訂程式碼基底中建立新的索引定義。 如需詳細資訊，請參閱[部署至AEM as aCloud Service檔案](/help/implementing/deploying/overview.md)。
 
-### 準備新索引定義{#preparing-the-new-index-definition}
+### 準備新索引定義 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ ht-degree: 2%
 >
 >`noIntermediateSaves=true`
 
-### 部署索引定義{#deploying-index-definitions}
+### 部署索引定義 {#deploying-index-definitions}
 
 >[!NOTE]
 >
@@ -85,17 +85,17 @@ ht-degree: 2%
 >
 >如需AEM as aCloud Service所需套件結構的詳細資訊，請參閱檔案[AEM專案結構。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
-## 使用藍綠色部署{#index-management-using-blue-green-deployments}進行索引管理
+## 使用藍綠色部署進行索引管理 {#index-management-using-blue-green-deployments}
 
-### 什麼是索引管理{#what-is-index-management}
+### 什麼是索引管理 {#what-is-index-management}
 
 索引管理是關於添加、刪除和更改索引。 更改索引的&#x200B;*定義*&#x200B;很快，但應用更改（通常稱為「建立索引」，或對於現有索引，「重新索引」）需要時間。 它不是瞬間的：必須掃描儲存庫，才能為資料建立索引。
 
-### 什麼是藍綠色部署{#what-is-blue-green-deployment}
+### 什麼是藍綠色部署 {#what-is-blue-green-deployment}
 
 藍綠色部署可減少停機時間。 它還允許零停機升級，並提供快速回滾。 應用程式的舊版本（藍色）與新版本的應用程式（綠色）同時運行。
 
-### 只讀和讀寫區域{#read-only-and-read-write-areas}
+### 只讀和讀寫區域 {#read-only-and-read-write-areas}
 
 儲存庫的某些區域（儲存庫的只讀部分）在應用程式的舊（藍色）和新（綠色）版本中可能不同。 存放庫的唯讀區域通常為「`/app`」和「`/libs`」。 在以下範例中，斜體用於標籤唯讀區域，而粗體用於讀寫區域。
 
@@ -111,11 +111,11 @@ ht-degree: 2%
 
 儲存庫的讀寫區域在所有版本的應用程式之間共用，而對於每個版本的應用程式，都有一組特定的`/apps`和`/libs`。
 
-### 無藍綠色部署的索引管理{#index-management-without-blue-green-deployment}
+### 無藍綠色部署的索引管理 {#index-management-without-blue-green-deployment}
 
 在開發期間或使用內部部署安裝時，可以在執行階段新增、移除或變更索引。 索引一旦可用即可使用。 如果舊版應用程式中尚未使用索引，則通常會在計畫停機期間建立索引。 刪除索引或更改現有索引時也會發生相同情況。 刪除索引時，該索引一旦刪除即不可用。
 
-### 使用藍綠色部署{#index-management-with-blue-green-deployment}進行索引管理
+### 使用藍綠色部署進行索引管理 {#index-management-with-blue-green-deployment}
 
 使用藍綠色的部署，不會發生停機。 但是，對於索引管理，這要求索引僅供某些版本的應用程式使用。 例如，在應用程式的第2版中新增索引時，您不希望該索引供應用程式的第1版使用。 移除索引時的情況則相反：第1版仍需要第2版中移除的索引。 更改索引定義時，我們希望舊版索引只用於版本1，新版索引只用於版本2。
 
@@ -135,7 +135,7 @@ ht-degree: 2%
 
 每次變更索引時，版本號碼都會增加。 為了避免自訂索引名稱與產品本身的索引名稱衝突，自訂索引以及對現成索引的變更必須以`-custom-<number>`結尾。
 
-### 對現成可用索引{#changes-to-out-of-the-box-indexes}的更改
+### 對現成可用索引的變更 {#changes-to-out-of-the-box-indexes}
 
 一旦Adobe變更現成可用的索引（例如「damAssetLucene」或「cqPageLucene」）後，就會建立名為`damAssetLucene-2`或`cqPageLucene-2`的新索引，或者，如果已自訂索引，則自訂索引定義會與現成可用索引中的變更合併，如下所示。 變更合併會自動進行。 這表示如果現成可用的索引變更，您不需要執行任何動作。 但是，以後可以再次自定義索引。
 
@@ -146,11 +146,11 @@ ht-degree: 2%
 | /oak:index/cqPageLucene | 是 | 是 | 否 |
 | /oak:index/cqPageLucene-2 | 是 | 否 | 是 |
 
-### 當前限制{#current-limitations}
+### 目前限制 {#current-limitations}
 
 目前僅支援`lucene`類型的索引的索引管理。
 
-### 添加索引{#adding-an-index}
+### 添加索引 {#adding-an-index}
 
 要添加名為`/oak:index/acme.product-custom-1`的索引以用於新版本的應用程式和更新版本，必須按以下方式配置索引：
 
@@ -160,7 +160,7 @@ ht-degree: 2%
 
 如上所述，這可確保索引僅供新版本的應用程式使用。
 
-### 更改索引{#changing-an-index}
+### 更改索引 {#changing-an-index}
 
 更改現有索引時，需要添加新索引，並更改索引定義。 例如，請考慮更改現有索引`/oak:index/acme.product-custom-1`。 舊索引儲存在`/oak:index/acme.product-custom-1`下，新索引儲存在`/oak:index/acme.product-custom-2`下。
 
@@ -176,11 +176,11 @@ ht-degree: 2%
 >
 >AEM作為Cloud Service上的索引定義可能不完全符合本機開發例項上的索引定義。 開發執行個體沒有Tika設定，而AEM as aCloud Service執行個體則有。 如果您使用Tika配置自定義索引，請保留Tika配置。
 
-### 撤消更改{#undoing-a-change}
+### 撤消更改 {#undoing-a-change}
 
 有時，需要還原索引定義中的變更。 原因可能是錯誤地做出了改變，或者不再需要改變。 例如，索引定義`damAssetLucene-8-custom-3`是錯誤建立的，已部署。 因此，您可能希望恢復到以前的索引定義`damAssetLucene-8-custom-2`。 為此，需要添加一個名為`damAssetLucene-8-custom-4`的新索引，該索引包含前一個索引`damAssetLucene-8-custom-2`的定義。
 
-### 刪除索引{#removing-an-index}
+### 刪除索引 {#removing-an-index}
 
 以下內容僅適用於自訂索引。 產品索引不能被刪除，因為AEM使用。
 
@@ -208,3 +208,12 @@ ht-degree: 2%
 ```
 
 如果不再需要自訂現成可用的索引，則必須複製現成可用的索引定義。 例如，如果您已部署`damAssetLucene-8-custom-3`，但不再需要自定義項，並且想要切換回預設的`damAssetLucene-8`索引，則必須添加包含`damAssetLucene-8`索引定義的索引`damAssetLucene-8-custom-4`。
+
+## 索引最佳化
+
+Apache Jackrabbit Oak可啟用彈性的索引設定，以有效處理搜尋查詢。 雖然索引優化對中小型項目可能沒有主要作用，但對於擁有大型內容儲存庫和更高內容速度的項目來說，必須對索引進行有針對性的效率改進。 應盡可能避免非最佳化索引和後援索引。 建議您採取主動步驟，以確保適當且最佳化的索引可供AEM中的所有查詢使用。 在沒有合適索引的情況下，查詢遍歷整個儲存庫 — 應通過分析日誌檔案來識別此類查詢，以便相應地優化索引定義，因為儲存庫遍歷查詢是AEM中最不有效的查詢方法。 如需詳細資訊，請參閱[本頁面](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes)。
+
+### AEM as aCloud Service上的Lucene全文索引
+
+全文索引lucene2預設會為AEM儲存庫中的所有內容建立索引，因此由於其儲存庫相依大小，效率極低。 Lucene全文索引已在內部淘汰，自2021年9月起不再部署於AEM作為Cloud Service。 因此，AEM中的產品端不再使用它作為Cloud Service，也不需要執行客戶代碼。 對於AEM作為具有通用Lucene索引的Cloud Service環境，Adobe正在與客戶個別合作，以尋求協調的方法來補償此索引，並使用更好、最佳化的索引。 如果與所有期望相反，在自定義代碼中執行查詢時實際需要一個全文索引，則應以不同名稱建立與Lucene索引相似的索引定義，以避免維護中出現衝突。
+除非Adobe另有建議，否則此最佳化不適用於其他由內部部署托管或由Adobe Managed Services管理的AEM環境。
