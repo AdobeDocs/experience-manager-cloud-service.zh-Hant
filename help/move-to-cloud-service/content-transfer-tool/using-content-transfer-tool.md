@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 5c5ddac1a3b948d1efbd06aa188ac6d8d897d37f
+source-git-commit: 2f811c5c6ccbb1d05aa1825dd110e0c9d5e6b219
 workflow-type: tm+mt
-source-wordcount: '2929'
-ht-degree: 40%
+source-wordcount: '3063'
+ht-degree: 38%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 40%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="發行說明"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution入口網站"
 
-您可以從軟體發佈入口網站下載「內容轉移工具」的ZIP檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。請務必下載最新版本。 如需最新版本的詳細資訊，請參閱[發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)。
+您可以從軟體發佈入口網站下載「內容轉移工具」的ZIP檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。請務必下載最新版本。 如需最新版本的詳細資訊，請參閱[發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hant)。
 
 >[!NOTE]
 >從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)入口網站下載內容轉移工具。
@@ -285,6 +285,23 @@ ht-degree: 40%
 1. 在&#x200B;**刪除移轉集**&#x200B;對話框中按一下&#x200B;**刪除**&#x200B;以確認刪除。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
+
+
+## 在發佈執行個體上執行內容轉移工具 {#running-ctt-on-publish}
+
+建議將內容移至發佈例項時，應在來源發佈例項上安裝CTT，以將內容移至目標發佈例項。 請遵循以下說明的建議方法：
+
+* 使用與Author例項上所使用的CTT相同版本。
+
+* 只需移轉單一發佈節點。 在開始提取之前，應從負載平衡器中移除它。
+
+* 建立移轉集時，請使用製作AEMaaCS環境的URL。
+
+* 擷取至發佈期間，發佈層級不會縮小（與作者不同）。 為了防患於未然，請避免任何用戶啟動的寫入操作，例如：
+
+   * 從AEMaaCS製作到在該環境中發佈的內容發佈
+   * 發佈執行個體之間的使用者同步
+
 
 ## 疑難排解 {#troubleshooting}
 
