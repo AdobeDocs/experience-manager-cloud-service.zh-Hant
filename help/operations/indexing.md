@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8e978616bd1409c12e8a40eeeeb828c853faa408
+source-git-commit: 10dea59cb196487adc1300b52dd9edc5afb33cb3
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2038'
 ht-degree: 2%
 
 ---
@@ -211,9 +211,9 @@ ht-degree: 2%
 
 ## 索引最佳化
 
-Apache Jackrabbit Oak可啟用彈性的索引設定，以有效處理搜尋查詢。 雖然索引優化對中小型項目可能沒有主要作用，但對於擁有大型內容儲存庫和更高內容速度的項目來說，必須對索引進行有針對性的效率改進。 應盡可能避免非最佳化索引和後援索引。 建議您採取主動步驟，以確保適當且最佳化的索引可供AEM中的所有查詢使用。 在沒有合適索引的情況下，查詢遍歷整個儲存庫 — 應通過分析日誌檔案來識別此類查詢，以便相應地優化索引定義，因為儲存庫遍歷查詢是AEM中最不有效的查詢方法。 如需詳細資訊，請參閱[本頁面](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes)。
+Apache Jackrabbit Oak可啟用彈性的索引設定，以有效處理搜尋查詢。 索引對於較大的儲存庫尤其重要。 應盡可能避免非最佳化索引和後援索引。 請確保所有查詢都由適當的索引備份。 沒有適當索引的查詢可讀取數千個節點，然後記錄為警告。 應通過分析日誌檔案來識別此類查詢，以便可以優化索引定義。 如需詳細資訊，請參閱[本頁面](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes)。
 
 ### AEM as aCloud Service上的Lucene全文索引
 
-全文索引lucene2預設會為AEM儲存庫中的所有內容建立索引，因此由於其儲存庫相依大小，效率極低。 Lucene全文索引已在內部淘汰，自2021年9月起不再部署於AEM作為Cloud Service。 因此，AEM中的產品端不再使用它作為Cloud Service，也不需要執行客戶代碼。 對於AEM作為具有通用Lucene索引的Cloud Service環境，Adobe正在與客戶個別合作，以尋求協調的方法來補償此索引，並使用更好、最佳化的索引。 如果與所有期望相反，在自定義代碼中執行查詢時實際需要一個全文索引，則應以不同名稱建立與Lucene索引相似的索引定義，以避免維護中出現衝突。
+全文索引`/oak:index/lucene-2`可能會變得非常大，因為預設情況下，它為AEM儲存庫中的所有節點建立索引。 Lucene全文索引已在內部淘汰，自2021年9月起不再部署於AEM作為Cloud Service。 因此，AEM中的產品端不再使用它作為Cloud Service，也不需要執行客戶代碼。 對於AEM作為具有通用Lucene索引的Cloud Service環境，Adobe正在與客戶個別合作，以尋求協調的方法來補償此索引，並使用更好、最佳化的索引。 如果自定義查詢需要此索引，作為臨時解決方案，應使用不同名稱（例如`/oak:index/acme.lucene-1-custom-1`）建立此索引的副本，如[here](/help/operations/indexing.md)中所述。
 除非Adobe另有建議，否則此最佳化不適用於其他由內部部署托管或由Adobe Managed Services管理的AEM環境。
