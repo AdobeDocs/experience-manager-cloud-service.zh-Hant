@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 10dea59cb196487adc1300b52dd9edc5afb33cb3
+source-git-commit: 4c747623df70b30f4cd6c6bf6bbb950851469091
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2057'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,9 @@ ht-degree: 2%
 
 1. 客戶可以在Cloud Manager建置頁面上查看索引工作是否已完成，並會在新版本準備好接收流量時收到通知。
 
-1. 限制：目前，AEM as aCloud Service上的索引管理僅支援lucene類型的索引。
+1. 限制:
+* 目前，AEM as aCloud Service上的索引管理僅支援lucene類型的索引。
+* 僅支援標準分析器（即隨產品提供的分析器）。 不支援自訂分析器。
 
 ## 使用方式 {#how-to-use}
 
