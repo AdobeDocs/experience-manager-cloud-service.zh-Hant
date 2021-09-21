@@ -2,10 +2,10 @@
 title: 過時和移除的功能
 description: 特定於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中已棄用和已移除功能的發行說明。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 6a850b03501c899cf5b91fca9012036cad2a78ef
+source-git-commit: 8294709d6c5685fd5b88a52835b4082e3e713a51
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 36%
+source-wordcount: '559'
+ht-degree: 35%
 
 ---
 
@@ -34,6 +34,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 | 功能 | 汰除功能 | 替代方案 |
 | ------------ | ------------------ | ----------- |
+| [!DNL Sites] | 以範本為基礎的簡單內容片段。 | [現在提供模型型結構化](/help/assets/content-fragments/content-fragments-models.md) 內容片段。 |
 | [!DNL Assets] | 處理所擷取影像的 `DAM Asset Update` 工作流程。 | 資產擷取現在使用[資產微服務](/help/assets/asset-microservices-overview.md)。 |
 | [!DNL Assets] | 直接將資產上傳至[!DNL Experience Manager]。請參閱[已棄用的資產上傳API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二進位上傳](/help/assets/add-assets.md)。如需技術詳細資訊，請參閱[直接上傳 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
 | [!DNL Assets] | 不支援 [ 工作流程中的](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)某些工作流程步驟`DAM Asset Update`，包括呼叫命令列工具，例如 [!DNL ImageMagick]. | [資產微服務](/help/assets/asset-microservices-overview.md)可取代許多工作流程。若要自訂處理程序，請使用[後期處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
