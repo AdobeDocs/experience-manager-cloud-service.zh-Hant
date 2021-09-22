@@ -1,9 +1,9 @@
 ---
 title: Cloud Manager儲存庫
 description: Cloud Manager儲存庫
-source-git-commit: f2a93373d6f3d6e92dc170fd98315b5989b2b296
+source-git-commit: 66cc18f0449668f62c416482e27a72ea1baec0a1
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,25 @@ ht-degree: 0%
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-1. 您可以選擇儲存庫，然後按一下表格最右側的菜單選項，以&#x200B;**複製儲存庫URL**、**查看和更新**&#x200B;或&#x200B;**刪除**&#x200B;儲存庫，如下圖所示。
+1. 您可以選擇儲存庫，然後按一下表格最右側的菜單選項，將儲存庫URL **或** View &amp; Update **或** Delete **複製儲存庫，如下圖所示。**
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+
+## 刪除儲存庫 {#delete-repo}
+
+請依照下列步驟，刪除Cloud Manager中的存放庫：
+>[!NOTE]
+>刪除儲存庫將：
+>1. 使已刪除的儲存庫名稱無法用於將來可能建立的新儲存庫。 在此情況下，將會看到如下所示的錯誤訊息：
+   >*儲存庫名稱在組織內應是唯一的。*
+>1. 讓已刪除的存放庫在Cloud Manager中無法使用，因此無法連結至管道。
+
+
+1. 從&#x200B;**程式概述**&#x200B;頁，按一下&#x200B;**儲存庫**&#x200B;頁簽並導航到&#x200B;**儲存庫**&#x200B;頁。
+
+1. 選取存放庫，然後按一下表格最右側的功能表選項。 按一下&#x200B;**Delete**&#x200B;以刪除儲存庫，如下圖所示。
+
+   ![](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 
 ## Git子模組支援 {#git-submodule-support}
