@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: ab84fe6c5b1ea16de2b4dff9bf5dc55ba196fb6f
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2402'
 ht-degree: 8%
 
 ---
@@ -59,6 +59,8 @@ Cloud Manager使用者會為AEM Assets啟用Brand Portal作為[!DNL Cloud Servic
 >如果您有適用於IMS組織(org1-existing)的現有Brand Portal雲端設定([使用Adobe開發人員控制台](#manual-configuration)手動設定)，且您的AEM Assets為[!DNL Cloud Service]例項已針對其他IMS組織(org2-new)設定，則從Cloud manager啟用Brand Portal會將Brand Portal IMS組織重設為`org2-new`。 雖然在`org1-existing`上手動設定的雲端設定會顯示在AEM Assets製作例項中，但從Cloud Manager啟動Brand Portal後，將不再使用。
 >
 >如果現有的Brand Portal雲端設定和AEM Assets作為[!DNL Cloud Service]例項使用相同的IMS組織(org1)，您只需從Cloud Manager啟用Brand Portal即可。
+>
+>請勿修改任何自動產生的設定。
 
 **另請參閱**:
 * [在AEM Assets中新增使用者和角色作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
