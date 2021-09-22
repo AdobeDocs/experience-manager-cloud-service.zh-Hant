@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版發行說明。'
-source-git-commit: 6a81e04a7de657d222cdd965fb6e2d4351b4c338
+exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
+source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1355'
 ht-degree: 4%
 
 ---
-
 
 # [!DNL Adobe Experience Manager]作為Cloud Service的最新發行說明 {#release-notes}
 
@@ -68,35 +68,8 @@ ht-degree: 4%
 
 #### Dynamic Media的新增功能 {#what-is-new-dm}
 
-* 智慧影像處理DPR（設備像素比率）和網路頻寬優化使您能夠在具有高解析度顯示器且網路頻寬受限的設備上高效地提供最佳質量影像。 如需詳細資訊，請參閱[智慧型影像常見問題集](/help/assets/dynamic-media/imaging-faq.md)。
-
-   >[!NOTE]
-   >
-   >上述智慧型影像處理增強功能的發行時間軸為：
-   >
-   >* 北美2021年5月24日於納歐州，
-      >
-      >
-   * 歐洲、中東和非洲2021年6月25日，
-      >
-      >
-   * 亞太2021年7月19日。
-
-
-* 導入Dynamic Media傳送（fmt URL修飾元）中支援下一代影像格式AVIF。
-
-   >[!NOTE]
-   >
-   >AVIF支援的發行時間表為：
-   >
-   >* 北美2021年5月10日，
-      >
-      >
-   * 歐洲、中東和非洲2021年5月24日，
-      >
-      >
-   * 2021年6月24日。
-
+* 智慧影像處理DPR（設備像素比率）和網路頻寬優化使您能夠在具有高解析度顯示器且網路頻寬受限的設備上高效地提供最佳質量影像。 如需詳細資訊，請參閱[智慧型影像常見問題集](/help/assets/dynamic-media/imaging-faq.md)和[使用新一代影像格式進行影像最佳化WebP和AVIF。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* 推出在Dynamic Media傳送（fmt URL修飾元）中支援新一代影像格式AVIF。
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 

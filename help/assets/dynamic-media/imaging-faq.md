@@ -1,12 +1,12 @@
 ---
 title: 智慧型影像
 description: 了解Adobe Sensei AI的智慧型影像處理如何套用每位使用者的獨特檢視特性，自動提供符合其體驗最佳化的適當影像，進而提升效能和參與度。
-feature: 資產管理，轉譯
+feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 771e6b021c4da68ac35437d45ea36bb38eae2f34
+source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
-source-wordcount: '2613'
+source-wordcount: '2624'
 ht-degree: 1%
 
 ---
@@ -192,7 +192,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 | Europe, Middle East, Africa | 13 August 2021 | 
 | Asia-Pacific | 22 July 2021 | -->
 
-1. [使用Admin Console建立支援案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+1. [使用Admin Console建立支援案例](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)。
 1. 在您的支援案例中提供下列資訊：
 
    1. 主要聯繫人姓名、電子郵件、電話。
@@ -282,3 +282,9 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 * 任何檢視器端DPR最佳化都會與伺服器端智慧型影像處理DPR最佳化搭配運作，而不會導致影像大小過大。 換言之，無論DPR是由檢視器處理的，例如只有啟用縮放的檢視器中的主檢視，伺服器端智慧型影像處理DPR值都不會觸發。 同樣地，只要檢視器元素（例如色票和縮圖）沒有DPR處理，就會觸發伺服器端智慧型影像處理DPR值。
 
 另請參閱[使用影像時](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images)和[使用智慧型裁切時](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)。
+
+>[!MORELIKETHIS]
+>
+>* [使用新一代影像格式WebP和AVIF進行影像優化。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>
+
