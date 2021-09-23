@@ -2,9 +2,9 @@
 title: 使用使用者對應工具
 description: 使用使用者對應工具
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
+source-git-commit: c8e7c6c45d898029b55bcfc09f7f2b7051d03031
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1375'
 ht-degree: 2%
 
 ---
@@ -63,11 +63,12 @@ AEM as aCloud Service的重大變更，是完整整合使用AdobeID來存取製�
 
 1. 使用您的Adobe ID導覽至[Adobe開發人員控制台](https://console.adobe.io)。
 1. 建立新專案或開啟現有專案。
-1. 新增API。
-1. 選擇「用戶管理API」。
+1. 新增API — 按一下「新增至專案」**並選取「** API **」**
+1. 選擇「用戶管理API」。  您可能需要取得權限才能擁有此選項。
 1. 建立JWT憑證。
-1. 產生金鑰組或上傳公開金鑰（rsa不好）。
-1. 產生存取權杖（或JWT權杖或承載權杖）。
+1. 產生金鑰組或上傳公開金鑰（rsa不好）。  有一個按鈕&#x200B;**生成公用/專用密鑰對**，它將為您執行此操作。  請務必儲存公開金鑰和私密金鑰。
+1. 導覽至「使用者管理API」。
+1. 將您的私密金鑰內容貼入文字方塊，然後按一下「產生代號」**，以產生存取代號（或承載代號）。**
 1. 保存所有這些資訊，如&#x200B;**客戶端ID**、**客戶機密碼**、**技術帳戶ID**、**技術帳戶電子郵件**、**組織ID**&#x200B;和&#x200B;**安全訪問令牌**。
 
 ## 使用者介面 {#user-interface}
