@@ -2,12 +2,12 @@
 title: 大量匯入和匯出資產中繼資料
 description: 本文說明如何大量匯入和匯出中繼資料。
 contentOwner: AG
-feature: 中繼資料
+feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 561df1d2a2f7b900470084d28b832b4c7a568d3e
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '667'
 ht-degree: 10%
 
 ---
@@ -34,7 +34,7 @@ Adobe Experience Manager Assets可讓您使用CSV檔案大量匯入資產中繼�
    | 批次大小 | 要匯入中繼資料的批次中的資產數。 預設值為 50。最大值為100。 |
    | 欄位分隔符號 | 預設值為`,`（逗號）。 您可以指定任何其他字元。 |
    | 多值分隔字元 | 中繼資料值的分隔符號。 預設值為 `|`. |
-   | 啟動工作流程 | 預設為False。 設為`true`時，DAM中繼資料回寫工作流程(將中繼資料寫入二進位XMP資料)的預設啟動器設定生效。 啟用啟動工作流程會拖慢系統速度。 |
+   | 啟動工作流程 | 預設為False。 設為`true`時，DAM中繼資料回寫工作流程(將中繼資料寫入二進位XMP資料)的預設設定生效。 啟用工作流程會拖慢系統速度。 |
    | 資產路徑欄名稱 | 定義含有資產的CSV檔案的欄名稱。 |
 
 1. 按一下工具列中的&#x200B;**[!UICONTROL 匯入]**。 匯入中繼資料後，通知會傳送至您的通知收件匣。 導覽至資產屬性頁面，並確認是否已為資產正確匯入中繼資料值。
