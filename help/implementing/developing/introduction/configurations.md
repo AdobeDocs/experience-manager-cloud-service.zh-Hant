@@ -1,19 +1,19 @@
 ---
 title: 配置和配置瀏覽器
 description: 了解AEM設定，以及如何在AEM中管理工作區設定。
-source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
+source-git-commit: 4892f644929bc308762ca4fb8a2ebfb85e5fb5e2
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1498'
 ht-degree: 1%
 
 ---
 
 
-# 配置和配置瀏覽器{#configuration-browser}
+# 配置和配置瀏覽器 {#configuration-browser}
 
 AEM設定可用於管理AEM中的設定，並作為工作區。
 
-## 什麼是配置？{#what-is-a-configuration}
+## 什麼是配置？ {#what-is-a-configuration}
 
 可從兩個不同的觀點來考慮配置。
 
@@ -27,16 +27,16 @@ AEM設定可用於管理AEM中的設定，並作為工作區。
 * 設定可為特定使用者群組啟用特定功能。
 * 設定會定義這些功能的存取權限。
 
-## 作為管理員的配置{#configurations-administrator}
+## 管理員配置 {#configurations-administrator}
 
 AEM管理員及作者可將設定視為工作區。 這些工作區可用於透過對這些功能實作存取權限，以收集設定群組以及其相關內容，以利於組織用途。
 
 可在AEM中針對許多不同功能建立設定。
 
-* [雲端設定](/help/implementing/developing/introduction/configurations.md)
 * [內容中心區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 * [可編輯的範本](/help/sites-cloud/authoring/features/templates.md)
+* 各種雲端設定
 
 ### 範例 {#administrator-example}
 
@@ -56,7 +56,7 @@ AEM管理員及作者可將設定視為工作區。 這些工作區可用於透�
 
 不僅可編輯的範本，雲端設定、ContextHub區段和內容片段模型也可進行類似的設定。
 
-### 使用配置瀏覽器{#using-configuration-browser}
+### 使用設定瀏覽器 {#using-configuration-browser}
 
 組態瀏覽器可讓管理員輕鬆建立、管理和設定AEM中組態的存取權限。
 
@@ -64,7 +64,7 @@ AEM管理員及作者可將設定視為工作區。 這些工作區可用於透�
 >
 >只有當您的使用者擁有`admin`權限時，才能使用「設定瀏覽器」建立設定。 `admin` 為了指派存取權給設定或以其他方式修改設定，也需要權限。
 
-#### 建立配置{#creating-a-configuration}
+#### 建立設定 {#creating-a-configuration}
 
 使用「設定瀏覽器」在AEM中建立新設定非常簡單。
 
@@ -79,17 +79,17 @@ AEM管理員及作者可將設定視為工作區。 這些工作區可用於透�
       * 系統會根據標題自動產生，並根據[AEM命名慣例進行調整。](naming-conventions.md)
       * 如有需要，可加以調整。
 1. 檢查您要允許的配置類型。
-   * [雲端設定](/help/implementing/developing/introduction/configurations.md)
    * [內容中心區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
    * [可編輯的範本](/help/sites-cloud/authoring/features/templates.md)
+   * 各種雲端設定
 1. 點選或按一下&#x200B;**建立**。
 
 >[!TIP]
 >
 >配置可以嵌套。
 
-#### 編輯配置及其訪問權限{#access-rights}
+#### 編輯配置及其訪問權限 {#access-rights}
 
 如果您將設定視為工作區，則可在這些設定上設定存取權限，以強制哪些人可以和哪些人不可以存取這些工作區。
 
@@ -110,11 +110,11 @@ AEM管理員及作者可將設定視為工作區。 這些工作區可用於透�
 1. 重複這些步驟以選取使用者或角色，並視需要指派其他存取權限。
 1. 完成後，點選或按一下「**儲存並關閉**」。
 
-## 以開發人員身分進行的設定{#configurations-developer}
+## 以開發人員身分進行設定 {#configurations-developer}
 
 身為開發人員，請務必了解AEM as aCloud Service如何搭配設定運作，以及處理設定解析的方式。
 
-### 分離配置和內容{#separation-of-config-and-content}
+### 分離配置和內容 {#separation-of-config-and-content}
 
 雖然[管理員和用戶可能將配置視為工作場所](#configurations-administrator)來管理不同的設定和內容，但務必了解配置和內容由儲存庫中的AEM單獨儲存和管理。
 
@@ -161,7 +161,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 最後，我們看到范常式式碼所需的屬性`bgkcolor`。 我們從`getItem`返回的`ValueMap`是以頁面的`jcr:content`節點為基礎。
 
-### 配置解析度{#configuration-resolution}
+### 配置解析度 {#configuration-resolution}
 
 上述基本範例顯示單一設定。 但在許多情況下，您會想要有不同的設定，例如預設全域設定、每個品牌的不同設定，以及子專案的特定設定。
 
@@ -192,13 +192,13 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
    * 透過應用程式部署修正
    * 運行時只讀
 
-### 使用配置{#using-configurations}
+### 使用配置 {#using-configurations}
 
 AEM中的設定是以Sling內容感知設定為基礎。 Sling套件組合提供服務API，可用來取得內容感知設定。 上下文感知配置是與內容資源或資源樹相關的配置，如上例中所述[。](#developer-example)
 
 如需內容感知設定、範例及其使用方式的詳細資訊，請[參閱Sling檔案。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
-### ConfMgr Web控制台{#confmgr-web-console}
+### ConfMgr Web控制台 {#confmgr-web-console}
 
 為了進行偵錯和測試，在`https://<host>:<port>/system/console/conf`處有一個&#x200B;**ConfMgr** Web控制台，可顯示指定路徑/項的配置。
 
@@ -212,7 +212,7 @@ AEM中的設定是以Sling內容感知設定為基礎。 Sling套件組合提供
 
 按一下&#x200B;**解析**&#x200B;以查看已解析哪些配置並接收將解析這些配置的示例代碼。
 
-### 上下文感知配置Web控制台{#context-aware-web-console}
+### 內容感知配置Web控制台 {#context-aware-web-console}
 
 為了偵錯和測試之用，`https://<host>:<port>/system/console/slingcaconfig`提供&#x200B;**上下文感知設定** Web主控台，可在存放庫中查詢上下文感知設定並檢視其屬性。
 
