@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 4c747623df70b30f4cd6c6bf6bbb950851469091
+source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2061'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Jackrabbit Filevault Maven套件外掛程式版本&#x200B;**1.1.0**&#x200B;有已知問題，無法將`oak:index`新增至`<packageType>application</packageType>`的模組。 若要解決此問題，請使用&#x200B;**1.0.4**&#x200B;版。
+>Jackrabbit Filevault Maven套件外掛程式版本&#x200B;**1.1.0**&#x200B;有已知問題，無法將`oak:index`新增至`<packageType>application</packageType>`的模組。 您應更新至該外掛程式的最新版本。
 
 索引定義現在已標示為自訂和版本控制：
 
