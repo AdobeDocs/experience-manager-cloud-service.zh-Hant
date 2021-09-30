@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ab84fe6c5b1ea16de2b4dff9bf5dc55ba196fb6f
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 8%
@@ -78,7 +78,7 @@ Brand Portal租用戶的預設URL為：`https://<tenant-id>.brand-portal.adobe.c
 
 如果您不確定Brand Portal URL，請執行下列步驟：
 
-1. 登入[Admin Console](http://adminconsole.adobe.com/)並導覽至&#x200B;**[!UICONTROL Products]**。
+1. 登入[Admin Console](https://adminconsole.adobe.com/)並導覽至&#x200B;**[!UICONTROL Products]**。
 1. 從左側邊欄，選取&#x200B;**[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**。
 1. 按一下&#x200B;**[!UICONTROL 前往Brand Portal]**&#x200B;直接在瀏覽器中開啟Brand Portal。
 
@@ -229,8 +229,8 @@ IMS 設定包括兩個步驟：
 公開金鑰（憑證）會在Adobe開發人員控制台中驗證您的設定檔。
 
 1. 登入AEM Assets。
-1. 從&#x200B;**工具**&#x200B;面板，導覽至&#x200B;**[!UICONTROL 安全性]** > **[!UICONTROL AdobeIMS設定]**。
-1. 在「AdobeIMS設定」頁面中，按一下「**[!UICONTROL 建立]**」。 它會重新導向至&#x200B;**[!UICONTROL AdobeIMS技術帳戶設定]**&#x200B;頁面。 依預設，會開啟&#x200B;**Certificate**&#x200B;標籤。
+1. 從&#x200B;**工具**&#x200B;面板，導覽至&#x200B;**[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS設定]**。
+1. 在「Adobe IMS設定」頁面中，按一下「**[!UICONTROL 建立]**」。 它會重新導向至&#x200B;**[!UICONTROL Adobe IMS技術帳戶設定]**&#x200B;頁面。 依預設，會開啟&#x200B;**Certificate**&#x200B;標籤。
 1. 在&#x200B;**[!UICONTROL 雲解決方案]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL AdobeBrand Portal]**。
 1. 選中「建立新證書&#x200B;]**」複選框，並為公鑰指定**&#x200B;別名&#x200B;**。**[!UICONTROL &#x200B;別名用作公鑰的名稱。
 1. 按一下&#x200B;**[!UICONTROL 建立憑證]**。然後，按一下&#x200B;**[!UICONTROL OK]**&#x200B;以產生公開金鑰。
@@ -245,7 +245,7 @@ IMS 設定包括兩個步驟：
 
 1. 按一下&#x200B;**[!UICONTROL 下一步]**。
 
-   在&#x200B;**帳戶**&#x200B;標籤中，建立AdobeIMS帳戶，此帳戶需要在Adobe開發人員控制台中產生的服務帳戶憑證。 暫時保持此頁面開啟。
+   在&#x200B;**帳戶**&#x200B;標籤中，建立Adobe IMS帳戶，此帳戶需要在Adobe開發人員控制台中產生的服務帳戶憑證。 暫時保持此頁面開啟。
 
    開啟新標籤，並在Adobe開發人員控制台](#createnewintegration)中建立服務帳戶(JWT)連線，以取得用於設定IMS帳戶的憑證和JWT裝載。[
 

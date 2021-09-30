@@ -2,13 +2,13 @@
 title: ' [!DNL Assets]的開發者引用'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
 contentOwner: AG
-feature: API,Assets HTTP API
+feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 1%
+source-wordcount: '1430'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 | × | 不支援. 請勿使用。 |
 | - | 不可用 |
 
-| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/ Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset compute服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _（預覽）_ |
+| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/ Sling / ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset compute服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _（預覽）_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **原始二進位** |  |  |  |  |  |  |
 | 建立原始 | ✓ | × | - | × | × | - |
@@ -185,7 +185,7 @@ ht-degree: 1%
 
 ## 支援後置處理工作流程中的工作流程步驟 {#post-processing-workflows-steps}
 
-如果您從舊版[!DNL Experience Manager]升級，可以使用資產微服務來處理資產。 雲端原生資產微服務的設定和使用更簡單。 不支援舊版[!UICONTROL DAM更新資產]工作流程中使用的一些工作流程步驟。 有關支援類的詳細資訊，請參閱[Java API參考或Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)。
+如果您從舊版[!DNL Experience Manager]升級，可以使用資產微服務來處理資產。 雲端原生資產微服務的設定和使用更簡單。 不支援舊版[!UICONTROL DAM更新資產]工作流程中使用的一些工作流程步驟。 有關支援類的詳細資訊，請參閱[Java API參考或Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html)。
 
 下列技術工作流程模型會由資產微服務取代，或無法取得支援：
 
@@ -264,5 +264,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 

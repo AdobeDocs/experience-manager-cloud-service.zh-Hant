@@ -3,9 +3,9 @@ title: Adobe Experience Manager as assets HTTP API中的Cloud Service內容片�
 description: 了解在AEM無頭傳送功能的重要一環Assets HTTP API中支援內容片段。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1947'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 [Assets REST API](/help/assets/mac-api-assets.md)可讓Adobe Experience Manager的開發人員透過CRUD作業（建立、讀取、更新、刪除），直接透過HTTP API存取內容(儲存在AEM中)。
 
-API可讓您將Adobe Experience Manager當作無頭CMS（內容管理系統），透過為JavaScript前端應用程式提供內容服務來運作。 或可執行HTTP要求和處理JSON回應的任何其他應用程式。
+此API可讓您將Adobe Experience Manager作為Cloud Service，以無頭CMS（內容管理系統）的形式運作，方法是向JavaScript前端應用程式提供內容服務。 或可執行HTTP要求和處理JSON回應的任何其他應用程式。
 
 例如，[單頁應用程式(SPA)](/help/implementing/developing/hybrid/introduction.md)（架構型或自訂）需要透過HTTP API提供的內容，通常為JSON格式。
 
@@ -256,7 +256,7 @@ GETREST API支援透過URL參數進行分頁（適用於資產要求）:
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[ API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager Assets API — 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>如需詳細資訊，請參閱[ API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 尤其是[Adobe Experience Manager Assets API — 內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
 
 ### 讀取/傳送 {#read-delivery}
 
@@ -374,7 +374,7 @@ GETREST API支援透過URL參數進行分頁（適用於資產要求）:
 
 如需詳細的API參考，請參閱這裡：
 
-* [Adobe Experience Manager Assets API — 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API — 內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
