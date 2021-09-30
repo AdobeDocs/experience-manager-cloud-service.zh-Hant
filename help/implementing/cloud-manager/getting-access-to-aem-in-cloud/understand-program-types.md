@@ -2,9 +2,9 @@
 title: 了解方案和方案類型
 description: 了解方案和方案類型 — Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: aae4d942ef1e7ffd0065de73c3fbd044a19c3e8e
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -39,8 +39,8 @@ $ git clone {URL}
 使用者可以建立&#x200B;**沙箱**&#x200B;或&#x200B;**生產**&#x200B;程式。
 
 * 建立&#x200B;*生產程式*以在將來的適當時間啟用即時流量。
-如需詳細資訊，請參閱生產計畫簡介。
+如需詳細資訊，請參閱[生產程式簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en) 。
 
 
 * *沙箱方案*通常建立以用於培訓、執行示範、啟用、POC或檔案。 其用途不是攜帶即時流量，且生產計畫不會受到限制。 其中包含Sites和Assets，且會透過Git分支自動填入，該分支包含范常式式碼、開發環境及非生產管道。
-如需詳細資訊，請參閱沙箱方案簡介。
+如需詳細資訊，請參閱[沙箱方案簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en) 。

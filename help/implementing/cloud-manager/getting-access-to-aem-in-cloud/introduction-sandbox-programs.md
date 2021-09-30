@@ -2,9 +2,9 @@
 title: '沙箱方案簡介 '
 description: 沙箱方案簡介
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,10 @@ ht-degree: 0%
 
 沙箱方案包含[!DNL Sites]和[!DNL Assets]，並會自動填入Git存放庫、開發環境和非生產管道。  Git存放庫會根據AEM專案原型填入範例專案。
 
-請參閱了解方案和方案類型，深入了解方案類型。
+>[!NOTE]
+>沙箱方案中無法使用自訂網域和IP允許清單。
+
+請參閱[了解程式和程式類型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en)以深入了解程式類型。
 
 ### 沙箱方案的屬性 {#attributes-sandbox}
 
