@@ -2,7 +2,7 @@
 title: 管理記錄 — Cloud Service
 description: 管理記錄 — Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
+source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 使用者可以使用&#x200B;**概述**&#x200B;頁面或環境詳細資訊頁面中的&#x200B;**環境**&#x200B;卡，存取所選環境的可用日誌檔案清單。
 
-## 正在下載日誌{#download-logs}
+## 正在下載日誌 {#download-logs}
 
 請依照下列步驟下載記錄檔。
 
@@ -37,7 +37,7 @@ ht-degree: 10%
    ![](assets/download-preview.png)
 
 
-## 透過API {#logs-through-api}記錄
+## 透過API記錄 {#logs-through-api}
 
 除了透過UI下載記錄檔外，記錄檔也可透過API和命令列介面使用。
 
