@@ -1,13 +1,13 @@
 ---
 title: 管理工作流程例項
 description: 了解如何管理工作流程例項
-feature: 管理
+feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 079c9a64aeee62b36a12083645ca43b115838705
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 1%
+source-wordcount: '1118'
+ht-degree: 0%
 
 ---
 
@@ -167,3 +167,79 @@ ht-degree: 1%
 | 屬性名稱（Web主控台） | OSGi屬性名稱 |
 |---|---|
 | 最大收件箱查詢大小 | granite.workflow.inboxQuerySize |
+
+## 為客戶擁有的資料存放區使用工作流程變數 {#using-workflow-variables-customer-datastore}
+
+工作流程中使用的資料會儲存在Adobe提供的儲存體(JCR)中。 這些資料在本質上是敏感的。 您可能希望將所有用戶定義的元資料/資料保存在自己的托管儲存中，而不是Adobe提供的儲存中。 本節介紹如何為外部儲存設定這些變數。
+
+### 將模型設定為使用外部元資料儲存 {#set-model-for-external-storage}
+
+在工作流程模型層級，計畫引入標幟，指出模型（及其執行階段）具有中繼資料的外部儲存。 針對標示為外部儲存之模型的工作流程例項，使用者中繼資料不會保存在JCR中。
+
+要激活此功能，必須啟用外部持久性標誌：**userMetaDataCustomPersistenceEnabled = &quot;true&quot;**。
+屬性*userMetadataPersistenceEnabled*&#x200B;將儲存在工作流模型的&#x200B;*jcr:content節點*&#x200B;上。 此標幟會以&#x200B;*cq:userMetaDataCustomPersistenceEnabled*&#x200B;的形式保存在工作流程中繼資料中。
+
+下圖顯示必須在工作流程上設定標幟。
+
+![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
+
+### 外部儲存中中繼資料的API {#apis-for-metadata-external-storage}
+
+UserMetaDataPersistenceContext
+
+下列範例會示範如何使用API。
+
+```
+@ProviderType
+public interface UserMetaDataPersistenceContext {
+ 
+    /**
+     * Gets the workflow for persistence
+     * @return workflow
+     */
+    Workflow getWorkflow();
+ 
+    /**
+     * Gets the workflow id for persistence
+     * @return workflowId
+     */
+    String getWorkflowId();
+ 
+    /**
+     * Gets the user metadata persistence id
+     * @return userDataId
+     */
+    String getUserDataId();
+}
+```
+
+UserMetaDataPersistenceProvider
+
+```
+/**
+ * This provider can be implemented to store the user defined workflow-data metadata in a custom storage location
+ */
+@ConsumerType
+public interface UserMetaDataPersistenceProvider {
+ 
+   /**
+    * Retrieves the metadata using a unique identifier
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap of user defined workflow data metaData
+    * @throws WorkflowException
+    */
+   void get(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+ 
+   /**
+    * Stores the given metadata to the custom storage location
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap metadata map
+    * @return the unique identifier that can be used to retrieve metadata. If null is returned, then workflowId is used.
+    * @throws WorkflowException
+    */
+   String put(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+ 
+} 
+```
+
+
