@@ -1,13 +1,13 @@
 ---
 title: Cloud Acceleration Manager的整備階段
 description: 本頁概述Cloud Acceleration Manager的整備階段。
-source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
+exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
+source-git-commit: 2436d7a7a0127219f3d7cb383b857431ba2a2bb4
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '682'
 ht-degree: 5%
 
 ---
-
 
 # Cloud Acceleration Manager的整備階段 {#readiness-phase-cam}
 
@@ -54,6 +54,9 @@ ht-degree: 5%
 1. 按一下「**上傳新報表**」以在CAM中上傳BPA報表。
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+
+   >[!IMPORTANT]
+   >如果您處於瀏覽器的無痕模式，則無法上傳報表。
 
 1. 上傳新報表後，您會看到「最佳實務分析」報表。
 
