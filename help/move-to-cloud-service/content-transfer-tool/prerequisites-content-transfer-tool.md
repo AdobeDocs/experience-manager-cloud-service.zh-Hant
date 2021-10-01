@@ -2,9 +2,9 @@
 title: 內容轉移工具的必要條件
 description: 內容轉移工具的必要條件
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
+source-git-commit: 2c0874ca14b9dd91ef62f2af85a9961b07c1b60b
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '561'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 1%
 | 總索引大小 | 目前支援的索引總大小最大為25GB。 與Adobe客戶服務建立支援票證，以討論索引大小超過此限制的選項。 |
 | 節點名稱長度 | 節點名稱的長度必須為150個位元組或更小。 長度超過150個位元組的節點名稱必須縮短為&lt;= 150個位元組，AEM中的Document節點儲存作為Cloud Service才能支援。 如果這些長節點名稱未修正，擷取將會失敗。 |
 | 不可變路徑中的內容 | 「內容轉移工具」無法用來移轉不可變路徑中的內容。 若要從`/etc`傳輸內容，只能選取特定`/etc`路徑，但僅能支援[AEM Forms以Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets)形式傳送至AEM Forms。 有關其他所有使用案例，請參閱[Common Repository Restruct](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring)以了解有關資料庫重組的更多資訊。 |
+| MongoDB中的節點屬性值 | 儲存在MongoDB中的節點屬性值不能超過16MB。 這由MongoDB強制執行。 如果有大於此限制的屬性值，則擷取會失敗。 執行解壓縮前，請執行此[oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar)指令碼。 檢閱所有大型屬性值，並視需要加以驗證。 超過16MB的資料需要轉換為二進位值。 |
 
 ## 下一步 {#whats-next}
 
