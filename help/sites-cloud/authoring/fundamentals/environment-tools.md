@@ -2,18 +2,18 @@
 title: 製作環境和工具
 description: AEM的製作環境提供多種機制，可組織及編輯您的內容
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2154'
 ht-degree: 13%
 
 ---
 
-# 製作環境和工具{#authoring-the-environment-and-tools}
+# 製作環境和工具 {#authoring-the-environment-and-tools}
 
 AEM的製作環境提供多種組織及編輯內容的機制。 提供的工具可從各種主控台和頁面編輯器存取。
 
-## 管理您的站點{#managing-your-site}
+## 管理您的網站 {#managing-your-site}
 
 Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於選取的資源) 、導覽路徑標示，以及選取時的輔助導軌 (例如時間軸和參考)，來導覽和管理您的網站。
 
@@ -35,7 +35,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 >
 >您可以視需要略過導覽，並隨時透過從&#x200B;**頁面資訊**&#x200B;選單中選取來重複。
 
-## 訪問幫助{#accessing-help}
+## 存取說明 {#accessing-help}
 
 編輯頁面時，可從以下位置存取&#x200B;**Help**:
 
@@ -44,7 +44,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
 控制台](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)還提供[幫助相關資源。
 
-## 元件瀏覽器{#components-browser}
+## 元件瀏覽器 {#components-browser}
 
 元件是AEM內容的基礎要素。 您可將多個元件放在頁面上並設定其選項，以便使用AEM建立您的內容頁面。
 
@@ -97,7 +97,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 >
 >當寬度小於1024px時檢測到移動設備。 小型案頭窗口也可以這樣。
 
-## 資產瀏覽器{#assets-browser}
+## 資產瀏覽器 {#assets-browser}
 
 資產瀏覽器會顯示目前頁面上可直接使用的所有[資產](/help/assets/home.md)。
 
@@ -196,7 +196,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 >
 >如果您在行動裝置上編輯頁面（如果瀏覽器寬度小於1024px），則無法使用內容樹。
 
-## 片段 — 關聯內容瀏覽器{#fragments-associated-content-browser}
+## 片段 — 關聯內容瀏覽器 {#fragments-associated-content-browser}
 
 如果您的頁面包含內容片段，則您也可以存取[瀏覽器的關聯內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)。
 
@@ -228,7 +228,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 * [Blueprint](/help/sites-cloud/administering/msm/best-practices.md)，提供詳細資訊和各種動作
 * [語言副本](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel)，提供詳細資訊和各種動作
 
-## 事件 — 時間軸{#events-timeline}
+## 事件 — 時間軸 {#events-timeline}
 
 對於適當的資源（例如，來自&#x200B;**Sites**&#x200B;控制台的頁面，或來自&#x200B;**Assets**&#x200B;控制台的資產）,[時間軸可用於顯示任何選定項目](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)上的最近活動。
 
@@ -260,7 +260,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
 此外，**頁面資訊**&#x200B;可在適當時提供對分析和建議的存取。
 
-## 頁面模式{#page-modes}
+## 頁面模式 {#page-modes}
 
 編輯頁面時有多種模式，可執行不同的動作：
 
@@ -269,6 +269,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 * [鎖定目標](/help/sites-cloud/authoring/personalization/targeted-content.md)  — 透過鎖定目標和測量所有管道，提高內容關聯性。
 * [時間扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp)  — 可讓您在特定時間點檢視頁面狀態。
 * [即時副本狀態](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status)  — 可快速概述即時副本狀態，以及繼承/不繼承哪些元件。
+* [開發人員模式](/help/implementing/developing/tools/developer-mode.md)
 * [預覽](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)  — 用來檢視頁面在發佈環境中的顯示效果；或在內容中使用連結導覽。
 * [注釋](/help/sites-cloud/authoring/fundamentals/annotations.md)  — 用於在頁面上新增或檢視註解。
 
@@ -286,12 +287,11 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 >
 
 
-
-## 路徑選擇{#path-selection}
+## 路徑選取 {#path-selection}
 
 編寫時，通常需要選取其他資源，例如定義其他頁面或資源的連結或選取影像時。 為了輕鬆選擇路徑，[path fields](#path-fields)提供自動完成，而[path browser](#path-browser)允許更強健的選擇。
 
-### 路徑欄位{#path-fields}
+### 路徑欄位 {#path-fields}
 
 此處用於說明的範例是影像元件。 如需使用和編輯元件的詳細資訊，請參閱[頁面編寫的元件](/help/sites-cloud/authoring/fundamentals/components.md)。
 

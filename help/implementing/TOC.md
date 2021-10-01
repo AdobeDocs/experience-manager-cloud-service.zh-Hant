@@ -5,9 +5,9 @@ breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 8ee0eef4a46b2e2ebe0e94812db68e369bc0dfd0
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1039'
 ht-degree: 35%
 
 ---
@@ -192,6 +192,7 @@ ht-degree: 35%
       + [Launch整合](developing/hybrid/launch-integration.md)
       + [SPA參考檔案](developing/hybrid/reference-materials.md)
 + 開發人員工具 {#developer-tools}
+   + [開發人員模式](/help/implementing/developing/tools/developer-mode.md)
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [內容套件Maven外掛程式](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
