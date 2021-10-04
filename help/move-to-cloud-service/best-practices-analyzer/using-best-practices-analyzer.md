@@ -2,10 +2,10 @@
 title: 使用Best Practices Analyzer
 description: 使用Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 36ead0181ab9d1a0eb874d8e3584df2e4c760f30
+source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2591'
+ht-degree: 41%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 >id="aemcloud_bpa_using"
 >title="使用Best Practices Analyzer"
 >abstract="檢閱使用Best Practices Analyzer（原稱為Cloud Readiness Analyzer）的說明檔案以及產生的報表。 Best Practices Analyzer報表可用來取得對一般升級整備程度的高層了解。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 使用Best Practices Analyzer的重要考量 {#imp-considerations}
 
@@ -91,6 +91,19 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
 重新產生報表時，會以完成百分比顯示進度，如下圖所示。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
+1. 按一下&#x200B;**列印預覽**&#x200B;圖示，如下所示以方便共用。
+
+   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+
+1. 按一下「**打印預覽**」將開啟一個新頁簽，其中報告顯示在可打印預覽中。 按一下&#x200B;**Print**&#x200B;以將報表列印為PDF格式，以方便共用。
+
+   >[!IMPORTANT]
+   * 建議並支援選項&#x200B;**另存為PDF**&#x200B;以上功能。
+   * 如果使用瀏覽器的打印按鈕，則只打印一頁。
+
+
+   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### 在Best Practices Analyzer報表中使用篩選器 {#bpa-filters}
