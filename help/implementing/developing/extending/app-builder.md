@@ -1,9 +1,9 @@
 ---
 title: 使用「Adobe開發人員應用程式產生器」將 [!DNL Adobe Experience Manager] 延伸為Cloud Service。
 description: 使用「Adobe開發人員應用程式產生器」將 [!DNL Adobe Experience Manager] 延伸為Cloud Service。
-source-git-commit: 32580d3e45747b71e959b137e99fdb8e64cdf4bb
+source-git-commit: 7b8d214ebba9e8dfc89f7787b0d442752650210e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ App Builder可讓客戶在各種使用案例中輕鬆擴充Adobe Experience Mana
 
 >[!NOTE]
 >
-> 若AEM 6.5客戶想要運用App Builder，請前往[使用App Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html)擴充Adobe Experience Manager作為Cloud Service。
+> 若AEM 6.5客戶想要運用App Builder，請前往[使用App Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html)擴充Adobe Experience Manager 6.5。
 
 ## 架構 {#architecture}
 
