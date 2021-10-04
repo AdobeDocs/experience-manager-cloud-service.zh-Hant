@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 49e88e18e17a2675151a11339a01b3ea7b71d555
+source-git-commit: 1062b65da46d85e3777656dbef4b7667b130a6ec
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1722'
 ht-degree: 2%
 
 ---
@@ -179,19 +179,35 @@ AEM as aCloud Service2021.8.0中的Cloud Manager發行日期為2021年8月12日�
 
 * 有時，當管道因某些原因觸發兩次時，會導致其中一個執行失敗，並出現&#x200B;*無法更新管道執行狀態*&#x200B;錯誤。
 
+
+## Cloud Acceleration Manager {#cam}
+
+### 發行日期 {#release-date-october-cam}
+
+Cloud Acceleration Manager的發行日期為2021年10月4日。
+
+### 新增功能 {#what-is-new-cam}
+
+* Cloud Acceleration Manager現在讓使用者能以可列印的預覽方式檢視BPA報表，輕鬆列印或列印為PDF，以方便共用。 請參閱[使用最佳實務分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis)中的步驟6和7。
+
+
 ## 內容轉移工具 {#content-transfer-tool}
 
 ### 發行日期 {#release-date-ctt-latest}
 
-內容轉移工具1.5.6版的發行日期為2021年8月11日。
+內容轉移工具1.6.0版的發行日期為2021年10月4日。
 
-### 錯誤修正 {#bug-fixes-ctt}
+### 新增功能 {#what-is-new-ctt}
 
-* 在某些情況下，並非所有使用者都移轉至目標例項。 若要取得此修正CTT v1.5.6，必須在目標AEM上以Cloud Service例項的形式提供aem-ethos-tools 1.2.354或更新版本。
+* 透過簡化的使用者體驗改善使用者對應，包括下列功能。 有關詳細資訊，請參閱[使用用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)。
+   * 在執行使用者對應之前，測試與使用者管理API的連線
+   * 適度略過錯誤，並繼續進行「使用者對應」活動
+   * 如果存取權杖過期（24小時後），使用者對應不再失敗。 可以從上次停止的位置重新運行用戶映射。
 
-* 在擷取至Publish執行個體期間，已停用&#x200B;**停止擷取**&#x200B;按鈕。 這不是必要的，因為在發佈擷取期間沒有進行單次還原步驟。
+* 為了提高CTT的健全性，一次可將內容擷取至「製作」例項或「發佈」例項。
 
-* 成功提取後，CTT未清除`/tmp`目錄。 這有時會導致磁碟空間問題。
+* 包含版本時，會自動包含路徑`/var/audit`以遷移審核事件。
+
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
