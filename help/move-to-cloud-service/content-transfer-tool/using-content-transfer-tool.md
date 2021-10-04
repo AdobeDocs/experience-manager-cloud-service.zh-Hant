@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 2f811c5c6ccbb1d05aa1825dd110e0c9d5e6b219
+source-git-commit: a9d3547900c84101672cd0400bb374b1a8ccda33
 workflow-type: tm+mt
-source-wordcount: '3063'
-ht-degree: 38%
+source-wordcount: '3104'
+ht-degree: 37%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 38%
 
 * 存取權杖可能會在特定時段之後或Cloud Service環境升級後定期過期。 如果存取權杖已過期，您將無法連線至Cloud Service執行個體，因此您需要擷取新的存取權杖。 與現有移轉集相關聯的狀態圖示會變更為紅色雲端，當您將游標暫留在紅色雲端上時，會顯示訊息。
 
-* 內容轉移工具(CTT)在將內容從來源例項轉移至目標例項之前，不會執行任何類型的內容分析。 例如，CTT不會在將內容擷取至發佈環境時，區分已發佈和未發佈的內容。 無論移轉集中指定什麼內容，都會擷取至選取的目標例項。 使用者能將移轉集內嵌至製作例項、發佈例項或兩者。 建議將內容移至生產執行個體時，應在來源製作執行個體上安裝CTT，以將內容移至目標製作執行個體，同樣地，請在來源發佈執行個體上安裝CTT，將內容移至目標發佈執行個體。
+* 內容轉移工具(CTT)在將內容從來源例項轉移至目標例項之前，不會執行任何類型的內容分析。 例如，CTT不會在將內容擷取至發佈環境時，區分已發佈和未發佈的內容。 無論移轉集中指定什麼內容，都會擷取至選取的目標例項。 使用者能將移轉集內嵌至製作例項、發佈例項或兩者。 建議將內容移至生產執行個體時，應在來源製作執行個體上安裝CTT，以將內容移至目標製作執行個體，同樣地，請在來源發佈執行個體上安裝CTT，將內容移至目標發佈執行個體。 如需詳細資訊，請參閱在發佈執行個體](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish)上執行內容轉移工具。[
 
 * 「內容轉移工具」轉移的「使用者」和「群組」只是內容滿足權限所需的使用者和群組。 *提取*&#x200B;程式將整個`/home`複製到遷移集中，而&#x200B;*獲取*&#x200B;程式複製遷移內容ACL中引用的所有用戶和組。 若要自動將現有使用者和群組對應至其IMS ID，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)。
 
@@ -119,7 +119,7 @@ ht-degree: 38%
 
    1. **參數**：選取以下參數以建立移轉集：
 
-      1. **包含版本**：視需要選取。
+      1. **包含版本**：視需要選取。包含版本時，會自動包含路徑`/var/audit`以遷移審核事件。
 
       1. **包含來自IMS使用者和群組的對應**:選取要包含IMS使用者和群組對應的選項。如需詳細資訊，請參閱[使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) 。
 
@@ -186,7 +186,7 @@ ht-degree: 38%
 
 >[!NOTE]
 >初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
->此外，必須不要將現有內容的內容結構從採取初始擷取時變更為執行追加擷取時。 自初始擷取後，結構已變更的內容無法執行追加。 請務必在移轉程式期間加以限制。
+>此外，必須不要將現有內容的內容結構從採取初始擷取時變更為執行追加擷取時。 自初始擷取後，無法對結構已變更的內容執行追加。 請務必在移轉程式期間加以限制。
 
 提取程序一旦完成，您即可使用追加提取方法來轉移差異內容。請遵循下列步驟：
 
@@ -210,7 +210,7 @@ ht-degree: 38%
 >[!NOTE]
 >如果使用Amazon S3或Azure資料存放區作為資料存放區類型，您可以執行選用的預複製步驟，大幅加快擷取階段。 有關詳細資訊，請參閱[使用AzCopy擷取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) 。
 
-1. 從&#x200B;*概述*&#x200B;頁面中選取移轉集，然後按一下&#x200B;**擷取**&#x200B;以開始擷取。 **移轉集擷取**&#x200B;對話框隨即顯示。按一下&#x200B;**擷取**&#x200B;以開始擷取階段。 您可以同時將內容擷取至「製作」和「發佈」。
+1. 從&#x200B;*概述*&#x200B;頁面中選取移轉集，然後按一下&#x200B;**擷取**&#x200B;以開始擷取。 **移轉集擷取**&#x200B;對話框隨即顯示。一次可將內容擷取至製作例項或發佈例項。 選取要擷取內容的例項。 按一下&#x200B;**擷取**&#x200B;以開始擷取階段。
 
    >[!IMPORTANT]
    >如果使用預復本擷取（適用於S3或Azure資料存放區），建議您先單獨執行製作擷取。 這會在稍後執行時加速發佈擷取。
@@ -218,11 +218,11 @@ ht-degree: 38%
    >[!IMPORTANT]
    >啟用「在擷取&#x200B;**之前擦去雲端例項上的現有內容」選項時，它會刪除整個現有存放庫，並建立新存放庫以將內容擷取至中。**&#x200B;這表示會重設所有設定，包括目標Cloud Service例項的權限。 對於新增至&#x200B;**administrators**&#x200B;群組的管理員使用者，也是如此。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
    此外，按一下&#x200B;**客戶服務**&#x200B;來記錄票證，如上圖所示。 另請參閱[使用內容轉移工具的重要考量](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以深入了解。
 
-1. 擷取完成後，**PUBLISH INGESTION**&#x200B;欄位中的狀態會更新為&#x200B;**FINISHED**。
+1. 擷取完成後，狀態會更新為&#x200B;**FINISHED**。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -238,7 +238,7 @@ ht-degree: 38%
 
 1. 導覽至&#x200B;*綜覽*&#x200B;頁面，並選取您要執行追加擷取的移轉集。按一下&#x200B;**擷取**&#x200B;即可開始追加提取。**移轉集擷取**&#x200B;對話框隨即顯示。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
 
    >[!IMPORTANT]
    >您應停用「擷取&#x200B;**之前擦去雲端例項上的現有內容」選項，以防止從先前的擷取活動中刪除現有內容。**&#x200B;此外，按一下&#x200B;**客戶服務**&#x200B;來記錄票證，如上圖所示。
