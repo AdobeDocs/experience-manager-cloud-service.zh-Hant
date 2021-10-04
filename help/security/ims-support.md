@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
+source-git-commit: 270a38412c14a869676ea6aa60428b319fa6228d
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 91%
+source-wordcount: '2024'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,11 @@ ht-degree: 91%
 
 >[!TIP]
 >
->請參閱我們的Experience League課程[設定AEM的存取權限（管理員](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)），了解使用者如何使用AdobeIMS進行AEM身分Cloud Service驗證，以及如何使用AdobeIMS使用者、使用者群組和產品設定檔來控制AEM存取權及其功能。 Adobe ID為必要。
+>請參閱我們的Experience League課程[為管理員設定AEM存取權](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) ，了解使用者如何使用Adobe IMS驗證AEM作為Cloud Service，以及如何使用Adobe IMS使用者、使用者群組和產品設定檔來控制AEM存取權及其功能。 Adobe ID為必要。
+
+>[!NOTE]
+>
+>AEM的IMS登入作為Cloud Service不支援Admin Console中的巢狀群組。
 
 ## 重要焦點 {#key-highlights}
 
@@ -40,7 +44,7 @@ IMS 驗證採用 OAuth 通訊協定，能在 AEM 和 Adobe IMS 端點之間運�
 
 ## 設定方法 {#how-to-set-up}
 
-### 在 Adobe Admin Console 中佈建組織{#onboarding-orgs-to-adobe-admin-console}
+### 在 Adobe Admin Console 中佈建組織 {#onboarding-orgs-to-adobe-admin-console}
 
 若要使用 Adobe IMS 進行 AEM 驗證，客戶必須先開始使用 Adobe Admin Console。
 
