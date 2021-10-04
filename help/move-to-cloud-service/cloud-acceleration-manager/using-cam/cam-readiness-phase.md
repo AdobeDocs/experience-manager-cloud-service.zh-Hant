@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager的整備階段
 description: 本頁概述Cloud Acceleration Manager的整備階段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
+source-git-commit: 3fea3da263216c8250fd1ba3e3b1edd73b5c8940
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '748'
 ht-degree: 5%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 5%
    >[!NOTE]
    >上傳新報表會重設所有評估。
 
-1. 按一下&#x200B;**列印預覽**&#x200B;圖示，如下所示以方便共用。
+1. 按一下&#x200B;**列印預覽**&#x200B;圖示，如下所示。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
