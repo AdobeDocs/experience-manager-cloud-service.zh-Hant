@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說�
 description: ' [!DNL Adobe Experience Manager] 作為Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 29af6f91f5aeb6ad971a35637f1635e0b038a57f
+source-git-commit: 49e88e18e17a2675151a11339a01b3ea7b71d555
 workflow-type: tm+mt
 source-wordcount: '1628'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 ## 發行日期 {#release-date}
 
 [!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前版本(2021.8.0)的發行日期為2021年8月26日。
-下列版本(2021.9.0)將於2021年10月4日發行。
+下列版本(2021.9.0)將於2021年10月6日發行。
 
 ## 發行影片 {#release-video}
 
