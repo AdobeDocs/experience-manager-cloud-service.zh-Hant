@@ -1,9 +1,9 @@
 ---
 title: 使用「Adobe開發人員應用程式產生器」將 [!DNL Adobe Experience Manager] 延伸為Cloud Service。
 description: 使用「Adobe開發人員應用程式產生器」將 [!DNL Adobe Experience Manager] 延伸為Cloud Service。
-source-git-commit: 4bd0419ff31195fef1565b50f87b4b55f81361f0
+source-git-commit: 32580d3e45747b71e959b137e99fdb8e64cdf4bb
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,10 @@ App Builder可讓客戶在各種使用案例中輕鬆擴充Adobe Experience Mana
 * 使用者體驗的擴充性 — 延伸核心體驗，以支援業務需求，或建立客戶專屬的數位屬性、店面和後台應用程式。
 
 自2020年夏季起，企業客戶和合作夥伴都可透過開發人員預覽功能，取得App Builder（舊稱Project Firefly）。 App Builder的正式發行(GA)預計於2021年12月推出。 我們歡迎開發人員透過我們的[試用計畫](http://adobe.ly/appbuilder-trial)試用App Builder。
+
+>[!NOTE]
+>
+> 若AEM 6.5客戶想要運用App Builder，請前往[使用App Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html)擴充Adobe Experience Manager作為Cloud Service。
 
 ## 架構 {#architecture}
 
