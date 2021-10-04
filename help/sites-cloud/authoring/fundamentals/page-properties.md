@@ -2,9 +2,9 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1966'
 ht-degree: 8%
 
 ---
@@ -101,14 +101,9 @@ ht-degree: 8%
    * **重新導向**  — 指出此頁面應自動重新導向的頁面
    * **設計**  — 指出頁面在所產生網站的頁面導覽中是否顯示或隱藏
    * **別名**  — 指定要與此頁一起使用的別名
-
-   >[!NOTE]
-   >
-   >別名設定`sling:alias`屬性以定義資源的別名（這只會影響資源，而非路徑）。
-   >
-   >例如：如果為節點`/content/we-retail/spanish`定義別名`latin-lang`，則可通過`/content/we-retail/latin-language`訪問此頁
-   >
-   >如需詳細資訊，請參閱SEO和URL管理最佳實務底下的本地化頁面名稱。
+      * 例如，如果為頁面`/content/wknd/us/en/magazine/members-only`定義別名`private`，則此頁面也可透過`/content/wknd/us/en/magazine/private`存取
+      * 建立別名會在頁面節點上設定`sling:alias`屬性，這只會影響資源，而非存放庫路徑。
+      * 無法發佈編輯器中由別名存取的頁面。 [編輯](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 器中的發佈選項僅適用於透過其實際路徑存取的頁面。
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
@@ -302,7 +297,7 @@ ht-degree: 8%
       * 如果您將頁面選取範圍縮小為一個頁面，則所有屬性都會顯示。
    * 具有公用值的公用屬性
       * 「視圖」模式中只顯示具有公共值的屬性。
-      * 當欄位為多值時（例如「標籤」），只有&#x200B;*all*&#x200B;為共同值時才會顯示值。 如果只有部分是常見的，則只會在編輯時顯示。
+      * 當欄位為多值時（例如「標籤」），只有&#x200B;*all*&#x200B;為共同值時，才會顯示值。 如果只有部分是常見的，則只會在編輯時顯示。
       * 當不存在具有公用值的屬性時，將顯示一條消息。
 
 * **編輯**

@@ -2,9 +2,9 @@
 title: 發佈頁面
 description: 如何使用AEM發佈和取消發佈頁面
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1769'
 ht-degree: 7%
 
 ---
@@ -79,6 +79,10 @@ ht-degree: 7%
 >[!NOTE]
 >
 >從編輯器發佈是淺層發佈，亦即只會發佈/發佈選取的頁面/頁面，而不會發佈任何子頁面。
+
+>[!NOTE]
+>
+>無法發佈編輯器中由[別名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)存取的頁面。 編輯器中的發佈選項僅適用於透過其實際路徑存取的頁面。
 
 ### 從主控台發佈 {#publishing-from-the-console}
 
@@ -217,6 +221,10 @@ ht-degree: 7%
 ### 從編輯器取消發佈 {#unpublishing-from-the-editor}
 
 編輯頁面時，如果您想要取消發佈該頁面，請在&#x200B;**頁面資訊**&#x200B;功能表中選取&#x200B;**取消發佈頁面**，就像您要[發佈頁面](#publishing-from-the-editor)一樣。
+
+>[!NOTE]
+>
+>編輯器中由[別名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)存取的頁面無法取消發佈。 編輯器中的發佈選項僅適用於透過其實際路徑存取的頁面。
 
 ### 從主控台取消發佈 {#unpublishing-from-the-console}
 
