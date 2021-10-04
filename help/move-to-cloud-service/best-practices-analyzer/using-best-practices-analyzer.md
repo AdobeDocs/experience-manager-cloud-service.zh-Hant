@@ -2,10 +2,10 @@
 title: 使用Best Practices Analyzer
 description: 使用Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
+source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 41%
+source-wordcount: '2522'
+ht-degree: 42%
 
 ---
 
@@ -92,18 +92,6 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
-1. 按一下&#x200B;**列印預覽**&#x200B;圖示，如下所示以方便共用。
-
-   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
-
-1. 按一下「**打印預覽**」將開啟一個新頁簽，其中報告顯示在可打印預覽中。 按一下&#x200B;**Print**&#x200B;以將報表列印為PDF格式，以方便共用。
-
-   >[!IMPORTANT]
-   * 建議並支援選項&#x200B;**另存為PDF**&#x200B;以上功能。
-   * 如果使用瀏覽器的打印按鈕，則只打印一頁。
-
-
-   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### 在Best Practices Analyzer報表中使用篩選器 {#bpa-filters}
