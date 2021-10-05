@@ -1,7 +1,7 @@
 ---
 title: 使用「Adobe開發人員應用程式產生器」將 [!DNL Adobe Experience Manager] 延伸為Cloud Service。
 description: 使用「Adobe開發人員應用程式產生器」將 [!DNL Adobe Experience Manager] 延伸為Cloud Service。
-source-git-commit: 7b8d214ebba9e8dfc89f7787b0d442752650210e
+source-git-commit: 9287a40518d7026d5361cb61ab3804583e22450f
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -42,26 +42,26 @@ App Builder可讓客戶在各種使用案例中輕鬆擴充Adobe Experience Mana
 
 ![架構](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
 
-如需App Builder架構的詳細資訊，請參閱[架構概述](https://www.adobe.io/project-firefly/docs/guides/)。
+如需App Builder架構的詳細資訊，請參閱[架構概述](https://www.adobe.io/app-builder/docs/guides/)。
 
 ## 開始使用App Builder {#additional-resources}
 
 為協助您開始使用App Builder，我們建立了一系列檔案來協助您開始：
 
-* [App Builder快速入門](https://www.adobe.io/project-firefly/docs/getting_started/)
+* [App Builder快速入門](https://www.adobe.io/app-builder/docs/getting_started/)
 
 ## 繼續學習說明檔案 {#appbuilder-documentation}
 
 App Builder提供開發人員的影片和檔案，包括指南和參考檔案，協助您開始開發自己的自訂應用程式：
 
-* [App Builder檔案](https://www.adobe.io/project-firefly/docs/overview/)
+* [App Builder檔案](https://www.adobe.io/app-builder/docs/overview/)
 * [App Builder影片](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
 ## 請試用其中一個示例應用程式 {#appbuilder-codesamples}
 
 準備好開發了嗎？ 我們提供許多樣本應用程式，幫助您快速前進：
 
-* [Adobe開發人員網站上的應用程式建立工具程式碼實驗室](https://www.adobe.io/project-firefly/docs/resources/)
+* [Adobe開發人員網站上的應用程式建立工具程式碼實驗室](https://www.adobe.io/app-builder/docs/resources/)
 
 ## 支援 {#support}
 
