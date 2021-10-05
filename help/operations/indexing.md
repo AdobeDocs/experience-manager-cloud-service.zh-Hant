@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
+source-git-commit: 8df5e800cd08fa0eb08edca06e98786a1864db84
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2139'
 ht-degree: 2%
 
 ---
@@ -219,3 +219,9 @@ Apache Jackrabbit Oak可啟用彈性的索引設定，以有效處理搜尋查�
 
 全文索引`/oak:index/lucene-2`可能會變得非常大，因為預設情況下，它為AEM儲存庫中的所有節點建立索引。 Lucene全文索引已在內部淘汰，自2021年9月起不再部署於AEM作為Cloud Service。 因此，AEM中的產品端不再使用它作為Cloud Service，也不需要執行客戶代碼。 對於AEM作為具有通用Lucene索引的Cloud Service環境，Adobe正在與客戶個別合作，以尋求協調的方法來補償此索引，並使用更好、最佳化的索引。 如果自定義查詢需要此索引，作為臨時解決方案，應使用不同名稱（例如`/oak:index/acme.lucene-1-custom-1`）建立此索引的副本，如[here](/help/operations/indexing.md)中所述。
 除非Adobe另有建議，否則此最佳化不適用於其他由內部部署托管或由Adobe Managed Services管理的AEM環境。
+
+## 查詢最佳化
+
+**查詢效能**&#x200B;工具可讓您同時觀察熱門和緩慢的JCR查詢。 此外，它還能夠分析查詢並顯示有關的各種資訊，尤其是當是否正使用此查詢使用索引時。
+
+與AEM內部部署不同，AEM as aCloud Service不再於UI中顯示&#x200B;**查詢效能**&#x200B;工具。 現在可透過&#x200B;**Querys**&#x200B;標籤上的開發人員控制台（位於雲端管理器中）取得。
