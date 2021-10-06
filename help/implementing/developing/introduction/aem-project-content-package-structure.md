@@ -2,9 +2,9 @@
 title: AEM 專案結構
 description: 了解如何定義部署至Adobe Experience ManagerCloud Service的套件結構。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 1cf9834d840709ed340aaef235860d7c6d26c6d5
+source-git-commit: 6548e05850d5499f1ce7d1f23f2cea2adb9d06fd
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2878'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 >
 >請熟悉基本的[AEM專案原型use](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)和[FileVault Content Maven外掛程式](/help/implementing/developing/tools/maven-plugin.md)，因為本文是以這些學習與概念為基礎而撰寫的。
 
-本文概述Adobe Experience Manager Maven專案需要哪些變更才能與AEMCloud Service相容，方法是確保專案遵守可變和不可變內容的分割，建立相依性以建立不衝突、確定性的部署，並封裝成可部署結構。
+本文概述Adobe Experience Manager Maven專案為與AEMas a Cloud Service相容所需的變更，確保專案遵守可變和不可變內容的分割、建立相依性以建立不衝突、確定性的部署，並封裝成可部署結構。
 
 AEM應用程式部署必須由單一AEM套件組成。 此程式包又應包含子程式包，這些子程式包包括應用程式運行所需的所有內容，包括代碼、配置和任何支援的基準內容。
 
@@ -39,13 +39,13 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
 
 ### Oak Indexes {#oak-indexes}
 
-Oak索引(`/oak:index`)由AEM特別管理，作為Cloud Service部署程式。 這是因為Cloud Manager必須等到部署任何新索引並完全重新編列索引後，才能切換至新程式碼影像。
+Oak索引(`/oak:index`)是由AEMas a Cloud Service部署程式特別管理。 這是因為Cloud Manager必須等到部署任何新索引並完全重新編列索引後，才能切換至新程式碼影像。
 
 因此，雖然Oak索引在執行時可變，但必須部署為程式碼，才能在安裝任何可變套件前先行安裝。 因此，`/oak:index`配置是代碼包的一部分，而不是內容包[的一部分，如下所述](#recommended-package-structure)。
 
 >[!TIP]
 >
->有關在AEM as aCloud Service中建立索引的進一步詳細資訊，請參閱文檔[內容搜索和索引](/help/operations/indexing.md)。
+>有關在AEMas a Cloud Service中建立索引的詳細資訊，請參閱文檔[內容搜索和索引](/help/operations/indexing.md)。
 
 ## 建議的封裝結構 {#recommended-package-structure}
 
@@ -75,9 +75,9 @@ Oak索引(`/oak:index`)由AEM特別管理，作為Cloud Service部署程式。 �
 + `ui.config`包包含所有[OSGi配置](/help/implementing/deploying/configuring-osgi.md):
    + 包含運行模式特定OSGi配置定義的組織資料夾
       + `/apps/my-app/osgiconfig`
-   + 包含預設OSGi設定的通用OSGi設定資料夾，這些設定會套用至所有目標AEM作為Cloud Service部署目標
+   + 包含套用至所有目標AEMas a Cloud Service部署目標的預設OSGi設定的通用OSGi設定資料夾
       + `/apps/my-app/osgiconfig/config`
-   + 運行模式特定的OSGi配置資料夾，該資料夾包含應用於所有目標AEM作為Cloud Service部署目標的預設OSGi配置
+   + 運行模式特定的OSGi配置資料夾，該資料夾包含適用於所有目標AEMas a Cloud Service部署目標的預設OSGi配置
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Repo Init OSGi配置指令碼
       + [回購](#repo-init) 性炎是部署（可變）內容(邏輯上屬於AEM應用程式一部分)的建議方式。Repo Init OSGi設定應如上所述放置在適當的`config.<runmode>`資料夾中，並用於定義：
@@ -269,7 +269,7 @@ Repo Init OSGi設定最好以[`.config` OSGi設定格式](https://sling.apache.o
 
 ## 嵌入第三方包 {#embedding-3rd-party-packages}
 
-所有包都必須通過[Adobe的公用Maven對象儲存庫](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)或可訪問的可引用的公用第三方Maven對象儲存庫來使用。
+所有包都必須通過[Adobe的公用Maven對象儲存庫](https://repo1.maven.org/maven2/com/adobe/)或可訪問的可引用的公用第三方Maven對象儲存庫來使用。
 
 如果第三方套件位於 **Adobe的公用Maven工件存放庫**，則Adobe Cloud manager無需進一步設定即可解析工件。
 

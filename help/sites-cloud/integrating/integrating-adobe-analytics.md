@@ -1,28 +1,28 @@
 ---
 title: 整合 Adobe Analytics
 description: '整合 Adobe Analytics '
-feature: 管理
+feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '530'
 ht-degree: 4%
 
 ---
 
 # 整合 Adobe Analytics{#integrating-with-adobe-analytics}
 
-將Adobe Analytics和AEM整合為Cloud Service，即可追蹤網頁活動。 整合需要：
+整合Adobe Analytics和AEMas a Cloud Service可讓您追蹤網頁活動。 整合需要：
 
-* 使用觸控式UI，在AEM中建立Analytics設定作為Cloud Service。
-* 在[AdobeLaunch](#analytics-launch)中新增並設定Adobe Analytics為擴充功能。 如需AdobeLaunch的詳細資訊，請參閱[本頁面](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)。
+* 使用觸控式UI在AEM as a Cloud Service中建立Analytics設定。
+* 在[AdobeLaunch](#analytics-launch)中新增並設定Adobe Analytics為擴充功能。 如需AdobeLaunch的詳細資訊，請參閱[本頁面](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)。
 
-與舊版AEM相比，AEM as aCloud Service中的Analytics設定不提供架構支援。 現在改為透過AdobeLaunch完成，Launch是實際上用來檢測具有Analytics功能（JS資料庫）的AEM網站的工具。 在AdobeLaunch中，會建立屬性，可在此設定Adobe Analytics擴充功能，並建立規則以將資料傳送至Adobe Analytics。 Adobe啟動已取代sitecatalyst提供的分析工作。
+與舊版AEM相比，AEMas a Cloud Service中的Analytics設定不提供架構支援。 現在改為透過AdobeLaunch完成，Launch是實際上用來檢測具有Analytics功能（JS資料庫）的AEM網站的工具。 在AdobeLaunch中，會建立屬性，可在此設定Adobe Analytics擴充功能，並建立規則以將資料傳送至Adobe Analytics。 Adobe啟動已取代sitecatalyst提供的分析工作。
 
 >[!NOTE]
 >
->Adobe Experience Manager作為沒有現有Analytics帳戶的Cloud Service客戶，可以要求存取Analytics Foundation Pack以進行Experience Cloud。 此Foundation Pack提供Analytics的有限量使用。
+>Adobe Experience Manager as a Cloud Service客戶若沒有現有的Analytics帳戶，可要求存取Analytics Foundation Pack以取得Experience Cloud。 此Foundation Pack提供Analytics的有限量使用。
 
 ## 建立Adobe Analytics設定 {#analytics-configuration}
 
@@ -65,4 +65,4 @@ Adobe Analytics可在Launch屬性中以擴充功能的形式新增。 可定義�
 
 >[!NOTE]
 >
->Launch的IMS設定（技術帳戶）已在AEM中預先設定為Cloud Service。 使用者不需要建立此設定。
+>Launch的IMS設定（技術帳戶）已在AEMas a Cloud Service中預先設定。 使用者不需要建立此設定。

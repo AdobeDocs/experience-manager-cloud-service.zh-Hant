@@ -1,17 +1,16 @@
 ---
 title: 合規性
 description: 合規性
-exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 76%
 
 ---
 
-# AEM as aCloud Service的法規遵循 {#aem-compliance}
+# AEMas a Cloud Service法規遵循 {#aem-compliance}
 
-本頁列出自助資源，以Experience Manager為Cloud Service提供有關合規性的資訊。
+本頁列出自助資源，提供有關Experience Manageras a Cloud Service的合規性資訊。
 
 ## 重要文章概覽 {#key-articles}
 
@@ -36,7 +35,7 @@ ht-degree: 76%
 | [無頭式開發人員歷程](/help/journey-headless/developer/overview.md) | 探索此引導式歷程，了解AEM強大且靈活的無頭式功能，為您的第一個無頭式專案做好準備。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 後端的操作方式，例如製作索引和執行維護任務。 |
-| [商務使用手冊](/help/commerce-cloud/home.md) | 了解AEM as aCloud Service上的Commerce Integration Framework。 |
+| [商務使用手冊](/help/commerce-cloud/home.md) | 了解AEM as a Cloud Service上的Commerce Integration Framework。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 

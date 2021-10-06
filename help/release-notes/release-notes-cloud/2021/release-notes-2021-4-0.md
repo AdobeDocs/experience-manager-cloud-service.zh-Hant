@@ -1,8 +1,7 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 3%
@@ -10,9 +9,9 @@ ht-degree: 3%
 ---
 
 
-# [!DNL Adobe Experience Manager]作為Cloud Service的最新發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager]as a Cloud Service的最新發行說明 {#release-notes}
 
-以下章節概述[!DNL Experience Manager]作為Cloud Service的目前（最新）版本的一般發行說明。
+以下章節概述[!DNL Experience Manager]as a Cloud Service目前（最新）版本的一般發行說明。
 
 >[!NOTE]
 >您可從此處導覽至舊版的發行說明；例如，2020年、2021年等。
@@ -23,10 +22,10 @@ ht-degree: 3%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為Cloud Service2021.4.0的發行日期為2021年5月6日。
+[!DNL Adobe Experience Manager] 2021.4.0as a Cloud Service版的發行日期為2021年5月6日。
 下列版本(2021.5.0)將於2021年5月27日發行。
 
-## AEM as a Cloud Service基礎{#aem-as-a-cloud-service-foundation}
+## AEMas a Cloud Service基礎{#aem-as-a-cloud-service-foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
@@ -114,7 +113,7 @@ ht-degree: 3%
 
 * **使用本地開發環境建立記錄文檔(DoR)**
 
-   您可以在Cloud Service例項上使用XDP作為記錄檔案範本，並在AEM Forms作為Cloud ServiceSDK（本機開發環境）。 過去，支援僅限於Cloud Service例項。
+   您可以在Cloud Service例項和AEM Formsas a Cloud ServiceSDK（本機開發環境）上使用XDP作為記錄檔案範本。 過去，支援僅限於Cloud Service例項。
 
 ### [!DNL Forms]中的錯誤修正 {#bug-fixes-forms}
 
@@ -125,7 +124,7 @@ ht-degree: 3%
 * 為了更輕鬆辨識內容，服務現在會為XDP、動態PDF和結構檔案產生即時縮圖。
 * 新增將PDF檔案移至AEM Forms UI中放置之資料夾的功能。
 
-## Adobe Experience Manager Commerce as aCloud Service {#cloud-services-commerce}
+## Adobe Experience Manager商務as a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
@@ -145,11 +144,11 @@ ht-degree: 3%
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述AEM as a 2021.4.0Cloud Service中Cloud Manager的發行說明。
+本節概述AEM 2021.4.0中Cloud Manageras a Cloud Service的發行說明。
 
 ### 發行日期 {#release-date-cm-april}
 
-AEM as aCloud Service2021.4.0中的Cloud Manager發行日期為2021年4月8日。
+AEM 2021.4.0中的Cloud Manageras a Cloud Service日期為2021年4月8日。
 下一版預計於2021年5月6日發行。
 
 ### 新增功能 {#what-is-new-april}

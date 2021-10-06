@@ -4,14 +4,18 @@ description: 了解內容片段模型如何成為AEM中無頭內容的基礎，�
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c82fdc8245846c4fa5daff898aec109579acc2fc
+source-git-commit: ce6741f886cc87b1be5b32dbf34e454d66a3608b
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 7%
+source-wordcount: '2772'
+ht-degree: 5%
 
 ---
 
 # 內容片段模型 {#content-fragment-models}
+
+>[!NOTE]
+>
+>[鎖定（已發佈）內容片段模型](#locked-published-content-fragment-models)功能為測試版。
 
 AEM中的內容片段模型定義[內容片段的內容結構，](/help/assets/content-fragments/content-fragments.md)是無頭內容的基礎。
 
@@ -361,7 +365,7 @@ GraphQL中的片段參考也提供週期性保護。 如果您在互相參照的
       可允許多個模型。
    ![內容片段模型原則](assets/cfm-model-policy-assets-folder.png)
 
-1. **** 儲存任何變更。
+1. **** 保存任何更改。
 
 資料夾允許的內容片段模型解析如下：
 * **允許的內容片段模型**&#x200B;的&#x200B;**Policys**。
@@ -411,28 +415,82 @@ GraphQL中的片段參考也提供週期性保護。 如果您在互相參照的
 1. 從工具列選取您的模型，然後依序選取&#x200B;**取消發佈**。
 已發佈狀態會在主控台中指出。
 
-<!--
-## Locked Content Fragment Models {#locked-content-fragment-models}
+如果您嘗試取消發佈一或多個片段目前使用的模型，則會出現錯誤警告，通知您這點：
 
-This feature provides governance for Content Fragment Models that have been published. 
+![取消發佈正在使用的模型時出現「內容片段模型」錯誤訊息](assets/cfm-model-unpublish-error.png)
 
-The challenge:
+此訊息建議您檢查[參考](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)面板，以進一步調查：
 
-* Content Fragment Models determine the schema for GraphQL queries in AEM. 
+![參考中的內容片段模型](assets/cfm-model-references.png)
 
-  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
+## 鎖定（已發佈）內容片段模型 {#locked-published-content-fragment-models}
 
-  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
+>[!NOTE]
+「鎖定（已發佈）內容片段模型」功能是測試版。
 
-* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
+此功能可控管已發佈的內容片段模型。
 
-* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
+### 挑戰 {#the-challenge}
 
-The solution:
+* 內容片段模型決定AEM中GraphQL查詢的架構。
 
-* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
+   * AEM GraphQL結構會在建立內容片段模型時立即建立，且可同時存在於製作和發佈環境中。
 
-* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
+   * 發佈的結構描述是最重要的，因為它們為JSON格式的內容片段內容的即時傳送奠定了基礎。
 
-* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
--->
+* 修改內容片段模型或編輯內容片段模型時，可能會發生問題。 這表示架構會變更，進而可能影響現有的GraphQL查詢。
+
+* 將新欄位新增至內容片段模型（通常）不應有任何有害影響。 但是，修改現有資料欄位（例如其名稱）或刪除欄位定義，將會在請求這些欄位時中斷現有的GraphQL查詢。
+
+### 要求 {#the-requirements}
+
+* 讓使用者了解編輯已用於即時內容傳送的模型（亦即已發佈的模型）時的風險。
+
+* 此外，也可避免非預期的變更。
+
+如果已修改的模型重新發佈，其中任何一個可能會中斷查詢。
+
+### 解決方案 {#the-solution}
+
+為了解決這些問題，內容片段模型會在作者上&#x200B;*鎖定*，一旦發佈，就會進入唯讀模式。 以&#x200B;**Locked**&#x200B;表示：
+
+![鎖定的內容片段模型卡片](assets/cfm-model-locked.png)
+
+當模型為&#x200B;**Locked**&#x200B;時（在「只讀」模式下），您可以查看模型的內容和結構，但無法編輯它們。
+
+您可以從控制台或模型編輯器管理&#x200B;**鎖定的**&#x200B;模型：
+
+* 主控台
+
+   從控制台，可以使用工具欄中的&#x200B;**Unlock**&#x200B;和&#x200B;**Lock**&#x200B;操作管理只讀模式：
+
+   ![鎖定的內容片段模型工具列](assets/cfm-model-locked.png)
+
+   * 您可以&#x200B;**解除鎖定**&#x200B;模型以啟用編輯。
+
+      如果選擇&#x200B;**Unlock** ，將顯示警告，並且必須確認&#x200B;**Unlock**操作：
+      ![解除鎖定內容片段模型時的訊息](assets/cfm-model-unlock-message.png)
+
+      然後，可以開啟模型進行編輯。
+
+   * 之後，您也可以&#x200B;**鎖定**&#x200B;模型。
+   * 重新發佈模型會立即將其重新置於&#x200B;**鎖定**（只讀）模式。
+
+* 模型編輯器
+
+   * 開啟已鎖定的模型時，系統會發出警告，並顯示三個動作：**取消**、**查看只讀**、**編輯**:
+
+      ![檢視鎖定的內容片段模型時的訊息](assets/cfm-model-editor-lock-message.png)
+
+   * 如果選擇&#x200B;**查看只讀**，您可以看到模型的內容和結構：
+
+      ![檢視唯讀 — 鎖定的內容片段模型](assets/cfm-model-editor-locked-view-only.png)
+
+   * 如果選擇&#x200B;**Edit**，則可以編輯並保存更新：
+
+      ![編輯 — 鎖定的內容片段模型](assets/cfm-model-editor-locked-edit.png)
+
+      >[!NOTE]
+      頂端可能仍會出現警告，但此時模型已由現有內容片段使用。
+
+   * **** 取消程式會將您返回主控台。

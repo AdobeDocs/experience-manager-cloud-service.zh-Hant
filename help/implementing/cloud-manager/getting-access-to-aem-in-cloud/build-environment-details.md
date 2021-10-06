@@ -2,9 +2,9 @@
 title: 建置環境詳細資訊
 description: 建置環境詳細資訊 — Cloud Services
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 9ae940fb0149a76277aba49a75abfb8b83305788
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Cloud Manager會使用專用的建置環境來建立和測試您的程式碼。 
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Maven在系統級別配置，具有settings.xml檔案，該檔案使用名為`adobe-public`的配置檔案自動包括公共Adobe **Artifact**&#x200B;儲存庫。 (如需詳細資訊，請參閱[Adobe公用Maven存放庫](https://repo.adobe.com/))。
+* Maven在系統級別配置，具有settings.xml檔案，該檔案使用名為`adobe-public`的配置檔案自動包括公共Adobe **Artifact**&#x200B;儲存庫。 (如需詳細資訊，請參閱[Adobe公用Maven存放庫](https://repo1.maven.org/))。
 
 >[!NOTE]
 >雖然Cloud Manager未定義`jacoco-maven-plugin`的特定版本，但使用的版本至少必須為`0.7.5.201505241946`。
