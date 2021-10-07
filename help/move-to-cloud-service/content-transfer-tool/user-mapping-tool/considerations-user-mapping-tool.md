@@ -1,9 +1,9 @@
 ---
 title: 使用者對應工具的重要考量
 description: 使用者對應工具的重要考量
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -35,3 +35,7 @@ ht-degree: 0%
 * 如果目標AEM Cloud Service實例具有與源AEM實例上的某個用戶具有不同用戶名但電子郵件地址相同的用戶，並且啟用了用戶映射，則日誌中將寫入錯誤消息，並且源AEM用戶將不會被轉移，因為目標系統上只允許一個具有給定電子郵件地址的用戶。
 
 * 如果源AEM實例上的兩個用戶具有相同的電子郵件地址，並且啟用了「用戶映射」，則日誌中將會寫入一條錯誤消息，並且不會傳輸一個源AEM用戶，因為目標系統上只允許一個具有指定電子郵件地址的用戶。
+
+### 下一步 {#whats-next}
+
+了解重要考量事項和特殊案例後，您現在已準備好使用此工具。 如需詳細資訊，請參閱[使用使用者對應工具](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) 。

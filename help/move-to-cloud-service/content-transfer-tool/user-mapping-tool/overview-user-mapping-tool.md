@@ -1,9 +1,9 @@
 ---
 title: 使用者對應工具概覽
 description: 使用者對應工具概覽
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -27,3 +27,7 @@ AEMas a Cloud Service的重大變更，是完整整合使用AdobeID來存取作�
 ## 使用者對應工具 {#mapping-tool}
 
 「內容轉移工具」（不含「使用者對應」）將移轉與要移轉之內容相關聯的任何使用者和群組。 「使用者對應工具」是「內容轉移工具」的一部分，其唯一用途是修改使用者和群組，讓IMS(AEMas a Cloud Service使用的單一登入功能)可正確辨識這些使用者和群組。 完成這些修改後，「內容轉移工具」會照常移轉指定內容的使用者和群組。
+
+### 下一步 {#whats-next}
+
+一旦您了解了用戶映射工具是什麼，您現在就可以在使用用戶映射工具之前查看重要注意事項和特殊案例。 如需詳細資訊，請參閱[使用者對應工具的重要考量事項](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md) 。
