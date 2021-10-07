@@ -5,10 +5,10 @@ breadcrumb-title: 移轉指南
 user-guide-description: 了解轉換至雲端服務的過程。
 feature: Deploying
 role: Architect, Developer
-source-git-commit: f193c4e81b9b16d07e7ccff6c2f9705b7234f80b
+source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 46%
+source-wordcount: '136'
+ht-degree: 45%
 
 ---
 
@@ -38,7 +38,10 @@ ht-degree: 46%
       + [概覽](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [內容轉移工具的必要條件](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [處理大型內容存放庫](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
-      + [使用使用者對應工具](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
+      + 用戶映射工具{#user-mapping-tool}
+         + [概覽](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
+         + [重要考量](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
+         + [使用使用者對應工具](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
       + [使用內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + 程式碼重構工具 {#refactoring-tools}
    + [統一體驗](/help/move-to-cloud-service/unified-experience.md)
@@ -47,4 +50,4 @@ ht-degree: 46%
    + [資產工作流程移轉](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher 轉換工具](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [AEM 現代化工具](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
-+ [移轉指南以Experience Manager為合作夥伴的Cloud Service](/help/move-to-cloud-service/getting-started.md)
++ [移轉指南以Experience Manager合作夥伴的as a Cloud Service](/help/move-to-cloud-service/getting-started.md)
