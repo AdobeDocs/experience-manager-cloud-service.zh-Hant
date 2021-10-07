@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 8%
@@ -178,7 +178,7 @@ Brand Portal租用戶的預設URL為：`https://<tenant-id>.brand-portal.adobe.c
 
 >[!NOTE]
 >
->如果您在啟用Brand Portal租用戶時遇到任何問題，請聯絡Adobe支援。
+>如果您在啟用Brand Portal租用戶時遇到任何問題，請聯絡客戶支援。
 
 ## 使用Adobe開發人員控制台手動配置 {#manual-configuration}
 

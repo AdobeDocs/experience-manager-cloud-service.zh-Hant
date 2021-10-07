@@ -2,9 +2,9 @@
 title: AEM 專案結構
 description: 了解如何定義部署至Adobe Experience ManagerCloud Service的套件結構。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2878'
 ht-degree: 12%
 
 ---
@@ -269,7 +269,7 @@ Repo Init OSGi設定最好以[`.config` OSGi設定格式](https://sling.apache.o
 
 ## 嵌入第三方包 {#embedding-3rd-party-packages}
 
-所有包都必須通過[Adobe的公用Maven對象儲存庫](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)或可訪問的可引用的公用第三方Maven對象儲存庫來使用。
+所有包都必須通過[Adobe的公用Maven對象儲存庫](https://repo1.maven.org/maven2/com/adobe/)或可訪問的可引用的公用第三方Maven對象儲存庫來使用。
 
 如果第三方套件位於 **Adobe的公用Maven工件存放庫**，則Adobe Cloud manager無需進一步設定即可解析工件。
 

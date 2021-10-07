@@ -4,7 +4,7 @@ description: 了解如何使您的CDN（內容傳遞網路）快取內容失效�
 feature: Asset Management,Dynamic Media Classic
 role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 13%
@@ -29,7 +29,7 @@ Dynamic Media資產由CDN（內容傳遞網路）快取，以便快速傳遞。 
 
 1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
-   配置時，Adobe提供了您的憑據和登錄詳細資訊。 如果您沒有此資訊，請聯繫技術支援。
+   配置時，Adobe提供了您的憑據和登錄詳細資訊。 如果您沒有此資訊，請聯絡客戶支援。
 
 1. 前往&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。
 1. 在「應用程式一般設定」頁面的「伺服器」群組標題下，找出&#x200B;**[!UICONTROL CDN無效範本]**&#x200B;文字方塊。

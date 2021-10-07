@@ -2,10 +2,10 @@
 title: 使用使用者對應工具
 description: 使用使用者對應工具
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 2%
+source-wordcount: '1367'
+ht-degree: 1%
 
 ---
 
@@ -75,17 +75,20 @@ AEMas a Cloud Service的重大變更，是完整整合使用AdobeID來存取作�
 
 使用者對應工具已整合至內容轉移工具。 您可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下載「內容轉移工具」。 如需最新版本的詳細資訊，請參閱[最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
-1. 選擇 Adobe Experience Manager 並導覽至工具 -> **操作** -> **內容轉移**。
+1. 選取Adobe Experience Manager並導覽至工具 — > **操作** -> **使用者對應**。
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing1.png)
+
 1. 按一下&#x200B;**建立用戶映射配置**。
 
    >[!NOTE]
    >如果您略過此步驟，則會在提取階段期間略過使用者和群組對應。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing2.png)
 
-   依照下列說明填入「使用者管理API設定」中的欄位：
+   請依照下文所述，填入&#x200B;**User Management API Configuration**&#x200B;中的欄位。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing3.png)
 
    * **組織ID**:輸入AdobeIdentity Management系統(IMS)組織ID，了解使用者要移轉的組織。
 
@@ -99,16 +102,15 @@ AEMas a Cloud Service的重大變更，是完整整合使用AdobeID來存取作�
       >[!NOTE]
       >存取權杖每24小時過期一次，而需要建立新的權杖。 若要建立新代號，請返回[Adobe開發人員控制台](https://console.adobe.io)，選擇您的專案，按一下&#x200B;**使用者管理API**，然後將相同的私密金鑰貼入方塊中。
 
-1. 輸入上述資訊後，按一下&#x200B;**Save**。
+1. 填入欄位後，按一下&#x200B;**測試設定**&#x200B;以測試與使用者管理API服務的連線。 如果連接成功，則可以按一下&#x200B;**Save**&#x200B;以保存配置。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+1. 保存配置後，選擇配置並按一下&#x200B;**啟動用戶映射**。
 
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
-1. 按一下&#x200B;**建立移轉集**&#x200B;並填入欄位，然後按一下&#x200B;**儲存**，以建立移轉集。 如需詳細資訊，請參閱[執行內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool)。
+1. 完成用戶映射後，按一下&#x200B;**Results**&#x200B;以查看摘要。
 
-   >[!NOTE]
-   >將切換為包含來自IMS使用者和群組的對應使用者，預設為開啟。 透過此設定，當對此移轉集執行提取時，使用者對應工具將會在提取階段中執行。 這是執行內容轉移工具提取階段的建議方式。 如果此切換關閉，且/或未建立使用者對應設定，則在提取階段期間會略過使用者和群組對應。
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
-
-1. 若要執行提取階段，請參閱[執行內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool)。
+   >[!IMPORTANT]
+   >完成使用者對應後，您可以使用階層連結，導覽回「內容移轉」頁面。 「使用者對應」卡片會顯示狀態和時間戳記。 按一下&#x200B;**內容轉移**&#x200B;以建立移轉集以執行提取。 如需詳細資訊，請參閱[執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) 。

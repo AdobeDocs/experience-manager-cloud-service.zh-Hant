@@ -4,9 +4,9 @@ description: '整合 Adobe Analytics '
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '530'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 整合Adobe Analytics和AEMas a Cloud Service可讓您追蹤網頁活動。 整合需要：
 
 * 使用觸控式UI在AEM as a Cloud Service中建立Analytics設定。
-* 在[AdobeLaunch](#analytics-launch)中新增並設定Adobe Analytics為擴充功能。 如需AdobeLaunch的詳細資訊，請參閱[本頁面](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)。
+* 在[AdobeLaunch](#analytics-launch)中新增並設定Adobe Analytics為擴充功能。 如需AdobeLaunch的詳細資訊，請參閱[本頁面](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)。
 
 與舊版AEM相比，AEMas a Cloud Service中的Analytics設定不提供架構支援。 現在改為透過AdobeLaunch完成，Launch是實際上用來檢測具有Analytics功能（JS資料庫）的AEM網站的工具。 在AdobeLaunch中，會建立屬性，可在此設定Adobe Analytics擴充功能，並建立規則以將資料傳送至Adobe Analytics。 Adobe啟動已取代sitecatalyst提供的分析工作。
 

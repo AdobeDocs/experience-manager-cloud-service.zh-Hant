@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager的整備階段
 description: 本頁概述Cloud Acceleration Manager的整備階段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '748'
 ht-degree: 5%
 
 ---
@@ -66,6 +66,19 @@ ht-degree: 5%
 
    >[!NOTE]
    >上傳新報表會重設所有評估。
+
+1. 按一下&#x200B;**列印預覽**&#x200B;圖示，如下所示。
+
+   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+
+1. 按一下「**打印預覽**」將開啟一個新頁簽，其中報告顯示在可打印預覽中。 按一下&#x200B;**Print**&#x200B;將報表打印為PDF格式，以便於共用。
+
+   >[!IMPORTANT]
+   >* 建議並支援上述功能的&#x200B;**另存為PDF**&#x200B;選項。
+   >* 如果使用瀏覽器的打印按鈕，則只打印一頁。
+
+
+   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### 檢閱最佳實務分析報表 {#analysis-report}
 

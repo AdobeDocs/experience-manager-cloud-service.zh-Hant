@@ -2,9 +2,9 @@
 title: 正在檢查DNS記錄狀態
 description: 正在檢查DNS記錄狀態
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager會對您的網域名稱執行DNS查閱，並顯示下列其中一�
 DNS狀態在成功驗證並部署自定義域名之前，將不檢測到DNS狀態。當您的自訂網域名稱正在刪除過程中時，也會觀察到此狀態。
 
 * **DNS解**
-析不正確這表示DNS記錄配置尚未解析/指向，或錯誤。Adobe代表會自動收到通知。
+析不正確這表示DNS記錄配置尚未解析/指向，或錯誤。
 
    >[!NOTE]
    >您必須依照對應的指示來設定`CNAME`或`A-record`。 如需詳細資訊，請參閱設定DNS設定。 準備就緒後，您必須再次選取狀態旁的&#x200B;**resolve**&#x200B;圖示。
