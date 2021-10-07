@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cf5fd3f483876eab8e9ec7bf22fae5dd1c6aa147
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 2%
+source-wordcount: '1507'
+ht-degree: 3%
 
 ---
 
@@ -47,8 +47,11 @@ ht-degree: 2%
    ![在「欄」和「卡片」檢 [!DNL Assets] 視中排序搜尋結果](/help/assets/assets/sort-searched-assets.png)
    *圖：在「欄」和「卡片」檢 [!DNL Assets] 視中排序搜尋結果。*
 
-* 為了利用資產微服務以程式設計方式叫用處理，引入了新的API。 開發人員現在可以對資料夾中的一或多個特定資產套用現有的資料夾層級處理設定檔。 系統會根據自訂中繼資料屬性更新套用處理設定檔。 請參閱[[!DNL Experience Manager] API參考](https://www.adobe.io/experience-manager/reference-materials/)中的`AssetProcessor`。 和以前一樣，可以從用戶介面](/help/assets/asset-microservices-configure-and-use.md)使用資產微服務。[
+<!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
+* To programmatically invoke processing using asset microservices, a new API is introduced. Developers can now apply an existing folder-level processing profile on one or more specific assets in a folder. The processing profile gets applied based on custom metadata properties updates. See `AssetProcessor` in the [[!DNL Experience Manager] API reference](https://www.adobe.io/experience-manager/reference-materials/). As before, it is possible to [use asset microservices from the user interface](/help/assets/asset-microservices-configure-and-use.md).
+
+-->
 <!-- Leave this commented.
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
