@@ -3,7 +3,7 @@ title: 使用規則集來轉換URL
 description: 了解如何在Dynamic Media中部署規則集以轉換URL。 規則集是以指令碼語言（如JavaScript）編寫的一組指令，這些指令可評估XML資料，並在資料滿足某些條件時採取某些操作。
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 * 添加MIME類型尾碼。 許多服務和網站都需要影像尾碼，例如將`.jpg`新增至URL。
 * 為SEO（搜尋引擎最佳化）目的建立URL的資料夾路徑。
 
-   請參閱[AdobeDynamic Media Classic如何支援SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
+   請參閱[Adobe Dynamic Media Classic如何支援SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
 
 * 為SEO（搜尋引擎最佳化）目的，將中繼資料新增至URL。
 
-   請參閱[AdobeDynamic Media Classic如何支援SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
+   請參閱[Adobe Dynamic Media Classic如何支援SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)。
 
 * 設定內容配置以觸發下載。
 * 簡化影像提供範本URL以供個人化。 例如，將`rgb{XX,YY,ZZ}`轉換為RTF就緒`\redXX\greenYY\blueZZ`
@@ -45,7 +45,7 @@ ht-degree: 0%
 此外，請務必先在測試環境中測試規則集，以免影響您的即時生產環境。
 生產環境和測試環境通常需要不同的登入。
 
-請參閱[AdobeDynamic Media Classic案頭應用程式以了解登入資訊](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)。
+請參閱[Adobe Dynamic Media Classic案頭應用程式以了解登入資訊](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)。
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
-   配置時，Adobe提供了您的憑據和登錄詳細資訊。 如果您沒有此資訊，請聯繫技術支援。
+   配置時，Adobe提供了您的憑據和登錄詳細資訊。 如果您沒有此資訊，請聯絡客戶支援。
 
 1. 執行下列動作，上傳規則集檔案：
 

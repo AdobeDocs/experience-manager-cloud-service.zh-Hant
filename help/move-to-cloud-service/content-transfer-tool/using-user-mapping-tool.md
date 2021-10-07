@@ -16,17 +16,17 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="使用者對應工具"
->abstract="「內容轉移工具」可協助您將使用者和群組從您現有的AEM系統移至AEM作為Cloud Service。 現有的使用者和群組必須對應至其IMS ID，以避免Cloud Service製作例項上出現重複的使用者和群組。"
+>abstract="「內容轉移工具」可協助您將使用者和群組從您現有的AEM系統移至AEMas a Cloud Service。 現有的使用者和群組必須對應至其IMS ID，以避免Cloud Service製作例項上出現重複的使用者和群組。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="使用使用者對應工具的重要考量"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="使用使用者對應工具"
 
-在轉換至Adobe Experience Manager(AEM)作為Cloud Service的過程中，您需要將使用者和群組從您現有的AEM系統移至AEM作為Cloud Service。 這是由「內容轉移工具」完成。
+在轉換至Adobe Experience Manager(AEM)的as a Cloud Service過程中，您必須將使用者和群組從您現有的AEM系統移至AEMas a Cloud Service。 這是由「內容轉移工具」完成。
 
-AEM as aCloud Service的重大變更，是完整整合使用AdobeID來存取製作階層。  這需要使用[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)來管理使用者和使用者群組。 AdobeIdentity Management系統(IMS)會集中提供使用者設定檔資訊，以針對所有Adobe雲端應用程式提供單一登入。 如需詳細資訊，請參閱[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)。 因為此變更，現有的使用者和群組必須對應至其IMS ID，以避免Cloud Service製作例項上出現重複的使用者和群組。
+AEMas a Cloud Service的重大變更，是完整整合使用AdobeID來存取作者階層。  這需要使用[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)來管理使用者和使用者群組。 AdobeIdentity Management系統(IMS)會集中提供使用者設定檔資訊，以針對所有Adobe雲端應用程式提供單一登入。 如需詳細資訊，請參閱[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)。 因為此變更，現有的使用者和群組必須對應至其IMS ID，以避免Cloud Service製作例項上出現重複的使用者和群組。
 
 ### 使用者對應工具 {#mapping-tool}
 
-「內容轉移工具」（不含「使用者對應」）將移轉與要移轉之內容相關聯的任何使用者和群組。 「使用者對應工具」是「內容轉移工具」的一部分，其唯一用途是修改使用者和群組，以便讓IMS(AEM作為Cloud Service使用的單一登入功能)正確識別。 完成這些修改後，「內容轉移工具」會照常移轉指定內容的使用者和群組。
+「內容轉移工具」（不含「使用者對應」）將移轉與要移轉之內容相關聯的任何使用者和群組。 「使用者對應工具」是「內容轉移工具」的一部分，其唯一用途是修改使用者和群組，讓IMS(AEMas a Cloud Service使用的單一登入功能)可正確辨識這些使用者和群組。 完成這些修改後，「內容轉移工具」會照常移轉指定內容的使用者和群組。
 
 ## 重要考量 {#important-considerations}
 
@@ -40,7 +40,7 @@ AEM as aCloud Service的重大變更，是完整整合使用AdobeID來存取製�
 
 1. 如果用戶當前已禁用，則會將其視為與未禁用相同。 它會照常對應和移轉，並在雲端例項上保持停用狀態。
 
-1. 如果目標AEMCloud Service實例上存在與源AEM實例上的某個用戶具有相同用戶名(rep:principalName)的用戶，則不會遷移有關的用戶或組。
+1. 如果目標AEM Cloud Service實例上存在與源AEM實例上的某個用戶同名的用戶(rep:principalName)，則不會遷移該用戶或組。
 
 ### 其他考量 {#additional-considerations}
 
@@ -50,7 +50,7 @@ AEM as aCloud Service的重大變更，是完整整合使用AdobeID來存取製�
 
 * 執行內容追加時，如果自上次轉移後內容未變更而未轉移，則與該內容相關聯的使用者和群組也不會轉移，即使在此期間使用者和群組已變更亦然。 這是因為使用者和群組會與其相關聯的內容一起移轉。
 
-* 如果目標AEMCloud Service實例的用戶具有與源AEM實例上的某個用戶不同的用戶名但電子郵件地址相同，並且啟用了用戶映射，則日誌中將寫入錯誤消息，並且源AEM用戶將不會被轉移，因為目標系統上只允許一個具有給定電子郵件地址的用戶。
+* 如果目標AEM Cloud Service實例具有與源AEM實例上的某個用戶具有不同用戶名但電子郵件地址相同的用戶，並且啟用了用戶映射，則日誌中將寫入錯誤消息，並且源AEM用戶將不會被轉移，因為目標系統上只允許一個具有給定電子郵件地址的用戶。
 
 * 如果源AEM實例上的兩個用戶具有相同的電子郵件地址，並且啟用了「用戶映射」，則日誌中將會寫入一條錯誤消息，並且不會傳輸一個源AEM用戶，因為目標系統上只允許一個具有指定電子郵件地址的用戶。
 

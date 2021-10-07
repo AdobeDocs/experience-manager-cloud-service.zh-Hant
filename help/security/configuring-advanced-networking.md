@@ -346,7 +346,7 @@ VPN允許從作者、發佈或預覽連接到內部部署的基礎架構或資�
 
 如需詳細資訊，請參閱[ API檔案](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration)。
 
-應為應通過VPN路由的任何非http/s協定TCP通信聲明埠轉發規則，方法是指定目標主機集（名稱或IP，以及埠）。 對於每個目標主機，客戶必須將目標埠映射到從30000到30999的埠，其中的值必須在程式中的各個環境中是唯一的。 客戶也可以在`nonProxyHosts`參數中列出一組url，該參數聲明流量應繞過VPN路由，而是通過共用IP範圍。 它會遵循`example.com`或`*.example.com`的模式，其中只有域開頭才支援通配符。
+應為應通過VPN路由的任何非http/s協定TCP通信聲明埠轉發規則，方法是指定目標主機集（名稱或IP，以及埠）。 對於每個目標主機，客戶必須將目標埠映射到從30000到30999的埠，其中的值必須在程式中的各個環境中是唯一的。 客戶也可以在`nonProxyHosts`參數中列出一組url，該參數會聲明流量應繞過VPN路由的URL，而是通過共用IP範圍。 它會遵循`example.com`或`*.example.com`的模式，其中只有域開頭才支援通配符。
 
 API應在幾秒後回應，指出狀態`updating` ，大約10分鐘後，對Cloud Manager的環境GET端點的呼叫會顯示狀態`ready`，指出已套用環境更新。
 

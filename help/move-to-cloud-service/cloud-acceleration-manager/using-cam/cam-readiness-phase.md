@@ -71,10 +71,10 @@ ht-degree: 5%
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. 按一下「**打印預覽**」將開啟一個新頁簽，其中報告顯示在可打印預覽中。 按一下&#x200B;**Print**&#x200B;以將報表列印為PDF格式，以方便共用。
+1. 按一下「**打印預覽**」將開啟一個新頁簽，其中報告顯示在可打印預覽中。 按一下&#x200B;**Print**&#x200B;將報表打印為PDF格式，以便於共用。
 
    >[!IMPORTANT]
-   >* 建議並支援選項&#x200B;**另存為PDF**&#x200B;以上功能。
+   >* 建議並支援上述功能的&#x200B;**另存為PDF**&#x200B;選項。
    >* 如果使用瀏覽器的打印按鈕，則只打印一頁。
 
 
@@ -101,7 +101,7 @@ ht-degree: 5%
 
 #### 報表概述 {#report-overview}
 
-此&#x200B;**報表概述**&#x200B;卡片提供評估是否準備好移至AEM作為Cloud Service時適用的報表結果和嚴重性等級，如下圖所示。
+此&#x200B;**報表概述**&#x200B;卡片提供評估是否準備好移至AEMas a Cloud Service時適用的報表結果和嚴重性層級，如下圖所示。
 
 ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -128,7 +128,7 @@ ht-degree: 5%
 
 #### 遷移複雜性評估 {#migration-complexity-assessment}
 
-「移轉複雜性評估」選項可評估將現有AEM實作移轉至AEM作為Cloud Service的複雜性。
+「移轉複雜性評估」選項可評估將現有AEM實作移轉至AEMas a Cloud Service的複雜性。
 
 您可以從此索引標籤檢閱下列資訊：
 

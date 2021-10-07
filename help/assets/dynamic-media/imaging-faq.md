@@ -4,7 +4,7 @@ description: 了解Adobe Sensei AI的智慧型影像處理如何套用每位使�
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '2624'
 ht-degree: 1%
@@ -33,7 +33,7 @@ ht-degree: 1%
 | [影像4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
 |  |  |  |  | 平均= 51% |
 
-與上述內容類似，Adobe也透過來自即時客戶網站的7009個URL執行測試。 他們能夠平均將JPEG的檔案大小進一步優化38%。 對於使用WebP格式的PNG，檔案大小最佳化平均可提高31%。 這種優化是可能的，因為智慧成像技術具有強大的功能。
+與上述內容類似，Adobe也透過來自即時客戶網站的7009個URL執行測試。 他們能夠平均將檔案大小進一步優化38%以用於JPEG。 對於使用WebP格式的PNG，檔案大小最佳化平均可提高31%。 這種優化是可能的，因為智慧成像技術具有強大的功能。
 
 在行動網路上，挑戰因兩個因素而加劇：
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->DPR和網路頻寬值以所偵測到的套裝CDN用戶端值為基礎。 這些值有時不準確。 例如，DPR=2的iPhone5和DPR=3的iPhone12，都會顯示DPR=2。 不過，對於高解析度裝置，傳送DPR=2比傳送DPR=1好。 即將推出：Adobe正在使用用戶端程式碼，以精確判斷使用者的DPR。
+>DPR和網路頻寬值以所偵測到的套裝CDN用戶端值為基礎。 這些值有時不準確。 例如，DPR=2的iPhone5和DPR=3的iPhone12，都顯示DPR=2。 不過，對於高解析度裝置，傳送DPR=2比傳送DPR=1好。 即將推出：Adobe正在使用用戶端程式碼，以精確判斷使用者的DPR。
 
 ## 最新智慧映像有哪些主要優勢？ {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -98,7 +98,7 @@ ht-degree: 1%
 
 ## 是否存在與智慧映像相關的許可成本？ {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-否. 智慧影像處理隨附於您現有的授權。 Dynamic Media Classic或Experience Manager- Dynamic Media(內部部署、AMS和Experience Manager作為Cloud Service)適用此規則。
+否. 智慧影像處理隨附於您現有的授權。 Dynamic Media Classic或Experience Manager- Dynamic Media(內部部署、AMS和Experience Manageras a Cloud Service)適用此規則。
 
 >[!NOTE]
 >
@@ -115,14 +115,14 @@ ht-degree: 1%
    * 鉻黃
    * Firefox
    * Microsoft® Edge
-   * Safari（跨iOS、macOS、iPadOS）提供瀏覽器和作業系統版本支援WebP
+   * Safari(跨iOS、macOS、iPadOS)提供瀏覽器和作業系統版本支援WebP
    * Android™
    * Opera
 * 舊版瀏覽器支援下列項目：
 
    | 瀏覽器 | 瀏覽器/作業系統版本 | 格式 |
    | --- | --- | --- |
-   | Safari | 早於iOS/iPad 14.0或macOS BigSur | JPEG2000 |
+   | Safari | 早於iOS/iPad 14.0或macOS·大蘇爾 | JPEG2000 |
    | Edge | 早於18 | JPEGXR |
    | Internet Explorer | 9+ | JPEGXR |
 * 若瀏覽器不支援這些格式，則會提供原始要求的影像格式。
@@ -145,7 +145,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 智慧型影像處理如何處理已使用的現有影像預設集？ {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-智慧型影像處理可與您現有的「影像預設集」搭配使用。 如果請求的檔案格式為JPEG或PNG，則它會觀察除質量(`qlt`)和格式(`fmt`)之外的所有影像設定。 對於格式轉換，智慧影像處理會根據影像預設集設定所定義的完整視覺逼真度，但檔案大小較小。 如果原始影像大小小於智慧型影像產生的大小，則會提供原始影像。
+智慧型影像處理可與您現有的「影像預設集」搭配使用。 如果請求的檔案格式為JPEG或PNG，則會觀察所有影像設定，但質量(`qlt`)和格式(`fmt`)除外。 對於格式轉換，智慧影像處理會根據影像預設集設定所定義的完整視覺逼真度，但檔案大小較小。 如果原始影像大小小於智慧型影像產生的大小，則會提供原始影像。
 
 <!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
@@ -213,18 +213,18 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
       查找標籤為&#x200B;**[!UICONTROL 已發佈伺服器名稱]**&#x200B;的欄位。 如果您目前使用一般Dynamic Media Classic網域，可以請求移轉至您自己的自訂網域，作為此轉變的一部分。
    1. 指出是否希望它透過HTTP/2運作。
 
-1. Adobe客戶服務會根據提交請求的順序，將您新增至智慧型影像處理客戶等候清單。
-1. 當Adobe準備好處理您的請求時，客戶服務會聯絡您以協調並設定目標日期。
+1. Adobe客戶支援會根據提交請求的順序將您添加到智慧映像客戶等待清單中。
+1. 當Adobe準備好處理您的請求時，客戶支援會聯絡您以協調並設定目標日期。
 1. **可選**:您可以選擇在測試環境中測試智慧影像，然後Adobe將新功能推送至生產環境。
-1. 客戶服務完成後，會通知您。
+1. 客戶支援在完成後通知您。
 1. 為最大程度提升智慧型影像處理的效能，Adobe建議將存留時間(TTL)設為24小時或更長。 TTL會定義CDN快取資產的時間長度。 要更改此設定：
 
-   1. 如果您使用Dynamic Media Classic，請前往「**[!UICONTROL Setup]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 發佈設定]** > **[!UICONTROL 影像伺服器]**」。 將&#x200B;**[!UICONTROL 預設客戶端快取時間設定為「Live]** 」值24或更長。
+   1. 如果您使用Dynamic Media Classic，請前往「**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 發佈設定]** > **[!UICONTROL 影像伺服器]**」。 將&#x200B;**[!UICONTROL 預設客戶端快取時間設定為「Live]** 」值24或更長。
    1. 如果您使用Dynamic Media，請依照[這些指示](config-dm.md)操作。 將&#x200B;**[!UICONTROL 過期]**&#x200B;值設定24小時或更久。
 
 ## 何時可以使用智慧影像處理啟用帳戶？ {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-系統會根據等待清單，依客戶服務接收請求的順序處理請求。
+系統會根據等待清單，依客戶支援接收請求的順序處理請求。
 
 >[!NOTE]
 >
@@ -271,13 +271,13 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 當前智慧映像中沒有此類配置功能。
 
-## 有時，JPEG影像會傳回至Chrome，而非WebP影像。 為什麼會發生這種變化？ {#jpeg-webp}
+## 有時JPEG影像會傳回至Chrome，而非WebP影像。 為什麼會發生這種變化？ {#jpeg-webp}
 
 智慧型影像處理會判斷轉換是否有益。 只有在轉換導致檔案大小較小且品質相當時，才會傳回新影像。
 
 智慧型影像處理DPR最佳化如何與Adobe Experience Manager Sites元件和Dynamic Media檢視器搭配運作？
 
-* Experience Manager網站核心元件預設會設定以進行DPR最佳化。 為避免因伺服器端智慧型影像處理DPR最佳化而造成影像過大，一律會將`dpr=off`新增至Experience Manager網站核心元件Dynamic Media影像。
+* Experience Manager Sites核心元件預設為針對DPR最佳化進行設定。 為避免因伺服器端智慧型影像處理DPR最佳化而造成影像過大，一律會將`dpr=off`新增至Experience Manager Sites核心元件Dynamic Media影像。
 * 根據預設，為了將Dynamic Media Foundation元件設定為DPR最佳化，為了避免因伺服器端智慧型影像處理DPR最佳化而造成影像過大，一律會將`dpr=off`新增至Dynamic Media Foundation元件影像。 即使客戶在DM Foundation元件中取消選取DPR最佳化，伺服器端智慧型影像處理DPR也不會生效。 總之，在DM基礎元件中，DPR優化僅基於DM基礎元件級別設定而生效。
 * 任何檢視器端DPR最佳化都會與伺服器端智慧型影像處理DPR最佳化搭配運作，而不會導致影像大小過大。 換言之，無論DPR是由檢視器處理的，例如只有啟用縮放的檢視器中的主檢視，伺服器端智慧型影像處理DPR值都不會觸發。 同樣地，只要檢視器元素（例如色票和縮圖）沒有DPR處理，就會觸發伺服器端智慧型影像處理DPR值。
 

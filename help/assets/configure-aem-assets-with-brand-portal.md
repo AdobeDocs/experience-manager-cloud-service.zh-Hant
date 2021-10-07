@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 8%
@@ -63,7 +63,7 @@ Cloud Manager使用者會為AEM Assets啟用Brand Portal作為[!DNL Cloud Servic
 >請勿修改任何自動產生的設定。
 
 **另請參閱**:
-* [在AEM Assets中新增使用者和角色作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
+* [在AEM Assets as a Cloud Service中新增使用者和角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
 * [在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
@@ -178,7 +178,7 @@ Brand Portal租用戶的預設URL為：`https://<tenant-id>.brand-portal.adobe.c
 
 >[!NOTE]
 >
->如果您在啟用Brand Portal租用戶時遇到任何問題，請聯絡Adobe支援。
+>如果您在啟用Brand Portal租用戶時遇到任何問題，請聯絡客戶支援。
 
 ## 使用Adobe開發人員控制台手動配置 {#manual-configuration}
 

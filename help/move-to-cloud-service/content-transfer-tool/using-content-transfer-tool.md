@@ -37,7 +37,7 @@ ht-degree: 37%
 
 * 在提取階段中，「內容轉移工具」會在作用中的 AEM 來源例項上執行。
 
-* 在完成內容傳輸程式的&#x200B;*提取*&#x200B;階段之後，以及開始&#x200B;*擷取階段*&#x200B;將內容作為Cloud Service *Stage*&#x200B;或&#x200B;*Production*&#x200B;例項內嵌至AEM之前，您需要記錄支援票證，以通知Adobe有意執行&#x200B;*擷取*，讓Adobe可確保在&#x200B;*擷取程式中不會發生中斷。*&#x200B;您需要在計畫的&#x200B;*擷取*&#x200B;日期前1週記錄支援票證。 一旦您提交了支援票證，支援團隊就會提供後續步驟的指引。 您可以記錄支援票證，並提供下列詳細資訊：
+* 完成內容傳輸程式的&#x200B;*提取*&#x200B;階段之後，以及開始&#x200B;*擷取階段*&#x200B;將內容內嵌至您的AEMas a Cloud Service *階段*&#x200B;或&#x200B;*生產*&#x200B;例項之前，您需要記錄支援票證，以通知Adobe有意執行&#x200B;*擷取*，讓Adobe可確保在&#x200B;*擷取*&#x200B;過程期間不會發生中斷。 您需要在計畫的&#x200B;*擷取*&#x200B;日期前1週記錄支援票證。 一旦您提交了支援票證，支援團隊就會提供後續步驟的指引。 您可以記錄支援票證，並提供下列詳細資訊：
 
    * 計劃開始&#x200B;*擷取*&#x200B;階段時，確切的日期和估計時間（搭配您的時區）。
    * 您打算將資料內嵌至的環境類型（預備或生產）。
@@ -70,7 +70,7 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
 >title="執行內容轉移工具"
->abstract="了解如何使用「內容轉移工具」將內容移轉至AEM作為Cloud Service（製作/發佈）。"
+>abstract="了解如何使用「內容轉移工具」將內容移轉至AEMas a Cloud Service（製作/發佈）。"
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" 請參閱示範"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="教學課程 — 使用內容轉移工具"
 

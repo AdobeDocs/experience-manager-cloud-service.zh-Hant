@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="使用Best Practices Analyzer"
 >abstract="檢閱使用Best Practices Analyzer（原稱為Cloud Readiness Analyzer）的說明檔案以及產生的報表。 Best Practices Analyzer報表可用來取得對一般升級整備程度的高層了解。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 使用Best Practices Analyzer的重要考量 {#imp-considerations}
 
@@ -110,7 +110,7 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-不應忽視ACS公域的調查結果。請參閱[檔案](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)以判斷與AEM作為Cloud Service的相容性。
+不應忽視ACS公域的調查結果。請參閱[檔案](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)以判斷與AEMas a Cloud Service的相容性。
 
 
 ### Adobe Experience Manager 6.2 和 6.1 {#aem-specific-versions}

@@ -11,9 +11,9 @@ ht-degree: 1%
 
 # 內容搜尋與索引 {#indexing}
 
-## AEM as aCloud Service中的變更 {#changes-in-aem-as-a-cloud-service}
+## AEMas a Cloud Service中的變更 {#changes-in-aem-as-a-cloud-service}
 
-以AEM為Cloud Service,Adobe正從AEM執行個體導向的模型，移至具有n-x AEM容器的服務型檢視，由Cloud Manager中的CI/CD管道驅動。 必須在部署之前指定索引配置，而不是在單個AEM實例上配置和維護索引。 生產環境中的組態變更明顯違反CI/CD原則。 索引更改也同樣適用，因為如果未指定測試和重新索引，在將其投入生產之前，它可能會影響系統穩定性和效能。
+透過AEMas a Cloud Service,Adobe正從AEM執行個體導向的模型，移至以服務為基礎的檢視，其中n-x AEM容器由Cloud Manager中的CI/CD管道驅動。 必須在部署之前指定索引配置，而不是在單個AEM實例上配置和維護索引。 生產環境中的組態變更明顯違反CI/CD原則。 索引更改也同樣適用，因為如果未指定測試和重新索引，在將其投入生產之前，它可能會影響系統穩定性和效能。
 
 以下是與AEM 6.5及舊版相比的主要變更清單：
 
@@ -31,12 +31,12 @@ ht-degree: 1%
 
 1. 索引配置已通過部署更改。 索引定義變更的設定方式與其他內容變更相同。
 
-1. 在AEM as aCloud Service的高層，引入[Blue-Green部署模型](#index-management-using-blue-green-deployments)後，將存在兩組索引：一個為舊版（藍色）設定，另一個為新版（綠色）設定。
+1. 在AEMas a Cloud Service的高層級，引入[Blue-Green部署模型](#index-management-using-blue-green-deployments)後，將存在兩組索引：一個為舊版（藍色）設定，另一個為新版（綠色）設定。
 
 1. 客戶可以在Cloud Manager建置頁面上查看索引工作是否已完成，並會在新版本準備好接收流量時收到通知。
 
 1. 限制:
-* 目前，AEM as aCloud Service上的索引管理僅支援lucene類型的索引。
+* 目前，AEMas a Cloud Service上的索引管理僅支援lucene類型的索引。
 * 僅支援標準分析器（即隨產品提供的分析器）。 不支援自訂分析器。
 
 ## 使用方式 {#how-to-use}
@@ -47,7 +47,7 @@ ht-degree: 1%
 1. 更新現有索引定義。 這實際上意味著添加新版本的現有索引定義
 1. 刪除冗餘或過時的現有索引。
 
-對於以上第1點和第2點，您需要在各自Cloud Manager發行排程的自訂程式碼基底中建立新的索引定義。 如需詳細資訊，請參閱[部署至AEM as aCloud Service檔案](/help/implementing/deploying/overview.md)。
+對於以上第1點和第2點，您需要在各自Cloud Manager發行排程的自訂程式碼基底中建立新的索引定義。 如需詳細資訊，請參閱[部署至AEMas a Cloud Service檔案](/help/implementing/deploying/overview.md)。
 
 ### 準備新索引定義 {#preparing-the-new-index-definition}
 
@@ -85,7 +85,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
->如需AEM as aCloud Service所需套件結構的詳細資訊，請參閱檔案[AEM專案結構。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>如需AEMas a Cloud Service所需套件結構的詳細資訊，請參閱檔案[AEM專案結構。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## 使用藍綠色部署進行索引管理 {#index-management-using-blue-green-deployments}
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->`<indexName>-custom-<customerVersionNumber>` 需要AEM as aCloud Service，才能將此標籤為現有索引的取代。
+>`<indexName>-custom-<customerVersionNumber>` 需要AEM as a Cloud Service，才能將此標籤為現有索引的替代項目。
 
 | 索引 | 現成可用的索引 | 用於第1版 | 用於第2版 |
 |---|---|---|---|
@@ -176,7 +176,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->AEM作為Cloud Service上的索引定義可能不完全符合本機開發例項上的索引定義。 開發執行個體沒有Tika設定，而AEM as aCloud Service執行個體則有。 如果您使用Tika配置自定義索引，請保留Tika配置。
+>AEMas a Cloud Service上的索引定義可能不完全符合本機開發例項上的索引定義。 開發執行個體沒有Tika設定，AEMas a Cloud Service執行個體則有。 如果您使用Tika配置自定義索引，請保留Tika配置。
 
 ### 撤消更改 {#undoing-a-change}
 
@@ -215,13 +215,13 @@ ht-degree: 1%
 
 Apache Jackrabbit Oak可啟用彈性的索引設定，以有效處理搜尋查詢。 索引對於較大的儲存庫尤其重要。 請確保所有查詢都由適當的索引備份。 沒有適當索引的查詢可讀取數千個節點，然後記錄為警告。 應通過分析日誌檔案來識別此類查詢，以便可以優化索引定義。 如需詳細資訊，請參閱[本頁面](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes)。
 
-### AEM as aCloud Service上的Lucene全文索引 {#index-lucene}
+### AEM上的Lucene全文索引as a Cloud Service {#index-lucene}
 
-全文索引`/oak:index/lucene-2`可能會變得非常大，因為預設情況下，它為AEM儲存庫中的所有節點建立索引。  自2021年9月起，在Adobe計畫淘汰此索引後，將不再部署於AEM作為Cloud Service。 因此，AEM中的產品端不再使用它作為Cloud Service，也不需要執行客戶代碼。 對於AEM作為具有通用Lucene索引的Cloud Service環境，Adobe正在與客戶個別合作，以尋求協調的方法來補償此索引，並使用更好、最佳化的索引。 客戶無需採取任何動作，但須另行通知Adobe。 AEM as aCloud Service客戶在需要針對此最佳化採取動作時，會收到Adobe通知。 如果自定義查詢需要此索引，作為臨時解決方案，應使用不同名稱（例如`/oak:index/acme.lucene-1-custom-1`）建立此索引的副本，如[here](/help/operations/indexing.md)中所述。
+全文索引`/oak:index/lucene-2`可能會變得非常大，因為預設情況下，它為AEM儲存庫中的所有節點建立索引。  自2021年9月起，Adobe計畫淘汰此索引後，將不再部署於AEMas a Cloud Service。 因此，AEM as a Cloud Service中不再用於產品端，也不需要執行客戶程式碼。 對於具有通用Lucene索引的AEMas a Cloud Service環境，Adobe正在與客戶個別合作，以採用協調的方法來補償此索引，並使用更好、最佳化的索引。 客戶無需採取任何動作，但須另行通知Adobe。 AEMas a Cloud Service客戶在需要針對此最佳化採取動作時，會收到Adobe通知。 如果自定義查詢需要此索引，作為臨時解決方案，應使用不同名稱（例如`/oak:index/acme.lucene-1-custom-1`）建立此索引的副本，如[here](/help/operations/indexing.md)中所述。
 依預設，此最佳化不適用於在內部部署或由Adobe Managed Services管理的其他AEM環境。
 
 ## 查詢最佳化 {#index-query}
 
 **查詢效能**&#x200B;工具可讓您同時觀察熱門和緩慢的JCR查詢。 此外，它還能夠分析查詢並顯示有關的各種資訊，尤其是當是否正使用此查詢使用索引時。
 
-與AEM內部部署不同，AEM as aCloud Service不再於UI中顯示&#x200B;**查詢效能**&#x200B;工具。 現在可透過&#x200B;**Querys**&#x200B;標籤上的開發人員控制台（位於雲端管理器中）取得。
+與AEM內部部署不同，AEMas a Cloud Service不再在UI中顯示&#x200B;**查詢效能**&#x200B;工具。 現在可透過&#x200B;**Querys**&#x200B;標籤上的開發人員控制台（位於雲端管理器中）取得。

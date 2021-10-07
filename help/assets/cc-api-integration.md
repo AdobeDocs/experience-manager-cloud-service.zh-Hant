@@ -2,15 +2,15 @@
 title: Creative Cloud整合的內容自動化
 description: 使用Creative Cloud整合產生資產變數
 contentOwner: AG
-feature: 上傳，資產處理，發佈，Asset compute微服務，工作流程
+feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
-
 
 # 使用[!DNL Adobe Creative Cloud]整合產生資產變異 {#content-automation}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
    ![Lightroom預設集](/help/assets/assets/content-automation-lrpresets.png)
 
-   *圖：AdobeLightroom預設集，以一致方式改善許多影像的影像品質。*
+   *圖：Adobe Lightroom預設集，以一致方式改善許多影像的影像品質。*
 
 * **影像挖剪**:使用人工智慧在顯著對象周圍建立選擇，並使用單個命令刪除背景。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
    ![Photoshop動作](/help/assets/assets/content-automation-psactions.png)
 
-* **智慧型物件取代**:允許您交換影像，同時保留PSD檔案內套用的所有效果和調整，以大規模個人化。
+* **智慧型物件取代**:允許您交換影像，同時保留套用在PSD檔案中的所有效果和調整，以大規模個人化。
 
    ![智慧替換對象](/help/assets/assets/content-automation-objectreplace.png)
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 若要使用處理設定檔來自動建立變異，請遵循下列步驟：
 
-1. 請連絡[Adobe客戶服務](https://experienceleague.adobe.com/#support)以取得授權。
+1. 請聯繫[Adobe客戶支援](https://experienceleague.adobe.com/#support)以接收許可證。
 
 1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**。
 
@@ -84,6 +84,6 @@ ht-degree: 0%
 >[!MORELIKETHIS]
 >
 >* [透過處理設定檔來設定和使用資產微服務](/help/assets/asset-microservices-configure-and-use.md)。
->* [ [!DNL Experience Manager] 與整合 [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)。
+>* [ [!DNL Experience Manager] 與 [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)整合。
 >* [透過資產微服務擷取和處理資產：概述](/help/assets/asset-microservices-overview.md)。
 
