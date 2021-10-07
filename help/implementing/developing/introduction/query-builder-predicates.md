@@ -2,14 +2,14 @@
 title: 查詢產生器述詞參考
 description: 查詢產生器API的述詞參考。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2218'
 ht-degree: 1%
 
 ---
 
-# 查詢產生器述詞參考{#query-builder-predicate-reference}
+# 查詢產生器述詞參考 {#query-builder-predicate-reference}
 
 ## 一般 {#general}
 
@@ -167,7 +167,7 @@ group.2_group.type=dam:Asset
 
 ### hasPermission {#haspermission}
 
-此謂語將結果限制為當前會話具有指定[JCR權限的項目。](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+此謂語將結果限制為當前會話具有指定[JCR權限的項目。](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 這是僅限篩選的謂語，無法使用搜尋索引。 不支援小面擷取。
 

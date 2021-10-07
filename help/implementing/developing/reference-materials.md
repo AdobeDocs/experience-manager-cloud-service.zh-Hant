@@ -1,9 +1,10 @@
 ---
 title: API參考資料
 description: AEM提供廣泛而強大的API，可供您運用於數位體驗專案。
-source-git-commit: f8d16e515de5ce740398d45a30038793fe021b69
+exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '664'
 ht-degree: 4%
 
 ---
@@ -34,7 +35,7 @@ AEM需仰賴許多其他開放原始碼API。
 |---|---|
 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | 使用Java內容存放庫(JCR)來儲存及管理內容的Web架構 |
 | [阿帕奇傑克拉布特橡樹](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 實作可擴充且高效能的階層式Java內容存放庫(JCR)，以作為現代世界級網站的基礎 |
-| [Java內容儲存庫](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) | JCR 2.0版規範 |
+| [Java內容儲存庫](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | JCR 2.0版規範 |
 | [阿帕奇費利克斯](https://felix.apache.org) | 開放服務網關計畫(OSGi)框架和服務平台的實施 |
 
 ## API偏好設定准則 {#guidelines}

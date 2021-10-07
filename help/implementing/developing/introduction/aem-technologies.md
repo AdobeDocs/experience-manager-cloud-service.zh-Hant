@@ -2,14 +2,14 @@
 title: AEM技術基礎
 description: 概述AEM的技術基礎，包括AEM的結構方式和基本技術（例如JCR、Sling和OSGi）。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 8ba7968ee7f4d3c808740054bf841dbaf9dd4254
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
 
-# AEM技術基礎{#aem-technical-foundations}
+# AEM技術基礎 {#aem-technical-foundations}
 
 AEM是以經驗證、可擴充且靈活的技術為基礎而打造的強大平台。 本檔案詳細說明組成AEM的各個部件，並打算作為完整堆疊AEM開發人員的技術附錄。 這不是快速入門手冊。 若您為AEM開發的新手，請參閱[開發AEM Sites快速入門 — WKND教學課程](develop-wknd-tutorial.md)，作為第一步。
 
@@ -32,25 +32,25 @@ AEM是以經驗證、可擴充且靈活的技術為基礎而打造的強大平�
 * Sling
 * OSGi
 
-## Java內容儲存庫{#java-content-repository}
+## Java內容儲存庫 {#java-content-repository}
 
-Java內容儲存庫(JCR)標準[JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)指定了獨立於供應商和獨立於實施的方式，以在內容儲存庫的精細級別上雙向訪問內容。 Adobe研究（瑞士）AG持有規格領頭。
+Java內容儲存庫(JCR)標準[JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)指定了獨立於供應商和獨立於實施的方式，以在內容儲存庫的精細級別上雙向訪問內容。 Adobe研究（瑞士）AG持有規格領頭。
 
-[JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)套件`javax.jcr.*`用於直接存取和操作存放庫內容。
+[JCR API 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)套件`javax.jcr.*`用於直接存取和操作存放庫內容。
 
 AEM建置在JCR上。
 
-## Apache Jackrabbit Oak {#jackrabbit-oak}
+## 阿帕奇傑克拉布特橡樹 {#jackrabbit-oak}
 
 [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/) 為可擴充且高效能的階層式內容存放庫之實作，以作為現代世界級網站及其他苛刻內容應用程式之基礎，符合JCR標準。
 
 Jackrabbit Oak（也稱為Oak）是建置AEM所依據之JCR標準的實作。
 
-## Sling要求處理{#sling-request-processing}
+## Sling要求處理 {#sling-request-processing}
 
 AEM是使用[Sling](https://sling.apache.org/site/index.html)建立的，這是一個基於REST原則的Web應用程式框架，可以輕鬆開發麵向內容的應用程式。 Sling使用JCR存放庫（例如Apache Jackrabbit Oak）作為其資料存放區。 Sling已對Apache Software Foundation作出貢獻 — 如需詳細資訊，請參閱Apache。
 
-### Sling {#introduction-to-sling}簡介
+### Sling簡介 {#introduction-to-sling}
 
 使用Sling時，要轉譯的內容類型不是第一個處理考量。 相反，主要考量是URL是否解析至內容物件，接著便找到指令碼來執行轉譯。 這為網頁內容作者提供絕佳的支援，以建立可輕鬆根據其需求自訂的頁面。
 
@@ -66,7 +66,7 @@ AEM是使用[Sling](https://sling.apache.org/site/index.html)建立的，這是�
 
 ![使用SlingPostServlet](assets/sling-cheatsheet-02.png)
 
-### Sling以內容為中心{#sling-is-content-centric}
+### Sling以內容為中心 {#sling-is-content-centric}
 
 Sling是&#x200B;*內容中心*。 這表示處理作業會聚焦在內容上，因為每個(HTTP)請求會以JCR資源（存放庫節點）的形式對應至內容：
 
@@ -82,7 +82,7 @@ Sling是&#x200B;*內容中心*。 這表示處理作業會聚焦在內容上，�
    * 其他內容管理框架可能需要URL結構、業務對象、資料庫架構才能訪問資源。
    * 使用Sling時，此功能會簡化為：URL =資源= JCR結構
 
-### URL分解{#url-decomposition}
+### URL分解 {#url-decomposition}
 
 在Sling中，處理是由使用者要求的URL驅動。 這會定義要由適當指令碼顯示的內容。 為此，會從URL中擷取資訊。
 
@@ -106,7 +106,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 * **尾碼**  — 可用來指定其他資訊
 * **參數**  — 動態內容所需的任何參數
 
-#### 從URL到內容和指令碼{#from-url-to-content-and-scripts}
+#### 從URL到內容和指令碼 {#from-url-to-content-and-scripts}
 
 使用URL分解的原則：
 
@@ -119,7 +119,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 使用Sling時，您可以指定哪個指令碼會轉譯特定實體（透過在JCR節點中設定`sling:resourceType`屬性）。 此機制提供的自由比指令碼訪問資料實體（PHP指令碼中的SQL陳述式會這樣做）的自由多，因為資源可以有多個格式副本。
 
-#### 將請求映射到資源{#mapping-requests-to-resources}
+#### 將請求對應至資源 {#mapping-requests-to-resources}
 
 會劃分要求並擷取必要資訊。 系統會搜索所請求的資源（內容節點）:
 
@@ -129,7 +129,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 Sling也允許JCR節點以外的其他項目成為資源，但這是進階功能。
 
-### 找到指令碼{#locating-the-script}
+### 找到指令碼 {#locating-the-script}
 
 找到適當的資源（內容節點）時，會擷取&#x200B;**sling資源類型**。 這是路徑，可找出要用於轉譯內容的指令碼。
 
@@ -170,7 +170,7 @@ Sling也允許JCR節點以外的其他項目成為資源，但這是進階功能
    * 例如，`../content/corporate/jobs/developer.html`的指令碼會在`/apps/content/corporate/jobs/`中產生搜尋。
    * 將使用主節點類型。
 * 如果完全找不到指令碼，則將使用預設指令碼。
-   * 預設轉譯目前支援為純文字(`.txt`)、HTML(`.html`)和JSON(`.json`)，所有這些都將列出節點的屬性（適當的格式化）。 副檔名`.res`或沒有請求副檔名的請求的預設轉譯是將資源轉存（如果可能）。
+   * 預設格式副本目前支援為純文字(`.txt`)、HTML(`.html`)和JSON(`.json`)，所有格式副本都會列出節點的屬性（適當的格式）。 副檔名`.res`或沒有請求副檔名的請求的預設轉譯是將資源轉存（如果可能）。
 * 若是http錯誤處理（程式碼403或404）,Sling會在下列任一位置尋找指令碼：
    * 自定義指令碼的位置`/apps/sling/servlet/errorhandler`
    * 或標準指令碼`/libs/sling/servlet/errorhandler/404.jsp`的位置
@@ -228,7 +228,7 @@ Sling也允許JCR節點以外的其他項目成為資源，但這是進階功能
 
 這是因為`/y`具有`sling:resourceSuperType`屬性，而`/x`沒有，因此其超類型取自於其資源類型。
 
-#### 無法直接呼叫Sling指令碼{#sling-scripts-cannot-be-called-directly}
+#### 無法直接呼叫Sling指令碼 {#sling-scripts-cannot-be-called-directly}
 
 在Sling中，無法直接呼叫指令碼，因為這會打破REST伺服器的嚴格概念；你會混合資源和陳述。
 
@@ -243,7 +243,7 @@ Sling也允許JCR節點以外的其他項目成為資源，但這是進階功能
 
 這會使用Sling API套件、`org.apache.sling.*`和標籤程式庫。
 
-### 使用sling:include {#referencing-existing-elements-using-sling-include}參考現有元素
+### 使用sling:include參考現有元素 {#referencing-existing-elements-using-sling-include}
 
 最後考量是必須參考指令碼內的現有元素。
 
@@ -280,9 +280,9 @@ OSGi(Open Services Gateway Initiative)定義了用於開發和部署模組化應
 * 查看當前狀態
 * 存取有關特定套件組合的更詳細資訊（例如符號名稱、版本、位置等）
 
-如需詳細資訊，請參閱[為AEM設定OSGi作為Cloud Service](/help/implementing/deploying/configuring-osgi.md) 。
+如需詳細資訊，請參閱[為AEMas a Cloud Service配置OSGi](/help/implementing/deploying/configuring-osgi.md) 。
 
-## 儲存庫{#structure-within-the-repository}內的結構
+## 存放庫內的結構 {#structure-within-the-repository}
 
 下列清單提供您在存放庫中會看到的結構概述。
 
