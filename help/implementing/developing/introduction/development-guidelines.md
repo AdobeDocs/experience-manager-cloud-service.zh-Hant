@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 開發方針
 description: AEM as a Cloud Service 開發方針
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: bcb3beb893d5e8aa6d5911866e78cb72fe7d4ae0
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 2%
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -169,6 +169,68 @@ AEMas a Cloud Service不支援從「發佈」反向復寫至「作者」。 如�
 
 Adobe會監控應用程式效能，並採取措施，以在出現惡化時加以處理。 目前無法查看應用程式量度。
 
+## 專用輸出IP地址 {#dedicated-egress-ip-address}
+
+應要求，AEM as a Cloud Service將為以Java程式碼寫程式的HTTP（埠80）和HTTPS（埠443）傳出流量布建靜態的專用IP位址。
+
+### 優點 {#benefits}
+
+此專用IP位址可在與SaaS廠商（如CRM廠商）整合，或AEMas a Cloud Service以外的其他整合（提供允許的IP位址清單）時，增強安全性。 將專用IP位址新增至允許清單，可確保只有來自客戶AEM Cloud Service的流量才可流入外部服務。 這是除了允許來自任何其他IP的流量以外。
+
+若未啟用專用IP位址功能，來自AEMas a Cloud Service的流量會透過與其他客戶共用的一組IP來流動。
+
+### 設定 {#configuration}
+
+若要啟用專用IP位址，請向客戶支援人員提交請求，由客戶支援人員提供IP位址資訊。 如果新環境在初始要求後需要功能，要求應指定每個環境，並提出其他要求。 不支援沙箱方案環境。
+
+### 功能使用 {#feature-usage}
+
+若Java系統屬性用於Proxy設定，則此功能與會產生傳出流量的Java程式碼或程式庫相容。 實際上，這應包含最常見的程式庫。
+
+以下是程式碼範例：
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+  URLConnection connection = finalUrl.openConnection();
+  connection.addRequestProperty("Accept", "application/json");
+  connection.addRequestProperty("X-API-KEY", apiKey);
+
+  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
+    return new JSONObject(new JSONTokener(responseReader));
+  }
+}
+```
+
+有些程式庫需要明確的設定，才能將標準Java系統屬性用於Proxy設定。
+
+使用Apache HttpClient的範例，此範例需要明確呼叫
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html)或使用
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
+  HttpGet request = new HttpGet(finalUrl.toURI());
+  request.setHeader("Accept", "application/json");
+  request.setHeader("X-API-KEY", apiKey);
+  HttpResponse response = httpClient.execute(request);
+  String result = EntityUtils.toString(response.getEntity());
+}
+```
+
+同一專用IP會套用至其Adobe組織中的所有客戶方案，以及每個客戶方案中的所有環境。 它適用於製作和發佈服務。
+
+僅支援HTTP和HTTPS埠。 這包括HTTP/1.1，以及加密時的HTTP/2。
+
+### 除錯考量事項 {#debugging-considerations}
+
+若要驗證流量是否確實在預期的專用IP位址上傳出，請檢查目的地服務的記錄（若有）。 否則，呼叫[https://ifconfig.me/ip](https://ifconfig.me/ip)等偵錯服務可能會很有用，這會傳回呼叫IP位址。
+
 ## 傳送電子郵件 {#sending-email}
 
 AEMas a Cloud Service需要加密傳出郵件。 以下各節說明如何要求、設定及傳送電子郵件。
@@ -177,19 +239,20 @@ AEMas a Cloud Service需要加密傳出郵件。 以下各節說明如何要求�
 >
 >可以使用OAuth2支援來設定郵件服務。 如需詳細資訊，請參閱[OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md)。
 
-### 啟用傳出電子郵件 {#enabling-outbound-email}
+### 請求存取 {#requesting-access}
 
-預設情況下，用於發送的埠將被禁用。 要激活它，請配置[高級網路](/help/security/configuring-advanced-networking.md)，確保為每個所需環境設定`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`端點的埠轉發規則，以便流量可以通過埠465（如果郵件伺服器支援）或埠587（如果郵件伺服器要求），並且也在該埠上強制執行TLS。
+依預設，會停用傳出電子郵件。 要激活它，請提交支援票證，具體包括：
 
-建議使用設為`flexiblePortEgress`的`kind`參數配置高級網路，因為Adobe可以優化靈活埠輸出通信的效能。 如果需要唯一的輸出IP地址，請選擇`dedicatedEgressIp`的`kind`參數。 如果您出於其他原因已配置了VPN，則也可以使用該高級網路變化提供的唯一IP地址。
-
-您必須通過郵件伺服器發送電子郵件，而不是直接發送給電子郵件客戶端。 否則，電子郵件可能會遭到封鎖。
+1. 郵件伺服器的完全限定域名（例如`smtp.sendgrid.net`）
+1. 要使用的埠。 如果郵件伺服器支援，它應為埠465，否則為埠587。 請注意，埠587隻能在郵件伺服器要求並強制該埠上的TLS時使用
+1. 想要寄出之環境的方案ID和環境ID
+1. 作者、發佈或兩者都需要SMTP存取權。
 
 ### 傳送電子郵件 {#sending-emails}
 
 應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，且必須將電子郵件傳送至支援請求中指出的郵件伺服器，而非直接傳送給收件者。
 
-AEMas a Cloud Service需要通過埠465發送郵件。 如果郵件伺服器不支援埠465，則只要啟用TLS選項，就可以使用埠587。
+AEM CS要求透過連接埠465發送郵件。 如果郵件伺服器不支援埠465，則只要啟用TLS選項，就可以使用埠587。
 
 >[!NOTE]
 >
@@ -212,8 +275,6 @@ AEM中的電子郵件應使用[Day CQ Mail Service OSGi服務](https://experienc
 * 將`smtp.ssl`設為&lt;a1/`false`
 
 `smtp.starttls`屬性將在運行時由AEMas a Cloud Service自動設定為適當的值。 因此，如果`smtp.tls`設為true，則會忽略`smtp.startls`。 如果將`smtp.ssl`設為false，則將`smtp.starttls`設為true。 無論在OSGI設定中設定的`smtp.starttls`值為何。
-
-Mail Service可選擇配置OAuth2支援。 如需詳細資訊，請參閱[OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md)。
 
 ## [!DNL Assets] 開發指南和使用案例 {#use-cases-assets}
 

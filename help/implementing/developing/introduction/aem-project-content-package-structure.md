@@ -2,9 +2,9 @@
 title: AEM 專案結構
 description: 了解如何定義部署至Adobe Experience ManagerCloud Service的套件結構。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 6548e05850d5499f1ce7d1f23f2cea2adb9d06fd
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2880'
 ht-degree: 12%
 
 ---
@@ -148,7 +148,7 @@ Oak索引(`/oak:index`)是由AEMas a Cloud Service部署程式特別管理。 �
 + 內容（可變）包必須將其`packageType`設定為`content`。
 
 
-如需詳細資訊，請參閱下方的[Apache Jackrabbit FileVault - Package Maven外掛程式檔案](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType)及[FileVault Maven設定片段](#marking-packages-for-deployment-by-adoube-cloud-manager)。
+如需詳細資訊，請參閱下方的[Apache Jackrabbit FileVault - Package Maven外掛程式檔案](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType)及[FileVault Maven設定程式碼片段](#marking-packages-for-deployment-by-adoube-cloud-manager)。
 
 >[!TIP]
 >
@@ -269,7 +269,7 @@ Repo Init OSGi設定最好以[`.config` OSGi設定格式](https://sling.apache.o
 
 ## 嵌入第三方包 {#embedding-3rd-party-packages}
 
-所有包都必須通過[Adobe的公用Maven對象儲存庫](https://repo1.maven.org/maven2/com/adobe/)或可訪問的可引用的公用第三方Maven對象儲存庫來使用。
+所有包都必須通過[Adobe的公用Maven對象儲存庫](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)或可訪問的可引用的公用第三方Maven對象儲存庫來使用。
 
 如果第三方套件位於 **Adobe的公用Maven工件存放庫**，則Adobe Cloud manager無需進一步設定即可解析工件。
 

@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: aa5d529b132a4ff517950192a81a13c05fe92b4c
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '4897'
+source-wordcount: '4898'
 ht-degree: 6%
 
 ---
@@ -157,7 +157,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 產生器 | 建立者：約翰 |
 | 位置 | 位置：不適用 |
 | 說明 | 說明：&quot;範例影像&quot; |
-| 建立者工具 | 建立工具：&quot;Adobe Photoshop&quot; |
+| 建立者工具 | 建立工具：「Adobe Photoshop CC 2015」 |
 | 版權擁有者 | 版權人：&quot;Adobe Systems&quot; |
 | 參與者 | 貢獻者：John |
 | 使用條款 | 使用條款：「保留CopyRights」 |

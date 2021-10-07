@@ -5,10 +5,10 @@ breadcrumb-title: 安全性指南
 user-guide-description: 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。
 feature: Configuring
 role: Admin
-source-git-commit: 3993e5575d87e403acaff333f33a452135430a80
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 52%
+source-wordcount: '61'
+ht-degree: 60%
 
 ---
 
@@ -16,7 +16,6 @@ ht-degree: 52%
 # 安全性 {#security}
 
 + [AEM as a Cloud Service 安全性](/help/security/home.md)
-+ [配置AEMas a Cloud Service的高級網路](/help/security/configuring-advanced-networking.md)
 + [AEM安全性概述as a Cloud Service](/help/security/cloud-service-security-overview.md)
 + [AEM as a Cloud Service 的 IMS 支援](ims-support.md)
 + [AEM支援的相同網站Cookieas a Cloud Service](/help/security/same-site-cookie-support.md)

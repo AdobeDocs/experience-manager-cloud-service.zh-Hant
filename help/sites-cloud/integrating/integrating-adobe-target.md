@@ -4,9 +4,9 @@ description: '整合 Adobe Target '
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1036'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 作為Adobe Marketing Cloud的一部分，Adobe Target可讓您透過鎖定目標並測量所有管道，來提升內容相關性。 整合Adobe Target和AEMas a Cloud Service需要：
 
 * 使用觸控式UI在AEMas a Cloud Service中建立Target設定（需要IMS設定）。
-* 在[AdobeLaunch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)中新增並設定Adobe Target為擴充功能。
+* 在[AdobeLaunch](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)中新增並設定Adobe Target為擴充功能。
 
 AdobeLaunch是管理AEM頁面（JS程式庫/標籤）中Analytics和Target的用戶端屬性的必要。 也就是說，「體驗鎖定目標」需要與Launch整合。 若要將體驗片段匯出至Target，您只需要Adobe Target設定和IMS。
 

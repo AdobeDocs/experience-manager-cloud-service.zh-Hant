@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 117d79b277118f39dfc442957989095bab5670b9
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 2%
+source-wordcount: '603'
+ht-degree: 3%
 
 ---
 
@@ -101,10 +101,6 @@ At the very start you need to enable Content Fragment Models for your site, this
 >
 >如果作者嘗試發佈模型尚未發佈的內容片段，選取清單會指出這點，且模型將會隨片段發佈。
 
-發佈模型後，就會在作者上將其&#x200B;*locked*&#x200B;鎖定至「唯讀」模式。 這可防止發生變更，導致現有GraphQL結構和查詢發生錯誤，尤其是在發佈環境中。 它在控制台中由&#x200B;**Locked**&#x200B;指示。
-
-當模型為&#x200B;**Locked**&#x200B;時（在「只讀」模式下），您可以查看模型的內容和結構，但無法直接編輯它們；不過，您可以從控制台或模型編輯器管理&#x200B;**鎖定的**&#x200B;模型。
-
 ## 下一步 {#whats-next}
 
 現在您已了解基本知識，接下來的步驟就是開始建立您自己的內容片段模型。
@@ -130,8 +126,6 @@ At the very start you need to enable Content Fragment Models for your site, this
       * [發佈內容片段模型](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
       * [取消發佈內容片段模型](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
-
-      * [鎖定（已發佈）內容片段模型](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * 快速入門手冊
 

@@ -2,7 +2,7 @@
 title: 使用Best Practices Analyzer
 description: 使用Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '2522'
 ht-degree: 42%
@@ -91,7 +91,6 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
 重新產生報表時，會以完成百分比顯示進度，如下圖所示。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
-
 
 
 #### 在Best Practices Analyzer報表中使用篩選器 {#bpa-filters}
