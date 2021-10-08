@@ -1,39 +1,32 @@
 ---
-title: AEM as aCloud Service中的維護任務
-description: AEM as aCloud Service中的維護任務
+title: AEM中的維護任務as a Cloud Service
+description: AEM中的維護任務as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 22228ebfbc754551f93907502c53427ba43983b3
+source-git-commit: 3e0de69033883bb77fae5be83d47167663bea3fd
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '940'
 ht-degree: 2%
 
 ---
 
-# AEM as aCloud Service中的維護任務
+# AEM中的維護任務as a Cloud Service
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
 >title="維護任務"
->abstract="維護任務是按計畫運行以優化儲存庫的進程。 以AEM為Cloud Service，客戶配置維護任務的操作屬性的需求極低。 客戶可以將資源集中在應用程式級別的問題上，使基礎架構操作留待Adobe。"
->additional-url="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html" text="AEM維護指南"
->additional-url="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks" text="操作儀表板維護任務"
+>abstract="維護任務是按計畫運行以優化儲存庫的進程。 使用AEMas a Cloud Service，客戶配置維護任務的操作屬性的需求非常小。 客戶可以將資源集中在應用程式級別的問題上，使基礎架構操作留待Adobe。"
 
-維護任務是按計畫運行以優化儲存庫的進程。 以AEM為Cloud Service，客戶配置維護任務的操作屬性的需求極低。 客戶可以將資源集中在應用程式級別的問題上，使基礎架構操作留待Adobe。
-
-有關維護任務的其他資訊，請參閱以下頁面：
-
-* [AEM維護指南](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)
-* [操作儀表板維護任務](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks)
+維護任務是按計畫運行以優化儲存庫的進程。 使用AEMas a Cloud Service，客戶配置維護任務的操作屬性的需求非常小。 客戶可以將資源集中在應用程式級別的問題上，使基礎架構操作留待Adobe。
 
 ## 配置維護任務
 
-在舊版AEM中，您可以使用維護卡（工具>操作>維護）來設定維護任務。 對於AEM as aCloud Service，維護卡已不再提供，因此應使用Cloud Manager將設定提交至原始碼控制並部署。 Adobe將管理不需要客戶決策的維護任務（例如，資料儲存垃圾回收），而客戶可以配置其他維護任務（請參閱下表）。
+在舊版AEM中，您可以使用維護卡（工具>操作>維護）來設定維護任務。 若為AEMas a Cloud Service，維護卡將不再提供，因此應使用Cloud Manager將設定提交至原始碼控制並部署。 Adobe將管理不需要客戶決策的維護任務（例如，資料儲存垃圾回收），而客戶可以配置其他維護任務（請參閱下表）。
 
 >[!CAUTION]
 >
 >Adobe保留覆寫客戶維護任務配置設定的權利，以緩解效能降低等問題。
 
-下表說明AEM as aCloud Service發行時可用的維護任務。
+下表說明AEM as a Cloud Service發行時可用的維護任務。
 
 | 維護任務 | 誰擁有配置 | 如何配置（可選） |
 |---|---|---|
