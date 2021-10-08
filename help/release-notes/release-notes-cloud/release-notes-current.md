@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: cf5fd3f483876eab8e9ec7bf22fae5dd1c6aa147
+source-git-commit: 5f80ad85ddf9ffdda7cd975d00699eb5085d2365
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1476'
 ht-degree: 3%
 
 ---
@@ -75,13 +75,13 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **輕鬆連接AEM Forms與Microsoft Dynamics和Salesforce**:此服務提供Microsoft Dynamics和Salesforce的現成資料來源設定和資料模型，讓開發 [人員能更快速更輕鬆地將Microsoft Dynamics和Salesforce設定為最適化表單的資料來源](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en)。
 
-* **使用DocuSign對適用性表單進行電子簽署：** 您可以使用DocuSign對適用性表單進行電子簽署。此服務提供自訂提交動作，以搭配最適化表單使用DocuSign。 您可以安裝Software Distribution上可用的套件，以匯入提交動作。
+* **使用DocuSign對適用性表單進行電子簽署：** 您可以使用DocuSign對適用性表單進行電子簽署。此服務提供自訂提交動作，以搭配最適化表單使用DocuSign。
 
 ### [!DNL Forms]的Beta功能 {#sep-what-is-new-forms-prerelease}
 
-* **統一儲存連接器：** 使用統一儲存連接器將客戶管理的儲存庫中的處理中資料外部化。例如，您可以
-   * 啟用Forms Portal的儲存和繼續功能，並將最適化表單草稿儲存在客戶管理的資料存放庫中。
-   * 儲存在客戶管理存放庫中包含敏感個人資料(SPD)的AEM工作流程資料(AEM工作流程變數資料)。
+* **統一儲存連接器：** 使用統一儲存連接器將客戶管理的儲存庫中的處理中資料外部化。例如，您可以將包含敏感個人資料(SPD)的處理中AEM工作流程資料(AEM工作流程變數資料)儲存在客戶管理的存放庫中。
+
+   <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [通](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) 訊API可以結合XDP範本和XML資料，以產生各種格式的列印檔案。此服務可讓您以同步模式產生檔案。 API可讓您建立應用程式，以便您：
    * 使用XML資料填入範本檔案，以產生檔案。
