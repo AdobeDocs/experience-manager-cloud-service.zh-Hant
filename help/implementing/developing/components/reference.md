@@ -1,17 +1,17 @@
 ---
 title: 元件參考指南
-description: 元件及其結構的詳細資訊開發人員參考指南
+description: A developer reference guide to the details of components and their structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '3659'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 元件參考指南{#components-reference-guide}
+# 元件參考指南 {#components-reference-guide}
 
-元件是在AEM中建立體驗的核心。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)可讓您輕鬆開始使用一組現成的強大元件。 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)引導開發人員了解如何使用這些工具以及如何建立自訂元件以建立新的AEM網站。
+元件是在AEM中建立體驗的核心。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)可讓您輕鬆開始使用一組現成的強大元件。 The [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) takes the developer through how to use these tools and how to build custom components in order to create a new AEM site.
 
 >[!TIP]
 >
@@ -35,27 +35,27 @@ ht-degree: 1%
    * CSS格式應與元件定義分開。 定義命名HTML元素的慣例，以便透過外部CSS檔案修改它們。
 * 您的新元件可能會帶來哪些安全性影響？
 
-### 重複使用現有元件{#reusing-components}
+### 重複使用現有元件 {#reusing-components}
 
 在您花時間建立全新元件之前，請考慮自訂或擴充現有元件。 [核心元](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 件提供一套靈活、強大且經過良好測試的生產就緒元件。
 
-#### 擴展核心元件{#extending-core-components}
+#### 擴充核心元件 {#extending-core-components}
 
 核心元件也提供[清除自訂模式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)，供您用來調整它們以符合自己專案的需求。
 
-#### 覆蓋元件{#overlying-components}
+#### 覆蓋元件 {#overlying-components}
 
 元件也可以根據搜尋路徑邏輯以[覆蓋](/help/implementing/developing/introduction/overlays.md)重新定義。 但在此情況下，將不會觸發[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md)，且`/apps`必須定義整個覆蓋。
 
-#### 擴展元件對話框{#extending-component-dialogs}
+#### 擴展元件對話框 {#extending-component-dialogs}
 
 您也可以使用Sling Resource Merger並定義屬性`sling:resourceSuperType`來覆寫元件對話方塊。
 
 這表示您只需重新定義所需的差異，而不需要重新定義整個對話框。
 
-### 內容邏輯和呈現標籤{#content-logic-and-rendering-markup}
+### 內容邏輯和呈現標籤  {#content-logic-and-rendering-markup}
 
-元件將以[HTML呈現。](https://www.w3schools.com/htmL/html_intro.asp) 元件需要定義HTML，以取得所需內容，然後在製作和發佈環境中視需要呈現。
+您的元件將以[HTML呈現。](https://www.w3schools.com/htmL/html_intro.asp) 您的元件需要定義取得必要內容所需的HTML，然後在製作和發佈環境中視需要呈現。
 
 建議您將負責標籤和轉譯的程式碼與控制用來選取元件內容之邏輯的程式碼分開。
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 * 使用Java - [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html)可讓HTL檔案存取自訂Java類別中的Helper方法。 這可讓您使用Java程式碼來實作邏輯，以選取和設定元件內容。
 * 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html)可讓HTL檔案存取以JavaScript撰寫的協助程式碼。 這可讓您使用JavaScript程式碼來實作邏輯，以選取和設定元件內容。
-* 使用用戶端資料庫 — 現代化網站嚴重依賴於由複雜JavaScript和CSS程式碼驅動的用戶端處理。 如需詳細資訊，請參閱檔案[在AEM上使用用戶端程式庫作為Cloud Service](/help/implementing/developing/introduction/clientlibs.md) 。
+* 使用用戶端資料庫 — 現代化網站嚴重依賴於由複雜JavaScript和CSS程式碼驅動的用戶端處理。 如需詳細資訊，請參閱AEMas a Cloud Service的檔案[使用用戶端程式庫](/help/implementing/developing/introduction/clientlibs.md)。
 
 ## 元件結構 {#structure}
 
@@ -86,7 +86,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 
 這是抽象，有助於確保即使外觀和感覺隨時間而改變，意圖仍會維持。
 
-### 元件定義{#component-definition}
+### 元件定義 {#component-definition}
 
 元件的定義可依下列方式劃分：
 
@@ -98,22 +98,22 @@ AEM元件的結構既強大又靈活。 主要部分為：
    * 資源 — 這些定義元件使用的靜態元素。
    * 指令碼 — 這些指令碼用於實作元件之產生例項的行為。
 
-#### 重要屬性{#vital-properties}
+#### Vital Properties {#vital-properties}
 
 * **根節點**:
-   * `<mycomponent> (cq:Component)`  — 元件的階層節點。
+   * `<mycomponent> (cq:Component)` - Hierarchy node of the component.
 * **重要屬性**:
    * `jcr:title`  — 元件標題；例如，元件在元件瀏覽器和元件控制台中列出時， [會](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 作為 [標籤使用](/help/sites-cloud/authoring/features/components-console.md)
    * `jcr:description`  — 元件的說明；在元件瀏覽器和元件主控台中，作為滑鼠移過提示使用
-   * 如需詳細資訊，請參閱[元件圖示](#component-icon)一節
-* **重要子節點**:
+   * See the section [Component Icon](#component-icon) for details
+* **Vital Child Nodes**:
    * `cq:editConfig (cq:EditConfig)`  — 定義元件的編輯屬性，並使元件顯示在「元件瀏覽器」中
       * 如果元件有對話方塊，則會自動顯示在「元件」瀏覽器或Sidekick中，即使cq:editConfig不存在亦然。
    * `cq:childEditConfig (cq:EditConfig)`  — 控制未定義子元件的製作UI方面。  `cq:editConfig`
    * `cq:dialog (nt:unstructured)`  — 此元件的對話框。定義介面，讓使用者設定元件和/或編輯內容。
    * `cq:design_dialog (nt:unstructured)`  — 編輯此元件的設計
 
-#### 元件表徵圖{#component-icon}
+#### 元件圖示 {#component-icon}
 
 當開發人員建立元件時，元件的圖示或縮寫會透過元件的JCR屬性定義。 這些屬性的計算順序如下，並使用找到的第一個有效屬性。
 
@@ -143,7 +143,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 
 [元件控制台](/help/sites-cloud/authoring/features/components-console.md#component-details)顯示如何定義特定元件的表徵圖。
 
-#### SVG表徵圖示例{#svg-icon-example}
+#### SVG圖示範例 {#svg-icon-example}
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -157,7 +157,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 </svg>
 ```
 
-### 元件{#properties-and-child-nodes-of-a-component}的屬性和子節點
+### 元件的屬性和子節點 {#properties-and-child-nodes-of-a-component}
 
 定義元件所需的許多節點/屬性在兩個UI中都很常見，差異仍獨立，因此您的元件可在兩個環境中運作。
 
@@ -181,17 +181,17 @@ AEM元件的結構既強大又靈活。 主要部分為：
 | `component.html` | `nt:file` | 這是元件的HTL指令碼檔案。 |
 | `cq:icon` | `String` | 此值指向元件](#component-icon)的[表徵圖，並顯示在元件瀏覽器中。 |
 
-如果查看&#x200B;**Text**&#x200B;元件，我們會看到以下幾個元素：
+If we look at the **Text** component, we can see a number of these elements:
 
-![文字元件結構](assets/components-text.png)
+![Text Component structure](assets/components-text.png)
 
-特定權益物業包括：
+Properties of particular interest include:
 
 * `jcr:title`  — 這是元件瀏覽器中用於識別元件的元件標題。
 * `jcr:description`  — 此為元件的說明。
-* `sling:resourceSuperType`  — 這表示延伸元件時（透過覆寫定義）的繼承路徑。
+* `sling:resourceSuperType` - This indicates the path of inheritance when extending a component (by overriding a definition).
 
-特別感興趣的子節點包括：
+Child nodes of particular interest include:
 
 * `cq:editConfig`  — 這會在編輯時控制元件的視覺效果。
 * `cq:dialog`  — 這會定義編輯此元件內容的對話方塊。
@@ -207,7 +207,7 @@ AEM元件的對話方塊：
 
 * 是`nt:unstructured`類型的`cq:dialog`節點。
 * 位於其`cq:Component`節點下，且位於其元件定義旁。
-* 定義用於編輯此元件的內容的對話框。
+* 定義用於編輯此元件內容的對話框。
 * 是使用Granite UI元件來定義。
 * 會根據其內容結構和`sling:resourceType`屬性，在伺服器端轉譯（作為Sling元件）。
 * 包含描述對話框內欄位的節點結構
@@ -219,7 +219,7 @@ AEM元件的對話方塊：
 
 ![標題元件對話框定義的欄位](assets/components-title-dialog-items.png)
 
-### 設計對話框{#design-dialogs}
+### 設計對話方塊 {#design-dialogs}
 
 設計對話方塊與用來編輯和設定內容的對話方塊類似，但提供範本作者的介面，以在頁面範本上預先設定並提供該元件的設計詳細資料。 內容作者接著會使用頁面範本來建立內容頁面。 如需如何建立範本的詳細資訊，請參閱[範本檔案](/help/sites-cloud/authoring/features/templates.md)。
 
@@ -238,7 +238,7 @@ Granite UI提供在製作環境中建立對話方塊所需的大量基本Widget�
 
 * [AEM UI的結構](/help/implementing/developing/introduction/ui-structure.md)
 
-### 自定義對話框欄位{#customizing-dialog-fields}
+### 自訂對話方塊欄位 {#customizing-dialog-fields}
 
 <!--
 Content not found
@@ -258,7 +258,7 @@ Content not found
 
 建立資源類型後，可以在對話方塊中新增新節點，並使用引用您剛引入的資源類型的屬性`sling:resourceType`來實例化欄位。
 
-#### 對對話框欄位的訪問{#access-to-dialog-fields}
+#### 對對話框欄位的訪問 {#access-to-dialog-fields}
 
 您也可以使用呈現條件(`rendercondition`)來控制誰有權存取對話方塊中的特定索引標籤/欄位；例如：
 
@@ -270,17 +270,17 @@ Content not found
     - groups = ["administrators"]
 ```
 
-## 使用元件{#using-components}
+## 使用元件 {#using-components}
 
 建立元件後，您必須啟用它，才能使用它。 使用它，可顯示元件的結構與儲存庫中產生內容的結構有何關係。
 
-### 將元件添加到模板{#adding-your-component-to-the-template}
+### 將元件新增至範本 {#adding-your-component-to-the-template}
 
 定義元件後，必須將其提供使用。 要使元件在模板中可用，必須在模板的佈局容器的策略中啟用該元件。
 
 如需如何建立範本的詳細資訊，請參閱[範本檔案](/help/sites-cloud/authoring/features/templates.md)。
 
-### 元件及其建立的內容{#components-and-the-content-they-create}
+### 元件及其建立的內容 {#components-and-the-content-they-create}
 
 如果我們在頁面上建立並設定&#x200B;**Title**&#x200B;元件的例項：`/content/wknd/language-masters/en/adventures/extreme-ironing.html`
 
@@ -297,13 +297,13 @@ Content not found
 
 定義的屬性取決於個別定義。 儘管它們可能比高一些，但它們仍遵循著同樣的基本原則。
 
-## 元件層次結構和繼承{#component-hierarchy-and-inheritance}
+## 元件階層和繼承 {#component-hierarchy-and-inheritance}
 
 AEM內的元件受&#x200B;**資源類型階層**&#x200B;的約束。 這可用來使用屬性`sling:resourceSuperType`擴充元件。 這可讓元件繼承其他元件。
 
 如需詳細資訊，請參閱[重複使用元件](#reusing-components)一節。
 
-## 編輯行為{#edit-behavior}
+## 編輯行為 {#edit-behavior}
 
 本節說明如何設定元件的編輯行為。 這包括可用於元件的動作、in.place編輯器的特性，以及與元件上的事件相關的監聽器等屬性。
 
@@ -317,9 +317,9 @@ AEM內的元件受&#x200B;**資源類型階層**&#x200B;的約束。 這可用�
 
 AEM中有許多現有設定。 使用&#x200B;**CRXDE Lite**&#x200B;中的「查詢」工具，可以輕鬆搜索特定屬性或子節點。
 
-### 元件佔位符{#component-placeholders}
+### 元件預留位置 {#component-placeholders}
 
-元件必須一律轉譯作者可看見的某些HTML，即使元件沒有內容亦然。 否則，它可能會從編輯器的介面中以視覺化方式消失，從技術上而言，它會呈現在頁面上，但在編輯器中則隱藏。 在這種情況下，作者將無法選取空白元件並與其互動。
+元件必須一律呈現作者可看見的某些HTML，即使元件沒有內容亦然。 否則，它可能會從編輯器的介面中以視覺化方式消失，從技術上而言，它會呈現在頁面上，但在編輯器中則隱藏。 在這種情況下，作者將無法選取空白元件並與其互動。
 
 因此，只要元件在頁面編輯器中轉譯頁面時（當WCM模式為`edit`或`preview`時）未轉譯任何可見輸出，元件就應轉譯預留位置。
 預留位置的典型HTML標籤如下：
@@ -328,7 +328,7 @@ AEM中有許多現有設定。 使用&#x200B;**CRXDE Lite**&#x200B;中的「查�
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
 ```
 
-呈現上述預留位置HTML的一般HTL指令碼如下：
+轉譯上述預留位置HTML的典型HTL指令碼如下：
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
@@ -350,7 +350,7 @@ AEM中有許多現有設定。 使用&#x200B;**CRXDE Lite**&#x200B;中的「查�
 
 您可在核心元件[中查看此範本的使用範例，例如在標題元件中。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
-### 使用cq:EditConfig子節點{#configuring-with-cq-editconfig-child-nodes}進行配置
+### 使用cq:EditConfig子節點進行配置 {#configuring-with-cq-editconfig-child-nodes}
 
 #### 將資產拖曳至對話方塊 — cq:dropTargets {#cq-droptargets}
 
@@ -436,11 +436,11 @@ AEM中有許多現有設定。 使用&#x200B;**CRXDE Lite**&#x200B;中的「查�
         afterMove="REFRESH_PAGE"/>
 ```
 
-### 欄位驗證{#field-validation}
+### 欄位驗證 {#field-validation}
 
 Granite UI和Granite UI介面工具集中的欄位驗證是使用`foundation-validation` API完成。 如需詳細資訊，請參閱[`foundation-valdiation` Granite檔案](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html) 。
 
-### 檢測對話框{#dialog-ready}的可用性
+### 檢測對話框的可用性 {#dialog-ready}
 
 如果您有自訂JavaScript，只需在對話方塊可用且準備就緒時執行，則應監聽`dialog-ready`事件。
 
@@ -448,13 +448,13 @@ Granite UI和Granite UI介面工具集中的欄位驗證是使用`foundation-val
 
 `dialog-ready` 可用來在JavaScript自訂程式碼中連結，該程式碼會對對話方塊或類似工作中的欄位執行自訂。
 
-## 預覽行為{#preview-behavior}
+## 預覽行為 {#preview-behavior}
 
-切換至「預覽」模式時，即使未重新整理頁面，也會設定[WCM模式](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie。
+切換至「預覽」模式時，即使未重新整理頁面，也會設定[WCM模式](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie。
 
 對於呈現時對WCM模式敏感的元件，必須定義元件以明確重新整理元件，然後仰賴Cookie的值。
 
-## 記錄元件{#documenting-components}
+## 檔案元件 {#documenting-components}
 
 身為開發人員，您需要輕鬆存取元件檔案，以便快速了解元件的：
 

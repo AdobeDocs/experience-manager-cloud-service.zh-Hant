@@ -2,14 +2,14 @@
 title: 為查詢產生器實作自訂述詞求值器
 description: AEM中的查詢產生器提供簡單且可自訂的方式，可查詢內容存放庫
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# 為查詢產生器{#implementing-a-custom-predicate-evaluator-for-the-query-builder}實作自訂述詞求值器
+# 為查詢產生器實作自訂述詞求值器 {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
 本檔案說明如何實作自訂述詞求值器，以擴充[查詢產生器](query-builder-api.md)。
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 >
 >本檔案中提供的GitHub上此連結程式碼和程式碼片段僅供示範之用。
 
-### 詳細資訊{#predicate-evaluator-in-detail}中的謂語求值器
+### 詳細資訊中的謂語求值器 {#predicate-evaluator-in-detail}
 
 謂語求值器處理某些謂語的求值，這些謂語是查詢的定義約束。
 
@@ -52,9 +52,9 @@ ht-degree: 0%
 
 >[!TIP]
 >
->有關`PredicateEvaluator`和`com.day.cq.search`包的詳細資訊，請參閱[Java文檔](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html?com/day/cq/search/package-summary.html)。
+>有關`PredicateEvaluator`和`com.day.cq.search`包的詳細資訊，請參閱[Java文檔](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html)。
 
-### 為複製元資料{#implementing-a-custom-predicate-evaluator-for-replication-metadata}實作自訂述詞求值器
+### 為復寫中繼資料實作自訂述詞求值器 {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
 例如，本節說明如何建立自訂述詞求值器，以根據復寫中繼資料來協助資料：
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 * `cq:lastReplicatedBy` 會儲存觸發上次復寫動作之使用者的id
 * `cq:lastReplicationAction` 儲存上次復寫動作（例如「啟用」、「停用」）
 
-#### 使用預設謂詞求值器{#querying-replication-metadata-with-default-predicate-evaluators}查詢複製元資料
+#### 使用預設謂詞求值器查詢複製元資料 {#querying-replication-metadata-with-default-predicate-evaluators}
 
 以下查詢將讀取自年初起由`admin`激活的`/content`分支中的節點清單。
 
@@ -96,7 +96,7 @@ replic.action=Activate
 
 使用自訂述詞求值器將復寫中繼資料述詞分組，有助於建立有意義的查詢。
 
-#### 更新Maven依賴項{#updating-maven-dependencies}
+#### 更新Maven相依性 {#updating-maven-dependencies}
 
 >[!TIP]
 >
@@ -131,7 +131,7 @@ replic.action=Activate
 
 >[!NOTE]
 >
->以下過程說明如何構建`Xpath`表達式以篩選資料。 另一個選項是實作`includes`方法，以依列選取資料。 如需詳細資訊，請參閱[Java檔案](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。
+>以下過程說明如何構建`Xpath`表達式以篩選資料。 另一個選項是實作`includes`方法，以依列選取資料。 如需詳細資訊，請參閱[Java檔案](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。
 
 1. 建立擴展`com.day.cq.search.eval.AbstractPredicateEvaluator`的新Java類
 1. 使用`@Component`類似程式碼片段，以[統一差異格式](https://en.wikipedia.org/wiki/Diff#Unified_format)注釋類別
@@ -166,7 +166,7 @@ replic.action=Activate
 
    在覆寫方法中，您根據引數中提供的`Predicate`建立`Xpath`運算式。
 
-### 複製元資料的自定義謂詞求值器示例{#example-of-a-custom-predicate-evaluator-for-replication-metadata}
+### 復寫中繼資料的自訂謂語求值器範例 {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 
 此`PredicateEvaluator`的完整實施可能類似於以下類別。
 

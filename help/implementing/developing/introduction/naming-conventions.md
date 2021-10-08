@@ -2,9 +2,9 @@
 title: 命名慣例
 description: 儲存庫中的節點受Java內容儲存庫的命名慣例的約束
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 儲存庫中的節點受Java內容儲存庫的命名慣例的約束。 不過，AEM會對頁面節點名稱實施進一步的慣例。
 
-## 頁面的命名慣例{#naming-conventions-for-pages}
+## 頁面的命名慣例 {#naming-conventions-for-pages}
 
 這些命名慣例會在不同層級實作：
 
@@ -21,9 +21,9 @@ ht-degree: 0%
 * PageManager:[頁面管理器](#page-manager)提供頁面層級操作的方法。
 * 在AEM UI {#ui-behavior}內
 
-### JCR實用程式{#jcr-utilities}
+### JCR實用程式 {#jcr-utilities}
 
-[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis JCR公用程式的AEM實施。要驗證名稱，特別需要的是它所控制的字元映射，以及以下驗證：
+[](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis是JCR實用程式的AEM實施。要驗證名稱，特別需要的是它所控制的字元映射，以及以下驗證：
 
 * `isValidName`
    * 檢查名稱是否非空白，且僅包含有效字元。
@@ -32,11 +32,11 @@ ht-degree: 0%
    * 這會以任意字串建立有效標籤。
    * 它可用來從標題建立名稱。
 
-### 頁面管理器{#page-manager}
+### 頁面管理員 {#page-manager}
 
-[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) PageManager根據JCRUtil提供頁面層級操作 [的方法](#jcr-utilities)。
+[](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) PageManager根據JCRUtil [提供頁面層級操作](#jcr-utilities)的方法。
 
-### AEM UI行為{#ui-behavior}
+### AEM UI行為 {#ui-behavior}
 
 管理內容時，AEM UI:
 

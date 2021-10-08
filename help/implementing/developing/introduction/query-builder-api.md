@@ -2,9 +2,9 @@
 title: 查詢產生器 API
 description: 「資產共用查詢產生器」的功能是透過Java API和REST API公開。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 查詢產生器提供查詢AEM內容存放庫的簡單方式。 功能會透過Java API和REST API公開。 本檔案說明這些API。
 
-伺服器端查詢產生器([`QueryBuilder`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html))將接受查詢說明、建立並執行XPath查詢、選擇性篩選結果集，並視需要擷取Facet。
+伺服器端查詢產生器([`QueryBuilder`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html))將接受查詢說明、建立並執行XPath查詢、選擇性篩選結果集，並視需要擷取Facet。
 
-查詢說明只是一組謂語([`Predicate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/Predicate.html))。 例如，全文謂語，與XPath中的`jcr:contains()`函式對應。
+查詢說明只是一組謂語([`Predicate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html))。 例如，全文謂語，與XPath中的`jcr:contains()`函式對應。
 
-對於每個謂語類型，都有一個求值器元件([`PredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html))，它知道如何處理XPath、篩選和面向提取的特定謂語。 很容易建立自訂評估程式，這些評估程式會透過OSGi元件執行階段插入。
+對於每個謂語類型，都有一個求值器元件([`PredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html))，它知道如何處理XPath、篩選和面向提取的特定謂語。 很容易建立自訂評估程式，這些評估程式會透過OSGi元件執行階段插入。
 
 REST API可透過HTTP存取完全相同的功能，並在JSON中傳送回應。
 
@@ -25,13 +25,13 @@ REST API可透過HTTP存取完全相同的功能，並在JSON中傳送回應。
 >
 >QueryBuilder API是使用JCR API建置而成。 您也可以從OSGi套件組合內使用JCR API來查詢AEM JCR。 如需詳細資訊，請參閱[使用JCR API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)查詢Adobe Experience Manager資料。
 
-## Gem會話{#gem-session}
+## Gem會議 {#gem-session}
 
 [AEM ](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) GemsisAdobe專家對Adobe Experience Manager進行了一系列技術深入探討。
 
 您可以[檢閱查詢產生器](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html)專用的工作階段，以取得工具的概觀和使用。
 
-## 範例查詢{#sample-queries}
+## 範例查詢 {#sample-queries}
 
 這些範例會以Java屬性樣式標籤法提供。 若要與Java API搭配使用，請使用Java `HashMap`，如以下API範例所示。
 
@@ -49,7 +49,7 @@ REST API可透過HTTP存取完全相同的功能，並在JSON中傳送回應。
 >
 >若要在瀏覽器中檢視傳回的JSON資料，您可能想使用外掛程式，例如Firefox的JSONView。
 
-### 返回所有結果{#returning-all-results}
+### 返回所有結果 {#returning-all-results}
 
 下列查詢會&#x200B;**傳回10個結果**（或精確為最多10個），但會通知您實際可用的&#x200B;**點擊數：**:
 
@@ -76,7 +76,7 @@ p.limit=-1
 orderby=path
 ```
 
-### 使用p.guessTotal傳回結果{#using-p-guesstotal-to-return-the-results}
+### 使用p.guessTotal傳回結果 {#using-p-guesstotal-to-return-the-results}
 
 `p.guessTotal`參數的目的是返回通過組合最小可行`p.offset`值和`p.limit`值可以顯示的適當數目的結果。 在大結果集下，使用該參數的優點是提高了效能。 如此可避免計算完整總計（例如呼叫`result.getSize()`）並讀取整個結果集，最佳化至OAK引擎和索引。 當結果達數十萬個時，這可能會有顯著差異，包括執行時間和記憶體使用量。
 
@@ -119,13 +119,13 @@ orderby=path
 "offset": 0,
 ```
 
-### 實作分頁{#implementing-pagination}
+### 實作分頁 {#implementing-pagination}
 
 依預設，查詢產生器也會提供點擊數。 根據結果大小，確定準確計數可能需要花很長時間，因為需要檢查每個結果以進行訪問控制。 大多數情況下，會使用總計來為使用者UI實作分頁。 由於判斷確切計數可能會很慢，因此建議使用guessTotal功能來實作分頁。
 
 例如，UI可調整下列方法：
 
-* 取得並顯示點擊總數([SearchResult.getTotalMatches()](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches)或`querybuilder.json`回應中的總計)的精確計數小於或等於100;
+* 取得並顯示點擊總數([SearchResult.getTotalMatches()](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches)或`querybuilder.json`回應中的總計)的精確計數小於或等於100;
 * 呼叫查詢產生器時，將`guessTotal`設為100。
 
 * 回應可能會有下列結果：
@@ -135,7 +135,7 @@ orderby=path
 
 `guessTotal` 當UI需要使用無限捲動時，也應使用，以避免查詢產生器決定確切的點擊計數。
 
-### 查找jar檔案並訂購它們，最新的前{#find-jar-files-and-order-them-newest-first}
+### 查找jar檔案並訂購，最新優先 {#find-jar-files-and-order-them-newest-first}
 
 `http://<host>:<port>/bin/querybuilder.json?type=nt:file&nodename=*.jar&orderby=@jcr:content/jcr:lastModified&orderby.sort=desc`
 
@@ -146,7 +146,7 @@ orderby=@jcr:content/jcr:lastModified
 orderby.sort=desc
 ```
 
-### 查找所有頁並按上次修改的{#find-all-pages-and-order-them-by-last-modified}排序
+### 查找所有頁面並按上次修改的順序排序 {#find-all-pages-and-order-them-by-last-modified}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified`
 
@@ -155,7 +155,7 @@ type=cq:Page
 orderby=@jcr:content/cq:lastModified
 ```
 
-### 查找所有頁面並按上次修改的順序排序，降序{#find-all-pages-and-order-them-by-last-modified-but-descending}
+### 查找所有頁面，並依上次修改的、遞減的順序排序 {#find-all-pages-and-order-them-by-last-modified-but-descending}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified&orderby.sort=desc`
 
@@ -165,7 +165,7 @@ orderby=@jcr:content/cq:lastModified
 orderby.sort=desc
 ```
 
-### 全文搜索，按分數{#fulltext-search-ordered-by-score}排序
+### 全文搜尋，依分數排序 {#fulltext-search-ordered-by-score}
 
 `http://<host>:<port>/bin/querybuilder.json?fulltext=Management&orderby=@jcr:score&orderby.sort=desc`
 
@@ -175,7 +175,7 @@ orderby=@jcr:score
 orderby.sort=desc
 ```
 
-### 搜尋標籤為{#search-for-pages-tagged-with-a-certain-tag}的頁面
+### 搜尋具有特定標籤的頁面 {#search-for-pages-tagged-with-a-certain-tag}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&tagid=wknd:activity/cycling&tagid.property=jcr:content/cq:tags`
 
@@ -191,7 +191,7 @@ tagid.property=jcr:content/cq:tags
 
 因為在上例中，您正在搜索頁面（`cq:Page`節點），因此需要使用該節點的相對路徑來查找`tagid.property`謂語，該謂語為`jcr:content/cq:tags`。 預設情況下，`tagid.property`將僅為`cq:tags`。
 
-### 搜尋多個路徑（使用群組）{#search-under-multiple-paths-using-groups}
+### 搜尋多個路徑（使用群組） {#search-under-multiple-paths-using-groups}
 
 `http://<host>:<port>/bin/querybuilder.json?fulltext=Experience&group.1_path=/content/wknd/us/en/magazine&group.2_path=/content/wknd/us/en/adventures&group.p.or=true`
 
@@ -216,7 +216,7 @@ group.2_path=/content/wknd/us/en/adventures
 >
 >您無法在單一查詢中使用相同的數值首碼，即使對不同謂語亦然。
 
-### 搜索屬性{#search-for-properties}
+### 搜尋屬性 {#search-for-properties}
 
 在此處，您使用`cq:template`屬性來搜尋指定範本的所有頁面：
 
@@ -238,7 +238,7 @@ property=jcr:content/cq:template
 property.value=/conf/wknd/settings/wcm/templates/adventure-page-template
 ```
 
-### 搜索多個屬性{#search-for-multiple-properties}
+### 搜尋多個屬性 {#search-for-multiple-properties}
 
 當多次使用屬性述詞時，您必須再次新增數字前置詞：
 
@@ -252,7 +252,7 @@ type=cq:Page
 2_property.value=Cycling Tuscany
 ```
 
-### 搜索多個屬性值{#search-for-multiple-property-values}
+### 搜尋多個屬性值 {#search-for-multiple-property-values}
 
 若要避免在您要搜尋屬性(`"A" or "B" or "C"`)的多個值時出現大型群組，您可以為`property`述詞提供多個值：
 
@@ -277,7 +277,7 @@ property.2_value=Ski Touring
 property.3_value=Whistler Mountain Biking
 ```
 
-## 精簡傳回的項目{#refining-what-is-returned}
+## 精簡傳回的內容 {#refining-what-is-returned}
 
 依預設，QueryBuilder JSON Servlet會針對搜尋結果中的每個節點（例如路徑、名稱、標題等）傳回一組預設屬性。 若要控制要傳回的屬性，您可以執行下列其中一項操作：
 
@@ -347,13 +347,13 @@ p.nodedepth=5
 
 如需更多述詞，請參閱[查詢產生器述詞參考頁面](query-builder-predicates.md)。
 
-還可以檢查`PredicateEvaluator`類](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)的[ Javadoc。 這些類的Javadoc包含可使用的屬性清單。
+還可以檢查`PredicateEvaluator`類](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)的[ Javadoc。 這些類的Javadoc包含可使用的屬性清單。
 
-類名的前置詞（例如[`SimilarityPredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)中的`similar`）是類的&#x200B;*主屬性*。 此屬性也是查詢中使用的謂語名稱（小寫為）。
+類名的前置詞（例如[`SimilarityPredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)中的`similar`）是類的&#x200B;*主屬性*。 此屬性也是查詢中使用的謂語名稱（小寫為）。
 
 對於這些主體屬性，您可以縮短查詢並使用`similar=/content/en`而不是完全限定的變體`similar.similar=/content/en`。 必須將完全限定的表單用於類的所有非主屬性。
 
-## 查詢產生器API使用範例{#example-query-builder-api-usage}
+## 查詢產生器API使用範例 {#example-query-builder-api-usage}
 
 ```java
    String fulltextSearchTerm = "WKND";
@@ -413,7 +413,7 @@ p.nodedepth=5
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&type=cq:Page&group.p.or=true&group.1_fulltext=WKND&group.1_fulltext.relPath=jcr:content&group.2_fulltext=WKND&group.2_fulltext.relPath=jcr:content/@cq:tags&p.offset=0&p.limit=20`
 
-## 儲存和載入查詢{#storing-and-loading-queries}
+## 儲存和載入查詢 {#storing-and-loading-queries}
 
 查詢可以儲存到儲存庫，以便以後使用。 `QueryBuilder`提供`storeQuery`方法，具有以下簽名：
 
@@ -421,13 +421,13 @@ p.nodedepth=5
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-使用[`QueryBuilder#storeQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-)方法時，根據`createFile`引數值，給定的`Query`會以檔案或屬性形式儲存到儲存庫中。 以下示例說明如何將`Query`保存到路徑`/mypath/getfiles`中，作為檔案：
+使用[`QueryBuilder#storeQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-)方法時，根據`createFile`引數值，給定的`Query`會以檔案或屬性形式儲存到儲存庫中。 以下示例說明如何將`Query`保存到路徑`/mypath/getfiles`中，作為檔案：
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-可使用[`QueryBuilder#loadQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-)方法從儲存庫載入任何先前儲存的查詢：
+可使用[`QueryBuilder#loadQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-)方法從儲存庫載入任何先前儲存的查詢：
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -439,7 +439,7 @@ Query loadQuery(String path, Session session) throws RepositoryException, IOExce
 Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 ```
 
-## 測試和調試{#testing-and-debugging}
+## 測試和除錯 {#testing-and-debugging}
 
 若要播放和偵錯查詢產生器查詢，您可以在
 
@@ -453,7 +453,7 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 
 ### 一般偵錯Recommendations {#general-debugging-recommendations}
 
-### 通過記錄{#obtain-explain-able-xpath-via-logging}獲取可解釋的XPath
+### 通過日誌記錄獲取可解釋的XPath {#obtain-explain-able-xpath-via-logging}
 
 對目標索引集在開發週期中說明&#x200B;**all**&#x200B;查詢。
 
@@ -464,7 +464,7 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`
 1. 將XPath查詢貼入Explain Query as XPath中，以獲得查詢計畫。
 
-### 透過查詢產生器偵錯器{#obtain-explain-able-xpath-via-the-query-builder-debugger}取得可說明的XPath
+### 透過Query Builder Debugger取得可說明的XPath {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
 使用AEM Query Builder偵錯工具產生可說明的XPath查詢。
 
@@ -479,7 +479,7 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 >
 >非查詢生成器查詢(XPath、JCR-SQL2)可直接提供給「解釋查詢」。
 
-## 使用記錄{#debugging-queries-with-logging}調試查詢
+## 使用記錄對查詢進行調試 {#debugging-queries-with-logging}
 
 >[!NOTE]
 >
@@ -517,14 +517,14 @@ com.day.cq.search.impl.builder.QueryImpl filtering predicates: {nodename=nodenam
 com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 ```
 
-## Javadoc連結{#javadoc-links}
+## Javadoc連結 {#javadoc-links}
 
 | **Javadoc** | **說明** |
 |---|---|
-| [com.day.cq.search](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/package-summary.html) | 基本查詢產生器和查詢API |
-| [com.day.cq.search.result](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/package-summary.html) | 結果API |
-| [com.day.cq.search.facets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/package-summary.html) | Facet |
-| [com.day.cq.search.facets.buckets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/buckets/package-summary.html) | 貯體（包含在Facet內） |
-| [com.day.cq.search.eval](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/package-summary.html) | 謂語求值器 |
-| [com.day.cq.search.facets.extractors](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Facet提取器（用於求值器） |
-| [com.day.cq.search.writer](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/writer/package-summary.html) | 查詢產生器servlet的JSON結果點擊寫入器(`/bin/querybuilder.json`) |
+| [com.day.cq.search](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/package-summary.html) | 基本查詢產生器和查詢API |
+| [com.day.cq.search.result](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/package-summary.html) | 結果API |
+| [com.day.cq.search.facets](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/package-summary.html) | Facet |
+| [com.day.cq.search.facets.buckets](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | 貯體（包含在Facet內） |
+| [com.day.cq.search.eval](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/package-summary.html) | 謂語求值器 |
+| [com.day.cq.search.facets.extractors](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Facet提取器（用於求值器） |
+| [com.day.cq.search.writer](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/writer/package-summary.html) | 查詢產生器servlet的JSON結果點擊寫入器(`/bin/querybuilder.json`) |

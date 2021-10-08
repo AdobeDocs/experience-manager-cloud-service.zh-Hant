@@ -2,10 +2,10 @@
 title: API參考資料
 description: AEM提供廣泛而強大的API，可供您運用於數位體驗專案。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Experience Manager(AEM)提供許多API來開發應用程式和擴充AEM。
 
 | API | 說明 |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | 產品抽象化，例如頁面、資產、工作流程等。 |
+| [Adobe Experience Manager as a Cloud Service ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 產品抽象化，例如頁面、資產、工作流程等。 |
 | [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobe的Open Web堆疊，提供各種基本元件（請注意，6.5 Granite材料適用於AEMaaCS） |
 | [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | Adobe的雲端UI視覺樣式，旨在提供使用者體驗的一致性 |
 
@@ -44,7 +44,7 @@ AEM是以下四個主要Java API集建置，依優先順序遞減。
 
 | 優先順序 | API | 說明 |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | 產品抽象化，例如頁面、資產、工作流程等。 |
+| 1 | [Adobe Experience Manager as a Cloud Service ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 產品抽象化，例如頁面、資產、工作流程等。 |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST和資源型抽象化，例如資源、值映射和HTTP要求。 |
 | 3 | [阿帕奇傑克拉布特橡樹](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 資料和內容抽象化，例如節點、屬性和工作階段。 |
 | 4 | [阿帕奇費利克斯](https://felix.apache.org/) | OSGi應用程式容器抽象化，例如服務和(OSGi)元件。 |

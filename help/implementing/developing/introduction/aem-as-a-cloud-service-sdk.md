@@ -1,31 +1,31 @@
 ---
 title: AEM as a Cloud Service SDK
-description: AEM as a Cloud Service軟體開發套件概觀
+description: AEMas a Cloud Service軟體開發套件概述
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '1179'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# AEM as aCloud ServiceSDK {#aem-as-a-cloud-service-sdk}
+# AEMas a Cloud ServiceSDK {#aem-as-a-cloud-service-sdk}
 
-AEM as a Cloud ServiceSDK由下列成品組成：
+AEMas a Cloud ServiceSDK包含下列成品：
 
 * **Quickstart Jar**  — 用於本機開發的AEM執行階段
 * **Java API Jar**  — 公開所有允許的Java API(可用來針對AEM進行開發作為Cloud Service)的Java Jar/Maven相依性。先前稱為Uberjar
 * **Javadoc Jar**  - Java API Jar的javadoc
 * **Dispatcher工具**  — 用來針對本機Dispatcher開發的工具集。Unix和Windows的獨立對象
 
-此外，有些先前透過AEM 6.5或更舊版本部署的客戶將使用下列成品。 如果本地編譯不能與Quickstart Jar一起使用，並且您懷疑是由於從AEM中移除的介面而部署為Cloud Service，請聯繫客戶支援以確定您是否需要訪問。 這需要在後端進行變更。
+此外，有些先前透過AEM 6.5或更舊版本部署的客戶將使用下列成品。 如果本地編譯不能與Quickstart Jar一起使用，並且您懷疑是由於已從AEM部署的as a Cloud Service中刪除的介面，請聯繫客戶支援以確定您是否需要訪問。 這需要在後端進行變更。
 
 * **6.5已棄用的Java API Jar**  — 自AEM 6.5起已移除的額外介面集
 * **6.5已棄用的Javadoc Jar**  — 用於其他介面集的Javadoc
 
-## 針對SDK建立{#building-for-the-sdk}
+## 為SDK建置 {#building-for-the-sdk}
 
-AEM as a Custom SDK可用來建置和部署自訂程式碼。 如需詳細資訊，請參閱[AEM專案原型檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en)。 從高度來說，會執行下列步驟：
+AEMas a Cloud ServiceSDK可用來建置和部署自訂程式碼。 如需詳細資訊，請參閱[AEM專案原型檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en)。 從高度來說，會執行下列步驟：
 
 * **編譯程式碼**。如預期，會編譯原始碼，產生產生的內容套件
 * **建立成品**。在此過程中將生成對象
@@ -34,10 +34,10 @@ AEM as a Custom SDK可用來建置和部署自訂程式碼。 如需詳細資訊
 
 部署至雲端環境時，Cloud Manager會執行相同步驟。 在本機執行組建可進行本機開發和測試，讓開發人員在提交至原始碼控制項及觸發Cloud Manager部署前，即可先有效探索程式碼或結構問題，但可能需要更久的時間。
 
-## 存取AEM as aCloud ServiceSDK {#accessing-the-aem-as-a-cloud-service-sdk}
+## 存取AEMas a Cloud ServiceSDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * 您可以檢查AEMAdmin Console的&#x200B;**關於Adobe Experience Manager**&#x200B;圖示，以了解您在生產環境中執行的AEM版本。
-* 您可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下載快速入門Jar和調度程式工具的zip檔案。 請注意，存取SDK清單的權限僅限於以AEM Managed Services或AEM作為Cloud Service環境的權限。
+* 您可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下載快速入門Jar和調度程式工具的zip檔案。 請注意，SDK清單的存取權限僅限於具有AEM Managed Services或AEMas a Cloud Service環境的使用者。
 * Java API Jar和Javadoc Jar可通過命令行或首選的IDE通過Maven工具下載。
 * Maven專案模組應參考下列API Jar套件。 任何子套件中也應參考此相依性。
 
@@ -52,10 +52,10 @@ AEM as a Custom SDK可用來建置和部署自訂程式碼。 如需詳細資訊
 
 >[!NOTE]
 >
->SDK的版本項目應符合AEM作為Cloud Service的版本。 登入AEM，然後前往畫面右上角的問號並選取&#x200B;**[!UICONTROL 關於Adobe Experience Manager]**，即可查看您使用的版本
+>SDK的版本項目應符合AEM as a Cloud Service的版本。 登入AEM，然後前往畫面右上角的問號並選取&#x200B;**[!UICONTROL 關於Adobe Experience Manager]**，即可查看您使用的版本
 
 
-## 使用新SDK版本{#refreshing-a-local-project-with-a-new-skd-version}重新整理本機專案
+## 使用新SDK版本重新整理本機專案 {#refreshing-a-local-project-with-a-new-skd-version}
 
 何時建議使用新SDK重新整理本機專案？
 
@@ -83,9 +83,9 @@ AEM as a Custom SDK可用來建置和部署自訂程式碼。 如需詳細資訊
 
 建議您經常更新SDK（例如每兩週），並每天處理完整的本機狀態，以免意外依賴應用程式中的狀態資料。
 
-如果您依賴CryptoSupport([，通過配置AEM中的Cloudservices或SMTP Mail服務的憑據，或通過應用程式](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/granite/crypto/CryptoSupport.html)中的CryptoSupport API)，則加密的屬性將通過在AEM環境的第一個啟動時自動生成的密鑰進行加密。 雖然cloudsetup會自動重複使用特定於環境的CryptoKey，但有必要將加密金鑰插入本地開發環境。
+如果您依賴CryptoSupport([，通過配置AEM中的Cloudservices或SMTP Mail服務的憑據，或通過應用程式](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html)中的CryptoSupport API)，則加密的屬性將通過在AEM環境的第一個啟動時自動生成的密鑰進行加密。 雖然cloudsetup會自動重複使用特定於環境的CryptoKey，但有必要將加密金鑰插入本地開發環境。
 
-預設情況下，AEM會設定為將關鍵資料儲存在資料夾的資料夾內，但為了方便在開發中重複使用，AEM程式可在首次啟動時以「`-Dcom.adobe.granite.crypto.file.disable=true`」初始化。 這將在「`/etc/key`」生成加密資料。
+預設情況下，AEM會設定為將關鍵資料儲存在資料夾的資料夾內，但為了方便在開發中重複使用，AEM程式可在首次啟動時使用「`-Dcom.adobe.granite.crypto.file.disable=true`」初始化。 這將在「`/etc/key`」生成加密資料。
 
 若要重複使用包含加密值的內容套件，請依照下列步驟操作：
 
