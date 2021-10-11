@@ -1,9 +1,9 @@
 ---
 title: 使用使用者對應工具
 description: 使用使用者對應工具
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 2f763f774b21b0c3b43d61964dda2d2ae596161a
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '596'
 ht-degree: 3%
 
 ---
@@ -31,20 +31,25 @@ ht-degree: 3%
 
 使用者對應工具已整合至內容轉移工具。 您可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下載「內容轉移工具」。 如需最新版本的詳細資訊，請參閱[最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
-1. 選取Adobe Experience Manager並導覽至工具 — > **操作** -> **使用者對應**。
+1. 選取Adobe Experience Manager並導覽至工具 — > **操作** -> **內容移轉**。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing1.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
+
+1. 按一下「**使用者對應**」卡片。
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access2.png)
 
 1. 按一下&#x200B;**建立用戶映射配置**。
 
    >[!NOTE]
    >如果您略過此步驟，則會在提取階段期間略過使用者和群組對應。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing2.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access5.png)
 
    請依照下文所述，填入&#x200B;**User Management API Configuration**&#x200B;中的欄位。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing3.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
+
 
    * **組織ID**:輸入AdobeIdentity Management系統(IMS)組織ID，了解使用者要移轉的組織。
 
@@ -59,6 +64,8 @@ ht-degree: 3%
       >存取權杖每24小時過期一次，而需要建立新的權杖。 若要建立新代號，請返回[Adobe開發人員控制台](https://console.adobe.io)，選擇您的專案，按一下&#x200B;**使用者管理API**，然後將相同的私密金鑰貼入方塊中。
 
 1. 填入欄位後，按一下&#x200B;**測試設定**&#x200B;以測試與使用者管理API服務的連線。 如果連接成功，則可以按一下&#x200B;**Save**&#x200B;以保存配置。
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
 1. 保存配置後，選擇配置並按一下&#x200B;**啟動用戶映射**。
 
