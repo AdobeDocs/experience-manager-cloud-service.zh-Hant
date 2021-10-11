@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
+source-git-commit: b71c624e3662129a6a081d095975ee86b60578ac
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1486'
 ht-degree: 3%
 
 ---
@@ -197,7 +197,7 @@ Cloud Acceleration Manager的發行日期為2021年10月4日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 透過簡化的使用者體驗改善使用者對應，包括下列功能。 有關詳細資訊，請參閱[使用用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)。
+* 透過簡化的使用者體驗改善使用者對應，包括下列功能。 有關詳細資訊，請參閱[使用用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html)。
    * 在執行使用者對應之前，測試與使用者管理API的連線
    * 適度略過錯誤，並繼續進行「使用者對應」活動
    * 如果存取權杖過期（24小時後），使用者對應不再失敗。 可以從上次停止的位置重新運行用戶映射。
