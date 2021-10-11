@@ -1,19 +1,19 @@
 ---
 title: 如何透過AEM Assets API更新您的內容
 description: 在AEM無頭開發人員歷程的這部分，了解如何使用REST API存取及更新內容片段的內容。
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
+source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 2%
 
 ---
 
-
-# 如何透過AEM Assets API {#update-your-content}更新您的內容
+# 如何透過AEM Assets API更新您的內容 {#update-your-content}
 
 在[AEM無頭開發人員歷程的這部分中，](overview.md)了解如何使用REST API存取和更新內容片段的內容。
 
-## 迄今為止的故事{#story-so-far}
+## 迄今為止的故事 {#story-so-far}
 
 在AEM無周邊歷程的上一份檔案中，[如何透過AEM傳送API存取您的內容](access-your-content.md)您已了解如何透過AEM GraphQL API存取AEM中的無周邊內容，您現在應：
 
@@ -35,7 +35,7 @@ ht-degree: 2%
   * Look at sample code to see how things work in practice.
 -->
 
-## 為什麼您需要內容片段{#why-http-api}的資產HTTP API
+## 為什麼您需要資產HTTP API才能處理內容片段 {#why-http-api}
 
 在無周邊歷程的上一階段，您已了解如何使用AEM GraphQL API來使用查詢擷取內容。
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 資產HTTP API可讓您&#x200B;**讀取**&#x200B;內容，但也可讓您&#x200B;**建立**、**更新**&#x200B;和&#x200B;**刪除**&#x200B;內容 — GraphQL API無法執行的動作。
 
-最新Adobe Experience Manager作為Cloud Service版本的每個現成可用安裝都提供Assets REST API。
+最新Adobe Experience Manager as a Cloud Service版本的每個現成可用安裝都提供Assets REST API。
 
 ## Assets HTTP API {#assets-http-api}
 
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 目前Assets HTTP API的實作以&#x200B;**REST**&#x200B;架構樣式為基礎，可讓您透過&#x200B;**CRUD**&#x200B;作業（建立、讀取、更新、刪除）存取內容(儲存於AEM中)。
 
-透過這些操作，API可讓您將Adobe Experience Manager作為無頭CMS（內容管理系統）的Cloud Service，以提供內容服務給JavaScript前端應用程式。 或可執行HTTP要求和處理JSON回應的任何其他應用程式。 例如，單頁應用程式(SPA)（以架構為基礎或自訂）需要透過API提供的內容，通常為JSON格式。
+透過這些操作，API可讓您將Adobe Experience Manager as a Cloud Service作為無頭CMS（內容管理系統）來運作，方法是向JavaScript前端應用程式提供內容服務。 或可執行HTTP要求和處理JSON回應的任何其他應用程式。 例如，單頁應用程式(SPA)（以架構為基礎或自訂）需要透過API提供的內容，通常為JSON格式。
 
 <!--
 >[!NOTE]
@@ -178,7 +178,7 @@ The binary data of an asset is exposed as a SIREN link of type `content`.
 Assets can have multiple renditions. These are typically exposed as child entities, one exception being a thumbnail rendition, which is exposed as a link of type `thumbnail` ( `rel="thumbnail"`).
 -->
 
-## 資產HTTP API和內容片段{#assets-http-api-content-fragments}
+## 資產HTTP API和內容片段 {#assets-http-api-content-fragments}
 
 內容片段用於無頭傳送，而內容片段是特殊類型的資產。 它們可用來存取結構化資料，例如文字、數字、日期等。
 
@@ -222,7 +222,7 @@ Assets REST API使用`/api/assets`端點，且需要資產的路徑才能存取�
 >訪問：
 >
 >* `/api/assets` **不** 需要使用選取 `.model` 器。
->* `/content/path/to/page` **** 不需要使用選取 `.model` 器。
+>* `/content/path/to/page` **** 需要使用選取 `.model` 器。
 
 
 ### 操作 {#operation}
@@ -255,9 +255,9 @@ API參考檔案中已定義支援請求的確切格式。
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱API參考。 尤其是[Adobe Experience Manager Assets API — 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>如需詳細資訊，請參閱API參考。 尤其是[Adobe Experience Manager Assets API — 內容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
 
-### 讀取/傳送{#read-delivery}
+### 讀取/傳送 {#read-delivery}
 
 使用方式為：
 
@@ -303,7 +303,7 @@ API參考檔案中已定義支援請求的確切格式。
 * Adobe Experience Manager Assets HTTP API（其他資源）
 * AEM Assets HTTP API中的內容片段支援（其他資源）
 
-## 下一步是什麼{#whats-next}
+## 下一步 {#whats-next}
 
 現在您已完成AEM Headless Developer Journey的這一部分，您應：
 
@@ -325,7 +325,7 @@ API參考檔案中已定義支援請求的確切格式。
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [內容片段REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API — 內容片段](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API — 內容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 * [使用內容片段](/help/assets/content-fragments/content-fragments.md)
 * [AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
 * [CORS/AEM說明](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)

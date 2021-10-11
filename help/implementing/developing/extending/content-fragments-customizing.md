@@ -2,7 +2,7 @@
 title: 自訂和擴充內容片段
 description: 內容片段會延伸標準資產。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
+source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # 自訂和擴充內容片段{#customizing-and-extending-content-fragments}
 
-在Adobe Experience Manager中作為Cloud Service，內容片段會延伸標準資產；請參閱：
+在Adobe Experience Manager as a Cloud Service中，內容片段會延伸標準資產；請參閱：
 
 * [使用內容片段建](/help/assets/content-fragments/content-fragments.md) 立和管 [理內容片段和頁](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 面編寫，以取得內容片段的詳細資訊。
 
@@ -166,7 +166,7 @@ ht-degree: 1%
 
 您可以使用伺服器端API來存取您的內容片段；請參閱：
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -176,7 +176,7 @@ ht-degree: 1%
 
 以下三個介面可作為入口點：
 
-* **內容片段** ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **內容片段** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    此介面可讓您以抽象方式處理內容片段。
 
@@ -202,7 +202,7 @@ ht-degree: 1%
 
    代表片段主要元素的介面包括：
 
-   * **內容元素** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **內容元素** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * 取得基本資料（名稱、標題、說明）
       * 取得/設定內容
@@ -214,7 +214,7 @@ ht-degree: 1%
          * 移除變數（請參閱[警告](#caveats)）
          * 存取變異資料（請參閱`ContentVariation`）
       * 解決變異的捷徑（如果指定的變異不適用於元素，則套用一些其他的實作專用備援邏輯）
-   * **內容變異** ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **內容變異** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * 取得基本資料（名稱、標題、說明）
       * 取得/設定內容
@@ -244,9 +244,9 @@ ht-degree: 1%
 
 * `ContentElement` 可調整為：
 
-   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html)  — 存取元素的結構資訊。
+   * [`ElementTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html)  — 存取元素的結構資訊。
 
-* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` 可調整為：
 
@@ -284,7 +284,7 @@ ht-degree: 1%
 >
 >請考慮這個背景資訊。 您不應在此變更任何項目（因為存放庫中標示為&#x200B;*私人區域*），但在某些情況下，這可能有助於了解引擎罩下的運作方式。
 
-編輯內容片段可跨越多個檢視（= HTML頁面）是原子。 因為原子多檢視編輯功能不是典型的AEM概念，內容片段使用所謂的&#x200B;*編輯工作階段*。
+編輯內容片段可跨越多個檢視(=HTML頁面)是原子。 因為原子多檢視編輯功能不是典型的AEM概念，內容片段使用所謂的&#x200B;*編輯工作階段*。
 
 當使用者在編輯器中開啟內容片段時，會啟動編輯工作階段。 當使用者借由選取&#x200B;**Save**&#x200B;或&#x200B;**Cancel**&#x200B;來離開編輯器時，編輯工作階段會完成。
 
