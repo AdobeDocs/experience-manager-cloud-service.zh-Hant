@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: b71c624e3662129a6a081d095975ee86b60578ac
+source-git-commit: 8382dc404ed8d5525e466de8ca79d1db70ce93f5
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 3%
+source-wordcount: '1508'
+ht-degree: 2%
 
 ---
 
@@ -197,12 +197,12 @@ Cloud Acceleration Manager的發行日期為2021年10月4日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 透過簡化的使用者體驗改善使用者對應，包括下列功能。 有關詳細資訊，請參閱[使用用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html)。
+* 透過簡化的使用者體驗改善使用者對應工具，包括下列功能。 有關詳細資訊，請參閱[使用用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html)。
    * 在執行使用者對應之前，測試與使用者管理API的連線
    * 適度略過錯誤，並繼續進行「使用者對應」活動
-   * 如果存取權杖過期（24小時後），使用者對應不再失敗。 可以從上次停止的位置重新運行用戶映射。
+   * 如果&#x200B;**存取權杖**&#x200B;在24小時後過期，使用者對應不再失敗。 可以從上次停止的位置重新運行用戶映射。
 
-* 為了提高CTT的健全性，一次可將內容擷取至「製作」例項或「發佈」例項。
+* 若要提高「內容轉移工具」的健全性，一次可將內容擷取至「製作」例項或「發佈」例項。 如需詳細資訊，請參閱[使用內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en) 。
 
 * 包含版本時，會自動包含路徑`/var/audit`以遷移審核事件。
 
