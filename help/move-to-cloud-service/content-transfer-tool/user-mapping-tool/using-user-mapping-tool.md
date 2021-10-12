@@ -1,10 +1,10 @@
 ---
 title: 使用使用者對應工具
 description: 使用使用者對應工具
-source-git-commit: 6ab32a952a53eed612192ee8359373087e6cf624
+source-git-commit: 77c412c1050be8843e7185b0511a9d7af41669e3
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -79,12 +79,12 @@ ht-degree: 2%
    >* 完成使用者對應後，您可以使用階層連結，導覽回「內容移轉」頁面。 「使用者對應」卡片會顯示狀態和時間戳記。 按一下&#x200B;**內容轉移**&#x200B;以建立移轉集以執行提取。 如需詳細資訊，請參閱[執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) 。
 
 
-### 繼續使用者對應程式 {#resume-user-mapping}
+### 繼續使用者對應程式 {#resume-user-mapping-process}
 
 如果由於下列任一原因而停止了用戶映射進程：
 
 * 用戶選擇了&#x200B;**停止用戶映射**
 * 存取權杖在處理期間過期，或
-* 還有別的原因。
+* 其他原因
 
 進度會從程式停止的位置儲存。 查看用戶映射日誌以檢查保存的進度。 再次按一下&#x200B;**開始用戶映射**&#x200B;按鈕，從其中斷的位置繼續。 重新啟動前，請確定存取權杖仍有效或已重新整理。
