@@ -1,9 +1,9 @@
 ---
 title: 使用使用者對應工具
 description: 使用使用者對應工具
-source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
+source-git-commit: 09ab81364f0fd45ddedcd5f918e6ab5a4bdd1f0d
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '752'
 ht-degree: 3%
 
 ---
@@ -115,3 +115,7 @@ ht-degree: 3%
 1. 按一下對話框中的&#x200B;**開始**&#x200B;以繼續用戶映射進程。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   用戶映射過程完成後，您將查看該特定配置的&#x200B;**狀態**&#x200B;為&#x200B;**已完成**。
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)
