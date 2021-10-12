@@ -1,10 +1,10 @@
 ---
 title: 使用使用者對應工具
 description: 使用使用者對應工具
-source-git-commit: 77c412c1050be8843e7185b0511a9d7af41669e3
+source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '727'
+ht-degree: 3%
 
 ---
 
@@ -71,6 +71,10 @@ ht-degree: 0%
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
+1. 按一下對話框中的&#x200B;**Start**&#x200B;以啟動用戶映射進程。
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
 1. 完成用戶映射後，按一下&#x200B;**Results**&#x200B;以查看摘要。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
@@ -87,4 +91,22 @@ ht-degree: 0%
 * 存取權杖在處理期間過期，或
 * 其他原因
 
-進度會從程式停止的位置儲存。 查看用戶映射日誌以檢查保存的進度。 再次按一下&#x200B;**開始用戶映射**&#x200B;按鈕，從其中斷的位置繼續。 重新啟動前，請確定存取權杖仍有效或已重新整理。
+   >[!NOTE]
+   >進度會從程式停止的位置儲存。
+
+請依照下列步驟繼續使用者對應程式：
+
+1. 按一下&#x200B;**查看日誌**&#x200B;以查看用戶映射日誌以檢查保存的進度。
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
+
+1. 再次按一下&#x200B;**開始用戶映射**&#x200B;按鈕，從其中斷的位置繼續。
+
+   >[!NOTE]
+   >重新啟動前，請確定存取權杖仍有效或已重新整理。
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
+
+1. 按一下對話框中的&#x200B;**開始**&#x200B;以繼續用戶映射進程。
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
