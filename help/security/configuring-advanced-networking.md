@@ -1,7 +1,7 @@
 ---
 title: 配置AEMas a Cloud Service的高級網路
 description: 了解如何配置高級網路功能，如VPN或專用的輸出IP地址，以便AEMas a Cloud Service
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 1c9e83a0351d51d96998f7126f0ab76db56144ce
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 1%
@@ -81,17 +81,15 @@ API應在幾秒內回應，指出更新狀態，大約10分鐘後，端點的`GE
 例如，以下是傳送要求至`www.example.com:8443`的范常式式碼：
 
 ```java
-HttpsHost target = new HttpsHost("example.com", 8443, "https");
+String url = "www.example.com:8443"
+var proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
+var proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+HttpClient client = HttpClient.newBuilder()
+      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
+      .build();
  
-HttpHost proxy = new HttpHost(System.getenv("AEM_HTTPS_PROXY_HOST"),
-                              Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT")),
-                              "https");
- 
-RequestConfig config = RequestConfig.custom().setProxy(proxy).build();
- 
-HttpGet request = new HttpGet("/");
-request.setConfig(config);
-CloseableHttpResponse response = httpclient.execute(target, request);
+HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
+HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 ```
 
 如果使用非標準Java網路庫，請針對所有流量使用上述屬性來配置Proxy。
