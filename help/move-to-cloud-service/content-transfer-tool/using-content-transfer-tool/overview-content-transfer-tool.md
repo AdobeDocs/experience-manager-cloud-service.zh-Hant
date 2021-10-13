@@ -2,10 +2,10 @@
 title: 內容轉移工具綜覽
 description: 內容轉移工具綜覽
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '496'
+ht-degree: 65%
 
 ---
 
@@ -54,4 +54,7 @@ ht-degree: 0%
 
 如果要在擷取階段中，將差異內容套用至目前內容的頂端，則必須停用&#x200B;*「擦去」*&#x200B;選項。如需詳細資訊，請參考[追加擷取](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-ingestion-process)。
 
+## 下一步 {#whats-next}
+
+了解「內容轉移工具」及其描述此工具的概觀後，您就可以使用此工具將現有內容從來源AEM例項（內部部署或AMS）移至目標AEM Cloud Service例項，您必須檢閱[內容轉移工具的必要條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en)。
 
