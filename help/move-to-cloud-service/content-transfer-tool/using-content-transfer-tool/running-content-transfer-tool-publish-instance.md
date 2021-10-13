@@ -1,9 +1,9 @@
 ---
 title: 在發佈執行個體上執行內容轉移工具
 description: 在發佈執行個體上執行內容轉移工具
-source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '270'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 1%
 
 請遵循以下說明的建議方法：
 
-* 使用與Author例項上所使用的CTT相同版本。
+* 使用與Author例項上使用相同版本的「內容轉移工具」。
 
 * 只需移轉單一發佈節點。 在開始提取之前，應從負載平衡器中移除它。
 
-* 建立移轉集時，請使用製作AEMaaCS環境的URL。
+* 建立移轉集時，請使用製作AEMas a Cloud Service環境的URL。
 
 * 擷取至發佈期間，發佈層級不會縮小（與作者不同）。 為了防患於未然，請避免任何用戶啟動的寫入操作，例如：
 

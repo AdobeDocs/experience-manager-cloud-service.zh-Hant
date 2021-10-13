@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f104f67af759e76c51d9cc125be5046aa8e62711
+source-git-commit: 8814627c3144d657b564fee839ace8e4bdcf6f78
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1605'
 ht-degree: 2%
 
 ---
@@ -208,7 +208,7 @@ Cloud Acceleration Manager的發行日期為2021年10月4日。
    * 適度略過錯誤，並繼續進行「使用者對應」活動
    * 如果&#x200B;**存取權杖**&#x200B;在24小時後過期，使用者對應不再失敗。 可以從上次停止的位置重新運行用戶映射。
 
-* 若要提高「內容轉移工具」的健全性，一次可將內容擷取至「製作」例項或「發佈」例項。 如需詳細資訊，請參閱[使用內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en) 。
+* 若要提高「內容轉移工具」的健全性，一次可將內容擷取至「製作」例項或「發佈」例項。 如需詳細資訊，請參閱[內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 。
 
 * 包含版本時，會自動包含路徑`/var/audit`以遷移審核事件。
 

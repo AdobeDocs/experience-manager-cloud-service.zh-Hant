@@ -1,7 +1,7 @@
 ---
 title: 在內容轉移工具中將內容擷取到目標中
 description: 在內容轉移工具中將內容擷取到目標中
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 34%
@@ -33,7 +33,7 @@ ht-degree: 34%
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
-   此外，按一下&#x200B;**客戶服務**&#x200B;來記錄票證，如上圖所示。 另請參閱[使用內容轉移工具的重要考量](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)以深入了解。
+   此外，按一下&#x200B;**客戶服務**&#x200B;來記錄票證，如上圖所示。 另請參閱[使用內容轉移工具的重要考量](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations)以深入了解。
 
 1. 擷取完成後，狀態會更新為&#x200B;**FINISHED**。
 
