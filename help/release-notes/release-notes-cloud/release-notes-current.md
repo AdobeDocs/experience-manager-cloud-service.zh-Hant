@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8382dc404ed8d5525e466de8ca79d1db70ce93f5
+source-git-commit: f104f67af759e76c51d9cc125be5046aa8e62711
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1603'
 ht-degree: 2%
 
 ---
@@ -42,10 +42,16 @@ ht-degree: 2%
 
 ### [!DNL Assets]中的新功能 {#assets-features}
 
+* 現在支援使用Adobe Document Cloud的原生注釋和注釋工具來註解PDF檔案。 直接在檔案預覽視窗中新增文字、醒目提示、註解和繪圖，為PDF內容加上注釋。 使用者也可以按一下特定留言，跳至PDF中感興趣的頁面
+
 * 使用者現在可以在「欄」和「卡片」檢視中，對搜尋結果中顯示的資產進行排序。 排序適用於「名稱」、「已建立」、「已修改」或「無」欄。
 
    ![在「欄」和「卡片」檢 [!DNL Assets] 視中排序搜尋結果](/help/assets/assets/sort-searched-assets.png)
    *圖：在「欄」和「卡片」檢 [!DNL Assets] 視中排序搜尋結果。*
+
+### [!DNL Assets]發行前通道中的新功能 {#assets-prerelease-features}
+
+* [!DNL Assets] 現在包含內建的音訊和視 [!DNL Azure Media Services] 訊轉錄連接器。配置後，將自動轉錄支援的檔案並生成WebVTT檔案。 WebVTT字幕用於更有效的搜索、字幕或翻譯，以用作字幕。
 
 <!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
@@ -56,8 +62,8 @@ ht-degree: 2%
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-Apparently, no new Assets features in Sep beta channel.
-A/V transcription feature via CQ-4303854 has moved to Oct beta now.
+Apparently, no new Assets features in Sep prerelease channel.
+A/V transcription feature via CQ-4303854 has moved to Oct prerelease now.
 
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
