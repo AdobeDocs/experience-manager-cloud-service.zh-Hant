@@ -5,10 +5,10 @@ breadcrumb-title: 移轉指南
 user-guide-description: 了解轉換至雲端服務的過程。
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 70811e1ba231dbd9a4bdf8764a4d93ba49413d0e
+source-git-commit: a309e668cb99231b274cf933c8392df873f33a81
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 45%
+source-wordcount: '151'
+ht-degree: 41%
 
 ---
 
@@ -35,9 +35,11 @@ ht-degree: 45%
       + [概覽](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [使用Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + 內容轉移工具 {#content-transfer-tool}
-      + [概覽](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
-      + [內容轉移工具的必要條件](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
-      + [處理大型內容存放庫](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
+      + [概覽](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+      + [內容轉移工具的必要條件](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [使用內容轉移工具的准則和最佳作法](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+      + [內容轉移工具快速入門](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/gettting-started-content-transfer-tool.md)
+      + [處理大型內容存放庫](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
       + [使用內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
       + 用戶映射工具{#user-mapping-tool}
          + [概覽](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
