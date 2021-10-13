@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 270a38412c14a869676ea6aa60428b319fa6228d
+source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2022'
 ht-degree: 90%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 90%
 
 >[!TIP]
 >
->請參閱我們的Experience League課程[為管理員設定AEM存取權](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) ，了解使用者如何使用Adobe IMS驗證AEM作為Cloud Service，以及如何使用Adobe IMS使用者、使用者群組和產品設定檔來控制AEM存取權及其功能。 Adobe ID為必要。
+>請參閱我們的Experience League課程[為管理員設定AEM存取權](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) ，了解使用者如何使用Adobe IMS進行AEMas a Cloud Service驗證，以及如何使用Adobe IMS使用者、使用者群組和產品設定檔來控制AEM的存取權及其功能。 Adobe ID為必要。
 
 >[!NOTE]
 >
->AEM的IMS登入作為Cloud Service不支援Admin Console中的巢狀群組。
+>AEM目前不支援將群組指派給設定檔。 使用者應改為個別新增。
 
 ## 重要焦點 {#key-highlights}
 
@@ -132,7 +132,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 ### 在 Admin Console 中管理產品和使用者存取權限 {#managing-products-and-user-access-in-admin-console}
 
-產品管理員登入Admin Console時，會將AEM的多個例項視為Cloud Service產品內容，如下所示。 例如，從&#x200B;**概述**&#x200B;頁面中選取任何產品：
+產品管理員登入Admin Console時，會看到AEMas a Cloud Service產品內容的多個例項，如下所示。 例如，從&#x200B;**概述**&#x200B;頁面中選取任何產品：
 
 ![例項登入](/help/security/assets/ims6.png)
 
