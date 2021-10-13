@@ -1,10 +1,10 @@
 ---
 title: 在內容轉移工具中從來源擷取內容
 description: 在內容轉移工具中從來源擷取內容
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 53%
+source-wordcount: '526'
+ht-degree: 48%
 
 ---
 
@@ -60,3 +60,7 @@ ht-degree: 53%
    >您必須停用&#x200B;**在提取期間覆寫預備容器**&#x200B;選項。
    >
    >![影像](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+
+## 下一步 {#whats-next}
+
+在您學習了「內容轉移工具」中的「從來源擷取內容」後，您現在就可以了解「內容轉移工具」中的擷取程式。 請參閱內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)中的[將內容擷取至Target ，了解如何從內容轉移工具擷取您的移轉集。
