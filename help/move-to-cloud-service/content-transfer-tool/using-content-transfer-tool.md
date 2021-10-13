@@ -2,9 +2,9 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: cde5514a0585dc0c882369e7603a62366d009a8c
+source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
 workflow-type: tm+mt
-source-wordcount: '3216'
+source-wordcount: '3193'
 ht-degree: 36%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 36%
 
 * 如果您使用自訂索引，則在執行「內容轉移工具」之前，必須確保以`tika`節點配置自訂索引。 有關詳細資訊，請參閱[準備新索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition)。
 
-* 如果您要追加提取，則必須不要變更現有內容的內容結構，從進行初始提取到執行追加提取的時間皆然。 自初始擷取後，結構已變更的內容無法執行追加。 請務必在移轉程式期間加以限制。
+* 如果您要追加提取，則必須不要變更現有內容的內容結構，從進行初始提取到執行追加提取的時間皆然。 自初始擷取後，無法對結構已變更的內容執行追加。 請務必在移轉程式期間加以限制。
 
 * 如果您要將版本納入移轉集，並要使用`wipe=false`執行追加，則必須由於「內容轉移工具」中的目前限制而停用版本清除。 如果您偏好保持版本清除已啟用，並在遷移集中執行追加，則必須以`wipe=true`的形式執行擷取。
 
@@ -83,26 +83,24 @@ ht-degree: 36%
 
 1. 選取Adobe Experience Manager並導覽至工具 — > **操作** -> **內容移轉**。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. 從&#x200B;**內容遷移**&#x200B;嚮導中選擇&#x200B;**內容轉移**&#x200B;選項。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. 建立第一個移轉集時，會顯示下列主控台。 按一下&#x200B;**建立移轉集**&#x200B;以建立新的移轉集。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
-
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >如果您有現有的移轉集，主控台會顯示現有移轉集清單及其目前狀態。
 
-   此外，按一下&#x200B;**建立用戶映射配置**&#x200B;以訪問[用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)。
 
 1. 按照下面所述，填入&#x200B;**建立移轉集**&#x200B;畫面中的欄位。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **名稱**：輸入移轉集名稱。
       >[!NOTE]
@@ -122,6 +120,9 @@ ht-degree: 36%
    1. **參數**：選取以下參數以建立移轉集：
 
       1. **包含版本**：視需要選取。包含版本時，會自動包含路徑`/var/audit`以遷移審核事件。
+
+      ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+
       >[!NOTE]
       >如果您要將版本納入移轉集，並要使用`wipe=false`執行追加，則必須由於「內容轉移工具」中的目前限制而停用版本清除。 如果您偏好保持版本清除已啟用，並在遷移集中執行追加，則必須以`wipe=true`的形式執行擷取。
 
@@ -135,6 +136,7 @@ ht-degree: 36%
          >* `/libs`
          >* `/home`
          >* `/etc` (在 `/etc` CTT中允許選取某些路徑)
+
 
 
 
@@ -191,7 +193,7 @@ ht-degree: 36%
 
 >[!NOTE]
 >初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
->此外，必須不要將現有內容的內容結構從採取初始擷取時變更為執行追加擷取時。 自初始擷取後，結構已變更的內容無法執行追加。 請務必在移轉程式期間加以限制。
+>此外，必須不要將現有內容的內容結構從採取初始擷取時變更為執行追加擷取時。 自初始擷取後，無法對結構已變更的內容執行追加。 請務必在移轉程式期間加以限制。
 
 提取程序一旦完成，您即可使用追加提取方法來轉移差異內容。請遵循下列步驟：
 
