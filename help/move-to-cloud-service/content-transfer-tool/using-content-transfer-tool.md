@@ -2,10 +2,10 @@
 title: 使用內容轉移工具
 description: 使用內容轉移工具
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
+source-git-commit: 5243efa12fdca7e2e2d6ab23b38e8d09c6ea4945
 workflow-type: tm+mt
-source-wordcount: '3193'
-ht-degree: 36%
+source-wordcount: '3199'
+ht-degree: 35%
 
 ---
 
@@ -140,19 +140,21 @@ ht-degree: 36%
 
 
 
-1. 在填入&#x200B;**建立移轉集**&#x200B;詳細資訊畫面中的所有欄位後，按一下「**儲存**」。
+1. 填入&#x200B;**建立移轉集**&#x200B;詳細資訊畫面中的所有欄位後，按一下「**儲存**」。
 
-1. 您的移轉集會顯示在&#x200B;*綜覽*&#x200B;頁面中。
+1. 您將在&#x200B;**內容轉移**&#x200B;精靈中檢視移轉集，如下圖所示。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   此螢幕上的所有現有遷移集都顯示在&#x200B;*概述*&#x200B;頁面上，其當前狀態和狀態資訊。 您可能會看到以下說明的其中一些圖示。
+   所有現有遷移集都顯示在&#x200B;**內容轉移**&#x200B;嚮導中，並顯示其當前狀態和狀態資訊。 您可能會看到以下說明的其中一些圖示。
 
    * *紅色雲朵*&#x200B;表示您無法完成提取程序。
    * *green cloud*&#x200B;表示您可以完成提取程式。
    * *黃色圖示*&#x200B;表示您並未建立現有移轉集，且該特定移轉集是由相同例項中的其他使用者所建立。
 
-1. 從「綜覽」頁面選取移轉集，然後按一下&#x200B;**屬性**&#x200B;以檢視或編輯移轉集屬性。編輯屬性時，無法變更容器名稱或服務URL。
+1. 選擇遷移集，然後按一下&#x200B;**屬性**&#x200B;以查看或編輯遷移集屬性。 編輯屬性時，無法變更&#x200B;**移轉集名稱**&#x200B;或&#x200B;**服務URL**。
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ### 內容轉移中的提取程序 {#extraction-process}
