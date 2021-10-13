@@ -2,7 +2,7 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 19c84c9acaf8202dcb96ff25b4d674555ebc2d92
+source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 32%
@@ -102,7 +102,7 @@ ht-degree: 32%
 
 1. 您將在&#x200B;**內容轉移**&#x200B;精靈中檢視移轉集，如下圖所示。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
    所有現有遷移集都顯示在&#x200B;**內容轉移**&#x200B;嚮導中，並顯示其當前狀態和狀態資訊。 您可能會看到以下說明的其中一些圖示。
 
