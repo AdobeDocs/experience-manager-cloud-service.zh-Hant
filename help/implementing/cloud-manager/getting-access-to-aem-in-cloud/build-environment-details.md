@@ -2,9 +2,9 @@
 title: 建置環境詳細資訊
 description: 建置環境詳細資訊 — Cloud Services
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: f39cc7bcbfe11c64a0fc7bb673f9e9286214106d
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ Cloud Manager會使用專用的建置環境來建立和測試您的程式碼。 
 * 建置環境是以Linux為基礎，衍生自Ubuntu 18.04。
 * 已安裝Apache Maven 3.6.0。
 * 安裝的Java版本為OracleJDK 8u202、Azul Zulu 8u292、OracleJDK 11.0.2和Azul Zulu 11.0.11。
+* 預設情況下，`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk1.8.0_202`，其中包含OracleJDK 8u202。 如需詳細資訊，請參閱[替代Maven執行JDK版本](#alternate-maven-jdk-version)一節。
 * 安裝了一些必需的附加系統軟體包：
 
    * bzip2
@@ -71,7 +72,7 @@ Cloud Manager會使用專用的建置環境來建立和測試您的程式碼。 
 
 這會導致所有工具鏈感知的Maven外掛程式都使用OracleJDK（第11版）。
 
-使用此方法時，Maven本身仍使用預設的JDK(Oracle8)執行。 因此，透過外掛程式（例如Apache Maven Enforcer外掛程式）檢查或強制執行Java版本時無法運作，且不得使用這類外掛程式。
+使用此方法時，Maven本身仍使用預設的JDK(Oracle8)執行，且JAVA_HOME環境變數未變更。 因此，透過外掛程式（例如Apache Maven Enforcer外掛程式）檢查或強制執行Java版本時無法運作，且不得使用這類外掛程式。
 
 當前可用的供應商/版本組合包括：
 
@@ -89,11 +90,7 @@ Cloud Manager會使用專用的建置環境來建立和測試您的程式碼。 
 
 還可以選擇Azul 8或Azul 11作為JDK，以執行整個Maven執行。 與工具鏈選項不同，這會更改用於所有插件的JDK，除非還設定了工具鏈配置，在這種情況下，工具鏈配置仍應用於具有工具鏈的Maven插件。 因此，使用[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/)檢查並強制執行Java版本將有效。
 
-若要這麼做，請在管道使用的Git存放庫分支中建立名為`.cloudmanager/java-version`的檔案。 此檔案可包含內容11或8。 會忽略任何其他值。 如果指定了11，則使用Azul 11。 如果指定8，則使用Azul 8。
-
->[!NOTE]
->在Cloud Manager未來的版本中，預設JDK將被更改，預設JDK將為Azul 11。 不與Java 11相容的專案應盡快建立包含內容8的此檔案，以確保這些檔案不受此開關影響。
-
+若要這麼做，請在管道使用的Git存放庫分支中建立名為`.cloudmanager/java-version`的檔案。 此檔案可包含內容11或8。 會忽略任何其他值。 如果指定了11，則使用Azul 11，並將JAVA_HOME環境變數設定為`/usr/lib/jvm/jdk-11.0.11`。 如果指定8，則使用Azul 8，並將JAVA_HOME環境變數設定為`/usr/lib/jvm/jdk-8.0.292`。
 
 ## 環境變數 {#environment-variables}
 

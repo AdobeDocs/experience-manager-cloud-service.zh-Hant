@@ -1,42 +1,52 @@
 ---
-title: AEM as aCloud Service中Cloud Manager的發行說明2021.9.0版
-description: AEM as aCloud Service中Cloud Manager的發行說明2021.9.0版
+title: AEMas a Cloud Service版2021.10.0中的Cloud Manager發行說明
+description: AEMas a Cloud Service版2021.10.0中的Cloud Manager發行說明
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: ae619bb5a9ecc030fd3fa486445bcca7d3386df6
+source-git-commit: 3b1ff5f1715cd18228a9b7e5c57b0f3d84ee0eb0
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 5%
+source-wordcount: '378'
+ht-degree: 3%
 
 ---
 
-# Adobe Experience Manager as aCloud Service2021.9.0中的Cloud Manager發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.10.0中的Cloud Manager發行說明 {#release-notes}
 
-本頁概述AEM as a 2021.9.0Cloud Service中Cloud Manager的發行說明。
+本頁概述AEM 2021.10.0中Cloud Manager的發行說明。
 
 >[!NOTE]
->若要查看Adobe Experience Manager as aCloud Service的最新發行說明，請按一下[here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hant)。
+>若要查看最新的Adobe Experience Manager as a Cloud Service發行說明，請按一下[here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hant)。
 
 ## 發行日期 {#release-date}
 
-AEM as aCloud Service2021.9.0中的Cloud Manager發行日期為2021年9月9日。
-下一版預計於2021年10月7日發行。
+AEMas a Cloud Service的Cloud Manager發行日期為2021.10.0年10月14日。
+下一版預計於2021年11月4日發行。
 
 ### 新增功能 {#what-is-new}
 
-* Cloud Manager使用的AEM專案原型版本已更新為30版。
+* 為了準備一些即將進行的更改，現在將在用戶介面中引用現有部署管道，並將其標籤為&#x200B;**完整堆棧**&#x200B;管道。
 
-* Cloud Manager登陸頁面上的方案卡片和相關聯的體驗已重新整理。
+* 管道卡已重新整理，現在會顯示顯示生產管道和非生產管道的單一整合面板，且使用者可從與每個管道相關聯的動作功能表中直接選取「執行/暫停/繼續」。
 
-* 程式碼品質步驟記錄現在包含OakPal掃描程式的詳細記錄資訊。
+* 部署管理員角色中的使用者現在可以透過UI以自助方式刪除生產管道。
 
-* 「活動」頁面功能表選項現在包含已完成代碼產生器執行的&#x200B;**下載記錄**&#x200B;選項。 選取此選項將下載建置步驟的記錄檔。
+* 新增和編輯管道體驗已重新整理，現在可使用熟悉的現代模組。
 
-* 直接按一下「方案」卡片，現在會導覽至Cloud Manager的&#x200B;**概述**&#x200B;頁面。 如需詳細資訊，請參閱[建立生產程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) 。
+* Cloud Manager的使用者現在可以透過登錄頁面右上角的&#x200B;**Feedback**&#x200B;按鈕，直接從使用者介面提交意見。
+
+* 每年的SLA圖表現在可以從Cloud Manager的使用者介面下載。
+
+* 程式碼品質和非生產管道執行現在會在建置步驟期間使用更有效率的淺層復製程式，為擁有特別大型Git存放庫的客戶提供更快的建置時間。
+
+* 「新增IP允許清單」精靈現在會通知使用者已達到允許的IP允許清單數目上限。
+
+* Cloud Manager API檔案現在包含互動式操作場，可讓登入的使用者透過瀏覽器試驗API。 請參閱[Cloud Manager API遊樂場](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/)
+
+* 如果禁用「導航到」下的選擇選項，則「程式」卡上的工具提示將更具描述性。 現在會顯示「生產環境不存在」。
 
 ### 錯誤修正 {#bug-fixes}
 
-* 在程式中新增IP允許清單時，使用者現在會看到更容易理解的訊息，此程式已達到可設定的IP允許清單允許數量上限。
+* 在極少數情況下，當Adobe員工恢復客戶的環境時，在環境完全運行之前，會將恢復視為已完成。
 
-* 從「儲存庫」螢幕選擇「複製URL」菜單選項時，複製了錯誤的URL。
+* 環境建立期間提出的某些內部請求未重試。
 
