@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
+source-git-commit: 6b20a7bcbd16b59da8dc29b324016c3da1e71686
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 8%
+source-wordcount: '775'
+ht-degree: 9%
 
 ---
 
@@ -80,16 +80,16 @@ ht-degree: 8%
 | PSD   * | ✓ | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-*從PSD檔案擷取合併的影像。 它是由[!DNL Adobe Photoshop]生成並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
+*從PSD檔案擷取合併的影像。 它是由[!DNL Adobe Photoshop]產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
 
 [!DNL Dynamic Media]中不支援的光柵影像檔案格式的以下子類型：
 
 * IDAT區塊大小大於100 MB的PNG檔案。
 * PSB檔案。
-* 不支援使用CMYK、RGB、灰度或點陣圖以外的顏色空間的PSD檔案。 不支援DuoTone、Lab和索引色空間。
-* 位深度大於16的PSD檔案。
-* 具有浮點資料的TIFF檔案。
-* 具有Lab色域的TIFF檔案。
+* 不支援具有CMYK、RGB、灰度或點陣圖以外的顏色空間的PSD檔案。 不支援DuoTone、Lab和索引色空間。
+* PSD位深度大於16的檔案。
+* TIFF具有浮點資料的檔案。
+* TIFF具有Lab色域的檔案。
 
 ## 3D格式 {#support-3d-formats}
 
@@ -146,7 +146,7 @@ ht-degree: 8%
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | DOC | - | - | - | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - |
+| ePub | - | ✓ | - | - | - |
 | HTML | - | ✓ | - | ✓ | ✓ |
 | ODF | ✓ | ✓ | ✓ | - | - |
 | ODM | ✓ | ✓ | ✓ | - | - |
@@ -205,17 +205,15 @@ ht-degree: 8%
 | 影片副檔名 | 容器 | 建議的視訊轉碼器 | 不支援的視訊轉碼器 |
 |------------------------|--------------------|--------|-------|
 | MP4 | MPEG-4 | H264/AVC（所有配置檔案） | - |
-| MOV, QT | Apple QuickTime | H264/AVC、Apple ProRes422 &amp; HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV(DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple Meditrate,Apple動畫 |
+| MOV, QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV(DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple中級，Apple動畫 |
 | FLV、F4V | AdobeFlash | H264/AVC, Flix VP6, H263, Sorenson | SWF（向量動畫檔案） |
-| WMV | Windows Media 9 | WMV3(v9)、WMV2(v8)、WMV1(v7)、GoToMeeting(G2M2、G2M3、G2M4) | Microsoft螢幕(MSS2)、Microsoft照片(WVP2) |
+| WMV | Windows Media 9 | WMV3(v9)、WMV2(v8)、WMV1(v7)、GoToMeeting(G2M2、G2M3、G2M4) | Microsoft Screen(MSS2)、Microsoft Photo Story(WVP2) |
 | MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
 | M4V | Apple iTunes | H264/AVC | - |
 | AVI | A/V插播 | XVID、DIVX、HDV、MiniDV(DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3(IV30)、MJPEG、Microsoft Video 1(MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | 奧格夫、奧格 | 奧格 | 蒂奧拉，VP3，狄拉克 | - |
 | MKV | 馬特羅斯卡 | H264/AVC | - |
-| RAM、RM | RealVideo | 不支援 | Real G2(RV20)、Real 8(RV30)、Real 10(RV40) |
-| MJ2 | 動作JPEG 2000 | 運動JPEG 2000編解碼器 | - |
 
 ## 音訊格式 {#audio-formats}
 
