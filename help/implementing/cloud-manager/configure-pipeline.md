@@ -2,9 +2,9 @@
 title: 設定CI/CD管道 — Cloud Services
 description: 設定CI/CD管道 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
+source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,10 @@ ht-degree: 0%
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. **源**&#x200B;頁簽允許忽略Web層配置，並從&#x200B;**生產部署選項**&#x200B;進行更新。
+   1. **Source**&#x200B;索引標籤提供選項，讓您忽略管道的Web層配置，並在部署至生產&#x200B;**之前勾選或取消勾選**&#x200B;暫停，以及從&#x200B;**生產部署選項**&#x200B;排程&#x200B;**選項。**
+
+      >[!NOTE]
+      >如果未選中&#x200B;**忽略Web層配置** ，管道也將部署Web層配置。
 
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
