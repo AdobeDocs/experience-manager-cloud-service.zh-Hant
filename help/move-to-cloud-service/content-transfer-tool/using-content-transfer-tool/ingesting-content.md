@@ -1,15 +1,15 @@
 ---
-title: 在內容轉移工具中將內容擷取到目標中
-description: 在內容轉移工具中將內容擷取到目標中
-source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
+title: 將內容擷取至Target
+description: 將內容擷取至Target
+source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 27%
+source-wordcount: '542'
+ht-degree: 28%
 
 ---
 
 
-# 在內容轉移工具中將內容擷取到目標中 {#ingesting-content}
+# 將內容擷取至Target {#ingesting-content}
 
 ## 內容轉移工具中的擷取程式 {#ingestion-process}
 
