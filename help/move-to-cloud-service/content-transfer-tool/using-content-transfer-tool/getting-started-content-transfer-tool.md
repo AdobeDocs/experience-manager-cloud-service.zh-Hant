@@ -2,10 +2,10 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
+source-git-commit: 1083f3913bdf0ff64f50f6e731e4fc2804a3036e
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 32%
+source-wordcount: '742'
+ht-degree: 33%
 
 ---
 
@@ -79,12 +79,11 @@ ht-degree: 32%
 
       1. **包含版本**：視需要選取。包含版本時，會自動包含路徑`/var/audit`以遷移審核事件。
 
-      ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
-      >[!NOTE]
-      >如果您要將版本納入移轉集，並要使用`wipe=false`執行追加，則必須由於「內容轉移工具」中的目前限制而停用版本清除。 如果您偏好保持版本清除已啟用，並在遷移集中執行追加，則必須以`wipe=true`的形式執行擷取。
+         >[!NOTE]
+         >如果您要將版本納入移轉集，並要使用`wipe=false`執行追加，則必須由於「內容轉移工具」中的目前限制而停用版本清除。 如果您偏好保持版本清除已啟用，並在遷移集中執行追加，則必須以`wipe=true`的形式執行擷取。
 
-      1. **包含來自IMS使用者和群組的對應**:選取要包含IMS使用者和群組對應的選項。如需詳細資訊，請參閱[使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) 。
 
       1. **欲包含的路徑**：使用路徑瀏覽器來選取需要移轉的路徑。路徑選擇器通過鍵入或選擇接受輸入。
 
@@ -94,8 +93,6 @@ ht-degree: 32%
          >* `/libs`
          >* `/home`
          >* `/etc` (在 `/etc` CTT中允許選取某些路徑)
-
-
 
 
 1. 填入&#x200B;**建立移轉集**&#x200B;詳細資訊畫面中的所有欄位後，按一下「**儲存**」。
