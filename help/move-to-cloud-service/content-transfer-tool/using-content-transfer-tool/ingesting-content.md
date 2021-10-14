@@ -1,10 +1,10 @@
 ---
 title: 在內容轉移工具中將內容擷取到目標中
 description: 在內容轉移工具中將內容擷取到目標中
-source-git-commit: d638fe0f4711bd152bd9c4be99a68662f12072e6
+source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 34%
+source-wordcount: '554'
+ht-degree: 27%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 34%
 
 1. 擷取完成後，**製作擷取**&#x200B;底下的狀態會更新為&#x200B;**FINISHED**。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-05.png)
 
 ## 追加擷取 {#top-up-ingestion-process}
 
@@ -58,9 +58,18 @@ ht-degree: 34%
 
 擷取程序一旦完成，您即可使用追加擷取方法來轉移差異內容。請遵循下列步驟：
 
-1. 導覽至&#x200B;*綜覽*&#x200B;頁面，並選取您要執行追加擷取的移轉集。按一下&#x200B;**擷取**&#x200B;即可開始追加提取。**移轉集擷取**&#x200B;對話框隨即顯示。
+1. 導覽至&#x200B;**內容轉移**&#x200B;精靈，並選取您要執行追加擷取的移轉集。 按一下&#x200B;**擷取**&#x200B;即可開始追加提取。
 
-   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest1.png)
+
+
+1. **移轉集擷取**&#x200B;對話框隨即顯示。
+
+   ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest2.png)
 
    >[!IMPORTANT]
    >您應停用「擷取&#x200B;**之前擦去雲端例項上的現有內容」選項，以防止從先前的擷取活動中刪除現有內容。**&#x200B;此外，按一下&#x200B;**客戶服務**&#x200B;來記錄票證，如上圖所示。
+
+## 下一步 {#whats-next}
+
+在內容轉移工具中學習將內容擷取至Target後，您就可以在完成每個步驟（擷取和擷取）時檢視記錄，並尋找錯誤。 請參閱[檢視移轉集記錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en)以深入了解。
