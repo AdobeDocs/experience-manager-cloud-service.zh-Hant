@@ -2,9 +2,9 @@
 title: 設定CI/CD管道 — Cloud Services
 description: 設定CI/CD管道 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -129,12 +129,9 @@ ht-degree: 0%
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. **Source**&#x200B;索引標籤提供選項，讓您忽略管道的Web層配置，並在部署至生產&#x200B;**之前勾選或取消勾選**&#x200B;暫停，以及從&#x200B;**生產部署選項**&#x200B;排程&#x200B;**選項。**
+   1. **Source**&#x200B;索引標籤提供選項，可在部署至生產&#x200B;**之前勾選或取消勾選**&#x200B;暫停，以及從&#x200B;**生產部署選項**&#x200B;排程&#x200B;**選項。**
 
-      >[!NOTE]
-      >如果未選中&#x200B;**忽略Web層配置** ，管道也將部署Web層配置。
-
-      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-editnotier.png)
 
    1. **體驗稽核**&#x200B;選項可讓您更新或新增頁面。
 
@@ -148,41 +145,59 @@ ht-degree: 0%
 
 在主螢幕上，這些管道會列在新卡中：
 
-1. 從Cloud Manager主畫面存取&#x200B;**非生產管道**&#x200B;方塊。
+1. 從Cloud Manager主畫面存取&#x200B;**管道**&#x200B;卡片。 按一下&#x200B;**+Add**&#x200B;並選擇&#x200B;**添加非生產管道**。
 
-   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. 按一下&#x200B;**Add**&#x200B;按鈕，以指定管道名稱、管道類型和Git分支。
+1. **添加非生產管道**  對話框隨即顯示。選取您要建立的管道類型，可以是&#x200B;**代碼品質管道**&#x200B;或&#x200B;**部署管道**。
 
-   此外，您也可以從管道選項設定部署觸發程式和重要失敗行為。
+   此外，您也可以從&#x200B;**部署選項**&#x200B;設定&#x200B;**部署觸發器**&#x200B;和&#x200B;**重要失敗行為**。 按一下&#x200B;**繼續**。
 
-   ![](assets/non-prod-pipe1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. 按一下「**儲存**」，主畫面的卡片上會顯示管道，包含五個動作，如下所示：
+1. **已選擇完** 整堆棧代碼。您可以選擇&#x200B;**Repository**&#x200B;和&#x200B;**Git分支**。 按一下&#x200B;**Save**。
 
-   ![](/help/implementing/cloud-manager/assets/prod-one.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
-   * **編輯**  — 允許編輯管道設定
-   * **詳細資訊**  — 提供管道執行的詳細資訊
-   * **建置**  — 導覽至執行頁面，可從該頁面執行管道
-   * **存取存放庫資訊**  — 可讓使用者取得存取Cloud Manager Git存放庫所需的資訊
+1. 新建立的非生產管道現在顯示在&#x200B;**管道**&#x200B;卡中。
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add4.png)
+
+
+   管道會顯示在主畫面的卡片上，包含三個動作，如下所示：
+
+   * **新增**  — 允許新增管道。
+   * **存取存放庫資訊**  — 可讓使用者取得存取Cloud Manager Git存放庫所需的資訊。
    * **了解更多**  — 導覽至了解CI/CD管道檔案資源。
 
 ### 編輯非生產管道 {#editing-nonprod-pipeline}
 
-您可以從&#x200B;**程式概述**&#x200B;頁面編輯管道設定。
+您可以從&#x200B;**程式概述**&#x200B;頁面的&#x200B;**管道卡**&#x200B;編輯管道配置。
 
 請依照下列步驟編輯已設定的非生產管道：
 
 1. 從&#x200B;**程式概述**&#x200B;頁面導覽至&#x200B;**管道**&#x200B;卡片。
 
-1. 選擇&#x200B;**非生產**&#x200B;頁簽，並在選擇所需管道後按一下&#x200B;**編輯**。
+1. 選擇非生產管道，然後按一下&#x200B;**...**。 按一下&#x200B;**Edit**，如下圖所示。
 
-   ![](assets/configure-pipeline/non-prod-edit-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit1.png)
 
-1. 選擇所需的儲存庫和其他必需的更新，然後按一下&#x200B;**Save**。
+1. 隨即顯示&#x200B;**編輯生產管道**&#x200B;對話方塊。
 
-   ![](assets/configure-pipeline/edit-nonprodenv.png)
+   1. **Configuration**&#x200B;標籤允許您更新&#x200B;**Pipeline Name**、**Deployment Trigger**&#x200B;和&#x200B;**Important Metrics Failure Behavior**。
+
+      >[!NOTE]
+      >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) ，了解如何在Cloud Manager中新增和管理存放庫。
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit2.png)
+
+
+   1. **原始碼**&#x200B;標籤提供您更新&#x200B;**Repository**&#x200B;和&#x200B;**Git分支**。
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
+
+1. 編輯完非生產管道後，按一下「**更新**」。
+
 
 ## 後續步驟 {#the-next-steps}
 

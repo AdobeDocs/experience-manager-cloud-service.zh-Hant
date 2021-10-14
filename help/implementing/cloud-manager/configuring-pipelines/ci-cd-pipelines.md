@@ -2,15 +2,25 @@
 title: CI-CD管道
 description: CI-CD管道
 index: false
-source-git-commit: b8b4d0b9e7e1dfc6809d2e193a2c2fd2438ecdb6
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
 
 
 # Cloud Manager CI-CD管道 {#intro-cicd}
+
+## 簡介 {#introduction}
+
+>[!NOTE]
+>Cloud Manager中的CI/CD管道是由事件觸發，例如來自原始碼存放庫的提取請求、程式碼變更或定期排程以符合發行順序。
+
+若要設定管道，您必須：
+* 定義將啟動管道的觸發器
+* 定義控制生產部署的參數
+* 配置效能測試參數
 
 在Cloud Manager中，有兩種管道：
 
@@ -31,19 +41,3 @@ ht-degree: 0%
 
 >[!NOTE]
 >如需詳細資訊，請參閱僅限非生產及代碼品質的管道。
-
-Cloud Manager的生產及非生產管道支援的部署和程式碼品質分為兩種不同類型：
-
-* 前端
-* 完整堆棧
-
-下表匯總了管道：
-
-
->[!NOTE]
->Cloud Manager中的CI/CD管道是由事件觸發，例如來自原始碼存放庫的提取請求、程式碼變更或定期排程以符合發行順序。
->
->若要設定管道，您必須：
->* 定義將啟動管道的觸發器
->* 定義控制生產部署的參數
->* 配置效能測試參數
