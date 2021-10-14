@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
@@ -100,6 +100,10 @@ At the very start you need to enable Content Fragment Models for your site, this
 >[!NOTE]
 >
 >如果作者嘗試發佈模型尚未發佈的內容片段，選取清單會指出這點，且模型將會隨片段發佈。
+
+>[!NOTE]
+>
+>「鎖定（已發佈）內容片段模型」功能是測試版。
 
 發佈模型後，就會在作者上將其&#x200B;*locked*&#x200B;鎖定至「唯讀」模式。 這可防止發生變更，導致現有GraphQL結構和查詢發生錯誤，尤其是在發佈環境中。 它在控制台中由&#x200B;**Locked**&#x200B;指示。
 
