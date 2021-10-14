@@ -2,9 +2,9 @@
 title: 設定CI/CD管道 — Cloud Services
 description: 設定CI/CD管道 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
+source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 0%
 
    如需詳細資訊，請參閱[僅限非生產與程式碼品質管道](configure-pipeline.md#non-production-pipelines)。
 
->[!NOTE]
->若要設定管道，您必須：
-> * 定義將啟動管道的觸發器。
-> * 定義控制生產部署的參數。
-> * 配置效能測試參數。
+   >[!NOTE]
+   >若要設定管道，您必須：
+   > * 定義將啟動管道的觸發器。
+   > * 定義控制生產部署的參數。
+   > * 配置效能測試參數。
 
 
 ## 設定生產管道 {#setting-up-production-pipeline}
@@ -115,31 +115,33 @@ ht-degree: 0%
 
 1. 從&#x200B;**程式概述**&#x200B;頁面導覽至&#x200B;**管道**&#x200B;卡片。
 
-1. 按一下&#x200B;**管道**&#x200B;卡中的&#x200B;**編輯**。
+1. 按一下&#x200B;**...**&#x200B;管道&#x200B;**卡上的**，按一下&#x200B;**編輯**，如下圖所示。
 
-   ![](assets/configure-pipeline/edit-pipeline-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit1.png)
 
-1. **原始碼**&#x200B;頁簽允許您更新儲存庫。 按一下&#x200B;**存取存放庫資訊**&#x200B;以更新存放庫。
+1. 隨即顯示&#x200B;**編輯生產管道**&#x200B;對話方塊。
 
-   >[!NOTE]
-   >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) ，了解如何在Cloud Manager中新增和管理存放庫。
+   1. **Configuration**&#x200B;標籤允許您更新&#x200B;**Pipeline Name**、**Deployment Trigger**&#x200B;和&#x200B;**Important Metrics Failure Behavior**。
 
-   ![](assets/configure-pipeline/edit-pipeline-2.png)
+      >[!NOTE]
+      >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) ，了解如何在Cloud Manager中新增和管理存放庫。
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-1. **Environments**&#x200B;標籤可讓您更新預備和生產選項。
+   1. **源**&#x200B;頁簽允許忽略Web層配置，並從&#x200B;**生產部署選項**&#x200B;進行更新。
 
-   ![](assets/configure-pipeline/edit-pipeline-3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
-1. **體驗稽核**&#x200B;選項可讓您更新或新增頁面。
+   1. **體驗稽核**&#x200B;選項可讓您更新或新增頁面。
 
-   ![](assets/configure-pipeline/edit-pipeline-4.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
-1. 編輯管道後，按一下「**儲存**」。
+1. 編輯管道後，按一下&#x200B;**更新**。
 
 ## 僅限非生產和代碼品質的管道 {#non-production-pipelines}
 
-除了部署到預備和生產的主管道外，客戶還可以設定其他管道，稱為&#x200B;**非生產管道**。 這些管道一律會執行建置和程式碼品質步驟。 他們也可選擇部署至AEM作為Cloud Service環境。
+除了部署到預備和生產的主管道外，客戶還可以設定其他管道，稱為&#x200B;**非生產管道**。 這些管道一律會執行建置和程式碼品質步驟。 他們也可選擇部署至AEMas a Cloud Service環境。
 
 在主螢幕上，這些管道會列在新卡中：
 
