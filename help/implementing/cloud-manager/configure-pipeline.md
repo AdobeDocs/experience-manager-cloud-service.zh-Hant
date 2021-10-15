@@ -2,9 +2,9 @@
 title: 設定CI/CD管道 — Cloud Services
 description: 設定CI/CD管道 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
+source-git-commit: eb8fb1f4134ceb9117773d01f4d97c68bd8c41a2
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1407'
 ht-degree: 0%
 
 ---
@@ -89,22 +89,24 @@ ht-degree: 0%
 
 1. **新增生產管道**&#x200B;對話方塊包含標示為&#x200B;**體驗稽核**&#x200B;的第三個索引標籤。 此選項提供URL路徑的表格，這些路徑應一律包含在「體驗稽核」中。
 
-   >[!NOTE]
-   >您必須按一下&#x200B;**新增頁面**&#x200B;以定義您自己的自訂連結。
-
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
+
+   >[!IMPORTANT]
+   >您必須按一下&#x200B;**新增頁面**&#x200B;以定義您自己的自訂連結。 頁面路徑的開頭必須為`/`。
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit2.png)
+
 
    按一下「**新增頁面**」 ，提供要納入體驗稽核的URL路徑。
 
-   例如，如果您想要在體驗稽核中加入`https://wknd.site/us/en/about-us.html`，請在此欄位中輸入路徑`us/en/about-us.html`，然後按一下&#x200B;**儲存**。
+   例如，如果您想要在體驗稽核中加入`https://wknd.site/us/en/about-us.html`，請在此欄位中輸入路徑`/us/en/about-us.html`，然後按一下&#x200B;**儲存**。
 
-   ![](assets/exp-audit4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
    表格中顯示的URL將是：
 
    `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
-   ![](assets/exp-audit5.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
    最多可包含25列。 如果此區段中沒有使用者提交的頁面，依預設，網站首頁會包含在體驗稽核中。
 
