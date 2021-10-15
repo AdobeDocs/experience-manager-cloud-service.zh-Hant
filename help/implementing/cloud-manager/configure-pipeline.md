@@ -2,9 +2,9 @@
 title: 設定CI/CD管道 — Cloud Services
 description: 設定CI/CD管道 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: cbc5d8c2c4c1901556d5eaa336c61b68500ed8b8
+source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
 
-   您可以定義觸發器以啟動管道：
+   您可以定義部署觸發器以啟動管道。
 
    * **手動**  — 使用UI手動啟動管道。
    * **On Git Changes**  — 每當有提交項新增至設定的Git分支時，就會啟動CI/CD管道。即使選取此選項，也始終可以手動啟動管道。
@@ -71,14 +71,16 @@ ht-degree: 0%
       在管道設定或編輯期間，部署管理器可以選擇在任何質量門中遇到重要故障時定義管道的行為。
 
       這對希望實現更自動化流程的客戶非常有用。 可用選項包括：
+   您可以定義重要失敗量度行為以啟動管道。
 
-      * **每次詢問**  — 此為預設設定，需要手動干預任何「重要」失敗。
-      * **立即取消**  — 如果選中此選項，則每當出現「重要」故障時，管道都將被取消。這實質上是模擬用戶手動拒絕每個故障。
-      * **立即核准**  — 如果選取此選項，每當發生「重要」故障時，管道就會自動繼續。這實際上是在模擬使用者手動核准每個失敗。
+   * **每次詢問**  — 此為預設設定，需要手動干預任何「重要」失敗。
+   * **立即失敗**  — 如果選中此選項，則每當出現「重要」故障時，管道都將被取消。這實質上是模擬用戶手動拒絕每個故障。
+   * **立即繼續**  — 如果選中此選項，則每當出現「重要」(Important)故障時，管道將自動繼續。這實際上是在模擬使用者手動核准每個失敗。
 
-1. **已選擇完** 整堆棧代碼。您可以選擇&#x200B;**Repository**&#x200B;和&#x200B;**Git分支**。 按一下&#x200B;**Save**。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+1. **添加生產管道**&#x200B;對話框包含標籤為&#x200B;**原始碼**&#x200B;的第二個頁簽。 **已選擇完** 整堆棧代碼。您可以選擇&#x200B;**Repository**&#x200B;和&#x200B;**Git分支**。 按一下&#x200B;**Save**。
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
 1. **新增生產管道**&#x200B;對話方塊包含標示為&#x200B;**體驗稽核**&#x200B;的第三個索引標籤。 此選項提供URL路徑的表格，這些路徑應一律包含在「體驗稽核」中。
 
@@ -150,6 +152,8 @@ ht-degree: 0%
 
 除了部署到預備和生產的主管道外，客戶還可以設定其他管道，稱為&#x200B;**非生產管道**。 這些管道一律會執行建置和程式碼品質步驟。 他們也可選擇部署至AEMas a Cloud Service環境。
 
+### 新增非生產管道 {#adding-non-production-pipeline}
+
 在主螢幕上，這些管道會列在新卡中：
 
 1. 從Cloud Manager主畫面存取&#x200B;**管道**&#x200B;卡片。 按一下&#x200B;**+Add**&#x200B;並選擇&#x200B;**添加非生產管道**。
@@ -158,7 +162,7 @@ ht-degree: 0%
 
 1. **添加非生產管道**  對話框隨即顯示。選取您要建立的管道類型，可以是&#x200B;**代碼品質管道**&#x200B;或&#x200B;**部署管道**。
 
-   此外，您也可以從&#x200B;**部署選項**&#x200B;設定&#x200B;**部署觸發器**&#x200B;和&#x200B;**重要失敗行為**。 按一下&#x200B;**繼續**。
+   此外，您也可以從&#x200B;**部署選項**&#x200B;設定&#x200B;**部署觸發器**&#x200B;和&#x200B;**重要度量失敗行為**。 按一下&#x200B;**繼續**。
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
@@ -191,7 +195,7 @@ ht-degree: 0%
 
 1. 隨即顯示&#x200B;**編輯生產管道**&#x200B;對話方塊。
 
-   1. **Configuration**&#x200B;標籤允許您更新&#x200B;**Pipeline Name**、**Deployment Trigger**&#x200B;和&#x200B;**Important Metrics Failure Behavior**。
+   1. **Configuration**&#x200B;標籤允許您更新&#x200B;**管道名稱**、**部署觸發器**&#x200B;和&#x200B;**重要度量失敗行為**。
 
       >[!NOTE]
       >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) ，了解如何在Cloud Manager中新增和管理存放庫。
