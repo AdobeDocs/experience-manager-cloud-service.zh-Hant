@@ -4,9 +4,9 @@ description: 了解內容片段模型如何成為AEM中無頭內容的基礎，�
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: e099272245054bdff0bbeaa1fd9b01e564198dee
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2850'
 ht-degree: 5%
 
 ---
@@ -77,6 +77,9 @@ AEM中的內容片段模型定義[內容片段的內容結構，](/help/assets/c
       * 許多屬性不言自明，有關其他詳細資訊，請參閱[屬性](#properties)。
       * 鍵入&#x200B;**欄位標籤**&#x200B;將自動完成&#x200B;**屬性名稱** — 如果為空，然後可手動更新。
 
+         >[!CAUTION]
+         手動更新資料類型&#x200B;**屬性名稱**&#x200B;時，請注意名稱只能包含拉丁字元、數字和底線「_」作為特殊字元。
+         如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
       例如：
 
       ![欄位屬性](assets/cfm-models-05.png)
@@ -136,6 +139,10 @@ AEM中的內容片段模型定義[內容片段的內容結構，](/help/assets/c
 ## 屬性 {#properties}
 
 許多屬性不言自明，對於某些屬性，其他詳細資訊如下：
+
+>[!CAUTION]
+手動更新&#x200B;**屬性名稱**&#x200B;時，請注意名稱只能包含拉丁字元、數字和底線「_」作為特殊字元。
+如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
 * **呈現**
 方式用於實現/呈現片段中欄位的各種選項。這通常可讓您定義作者是否會看到欄位的單一例項，或允許建立多個例項。
