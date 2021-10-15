@@ -2,9 +2,9 @@
 title: 設定CI/CD管道 — Cloud Services
 description: 設定CI/CD管道 — Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 3c9c14745e784c47eecd04ac622cc48f65d7442a
+source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,11 @@ ht-degree: 0%
 1. 從&#x200B;**程式概述**&#x200B;頁面導覽至&#x200B;**管道**卡片。
 按一下**+Add**&#x200B;並選擇&#x200B;**添加生產管道**。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
 1. **新增生產** 管道對話方塊隨即顯示。輸入管道名稱。
 
-   此外，您也可以從&#x200B;**部署選項**&#x200B;設定&#x200B;**部署觸發器**&#x200B;和&#x200B;**重要失敗行為**。 按一下&#x200B;**繼續**。
+   此外，您也可以從&#x200B;**部署選項**&#x200B;設定&#x200B;**部署觸發器**&#x200B;和&#x200B;**重要度量失敗行為**。 按一下&#x200B;**繼續**。
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
@@ -75,19 +75,24 @@ ht-degree: 0%
 
    * **每次詢問**  — 此為預設設定，需要手動干預任何「重要」失敗。
    * **立即失敗**  — 如果選中此選項，則每當出現「重要」故障時，管道都將被取消。這實質上是模擬用戶手動拒絕每個故障。
-   * **立即繼續**  — 如果選中此選項，則每當出現「重要」(Important)故障時，管道將自動繼續。這實際上是在模擬使用者手動核准每個失敗。
+   * **立即繼續**  — 如果選中此選項，則每當出現「重要」故障時，管道將自動繼續。這實際上是在模擬使用者手動核准每個失敗。
 
 
-1. **添加生產管道**&#x200B;對話框包含標籤為&#x200B;**原始碼**&#x200B;的第二個頁簽。 **已選擇完** 整堆棧代碼。您可以選擇&#x200B;**Repository**&#x200B;和&#x200B;**Git分支**。 按一下&#x200B;**Save**。
+1. **添加生產管道**&#x200B;對話框包含標籤為&#x200B;**原始碼**&#x200B;的第二個頁簽。 **已選擇完** 整堆棧代碼。您可以選擇&#x200B;**Repository**&#x200B;和&#x200B;**Git分支**。 選取「生產部署選項」，如下所述。 按一下&#x200B;**繼續**。
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   生產部署選項：
+
+   * **部署至生產環境前暫停**:此選項可讓部署在生產前暫停。
+   * **已排程**:此選項可讓使用者啟用排程的生產部署。
 
 1. **新增生產管道**&#x200B;對話方塊包含標示為&#x200B;**體驗稽核**&#x200B;的第三個索引標籤。 此選項提供URL路徑的表格，這些路徑應一律包含在「體驗稽核」中。
 
    >[!NOTE]
    >您必須按一下&#x200B;**新增頁面**&#x200B;以定義您自己的自訂連結。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
    按一下「**新增頁面**」 ，提供要納入體驗稽核的URL路徑。
 
@@ -234,6 +239,28 @@ ht-degree: 0%
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
 
 1. 編輯完非生產管道後，按一下「**更新**」。
+
+### 其他非生產管道動作 {#additional-nonprod-actions}
+
+#### 執行非生產管道 {#run-nonprod}
+
+可以從「管道」卡運行生產管道：
+
+1. 從&#x200B;**程式概述**&#x200B;頁面導覽至&#x200B;**管道**&#x200B;卡片。
+
+1. 按一下&#x200B;**...**&#x200B;管道&#x200B;**卡上的**，按一下&#x200B;**運行**，如下圖所示。
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
+
+#### 刪除非生產管道 {#delete-nonprod}
+
+您可以從「管道」卡中刪除生產管道：
+
+1. 從&#x200B;**程式概述**&#x200B;頁面導覽至&#x200B;**管道**&#x200B;卡片。
+
+1. 按一下&#x200B;**...從**&#x200B;管道&#x200B;**卡中按一下**&#x200B;刪除&#x200B;**，如下圖所示。**
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-delete.png)
 
 
 ## 後續步驟 {#the-next-steps}
