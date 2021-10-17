@@ -2,10 +2,10 @@
 title: AEMas a Cloud Service版2021.10.0中的Cloud Manager發行說明
 description: AEMas a Cloud Service版2021.10.0中的Cloud Manager發行說明
 feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 62e9466fdfd6d6ac63dad9a2bc19693f7dc8d098
+exl-id: null
+source-git-commit: 23b19789e9e9857c9ae3d763fc71586a5e5da25b
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '405'
 ht-degree: 3%
 
 ---
@@ -49,4 +49,6 @@ AEMas a Cloud Service的Cloud Manager發行日期為2021.10.0年10月14日。
 * 在極少數情況下，當Adobe員工恢復客戶的環境時，在環境完全運行之前，會將恢復視為已完成。
 
 * 環境建立期間提出的某些內部請求未重試。
+
+* 如果在域名驗證後發生部署失敗錯誤，則錯誤消息已更正，以請客戶聯繫其Adobe代表。
 
