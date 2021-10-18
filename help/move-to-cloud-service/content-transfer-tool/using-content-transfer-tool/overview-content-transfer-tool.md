@@ -2,10 +2,10 @@
 title: 內容轉移工具綜覽
 description: 內容轉移工具綜覽
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: 001c0003a19153edeb238938a8eae330396e67c5
+source-git-commit: f9becda129472f669a4d4511fc158e49be5d34d7
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 61%
+source-wordcount: '540'
+ht-degree: 58%
 
 ---
 
@@ -22,21 +22,24 @@ ht-degree: 61%
 
 此工具也會自動轉移主體 (使用者或群組)。
 
+## 內容轉移工具中的階段 {#phases-content-transfer-tool}
+
 有兩個階段與內容轉移相關聯：
 
 1. **提取**：提取指的是從來源 AEM 例項提取內容，並存放至名為&#x200B;*移轉集*&#x200B;的暫存區域。*移轉集*&#x200B;是 Adobe 提供的雲端儲存空間，可供暫時儲存在來源 AEM 例項與雲端服務 AEM 例項間轉移的內容。
 
    如需詳細資訊，請參考[內容轉移中的提取程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html)。
 
->[!NOTE]
->
-> 建議在提取階段中執行使用者對應工具。 如需詳細資訊，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html) 。
+   >[!NOTE]
+   > 建議在提取階段中執行使用者對應工具。 如需詳細資訊，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html) 。
 
 1. **擷取**：擷取指的是從&#x200B;*移轉集*&#x200B;擷取內容，並存放至目標雲端服務例項。
 
-   如需詳細資訊，請參考[內容轉移中的擷取程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html)。
+   如需詳細資訊，請參閱內容轉移中的擷取程式[。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html)
 
-*移轉集*&#x200B;有下列屬性：
+## 移轉集的屬性 {#attributes-migration-set}
+
+移轉集有下列屬性：
 
 * 在內容轉移活動期間，一次最多可建立並維護10個移轉集。
 * 每個移轉集的名稱必須是唯一的。
@@ -47,7 +50,6 @@ ht-degree: 61%
 「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。
 
 >[!NOTE]
->
 >初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
 
 如果要在提取階段中&#x200B;***追加***&#x200B;現有的移轉集，則必須停用&#x200B;*覆蓋*&#x200B;選項。如需詳細資訊，請參考[追加提取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en#top-up-extraction-process)。
