@@ -1,16 +1,16 @@
 ---
-title: 為Adobe Experience Manager設定OSGi作為Cloud Service
+title: 為Adobe Experience Manager as a Cloud Service配置OSGi
 description: '具有機密值和環境特定值的OSGi設定 '
-feature: 部署
+feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
+source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2936'
 ht-degree: 0%
 
 ---
 
-# 為Adobe Experience Manager設定OSGi作為Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
+# 為Adobe Experience Manager as a Cloud Service配置OSGi {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [](https://www.osgi.org/) OSG是Adobe Experience Manager(AEM)技術堆疊中的基本元素。它用於控制AEM及其配置的複合束。
 
@@ -62,7 +62,7 @@ OSGi設定檔案的定義位置：
 
 ## OSGi配置值的類型 {#types-of-osgi-configuration-values}
 
-有三種OSGi設定值，可與Adobe Experience Manager搭配使用作為Cloud Service。
+有三種OSGi設定值可與Adobe Experience Manager as a Cloud Service搭配使用。
 
 1. **內嵌值**，這些值會硬式編碼至OSGi設定中，並儲存在Git中。例如：
 
@@ -80,7 +80,7 @@ OSGi設定檔案的定義位置：
    } 
    ```
 
-1. **環境特定值**，這些值在開發環境之間會有所差異，因此無法以執行模式準確鎖定目標(因為Adobe Experience Manager `dev` 作為Cloud Service有單一執行模式)。例如：
+1. **環境特定值**，這些值在開發環境之間會有所差異，因此無法以執行模式準確鎖定目標(因為Adobe Experience Manager as a Cloud Service中 `dev` 有單一執行模式)。例如：
 
    ```json
    {
@@ -120,16 +120,16 @@ OSGi的常見案例是使用內嵌OSGi設定值。 環境特定設定僅用於�
 
 ### 非機密環境特定設定值的使用時機 {#when-to-use-non-secret-environment-specific-configuration-values}
 
-當預覽層的值不同或開發環境不同時，僅對非機密配置值使用環境特定配置(`$[env:ENV_VAR_NAME]`)。 這包括本機開發執行個體和任何Adobe Experience Manager作為Cloud Service開發環境。 除了為預覽層級設定唯一值外，請避免將Adobe Experience Manager的非機密環境特定設定用於Cloud Service階段或生產環境。
+當預覽層的值不同或開發環境不同時，僅對非機密配置值使用環境特定配置(`$[env:ENV_VAR_NAME]`)。 這包括本機開發執行個體和任何Adobe Experience Manager as a Cloud Service開發環境。 除了為預覽層級設定唯一值外，請避免為Adobe Experience Manager as a Cloud Service Stage或生產環境使用非機密的環境專屬設定。
 
 * 只有發佈層級和預覽層級之間不同的設定值，或開發環境（包括本機開發執行個體）之間不同的值，才使用非機密環境專屬設定。
 * 除了預覽層級需要與發佈層級不同的案例外，請對「預備」和「生產」非機密值使用OSGi設定中的標準內嵌值。 相關地，不建議使用特定於環境的配置，以便在執行階段對預備和生產環境進行配置更改；這些變更應透過原始碼管理引入。
 
 ### 何時使用機密環境特定設定值 {#when-to-use-secret-environment-specific-configuration-values}
 
-Adobe Experience Manager as aCloud Service需要針對任何機密OSGi設定值(例如密碼、私密API金鑰或基於安全理由而無法儲存在Git的任何其他值，使用環境專屬設定(`$[secret:SECRET_VAR_NAME]`)。
+Adobe Experience Manager as a Cloud Service需要針對任何機密OSGi設定值(例如密碼、私密API金鑰或基於安全原因無法儲存於Git的任何其他值，使用環境專屬設定(`$[secret:SECRET_VAR_NAME]`)。
 
-使用機密環境特定設定，將機密值儲存在所有Adobe Experience Manager上作為Cloud Service環境，包括預備和生產環境。
+使用機密環境專屬設定，以儲存所有Adobe Experience Manager as a Cloud Service環境（包括預備和生產）上機密的值。
 
 ## 建立OSGi配置 {#creating-sogi-configurations}
 
@@ -140,9 +140,9 @@ Adobe Experience Manager as aCloud Service需要針對任何機密OSGi設定值(
 JSON格式的OSGi組態檔可直接在AEM專案中手動寫入。 這通常是為知名OSGi元件建立OSGi配置的最快方法，尤其是由定義配置的同一開發人員設計和開發的自定義OSGi元件。 此方法也可用於複製/貼上和更新不同執行模式資料夾中相同OSGi元件的設定。
 
 1. 在IDE中，開啟`ui.apps`項目，找到或建立配置資料夾(`/apps/.../config.<runmode>`)，該資料夾將新OSGi配置需要的運行模式作為目標
-1. 在此配置資料夾中，建立新的`<PID>.cfg.json`檔案。 PID是OSGi元件的永久標識，通常是OSGi元件實施的完整類名。 例如：
+1. 在此配置資料夾中，建立新的`<PID>.cfg.json`檔案。 PID是OSGi元件的永久標識。 這通常是OSGi元件實施的完整類別名稱。 例如：
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-請注意，OSGi配置工廠檔案名使用命 `<PID>-<factory-name>.cfg.json` 名慣例
+請注意，OSGi配置工廠檔案名使用命 `<factoryPID>-<name>.cfg.json` 名慣例
 1. 開啟新的`.cfg.json`檔案，並依照[JSON OSGi配置格式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)定義OSGi屬性和值配對的鍵/值組合。
 1. 將更改保存到新的`.cfg.json`檔案
 1. 將新的OSGi設定檔案新增並提交至Git
@@ -537,7 +537,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ## 機密和環境特定組態值的部署考量事項 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-由於機密和環境專屬的設定值會存在於Git外部，因此不是正式Adobe Experience Manager的一部分，而是Cloud Service部署機制，因此客戶應管理、控管並整合至Adobe Experience Manager，作為Cloud Service部署程式。
+由於機密和環境專屬的設定值會存在於Git外部，因此不是正式Adobe Experience Manager as a Cloud Service部署機制的一部分，因此客戶應管理、控管並整合至Adobe Experience Manager as a Cloud Service部署程式。
 
 如上所述，呼叫API會將新變數和值部署至雲端環境，類似於一般的客戶程式碼部署管道。 製作和發佈服務會重新啟動並參考新值，通常需要幾分鐘的時間。 請注意，此程式中不會執行Cloud Manager在一般程式碼部署期間執行的品質閘道和測試。
 
