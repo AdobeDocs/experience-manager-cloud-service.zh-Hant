@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager的整備階段
 description: 本頁概述Cloud Acceleration Manager的整備階段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '782'
 ht-degree: 5%
 
 ---
@@ -67,11 +67,17 @@ ht-degree: 5%
    >[!NOTE]
    >上傳新報表會重設所有評估。
 
+### 使用打印預覽 {#print-preview-cam}
+
+您可以在Cloud Acceleration Manager中選取列印預覽選項，以便列印報表的預覽，或將報表列印為PDF格式，以方便共用。
+
+請遵循下列步驟：
+
 1. 按一下&#x200B;**列印預覽**&#x200B;圖示，如下所示。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. 按一下「**打印預覽**」將開啟一個新頁簽，其中報告顯示在可打印預覽中。 按一下&#x200B;**Print**&#x200B;將報表打印為PDF格式，以便於共用。
+1. 按一下「**打印預覽**」將開啟一個新頁簽，其中報告顯示在可打印預覽中。 按一下&#x200B;**Print**&#x200B;以將報表打印為PDF格式。
 
    >[!IMPORTANT]
    >* 建議並支援上述功能的&#x200B;**另存為PDF**&#x200B;選項。

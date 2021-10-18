@@ -1,7 +1,7 @@
 ---
 title: 在發佈執行個體上執行內容轉移工具
 description: 在發佈執行個體上執行內容轉移工具
-source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
+source-git-commit: 86b118e05b1e6947610c6032ed973394ba4b68e5
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 1%
@@ -28,7 +28,10 @@ ht-degree: 1%
 
 * 建立移轉集時，請使用製作AEMas a Cloud Service環境的URL。
 
-* 擷取至發佈期間，發佈層級不會縮小（與作者不同）。 為了防患於未然，請避免任何用戶啟動的寫入操作，例如：
+* 擷取至發佈期間，發佈層級不會縮小（與作者不同）。
 
-   * 從AEMas a Cloud Service作者發佈至該環境中發佈的內容
-   * 發佈執行個體之間的使用者同步
+   >[!IMPORTANT]
+   >為了防患於未然，請避免任何用戶啟動的寫操作，例如：
+   > * 從AEMas a Cloud Service作者發佈至該環境中發佈的內容
+   > * 發佈執行個體之間的使用者同步
+
