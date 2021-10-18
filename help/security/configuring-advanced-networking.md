@@ -1,9 +1,9 @@
 ---
 title: 配置AEMas a Cloud Service的高級網路
 description: 了解如何配置高級網路功能，如VPN或專用的輸出IP地址，以便AEMas a Cloud Service
-source-git-commit: 1c9e83a0351d51d96998f7126f0ab76db56144ce
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2797'
+source-wordcount: '2798'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ AEM as a Cloud Service提供數種進階網路功能，可由使用Cloud Manager
 
 * [靈活的埠輸出](#flexible-port-egress)  — 配置AEMas a Cloud Service，以允許非標準埠的出站流量
 * [專用輸出IP位址](#dedicated-egress-IP-address)  — 將流量從AEMas a Cloud Service配置為源自唯一IP
-* [虛擬專用網路](#vpn)  — 為擁有VPN技術的客戶，確保客戶基礎架構與AEMas a Cloud Service之間的安全流量
+* [虛擬專用網路(VPN)](#vpn)  — 為擁有VPN技術的客戶，確保客戶基礎架構與AEMas a Cloud Service之間的流量安全
 
 本文詳細說明每個選項，包括如何設定。 作為一般配置策略，在程式級別調用`/networkInfrastructures` API端點以聲明所需的高級網路類型，然後為每個環境調用`/advancedNetworking`端點以啟用基礎架構並配置特定於環境的參數。 請參考Cloud Manager API檔案中各正式語法的適當端點，以及範例要求和回應。
 
