@@ -1,24 +1,24 @@
 ---
-title: 登入AEM作為Cloud Service
-description: 了解如何為中央記錄服務設定全域參數、個別服務的特定設定，或如何以Cloud Service形式在AEM中要求資料記錄。
+title: 記錄AEMas a Cloud Service
+description: 了解如何使用AEMas a Cloud Service記錄功能，為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 0c2a6753ab6c7fdf8cd8235b9071b21dcfff1e74
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2305'
+source-wordcount: '2314'
 ht-degree: 2%
 
 ---
 
-# 登入AEM作為Cloud Service{#logging-for-aem-as-a-cloud-service}
+# 記錄AEMas a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-AEM as aCloud Service是客戶納入自訂程式碼的平台，可為其客戶群建立獨特體驗。 有鑑於此，記錄服務是重要功能，可針對本機開發和雲端環境(尤其是AEM as aCloud Service的開發環境)進行除錯和了解程式碼執行情形。
+AEM as a Cloud Service是客戶納入自訂程式碼的平台，可為其客戶群建立獨特體驗。 有鑑於此，記錄服務是重要功能，可針對本機開發和雲端環境(尤其是AEMas a Cloud Service的開發環境)進行除錯及了解程式碼執行情形。
 
-AEM記錄設定和記錄層級可在組態檔中進行管理，這些組態檔儲存為Git中AEM專案的一部分，並透過Cloud Manager部署為AEM專案的一部分。 以Cloud Service身分登入AEM可劃分為兩個邏輯集：
+AEMas a Cloud Service記錄設定和記錄層級可在組態檔中進行管理，這些組態檔儲存為Git中AEM專案的一部分，並透過Cloud Manager部署為AEM專案的一部分。 登入AEM as a Cloud Service可分割為兩個邏輯集：
 
 * AEM記錄，在AEM應用程式層級執行記錄
 * Apache HTTPD Web Server/Dispatcher記錄，可在「發佈」層級上執行Web伺服器和Dispatcher的記錄。
 
-## AEM記錄{#aem-loggin}
+## AEM記錄 {#aem-logging}
 
 在AEM應用程式層級記錄，由三個記錄檔處理：
 
@@ -30,9 +30,9 @@ AEM記錄設定和記錄層級可在組態檔中進行管理，這些組態檔�
 >
 >從發佈層級的Dispatcher快取或上游CDN提供的HTTP要求不會反映在這些記錄中。
 
-## AEM Java記錄{#aem-java-logging}
+## AEM Java記錄 {#aem-java-logging}
 
-AEM as aCloud Service可存取Java記錄陳述式。 AEM應用程式的開發人員應遵循一般Java記錄最佳實務，在下列記錄層級記錄與自訂程式碼執行相關的陳述式：
+AEM as a Cloud Service提供對Java日誌陳述式的訪問。 AEM應用程式的開發人員應遵循一般Java記錄最佳實務，在下列記錄層級記錄與自訂程式碼執行相關的陳述式：
 
 <table>
 <tr>
@@ -92,9 +92,9 @@ AEM as aCloud Service可存取Java記錄陳述式。 AEM應用程式的開發人
 </tr>
 </table>
 
-雖然Java記錄支援其他數種記錄粒度層級，但AEM as aCloud Service建議使用上述三個層級。
+雖然Java記錄支援其他數種記錄粒度層級，但AEM as a Cloud Service建議使用上述三個層級。
 
-AEM記錄層級是透過OSGi設定，依環境類型而設定，而OSGi設定則會提交至Git，並透過Cloud Manager部署至AEM作為Cloud Service。 因此，最好保持日誌陳述式一致且為環境類型所知，以確保通過AEM作為Cloud Service的可用日誌在最佳日誌級別可用，而不需要使用更新的日誌級別配置重新部署應用程式。
+AEM記錄層級是透過OSGi設定，依環境類型而設定，而OSGi設定則會提交至Git，並透過Cloud Manager部署至AEMas a Cloud Service。 因此，最好保持日誌陳述式一致且為環境類型所知，以確保通過AEM作為Cloud Service的可用日誌在最佳日誌級別可用，而不需要使用更新的日誌級別配置重新部署應用程式。
 
 **日誌輸出示例**
 
@@ -115,7 +115,7 @@ AEM記錄層級是透過OSGi設定，依環境類型而設定，而OSGi設定則
 <td>29.04.2020 21:50:13.398</td>
 </tr>
 <tr>
-<td>AEM作為Cloud Service節點ID</td>
+<td>AEMas a Cloud Service節點ID</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 <tr>
@@ -137,9 +137,9 @@ AEM記錄層級是透過OSGi設定，依環境類型而設定，而OSGi設定則
 </tbody>
 </table>
 
-### 配置記錄器{#configuration-loggers}
+### 配置記錄器 {#configuration-loggers}
 
-AEM Java記錄檔定義為OSGi設定，因此可使用執行模式資料夾將特定AEM定位為Cloud Service環境。
+AEM Java記錄檔定義為OSGi設定，因此可使用執行模式資料夾鎖定特定AEMas a Cloud Service環境。
 
 透過Sling LogManager工廠的OSGi設定，為自訂Java套件設定Java記錄。 支援兩種配置屬性：
 
@@ -148,9 +148,9 @@ AEM Java記錄檔定義為OSGi設定，因此可使用執行模式資料夾將�
 | org.apache.sling.commons.log.names | 要收集日誌陳述式的Java包。 |
 | org.apache.sling.commons.log.level | 記錄Java套件的記錄層級，由org.apache.sling.commons.log.names指定 |
 
-更改其他LogManager OSGi配置屬性可能會在AEM as aCloud Service中導致可用性問題。
+更改其他LogManager OSGi配置屬性可能會導致AEMas a Cloud Service中出現可用性問題。
 
-以下是三個AEM作為Cloud Service環境類型時建議的記錄設定範例（使用`com.example`的預留位置Java套件）。
+以下是針對三種AEMas a Cloud Service環境類型建議的記錄設定範例（使用`com.example`預留位置Java套件）。
 
 ### 開發 {#development}
 
@@ -185,9 +185,9 @@ AEM Java記錄檔定義為OSGi設定，因此可使用執行模式資料夾將�
 }
 ```
 
-## AEM HTTP要求記錄{#aem-http-request-logging}
+## AEM HTTP要求記錄 {#aem-http-request-logging}
 
-AEM as aCloud Service的HTTP要求記錄功能可依時序深入分析向AEM提出的HTTP要求及其HTTP回應。 此記錄有助於了解對AEM提出的HTTP要求，以及處理和回應的順序。
+AEM  as a Cloud Service的HTTP要求記錄功能可依時序深入分析對AEM提出的HTTP要求及其HTTP回應。 此記錄有助於了解對AEM提出的HTTP要求，以及處理和回應的順序。
 
 了解此記錄檔的關鍵，是透過其ID對應HTTP要求和回應配對，以方括弧中的數值表示。 請注意，在記錄中，要求及其對應回應之間通常會插入其他HTTP要求和回應。
 
@@ -209,7 +209,7 @@ AEM as aCloud Service的HTTP要求記錄功能可依時序深入分析向AEM提�
 <tbody>
 <tr>
 <td>日期時間</td>
-<td>2000年4月29日2020:19:14:21 +000</td>
+<td>2020年4月29日:19:14:21 +000</td>
 </tr>
 <tr>
 <td>請求/回應組ID</td>
@@ -229,17 +229,17 @@ AEM as aCloud Service的HTTP要求記錄功能可依時序深入分析向AEM提�
 </td>
 </tr>
 <tr>
-<td>AEM作為Cloud Service節點ID</td>
+<td>AEMas a Cloud Service節點ID</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 </tbody>
 </table>
 
-### 配置日誌{#configuring-the-log}
+### 配置日誌 {#configuring-the-log}
 
-AEM HTTP要求記錄檔無法在AEM中設定為Cloud Service。
+AEM HTTP要求記錄檔無法在AEMas a Cloud Service中設定。
 
-## AEM HTTP存取記錄{#aem-http-access-logging}
+## AEM HTTP存取記錄 {#aem-http-access-logging}
 
 AEM asCloud ServiceHTTP存取記錄會依時序顯示HTTP要求。 每個記錄項目代表存取AEM的HTTP要求。
 
@@ -253,11 +253,11 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-| AEM作為Cloud Service節點ID | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
+| AEMas a Cloud Service節點ID | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
 |---|---|
 | 客戶端的IP地址 | - |
 | 使用者 | myuser@adobe.com |
-| 日期時間 | 2000年4月30日2020:17:37:14 +000 |
+| 日期時間 | 2020年4月30日:17:37:14 +000 |
 | HTTP方法 | GET |
 | URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | 通訊協定 | HTTP/1.1 |
@@ -266,13 +266,13 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 | 反向連結 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
 | 使用者代理 | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"` |
 
-### 配置HTTP訪問日誌{#configuring-the-http-access-log}
+### 配置HTTP訪問日誌 {#configuring-the-http-access-log}
 
-AEM中的HTTP存取記錄無法設定為Cloud Service。
+AEMas a Cloud Service中無法設定HTTP存取記錄。
 
-## Apache Web伺服器和Dispatcher記錄{#apache-web-server-and-dispatcher-logging}
+## Apache Web伺服器和Dispatcher記錄 {#apache-web-server-and-dispatcher-logging}
 
-AEM as aCloud Service提供發佈上Apache Web伺服器和dispatcher層的三個記錄檔：
+AEM as a Cloud Service提供發佈上Apache Web伺服器和dispatcher層的三個記錄：
 
 * Apache HTTPD Web伺服器訪問日誌
 * Apache HTTPD Web伺服器錯誤日誌
@@ -280,9 +280,9 @@ AEM as aCloud Service提供發佈上Apache Web伺服器和dispatcher層的三個
 
 請注意，這些記錄檔僅適用於發佈層級。
 
-這組記錄檔會在AEM應用程式收到這些請求之前，將HTTP請求視為Cloud Service發佈層級，提供這些請求的深入分析。 請務必了解，理想情況下，對Publish層級伺服器的大部分HTTP請求都是由Apache HTTPD Web Server和AEM Dispatcher快取的內容提供，且絕不能觸及AEM應用程式本身。 因此，AEM Java、Request或Access記錄中沒有這些要求的記錄陳述式。
+這組記錄檔可在AEMas a Cloud Service發佈層級的HTTP要求傳至AEM應用程式前，提供這些要求的深入分析。 請務必了解，理想情況下，對Publish層級伺服器的大部分HTTP請求都是由Apache HTTPD Web Server和AEM Dispatcher快取的內容提供，且絕不能觸及AEM應用程式本身。 因此，AEM Java、Request或Access記錄中沒有這些要求的記錄陳述式。
 
-### Apache HTTPD Web伺服器訪問日誌{#apache-httpd-web-server-access-log}
+### Apache HTTPD Web伺服器訪問日誌 {#apache-httpd-web-server-access-log}
 
 Apache HTTP Web Server存取記錄檔會針對到達發佈層級之Web伺服器/Dispatcher的每個HTTP要求提供陳述式。 請注意，從上游CDN提供的請求不會反映在這些記錄中。
 
@@ -314,7 +314,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>日期時間</td>
-<td>2000年5月01日2020:00:09:46 +000</td>
+<td>2020年5月01日:00:09:46 +000</td>
 </tr>
 <tr>
 <td>HTTP 方法</td>
@@ -347,11 +347,11 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tbody>
 </table>
 
-### 配置Apache HTTPD Web伺服器訪問日誌{#configuring-the-apache-httpd-webs-server-access-log}
+### 配置Apache HTTPD Web伺服器訪問日誌 {#configuring-the-apache-httpd-webs-server-access-log}
 
-此記錄檔無法在AEM中設定為Cloud Service。
+此日誌在AEMas a Cloud Service中不可配置。
 
-## Apache HTTPD Web伺服器錯誤日誌{#apache-httpd-web-server-error-log}
+## Apache HTTPD Web伺服器錯誤日誌 {#apache-httpd-web-server-error-log}
 
 Apache HTTP Web Server錯誤記錄會針對發佈層級的Web伺服器/Dispatcher中的每個錯誤提供陳述式。
 
@@ -371,7 +371,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <tbody>
 <tr>
 <td>日期時間</td>
-<td>星期五2020年7月02:16:42.608913</td>
+<td>2017年7月17日星期五02:16:42.608913 2020</td>
 </tr>
 <tr>
 <td>事件層級</td>
@@ -392,7 +392,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 </tbody>
 </table>
 
-### 配置Apache HTTPD Web伺服器錯誤日誌{#configuring-the-apache-httpd-web-server-error-log}
+### 配置Apache HTTPD Web伺服器錯誤日誌 {#configuring-the-apache-httpd-web-server-error-log}
 
 mod_rewrite日誌級別由檔案`conf.d/variables/global.var`中的變數REWRITE_LOG_LEVEL定義。
 
@@ -417,7 +417,7 @@ Define REWRITE_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## Dispatcher日誌{#dispatcher-log}
+## Dispatcher記錄檔 {#dispatcher-log}
 
 **範例**
 
@@ -433,7 +433,7 @@ Define REWRITE_LOG_LEVEL Debug
 <tbody>
 <tr>
 <td>日期時間</td>
-<td>[2000年7月17日2020:23:48:16 +000]</td>
+<td>[2020年7月17日:23:48:16 +000]</td>
 </tr>
 <tr>
 <td>Pod名稱</td>
@@ -470,13 +470,13 @@ Define REWRITE_LOG_LEVEL Debug
 </tbody>
 </table>
 
-### 設定Dispatcher錯誤記錄{#configuring-the-dispatcher-error-log}
+### 設定Dispatcher錯誤記錄 {#configuring-the-dispatcher-error-log}
 
 Dispatcher日誌級別由檔案`conf.d/variables/global.var`中的變數DISP_LOG_LEVEL定義。
 
 它可以設定為Error、Warn、Info、Debug和Trace1，預設值為Warn。
 
-雖然AEM記錄支援數個其他記錄粒度層級，但Dispatcher as aCloud Service建議使用下述層級。
+雖然AEM記錄支援數個其他記錄粒度層級，但Dispatcheras a Cloud Service建議使用下列層級。
 
 要設定每個環境的日誌級別，請在`global.var`檔案中使用相應的條件分支，如下所述：
 
@@ -495,15 +495,15 @@ Define DISP_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## 如何存取記錄{#how-to-access-logs}
+## 如何存取記錄檔 {#how-to-access-logs}
 
-### 雲環境{#cloud-environments}
+### 雲端環境 {#cloud-environments}
 
-AEM as a cloud services的Cloud Service記錄檔可透過Cloud Manager介面下載，或使用Adobe I/O命令列介面追蹤命令列的記錄檔，以存取。 如需詳細資訊，請參閱[Cloud Manager記錄檔案](/help/implementing/cloud-manager/manage-logs.md)。
+AEM雲端服務的as a Cloud Service記錄檔可透過Cloud Manager介面下載，或使用Adobe I/O命令列介面追蹤命令列的記錄檔，以存取。 如需詳細資訊，請參閱[Cloud Manager記錄檔案](/help/implementing/cloud-manager/manage-logs.md)。
 
 ### 本機SDK {#local-sdk}
 
-AEM as aCloud ServiceSDK提供記錄檔以支援本機開發。
+AEMas a Cloud ServiceSDK提供記錄檔以支援本機開發。
 
 AEM記錄檔位於資料夾`crx-quickstart/logs`中，可在此檢視下列記錄檔：
 
@@ -528,24 +528,24 @@ Apache層記錄檔（包括Dispatcher）位於Docker容器中，該容器保有D
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-## 調試生產和預備{#debugging-production-and-stage}
+## 調試生產和預備 {#debugging-production-and-stage}
 
 在特殊情況下，需要更改日誌級別，以在Stage或Production環境中以更精細的粒度登錄。
 
-雖然如此，但您仍須從「警告」和「錯誤」變更為「除錯」，並執行AEM部署作為Cloud Service，以便在環境中註冊這些設定變更，Git中的設定檔案記錄層級需有所變更。
+雖然如此，但您仍須將Git中組態檔的記錄層級從「警告」和「錯誤」變更為「除錯」，並執行AEMas a Cloud Service部署，以便向環境註冊這些組態變更。
 
 根據Debug所寫入的流量和記錄陳述式數量，這可能會對環境造成不利的效能影響，因此，建議對Stage和Production偵錯層級進行以下變更：
 
 * 審慎行事，只有在絕對必要時
 * 恢復到適當級別並盡快重新部署
 
-## Splunk日誌{#splunk-logs}
+## Splunk日誌 {#splunk-logs}
 
-擁有Splunk帳戶的客戶可透過客戶支援票證要求，將其AEMCloud Service記錄檔轉送至適當的索引。 記錄資料等同於透過Cloud Manager記錄檔下載取得的功能，但客戶可能會發現，運用Splunk產品中可用的查詢功能相當方便。
+擁有Splunk帳戶的客戶可透過客戶支援票證要求，將其AEM Cloud Service記錄檔轉送至適當的索引。 記錄資料等同於透過Cloud Manager記錄檔下載取得的功能，但客戶可能會發現，運用Splunk產品中可用的查詢功能相當方便。
 
 與發送到Splunk的日誌關聯的網路頻寬被視為客戶網路I/O使用的一部分。
 
-### 啟用Splunk轉發{#enabling-splunk-forwarding}
+### 啟用Splunk轉送 {#enabling-splunk-forwarding}
 
 在支援請求中，客戶應指出：
 
