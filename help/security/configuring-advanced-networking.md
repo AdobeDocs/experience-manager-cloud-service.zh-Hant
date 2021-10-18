@@ -1,15 +1,19 @@
 ---
 title: 配置AEMas a Cloud Service的高級網路
-description: 了解如何配置高級網路功能，如VPN或專用的輸出IP地址，以便AEMas a Cloud Service
-source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
+description: 了解如何配置高級網路功能，如VPN或靈活或專用的輸出IP地址，以便AEMas a Cloud Service
+source-git-commit: 47803e6af4ae3c95600c75be58c907da82112e1b
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2837'
 ht-degree: 1%
 
 ---
 
 
 # 配置AEMas a Cloud Service的高級網路 {#configuring-advanced-networking}
+
+本文旨在介紹AEMas a Cloud Service中的不同進階網路功能，包括VPN和輸出IP位址，這些位址可以以靈活的方式專用或分配。
+
+## 概覽 {#overview}
 
 >[!INFO]
 >
