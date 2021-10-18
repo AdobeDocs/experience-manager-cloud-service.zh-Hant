@@ -1,10 +1,10 @@
 ---
 title: 從來源擷取內容
 description: 從來源擷取內容
-source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 41%
+source-wordcount: '518'
+ht-degree: 42%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 41%
 
 >[!NOTE]
 >初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
->此外，必須不要將現有內容的內容結構從採取初始擷取時變更為執行追加擷取時。 自初始擷取後，結構已變更的內容無法執行追加。 請務必在移轉程式期間加以限制。
+>此外，必須不要將現有內容的內容結構從採取初始擷取時變更為執行追加擷取時。 自初始擷取後，無法對結構已變更的內容執行追加。 請務必在移轉程式期間加以限制。
 
 提取程序一旦完成，您即可使用追加提取方法來轉移差異內容。
 
@@ -71,4 +71,4 @@ ht-degree: 41%
 
 ## 下一步 {#whats-next}
 
-在您學習了「內容轉移工具」中的「從來源擷取內容」後，您現在就可以了解「內容轉移工具」中的擷取程式。 請參閱內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)中的[將內容擷取至Target ，了解如何從內容轉移工具擷取您的移轉集。
+在您學習了「內容轉移工具」中的「從來源擷取內容」後，您現在就可以了解「內容轉移工具」中的擷取程式。 請參閱[將內容擷取至Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) ，了解如何從「內容轉移工具」擷取您的移轉集。

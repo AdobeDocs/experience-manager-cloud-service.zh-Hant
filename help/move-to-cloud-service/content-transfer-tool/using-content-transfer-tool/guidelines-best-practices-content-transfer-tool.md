@@ -1,7 +1,7 @@
 ---
 title: 使用內容轉移工具的准則和最佳作法
 description: 使用內容轉移工具的准則和最佳作法
-source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 25%
@@ -76,10 +76,10 @@ ht-degree: 25%
 
 * 如果您使用自訂索引，則在執行「內容轉移工具」之前，必須確保以`tika`節點配置自訂索引。 有關詳細資訊，請參閱[準備新索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition)。
 
-* 如果您要追加提取，則必須不要變更現有內容的內容結構，從進行初始提取到執行追加提取的時間皆然。 自初始擷取後，無法對結構已變更的內容執行追加。 請務必在移轉程式期間加以限制。
+* 如果您要追加提取，則必須不要變更現有內容的內容結構，從進行初始提取到執行追加提取的時間皆然。 自初始擷取後，結構已變更的內容無法執行追加。 請務必在移轉程式期間加以限制。
 
 * 如果您要將版本納入移轉集，並要使用`wipe=false`執行追加，則必須由於「內容轉移工具」中的目前限制而停用版本清除。 如果您偏好保持版本清除已啟用，並在遷移集中執行追加，則必須以`wipe=true`的形式執行擷取。
 
 ## 下一步 {#whats-next}
 
-了解使用「內容轉移工具」的准則、最佳作法和重要考量後，您現在就可以安裝及使用此工具，從建立移轉集開始。 請參閱[內容轉移快速入門至](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en)以了解詳細資訊。
+了解使用「內容轉移工具」的准則、最佳作法和重要考量後，您現在就可以安裝及使用此工具，從建立移轉集開始。 請參閱[內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en)以深入了解。

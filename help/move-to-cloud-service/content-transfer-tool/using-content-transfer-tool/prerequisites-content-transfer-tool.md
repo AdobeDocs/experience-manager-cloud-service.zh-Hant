@@ -2,9 +2,9 @@
 title: 內容轉移工具的必要條件
 description: 內容轉移工具的必要條件
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
@@ -34,4 +34,4 @@ ht-degree: 1%
 
 ## 下一步 {#whats-next}
 
-檢閱必要條件，並決定是否可在移轉專案中使用內容轉移工具後，請在使用內容轉移工具時參閱[使用內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en)的准則和最佳實務。
+檢閱必要條件，並決定是否可在移轉專案中使用內容轉移工具後，請參閱[使用內容轉移工具的准則和最佳實務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en)。
