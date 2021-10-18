@@ -1,10 +1,10 @@
 ---
 title: 從來源擷取內容
 description: 從來源擷取內容
-source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
+source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 39%
+source-wordcount: '596'
+ht-degree: 36%
 
 ---
 
@@ -36,6 +36,10 @@ ht-degree: 39%
 
    >[!NOTE]
    >您可以選擇在提取階段中覆寫預備容器。
+
+   >[!IMPORTANT]
+   >如果在從源中提取內容之前尚未在此遷移集上運行用戶映射，您將看到一個警告，顯示「用戶映射」步驟處於掛起狀態，如下圖所示。 按一下 **對應使用者** 來運行用戶映射工具。
+   >![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
 1. 此 **提取** 欄位現在會顯示 **執行中** 狀態，指出提取正在進行中。
 
