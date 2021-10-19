@@ -1,9 +1,9 @@
 ---
 title: 從來源擷取內容
 description: 從來源擷取內容
-source-git-commit: 5cdfa5a84e74563245d95661dc6875e16982d941
+source-git-commit: f549a7d9e1a5732d75489bc327a8cb67876a4483
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '596'
 ht-degree: 36%
 
 ---
@@ -24,8 +24,8 @@ ht-degree: 36%
 >[!NOTE]
 >如果使用Amazon S3或Azure資料存放區作為資料存放區類型，您可以執行選用的預複製步驟，大幅加速提取階段。 若要這麼做，您必須設定 `azcopy.config` 檔案，然後再執行解壓縮。 請參閱 [處理大型內容存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 以取得更多詳細資訊。
 
-**從來源擷取內容之前**
-從來源擷取內容之前，您應先執行「使用者對應」工具。 請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) 以取得更多詳細資訊。
+>[!IMPORTANT]
+>從來源擷取內容之前，您應先執行「使用者對應」工具。 請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) 以取得更多詳細資訊。
 
 1. 從中選擇遷移集 **內容轉移** 精靈，按一下 **Extract** 開始提取。
 
@@ -60,7 +60,7 @@ ht-degree: 36%
 
 >[!NOTE]
 >初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
->此外，必須不要將現有內容的內容結構從採取初始擷取時變更為執行追加擷取時。 自初始擷取後，無法對結構已變更的內容執行追加。 請務必在移轉程式期間加以限制。
+>此外，必須不要將現有內容的內容結構從採取初始擷取時變更為執行追加擷取時。 自初始擷取後，結構已變更的內容無法執行追加。 請務必在移轉程式期間加以限制。
 
 提取程序一旦完成，您即可使用追加提取方法來轉移差異內容。
 
