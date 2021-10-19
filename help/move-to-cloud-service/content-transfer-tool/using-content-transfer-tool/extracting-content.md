@@ -1,9 +1,9 @@
 ---
 title: 從來源擷取內容
 description: 從來源擷取內容
-source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
+source-git-commit: 5cdfa5a84e74563245d95661dc6875e16982d941
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '601'
 ht-degree: 36%
 
 ---
@@ -19,12 +19,13 @@ ht-degree: 36%
 >abstract="提取是指從來源AEM例項擷取內容，放入名為移轉集的暫存區域。 移轉集是 Adobe 提供的雲端儲存空間，可供暫時儲存在來源 AEM 例項與雲端服務 AEM 例項間轉移的內容。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="追加提取"
 
->[!IMPORTANT]
->從來源擷取內容之前，您應先執行「使用者對應」工具。 請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) 以取得更多詳細資訊。
 
 請依照下列步驟，從「內容轉移工具」中提取您的移轉集：
 >[!NOTE]
 >如果使用Amazon S3或Azure資料存放區作為資料存放區類型，您可以執行選用的預複製步驟，大幅加速提取階段。 若要這麼做，您必須設定 `azcopy.config` 檔案，然後再執行解壓縮。 請參閱 [處理大型內容存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 以取得更多詳細資訊。
+
+**從來源擷取內容之前**
+從來源擷取內容之前，您應先執行「使用者對應」工具。 請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) 以取得更多詳細資訊。
 
 1. 從中選擇遷移集 **內容轉移** 精靈，按一下 **Extract** 開始提取。
 
