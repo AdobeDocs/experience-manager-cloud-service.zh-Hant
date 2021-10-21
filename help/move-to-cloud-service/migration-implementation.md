@@ -2,7 +2,7 @@
 title: 實作階段
 description: 實作階段
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
+source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 90%
@@ -41,7 +41,7 @@ Cloud Manager 可讓組織在雲端中自行管理 AEM。其內容包含持續�
 >[!NOTE]
 >建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
 
-如需詳細資訊，請參考[內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)。
+如需詳細資訊，請參考[內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)。
 
 >[!IMPORTANT]
 >「內容轉移工具」的最低系統需求為 AEM 6.3 + 和 JAVA 8。如果您使用較舊版本的 AEM，您必須將內容存放庫升級至 AEM 6.5 才能使用「內容轉移工具」。
