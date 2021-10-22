@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: b8466ace384657d972a55e39dbd2fcdac1a9d0b9
+source-git-commit: b71299a08c6dec8e88c4259b3d03481b20b310cb
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 7%
@@ -33,7 +33,7 @@ AEM管理的CDN將可滿足大部分客戶的效能和安全性需求。 對於�
 
 依預設，針對AEM管理的CDN設定，針對生產及非生產（開發及預備）環境，所有公用流量皆可進入發佈服務。 如果您想要針對特定環境限制發佈服務的流量（例如，限制預備的IP位址範圍），您可以透過Cloud Manager UI以自助方式執行此作業。
 
-請參閱[管理IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)以深入了解。
+請參閱 [管理IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) 了解更多。
 
 >[!CAUTION]
 >
@@ -50,33 +50,33 @@ AEM管理的CDN將可滿足大部分客戶的效能和安全性需求。 對於�
 
 * 客戶必須擁有現有的CDN，而更換這些CDN的工作量會很大。
 * 客戶必須管理它。
-* 客戶必須能夠設定CDN以搭配AEM as aCloud Service使用 — 請參閱下方的設定指示。
+* 客戶必須能夠設定CDN以與AEMas a Cloud Service搭配使用 — 請參閱下方的設定指示。
 * 若發生相關問題，客戶必須有工程CDN專家隨時待命。
 * 客戶必須先執行並成功通過負載測試，才能開始生產。
 
 配置說明：
 
-1. 將您的CDN指向AdobeCDN的入口作為其來源網域。 例如， `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
+1. 將您的CDN指向AdobeCDN的入口作為其來源網域。 例如， `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. SNI還必須設定為AdobeCDN的入口
-1. 將Host標題設為來源網域。 例如：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
-1. 以網域名稱設定`X-Forwarded-Host`標題，以便AEM可判斷主機標題。 例如：`X-Forwarded-Host:example.com`。
+1. 將Host標題設為來源網域。 例如： `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. 設定 `X-Forwarded-Host` 包含網域名稱的標題，以便AEM可判斷主機標題。 例如： `X-Forwarded-Host:example.com`.
 1. 設定 `X-AEM-Edge-Key`. 值應來自Adobe。
-   * 這是必要的，讓AdobeCDN可以驗證請求來源，並將`X-Forwarded-*`標題傳遞至AEM應用程式。 例如，`X-Forwarded-For`用於確定客戶端IP。 因此，它成為受信任呼叫者（即客戶管理的CDN）的責任，以確保`X-Forwarded-*`標頭的正確性（請參閱下方附註）。
-   * 可選擇在`X-AEM-Edge-Key`不存在時封鎖AdobeCDN入口的存取。 如果您需要直接存取AdobeCDN的入口（待封鎖），請通知Adobe。
+   * 這是必要的，讓AdobeCDN可以驗證請求來源並傳遞 `X-Forwarded-*` 標題至AEM應用程式。 例如，`X-Forwarded-For` 用於確定客戶端IP。 因此，它成為受信任呼叫者（即客戶管理的CDN）的責任，以確保 `X-Forwarded-*` 標題（請參閱下方附註）。
+   * 此外，當AdobeCDN的入口被封鎖時， `X-AEM-Edge-Key` 不存在。 如果您需要直接存取AdobeCDN的入口（待封鎖），請通知Adobe。
 
 在接受即時流量之前，您應向Adobe的客戶支援驗證端對端流量路由是否正常運作。
 
-取得`X-AEM-Edge-Key`後，您可以依照下列方式測試要求是否正確路由：
+取得 `X-AEM-Edge-Key`，您可以依照下列方式來測試要求是否正確路由：
 
 ```
-curl publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
 ```
 
-請注意，使用您自己的CDN時，不需要在Cloud Manager中安裝網域和憑證。 AdobeCDN中的路由將使用預設域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成。
+請注意，使用您自己的CDN時，不需要在Cloud Manager中安裝網域和憑證。 AdobeCDN中的路由將使用預設網域完成 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >
->管理自己CDN的客戶應確保傳送至AEM CDN的標題完整無缺。 例如，建議客戶清除所有`X-Forwarded-*`標題，並將其設為已知和控制的值。 例如，`X-Forwarded-For`應包含用戶端的IP位址，而`X-Forwarded-Host`應包含網站的主機。
+>管理自己CDN的客戶應確保傳送至AEM CDN的標題完整無缺。 例如，建議客戶清除所有 `X-Forwarded-*` 標題，並將其設為已知和控制的值。 例如， `X-Forwarded-For` 應包含用戶端的IP位址，而 `X-Forwarded-Host` 應包含網站的主機。
 
 >[!NOTE]
 >
@@ -90,10 +90,10 @@ curl publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: exa
 
 AEM管理的CDN會透過下列方式將標題新增至每個請求：
 
-* 國家/地區代碼：`x-aem-client-country`
-* 大陸代碼：`x-aem-client-continent`
+* 國家/地區代碼： `x-aem-client-country`
+* 大陸代碼： `x-aem-client-continent`
 
-國家/地區代碼的值是[此處](https://en.wikipedia.org/wiki/ISO_3166-1)描述的Alpha-2代碼。
+國家/地區代碼的值是描述的Alpha-2代碼 [此處](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 大陸代碼的值為：
 
@@ -105,4 +105,4 @@ AEM管理的CDN會透過下列方式將標題新增至每個請求：
 * 大洋洲奧克
 * SA南美洲
 
-此資訊在使用案例中可能會很實用，例如根據要求的來源（國家）重新導向至不同的url。 請使用Vary標題，快取根據地理資訊的回應。 例如，重新導向至特定國家/地區登陸頁面應一律包含`Vary: x-aem-client-country`。 如有需要，可以使用`Cache-Control: private`來防止快取。 另請參閱[快取](/help/implementing/dispatcher/caching.md#html-text)。
+此資訊在使用案例中可能會很實用，例如根據要求的來源（國家）重新導向至不同的url。 請使用Vary標題，快取根據地理資訊的回應。 例如，重新導向至特定國家/地區登陸頁面應一律包含 `Vary: x-aem-client-country`. 如有需要，您可以使用 `Cache-Control: private` 以防止快取。 另請參閱 [快取](/help/implementing/dispatcher/caching.md#html-text).
