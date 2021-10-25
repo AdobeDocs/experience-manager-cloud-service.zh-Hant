@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 簡介
 description: Adobe Experience Manager (AEM) as a Cloud Service 簡介。
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: 438a43d7b57d8b1ca78873eecfd94a4b30004829
+source-git-commit: 7d5445ae4081065fd869684f2aacdb9de1951089
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 52%
+source-wordcount: '584'
+ht-degree: 54%
 
 ---
 
@@ -17,7 +17,7 @@ Adobe Experience Manager(AEM)as a Cloud Service是AEM產品線的最新產品，
 
 AEM as a Cloud Service可讓您以雲端原生方式利用AEM應用程式，以便：
 
-* 使用擴展您的DevOps工作 [Cloud Manager:CI/CD框架](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)，自動擴展， API連接，靈活的部署模式， [代碼質量門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/code-quality-testing.html?lang=en)和服務。
+* 使用Cloud Manager擴展DevOps的工作：CI/CD架構、自動縮放、API連線、彈性的部署模式、程式碼品質閘道和服務。
 
 * 讓開發人員可將自動化新增至應用程式開發實務。
 
