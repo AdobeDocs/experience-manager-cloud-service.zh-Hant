@@ -3,7 +3,7 @@ title: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service�
 description: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: adb0aa2812871f6efedd1fb88663170127dc59d4
+source-git-commit: f89fbf4e693fb1b17e8923dfcc6c9b4de92b536d
 workflow-type: tm+mt
 source-wordcount: '1928'
 ht-degree: 2%
@@ -156,7 +156,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 **索引最佳化**
 
-為了改善搜尋查詢和索引的效能，全文索引lucene-2不再包含於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 從此版本。 為了根據AEM客戶在AEM環境上移除此全文索引，Adobe工程部會與客戶個別且主動地合作，以緩慢且持續地移除Lucene全文索引。 請造訪 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [檔案](/help/operations/indexing.md#index-optimizations) 如需詳細資訊，如有任何疑問，請直接聯絡我們的支援。
+為了改善搜尋查詢和索引的效能，全文索引lucene-2不再於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 從此版本。 為了根據AEM客戶在AEM環境上移除此全文索引，Adobe工程部會與客戶個別且主動地合作，以緩慢且持續地移除Lucene全文索引。 請造訪 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [檔案](/help/operations/indexing.md#index-optimizations) 如需詳細資訊，如有任何疑問，請直接聯絡我們的支援。
 
 ## Cloud Manager {#cloud-manager}
 
