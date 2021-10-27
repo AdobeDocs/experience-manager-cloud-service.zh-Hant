@@ -2,7 +2,7 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 2ff6f6be922c3c6a1d13945a4cd1c4d927829186
+source-git-commit: fc0628c2bfd345a7846d3d4fbd0fe11a459b10a1
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -25,10 +25,11 @@ ht-degree: 29%
 若要測試與目標AEMas a Cloud Service環境的連線，請從來源例項的殼層發出下列cURL命令(取代 `program_id`, `environment_id`，和 `migration_token`):
 
 ```
-curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+ curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
 ```
 
-若 `HTTP/2 200` 收到時，與AEMas a Cloud Service的連線成功。
+>[!NOTE]
+>若 `HTTP/2 200` 收到時，與AEMas a Cloud Service的連線成功。
 
 ## 可用性 {#availability}
 
