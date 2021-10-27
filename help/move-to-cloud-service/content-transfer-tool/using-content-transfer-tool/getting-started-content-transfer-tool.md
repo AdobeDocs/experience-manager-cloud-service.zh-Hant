@@ -2,7 +2,7 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fc0628c2bfd345a7846d3d4fbd0fe11a459b10a1
+source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -11,7 +11,7 @@ ht-degree: 29%
 
 # 內容轉移工具快速入門 {#getting-started-content-transfer-tool}
 
-## 源環境連接
+## 源環境連接 {#source-environment-connectivity}
 
 源AEM實例可能在防火牆後運行，在防火牆中它只能訪問已添加到允許清單中的某些主機。 若要成功執行擷取，必須從執行AEM的執行個體存取下列端點：
 
@@ -30,6 +30,7 @@ ht-degree: 29%
 
 >[!NOTE]
 >若 `HTTP/2 200` 收到時，與AEMas a Cloud Service的連線成功。
+
 
 ## 可用性 {#availability}
 
