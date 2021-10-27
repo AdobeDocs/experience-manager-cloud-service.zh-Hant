@@ -2,14 +2,33 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
+source-git-commit: 2ff6f6be922c3c6a1d13945a4cd1c4d927829186
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 33%
+source-wordcount: '860'
+ht-degree: 29%
 
 ---
 
 # 內容轉移工具快速入門 {#getting-started-content-transfer-tool}
+
+## 源環境連接
+
+源AEM實例可能在防火牆後運行，在防火牆中它只能訪問已添加到允許清單中的某些主機。 若要成功執行擷取，必須從執行AEM的執行個體存取下列端點：
+
+* 目標AEMas a Cloud Service環境：
+   `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* Azure blob儲存服務：
+   `*.blob.core.windows.net`
+* 用戶映射IO終結點：
+   `usermanagement.adobe.io`
+
+若要測試與目標AEMas a Cloud Service環境的連線，請從來源例項的殼層發出下列cURL命令(取代 `program_id`, `environment_id`，和 `migration_token`):
+
+```
+curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+```
+
+若 `HTTP/2 200` 收到時，與AEMas a Cloud Service的連線成功。
 
 ## 可用性 {#availability}
 
@@ -20,7 +39,7 @@ ht-degree: 33%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="發行說明"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution入口網站"
 
-您可以從軟體發佈入口網站下載「內容轉移工具」的ZIP檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。請務必下載最新版本。 如需最新版本的詳細資訊，請參閱[發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hant)。
+您可以從軟體發佈入口網站下載「內容轉移工具」的ZIP檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。請務必下載最新版本。 如需最新版本的詳細資訊，請參閱 [發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hant).
 
 >[!NOTE]
 >從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)入口網站下載內容轉移工具。
@@ -39,11 +58,11 @@ ht-degree: 33%
 
 請依照以下章節了解如何使用「內容轉移工具」，將內容移轉至 AEM as a Cloud Service (製作/發佈)：
 
-1. 選取Adobe Experience Manager並導覽至工具 — > **操作** -> **內容移轉**。
+1. 選取Adobe Experience Manager並導覽至工具 — > **操作** -> **內容移轉**.
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
 
-1. 從&#x200B;**內容遷移**&#x200B;嚮導中選擇&#x200B;**內容轉移**&#x200B;選項。
+1. 選取 **內容轉移** 選項 **內容移轉** 嚮導。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
@@ -56,7 +75,7 @@ ht-degree: 33%
    >如果您有現有的移轉集，主控台會顯示現有移轉集清單及其目前狀態。
 
 
-1. 按照下面所述，填入&#x200B;**建立移轉集**&#x200B;畫面中的欄位。
+1. 填入 **建立移轉集** 螢幕，如下所述。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
 
@@ -73,16 +92,16 @@ ht-degree: 33%
    1. **存取 Token**：輸入存取 Token。
 
       >[!NOTE]
-      >您可以使用&#x200B;**開啟存取權杖**&#x200B;按鈕來擷取存取權杖。 您必須確保您屬於目標Cloud Service例項中的AEM管理員群組。
+      >您可以使用 **開啟存取權杖** 按鈕。 您必須確保您屬於目標Cloud Service例項中的AEM管理員群組。
 
    1. **參數**：選取以下參數以建立移轉集：
 
-      1. **包含版本**：視需要選取。包含版本時，會自動包含路徑`/var/audit`以遷移審核事件。
+      1. **包含版本**：視需要選取。包含版本時，路徑 `/var/audit` 會自動納入，以移轉稽核事件。
 
          ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
-         >如果您要將版本納入移轉集，並要使用`wipe=false`執行追加，則必須由於「內容轉移工具」中的目前限制而停用版本清除。 如果您偏好保持版本清除已啟用，並在遷移集中執行追加，則必須以`wipe=true`的形式執行擷取。
+         >如果您打算將版本納入移轉集，且要以 `wipe=false`，則您必須停用版本清除，因為「內容轉移工具」中目前有限制。 如果您偏好保持已啟用版本清除功能，並在移轉集中執行追加，則您必須以 `wipe=true`.
 
 
       1. **欲包含的路徑**：使用路徑瀏覽器來選取需要移轉的路徑。路徑選擇器通過鍵入或選擇接受輸入。
@@ -92,26 +111,26 @@ ht-degree: 33%
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc` (在 `/etc` CTT中允許選取某些路徑)
+         >* `/etc` (部分 `/etc` 允許在CTT中選擇路徑)
 
 
-1. 填入&#x200B;**建立移轉集**&#x200B;詳細資訊畫面中的所有欄位後，按一下「**儲存**」。
+1. 按一下 **儲存** 填入 **建立移轉集** 詳細資訊畫面。
 
-1. 您將在&#x200B;**內容轉移**&#x200B;精靈中檢視移轉集，如下圖所示。
+1. 您可在 **內容轉移** 嚮導，如下圖所示。
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
-   所有現有遷移集都顯示在&#x200B;**內容轉移**&#x200B;嚮導中，並顯示其當前狀態和狀態資訊。 您可能會看到以下說明的其中一些圖示。
+   所有現有移轉集都會顯示在 **內容轉移** 嚮導及其當前狀態和狀態資訊。 您可能會看到以下說明的其中一些圖示。
 
    * *紅色雲朵*&#x200B;表示您無法完成提取程序。
-   * *green cloud*&#x200B;表示您可以完成提取程式。
+   * A *綠雲* 表示您可以完成提取程式。
    * *黃色圖示*&#x200B;表示您並未建立現有移轉集，且該特定移轉集是由相同例項中的其他使用者所建立。
 
-1. 選擇遷移集，然後按一下&#x200B;**屬性**&#x200B;以查看或編輯遷移集屬性。 編輯屬性時，無法變更&#x200B;**移轉集名稱**&#x200B;或&#x200B;**服務URL**。
+1. 選取移轉集，然後按一下 **屬性** 查看或編輯遷移集屬性。 編輯屬性時，無法變更 **移轉集名稱** 或 **服務URL**.
 
    ![影像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## 下一步 {#whats-next}
 
-學習如何建立移轉集後，您現在就可以了解「內容轉移工具」中的提取和擷取程式。 在了解這些程式之前，您必須檢閱[處理大型內容存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) ，以大幅加快內容轉移活動的提取和擷取階段，以將內容移至AEMas a Cloud Service。
+學習如何建立移轉集後，您現在就可以了解「內容轉移工具」中的提取和擷取程式。 在了解這些流程之前，您必須先檢閱 [處理大型內容存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 大幅加快內容轉移活動的擷取和擷取階段，以便將內容移至AEMas a Cloud Service。
