@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager的整備階段
 description: 本頁概述Cloud Acceleration Manager的整備階段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
+source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1058'
 ht-degree: 5%
 
 ---
@@ -125,9 +125,12 @@ ht-degree: 5%
    >您可以透過下拉式清單新增或變更圖形檢視，如下圖所示：
    >![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
-#### 刪除趨勢線報表 {#delete-trendline}
+#### 刪除報表 {#delete-trendline}
 
 請依照下列步驟，從趨勢線檢視中刪除報表：
+
+>[!IMPORTANT]
+>只有在專案中上傳了多個報表時，才能刪除報表。
 
 1. 導覽至您的專案，然後按一下 **檢閱** 從 **最佳實務分析** 卡片 **準備** 階段。
 
