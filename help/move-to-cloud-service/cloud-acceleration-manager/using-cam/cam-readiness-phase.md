@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager的整備階段
 description: 本頁概述Cloud Acceleration Manager的整備階段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: a6d0ab0245ed33fcffe1c4811674435e6f97abf8
+source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1042'
 ht-degree: 5%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 5%
 
 在專案中上傳多個最佳實務分析器(BPA)報表時，您可以選取 **檢視趨勢線** 選項，查看和比較舊BPA報表的結果。
 
-請依照下列步驟檢視趨勢線：
+請依照下列步驟，從趨勢線選項中檢視報表：
 
 >[!NOTE]
 >在專案中上傳多個BPA報表時，您會看到圖示 **...**.
@@ -104,7 +104,7 @@ ht-degree: 5%
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >顯示的報表一律為具有最新報表日期的報表。
+   >顯示於 **趨勢線報表畫面** 一律為具有最近報表日期的報表。
 
 1. 按一下 **檢視趨勢線**，如下圖所示。
 
@@ -116,12 +116,14 @@ ht-degree: 5%
 
    >[!NOTE]
    >趨勢線報表以圖形表示方式顯示歷史BPA報表的結果。
+   >
    >您會看到兩個圖表，顯示趨勢：
-   >1. 報告結果趨勢
-   >1. 自訂元件和範本趨勢
-      >您可以透過下拉式清單新增或變更圖形檢視，如下所示。
-      >![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >1. **報告結果趨勢**
+   >1. **自訂元件和範本趨勢**
 
+   >
+   >您可以透過下拉式清單新增或變更圖形檢視，如下圖所示：
+   >![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
 #### 刪除趨勢線報表 {#delete-trendline}
 
