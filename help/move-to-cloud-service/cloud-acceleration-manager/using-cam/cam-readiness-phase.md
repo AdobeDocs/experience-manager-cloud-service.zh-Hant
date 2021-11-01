@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager的整備階段
 description: 本頁概述Cloud Acceleration Manager的整備階段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
+source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1057'
 ht-degree: 5%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 5%
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >顯示於 **趨勢線報表畫面** 一律為具有最近報表日期的報表。
+   >顯示的報表一律為具有最新報表日期的報表。
 
 1. 按一下 **檢視趨勢線**，如下圖所示。
 
@@ -124,33 +124,6 @@ ht-degree: 5%
    >
    >您可以透過下拉式清單新增或變更圖形檢視，如下圖所示：
    >![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
-
-#### 刪除報表 {#delete-trendline}
-
-請依照下列步驟，從趨勢線檢視中刪除報表：
-
->[!IMPORTANT]
->只有在專案中上傳了多個報表時，才能刪除報表。
-
-1. 導覽至您的專案，然後按一下 **檢閱** 從 **最佳實務分析** 卡片 **準備** 階段。
-
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
-
-1. 按一下 **...** 圖示來顯示下拉式清單。
-
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
-
-1. 按一下 **檢視趨勢線**，如下圖所示。
-
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
-
-1. 按一下 **趨勢線報表** 螢幕。
-
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
-
-1. 按一下 **刪除** 以確認刪除。
-
-   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 
 ### 檢閱最佳實務分析報表 {#analysis-report}
@@ -222,6 +195,33 @@ ht-degree: 5%
 1. 內容輪播會顯示移轉歷程這個階段的所有相關資訊。
 
    ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+
+### 刪除最佳實務分析報表 {#delete-trendline}
+
+請依照下列步驟，從趨勢線檢視中刪除報表：
+
+>[!IMPORTANT]
+>只有在專案中上傳了多個報表時，才能刪除報表。
+
+1. 導覽至您的專案，然後按一下 **檢閱** 從 **最佳實務分析** 卡片 **準備** 階段。
+
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. 按一下 **...** 圖示來顯示下拉式清單。
+
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. 按一下 **檢視趨勢線**，如下圖所示。
+
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. 按一下 **趨勢線報表** 螢幕。
+
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. 按一下 **刪除** 以確認刪除。
+
+   ![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 ## 下一步 {#whats-next}
 
