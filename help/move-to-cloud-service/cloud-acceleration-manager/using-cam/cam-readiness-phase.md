@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager的整備階段
 description: 本頁概述Cloud Acceleration Manager的整備階段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
+source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 5%
@@ -93,7 +93,7 @@ ht-degree: 5%
 請依照下列步驟，從趨勢線選項中檢視報表：
 
 >[!NOTE]
->在專案中上傳多個BPA報表時，您會看到圖示 **...**.
+>在專案中上傳多個BPA報表時，您會看到 **...** 表徵圖。
 
 1. 導覽至您的專案，然後按一下 **檢閱** 從 **最佳實務分析** 卡片 **準備** 階段。
 
