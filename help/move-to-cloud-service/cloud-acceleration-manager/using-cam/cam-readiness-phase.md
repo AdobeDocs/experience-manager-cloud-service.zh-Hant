@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager的整備階段
 description: 本頁概述Cloud Acceleration Manager的整備階段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
+source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -88,7 +88,7 @@ ht-degree: 5%
 
 ### 使用檢視趨勢線 {#trendline-view-cam}
 
-在專案中上傳多個最佳實務分析器(BPA)報表時，您可以選取 **檢視趨勢線** 選項，查看和比較舊BPA報表的結果。
+在專案中上傳多個最佳實務分析器(BPA)報表時，您可以選取 **檢視趨勢線** 選項，查看和比較歷史BPA報表的結果。
 
 請依照下列步驟，從趨勢線選項中檢視報表：
 
