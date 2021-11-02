@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 997caea86978a2306a5081ef26270dfd451ab8a4
+source-git-commit: e5455985df0dad352fa158c7fb0df7d6c6a8dee0
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 7%
@@ -57,7 +57,7 @@ AEM管理的CDN將可滿足大部分客戶的效能和安全性需求。 對於�
 配置說明：
 
 1. 將您的CDN指向AdobeCDN的入口作為其來源網域。 例如， `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. SNI還必須設定為AdobeCDN的入口
+1. SNI還必須設定為AdobeCDN的入口。
 1. 將Host標題設為來源網域。 例如： `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. 設定 `X-Forwarded-Host` 包含網域名稱的標題，以便AEM可判斷主機標題。 例如： `X-Forwarded-Host:example.com`.
 1. 設定 `X-AEM-Edge-Key`. 值應來自Adobe。
