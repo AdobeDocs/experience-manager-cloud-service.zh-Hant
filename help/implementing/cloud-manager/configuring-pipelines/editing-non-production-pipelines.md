@@ -1,6 +1,6 @@
 ---
-title: 編輯生產管道
-description: 編輯生產管道
+title: 編輯非生產管道
+description: 編輯非生產管道
 index: false
 source-git-commit: e0c21561a9a6e2940768ecb86da9b4d16e2fbfa8
 workflow-type: tm+mt
@@ -10,4 +10,4 @@ ht-degree: 0%
 ---
 
 
-# 編輯生產管道 {#edit-prod-pipeline}
+# 編輯非生產管道 {#edit-non-prod-pipeline}
