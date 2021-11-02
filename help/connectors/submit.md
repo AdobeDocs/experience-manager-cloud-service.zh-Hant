@@ -2,7 +2,7 @@
 title: 提交 AEM 連接器
 description: 提交 AEM 連接器
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 11%
@@ -14,14 +14,14 @@ ht-degree: 11%
 
 以下提供有用的AEM連接器提交資訊，並應與實作與維護連接器的相關文 [章一](implement.md) 起 [閱讀](maintain.md) 。
 
-AEM連接器列於[AdobeExchange](https://partners.adobe.com/exchangeprogram/experiencecloud)中。
+AEM連接器列於 [AdobeExchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
-在舊版AEM解決方案中，套件管理器用於在各種AEM執行個體上安裝連接器。 不過，以AEM作為Cloud Service，在Cloud Manager的CI/CD程式期間會部署連接器。 為了部署連接器，必須在maven專案的pom.xml中參考連接器。
+在先前的AEM解決方案中， [封裝管理員](/help/implementing/developing/tools/package-manager.md) 用來在各種AEM執行個體上安裝連接器。 不過，透過AEMas a Cloud Service，在Cloud Manager的CI/CD程式期間會部署連接器。 為了部署連接器，必須在maven專案的pom.xml中參考連接器。
 
 有多種選項可讓您將套件納入專案中：
 
 1. 合作夥伴的公用存放庫 — 合作夥伴會將內容套件托管於公開存取的Maven存放庫
-1. 合作夥伴的受密碼保護的儲存庫 — 合作夥伴將將內容包托管在受密碼保護的Maven儲存庫中。 有關說明，請參閱[受密碼保護的maven儲存庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories)。
+1. 合作夥伴的受密碼保護的儲存庫 — 合作夥伴將將內容包托管在受密碼保護的Maven儲存庫中。 請參閱 [受密碼保護的maven儲存庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) 的說明。
 1. 套件 — 在此情況下，連接器封裝會包含在客戶的Maven專案本機中。
 
 無論封裝托管於何處，都需如廠商所提供，在pom.xml中將封裝參照為相依性。

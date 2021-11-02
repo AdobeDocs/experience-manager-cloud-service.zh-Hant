@@ -2,7 +2,7 @@
 title: AEM 專案結構
 description: 了解如何定義部署至Adobe Experience ManagerCloud Service的套件結構。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '2878'
 ht-degree: 12%
@@ -13,7 +13,7 @@ ht-degree: 12%
 
 >[!TIP]
 >
->請熟悉基本的[AEM專案原型use](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)和[FileVault Content Maven外掛程式](/help/implementing/developing/tools/maven-plugin.md)，因為本文是以這些學習與概念為基礎而撰寫的。
+>熟悉基本 [AEM專案原型使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，和 [FileVault Content Maven插件](/help/implementing/developing/tools/maven-plugin.md) 因為本文以這些學習和概念為基礎。
 
 本文概述Adobe Experience Manager Maven專案為與AEMas a Cloud Service相容所需的變更，確保專案遵守可變和不可變內容的分割、建立相依性以建立不衝突、確定性的部署，並封裝成可部署結構。
 
@@ -25,27 +25,27 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
 
 >[!TIP]
 >
->本檔案中概述的設定由[AEM Project Maven原型24或更新版本](https://github.com/adobe/aem-project-archetype/releases)提供。
+>本文檔中概述的配置由 [AEM Project Maven原型24或更新版本](https://github.com/adobe/aem-project-archetype/releases).
 
 ## 儲存庫的可變區與不可變區 {#mutable-vs-immutable}
 
 `/apps` and `/libs`**are consed inmumable areas of AEM as they cannot be changed(create, update, delete)after AEM starts(i.e. at runtime)。**&#x200B;在運行時更改不可變區域的任何嘗試都將失敗。
 
-儲存庫中的其他所有項目，如`/content`、`/conf`、`/var`、`/etc`、`/oak:index`、`/system`、`/tmp`等。 都是&#x200B;**可變**&#x200B;區域，這表示在執行階段可以變更它們。
+儲存庫中的其他一切， `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`、等 全部 **可變** 區域，這表示在執行階段可以變更區域。
 
 >[!WARNING]
 >
->與舊版AEM相同，`/libs`不應修改。 只有AEM產品代碼可部署至`/libs`。
+>如舊版AEM, `/libs` 不應修改。 只有AEM產品代碼可部署至 `/libs`.
 
 ### Oak Indexes {#oak-indexes}
 
-Oak索引(`/oak:index`)是由AEMas a Cloud Service部署程式特別管理。 這是因為Cloud Manager必須等到部署任何新索引並完全重新編列索引後，才能切換至新程式碼影像。
+Oak索引(`/oak:index`)由AEMas a Cloud Service部署程式特別管理。 這是因為Cloud Manager必須等到部署任何新索引並完全重新編列索引後，才能切換至新程式碼影像。
 
-因此，雖然Oak索引在執行時可變，但必須部署為程式碼，才能在安裝任何可變套件前先行安裝。 因此，`/oak:index`配置是代碼包的一部分，而不是內容包[的一部分，如下所述](#recommended-package-structure)。
+因此，雖然Oak索引在執行時可變，但必須部署為程式碼，才能在安裝任何可變套件前先行安裝。 因此 `/oak:index` 設定是程式碼套件的一部分，而非內容套件的一部分 [如下所述](#recommended-package-structure).
 
 >[!TIP]
 >
->有關在AEMas a Cloud Service中建立索引的詳細資訊，請參閱文檔[內容搜索和索引](/help/operations/indexing.md)。
+>有關在AEMas a Cloud Service中建立索引的詳細資訊，請參閱本檔案 [內容搜尋與索引](/help/operations/indexing.md).
 
 ## 建議的封裝結構 {#recommended-package-structure}
 
@@ -59,20 +59,20 @@ Oak索引(`/oak:index`)是由AEMas a Cloud Service部署程式特別管理。 �
 
 + 會產生OSGi套件Jar檔案，並直接內嵌於所有專案中。
 
-+ `ui.apps`套件包含要部署的所有代碼，並且只部署到`/apps`。 `ui.apps`包的常見元素包括，但不限於：
-   + [元件定義和](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant) HTLscript
++ 此 `ui.apps` 套件包含所有要部署的程式碼，且只會部署至 `/apps`. 共同元素 `ui.apps` 套件包括，但不限於：
+   + [元件定義和HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant) 指令碼
       + `/apps/my-app/components`
-   + JavaScript和CSS（透過[用戶端程式庫](/help/implementing/developing/introduction/clientlibs.md)）
+   + JavaScript和CSS(透過 [用戶端程式庫](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
-   + [](/help/implementing/developing/introduction/overlays.md) 覆蓋  `/libs`
-      + `/apps/cq`、  `/apps/dam/`等
+   + [覆蓋](/help/implementing/developing/introduction/overlays.md) of `/libs`
+      + `/apps/cq`, `/apps/dam/`、等
    + 後援內容感知設定
       + `/apps/settings`
    + ACL（權限）
-      + `/apps`下任何路徑的任何`rep:policy`
+      + 任何 `rep:policy` 適用於 `/apps`
    + [預編譯的套件指令碼](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
-+ `ui.config`包包含所有[OSGi配置](/help/implementing/deploying/configuring-osgi.md):
++ 此 `ui.config` 包，包含全部 [OSGi配置](/help/implementing/deploying/configuring-osgi.md):
    + 包含運行模式特定OSGi配置定義的組織資料夾
       + `/apps/my-app/osgiconfig`
    + 包含套用至所有目標AEMas a Cloud Service部署目標的預設OSGi設定的通用OSGi設定資料夾
@@ -80,7 +80,7 @@ Oak索引(`/oak:index`)是由AEMas a Cloud Service部署程式特別管理。 �
    + 運行模式特定的OSGi配置資料夾，該資料夾包含適用於所有目標AEMas a Cloud Service部署目標的預設OSGi配置
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Repo Init OSGi配置指令碼
-      + [回購](#repo-init) 性炎是部署（可變）內容(邏輯上屬於AEM應用程式一部分)的建議方式。Repo Init OSGi設定應如上所述放置在適當的`config.<runmode>`資料夾中，並用於定義：
+      + [存放庫初始化](#repo-init) 是部署（可變）內容(邏輯上屬於AEM應用程式一部分)的建議方式。 Repo Init OSGi設定應放置在適當的 `config.<runmode>` 資料夾（如上所述），並用於定義：
          + 基線內容結構
          + 使用者
          + 服務用戶
@@ -89,16 +89,16 @@ Oak索引(`/oak:index`)是由AEMas a Cloud Service部署程式特別管理。 �
 
 >[!NOTE]
 >
->必須將相同的程式碼部署至所有環境。 這是為了確保預備環境上的信賴驗證也正在生產中，所需的項目。 如需詳細資訊，請參閱[Runmodes](/help/implementing/deploying/overview.md#runmodes)上的一節。
+>必須將相同的程式碼部署至所有環境。 這是為了確保預備環境上的信賴驗證也正在生產中，所需的項目。 如需詳細資訊，請參閱 [執行模式](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### 內容套件
 
-+ `ui.content`套件包含所有內容和配置。 內容包，包含`ui.apps`或`ui.config`包中未包含的所有節點定義，換言之，包含`/apps`或`/oak:index`中未包含的任何內容。 `ui.content`包的常見元素包括，但不限於：
++ 此 `ui.content` 套件包含所有內容和設定。 內容套件包含所有節點定義，但不在 `ui.apps` 或 `ui.config` 包，換句話說， `/apps` 或 `/oak:index`. 共同元素 `ui.content` 套件包括，但不限於：
    + 內容感知設定
       + `/conf`
    + 必要、複雜的內容結構(即 內容建置以為基礎，並延伸超過回購初始化中定義的基線內容結構。)
-      + `/content`、  `/content/dam`等
+      + `/content`, `/content/dam`、等
    + 受管轄的標籤分類
       + `/content/cq:tags`
    + 舊式等節點（理想情況下，將這些節點遷移到非/等位置）
@@ -106,16 +106,16 @@ Oak索引(`/oak:index`)是由AEMas a Cloud Service部署程式特別管理。 �
 
 ### 容器包裝
 
-+ `all`套件是容器套件，僅包含可部署的成品、OSGI套件組合Jar檔案、`ui.apps`、`ui.config`和`ui.content`套件作為內嵌。 `all`套件不得具有任何內容或代碼&#x200B;**，而是將所有部署委派給儲存庫的子套件或OSGi套件組合Jar檔案。**
++ 此 `all` 套件是容器套件，僅包含可部署的成品、OSGI套件組合Jar檔案、 `ui.apps`, `ui.config` 和 `ui.content` 包作為內嵌。 此 `all` 包不能 **任何內容或程式碼** ，而是將所有部署委派給存放庫的子套件或OSGi套件組合Jar檔案。
 
-   現在，包中使用的是Maven [FileVault Package Maven插件的嵌入配置](#embeddeds)，而不是`<subPackages>`配置。
+   現在已使用Maven包含套件 [FileVault Package Maven插件的嵌入式配置](#embeddeds)，而非 `<subPackages>` 設定。
 
-   對於複雜的Experience Manager部署，可能需要建立多個`ui.apps`、`ui.config`和`ui.content`專案/套件，以代表AEM中的特定網站或租戶。 如果執行此操作，請確保可變內容和不可變內容之間的分割符合要求，並且所需的內容包和OSGi捆綁Jar檔案作為子包嵌入`all`容器內容包中。
+   對於複雜的Experience Manager部署，可能需要建立多個 `ui.apps`, `ui.config` 和 `ui.content` 代表AEM中特定網站或租戶的專案/套件。 如果執行此操作，請確保可變內容和不可變內容之間的分割符合要求，並且所需的內容包和OSGi捆綁Jar檔案作為子包嵌入到 `all` 容器內容套件。
 
    例如，複雜的部署內容包結構可能如下所示：
 
    + `all` 內容包嵌入以下包，以建立單一部署對象
-      + `common.ui.apps` 部署網站A和 **** 網站B所需的程式碼
+      + `common.ui.apps` 部署所需的代碼 **both** 網站A和網站B
       + `site-a.core` 站點A所需的OSGi捆綁Jar
       + `site-a.ui.apps` 部署網站A所需的代碼
       + `site-a.ui.config` 部署站點A所需的OSGi配置
@@ -127,7 +127,7 @@ Oak索引(`/oak:index`)是由AEMas a Cloud Service部署程式特別管理。 �
 
 ### 額外的應用程式包{#extra-application-packages}
 
-如果AEM部署使用其他AEM專案（其本身由其自己的程式碼和內容套件組成），則其容器套件應內嵌在專案的`all`套件中。
+如果AEM部署使用其他AEM專案（其本身由其自己的程式碼和內容套件組成），則其容器套件應內嵌在專案的 `all` 包。
 
 例如，包含2個供應商AEM應用程式的AEM專案看起來可能如下：
 
@@ -143,16 +143,16 @@ Oak索引(`/oak:index`)是由AEMas a Cloud Service部署程式特別管理。 �
 
 要用其聲明的包類型標籤包。
 
-+ 容器包必須將其`packageType`設定為`container`。 容器包不能直接包含OSGi包、OSGi配置，並且不允許使用[安裝掛接](http://jackrabbit.apache.org/filevault/installhooks.html)。
-+ 代碼（不可變）包必須將其`packageType`設定為`application`。
-+ 內容（可變）包必須將其`packageType`設定為`content`。
++ 容器包必須設定 `packageType` to `container`. 容器包不能直接包含OSGi包、OSGi配置，並且不允許使用 [安裝掛接](http://jackrabbit.apache.org/filevault/installhooks.html).
++ 代碼（不可變）包必須設定 `packageType` to `application`.
++ 內容（可變）包必須設定其 `packageType` to `content`.
 
 
-如需詳細資訊，請參閱下方的[Apache Jackrabbit FileVault - Package Maven外掛程式檔案](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType)及[FileVault Maven設定程式碼片段](#marking-packages-for-deployment-by-adoube-cloud-manager)。
+如需詳細資訊，請參閱 [Apache Jackrabbit FileVault - Package Maven外掛程式檔案](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) 和 [FileVault Maven配置代碼段](#marking-packages-for-deployment-by-adoube-cloud-manager) 下方。
 
 >[!TIP]
 >
->如需完整的程式碼片段，請參閱下方的[POM XML程式碼片段](#xml-package-types)一節。
+>請參閱 [POM XML片段](#xml-package-types) 以取得完整的程式碼片段。
 
 ## 標示要由Analytics Cloud Manager部署的套件Adobe {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
@@ -160,7 +160,7 @@ Oak索引(`/oak:index`)是由AEMas a Cloud Service部署程式特別管理。 �
 
 >[!TIP]
 >
->如需完整的程式碼片段，請參閱下方的[POM XML程式碼片段](#pom-xml-snippets)一節。
+>請參閱 [POM XML片段](#pom-xml-snippets) 以取得完整的程式碼片段。
 
 ## 存放庫初始化{#repo-init}
 
@@ -168,7 +168,7 @@ Repo Init提供了定義JCR結構的指令（或指令碼），從資料夾樹�
 
 Repo Init的主要優點是，它們具有執行其指令碼所定義所有動作的隱式權限，且會在部署生命週期早期叫用，以確保執行程式碼時存在所有必要的JCR結構。
 
-雖然Repo Init指令碼本身在`ui.config`專案中以指令碼形式存留，但它們可以且應該用於定義下列可變結構：
+而Repo Init指令碼本身則會存放在 `ui.config` 專案做為指令碼，可以且應該用來定義下列可變結構：
 
 + 基線內容結構
 + 服務用戶
@@ -176,39 +176,39 @@ Repo Init的主要優點是，它們具有執行其指令碼所定義所有動�
 + 群組
 + ACL
 
-存放庫初始化指令碼會儲存為`RepositoryInitializer` OSGi工廠設定的`scripts`項目，因此，可透過執行模式以隱含方式鎖定目標，以允許AEM製作與AEM Publish Services的存放庫初始化指令碼之間，或甚至是環境（開發、預備與生產）之間的差異。
+存放庫初始化指令碼儲存為 `scripts` 條目 `RepositoryInitializer` 因此，OSGi工廠設定可以透過執行模式以隱含方式鎖定目標，以允許AEM製作與AEM Publish Services的存放庫初始化指令碼之間，或甚至環境（Dev、Stage和Prod）之間的差異。
 
-Repo Init OSGi設定最好以[`.config` OSGi設定格式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1)寫入，因為它們支援多行，這是使用[`.cfg.json`定義OSGi設定](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)的最佳實務的例外。
+最好在 [`.config` OSGi配置格式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) 因為它們支援多行，這是使用的最佳做法的例外情況 [`.cfg.json` 定義OSGi配置](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 
 請注意，在定義「用戶」和「組」時，只有組被視為應用程式的一部分，並應在此處定義其函式的整體。 組織使用者和群組仍應在AEM中執行階段定義；例如，如果自訂工作流程將工作指派給指定的群組，則應透過AEM應用程式中的存放庫初始化來定義該群組，但如果群組只是組織性的，例如「Wendy&#39;s Team」和「Sean&#39;s Team」，則這些是最佳定義，並在AEM的執行階段中加以管理。
 
 >[!TIP]
 >
->必須在內嵌`scripts`欄位中定義Repo Init指令碼&#x200B;*，且`references`設定將無法運作。*
+>存放庫初始化指令碼 *必須* 在內嵌中定義 `scripts` 欄位，以及 `references` 配置將無法運作。
 
-[Apache Sling Repo Init檔案](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)中提供Repo Init指令碼的完整辭匯。
+存放庫初始化指令碼的完整辭匯可在 [Apache Sling Repo Init檔案](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language).
 
 >[!TIP]
 >
->如需完整的程式碼片段，請參閱下方的[回購初始化程式碼片段](#snippet-repo-init)一節。
+>請參閱 [存放庫初始化程式片段](#snippet-repo-init) 以取得完整的程式碼片段。
 
 ## 儲存庫結構包 {#repository-structure-package}
 
-代碼包要求配置FileVault Maven插件的配置，以引用`<repositoryStructurePackage>`，該可強制結構依賴項的正確性（以確保一個代碼包不會跨另一個安裝）。 您可以[為您的專案](repository-structure-package.md)建立自己的存放庫結構套件。
+程式碼套件需要配置FileVault Maven外掛程式的配置以參考 `<repositoryStructurePackage>` 這可強制結構相依性的正確性（以確保一個程式碼套件不會安裝在另一個程式碼套件上）。 您可以 [建立專案專用的存放庫結構套件](repository-structure-package.md).
 
 這只是程 **式碼套件的必要** ，也就是任何標有的套件 `<packageType>application</packageType>`。
 
-要了解如何為應用程式建立儲存庫結構包，請參閱[開發儲存庫結構包](repository-structure-package.md)。
+若要了解如何為應用程式建立存放庫結構套件，請參閱 [開發存放庫結構套件](repository-structure-package.md).
 
-請注意，內容包(`<packageType>content</packageType>`)**不**&#x200B;需要此儲存庫結構包。
+請注意，內容套件(`<packageType>content</packageType>`) **不** 需要此儲存庫結構包。
 
 >[!TIP]
 >
->如需完整的程式碼片段，請參閱下方的[POM XML程式碼片段](#xml-repository-structure-package)一節。
+>請參閱 [POM XML片段](#xml-repository-structure-package) 以取得完整的程式碼片段。
 
 ## 在容器包中嵌入子包{#embeddeds}
 
-內容或程式碼套件會放置在特殊的「側車」資料夾中，且可以鎖定目標，使用FileVault Maven外掛程式的`<embeddeds>`設定，以安裝在AEM作者、AEM發佈或兩者上。 請注意，不應使用`<subPackages>`設定。
+內容或程式碼套件會放置在特殊的「側車」資料夾中，且可定位為使用FileVault Maven外掛程式的，以安裝在AEM作者、AEM發佈或兩者上 `<embeddeds>` 設定。 請注意， `<subPackages>` 不應使用設定。
 
 常見的使用案例包括：
 
@@ -218,14 +218,14 @@ Repo Init OSGi設定最好以[`.config` OSGi設定格式](https://sling.apache.o
 
 ![內嵌套件](assets/embeddeds.png)
 
-若要鎖定AEM作者、AEM發佈或兩者，套件會以下列格式嵌入至`all`容器套件中的特殊資料夾位置：
+若要鎖定AEM作者、AEM發佈或兩者，套件會內嵌於 `all` 容器封裝（位於特殊資料夾位置），格式如下：
 
 `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
 劃分此資料夾結構：
 
-+ 第1級資料夾&#x200B;**必須是** `/apps`。
-+ 第2層資料夾代表資料夾名稱后面已固定`-packages`的應用程式。 通常只有一個第2級資料夾所有子包都嵌入在下，但是可以建立任意數量的第2級資料夾以最好地表示應用程式的邏輯結構：
++ 第1層資料夾 **必須** `/apps`.
++ 第2層資料夾代表具有 `-packages` 後置修正至資料夾名稱。 通常只有一個第2級資料夾所有子包都嵌入在下，但是可以建立任意數量的第2級資料夾以最好地表示應用程式的邏輯結構：
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
@@ -235,75 +235,75 @@ Repo Init OSGi設定最好以[`.config` OSGi設定格式](https://sling.apache.o
    >根據慣例，子包嵌入資料夾的名稱為尾碼為 `-packages`。這可確保部署代碼和內容包 **未部署** ，而是不會部署任何子包的目標資料夾， `/apps/<app-name>/...` 從而導致破壞性和循環安裝行為。
 
 + 第3級資料夾必須是
-   `application`、  `content` 或  `container`
-   + `application`資料夾包含代碼包
-   + `content`資料夾包含內容包
-   + `container`資料夾包含AEM應用程式可能包含的任何[額外應用程式套件](#extra-application-packages)。
-此資料夾名稱對應於包含的[包類型](#package-types)。
+   `application`, `content` 或 `container`
+   + 此 `application` 資料夾保存代碼包
+   + 此 `content` 資料夾保留內容包
+   + 此 `container` 資料夾中包含 [額外的應用程式套件](#extra-application-packages) AEM應用程式可能包含的項目。
+此資料夾名稱對應至 [封裝類型](#package-types) 包中。
 + 第4層資料夾包含子包，且必須是下列其中一個：
    + `install` 若要同時安裝 **在** AEM作者和AEM發佈上
    + `install.author` 僅 **安裝** 在AEM作者上
-   + `install.publish` 僅 **** 安裝在AEM發佈上請注意，只有和 `install.author` 是 `install.publish` 受支援的目標。不支援其 **他執行模** 式。
+   + `install.publish` to **僅限** 在AEM發佈時安裝，請注意 `install.author` 和 `install.publish` 是支援的目標。 不支援其 **他執行模** 式。
 
 例如，包含AEM製作和發佈特定套件的部署可能如下所示：
 
 + `all` 容器包嵌入以下包，以建立單一部署對象
-   + `ui.apps` 內嵌於 `/apps/my-app-packages/application/install` 中，會將程式碼同時部署至AEM作者和AEM發佈
-   + `ui.apps.author` 內嵌於 `/apps/my-app-packages/application/install.author` 中部署程式碼至僅AEM作者
-   + `ui.content` 內嵌於 `/apps/my-app-packages/content/install` 中，可部署內容和設定至AEM製作和AEM發佈
-   + `ui.content.publish` 內嵌於 `/apps/my-app-packages/content/install.publish` 中，部署內容和設定只能發佈AEM
+   + `ui.apps` 嵌入 `/apps/my-app-packages/application/install` 將程式碼部署至AEM製作和AEM發佈
+   + `ui.apps.author` 嵌入 `/apps/my-app-packages/application/install.author` 將程式碼部署至僅限AEM作者
+   + `ui.content` 嵌入 `/apps/my-app-packages/content/install` 將內容和設定部署至AEM作者和AEM publish
+   + `ui.content.publish` 嵌入 `/apps/my-app-packages/content/install.publish` 只將內容和設定部署至AEM發佈
 
 >[!TIP]
 >
->如需完整的程式碼片段，請參閱下方的[POM XML程式碼片段](#xml-embeddeds)一節。
+>請參閱 [POM XML片段](#xml-embeddeds) 以取得完整的程式碼片段。
 
 ### 容器包的篩選器定義 {#container-package-filter-definition}
 
-由於容器包中嵌入了代碼和內容子包，因此必須將嵌入的目標路徑添加到容器項目的`filter.xml`中，以確保在構建時將嵌入的包包含在容器包中。
+由於程式碼和內容子封裝內嵌在容器封裝中，因此必須將內嵌的目標路徑新增到容器專案的 `filter.xml` 確保內嵌套件在建置時包含在容器套件中。
 
-只需為包含要部署的子包的任何第2級資料夾添加`<filter root="/apps/<my-app>-packages"/>`條目。
+只需新增 `<filter root="/apps/<my-app>-packages"/>` 包含要部署的子包的任何第2級資料夾的條目。
 
 >[!TIP]
 >
->如需完整的程式碼片段，請參閱下方的[POM XML程式碼片段](#xml-container-package-filters)一節。
+>請參閱 [POM XML片段](#xml-container-package-filters) 以取得完整的程式碼片段。
 
 ## 嵌入第三方包 {#embedding-3rd-party-packages}
 
-所有包都必須通過[Adobe的公用Maven對象儲存庫](https://repo1.maven.org/maven2/com/adobe/)或可訪問的可引用的公用第三方Maven對象儲存庫來使用。
+所有套件皆必須透過 [Adobe的公用Maven工件儲存庫](https://repo1.maven.org/maven2/com/adobe/) 或是可供參考的公開第三方Maven工件存放庫。
 
 如果第三方套件位於 **Adobe的公用Maven工件存放庫**，則Adobe Cloud manager無需進一步設定即可解析工件。
 
 如果第三方包位於公 **用的第三方Maven對象儲存庫**，則必須按照上述方法在項目中註冊並嵌入此存 `pom.xml` 儲庫 [](#embeddeds)。
 
-應使用其`all`套件來內嵌第三方應用程式/連接器，作為專案容器(`all`)套件中的容器。
+第三方應用程式/連接器應使用 `all` 封裝為專案容器中的容器(`all`)套件。
 
-新增Maven相依性會遵循標準Maven實務，而內嵌第三方成品（程式碼和內容套件）是[概述於上方](#embedding-3rd-party-packages)。
+新增Maven相依性會遵循標準Maven實務，並內嵌第三方成品（程式碼和內容套件） [概述](#embedding-3rd-party-packages).
 
 >[!TIP]
 >
->如需完整的程式碼片段，請參閱下方的[POM XML程式碼片段](#xml-3rd-party-maven-repositories)一節。
+>請參閱 [POM XML片段](#xml-3rd-party-maven-repositories) 以取得完整的程式碼片段。
 
-## `ui.content`包中`ui.apps`之間的包依賴關係 {#package-dependencies}
+## 封裝之間的相依性 `ui.apps` 從 `ui.content` 套件 {#package-dependencies}
 
 為確保正確安裝軟體包，建議建立軟體包間依賴項。
 
-一般規則是包含可變內容(`ui.content`)的包，該包應取決於支援可變內容的呈現和使用的不可變代碼(`ui.apps`)。
+一般規則是包含可變內容(`ui.content`)應取決於不可修改的代碼(`ui.apps`)，支援可變內容的轉譯和使用。
 
-此一般規則的一個明顯例外是，如果不可變的代碼包（`ui.apps`或任何其他）,__僅__&#x200B;包含OSGi套件組合。 若存在，則任何AEM套件都不應宣告相依性。 這是因為不可變的代碼包&#x200B;__僅__&#x200B;包含OSGi套件組合未向AEM Package Manager註冊，因此，任何根據其的AEM套件都將具有未滿足的依賴性，且無法安裝。
+此一般規則的一個明顯例外是不可變的代碼包(`ui.apps` 或任何其他), __僅限__ 包含OSGi套件組合。 若存在，則任何AEM套件都不應宣告相依性。 這是因為不可變的代碼包 __僅限__ 包含OSGi套件組合未向AEM註冊 [包管理器，](/help/implementing/developing/tools/package-manager.md) 因此，任何根據AEM套件的相依性將會不滿足，且無法安裝。
 
 >[!TIP]
 >
->如需完整的程式碼片段，請參閱下方的[POM XML程式碼片段](#xml-package-dependencies)一節。
+>請參閱 [POM XML片段](#xml-package-dependencies) 以取得完整的程式碼片段。
 
 內容包依賴項的常見模式為：
 
 ### 簡單部署包依賴項 {#simple-deployment-package-dependencies}
 
-簡單案例將`ui.content`可變內容包設定為依賴於`ui.apps`不可變代碼包。
+簡單大小寫會設定 `ui.content` 可變的內容套件，依 `ui.apps` 不可變代碼包。
 
 + `all` 沒有依賴項
    + `ui.apps` 沒有依賴項
-   + `ui.content` 取決於  `ui.apps`
+   + `ui.content` 取決於 `ui.apps`
 
 ### 複雜的部署包依賴項 {#complex-deploxment-package-dependencies}
 
@@ -311,18 +311,18 @@ Repo Init OSGi設定最好以[`.config` OSGi設定格式](https://sling.apache.o
 
 + `all` 沒有依賴項
    + `common.ui.apps.common` 沒有依賴項
-   + `site-a.ui.apps` 取決於  `common.ui.apps`
-   + `site-a.ui.content` 取決於  `site-a.ui.apps`
-   + `site-b.ui.apps` 取決於  `common.ui.apps`
-   + `site-b.ui.content` 取決於  `site-b.ui.apps`
+   + `site-a.ui.apps` 取決於 `common.ui.apps`
+   + `site-a.ui.content` 取決於 `site-a.ui.apps`
+   + `site-b.ui.apps` 取決於 `common.ui.apps`
+   + `site-b.ui.content` 取決於 `site-b.ui.apps`
 
 ## 本地開發和部署 {#local-development-and-deployment}
 
-本文概述的專案結構和組織為&#x200B;**完全相容的**&#x200B;本機開發AEM例項。
+本文概述的項目結構和組織為 **完全相容** 本機開發AEM例項。
 
 ## POM XML片段 {#pom-xml-snippets}
 
-以下是可新增至Maven專案的Maven `pom.xml`設定片段，以符合上述建議。
+以下是Maven `pom.xml` 可新增至Maven專案的設定片段，以符合上述建議。
 
 ### 套件類型 {#xml-package-types}
 
@@ -330,13 +330,13 @@ Repo Init OSGi設定最好以[`.config` OSGi設定格式](https://sling.apache.o
 
 #### 容器包裝類型 {#container-package-types}
 
-容器`all/pom.xml`項目&#x200B;**不**&#x200B;聲明`<packageType>`。
+容器 `all/pom.xml` 專案 **不** 聲明 `<packageType>`.
 
 #### 代碼（不可變）包類型 {#immutable-package-types}
 
-代碼包必須將其`packageType`設定為`application`。
+程式碼套件必須設定 `packageType` to `application`.
 
-在`ui.apps/pom.xml`中，`filevault-package-maven-plugin`插件聲明的`<packageType>application</packageType>`構建配置指令聲明其包類型。
+在 `ui.apps/pom.xml`, `<packageType>application</packageType>` 構建配置指令 `filevault-package-maven-plugin` 插件聲明聲明其包類型。
 
 ```xml
 ...
@@ -361,9 +361,9 @@ Repo Init OSGi設定最好以[`.config` OSGi設定格式](https://sling.apache.o
 
 #### 內容（可變）包類型 {#mutable-package-types}
 
-內容包必須將其`packageType`設定為`content`。
+內容套件必須設定 `packageType` to `content`.
 
-在`ui.content/pom.xml`中，`filevault-package-maven-plugin`插件聲明的`<packageType>content</packageType>`構建配置指令聲明其包類型。
+在 `ui.content/pom.xml`, `<packageType>content</packageType>` 構建配置指令 `filevault-package-maven-plugin` 插件聲明聲明其包類型。
 
 ```xml
 ...
@@ -410,9 +410,9 @@ Repo Init OSGi設定最好以[`.config` OSGi設定格式](https://sling.apache.o
 
 ### 存放庫初始化{#snippet-repo-init}
 
-包含Repo Init指令碼的Repo Init指令碼是通過`scripts`屬性在`RepositoryInitializer` OSGi工廠配置中定義的。 請注意，由於這些指令碼在OSGi配置中定義，因此可使用通常的`../config.<runmode>`資料夾語義，通過運行模式輕鬆限定它們的範圍。
+包含存放庫初始化指令碼的存放庫初始化指令碼，會在 `RepositoryInitializer` OSGi工廠配置(通過 `scripts` 屬性。 請注意，由於這些指令碼是在OSGi設定中定義的，因此可使用通常的執行模式，輕鬆限定其範圍 `../config.<runmode>` 資料夾語義。
 
-請注意，由於指令碼通常為多行聲明，因此在`.config`檔案中定義它們比以JSON為基礎的`.cfg.json`格式要容易。
+請注意，由於指令碼通常為多行聲明，因此在 `.config` 檔案，而非JSON型 `.cfg.json` 格式。
 
 `/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
 
@@ -428,11 +428,11 @@ scripts=["
 "]
 ```
 
-`scripts` OSGi屬性包含由[Apache Sling的Repo Init語言](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)定義的指令。
+此 `scripts` OSGi屬性包含由 [Apache Sling的Repo Init語言](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language).
 
 ### 儲存庫結構包 {#xml-repository-structure-package}
 
-在聲明代碼包(`<packageType>application</packageType>`)的`ui.apps/pom.xml`和任何其他`pom.xml`中，將以下儲存庫結構包配置添加到FileVault Maven插件中。 您可以[為您的專案](repository-structure-package.md)建立自己的存放庫結構套件。
+在 `ui.apps/pom.xml` 和其他 `pom.xml` 聲明代碼包(`<packageType>application</packageType>`)，將以下儲存庫結構包配置添加到FileVault Maven插件中。 您可以 [建立專案專用的存放庫結構套件](repository-structure-package.md).
 
 ```xml
 ...
@@ -458,7 +458,7 @@ scripts=["
 
 ### 在容器包中嵌入子包 {#xml-embeddeds}
 
-在`all/pom.xml`中，將以下`<embeddeds>`指令添加到`filevault-package-maven-plugin`插件聲明中。 請記住，**不**&#x200B;使用`<subPackages>`配置，因為這將包括`/etc/packages`中的子包，而不是`/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`。
+在 `all/pom.xml`，新增下列內容 `<embeddeds>` 指令 `filevault-package-maven-plugin` 外掛程式聲明。 記住， **不** 使用 `<subPackages>` 設定，因為這會包含子封裝於 `/etc/packages` 而非 `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
 
 ```xml
 ...
@@ -542,7 +542,7 @@ scripts=["
 <filter root="/apps/my-app-packages"/>
 ```
 
-如果在嵌入目標中使用多個`/apps/*-packages`，則必須在此處枚舉這些目標。
+若為多個 `/apps/*-packages` 在內嵌目標中使用，則必須在此處列舉所有目標。
 
 ### 第三方Maven儲存庫 {#xml-3rd-party-maven-repositories}
 
@@ -550,7 +550,7 @@ scripts=["
 >
 >新增更多Maven存放庫可能會延長Maven建置時間，因為會檢查其他Maven存放庫是否有相依性。
 
-在Reactor專案的`pom.xml`中，新增任何必要的第三方公用Maven存放庫指示。 完整的`<repository>`配置應可從第三方儲存庫提供程式中使用。
+在反應堆項目 `pom.xml`，新增任何必要的第三方公用Maven存放庫指示。 完整 `<repository>` 配置應可從第三方儲存庫提供程式中使用。
 
 ```xml
 <repositories>
@@ -571,9 +571,9 @@ scripts=["
 </repositories>
 ```
 
-### `ui.content`包中`ui.apps`之間的包依賴關係 {#xml-package-dependencies}
+### 封裝之間的相依性 `ui.apps` 從 `ui.content` 套件 {#xml-package-dependencies}
 
-在`ui.content/pom.xml`中，將以下`<dependencies>`指令添加到`filevault-package-maven-plugin`插件聲明中。
+在 `ui.content/pom.xml`，新增下列內容 `<dependencies>` 指令 `filevault-package-maven-plugin` 外掛程式聲明。
 
 ```xml
 ...
@@ -599,7 +599,7 @@ scripts=["
 
 ### 清除容器專案的目標資料夾 {#xml-clean-container-package}
 
-在`all/pom.xml`中新增`maven-clean-plugin`外掛程式，該外掛程式將在Maven組建之前清除目標目錄。
+在 `all/pom.xml` 新增 `maven-clean-plugin` 外掛程式，可在Maven組建之前清除目標目錄。
 
 ```xml
 <plugins>

@@ -3,7 +3,7 @@ title: '部署至 AEM as a Cloud Service '
 description: '部署至 AEM as a Cloud Service  '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f85a4dd109459e216d23a9da67f67d4ad7aa8709
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '3334'
 ht-degree: 1%
@@ -49,9 +49,9 @@ ht-degree: 1%
 
 ## 透過Cloud Manager和Package Manager部署內容套件 {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
-### Deployments via Cloud Manager {#deployments-via-cloud-manager}
+### 透過Cloud Manager部署 {#deployments-via-cloud-manager}
 
-Customers deploy custom code to cloud environments through Cloud Manager. 請注意，Cloud Manager會將本機組裝的內容套件轉換為符合Sling功能模型的成品，這是在雲端環境中執行時，AEMas a Cloud Service應用程式的描述方式。 As a result, when looking at the packages in Package Manager on Cloud environments, the name will include &quot;cp2fm&quot; and the transformed packages have all metadata removed. 無法互動，亦即無法下載、複製或開啟。 轉換器的詳細檔案可以是 [此處找到](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+客戶透過Cloud Manager將自訂程式碼部署至雲端環境。 請注意，Cloud Manager會將本機組裝的內容套件轉換為符合Sling功能模型的成品，這是在雲端環境中執行時，AEMas a Cloud Service應用程式的描述方式。 因此，當查看 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 在雲端環境中，名稱將包含「cp2fm」，且轉換的套件已移除所有中繼資料。 無法互動，亦即無法下載、複製或開啟。 轉換器的詳細檔案可以是 [此處找到](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 為AEMas a Cloud Service應用程式編寫的內容套件必須在不可變內容與可變內容之間有乾淨的隔離，而Cloud manager只會安裝可變內容，並輸出如下的訊息：
 
@@ -109,7 +109,7 @@ Customers deploy custom code to cloud environments through Cloud Manager. 請注
 可借由將套件內嵌至「install.author」或「install.publish」資料夾，將可變內容安裝限制為製作或發佈 `/apps`. AEM 6.5中已針對此分離進行重組，建議專案重組的詳細資訊可在 [AEM 6.5檔案。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
->內容包部署到所有環境類型（開發、預備、生產）。 無法將部署限制在特定環境。 此限制的設定是為了確保自動執行的測試執行選項。 環境特定內容需要透過套件管理器手動安裝。
+>內容包部署到所有環境類型（開發、預備、生產）。 無法將部署限制在特定環境。 此限制的設定是為了確保自動執行的測試執行選項。 環境特定的內容需透過 [封裝管理員。](/help/implementing/developing/tools/package-manager.md)
 
 此外，在應用可變內容包更改後，沒有回滾這些更改的機制。 如果客戶檢測到問題，他們可以選擇在下一個代碼版本中修復問題，或作為最後手段，將整個系統恢復到部署之前的某個時間點。
 
@@ -131,13 +131,13 @@ Customers deploy custom code to cloud environments through Cloud Manager. 請注
    >ACL的定義要求節點結構已存在。 因此，可能需要先建立路徑陳述式。
 
 * 新增路徑（例如根資料夾結構）
-* Add CNDs (nodetype definitions)
+* 新增CND（nodetype定義）
 
 由於下列優點，這些支援的內容修改使用案例最好改用重點：
 
 * Repoinit在啟動時會建立資源，這樣邏輯就能將這些資源的存在視為已授予。 在可變內容包方法中，資源是在啟動後建立的，因此依賴這些資源的應用程式代碼可能會失敗。
-* 當您明確控制要採取的動作時，重新指示是相對安全的指令集。 此外，唯一支援的操作是附加操作，但少數安全相關案例除外，這些案例允許刪除用戶、服務用戶和組。 In contrast, a removal of something in the mutable content package approach is explicit;  as you define a filter anything present covered by a filter will be deleted. 不過，您仍應小心謹慎，因為如果有任何內容，出現新內容可能會改變應用程式的行為。
-* 重新指定執行快速和原子操作。 Mutable content packages in contrast can highly depend performance wise on the structures covered by a filter. Even if you update a single node, a snapshot of a large tree might be created.
+* 當您明確控制要採取的動作時，重新指示是相對安全的指令集。 此外，唯一支援的操作是附加操作，但少數安全相關案例除外，這些案例允許刪除用戶、服務用戶和組。 相反，移除可變內容包方法中的某些內容是明確的；當您定義篩選器時，篩選器所涵蓋的任何項目都會遭到刪除。 不過，您仍應小心謹慎，因為如果有任何內容，出現新內容可能會改變應用程式的行為。
+* 重新指定執行快速和原子操作。 相比之下，可變內容包可以高度取決於過濾器覆蓋的結構的效能。 即使更新單個節點，也可能建立大型樹的快照。
 * 可以在運行時驗證本地開發環境上的repoinit語句，因為這些語句將在註冊OSGi配置時執行。
 * 重新指向語句是原子的，且顯式，如果狀態已匹配，則將跳過。
 
@@ -173,7 +173,7 @@ above appears to be internal, to confirm with Brian -->
 >abstract="探索套件管理器的使用案例，了解內容套件應安裝為「一次性」的使用案例，包括將特定內容從生產匯入測試環境，以偵錯生產問題、將小型內容套件從內部部署環境傳輸至AEM雲端環境等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="內容轉移工具"
 
-有些使用案例會將內容套件安裝為「一次性」。 例如，將特定內容從生產匯入測試環境，以偵錯生產問題。 針對這些情況，套件管理器可用於AEMas a Cloud Service環境。
+有些使用案例會將內容套件安裝為「一次性」。 例如，將特定內容從生產匯入測試環境，以偵錯生產問題。 對於這些情況， [封裝管理員](/help/implementing/developing/tools/package-manager.md) 可用於AEMas a Cloud Service環境。
 
 由於包管理器是運行時概念，因此無法將內容或代碼安裝到不可修改的儲存庫中，因此這些內容包應僅由可變內容(主要是 `/content` 或 `/conf`)。 如果內容包含混合的內容（可變和不可變內容），則僅安裝可變內容。
 
@@ -267,7 +267,7 @@ above appears to be internal, to confirm with Brian -->
 
 ## 適用於滾動部署的回溯相容程式碼 {#backwards-compatible-code-for-rolling-deployments}
 
-如上所述，AEM as a Cloud Service的滾動部署策略表示舊版和新版本可能同時運作。 Therefore, be cautious of code changes that are not backwards compatible with the old AEM version that is still operation.
+如上所述，AEM as a Cloud Service的滾動部署策略表示舊版和新版本可能同時運作。 因此，請小心，回溯不相容於舊版AEM仍在運作的程式碼變更。
 
 此外，應測試舊版本在回滾時與新版本所套用的任何新可變內容結構是否相容，因為可變內容並未移除。
 

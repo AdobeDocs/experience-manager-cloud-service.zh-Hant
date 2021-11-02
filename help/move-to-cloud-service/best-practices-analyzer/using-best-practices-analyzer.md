@@ -2,10 +2,10 @@
 title: 使用Best Practices Analyzer
 description: 使用Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '2522'
-ht-degree: 42%
+ht-degree: 41%
 
 ---
 
@@ -15,25 +15,25 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="使用Best Practices Analyzer"
 >abstract="檢閱使用Best Practices Analyzer（原稱為Cloud Readiness Analyzer）的說明檔案以及產生的報表。 Best Practices Analyzer報表可用來取得對一般升級整備程度的高層了解。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 使用Best Practices Analyzer的重要考量 {#imp-considerations}
 
 請依照以下章節了解執行Best Practices Analyzer(BPA)時的重要考量：
 
-* BPA報表是使用Adobe Experience Manager(AEM)[模式偵測器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html)的輸出所建置。 BPA使用的模式檢測器版本包含在BPA安裝包中。
+* BPA報表是使用Adobe Experience Manager(AEM)的輸出所建立 [圖樣偵測器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). BPA使用的模式檢測器版本包含在BPA安裝包中。
 
-* BPA只能由&#x200B;**admin**&#x200B;用戶或&#x200B;**administrators**&#x200B;組中的用戶運行。
+* BPA只能由 **管理員** 使用者或 **管理員** 群組。
 
 * 6.1版及更新版本的AEM例項支援BPA。
 
    >[!NOTE]
-如需在 [AEM 6.1上安裝BPA的特殊需求，請參閱在AEM 6.1上安裝](#installing-on-aem61) 。
+請參閱 [在AEM 6.1上安裝](#installing-on-aem61) 在AEM 6.1上安裝BPA的特殊要求。
 
-* BPA可在任何環境中運行，但最好在&#x200B;*Stage*&#x200B;環境中運行。
+* BPA可在任何環境中運行，但最好在 *階段* 環境。
 
    >[!NOTE]
-為避免對業務關鍵型實例造成影響，建議您在盡可 ** 能靠近生產環境的Authorinence環境中，在自 ** 定義、配置、內容和用戶應用程式方面運行BPA。或者，您可以在複製的生產&#x200B;*製作*&#x200B;環境中執行 CRA。
+為避免對業務關鍵實例造成影響，建議您在 *作者* 最接近的環境 *生產* 環境，包括自訂、設定、內容和使用者應用程式。 或者，您可以在複製的生產&#x200B;*製作*&#x200B;環境中執行 CRA。
 
 * 生成BPA報告內容可能需要相當長的時間，從幾分鐘到數小時不等。 所需的時間主要取決於 AEM 存放庫內容的大小和性質、AEM 版本和其他因素。
 
@@ -46,10 +46,10 @@ id="aemcloud_bpa_download"
 title="下載Best Practices Analyzer"
 abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZIP檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。"
 
-您可以從軟體發佈入口網站下載Best Practices Analyzer的ZIP檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。
+您可以從軟體發佈入口網站下載Best Practices Analyzer的ZIP檔案。 您可以透過 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 在來源Adobe Experience Manager(AEM)例項上。
 
 >[!NOTE]
-從軟體發佈入口網站下載 [Best ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) Practices Analyzer。
+從下載Best Practices Analyzer [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 入口網站。
 
 ## 檢視Best Practices Analyzer報表 {#viewing-report}
 
@@ -57,11 +57,11 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
 
 請依照本節，了解如何檢視Best Practices Analyzer報表：
 
-1. 選取Adobe Experience Manager並導覽至工具 — > **操作** -> **最佳實務分析器**。
+1. 選取Adobe Experience Manager並導覽至工具 — > **操作** -> **Best Practices Analyzer**.
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. 按一下&#x200B;**產生報表**&#x200B;以執行最佳實務分析器。
+1. 按一下 **產生報表** 以執行最佳實務分析器。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -78,12 +78,12 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. 您可以選擇按一下「**匯出至CSV**」，下載逗號分隔值(CSV)格式的報表，如下圖所示。
+1. 您可以選擇按一下 **匯出至CSV**，如下圖所示。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-您可以按一下「重新整理報表」，以強制BPA清除其快取並重 **新產生報表**。
+您可以按一下，以強制BPA清除其快取並重新產生報表 **重新整理報表**.
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
@@ -96,21 +96,21 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
 
 #### 在Best Practices Analyzer報表中使用篩選器 {#bpa-filters}
 
-要篩選與[ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)相關的發現，請執行以下步驟：
+篩選與 [ACS公域](https://adobe-consulting-services.github.io/acs-aem-commons/)，請遵循下列步驟：
 
-1. 按一下頁面左側的左側邊欄圖示。 這將顯示&#x200B;**ACS公域篩選器**。 按一下&#x200B;**ACS Commons Filter**&#x200B;以顯示互動式核取方塊，如下圖所示。
+1. 按一下頁面左側的左側邊欄圖示。 這會顯示 **ACS公域篩選器**. 按一下 **ACS公域篩選器** 顯示互動式核取方塊，如下圖所示。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
 只有當BPA偵測到ACS公域的使用時，左側邊欄圖示才會出現。
 
-1. 取消選中該框，以過濾與ACS公域相關的所有結果。 您應該會在報表上看到「**篩選的結果計數**」，如下圖所示。 以逗號分隔值(CSV)格式匯出時，篩選器也會套用至報表。
+1. 取消選中該框，以過濾與ACS公域相關的所有結果。 您應會看到 **篩選的結果計數** 如下圖所示。 以逗號分隔值(CSV)格式匯出時，篩選器也會套用至報表。
 
    ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-不應忽視ACS公域的調查結果。請參閱[檔案](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)以判斷與AEMas a Cloud Service的相容性。
+不應忽視ACS公域的調查結果。 請參閱 [檔案](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以判斷與AEMas a Cloud Service的相容性。
 
 
 ### Adobe Experience Manager 6.2 和 6.1 {#aem-specific-versions}
@@ -145,7 +145,7 @@ additional-url="https://experienceleague.adobe.com/docs/experience-manager-patte
 系統會為每個結果指派一個重要性層級，以指出動作的概略優先順序。
 
 >[!NOTE]
-若要深入了解每個「結果類別」，請參閱 [模式偵測器類別](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)。
+若要進一步了解每個「結果類別」，請參閱 [模式偵測器類別](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 請參考下表以了解重要性層級：
 
@@ -159,7 +159,7 @@ additional-url="https://experienceleague.adobe.com/docs/experience-manager-patte
 
 ## 解譯Best Practices Analyzer CSV報表 {#cra-csv-report}
 
-當您按一下AEM例項的&#x200B;**CSV**&#x200B;選項時，最佳實務分析器報表的CSV格式會從內容快取建置，並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報表將會以檔案格式自動下載，且具有預設名稱 `results.csv`。
+當您按一下 **CSV** 選項，最佳實務分析器報表的CSV格式會從內容快取建置，並傳回至您的瀏覽器。 根據您的瀏覽器設定，此報表將會以檔案格式自動下載，且具有預設名稱 `results.csv`。
 
 如果快取已過期，則會在 CSV 檔案建置和下載之前重新產生報表。
 
@@ -183,7 +183,7 @@ CSV 格式報表的欄包括：
 
 BPA提供HTTP介面，可作為AEM內使用者介面的替代介面。 該介面同時支援 HEAD 和 GET 命令。它可用於生成BPA報告，並以三種格式之一返回：JSON、CSV和定位點分隔值(TSV)。
 
-以下URL可用於HTTP訪問，其中`<host>`是安裝BPA的伺服器的主機名和埠（如有必要）:
+下列URL可用於HTTP存取，其中 `<host>` 是安裝了BPA的伺服器的主機名和埠（如果需要）:
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` (JSON 格式)
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` (CSV 格式)
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` (TSV 格式)
@@ -203,17 +203,17 @@ HTTP 介面可用於多種方法中。
 
 此介面使用下列 HTTP 標題：
 
-* `Cache-Control: max-age=<seconds>`:指定快取時效性存留期（以秒為單位）。(請參閱 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。)
-* `Prefer: respond-async`:指定伺服器應以非同步方式回應。(請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。)
-* `Prefer: return=minimal`:指定伺服器應返回最小響應。(請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)。)
+* `Cache-Control: max-age=<seconds>`:指定快取時效性存留期（以秒為單位）。 (請參閱 [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)。)
+* `Prefer: respond-async`:指定伺服器應以非同步方式回應。 (請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)。)
+* `Prefer: return=minimal`:指定伺服器應返回最小響應。 (請參閱 [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)。)
 
 在不方便使用 HTTP 標題時，可權衡使用下列 HTTP 查詢參數：
 
-* `max-age` （數字，選用）:指定快取時效性存留期（以秒為單位）。此數字必須大於或等於 0。預設的時效性存留期為86400秒。 若沒有此參數或對應的標頭，則會使用新快取在24小時內為請求提供服務，此時必須重新產生快取。 使用`max-age=0`將強制清除快取，並使用新產生的快取先前的非零時效性存留期，起始重新產生報表的作業。
-* `respond-async` （布林值，選用）:指定應以非同步方式提供回應。在快取已過期時使用`respond-async=true`，會使伺服器逕行傳回`202 Accepted`回應，而不等待快取重新整理及報表產生。 如果快取為最新狀態，此參數就沒有效用。預設值為`false`。若沒有此參數或對應的標頭，伺服器將同步回應，這可能需要相當長的時間，且需要調整HTTP用戶端的最大回應時間。
-* `may-refresh-cache` （布林值，選用）:指定當前快取為空、過時或很快即將過時時，伺服器可以響應請求刷新快取。如果`may-refresh-cache=true`或未指定，則伺服器可啟動後台任務，該任務將調用模式檢測器並刷新快取。 如果`may-refresh-cache=false`，則伺服器將不會啟動任何在快取為空或過時時原本會執行的重新整理任務，在這種情況下，報表將為空。 任何已在處理中的刷新任務都不受此參數的影響。
-* `return-minimal` （布林值，選用）:指定來自伺服器的回應應僅包含JSON格式中包含進度指示和快取狀態的狀態。如果`return-minimal=true`，則回應內文將限制為狀態物件。 如果`return-minimal=false`或未指定，則會提供完整回應。
-* `log-findings` （布林值，選用）:指定伺服器應在首次建立或刷新快取時記錄其內容。快取中的每個結果都會記錄為JSON字串。 只有在`log-findings=true`且請求產生新快取時，才會發生此記錄。
+* `max-age` （數字，選用）:指定快取時效性存留期（以秒為單位）。 此數字必須大於或等於 0。預設的時效性存留期為86400秒。 若沒有此參數或對應的標頭，則會使用新快取在24小時內為請求提供服務，此時必須重新產生快取。 使用 `max-age=0` 將使用新產生快取的先前非零時效性存留期，強制清除快取，並起始重新產生報表的作業。
+* `respond-async` （布林值，選用）:指定應以非同步方式提供回應。 使用 `respond-async=true` 快取已過期時，會導致伺服器傳回 `202 Accepted` 而不等待快取重新整理及報表產生。 如果快取為最新狀態，此參數就沒有效用。預設值為 `false`.若沒有此參數或對應的標頭，伺服器將同步回應，這可能需要相當長的時間，且需要調整HTTP用戶端的最大回應時間。
+* `may-refresh-cache` （布林值，選用）:指定當前快取為空、過時或很快即將過時時，伺服器可以響應請求刷新快取。 若 `may-refresh-cache=true`，或者，如果未指定，則伺服器可啟動後台任務，該任務將調用模式檢測器並刷新快取。 若 `may-refresh-cache=false` 那麼，如果快取為空或過時，伺服器將不會啟動任何原本會完成的重新整理任務，在這種情況下，報表將為空。 任何已在處理中的刷新任務都不受此參數的影響。
+* `return-minimal` （布林值，選用）:指定來自伺服器的回應應僅包含JSON格式中包含進度指示和快取狀態的狀態。 若 `return-minimal=true`，則回應內文將限制為狀態物件。 若 `return-minimal=false`，或若未指定，則會提供完整回應。
+* `log-findings` （布林值，選用）:指定伺服器應在首次建立或刷新快取時記錄其內容。 快取中的每個結果都會記錄為JSON字串。 只有在 `log-findings=true` 而請求會產生新的快取。
 
 當 HTTP 標頭和對應的查詢參數均存在時，將會以查詢參數優先。
 
@@ -227,8 +227,8 @@ HTTP 介面可用於多種方法中。
 可能的回應值如下：
 
 * `200 OK`:指出回應包含「模式偵測器」在快取的時效性存留期內產生的結果。
-* `202 Accepted`:用於指示快取已過時。當`respond-async=true`和`may-refresh-cache=true`時，此響應表示正在執行刷新任務。 當`may-refresh-cache=false`此響應僅表示快取已過時。
-* `400 Bad Request`：表示要求發生錯誤。「問題詳細資訊」格式的消息（請參見[RFC 7807](https://tools.ietf.org/html/rfc7807)）提供了更多詳細資訊。
+* `202 Accepted`:用於指示快取已過時。 當 `respond-async=true` 和 `may-refresh-cache=true` 此響應表示正在執行刷新任務。 當 `may-refresh-cache=false` 此回應僅表示快取已過時。
+* `400 Bad Request`：表示要求發生錯誤。「問題詳細資訊」格式的消息(請參閱 [RFC 7807](https://tools.ietf.org/html/rfc7807))提供更多詳細資料。
 * `401 Unauthorized`:表示請求未獲授權。
 * `500 Internal Server Error`：表示發生了內部伺服器錯誤。「問題詳細資料」格式的訊息可提供更多詳細資料。
 * `503 Service Unavailable`：表示伺服器正在處理另一個回應，而無法及時處理此要求。只有在提出同步要求時，才可能發生這種情況。「問題詳細資料」格式的訊息可提供更多詳細資料。
@@ -246,7 +246,7 @@ HTTP 介面可用於多種方法中。
 
 ### 在 AEM 6.1 上安裝 {#installing-on-aem61}
 
-BPA使用名為`repository-reader-service`的系統服務用戶帳戶來執行模式檢測器。 此帳戶適用於 AEM 6.2 和更新版本。在AEM 6.1上，必須執行下列步驟，在&#x200B;*安裝BPA之前建立此帳戶：*
+BPA使用名為的系統服務用戶帳戶 `repository-reader-service` 來執行模式偵測器。 此帳戶適用於 AEM 6.2 和更新版本。在AEM 6.1中，必須建立此帳戶 *之前* 安裝BPA，方法如下：
 
 1. 依照[建立新的服務使用者](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)中的指示建立使用者。將 UserID 設為 `repository-reader-service`，並將中繼路徑保留為空白，然後按一下綠色核取記號。
 
