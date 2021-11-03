@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager的整備階段
 description: 本頁概述Cloud Acceleration Manager的整備階段。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 3063a9d3a28e974300afa1b91c2b6a344b3361b8
+source-git-commit: 7737a9e6a0182fc98bf39da97c52f120139a2cc4
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -124,7 +124,7 @@ ht-degree: 5%
 
    >
    >您可以透過下拉式清單新增或變更圖形檢視，如下圖所示：
-   >![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >![影像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### 檢閱最佳實務分析報表 {#analysis-report}

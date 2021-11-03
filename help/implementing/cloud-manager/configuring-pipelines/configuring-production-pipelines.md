@@ -2,9 +2,9 @@
 title: 設定生產管道
 description: 設定生產管道
 index: false
-source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
+source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 0%
    * **立即繼續**  — 如果選中此選項，則每當出現「重要」故障時，管道將自動繼續。 這實際上是在模擬使用者手動核准每個失敗。
 
 
-1. 此 **新增生產管道** 對話框包含標籤為的第二個頁簽 **原始碼**. **完整堆疊程式碼** 中所有規則的URL。 您可以選擇 **存放庫** 和 **Git分支**. 選取「生產部署選項」，如下所述。 按一下 **繼續**.
+1. 此 **新增生產管道** 對話框包含標籤為的第二個頁簽 **原始碼**. 您可以選取 **完整堆疊程式碼**, **前端代碼** 或 **Web層配置**. 您可以選擇 **存放庫** 和 **Git分支**. 選取「生產部署選項」，如下所述。 按一下 **繼續**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 

@@ -2,9 +2,9 @@
 title: CI-CD管道
 description: CI-CD管道
 index: false
-source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
+source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -43,14 +43,13 @@ Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始�
 
 ## 了解Cloud Manager中的CI-CD管道 {#understand-pipelines}
 
-下表將Cloud Manager中的管道及其使用分類。
+下表匯總了Cloud Manager中的所有管道及其使用情況。
 
 | 管線類型 | 部署或程式碼品質 | 原始碼 | 使用時機 | 我應何時使用或為何使用？ |
 |--- |--- |--- |---|---|---|
 | 生產或非生產 | 部署 | 前端 | 部署前端代碼。 前端程式碼是任何以靜態檔案呈現的程式碼。 它與AEM提供的UI程式碼不同。 其中包括Sites主題、客戶定義的SPA、Firefly SPA和任何其他解決方案。 必須使用AEM版本。 | 部署時間快。<br> 可以為每個環境配置多個前端管道並行運行。 |
 |  | 部署 | 完整堆棧 | 同時部署後端、前端和HTTPD/Dispatcher設定。 注意：有些限制。 | 當前端或Web層配置管道尚未採用時。 |
 |  | 部署 | Web層配置 | 只需幾分鐘即可完全部署HTTPD/Dispatcher設定。  此簡化的管道可讓只想部署Dispatcher設定變更的使用者，加速完成部署。 注意：必須使用AEM版本 [版本] | 部署時間快。 |
-
 
 
 ## Cloud Manager前端管道 {#front-end}
@@ -65,10 +64,20 @@ Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始�
 * 前端程式碼品質
 * 前端部署
 
+### 配置前端管道之前 {#before-start}
+
+開始設定前端管道之前，請透過簡單易用的AEM快速網站建立工具，參閱端對端工作流程的AEM快速網站建立歷程。 本檔案網站可協助您簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂網站。
+
+### 配置前端管道 {#configure-front-end}
+
+要了解如何配置前端管道，請參閱：
+
+* 新增生產管道
+* 新增非生產管道
+
 ## 完整堆棧管道 {#full-stack-pipeline}
 
 完整堆疊管道可讓使用者選擇同時部署後端、前端和HTTPD/Dispatcher設定。  它會將程式碼和內容部署至AEM執行階段，包括封裝為AEM用戶端程式庫的前端程式碼(JavaScript/CSS)。 如果未配置Web層管道，則可部署Web層配置。 這代表「uber」管道，同時讓使用者可以選擇分別透過前端管道和網頁層組態管道，以專門部署其前端程式碼或調度程式設定。
-
 
 將適用下列限制：
 
@@ -85,3 +94,9 @@ Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始�
 * 完整堆疊程式碼品質管道
 * 完整堆棧部署管道
 
+### 配置完整堆棧管道 {#configure-full-stack}
+
+若要了解如何設定完整堆疊管道，請參閱：
+
+* 新增生產管道
+* 新增非生產管道
