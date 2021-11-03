@@ -1,10 +1,10 @@
 ---
 title: 設定非生產管道
-description: 設定非生產管道
+description: 請參照本頁面，了解如何在Cloud Manager中設定非生產管道
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: 7d45179093366dda2d035b5a8eed219e4846f777
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,7 @@ ht-degree: 0%
 # 設定非生產管道 {#configure-non-production-pipeline}
 
 除了部署至預備和生產的主要管道外，客戶還能設定額外的管道，稱為非生產管道。
+
 非生產管道有兩種類型：
 
 1. 程式碼品質：在Git分支的程式碼上執行程式碼品質掃描。 此管道會執行建置和程式碼品質步驟。
