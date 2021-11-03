@@ -1,9 +1,9 @@
 ---
 title: 配置AEMas a Cloud Service的高級網路
 description: 了解如何配置高級網路功能，如VPN或靈活或專用的輸出IP地址，以便AEMas a Cloud Service
-source-git-commit: 8990113529fb892f58b9171ebc2b04736bf45003
+source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2836'
 ht-degree: 1%
 
 ---
@@ -15,10 +15,6 @@ ht-degree: 1%
 
 ## 概覽 {#overview}
 
->[!INFO]
->
->進階網路功能是2021.9.0版的一部分，將於10月中旬為客戶啟用。
-
 AEM as a Cloud Service提供數種進階網路功能，可由使用Cloud Manager API的客戶進行設定。 這些包括：
 
 * [靈活的埠輸出](#flexible-port-egress)  — 配置AEMas a Cloud Service，以允許非標準埠的出站流量
@@ -27,11 +23,12 @@ AEM as a Cloud Service提供數種進階網路功能，可由使用Cloud Manager
 
 本文詳細說明每個選項，包括如何設定。 作為一般配置策略， `/networkInfrastructures` 在程式層級叫用API端點，以宣告所需的進階網路類型，接著呼叫 `/advancedNetworking` 每個環境的端點，以啟用基礎架構並配置特定於環境的參數。 請參考Cloud Manager API檔案中各正式語法的適當端點，以及範例要求和回應。
 
-當在靈活的埠輸出和專用的輸出IP地址之間進行決定時，如果不需要特定的IP地址，建議您選擇靈活的埠輸出，因為Adobe可以優化靈活的埠輸出通信的效能。
+程式可以配置單個高級網路變數。 當在靈活的埠輸出和專用的輸出IP地址之間進行決定時，如果不需要特定的IP地址，建議您選擇靈活的埠輸出，因為Adobe可以優化靈活的埠輸出通信的效能。
 
 >[!INFO]
 >
 >沙箱方案無法使用進階網路。
+>此外，環境必須升級至AEM 5958版或更新版本。
 
 >[!NOTE]
 >
@@ -49,9 +46,9 @@ AEM as a Cloud Service提供數種進階網路功能，可由使用Cloud Manager
 
 每個程式一次，POST `/program/<programId>/networkInfrastructures` 叫用端點，只需傳遞 `flexiblePortEgress` 針對 `kind` 參數和地區。 端點會以 `network_id`，以及其他資訊，包括狀態。 API檔案中應參考完整的參數集和確切語法。
 
-呼叫後，配置網路基礎架構通常需要約15分鐘。 呼叫Cloud Manager的 [環境GET端點](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getEnvironment) 會顯示「就緒」狀態。
+呼叫後，配置網路基礎架構通常需要約15分鐘。 呼叫Cloud Manager的 [網路基礎結構GET端點](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 會顯示「就緒」狀態。
 
-如果程式範圍的靈活埠輸出配置已就緒，則 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 必須為每個環境調用端點，以啟用環境級別的網路並聲明任何埠轉發規則。 參數可依環境設定，以提供彈性。
+如果程式範圍的靈活埠輸出配置已就緒，則 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 必須按環境調用端點，以啟用環境級別的網路，並選擇聲明任何埠轉發規則。 參數可依環境設定，以提供彈性。
 
 應通過指定目標主機集（名稱或IP，以及埠），為80/443以外的任何埠聲明埠轉發規則。 對於每個目標主機，客戶必須將目標埠映射到30000到30999的埠。
 

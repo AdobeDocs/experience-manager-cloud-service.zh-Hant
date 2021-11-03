@@ -3,9 +3,9 @@ title: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service�
 description: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f89fbf4e693fb1b17e8923dfcc6c9b4de92b536d
+source-git-commit: ffdd1e306ed24409fd5ef946172d95b1ca5ed7cc
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1911'
 ht-degree: 2%
 
 ---
@@ -141,10 +141,6 @@ CQ-4328183 was not reported on CS so not documented here.
 ### 中的新功能 [!DNL Experience Manager as a Cloud Service] {#foundation-features}
 
 **高級網路**
-
->[!INFO]
->
->進階網路功能是2021.9.0版的一部分，將於10月中旬為客戶啟用。
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在提供多種類型的進階網路功能，包括：
 
