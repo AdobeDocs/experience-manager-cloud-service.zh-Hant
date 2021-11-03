@@ -2,9 +2,9 @@
 title: 編輯非生產管道
 description: 編輯非生產管道
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # 編輯非生產管道 {#edit-non-prod-pipeline}
 
 可以從 **管道卡** 從 **計畫概述** 頁面。
+
+>[!IMPORTANT]
+>無法編輯正在運行的管道。
 
 請依照下列步驟編輯已設定的非生產管道：
 

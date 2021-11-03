@@ -2,9 +2,9 @@
 title: 編輯生產管道
 description: 編輯生產管道
 index: false
-source-git-commit: b9d28088ad18a389108ebfb81aa750c63e637922
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # 編輯生產管道 {#edit-prod-pipeline}
 
 可以從 **計畫概述** 頁面。
+
+>[!IMPORTANT]
+>無法編輯正在運行的管道。
 
 請依照下列步驟編輯已設定的管道：
 
