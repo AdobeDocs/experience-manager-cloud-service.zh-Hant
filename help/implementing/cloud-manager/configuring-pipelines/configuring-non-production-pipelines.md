@@ -2,9 +2,9 @@
 title: 設定非生產管道
 description: 請參照本頁面，了解如何在Cloud Manager中設定非生產管道
 index: false
-source-git-commit: 7d45179093366dda2d035b5a8eed219e4846f777
+source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -36,12 +36,15 @@ ht-degree: 0%
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. 選擇 **完整堆疊程式碼** 或 **前端代碼**. 您可以選擇 **存放庫** 和 **Git分支**. 按一下 **儲存**.
+1. 選擇 **[完整堆疊程式碼](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** 或 **[前端代碼](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. 您可以選擇 **存放庫** 和 **Git分支**. 按一下 **儲存**.
+
+   >[!IMPORTANT]
+   >如果所選環境已存在完整堆棧代碼管道，則此選擇將被禁用。
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
    >[!NOTE]
    >開始設定前端管道之前，請透過簡單易用的AEM快速網站建立工具，參閱端對端工作流程的AEM快速網站建立歷程。 本檔案網站可協助您簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂網站。
-
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
 1. 新建立的非生產管道現在會顯示在 **管道** 卡片。
 
