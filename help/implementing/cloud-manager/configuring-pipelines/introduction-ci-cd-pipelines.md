@@ -2,9 +2,9 @@
 title: CI-CD管道
 description: 請詳閱本頁，了解Cloud Manager CI-CD管道
 index: false
-source-git-commit: b6749b149e2166a6f2881817368e418d8b2adb00
+source-git-commit: 65898bd90e057cf5d646c5183ba6d2c8bdcac06e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始�
 
 * [生產管道](#prod-pipeline)
 * [非生產管道](#non-prod-pipeline)
+
+![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cdpipeline-overview.png)
 
 ## 生產管道 {#prod-pipeline}
 
