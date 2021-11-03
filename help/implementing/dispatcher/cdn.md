@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: e5455985df0dad352fa158c7fb0df7d6c6a8dee0
+source-git-commit: e5522483a15b6253e0b149200bd41d27246d2be1
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 7%
@@ -11,7 +11,6 @@ ht-degree: 7%
 ---
 
 # AEM as a Cloud Service 中的 CDN {#cdn}
-
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
@@ -61,6 +60,7 @@ AEM管理的CDN將可滿足大部分客戶的效能和安全性需求。 對於�
 1. 將Host標題設為來源網域。 例如： `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. 設定 `X-Forwarded-Host` 包含網域名稱的標題，以便AEM可判斷主機標題。 例如： `X-Forwarded-Host:example.com`.
 1. 設定 `X-AEM-Edge-Key`. 值應來自Adobe。
+
    * 這是必要的，讓AdobeCDN可以驗證請求來源並傳遞 `X-Forwarded-*` 標題至AEM應用程式。 例如，`X-Forwarded-For` 用於確定客戶端IP。 因此，它成為受信任呼叫者（即客戶管理的CDN）的責任，以確保 `X-Forwarded-*` 標題（請參閱下方附註）。
    * 此外，當AdobeCDN的入口被封鎖時， `X-AEM-Edge-Key` 不存在。 如果您需要直接存取AdobeCDN的入口（待封鎖），請通知Adobe。
 
