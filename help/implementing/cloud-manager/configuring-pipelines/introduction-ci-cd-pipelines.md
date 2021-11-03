@@ -1,10 +1,10 @@
 ---
 title: CI-CD管道
-description: CI-CD管道
+description: 請詳閱本頁，了解Cloud Manager CI-CD管道
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: b6749b149e2166a6f2881817368e418d8b2adb00
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,14 +32,14 @@ Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始�
 
 生產管道是專門建置的管道，包含一系列協調步驟，可將原始碼一直帶入生產環境。 這些步驟包括首先構建、打包、測試、驗證和部署到所有階段環境中。 不消說，只有建立生產和預備環境集後，才能新增生產管道。
 
-如需詳細資訊，請參閱設定生產管道。
+請參閱 [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 以取得更多詳細資訊。
 
 
 ## 非生產管道 {#non-prod-pipeline}
 
 非生產管道旨在執行程式碼品質掃描，或將原始碼部署至開發環境。
 
-如需詳細資訊，請參閱僅限非生產及代碼品質的管道。
+請參閱 [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 以取得更多詳細資訊。
 
 ## 了解Cloud Manager中的CI-CD管道 {#understand-pipelines}
 
@@ -47,10 +47,14 @@ Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始�
 
 | 管線類型 | 部署或程式碼品質 | 原始碼 | 使用時機 | 我應何時使用或為何使用？ |
 |--- |--- |--- |---|---|---|
-| 生產或非生產 | 部署 | 前端 | 部署前端代碼。 前端程式碼是任何以靜態檔案呈現的程式碼。 它與AEM提供的UI程式碼不同。 其中包括Sites主題、客戶定義的SPA、Firefly SPA和任何其他解決方案。 必須使用AEM版本。 | 部署時間快。<br> 可以為每個環境配置多個前端管道並行運行。 |
-|  | 部署 | 完整堆棧 | 同時部署後端、前端和HTTPD/Dispatcher設定。 注意：有些限制。 | 當前端或Web層配置管道尚未採用時。 |
-|  | 部署 | Web層配置 | 只需幾分鐘即可完全部署HTTPD/Dispatcher設定。  此簡化的管道可讓只想部署Dispatcher設定變更的使用者，加速完成部署。 注意：必須使用AEM版本 [版本] | 部署時間快。 |
+| 生產或非生產 | 部署 | 前端 | 部署前端代碼。 前端程式碼是任何以靜態檔案呈現的程式碼。 它與AEM提供的UI程式碼不同。 其中包括Sites主題、客戶定義的SPA、Firefly SPA和任何其他解決方案。 必須使用AEM版本。 | 快速部署時間<br> 可為每個環境配置和同時運行多個前端管道 |
+|  | 部署 | 完整堆棧 | 同時部署後端、前端和HTTPD/Dispatcher設定。 有些限制。 | 當前端管道尚未採用時。 |
+| 非生產 | 程式碼品質 | 前端 | 在前端程式碼上執行程式碼品質掃描 | 快速部署時間<br> 可配置和運行多個管道 |
+|  | 程式碼品質 | 完整堆棧 | 對完整堆棧代碼運行代碼質量掃描 | 快速部署時間<br> 可配置和運行多個管道 |
 
+下圖說明Cloud Manager管道設定，包含傳統、單一前端存放庫或獨立的前端存放庫設定：
+
+![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-configurations.png)
 
 ## Cloud Manager前端管道 {#front-end}
 
@@ -59,10 +63,7 @@ Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始�
 >[!NOTE]
 >以部署管理員角色登錄的用戶可以同時建立和運行多個前端管道。 但是，每個方案（所有類型）的管道數上限為300個。
 
-前端管道有兩種類型：
-
-* 前端程式碼品質
-* 前端部署
+這些可以是前端代碼質量或前端部署管道類型。
 
 ### 配置前端管道之前 {#before-start}
 
@@ -89,10 +90,7 @@ Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始�
 
 1. 如果環境的對應Web層配置管道存在，則環境的完整堆疊管道將忽略調度程式配置。
 
-完整堆棧管道有兩種類型：
-
-* 完整堆疊程式碼品質管道
-* 完整堆棧部署管道
+這些類型可以是「完整堆疊 — 程式碼品質」或「完整堆疊 — 部署」管道。
 
 ### 配置完整堆棧管道 {#configure-full-stack}
 
