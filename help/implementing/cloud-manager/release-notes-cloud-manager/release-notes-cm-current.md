@@ -1,54 +1,63 @@
 ---
-title: AEMas a Cloud Service版2021.10.0中的Cloud Manager發行說明
-description: AEMas a Cloud Service版2021.10.0中的Cloud Manager發行說明
+title: AEMas a Cloud Service版2021.11.0中的Cloud Manager發行說明
+description: AEMas a Cloud Service版2021.11.0中的Cloud Manager發行說明
 feature: Release Information
 exl-id: null
-source-git-commit: 23b19789e9e9857c9ae3d763fc71586a5e5da25b
+source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '421'
 ht-degree: 3%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2021.10.0中的Cloud Manager發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.11.0中的Cloud Manager發行說明 {#release-notes}
 
-本頁概述AEM 2021.10.0中Cloud Manager的發行說明。
+本頁概述AEM 2021.11.0中Cloud Manager的發行說明。
 
 >[!NOTE]
->若要查看最新的Adobe Experience Manager as a Cloud Service發行說明，請按一下[here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hant)。
+>若要查看最新的Adobe Experience Manager as a Cloud Service發行說明，請按一下 [此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hant).
 
 ## 發行日期 {#release-date}
 
-AEMas a Cloud Service的Cloud Manager發行日期為2021.10.0年10月14日。
-下一版預計於2021年11月4日發行。
+AEMas a Cloud Service的Cloud Manager發行日期2021.11.0為2021年11月4日。
+下一版預計於2021年12月9日發行。
 
 ### 新增功能 {#what-is-new}
 
-* 為了準備一些即將進行的更改，現在將在用戶介面中引用現有部署管道，並將其標籤為&#x200B;**完整堆棧**&#x200B;管道。
+* 使用者現在可以運用新的前端管道，以加速方式專門部署前端程式碼。 請參閱 [Cloud Manager前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 了解更多。
 
-* 管道卡已重新整理，現在會顯示顯示生產管道和非生產管道的單一整合面板，且使用者可從與每個管道相關聯的動作功能表中直接選取「執行/暫停/繼續」。
+   >[!IMPORTANT]
+   >您必須使用AEM版本 `2021.10.5933.20211012T154732Z` 以利用新的前端管道。
 
-* 部署管理員角色中的使用者現在可以透過UI以自助方式刪除生產管道。
+* 以更有效的方式執行程式碼分析，而不需要建立整個AEM影像，可大幅縮短程式碼品質管道持續時間。 此變更將在發行後的數週內逐步推出。
 
-* 新增和編輯管道體驗已重新整理，現在可使用熟悉的現代模組。
+* Git提交ID現在會顯示在管道執行詳細資訊中，以便更輕鬆追蹤已建置的程式碼。
 
-* Cloud Manager的使用者現在可以透過登錄頁面右上角的&#x200B;**Feedback**&#x200B;按鈕，直接從使用者介面提交意見。
+* 現在可透過公開的API建立方案。
 
-* 每年的SLA圖表現在可以從Cloud Manager的使用者介面下載。
+* 現在可透過公開的API建立環境。
 
-* 程式碼品質和非生產管道執行現在會在建置步驟期間使用更有效率的淺層復製程式，為擁有特別大型Git存放庫的客戶提供更快的建置時間。
+* 此 `x-request-id` 回應標題現在會顯示在 [www.adobe.io](https://www.adobe.io/). 提交客戶服務問題以進行疑難排解時，此標題相當實用。
 
-* 「新增IP允許清單」精靈現在會通知使用者已達到允許的IP允許清單數目上限。
+* 身為使用者，我看到管道為零的管道卡為我提供適當的指引。
 
-* Cloud Manager API檔案現在包含互動式操作場，可讓登入的使用者透過瀏覽器試驗API。 如需詳細資訊，請參閱[Cloud Manager API Plearty](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) 。
+* 現在提供新的管道頁面，其中提供暫留時顯示的狀態彈出視窗，以便您輕鬆檢視詳細資訊摘要。 可檢視管道執行及其相關聯的詳細資訊。
 
-* 如果禁用「導航到」下的選擇選項，則「程式」卡上的工具提示將更具描述性。 現在會顯示「生產環境不存在」。
+* 「編輯管道API」現在支援變更部署階段所使用的環境。
+
+* 已針對大型封裝導入OakPal掃描程式的最佳化。
+
+* 品質問題CSV檔案現在會包含每個品質問題的時間戳記。
 
 ### 錯誤修正 {#bug-fixes}
 
-* 在極少數情況下，當Adobe員工恢復客戶的環境時，在環境完全運行之前，會將恢復視為已完成。
+* 某些非正統的組建設定會導致管道的Maven工件快取中儲存不必要的檔案，導致在啟動和停止組建容器時產生多餘的網路I/O。
 
-* 環境建立期間提出的某些內部請求未重試。
+* 如果部署階段不存在，管道PATCHAPI就會失敗。
 
-* 如果在域名驗證後發生部署失敗錯誤，則錯誤消息已更正，以請客戶聯繫其Adobe代表。
+* 此 `ClientlibProxyResourceCheck` 當有具有共同基本路徑的用戶端程式庫時，品質規則會產生誤判問題。
+
+* 達到最大儲存庫數時，錯誤訊息未指定錯誤的原因。
+
+* 在少數情況下，管道由於某些回應代碼的重試處理不當而失敗。
 
