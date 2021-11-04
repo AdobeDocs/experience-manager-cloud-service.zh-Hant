@@ -2,9 +2,9 @@
 title: CI-CD管道
 description: 請詳閱本頁，了解Cloud Manager CI-CD管道
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: 71e4a9932ef89ebf263ebbc0300bf2c938fa50f5
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -50,14 +50,14 @@ Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始�
 
 | 管線類型 | 部署或程式碼品質 | 原始碼 | 使用時機 | 我應何時使用或為何使用？ |
 |--- |--- |--- |---|---|---|
-| 生產或非生產 | 部署 | 前端 | 部署前端代碼。 前端程式碼是任何以靜態檔案呈現的程式碼。 它與AEM提供的UI程式碼不同。 其中包括Sites主題、客戶定義的SPA、Firefly SPA和任何其他解決方案。 必須使用AEM版本。 | 快速部署時間<br> 可為每個環境配置和同時運行多個前端管道 |
-|  | 部署 | 完整堆棧 | 同時部署後端、前端和HTTPD/Dispatcher設定。 有些限制。 | 當前端管道尚未採用時。 |
-| 非生產 | 程式碼品質 | 前端 | 在前端程式碼上執行程式碼品質掃描 | 快速部署時間<br> 可配置和運行多個管道 |
-|  | 程式碼品質 | 完整堆棧 | 對完整堆棧代碼運行代碼質量掃描 | 快速部署時間<br> 可配置和運行多個管道 |
+| 生產或非生產 | 部署 | 前端 | 部署時間快。<br>可以為每個環境配置多個前端管道並行運行。<br>前端管道組建會將組建推出至儲存空間。 提供html頁面時，可參考CDN會以此儲存作為來源提供的前端程式碼靜態檔案。 | 僅部署包含一個或多個客戶端UI應用程式的前端代碼。 前端程式碼是任何以靜態檔案呈現的程式碼。 它與AEM提供的UI程式碼不同。 其中包括Sites主題、客戶定義的SPA、Firefly SPA和任何其他解決方案。<br>必須使用AEM版本 `2021.10.5933.20211012T154732Z` |
+| 生產或非生產 | 部署 | 完整堆棧 | 當前端管道尚未採用時。<br>若是前端程式碼必須與AEM伺服器程式碼部署的時間完全相同， | 部署AEM伺服器代碼（不可變內容、Java代碼、OSGi配置、HTTPD/dispatcher配置、重新指向、可變內容、字型） — 同時包含一個或多個AEM伺服器應用程式。 |
+| 非生產 | 程式碼品質 | 前端 | 讓Cloud Manager在不進行部署的情況下，評估您的組建成功和程式碼品質。<br>可以配置和運行多個管道。 | 在前端程式碼上執行程式碼品質掃描。 |
+| 非生產 | 程式碼品質 | 完整堆棧 | 讓Cloud Manager在不進行部署的情況下，評估您的組建成功和程式碼品質。<br>可以配置和運行多個管道。 | 對完整堆疊程式碼執行程式碼品質掃描。 |
 
 下圖說明Cloud Manager管道設定，包含傳統、單一前端存放庫或獨立的前端存放庫設定：
 
-![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-configurations.png)
+![](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
 
 ## Cloud Manager前端管道 {#front-end}
 
@@ -76,8 +76,8 @@ Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始�
 
 要了解如何配置前端管道，請參閱：
 
-* 新增生產管道
-* 新增非生產管道
+* [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
+* [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 ## 完整堆棧管道 {#full-stack-pipeline}
 
@@ -99,5 +99,5 @@ Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始�
 
 若要了解如何設定完整堆疊管道，請參閱：
 
-* 新增生產管道
-* 新增非生產管道
+* [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline))
+* [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
