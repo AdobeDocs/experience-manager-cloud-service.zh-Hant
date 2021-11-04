@@ -2,9 +2,9 @@
 title: 設定生產管道
 description: 設定生產管道
 index: true
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: 8bdc246d1f47e1bdc9a217588f0be69a09982be5
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 0%
    * **立即繼續**  — 如果選中此選項，則每當出現「重要」故障時，管道將自動繼續。 這實際上是在模擬使用者手動核准每個失敗。
 
 
-1. 此 **新增生產管道** 對話框包含標籤為的第二個頁簽 **原始碼**. 您可以選取 **[前端代碼](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** 或 **[完整堆疊程式碼](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**. 您可以選擇 **存放庫** 和 **Git分支**. 選取「生產部署選項」，如下所述。 按一下 **繼續**.
+1. 此 **新增生產管道** 對話框包含標籤為的第二個頁簽 **原始碼**. 您可以選取 **[前端代碼](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** 或 **[完整堆疊程式碼](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
@@ -77,6 +77,7 @@ ht-degree: 0%
    >[!NOTE]
    >開始配置前端管道之前，請參見 [AEM快速網站建立歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 透過簡單易用的AEM快速網站建立工具，提供端對端工作流程。 本檔案網站可協助您簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂網站。
 
+1. 按一下 **繼續** 選取 **原始碼** 標籤。
 
 1. 此 **新增生產管道** 對話框包含標籤為的第三個頁簽 **體驗稽核**. 此選項提供URL路徑的表格，這些路徑應一律包含在「體驗稽核」中。
 
@@ -108,9 +109,12 @@ ht-degree: 0%
 
 1. 按一下 **儲存**. 新建立的生產管道現在會顯示在 **管道** 卡片。
 
-   管道會顯示在主畫面的卡片上，包含三個動作，如下所示：
+   管道會顯示在主畫面的卡片上，包含四個動作，如下所示：
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-created.png)
 
    * **新增**  — 允許添加新管道。
+   * **全部顯示**  — 允許用戶查看所有管道。
    * **存取存放庫資訊**  — 可讓使用者取得存取Cloud Manager Git存放庫所需的資訊。
    * **更多詳情**  — 導覽至了解CI/CD管道檔案資源。
 
