@@ -2,9 +2,9 @@
 title: 設定生產管道
 description: 設定生產管道
 index: true
-source-git-commit: 307472d5b9887101b9e365cafc781ec97a1bcdb5
+source-git-commit: f25e26c84a87cf793f9c8a5ac53009034e6cd2e9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,18 @@ ht-degree: 0%
 
 1. 此 **新增生產管道** 對話框包含標籤為的第二個頁簽 **原始碼**. 您可以選取 **[完整堆疊程式碼](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** 或 **[前端代碼](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. 您可以選擇 **存放庫** 和 **Git分支**. 選取「生產部署選項」，如下所述。 按一下 **繼續**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+
+   如果您選取 **前端代碼**，您必須選取 **存放庫**, **Git分支** 和 **代碼位置**，如下圖所示：
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+
+   如果您選取 **完整堆疊程式碼**，您必須選取 **存放庫**, **Git分支** 和 **生產部署選項**，如下圖所示：
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
+
+   **生產部署選項：**
+
+   * **部署至生產環境前暫停**:此選項可讓部署在生產前暫停。
+   * **已排程**:此選項可讓使用者啟用排程的生產部署。
 
    >[!IMPORTANT]
    >如果所選環境已存在完整堆棧代碼管道，則此選擇將被禁用。
@@ -66,10 +77,9 @@ ht-degree: 0%
    >[!NOTE]
    >開始配置前端管道之前，請參見 [AEM快速網站建立歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 透過簡單易用的AEM快速網站建立工具，提供端對端工作流程。 本檔案網站可協助您簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂網站。
 
-   生產部署選項：
 
-   * **部署至生產環境前暫停**:此選項可讓部署在生產前暫停。
-   * **已排程**:此選項可讓使用者啟用排程的生產部署。
+
+
 
 1. 此 **新增生產管道** 對話框包含標籤為的第三個頁簽 **體驗稽核**. 此選項提供URL路徑的表格，這些路徑應一律包含在「體驗稽核」中。
 
