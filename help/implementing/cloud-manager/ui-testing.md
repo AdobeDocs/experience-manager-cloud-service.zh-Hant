@@ -2,9 +2,9 @@
 title: UI測試 — Cloud Services
 description: UI測試 — Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ UI測試是封裝在Docker影像中的基於硒的測試，以允許在語言和
 
 >[!NOTE]
 > 2021年2月10日之前建立的預備和生產管道必須更新，才能使用本頁面所述的UI測試。
-> 請參閱 [設定CI-CD管道](/help/implementing/cloud-manager/configure-pipeline.md) 以取得管道設定的相關資訊。
+> 請參閱 [Cloud Manager中的CI-CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 以取得管道設定的相關資訊。
 
 ## 建立UI測試 {#building-ui-tests}
 

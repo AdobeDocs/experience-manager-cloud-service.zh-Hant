@@ -5,10 +5,10 @@ breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: f9d224c1f06b424717942a8a285dd42ce746ede9
+source-git-commit: 2f428f4401d7c60685332e9d23a02bf0bfb27c23
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 35%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,8 +18,9 @@ ht-degree: 35%
 + [為 AEM as a Cloud Service 實作應用程式](/help/implementing/home.md)
 + 使用 Cloud Manager {#using-cloud-manager}
    + Cloud Manager發行說明 {#release-notes-cloud-manager}
-      + [最新發行說明 (2021.10.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新發行說明 (2021.11.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021年 {#2021}
+         + [2021.10.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
          + [2021.9.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
          + [2021.8.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [2021.7.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
@@ -64,7 +65,14 @@ ht-degree: 35%
       + [整合 Git 與 Adobe Cloud Manager](cloud-manager/managing-code/integrating-with-git.md)
       + [使用多個來源Git存放庫](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [AEM as a Cloud Service的企業團隊開發設定](cloud-manager/managing-code/enterprise-team-dev-setup.md)
-   + [設定 CI/CD 管道](cloud-manager/configure-pipeline.md)
+   + Cloud Manager CI-CD管道 {#cicd-pipelines}
+      + [簡介](cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+      + 生產管道 {#production-pipelines}
+         + [設定生產管道](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
+         + [編輯生產管道](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+      + 非生產管道 {#non-production-pipelines}
+         + [設定非生產管道](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [編輯非生產管道](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
    + [部署程式碼](cloud-manager/deploy-code.md)
    + 了解測試結果 {#test-results}
       + [概覽](/help/implementing/cloud-manager/overview-test-results.md)
@@ -113,6 +121,7 @@ ht-degree: 35%
    + [AEM技術基礎](/help/implementing/developing/introduction/aem-technologies.md)
    + [API參考資料](/help/implementing/developing/reference-materials.md)
    + [產生伺服器端API的存取權杖](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + [自訂網站範本和主題](developing/introduction/customizing-site-templates-themes.md)
    + [AEM中的Headful和Headless](developing/headful-headless.md)
    + 完整堆疊AEM開發 {#full-stack}
       + [開始開發 AEM Sites - WKND 教學課程](developing/introduction/develop-wknd-tutorial.md)
