@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 98c6207e84fda0d4bab3141c84507498f3527337
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 42%
@@ -13,18 +13,18 @@ ht-degree: 42%
 
 | 產品 | Adobe Experience Manager as a Cloud Service  |
 |---|---|
-| 版本 | 2021.09.0 |
+| 版本 | 2021.10.0 |
 | 類型 | 持續更新 |
 | 推出日期 | 持續更新 |
 
 ## 如何準備發行 {#how-to-prepare}
 
-在[!DNL Adobe Experience Manager]as a Cloud Service的連續發行模型中，應用程式會持續自動更新。 有兩種更新類型、功能發行和重要更新：
+在 [!DNL Adobe Experience Manager] as a Cloud Service的是，應用程式會持續自動更新。 有兩種更新類型、功能發行和重要更新：
 
 * 功能發佈時每月頻率可預測，並著重於新功能和產品創新。
-* 重要更新會頻繁執行，並著重於安全性更新、錯誤修正和效能增強。 這可確保[!DNL Adobe Experience Manager]as a Cloud Service始終與任何重要修正保持最新。
+* 重要更新會頻繁執行，並著重於安全性更新、錯誤修正和效能增強。 這可確保 [!DNL Adobe Experience Manager] as a Cloud Service始終與任何重要修正保持最新。
 
-除了創新速度之外，[!DNL Adobe Experience Manager] as a Cloud Service還提供靈活性，讓您在功能投入生產之前，提前整個月預覽即將推出的功能。 這可讓您測試在您自己的自訂環境中執行功能，並提前訓練/準備內部使用者，以評估即將發行的版本對其組織的影響。
+除了創新速度， [!DNL Adobe Experience Manager] as a Cloud Service功能也提供彈性，可在功能投入生產前，提前整個月預覽即將推出的功能。 這可讓您測試在您自己的自訂環境中執行功能，並提前訓練/準備內部使用者，以評估即將發行的版本對其組織的影響。
 
 >[!NOTE]
 >
@@ -32,9 +32,9 @@ ht-degree: 42%
 
 準備發行：
 
-1. 標籤日曆：在[Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)上查看每月發行的關鍵日期，並標籤日曆，為重要活動做好準備，以便準備發行。
-1. 檢閱發行說明：請參閱[最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)，以熟悉發行和發行前功能。
-1. 訪問並嘗試新功能：在非生產環境中啟用[搶鮮通道](/help/release-notes/prerelease.md)，並開始嘗試在自訂環境中評估功能。
+1. 標籤日曆：查看 [Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 並在日曆上標籤，以備重要活動準備好發行。
+1. 檢閱發行說明：閱讀 [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md) 以熟悉發行和發行前功能。
+1. 訪問並嘗試新功能：啟用 [預發行管道](/help/release-notes/prerelease.md) 在非生產環境中，並開始嘗試在自訂環境中評估功能。
 1. 培訓您的用戶：使用檔案和Experience League資源，讓使用者快速熟悉新功能。
 
 ## 重要發行資訊 {#key-articles}

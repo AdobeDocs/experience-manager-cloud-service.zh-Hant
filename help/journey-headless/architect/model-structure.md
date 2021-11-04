@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
+source-git-commit: 04e7cd99c98855ca109e112fd87877d0b6b536fc
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '690'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## 迄今為止的故事 {#story-so-far}
 
-在[AEM無頭內容製作歷程](overview.md)的開頭，使用AEM的[無頭內容建模基本概念涵蓋與無頭內容製作相關的基本概念和術語。](basics.md)
+在 [AEM無頭內容製作歷程](overview.md) the [使用AEM的無頭式內容模型基本知識](basics.md) 涵蓋與無頭製作相關的基本概念和術語。
 
 本文以這些為基礎，讓您了解如何為AEM無頭專案建立自己的內容片段模型。
 
@@ -46,27 +46,27 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![工具中的內容片段模型](assets/cfm-tools.png)
 
-選取此選項後，請導覽至模型的位置，然後選取&#x200B;**Create**。 您可以在此輸入各種密鑰詳細資訊。
+選取此選項後，請導覽至模型的位置並選取 **建立**. 您可以在此輸入各種密鑰詳細資訊。
 
-預設會激活&#x200B;**啟用模型**&#x200B;選項。 這表示當您儲存模型後，就可供使用（在建立內容片段時）。 您可以視需要停用此功能，之後可能會啟用（或停用）現有模型。
+選項 **啟用模型** 預設為啟用。 這表示當您儲存模型後，就可供使用（在建立內容片段時）。 您可以視需要停用此功能，之後可能會啟用（或停用）現有模型。
 
 ![建立內容片段模型](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-使用&#x200B;**Create**&#x200B;確認，然後您可以&#x200B;**Open**&#x200B;您的模型以開始定義結構。
+確認為 **建立** 你可以 **開啟** 要開始定義結構的模型。
 
 ## 定義內容片段模型 {#defining-content-fragment-models}
 
-首次開啟新模型時，您會看到左邊有一個很大的空白字元，右邊還有一長串&#x200B;**資料類型**:
+首次開啟新模型時，您會看到左側有一個很大的空白，以及 **資料類型** 在右邊：
 
 ![空模型](/help/assets/content-fragments/assets/cfm-models-03.png)
 
 那麼，該怎麼辦？
 
-您可以將&#x200B;**資料類型**&#x200B;的例項拖曳至左側空格 — 您已定義模型！
+您可以拖曳 **資料類型** 在左邊空間 — 您已定義模型！
 
 ![定義欄位](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-新增資料類型後，將需要定義該欄位的&#x200B;**屬性**。 視使用的類型而定。 例如：
+新增資料類型後，將需要定義 **屬性** 那塊地。 視使用的類型而定。 例如：
 
 ![資料屬性](/help/assets/content-fragments/assets/cfm-models-05.png)
 
@@ -101,13 +101,9 @@ At the very start you need to enable Content Fragment Models for your site, this
 >
 >如果作者嘗試發佈模型尚未發佈的內容片段，選取清單會指出這點，且模型將會隨片段發佈。
 
->[!NOTE]
->
->「鎖定（已發佈）內容片段模型」功能是測試版。
+模型發佈後即會 *鎖定* 在作者上轉換為唯讀模式。 這可防止發生變更，導致現有GraphQL結構和查詢發生錯誤，尤其是在發佈環境中。 在主控台中以 **已鎖定**.
 
-發佈模型後，就會在作者上將其&#x200B;*locked*&#x200B;鎖定至「唯讀」模式。 這可防止發生變更，導致現有GraphQL結構和查詢發生錯誤，尤其是在發佈環境中。 它在控制台中由&#x200B;**Locked**&#x200B;指示。
-
-當模型為&#x200B;**Locked**&#x200B;時（在「只讀」模式下），您可以查看模型的內容和結構，但無法直接編輯它們；不過，您可以從控制台或模型編輯器管理&#x200B;**鎖定的**&#x200B;模型。
+當模型為 **已鎖定** （在「只讀」模式中），您可以查看模型的內容和結構，但無法直接編輯它們；雖然您可以 **已鎖定** 從控制台或模型編輯器建立模型。
 
 ## 下一步 {#whats-next}
 
@@ -117,7 +113,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 此頁面主要以Sitesconsole為基礎，但許多/大部分的功能也與導覽至Assetsconsole下的內容片段模型 **** 及對其採取動作 **相關**  **** 。
+* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 此頁面主要根據 **網站** 主控台，但許多/大部分功能也與導覽至及對採取行動相關， **內容片段模型** 在 **資產** 控制台。
 
 * [使用內容片段](/help/assets/content-fragments/content-fragments.md)
 

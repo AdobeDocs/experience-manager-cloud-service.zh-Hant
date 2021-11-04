@@ -5,9 +5,9 @@ breadcrumb-title: 發行說明
 user-guide-description: 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: a1b29f695c108db948b8073aa4f24c260b9cc770
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '127'
 ht-degree: 96%
 
 ---
@@ -18,7 +18,8 @@ ht-degree: 96%
 + [發行資訊](/help/release-notes/home.md)
 + 發行說明 {#release-notes}
    + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
-   + 2021年{#2021}
+   + 2021年 {#2021}
+      + [2021.9.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
       + [2021.8.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
       + [2021.7.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-7-0.md)
       + [2021.6.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-6-0.md)
@@ -27,7 +28,7 @@ ht-degree: 96%
       + [2021.3.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
       + [2021.2.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
       + [2021.1.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
-   + 2020年{#2020}
+   + 2020年 {#2020}
       + [2020.12.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
       + [2020.11.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-11-0.md)
       + [2020.10.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-10-0.md)
