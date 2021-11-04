@@ -2,9 +2,9 @@
 title: 功能測試 — Cloud Services
 description: 功能測試 — Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
+source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '920'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 管道中的自訂功能測試步驟一律存在，且無法略過。
 
-但是，如果組建未產生測試JAR，則測試預設會通過。
+組建應產生零個或一個測試JAR。 如果它產生零個測試JAR，則測試步驟預設會通過。 如果組建產生多個測試JAR，則所選的JAR不確定。
 
 >[!NOTE]
 >「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。這些記錄檔不包含實際AEM執行階段程式的記錄檔，這些記錄檔可使用一般的下載或尾隨記錄檔功能來存取。 請參閱 [存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md) 以取得更多詳細資訊。
