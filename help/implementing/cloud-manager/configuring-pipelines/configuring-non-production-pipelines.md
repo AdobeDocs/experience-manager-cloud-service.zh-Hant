@@ -2,9 +2,9 @@
 title: 設定非生產管道
 description: 請參照本頁面，了解如何在Cloud Manager中設定非生產管道
 index: true
-source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
+source-git-commit: 2ac65af4cf410491d1196b9e20f67647e0a1b4d1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -36,23 +36,44 @@ ht-degree: 0%
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. 選擇 **[完整堆疊程式碼](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** 或 **[前端代碼](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. 您可以選擇 **存放庫** 和 **Git分支**. 按一下 **儲存**.
+   您可以定義下列部署觸發器以啟動管道。
+
+   * **手動**  — 使用UI手動啟動管道。
+   * **Git變更時**  — 每當有提交項新增至設定的git分支時，就會啟動CI/CD管道。 即使選取此選項，也始終可以手動啟動管道。
+
+      在管道設定或編輯期間，部署管理器可以選擇在任何質量門中遇到重要故障時定義管道的行為。
+
+      這對希望實現更自動化流程的客戶非常有用。 可用選項包括：
+   您可以定義重要失敗量度行為以啟動管道。
+
+   * **每次都問**  — 這是預設設定，需要手動干預任何「重要」故障。
+   * **立即失敗**  — 如果選中，則每當出現「重要」(Important)故障時，管道將被取消。 這實質上是模擬用戶手動拒絕每個故障。
+   * **立即繼續**  — 如果選中此選項，則每當出現「重要」故障時，管道將自動繼續。 這實際上是在模擬使用者手動核准每個失敗。
+
+
+1. 選擇 **[完整堆疊程式碼](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** 或 **[前端代碼](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**.
+
+   如果您選取 **前端代碼**，您必須選取 **存放庫**, **Git分支** 和 **代碼位置**，如下圖所示：
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-confignew1.png)
+
+   如果您選取 **完整堆疊程式碼**，您必須選取 **存放庫** 和 **Git分支**，如圖所示：
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-fullstack1.png)
 
    >[!IMPORTANT]
    >如果所選環境已存在完整堆棧代碼管道，則此選擇將被禁用。
-
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-confignew1.png)
 
    >[!NOTE]
    >開始配置前端管道之前，請參見 [AEM快速網站建立歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 透過簡單易用的AEM快速網站建立工具，提供端對端工作流程。 本檔案網站可協助您簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂網站。
 
 1. 新建立的非生產管道現在會顯示在 **管道** 卡片。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-fullstack2.png)
 
 
-   管道會顯示在主畫面的卡片上，包含三個動作，如下所示：
+   管道會顯示在主畫面的卡片上，包含四個動作，如下所示：
 
    * **新增**  — 允許添加新管道。
+   * **全部顯示**  — 允許用戶查看所有管道。
    * **存取存放庫資訊**  — 可讓使用者取得存取Cloud Manager Git存放庫所需的資訊。
    * **更多詳情**  — 導覽至了解CI/CD管道檔案資源。
