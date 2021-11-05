@@ -1,24 +1,24 @@
 ---
 title: 簡介和概述
-description: 內容與商務的簡介和概述。 Experience Manager商務整合架構(CIF)是Adobe的建議模式，可將Magento及其他第三方商務解決方案的商務服務與Experience Cloud整合及延伸。
+description: Introduction and overview of content and commerce. Experience Manager商務整合架構(CIF)是Adobe的建議模式，可將Magento及其他第三方商務解決方案的商務服務與Experience Cloud整合及延伸。
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 8a8a1f7f461e5a02bfadfc392508d920bd6c1601
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 0%
 
 ---
 
-# 內容與商務{#content-commerce}
+# Content and Commerce {#content-commerce}
 
-有了Adobe Experience Manager內容與商務，品牌可以更快速地擴展與創新，以區分商務體驗，並掌握加速的線上支出。 AEM內容與商務結合了Experience Manager中身臨其境、全通路及個人化的體驗與任何數量的商務解決方案，為購物歷程的所有階段帶來與眾不同的體驗，縮短實現價值的時間，並推動更高的轉換。
+With Adobe Experience Manager content and commerce, brands can scale and innovate faster to differentiate commerce experiences and capture accelerating online spend. AEM Content and Commerce combines the immersive, omnichannel, and personalized experiences in Experience Manager with any number of commerce solutions to bring differentiated experiences to all parts of the shopping journey, reducing time to value and driving higher conversion.
 
 ## 內容與商務如何協助客戶成功
 
-隨著客戶對線上商務體驗的期望越來越高，品牌被迫更快提供與眾不同的體驗和更多內容。 但是，實施內容管理平台通常需要在開發基本要素（如定制元件和創作工具）方面投入大量時間和預算，並在維護和升級方面產生成本。 Experience Manager網站提供內容與商務作為附加模組，供Experience Manager作為Cloud Service，提供現成可用的商務核心元件、製作工具和參考店面，以加速上線、跨團隊順暢協作，並促進轉換。
+隨著客戶對線上商務體驗的期望越來越高，品牌被迫更快提供與眾不同的體驗和更多內容。 但是，實施內容管理平台通常需要在開發基本要素（如定制元件和創作工具）方面投入大量時間和預算，並在維護和升級方面產生成本。 Experience Manager Sites提供內容與商務作為Experience Manageras a Cloud Service的附加模組，提供現成可用的商務核心元件、製作工具和參考店面，以加速上線、跨團隊順暢協作，並促進轉換。
 
-品牌可將Experience Manager與Adobe Experience Cloud的一部分Adobe商務，以及任何您選擇的商務引擎整合。 有了Experience Manager內容與商務，品牌可以：
+品牌可將Experience Manager與Adobe Experience Cloud的一部分Adobe Commerce，以及任何您選擇的商務引擎整合。 有了Experience Manager內容與商務，品牌可以：
 
 * 更快擴展和創新
 * 個人化體驗以促進轉換
@@ -26,25 +26,25 @@ ht-degree: 0%
 * 讓客戶的體驗更加豐富並與眾不同
 * 使用商務資料存取簡化製作
 
-## AEM Commerce Integration Framework(CIF){#cif-intro}簡介
+## AEM Commerce Integration Framework(CIF)簡介 {#cif-intro}
 
-因為這些項目必須處理整合商務解決方案的複雜性。 商務解決方案可以是商業解決方案(例如Adobe Commerce Cloud)和一組自訂商務服務等任何項目。 整合高度依賴使用案例和生態系統。 它通常接觸到不同的地方，有多種不同的口味：
+因為這些項目必須處理整合商務解決方案的複雜性。 商務解決方案可以是商業解決方案(例如Adobe Commerce Cloud)和一組自訂商務服務等任何項目。 The integration is highly dependent on the use-cases and ecosystem. 它通常接觸到不同的地方，有多種不同的口味：
 
 * 整合複雜且動態的生態系統（範例產品目錄）
 * 業務需要以高效、全通路的方式使用其自身的生命週期來管理產品內容
-* 為不同的主管建立複雜且個人化的購物歷程
+* Building complex and personalized shopping journeys for various heads
 * 在後端和前端快速調整和創新的能力
 * 運行可擴展且穩定的E2E基礎架構，該基礎架構旨在實現最佳效能(Flash銷售、黑色星期五……)。 這包括統一的搜尋和快取管理。
 
-這種複雜性為潛在的故障點、增加的總體擁有成本、延遲和降低價值實現開啟了大門。 這些原因促使開發了商務整合架構(CIF)，此為本Experience Manager的附加元件。 CIF透過商務功能延伸Experience Manager，並標準化與商務引擎的整合。 結果是一個經得起未來考驗、穩定且可擴展的解決方案，TCO更低。 它通過靈活的工具和無縫整合的功能來釋放技術和業務創新，以構建引人入勝的商務體驗。
+這種複雜性為潛在的故障點、增加的總體擁有成本、延遲和降低價值實現開啟了大門。 These reasons have led to the development of the Commerce Integration Framework (CIF) which is an add-on for the Experience Manager. CIF透過商務功能延伸Experience Manager，並標準化與商務引擎的整合。 結果是一個經得起未來考驗、穩定且可擴展的解決方案，TCO更低。 It unlocks technical and business innovation with agile tooling and seamlessly integrated features to build compelling commerce experiences.
 
-![CIF元素](./assets/CIF/CIF_Overview.png)
+![CIF Elements](./assets/CIF/CIF_Overview.png)
 
 ## CIF自2013年起成功支援客戶
 
 CIF擁有200多家客戶，成為成功內容及商務項目的成功組成部分。 這為當今和未來的IT和業務提供了價值。 最近的客戶項目將CIF描述為「極大的加速器和巨大的省時措施，具有很大的價值」。
 
-## CIF優勢{#cif-benefits}
+## CIF優勢 {#cif-benefits}
 
 CIF提供現成可用的商務核心元件，可減少對自訂程式碼的需求，加速品牌的上市時間。 所有核心元件均可立即整合，並具備Adobe的用戶端資料層，以水合物化客戶設定檔，例如統一的設定檔。 此設定檔會詳細擷取訪客的行為，以便用來即時預測及個人化客戶歷程。
 
@@ -56,15 +56,15 @@ AEM中功能強大的CIF工具，可讓內容建立者以可擴充且不受傳�
 
 ![CIF元素](./assets/CIF/CIF_Product_Experience_Management.png)
 
-### 值時間(TTV)
+### Time-To-Value (TTV)
 
-透過[AEM核心元件](https://www.aemcomponents.dev/)、[AEM Venia參考storefront](https://github.com/adobe/aem-cif-guides-venia)、[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)和PWA的整合模式（無頭內容與商務）來加速專案開發。
+Accelerates project development with [AEM Core Components](https://www.aemcomponents.dev/), [AEM Venia reference storefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), and integration patterns for PWAs (Headless content &amp; commerce).
 
 CIF的建置宗旨是持續創新，提供隨時更新的附加元件，讓客戶能存取新功能和改良功能。
 
 ### Integrations
 
-使用[Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)、基於微服務的無伺服器PaaS和[CIF的參考實作](https://github.com/adobe/commerce-cif-graphql-integration-reference)連結您的生態系統（例如商務解決方案）與Experience Cloud。
+使用將您的生態系統（例如商務解決方案）與Experience Cloud連結  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)、基於微服務的無伺服器PaaS，以及 [CIF的參考實作](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## 經驗證的模式和最佳做法
 
