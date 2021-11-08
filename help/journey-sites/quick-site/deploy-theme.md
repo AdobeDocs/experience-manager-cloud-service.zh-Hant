@@ -1,10 +1,10 @@
 ---
 title: 部署自定義的主題
 description: 了解如何使用管道部署網站主題。
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '982'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 將主題自訂變更提交至AEM Git存放庫後，即可執行 [管理員建立的管道](pipeline-setup.md) 來部署變更。
 
-1. 存取Cloud Manager [擷取git存取資訊的方式。](retrieve-access.md) 在 **概述** 頁簽，您會看到 **管道**.
+1. 登入Cloud Manager [就像您擷取git存取資訊一樣](retrieve-access.md) 並訪問你的程式。 在 **概述** 頁簽，您會看到 **管道**.
 
    ![Cloud Manager概述](assets/cloud-manager-overview.png)
 

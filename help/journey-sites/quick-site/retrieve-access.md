@@ -1,10 +1,10 @@
 ---
 title: 擷取Git存放庫存取資訊
 description: 了解前端開發人員如何使用Cloud Manager存取Git存放庫資訊。
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 3%
+source-wordcount: '928'
+ht-degree: 4%
 
 ---
 
@@ -82,19 +82,11 @@ Cloud Manager管理員會以Cloud Manager使用者的身分將您上線。 您�
 
 1. 登入Adobe Experience Cloud，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 或按一下歡迎電子郵件中提供的連結。
 
-1. 登入後，請在畫面右上角勾選，以確定您所在的組織正確無誤。 如果您只是一個組織的成員，則不需要執行此步驟。 然後點選或按一下 **Experience Manager**.
-
-   ![Experience Cloud概述](assets/experience-cloud-overview.png)
-
-1. 在下一頁，點選或按一下 **Launch** 按鈕 **Cloud Manager** 應用程式。
-
-   ![Experience Manager應用程式](assets/experience-manager-apps.png)
-
-1. 下一頁列出了各種可用的程式。 按一下或點選Cloud Manager管理員提供的存取權。 如果這是您AEMaaCS的第一個前端專案，您可能只有一個可用的方案。
+1. Cloud Manager會列出各種可用的方案。 按一下或點選Cloud Manager管理員提供的存取權。 如果這是您AEMaaCS的第一個前端專案，您可能只有一個可用的方案。
 
    ![在Cloud Manager中選取方案](assets/cloud-manager-select-program.png)
 
-您現在會看到Cloud Manager的概觀。 您的頁面看起來會有所不同，但類似於此範例。
+您現在會看到方案的概觀。 您的頁面看起來會有所不同，但類似於此範例。
 
 ![Cloud Manager概述](assets/cloud-manager-overview.png)
 

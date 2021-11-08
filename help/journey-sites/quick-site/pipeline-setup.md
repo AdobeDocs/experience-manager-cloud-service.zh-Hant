@@ -1,9 +1,9 @@
 ---
 title: 設定管道
 description: 建立前端管道以管理網站主題的自訂。
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -59,21 +59,13 @@ ht-degree: 0%
 
 ## 存取Cloud Manager {#login}
 
-1. 登入Adobe Experience Cloud，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. 登入AdobeCloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. 登入後，請在畫面右上角勾選，以確定您所在的組織正確無誤。 如果您只是一個組織的成員，則不需要執行此步驟。 然後點選或按一下 **Experience Manager**.
-
-   ![Experience Cloud概述](assets/experience-cloud-overview.png)
-
-1. 在下一頁，點選或按一下 **Launch** 開始 **Cloud Manager** 應用程式。
-
-   ![Experience Manager應用程式](assets/experience-manager-apps.png)
-
-1. 下一頁列出了各種可用的程式。 點選或按一下您要管理的項目。 如果您剛開始使用AEM as a Cloud Service，可能只有一個可用的程式。
+1. Cloud Manager會列出各種可用的方案。 點選或按一下您要管理的項目。 如果您剛開始使用AEM as a Cloud Service，可能只有一個程式可供使用。
 
    ![在Cloud Manager中選取方案](assets/cloud-manager-select-program.png)
 
-您現在會看到Cloud Manager的概觀。 您的頁面看起來會有所不同，但類似於此範例。
+您現在會看到方案的概觀。 您的頁面看起來會有所不同，但類似於此範例。
 
 ![Cloud Manager概述](assets/cloud-manager-overview.png)
 
