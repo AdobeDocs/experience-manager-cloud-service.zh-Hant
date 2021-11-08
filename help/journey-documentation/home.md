@@ -1,13 +1,13 @@
 ---
 title: AEM檔案歷程
 description: 檔案歷程在AEM檔案中提供敘述性結構，將複雜和不同的功能結合在一起，以最佳實務方式解決業務目標。 歷程是以AEM初學者為核心而設計，會介紹概念和功能，以達成從A到Z的目標。
-source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
+exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
+source-git-commit: 1f8f6aea389ecf5416121354876a68273cd653e7
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1313'
 ht-degree: 1%
 
 ---
-
 
 # AEM檔案歷程 {#aem-documentation-journeys}
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 「檔案歷程」借由提供敘述來結合許多不同和複雜的主題和功能，協助讀者(對AEM而言是新手)從頭到尾了解並解決業務問題，同時假設先前的主題或AEM知識極少。
 
-說明檔案歷程與AEM現有的技術檔案形成對比，假設這些檔案主要著重於單一功能和工作說明檔案，假設您熟悉AEM。 說明檔案歷程著重於概念，並將詳細資訊推延至現有技術檔案，讓剛接觸AEM的讀者有地方開始了解如何使用最佳實務來處理常見的業務需求和工作流程，進而運用平台。 因此，說明檔案歷程是[AEM現有技術檔案的補充，而非替代。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+說明檔案歷程與AEM現有的技術檔案形成對比，假設這些檔案主要著重於單一功能和工作說明檔案，假設您熟悉AEM。 說明檔案歷程著重於概念，並將詳細資訊推延至現有技術檔案，讓剛接觸AEM的讀者有地方開始了解如何使用最佳實務來處理常見的業務需求和工作流程，進而運用平台。 因此，說明檔案歷程是的補充，而非取代 [AEM現有技術檔案。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
 
 ### 按敘事學習 {#narrative}
 
@@ -33,7 +33,7 @@ AEM提供豐富而強大的功能集，可讓新使用者（有時也是經驗�
 
 ### 最佳實務方向 {#best-practices}
 
-說明檔案歷程是根據最佳實務原則而設計，根據Adobe的最新研究、Adobe服務的實證實作經驗以及客戶專案的意見回饋。
+說明檔案歷程是根據最佳實務原則而設計，根據Adobe的最新研究、Adobe服務的實證實作經驗以及客戶專案的意見。
 
 如果您想了解Adobe建議如何透過AEM解決業務案例，說明檔案歷程即為起點。
 
@@ -74,10 +74,10 @@ AEM檔案歷程的主要目標是協助剛接觸AEM的讀者了解系統中有�
 
 | 檔案類型 | 用途 | 對象 | 假設 | 奧米茨 | 內容類型 | 長度 |
 |---|---|---|---|---|---|---|
-| 檔案歷程 | 歷程定義了AEM如何透過敘述來解決一般業務問題，該敘述引導讀者完成複雜、相互關聯的流程和功能。 它說明了多個功能如何協同工作，以最佳實踐方式解決業務需求。 | Reader新增至AEM | 一般CMS熟悉性 | 詳細選項和設定 | 文字 | 約1小時 |
+| 檔案歷程 | 歷程定義了AEM如何透過敘述來解決一般業務問題，該敘述引導讀者完成複雜、相互關聯的流程和功能。 它說明了多個功能如何協同工作，以最佳實踐方式解決業務需求。 | Reader新增至AEM | 一般CMS熟悉性 | 詳細選項和設定 | 文字 | 卡。 1小時 |
 | 技術檔案 | 技術檔案著重於個別功能，詳細說明功能的技術運作以及使用者可使用的每個選項。 | 經驗豐富的AEM使用者 | AEM體驗 | 內容與背景 | 文字 | 視 |
 | 教學課程 | 教學課程深入探討主題，說明開發人員或管理員如何逐步達成技術目標（通常是程式設計或系統設定），提供特定範例和范常式式碼，通常是運用有限的功能集。 | AEM開發人員或管理員 | AEM體驗 | 背景和理論 | 影片 | >1小時 |
-| 快速入門手冊 | 快速入門手冊是特定新AEM功能的快速逐步說明。 這是個別功能的快速概覽，引導使用者完成重要（但並非全部）步驟，以設定和使用簡單的使用案例。 | AEM管理員 | AEM體驗 | 背景，理論，詳細選項 | 文字 | &lt;1 hour=&quot;&quot;> |
+| 快速入門手冊 | 快速入門手冊是特定新AEM功能的快速逐步說明。 這是個別功能的快速概覽，引導使用者完成重要（但並非全部）步驟，以設定和使用簡單的使用案例。 | AEM管理員 | AEM體驗 | 背景，理論，詳細選項 | 文字 | &lt;1小時 |
 
 ## 有哪些歷程？ {#journeys}
 
@@ -87,9 +87,10 @@ AEM檔案歷程的主要目標是協助剛接觸AEM的讀者了解系統中有�
 |---|---|
 | [無頭式開發人員歷程](/help/journey-headless/developer/overview.md) | 從這裡開始，了解AEM如何支援無頭式開發模型，以及如何讓您的專案從規劃、實作到上線。 |
 | [無頭製作歷程](/help/journey-headless/author/overview.md) | 從這裡開始，引導您逐步了解AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個無頭式專案中建立內容模型。 |
-| [無頭架構師歷程](/help/journey-headless/architect/overview.md) | 從這裡開始，介紹Adobe Experience Manager as aCloud Service的強大、靈活、無頭的功能，以及如何為專案建立內容模型。 |
+| [無頭架構師歷程](/help/journey-headless/architect/overview.md) | 從這裡開始，介紹Adobe Experience Manager as a Cloud Service強大、靈活、無頭的功能，以及如何為專案建立內容模型。 |
 | [無頭翻譯歷程](/help/journey-headless/translation/overview.md) | 從這裡開始，了解如何在AEM中設定和管理無頭式翻譯專案。 |
-| AEM入門歷程 | 即將推出！ |
+| [AEM入門歷程](/help/journey-onboarding/home.md) | 從這裡開始，利用新的AEMas a Cloud Service環境快速上手！ |
+| [AEM快速網站建立歷程](/help/journey-sites/quick-site/overview.md) | 從這裡開始，透過簡單易用的AEM快速網站建立工具進行引導式歷程，以簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂您的網站。 |
 | AEM Commerce Journey | 即將推出！ |
 | AEMaaCS移轉歷程 | 即將推出！ |
 
