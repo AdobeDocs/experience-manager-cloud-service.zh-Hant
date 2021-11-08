@@ -48,16 +48,7 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
 您將在此歷程中探索許多主題。 以下文章提供您使用快速網站建立工具建立和自訂AEM網站的基本知識，並連結至詳細的技術檔案。
 
-|#|文章|說明|負責角色|
-|---|---|---|---|
-|0|AEM快速網站建立歷程|本檔案|AEM &amp; Cloud Manager管理員|
-|1|[了解Cloud Manager和快速網站建立工作流程](cloud-manager.md)|了解Cloud Manager及其如何將新的快速網站建立程式連結在一起。|AEM管理員|
-|2|[從範本建立網站](create-site.md)|了解如何使用網站範本快速建立新AEM網站。|AEM管理員|
-|3|[設定管道](pipeline-setup.md)|建立前端管道以管理網站主題的定製。|Cloud Manager管理員|
-|4|[授予前端開發人員的存取權](grant-access.md)|將前端開發人員上線至Cloud Manager，讓他們能存取您的AEM網站Git存放庫和管道。|Cloud Manager管理員|
-|5|[擷取Git存放庫存取資訊](retrieve-access.md)|了解前端開發人員如何使用Cloud Manager存取Git存放庫資訊。|前端開發人員|
-|6|[自訂網站主題](customize-theme.md)|了解網站主題的建立方式、如何自訂主題，以及如何使用即時AEM內容測試主題。|前端開發人員|
-|7|[部署自定義的主題](deploy-theme.md)|了解如何使用管道部署網站主題。|前端開發人員|
+|#|文章|說明|負責角色| |—|—|—| |0|AEM快速網站建立歷程|本檔案|AEM &amp; Cloud Manager管理員| |1|[了解Cloud Manager和快速網站建立工作流程](cloud-manager.md)|了解Cloud Manager及其如何將新的快速網站建立程式連結在一起。|AEM管理員| |2|[從範本建立網站](create-site.md)|了解如何使用網站範本快速建立新AEM網站。|AEM管理員| |3|[設定管道](pipeline-setup.md)|建立前端管道以管理網站主題的定製。|Cloud Manager管理員| |4|[授予前端開發人員的存取權](grant-access.md)|將前端開發人員上線至Cloud Manager，讓他們能存取您的AEM網站Git存放庫和管道。|Cloud Manager管理員| |5|[擷取Git存放庫存取資訊](retrieve-access.md)|了解前端開發人員如何使用Cloud Manager存取Git存放庫資訊。|前端開發人員| |6|[自訂網站主題](customize-theme.md)|了解網站主題的建立方式、如何自訂主題，以及如何使用即時AEM內容測試主題。|前端開發人員| |7|[部署自定義的主題](deploy-theme.md)|了解如何使用管道部署網站主題。|前端開發人員|
 
 ## 下一步 {#what-is-next}
 
