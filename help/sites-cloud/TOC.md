@@ -6,10 +6,10 @@ breadcrumb-title: Authoring 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Sites as a Cloud Service。
 feature: Authoring
 role: User
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 4d87cb0db8219bd2b69906e041b74961e9638327
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 68%
+source-wordcount: '325'
+ht-degree: 67%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 68%
    + 製作基礎知識 {#fundamentals}
       + [環境與工具](authoring/fundamentals/environment-tools.md)
       + [新增頁面註解](authoring/fundamentals/annotations.md)
+      + [建立新網站](authoring/fundamentals/create-site.md)
       + [建立及組織頁面](authoring/fundamentals/organizing-pages.md)
       + [編輯頁面內容](authoring/fundamentals/editing-content.md)
       + [RTF 編輯器](authoring/fundamentals/rich-text-editor.md)
@@ -81,9 +82,13 @@ ht-degree: 68%
       + [了解區段](authoring/personalization/segmentation.md)
       + [使用ContextHub設定區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [註冊、登入和使用者設定檔](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-+ 管理{#administering}
++ 管理 {#administering}
+   + 網站建立 {#site-creation}
+      + [建立新網站](administering/site-creation/create-site.md)
+      + [網站範本](administering/site-creation/site-templates.md)
+      + [網站主題](administering/site-creation/site-themes.md)
    + [管理工作流程](administering/workflows-administering.md)
-   + 重複使用內容{#reusing-content}
+   + 重複使用內容 {#reusing-content}
       + [MSM與翻譯](administering/msm-and-translation.md)
       + 多站點管理員 {#msm}
          + [MSM和Live Copy概述](administering/msm/overview.md)
