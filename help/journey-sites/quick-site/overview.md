@@ -1,9 +1,9 @@
 ---
 title: AEM快速網站建立歷程
 description: 從這裡開始，透過簡單易用的AEM快速網站建立工具進行引導式歷程，以簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂您的網站。
-source-git-commit: 8daa6bc7d5df3263e8f2b506d8e0a23ecc547872
+source-git-commit: 3f1e6153c7f8b94865d10b5ce0f86b37c1f5cfe7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1061'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,9 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
 ## 影片概述 {#video-overview}
 
-若要快速概述此功能的實際運作，您可以觀看這五分鐘的簡介。
+如需此功能的實際運作概況， [你可以看這五分鐘的介紹。](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
 
->[!VIDEO]
->
->https://www.youtube.com/watch?v=NQeQ1jZ7ZBw
-
-本檔案歷程將逐步帶您了解影片中的所有功能，讓您了解程式，並在自己的環境中重新建立程式。
+本檔案歷程將逐步帶您完成影片中的所有功能，並提供詳細資訊，讓您了解工作流程，並在您自己的環境中重新建立程式。
 
 ## AEM檔案歷程 {#documentation-journeys}
 
