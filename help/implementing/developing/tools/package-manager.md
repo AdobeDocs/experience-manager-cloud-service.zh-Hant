@@ -3,9 +3,9 @@ title: 封裝管理員
 description: 了解AE的基本知識；使用套件管理器進行套件管理。
 feature: Administering
 role: Admin
-source-git-commit: ddccd7f5b145283ff0f0ab39e53fce6584e147a8
+source-git-commit: 108ebef7e2ea79323d873a126cc89aef26faae60
 workflow-type: tm+mt
-source-wordcount: '3554'
+source-wordcount: '3584'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 軟體包允許導入和導出儲存庫內容。 您可以使用套件來安裝新內容、在執行個體之間傳輸內容，以及備份存放庫內容。
 
-使用套件管理器，您可以在AEM執行個體和本機檔案系統之間傳輸套件，以利開發用途。
+使用套件管理器，您可以在AEM例項和本機檔案系統之間傳輸套件，以利開發用途。
 
 ## 什麼是包？ {#what-are-packages}
 
@@ -37,7 +37,11 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->套件管理器UI可能會傳回 **未定義** 如果安裝程式包需要超過10分鐘，則會顯示錯誤訊息。 如果發生此情況，請不要重試安裝，因為安裝正在後台正確進行，並且多個併發導入進程可能會導致某些衝突。
+>套件管理器UI可能會傳回 **未定義** 如果安裝程式包需要超過10分鐘，則會顯示錯誤訊息。
+>
+>這不是因為安裝錯誤，而是因為Cloud Service對所有要求都有逾時。
+>
+>如果您看到此類錯誤，請不要重試安裝。 安裝正在後台正確進行。 如果您重新啟動安裝，多個同時匯入程式可能會引發某些衝突。
 
 如需進一步了解如何管理AEMaaCS的套件，請檢閱此檔案 [部署至AEMas a Cloud Service](/help/implementing/deploying/overview.md) 部署使用手冊中。
 
@@ -348,7 +352,7 @@ ht-degree: 1%
 
 **已核取的項目**
 
-此驗證會檢查所有JAR檔案（OSGi套件組合）的套件，提取其 `manifest.xml` （包含所述OSGi套件所依賴的版本化相依性），並驗證AEM執行個體使用正確的版本匯出所述相依性。
+此驗證會檢查所有JAR檔案（OSGi套件組合）的套件，提取其 `manifest.xml` （包含所述OSGi套件所依賴的版本依賴項），並驗證AEM執行個體使用正確的版本匯出所述相依項。
 
 **報告方式**
 
