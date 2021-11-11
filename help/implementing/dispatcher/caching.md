@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6e0b19fae56328a587cf2fb8fdca29fe373b084
+source-git-commit: b9829a033b99da10217ede18b1591e4bb04762c0
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
@@ -134,7 +134,12 @@ Define DISABLE_DEFAULT_CACHING
 >
 >調度程式的 `invalidate.cache` 不再支援API方法，因為它只處理特定的Dispatcher節點。 AEMas a Cloud Service會在服務層級運作，而非個別節點層級，因此 [使來自AEM的快取頁面失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) 頁面對AEMas a Cloud Service無效。
 
-應使用復寫刷新代理。 這可以使用復寫API來完成。 此 [已提供復寫API檔案](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html)，如需排清快取的範例，請參閱 [API範例頁面](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) （具體而言） `CustomStep` 向所有可用代理髮出「激活」類型的複製操作示例)。 無法設定排清代理端點，但已預先設定為指向調度程式，與運行排清代理的發佈服務相匹配。 排清代理程式通常可由OSGi事件或工作流程觸發。
+應使用復寫刷新代理。 您可以使用 [復寫API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). 無法設定排清代理端點，但已預先設定為指向調度程式，與運行排清代理的發佈服務相匹配。 排清代理程式通常可由OSGi事件或工作流程觸發。
+
+<!-- Need to find a new link and/or example -->
+<!-- 
+and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents). 
+-->
 
 下圖說明此情況。
 
