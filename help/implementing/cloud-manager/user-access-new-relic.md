@@ -1,25 +1,23 @@
 ---
 title: 使用者存取新舊
 description: 使用者存取新舊
-index: false
-hide: true
-source-git-commit: 22dc38ac4aa736ae5c676cfba16e16b0b3e44936
+source-git-commit: 82ec1283bfa8cc5ff48801521c291d438ff24122
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
 
 
-# 新的Relic Application效能監控(AEMas a Cloud Service) {#new-relic}
+# 使用者存取新舊 {#user-access}
 
 ## 簡介 {#introduction}
 
 Adobe高度重視應用程式的監控、可用性和效能。 為協助達成此目標，AEM as a Cloud Service提供存取自訂New Relic監控套裝的功能，作為標準產品產品的一部分，以確保您的團隊能最充分地掌握Adobe Experience ManagerCloud Service系統和環境效能量度。 本節說明在AEMas a Cloud Service環境上啟用的新舊物監控功能，以協助提升效能，並讓您充份運用AEMas a Cloud Service。
 
-## AEMas a Cloud Service透過New Relic進行交易監控 {#transaction-monitoring}
+## AEMas a Cloud Service透過New Relic進行交易監控 — 價值主張 {#transaction-monitoring}
 
-以下是New Relic Application Performance Monitoring for AEMas a Cloud Service的主要功能：
+以下是New Relic Application Performance Monitoring for AEM as a Cloud Service的價值主張摘要：
 
 * 直接存取專用的New Relic One帳戶(由Adobe支援管理的存取權)。
 
@@ -40,34 +38,42 @@ Adobe高度重視應用程式的監控、可用性和效能。 為協助達成�
 * 必須向所有用戶提供全名和有效的電子郵件地址。
 
    >[!NOTE]
-   >如需AEM支援入口網站的詳細資訊，請支援Experience Cloud。
+   >請參閱 [AEMExperience Cloud支援入口網站](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) 以取得更多詳細資訊。
 
-提供存取權後，New Relic會傳送確認電子郵件給每位使用者，讓他們完成設定程式並登入。 如果找不到原始帳戶確認電子郵件：
+提供存取權後，New Relic會傳送確認電子郵件給每位使用者，讓使用者完成設定程式並登入。
 
-1. 前往login.newrelic.com/login，導覽至New Relic的登入頁面。
+如果使用者找不到原始帳戶確認電子郵件：
 
-1. 選擇忘記密碼。
+1. 導覽至New Relic的登入頁面，網址為 [login.newrelic.com/login](https://login.newrelic.com/login).
 
-1. 輸入帳戶電子郵件地址，然後選擇「發送我的密碼」。
+1. 選擇 **忘記密碼**.
+
+   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
+
+1. 輸入帳戶電子郵件地址，然後選取 **傳送我的重設連結**.
+
+   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
 1. 當New Relic的系統傳回電子郵件訊息時，請選取其中的連結，以再次確認您的帳戶。
 
    >[!NOTE]
    >如果您未收到New Relic寄來的電子郵件：
-   >檢查您的垃圾郵件過濾器。 若適用，請將New Relic新增至您的電子郵件允許清單。
+   >檢查 [垃圾郵件篩選器](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). 若適用， [將New Relic新增至您的電子郵件允許清單](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
    >請提供支援票證的反饋，我們的團隊將幫助您進一步
 
-1. 如果您完成註冊過程，並且由於電子郵件或密碼錯誤消息而無法登錄您的帳戶，請通過Admin Console向我們獲取支援票證。
+1. 如果您完成註冊過程，並且由於電子郵件或密碼錯誤消息而無法登錄您的帳戶，請通過以下方式記錄支援票證： [Admin Console](https://adminconsole.adobe.com/).
+
+### 驗證您的電子郵件 {#verify-email}
 
 如果您在登入期間被要求驗證電子郵件，表示您的電子郵件已與多個帳戶關聯，且在登入期間將獲得驗證電子郵件的選項。 這可讓您選擇要存取的帳戶。 如果您未驗證電子郵件地址，New Relic會嘗試將您與您電子郵件地址相關聯的最近建立的使用者記錄登入。 若要避免在每次登入時驗證您的電子郵件，請按一下登入畫面中的「記住我」核取方塊。
 
-如需更多協助，請透過AEM支援入口網站開啟支援票證。
+如需更多協助，請透過 [AEM支援入口網站](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## 例外 {#exceptions}
 
 AEM as a Cloud Service僅針對New Relic APM解決方案提供重點，不提供警報、記錄或API整合功能的支援。
 
-如需AEMas a Cloud Service計畫New Relic產品的更多說明或其他指引，請透過AEM支援入口網站開立支援票證，以取得協助。
+如需AEMas a Cloud Service計畫New Relic產品的更多說明或其他指引，請透過 [AEM支援入口網站](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) 以求協助。
 
 ## 新Relic帳戶常見問題 {#faqs}
 
@@ -79,7 +85,9 @@ Adobe會透過New Relic APM Java外掛程式監控AEMas a Cloud Service製作、
 
 * 每個環境適用於製作服務的一個應用程式
 * 每個環境（包括Golden Publish）適用於Publish服務的一個應用程式
-* 每個環境預覽服務的一個應用程式每個應用程式使用一個許可證密鑰，AEMas a Cloud Service環境將僅向一個New Relic帳戶報告。 New Relic APM和基礎架構的完整監控量度和事件都會保留7天。
+* 針對每個環境預覽服務的一個應用程式
+   >[!IMPORTANT]
+   >每個應用程式都使用一個授權金鑰，AEMas a Cloud Service環境只會向一個New Relic帳戶報告。 New Relic APM和基礎架構的完整監控量度和事件都會保留7天。
 
 ### 誰可以存取New RelicCloud Service資料？ {#access-new-relic-cloud}
 

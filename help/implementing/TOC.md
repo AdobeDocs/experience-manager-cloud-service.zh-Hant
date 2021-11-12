@@ -5,9 +5,9 @@ breadcrumb-title: 實作指南
 user-guide-description: 了解如何自訂 Experience Manager as a Cloud Service 部署作業，包括開發和部署主題。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: dbd6eee96d05182a38d6edd91c31bbb356dc99ce
+source-git-commit: b89869223986dcc64ebefc9ae6bfb8587456d4da
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1084'
 ht-degree: 34%
 
 ---
@@ -83,6 +83,7 @@ ht-degree: 34%
       + [UI測試](/help/implementing/cloud-manager/ui-testing.md)
    + [存取和管理記錄檔](cloud-manager/manage-logs.md)
    + [SLA報告](cloud-manager/sla-reporting.md)
+   + [使用者存取新舊](cloud-manager/user-access-new-relic.md)
    + [了解通知](cloud-manager/notifications.md)
    + 管理SSL憑證 {#manage-ssl-certificates}
       + [簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
