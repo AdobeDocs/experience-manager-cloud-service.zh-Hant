@@ -1,9 +1,9 @@
 ---
 title: 建立產品體驗
 description: 了解如何建立產品體驗。
-source-git-commit: 2d981424d22e2c8d16505eb0cc77c67d5df2bc64
+source-git-commit: cadb903c08bd491db12c5d0ad24acc7f65396825
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
@@ -113,4 +113,5 @@ ht-degree: 0%
 ## 其他資源 {#additional-resources}
 
 * [編寫商務體驗](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
+* [產品座艙](/help/commerce-cloud/authoring/product-cockpit.md)
 * [內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)
