@@ -3,7 +3,7 @@ title: AEMas a Cloud Service版2021.11.0中的Cloud Manager發行說明
 description: AEMas a Cloud Service版2021.11.0中的Cloud Manager發行說明
 feature: Release Information
 exl-id: null
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: ec2719fca19f366e0021fea7429e93c15e9579df
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 2%
@@ -15,12 +15,12 @@ ht-degree: 2%
 本頁概述AEM 2021.11.0中Cloud Manager的發行說明。
 
 >[!NOTE]
->若要查看最新的Adobe Experience Manager as a Cloud Service發行說明，請按一下 [此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hant).
+>若要查看最新的Adobe Experience Manager as a Cloud Service發行說明，請按一下 [此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## 發行日期 {#release-date}
 
 AEMas a Cloud Service的Cloud Manager發行日期2021.11.0為2021年11月4日。
-下一版預計於2021年12月9日發行。
+下一版預計於2021年12月16日發行。
 
 ### 新增功能 {#what-is-new}
 
@@ -43,7 +43,7 @@ AEMas a Cloud Service的Cloud Manager發行日期2021.11.0為2021年11月4日。
 
 * 現在提供新的「活動頁面」，供檢視活動（例如管道和程式碼執行）及其相關詳細資訊之用。 隨著時間推移，此頁面所列的活動將會擴展範圍以及提供的詳細資料。
 
-* 現在提供新的管道頁面，其中提供暫留時顯示的狀態彈出視窗，以便您輕鬆檢視詳細資訊摘要。 可檢視管道執行及其相關聯的詳細資訊。
+* 提供新的管道頁面，可在暫留時顯示狀態彈出視窗，方便您檢視詳細資訊摘要。 可檢視管道執行及其相關聯的詳細資訊。
 
 * 「編輯管道API」現在支援變更部署階段所使用的環境。
 
