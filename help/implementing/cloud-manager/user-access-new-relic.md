@@ -1,9 +1,9 @@
 ---
 title: 使用者存取新舊
 description: 請詳閱本頁，了解New Relic Application Performance Monitoring for AEMas a Cloud Service
-source-git-commit: 62bee2d28c92c1d36651eb8b88607255640e511b
+source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Adobe會透過New Relic APM Java外掛程式監控AEMas a Cloud Service製作、
 * 每個環境（包括Golden Publish）適用於Publish服務的一個應用程式
 * 針對每個環境預覽服務的一個應用程式
    >[!IMPORTANT]
-   >每個應用程式都使用一個授權金鑰，AEMas a Cloud Service環境只會向一個New Relic帳戶報告。 New Relic APM和基礎架構的完整監控量度和事件都會保留7天。
+   >每個應用程式都使用一個授權金鑰，AEMas a Cloud Service環境只會向一個New Relic帳戶報告。 New Relic APM的完整監控量度和事件都會保留7天。
 
 ### 誰可以存取New RelicCloud Service資料？ {#access-new-relic-cloud}
 
