@@ -2,7 +2,7 @@
 title: Adobe內容套件Maven外掛程式
 description: 使用Content Package Maven外掛程式來部署AEM應用程式
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 5%
@@ -117,7 +117,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 除了下列參數外，請參閱 [公用參數](#common-parameters) 區段。
 
 | 名稱 | 類型 | 必要 | 預設值 | 說明 |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | `artifact` | `String` | 否 | 的值 `artifactId` Maven項目的屬性 | 表單的字串 `groupId:artifactId:version[:packaging]` |
 | `artifactId` | `String` | 否 | 無 | 要安裝的對象的ID |
 | `groupId` | `String` | 否 | 無 | 此 `groupId` 要安裝的工件 |
