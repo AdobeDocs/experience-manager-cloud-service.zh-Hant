@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM Content and Commerce as a Cloud Service
 breadcrumb-title: AEM 內容和商務指南
 user-guide-description: 了解如何使用及管理 Experience Manager Content and Commerce as a Cloud Service。
-source-git-commit: 2bc33096132164b54a8206c69945f3a3fd4227db
+source-git-commit: c96d2f41a09449ee742c4c153d8c4353eb75c35a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '109'
+ht-degree: 37%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 0%
 + Integrations {#integrations}
    + [Adobe Commerce](integrating/magento.md)
    + [第三方商務解決方案](integrating/third-party.md)
++ AEM Storefront {#storefront}
+   + [快速入門](getting-started.md)
    + 製作 {#authoring}
       + [商務體驗](authoring/authoring-commerce-experiences.md)
       + [產品座艙](authoring/product-cockpit.md)
       + [多範本使用](authoring/multi-template-usage.md)
-      + [使產品資料與相關內容更豐富](authoring/enrich-product-associated-content.md)
-+ AEM Storefront {#storefront}
-   + [快速入門](getting-started.md)
+      + [使用相關內容豐富產品資料](authoring/enrich-product-associated-content.md)
    + 管理 {#administering}
       + [多商店設定](configuring/multi-store-setup.md)
       + [配置SEO的URL](configuring/advanced-url-configuration.md)

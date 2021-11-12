@@ -10,14 +10,14 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ea4009b7ab99ea8fd9def4157302b942794aa283
+source-git-commit: c70adb5ea781057b478b529774c4e51786e6c9fa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '142'
+ht-degree: 1%
 
 ---
 
-# 建立多個類別和產品頁面
+# 建立多個類別和產品頁面 {#multiple}
 
     >[!NOTE]
     >
@@ -31,6 +31,6 @@ ht-degree: 0%
 
 - [AEM CIF核心元件 — 多目錄頁面設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
-## 相關資源
+## 相關資源 {#related}
 
 您也可以動態鎖定頁面的特定區域，並重複使用相同的範本。 了解如何 [使產品資料更豐富，與AEM內容相關聯](./enrich-product-associated-content.md).

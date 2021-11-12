@@ -1,10 +1,9 @@
 ---
 title: 編寫商務體驗
 description: 工作商務體驗
-exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: a23b4767d5ef26363fa426c7d0a01a3342a81423
+source-git-commit: a5aa45f150ac6c26be9368edb3bb10cbc7d0c77f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -63,9 +62,9 @@ CIF附加元件運用商務專用功能擴充AEM的製作功能。 這可讓作�
 
 與資產類似，產品可以在頁面上傳送（這會建立產品預告元件作為預設值）或元件（目前支援的是產品預告和產品轉盤）。
 
-### 使用RTE在文字欄位中新增產品或類別頁面的連結（RTF編輯器）  {#rte}
+### 使用RTE在文本欄位中新增連結 {#rte}
 
-CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，無法內嵌一般AEM頁面的超連結（例如）。 CIF會將新動作「商務連結」新增至RTE。 此動作的運作方式與一般的「超連結」動作完全相同，但可讓作者使用選擇器來選取產品或類別。
+CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，無法內嵌一般AEM頁面的超連結（例如）。 CIF將新動作「商務連結」新增至RTE（RTF編輯器）。 此動作的運作方式與一般的「超連結」動作完全相同，但可讓作者使用選擇器來選取產品或類別。
 
 ![RTE](../assets/authoring/RTE.png)
 
