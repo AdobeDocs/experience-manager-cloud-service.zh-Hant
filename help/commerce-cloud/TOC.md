@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM Content and Commerce as a Cloud Service
 breadcrumb-title: AEM 內容和商務指南
 user-guide-description: 了解如何使用及管理 Experience Manager Content and Commerce as a Cloud Service。
-source-git-commit: c96d2f41a09449ee742c4c153d8c4353eb75c35a
+source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 37%
+source-wordcount: '140'
+ht-degree: 29%
 
 ---
 
@@ -16,6 +16,13 @@ ht-degree: 37%
 + [AEM內容與商務](/help/commerce-cloud/home.md)
 + [AEM內容與商務的重大變更as a Cloud Service](changes.md)
 + [簡介和概述](introduction.md)
++ 商務歷程 {#journeys}
+   + 內容製作歷程 {#author}
+      + [AEM內容與商務內容製作歷程](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
+      + [CIF製作快速入門](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+      + [管理產品目錄頁面和範本](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+      + [建立分階段產品目錄體驗](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
+      + [建立產品體驗](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
 + Integrations {#integrations}
    + [Adobe Commerce](integrating/magento.md)
    + [第三方商務解決方案](integrating/third-party.md)
