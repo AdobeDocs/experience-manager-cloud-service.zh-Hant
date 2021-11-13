@@ -1,9 +1,9 @@
 ---
 title: 使用者存取新舊
 description: 請詳閱本頁，了解New Relic Application Performance Monitoring for AEMas a Cloud Service
-source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
+source-git-commit: 696b86e9e88ca1fd7c0a5b688fa78f46227df3a4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Adobe高度重視應用程式的監控、可用性和效能。 為協助達成�
    >[!NOTE]
    >如果您未收到New Relic寄來的電子郵件：
    >檢查 [垃圾郵件篩選器](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). 若適用， [將New Relic新增至您的電子郵件允許清單](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-   >請提供支援票證的反饋，我們的團隊將幫助您進一步
+   >請提供有關支援票證的反饋，Adobe支援團隊將進一步幫助您。
 
 1. 如果您完成註冊過程，並且由於電子郵件或密碼錯誤消息而無法登錄您的帳戶，請通過以下方式記錄支援票證： [Admin Console](https://adminconsole.adobe.com/).
 
