@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發方針
 description: AEM as a Cloud Service 開發方針
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 333ebbed52577a82eb9b65b20a173e4e65e09537
+source-git-commit: 477546f882197291403e59d8ba2e53dd4918a719
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2178'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ ht-degree: 1%
 
 ## 後台任務和長時間運行的作業 {#background-tasks-and-long-running-jobs}
 
-作為背景任務執行的代碼必須假設它正在運行的實例可以隨時刪除。 因此，程式碼必須具有彈性，且大部分匯入都可恢復。 這表示如果程式碼重新執行，應該不會從頭開始，而是從離開的位置開始。 雖然這並非此類程式碼的新需求，但在AEMas a Cloud Service，執行個體淘汰的可能性較大。
+作為背景任務執行的代碼必須假設它正在運行的實例可以隨時刪除。 因此，程式碼必須具復原性，最重要的是可繼續。 這表示如果程式碼重新執行，應該不會從頭開始，而是從離開的位置開始。 雖然這並非此類程式碼的新需求，但在AEMas a Cloud Service，執行個體淘汰的可能性較大。
 
-為了將問題降至最低，應盡可能避免長時間運行的作業，並且至少應可恢復這些作業。 若要執行這類工作，請使用Sling工作，Sling工作提供至少一次保證，因此若中斷，系統會盡快重新執行。 但它們或許不應該從頭開始。 若要排程這類作業，最好使用 [Sling作業](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 排程器再次執行。
+為了將問題降至最低，應盡可能避免長時間運行的作業，並且至少應可恢復這些作業。 若要執行這類工作，請使用Sling工作，Sling工作提供至少一次保證，因此若中斷，系統會盡快重新執行。 但它們或許不應該從頭開始。 若要排程這類作業，最好使用 [Sling作業](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 排程器，因此可確保至少執行一次。
 
 Sling Commons排程器不應用於排程，因為執行無法保證。 只是更有可能會安排。
 
