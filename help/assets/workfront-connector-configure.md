@@ -3,7 +3,7 @@ title: 設定 [!DNL Workfront for Experience Manager enhanced connector]
 description: 設定 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: d75d9ac16f64b6770fcf35d58474c47c52b1585b
+source-git-commit: 6923f3d63bf9b1c24f70e50548b4fb0c13f0cd88
 workflow-type: tm+mt
 source-wordcount: '1637'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Adobe需要部署，並配置 [!DNL Adobe Workfront for Experience Manager enhanced connector] 僅透過認證合作夥伴或 [!DNL Adobe Professional Services]. 如果部署和配置時沒有經過認證的合作夥伴或 [!DNL Adobe Professional Services],Adobe不支援。
 >
->Adobe可發行 [!DNL Adobe Workfront] 和 [!DNL Adobe Experience Manager] 這使得該連接器冗餘；如果發生此情況，客戶可能需要從使用此連接器進行轉變。
+>Adobe可發行 [!DNL Adobe Workfront] 和 [!DNL Adobe Experience Manager] 使此連接器冗餘；如果發生此情況，客戶可能需要從使用此連接器進行轉變。
 
 ## 設定事件訂閱 {#event-subscriptions}
 
