@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 了解如何使用及管理 Experience Manager Assets as a Cloud Service。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: ba962df2fe3a690b50a1f938aef42d9d907e8797
+source-git-commit: d75d9ac16f64b6770fcf35d58474c47c52b1585b
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 42%
+source-wordcount: '488'
+ht-degree: 41%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 42%
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [概覽與新增功能](overview.md)
-+ [ [!DNL Assets] 作為a [!DNL Cloud Service]的重大變更](assets-cloud-changes.md)
++ [的重大變更 [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] 架構](architecture.md)
 + [支援的檔案格式](file-format-support.md)
 + [資產微服務概覽](asset-microservices-overview.md)
-+ [ [!DNL Assets]中的輔助功能](accessibility.md)
-+ 管理數位資產{#manage}
++ [中的協助工具 [!DNL Assets]](accessibility.md)
++ 管理數位資產 {#manage}
    + [共用資產](share-assets.md)
    + [監控活動和 DAM 任務](assets-activity-history.md)
    + [開始使用資產微服務](asset-microservices-configure-and-use.md)
@@ -34,7 +34,7 @@ ht-degree: 42%
    + [使用 [!DNL Adobe Stock] 資產](aem-assets-adobe-stock.md)
    + [管理集合](manage-collections.md)
    + [中繼資料概覽](manage-metadata.md)
-   + [與 [!DNL Adobe Creative Cloud]整合](aem-cc-integration-best-practices.md)
+   + [整合 [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [如何新增或編輯中繼資料](meta-edit.md)
    + [查看資料夾資產和集合](bulk-approval.md)
    + [使用和設定 Assets Insights](assets-insights.md)
@@ -46,8 +46,8 @@ ht-degree: 42%
    + [要編輯的簽入和簽出資產](check-out-and-submit-assets.md)
    + [Digital Rights Management資產](drm.md)
    + [浮水印資產](watermark-assets.md)
-   + [使用 [!DNL Creative Cloud] API處理資產](cc-api-integration.md)
-+ 配置、管理和擴展[!DNL Assets] {#admin}
+   + [使用 [!DNL Creative Cloud] API](cc-api-integration.md)
++ 配置、管理和擴展 [!DNL Assets] {#admin}
    + [開發人員檔案和API參考](developer-reference-material-apis.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
    + [使用影像和視訊設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -66,9 +66,9 @@ ht-degree: 42%
    + [MediaLibrary 功能](medialibrary.md)
    + [匯入和匯出資產中繼資料](metadata-import-export.md)
 + 共用與發佈資產 {#brand-portal}
-   + [使用 [!DNL Brand Portal]配置 [!DNL Assets] ](configure-aem-assets-with-brand-portal.md)
+   + [設定 [!DNL Assets] with [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [將資產發佈至 [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [從發佈資 [!DNL Brand Portal] 產到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
+   + [從發佈資產 [!DNL Brand Portal] to [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
 + 內容片段 {#content-fragments}
    + [使用內容片段](content-fragments/content-fragments.md)
    + [以內容片段和GraphQL無周邊傳送](content-fragments/content-fragments-graphql.md)
@@ -127,3 +127,7 @@ ht-degree: 42%
    + [HTTP2 傳送內容常見問答集](dynamic-media/http2faq.md)
    + [Flash檢視器生命週期結束](dynamic-media/flash-viewers-eol.md)
    + [DHTML檢視器生命週期結束](dynamic-media/dhtml-viewer-endoflifefaqs.md)
++ 與其他解決方案的整合 {#integrations}
+   + [與 [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [安裝 [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-install.md)
+   + [設定 [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-configure.md)
