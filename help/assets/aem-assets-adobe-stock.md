@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: f64901e1f9c4ab4af6e592a7039b9e50ddbea708
+source-git-commit: 3761d399de29645ec62cabf50bf6b26a64f3c7be
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2441'
 ht-degree: 7%
 
 ---
@@ -314,9 +314,9 @@ IMS 設定包括兩個步驟：
 | 使用者 | 群組 | 權限 | 在用戶首選項中接受庫存配置 | 存取資產 | 存取Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
 | 管理員 | N/A | 全部 | 不適用 | 是 | 是 |
-| test-doc1 | DAM 使用者 | `/conf/global/settings/stock/cloud-config` | 是 | 是 | 是 |
-| test-doc1 | DAM 使用者 | `/conf/global/settings/stock/cloud-config` | 否 | 錯誤：無法載入資料 | 否 |
-| test-doc1 | DAM 使用者 | 允許： `/conf/global/settings/stock` 拒絕： `/cloud-config` | 庫存配置不可見 | 是 | 否 |
+| test-doc1 | DAM 使用者 | /conf/global/settings/stock/cloud/config | 是 | 是 | 是 |
+| test-doc1 | DAM 使用者 | /conf/global/settings/stock/cloud/config | 否 | 錯誤：無法載入資料 | 否 |
+| test-doc1 | DAM 使用者 | **允許**:/conf/global/settings/stock **拒絕**:/cloud-config | 庫存配置不可見 | 是 | 否 |
 
 ## 使用和管理 [!DNL Adobe Stock] 資產 [!DNL Experience Manager] {#usemanage}
 
