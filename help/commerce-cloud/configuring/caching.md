@@ -2,7 +2,7 @@
 title: 快取與效能
 description: 了解可啟用GraphQL和內容快取以最佳化商務實作效能的不同設定。
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 460aa927453964f4878a8a969794a7052a2d3778
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 1%
@@ -21,9 +21,9 @@ AEM CIF核心元件已內建支援個別元件的快取GraphQL回應。 此功�
 
 為給定元件配置後，快取開始儲存由每個快取配置項定義的GraphQL查詢和響應。 快取的大小和每個項目的快取持續時間將根據項目來定義，具體取決於目錄資料更改的頻率、元件始終顯示最新可能資料的重要性等。 請注意，快取沒有失效，因此在設定快取持續時間時請小心。
 
-為元件配置快取時，快取名稱必須是您在項目中定義的&#x200B;**proxy**&#x200B;元件的名稱。
+為元件配置快取時，快取名稱必須是 **代理** 您在專案中定義的元件。
 
-在用戶端傳送GraphQL請求之前，會檢查是否已快取相同的&#x200B;**exact** GraphQL請求，並可能傳回快取回應。 為了比對，GraphQL請求必須完全符合，即查詢、操作名稱（如果有）、變數（如果有）必須全部等於快取請求，而且所有可設定的自訂HTTP標題也必須相同。 例如，Magento`Store`標題必須符合。
+在用戶端傳送GraphQL請求之前，會檢查是否 **精準** 已快取相同的GraphQL請求，並且可能會傳回快取回應。 為了比對，GraphQL請求必須完全符合，即查詢、操作名稱（如果有）、變數（如果有）必須全部等於快取請求，而且所有可設定的自訂HTTP標題也必須相同。 例如，Magento `Store` 標題必須符合。
 
 ### 範例
 
@@ -41,23 +41,23 @@ com.adobe.cq.commerce.core.search.services.SearchFilterService:true:10:3600
 venia/components/structure/navigation:true:10:600
 ```
 
-考慮[使用Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia)時。 請注意，使用元件代理名`venia/components/structure/navigation`，而&#x200B;**不**&#x200B;使用CIF導航元件的名稱(`core/cif/components/structure/navigation/v1/navigation`)。
+考慮 [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) 中所有規則的URL區段。 請注意元件代理名稱的使用 `venia/components/structure/navigation`，和 **not** CIF導覽元件的名稱(`core/cif/components/structure/navigation/v1/navigation`)。
 
 其他元件的快取應根據專案定義，通常與Dispatcher層級設定的快取協調。 請記住，這些快取沒有任何作用中的失效，因此應謹慎設定快取持續時間。 沒有任何「一刀切」的值能符合所有可能的專案和使用案例。 請務必在專案層級定義最符合專案需求的快取策略。
 
 ## Dispatcher快取 {#dispatcher}
 
-快取[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)中的AEM頁面或片段，是任何AEM專案的最佳作法。 通常會仰賴無效技術，以確保AEM中變更的任何內容都能在Dispatcher中正確更新。 這是AEM Dispatcher快取策略的核心功能。
+快取中的AEM頁面或片段 [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant) 是任何AEM專案的最佳作法。 通常會仰賴無效技術，以確保AEM中變更的任何內容都能在Dispatcher中正確更新。 這是AEM Dispatcher快取策略的核心功能。
 
 除了純AEM管理內容CIF外，頁面通常還可顯示透過GraphQL從Magento動態擷取的商務資料。 雖然頁面結構本身可能永遠不會變更，但商務內容可能會變更，例如，如果某些產品資料（名稱、價格等）在Magento中變更。
 
-為了確保在AEM Dispatcher中快取CIF頁面的時間有限，因此建議在AEM Dispatcher中快取CIF頁面時，使用[時間型快取無效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl)（也稱為TTL型快取）。 可在AEM中使用額外的[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)套件來設定此功能。
+為了確保在AEM Dispatcher中對CIF頁面進行快取的時間有限，因此建議使用 [基於時間的快取失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) 快取AEM Dispatcher中的CIF頁面時（也稱為TTL型快取）。 此功能可在AEM中使用 [ACS AEM公域](https://adobe-consulting-services.github.io/acs-aem-commons/) 包。
 
 使用TTL型快取功能，開發人員通常會為選取的AEM頁面定義一或多個快取持續時間。 這可確保在設定的持續時間內，AEM Dispatcher只會快取CIF頁面，且內容會經常更新。
 
 >[!NOTE]
 >
->雖然AEM Dispatcher可能會快取伺服器端資料，但有些CIF元件（例如`product`、`productlist`和`searchresults`元件）通常會在頁面載入時，在用戶端瀏覽器請求中重新擷取產品價格。 這可確保一律在頁面載入時擷取重要的動態內容。
+>雖然AEM Dispatcher可能會快取伺服器端資料，但有些CIF元件(例如 `product`, `productlist`，和 `searchresults` 載入頁面時，元件通常會在用戶端瀏覽器要求中重新擷取產品價格。 這可確保一律在頁面載入時擷取重要的動態內容。
 
 ## 其他資源
 

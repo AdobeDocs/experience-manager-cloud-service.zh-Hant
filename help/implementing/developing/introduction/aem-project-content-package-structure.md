@@ -2,9 +2,9 @@
 title: AEM 專案結構
 description: 了解如何定義部署至Adobe Experience ManagerCloud Service的套件結構。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: b9ada47611a3e4c38bedeae21f0bcf638c13b17a
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2877'
 ht-degree: 12%
 
 ---
@@ -97,7 +97,7 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署程式特別管理。 這�
 + 此 `ui.content` 套件包含所有內容和設定。 內容套件包含所有節點定義，但不在 `ui.apps` 或 `ui.config` 包，換句話說， `/apps` 或 `/oak:index`. 共同元素 `ui.content` 套件包括，但不限於：
    + 內容感知設定
       + `/conf`
-   + 必要、複雜的內容結構(即 內容建置以為基礎，並延伸超過回購初始化中定義的基線內容結構。)
+   + 必要、複雜的內容結構(即 以存放庫初始化中定義的基準內容結構為基礎並延伸其過去的內容建立。)
       + `/content`, `/content/dam`、等
    + 受管轄的標籤分類
       + `/content/cq:tags`
@@ -410,7 +410,7 @@ Repo Init的主要優點是，它們具有執行其指令碼所定義所有動�
 
 ### 存放庫初始化{#snippet-repo-init}
 
-包含存放庫初始化指令碼的存放庫初始化指令碼，會在 `RepositoryInitializer` OSGi工廠配置(通過 `scripts` 屬性。 請注意，由於這些指令碼是在OSGi設定中定義的，因此可使用通常的執行模式，輕鬆限定其範圍 `../config.<runmode>` 資料夾語義。
+包含存放庫初始化指令碼的存放庫初始化指令碼，會在 `RepositoryInitializer` OSGi工廠配置(通過 `scripts` 屬性。 請注意，由於這些指令碼是在OSGi設定中定義的，因此可使用通常的執行模式，輕鬆限定範圍 `../config.<runmode>` 資料夾語義。
 
 請注意，由於指令碼通常為多行聲明，因此在 `.config` 檔案，而非JSON型 `.cfg.json` 格式。
 
