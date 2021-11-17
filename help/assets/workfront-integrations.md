@@ -3,9 +3,9 @@ title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]
 description: 介紹 [!DNL Assets] 和 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: 045387bc02ca5a30e0caa020885d4cf63b4e9aef
+source-git-commit: 78c9f745465bf9dd4ca268b71391c6a23b1c61e2
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '888'
 ht-degree: 2%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] 整合 [!DNL Adobe Workfront] {#assets-integration-overview}
 
-[!DNL Adobe Workfront] 是一種工作管理應用程式，可幫助您在一個位置管理工作的整個生命週期。 整合 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 讓組織通過內在連接工作和數字資產管理來提高內容速度和上市時間。 在Workfront中管理其工作的內容中，使用者可存取所需檔案和影像。
+[!DNL Adobe Workfront] 是一種工作管理應用程式，可幫助您在一個位置管理工作的整個生命週期。 整合 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 讓組織通過內在連接工作和數字資產管理來提高內容速度和上市時間。 在Workfront中管理其工作的內容中，使用者可存取所需的檔案和影像。
 
-此 [!DNL Workfront for Experience Manager enhanced connector] 通過端到端工作流支援增強的業務流程，並提供個性化的端到端客戶體驗和集中儲存。 如需 [!DNL enhanced connector]，請參閱 [新增功能 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+此 [!DNL Workfront for Experience Manager enhanced connector] 通過端到端工作流支援增強的業務流程，並提供個性化的端到端客戶體驗和集中儲存。 Adobe提供標準連接器和增強連接器，以整合這兩個解決方案。 如需比較，請參閱下列支援的功能，並參閱 [新增功能 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 [!DNL Workfront for Experience Manage enhanced connector] 讓您的組織：
 
