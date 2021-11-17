@@ -1,13 +1,13 @@
 ---
 title: 管理 [!DNL Adobe Stock] 資產 [!DNL Assets].
 description: 搜索、獲取、許可和管理 [!DNL Adobe Stock] 資產內 [!DNL Adobe Experience Manager]. 將授權資產作為任何其他數位資產使用。
-contentOwner: AG
+contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: ea1b2d58c04937304bddd528a9839bdf627f1ae9
+source-git-commit: f64901e1f9c4ab4af6e592a7039b9e50ddbea708
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2426'
 ht-degree: 7%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 7%
 
 整合需要：
 
+* 啟動並運行 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 執行個體
 * 安 [企業 [!DNL Adobe Stock] 計畫](https://stockenterprise.adobe.com/)
 * 具有預設Stock產品設定檔Admin Console權限的使用者
 * 具有「開發人員存取」設定檔權限的使用者，可在「Adobe開發人員控制台」中建立整合
@@ -39,7 +40,7 @@ ht-degree: 7%
 * 在中啟用服務帳戶(JWT)驗證 [!DNL Adobe Developer Console] 您的股票權利
 * 允許從內部全局管理信用和許可 [!DNL Adobe Admin Console]
 
-在權益中，預設的產品設定檔 [!DNL Adobe Stock] 存在 [!DNL Admin Console]. 可以建立多個設定檔，且這些設定檔會決定誰可以授權Stock資產。 直接存取產品設定檔的使用者可以存取 [https://stock.adobe.com/](https://stock.adobe.com/) 和授權Stock資產。 而有其他方法可使用開發人員存取來建立整合(API)，以驗證 [!DNL Experience Manager] 和 [!DNL Adobe Stock].
+在權益中，預設的產品設定檔 [!DNL Adobe Stock] 存在 [!DNL Admin Console]. 可以建立多個設定檔，且這些設定檔會決定誰可以授權Stock資產。 直接存取產品設定檔的使用者可以存取 [https://stock.adobe.com/](https://stock.adobe.com/) 和授權Stock資產。 而有其他方法可使用開發人員存取來建立整合(API)。 此整合會驗證 [!DNL Experience Manager Assets] 和 [!DNL Adobe Stock].
 
 >[!NOTE]
 >
@@ -112,7 +113,7 @@ IMS 設定包括兩個步驟：
 
 公開金鑰（憑證）會在Adobe開發人員控制台中驗證您的產品設定檔。
 
-1. 登入 [!DNL Experience Manager Assets] 製作例項。 預設URL為 `http://localhost:4502/aem/start.html`.
+1. 登入 [!DNL Experience Manager Assets] 雲端例項。
 
 1. 從 **[!UICONTROL 工具]** 面板，導覽至 **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS設定]**.
 
