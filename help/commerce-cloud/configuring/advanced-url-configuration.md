@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9844a092f440f4520b4dd75e6a6253a4593eb630
+source-git-commit: 3ea19210049e49401da892021f098005759542a3
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '790'
 ht-degree: 7%
 
 ---
@@ -29,11 +29,11 @@ ht-degree: 7%
 
 ## 設定 {#configuration}
 
-若要設定 `UrlProvider` 服務（根據SEO需求和需求）必須提供「CIF URL提供者設定」的OSGI設定。
+若要設定 `UrlProvider` 服務，且需要專案必須提供「CIF URL提供者設定」的OSGI設定。
 
 >[!NOTE]
 >
-> 自AEM CIF核心元件2.0.0版起，URL提供者設定僅提供預先定義的url格式，而非1.x版中可使用的自由文字設定格式。 此外，在URL中使用選取器傳遞資料的做法已取代為尾碼。
+> 自AEM CIF核心元件2.0.0版起，URL提供者設定僅提供預先定義的url格式，而非1.x版已知的可自由文字設定的格式。 此外，在URL中使用選取器傳遞資料的做法已取代為尾碼。
 
 ### 產品頁面URL格式 {#product}
 
@@ -76,7 +76,7 @@ ht-degree: 7%
 
 ## 自訂URL格式 {#custom-url-format}
 
-若要提供自訂URL格式，專案可實作 [`UrlFormat` 介面](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) 並將實作記錄為OSGI服務，以類別頁面或產品頁面url格式使用。 此 `UrlFormat#PROP_USE_AS` service屬性指示要替換的配置預定義格式中的哪一種：
+若要提供自訂URL格式，專案可實作 [`UrlFormat` 介面](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) 並將實作註冊為OSGI服務，以類別頁面或產品頁面url格式使用。 此 `UrlFormat#PROP_USE_AS` service屬性指示要替換的配置預定義格式中的哪一種：
 
 * `useAs=productPageUrlFormat`，將取代已設定的產品頁面url格式
 * `useAs=categoryPageUrlFormat`，將取代已設定的類別頁面url格式
@@ -91,17 +91,17 @@ ht-degree: 7%
 
 ## 結合AEM Dispatcher {#dispatcher}
 
-URL重寫也可透過使用AEM Dispatcher HTTP伺服器來達成 `mod_rewrite` 模組。 此 [AEM專案原型](https://github.com/adobe/aem-project-archetype) 提供參考AEM Dispatcher設定，其中已包含基本 [重寫規則](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) ，取代所產生的大小。
+URL重新寫入也可透過使用AEM Dispatcher HTTP伺服器來達成，並搭配 `mod_rewrite` 模組。 此 [AEM專案原型](https://github.com/adobe/aem-project-archetype) 提供參考AEM Dispatcher設定，其中已包含基本 [重寫規則](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) ，取代所產生的大小。
 
-## 範例
+## 範例 {#example}
 
-此 [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) 專案包含設定範例，以示範產品和類別頁面的自訂URL使用方式。 這可讓每個專案根據其SEO需求，為產品和類別頁面設定個別URL模式。 CIF的組合 `UrlProvider` 和Sling對應已使用，如上所述。
+此 [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) 專案包含設定範例，以示範產品和類別頁面的自訂URL使用方式。 這可讓每個專案根據其SEO需求，為產品和類別頁面設定個別的URL模式。 CIF的組合 `UrlProvider` 和Sling對應已使用，如上所述。
 
 >[!NOTE]
 >
 >此設定必須與專案使用的外部網域一併調整。 Sling對應會根據主機名稱和網域運作。 因此，預設情況下會停用此設定，且必須在部署前啟用。 若要這麼做，請重新命名Sling對應 `hostname.adobeaemcloud.com` 資料夾 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 根據使用的網域名稱，並借由新增 `resource.resolver.map.location="/etc/map.publish"` 到 `JcrResourceResolver` 專案的設定。
 
-## 其他資源
+## 其他資源 {#additional}
 
 * [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 * [AEM資源對應](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
