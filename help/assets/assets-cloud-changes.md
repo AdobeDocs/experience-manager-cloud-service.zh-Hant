@@ -4,10 +4,10 @@ description: 重大變更 [!DNL Adobe Experience Manager Assets] in [!DNL Experi
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: e07529f73a3c0b39cb51afb4f3545a9094ce48ef
+source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1026'
+ht-degree: 5%
 
 ---
 
@@ -51,21 +51,22 @@ ht-degree: 0%
 
 | 功能或使用案例 | 狀態(在 [!DNL Experience Manager] as a [!DNL Cloud Service] | 評論 |
 |-----|-----|-----|
-| [重複資產偵測](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 運作方式不同。 | 請參閱 [如何運作 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
+| [重複資產偵測](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 不同的運作方式 | 請參閱 [如何運作 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [僅適用於版位(FPO)轉譯](/help/assets/configure-fpo-renditions.md) | 不同的運作方式 | 處理設定檔會使用資產微服務產生FPO轉譯。 在Experience Manager6.5中，是協力廠商解決方案，例如 [!DNL ImageMagick] 可用於產生轉譯。 |
 | 中繼資料回寫 | 不同的運作方式 | 預設為停用. 視需要啟用對應的工作流程啟動器。 回寫由資產微服務處理。 |
-| 使用封裝管理程式上傳的資產處理 | 需要手動干預。 | 使用 **[!UICONTROL 重新處理資產]** 動作。 |
+| 使用封裝管理程式上傳的資產處理 | 需要手動干預 | 使用 **[!UICONTROL 重新處理資產]** 動作。 |
 | MIME類型檢測 | 不支援. | 如果您上傳的數位資產沒有副檔名或副檔名不正確，可能無法視需要處理。 使用者仍可以儲存二進位檔案，而DAM中沒有副檔名。 請參閱 [中的MIME類型檢測 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | 複合資產的子資產產生 | 不支援. | 注釋之類的相依使用案例可能無法履行。 請參閱 [子資產建立 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). 某些檔案類型的PDF預覽已開始 [2021.7.0版](/help/release-notes/release-notes-cloud/release-notes-current.md). |
-| 首頁 | 不支援. | 請參閱 [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
-| 從ZIP封存解壓縮資產 | 不支援. | 請參閱 [郵遞區號提取(位於 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
-| 資產評等 | 不支援. | 不支援中繼資料結構編輯器中的評等Widget。 |
-| 內容處置篩選器 | 不支援. | 的常見使用案例 `ContentDispositionFilter` 是讓管理員設定 [!DNL Experience Manager] 提供HTML檔案並內嵌開啟PDF檔案，而非下載這些檔案。 在發佈例項上，您可以使用Dispatcher設定來管理處置。 在「製作」例項上，Adobe不建議修改「內容處置」標題。 請參閱 [中的內容處置篩選器 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
-| [下載報表](/help/assets/asset-reports.md) | 不支援. | 目前無法使用通知資產使用的下載報表。 請參閱 [下載報表 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
-| 產品攝影模板 | 不支援. | 請參閱 [產品拍攝模板 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
-| 智慧翻譯 | 不支援. | [智慧翻譯](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) 不支援 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
-| WebDAV | 不支援. | 如需其他選項，請參閱 [[!DNL Creative Cloud] 整合](/help/assets/aem-cc-integration-best-practices.md) 或 [顯影劑參考資料](/help/assets/developer-reference-material-apis.md). |
-| 傳統 UI | 不支援. | 僅提供觸控式使用者介面。 |
+| 編輯影像 | 不支援 | Experience Manageras a Cloud Service不支援編輯資產。 請參閱 [在Experience Manager6.5中的運作方式](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#editing-images). |
+| 首頁 | 不支援 | 請參閱 [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
+| 從ZIP封存解壓縮資產 | 不支援 | 請參閱 [郵遞區號提取(位於 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
+| 資產評等 | 不支援 | 不支援中繼資料結構編輯器中的評等Widget。 |
+| 內容處置篩選器 | 不支援 | 的常見使用案例 `ContentDispositionFilter` 是讓管理員設定 [!DNL Experience Manager] 提供HTML檔案並內嵌開啟PDF檔案，而非下載這些檔案。 在發佈例項上，您可以使用Dispatcher設定來管理處置。 在「製作」例項上，Adobe不建議修改「內容處置」標題。 請參閱 [中的內容處置篩選器 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
+| [下載報表](/help/assets/asset-reports.md) | 不支援 | 目前無法使用通知資產使用的下載報表。 請參閱 [下載報表 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
+| 產品攝影模板 | 不支援 | 請參閱 [產品拍攝模板 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
+| 智慧翻譯 | 不支援 | [智慧翻譯](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) 不支援 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
+| WebDAV | 不支援 | 如需其他選項，請參閱 [[!DNL Creative Cloud] 整合](/help/assets/aem-cc-integration-best-practices.md) 或 [顯影劑參考資料](/help/assets/developer-reference-material-apis.md). |
+| 傳統 UI | 不支援 | 僅提供觸控式使用者介面。 |
 
 >[!MORELIKETHIS]
 >
