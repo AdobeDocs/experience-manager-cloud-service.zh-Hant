@@ -4,9 +4,9 @@ description: 將數位資產新增至 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2192'
 ht-degree: 1%
 
 ---
@@ -156,6 +156,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 按最大大小篩選]:提供資產的檔案大小上限(MB)。
    * [!UICONTROL 排除Mime類型]:要從擷取中排除的MIME類型清單（以逗號分隔）。 例如， `image/jpeg, image/.*, video/mp4`. 請參閱 [所有支援的檔案格式](/help/assets/file-format-support.md).
    * [!UICONTROL 包含Mime類型]:要納入擷取的MIME類型清單（以逗號分隔）。 請參閱 [所有支援的檔案格式](/help/assets/file-format-support.md).
+   * [!UICONTROL 導入後刪除源檔案]:選擇此選項可在將檔案導入到 [!DNL Experience Manager].
    * [!UICONTROL 匯入模式]:選擇跳過、替換或建立版本。 「略過」模式是預設模式，在此模式中，擷取者會略過匯入資產（如果資產已存在）。 請參閱 [替換和建立版本選項](#handling-upload-existing-file).
    * [!UICONTROL 資產目標資料夾]:在要匯入資產的DAM中匯入資料夾。 例如， `/content/dam/imported_assets`
    * [!UICONTROL 中繼資料檔案]:要匯入的中繼資料檔案，以CSV格式提供。 您會在來源blob位置中提供此CSV檔案，並參照大量擷取工具設定中的路徑。
