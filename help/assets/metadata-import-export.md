@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 10%
+source-wordcount: '661'
+ht-degree: 9%
 
 ---
 
@@ -24,10 +24,9 @@ Adobe Experience Manager Assets可讓您使用CSV檔案大量匯入資產中繼�
 >
 >若要匯入自訂命名空間上的中繼資料，請先註冊命名空間。
 
-1. 導覽至「資產」使用者介面，然後點選/按一下 **[!UICONTROL 建立]** 的上界。
-1. 從功能表選取 **[!UICONTROL 中繼資料]**.
-1. 在「中繼資 **[!UICONTROL 料匯入]** 」頁面中，點選/按一 **[!UICONTROL 下「選取檔案」]**。選取包含中繼資料的CSV檔案。
-1. 指定下列參數：
+1. 導覽至 [!DNL Assets] 用戶介面，選擇 **[!UICONTROL 建立]** 從工具列中選取 **[!UICONTROL 中繼資料]** 的上界。
+1. 在 **[!UICONTROL 中繼資料匯入]** 頁面，按一下 **[!UICONTROL 選擇檔案]**. 選取包含中繼資料的CSV檔案。
+1. 提供下列參數：
 
    | 參數 | 說明 |
    | ---------------------- | ------- |
@@ -37,13 +36,19 @@ Adobe Experience Manager Assets可讓您使用CSV檔案大量匯入資產中繼�
    | 啟動工作流程 | 預設為False。 設為時 `true` 和預設設定對DAM中繼資料回寫工作流程有效(將中繼資料寫入二進位XMP資料)。 啟用工作流程會拖慢系統速度。 |
    | 資產路徑欄名稱 | 定義含有資產的CSV檔案的欄名稱。 |
 
-1. 按一下 **[!UICONTROL 匯入]** 的上界。 匯入中繼資料後，通知會傳送至您的通知收件匣。 導覽至資產屬性頁面，並確認是否已為資產正確匯入中繼資料值。
+1. 選擇 **[!UICONTROL 匯入]** 的上界。 匯入中繼資料後，通知會傳送至您的通知收件匣。 導覽至資產屬性頁面，並確認是否已為資產正確匯入中繼資料值。
 
-若要在匯入中繼資料時新增日期和時間戳記，請使用 `YYYY-MM-DDThh:mm:ss.fff-00:00` 日期和時間的格式。 日期和時間以 `T`, `hh` 是24小時格式， `fff` 是納秒， `-00:00` 是時區偏移。 例如， `2020-03-26T11:26:00.000-07:00` 2020年3月26日為11:26:00.000 AM PST時間。
+1. 若要新增日期和時間戳記以匯入中繼資料，請使用 `YYYY-MM-DDThh:mm:ss.fff-00:00` 日期和時間的格式。 日期和時間以 `T`, `hh` 是24小時格式， `fff` 是納秒， `-00:00` 是時區偏移。 例如， `2020-03-26T11:26:00.000-07:00` 2020年3月26日為11:26:00.000 AM PST。
+
+   * 日期格式取決於欄標題及其中的格式。 例如，如果日期是格式的投訴 `yyyy-MM-dd'T'HH:mm:ssXXX` 則相應的欄標題必須是 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
+   * 預設日期格式為 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
+
+<!-- Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >
->如果日期格式不符 `YYYY-MM-DDThh:mm:ss.fff-00:00`，則不會設定日期值。 匯出的中繼資料CSV檔案的日期格式為 `YYYY-MM-DDThh:mm:ss-00:00`. 如果要導入它，請通過添加表示為的納秒值，將其轉換為可接受的格式 `fff`.
+>If the date format does not match `YYYY-MM-DDThh:mm:ss.fff-00:00`, the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
+-->
 
 ## 匯出存中繼資料 {#export-metadata}
 
