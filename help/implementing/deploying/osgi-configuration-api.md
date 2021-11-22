@@ -1,27 +1,27 @@
 ---
 title: OSGi設定API
-description: AEM as aCloud ServiceOSGi配置曲面的說明
+description: AEMas a Cloud ServiceOSGi配置曲面的說明
 feature: Deploying
-source-git-commit: 5223d57377f5c00b090aee1ddd4dbfe2d7113181
+exl-id: 94d3df65-71d7-4442-8412-fe2cca7e79ff
+source-git-commit: cba6648d7ef18f3cccbd9562f3a66d9c683ae852
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
 
-
 # OSGi設定API
 
-以下兩個清單會將AEM反映為Cloud ServiceOSGi設定表面，說明客戶可以設定哪些項目。
+以下兩個清單反映AEMas a Cloud Service的OSGi設定表面，說明客戶可以設定哪些項目。
 
 1. 不得由客戶代碼設定的OSGi設定清單
 1. OSGi設定的清單，其屬性可能已設定，但必須遵守指定的驗證規則。 這些規則包括是否需要屬性聲明、屬性類型，以及某些情況下允許的值範圍。
 
 如果未列出OSGI設定，則可依客戶代碼進行設定。
 
-這些規則會在Cloud Manager建置程式期間進行驗證。 可隨時間新增其他規則，表格會列出預期的執行日期。 客戶應在目標實施日期前遵守這些規則。 在移除日期後未遵守規則，會在Cloud Manager建置程式中產生錯誤。 Maven專案應包含[AEM作為Cloud ServiceSDK建置分析程式Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)，以在本機SDK開發期間標幟OSGI設定錯誤。
+這些規則會在Cloud Manager建置程式期間進行驗證。 可隨時間新增其他規則，表格會列出預期的執行日期。 客戶應在目標實施日期前遵守這些規則。 在移除日期後未遵守規則，會在Cloud Manager建置程式中產生錯誤。 Maven專案應包含 [AEMas a Cloud ServiceSDK建置Analyzer Maven外掛程式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) 在本機SDK開發期間標幟OSGI設定錯誤。
 
-有關OSGI配置的其他資訊，請參見[此位置](/help/implementing/deploying/configuring-osgi.md)。
+如需OSGI設定的其他相關資訊，請參閱 [此位置](/help/implementing/deploying/configuring-osgi.md).
 
 ## 無法修改的OSGi配置 {#osgi-configurations-that-cannot-be-modified}
 
@@ -46,7 +46,7 @@ ht-degree: 0%
    * `org.apache.felix.eventadmin.IgnoreTimeout`
       * 必要
       * 類型：字串陣列
-      * 必要範圍：必須至少包含`org.apache.felix*`、`org.apache.sling*`、`come.day*`、`com.adobe*`中的所有內容
+      * 必要範圍：必須至少包括 `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
    * `org.apache.felix.eventadmin.IgnoreTopic`
       * 類型：字串陣列
 * **`org.apache.felix.http`** (公告日期：4/30/2021，執行日期：7/31/2021)
@@ -141,4 +141,14 @@ ht-degree: 0%
    * `debug.email`
       * 類型：布林值
    * `oauth.flow`
+      * 類型：布林值
+* **`org.apache.sling.commons.log.LogManager.factory.config`** (公告日期：11/16/21，執行日期：2/16/21)
+   * `org.apache.sling.commons.log.level`
+      * 類型：分項清單
+      * 必要範圍：資訊、除錯或TRACE
+   * `org.apache.sling.commons.log.names`
+      * 類型：字串
+   * `org.apache.sling.commons.log.file`
+      * 類型：字串
+   * `org.apache.sling.commons.log.additiv`
       * 類型：布林值
