@@ -2,9 +2,9 @@
 title: 使用Best Practices Analyzer
 description: 使用Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2470'
 ht-degree: 41%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 41%
 >id="aemcloud_bpa_using"
 >title="使用Best Practices Analyzer"
 >abstract="檢閱使用Best Practices Analyzer（原稱為Cloud Readiness Analyzer）的說明檔案以及產生的報表。 Best Practices Analyzer報表可用來取得對一般升級整備程度的高層了解。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 使用Best Practices Analyzer的重要考量 {#imp-considerations}
 
@@ -113,13 +113,16 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
 不應忽視ACS公域的調查結果。 請參閱 [檔案](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以判斷與AEMas a Cloud Service的相容性。
 
 
-### Adobe Experience Manager 6.2 和 6.1 {#aem-specific-versions}
+<!--
+### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
+ 
+The Best Practices Analyzer tool is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
 
-Adobe Experience Manager 6.2中，Best Practices Analyzer工具僅能用於產生及下載CSV報表的連結。
+For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP interface may be used.
 
-在 Adobe Experience Manager 6.1 中，此工具無法運作，而只能使用 HTTP 介面。
-
->[!NOTE]在所有版本中，隨附的模式偵測器皆可獨立執行。
+>[!NOTE]
+>In all versions, the included Pattern Detector may run independently.
+-->
 
 ## 解譯Best Practices Analyzer報表 {#cra-report}
 
@@ -229,7 +232,7 @@ HTTP 介面可用於多種方法中。
 * `200 OK`:指出回應包含「模式偵測器」在快取的時效性存留期內產生的結果。
 * `202 Accepted`:用於指示快取已過時。 當 `respond-async=true` 和 `may-refresh-cache=true` 此響應表示正在執行刷新任務。 當 `may-refresh-cache=false` 此回應僅表示快取已過時。
 * `400 Bad Request`：表示要求發生錯誤。「問題詳細資訊」格式的消息(請參閱 [RFC 7807](https://tools.ietf.org/html/rfc7807))提供更多詳細資料。
-* `401 Unauthorized`:表示請求未獲授權。
+* `401 Unauthorized`:表示請求未獲得授權。
 * `500 Internal Server Error`：表示發生了內部伺服器錯誤。「問題詳細資料」格式的訊息可提供更多詳細資料。
 * `503 Service Unavailable`：表示伺服器正在處理另一個回應，而無法及時處理此要求。只有在提出同步要求時，才可能發生這種情況。「問題詳細資料」格式的訊息可提供更多詳細資料。
 
