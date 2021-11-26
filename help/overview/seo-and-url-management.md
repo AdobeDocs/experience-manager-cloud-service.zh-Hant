@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: b7ed0d16b9cd4ba9fdfaa20e17f3c3c73659f914
+source-git-commit: 99c37c941dfd285c63199aba4970a019b245f3b1
 workflow-type: tm+mt
-source-wordcount: '3641'
-ht-degree: 79%
+source-wordcount: '3787'
+ht-degree: 76%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 79%
 
    * 有時，網站會透過 `http` 提供，直到使用者以結帳或登入形式抵達網頁後，才會切換為透過 `https` 提供。從這個頁面連結時，如果使用者可返回 `http` 頁面並透過 `https` 存取，搜尋引擎會將這些頁面當成兩個獨立頁面來追蹤。
 
-   * 目前 Google 偏好使用 `https` 頁面，而非 `http` 頁面。因此，透過`https`提供整個網站通常可讓每個人的生活更輕鬆。
+   * 目前 Google 偏好使用 `https` 頁面，而非 `http` 頁面。因此，透過提供整個網站通常可讓每個人的生活更輕鬆 `https`.
 
 ### 伺服器設定 {#server-configuration}
 
@@ -357,11 +357,11 @@ Disallow: /
 
 編目程式可透過 XML Sitemap 加強瞭解網站的結構。雖然提供 Sitemap 並不保證可改善 SEO 排名，但這是一項普遍採用的最佳作法。您可以手動在網頁伺服器上維護 XML 檔案，以便將它當作 Sitemap 使用，但建議以程式設計方式產生 Sitemap，確保當作者建立新內容時，Sitemap 會自動反映變更。
 
-AEM使用[Apache Sling Sitemap模組](https://github.com/apache/sling-org-apache-sling-sitemap)產生XML網站地圖，為開發人員和編輯人員提供多種選項，讓網站XML網站地圖保持最新。
+AEM使用 [Apache Sling Sitemap模組](https://github.com/apache/sling-org-apache-sling-sitemap) 產生XML網站地圖，為開發人員和編輯提供多種選項，讓網站XML網站地圖保持最新。
 
-Apache Sling Sitemap模組會區分頂層Sitemap和巢狀Sitemap，兩者皆為任何將`sling:sitemapRoot`屬性設為`true`的資源產生。 一般而言，網站地圖是使用樹狀結構頂層Sitemap路徑上的選取器來轉譯，該路徑是沒有其他Sitemap根上階的資源。 此頂層Sitemap根目錄也會顯示Sitemap索引，這通常是網站擁有者在搜尋引擎的設定入口網站中所設定或新增至網站的`robots.txt`的索引。
+Apache Sling Sitemap模組會區分頂層Sitemap和巢狀Sitemap，兩者皆為具有 `sling:sitemapRoot` 屬性設定為 `true`. 一般而言，網站地圖是使用樹狀結構頂層Sitemap路徑上的選取器來轉譯，該路徑是沒有其他Sitemap根上階的資源。 此頂層Sitemap根目錄也會顯示Sitemap索引，這通常是網站擁有者在搜尋引擎的設定入口網站中所設定或新增至網站的索引 `robots.txt`.
 
-例如，假設網站定義位於`my-page`的頂層Sitemap根，以及位於`my-page/news`的巢狀Sitemap根，以便為新聞子樹狀結構中的頁面產生專用的Sitemap。 因此，相關URL會
+例如，假設網站在以下位置定義頂層Sitemap根 `my-page` 和巢狀的Sitemap根 `my-page/news`，為新聞子樹狀結構中的頁面產生專用的Sitemap。 因此，相關URL會
 
 * https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
 * https://www.mydomain.com/my-brand/my-page.sitemap.xml
@@ -369,22 +369,99 @@ Apache Sling Sitemap模組會區分頂層Sitemap和巢狀Sitemap，兩者皆為�
 
 >[!NOTE]
 >
-> 選取器`sitemap`和`sitemap-index`可能會干擾自訂實施。 如果您不想使用產品功能，請設定您自己的servlet，為這些選取器提供高於0的`service.ranking`。
+> 選取器 `sitemap` 和 `sitemap-index` 可能會干擾自訂實施。 如果您不想使用產品功能，請使用 `service.ranking` 高於0。
 
-在預設設定中，「頁面屬性」對話方塊提供將頁面標示為Sitemap根的選項，因此，如上所述，會產生本身及其子系的Sitemap。 此行為由`SitemapGenerator`介面的實作實作，並可透過新增替代實作來延伸。 但是，由於重新生成XML站點映射的頻率高度取決於內容創作工作流和工作負載，因此產品不會發運任何`SitemapScheduler`配置。 這可讓功能有效地選擇加入。
+在預設設定中，「頁面屬性」對話方塊提供將頁面標示為Sitemap根的選項，因此，如上所述，會產生本身及其子系的Sitemap。 此行為由 `SitemapGenerator` 介面，並可透過新增替代實作來擴充。 但是，由於重新生成XML站點映射的頻率高度取決於內容創作工作流和工作負載，因此產品不會發運任何 `SitemapScheduler` 設定。 這可讓功能有效地選擇加入。
 
-要啟用生成XML站點映射的後台作業，必須配置`SitemapScheduler`。 要執行此操作，請為PID `org.apache.sling.sitemap.impl.SitemapScheduler`建立OSGI配置。 排程器運算式`0 0 0 * * ?`可作為開始點，在午夜時每天重新產生一次所有XML網站地圖。
+為了啟用生成XML站點的後台作業， `SitemapScheduler` 必須已設定。 若要這麼做，請為PID建立OSGI設定 `org.apache.sling.sitemap.impl.SitemapScheduler`. 排程器運算式 `0 0 0 * * ?` 可作為開始點，在午夜時每天重新產生一次所有XML網站地圖。
 
 ![Apache Sling Sitemap — 排程器](assets/sling-sitemap-scheduler.png)
 
-Sitemap產生工作可在製作和發佈層級例項上執行。 在大多數情況下，建議在發佈層級例項上執行產生，因為只能產生適當的標準URL（因為Sling資源對應規則通常僅存在於發佈層級例項上）。 不過，您可以實作`SitemapLinkExternalizer`介面，以外掛程式自訂實作外部化機制，用於產生標準URL。 如果自訂實作能在製作層級例項上產生Sitemap的標準URL，則可針對製作執行模式設定`SitemapScheduler`，且XML Sitemap產生工作量可分散在製作服務叢集的執行個體上。 在此案例中，在處理尚未發佈、已修改或僅對受限制的使用者群組可見的內容時，必須格外小心。
+Sitemap產生工作可在製作和發佈層級例項上執行。 在大多數情況下，建議在發佈層級例項上執行產生，因為只能在那裡產生適當的標準URL（因為Sling資源對應規則通常僅存在於發佈層級例項上）。 不過，您可以外掛用於產生標準URL之外部化機制的自訂實作，方法是實作 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) 介面。 如果自訂實作能在製作層級例項上產生Sitemap的標準URL，則 `SitemapScheduler` 可針對作者執行模式進行設定，而XML sitemap產生工作量可分佈於作者服務叢集的執行個體。 在此案例中，在處理尚未發佈、已修改或僅對受限制的使用者群組可見的內容時，必須格外小心。
 
-除了上述的Apache Sling Sitemap延伸模組點[SitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/SitemapGenerator.html)和[SitemapLinkExternalizer](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/common/SitemapLinkExternalizer.html)，以及[SitemapExtensionProvider](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/builder/SitemapExtensionProvider.html)外，AEM特定實作也會定義幾個延伸模組點：
+AEM Sites包含的預設實作 `SitemapGenerator` 會周遊一樹狀結構的頁面，以產生Sitemap。 系統已預先設定此URL，只會輸出網站的標準URL和任何語言替代項目（若有）。 您也可以視需要將其設定為包含頁面的最後修改日期。 為此，請啟用 _添加上次修改時間_ 選項 _AdobeAEM SEO — 頁面樹Sitemap產生器_ 設定並選取 _上次修改的源_. 在發佈層級產生網站地圖時，建議使用 `cq:lastModified` 日期。
 
-* 可實作[SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html)，以從AEM Sites特定頁面樹Sitemap產生器產生的XML網站地圖中移除頁面
-* 可實作[SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html)或[SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html)，以從[Commerce Integration Framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)特定Sitemap產生器產生的XML網站地圖中篩選出產品或類別。
+![AdobeAEM SEO — 頁面樹Sitemap產生器設定](assets/sling-sitemap-pagetreegenerator.png)
 
-此外，為XML網站地圖實作的功能也可用於不同的使用案例，例如新增標準連結或替代語言至頁面標題。 如需詳細資訊，請參閱[SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)介面。
+若要限制Sitemap的內容，可視需要實作下列服務介面：
+
+* the [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) 可實作以隱藏AEM Sites特定Sitemap產生器產生之XML網站地圖的頁面
+* a [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 或 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) 可實作以從XML網站地圖中篩除產品或類別 [商務整合架構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) 特定Sitemap產生器
+
+如果預設實作不適用於特定使用案例，或如果擴充點不夠彈性，請自訂 `SitemapGenerator` 可實作以完全控制產生的Sitemap的內容。 下列範例說明如何運用AEM Sites的預設實作邏輯來執行此作業。 它會使用 [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) 作為瀏覽頁面樹的起點：
+
+```
+import java.util.Optional;
+
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.sitemap.SitemapException;
+import org.apache.sling.sitemap.builder.Sitemap;
+import org.apache.sling.sitemap.builder.Url;
+import org.apache.sling.sitemap.spi.common.SitemapLinkExternalizer;
+import org.apache.sling.sitemap.spi.generator.ResourceTreeSitemapGenerator;
+import org.apache.sling.sitemap.spi.generator.SitemapGenerator;
+import org.jetbrains.annotations.NotNull;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.adobe.aem.wcm.seo.sitemap.PageTreeSitemapGenerator;
+import com.day.cq.wcm.api.Page;
+
+@Component(
+    service = SitemapGenerator.class,
+    property = { "service.ranking:Integer=20" }
+)
+public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
+
+    private static final Logger LOG = LoggerFactory.getLogger(SitemapGeneratorImpl.class);
+
+    @Reference
+    private SitemapLinkExternalizer externalizer;
+    @Reference
+    private PageTreeSitemapGenerator defaultGenerator;
+
+    @Override
+    protected void addResource(@NotNull String name, @NotNull Sitemap sitemap, Resource resource) throws SitemapException {
+        Page page = resource.adaptTo(Page.class);
+        if (page == null) {
+            LOG.debug("Skipping resource at {}: not a page", resource.getPath());
+            return;
+        }
+        String location = externalizer.externalize(resource);
+        Url url = sitemap.addUrl(location + ".html");
+        // add any additional content to the Url like lastmod, change frequency, etc
+    }
+
+    @Override
+    protected final boolean shouldFollow(@NotNull Resource resource) {
+        return super.shouldFollow(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldFollow).orElse(Boolean.TRUE);
+    }
+
+    private boolean shouldFollow(Page page) {
+        // add additional conditions to stop traversing some pages
+        return !defaultGenerator.isProtected(page);
+    }
+
+    @Override
+    protected final boolean shouldInclude(@NotNull Resource resource) {
+        return super.shouldInclude(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldInclude).orElse(Boolean.FALSE);
+    }
+
+    private boolean shouldInclude(Page page) {
+        // add additional conditions to stop including some pages
+        return defaultGenerator.isPublished(page)
+            && !defaultGenerator.isNoIndex(page)
+            && !defaultGenerator.isRedirect(page)
+            && !defaultGenerator.isProtected(page);
+    }
+}
+```
+
+此外，針對XML網站地圖所實作的功能也可用於不同的使用案例，例如新增標準連結或替代語言至頁面標題。 請參閱 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 介面以取得詳細資訊。
 
 ### 為舊版 URL 建立 301 重新導向 {#creating-redirects-for-legacy-urls}
 
