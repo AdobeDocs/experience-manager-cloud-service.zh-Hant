@@ -2,9 +2,9 @@
 title: 新增TXT記錄
 description: 新增自訂網域名稱
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 12849a79975f70dafd59f4b6ebf4b4ff24145cbf
+source-git-commit: f7688559a791281d0e157dd1d48a5f63568914f5
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ DNS TXT記錄會授權網域以在CDN服務中托管。 客戶必須在授權Clo
 
 | 網域 | 名稱 | TXT值 |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | 複製Cloud Manager UI中顯示的整個值。 這是網域和環境專屬的。 範例：<br>*adobe-aem-verification=example.com/[方案]/[en]/..* |
-| `www.example.com` | `_aemverification.www.example.com` | 複製Cloud Manager UI中顯示的整個值。 這是網域和環境專屬的。 範例：<br>*adobe-aem-verify=www.example.com/[方案]/[en]/..* |
+| `example.com` | `_aemverification.example.com` | 複製Cloud Manager UI中顯示的整個值。 這是網域和環境專屬的。 例如：<br>*adobe-aem-verification=<br>example.com/[方案]/[en]/..* |
+| `www.example.com` | `_aemverification.www.example.com` | 複製Cloud Manager UI中顯示的整個值。 這是網域和環境專屬的。 例如：<br>*adobe-aem-verification=<br>www.example.com/[方案]/[en]/..* |
 
 完成後，您可以執行以下程式來驗證結果： `dig _aemverification.[yourdomainname] -t txt`.
 預期的結果應會顯示Cloud Manager UI中提供的TXT值。

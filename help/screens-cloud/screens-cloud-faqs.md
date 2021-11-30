@@ -2,9 +2,9 @@
 title: Screensas a Cloud Service常見問題集
 description: 本頁說明Screensas a Cloud Service常見問題集。
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 41f057fa2a52068aa6dce97f1a445e072ce2a0af
+source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -48,3 +48,7 @@ scripts=[
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
 ```
+
+## 註冊代碼限制的用途為何？
+
+您可以限制註冊代碼的使用方式，這是最佳作法。 如果註冊代碼被洩露，但限制為100個註冊，則攻擊者只能註冊最多該號碼，但不能註冊更多。 在建立註冊代碼且客戶的某些播放器已註冊之後，您隨時可以更新使用限制。 如果客戶觀察到特定註冊代碼的異常註冊活動，則他們可以在調查時即時降低限制，如果是虛警，則可以增加數量，而不會影響已註冊的玩家。
