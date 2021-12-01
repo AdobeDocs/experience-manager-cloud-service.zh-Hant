@@ -2,9 +2,9 @@
 title: UI測試 — Cloud Services
 description: UI測試 — Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
+source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1582'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,47 @@ UI測試是封裝在Docker影像中的基於硒的測試，以允許在語言和
 >[!NOTE]
 > 2021年2月10日之前建立的預備和生產管道必須更新，才能使用本頁面所述的UI測試。
 > 請參閱 [Cloud Manager中的CI-CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 以取得管道設定的相關資訊。
+
+## 自訂UI測試 {#custom-ui-testing}
+
+AEM為其客戶提供整合的Cloud Manager品質閘門套裝，確保應用程式能順暢地更新。 尤其是，IT測試閘道已允許客戶建立並使用AEM API的自動化測試。
+
+自訂UI測試功能是 [可選功能](#customer-opt-in) 可讓客戶建立並自動執行其應用程式的UI測試。 UI測試是封裝在Docker影像中的基於硒的測試，以允許在語言和框架（如Java和Maven、Node和WebDriver.io，或基於Selenium構建的任何其他框架和技術）中進行廣泛選擇。 您可以從這裡進一步了解如何建立UI和撰寫UI測試。 此外，使用AEM專案原型即可輕鬆產生UI測試專案。
+
+客戶可以建立（透過GIT）自訂測試，以及使用者介面的測試套裝。 UI測試將隨著每個Cloud Manager管道的特定品質閘道執行，並包含其特定步驟和意見資訊。 任何UI測試（包括回歸和新功能）都可讓您在客戶內容中偵測和報告錯誤。
+
+在「自訂UI測試」步驟下，客戶UI測試會自動在生產管道上執行。
+
+自訂功能測試是以java撰寫的HTTP測試，而UI測試可以是Docker影像，且測試以任何語言撰寫，只要測試遵循 [建立UI測試](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests).
+
+>[!NOTE]
+>建議您遵循架構和語言 *（js和wdio）* 方便地提供於 [AEM專案原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) 作為起點。
+
+### 客戶選擇加入 {#customer-opt-in}
+
+若要建置並執行其UI測試，客戶需要在UI測試的maven子模組（位於UI測試子模組的pom.xml檔案旁）下，將檔案新增至其程式碼存放庫，以「選擇加入」，並確認此檔案位於建置的根目錄 `tar.gz` 檔案。
+
+*檔案名*: `testing.properties`
+
+*內容*: `ui-tests.version=1`
+
+如果不在建置中 `tar.gz` 檔案中，系統會略過UI測試建置和執行
+
+若要新增 `testing.properties` 檔案，添加 `include` 語句 `assembly-ui-test-docker-context.xml` 檔案（在UI測試子模組中）:
+
+    &quot;
+    [...]
+    &lt;includes>
+    &lt;include>Dockerfile&lt;/include>
+    &lt;include>wait-for-grid.sh&lt;/include>
+    &lt;include>testing.properties&lt;/include> &lt;!>- Cloud Manager中的選擇加入測試模組 — >
+    &lt;/includes>
+    [...]
+    &quot;
+
+>[!NOTE]
+>2021年2月10日之前建立的生產管道必須更新，才能使用本節所述的UI測試。 這基本上表示使用者必須編輯生產管道，然後按一下 **儲存** 即使未進行任何變更，仍可從UI執行。
+>請參閱 [設定CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) 深入了解管道設定。
 
 ## 建立UI測試 {#building-ui-tests}
 
@@ -149,7 +190,7 @@ UI測試是以Maven專案產生的Docker建置內容建置而成。 Cloud Manage
 
 Docker映像必須以JUnit XML格式生成測試報告，並將其保存在環境變數指定的路徑中 `REPORTS_PATH`. JUnit XML格式是報告測試結果的廣泛格式。 如果Docker影像使用Java和Maven，則兩者 [Maven Surefire外掛程式](https://maven.apache.org/surefire/maven-surefire-plugin/) 和 [Maven Failsafe Plugin](https://maven.apache.org/surefire/maven-failsafe-plugin/). 如果Docker映像是使用其他寫程式語言或測試運行程式實現的，請查看所選工具的文檔，以了解如何生成JUnit XML報告。
 
-### 上傳檔案(#upload-files)
+### 上傳檔案 {#upload-files}
 
 測試有時必須將檔案上傳至要測試的應用程式。 為了維持相對於測試的Selenium部署具有彈性，無法直接將資產上傳至Selenium。 請改為上傳檔案，以執行一些中間步驟：
 
