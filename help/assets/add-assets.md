@@ -4,9 +4,9 @@ description: 將數位資產新增至 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
+source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2263'
 ht-degree: 1%
 
 ---
@@ -159,7 +159,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 導入後刪除源檔案]:選擇此選項可在將檔案導入到 [!DNL Experience Manager].
    * [!UICONTROL 匯入模式]:選擇跳過、替換或建立版本。 「略過」模式是預設模式，在此模式中，擷取者會略過匯入資產（如果資產已存在）。 請參閱 [替換和建立版本選項](#handling-upload-existing-file).
    * [!UICONTROL 資產目標資料夾]:在要匯入資產的DAM中匯入資料夾。 例如， `/content/dam/imported_assets`
-   * [!UICONTROL 中繼資料檔案]:要匯入的中繼資料檔案，以CSV格式提供。 您會在來源blob位置中提供此CSV檔案，並參照大量擷取工具設定中的路徑。
+   * [!UICONTROL 中繼資料檔案]:要匯入的中繼資料檔案，以CSV格式提供。 在來源blob位置中指定CSV檔案，並在設定大量擷取工具時參考路徑。 當您 [大量匯入和匯出資產中繼資料](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 如果您選取 **導入後刪除源檔案** 選項，使用 **排除** 或 **包含MIME類型** 或 **依路徑/檔案篩選** 欄位。 您可以使用規則運算式來篩選這些欄位中的CSV檔案。
 
 1. 您可以刪除、修改、執行及執行您建立的內嵌設定。 選取大量匯入匯入或設定時，工具列中提供下列選項。
 
@@ -188,7 +188,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 除了網頁瀏覽器使用者介面外， [!DNL Experience Manager] 支援案頭上的其他客戶端。 此外，它們也提供上傳體驗，而無需前往網頁瀏覽器。
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 可從 [!DNL Experience Manager] 在Adobe Photoshop、Adobe Illustrator和Adobe InDesign案頭應用程式中。 您可以將目前開啟的檔案上傳至 [!DNL Experience Manager] 直接從這些案頭應用程式內的Adobe資產連結使用者介面。
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) 可從 [!DNL Experience Manager] 在Adobe Photoshop、Adobe Illustrator和Adobe InDesign案頭應用程式中。 您可以將目前開啟的檔案上傳至 [!DNL Experience Manager] 直接從這些案頭應用程式內的Adobe資產連結使用者介面。
 * [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 可簡化案頭上使用資產的作業，不受檔案類型或處理資產的原生應用程式所影響。 從本機檔案系統上傳巢狀資料夾階層中的檔案特別實用，因為瀏覽器上傳僅支援上傳平面檔案清單。
 
 ## 上傳時處理資產 {#process-when-uploaded}
