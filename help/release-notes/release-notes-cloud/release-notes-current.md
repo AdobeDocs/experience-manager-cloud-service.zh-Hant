@@ -3,9 +3,9 @@ title: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service�
 description: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c4d664450244394a65ddbc8097731d913db59091
+source-git-commit: 1db35798a00975237b6b83d5c4ce69a31145b4bf
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1525'
 ht-degree: 2%
 
 ---
@@ -187,3 +187,21 @@ Best Practices Analyzer v2.1.20的發行日期為2021年10月5日。
 * 能夠偵測並報告總索引大小。
 
 * 能夠偵測遺失原始轉譯的資產並製作報表。
+
+
+## Best Practices Analyzer {#bpa-release}
+
+### 發行日期 {#release-date-bpa}
+
+Best Practices Analyzer v2.1.22的發行日期為2021年12月1日。
+
+### 新增功能 {#what-is-new-bpa}
+
+* 能夠檢測並報告所使用的ACS公域的版本。
+* 偵測群組中使用者和子群組數目並製作報表的功能。
+* 能夠偵測並報告MongoDB中超過16MB的節點屬性值。
+
+### 錯誤修正 {#bug-fixes-bpa}
+
+* 對基礎元件的檢測進行了細化，以減少偽陰性。
+* 針對AEM Forms客戶，BPA傳訊關於 `EMAIL_PDF_SUBMIT_ACTION` 「AEMas a Cloud Service」上無法使用的問題已修正。
