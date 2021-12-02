@@ -2,14 +2,14 @@
 title: 在AEMas a Cloud Service中備份和還原
 description: 在AEMas a Cloud Service中備份和還原
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 706d33e4a07eb95c578996ffe8989fafeebaa06c
+source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 
-# 在AEMas a Cloud Service中備份和還原
+# 在AEMas a Cloud Service中備份和還原 {#backup-aemaacs}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -23,7 +23,7 @@ ht-degree: 0%
 >
 >只有在程式碼或內容發生嚴重問題時，才應使用此功能。 從恢復備份到當前備份之間的最近資料將丟失。 測試環境也會還原為舊版本。
 
-## 使用方式
+## 使用方式 {#how-to-use}
 
 客戶應提交支援票證，說明所遇到的問題。 這將導致Adobe支援進行調查，由他們確定是否需要恢復。
 
@@ -41,3 +41,9 @@ AEMas a Cloud Service支援：
 >[!CAUTION]
 >
 >來自已刪除環境的資料會永久丟失，且無法恢復。
+
+## 異地備份 {#offsite-backup}
+
+雖然定期備份涵蓋了AEM雲端服務中意外刪除或技術故障的風險，但也必須涵蓋因某地區故障而可能產生的風險。 除了可用性之外，此類資料區域中斷的最大風險主要是資料丟失。
+AEM AEMas a Cloud Service將整個AEM內容持續複製到遠程地區，並在3個月的時間內提供恢復，以此覆蓋所有生產環境的這一風險。 我們稱此功能為離站備份。
+AEM服務可靠性工程在資料區域中斷時，會執行AEM雲端服務在預備和生產環境中的還原作業。
