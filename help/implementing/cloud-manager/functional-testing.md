@@ -2,7 +2,7 @@
 title: 功能測試 — Cloud Services
 description: 功能測試 — Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
+source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 3%
@@ -20,9 +20,9 @@ ht-degree: 3%
 功能測試分為三種類型：
 
 
-* 產品功能測試
-* 自訂功能測試
-* 自訂UI測試
+* [產品功能測試](#product-functional-testing)
+* [自訂功能測試](#custom-functional-testing)
+* [自訂UI測試](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 ## 產品功能測試 {#product-functional-testing}
 
