@@ -1,7 +1,7 @@
 ---
 title: 配置AEMas a Cloud Service的高級網路
 description: 了解如何配置高級網路功能，如VPN或靈活或專用的輸出IP地址，以便AEMas a Cloud Service
-source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
+source-git-commit: fa11beb1dfdd8dd2a1a5d49ece059f5894c835be
 workflow-type: tm+mt
 source-wordcount: '2836'
 ht-degree: 1%
@@ -159,7 +159,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 AEM Cloud Service Apache/Dispatcher階層的 `mod_proxy` 可使用上述屬性來配置指令。
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:${AEM_HTTP_PROXY_PORT}"
+ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
 ProxyPass "/somepath" "http://example.com"
 ProxyPassReverse "/somepath" "http://example.com"
 ```
@@ -167,7 +167,7 @@ ProxyPassReverse "/somepath" "http://example.com"
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:${AEM_HTTPS_PROXY_PORT}"
+ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
@@ -491,7 +491,7 @@ API應會在數秒內回應，指出的狀態為 `updating` 大約10分鐘後，
 
 如果您只想允許VPN存取AEM，可在Cloud Manager中設定環境允許清單，以便僅限 `p{PROGRAM_ID}.external.adobeaemcloud.com` 可以和環境交談。 這可以與Cloud Manager中其他任何IP型允許清單的方式相同。
 
-如果規則必須以路徑為基礎，請在Dispatcher層級使用標準http指示，以拒絕或允許特定IP。 他們應該能確保CDN也無法快取所需的路徑，以便讓請求一律傳至來源。
+如果規則必須以路徑為基礎，請在Dispatcher層級使用標準http指示，以拒絕或允許特定IP。 他們應該能確保CDN也無法快取所需的路徑，以便讓請求一律存取來源。
 
 **Httpd配置示例**
 
