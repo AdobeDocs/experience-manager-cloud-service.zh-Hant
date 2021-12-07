@@ -2,8 +2,7 @@
 title: AEMas a Cloud Service版2021.11.0中的Cloud Manager發行說明
 description: AEMas a Cloud Service版2021.11.0中的Cloud Manager發行說明
 feature: Release Information
-exl-id: null
-source-git-commit: ec2719fca19f366e0021fea7429e93c15e9579df
+source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 2%
@@ -15,7 +14,7 @@ ht-degree: 2%
 本頁概述AEM 2021.11.0中Cloud Manager的發行說明。
 
 >[!NOTE]
->若要查看最新的Adobe Experience Manager as a Cloud Service發行說明，請按一下 [此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>若要查看最新的Adobe Experience Manager as a Cloud Service發行說明，請按一下 [此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hant).
 
 ## 發行日期 {#release-date}
 

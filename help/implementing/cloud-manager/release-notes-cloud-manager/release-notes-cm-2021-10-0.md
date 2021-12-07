@@ -2,8 +2,7 @@
 title: AEMas a Cloud Service版2021.10.0中的Cloud Manager發行說明
 description: AEMas a Cloud Service版2021.10.0中的Cloud Manager發行說明
 feature: Release Information
-exl-id: null
-source-git-commit: c6c1d3bef85afda0ff86ec073d0ac91ad532c93b
+source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 3%
