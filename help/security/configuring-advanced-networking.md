@@ -1,9 +1,9 @@
 ---
 title: 配置AEMas a Cloud Service的高級網路
 description: 了解如何配置高級網路功能，如VPN或靈活或專用的輸出IP地址，以便AEMas a Cloud Service
-source-git-commit: fa11beb1dfdd8dd2a1a5d49ece059f5894c835be
+source-git-commit: 76cc8f5ecac4fc8e1663c1500433a9e3eb1485df
 workflow-type: tm+mt
-source-wordcount: '2836'
+source-wordcount: '2867'
 ht-degree: 1%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 1%
 # 配置AEMas a Cloud Service的高級網路 {#configuring-advanced-networking}
 
 本文旨在介紹AEMas a Cloud Service的不同進階網路功能，包括VPN的自助配置、非標準埠和專用輸出IP地址。
+
+>[!INFO]
+>
+>您還可以找到一系列文章，這些文章旨在引導您了解每個高級網路選項 [位置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en).
 
 ## 概覽 {#overview}
 
