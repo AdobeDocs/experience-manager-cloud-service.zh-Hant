@@ -1,10 +1,11 @@
 ---
 title: 合規性
-description: 合規性
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+description: 本頁列出自助資源，提供有關Experience Manageras a Cloud Service合規性的資訊。
+landing-page-description: 如需AEM as a Cloud Service合規性的概觀，包括隱私權和協助工具，請從這裡開始。
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 75%
+source-wordcount: '394'
+ht-degree: 68%
 
 ---
 

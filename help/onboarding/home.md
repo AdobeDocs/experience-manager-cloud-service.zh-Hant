@@ -1,11 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
+landing-page-description: 本指南提供如何開始使用AEMas a Cloud Service的摘要，包括如何取得存取權和重要的資料保護資訊。
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 25%
+source-wordcount: '526'
+ht-degree: 23%
 
 ---
 

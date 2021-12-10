@@ -1,11 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 連接器
 description: Adobe Experience Manager as a Cloud Service 連接器自助資源與文件連結
+landing-page-description: 了解如何將連接器整合至AEMas a Cloud Service。
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 79%
+source-wordcount: '375'
+ht-degree: 77%
 
 ---
 
