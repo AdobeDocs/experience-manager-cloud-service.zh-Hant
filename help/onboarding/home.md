@@ -2,52 +2,51 @@
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 28%
+source-wordcount: '500'
+ht-degree: 25%
 
 ---
 
-# 開始入門至[!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}
+# 開始入門至 [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_onboarding_overview"
 >title="入門概述"
 >abstract="無論您是部署新應用程式還是遷移現有應用程式，本指南都是您的起點，可確保您的應用程式經過最佳化，並可在Cloud Service時成功。 您需要您的Adobe ID和系統管理員的協助，才能讓使用者新增至Cloud Manager，並取得其指派的角色和相關權限。"
 
-祝賀您以AEM as aCloud Service開始您的歷程！ 無論您是部署新應用程式還是遷移現有應用程式，本指南都是您的起點，可確保您的應用程式經過最佳化，並可在Cloud Service時成功。
+恭喜您開始使用AEM as a Cloud Service! 無論您是部署新應用程式還是遷移現有應用程式，本指南都是您的起點，可確保您的應用程式經過最佳化，並可在Cloud Service時成功。
 
 ## 入門體驗 {#audience}
 
-上線是指定的[系統管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)將AEM設定為貴組織Cloud Service的程式。 這包括初始布建雲端資源，以及根據使用者的工作責任，將使用者指派給適當的角色，之後每個成員都能登入並存取其AEM作為Cloud Service資源。
+上線是指 [系統管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) 為貴組織設定AEMas a Cloud Service。 這包括初始布建雲端資源，以及根據使用者的工作職責，將使用者指派給適當的角色，讓每個成員都能登入並存取其AEMas a Cloud Service資源。
 
 下圖所示的上線歷程是針對系統管理員角色而設計，列出需求、步驟和方法。 歷程會定義系統管理員為了成功的專案必須與其互動的其他角色，但歷程的觀點是管理員。
 
 ![](/help/journey-onboarding/assets/onboarding-journey.png)
 
 >[!NOTE]
->請參閱[入門歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en)以開始使用入門體驗。
+>請參閱 [入門歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) 開始使用入門體驗。
 
 
 ## [!DNL Experience Manager as a Cloud Service] 指南 {#aem-guides}
 
 | 使用手冊 | 說明 |
 |---|---|
-| [Experience Manager as a Cloud Service 首頁](/help/landing/home.md) | 如需 Experience Manager as a Cloud Service 文件概覽，請由此開始。 |
-| [概覽](/help/overview/home.md) | 本指南提供[!DNL Experience Manager as a Cloud Service]的概觀，包括簡介、術語、架構等。 |
-| [發行說明](/help/release-notes/home.md) | 本指南提供[!DNL Experience Manager as a Cloud Service]最新版本的重要資訊，包括新功能、已過時和已移除的功能，以及已知問題。 |
-| [安全性使用手冊](/help/security/home.md) | 了解有關[!DNL Experience Manager as a Cloud Service]的重要安全性主題。 |
-| [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何使用[!DNL Experience Manager Sites]作為Cloud Service撰寫及管理。 |
-| [Assets 使用手冊](/help/assets/home.md) | 了解如何使用和管理[!DNL Experience Manager Assets as a Cloud Service]。 |
+| [概覽](/help/overview/home.md) | 本指南提供 [!DNL Experience Manager as a Cloud Service]，包括簡介、術語、架構等。 |
+| [發行說明](/help/release-notes/home.md) | 本指南提供有關 [!DNL Experience Manager as a Cloud Service]，包括新增、過時和移除的功能，以及已知問題。 |
+| [安全性使用手冊](/help/security/home.md) | 了解有關 [!DNL Experience Manager as a Cloud Service]. |
+| [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何使用及管理 [!DNL Experience Manager Sites] as a Cloud Service。 |
+| [Assets 使用手冊](/help/assets/home.md) | 了解如何使用和管理 [!DNL Experience Manager Assets as a Cloud Service]. |
 | [轉移至 AEM as a Cloud Service ](/help/move-to-cloud-service/home.md) | 了解轉換至雲端服務的過程 |
 | [實作使用手冊](/help/implementing/home.md) | 透過探索這些開發和部署主題，了解如何使用AEM強大功能來建立和自訂體驗。 |
 | [無頭式開發人員歷程](/help/journey-headless/developer/overview.md) | 探索此引導式歷程，了解AEM強大且靈活的無頭式功能，為您的第一個無頭式專案做好準備。 |
-| [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器整合至[!DNL Experience Manager as a Cloud Service]。 |
-| [操作使用手冊](/help/operations/home.md) | 了解[!DNL Experience Manager as a Cloud Service]的後端操作，例如索引和維護任務。 |
-| [商務使用手冊](/help/commerce-cloud/home.md) | 了解[!DNL Experience Manager as a Cloud Service]上的Commerce Integration Framework。 |
+| [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器整合至 [!DNL Experience Manager as a Cloud Service]. |
+| [操作使用手冊](/help/operations/home.md) | 了解 [!DNL Experience Manager as a Cloud Service]，例如索引和維護任務。 |
+| [商務使用手冊](/help/commerce-cloud/home.md) | 了解Commerce Integration Framework，位於 [!DNL Experience Manager as a Cloud Service]. |
 
-## 其他[!DNL Experience Manager]資源 {#other-resources}
+## 其他 [!DNL Experience Manager] 資源 {#other-resources}
 
 * [近期文件更新](https://helpx.adobe.com/tw/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher 文件](/help/implementing/dispatcher/overview.md)

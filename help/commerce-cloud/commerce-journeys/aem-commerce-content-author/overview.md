@@ -1,7 +1,7 @@
 ---
 title: AEM商務內容作者歷程
 description: 從這裡開始，透過AEM Commerce Authoring進行引導式歷程
-source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 ## AEM檔案歷程 {#documentation-journeys}
 
-[檔案歷程](/help/journey-documentation/home.md) 將許多不同的、可能複雜的主題和特徵聯繫起來，提供一種敘述，幫助讀者從頭到尾理解並解決業務問題，同時假定事先的主題或AEM知識最少。
+[檔案歷程](/help/journey-documentation/documentation-journeys.md) 將許多不同的、可能複雜的主題和特徵聯繫起來，提供一種敘述，幫助讀者從頭到尾理解並解決業務問題，同時假定事先的主題或AEM知識最少。
 
 說明檔案歷程是根據最佳實務原則而設計，根據Adobe的最新研究、Adobe顧問經驗證的實作經驗，以及客戶專案的意見回饋。
 

@@ -1,7 +1,7 @@
 ---
 title: AEM快速網站建立歷程
 description: 從這裡開始，透過簡單易用的AEM快速網站建立工具進行引導式歷程，以簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂您的網站。
-source-git-commit: 3f1e6153c7f8b94865d10b5ce0f86b37c1f5cfe7
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 1%
@@ -33,7 +33,7 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
 ## AEM檔案歷程 {#documentation-journeys}
 
-[檔案歷程](/help/journey-documentation/home.md) 將許多不同的、可能也很複雜的主題和特徵聯繫起來，提供一種敘述，幫助讀者從頭到尾理解並解決業務問題，同時假定事先的主題或AEM知識最少。
+[檔案歷程](/help/journey-documentation/documentation-journeys.md) 將許多不同的、可能複雜的主題和特徵聯繫起來，提供一種敘述，幫助讀者從頭到尾理解並解決業務問題，同時假定事先的主題或AEM知識最少。
 
 說明檔案歷程是根據最佳實務原則而設計，根據Adobe的最新研究、Adobe顧問經驗證的實作經驗，以及客戶專案的意見回饋。
 
@@ -54,16 +54,7 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
 您將在此歷程中探索許多主題。 以下文章提供您使用快速網站建立工具建立和自訂AEM網站的基本知識，並連結至詳細的技術檔案。
 
-|#|文章|說明|負責角色|
-|---|---|---|---|
-|0|AEM快速網站建立歷程|本檔案|AEM &amp; Cloud Manager管理員|
-|1|[了解Cloud Manager和快速網站建立工作流程](cloud-manager.md)|了解Cloud Manager及其如何將新的快速網站建立程式連結在一起。|AEM管理員|
-|2|[從範本建立網站](create-site.md)|了解如何使用網站範本快速建立新AEM網站。|AEM管理員|
-|3|[設定管道](pipeline-setup.md)|建立前端管道以管理網站主題的定製。|Cloud Manager管理員|
-|4|[授予前端開發人員的存取權](grant-access.md)|將前端開發人員上線至Cloud Manager，讓他們能存取您的AEM網站Git存放庫和管道。|Cloud Manager管理員|
-|5|[擷取Git存放庫存取資訊](retrieve-access.md)|了解前端開發人員如何使用Cloud Manager存取Git存放庫資訊。|前端開發人員|
-|6|[自訂網站主題](customize-theme.md)|了解網站主題的建立方式、如何自訂主題，以及如何使用即時AEM內容測試主題。|前端開發人員|
-|7|[部署自定義的主題](deploy-theme.md)|了解如何使用管道部署網站主題。|前端開發人員|
+|#|文章|說明|負責角色| |—|—|—| |0|AEM快速網站建立歷程|本檔案|AEM &amp; Cloud Manager管理員| |1|[了解Cloud Manager和快速網站建立工作流程](cloud-manager.md)|了解Cloud Manager及其如何將新的快速網站建立程式連結在一起。|AEM管理員| |2|[從範本建立網站](create-site.md)|了解如何使用網站範本快速建立新AEM網站。|AEM管理員| |3|[設定管道](pipeline-setup.md)|建立前端管道以管理網站主題的定製。|Cloud Manager管理員| |4|[授予前端開發人員的存取權](grant-access.md)|將前端開發人員上線至Cloud Manager，讓他們能存取您的AEM網站Git存放庫和管道。|Cloud Manager管理員| |5|[擷取Git存放庫存取資訊](retrieve-access.md)|了解前端開發人員如何使用Cloud Manager存取Git存放庫資訊。|前端開發人員| |6|[自訂網站主題](customize-theme.md)|了解網站主題的建立方式、如何自訂主題，以及如何使用即時AEM內容測試主題。|前端開發人員| |7|[部署自定義的主題](deploy-theme.md)|了解如何使用管道部署網站主題。|前端開發人員|
 
 ## 下一步 {#what-is-next}
 

@@ -1,21 +1,21 @@
 ---
-title: AEM Content and Commerce
+title: AEM 內容與商務
 description: AEM內容與商務自助資源與檔案連結
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '350'
+ht-degree: 62%
 
 ---
 
-# AEM內容與商務 {#commerce-guide}
+# AEM 內容與商務 {#commerce-guide}
 
 此頁面提供AEM內容與商務的相關自助資源。
 
 >[!NOTE]
 >
->如需AEM 6.5和傳統CIF的AEM內容與商務，請參閱[AEM 6.5內容與商務](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html)。
+>如需AEM內容與商務搭配AEM 6.5和Classic CIF的相關資訊，請參閱 [AEM 6.5內容與商務](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
 
 ## 重要內容與商務文章 {#key-articles}
 
@@ -27,7 +27,6 @@ ht-degree: 0%
 
 | 使用手冊 | 說明 |
 |---|---|
-| [Experience Manager as a Cloud Service 首頁](/help/landing/home.md) | 如需 Experience Manager as a Cloud Service 文件概覽，請由此開始。 |
 | [概覽](/help/overview/home.md) | 本指南提供Experience Manager as a Cloud Service的概觀，包括簡介、術語、架構等。 |
 | [發行說明](/help/release-notes/home.md) | 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。 |
 | [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |

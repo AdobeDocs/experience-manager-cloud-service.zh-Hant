@@ -1,35 +1,34 @@
 ---
-title: AEM Screens作為Cloud Service
-description: Adobe Experience Manager Screens作為Cloud Service的自助資源與檔案連結
+title: AEM Screensas a Cloud Service
+description: Adobe Experience Manager Screensas a Cloud Service自助資源與檔案連結
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '408'
+ht-degree: 52%
 
 ---
 
-# AEM Screens作為Cloud Service {#aem-screens-as-a-cloud-service-guide}
+# AEM Screensas a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-此頁面提供AEM ScreensCloud Service的相關自助資源。
+此頁面提供AEM Screens as a Cloud Service的相關自助資源。
 
 >[!NOTE]
->若為AEM 6.5的AEM Screens，請參閱[AEM Screens使用手冊](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en)。
+>若為具有AEM 6.5的AEM Screens，請參閱 [AEM Screens使用手冊](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
 
 
-## 重要內容和AEM Screens作為Cloud Service文章 {#key-articles}
+## 重要內容與AEM Screensas a Cloud Service文章 {#key-articles}
 
 * [簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
 * [入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
 * [設定Screens服務與內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
-* [在Screens中建立專案作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
+* [在Screens中建立專案as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
 * [安裝Screens播放器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
 | 使用手冊 | 說明 |
 |---|---|
-| [Experience Manager as a Cloud Service 首頁](/help/landing/home.md) | 如需 Experience Manager as a Cloud Service 文件概覽，請由此開始。 |
 | [概覽](/help/overview/home.md) | 本指南提供Experience Manager as a Cloud Service的概觀，包括簡介、術語、架構等。 |
 | [發行說明](/help/release-notes/home.md) | 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。 |
 | [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |

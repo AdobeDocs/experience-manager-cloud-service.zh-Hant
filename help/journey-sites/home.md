@@ -2,7 +2,7 @@
 title: AEM Sites Journeys
 description: 請從這裡開始，概略了解AEM強大網站功能的引導式歷程。
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: e69d3efbb45f95cbb5f84724c86c3cbd1255b8fb
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## AEM檔案歷程 {#documentation-journeys}
 
-[檔案歷程](/help/journey-documentation/home.md) 將許多不同的、可能也很複雜的主題和特徵聯繫起來，提供一種敘述，幫助讀者從頭到尾理解並解決業務問題，同時假定事先的主題或AEM知識最少。
+[檔案歷程](/help/journey-documentation/documentation-journeys.md) 將許多不同的、可能複雜的主題和特徵聯繫起來，提供一種敘述，幫助讀者從頭到尾理解並解決業務問題，同時假定事先的主題或AEM知識最少。
 
 說明檔案歷程是根據最佳實務原則而設計，根據Adobe的最新研究、Adobe顧問經驗證的實作經驗，以及客戶專案的意見回饋。
 
@@ -42,4 +42,4 @@ Sites Journeys是針對不同角色而設計，從不同角度規劃實作網站
 | [網站翻譯歷程](/help/journey-sites/translation/overview.md) | 了解AEM Sites技術、在專案中如何使用，以及如何在AEM中從A到Z建立和更新翻譯專案。 | 翻譯專家 |
 | [快速網站建立歷程](/help/journey-sites/quick-site/overview.md) | 從這裡開始，透過簡單易用的AEM快速網站建立工具進行引導式歷程，以簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂您的網站。 | 前端開發人員 |
 
-請繼續觀看 [即將到來的歷程，涵蓋其他角色。](/help/journey-documentation/home.md#journeys)
+請繼續觀看 [即將到來的歷程，涵蓋其他角色。](/help/journey-documentation/documentation-journeys.md#journeys)

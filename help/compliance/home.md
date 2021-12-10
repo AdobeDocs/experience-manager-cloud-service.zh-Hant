@@ -1,16 +1,16 @@
 ---
 title: 合規性
 description: 合規性
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 76%
+source-wordcount: '361'
+ht-degree: 75%
 
 ---
 
 # AEMas a Cloud Service法規遵循 {#aem-compliance}
 
-本頁列出自助資源，提供有關Experience Manageras a Cloud Service的合規性資訊。
+本頁列出自助資源，提供有關Experience Manageras a Cloud Service合規性的資訊。
 
 ## 重要文章概覽 {#key-articles}
 
@@ -24,7 +24,6 @@ ht-degree: 76%
 
 | 使用手冊 | 說明 |
 |---|---|
-| [Experience Manager as a Cloud Service 首頁](/help/landing/home.md) | 如需 Experience Manager as a Cloud Service 文件概覽，請由此開始。 |
 | [發行說明](/help/release-notes/home.md) | 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。 |
 | [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |
 | [入門](/help/onboarding/home.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
