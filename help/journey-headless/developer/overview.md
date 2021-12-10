@@ -1,10 +1,11 @@
 ---
 title: AEM Headless Developer Journey
 description: AEM無頭CMS檔案。 從這裡開始，引導您逐步了解AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個開發專案中運用這些功能。
+landing-page-description: 從這裡開始，逐步引導您了解AEM的無頭式功能、其功能，以及如何在您的第一個開發專案中運用這些功能。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1247'
 ht-degree: 1%
 
 ---
