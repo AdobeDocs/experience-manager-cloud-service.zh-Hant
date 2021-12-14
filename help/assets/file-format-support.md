@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 2c6bf90f51628fb1580a2ad287cfb1500063abc0
+source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '866'
 ht-degree: 8%
 
 ---
@@ -211,10 +211,12 @@ ht-degree: 8%
 | MOV, QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV(DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple中級，Apple動畫 |
 | MP4 | MPEG-4 | H264/AVC（所有配置檔案） | - |
 | MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
-| MXF | MXF | Sony XDCAM、MPEG-2、MPEG-4、松下DVCPro | - |
+| MXF‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、松下DVCPro | - |
 | 奧格夫、奧格 | 奧格 | 蒂奧拉，VP3，狄拉克 | - |
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3(v9)、WMV2(v8)、WMV1(v7)、GoToMeeting(G2M2、G2M3、G2M4) | Microsoft Screen(MSS2)、Microsoft Photo Story(WVP2) |
+
+*此視訊格式尚不支援與Dynamic Media中的互動式視訊搭配使用，或與Experience Manager Assets中的附註搭配使用。
 
 ## 音訊格式 {#audio-formats}
 

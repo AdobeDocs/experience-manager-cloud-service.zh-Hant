@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 764ddc2621d8da3323af4eb037ec5b92e1214503
+source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
 workflow-type: tm+mt
-source-wordcount: '4287'
+source-wordcount: '4320'
 ht-degree: 10%
 
 ---
@@ -23,17 +23,17 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->* Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Marketing Cloud. 如果要共用資料夾，請不選擇 [!UICONTROL 已訂購] 建立資料夾時。
+>* 共用類型的「資產」資料夾 `sling:OrderedFolder`，不支援共用至Marketing Cloud。 如果要共用資料夾，請不選擇 [!UICONTROL 已訂購] 建立資料夾時。
 >* Experience Manager不允許使用 `subassets` word作為資料夾的名稱。 它是為包含複合資產子資產的節點保留的關鍵字
 
 
-1. Navigate to the place in your digital assets folder where you want to create a new folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
+1. 導覽至您要建立新資料夾的數位資產資料夾中的位置。 在功能表中，按一下 **[!UICONTROL 建立]**. 選擇 **[!UICONTROL 新資料夾]**.
 1. 在 **[!UICONTROL 標題]** 欄位，提供資料夾名稱。 依預設，DAM會使用您提供的標題作為資料夾名稱。 建立資料夾後，您可以覆寫預設值並指定其他資料夾名稱。
 1. 按一下&#x200B;**[!UICONTROL 建立]**。您的資料夾會顯示在數位資產資料夾中。
 
 不支援下列（以空格分隔的）字元清單：
 
-* An asset file name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? &`
+* 資產檔案名稱不能包含下列任一字元： `* / : [ \\ ] | # % { } ? &`
 * 資產資料夾名稱不能包含下列任一字元： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## 上傳資產 {#uploading-assets}
@@ -128,7 +128,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## 複製資產 {#copying-assets}
 
-When you copy an asset or a folder, the entire asset or the folder is copied, along with its content structure. A copied asset or a folder is duplicated at the target location. The asset at the source location is not altered.
+複製資產或資料夾時，會複製整個資產或資料夾，及其內容結構。 複製的資產或資料夾會在目標位置複製。 來源位置的資產未變更。
 
 資產特定復本的少數屬性不會結轉。 例如：
 
@@ -136,9 +136,9 @@ When you copy an asset or a folder, the entire asset or the folder is copied, al
 
 * 每個資產及其每個轉譯的建立時間和參考路徑都是唯一的。
 
-The other properties and metadata information is retained. 複製資產時不會建立部分復本。
+保留其他屬性和中繼資料資訊。 複製資產時不會建立部分復本。
 
-1. From the Assets UI, select one or more assets, and then tap/click the **[!UICONTROL Copy]** icon from the toolbar. Alternatively, select the **[!UICONTROL Copy]** ![copy_icon](assets/copy_icon.png) quick action from the asset card.
+1. 從「資產」UI中，選取一或多個資產，然後點選/按一下 **[!UICONTROL 複製]** 圖示。 或者，選取 **[!UICONTROL 複製]** ![copy_icon](assets/copy_icon.png) 從資產卡執行快速動作。
 
    >[!NOTE]
    >
@@ -158,9 +158,9 @@ The other properties and metadata information is retained. 複製資產時不會
    >
    >此 **[!UICONTROL 貼上]** 表徵圖在貼上操作完成之前可在工具欄中使用。
 
-### Move or rename assets {#moving-or-renaming-assets}
+### 移動或重新命名資產 {#moving-or-renaming-assets}
 
-1. Navigate to the location of the asset you want to move.
+1. 導覽至您要移動的資產位置。
 
 1. 選取資產，然後點選/按一下 **[!UICONTROL 移動]** 圖示 ![move_icon](assets/move_icon.png) 的上界。
 
@@ -206,7 +206,7 @@ The other properties and metadata information is retained. 複製資產時不會
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. In the **[!UICONTROL Renditions]** panel, view the list of renditions generated for the asset.
+1. 在 **[!UICONTROL 轉譯]** 面板中，檢視為資產產生的轉譯清單。
 
    ![renditions_panel](assets/renditions_panel.png)
 
@@ -236,7 +236,7 @@ The other properties and metadata information is retained. 複製資產時不會
 
    若要在資產詳細資料層級設定影像的轉譯尺寸，請覆蓋節 `renditionpicker` 點(`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`)並設定width屬性的值。設定屬性大 **[!UICONTROL 小 (長) (KB]** )以取代寬度，以根據影像大小自訂資產詳細資料頁面上的轉譯。對於基於大小的定製，如果匹配的 `preferOriginal` 格式副本的大小大於原始格式副本的大小，則屬性會為原始格式副本指定首選項。
 
-   Similarly, you can customize the Annotation page image by overlaying `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
+   同樣，您也可以通過覆蓋來自定義「注釋」頁影像 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
@@ -244,13 +244,13 @@ The other properties and metadata information is retained. 複製資產時不會
 
    >[!NOTE]
    >
-   >只有具有HTML5相容視訊格式的瀏覽器才支援視訊註解。 此外，根據瀏覽器，支援不同的視訊格式。
+   >只有具有HTML5相容視訊格式的瀏覽器才支援視訊註解。 此外，根據瀏覽器，支援不同的視訊格式。 不過，MXF視訊格式尚不支援視訊註解。
 
 ## 刪除資產 {#delete-assets}
 
 若要解析或移除其他頁面中傳入的參照，請先更新相關的參照，再刪除資產。
 
-Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+此外，停用使用覆蓋圖的強制刪除按鈕，以禁止使用者刪除參考的資產並留下中斷的連結。
 
 1. 瀏覽至您要刪除的資產所在的位置。
 
@@ -262,15 +262,15 @@ Also, disable the force delete button using an overlay, to disallow users from d
    * **[!UICONTROL 刪除]**&#x200B;來確認動作：
 
       * 如果資產沒有參考，則會刪除資產。
-      * If the asset has references, an error-message informs you that **[!UICONTROL One or more assets are referenced]**. 您可以選取&#x200B;**[!UICONTROL 強制刪除]**&#x200B;或&#x200B;**[!UICONTROL 取消]**。
+      * 如果資產有參考，則會出現錯誤訊息通知您 **[!UICONTROL 參考一或多個資產]**. 您可以選取&#x200B;**[!UICONTROL 強制刪除]**&#x200B;或&#x200B;**[!UICONTROL 取消]**。
 
    >[!NOTE]
    >
-   >You require delete permissions on dam/asset to be able to delete an asset. If you only have modify permissions, you can only edit the asset metadata and add annotations to the asset. 不過，您無法刪除資產或其中繼資料。
+   >您需要dam/asset的刪除權限才能刪除資產。 如果您只有修改權限，則只能編輯資產中繼資料和新增註解至資產。 不過，您無法刪除資產或其中繼資料。
 
    >[!NOTE]
    >
-   >若要解析或移除其他頁面中傳入的參照，請先更新相關的參照，再刪除資產。 您可以不允許刪除參照的資產，因為這會造成連結損毀。 Disable the force delete button using an overlay.
+   >若要解析或移除其他頁面中傳入的參照，請先更新相關的參照，再刪除資產。 您可以不允許刪除參照的資產，因為這會造成連結損毀。 使用覆蓋停用強制刪除按鈕。
 
 ## 下載資產 {#download-assets}
 
@@ -302,12 +302,12 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
 ## 已關閉的用戶組 {#closed-user-group}
 
-封閉使用者群組(CUG)可用來限制對發佈自之特定資產資料夾的存取 [!DNL Experience Manager]. 如果為資料夾建立CUG，則對資料夾（包括資料夾資產和子資料夾）的訪問權限僅限於分配的成員或組。 To access the folder, they must log in using their security credentials.
+封閉使用者群組(CUG)可用來限制對發佈自之特定資產資料夾的存取 [!DNL Experience Manager]. 如果為資料夾建立CUG，則對資料夾（包括資料夾資產和子資料夾）的訪問權限僅限於分配的成員或組。 若要存取資料夾，使用者必須使用其安全憑證登入。
 
-CUGs are an extra way to restrict access to your assets. 您也可以為資料夾設定登入頁面。
+CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入頁面。
 
-1. Select a folder from the Assets UI, and tap/click the Properties icon from the toolbar to display the properties page.
-1. From the **[!UICONTROL Permissions]** tab, add members or groups under **[!UICONTROL Closed User Group]**.
+1. 從資產UI中選取資料夾，然後點選/按一下工具列中的「屬性」圖示，以顯示屬性頁面。
+1. 從 **[!UICONTROL 權限]** 頁簽，添加成員或組 **[!UICONTROL 封閉用戶組]**.
 
    ![add_user](assets/add_user.png)
 
@@ -333,7 +333,7 @@ CUGs are an extra way to restrict access to your assets. 您也可以為資料�
 一次只有一個資產的快速動作圖示可用。視您的裝置而定，執行下列動作以顯示快速動作圖示：
 
 * 觸摸設備：觸摸並按住。 例如，在iPad上，您可以點選並按住資產，以顯示快速動作。
-* Non-touch devices: Hover pointer. For example, On a desktop device, the quick action bar is displayed if you hover the pointer over the asset thumbnail.
+* 非接觸裝置：暫留指針。 例如，在案頭裝置上，如果將指標暫留在資產縮圖上，則會顯示快速動作列。
 
 <!-- Hiding this topic via cqdoc-18707
 
@@ -408,18 +408,18 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ## 為資產加上注釋 {#annotating}
 
-註解是在影像或影片中新增的註解或說明性附註。 Annotations provide marketers the ability to collaborate and leave feedback about assets.
+註解是在影像或影片中新增的註解或說明性附註。 註解可讓行銷人員共同作業，並提供資產的相關意見。
 
-只有HTML5相容視訊格式的瀏覽器才支援視訊註解。 Video formats that Assets supports depend on the browser.
+只有HTML5相容視訊格式的瀏覽器才支援視訊註解。 Assets支援的視訊格式取決於瀏覽器。 不過，MXF視訊格式尚不支援視訊註解。
 
 >[!NOTE]
 >
 >針對內容片段， [註解會在片段編輯器中建立](content-fragments/content-fragments.md).
 
-1. Navigate to the location of the asset to which you want to add annotations.
-1. Tap/click the **[!UICONTROL Annotate]** icon from one of the following:
+1. 導覽至您要新增註解的資產位置。
+1. 點選/按一下 **[!UICONTROL 注釋]** 表徵圖，其中一項為：
 
-   * [Quick actions](#quick-actions)
+   * [快速動作](#quick-actions)
    * 選取資產或導覽至資產頁面後，從工具列
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
@@ -451,7 +451,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    >[!NOTE]
    >
-   >您也可以將註解新增至視訊資產。 為視訊加上註解時，播放器會暫停，讓您在影格上加上註解。 如需詳細資訊，請參閱 [管理視訊資產](manage-video-assets.md).
+   >您也可以將註解新增至視訊資產。 為視訊加上註解時，播放器會暫停，讓您在影格上加上註解。 如需詳細資訊，請參閱 [管理視訊資產](manage-video-assets.md). 不過，MXF視訊格式尚不支援視訊註解。
 
 1. 若要選擇不同的顏色，以便區分使用者，請按一下/點選「描述檔」圖示，然後按一下/點選 **[!UICONTROL 我的偏好設定]**.
 
