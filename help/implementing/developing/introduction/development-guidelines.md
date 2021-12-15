@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發方針
 description: AEM as a Cloud Service 開發方針
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 477546f882197291403e59d8ba2e53dd4918a719
+source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2180'
 ht-degree: 1%
 
 ---
@@ -195,7 +195,7 @@ AEM中的電子郵件應使用 [Day CQ Mail Service OSGi服務](https://experien
 
 請參閱 [AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) 如需設定電子郵件設定的詳細資訊。 若為AEMas a Cloud Service，請注意以下必要調整 `com.day.cq.mailer.DefaultMailService OSGI` 服務：
 
-* SMTP伺服器主機名應設定為$[env:AEM_PROXY_HOST]
+* SMTP伺服器主機名應設定為$[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * 配置高級網路時，SMTP伺服器埠應設定為API調用中使用的portForwerds參數中設定的原始代理埠的值。 例如30465（而非465）
 
 還建議如果已請求埠465:
