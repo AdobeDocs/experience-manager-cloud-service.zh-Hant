@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: dd127862d65ed2f6a2dc2f93f9668552c577181c
+source-git-commit: 7b636396dd9ca34955d2f40a7191821e43cb30f9
 workflow-type: tm+mt
-source-wordcount: '3362'
+source-wordcount: '3365'
 ht-degree: 32%
 
 ---
@@ -432,6 +432,7 @@ ht-degree: 32%
          + [重複使用最適化表單的中繼資料屬性](/help/forms/reusing-adaptive-forms.md)
       + 改善適用性表單的協助工具 {#accessible-adaptive-forms}
          + [建立可存取的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
+      + [設定Forms Portal](/help/forms/configure-forms-portal.md)
    + 將表單與一或多個資料來源整合 {#use-form-data-model}
       + [設定資料來源](/help/forms/configure-data-sources.md)
       + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
