@@ -1,8 +1,7 @@
 ---
 title: 如何在Experience Manager Sites頁面上建立Forms Portal?
 description: 了解如何在Forms頁面上建立AEM Sites入口網站和使用現成可用的核心元件。
-exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: e46690fae931b85171a0c61d61fdd375ff8fba90
+source-git-commit: 4c42abfe2cc1b11aefb2b298e883406ca5c17fd2
 workflow-type: tm+mt
 source-wordcount: '1753'
 ht-degree: 0%
