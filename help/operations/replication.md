@@ -2,20 +2,20 @@
 title: 複寫
 description: 發佈和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1363'
 ht-degree: 1%
 
 ---
 
 # 複寫 {#replication}
 
-Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html)功能，將內容移動至在AEM執行階段以外Adobe I/O上執行的管道服務。
+Adobe Experience Manager as a Cloud Service使用 [Sling內容分送](https://sling.apache.org/documentation/bundles/content-distribution.html) 能夠將要複製的內容移動到AEM執行階段以外Adobe I/O上執行的管道服務。
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[分送](/help/overview/architecture.md#content-distribution) 。
+>閱讀 [分發](/help/overview/architecture.md#content-distribution) 以取得更多資訊。
 
 ## 發佈內容的方法 {#methods-of-publishing-content}
 
@@ -23,13 +23,13 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
 這可讓您立即發佈所選頁面，而無需透過「管理出版物」方法提供其他選項。
 
-如需詳細資訊，請參閱[管理出版物](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)。
+如需詳細資訊，請參閱 [管理出版物](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### 開啟和關閉時間 — 觸發配置 {#on-and-off-times-trigger-configuration}
 
-從「頁面屬性」的「[基本」頁簽中可以找到&#x200B;**「開啟時間」**&#x200B;和&#x200B;**「關閉時間」**&#x200B;的其他可能性。](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+其他可能性 **準時** 和 **關閉時間** 可從 [頁面屬性的基本索引標籤](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
 
-要實現自動複製，您需要在[OSGi配置](/help/implementing/deploying/configuring-osgi.md) **開啟關閉觸發配置**&#x200B;中啟用&#x200B;**自動複製**:
+要實現自動複製，您需要啟用 **自動復寫** 在 [OSGi配置](/help/implementing/deploying/configuring-osgi.md) **開關觸發器配置**:
 
 ![OSGi On Off觸發器配置](/help/operations/assets/replication-on-off-trigger.png)
 
@@ -39,7 +39,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
 將「稍後發佈」選項的資料夾子項納入會叫用「發佈內容樹」工作流程，如本文所述。
 
-您可以在[Publishing Fundamentals檔案](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)中找到有關管理發布的更多詳細資訊。
+您可以在 [發佈基礎知識檔案](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### 樹激活 {#tree-activation}
 
@@ -49,12 +49,12 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
 要執行樹激活：
 
-1. 從AEM「開始」功能表導覽至「**工具>部署>發佈**」
-2. 選取卡片&#x200B;**publish**
-3. 進入發佈Web控制台UI後，**選擇Distribute**
+1. 從AEM開始功能表導覽至 **工具>部署>分發**
+2. 選取資訊卡 **發佈**
+3. 進入發佈Web控制台UI後， **選擇分發**
 
-   ![](assets/publish-distribute.png "DistributeDistribute")
-4. 在路徑瀏覽器中選擇路徑，根據需要選擇添加節點、樹或刪除，然後選擇&#x200B;**Submit**
+   ![分發](assets/publish-distribute.png "分發")
+4. 在路徑瀏覽器中選擇路徑，根據需要選擇添加節點、樹或刪除，然後選擇 **提交**
 
 為獲得最佳效能，使用此功能時請遵循以下准則：
 * 建議一次複製少於100個路徑，並設定500個路徑硬限制。
@@ -62,49 +62,50 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
 ### 發佈內容樹工作流 {#publish-content-tree-workflow}
 
-您可以選擇&#x200B;**工具 — 工作流 — 模型**&#x200B;並複製&#x200B;**發佈內容樹**&#x200B;現成可用的工作流模型，如下所示：
+通過選擇 **工具 — 工作流程 — 模型** 和複製 **發佈內容樹** 現成工作流程模型，如下所示：
 
 ![](/help/operations/assets/publishcontenttreeworkflow.png)
 
 請勿修改或調用原始模型。 請務必先複製模型，然後修改或叫用該復本。
 
-如同所有工作流程，您也可以透過API叫用。 如需詳細資訊，請參閱以程式設計方式](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem)與工作流程互動。[
+如同所有工作流程，您也可以透過API叫用。 如需詳細資訊，請參閱 [以程式設計的方式與工作流程互動](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem).
 
-或者，您也可以建立使用`Publish Content Tree`流程步驟的「工作流模型」來實現此目標：
+或者，您也可以建立使用 `Publish Content Tree` 處理步驟：
 
-1. 從AEM as a Cloud Service首頁，前往&#x200B;**工具 — 工作流程 — 模型**
-1. 在「工作流模型」頁面中，按螢幕右上角的&#x200B;**Create**
-1. 新增標題和名稱至模型。 如需詳細資訊，請參閱[建立工作流模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
-1. 從清單中選擇新建立的模型，然後按&#x200B;**Edit**
+1. 從AEMas a Cloud Service首頁，前往 **工具 — 工作流程 — 模型**
+1. 在「工作流模型」頁面中，按 **建立** 在螢幕的右上角
+1. 新增標題和名稱至模型。 如需詳細資訊，請參閱 [建立工作流模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
+1. 從清單中選取新建立的模型，然後按 **編輯**
 1. 在以下窗口中，將「處理步驟」(Process Step)拖放到當前模型流中：
 
    ![程序步驟](/help/operations/assets/processstep.png)
 
-1. 按一下流量中的「處理」步驟，然後按扳手圖示選取&#x200B;**設定**
-1. 按一下&#x200B;**Process**&#x200B;頁簽，然後從下拉清單中選擇`Publish Content Tree`
+1. 按一下流程中的「處理」步驟，然後選取 **設定** 按扳手錶徵圖
+1. 按一下 **程式** 索引標籤和選取 `Publish Content Tree` 從下拉式清單
 
    ![樹狀激活](/help/operations/assets/newstep.png)
 
-1. 在&#x200B;**參數**&#x200B;欄位中設定任何其他參數。 多個逗號分隔引數可以字串在一起。 例如：
+1. 在 **引數** 欄位。 多個逗號分隔引數可以字串在一起。 例如：
 
-   `enableVersion=true,agentId=publish`
+   `enableVersion=true,agentId=publish,includeChildren=true`
 
 
    >[!NOTE]
    >
-   >如需參數清單，請參閱下方的&#x200B;**參數**&#x200B;一節。
+   >如需參數清單，請參閱 **參數** 一節。
 
-1. 按下&#x200B;**Done**&#x200B;以儲存工作流程模型。
+1. Press **完成** 以保存工作流模型。
 
 **參數**
 
-* `replicateAsParticipant` （布林值，預設值） `false`)。如果配置為`true`，則複製使用執行參與者步驟的主體的`userid`。
-* `enableVersion` （布林值，預設值） `true`)。此參數會決定是否在復寫時建立新版本。
-* `agentId` （字串值，預設值表示僅使用發佈的代理）。建議您明確說明agentId;例如，設定它：發佈。 將代理設定為`preview`將發佈到預覽服務
-* `filters` （字串值，預設值表示所有路徑皆已啟用）。可用值包括：
+* `includeChildren` （布林值，預設值） `false`)。 false表示僅發佈路徑。 true表示孩子也會被發表。
+* `replicateAsParticipant` （布林值，預設值） `false`)。 若已設為 `true`，復寫會使用 `userid` 執行參與者步驟的主體。
+* `enableVersion` （布林值，預設值） `true`)。 此參數會決定是否在復寫時建立新版本。
+* `agentId` （字串值，預設值表示僅使用發佈的代理）。 建議您明確說明agentId;例如，設定它：發佈。 將代理設定為 `preview` 將發佈至預覽服務
+* `filters` （字串值，預設值表示所有路徑皆已啟用）。 可用值包括：
    * `onlyActivated`  — 只有未標示為已啟用的路徑才會啟用。
    * `onlyModified`  — 僅啟用已啟用且修改日期晚於啟用日期的路徑。
-   * 上方可以用垂直號「|」來ORed。 例如， `onlyActivated|onlyModified`。
+   * 上方可以用垂直號「|」來ORed。 例如， `onlyActivated|onlyModified`.
 
 **記錄**
 
@@ -112,9 +113,9 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
 然後，在複製所有路徑後，將記錄最終的INFO語句。
 
-此外，您可以將`com.day.cq.wcm.workflow.process.impl`以下記錄器的記錄層級增加為「除錯/TRACE」，以取得更多記錄資訊。
+此外，您也可以提高以下記錄器的記錄層級 `com.day.cq.wcm.workflow.process.impl` 除錯/TRACE，以取得更多記錄資訊。
 
-如果發生錯誤，工作流程步驟會以`WorkflowException`終止，其中會包含基礎的例外。
+如果發生錯誤，工作流程步驟會以 `WorkflowException`，其中包含基礎例外。
 
 以下是範例發佈內容樹狀結構工作流程期間產生的記錄檔範例：
 
@@ -132,9 +133,9 @@ Adobe Experience Manager as a Cloud Service使用[Sling Content Distribution](ht
 
 ### 復寫API {#replication-api}
 
-您可以使用AEM中精選的取代API作為Cloud Service來發佈內容。
+您可以使用AEM as a Cloud Service中精選的取代API來發佈內容。
 
-如需詳細資訊，請參閱[API檔案](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html)。
+如需詳細資訊，請參閱 [API檔案](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
 **API的基本使用**
 
@@ -161,9 +162,9 @@ Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchRepl
 
 **使用特定代理進行複製**
 
-如上例所示，複製資源時，將僅使用預設活動的代理。 在AEM as aCloud Service中，這只會是名為「發佈」的代理程式，將作者連接至發佈層級。
+如上例所示，複製資源時，將僅使用預設活動的代理。 在AEMas a Cloud Service中，這只會是名為「發佈」的代理程式，將作者連接至發佈層級。
 
-為支援預覽功能，已新增名為「預覽」的新代理，預設為非作用中。 此代理程式用於將作者連接至預覽層。 如果只想通過預覽代理進行複製，則需要通過`AgentFilter`顯式選擇此預覽代理。
+為支援預覽功能，已新增名為「預覽」的新代理，預設為非作用中。 此代理程式用於將作者連接至預覽層。 如果只想通過預覽代理進行複製，則需要通過 `AgentFilter`.
 
 請參閱下列範例，了解如何執行此作業：
 
@@ -188,7 +189,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 如果您未提供此類篩選器且僅使用「發佈」代理，則不會使用「預覽」代理，且復寫動作不會影響預覽層。
 
-僅當複製操作包含至少一個預設活動的代理時，才會修改資源的整體`ReplicationStatus`。 在上例中，情況並非如此，因為復寫僅使用「預覽」代理。 因此，您需要使用新的`getStatusForAgent()`方法，該方法允許查詢特定代理的狀態。 此方法也適用於「發佈」代理程式。 如果使用提供的代理完成了任何複製操作，則返回非空值。
+整體 `ReplicationStatus` 僅當複製操作包含至少一個預設活動的代理時才修改資源的。 在上例中，情況並非如此，因為復寫僅使用「預覽」代理。 因此，您需要使用 `getStatusForAgent()` 方法，允許查詢特定代理的狀態。 此方法也適用於「發佈」代理程式。 如果使用提供的代理完成了任何複製操作，則返回非空值。
 
 
 **復寫API路徑和大小限制**
@@ -199,14 +200,14 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 若要疑難排解復寫，請導覽至AEM製作服務Web UI中的復寫佇列：
 
-1. 從AEM「開始」功能表導覽至「**工具>部署>發佈**」
-2. 選取卡片&#x200B;**publish**
-   ![](assets/publish-status.png "StatusStatus")
+1. 從AEM開始功能表導覽至 **工具>部署>分發**
+2. 選取資訊卡 **發佈**
+   ![狀態](assets/publish-status.png "狀態")
 3. 檢查應為綠色的隊列狀態
 4. 您可以測試與復寫服務的連線
-5. 選擇&#x200B;**Logs**&#x200B;頁簽，該頁簽顯示內容發佈的歷史記錄
+5. 選取 **記錄檔** 頁簽，其中顯示內容發佈的歷史記錄
 
-![](assets/publish-logs.png "LogsLogs")
+![記錄檔](assets/publish-logs.png "記錄檔")
 
 如果無法發佈內容，則會從AEM發佈服務還原整個發佈。
 在這種情況下，可編輯的主隊列將顯示紅色狀態，應進行審核，以確定哪些項導致取消發佈。 按一下該佇列，其待定項目便會顯示，如有需要，可從中清除單一項目或所有項目。
