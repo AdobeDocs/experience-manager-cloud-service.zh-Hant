@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 55ed91d87d5b57d467604f7723949b4bf918f2ff
+source-git-commit: bd5611c32591562697750e6e6c86767a42bb7727
 workflow-type: tm+mt
-source-wordcount: '3373'
+source-wordcount: '3403'
 ht-degree: 32%
 
 ---
@@ -754,7 +754,19 @@ ht-degree: 32%
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
       + [使用ContextHub設定區段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/personalization/contexthub-segmentation.html)
    + 設定和擴充 AEM as a Cloud Service {#configuring-and-extending}
-      + [使用Adobe開發人員應用程式產生器擴充AEM](/help/implementing/developing/extending/app-builder.md)
+      + 使用App Builder擴充AEM{#app-builder}
+         + [使用Adobe開發人員應用程式產生器擴充AEM](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
+         + [App Builder簡介](/help/implementing/developing/extending/app-builder/videos/introduction.md)
+         + [Adobe開發人員控制台](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
+         + [SDK和CLI](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
+         + [建立應用程式](/help/implementing/developing/extending/app-builder/videos/create.md)
+         + [動作](/help/implementing/developing/extending/app-builder/videos/actions.md)
+         + [儲存庫](/help/implementing/developing/extending/app-builder/videos/storage-libraries.md)
+         + [事件驅動應用程式](/help/implementing/developing/extending/app-builder/videos/event-driven-applications.md)
+         + [前端應用程式](/help/implementing/developing/extending/app-builder/videos/front-end-applications.md)
+         + [安全性](/help/implementing/developing/extending/app-builder/videos/security.md)
+         + [部署應用程式](/help/implementing/developing/extending/app-builder/videos/deploy.md)
+         + [發佈應用程式](/help/implementing/developing/extending/app-builder/videos/publish.md)
       + [擴充體驗片段](/help/implementing/developing/extending/experience-fragments.md)
       + [自訂和擴充內容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [轉譯專用內容片段設定元件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
