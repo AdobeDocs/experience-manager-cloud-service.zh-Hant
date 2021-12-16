@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: 479cfffd17dcde12bda7d53a7acddfbb46782a8f
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 8%
+source-wordcount: '985'
+ht-degree: 7%
 
 ---
 
@@ -66,30 +66,6 @@ ht-degree: 8%
 | SGI | ✓ | ✓ | ✓ | ✓ |
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
-
-## 影像格式 [!DNL Dynamic Media] {#image-support-dynamic-media}
-
-| 格式 | 上傳（輸入格式） | 建立影像預設集（輸出格式） | 預覽動態轉譯 | 傳送動態轉譯 | 下載動態轉譯 |
-| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| BMP | ✓ | - | - | - | - |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ | - | - | - | - |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PSD協定 | ✓ | - | - | - | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-
-*從PSD檔案擷取合併的影像。 這是由 [!DNL Adobe Photoshop] 和包含在PSD檔案中。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
-
-下列不支援的點陣影像檔案格式子類型 [!DNL Dynamic Media]:
-
-* IDAT區塊大小大於100 MB的PNG檔案。
-* PSB檔案。
-* 不支援具有CMYK、RGB、灰度或點陣圖以外的顏色空間的PSD檔案。 不支援DuoTone、Lab和索引色空間。
-* PSD位深度大於16的檔案。
-* TIFF具有浮點資料的檔案。
-* TIFF具有Lab色域的檔案。
 
 ## 3D格式 {#support-3d-formats}
 
@@ -164,14 +140,6 @@ ht-degree: 8%
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-## 文檔格式 [!DNL Dynamic Media] {#document-support-dynamic-media}
-
-| 格式 | 上傳（輸入格式） | 建立影像預設集（輸出格式） | 預覽動態轉譯 | 傳送動態轉譯 | 下載動態轉譯 |
-| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | ✓ | - | - | - | - |
-| INDD | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-
 ## 視訊格式 {#video-formats}
 
 | 檔案格式 | 縮圖產生 | 中繼資料擷取 | 寬度/高度 |
@@ -200,24 +168,6 @@ ht-degree: 8%
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-## 視訊格式 [!DNL Dynamic Media] 轉碼 {#video-dynamic-media-transcoding}
-
-| 影片副檔名 | 容器 | 建議的視訊轉碼器 | 不支援的視訊轉碼器 |
-| --- | --- | --- | --- |
-| AVI | A/V插播 | XVID、DIVX、HDV、MiniDV(DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3(IV30)、MJPEG、Microsoft Video 1(MS-CRAM) |
-| FLV、F4V | AdobeFlash | H264/AVC, Flix VP6, H263, Sorenson | SWF（向量動畫檔案） |
-| M4V | Apple iTunes | H264/AVC | - |
-| MKV | 馬特羅斯卡 | H264/AVC | - |
-| MOV, QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV(DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple中級，Apple動畫 |
-| MP4 | MPEG-4 | H264/AVC（所有配置檔案） | - |
-| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
-| MXF‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、松下DVCPro | - |
-| 奧格夫、奧格 | 奧格 | 蒂奧拉，VP3，狄拉克 | - |
-| WebM | WebM | Google VP8 | - |
-| WMV | Windows Media 9 | WMV3(v9)、WMV2(v8)、WMV1(v7)、GoToMeeting(G2M2、G2M3、G2M4) | Microsoft Screen(MSS2)、Microsoft Photo Story(WVP2) |
-
-*此視訊格式尚不支援與Dynamic Media中的互動式視訊搭配使用，或與Experience Manager Assets中的附註搭配使用。
-
 ## 音訊格式 {#audio-formats}
 
 [!DNL Assets] as a [!DNL Cloud Service] 為AIF、ASF、M4A、MP3、WAV和WMA音頻格式提供XMP元資料提取支援。
@@ -238,6 +188,69 @@ ht-degree: 8%
 ## 提示和限制 {#limitations-and-tips}
 
 * 目前，中繼資料擷取的檔案大小限制約為15 GB。 上傳非常大型的資產時，有時中繼資料擷取作業會失敗。
+
+## Dynamic Media — 支援的轉碼輸入視訊格式 {#video-dynamic-media-transcoding}
+
+| 影片副檔名 | 容器 | 建議的視訊轉碼器 | 不支援的視訊轉碼器 |
+| --- | --- | --- | --- |
+| AVI | A/V插播 | XVID、DIVX、HDV、MiniDV(DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3(IV30)、MJPEG、Microsoft Video 1(MS-CRAM) |
+| FLV、F4V | AdobeFlash | H264/AVC, Flix VP6, H263, Sorenson | SWF（向量動畫檔案） |
+| M4V | Apple iTunes | H264/AVC | - |
+| MKV | 馬特羅斯卡 | H264/AVC | - |
+| MOV, QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV(DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple中級，Apple動畫 |
+| MP4 | MPEG-4 | H264/AVC（所有配置檔案） | - |
+| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
+| MXF‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、松下DVCPro | - |
+| 奧格夫、奧格 | 奧格 | 蒂奧拉，VP3，狄拉克 | - |
+| WebM | WebM | Google VP8 | - |
+| WMV | Windows Media 9 | WMV3(v9)、WMV2(v8)、WMV1(v7)、GoToMeeting(G2M2、G2M3、G2M4) | Microsoft Screen(MSS2)、Microsoft Photo Story(WVP2) |
+
+*此視訊格式尚不支援與Dynamic Media中的互動式視訊搭配使用，或與Experience Manager Assets中的附註搭配使用。
+
+## Dynamic Media — 支援的檔案格式 {#document-support-dynamic-media}
+
+| 格式 | 上傳（輸入格式） | 建立影像預設集（輸出格式） | 預覽動態轉譯 | 傳送動態轉譯 | 下載動態轉譯 |
+| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
+| AI | ✓ | - | - | - | - |
+| INDD | ✓ | - | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+## Dynamic Media — 支援的點陣影像格式 {#image-support-dynamic-media}
+
+| 格式 | 上傳（輸入格式） | 建立影像預設集（輸出格式） | 預覽動態轉譯 | 傳送動態轉譯 | 下載動態轉譯 | 設定支援此格式的類型 |
+| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
+| BMP | ✓ | - | - | - | - | [影像](/help/assets/dynamic-media/image-sets.md), [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)，和 [回轉](/help/assets/dynamic-media/spin-sets.md) |
+| EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md), [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)，和 [回轉](/help/assets/dynamic-media/spin-sets.md) |
+| PICT | ✓ | - | - | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md), [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)，和 [回轉](/help/assets/dynamic-media/spin-sets.md) |
+| PSD協定 | ✓ | - | - | - | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md), [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)，和 [回轉](/help/assets/dynamic-media/spin-sets.md) |
+
+*從PSD檔案擷取合併的影像。 這是由 [!DNL Adobe Photoshop] 和包含在PSD檔案中。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
+
+## Dynamic Media — 不支援的點陣影像格式 {#unsupported-raster-image-formats-dm}
+
+以下子類型的光柵影像檔案格式為 *not* 支援 [!DNL Dynamic Media]:
+
+* IDAT區塊大小大於100 MB的PNG檔案。
+* PSB檔案。
+* 不支援具有CMYK、RGB、灰度或點陣圖以外的顏色空間的PSD檔案。 不支援DuoTone、Lab和索引色空間。
+* PSD位深度大於16的檔案。
+* TIFF具有浮點資料的檔案。
+* TIFF具有Lab色域的檔案。
+
+## Dynamic Media — 支援的3D檔案格式 {#support-3d-formats-dynamic-media}
+
+另請參閱 [支援3D格式](/help/assets/file-format-support.md#support-3d-formats)
+
+| 3D檔案副檔名 | 檔案格式 | MIME類型 | 附註 |
+|---|---|---|---|
+| GLB | 二進位GL傳輸 | 模型/gltf二進位 | 將材料和紋理作為單一資產包含。 |
+| OBJ | WaveFront 3D對象檔案 | application/x-tgif |  |
+| STL | 光固化成形 | application/vnd.ms-pki.stl |  |
+| USDZ | 通用場景描述Zip封存 | model/vnd.usdz+zip | *僅支援擷取；沒有可用的檢視或互動。* USDZ是專屬的3D格式，可由Safari或iOS以原生方式檢視。 |
 
 >[!MORELIKETHIS]
 >
