@@ -1,99 +1,111 @@
 ---
 title: 使用「連線資產」在 中共用 DAM 資產 [!DNL Sites]
-description: 使用遠端 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 部署上可用的資產。
+description: 使用遠端上可用的資產 [!DNL Adobe Experience Manager Assets] 在其他網頁上建立 [!DNL Adobe Experience Manager Sites] 部署。
 contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: d46efe181fee238d355a67cafbd5e7220efb43dc
+source-git-commit: 48efd852c990238661177bc40e2be7971b7d4949
 workflow-type: tm+mt
-source-wordcount: '2986'
-ht-degree: 26%
+source-wordcount: '3358'
+ht-degree: 23%
 
 ---
 
 # 使用「連線資產」在 中共用 DAM 資產 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-大型企業中，建立網站所需的基礎架構可能很分散。有時候，建立這些網站的網站建立功能和數位資產可能會存放在不同的部署中。原因之一，是現有部署分散，需要搭配使用。 另一個原因可能是收購導致基礎架構的差異，包括母公司希望一起使用的不同[!DNL Experience Manager]版本。
+大型企業中，建立網站所需的基礎架構可能很分散。有時候，建立這些網站的網站建立功能和數位資產可能會存放在不同的部署中。原因之一，是現有部署分散，需要搭配使用。 另一個原因可能是收購導致基礎設施的差異，包括不同 [!DNL Experience Manager] 版本，母公司想要搭配使用。
 
-「連線資產」功能整合[!DNL Experience Manager Sites]和[!DNL Experience Manager Assets]，可支援上述使用案例。 使用者可以在[!DNL Sites]中建立網頁，使用個別[!DNL Assets]部署中的數位資產。
+「連線資產」功能透過整合支援上述使用案例 [!DNL Experience Manager Sites] 和 [!DNL Experience Manager Assets]. 使用者可在 [!DNL Sites] 使用來自 [!DNL Assets] 部署。
 
 ## 連線資產概觀 {#overview-of-connected-assets}
 
-在[!UICONTROL 頁面編輯器]中編輯頁面時，作者可以順暢地搜尋、瀏覽及內嵌來自作為資產來源之不同[!DNL Assets]部署的資產。 管理員將具有[!DNL Sites]功能的[!DNL Experience Manager]部署與具有[!DNL Assets]功能的[!DNL Experience Manager]其他部署建立一次性整合。 您也可以透過「連線資產」在網站的網頁中使用Dynamic Media影像，並運用Dynamic Media功能，例如智慧型裁切和影像預設集。
+在中編輯頁面時 [!UICONTROL 頁面編輯器] 作者可以作為目標目的地，從不同的 [!DNL Assets] 作為資產來源的部署。 管理員會建立部署的一次性整合 [!DNL Experience Manager] with [!DNL Sites] 能力與其他部署 [!DNL Experience Manager] with [!DNL Assets] 功能。 您也可以透過「連線資產」在網站的網頁中使用Dynamic Media影像，並運用Dynamic Media功能，例如智慧型裁切和影像預設集。
 
-對於[!DNL Sites]作者，遠端資產以唯讀本機資產的形式提供。 此功能可支援順暢的搜尋作業，並允許一次使用數個遠端資產。若要一次在[!DNL Sites]部署中提供許多遠端資產，請考慮大量移轉資產。
+若 [!DNL Sites] 作者可將遠端資產以唯讀本機資產的形式提供。 此功能可支援順暢的搜尋作業，並允許一次使用數個遠端資產。讓許多遠端資產可在 [!DNL Sites] 請考慮一次性移轉資產。
 
 ### 先決條件和支援的部署 {#prerequisites}
 
 使用或設定此功能之前，請先確定下列事項：
 
 * 使用者是每個部署中適當使用者群組的成員。
-* 對於[!DNL Adobe Experience Manager]部署類型，滿足支援的條件之一。 [!DNL Experience Manager] as aCloud Service可 [!DNL Assets] 與6. [!DNL Experience Manager] 5搭配使用。如需此功能在6.5中如何運作的 [!DNL Experience Manager] 詳細資訊，請參閱 [ [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)中的連線資產。
+* 針對 [!DNL Adobe Experience Manager] 部署類型，即滿足支援的條件之一。 [!DNL Experience Manager] as a Cloud Service [!DNL Assets] 搭配 [!DNL Experience Manager] 6.5.如需此功能如何運作的詳細資訊，請參閱 [!DNL Experience Manager] 6.5，見 [中的連線資產 [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] AMS上的 [!DNL Sites] 6.5 | [!DNL Experience Manager] 6.5內 [!DNL Sites] 部部署 |
+   |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] 在AMS上。 | [!DNL Experience Manager] 6.5 [!DNL Sites] 內部部署 |
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 支援 | 支援 | 支援 |
-   | **[!DNL Experience Manager]AMS上的 [!DNL Assets] 6.5** | 支援 | 支援 | 支援 |
-   | **[!DNL Experience Manager]6.5內 [!DNL Assets] 部部署** | 不支援 | 不支援 | 不支援 |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] 在AMS上。** | 支援 | 支援 | 支援 |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] 內部部署** | 不支援 | 不支援 | 不支援 |
 
 ### 支援的檔案格式 {#mimetypes}
 
-作者在「內容尋找器」中搜尋影像和下列類型的檔案，並在「頁面編輯器」中使用搜尋的資產。 文檔將添加到`Download`元件，並將影像添加到`Image`元件。 作者也會在延伸預設`Download`或`Image`元件的任何自訂[!DNL Experience Manager]元件中新增遠端資產。 支援的格式為：
+作者在「內容尋找器」中搜尋影像和下列類型的檔案，並在「頁面編輯器」中使用搜尋的資產。 檔案會新增至 `Download` 元件和影像 `Image` 元件。 作者也會在任何自訂中新增遠端資產 [!DNL Experience Manager] 擴展預設值的元件 `Download` 或 `Image` 元件。 支援的格式為：
 
-* **影像格式**:影像元件支 [援的](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 格式。
-* **文檔格式**:請參閱支 [援的檔案格式](file-format-support.md#document-formats)。
+* **影像格式**:格式 [影像元件](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 支援。
+* **檔案格式**:請參閱 [支援的文檔格式](file-format-support.md#document-formats).
 
 ### 相關使用者和群組 {#users-and-groups-involved}
 
-以下說明設定及使用功能以及其相對應的使用者群組時，相關的各種角色。本機範圍適用於作者建立網頁的使用案例。 遠端範圍適用於託管所需資產的 DAM 部署。[!DNL Sites]作者會擷取這些遠端資產。
+以下說明設定及使用功能以及其相對應的使用者群組時，相關的各種角色。本機範圍適用於作者建立網頁的使用案例。 遠端範圍適用於託管所需資產的 DAM 部署。此 [!DNL Sites] 作者會擷取這些遠端資產。
 
 | 角色 | 範圍 | 使用者群組 | 逐步說明中的使用者名稱 | 需求 |
 |------|--------|-----------|-----|----------|
-| [!DNL Sites] 管理員 | 本機 | [!DNL Experience Manager] `administrators` | `admin` | 設定[!DNL Experience Manager]並配置與遠程[!DNL Assets]部署的整合。 |
+| [!DNL Sites] 管理員 | 本機 | [!DNL Experience Manager] `administrators` | `admin` | 設定 [!DNL Experience Manager] 和配置與遠程伺服器的整合 [!DNL Assets] 部署。 |
 | DAM 使用者 | 本機 | `Authors` | `ksaner` | 用於檢視及複製 `/content/DAM/connectedassets/` 中擷取的資產。 |
-| [!DNL Sites] 作者 | 本機 | <ul><li>`Authors` (在遠端DAM上具有讀取存取權，並在本機上具有作者存取權 [!DNL Sites]) </li> <li>`dam-users` 本地  [!DNL Sites]</li></ul> | `ksaner` | 一般使用者為[!DNL Sites]作者，他們使用此整合來改善其內容速度。 作者可以使用[!UICONTROL 內容尋找器]，以及在本機網頁中使用所需影像，在遠端DAM中搜尋和瀏覽資產。 已採用 `ksaner` DAM 使用者的認證。 |
-| [!DNL Assets] 管理員 | 遠端 | [!DNL Experience Manager] `administrators` | `admin` 遠端  [!DNL Experience Manager] | 設定跨原始資源共用 (CORS)。 |
-| DAM 使用者 | 遠端 | `Authors` | `ksaner` 遠端  [!DNL Experience Manager] | 在遠程[!DNL Experience Manager]部署上編寫角色。 使用[!UICONTROL 內容尋找器]在「連線資產」中搜尋和瀏覽資產。 |
-| DAM 經銷商 (技術使用者) | 遠端 | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` 遠端  [!DNL Experience Manager] | [!DNL Experience Manager]本機伺服器（非[!DNL Sites]作者角色）會代表[!DNL Sites]作者，使用遠端部署上的此使用者來擷取遠端資產。 此角色與上述的兩個 `ksaner` 角色不一樣，而且屬於不同的使用者群組。 |
-| [!DNL Sites] 技術使用者 | 本機 | `connectedassets-sites-techaccts` | - | 允許[!DNL Assets]部署以搜尋[!DNL Sites]網頁中資產的參考。 |
+| [!DNL Sites] 作者 | 本機 | <ul><li>`Authors` (在遠端DAM上具有讀取存取權，並在本機上具有作者存取權 [!DNL Sites]) </li> <li>`dam-users` 本地 [!DNL Sites]</li></ul> | `ksaner` | 一般使用者為 [!DNL Sites] 使用此整合來改善其內容速度的作者。 作者可以使用 [!UICONTROL 內容尋找器] 以及在本機網頁中使用所需的影像。 已採用 `ksaner` DAM 使用者的認證。 |
+| [!DNL Assets] 管理員 | 遠端 | [!DNL Experience Manager] `administrators` | `admin` 遠端 [!DNL Experience Manager] | 設定跨原始資源共用 (CORS)。 |
+| DAM 使用者 | 遠端 | `Authors` | `ksaner` 遠端 [!DNL Experience Manager] | 在遠端上撰寫角色 [!DNL Experience Manager] 部署。 使用 [!UICONTROL 內容尋找器]. |
+| DAM 經銷商 (技術使用者) | 遠端 | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` 遠端 [!DNL Experience Manager] | 遠程部署上存在的此用戶由 [!DNL Experience Manager] 本地伺服器(不是 [!DNL Sites] 作者角色)，代表 [!DNL Sites] 作者。 此角色與上述的兩個 `ksaner` 角色不一樣，而且屬於不同的使用者群組。 |
+| [!DNL Sites] 技術使用者 | 本機 | `connectedassets-sites-techaccts` | - | 允許 [!DNL Assets] 部署以搜尋中資產的參考 [!DNL Sites] 網頁。 |
 
-## 配置[!DNL Sites]和[!DNL Assets]部署之間的連接 {#configure-a-connection-between-sites-and-assets-deployments}
+### 連線資產架構 {#connected-assets-architecture}
 
-[!DNL Experience Manager]管理員可以建立此整合。 建立後，需要的使用權限會透過使用者群組建立。 在[!DNL Sites]部署和DAM部署中定義使用者群組。
+Experience Manager可讓您將遠端DAM部署連結為多個Experience Manager Sites部署，作為來源。 您最多可以將四個Sites部署連結至來源遠端DAM。 不過，您只能將Sites部署與一個遠端DAM部署連線。
 
-要配置「已連接資產」和本地[!DNL Sites]連接，請執行以下步驟：
+下列圖表說明了支援的方案：
 
-1. 訪問現有[!DNL Sites]部署。 此[!DNL Sites]部署用於網頁編寫，如`https://[sites_servername]:port`。 當頁面編寫發生在[!DNL Sites]部署時，從頁面編寫的角度，我們將[!DNL Sites]部署稱為本機。
+![連線資產架構](assets/connected-assets-architecture.png)
 
-1. 訪問現有[!DNL Assets]部署。 此[!DNL Assets]部署用於管理數位資產，例如`https://[assets_servername]:port`。
+下圖說明不支援的案例：
 
-1. 確保[!DNL Sites]部署和AMS上的[!DNL Assets]部署上存在具有適當範圍的用戶和角色。 在[!DNL Assets]部署上建立技術用戶，並將其添加到[涉及的用戶和組](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved)中提及的用戶組。
+![連線資產架構](assets/connected-assets-architecture-unsupported.png)
 
-1. 在`https://[sites_servername]:port`訪問本地[!DNL Sites]部署。 按一下&#x200B;**[!UICONTROL 「工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 連線資產設定」]**，並提供下列各值：
+## 配置連接 [!DNL Sites] 和 [!DNL Assets] 部署 {#configure-a-connection-between-sites-and-assets-deployments}
 
-   1. 配置的&#x200B;**[!UICONTROL Title]**。
-   1. **[!UICONTROL 遠端]** DAM URL是格式 [!DNL Assets] 中位置的URL  `https://[assets_servername]:[port]`。
+安 [!DNL Experience Manager] 管理員可以建立此整合。 建立後，需要的使用權限會透過使用者群組建立。 使用者群組定義於 [!DNL Sites] 部署及部署DAM。
+
+設定連線資產和本機 [!DNL Sites] 連接，請遵循下列步驟：
+
+1. 存取現有 [!DNL Sites] 部署。 此 [!DNL Sites] 部署用於網頁編寫，例如 `https://[sites_servername]:port`. 當頁面編寫發生在 [!DNL Sites] 部署，我們呼叫 [!DNL Sites] 從頁面製作的角度，以本機部署。
+
+1. 存取現有 [!DNL Assets] 部署。 此 [!DNL Assets] 部署用於管理數位資產，例如 `https://[assets_servername]:port`.
+
+1. 請確定 [!DNL Sites] 部署和 [!DNL Assets] 在AMS上部署。 建立技術使用者 [!DNL Assets] 部署，並新增至 [相關的使用者和群組](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
+
+1. 存取本機 [!DNL Sites] 部署 `https://[sites_servername]:port`. 按一下&#x200B;**[!UICONTROL 「工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 連線資產設定」]**，並提供下列各值：
+
+   1. A **[!UICONTROL 標題]** 的下界。
+   1. **[!UICONTROL 遠端DAM URL]** 是 [!DNL Assets] 格式中的位置 `https://[assets_servername]:[port]`.
    1. DAM 經銷商 (技術使用者) 的認證。
-   1. 在&#x200B;**[!UICONTROL 掛接點]**&#x200B;欄位中，輸入[!DNL Experience Manager]擷取資產的本機[!DNL Experience Manager]路徑。 例如，`connectedassets` 資料夾。從DAM擷取的資產會儲存在[!DNL Sites]部署的此資料夾中。
-   1. **[!UICONTROL 本機網]** 站URL是部署的 [!DNL Sites] 位置。[!DNL Assets] 部署會使用此值來維護此部署所擷取之數位資產的 [!DNL Sites] 參考。
-   1. [!DNL Sites]技術用戶的憑據。
-   1. **[!UICONTROL 原始二進位傳輸最佳化臨界值]**&#x200B;欄位值會指定原始資產（包括轉譯）是否同步傳輸。 檔案大小較小的資產可以輕鬆擷取，而檔案大小相對較大的資產最好以非同步方式同步。 值取決於您的網路功能。
+   1. 在 **[!UICONTROL 掛接點]** 欄位，輸入本地 [!DNL Experience Manager] 路徑的位置 [!DNL Experience Manager] 擷取資產。 例如，`connectedassets` 資料夾。從DAM擷取的資產會儲存在 [!DNL Sites] 部署。
+   1. **[!UICONTROL 本機網站URL]** 是 [!DNL Sites] 部署。 [!DNL Assets] 部署會使用此值來維護此擷取的數位資產的參考 [!DNL Sites] 部署。
+   1. 憑據 [!DNL Sites] 技術使用者。
+   1. 的值 **[!UICONTROL 原始二進位傳輸優化閾值]** 欄位會指定原始資產（包括轉譯）是否同步傳輸。 檔案大小較小的資產可以輕鬆擷取，而檔案大小相對較大的資產最好以非同步方式同步。 值取決於您的網路功能。
    1. 如果您是使用資料存放區來儲存資產，且「資料存放區」是兩個 部署之間的共用儲存空間，請選取&#x200B;**[!UICONTROL 「與連線資產共用的資料存放區」]**。在此情況下，臨界值限制並不重要，因為資料存放區上有實際的資產二進位檔，且不會傳輸。
 
    ![連線資產功能的典型設定](assets/connected-assets-typical-config.png)
 
    *圖：「連線資產」功能的一般設定。*
 
-1. 部署[!DNL Assets]上的現有數位資產已處理且會產生轉譯。 這些轉譯會使用此功能擷取，因此不需要重新產生轉譯。 停用工作流程啟動器以防止重新產生轉譯。 調整([!DNL Sites])部署上的啟動器配置，以排除`connectedassets`資料夾（資產會擷取在此資料夾中）。
+1. 上的現有數位資產 [!DNL Assets] 已處理部署並產生轉譯。 這些轉譯會使用此功能擷取，因此不需要重新產生轉譯。 停用工作流程啟動器以防止重新產生轉譯。 調整([!DNL Sites])要排除的部署 `connectedassets` 資料夾（資產會擷取至此資料夾中）。
 
-   1. 在[!DNL Sites]部署中，按一下「**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 啟動器]**」。
+   1. 開啟 [!DNL Sites] 部署，按一下 **[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 啟動器]**.
 
    1. 搜尋將 **[!UICONTROL DAM 更新資產]**&#x200B;和 **[!UICONTROL DAM 中繼資料回寫]**&#x200B;設為工作流程的啟動器。
 
    1. 選取工作流程啟動器，然後按一下動作列上的&#x200B;**[!UICONTROL 「屬性」]**。
 
-   1. 在[!UICONTROL 屬性]精靈中，將&#x200B;**[!UICONTROL 路徑]**&#x200B;欄位變更為下列對應，以更新其規則運算式以排除掛接點&#x200B;**[!UICONTROL connectedassets]**。
+   1. 在 [!UICONTROL 屬性] 嚮導，更改 **[!UICONTROL 路徑]** 欄位，作為下列對應以更新其規則運算式以排除掛接點 **[!UICONTROL connectedassets]**.
 
    | 變更前 | 變更後 |
    | ------ | ------------ |
@@ -103,35 +115,35 @@ ht-degree: 26%
 
    >[!NOTE]
    >
-   >作者擷取資產時，會擷取遠端 部署上可用的所有轉譯項目。若要針對所擷取的資產建立更多轉譯項目，請略過此設定步驟。「[!UICONTROL  DAM更新資產]」工作流程會隨即觸發，並建立更多轉譯項目。 這些轉譯僅可在本機[!DNL Sites]部署中使用，不可在遠端DAM部署中使用。
+   >作者擷取資產時，會擷取遠端 部署上可用的所有轉譯項目。若要針對所擷取的資產建立更多轉譯項目，請略過此設定步驟。此 [!UICONTROL DAM更新資產] 工作流程會觸發，並建立更多轉譯。 這些轉譯僅可在本機 [!DNL Sites] 部署，而非遠端DAM部署。
 
-1. 在[!DNL Assets]部署的CORS設定中，將[!DNL Sites]部署新增為允許的來源。 如需詳細資訊，請參閱[了解CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)。
+1. 新增 [!DNL Sites] 部署為上CORS設定中允許的來源 [!DNL Assets] 部署。 如需詳細資訊，請參閱 [了解CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
 
-1. 配置[相同網站Cookie支援](/help/security/same-site-cookie-support.md)。
+1. 設定 [相同網站Cookie支援](/help/security/same-site-cookie-support.md).
 
-您可以檢查已配置的[!DNL Sites]部署和[!DNL Assets]部署之間的連接。
+您可以檢查已配置 [!DNL Sites] 部署和 [!DNL Assets] 部署。
 
-![已連接資產的連接測 [!DNL Sites]](assets/connected-assets-multiple-config.png)
-*試圖：已設定連線資產的連線測試 [!DNL Sites]。*
+![已設定連線資產的連線測試 [!DNL Sites]](assets/connected-assets-multiple-config.png)
+*圖：已設定連線資產的連線測試 [!DNL Sites].*
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
-## 配置[!DNL Sites]和[!DNL Dynamic Media]部署之間的連接 {#sites-dynamic-media-connected-assets}
+## 配置連接 [!DNL Sites] 和 [!DNL Dynamic Media] 部署 {#sites-dynamic-media-connected-assets}
 
-您可以配置[!DNL Sites]部署和[!DNL Dynamic Media]部署之間的連接，使網頁作者可以在其網頁中使用[!DNL Dynamic Media]映像。 編寫網頁時，使用遠端資產和遠端[!DNL Dynamic Media]部署的體驗維持不變。 這可讓您透過「連線資產」功能（例如智慧型裁切和影像預設集）運用[!DNL Dynamic Media]功能。
+您可以在 [!DNL Sites] 部署和 [!DNL Dynamic Media] 允許網頁作者使用的部署 [!DNL Dynamic Media] 影像。 製作網頁時，您可以體驗使用遠端資產和遠端 [!DNL Dynamic Media] 部署仍保持不變。 這可讓您運用 [!DNL Dynamic Media] 功能，例如智慧型裁切和影像預設集。
 
 要配置連接，請執行以下步驟：
 
-1. 如上所述建立連線資產設定，除了設定功能外，請選取「**[!UICONTROL 為Dynamic Media連線資產擷取原始轉譯]**」選項。
+1. 按上述方式建立連線資產設定，但設定功能時除外，請選取 **[!UICONTROL 擷取Dynamic Media Connected Assets的原始轉譯]** 選項。
 
-1. 在本地[!DNL Sites]和遠程[!DNL Assets]部署上配置[!DNL Dynamic Media]。 請依照[configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)的指示操作。
+1. 設定 [!DNL Dynamic Media] 本地 [!DNL Sites] 和遠程 [!DNL Assets] 部署。 請依照 [設定 [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * 在所有設定中使用相同的公司名稱。
-   * 在本地[!DNL Sites]上，在[!UICONTROL Dynamic Media同步模式]中，選擇&#x200B;**[!UICONTROL 預設情況下禁用]**。 [!DNL Sites]部署只需要對[!DNL Dynamic Media]帳戶的只讀訪問。
-   * 在本機[!DNL Sites]上，在&#x200B;**[!UICONTROL 發佈資產]**&#x200B;選項中，選取&#x200B;**[!UICONTROL 選擇性發佈]**。 請勿選取&#x200B;**[!UICONTROL 同步所有內容]**。
-   * 在遠程[!DNL Assets]部署中，在[!UICONTROL Dynamic Media同步模式]中，選擇&#x200B;**[!UICONTROL 預設啟用]**。
+   * 本地 [!DNL Sites]，在 [!UICONTROL Dynamic Media同步模式]，選取 **[!UICONTROL 預設為停用]**. 此 [!DNL Sites] 部署只需要對 [!DNL Dynamic Media] 帳戶。
+   * 本地 [!DNL Sites]，在 **[!UICONTROL 發佈資產]** 選項，選擇 **[!UICONTROL 選擇性發佈]**. 不選擇 **[!UICONTROL 同步所有內容]**.
+   * 在遠程 [!DNL Assets] 部署，在 [!UICONTROL Dynamic Media同步模式]，選取 **[!UICONTROL 預設為啟用]**.
 
-1. 啟用影像核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)中的[[!DNL Dynamic Media] 支援。 當本機[!DNL Sites]部署的網頁中的作者使用[!DNL Dynamic Media]影像時，此功能可讓預設的[影像元件](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html)顯示[!DNL Dynamic Media]影像。
+1. 啟用 [[!DNL Dynamic Media] 影像核心元件支援](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). 此功能會啟用預設值 [影像元件](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 顯示 [!DNL Dynamic Media] 影像 [!DNL Dynamic Media] 作者在本機網頁中使用影像 [!DNL Sites] 部署。
 
 ## 使用遠端資產 {#use-remote-assets}
 
@@ -139,112 +151,132 @@ ht-degree: 26%
 
 作者可在單一網頁中使用本機DAM和遠端DAM部署上可用的資產。 使用「內容尋找器」，以便在搜尋本機 DAM 和搜尋遠端 DAM 之間切換。
 
-系統只會擷取具有完全對應標籤的遠端資產標籤，以及本機[!DNL Sites]部署中可用的相同分類階層。 其他所有標籤會一概捨棄。作者可以使用遠端[!DNL Experience Manager]部署上的所有標籤來搜尋遠端資產，因為這提供全文搜尋功能。
+系統只會擷取具有完全對應標籤的遠端資產標籤，以及本機上可用的相同分類階層 [!DNL Sites] 部署。 其他所有標籤會一概捨棄。作者可以使用遠端上的所有標籤來搜尋遠端資產 [!DNL Experience Manager] 部署，因為它提供全文搜索。
 
 ### 逐步使用說明 {#walk-through-of-usage}
 
 不妨使用上述設定試著編寫體驗，以了解功能的運作方式。在遠端 DAM 部署中使用您所選擇的文件或影像。
 
-1. 從[!DNL Experience Manager]工作區存取&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Files]**，導覽至遠端部署的[!DNL Assets]介面。 或者，您也可以在瀏覽器中存取 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上傳您選擇的資產。
+1. 導覽至 [!DNL Assets] 通過訪問 **[!UICONTROL 資產]** > **[!UICONTROL 檔案]** 從 [!DNL Experience Manager] 工作區。 或者，您也可以在瀏覽器中存取 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上傳您選擇的資產。
 
-1. 在[!DNL Sites]部署中，在右上角的配置式激活器中，按一下「模擬為&#x200B;]**」。**[!UICONTROL &#x200B;輸入 `ksaner` 作為使用者名稱，選取畫面上提供的選項，然後按一下&#x200B;**[!UICONTROL 「確定」]**。
+1. 在 [!DNL Sites] 部署，在右上角的配置檔案激活器中，按一下 **[!UICONTROL 模擬為]**. 輸入 `ksaner` 作為使用者名稱，選取畫面上提供的選項，然後按一下&#x200B;**[!UICONTROL 「確定」]**。
 
-1. 在&#x200B;**[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**&#x200B;開啟`We.Retail`網站頁面。 編輯頁面。或者，您也可以在瀏覽器中存取 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html`，進而編輯頁面。
+1. 開啟 `We.Retail` 網站頁面 **[!UICONTROL 網站]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. 編輯頁面。或者，您也可以在瀏覽器中存取 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html`，進而編輯頁面。
 
    按一下頁面左上角的&#x200B;**[!UICONTROL 「切換側面板」]**。
 
-1. 開啟[!UICONTROL Assets]標籤，然後按一下&#x200B;**[!UICONTROL 登入連線資產]**。
+1. 開啟 [!UICONTROL 資產] 按一下 **[!UICONTROL 登入連線資產]**.
 
-1. 提供憑證 `ksaner` 作為使用者名稱，且以 `password` 作為密碼。此使用者對這兩種[!DNL Experience Manager]部署都有編寫權限。
+1. 提供憑證 `ksaner` 作為使用者名稱，且以 `password` 作為密碼。此使用者對 [!DNL Experience Manager] 部署。
 
 1. 搜尋您新增至 DAM 的資產。遠端資產會顯示於左側面板。篩選影像或文件，並進一步篩選支援的文件類型。拖曳 `Image` 元件上的影像和 `Download` 元件上的文件。
 
-   本機[!DNL Sites]部署上，擷取的資產為唯讀狀態。 您仍可以使用[!DNL Sites]元件提供的選項來編輯擷取的資產。 由元件進行編輯屬於非破壞性動作。
+   本機上唯讀擷取的資產 [!DNL Sites] 部署。 您仍可使用 [!DNL Sites] 元件，以編輯擷取的資產。 由元件進行編輯屬於非破壞性動作。
 
    ![在遠端 DAM 上搜尋資產時，篩選文件類型和影像的選項](assets/filetypes_filter_connected_assets.png)
 
    *圖：在遠端 DAM 上搜尋資產時，篩選文件類型和影像的選項.*
 
-1. 如果資產是以非同步方式擷取，一有擷取任務執行失敗，網站作者就會收到通知。在編寫時或甚至在編寫後，作者都可以在[非同步作業](/help/operations/asynchronous-jobs.md)使用者介面中查看擷取任務和錯誤的詳細資訊。
+1. 如果資產是以非同步方式擷取，一有擷取任務執行失敗，網站作者就會收到通知。編寫時或甚至在完成編寫後，作者都能在 [非同步作業](/help/operations/asynchronous-jobs.md) 使用者介面。
 
    ![背景中非同步擷取資產作業的相關通知。](assets/assets_async_transfer_fails.png)
 
    *圖：背景中非同步擷取資產作業的相關通知。*
 
-1. 發佈頁面時，[!DNL Experience Manager]會顯示頁面上使用的完整資產清單。 請確認發佈時，系統已成功擷取遠端資產。若要檢查所擷取資產的每個狀態，請參閱[非同步作業](/help/operations/asynchronous-jobs.md)使用者介面。
+1. 發佈頁面時， [!DNL Experience Manager] 顯示頁面上使用的完整資產清單。 請確認發佈時，系統已成功擷取遠端資產。若要檢查所擷取資產的每個狀態，請參閱 [非同步作業](/help/operations/asynchronous-jobs.md) 使用者介面。
 
    >[!NOTE]
    >
-   >即使有一或多個遠端資產未成功擷取，頁面還是會照常發佈。使用遠端資產的元件會以空白形式發佈。[!DNL Experience Manager]通知區域會針對非同步作業頁面中顯示的錯誤顯示通知。
+   >即使有一或多個遠端資產未成功擷取，頁面還是會照常發佈。使用遠端資產的元件會以空白形式發佈。此 [!DNL Experience Manager] 通知區域會顯示非同步作業頁面中顯示錯誤的通知。
 
 >[!CAUTION]
 >
->擷取的遠端資產一旦用於網頁中，只要任何人有權存取本機資料夾，都可搜尋和使用。 擷取的資產會儲存在本機資料夾中（上述逐步說明中的`connectedassets`）。 這些資產也可供搜尋，並可透過[!UICONTROL 「內容尋找器」]顯示於本機存放庫。
+>擷取的遠端資產一旦用於網頁中，只要任何人有權存取本機資料夾，都可搜尋和使用。 擷取的資產會儲存在本機資料夾中(`connectedassets` 中)。 這些資產也可供搜尋，並可透過[!UICONTROL 「內容尋找器」]顯示於本機存放庫。
 
 擷取的資產可設為其他任何本機資產以供使用，只是相關聯的中繼資料無法編輯。
 
 ### 檢查跨網頁的資產使用情形 {#asset-usage-references}
 
-[!DNL Experience Manager] 可讓DAM使用者檢查資產的所有參考。它有助於了解及管理遠端[!DNL Sites]和複合資產中資產的使用情形。 [!DNL Experience Manager Sites]部署的許多網頁作者都可以在不同網頁的遠端DAM上使用資產。 為了簡化資產管理，避免導致參考損毀，DAM使用者必須檢查本機和遠端網頁上資產的使用情形。 資產的[!UICONTROL 屬性]頁面中的[!UICONTROL 參考]標籤會列出資產的本機和遠端參考。
+[!DNL Experience Manager] 可讓DAM使用者檢查資產的所有參考。 它有助於了解及管理資產在遠端的使用情形 [!DNL Sites] 和複合資產。 許多網頁的作者 [!DNL Experience Manager Sites] 部署可在不同網頁的遠端DAM上使用資產。 為了簡化資產管理，避免導致參考損毀，DAM使用者必須檢查本機和遠端網頁上資產的使用情形。 此 [!UICONTROL 參考] 標籤 [!UICONTROL 屬性] 頁面列出資產的本機和遠端參考。
 
-要查看和管理[!DNL Assets]部署上的引用，請執行以下步驟：
+若要在 [!DNL Assets] 部署，請遵循下列步驟：
 
-1. 在「[!DNL Assets]控制台」中選擇資產，然後從工具欄按一下「**[!UICONTROL 屬性]**」。
-1. 按一下「**[!UICONTROL 參考]**」標籤。 請參閱&#x200B;**[!UICONTROL 本機參考]** ，以了解在[!DNL Assets]部署上使用資產的資訊。 請參閱**[!UICONTROL 遠端參考]以取得[!DNL Sites]部署上資產的使用，該部署是使用連線資產功能擷取資產。
+1. 在中選取資產 [!DNL Assets] 主控台並按一下 **[!UICONTROL 屬性]** 的上界。
+1. 按一下 **[!UICONTROL 參考]** 標籤。 請參閱 **[!UICONTROL 本地引用]** ，以在 [!DNL Assets] 部署。 參見**[!UICONTROL 遠端參考] 以便在 [!DNL Sites] 使用「連線資產」功能擷取資產的部署。
 
    ![資產屬性頁面中的遠端參考](assets/connected-assets-remote-reference.png)
 
-1. [!DNL Sites]頁面的參考會顯示每個本機[!DNL Sites]的參考總數。 查找所有參照並顯示參照總數可能需要一些時間。
+1. 的參考 [!DNL Sites] 頁面會顯示每個本機的參考總數 [!DNL Sites]. 查找所有參照並顯示參照總數可能需要一些時間。
 1. 參考清單是互動式的，DAM使用者可以按一下參考以開啟參考頁面。 如果由於某些原因無法擷取遠端參考，則會顯示通知，通知使用者失敗。
 1. 使用者可以移動或刪除資產。 移動或刪除資產時，所有選取資產/資料夾的參考總數會顯示在警告對話方塊中。 刪除尚未顯示參考的資產時，會顯示警告對話方塊。
 
    ![強制刪除警告](assets/delete-referenced-asset.png)
 
+### 在遠端DAM中管理資產更新 {#handling-updates-to-remote-assets}
+
+>[!NOTE]
+>
+>此功能可在發行前管道使用。 請參閱 [發行前管道檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 以取得為您的環境啟用功能的相關資訊。
+
+之後 [配置連接](#configure-a-connection-between-sites-and-assets-deployments) 在遠端DAM和Sites部署之間，遠端DAM上的資產可在Sites部署中使用。 然後，您就可以對遠端DAM資產或資料夾執行更新、刪除、重新命名和移動作業。 Sites部署會自動提供延遲的更新。 此外，如果本機Experience Manager Sites頁面上使用遠端DAM上的資產，遠端DAM上資產的更新會顯示在「網站」頁面上。
+
+將資產從一個位置移至另一個位置時，請確定您 [調整參照](manage-digital-assets.md) 讓資產顯示在「網站」頁面上。 如果您將資產移至無法從本機Sites部署存取的位置，則資產無法顯示在Sites部署上。
+
+您也可以更新遠端DAM上資產的中繼資料屬性，而變更可在本機Sites部署中使用。
+
+Sites作者可以在Sites部署上預覽可用的更新，然後重新發佈變更，以便在AEM發佈例項上使用。
+
+Experience Manager顯示 `expired` 「遠端資產內容尋找器」中資產的狀態視覺指標，可讓網站作者停止在「網站」頁面上使用資產。 如果您使用資產搭配 `expired` 狀態時，資產無法顯示在Experience Manager發佈例項上。
+
+>[!NOTE]
+>
+>只有在遠端DAM和Sites部署處於Experience Manageras a Cloud Service狀態時，遠端DAM中的資產更新才可供Sites部署使用。
+
 ## 限制和最佳實務 {#tip-and-limitations}
 
-* 若要取得資產使用情形的相關分析，請在[!DNL Sites]例項上設定[ Assets Insight](/help/assets/assets-insights.md)功能。
+* 若要取得資產使用情況的相關分析，請設定 [Assets Insight](/help/assets/assets-insights.md) 功能 [!DNL Sites] 例項。
 
 ### 權限與資產管理 {#permissions-and-managing-assets}
 
 * 本機資產不會與遠端部署上的原始資產同步。對 DAM 部署所做的任何編輯、刪除或撤銷權限操作都不會傳播到下游。
 * 本機資產為唯讀副本。[!DNL Experience Manager] 元件會對資產執行非破壞性的編輯作業。不允許執行其他編輯作業。
 * 本機擷取的資產僅適用於編寫用途。無法套用資產更新工作流程，也無法編輯中繼資料。
-* 在[!DNL Sites]頁面中使用[!DNL Dynamic Media]時，原始資產不會擷取並儲存在本機部署上。 `dam:Asset`部署生成的[!DNL Assets]節點、元資料和格式副本都在[!DNL Sites]部署上獲取。
-* 僅支援影像和列出的文件格式。[!DNL Content Fragments] 不 [!DNL Experience Fragments] 支援和。
-* [!DNL Experience Manager] 不會擷取中繼資料結構。這表示所有擷取的中繼資料都可能無法顯示。 如果在[!DNL Sites]部署上單獨更新架構，則會顯示所有元資料屬性。
-* 所有[!DNL Sites]作者都對擷取的復本擁有讀取權限，即使作者無法存取遠端DAM部署亦然。
+* 使用時 [!DNL Dynamic Media] in [!DNL Sites] 頁面不會擷取原始資產並儲存在本機部署上。 此 `dam:Asset` 節點、中繼資料和轉譯 [!DNL Assets] 部署都會擷取 [!DNL Sites] 部署。
+* 僅支援影像和列出的文件格式。[!DNL Content Fragments] 和 [!DNL Experience Fragments] 不支援。
+* [!DNL Experience Manager] 不會擷取中繼資料結構。 這表示所有擷取的中繼資料都可能無法顯示。 若結構已在 [!DNL Sites] 部署後，將顯示所有元資料屬性。
+* 全部 [!DNL Sites] 即使作者無法存取遠端DAM部署，作者仍對擷取的復本擁有讀取權限。
 * 不提供 API 以支援自訂整合。
 * 此功能可支援順暢的搜尋作業及使用遠端資產。若要在本機部署中一次提供多個遠端資產，不妨考慮移轉資產。
-* 您無法在[!UICONTROL 頁面屬性]使用者介面上將遠端資產設為頁面縮圖。 您可以按一下「[!UICONTROL 選擇影像]」，從[!UICONTROL 縮圖]的用戶介面設定[!UICONTROL 頁面屬性]中的網頁縮圖。
+* 您無法將遠端資產當做頁面上的縮圖 [!UICONTROL 頁面屬性] 使用者介面。 您可以在 [!UICONTROL 頁面屬性] 使用者介面 [!UICONTROL 縮圖] 按一下 [!UICONTROL 選擇影像].
 
 ### 設定和授權 {#setup-licensing}
 
-* [!DNL Assets] 支援在 [!DNL Adobe Managed Services] 上部署。
-* [!DNL Sites] 一次可連線至 [!DNL Assets] 單一存放庫。
-* 需要[!DNL Assets]的許可證才能作為遠程儲存庫使用。
-* 需要[!DNL Sites]的一個或多個許可證作為本地編寫部署。
+* [!DNL Assets] 部署 [!DNL Adobe Managed Services] 支援。
+* [!DNL Sites] 可以連接到單個 [!DNL Assets] 儲存庫。
+* 許可證 [!DNL Assets] 需要遠程儲存庫。
+* 一或多個 [!DNL Sites] 需要部署本機編寫功能。
 
 ### 使用狀況 {#usage}
 
 * 使用者可在編寫時搜尋遠端資產，並拖曳到本機頁面上。 不支援其他功能。
-* 擷取作業會於 5 秒後逾時。如果有網路或其他方面的問題，作者擷取資產時就可能遇到問題。作者可從[!UICONTROL Content Finder]拖曳遠端資產至[!UICONTROL Page Editor]，以重新嘗試。
+* 擷取作業會於 5 秒後逾時。如果有網路或其他方面的問題，作者擷取資產時就可能遇到問題。作者可從 [!UICONTROL 內容尋找器] to [!UICONTROL 頁面編輯器].
 * 您可以對擷取的資產執行非破壞性的簡單編輯作業，也能執行透過 `Image` 元件支援的編輯工作。資產僅供唯讀。
 * 重新擷取資產的唯一方法是將其拖曳至頁面上。 沒有API支援或其他方法可重新擷取資產以進行更新。
-* 如果從DAM終止服務資產，這些資產會繼續在[!DNL Sites]頁面上使用。
-* 資產的遠端參考項目會以非同步方式擷取。 參考和總計數不是即時的，如果[!DNL Sites]作者在DAM使用者檢視參考時使用資產，則可能會有某些差異。 DAM使用者可以重新整理頁面，並在幾分鐘內重試以取得總計數。
+* 如果從DAM終止服務資產，這些資產仍會繼續在上使用 [!DNL Sites] 頁面。
+* 資產的遠端參考項目會以非同步方式擷取。 參考和總計並非即時，若 [!DNL Sites] 當DAM使用者檢視參考時，作者會使用資產。 DAM使用者可以重新整理頁面，並在幾分鐘內重試以取得總計數。
 
 ## 疑難排解問題 {#troubleshoot}
 
 若要疑難排解常見錯誤，請遵循下列步驟：
 
-* 如果您無法從[!UICONTROL 內容尋找器]搜尋遠端資產，請確定已具備必要的角色和權限。
+* 如果您無法從 [!UICONTROL 內容尋找器]，然後確定已具備必要的角色和權限。
 
 * 從遠端DAM擷取的資產可能因一或多個原因無法發佈在網頁上。 遠程伺服器上不存在它，缺少獲取它的適當權限，或者網路故障可能是原因。 確認資產未從遠端DAM中移除。 請確定已具備適當權限，並符合必要條件。 重試將資產新增至頁面並重新發佈。 檢查[非同步工作清單](/help/operations/asynchronous-jobs.md)，找出資產擷取作業的錯誤。
 
-* 如果您無法從本機[!DNL Sites]部署存取遠端DAM部署，請確定允許跨網站Cookie，並設定[相同網站Cookie支援](/help/security/same-site-cookie-support.md)。 如果跨網站Cookie遭到封鎖，[!DNL Experience Manager]的部署可能無法驗證。 例如，在無痕模式中， [!DNL Google Chrome]可能會封鎖第三方Cookie。 若要允許[!DNL Chrome]瀏覽器中的Cookie，請按一下位址列中的「眼睛」圖示，導覽至&#x200B;**網站無法運作** > **已封鎖**，選取遠端DAM URL，並允許登入代號Cookie。 或者，請參閱[如何啟用第三方Cookie](https://support.google.com/chrome/answer/95647)。
+* 如果您無法從本機存取遠端DAM部署 [!DNL Sites] 部署，確保允許跨網站cookie，並 [相同網站Cookie支援](/help/security/same-site-cookie-support.md) 已設定。 如果跨網站Cookie被封鎖， [!DNL Experience Manager] 不能驗證。 例如， [!DNL Google Chrome] 在無痕模式中，可能會封鎖第三方Cookie。 若要在 [!DNL Chrome] 瀏覽器，按一下位址列中的「眼睛」圖示，導覽至 **網站無法運作** > **已阻止**，選取「遠端DAM URL」 ，並允許登入代號Cookie。 或者，請參見 [如何啟用協力廠商cookie](https://support.google.com/chrome/answer/95647).
 
    ![Chrome瀏覽器中無痕模式出現Cookie錯誤](assets/chrome-cookies-incognito-dialog.png)
 
-* 如果未檢索遠程引用並導致錯誤消息，請檢查[!DNL Sites]部署是否可用，並檢查網路連接問題。 稍後重試以檢查。 [!DNL Assets] 部署嘗試兩次建立與部署 [!DNL Sites] 的連接，然後報告失敗。
+* 如果未檢索遠程引用並導致錯誤消息，請檢查 [!DNL Sites] 部署可用，並檢查網路連線問題。 稍後重試以檢查。 [!DNL Assets] 部署嘗試兩次建立連接 [!DNL Sites] 部署後報告失敗。
 
    ![無法擷取資產遠端參考](assets/reference-report-failure.png)
