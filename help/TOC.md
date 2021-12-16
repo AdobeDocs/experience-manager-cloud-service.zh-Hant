@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: aaeecc897157b08686a741ed7c2143a443fb2633
+source-git-commit: dd127862d65ed2f6a2dc2f93f9668552c577181c
 workflow-type: tm+mt
-source-wordcount: '3357'
+source-wordcount: '3362'
 ht-degree: 32%
 
 ---
@@ -292,6 +292,7 @@ ht-degree: 32%
       + [使用MSM重複使用資產](/help/assets/reuse-assets-using-msm.md)
       + [下載資產](/help/assets/download-assets-from-aem.md)
       + [要編輯的簽入和簽出資產](/help/assets/check-out-and-submit-assets.md)
+      + [建立和共用私人資料夾](/help/assets/private-folder.md)
       + [Digital Rights Management資產](/help/assets/drm.md)
       + [浮水印資產](/help/assets/watermark-assets.md)
       + [使用 [!DNL Creative Cloud] API](/help/assets/cc-api-integration.md)
