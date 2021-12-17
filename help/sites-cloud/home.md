@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service Sites
 description: Adobe Experience Manager as a Cloud Service Sites 自助資源與文件連結
 landing-page-description: 了解如何使用及管理AEM Sites as a Cloud Service。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 76%
@@ -36,7 +36,7 @@ ht-degree: 76%
 | [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |
 | [入門](/help/onboarding/home.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何使用及管理 Experience Manager Assets as a Cloud Service。 |
-| [轉移至 AEM as a Cloud Service ](/help/move-to-cloud-service/home.md) | 了解轉換至雲端服務的過程。 |
+| [轉移至 AEM as a Cloud Service ](/help/journey-migration/getting-started.md) | 了解轉換至雲端服務的過程。 |
 | [實作使用手冊](/help/implementing/home.md) | 透過探索這些開發和部署主題，了解如何使用AEM強大功能來建立和自訂體驗。 |
 | [無頭式開發人員歷程](/help/journey-headless/developer/overview.md) | 探索此引導式歷程，了解AEM強大且靈活的無頭式功能，為您的第一個無頭式專案做好準備。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |

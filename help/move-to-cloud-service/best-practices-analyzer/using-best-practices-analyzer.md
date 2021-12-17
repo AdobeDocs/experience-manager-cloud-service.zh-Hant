@@ -2,7 +2,7 @@
 title: 使用Best Practices Analyzer
 description: 使用Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '2470'
 ht-degree: 41%
@@ -15,7 +15,7 @@ ht-degree: 41%
 >id="aemcloud_bpa_using"
 >title="使用Best Practices Analyzer"
 >abstract="檢閱使用Best Practices Analyzer（原稱為Cloud Readiness Analyzer）的說明檔案以及產生的報表。 Best Practices Analyzer報表可用來取得對一般升級整備程度的高層了解。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 使用Best Practices Analyzer的重要考量 {#imp-considerations}
 
@@ -59,38 +59,38 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
 
 1. 選取Adobe Experience Manager並導覽至工具 — > **操作** -> **Best Practices Analyzer**.
 
-   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. 按一下 **產生報表** 以執行最佳實務分析器。
 
-   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. 當BPA產生報表時，您可以在畫面上看到工具所取得的進展。 它會顯示分析的項目數，也會顯示找到的結果數。
 
-   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
 
 1. 生成BPA報告後，它將以表格格式顯示結果的摘要和數目，按結果類型和重要性級別組織。 若要取得特定結果的詳細資訊，您可以按一下與表格中結果類型相對應的數字。
 
-   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
    上述動作會自動捲動至該結果在報表中的位置。
 
-   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
 
 1. 您可以選擇按一下 **匯出至CSV**，如下圖所示。
 
-   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
 您可以按一下，以強制BPA清除其快取並重新產生報表 **重新整理報表**.
 
-   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
 重新產生報表時，會以完成百分比顯示進度，如下圖所示。
 
-   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 
 
@@ -100,14 +100,14 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
 
 1. 按一下頁面左側的左側邊欄圖示。 這會顯示 **ACS公域篩選器**. 按一下 **ACS公域篩選器** 顯示互動式核取方塊，如下圖所示。
 
-   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
 只有當BPA偵測到ACS公域的使用時，左側邊欄圖示才會出現。
 
 1. 取消選中該框，以過濾與ACS公域相關的所有結果。 您應會看到 **篩選的結果計數** 如下圖所示。 以逗號分隔值(CSV)格式匯出時，篩選器也會套用至報表。
 
-   ![影像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
+   ![影像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
 不應忽視ACS公域的調查結果。 請參閱 [檔案](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以判斷與AEMas a Cloud Service的相容性。

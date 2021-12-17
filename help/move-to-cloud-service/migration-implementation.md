@@ -2,7 +2,7 @@
 title: 實作階段
 description: 實作階段
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 90%
@@ -30,7 +30,7 @@ Cloud Manager 可讓組織在雲端中自行管理 AEM。其內容包含持續�
 
 下圖將展示「執行」階段中的主要步驟：
 
-![影像](/help/move-to-cloud-service/assets/exec-image1.png)
+![影像](/help/journey-migration/assets/exec-image1.png)
 
 ## 內容轉移 {#content-transfer}
 
@@ -41,7 +41,7 @@ Cloud Manager 可讓組織在雲端中自行管理 AEM。其內容包含持續�
 >[!NOTE]
 >建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
 
-如需詳細資訊，請參考[內容轉移工具](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)。
+如需詳細資訊，請參考[內容轉移工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)。
 
 >[!IMPORTANT]
 >「內容轉移工具」的最低系統需求為 AEM 6.3 + 和 JAVA 8。如果您使用較舊版本的 AEM，您必須將內容存放庫升級至 AEM 6.5 才能使用「內容轉移工具」。
@@ -64,9 +64,9 @@ AEM Maven 專案必須進行某些變更，才能與 AEM as a Cloud Service 相�
 
 如果要加速某些程式碼重構任務，您可以使用下列工具：
 
-* [資產工作流程移轉](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
-* [Dispatcher 轉換工具](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-* [現代化工具](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
+* [資產工作流程移轉](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+* [Dispatcher 轉換工具](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
+* [現代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 
 建議您先在本機上重構並測試程式碼，然後再透過 Cloud Manager Git 推送至雲端服務環境。
 

@@ -2,14 +2,14 @@
 title: 合規性
 description: 本頁列出自助資源，提供有關Experience Manageras a Cloud Service合規性的資訊。
 landing-page-description: 如需AEM as a Cloud Service合規性的概觀，包括隱私權和協助工具，請從這裡開始。
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 68%
+ht-degree: 70%
 
 ---
 
-# AEMas a Cloud Service法規遵循 {#aem-compliance}
+# AEM as a Cloud Service 合規性 {#aem-compliance}
 
 本頁列出自助資源，提供有關Experience Manageras a Cloud Service合規性的資訊。
 
@@ -30,7 +30,7 @@ ht-degree: 68%
 | [入門](/help/onboarding/home.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何使用及管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何使用及管理 Experience Manager Assets as a Cloud Service。 |
-| [轉移至 AEM as a Cloud Service ](/help/move-to-cloud-service/home.md) | 了解轉換至雲端服務的過程。 |
+| [轉移至 AEM as a Cloud Service ](/help/journey-migration/getting-started.md) | 了解轉換至雲端服務的過程。 |
 | [實作使用手冊](/help/implementing/home.md) | 透過探索這些開發和部署主題，了解如何使用AEM強大功能來建立和自訂體驗。 |
 | [無頭式開發人員歷程](/help/journey-headless/developer/overview.md) | 探索此引導式歷程，了解AEM強大且靈活的無頭式功能，為您的第一個無頭式專案做好準備。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |

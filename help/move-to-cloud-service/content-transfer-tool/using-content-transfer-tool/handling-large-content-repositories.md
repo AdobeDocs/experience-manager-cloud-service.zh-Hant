@@ -2,7 +2,7 @@
 title: 處理大型內容存放庫
 description: 本節介紹如何處理大型內容儲存庫
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 6228e4072ad0042dae8ce415464c7bd5ed36612c
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 1%
@@ -70,14 +70,14 @@ ht-degree: 1%
 
 從Azure入口網站的容器屬性頁面，使用 **計算大小** 按鈕，確定容器中所有內容的大小。 例如：
 
-![影像](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
+![影像](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Amazon S3 Data Store {#amazon-data}
 
 您可以使用容器的「量度」標籤來判斷容器中所有內容的大小。 例如：
 
 
-![影像](/help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
+![影像](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)
 
 #### 檔案資料存放區 {#file-data-store-determine-size}
 
@@ -204,7 +204,7 @@ AzCopy會在後續運行時自動跳過在錯誤之前複製的任何Blob，而�
 為了在獲取過程中利用AzCopy，我們要求您使用至少2021.6.5561版的AEMas a Cloud Service版。
 
 從CTT UI開始擷取作者。 請參閱 [擷取程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) 以取得更多詳細資訊。
-AzCopy中的日誌條目將出現在獲取日誌中。 它們看起來會像這樣：
+AzCopy的日誌條目將出現在獲取日誌中。 它們看起來會像這樣：
 
 ```
 *************** Beginning AzCopy pre-copy phase ***************
@@ -243,4 +243,4 @@ Final Job Status: CompletedWithSkipped
 
 ## 下一步 {#whats-next}
 
-學習「處理大型內容存放庫」以大幅加快內容轉移活動的提取和擷取階段，以便將內容移至AEMas a Cloud Service後，您現在就可以了解「內容轉移工具」的提取程式。 請參閱 [在內容轉移工具中從來源擷取內容](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 了解如何從「內容轉移工具」中擷取您的移轉集。
+學習「處理大型內容存放庫」以大幅加快內容轉移活動的提取和擷取階段，以便將內容移至AEMas a Cloud Service後，您現在就可以了解「內容轉移工具」的提取程式。 請參閱 [在內容轉移工具中從來源擷取內容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 了解如何從「內容轉移工具」中擷取您的移轉集。

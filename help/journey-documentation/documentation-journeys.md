@@ -3,9 +3,9 @@ title: AEM檔案歷程
 description: 檔案歷程在AEM檔案中提供敘述性結構，將複雜和不同的功能結合在一起，以最佳實務方式解決業務目標。 歷程是以AEM初學者為核心而設計，會介紹概念和功能，以達成從A到Z的目標。
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: fee595892367448a95b7f26bb03713e1b6e43822
+source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1352'
 ht-degree: 1%
 
 ---
@@ -93,6 +93,6 @@ AEM檔案歷程的主要目標是協助剛接觸AEM的讀者了解系統中有�
 | [AEM入門歷程](/help/journey-onboarding/home.md) | 從這裡開始，利用新的AEMas a Cloud Service環境快速上手！ |
 | [AEM快速網站建立歷程](/help/journey-sites/quick-site/overview.md) | 從這裡開始，透過簡單易用的AEM快速網站建立工具進行引導式歷程，以簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂您的網站。 |
 | AEM Commerce Journey | 即將推出！ |
-| AEMaaCS移轉歷程 | 即將推出！ |
+| [AEMas a Cloud Service移轉歷程](/help/journey-migration/getting-started.md) | 請從這裡開始逐步了解如何從內部部署或AdobeManaged AEM安裝移轉至完全雲端式AEMas a Cloud Service，並了解其眾多優點。 |
 
 當新歷程可用時，請回查更多內容。
