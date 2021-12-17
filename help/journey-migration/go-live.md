@@ -1,9 +1,9 @@
 ---
 title: 上線
 description: 了解在程式碼和內容雲端準備就緒後，如何執行移轉
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+source-git-commit: fe0261fa9708b2250b6f5e4931100a9fc006e55d
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,6 @@ ht-degree: 0%
 * 根據您在克隆上執行的AEMas a Cloud Service階段遷移過程中獲得的經驗，從生產環境開始遷移：
    * 作者 — 作者
    * Publish-Publish
-
->[!NOTE]
->
->擷取期間會顯示AEMas a Cloud Service作者，但擷取期間會顯示as a Cloud Service發佈。
 
 * 驗證內嵌至AEMas a Cloud Service製作和發佈層級的內容。
 * 指示內容製作團隊在擷取完成前，避免在來源和目的地上移動內容
