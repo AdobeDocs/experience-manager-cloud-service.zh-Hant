@@ -3,9 +3,10 @@ title: 開發人員和部署經理的學習路徑
 description: 如果您是開發人員或部署管理員，請依照本頁面了解取得存取權後的後續步驟
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '607'
 ht-degree: 2%
 
 ---
@@ -26,8 +27,8 @@ ht-degree: 2%
 如果您正在閱讀本部分，則可能會將您分配給開發人員或部署經理產品配置檔案，並準備上線並繼續學習路徑。
 
 >[!NOTE]
->* 若您是&#x200B;*開發人員*，請先登入Cloud Manager，熟悉Git存取方式。
->* 作為&#x200B;*部署管理器*，您需要熟悉如何設定管道，甚至部署代碼。
+>* As a *開發人員*，您會想要登入Cloud Manager並熟悉存取Git的方式。
+>* As a *部署管理員*，請熟悉如何設定管道，甚至部署程式碼。
 
 
 ## 先決條件 {#prerequisites}
@@ -41,22 +42,26 @@ ht-degree: 2%
 ## 管理GitHub {#manage-git}
 
 您可以使用Cloud Manager UI中的自助服務Git帳戶管理來存取及管理您的Git存放庫。
-若要深入了解此主題，請參閱[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)。
+若要深入了解此主題，請參閱 [存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
 
 ## 設定管道 {#setup-pipeline}
 
 您可以從Cloud Manager UI設定生產或非生產管道。
-若要深入了解此主題，請參閱[設定CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)。
+若要深入了解此主題，請參閱 [設定CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## 下一步 {#whats-next}
 
-開發人員和部署經理現在已準備好熟悉如何以Cloud Service方式在AEM中開發程式碼。 請前往下方的其他資源區段，以深入了解或尋找更多學習路徑。 若要了解內容作者的學習歷程，請參閱[AEM作者的學習路徑](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)。
+開發人員和部署經理現在已準備好熟悉如何在AEMas a Cloud Service中開發程式碼。 請前往下方的其他資源區段，以深入了解或尋找更多學習路徑。 若要了解內容作者的學習歷程，請參閱 [AEM作者的學習路徑](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+
+>[!TIP]
+>
+>現在您已上線，您可以 [了解如何輕鬆新增AEM參考示範附加元件](/help/journey-sites/demos-add-on/overview.md) 以最少的AEM設定傳至沙箱環境，並能根據最佳實務以豐富的範例來測試AEM的強大功能。
 
 ## 其他資源 {#additional-resources}
 
 * [從Cloud Manager存取Git和Git帳戶管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* [AEM as aCloud Service的本機開發環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [適用於AEMas a Cloud Service的本機開發環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
 * [AEM Sites快速入門（教學課程）](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 

@@ -2,9 +2,9 @@
 title: 不同之處與新增功能 — Adobe Experience Manager as a Cloud Service
 description: 不同與新增功能 — Adobe Experience Manager(AEM)as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1906'
 ht-degree: 10%
 
 ---
@@ -270,3 +270,9 @@ Adobe Experience Manager Assets as a Cloud Service為企業提供雲端原生的
 * [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as a Cloud Service簡介](/help/assets/overview.md)
 * [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+
+>[!TIP]
+>
+>一旦取得AEM as a Cloud Service的概觀，即可透過檢閱 [入門歷程。](/help/journey-onboarding/home.md)
+>
+>已上線或準備好開始測試AEM功能？ 安裝 [AEM參考示範附加元件](/help/journey-sites/demos-add-on/overview.md) 使用豐富的範例來探索AEM的強大功能。

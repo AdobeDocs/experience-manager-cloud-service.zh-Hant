@@ -2,10 +2,10 @@
 title: AEM Sites Journeys
 description: 請從這裡開始，概略了解AEM強大網站功能的引導式歷程。
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 1%
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,8 @@ Sites Journeys是針對不同角色而設計，從不同角度規劃實作網站
 
 | 標題 | 說明 | 主要受眾 |
 |---|---|---|
-| [網站翻譯歷程](/help/journey-sites/translation/overview.md) | 了解AEM Sites技術、在專案中如何使用，以及如何在AEM中從A到Z建立和更新翻譯專案。 | 翻譯專家 |
 | [快速網站建立歷程](/help/journey-sites/quick-site/overview.md) | 從這裡開始，透過簡單易用的AEM快速網站建立工具進行引導式歷程，以簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂您的網站。 | 前端開發人員 |
+| [參考示範附加歷程](/help/journey-sites/demos-add-on/overview.md) | 從這裡開始進行引導式歷程，了解如何輕鬆將AEM參考示範附加元件新增至沙箱環境，並將AEM設定降至最低，以及能夠根據最佳實務以豐富的範例來測試AEM的強大功能。 | 系統管理員 |
+| [網站翻譯歷程](/help/journey-sites/translation/overview.md) | 了解AEM Sites技術、在專案中如何使用，以及如何在AEM中從A到Z建立和更新翻譯專案。 | 翻譯專家 |
 
 請繼續觀看 [即將到來的歷程，涵蓋其他角色。](/help/journey-documentation/documentation-journeys.md#journeys)

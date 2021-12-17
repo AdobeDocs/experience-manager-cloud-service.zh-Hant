@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 簡介
 description: Adobe Experience Manager (AEM) as a Cloud Service 簡介。
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: 4db42a04a122306f5fa068b258913836020d2f9a
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 54%
+source-wordcount: '632'
+ht-degree: 50%
 
 ---
 
@@ -17,7 +17,7 @@ Adobe Experience Manager(AEM)as a Cloud Service是AEM產品線的最新產品，
 
 AEM as a Cloud Service可讓您以雲端原生方式利用AEM應用程式，以便：
 
-* 使用Cloud Manager擴展DevOps的工作：CI/CD架構、自動縮放、API連線、彈性的部署模式、程式碼品質閘道、服務傳送的透明度，以及引導式更新。
+* 使用Cloud Manager擴展您的DevOps工作：CI/CD架構、自動縮放、API連線、彈性的部署模式、程式碼品質閘道、服務傳送的透明度，以及引導式更新。
 
 * 讓開發人員可將自動化新增至應用程式開發實務。
 
@@ -27,7 +27,7 @@ AEM as a Cloud Service可讓您以雲端原生方式利用AEM應用程式，以�
 
 * 使用自動化測試掃描常見漏洞，隨時掌握威脅和安全風險緩解。
 
-* 通過優化的效能拓撲，確保實現最大的可復原性和效率。
+* 通過優化的效能拓撲確保實現最大的可復原性和效率。
 
 * 利用AEM Adobe Experience Cloud的深入整合，提供更佳的客戶線上行銷和網頁分析產品體驗。
 
@@ -75,3 +75,9 @@ AEM 採用現代化雲端服務的主要特色來達成下列目標：
 * [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 * [Assets as a Cloud Service 簡介](/help/assets/overview.md)
 * [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+
+>[!TIP]
+>
+>一旦取得AEM as a Cloud Service的概觀，即可透過檢閱 [入門歷程。](/help/journey-onboarding/home.md)
+>
+>已上線或準備好開始測試AEM功能？ 安裝 [AEM參考示範附加元件](/help/journey-sites/demos-add-on/overview.md) 使用豐富的範例來探索AEM的強大功能。
