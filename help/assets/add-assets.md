@@ -4,10 +4,10 @@ description: 將數位資產新增至 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
+source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
 workflow-type: tm+mt
-source-wordcount: '2263'
-ht-degree: 1%
+source-wordcount: '2704'
+ht-degree: 0%
 
 ---
 
@@ -132,57 +132,111 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):適合從本機檔案系統上傳資產的創意專業人員和行銷人員。 使用它上傳可在本機使用的巢狀資料夾。
 * [大量擷取工具](#asset-bulk-ingestor):部署時，偶爾或最初擷取大量資產時使用 [!DNL Experience Manager].
 
-### 資產大量內嵌工具 {#asset-bulk-ingestor}
+### 資產大量匯入工具 {#asset-bulk-ingestor}
 
 此工具僅提供給管理員群組，以用於從Azure或S3資料存放區大量擷取資產。 請參閱設定和擷取的影片逐步說明。
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-若要設定工具，請遵循下列步驟：
+下圖說明從資料存放區內嵌資產以Experience Manager時的各個階段：
+
+![大量擷取工具](assets/bulk-ingestion.png)
+
+#### 必備條件 {#prerequisites-bulk-ingestion}
+
+您必須有源blob儲存詳細資訊，才能將Experience Manager實例連接到資料儲存。
+
+#### 配置批量導入工具 {#configure-bulk-ingestor-tool}
+
+若要設定「大量匯入」工具，請遵循下列步驟：
 
 1. 導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 大量匯入]**. 選取 **[!UICONTROL 建立]** 選項。
 
-![大量匯入工具的設定](assets/bulk-import-config.png)
+1. 在 **[!UICONTROL 標題]** 欄位。
 
-1. 開啟 **[!UICONTROL 批量匯入配置]** 頁面，請提供所需值，然後選取 **[!UICONTROL 儲存]**.
+1. 從 **[!UICONTROL 導入源]** 下拉式清單。
 
-   * [!UICONTROL 標題]:描述性標題。
-   * [!UICONTROL 導入源]:選取適用的資料來源。
-   * [!UICONTROL Azure儲存帳戶]:提供 [!DNL Azure] 儲存帳戶。
-   * [!UICONTROL Azure Blob容器]:提供 [!DNL Azure] 儲存容器。
-   * [!UICONTROL Azure訪問密鑰]:提供存取金鑰給 [!DNL Azure] 帳戶。
-   * [!UICONTROL 源資料夾]:此篩選器通常受Azure和AWS雲端儲存空間提供者支援。
-   * [!UICONTROL 按最小大小篩選]:提供資產的檔案大小下限(MB)。
-   * [!UICONTROL 按最大大小篩選]:提供資產的檔案大小上限(MB)。
-   * [!UICONTROL 排除Mime類型]:要從擷取中排除的MIME類型清單（以逗號分隔）。 例如， `image/jpeg, image/.*, video/mp4`. 請參閱 [所有支援的檔案格式](/help/assets/file-format-support.md).
-   * [!UICONTROL 包含Mime類型]:要納入擷取的MIME類型清單（以逗號分隔）。 請參閱 [所有支援的檔案格式](/help/assets/file-format-support.md).
-   * [!UICONTROL 導入後刪除源檔案]:選擇此選項可在將檔案導入到 [!DNL Experience Manager].
-   * [!UICONTROL 匯入模式]:選擇跳過、替換或建立版本。 「略過」模式是預設模式，在此模式中，擷取者會略過匯入資產（如果資產已存在）。 請參閱 [替換和建立版本選項](#handling-upload-existing-file).
-   * [!UICONTROL 資產目標資料夾]:在要匯入資產的DAM中匯入資料夾。 例如， `/content/dam/imported_assets`
-   * [!UICONTROL 中繼資料檔案]:要匯入的中繼資料檔案，以CSV格式提供。 在來源blob位置中指定CSV檔案，並在設定大量擷取工具時參考路徑。 當您 [大量匯入和匯出資產中繼資料](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 如果您選取 **導入後刪除源檔案** 選項，使用 **排除** 或 **包含MIME類型** 或 **依路徑/檔案篩選** 欄位。 您可以使用規則運算式來篩選這些欄位中的CSV檔案。
+1. 提供值以建立與資料來源的連線。 例如，若您選取 **Azure Blob儲存** 作為資料源，請指定Azure儲存帳戶、Azure blob容器和Azure訪問密鑰的值。
 
-1. 您可以刪除、修改、執行及執行您建立的內嵌設定。 選取大量匯入匯入或設定時，工具列中提供下列選項。
+1. 提供根資料夾的名稱，該根資料夾包含 **[!UICONTROL 源資料夾]** 欄位。
 
-   * [!UICONTROL 編輯]:編輯所選配置。
-   * [!UICONTROL 刪除]:刪除所選配置。
-   * [!UICONTROL 檢查]:驗證與資料存放區的連線。
-   * [!UICONTROL 乾流]:叫用大量擷取的測試執行。
-   * [!UICONTROL 執行]:執行所選配置。
-   * [!UICONTROL 停止]:終止活動配置。
-   * [!UICONTROL 排程]:設定一次性或循環排程以內嵌資產。
-   * [!UICONTROL 作業狀態]:查看配置在持續導入作業中使用或用於完成作業時的狀態。
-   * [!UICONTROL 工作記錄]:作業的先前例項。
-   * [!UICONTROL 檢視資產]:查看目標資料夾（如果存在）。
+1. （選用）提供資產的檔案大小下限(MB)，以便納入 **[!UICONTROL 按最小大小篩選]** 欄位。
 
-   ![匯入或設定的工具列選項](assets/bulk-ingest-toolbar-options.png)
+1. （選用）提供資產的檔案大小上限(MB)，以將其納入 **[!UICONTROL 按最大大小篩選]** 欄位。
 
-若要排程一次性或循環大量匯入，請遵循下列步驟：
+1. （選用）指定要從中擷取以逗號分隔的MIME類型清單 **[!UICONTROL 排除MIME類型]** 欄位。 例如， `image/jpeg, image/.*, video/mp4`. 請參閱 [所有支援的檔案格式](/help/assets/file-format-support.md).
+
+1. 指定要從中擷取包含的MIME類型清單（以逗號分隔） **[!UICONTROL 包含MIME類型]** 欄位。 請參閱 [所有支援的檔案格式](/help/assets/file-format-support.md).
+
+1. 選取 **[!UICONTROL 導入後刪除源檔案]** 將檔案導入後從源資料儲存中刪除原始檔案的選項 [!DNL Experience Manager].
+
+1. 選取 **[!UICONTROL 匯入模式]**. 選擇 **略過**, **取代**，或 **建立版本**. 「略過」模式是預設模式，在此模式中，擷取者會略過匯入資產（如果資產已存在）。 請參閱 [替換和建立版本選項](#handling-upload-existing-file).
+
+1. 指定路徑以定義DAM中要使用匯入資產的位置 **[!UICONTROL 資產目標資料夾]** 欄位。 例如， `/content/dam/imported_assets`.
+
+1. （選用）指定要匯入的中繼資料檔案，以CSV格式提供，位於 **[!UICONTROL 中繼資料檔案]** 欄位。 在來源blob位置中指定CSV檔案，並在設定大量匯入工具時參考路徑。 當您 [大量匯入和匯出資產中繼資料](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 如果您選取 **導入後刪除源檔案** 選項，使用 **排除** 或 **包含MIME類型** 或 **依路徑/檔案篩選** 欄位。 您可以使用規則運算式來篩選這些欄位中的CSV檔案。
+
+1. 按一下 **[!UICONTROL 儲存]** 以儲存設定。
+
+#### 管理批量導入工具配置 {#manage-bulk-import-configuration}
+
+建立大量匯入工具設定後，您可以先執行工作以評估設定，再將大量資產擷取至您的Experience Manager例項。 選取可用的設定 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 大量匯入]** 查看管理批量導入工具配置的可用選項。
+
+##### 編輯設定 {#edit-configuration}
+
+選取設定，然後按一下 **[!UICONTROL 編輯]** 修改配置詳細資訊。 執行編輯操作時，無法編輯配置的標題和導入資料源。
+
+##### 刪除設定 {#delete-configuration}
+
+選取設定，然後按一下 **[!UICONTROL 刪除]** 刪除批量導入配置。
+
+##### 驗證與資料源的連接 {#validate-connection}
+
+選取設定，然後按一下 **[!UICONTROL check]** 驗證與資料來源的連線。 如果連線成功，Experience Manager會顯示下列訊息：
+
+![大量匯入成功訊息](assets/bulk-import-success-message.png)
+
+##### 調用批量導入作業的測試運行 {#invoke-test-run-bulk-import}
+
+選取設定，然後按一下 **[!UICONTROL 乾流]** 調用批量導入作業的測試運行。 Experience Manager顯示有關批量導入作業的以下詳細資訊：
+
+![試執行結果](assets/dry-assets-result.png)
+
+##### 排程一次性或循環大量匯入 {#schedule-bulk-import}
+
+若要排程一次性或循環大量匯入，請執行下列步驟：
 
 1. 建立大量匯入設定。
 1. 選取設定並選取 **[!UICONTROL 排程]** 的上界。
 1. 設定一次性擷取或排程每小時、每日或每週排程。 按一下 **[!UICONTROL 提交]**.
 
    ![排程大量內嵌作業](assets/bulk-ingest-schedule1.png)
+
+
+##### 檢視Assets目標資料夾 {#view-assets-target-folder}
+
+選取設定，然後按一下 **[!UICONTROL 檢視資產]** 檢視執行大量匯入工作後匯入資產的Assets目標位置。
+
+#### 執行大量匯入工具 {#run-bulk-import-tool}
+
+之後 [配置批量導入工具](#configure-bulk-ingestor-tool) （可選） [管理批量導入工具配置](#manage-bulk-import-configuration)，您可以執行設定工作以開始大量擷取資產。
+
+導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 大量匯入]**，請選取 [批量導入配置](#configure-bulk-ingestor-tool) 按一下 **[!UICONTROL 執行]** 啟動批量導入過程。 按一下 **[!UICONTROL 執行]** 再次確認。
+
+Experience Manager將作業的狀態更新為 **處理** 和 **成功** 作業成功完成後。 按一下 **檢視資產** 檢視已匯入的Experience Manager。
+
+作業正在進行時，您也可以選取設定，然後按一下 **停止** 來停止大量擷取程式。 按一下 **執行** 以繼續程式。 您也可以按一下 **乾流** 以了解仍待匯入的資產詳細資訊。
+
+#### 執行後管理作業 {#manage-jobs-after-execution}
+
+Experience Manager可讓您查看大量匯入作業的歷史記錄。 作業歷史記錄包括作業的狀態、作業建立者、日誌，以及其他詳細資訊，如開始日期和時間、建立日期和時間、完成日期和時間。
+
+要訪問配置的作業歷史記錄，請選擇配置並按一下 **[!UICONTROL 工作記錄]**. 選擇作業並按一下 **開啟**.
+
+![排程大量內嵌作業](assets/job-history-bulk-import.png)
+
+Experience Manager顯示作業歷史記錄。 在「批量導入作業歷史記錄」頁上，也可以按一下 **刪除** 刪除批量導入配置的作業。
+
 
 ## 使用案頭用戶端上傳資產 {#upload-assets-desktop-clients}
 

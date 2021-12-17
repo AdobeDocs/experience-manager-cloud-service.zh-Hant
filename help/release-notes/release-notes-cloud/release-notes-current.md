@@ -3,7 +3,7 @@ title: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service�
 description: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 53dd1d2a3b42e25a1da96ab8d06f05c05a36deab
+source-git-commit: e76ee82b44e48e88d5c750ebb22db11067cb11b5
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 2%
@@ -44,13 +44,11 @@ ht-degree: 2%
 
 * [!DNL Dynamic Media] 現在支援MXF影片的擷取、預覽、播放和發佈。 尚不支援MXF視訊的註解和可購買視訊。
 
-* 在遠端DAM和Sites部署之間設定連線後，即可在Sites部署中使用遠端DAM上的資產。 您現在可以對遠端DAM資產或資料夾執行更新、刪除、重新命名和移動作業。 Sites部署會自動提供延遲的更新。
+* 在遠端DAM和Sites部署之間設定連線後，即可在Sites部署中使用遠端DAM上的資產。 您現在可以執行 [更新、刪除、更名和移動操作](../../assets/use-assets-across-connected-assets-instances.md) 在遠端DAM資產或資料夾上。 Sites部署會自動提供延遲的更新。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### 新增功能 [!DNL Forms] {#what-is-new-forms}
-
-* **Forms入口網站**:您可以使用 [Forms入口網站](/help/forms/configure-forms-portal.md) 將已發佈的最適化表單列在AEM Sites頁面上。 可協助網站訪客探索所有可用的表單。 此外，訪客可使用表單入口網站來儲存及存取最適化表單的草稿，並查看已提交最適化表單的PDF版本。
 
 * **將AEM工作流程資料外部化，以安全處理**:您可以將包含敏感個人資料(SPD)元素的處理中AEM工作流程資料(AEM工作流程變數資料)儲存在客戶管理的存放庫中，以進行安全處理。 資料元素和工作流程變數不會儲存在AEM存放庫中，並會在處理工作流程時，從客戶管理的存放庫隨選擷取。
 
@@ -62,6 +60,8 @@ ht-degree: 2%
    * 以各種格式生成輸出表單，包括非互動式PDF打印流。
 
 * **記錄檔的自訂字型和使用通訊API建立的PDF檔案**:您現在可以在使用通訊API產生的PDF檔案中使用品牌核准字型，以符合您的組織需求。
+
+* **Forms入口網站**:您可以使用 [Forms入口網站](/help/forms/configure-forms-portal.md) 將已發佈的最適化表單列在AEM Sites頁面上。 可協助網站訪客探索所有可用的表單。 此外，訪客可使用表單入口網站來儲存及存取最適化表單的草稿，並查看已提交最適化表單的PDF版本。
 
 ## CIF附加元件 {#cloud-services-cif}
 
