@@ -3,14 +3,18 @@ title: 為Adobe Experience Manager as a Cloud Service配置OSGi
 description: '具有機密值和環境特定值的OSGi設定 '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f947650b0872785e1f1b5f4c6542afd41fa61309
+source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '3020'
 ht-degree: 0%
 
 ---
 
 # 為Adobe Experience Manager as a Cloud Service配置OSGi {#configuring-osgi-for-aem-as-a-cloud-service}
+
+>[!NOTE]
+>
+>AEM已導入使用Cloud Manager使用者介面來設定2021.12.0版標準環境變數的功能。 如需詳細資訊，請參閱本檔案 [此處](/help/implementing/cloud-manager/environment-variables.md).
 
 [OSGi](https://www.osgi.org/) 是Adobe Experience Manager(AEM)技術堆疊中的基本元素。 它用於控制AEM及其配置的複合束。
 
@@ -26,7 +30,7 @@ OSGi提供了標準化基元，允許從小型、可重複使用和協作的元�
 
 OSGi組態檔的格式是以JSON為基礎，使用 `.cfg.json` 由Apache Sling專案定義的格式。
 
-OSGi設定會透過其永續身分識別(PID)來鎖定OSGi元件，預設值為OSGi元件的Java™類別名稱。 例如，若要提供OSGi服務的OSGi設定，請依下列方式實施：
+OSGi設定會透過其永續身分(PID)來鎖定OSGi元件，預設值為OSGi元件的Java™類別名稱。 例如，若要提供OSGi服務的OSGi設定，請依下列方式實施：
 
 `com.example.workflow.impl.ApprovalWorkflow.java`
 
