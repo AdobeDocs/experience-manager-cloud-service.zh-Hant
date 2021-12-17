@@ -1,9 +1,9 @@
 ---
 title: AEM快速網站建立歷程
 description: 從這裡開始，透過簡單易用的AEM快速網站建立工具進行引導式歷程，以簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂您的網站。
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1030'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # AEM快速網站建立歷程 {#quick-site-creation-journey}
 
 從這裡開始，透過簡單易用的AEM快速網站建立工具進行引導式歷程，以簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂您的網站。
-
->[!CAUTION]
->
->快速網站建立工具目前是技術預覽。 除非經Adobe支援同意，否則可供測試及評估之用，且非供生產使用。
 
 ## 簡介 {#introduction}
 

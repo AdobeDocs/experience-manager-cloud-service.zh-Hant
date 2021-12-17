@@ -1,9 +1,9 @@
 ---
 title: 擷取Git存放庫存取資訊
 description: 了解前端開發人員如何使用Cloud Manager存取Git存放庫資訊。
-source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '897'
 ht-degree: 4%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 4%
 # 擷取Git存放庫存取資訊 {#retrieve-access}
 
 了解前端開發人員如何使用Cloud Manager存取Git存放庫資訊。
-
->[!CAUTION]
->
->快速網站建立工具目前是技術預覽。 除非經Adobe支援同意，否則可供測試及評估之用，且非供生產使用。
 
 ## 迄今為止的故事 {#story-so-far}
 

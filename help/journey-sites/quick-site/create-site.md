@@ -1,9 +1,9 @@
 ---
 title: 從範本建立網站
 description: 了解如何使用網站範本快速建立新AEM網站。
-source-git-commit: 73e9d1debe70aff7f53d658bbac074fc53d8f1ae
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # 從範本建立網站 {#create-site-from-template}
 
 了解如何使用網站範本快速建立新AEM網站。
-
->[!CAUTION]
->
->快速網站建立工具目前是技術預覽。 除非經Adobe支援同意，否則可供測試及評估之用，且非供生產使用。
 
 ## 迄今為止的故事 {#story-so-far}
 

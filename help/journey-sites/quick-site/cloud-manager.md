@@ -1,9 +1,9 @@
 ---
 title: 了解Cloud Manager和快速網站建立工作流程
 description: 了解Cloud Manager及其如何將新的快速網站建立程式連結在一起。
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1102'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # 了解Cloud Manager和快速網站建立工作流程 {#understand-cloud-manager}
 
 了解Cloud Manager及其如何將新的快速網站建立程式連結在一起。
-
->[!CAUTION]
->
->快速網站建立工具目前是技術預覽。 除非經Adobe支援同意，否則可供測試及評估之用，且非供生產使用。
 
 >[!TIP]
 >

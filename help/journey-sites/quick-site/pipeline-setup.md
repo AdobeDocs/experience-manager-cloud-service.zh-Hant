@@ -1,9 +1,9 @@
 ---
 title: 設定管道
 description: 建立前端管道以管理網站主題的自訂。
-source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # 設定管道 {#set-up-your-pipeline}
 
 建立前端管道以管理網站主題的自訂。
-
->[!CAUTION]
->
->快速網站建立工具目前是技術預覽。 除非經Adobe支援同意，否則可供測試及評估之用，且非供生產使用。
 
 ## 迄今為止的故事 {#story-so-far}
 
@@ -61,7 +57,7 @@ ht-degree: 0%
 
 1. 登入AdobeCloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Cloud Manager會列出各種可用的方案。 點選或按一下您要管理的項目。 如果您剛開始使用AEM as a Cloud Service，可能只有一個可用的程式。
+1. Cloud Manager會列出各種可用的方案。 點選或按一下您要管理的項目。 如果您剛開始使用AEM as a Cloud Service，可能只有一個程式可供使用。
 
    ![在Cloud Manager中選取方案](assets/cloud-manager-select-program.png)
 

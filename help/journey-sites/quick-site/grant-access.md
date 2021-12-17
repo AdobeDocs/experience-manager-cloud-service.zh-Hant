@@ -1,9 +1,9 @@
 ---
 title: 授予前端開發人員的存取權
 description: 將前端開發人員上線至Cloud Manager，讓他們能存取您的AEM網站Git存放庫和管道。
-source-git-commit: 7c70be541e811e1be236763081d5571db4269b7a
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # 授予前端開發人員的存取權 {#grant-fed-access}
 
 將前端開發人員上線至Cloud Manager，讓他們能存取您的AEM網站Git存放庫和管道。
-
->[!CAUTION]
->
->快速網站建立工具目前是技術預覽。 除非經Adobe支援同意，否則可供測試及評估之用，且非供生產使用。
 
 ## 迄今為止的故事 {#story-so-far}
 

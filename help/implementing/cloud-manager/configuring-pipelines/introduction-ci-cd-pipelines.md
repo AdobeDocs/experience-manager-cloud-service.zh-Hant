@@ -2,9 +2,9 @@
 title: CI-CD管道
 description: 請詳閱本頁，了解Cloud Manager CI-CD管道
 index: true
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始�
 
 ### 配置前端管道之前 {#before-start}
 
-開始配置前端管道之前，請參見 [AEM快速網站建立歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 透過簡單易用的AEM快速網站建立工具，提供端對端工作流程。 本檔案網站可協助您簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂網站。
+開始配置前端管道之前，請參見 [AEM快速網站建立歷程](/help/journey-sites/quick-site/overview.md) 透過簡單易用的AEM快速網站建立工具，提供端對端工作流程。 本檔案網站可協助您簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂網站。
 
 ### 配置前端管道 {#configure-front-end}
 
@@ -82,6 +82,12 @@ Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始�
 
 * [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+
+### 使用前端管道開發網站 {#developing-with-front-end-pipeline}
+
+前端管道更加獨立，開發過程可以獲得相當的速度。
+
+請參閱 [此文檔](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 以了解此程式的運作方式，並注意一些事項，以充分發揮此程式的潛能。
 
 ## 完整堆棧管道 {#full-stack-pipeline}
 

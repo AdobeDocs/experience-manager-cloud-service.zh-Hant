@@ -1,9 +1,9 @@
 ---
 title: 自訂網站主題
 description: 了解網站主題的建立方式、如何自訂，以及如何使用即時AEM內容進行測試。
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # 自訂網站主題 {#customize-the-site-theme}
 
 了解網站主題的建立方式、如何自訂，以及如何使用即時AEM內容進行測試。
-
->[!CAUTION]
->
->快速網站建立工具目前是技術預覽。 除非經Adobe支援同意，否則可供測試及評估之用，且非供生產使用。
 
 ## 迄今為止的故事 {#story-so-far}
 

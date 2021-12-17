@@ -3,9 +3,9 @@ title: 網站範本
 description: 了解如何使用AEM網站範本預先定義網站結構和初始內容，以便快速建立網站。
 feature: Administering
 role: Admin
-source-git-commit: 2dd35f1ea25f6bfc515d7b50fd53cf4638af4026
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # 網站範本 {#site-templates}
 
 了解如何使用AEM網站範本預先定義網站結構和初始內容，以便快速建立網站。
-
->[!CAUTION]
->
->快速網站建立工具目前是技術預覽。 除非經Adobe支援同意，否則可供測試及評估之用，且非供生產使用。
 
 ## 概覽 {#overview}
 

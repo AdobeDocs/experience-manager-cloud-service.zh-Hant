@@ -3,9 +3,9 @@ title: 網站主題
 description: 了解如何使用AEM網站主題來自訂網站的樣式和設計。
 feature: Administering
 role: Admin
-source-git-commit: 9e7ad4a640f1783be5aed75e01e860b647662f52
+source-git-commit: 0b00d579886a106f5f66cfc54d90eab9563724cd
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # 網站主題 {#site-themes}
 
 了解如何使用AEM網站主題來自訂網站的樣式和設計。
-
->[!CAUTION]
->
->快速網站建立工具目前是技術預覽。 除非經Adobe支援同意，否則可供測試及評估之用，且非供生產使用。
 
 ## 概覽 {#overview}
 
@@ -55,6 +51,6 @@ Adobe提供最佳實務參考主題，您可以此作為建立自己主題的基
 
 ## 開發網站主題 {#developing-themes}
 
-Adobe提供和AEM網站主題產生器，作為建立新網站主題的一組指令碼。
+Adobe提供AEM網站主題產生器，作為建立新網站主題的一組指令碼。
 
 [您可在GitHub上取得AEM網站主題產生器及使用說明檔案。](https://github.com/adobe/aem-site-theme-builder) 自訂主題需要前端開發體驗。

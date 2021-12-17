@@ -1,9 +1,9 @@
 ---
 title: 部署自定義的主題
 description: 了解如何使用管道部署網站主題。
-source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # 部署自定義的主題 {#deploy-your-customized-theme}
 
 了解如何使用管道部署網站主題。
-
->[!CAUTION]
->
->快速網站建立工具目前是技術預覽。 除非經Adobe支援同意，否則可供測試及評估之用，且非供生產使用。
 
 ## 迄今為止的故事 {#story-so-far}
 
@@ -95,11 +91,16 @@ ht-degree: 1%
 * 如何使用代理的AEM內容自訂和測試主題，並將這些變更提交至AEM Git。
 * 如何使用管道部署前端自訂。
 
-您現在可以自訂自己AEM網站的主題。 不過，AEM是功能強大的工具，有許多其他選項可供使用。 查看 [「其他資源」部分](#additional-resources) 以進一步了解您在此歷程中看到的功能。
+您現在可以自訂自己AEM網站的主題。 但是，在開始使用多個前端管道建立不同的工作流之前，請先查看該文檔 [使用前端管道開發網站。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 它可協助您充份運用前端開發，方法如下：
+
+* 保持單一的真相。
+* 保持關注的分離。
+
+AEM是功能強大的工具，有許多其他選項可供使用。 查看 [「其他資源」部分](#additional-resources) 以進一步了解您在此歷程中看到的功能。
 
 ## 其他資源 {#additional-resources}
 
-建議您透過檢閱檔案，繼續進行快速網站建立歷程的下一個階段 [部署自定義主題，](deploy-theme.md) 以下是一些額外的選用資源，可更深入探討本檔案中提及的一些概念，但您不需要這些資源即可繼續進行歷程。
+以下是一些額外資源，可深入探討本檔案中提及的一些概念。
 
 * [AEMas a Cloud Service技術檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  — 如果您已對AEM有明確的了解，建議您直接參閱深入的技術檔案。
 * [Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html)  — 如果您想要取得Cloud Manager功能的詳細資訊，可直接參閱深入的技術檔案。
@@ -115,3 +116,4 @@ ht-degree: 1%
 * [入門歷程](/help/journey-onboarding/home.md)  — 本指南是您的起點，可確保您的團隊已設定且可存取AEMas a Cloud Service。
 * [Adobe Experience Manager Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant)  — 探索Cloud Manager檔案，以取得其功能的完整詳細資訊。
 * [網站管理檔案](/help/sites-cloud/administering/site-creation/create-site.md)  — 查看網站建立技術檔案，以取得快速網站建立工具功能的詳細資訊。
+* [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)  — 本檔案說明若想使用前端管道充分發揮前端開發程式的潛力，需注意的一些事項。

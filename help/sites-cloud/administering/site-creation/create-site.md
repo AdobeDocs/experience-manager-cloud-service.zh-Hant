@@ -3,9 +3,9 @@ title: 建立網站
 description: 了解如何使用AEM使用網站範本來定義網站的樣式和結構來建立網站。
 feature: Administering
 role: Admin
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 0%
 # 建立網站 {#creating-site}
 
 了解如何使用AEM使用網站範本建立網站，以定義網站的樣式和結構。
-
->[!CAUTION]
->
->快速網站建立工具目前是技術預覽。 除非經Adobe支援同意，否則可供測試及評估之用，且非供生產使用。
 
 ## 概覽 {#overview}
 
