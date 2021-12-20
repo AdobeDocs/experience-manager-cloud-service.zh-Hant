@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d390ea1f0bcdff22869cfa8418cc3445aa149cf7
+source-git-commit: d9a01a3010582a632f8125964032c1f02363399f
 workflow-type: tm+mt
-source-wordcount: '3437'
+source-wordcount: '3438'
 ht-degree: 32%
 
 ---
@@ -282,7 +282,7 @@ ht-degree: 32%
       + [新增和上傳資產](/help/assets/add-assets.md)
       + [搜尋資產](/help/assets/search-assets.md)
       + [資產管理常見任務](/help/assets/manage-digital-assets.md)
-      + [預覽–3d-assets](/help/assets/dynamic-media/previewing-3d-assets.md)
+      + [預覽3D資產](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [影像智慧標籤](/help/assets/smart-tags.md)
       + [智慧標籤您的視訊資產](/help/assets/smart-tags-video-assets.md)
       + [如何組織資產](/help/assets/organize-assets.md)
