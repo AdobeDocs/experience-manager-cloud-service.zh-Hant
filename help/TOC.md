@@ -7,7 +7,7 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a1b1709fb705b509015478c16c32a02af0502a77
+source-git-commit: d390ea1f0bcdff22869cfa8418cc3445aa149cf7
 workflow-type: tm+mt
 source-wordcount: '3437'
 ht-degree: 32%
@@ -282,6 +282,7 @@ ht-degree: 32%
       + [新增和上傳資產](/help/assets/add-assets.md)
       + [搜尋資產](/help/assets/search-assets.md)
       + [資產管理常見任務](/help/assets/manage-digital-assets.md)
+      + [預覽–3d-assets](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [影像智慧標籤](/help/assets/smart-tags.md)
       + [智慧標籤您的視訊資產](/help/assets/smart-tags-video-assets.md)
       + [如何組織資產](/help/assets/organize-assets.md)
@@ -361,7 +362,6 @@ ht-degree: 32%
       + [傳送Dynamic Media資產](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [在Dynamic Media中啟用快速連結保護](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D 支援](/help/assets/dynamic-media/assets-3d.md)
-      + [預覽–3d-assets](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [影像集](/help/assets/dynamic-media/image-sets.md)
       + [全景影像](/help/assets/dynamic-media/panoramic-images.md)
       + [混合媒體集](/help/assets/dynamic-media/mixed-media-sets.md)
