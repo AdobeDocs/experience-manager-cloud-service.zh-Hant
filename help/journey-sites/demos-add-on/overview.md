@@ -1,10 +1,10 @@
 ---
 title: AEM參考示範附加元件歷程
 description: 從這裡開始進行引導式歷程，了解如何輕鬆將AEM參考示範附加元件新增至沙箱環境，並將AEM設定降至最低，以及能夠根據最佳實務以豐富的範例來測試AEM的強大功能。
-source-git-commit: f9794f52f2d09723a62e1f19cc951a5032661fce
+source-git-commit: 3dc268060188defcc84971f73baced1f30dccd49
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '813'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,13 @@ AEM Sites是功能強大的工具集，用於建立和管理數位體驗。 內�
 
 您將在此歷程中探索多個主題。 以下文章提供您建立新計畫、設定及使用AEM參考示範附加元件的基本知識，並打算依序閱讀。 視需要連結至詳細的技術檔案。
 
-|#|文章|說明| |—|—|—| |0|AEM參考示範附加歷程|本檔案| |1|[了解參考示範附加元件安裝](installation.md)|了解Cloud Manager及其如何用來安裝附加元件。| |2|[建立方案和管道](create-program.md)|了解如何設定新程式和管道以部署附加元件。| |3|[建立示範網站](create-site.md)|根據預先設定的範本庫，在AEM中建立示範網站。| |4|[管理您的示範網站](manage.md)|了解可幫助您管理演示網站的工具以及如何刪除它們。|
+| # | 文章 | 說明 |
+|---|---|---|
+| 0 | AEM參考示範附加元件歷程 | 此文檔 |
+| 1 | [了解參考示範附加元件安裝](installation.md) | 了解Cloud Manager及其如何用來安裝附加元件。 |
+| 2 | [建立方案和管道](create-program.md) | 了解如何設定新程式和管道來部署附加元件。 |
+| 3 | [建立示範網站](create-site.md) | 根據預先設定的範本庫，在AEM中建立示範網站。 |
+| 4 | [管理您的示範網站](manage.md) | 了解可協助您管理示範網站的工具，以及如何移除示範網站。 |
 
 ## 下一步 {#what-is-next}
 
