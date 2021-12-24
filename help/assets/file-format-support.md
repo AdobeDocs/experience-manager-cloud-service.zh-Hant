@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 479cfffd17dcde12bda7d53a7acddfbb46782a8f
+source-git-commit: 1ea99c0eb602fa48674a03e25ee615add425f6af
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 7%
@@ -57,7 +57,7 @@ ht-degree: 7%
 | 檔案格式 | 縮圖產生 | 中繼資料擷取 | 寬度/高度 | 裁切 |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
 | BMP | ✓ | - | ✓ | ✓ |
-| EPS | - | ✓ | - | - |
+| EPS | ✓ | ✓ | - | - |
 | GIF | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |

@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9dc60e627a6770ee636ad5f8a8e0a8eb81adae9b
+source-git-commit: f6b9a8d09ae0bbc57ec2ba30694f3c1b0b163379
 workflow-type: tm+mt
-source-wordcount: '3438'
+source-wordcount: '3441'
 ht-degree: 31%
 
 ---
@@ -393,7 +393,6 @@ ht-degree: 31%
    + [簡介](/help/forms/home.md)
    + [主要功能](/help/forms/key-features.md)
    + [重大變更](/help/forms/notable-changes.md)
-   + [發行說明](/help/forms/release-notes.md)
    + 設定和設定服務 {#setup-environment}
       + [板載到Cloud Service環境](/help/forms/setup-forms-cloud-service.md)
       + [設定本機開發環境](/help/forms/setup-local-development-environment.md)
@@ -450,7 +449,7 @@ ht-degree: 31%
       + [使用表單資料模型](/help/forms/using-form-data-model.md)
    + [整合Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
    + [與DocuSign整合](/help/forms/integrate-docusign-adaptive-forms.md)
-   + [整合AEM Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+   + [與Sites整合](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [整合Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
    + 建立和使用工作流程 {#create-form-centric-workflows}
       + [在工作流程中使用以Forms為中心的步驟+步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
@@ -459,7 +458,8 @@ ht-degree: 31%
    + 使用通訊 {#using-communications}
       + [簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [通訊API](/help/forms/aem-forms-cloud-service-communications.md)
-      + [通訊API +批次處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [通訊API批次處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [在PDF文檔中使用自定義字型](/help/forms/use-custom-fonts.md)
    + [移轉至 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [常見問題](/help/forms/faq.md)
    + [已知問題](/help/forms/known-issues.md)
