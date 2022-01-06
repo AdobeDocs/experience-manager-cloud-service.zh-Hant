@@ -1,10 +1,8 @@
 ---
 title: 了解無頭內容，以及如何在AEM中翻譯
 description: 了解無頭概念、它們如何對應至AEM，以及AEM翻譯理論。
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%
@@ -45,7 +43,7 @@ ht-degree: 0%
 
 任何系統的頭通常是該系統的輸出渲染器，通常以GUI或其它圖形輸出的形式。
 
-當我們討論無頭式CMS時， CMS會管理內容並繼續將內容提供給消費者。 但是，通過僅以標準化方式傳送&#x200B;**內容**，無頭CMS省略了最終輸出呈現，將內容的&#x200B;**呈現**&#x200B;保留給消費服務。
+當我們討論無頭式CMS時， CMS會管理內容並繼續將內容提供給消費者。 不過，若只傳送 **內容** 無頭式CMS以標準化的方式省略了最終輸出呈現，而 **簡報** 內容到消費服務。
 
 ![無頭式CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
@@ -73,10 +71,10 @@ AEM的強大功能可讓其無頭式、完整堆疊或同時在兩個模型中�
 * 了解無頭式內容傳送的基本概念。
 * 請熟悉AEM如何支援無頭和翻譯。
 
-基於此知識，並透過接下來檢閱檔案[開始使用AEM無頭翻譯](getting-started.md)來繼續您的AEM無頭翻譯歷程，您將在此概略了解AEM如何管理無頭內容及了解其翻譯工具。
+基於此知識，接下來檢閱此檔案，繼續您的AEM無頭翻譯歷程 [開始使用AEM無頭翻譯](getting-started.md) 您將可在其中概略了解AEM如何管理無頭式內容，並了解其翻譯工具。
 
 ## 其他資源 {#additional-resources}
 
-雖然建議您透過檢閱檔案[開始使用AEM無頭翻譯來繼續進行無頭翻譯歷程的下一個階段，但以下是一些額外的選用資源，可深入探討本檔案中提及的一些概念，但不需要繼續進行無頭翻譯歷程。](getting-started.md)
+雖然建議您透過檢閱檔案，繼續進行無頭式翻譯歷程的下一個階段 [開始使用AEM無頭翻譯，](getting-started.md) 以下是一些額外的選用資源，可更深入探討本檔案中提及的一些概念，但您不需要繼續進行無頭歷程。
 
-* [MSM與翻譯](/help/sites-cloud/administering/msm-and-translation.md)  - AEM Multi-Site Manager的詳細資訊及其如何與其翻譯工具搭配使用
+* [MSM與翻譯](/help/sites-cloud/administering/msm-and-translation.md) - AEM Multi-Site Manager的詳細資訊及其如何與翻譯工具搭配使用

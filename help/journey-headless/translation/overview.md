@@ -1,11 +1,8 @@
 ---
 title: AEM無頭翻譯歷程
 description: 從這裡開始，使用AEM功能強大的翻譯工具，引導您完成無頭內容的轉譯。
-index: true
-hide: false
-hidefromtoc: false
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 1%
@@ -43,7 +40,7 @@ ht-degree: 1%
 
 ## 對象 {#audience}
 
-此歷程專為翻譯專家人員而設計，通常稱為翻譯項目經理或TPM。 此歷程說明在AEM中轉譯無頭內容的需求、步驟和方法。 歷程可能會定義翻譯專家必須與之互動的其他角色，但歷程的觀點是翻譯專家。
+此歷程專為翻譯專家人員而設計，通常稱為翻譯專案經理或TPM。 此歷程說明在AEM中轉譯無頭內容的需求、步驟和方法。 歷程可能會定義翻譯專家必須與之互動的其他角色，但歷程的觀點是翻譯專家。
 
 此歷程假設讀者在大型CMS系統上具備翻譯內容的經驗，但假設您不具備無頭式技術或AEM的知識。
 

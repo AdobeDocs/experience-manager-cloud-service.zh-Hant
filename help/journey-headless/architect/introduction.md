@@ -1,20 +1,17 @@
 ---
 title: AEM無頭式內容架構者歷程
-description: 介紹Adobe Experience Manager as aCloud Service的強大、彈性、無頭式功能，以及如何為專案建立內容模型。
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+description: 介紹Adobe Experience Manager as a Cloud Service強大、靈活、無頭的功能，以及如何為專案建立內容模型。
+exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 0%
 
 ---
 
-
 # 使用AEM建立無頭的內容模型 — 簡介 {#architect-headless-introduction}
 
-在[AEM無頭式內容架構者歷程](overview.md)的這部分中，您可以了解必要（基本）概念和術語，以Adobe Experience Manager(AEM)為Cloud Service來了解無頭式內容傳送的內容模型。
+在 [AEM無頭式內容架構者歷程](overview.md)，您可以了解透過Adobe Experience Manager(AEM)as a Cloud Service，了解無頭式內容傳送所需內容模型所需的（基本）概念和術語。
 
 本檔案可協助您了解無頭式內容傳送、AEM如何支援無頭式內容，以及如何針對無頭式內容建立內容模型。 閱讀後，您應：
 
@@ -49,7 +46,7 @@ ht-degree: 0%
 
 任何系統的頭通常是該系統的輸出渲染器，通常以GUI或其它圖形輸出的形式。
 
-當我們討論無頭式CMS時， CMS會管理內容並繼續將內容提供給消費者。 但是，通過僅以標準化方式傳送&#x200B;**內容**，無頭CMS省略了最終輸出呈現，將內容的&#x200B;**呈現**&#x200B;保留給消費服務。
+當我們討論無頭式CMS時， CMS會管理內容並繼續將內容提供給消費者。 不過，若只傳送 **內容** 無頭式CMS以標準化的方式省略了最終輸出呈現，而 **簡報** 內容到消費服務。
 
 ![無頭式CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
@@ -61,9 +58,9 @@ ht-degree: 0%
 
 內容模型（也稱為資料模型）是您的專業，因此在為無頭建模時需要考慮哪些事項？
 
-為了讓無頭應用程式能夠訪問您的內容並執行某些操作，內容確實需要有一個預定義的結構。 您的內容可以自由格式，但會使應用程式的生活&#x200B;*非常*&#x200B;變得複雜。
+為了讓無頭應用程式能夠訪問您的內容並執行某些操作，內容確實需要有一個預定義的結構。 你的內容可以自由形式，但它會創造生活 *very* 應用程式複雜。
 
-對於AEM，您身為內容架構師，將執行內容模型以設計&#x200B;**內容片段模型**&#x200B;範圍。 這些定義了內容作者建立&#x200B;**內容片段**&#x200B;時所使用的結構。
+對於AEM，您身為內容架構師，將執行內容模型以設計一系列 **內容片段模型**. 這些定義內容作者建立 **內容片段** 保存內容的。
 
 ### 存取內容 {#access-content}
 
@@ -71,13 +68,13 @@ ht-degree: 0%
 
 一旦您建立了內容片段模型，且作者已使用這些模型產生內容後，無頭式應用程式就需要存取此內容。
 
-Adobe Experience Manager(AEM)做為Cloud Service，可以使用AEM GraphQL API選擇性地存取內容片段，以僅傳回所需的內容。 使用API，開發人員可以制定用於選擇特定內容的查詢。此選擇過程基於&#x200B;*您的*&#x200B;內容片段模型。
+Adobe Experience Manager(AEM)as a Cloud Service，可以使用AEM GraphQL API選擇性地存取內容片段，以僅傳回所需的內容。 使用API，開發人員可以制定用於選擇特定內容的查詢。此選擇過程基於 *您的* 內容片段模型。
 
 這表示您的專案可實現無頭式傳送結構化內容，以便用於您的應用程式。
 
 ## 下一步 {#whats-next}
 
-現在您已了解概念和術語，接下來的步驟是[了解使用內容片段模型建立模型的基本知識](basics.md)。
+既然您已經學過概念和術語，下一步就是 [了解使用內容片段模型建立模型的基本知識](basics.md).
 
 ## 其他資源 {#additional-resources}
 

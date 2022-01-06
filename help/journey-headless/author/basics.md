@@ -1,22 +1,19 @@
 ---
 title: 了解製作基本知識
 description: 了解使用內容片段為無頭CMS製作內容的概念和機制。
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 2%
 
 ---
 
-
 # 使用AEM製作無頭的基本知識 {#author-headless-basics}
 
 ## 迄今為止的故事 {#story-so-far}
 
-[AEM無頭內容作者歷程](overview.md)開始時，[簡介](introduction.md)涵蓋與無頭內容製作相關的基本概念和術語。
+在 [AEM無頭內容製作歷程](overview.md) the [簡介](introduction.md) 涵蓋與無頭製作相關的基本概念和術語。
 
 本文以這些為基礎，讓您了解如何為您的AEM無頭專案製作您自己的內容。
 
@@ -56,14 +53,14 @@ AEM安裝通常至少包含兩個環境：
 
 您首次登入小型線上教學課程時，將會強調使用者介面的部分主要功能。
 
-然後，您就可以使用導覽面板來存取AEM的關鍵區域。 針對內容片段，您將使用&#x200B;**Assets Console**。
+然後，您就可以使用導覽面板來存取AEM的關鍵區域。 針對內容片段，您將使用 **Assets Console**.
 
 您可以選取左上角的Adobe圖示，接著選取小羅盤圖示，以開啟「導覽面板」：
 
 ![導覽面板](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
->雖然內容片段是AEM **Sites**&#x200B;的功能，但可在&#x200B;**Assets**&#x200B;主控台中找到。 這是不應影響您的技術詳細資訊，但可能有助於了解。
+>雖然內容片段是AEM的功能 **網站**，可在 **資產** 控制台。 這是不應影響您的技術詳細資訊，但可能有助於了解。
 
 在主控台中，您可以選取資料夾以導覽至內容片段，或是選取階層連結（在標題中）以導覽至樹狀結構清單。
 
@@ -71,9 +68,9 @@ AEM安裝通常至少包含兩個環境：
 
 ### 操作，選擇，查看 {#actions-selecting-viewing}
 
-**Assets**&#x200B;控制台具有專用的&#x200B;**操作工具欄**&#x200B;和&#x200B;**快速操作**，您可以在選擇資源（例如資料夾或內容片段）後使用這些工具。
+此 **資產** 主控台專用 **動作工具列**，和 **快速動作** 在選取資源（例如，資料夾或內容片段）後可使用的欄位。
 
-「快速操作」適用於單一資源，請參閱以下範例中的&#x200B;**Basel**:
+「快速操作」適用於單一資源，請參閱 **巴塞爾** 在以下範例中：
 
 ![快速動作](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -101,21 +98,21 @@ AEM安裝通常至少包含兩個環境：
 
 #### 建立資料夾 {#creating-folder}
 
-您可以在Assets控制台的&#x200B;**Files**&#x200B;區段內建立一系列資料夾，以達成此目的。 選擇&#x200B;**Create**&#x200B;選項（右上），後跟&#x200B;**Folder**:
+您可以在內建立一系列資料夾，以完成此操作 **檔案** 區段。 選取 **建立** 選項（右上角），後跟 **資料夾**:
 
 ![建立資料夾選項](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-將會開啟一個對話框，您可以在其中輸入詳細資訊，然後使用&#x200B;**Create**&#x200B;確認：
+將會開啟一個對話方塊，您可在其中輸入詳細資訊，然後使用 **建立**:
 
 ![建立資料夾對話方塊](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
 #### 使用路徑和標籤來限制資料夾中可用的內容片段模型 {#tags-paths-for-models-in-folder}
 
-本節稍微更進階。 如果您剛開始嘗試，並不需要它，但當您有許多片段時，它&#x200B;*very*&#x200B;很有用。 所以，即使你還沒用到它，也很好。
+本節稍微更進階。 如果你只是開始嘗試，你並不需要它，但是 *very* 當您有許多片段時很實用。 所以，即使你還沒用到它，也很好。
 
 您的內容架構師會建立目前專案所需的所有內容片段模型，可能也會建立其他專案。 為協助您和其他作者將事情簡單明瞭，您可以限制特定資料夾可用的模型清單。
 
-建立資料夾後，可以開啟資料夾&#x200B;**屬性**。 此處提供各種標籤，其中包含資料夾的相關資訊和設定詳細資訊。 尤其是內容片段，您可以使用&#x200B;**Policys**&#x200B;標籤來定義此資料夾的特定路徑和/或標籤。 這會限制資料夾中可用的內容片段模型，因為這表示內容片段模型必須先符合這些需求，才能用來在此資料夾中產生片段。
+建立資料夾後，您可以開啟資料夾 **屬性**. 此處提供各種標籤，其中包含資料夾的相關資訊和設定詳細資訊。 尤其是內容片段，您可以使用 **原則** 標籤來定義此資料夾的特定路徑和/或標籤。 這會限制資料夾中可用的內容片段模型，因為這表示內容片段模型必須先符合這些需求，才能用來在此資料夾中產生片段。
 
 ![建立資料夾屬性 — 策略](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
 
@@ -129,7 +126,7 @@ AEM安裝通常至少包含兩個環境：
 
 以防萬一……
 
-您可能會獲得一個初始資料夾，可在其中建立資料夾。 這就是某些配置詳細資訊必須（通常由開發人員或系統管理員）應用到根資料夾的情況。 您可能不會因此而感興趣，但如有必要，您可以檢查資料夾&#x200B;**Properties**&#x200B;的&#x200B;**Cloud Services**&#x200B;中的&#x200B;**Configuration**:
+您可能會獲得一個初始資料夾，可在其中建立資料夾。 這就是某些配置詳細資訊必須（通常由開發人員或系統管理員）應用到根資料夾的情況。 您可能不會因此而感興趣，但如有需要，您可以檢查 **設定** 在 **Cloud Services** 的 **屬性**:
 
 ![建立資料夾屬性 — 配置](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
@@ -139,7 +136,7 @@ AEM安裝通常至少包含兩個環境：
 
 ### 建立內容片段 {#creating-fragment}
 
-建立內容片段非常類似 — 您只需改用&#x200B;**內容片段**&#x200B;選項：
+建立內容片段非常類似 — 您只使用 **內容片段** 選項：
 
 ![建立內容片段選項](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
@@ -147,19 +144,19 @@ AEM安裝通常至少包含兩個環境：
 
 ![建立內容片段 — 選取模型](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-繼續&#x200B;**Next**&#x200B;之後，您可以為片段提供詳細資訊（**Basic**&#x200B;和&#x200B;**Advanced**）:
+繼續 **下一個** 您可以提供詳細資訊(**基本** 和 **進階**):
 
 ![建立內容片段 — 提供名稱](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-使用&#x200B;**Create**&#x200B;確認，然後您可以在編輯器中&#x200B;**Open**&#x200B;您的片段。
+確認為 **建立** 你可以 **開啟** 您的片段。
 
 ### 編輯片段 {#editing-fragment}
 
-您可以在建立片段後立即開啟，或從「資產」主控台中選取片段。
+您可以在建立片段後立即開啟，或從「資產」主控台選取片段。
 
 編輯器首次開啟時，您會看到：
 
-* 左側的圖示清單 — 這可讓您存取各種功能。 編輯器會在&#x200B;**Variations**&#x200B;標籤中開啟，這是大部分編輯發生的位置。 您也可能對&#x200B;**Annotations**&#x200B;和&#x200B;**Metadata**&#x200B;標籤感興趣。
+* 左側的圖示清單 — 這可讓您存取各種功能。 編輯器隨即在 **變異** 頁簽，即可進行大部分編輯。 您可能也對 **註解** 和 **中繼資料** 頁簽。
 
 * 標題，包含片段的相關資訊以及各種動作的存取權。
 
@@ -181,7 +178,7 @@ AEM安裝通常至少包含兩個環境：
 >
 >如需一般詳細資訊，請參閱內容片段模型 — 資料類型和屬性。
 
-使用&#x200B;**Save**&#x200B;或&#x200B;**Save &amp; close**&#x200B;確認更新。
+使用 **儲存** 或 **儲存並關閉**.
 
 >[!NOTE]
 >
@@ -212,27 +209,27 @@ AEM安裝通常至少包含兩個環境：
 
 * **更新頁面參考**
 
-   此操作可從&#x200B;**獲得……**（點）下拉式清單。 無頭作者對此並不感興趣，因為它與頁面編寫相關。
+   此動作可從 **...** （點）下拉式清單。 無頭作者對此並不感興趣，因為它與頁面編寫相關。
 
 ### 發佈 {#publishing}
 
 <!-- needs more details -->
 
-完成片段後，您可以&#x200B;**發佈**，讓無頭應用程式可使用它。
+完成片段後，您可以 **發佈** 這樣，它就可供無頭應用程式使用。
 
-編輯器中提供發佈動作（或位於&#x200B;**Assets**&#x200B;控制台的工具列）:
+發佈動作可在編輯器中使用(或位於 **資產** 控制台):
 
 ![內容片段編輯器 — 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
 ## 下一步 {#whats-next}
 
-現在您已了解基本知識，接下來的步驟是[了解參考的相關資訊](references.md)。 這將介紹並討論各種可用的參照，以及如何使用片段參考（無頭創作的關鍵部分）建立結構層級。
+現在您已了解基本知識，下一步就是 [了解參考資料](references.md). 這將介紹並討論各種可用的參照，以及如何使用片段參考（無頭創作的關鍵部分）建立結構層級。
 
 ## 其他資源 {#additional-resources}
 
 * [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 此頁面主要以Sitesconsole為基礎，但許多/大部分的功能也與在Assets控制台下編寫 **** 內 **容** 片段有 **** 關。
+* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 此頁面主要根據 **網站** 主控台，但有許多/大部分功能也與製作相關 **內容片段** 在 **資產** 控制台。
 
    * [導覽面板](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
 

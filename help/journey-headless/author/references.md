@@ -1,22 +1,19 @@
 ---
 title: 了解如何在內容片段中使用參考
 description: 了解如何在內容片段、內容、其他片段和其他資產（媒體）中使用參考。 介紹無頭式CMS製作的巢狀片段的必要性和機制。
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 2%
 
 ---
 
-
 # 了解如何在內容片段中使用參考 {#author-headless-references}
 
 ## 迄今為止的故事 {#story-so-far}
 
-[AEM無頭內容作者歷程](overview.md)開始時，[簡介](introduction.md)涵蓋與無頭內容製作相關的基本概念和術語。
+在 [AEM無頭內容製作歷程](overview.md) the [簡介](introduction.md) 涵蓋與無頭製作相關的基本概念和術語。
 
 您已了解無頭式CMS製作的基本知識，並熟悉如何使用AEMaaCS製作，尤其是製作內容片段。
 
@@ -25,7 +22,7 @@ ht-degree: 2%
 ## 目標 {#objective}
 
 * **對象**:進階
-* **目標**:介紹無頭式CMS製作的參考使用方式。可用的參考類型及其用途：
+* **目標**:介紹無頭式CMS製作的參考使用方式。 可用的參考類型及其用途：
 
    * 內容參考資料
    * 資產/媒體參考
@@ -46,7 +43,7 @@ ht-degree: 2%
 
 ## 資產/媒體參考 {#assets-media-references}
 
-可使用&#x200B;**插入資產**&#x200B;選項，在文字區塊中參考資產（例如影像或媒體）。 這會開啟一個瀏覽器，供您選取資產。
+可在文字區塊中參考資產（例如影像或媒體），方法是使用 **插入資產** 選項。 這會開啟一個瀏覽器，供您選取資產。
 
 ![內容片段 — 插入資產](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -82,7 +79,7 @@ ht-degree: 2%
 
 ### 如何製作巢狀片段 {#author-nested-fragment}
 
-製作片段參考相當簡單（雖然欄位通常不會標示為&#x200B;**片段參考**）。 您可以直接輸入參考，或（更可能）選取資料夾圖示以開啟瀏覽器，供您導覽並選取所需片段。
+製作片段參考相當簡單(不過通常欄位不會標示為 **片段參考**)。 您可以直接輸入參考，或（更可能）選取資料夾圖示以開啟瀏覽器，供您導覽並選取所需片段。
 
 ![內容片段 — 參考](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
@@ -93,7 +90,7 @@ ht-degree: 2%
 
 ### 如何導覽巢狀片段 {#navigate-nested-fragment}
 
-使用內容片段編輯器的&#x200B;**結構樹**&#x200B;標籤，您可以導覽至片段所參考的片段，然後導覽其可能包含的任何參考。 選取參考會開啟該片段以供編輯。
+使用 **結構樹** 內容片段編輯器的索引標籤，您可以導覽至片段所參考的片段，然後導覽其可能包含的任何參考。 選取參考會開啟該片段以供編輯。
 
 >[!NOTE]
 >
@@ -109,7 +106,7 @@ ht-degree: 2%
 
 ## 下一步 {#whats-next}
 
-現在您已了解內容片段中的參考和結構，下一步是[了解中繼資料和標籤的方式](metadata-tagging.md)。 這將介紹並討論如何定義內容片段的中繼資料和標籤。
+現在您已了解內容片段中的參考和結構，下一步是 [了解中繼資料和標籤的相關資訊](metadata-tagging.md). 這將介紹並討論如何定義內容片段的中繼資料和標籤。
 
 ## 其他資源 {#additional-resources}
 

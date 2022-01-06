@@ -1,22 +1,19 @@
 ---
 title: 了解如何定義內容片段的中繼資料和標籤
 description: 了解如何定義內容片段的中繼資料和標籤
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 3%
 
 ---
 
-
 # 了解如何定義內容片段的中繼資料和標籤 {#author-headless-metadata-tagging}
 
 ## 迄今為止的故事 {#story-so-far}
 
-[AEM無頭內容作者歷程](overview.md)開始時，[簡介](introduction.md)涵蓋與無頭內容製作相關的基本概念和術語。
+在 [AEM無頭內容製作歷程](overview.md) the [簡介](introduction.md) 涵蓋與無頭製作相關的基本概念和術語。
 
 在上一步中，介紹了如何使用引用進行無頭CMS創作。 您已了解可用的參考類型，以及其用途：內容參考、資產/媒體參考和片段參考。
 
@@ -35,11 +32,11 @@ ht-degree: 3%
 
    ![建立內容片段 — 提供名稱](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* 內容片段編輯器的&#x200B;**中繼資料**&#x200B;標籤可讓您新增各種中繼資料欄位，以及從專案預先定義的&#x200B;**標籤**:
+* 此 **中繼資料** 內容片段編輯器的索引標籤可讓您新增各種中繼資料欄位和預先定義 **標籤** 從您的專案：
 
    ![內容片段編輯器 — 中繼資料](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   * 您也可以使用Assets控制台工具列中的&#x200B;**屬性**&#x200B;選項直接存取。
+   * 您也可以直接存取，使用 **屬性** 選項。
 
 ## 下一步 {#whats-next}
 
