@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service Sites
 description: Adobe Experience Manager as a Cloud Service Sites 自助資源與文件連結
-landing-page-description: 了解如何使用及管理AEM Sites as a Cloud Service。
+landing-page-description: 了解如何使用 AEM Sites as a Cloud Service 進行編寫和管理。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 76%
+source-wordcount: '390'
+ht-degree: 81%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 76%
 * [Dispatcher 文件](/help/implementing/dispatcher/overview.md)
 * [HTL 文件](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
 * [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
-* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager 文件](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 入門
 description: Adobe Experience Manager as a Cloud Service 入門自助資源與文件連結
-landing-page-description: 本指南提供如何開始使用AEMas a Cloud Service的摘要，包括如何取得存取權和重要的資料保護資訊。
+landing-page-description: 本指南提供如何開始使用 AEM as a Cloud Service 的摘要，包括如何取得存取權和重要的資料保護資訊。
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 23%
+source-wordcount: '518'
+ht-degree: 29%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 23%
 * [Dispatcher 文件](/help/implementing/dispatcher/overview.md)
 * [HTL 文件](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
 * [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
-* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager 文件](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

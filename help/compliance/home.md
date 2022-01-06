@@ -1,17 +1,17 @@
 ---
 title: 合規性
-description: 本頁列出自助資源，提供有關Experience Manageras a Cloud Service合規性的資訊。
-landing-page-description: 如需AEM as a Cloud Service合規性的概觀，包括隱私權和協助工具，請從這裡開始。
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+description: 本頁列出自助資源，提供有關 Experience Manager as a Cloud Service 合規性的資訊。
+landing-page-description: 如需 AEM as a Cloud Service 合規性的總覽，包括隱私權和協助工具，請從這裡開始。
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 70%
+source-wordcount: '386'
+ht-degree: 84%
 
 ---
 
 # AEM as a Cloud Service 合規性 {#aem-compliance}
 
-本頁列出自助資源，提供有關Experience Manageras a Cloud Service合規性的資訊。
+本頁列出自助資源，提供有關 Experience Manager as a Cloud Service 合規性的資訊。
 
 ## 重要文章概覽 {#key-articles}
 
@@ -43,7 +43,7 @@ ht-degree: 70%
 * [Dispatcher 文件](/help/implementing/dispatcher/overview.md)
 * [HTL 文件](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
 * [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
-* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager 文件](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社群論壇](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

@@ -1,12 +1,12 @@
 ---
 title: AEM 內容與商務
-description: AEM內容與商務自助資源與檔案連結
-landing-page-description: 了解如何使用及管理 Experience Manager 內容與商務 as a Cloud Service。
+description: AEM Content and Commerce 自助資源和文件連結
+landing-page-description: 了解如何使用及管理 Experience Manager Content and Commerce as a Cloud Service。
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 64%
+source-wordcount: '357'
+ht-degree: 68%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 64%
 * [Dispatcher 文件](/help/implementing/dispatcher/overview.md)
 * [HTL 文件](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
 * [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
-* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager 文件](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
