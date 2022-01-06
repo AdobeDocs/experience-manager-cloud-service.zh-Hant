@@ -2,9 +2,9 @@
 title: 過時和移除的功能
 description: 特定於中已過時和已移除功能的發行說明 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 9410b061278d916c95233ecba7f7f946fccc51ed
+source-git-commit: e613ba71347d60dd9c4a2cdd6da8bd0696b00070
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '582'
 ht-degree: 34%
 
 ---
@@ -53,7 +53,8 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | [!DNL Sites] | Portal Director 和 Portlet 元件 | 這些功能已於 [!DNL Experience Manager] 6.4，現已從 [!DNL Experience Manager]. |
 | [!DNL Sites] | Design Importer | 此功能已移除，作為 [!DNL Experience Manager] 在運行時無法訪問儲存庫。 |
 | [!DNL Assets] | [!DNL Assets] 無法與 Marketing Cloud Assets 核心服務和 Creative Cloud 服務共用。 | 與整合 [!DNL Adobe Creative Cloud]，使用 [Adobe資產連結](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html). |
-| [!DNL Foundation] | 支援Apache Sling資料來源（OSGi套件組合org.apache.sling.datasource）。 | N/A |
+| [!DNL Foundation] | 支援Apache Sling資料來源（OSGi套件組合org.apache.sling.datasource） | N/A |
+| [!DNL Foundation] | 支援JST指令碼範本（OSGi套件組合org.apache.sling.scripting.jst） | 不適用 |
 
 ## Java API {#java-api}
 
