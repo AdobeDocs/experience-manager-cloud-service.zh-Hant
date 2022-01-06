@@ -1,9 +1,9 @@
 ---
-title: 如何在Experience Manager Sites頁面上建立Forms Portal?
+title: 如何在Experience Manager Sites頁面上建立Forms Portal
 description: 了解如何在Forms頁面上建立AEM Sites入口網站和使用現成可用的核心元件。
-source-git-commit: 4c42abfe2cc1b11aefb2b298e883406ca5c17fd2
+source-git-commit: 50eeb2c1e6925b39b03bbbdd627169453ea1c1d8
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1784'
 ht-degree: 0%
 
 ---
@@ -59,22 +59,15 @@ AEM Forms可立即提供下列入口網站元件：
 
    此外，變更 `appTitle`, `appId`，和 `groupId`，以反映您的環境。
 
+1. **在發行前，請執行下列步驟以使用Forms Portal元件：**
+   * [啟用發行前管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
+   * 取代 `core-forms-components-*` 版本，以及 `Cloud Manager/AEM Archetype` 透過更新 `<core.forms.components.version>x.y.z</core.forms.components.version>` 頂層屬性 `pom.xml` 原型項目。
+
 1. **將專案部署至本機開發環境：** 您可以使用下列命令來部署至本機開發環境
 
    `mvn -PautoInstallPackage clean install`
 
    有關命令的完整清單，請參見 [建置和安裝](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
-
-1. [包括核心元件偽影](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds) 依賴性如下：
-
-   ```shell
-   <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>{TBD}</artifactId>
-               <type>content-package</type>
-               <version>{TBD}</version>
-   </dependency>
-   ```
 
 1. [將程式碼部署至 [!DNL AEM Forms] as a Cloud Service環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
 
@@ -85,7 +78,7 @@ AEM Forms可立即提供下列入口網站元件：
 
 ### 建立 Azure 儲存體設定 {#create-azure-storage-configuration}
 
-執行這些步驟之前，請確定您有 [!DNL Azure] 儲存帳戶和存取金鑰，以授權存取 [!DNL Azure] 儲存帳戶。
+執行這些步驟之前，請確定您擁有Azure儲存帳戶和存取金鑰，以授權存取 [!DNL Azure] 儲存帳戶。
 
 1. 導覽至 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure儲存]**.
 1. 選取要建立設定的資料夾，然後點選 **[!UICONTROL 建立]**.
