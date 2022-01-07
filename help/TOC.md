@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f6b9a8d09ae0bbc57ec2ba30694f3c1b0b163379
+source-git-commit: 98862df8b69657cf3a8a4a0f54d1285b3cab526f
 workflow-type: tm+mt
 source-wordcount: '3441'
-ht-degree: 31%
+ht-degree: 42%
 
 ---
 
@@ -322,7 +322,7 @@ ht-degree: 31%
       + [MediaLibrary 功能](/help/assets/medialibrary.md)
       + [匯入和匯出資產中繼資料](/help/assets/metadata-import-export.md)
    + 共用與發佈資產 {#brand-portal}
-      + [設定 [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [設定  [!DNL Assets]  和 [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [將資產發佈至 [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
       + [從發佈資產 [!DNL Brand Portal] to [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
    + 內容片段 {#content-fragments}
@@ -391,81 +391,82 @@ ht-degree: 31%
       + [設定 [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + 表單 {#forms}
    + [簡介](/help/forms/home.md)
-   + [主要功能](/help/forms/key-features.md)
+   + [重要功能](/help/forms/key-features.md)
    + [重大變更](/help/forms/notable-changes.md)
-   + 設定和設定服務 {#setup-environment}
-      + [板載到Cloud Service環境](/help/forms/setup-forms-cloud-service.md)
+   + 安裝及設定服務{#setup-environment}
+      + [Cloud Service 環境入門](/help/forms/setup-forms-cloud-service.md)
       + [設定本機開發環境](/help/forms/setup-local-development-environment.md)
-      + [安裝及設定Forms Designer](/help/forms/installing-configuring-designer.md)
-   + 管理使用者群組、表單和相關資產 {#manage-forms-and-related-assets}
-      + [群組和權限](/help/forms/forms-groups-privileges-tasks.md)
-      + [匯入、匯出和組織最適化Forms、PDF forms和其他資產](/help/forms/import-export-forms-templates.md)
-   + 將PDF forms轉換為最適化Forms {#afcs}
+      + [安裝及設定 Forms Designer](/help/forms/installing-configuring-designer.md)
+   + 管理使用者群組、表單和相關資產{#manage-forms-and-related-assets}
+      + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
+      + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
+   + 將 PDF 表單轉換為最適化表單
+{#afcs}
       + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
-      + [將現有PDF表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
-      + [檢閱並修正轉換後的表格](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
-   + 建立和發佈最適化表單 {#create-an-adaptive-form}
-      + 開始之前 {#before-you-start}
+      + [將現有 PDF 表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
+      + [檢閱並修正轉換後的表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
+   + 建立及發佈最適化表單{#create-an-adaptive-form}
+      + 開始之前{#before-you-start}
          + [建立範本](/help/forms/template-editor.md)
          + [建立主題](/help/forms/themes.md)
-         + [將您的資料來源連線至Cloud Service](/help/forms/data-integration.md)
-      + 建立最適化表單 {#create-an-adaptive-form-on-forms-cs}
+         + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
+      + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
          + [建立最適化表單](/help/forms/creating-adaptive-form.md)
-         + [設計最適化表單的JSON結構](/help/forms/adaptive-form-json-schema-form-model.md)
-         + [設計最適化表單的XML架構](/help/forms/adaptive-form-xml-schema-form-model.md)
-         + [使用Forms Designer](/help/forms/use-forms-designer.md)
+         + [為最適化表單設計 JSON 綱要](/help/forms/adaptive-form-json-schema-form-model.md)
+         + [為最適化表單設計 XML 綱要](/help/forms/adaptive-form-xml-schema-form-model.md)
+         + [使用 Forms Designer](/help/forms/use-forms-designer.md)
          + [透過延遲載入改善大型表單的效能](/help/forms/lazy-loading-adaptive-forms.md)
-      + 新增元件至最適化表單 {#add-components-to-an-adaptive-form}
+      + 將元件新增至最適化表單{#add-components-to-an-adaptive-form}
          + [在最適化表單中使用驗證碼](/help/forms/captcha-adaptive-forms.md)
-         + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-      + 設定版面配置並將樣式套用至最適化表單{#configure-layout-of-an-adaptive-form}
+         + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+      + 設定版面並將樣式套用至最適化表單{#configure-layout-of-an-adaptive-form}
          + [設定最適化表單的版面](/help/forms/layout-capabilities-adaptive-forms.md)
-         + [使用「版面」模式調整元件大小](/help/forms/resize-using-layout-mode.md)
+         + [使用版面模式調整元件大小](/help/forms/resize-using-layout-mode.md)
          + [建立多步驟資料擷取體驗](/help/forms/introduction-form-sequence.md)
-         + [將內嵌CSS樣式套用至個別適用性表單元件](/help/forms/inline-style-adaptive-forms.md)
-      + 在適用性表單中新增規則並使用運算式 {#add-rules-and-use-expressions-in-an-adaptive-form}
-         + [新增規則至適用性表單](/help/forms/rule-editor.md)
+         + [將 CSS 內嵌樣式套用至個別的最適化表單元件](/help/forms/inline-style-adaptive-forms.md)
+      + 在最適化表單中新增規則和使用運算式{#add-rules-and-use-expressions-in-an-adaptive-form}
+         + [將規則新增至最適化表單](/help/forms/rule-editor.md)
       + 使用 [!DNL Adobe Sign] {#use-adobe-sign}
-         + [使用Adobe Sign對適用性表單進行電子簽署](/help/forms/working-with-adobe-sign.md)
-      + 設定提交動作和中繼資料提交 {#configure-submit-actions-and-metadata-submission}
-         + [設定最適化表單的提交動作](/help/forms/configuring-submit-actions.md)
+         + [使用 Adobe Sign 在最適化表單上進行電子簽名](/help/forms/working-with-adobe-sign.md)
+      + 設定提交動作和中繼資料提交{#configure-submit-actions-and-metadata-submission}
+         + [為最適化表單設定提交動作](/help/forms/configuring-submit-actions.md)
          + [設定重新導向頁面](/help/forms/configuring-redirect-page.md)
-         + [設定最適化表單的非同步提交](/help/forms/asynchronous-submissions-adaptive-forms.md)
+         + [為最適化表單設定非同步提交](/help/forms/asynchronous-submissions-adaptive-forms.md)
          + [建立自訂提交動作](/help/forms/custom-submit-action-form.md)
       + [產生記錄文件](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-      + 新增或改善中繼資料 {#manage-metadata}
+      + 新增或改進中繼資料{#manage-metadata}
          + [新增、移除或編輯最適化表單的中繼資料](/help/forms/manage-form-metadata.md)
          + [重複使用最適化表單的中繼資料屬性](/help/forms/reusing-adaptive-forms.md)
-      + 改善適用性表單的協助工具 {#accessible-adaptive-forms}
-         + [建立可存取的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
+      + 改進最適化表單的協助工具功能{#accessible-adaptive-forms}
+         + [建立無障礙的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
       + [設定Forms Portal](/help/forms/configure-forms-portal.md)
-   + 將表單與一或多個資料來源整合 {#use-form-data-model}
+   + 將表單與一個或多個資料來源整合{#use-form-data-model}
       + [設定資料來源](/help/forms/configure-data-sources.md)
       + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-      + [設定 [!DNL Azure] 儲存](/help/forms/configure-azure-storage.md)
+      + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
       + [設定 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 雲端服務](/help/forms/configure-msdynamics-salesforce.md)
       + [建立表單資料模型](/help/forms/create-form-data-models.md)
-      + [使用表單資料模型](/help/forms/work-with-form-data-model.md)
+      + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
       + [使用表單資料模型](/help/forms/using-form-data-model.md)
-   + [整合Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-   + [與DocuSign整合](/help/forms/integrate-docusign-adaptive-forms.md)
+   + [與 Adobe Sign 整合](/help/forms/adobe-sign-integration-adaptive-forms.md)
+   + [與 DocuSign 整合](/help/forms/integrate-docusign-adaptive-forms.md)
    + [與Sites整合](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
-   + [整合Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-   + 建立和使用工作流程 {#create-form-centric-workflows}
+   + [與 Adobe Analytics 整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+   + 建立及使用工作流程{#create-form-centric-workflows}
       + [在工作流程中使用以Forms為中心的步驟+步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
-      + [在以Forms為中心的工作流程中使用變數](/help/forms/variable-in-aem-workflows.md)
+      + [在以 Forms 為中心的工作流程中使用變數](/help/forms/variable-in-aem-workflows.md)
       + [使用「外出」選項](/help/forms/configure-out-of-office-settings.md)
-   + 使用通訊 {#using-communications}
+   + 使用通訊{#using-communications}
       + [簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-      + [通訊API](/help/forms/aem-forms-cloud-service-communications.md)
+      + [通訊 API](/help/forms/aem-forms-cloud-service-communications.md)
       + [通訊API批次處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [在PDF文檔中使用自定義字型](/help/forms/use-custom-fonts.md)
    + [移轉至 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [常見問題](/help/forms/faq.md)
    + [已知問題](/help/forms/known-issues.md)
-   + 疑難排解 {#troubleshooting-aem-forms-cloud-service}
-      + [安裝與設定](/help/forms/troubleshooting-installation-and-configuration.md)
-      + [Dispatcher和CDN快取 ](/help/forms/troubleshooting-caching-performance.md)
+   + 疑難排解{#troubleshooting-aem-forms-cloud-service}
+      + [安裝和設定](/help/forms/troubleshooting-installation-and-configuration.md)
+      + [Dispatcher 和 CDN 快取 ](/help/forms/troubleshooting-caching-performance.md)
 + 畫面 {#screens-as-cloud-service}
    + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + Screens概覽as a Cloud Service {#overview}
@@ -664,7 +665,7 @@ ht-degree: 31%
             + [元件概觀](/help/implementing/developing/components/overview.md)
             + [範本](/help/implementing/developing/components/templates.md)
             + [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-            + [樣式系統](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/features/style-system.html)
+            + [樣式系統](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
             + [內容服務的JSON匯出工具](/help/implementing/developing/components/json-exporter.md)
             + [為元件啟用JSON匯出](/help/implementing/developing/components/enabling-json-exporter.md)
             + [影像編輯器](/help/implementing/developing/components/image-editor.md)
@@ -724,7 +725,7 @@ ht-degree: 31%
             + [內容片段的遠端AEM GraphQL查詢驗證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
       + 混合與SPA開發 {#hybrid}
          + [混合SPA與AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [SPA簡介和逐步說明](/help/implementing/developing/hybrid/introduction.md)
          + [SPA WKND教學課程](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [React快速入門](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -740,7 +741,7 @@ ht-degree: 31%
          + [在AEM中編輯外部SPA](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [SPA中的複合元件](/help/implementing/developing/hybrid/composite-components.md)
          + [伺服器端轉譯](/help/implementing/developing/hybrid/ssr.md)
-         + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [Launch整合](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA參考檔案](/help/implementing/developing/hybrid/reference-materials.md)
    + 開發人員工具 {#developer-tools}
@@ -760,7 +761,7 @@ ht-degree: 31%
       + [ContextHub診斷](/help/implementing/developing/personalization/contexthub-diagnostics.md)
       + [擴充ContextHub](/help/implementing/developing/personalization/extending-contexthub.md)
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
-      + [使用ContextHub設定區段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/personalization/contexthub-segmentation.html)
+      + [使用ContextHub設定區段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
    + 設定和擴充 AEM as a Cloud Service {#configuring-and-extending}
       + 使用App Builder擴充AEM{#app-builder}
          + [使用Adobe開發人員應用程式產生器擴充AEM](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
