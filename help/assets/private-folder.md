@@ -4,9 +4,9 @@ description: 了解如何在 [!DNL Adobe Experience Manager Assets] 並與其他
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
-source-git-commit: ac8dc2a765aba5be45017cf4adbc8f64b20ff7f3
+source-git-commit: 103bf8a477fb851e093bfde8e2c0535f49a01566
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >私人資料夾至少有一個具有「所有者」角色的成員。
 >
->若要建立私人資料夾，您需要 `Read` 和 `Modify` 對要建立私人資料夾的父資料夾的權限。 如果您不是管理員，預設不會為您啟用這些權限 `/content/dam`. 在此情況下，請先取得使用者ID/群組的這些權限，再嘗試建立私人資料夾。
+>若要建立私人資料夾，您需要 `Read` 和 `Modify` 對您建立私人資料夾的父資料夾的權限。 如果您不是管理員，預設不會在 `/content/dam`. 在此情況下，請先取得使用者ID/群組的這些權限，再嘗試建立私人資料夾。
 
 ## 建立和共用私人資料夾  {#create-share-private-folder}
 
