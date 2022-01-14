@@ -1,12 +1,12 @@
 ---
-title: 整合 Adobe Analytics
-description: '整合 Adobe Analytics '
+title: 將Adobe Analytics與Experience Cloud設定自動化整合
+description: Experience Cloud設定自動化提供簡單且自動化的方式，透過簡單的UI精靈介面，整合及檢測Experience Manager Sites與Experience Platform Launch及Adobe Analytics。 了解如何透過您自己的網站使用自動化設定。
 feature: Administering
 role: Admin
-source-git-commit: 4bf5ee1218f775efdc7829b790360033ad756c9a
+source-git-commit: 75d8f2a14ea97216c48c3bf242aa6186d97d4490
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 2%
+source-wordcount: '639'
+ht-degree: 0%
 
 ---
 
