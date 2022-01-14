@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 98862df8b69657cf3a8a4a0f54d1285b3cab526f
+source-git-commit: c136703a14af8a0366fb39c00b7b73f2d320a448
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3447'
 ht-degree: 42%
 
 ---
@@ -266,6 +266,7 @@ ht-degree: 42%
             + [翻譯最佳實務](/help/sites-cloud/administering/translation/best-practices.md)
    + 整合 AEM as a Cloud Service {#integrations}
       + [整合 Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
+      + [與Adobe Analytics自動設定整合](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [整合 Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 + 資產 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
@@ -400,8 +401,7 @@ ht-degree: 42%
    + 管理使用者群組、表單和相關資產{#manage-forms-and-related-assets}
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
       + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
-   + 將 PDF 表單轉換為最適化表單
-{#afcs}
+   + 將PDF forms轉換為最適化Forms {#afcs}
       + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
       + [將現有 PDF 表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
       + [檢閱並修正轉換後的表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
