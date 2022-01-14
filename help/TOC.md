@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c136703a14af8a0366fb39c00b7b73f2d320a448
+source-git-commit: 95e3a8f163c0f66212cfb50b30323f63a2292ce1
 workflow-type: tm+mt
-source-wordcount: '3447'
-ht-degree: 42%
+source-wordcount: '3453'
+ht-degree: 41%
 
 ---
 
@@ -347,6 +347,7 @@ ht-degree: 42%
       + [可選 — 配置Dynamic Media，一般設定](/help/assets/dynamic-media/dm-general-settings.md)
       + [選用 — 設定Dynamic Media、發佈設定](/help/assets/dynamic-media/dm-publish-settings.md)
       + [疑難排解Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
+      + [設定Dynamic Media別名帳戶](/help/assets/dynamic-media/dm-alias-account.md)
       + [Dynamic Media 無障礙內容](/help/assets/dynamic-media/accessibility-dm.md)
       + [管理Dynamic Media資產](/help/assets/dynamic-media/managing-assets.md)
       + [影像品質最佳化的最佳作法](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
