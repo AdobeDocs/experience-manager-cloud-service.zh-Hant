@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中使用視訊，例如編碼視訊、
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 9842ee9117c33155ce206452d34d10123da9366e
+source-git-commit: d5ac82da6c46a020fc1ff9323a127b05551a3f88
 workflow-type: tm+mt
-source-wordcount: '9458'
+source-wordcount: '9476'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 4%
       * 深入了解 [組織數位資產](/help/assets/organize-assets.md).
    * 將您的主要來源影片上傳至資料夾。 將視訊新增至資料夾時，會根據您指派給資料夾的視訊處理設定檔進行編碼。
 
-      * Dynamic Media主要支援長度最多30分鐘的簡短影片。
+      * Dynamic Media主要支援長度上限30分鐘、解析度超過50 x 50的短片影片。
       * 您可以上傳每個高達15 GB的視訊檔案。
       * [上傳您的影片](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * 深入了解 [支援的輸入檔案格式](/help/assets/file-format-support.md).
@@ -273,7 +273,7 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
 
 為視訊檔案編碼時，請使用盡可能高品質的來源視訊檔案。 請避免使用先前編碼的視訊檔案，因為這些檔案已經壓縮，而進一步編碼會造成品質欠佳的視訊。
 
-* Dynamic Media主要支援長度最多30分鐘的簡短影片。
+* Dynamic Media主要支援長度上限30分鐘、解析度超過50 x 50的短片影片。
 * 您可以上傳最多15 GB的主要來源視訊檔案。
 
 下表說明了源視頻檔案編碼前必須具有的建議大小、外觀比例和最小比特率：
