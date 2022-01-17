@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service中備份和還原
 description: 在AEMas a Cloud Service中備份和還原
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
+source-git-commit: 7778430b409bdd6f30530d34f2e8cd10d63df153
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ ht-degree: 0%
 
 AEMas a Cloud Service支援：
 
+* 用於預備、生產和開發環境的備份和恢復。
 * 24小時時間點恢復，這意味著系統可以在過去24小時內恢復到任何點。
 * 從過去7天每天兩次的特定Adobe定義時間戳記還原。  任何復寫訊息（刪除、更新、建立）都將保留。
 
