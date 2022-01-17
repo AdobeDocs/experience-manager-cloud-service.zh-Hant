@@ -1,9 +1,9 @@
 ---
 title: '使用自訂字型 '
 description: '使用自訂字型 '
-source-git-commit: 7dd3785206b6d79caa500a155d3a6f3597303e65
+source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,11 @@ ht-degree: 0%
 
 **Cloud Service通訊檔案正在測試中**
 
-您可以使用Formsas a Cloud Service通訊，將XDP範本、XDP型PDF檔案或Acrobat Forms(AcroForm)與XML資料結合，以產生PDF檔案。 您可以使用系統字型(Cloud Service中包含的字型)或自定義字型（組織批准的字型）來渲染生成的PDF文檔。
-
-系統字型已在Cloud Service中可用。 您可以使用Cloud Service開發專案，將自訂字型新增至Cloud Service環境。
+您可以使用Formsas a Cloud Service通訊將XDP範本、XDP型PDF檔案或Acrobat表單(AcroForm)與XML資料結合，以產生PDF檔案。 您可以使用Cloud Service中包含的字型或自訂字型（組織批准的字型）來呈現生成的PDF文檔。 您可以使用Cloud Service開發專案，將自訂字型新增至Cloud Service環境。
 
 ## PDF檔案的行為
 
-您可以 [嵌入字型](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) PDF文檔或僅指定字型的名稱。 嵌入字型時，PDF文檔在所有平台上都顯示（外觀）相同。 它使用內嵌字型來確保外觀和風格一致。 當字型未嵌入時，PDF呈現客戶端將在客戶端電腦上搜索字型。 如果該字型在客戶端電腦上可用，則PDF使用指定的字型，否則PDF將以後援字型呈現。
+您可以 [嵌入字型](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) 到PDF文檔。 嵌入字型時，PDF文檔在所有平台上都顯示（外觀）相同。 它使用內嵌字型來確保外觀和風格一致。 未內嵌字型時，字型呈現取決於PDF檢視器用戶端的呈現設定。 如果該字型在客戶端電腦上可用，則PDF使用指定的字型，否則PDF將以後援字型呈現。
 
 ## 將自訂字型新增至Formsas a Cloud Service環境
 
