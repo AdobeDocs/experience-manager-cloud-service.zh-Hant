@@ -2,9 +2,9 @@
 title: Formsas a Cloud Service通訊簡介
 description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 0673aa4f2f0ad2f0a5205bf929de3f26aea0d879
+source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1840'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 通訊API可協助將範本(XFA或PDF)與客戶資料([XML資料](#form-data))，以生成PDF和打印格式的文檔，如PS、PCL、DPL、IPL和ZPL格式。
 
-通常，您會使用設計工具建立範本，並使用通訊API來合併資料與範本。 您的應用程式可以將輸出文檔發送到網路打印機、本地打印機或儲存系統進行存檔。 典型的現成可用和自訂工作流程如下所示：
+通常，您使用 [設計工具](use-forms-designer.md) 和使用通訊API來合併資料與範本。 您的應用程式可以將輸出文檔發送到網路打印機、本地打印機或儲存系統進行存檔。 典型的現成可用和自訂工作流程如下所示：
 
 ![通訊工作流程](assets/communicaions-workflow.png)
 
@@ -44,9 +44,9 @@ ht-degree: 1%
 
 通訊提供HTTP API，以供隨需和批次檔案產生：
 
-* **同步API** 適用於按需、低延遲和單記錄文檔生成方案。 這些API更適合使用者動作的使用案例。 例如，在使用者填妥表單後產生檔案。
+* **[同步API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** 適用於按需、低延遲和單記錄文檔生成方案。 這些API更適合使用者動作的使用案例。 例如，在使用者填妥表單後產生檔案。
 
-* **批次API（非同步API）** 適合於計畫、高吞吐量和多文檔生成方案。 這些API會以批次產生檔案。 例如，每月生成電話賬單、信用卡對帳單和福利對帳單。
+* **[批次API（非同步API）](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** 適合於計畫、高吞吐量和多文檔生成方案。 這些API會以批次產生檔案。 例如，每月生成電話賬單、信用卡對帳單和福利對帳單。
 
 ## 入門
 
@@ -143,7 +143,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### 表單資料 {#form-data}
 
-通訊API會接受通常在設計工具中建立的表單設計，以及作為輸入的XML表單資料。 要用資料填充文檔，要填充的每個表單欄位的XML表單資料中必須存在XML元素。 XML元素名稱必須與欄位名稱相符。 如果XML元素與表單欄位不對應，或XML元素名稱與欄位名稱不匹配，則會忽略該元素。 不需要匹配XML元素的顯示順序。 重要因素是XML元素需指定相應的值。
+通訊API會接受通常於 [設計工具](use-forms-designer.md) 和XML表單資料作為輸入。 要用資料填充文檔，要填充的每個表單欄位的XML表單資料中必須存在XML元素。 XML元素名稱必須與欄位名稱相符。 如果XML元素與表單欄位不對應，或XML元素名稱與欄位名稱不匹配，則會忽略該元素。 不需要匹配XML元素的顯示順序。 重要因素是XML元素需指定相應的值。
 
 請考量下列貸款申請表範例：
 
@@ -186,13 +186,13 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 若要完整存取通訊API的轉譯功能，建議您使用XDP檔案作為輸入。 有時可使用PDF檔案。 不過，使用PDF檔案作為輸入有下列限制：
 
-不包含XFA資料流的PDF文檔無法呈現為PostScript、PCL或ZPL。 通訊API可將具有XFA資料流（即在Designer中建立的表單）的PDF檔案轉譯為雷射和標籤格式。 如果PDF檔案經過簽署、認證或包含使用權限(使用AEM FormsReader擴充功能服務套用)，則無法以這些列印格式呈現。
+不包含XFA資料流的PDF文檔無法呈現為PostScript、PCL或ZPL。 通訊API可以使用XFA資料流(即在 [設計工具](use-forms-designer.md))轉換為雷射和標籤格式。 如果PDF檔案經過簽署、認證或包含使用權限(使用AEM FormsReader擴充功能服務套用)，則無法以這些列印格式呈現。
 
-&lt;!-* * Acrobat表單不支援執行階段選項，例如PDF版本和標籤PDF。 這些變數對包含XFA資料流的PDF forms有效；但是，這些表單無法簽名或認證。
+<!-- Run-time options such as PDF version and tagged PDF are not supported for Acrobat forms. They are valid for PDF forms that contain XFA streams; however, these forms cannot be signed or certified. 
 
-### 電子郵件支援 {#email-support}
+### Email support {#email-support}
 
-若要使用電子郵件功能，您可以在使用電子郵件步驟的Experience Manager工作流程中建立程式。 工作流程代表您正在自動化的業務流程。 —>
+For email functionality, you can create a process in Experience Manager Workflows that uses the Email Step. A workflow represents a business process that you are automating. -->
 
 ### 可列印區域 {#printable-areas}
 
@@ -202,9 +202,10 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### 指令碼 {#scripts}
 
-與通訊API搭配使用的表單設計可包含在伺服器上執行的指令碼。 確保表單設計不包含在用戶端上執行的指令碼。 有關建立表單設計指令碼的資訊，請參閱設計工具幫助。
+與通訊API搭配使用的表單設計可包含在伺服器上執行的指令碼。 確保表單設計不包含在用戶端上執行的指令碼。 如需建立表單設計指令碼的相關資訊，請參閱 [設計工具說明](use-forms-designer.md).
 
-&lt;!-* ####使用字型文檔注意事項使用字型>> —>
+<!-- #### Working with Fonts
+ Document Considerations for Working with Fonts>> -->
 
 ### 字型對應 {#font-mapping}
 
@@ -255,7 +256,7 @@ Type-1和OpenType®字型未嵌入到PCL輸出中。 使用Type-1和OpenType®�
 
 ### 使用XCI設定檔案 {#working-with-xci-files}
 
-通訊API使用XCI設定檔案來執行工作，例如控制輸出是單一面板或編頁。 雖然此檔案包含可設定的設定，但修改此值並非典型值。 &lt;!-* default.xci檔案位於svcdata\XMLFormService資料夾中。 —>
+通訊API使用XCI設定檔案來執行工作，例如控制輸出是單一面板或編頁。 雖然此檔案包含可設定的設定，但修改此值並非典型值。 <!-- The default.xci file is located in the svcdata\XMLFormService folder. -->
 
 您可以在使用通訊API時傳遞修改的XCI檔案。 執行此操作時，請建立預設檔案的副本，僅更改需要修改以滿足您的業務需求的值，然後使用修改的XCI檔案。
 
