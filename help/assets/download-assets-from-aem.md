@@ -1,13 +1,13 @@
 ---
 title: 下載資產
 description: 從下載資產 [!DNL Adobe Experience Manager Assets] 和啟用或停用下載功能。
-contentOwner: AG
+contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1196'
 ht-degree: 3%
 
 ---
@@ -54,13 +54,13 @@ Asynchronous downloads are triggered in either of the following case:
 
 ### 啟用大量下載的電子郵件通知 {#enable-emails-for-large-downloads}
 
-在下列任何情況下，都會觸發非同步下載：
+在下列任一情況下會觸發非同步下載：
 
 * 如果超過10個資產
 * 如果下載大小超過100 MB
 * 如果下載需要超過30秒的時間來準備
 
-雖然隨機下載會在後端執行，但使用者仍可繼續探索並進一步Experience Manager。 下載程式完成後，需要立即可用的機制通知使用者。 要實現此目標，管理員可以通過設定SMTP伺服器來配置電子郵件服務。 請參閱 [配置郵件服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+雖然非同步下載會在後端執行，但使用者可以繼續探索，並在Experience Manager中進一步操作。 下載程式完成後，需要立即可用的機制通知使用者。 要實現此目標，管理員可以通過設定SMTP伺服器來配置電子郵件服務。 請參閱 [配置郵件服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 設定電子郵件服務後，管理員和使用者就可以從Experience Manager介面啟用電子郵件通知。
 
