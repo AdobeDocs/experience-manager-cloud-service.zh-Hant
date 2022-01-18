@@ -2,9 +2,9 @@
 title: Formsas a Cloud Service通訊簡介
 description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
+source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1869'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,12 @@ ht-degree: 1%
 
 * 簡化的隨需和批次檔案產生功能
 
-* 提供HTTP API，以便與現有系統輕鬆整合
+* HTTP API可更輕鬆與現有系統整合。 包括獨立的API，以用於隨選（低延遲）和批次作業（高吞吐量作業）。 它使文檔生成成為一項高效的任務。
 
 * 安全存取資料。 通信API僅連接到客戶指定的資料儲存庫並從中訪問資料，不建立資料的本地副本，使通信高度安全。
 
-* 針對低延遲和高吞吐量操作而單獨使用的API，使文檔生成成為一項高效的任務。
-
 ![信用卡報表示例](assets/statement.png)
+您可以使用Communications API建立信用卡對帳單範例。 對帳單使用相同的模板，但根據每個客戶的信用卡使用情況將資料分開。
 
 ## 如何運作？
 
@@ -143,16 +142,15 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### 表單資料 {#form-data}
 
-通訊API會接受通常於 [設計工具](use-forms-designer.md) 和XML表單資料作為輸入。 要用資料填充文檔，要填充的每個表單欄位的XML表單資料中必須存在XML元素。 XML元素名稱必須與欄位名稱相符。 如果XML元素與表單欄位不對應，或XML元素名稱與欄位名稱不匹配，則會忽略該元素。 不需要匹配XML元素的顯示順序。 重要因素是XML元素需指定相應的值。
+通訊API會接受通常於 [設計工具](use-forms-designer.md) 和XML表單資料作為輸入。 要用資料填充文檔，要填充的每個表單欄位的XML表單資料中必須存在XML元素。 XML元素名稱必須與欄位名稱相符。 如果XML元素與表單欄位不對應，或者XML元素名稱與欄位名稱不匹配，則忽略XML元素。 不需要匹配XML元素的顯示順序。 重要因素是XML元素需指定相應的值。
 
 請考量下列貸款申請表範例：
 
 ![貸款申請表](assets/loanFormData.png)
 
-要將資料合併到此表單設計中，請建立與表單對應的XML資料源。 以下XML表示與抵押申請表示例對應的XML資料源。
+要將資料合併到此表單設計中，請建立與表單層次結構、欄位命名和資料類型對應的XML資料源。 以下XML表示與抵押申請表示例對應的XML資料源。
 
 ```XML
-<?xml version="1.0" encoding="UTF-8" ?>
 * <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
 * <xfa:data>
 * <data>
@@ -196,11 +194,11 @@ For email functionality, you can create a process in Experience Manager Workflow
 
 ### 可列印區域 {#printable-areas}
 
-標籤打印機的預設0.25英吋不可打印邊距不精確，因打印機和打印機而異，從標籤大小到標籤大小不等。 建議您保持0.25英吋的邊距或將其縮小。 不過，建議您不要增加不可列印的邊界。 否則，可打印區域中的資訊無法正確打印。
+標籤打印機的預設0.25英吋不可打印邊距不精確，因打印機、打印機、標籤大小和標籤大小而異，但建議您保持0.25英吋邊距或將其縮小。 不過，建議您不要增加不可列印的邊界。 否則，可打印區域中的資訊無法正確打印。
 
 請務必為打印機使用正確的XDC檔案。 例如，請避免為300-dpi打印機選擇XDC檔案，並將文檔發送到200-dpi打印機。
 
-### 指令碼 {#scripts}
+### 僅限XFA表單(XDP/PDF)的指令碼 {#scripts}
 
 與通訊API搭配使用的表單設計可包含在伺服器上執行的指令碼。 確保表單設計不包含在用戶端上執行的指令碼。 如需建立表單設計指令碼的相關資訊，請參閱 [設計工具說明](use-forms-designer.md).
 
@@ -250,7 +248,7 @@ Type-1和OpenType®字型未嵌入到PCL輸出中。 使用Type-1和OpenType®�
 * dpl600.xdc
 
 您可以使用提供的XDC檔案來生成打印文檔或根據您的要求修改它們。
-&lt;!-*不需要修改這些檔案來建立文檔。 但是，您可以修改它們以符合您的業務需求。 —>
+<!-- It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
 
 這些檔案是支援特定打印機功能的參考XDC檔案，如駐留字型、紙盤和訂書機。 這些參考的用途是幫助您了解如何使用設備配置檔案來設定自己的打印機。 參考也是同一生產線中類似打印機的起點。
 
