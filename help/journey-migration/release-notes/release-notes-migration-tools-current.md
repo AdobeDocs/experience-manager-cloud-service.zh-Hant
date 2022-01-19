@@ -2,10 +2,10 @@
 title: 《 2022.1.0版中遷移工具AEM發行說明》
 description: 《 2022.1.0版中遷移工具AEM發行說明》
 feature: Release Information
-source-git-commit: fec3a69db3b05a6b750ebf718f32f599cac24d0c
+source-git-commit: 0bc2dedd9bfbf138fddf9fe112ba0d66444fcb41
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 10%
+source-wordcount: '134'
+ht-degree: 6%
 
 ---
 
@@ -13,10 +13,6 @@ ht-degree: 10%
 # 《 2022.1.0版中遷移工具AEM發行說明》 {#release-notes}
 
 本頁概述了as a Cloud Service2022.1.0中遷移工具的AEM發行說明。
-
->[!NOTE]
->要查看Adobe Experience Manager as a Cloud Service的當前發行說明，請按一下 [這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hant)。
-
 
 ## 內容轉移工具 {#ctt-release}
 
