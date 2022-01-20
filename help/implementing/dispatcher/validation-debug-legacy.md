@@ -1,36 +1,37 @@
 ---
-title: 使用Dispatcher工具（舊版）進行驗證和除錯
-description: 使用Dispatcher工具（舊版）進行驗證和除錯
+title: 使用Dispatcher Tools（舊版）驗證和調試
+description: 使用Dispatcher Tools（舊版）驗證和調試
 feature: Dispatcher
 hidefromtoc: true
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
+source-git-commit: 97279969981d6abacbf4d15eb2002cce577d8fc9
 workflow-type: tm+mt
-source-wordcount: '2305'
+source-wordcount: '2304'
 ht-degree: 1%
 
 ---
 
-# 使用Dispatcher工具（舊版）進行驗證和除錯  {#Dispatcher-tools-legacy}
+# 使用Dispatcher Tools（舊版）驗證和調試  {#Dispatcher-tools-legacy}
 
 ## 簡介 {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->如需雲端中Dispatcher的詳細資訊，以及如何下載Dispatcher工具，請參閱雲端](/help/implementing/dispatcher/disp-overview.md)頁面中的[ Dispatcher 。
+>有關雲中Dispatcher的詳細資訊以及如何下載Dispatcher Tools，請參見 [雲中的調度程式](/help/implementing/dispatcher/disp-overview.md) 的子菜單。
 
-以下各節介紹了舊模式檔案結構、本地驗證、調試以及如何從舊模式遷移到[靈活模式](/help/implementing/dispatcher/validation-debug.md)。
+以下各節介紹舊模式檔案結構、本地驗證、調試以及如何從舊模式遷移到 [柔性模式](/help/implementing/dispatcher/validation-debug.md)。
 
-本文假設您專案的Dispatcher設定不包含檔案opt-in/USE_SOURCES_DIRECTLY。 因此，它在檔案的數量和大小上都有所限制，例如：
+本文假定項目的調度程式配置不包括檔案opt-in/USE_SOURCES_DIRECTLY。 因此，它在檔案數和大小方面存在限制，例如：
 
-* 必須使用的單一重寫檔案，而非網站專屬的檔案。
+* 必須使用的單個重寫檔案，而不是特定於站點的檔案。
 * 可自定義檔案的內容總和必須小於1MB。
 
-自Cloud Manager 2021.7.0版本起，新的Cloud Manager程式會以AEM原型28及更新版本產生Maven專案結構，其中包括上述檔案。
+自Cloud Manager 2021.7.0版開始，新的Cloud Manager程式將生成原型為28及更高的AEM大型項目結構，其中包括上述檔案。
 
-如移轉區段[從舊版模式移轉至彈性模式](#migrating-flexible)所述，強烈建議您從舊版模式移轉至彈性模式&#x200B;**。**&#x200B;使用彈性模式也會導致SDK和執行階段以改良的方式驗證和部署設定。
+是 **建議** 從舊模式遷移到靈活模式（如遷移部分中所述） [從舊模式遷移到靈活模式](#migrating-flexible)。 使用靈活模式還會使SDK和運行時以改進的方式驗證和部署配置。
 
 ## 檔案結構 {#legacy-mode-file-structure}
 
-專案的Dispatcher子資料夾（在舊版模式中）的結構如下：
+項目的Dispatcher子資料夾（在舊模式下）的結構如下：
 
 ```bash
 ./
@@ -71,63 +72,63 @@ ht-degree: 1%
         └── virtualhosts.any
 ```
 
-以下是可修改的顯著檔案說明：
+以下是可修改的顯著檔案的說明：
 
-**可自訂的檔案**
+**可自定義的檔案**
 
-可自訂下列檔案，並會在部署時傳輸至您的雲端執行個體：
+以下檔案可自定義，並將在部署時傳輸到雲實例：
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-您可以有一或多個這些檔案。 它們包含與主機名稱相符的`<VirtualHost>`項目，並允許Apache以不同規則處理每個網域流量。 檔案在`available_vhosts`目錄中建立，並在`enabled_vhosts`目錄中使用符號連結啟用。 在`.vhost`檔案中，將包含重寫和變數等其他檔案。
+您可以擁有一個或多個這些檔案。 它們包含 `<VirtualHost>` 與主機名匹配且允許Apache使用不同規則處理每個域通信的條目。 檔案是在 `available_vhosts` 目錄中的符號連結啟用 `enabled_vhosts` 的子菜單。 從 `.vhost` 將包括檔案、其他檔案（如重寫和變數）。
 
 * `conf.d/rewrites/rewrite.rules`
 
-此檔案包含自`.vhost`檔案內。 `mod_rewrite`有一組重寫規則。
+此檔案包含於 `.vhost` 的子菜單。 它有一組重寫規則 `mod_rewrite`。
 
 >[!NOTE]
 >
->目前，必須使用單一重寫檔案，而非網站專用的檔案。 可自訂檔案的內容總和通常必須小於1MB。
+>當前，必須使用單個重寫檔案，而不是特定於站點的檔案。 通常，可自定義檔案的內容總和必須小於1MB。
 
 * `conf.d/variables/custom.vars`
 
-此檔案包含自`.vhost`檔案內。 您可以在此位置為Apache變數新增定義。
+此檔案包含於 `.vhost` 的子菜單。 可在此位置中為Apache變數添加定義。
 
 * `conf.d/variables/global.vars`
 
-此檔案包含在`dispatcher_vhost.conf`檔案內。 您可以變更Dispatcher，並重新寫入此檔案中的記錄層級。
+此檔案包含於 `dispatcher_vhost.conf` 的子菜單。 您可以更改此檔案中的Dispatcher和重寫日誌級別。
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-您可以有一或多個這些檔案，且這些檔案包含伺服器陣列，以符合主機名稱，並允許Dispatcher模組以不同規則處理每個伺服器陣列。 檔案在`available_farms`目錄中建立，並在`enabled_farms`目錄中使用符號連結啟用。 在`.farm`檔案中，將包含其他檔案，如篩選器、快取規則等。
+您可以擁有一個或多個這些檔案，這些檔案包含與主機名匹配的場，並允許Dispatcher模組使用不同的規則處理每個場。 檔案是在 `available_farms` 目錄中的符號連結啟用 `enabled_farms` 的子菜單。 從 `.farm` 將包括檔案、過濾器、快取規則等其他檔案。
 
 * `conf.dispatcher.d/cache/rules.any`
 
-此檔案包含自`.farm`檔案內。 它指定快取首選項。
+此檔案包含於 `.farm` 的子菜單。 它指定快取首選項。
 
 * `conf.dispatcher.d/clientheaders/clientheaders.any`
 
-此檔案包含自`.farm`檔案內。 它會指定應將哪些要求標題轉送至後端。
+此檔案包含於 `.farm` 的子菜單。 它指定應將哪些請求標頭轉發到後端。
 
 * `conf.dispatcher.d/filters/filters.any`
 
-此檔案包含自`.farm`檔案內。 它有一組規則，可變更應篩選掉的流量，而不是設為傳送至後端。
+此檔案包含於 `.farm` 的子菜單。 它有一組規則，這些規則更改了應過濾出的流量，而不是將流量發送到後端。
 
 * `conf.dispatcher.d/virtualhosts/virtualhosts.any`
 
-此檔案包含自`.farm`檔案內。 它包含要由全局匹配匹配的主機名或URI路徑的清單。 這會決定要用來提供要求的後端。
+此檔案包含於 `.farm` 的子菜單。 它包含要由全局匹配匹配的主機名或URI路徑的清單。 這決定了用於服務請求的後端。
 
-上述檔案會參考下列不可修改的組態檔。 雲端環境中，Dispatcher不會處理不可變檔案的變更。
+上述檔案引用下面列出的不可改變的配置檔案。 雲環境中的調度程式將不處理對不可變檔案所做的更改。
 
 **不可變的配置檔案**
 
-這些檔案是基本架構的一部分，並強制執行標準和最佳實務。 這些檔案被視為不可修改，因為在本機修改或刪除這些檔案不會影響您的部署，因為這些檔案將不會傳輸至您的雲端例項。
+這些檔案是基本框架的一部分，並強制實施標準和最佳做法。 這些檔案被視為不可變的，因為在本地修改或刪除它們不會對您的部署產生影響，因為它們不會被傳輸到您的雲實例。
 
-建議上述檔案參考下列不可修改的檔案，後跟任何其他陳述式或覆蓋。 將Dispatcher設定部署至雲端環境時，無論本機開發中使用的版本為何，都會使用不可修改檔案的最新版本。
+建議上述檔案引用下面列出的不可變檔案，然後是任何附加語句或替代。 將Dispatcher配置部署到雲環境時，將使用不可變檔案的最新版本，而不管本地開發中使用的是哪個版本。
 
 * `conf.d/available_vhosts/default.vhost`
 
-包含範例虛擬主機。 對於您自己的虛擬主機，建立此檔案的副本，自定義它，轉到`conf.d/enabled_vhosts`並建立指向自定義副本的符號連結。
+包含示例虛擬主機。 對於您自己的虛擬主機，建立此檔案的副本，對其進行自定義，轉到 `conf.d/enabled_vhosts` 並建立到自定義副本的符號連結。
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -135,50 +136,50 @@ ht-degree: 1%
 
 * `conf.d/rewrites/default_rewrite.rules`
 
-適用於標準專案的預設重寫規則。 如果需要自定義，請修改`rewrite.rules`。 在您的自訂中，如果預設規則符合您的需求，您仍可以先加入。
+適用於標準項目的預設重寫規則。 如果需要自定義，請修改 `rewrite.rules`。 在自定義中，如果預設規則適合您的需要，您仍可以先包括這些規則。
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
-包含範例Dispatcher伺服器陣列。 針對您自己的伺服器陣列，建立此檔案的副本、自訂該檔案、前往`conf.d/enabled_farms`並建立自訂副本的符號連結。
+包含Dispatcher場示例。 對於您自己的伺服器場，建立此檔案的副本，自定義它，轉到 `conf.d/enabled_farms` 並建立到自定義副本的符號連結。
 
 * `conf.dispatcher.d/cache/default_invalidate.any`
 
-基本框架的一部分，在啟動時生成。 您是&#x200B;**required** ，要在您定義的每個伺服器陣列中，於`cache/allowedClients`區段中包含此檔案。
+基框架的一部分，在啟動時生成。 你是 **要求** 在您定義的每個場中包括此檔案， `cache/allowedClients` 的子菜單。
 
 * `conf.dispatcher.d/cache/default_rules.any`
 
-適用於標準專案的預設快取規則。 如果需要自定義，請修改`conf.dispatcher.d/cache/rules.any`。 在您的自訂中，如果預設規則符合您的需求，您仍可以先加入。
+適用於標準項目的預設快取規則。 如果需要自定義，請修改 `conf.dispatcher.d/cache/rules.any`。 在自定義中，如果預設規則適合您的需要，您仍可以先包括這些規則。
 
 * `conf.dispatcher.d/clientheaders/default_clientheaders.any`
 
-轉送至後端的預設要求標題，適用於標準專案。 如果需要自定義，請修改`clientheaders.any`。 在您的自訂中，如果預設請求標題符合您的需求，您仍可以先加入這些標題。
+要轉發到後端（適用於標準項目）的預設請求標頭。 如果需要自定義，請修改 `clientheaders.any`。 在自定義中，如果預設請求標頭適合您的需要，您仍可以先包括它們。
 
 * `conf.dispatcher.d/dispatcher.any`
 
-基本架構的一部分，用來說明如何包含Dispatcher伺服器陣列。
+基本框架的一部分，用於說明如何包括Dispatcher場。
 
 * `conf.dispatcher.d/filters/default_filters.any`
 
-適用於標準專案的預設篩選器。 如果需要自定義，請修改`filters.any`。 在您的自訂中，如果預設篩選器符合您的需求，您仍可以先加入這些篩選器。
+適用於標準項目的預設篩選器。 如果需要自定義，請修改 `filters.any`。 在自定義中，如果預設篩選器適合您的需要，您仍可以先包括這些篩選器。
 
 * `conf.dispatcher.d/renders/default_renders.any`
 
-作為基本框架的一部分，此檔案在啟動時生成。 您是&#x200B;**required** ，要在您定義的每個伺服器陣列中，於`renders`區段中包含此檔案。
+作為基本框架的一部分，此檔案在啟動時生成。 你是 **要求** 在您定義的每個場中包括此檔案， `renders` 的子菜單。
 
 * `conf.dispatcher.d/virtualhosts/default_virtualhosts.any`
 
-適用於標準專案的預設主機全域。 如果需要自定義，請修改`virtualhosts.any`。 在您的自訂中，您不應包含預設主機全域，因為它符合&#x200B;**every**&#x200B;傳入的要求。
+適用於標準項目的預設主機全局。 如果需要自定義，請修改 `virtualhosts.any`。 在自定義中，不應包括預設的主機globbing，因為它與 **每** 傳入請求。
 
 ## 支援的Apache模組 {#apache-modules}
 
-請參閱[支援的Apache模組](/help/implementing/dispatcher/disp-overview.md#supported-directives)。
+請參閱 [支援的Apache模組](/help/implementing/dispatcher/disp-overview.md#supported-directives)。
 
-## 本機驗證 {#local-validation-legacy-mode}
+## 本地驗證 {#local-validation-legacy-mode}
 
 >[!NOTE]
->以下各節包含使用SDK的Mac或Linux版本的命令，但Windows SDK也能以類似方式使用。
+>以下各節包括使用SDK的Mac或Linux版本的命令，但Windows SDK也可以以類似方式使用。
 
-使用`validate.sh`指令碼，如下所示：
+使用 `validate.sh` 指令碼如下所示：
 
 ```
 $ validate.sh src/dispatcher
@@ -213,38 +214,36 @@ no immutable file has been changed - check is SUCCESSFUL
 Phase 3 finished
 ```
 
-指令碼會執行下列動作：
+指令碼執行以下操作：
 
-1. 它會執行驗證器。 如果配置無效，指令碼將失敗。
-2. 它會執行`httpd -t`命令以測試語法是否正確，以便apache httpd可以啟動。 如果成功，配置應已準備就緒，可進行部署。
-3. 檢查Dispatcher SDK設定檔案的子集（如[檔案結構區段](##legacy-mode-file-structure)所述）是否未修改。 這是AEM SDK版本v2021.1.4738推出的新檢查，其中也包含Dispatcher工具2.0.36版。在此更新前，客戶可能錯誤地假設這些不可變檔案的任何本機SDK修改也會套用至雲端環境。
+1. 它運行驗證程式。 如果配置無效，則指令碼將失敗。
+2. 執行 `httpd -t` 命令以test語法是否正確，以便apache httpd可以啟動。 如果成功，配置應準備好進行部署。
+3. 檢查Dispatcher SDK配置檔案的子集（如中所述）是否不可變 [「檔案結構」部分](##legacy-mode-file-structure)，尚未修改。 這是SDK版本2021.1.4738中引入的新檢查，AEM該版本還包括Dispatcher Tools 2.0.36版。在此更新之前，客戶可能錯誤地認為這些不可變檔案的任何本地SDK修改也會應用到雲環境。
 
-在Cloud Manager部署期間，也會執行`httpd -t`語法檢查，且Cloud Manager `Build Images step failure`記錄檔中會包含任何錯誤。
+在部署雲管理器期間， `httpd -t` 語法檢查也將執行，並且Cloud Manager中將包含任何錯誤 `Build Images step failure` 日誌。
 
 ### 階段1 {#first-phase}
 
-如果未允許列出指令，則工具會記錄錯誤並傳回非零退出代碼。 此外，它還會進一步掃描模式為`conf.dispatcher.d/enabled_farms/*.farm`的所有檔案，並檢查：
+如果不允許列出指令，則工具將記錄錯誤並返回非零退出代碼。 另外，它還用模式掃描所有檔案 `conf.dispatcher.d/enabled_farms/*.farm` 並檢查：
 
-* 沒有透過`/glob`使用的允許篩選規則(如需詳細資訊，請參閱[CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)。
-* 未公開管理功能。 例如，對路徑（如`/crx/de or /system/console`）的存取。
+* 不存在使用允許通過的篩選器規則 `/glob` （請參見） [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) 的子菜單。
+* 未公開任何管理功能。 例如，對路徑(如 `/crx/de or /system/console`。
 
-請注意，驗證工具只會報告未列入允許清單之Apache指示的禁止使用。 它不會報告Apache配置的語法或語義問題，因為此資訊僅可用於運行環境中的Apache模組。
+請注意，驗證工具僅報告未允許列出的禁止使用Apache指令。 它不報告Apache配置的語法或語義問題，因為此資訊僅對運行環境中的Apache模組可用。
 
-以下提供疑難排解技術，以偵錯工具輸出的常見驗證錯誤：
+以下是用於調試工具輸出的常見驗證錯誤的故障排除技術：
 
-**在封存中找 `conf.dispatcher.d` 不到子資料夾**
+**找不到 `conf.dispatcher.d` 存檔中的子資料夾**
 
 您的封存應包含資料 `conf.d` 夾和 `conf.dispatcher.d`。請注意，您不 **應**&#x200B;在封 `etc/httpd` 存中使用首碼。
 
 **在中找不到任何場`conf.dispatcher.d/enabled_farms`**
 
-已啟用的伺服器陣列應位於提及的子資料夾中。
+已啟用的場應位於上述子資料夾中。
 
-**包含的檔案(...)必須命名：...**
+**必須命名包含的檔案(...):...**
 
-您的伺服器陣列設定中有兩個區段，**必須**包含
-特定檔案：`/cache`區段中的`/renders`和`/allowedClients`。 那些
-區段必須如下所示：
+您的伺服器場配置中有兩個部分 **必須** 包括特定檔案： `/renders` 和 `/allowedClients` 的 `/cache` 的子菜單。 這些部分必須如下所示：
 
 ```
 /renders {
@@ -262,9 +261,9 @@ Phase 3 finished
 
 **包含在未知位置的檔案：...**
 
-您的伺服器陣列設定中有四個區段可讓您包含自己的檔案：`/cache`區段中的`/clientheaders`、`filters`、`/rules`及`/virtualhosts`。 包含的檔案需命名如下：
+場配置中有四個部分，允許您包括自己的檔案： `/clientheaders`。 `filters`。 `/rules` 在 `/cache` 節和 `/virtualhosts`。 包含的檔案需要命名如下：
 
-| 章節 | 包含檔案名 |
+| 章節 | 包括檔案名 |
 |------------------|--------------------------------------|
 | `/clientheaders` | `../clientheaders/clientheaders.any` |
 | `/filters` | `../filters/filters.any` |
@@ -275,8 +274,7 @@ Phase 3 finished
 
 **包含位於(...)的語句，位於任何已知位置之外：...**
 
-除上文各段所述的六節外，不得
-要使用`$include`語句，例如，以下語句將生成此錯誤：
+除上述六節外，您不得使用 `$include` 語句，例如，以下語句將生成此錯誤：
 
 ```
 /invalidate {
@@ -284,14 +282,14 @@ Phase 3 finished
 }
 ```
 
-**允許的用戶端/轉譯不包括於：...**
+**允許的客戶端/呈現不包括於：...**
 
-如果您未在`/cache`區段中指定`/renders`和`/allowedClients`的包含，則會產生此錯誤。 請參閱
-包含的**檔案(...)必須命名：...**&#x200B;區段，以取得詳細資訊。
+如果未指定包含，則會生成此錯誤 `/renders` 和 `/allowedClients` 的 `/cache` 的子菜單。 查看
+**必須命名包含的檔案(...):...** 的子菜單。
 
-**篩選不得使用全域模式以允許請求**
+**篩選器不能使用glob模式允許請求**
 
-允許具有`/glob`樣式規則的請求是不安全的，此規則與完整的請求行相符，例如
+不安全允許使用 `/glob` 樣式規則，與完整請求行匹配，例如
 
 ```
 /0100 {
@@ -299,30 +297,28 @@ Phase 3 finished
 }
 ```
 
-此陳述式的用意是允許`css`檔案的要求，但也允許要求&#x200B;**any**&#x200B;資源，後跟查詢字串`?a=.css`。 因此，禁止使用這類篩選器（另請參閱CVE-2016-0957）。
+此語句用於允許 `css` 檔案，但也允許請求 **任何** 資源後跟查詢字串 `?a=.css`。 因此，禁止使用此類過濾器（另見CVE-2016-0957）。
 
 **包含的檔案(...)與任何已知檔案不匹配**
 
-Apache虛擬主機配置中有兩種類型的檔案，可以指定為包括：重寫和變數。
-包含的檔案需命名如下：
+Apache虛擬主機配置中有兩種類型的檔案可指定為包括：重寫和變數。
+包含的檔案需要命名如下：
 
-| 類型 | 包含檔案名 |
+| 類型 | 包括檔案名 |
 |-----------|---------------------------------|
 | 重寫 | `conf.d/rewrites/rewrite.rules` |
 | 變數 | `conf.d/variables/custom.vars` |
 
-或者，您也可以包含重寫規則的&#x200B;**default**&#x200B;版本，其名稱為`conf.d/rewrites/default_rewrite.rules`。
+或者，您可以 **預設** 重寫規則的版本，其名稱為 `conf.d/rewrites/default_rewrite.rules`。
 請注意，變數檔案沒有預設版本。
 
-**檢測到已棄用的配置佈局，啟用相容性模式**
+**檢測到不建議使用的配置佈局，啟用相容模式**
 
-此訊息指出您的設定已棄用第1版配置，包含完整
-具有`ams_`前置詞的Apache配置和檔案。 雖然仍支援回溯
-相容性，您應切換至新版面。
+此消息表示您的配置具有不建議使用的版本1佈局，包含完整的Apache配置和檔案， `ams_` 前置詞。 雖然仍然支援向後相容，但應切換到新佈局。
 
-請注意，第一階段也可以是&#x200B;**單獨運行**，而不是從包裝函式`validate.sh`指令碼運行。
+請注意，第一階段也 **單獨運行**，而不是包裝 `validate.sh` 的下界。
 
-對maven工件或`dispatcher/src`子目錄運行時，它將報告驗證失敗：
+當你用手工製品或 `dispatcher/src` 子目錄，它將報告驗證失敗：
 
 ```
 $ validator full dispatcher/src
@@ -333,7 +329,7 @@ Cloud manager validator 1.0.4
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-在Windows上，Dispatcher驗證器會區分大小寫。 因此，如果您不遵守配置所在路徑的大寫，則可能無法驗證配置，例如：
+在Windows上，調度程式驗證程式區分大小寫。 因此，如果您不尊重配置所在路徑的大寫，則無法驗證配置，例如：
 
 ```
 bin\validator.exe full src
@@ -343,22 +339,22 @@ Cloud manager validator 2.0.xx
   
 ```
 
-通過從Windows資源管理器複製並貼上路徑，然後在命令提示符下使用`cd`命令將該路徑複製並貼上到該路徑，來避免此錯誤。
+通過從Windows資源管理器中複製並貼上路徑，然後使用 `cd` 命令進入該路徑。
 
 ### 階段2 {#second-phase}
 
-此階段會在影像中啟動Docker以檢查Apache語法。 Docker必須安裝在本機，但請注意，AEM不需要執行。
+此階段通過在映像中啟動Docker來檢查apache語法。 Docker必須在本地安裝，但請注意，不需要AEM運行。
 
 >[!NOTE]
->Windows用戶需要使用Windows 10專業版或支援Docker的其他分發版。 這是在本機電腦上執行和偵錯Dispatcher的必要條件。
+>Windows用戶需要使用Windows 10專業版或支援Docker的其他發行版。 這是在本地電腦上運行和調試Dispatcher的先決條件。
 
-此階段也可通過`validator full -d out src/dispatcher`獨立運行，該生成下一個命令`bin/docker_run.sh out host.internal.docker:4503 8080`所需的外目錄。
+此階段也可獨立運行 `validator full -d out src/dispatcher`，生成下一個命令所需的out目錄 `bin/docker_run.sh out host.docker.internal:4503 8080`。
 
-在Cloud Manager部署期間，也會執行`httpd -t`語法檢查，所有錯誤都會包含在Cloud Manager建置影像步驟失敗記錄中。
+在部署雲管理器期間， `httpd -t` 還將執行語法檢查，並且任何錯誤都將包含在Cloud Manager生成映像步驟失敗日誌中。
 
 ### 階段3 {#third-phase}
 
-如果此階段發生故障，則表示Adobe已更改一個或多個不可變檔案，且必須用SDK的`src`目錄中傳遞的新版本替換相應的不可變檔案。 以下記錄範例說明此問題：
+如果此階段出現故障，則表明Adobe已更改一個或多個不可變檔案，並且您必須用在 `src` SDK的目錄。 下面的日誌示例說明了此問題：
 
 ```
 Phase 3: Immutability check
@@ -377,17 +373,17 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
   
 ```
 
-此階段也可通過`validator full -d out src/dispatcher`獨立運行，該生成下一個命令`bin/docker_immutability_check.sh out`所需的外目錄。
+此階段也可獨立運行 `validator full -d out src/dispatcher`，生成下一個命令所需的out目錄 `bin/docker_immutability_check.sh out`。
 
-## 對Apache和Dispatcher設定進行除錯 {#debugging-apache-and-dispatcher-configuration}
+## 調試Apache和Dispatcher配置 {#debugging-apache-and-dispatcher-configuration}
 
-請注意，您可以使用`./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`在本機執行apache dispatcher。
+請注意，您可以使用 `./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`。
 
-如前所述，Docker必須安裝在本機，且AEM不需要執行。 Windows用戶需要使用Windows 10專業版或支援Docker的其他分發版。 這是在本機電腦上執行和偵錯Dispatcher的必要條件。
+如前所述，Docker必須本地安裝，並且不必AEM運行。 Windows用戶需要使用Windows 10專業版或支援Docker的其他發行版。 這是在本地電腦上運行和調試Dispatcher的先決條件。
 
-下列策略可用來增加Dispatcher模組的記錄輸出，並查看本機和雲端環境中`RewriteRule`評估的結果。
+以下策略可用於增加Dispatcher模組的日誌輸出，並查看 `RewriteRule` 在本地和雲環境中進行評估。
 
-這些模組的日誌級別由變數`DISP_LOG_LEVEL`和`REWRITE_LOG_LEVEL`定義。 可在檔案`conf.d/variables/global.vars`中設定。 其相關部分如下：
+這些模組的日誌級別由變數定義 `DISP_LOG_LEVEL` 和 `REWRITE_LOG_LEVEL`。 可以在檔案中設定 `conf.d/variables/global.vars`。 其相關部分如下：
 
 ```
 # Log level for the dispatcher
@@ -411,13 +407,13 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-在本機執行Dispatcher時，記錄會直接列印至終端輸出。 大部分情況下，您會希望這些記錄處於DEBUG中，這可透過在執行Docker時將Debug層級傳遞為參數來完成。 例如：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`。
+在本地運行Dispatcher時，日誌會直接打印到終端輸出。 大多數時候，您希望這些日誌處於DEBUG中，這可以通過在運行Docker時將調試級別作為參數傳遞來完成。 例如： `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`。
 
-雲端環境的記錄檔會透過Cloud Manager中可用的記錄服務公開。
+雲環境的日誌通過Cloud Manager中提供的日誌服務公開。
 
-## 每個環境的不同Dispatcher設定 {#different-dispatcher-configurations-per-environment}
+## 每個環境的不同Dispatcher配置 {#different-dispatcher-configurations-per-environment}
 
-目前，相同的Dispatcher設定會套用至所有AEM作為Cloud Service環境。 運行時將具有一個環境變數`ENVIRONMENT_TYPE`，該環境變數包含當前運行模式（開發、測試或生產）以及定義。 定義可以是`ENVIRONMENT_DEV`、`ENVIRONMENT_STAGE`或`ENVIRONMENT_PROD`。 在Apache設定中，變數可直接用於運算式中。 或者，定義可用來建置邏輯：
+當前，同一Dispatcher配置應用於所有AEMas a Cloud Service環境。 運行時將具有環境變數 `ENVIRONMENT_TYPE` 包含當前運行模式（dev、stage或prod）以及定義。 定義可以是 `ENVIRONMENT_DEV`。 `ENVIRONMENT_STAGE` 或 `ENVIRONMENT_PROD`。 在Apache配置中，變數可以直接在表達式中使用。 或者，定義可用於生成邏輯：
 
 ```
 # Simple usage of the environment variable
@@ -434,7 +430,7 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
 </IfDefine>
 ```
 
-在Dispatcher設定中，可使用相同的環境變數。 如果需要更多邏輯，請定義上述範例中所示的變數，然後在Dispatcher設定區段中使用這些變數：
+在Dispatcher配置中，可以使用相同的環境變數。 如果需要更多邏輯，請定義上例所示的變數，然後在Dispatcher配置部分中使用這些變數：
 
 ```
 /virtualhosts {
@@ -442,20 +438,20 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
 }
 ```
 
-在本地測試配置時，可以通過將變數`DISP_RUN_MODE`直接傳遞到`docker_run.sh`指令碼來模擬不同的環境類型：
+在本地測試配置時，可以通過傳遞變數來模擬不同的環境類型 `DISP_RUN_MODE` 到 `docker_run.sh` 指令碼直接：
 
 ```
 $ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
 ```
 
-未傳入DISP_RUN_MODE值時，預設的執行模式為「dev」。
-有關可用選項和變數的完整清單，請運行指令碼`docker_run.sh`，而不帶參數。
+當未傳遞DISP_RUN_MODE的值時，預設運行模式為&quot;dev&quot;。
+有關可用選項和變數的完整清單，請運行指令碼 `docker_run.sh` 沒有參數。
 
-## 檢視Docker容器正在使用的Dispatcher設定 {#viewing-dispatcher-configuration-in-use-by-docker-container}
+## 查看Docker容器正在使用的Dispatcher配置 {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-若使用環境特定設定，可能很難判斷實際的Dispatcher設定看起來是什麼樣子。 使用`docker_run.sh`啟動Docker容器後，可以按如下方式傾棄該容器：
+對於特定於環境的配置，可能很難確定實際的Dispatcher配置的樣式。 在啟動您的Docker容器後 `docker_run.sh` 可以按如下方式傾棄：
 
-* 確定使用中的Docker容器ID:
+* 確定正在使用的Docker容器ID:
 
 ```
 $ docker ps
@@ -474,6 +470,6 @@ $ docker exec d75fbd23b29 httpd-test
 ...
 ```
 
-## 從舊版模式移轉至彈性模式 {#migrating-flexible}
+## 從舊模式遷移到靈活模式 {#migrating-flexible}
 
-在Cloud Manager 2021.7.0版本中，新的Cloud Manager程式會以AEM原型28或更新版本產生大型專案結構，其中包含檔案&#x200B;**opt-in/USE_SOURCES_DIRECTLY**。 如此一來，舊版模式先前對檔案數量和大小的限制便已移除，也導致SDK和執行階段以改良的方式驗證和部署設定。 如果您的Dispatcher設定沒有此檔案，強烈建議您進行移轉。 使用[彈性模式](/help/implementing/dispatcher/validation-debug.md#migrating)頁中所述的方法。
+隨著Cloud Manager 2021.7.0版的推出，新的Cloud Manager程式生成了原型為28或更高AEM的大型項目結構，包括檔案 **opt-in/USE_SOURCES_DIRECTLY**。 這消除了舊模式在檔案數量和大小方面的先前限制，還導致SDK和運行時以改進的方式驗證和部署配置。 如果您的調度程式配置沒有此檔案，強烈建議您遷移。 使用中介紹的方法 [柔性模式](/help/implementing/dispatcher/validation-debug.md#migrating) 的子菜單。
