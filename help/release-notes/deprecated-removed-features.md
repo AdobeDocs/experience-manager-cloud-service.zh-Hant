@@ -2,10 +2,10 @@
 title: 過時和移除的功能
 description: 特定於中已棄用和已刪除功能的發行說明 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: bbd8277fc5ed81bc656900ec3a993630aa5ffad5
+source-git-commit: d55e2aec4718e752cfc0dfa610abf1a1d36a583f
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 33%
+source-wordcount: '603'
+ht-degree: 34%
 
 ---
 
@@ -46,16 +46,16 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 本節列出已從中刪除的功能和功能 [!DNL Experience Manager] 與 [!DNL Experience Manager] 作為 [!DNL Cloud Service]。
 
-| 區域 | 功能 | 替代方案 |
-| ------------ | ------------------ | ----------- |
-| 使用者介面 | 經典UI將從產品用戶介面中刪除。 幾個標準UI對話框可用於一些選擇的功能，如連結檢查器、版本清除和一些Cloud Service配置。 即將 [產品更新](/help/release-notes/home.md) 可能會進一步刪除經典UI可用性。 | 標準 UI |
-| [!DNL Dynamic Media] | 以前與 [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) 和 [Dynamic Media混合模式](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) 在中不可用 [!DNL Experience Manager] 作為 [!DNL Cloud Service]。 | 使用 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) 提供 [!DNL Experience Manager] 作為 [!DNL Cloud Service]。 |
-| [!DNL Sites] | Portal Director 和 Portlet 元件 | 中不建議使用這些功能 [!DNL Experience Manager] 6.4，現已從 [!DNL Experience Manager]。 |
-| [!DNL Sites] | Design Importer | 此功能已作為不可變的 [!DNL Experience Manager] 在運行時無法訪問儲存庫。 |
-| [!DNL Assets] | [!DNL Assets] 無法與 Marketing Cloud Assets 核心服務和 Creative Cloud 服務共用。 | 與 [!DNL Adobe Creative Cloud]。 [Adobe資產連結](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。 |
-| [!DNL Foundation] | 支援Apache Sling資料源（OSGi捆綁包org.apache.sling.datasource） | N/A |
-| [!DNL Foundation] | 支援JST指令碼模板（OSGi捆綁包org.apache.sling.scripting.jst） | 不適用 |
-| [!DNL Foundation] | 支援Apache Felix Http白板 | OSGi Http白板 |
+| 區域 | 功能 | 替代方案 | 目標刪除日期 |
+| ------------ | ------------------ | ----------- | ------------------- |
+| 使用者介面 | 經典UI將從產品用戶介面中刪除。 幾個標準UI對話框可用於一些選擇的功能，如連結檢查器、版本清除和一些Cloud Service配置。 即將 [產品更新](/help/release-notes/home.md) 可能會進一步刪除經典UI可用性。 | 標準 UI | 已移除 |
+| [!DNL Dynamic Media] | 以前與 [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) 和 [Dynamic Media混合模式](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) 在中不可用 [!DNL Experience Manager] 作為 [!DNL Cloud Service]。 | 使用 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) 提供 [!DNL Experience Manager] 作為 [!DNL Cloud Service]。 | 已移除 |
+| [!DNL Sites] | Portal Director 和 Portlet 元件 | 中不建議使用這些功能 [!DNL Experience Manager] 6.4，現已從 [!DNL Experience Manager]。 | 已移除 |
+| [!DNL Sites] | Design Importer | 此功能已作為不可變的 [!DNL Experience Manager] 在運行時無法訪問儲存庫。 | 已移除 |
+| [!DNL Assets] | [!DNL Assets] 無法與 Marketing Cloud Assets 核心服務和 Creative Cloud 服務共用。 | 與 [!DNL Adobe Creative Cloud]。 [Adobe資產連結](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。 | 已移除 |
+| [!DNL Foundation] | 支援Apache Sling資料源（OSGi捆綁包org.apache.sling.datasource） | N/A | 已移除 |
+| [!DNL Foundation] | 支援JST指令碼模板（OSGi捆綁包org.apache.sling.scripting.jst） | 不適用 | 已移除 |
+| [!DNL Foundation] | 支援Apache Felix Http白板 | OSGi Http白板 | 2022年3月 |
 
 ## Java API {#java-api}
 
