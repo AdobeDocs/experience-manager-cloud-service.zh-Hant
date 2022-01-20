@@ -1,50 +1,37 @@
 ---
-title: AEMas a Cloud Service版2021.12.0中的Cloud Manager發行說明
-description: 以下是AEM 2021.12.0版as a Cloud Service版本中Cloud Manager的發行說明。
+title: Cloud Manager在as a Cloud Service版AEM2022.01.0中的發行說明
+description: 以下是as a Cloud Service版本2022.01.0中Cloud Manager的AEM發行說明。
 feature: Release Information
-source-git-commit: 6389dfaf1e4569a0e7bf2c6dbfa30bb003c4db5b
+source-git-commit: 8da3976250c94d5858d07a83b0eb395fab9a3eda
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 2%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 2021.12.0中的Cloud Manager發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud ServiceCloud Manager發行說明2022.01.0 {#release-notes}
 
-本頁概述AEMas a Cloud Service版2021.12.0中Cloud Manager的發行說明。
+本頁概述了as a Cloud Service2022.01.0中Cloud ManagerAEM的發行說明。
 
 >[!NOTE]
 >
->請參閱 [本頁](/help/release-notes/release-notes-cloud/release-notes-current.md) 以了解Adobe Experience Manager as a Cloud Service的最新發行說明。
+>請參閱 [此頁](/help/release-notes/release-notes-cloud/release-notes-current.md) 為Adobe Experience Manager as a Cloud Service提供的本發行說明。
 
 ## 發行日期 {#release-date}
 
-AEMas a Cloud Service的Cloud Manager發行日期2021.12.0為2021年12月16日。 下一版預計於2022年1月推出。
+Cloud Manager在as a Cloud Service2022.01.0中的發AEM布日期為2022年1月20日。 下一版計畫於2022年2月10日發行。
 
-### 新增功能 {#what-is-new}
+## 新增功能 {#what-is-new}
 
-* UI中已顯示提交雜湊，現在也會在API中提供。
-* 「活動」頁面現在包含用於執行管道的快顯視窗，可提供管道詳細資訊的摘要，一覽無遺。
-* 已新增更新，加入「活動」頁面中顯示的其他詳細資料。
-* Cloud Manager中的「學習」標籤現在提供API指南和相關資源的快速存取。
-* 具有部署管理員角色的用戶現在可以為資料庫啟動項目/分支建立嚮導，該資料庫沒有「資料庫」頁面上的「操作」菜單中的分支。
-* 現在，如果所選儲存庫沒有分支，將通知處於添加或編輯管道工作流的部署管理員如何建立分支或項目。
-* 新增Cloud Manager自助服務功能，允許 [在環境層級新增自由格式變數和機密。](/help/implementing/cloud-manager/environment-variables.md)
-* 使用 [參考示範附加元件](/help/journey-sites/demos-add-on/overview.md) （於2021年12月17日推出），即可安裝AEM產品的最新示範程式碼庫，並透過新的 [快速網站建立工具](/help/journey-sites/quick-site/overview.md) 在網站中。
-* 前端管道現在支援管道變數。
-* 現在，所有沙箱的「方案編輯」對話方塊中都可以啟用螢幕。
-* 概覽頁面中由動作呼叫卡提供的指引已重新整理，以準確反映其與生產完整堆疊管道的關聯。
-* 已新增「活動」頁面的增強功能，以顯示適用於管道的其他詳細資料，包括原始碼、提交ID等。
-* 複製TXT項目（「TXT值」而非「TXT記錄」）時，已微幅更新UI，以移除可能的混淆。
-* [與憑證錯誤相關的檔案](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) 已更新，涵蓋其他範例及疑難排解步驟。
-* 前端管道執行中現在提供選項，可在部署至生產環境前拒絕或核准。
-* Cloud Manager使用的AEM專案原型版本已更新為32版。
+* 雲管理器將 [在檢測到使用了相同的git提交時避免重建代碼庫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 在多個全棧流水線執行中。
+* 現在訪AEM問環境日誌需要 **部署管理器** 產品配置檔案。 沒有此配置檔案的用戶將在用戶介面中看到禁用按鈕。
+* UI將不允許為未將站點作為解決方案啟用的程式配置前端管道。
+* 在生成Git密碼時，將顯示過期日期。
 
+## 錯誤修正 {#bug-fixes}
 
-### 錯誤修正 {#bug-fixes}
-
-* 建置步驟記錄中未包含功能和UI測試成品。
-* 無法透過公用API存取產品、功能和UI測試步驟的記錄檔。
-* 極少數情況下，從環境詳細資料頁面到發佈或預覽服務的連結將無法運作。
-* 即使使用者在名稱欄位中輸入不同名稱，完整堆疊生產管道仍會保留名為「生產管道」。
+* 已更正某些前端管道部署遇到的空指針異常。
+* 現在，當環境運行的是的過期版本時，可以添加、更新和刪AEM除環境變數。
+* 對於在某些罕見情況下使用計畫步驟的管線，生成映像步驟將不再標籤為ERROR。
+* 對於只有一個儲存庫的程式，管道執行螢幕現在將顯示儲存庫名稱。
