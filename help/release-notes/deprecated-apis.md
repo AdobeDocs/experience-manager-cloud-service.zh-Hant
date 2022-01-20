@@ -1,17 +1,17 @@
 ---
-title: 已棄用的API
-description: 中已過時和已移除API的發行說明 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+title: 棄用的API
+description: 特定於中已棄用和刪除的API的發行說明 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: d7fc88481ab0d85f62ad0b9891c286cee92edfae
+source-git-commit: bbd8277fc5ed81bc656900ec3a993630aa5ffad5
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '989'
 ht-degree: 5%
 
 ---
 
-# 已棄用的API {#deprecated-apis}
+# 棄用的API {#deprecated-apis}
 
-以下是已棄用AEM API的詳細清單及其預期移除日期。 客戶應在目標移除日期前從其程式碼中移除API。 Any usage of the API past the removal date will generate errors in the local SDK/Development Environment and the Cloud Manager build process.
+下面是已棄用的API及其AEM預期刪除日期的詳細清單。 客戶應在目標刪除日期之前從其代碼中刪除API。 在刪除日期之後使用API將在本地SDK/開發環境和Cloud Manager生成過程中生成錯誤。
 
 
 <table>
@@ -19,8 +19,8 @@ ht-degree: 5%
   <tr>
     <th>包/類</th>
     <th>評論</th>
-    <th>淘汰日期</th>
-    <th>目標移除日期</th>
+    <th>棄用日期</th>
+    <th>目標刪除日期</th>
   </tr>
 </thead>
 <tbody>
@@ -38,13 +38,13 @@ ht-degree: 5%
   </tr>
   <tr>
     <td>com.day.cq.jcrclustersupport</td>
-    <td>Use Sling's Discovery API as an alternative</td>
+    <td>使用Sling的發現API作為替代</td>
     <td>2015</td>
     <td>已移除</td>
   </tr>
   <tr>
     <td>org.apache.sling.settings</td>
-    <td>AEMas a Cloud Service不支援執行階段的執行模式或檔案系統存取。 </td>
+    <td>AEMas a Cloud Service不支援運行時運行模式或檔案系統訪問。 </td>
     <td>10/5/20</td>
     <td>2021年底</td>
   </tr>
@@ -80,7 +80,7 @@ ht-degree: 5%
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 is in maintenance mode. Commons Collections 4 should be used instead.</td>
+    <td>Commons Collections 3處於維護模式。 應改用Commons Collections 4。</td>
     <td>4/30/21</td>
     <td>12/31/21</td>
   </tr>
@@ -98,25 +98,25 @@ ht-degree: 5%
   </tr>
   <tr>
     <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml<br>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.client.util</td>
-    <td>The Eclipse Jetty and Felix Http Jetty packages are no longer supported.</td>
+    <td>不再支援Eclipse Jetty和Felix Http Jetty包。</td>
     <td>5/27/21</td>
     <td>8/26/21</td>
   </tr>
   <tr>
     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>AEMas a Cloud Service不支援使用此API。</td>
+    <td>as a Cloud Service中不支援使用此APIAEM。</td>
     <td>5/27/21</td>
     <td>7/30/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
-    <td>不建議使用Apache Felix中繼類型和SCR API。  請改用OSGi中繼類型和宣告服務API。</td>
+    <td>不建議使用Apache Felix元資料類型和SCR API。  請改用OSGi元類型和聲明性服務API。</td>
     <td>5/27/21</td>
     <td>已移除</td>
   </tr>
   <tr>
     <td>org.slf4j.impl</td>
-    <td>記錄實作類別與AEMas a Cloud Service不相容。</td>
+    <td>日誌實現類與AEMas a Cloud Service不相容。</td>
     <td>7/4/21</td>
     <td>已移除</td>
   </tr>
@@ -128,25 +128,25 @@ ht-degree: 5%
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
-    <td>This API is deprecated as Apache Abdera is a retired project since 2017.</td>
+    <td>此API已棄用，因為自2017年起，Apache Abdera已退出使用。</td>
     <td>4/8/19</td>
     <td>09/29/21</td>
   </tr>
   <tr>
     <td>org.apache.sling.startupfilter<br>com.adobe.granite.crypto.spi<br>com.adobe.granite.crpyto.spi.base<br>com.adobe.agl.impl.data.icudt40b<br>com.adobe.agl.impl.data.icudt40b.brkitr<br>com.adobe.agl.impl.data.icudt40b.coll<br>com.adobe.agl.impl.data.icudt40b.rbnf<br>com.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></td>
-    <td>舊版AEM 6.x API。</td>
+    <td>舊AEM式6.x API。</td>
     <td>4/8/19</td>
     <td>已移除</td>
   </tr>
   <tr>
     <td>org.apache.sling.discovery.commons<br>org.apache.sling.discovery.commons.providers<br>org.apache.sling.discovery.commons.providers.base<br>org.apache.sling.discovery.commons.providers.spi<br>org.apache.sling.discovery.commons.providers.spi.base<br>org.apache.sling.discovery.commons.providers.util</td>
-    <td>This API is not supported in Cloud Service.</td>
+    <td>Cloud Service中不支援此API。</td>
     <td>9/30/21</td>
     <td>已移除</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml<br>org.apache.jackrabbit.vault.util.xml.serialize</td>
-    <td>與Apache Xerces相關的類在後續版本中被刪除，從而導致重大版本更改。 由於這些應用程式供Filevault內部使用，因此API將從公用API表面淘汰。</td>
+    <td>在後續版本中刪除與Apache Xerces相關的類，導致主版本更改。 由於這些實用程式在Filevault中供內部使用，因此API正在從公共API表面被棄用。</td>
     <td>9/1/21</td>
     <td>已移除</td>
   <tr>
@@ -154,6 +154,30 @@ ht-degree: 5%
     <td>Legacy AEM 6.x API.</td>
     <td>4/8/19</td>
     <td>09/29/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.http.whiteboard</td>
+    <td>不再支援Apache Felix Http白板。 請將代碼遷移到OSGi Http白板。</td>
+    <td>1/27/2022</td>
+    <td>03/24/2022</td>
+  </tr>
+  <tr>
+    <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
+    <td>此API已棄用，請將代碼遷移到JDK提供的XML API。</td>
+    <td>1/27/2022</td>
+    <td>3/24/2022</td>
+  </tr>
+  <tr>
+    <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
+    <td>此內部日誌備份API不受AEMas a Cloud Service支援。</td>
+    <td>1/27/2022</td>
+    <td>3/24/2022</td>
+  </tr>
+  <tr>
+    <td>org.slf4j.spi</td>
+    <td>This internal log4j API is not supported by AEM as a Cloud Service.</td>
+    <td>1/27/2022</td>
+    <td>3/24/2022</td>
   </tr>
 </tbody>
 </table>
