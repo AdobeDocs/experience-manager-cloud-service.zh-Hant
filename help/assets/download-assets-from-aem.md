@@ -1,43 +1,45 @@
 ---
 title: 下載資產
-description: 從下載資產 [!DNL Adobe Experience Manager Assets] 和啟用或停用下載功能。
+description: 從下載資產 [!DNL Adobe Experience Manager Assets] 以及啟用或禁用下載功能。
 contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
+source-git-commit: 462fd68ce4a33e14464256be4f4e9fdfe8d34aab
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1193'
 ht-degree: 3%
 
 ---
 
 # 從下載資產 [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-您可以下載資產，包括靜態和動態轉譯。 或者，您也可以直接從傳送包含資產連結的電子郵件 [!DNL Adobe Experience Manager Assets]. 下載的資產會以ZIP檔案整合。 <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
+您可以下載資產，包括靜態和動態格式副本。 或者，您也可以直接從 [!DNL Adobe Experience Manager Assets]。 下載的資產捆綁在ZIP檔案中。 <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
+<!--
 >[!NOTE]
 >
->電子郵件的收件者必須是 `dam-users` 群組，以存取電子郵件訊息中的ZIP下載連結。 若要下載資產，成員必須擁有啟動工作流程的權限，該工作流程會觸發資產下載。
+>Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
+-->
 
-無法下載資產類型影像集、回轉集、混合媒體集和轉盤集。
+無法下載資產類型映像集、旋轉集、混合媒體集和旋轉盤集。
 
-您可以使用下列方法下載Experience Manager資產：
+可以使用以下方法下載Experience Manager資產：
 
 <!-- * [Link Share](#link-share-download) -->
 
-* [Experience Manager使用者介面](#download-assets)
-* [資產共用公域](https://adobe-marketing-cloud.github.io/asset-share-commons/)
+* [Experience Manager用戶介面](#download-assets)
+* [資產共用共用](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
+* [案頭應用](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## 使用 [!DNL Experience Manager] 介面 {#download-assets}
+## 下載資產使用 [!DNL Experience Manager] 介面 {#download-assets}
 
-非同步下載服務提供大型資產無縫下載的架構。 從使用者介面即時下載較小的檔案。 [!DNL Experience Manager] 不會封存下載原始檔案的單一資產下載。 此功能可加快下載速度。
+非同步下載服務為大規模資產的無縫下載提供了一個框架。 下載存檔大於100GB大小，將其拆分為多個zip存檔，每個最大大小為100GB。 可以單獨下載。 從用戶介面即時下載較小的檔案。 [!DNL Experience Manager] 不存檔下載原始檔案的單個資產下載。 此功能允許更快的下載。
 
-依預設，Experience Manager會在下載工作流程完成時觸發通知。 下載通知會顯示在  [[!DNL Experience Manager] 收件匣](/help/sites-cloud/authoring/getting-started/inbox.md).
+預設情況下， [!DNL Experience Manager] 在下載工作流完成時觸發通知。 下載通知將出現在  [[!DNL Experience Manager] 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)。
 
-![收件匣通知](assets/inbox-notification-for-large-downloads.png)
+![收件箱通知](assets/inbox-notification-for-large-downloads.png)
 
 <!--
 The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
@@ -52,54 +54,54 @@ Asynchronous downloads are triggered in either of the following case:
 * If the download takes more than 30 seconds to prepare.
 -->
 
-### 啟用大量下載的電子郵件通知 {#enable-emails-for-large-downloads}
+### 為大型下載啟用電子郵件通知 {#enable-emails-for-large-downloads}
 
-在下列任一情況下會觸發非同步下載：
+在以下任何情況下，都會觸發非同步下載：
 
-* 如果超過10個資產
+* 如果有10個以上的資產
 * 如果下載大小超過100 MB
-* 如果下載需要超過30秒的時間來準備
+* 如果下載需要30秒以上的時間準備
 
-雖然非同步下載會在後端執行，但使用者可以繼續探索，並在Experience Manager中進一步操作。 下載程式完成後，需要立即可用的機制通知使用者。 要實現此目標，管理員可以通過設定SMTP伺服器來配置電子郵件服務。 請參閱 [配置郵件服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+當非同步下載在後端運行時，用戶可以繼續瀏覽並在Experience Manager中進一步工作。 在下載過程完成後，需要開箱即用機制通知用戶。 要實現此目標，管理員可以通過設定SMTP伺服器來配置電子郵件服務。 請參閱 [配置郵件服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email)。
 
-設定電子郵件服務後，管理員和使用者就可以從Experience Manager介面啟用電子郵件通知。
+一旦配置了電子郵件服務，管理員和用戶就可以從Experience Manager介面啟用電子郵件通知。
 
-若要啟用電子郵件通知：
+要啟用電子郵件通知：
 
-1. 登入 [!DNL Experience Manager Assets].
-1. 按一下右上角的使用者圖示，然後按一下 **[!UICONTROL 我的偏好設定]**. 將開啟「用戶首選項」窗口。
-1. 選取 **[!UICONTROL 資產下載電子郵件通知]** 核取方塊，按一下 **[!UICONTROL 接受]**.
+1. 登錄到 [!DNL Experience Manager Assets]。
+1. 按一下右上角的用戶表徵圖，然後按一下 **[!UICONTROL 我的首選項]**。 將開啟「用戶首選項」窗口。
+1. 選擇 **[!UICONTROL 資產下載電子郵件通知]** 複選框，然後按一下 **[!UICONTROL 接受]**。
 
-   ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
+   ![用於大下載的啟用電子郵件通知](/help/assets/assets/enable-email-for-large-downloads.png)
 
 
-若要下載資產，請依照下列步驟操作：
+要下載資產，請執行以下步驟：
 
-1. 在 [!DNL Experience Manager] 使用者介面，按一下 **[!UICONTROL 資產]** > **[!UICONTROL 檔案]**.
-1. 導覽至您要下載的資產。 選取資料夾，或在資料夾內選取一或多個資產。 在工具列上，按一下 **[!UICONTROL 下載]**.
+1. 在 [!DNL Experience Manager] 用戶介面，按一下 **[!UICONTROL 資產]** > **[!UICONTROL 檔案]**。
+1. 導航到要下載的資產。 選擇資料夾或在資料夾中選擇一個或多個資產。 在工具欄上，按一下 **[!UICONTROL 下載]**。
 
-   ![從下載資產時的可用選項 [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
+   ![從下載資產時可用的選項 [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
 
-1. 在下載對話方塊中，選取您想要的下載選項。
+1. 在下載對話框中，選擇所需的下載選項。
 
    | 下載選項 | 說明 |
    |---|---|
-   | **[!UICONTROL 為每一個資產建立個別的資料夾]** | 選取此選項，將您下載的每個資產（包括資產的父資料夾下巢狀子資料夾中的資產），納入本機電腦上的一個資料夾。 此選項為 *not* 依預設，選取會忽略資料夾階層，而所有資產都會下載至本機電腦的一個資料夾中。 |
-   | **[!UICONTROL 電子郵件]** | 選取此選項可將電子郵件通知傳送至收件者。 標準電子郵件範本位於下列位置：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 在部署期間自定義的模板可在以下位置使用： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以在下列位置儲存租用戶專用的自訂範本：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
-   | **[!UICONTROL 資產]** | 選取此選項即可下載原始格式的資產，而不需任何轉譯。<br>如果原始資產具有子資產，則會提供子資產選項。 |
-   | **[!UICONTROL 轉譯]** | 轉譯是資產的二進位表示法。資產有主要表示法，即上傳之檔案的主要表示法。 它們可以有任意數量的表示。 <br> 使用此選項，您可以選取要下載的轉譯。 可用的轉譯取決於您選取的資產。 |
-   | **[!UICONTROL 智慧裁切]** | 選取此選項，即可從內下載所選資產的所有智慧型裁切轉譯 [!DNL Experience Manager]. 會建立包含智慧型裁切轉譯的zip檔案，並下載至您的本機電腦。 |
-   | **[!UICONTROL 動態轉譯]** | 選取此選項即時產生一系列替代轉譯。 選取此選項時，您也可以選取 [影像預設集](/help/assets/dynamic-media/image-presets.md) 清單。 <br>此外，您還可以選取尺寸和單位、格式、顏色空間、解析度，以及任何可選的影像修飾符，如反相影像。 只有在您有 [!DNL Dynamic Media] 已啟用。 |
+   | **[!UICONTROL 為每一個資產建立個別的資料夾]** | 選擇此選項可將下載的每個資產包括在嵌套在資產父資料夾下的子資料夾中的資產包括在本地電腦上的一個資料夾中。 當此選項為 *不* 預設情況下，選擇將忽略資料夾層次結構，並將所有資產下載到本地電腦的一個資料夾中。 |
+   | **[!UICONTROL 電子郵件]** | 選擇此選項可向其他用戶發送電子郵件通知（包含到下載的連結）。 收件人用戶必須是 `dam-users` 組。 標準電子郵件模板可在以下位置使用：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 在部署過程中自定義的模板可在以下位置使用： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以在以下位置儲存特定於租戶的自定義模板：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
+   | **[!UICONTROL 資產]** | 選擇此選項可以以原始格式下載資產，而不包含任何格式副本。<br>如果原始資產具有子集，則子集選項可用。 |
+   | **[!UICONTROL 轉譯]** | 轉譯是資產的二進位表示法。資產具有主要表示形式 — 上載檔案的主要表示形式。 他們可以有任意數目的表示。 <br> 通過此選項，您可以選擇要下載的格式副本。 可用的格式副本取決於您選擇的資產。 |
+   | **[!UICONTROL 智慧裁切]** | 選擇此選項可從中下載選定資產的所有智慧裁剪格式副本 [!DNL Experience Manager]。 將建立帶有智慧裁剪格式副本的zip檔案並將其下載到您的本地電腦。 |
+   | **[!UICONTROL 動態轉譯]** | 選擇此選項可即時生成一系列替代格式副本。 選擇此選項後，您還可以通過從 [影像預設](/help/assets/dynamic-media/image-presets.md) 清單框。 <br>此外，還可以選擇大小和測量單位、格式、顏色空間、解析度以及任何可選的影像修飾符（如反相影像）。 僅當您 [!DNL Dynamic Media] 啟用。 |
 
-1. 在對話方塊中，按一下 **[!UICONTROL 下載]**.
+1. 在對話框中，按一下 **[!UICONTROL 下載]**。
 
-   如果為大量下載啟用電子郵件通知，則包含已封存zip資料夾下載URL的電子郵件會顯示在收件匣中。 按一下電子郵件中的下載連結以下載zip資料夾。
+   如果為大型下載啟用了電子郵件通知，則收件箱中會出現一封包含已存檔zip資料夾的下載URL的電子郵件。 按一下電子郵件中的下載連結以下載zip資料夾。
 
-   ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
+   ![用於大下載的電子郵件通知](/help/assets/assets/email-for-large-notification.png)
 
-   您也可以在 [!DNL Experience Manager] 收件匣。
+   您還可以在 [!DNL Experience Manager] 收件箱。
 
-   ![inbox-notifications-for-large-downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
+   ![收件箱通知 — 用於大下載](/help/assets/assets/inbox-notification-for-large-downloads.png)
 
 ## 下載使用連結共用共用的資產 {#link-share-download}
 
@@ -109,47 +111,47 @@ Asynchronous downloads are triggered in either of the following case:
 >This functionality is available in the Experience Manager prerelease channel.
 -->
 
-使用連結共用資產是讓感興趣的人能直接使用的便利方式，不需先登入即可 [!DNL Assets]. 請參閱 [連結共用功能](/help/assets/share-assets.md#sharelink).
+使用連結共用資產是一種方便的方法，可讓感興趣的人不必首先登錄即可使用 [!DNL Assets]。 請參閱 [連結共用功能](/help/assets/share-assets.md#sharelink)。
 
-使用者從共用連結下載資產時， [!DNL Assets] 使用非同步服務，提供更快速且不間斷的下載。 要下載的資產會在收件匣的背景中排入佇列，並放入可管理檔案大小的ZIP封存檔中。 若是下載量非常大，下載會分塊為大小為100 GB的檔案。
+當用戶從共用連結下載資產時， [!DNL Assets] 使用非同步服務，提供更快且不間斷的下載。 要下載的資產將在收件箱的後台排隊到可管理檔案大小的ZIP存檔中。 對於非常大的下載，下載內容會分組到大小為100 GB的檔案中。
 
-收件匣會顯示每個封存的處理狀態。 處理完成後，您就可以從收件匣下載封存檔。
+收件箱顯示每個存檔的處理狀態。 處理完成後，可以從收件箱下載存檔。
 
-![下載收件匣](assets/download-inbox.png)
+![下載收件箱](assets/download-inbox.png)
 
 ## 啟用資產下載servlet {#enable-asset-download-servlet}
 
-中的預設Servlet [!DNL Experience Manager] 可讓已驗證的使用者發出任意大型且同時下載的請求，以建立資產的ZIP檔案。 下載準備可能會影響效能，甚至可能會使伺服器和網路過載。 為降低此功能造成的類似DoS的潛在風險， `AssetDownloadServlet` 發佈執行個體的OSGi元件已停用。 如果您不需要製作例項的下載功能，請停用製作上的servlet。
+中的預設servlet [!DNL Experience Manager] 允許經過身份驗證的用戶發出任意大的併發下載請求以建立資產的ZIP檔案。 下載準備可能會影響效能，甚至會使伺服器和網路過載。 為了減輕這種功能所帶來的類似DoS的潛在風險， `AssetDownloadServlet` OSGi元件已禁用發佈實例。 如果您不需要作者實例上的下載功能，請禁用作者上的servlet。
 
-若要允許從DAM下載資產，例如使用資產共用公域或其他類似入口的實作時，請透過OSGi設定手動啟用servlet。 Adobe建議盡可能低地設定允許的下載大小，而不影響日常下載需求。 高值可能會影響效能。
+要允許從DAM下載資產，例如，當使用諸如資產共用共用或其他類似門戶的實現時，請通過OSGi配置手動啟用servlet。 Adobe建議將允許的下載大小設定得盡可能低，而不影響日常下載要求。 高值可能會影響效能。
 
-1. 建立資料夾，其命名慣例會鎖定發佈執行模式，即 `config.publish`:
+1. 建立具有針對發佈運行模式的命名約定的資料夾， `config.publish`:
 
    `/apps/<your-app-name>/config.publish`
 
-1. 在設定資料夾中，建立類型的新檔案 `nt:file` 已命名 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. 填入 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` 以下內容。 將下載的最大大小（以位元組為單位）設定為 `asset.download.prezip.maxcontentsize`. 以下範例會將ZIP下載的最大大小設定為不超過100千位元組。
+1. 在配置資料夾中，建立新類型的檔案 `nt:file` 命名 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`。
+1. 填充 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` 下面。 將下載的最大大小（以位元組為單位）設定為 `asset.download.prezip.maxcontentsize`。 下面的示例將ZIP下載的最大大小配置為不超過100 kB。
 
    ```java
    enabled=B"true"
    asset.download.prezip.maxcontentsize=I"102400"
    ```
 
-## 停用資產下載servlet {#disable-asset-download-servlet}
+## 禁用資產下載servlet {#disable-asset-download-servlet}
 
-如果您不需要下載功能，請停用servlet以防止任何類似DoS的風險。 此 `Asset Download Servlet` 可在 [!DNL Experience Manager] 更新dispatcher設定以封鎖任何資產下載請求，以製作和發佈例項。 您也可以直接透過OSGi主控台手動停用servlet。
+如果不需要下載功能，則禁用servlet以防止任何類似DoS的風險。 的 `Asset Download Servlet` 可在 [!DNL Experience Manager] 通過更新調度程式配置來阻止任何資產下載請求來建立和發佈實例。 也可以通過OSGi控制台直接手動禁用servlet。
 
-1. 若要透過Dispatcher設定來封鎖資產下載請求，請編輯 `dispatcher.any` 設定，並將新規則新增至 [篩選器區段](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
+1. 要通過調度程式配置阻止資產下載請求，請編輯 `dispatcher.any` 配置並向其中添加新規則 [過濾段](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring)。
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 ## 提示和限制 {#tips-limitations}
 
-* 如果下載空資料夾， [!DNL Experience Manager] 會傳達關於建立ZIP封存的成功訊息，但不會建立封存。
+* 如果下載了空資料夾， [!DNL Experience Manager] 傳達了有關建立ZIP存檔的成功消息，但未建立存檔。
 
 >[!MORELIKETHIS]
 >
 >* [下載受DRM保護的資產](drm.md)
->* [在Win或Mac案頭上使用Experience Manager案頭應用程式下載資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [從支援的Adobe Creative Cloud應用程式使用Adobe資產連結下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [在Win或Mac案頭上使用Experience Manager案頭應用下載資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [使用受支援的Adobe Creative Cloud應用中的Adobe資產連結下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
