@@ -2,18 +2,24 @@
 title: AEM as a Cloud Service 開發方針
 description: AEM as a Cloud Service 開發方針
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
+source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 1%
+source-wordcount: '2222'
+ht-degree: 2%
 
 ---
 
 # AEM as a Cloud Service 開發方針 {#aem-as-a-cloud-service-development-guidelines}
 
-在AEMas a Cloud Service中執行的程式碼必須知道，它一律在叢集中執行。 這表示執行中的例項永遠多於一個。程式碼必須具有彈性，尤其是例項可能隨時停止。
+>[!CONTEXTUALHELP]
+>id="development_guidelines"
+>title="AEM as a Cloud Service 開發方針"
+>abstract="在此頁籤中，您可以查看as a Cloud Service中編碼的建議最佳AEM做法。 編碼可以與AMS或On-Prem部署有很大不同。"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="軟體包結構演示"
 
-更新AEMas a Cloud Service期間，會有舊程式碼和新程式碼並行執行的例項。 因此，舊程式碼不得中斷由新程式碼建立的內容，而新程式碼必須能夠處理舊內容。
+在as a Cloud ServiceAEM中運行的代碼必須知道它始終在群集中運行。 這表示執行中的例項永遠多於一個。代碼必須具有彈性，特別是當實例可能在任何時間點停止時。
+
+在更新AEMas a Cloud Service時，將有舊代碼和新代碼並行運行的實例。 因此，舊代碼不能與新代碼建立的內容斷開，新代碼必須能夠處理舊內容。
 <!--
 
 >[!NOTE]
@@ -21,219 +27,219 @@ ht-degree: 1%
 
 -->
 
-如果需要識別叢集中的主要伺服器，則可使用Apache Sling Discovery API來偵測。
+如果需要標識群集中的主伺服器，則可以使用Apache Sling Discovery API來檢測它。
 
 ## 記憶體中的狀態 {#state-in-memory}
 
-狀態不得保留在記憶體中，而應保存在儲存庫中。 否則，如果執行個體停止，則此狀態可能會遺失。
+狀態不能保留在記憶體中，但必須保留在儲存庫中。 否則，如果實例停止，則此狀態可能會丟失。
 
 ## 檔案系統上的狀態 {#state-on-the-filesystem}
 
-不應在AEMas a Cloud Service中使用執行個體的檔案系統。 磁碟是短暫的，當回收實例時，將處理該磁碟。 對與處理單個請求相關的臨時儲存使用檔案系統是可能的，但不應濫用於大型檔案。 這是因為它可能對資源使用配額產生負面影響，並受到磁碟限制。
+實例的檔案系統不應用於AEMas a Cloud Service。 磁碟是短暫的，當實例被回收時，磁碟將被放置。 對與處理單個請求相關的臨時儲存使用檔案系統是可能的，但不應濫用於大型檔案。 這是因為它可能對資源使用配額產生負面影響，並會遇到磁碟限制。
 
-例如，不支援檔案系統使用情形，發佈層級應確保需要保存的任何資料都傳送至外部服務，以供長期儲存。
+例如，在不支援檔案系統使用的情況下，發佈層應確保需要保留的任何資料都被發送到外部服務以用於長期儲存。
 
 ## 觀察 {#observation}
 
-類似地，非同步發生的一切都會發生，例如在觀察事件上採取行動，無法保證會在本機執行，因此必須謹慎使用。 JCR事件和Sling資源事件均適用。 當發生變更時，例項可被取下，並由不同例項取代。 拓撲中當時處於活動狀態的其他實例將能夠對該事件做出反應。 但是，在這種情況下，這不會是地方性事件，而且，如果當事件發佈時，領導者選舉正在進行，甚至可能沒有活躍的領導者。
+類似的，由於非同步發生的一切，如對觀察事件採取行動，無法保證它在本地執行，因此必須謹慎使用。 對於JCR事件和Sling資源事件，都是如此。 在發生更改時，實例可以被取下，並被另一實例替換。 拓撲中當時處於活動狀態的其他實例將能夠對該事件做出反應。 但是，在這種情況下，這將不是一個地方性事件，而且，如果在事件發佈後進行領導人選舉，甚至可能沒有活躍的領導人。
 
 ## 後台任務和長時間運行的作業 {#background-tasks-and-long-running-jobs}
 
-作為背景任務執行的代碼必須假設它正在運行的實例可以隨時刪除。 因此，程式碼必須具復原性，最重要的是可繼續。 這表示如果程式碼重新執行，應該不會從頭開始，而是從離開的位置開始。 雖然這並非此類程式碼的新需求，但在AEMas a Cloud Service，執行個體淘汰的可能性較大。
+作為後台任務執行的代碼必須假定它正在運行的實例可以隨時關閉。 因此，代碼必須具有彈性，最重要的是可恢復。 這意味著，如果代碼重新執行，則不應從頭開始，而應從離開的位置開始。 雖然這不是此類代碼的新要求，但AEMas a Cloud Service而言，更有可能發生實例刪除。
 
-為了將問題降至最低，應盡可能避免長時間運行的作業，並且至少應可恢復這些作業。 若要執行這類工作，請使用Sling工作，Sling工作提供至少一次保證，因此若中斷，系統會盡快重新執行。 但它們或許不應該從頭開始。 若要排程這類作業，最好使用 [Sling作業](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 排程器，因此可確保至少執行一次。
+為了將問題減到最小，應盡可能避免長時間運行的作業，並且應至少恢復這些作業。 要執行此類作業，請使用Sling Jobs，它至少有一次保證，因此如果中斷，將盡快重新執行。 但他們可能不應該從頭再來。 對於調度此類作業，最好使用 [斯林喬布斯](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 調度程式，因為這樣可確保至少一次執行。
 
-Sling Commons排程器不應用於排程，因為執行無法保證。 只是更有可能會安排。
+由於無法保證執行，因此不應將Sling Commons調度程式用於調度。 只是更有可能會安排。
 
-同樣地，如果非同步發生所有動作，例如對觀察事件採取行動（無論是JCR事件或Sling資源事件），就無法保證執行，因此必須謹慎使用。 目前的AEM部署已採用此方法。
+同樣，由於非同步發生的一切，如對觀察事件採取行動（即JCR事件或Sling資源事件），無法保證執行，因此必須謹慎使用。 對於當前的部AEM署，情況已經如此。
 
-## 傳出HTTP連線 {#outgoing-http-connections}
+## 傳出HTTP連接 {#outgoing-http-connections}
 
-強烈建議所有傳出的HTTP連線都設定合理的連線和讀取逾時。 對於不套用這些逾時的程式碼，在AEMas a Cloud Service上執行的AEM例項將強制執行全域逾時。 下列逾時值是連線呼叫的10秒，以及下列熱門Java程式庫所使用連線的讀取呼叫的60秒：
+強烈建議任何傳出HTTP連接設定合理的連接和讀取超時。 對於不應用這些超時的代碼，在AEMas a Cloud Service上運行的實AEM例將強制執行全局超時。 以下超時值是連接調用10秒，下列常用Java庫使用的連接讀取調用60秒：
 
-Adobe建議使用提供的 [Apache HttpComponents Client 4.x資料庫](https://hc.apache.org/httpcomponents-client-ga/) 用於建立HTTP連線。
+Adobe建議使用 [Apache HttpComponents客戶端4.x庫](https://hc.apache.org/httpcomponents-client-ga/) 用於建立HTTP連接。
 
-已知可行，但可能需要自行提供相依性的替代方案為：
+已知有效但可能需要自己提供依賴的替代方案有：
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) 和/或 [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (由AEM提供)
-* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) （不建議使用，因為已過時並已由4.x版取代）
-* [OK Http](https://square.github.io/okhttp/) (AEM未提供)
+* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) 和/或 [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (提供者AEM)
+* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) （不建議使用，因為它已過時，並被4.x版取代）
+* [確定Http](https://square.github.io/okhttp/) (未由提供AEM)
 
-## 沒有傳統UI自定義 {#no-classic-ui-customizations}
+## 無經典UI自定義 {#no-classic-ui-customizations}
 
-AEM as a Cloud Service僅支援第三方客戶代碼的觸控式UI。 傳統UI無法自訂。
+AEMas a Cloud Service僅支援第三方客戶代碼的Touch UI。 經典UI不可用於自定義。
 
-## 避免本機二進位檔 {#avoid-native-binaries}
+## 避免本機二進位檔案 {#avoid-native-binaries}
 
-程式碼將無法在執行階段下載二進位檔，也無法加以修改。 例如，它將無法解壓縮 `jar` 或 `tar` 檔案。
+代碼將無法在運行時下載二進位檔案，也無法修改它們。 例如，它無法解包 `jar` 或 `tar` 的子菜單。
 
-## 沒有透過AEMas a Cloud Service的串流二進位檔 {#no-streaming-binaries}
+## 無流二進位文AEM件通過as a Cloud Service {#no-streaming-binaries}
 
-二進位檔應透過CDN來存取，CDN將提供核心AEM服務以外的二進位檔。
+應通過CDN訪問二進位檔案，CDN將在核心服務之外提供二進位AEM檔案。
 
-例如，請勿使用 `asset.getOriginal().getStream()`，會觸發將二進位檔下載至AEM服務的短暫磁碟。
+例如，不使用 `asset.getOriginal().getStream()`，觸發將二進位檔案下載到AEM服務的臨時磁碟上。
 
 ## 無反向複製代理 {#no-reverse-replication-agents}
 
-AEMas a Cloud Service不支援從「發佈」反向復寫至「作者」。 如果需要此策略，您可以使用在發佈執行個體群組（可能是製作叢集）中共用的外部永續性存放區。
+as a Cloud Service不支援從「發佈」到「作者」的反向復AEM制。 如果需要這樣的策略，您可以使用一個外部持久性儲存，該儲存在發佈實例的場之間共用，並且可能是作者群集。
 
 ## 可能需要移植轉發複製代理 {#forward-replication-agents}
 
-內容會透過發佈子機制從製作複製到發佈。 不支援自定義複製代理。
+內容通過pub-sub機制從「作者」複製到「發佈」。 不支援自定義複製代理。
 
-## 監控與除錯 {#monitoring-and-debugging}
+## 監視和調試 {#monitoring-and-debugging}
 
 ### 記錄檔 {#logs}
 
-針對本機開發，記錄項目會寫入 `/crx-quickstart/logs` 檔案夾。
+對於本地開發，日誌條目將寫入 `/crx-quickstart/logs` 的子菜單。
 
-在雲端環境中，開發人員可以透過Cloud Manager下載記錄檔，或使用命令列工具追蹤記錄檔。 <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+在雲環境中，開發人員可以通過Cloud Manager下載日誌，或使用命令行工具跟蹤日誌。 <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
-**設定記錄層級**
+**設定日誌級別**
 
-若要變更雲端環境的記錄層級，應修改Sling Logging OSGI設定，然後完全重新部署。 由於這並非即時進行，請務必小心，不要在接收大量流量的生產環境中啟用詳細記錄。 未來可能會有更快速變更記錄層級的機制。
+要更改雲環境的日誌級別，應修改Sling Logging OSGI配置，然後完全重新部署。 由於這不是即時的，因此請小心在接收大量通信的生產環境中啟用詳細日誌。 將來，可能會有更快改變日誌級別的機制。
 
 >[!NOTE]
 >
->若要執行下列設定變更，您必須在本機開發環境中建立這些變更，然後推送至AEMas a Cloud Service執行個體。 如需如何執行此動作的詳細資訊，請參閱 [部署至AEMas a Cloud Service](/help/implementing/deploying/overview.md).
+>要執行下面列出的配置更改，您需要在本地開發環境中建立這些更改，然後將它們推送到AEMas a Cloud Service實例。 有關如何執行此操作的詳細資訊，請參見 [部署到AEMas a Cloud Service](/help/implementing/deploying/overview.md)。
 
-**啟用偵錯記錄層級**
+**激活DEBUG日誌級別**
 
-預設日誌級別為INFO，即未記錄DEBUG消息。
-若要啟用DEBUG記錄層級，請設定
+預設日誌級別為INFO，即DEBUG消息未記錄。
+要激活DEBUG日誌級別，請設定
 
 ``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
 
-要除錯的屬性。 請勿將記錄檔保留在DEBUG記錄層級，因為它會產生許多記錄檔。
-除錯檔案中的一行通常以DEBUG開頭，然後提供記錄層級、安裝程式動作和記錄訊息。 例如：
+要調試的屬性。 不要將日誌保留在DEBUG日誌級別，因為它會生成大量日誌。
+調試檔案中的一行通常以DEBUG開頭，然後提供日誌級別、安裝程式操作和日誌消息。 例如：
 
 ``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
 
-記錄層級如下：
+日誌級別如下：
 
 | 0 | 錯誤 | 操作失敗，安裝程式無法繼續。 |
 |---|---|---|
-| 1 | 錯誤 | 操作失敗。 安裝繼續，但CRX的一部分未正確安裝，因此無法正常工作。 |
-| 2 | 警告 | 操作已成功，但遇到問題。 CRX可能或無法正常運作。 |
-| 3 | 資訊 | 操作成功。 |
+| 1 | 錯誤 | 操作失敗。 安裝將繼續，但CRX的一部分安裝不正確，無法正常工作。 |
+| 2 | 警告 | 操作已成功，但遇到問題。 CRX可能正確工作，也可能不正確。 |
+| 3 | 資訊 | 操作已成功。 |
 
 ### 線程轉儲 {#thread-dumps}
 
-雲端環境上的執行緒傾印會持續收集，但目前無法以自助方式下載。 同時，如果需要執行緒傾印以偵錯問題，請連絡AEM支援，並指定確切的時間視窗。
+雲環境中的線程轉儲會持續收集，但此時無法以自助方式下載。 同時，如果調試問題AEM需要線程轉儲，請與支援部門聯繫，並指定確切的時間窗口。
 
 ## CRX/DE Lite和開發人員控制台 {#crxde-lite-and-developer-console}
 
-### 地方開發 {#local-development}
+### 地方發展 {#local-development}
 
-針對本機開發，開發人員可完整存取CRXDE Lite(`/crx/de`)和AEM Web Console(`/system/console`)。
+對於本地開發，開發人員可以完全訪問CRXDE Lite(`/crx/de`)和AEMWeb控制台(`/system/console`)。
 
-請注意，在本機開發（使用SDK）時， `/apps` 和 `/libs` 可直接寫入，這與雲端環境不同，雲端環境中的這些頂層資料夾不可修改。
+請注意，在本地開發（使用SDK）中， `/apps` 和 `/libs` 可以直接寫入，這與雲環境不同，雲環境中頂級資料夾是不可變的。
 
 ### AEMas a Cloud Service開發工具 {#aem-as-a-cloud-service-development-tools}
 
-客戶可在製作層級的開發環境中存取CRXDE lite，但無法預備或生產。 不可變的儲存庫(`/libs`, `/apps`)無法在執行階段寫入，因此嘗試寫入會導致錯誤。
+客戶可以在作者層的開發環境中訪問CRXDE lite ，但不能進行階段或生產。 不可變的儲存庫(`/libs`。 `/apps`)無法在運行時寫入，因此嘗試寫入將導致錯誤。
 
-開發人員主控台中提供一組工具，用於針對開發、預備和生產環境偵錯AEMas a Cloud Service開發人員環境。 可依下列方式調整「作者」或「發佈」服務URL來決定URL:
+在開發人員控制台中，AEM提供一組用於調試as a Cloud Service開發人員環境的工具，用於開發、階段和生產環境。 可以通過調整「作者」或「發佈」服務URL來確定URL，如下所示：
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-作為快捷方式，可使用下列Cloud Manager CLI命令，根據以下描述的環境參數啟動開發人員控制台：
+作為快捷方式，可以使用以下Cloud Manager CLI命令根據下面描述的環境參數啟動開發人員控制台：
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-請參閱 [本頁](/help/release-notes/home.md) 以取得更多資訊。
+請參閱 [此頁](/help/release-notes/home.md) 的子菜單。
 
-開發人員可產生狀態資訊，並解析各種資源。
+開發人員可以生成狀態資訊，並解決各種資源。
 
-如下圖所示，可用的狀態資訊包括套件組合、元件、OSGI設定、oak索引、OSGI服務和Sling作業的狀態。
+如下所示，可用狀態資訊包括捆綁包、元件、OSGI配置、橡樹索引、OSGI服務和Sling作業的狀態。
 
-![開發主控台1](/help/implementing/developing/introduction/assets/devconsole1.png)
+![開發控制台1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
-如下圖所示，開發人員可以解析套件相依性和servlet:
+如下所示，開發人員可以解決包依賴項和Servlet:
 
-![開發主控台2](/help/implementing/developing/introduction/assets/devconsole2.png)
+![開發控制台2](/help/implementing/developing/introduction/assets/devconsole2.png)
 
 ![開發控制台3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-對於除錯來說，開發人員控制台也有一個「說明查詢」工具的連結：
+對於調試，Developer控制台還具有指向「解釋查詢」工具的連結：
 
-![開發主控台4](/help/implementing/developing/introduction/assets/devconsole4.png)
+![開發控制台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-若為生產計畫，使用者可以透過Admin Console中的「雲端管理員 — 開發人員角色」來定義對開發人員主控台的存取，若為沙箱計畫，只要使用者具備產品設定檔，便能存取AEMas a Cloud Service，即可使用開發人員主控台。 對於所有程式，狀態轉儲都需要「Cloud Manager — 開發人員角色」，且使用者也必須在製作和發佈服務的AEM使用者或AEM管理員產品設定檔中定義，才能檢視兩個服務的狀態轉儲資料。 如需設定使用者權限的詳細資訊，請參閱 [Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+對於生產程式，對開發人員控制台的訪問由Admin Console中的「雲管理器 — 開發人員角色」定義，而對於沙盒程式，任何用戶都可以使用開發人員控制台，其產品配置檔案允許他們訪問AEMas a Cloud Service。 對於所有程式，狀態轉儲需要「Cloud Manager - Developer Role」，而且用戶還必須在作者和發佈服務的「用戶」或「管理員產品配置檔案」中定義，才能查看來自兩個服務的狀態轉儲資料。 有關設定用戶權限的詳細資訊，請參見 [Cloud Manager文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
-### AEM測試與生產服務 {#aem-staging-and-production-service}
+### 試AEM運行和生產服務 {#aem-staging-and-production-service}
 
-客戶將無法存取測試和生產環境的開發人員工具。
+客戶將無法訪問用於過渡和生產環境的開發人員工具。
 
 ### 效能監控 {#performance-monitoring}
 
-Adobe會監控應用程式效能，並採取措施，以在出現惡化時加以處理。 目前無法查看應用程式量度。
+Adobe監控應用程式效能，並採取措施在出現惡化時予以解決。 此時，無法觀察應用程式度量。
 
-## 傳送電子郵件 {#sending-email}
+## 發送電子郵件 {#sending-email}
 
-以下各節說明如何要求、設定及傳送電子郵件。
+以下各節介紹如何請求、配置和發送電子郵件。
 
 >[!NOTE]
 >
->可以使用OAuth2支援來設定郵件服務。 如需詳細資訊，請參閱 [OAuth2對郵件服務的支援](/help/security/oauth2-support-for-mail-service.md).
+>郵件服務可以配置OAuth2支援。 有關詳細資訊，請參見 [郵件服務的OAuth2支援](/help/security/oauth2-support-for-mail-service.md)。
 
-### 啟用傳出電子郵件 {#enabling-outbound-email}
+### 啟用出站電子郵件 {#enabling-outbound-email}
 
-預設情況下，用於發送電子郵件的埠將被禁用。 要激活埠，請配置 [高級聯網](/help/security/configuring-advanced-networking.md)，請務必針對每個需要的環境設定 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點的埠轉發規則，該規則將目標埠（例如465或587）映射到代理埠。
+預設情況下，用於發送電子郵件的埠被禁用。 要激活埠，請配置 [先進網路](/help/security/configuring-advanced-networking.md)，確保為每個需要的環境設定 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點的埠轉發規則，將目標埠（例如465或587）映射到代理埠。
 
-建議使用 `kind` 參數設定為 `flexiblePortEgress` 因為Adobe可以優化靈活的埠輸出流量的效能。 如果需要唯一的輸出IP地址，請選擇 `kind` 參數 `dedicatedEgressIp`. 如果您出於其他原因已配置了VPN，則也可以使用該高級網路變化提供的唯一IP地址。
+建議使用 `kind` 參數設定為 `flexiblePortEgress` 因為Adobe可以優化靈活的埠出口流量的效能。 如果需要唯一的出口IP地址，請選擇 `kind` 參數 `dedicatedEgressIp`。 如果出於其他原因已配置了VPN，則還可以使用該高級網路變體提供的唯一IP地址。
 
-您必須通過郵件伺服器發送電子郵件，而不是直接發送給電子郵件客戶端。 否則，電子郵件可能會遭到封鎖。
+您必須通過郵件伺服器發送電子郵件，而不是直接通過電子郵件客戶端發送。 否則，電子郵件可能會被阻止。
 
-### 傳送電子郵件 {#sending-emails}
+### 發送電子郵件 {#sending-emails}
 
-此 [Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) ，電子郵件必須傳送至支援請求中指出的郵件伺服器，而非直接傳送給收件者。
+的 [第CQ天郵件服務OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) 郵件必須發送到支援請求中指明的郵件伺服器，而不是直接發送給收件人。
 
 ### 設定 {#email-configuration}
 
-AEM中的電子郵件應使用 [Day CQ Mail Service OSGi服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
+中的電AEM子郵件應使用 [第CQ天郵件服務OSGi服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)。
 
-請參閱 [AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) 如需設定電子郵件設定的詳細資訊。 若為AEMas a Cloud Service，請注意以下必要調整 `com.day.cq.mailer.DefaultMailService OSGI` 服務：
+查看 [AEM 6.5文檔](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) 有關配置電子郵件設定的詳細資訊。 對AEM於as a Cloud Service，請注意 `com.day.cq.mailer.DefaultMailService OSGI` 服務：
 
 * SMTP伺服器主機名應設定為$[env:AEM_PROXY_HOST;default=proxy.tunnel]
-* 配置高級網路時，SMTP伺服器埠應設定為API調用中使用的portForwerds參數中設定的原始代理埠的值。 例如30465（而非465）
+* 配置高級網路時，SMTP伺服器埠應設定為API調用中使用的portForws參數中設定的原始代理埠的值。 例如，30465（而不是465）
 
-還建議如果已請求埠465:
+如果已請求埠465，還建議：
 
-* set `smtp.port` to `465`
-* set `smtp.ssl` to `true`
+* 集 `smtp.port` 至 `465`
+* 集 `smtp.ssl` 至 `true`
 
 如果已請求埠587:
 
-* set `smtp.port` to `587`
-* set `smtp.ssl` to `false`
+* 集 `smtp.port` 至 `587`
+* 集 `smtp.ssl` 至 `false`
 
-此 `smtp.starttls` 屬性會由AEMas a Cloud Service在執行階段自動設定為適當的值。 因此，若 `smtp.ssl` 設為true, `smtp.startls` 會忽略。 若 `smtp.ssl` 設為false, `smtp.starttls` 設為true時，退出連結才會受到追蹤。 無論 `smtp.starttls` 值。
+的 `smtp.starttls` 在運行時，as a Cloud Service將AEM自動將屬性設定為適當的值。 因此，如果 `smtp.ssl` 設定為true, `smtp.startls` 忽略。 如果 `smtp.ssl` 設定為false, `smtp.starttls` 設定為true。 這不管 `smtp.starttls` 在OSGI配置中設定的值。
 
 
-Mail Service可選擇配置OAuth2支援。 如需詳細資訊，請參閱 [OAuth2對郵件服務的支援](/help/security/oauth2-support-for-mail-service.md).
+可以選擇為郵件服務配置OAuth2支援。 有關詳細資訊，請參見 [郵件服務的OAuth2支援](/help/security/oauth2-support-for-mail-service.md)。
 
-### 舊版電子郵件設定 {#legacy-email-configuration}
+### 舊式電子郵件配置 {#legacy-email-configuration}
 
-在2021.9.0版之前，電子郵件是透過客戶支援請求進行設定。 請注意以下必要調整 `com.day.cq.mailer.DefaultMailService OSGI` 服務：
+在2021.9.0版之前，電子郵件是通過客戶支援請求配置的。 請注意以下對 `com.day.cq.mailer.DefaultMailService OSGI` 服務：
 
-AEMas a Cloud Service需要通過埠465發送郵件。 如果郵件伺服器不支援埠465，則只要啟用TLS選項，就可以使用埠587。
+AEMas a Cloud Service需要通過埠465發送郵件。 如果郵件伺服器不支援埠465，則只要啟用了TLS選項，就可以使用埠587。
 
 如果已請求埠465:
 
-* set `smtp.port` to `465`
-* set `smtp.ssl` to `true`
+* 集 `smtp.port` 至 `465`
+* 集 `smtp.ssl` 至 `true`
 
 如果已請求埠587:
 
-* set `smtp.port` to `587`
-* set `smtp.ssl` to `false`
+* 集 `smtp.port` 至 `587`
+* 集 `smtp.ssl` 至 `false`
 
-此 `smtp.starttls` 屬性會由AEMas a Cloud Service在執行階段自動設定為適當的值。 因此，若 `smtp.ssl` 設為true, `smtp.startls` 會忽略。 若 `smtp.ssl` 設為false, `smtp.starttls` 設為true時，退出連結才會受到追蹤。 無論 `smtp.starttls` 值。
+的 `smtp.starttls` 在運行時，as a Cloud Service將AEM自動將屬性設定為適當的值。 因此，如果 `smtp.ssl` 設定為true, `smtp.startls` 忽略。 如果 `smtp.ssl` 設定為false, `smtp.starttls` 設定為true。 這不管 `smtp.starttls` 在OSGI配置中設定的值。
 
-SMTP伺服器主機應設定為郵件伺服器的主機。
+SMTP伺服器主機應設定為郵件伺服器主機。
 
 
 ## [!DNL Assets] 開發指南和使用案例 {#use-cases-assets}
 
-若要了解Assetsas a Cloud Service的開發使用案例、建議和參考資料，請參閱 [資產的開發人員參考](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+要瞭解資產as a Cloud Service的開發使用案例、建議和參考資料，請參閱 [資產的開發人員參考](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)。
