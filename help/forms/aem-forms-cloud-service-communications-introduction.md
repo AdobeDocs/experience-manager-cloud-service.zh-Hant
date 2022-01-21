@@ -1,57 +1,57 @@
 ---
-title: Formsas a Cloud Service通訊簡介
+title: Formsas a Cloud Service通訊
 description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 1%
 
 ---
 
-# 使用AEM Formsas a Cloud Service通訊 {#frequently-asked-questions}
+# 使用AEM Formsas a Cloud Service通信 {#frequently-asked-questions}
 
-**AEM Formsas a Cloud Service通訊功能正在測試中。**
+**AEM Formsas a Cloud Service通信功能為beta。**
 
-通信功能可幫助您建立面向品牌、個性化和標準化的文檔，如業務往來函、對帳單、報銷申請處理信函、福利通知、每月賬單或歡迎套件。
+通信功能可幫助您建立面向品牌、個性化和標準化的文檔，如業務信函、報表、理賠信函、福利通知、每月帳單或歡迎套件。
 
 
-您可以按需生成單據，也可以建立批任務以按定義的間隔生成多個文檔。 通訊API提供：
+您可以按需生成文檔或建立批處理作業，以按定義的間隔生成多個文檔。 通信API提供：
 
-* 簡化的隨需和批次檔案產生功能
+* 簡化的按需和批量文檔生成功能
 
-* HTTP API可更輕鬆與現有系統整合。 包括獨立的API，以用於隨選（低延遲）和批次作業（高吞吐量作業）。 它使文檔生成成為一項高效的任務。
+* HTTP API可更輕鬆地與現有系統整合。 包括用於按需（低延遲）和批處理操作（高吞吐量操作）的單獨API。 它使文檔生成成為一項高效的任務。
 
-* 安全存取資料。 通信API僅連接到客戶指定的資料儲存庫並從中訪問資料，不建立資料的本地副本，使通信高度安全。
+* 安全訪問資料。 通信API僅連接到客戶指定的資料儲存庫並從其訪問資料，不製作資料的本地副本，使通信具有高度安全性。
 
-![信用卡報表示例](assets/statement.png)
-您可以使用Communications API建立信用卡對帳單範例。 對帳單使用相同的模板，但根據每個客戶的信用卡使用情況將資料分開。
+![信用卡對帳單樣本](assets/statement.png)
+可以使用通信API建立信用卡對帳單。 此示例對帳單使用相同的模板，但根據每個客戶的信用卡使用情況將資料分開。
 
-## 如何運作？
+## 它是怎麼運作的？
 
-通信利用 [PDF和XFA範本](#supported-document-types) with [XML資料](#form-data) 按需生成單個單據，或使用定義間隔的批任務生成多個單據。
+通信利用 [PDF和XFA模板](#supported-document-types) 與 [XML資料](#form-data) 按需生成單個文檔或使用按定義間隔的批處理作業生成多個文檔。
 
-通訊API可協助將範本(XFA或PDF)與客戶資料([XML資料](#form-data))，以生成PDF和打印格式的文檔，如PS、PCL、DPL、IPL和ZPL格式。
+通信API有助於將模板(XFA或PDF)與客戶資料([XML資料](#form-data))以PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）生成文檔。
 
-通常，您使用 [設計工具](use-forms-designer.md) 和使用通訊API來合併資料與範本。 您的應用程式可以將輸出文檔發送到網路打印機、本地打印機或儲存系統進行存檔。 典型的現成可用和自訂工作流程如下所示：
+通常，您使用 [設計師](use-forms-designer.md) 並使用Communications API將資料與模板合併。 您的應用程式可以將輸出文檔發送到網路打印機、本地打印機或儲存系統進行存檔。 典型的開箱即用工作流和自定義工作流如下所示：
 
-![通訊工作流程](assets/communicaions-workflow.png)
+![通信工作流](assets/communicaions-workflow.png)
 
-您也可以根據使用案例，透過您的網站或儲存伺服器下載這些檔案。
+根據使用案例，您還可以通過網站或儲存伺服器下載這些文檔。
 
-## 通訊API
+## 通信API
 
-通訊提供HTTP API，以供隨需和批次檔案產生：
+通信為按需和批處理文檔生成提供HTTP API:
 
-* **[同步API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** 適用於按需、低延遲和單記錄文檔生成方案。 這些API更適合使用者動作的使用案例。 例如，在使用者填妥表單後產生檔案。
+* **[同步API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** 適用於按需、低延遲和單記錄文檔生成情形。 這些API更適合基於用戶操作的使用案例。 例如，在用戶完成填寫表單後生成文檔。
 
-* **[批次API（非同步API）](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** 適合於計畫、高吞吐量和多文檔生成方案。 這些API會以批次產生檔案。 例如，每月生成電話賬單、信用卡對帳單和福利對帳單。
+* **[批處理API（非同步API）](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** 適用於計畫、高吞吐量和多個文檔生成方案。 這些API以批次形式生成文檔。 例如，每月生成電話單、信用卡對帳單和福利對帳單。
 
 ## 入門
 
-通訊是供Formsas a Cloud Service使用者使用的獨立附加模組。 您可以聯絡Adobe銷售團隊或您的Adobe代表以要求存取權。
+通信可作為Formsas a Cloud Service用戶的獨立和附加模組使用。 您可以聯繫Adobe銷售團隊或Adobe代表以請求訪問權限。
 
-Adobe 為您的組織啟用存取權限，並向您指定的組織管理員提供所需的特權。 管理員可授予您組織的AEM Forms開發人員（使用者）使用API的存取權。
+Adobe 為您的組織啟用存取權限，並向您指定的組織管理員提供所需的特權。 管理員可以授予您組織的AEM Forms開發人員（用戶）使用API的權限。
 
 <!--
 
@@ -136,19 +136,19 @@ An interactive PDF document contains various elements that constitute a form. Th
 
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form.  -->
 
-## 考量事項 {#considerations-for-communications-apis}
+## 注意事項 {#considerations-for-communications-apis}
 
-開始使用通訊API產生檔案之前，請先考慮下列事項：
+在開始使用通信API生成文檔之前，請考慮以下事項：
 
 ### 表單資料 {#form-data}
 
-通訊API會接受通常於 [設計工具](use-forms-designer.md) 和XML表單資料作為輸入。 要用資料填充文檔，要填充的每個表單欄位的XML表單資料中必須存在XML元素。 XML元素名稱必須與欄位名稱相符。 如果XML元素與表單欄位不對應，或者XML元素名稱與欄位名稱不匹配，則忽略XML元素。 不需要匹配XML元素的顯示順序。 重要因素是XML元素需指定相應的值。
+通信API接受通常在 [設計師](use-forms-designer.md) 和XML表單資料作為輸入。 要用資料填充文檔，XML元素必須存在於要填充的每個表單域的XML表單資料中。 XML元素名稱必須與欄位名稱匹配。 如果XML元素與表單域不對應，或者XML元素名稱與欄位名稱不匹配，則忽略XML元素。 不必與XML元素的顯示順序匹配。 重要因素是XML元素是用相應的值指定的。
 
-請考量下列貸款申請表範例：
+請考慮以下貸款申請表示例：
 
 ![貸款申請表](assets/loanFormData.png)
 
-要將資料合併到此表單設計中，請建立與表單層次結構、欄位命名和資料類型對應的XML資料源。 以下XML表示與抵押申請表示例對應的XML資料源。
+要將資料合併到此表單設計中，請建立與表單層次結構、欄位命名和資料類型對應的XML資料源。 以下XML表示與示例抵押申請表單對應的XML資料源。
 
 ```XML
 * <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
@@ -182,9 +182,9 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### 支援的文檔類型 {#supported-document-types}
 
-若要完整存取通訊API的轉譯功能，建議您使用XDP檔案作為輸入。 有時可使用PDF檔案。 不過，使用PDF檔案作為輸入有下列限制：
+要完全訪問通信API的呈現功能，建議使用XDP檔案作為輸入。 有時，可以使用PDF檔案。 但是，將PDF檔案用作輸入具有以下限制：
 
-不包含XFA資料流的PDF文檔無法呈現為PostScript、PCL或ZPL。 通訊API可以使用XFA資料流(即在 [設計工具](use-forms-designer.md))轉換為雷射和標籤格式。 如果PDF檔案經過簽署、認證或包含使用權限(使用AEM FormsReader擴充功能服務套用)，則無法以這些列印格式呈現。
+不包含XFA流的PDF文檔不能呈現為PostScript、PCL或ZPL。 通信API可以使用XFA流呈現PDF文檔(即，在 [設計師](use-forms-designer.md))和標籤格式。 如果PDF文檔已簽名、認證或包含使用權限(使用AEM FormsReader擴展服務應用)，則無法將其呈現為這些打印格式。
 
 <!-- Run-time options such as PDF version and tagged PDF are not supported for Acrobat forms. They are valid for PDF forms that contain XFA streams; however, these forms cannot be signed or certified. 
 
@@ -192,34 +192,34 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 For email functionality, you can create a process in Experience Manager Workflows that uses the Email Step. A workflow represents a business process that you are automating. -->
 
-### 可列印區域 {#printable-areas}
+### 可打印區域 {#printable-areas}
 
-標籤打印機的預設0.25英吋不可打印邊距不精確，因打印機、打印機、標籤大小和標籤大小而異，但建議您保持0.25英吋邊距或將其縮小。 不過，建議您不要增加不可列印的邊界。 否則，可打印區域中的資訊無法正確打印。
+預設的0.25英吋不可打印邊距對於標籤打印機不準確，並且因打印機和打印機而異，因標籤大小和標籤大小而異，但建議您保留0.25英吋邊距或縮小它。 但是，建議不要增加不可打印的邊距。 否則，可打印區域中的資訊無法正確打印。
 
-請務必為打印機使用正確的XDC檔案。 例如，請避免為300-dpi打印機選擇XDC檔案，並將文檔發送到200-dpi打印機。
+始終確保為打印機使用正確的XDC檔案。 例如，請避免為300 dpi打印機選擇XDC檔案，並將文檔發送到200 dpi打印機。
 
-### 僅限XFA表單(XDP/PDF)的指令碼 {#scripts}
+### 僅用於XFA表單(XDP/PDF)的指令碼 {#scripts}
 
-與通訊API搭配使用的表單設計可包含在伺服器上執行的指令碼。 確保表單設計不包含在用戶端上執行的指令碼。 如需建立表單設計指令碼的相關資訊，請參閱 [設計工具說明](use-forms-designer.md).
+與Communications API一起使用的表單設計可以包含在伺服器上運行的指令碼。 確保表單設計不包含在客戶端上運行的指令碼。 有關建立表單設計指令碼的資訊，請參見 [設計器幫助](use-forms-designer.md)。
 
 <!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
 
-### 字型對應 {#font-mapping}
+### 字型映射 {#font-mapping}
 
-要設計使用打印機駐留字型的表單，請在「設計器」中選擇與打印機上可用字型相匹配的字型名。 PCL或PostScript支援的字型清單位於相應的設備配置檔案（XDC檔案）中。 或者，可以建立字型映射以將非打印機駐留字型映射到不同字型名稱的打印機駐留字型。 例如，在PostScript方案中，對Arial®字型的引用可以映射到駐留在打印機上的Helvetica®字型。
+要設計使用打印機駐留字型的表單，請在設計器中選擇與打印機上可用字型匹配的字型名稱。 PCL或PostScript支援的字型清單位於相應的設備配置檔案（XDC檔案）中。 或者，可以建立字型映射以將非打印機駐留字型映射到不同字型名稱的打印機駐留字型。 例如，在PostScript方案中，對Arial®字型的引用可以映射到駐留在打印機上的Helvetica®字型。
 
-如果字型安裝在客戶端電腦上，該字型可在Designer的下拉清單中使用。 如果未安裝字型，則需要手動指定字型名稱。 Designer中的「永久替換不可用的字型」選項可以關閉。 否則，當XDP檔案保存在Designer中時，替代字型名稱將寫入XDP檔案。 這表示未使用打印機駐留字型。
+如果在客戶端電腦上安裝了字型，則字型可在設計器的下拉清單中使用。 如果未安裝字型，則需要手動指定字型名稱。 Designer中的「永久替換不可用字型」選項可關閉。 否則，當XDP檔案保存在Designer中時，替代字型名稱將寫入XDP檔案。 它表示不使用打印機駐留字型。
 
-有兩種OpenType®字型。 一種類型是PCL支援的TrueTypeOpenType®字型。 二是CFFOpenType®。 PDF和PostScript輸出支援嵌入的Type-1、TrueType和OpenType®字型。 PCL輸出支援嵌入的TrueType字型。
+存在兩種類型的OpenType®字型。 一種類型是PCL支援的TrueTypeOpenType®字型。 另一個是CFFOpenType®。 PDF和PostScript輸出支援嵌入的Type-1、TrueType和OpenType®字型。 PCL輸出支援嵌入式TrueType字型。
 
-Type-1和OpenType®字型未嵌入到PCL輸出中。 使用Type-1和OpenType®字型格式化的內容被柵格化並生成為點陣圖影像，該影像可能大而慢而難以生成。
+Type-1和OpenType®字型未嵌入PCL輸出。 使用Type-1和OpenType®字型格式化的內容將被柵格化並生成為點陣圖影像，該點陣圖影像可以大而慢，以便生成。
 
-在生成PostScript、PCL或PDF輸出時，下載或嵌入的字型會自動替換。 這意味著只有正確渲染生成的文檔所需的字型字形子集才包含在生成的輸出中。
+生成PostScript、PCL或PDF輸出時，下載或嵌入的字型將自動替換。 它意味著只有正確呈現所生成文檔所需的字型字形的子集才包含在所生成的輸出中。
 
-### 使用裝置設定檔檔案（XDC檔案） {#working-with-xdc-files}
+### 使用設備配置檔案（XDC檔案） {#working-with-xdc-files}
 
-設備配置檔案（XDC檔案）是XML格式的打印機描述檔案。 此檔案可讓通訊API以雷射或標籤打印機格式輸出文檔。 通訊API使用XDC檔案，包含下列項目：
+設備配置檔案（XDC檔案）是XML格式的打印機描述檔案。 此檔案使Communications API能夠將文檔輸出為雷射或標籤打印機格式。 通信API使用XDC檔案，包括：
 
 * hppcl5c.xdc
 
@@ -247,40 +247,40 @@ Type-1和OpenType®字型未嵌入到PCL輸出中。 使用Type-1和OpenType®�
 
 * dpl600.xdc
 
-您可以使用提供的XDC檔案來生成打印文檔或根據您的要求修改它們。
+您可以使用提供的XDC檔案生成打印文檔或根據您的要求修改它們。
 <!-- It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
 
-這些檔案是支援特定打印機功能的參考XDC檔案，如駐留字型、紙盤和訂書機。 這些參考的用途是幫助您了解如何使用設備配置檔案來設定自己的打印機。 參考也是同一生產線中類似打印機的起點。
+這些檔案是支援特定打印機功能的XDC檔案，如駐留字型、紙盒和訂書機。 這些參考的目的是幫助您瞭解如何使用設備配置檔案來設定自己的打印機。 參考也是同一產品系列中類似打印機的起點。
 
-### 使用XCI設定檔案 {#working-with-xci-files}
+### 使用XCI配置檔案 {#working-with-xci-files}
 
-通訊API使用XCI設定檔案來執行工作，例如控制輸出是單一面板或編頁。 雖然此檔案包含可設定的設定，但修改此值並非典型值。 <!-- The default.xci file is located in the svcdata\XMLFormService folder. -->
+通信API使用XCI配置檔案來執行任務，例如控制輸出是單個面板還是分頁。 儘管此檔案包含可設定的設定，但修改此值並非典型情況。 <!-- The default.xci file is located in the svcdata\XMLFormService folder. -->
 
-您可以在使用通訊API時傳遞修改的XCI檔案。 執行此操作時，請建立預設檔案的副本，僅更改需要修改以滿足您的業務需求的值，然後使用修改的XCI檔案。
+可以使用Communications API傳遞修改的XCI檔案。 執行此操作時，建立預設檔案的副本，僅更改需要修改以滿足業務要求的值，並使用修改的XCI檔案。
 
-通訊API以預設XCI檔案（或修改的檔案）開頭。 然後會套用使用通訊API指定的值。 這些值會覆寫XCI設定。
+通信API以預設XCI檔案（或修改的檔案）開頭。 然後，它應用使用通信API指定的值。 這些值會覆蓋XCI設定。
 
-下表指定XCI選項。
+下表指定了XCI選項。
 
 | XCI選項 | 說明 |
 | ------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| config/present/pdf/creator | 使用「文檔資訊」字典中的「建立者」條目標識文檔建立者。 如需此字典的相關資訊，請參閱PDF參考指南。 |
-| config/present/pdf/producer | 使用「文檔資訊」字典中的「生成者」條目標識文檔生成者。 如需此字典的相關資訊，請參閱PDF參考指南。 |
-| 配置/存在/佈局 | 控制輸出是單一面板還是編頁。 |
-| config/present/pdf/compression/level | 指定生成PDF文檔時要使用的壓縮程度。 |
-| config/present/pdf/scriptModel | 控制輸出PDF文檔中是否包含XFA特定資訊。 |
-| config/present/common/data/adjustData | 控制XFA應用程式在合併後是否調整資料。 |
-| config/present/pdf/renderPolicy | 控制頁面內容的產生是在伺服器上完成，還是延遲至用戶端。 |
-| config/present/common/locale | 指定輸出文檔中使用的預設區域設定。 |
-| 設定/存在/目的地 | 當包含在當前元素中時，指定輸出格式。 當openAction元素包含時，指定在互動式客戶端中開啟文檔時要執行的操作。 |
-| config/present/output/type | 指定要應用於檔案的壓縮類型或要生成的輸出類型。 |
-| config/present/common/temp/uri | 指定表單URI。 |
-| config/present/common/template/base | 在表單設計中為URI提供基本位置。 當此元素不存在或為空時，表單設計的位置將用作基礎。 |
-| config/present/common/log/to | 控制日誌資料或輸出資料寫入的位置。 |
-| config/present/output/to | 控制日誌資料或輸出資料寫入的位置。 |
-| config/present/script/currentPage | 指定開啟文檔時的初始頁。 |
-| config/present/script/exclude | 通知AEM Forms伺服器/通訊API要忽略哪些事件。 |
-| config/present/pdf/line化 | 控制輸出PDF文檔是否被線性化。 |
-| config/present/script/runScripts | 控制AEM Forms執行的指令碼集。 |
-| config/present/pdf/tagged | 控制在輸出PDF文檔中包含標籤。 在PDF的上下文中，標籤是文檔中包含的用於公開文檔的邏輯結構的附加資訊。 標籤有助於輔助工具和重新格式化。 例如，頁碼可以被標籤為工件，這樣螢幕閱讀器就不會在文本的中間發出它。 雖然標籤使文檔更有用，但它們也會增加文檔的大小和處理時間以建立文檔。 |
-| config/present/pdf/version | 指定要生成的PDF文檔的版本。 |
+| 配置/呈現/pdf/建立者 | 使用「文檔資訊」字典中的「建立者」條目標識文檔建立者。 有關此詞典的資訊，請參閱《PDF參考指南》。 |
+| 配置/存在/pdf/製作者 | 使用「文檔資訊」字典中的「製作者」條目標識文檔製作者。 有關此詞典的資訊，請參閱《PDF參考指南》。 |
+| 配置/現在/佈局 | 控制輸出是單個面板還是分頁。 |
+| 配置/存在/pdf/壓縮/級別 | 指定生成PDF文檔時要使用的壓縮程度。 |
+| config/present/pdf/script模型 | 控制是否將XFA特定資訊包含在輸出PDF文檔中。 |
+| config/present/common/data/adjustData | 控制XFA應用程式是否在合併後調整資料。 |
+| config/present/pdf/renderPolicy | 控制頁面內容的生成是在伺服器上完成還是延遲到客戶端。 |
+| 配置/現在/常用/區域設定 | 指定在輸出文檔中使用的預設區域設定。 |
+| 配置/存在/目標 | 當當前元素包含時，指定輸出格式。 當openAction元素包含時，指定在互動式客戶端中開啟文檔時要執行的操作。 |
+| 配置/存在/輸出/類型 | 指定要應用於檔案的壓縮類型或要生成的輸出類型。 |
+| 配置/當前/常/溫/uri | 指定窗體URI。 |
+| 配置/現在/常用/模板/基本 | 為窗體設計中的URI提供基本位置。 當此元素不存在或為空時，窗體設計的位置將用作基礎。 |
+| 配置/存在/公用/日誌/收件人 | 控制日誌資料或輸出資料寫入的位置。 |
+| 配置/提供/輸出/到 | 控制日誌資料或輸出資料寫入的位置。 |
+| config/present/script/currentPage | 指定開啟文檔時的初始頁面。 |
+| 配置/現在/指令碼/排除 | 通知AEM Forms伺服器/通信API要忽略哪些事件。 |
+| 配置/現在/pdf/線性化 | 控制輸出PDF文檔是否線性化。 |
+| config/present/script/runScripts | 控制執行哪組指令碼AEM Forms。 |
+| 配置/呈現/pdf/加標籤 | 控制將標籤包含到輸出PDF文檔中。 在PDF的上下文中，標籤是文檔中包含的用於公開文檔邏輯結構的附加資訊。 標籤有助於輔助輔助工具和重新格式化。 例如，頁碼可以被標籤為項目，以便螢幕閱讀器不會在文本的中間清晰它。 儘管標籤使文檔更有用，但它們也增加了文檔的大小和建立文檔的處理時間。 |
+| 配置/提供/pdf/版本 | 指定要生成的PDF文檔的版本。 |
