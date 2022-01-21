@@ -5,9 +5,9 @@ contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 462fd68ce4a33e14464256be4f4e9fdfe8d34aab
+source-git-commit: 797f0e6585666196acf7972f93d936fc54359c4a
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1033'
 ht-degree: 3%
 
 ---
@@ -54,26 +54,29 @@ Asynchronous downloads are triggered in either of the following case:
 * If the download takes more than 30 seconds to prepare.
 -->
 
-### 為大型下載啟用電子郵件通知 {#enable-emails-for-large-downloads}
 
-在以下任何情況下，都會觸發非同步下載：
+<!-- Go live is on 27th Jan 2022
+### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
 
-* 如果有10個以上的資產
-* 如果下載大小超過100 MB
-* 如果下載需要30秒以上的時間準備
+Asynchronous downloads are triggered in any of the following cases:
 
-當非同步下載在後端運行時，用戶可以繼續瀏覽並在Experience Manager中進一步工作。 在下載過程完成後，需要開箱即用機制通知用戶。 要實現此目標，管理員可以通過設定SMTP伺服器來配置電子郵件服務。 請參閱 [配置郵件服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email)。
+* If there are more than ten assets 
+* If the download size is more than 100 MB
+* If the download takes more than 30 seconds to prepare
 
-一旦配置了電子郵件服務，管理員和用戶就可以從Experience Manager介面啟用電子郵件通知。
+While the asynchronous download runs at the backend, the user can continue to explore and work further in Experience Manager. An out-of-the-box mechanism is required to notify the user upon completion of the download process. To achieve this objective, the administrators can configure email service by setting up an SMTP server. See [configure Mail Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
-要啟用電子郵件通知：
+Once the email service is configured, the administrators and users can enable email notifications from the Experience Manager interface. 
 
-1. 登錄到 [!DNL Experience Manager Assets]。
-1. 按一下右上角的用戶表徵圖，然後按一下 **[!UICONTROL 我的首選項]**。 將開啟「用戶首選項」窗口。
-1. 選擇 **[!UICONTROL 資產下載電子郵件通知]** 複選框，然後按一下 **[!UICONTROL 接受]**。
+To enable email notifications:
 
-   ![用於大下載的啟用電子郵件通知](/help/assets/assets/enable-email-for-large-downloads.png)
+1. Log in to [!DNL Experience Manager Assets].
+1. Click the user icon from the upper-right corner and then click **[!UICONTROL My Preferences]**. The User Preferences window opens.
+1. Select the **[!UICONTROL Asset Download email notifications]** check box and click **[!UICONTROL Accept]**.
 
+   ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
+
+-->
 
 要下載資產，請執行以下步驟：
 
