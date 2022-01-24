@@ -10,9 +10,9 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 3023fda4543328a0feda259ca58adb95fa4b1317
+source-git-commit: 5e33aa9c18cb79d2e263224e92f866c3280b59bc
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,13 @@ ht-degree: 0%
 >
 >建立Dynamic Media公司別名帳戶的功能位於2022年1月的預發行渠道中。 該功能將在2022年2月發佈時正式推出。
 
-Dynamic MediaURL和查看器嵌入代碼包含您的公司帳戶名。 此帳戶名是在設定Dynamic Media時建立的。 在某些情況下，您的企業可能已經歷收購或品牌重塑，或者您只想使用一個更令人難忘的名稱。 在這種情況下，在所有URL和查看器嵌入的出廠代碼中手動更新公司帳戶名稱並不容易。 此外，您還可能會影響您現有的Dynamic Media儲存庫或影響即時內容。 要解決此問題，可以配置Dynamic Media公司別名帳戶。
+Dynamic MediaURL和查看器嵌入代碼包含您的公司帳戶名。 此帳戶名是在設定Dynamic Media時建立的。 在某些情況下，您的企業可能已經歷收購或品牌重塑，或者您只想使用一個更令人難忘的名稱。 在這種情況下，在所有URL和查看器嵌入的出廠代碼中手動更新公司帳戶名稱並不容易。 此外，您可能會影響您現有的Dynamic Media儲存庫或影響即時內容。 要解決此問題，可以配置Dynamic Media公司別名帳戶。
 
 Dynamic Media公司別名帳戶可確保用戶介面中所有出廠設定的Dynamic MediaURL和查看者嵌入代碼都反映對您的業務上下文所做的任何更新，如重新標識。 別名帳戶對您的SEO（搜索引擎優化）也有積極影響，因為Dynamic MediaURL和查看器嵌入代碼反映了新公司帳戶名。
 
 配置Dynamic Media公司別名帳戶時，請注意以下事項：
 
+* 在上配置公司別名帳戶時 **[!UICONTROL 編輯Dynamic Media配置]** 頁，要使快取無效成功，必須使 *兩者* 這樣 **[!UICONTROL 公司]** 帳戶和 **[!UICONTROL 公司別名]** 同時計算。
 * 任何現有的Dynamic MediaURL或查看器在您的 *活* 必須手動更新數字屬性以反映新別名。 但是，任何URL或查看者都會嵌入帶有您原Dynamic Media公司名稱的代碼，這些代碼仍然適用於現有或新資產。
 * Dynamic Media公司別名帳戶功能僅限於Experience Manager Assets創作模式和交付。 公司別名與Experience Manager Sites不配合。 未為此更改更新WCM（Web內容管理）元件。 這些元件繼續使用原Dynamic Media公司名稱來提取Dynamic Media資產。
 * 您只能在 **[!UICONTROL 編輯Dynamic Media配置]** 的子菜單。 但是，您可以通過支援案例建立盡可能多的公司別名帳戶，並在Dynamic MediaURL或查看器嵌入代碼中手動反映必要的別名。
