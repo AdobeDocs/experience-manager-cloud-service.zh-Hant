@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
+source-git-commit: c74846dc4d4da9fa5050ce7b8ffce7f27e77269b
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1289'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## 以連結方式共用資產 {#sharelink}
 
-通過連結共用資產是使外部各方無需登錄即可獲得資源的一種便捷方式 [!DNL Assets]。 該功能允許匿名用戶訪問和下載與他們共用的資產。 當用戶從共用連結下載資產時， [!DNL Assets] 使用非同步服務，提供更快且不間斷的下載。 要下載的資產將在收件箱的後台排隊到可管理檔案大小的ZIP存檔中。 對於非常大的下載，下載內容捆綁到大小為100 GB的檔案中。
+通過連結共用資產是使外部各方無需登錄即可獲得資源的一種便捷方式 [!DNL Assets]。 該功能允許匿名用戶訪問和下載與他們共用的資產。 當用戶從共用連結下載資產時， [!DNL Assets] 使用非同步服務，提供更快且不間斷的下載。 要下載的資產將在收件箱的後台排隊到可管理檔案大小的ZIP存檔中。 對於大型下載，下載內容捆綁到100 GB的檔案中。
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -49,7 +49,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 要將資產作為公共URL共用：
 
 1. 登錄到 [!DNL Experience Manager Assets] 導航 **[!UICONTROL 檔案]**。
-1. 選擇資產或包含資產的資料夾。 在工具欄中，按一下 **[!UICONTROL 共用連結]**。
+1. 選擇包含資產的資產或資料夾。 在工具欄中，按一下 **[!UICONTROL 共用連結]**。
 1. 的 **[!UICONTROL 連結共用]** 對話框，其中包含自動生成的資產連結 **[!UICONTROL 共用連結]** 的子菜單。
 1. 複製資產連結並與用戶共用。
 
@@ -57,7 +57,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 要通過電子郵件共用資產：
 
-1. 選擇資產或包含資產的資料夾。 在工具欄中，按一下 **[!UICONTROL 共用連結]**。
+1. 選擇包含資產的資產或資料夾。 在工具欄中，按一下 **[!UICONTROL 共用連結]**。
 1. 的 **[!UICONTROL 連結共用]** 對話框，其中包含自動生成的資產連結 **[!UICONTROL 共用連結]** 的子菜單。
 
    * 在電子郵件地址框中，鍵入要與其共用連結的用戶的電子郵件ID。 您可以與多個用戶共用該連結。 如果用戶是您組織的成員，請從下拉清單中顯示的建議中選擇其電子郵件ID。 如果用戶是外部用戶，請鍵入完整的電子郵件ID並按 **[!UICONTROL 輸入]**;電子郵件ID將添加到用戶清單。
@@ -65,7 +65,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
    * 在 **[!UICONTROL 主題]** 框中，鍵入主題以指定共用資產的用途。
    * 在 **[!UICONTROL 消息]** 框中，鍵入消息。
    * 在 **[!UICONTROL 到期]** 欄位，使用日期選取器指定連結的到期日期和時間。
-   * 啟用 **[!UICONTROL 允許下載原始檔案]** 複選框以允許接收方下載原始格式副本。
+   * 啟用 **[!UICONTROL 允許下載原始檔案]** 複選框，以允許收件人下載原始格式副本。
 
 1. 按一下&#x200B;**[!UICONTROL 「共用」]**。一條消息確認該連結已與用戶共用。 用戶接收包含共用連結的電子郵件。
 
@@ -98,6 +98,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 >[!NOTE]
 >
 >如果共用資產被移動到其他位置，則其連結將停止工作。 重新建立連結並與用戶重新共用。
+
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -166,7 +167,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## 下載和共用資產 {#download-and-share-assets}
+## 單獨下載資產和共用 {#download-and-share-assets}
 
 用戶可以下載所需資產並在外部共用這些資產 [!DNL Experience Manager]。 有關詳細資訊，請參見 [如何搜索資產](/help/assets/search-assets.md)。 [如何下載資產](/help/assets/download-assets-from-aem.md), [如何下載收藏](manage-collections.md#download-a-collection)
 
