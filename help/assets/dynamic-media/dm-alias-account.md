@@ -10,7 +10,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 5e33aa9c18cb79d2e263224e92f866c3280b59bc
+source-git-commit: 494f6803967725ca04a1cc4512c1e553b9f0282c
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -29,11 +29,11 @@ Dynamic Media公司別名帳戶可確保用戶介面中所有出廠設定的Dyna
 
 配置Dynamic Media公司別名帳戶時，請注意以下事項：
 
-* 在上配置公司別名帳戶時 **[!UICONTROL 編輯Dynamic Media配置]** 頁，要使快取無效成功，必須使 *兩者* 這樣 **[!UICONTROL 公司]** 帳戶和 **[!UICONTROL 公司別名]** 同時計算。
 * 任何現有的Dynamic MediaURL或查看器在您的 *活* 必須手動更新數字屬性以反映新別名。 但是，任何URL或查看者都會嵌入帶有您原Dynamic Media公司名稱的代碼，這些代碼仍然適用於現有或新資產。
 * Dynamic Media公司別名帳戶功能僅限於Experience Manager Assets創作模式和交付。 公司別名與Experience Manager Sites不配合。 未為此更改更新WCM（Web內容管理）元件。 這些元件繼續使用原Dynamic Media公司名稱來提取Dynamic Media資產。
 * 您只能在 **[!UICONTROL 編輯Dynamic Media配置]** 的子菜單。 但是，您可以通過支援案例建立盡可能多的公司別名帳戶，並在Dynamic MediaURL或查看器嵌入代碼中手動反映必要的別名。
 * 開箱即用 [快取無效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) Dynamic Media的功能使在Dynamic Media配置頁中Cloud Services配置的公司帳戶和公司別名帳戶的URL無效。
+* 在上配置公司別名帳戶時 **[!UICONTROL 編輯Dynamic Media配置]** 頁，要使快取無效成功，必須使 *兩者* 這樣 **[!UICONTROL 公司]** 帳戶和 **[!UICONTROL 公司別名]** 同時計算。
 
 另請參閱 [在Cloud Services中建立Dynamic Media配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
 
