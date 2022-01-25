@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7dd57c6e161b7276d3796d64cd37fddc60e7a5b0
+source-git-commit: 72ddcbcc714bcd33de8f4f681db57872f5ca69ac
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3460'
 ht-degree: 42%
 
 ---
@@ -400,6 +400,7 @@ ht-degree: 42%
       + [Cloud Service 環境入門](/help/forms/setup-forms-cloud-service.md)
       + [設定本機開發環境](/help/forms/setup-local-development-environment.md)
       + [安裝及設定 Forms Designer](/help/forms/installing-configuring-designer.md)
+      + [設定統一的儲存連接器](/help/forms/configure-unified-storage-connector.md)
    + 管理使用者群組、表單和相關資產{#manage-forms-and-related-assets}
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
       + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
