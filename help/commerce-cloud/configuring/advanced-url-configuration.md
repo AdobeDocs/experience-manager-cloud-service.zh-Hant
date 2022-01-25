@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 78fa346cd2d6ed64c9700b7b2e611db58f7b3d11
+source-git-commit: 8c3a1366d076c009262eeab8129e4e589dc4f7c5
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2046'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 3%
 >
 > 搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，在許多 Adobe Experience Manager (AEM) as a Cloud Service 專案中，SEO 考量都是需要解決的問題。請閱讀 [SEO和URL管理最佳實踐](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html) 的雙曲餘切值。
 
-[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) provides advanced configurations to customize the URLs for product and category pages. 許多實現將自定義這些URL以用於搜索引擎優化(SEO)。 以下視頻詳細資訊如何配置 `UrlProvider` 服務和功能 [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 自定義產品和類別頁的URL。
+[AEMCIF核心元件](https://github.com/adobe/aem-core-cif-components) 提供高級配置，以自定義產品和類別頁的URL。 許多實現將自定義這些URL以用於搜索引擎優化(SEO)。 以下視頻詳細資訊如何配置 `UrlProvider` 服務和功能 [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 自定義產品和類別頁的URL。
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 ### 產品頁URL格式 {#product}
 
-This configures the URLs of the product pages and supports the following options:
+這將配置產品頁的URL，並支援以下選項：
 
 * `{{page}}.html/{{sku}}.html#{{variant_sku}}` (預設)
 * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
@@ -50,8 +50,8 @@ This configures the URLs of the product pages and supports the following options
 對於 [Venia參考儲存](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` 將替換為 `/content/venia/us/en/products/product-page`
-* `{{sku}}` will be replaced by the product&#39;s sku, e.g. `VP09`
-* `{{url_key}}` will be replaced by the product&#39;s `url_key` property, e.g. `lenora-crochet-shorts`
+* `{{sku}}` 將被產品的sku替換，例如 `VP09`
+* `{{url_key}}` 將被產品的 `url_key` 屬性，例如 `lenora-crochet-shorts`
 * `{{url_path}}` 將被產品的 `url_path`，例如 `venia-bottoms/venia-pants/lenora-crochet-shorts`
 * `{{variant_sku}}` 將替換為當前選定的變型，例如 `VP09-KH-S`
 
@@ -82,11 +82,11 @@ This configures the URLs of the product pages and supports the following options
 
 系統範圍的類別和產品頁面URL格式由 _CIF URL提供程式配置_ 可以為每個商店更改。
 
-In the CIF Configuration, an editor can select an alternative product or category page URL format. 如果未選擇任何內容，則實施將回退到系統範圍的配置。
+在CIF配置中，編輯器可以選擇替代產品或類別頁URL格式。 如果未選擇任何內容，則實施將回退到系統範圍的配置。
 
 更改即時網站的URL格式可能會對站點的有機通信產生負面影響。 請參閱 [最佳做法](#best-practices) 並事先仔細規劃URL格式的更改。
 
-![Url formats in CIF Configuration](assets/store-specific-url-formats.png)
+![CIF配置中的URL格式](assets/store-specific-url-formats.png)
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ In the CIF Configuration, an editor can select an alternative product or categor
 * 形成這些替代方案時使用路徑段最多的
 * 如果有多個，請按電子商務後端給定的順序選擇第一個
 
-This scheme will select the `url_path` that has the most ancestors, based on the assumption that a child category is more specific than it&#39;s parent category. 所選 `url_path` 考慮 _正則_ 並且將始終用於產品頁面或產品站點地圖中的規範連結。
+此方案將選擇 `url_path` 基於子類別比其父類別更具體的假設。 所選 `url_path` 考慮 _正則_ 並且將始終用於產品頁面或產品站點地圖中的規範連結。
 
 但是，當購物者從類別頁導航到產品頁，或從一個產品頁導航到同一類別中的另一個相關產品頁時，保留當前類別上下文是值得的。 在本例中， `url_path` 選擇應選擇在當前類別上下文內而不是 _正則_ 中。
 
@@ -161,15 +161,17 @@ This scheme will select the `url_path` that has the most ancestors, based on the
 特定產品頁面按產品的sku或類別進行選擇。 後者要求在產品URL中編碼某些類別資訊。 這僅適用於某些預設URL格式。 有關URL格式支援按sku或類別選擇特定頁面的比較，請參閱下表。
 
 
-| URL格式 | by sku | 按類別 |
+| URL格式 | 按sku | 按類別 |
 | ----------------------------------------------------- | ------ | ---------------- |
 | `{{page}}.html/{{url_key}}.html` | 否 | 否 |
 | `{{page}}.html/{{category}}/{{url_key}}.html` | 否 | 完全匹配 |
 | `{{page}}.html/{{url_path}}.html` | 否 | 是 |
 | `{{page}}.html/{{sku}}.html` | 是 | 否 |
 | `{{page}}.html/{{sku}}/{{url_key}}.html` | 是 | 否 |
-| `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html` | 是 | exact match only |
+| `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html` | 是 | 完全匹配 |
 | `{{page}}.html/{{sku}}/{{url_path}}.html` | 是 | 是 |
+
+{style=&quot;table-layout:auto&quot;&quot;
 
 >[!NOTE]
 >
@@ -191,7 +193,7 @@ This scheme will select the `url_path` that has the most ancestors, based on the
 
 ### 與Sling映射組合 {#sling-mapping}
 
-In addition to the `UrlProvider`, it is also possible to configure [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) in order to rewrite and process URLs. Archetype項AEM目還提供 [示例配置](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) 為埠4503（發佈）和80（調度程式）配置某些Sling映射。
+除 `UrlProvider`，也可以配置 [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 以便重寫和處理URL。 Archetype項AEM目還提供 [示例配置](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) 為埠4503（發佈）和80（調度程式）配置某些Sling映射。
 
 ### 與Dispatcher結AEM合 {#dispatcher}
 
@@ -199,7 +201,7 @@ In addition to the `UrlProvider`, it is also possible to configure [Sling Mappin
 
 ## 最佳作法 {#best-practices}
 
-### Choose the best URL format {#choose-url-format}
+### 選擇最佳URL格式 {#choose-url-format}
 
 正如在選擇可用預設格式之一之前提到的，甚至實施自定義格式都高度取決於儲存的需求和要求。 以下建議可能有助於作出明智的決定。
 
@@ -213,9 +215,9 @@ CIF URL提供程式的某些功能僅在使用對類別上下文進行編碼的�
 
 _**在URL長度和編碼資訊之間平衡。**_
 
-Depending on the catalog size, in particular the size and depth of the category tree, it may not be reasonable to encode the full `url_path` of categories into the URL. 在這種情況下，通過包括類別的 `url_key` 的雙曲餘切值。 這將啟用使用類別時幾乎所有可用的功能 `url_path`。
+根據目錄大小，特別是類別樹的大小和深度，對完整目錄進行編碼可能不合理 `url_path` 的子菜單。 在這種情況下，通過包括類別的 `url_key` 的雙曲餘切值。 這將啟用使用類別時幾乎所有可用的功能 `url_path`。
 
-Additionally, make use of [Sling Mappings](#sling-mapping) in order to combine the sku with the product `url_key`. 在大多數電子商務系統中，sku遵循特定格式，並將sku與 `url_key` 對於傳入的請求，應該很容易。 考慮到這一點，應將產品頁面URL重寫為 `/p/{{category}}/{{sku}}-{{url_key}}.html`和類別URL `/c/{{url_key}}.html` 分別來。 的 `/p` 和 `/c` 為了將產品和類別頁面與其他內容頁面區分開來，前置詞仍然是必要的。
+此外， [Sling映射](#sling-mapping) 以便把sku和產品 `url_key`。 在大多數電子商務系統中，sku遵循特定格式，並將sku與 `url_key` 對於傳入的請求，應該很容易。 考慮到這一點，應將產品頁面URL重寫為 `/p/{{category}}/{{sku}}-{{url_key}}.html`和類別URL `/c/{{url_key}}.html` 分別來。 的 `/p` 和 `/c` 為了將產品和類別頁面與其他內容頁面區分開來，前置詞仍然是必要的。
 
 ### 從一個URL格式遷移到另一個URL格式 {#migrate-url-formats}
 
@@ -237,4 +239,4 @@ Additionally, make use of [Sling Mappings](#sling-mapping) in order to combine t
 
 * [Venia參考儲存](https://github.com/adobe/aem-cif-guides-venia)
 * [資AEM源映射](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
-* [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+* [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
