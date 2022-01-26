@@ -1,9 +1,12 @@
 ---
 title: 將Adobe Analytics與Experience Cloud設定自動化整合
-description: Experience Cloud設定自動化提供簡單且自動化的方式，透過簡單的UI精靈介面，整合及檢測Experience Manager Sites與Experience Platform Launch及Adobe Analytics。 了解如何透過您自己的網站使用自動化設定。
+description: Experience Cloud設定自動化提供了一種簡單而自動化的方法，可以將Experience Manager Sites與Experience Platform Launch整合，使用簡單的UI嚮導介面對Adobe Analytics進行測試。 瞭解如何在您自己的站點上使用自動設定。
 feature: Administering
 role: Admin
-source-git-commit: 75d8f2a14ea97216c48c3bf242aa6186d97d4490
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 6c84c0eff6392f1f86c18c9daf15c402c4d9e778
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
@@ -15,58 +18,58 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
-> 此功能目前處於內部測試版。 Target版本將於2022年第1季度發行。
+> 此功能當前處於內部測試版中。 目標發佈日期為2022年第一季度。
 
-Experience Cloud設定自動化提供簡單且自動化的方式，透過簡單的UI精靈介面，整合及檢測Experience Manager Sites與Experience Platform Launch及Adobe Analytics。
+Experience Cloud設定自動化提供了一種簡單而自動化的方法，可以將Experience Manager Sites與Experience Platform Launch整合，使用簡單的UI嚮導介面對Adobe Analytics進行測試。
 
-將Adobe Analytics與AEM Sites整合從未像現在這樣簡單。 透過Experience Cloud設定自動化，您只需按幾下，即可設定、整合和檢測網站以擷取效能分析，以了解客戶的互動和轉換成效。
+將Adobe Analytics與AEM Sites整合起來，從未像現在這樣簡單。 通過Experience Cloud設定自動化，只需按一下幾下即可設定、整合和檢測您的站點以捕獲效能分析，以瞭解您的客戶對和轉換的參與程度如何。
 
-本影片探討如何使用AEM設定自動化將Experience Cloud網站與Experience Platform Launch和Analytics整合：
+此視頻探討如何使AEM用Experience Platform Launch設定自動化與Experience Cloud和分析整合站點：
 
 >[!VIDEO](https://video.tv.adobe.com/v/339605/?quality=12)
 
-## 需求
+## 要求
 
-自動化設定是專為使用 [AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 和 [Adobe用戶端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 已啟用。 您可以使用 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 或使用 [網站範本](/help/journey-sites/quick-site/create-site.md).
+自動化設定設計為在使用 [核AEM心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 和 [Adobe客戶端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 啟用。 您可以使用 [項AEM目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 或通過使用 [站點模板](/help/journey-sites/quick-site/create-site.md)。
 
 ## 如何設定
 
-1. 導覽至 **網站** 並選取要與Adobe Analytics整合之網站的根目錄。
-1. 展開側邊欄選單並點選 **設定分析**.
+1. 導航到 **站點** 並選擇與Adobe Analytics整合的站點根。
+1. 展開側軌菜單並點擊 **設定分析**。
 
-   這是側邊欄中的新選項，可開啟一個面板，提供Experience Cloud設定自動化的控制項和狀態。
-1. 點選 **整合Analytics** 按鈕。
-1. 在產生的對話方塊中，提供 **報表套裝ID**.
+   這是側軌中的一個新選項，它將開啟一個面板，該面板將提供Experience Cloud設定自動化的控制項和狀態。
+1. 點擊 **整合分析** 按鈕
+1. 在生成的對話框中，為 **報表套件ID**。
 
-   此字串將用於建立新 [報表套裝ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) 在Adobe Analytics中，作為所選AEM網站之analytics資料的資料存放區。 提供的字串將附加環境和層標識符，以確保獨特性。
+   此字串將用於建立新 [報表套件ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) 在Adobe Analytics作為所選站點的分析資料的資料存AEM儲。 提供的字串將附加環境和層標識符以確保唯一性。
 
-1. 重新整理頁面和面板，然後點選 **檢查整合狀態** 來檢查自動化狀態。
+1. 刷新頁面和面板並點擊 **檢查整合狀態** 以檢查自動化的狀態。
 
-   自動化設定會以非同步方式進行。 此 **檢查整合狀態** 會顯示整合的目前狀態。
+   自動設定非同步進行。 的 **檢查整合狀態** 將顯示整合的當前狀態。
 
-   * **正在進行中**  — 表示作業正在運行。
-   * **整合完成**  — 指出工作已完成整合Analytics和Launch、設定Launch擴充功能和Launch規則，以及在Adobe Analytics中建立新的報表套裝。
-   * **失敗**  — 表示自動作業無法成功完成。 按一下「日誌」連結，檢查此作業的日誌檔案。
+   * **正在進行**  — 表示作業正在運行。
+   * **整合完成**  — 表示作業已完成整合分析和啟動、設定啟動擴展和啟動規則以及在Adobe Analytics建立新的報告套件。
+   * **失敗**  — 表示自動作業無法成功完成。 按一下日誌連結檢查此作業的日誌檔案。
 
-## 驗證AEM設定
+## 驗證設AEM置
 
-自動化完成後，驗證您的網站現在是否觸發Analytics事件。
+自動化完成後，驗證您的站點是否正在激活分析事件。
 
-1. 使用 **網站編輯器**.
-1. 使用 **檢視為已發佈** 選項來載入已發佈的頁面版本。
-1. 使用瀏覽器的開發人員工具來檢查網路流量，以及 **Launch** 和 `AppMeasurement.js` 檔案現在正在載入。
-1. Inspect瀏覽器的主控台，以查看Adobe用戶端資料層已引發並收集頁面和元件層級事件。
+1. 使用 **站點編輯器**。
+1. 使用 **查看為已發佈** 的子菜單。
+1. 使用瀏覽器的開發人員工具來檢查網路流量， **啟動** 和 `AppMeasurement.js` 正在載入檔案。
+1. Inspect瀏覽器的控制台，用於查看Adobe客戶端資料層觸發和收集的頁面和元件級事件。
 
-## 驗證Analytics設定
+## 驗證分析設定
 
-接下來，導覽至Adobe Analytics以檢視從AEM網站上的事件流入的資料。
+接下來，導航到Adobe Analytics以查看從站點上的事件傳入的AEM資料。
 
-1. 導覽至您AEM網站所在相同IMS組織中的Adobe Analytics。
-1. 建立新的概述報表，供AEM Sites導覽至 **報表** > **參與** > **Adobe Experience Manager** > **網站效能概述**.
-1. 點選 **開啟報表**.
-1. 選取 **報表套裝ID** 的名稱，而此名稱會符合先前練習中使用的報表套裝名稱。
-1. 檢視分析資料在一段時間內流入新範本。
+1. 在與您的站點相同的IMS組織中導航到AEMAdobe Analytics。
+1. 為AEM Sites導航至 **報告** > **參與** > **Adobe Experience Manager** > **站點效能概述**。
+1. 點擊 **開啟報表**。
+1. 選擇 **報表套件ID** 與上一練習中使用的報表套件名稱匹配。
+1. 查看隨時間推移流入新模板的分析資料。
 
    >[!NOTE]
    >
-   > 有了新整合，報表填入資料可能需要數小時的時間。
+   > 對於新的整合，報告填充資料可能需要幾個小時。
