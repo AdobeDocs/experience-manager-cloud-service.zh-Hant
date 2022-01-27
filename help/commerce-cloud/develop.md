@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 3e2e7fa875e17235b4e47083b564882bb4950d0d
+source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1004'
 ht-degree: 8%
 
 ---
@@ -68,25 +68,25 @@ CIF載入項可以作為zip檔案從 [軟體分發門戶](https://experience.ado
 
    CIF附加ZIP檔案包含兩個Sling Feature存檔檔案 `.far` 的子菜單。 請確保為AEM作者或AEM發佈使用正確的SDK，具體取決於您計畫如何運行本地AEMas a Cloud ServiceSDK。
 
-1. 建立名為的本地OS環境變數 `COMMERCE_ENDPOINT` 保持MagentoGraphQL終結點。
+1. 建立名為的本地OS環境變數 `COMMERCE_ENDPOINT` 保持Adobe CommerceGraphQL終結點。
 
    MacOSX示例：
 
    ```bash
-   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   export COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    示例Windows:
 
    ```bash
-   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    此變數用於連AEM接到您的商業系統。 此外，CIF載入項包括本地反向代理，使Commerce GraphQL終結點在本地可用。 CIF創作工具（產品控制台和選取器）和執行直接GraphQL調用的CIF客戶端元件均使用此功能。
 
    還必須為as a Cloud Service環境設AEM置此變數。 有關變數的詳細資訊，請參見 [配置OSGiAEM以as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)。
 
-1. （可選）要啟用暫存目錄功能，必須為Magento實例建立整合令牌。 請按照以下步驟執行 [入門](./getting-started.md#staging) 的子菜單。
+1. （可選）要啟用分段目錄功能，必須為Adobe Commerce實例建立整合令牌。 請按照以下步驟執行 [入門](./getting-started.md#staging) 的子菜單。
 
    設定名為的OSGi密碼 `COMMERCE_AUTH_HEADER` 值：
 
