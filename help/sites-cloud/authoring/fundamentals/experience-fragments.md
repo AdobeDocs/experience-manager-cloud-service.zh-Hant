@@ -2,9 +2,9 @@
 title: 體驗片段
 description: 使用Adobe Experience Manager as a Cloud Service體驗片段使您的體驗可重複使用且靈活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 848c0090565db7a93243c7215ef159204597360e
+source-git-commit: 6d38886bf3f87be09dd897f615a471c4b8ddd6b7
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1489'
 ht-degree: 9%
 
 ---
@@ -353,4 +353,10 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
 
 預設情況下，「體驗片段」以HTML格式傳遞。 這可供第三方AEM渠道使用。
 
-對Adobe Target的出口請參閱 [與Adobe Target整合](/help/sites-cloud/integrating/integrating-adobe-target.md)。 JSON也可以使用，請參見 [與經驗片段的目標整合](/help/sites-cloud/authoring/fundamentals/experience-fragments-target.md)。
+有關對Adobe Target的出口，請參閱：
+
+* [整合 Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+* [將體驗片段導出到Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+
+<!-- * JSON can also be used, see [Target Integration with Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments-target.md)
+-->

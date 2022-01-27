@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9dc34e7e9e69fa5d5a6fc30c380a506cdbc0234a
+source-git-commit: 6d38886bf3f87be09dd897f615a471c4b8ddd6b7
 workflow-type: tm+mt
-source-wordcount: '3469'
+source-wordcount: '3472'
 ht-degree: 41%
 
 ---
@@ -172,7 +172,6 @@ ht-degree: 41%
          + [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
          + [內容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
          + [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
-         + [體驗片段 — 導出](/help/sites-cloud/authoring/fundamentals/experience-fragments-target.md)
          + [匯出為 CSV](/help/sites-cloud/authoring/fundamentals/csv-export.md)
          + [元件](/help/sites-cloud/authoring/fundamentals/components.md)
          + [為行動裝置製作](/help/sites-cloud/authoring/fundamentals/mobile.md)
@@ -270,6 +269,7 @@ ht-degree: 41%
       + [整合 Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [與Adobe Analytics自動設定整合](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [整合 Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+      + [將體驗片段導出到Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + 資產 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概覽與新增功能](/help/assets/overview.md)
