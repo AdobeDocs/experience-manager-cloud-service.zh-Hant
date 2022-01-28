@@ -3,9 +3,9 @@ title: 使用Dispatcher工具驗證和調試
 description: 使用Dispatcher工具驗證和調試
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2f4fcb2f70bc19053cf11d97dc0e021a95e782ed
+source-git-commit: 5a586e99febac6ee2f0f566e508028812bf89372
 workflow-type: tm+mt
-source-wordcount: '2413'
+source-wordcount: '2433'
 ht-degree: 1%
 
 ---
@@ -126,6 +126,8 @@ ht-degree: 1%
 * `conf.d/available_vhosts/default.vhost`
 
 包含示例虛擬主機。 對於您自己的虛擬主機，建立此檔案的副本，對其進行自定義，轉到 `conf.d/enabled_vhosts` 並建立到自定義副本的符號連結。
+
+確保始終有與內部Adobe進程所需的ServerAlias「\*.local」和localhost相匹配的虛擬主機。
 
 * `conf.d/dispatcher_vhost.conf`
 
