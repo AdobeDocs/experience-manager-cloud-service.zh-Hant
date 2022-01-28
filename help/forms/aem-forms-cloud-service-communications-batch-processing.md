@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] as a Cloud Service通信批處理
 description: 如何打造品牌導向和個性化的溝通？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2250'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,9 @@ ht-degree: 0%
 
 批處理操作是按預定間隔為一組記錄生成多個類似類型文檔的過程。 批處理操作包含兩個部分：配置（定義）和執行。
 
-* **配置（定義）**:批配置儲存關於要為生成的文檔設定的各種資產和屬性的資訊。 例如，它提供了有關XDP或PDF模板以及要使用的客戶資料的位置的詳細資訊，並為輸出PDF文檔指定了各種屬性。
+* **配置（定義）**:批配置儲存關於要為生成的文檔設定的各種資產和屬性的資訊。 例如，它提供了有關XDP或PDF模板以及要使用的客戶資料的位置的詳細資訊，並為輸出文檔指定了各種屬性。
 
-* **執行**:要啟動批處理操作，請指定運行並將批處理配置名稱傳遞給批處理執行API。
+* **執行**:要啟動批處理操作，請將批處理配置名稱傳遞給批處理執行API。
 
 ### 批操作的元件 {#components-of-a-batch-operations}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 **批處理資料儲存配置(USC)**:批處理資料配置可幫助您為批處理API配置特定的Blob儲存實例。 它允許您指定客戶擁有的MicrosoftAzure Blob儲存中的輸入和輸出位置。
 
-**批處理API**:允許您建立批配置並基於這些配置執行批運行，以建立並執行批操作，將PDF或XDP模板與資料合併，並以PDF、PS、PCL、DPL、IPL和ZPL格式生成輸出。 通信為建立、讀取、更新和刪除操作提供了批處理API。
+**批處理API**:允許您建立批配置並基於這些配置執行批運行，以將PDF或XDP模板與資料合併，並以PDF、PS、PCL、DPL、IPL和ZPL格式生成輸出。 通信為配置管理和批執行提供了批API。
 
 ![資料合併表](assets/communications-batch-structure.png)
 
@@ -125,12 +125,11 @@ ht-degree: 0%
 
 ### 建立批 {#create-a-batch}
 
-要建立批，請使用 `GET /config` API。 在HTTP請求正文中包括以下強制屬性：
-
+要建立批，請使用 `POST /config` API。 在HTTP請求正文中包括以下強制屬性：
 
 * **配置名稱**:指定批的唯一名稱。 例如， `wknd-job`
 * **資料源配置URI**:指定批資料儲存配置的位置。 它可以是配置的相對路徑或絕對路徑。 例如：`/conf/global/settings/forms/usc/batch/wknd-batch`
-* **輸出類型**:指定輸出格式：PDF或打印。 如果使用PRINT輸出類型，請在 `printedOutputOptionsList` 屬性，至少指定一個打印選項。 打印選項由其渲染類型標識，因此目前不允許使用具有相同渲染類型的多個打印選項。 支援的格式為PS、PCL、DPL、IPL和ZPL。
+* **輸出類型**:指定輸出格式：PDF和打印。 如果使用PRINT輸出類型，請在 `printedOutputOptionsList` 屬性，至少指定一個打印選項。 打印選項由其渲染類型標識，因此目前不允許使用具有相同渲染類型的多個打印選項。 支援的格式為PS、PCL、DPL、IPL和ZPL。
 
 * **模板**:指定模板的絕對路徑或相對路徑。 例如， `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
@@ -138,7 +137,7 @@ ht-degree: 0%
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
-建立批後，您可以使用 `GET /config /[configName]/execution/[execution-identifier]` 查看批的詳細資訊。
+您可以使用 `GET /config /[configName]` 查看批配置的詳細資訊。
 
 ### 運行批處理 {#run-a-batch}
 
@@ -150,14 +149,14 @@ ht-degree: 0%
 
 ### 檢查批的狀態 {#status-of-a-batch}
 
-要檢索批的狀態，請使用 `GET /config /[configName]/execution/[execution-identifier]`。 該執行標識符包含在批處理執行請求的HTTP響應報頭中。  例如，下圖顯示了批處理作業的執行標識符。
+要檢索批的狀態，請使用 `GET /config /[configName]/execution/[execution-identifier]`。 該執行標識符包含在批處理執行請求的HTTP響應報頭中。
 
 狀態請求的響應包含狀態部分。 它提供了有關批處理作業狀態、已在管道中（已讀取和正在處理）的記錄數以及每個outputType/renderType（正在進行、成功和失敗的項數）的狀態的詳細資訊。 狀態還包括批處理作業的開始和結束時間以及錯誤資訊（如果有）。 在批處理運行實際完成之前，結束時間為–1。
 
 >[!NOTE]
 >
 >* 當您請求多個PRINT格式時，狀態包含多個條目。 例如，PRINT/ZPL、PRINT/IPL。
->* 批處理作業不會同時讀取所有記錄，而是會不斷讀取並增加記錄數。 因此，狀態會在每次運行中返回不同數量的記錄。
+>* 批處理作業不會同時讀取所有記錄，而是會不斷讀取並增加記錄數。 因此，在讀取所有記錄之前，狀態將返回–1。
 
 
 ### 查看生成的文檔 {#view-generated-documents}
@@ -224,8 +223,6 @@ ht-degree: 0%
 API參考文檔提供了有關API提供的所有參數、驗證方法和各種服務的詳細資訊。 API參考文檔以.yaml格式提供。 您可以下載 [批處理API](assets/batch-api.yaml) 檔案並上傳到郵遞員，以檢查API的功能。
 
 ## 已知問題 {#known-issues}
-
-* 確保資料xml檔案不包含XML聲明頭。 例如， `<?xml version="1.0" encoding="UTF-8"?>`
 
 * 指定PRINT時，在打印選項清單中只能指定一次特定的呈現類型。 例如，不能有兩個打印選項，每個選項都指定PCL呈現類型。
 
