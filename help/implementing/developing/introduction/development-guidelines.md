@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發方針
 description: AEM as a Cloud Service 開發方針
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
+source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2288'
 ht-degree: 2%
 
 ---
@@ -105,15 +105,34 @@ as a Cloud Service不支援從「發佈」到「作者」的反向復AEM制。 �
 
 **激活DEBUG日誌級別**
 
-預設日誌級別為INFO，即DEBUG消息未記錄。
-要激活DEBUG日誌級別，請設定
+預設日誌級別為INFO，即DEBUG消息未記錄。 要激活DEBUG日誌級別，請將以下屬性更新為調試模式。
 
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+`/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-要調試的屬性。 不要將日誌保留在DEBUG日誌級別，因為它會生成大量日誌。
+例如，設定 `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` 值。
+
+```json
+{
+   "org.apache.sling.commons.log.names": [
+      "com.example"
+   ],
+   "org.apache.sling.commons.log.level": "DEBUG",
+   "org.apache.sling.commons.log.file": "logs/error.log",
+   "org.apache.sling.commons.log.additiv": "false"
+}
+```
+
+不要將日誌保留在DEBUG日誌級別的時間超過必要時間，因為這樣會生成大量條目。
+
+如果希望始終登錄，則可以使用基於AEM運行模式的OSGi配置目標為不同環境設定離散日誌級別 `DEBUG` 在開發過程中。 例如：
+
+|環境 |按運行模式的OSGi配置位置 | `org.apache.sling.commons.log.level` 屬性值 | | - | - | - | |開發 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json |調試 | |舞台 | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json |警告 | |生產 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json |錯誤 |
+
 調試檔案中的一行通常以DEBUG開頭，然後提供日誌級別、安裝程式操作和日誌消息。 例如：
 
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+```text
+DEBUG 3 WebApp Panel: WebApp successfully deployed
+```
 
 日誌級別如下：
 
