@@ -1,118 +1,122 @@
 ---
-title: 如何從AEM 6.5 Forms和AEM 6.4 Forms移轉至 [!DNL AEM Forms] as a Cloud Service環境？
-description: 從 [!DNL AEM Forms] On-Premise environment to [!DNL AEM Forms] as a Cloud Service環境
+title: 如何從6.AEM5Forms和6.4AEMForms遷移到 [!DNL AEM Forms] as a Cloud Service環境？
+description: 從 [!DNL AEM Forms] 本地環境 [!DNL AEM Forms] as a Cloud Service環境
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: ea9d8714dca0d30ba2ff33cef220c8b3f8b3c429
 workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 2%
+source-wordcount: '1219'
+ht-degree: 3%
 
 ---
 
-# 移轉至 [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# 移轉至[!DNL AEM Forms]as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
-您可以從以下來源移轉最適化Forms、主題、範本和雲端設定： <!-- AEM 6.3 Forms--> AEM 6.4 Forms on OSGi和AEM 6.5 Forms on OSGi to [!DNL AEM] as a Cloud Service。 移轉這些資產前，請使用移轉公用程式，將舊版中使用的格式轉換為 [!DNL AEM] as a Cloud Service。 執行移轉公用程式時，會更新下列資產：
+您可以從中遷移您的自適應Forms、主題、模板和雲配置 <!-- AEM 6.3 Forms--> OSGiAEM上的Forms6.4 AEMOSGi上的Forms6.5 [!DNL AEM] as a Cloud Service。 在遷移這些資產之前，請使用遷移實用程式將早期版本中使用的格式轉換為 [!DNL AEM] as a Cloud Service。 運行遷移實用程式時，將更新以下資產：
 
-* 適用性Forms的自訂元件
-* 最適化Forms範本和主題
+* 自適應Forms的自定義元件
+* 自適應Forms模板和主題
 * 雲配置
-* 程式碼編輯器指令碼會轉換為可重複使用的函式，並套用至視覺規則。
+* 代碼編輯器指令碼被轉換為可重用的函式並應用於可視規則。
 
-## 考量事項 {#consideration}
+## 注意事項 {#consideration}
 
-* 此服務僅協助將內容從 [!DNL AEM Forms] 在OSGi環境上。 將內容從 [!DNL AEM Forms] 不支援在JEE上傳送至Cloud Service環境。
+* 該服務僅幫助從 [!DNL AEM Forms] 在OSGi環境中。 從遷移內容 [!DNL AEM Forms] 不支援將JEE連接到Cloud Service環境。
 
-* (僅適用於AEM 6.3 Forms或升級至AEM 6.4 Forms或AEM 6.5 Forms的舊版環境)[!DNL不支援以AEM 6.3 Forms或舊版中可用的現成可用範本和主題為基礎的適用性Forms [!DNL AEM Forms]as a Cloud Service。
+* (僅適用於AEM6.3Forms或舊版本環境，升級到AEM6.4Forms或AEM6.5Forms)基於出廠設定模板和在AEM6.3Forms或舊版本中提供的主題的自適應Forms不受[!DNL]支援 [!DNL AEM Forms]]as a Cloud Service。
 
 ## 必備條件 {#prerequisites}
 
-* 在Cloud Service環境中，移轉公用程式會與使用者對應工具和內容轉移工具搭配使用。 移轉公用程式會 [!DNL AEM Forms] 與Cloud Service相容的資產，而內容轉移工具會將內容從 [!DNL AEM Forms] 環境 [!DNL AEM] as a Cloud Service環境。 使用移轉公用程式之前，請先了解 [移至AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). 該過程有兩種工具：
-   * [使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration):使用者對應工具可協助您將使用者對應至對應的Adobe IMS使用者帳戶。
-   * [內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration):「內容轉移工具」可協助您準備內容，並將內容從現有環境轉移至Cloud Service環境。
-* 具有管理員權限的帳戶 [!DNL AEM Forms] as a Cloud Service和您的本地 [!DNL AEM Forms] 環境。
-* 下載並安裝Best Practice Analyzer、內容轉移工具，以及 [!DNL AEM Forms] 遷移實用程式從 [Software Distribution入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+* [啟用Forms — 數字註冊](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) 選項，以及您的FormsCloud Service計畫 [運行管線](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)。
 
-* 執行 [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration) 工具並修正回報的問題。
+![試執行結果](assets/enable-add-on.png)
+
+* 在Cloud Service環境中，遷移實用程式與用戶映射工具和內容傳輸工具結合使用。 遷移實用程式 [!DNL AEM Forms] 與Cloud Service相容的資產，內容傳輸工具將內容從 [!DNL AEM Forms] 環境 [!DNL AEM] as a Cloud Service環境。 在使用遷移實用程式之前，請瞭解 [移到AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html)。 該過程有兩種工具：
+   * [用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration):用戶映射工具可幫助您將用戶與相應的Adobe IMS用戶帳戶進行映射。
+   * [內容傳輸工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration):內容傳輸工具可幫助您準備內容並將內容從現有環境傳輸到Cloud Service環境。
+* 具有管理員權限的帳戶 [!DNL AEM Forms] as a Cloud Service和本地 [!DNL AEM Forms] 環境。
+* 下載並安裝Best Practice Analyzer 、內容傳輸工具，以及 [!DNL AEM Forms] 遷移實用程式 [軟體分發門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+
+* 運行 [最佳做法分析器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration) 工具並修復報告的問題。
 
 <!-- * Download the latest [compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases) for your [!DNL AEM Forms] version. -->
 
-## 移轉 [!DNL AEM Forms] 資產  {#use-the-migration-utility}
+## 遷移 [!DNL AEM Forms] 資產  {#use-the-migration-utility}
 
-執行下列步驟，將 [!DNL AEM Forms] 與Cloud Service相容的資產，並將其傳輸至 [!DNL AEM] as a Cloud Service環境。
+執行以下步驟，使 [!DNL AEM Forms] 與Cloud Service相容的資產，並將其 [!DNL AEM] as a Cloud Service環境。
 
-1. 建立 [克隆](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/qaq-p/363487) 現有 [!DNL AEM Forms] 環境。
+1. 建立 [克隆](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/qaq-p/363487) 您現有 [!DNL AEM Forms] 環境。
 
-   請一律使用複製的環境，執行「內容轉移工具」和「移轉公用程式」。 「內容轉移工具」和「移轉公用程式」會對內容和資產進行一些變更。 因此，請勿在生產環境中執行內容轉移工具和移轉公用程式。
+   始終使用克隆的環境運行內容傳輸工具和遷移實用程式。 內容傳輸工具和遷移實用程式對內容和資產做了一些更改。 因此，不要在生產環境中運行內容傳輸工具和遷移實用程式。
 
-1. 以管理權限登入您的複製環境。
+1. 使用管理權限登錄到克隆的環境。
 
-1. 執行 [使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) 將您的使用者對應至對應的Adobe IMS使用者帳戶。 您需要Adobe IMS使用者帳戶才能登入 [!DNL AEM Forms] as a Cloud Service例項。
+1. 運行 [用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) 將用戶與相應的Adobe IMS用戶帳戶映射。 您需要Adobe IMS用戶帳戶登錄到 [!DNL AEM Forms] as a Cloud Service實例。
 
-1. 下載並安裝 [內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) 和 [!DNL AEM Forms] as a Cloud Service遷移實用程式 [Software Distribution入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 在複製的環境中。 您可以使用AEM Package Manager來安裝工具和公用程式。
+1. 下載並安裝 [內容傳輸工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) 和 [!DNL AEM Forms] as a Cloud Service遷移實用程式 [軟體分發門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 在克隆的環境中。 可以使用包管AEM理器來安裝工具和實用程式。
 
-1. 導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL 內容移轉]**.
+1. 導航到 **[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL 內容遷移]**。
 
-1. 開啟 **[!UICONTROL 準備Forms以進行移轉]** 卡片。 瀏覽器會顯示五個選項：
+1. 開啟 **[!UICONTROL 為Forms遷移做好準備]** 卡。 瀏覽器顯示五個選項：
    * **[!UICONTROL AEM Forms 資產移轉]**
-   * **[!UICONTROL 適用性Forms自訂元件移轉]**
-   * **[!UICONTROL 適用性Forms範本移轉]**
+   * **[!UICONTROL 自適應Forms自定義元件遷移]**
+   * **[!UICONTROL 自適應Forms模板遷移]**
    * **[!UICONTROL AEM 表單雲端組態移轉]**
-   * **[!UICONTROL 程式碼編輯器指令碼移轉]**
+   * **[!UICONTROL 代碼編輯器指令碼遷移]**
 
-1. 逐一使用選項，將 [!DNL AEM Forms] 與 [!DNL AEM] as a Cloud Service:
+1. 使用一個接一個的選項 [!DNL AEM Forms] 與 [!DNL AEM] as a Cloud Service:
 
-   1. 點選 **[!UICONTROL AEM Forms Assets移轉]**，然後在下一個畫面中，點選 **[!UICONTROL 開始移轉]**. 它可讓您的 [!DNL AEM Forms] 環境相容 [!DNL AEM] as a Cloud Service。
+   1. 點擊 **[!UICONTROL AEM Forms資產遷移]**，在下一個螢幕中，點擊 **[!UICONTROL 開始遷移]**。 它使Adaptive Forms和主題 [!DNL AEM Forms] 環境相容 [!DNL AEM] as a Cloud Service。
 
-   1. 點選 **[!UICONTROL 適用性Forms自訂元件移轉]** 和在「自訂元件移轉」頁面中，點選 **[!UICONTROL 開始移轉]**. 它會為適用性Forms開發任何自訂元件，並在您的 [!DNL AEM Forms] 環境相容 [!DNL AEM] as a Cloud Service。
+   1. 點擊 **[!UICONTROL 自適應Forms自定義元件遷移]** 在「自定義元件遷移」頁中，按一下 **[!UICONTROL 開始遷移]**。 它使任何為自適應Forms開發的定製元件和元件覆蓋在您的 [!DNL AEM Forms] 環境相容 [!DNL AEM] as a Cloud Service。
 
-   1. 點選 **[!UICONTROL 適用性Forms範本移轉]** 和在「自訂元件移轉」頁面中，點選 **[!UICONTROL 開始移轉]**. 它可讓位於/apps或/conf的適用性表單範本(使用AEM範本編輯器建立)與 [!DNL AEM] as a Cloud Service。
+   1. 點擊 **[!UICONTROL 自適應Forms模板遷移]** 在「自定義元件遷移」頁中，按一下 **[!UICONTROL 開始遷移]**。 它使/apps或/conf上的Adaptive Form模板與相容，並使用模板編AEM輯器建立 [!DNL AEM] as a Cloud Service。
 
-   1. 點選 **[!UICONTROL AEM Forms雲端組態移轉]** 然後在「設定移轉」頁面上，點選 **[!UICONTROL 開始移轉]**. 它會更新並將下列Cloud Services移至新位置：
+   1. 點擊 **[!UICONTROL AEM Forms雲配置遷移]** 然後在「配置遷移」頁上，按一下 **[!UICONTROL 開始遷移]**。 它會更新以下Cloud Services並將其移動到新位置：
 
       * 表單資料模型Cloud Service
-      * Google reCAPTCHACloud Service
+      * GooglereCAPTCHACloud Service
       * [!DNL Adobe Sign] 雲端服務
       * Adobe FontsCloud Service
-   1. 點選 **[!UICONTROL 程式碼編輯器指令碼移轉]**，指定要保存可重複使用的函式的位置，然後點選**[!UICONTROL 開始移轉].
+   1. 點擊 **[!UICONTROL 代碼編輯器指令碼遷移]**，指定保存可重用函式的位置，然後點擊**[!UICONTROL 開始遷移]。
 
-   Cloud Service不支援規則編輯器指令碼。 此 **[!UICONTROL 程式碼編輯器指令碼移轉]** 工具會將環境中的所有規則指令碼轉換為可重複使用的函式，並將可重複使用的函式套用至適當位置的視覺編輯器。 這些可重複使用的函式會以用戶端程式庫的形式儲存，並協助您保持現有功能不變。 此工具會自動將產生的可重複使用函式套用至對應的適用性Forms。
+   該Cloud Service不支援規則編輯器指令碼。 的 **[!UICONTROL 代碼編輯器指令碼遷移]** 工具將環境中的所有規則指令碼轉換為可重用函式，並將可重用函式應用到適當位置的可視編輯器。 這些可重用功能以客戶端庫的形式保存，並幫助您保持現有功能不變。 該工具自動將生成的可重用函式應用到相應的自適應Forms。
 
-   使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) 將可重複使用的函式（客戶端庫）導出到包。
+   使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) 將可重用函式（客戶端庫）導出到包。
 
-1. [部署](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying-content-packages-via-cloud-manager-and-package-manager) 可重複使用的函式（客戶端庫）包， [自訂程式碼，元件，設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html#cloud-manager)，自訂地區設定特定程式庫 [!DNL AEM] as a Cloud Service環境。
+1. [部署](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying-content-packages-via-cloud-manager-and-package-manager) 可重用的函式（客戶端庫）包， [自定義代碼，元件，配置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html#cloud-manager)，自定義區域設定特定的庫 [!DNL AEM] as a Cloud Service環境。
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. 執行 [內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). 在 **[!UICONTROL 建立移轉集]** 畫面中，指定適用性Forms、主題、範本、表單資料模型、Cloud Services、自訂元件和其他AEM Forms專用資產的路徑， **[!UICONTROL 要包含的路徑]** 選項。 它添加指定 [!DNL AEM Forms] 資產移轉集。
+1. 運行 [內容傳輸工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration)。 在上指定參數時 **[!UICONTROL 建立遷移集]** 框中，指定自適應Forms、主題、模板、表單資料模型、Cloud Services、自定義元件和其他AEM Forms特定資產的路徑 **[!UICONTROL 要包括的路徑]** 的雙曲餘切值。 它添加了指定的 [!DNL AEM Forms] 要遷移的資產。
 
-## 各種AEM Forms特定資產的路徑
+## AEM Forms特有資產的路徑
 
-* **適用性Forms**:您可以在 `/content/dam/formsanddocuments/`和/content/forms/af。 例如，針對標題為WKND Registration的適用性表單新增路徑 `/content/dam/formsanddocuments/wknd-registration` 和 `/content/forms/af/wknd-registration`.
-* **表單資料模式**:您可以在 `/content/dam/formsanddocuments-fdm`. 例如， `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **自適應Forms**:可以在以下位置找到自適應表單 `/content/dam/formsanddocuments/`和/content/forms/af。 例如，對於標題為WKND註冊的自適應表單添加路徑 `/content/dam/formsanddocuments/wknd-registration` 和 `/content/forms/af/wknd-registration`。
+* **表單資料模式**:可在以下位置找到所有表單資料模型 `/content/dam/formsanddocuments-fdm`。 比如說， `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`。
 
-* **用戶端程式庫**:客戶端庫的預設路徑為 `/etc/clientlibs/fd/theme`.
+* **客戶端庫**:客戶端庫的預設路徑是 `/etc/clientlibs/fd/theme`。
 
-* **最適化表單範本**:範本的預設路徑為 `/conf/<template folder>`. 例如，對於標題為基本新增路徑的範本 `/conf/ReferenceEditableTemplates/settings/wcm/templates/basic`.
+* **自適應表單模板**:模板的預設路徑是 `/conf/<template folder>`。 例如，對於標題為基本添加路徑的模板 `/conf/ReferenceEditableTemplates/settings/wcm/templates/basic`。
 
-* **最適化表單主題和用戶端程式庫**:主題的預設路徑為 ` /content/dam/formsanddocuments-themes/` 而用戶端程式庫的預設路徑為 `/etc/clientlibs/fd/theme`. 例如，對於標題為WKND主題添加路徑的模板 ` /content/dam/formsanddocuments-themes/wkndtheme` 和主題的用戶端程式庫(位於 `/etc/clientlibs/reference-themes/wkndtheme-3-0`. 您也可以在其他自訂路徑擁有主題和用戶端程式庫。
+* **自適應表單主題和客戶端庫**:主題的預設路徑是 ` /content/dam/formsanddocuments-themes/` 而客戶端庫的預設路徑為 `/etc/clientlibs/fd/theme`。 例如，對於標題為WKND主題的模板添加路徑 ` /content/dam/formsanddocuments-themes/wkndtheme` 和客戶端庫(位於 `/etc/clientlibs/reference-themes/wkndtheme-3-0`。 您還可以在其它自定義路徑上使用主題和客戶端庫。
 
-* **雲端設定**:您可以在以下位置找到雲配置： `/conf/`. 例如，表單資料模型雲端設定位於 `/conf/global/settings/cloudconfigs/fdm`.
+* **雲配置**:您可以在以下位置找到雲配置： `/conf/`。 例如，表單資料模型雲配置位於 `/conf/global/settings/cloudconfigs/fdm`。
 
-* **工作流模型**:您可以在下列位置找到AEM工作流程模型： `/conf/global/settings/workflow/models/`. 例如，對於標題為WKND註冊添加路徑的工作流模型 `/conf/global/settings/workflow/models/wknd-registration`
+* **工作流模型**:可以在以下位AEM置找到工作流模型 `/conf/global/settings/workflow/models/`。 例如，對於標題為WKND註冊添加路徑的工作流模型 `/conf/global/settings/workflow/models/wknd-registration`
 
-您可以新增列在下方的頂層資料夾路徑或特定資料夾路徑，如下所述。 它可讓您一次移轉特定資產以及所有資產和表單。
+您可以添加下面列出的頂級資料夾路徑或特定資料夾路徑，如下所述。 它使您能夠同時遷移特定資產和所有資產和表單。
 
 * /content/dam/formsanddocuments-fdm
-* /content/dam/formsanddocuments/themes
-* /content/forms/af
+* /content/dam/formsanddocuments/主題
+* /內容/表單/af
 * /etc/clientlibs/fd/theme
 
-若要移轉AEM Workflow模型，請指定下列路徑：
+要遷移工AEM作流模型，請指定以下路徑：
 
 * /conf/global/settings/workflow/models/
 * /conf/global/settings/workflow/launcher
