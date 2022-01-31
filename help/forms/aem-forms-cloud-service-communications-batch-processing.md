@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] as a Cloud Service通信批處理
 description: 如何打造品牌導向和個性化的溝通？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: f8f9aeb12d7a988deaf1ceed2cdf29519f8102dd
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1698'
 ht-degree: 0%
 
 ---
@@ -168,55 +168,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >根據輸入記錄的數量和模板的複雜性，處理批處理可能需要一些時間，在檢查輸出檔案的目標資料夾之前等待幾分鐘。
-
-## 注意事項  {#considerations-for-communications-apis}
-
-### 表單資料 {#form-data}
-
-通信API接受通常在設計器中建立的表單設計和作為輸入的XML表單資料。 要用資料填充文檔，XML元素必須存在於要填充的每個表單域的XML表單資料中。 XML元素名稱必須與欄位名稱匹配。 如果XML元素與表單域不對應，或XML元素名稱與欄位名稱不匹配，則忽略該元素。 不必與XML元素的顯示順序匹配。 重要因素是XML元素是用相應的值指定的。
-
-請考慮以下貸款申請表示例：
-
-![貸款申請表](assets/loanFormData.png)
-
-要將資料合併到此表單設計中，請建立與表單對應的XML資料源。 以下XML表示與示例抵押申請表單對應的XML資料源。
-
-```XML
-<?xml version="1.0" encoding="UTF-8" ?>
-- <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
-- <xfa:data>
-- <data>
-    - <Layer>
-        <closeDate>1/26/2007</closeDate>
-        <lastName>Johnson</lastName>
-        <firstName>Jerry</firstName>
-        <mailingAddress>JJohnson@NoMailServer.com</mailingAddress>
-        <city>New York</city>
-        <zipCode>00501</zipCode>
-        <state>NY</state>
-        <dateBirth>26/08/1973</dateBirth>
-        <middleInitials>D</middleInitials>
-        <socialSecurityNumber>(555) 555-5555</socialSecurityNumber>
-        <phoneNumber>5555550000</phoneNumber>
-    </Layer>
-    - <Mortgage>
-        <mortgageAmount>295000.00</mortgageAmount>
-        <monthlyMortgagePayment>1724.54</monthlyMortgagePayment>
-        <purchasePrice>300000</purchasePrice>
-        <downPayment>5000</downPayment>
-        <term>25</term>
-        <interestRate>5.00</interestRate>
-    </Mortgage>
-</data>
-</xfa:data>
-</xfa:datasets>
-```
-
-### 支援的文檔類型 {#supported-document-types}
-
-要完全訪問通信API的呈現功能，建議使用XDP檔案作為輸入。 有時，可以使用PDF檔案。 但是，將PDF檔案用作輸入有以下限制：
-
-不包含XFA流的PDF文檔不能呈現為PostScript、PCL或ZPL。 通信API可以將具有XFA流（即在設計器中建立的表單）的PDF文檔呈現為雷射和標籤格式。 如果PDF文檔已簽名、認證或包含使用權限(使用AEM FormsReader擴展服務應用)，則無法將其呈現為這些打印格式。
 
 ## API參考文檔
 
