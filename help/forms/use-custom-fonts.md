@@ -1,9 +1,9 @@
 ---
 title: '使用自定義字型 '
 description: '使用自定義字型 '
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: 0bfd75e517e03110d58575b21551d1d553fa36bf
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,10 @@ ht-degree: 0%
 要將自定義字型添加到Cloud Service環境：
 
 1. 設定並開啟 [地方開發項目](setup-local-development-environment.md)。 可以使用您選擇的任何IDE。
-1. 在項目的頂級資料夾結構中，建立一個資料夾以保存自定義字型，並將自定義字型添加到資料夾。 例如，字型/src/main/resources
+1. 在項目的頂級資料夾結構中，建立一個資料夾（模組）以保存自定義字型，並將自定義字型添加到資料夾。 例如，字型/src/main/resources
    ![字型資料夾](assets/fonts.png)
 
-1. 開啟開發項目的頂級pom.xml檔案。
+1. 開啟開發項目字型模組的pom.xml檔案。
 1. 添加 `<Font-Archive-Version>` 清單條目到.pom檔案，並將版本值設定為1:
 
    ```xml
@@ -72,11 +72,11 @@ ht-degree: 0%
 
 1. 簽入更新的代碼並 [運行管線](/help/implementing/cloud-manager/deploy-code.md) 將字型部署到Cloud Service環境。
 
-1. 開啟命令提示符，導航到本地項目資料夾，然後運行以下命令。 它會在.jar檔案中建立字型包。 可以使用.jar檔案進行項目的本地部署。
+1. （可選）開啟命令提示符，導航到本地項目資料夾，然後運行以下命令。 該命令將字型打包在.jar檔案中，並附帶相關資訊。 可以使用.jar檔案將自定義字型添加到FormsCloud Service本地開發環境。
 
-```shell
-mvn clean install
-```
+   ```shell
+   mvn clean install
+   ```
 
 ## 將自定義字型添加到本地FormsCloud Service開發環境 {#custom-fonts-cloud-service-sdk}
 
@@ -88,4 +88,4 @@ mvn clean install
 
    >[!NOTE]
    >
-   >無論何時部署更新的.jar檔案以向本地部署環境添加或刪除自定義字型，請停止並啟動基於Docker的SDK環境。
+   >只要將更新的自定義字型.jar檔案部署到本地部署環境，請重新啟動基於Docker的SDK環境。

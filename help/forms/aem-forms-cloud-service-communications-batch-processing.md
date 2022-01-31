@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] as a Cloud Service通信批處理
 description: 如何打造品牌導向和個性化的溝通？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2250'
+source-wordcount: '1957'
 ht-degree: 0%
 
 ---
@@ -221,44 +221,3 @@ ht-degree: 0%
 ## API參考文檔
 
 API參考文檔提供了有關API提供的所有參數、驗證方法和各種服務的詳細資訊。 API參考文檔以.yaml格式提供。 您可以下載 [批處理API](assets/batch-api.yaml) 檔案並上傳到郵遞員，以檢查API的功能。
-
-## 已知問題 {#known-issues}
-
-* 指定PRINT時，在打印選項清單中只能指定一次特定的呈現類型。 例如，不能有兩個打印選項，每個選項都指定PCL呈現類型。
-
-* 在批處理配置中運行批處理時，不要修改該批處理配置中使用的資料源USC配置/Azure雲配置。 即使在執行後，如果需要更新，也應建立配置副本，而不是更新現有批處理配置中使用的配置副本。
-
-## 最佳作法 {#best-practices}
-
-* Adobe建議在Experience Manager Cloud Service使用的雲區域中托管資料檔案blob容器儲存。
-
-## 常見問題 {#faq}
-
-**是否可以使用監視資料夾或其他儲存機制來儲存輸入和輸出？**
-
-目前，您可以使用MicrosoftAzure儲存來保存輸入資料和生成的文檔。 MicrosoftAzure儲存提供多種選項 [自動化資料移動操作](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)。
-
-**是否包含MicrosoftAzure儲存帳戶與Experience Manager FormsCloud Service許可證？**
-
-MicrosoftAzure儲存帳戶獨立於Experience Manager FormsCloud Service許可證。
-
-**通信API是否在Experience Manager FormsCloud Service伺服器上儲存資料？**
-
-輸入和輸出資料僅保存在MicrosoftAzure儲存上。
-
-**通信API是否僅可用於Experience Manager FormsCloud Service? 是否可以在內部環境中獲得類似的功能？**
-
-您可以使用AEM Forms輸出服務將模板(XFA或PDF)與客戶資料組合，以PDF、PS、PCL和ZPL格式生成文檔。
-
-與現場環境相比，該Cloud Service還提供了自動擴展和成本效益的額外優勢。
-
-<!--**Where is data processed?**
-
-**Who has access to data?**
-
-**Is data encrypted?**
-
-**Where is data hosted?** -->
-
-**是否可以同時運行多個批處理操作？**
-是，您可以簡單地運行多個批處理工序。 始終對每個操作使用不同的源資料夾和目標資料夾以避免任何衝突。

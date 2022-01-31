@@ -7,7 +7,7 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: ea9d8714dca0d30ba2ff33cef220c8b3f8b3c429
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 3%
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 * [啟用Forms — 數字註冊](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) 選項，以及您的FormsCloud Service計畫 [運行管線](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)。
 
-![試執行結果](assets/enable-add-on.png)
+   ![試執行結果](assets/enable-add-on.png)
 
 * 在Cloud Service環境中，遷移實用程式與用戶映射工具和內容傳輸工具結合使用。 遷移實用程式 [!DNL AEM Forms] 與Cloud Service相容的資產，內容傳輸工具將內容從 [!DNL AEM Forms] 環境 [!DNL AEM] as a Cloud Service環境。 在使用遷移實用程式之前，請瞭解 [移到AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html)。 該過程有兩種工具：
    * [用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration):用戶映射工具可幫助您將用戶與相應的Adobe IMS用戶帳戶進行映射。
