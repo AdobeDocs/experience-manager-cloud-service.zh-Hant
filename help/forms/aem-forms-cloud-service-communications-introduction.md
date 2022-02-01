@@ -2,9 +2,9 @@
 title: Formsas a Cloud Service通訊
 description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: dbc0ef92b0b61945ee195971aacab3bc8781b01c
+source-git-commit: d4372e7f5766c6fadea6ca25edc7bfa2aeba10b9
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1026'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 1%
 
 您可以按需生成文檔或建立批處理作業，以按定義的間隔生成多個文檔。 通信API提供：
 
-* 簡化的按需和批量文檔生成功能
+* 簡化的按需和批處理文檔生成功能。
 
-* HTTP API可更輕鬆地與現有系統整合。 包括用於按需（低延遲）和批處理操作（高吞吐量操作）的單獨API。 它使文檔生成成為一項高效的任務。
+* HTTP API可更輕鬆地與外部系統整合。 包括用於按需（低延遲）和批處理操作（高吞吐量操作）的單獨API。 它使文檔生成成為一項高效的任務。
 
 * 安全訪問資料。 通信API僅連接到客戶指定的資料儲存庫並從其訪問資料，不製作資料的本地副本，使通信具有高度安全性。
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 通信利用 [PDF和XFA模板](#supported-document-types) 與 [XML資料](#form-data) 按需生成單個文檔或使用按定義間隔的批處理作業生成多個文檔。
 
-通信API有助於將模板(XFA或PDF)與客戶資料([XML資料](#form-data))以PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）生成文檔。
+通信API可幫助將模板(XFA或PDF)與客戶資料([XML資料](#form-data))以PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）生成文檔。
 
 通常，您使用 [設計師](use-forms-designer.md) 並使用Communications API將資料與模板合併。 您的應用程式可以將輸出文檔發送到網路打印機、本地打印機或儲存系統進行存檔。 典型的開箱即用工作流和自定義工作流如下所示：
 
@@ -43,9 +43,9 @@ ht-degree: 1%
 
 通信為按需和批處理文檔生成提供HTTP API:
 
-* **[同步API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** 適用於按需、低延遲和單記錄文檔生成情形。 這些API更適合基於用戶操作的使用案例。 例如，在用戶完成填寫表單後生成文檔。
+* **[同步API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 適用於按需、低延遲和單記錄文檔生成情形。 這些API更適合基於用戶操作的使用案例。 例如，在用戶完成填寫表單後生成文檔。
 
-* **[批處理API（非同步API）](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** 適用於計畫、高吞吐量和多個文檔生成方案。 這些API以批次形式生成文檔。 例如，每月生成電話單、信用卡對帳單和福利對帳單。
+* **[批處理API（非同步API）](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 適用於計畫、高吞吐量和多個文檔生成方案。 這些API以批次形式生成文檔。 例如，每月生成電話單、信用卡對帳單和福利對帳單。
 
 通信API的一些主要用途是：
 
@@ -100,7 +100,6 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 互動式PDF文檔包含構成表單的各種元素。 這些元素可包括欄位（接受或顯示資料）、按鈕（觸發事件）和指令碼（執行特定操作的命令）。 按一下按鈕可觸發更改欄位狀態的事件。 例如，選擇性別選項可能會更改欄位的顏色或表單的外觀。 這是導致窗體狀態更改的手動事件的示例。
 
 當使用通信API平展這種互動式PDF文檔時，不保留表單的狀態。 要確保即使在平展表單後仍保留表單的狀態，請設定布爾值 _retainFormState_ 為True以保存和保留窗體的狀態。
-
 
 ## 入門
 

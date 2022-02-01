@@ -2,9 +2,9 @@
 title: AEM Formsas a Cloud Service — 通信
 description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 8cfc645d714e135391675c6d5d30e765ead4179f
+source-git-commit: 78cf7d29d6a42f330ba22135c892ce9af5df403f
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 * **基本身份驗證**:基本身份驗證是內置在HTTP協定中的簡單身份驗證方案。 客戶端發送HTTP請求，其Authorization標頭包含Basic後跟空格和base64編碼的字串username:password。 例如，要授權為admin/admin ，客戶端將發送基本 [base64編碼的字串用戶名]: [base64編碼的字串密碼]。
 
-* **基於令牌的身份驗證：** 基於令牌的身份驗證使用訪問令牌（承載身份驗證令牌）向AEMas a Cloud Service請求。 AEM Formsas a Cloud Service提供API以安全地檢索訪問令牌。 要檢索並使用令牌來驗證請求，請執行以下操作：
+* **基於令牌的身份驗證：** 基於令牌的Experience Manager使用訪問令牌（承載驗證令牌）來請求as a Cloud Service。 AEM Formsas a Cloud Service提供API以安全地檢索訪問令牌。 要檢索並使用令牌來驗證請求，請執行以下操作：
 
-   1. [從開發AEM人員控制台檢索as a Cloud Service憑據](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
-   1. [在您AEM的環境中安裝as a Cloud Service憑據](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。 (應用程式伺服器、Web伺服器或其AEM他非伺服器)，配置為向雲服務發送請求。
+   1. [從開發人員控制台檢索Experience Manageras a Cloud Service憑據](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
+   1. [在Experience Manager上安裝as a Cloud Service憑據](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。 (應用程式伺服器、Web伺服器或其AEM他非伺服器)，配置為向雲服務發送請求。
    1. [生成JWT令牌，並與Adobe IMS API交換該令牌以獲取訪問令牌](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
-   1. 使用訪AEM問令牌作為承載驗證令牌運行API。
-   1. [為環境中的技術帳戶用戶設定適當的權AEM限](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)。
+   1. 使用訪問令牌作為承載身份驗證令牌運行Experience ManagerAPI。
+   1. [在Experience Manager環境中為技術帳戶用戶設定適當的權限](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)。
 
    >[!NOTE]
    >
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ### 先決條件 {#pre-requisites}
 
-要使用同步API，需要以下操作：
+要使用同步API，需要執行以下操作：
 
 * PDF或XDP模板
 * [要與模板合併的資料](#form-data)
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ### 使用同步API生成文檔
 
-分離的API可用於：
+可以使用單獨的API:
 
 * 從模板生成PDF文檔並將資料合併到該文檔。
 * 從XDP檔案或PDF文檔生成PostScript(PS)、打印機命令語言(PCL)、Zebra打印語言(ZPL)文檔。
