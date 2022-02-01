@@ -1,9 +1,9 @@
 ---
 title: '使用自定義字型 '
 description: '使用自定義字型 '
-source-git-commit: 0bfd75e517e03110d58575b21551d1d553fa36bf
+source-git-commit: 94fe397d6ce08380ef08b65b47fe2c1aeb015ca3
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,13 @@ ht-degree: 0%
 
 **Cloud Service通信文檔在測試版中**
 
-可以使用Formsas a Cloud Service通信將XDP模板、基於XDP的PDF文檔或Acrobat表單(AcroForm)與XML資料組合起來，以生成PDF文檔。 可以使用Cloud Service或自定義字型（組織批准的字型）中包含的字型來呈現生成的PDF文檔。 您可以使用Cloud Service開發項目將自定義字型添加到Cloud Service環境。
+可以使用Formsas a Cloud Service通信將XDP模板、基於XDP的PDF文檔或Acrobat表單(AcroForm)與XML資料組合起來，以生成PDF文檔。 您還可以使用「通信」來組合、重新排列和擴展PDF和XDP文檔，並獲取有關PDF文檔的資訊。
+
+與前面提到的操作一起，您可以使用Cloud Service或自定義字型（組織批准的字型）中包含的字型來呈現生成的PDF文檔。 您可以使用Cloud Service開發項目將自定義字型添加到Cloud Service環境。
 
 ## PDF文檔的行為
 
-你可以 [嵌入字型](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) 到PDF。 嵌入字型時，PDF文檔在所有平台上都顯示（查找）相同。 它使用嵌入字型來確保外觀和感覺一致。 當字型未嵌入時，字型呈現取決於PDF查看器客戶端的呈現設定。 如果該字型在客戶端電腦上可用，則PDF使用指定的字型，否則PDF將使用回退字型呈現。
+你可以 [嵌入字型](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) 到PDF。 嵌入字型時，PDF文檔在所有平台上都顯示（看起來）相同。 它使用嵌入字型來確保外觀和感覺一致。 未嵌入字型時，字型呈現取決於PDF查看器客戶端(如Acrobat或Acrobat Reader)的呈現設定。 如果該字型在客戶端電腦上可用，則PDF使用指定的字型，否則PDF將使用預設回退字型呈現。
 
 ## 將自定義字型添加到您的Formsas a Cloud Service環境 {#custom-fonts-cloud-service}
 
@@ -28,7 +30,7 @@ ht-degree: 0%
    ![字型資料夾](assets/fonts.png)
 
 1. 開啟開發項目字型模組的pom.xml檔案。
-1. 添加 `<Font-Archive-Version>` 清單條目到.pom檔案，並將版本值設定為1:
+1. 將jar插件添加到pom檔案：
 
    ```xml
    <plugin>
@@ -38,8 +40,27 @@ ht-degree: 0%
        <configuration>
            <archive>
                <manifest>
-                   </addDefaultEntries>
-                   </addDefaultImplementationEntries>
+                   <addDefaultEntries/>
+                   <addDefaultImplementationEntries/>
+               </manifest>
+           </archive>
+       </configuration>
+   </plugin>
+   ```
+
+
+1. 添加 `<Font-Archive-Version>` manifest輸入.pom檔案並將版本值設定為1:
+
+   ```xml
+   <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-jar-plugin</artifactId>
+       <version>3.1.2</version>
+       <configuration>
+           <archive>
+               <manifest>
+                   <addDefaultEntries/>
+                   <addDefaultImplementationEntries/>
                </manifest>
                <manifestEntries>
                    <Font-Archive-Version>1</Font-Archive-Version>
@@ -70,6 +91,8 @@ ht-degree: 0%
    </modules>
    ```
 
+   字型資料夾包含所有自定義字型。
+
 1. 簽入更新的代碼並 [運行管線](/help/implementing/cloud-manager/deploy-code.md) 將字型部署到Cloud Service環境。
 
 1. （可選）開啟命令提示符，導航到本地項目資料夾，然後運行以下命令。 該命令將字型打包在.jar檔案中，並附帶相關資訊。 可以使用.jar檔案將自定義字型添加到FormsCloud Service本地開發環境。
@@ -81,11 +104,11 @@ ht-degree: 0%
 ## 將自定義字型添加到本地FormsCloud Service開發環境 {#custom-fonts-cloud-service-sdk}
 
 1. 啟動本地開發環境。
-1. 導航到 [crx儲存庫]\安裝資料夾
-1. 將包含自定義字型和相關部署代碼的.jar檔案放置到安裝資料夾中。 如果沒有.jar檔案，請執行中列出的步驟 [將自定義字型添加到您的Formsas a Cloud Service環境](#custom-fonts-cloud-service) 的子菜單。
+1. 導航到 `<aem install directory>/crx-quickstart/install` 的子菜單。
+1. 放置 `<jar file contaning custom fonts and relevant deployment code>.jar` 到安裝資料夾。 如果沒有.jar檔案，請執行中列出的步驟 [將自定義字型添加到您的Formsas a Cloud Service環境](#custom-fonts-cloud-service) 的子菜單。
 1. 運行 [基於docker的SDK環境](setup-local-development-environment.md#docker-microservices)
 
 
    >[!NOTE]
    >
-   >只要將更新的自定義字型.jar檔案部署到本地部署環境，請重新啟動基於Docker的SDK環境。
+   >只要將更新的自定義字型.jar檔案部署到本地開發環境，請重新啟動基於Docker的SDK環境。
