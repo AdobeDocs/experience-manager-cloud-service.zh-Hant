@@ -2,39 +2,43 @@
 title: Formsas a Cloud Service通訊
 description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: c934eba98a9dcb74687739ccbaaedff3c0228561
+source-git-commit: 2f934bb63796599d6c3cca47498c1799388a9923
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1404'
 ht-degree: 1%
 
 ---
 
 # 使用AEM Formsas a Cloud Service通信 {#frequently-asked-questions}
 
-**AEM Formsas a Cloud Service通信文檔處理API為beta版，在實際發佈前可能發生顯著變化。**
+**AEM Formsas a Cloud Service — 通信文檔操作API為beta版，在實際發佈前可能發生顯著變化。**
 
-通信功能可幫助您建立品牌認可、個性化和標準化的文檔，如業務信函、報表、理賠信函、福利通知、每月帳單或歡迎套件。 該功能提供API來生成和操作文檔。 您可以按需生成或操作文檔或建立批處理作業以按定義的間隔生成多個文檔。 通信API提供：
+通信功能可幫助您建立品牌認可、個性化和標準化的文檔，如業務信函、報表、理賠信函、福利通知、每月帳單或歡迎套件。
+
+該功能提供API來生成和操作文檔。 您可以按需生成或操作文檔或建立批處理作業以按定義的間隔生成多個文檔。 通信API提供：
 
 * 簡化的按需和批處理文檔生成功能。
 
-* 合併、重新排列和驗證PDF文檔。
+* 可按需組合、重新排列和驗證PDF文檔。
 
 * HTTP API可更輕鬆地與外部系統整合。 包括用於按需（低延遲）和批處理操作（高吞吐量操作）的單獨API。 它使文檔生成成為一項高效的任務。
 
 * 安全訪問資料。 通信API僅連接到客戶指定的資料儲存庫並從其訪問資料，不製作資料的本地副本，使通信具有高度安全性。
 
 ![信用卡對帳單樣本](assets/statement.png)
-可以使用通信API建立信用卡對帳單。 此示例對帳單使用相同的模板，但根據每個客戶的信用卡使用情況將資料分開。
+可以使用通信API建立信用卡對帳單。 此示例對帳單使用相同的模板，但根據每個客戶信用卡的使用情況分別使用資料。
 
 ## 文檔生成
 
-通信文檔生成API有助於將模板(XFA或PDF)與客戶資料([XML資料](#form-data))以PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）生成文檔。 這些API利用 [PDF和XFA模板](#supported-document-types) 與 [XML資料](communications-known-issues-limitations.md#form-data) 按需生成單個文檔或使用按定義間隔的批處理作業生成多個文檔。
+通信文檔生成API幫助將模板(XFA或PDF)與客戶資料([XML資料](#form-data))以PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）生成文檔。 這些API利用 [PDF和XFA模板](#supported-document-types) 與 [XML資料](communications-known-issues-limitations.md#form-data) 使用批處理作業生成單個單據按需或多個單據。
 
 通常，您使用 [設計師](use-forms-designer.md) 並使用Communications API將資料與模板合併。 您的應用程式可以將輸出文檔發送到網路打印機、本地打印機或儲存系統進行存檔。 典型的開箱即用工作流和自定義工作流如下所示：
 
 ![通信文檔生成工作流](assets/communicaions-workflow.png)
 
-根據使用案例，您還可以通過網站或儲存伺服器下載這些文檔。 文檔生成API的一些示例包括：
+根據使用案例，您還可以通過網站或儲存伺服器下載這些文檔。
+
+文檔生成API的一些示例包括：
 
 ### 建立PDF文檔 {#create-pdf-documents}
 
@@ -96,11 +100,11 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ## 文檔操作
 
-通信文檔處理API幫助組合、重新排列和驗證PDF文檔。 通常，您會建立DDX並將其提交到文檔管理API以匯編或重新排列文檔。 DDX文檔提供了有關如何使用源文檔生成一組所需文檔的說明。 DDX參考文檔提供了有關所有支援操作的詳細資訊。 文檔處理的一些示例包括：
+通信文檔處理API有助於組合、重新排列和驗證PDF文檔。 通常，您會建立DDX並將其提交到文檔處理API以匯編或重新排列文檔。 DDX文檔提供了有關如何使用源文檔生成一組所需文檔的說明。 DDX參考文檔提供了有關所有支援操作的詳細資訊。 文檔處理的一些示例包括：
 
 ### 匯編PDF文檔
 
-您可以使用文檔製造API將兩個或多個PDF文檔匯編為單個PDF文檔或PDFPortfolio。 您還可以將功能應用於PDF文檔，以幫助導航或增強安全性。 以下是匯編PDF文檔的一些方法：
+您可以使用文檔製造API將兩個或多個PDF文檔匯編為單個PDF文檔或PDFPortfolio。 以下是匯編PDF文檔的一些方法：
 
 * 匯編簡單PDF文檔
 * 建立PDFPortfolio
@@ -113,7 +117,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ### 拆卸PDF文檔
 
-您可以使用文檔製造API來拆解PDF文檔。 該服務可以從源文檔中提取頁面或基於書籤劃分源文檔。 通常，如果PDF文檔最初是從許多單個文檔（如語句集合）建立的，則此任務非常有用。
+您可以使用文檔製造API來拆解PDF文檔。 API可以從源文檔中提取頁面或基於書籤劃分源文檔。 通常，如果PDF文檔最初是從許多單個文檔（如語句集合）建立的，則此任務非常有用。
 
 * 從源文檔中提取頁面
 * 基於書籤劃分源文檔
@@ -123,7 +127,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ### 轉換為並驗證符合PDF/A的文檔
 
-您可以使用文檔PDFAPI將PDF文檔轉換為符合PDF/A的版本，並確定PDF文檔是否符合/A。 PDF/A是一種存檔格式，旨在長期保存文檔的內容。 字型嵌入到文檔中，檔案未壓縮。 因此，PDF/A文檔通常比標準PDF文檔大。 此外，PDF/文檔不包含音頻和視頻內容。
+您可以使用文檔PDFAPI將PDF文檔轉換為符合PDF/A的文檔，並確定PDF文檔是否符合/A。 PDF/A是一種存檔格式，旨在長期保存文檔的內容。 字型嵌入到文檔中，檔案未壓縮。 因此，PDF/A文檔通常比標準PDF文檔大。 此外，PDF/文檔不包含音頻和視頻內容。
 
 
 ## 通信API的類型
@@ -136,11 +140,11 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ## 入門
 
-通信可作為Formsas a Cloud Service用戶的獨立和附加模組使用。 您可以聯繫Adobe銷售團隊或Adobe代表以請求訪問權限。 Adobe 為您的組織啟用存取權限，並向您指定的組織管理員提供所需的特權。 管理員可以授予您組織的AEM Forms開發人員（用戶）使用API的權限。
+通信功能可作為Formsas a Cloud Service用戶的獨立和附加模組使用。 您可以聯繫Adobe銷售團隊或Adobe代表以請求訪問權限。 Adobe 為您的組織啟用存取權限，並向您指定的組織管理員提供所需的特權。 管理員可授予您組織的Formsas a Cloud Service開發人員（用戶）使用API的權限。
 
-在結束後，為您的Formsas a Cloud Service環境啟用通信：
+登機後，要為您的Formsas a Cloud Service環境啟用通信功能：
 
-1. 登錄到雲管理器並開啟您的AEM Formsas a Cloud Service實例。
+1. 登錄到Cloud Manager並開啟您的AEM Formsas a Cloud Service實例。
 
 1. 開啟「編輯程式」選項，轉到「解決方案和載入項」頁籤，然後選擇 **[!UICONTROL Forms — 通信]** 的雙曲餘切值。
 
@@ -152,9 +156,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 1. 按一下 **[!UICONTROL 更新]**。
 
-1. 運行生成管道。
-
-生成管道成功後，將為您的環境啟用Communications API。
+1. 運行生成管道。 生成管道成功後，將為您的環境啟用Communications API。
 
 
 <!--
