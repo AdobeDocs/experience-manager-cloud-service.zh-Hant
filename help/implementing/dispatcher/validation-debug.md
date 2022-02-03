@@ -3,9 +3,9 @@ title: 使用Dispatcher工具驗證和調試
 description: 使用Dispatcher工具驗證和調試
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: dc25b243c2d64d735e553e7ea2fb990fb34cb4cb
+source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2512'
 ht-degree: 1%
 
 ---
@@ -441,7 +441,7 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
 }
 ```
 
-或者，您可以在httpd/dispatcher配置中使用Cloud Manager環境變數。 如果程式具有多個開發環境，並且其中某些開發環境對httpd/dispatcher配置具有不同的值，則此方法尤其重要。 將使用與上例相同的${VIRTUALHOST}語法，但不會使用上述變數檔案中的Define聲明。 閱讀 [Cloud Manager文檔](/help/implementing/cloud-manager/environment-variables.md) 有關配置Cloud Manager環境變數的說明。
+或者，您可以在httpd/dispatcher配置中使用Cloud Manager環境變數，但不會使用環境機密。 如果程式具有多個開發環境，並且其中某些開發環境對httpd/dispatcher配置具有不同的值，則此方法尤其重要。 將使用與上例相同的${VIRTUALHOST}語法，但不會使用上述變數檔案中的Define聲明。 閱讀 [Cloud Manager文檔](/help/implementing/cloud-manager/environment-variables.md) 有關配置Cloud Manager環境變數的說明。
 
 在本地測試配置時，可以通過傳遞變數來模擬不同的環境類型 `DISP_RUN_MODE` 到 `docker_run.sh` 指令碼直接：
 
