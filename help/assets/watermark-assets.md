@@ -1,48 +1,62 @@
 ---
-title: 為資產加上浮水印
-description: 為您的數位資產加上浮水印。
+title: 加水印
+description: 將水印添加到數字資產。
 contentOwner: AG
-feature: 資產管理，發佈
+feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 0%
+source-wordcount: '276'
+ht-degree: 1%
 
 ---
 
-# 為您的資產加上浮水印 {#watermark-assets}
+# 加水印 {#watermark-assets}
 
-[!DNL Adobe Experience Manager Assets] 可讓您為影像新增數位浮水印。[!DNL Assets] 支援將影像作為浮水印套用至其他影像檔案。水印可以幫助用戶驗證資產的真實性和版權所有權。 此外，水印可用於指示文檔的狀態，如機密、草稿、有效性等。
+[!DNL Adobe Experience Manager Assets] 允許您向影像添加數字水印。 [!DNL Assets] 支援將影像作為水印應用於其他影像檔案。 水印可以幫助用戶驗證資產的真實性和版權所有權。 此外，水印可以用於表示文檔的狀態，如機密、草稿、有效性等。
 
-若要設定[!DNL Experience Manager]為資產加上浮水印，請遵循下列步驟：
+>[!NOTE]
+>
+>此功能在預發行渠道中可用。 請參閱 [預發行渠道文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 的子菜單。
 
-1. PNG檔案會套用為浮水印。 在您的DAM存放庫中上傳此檔案。
+配置 [!DNL Experience Manager] 到水印資產：
 
-1. 存取與您環境相關聯的[!DNL Cloud Manager] Git存放庫。 提交儲存庫中名為`com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`的檔案，其中包含以下內容。 有關說明，請參閱[如何在 [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md)中配置OSGi。
+1. 將PNG檔案應用為水印。 將此檔案上載到DAM儲存庫。
 
-   ```json
-   {
-   "watermark": "/content/dam/<path-to-watermark-image.png>",
-    "width": 100
-   }
-   ```
+1. 導航到 **[!UICONTROL 工具>資產>資產配置]**。
 
-1. [建立處理設](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 定檔，以運用資產微服務套用浮水印。
+1. 按一下 **[!UICONTROL 系統水印配置檔案]**。
 
-   ![資產處理設定檔以建立浮水印](assets/watermark-processing-profile.png)
+1. 在 [!UICONTROL 「系統水印配置檔案」頁]，在步驟1中指定上載到DAM儲存庫的映像路徑。
 
-1. [將處理設定檔套用至資料夾，](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 以建立加上浮水印的資產。
+1. 在 **[!UICONTROL 縮放]** 的子菜單。
+
+1. 按一下「**[!UICONTROL 儲存]**」。
+
+   ![資產重複偵測器](assets/system-watermarking-profile.png)
+
+   >[!NOTE]
+   >
+   >如果已使用 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 配置檔案（OSGi配置），您可以繼續使用它，但是，Adobe建議使用新方法。
+
+
+1. [建立處理配置檔案](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 利用資產微服務來應用水印。
+
+   ![用於建立水印的資產處理配置檔案](assets/watermark-processing-profile.png)
+
+   確保啟用 **[!UICONTROL 水印]** 建立處理配置檔案時切換。
+
+1. [將處理配置檔案應用到資料夾](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 建立帶水印的資產。
 
 ## 提示和限制 {#tips-limitations-bestpractices}
 
-* 您可以使用單一設定為所有資產加上浮水印。 水印僅使用一幅影像，其寬度是固定的。
-* 您可以將浮水印置於中心，而不需進行拼貼。
+* 可以使用單個配置來對所有資產進行水印。 只有一幅影像用於水印，其寬度固定。
+* 可以將水印放在中心，而不進行平鋪。
 * 不支援基於文本的水印。
 
 >[!MORELIKETHIS]
 >
 >* [資產微服務概述](/help/assets/asset-microservices-overview.md)。
->* [搭配處理設定檔使用資產微服務](/help/assets/asset-microservices-configure-and-use.md)。
+>* [將資產微服務與處理配置檔案一起使用](/help/assets/asset-microservices-configure-and-use.md)。
 

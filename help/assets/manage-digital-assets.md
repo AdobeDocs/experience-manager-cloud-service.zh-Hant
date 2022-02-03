@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: c49352926c67587096b8c60840e00bf379b92075
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '4063'
-ht-degree: 11%
+source-wordcount: '4356'
+ht-degree: 10%
 
 ---
 
@@ -44,16 +44,30 @@ ht-degree: 11%
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-如果DAM用戶上載儲存庫中已存在的一個或多個資產， [!DNL Experience Manager] 檢測複製並通知用戶。 預設情況下禁用重複檢測，因為重複檢測可能會根據儲存庫的大小和上載的資產數量對效能產生影響。 要啟用該功能，請配置 [!UICONTROL AdobeAEM雲資產複製檢測器]。 請參閱 [如何進行OSGi配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 複製檢測基於 `dam:sha1` 儲存的值 `jcr:content/metadata/dam:sha1`。 這意味著即使檔案名不同，也會檢測到重複的資產。
+如果DAM用戶上載儲存庫中已存在的一個或多個資產， [!DNL Experience Manager] 檢測複製並通知用戶。 預設情況下禁用重複檢測，因為重複檢測可能會根據儲存庫的大小和上載的資產數量對效能產生影響。
 
-可以添加配置檔案 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 在自定義代碼中，檔案可以包含以下內容：
+>[!NOTE]
+>
+>此功能在預發行渠道中可用。 請參閱 [預發行渠道文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 的子菜單。
 
-```json
-{
-  "enabled":true,
-  "detectMetadataField":"dam:sha1"
-}
-```
+要啟用功能：
+
+1. 導航到 **[!UICONTROL 工具>資產>資產配置]**。
+
+1. 按一下 **[!UICONTROL 資產複製檢測器]**。
+
+1. 在 [!UICONTROL 「資產複製檢測器」頁]按一下 **[!UICONTROL 已啟用]**。
+
+   `dam:sha1` 「檢測元資料」欄位的值可確保即使檔案名不同，也能檢測到重複的資產。
+
+1. 按一下「**[!UICONTROL 儲存]**」。
+
+   ![資產重複偵測器](assets/asset-duplication-detector.png)
+
+>[!NOTE]
+>
+>如果已使用 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 配置檔案（OSGi配置），您可以繼續使用它，但是，Adobe建議使用新方法。
+
 
 啟用後，Experience Manager會將重複資產的通知發送到Experience Manager收件箱。 它是多個重複項的聚合結果。 用戶可以根據結果選擇刪除資產。
 
@@ -278,35 +292,27 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## 發佈或取消發佈資產 {#publish-assets}
 
-您可以將包含資產的資產和資料夾從作者實例發佈到 [!DNL Experience Manager Assets]。 [!DNL Dynamic Media], [!DNL Brand Portal]。 您可以在資產或資料夾級別發佈或取消發佈資產，使用 **[!UICONTROL 快速發佈]** 或 **[!UICONTROL 管理發布]** 的 [!DNL Experience Manager Assets] 。
+1. 導航到要發佈或要從發佈環境中刪除的資產或資產資料夾的位置（取消發佈）。
 
-請參閱 [管理發布 [!DNL Experience Manager]](/help/assets/manage-publication.md)
+1. 選擇要發佈或取消發佈的資產或資料夾，然後選擇 **[!UICONTROL 管理發布]** ![管理發布選項](assets/do-not-localize/globe-publication.png) 的子菜單。 或者，要快速發佈，請選擇 **[!UICONTROL 快速發佈]** 的子菜單。 如果要發佈的資料夾包含空資料夾，則不會發佈空資料夾。
 
-<!--
+1. 選擇 **[!UICONTROL 發佈]** 或 **[!UICONTROL 取消發佈]** 按鈕。
 
-1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
+   ![取消發佈操作](assets/unpublish_action.png)
+   *圖：發佈和取消發佈選項以及計畫選項。*
 
-1. Select the asset or the folder to publish or unpublish and select **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
+1. 選擇 **[!UICONTROL 現在]** 立即對資產採取行動或選擇 **[!UICONTROL 稍後]** 以安排操作。 如果選擇 **[!UICONTROL 稍後]** 的雙曲餘切值。 按一下&#x200B;**[!UICONTROL 下一步]**。
 
-1. Select the **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** option as required.
+1. 發佈時，如果資產引用了其他資產，則其引用將在嚮導中列出。 只顯示自上次發佈後未發佈或修改的那些引用。 選擇要發佈的引用。
 
-   ![Unpublish action](assets/unpublish_action.png)
-   *Figure: Publish and unpublish options and the scheduling option.*
+1. 取消發佈時，如果資產引用了其他資產，請選擇要取消發佈的引用。 按一下 **[!UICONTROL 取消發佈]**。 在確認對話框中，按一下 **[!UICONTROL 取消]** 停止操作或按一下 **[!UICONTROL 取消發佈]** 確認在指定日期將取消發佈資產。
 
-1. Select **[!UICONTROL Now]** to act on the asset right away or select **[!UICONTROL Later]** to schedule the action. Select a date and time if you choose the **[!UICONTROL Later]** option. Click **[!UICONTROL Next]**.
+瞭解與發佈或取消發佈資產或資料夾相關的以下限制和提示：
 
-1. When publishing, if an asset references other assets, its references are listed in the wizard. Only those references are displayed, that are either unpublished or modified since last publish. Choose the references that you want to publish.
-
-1. When unpublishing, if an asset references other assets, choose the references that you want to unpublish. Click **[!UICONTROL Unpublish]**. In the confirmation dialog, click **[!UICONTROL Cancel]** to stop the action or click **[!UICONTROL Unpublish]** to confirm that the assets are to be unpublished at the specified date.
-
-Understand the following limitations and tips related to publishing or unpublishing assets or folders:
-
-* The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
-* While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
-* Empty folders are not published.
-* If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
-
--->
+* 選擇 [!UICONTROL 管理發布] 僅對具有複製權限的用戶帳戶可用。
+* 取消發佈複雜資產時，僅取消發佈該資產。 避免取消發佈引用，因為這些引用可能被其他已發佈資產引用。
+* 未發佈空資料夾。
+* 如果發佈正在處理的資產，則只發佈原始內容。 缺少格式副本。 等待處理完成，然後在處理完成後發佈或重新發佈資產。
 
 ## 已關閉用戶組 {#closed-user-group}
 
