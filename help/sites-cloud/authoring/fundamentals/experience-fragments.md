@@ -2,16 +2,17 @@
 title: 體驗片段
 description: 使用Adobe Experience Manager as a Cloud Service體驗片段使您的體驗可重複使用且靈活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 45da72dc39a4c2a66957dbbe26f563b00100488e
+source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 9%
+source-wordcount: '1522'
+ht-degree: 8%
 
 ---
 
 # 體驗片段 {#experience-fragments}
 
 在Adobe Experience Manager as a Cloud Service，一段經驗片段：
+
 * 是一個或多個元件的組
 * 包括內容和佈局
 * 可在頁面中引用
@@ -22,10 +23,12 @@ ht-degree: 9%
 * 是體驗（頁）的一部分。
 * 可跨多頁使用。
 * 基於模板（僅可編輯）來定義結構和元件。
+* 此模板用於建立 *根頁* 體驗片段。
 * 由段落系統中具有佈局的一個或多個元件組成。
 * 可以包含其他體驗片段。
 * 可以與其他元件（包括其他體驗片段）組合以形成完整的頁面（體驗）。
-* 可以具有不同的變體，這些變體可以共用內容和/或元件。
+* 可基於根頁建立一個或多個變體。
+* 這些變體可以共用內容和/或元件。
 * 可以分解為可跨片段的多個變體使用的構造塊。
 
 可以使用體驗片段：
@@ -57,7 +60,6 @@ ht-degree: 9%
    * 渠道或上下文特定變體。
    * 有意義的集體經驗；例如，在不同渠道開展不同經驗的活動。
 * 使用Omnichannel Commerce時。
-   * 共用與商務相關的內容 [社交媒體](/help/implementing/developing/extending/experience-fragments.md#social-variations) 規模頻道。
    * 使觸地點成為事務。
 
 ## 組織您的體驗片段 {#organizing-your-experience-fragments}
@@ -151,7 +153,6 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
 
 1. 選擇 **保存**。
 
-
 ## 建立體驗片段 {#creating-an-experience-fragment}
 
 建立體驗片段：
@@ -176,6 +177,12 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
    A **標題** 的子菜單。 如果 **名稱** 留空，它將從 **標題**。
 
    ![體驗片段屬性](/help/sites-cloud/authoring/assets/xf-04.png)
+
+   >[!NOTE]
+   >
+   >「體驗片段」模板中的標籤將不會與此「體驗片段」根頁上的標籤合併。
+   >
+   >這些是完全分開的。
 
 1. 按一下&#x200B;**建立**。
 
@@ -232,6 +239,7 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
 
    ![變體屬性](/help/sites-cloud/authoring/assets/xf-07.png)
 
+
 1. 確認 **完成**，新的變體將顯示在面板中。
 
 ## 使用您的體驗片段 {#using-your-experience-fragment}
@@ -283,7 +291,7 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
 
 您的構建基塊在 **構造塊** 頁籤。 對於每個塊，可執行以下操作：
 
-* **前往主版**:在新標籤中開啟主變數
+* **轉到首頁**:在新頁籤中開啟根頁變體
 * **重新命名**
 * **刪除**
 
@@ -338,8 +346,6 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
       * **Pinterest Board**
    * **引用**
       * 引用清單
-   * **社交媒體狀態**
-      * 社交媒體變體詳情
 
 ## 純HTML格式副本 {#the-plain-html-rendition}
 
