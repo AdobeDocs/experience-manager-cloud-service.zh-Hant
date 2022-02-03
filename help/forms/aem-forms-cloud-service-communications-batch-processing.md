@@ -2,14 +2,14 @@
 title: Experience Manager [!DNL Forms] as a Cloud Service通信批處理
 description: 如何打造品牌導向和個性化的溝通？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: f8f9aeb12d7a988deaf1ceed2cdf29519f8102dd
+source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1693'
 ht-degree: 0%
 
 ---
 
-# Formsas a Cloud Service通信 — 批處理
+# 使用批處理
 
 通信允許您建立、匯編和提供面向品牌的個性化通信，如業務通信、文檔、報表、理賠信函、利益通知、理賠信函、每月帳單和歡迎套件。 您可以使用Communications API將模板(XFA或PDF)與客戶資料組合，以PDF、PS、PCL、DPL、IPL和ZPL格式生成文檔。
 

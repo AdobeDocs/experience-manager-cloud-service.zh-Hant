@@ -2,16 +2,16 @@
 title: Formsas a Cloud Service通訊
 description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 2f934bb63796599d6c3cca47498c1799388a9923
+source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1144'
 ht-degree: 1%
 
 ---
 
 # 使用AEM Formsas a Cloud Service通信 {#frequently-asked-questions}
 
-**AEM Formsas a Cloud Service — 通信文檔操作API為beta版，在實際發佈前可能發生顯著變化。**
+**文檔操作API處於預發佈階段，在實際發佈之前可能會發生更改。**
 
 通信功能可幫助您建立品牌認可、個性化和標準化的文檔，如業務信函、報表、理賠信函、福利通知、每月帳單或歡迎套件。
 
@@ -21,9 +21,9 @@ ht-degree: 1%
 
 * 可按需組合、重新排列和驗證PDF文檔。
 
-* HTTP API可更輕鬆地與外部系統整合。 包括用於按需（低延遲）和批處理操作（高吞吐量操作）的單獨API。 它使文檔生成成為一項高效的任務。
+* HTTP API可更輕鬆地與外部系統整合。 包括用於按需（低延遲）和批處理操作（高吞吐量操作）的單獨API。
 
-* 安全訪問資料。 通信API僅連接到客戶指定的資料儲存庫並從其訪問資料，不製作資料的本地副本，使通信具有高度安全性。
+* 安全訪問資料。 通信API僅連接到客戶指定的資料儲存庫並從其訪問資料，使通信高度安全。
 
 ![信用卡對帳單樣本](assets/statement.png)
 可以使用通信API建立信用卡對帳單。 此示例對帳單使用相同的模板，但根據每個客戶信用卡的使用情況分別使用資料。
@@ -57,7 +57,7 @@ Communications APIs can create separate documents for each record within an XML 
 
 The following illustration also shows Communications APIs processing an XML data file that contains multiple records. However, assume that you instruct the APIs to create a single PDF document that contains all data records. In this situation, the APIs generate one document that contains all of the records.
 
-The following illustration shows Communications APIs processing an XML data file that contains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
+The following illustration shows Communications APIs processing an XML data file that con tains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
 
  -->
 
@@ -77,34 +77,34 @@ The following illustration shows the Communication APIs processing an XML data f
 
 ![Create PDF Documents](assets/ou_OutputBatchMany_popup.png)
 
-For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. -->
+For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. 
 
-### 拼合互動式PDF文檔 {#flatten-interactive-pdf-documents}
+### Flatten interactive PDF documents {#flatten-interactive-pdf-documents}
 
-可以使用文檔生成API將互動式PDF文檔（例如，表單）轉換為非互動式PDF文檔。 互動式PDF文檔允許用戶輸入或修改位於PDF文檔欄位中的資料。 將互動式PDF文檔轉換為非互動式PDF文檔的過程稱為拼合。 當PDF文檔展平時，用戶無法修改位於文檔欄位中的資料。 展平PDF文檔的一個原因是確保資料無法修改。
+You can use document generation APIs to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data located in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, a user cannot modify the data located in the document’s fields. One reason to flatten a PDF document is to ensure that data cannot be modified.
 
-可以拼合以下類型的PDF文檔：
+You can flatten the following types of PDF documents:
 
-* 互動式PDF文檔在設計器中建立（包含XFA流）。
+* Interactive PDF documents created in Designer (that contain XFA streams).
 
-* AcrobatPDF forms
+* Acrobat PDF forms
 
-如果嘗試拼合非互動式PDF文檔，則會發生異常。
+If you attempt to flatten a non-interactive PDF document, an exception occurs.
 
-### 保留窗體狀態 {#retain-form-state}
+### Retain Form State {#retain-form-state}
 
-互動式PDF文檔包含構成表單的各種元素。 這些元素可包括欄位（接受或顯示資料）、按鈕（觸發事件）和指令碼（執行特定操作的命令）。 按一下按鈕可觸發更改欄位狀態的事件。 例如，選擇性別選項可能會更改欄位的顏色或表單的外觀。 這是導致窗體狀態更改的手動事件的示例。
+An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
 
-當使用通信API平展這種互動式PDF文檔時，不保留表單的狀態。 要確保即使在平展表單後仍保留表單的狀態，請設定布爾值 _retainFormState_ 為True以保存和保留窗體的狀態。
+When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form. -->
 
 
-## 文檔操作
+## （預發佈）文檔處理
 
 通信文檔處理API有助於組合、重新排列和驗證PDF文檔。 通常，您會建立DDX並將其提交到文檔處理API以匯編或重新排列文檔。 DDX文檔提供了有關如何使用源文檔生成一組所需文檔的說明。 DDX參考文檔提供了有關所有支援操作的詳細資訊。 文檔處理的一些示例包括：
 
 ### 匯編PDF文檔
 
-您可以使用文檔製造API將兩個或多個PDF文檔匯編為單個PDF文檔或PDFPortfolio。 以下是匯編PDF文檔的一些方法：
+您可以使用文檔製造API將兩個或多個PDF或XDP文檔匯編為單個PDF文檔或PDFPortfolio。 以下是匯編PDF文檔的一些方法：
 
 * 匯編簡單PDF文檔
 * 建立PDFPortfolio
@@ -128,6 +128,11 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 ### 轉換為並驗證符合PDF/A的文檔
 
 您可以使用文檔PDFAPI將PDF文檔轉換為符合PDF/A的文檔，並確定PDF文檔是否符合/A。 PDF/A是一種存檔格式，旨在長期保存文檔的內容。 字型嵌入到文檔中，檔案未壓縮。 因此，PDF/A文檔通常比標準PDF文檔大。 此外，PDF/文檔不包含音頻和視頻內容。
+
+>!![Note]
+要啟用和配置文檔處理API，請將以下規則添加到 [調度程式配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+`# Allow Forms Doc Generation requests`
+`/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 ## 通信API的類型
