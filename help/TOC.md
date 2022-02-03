@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 13aa3d34a6e81c7711665dcf974008d9324c6753
+source-git-commit: 224cca89a6e37fc7ad32dd12e0ade250a7713aeb
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3497'
 ht-degree: 41%
 
 ---
@@ -93,6 +93,7 @@ ht-degree: 41%
       + [安裝](/help/journey-sites/demos-add-on/installation.md)
       + [建立程式](/help/journey-sites/demos-add-on/create-program.md)
       + [建立演示網站](/help/journey-sites/demos-add-on/create-site.md)
+      + [啟用螢幕](/help/journey-sites/demos-add-on/screens.md)
       + [管理演示網站](/help/journey-sites/demos-add-on/manage.md)
 + AEMas a Cloud Service遷移 {#migration-journey}
    + [移動as a Cloud Service入AEM門](/help/journey-migration/getting-started.md)
