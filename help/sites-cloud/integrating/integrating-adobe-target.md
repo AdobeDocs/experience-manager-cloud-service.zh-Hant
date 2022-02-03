@@ -4,7 +4,7 @@ description: '整合 Adobe Target '
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: a2fa676de0d6ca6d7cde3beedd5cc63850966b56
 workflow-type: tm+mt
 source-wordcount: '1035'
 ht-degree: 1%
@@ -13,135 +13,146 @@ ht-degree: 1%
 
 # 整合 Adobe Target{#integrating-with-adobe-target}
 
-作為Adobe Marketing Cloud的一部分，Adobe Target可讓您透過鎖定目標並測量所有管道，來提升內容相關性。 整合Adobe Target和AEMas a Cloud Service需要：
+作為Adobe Marketing Cloud的一部分，Adobe Target允許您通過針對所有渠道並進行衡量來提高內容的相關性。 整合Adobe Target和AEMas a Cloud Service需要：
 
-* 使用觸控式UI在AEMas a Cloud Service中建立Target設定（需要IMS設定）。
-* 在[AdobeLaunch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)中新增並設定Adobe Target為擴充功能。
+* 使用Touch UI在as a Cloud Service中創AEM建目標配置（需要IMS配置）。
+* 添加和配置Adobe Target作為 [Adobe啟動](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)。
 
-AdobeLaunch是管理AEM頁面（JS程式庫/標籤）中Analytics和Target的用戶端屬性的必要。 也就是說，「體驗鎖定目標」需要與Launch整合。 若要將體驗片段匯出至Target，您只需要Adobe Target設定和IMS。
+Adobe啟動是管理頁面（JS庫/標籤）中分析和目標的客戶端屬AEM性所必需的。 儘管如此，與Launch的整合對於「經驗目標」是必不可少的。 要導出到目標的體驗片段，您只需要Adobe Target配置和IMS。
 
 >[!NOTE]
 >
->Adobe Experience Manager as a Cloud Service客戶若沒有現有的Target帳戶，可以要求存取Target Foundation Pack以進行Experience Cloud。 Foundation Pack提供對Target的卷有限使用。
+>Adobe Experience Manager as a Cloud Service客戶如果沒有現有目標帳戶，可以請求訪問Target Foundation Pack以進行Experience Cloud。 Foundation Pack提供了對目標的卷限制使用。
 
-## 建立Adobe Target設定 {#create-configuration}
+## 建立Adobe Target配置 {#create-configuration}
 
-1. 導覽至&#x200B;**工具** → **Cloud Services**。
-   ![](assets/cloudservice1.png "導航導航")
-2. 選擇&#x200B;**Adobe Target**。
-3. 選擇&#x200B;**Create**按鈕。
-   ![](assets/tenant1.png "CreateCreate")
-4. 填寫詳細資訊（請參閱下面），然後選擇&#x200B;**Connect**。
-   ![](assets/open_screen1.png "ConnectConnect")
+1. 導航到 **工具** → **Cloud Services**。
+   ![導航](assets/cloudservice1.png "導航")
+2. 選擇 **Adobe Target**。
+3. 選擇 **建立** 按鈕
+   ![建立](assets/tenant1.png "建立")
+4. 填寫詳細資訊（見下文），然後選擇 **連接**。
+   ![連接](assets/open_screen1.png "連接")
 
 ### IMS 設定 {#ims-configuration}
 
-若要正確整合Target與AEM和Launch,Launch和Target的IMS設定是必要的。 雖然Launch的IMS設定已在AEMas a Cloud Service中預先設定，但必須建立Target IMS設定（在布建Target後）。 請參閱[此影片](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)和[本頁面](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)以了解如何建立Target IMS設定。
+為了將目標與發射和發射進行適當整合，需要為發射和目標AEM配置IMS。 雖然啟動的IMS配置在as a Cloud Service中預AEM配置，但必須建立目標IMS配置（在配置目標後）。 請參閱 [這個視頻](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) 和 [此頁](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) 瞭解如何建立目標IMS配置。
 
-### Adobe Target租用戶ID和Adobe Target用戶端代碼 {#tenant-client}
+### Adobe Target租戶ID和Adobe Target客戶端代碼 {#tenant-client}
 
-設定Adobe Target租用戶ID和Adobe Target用戶端代碼欄位時，請注意下列事項：
+配置Adobe Target租戶ID和Adobe Target客戶機代碼欄位時，請注意以下事項：
 
-1. 對於大部分的客戶，租用戶ID和用戶端代碼都相同。 這表示兩個欄位包含相同的資訊，且相同。 請務必在兩個欄位中輸入租用戶ID。
-2. 為了傳統用途，您也可以在租用戶ID和用戶端代碼欄位中輸入不同的值。
+1. 對於大多數客戶，租戶ID和客戶端代碼相同。 這意味著這兩個欄位包含相同的資訊且完全相同。 確保在這兩個欄位中輸入租戶ID。
+2. 為了傳統目的，您還可以在「租戶ID」和「客戶端代碼」欄位中輸入不同的值。
 
 在這兩種情況下，請注意：
 
-* 依預設，用戶端代碼（若是先新增的）也會自動複製到租用戶ID欄位中。
-* 您可以選擇變更預設的租用戶ID集。
-* 因此，對Target的後端呼叫將以租用戶ID為基礎，而對Target的用戶端呼叫將以用戶端代碼為基礎。
+* 預設情況下，客戶端代碼（如果先添加）也會自動複製到租戶ID欄位中。
+* 您可以選擇更改預設租戶ID集。
+* 因此，對目標的後端調用將基於租戶ID，而對目標的客戶端調用將基於客戶端代碼。
 
-如前所述，第一個案例是AEMas a Cloud Service最常見的案例。 無論是哪種方式，請根據您的需求，確定&#x200B;**兩個**&#x200B;欄位皆包含正確的資訊。
+如前所述，第一個案例是最常見的AEMas a Cloud Service。 不管怎樣，確保 **兩者** 欄位包含的資訊正確，具體取決於您的要求。
 
 >[!NOTE]
 >
-> 如果要變更現有的Target設定：
+> 如果要更改現有目標配置：
 >
-> 1. 重新輸入租用戶ID。
-> 2. 重新連線至Target。
+> 1. 重新輸入租戶ID。
+> 2. 重新連接到目標。
 > 3. 儲存設定。
 
 
 ### 編輯目標配置 {#edit-target-configuration}
 
-若要編輯Target設定，請依照下列步驟操作：
+要編輯目標配置，請執行以下步驟：
 
-1. 選擇現有配置，然後按一下&#x200B;**屬性**。
+1. 選擇現有配置，然後按一下 **屬性**。
 2. 編輯屬性。
-3. 選擇&#x200B;**重新連接到Adobe Target**。
-4. 選擇&#x200B;**保存並關閉**。
+3. 選擇 **重新連接到Adobe Target**。
+4. 選擇 **保存並關閉**。
 
-### 將配置添加到站點 {#add-configuration}
+### 向站點添加配置 {#add-configuration}
 
-若要將觸控式UI設定套用至網站，請前往：**Sites** → **選擇任何站點頁面** → **屬性** → **Advanced** → **Configuration** →選擇配置租戶。
+要將Touch UI配置應用到站點，請轉至： **站點** → **選擇任何網站頁** → **屬性** → **高級** → **配置** →選擇配置租戶。
 
-## 使用Launch整合AEM網站上的Adobe Target {#integrate-target-launch}
+## 利用Adobe Target發AEM布將Adobe整合到現場 {#integrate-target-launch}
 
-AEM提供立即可用的與Experience Platform Launch整合。 將Adobe Target擴充功能新增至Experience Platform Launch後，您就可以在AEM網頁上使用Adobe Target的功能。 Target程式庫只能透過Launch來轉譯。
+提AEM供與Experience Platform Launch的現成整合。 通過將Adobe Target擴展添加到Experience Platform Launch，可以在網頁上使用Adobe TargetAEM的功能。 僅使用「啟動」來呈現目標庫。
 
 >[!NOTE]
 >
->現有（舊版）架構仍可運作，但無法在觸控式UI中設定。 建議您在Launch中重建變數對應設定。
+>現有（舊）框架仍然有效，但無法在Touch UI中配置。 建議在「啟動」中重建變數映射配置。
 
-整合步驟為：
+作為一般概述，整合步驟包括：
 
-1. 建立Launch屬性
-2. 新增所需的擴充功能
-3. 建立資料元素（以擷取內容中樞參數）
+1. 建立啟動屬性
+2. 添加所需的擴展
+3. 建立資料元素（以捕獲上下文中心參數）
 4. 建立頁面規則
-5. 建置和發佈
+5. 生成和發佈
 
-### 建立Launch屬性 {#create-property}
+### 建立啟動屬性 {#create-property}
 
-屬性是一個容器，裡面裝滿擴充功能、規則、資料元素。
+屬性是一個容器，其中填充了擴展、規則和資料元素。
 
-1. 選擇&#x200B;**新屬性**&#x200B;按鈕。
-2. 提供屬性的名稱。
-3. 以網域的形式，輸入要載入launch程式庫的IP/主機。
-4. 選擇&#x200B;**保存**按鈕。
-   ![](assets/properties_newproperty1.png "LaunchpropertyLaunchproperty")
+1. 選擇 **新建屬性** 按鈕
+2. 為您的屬性提供名稱。
+3. 作為域，輸入要在其上載入啟動庫的IP/主機。
+4. 選擇 **保存** 按鈕
+   ![Launchproperty](assets/properties_newproperty1.png "Launchproperty")
 
-### 新增所需的擴充功能 {#add-extension}
+### 添加所需的擴展 {#add-extension}
 
-**** 擴充管理核心程式庫設定的容器。Adobe Target擴充功能可在現代網路at.js中使用Target JavaScript SDK來支援用戶端實作。 您必須同時新增&#x200B;**Adobe Target**&#x200B;和&#x200B;**AdobeContextHub**&#x200B;擴充功能。
+**擴展** 是管理核心庫設定的容器。 Adobe Target擴展支援客戶端實現，方法是使用用於現代Web的目標JavaScript SDK, at.js。 必須同時添加 **Adobe Target** 和 **Adobe上下文中心** 擴展。
 
-1. 選取擴充功能目錄選項，然後在篩選器中搜尋Target。
-2. 選取&#x200B;**Adobe Target** at.js ，然後按一下安裝選項。
-   ![目標](assets/search_ext1.png "搜尋目標搜尋")
-3. 選擇&#x200B;**配置**&#x200B;按鈕。 請注意已匯入Target帳戶憑證的設定視窗，以及此擴充功能的at.js版本。
-4. 選取&#x200B;**儲存**，將Target擴充功能新增至您的Launch屬性。 您應該可以在&#x200B;**已安裝擴充功能**清單下看到列出的Target擴充功能。
-   ![儲存擴充](assets/configure_extension1.png "功能儲存擴充功能")
-5. 重複上述步驟以搜尋&#x200B;**AdobeContextHub**&#x200B;擴充功能並加以安裝（這是與ContextHub參數整合的必要項目，且會根據該參數進行定位）。
+1. 選擇「擴展目錄」選項，並在篩選器中搜索「目標」。
+2. 選擇 **Adobe Target** at.js ，然後按一下「Install（安裝）」選項。
+   ![目標搜索](assets/search_ext1.png "目標搜索")
+3. 選擇 **配置** 按鈕 請注意配置窗口，其中導入了目標帳戶憑據，以及此擴展的at.js版本。
+4. 選擇 **保存** 將目標擴展添加到啟動屬性。 您應該能夠看到在 **已安裝的擴展** 清單框。
+   ![保存擴展](assets/configure_extension1.png "保存擴展")
+5. 重複上述步驟以搜索 **Adobe上下文中心** 擴展並安裝它（這是與contexthub參數整合所必需的，根據這些參數將完成目標）。
 
 ### 建立資料元素 {#data-element}
 
-**資** 料元素是可將內容中樞參數對應到的預留位置。
+**資料元素** 是可將上下文中心參數映射到的佔位符。
 
-1. 選擇&#x200B;**資料元素**。
-2. 選擇&#x200B;**添加資料元素**。
-3. 提供資料元素的名稱，並將其對應至內容中樞參數。
-4. 選擇&#x200B;**保存**。
-   ![資料](assets/data_elem1.png "元素資料元素")
+1. 選擇 **資料元素**。
+2. 選擇 **添加資料元素**。
+3. 提供資料元素的名稱並將其映射到上下文中心參數。
+4. 選擇 **保存**。
+   ![資料元素](assets/data_elem1.png "資料元素")
 
 ### 建立頁面規則 {#page-rule}
 
-在&#x200B;**Rule**&#x200B;中，我們定義並排序在網站上執行的動作序列，以達成鎖定目標。
+在 **規則** 我們定義並排序一系列在現場執行的動作，以實現目標。
 
-1. 新增一組動作，如螢幕擷取所示。
-   ![](assets/rules1.png "動作動作")
-2. 在新增參數至所有mbox中，將先前設定的資料元素（請參閱上述資料元素）新增至將在mbox呼叫中傳送的參數。
-   ![](assets/map_data1.png "MboxActions")
+1. 添加一組操作，如螢幕抓圖中所示。
+   ![操作](assets/rules1.png "操作")
+2. 在「將參數添加到所有框」中，將先前配置的資料元素（請參閱上面的資料元素）添加到將在框調用中發送的參數中。
+   ![框](assets/map_data1.png "操作")
 
-### 建置和發佈 {#build-publish}
+### 生成和發佈 {#build-publish}
 
-若要了解如何建立和發佈，請參閱此[page](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)。
+要瞭解如何生成和發佈，請參閱此 [頁](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)。
 
-## 傳統版和觸控式UI組態之間的內容結構變更 {#changes-content-structure}
+## Classic和Touch UI配置之間的內容結構更改 {#changes-content-structure}
 
-| **變更** | **傳統UI配置** | **觸控式UI設定** | **後果** |
-|---|---|---|---|
-| 目標配置的位置。 | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | 先前的/etc/cloudservices/testandtarget下有多個設定，但現在租用戶下有單一設定。 |
+<table style="table-layout:auto">
+  <tr>
+    <th>更改</th>
+    <th>經典UI配置</th>
+    <th>觸摸UI配置</th>
+    <th>後果</th>
+  </tr>
+  <tr>
+    <td>目標配置的位置。</td>
+    <td>/etc/cloudservices/testandtarget/</td>
+    <td>/conf/tenant/settings/cloudservices/target/</td>
+    <td> 以前在/etc/cloudservices/testandtarget下存在多個配置，但現在在租戶下存在單個配置。</td>
+  </tr>
+</table>
 
 >[!NOTE]
 >
->現有客戶仍支援舊式設定（無法編輯或建立新設定）。 舊版設定是使用VSTS之客戶上傳的內容套件的一部分。
+>現有客戶仍支援舊式配置（沒有編輯或建立新配置的選項）。 舊式配置將是客戶使用VSTS上傳的內容包的一部分。
