@@ -10,18 +10,18 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: f45021ff09a4874d19fa7d8d40405cfd52bf8434
+source-git-commit: 13ed4f82f441daf95b80b5d015b00ea49f8d1ed2
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '186'
 ht-degree: 1%
 
 ---
 
 # 建立多個類別和產品頁 {#multiple}
 
-    >[！注釋]
-    >
-    >此功能僅適用於基於CIF（如Venia）的店面。
+>[!NOTE]
+>
+> 此功能僅適用於基於CIF（如Venia）的店面。
 
 [AEMCIF核心元件](https://github.com/adobe/aem-core-cif-components) 使內容作者能夠建立其他類別和產品頁面。 這些頁面可以通過附加的營銷內容而得到豐富，並配置為針對特定類別和產品。 以下視頻將瀏覽此功能的設定。
 
