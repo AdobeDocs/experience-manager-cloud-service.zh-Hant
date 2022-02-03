@@ -2,7 +2,7 @@
 title: Formsas a Cloud Service通訊
 description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: a6b6a190a59d1c2f0001fe1f28d8d7bc8353d464
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 1%
@@ -129,10 +129,12 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 您可以使用文檔PDFAPI將PDF文檔轉換為符合PDF/A的文檔，並確定PDF文檔是否符合/A。 PDF/A是一種存檔格式，旨在長期保存文檔的內容。 字型嵌入到文檔中，檔案未壓縮。 因此，PDF/A文檔通常比標準PDF文檔大。 此外，PDF/文檔不包含音頻和視頻內容。
 
->!![Note]
-要啟用和配置文檔處理API，請將以下規則添加到 [調度程式配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
-`# Allow Forms Doc Generation requests`
-`/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
+>[!NOTE]
+>
+> 要啟用和配置文檔處理API，請將以下規則添加到 [調度程式配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+>
+> `# Allow Forms Doc Generation requests`
+> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 ## 通信API的類型
