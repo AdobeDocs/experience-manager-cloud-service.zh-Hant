@@ -1,9 +1,9 @@
 ---
 title: 驗證內容傳輸
 description: 使用內容傳輸工具驗證內容傳輸
-source-git-commit: 9705af35d4a6064c0b4ad35086d98f4b43158dec
+source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->此功能將在內容傳輸工具(CTT)1.8.x版中提供。 AEM Cloud Service目標環境必須至少運行6158版或更高版本。
+>此功能將在內容傳輸工具(CTT)1.8.x版中提供。 AEM Cloud Service目標環境必須至少運行6158版或更高版本。 它還要求設定源環境以運行 [預拷貝](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step)。 驗證功能在源上查找azcopy.config檔案。 如果找不到此檔案，則驗證將不運行。 要瞭解有關如何配置azcopy.config檔案的詳細資訊，請參見 [此頁](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file)。
 
 驗證內容傳輸是一項可選功能。 啟用此功能將增加執行提取和攝取所花的時間。 要使用該功能，請按照以下步驟在源環境的系統控制台AEM中啟用該功能：
 
