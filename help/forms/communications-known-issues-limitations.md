@@ -1,9 +1,9 @@
 ---
 title: '已知問題 '
 description: 通信最佳做法、已知問題和限制
-source-git-commit: c38a34519822449ff2577a9474b1294d5d45d3ae
+source-git-commit: bf7ce5850700141a8a6d1eeb90ea0fd21ff811e7
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
@@ -162,6 +162,12 @@ Type-1和OpenType®字型未嵌入PCL輸出。 使用Type-1和OpenType®字型�
 * 在打印選項清單中，只能使用一次特定的渲染類型(PDF、打印)。 例如，不能有兩個PRINT選項，每個選項都指定PCL呈現類型。
 
 * 對於批配置，只有OutputType(PDF、打印)和RenderType（PostScript、PCL、IPL、ZPL等）值組合的一個實例 的子菜單。
+
+* 對於非同步API（批處理），預設記錄級別設定為2。 可以使用自定義XCI將記錄級別更改為1。
+
+* 配置預設XCI時，它包括到原始格式副本的路徑。 例如 `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+
+
 
 ## 最佳作法
 
