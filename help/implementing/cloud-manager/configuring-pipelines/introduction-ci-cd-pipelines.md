@@ -1,113 +1,174 @@
 ---
-title: CI-CD管道
-description: 請詳閱本頁，了解Cloud Manager CI-CD管道
+title: CI/CD管道
+description: 瞭解Cloud Manager的CI/CD管道，以及如何使用這些管道來高效地部署代碼。
 index: true
-source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
+source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
 
 
-# Cloud Manager CI-CD管道 {#intro-cicd}
+# Cloud Manager CI/CD管道 {#intro-cicd}
+
+瞭解Cloud Manager的CI/CD管道，以及如何使用這些管道來高效地部署代碼。
 
 ## 簡介 {#introduction}
 
-Cloud Manager中的CI/CD管道可透過某種事件觸發，例如來自原始碼存放庫的提取請求，即程式碼變更，或是符合發行順序的某種定期排程。
+Cloud Manager中的CI/CD管道是一種機制，用於從源儲存庫生成代碼並將其部署到環境。 管道可以由事件(如來自原始碼儲存庫的拉取請求（即代碼更改）)或常規計畫觸發以匹配發行代碼。
 
->[!NOTE]
->若要設定管道，您必須：
->* 定義將啟動管道的觸發器
->* 定義控制生產部署的參數
->* 配置效能測試參數
+要配置管道，必須：
 
+* 定義將啟動管線的觸發器。
+* 定義控制生產部署的參數。
+* 配置效能test參數。
 
-在Cloud Manager中，有兩種管道：
+Cloud Manager提供兩種類型的管道：
 
-* [生產管道](#prod-pipeline)
+* [生產管線](#prod-pipeline)
 * [非生產管道](#non-prod-pipeline)
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
+![管線類型](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
+## 生產管線 {#prod-pipeline}
 
-## 生產管道 {#prod-pipeline}
+生產管線是專門構建的管線，包括一系列精心安排的步驟，以部署原始碼以供生產使用。 這些步驟包括第一次構建、打包、測試、驗證和部署到所有過渡環境。 因此，只有建立一組生產和分段環境後，才能添加生產管道。
 
-生產管道是專門建置的管道，包含一系列協調步驟，可將原始碼一直帶入生產環境。 這些步驟包括首先構建、打包、測試、驗證和部署到所有階段環境中。 不消說，只有建立生產和預備環境集後，才能新增生產管道。
-
-請參閱 [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 以取得更多詳細資訊。
-
+>[!TIP]
+>
+>請參閱文檔 [配置生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 的子菜單。
 
 ## 非生產管道 {#non-prod-pipeline}
 
-非生產管道旨在執行程式碼品質掃描，或將原始碼部署至開發環境。
+非生產流水線主要用於運行代碼質量掃描或將原始碼部署到開發環境。
 
-請參閱 [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 以取得更多詳細資訊。
+>[!TIP]
+>
+>請參閱文檔 [配置非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 的子菜單。
 
-## 了解Cloud Manager中的CI-CD管道 {#understand-pipelines}
+## 代碼源 {#code-sources}
 
-下表匯總了Cloud Manager中的所有管道及其使用情況。
+除了生產和非生產，管道還可以根據它們部署的代碼類型進行區分。
 
-| 管線類型 | 部署或程式碼品質 | 原始碼 | 使用時機 | 我應何時使用或為何使用？ |
+* **[完整堆棧管線](#full-stack-pipeline)**  — 同時部署包含一個或多個伺服器應用程式以及HTTPD/AEMDispatcher配置的後端和前端代碼生成
+* **[前端管線](#front-end)**  — 部署包含一個或多個客戶端UI應用程式的前端代碼生成
+* **[Web層配置管道](#web-tier-config-pipelines)**  — 部署HTTPD/Dispatcher配置
+
+本文檔稍後將詳細介紹這些內容。
+
+### 瞭解Cloud Manager中的CI-CD管道 {#understand-pipelines}
+
+下表匯總了Cloud Manager中可用的所有管道及其使用實例。
+
+| 管線類型 | 部署或代碼質量 | 原始碼 | 目的 | 附註 |
 |--- |--- |--- |---|---|
-| 生產或非生產 | 部署 | 前端 | 部署時間快。<br>可以為每個環境配置多個前端管道並行運行。<br>前端管道組建會將組建推出至儲存空間。 提供html頁面時，可參考CDN會以此儲存作為來源提供的前端程式碼靜態檔案。 | 僅部署包含一個或多個客戶端UI應用程式的前端代碼。 前端程式碼是任何以靜態檔案呈現的程式碼。 它與AEM提供的UI程式碼不同。 其中包括Sites主題、客戶定義的SPA、Firefly SPA和任何其他解決方案。<br>必須使用AEM 2021.10.5933.20211012T154732Z版<br>必須啟用Sites。 |
-| 生產或非生產 | 部署 | 完整堆棧 | 當前端管道尚未採用時。<br>若是前端程式碼必須與AEM伺服器程式碼部署的時間完全相同， | 部署AEM伺服器代碼（不可變內容、Java代碼、OSGi配置、HTTPD/dispatcher配置、重新指向、可變內容、字型） — 同時包含一個或多個AEM伺服器應用程式。 |
-| 非生產 | 程式碼品質 | 前端 | 讓Cloud Manager進行評估。 無需進行部署，即可成功建置並提升程式碼品質。<br>可以配置和運行多個管道。 | 在前端程式碼上執行程式碼品質掃描。 |
-| 非生產 | 程式碼品質 | 完整堆棧 | 讓Cloud Manager進行評估。 無需進行部署，即可成功建置並提升程式碼品質。<br>可以配置和運行多個管道。 | 對完整堆疊程式碼執行程式碼品質掃描。 |
+| 生產或非生產 | 部署 | 完整堆棧 | 同時部署後端和前端代碼生成以及HTTPD/Dispatcher配置 | 當前端代碼必須與伺服器代碼同時部AEM署時。<br>當前端管道或Web層配置管道尚未採用時。 |
+| 生產或非生產 | 部署 | 前端 | 部署包含一個或多個客戶端UI應用程式的前端代碼生成 | 支援多條併發前端管道<br>比完整堆棧部署快得多 |
+| 生產或非生產 | 部署 | Web層配置 | 部署HTTPD/Dispatcher配置 | 在幾分鐘內部署 |
+| 非生產 | 代碼質量 | 完整堆棧 | 在沒有部署的全堆棧代碼上運行代碼質量掃描 | 支援多條管線 |
+| 非生產 | 代碼質量 | 前端 | 在前端代碼上運行代碼質量掃描，而不進行部署 | 支援多條管線 |
+| 非生產 | 代碼質量 | Web層配置 | 在沒有部署的調度程式配置上運行代碼質量掃描 | 支援多條管線 |
 
+下圖說明了Cloud Manager的管道配置，包括傳統的、單個前端儲存庫或獨立的前端儲存庫設定。
 
-下圖說明Cloud Manager管道設定，包含傳統、單一前端存放庫或獨立的前端存放庫設定：
+![Cloud Manager管道配置](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
 
-![](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
+## 全堆棧管道 {#full-stack-pipeline}
 
-## Cloud Manager前端管道 {#front-end}
+全棧管道將後端代碼、前端代碼和Web層配置同時部署到AEM所有運行時。
 
-前端管道可協助您的團隊簡化您的設計和開發流程，方法是啟用用於部署前端代碼的加速前端管道。 這個有區別的管道會將JavaScript和CSS部署至AEM發佈層，作為主題，產生新的主題版本，可從AEM執行階段傳送的頁面參照。 前端程式碼是任何以靜態檔案呈現的程式碼。 它與AEM提供的UI程式碼不同。 其中包括Sites主題、客戶定義的SPA、Firefly SPA和任何其他解決方案。
+* 後端代碼 — 不可變的內容，如Java代碼、OSGi配置、重新點擊以及可變內容
+* 前端代碼 — 應用程式UI資源，如JavaScript、CSS、字型
+* Web層配置 — HTTPD/Dispatcher配置
+
+整個堆棧管道代表一個&quot;uber&quot;管道，同時執行所有操作，同時為用戶提供通過前端管道和web層配置管道分別專門部署其前端代碼或Dispatcher配置的選項。
+
+全棧管道包前端代碼(JavaScript/CSS) [客戶AEM端庫。](/help/implementing/developing/introduction/clientlibs.md)
+
+如果Web層配置 [web層配置管道](#web-tier-config-pipelines) 未配置。
+
+適用以下限制。
+
+* 用戶必須使用 **部署管理器** 角色以配置或運行管道。
+* 在任何時候，每個環境只能有一個完整堆棧管道。
+
+此外，如果您選擇引入 [web層配置管道。](#web-tier-config-pipelines)
+
+* 如果存在相應的Web層配置管道，則環境的完整堆棧管道將忽略Dispatcher配置。
+* 如果環境的相應Web層配置管道不存在，則用戶可以配置包含或忽略Dispatcher配置的全堆棧管道。
+
+全堆棧管道可以是代碼質量管道或部署。
+
+## 前端管線 {#front-end}
+
+前端代碼是用作靜態檔案的任何代碼。 它獨立於由提供的UI代AEM碼，可能包括站點主題、客戶定SPA義、FireflySPA和其他解決方案。
+
+前端管道通過支援加快前端代碼非同步後端開發的部署，幫助您的團隊簡化設計和開發流程。 此專用管道將JavaScript和CSS作為主AEM題部署到分發層，從而生成新的主題版本，該版本可以從傳遞的頁面中引AEM用。
 
 >[!IMPORTANT]
->您必須使用AEM版本 `2021.10.5933.20211012T154732Z ` 以利用前端管道。
+>
+>您必須處於版AEM本 `2021.10.5933.20211012T154732Z ` 或者更高，因為AEM Sites能夠利用前端管道。
 
 >[!NOTE]
->以部署管理員角色登錄的用戶可以同時建立和運行多個前端管道。 但是，每個方案（所有類型）的管道數上限為300個。
+>
+>具有 **部署管理器** 角色可以同時建立和運行多個前端管道。
+>
+>但是，每個程式（跨所有類型）的管線最多限制為300條。 這些可以是前端代碼質量或前端部署管道。
 
-這些可以是前端代碼質量或前端部署管道類型。
+前端管道可以是代碼質量管道或部署。
 
-### 配置前端管道之前 {#before-start}
+### 在配置前端管線之前 {#before-start}
 
-開始配置前端管道之前，請參見 [AEM快速網站建立歷程](/help/journey-sites/quick-site/overview.md) 透過簡單易用的AEM快速網站建立工具，提供端對端工作流程。 本檔案網站可協助您簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂網站。
+在配置前端管道之前，請查看 [快速AEM建立站點](/help/journey-sites/quick-site/overview.md) 通過易於使用的快速站點建立工AEM具提供端到端指南。 此過程將幫助您簡化前端開發，並讓您無需任何後端知識即可快速定制您的站AEM點。
 
 ### 配置前端管道 {#configure-front-end}
 
-要了解如何配置前端管道，請參閱：
+要瞭解如何配置前端管道，請參閱以下文檔。
 
-* [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [添加生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
+* [添加非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
-### 使用前端管道開發網站 {#developing-with-front-end-pipeline}
+### 利用前端管道開發站點 {#developing-with-front-end-pipeline}
 
-前端管道更加獨立，開發過程可以獲得相當的速度。
+通過前端管道，使前端開發者更加獨立，加快開發進程。
 
-請參閱 [此文檔](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 以了解此程式的運作方式，並注意一些事項，以充分發揮此程式的潛能。
+請參閱文檔 [利用前端管道開發站點](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 瞭解此流程的工作方式以及需要注意的一些注意事項，以便充分利用此流程的潛力。
 
-## 完整堆棧管道 {#full-stack-pipeline}
+### 配置全堆棧管道 {#configure-full-stack}
 
-完整堆疊管道可讓使用者選擇同時部署後端、前端和HTTPD/Dispatcher設定。  它會將程式碼和內容部署至AEM執行階段，包括封裝為AEM用戶端程式庫的前端程式碼(JavaScript/CSS)。 如果未配置Web層管道，則可部署Web層配置。 這代表「uber」管道，同時讓使用者可以選擇分別透過前端管道和網頁層組態管道，以專門部署其前端程式碼或調度程式設定。
-這些類型可以是「完整堆疊 — 程式碼品質」或「完整堆疊 — 部署」管道。
+要瞭解如何配置全堆棧管道，請參閱以下文檔。
 
-將適用下列限制：
-
-1. 用戶必須以部署管理器身份登錄才能配置或運行管道。
-
-1. 在任何時候，每個環境都只能有一個完整堆疊管道。
-
-1. 如果環境的對應Web層配置管道不存在，則用戶可以為環境配置完全堆棧管道以忽略或不忽略調度程式配置。
-
-1. 如果環境的對應Web層配置管道存在，則環境的完整堆疊管道將忽略調度程式配置。
+* [添加生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
+* [添加非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 
-### 配置完整堆棧管道 {#configure-full-stack}
+## Web層配置管道 {#web-tier-config-pipelines}
 
-若要了解如何設定完整堆疊管道，請參閱：
+Web層配置管道通過將HTTPD/Dispatcher配置與其他代碼更改脫AEM離，使其可以獨佔部署到運行時。 它是一個簡化的管道，為希望只部署調度程式配置更改的用戶提供了一種快速方法，只需幾分鐘即可完成。
 
-* [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+>[!IMPORTANT]
+>
+>您必須處於版AEM本 `X` 或更高版本，以利用web層配置管道。
+
+適用以下限制。
+
+* 用戶必須使用 **部署管理器** 角色以配置或運行管道。
+* 在任何時候，每個環境只能有一個Web層配置管道。
+* 當Web層配置管線的相應全堆棧管線正在運行時，用戶無法配置該管線。
+* Web層結構必須遵循文檔中定義的靈活模式結構 [雲中的調度程式](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+
+另外，要瞭解 [完整堆棧管道](#full-stack-pipeline) 在引入Web層管道時將採取行為。
+
+* 如果尚未為環境配置Web層配置管道，則用戶可以在配置其相應的全棧管道時進行選擇，以便在執行和部署期間包括或忽略Dispatcher配置。
+* 為環境配置Web層配置管道後，其相應的全堆棧管道（如果存在）將在執行和部署期間忽略調度程式配置。
+* 刪除Web層配置管線後，其相應的完整堆棧管線將被重置，以在Dispatcher配置執行期間部署。
+
+Web層配置管道可以是代碼質量或部署類型。
+
+### 配置Web層配置管道 {#configure-web-tier-config-pipelines}
+
+要瞭解如何配置Web層配置管道，請參閱以下文檔。
+
+* [添加生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
+* [添加非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
