@@ -15,7 +15,10 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >
->
+>id="aemcloud_nonbpa_codequalitytests"
+>title="Code Quality Testing"
+>abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+
 ## 簡介 {#introduction}
 
 Code quality testing evaluates your application code based on a set of quality rules. 它是僅代碼質量管道的主要目的，並且在所有生產和非生產管道的構建步驟後立即執行。
