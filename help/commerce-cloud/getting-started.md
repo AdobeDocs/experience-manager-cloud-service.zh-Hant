@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1095'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ Commerce AEMas a Cloud Service的登陸過程分為兩步：
 
 每個as a Cloud Service環境都可使用不同的GraphQL終結點URLAEM。 這樣，項目就可AEM以將登台環境與商業登台AEM系統和生產環境連接到商業生產系統。 該GraphQL終結點必須可公開使用，不支援專用VPN或本地連接。 可選地，可以提供驗證報頭以使用需要驗證的附加CIF功能。
 
-CIF附加模組對Adobe Commerce企業/雲是可選的且僅支援為作者使用分階段編AEM錄資料。 這要求配置授權令牌。 配置的授權令牌僅可用，出於安AEM全原因，在作者實例上使用。 發AEM布實例無法顯示暫存資料。
+CIF附加模組（可選）只支援Adobe Commerce企業/雲，支援為作者使用分階段編AEM錄資料。 這要求配置授權標頭。 出於安全原因，此標頭僅可用AEM並用於作者實例。 發AEM布實例無法顯示暫存資料。
 
 配置端點有兩個選項：
 
@@ -59,7 +59,7 @@ CIF附加模組對Adobe Commerce企業/雲是可選的且僅支援為作者使�
 
 ![CM Commerce終結點](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-設定終結點（可選地，是用於轉移目錄支援的驗證令牌）後，該終結點將顯示在詳細資訊頁上。 按一下「編輯」(Edit)表徵圖將開啟同一對話框，在該對話框中，如果需要，可以修改端點。
+在設定終結點和臨時目錄支援的授權標頭（可選）後，該終結點將顯示在詳細資訊頁上。 按一下「編輯」(Edit)表徵圖將開啟同一對話框，在該對話框中，如果需要，可以修改端點。
 
 ![CM環境資訊](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
