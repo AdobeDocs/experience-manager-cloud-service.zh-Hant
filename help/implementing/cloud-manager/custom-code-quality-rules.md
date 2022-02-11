@@ -2,9 +2,9 @@
 title: 自訂程式碼品質規則
 description: 本頁描述了作為[代碼質量測試的一部分，由Cloud Manager執行的自定義代碼質量規則。 它們基於工程部門的最佳AEM實踐。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 4567581eb02c928f1493defdab667cc713fc222a
+source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3495'
 ht-degree: 3%
 
 ---
@@ -12,15 +12,15 @@ ht-degree: 3%
 # 自訂程式碼品質規則 {#custom-code-quality-rules}
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_customcodequalityrules"
->title="Custom Code Quality Rules"
->abstract="This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from AEM Engineering."
+>title="自訂程式碼品質規則"
+>abstract="本頁介紹Cloud Manager執行的自定義代碼質量規則，作為代碼質量測試的一部分。 它們基於工程部門的最佳AEM實踐。"
 
 本頁介紹Cloud Manager作為元件執行的自定義代碼質量規則 [代碼質量測試。](/help/implementing/cloud-manager/code-quality-testing.md) 它們基於工程部門的最佳AEM實踐。
 
 >[!NOTE]
-此處提供的代碼示例僅供說明之用。 看聲納隊 [概念文檔](https://docs.sonarqube.org/7.4/user-guide/concepts/) 瞭解聲納庫比的概念和質量規則。
+>
+>此處提供的代碼示例僅供說明之用。 看聲納隊 [概念文檔](https://docs.sonarqube.org/7.4/user-guide/concepts/) 瞭解聲納庫比的概念和質量規則。
 
 ## 《聲納量子規則》 {#sonarqube-rules}
 
@@ -315,7 +315,8 @@ public void doThis() throws Exception {
 通常，應使用INFO日誌級別來標定重要操作，並且預設AEM配置為在INFO級別或更高級別登錄。 GET和HEAD方法只應是只讀操作，因此不構成重要行動。 響應GET或HEAD請求而以INFO級別登錄可能會產生嚴重的日誌噪音，從而使識別日誌檔案中的有用資訊變得更加困難。 處理GET或HEAD請求時的日誌記錄應位於出錯時的「警告」或「錯誤」級別，或位於「調試」或「TRACE」級別（如果更深入的故障排除資訊有幫助）。
 
 >[!NOTE]
-這不適用於 `access.log`-type每個請求的日誌記錄。
+>
+>這不適用於 `access.log`-type每個請求的日誌記錄。
 
 #### 不符合代碼 {#non-compliant-code-8}
 
@@ -520,7 +521,8 @@ APIAEM表面處於常數修訂下，以標識不鼓勵使用的API，因此被�
 以下部分詳細介紹了Cloud Manager執行的OakPAL檢查。
 
 >[!NOTE]
-OakPAL是一個框架，它使用獨立的Oak儲存庫來驗證內容包。 該獎由一名合AEM伙人和2019年羅剋星北美獎AEM得主開發。
+>
+>OakPAL是一個框架，它使用獨立的Oak儲存庫來驗證內容包。 該獎由一名合AEM伙人和2019年羅剋星北美獎AEM得主開發。
 
 ### 客戶不應實施或擴展@ProviderType注釋的產品API {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -681,9 +683,12 @@ public class DontDoThis implements Page {
 在複雜項目上出現的一個常見問題是多次配置同一OSGi元件。 這會導致對哪些配置適用產生模糊性。 此規則是「運行模式感知」，因為它只標識在同一運行模式或運行模式組合中多次配置同一元件的問題。
 
 >[!NOTE]
-此規則將產生在多個包中定義相同配置（在同一路徑上）的問題，包括在生成的包的總清單中複製相同包的情況。
-例如，如果生成生成名為 `com.myco:com.myco.ui.apps` 和 `com.myco:com.myco.all` 何處 `com.myco:com.myco.all` 床 `com.myco:com.myco.ui.apps`，然後是 `com.myco:com.myco.ui.apps` 將被報告為重複項。
-這通常是不遵守 [內容包結構指南。](/help/implementing/developing/introduction/aem-project-content-package-structure.md). 在此特定示例中， `com.myco:com.myco.ui.apps` 缺少 `<cloudManagerTarget>none</cloudManagerTarget>` 屬性。
+>
+>此規則將產生在多個包中定義相同配置（在同一路徑上）的問題，包括在生成的包的總清單中複製相同包的情況。
+>
+>例如，如果生成生成名為 `com.myco:com.myco.ui.apps` 和 `com.myco:com.myco.all` 何處 `com.myco:com.myco.all` 床 `com.myco:com.myco.ui.apps`，然後是 `com.myco:com.myco.ui.apps` 將被報告為重複項。
+>
+>這通常是不遵守 [內容包結構指南。](/help/implementing/developing/introduction/aem-project-content-package-structure.md). 在此特定示例中， `com.myco:com.myco.ui.apps` 缺少 `<cloudManagerTarget>none</cloudManagerTarget>` 屬性。
 
 #### 不符合代碼 {#non-compliant-code-osgi}
 
@@ -779,7 +784,8 @@ OSGi配置 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 定義中的預
 為了與Cloud Service部署模型相容，單個內容包必須包含儲存庫不可變區域的任一內容(即， `/apps` 和 `/libs`)或可變區域(即 `/apps` 或 `/libs`)，但不是兩者兼而有之。 例如，包含兩者的包 `/apps/myco/components/text and /etc/clientlibs/myco` 與Cloud Service不相容，將導致報告問題。
 
 >[!NOTE]
-規則 [客戶包不應在/libs下建立或修改節點](#oakpal-customer-package) 總是適用。
+>
+>規則 [客戶包不應在/libs下建立或修改節點](#oakpal-customer-package) 總是適用。
 
 請參閱 [項AEM目結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md) 的子菜單。
 
