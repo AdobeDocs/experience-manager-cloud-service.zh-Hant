@@ -1,85 +1,85 @@
 ---
-title: AEM中的Headful和Headless
-description: AEM專案可以以無頭和無頭模型實作，但選項不是二進位。 AEM提供在單一專案中充分運用這兩種模型優點的彈性。
+title: 無頭AEM
+description: 項AEM目可以採用無頭和無頭的模式，但選擇不是二進位的。 為在AEM一個項目中利用這兩種模型的優點提供了靈活性。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 0%
 
 ---
 
-# AEM {#headful-headless}中的Headful和Headless
+# 無頭AEM {#headful-headless}
 
-Adobe Experience Manager專案可在無頭和無頭兩種模型中實作，但選項並非二進位。 AEM提供在單一專案中充分運用這兩種模型優點的彈性。 本檔案提供並概述不同的模型，並說明SPA整合的層級。
+Adobe Experience Manager項目可以採用頭腦式和頭腦式兩種模式，但選擇不是二元的。 為在AEM一個項目中利用這兩種模型的優點提供了靈活性。 本文檔提供並概述了不同的模型，並介紹了整合SPA級別。
 
 ## 概覽 {#overview}
 
-AEM提供強大的工具，可在單一平台中管理內容的建立及其傳遞。 這是傳統的「有頭腦」內容管理模式，內容作者和開發人員可在相同平台上工作，將體驗提供給內容消費者。
+提AEM供了功能強大的工具，可管理內容的建立和在一個平台中的交付。 這是一種傳統的內容管理「大頭」模式，內容作者和開發人員在同一平台上工作，以向內容消費者提供體驗。
 
-AEM也可用來簡單地管理內容，讓內容的呈現和傳遞可由其他平台管理。 這是「無頭式」的內容管理模型，內容作者和開發人員在不同平台上工作，為內容消費者提供體驗。
+還可AEM以用於簡單地管理內容，允許由另一個平台管理內容的演示和傳遞。 這是內容管理的「無頭」模式，內容作者和開發人員在不同的平台上工作，為內容消費者提供體驗。
 
-但這不需要二進位選擇。 AEM提供前所未有的彈性，讓您可充分運用這兩種模型在專案中的優點。
+但這不一定是二進位的選擇。 提供AEM前所未有的靈活性，使您能夠利用這兩種模型對項目的優勢。
 
-![AEM實作模型](headless/assets/aem-implementation-models.png)
+![實AEM施模式](/help/headless/assets/aem-implementation-models.png)
 
-在帶頭式或完整堆疊模型中，內容是根據Java、HTL等在AEM存放庫和AEM元件中管理。 用於呈現使用者體驗的內容。 在此模型中，建立內容、設定內容樣式、呈現內容，然後在AEM中傳送所有內容。
+在頭型或全棧模型中，內容在儲存庫AEM和元件AEM中基於Java 、 HTL等進行管理。 用於為用戶體驗呈現內容。 在這個模型中，建立內容、設計內容、展示內容，以及交付內容都發生在AEM中。
 
-在無周邊模型中，內容會在AEM存放庫中管理，但透過API（例如REST和GraphQL）傳送至其他系統，以便為使用者體驗呈現內容。 在此模型中，內容是在AEM中建立，但會以樣式設定、呈現，以及傳遞所有內容都會發生在其他平台上。
+在無頭模型中，內容在儲存庫中AEM被管理，但是通過API（如REST和GraphQL）將內容傳送到另一個系統，以便為用戶體驗呈現內容。 在此模型中，內容是在中創AEM建的，但是定義它，展示它，並交付它所有內容都發生在另一個平台上。
 
-單頁應用程式(SPA)通常是AEM無條件傳送內容的目的地。 不過，這些SPA不一定完全外部於AEM。 AEM可讓您決定將SPA整合至AEM的程度。 讓我們舉個例子。
+單頁應用程式SPA()通常是無需由它提供的內容的AEM目標。 然而，這SPA些不必完全是外部AEM的。 允AEM許您決定整合到SPA何種程度AEM。 我們舉個例子。
 
-## 網店範例{#web-shop-example}
+## Web Shop示例 {#web-shop-example}
 
-假設您已有公司的Web Shop作為SPA。 其中包含所有產品詳細資訊和影像。 然後您會導入AEM，以強化促銷網站、部落格和促銷活動內容等行銷工作。 如何整合兩者？ AEM可啟用一系列選項：
+假設您公司現有的Web商店SPA。 您擁有您所有的產品詳細資訊和影像。 然後，您介AEM紹以推動您的營銷工作，如促銷網站、部落格和促銷活動內容。 如何整合兩者？ 啟AEM用一系列選項：
 
 * **允許系統獨立運行。**
-* **透過GraphQL從AEM提供有限內容給Web Shop。** 內容可由作者在AEM中建立，但只能透過網店SPA檢視。
-* **將網店SPA內嵌在AEM中。** 內容可由作者在AEM中建立，並在AEM中於網店內容中檢視，但不受操控。
-* **將Web Shop SPA內嵌在AEM中，並啟用可編輯的點。** 內容可由作者在AEM中建立，並在AEM中於Web Shop中檢視，而作者在AEM中操控Web Shop SPA內容的能力有限。
-* **在AEM中嵌入網頁商店SPA，並啟用整個區域進行編輯。** 內容可由作者在AEM中建立，並在AEM中於Web Shop中檢視，而作者在AEM中操控Web Shop SPA內容的能力有限。
+* **通過GraphQL為Web商店提供有限AEM的內容。** 內容可由作者在中創AEM建，但只能通過Web商店查看SPA。
+* **將Web商店嵌SPA入AEM。** 內容可由作者在中創AEM建，並在WebAEM商店的上下文中查看，但不受操作。
+* **將Web商店嵌SPA入AEM，並啟用可編輯點。** 內容可由作者在AEM中建立，AEM並在Web商店的上下文中查看，並且作者在Web商店內操縱內容的能力SPA有限AEM。
+* **將網頁商店SPA嵌AEM入，並啟用整個區域進行編輯。** 內容可由作者在AEM中建立，AEM並在Web商店的上下文中查看，並且作者在Web商店內操縱內容的能力SPA有限AEM。
 
-下一節將更詳細探討這些整合層級。
+下一節將更詳細地探討這些整合級別。
 
 >[!NOTE]
 >
->當然，您也可以使用AEM SPA編輯器架構，將Web Shop SPA重新實作為完全運作的AEM SPA [。](/help/implementing/developing/hybrid/introduction.md) 如果您已有AEM且想要建立新的Web商店或其他SPA，則此為建議的方法，但不在本檔案的討論範圍內。
+>當然，您也可以將Web商店重新SPA實施為功能完AEM全SPA的 [使用編AEM輯器SPA框架。](/help/implementing/developing/hybrid/introduction.md) 如果您已AEM經且希望建立新Web商店或其SPA他網站，則建議使用此方法，但它不在本文檔的範圍內。
 
-## SPA整合層級{#integration-levels}
+## 集SPA成級別 {#integration-levels}
 
-SPA整合屬於AEM的四個層級。
+整SPA合在四個層次AEM。
 
 * **0級：無整合**
-   * SPA和AEM分別存在，且不會交換任何資訊。
-   * 內容是在兩個不同的系統中獨立建立、管理和傳送的。
+   * 和SPA分AEM開存在，不交換資訊。
+   * 內容是在兩個獨立的系統中獨立建立、管理和提供的。
 * **第1級：內容片段整合**
-   * [AEM](/help/assets/content-fragments/content-fragments.md) 中使用內容片段來建立和管理SPA的有限內容。
-   * SPA會透過AEM [GraphQL API擷取此內容。](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * 有些內容在AEM中管理，有些則在外部系統中管理。
-   * 內容只能在SPA中檢視。
-* **第2層：將SPA內嵌於AEM**
-   * [內](/help/assets/content-fragments/content-fragments.md) 容片段用於AEM中，以建立和管理SPA的內容。
-   * SPA會透過AEM [GraphQL API擷取此內容。](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * 有些內容在AEM中管理，有些則在外部系統中管理。
-   * 可在AEM中以內容檢視內容。
-   * 可在AEM中編輯有限的內容。
-* **第3層：在AEM中內嵌並完全啟用SPA**
-   * [內](/help/assets/content-fragments/content-fragments.md) 容片段用於AEM中，以建立和管理SPA的內容。
-   * SPA會透過AEM [GraphQL API擷取此內容。](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * 可在AEM中以內容檢視內容。
-   * 大部分內容都可在AEM內編輯。
+   * [內容片段](/help/assets/content-fragments/content-fragments.md) 用於創AEM建和管理受限內SPA容。
+   * 將SPA此內容檢索AEM到 [GraphQL API。](/help/headless/graphql-api/content-fragments.md)
+   * 某些內容在外部AEM系統中管理，有些在外部系統中管理。
+   * 只能在中查看內SPA容。
+* **第2級：嵌SPA入AEM**
+   * [內容片段](/help/assets/content-fragments/content-fragments.md) 用於創AEM建和管理內容SPA。
+   * 將SPA此內容檢索AEM到 [GraphQL API。](/help/headless/graphql-api/content-fragments.md)
+   * 某些內容在外部AEM系統中管理，有些在外部系統中管理。
+   * 內容可在內的上下文中查AEM看。
+   * 可在中編輯有限的內AEM容。
+* **第3級：在中嵌入並完SPA全啟AEM用**
+   * [內容片段](/help/assets/content-fragments/content-fragments.md) 用於創AEM建和管理內容SPA。
+   * 將SPA此內容檢索AEM到 [GraphQL API。](/help/headless/graphql-api/content-fragments.md)
+   * 內容可在內的上下文中查AEM看。
+   * 大多數內容都可在內AEM編輯。
 
-1級是典型無頭式實作的範例。 不過，內容作者只能在SPA內以內容檢視其內容。 AEM只是製作工具。
+1級是典型無頭實施的示例。 但內容作者只能在中的上下文中查看其內SPA容。 只AEM是創作工具。
 
-在2和3級時，AEM的優點和彈性就變得明顯，同時仍保留SPA的優點。 內容作者可在AEM中建立其內容，但也可在AEM中以內容方式查看。 SPA可在AEM中撰寫，但仍以SPA形式提供。
+在2和3級AEM時，其優勢和靈活性變得明顯，同時仍保SPA持。 內容作者可以在中創AEM建其內容，但也可以在上下文中查AEM看。 這SPA種能力在中提AEM供，但仍作為文SPA件。
 
-## 實作整合層級 {#implementing}
+## 實施整合級別 {#implementing}
 
-AEM中有不同的工具可供使用，端視您選擇的整合層級而定。 每個層級都以先前使用的工具為基礎。 下列清單會連結至相關資源。
+根據您選擇的集AEM成級別，可用的工具不同。 每個級別都建立在上一級所使用的工具之上。 以下清單連結到相關資源。
 
-* **層級1:** 內容片段和AEM [無](/help/implementing/developing/headless/introduction.md) 頭架構可用來傳送AEM內容至SPA。
-* **第2層：** 除了第1層：
-   * [RemotePage元](/help/implementing/developing/hybrid/remote-page.md) 件可用來將外部SPA內嵌至AEM中，以便在內容中檢視AEM內容。
-   * SPA上的某些點也可以啟用至[允許AEM中的有限編輯。](/help/implementing/developing/hybrid/editing-external-spa.md)
-* **第3層：** 除了第2層：
-   * SPA的整個區域都可啟用，以允許在AEM中進行全面編輯。
+* **第1級：** 內容片段和 [無頭框架](/help/headless/introduction.md) 可用於將內AEM容傳送到SPA。
+* **第2級：** 除第一級：
+   * [RemotePage元件](/help/implementing/developing/hybrid/remote-page.md) 可用於將外部內容SPA嵌AEM入到AEM上下文中查看的內容。
+   * 還可SPA以啟用 [允許在中進行有限的編AEM輯。](/help/implementing/developing/hybrid/editing-external-spa.md)
+* **第3級：** 除了第二級：
+   * 可以啟用SPA整個區域，以便在中進行全面編AEM輯。

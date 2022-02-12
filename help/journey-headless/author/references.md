@@ -1,112 +1,112 @@
 ---
-title: 了解如何在內容片段中使用參考
-description: 了解如何在內容片段、內容、其他片段和其他資產（媒體）中使用參考。 介紹無頭式CMS製作的巢狀片段的必要性和機制。
+title: 瞭解在內容片段中使用引用
+description: 瞭解如何在內容片段、內容、其他片段和其他資產（媒體）中使用引用。 介紹無頭CMS創作中嵌套片段的必要性和機制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '729'
 ht-degree: 2%
 
 ---
 
-# 了解如何在內容片段中使用參考 {#author-headless-references}
+# 瞭解在內容片段中使用引用 {#author-headless-references}
 
-## 迄今為止的故事 {#story-so-far}
+## 到目前為止的故事 {#story-so-far}
 
-在 [AEM無頭內容製作歷程](overview.md) the [簡介](introduction.md) 涵蓋與無頭製作相關的基本概念和術語。
+在 [無AEM頭內容作者之旅](overview.md) 這樣 [導言](introduction.md) 介紹了與無頭創作相關的基本概念和術語。
 
-您已了解無頭式CMS製作的基本知識，並熟悉如何使用AEMaaCS製作，尤其是製作內容片段。
+您已學習了無頭CMS創作的基礎知識，並介紹了使用AEMaaCS進行創作，特別是創作內容片段。
 
-本文以這些為基礎，讓您了解如何使用參考來為您的AEM無頭專案製作您自己的內容。
+本文基於這些內容，以便您瞭解如何使用引用來為您的無頭項目創作AEM您自己的內容。
 
 ## 目標 {#objective}
 
-* **對象**:進階
-* **目標**:介紹無頭式CMS製作的參考使用方式。 可用的參考類型及其用途：
+* **觀眾**:高級
+* **目標**:介紹對無頭CMS創作的引用的使用。 可用的參考類型及其目的：
 
    * 內容參考資料
-   * 資產/媒體參考
-   * 片段參考
-   * 從文字區塊內的臨機參考
+   * 資產/介質引用
+   * 片段引用
+   * 來自文本塊內的即席引用
 
-## 參考內容 {#what-are-references}
+## 什麼是引用 {#what-are-references}
 
-參考只是連接資源的機制，無論是其他內容、資產（如影像中）或其他片段皆然。 雖然非常相似，但還是有一些差異。
+引用只是連接資源的一種機制，無論是其他內容、資產（如影像中）還是其他片段。 雖然非常相似，但還是有一些不同。
 
-有些參考有專用的資料類型（例如內容參考和片段參考），有些則只是新增為文字區塊內的參考（資產參考和臨機參考）。
+某些引用具有專用的資料類型（例如，內容引用和片段引用），而其他引用則只是作為文本塊（資產引用和即席引用）中的引用而添加。
 
-![內容片段 — 參考](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![內容片段 — 引用](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
 
 ## 內容參考資料 {#content-references}
 
-內容參考就是這麼做的 — 可讓您參考任何其他內容。 這會開啟一個瀏覽器，讓您選取內容項目。
+「內容引用」只是這樣做 — 它們允許您引用任何其他內容。 這將開啟一個瀏覽器，允許您選擇內容項。
 
-## 資產/媒體參考 {#assets-media-references}
+## 資產/介質引用 {#assets-media-references}
 
-可在文字區塊中參考資產（例如影像或媒體），方法是使用 **插入資產** 選項。 這會開啟一個瀏覽器，供您選取資產。
+使用 **插入資產** 的雙曲餘切值。 這將開啟一個瀏覽器，允許您選擇資產。
 
 ![內容片段 — 插入資產](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
-## 片段參考 {#fragment-references}
+## 片段引用 {#fragment-references}
 
-「片段參考」同樣會這麼做 — 可讓您參考其他片段。 這個重要性的原因需要多一點解釋。
+再次，片段引用只是執行此操作 — 它們允許您引用另一個片段。 為什麼這很重要，需要多一點解釋。
 
-例如，您可能已定義下列內容片段模型：
+例如，您可能定義了以下內容片段模型：
 
 * 城市
 * 公司
 * 人員
-* 獎勵
+* 獎項
 
-看起來很簡單，但公司當然有CEO和員工…….這些都是人，每個人都被定義為人。
+看起來很簡單，但公司當然有CEO和員工……。這些都是人，每個人都被定義為人。
 
-一個人可以獲得一個獎（或者兩個）。
+一個人可以獲得一個獎（或者兩個獎）。
 
 * 我的公司 — 公司
    * CEO — 人員
    * 員工 — 人員
       * 個人獎 — 獎
 
-這只是先來的。 根據複雜性，獎項可能是特定於公司，或者公司可以在特定城市中設定其主要辦事處。
+這只是開始。 根據複雜性，獎項可能是公司特定的，或公司可能在特定的城市擁有其主要辦事處。
 
-如您（作者）和無頭式應用程式所了解，透過片段參考可呈現這些相互關係。
+使用片段引用可以表示這些相互關係，因為您（作者）和無頭應用程式都瞭解這些關係。
 
-身為作者，您不負責定義這些關係（建立內容片段模型時由內容架構師完成），但您必須知道如何辨識和編輯參照。
+作為作者，您不負責定義這些關係（建立內容片段模型時由內容架構師完成），但您需要知道如何識別和編輯引用。
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
 -->
 
-### 如何製作巢狀片段 {#author-nested-fragment}
+### 如何生成嵌套片段 {#author-nested-fragment}
 
-製作片段參考相當簡單(不過通常欄位不會標示為 **片段參考**)。 您可以直接輸入參考，或（更可能）選取資料夾圖示以開啟瀏覽器，供您導覽並選取所需片段。
+創作片段引用相當簡單(儘管通常不會將欄位標籤為 **片段引用**)。 您可以直接鍵入引用，或者（更可能）選擇資料夾表徵圖以開啟瀏覽器，該瀏覽器允許您導航並選擇所需的片段。
 
-![內容片段 — 參考](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
+![內容片段 — 引用](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
-內容片段模型控制項的定義：
+內容片段模型的定義控制：
 
-* 是否可選擇添加多個引用
-* 您可選取的內容片段模型類型；「內容片段模型」會定義參考所允許的片段模型，因此AEM只會根據這些模型顯示片段。
+* 是否可以選擇添加多個參照
+* 可選擇的內容片段的模型類型；內容片段模型定義了允許用於引用的片段模型，AEM因此僅根據這些模型顯示片段。
 
-### 如何導覽巢狀片段 {#navigate-nested-fragment}
+### 如何導航嵌套片段 {#navigate-nested-fragment}
 
-使用 **結構樹** 內容片段編輯器的索引標籤，您可以導覽至片段所參考的片段，然後導覽其可能包含的任何參考。 選取參考會開啟該片段以供編輯。
+使用 **結構樹** 在內容片段編輯器的頁籤中，您可以瀏覽片段引用的片段，然後瀏覽它們可能包含的任何引用。 選取參照會開啟該片段進行編輯。
 
 >[!NOTE]
 >
->使用主面板中的階層連結，您可以導覽回起始點。
+>使用主面板中的麵包屑，您可以導航回起始點。
 
 ![內容片段結構樹](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
 
-## 臨機參考 {#adhoc-references}
+## 即席引用 {#adhoc-references}
 
-臨機參考可新增為文字區塊內的簡單連結：
+Ad hoc引用可以作為文本塊中的簡單連結添加：
 
-![內容片段 — 臨機參考](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
+![內容片段 — 即席引用](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
-## 下一步 {#whats-next}
+## 下一步是什麼 {#whats-next}
 
-現在您已了解內容片段中的參考和結構，下一步是 [了解中繼資料和標籤的相關資訊](metadata-tagging.md). 這將介紹並討論如何定義內容片段的中繼資料和標籤。
+現在，您已經瞭解了「內容片段」中的引用和結構，下一步是 [瞭解元資料和標籤](metadata-tagging.md)。 這將介紹並討論如何定義內容片段的元資料和標籤。
 
 ## 其他資源 {#additional-resources}
 
@@ -114,10 +114,10 @@ ht-degree: 2%
 
    * [管理內容片段](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [將設定套用至資產資料夾](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [將配置應用到您的資產資料夾](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [建立內容片段](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [變化 — 編寫內容片段](/help/assets/content-fragments/content-fragments-variations.md)
+   * [變體 — 創作內容片段](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 
@@ -126,9 +126,9 @@ ht-degree: 2%
       * [內容片段模型 — 屬性](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 
-* 快速入門手冊
-   * [建立資產資料夾無頭快速入門手冊](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+* 入門指南
+   * [建立資產資料夾 — 無頭設定](/help/headless/setup/create-assets-folder.md)
 
-* AEM無頭式內容架構者歷程
+* 無AEM頭內容架構師旅程
 
-* AEM無頭翻譯歷程
+* 無AEM頭翻譯之旅

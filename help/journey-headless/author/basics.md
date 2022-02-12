@@ -2,9 +2,9 @@
 title: 瞭解創作基礎知識
 description: 瞭解使用內容片段為無頭CMS創作內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1696'
 ht-degree: 2%
 
 ---
@@ -268,7 +268,7 @@ ht-degree: 2%
 
 
 * 入門指南
-   * [《建立資產資料夾無頭快速入門手冊》](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+   * [建立資產資料夾無頭設定](/help/headless/setup/create-assets-folder.md)
 
 * 無AEM頭內容架構師旅程
 

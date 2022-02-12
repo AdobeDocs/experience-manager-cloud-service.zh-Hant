@@ -4,7 +4,7 @@ description: 瞭解如何在配置瀏覽器中啟用某些內容片段功能，�
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 2e6f59fe663a3c93fc612b888f151d75dc5821f6
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 17%
@@ -27,7 +27,7 @@ ht-degree: 17%
 >如果未啟用 **內容片段模型**:
 >
 >* 這樣 **建立** 的子菜單。
->* 你將無法 [選擇「站點」配置以建立相關端點](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)。
+>* 你將無法 [選擇「站點」配置以建立相關端點](/help/headless/graphql-api/graphql-endpoint.md)。
 
 
 要啟用內容片段功能，您需要：

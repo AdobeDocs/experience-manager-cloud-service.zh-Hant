@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ad49f5896680f191cd667b2e17ee8e81b7c424a5
+source-git-commit: 7076b5b7db75ebe4f6b381ab2330769f7dcd6904
 workflow-type: tm+mt
-source-wordcount: '3494'
+source-wordcount: '3444'
 ht-degree: 42%
 
 ---
@@ -158,12 +158,7 @@ ht-degree: 42%
          + [設定帳戶環境](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [您的收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + 無頭內容作者之旅 {#headless-journey}
-         + [無AEM頭內容作者之旅 — 概述](/help/journey-headless/author/overview.md)
-         + [無頭創作AEM — 簡介](/help/journey-headless/author/introduction.md)
-         + [無頭創作基礎知AEM識](/help/journey-headless/author/basics.md)
-         + [瞭解在內容片段中使用引用](/help/journey-headless/author/references.md)
-         + [瞭解定義內容片段的元資料和標籤](/help/journey-headless/author/metadata-tagging.md)
+      + [無頭內容作者之旅](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
       + 製作基礎知識 {#fundamentals}
          + [環境與工具](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [新增頁面註解](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -253,14 +248,7 @@ ht-degree: 42%
                + [配置轉換規則](/help/journey-sites/translation/translation-rules.md)
                + [翻譯內容](/help/journey-sites/translation/translate-content.md)
                + [發佈已翻譯的內容](/help/journey-sites/translation/publish-content.md)
-            + 無頭翻譯之旅 {#headless}
-               + [瞭解無頭翻AEM譯](/help/journey-headless/translation/overview.md)
-               + [開始無AEM頭翻譯](/help/journey-headless/translation/getting-started.md)
-               + [瞭解無頭內容以及如何翻譯AEM](/help/journey-headless/translation/learn-about.md)
-               + [配置翻譯連接器](/help/journey-headless/translation/configure-connector.md)
-               + [配置轉換規則](/help/journey-headless/translation/translation-rules.md)
-               + [翻譯內容](/help/journey-headless/translation/translate-content.md)
-               + [發佈已翻譯的內容](/help/journey-headless/translation/publish-content.md)
+            + [無頭翻譯之旅](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [翻譯多語言站點的內容](/help/sites-cloud/administering/translation/overview.md)
             + [準備翻譯內容](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻譯項目](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -319,9 +307,6 @@ ht-degree: 42%
       + [搜尋 Facet](/help/assets/search-facets.md)
       + [Assets HTTP API](/help/assets/mac-api-assets.md)
       + [資產HTTP API中支援內容片段](/help/assets/content-fragments/assets-api-content-fragments.md)
-      + [用於內容片段的GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
-      + [內容片段上遠程GraphQL查詢的驗證](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
-      + [包含內容片段的GraphQL API — 示例內容和查詢](/help/assets/content-fragments/content-fragments-graphql-samples.md)
       + [連線資產](/help/assets/use-assets-across-connected-assets-instances.md)
       + [生成僅用於放置的格式副本](/help/assets/configure-fpo-renditions.md)
       + [資產報表](/help/assets/asset-reports.md)
@@ -547,6 +532,73 @@ ht-degree: 42%
    + [Adobe CommercePWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [遷移](/help/commerce-cloud/migration.md)
    + [常見問題](/help/commerce-cloud/faq.md)
++ 無頭 {#headless}
+   + [無頭引AEM言](/help/headless/introduction.md)
+   + 設定 {#setup}
+      + [簡介](/help/headless/setup/introduction.md)
+      + [設定](/help/headless/setup/create-configuration.md)
+      + [內容片段模型](/help/headless/setup/create-content-model.md)
+      + [資產資料夾](/help/headless/setup/create-assets-folder.md)
+      + [內容片段](/help/headless/setup/create-content-fragment.md)
+      + [GraphQL終結點](/help/headless/setup/create-api-request.md)
+   + 內容片段 {#content-fragments}
+      + [概覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+      + [內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
+      + [管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
+      + 製作{#authoring}
+         + [製作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
+         + [文本編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
+         + [相關聯的內容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
+         + [變數](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
+      + [中繼資料](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
+      + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
+      + [JSON預覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+   + GraphQL API {#graphql-api}
+      + [用於內容片段的GraphQL API](/help/headless/graphql-api/content-fragments.md)
+      + [管理 GraphQL 端點](/help/headless/graphql-api/graphql-endpoint.md)
+      + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
+      + [示例GraphQL查詢](/help/headless/graphql-api/sample-queries.md)
+      + [永續GraphQL查詢](/help/headless/graphql-api/persisted-queries.md)
+   + [內容片段REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+   + 安全性 {#security}
+      + [權限](/help/headless/security/permissions.md)
+      + [驗證](/help/headless/security/authentication.md)
+   + 部署 {#deployment}
+      + [架構](/help/headless/deployment/architecture.md)
+      + [Dispatcher](/help/headless/deployment/dispatcher.md)
+      + [CORS配置](/help/headless/deployment/cross-origin-resource-sharing.md)
+      + [引用篩選器](/help/headless/deployment/referrer-filter.md)
+   + 無頭遊記 {#journeys}
+      + 無頭開發者之旅 {#developer}
+         + [瞭解無頭AEM](/help/journey-headless/developer/overview.md)
+         + [瞭解CMS無頭開發](/help/journey-headless/developer/learn-about.md)
+         + [無頭as a Cloud Service入AEM門](/help/journey-headless/developer/getting-started.md)
+         + [使用無頭設備獲得第一次體AEM驗](/help/journey-headless/developer/path-to-first-experience.md)
+         + [如何將內容建模為內AEM容模型](/help/journey-headless/developer/model-your-content.md)
+         + [如何通過交付API訪AEM問內容](/help/journey-headless/developer/access-your-content.md)
+         + [如何通過AEM AssetsAPI更新您的內容](/help/journey-headless/developer/update-your-content.md)
+         + [怎麼把它拼起來](/help/journey-headless/developer/put-it-all-together.md)
+         + [如何與無頭應用程式一起生活](/help/journey-headless/developer/go-live.md)
+         + [可選 — 如何建立單頁應用程式AEM](/help/journey-headless/developer/create-spa.md)
+      + 無頭內容架構師之旅 {#architect}
+         + [無AEM頭內容架構師旅程概述](/help/journey-headless/architect/overview.md)
+         + [無頭內容建模AEM — 簡介](/help/journey-headless/architect/introduction.md)
+         + [瞭解無頭內容的內容建模基礎知AEM識](/help/journey-headless/architect/basics.md)
+         + [瞭解在中建立內容片段模型AEM](/help/journey-headless/architect/model-structure.md)
+      + 無頭翻譯之旅 {#translation}
+         + [瞭解無頭翻AEM譯](/help/journey-headless/translation/overview.md)
+         + [開始無AEM頭翻譯](/help/journey-headless/translation/getting-started.md)
+         + [瞭解無頭內容以及如何翻譯AEM](/help/journey-headless/translation/learn-about.md)
+         + [配置翻譯連接器](/help/journey-headless/translation/configure-connector.md)
+         + [配置轉換規則](/help/journey-headless/translation/translation-rules.md)
+         + [翻譯內容](/help/journey-headless/translation/translate-content.md)
+         + [發佈已翻譯的內容](/help/journey-headless/translation/publish-content.md)
+      + 無頭內容作者之旅 {#author}
+         + [無AEM頭內容作者之旅 — 概述](/help/journey-headless/author/overview.md)
+         + [無頭創作AEM — 簡介](/help/journey-headless/author/introduction.md)
+         + [無頭創作基礎知AEM識](/help/journey-headless/author/basics.md)
+         + [瞭解在內容片段中使用引用](/help/journey-headless/author/references.md)
+         + [瞭解定義內容片段的元資料和標籤](/help/journey-headless/author/metadata-tagging.md)
 + 實作 {#implementing}
    + [為 AEM as a Cloud Service 實作應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
@@ -690,49 +742,7 @@ ht-degree: 42%
             + [實現自定義謂詞計算器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自定義錯誤頁](/help/implementing/developing/introduction/custom-error-page.md)
          + [節AEM點類型](/help/implementing/developing/introduction/node-types.md)
-      + 無頭式體驗管理 {#headless}
-         + [無頭AEM和](/help/implementing/developing/headless/introduction.md)
-         + 無頭遊記 {#journeys}
-            + 無頭開發者之旅 {#developer}
-               + [瞭解無頭AEM](/help/journey-headless/developer/overview.md)
-               + [瞭解CMS無頭開發](/help/journey-headless/developer/learn-about.md)
-               + [無頭as a Cloud Service入AEM門](/help/journey-headless/developer/getting-started.md)
-               + [使用無頭設備獲得第一次體AEM驗](/help/journey-headless/developer/path-to-first-experience.md)
-               + [如何將內容建模為內AEM容模型](/help/journey-headless/developer/model-your-content.md)
-               + [如何通過交付API訪AEM問內容](/help/journey-headless/developer/access-your-content.md)
-               + [如何通過AEM AssetsAPI更新您的內容](/help/journey-headless/developer/update-your-content.md)
-               + [怎麼把它拼起來](/help/journey-headless/developer/put-it-all-together.md)
-               + [如何與無頭應用程式一起生活](/help/journey-headless/developer/go-live.md)
-               + [可選 — 如何建立單頁應用程式AEM](/help/journey-headless/developer/create-spa.md)
-            + 無AEM頭內容架構師旅程 {#architect}
-               + [無AEM頭內容架構師旅程概述](/help/journey-headless/architect/overview.md)
-               + [無頭內容建模AEM — 簡介](/help/journey-headless/architect/introduction.md)
-               + [瞭解無頭內容的內容建模基礎知AEM識](/help/journey-headless/architect/basics.md)
-               + [瞭解在中建立內容片段模型AEM](/help/journey-headless/architect/model-structure.md)
-         + 無頭入門指南 {#getting-started}
-            + [簡介](/help/implementing/developing/headless/getting-started/introduction.md)
-            + [建立配置](/help/implementing/developing/headless/getting-started/create-configuration.md)
-            + [建立內容片段模型](/help/implementing/developing/headless/getting-started/create-content-model.md)
-            + [建立資產資料夾](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
-            + [建立內容片段](/help/implementing/developing/headless/getting-started/create-content-fragment.md)
-            + [訪問和傳遞內容片段](/help/implementing/developing/headless/getting-started/create-api-request.md)
-         + 內容片段 {#content-fragments}
-            + [帶內容片段和GraphQL的無頭傳送](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-            + [使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
-            + [為實例啟用內容片段功能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html)
-            + [內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
-            + [管理內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
-            + [變化 - 編寫片段內容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
-            + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
-            + [使用關聯內容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
-            + [中繼資料 - 片段屬性](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-            + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-            + [預覽 — JSON表示法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
-         + 傳遞API {#delivery-api}
-            + [內容片段REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
-            + [內容片段GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-            + [具AEM有內容片段的GraphQL API — 示例內容和查詢](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
-            + [內容片段AEM上遠程GraphQL查詢的驗證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
+      + [無頭式體驗管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       + 混合與發SPA展 {#hybrid}
          + [混SPA合AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [為元件啟用JSON導出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)

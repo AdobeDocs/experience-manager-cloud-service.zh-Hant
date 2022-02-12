@@ -1,204 +1,204 @@
 ---
-title: 如何與無頭應用程式一起運行
-description: 在AEM無頭式開發人員歷程中，了解如何以Git取用本機程式碼，並將其移至Cloud Manager Git，以利CI/CD管道使用，即時部署無頭式應用程式。
-source-git-commit: 8e96827f9353d6ffdf1e01645f2bc8bdaac2610f
+title: 如何與無頭應用程式一起生活
+description: 在「無頭開發者之旅」的這一部分AEM，瞭解如何即時部署無頭應用程式，方法是將本地代碼以Git格式使用，並將其移至Cloud Manager Git，以用於CI/CD管道。
+exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
+source-git-commit: 44b24a68e2b9a9abd2a9d609c3a28f6b90e492fa
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 0%
 
 ---
 
+# 如何與無頭應用程式一起生活 {#go-live}
 
-# 如何與無頭應用程式一起運行{#go-live}
+在 [無AEM頭開發者之旅](overview.md)，瞭解如何通過將本地代碼以Git格式移至Cloud Manager Git以用於CI/CD管道，即時部署無頭應用程式。
 
-在[AEM無頭開發人員歷程](overview.md)中，了解如何以Git擷取本機程式碼，並將其移至Cloud Manager Git，以利CI/CD管道使用，即時部署無頭應用程式。
+## 到目前為止的故事 {#story-so-far}
 
-## 迄今為止的故事{#story-so-far}
+在前一篇無頭旅AEM程中， [如何通過AEM AssetsAPI更新您的內容](update-your-content.md) 您已經學會了如何通過API更新現有AEM的無頭內容，您現在應：
 
-在AEM無頭歷程的上一份檔案中，[如何透過AEM Assets API更新您的內容](update-your-content.md)您已了解如何透過API更新AEM中現有的無頭內容，您現在應：
+* 瞭解AEM AssetsHTTP API。
 
-* 了解AEM Assets HTTP API。
-
-本文以這些基本知識為基礎，讓您了解如何準備自己的AEM無頭專案以上線。
+本文基於這些基礎知識，因此您瞭解如何準備AEM自己的無頭項目來投入使用。
 
 ## 目標 {#objective}
 
-本檔案可協助您了解AEM無頭發佈管道，以及在與應用程式上線前需要注意的效能考量事項。
+本文檔可幫助您了AEM解無頭發佈流程，以及您在與應用程式共處之前需要注意的效能注意事項。
 
-* 了解AEM SDK及所需的開發工具
-* 設定本機開發執行階段，以在上線前模擬您的內容
-* 了解AEM內容復寫和快取基本知識
-* 在啟動前保護並調整應用程式的規模
-* 監控效能和除錯問題
+* 瞭解所需AEM的SDK和開發工具
+* 設定本地開發運行時以在開始運行之前模擬內容
+* 瞭解內AEM容複製和快取基礎知識
+* 在啟動前保護並擴展應用程式
+* 監視效能和調試問題
 
-## AEM SDK {#the-aem-sdk}
+## SDKAEM {#the-aem-sdk}
 
-AEM SDK可用來建置和部署自訂程式碼。 這是您在開發和測試無頭應用程式之前所需的主要工具。 它包含下列成品：
+SDKAEM用於生成和部署自定義代碼。 它是您在投入使用前開發和test無頭應用程式所需的主要工具。 它包含以下對象：
 
-* Quickstart jar — 可執行的jar檔案，可用於設定作者和發佈執行個體
-* Dispatcher工具 — 適用於Windows和UNIX系統的Dispatcher模組及其相依性
-* Java API Jar — 公開所有可用來針對AEM開發的允許Java API的Java Jar/Maven相依性
-* Javadoc jar - Java API jar的javadoc
+* 快速啟動jar — 一個可執行的jar檔案，可用於設定作者和發佈實例
+* Dispatcher工具 — Dispatcher模組及其對基於Windows和UNIX的系統的依賴項
+* Java API Jar - Java Jar/Maven依賴項，它顯示可用於開發的所有允許的Java API AEM
+* Javadocjar - Java APIjar的javadoc
 
-## 其他開發工具{#additional-development-tools}
+## 其他開發工具 {#additional-development-tools}
 
-除了AEM SDK，您還需要其他工具來協助您在本機開發及測試程式碼和內容：
+除了SDKAEM之外，您還需要其他工具來方便本地開發和測試代碼和內容：
 
 * Java
-* Git
+* 蠢貨
 * 阿帕奇·馬文
-* Node.js程式庫
+* Node.js庫
 * 您選擇的IDE
 
-由於AEM是Java應用程式，因此您必須安裝Java和Java SDK，才能支援AEM作為Cloud Service的開發。
+因AEM為是Java應用程式，需要安裝Java和Java SDK來支援as a Cloud Service的開AEM發。
 
-您可以使用Git來管理原始碼控制，以及檢查Cloud Manager的變更，然後將其部署至生產執行個體。
+Git是您用來管理原始碼管理以及簽入對Cloud Manager的更改，然後將其部署到生產實例的。
 
-AEM使用Apache Maven來建置從AEM Maven專案原型產生的專案。 所有主要IDE都為Maven提供整合支援。
+使AEM用Apache Maven生成從Maven Project原型AEM生成的項目。 所有主要IDE都為Maven提供整合支援。
 
-Node.js是JavaScript執行階段環境，用於搭配AEM專案`ui.frontend`子專案的前端資產使用。 Node.js與npm一起分發，實際上是Node.js套件管理器，用於管理JavaScript相依性。
+Node.js是JavaScript運行時環境，用於處理項目的AEM前端資產 `ui.frontend` 子項目。 Node.js與npm一起分發，是事實上的Node.js包管理器，用於管理JavaScript依賴項。
 
-## AEM系統元件一覽{#components-of-an-aem-system-at-a-glance}
+## 系統AEM元件概覽 {#components-of-an-aem-system-at-a-glance}
 
-接下來，讓我們看一下AEM環境的組成部分。
+接下來，我們來看一下環境的組成部AEM分。
 
-完整的AEM環境由製作、發佈和Dispatcher組成。 這些相同的元件會在本機開發執行階段中提供，讓您在上線前更輕鬆地預覽程式碼和內容。
+完整的AEM環境由Author 、 Publish和Dispatcher組成。 這些相同的元件將在本地開發運行時提供，以便您在開始使用前更輕鬆地預覽代碼和內容。
 
-* **內部使** 用者可在Author服務中建立、管理和預覽內容。
+* **作者服務** 是內部用戶建立、管理和預覽內容的位置。
 
-* **發佈服** 務被視為「即時」環境，且通常是使用者與之互動的環境。內容在Author服務上經過編輯和核准後，會分發至Publish服務。 AEM無頭式應用程式最常見的部署模式是讓生產版本的應用程式連線至AEM發佈服務。
+* **發佈服務** 被認為是「即時」環境，通常是最終用戶與之交互的內容。 在作者服務上編輯和批准內容後，內容將分發到發佈服務。 使用無頭應用程式的最AEM常見部署模式是讓應用程式的生產版本連接到AEM發佈服務。
 
-* **Dispatcher** 是一種靜態Web伺服器，可與AEM Dispatcher模組搭配使用。它會快取由發佈例項產生的網頁，以提升效能。
+* **調度員** 是隨調度器模組增強的靜AEM態web伺服器。 它快取由發佈實例生成的網頁以提高效能。
 
-## 本地開發工作流{#the-local-development-workflow}
+## 本地開發工作流 {#the-local-development-workflow}
 
-本機開發專案以Apache Maven為基礎，且使用Git進行原始碼控制。 為了更新專案，開發人員可使用其偏好的整合開發環境，例如Eclipse、Visual Studio Code或IntelliJ等。
+本地開發項目是基於Apache Maven開發的，使用Git進行原始碼管理。 為了更新項目，開發人員可以使用其首選的整合開發環境，如Eclipse、Visual Studio代碼或IntelliJ等。
 
-若要測試無頭應用程式將擷取的程式碼或內容更新，您必須將更新部署至本機AEM執行階段，其中包括AEM製作和發佈服務的本機例項。
+要test將由無頭應用程式接收的代碼或內容更新，您需要將更新部署到本地運行時AEM，其中包括作者的本地實例AEM和發佈服務。
 
-請務必注意本機AEM執行階段中每個元件之間的差異，因為在最重要的位置測試更新非常重要。 例如，在製作上測試內容更新，或在發佈例項上測試新程式碼。
+請務必注意本地運行時中每個元件之間的區AEM別，因為在最重要的位置test更新非常重要。 例如，test內容更新作者或test發佈實例上的新代碼。
 
-在生產系統中，Dispatcher和http Apache伺服器一律會位於AEM發佈例項之前。 它們為AEM系統提供快取和安全服務，因此也必須針對Dispatcher測試程式碼和內容更新。
+在生產系統中，調度程式和http Apache伺服器將始終位於發佈實例AEM前面。 它們為系統提供快取和安AEM全服務，因此test代碼和內容更新對調度程式也至關重要。
 
-## 使用本機開發環境{#previewing-your-code-and-content-locally-with-the-local-development-environment}在本機預覽您的程式碼和內容
+## 使用本地開發環境本地預覽代碼和內容 {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-若要為啟動準備AEM無標題專案，您必須確定專案的所有組成部分都正常運作。
+為了準備啟動AEM您的無頭項目，您需要確保項目的所有組成部分都運行良好。
 
-為此，您需要將所有內容整合在一起：程式碼、內容和設定，並在本機開發環境中測試，以備上線準備。
+要做到這一點，你需要把所有東西都放在一起：代碼、內容和配置，並在本地開發環境中test它，以便進行即時準備。
 
 地方發展環境由三個主要領域組成：
 
-1. AEM專案 — 這將包含AEM開發人員將要使用的所有自訂程式碼、設定和內容
-1. 本機AEM執行階段 — 用於從AEM專案部署程式碼的AEM製作與發佈服務的本機版本
-1. 本機Dispatcher執行階段 — 包含Dispatcher模組的Apache httpd網站伺服器的本機版本
+1. 項AEM目 — 將包含開發人員將要處理的所AEM有自定義代碼、配置和內容
+1. 本地AEM運行時 — 作者的本AEM地版本和發佈服務，將用於從項目部署代AEM碼
+1. 本地Dispatcher運行時 — 包括Dispatcher模組的Apache httpd Web伺服器的本地版本
 
-設定本機開發環境後，您就可以在本機部署靜態節點伺服器，以模擬提供給React應用程式的內容。
+設定本地開發環境後，您可以通過本地部署靜態節點伺服器來模擬內容服務到React應用。
 
-若要深入了解如何設定本機開發環境，以及內容預覽所需的所有相依性，請參閱[生產部署檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)。
+為了更深入地瞭解設定本地開發環境以及內容預覽所需的所有相關性，請參閱 [生產部署文檔](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)。
 
-## 準備AEM無頭應用程式以投入使用{#prepare-your-aem-headless-application-for-golive}
+## 準AEM備無頭應用程式投入使用 {#prepare-your-aem-headless-application-for-golive}
 
-現在，您可以遵循以下概述的最佳實務，為您的AEM無頭應用程式做好啟動準備。
+現在，是時候按照下面介紹的AEM最佳做法，讓您的無頭應用程式準備啟動了。
 
-### 在啟動前保護和擴展無頭應用程式{#secure-and-scale-before-launch}
+### 在發佈前保護和擴展您的無頭應用程式 {#secure-and-scale-before-launch}
 
-1. 使用您的GraphQL請求配置[基於令牌的身份驗證](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
-1. 配置[快取](/help/implementing/dispatcher/caching.md)。
+1. 配置 [基於令牌的身份驗證](/help/headless/security/authentication.md) GraphQL請求
+1. 配置 [快取](/help/implementing/dispatcher/caching.md)。
 
-### 模型結構與GraphQL輸出{#structure-vs-output}
+### 模型結構與GraphQL輸出 {#structure-vs-output}
 
-* 請避免建立輸出超過15kb JSON的查詢（gzip壓縮）。 長JSON檔案是需要大量資源，用戶端應用程式才能剖析。
-* 避免超過五個巢狀片段階層。 額外的層級使得內容作者很難考慮其變更的影響。
-* 使用多對象查詢，而不是在模型內建立具有相關性層次的模型查詢。 這可提供更長期的彈性，以重新建構JSON輸出，而無須進行大量內容變更。
+* 避免建立輸出超過15kb的JSON（gzip壓縮）的查詢。 長JSON檔案對客戶端應用程式進行分析的資源密集型。
+* 避免五個以上嵌套的片段層次。 附加級別使內容作者很難考慮其更改的影響。
+* 使用多對象查詢，而不是在模型內使用依賴關係層次結構建模查詢。 這允許更長期的靈活性來重構JSON輸出，而不必進行大量內容更改。
 
-### 最大化CDN快取點擊率{#maximize-cdn}
+### 最大化CDN快取命中率 {#maximize-cdn}
 
-* 請勿使用直接GraphQL查詢，除非您從表面請求即時內容。
-   * 盡可能使用持續查詢。
-   * 提供超過600秒的CDN TTL，讓CDN加以快取。
-   * AEM可計算模型變更對現有查詢的影響。
-* 在低內容和高內容變更率之間分割JSON檔案/GraphQL查詢，以減少CDN的用戶端流量並指派較高的TTL。 如此一來，CDN與來源伺服器重新驗證JSON的程度就能降到最低。
-* 若要主動使CDN的內容失效，請使用「軟清除」。 這可讓CDN重新下載內容，而不會造成快取遺失。
+* 請勿使用直接GraphQL查詢，除非您正在從曲面請求即時內容。
+   * 盡可能使用永續查詢。
+   * 提供600秒以上的CDN TTL，以便CDN快取它們。
+   * 可AEM以計算模型更改對現有查詢的影響。
+* 將JSON檔案/GraphQL查詢在低內容更改率和高內容更改率之間拆分，以減少CDN的客戶端流量並分配更高的TTL。 這將使CDN與源伺服器重新驗證JSON最小化。
+* 要主動使CDN中的內容無效，請使用軟清除。 這允許CDN重新下載內容，而不會導致快取丟失。
 
-### 縮短下載無頭內容的時間{#improve-download-time}
+### 縮短下載無頭內容的時間 {#improve-download-time}
 
-* 請確定HTTP用戶端使用HTTP/2。
-* 請確定HTTP用戶端接受gzip的標題要求。
-* 將用於托管JSON和參考成品的網域數減到最少。
-* 利用`Last-modified-since`刷新資源。
-* 在JSON檔案中使用`_reference`輸出，即可開始下載資產，而無須剖析完整的JSON檔案。
+* 確保HTTP客戶端使用HTTP/2。
+* 確保HTTP客戶端接受gzip的標頭請求。
+* 最小化用於承載JSON和引用對象的域數。
+* 利用 `Last-modified-since` 來刷新資源。
+* 使用 `_reference` 在JSON檔案中輸出，以開始下載資產，而無需分析完整的JSON檔案。
 
-## 部署到生產環境{#deploy-to-production}
+## 部署到生產 {#deploy-to-production}
 
-一旦您確定所有項目皆已通過測試且正常運作後，即可將程式碼更新推送至Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)中央的Git存放庫[。
+一旦您確保所有內容都已測試並正常運行，您就可以將代碼更新推送到 [Cloud Manager中的集中式Git儲存庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)。
 
-更新上傳至Cloud Manager後，即可使用[Cloud Manager的CI/CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)，以Cloud Service形式部署至AEM。
+將更新上載到雲管理器後，可以使用將更新部署到AEMas a Cloud Service [Cloud Manager的CI/CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)。
 
-您可以善用Cloud Manager CI/CD管道開始部署程式碼，此管道在[此處](/help/implementing/deploying/overview.md)廣泛涵蓋。
+您可以通過利用Cloud Manager CI/CD管道開始部署代碼，該管道已廣泛覆蓋 [這裡](/help/implementing/deploying/overview.md)。
 
-## 效能監視{#performance-monitoring}
+## 效能監控 {#performance-monitoring}
 
-為了讓使用者在使用AEM無頭式應用程式時能有最佳體驗，請務必監控關鍵效能量度，如下所述：
+為使用戶在使用無頭應用程式時擁有盡可能AEM最佳的體驗，您必須監控關鍵效能指標，詳見以下：
 
-* 驗證應用程式的預覽和生產版本
-* 驗證AEM狀態頁以了解當前服務可用性狀態
+* 驗證應用的預覽版和生產版本
+* 驗證當AEM前服務可用性狀態的狀態頁
 * 訪問效能報告
-   * 傳送效能
-      * CDN（快速）效能 — 檢查呼叫數、快取率、錯誤率和裝載流量
-      * 來源伺服器 — 呼叫數、錯誤率、CPU負載、裝載流量
+   * 交付效能
+      * CDN(Reablish)效能 — 檢查呼叫數、快取速率、錯誤率和負載流量
+      * 源伺服器 — 呼叫數、錯誤率、CPU負載、負載流量
    * 作者效能
-      * 檢查使用者、請求和載入數量
-* 訪問特定於應用程式和空間的效能報告
-   * 伺服器上線後，檢查一般量度是否為綠色/橙色/紅色，然後找出特定的應用程式問題
-   * 開啟上方篩選至應用程式或空間的相同報表(例如Photoshop案頭、付費牆)
+      * 檢查用戶、請求和載入數
+* 訪問特定於應用和空間的效能報告
+   * 伺服器啟動後，檢查常規指標是否為綠色/橙色/紅色，然後確定特定應用問題
+   * 在篩選到應用程式或空間(例如，Photoshop案頭、付款牆)後開啟相同的報告
    * 使用Splunk日誌API訪問服務和應用程式效能
-   * 如有其他問題，請聯絡客戶支援。
+   * 如有其他問題，請與客戶支援聯繫。
 
 ## 疑難排解 {#troubleshooting}
 
-### 除錯 {#debugging}
+### 調試 {#debugging}
 
-請遵循下列最佳實務作為偵錯的一般方法：
+按照以下最佳做法執行調試：
 
 * 使用應用程式的預覽版本驗證功能和效能
 * 使用應用程式的生產版本驗證功能和效能
 * 使用內容片段編輯器的JSON預覽進行驗證
-* Inspect用戶端應用程式中的JSON，以檢查用戶端應用程式是否存在或傳送問題
-* Inspect JSON使用GraphQL來檢查是否有與快取內容或AEM相關的問題
+* Inspect客戶端應用程式中的JSON，用於檢查是否存在客戶端應用程式或傳遞問題
+* InspectJSON使用GraphQL檢查是否存在與快取內容或
 
-### 記錄支援{#logging-a-bug-with-support}的錯誤
+### 記錄支援的錯誤 {#logging-a-bug-with-support}
 
-若想透過支援有效記錄錯誤，以備您需要進一步協助時使用，請遵循下列步驟：
+為了在需要進一步幫助時通過支援高效地記錄Bug，請執行以下步驟：
 
-* 如有必要，請拍攝問題的螢幕截圖
-* 記錄重現問題的方法
-* 記錄問題用重制的內容
-* 透過AEM支援入口網站以適當優先順序記錄問題
+* 如有必要，請拍攝問題的截屏
+* 記錄複製問題的方法
+* 記錄問題所再現的內容
+* 通過具有適當優先順序AEM的支援門戶記錄問題
 
-## 歷程結束了，還是結束了？{#journey-ends}
+## 旅程結束了，還是結束了？ {#journey-ends}
 
-恭喜！ 您已完成AEM Headless Developer Journey! 您現在應了解：
+恭喜！ 您已完成無AEM頭開發者之旅！ 您現在應該瞭解：
 
-* 無頭式內容傳送與無頭式內容傳送之間的差異。
-* AEM無頭功能。
-* 如何組織及AEM Headless專案。
-* 如何在AEM中建立無頭式內容。
-* 如何在AEM中擷取和更新無標題內容。
-* 如何與AEM Headless專案同時執行。
+* 無頭內容和有頭內容交付之間的區別。
+* 無AEM頭部特徵。
+* 如何組織和AEM無頭項目。
+* 如何在中建立無頭內AEM容。
+* 如何檢索和更新中的無頭內AEM容。
+* 如何與無頭項目AEM共處。
 * 上線後怎麼辦。
 
-您已啟動第一個AEM Headless專案，或現在擁有所需的所有知識。 幹得好！
+您已經啟動了第AEM一個Headless項目，或者現在已掌握了所需的全部知識。 幹得好！
 
-### 探索單頁應用程式{#explore-spa}
+### 瀏覽單頁應用程式 {#explore-spa}
 
-不過，AEM的無頭店不需要停在這裡。 您可能記得在歷程的[快速入門部分](getting-started.md#integration-levels)中，我們曾簡短討論過AEM如何不僅支援無頭式傳送和傳統的完整堆疊模型，還支援結合兩者優點的混合模型。
+不過，店AEM里的無頭店不必停在這裡。 你可能記得 [入門](getting-started.md#integration-levels) 我們簡要地討AEM論了如何不僅支援無頭遞送和傳統的全棧模型，還支援結合了兩者優點的混合模型。
 
-如果您的專案需要這種彈性，請繼續前往選用的歷程其他部分[如何使用AEM建立單頁應用程式(SPA)。](create-spa.md)
+如果這種靈活性是您項目需要的，請繼續進行可選的附加部分， [如何使用建立單頁應用SPA程式(AEM)。](create-spa.md)
 
 ## 其他資源 {#additional-resources}
 
-* [部署至AEM as aCloud Service概述](/help/implementing/deploying/overview.md)
-* [AEM as a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-* [設定本機AEM環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [使用Cloud Manager部署程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [整合Cloud Manager Git存放庫與外部Git存放庫，並將專案部署至AEM作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
+* [部署到AEMas a Cloud Service](/help/implementing/deploying/overview.md)
+* [AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [設定本地環AEM境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [使用雲管理器部署代碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
+* [將Cloud Manager Git儲存庫與外部Git儲存庫整合，並將項目部署到AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
