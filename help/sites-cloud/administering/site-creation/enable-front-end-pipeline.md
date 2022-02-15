@@ -3,9 +3,9 @@ title: 啟用前端管線
 description: 瞭解如何為現有站點啟用前端管道，以利用站點主題更快地自定義站點。
 feature: Administering
 role: Admin
-source-git-commit: dc7e89c601bb02c78f65ca58eff34c15092b5561
+source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,18 @@ ht-degree: 0%
 >如果您不熟悉前端管道以及如何使用它和站點模板快速部署站點，請查看 [快速建立站點](/help/journey-sites/quick-site/overview.md) 的下一頁。
 
 如果您尚未基於站點模板和主題建立現有站點，AEM則可以將站點配置為載入與現有客戶端庫上的前端管道一起部署的主題。
+
+## 技術詳細資訊 {#technical-details}
+
+激活站點的前端管線時，AEM對站點結構進行以下更改。
+
+* 網站的所有頁面都將包含一個附加的CSS和JS檔案，通過專用的Cloud Manager前端管道部署更新可以修改該檔案。
+* 添加的CSS和JS檔案最初將為空，但「主題源」資料夾可下載到引導資料夾結構，該結構允許通過該管道部署CSS和JS代碼更新。
+* 此更改只能由開發人員通過刪除 `SiteConfig` 和 `HtmlPageItemsConfig` 此操作在下面建立的節點 `/conf/<site-name>/sling:configs`。
+
+>[!NOTE]
+>
+>此操作不會自動將站點的現有客戶端庫轉換為使用font-end管道。 將這些源從客戶端庫資料夾移動到前端管道資料夾是一項需要前端開發人員手動完成的任務。
 
 ## 要求 {#requirements}
 
