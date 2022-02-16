@@ -2,7 +2,7 @@
 title: 配置非生產管道
 description: 瞭解如何配置非生產管道以在部署到生產環境之前test代碼的質量。
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 0%
@@ -124,7 +124,7 @@ Web層配置管道部署HTTPD/Dispatcher配置。 查看文檔 [CI/CD管道](/he
 >
 >如果所選環境已存在Web層代碼管道，則此選擇將被禁用。
 
-要完成全堆棧代碼非生產流水線的配置，請執行以下步驟。
+要完成Web層代碼非生產管道的配置，請執行以下步驟。
 
 1. 在 **原始碼** 頁籤。
 
