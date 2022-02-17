@@ -3,9 +3,9 @@ title: 啟用前端管線
 description: 瞭解如何為現有站點啟用前端管道，以利用站點主題更快地自定義站點。
 feature: Administering
 role: Admin
-source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
+source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 啟用前端管線 {#enabling}
 
-啟用您的站點可從「站點」控制台完成。
+從「站點」控制台使用 [鐵軌。](site-rail.md)
 
 1. 登錄AEM並通過 **全局導航** > **站點**。
 1. 在控制台中選擇您的站點。 必須選擇站點的根，而不是任何子頁。
@@ -58,7 +58,8 @@ ht-degree: 0%
 
 1. 提AEM示您以將進行的更改的概述進行確認。 確認並調整您的站點。
 
-現在，您的站點已準備好使用前端管道。 要瞭解有關前端管道的更多資訊，請參閱：
+現在，您的站點已準備好使用前端管道。 要瞭解有關前端管道和管理站點主題的詳細資訊，請參閱：
 
+* [使用站點導軌管理站點主題](site-rail.md)
 * [快速建立站點行程](/help/journey-sites/quick-site/overview.md)  — 本文檔將為您提供使用前端管道和快速站點建立工具快速部署站點的過程並從頭到尾的概述。
 * [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)  — 本文檔描述了整個堆棧和Web層管道上下文中的前端管道。
