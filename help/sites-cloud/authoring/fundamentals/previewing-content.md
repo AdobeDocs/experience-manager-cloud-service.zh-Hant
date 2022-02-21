@@ -1,54 +1,50 @@
 ---
 title: 預覽內容
-description: 了解如何使用AEM預覽服務在上線前預覽內容。
+description: 瞭解如何使用預AEM覽服務在上線前預覽內容。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 78c5649c6b9c04cb459f5730161affeb452c916c
+source-git-commit: e70e6ee055c2542752e66e53aa70a9378b1bc5c0
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
 
+
 # 預覽內容 {#previewing-content}
 
->[!NOTE]
->
->若要在2021年8月3日之前建立的環境上啟用預覽功能，請確定環境是AEM 2021.05.5368.20210529T101701Z或更新版本，然後執行客戶起始的管道。
+提AEM供站點預覽服務，讓開發人員和內容作者在網站到達發佈環境並公開提供之前預覽其最終體驗。
 
-AEM提供網站預覽服務，其設計是讓開發人員和內容作者在到達發佈環境前，先預覽網站的最終體驗，然後才可公開使用。
+它便於預覽在作者環境中無法看到的頁面體驗，如頁面過渡和僅發佈端內容。
 
-它有助於預覽原本無法從製作環境看到的頁面體驗，例如頁面轉變和其他僅發佈端內容。
+有關預覽環境的詳細資訊，請參閱文檔 [管理環境。](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)。
 
-另請參閱[存取預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)。
+## 發佈內容以預覽 {#publishing-content-to-preview}
 
-## 發佈要預覽的內容 {#publishing-content-to-preview}
+您可以使用 **托管發佈** UI。
 
-您可以使用Managed Publication UI將內容發佈至預覽服務，如下所示：
-
-1. 選擇要在站點控制台中發送以預覽的頁面，然後按一下&#x200B;**管理出版物**&#x200B;按鈕
-1. 在以下嚮導中，選擇&#x200B;**預覽**&#x200B;作為目標
+1. 在「站點」控制台中，選擇要發送至預覽的頁面，然後按一下 **管理發布** 按鈕
+1. 在以下嚮導中，選擇 **預覽** 作為目標
 
    ![托管出版物](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 
-1. 按一下&#x200B;**Next**，然後按一下&#x200B;**Publish**&#x200B;以確認。
+1. 按一下 **下一個**，然後 **發佈** 確認。
 
-1. 對話方塊會顯示用於存取預覽環境中內容的URL。
+1. 對話框將顯示用於訪問預覽環境中內容的URL。
 
-   或者，若要查看預覽內容，您也可以將&#x200B;**preview**&#x200B;附加至生產執行個體的發佈URL。
 
-   URL的建構方式如下：
+或者，使用嚮導中顯示的URL查看預覽內容，還可以預先 `preview-` 到生產實例的發佈URL。
 
-   ```
-   https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
-   ```
+```
+https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
+```
 
-如需如何取得環境URL的詳細資訊，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)。
+查看文檔 [管理環境](/help/implementing/cloud-manager/manage-environments.md) 的子菜單。
 
-也可以使用將agentId參數設定為預覽的[發佈內容樹工作流](/help/operations/replication.md#publish-content-tree-workflow)，或使用[複製API](/help/operations/replication.md#replication-api)並配置為預覽的AgentFilter，來發佈內容以預覽。
+也可以通過使用 [發佈內容樹工作流](/help/operations/replication.md#publish-content-tree-workflow) 和 `agentId` 參數設定為 `preview` 或使用 [複製API](/help/operations/replication.md#replication-api) 和 `AgentFilter` 已配置為預覽。
 
 ## 為預覽層配置OSGi設定 {#configuring-osgi-settings-for-the-preview-tier}
 
-預覽層的OSGI屬性值繼承自發佈層，但可使用環境特定值來設定具有「預覽」值的服務參數，從發佈層區分預覽層值。 以下是決定整合端點URL的OSGI屬性範例：
+預覽層的OSGi屬性值從發佈層繼承。 但是，通過設定 `service` 參數到值 `preview`。 OSGi屬性的以下示例確定整合終結點的URL。
 
 ```
 [
@@ -61,12 +57,11 @@ AEM提供網站預覽服務，其設計是讓開發人員和內容作者在到�
 ]
 ```
 
-如需詳細資訊，請參閱OSGi設定檔案的[本區段](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration)。
+有關詳細資訊，請參見 [此部分](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration) OSGi配置文檔的。
 
-## 使用開發人員控制台進行除錯預覽 {#debugging-preview-using-the-developer-console}
+## 使用開發人員控制台調試預覽 {#debugging-preview-using-the-developer-console}
 
-請依照下列步驟，使用「開發人員控制台」對預覽層層除錯：
+按照以下步驟使用Developer Console調試預覽層：
 
-* 在[開發人員控制台](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)中，選擇&#x200B;**— 所有預覽 —**&#x200B;或名稱中包含&#x200B;**prev**&#x200B;的生產環境
-* 生成預覽實例的相關資訊
-如需如何取得環境URL的詳細資訊，請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)。
+* 在 [開發人員控制台](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)選擇 **— 所有預覽 —** 或包括 **前** 以
+* 生成預覽實例的相關資訊請參閱 [管理環境](/help/implementing/cloud-manager/manage-environments.md) 的子菜單。
