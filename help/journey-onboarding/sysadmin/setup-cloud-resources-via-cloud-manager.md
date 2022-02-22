@@ -3,7 +3,7 @@ title: 通過雲管理器設定雲資源
 description: 瞭解如何使用雲管理器來設定和管理您自己的雲資源。
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: 0db24518610fccf0d2ea5e0620a0c6a5f8009ea8
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 * 你應該熟悉 [Cloud Manager產品配置檔案。](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
 
-* 您應該瞭解雲管理器的概念 [方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) 和 [環境。](/help/implementing/cloud-manager/manage-environments.md)
+* 您應該瞭解雲管理器的概念 [方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 和 [環境。](/help/implementing/cloud-manager/manage-environments.md)
 
 ## 以系統管理員和業務所有者身份訪問雲管理器 {#access-sysadmin-bo}
 
@@ -141,7 +141,7 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   >有關如何使用「添加程式」嚮導的逐步說明，請參閱文檔 [建立生產程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md) 看這個 [視頻](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) 瞭解如何將您建立AEM為雲程式，並在建立程式之前瞭解重要注意事項。
+   >有關如何使用「添加程式」嚮導的逐步說明，請參閱文檔 [建立生產程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 看這個 [視頻](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) 瞭解如何將您建立AEM為雲程式，並在建立程式之前瞭解重要注意事項。
 
 
 1. 成功建立雲程式後，您可以從Cloud Manager登錄頁導航到您的程式，以查看 **概述** 頁。

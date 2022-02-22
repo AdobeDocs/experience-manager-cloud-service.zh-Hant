@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 97c7590fd7b77e78cf2d465454fac80906d37803
+source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
 workflow-type: tm+mt
-source-wordcount: '3451'
+source-wordcount: '3434'
 ht-degree: 42%
 
 ---
@@ -632,17 +632,14 @@ ht-degree: 42%
             + [2020.4.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
             + [2020.3.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
             + [2020.2.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
-      + [了解方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)
-      + 生產計畫 {#production-programs}
-         + [簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [建立生產程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md)
-         + [編輯生產程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-production-program.md)
-      + 沙箱方案 {#sandbox-programs}
-         + [簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [建立沙盒程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
-         + [編輯沙盒程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
-         + [刪除沙盒程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
-         + [冬眠和冬眠沙盒環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
+      + 計劃 {#programs}
+         + [程式和程式類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+         + [生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+         + [建立生產程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+         + [沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+         + [建立沙盒程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+         + [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [冬眠環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + 建立 AEM 應用程式專案 {#create-application-project}
          + [使用嚮導](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [設定項目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
