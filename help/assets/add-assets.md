@@ -4,9 +4,9 @@ description: 將數字資產添加到 [!DNL Adobe Experience Manager] 作為 [!D
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
+source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2744'
 ht-degree: 0%
 
 ---
@@ -149,7 +149,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 #### 必備條件 {#prerequisites-bulk-ingestion}
 
-必須具有源blob儲存詳細資訊才能將Experience Manager實例連接到資料儲存。
+使用此功能需要Azure或AWS的外部儲存帳戶或儲存桶。
+
+>[!NOTE]
+>
+>將儲存帳戶容器或儲存桶建立為專用，並僅接受來自授權請求的連接。 但是，不支援對入口網路連接的其他限制。
 
 #### 配置批量導入工具 {#configure-bulk-ingestor-tool}
 
