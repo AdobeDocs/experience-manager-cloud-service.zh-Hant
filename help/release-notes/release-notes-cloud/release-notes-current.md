@@ -3,7 +3,7 @@ title: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 description: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 7935ed5c332934cf1824ef8e6b52b6a7f451dc34
+source-git-commit: 2693022e5745b5c2bb2166f0833c6b1af4337815
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 10%
@@ -26,7 +26,7 @@ ht-degree: 10%
 ## 發行日期 {#release-date}
 
 發佈日期 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] 當前版本(2022.1.0)為2022年2月3日。
-以下版本(2022.2.0)為2022年2月24日。
+以下版本(2022.2.0)是2022年3月3日。
 
 ## 發佈視頻 {#release-video}
 
