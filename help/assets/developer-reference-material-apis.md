@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
+source-git-commit: 37a54fdc1c78350cd1c45e6ec4c0674d5b73c0f8
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1737'
 ht-degree: 2%
 
 ---
@@ -127,23 +127,25 @@ ht-degree: 2%
 
 ### 上載二進位 {#upload-binary}
 
-啟動上載的輸出包括一個或多個上載URI值。 如果提供了多於一個URI，則客戶機可以將二進位檔案拆分成多個部件，並按順序向提供的上載URI發出每個部件的PUT請求。 如果選擇將二進位檔案拆分為零件，請確保遵循以下准則：
+啟動上載的輸出包括一個或多個上載URI值。 如果提供了多於一個URI，則客戶機可以將二進位檔案拆分成多個部件，並按順序向提供的上載URI發出每個部件的PUT請求。 如果選擇將二進位檔案拆分為零件，請遵循以下准則：
+
 * 除最後一個部件外，每個部件的大小必須大於或等於 `minPartSize`。
 * 每個零件的大小必須小於或等於 `maxPartSize`。
-* 如果二進位大小超過 `maxPartSize`，必須將二進位檔案拆分為多個部分才能上載。
+* 如果二進位大小超過 `maxPartSize`，將二進位檔案拆分為多個部分以上載。
 * 您不必使用所有URI。
 
 如果二進位檔案的大小小於或等於 `maxPartSize`，您可以將整個二進位檔案上載到單個上載URI。 如果提供了多個上載URI，請使用第一個上載URI，然後忽略其餘的上載URI。 您不必使用所有URI。
 
 CDN邊緣節點有助於加速請求的二進位檔案上載。
 
-最簡單的方法是使用 `maxPartSize` 作為零件尺寸。 如果將此值用作部件大小，則API合同將確保有足夠的上載URI來上載二進位檔案。 為此，將二進位檔案拆分為大小部分 `maxPartSize`，按順序為每個部件使用一個URI。 最後部分的大小可以小於或等於 `maxPartSize`。 例如，假設二進位檔案的總大小為20,000位元組， `minPartSize` 是5,000位元組， `maxPartSize` 為8,000位元組，上載URI的數量為5。 然後執行以下步驟：
+最簡單的方法是使用 `maxPartSize` 作為零件尺寸。 如果將此值用作部件大小，則API合同將確保有足夠的上載URI來上載二進位檔案。 為此，將二進位檔案拆分為大小部分 `maxPartSize`，按順序為每個部件使用一個URI。 最後部分的大小可以小於或等於 `maxPartSize`。 例如，假設二進位檔案的總大小為20,000位元組， `minPartSize` 是5,000位元組， `maxPartSize` 為8,000位元組，上載URI的數量為5。 執行以下步驟：
+
 * 使用第一個上載URI上載二進位檔案的前8,000位元組。
 * 使用第二個上載URI上載二進位檔案的第二個8,000位元組。
 * 使用第三個上載URI上載二進位檔案的最後4,000位元組。 因為這是最後一部分，所以它不必大於 `minPartSize`。
-* 您無需使用最後兩個上載URI。 別理他們。
+* 您不需要使用最後兩個上載URI。 你可以忽略它們。
 
-常見的錯誤是根據API提供的上載URI數計算部件大小。 API合同不保證此方法有效，並且實際上可能導致部件大小超出範圍 `minPartSize` 和 `maxPartSize`。 這可能導致二進位上載失敗。
+常見錯誤是根據API提供的上載URI數計算部件大小。 API合同不保證此方法有效，並且實際上可能導致部件大小超出範圍 `minPartSize` 和 `maxPartSize`。 這可能導致二進位上載失敗。
 
 同樣，最簡單和最安全的方法是簡單地使用尺寸等於 `maxPartSize`。
 
