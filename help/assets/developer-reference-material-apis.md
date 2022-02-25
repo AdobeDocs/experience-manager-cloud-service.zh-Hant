@@ -5,7 +5,7 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 22e4c62640222daeaa7fc33a76bc740338b5e7c8
+source-git-commit: f5282d149e80328742ff9008441960f62cea6290
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 2%
@@ -61,7 +61,7 @@ ht-degree: 2%
 | 建立資料夾 | ✓ | ✓ | - | ✓ | - | - |
 | 讀取資料夾 | - | ✓ | - | ✓ | - | - |
 | 刪除資料夾 | ✓ | ✓ | - | ✓ | - | - |
-| Copy folder | ✓ | ✓ | - | ✓ | - | - |
+| 複製資料夾 | ✓ | ✓ | - | ✓ | - | - |
 | 移動資料夾 | ✓ | ✓ | - | ✓ | - | - |
 
 ## 資產上載 {#asset-upload}
@@ -100,8 +100,6 @@ ht-degree: 2%
 {
     "completeURI": "(string)",
     "folderPath": "(string)",
-    "minPartSize": (number),
-    "maxPartSize": (number),
     "files": [
         {
             "fileName": "(string)",
@@ -110,7 +108,8 @@ ht-degree: 2%
             "uploadURIs": [
                 "(string)"
             ],
-            
+            "minPartSize": (number),
+            "maxPartSize": (number)
         }
     ]
 }
@@ -122,11 +121,11 @@ ht-degree: 2%
 * `fileName` （字串）:相應二進位檔案的名稱，如啟動請求中提供的。 此值應包括在完整請求中。
 * `mimeType` （字串）:相應二進位檔案的MIME類型，如啟動請求中提供的。 此值應包括在完整請求中。
 * `uploadToken` （字串）:相應二進位檔案的上載令牌。 此值應包括在完整請求中。
-* `uploadURIs` (array): A list of strings whose values are full URIs to which the binary&#39;s content should be uploaded (see [Upload binary](#upload-binary)).
+* `uploadURIs` （陣列）:值為二進位內容應上載到的完整URI的字串清單（請參見） [上載二進位](#upload-binary))。
 * `minPartSize` （數）:可提供給以下任一資料的最小長度（以位元組為單位） `uploadURIs`，如果有多個URI。
 * `maxPartSize` （數）:可提供給以下任一資料的最大長度（以位元組為單位） `uploadURIs`，如果有多個URI。
 
-### Upload binary {#upload-binary}
+### 上載二進位 {#upload-binary}
 
 啟動上載的輸出包括一個或多個上載URI值。 如果提供了多於一個URI，則客戶機可以將二進位檔案拆分成多個部件，並按順序向提供的上載URI發出每個部件的PUT請求。 如果選擇將二進位檔案拆分為零件，請遵循以下准則：
 
@@ -139,11 +138,11 @@ ht-degree: 2%
 
 CDN邊緣節點有助於加速請求的二進位檔案上載。
 
-最簡單的方法是使用 `maxPartSize` 作為零件尺寸。 The API contract guarantees that there are sufficient upload URIs to upload your binary if you use this value as your part size. 為此，將二進位檔案拆分為大小部分 `maxPartSize`，按順序為每個部件使用一個URI。 最後部分的大小可以小於或等於 `maxPartSize`。 For example, assume the total size of the binary is 20,000 bytes, the `minPartSize` is 5,000 bytes, `maxPartSize` is 8,000 bytes, and the number of upload URIs is 5. Execute the following steps:
+最簡單的方法是使用 `maxPartSize` 作為零件尺寸。 如果將此值用作部件大小，則API合同將確保有足夠的上載URI來上載二進位檔案。 為此，將二進位檔案拆分為大小部分 `maxPartSize`，按順序為每個部件使用一個URI。 最後部分的大小可以小於或等於 `maxPartSize`。 例如，假設二進位檔案的總大小為20,000位元組， `minPartSize` 是5,000位元組， `maxPartSize` 為8,000位元組，上載URI的數量為5。 執行以下步驟：
 
 * 使用第一個上載URI上載二進位檔案的前8,000位元組。
 * 使用第二個上載URI上載二進位檔案的第二個8,000位元組。
-* Upload the last 4,000 bytes of the binary using the third upload URI. 因為這是最後一部分，所以它不必大於 `minPartSize`。
+* 使用第三個上載URI上載二進位檔案的最後4,000位元組。 因為這是最後一部分，所以它不必大於 `minPartSize`。
 * 您不需要使用最後兩個上載URI。 你可以忽略它們。
 
 常見錯誤是根據API提供的上載URI數計算部件大小。 API合同不保證此方法有效，並且實際上可能導致部件大小超出範圍 `minPartSize` 和 `maxPartSize`。 這可能導致二進位上載失敗。
@@ -181,13 +180,13 @@ CDN邊緣節點有助於加速請求的二進位檔案上載。
 要瞭解有關上載算法的更多資訊或構建您自己的上載指令碼和工具，Adobe提供了開源庫和工具：
 
 * [開源aem-upload庫](https://github.com/adobe/aem-upload)。
-* [Open-source command-line tool](https://github.com/adobe/aio-cli-plugin-aem).
+* [開源命令行工具](https://github.com/adobe/aio-cli-plugin-aem)。
 
-### Deprecated asset upload APIs {#deprecated-asset-upload-api}
+### 棄用的資產上載API {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-僅支援新上載方法 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。 The APIs from [!DNL Adobe Experience Manager] 6.5 are deprecated. 以下API中不建議使用與上載或更新資產或格式副本（任何二進位上載）相關的方法：
+僅支援新上載方法 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。 來自的API [!DNL Adobe Experience Manager] 不建議使用6.5。 以下API中不建議使用與上載或更新資產或格式副本（任何二進位上載）相關的方法：
 
 * [Experience Manager AssetsHTTP API](mac-api-assets.md)
 * `AssetManager` Java API，例如 `AssetManager.createAsset(..)`
@@ -195,18 +194,18 @@ CDN邊緣節點有助於加速請求的二進位檔案上載。
 >[!MORELIKETHIS]
 * [開源aem-upload庫](https://github.com/adobe/aem-upload)。
 * [開源命令行工具](https://github.com/adobe/aio-cli-plugin-aem)。
-* [Apache Jackrabbit Oak documentation for direct upload](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
+* [Apache Jackrabbit Oak文檔，用於直接上載](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload)。
 
 
 ## 資產處理和後處理工作流 {#post-processing-workflows}
 
-在 [!DNL Experience Manager]，資產處理基於 **[!UICONTROL 處理配置檔案]** 使用的配置 [資產微服務](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)。 Processing does not require developer extensions.
+在 [!DNL Experience Manager]，資產處理基於 **[!UICONTROL 處理配置檔案]** 使用的配置 [資產微服務](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)。 處理不需要開發人員擴展。
 
-For post-processing workflow configuration, use the standard workflows with extensions with custom steps.
+對於後處理工作流配置，請使用帶有擴展的標準工作流和自定義步驟。
 
 ## 後處理工作流中工作流步驟的支援 {#post-processing-workflows-steps}
 
-如果從以前的版本升級 [!DNL Experience Manager]，您可以使用資產微服務處理資產。 雲本地資產微服務的配置和使用更簡單。 中使用的幾個工作流步驟 [!UICONTROL DAM更新資產] 不支援以前版本中的工作流。 For more information about supported classes, see the [Java API reference or Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
+如果從以前的版本升級 [!DNL Experience Manager]，您可以使用資產微服務處理資產。 雲本地資產微服務的配置和使用更簡單。 中使用的幾個工作流步驟 [!UICONTROL DAM更新資產] 不支援以前版本中的工作流。 有關受支援類的詳細資訊，請參見 [Java API引用或Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html)。
 
 以下技術工作流模型將被資產微服務替換，或者沒有支援：
 
