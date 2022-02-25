@@ -1,10 +1,10 @@
 ---
 title: 就緒階段
 description: 瞭解您需要採取哪些步驟以確保AEM您的安裝已準備好移至雲
-source-git-commit: 8988f184b7a2153ff32aa3bdc26283f9a7b414b8
+source-git-commit: d851ca19070232e1d43f5c5e546d4174e2c310a2
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 5%
+source-wordcount: '2078'
+ht-degree: 6%
 
 ---
 
@@ -145,6 +145,11 @@ AEM as a Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許�
     <td>備份和還原</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en">AEMas a Cloud Service備份和恢復</a></td>
     <td></td>
+  </tr>
+  <tr>
+    <td>對身份驗證的更改</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">AEM as a Cloud Service 的 IMS 支援</td>
+    <td>如果您以前在向Cloud Service遷移之前在作者和發佈上都使用了SAML 2.0整合，主要更改是AEMas a Cloud Service作者僅與Adobe IMS整合。 但是，AEMas a Cloud Service發佈層仍可以利用SAML或其他身份驗證整合。 AEM as a Cloud Service 僅針對「作者」、「管理員」和「開發」使用者提供 IMS 驗證支援。IMS驗證不為客戶站點的外部最終用戶提供支援，如站點訪問者。</td>
   </tr>
 </tbody>
 </table>
