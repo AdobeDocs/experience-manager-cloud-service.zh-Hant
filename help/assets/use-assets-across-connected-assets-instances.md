@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: f624b287bf5a46d4a20991dae6cd7b521a7fe472
+source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3825'
 ht-degree: 19%
 
 ---
@@ -53,7 +53,7 @@ Connected Assets功能通過整合支援上述使用案例 [!DNL Experience Mana
 以下說明設定及使用功能以及其相對應的使用者群組時，相關的各種角色。本地範圍用於作者建立網頁的使用案例。 遠端範圍適用於託管所需資產的 DAM 部署。的 [!DNL Sites] 作者獲取這些遠程資產。
 
 | 角色 | 範圍 | 使用者群組 | 需求 |
-|------|--------|-----------|-----|----------|
+|------|--------|-----------|----------|
 | [!DNL Sites] 管理員 | 本機 | [!DNL Experience Manager] `administrators` | 設定 [!DNL Experience Manager] 並配置與遠程設備的整合 [!DNL Assets] 部署。 |
 | DAM 使用者 | 本機 | `Authors` | 用於檢視及複製 `/content/DAM/connectedassets/` 中擷取的資產。 |
 | [!DNL Sites] 作者 | 本機 | <ul><li>`Authors` (對遠程DAM具有讀訪問權限，對本地 [!DNL Sites]) </li> <li>`dam-users` 本地 [!DNL Sites]</li></ul> | 最終用戶是 [!DNL Sites] 使用此整合來提高內容速度的作者。 作者可以使用 [!UICONTROL 內容查找器] 並在本地網頁中使用所需的影像。 |
@@ -136,7 +136,7 @@ Experience Manager允許您將遠程DAM部署作為源連接到多個Experience 
 
 可以配置 [!DNL Sites] 部署和 [!DNL Dynamic Media] 允許網頁作者使用的部署 [!DNL Dynamic Media] 圖片。 在編寫網頁時，使用遠程資產和遠程資源的體驗 [!DNL Dynamic Media] 部署仍然相同。 這樣，您就可以 [!DNL Dynamic Media] 功能，例如智慧裁剪和影像預設。
 
-使用Connected Assets，您可以 [!DNL Dynamic Media] 用於處理遠程DAM部署上的映像資產的功能。
+使用已連接的資產，您可以 [!DNL Dynamic Media] 處理遠程DAM部署上的映像資產。
 
 要使用 [!DNL Dynamic Media] 映像來自 [!DNL Sites] 部署：
 
