@@ -4,9 +4,9 @@ description: 瞭解如何在Dynamic Media使用視頻，如編碼視頻、向You
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
+source-git-commit: 9608e36904e352af5a7273fcb8e7eef49565680b
 workflow-type: tm+mt
-source-wordcount: '9334'
+source-wordcount: '9332'
 ht-degree: 4%
 
 ---
@@ -58,17 +58,17 @@ ht-degree: 4%
 
       * 查看視頻的源視頻和編碼格式副本及其關聯的縮略圖：
          [預覽視頻](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 或 [預覽資產](/help/assets/dynamic-media/previewing-assets.md)
-         [管理視頻格式副本](/help/assets/manage-digital-assets.md#managing-renditions)
+         [Manage video renditions](/help/assets/manage-digital-assets.md#managing-renditions)
 
       * [管理查看器預設](/help/assets/dynamic-media/managing-viewer-presets.md)
-      * [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-   * 使用視頻元資料
+      * [Publishing assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   * Work with video metadata
 
       * 編輯視頻的屬性，如標題、說明和標籤、自定義元資料欄位：
-         [編輯視頻屬性](/help/assets/manage-digital-assets.md#editing-properties)
+         [Editing video properties](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [管理數字資產的元資料](/help/assets/manage-metadata.md)
-      * [元資料架構](/help/assets/metadata-schemas.md)
+      * [Metadata schemas](/help/assets/metadata-schemas.md)
    * 查看、批准和注釋視頻，並維護完整的版本控制
 
       * [注釋視頻](/help/assets/manage-video-assets.md#annotate-video-assets) 或 [注釋資產](/help/assets/manage-digital-assets.md#annotating)
@@ -142,7 +142,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows® devices that suppor
    * 將視頻和影像內容組合在一起的混合媒體查看器。
 
 * 配置視頻播放器以滿足您的品牌推廣需求。
-* 將視頻與您的網站、移動站點或移動應用程式整合，並使用簡單的URL或嵌入代碼。
+* Integrate video to your website, mobile site, or mobile application with a simple URL or embed code.
 
 請參閱 [動態視頻播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) 樣式。
 
@@ -154,19 +154,19 @@ Dynamic MediaHTML5視頻查看器預設是強大的視頻播放器。 您可以�
 
 在播放器的設計端，您可以使用標準Web開發工具設計視頻播放器的功能。 例如，您可以使用HTML5和CSS設計按鈕、控制項和自定義海報影像背景，以幫助您以自定義外觀接觸客戶。
 
-在查看器的播放端，它自動檢測瀏覽器的視頻功能。 然後，它使用HLS(HTTP Live Streaming)（也稱為自適應視頻流）來提供視頻服務。 或者，如果這些傳遞方法不存在，則改用HTML5累進。
+在查看器的播放端，它自動檢測瀏覽器的視頻功能。 然後，它使用HLS(HTTP Live Streaming)（也稱為自適應視頻流）來提供視頻服務。 Or, if those delivery methods are not present then HTML5 progressive is used instead.
 
-可以將使用HTML5和CSS設計回放元件的功能組合到單個播放器中。 它可以有嵌入式回放，並根據瀏覽器的功能使用自適應和漸進式流。 所有這些功能都意味著您可以將您的富媒體內容擴展到案頭用戶和移動用戶，並確保簡化的視頻體驗。
+You can combine into a single player the ability to design the playback components using HTML5 and CSS. It can have embedded playback, and use adaptive and progressive streaming depending on the browser’s capability. All this functionality, means you can extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
 
 另請參閱 [僅Experience Manager Assets觀眾](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) 的 [Dynamic Media觀眾參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)。
 
-### 使用HTML5視頻查看器在台式電腦和移動設備上回放視頻 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Playback of video on desktop computers and mobile devices using the HTML5 video viewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 對於案頭和移動自適應視頻流，用於比特率切換的視頻基於自適應視頻集中的所有MP4視頻。
 
 使用HLS或漸進式視頻下載進行視頻回放。 在以前的Experience Manager版本中，如6.0、6.1和6.2，視頻通過HTTP流式傳輸。
 
-但是，在Experience Manager6.3和上，視頻現在通過HTTPS（即HLS）流式傳輸，因為DM網關服務URL始終也使用HTTPS。 此預設行為不會對客戶產生影響。 即，除非瀏覽器不支援HTTPS，否則視頻流始終會通過HTTPS進行。 （見下表）。 所以，
+但是，在Experience Manager6.3和上，視頻現在通過HTTPS（即HLS）流式傳輸，因為DM網關服務URL始終也使用HTTPS。 There is no customer impact in this default behavior. 即，除非瀏覽器不支援HTTPS，否則視頻流始終會通過HTTPS進行。 (see the following table). Therefore,
 
 * 如果您有一個HTTPS網站，其中包含HTTPS視頻流，則流處理是正常的。
 * 如果HTTP網站具有HTTPS視頻流，則流處理是正常的，並且Web瀏覽器中不存在混合內容問題。
@@ -270,9 +270,9 @@ HLS是Apple的自適應視頻流標準，可根據網路頻寬容量自動調整
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
 * [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
-### 源視頻檔案 {#source-video-files}
+### Source video files {#source-video-files}
 
-對視頻檔案進行編碼時，請使用盡可能高質量的源視頻檔案。 避免使用以前編碼的視頻檔案，因為這些檔案已經壓縮，而進一步編碼會造成質量欠佳的視頻。
+When you encode a video file, use a source video file of the highest possible quality. 避免使用以前編碼的視頻檔案，因為這些檔案已經壓縮，而進一步編碼會造成質量欠佳的視頻。
 
 * Dynamic Media主要支援長度最長為30分鐘、解析度最低大於25 x 25的短格式視頻。
 * 您可以上載每個高達15 GB的主源視頻檔案。
@@ -337,10 +337,10 @@ VBR編碼時間較長，但效果最好；媒體檔案的質量優越。 VBR最�
 
 | 速度(Kbps) | 連接類型 |
 |--- |--- |
-| 256 | 撥號連接。 |
+| 256 | Dial-up connection. |
 | 800 | 典型的移動連接。 對於此連接，針對3G體驗，將資料速率定為400到最大800。 |
-| 2000 | 典型寬頻案頭連接。 對於此連接，以800-2000 Kbps範圍內的資料速率為目標，大多數目標的平均速率為1200-1500 Kbps。 |
-| 5000 | 典型的高寬頻連接。 建議不要在此上限範圍內進行編碼，因為大多數消費者無法以此速度進行視頻傳輸。 |
+| 2000 | 典型寬頻案頭連接。 For this connection, target a data rate in the 800-2000 Kbps range, with most targets averaging 1200-1500 Kbps. |
+| 5000 | 典型的高寬頻連接。 Encoding in this upper range is not recommended because video delivery at this speed is not available to most consumers. |
 
 ### 解析度 {#resolution}
 
@@ -377,7 +377,7 @@ VBR編碼時間較長，但效果最好；媒體檔案的質量優越。 VBR最�
 
 在美國和日本，大多數視頻的拍攝速度是每秒29.97幀(fps);在歐洲，大多數視頻的拍攝速度是25 fps。 影片以24幀/秒的速度拍攝。
 
-選擇與主源視頻檔案的fps速率匹配的視頻編碼預設。 例如，如果主源視頻為25 fps，請選擇一個25 fps的編碼預設。 預設情況下，所有自定義編碼都使用主源視頻檔案的fps。 因此，建立視頻編碼預設時不需要顯式指定fps設定。
+選擇與主源視頻檔案的fps速率匹配的視頻編碼預設。 例如，如果主源視頻為25 fps，請選擇一個25 fps的編碼預設。 By default, all custom encoding uses the primary source video file’s fps. 因此，建立視頻編碼預設時不需要顯式指定fps設定。
 
 ### 視頻編碼維度 {#video-encoding-dimensions}
 
@@ -447,9 +447,6 @@ Google定期更改其用戶介面。 因此，向YouTube發佈視頻的步驟與
 
 1. 在儀表板頁面的右側 **[!UICONTROL Google雲平台]**，選擇「項目」下拉清單以開啟 **[!UICONTROL 選擇項目]** 對話框。
 1. 在 **[!UICONTROL 選擇項目]** 對話框，選擇 **[!UICONTROL 新建項目]**。
-
-   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
 1. 在 **[!UICONTROL 新建項目]** 對話框 **[!UICONTROL 項目名稱]** 的子菜單。
 
    您的項目ID基於您的項目名稱。 因此，仔細選擇項目名稱；建立後無法更改。 此外，以後在Experience Manager中設定YouTube時，必須再次輸入相同的項目ID。 所以，記下來。
@@ -460,8 +457,6 @@ Google定期更改其用戶介面。 因此，向YouTube發佈視頻的步驟與
 
    * 在項目的儀表板上， **[!UICONTROL 入門]** 卡，選擇 **[!UICONTROL 瀏覽和啟用API]**。
    * 在項目的儀表板上， **[!UICONTROL API]** 卡，選擇 **[!UICONTROL 轉到API概述]**。
-
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. 靠近 **[!UICONTROL API和服務]** ，選擇 **[!UICONTROL 啟用API和服務]**。<!-- NEXT STEP BELOW IS STEP 10 -->
 1. 在 **[!UICONTROL API庫]** 頁面，左側，下方 **[!UICONTROL 類別]**&#x200B;選中 **[!UICONTROL YouTube]**。 在頁面右側，選擇 **[!UICONTROL YouTube]**。
@@ -848,7 +843,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 如需進行中的工作流程，請參閱「工具 **[!UICONTROL >工作流程]** >例項」中的「工作流程例 **[!UICONTROL 項」]******。
 
    >[!NOTE]
-   您需要管理權限才能訪問 **[!UICONTROL 工具]** 的子菜單。
+   You need administrative rights to access the **[!UICONTROL Tools]** menu.
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -856,7 +851,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    ![chlimage_1-434](/help/assets/dynamic-media/assets/chlimage_1-434.png)
 
-   在「工作流實例」(Workflow Instances)區域中，您還可以掛起、終止或更名工作流。 請參閱 [管理工作流](/help/sites-cloud/authoring/workflows/overview.md) 的子菜單。
+   From the Workflow Instances area, you can also suspend, terminate, or rename workflows. See [Administer workflows](/help/sites-cloud/authoring/workflows/overview.md) for more information.
 
 1. 有關失敗的作業，請參閱「工具」>「工作流 **[!UICONTROL 程」]** > 「失敗 **[!UICONTROL 」中的「工]** 作流失敗 ****」。「工作 **[!UICONTROL 流失敗]** 」(Workflow Failure)列出所有失敗的工作流活動。
 
@@ -1046,7 +1041,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 Dynamic Media可以將字幕檔案轉換為JSON（JavaScript對象表示法）格式。 此轉換意味著您可以將JSON文本嵌入到網頁中，作為視頻的隱藏但完整的記錄。 然後，搜索引擎可以對內容進行爬網/索引，以使視頻更容易被發現，並為客戶提供有關視頻內容的更多詳細資訊。
 
-請參閱 [服務靜態（非影像）內容](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) 的子菜單。
+See [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) for more information about using the JSON function in a URL.
 
 **向視頻添加字幕或字幕：**
 
@@ -1056,7 +1051,7 @@ Dynamic Media可以將字幕檔案轉換為JSON（JavaScript對象表示法）�
 
    請參閱 [WebVTT:Web視頻字幕資訊格式](https://w3c.github.io/webvtt/)。
 
-   您可以使用免費和高級工具和服務來製作Dynamic Media以外的字幕/字幕檔案。 例如，要建立沒有樣式的簡單視頻標題檔案，可以使用以下免費聯機標題創作和編輯工具：
+   There are both free and premium tools and services that you can use to author caption/subtitle files outside Dynamic Media. 例如，要建立沒有樣式的簡單視頻標題檔案，可以使用以下免費聯機標題創作和編輯工具：
 
    [WebVTT字幕製作](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
@@ -1160,10 +1155,10 @@ Cost-efficient access to rapidly evolving technology.
        <ol>
        <li>導航到 <i>出版 </i>要與上載的章節檔案關聯的視頻資產。 請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。請參閱 <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">發佈資產。</a></li>
        <li>從下拉菜單中，選擇 <strong>查看者</strong>。</li>
-       <li>在左滑軌中，選擇視頻查看器預設名稱。 視頻的預覽在單獨的頁面中開啟。</li>
-       <li>在左滑軌底部，選擇 <strong>嵌入</strong>。</li>
+       <li>In the left rail, select the video viewer preset name. 視頻的預覽在單獨的頁面中開啟。</li>
+       <li>In the left rail, at the bottom, select <strong>Embed</strong>.</li>
        <li>在「嵌入代碼」對話框中，選擇整個代碼並將其複製到剪貼簿，然後將其貼上到簡單的文本編輯器中。</li>
-       <li>使用以下語法添加視頻的嵌入代碼，以便您可以將其與複製的URL關聯到章節檔案：<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt>"</code></li>
+       <li>Append the embed code of the video with the following syntax so you can associate it with the copied URL to your chapter file:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt>"</code></li>
        </ol> </td>
       </tr>
      </tbody>
