@@ -4,9 +4,9 @@ description: 瞭解如何在Dynamic Media使用視頻，如編碼視頻、向You
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: bb04d3bf3b5f4ca9abc12eee2e50b5f3a95ba405
+source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
 workflow-type: tm+mt
-source-wordcount: '9476'
+source-wordcount: '9334'
 ht-degree: 4%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 4%
 
 ## 在Dynamic Media使用視頻 {#working-with-video-in-dynamic-media}
 
-Dynamic Media的視頻是一種端到端解決方案，它使發佈高質量自適應視頻以在多個螢幕上進行流式傳輸變得輕鬆，包括案頭、iOS、Android™、BlackBerry®和Windows®移動設備。 自適應視頻集將以不同比特率和格式（如400 kbps、800 kbps和1000 kbps）編碼的同一視頻的版本分組。 台式電腦或移動設備檢測可用頻寬。
+Dynamic Media的視頻是一種端到端解決方案，它使發佈高質量自適應視頻在多個螢幕（包括台式機、平板電腦和移動設備）上流動變得輕鬆。 自適應視頻集將以不同比特率和格式（如400 kbps、800 kbps和1000 kbps）編碼的同一視頻的版本分組。 台式電腦或移動設備檢測可用頻寬。
 
 例如，在iOS移動設備上，它檢測3G、4G或Wi-Fi等頻寬。 然後，自動從自適應視頻集內的各種視頻比特率中選擇正確編碼的視頻。 視頻被流式傳輸到台式機、移動設備或平板電腦。
 
@@ -128,13 +128,13 @@ Dynamic Media的視頻是一種端到端解決方案，它使發佈高質量自�
 
 * 所有HTML5個視頻查看器中的視頻字幕。
 * 利用完整的元資料支援組織、瀏覽和搜索視頻，以有效管理視頻資產。
-* 將自適應視頻集交付到Web和台式機，以及移動設備，包括iPhone、iPad、Android™、BlackBerry®和Windows®電話。
+* 向Web和台式機、平板電腦和移動設備提供自適應視頻集。
 
 各種iOS平台支援自適應視頻流。 請參閱 [Dynamic Media觀眾參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)。
 
-Dynamic Media支援MP4 H.264視頻的移動視頻播放。 您可以在以下位置找到支援此視頻格式的BlackBerry®設備： [BlackBerry®上支援的視頻格式](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)。
+<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-您可以在以下位置找到支援此視頻格式的Windows®設備 [Windows® Phone上支援的視頻格式](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)。
+OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows® devices that support this video format at the following [Supported video formats on Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 * 使用Dynamic Media視頻查看器預設回放視頻，包括：
 
@@ -239,13 +239,15 @@ HLS是Apple的自適應視頻流標準，可根據網路頻寬容量自動調整
    <td>克羅姆語(iOS)</td>
    <td>合肥光源</td>
   </tr>
-  <tr>
-   <td>行動</td>
-   <td>BlackBerry®</td>
-   <td>合肥光源</td>
-  </tr>
  </tbody>
 </table>
+
+<!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
+   <td>Mobile</td>
+   <td>BlackBerry®</td>
+   <td>HLS</td>
+  </tr>
+ -->
 
 ## Dynamic Media視頻解決方案的體系結構 {#architecture-of-dynamic-media-video-solution}
 
@@ -436,21 +438,19 @@ Google定期更改其用戶介面。 因此，向YouTube發佈視頻的步驟與
 **配置Google雲設定：**
 
 1. 建立Google帳戶。
-   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
-
-   如果您已擁有Google帳戶，請跳至下一步。
+   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
 
 1. 轉到 [https://cloud.google.com/](https://cloud.google.com/)。
 1. 在Google雲頁面右上角附近，選擇 **[!UICONTROL 控制台]**。
 
    如有必要， **[!UICONTROL 登錄]** 使用你的Google帳戶憑據查看 **[!UICONTROL 控制台]** 的雙曲餘切值。
 
-1. 在儀表板頁面的右側 **[!UICONTROL Google雲平台]**，選擇「項目」下拉清單以開啟「選擇項目」對話框。
-1. 在「選擇項目」對話框中，選擇 **[!UICONTROL 新建項目]**。
+1. 在儀表板頁面的右側 **[!UICONTROL Google雲平台]**，選擇「項目」下拉清單以開啟 **[!UICONTROL 選擇項目]** 對話框。
+1. 在 **[!UICONTROL 選擇項目]** 對話框，選擇 **[!UICONTROL 新建項目]**。
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
-1. 在「新建項目」對話框的「項目名稱」欄位中，鍵入新項目的名稱。
+1. 在 **[!UICONTROL 新建項目]** 對話框 **[!UICONTROL 項目名稱]** 的子菜單。
 
    您的項目ID基於您的項目名稱。 因此，仔細選擇項目名稱；建立後無法更改。 此外，以後在Experience Manager中設定YouTube時，必須再次輸入相同的項目ID。 所以，記下來。
 
@@ -458,72 +458,71 @@ Google定期更改其用戶介面。 因此，向YouTube發佈視頻的步驟與
 
 1. 執行下列任一操作：
 
-   * 在項目的儀表板上，在「入門」卡中，選擇 **[!UICONTROL 瀏覽和啟用API]**。
-   * 在項目的儀表板中，在API卡中，選擇 **[!UICONTROL 轉到API概述]**。
+   * 在項目的儀表板上， **[!UICONTROL 入門]** 卡，選擇 **[!UICONTROL 瀏覽和啟用API]**。
+   * 在項目的儀表板上， **[!UICONTROL API]** 卡，選擇 **[!UICONTROL 轉到API概述]**。
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. 在「APIs &amp;服務」頁的頂部附近，選擇 **[!UICONTROL 啟用API和服務]**。
-1. 在「API庫」頁的左側，在 **[!UICONTROL 類別]**&#x200B;選中 **[!UICONTROL YouTube]**。 在頁面右側，選擇 **[!UICONTROL YouTube資料API]**。
-1. 在「YouTube資料API v3」頁上，選擇 **[!UICONTROL 啟用]**。
+1. 靠近 **[!UICONTROL API和服務]** ，選擇 **[!UICONTROL 啟用API和服務]**。<!-- NEXT STEP BELOW IS STEP 10 -->
+1. 在 **[!UICONTROL API庫]** 頁面，左側，下方 **[!UICONTROL 類別]**&#x200B;選中 **[!UICONTROL YouTube]**。 在頁面右側，選擇 **[!UICONTROL YouTube]**。
+1. 在 **[!UICONTROL YouTube]** ，選擇 **[!UICONTROL YouTube資料API v3]**。
+1. 在 **[!UICONTROL YouTube資料API v3]** ，選擇 **[!UICONTROL 管理]**。
 
-   ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
+   ![6_5_googleaccount-apis manage](assets/6_5_googleaccount-apis-manage.png)
 
-1. 要使用API，需要憑據。 如有必要，請選擇 **[!UICONTROL 建立憑據]**。
+1. 要使用API，需要憑據。 如有必要，在「APIs &amp; Services」頁的左側，選擇 **[!UICONTROL 憑據]**。
 
-   ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
+1. 在「憑據」頁面頂部附近，選擇 **[!UICONTROL 建立憑據]**，然後選擇 **[!UICONTROL OAuth客戶端ID]**。
 
-1. 在 **[!UICONTROL 向項目添加憑據]** 頁面，步驟1，執行以下操作：
+1. 在 **[!UICONTROL 建立OAuth客戶端ID]** 的 **[!UICONTROL 應用程式類型]** 下拉清單，選擇 **[!UICONTROL Web應用程式]**。
 
-   * 從 **[!UICONTROL 您正在使用哪個API?]** 下拉清單，選擇 **[!UICONTROL YouTube資料API v3]**。
+   ![6_5_googleaccount-apis應用程式類型](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
 
-   * 從 **[!UICONTROL 您從何處調用API?]** 下拉清單，選擇 **[!UICONTROL Web伺服器（例如，node.js、Tomcat）]**。
+1. 執行下列操作之一：
 
-   * 從 **[!UICONTROL 您正在訪問哪些資料？]** 下拉清單，選擇 **[!UICONTROL 用戶資料]**。
+   * 在 **[!UICONTROL 名稱]** 欄位，輸入OAuth 2.0客戶端的唯一名稱。
+   * 使用Google已在 **[!UICONTROL 名稱]** 的子菜單。
 
-   ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
+1. 在 **[!UICONTROL 已授權的JavaScript源]** 標題，選擇 **[!UICONTROL 添加URI]**。
 
-1. 選擇 **[!UICONTROL 我需要什麼憑證？]**
-1. 在「 **[!UICONTROL 新增認證至您的專案]** 」頁面的「建立OAuth 2.0用戶端ID **** 」標題下，視需要在「名稱」欄位中輸入唯一名稱。或者，您可以使用Google指定的預設名稱。
-1. 在 **[!UICONTROL 已授權的JavaScript源]** 標題，在文本欄位中，輸入以下路徑，替換路徑中的域和埠號，然後按 **[!UICONTROL 輸入]** 將路徑添加到清單：
+   ![6_5_googleaccount-apis-nameauthorizations](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-nameauthorizations.png)
+
+1. 在 **[!UICONTROL URI]** 文本欄位，輸入以下路徑，替換路徑中的域和埠號，然後按 **[!UICONTROL 輸入]** 將路徑添加到清單：
 
    `https://<servername.domain>:<port_number>`
 
    例如， `https://1a2b3c.mycompany.com:4321`
 
-   **注釋**:以上路徑示例僅供說明之用。
+   >[!IMPORTANT]
+   >
+   >上面的示例路徑是假設路徑，僅供說明之用。
 
-   ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
+1. 在 **[!UICONTROL 授權重定向URI]** 標題，選擇「添加URI」。
 
-1. 在 **[!UICONTROL 授權重定向URI]** 標題，在文本欄位中，輸入以下路徑，替換路徑中的域和埠號，然後按 **[!UICONTROL 輸入]** 將路徑添加到清單：
+1. 在 **[!UICONTROL URI]** 文本欄位，輸入以下路徑，替換路徑中的域和埠號，然後按 **[!UICONTROL 輸入]** 將路徑添加到清單：
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    例如， `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **注釋**:上面的路徑示例僅供說明之用。
+   >[!IMPORTANT]
+   >
+   >上面的示例路徑是假設路徑，僅供說明之用。
 
-1. 選擇 **[!UICONTROL 建立OAuth客戶端ID]**。
-1. 在「 **[!UICONTROL 新增認證至您的專案]****** 」頁面的「設定OAuth 2.0同意書」畫面標題下方，選取您目前使用的Gmail電子郵件地址。
+1. 靠近 **[!UICONTROL 建立OAuth客戶端ID]** ，選擇 **[!UICONTROL 建立]**。
 
-   ![6_5_googleaccount-apis-createcredentials-consference螢幕](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
+1. 在 **[!UICONTROL 已建立OAuth客戶端]** 對話框，執行以下操作：
 
-1. 在 **[!UICONTROL 顯示給用戶的產品名稱]** 標題，在文本欄位中，輸入要在同意螢幕上顯示的內容。
+   * （可選）複製您的客戶端ID和客戶端密碼並保存。
+   * 選擇 **[!UICONTROL 下載JSON]**，然後保存JSON檔案。
 
-   當Experience Manager管理員對YouTube進行身份驗證時，將顯示同意螢幕。 Experience Manager聯繫YouTube請其允許。
+   稍後在Adobe Experience Manager設定YouTube時，需要此下載的JSON檔案。
 
-1. 選擇 **[!UICONTROL 繼續]**。
-1. 在「將憑據添加到項目」頁中，步驟4位於 **[!UICONTROL 下載憑據]** 標題，選擇 **[!UICONTROL 下載]**。
+   ![已建立6_5_googleaccount-apis oauthclient](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
 
-   ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
+1. 在 **[!UICONTROL 已建立OAuth客戶端]** 對話框，選擇 **[!UICONTROL 確定]**。
 
-1. 保存 `client_id.json` 的子菜單。
-
-   稍後在Adobe Experience Manager設定YouTube時，您需要此下載的json檔案。
-
-1. 選擇 **[!UICONTROL 完成]**。
-
-   註銷你的Google帳戶。 現在建立一個YouTube頻道。
+1. 註銷你的Google帳戶。 現在建立一個YouTube頻道。
 
 ### 建立YouTube頻道 {#creating-a-youtube-channel}
 
