@@ -1,243 +1,243 @@
 ---
-title: Video in Dynamic Media
-description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, viewing video reports, and adding closed captioning, subtitles, or chapter markers to videos.
+title: Dynamic Media視頻
+description: 瞭解如何在Dynamic Media使用視頻，如編碼視頻、向YouTube發佈視頻、查看視頻報告以及向視頻添加隱藏字幕、字幕或章節標籤的最佳做法。
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 22588f102f5b388d6da3a8aae124c30288ecb0a5
+source-git-commit: e1f0b04dde2eb5a3392a0b9befbc56135b06cff4
 workflow-type: tm+mt
-source-wordcount: '9346'
+source-wordcount: '9361'
 ht-degree: 4%
 
 ---
 
 # 影片 {#video}
 
-This section describes working with video in Dynamic Media.
+本節介紹在Dynamic Media使用視頻。
 
-## Quick Start: Videos {#quick-start-videos}
+## 快速啟動：視頻 {#quick-start-videos}
 
-The following step-by-step workflow description is designed to help you get up and running quickly with adaptive video sets in Dynamic Media. After each step is cross-references to topic headings where you can find more information.
+下面的逐步工作流描述旨在幫助您快速啟動並運行Dynamic Media的自適應視頻集。 每個步驟之後都是主題標題的交叉引用，您可以在其中找到詳細資訊。
 
 >[!NOTE]
 >
->Before you work with video in Dynamic Media, make sure that your Adobe Experience Manager administrator has already enabled and configured Dynamic Media Cloud Services.
+>在Dynamic Media處理視頻之前，請確保您的Adobe Experience Manager管理員已啟用並配置了Dynamic MediaCloud Services。
 >
->* [](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)[](/help/assets/dynamic-media/troubleshoot-dm.md)
+>* 請參閱 [配置Dynamic MediaCloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) 配置Dynamic Media和 [排除Dynamic Media故障](/help/assets/dynamic-media/troubleshoot-dm.md)。
 >
 
 
-1. ****
+1. **上傳你的Dynamic Media視頻** 執行以下操作：
 
-   * Create your own video encoding profile. __
+   * 建立您自己的視頻編碼配置檔案。 或者，您只需使用預定義的 _自適應視頻編碼_ Dynamic Media的檔案。
 
-      * [](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)
-      * [](#best-practices-for-encoding-videos)
-   * Associate the video processing profile to one or more folders where you are going to upload your primary source videos.
+      * [建立視頻編碼配置檔案](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
+      * 瞭解有關 [視頻編碼的最佳做法](#best-practices-for-encoding-videos)。
+   * 將視頻處理配置檔案關聯到一個或多個資料夾，以上載主源視頻。
 
-      * [](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)
-      * [](/help/assets/organize-assets.md)
-   * Upload your primary source videos to the folders. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
+      * [將視頻配置檔案應用於資料夾](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
+      * 瞭解有關 [組織數字資產](/help/assets/organize-assets.md)。
+   * 將主源視頻上載到資料夾。 將視頻添加到資料夾時，會根據分配給資料夾的視頻處理配置檔案對它們進行編碼。
 
-      * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 x 25.
-      * You can upload video files that are up to 15 GB each.
-      * [](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)
-      * [](/help/assets/file-format-support.md)
-   * [](#monitoring-video-encoding-and-youtube-publishing-progress)
-
-
+      * Dynamic Media主要支援長度最長為30分鐘、解析度最低大於25 x 25的短格式視頻。
+      * 您可以上傳每個高達15 GB的視頻檔案。
+      * [上傳視頻](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
+      * 瞭解有關 [支援的輸入檔案格式](/help/assets/file-format-support.md)。
+   * 監視方式 [視頻編碼正在進行](#monitoring-video-encoding-and-youtube-publishing-progress) 從資產或工作流視圖。
 
 
-1. ****
 
-   * Organize, browse, and search video assets
 
-      * [Organize digital assets](/help/assets/organize-assets.md)
-      * [](/help/assets/search-assets.md#custompredicates)[](/help/assets/manage-digital-assets.md#search-assets)
-   * Preview and publish video assets
+1. **管理您的Dynamic Media視頻** 執行下列任一操作：
 
-      * View the source video and encoded renditions of the video along with its associated thumbnails:
-         [](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)[](/help/assets/dynamic-media/previewing-assets.md)
-         [](/help/assets/manage-digital-assets.md#managing-renditions)
+   * 組織、瀏覽和搜索視頻資產
 
-      * [Manage viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md)
-      * [Publishing assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-   * Work with video metadata
+      * [組織數字資產](/help/assets/organize-assets.md)
+      * [搜索視頻資產](/help/assets/search-assets.md#custompredicates) 或 [搜索資產](/help/assets/manage-digital-assets.md#search-assets)
+   * 預覽和發佈視頻資產
 
-      * Edit the properties of video such as the title, description, and tags, custom metadata fields:
-         [](/help/assets/manage-digital-assets.md#editing-properties)
+      * 查看視頻的源視頻和編碼格式副本及其關聯的縮略圖：
+         [預覽視頻](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 或 [預覽資產](/help/assets/dynamic-media/previewing-assets.md)
+         [管理視頻格式副本](/help/assets/manage-digital-assets.md#managing-renditions)
 
-      * [Managing metadata for digital assets](/help/assets/manage-metadata.md)
-      * [Metadata schemas](/help/assets/metadata-schemas.md)
-   * Review, approve, and annotate videos, and maintain full version control
+      * [管理查看器預設](/help/assets/dynamic-media/managing-viewer-presets.md)
+      * [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   * 使用視頻元資料
 
-      * [](/help/assets/manage-video-assets.md#annotate-video-assets)[](/help/assets/manage-digital-assets.md#annotating)
+      * 編輯視頻的屬性，如標題、說明和標籤、自定義元資料欄位：
+         [編輯視頻屬性](/help/assets/manage-digital-assets.md#editing-properties)
 
-      * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-      * [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+      * [管理數字資產的元資料](/help/assets/manage-metadata.md)
+      * [元資料架構](/help/assets/metadata-schemas.md)
+   * 查看、批准和注釋視頻，並維護完整的版本控制
 
-      * [Review folder assets](/help/assets/bulk-approval.md)
+      * [注釋視頻](/help/assets/manage-video-assets.md#annotate-video-assets) 或 [注釋資產](/help/assets/manage-digital-assets.md#annotating)
+
+      * [建立版本](/help/assets/manage-digital-assets.md#asset-versioning)
+      * [啟動資產的工作流](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+
+      * [審閱資料夾資產](/help/assets/bulk-approval.md)
       * [專案](/help/sites-cloud/authoring/projects/overview.md)
 
 
 
 
-1. ****
+1. **發佈你的Dynamic Media視頻** 執行下列操作之一：
 
-   * If you use Experience Manager as your WCM (Web Content Management) system, you can add videos directly to your web pages.
+   * 如果將Experience Manager用作WCM（Web內容管理）系統，則可以直接將視頻添加到網頁。
 
-      * [](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-   * If you are using a third-party web content management system, you can link or embed videos to your web pages.
+      * [將視頻添加到網頁](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+   * 如果您使用第三方Web內容管理系統，則可以將視頻連結或嵌入到您的網頁。
 
-      * Integrate video using URL:
-         [](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+      * 使用URL整合視頻：
+         [將URL連結到Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。
 
-      * Integrate video using embed code on web page:
-         [](/help/assets/dynamic-media/embed-code.md)
-   * [](#publishing-videos-to-youtube)
-   * [](#viewing-video-reports)
+      * 使用網頁上的嵌入代碼整合視頻：
+         [將視頻查看器嵌入網頁](/help/assets/dynamic-media/embed-code.md)。
+   * [將視頻發佈到YouTube](#publishing-videos-to-youtube)。
+   * [生成視頻報告](#viewing-video-reports)。
 
-   * [](#adding-captions-to-video)
+   * [將字幕添加到視頻](#adding-captions-to-video)。
 
 
 
-## Work with video in Dynamic Media {#working-with-video-in-dynamic-media}
+## 在Dynamic Media使用視頻 {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media is an end-to-end solution that makes it easy to publish high-quality Adaptive Video for streaming across multiple screens, including desktops, tablets, and mobile devices. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. The desktop computer or mobile device detects the available bandwidth.
+Dynamic Media的視頻是一種端到端解決方案，它使發佈高質量自適應視頻在多個螢幕（包括台式機、平板電腦和移動設備）上流動變得輕鬆。 自適應視頻集將以不同比特率和格式（如400 kbps、800 kbps和1000 kbps）編碼的同一視頻的版本分組。 台式電腦或移動設備檢測可用頻寬。
 
-For example, on an iOS mobile device, it detects a bandwidth such as 3G, 4G, or Wi-Fi. Then, it automatically selects the right encoded video from among the various video bit rates within the Adaptive Video Set. The video is streamed to desktops, mobile devices, or tablets.
+例如，在iOS移動設備上，它檢測3G、4G或Wi-Fi等頻寬。 然後，自動從自適應視頻集內的各種視頻比特率中選擇正確編碼的視頻。 視頻被流式傳輸到台式機、移動設備或平板電腦。
 
-In addition, video quality is dynamically switched automatically if network conditions change on the desktop or on the mobile device. Also, if a customer enters full-screen mode on a desktop, the Adaptive Video Set responds by using a better resolution, improving the customer’s viewing experience. Using Adaptive Video Sets provides you with the best possible playback for customers playing Dynamic Media video on multiple screens and devices.
+此外，如果案頭或移動設備上的網路狀況發生變化，則自動切換視頻質量。 此外，如果客戶在案頭上進入全屏模式，自適應視頻集會通過使用更好的解析度來響應，從而改善客戶的觀看體驗。 使用自適應視頻集為客戶在多個螢幕和設備上播放Dynamic Media視頻提供了最佳的可回放。
 
-The logic that a video player uses to determine which encoded video to play or to select during playback is based on the following algorithm:
+視頻播放器用於確定在回放期間播放或選擇哪些編碼視頻的邏輯基於以下算法：
 
-1. Video player loads the initial video fragment based on the bit rate that is closest to the value that is set for &quot;initial bitrate&quot; in the player itself.
-1. Video player switches based on changes to the bandwidth speed using the following criteria:
+1. 視頻播放器基於與在播放器本身中為「初始比特率」設定的值最接近的比特率來載入初始視頻片段。
+1. 視頻播放器根據頻寬速度的更改使用以下標準進行切換：
 
-   1. Player picks the highest bandwidth stream below or equal to the estimated bandwidth.
-   1. Player considers only 80% of the available bandwidth. However, if it is switching up, it is more conservative at only 70% to avoid overestimating and immediately switching back.
+   1. 播放器選擇低於或等於估計頻寬的最高頻寬流。
+   1. 玩家只考慮80%的可用頻寬。 但是，如果換了，就比較保守，只有70%，避免高估，立即換回。
 
-[](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
+有關算法的詳細技術資訊，請參見 [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-For managing single video and Adaptive Video Sets, the following is supported:
+對於管理單個視頻和自適應視頻集，支援以下操作：
 
-* Uploading video from numerous supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
+* 從多種支援的視頻格式和音頻格式上傳視頻，並將視頻編碼為MP4 H.264格式，以便在多個螢幕上播放。 可以使用預定義的自適應視頻預設、單個視頻編碼預設或自定義自己的編碼來控制視頻的質量和大小。
 
-   * When an adaptive video set is generated, it includes MP4 videos.
-   * ****
+   * 當生成自適應視頻集時，它包括MP4視頻。
+   * **注釋**:主/源視頻未添加到自適應視頻集。
 
-* Video captioning in all HTML5 video viewers.
-* Organize, browse, and search video with full metadata support for efficient management of video assets.
-* Deliver Adaptive Video Sets to the web and desktops, tablets, and mobile devices.
+* 所有HTML5個視頻查看器中的視頻字幕。
+* 利用完整的元資料支援組織、瀏覽和搜索視頻，以有效管理視頻資產。
+* 向Web和台式機、平板電腦和移動設備提供自適應視頻集。
 
-Adaptive video streaming is supported on various iOS platforms. [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)
+各種iOS平台支援自適應視頻流。 請參閱 [Dynamic Media觀眾參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)。
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows® devices that support this video format at the following [Supported video formats on Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
-* Play back the video using Dynamic Media Video Viewer Presets, including the following:
+* 使用Dynamic Media視頻查看器預設回放視頻，包括：
 
-   * Single video viewers.
-   * Mixed Media viewers that combine both video and image content.
+   * 單個視頻觀看器。
+   * 將視頻和影像內容組合在一起的混合媒體查看器。
 
-* Configure video players to meet your branding needs.
-* Integrate video to your website, mobile site, or mobile application with a simple URL or embed code.
+* 配置視頻播放器以滿足您的品牌推廣需求。
+* 將視頻與您的網站、移動站點或移動應用程式整合，並使用簡單的URL或嵌入代碼。
 
-[](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)
+請參閱 [動態視頻播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) 樣式。
 
-[](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)[](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)[](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)
+另請參閱 [Experience Manager Assets和Dynamic Media Classic觀眾](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) 和 [僅Experience Manager Assets觀眾](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) 的 [Dynamic Media觀眾參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)。
 
-## Best practice: Using the HTML5 video viewer {#best-practice-using-the-html-video-viewer}
+## 最佳做法：使用HTML5視頻查看器 {#best-practice-using-the-html-video-viewer}
 
-The Dynamic Media HTML5 Video viewer presets are robust video players. You can use them to avoid many common issues that are associated with HTML5 video playback and issues associated with mobile devices. For example, a lack of adaptive streaming delivery and limited desktop browser reach.
+Dynamic MediaHTML5視頻查看器預設是強大的視頻播放器。 您可以使用它們來避免許多與HTML5視頻播放相關的常見問題和與移動設備相關的問題。 例如，缺少自適應流傳輸和案頭瀏覽器訪問限制。
 
-On the design side of the player, you can design the video player’s functionality using standard web development tools. For example, you can design the buttons, controls, and custom poster image background using HTML5 and CSS to help you reach your customers with a customized appearance.
+在播放器的設計端，您可以使用標準Web開發工具設計視頻播放器的功能。 例如，您可以使用HTML5和CSS設計按鈕、控制項和自定義海報影像背景，以幫助您以自定義外觀接觸客戶。
 
-On the playback side of the viewer, it automatically detects the browser’s video capability. It then serves the video using HLS (HTTP Live Streaming), also known as adaptive video streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
+在查看器的播放端，它自動檢測瀏覽器的視頻功能。 然後，它使用HLS(HTTP Live Streaming)（也稱為自適應視頻流）來提供視頻服務。 或者，如果這些傳遞方法不存在，則改用HTML5累進。
 
-You can combine into a single player the ability to design the playback components using HTML5 and CSS. It can have embedded playback, and use adaptive and progressive streaming depending on the browser’s capability. All this functionality, means you can extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
+可以將使用HTML5和CSS設計回放元件的功能組合到單個播放器中。 它可以有嵌入式回放，並根據瀏覽器的功能使用自適應和漸進式流。 所有這些功能都意味著您可以將您的富媒體內容擴展到案頭用戶和移動用戶，並確保簡化的視頻體驗。
 
-[](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)[](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)
+另請參閱 [僅Experience Manager Assets觀眾](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) 的 [Dynamic Media觀眾參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)。
 
-### Playback of video on desktop computers and mobile devices using the HTML5 video viewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### 使用HTML5視頻查看器在台式電腦和移動設備上回放視頻 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
-For desktop and mobile adaptive video streaming, the videos used for bit rate switching are based on all MP4 videos in the Adaptive Video Set.
+對於案頭和移動自適應視頻流，用於比特率切換的視頻基於自適應視頻集中的所有MP4視頻。
 
-Video playback occurs using either HLS or progressive video download. In prior versions of Experience Manager, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP.
+使用HLS或漸進式視頻下載進行視頻回放。 在以前的Experience Manager版本中，如6.0、6.1和6.2，視頻通過HTTP流式傳輸。
 
-However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. (see the following table). Therefore,
+但是，在Experience Manager6.3和上，視頻現在通過HTTPS（即HLS）流式傳輸，因為DM網關服務URL始終也使用HTTPS。 此預設行為不會對客戶產生影響。 即，除非瀏覽器不支援HTTPS，否則視頻流始終會通過HTTPS進行。 （見下表）。 所以，
 
-* If you have an HTTPS website with HTTPS video streaming, streaming is fine.
-* If you have an HTTP website with HTTPS video streaming, streaming is fine and there are no mixed content issues from the web browser.
+* 如果您有一個HTTPS網站，其中包含HTTPS視頻流，則流處理是正常的。
+* 如果HTTP網站具有HTTPS視頻流，則流處理是正常的，並且Web瀏覽器中不存在混合內容問題。
 
-HLS is an Apple standard for adaptive video streaming that automatically adjusts playback based on network bandwidth capacity. It also lets the customer “seek” to any point in the video without the need to wait for the rest of the video to download.
+HLS是Apple的自適應視頻流標準，可根據網路頻寬容量自動調整回放。 它還讓客戶可以「查找」視頻中的任何點，而無需等待視頻的其餘部分下載。
 
-Progressive video is delivered by downloading and storing the video locally on a user’s desktop system or mobile device.
+通過在用戶的案頭系統或移動設備上本地下載和儲存視頻來傳送漸進視頻。
 
-[](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video)
+下表介紹了在台式電腦和移動設備上使用 [Dynamic MediaHTML5視頻查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video)。
 
 <table>
  <tbody>
   <tr>
    <td><strong>裝置</strong></td>
    <td><strong>瀏覽器</strong></td>
-   <td><strong>Video playback mode</strong></td>
+   <td><strong>視頻播放模式</strong></td>
   </tr>
   <tr>
    <td>桌面</td>
-   <td>Internet Explorer 9 and 10</td>
-   <td>Progressive download.</td>
+   <td>Internet Explorer 9和10</td>
+   <td>逐步下載。</td>
   </tr>
   <tr>
    <td>桌面</td>
    <td>Internet Explorer 11+</td>
-   <td>On Windows® 8 and Windows® 10 - Force use of HTTPS whenever HLS is requested. <br /><br />Uses standard logic for selecting HTTP versus HTTPS protocol.</td>
+   <td>在Windows® 8和Windows® 10上 — 只要請求HLS，就強制使用HTTPS。 已知限制：HLS上的HTTP在此瀏覽器/作業系統組合中不工作<br /> <br /> 在Windows® 7上 — 漸進式下載。 使用標準邏輯選擇HTTP與HTTPS協定。</td>
   </tr>
   <tr>
    <td>桌面</td>
-   <td>Firefox 23-44</td>
-   <td>Progressive download.</td>
+   <td>火狐23-44</td>
+   <td>逐步下載。</td>
   </tr>
   <tr>
    <td>桌面</td>
-   <td>Firefox 45 or later</td>
-   <td>HLS</td>
+   <td>Firefox 45或更高版本</td>
+   <td>合肥光源</td>
   </tr>
   <tr>
    <td>桌面</td>
-   <td>Chrome</td>
-   <td>HLS</td>
+   <td>鉻</td>
+   <td>合肥光源</td>
   </tr>
   <tr>
    <td>桌面</td>
-   <td>Safari (Mac)</td>
-   <td>HLS</td>
+   <td>薩法里(Mac)</td>
+   <td>合肥光源</td>
   </tr>
   <tr>
    <td>行動</td>
-   <td>Chrome (Android™ 6 or earlier)</td>
-   <td>Progressive download.</td>
+   <td>Chrome（Android™ 6或更早版本）</td>
+   <td>逐步下載。</td>
   </tr>
   <tr>
    <td>行動</td>
-   <td>Chrome (Android™ 7 or later)</td>
-   <td>HLS</td>
+   <td>Chrome（Android™ 7或更高版本）</td>
+   <td>合肥光源</td>
   </tr>
   <tr>
    <td>行動</td>
-   <td>Android™ (default browser)</td>
-   <td>Progressive download.</td>
+   <td>Android™（預設瀏覽器）</td>
+   <td>逐步下載。</td>
   </tr>
   <tr>
    <td>行動</td>
-   <td>Safari (iOS)</td>
-   <td>HLS</td>
+   <td>薩法里(iOS)</td>
+   <td>合肥光源</td>
   </tr>
   <tr>
    <td>行動</td>
-   <td>Chrome (iOS)</td>
-   <td>HLS</td>
+   <td>克羅姆語(iOS)</td>
+   <td>合肥光源</td>
   </tr>
  </tbody>
 </table>
@@ -249,242 +249,240 @@ Progressive video is delivered by downloading and storing the video locally on a
   </tr>
  -->
 
-## Architecture of Dynamic Media video solution {#architecture-of-dynamic-media-video-solution}
+## Dynamic Media視頻解決方案的體系結構 {#architecture-of-dynamic-media-video-solution}
 
-The following graphic shows the overall authoring workflow of videos that are uploaded and encoded by way of DMGateway (in Dynamic Media Hybrid mode) and made available for public consumption.
+下圖顯示了通過DMGateway(在Dynamic Media混合模式下)上傳和編碼並供公眾使用的視頻的總體創作工作流程。
 
-![](assets/chlimage_1-427.png)
+![chlimage_1-427](assets/chlimage_1-427.png)
 
-## Hybrid publishing architecture for videos {#hybrid-publishing-architecture-for-videos}
+## 用於視頻的混合發佈體系結構 {#hybrid-publishing-architecture-for-videos}
 
-![](assets/chlimage_1-428.png)
+![chlimage_1-428](assets/chlimage_1-428.png)
 
-## Best practices for encoding videos {#best-practices-for-encoding-videos}
+## 編碼視頻的最佳做法 {#best-practices-for-encoding-videos}
 
-****&#x200B;此工作流程會擷取工作流程處理歷程記錄和失敗資訊。[](#monitoring-video-encoding-and-youtube-publishing-progress)********
+的 **Dynamic Media編碼視頻** 如果啟用了Dynamic Media並設定視頻Cloud Services，則工作流會對視頻進行編碼。 此工作流程會擷取工作流程處理歷程記錄和失敗資訊。請參閱 [監視視頻編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。 如果您啟用了Dynamic Media並設定視頻Cloud Services, **[!UICONTROL Dynamic Media編碼視頻]** 當您上載視頻時，工作流將自動生效。 (如果你不用Dynamic Media, **[!UICONTROL DAM更新資產]** 工作流生效。)
 
-The following are best-practice tips for encoding source video files.
+以下是對源視頻檔案進行編碼的最佳做法提示。
 
 <!-- For advice about video encoding, see the following:
 
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
 * [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
-### Source video files {#source-video-files}
+### 源視頻檔案 {#source-video-files}
 
-When you encode a video file, use a source video file of the highest possible quality. Avoid using previously encoded video files because these files are already compressed, and further encoding creates a subpar quality video.
+對視頻檔案進行編碼時，請使用盡可能高質量的源視頻檔案。 避免使用以前編碼的視頻檔案，因為這些檔案已經壓縮，而進一步編碼會造成質量欠佳的視頻。
 
-* Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 x 25.
-* You can upload primary source video files that are up to 15 GB each.
+* Dynamic Media主要支援長度最長為30分鐘、解析度最低大於25 x 25的短格式視頻。
+* 您可以上載每個高達15 GB的主源視頻檔案。
 
-The following table describes the recommended size, aspect ratio, and minimum bit rate that your source video files must have before you encode them:
+下表介紹了在對源視頻檔案進行編碼之前必須具有的建議大小、長寬比和最小比特率：
 
-| 大小 | 外觀比例 | Minimum bit rate |
+| 大小 | 外觀比例 | 最小比特率 |
 |--- |--- |--- |
-| 1024 X 768 | 4:3 | 4500 kbps for most videos. |
-| 1280 X 720 | 16:9 | 3000 - 6000 kbps, depending on the amount of motion in the video. |
-| 1920 X 1080 | 16:9 | 6000 - 8000 kbps, depending on the amount of motion in the video. |
+| 1024 X 768 | 4:3 | 4500 kbps，用於大多數視頻。 |
+| 1280 X 720 | 16:9 | 3000 - 6000 kbps，具體取決於視頻中的運動量。 |
+| 1920 X 1080 | 16:9 | 6000 - 8000 kbps，具體取決於視頻中的運動量。 |
 
-### Obtain a file&#39;s metadata {#obtaining-a-file-s-metadata}
+### 獲取檔案的元資料 {#obtaining-a-file-s-metadata}
 
-You can obtain a file’s metadata by viewing its metadata using a video editing tool, or using an application designed for obtaining metadata. Following are instructions for using MediaInfo, a third-party application, to obtain a video file’s metadata:
+您可以通過使用視頻編輯工具查看檔案的元資料，或使用設計用於獲取元資料的應用程式來獲取檔案的元資料。 以下是使用第三方應用程式MediaInfo獲取視頻檔案元資料的說明：
 
-1. [](https://mediaarea.net/en/MediaInfo/Download)
-1. Select and download the installer for the GUI version, and follow the installation instructions.
-1. After installation, either right-click the video file (Windows® only) and select MediaInfo, or open MediaInfo and drag your video file into the application. You see all metadata associated with your video file, including its width, height, and fps.
+1. 轉到 [MediaInfo下載](https://mediaarea.net/en/MediaInfo/Download)。
+1. 選擇並下載GUI版本的安裝程式，並按照安裝說明進行操作。
+1. 安裝後，按一下右鍵視頻檔案（僅限Windows®）並選擇「MediaInfo」，或開啟MediaInfo並將視頻檔案拖到應用程式中。 您可以看到與視頻檔案關聯的所有元資料，包括其寬度、高度和fps。
 
 ### 外觀比例 {#aspect-ratio}
 
-When you choose or create a video encoding preset for your primary source video file, make sure that the preset has the same aspect ratio as the primary source video file. The aspect ratio is the ratio of the width to the height of the video.
+選擇或為主源視頻檔案建立視頻編碼預設時，請確保預設具有與主源視頻檔案相同的長寬比。 縱橫比是視頻寬度與高度的比值。
 
-To determine the aspect ratio of a video file, obtain the file’s metadata and note the file’s width and height (see Obtaining a file&#39;s metadata above). Then use this formula to determine the aspect ratio:
+要確定視頻檔案的長寬比，請獲取檔案的元資料並記錄檔案的寬度和高度（請參閱上面的獲取檔案的元資料）。 然後使用此公式確定縱橫比：
 
-width/height = aspect ratio
+寬高=寬高比
 
-The following table describes how formula results translate to common aspect ratio choices:
+下表說明公式結果如何轉換為通用縱橫比選擇：
 
-| Formula result | 外觀比例 |
+| 公式結果 | 外觀比例 |
 |--- |--- |
 | 1.33 | 4:3 |
-| 0.75 | 3:4 |
-| 1.78 | 16:9 |
-| 0.56 | 9:16 |
+| 零點七五 | 3:4 |
+| 一點七八 | 16:9 |
+| 0.56 | 9時16分 |
 
-For example, a video that is 1440 width x 1080 height has an aspect ratio of 1440/1080, or 1.33. In this case, you choose a video encoding preset with a 4:3 aspect ratio to encode the video file.
+例如，寬度為1440 x 1080的視頻的寬高比為1440/1080或1.33。在這種情況下，您選擇具有4:3長寬比的視頻編碼預設來編碼視頻檔案。
 
 ### 位元速率 {#bitrate}
 
-Bitrate is the amount of data that is encoded to make up a single second of video playback. The bitrate is measured in kilobits per second (Kbps).
+比特率是編碼的資料量，它構成視頻回放的一秒鐘。 比特率以千位每秒(Kbps)為單位。
 
 >[!NOTE]
 >
->Because all codecs use lossy compression, bitrate is the most important factor in video quality. With lossy compression, the more you compress a video file, the more the quality is degraded. For this reason, all other characteristics being equal (the resolution, frame rate, and codec), the lower the bitrate, the lower the quality of the compressed file.
+>由於所有編解碼器都使用有損壓縮，因此比特率是視頻質量中最重要的因素。 在有損壓縮中，對視頻檔案的壓縮越多，質量就越降低。 因此，所有其它特性（解析度、幀速率和編解碼器）相等，比特率越低，壓縮檔案的質量越低。
 
-When selecting a bitrate encoding, there are two types you can choose:
+選擇比特率編碼時，可以選擇兩種類型：
 
-* ****CBR encoding persists the set data rate to your setting over the entire video. Also, CBR encoding does not optimize media files for quality but does save on storage space.
-Use CBR if your video contains a similar motion level throughout the entire video. CBR is most commonly used for streaming video content. [](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters)
+* **[!UICONTROL 恆定比特率編碼]** (CBR) — 在CBR編碼期間，比特率或每秒的比特數在整個編碼過程中保持相同。 CBR編碼在整個視頻上將設定的資料速率保留為您的設定。 此外，CBR編碼不會為質量優化媒體檔案，而會節省儲存空間。
+如果視頻在整個視頻中包含類似的運動級別，則使用CBR。 CBR是流視頻內容最常用的算法。 另請參閱 [使用自定義添加的視頻編碼參數](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters)。
 
-* ****This functionality means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.
-VBR takes longer to encode but produces the most favorable results; the quality of the media file is superior. VBR is most commonly used for http progressive delivery of video content.
+* **[!UICONTROL 可變比特率編碼]** (VBR)- VBR編碼根據壓縮器所需的資料，將資料速率調低並調整到您設定的上限。 此功能意味著在VBR編碼過程中，媒體檔案的比特率會根據媒體檔案的比特率需求動態地增加或減少。
+VBR編碼時間較長，但效果最好；媒體檔案的質量優越。 VBR最常用於視頻內容的http漸進傳送。
 
-When do you use VBR versus CRB?
-When selecting VBR versus CBR, it is almost always recommended that you use VBR for your media files. VBR provides higher-quality files at competitive bitrates. When you use VBR, be sure you use with two-pass encoding, and set the maximum bitrate to be 1.5x the target video bitrate.
+您何時使用VBR與CRB?
+選擇VBR與CBR時，幾乎總是建議您將VBR用於媒體檔案。 VBR以競爭比特率提供更高質量的檔案。 使用VBR時，請確保使用兩遍編碼，並將最大比特率設定為目標視頻比特率的1.5倍。
 
-When you choose a video encoding preset, be sure you account for the target end user’s connection speed. Choose a preset with a data rate that is 80 percent of that speed. For example, if the target end user’s connection speed is 1000 Kbps, the best preset is one with a video data rate of 800 Kbps.
+選擇視頻編碼預設時，請確保考慮目標最終用戶的連接速度。 選擇資料速率為該速度80%的預設。 例如，如果目標最終用戶的連接速度是1000 Kbps，則最佳預設值是視頻資料速率為800 Kbps。
 
-This table describes the data rate of typical connection speeds.
+此表介紹了典型連接速度的資料速率。
 
-| Speed (Kbps) | Connection type |
+| 速度(Kbps) | 連接類型 |
 |--- |--- |
-| 256 | Dial-up connection. |
-| 800 | Typical mobile connection. For this connection, target a data rate in the range of 400 to a maximum of 800 for 3G experiences. |
-| 2000 | Typical broadband desktop connection. For this connection, target a data rate in the 800-2000 Kbps range, with most targets averaging 1200-1500 Kbps. |
-| 5000 | Typical high-broadband connection. Encoding in this upper range is not recommended because video delivery at this speed is not available to most consumers. |
+| 256 | 撥號連接。 |
+| 800 | 典型的移動連接。 對於此連接，針對3G體驗，將資料速率定為400到最大800。 |
+| 2000 | 典型寬頻案頭連接。 對於此連接，以800-2000 Kbps範圍內的資料速率為目標，大多數目標的平均速率為1200-1500 Kbps。 |
+| 5000 | 典型的高寬頻連接。 建議不要在此上限範圍內進行編碼，因為大多數消費者無法以此速度進行視頻傳輸。 |
 
 ### 解析度 {#resolution}
 
-**** Most source video is stored at a high resolution (for example, 1920 x 1080). For streaming purposes, source video is compressed to a smaller resolution (640 x 480 or smaller).
+**解決** 描述視頻檔案的高度和寬度（以像素為單位）。 大多數源視頻都以高解析度儲存（例如，1920 x 1080）。 為了流式傳輸，源視頻被壓縮到更小的解析度（640 x 480或更小）。
 
-Resolution and data rate are two integrally linked factors that determine video quality. To maintain the same video quality, the higher the number of pixels in a video file (the higher the resolution), the higher the data rate must be. For example, consider the number of pixels per frame in a 320 x 240 resolution and a 640 x 480 resolution video file:
+解析度和資料速率是決定視頻質量的兩個整體聯繫的因素。 要保持相同的視頻質量，視頻檔案中的像素數越多（解析度越高），資料速率就越高。 例如，請考慮320 x 240解析度和640 x 480解析度視頻檔案中每幀的像素數：
 
-| 解析度 | Pixels per frame |
+| 解析度 | 每幀像素 |
 |--- |--- |
-| 320 x 240 | 76,800 |
-| 640 x 480 | 307,200 |
+| 320 x 240 | 7萬6千8百 |
+| 640 x 480 | 30.72萬 |
 
-The 640 x 480 file has four times more pixels per frame. To achieve the same data rate for these two example resolutions, you apply four times the compression to the 640 x 480 file, which can reduce the quality of the video. Therefore, a video data rate of 250 Kbps produces high-quality viewing at a 320 x 240 resolution, but not at a 640 x 480 resolution.
+640 x 480檔案每幀的像素數是原來的四倍。 為了對這兩個示例解析度實現相同的資料速率，對640 x 480檔案應用四倍的壓縮，這會降低視頻質量。 因此，250 Kbps的視頻資料速率可以以320 x 240的解析度而不是以640 x 480的解析度來提供高質量的觀看。
 
-In general, the higher data rate you use, the better your video appears, and the higher resolution you use, the higher data rate you must maintain viewing quality (compared to lower resolutions).
+通常，您使用的資料速率越高，視頻顯示越好，解析度越高，您必須保持查看質量的資料速率越高（解析度越低）。
 
-Because resolution and data rate are linked, you have two options when encoding video:
+由於解析度和資料速率是連結的，因此在編碼視頻時有兩個選項：
 
-* Choose a data rate and then encode at the highest resolution that appears good at the data rate you chose.
-* Choose a resolution and then encode at the data rate necessary to achieve high-quality video at the resolution you chose.
+* 選擇資料速率，然後以最高解析度進行編碼，該解析度在您選擇的資料速率上看起來良好。
+* 選擇解析度，然後按所需的資料速率進行編碼，以便以您選擇的解析度獲得高質量視頻。
 
-When you choose (or create) a video encoding preset for your primary source video file, use this table to target the correct resolution:
+為主源視頻檔案選擇（或建立）視頻編碼預設時，請使用此表以正確的解析度為目標：
 
-| 解析度 | 高度 (像素) | Screen size |
+| 解析度 | 高度 (像素) | 螢幕大小 |
 |--- |--- |--- |
-| 240p | 240 | Tiny screen |
-| 300p | 300 | Small screen typically for mobile devices |
-| 360p | 360 | Small screen |
-| 480p | 480 | Medium screen |
-| 720p | 720 | Large screen |
-| 1080p | 1080 | High-definition large screen |
+| 240p | 240 | 小螢幕 |
+| 300p | 300 | 通常用於移動設備的小螢幕 |
+| 360p | 360 | 小螢幕 |
+| 480p | 480 | 中屏 |
+| 720p | 720 | 大螢幕 |
+| 1080p | 1080 | 高清大螢幕 |
 
-### Fps (Frames per second) {#fps-frames-per-second}
+### Fps（每秒幀數） {#fps-frames-per-second}
 
-In the United States and Japan, most video is shot at 29.97 frames per second (fps); in Europe, most video is shot at 25 fps. Film is shot at 24 fps.
+在美國和日本，大多數視頻的拍攝速度是每秒29.97幀(fps);在歐洲，大多數視頻的拍攝速度是25 fps。 影片以24幀/秒的速度拍攝。
 
-Choose a video encoding preset that matches the fps rate of your primary source video file. For example, if your primary source video is 25 fps, choose an encoding preset with 25 fps. By default, all custom encoding uses the primary source video file’s fps. For this reason, you do not need to explicitly specify the fps setting when you create a video encoding preset.
+選擇與主源視頻檔案的fps速率匹配的視頻編碼預設。 例如，如果主源視頻為25 fps，請選擇一個25 fps的編碼預設。 預設情況下，所有自定義編碼都使用主源視頻檔案的fps。 因此，建立視頻編碼預設時不需要顯式指定fps設定。
 
-### Video encoding dimensions {#video-encoding-dimensions}
+### 視頻編碼維度 {#video-encoding-dimensions}
 
-For optimal results, select encoding dimensions such that the source video is a whole multiple of all your encoded videos.
+為獲得最佳結果，請選擇編碼尺寸，使源視頻是所有編碼視頻的整倍。
 
-To calculate this ratio, you divide source width by encoded width to get the width ratio. Then, you divide source height by encoded height to get the height ratio.
+要計算此比率，請將源寬度除以編碼寬度，以獲得寬度比。 然後，將源高度除以編碼高度，得到高度比。
 
-If the resulting ratio is a whole integer, it means that the video is optimally scaled. If the resulting ratio is not a whole integer, it impacts video quality by leaving leftover pixel artifacts on the display. This effect is most noticeable when the video has text.
+如果得到的比率是整整數，則表示視頻被最優縮放。 如果結果比率不是整數，則它會通過將剩餘像素偽像留在顯示器上而影響視頻質量。 當視頻有文本時，此效果最為明顯。
 
-As an example, suppose that your source video is 1920 x 1080. In the following table, the three encoded videos provide the optimal encoding settings to use.
+例如，假設源視頻為1920 x 1080。 在下表中，三個編碼視頻提供了要使用的最佳編碼設定。
 
-| Video Type | Width x Height | 寬度比例 | Height Ratio |
+| 視頻類型 | 寬x高 | 寬度比例 | 高度比 |
 |--- |--- |--- |--- |
 | 來源 | 1920x1080 | 1 | 1 |
-| Encoded | 960 x 540 | 2 | 2 |
-| Encoded | 640 x 360 | 3 | 3 |
-| Encoded | 480 x 270 | 4 | 4 |
+| 編碼 | 960 x 540 | 2 | 2 |
+| 編碼 | 640 x 360 | 3 | 3 |
+| 編碼 | 480 x 270 | 4 | 4 |
 
-### Encoded video file format {#encoded-video-file-format}
+### 編碼視頻檔案格式 {#encoded-video-file-format}
 
-Dynamic Media recommends using MP4 H.264 video encoding presets. Because MP4 files use the H.264 video codec, it provides high-quality video but in a compressed file size.
+Dynamic Media建議使用MP4 H.264視頻編碼預設。 由於MP4檔案使用H.264視頻編解碼器，因此它提供高質量的視頻，但檔案大小是壓縮的。
 
-## Publish videos to YouTube {#publishing-videos-to-youtube}
+## 將視頻發佈到YouTube {#publishing-videos-to-youtube}
 
-You can publish video assets managed in Experience Manager Assets directly to a YouTube channel that you have previously created.
+您可以將在Experience Manager Assets管理的視頻資產直接發佈到您以前建立的YouTube渠道。
 
-To publish video assets to YouTube, you tag video assets in Experience Manager Assets with tags. You associate these tags with a YouTube channel. If a video asset&#39;s tag matches the tag of a YouTube channel, then the video is published to YouTube. Publish to YouTube occurs along with a normal publish of the video as long as an associated tag is used.
+要向YouTube發佈視頻資產，請在Experience Manager Assets為視頻資產添加標籤。 將這些標籤與YouTube頻道關聯。 如果視頻資產的標籤與YouTube頻道的標籤匹配，則視頻將發佈到YouTube。 只要使用關聯的標籤，發佈到YouTube就會與視頻的正常發佈一起發生。
 
-YouTube does its own encoding. As such, the original video file that was uploaded into Experience Manager is published to YouTube instead of any video rendition that Dynamic Media’s encoding has created. While it is not required to process videos using Dynamic Media, it is expected that they do so in case a viewer preset is needed for playback.
+YouTube自己編碼。 因此，上傳到Experience Manager的原始視頻檔案將發佈到YouTube，而不是Dynamic Media編碼建立的任何視頻格式副本。 雖然不需要使用Dynamic Media處理視頻，但在播放時需要觀眾預設時，應該會這樣做。
 
-When you bypass the video processing profile and publish directly to YouTube, it simply means that your video asset in Experience Manager Asset does not get a viewable thumbnail. It also means that videos that are not encoded do not work with any of the Dynamic Media asset types.
+當您繞過視頻處理配置檔案並直接發佈到YouTube時，這僅僅意味著您的Experience Manager資產中的視頻資產無法獲得可查看的縮略圖。 這還意味著沒有編碼的視頻與任何Dynamic Media資產類型都無關。
 
-Publishing video assets to YouTube servers involves completing the following tasks to ensure safe and secure server-to-server verification with YouTube:
+向YouTube伺服器發佈視頻資產涉及完成以下任務，以確保與YouTube進行安全、安全的伺服器對伺服器驗證：
 
-1. [Configure Google Cloud settings](#configuring-google-cloud-settings)
-1. [Create a YouTube channel](#creating-a-youtube-channel)
-1. [Add tags for publishing](#adding-tags-for-publishing)
-1. [Set up YouTube in Experience Manager](#setting-up-youtube-in-aem)
-1. [(Optional) Automate the setting of default YouTube properties for your uploaded videos](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Publish videos to your YouTube channel](#publishing-videos-to-your-youtube-channel)
-1. [(Optional) Verify the published video on YouTube](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
-1. [Link YouTube URLs to your Web Application](#linking-youtube-urls-to-your-web-application)
+1. [配置Google雲設定](#configuring-google-cloud-settings)
+1. [建立YouTube頻道](#creating-a-youtube-channel)
+1. [添加用於發佈的標籤](#adding-tags-for-publishing)
+1. [設定YouTubeExperience Manager](#setting-up-youtube-in-aem)
+1. [（可選）自動設定上載視頻的預設YouTube屬性](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
+1. [將視頻發佈到您的YouTube頻道](#publishing-videos-to-your-youtube-channel)
+1. [（可選）驗證YouTube上發佈的視頻](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
+1. [將YouTubeURL連結到Web應用程式](#linking-youtube-urls-to-your-web-application)
 
-[](#unpublishing-videos-to-remove-them-from-youtube)
+您也可以 [取消發佈視頻，從YouTube](#unpublishing-videos-to-remove-them-from-youtube)。
 
-### Configure Google Cloud settings {#configuring-google-cloud-settings}
+### 配置Google雲設定 {#configuring-google-cloud-settings}
 
-To publish to YouTube, you need a Google account. If you have a GMAIL account, then you already have a Google account; if you do not have a Google account, you can easily create one. You need the account because you need credentials to publish video assets to YouTube. [](#creating-a-youtube-channel)
+要發佈到YouTube，你需要一個Google帳戶。 如果你有GMAIL賬戶，那麼你已經有Google賬戶了；如果您沒有Google帳戶，則可以輕鬆建立一個帳戶。 您需要該帳戶，因為您需要憑據將視頻資產發佈到YouTube。 如果已建立帳戶，則跳過此任務並直接轉到 [建立YouTube頻道](#creating-a-youtube-channel)。
 
-The account used with Google Cloud and the Google account used for YouTube do not need to be the same.
+與Google雲使用的帳戶和用於YouTube的Google帳戶不必相同。
 
-Google periodically changes their user interface. As such, the steps to publish videos to YouTube can vary slightly from what is documented below. This caveat also applies to YouTube when you try to check if videos are uploaded to it.
+Google定期更改其用戶介面。 因此，向YouTube發佈視頻的步驟與下面記錄的步驟稍有不同。 當您嘗試檢查視頻是否上傳到YouTube時，此警告也適用。
 
 >[!NOTE]
 >
->The following steps were accurate at the time of this writing. However, Google periodically updates their websites without notice. As such, these steps can be slightly different.
+>在編寫時，以下步驟是準確的。 不過，Google會不經通知就定期更新其雲網頁。 因此，某些配置選項在Google用戶介面中的命名可能與步驟中使用的名稱稍有不同。
 
-****
+**配置Google雲設定：**
 
-1. Create a Google account.
-   [](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
+1. 建立Google帳戶。
+   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
 
-   If you already have a Google account, you can skip to the next step.
+   如果您已擁有Google帳戶，則可以跳至下一步。
 
-1. [](https://cloud.google.com/)
-1. ****
+1. 轉到 [https://cloud.google.com/](https://cloud.google.com/)。
+1. 在Google雲頁面右上角附近，選擇 **[!UICONTROL 控制台]**。
 
-   ********
+   如有必要， **[!UICONTROL 登錄]** 使用你的Google帳戶憑據查看 **[!UICONTROL 控制台]** 的雙曲餘切值。
 
-1. ********
-1. ********
-1. ********
+1. 在儀表板頁面的右側 **[!UICONTROL Google雲平台]**，選擇 **[!UICONTROL 項目]** 下拉清單以開啟 **[!UICONTROL 選擇項目]** 對話框。
+1. 在 **[!UICONTROL 選擇項目]** 對話框，選擇 **[!UICONTROL 新建項目]**。
+1. 在 **[!UICONTROL 新建項目]** 對話框 **[!UICONTROL 項目名稱]** 的子菜單。
 
-   Your Project ID is based on your project name. As such, choose the project name carefully; it cannot be changed after it is created. Also, you must enter the same Project ID again when you set up YouTube in Experience Manager later on. Therefore, write it down.
+   您的項目ID基於您的項目名稱。 因此，仔細選擇項目名稱；建立後無法更改。 此外，以後在Experience Manager中設定YouTube時，必須再次輸入相同的項目ID。 所以，記下來。
 
 1. 選擇 **[!UICONTROL 建立]**。
 
-1. Do either one of the following:
+1. 執行下列任一操作：
 
-   * ********
-   * ********
+   * 在項目的儀表板上， **[!UICONTROL 入門]** 卡，選擇 **[!UICONTROL 瀏覽和啟用API]**。
+   * 在項目的儀表板上， **[!UICONTROL API]** 卡，選擇 **[!UICONTROL 轉到API概述]**。
 
-1. ********<!-- NEXT STEP BELOW IS STEP 10 -->
-1. ****************
-1. ********
-1. ********
+1. 靠近 **[!UICONTROL API和服務]** ，選擇 **[!UICONTROL 啟用API和服務]**。<!-- NEXT STEP BELOW IS STEP 10 -->
+1. 在 **[!UICONTROL API庫]** 頁面，左側，下方 **[!UICONTROL 類別]**&#x200B;選中 **[!UICONTROL YouTube]**。 在頁面右側，選擇 **[!UICONTROL YouTube]**。
+1. 在 **[!UICONTROL YouTube]** ，選擇 **[!UICONTROL YouTube資料API v3]**。
+1. 在 **[!UICONTROL YouTube資料API v3]** ，選擇 **[!UICONTROL 管理]**。
 
-   ![](assets/6_5_googleaccount-apis-manage.png)
+   ![6_5_googleaccount-apis manage](assets/6_5_googleaccount-apis-manage.png)
 
-1. To use the API, you need credentials. ****
+1. 要使用API，需要憑據。 如有必要，在「APIs &amp; Services」頁的左側，選擇 **[!UICONTROL 憑據]**。
+1. 在「憑據」頁面頂部附近，選擇 **[!UICONTROL 建立憑據]**，然後選擇 **[!UICONTROL OAuth客戶端ID]**。
+1. 在 **[!UICONTROL 建立OAuth客戶端ID]** 的 **[!UICONTROL 應用程式類型]** 下拉清單，選擇 **[!UICONTROL Web應用程式]**。
 
-1. ********
+   ![6_5_googleaccount-apis應用程式類型](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
 
-1. ************
+1. 執行下列操作之一：
 
-   ![](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
+   * 在 **[!UICONTROL 名稱]** 欄位，輸入OAuth 2.0客戶端的唯一名稱。
+   * 使用Google已在 **[!UICONTROL 名稱]** 的子菜單。
 
-1. Do one of the following:
+1. 在 **[!UICONTROL 已授權的JavaScript源]** 標題，選擇 **[!UICONTROL 添加URI]**。
 
-   * ****
-   * ****
+   ![6_5_googleaccount-apis-nameauthorizations](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-nameauthorizations.png)
 
-1. ********
-
-   ![](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-nameauthorizations.png)
-
-1. ********
+1. 在 **[!UICONTROL URI]** 文本欄位，輸入以下路徑，替換路徑中的域和埠號，然後按 **[!UICONTROL 輸入]** 將路徑添加到清單：
 
    `https://<servername.domain>:<port_number>`
 
@@ -492,11 +490,10 @@ Google periodically changes their user interface. As such, the steps to publish 
 
    >[!IMPORTANT]
    >
-   >The example path above is hypothetical and for explanation purposes only.
+   >上面的示例路徑是假設路徑，僅供說明之用。
 
-1. ****
-
-1. ********
+1. 在 **[!UICONTROL 授權重定向URI]** 標題，選擇「添加URI」。
+1. 在 **[!UICONTROL URI]** 文本欄位，輸入以下路徑，替換路徑中的域和埠號，然後按 **[!UICONTROL 輸入]** 將路徑添加到清單：
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
@@ -504,54 +501,52 @@ Google periodically changes their user interface. As such, the steps to publish 
 
    >[!IMPORTANT]
    >
-   >The example path above is hypothetical and for explanation purposes only.
+   >上面的示例路徑是假設路徑，僅供說明之用。
 
-1. ********
+1. 靠近 **[!UICONTROL 建立OAuth客戶端ID]** ，選擇 **[!UICONTROL 建立]**。
+1. 在 **[!UICONTROL 已建立OAuth客戶端]** 對話框，執行以下操作：
 
-1. ****
+   * （可選）複製您的客戶端ID和客戶端密碼並保存。
+   * 選擇 **[!UICONTROL 下載JSON]**，然後保存JSON檔案。
 
-   * (Optional) Copy Your Client ID and Your Client Secret and save.
-   * ****
+   稍後在Adobe Experience Manager設定YouTube時，需要此下載的JSON檔案。
 
-   You need this downloaded JSON file when you set up YouTube in Adobe Experience Manager later on.
+   ![已建立6_5_googleaccount-apis oauthclient](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
 
-   ![](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
+1. 在 **[!UICONTROL 已建立OAuth客戶端]** 對話框，選擇 **[!UICONTROL 確定]**。
+1. 註銷你的Google帳戶。 現在建立一個YouTube頻道。
 
-1. ********
+### 建立YouTube頻道 {#creating-a-youtube-channel}
 
-1. Log out of your Google account. Now create a YouTube channel.
-
-### Create a YouTube channel {#creating-a-youtube-channel}
-
-Publishing videos to YouTube requires that you have one or more channels. [](/help/assets/dynamic-media/video.md#adding-tags-for-publishing)
+向YouTube發佈視頻需要您有一個或多個渠道。 如果已建立YouTube頻道，則可以跳過此任務並轉到 [添加用於發佈的標籤](/help/assets/dynamic-media/video.md#adding-tags-for-publishing)。
 
 >[!CAUTION]
 >
->**[](#setting-up-youtube-in-aem)If you fail to do the channel setup, you are not warned of no existing channels. However, Google verification still occurs when you add a channel, but there is not an option to choose which channel the video is sent.
+>確保已在YouTube設定一個或多個頻道 *先* 在Experience Manager中的YouTube設定下添加頻道(請參閱 [設定YouTubeExperience Manager](#setting-up-youtube-in-aem) )。 如果您未能完成通道設定，則系統不會警告您沒有現有通道。 但是，在添加頻道時仍會進行Google驗證，但無法選擇發送視頻的頻道。
 
-****
+**要建立YouTube頻道：**
 
-1. [](https://www.youtube.com/)
-1. ****
-1. ****
-1. ****
-1. ****
+1. 轉到 [https://www.youtube.com](https://www.youtube.com/) 並使用你的Google帳戶憑據登錄。
+1. 在YouTube頁面的右上角，選擇您的配置檔案圖片（它也可以顯示為實心彩色圓中的字母），然後選擇 **[!UICONTROL YouTube設定]** （圓齒輪表徵圖）。
+1. 在「概述」(Overview)頁面的「附加功能」(Additional Features)標題下，選擇 **[!UICONTROL 查看我的所有頻道或建立頻道]**。
+1. 在「通道」頁上，選擇 **[!UICONTROL 建立新渠道]**。
+1. 在「品牌帳戶」頁面的「品牌帳戶名稱」欄位中，輸入公司名稱或您選擇的發佈視頻資產的任何其他渠道名稱，然後選擇 **[!UICONTROL 建立]**。
 
-   Remember the name that you enter here; you must enter it again when you have to set up YouTube in Experience Manager.
+   記住你在這裡輸入的名稱；你必須把YouTube設定為Experience Manager時，必須再次輸入。
 
-1. (Optional) If necessary, add more channels.
+1. （可選）如有必要，請添加更多通道。
 
-   Now you add tags for publishing.
+   現在，添加用於發佈的標籤。
 
-### Add tags for publishing {#adding-tags-for-publishing}
+### 添加用於發佈的標籤 {#adding-tags-for-publishing}
 
-To publish to your videos to YouTube, Experience Manager associates tags to one or more YouTube channels. [](/help/sites-cloud/authoring/features/tags.md)
+要發佈到您的視頻到YouTube,Experience Manager會將標籤關聯到一個或多個YouTube頻道。 要添加用於發佈的標籤，請參見 [管理標籤](/help/sites-cloud/authoring/features/tags.md)。
 
-[](#setting-up-youtube-in-aem)
+或者，如果要在Experience Manager中使用預設標籤，可以跳過此任務並轉到 [設定YouTubeExperience Manager](#setting-up-youtube-in-aem)。
 
 >[!NOTE]
 >
->After the Cloud Service is configured, other configuration is not required to enable the YouTube Publish replication agent at this point. The reason is because it was enabled when the Cloud Service configuration was saved.
+>配置Cloud Service後，此時不需要其他配置來啟用YouTube發佈複製代理。 原因是在保存Cloud Service配置時啟用了它。
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
@@ -563,317 +558,321 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
 1. Select **[!UICONTROL OK]**. -->
 
-### Set up YouTube in Experience Manager {#setting-up-youtube-in-aem}
+### 設定YouTubeExperience Manager {#setting-up-youtube-in-aem}
 
-Starting with Experience Manager 6.4, a new touch user interface method was introduced to set up YouTube publishing in Experience Manager. Based on the installed instance of Experience Manager that you are using, do one of the following:
+從Experience Manager6.4開始，介紹了一種新的觸摸式用戶介面方法，用於Experience Manager建立YouTube出版。 根據您正在使用的Experience Manager的已安裝實例，執行以下操作之一：
 
-* [](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before)
-* [](#setting-up-youtube-in-aem-and-later)
+* 要在6.4之前的Experience Manager中配置YouTube，請參見 [在6.4之前在Experience Manager建立YouTube](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before)。
+* 要在Experience Manager6.4或更高版本中配置YouTube，請參見 [在Experience Manager6.4及更高版本中設定YouTube](#setting-up-youtube-in-aem-and-later)。
 
-#### Set up YouTube in Experience Manager 6.4 and later {#setting-up-youtube-in-aem-and-later}
+#### 在Experience Manager6.4及更高版本中設定YouTube {#setting-up-youtube-in-aem-and-later}
 
-1. Be sure you log in to your instance of Dynamic Media as an Administrator.
-1. ************
-1. ****
+1. 確保以管理員身份登錄到Dynamic Media實例。
+1. 在Experience Manager的左上角，選擇Experience Manager徽標，然後在左滑軌中導航至 **[!UICONTROL 工具]**（錘子表徵圖）> **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube發佈配置]**。
+1. 選擇 **[!UICONTROL 全球]** （不選）。
 
-1. ****
+1. 在全局頁面的右上角，選擇 **[!UICONTROL 建立]**。
 1. 在「建立YouTube設定」頁面的「Google cloud 平台設定」下方的「應用程式名稱」欄位 **[!UICONTROL 中]** ，輸入Google專案ID。
 
-   You specified the project ID when you initially configured Google Cloud settings earlier.
-Leave the Create YouTube Configuration page open; you are returning to it in a moment.
+   您最初在較早配置Google雲設定時指定了項目ID。
+保持「建立YouTube配置」頁面開啟；你馬上就要回來了。
 
-   ![](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
+   ![6_5_youtubepublish-createyoutuconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
-1. [](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings)
-1. Select and copy the entire JSON text.
+1. 使用純文字檔案編輯器，開啟您在任務早期下載並保存的JSON檔案 [配置Google雲設定](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings)。
+1. 選擇並複製整個JSON文本。
 1. 返回YouTube帳戶設定對話方塊。在「 **[!UICONTROL JSON設定」欄位中]** ，貼上JSON文字。
-1. ****
+1. 在頁面右上角附近，選擇 **[!UICONTROL 保存]**。
 
-   Now set up YouTube channels in Experience Manager.
+   現在在YouTube開設Experience Manager頻道。
 
-1. ****
-1. ****
+1. 選擇 **[!UICONTROL 添加通道]**。
+1. 在「渠道名稱」欄位中，輸入您在任務中建立的渠道的名稱 **[!UICONTROL 向YouTube添加一個或多個頻道]** 早些。
 
-   You can optionally add a description, if desired.
+   如果需要，您可以根據需要添加說明。
 
-1. ****
-1. YouTube/Google verification is displayed. If you are not already logged into the Google Cloud account, then skip this step.
+1. 選擇 **[!UICONTROL 添加]**。
+1. 顯示YouTube/Google驗證。 如果您尚未登錄Google雲帳戶，則跳過此步驟。
 
-   * Enter the Google username and password associated with the Google Project ID and the JSON text above.
-   * Depending on how many channels your account has you see two or more items. Select a channel. Do not select the e-mail address; it is not a channel.
-   * ****
+   * 輸入與上面的Google項目ID和JSON文本關聯的Google用戶名和密碼。
+   * 根據您的帳戶有多少個渠道，您可以看到兩個或多個項目。 選擇一個頻道。 不要選擇電子郵件地址；不是頻道。
+   * 在下一頁，選擇 **[!UICONTROL 接受]** 允許訪問此頻道。
 
-1. ****
+1. 選擇 **[!UICONTROL 允許]**。
 
-   Now set up tags for publishing.
+   現在設定發佈標籤。
 
-1. ****
-1. To display the list of available tags in Experience Manager, select the drop-down list icon (upside-down caret).
-1. To add them, select one or more tags.
+1. **[!UICONTROL 設定發佈標籤]**  — 在「Cloud Services」>「YouTube」頁面上，選擇鉛筆表徵圖以編輯要使用的標籤清單。
+1. 要在Experience Manager中顯示可用標籤的清單，請選擇下拉清單表徵圖（倒置插入符號）。
+1. 要添加標籤，請選擇一個或多個標籤。
 
-   ****
+   要刪除已添加的標籤，請選擇該標籤，然後選擇 **[!UICONTROL X]**。
 
-1. ****
+1. 添加完所需標籤後，選擇 **[!UICONTROL 保存]**。
 
-   Now you publish videos to your YouTube channel.
+   現在你將視頻發佈到你的YouTube頻道。
 
-#### Set up YouTube in Experience Manager before 6.4 {#setting-up-youtube-in-aem-before}
+#### 在6.4之前在Experience Manager建立YouTube {#setting-up-youtube-in-aem-before}
 
-1. Be sure you log in to your instance of Dynamic Media as an Administrator.
+1. 確保以管理員身份登錄到Dynamic Media實例。
 
-1. ************
-1. ****
-1. In the Create Configuration dialog box, enter a title (mandatory) and name (optional) in the respective fields.
+1. 在Experience Manager的左上角，選擇Experience Manager徽標，然後在左滑軌中導航至 **[!UICONTROL 工具]** （錘子表徵圖）> **[!UICONTROL 部署]** > **[!UICONTROL Cloud Services]**。
+1. 在「第三方服務」標題下，在「YouTube」下，選擇 **[!UICONTROL 立即配置]**。
+1. 在「建立配置」對話框中，在相應欄位中輸入標題（必需）和名稱（可選）。
 1. 選擇 **[!UICONTROL 建立]**。
 1. 在「YouTube帳戶設定」對話方塊的「應用程式名 **[!UICONTROL 稱」欄位中]** ，輸入Google專案ID。
 
-   [](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings)Leave the YouTube Account Setting dialog box open; you are returning to it in a moment.
+   最初指定項目ID時 [已配置Google雲設定](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) 早些。
+保持「YouTube帳戶設定」對話框開啟；你馬上就要回來了。
 
-1. Using a plain text editor, open the JSON file that you downloaded and saved earlier in the task Configuring Google Cloud settings.
-1. Select and copy the entire JSON text.
+1. 使用純文字檔案編輯器，開啟在「配置Google雲」設定任務中先前下載並保存的JSON檔案。
+1. 選擇並複製整個JSON文本。
 1. 返回YouTube帳戶設定對話方塊。在「 **[!UICONTROL JSON設定」欄位中]** ，貼上JSON文字。
-1. ****
+1. 選擇 **[!UICONTROL 確定]**。
 
-   Now set up YouTube channels in Experience Manager.
+   現在在YouTube開設Experience Manager頻道。
 
-1. ********
+1. 在 **[!UICONTROL 可用頻道]**&#x200B;選中 **+** （加號表徵圖）。
 1. 在「YouTube頻道設定」對話方塊的「標題」欄位中，輸入您在「先前新增一或多個頻道至YouTube」工作中建立的頻道名稱 **** 。
 
-   You can optionally add a description, if desired.
+   如果需要，您可以根據需要添加說明。
 
-1. ****
-1. YouTube/Google verification is displayed. If you are not already logged into the Google Cloud account, then skip this step.
+1. 選擇 **[!UICONTROL 確定]**。
+1. 顯示YouTube/Google驗證。 如果您尚未登錄Google雲帳戶，則跳過此步驟。
 
-   * Enter the Google username and password associated with the Google Project ID and the JSON text above.
-   * Depending on how many channels your account has you see two or more items. Select a channel. Do not select the e-mail address; it is not a channel.
-   * ****
+   * 輸入與上面的Google項目ID和JSON文本關聯的Google用戶名和密碼。
+   * 根據您的帳戶有多少個渠道，您可以看到兩個或多個項目。 選擇一個頻道。 不要選擇電子郵件地址；不是頻道。
+   * 在下一頁，選擇 **[!UICONTROL 接受]** 允許訪問此頻道。
 
-1. ****
+1. 選擇 **[!UICONTROL 允許]**。
 
-   Now set up tags for publishing.
+   現在設定發佈標籤。
 
-1. ****
-1. To display the list of available tags in Experience Manager, select the drop-down list icon (upside-down caret).
-1. To add them, select one or more tags.
+1. **[!UICONTROL 設定發佈標籤]**  — 在「Cloud Services」>「YouTube」頁面上，選擇鉛筆表徵圖以編輯要使用的標籤清單。
+1. 要在Experience Manager中顯示可用標籤的清單，請選擇下拉清單表徵圖（倒置插入符號）。
+1. 要添加標籤，請選擇一個或多個標籤。
 
-   ****
+   要刪除已添加的標籤，請選擇該標籤，然後選擇 **X**。
 
-1. ****
+1. 添加完所需標籤後，選擇 **[!UICONTROL 確定]**。
 
-   Now you publish videos to your YouTube channel.
+   現在你將視頻發佈到你的YouTube頻道。
 
-### (Optional) Automate the setting of default YouTube properties for your uploaded videos {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
+### （可選）自動設定上載視頻的預設YouTube屬性 {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
-You can optionally automate the setting of YouTube properties on upload of your videos. Create a metadata processing profile in Experience Manager.
+您可以選擇在上傳視頻時自動設定YouTube屬性。 在Experience Manager中建立元資料處理配置檔案。
 
-若要建立中繼資料處理設定檔，您必須先從「欄位標籤 **[!UICONTROL 」、「對應至屬性]********** 」和「選擇」欄位複製值，這些全都可在視訊的中繼資料結構中找到。Then, you build your YouTube video metadata processing profile by adding those values to it.
+若要建立中繼資料處理設定檔，您必須先從「欄位標籤 **[!UICONTROL 」、「對應至屬性]********** 」和「選擇」欄位複製值，這些全都可在視訊的中繼資料結構中找到。然後，通過將這些值添加到您的YouTube視頻元資料處理配置檔案中來構建這些值。
 
-****
+**要自動設定上載視頻的預設YouTube屬性，請執行以下操作：**
 
-1. ************
-1. ****(Do not add a checkmark to the selection box to the left of &quot;default&quot;.)
-1. ************
-1. ****
-1. ****
-1. ****
+1. 在Experience Manager的左上角，選擇Experience Manager徽標，然後在左滑軌中導航至 **[!UICONTROL 工具]** （錘子表徵圖）> **[!UICONTROL 資產]** > **[!UICONTROL 元資料架構]**。
+1. 選擇 **[!UICONTROL 預設]**。 （不要在「default」左側的選擇框中添加複選標籤。）
+1. 在 **[!UICONTROL 預設]** 頁面，選中 **[!UICONTROL 視頻]**，然後選擇 **[!UICONTROL 編輯]**。
+1. 在「元資料架構編輯器」頁上，選擇 **[!UICONTROL 高級]** 頁籤。
+1. 在「YouTube出版」標題下，選擇 **[!UICONTROL YouTube類]**。
+1. 在頁面的右側，在 **[!UICONTROL 設定]** 頁籤中，執行以下操作：
 
-   * **** Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
+   * 在 **[!UICONTROL 映射到屬性]** 文本欄位，選擇並複製值。
+將複製的值貼上到開啟的文本編輯器中。 以後建立元資料處理配置檔案時，您將需要此值。 保持文本編輯器開啟。
 
-   * **** Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
+   * 下 **[!UICONTROL 選擇]**，選擇並複製您要使用的預設值（如「人員和部落格」或「科學與技術」）。
+將複製的值貼上到開啟的文本編輯器中。 以後建立元資料處理配置檔案時，您將需要此值。 保持文本編輯器開啟。
 
-1. ****
-1. ****
+1. 在「YouTube出版」標題下，選擇 **[!UICONTROL YouTube隱私]**。
+1. 在頁面的右側，在 **[!UICONTROL 設定]** 頁籤中，執行以下操作：
 
-   * **** Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
+   * 在 **[!UICONTROL 映射到屬性]** 文本欄位，選擇並複製值。
+將複製的值貼上到開啟的文本編輯器中。 以後建立元資料處理配置檔案時，您將需要此值。 保持文本編輯器開啟。
 
-   * ****Notice that the Choices are grouped in pairs of two. The bottom field in the pair is the default value that you want to copy, such as public, unlisted, or private.
-Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
+   * 下 **[!UICONTROL 選擇]**，選擇並複製要使用的預設值。 請注意，「選項」(Choices)分成兩對。 對中的底部欄位是要複製的預設值，如公共、未列出或私有。
+將複製的值貼上到開啟的文本編輯器中。 以後建立元資料處理配置檔案時，您將需要此值。 保持文本編輯器開啟。
 
-1. ****
-1. ************
+1. 在「元資料架構編輯器」頁的右上角，選擇 **[!UICONTROL 取消]**。
+1. 在Experience Manager的左上角，選擇Experience Manager徽標，然後在左滑軌中，選擇 **[!UICONTROL 工具]** （錘子表徵圖）> **[!UICONTROL 資產]** > **[!UICONTROL 元資料配置檔案]**。
 
-1. ****
-1. ****`YouTube Video`****
-1. ****
-1. Add the copied YouTube Publishing values to the profile by doing the following:
+1. 在「元資料概要檔案」頁面的右上角附近，選擇 **[!UICONTROL 建立]**。
+1. 在「添加元資料配置檔案」對話框中， **[!UICONTROL 配置檔案標題]** 文本欄位，輸入名稱 `YouTube Video` 選擇 **[!UICONTROL 建立]**。
+1. 在「元資料配置檔案編輯器」頁上，選擇 **[!UICONTROL 先進]** 頁籤。
+1. 通過執行以下操作將複製的YouTube發佈值添加到配置檔案：
 
-   * ****
-   * ****
-   * ****
-   * `YouTube Publishing`
-   * ************
+   * 在頁面的右側，選擇 **[!UICONTROL 生成窗體]** 頁籤。
+   * （可選）拖動標有 **[!UICONTROL 節標題]** 左邊，然後放到窗體區域。
+   * （可選）選擇 **[!UICONTROL 欄位標籤]** 的子菜單。
+   * （可選）在頁面右側的「設定」頁籤下的「欄位標籤」文本欄位中，輸入 `YouTube Publishing`。
+   * 選擇 **[!UICONTROL 生成窗體]** 頁籤，然後拖動標籤為 **[!UICONTROL 多值文本]** 放在下面 **[!UICONTROL YouTube出版]** 建立的標題。
 
-   * ****
-   * On the right side of the page, under the Settings tab, paste the YouTube Publishing values (Field Label value and Map to property value) that you copied earlier, into their respective fields on the form. Paste the Choices value into the Default Value field.
+   * 要選擇元件，請選擇 **[!UICONTROL 欄位標籤]**。
+   * 在頁面右側的「設定」頁籤下，將先前複製的YouTube發佈值（欄位標籤值和映射到屬性值）貼上到窗體中的相應欄位中。 將「選擇」值貼上到「預設值」欄位。
 
-1. Add the copied YouTube Privacy values to the profile by doing the following:
+1. 通過執行以下操作將複製的YouTube隱私值添加到配置檔案：
 
-   * ****
-   * ****
-   * ****
-   * `YouTube Privacy`
-   * ************
+   * 在頁面的右側，選擇 **[!UICONTROL 生成窗體]** 頁籤。
+   * （可選）拖動標有 **[!UICONTROL 節標題]** 左邊，然後放到窗體區域。
+   * （可選）選擇 **[!UICONTROL 欄位標籤]** 的子菜單。
+   * （可選）在頁面右側的「設定」頁籤下的「欄位標籤」文本欄位中，輸入 `YouTube Privacy`。
+   * 選擇 **[!UICONTROL 生成窗體]** 頁籤，然後拖動標籤為 **[!UICONTROL 多值文本]** 放在下面 **[!UICONTROL YouTube隱私]** 的子菜單。
 
-   * ****
-   * On the right side of the page, under the Settings tab, paste the YouTube Publishing values (Field Label value and Map to property value) that you copied earlier, into their respective fields on the form. Paste the Choices value into the Default Value field.
+   * 要選擇元件，請選擇 **[!UICONTROL 欄位標籤]**。
+   * 在頁面右側的「設定」頁籤下，將先前複製的YouTube發佈值（欄位標籤值和映射到屬性值）貼上到窗體中的相應欄位中。 將「選擇」值貼上到「預設值」欄位。
 
-1. ****
-1. Apply the YouTube Publishing metadata profile to the folders where you are going to upload videos. You must have both the Metadata Profile and the Video Profile set.
+1. 在頁面右上角附近，選擇 **[!UICONTROL 保存]**。
+1. 將YouTube發佈元資料配置檔案應用到要上載視頻的資料夾。 必須同時設定元資料配置檔案和視頻配置檔案。
 
    請參 [閱中繼資料](/help/assets/metadata-profiles.md)[描述檔和視訊描述檔](/help/assets/dynamic-media/video-profiles.md)。
 
-### Publish videos to your YouTube channel {#publishing-videos-to-your-youtube-channel}
+### 將視頻發佈到您的YouTube頻道 {#publishing-videos-to-your-youtube-channel}
 
-Now you associate the tags that you added earlier to video assets. This process lets Experience Manager know which assets to publish to your YouTube channel.
+現在，您將先前添加的標籤與視頻資產相關聯。 此過程使Experience Manager知道要發佈到您的YouTube渠道的資產。
 
 >[!NOTE]
 >
->Publish immediately does not automatically publish to YouTube. 設定動態媒體時，有兩個發佈選項可供選擇：立 **[!UICONTROL 即或]****[!UICONTROL 啟動後]**。
+>立即發佈不會自動發佈到YouTube。 設定動態媒體時，有兩個發佈選項可供選擇：立 **[!UICONTROL 即或]****[!UICONTROL 啟動後]**。
 >
->**** While that is true for Dynamic Media, it is not true for YouTube. To publish to YouTube, you must publish by way of Experience Manager Author.
+>**[!UICONTROL 立即發佈]** 表示上載的資產在與IPS同步後自動發佈到傳遞系統。 雖然Dynamic Media是如此，但YouTube並非如此。 要發表到YouTube，必須以Experience Manager作者的方式發表。
 
 >[!NOTE]
-****
-[](#monitoring-video-encoding-and-youtube-publishing-progress)
-For more detailed progress information, you can monitor the YouTube log under replication. Be aware, however, that such monitoring requires Administrator access.
+要從YouTube發佈內容，Experience Manager使用 **[!UICONTROL 發佈到YouTube]** 工作流，它允許您監視進度並查看任何故障資訊。
+請參閱 [監視視頻編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
+有關更詳細的進度資訊，您可以監視複製下的YouTube日誌。 但是，請注意，此類監視需要管理員訪問權限。
 
-****
+**要將視頻發佈到您的YouTube頻道：**
 
-1. In Experience Manager, navigate to a video asset that you want to publish to your YouTube channel.
-1. Select the video asset (the adaptive video set).
-1. ****
-1. ****
-1. On the Select Tags page, navigate to the tags you want to use, and then select one or more tags.
+1. 在Experience Manager中，導航到要發佈到YouTube頻道的視頻資產。
+1. 選擇視頻資產（自適應視頻集）。
+1. 在工具欄上，選擇 **[!UICONTROL 屬性]**。
+1. 在「基本」頁籤的「元資料」標題下，選擇 **[!UICONTROL 開啟選擇對話框]** 的子菜單。
+1. 在「選擇標籤」頁上，導航到要使用的標籤，然後選擇一個或多個標籤。
 
-   Remember that the tags must be associated with the YouTube channel.
+   請記住，標籤必須與YouTube頻道關聯。
 
-1. ****
-1. ****
-1. ****
+1. 在頁面的右上角，選擇 **[!UICONTROL 選擇]**。
+1. 在視頻的屬性頁面的右上角，選擇 **[!UICONTROL 保存並關閉]**。
+1. 在工具欄上，選擇 **[!UICONTROL 快速發佈]**。
 
-   [](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)
+   另請參閱 [將出版物管理與Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)。
 
-   You can optionally verify the published video on your YouTube channel.
+   您可以選擇驗證您的YouTube頻道上發佈的視頻。
 
-### (Optional) Verify the published video on YouTube {#optional-verifying-the-published-video-on-youtube}
+### （可選）驗證YouTube上發佈的視頻 {#optional-verifying-the-published-video-on-youtube}
 
-You can optionally monitor progress of your YouTube publishing (or unpublishing).
+您可以選擇監視YouTube發佈（或取消發佈）的進度。
 
-[](#monitoring-video-encoding-and-youtube-publishing-progress)
+請參閱 [監視視頻編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 
-Publishing times can vary greatly depending on numerous factors that include the format of your primary source video, file size, and upload traffic. The publishing process can take anywhere from a few minutes to several hours. Also, higher resolution formats are rendered much more slowly. For example, 720p and 1080p take longer to appear than 480p.
+發佈時間可能會有很大差異，具體取決於包括主源視頻格式、檔案大小和上載通信量在內的眾多因素。 發佈過程可能需要幾分鐘到幾個小時。 此外，解析度更高的格式的渲染速度要慢得多。 例如，720p和1080p的顯示時間要長於480p。
 
-****
+八小時後，如果您仍然看到狀態消息， **[!UICONTROL 已上載（正在處理，請稍候）]**，嘗試從您的站點刪除視頻，然後重新上載。
 
-### Link YouTube URLs to your Web Application {#linking-youtube-urls-to-your-web-application}
+### 將YouTubeURL連結到Web應用程式 {#linking-youtube-urls-to-your-web-application}
 
-You can obtain a YouTube URL string that is generated by Dynamic Media after you publish the video. When you copy the YouTube URL, it lands on the Clipboard so you can paste it as necessary to pages in your website or application.
+您可以獲取在發佈視頻後由Dynamic Media生成的YouTubeURL字串。 複製YouTubeURL時，它會降落到剪貼簿上，以便您可以根據需要貼上到網站或應用程式中的頁面。
 
 >[!NOTE]
-The YouTube URL is not available to copy until you have published the video asset to YouTube.
+在您將視頻資產發佈到YouTube之前，YouTubeURL不可複製。
 
-To link YouTube URLs to your web application:
+要將YouTubeURL連結到Web應用程式：
 
-1. **
+1. 導航到 *YouTube* 要複製其URL的視頻資產，然後選擇它。
 
-   ****
+   請記住，YouTubeURL僅可複製 *後* 你先 *出版* 視頻資產給YouTube。
 
-1. ****
-1. ****
-1. Under the YouTube Publishing heading, in the YouTube URL List, select, and copy the URL text to your web browser to preview the asset or to add to your web content page.
+1. 在工具欄上，選擇 **[!UICONTROL 屬性]**。
+1. 選擇 **[!UICONTROL 高級]** 頁籤。
+1. 在「YouTube發佈」標題下的「YouTubeURL清單」中，選擇URL文本並將其複製到Web瀏覽器以預覽資產或添加到Web內容頁面。
 
-### Unpublish videos so you can remove them from YouTube {#unpublishing-videos-to-remove-them-from-youtube}
+### 取消發佈視頻，以便從YouTube刪除 {#unpublishing-videos-to-remove-them-from-youtube}
 
-When you unpublish a video asset in Experience Manager, the video is removed from YouTube.
+在Experience Manager中取消發佈視頻資產時，該視頻將從YouTube刪除。
 
 >[!CAUTION]
-If you remove a video directly from within YouTube, Experience Manager is unaware and continues to behave as if the video is still published to YouTube. Always unpublish a video asset from YouTube by way of Experience Manager.
+如果直接從YouTube內刪除視頻，Experience Manager不會察覺，並繼續表現得好像該視頻仍然發佈到YouTube。 總是通過Experience Manager取消發佈來自YouTube的視頻資產。
 
 >[!NOTE]
-****
-[](#monitoring-video-encoding-and-youtube-publishing-progress)
+要從YouTube刪除內容，Experience Manager使用 **[!UICONTROL 從YouTube取消出版]** 工作流，它允許您監視進度並查看任何故障資訊。
+請參閱 [監視視頻編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 
-****
+**要取消發佈視頻以從YouTube刪除視頻，請：**
 
-1. Navigate to the video assets that you want to unpublish from your YouTube channel.
-1. In an asset selection mode, select one or more published video assets.
-1. ****`. . .`****
-1. ****
-1. ****
-1. ****
+1. 導航到要從您的YouTube頻道取消發佈的視頻資產。
+1. 在資產選擇模式中，選擇一個或多個已發佈視頻資產。
+1. 在工具欄上，選擇 **[!UICONTROL 管理發布]**。 如有必要，請選擇三點表徵圖(`. . .`) **[!UICONTROL 管理發布]**。
+1. 在「管理發布」頁上，選擇 **[!UICONTROL 取消發佈]**。
+1. 在頁面的右上角，選擇 **[!UICONTROL 下一個]**。
+1. 在頁面的右上角，選擇 **[!UICONTROL 取消發佈]**。
 
-## Monitor video encoding and YouTube publishing progress {#monitoring-video-encoding-and-youtube-publishing-progress}
+## 監視視頻編碼和YouTube發佈進度 {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-When you upload a new video to a folder that has video encoding applied or, you publish your video to YouTube, monitor how your video encoding/Youtube publishing is progressing (or failing). Actual YouTube publishing progress is only available by way of the logs. But whether it fails or succeeds, it is listed in other ways described in the following procedure. In addition, you receive email notifications when a YouTube publish workflow or video encoding completes or is interrupted.
+將新視頻上載到應用了視頻編碼的資料夾，或將視頻發佈到YouTube，監視視頻編碼/Youtube發佈的進展（或失敗）。 實際的YouTube發佈進度僅通過日誌提供。 但無論失敗還是成功，都會以下步驟中描述的其他方式列出。 此外，當YouTube發佈工作流或視頻編碼完成或中斷時，您會收到電子郵件通知。
 
-### Monitor progress {#monitoring-progress}
+### 監視進度 {#monitoring-progress}
 
-You can monitor progress, including failed encoding/YouTube publish.
+您可以監視進度，包括失敗的編碼/YouTube發佈。
 
-1. View video encoding progress in your assets folder:
+1. 查看資產資料夾中的視頻編碼進度：
 
-   * In card view, video encoding progress displays on the asset by percent. If there is an error, this information also displays on the asset.
+   * 在卡視圖中，按百分比顯示資產的視頻編碼進度。 如果出現錯誤，此資訊也會顯示在資產上。
 
-   ![](assets/chlimage_1-429.png)
+   ![chlimage_1-429](assets/chlimage_1-429.png)
 
-   * ****&#x200B;如果出現錯誤，則該欄會顯示此訊息。
+   * 在清單視圖中，視頻編碼進度顯示在 **[!UICONTROL 處理狀態]** 的雙曲餘切值。 如果出現錯誤，則該欄會顯示此訊息。
 
-   ![](assets/chlimage_1-430.png)
+   ![chlimage_1-430](assets/chlimage_1-430.png)
 
-   預設不會顯示此欄。************
+   預設不會顯示此欄。要啟用列，請選擇 **[!UICONTROL 查看設定]** 從「視圖」(views)下拉菜單中，添加 **[!UICONTROL 處理狀態]** 列和選擇 **[!UICONTROL 更新]**。
 
-   ![](/help/assets/dynamic-media/assets/chlimage_1-431.png)
+   ![chlimage_1-431](/help/assets/dynamic-media/assets/chlimage_1-431.png)
 
-1. View progress in the asset details. ********
+1. 查看資產詳細資訊中的進度。 選擇資產時，開啟下拉菜單並選擇 **[!UICONTROL 時間軸]**。 要將其縮小到工作流活動(如編碼或YouTube發佈)，請選擇 **[!UICONTROL 工作流]**。
 
-   ![](assets/chlimage_1-432.png)
+   ![chlimage_1-432](assets/chlimage_1-432.png)
 
-   Any workflow information--such as encoding--displays in the timeline. For YouTube publish, the Workflow timeline also includes the name of the YouTube channel and the YouTube video URL. In addition, you see any failure notifications in the Workflow timeline after the publish is complete.
+   所有工作流資訊（如編碼）都顯示在時間軸中。 對於YouTube發佈，工作流時間線還包括YouTube頻道和YouTube視頻URL的名稱。 此外，在發佈完成後，在工作流時間線中可以看到任何失敗通知。
 
    >[!NOTE]
-   ************[](https://localhost:4502/system/console/configMgr)
-   * Apache Sling Job Queue Configuration
-   * Adobe Granite Workflow External Process Job Handler
-   * Granite Workflow Timeout Queue
+   由於上的多個工作流配置，最終記錄失敗/錯誤消息可能需要很長時間 **[!UICONTROL 重試]**。 **[!UICONTROL 重試延遲]**, **[!UICONTROL 超時]** 從 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)，例如：
+   * Apache Sling作業隊列配置
+   * Adobe花崗岩工作流外部進程作業處理程式
+   * 花崗岩工作流超時隊列
 
-   ************
+   您可以調整 **[!UICONTROL 重試]**。 **[!UICONTROL 重試延遲]**, **[!UICONTROL 超時]** 屬性。
 
 1. 如需進行中的工作流程，請參閱「工具 **[!UICONTROL >工作流程]** >例項」中的「工作流程例 **[!UICONTROL 項」]******。
 
    >[!NOTE]
-   ****
+   您需要管理權限才能訪問 **[!UICONTROL 工具]** 的子菜單。
 
-   ![](assets/chlimage_1-433.png)
+   ![chlimage_1-433](assets/chlimage_1-433.png)
 
-   ****
+   選擇實例並選擇 **[!UICONTROL 開啟歷史記錄]**。
 
-   ![](/help/assets/dynamic-media/assets/chlimage_1-434.png)
+   ![chlimage_1-434](/help/assets/dynamic-media/assets/chlimage_1-434.png)
 
-   From the Workflow Instances area, you can also suspend, terminate, or rename workflows. [](/help/sites-cloud/authoring/workflows/overview.md)
+   在「工作流實例」(Workflow Instances)區域中，您還可以掛起、終止或更名工作流。 請參閱 [管理工作流](/help/sites-cloud/authoring/workflows/overview.md) 的子菜單。
 
 1. 有關失敗的作業，請參閱「工具」>「工作流 **[!UICONTROL 程」]** > 「失敗 **[!UICONTROL 」中的「工]** 作流失敗 ****」。「工作 **[!UICONTROL 流失敗]** 」(Workflow Failure)列出所有失敗的工作流活動。
 
    >[!NOTE]
-   ****
+   您需要管理權限才能訪問 **[!UICONTROL 工具]** 的子菜單。
 
-   ![](assets/chlimage_1-435.png)
+   ![chlimage_1-435](assets/chlimage_1-435.png)
 
    >[!NOTE]
-   ************[](https://localhost:4502/system/console/configMgr)
-   * Apache Sling Job Queue Configuration
-   * Adobe Granite Workflow External Process Job Handler
-   * Granite Workflow Timeout Queue
+   由於上的多個工作流配置，最終記錄錯誤消息可能需要很長時間 **[!UICONTROL 重試]**。 **[!UICONTROL 重試延遲]**, **[!UICONTROL 超時]** 從 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)，例如：
+   * Apache Sling作業隊列配置
+   * Adobe花崗岩工作流外部進程作業處理程式
+   * 花崗岩工作流超時隊列
 
-   ************
+   您可以調整 **[!UICONTROL 重試]**。 **[!UICONTROL 重試延遲]**, **[!UICONTROL 超時]** 屬性。
 
 1. 如需完成的工作流程，請參閱「工具 **[!UICONTROL >工作流程]** >封存 **[!UICONTROL 」中的「工作流程封存]******」。「工作 **[!UICONTROL 流程存檔]** 」會列出所有已完成的工作流活動。
 
    >[!NOTE]
-   ****
+   您需要管理權限才能訪問 **[!UICONTROL 工具]** 的子菜單。
 
-   ![](assets/chlimage_1-436.png)
+   ![chlimage_1-436](assets/chlimage_1-436.png)
 
-1. You receive email notifications about aborted or failed workflow jobs. These email notifications are configurable by an administrator. [](#configuring-e-mail-notifications)
+1. 您會收到有關已中止或失敗的工作流作業的電子郵件通知。 管理員可配置這些電子郵件通知。 請參閱 [配置電子郵件通知](#configuring-e-mail-notifications)。
 
 <!-- EMAIL NOT AVAILABLE IN SKYLINE
 
@@ -921,44 +920,46 @@ For YouTube publishing jobs, do the following:
 
 -->
 
-## View video reports {#viewing-video-reports}
+## 查看視頻報告 {#viewing-video-reports}
 
 >[!NOTE]
-Video reports are only available when you run Dynamic Media - Hybrid mode.
+視頻報告僅在您運行Dynamic Media — 混合模式時可用。
 
-** The following top metrics data are aggregated for all published videos across your entire website:
+視頻報告在指定的時段內顯示多個聚合度量，以幫助您監視 *出版* 單個視頻和聚合視頻正在按預期執行。 以下頂級度量資料將聚合到整個網站中所有已發佈的視頻：
 
 * 視訊開始
 * 完成率
-* Average time on video
-* Total time on video
-* Videos per visit
+* 視頻上的平均時間
+* 視頻總時間
+* 每次訪問的視頻
 
-**
+全部表 *出版* 還列出視頻，以便您可以根據總視頻開始時間跟蹤網站上最熱門的已查看視頻。
 
-When you select a video name in the list, it shows you the video’s audience retention (drop-off) report in the form of a line chart. The chart displays the number of views for any given moment of time during video playback. When you play the video, the vertical bar tracks in synchronization with the time indicator in the player. Drops in the line chart data indicate where your audience drops off from disinterest.
+在清單中選擇視頻名稱時，它將以折線圖的形式顯示視頻的觀眾保留（下拉）報告。 該圖表顯示視頻回放期間任意給定時間刻度的視圖數。 播放視頻時，竪條與播放器中的時間指示器同步跟蹤。 在折線圖資料中出現，表示您的受眾從不感興趣的位置。
 
-If the video was encoded outside of Adobe Experience Manager Dynamic Media, the audience retention (drop-off) chart and the Play Percentage data in the table are not available.
+如果視頻是在Adobe Experience ManagerDynamic Media之外編碼的，則表中的觀眾保留（下拉）圖和播放百分比資料不可用。
 
 >[!NOTE]
-Tracking and reporting data is based exclusively on the use of Dynamic Media’s own video player and associated video player preset. As such, you cannot track and report on videos that are played by way of other video players.
+跟蹤和報告資料完全基於使用動態媒體自己的視頻播放器和相關的視頻播放器預設。 因此，您無法跟蹤和報告通過其他視頻播放器播放的視頻。
 
-By default, the first time you enter Video Reports, the report displays video data starting at the first of the current month and ends with the current month&#39;s date. However, you can override the default date range by specifying your own date range. The next time you enter Video Reports, the date range you specified is used.
+預設情況下，在您首次輸入視頻報告時，該報告將顯示從當月的第一個開始到當月日期結束的視頻資料。 但是，您可以通過指定自己的日期範圍來覆蓋預設日期範圍。 下次輸入視頻報表時，將使用指定的日期範圍。
 
-For video reports to work correctly, a Report Suite ID is automatically created when Dynamic Media Cloud Services is configured. At the same time, the Report Suite ID is pushed to the Publish server so that it is available for the Copy URL feature when you preview assets. However, this functionality requires the Publish server be already set up. If the Publish server is not set up, you can still publish to see the video report. ****
+為使視頻報告正常工作，在配置Dynamic MediaCloud Services時會自動建立報表套件ID。 同時，將「報告套件ID」推送到「發佈」伺服器，以便在預覽資產時可以使用「複製URL」功能。 但是，此功能要求已設定發佈伺服器。 如果未設定「發佈」伺服器，您仍可以發佈以查看視頻報告。 但是，您必須返回Dynamic Media雲配置並選擇 **[!UICONTROL 確定]**。
 
-****
+**要查看視頻報告：**
 
-1. ************
-1. On the Video Reports page, do one of the following:
+1. 在Experience Manager的左上角，選擇Experience Manager徽標，然後在左滑軌中導航至 **[!UICONTROL 工具]** （錘子表徵圖）> **[!UICONTROL 資產]** > **[!UICONTROL 視頻報告]**。
+1. 在「視頻報告」頁上，執行下列操作之一：
 
-   * **** You use Refresh only if the end date of the report is the current day. This feature ensures that you see the video tracking that has occurred since the last time you ran the report.
+   * 在右上角處，選擇 **[!UICONTROL 刷新視頻報告]** 表徵圖
+僅當報表的結束日期為當前日期時，才使用「刷新」。 此功能可確保您查看自上次運行報告以來發生的視頻跟蹤。
 
-   * ********
+   * 在右上角處，選擇 **[!UICONTROL 日期選取器]** 表徵圖
+指定要獲取視頻資料的開始和結束日期範圍，然後選擇 **[!UICONTROL 運行報告]**。
 
-   **
+   「頂級度量」組框標識所有的各種聚合度量 *出版* 視頻。
 
-1. In the table that lists the top published videos, select a video name to play the video and also see the video’s audience retention (drop-off) report.
+1. 在列出頂級發佈視頻的表中，選擇視頻名稱來播放視頻，並查看視頻的觀眾保留（下拉）報告。
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT - SDK ONLY AVAILABLE INTERNALLY NOW 
 ### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
@@ -1024,79 +1025,79 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## Add closed captions or subtitles to video {#adding-captions-to-video}
+## 將隱藏字幕或字幕添加到視頻 {#adding-captions-to-video}
 
-You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
+通過將隱藏字幕添加到單個視頻或自適應視頻集，您可以將視頻的觸角擴展到全球市場。 通過添加隱藏式字幕，您不必對音頻進行調音，也不必使用母語人士為每種不同的語言重新錄制音頻。 視頻以錄制的語言播放。 外文字幕出現，使不同語言的人仍然能夠理解音頻部分。
 
-Closed captioning also allows for greater accessibility for people who are deaf or hard of hearing.
+閉式字幕還使聾啞或聽力障礙的人更容易獲得。
 
 >[!NOTE]
-The video player that you use must support the display of closed captions.
+您使用的視頻播放器必須支援隱藏字幕的顯示。
 
-[](/help/assets/dynamic-media/accessibility-dm.md)
+另請參閱 [Dynamic Media無障礙](/help/assets/dynamic-media/accessibility-dm.md)。
 
-Dynamic Media can convert caption files to JSON (JavaScript Object Notation) format. This conversion means you can embed the JSON text into a web page as a hidden but complete transcript of the video. Search engines can then crawl/index the content to make the videos more easily discoverable and give customers more details about the video content.
+Dynamic Media可以將字幕檔案轉換為JSON（JavaScript對象表示法）格式。 此轉換意味著您可以將JSON文本嵌入到網頁中，作為視頻的隱藏但完整的記錄。 然後，搜索引擎可以對內容進行爬網/索引，以使視頻更容易被發現，並為客戶提供有關視頻內容的更多詳細資訊。
 
-[](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)
+請參閱 [服務靜態（非影像）內容](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) 的子菜單。
 
-****
+**向視頻添加字幕或字幕：**
 
-1. Use a third-party application or service to create your video caption/subtitle file.
+1. 使用第三方應用程式或服務建立視頻字幕/副標題檔案。
 
-   Ensure that the file you create follows the WebVTT (Web Video Text Tracks) standard. The captioning filename extension is .VTT. You can learn more information about the WebVTT captioning standard.
+   確保您建立的檔案遵循WebVTT（Web視頻文本軌道）標準。 字幕檔案名副檔名為.VTT。 您可以瞭解有關WebVTT字幕標準的更多資訊。
 
-   [](https://w3c.github.io/webvtt/)
+   請參閱 [WebVTT:Web視頻字幕資訊格式](https://w3c.github.io/webvtt/)。
 
-   There are both free and premium tools and services that you can use to author caption/subtitle files outside Dynamic Media. For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool:
+   您可以使用免費和高級工具和服務來製作Dynamic Media以外的字幕/字幕檔案。 例如，要建立沒有樣式的簡單視頻標題檔案，可以使用以下免費聯機標題創作和編輯工具：
 
-   [](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   [WebVTT字幕製作](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
+   為獲得最佳結果，請在Internet Explorer 9或更高版本、GoogleChrome或Safari中使用該工具。
 
-   ********[](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)****&#x200B;然後，Internet Explorer、Chrome或Safari就可以原生播放視訊。
+   在工具中，在 **[!UICONTROL 輸入視頻檔案的URL]** 欄位，貼上視頻檔案的複製URL，然後選擇 **[!UICONTROL 載入]**。 請參閱 [獲取資產的URL](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) 獲取視頻檔案本身的URL，然後可以貼上到 **[!UICONTROL 輸入視頻檔案欄位的URL]**。 然後，Internet Explorer、Chrome或Safari就可以原生播放視訊。
 
-   Now follow the onscreen instructions from the site to author and save your WebVTT file. When you have finished, copy the caption file contents and paste it into a plain text editor and save it with a VTT filename extension.
+   現在，請按照網站的螢幕說明編寫並保存WebVTT檔案。 完成後，複製標題檔案內容並將其貼上到純文字檔案編輯器中，並使用VTT檔案副檔名將其保存。
 
    >[!NOTE]
-   For global support of video subtitles in multiple languages, the WebVTT standard requires that you create separate .vtt files and calls for each language you want to support.
+   為全局支援多語言視頻字幕，WebVTT標準要求您為要支援的每種語言建立單獨的.vtt檔案和調用。
 
-   Generally, you want to name the caption VTT file the same name as the video file, and append it with the language locale, such as -EN, or -FR, or -DE. By doing so, it can help you with automating the generation of the video URLs using your existing web content management system.
+   通常，您希望將標題VTT檔案命名為與視頻檔案同名，並使用語言區域設定（如 — EN、-FR或 — DE）附加它。 通過這樣做，它可以幫助您使用現有的Web內容管理系統自動生成視頻URL。
 
-1. In Experience Manager, upload your WebVTT caption file into DAM.
-1. **
+1. 在Experience Manager中，將WebVTT標題檔案上載到DAM。
+1. 導航到 *出版* 要與上載的標題檔案關聯的視頻資產。
 
    請記住，URL僅可在您首次發 *布資產* 後 *複製* 。
 
-   [](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   請參閱 [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-1. Do one of the following:
+1. 執行下列操作之一：
 
-   * **** In the URL dialog box, select and copy the URL to the Clipboard and then past the URL into a simple text editor. Append the copied URL of the video with the following syntax:
+   * 要獲得彈出式視頻查看器體驗，請選擇 **[!UICONTROL URL]**。 在「URL」對話框中，選擇URL並將其複製到剪貼簿，然後將URL傳到簡單文本編輯器中。 使用以下語法追加視頻的複製URL:
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      `,1``,1``,0`
+      注意 `,1` 標題路徑的末尾。 緊隨路徑中的VTT檔案副檔名後，您可以選擇啟用（開啟）或禁用（關閉）視頻播放器欄上的隱藏字幕按鈕，方法是將設定為 `,1` 或 `,0`的下界。
 
-   * **** In the Embed Code dialog box, select, and copy the embed code to the Clipboard and then paste the code into a simple text editor. Append the copied embed code with the following syntax:
+   * 對於嵌入式視頻查看器體驗，請選擇 **[!UICONTROL 嵌入代碼]**。 在「嵌入代碼」對話框中，選擇嵌入代碼並將其複製到剪貼簿，然後將代碼貼上到簡單的文本編輯器中。 使用以下語法追加複製的嵌入代碼：
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      `,1``,1``,0`
+      注意 `,1` 標題路徑的末尾。 緊隨路徑中的VTT檔案副檔名後，您可以選擇啟用（開啟）或禁用（關閉）視頻播放器欄上的隱藏字幕按鈕，方法是將設定為 `,1` 或 `,0`的下界。
 
-## Add chapter markers to video {#adding-chapter-markers-to-video}
+## 將章節標籤添加到視頻 {#adding-chapter-markers-to-video}
 
-You can make your long form videos easier to watch and navigate by adding chapter markers to single videos or to Adaptive Video Sets. When a user plays the video, they can select the chapter markers on the video timeline (also known as the video scrubber). They can easily navigate to their point of interest, or immediately jump to new content, training, and demonstrations.
+通過向單個視頻或自適應視頻集添加章節標籤，您可以更輕鬆地觀看和導航長格式視頻。 當用戶播放視頻時，他們可以選擇視頻時間軸上的章節標籤（也稱為視頻掃描器）。 他們可以輕鬆找到自己的興趣點，或立即跳到新內容、培訓和演示中。
 
 >[!NOTE]
-The video player that is used must support the use of chapter markers. Dynamic Media video players do support chapter markers but using third-party video players may not.
+使用的視頻播放器必須支援使用章節標籤。 Dynamic Media視頻播放器確實支援章節標籤，但使用第三方視頻播放器可能不支援。
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-You create a chapter list for your video in much the same way that you create captions. That is, you create a WebVTT file. Note, however, that this file must be separate from any WebVTT caption file. You cannot combine captions and chapters into one WebVTT file.
+您為視頻建立章節清單的方式與建立字幕的方式大致相同。 即，建立WebVTT檔案。 但請注意，此檔案必須與任何WebVTT標題檔案分開。 不能將字幕和章節合併為一個WebVTT檔案。
 
-You can use the following sample as an example of the format you use to create a WebVTT file with chapter navigation:
+您可以使用以下示例作為建立WebVTT檔案時使用章節導航的格式的示例：
 
-### WebVTT file with video chapter navigation {#webvtt-file-with-video-chapter-navigation}
+### 具有視頻章節導航的WebVTT檔案 {#webvtt-file-with-video-chapter-navigation}
 
 ```xml
 WEBVTT
@@ -1114,47 +1115,47 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-`Chapter 1``00:00:000 --> 01:04:364``00:00:000``000``The bicycle store behind it all`The cue identifier, the starting cue time, and the chapter title all appear in a pop-up in the video player when a user hovers their mouse pointer over a visual cue point in the timeline.
+在上例中， `Chapter 1` 是提示標識符，是可選的。 的提示時間 `00:00:000 --> 01:04:364` 指定本章的開始時間和結束時間，在 `00:00:000` 的子菜單。 最後三位數是毫秒，可以保留為 `000`，也請參見Wiki頁。 章標題 `The bicycle store behind it all` 是本章內容的實際描述。 當用戶將滑鼠指針懸停在時間軸中的視覺提示點上時，提示標識符、開始提示時間和章節標題都顯示在視頻播放器的彈出窗口中。
 
-Because you are using an HTML5 video viewer, ensure that the chapter file you create follows the WebVTT (Web Video Text Tracks) standard. The chapter filename extension is .VTT. You can learn more information about the WebVTT captioning standard.
+由於您使用的是HTML5視頻查看器，因此請確保您建立的章節檔案遵循WebVTT（Web視頻文本軌道）標準。 章檔案名副檔名為.VTT。 您可以瞭解有關WebVTT字幕標準的更多資訊。
 
-[](https://w3c.github.io/webvtt/)
+請參閱 [WebVTT:Web視頻字幕資訊格式](https://w3c.github.io/webvtt/)。
 
-****
+**要將章節標籤添加到視頻：**
 
-1. Save the VTT file in UTF8 encoding so you avoid problems with character rendition in the chapter title text.
+1. 以UTF8編碼保存VTT檔案，以避免在章節標題文本中出現字元格式副本問題。
 
-   Generally, you want to name the chapter VTT file the same name as the video file, and append it with chapters. By doing so, it can help you with automating the generation of the video URLs using your existing web content management system.
-1. In Experience Manager, upload your WebVTT chapter file.
+   通常，您希望將VTT章檔案命名為與視頻檔案同名，並在其後添加章節。 通過這樣做，它可以幫助您使用現有的Web內容管理系統自動生成視頻URL。
+1. 在Experience Manager中，上載WebVTT章節檔案。
 
-   [](/help/assets/manage-digital-assets.md#uploading-assets)
+   請參閱 [上載資產](/help/assets/manage-digital-assets.md#uploading-assets)。
 
-1. Do one of the following:
+1. 執行下列操作之一：
 
    <table>
      <tbody>
       <tr>
-       <td>For a pop-up video viewer experience</td>
+       <td>用於彈出式視頻查看器體驗</td>
        <td>
        <ol>
-       <li><i></i>請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。<a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md"></a></li>
-       <li><strong></strong></li>
-       <li>In the left rail, select the video viewer preset name. A preview of the video is opened in a separate page.</li>
-       <li><strong></strong></li>
-       <li>In the URL dialog box, select and copy the URL to the Clipboard, then past the URL into a simple text editor.</li>
-       <li><br /><br /><code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
+       <li>導航到 <i>出版 </i>要與上載的章節檔案關聯的視頻資產。 請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。請參閱 <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">發佈資產。</a></li>
+       <li>從下拉菜單中，選擇 <strong>查看者</strong>。</li>
+       <li>在左滑軌中，選擇視頻查看器預設名稱。 視頻的預覽在單獨的頁面中開啟。</li>
+       <li>在左滑軌底部，選擇 <strong>URL</strong>。</li>
+       <li>在「URL」對話框中，選擇URL並將其複製到剪貼簿，然後將URL傳到簡單文本編輯器中。</li>
+       <li>使用以下語法添加視頻的複製URL，以便您可以將其與複製的URL關聯到章節檔案：<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
       </tr>
       <tr>
-       <td><br /> </td>
+       <td>嵌入式視頻查看器體驗<br /> </td>
        <td>
        <ol>
-       <li><i></i>請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。<a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md"></a></li>
-       <li><strong></strong></li>
-       <li>In the left rail, select the video viewer preset name. A preview of the video is opened in a separate page.</li>
-       <li><strong></strong></li>
-       <li>In the Embed Code dialog box, select, and copy the entire code to the Clipboard, then paste it into a simple text editor.</li>
-       <li>Append the embed code of the video with the following syntax so you can associate it with the copied URL to your chapter file:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt>"</code></li>
+       <li>導航到 <i>出版 </i>要與上載的章節檔案關聯的視頻資產。 請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。請參閱 <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">發佈資產。</a></li>
+       <li>從下拉菜單中，選擇 <strong>查看者</strong>。</li>
+       <li>在左滑軌中，選擇視頻查看器預設名稱。 視頻的預覽在單獨的頁面中開啟。</li>
+       <li>在左滑軌底部，選擇 <strong>嵌入</strong>。</li>
+       <li>在「嵌入代碼」對話框中，選擇整個代碼並將其複製到剪貼簿，然後將其貼上到簡單的文本編輯器中。</li>
+       <li>使用以下語法添加視頻的嵌入代碼，以便您可以將其與複製的URL關聯到章節檔案：<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt>"</code></li>
        </ol> </td>
       </tr>
      </tbody>
