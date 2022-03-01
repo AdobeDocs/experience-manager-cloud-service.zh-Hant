@@ -1,10 +1,10 @@
 ---
 title: 內容傳輸工具入門
 description: 內容傳輸工具入門
-source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
+source-git-commit: 0951942690949c23a99da3494526c1c78e7bcf22
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 27%
+source-wordcount: '1069'
+ht-degree: 22%
 
 ---
 
@@ -97,7 +97,7 @@ ht-degree: 27%
          ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
-         >如果您打算將版本作為遷移集的一部分包括，並且正在執行 `wipe=false`，則由於內容傳輸工具中的當前限制，必須禁用版本清除。 如果您希望啟用版本清除功能，並在遷移集中執行頂置操作，則必須將接收操作執行為 `wipe=true`。
+         >如果您打算將版本作為遷移集的一部分包括，並且正在執行 `wipe=false`，則由於內容傳輸工具中的當前限制，您必須禁用版本清除。 如果您希望啟用版本清除功能，並在遷移集中執行頂置操作，則必須將接收操作執行為 `wipe=true`。
 
 
       1. **欲包含的路徑**：使用路徑瀏覽器來選取需要移轉的路徑。路徑選取器通過鍵入或選擇接受輸入。
@@ -125,6 +125,44 @@ ht-degree: 27%
 1. 選擇遷移集並按一下 **屬性** 查看或編輯遷移集屬性。 編輯屬性時，無法更改 **遷移集名稱** 或 **服務URL**。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+
+### 確定遷移集大小和磁碟空間 {#migration-set-size}
+
+建立遷移集後，強烈建議在啟動抽取進程之前對遷移集運行大小檢查。
+通過對遷移集運行大小檢查，您將能夠：
+* 確定磁碟空間是否足夠 `crx-quickstart` 子目錄以成功完成提取。
+* 確定遷移集大小是否在支援的產品限制範圍內，並避免內容攝取失敗。
+
+按照以下步驟運行大小檢查：
+
+1. 選擇遷移集並按一下 **檢查大小**。
+
+   ![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
+
+1. 這將開啟 **檢查大小** 對話框。
+
+   ![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
+
+1. 按一下 **檢查大小** 以啟動進程。 然後，您將返回到遷移集清單視圖，您應看到一條消息，指出 **檢查大小** 正在運行。
+
+   ![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
+
+
+1. 一次 **檢查大小** 進程已完成，狀態將更改為 **已完成**。 選擇同一遷移集，然後按一下 **檢查大小** 的子菜單。
+
+   ![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
+
+   下面是 **檢查大小** 結果沒有警告。
+
+   ![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
+
+1. 如果 **檢查大小** 結果表明磁碟空間不足和/或遷移集超出產品限制， **警告** 將顯示狀態。
+
+![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+
+下面是 **檢查大小** 結果帶有警告。
+
+![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 
 
 ## 下一步是什麼 {#whats-next}
