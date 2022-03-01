@@ -4,9 +4,9 @@ description: 瞭解如何在Dynamic Media使用視頻，如編碼視頻、向You
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: e1f0b04dde2eb5a3392a0b9befbc56135b06cff4
+source-git-commit: efdb8304197a76e66e71d6f7b5c510216ac5ff7e
 workflow-type: tm+mt
-source-wordcount: '9361'
+source-wordcount: '9368'
 ht-degree: 4%
 
 ---
@@ -443,11 +443,11 @@ Google定期更改其用戶介面。 因此，向YouTube發佈視頻的步驟與
    如果您已擁有Google帳戶，則可以跳至下一步。
 
 1. 轉到 [https://cloud.google.com/](https://cloud.google.com/)。
-1. 在Google雲頁面右上角附近，選擇 **[!UICONTROL 控制台]**。
+1. 在 **[!UICONTROL Google雲]** 頁面，靠近右上角，選擇 **[!UICONTROL 控制台]**。
 
    如有必要， **[!UICONTROL 登錄]** 使用你的Google帳戶憑據查看 **[!UICONTROL 控制台]** 的雙曲餘切值。
 
-1. 在儀表板頁面的右側 **[!UICONTROL Google雲平台]**，選擇 **[!UICONTROL 項目]** 下拉清單以開啟 **[!UICONTROL 選擇項目]** 對話框。
+1. 在 **[!UICONTROL 儀表板]** 頁，位於 **[!UICONTROL Google雲平台]**，選擇 **[!UICONTROL 項目]** 下拉清單以開啟 **[!UICONTROL 選擇項目]** 對話框。
 1. 在 **[!UICONTROL 選擇項目]** 對話框，選擇 **[!UICONTROL 新建項目]**。
 1. 在 **[!UICONTROL 新建項目]** 對話框 **[!UICONTROL 項目名稱]** 的子菜單。
 
@@ -467,8 +467,8 @@ Google定期更改其用戶介面。 因此，向YouTube發佈視頻的步驟與
 
    ![6_5_googleaccount-apis manage](assets/6_5_googleaccount-apis-manage.png)
 
-1. 要使用API，需要憑據。 如有必要，在「APIs &amp; Services」頁的左側，選擇 **[!UICONTROL 憑據]**。
-1. 在「憑據」頁面頂部附近，選擇 **[!UICONTROL 建立憑據]**，然後選擇 **[!UICONTROL OAuth客戶端ID]**。
+1. 要使用API，需要憑據。 如有必要，請在 **[!UICONTROL API和服務]** ，選擇 **[!UICONTROL 憑據]**。
+1. 在 **[!UICONTROL 憑據]** 頁，靠近頂部，選擇 **[!UICONTROL 建立憑據]**，然後選擇 **[!UICONTROL OAuth客戶端ID]**。
 1. 在 **[!UICONTROL 建立OAuth客戶端ID]** 的 **[!UICONTROL 應用程式類型]** 下拉清單，選擇 **[!UICONTROL Web應用程式]**。
 
    ![6_5_googleaccount-apis應用程式類型](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
@@ -488,9 +488,9 @@ Google定期更改其用戶介面。 因此，向YouTube發佈視頻的步驟與
 
    例如， `https://1a2b3c.mycompany.com:4321`
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >上面的示例路徑是假設路徑，僅供說明之用。
+   >上面的URI路徑示例是假設的，僅供說明之用。
 
 1. 在 **[!UICONTROL 授權重定向URI]** 標題，選擇「添加URI」。
 1. 在 **[!UICONTROL URI]** 文本欄位，輸入以下路徑，替換路徑中的域和埠號，然後按 **[!UICONTROL 輸入]** 將路徑添加到清單：
@@ -499,14 +499,14 @@ Google定期更改其用戶介面。 因此，向YouTube發佈視頻的步驟與
 
    例如， `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >上面的示例路徑是假設路徑，僅供說明之用。
+   >上面的URI路徑示例是假設的，僅供說明之用。
 
 1. 靠近 **[!UICONTROL 建立OAuth客戶端ID]** ，選擇 **[!UICONTROL 建立]**。
 1. 在 **[!UICONTROL 已建立OAuth客戶端]** 對話框，執行以下操作：
 
-   * （可選）複製您的客戶端ID和客戶端密碼並保存。
+   * （可選）複製 **[!UICONTROL 您的客戶端ID]** 和 **[!UICONTROL 您的客戶機密碼]** 欄位，然後保存。
    * 選擇 **[!UICONTROL 下載JSON]**，然後保存JSON檔案。
 
    稍後在Adobe Experience Manager設定YouTube時，需要此下載的JSON檔案。
