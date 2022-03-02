@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 86b1677b79f64c2d4ddfa260f17021da068283c9
 workflow-type: tm+mt
 source-wordcount: '3434'
-ht-degree: 42%
+ht-degree: 43%
 
 ---
 
@@ -104,8 +104,8 @@ ht-degree: 42%
    + [遷移指南，以Experience Manager合作夥伴的as a Cloud Service](/help/journey-migration/getting-started-partners.md)
    + 遷移工具發行說明 {#release-notes-migration-tools}
       + [最新發行說明 (2022.2.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [2022.1.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 {#2021}
-         + [2022.1.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
          + [2021.12.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [2021.11.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [2021.10.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
@@ -499,7 +499,7 @@ ht-degree: 42%
       + [建立元件](/help/screens-cloud/developing/creating-components.md)
       + [為螢幕開發自定義元件as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [螢幕as a Cloud Service常見問題](/help/screens-cloud/screens-cloud-faqs.md)
-+ 內容和商務 {#content-and-commerce}
++ Content and Commerce {#content-and-commerce}
    + [AEM 內容與商務](/help/commerce-cloud/home.md)
    + [內容和商AEM務as a Cloud Service的顯著變化](/help/commerce-cloud/changes.md)
    + [簡介和概述](/help/commerce-cloud/introduction.md)
@@ -701,7 +701,7 @@ ht-degree: 42%
       + [AEM 專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 專案存放庫結構套件](/help/implementing/developing/introduction/repository-structure-package.md)
       + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-      + [AEM as a Cloud Service 開發方針](/help/implementing/developing/introduction/development-guidelines.md)
+      + [AEM as a Cloud Service 開發指導方針](/help/implementing/developing/introduction/development-guidelines.md)
       + [記錄](/help/implementing/developing/introduction/logging.md)
       + [配置和配置瀏覽器](/help/implementing/developing/introduction/configurations.md)
       + [技AEM術基礎](/help/implementing/developing/introduction/aem-technologies.md)
