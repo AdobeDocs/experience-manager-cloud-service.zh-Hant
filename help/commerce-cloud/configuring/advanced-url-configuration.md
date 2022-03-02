@@ -10,20 +10,20 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 92cb864f71b5e98bf98519a3f5be6469802be0e4
+source-git-commit: af07bce8618c7b13b4dc5e287c7218316029f565
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 3%
 
 ---
 
-# Advanced URL Configurations {#url}
+# 高級URL配置 {#url}
 
 >[!NOTE]
 >
-> 搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，在許多 Adobe Experience Manager (AEM) as a Cloud Service 專案中，SEO 考量都是需要解決的問題。Please read [SEO and URL Management Best Practices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html) for additional information.
+> 搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，在許多 Adobe Experience Manager (AEM) as a Cloud Service 專案中，SEO 考量都是需要解決的問題。請閱讀 [SEO和URL管理最佳實踐](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html) 的雙曲餘切值。
 
-[AEMCIF核心元件](https://github.com/adobe/aem-core-cif-components) 提供高級配置，以自定義產品和類別頁的URL。 許多實現將自定義這些URL以用於搜索引擎優化(SEO)。 The following video details how to configure the `UrlProvider` Service and features of [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) to customize the URLs for product and category pages.
+[AEMCIF核心元件](https://github.com/adobe/aem-core-cif-components) 提供高級配置，以自定義產品和類別頁的URL。 許多實現將自定義這些URL以用於搜索引擎優化(SEO)。 以下視頻詳細資訊如何配置 `UrlProvider` 服務和功能 [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 自定義產品和類別頁的URL。
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
@@ -33,11 +33,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Since release 2.0.0 of the AEM CIF Core Components, the URL Provider configuration only provides pre-defined URL formats, instead of the free-text configureable formats known from 1.x releases. 此外，使用選擇器傳遞URL中的資料已被尾碼取代。
+> 自CIF核心元件2.0.0版以來，URL提供程式配置僅提供預定義的URL格式，而不提供1.x版中已知的自由文本配置格式。 此外，使用選擇器傳遞URL中的資料已被尾碼取代。
 
 ### 產品頁URL格式 {#product}
 
-This configures the URLs of the product pages and supports the following options:
+這將配置產品頁的URL，並支援以下選項：
 
 * `{{page}}.html/{{sku}}.html#{{variant_sku}}` (預設)
 * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
@@ -49,13 +49,13 @@ This configures the URLs of the product pages and supports the following options
 
 對於 [Venia參考儲存](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` will be replaced by `/content/venia/us/en/products/product-page`
+* `{{page}}` 將替換為 `/content/venia/us/en/products/product-page`
 * `{{sku}}` 將被產品的sku替換，例如 `VP09`
 * `{{url_key}}` 將被產品的 `url_key` 屬性，例如 `lenora-crochet-shorts`
 * `{{url_path}}` 將被產品的 `url_path`，例如 `venia-bottoms/venia-pants/lenora-crochet-shorts`
 * `{{variant_sku}}` 將替換為當前選定的變型，例如 `VP09-KH-S`
 
-Since the `url_path` got deprecated, the pre-defined product URL formats use a product&#39;s `url_rewrites` and pick the one with the most path segmenents as alternative if the `url_path` is not available.
+自 `url_path` 已棄用，預定義的產品URL格式使用產品 `url_rewrites` 選擇路徑段最多的路徑段， `url_path` 不可用。
 
 使用上面的示例資料，使用預設URL格式格式化的產品變型URL將看起來類似 `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`。
 
@@ -76,9 +76,9 @@ Since the `url_path` got deprecated, the pre-defined product URL formats use a p
 
 >[!NOTE]
 > 
-> The `url_path` is a concatenation of the `url_keys` of a product or category&#39;s ancestors and the product or category&#39;s `url_key` separated by `/` slash. Each `url_key` is considered unique within a given store.
+> 的 `url_path` 是 `url_keys` 產品或類別的祖先和產品或類別的 `url_key` 分隔 `/` 斜線。 每個 `url_key` 在給定商店中被認為是唯一的。
 
-### Store Specific Configuration {#store-specific-urlformats}
+### 儲存特定配置 {#store-specific-urlformats}
 
 系統範圍的類別和產品頁面URL格式由 _CIF URL提供程式配置_ 可以為每個商店更改。
 
@@ -90,9 +90,9 @@ Since the `url_path` got deprecated, the pre-defined product URL formats use a p
 
 >[!NOTE]
 >
-> The store specific configuration of the URL formats require [CIF Core Components 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) and the latest version of the Adobe Experience Manager Content and Commerce add-on.
+> URL格式的儲存特定配置需要 [CIF核心元件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 以及Adobe Experience Manager內容與商業附加軟體的最新版本。
 
-## Category-Aware Product Page URLs {#context-aware-pdps}
+## 類別感知產品頁URL {#context-aware-pdps}
 
 由於可以對產品URL中的類別資訊進行編碼，因此可以用多個產品URL對處於多個類別的產品進行定址。
 
@@ -105,7 +105,7 @@ Since the `url_path` got deprecated, the pre-defined product URL formats use a p
 
 此方案將選擇 `url_path` 基於子類別比其父類別更具體的假設。 所選 `url_path` 考慮 _正則_ 並且將始終用作產品頁面或產品站點地圖中的規範連結。
 
-但是，當購物者從類別頁導航到產品頁，或從一個產品頁導航到同一類別中的另一個相關產品頁時，保留當前類別上下文是值得的。 In this case the `url_path` selection should prefer alternatives, that are within the current category context over the _canonical_ selection described above.
+但是，當購物者從類別頁導航到產品頁，或從一個產品頁導航到同一類別中的另一個相關產品頁時，保留當前類別上下文是值得的。 在本例中， `url_path` 選擇應選擇在當前類別上下文內而不是 _正則_ 中。
 
 必須在 _CIF URL提供程式配置_。 如果啟用，則選擇的備選項分數將更高
 
@@ -158,7 +158,7 @@ Since the `url_path` got deprecated, the pre-defined product URL formats use a p
 
 根據類別，選擇特定類別頁面是直接向前的 `url_path` 或 `url_key`。 僅對包含完整類別的URL格式支援匹配子類別 `url_path`。 否則，僅與 `url_key` 可能。
 
-特定產品頁面按產品的sku或類別進行選擇。 後者要求在產品URL中編碼某些類別資訊。 這僅適用於某些預設URL格式。 Please refer to the table below for a comparision which URL format supports specific page selection by sku or category.
+特定產品頁面按產品的sku或類別進行選擇。 後者要求在產品URL中編碼某些類別資訊。 這僅適用於某些預設URL格式。 有關URL格式支援按sku或類別選擇特定頁面的比較，請參閱下表。
 
 
 | URL格式 | 按sku | 按類別 |
@@ -177,21 +177,21 @@ Since the `url_path` got deprecated, the pre-defined product URL formats use a p
 >
 > 按類別選擇特定產品頁面需要 [CIF核心元件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 或更新。
 
-### Depp連結 {#specific-pages-deep-linking}
+### 深度連結 {#specific-pages-deep-linking}
 
 的 `UrlProvider` 預配置為在作者層實例上生成指向特定類別和產品頁的深層連結。 這對編輯器非常有用，編輯器使用「預覽」模式瀏覽網站，導航到特定產品或類別頁面並切換回「編輯」模式以編輯該頁面。
 
-On publish tier instances on the other hand, catalog page URLs should be kept stable to not lose gains on search engine rankings for example. 由於該發佈層實例將不會在預設情況下呈現指向特定目錄頁的深度連結。 要更改此行為， _CIF URL提供程式特定頁面策略_ 可以配置為始終生成特定頁URL。
+另一方面，在發佈層實例上，目錄頁URL應保持穩定，以避免在搜索引擎排名上失利。 由於該發佈層實例將不會在預設情況下呈現指向特定目錄頁的深度連結。 要更改此行為， _CIF URL提供程式特定頁面策略_ 可以配置為始終生成特定頁URL。
 
 ## 自定義 {#customization}
 
 ### 自定義URL格式 {#custom-url-format}
 
-要提供自定義URL格式，項目可以 [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) 或 [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) 服務介面，將實現註冊為OSGI服務。 Those implementations, if available, will replace the configured, pre-defined format. If there are multiple implementations registered, the one with the higher service ranking replaces the one(s) with the lower service ranking.
+要提供自定義URL格式，項目可以 [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) 或 [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) 服務介面，將實現註冊為OSGI服務。 如果可用，這些實現將替換已配置的預定義格式。 如果註冊了多個實現，則具有較高服務等級的實現用較低服務等級代替所述一個或多個實現。
 
 自定義URL格式實現必須實現一對方法，以從給定參數構建URL，並分析URL以分別返回相同的參數。
 
-### Combine with Sling Mappings {#sling-mapping}
+### 與Sling映射組合 {#sling-mapping}
 
 除 `UrlProvider`，也可以配置 [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 以便重寫和處理URL。 Archetype項AEM目還提供 [示例配置](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) 為埠4503（發佈）和80（調度程式）配置某些Sling映射。
 
@@ -233,10 +233,10 @@ _**在URL長度和編碼資訊之間平衡。**_
 
 >[!NOTE]
 >
->此配置必須與項目使用的外部域一起調整。 Sling映射基於主機名和域工作。 因此，預設情況下禁用此配置，並且必須在部署之前啟用此配置。 To do so rename the Sling Mapping `hostname.adobeaemcloud.com` folder in `ui.content/src/main/content/jcr_root/etc/map.publish/https` according to the used domain name and enable this config by adding `resource.resolver.map.location="/etc/map.publish"` to the `JcrResourceResolver` config of the project.
+>此配置必須與項目使用的外部域一起調整。 Sling映射基於主機名和域工作。 因此，預設情況下禁用此配置，並且必須在部署之前啟用此配置。 要執行此操作，請更名Sling映射 `hostname.adobeaemcloud.com` 資料夾 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 根據使用的域名，通過添加 `resource.resolver.map.location="/etc/map.publish"` 到 `JcrResourceResolver` 項目的配置。
 
 ## 其他資源 {#additional}
 
 * [Venia參考儲存](https://github.com/adobe/aem-cif-guides-venia)
 * [資AEM源映射](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
-* [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+* [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
