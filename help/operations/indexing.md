@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6c223af722c24e96148146da9a2aa1c055486407
+source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2366'
 ht-degree: 1%
 
 ---
@@ -36,8 +36,9 @@ ht-degree: 1%
 1. 客戶可以在Cloud Manager生成頁上查看索引作業是否已完成，並將在新版本準備好接收通信時收到通知。
 
 1. 限制:
-* 目前，只支援AEMlucene類型的索引對as a Cloud Service進行索引管理。
+* 目前，只支援AEM類型的索引對as a Cloud Service進行索引管理 `lucene`。
 * 僅支援標準分析器（即隨產品一起發運的分析器）。 不支援自定義分析器。
+* 在內部，可以配置其他索引並將其用於查詢。 例如，針對 `damAssetLucene` 在Skyline上，索引實際上可能針對此索引的Elasticsearch版本執行。 這種差異通常對應用程式和用戶不可見，但某些工具(如 `explain` 功能將報告其他索引。 有關Lucene索引和Elastic索引之間的差異，請參見 [Apache Jackrabbit Oak中的彈性文檔](https://jackrabbit.apache.org/oak/docs/query/elastic.html)。 客戶不需要也不能直接配置Elasticsearch索引。
 
 ## 使用方式 {#how-to-use}
 
@@ -129,7 +130,9 @@ ht-degree: 1%
 
 ### 採用藍綠部署的索引管理 {#index-management-with-blue-green-deployment}
 
-藍綠部署時，不會停機。 但是，對於索引管理，這要求索引僅由應用程式的某些版本使用。 例如，在應用程式版本2中添加索引時，您不希望該索引被應用程式版本1使用。 如果刪除索引，則情況正好相反：在版本2中刪除的索引在版本1中仍然需要。 更改索引定義時，我們希望舊版本的索引僅用於版本1，而新版本的索引僅用於版本2。
+藍綠部署時，不會停機。 在升級期間，應用程式的舊版本（例如，版本1）和新版本（版本2）在同一儲存庫上同時運行。 如果版本1要求某個索引可用，則不能在版本2中刪除此索引：以後應刪除索引，例如在版本3中，此時將保證應用程式版本1不再運行。 此外，應編寫應用程式，使版本1工作正常，即使版本2正在運行，並且版本2的索引可用。
+
+升級到新版本後，舊索引可被系統垃圾回收。 舊索引可能仍會保留一段時間，以加快回滾（如果需要回滾）。
 
 下表顯示了五個索引定義：索引 `cqPageLucene` 在兩個版本中使用，而索引 `damAssetLucene-custom-1` 僅在版本2中使用。
 
@@ -160,7 +163,7 @@ ht-degree: 1%
 
 ### 當前限制 {#current-limitations}
 
-當前僅支援類型索引的索引管理 `lucene`。
+當前僅支援類型索引的索引管理 `lucene`。 在內部，可以配置其他索引並將其用於查詢，例如彈性索引。
 
 ### 添加索引 {#adding-an-index}
 
