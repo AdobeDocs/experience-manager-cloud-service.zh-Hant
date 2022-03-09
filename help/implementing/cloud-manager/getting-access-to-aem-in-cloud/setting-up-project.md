@@ -1,38 +1,40 @@
 ---
-title: 項目設定詳細資訊
-description: 項目設定詳細資訊 — Cloud Services
+title: 項目設定
+description: 瞭解如AEM何使用Maven構建項目以及建立自己的項目時必須遵守的標準。
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 4219c8ce30a0f1cd44bbf8e8de46d6be28a1ddf3
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 5%
+source-wordcount: '1264'
+ht-degree: 1%
 
 ---
 
-# 設定項目 {#project-setup-details}
+# 項目設定 {#project-setup}
 
-## 修改項目設定詳細資訊 {#modifying-project-setup-details}
+瞭解如AEM何使用Maven構建項目以及建立自己的項目時必須遵守的標準。
 
-為了使用Cloud Manager成功構建和部署，現有項AEM目需要遵守一些基本規則：
+## 項目設定詳細資訊 {#project-setup-details}
 
-* 必須使用Apache Maven生成項目。
-* 一定有 *pom.xml* 檔案。 此 *pom.xml* 檔案可以引用多個子模組（這些子模組又可能具有其他子模組等）。 必要時。
+為了使用Cloud Manager成功構建和部署，項AEM目需要遵循以下准則：
 
-* 您可以在中添加對其他Maven項目儲存庫的引用 *pom.xml* 的子菜單。 訪問 [受密碼保護的項目儲存庫](#password-protected-maven-repositories) 配置時支援。 但是，不支援訪問受網路保護的項目儲存庫。
-* 通過掃描內容包來發現可部署的內容包 *郵遞區號* 包含在名為 *目標*。 任意數量的子模組可以生成內容包。
-
-* 可部署的Dispatcher對象通過掃描來發現 *郵遞區號* 檔案(同樣，包含在名為 *目標*)，其目錄名為 *會議* 和 *conf.d*。
-
-* 如果有多個內容包，則無法保證包部署的順序。 如果需要特定訂單，則可以使用內容包依賴項來定義訂單。 包可能 [跳過](#skipping-content-packages) 從部署。
-
+* 必須使用 [阿帕奇·馬文。](https://maven.apache.org)
+* 一定有 `pom.xml` 檔案。 此 `pom.xml` 檔案可以引用多個子模組（這些子模組又可能具有其他子模組等）。 必要時。
+* 您可以在中添加對其他Maven項目儲存庫的引用 `pom.xml` 的子菜單。
+   * 訪問 [受密碼保護的項目儲存庫](#password-protected-maven-repositories) 配置時支援。 但是，不支援訪問受網路保護的項目儲存庫。
+* 通過掃描內容包來發現可部署的內容包 `.zip` 檔案，包含在名為 `target`。
+   * 任意數量的子模組可以生成內容包。
+* 可部署的調度器對象通過掃描 `.zip` 檔案(也包含在名為 `target`)，其目錄名為 `conf` 和 `conf.d`。
+* 如果有多個內容包，則無法保證包部署的順序。
+   * 如果需要特定訂單，則可以使用內容包依賴項來定義訂單。
+* 包可能 [跳過](#skipping-content-packages) 在部署期間。
 
 ## 在雲管理器中激活Maven配置檔案 {#activating-maven-profiles-in-cloud-manager}
 
-在某些有限情況下，在Cloud Manager內運行時，您可能需要稍微改變構建過程，而不是在開發人員工作站上運行。 對於這些案件， [馬文配置檔案](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) 可用於定義構建在不同環境（包括雲管理器）中的不同方式。
+在某些有限情況下，在Cloud Manager內運行時，您可能需要稍微改變構建過程，而不是在開發人員工作站上運行。 對於這些案件， [Maven配置檔案](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) 可用於定義構建在不同環境（包括雲管理器）中的不同方式。
 
-在Cloud Manager生成環境中激活Maven Profile時，應查找上述CM_BUILD環境變數。 相反，應通過查找此變數的缺失來完成一個僅在Cloud Manager構建環境之外使用的配置檔案。
+在Cloud Manager構建環境中激活Maven配置檔案應通過查找 `CM_BUILD` [環境變數。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 同樣，應通過查找此變數的缺失來完成一個僅在Cloud Manager構建環境之外使用的配置檔案。
 
-例如，如果您希望僅在在雲管理器內運行生成時才輸出一條簡單消息，則您將執行以下操作：
+例如，如果您希望僅在在雲管理器內運行生成時才輸出一條簡單消息，則應執行此操作。
 
 ```xml
         <profile>
@@ -70,7 +72,7 @@ ht-degree: 5%
 >
 >要在開發人員工作站上test此配置式，您可以在命令行上啟用它(使用 `-PcmBuild`)或整合開發環境(IDE)中。
 
-如果您希望僅在生成在雲管理器之外運行時才輸出一條簡單消息，則您將執行以下操作：
+如果您希望僅在生成在雲管理器之外運行時才輸出一條簡單消息，則您會執行此操作。
 
 ```xml
         <profile>
@@ -107,127 +109,142 @@ ht-degree: 5%
 ## 受密碼保護的Maven儲存庫支援 {#password-protected-maven-repositories}
 
 >[!NOTE]
->僅應非常謹慎地使用受密碼保護的Maven儲存庫中的對象，因為通過此機制部署的代碼當前未通過在Cloud Manager的質量門中實現的所有質量規則運行。 因此，它只應用於少數情況，以及不與代碼關聯AEM。 建議還部署Java源以及整個項目原始碼以及二進位代碼。
+>
+>僅應非常謹慎地使用受密碼保護的Maven儲存庫中的對象，因為通過此機制部署的代碼當前未通過所有 [代碼質量規則](/help/implementing/cloud-manager/custom-code-quality-rules.md) 在Cloud Manager的質量門中實現。 因此，它只應用於少數情況，以及不與代碼關聯AEM。 建議還部署Java源以及整個項目原始碼以及二進位代碼。
 
-為了從Cloud Manager使用受密碼保護的Maven儲存庫，請將密碼（和用戶名）指定為密碼管道變數，然後在名為「Cloud Manager」的檔案中引用該密碼 `.cloudmanager/maven/settings.xml` 在git儲存庫中。 此檔案跟在 [Maven設定檔案](https://maven.apache.org/settings.html) 架構。 當Cloud Manager生成進程啟動時， `<servers>` 此檔案中的元素將合併到預設 `settings.xml` 由雲管理器提供的檔案。 伺服器ID以 `adobe` 和 `cloud-manager` 被視為保留，不應由自定義伺服器使用。 伺服器ID **不** 匹配這些前置詞之一或預設ID `central` 將不會被雲管理器鏡像。 如果此檔案就位，將從 `<repository>` 和/或 `<pluginRepository>` 元素 `pom.xml` 的子菜單。 通常，這些 `<repository>` 和/或 `<pluginRepository>` 元素將包含在 [特定於雲管理器的配置檔案](#activating-maven-profiles-in-cloud-manager)儘管這並非嚴格必要。
+要在Cloud Manager中使用受密碼保護的Maven儲存庫，請：
 
-例如，假設儲存庫位於https://repository.myco.com/maven2 ，則Cloud Manager應使用的用戶名為 `cloudmanager` 密碼是 `secretword`。
+1. 將密碼（和用戶名）指定為機密 [管線變數。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+1. 然後在名為 `.cloudmanager/maven/settings.xml` 在git儲存庫中， [Maven設定檔案](https://maven.apache.org/settings.html) 架構。
 
-首先，將密碼設定為管道上的密碼：
+當Cloud Manager生成進程啟動時：
 
-`$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+* 的 `<servers>` 此檔案中的元素將合併到預設 `settings.xml` 由雲管理器提供的檔案。
+   * 伺服器ID以 `adobe` 和 `cloud-manager` 被視為保留，不應由自定義伺服器使用。
+   * 伺服器ID與這些前置詞之一或預設ID不匹配 `central` 將不會被雲管理器鏡像。
+* 如果此檔案就位，將從 `<repository>` 和/或 `<pluginRepository>` 元素 `pom.xml` 的子菜單。
+* 通常，這些 `<repository>` 和/或 `<pluginRepository>` 元素將包含在 [特定於雲管理器的配置檔案](#activating-maven-profiles-in-cloud-manager)儘管這並非嚴格必要。
 
-然後從 `.cloudmanager/maven/settings.xml` 檔案：
+例如，假設儲存庫位於 `https://repository.myco.com/maven2`，雲管理器應使用的用戶名為 `cloudmanager`，密碼為 `secretword`。 您將執行以下步驟。
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
-    <servers>
-        <server>
-            <id>myco-repository</id>
-            <username>cloudmanager</username>
-            <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
-        </server>
-    </servers>
-</settings>
-```
+1. 將密碼設定為管道中的機密。
 
-最後，引用 `pom.xml` 檔案：
+   ```text
+   $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+   ```
 
-```xml
-<profiles>
-    <profile>
-        <id>cmBuild</id>
-        <activation>
-                <property>
-                    <name>env.CM_BUILD</name>
-                </property>
-        </activation>
-        <repositories>
-             <repository>
-                 <id>myco-repository</id>
-                 <name>MyCo Releases</name>
-                 <url>https://repository.myco.com/maven2</url>
-                 <snapshots>
-                     <enabled>false</enabled>
-                 </snapshots>
-                 <releases>
-                     <enabled>true</enabled>
-                 </releases>
-             </repository>
-         </repositories>
-         <pluginRepositories>
-             <pluginRepository>
-                 <id>myco-repository</id>
-                 <name>MyCo Releases</name>
-                 <url>https://repository.myco.com/maven2</url>
-                 <snapshots>
-                     <enabled>false</enabled>
-                 </snapshots>
-                 <releases>
-                     <enabled>true</enabled>
-                 </releases>
-             </pluginRepository>
-         </pluginRepositories>
-    </profile>
-</profiles>
-```
+1. 從 `.cloudmanager/maven/settings.xml` 的子菜單。
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+       <servers>
+           <server>
+               <id>myco-repository</id>
+               <username>cloudmanager</username>
+              <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+           </server>
+       </servers>
+   </settings>
+   ```
+
+1. 最後引用伺服器ID `pom.xml` 檔案：
+
+   ```xml
+   <profiles>
+       <profile>
+           <id>cmBuild</id>
+           <activation>
+                   <property>
+                       <name>env.CM_BUILD</name>
+                   </property>
+           </activation>
+           <repositories>
+                <repository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+       </profile>
+   </profiles>
+   ```
 
 ### 部署源 {#deploying-sources}
 
 將Java源與二進位檔案一起部署到Maven儲存庫是一個很好的做法。
 
-在項目中配置maven-source-plugin :
+為此，請在項目中配置maven-source-plugin。
 
 ```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-source-plugin</artifactId>
-            <executions>
-                <execution>
-                    <id>attach-sources</id>
-                    <goals>
-                        <goal>jar-no-fork</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-source-plugin</artifactId>
+             <executions>
+                 <execution>
+                     <id>attach-sources</id>
+                     <goals>
+                         <goal>jar-no-fork</goal>
+                     </goals>
+                 </execution>
+             </executions>
+         </plugin>
 ```
 
 ### 部署項目源 {#deploying-project-sources}
 
-將整個項目源與二進位檔案一起部署到Maven儲存庫是一種好做法 — 這樣可以重建確切的對象。
+將整個項目源與二進位檔案一起部署到Maven儲存庫是一個很好的做法。 這允許重建精確的工件。
 
-在項目中配置maven-assembly-plugin :
+為此，請在項目中配置maven-assembly-plugin。
 
 ```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-assembly-plugin</artifactId>
-            <executions>
-                <execution>
-                    <id>project-assembly</id>
-                    <phase>package</phase>
-                    <goals>
-                        <goal>single</goal>
-                    </goals>
-                    <configuration>
-                        <descriptorRefs>
-                            <descriptorRef>project</descriptorRef>
-                        </descriptorRefs>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-assembly-plugin</artifactId>
+             <executions>
+                 <execution>
+                     <id>project-assembly</id>
+                     <phase>package</phase>
+                     <goals>
+                         <goal>single</goal>
+                     </goals>
+                     <configuration>
+                         <descriptorRefs>
+                             <descriptorRef>project</descriptorRef>
+                         </descriptorRefs>
+                     </configuration>
+                 </execution>
+             </executions>
+         </plugin>
 ```
 
 ## 跳過內容包 {#skipping-content-packages}
 
-在雲管理器中，生成可能會生成任意數量的內容包。
-出於各種原因，可能希望生成內容包，但不部署它。 例如，在生成僅用於測試的內容包時或將通過生成過程中的另一個步驟重新打包的內容包（即作為另一包的子包）時，這可能很有用。
+在雲管理器中，生成可能會生成任意數量的內容包。 出於各種原因，可能希望生成內容包但不部署它。 例如，在生成僅用於測試的內容包時，或者生成過程中的另一個步驟（即作為另一個包的子包）將重新打包的內容包時，可能會出現這樣的情況。
 
-為了適應這些情況，Cloud manager將在內建內容包的屬性中 ***查找名為cloudManagerTarget*** 的屬性。如果此屬性設定為none，則會跳過該包且不部署。設定此屬性的機制取決於建立內容封裝的方式。例如，使用filevault-maven-plugin時，您可以像這樣設定外掛程式：
+為了適應這些情況，Cloud manager將在內建內容包的屬性中 `cloudManagerTarget`查找名為 的屬性。如果此屬性設定為 `none`，將跳過並不部署包。
+
+設定此屬性的機制取決於生成內容包的方式。 例如， `filevault-maven-plugin` 您將按如下方式配置插件。
 
 ```xml
         <plugin>
@@ -243,7 +260,7 @@ ht-degree: 5%
         </plugin>
 ```
 
-對於content-package-maven-plugin，它類似：
+的 `content-package-maven-plugin` 具有類似的配置。
 
 ```xml
         <plugin>

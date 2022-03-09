@@ -1,87 +1,99 @@
 ---
-title: 部署程式碼 — Cloud Services
-description: 部署程式碼 — Cloud Services
+title: 部署代碼
+description: 瞭解如何在as a Cloud Service中使用Cloud Manager管道部署AEM代碼。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
+source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 2%
+source-wordcount: '669'
+ht-degree: 0%
 
 ---
 
-# 部署程式碼 {#deploy-your-code}
 
-## 在AEM as aCloud Service中使用Cloud Manager部署程式碼 {#deploying-code-with-cloud-manager}
+# 部署代碼 {#deploy-your-code}
 
-一旦配置了生產管道（儲存庫、環境和測試環境），您就可以部署代碼。
+瞭解如何在as a Cloud Service中使用Cloud Manager管道部署AEM代碼。
 
-1. 按一下Cloud Manager中的&#x200B;**Deploy**&#x200B;以啟動部署過程。
+## 在as a Cloud Service中使用雲管理器部署代AEM碼 {#deploying-code-with-cloud-manager}
 
-   ![](assets/deploy-code1.png)
+一旦你 [已配置生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 包括儲存庫、環境和測試環境，您已準備好部署代碼。
 
+1. 登錄到Cloud Manager(位於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇相應的組織。
 
-1. 將顯示&#x200B;**Pipeline Execution**&#x200B;螢幕。
+1. 按一下要為其部署代碼的程式。
 
-   按一下&#x200B;**Build**&#x200B;以啟動進程。
+1. 按一下 **部署** 從行動要求開始 **概述** 螢幕以啟動部署過程。
 
-   ![](assets/deploy-code2.png)
+   ![CTA](assets/deploy-code1.png)
 
-1. 完成的建置程式會部署您的程式碼。
+1. 的 **管道執行** 螢幕。 按一下 **生成** 以啟動進程。
 
-   建置程式涉及下列階段：
+   ![「管道執行」螢幕](assets/deploy-code2.png)
 
-   1. 階段部署
-   1. 階段測試
-   1. 生產部署
+生成過程將通過三個階段部署代碼。
 
-   >[!NOTE]
-   >
-   >此外，您也可以檢視記錄或檢閱測試條件的結果，以檢閱各種部署程式的步驟。
+1. [階段部署](#stage-deployment)
+1. [階段測試](#stage-testing)
+1. [生產部署](#production-deployment)
 
-   「 **舞台部署**」涉及以下步驟：
+>[!TIP]
+>
+>您可以查看日誌或查看結果以查看測試標準中各個部署流程的步驟。
 
-   * 驗證：此步驟可確保管道配置為使用當前可用資源，例如，配置的分支存在，環境可用。
-   * 構建和單元測試：此步驟會執行容器化的建置程式。 如需有關建置環境的詳細資訊，請參閱[建置環境詳細資料](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。
-   * 代碼掃描：此步驟會評估應用程式程式碼的品質。 如需測試程式的詳細資訊，請參閱[程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)。
-   * 生成映像：此步驟包含用來建立影像之程式的記錄檔。 此程式負責將建置步驟產生的內容和Dispatcher套件轉換為Docker影像和Kubernetes設定。
-   * 部署至預備
+## 階段部署階段 {#stage-deployment}
 
-      ![](assets/stage-deployment.png)
-   測試 **階段**，包括下列步驟：
+的 **階段部署** 。 涉及到這些步驟。
 
-   * **產品功能測試**:Cloud Manager管道執行將支援針對預備環境執行的測試。如需詳細資訊，請參閱[產品功能測試](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) 。
+* **驗證**   — 此步驟確保管道配置為使用當前可用資源。 例如，測試配置的分支是否存在以及環境是否可用。
+* **構建和單元測試**  — 此步驟運行集裝箱化生成過程。
+   * 請參閱文檔 [生成環境詳細資訊](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 的子菜單。
+* **代碼掃描**  — 此步驟將評估應用程式碼的質量。
+   * 請參閱文檔 [代碼質量測試](/help/implementing/cloud-manager/code-quality-testing.md) 的子菜單。
+* **生成映像**  — 此過程負責將生成步驟生成的內容和分發程式包轉換為Docker映像和Kubernetes配置。
+* **部署到階段**  — 映像部署到暫存環境，以準備 [階段測試階段。](#stage-testing)
 
-   * **自訂功能測試**:管道中的此步驟一律存在，且無法略過。但是，如果組建未產生測試JAR，則測試預設會通過。\
-      如需詳細資訊，請參閱[自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 。
+![階段部署](assets/stage-deployment.png)
 
-   * **自訂UI測試**:此步驟是選用功能，可讓客戶建立並自動執行其應用程式的UI測試。UI測試是封裝在Docker影像中的基於硒的測試，以允許在語言和框架（如Java和Maven、Node和WebDriver.io，或基於Selenium構建的任何其他框架和技術）中進行廣泛選擇。
-如需詳細資訊，請參閱[自訂UI測試](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing) 。
+## 階段測試階段 {#stage-testing}
 
+的 **階段測試** 階段涉及這些步驟。
 
-   * **體驗稽核**:管道中的此步驟一律存在，且無法略過。執行生產管道時，將在自訂功能測試（將執行檢查）後納入體驗稽核步驟。 系統會將已設定的頁面提交至服務並進行評估。 結果提供資訊，讓使用者可查看目前和先前分數之間的分數和變更。 此深入分析對於判斷是否有將於目前部署引入的回歸十分有用。
-如需詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md) 。
+* **產品功能測試** - Cloud Manager管道執行針對階段環境運行的test。
+   * 請參閱文檔 [產品功能測試](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) 的子菜單。
 
-      ![](assets/stage-testing.png)
+* **自定義功能測試**  — 管道中的此步驟始終執行，無法跳過。 如果生成未生成testJAR，則預設情況下test會通過。
+   * 請參閱文檔 [自定義功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 的子菜單。
 
+* **自定義UI測試**  — 此步驟是可選功能，可自動運行為自定義應用程式建立的UItest。
+   * UItest是基於Selenium的test，打包在Docker映像中，允許在語言和框架（如Java和Maven、Node和WebDriver.io，或基於Selenium構建的任何其它框架和技術）中進行廣泛選擇。
+   * 請參閱文檔 [自定義UI測試](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) 的子菜單。
 
+* **經驗審計**  — 管道中的此步驟始終執行，無法跳過。 在執行生產管道時，在將運行檢查的定製功能測試之後包括體驗審核步驟。
+   * 配置的頁面將提交到服務並進行評估。
+   * 這些結果是資訊性的，並顯示當前和以前的分數之間的分數和變化。
+   * 這一洞見對於確定當前部署中是否將引入回歸非常重要。
+   * 請參閱文檔 [瞭解經驗審計結果](/help/implementing/cloud-manager/experience-audit-testing.md) 的子菜單。
 
+![階段測試](assets/stage-testing.png)
 
+## 生產部署階段 {#deployment-production}
+
+部署到生產拓撲的過程略有不同，以最大限度地減少對站點的AEM影響。
+
+生產部署通常遵循與前面描述相同的步驟，但是採用滾動方式。
+
+1. 部署AEM要創作的包。
+1. 從負載平衡器中分離Dispatcher1。
+1. 將包部AEM署到publish1，將調度程式包部署到dispatcher1，刷新調度程式快取。
+1. 將dispatcher1放回負載平衡器。
+1. 一旦dispatcher1恢復服務，將dispatcher2與負載平衡器分離。
+1. 將包部AEM署到publish2，將調度程式包部署到dispatcher2，刷新調度程式快取。
+1. 將dispatcher2放回負載平衡器中。
+
+此過程一直持續到部署到達拓撲中的所有發佈者和調度程式為止。
+
+![生產部署階段](assets/production-deployment.png)
 
 ## 部署過程 {#deployment-process}
 
-所有Cloud Service部署都會依循滾動程式，確保零停機時間。 請參閱[滾動部署如何運作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work)以了解詳細資訊。
-
-### 部署至生產階段 {#deployment-production-phase}
-
-部署至生產拓撲的程式稍有不同，以將對AEM網站訪客的影響降至最低。
-
-生產部署通常會依照上述步驟進行，但以滾動方式進行：
-
-1. 部署AEM套件以製作。
-1. 從負載平衡器分離dispatcher1。
-1. 將AEM套件部署至publish1，並將Dispatcher套件部署至dispatcher1，排清Dispatcher快取。
-1. 將dispatcher1放回負載平衡器。
-1. 當dispatcher1重新服務後，請從負載平衡器分離dispatcher2。
-1. 將AEM套件部署至publish2，並將Dispatcher套件部署至dispatcher2，排清Dispatcher快取。
-1. 將dispatcher2放回負載平衡器。
-此過程將繼續，直到部署已到達拓撲中的所有發佈商和調度程式。
+所有Cloud Service部署都遵循滾動過程以確保零停機。 請參閱文檔 [滾動部署的工作方式](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 來瞭解更多資訊。

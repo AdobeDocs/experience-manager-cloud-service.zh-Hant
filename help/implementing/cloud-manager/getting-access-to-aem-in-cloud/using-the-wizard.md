@@ -1,34 +1,49 @@
 ---
-title: 使用精靈
-description: 使用精靈 — Cloud Services
+title: 項目建立嚮導
+description: 瞭解項目建立嚮導，以幫助您在建立生產程式後快速設定項目。
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 41%
+source-wordcount: '316'
+ht-degree: 0%
 
 ---
 
-# 使用精靈 {#using-wizard-to-create-an-aem-application-project}
+# 項目建立嚮導 {#project-creation-wizard}
 
-為協助新客戶開始使用，Cloud Manger現在可以建立最簡化的AEM專案作為起點。 此程式以&#x200B;[**AEM專案原型**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)為基礎。
+建立生產程式後，Cloud Manger將提供一個嚮導，以根AEM據 [項AEM目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 快速啟動。
+
+按照以下步驟使AEM用嚮導在Cloud Manager中建立應用程式項目。
+
+1. 按照文檔中的步驟建立生產程式 [建立生產程式](creating-production-programs.md)
+
+1. 程式設定完成後，訪問 **概述** 程式螢幕並查看 **建立分支和項目** 行動呼叫卡。
+
+   ![嚮導的行動要求](assets/create-wizard1.png)
+
+1. 按一下 **建立** 啟動嚮導並確認項目 **標題** 和 **新建分支名稱** 的 **建立分支和項目** 的子菜單。
+
+   ![建立分支和項目](assets/create-wizard2.png)
+
+1. 或者，按一下分隔線以顯示項目的附加參數。 預設值由「項目原型」AEM提供，通常不需要更改。
+
+   ![其他項目參數](assets/create-wizard5.png)
+
+1. 按一下 **建立** 的子菜單。
 
 
-請依照下列步驟，使用精靈在Cloud Manager中建立AEM應用程式專案：
+A **正在建立項目** 卡現在取代了 **建立分支和項目** 行動呼叫卡作為 **計畫概述** 的上界。
 
-1. 一旦您登入Cloud Manager且基本程式設定完成後，如果儲存庫為空，「概述」畫面將會顯示特殊的動作卡呼叫。****
+![正在建立項目](assets/create-wizard3.png)
 
-   ![](assets/create-wizard1.png)
+程式建立完成後， **添加環境** 卡取代了 **正在建立項目** 卡在頂部 **計畫概述** 的上界。
 
-1. 按一 **下「建立** 」，導覽至「 **建立分支和專案」畫面** 。
+![添加環境](assets/create-wizard4.png)
 
-   ![](assets/create-wizard2.png)
+現在，您的AEMGit儲存庫AEM中添加了基於原型的項目，以作為您自己項目的開發基礎。 接下來，您可以建立可在其中部署項目代碼的環境。
 
-1. **正在建立的項目**&#x200B;表徵圖顯示在&#x200B;*方案概述*&#x200B;螢幕上。
+請參閱文檔 [管理您的環境](/help/implementing/cloud-manager/manage-environments.md) 瞭解如何添加或管理環境。
 
-   ![](assets/create-wizard3.png)
-
-1. 程式建立完成後，「添加環 **境」(Add Environment** )表徵圖將出現在 *「程式概述」(Program Overview* )頁面上。
-   ![](assets/create-wizard4.png)
-
-   請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)以了解如何新增或管理環境。
+>[!NOTE]
+>
+>該嚮導僅可用於生產程式。 因為 [沙盒程式](introduction-sandbox-programs.md#auto-creation) 包括自動建立項目，不必使用嚮導。

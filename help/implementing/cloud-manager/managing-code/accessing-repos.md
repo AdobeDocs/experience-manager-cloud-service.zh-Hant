@@ -1,45 +1,42 @@
 ---
-title: 存取儲存庫
-seo-title: Accessing Repositories
-description: 本頁說明如何存取和管理Git存放庫。
-seo-description: Follow this page to learn how to access and manage your Git repository.
+title: 訪問儲存庫
+description: 瞭解如何使用Cloud Manager的自助Git帳戶管理訪問和管理您的Git儲存庫。
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 3cdee254eebcf45762feff8fe081b006a803ef1b
+source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 5%
+source-wordcount: '229'
+ht-degree: 0%
 
 ---
 
-# 存取儲存庫 {#accessing-repos}
+# 訪問儲存庫 {#accessing-repos}
 
-您可以使用Cloud Manager UI中的自助服務Git帳戶管理來存取及管理您的Git存放庫。
+瞭解如何使用Cloud Manager的自助Git帳戶管理訪問和管理您的Git儲存庫。
 
-## 使用自助儲存庫帳戶管理 {#self-service-repos}
+## 使用自助服務儲存庫帳戶管理 {#self-service-repos}
 
-使用Cloud Manager UI中可用的&#x200B;**存取存放庫資訊**&#x200B;按鈕，最顯眼的位於管道卡上。
+Cloud Manager使用 **訪問回購資訊** 按鈕。
 
-1. 從您的&#x200B;**方案概述**&#x200B;頁面導覽至&#x200B;**管道**&#x200B;卡片。
+1. 登錄到Cloud Manager(位於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇相應的組織和程式。
 
-1. 您將檢視&#x200B;**存取存放庫資訊**&#x200B;選項，以存取及管理您的Git存放庫。
+1. 導航到 **管線** 卡 **計畫概述** 頁面並查找 **訪問回購資訊** 按鈕來訪問和管理git儲存庫。
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![訪問環境卡上的「回購資訊」按鈕](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-   此外，如果您選取&#x200B;**非生產**&#x200B;管道標籤，您也會在此處檢視&#x200B;**存取存放庫資訊**&#x200B;選項。
+1. 按一下 **查看回購資訊** 按鈕開啟對話框以查看：
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
-
-   >[!NOTE]
-   >「開發人員」或「部署管理員」角色中的使用者可看到「**存取存放庫資訊**」選項。 按一下此按鈕會開啟一個對話方塊，讓使用者可以找到Cloud Manager Git存放庫的URL及其使用者名稱和密碼。
+   * Cloud Manager Git儲存庫的URL。
+   * Git用戶名。
+   * git密碼，其值在 **生成密碼** 按鈕
 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
-   在Cloud Manager中管理Git的重要考量事項包括：
+使用這些憑據，用戶可以克隆儲存庫的本地副本，並在該本地儲存庫中進行更改，並且在準備就緒後，可以將任何代碼更改提交回雲管理器中的遠程代碼儲存庫。
 
-   * **URL**:儲存庫URL
-   * **使用者名稱**:使用者名稱
-   * **密碼**:按一下「生成密碼」 **按鈕時顯示** 的值。
+的 **訪問回購資訊** 的上界 **非生產** 管道頁籤 **管線** 卡。
 
+![訪問非生產標籤上的「回購資訊」按鈕](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
 
-      >[!NOTE]
-      >使用者可以簽出其程式碼的復本，並在本機程式碼存放庫中進行變更。 準備就緒後，使用者可將其程式碼變更提交回Cloud Manager的遠端程式碼存放庫。
+>[!NOTE]
+>
+>的 **訪問回購資訊** 選項對具有 **開發人員** 或 **部署管理器** 角色。

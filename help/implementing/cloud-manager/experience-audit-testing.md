@@ -1,67 +1,70 @@
 ---
-title: 體驗稽核測試 — Cloud Services
-description: 體驗稽核測試 — Cloud Services
+title: 體驗審計測試
+description: 瞭解體驗審核如何驗證您的部署流程並幫助確保部署的更改符合效能、可訪問性、最佳實踐和SEO的基準標準。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
 
-# 體驗稽核測試{#experience-audit-testing}
+
+# 體驗審計測試 {#experience-audit-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_expaudittesting"
->title="體驗稽核測試"
->abstract="Experience Audit是Cloud Manager Sites生產管道中提供的功能，由Google Lighthouse（Google的開放原始碼工具）提供技術支援。 所有Cloud Manager生產管道都會啟用此功能。"
+>title="體驗審計測試"
+>abstract="瞭解體驗審核如何驗證您的部署流程並幫助確保部署的更改符合效能、可訪問性、最佳實踐和SEO的基準標準。"
 
-Experience Audit是Cloud Manager Sites生產管道中提供的功能，由Google Lighthouse（Google的開放原始碼工具）提供技術支援。 所有Cloud Manager生產管道都會啟用此功能。
+瞭解體驗審核如何驗證您的部署流程並幫助確保部署的更改符合效能、可訪問性、最佳實踐和SEO的基準標準。
 
-它會驗證部署程式，並協助確保已部署變更：
+## 概覽 {#overview}
 
-1. 符合效能、協助工具、最佳實務、SEO（搜尋引擎最佳化）和PWA（漸進式網頁應用程式）的基準標準。
+體驗審計是Cloud Manager站點生產管道中提供的一項功能，可驗證部署過程並幫助確保部署的更改：
 
-1. 請勿在這些維度中包含回歸。
+1. 滿足效能、可訪問性、最佳實踐、SEO（搜索引擎優化）和PWA(Progressive Web App)的基準標準。
 
-Cloud Manager中的體驗稽核可確保網站上的使用者數位體驗可維持在最高標準。 結果提供資訊，讓使用者可查看目前和先前分數之間的分數和變更。 此深入分析對於判斷是否有將於目前部署引入的回歸十分有用。
+1. 不要帶回回歸。
 
-## 了解體驗稽核結果{#understanding-experience-audit-results}
+Cloud Manager中的體驗審核可確保最終用戶在站點上的體驗符合最高標準。
 
-體驗稽核透過生產管道執行頁面提供匯總和詳細的頁面層級測試結果。
+審計結果是資訊性的，使部署管理器能夠查看當前和以前的分數之間的分數和變化。 這一洞見對於確定當前部署中是否將引入回歸非常重要。
 
-* 匯總層級量度會測量經過稽核、效能、協助工具、最佳實務、SEO（搜尋引擎最佳化）之頁面的平均分數。
-   >[!NOTE]
-   >摘要分數中不包含漸進式網頁應用程式(PWA)分數，且只會顯示在頁面層級的報表詳細資料畫面中。
-* 個別頁面層級分數也可透過向下切入取得。
-* 分數的詳細資訊可供查看個別測試的結果，以及如何修正在體驗稽核期間所識別的任何問題的指引。
-* 測試結果的歷史記錄會保存在Cloud Manager中，讓客戶可以查看管道執行中引入的變更是否包含先前執行的任何回歸。
+體驗審計由Google燈塔提供支援，後者是谷歌的開源工具，在所有Cloud Manager生產管道中都啟用。
 
-### 匯總分數{#aggregate-scores}
+## 瞭解經驗審計結果 {#understanding-experience-audit-results}
 
-每種測試類型（例如效能、協助工具、SEO和最佳實務）都有匯總層級分數。
->[!NOTE]
->摘要分數中不包含漸進式網頁應用程式(PWA)分數，且只會顯示在頁面層級的報表詳細資料畫面中。
+體驗審核通過以下方式提供聚合和詳細的頁面級test結果： [生產管道執行頁。](/help/implementing/cloud-manager/deploy-code.md)
 
-匯總層級分數會採用執行中包含之頁面的平均分數。 匯總層級的變更代表目前執行中頁面的平均分數，與上次執行的平均分數相比，即使設定為包含的頁面集合在執行之間已變更，仍然如此。
+* 聚合度量度量在已審核的頁面中的平均分數，這些頁面針對效能、可訪問性、最佳實踐、SEO（搜索引擎優化）。
+* 單個頁面級別分數也可通過向下鑽取獲得。
+* 可以查看各個test結果的詳細資訊以及有關如何修正已識別的任何問題的指導。
+* Cloud Manager中保留test結果的歷史記錄，以確定管道中引入的更改是否包含上一運行中的任何回歸。
 
-「變更」量度的值可能是下列其中一項：
+### 聚合分數 {#aggregate-scores}
 
-* **正值**  — 自上次生產管道執行以來，頁面在選取的測試上已有所改善
+聚合級別分數採用運行中包括的頁面的平均分數。 聚合級別的更改表示當前運行中頁面的平均分數與前一次運行中得分的平均值相比，即使配置為包含的頁面集合在兩次運行之間已更改。
 
-* **負值**  — 自上次生產管道執行以來，頁面已在選取的測試上回復
+每個test類型（如效能、可訪問性、SEO和最佳實踐）都有聚合級別分數。
 
-* **無變更**  — 自上次生產管道執行以來，頁面的分數相同
+更改度量可以具有以下值之一。
 
-* **不適用**  — 沒有先前的分數可供比較
+* **正值**  — 自上次生產管道運行以來，所選test上的頁面已得到改善。
 
-   ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
+* **負值**  — 自上次生產管道運行以來，頁面在所選test上已退縮。
+
+* **無更改**  — 自上次生產管道運行以來，頁面的得分相同。
+
+* **不適用**  — 以前沒有可供比較的分數。
+
+![經驗審計結果](/help/implementing/cloud-manager/assets/exp-audit-1.png)
 
 
-### 頁面層級分數{#page-level-scores}
+### 頁級分數 {#page-level-scores}
 
-借由切入任何測試，可看到更詳細的頁面層級計分。 使用者將能查看個別頁面針對特定測試的評分情形，以及執行上次測試時的變更。
+通過鑽取任何test，可獲得更詳細的頁級評分。 您可以看到各個頁面對特定test的評分方式，以及上次test運行的更改。
 
-按一下任何個別頁面的詳細資訊，即可提供已評估頁面元素的資訊，並在偵測到改善機會時提供修正問題的指引。 測試的詳細資訊和相關指引由Google Lighthouse提供。
+按一下任何單個頁面的詳細資訊提供有關已評估頁面元素的資訊，以及在檢測到改進機會時解決問題的指導。
 
-![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
+![頁級分數](/help/implementing/cloud-manager/assets/exp-audit-2.png)

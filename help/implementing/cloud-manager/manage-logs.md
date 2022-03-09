@@ -1,61 +1,62 @@
 ---
-title: 管理記錄 — Cloud Service
-description: 管理記錄 — Cloud Service
+title: 存取和管理記錄檔
+description: 瞭解如何訪問和管理日誌以幫助您在as a Cloud Service中開AEM發過程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 10%
+source-wordcount: '272'
+ht-degree: 3%
 
 ---
 
+
 # 存取和管理記錄檔 {#manage-logs}
 
-使用者可以使用&#x200B;**概述**&#x200B;頁面或環境詳細資訊頁面中的&#x200B;**環境**&#x200B;卡，存取所選環境的可用日誌檔案清單。
+瞭解如何訪問和管理日誌以幫助您在as a Cloud Service中開AEM發過程。
+
+您可以使用 **環境** 卡 **概述** 頁或「環境詳細資訊」頁。
 
 ## 正在下載日誌 {#download-logs}
 
-請依照下列步驟下載記錄檔。
+按照以下步驟下載日誌。
 
-1. 從&#x200B;**概述**&#x200B;頁面導覽至&#x200B;**環境**&#x200B;卡片。
+1. 登錄到Cloud Manager(位於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇相應的組織和程式。
 
-1. 從&#x200B;**中選擇**&#x200B;下載日誌&#x200B;**...**&#x200B;功能表。
+1. 導航到 **環境** 卡 **概述** 的子菜單。
 
-   ![](assets/download-logs1.png)
+1. 選擇 **下載日誌** 中。
 
-   *或*,
+   ![下載日誌菜單項](assets/download-logs1.png)
 
-   從「環境詳細資訊」頁：
+1. 在 **下載日誌** 對話框，選擇相應的 **服務** 下拉菜單中
 
-   ![](assets/download-logs.png)
+   ![「下載日誌」對話框](assets/download-preview.png)
 
-   >[!NOTE]
-   >無論其開啟位置為何，都會顯示相同的對話方塊，並允許下載個別記錄檔。
+1. 選擇服務後，按一下要檢索的日誌旁邊的下載表徵圖。
 
-1. 從&#x200B;**Service**&#x200B;下拉式選單中，選取&#x200B;**Preview**&#x200B;或&#x200B;**Preview Dispatcher**&#x200B;等選項，然後按一下下載圖示。
+您也可以從 **環境** 的子菜單。
 
-   ![](assets/download-preview.png)
+![「環境」螢幕中的日誌](assets/download-logs.png)
 
+## 通過API記錄 {#logs-through-api}
 
-## 透過API記錄 {#logs-through-api}
+除了通過UI下載日誌外，日誌還可通過API和命令行介面獲得。
 
-除了透過UI下載記錄檔外，記錄檔也可透過API和命令列介面使用。
+要下載特定環境的日誌檔案，該命令類似於以下命令。
 
-例如，要下載特定環境的日誌檔案，該命令將是
-
-```java
+```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-以下命令允許跟蹤日誌：
+也可以通過命令行介面跟蹤日誌。
 
-```java
+```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-為了取得環境ID（在此例中為1884），以及您可以使用的可用服務或記錄名選項：
+為了獲得環境ID（本例中為1884）和可用的服務或日誌名稱選項，可以使用以下命令。
 
-```java
+```shell
 $ aio cloudmanager:list-environments
 Environment Id Name                     Type  Description                          
 1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
@@ -76,12 +77,9 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
->[!NOTE]
->雖 **然「記錄下載** 」將可透過UI和API使用，但 **「記錄追蹤** 」僅限API/CLI。
-
 ### 其他資源 {#resources}
 
-請參考下列其他資源，以進一步了解Cloud Manager API和Adobe I/OCLI:
+請參閱以下其他資源以瞭解有關Cloud Manager API和Adobe I/OCLI的詳細資訊：
 
-* [Cloud Manager API檔案](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Cloud Manager API文檔](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
 * [Adobe I/OCLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)

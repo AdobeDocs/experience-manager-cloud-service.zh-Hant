@@ -1,76 +1,82 @@
 ---
-title: Cloud Manager儲存庫
-description: Cloud Manager儲存庫
-source-git-commit: e5d52c92c9162a58cc1a8e4f5d1169d59ee13119
+title: Cloud Manager資料庫
+description: 瞭解如何在雲管理器中建立、查看和刪除您的Git儲存庫。
+exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
+source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
 
-# Cloud Manager儲存庫 {#cloud-manager-repos}
 
-在Cloud Manager中建立和可用的儲存庫可透過「儲存庫」頁面來檢視和管理。
+# Cloud Manager資料庫 {#cloud-manager-repos}
+
+瞭解如何在雲管理器中建立、查看和刪除您的Git儲存庫。
 
 >[!NOTE]
->任何公司（或IMS組織）中所有方案的存放庫都有300個上限。
+>
+>在任何給定的公司或IMS組織中，所有程式都有300個儲存庫。
 
 ## 添加和管理儲存庫 {#add-manage-repos}
 
-請依照下列步驟，在Cloud Manager中檢視及管理存放庫：
+按照這些步驟查看和管理Cloud Manager中的儲存庫。
 
-1. 從&#x200B;**程式概述**&#x200B;頁，按一下&#x200B;**儲存庫**&#x200B;頁簽並導航到&#x200B;**儲存庫**&#x200B;頁。
+1. 從 **計畫概述** ，按一下 **儲存庫** 頁籤並導航至 **儲存庫** 的子菜單。
 
-1. 按一下&#x200B;**添加儲存庫**&#x200B;以啟動嚮導。
+1. 按一下 **添加儲存庫** 的子菜單。
 
-   >[!NOTE]
-   >必須登錄部署管理員或業務所有者角色中的用戶才能添加儲存庫。
+   ![「添加儲存庫」按鈕](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
-   ![](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
+1. 按請求輸入名稱和說明，然後按一下 **保存**。
 
-1. 按要求輸入名稱和說明，然後按一下&#x200B;**Save**。
+   ![「添加儲存庫」對話框](/help/implementing/cloud-manager/assets/repos/repo-1.png)
 
-   ![](/help/implementing/cloud-manager/assets/repos/repo-1.png)
+嚮導關閉後，新儲存庫將顯示在表中。
 
-1. 選擇&#x200B;**保存**。 新建立的存放庫會顯示在表格中，如下所示。
+可以選擇表中的儲存庫，然後按一下省略號按鈕並選擇 **複製儲存庫URL**。 **查看和更新**&#x200B;或 **刪除**。
 
-   >[!NOTE]
-   >在Cloud Manager中建立的儲存庫也可供您在新增或編輯管道步驟期間選取。 請參閱[設定CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)以深入了解。 任何指定管道都有單個&#x200B;*primary*&#x200B;存放庫或分支。 透過[Git子模組支援](#git-submodule-support)，不過建置時可包含許多次要分支。
+![儲存庫選項](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-   ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+在Cloud Manager中建立的儲存庫也可用於添加或編輯管道時進行選擇。 請參閱文檔 [CI-CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 來瞭解更多資訊。
 
-1. 您可以選擇儲存庫，然後按一下表格最右側的菜單選項，將儲存庫URL **或** View &amp; Update **或** Delete **複製儲存庫，如下圖所示。**
+任何給定管道都有一個主儲存庫或分支。 與 [git子模組支援](#git-submodule-support)，在構建時可以包含許多次分支。
 
-   ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+>[!NOTE]
+>
+>用戶必須具有角色 **部署管理器** 或 **業務所有者** 才能添加儲存庫。
 
 ## 刪除儲存庫 {#delete-repo}
 
-請依照下列步驟，刪除Cloud Manager中的存放庫：
->[!NOTE]
->刪除儲存庫將：
->1. 使已刪除的儲存庫名稱無法用於將來可能建立的新儲存庫。 在此情況下，將會看到如下所示的錯誤訊息：
-   >*儲存庫名稱在組織內應是唯一的。*
->1. 讓已刪除的存放庫在Cloud Manager中無法使用，因此無法連結至管道。
+刪除儲存庫將：
 
+* 使刪除的儲存庫名稱不可用於將來可能建立的新儲存庫。
+   * 錯誤消息 `Repository name should be unique within organization.` 會在這些情況下顯示。
+* 使刪除的儲存庫在雲管理器中不可用，並且不可用於連結到管道。
 
-1. 從&#x200B;**程式概述**&#x200B;頁，按一下&#x200B;**儲存庫**&#x200B;頁簽並導航到&#x200B;**儲存庫**&#x200B;頁。
+按照這些操作刪除雲管理器中的儲存庫。
 
-1. 選取存放庫，然後按一下表格最右側的功能表選項。 按一下&#x200B;**Delete**&#x200B;以刪除儲存庫，如下圖所示。
+1. 從 **計畫概述** ，按一下 **儲存庫** 頁籤並導航至 **儲存庫** 的子菜單。
 
-   ![](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
+1. 選擇儲存庫，然後按一下省略號按鈕並選擇 **刪除** 刪除儲存庫。
 
+   ![刪除儲存庫](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 ## Git子模組支援 {#git-submodule-support}
 
-Git子模組可用來在建置時合併Git存放庫間多個分支的內容。 執行Cloud Manager的建置程式時，在為管道配置的存放庫複製並簽出已配置的分支後，如果根目錄中的分支包含`.gitmodules`檔案，則會執行命令。
+Git子模組可用於在生成時合併多個分支在Git儲存庫中的內容。
+
+當Cloud Manager的生成進程執行時，在克隆了為管道配置的儲存庫並簽出了已配置的分支後，如果分支包含 `.gitmodules` 檔案，執行命令。
+
+以下命令會將每個子模組檢出到相應的目錄中。
 
 ```
 $ git submodule update --init
 ```
 
-這會將每個子模組簽入相應目錄。 對於熟悉使用Git子模組且不想管理外部合併程式的組織，此技術是https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html的替代方法。
+此技術是文檔中所述解決方案的潛在替代方法 [使用多個源Git儲存庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) 對於那些願意使用git子模組且不想管理外部合併進程的組織。
 
-例如，假設有三個存放庫，每個存放庫都包含名為main的單一分支。 在「主要」存放庫（即管道中設定的存放庫）中，主分支有一個pom.xml檔案，聲明其他兩個存放庫中包含的專案：
+例如，假設有三個儲存庫，每個儲存庫都包含一個名為 `main`。 在主儲存庫中，即在管道中配置的儲存庫 `main` 分支具有 `pom.xml` 檔案聲明其他兩個儲存庫中包含的項目。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -91,16 +97,16 @@ $ git submodule update --init
 </project>
 ```
 
-然後，您將為其他兩個存放庫新增子模組：
+然後，您將為另外兩個儲存庫添加子模組。
 
-```
+```shell
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
 ```
 
-這會產生如下所示的`.gitmodules`檔案：
+這將導致 `.gitmodules` 檔案。
 
-```
+```text
 [submodule "project-a"]
     path = project-a
     url = https://git.cloudmanager.adobe.com/ProgramName/projectA/
@@ -111,12 +117,16 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
     branch = main
 ```
 
-有關Git子模組的詳細資訊，請參閱[Git參考手冊](https://git-scm.com/book/en/v2/Git-Tools-Submodules)。
+有關git子模組的詳細資訊，請參閱 [Git參考手冊。](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
-使用Git子模組時，請記住以下事項：
+### 限制和Recommendations {#limitations-recommendations}
 
-* Git URL必須完全使用上述語法。 基於安全考量，請勿在這些URL中內嵌憑證。
-* 僅支援分支根的子模組。
-* Git子模組參考會儲存至特定的Git提交。 因此，在對子模組存放庫進行變更時，需要更新所參考的提交，例如使用`git submodule update --remote` 。
-* 除非另有必要，強烈建議使用「淺層」子模組。 要執行此操作，請對每個子模組運行`git config -f .gitmodules submodule.<submodule path>.shallow true`。
+使用git子模組時，請注意以下限制。
 
+* Git URL必須與上一節中描述的語法完全一致。
+* 只支援分支根上的子模組。
+* 出於安全原因，請勿在Git URL中嵌入憑據。
+* 除非有其他必要，強烈建議使用淺子模組。
+   * 要執行此操作，請運行 `git config -f .gitmodules submodule.<submodule path>.shallow true` 每個子模組。
+* Git子模組引用儲存到特定的Git提交。 因此，當對子模組儲存庫進行更改時，需要更新引用的提交。
+   * 例如，使用 `git submodule update --remote`

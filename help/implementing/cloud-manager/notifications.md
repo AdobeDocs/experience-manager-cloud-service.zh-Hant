@@ -1,39 +1,44 @@
 ---
-title: 通知 — Cloud Service
-description: 通知 — Cloud Service
+title: 通知
+description: 瞭解如何使用Adobe Experience Cloud通知系統接收有關管道部署的資訊。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 42d4e3bb38e3a7ecb4507d15e2307ed08d752b5c
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 1%
+source-wordcount: '257'
+ht-degree: 0%
 
 ---
 
-# 了解通知 {#notifications}
+# 通知 {#notifications}
 
-[!UICONTROL Cloud ] Manager可讓使用者在生產部署開始時，於生產管道開始並完成（成功或未成功）時收到通知。這些通知會透過Adobe[!UICONTROL Experience Cloud]通知系統傳送。
+[!UICONTROL 雲管理器] 允許用戶在生產部署期間在生產管道啟動和完成（成功或失敗）時接收通知。
 
->[!NOTE]
->
->批准通知和計畫通知只發送給業務所有者、計畫管理員和部署管理員角色中的用戶。
+這些通知通過Adobe發送 [!UICONTROL Experience Cloud] 向具有角色的用戶發送通知系統 **業務所有者**。 **程式管理器**, **部署管理器**。
 
-通知會出現在[!UICONTROL Cloud Manager] UI（使用者介面）的側欄中，並貫穿於[!UICONTROL Experience Cloud]Adobe中。
-![](assets/notify-1.png)
+通知將出現在 [!UICONTROL 雲管理器] UI和整個Adobe [!UICONTROL Experience Cloud]。
 
-按一下標題的鈴聲圖示，開啟側欄並檢視通知，如下圖所示：
+![菜單欄中的通知表徵圖](assets/notify-1.png)
 
-![](assets/notify-2.png)
+當有新通知時，鐘錶徵圖被標籤。 按一下該面板可開啟面板以查看通知。
 
-側欄會列出最新的通知。
+![查看通知](assets/notify-2.png)
 
+該面板僅列出最近的通知。 按一下 **全部查看** 顯示所有通知。
 
-## 電子郵件通知{#email-notifications}
+## 電子郵件通知 {#email-notifications}
 
-依預設，通知可在Adobe[!UICONTROL Experience Cloud]解決方案的Web使用者介面中使用。 個別使用者也可以選擇立即或摘要方式透過電子郵件傳送這些通知。
+預設情況下，通知在用戶介面中跨Adobe可用 [!UICONTROL Experience Cloud] 解決方案。 個別用戶也可以通過以下步驟選擇通過電子郵件發送這些通知。
 
-這會將使用者帶往Adobe[!UICONTROL Experience Cloud]中的「通知偏好設定」畫面。
+1. 按一下鈴表徵圖顯示通知。
+1. 按一下 **編輯首選項** 表徵圖（形狀像齒輪）。
+1. 在開啟的窗口中，按一下 **通知** 的子菜單。
+   ![編輯首選項窗口](assets/notification-preferences.png)
+1. 向下滾動到 **電子郵件** 的子菜單。
+   ![電子郵件選項](assets/email-preferences.png)
+1. 選擇您希望如何接收電子郵件。
+   * 不發送電子郵件（預設）
+   * 即時通知
+   * 每日摘要
+   * 每週摘要
 
-使用者可以開啟電子郵件通知，並（選擇性）選取要透過電子郵件接收的通知類型。
-
->[!NOTE]
->您也可以從Adobe[!UICONTROL Experience Cloud]啟用消化。
+選擇後，您的選擇將自動保存，而無需按一下保存或應用按鈕。

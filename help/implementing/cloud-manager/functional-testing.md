@@ -1,52 +1,55 @@
 ---
-title: 功能測試 — Cloud Services
-description: 功能測試 — Cloud Services
+title: 功能測試
+description: 瞭解as a Cloud Service部署流程中內置的三種不同類型的功能測AEM試，以確保代碼的質量和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
+source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 3%
+source-wordcount: '632'
+ht-degree: 0%
 
 ---
 
-# 功能測試 {#functional-testing}
 
+# 功能測試 {#functional-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="功能測試"
->abstract="功能測試分為三種類型：產品功能測試、自訂功能測試和自訂UI測試"
+>abstract="瞭解as a Cloud Service部署流程中內置的三種不同類型的功能測AEM試，以確保代碼的質量和可靠性。"
 
-功能測試分為三種類型：
+瞭解內置於 [AEMas a Cloud Service部署](/help/implementing/cloud-manager/deploy-code.md) 確保代碼的質量和可靠性。
 
+## 概覽 {#overview}
+
+在as a Cloud Service中有三種不同的功能測試AEM。
 
 * [產品功能測試](#product-functional-testing)
-* [自訂功能測試](#custom-functional-testing)
-* [自訂UI測試](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+* [自定義功能測試](#custom-functional-testing)
+* [自定義UI測試](#custom-ui-testing)
+
+對於所有功能test，可以將test的詳細結果下載為 `.zip` 檔案 **下載生成日誌** 按鈕 [部署過程。](/help/implementing/cloud-manager/deploy-code.md) 這些日誌不包括實際運行時進AEM程的日誌。 要訪問這些日誌，請參閱文檔 [訪問和管理日誌](/help/implementing/cloud-manager/manage-logs.md) 的子菜單。
 
 ## 產品功能測試 {#product-functional-testing}
 
-產品功能測試是一組圍繞AEM核心功能（例如製作和復寫）而穩定的HTTP整合測試(IT)，若客戶變更的應用程式程式碼中斷此核心功能，就無法部署。
+產品功能test是一組穩定的HTTP整合test(IT)，它們是創作和複製任務AEM中的核心功能。 這些test防止在客戶破壞核心功能時部署對自定義應用程式碼的更改。
 
-每當客戶將新程式碼部署至Cloud Manager且無法略過時，產品功能測試就會自動執行。
+產品功能test在將新代碼部署到雲管理器時自動運行，無法跳過。
 
-請參閱 [產品功能測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 以取得範例測試。
+請參閱 [產品功能test](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 在GitHub中，用於示例test。
 
-## 自訂功能測試 {#custom-functional-testing}
+## 自定義功能測試 {#custom-functional-testing}
 
-管道中的自訂功能測試步驟一律存在，且無法略過。
+管道中的自定義功能測試步驟始終存在，無法跳過。
 
-組建應產生零個或一個測試JAR。 如果它產生零個測試JAR，則測試步驟預設會通過。 如果組建產生多個測試JAR，則所選的JAR不確定。
+生成應生成零個或一個testJAR。 如果它產生零testJAR，則預設情況下test步驟會通過。 如果生成生成多個testJAR，則選擇的JAR是不確定的。
 
->[!NOTE]
->「下 **載日誌** 」按鈕允許訪問包含測試執行詳細表單日誌的ZIP檔案。這些記錄檔不包含實際AEM執行階段程式的記錄檔，這些記錄檔可使用一般的下載或尾隨記錄檔功能來存取。 請參閱 [存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md) 以取得更多詳細資訊。
+### 編寫功能Test {#writing-functional-tests}
 
+自定義功能test必須打包為由與要部署到的對象相同的Maven內部版本生成的單獨JAR文AEM件。 通常，這是一個單獨的Maven模組。 生成的JAR檔案必須包含所有必需的依賴關係，並且通常使用 `maven-assembly-plugin` 使用 `jar-with-dependencies` 描述符。
 
-## 編寫功能測試 {#writing-functional-tests}
+此外，JAR必須 `Cloud-Manager-TestType` 將清單頭設定為 `integration-test`。 將來，預計將支援其他標頭值。
 
-客戶寫入的功能測試必須封裝為由相同Maven版本編號產生的獨立JAR檔案，作為要部署至AEM的成品。 一般而言，這會是個別的Maven模組。 生成的JAR檔案必須包含所有必要的依賴項，並且通常使用maven-assembly-plugin使用jar-with-dependencies描述符建立。
-
-此外，JAR必須將Cloud-Manager-TestType資訊清單標題設為integration-test。 未來預期會支援其他標題值。 maven-assembly-plugin的範例設定為：
+以下是 `maven-assembly-plugin`。
 
 ```java
 <build>
@@ -79,21 +82,29 @@ ht-degree: 3%
     </plugins>
 ```
 
-在此JAR檔案中，要執行的實際測試的類名必須以結尾 `IT`.
+在此JAR檔案中，要執行的實際test的類名必須以 `IT`。
 
-例如，名為 `com.myco.tests.aem.it.ExampleIT` 會被執行，但是一個 `com.myco.tests.aem.it.ExampleTest` 不會。
+例如，名為 `com.myco.tests.aem.it.ExampleIT` 將被執行，但是一個 `com.myco.tests.aem.it.ExampleTest` 不會的。
 
-此外，要將測試代碼排除在代碼掃描的覆蓋檢查之外，測試代碼必須位於名為的包的下方 `it` (涵蓋範圍排除篩選器為 `**/it/**/*.java`)。
+此外，要從代碼掃描的覆蓋率檢查中排除test代碼，test代碼必須位於名為 `it` (覆蓋範圍排除篩選器為 `**/it/**/*.java`)。
 
-測試類需要是正常的JUnit測試。 測試基礎架構經過設計並設定，可與aem測試用戶端測試程式庫使用的慣例相容。 強烈建議開發人員使用此程式庫並遵循其最佳實務。 請參閱 [Git連結](https://github.com/adobe/aem-testing-clients) 以取得更多詳細資訊。
+test類必須是普通JUnittest。 test基礎架構設計並配置為與 `aem-testing-clients` test庫。 強烈鼓勵開發人員使用此庫並遵循其最佳做法。
 
-## 本地測試執行 {#local-test-execution}
+請參閱 [`aem-testing-clients` GitHub回購](https://github.com/adobe/aem-testing-clients) 的子菜單。
 
-由於測試類是JUnit測試，因此可以從主流Java IDE（如Eclipse、IntelliJ、NetBeans等）運行。
+## 自定義UI測試 {#custom-ui-testing}
 
-不過，執行這些測試時，必須設定aem測試用戶端（和基礎Sling測試用戶端）預期的各種系統屬性。
+自定義UI測試是一項可選功能，使您能夠建立並自動運行應用程式的UItest。 UItest是基於Selenium的test，打包在Docker映像中，以允許在語言和框架（如Java和Maven、Node和WebDriver.io，或基於Selenium構建的任何其它框架和技術）中進行廣泛選擇。
 
-系統屬性如下：
+請參閱文檔 [自定義UI測試](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) 的子菜單。
+
+## 本地Test執行 {#local-test-execution}
+
+因為test類是JUnittest，所以它們可以從主流Java IDE（如Eclipse、IntelliJ、NetBeans等）中運行。
+
+但是，在運行這些test時，需要設定 `aem-testing-clients` （和基礎Sling測試客戶端）庫。
+
+系統屬性如下所示。
 
 * `sling.it.instances - should be set to 2`
 * `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`

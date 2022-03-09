@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b3b91da354d2c805ca89063cbd6d2d9766f1c612
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '3436'
-ht-degree: 43%
+source-wordcount: '3419'
+ht-degree: 42%
 
 ---
 
@@ -641,24 +641,24 @@ ht-degree: 43%
          + [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [冬眠環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + 建立 AEM 應用程式專案 {#create-application-project}
-         + [使用嚮導](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
-         + [設定項目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [瞭解構建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+         + [項目建立嚮導](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [項目設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+         + [構建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [管理環境](/help/implementing/cloud-manager/manage-environments.md)
       + 管理程式碼 {#managing-code}
          + [Maven 專案版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [雲管理器中的儲存庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
          + [訪問儲存庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [整合 Git 與 Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [使用多個源Git儲存庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [針對AEMas a Cloud Service的企業團隊開發設定](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [將Git與雲管理器一起使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [使用多個儲存庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [企業開發團隊設定](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [環境變數](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD管道 {#cicd-pipelines}
          + [簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [配置生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [配置非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
-      + [部署程式碼](/help/implementing/cloud-manager/deploy-code.md)
+      + [部署代碼](/help/implementing/cloud-manager/deploy-code.md)
       + 了解測試結果 {#test-results}
          + [概覽](/help/implementing/cloud-manager/overview-test-results.md)
          + [代碼質量測試](/help/implementing/cloud-manager/code-quality-testing.md)
@@ -668,8 +668,8 @@ ht-degree: 43%
          + [UI測試](/help/implementing/cloud-manager/ui-testing.md)
       + [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA報告](/help/implementing/cloud-manager/sla-reporting.md)
-      + [用戶對New Relic的訪問](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [了解通知](/help/implementing/cloud-manager/notifications.md)
+      + [新舊一號](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [通知](/help/implementing/cloud-manager/notifications.md)
       + 管理SSL證書 {#manage-ssl-certificates}
          + [簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [獲取SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
