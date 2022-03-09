@@ -3,13 +3,13 @@ title: '"[!DNL Experience Manager Assets] 整合 [!DNL Adobe Workfront]"'
 description: 介紹在 [!DNL Assets] 和 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
+source-git-commit: b6e108296d6786166e482cd8bbd20caa36795f44
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '926'
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] [!DNL Assets] 整合 [!DNL Adobe Workfront] {#assets-integration-overview}
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 的 [!DNL Workfront for Experience Manager enhanced connector] 通過端到端工作流實現增強的業務流程，並提供個性化的端到端客戶體驗和中央儲存。 Adobe提供了標準連接器和增強連接器，以整合這兩種解決方案。 有關比較，請參閱下面支援的功能，並參見 [在 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)。
 
-[!DNL Workfront for Experience Manage enhanced connector] 使您的組織能夠：
+[!DNL Workfront for Experience Manager enhanced connector] 使您的組織能夠：
 
 * 在Workfront自動建立連結的Experience Manager資料夾，並根據WorkfrontPortfolio、程式和項目組織資料夾。
 * 將Workfront項目元資料與連結的Experience Manager資料夾同步。
@@ -32,6 +32,8 @@ ht-degree: 2%
 >Adobe需要部署和配置 [!DNL Adobe Workfront for Experience Manager enhanced connector] 僅通過認證合作夥伴或 [!DNL Adobe Professional Services]。 如果部署和配置時沒有經過認證的合作夥伴或 [!DNL Adobe Professional Services]，它不受Adobe支援。
 >
 >Adobe可以發佈更新 [!DNL Adobe Workfront] 和 [!DNL Adobe Experience Manager] 使這個連接器冗餘；如果發生這種情況，可能需要客戶從使用此連接器進行過渡。
+>
+>請參閱 [Workfront的Experience Manager Assets增強型連接器合作夥伴認證考試](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)。 有關考試的資訊， [考試指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)。
 
 ## 比較不同的整合 [!DNL Assets] 和 [!DNL Workfront] {#feature-parity-matrix}
 

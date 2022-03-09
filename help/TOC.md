@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: ad7af5f68719e112a820c5def7a86ff835b5839f
 workflow-type: tm+mt
-source-wordcount: '3419'
+source-wordcount: '3425'
 ht-degree: 42%
 
 ---
@@ -381,9 +381,10 @@ ht-degree: 42%
       + [HTTP2 傳送內容常見問答集](/help/assets/dynamic-media/http2faq.md)
       + [Flash觀眾生命結束](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML查看器生命結束](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + 與其他解決方案整合 {#integrations}
+   + 與Adobe Workfront {#integrations}
       + [與 [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [安裝 [!DNL enhanced connector] 為 [!DNL Workfront]](/help/assets/workfront-connector-install.md)
+      + [刪除現有安裝的外部依賴項](/help/assets/remove-external-dependencies.md)
       + [配置 [!DNL enhanced connector] 為 [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + 表單 {#forms}
    + [簡介](/help/forms/home.md)
