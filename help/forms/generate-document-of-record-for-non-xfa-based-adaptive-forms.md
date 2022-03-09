@@ -2,9 +2,9 @@
 title: 生成適應性Forms的記錄文檔
 description: 說明如何為Adaptive Forms的記錄文檔(DoR)生成模板。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: d84365e1a150076abbd3965ffb964f13ba6b5340
+source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3678'
 ht-degree: 2%
 
 ---
@@ -406,7 +406,7 @@ When you select a form model, configure Document of Record using options availab
 
 >[!NOTE]
 >
-> 此功能在預發行渠道中可用。 請參閱 [預發行渠道文檔](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 的子菜單。
+> 此功能在預發行渠道中可用。 請參閱 [預發行渠道文檔](/help/release-notes/prerelease.md#enable-prerelease) 的子菜單。
 
 XCI檔案可幫助您設定文檔的各種屬性。 Formsas a Cloud Service有主XCI檔案。 可以使用自定義XCI檔案覆蓋在主XCI檔案中指定的一個或多個預設屬性。 例如，您可以選擇將字型嵌入文檔或為所有文檔啟用標籤屬性。 下表指定了XCI選項：
 
