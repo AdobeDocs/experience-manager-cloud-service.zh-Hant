@@ -1,17 +1,17 @@
 ---
 title: 使用Quickview建立自定義彈出窗口
-description: 「瞭解在電子商務體驗中如何使用預設的Quickview，在電子商務體驗中，彈出窗口會顯示產品資訊以推動購買。 您可以觸發自定義內容以在彈出式Windows®中顯示。」
+description: 「瞭解在電子商務體驗中如何使用預設的Quickview，在電子商務體驗中，彈出窗口會顯示產品資訊以推動購買。 您可以觸發自定義內容以在彈出窗口中顯示。」
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 462ce45d24cf8bcad6963011d2d57d9d7da45550
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
 
-# 使用Quickview建立自定義彈出式Windows® {#using-quickviews-to-create-custom-pop-ups}
+# 使用Quickview建立自定義彈出窗口 {#using-quickviews-to-create-custom-pop-ups}
 
 預設的Quickview用於電子商務體驗中，在這種體驗中，彈出窗口會顯示產品資訊以驅動購買。 但是，您可以觸發要在彈出窗口中顯示的自定義內容。 根據您使用的查看器，客戶可以選擇熱點、縮略圖或影像映射以查看資訊或相關內容。
 
@@ -23,11 +23,11 @@ Quickview受Dynamic Media的以下查看者支援：
 
 雖然每個查看器的功能不同，但建立Quickview的過程在所有三個受支援的查看器中都是相同的。
 
-**要使用Quickview建立自定義彈出式Windows®，請執行以下操作：**
+**要使用Quickview建立自定義彈出窗口：**
 
 1. 為上載的資產建立快速視圖。
 
-   通常，在編輯資產以與您使用的查看器一起使用時，會建立Quickview。
+   通常，在編輯資產以供您使用的查看器使用時，您會建立Quickview。
 
    <table>
     <tbody>
