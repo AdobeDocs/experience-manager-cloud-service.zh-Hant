@@ -1,18 +1,19 @@
 ---
-title: Cloud Manager在as a Cloud Service版AEM2022.02.0中的發行說明
-description: 以下是as a Cloud Service版本2022.02.0中Cloud Manager的AEM發行說明。
+title: Adobe Experience Manager as a Cloud Service的Cloud Manager 2022.3.0發行說明
+description: 以下是Cloud Manager 2022.3.0在as a Cloud Service中的發行說明AEM。
 feature: Release Information
-source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
+exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
+source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '201'
 ht-degree: 2%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud ServiceCloud Manager發行說明2022.02.0 {#release-notes}
+# Adobe Experience Manager as a Cloud Service的Cloud Manager 2022.3.0發行說明 {#release-notes}
 
-本頁概述了as a Cloud Service2022.02.0中Cloud ManagerAEM的發行說明。
+本頁記錄了Cloud Manager 2022.3.0在as a Cloud Service中的發行說明AEM。
 
 >[!NOTE]
 >
@@ -20,20 +21,16 @@ ht-degree: 2%
 
 ## 發行日期 {#release-date}
 
-Cloud Manager在as a Cloud Service2022.02.0中的發AEM布日期為2022年2月10日。 下一版計畫於2022年3月10日發行。
+2022年3月10日Cloud Manager版本2022.3.0AEM的發佈日期。 下一版計畫於2022年4月7日發行。
 
 ## 新增功能 {#what-is-new}
 
-* 新加速 [Web層配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 已引入專門部署HTTPD/dispatcher配置。
-   * 您必須處於版AEM本 `2021.12.6151.20211217T120950Z` 或更新 [選擇調度工具的靈活模式](/help/implementing/dispatcher/disp-overview.md#validation-debug) 功能。
-   * 此功能將在發佈後的兩週內分階段2022.02.0出。
-* Cloud Manager登錄頁體驗已刷新，可提供改進的導航、網格/平鋪視圖之間的輕鬆切換，以及彈出窗口，以快速獲得程式摘要。
-* 新的失敗閾值(`< D`)已添加到 [可靠性評級指標。](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
-   * 如果客戶遇到嚴重質量問題，影響系統穩定性，主要與無效索引和工作流進程有關，則在這些問題得到解決之前，他們將無法進行部署。
-* 嚴重性 `BannedPath` [質量規則](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) 已從阻止程式更改為關鍵。
-* 管道嚮導將在配置環境之前AEM通知用戶何時需要環境更新 [Web層配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 關聯。
+* 具有 **開發人員** 角色現在可以訪問環AEM境日誌。
+* [的 `reliability_rating` 臨界度量](/help/implementing/cloud-manager/code-quality-testing.md) 已禁用。
+* 用戶現在可以對 **管線** 的子菜單。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 當生成新密碼時，舊Git儲存庫密碼始終無效。
-* 通過API更新環境變數不再會在極少數情況下干擾管道執行。
+* 手動建立的Git儲存庫的子集具有不正確的名稱值，這影響了 [生成項目重用功能。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 這些資料庫的名稱已更改，用戶將在Cloud Manager API/UI中看到更正的名稱。
+* [添加或編輯代碼質量管道時，](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 這樣 **重要度量故障行為** 選項不再顯示。
+* 意外的管道變數配置不再導致生成步驟中的錯誤。

@@ -2,13 +2,13 @@
 title: 配置非生產管道
 description: 瞭解如何配置非生產管道以在部署到生產環境之前test代碼的質量。
 index: true
-source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
+exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
+source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
-
 
 # 配置非生產管道 {#configuring-non-production-pipelines}
 
@@ -47,12 +47,6 @@ ht-degree: 0%
 
       * **手動**  — 使用此選項手動啟動管線。
       * **Git更改**  — 只要將提交添加到配置的git分支中，此選項就啟動CI/CD管道。 使用此選項，您仍可根據需要手動啟動管線。
-   * **重要度量故障行為**  — 在管道設定或編輯期間， **部署管理器** 具有在任何質量門中遇到重要故障時定義管線行為的選項。 您可以選擇以下選項.
-
-      * **每次詢問**  — 這是預設設定，需要對任何重要故障進行手動干預。
-      * **立即失敗**  — 如果選中此選項，則每當發生重要故障時，管線將被取消。 這實質上是模擬用戶手動拒絕每個故障。
-      * **立即繼續**  — 如果選中此選項，則每當發生重要故障時，管線將自動繼續。 這實質上是模擬用戶手動批准每個故障。
-
 
 1. 按一下 **繼續**。
 
