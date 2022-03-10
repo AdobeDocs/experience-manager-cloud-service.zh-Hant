@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service的Cloud Manager 2022.3.0發�
 description: 以下是Cloud Manager 2022.3.0在as a Cloud Service中的發行說明AEM。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
+source-git-commit: 0749099acf98b09d0f83bfe86c2cc4558261c029
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 2%
+source-wordcount: '195'
+ht-degree: 3%
 
 ---
 
@@ -25,12 +25,11 @@ ht-degree: 2%
 
 ## 新增功能 {#what-is-new}
 
-* 具有 **開發人員** 角色現在可以訪問環AEM境日誌。
-* [的 `reliability_rating` 臨界度量](/help/implementing/cloud-manager/code-quality-testing.md) 已禁用。
-* 用戶現在可以對 **管線** 的子菜單。
+* 可以AEM使用開發人員角色訪問環境日誌。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 手動建立的Git儲存庫的子集具有不正確的名稱值，這影響了 [生成項目重用功能。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 這些資料庫的名稱已更改，用戶將在Cloud Manager API/UI中看到更正的名稱。
-* [添加或編輯代碼質量管道時，](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 這樣 **重要度量故障行為** 選項不再顯示。
-* 意外的管道變數配置不再導致生成步驟中的錯誤。
+* 手動建立的Git儲存庫的子集具有不正確的名稱值，這防止了生成項目重用功能的有效性。 這些資料庫的名稱已更改，用戶將在Cloud Manager API/UI中看到更正的名稱。
+* 來自非生產管道的生成工件在生產完整堆棧管道上被不恰當地重複使用。
+* 添加或編輯代碼質量管道時，不再顯示處理度量失敗的選項。
+* 生成步驟中可能會導致某些意外的管道變數配置。
