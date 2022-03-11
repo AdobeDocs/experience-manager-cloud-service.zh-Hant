@@ -1,13 +1,13 @@
 ---
 title: 瞭解雲管理器和快速站點建立工作流
 description: 瞭解Cloud Manager及其如何將新的快速站點建立過程聯繫起來。
-source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
+exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 1%
 
 ---
-
 
 # 瞭解雲管理器和快速站點建立工作流 {#understand-cloud-manager}
 

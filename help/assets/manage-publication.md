@@ -1,17 +1,17 @@
 ---
-title: '管理發佈 '
+title: 管理發佈
 description: 發佈或取消發佈Experience Manager Assets、Dynamic Media和Brand Portal的資產
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
-source-git-commit: 6ffdd6801fffb743314759b6c303723c2599dfa5
+exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 7%
 
 ---
-
 
 # 管理Experience Manager Assets出版物 {#manage-publication-in-aem}
 
@@ -191,4 +191,3 @@ Only the selected folder content and references are published.
 * 未發佈空資料夾。
 * 如果發佈正在處理的資產，則只發佈原始內容。 缺少格式副本。 等待處理完成，然後在處理完成後發佈或重新發佈資產。
 * 取消發佈複雜資產時，僅取消發佈該資產。 避免取消發佈引用，因為其他已發佈的資產可能會引用這些引用。
-

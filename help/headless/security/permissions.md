@@ -1,14 +1,14 @@
 ---
-title: '無頭內容的權限考慮事項 '
+title: 無頭內容的權限考慮事項
 description: 瞭解與Adobe Experience Manager一起實施無頭項的不同權限和ACL注意事項。 瞭解「作者」和「發佈」環境所需的不同角色和潛在權限級別。
 feature: Content Fragments,GraphQL API
-source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
+exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
 
 ---
-
 
 # 無頭內容的權限考慮事項
 
@@ -98,4 +98,3 @@ ht-degree: 0%
 ### 訪問GraphQL API
 
 提供 [適當的身份驗證憑據](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) 到AEM發佈服務的GraphQL API端點，包括憑據被授權讀取的內容以及可匿名訪問的內容。 GraphQL API的其他使用者無法讀取受CUG保護的資料夾中的內容。
-

@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0 版發行說明。'
-source-git-commit: 7935ed5c332934cf1824ef8e6b52b6a7f451dc34
+exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 16%
 
 ---
-
 
 # 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 

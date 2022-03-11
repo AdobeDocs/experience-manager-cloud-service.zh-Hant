@@ -1,58 +1,58 @@
 ---
-title: 僅針對Adobe InDesign產生版位轉譯
-description: 使用「Experience Manager資產」工作流程和ImageMagick產生新資產和現有資產的FPO轉譯。
+title: 生成僅用於放置的Adobe InDesign格式副本
+description: 使用Experience Manager Assets工作流和ImageMagick生成新資產和現有資產的FPO格式副本。
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
-source-git-commit: 7e82c3c5490c2f6d43167e6784cdbbb60f811a6f
+exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
+source-git-commit: 7cc0bd5bbd51edb6f3bc2cfcccfa0a35a0d7a790
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
 
+# 生成僅用於放置的Adobe InDesign格式副本 {#fpo-renditions}
 
-# 僅針對Adobe InDesign產生版位轉譯 {#fpo-renditions}
+當將大規模資產從Experience Manager放入Adobe InDesign文檔時，創意專業人士必須等待一段相當長的時間 [放置資產](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同時，阻止用戶使用InDesign。 這會中斷創意流，並對用戶體驗造成負面影響。 Adobe允許臨時將小型格式副本放在InDesign文檔中以開始。 當需要最終輸出時，原始的全解析度資產將替換後台的臨時格式副本。 背景中的非同步更新加快了設計過程以提高生產效率，並且不會妨礙創造過程。
 
-將大型資產從Experience Manager放入Adobe InDesign檔案時，創意專業人員必須在[放置資產](https://helpx.adobe.com/indesign/using/placing-graphics.html)後等待相當長的時間。 同時，用戶被阻止使用InDesign。 這會中斷創意流程，並對使用者體驗造成負面影響。 Adobe可以暫時將小型格式副本放在InDesign文檔中以開頭。 如果需要最終輸出，例如針對列印和發佈工作流程，原始的全解析度資產會取代背景的暫時轉譯。 背景中的非同步更新可加快設計流程以提高生產力，並且不會阻礙創作流程。
+資產提供僅用於放置(FPO)的格式副本。 這些FPO格式副本的檔案大小較小，但長寬比相同。 如果FPO格式副本不可用於資產，Adobe InDesign將改用原始資產。 此回退機制確保創作工作流不中斷即可繼續。
 
-Assets提供僅用於版位(FPO)的轉譯。 這些FPO轉譯的檔案大小很小，但外觀比例相同。 如果資產無法使用FPO轉譯，Adobe InDesign會改用原始資產。 此後援機制可確保創意工作流程持續進行，不會有任何中斷。
+Experience Manageras a Cloud Service提供雲本地資產處理功能以生成FPO格式副本。 使用資產微服務生成格式副本。 您可以配置新上載的資產和Experience Manager中存在的資產的格式副本生成。
 
-Experience Manager作為Cloud Service提供雲端原生資產處理功能，以產生FPO轉譯。 使用資產微服務產生轉譯。 您可以設定新上傳資產和Experience Manager中現有資產的轉譯產生。
+以下是生成FPO格式副本的步驟：
 
-以下是產生FPO轉譯的步驟：
+1. [建立處理配置檔案](#create-processing-profile)。
 
-1. [建立處理設定檔](#create-processing-profile)。
+1. 配置Experience Manager以使用此配置檔案 [處理新資產](#generate-renditions-of-new-assets)。
+1. 使用配置檔案 [處理現有資產](#generate-renditions-of-existing-assets)。
 
-1. 設定Experience Manager以使用此設定檔來處理新資產](#generate-renditions-of-new-assets)。[
-1. 使用設定檔來處理現有資產](#generate-renditions-of-existing-assets)。[
+## 建立處理配置檔案 {#create-processing-profile}
 
-## 建立處理設定檔 {#create-processing-profile}
+要生成FPO格式副本，請建立 **[!UICONTROL 處理配置檔案]**。 配置檔案使用雲本地資產微服務進行處理。 有關說明，請參見 [建立資產微服務的處理配置檔案](asset-microservices-configure-and-use.md)。
 
-若要產生FPO轉譯，請建立&#x200B;**[!UICONTROL 處理設定檔]**。 設定檔會使用雲端原生資產微服務來處理。 如需指示，請參閱[建立資產微服務的處理設定檔](asset-microservices-configure-and-use.md)。
+選擇 **[!UICONTROL 建立FPO格式副本]** 生成FPO格式副本。 （可選）按一下 **[!UICONTROL 添加新]** 將其他格式副本設定添加到同一配置檔案。
 
-選擇&#x200B;**[!UICONTROL 建立FPO轉譯]**&#x200B;以生成FPO轉譯。 或者，按一下「**[!UICONTROL 新增]**」 ，將其他轉譯設定新增至相同的設定檔。
+![建立處理 — 配置檔案 — fpo — 格式副本](assets/create-processing-profile-fpo-renditions.png)
 
-![create-processing-profile-fpo-renditions](assets/create-processing-profile-fpo-renditions.png)
+## 生成新資產的格式副本 {#generate-renditions-of-new-assets}
 
-## 產生新資產的轉譯 {#generate-renditions-of-new-assets}
+要生成新資產的FPO格式副本，請應用 **[!UICONTROL 處理配置檔案]** 資料夾屬性中的資料夾。 在資料夾的「屬性」頁中，按一下 **[!UICONTROL 資產處理]** 頁籤 **[!UICONTROL FPO配置檔案]** 作為 **[!UICONTROL 處理配置檔案]**，並保存更改。 所有上載到資料夾的新資產都使用此配置檔案進行處理。
 
-若要產生新資產的FPO轉譯，請將&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;套用至資料夾屬性中的資料夾。 在資料夾的「屬性」頁中，按一下&#x200B;**[!UICONTROL 資產處理]**&#x200B;標籤，選擇&#x200B;**[!UICONTROL FPO配置檔案]**&#x200B;作為&#x200B;**[!UICONTROL 處理配置檔案]**，並保存更改。 上傳至資料夾的所有新資產都會使用此設定檔進行處理。
-
-![add-fpo-rendition](assets/add-fpo-rendition.png)
-
-
-## 產生現有資產的轉譯 {#generate-renditions-of-existing-assets}
-
-若要產生轉譯，請選取資產並遵循下列步驟。
-
-![fpo-existing-asset-reprocess](assets/fpo-existing-asset-reprocess.gif)
+![添加fpo格式副本](assets/add-fpo-rendition.png)
 
 
-## 查看FPO轉譯 {#view-fpo-renditions}
+## 生成現有資產的格式副本 {#generate-renditions-of-existing-assets}
 
-工作流程完成後，您可以檢查產生的FPO轉譯。 在「Experience Manager資產」使用者介面中，按一下資產以開啟大型預覽。 開啟左側邊欄，然後選取&#x200B;**[!UICONTROL 轉譯]**。 或者，在預覽開啟時使用鍵盤快捷鍵`Alt + 3`。
+要生成格式副本，請選擇資產並執行以下步驟。
 
-按一下&#x200B;**[!UICONTROL FPO轉譯]**&#x200B;以載入其預覽。 或者，您可以以滑鼠右鍵按一下轉譯，然後儲存至您的檔案系統。 在左側邊欄中檢查可用的轉譯。
+![fpo現有資產重新處理](assets/fpo-existing-asset-reprocess.gif)
+
+
+## 查看FPO格式副本 {#view-fpo-renditions}
+
+在工作流完成後，您可以檢查生成的FPO格式副本。 在Experience Manager Assets用戶介面中，按一下資產以開啟大型預覽。 開啟左滑軌並選擇 **[!UICONTROL 格式副本]**。 或者，使用鍵盤快捷鍵 `Alt + 3` 的子菜單。
+
+按一下 **[!UICONTROL FPO格式副本]** 載入其預覽。 或者，可以按一下右鍵格式副本並將其保存到檔案系統。 檢查左滑軌中的可用格式副本。
 
 ![rendition_list](assets/list-renditions.png)

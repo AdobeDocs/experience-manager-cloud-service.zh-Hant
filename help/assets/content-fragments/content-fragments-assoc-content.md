@@ -1,52 +1,52 @@
 ---
 title: 相關聯的內容
-description: 了解AEM相關內容功能如何提供連線，讓資產可在新增至內容頁面時選擇性地與片段搭配使用，為無標題內容傳送增加額外的彈性。
-feature: 內容片段
+description: 瞭解關AEM聯的內容功能如何提供連接，以便在將片段添加到內容頁面時，可以選擇將其與片段一起使用，從而為無頭內容傳遞增加了額外的靈活性。
+feature: Content Fragments
 role: User
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 7%
+source-wordcount: '244'
+ht-degree: 6%
 
 ---
 
 # 相關聯的內容{#associated-content}
 
-AEM相關內容功能提供連線，讓資產可在新增至內容頁面時選擇性地與片段搭配使用。 這可讓您透過[靈活傳送無頭式內容，提供在頁面上使用內容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)時可存取的資產範圍，同時有助於縮短搜尋適當資產所需的時間。
+關AEM聯的內容功能提供了連接，以便當將片段添加到內容頁面時，可以選擇地將資產與片段一起使用。 這通過以下方式為無頭內容提供了靈活性 [在使用頁面上的內容片段時提供訪問的資產範圍，](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) 同時也有助於縮短搜索適當資產所需的時間。
 
-## 新增相關內容 {#adding-associated-content}
+## 添加關聯內容 {#adding-associated-content}
 
 >[!NOTE]
 >
->有各種方法可將[視覺資產（例如影像）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)新增至片段和/或頁面。
+>有多種方法可添加 [視覺資產（例如影像）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 到片段和/或頁面。
 
-若要建立關聯，您必須先[將媒體資產新增至集合](/help/assets/manage-collections.md)。 完成後，您可以：
+要建立關聯，你首先需要 [將媒體資產添加到集合](/help/assets/manage-collections.md)。 完成後，您可以：
 
 1. 開啟您的片段，然後從 **側面板選取** 「關聯內容」。
 
    ![相關聯的內容](assets/cfm-assoc-content-01.png)
 
-1. 視是否已關聯任何集合而定 — 選擇以下任一選項：
+1. 根據是否已關聯任何收集，選擇以下任一選項：
 
    * **關聯內容**  — 這將是第一個關聯的集合
    * **關聯集合**  — 已配置關聯的集合
 
-1. 選取所需的集合。
+1. 選擇所需的集合。
 
-   您可以選擇將片段本身新增至選取的集合；這是艾滋病追蹤。
+   您可以選擇將片段本身添加到選定集合；這個追蹤艾滋病。
 
    ![選擇集合](assets/cfm-assoc-content-02.png)
 
-1. 確認（使用&#x200B;**Select**）。 集合會列為相關聯。
+1. 確認(使用 **選擇**)。 集合將列為關聯。
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
-## 編輯相關內容 {#editing-associated-content}
+## 編輯關聯內容 {#editing-associated-content}
 
 關聯集合後，您可以：
 
-* **** 移除關聯。
-* **新增** 資產至集合。
-* 選取資產以執行進一步動作。
+* **刪除** 協會。
+* **添加資產** 到收藏集。
+* 選擇資產以執行進一步操作。
 * 編輯資產。

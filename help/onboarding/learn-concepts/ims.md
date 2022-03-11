@@ -1,16 +1,16 @@
 ---
 title: AdobeIdentity Management系統
-description: 請詳閱本頁以了解Identity Management系統。
-source-git-commit: d7428a9b94beb9e57eb0a0d1e61c5f98a159a1ff
+description: 請按照本頁瞭解Identity Management系統。
+exl-id: 3fd51410-7ad6-486f-bc3c-ef3d5473c19d
+source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 0%
 
 ---
 
+# AdobeIdentity Management系統 {#intro-ims}
 
-# AdobeIdentity Management系統{#intro-ims}
+AEMas a Cloud Service預配置了AdobeIdentity Management系統(IMS)進行身份驗證。 以前，AEM客戶必須配置身份提供程式(IDP)，如Active Directory或IMS。
 
-AEM as aCloud Service已預先設定AdobeIdentity Management系統(IMS)以進行驗證。 之前，使用AEM時，客戶必須設定身分提供者(IDP)，例如Active Directory或IMS。
-
-AEM as aCloud Service整合AEM與其餘Adobe Experience Cloud之間的登入體驗。 擁有多個Adobe產品的組織尤其可以受益於以下方式：在[Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md)中建立角色型群組，然後透過IMS指派對多個產品(包括AEM作為Cloud Service)的存取權。
+AEMas a Cloud Service將登錄體AEM驗整合在Adobe Experience Cloud。 具有多個Adobe產品的組織尤其可以通過在 [Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md) 然後通過IMS將訪問權分配給包括AEMas a Cloud Service的多個產品。

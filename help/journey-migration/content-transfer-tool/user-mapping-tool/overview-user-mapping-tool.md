@@ -1,33 +1,33 @@
 ---
-title: 使用者對應工具概覽
-description: 使用者對應工具概覽
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+title: 用戶映射工具概述
+description: 用戶映射工具概述
+exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 1%
 
 ---
 
-
-# 使用者對應工具概覽 {#overview-user-mapping-tool}
+# 用戶映射工具概述 {#overview-user-mapping-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
->title="使用者對應工具"
->abstract="「內容轉移工具」可協助您將使用者和群組從您現有的AEM系統移至AEMas a Cloud Service。 現有的使用者和群組必須對應至其IMS ID，以避免Cloud Service製作例項上出現重複的使用者和群組。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="使用使用者對應工具的重要考量"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="使用使用者對應工具"
+>title="用戶映射工具"
+>abstract="內容傳輸工具可幫助您將用戶和組從現有系統移AEM動到AEMas a Cloud Service。 現有用戶和組需要映射到其IMS ID以避免在Cloud Service作者實例上出現重複的用戶和組。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="使用用戶映射工具的重要注意事項"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="使用用戶映射工具"
 
 ## 簡介 {#introduction}
 
-在轉換至Adobe Experience Manager(AEM)的as a Cloud Service過程中，您必須將使用者和群組從您現有的AEM系統移至AEMas a Cloud Service。 這是由「內容轉移工具」完成。
+在向Adobe Experience Manager(AEM)as a Cloud Service過渡的過程中，您需要將用戶和組從現有系統移AEM動到AEMas a Cloud Service。 這由內容傳輸工具完成。
 
-AEMas a Cloud Service的重大變更，是完整整合使用AdobeID來存取作者階層。  這需要使用 [Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 用於管理使用者和使用者群組。 AdobeIdentity Management系統(IMS)會集中提供使用者設定檔資訊，以針對所有Adobe雲端應用程式提供單一登入。 如需詳細資訊，請參閱 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). 因為此變更，現有的使用者和群組必須對應至其IMS ID，以避免Cloud Service製作例項上出現重複的使用者和群組。
+對as a Cloud Service的一AEM個主要改變是完全整合地使用AdobeID訪問作者層。  這需要使用 [Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 用於管理用戶和組。 用戶配置檔案資訊集中在AdobeIdentity Management系統(IMS)中，該系統在所有Adobe雲應用程式中提供單點登錄。 有關詳細資訊，請參閱 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)。 由於這一變化，現有用戶和組需要映射到其IMS ID以避免在Cloud Service作者實例上出現重複的用戶和組。
 
-## 使用者對應工具 {#mapping-tool}
+## 用戶映射工具 {#mapping-tool}
 
-「內容轉移工具」（不含「使用者對應」）將移轉與要移轉之內容相關聯的任何使用者和群組。 「使用者對應工具」是「內容轉移工具」的一部分，其唯一用途是修改使用者和群組，讓IMS(AEMas a Cloud Service使用的單一登入功能)可正確辨識這些使用者和群組。 完成這些修改後，「內容轉移工具」會照常移轉指定內容的使用者和群組。
+內容傳輸工具（沒有用戶映射）將遷移與要遷移的內容相關聯的所有用戶和組。 用戶映射工具是內容傳輸工具的一部分，其唯一目的是修改用戶和組，以便IMS能夠正確識別它們，IMS是as a Cloud Service使用的單點登錄功能AEM。 完成這些修改後，內容傳輸工具將像往常一樣遷移指定內容的用戶和組。
 
-### 下一步 {#whats-next}
+### 下一步是什麼 {#whats-next}
 
-一旦您了解了用戶映射工具是什麼，您現在就可以在使用用戶映射工具之前查看重要注意事項和特殊案例。 請參閱 [使用者對應工具的重要考量](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md) 以取得更多詳細資訊。
+一旦您瞭解了用戶映射工具是什麼，您現在就可以在使用用戶映射工具之前查看重要注意事項和例外情況。 請參閱 [用戶映射工具的重要注意事項](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md) 的子菜單。

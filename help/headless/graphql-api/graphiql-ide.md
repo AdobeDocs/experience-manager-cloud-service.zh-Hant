@@ -2,13 +2,13 @@
 title: 在中使用GraphiQL IDE AEM
 description: 瞭解如何在Adobe Experience Manager使用GraphiQL IDE。
 feature: Content Fragments,GraphQL API
-source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
+exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 3%
 
 ---
-
 
 # 使用GraphiQL IDE {#graphiql-ide}
 
@@ -37,4 +37,3 @@ GraphiQL IDE是開發工具，僅在低級環境（如開發或本地實例）�
 1. 下載最新 **GraphiQL內容包v.x.x.x**
 1. 從 **開AEM始** 菜單導航 **工具** > **部署** > **包**。
 1. 按一下 **上載包** 選擇上一步下載的包。 按一下 **安裝** 安裝軟體包。
-

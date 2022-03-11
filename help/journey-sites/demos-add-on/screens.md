@@ -1,13 +1,13 @@
 ---
 title: 為演示網站啟用AEM Screens
 description: 瞭解在演示站點上啟用完整的AEM Screensas a Cloud Service體驗的步驟。
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2666'
 ht-degree: 0%
 
 ---
-
 
 # 為演示網站啟用AEM Screens {#enable-screens}
 

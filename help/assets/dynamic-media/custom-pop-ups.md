@@ -68,7 +68,7 @@ Quickview受Dynamic Media的以下查看者支援：
     </tr>
     <tr>
     <td>旋轉木馬旗</td>
-    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">將旋轉傳送標題添加到網站頁面</a>。<br /> </td>
+    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Adding a carousel banner to your website page</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
@@ -256,8 +256,8 @@ Quickview受Dynamic Media的以下查看者支援：
 
    `*viewerInstance.*init()`
 
-   **示例**
-此示例使用互動式影像查看器。
+   **Example**
+This example uses the Interactive image viewer.
 
    `s7interactiveimageviewer.init()`
 

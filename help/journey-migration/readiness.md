@@ -1,7 +1,8 @@
 ---
 title: 就緒階段
 description: 瞭解您需要採取哪些步驟以確保AEM您的安裝已準備好移至雲
-source-git-commit: d851ca19070232e1d43f5c5e546d4174e2c310a2
+exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2078'
 ht-degree: 6%

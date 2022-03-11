@@ -2,13 +2,13 @@
 title: 無頭架AEM構
 description: 瞭解Adobe Experience Manager的高級體系結構，因為它與無頭部署相關。 瞭解AEM作者、預覽和發佈服務的角色以及建議的無頭應用程式部署模式。
 feature: Content Fragments,GraphQL API
-source-git-commit: 64b2beb4af2297e19e39ad534856bce33ffcfcf8
+exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # 無頭架AEM構
 
@@ -49,4 +49,3 @@ ht-degree: 0%
 1. 可以設定連接到預覽服務的應用程式預覽版本。
 1. 內容一旦經過審核和批准，便可發佈到AEM發佈服務。
 1. 最終用戶與應用程式的生產版本進行交互。 生產應用程式通過Dispatcher連接到發佈服務，並使用GraphQL API請求和使用內容。
-

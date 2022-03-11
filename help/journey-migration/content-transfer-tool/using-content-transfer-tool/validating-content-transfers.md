@@ -1,13 +1,13 @@
 ---
 title: 驗證內容傳輸
 description: 使用內容傳輸工具驗證內容傳輸
-source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
+exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 1%
 
 ---
-
 
 # 驗證內容傳輸 {#validating-content-transfers}
 
@@ -157,7 +157,3 @@ Migration validation took 0 minutes
 有目的地排除抽取和攝取摘要中的某些路徑，以保持這些檔案的大小可管理，目標是能夠在攝取完成後的兩小時內計算遷移驗證結果。
 
 當前從摘要中排除的路徑包括： `cqdam.text.txt` 格式副本，節點 `/home`，以及 `/jcr:system`。
-
-
-
-

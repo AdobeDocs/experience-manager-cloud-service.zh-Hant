@@ -1,13 +1,13 @@
 ---
 title: 參AEM考演示附加行程
 description: 從此開始，瞭解如何以最小的配置將參考演示附加程式輕鬆添加到沙箱環境AEM，並能夠通過基於最佳實踐的豐富示例來testAEM的強大功能。
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 1%
 
 ---
-
 
 # 參AEM考演示附加行程 {#reference-demos-add-on-journey}
 

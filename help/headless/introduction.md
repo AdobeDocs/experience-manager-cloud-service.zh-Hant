@@ -1,12 +1,12 @@
 ---
 title: 無頭引AEM言
-description: Adobe Experience Manager(AEM)無頭自助資源和檔案連結。 瞭解如何使用內容模型、內容片段和GraphQL API等功能為無頭體驗提供動AEM力。
-landing-page-description: 瞭解如何使用和管理Experience Manager無頭as a Cloud Service。
+description: Adobe Experience Manager (AEM) Headless 自助資源和文件連結。了解如何使用內容模型、內容片段和 GraphQL API 等功能來增強 AEM 的無頭體驗。
+landing-page-description: 了解如何使用及管理 Experience Manager Headless as a Cloud Service。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 1%
+ht-degree: 8%
 
 ---
 

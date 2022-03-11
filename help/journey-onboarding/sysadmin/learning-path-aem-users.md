@@ -1,59 +1,60 @@
 ---
-title: AEM使用者的學習路徑
-description: 如果您是AEM使用者，請依照本頁面了解取得存取權後的後續步驟
+title: 用戶學習路AEM徑
+description: 如果您是用戶，請按照本頁瞭解獲得訪問權限後的後續AEM步驟
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 12ca20c750d7332ebfaf62c781cbe5ec386c2d64
+exl-id: 86700cce-139f-451e-9c21-b38b6332f773
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 3%
 
 ---
 
-# AEM使用者的學習路徑 {#learn-path-aem-users}
+# 用戶學習路AEM徑 {#learn-path-aem-users}
 
 ## 目標 {#objective}
 
-本檔案可協助您的AEM作為Cloud Service內容作者來存取Adobe Experience Manager(AEM)。
+此文檔可幫助AEM您的as a Cloud Service內容作者訪問Adobe Experience Manager(AEM)。
 
-閱讀後，您應了解如何：
+閱讀完後，您應該瞭解如何：
 
-* 存取Cloud Manager
-* 以Cloud Service例項存取AEM
-* 製作AEM as aCloud Service的內容
+* 訪問雲管理器
+* 訪問AEMas a Cloud Service實例
+* 為AEMas a Cloud Service
 
 ## 簡介  {#introduction}
 
-對於內容作者和AEM使用者而言，存取AEM as aCloud Service是AEM雲端歷程的重要第一步。 及時存取意味著您不會失去生產力，而您的使用者距離變革性數位體驗更近。
+訪AEM問as a Cloud Service是內容作者和用AEM戶雲之旅的重要第AEM一步。 及時訪問意味著您不會在生產率上失去優勢，而您的最終用戶距離變革性數字型驗更近。
 
-系統管理員指派給AEM User產品設定檔的團隊每位成員都擁有（唯讀）Cloud Manager的存取權。 當然，如果這些使用者也被指派給[Cloud Manager產品設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)，那麼他們將擁有AEM作為Cloud Service和Cloud Manager的這些權限總和。
+您的團隊中由系統管理員分配AEM給用戶產品配置檔案的每個成員都將擁有（只讀）Cloud Manager訪問權限。 當然，如果這些用戶也被分配到 [Cloud Manager產品配置檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)然後，他們將擁有跨as a Cloud Service和雲管理AEM器的這些權限總和。
 
 ## 必備條件  {#prerequisites}
 
-當您的系統管理員將AEM設為Cloud Service團隊時，您的系統管理員必須已完成所有必要步驟，並已成功將您指派給AEM Users產品設定檔。
+在設定as a Cloud Service團隊時，系統管理員必須完成所有必要步驟並AEM成功將您分配給用戶產品配AEM置檔案。
 
-## 登入作者 {#login-author}
+## 登錄到作者 {#login-author}
 
-請依照下列步驟存取作者：
+按照以下步驟訪問作者：
 
-1. 從[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)直接導覽至Cloud Manager的登入頁面。
+1. 從直接導航到Cloud Manager的登錄頁 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)。
 
    >[!NOTE]
-   >請將[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)連結加入書籤，以供日後參考，並協助您直接導覽至Cloud Manager的登陸頁面。
+   >請將書籤 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 連結，以供將來參考，並幫助您直接導航至Cloud Manager的登錄頁。
 
-1. 從Cloud Manager的&#x200B;**方案和產品**&#x200B;頁面中選取方案，以啟動&#x200B;**概述**&#x200B;頁面。
+1. 從雲管理器的 **計畫和產品** 頁 **概述** 的子菜單。
 
-1. 在Cloud Manager的&#x200B;**概述**&#x200B;頁面，按一下&#x200B;**環境**&#x200B;卡片中的製作連結。
+1. 從 **概述** 頁面，按一下 **環境** 卡。
 
    ![](/help/journey-onboarding/assets/author-environ.png)
 
-1. 這會開啟一個新標籤，讓您可在其中使用Adobe ID登入製作環境。
+1. 這將開啟一個新頁籤，在該頁籤中，您可以使用您的Adobe ID登錄到作者環境。
 
-   恭喜！ 您現在已成功登入Author。
+   恭喜！ 您現在已成功登錄到「作者」。
 
-## 下一步 {#whats-next}
+## 下一步是什麼 {#whats-next}
 
-您現在可以編寫和發佈AEM頁面。 請前往下方的其他資源區段，以深入了解或尋找更多學習路徑。
+您現在已準備好編寫和發AEM布頁面。 瞭解詳情或在下面的「其他資源」部分下查找更多學習路徑。
 
 ## 其他資源 {#additional-resources}
 

@@ -1,46 +1,46 @@
 ---
-title: 螢幕中視訊的縮圖支援作為Cloud Service
-description: 本頁面說明如何將螢幕中的視訊縮圖支援新增為Cloud Service。
+title: 螢幕中視頻的縮略圖支援as a Cloud Service
+description: 本頁介紹如何在螢幕as a Cloud Service中為視頻添加縮略圖支援。
 index: true
-source-git-commit: e5dc848ca58e176b89861414d0e711866f96eb0e
+exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
 
 ---
 
-
-# 影片的縮圖支援 {#thumbnail-support-videos}
+# 視頻縮略圖支援 {#thumbnail-support-videos}
 
 ## 簡介 {#introduction}
 
-內容作者可以定義視訊的縮圖，以便影像可作為預留位置，並在適當團隊完成實際視訊時，正確測試內容播放和鎖定目標。 當視訊播放失敗時，也可以使用影像。
+內容作者可以定義視頻的縮略圖，以便影像可以用作佔位符並正確地test內容回放和目標，同時由適當的團隊最終確定實際視頻。 在視頻回放失敗時，也可以使用影像。
 
-新增對視訊元件上縮圖影像的支援，讓客戶能在頻道中正確新增有效的元件（含實際內容），並在實際傳送視訊前執行任何鎖定目標設定。
+在視頻元件上添加對縮略圖的支援使客戶能夠正確地在頻道中添加有效元件（包含實際內容），並在視頻實際交付之前執行任何目標配置。
 
 >[!NOTE]
->如果在視訊元件上設定縮圖影像，則會在播放器上視訊播放失敗時播放。 這可讓您將所需的訊息傳送給對象（透過播放內容），而非完全略過訊息。
+>如果在視頻元件上設定縮略圖，則在播放器上出現視頻回放失敗時播放縮略圖。 這允許您將所需的消息（通過播放內容）傳遞給觀眾，而不是完全跳過它。
 
-縮圖支援可讓您：
+縮略圖支援允許您：
 
-* 當影片尚未準備好，或您不一定想要在播放器上測試大型資產下載時，準備管道體驗
+* 當視頻尚未準備好或您不一定想在播放器上test大型資產下載時，準備一次頻道體驗
 
-* 如果裝置上發生播放問題，請設定後援機制。
+* 設定回退機制，以防設備出現回放問題。
 
-## 在影片中使用縮圖 {#using-thumbnails}
+## 在視頻中使用縮略圖 {#using-thumbnails}
 
 >[!IMPORTANT]
 >**必備條件**
->在了解如何將縮圖用於影片之前，請務必了解如何在Screens中以Cloud Service專案的形式為頻道建立影片轉譯。 如需詳細資訊，請參閱[此處](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)。
+>在學習如何將縮略圖用於視頻之前，請確保瞭解如何在「螢幕as a Cloud Service」項目中為頻道建立視頻格式副本。 請參閱 [這裡](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) 的子菜單。
 
-請依照下列步驟，在影片中使用縮圖：
+按照以下步驟在視頻中使用縮略圖：
 
-1. 導覽至現有的Screens頻道或建立新頻道。
+1. 導航到現有的螢幕通道或建立新通道。
 
    >[!NOTE]
-   >若要了解如何建立管道及將內容新增至管道，請參閱[在Screens中建立和管理管道作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en)。
+   >要瞭解如何建立頻道和向頻道添加內容，請參見 [在螢幕中建立和管理通道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en)。
 
-1. 選取通道，然後按一下動作列中的&#x200B;**Edit**&#x200B;以開啟編輯器。
+1. 選擇頻道並按一下 **編輯** 的子菜單。
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
@@ -48,30 +48,30 @@ ht-degree: 0%
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. 選取影片，然後按一下&#x200B;*扳手*&#x200B;圖示以開啟影片屬性。
+1. 選擇視頻，然後按一下 *扳* 表徵圖以開啟視頻屬性。
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. 將開啟&#x200B;**Video**&#x200B;對話框，您將在其中查看&#x200B;**縮圖**&#x200B;拖放區域。
+1. 的 **視頻** 對話框，您可以在其中查看 **縮略圖** 刪除區域。
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
-1. 將影像從資產選擇器拖放至&#x200B;**縮圖**&#x200B;拖放區域，然後按一下&#x200B;**完成**。
+1. 將影像從資產選取器拖放到 **縮略圖** 刪除區域，然後按一下 **完成**。
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
 
-1. 按一下&#x200B;**預覽**。
+1. 按一下 **預覽**。
 
-1. 如果元件上設定了視訊，則視訊會播放。 如果沒有，且已設定縮圖，則會播放縮圖。 否則，系統會將元件視為未設定，且會略過。
+1. 如果元件上設定了視頻，則視頻將播放。 如果沒有，並且縮略圖已設定，則縮略圖將播放。 否則，元件將被視為未配置，並將跳過。
 
-## 在影片中使用縮圖時支援的使用案例 {#understand-use-case}
+## 在視頻中使用縮略圖時支援的使用案例 {#understand-use-case}
 
-影片中的縮圖支援下列使用案例：
+視頻中的縮略圖支援以下使用情形：
 
-* 系統會略過未設定任何內容的視訊元件。
+* 將跳過未設定任何內容的視頻元件。
 
-* 只設定縮圖的視訊元件會播放縮圖。
+* 僅具有縮略圖集的視頻元件將播放縮略圖。
 
-* 同時設定視訊（如果視訊有正確的轉譯）和縮圖的視訊元件會播放視訊。
+* 具有視頻（如果視頻的格式副本正確）和縮略圖設定的視頻元件將播放視頻。
 
-* 如果發生播放錯誤，設定了視訊的視訊元件會播放縮圖，如果未設定縮圖，則只會跳至下一個項目。
+* 帶有視頻集的視頻元件將在出現播放錯誤時播放縮略圖，或者在縮略圖未配置時只跳到下一個項目。

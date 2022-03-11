@@ -15,9 +15,9 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_notable_changes"
->title="AEM as aCloud Service中重大變更"
->abstract="在此索引標籤中，您可以檢視有助於您了解內部部署AEM或Adobe Managed Services之間差異的內容，與AEM as a Cloud Service相比。"
->additional-url="https://video.tv.adobe.com/v/330543" text="AEM as aCloud Service的演變"
+>title="AEMas a Cloud Service"
+>abstract="在此頁籤中，您可以查看有助於您瞭解內部或Adobe Managed Services之間AEM的差異的內容，與as a Cloud Service相比AEM。"
+>additional-url="https://video.tv.adobe.com/v/330543" text="as a Cloud Service的演AEM變"
 
 
 >[!NOTE]
@@ -71,7 +71,7 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 
 ## 禁止變更發佈用儲存庫 {#changes-to-publish-repo}
 
-除了發佈層級`/home`資料夾下的變更外，AEMCloud Service不允許直接變更發佈存放庫。 在舊版內部部署AEM或AMS上的AEM中，程式碼可直接變更發佈用存放庫。 可透過下列方式緩解部分限制：
+除了 `/home` 資料夾，不允許在AEM Cloud Service上直接更改發佈儲存庫。 在以前的內部版本AEM或AEMAMS上，可以直接對發佈儲存庫進行代碼更改。 可以通過以下方式緩解某些限制：
 
 * 內容和以內容為基礎的設定：變更作者例項並發佈。
 * 程式碼和設定：在 GIT 儲存庫中變更，並執行 CI/CD 管線以轉出這些變更。
@@ -114,4 +114,4 @@ AEM 雲端服務預設啟用 HTTP 加速功能，包括適用於作者與發佈�
 
 ## 資產處理與傳送 {#asset-handling}
 
-資產上傳、處理和下載會在[!DNL Experience Manager Assets]中以[!DNL Cloud Service]的形式最佳化。 [!DNL Assets] 現在更有效率、更能擴充，並且讓您以更快的速度上傳和下載。此外，這也會影響現有的自訂程式碼和某些操作。 有關[!DNL Experience Manager] 6.5功能的更改和奇偶校驗的清單，請參閱[ [!DNL Assets]](/help/assets/assets-cloud-changes.md)的更改。
+資產上載、處理和下載在 [!DNL Experience Manager Assets] 作為 [!DNL Cloud Service]。 [!DNL Assets] 現在更高效，支援更大的擴展，並允許您以更快的速度上傳和下載。 此外，它還會影響現有的自定義代碼和一些操作。 用於更改清單和與的奇偶校驗 [!DNL Experience Manager] 6.5功能，請參見 [更改 [!DNL Assets]](/help/assets/assets-cloud-changes.md)。

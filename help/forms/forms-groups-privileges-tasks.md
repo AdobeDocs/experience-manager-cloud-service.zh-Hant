@@ -1,6 +1,6 @@
 ---
-title: ' [!DNL AEM Forms]  '
-description: 'List of out of the box user groups and permissions assigned to each group '
+title: '內置 [!DNL AEM Forms] as a Cloud Service組 '
+description: '現成用戶組清單和分配給每個組的權限 '
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 5%
 
 # 群組與權限 {#aem-forms-on-osgi-groups-and-privileges}
 
-[](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)[](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)These policies control permissions of the users that are part of the group.
+你可以 [建立組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 並分配策略和 [用戶](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 組。 這些策略控制屬於組的用戶的權限。
 
-[!DNL AEM Forms][!DNL forms-users]
+一旦設定 [!DNL AEM Forms] as a Cloud Service，下表中列出的組，如 [!DNL forms-users] 和forms-power-user，可自動進行分配：
 
 <table>
  <tbody>
@@ -25,22 +25,22 @@ ht-degree: 5%
    <td>[!DNL forms-users] <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>Create, preview, publish, and submit Adaptive Forms</li> 
+     <li>建立、預覽、發佈和提交自適應Forms</li> 
     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> -->
-     <li>Upload assets to an AEM instance</li> 
-     <li>Create themes</li> 
+     <li>將資產上載到實AEM例</li> 
+     <li>建立主題</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
-     <li>Create, preview, publish, and submit Adaptive Forms</li> 
+     <li>建立、預覽、發佈和提交自適應Forms</li> 
      <!-- <li>Create, preview, and publish interactive communications and document fragments</li> 
      <li>Create scripts for Adaptive Forms using code editor</li> -->
-     <li>Upload assets including scripts</li> 
-     <li>Create themes</li> 
-     <li>Import packages containing XDP</li> 
+     <li>上載資產（包括指令碼）</li> 
+     <li>建立主題</li> 
+     <li>導入包含XDP的包</li> 
     </ul> </td> 
   </tr>
   <!-- <tr>
@@ -55,14 +55,14 @@ ht-degree: 5%
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li><!-- or interactive communications --></li> 
+     <li>建立和預覽自適應Forms <!-- or interactive communications --> 模板</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td><p>[!DNL fdm-authors]</p> </td> 
    <td>
     <ul> 
-     <li>Create and modify a form data model</li> 
+     <li>建立和修改表單資料模型</li> 
     </ul> </td> 
   </tr>
   <!-- <tr>
@@ -95,7 +95,7 @@ ht-degree: 5%
     <ul> 
      <!-- <li>Configure PDF Generator</li> --> 
      <!-- <li>Configure Watched folder</li> -->
-     <li>Manage workflow applications</li> 
+     <li>管理工作流應用程式</li> 
     </ul> </td> 
   </tr>
  </tbody>

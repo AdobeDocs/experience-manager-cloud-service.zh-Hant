@@ -1,37 +1,37 @@
 ---
-title: 從來源擷取內容
-description: 從來源擷取內容
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+title: 從源中提取內容
+description: 從源中提取內容
+exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 36%
 
 ---
 
+# 從源中提取內容 {#extracting-content}
 
-# 從來源擷取內容 {#extracting-content}
-
-## 內容轉移工具中的提取程式 {#extraction-process}
+## 內容傳輸工具中的抽取過程 {#extraction-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
->title="內容擷取"
->abstract="提取是指從來源AEM例項擷取內容，放入名為移轉集的暫存區域。 移轉集是 Adobe 提供的雲端儲存空間，可供暫時儲存在來源 AEM 例項與雲端服務 AEM 例項間轉移的內容。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="追加提取"
+>title="內容提取"
+>abstract="抽取是指將源實例中的內AEM容提取到稱為遷移集的臨時區域。 移轉集是 Adobe 提供的雲端儲存空間，可供暫時儲存在來源 AEM 例項與雲端服務 AEM 例項間轉移的內容。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="上頂提取"
 
 
 請依照下列步驟，從「內容轉移工具」中提取您的移轉集：
 >[!NOTE]
->如果將Amazon S3或Azure資料存放區用作資料存放區類型，您可以執行選用的預複製步驟，大幅加速提取階段。 若要這麼做，您必須設定 `azcopy.config` 檔案，然後再執行解壓縮。 請參閱 [處理大型內容存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 以取得更多詳細資訊。
+>如果將AmazonS3或Azure資料儲存用作資料儲存的類型，則可以運行可選的預複製步驟以顯著加快提取階段。 為此，您需要配置 `azcopy.config` 檔案，然後運行抽取。 請參閱 [處理大型內容儲存庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 的子菜單。
 
 >[!IMPORTANT]
->從來源擷取內容之前，您應先執行「使用者對應」工具。 請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) 以取得更多詳細資訊。
+>在從源中提取內容之前，應運行「用戶映射」工具。 請參閱 [使用用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) 的子菜單。
 
-1. 從中選擇遷移集 **內容轉移** 精靈，按一下 **Extract** 開始提取。
+1. 從中選擇遷移集 **內容傳輸** 嚮導 **提取** 開始提取。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-01.png)
 
-1. 此 **移轉集擷取** 對話框顯示，然後按一下 **Extract** 開始提取階段。
+1. 的 **遷移集提取** 對話框顯示並按一下 **提取** 開始提取階段。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-02.png)
 
@@ -39,10 +39,10 @@ ht-degree: 36%
    >您可以選擇在提取階段中覆寫預備容器。
 
    >[!IMPORTANT]
-   >如果在從源中提取內容之前尚未在此遷移集上運行用戶映射，您將看到一個警告，顯示「用戶映射」步驟處於掛起狀態，如下圖所示。 按一下 **對應使用者** 來運行用戶映射工具。
+   >如果在從源中提取內容之前尚未在此遷移集上運行用戶映射，您將看到一個警告，顯示「用戶映射」步驟處於掛起狀態，如下圖所示。 按一下 **映射用戶** 以運行用戶映射工具。
    >![影像](/help/journey-migration/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
-1. 此 **提取** 欄位現在會顯示 **執行中** 狀態，指出提取正在進行中。
+1. 的 **提取** 欄位現在顯示 **正在運行** 狀態，指示正在提取。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-03.png)
 
@@ -51,7 +51,7 @@ ht-degree: 36%
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-04.png)
 
    >[!IMPORTANT]
-   >UI具有自動重新載入功能，可重新載入 **內容轉移** 精靈每30秒。
+   >UI具有自動重新載入功能，可重新載入 **內容傳輸** 嚮導。
    >提取階段開始時將建立寫入鎖定，並在 *60 秒*&#x200B;後釋放。因此，如果提取停止，則需等待一分鐘才能釋放鎖定並重新開始提取。
 
 ## 追加提取 {#top-up-extraction-process}
@@ -60,23 +60,23 @@ ht-degree: 36%
 
 >[!NOTE]
 >初始轉移內容後，建議您先頻繁地執行追加差異內容，以縮短最終差異化內容轉移的內容凍結時間，然後再於雲端服務上線。
->此外，必須不要將現有內容的內容結構從採取初始擷取時變更為執行追加擷取時。 自初始擷取後，結構已變更的內容無法執行追加。 請務必在移轉程式期間加以限制。
+>此外，從初始提取到運行頂層提取時，必須不改變現有內容的內容結構。 無法對自初始提取後結構已更改的內容運行頂層。 請確保在遷移過程中限制此操作。
 
 提取程序一旦完成，您即可使用追加提取方法來轉移差異內容。
 
 請遵循下列步驟：
 
-1. 導覽至 **內容轉移** 精靈，並選取您要執行追加提取的移轉集。 按一下&#x200B;**提取**&#x200B;即可開始追加提取。
+1. 導航到 **內容傳輸** 嚮導，然後選擇要為其執行頂部抽取的遷移集。 按一下&#x200B;**提取**&#x200B;即可開始追加提取。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-05.png)
 
-1. 此 **移轉集擷取** 對話框。按一下 **Extract**.
+1. 的 **遷移集提取** 對話框。按一下 **提取**。
 
    >[!IMPORTANT]
    >您必須停用&#x200B;**在提取期間覆寫預備容器**選項。
    >![影像](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-06.png)
 
 
-## 下一步 {#whats-next}
+## 下一步是什麼 {#whats-next}
 
-在您學習了「內容轉移工具」中的「從來源擷取內容」後，您現在就可以了解「內容轉移工具」中的擷取程式。 請參閱 [將內容擷取至Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 了解如何從「內容轉移工具」擷取您的移轉集。
+在內容傳輸工具中學習了從源中提取內容後，您現在就可以學習內容傳輸工具中的攝取過程。 請參閱 [將內容插入目標](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 瞭解如何從內容傳輸工具中獲取遷移集。

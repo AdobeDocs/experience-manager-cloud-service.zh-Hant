@@ -85,7 +85,7 @@ AEM Forms多年來幫助許多組織提供了出色的寄宿和註冊體驗。 �
 
 ## 發行日期 {#release-date-cm-march}
 
-The Release Date for Cloud Manager in AEM as a Cloud Service 2021.3.0 is March 11, 2021.
+Cloud Manager在as a Cloud Service中的AEM發佈日期為2021年3月11日。
 下一版計畫於2021年4月08日發行。
 
 ### 新增功能 {#what-is-new-march}

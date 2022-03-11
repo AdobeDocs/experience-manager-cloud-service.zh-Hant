@@ -2,13 +2,13 @@
 title: 具有無頭的跨源資源共用(CORS)配AEM置
 description: Adobe Experience Manager的跨源資源共用(CORS)允許無頭Web應用程式進行客戶端呼AEM叫。 需要CORS配置才能訪問GraphQL終結點。
 feature: GraphQL API
-source-git-commit: 0cc131209f497241949f8da6e8144dfcaffe7e6e
+exl-id: 426be9f9-f44a-4744-ac08-e64bb97308a0
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
 
 ---
-
 
 # 跨源資源共用(CORS)配置
 
@@ -58,5 +58,3 @@ CORS配置必須指定受信任的網站源 `alloworigin` 或 `alloworiginregexp
 ```
 
 如果已為端點配置虛榮路徑，也可以在 `allowedpaths`。
-
-

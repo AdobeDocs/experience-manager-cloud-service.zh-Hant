@@ -1,93 +1,93 @@
 ---
-title: 在Screens中建立和管理頻道作為Cloud Service
-description: 本頁說明如何以Cloud Service的形式在Screens中建立和管理頻道。
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+title: 在螢幕中建立和管理通道as a Cloud Service
+description: 本頁介紹如何在螢幕as a Cloud Service中建立和管理通道。
+exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 1%
 
 ---
 
+# 在螢幕中建立和管理通道as a Cloud Service {#creating-channels-screens-cloud}
 
-# 在Screens中建立和管理管道作為Cloud Service {#creating-channels-screens-cloud}
-
-建立AEM Screens專案後，您必須建立管道。
-***頻道***、顯示一系列內容（影像和視訊）、網站或單頁應用程式。
+建立AEM Screens項目後，必須建立渠道。
+***頻道***、顯示一系列內容（影像和視頻）、網站或單頁應用程式。
 
 ## 目標 {#objective}
 
-本檔案可協助您了解如何在Screens內容提供者中為您的AEM Screens專案建立和管理管道。 閱讀後，您應該：
+本文檔幫助您瞭解在螢幕內容提供商中為您的AEM Screens項目建立和管理渠道。 閱讀後，您應：
 
-* 了解如何為Screens內容提供者建立管道
-* 管理和編輯頻道中的內容
+* 瞭解如何建立螢幕內容提供程式的通道
+* 管理和編輯您的渠道中的內容
 
-## 在Screens中建立新序列管道作為Cloud Service的步驟 {#create-new-channel}
+## 在螢幕中建立新序列通道的步驟as a Cloud Service {#create-new-channel}
 
 >[!NOTE]
 >**必備條件**
->在開始本指南的本節之前，請查看[在Screens中建立和管理作為Cloud Service的項目](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)。
+>在開始本指南的本節之前，請查看 [在螢幕中建立和管理項目as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)。
 
-請依照下列步驟，在Screens中建立新的序列管道作為Cloud Service:
+按照以下步驟在螢幕as a Cloud Service中建立新序列通道：
 
-1. 導覽至「Screens內容提供者」。
+1. 導航到「螢幕內容提供程式」。
 
-1. 導覽至您的AEM Screens專案，例如&#x200B;*FirstDigitalExperience*。
+1. 導航到您的AEM Screens項目，例如 *FirstDigitalExperience*。
 
-1. 從專案選取&#x200B;**Channels**&#x200B;資料夾，例如&#x200B;**FirstDigitalExperience** —> **Channels**，然後按一下動作列中的&#x200B;**Create**。
+1. 選擇 **頻道** 資料夾 **FirstDigitalExperience** —> **頻道** 按一下 **建立** 按鈕。
 
    ![](/help/screens-cloud/assets/create-content/channel-create1.png)
 
-1. 從&#x200B;**Create**&#x200B;嚮導中選擇模板，如&#x200B;**Sequence Channel**，然後按一下&#x200B;**Next**。
+1. 選擇模板，如 **序列通道** 從 **建立** 嚮導，然後按一下 **下一個**。
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > **建立**&#x200B;精靈在建立通道時提供不同類型的範本。 如需詳細資訊，請參閱建立精靈中的[可用範本](#available-templates)區段。
+   > 的 **建立** 嚮導在建立通道時提供不同類型的模板。 請參閱一節 [可用模板](#available-templates) 的子菜單。
 
-1. 輸入序列通道的名稱，例如&#x200B;**LoopingChannelOne**，然後按一下&#x200B;**Create**。
+1. 輸入序列通道的名稱，例如， **循環通道** 按一下 **建立**。
 
    ![](/help/screens-cloud/assets/create-content/channel-create3.png)
 
-   您現在會在AEM Screens專案的「管道」資料夾中看到&#x200B;**LoopingChannelOne**。
+   您現在將看到 **循環通道** 在「頻道」資料夾中。
 
-   建立管道後，您現在可以新增內容至管道。 請參閱[將內容新增至頻道](#add-content) ，了解如何將資產（影像/視訊）新增至頻道。
+   建立頻道後，現在可以將內容添加到頻道。 請參閱 [將內容添加到渠道](#add-content) 瞭解如何將資產（影像/視頻）添加到您的渠道。
 
-## 管理管道 {#managing-channels}
+## 管理渠道 {#managing-channels}
 
-您可以編輯、檢視屬性和控制面板、複製、預覽和刪除管道。
+可以編輯、查看屬性和儀表板、複製、預覽和刪除通道。
 
-從專案導覽至管道，然後選取管道，如下圖所示。 您現在可以選取選項，例如編輯頻道、檢視屬性、預覽內容、管理發布或從動作列刪除頻道。
+從項目導航到頻道，然後選擇頻道，如下圖所示。 現在，您可以選擇選項，如編輯頻道、查看屬性、預覽內容、管理發布或從操作欄中刪除頻道。
 
 ![](/help/screens-cloud/assets/create-content/channelprop1.png)
 
-### 新增內容至管道 {#add-content}
+### 將內容添加到渠道 {#add-content}
 
-若要新增或編輯頻道中的內容，請遵循下列步驟：
+要添加或編輯頻道中的內容，請執行以下步驟：
 
-1. 選擇要編輯的通道，如下圖所示。 按一下動作列左上角的&#x200B;**Edit**&#x200B;以開啟編輯器。
+1. 選擇要編輯的通道，如下圖所示。 按一下 **編輯** 的子菜單。
 
    ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
-1. 編輯器可讓您新增資產/元件至要發佈的管道。
+1. 編輯器允許您將資產/元件添加到要發佈的渠道。
 
-1. 從左側窗格拖放資產，並將其新增至編輯器。
+1. 從左側窗格拖放資產，並將其添加到編輯器中。
 
    ![](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >按一下&#x200B;**預覽**以預覽頻道內容。
+   >按一下 **預覽** 預覽頻道的內容。
    >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 建立嚮導中的可用模板 {#available-templates}
 
-使用&#x200B;**Create**&#x200B;通道嚮導時，可使用以下模板：
+使用 **建立** 通道嚮導：
 
-| 可用範本 | 說明 |
+| 可用模板 | 說明 |
 |--- |--- |
-| 頻道資料夾 | 允許建立資料夾以儲存管道集合。 |
-| 順序頻道 | 可建立循序播放元件的管道（在幻燈片放映中逐個播放）。 |
-| 左或右L形分屏通道 | 可讓內容作者在適當大小的區域中檢視不同類型的資產。 |
+| 頻道資料夾 | 允許建立資料夾以儲存通道集合。 |
+| 順序頻道 | 允許建立按順序播放元件的通道（幻燈片放映中逐個播放）。 |
+| 左或右L-Bar拆分螢幕通道 | 允許內容作者在適當大小的區域中查看不同類型的資產。 |
 
 
-## 下一步 {#whats-next}
+## 下一步是什麼 {#whats-next}
 
-現在，您已在專案中設定AEM Screens管道後，就需要發佈管道。 在從Screens服務提供者管理您的播放器之前，請參閱[以Cloud Service形式發佈Screens中的頻道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en)。
+現在，在您的項目中設定了AEM Screens頻道，您需要發佈您的頻道。 請參閱 [在螢幕中發佈通道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en) 從螢幕服務提供商管理玩家之前。

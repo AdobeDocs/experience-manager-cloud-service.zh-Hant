@@ -1,27 +1,27 @@
 ---
-title: 在內容轉移工具中檢視移轉集記錄
-description: 在內容轉移工具中檢視移轉集記錄
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+title: 在內容傳輸工具中查看遷移集的日誌
+description: 在內容傳輸工具中查看遷移集的日誌
+exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 52%
 
 ---
 
-
 # 檢視移轉集記錄 {#view-logs-content-transfer-tool}
 
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_logs"
->title="檢視記錄"
->abstract="擷取擷取完成後，檢查記錄中是否有任何錯誤/警告。 您應處理所回報的問題，或聯絡Adobe支援，以立即解決任何錯誤。"
+>title="查看日誌"
+>abstract="完成「Extract of Ingestion（提取攝取）」後，檢查日誌中是否有錯誤/警告。 任何錯誤都應通過處理報告的問題或與Adobe支援部門聯繫立即解決。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#troubleshooting" text="疑難排解"
->additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="聯絡Adobe支援"
+>additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="聯繫Adobe支援"
 
-完成每個步驟（擷取和擷取）後，請檢查記錄並尋找錯誤。  您應處理所回報的問題，或聯絡Adobe支援，以立即解決任何錯誤。
+完成每個步驟（提取和攝取）後，檢查日誌並查找錯誤。  任何錯誤都應通過處理報告的問題或與Adobe支援部門聯繫立即解決。
 
-## 檢視記錄檔的步驟 {#viewing-logs}
+## 查看日誌的步驟 {#viewing-logs}
 
 您可以在&#x200B;*綜覽*頁面中檢視現有移轉集記錄。
 請遵循下列步驟：

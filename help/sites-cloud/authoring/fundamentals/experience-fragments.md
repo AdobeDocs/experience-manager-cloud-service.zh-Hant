@@ -35,7 +35,7 @@ ht-degree: 8%
 
 * 如果作者希望重新使用頁面的部分（體驗的一部分）。
 如果沒有「經驗片段」，作者需要複製並貼上該片段。 建立和維護這些複製/貼上體驗非常耗時且容易出現用戶錯誤。
-體驗片段消除了複製/貼上的需要。
+Experience Fragments eliminate the need for copy/paste.
 * 支援無頭CMS使用案例。
 作者只想AEM用於創作，而不想交付給客戶。 第三方系統/觸點將消耗該體驗，然後交付給最終用戶。
 
@@ -53,8 +53,8 @@ ht-degree: 8%
 
 * 無論何時您想要重用體驗。
    * 將使用相同或相似內容重用的體驗。
-* 當您用作AEM第三方的內容交付平台時。
-   * 任何希望用作內AEM容交付平台的解決方案。
+* When you use AEM as a content delivery platform for third parties.
+   * Any solution that wants to use AEM as the content delivery platform.
    * 將內容嵌入第三方觸點。
 * 如果您有「體驗」，但有不同的變體或格式副本。
    * 渠道或上下文特定變體。
@@ -97,7 +97,7 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
 
 1. [建立資料夾](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-folder)。
 
-1. [配置該資料夾允許的體驗片段模板](#configure-allowed-templates-folder)。
+1. [Configure the allowed Experience Fragment templates for that folder](#configure-allowed-templates-folder).
 
 >[!NOTE]
 >
@@ -174,15 +174,15 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
 
 1. 輸入 **體驗****片段的屬性**。
 
-   A **標題** 的子菜單。 如果 **名稱** 留空，它將從 **標題**。
+   A **標題** 的子菜單。 If the **Name** is left blank it will be derived from the **Title**.
 
    ![體驗片段屬性](/help/sites-cloud/authoring/assets/xf-04.png)
 
    >[!NOTE]
    >
-   >「體驗片段」模板中的標籤將不會與此「體驗片段」根頁上的標籤合併。
+   >Tags from the Experience Fragment template will not be merged with tags on this Experience Fragment root page.
    >
-   >這些是完全分開的。
+   >These are completely separate.
 
 1. 按一下&#x200B;**建立**。
 
@@ -199,15 +199,15 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
 >
 >請參閱 [編輯頁面內容](/help/sites-cloud/authoring/fundamentals/editing-content.md) 的子菜單。
 
-以下示例過程說明了如何為產品建立預告：
+The following example procedure illustrates how to create a teaser for a product:
 
 1. 從 [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。
 
 1. 取決於元件：
    * 根據需要添加任何內容和/或資產。
-   * 根據需要配置屬性。
+   * Configure the properties as required.
 
-1. 根據需要添加更多元件。
+1. Add more components as required.
 
 例如：`http://<host>:<port>/editor.html/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master.html`
 
@@ -281,7 +281,7 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
 
 1. 輸入建置塊的名 **稱**，並使用 **Convert確認**:
 
-   ![名稱構建塊](/help/sites-cloud/authoring/assets/xf-11.png)
+   ![Name Building Block](/help/sites-cloud/authoring/assets/xf-11.png)
 
 1. 建 **立區塊** (Building Block **)將顯示在左側標籤(** Local)中，並可以選取以執行進一步動作：
 
@@ -291,7 +291,7 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
 
 您的構建基塊在 **構造塊** 頁籤。 對於每個塊，可執行以下操作：
 
-* **轉到首頁**:在新頁籤中開啟根頁變體
+* **Go to master**: open the root page variation in a new tab
 * **重新命名**
 * **刪除**
 
@@ -319,17 +319,17 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
 
 1. 開啟 **屬性** 體驗片段：
 
-   ![「屬性」按鈕](/help/sites-cloud/authoring/assets/xf-16.png)
+   ![Properties button](/help/sites-cloud/authoring/assets/xf-16.png)
 
-   這些屬性可在以下各個頁籤中使用：
+   The properties are available in various tabs:
 
    >[!CAUTION]
    >
-   >開啟時會顯示這些頁籤 **屬性** 從「體驗片段」控制台。
+   >These tabs are shown when you open **Properties** from the Experience Fragments console.
    >
    >如果您 **在編輯體驗片段時開啟屬性** ，則會顯示適當 [的頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md) 。
 
-   ![體驗片段屬性](/help/sites-cloud/authoring/assets/xf-17.png)
+   ![Experience Fragment properties](/help/sites-cloud/authoring/assets/xf-17.png)
 
    * **基本**
       * **標題**  — 強制

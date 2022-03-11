@@ -11,78 +11,76 @@ ht-degree: 1%
 
 # 整合 Adobe Target{#integrating-with-adobe-target}
 
-在Adobe Marketing Cloud中，[Adobe Target](http://www.adobe.com/solutions/testing-targeting/testandtarget.html)可讓您透過鎖定所有頻道並測量來提升內容相關性。 行銷人員使用Adobe Target來設計和執行線上測試、建立即時受眾區段（根據行為），以及自動鎖定內容和線上體驗。 AEM as aCloud Service已採用Adobe Target Standard中使用的鎖定目標工作流程。 如果您使用Target，您將熟悉AEM as aCloud Service中的目標編輯環境。
+作為Adobe Marketing Cloud的一部分， [Adobe Target](http://www.adobe.com/solutions/testing-targeting/testandtarget.html) 允許您通過針對所有渠道進行定位和測量來提高內容相關性。 Adobe Target被營銷人員用於設計和執行線上test、建立即時（基於行為）受眾群，以及自動確定內容和線上體驗的目標。 AEMas a Cloud Service採用了Adobe Target標準的目標工作流程。 如果使用「目標」，您將熟悉as a Cloud Service中的目標編輯環AEM境。
 
-將您的AEM網站與Adobe Target整合，以個人化您頁面中的內容：
+將您的站AEM點與Adobe Target整合，以個性化頁面中的內容：
 
-* 實作內容鎖定目標。
-* 使用Target受眾建立個人化體驗。
-* 當訪客與您的頁面互動時，將內容資料提交至Target。
-* 追蹤轉換率。
+* 實施內容目標。
+* 使用目標受眾建立個性化體驗。
+* 訪問者與您的頁面交互時，將上下文資料提交到目標。
+* 跟蹤轉換率。
 
 >[!NOTE]
 >
->Adobe Experience Manager作為沒有現有Target帳戶的Cloud Service客戶，可以要求存取Target Foundation Pack以進行Experience Cloud。  Foundation Pack提供對Target的卷有限使用。
+>Adobe Experience Manager as a Cloud Service客戶如果沒有現有目標帳戶，可以請求訪問Target Foundation Pack以進行Experience Cloud。  Foundation Pack提供了對目標的卷限制使用。
 
 
-若要與Target整合，請執行下列工作：
+要與目標整合，請執行以下任務：
 
-* [執行先決條件任務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html):向Adobe Target註冊，並設定AEM製作例項的某些方面。您的Adobe Target帳戶至少必須具有&#x200B;**核准者**&#x200B;層級權限。 此外，您必須保護發佈節點上的活動設定，讓使用者無法存取該設定。
+* [執行必備任務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html):向Adobe Target註冊並配置作者實例的AEM某些方面。 你的Adobe Target帳戶 **批准者** 至少級別權限。 此外，必須保護發佈節點上的活動設定，以便用戶無法訪問該活動設定。
 
-* Launch by Adobe是實際上用來檢測具有Target功能（JS資料庫）的AEM網站的工具。 因此，將AEM as aCloud Service與Launch和Adobe Target整合為一體（請參閱下方連結）。
+* Launch by Adobe是實際工具，用於檢AEM測具有目標功能（JS庫）的站點。 因此，AEM將as a Cloud Service與Launch和Adobe Target結合起來是一回事（請參見以下連結）。
 
-   * [與Adobe Target整合，使用Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
+   * [使用Adobe I/O與Adobe Target整合](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
    * [整合Launch by Adobe](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
-   * [透過AEM將Adobe I/O與AdobeLaunch整合](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
-   * [了解AEM與Launch by Adobe、Analytics和Target的整合](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
+   * [通過AEMAdobe I/O與Adobe發佈整合](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
+   * [了AEM解與Launch by Adobe、分析和目標的整合](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
 >[!NOTE]
 >
->Launch by Adobe的IMS設定（技術帳戶）已在AEM中預先設定為Cloud Service。 使用者不需要建立此設定。
+>用於Launch by Adobe的IMS配置（技術帳戶）在as a Cloud Service中預配置AEM。 用戶不必建立此配置。
 
-1. [設定活動](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html):將活動與Target雲端設定建立關聯。
+1. [配置活動](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html):將活動與目標雲配置關聯。
 
 >[!CAUTION]
 >
->在AEM as aCloud Service中，從AEM同步選件和活動至Adobe Target的復寫代理預設為停用。 如果需要重新啟用複製代理，請與[Adobe支援](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager)團隊聯繫。
+>在AEMas a Cloud Service中，預設禁用將優惠和活動AEM從Adobe Target同步的複製代理。 請聯繫 [Adobe支援](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) 組。
 
 >[!NOTE]
 >
->如果您使用Target搭配自訂的代理設定，您需要設定兩個HTTP用戶端代理設定，因為AEM的某些功能使用3.x API，而其他一些則使用4.x API:
+>如果將目標與自定義代理配置一起使用，則需要配置兩個HTTP客戶端代理配置AEM，因為其中的某些功能使用3.x API，而其他功能則使用4.x API:
 >
->* 3.x的設定為[http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x的設定為[http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
+>* 3.x配置 [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* 4.x配置 [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
-
 
 
 >[!CAUTION]
 >
->您必須保護發佈執行個體上的活動設定節點&#x200B;**cq:ActivitySettings**，使一般使用者無法存取該節點。 處理活動同步至Adobe Target的服務只應能存取活動設定節點。
+>必須保護活動設定節點的安全 **cq：活動設定** 在發佈實例上，以便普通用戶無法訪問。 活動設定節點只能由處理與Adobe Target的活動同步的服務訪問。
 >
->如需詳細資訊，請參閱[與Adobe Target整合的必要條件](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node) 。
+>請參閱 [與Adobe Target整合的先決條件](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node) 的上界。
 
-整合完成時，您可以[製作將訪客資料傳送至Adobe Target的目標內容](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html)。 請注意，頁面元件需要特定的程式碼才能啟用內容鎖定目標。 (請參閱[針對目標內容開發](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html)。
+整合完成後，您可以 [作者目標內容](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html) 把訪問者資料發送到Adobe Target。 請注意，頁面元件需要特定代碼才能啟用內容目標。 (請參閱 [為目標內容開發](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html)。
 
 >[!NOTE]
 >
->當您在AEM作者中鎖定元件時，元件會對Adobe Target進行一系列伺服器端呼叫，以註冊促銷活動、設定選件及擷取Adobe Target區段（如果已設定）。 不會從AEM發佈至Adobe Target進行伺服器端呼叫。
+>當您針對作者中的元件AEM時，該元件會向Adobe Target發出一系列伺服器端呼叫，以註冊市場活動、設定優惠和檢索Adobe Target段（如果已配置）。 發佈到Adobe Target時不會進行AEM伺服器端呼叫。
 
-## 背景資訊來源 {#background-information-sources}
+## 背景資訊源 {#background-information-sources}
 
-將AEM as aCloud Service與Adobe Target整合時，需要了解Adobe Target、AEM活動管理和AEM對象管理。 您應熟悉下列資訊：
+將AEMas a Cloud Service與Adobe Target整合需要瞭解Adobe Target、AEM活動管理和AEM受眾管理。 您應熟悉以下資訊：
 
-* Adobe Target(請參閱[Adobe Target檔案](https://experienceleague.adobe.com/docs/target/using/target-home.html))。
-* AEM活動主控台(請參閱[管理活動](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)。
-* AEM對象(請參閱[管理對象](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html)。
+* Adobe Target(請參閱 [Adobe Target文檔](https://experienceleague.adobe.com/docs/target/using/target-home.html))。
+* 活AEM動控制台(請參閱 [管理活動](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)。
+* 觀AEM眾(請參閱 [管理受眾](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html)。
 
 >[!NOTE]
 >
->使用Adobe Target時，以下是促銷活動中允許的成品數上限：
+>使用Adobe Target時，以下是市場活動中允許的最大工件數：
 >
 >* 50個地點
->* 2,000個體驗
->* 50個量度
->* 50個報告區段
+>* 2,000次經驗
+>* 50個指標
+>* 50個報告分部
 

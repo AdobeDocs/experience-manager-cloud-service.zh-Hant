@@ -1,6 +1,6 @@
 ---
-title: SPA頁面元件
-description: 在SPA中，頁面元件不提供其子元件的HTML元素，而是將此元素委派至SPA架構。 本檔案說明如何讓SPA的頁面元件獨一無二。
+title: 頁SPA面元件
+description: 在頁SPA面元件中，不提供其子元件的HTML元素，而是將其委託到框架SPA中。 此文檔說明如何使頁面元件SPA唯一。
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -9,34 +9,34 @@ ht-degree: 0%
 
 ---
 
-# SPA頁面元件{#spa-page-component}
+# 頁SPA面元件 {#spa-page-component}
 
-SPA的頁面元件不會透過JSP或HTL檔案和資源物件提供其子元件的HTML元素。 此操作已委派給SPA架構。 子元件的表示方式會以JSON資料結構（即模型）擷取。 接著會根據提供的JSON模型，將SPA元件新增至頁面。 因此，頁面元件初始內文組成與其預先轉譯的HTML對應不同。
+的頁元件不SPA會通過JSP或HTL檔案和資源對象提供其子元件的HTML元素。 此操作已委託到該SPA框架。 子元件的表示被提取為JSON資料結構（即模型）。 然SPA後，根據提供的JSON模型將元件添加到頁面。 因此，頁面元件初始主體組合不同於其預呈現的HTML對應體。
 
-## 頁面模型管理{#page-model-management}
+## 頁面模型管理 {#page-model-management}
 
-頁面模型的解析度和管理被委派給提供的[`PageModelManager`](blueprint.md#pagemodelmanager)模組。 SPA在初始化時必須與`PageModelManager`模組互動，以擷取初始頁面模型並註冊模型更新 — 大部分是當作者透過頁面編輯器編輯頁面時產生。 `PageModelManager`可由SPA專案作為npm套件存取。 `PageModelManager`是AEM與SPA之間的翻譯，應與SPA搭配使用。
+頁面模型之解決方案及管理已委託 [`PageModelManager`](blueprint.md#pagemodelmanager) 中。 必SPA須與 `PageModelManager` 初始化模組以獲取初始頁面模型並註冊模型更新時生成的模組 — 主要是在作者通過頁面編輯器編輯頁面時生成的。 的 `PageModelManager` 可由項SPA目作為npm包訪問。 當一AEM個SPA翻譯 `PageModelManager` 是為了陪伴SPA。
 
-若要允許製作頁面，必須新增名為`cq.authoring.pagemodel.messaging`的用戶端程式庫，以提供SPA與頁面編輯器之間的通訊通道。 如果SPA頁面元件繼承自頁面wcm/core元件，則有下列選項可讓`cq.authoring.pagemodel.messaging`用戶端程式庫類別可用：
+要允許建立頁面，請使用名為 `cq.authoring.pagemodel.messaging` 必須添加以提供頁面編輯器SPA和頁面編輯器之間的通信通道。 如果頁SPA面元件從頁面wcm/core元件繼承，則有以下選項可使 `cq.authoring.pagemodel.messaging` 客戶端庫類別可用：
 
 * 如果模板是可編輯的，請將客戶端庫類別添加到頁面策略中。
-* 使用頁面元件的`customfooterlibs.html`新增用戶端程式庫類別。
+* 使用 `customfooterlibs.html` 的子菜單。
 
-別忘了將`cq.authoring.pagemodel.messaging`類別納入頁面編輯器的內容。
+別忘了限制 `cq.authoring.pagemodel.messaging` 的上下文。
 
-## 通信資料類型{#communication-data-type}
+## 通信資料類型 {#communication-data-type}
 
-通訊資料類型是使用`data-cq-datatype`屬性在AEM頁面元件內設定HTML元素。 當通訊資料類型設為JSON時，GET要求會點擊元件的Sling模型端點。 在頁面編輯器中發生更新後，更新元件的JSON表示會傳送至頁面模型程式庫。 然後頁面模型程式庫會警告SPA有更新。
+通信資料類型是使用Page元件內AEM的HTML元素 `data-cq-datatype` 屬性。 當通信資料類型設定為JSON時，GET請求會命中元件的Sling Model終結點。 在頁面編輯器中發生更新後，更新元件的JSON表示形式將發送到頁面模型庫。 然後，頁面模型庫會警告SPA更新。
 
-**SPA頁面元件 —`body.html`**
+**頁SPA面元件 —`body.html`**
 
 ```
 <div id="page"></div>
 ```
 
-除了非是避免延遲DOM產生的良好作法，SPA架構還需要在內文結尾新增指令碼。
+除了不延遲DOM生成的良好做法外，該SPA框架還要求在主體末尾添加指令碼。
 
-**SPA頁面元件 —`customfooterlibs.html`**
+**頁SPA面元件 —`customfooterlibs.html`**
 
 ```
 <sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"></sly>
@@ -45,9 +45,9 @@ SPA的頁面元件不會透過JSP或HTL檔案和資源物件提供其子元件�
 <sly data-sly-call="${clientLib.js @ categories='we-retail-journal-react'}"></sly>
 ```
 
-描述SPA內容的元資源屬性：
+描述內容的元資源屬SPA性：
 
-**SPA頁面元件 —`customheaderlibs.html`**
+**頁SPA面元件 —`customheaderlibs.html`**
 
 ```
 <meta property="cq:datatype" data-sly-test="${wcmmode.edit || wcmmode.preview}" content="JSON"/>
@@ -61,22 +61,22 @@ SPA的頁面元件不會透過JSP或HTL檔案和資源物件提供其子元件�
 
 >[!NOTE]
 >
->請求元件的「Sling模型」表示時，會靜態設定預設模型選取器。
+>當請求元件的「吊帶模型」表示時，將靜態設定預設模型選取器。
 
 ## 中繼屬性 {#meta-properties}
 
-* `cq:wcmmode`:編輯器的WCM模式（例如頁面、範本）
-* `cq:pagemodel_root_url`:應用程式的根模型URL。直接存取子頁面時非常重要，因為子頁面模型是應用程式根模型的片段。 然後，`PageModelManager`系統地重新組合應用程式初始模型以從其根入口點進入應用程式。
-* `cq:pagemodel_router`:啟用或停 [`ModelRouter`](routing.md) 用程 `PageModelManager` 式庫
-* `cq:pagemodel_route_filters`:以逗號分隔的清單或規則運算式，以提供必須 [`ModelRouter`](routing.md) 忽略的路由。
+* `cq:wcmmode`:編輯器的WCM模式（例如頁面、模板）
+* `cq:pagemodel_root_url`:應用的根模型的URL。 直接訪問子頁時至關重要，因為子頁模型是應用根模型的片段。 的 `PageModelManager` 然後系統地將應用程式初始模型重構為從其根入口點進入應用程式。
+* `cq:pagemodel_router`:啟用或禁用 [`ModelRouter`](routing.md) 的 `PageModelManager` 庫
+* `cq:pagemodel_route_filters`:用逗號分隔的清單或規則運算式來提供路由 [`ModelRouter`](routing.md) 必須忽略。
 
-## 頁面編輯器覆蓋同步{#page-editor-overlay-synchronization}
+## 頁面編輯器覆蓋同步 {#page-editor-overlay-synchronization}
 
-覆蓋的同步由`cq.authoring.page`類別提供的非常相同的變異觀測器保證。
+覆蓋的同步由MS提供的同一變異觀測器保證 `cq.authoring.page` 的子菜單。
 
-## Sling模型JSON匯出結構設定{#sling-model-json-exported-structure-configuration}
+## Sling模型JSON導出結構配置 {#sling-model-json-exported-structure-configuration}
 
-啟用路由功能後，假設SPA的JSON匯出包含應用程式的不同路由，這要歸功於AEM導覽元件的JSON匯出。 AEM導覽元件的JSON輸出可透過下列兩個屬性，在SPA根頁面內容原則中設定：
+啟用路由功能後，假設JSON導出包含SPA應用程式的不同路由，這要歸功於導航元件的JSONAEM導出。 導航元件的JSONAEM輸出可通過以下兩SPA個屬性在根頁內容策略中配置：
 
-* `structureDepth`:與導出的樹的深度相對應的數字
-* `structurePatterns`:與要匯出的頁面對應之規則陣列的規則運算式
+* `structureDepth`:與導出的樹的深度對應的編號
+* `structurePatterns`:與要導出的頁面對應的區域陣列的規則運算式

@@ -22,7 +22,6 @@ ht-degree: 2%
 >
 >* 資產REST API
 >* 包括對內容片段的支援
-
 >
 >Assets HTTP API的當前實現基於 [休息](https://en.wikipedia.org/wiki/Representational_state_transfer) 建築風格。
 
@@ -148,7 +147,6 @@ HTTP方法確定要執行的操作：
 >
 >* [CORS/解AEM釋](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [視頻 — 為CORS開AEM發](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-
 >
 
 

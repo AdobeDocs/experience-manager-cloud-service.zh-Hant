@@ -1,128 +1,128 @@
 ---
 title: 上線
-description: 了解在程式碼和內容雲端準備就緒後，如何執行移轉
-source-git-commit: fe0261fa9708b2250b6f5e4931100a9fc006e55d
+description: 瞭解如何在代碼和內容準備好雲後執行遷移
+exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 0%
 
 ---
 
-
 # 上線 {#go-live}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_prep"
->title="上線準備"
->abstract="為確保順利成功上線至AEMas a Cloud Service，您應針對程式碼和內容凍結期間、測試反覆項目、內容追加、效能測試、安全性測試等進行規劃。"
+>title="即時準備"
+>abstract="為確保在as a Cloud Service上順利成功上線AEM，您應計畫代碼和內容凍結期、測試迭代、內容補充、效能test、安全test等。"
 
-在歷程的這部分，您將學習如何在程式碼和內容都準備好移至AEM  as a Cloud Service時，規劃及執行移轉。 此外，您也會了解執行移轉時的最佳實務和已知限制。
+在此過程中，您將學習如何規劃和執行遷移，一旦代碼和內容都準備好移至AEMas a Cloud Service。 此外，您還將瞭解執行遷移時有哪些最佳做法和已知限制。
 
-## 迄今為止的故事 {#story-so-far}
+## 到目前為止的故事 {#story-so-far}
 
-在歷程的前幾個階段：
+在旅程的前幾個階段：
 
-* 您已了解如何開始在 [快速入門](/help/journey-migration/getting-started.md) 頁面。
-* 閱讀 [準備階段](/help/journey-migration/readiness.md)
-* 熟悉工具和程式，以便透過這些工具和程式，為您的程式碼和內容雲準備好 [實施階段](/help/journey-migration/implementation.md).
+* 您學會了如何開始移動AEM到as a Cloud Service [入門](/help/journey-migration/getting-started.md) 的子菜單。
+* 已通過讀取 [準備階段](/help/journey-migration/readiness.md)
+* 熟悉使代碼和內容雲隨時可用的工具和流程 [實施階段](/help/journey-migration/implementation.md)。
 
 ## 目標 {#objective}
 
-本檔案將協助您了解熟悉歷程的先前步驟後，如何執行AEMas a Cloud Service移轉。 您將學習如何執行初始生產移轉，以及移轉至AEM as a Cloud Service時應遵循的最佳實務。
+本文檔將幫助您瞭解如何AEM在您熟悉前面的步驟後，執行到as a Cloud Service的遷移。 您將學習如何執行初始生產遷移，以及遷移到AEMas a Cloud Service時要遵循的最佳做法。
 
-## 初始生產移轉 {#initial-migration}
+## 初始生產遷移 {#initial-migration}
 
-在執行生產移轉之前，請遵循 [內容遷移策略和時間表](/help/journey-migration/implementation.md##strategy-timeline) 區段 [實施階段](/help/journey-migration/implementation.md).
+在執行生產遷移之前，請遵循中概述的配置和遷移證明步驟 [內容遷移策略和時間表](/help/journey-migration/implementation.md##strategy-timeline) 的下界 [實施階段](/help/journey-migration/implementation.md)。
 
-* 根據您在克隆上執行的AEMas a Cloud Service階段遷移過程中獲得的經驗，從生產環境開始遷移：
+* 根據您在克隆上執行的as a Cloud Service遷移階段所獲AEM的經驗，從生產環境開始遷移：
    * 作者 — 作者
-   * Publish-Publish
+   * 發佈 — 發佈
 
-* 驗證內嵌至AEMas a Cloud Service製作和發佈層級的內容。
-* 指示內容製作團隊在擷取完成前，避免在來源和目的地上移動內容
-* 可以新增、編輯或刪除新內容，但請避免移動內容。 這會同時套用至來源和目的地。
-* 記錄 [所花時間](/help/journey-migration/implementation.md#gathering-data) 以完整提取和擷取，並預估未來追加移轉時間。
-* 建立 [遷移計畫程式](/help/journey-migration/implementation.md#migration-plan) 供作者和發佈使用。
+* 驗證所接收到的內容AEM是否同時存入as a Cloud Service作者和發佈層。
+* 指示內容創作團隊避免在源和目標上移動內容，直到接收完成
+* 可以添加、編輯或刪除新內容，但避免移動它。 這同時適用於源和目標。
+* 錄制 [時間](/help/journey-migration/implementation.md#gathering-data) 用於完全提取和攝取，以便對未來追加遷移時間表進行估計。
+* 建立 [遷移規劃器](/help/journey-migration/implementation.md#migration-plan) 和出版。
 
-## 增量追加 {#top-up}
+## 增量頂部 {#top-up}
 
-從生產環境進行初始移轉後，您必須執行增量追加，以確保將內容帶入雲端執行個體上為最新。 因此，建議您遵循下列最佳實務：
+在從生產環境進行初始遷移後，您必須執行增量頂置，以確保您的內容在雲實例上是最新的。 因此，建議您遵循以下最佳做法：
 
-* 收集內容量的資料。 例如：每週、兩週或一個月。
-* 請務必以避免超過48小時的內容擷取和擷取的方式來規劃追加資源。 建議您這麼做，以便將追加內容納入週末時間範圍。
-* 規劃所需追加數量，並使用這些估計值在上線日期前後進行規劃。
+* 收集有關內容量的資料。 例如：每週，兩週或一個月。
+* 確保以這樣的方式規劃追加內容，以避免超過48小時的內容提取和攝取。 建議這樣做，以便內容補充將適合週末時間。
+* 計畫所需的頂層數量，並使用這些估計值在「投入使用」日期前後進行計畫。
 
 ## 確定遷移的代碼和內容凍結時間表 {#code-content-freeze}
 
-如前所述，您必須排程程式碼和內容凍結期間。 使用下列問題可幫助您規劃凍結期間：
+如前所述，您必須安排代碼和內容凍結期。 使用以下問題幫助您計畫凍結期：
 
-* 必須凍結內容製作活動多久？
-* 我應要求我的傳送團隊停止新增功能多久？
+* 我必須凍結內容創作活動多久？
+* 在多長時間內，我應要求我的交付團隊停止添加新功能？
 
-若要回答第一個問題，您應考量在非生產環境中執行試用執行所花的時間。 若要回答第二個問題，您需要新增功能的團隊與重構程式碼的團隊之間密切合作。 目標應是確保新增至現有部署的所有程式碼也已新增、測試及部署至雲端服務分支。 一般而言，這表示程式碼凍結量會較低。
+要回答第一個問題，您應考慮在非生產環境中執行試運行所花費的時間。 要回答第二個問題，您需要添加新功能的團隊和重構代碼的團隊之間進行密切協作。 目標應是確保添加到現有部署的所有代碼也添加、測試和部署到雲服務分支。 一般來說，這意味著代碼凍結量會更低。
 
-此外，當排程最終追加內容時，您需要規劃內容凍結。
+此外，您需要在計畫最終內容補充時計畫內容凍結。
 
 ## 最佳作法 {#best-practices}
 
-規劃或執行移轉時，您應考量下列准則：
+在規劃或執行遷移時，應考慮以下准則：
 
-* 從作者移轉至作者，再從發佈移轉至發佈
-* 請求可用於下列用途的生產克隆：
+* 從作者遷移到作者並發佈到發佈
+* 請求可用於以下目的的生產克隆：
    * 捕獲儲存庫統計資訊
-   * 移轉活動的證明
+   * 遷移活動的證明
    * 準備遷移計畫
    * 確定內容凍結要求
-   * 從生產環境進行移轉時，找出生產環境的任何升級需求
+   * 在從生產環境遷移時確定生產環境中的任何升級需求
 
-**內容轉移工具最佳作法**
+**內容傳輸工具最佳做法**
 
-請務必在上線時，在生產環境中執行內容移轉，而非原地複製。 一個好辦法是 [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 進行初始移轉，然後經常（甚至每天）追加擷取，以擷取較小的區塊，並避免來源AEM上出現任何長期負載。
+確保在投入使用時，在生產環境中運行內容遷移，而不是克隆。 一個好方法是 [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 執行初始遷移，然後頻繁（甚至每天）運行頂級提取以提取較小的塊，並避免源上的任何長期負AEM載。
 
-執行生產遷移時，應避免從克隆運行「內容轉移工具」，因為：
+執行生產遷移時，應避免從克隆運行內容傳輸工具，因為：
 
-* 如果客戶要求在追加遷移期間遷移內容版本，則從克隆執行內容轉移工具不會遷移這些版本。 即使經常從即時作者重新建立原地復本，每次建立原地復本時，內容轉移工具將用來計算增量的查核點都會重設。
-* 由於克隆無法整體刷新，因此必須使用ACL查詢包來包裝和安裝要從生產環境添加或編輯到克隆的內容。 此方法的問題是，除非從源實例和克隆中手動刪除，否則源實例上所有已刪除的內容都不會到達克隆。 這樣，在克隆和AEMas a Cloud Service上，刪除的生產內容不會被刪除。
+* 如果客戶要求在自上而下的遷移期間遷移內容版本，則從克隆執行內容傳輸工具不會遷移這些版本。 即使克隆是從即時作者頻繁重新建立的，每次建立克隆時，內容傳輸工具將使用的檢查點將被重置以計算增量。
+* 由於無法將克隆作為一個整體進行刷新，因此必須使用ACL查詢包來打包和安裝從生產到克隆添加或編輯的內容。 此方法的問題在於源實例上任何已刪除的內容將永遠無法訪問克隆，除非從源實例和克隆中手動刪除它。 這就帶來了這樣一種可能性，即在克隆和AEMas a Cloud Service上不會刪除生產上刪除的內容。
 
-**執行內容移轉時，最佳化AEM來源的載入**
+**在執行內容遷移AEM時優化源上的負載**
 
-請記住，提取階段期間AEM來源的負載會較大。 請注意：
+請記住，在提取AEM階段，源上的負載會更大。 您應該知道：
 
-* 「內容轉移工具」是使用4 GB JVM堆的外部Java進程
-* 非AzCopy版本會下載二進位檔，將其儲存在來源AEM作者的暫時空間上，使用磁碟I/O，然後上傳至佔用網路頻寬的Azure容器
-* [AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 將blob直接從blob儲存區傳輸至Azure容器，以節省磁碟I/O和網路頻寬。 AzCopy版本仍使用磁碟和網路頻寬，從段儲存中提取資料並將其上傳到Azure容器中
-* 在擷取階段期間，「內容轉移工具」程式會較輕地處理系統資源，因為它只會串流擷取記錄，而且就磁碟I/O或網路頻寬而言，來源執行個體的負載並不多。
+* 內容傳輸工具是使用JVM堆4 GB的外部Java進程
+* 非AzCopy版本下載二進位檔案，將它們儲存在源作者的臨時空間AEM上，佔用磁碟I/O，然後上載到消耗網路頻寬的Azure容器
+* [可用區複製](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 將blob直接從blob儲存區傳輸到Azure容器，該容器可節省磁碟I/O和網路頻寬。 AzCopy版本仍然使用磁碟和網路頻寬從段儲存中提取資料並將其上載到Azure容器
+* 在接收階段，內容傳輸工具流程在系統資源上較輕，因為它只流入接收日誌，而且從磁碟I/O或網路頻寬角度看，源實例上的負載不大。
 
 ## 已知限制 {#known-limitations}
 
-如果在擷取的移轉集中發現下列任何限制，請考慮整個擷取作業會失敗：
+如果在提取的遷移集中發現以下任何限制，請考慮整個攝取失敗：
 
 * 名稱超過150個字元的JCR節點
 * 大於16 MB的JCR節點
-* 任何使用者/群組 `rep:AuthorizableID` 已擷取AEMas a Cloud Service上已存在的
-* 如果任何擷取和擷取的資產在移轉的下一個迭代之前，移至來源或目的地的不同路徑。
+* 任何用戶/組 `rep:AuthorizableID` 被攝入as a Cloud Service上已經AEM有
+* 如果提取和攝取的任何資產在遷移的下一迭代之前，在源或目標上移動到其他路徑。
 
-## 資產運作狀況 {#asset-health}
+## 資產運行狀況 {#asset-health}
 
-與擷取上方的區段比較 **不** 失敗，原因如下： 不過，強烈建議您在下列情況下採取適當步驟：
+與食物攝入量上面的部分 **不** 因以下資產問題而失敗。 但是，強烈建議您在以下情形中採取適當步驟：
 
-* 遺失原始轉譯的任何資產
-* 任何缺少的資料夾 `jcr:content` 節點
+* 缺少原始格式副本的任何資產
+* 缺少的任何資料夾 `jcr:content` 節點
 
-上述兩個項目將於 [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) 報表。
+上述兩個項目均將在 [最佳做法分析器](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) 報告。
 
-## 上線檢查清單 {#Go-Live-Checklist}
+## 上線核對表 {#Go-Live-Checklist}
 
-請檢閱下方呈現的活動清單，確保您能順利成功地執行移轉作業：
+請查看下面列出的活動清單，以確保您能夠順利成功執行遷移：
 
-* 排程程式碼和內容凍結期間。 另請參閱 [移轉的程式碼和內容凍結時間軸](#code-content-freeze).
-* 執行最終追加內容
+* 計畫代碼和內容凍結期。 另請參閱 [遷移的代碼和內容凍結時間表](#code-content-freeze)。
+* 執行最終內容向上
 * 完成測試反覆項目
 * 執行效能與安全性測試
-* 完全移轉 並在生產執行個體上執行移轉
+* 完全移轉 並在生產實例上執行遷移
 
-您隨時都可以參考清單，以備在執行移轉時重新校準任務時使用。
+在執行遷移時需要重新校準任務時，您始終可以引用該清單。
 
-## 下一步 {#what-is-next}
+## 下一步是什麼 {#what-is-next}
 
-了解如何執行AEMas a Cloud Service移轉後，即可檢查 [上線後](/help/journey-migration/post-go-live.md) 頁面，讓執行個體順利執行。
+一旦您瞭解了如何執行遷移到AEMas a Cloud Service，可以檢查 [上線後](/help/journey-migration/post-go-live.md) 頁面以保持實例順利運行。

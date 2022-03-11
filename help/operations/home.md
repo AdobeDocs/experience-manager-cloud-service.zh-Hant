@@ -24,17 +24,17 @@ ht-degree: 80%
 
 | 使用手冊 | 說明 |
 |---|---|
-| [概覽](/help/overview/home.md) | 本指南提供Experience Manager as a Cloud Service的概觀，包括簡介、術語、架構等。 |
+| [概覽](/help/overview/home.md) | 本指南概括介紹了Experience Manager為雲服務，包括簡介、術語、體系結構等。 |
 | [發行說明](/help/release-notes/home.md) | 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。 |
 | [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |
 | [入門](/help/onboarding/home.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何使用及管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何使用及管理 Experience Manager Assets as a Cloud Service。 |
 | [轉移至 AEM as a Cloud Service ](/help/journey-migration/getting-started.md) | 了解轉換至雲端服務的過程。 |
-| [實作使用手冊](/help/implementing/home.md) | 透過探索這些開發和部署主題，了解如何使用AEM強大功能來建立和自訂體驗。 |
-| [無頭式開發人員歷程](/help/journey-headless/developer/overview.md) | 探索此引導式歷程，了解AEM強大且靈活的無頭式功能，為您的第一個無頭式專案做好準備。 |
+| [實作使用手冊](/help/implementing/home.md) | 瞭解如何通過瀏覽這些開發和部AEM署主題來使用強大功能構建和定制體驗。 |
+| [無頭開發者之旅](/help/journey-headless/developer/overview.md) | 探索這一指導性的旅程，體驗您強大而靈活的無AEM頭功能，為第一個無頭項目做好準備。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |
-| [商務使用手冊](/help/commerce-cloud/home.md) | 了解AEM as a Cloud Service上的Commerce Integration Framework。 |
+| [《 Commerce使用手冊》](/help/commerce-cloud/home.md) | 瞭解有關Commerce Integration Framework的AEMas a Cloud Service。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 

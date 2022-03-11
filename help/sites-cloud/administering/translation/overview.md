@@ -1,6 +1,6 @@
 ---
-title: 轉譯多語言網站的內容
-description: 概略了解如何翻譯多語言網站的內容。
+title: 翻譯多語言站點的內容
+description: 獲取如何翻譯多語言站點內容的概述。
 feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
@@ -11,32 +11,32 @@ ht-degree: 0%
 
 ---
 
-# 轉譯多語言網站的內容 {#translating-content-for-multilingual-sites}
+# 翻譯多語言站點的內容 {#translating-content-for-multilingual-sites}
 
-自動翻譯頁面內容和資產，以建立和維護多語言網站。 為了自動化翻譯工作流，您將翻譯服務提供商與AEM整合，並建立項目以將內容翻譯成多種語言。 AEM支援人工和機器翻譯工作流程。
+自動翻譯頁面內容和資產以建立和維護多語言網站。 要自動化翻譯工作流，您可以將翻譯服務提供商與AEM整合，並建立項目，將內容翻譯成多種語言。 支AEM持人和機器翻譯工作流。
 
-* **人工翻譯：** 內容會傳送給您的翻譯提供者，並由專業翻譯人員翻譯。完成時，會傳回翻譯的內容並匯入AEM。 當您的翻譯提供者與AEM整合時，內容會自動在AEM和翻譯提供者之間傳送。
+* **人文翻譯：** 內容將發送給您的翻譯提供商，並由專業翻譯員翻譯。 完成後，將返回已翻譯的內容並導入AEM。 當翻譯提供商與之整合AEM時，內容將自動在翻譯提供AEM商之間發送。
 * **機器翻譯：** 機器翻譯服務會立即翻譯您的內容。
 
 >[!TIP]
 >
->如果您是翻譯內容的新手，請參閱我們的[網站翻譯歷程](/help/journey-sites/translation/overview.md)，該路徑是使用AEM功能強大的翻譯工具來翻譯您的AEM Sites內容的引導路徑，最適合沒有AEM或翻譯經驗的人。
+>如果您是翻譯內容的新手，請參閱我們的 [網站翻譯之旅，](/help/journey-sites/translation/overview.md) 它是指通過使用功能強大的翻譯工具AEM翻譯您的AEM Sites內容的指導路AEM徑，是那些沒有翻譯經驗的人的理想選擇。
 
-轉譯內容涉及下列步驟：
+翻譯內容涉及以下步驟：
 
-1. [將AEM與您的翻譯服務提供](integration-framework.md#connecting-to-a-translation-service-provider) 商連 [接，並建立翻譯整合架構設定](integration-framework.md)。
-1. [將您語言首頁與翻](integration-framework.md#configuring-pages-for-translation) 譯服務和框架配置相關聯。
-1. [識別要翻譯的](rules.md) 內容類型。
-1. [編寫語言主版](preparation.md) 並建立語言副本的根頁面，以準備翻譯內容。
-1. [建立翻](managing-projects.md) 譯專案以收集要翻譯的內容並準備翻譯程式。
-1. 使用翻譯專案至[管理內容翻譯程式](managing-projects.md)。
+1. [與翻譯AEM服務提供商連接](integration-framework.md#connecting-to-a-translation-service-provider) 和 [建立翻譯整合框架配置](integration-framework.md)。
+1. [關聯您的語言母版頁](integration-framework.md#configuring-pages-for-translation) 翻譯服務和框架配置。
+1. [確定內容類型](rules.md) 翻譯。
+1. [準備翻譯內容](preparation.md) 通過建立語言首頁和建立語言副本的根頁。
+1. [建立翻譯項目](managing-projects.md) 收集要翻譯的內容並準備翻譯過程。
+1. 使用翻譯項目 [管理內容翻譯流程](managing-projects.md)。
 
-如果您的翻譯服務提供者未提供與AEM整合的連接器，AEM支援以XML格式手動擷取和重新插入翻譯內容。
+如果您的翻譯服務提供商未提供與整合的連接AEM器AEM，則支援以XML格式手動提取和重新插入翻譯內容。
 
 >[!NOTE]
 >
->您的用戶必須是`project-administrators`組的成員才能使用語言副本功能。
+>您的用戶需要是 `project-administrators` 組以使用「語言複製」功能。
 
 ## 最佳作法 {#best-practices}
 
-[翻譯最佳實務](best-practices.md)頁面包含有關您實作的重要資訊。
+的 [翻譯最佳做法](best-practices.md) 頁面包含有關您的實施的重要資訊。

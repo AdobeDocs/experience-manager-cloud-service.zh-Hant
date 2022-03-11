@@ -1,7 +1,8 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 架構簡介
 description: Adobe Experience Manager as a Cloud Service 架構簡介。
-source-git-commit: a54841ca2e959e885a997b19dd03c6ece3f00d1c
+exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1782'
 ht-degree: 82%
@@ -12,9 +13,9 @@ ht-degree: 82%
 
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
->title="AEM as a Cloud Service架構簡介"
->abstract="在此標籤中，您可以以Cloud Service檢視AEM的新架構，並了解變更。 AEM產生了一個動態架構，其影像數量可變，因此請務必花時間去了解。雲端架構"
->additional-url="https://video.tv.adobe.com/v/330542/" text="架構概述"
+>title="as a Cloud Service架AEM構簡介"
+>abstract="在此頁籤中，您可以查看新的AEMas a Cloud Service體系結構並瞭解更改。 AEM已產生具有可變影像數的動態體系結構，因此花費時間去瞭解它非常重要。"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="體系結構概述"
 
 
 Adobe Experience Manager (AEM) as a Cloud Service 的架構有所變更。
@@ -68,7 +69,7 @@ AEM as a Cloud Service 以協調引擎為運作基礎，該引擎的功能包括
 
 AEM as a Cloud Service 可作為個別例項使用，每個例項皆代表完整的 AEM 環境。
 
-以AEM作為Cloud Service提供三種環境類型：
+有三種類型的環境，具AEM有as a Cloud Service:
 
 * **生產環境**：為商務從業人員代管應用程式。
 
@@ -76,7 +77,7 @@ AEM as a Cloud Service 可作為個別例項使用，每個例項皆代表完整
 
 * **開發環境**：開發人員可在與預備和生產環境相同的執行階段條件下，實作 AEM 應用程式。
 
-   如需詳細資訊，請參閱[管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) 。
+   請參閱 [管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) 的子菜單。
 
 ## 計劃 {#programs}
 
@@ -87,7 +88,7 @@ AEM 計劃是包含下列項目的容器：
 |  計劃元素 |  數量 |
 |--- |--- |
 | 程式碼存放庫 (Git) |  1 |
-| 基準映像 (Sites 或 Assets) |  3 |
+| 基準映像 (Sites 或 Assets) |  1 |
 | 預備和生產環境集 (1:1) | 0 或 1 |
 | 非生產環境 (開發或展示) | 0 到 N |
 | 各環境相關管道 | 0 或 1 |
@@ -98,7 +99,7 @@ AEM as a Cloud Service 最初提供兩種類型的計劃：
 
 * AEM Cloud Assets Service
 
-兩者皆可存取幾項功能。製作層級會包含所有方案的所有Sites和Assets功能，但Assets方案預設沒有發佈層級或預覽層級。
+兩者皆可存取幾項功能。作者層將包含所有程式的所有站點和資產功能，但預設情況下，資產程式將不具有發佈層或預覽層。
 
 ## 執行階段架構 {#runtime-architecture}
 
@@ -119,7 +120,7 @@ AEM as a Cloud Service 最初提供兩種類型的計劃：
       * 製作層級的登入活動由 Adobe Identity Management Services (IMS) 管理。
 
       * Assets 整合與處理作業會使用專屬的 Assets Compute Service。
-   * 預覽層由單個預覽節點組成。 這用於發佈至發佈層級之前的內容品質保證。
+   * 預覽層由單個預覽節點組成。 這用於在發佈到發佈層之前保證內容的質量。
 
    * 發佈層級是由單一發佈伺服器陣列中兩個以上節點所組成：節點可獨立運作。每個節點均包含 AEM 發佈者和具備 AEM Dispatcher 模組的網頁伺服器，而節點會根據網站流量需求自動調整規模。
 
@@ -130,15 +131,15 @@ AEM as a Cloud Service 最初提供兩種類型的計劃：
 
    * 此架構僅包含製作環境。
 
-* 製作層級、預覽層級和發佈層級都會從內容存放庫服務讀取內容並加以保留。
+* 作者層、預覽層和發佈層都從內容儲存庫服務讀取並保留內容。
 
-   * 發佈層級和預覽層級只會從持續性層讀取內容。
+   * 發佈層和預覽層僅從持久性層讀取內容。
 
    * 製作層級會從持續層讀取內容，也會將內容寫入持續層。
 
-   * Blob儲存空間會在發佈、預覽和製作層級間共用；檔案未&#x200B;*移動*。
+   * Blob儲存在發佈層、預覽層和作者層之間共用；檔案不 *移動*。
 
-   * 內容從製作層級核准後，即表示內容可以啟動，因此會推送至發佈層級的持續性層；或（可選）至預覽層。 此過程會透過複寫服務 (一種中介管道) 來實現。此管道會接收新內容，而個別發佈服務（或預覽服務）節點會訂閱推送至管道的內容。
+   * 當內容從作者層獲得批准時，這表示內容可以被激活，因此被推到發佈層持久性層；或（可選）預覽層。 此過程會透過複寫服務 (一種中介管道) 來實現。該管道接收新內容，而單個發佈服務（或預覽服務）節點訂閱推送到管道的內容。
 
       >[!NOTE]
       >
@@ -148,15 +149,15 @@ AEM as a Cloud Service 最初提供兩種類型的計劃：
 
    * 使用者需一概透過負載平衡器存取製作和發佈層級。負載平衡器會與各層級作用中的節點連動，反映其最新狀態。
 
-   * 對於發佈層級和預覽層級，連續傳遞網路(CDN)服務也可作為第一個入口點。
+   * 對於發佈層和預覽層，連續分發網路(CDN)服務也可用作第一入口點。
 
 * 對於 AEM as a Cloud Service 的展示例項，架構會簡化為單一製作節點，因此不會呈現標準開發、預備或生產環境的所有特點。換言之，架構偶爾會發生停機現象，且不支援備份/還原操作。
 
 ## 部署架構 {#deployment-architecture}
 
-Cloud Manager 會管理 AEM as a Cloud Service 例項的所有更新。這是強制性的，是建立、測試和部署客戶應用程式的唯一方式，製作、預覽和發佈層級均可使用。 AEM 雲端服務發佈最新版本時，Adobe 便會觸發這些更新作業，或是當客戶的應用程式推出最新版本時，由客戶觸發。
+Cloud Manager 會管理 AEM as a Cloud Service 例項的所有更新。它是強制性的，是構建、test和部署客戶應用程式的唯一方法，可同時用於作者、預覽和發佈層。 AEM 雲端服務發佈最新版本時，Adobe 便會觸發這些更新作業，或是當客戶的應用程式推出最新版本時，由客戶觸發。
 
-技術上來說，這是基於部署管道，與計劃中各環境配合之下的實作結果。Cloud Manager管道執行時，會針對製作、預覽和發佈層級建立客戶應用程式的新版本。 這主要是透過結合最新客戶套件和最新基準 Adobe 映像來達成。成功建立並測試新映像後，Cloud Manager 會採取滾動式更新模式，更新所有服務節點，使移轉至最新映像版本的作業全面自動化。因此，製作或發佈服務時不會產生任何停機時間。
+技術上來說，這是基於部署管道，與計劃中各環境配合之下的實作結果。當Cloud Manager管道正在運行時，它會為作者、預覽和發佈層建立客戶應用程式的新版本。 這主要是透過結合最新客戶套件和最新基準 Adobe 映像來達成。成功建立並測試新映像後，Cloud Manager 會採取滾動式更新模式，更新所有服務節點，使移轉至最新映像版本的作業全面自動化。因此，製作或發佈服務時不會產生任何停機時間。
 
 <!--- needs reworking -->
 

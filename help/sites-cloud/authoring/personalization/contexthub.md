@@ -1,6 +1,6 @@
 ---
 title: 使用 ContextHub 資料預覽頁面
-description: ContextHub工具列顯示來自ContextHub存放區的資料，並可讓您變更存放區資料，且對於預覽內容很實用
+description: ContextHub工具欄顯示ContextHub儲存中的資料，並允許您更改儲存資料，對預覽內容非常有用
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -11,51 +11,51 @@ ht-degree: 3%
 
 # 使用 ContextHub 資料預覽頁面  {#previewing-pages-using-contexthub-data}
 
-ContextHub工具列會顯示ContextHub存放區的資料，並讓您變更存放區資料。 ContextHub工具列可用來預覽由ContextHub商店中的資料所決定的內容。
+ContextHub工具欄顯示ContextHub儲存中的資料，並允許您更改儲存資料。 ContextHub工具欄對預覽由ContextHub儲存中的資料確定的內容非常有用。
 
-工具列包含一系列包含一或多個UI模組的UI模式。
+工具欄由包含一個或多個UI模組的一系列UI模式組成。
 
-* UI模式是顯示在工具列左側的圖示。 當您按一下或點選圖示時，工具列會顯示其包含的UI模組。
-* UI模組會顯示一或多個ContextHub存放區的資料。 有些UI模組也可讓您操控儲存資料。
+* UI模式是工具欄左側顯示的表徵圖。 按一下或點擊表徵圖時，工具欄將顯示其包含的UI模組。
+* UI模組顯示來自一個或多個ContextHub儲存的資料。 某些UI模組還允許您操作儲存資料。
 
-ContextHub會安裝數個UI模式和UI模組。 您的管理員可能已設定[ ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)以顯示不同的內容。
+ContextHub安裝多個UI模式和UI模組。 您的管理員可能 [已配置ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) 來顯示不同的。
 
-## 顯示ContextHub工具欄{#revealing-the-contexthub-toolbar}
+## 顯示ContextHub工具欄 {#revealing-the-contexthub-toolbar}
 
-ContextHub工具列可在「預覽」模式中使用。 工具列僅適用於製作執行個體，且僅在管理員啟用時才可用。
+「預覽」模式下可使用ContextHub工具欄。 工具欄僅在作者實例上可用，並且僅當管理員啟用了它時才可用。
 
-![ContextHub工具列](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
+![ContextHub工具欄](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 
-1. 在開啟您的頁面進行編輯時，在工具列上按一下或點選「預覽」。
+1. 開啟頁面進行編輯時，在工具欄上按一下或點擊「預覽」。
 
    ![預覽按鈕](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
 
-1. 若要顯示工具列，請按一下或點選「ContextHub」圖示。
+1. 要顯示工具欄，請按一下或點擊「上下文中心」表徵圖。
 
-   ![ContextHub按鈕](/help/sites-cloud/authoring/assets/contexthub-button.png)
+   ![「上下文中心」按鈕](/help/sites-cloud/authoring/assets/contexthub-button.png)
 
-## UI模組功能{#ui-module-features}
+## UI模組功能 {#ui-module-features}
 
-每個UI模組提供的功能集不同，但下列功能類型很常見。 因為UI模組是可擴充的，您的開發人員可視需要實作其他功能。
+每個UI模組提供的功能集不同，但以下類型的功能是通用的。 因為UI模組是可擴展的，所以開發人員可以根據需要實現其他功能。
 
-### 工具欄內容{#toolbar-content}
+### 工具欄內容 {#toolbar-content}
 
-UI模組可以顯示工具列中一或多個ContextHub存放區的資料。 UI模組會使用圖示和標題來識別自己。
+UI模組可以顯示工具欄中一個或多個ContextHub儲存中的資料。 UI模組使用表徵圖和標題來標識自己。
 
 ![ContextHub角色](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
 
-### 快顯內容{#popup-content}
+### 彈出內容 {#popup-content}
 
-有些UI模組在按一下或點選時會顯示快顯覆蓋圖。 彈出式功能表通常包含的工具列上顯示的其他資訊以外的其他資訊。
+某些UI模組在按一下或點擊時顯示彈出式覆蓋。 通常，彈出菜單包含的資訊比工具欄上顯示的資訊還要多。
 
-![ContextHub設定檔資訊](/help/sites-cloud/authoring/assets/contexthub-profile.png)
+![ContextHub配置檔案資訊](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
 ### 彈出式Forms {#popup-forms}
 
-模組的快顯覆蓋可以包含表單元素，讓您能夠變更ContextHub存放區中的資料。 如果頁面內容由儲存資料決定，您可以使用表單並觀察頁面內容的變更。
+模組的彈出式覆蓋可以包括表單元素，這些元素使您能夠更改ContextHub儲存中的資料。 如果頁面內容由儲存資料確定，則可以使用表單並觀察頁面內容的更改。
 
 ### 全螢幕模式 {#fullscreen-mode}
 
-彈出式覆蓋圖可包含您按一下或點選以展開彈出式內容的圖示，以覆蓋整個瀏覽器視窗或畫面。
+彈出式疊加可以包含一個表徵圖，您按一下或點擊該表徵圖可展開彈出式內容以覆蓋整個瀏覽器窗口或螢幕。
 
-![全螢幕按鈕](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)
+![全屏按鈕](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)

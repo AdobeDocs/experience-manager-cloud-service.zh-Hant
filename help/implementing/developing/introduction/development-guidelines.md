@@ -1,6 +1,6 @@
 ---
-title: AEM as a Cloud Service 開發方針
-description: AEM as a Cloud Service 開發方針
+title: AEM as a Cloud Service 開發指導方針
+description: AEM as a Cloud Service 開發指導方針
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
 workflow-type: tm+mt
@@ -9,11 +9,11 @@ ht-degree: 2%
 
 ---
 
-# AEM as a Cloud Service 開發方針 {#aem-as-a-cloud-service-development-guidelines}
+# AEM as a Cloud Service 開發指導方針 {#aem-as-a-cloud-service-development-guidelines}
 
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
->title="AEM as a Cloud Service 開發方針"
+>title="AEM as a Cloud Service 開發指導方針"
 >abstract="在此頁籤中，您可以查看as a Cloud Service中編碼的建議最佳AEM做法。 編碼可以與AMS或On-Prem部署有很大不同。"
 >additional-url="https://video.tv.adobe.com/v/330555/" text="軟體包結構演示"
 

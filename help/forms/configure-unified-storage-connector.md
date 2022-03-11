@@ -1,13 +1,13 @@
 ---
 title: 如何為AEM Forms配置統一儲存連接器？
 description: 瞭解如何管理用於AEM Forms的統一儲存連接器。 使用統一儲存連接器將AEM Forms連接到外部資料儲存。
-source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
+exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 0%
 
 ---
-
 
 # 管理用於AEM Forms的統一儲存連接器 {#manage-unified-storage-connector}
 

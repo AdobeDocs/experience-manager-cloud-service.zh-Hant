@@ -21,12 +21,12 @@ Experience Manager as a Cloud Service 的 2020.3.0 的發行日期為 2020 年 3
 
 請詳閱本節，了解 AEM as a Cloud Service 2020.3.0 版中 Cloud Manager 的新增功能和更新。
 
-### 新功能 {#what-is-new}
+### 新增功能 {#what-is-new}
 
 * 現在建置步驟執行時，建置步驟記錄可供同時使用。
 * 管道執行詳細資訊頁面上的部分訊息經過編輯，以更明確說明。
 
-### 錯誤修正 {#bug-fixes}
+### 錯誤修正  {#bug-fixes}
 
 * 無法透過 UI 下載自訂和產品功能測試步驟的記錄檔。
 * 雲端服務程式的 git 存放庫建立失敗時，部署管理員角色中的使用者有時無法從此故障中恢復。

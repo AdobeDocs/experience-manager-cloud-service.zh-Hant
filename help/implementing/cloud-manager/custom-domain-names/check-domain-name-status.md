@@ -1,6 +1,6 @@
 ---
-title: 檢查域名狀態
-description: 檢查域名狀態
+title: 正在檢查域名狀態
+description: 正在檢查域名狀態
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
 workflow-type: tm+mt
@@ -9,44 +9,44 @@ ht-degree: 0%
 
 ---
 
-# 檢查域名狀態 {#check-status}
+# 正在檢查域名狀態 {#check-status}
 
-您可以通過從「域設定」(Domain Settings)頁面的「環境」(Environments)上的表中按一下域名的「狀態」(Status)表徵圖來確定是否已成功驗證域名。
+通過從「域設定」(Domain Settings)頁的「環境」(Environments)表格中按一下域名的「狀態」(Status)表徵圖，可確定是否已成功驗證域名。
 
 >[!NOTE]
->當您在「新增自訂網域」精靈的驗證步驟中選取「儲存」時，Cloud Manager會自動觸發TXT驗證。 對於後續驗證，必須主動選擇狀態旁的&#x200B;**revify analy**&#x200B;表徵圖。
+>當您在「添加自定義域」嚮導的驗證步驟中選擇「保存」時，Cloud Manager將自動觸發TXT驗證。 對於後續驗證，必須主動選擇 **再次驗證** 表徵圖。
 
-Cloud Manager會透過TXT值驗證網域擁有權，並顯示下列其中一個狀態訊息：
+Cloud Manager將通過TXT值驗證域所有權，並顯示以下狀態消息之一：
 
-* **缺少域**
-驗證FailedTXT值，或檢測到有錯誤。請按照說明重試。 準備就緒時，您必須選取 
-*驗* 證狀態旁的重新圖示。
+* **域驗證失敗**
+TXT值丟失或檢測到有錯誤。 請按照說明操作並重試。 準備好後，必須選擇 
+*再次驗證* 表徵圖。
 
-* **正在進行域**
-驗證正在進行。此狀態通常會在您選取 
-*驗* 證狀態旁的重新圖示。
+* **正在進行域驗證**
+正在驗證。 此狀態通常在您選擇 
+*再次驗證* 表徵圖。
 
-* **已驗證，部**
-署失敗TXT驗證成功。但CDN部署失敗。 請連絡您的Adobe代表。
+* **已驗證，部署失敗**
+TXT驗證成功。 但是，CDN部署失敗。 請聯繫您的Adobe代表。
 
-* **域已驗證和**
-已部署此狀態表示您的自定義域名已準備好使用。
+* **域驗證和部署**
+此狀態表示您的自定義域名已準備好使用。
    >[!NOTE]
-   >此時，您的自訂網域名稱已準備好進行測試，並指向Cloud Manager網域名稱。 請參考[配置DNS設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)以了解更多資訊。
-
-* ****
-正在刪除自定義域名的刪除。
+   >此時，您的自定義域名已準備好進行測試並指向Cloud Manager域名。 請參閱 [配置DNS設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 來瞭解更多資訊。
 
 * **刪除**
-失敗刪除自定義域名失敗。您必須重試。 請參閱[刪除自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)以深入了解。
+正在刪除自定義域名。
+
+* **刪除失敗**
+刪除自定義域名失敗。 必須重試。 請參閱 [刪除自定義域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) 來瞭解更多資訊。
 
 
-## 自訂網域名稱的現有CDN設定 {#pre-existing-cdn}
+## 針對自定義域名的預先存在的CDN配置 {#pre-existing-cdn}
 
-若環境中包含IP允許清單、SSL憑證或自訂網域名稱的現有CDN設定，則客戶會在&#x200B;**IP允許清單**&#x200B;和&#x200B;**環境**&#x200B;詳細資訊頁面中看到下列訊息。 當客戶透過UI完全移轉所有預先存在的環境設定後，UI上顯示的訊息就會消失，而訊息可能需要1到2個工作天才會消失。
+如果客戶的環境包括IP允許清單、SSL證書或自定義域名的預先存在的CDN配置，則會在 **IP允許清單** 和 **環境** 的子菜單。 一旦客戶通過UI完全遷移了所有預先存在的環境配置，則UI上顯示的消息將消失，消息可能需要1-2個工作日才能消失。
 
 >[!NOTE]
->若要查看及管理預先存在的設定，必須透過UI新增這些設定。 如需詳細資訊，請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) 。
+>為了查看和管理預先存在的配置，必須通過UI添加這些配置。 請參閱 [添加自定義域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) 的子菜單。
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 

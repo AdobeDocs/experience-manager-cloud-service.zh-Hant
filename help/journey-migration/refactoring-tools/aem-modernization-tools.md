@@ -1,7 +1,8 @@
 ---
 title: AEM 現代化工具
 description: AEM 現代化工具
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: d541fae0-6386-403f-99c9-373dc978ad13
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 77%
@@ -10,7 +11,7 @@ ht-degree: 77%
 
 # AEM 現代化工具 {#aem-moderization-tools}
 
-AEM現代化工具提供一套公用程式，可將舊版AEM功能轉換為AEMas a Cloud Service的現代化且支援的功能。
+「AEM現代化」工具提供一套實用程式，可用於將舊功能AEM轉換為as a Cloud Service的現代和支援的AEM功能。
 
 
 ## 簡介 {#introduction}

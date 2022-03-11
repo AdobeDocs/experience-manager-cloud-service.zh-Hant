@@ -32,7 +32,7 @@ ht-degree: 100%
 
 請詳閱本節，了解 AEM as a Cloud Service 2020.5.0 版中 Cloud Manager 的新增功能和更新。
 
-### 新功能 {#what-is-new}
+### 新增功能 {#what-is-new}
 
 * 新增 6 項額外的程式碼品質規則，協助客戶在規劃 Cloud Service 遷移作業時找出潛在問題。
 * 加入最新的 *Cloud Service 相容性*&#x200B;指標，概述相容性相關問題的數目。
@@ -40,7 +40,7 @@ ht-degree: 100%
 * 改善「活動」頁面和「管道執行清單 API」的效能。
 * 程式碼品質記錄現已增加例外狀況的完整堆疊追蹤。
 
-### 錯誤修正 {#bug-fixes}
+### 錯誤修正  {#bug-fixes}
 
 * 執行生產管道時，概覽頁面顯示資訊不正確的卡片。
 * *DontImplementOrExtendProviderTypesPomCheck* 程式碼品質規則有時可能產生「Null 指標例外狀況」。

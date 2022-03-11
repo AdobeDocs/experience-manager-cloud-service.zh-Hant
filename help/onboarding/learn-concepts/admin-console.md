@@ -1,19 +1,19 @@
 ---
-title: 了解什麼是Admin Console
-description: 本頁面說明Admin Console的簡介。
-source-git-commit: 8b8158cb1026687e94e3cc4f73cf243f26596ab2
+title: 瞭解什麼是Admin Console
+description: 本頁介紹有關Admin Console的介紹性資訊。
+exl-id: e3aa59c3-2f92-42b9-8d6a-e91b656f0d7e
+source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 3%
 
 ---
 
+# 瞭解Admin Console {#intro-admin-console}
 
-# 了解Admin Console{#intro-admin-console}
+Adobe Admin Console是管理和管理您的Adobe產品許可證和用戶的中心場所。 Adobe Admin Console的主要功能是用戶管理。 這意味著您不必在每個解決方案中建立用戶。 這種集中化的方法，即所有用戶管理都在一個介面中完成，通過Adobe Admin Console完成。
 
-Adobe Admin Console是管理和管理Adobe產品授權和使用者的中央位置。 Adobe Admin Console的主要功能是使用者管理。 這表示您不必在每個解決方案中建立使用者。 此集中化方法可透過Adobe Admin Console，在單一介面中完成所有使用者管理。
-
-登入「Adobe管理控制台」以管理使用者帳戶、新增或移除使用者、建立群組等。 您可在[adminconsole.adobe.com](https://adminconsole.adobe.com)找到Admin Console。
+登錄到Adobe管理控制台以管理用戶帳戶、添加或刪除用戶、建立組等。 管理控制台位於 [adminconsole.adobe.com](https://adminconsole.adobe.com)。
 
 >[!NOTE]
->請參閱[Admin Console概觀](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)，了解如何從Admin Console管理整個組織的Adobe權益。
+>請參閱 [Admin Console概述](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 瞭解如何從Adobe中管理整個組織的Admin Console權利。

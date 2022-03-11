@@ -1,13 +1,13 @@
 ---
 title: 管理您的演示站點
 description: 瞭解幫助您管理演示網站的可用工具以及如何刪除它們。
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
 
 ---
-
 
 # 管理您的演示站點 {#manage-demo-sites}
 

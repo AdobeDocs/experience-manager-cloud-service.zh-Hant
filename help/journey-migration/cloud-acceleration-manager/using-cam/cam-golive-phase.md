@@ -1,33 +1,34 @@
 ---
-title: Cloud Acceleration Manager的上線階段
-description: 本頁概述Cloud Acceleration Manager的上線階段。
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+title: 雲加速管理器中的上線階段
+description: 本頁概述了Cloud Acceleration Manager中的「上線」階段。
+exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 2%
 
 ---
 
-# Cloud Acceleration Manager的上線階段 {#golive-phase-cam}
+# Cloud Acceleration Manager中的Go Live階段 {#golive-phase-cam}
 
-「上線」卡片提供所有相關內容，著重說明準備、要採取的具體行動，並充分考慮，以確保順利成功上線至AEMas a Cloud Service。
+Go Live卡提供了所有相關內容，重點介紹準備、要採取的具體行動和徹底考慮，以確保在as a Cloud Service上順利成功地實AEM現。
 
-按一下您的專案卡，開啟專案登陸頁面並導覽至 **上線** 部分，如下圖所示。
+按一下項目卡以開啟項目登錄頁並導航到 **上線** 的下界。
 
 ![影像](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->請參閱 [在Cloud Acceleration Manager中建立和管理專案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) 了解更多。
+>請參閱 [在雲加速管理器中建立和管理項目](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) 來瞭解更多資訊。
 
 
-## 使用「上線活動」卡 {#go-live}
+## 使用Go Live活動卡 {#go-live}
 
-請依照以下章節，探索「上線」活動卡：
+按照本節瀏覽「Go Live」活動卡：
 
-1. 按一下 **檢視** 按鈕 **上線** 卡片。
+1. 按一下 **視圖** 按鈕 **上線** 卡。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
-1. 內容輪播會顯示移轉歷程這個階段的相關資訊。
+1. 內容傳送器顯示遷移過程的這一階段的相關資訊。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)

@@ -1,6 +1,6 @@
 ---
-title: 簡介 — 管理SSL憑證
-description: 簡介 — 管理SSL憑證
+title: 簡介 — 管理SSL證書
+description: 簡介 — 管理SSL證書
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
 workflow-type: tm+mt
@@ -13,38 +13,38 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
->title="管理SSL憑證"
->abstract="Cloud Manager可讓客戶透過Cloud Manager UI自行安裝SSL憑證。 Cloud Manager使用Platform TLS服務來管理客戶擁有且通常從第三方認證機構取得的SSL憑證和私密金鑰。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html" text="檢視、更新和取代SSL憑證"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html" text="檢查SSL憑證的狀態"
+>title="管理SSL證書"
+>abstract="Cloud Manager為客戶提供通過Cloud Manager UI安裝SSL證書的自助服務功能。 Cloud Manager使用平台TLS服務來管理客戶擁有的SSL證書和私鑰，通常從第三方認證機構獲得。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html" text="查看、更新和替換SSL證書"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html" text="檢查SSL證書的狀態"
 
 
-Cloud Manager可讓客戶透過Cloud Manager UI自行安裝SSL憑證。 Cloud Manager使用Platform TLS服務來管理客戶擁有的SSL憑證和私密金鑰，且通常取自協力廠商認證機構，例如 *加密*.
+Cloud Manager為客戶提供通過Cloud Manager UI安裝SSL證書的自助服務功能。 Cloud Manager使用平台TLS服務管理客戶擁有的SSL證書和私鑰，通常從第三方認證機構獲得，例如， *讓我們加密*。
 
-## 重要考量 {#important-considerations}
+## 重要注意事項 {#important-considerations}
 
-* Cloud Manager不提供SSL憑證或私密金鑰。 這些認證必須從第三方認證機構獲得。 請參閱 [取得SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) 了解更多。
+* 雲管理器不提供SSL證書或私鑰。 必須從第三方認證機構獲得。 請參閱 [獲取SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) 來瞭解更多資訊。
 
-* AEMas a Cloud Service僅支援secure `https` 網站。 具有多個自訂網域的客戶不想在每次新增網域時上傳憑證。 因此，此類客戶將受益於一個具有多個網域的憑證。
+* 僅AEMas a Cloud Service `https` 站點。 具有多個自定義域的客戶在每次添加域時都不希望上載證書。 因此，此類客戶將受益於一個具有多個域的證書。
 
-* AEMas a Cloud Service僅接受符合OV（組織驗證）或EV（延伸驗證）原則的憑證。 不接受DV（域驗證）策略。 此外，任何證書都必須是來自受信任認證機構(CA)的X.509 TLS證書，且具有相符的2048位RSA私鑰。
+* AEMas a Cloud Service只接受符合OV（組織驗證）或EV（擴展驗證）策略的證書。 將不接受DV（域驗證）策略。 此外，任何證書都必須是來自受信任證書頒發機構(CA)的X.509 TLS證書，其中具有匹配的2048位RSA私鑰。
 
-* AEMas a Cloud Service會接受網域的萬用字元SSL憑證。
+* AEMas a Cloud Service將接受域的通配符SSL證書。
 
-* 在任何指定時間，Cloud Manager最多可允許20個SSL憑證，此憑證可與您方案中的一或多個環境建立關聯，即使憑證已過期亦然。 不過，在具有此限制的程式中，Cloud Manager UI將允許安裝最多50個SSL憑證。 通常，證書可以覆蓋多個域（最多100個SAN），因此，請考慮將同一證書中的多個域分組以保持在此限制下。
+* 在任何給定時間，Cloud Manager將允許最多20個SSL證書，這些證書可以與您程式中的一個或多個環境關聯，即使證書已過期。 但是，Cloud Manager UI將允許在此約束下在程式中安裝最多50個SSL證書。 通常，證書可以覆蓋多個域（最多100個SAN），因此請考慮將同一證書中的多個域分組以保持在此限制下。
 
-Cloud Manager支援下列客戶SSL憑證需求：
+Cloud Manager支援以下客戶SSL證書要求：
 
-* SSL憑證可供多個環境使用，即只需新增一次，便可多次使用。
-* 每個Cloud Manager環境都可使用多個憑證。
-* 私密金鑰可發行多個SSL憑證。
-* 每個憑證通常會包含多個網域。
-* Platform TLS服務會根據用來終止的SSL憑證，以及托管該網域的CDN服務，將要求路由至客戶的CDN服務。
+* SSL證書可供多個環境使用，即添加一次並使用多次。
+* 每個Cloud Manager環境都可以使用多個證書。
+* 私鑰可以頒發多個SSL證書。
+* 每個證書通常包含多個域。
+* 平台TLS服務根據用於終止的SSL證書和承載該域的CDN服務將請求路由到客戶的CDN服務。
 
-擁有權限的使用者可使用Cloud Manager UI SSL Certificates頁面，執行數項工作以管理方案的SSL憑證：
+使用「雲管理器UI SSL Certificates」頁，具有權限的用戶可以執行以下幾項任務來管理程式的SSL證書：
 
-* [新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-* [檢視、更新或更換SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+* [添加SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* [查看、更新或替換SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
    >[!NOTE]
-   >這些動作可讓您檢視詳細資訊或取代即將過期的憑證。
-* [刪除SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+   >這些操作允許您查看詳細資訊或替換即將過期的證書。
+* [刪除SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)

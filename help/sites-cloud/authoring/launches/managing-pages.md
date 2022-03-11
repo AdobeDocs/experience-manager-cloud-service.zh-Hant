@@ -1,6 +1,6 @@
 ---
-title: 管理Launch中的頁面
-description: 您可以在Launch中建立新頁面。 您也可以刪除不想要的頁面。
+title: 在啟動中管理頁面
+description: 您可以在「啟動」中建立新頁面。 您還可以刪除不需要的頁面。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -9,65 +9,63 @@ ht-degree: 0%
 
 ---
 
-# 管理Launch中的頁面{#managing-pages-in-launch}
+# 在啟動中管理頁面 {#managing-pages-in-launch}
 
-透過啟動，您可以同時：
+啟動後，您可以同時執行以下兩項：
 
-* [管理現有頁面中的新內容](/help/sites-cloud/authoring/launches/editing.md)、
-* [在Sites主控台中導覽啟動的結構](#navigate-structure-of-launch),
-* 從主控台[將新頁面新增至](#add-pages-to-launch)或[從](#remove-pages-from-launch)、啟動中刪除不想要的頁面，
-* 在啟動的頁面上執行其他標準動作。
+* [管理現有頁面中的新內容](/help/sites-cloud/authoring/launches/editing.md)。
+* [在站點控制台中瀏覽啟動結構](#navigate-structure-of-launch)。
+* 從控制台 [將新頁面添加到](#add-pages-to-launch)或 [刪除不需要的頁](#remove-pages-from-launch)，發射，
+* 在發佈內的頁面上執行其他標準操作。
 
-## 導覽Launch的結構{#navigate-structure-of-launch}
+## 導航啟動的結構 {#navigate-structure-of-launch}
 
-您可以從以下位置導覽啟動的結構：
+您可以從以下位置瀏覽啟動結構：
 
 * 頁面編輯器：
 
-   * 選取&#x200B;**導覽**以在主控台中開啟Launch的結構：
-      ![從頁面編輯器導覽啟動](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
+   * 選擇 **導航** 要在控制台中開啟啟動的結構：
+      ![從頁面編輯器導航啟動](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
       >[!NOTE]
       >
-      >您也可以：
+      >您還可以：
       >
-      >* **** 離開啟動並返回編輯來源頁面
+      >* **離開** 啟動並返回到編輯源頁面
 
 
-* **啟動**控制台：
-如果您選取特定啟動，則可以接著選取**管理內容**:
-   ![Launch Console — 管理內容](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+* 的 **啟動** 控制台：如果選擇特定的啟動，則可以選擇 **管理內容**:
+   ![啟動控制台 — 管理內容](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
-* **Sites**控制台：
-如果您選取特定來源頁面並開啟**參考**，則接著可選取&#x200B;**啟動**，接著&#x200B;**管理內容**:
-   ![Launch Console — 管理內容](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
+* 的 **站點** 控制台：如果選擇特定源頁並開啟 **引用**，然後 **啟動** 後跟 **管理內容**:
+   ![啟動控制台 — 管理內容](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
    >[!NOTE]
    >
-   >您也可以選取&#x200B;**啟動Console**&#x200B;以存取&#x200B;**管理內容**（及其他動作）。
+   >也可以選擇 **啟動控制台** 訪問 **管理內容** （及其他行動）。
 
-所有這些進入點都會在Sites主控台中開啟啟動，您可在其中：
+所有這些入口點都將開啟「站點」控制台中的啟動，您可以在其中：
 
 * 導覽,
-* **** 建立新頁面、
-* 選取現有頁面並採取動作；例如，**Edit**，開啟&#x200B;**Properties**, **Lock**, **Copy**, **Paste**&#x200B;和&#x200B;**Delete**
+* **建立** 新頁面，
+* 選擇現有頁面並採取措施；比如說， **編輯**&#x200B;開啟 **屬性**。 **鎖**。 **複製**。 **貼上** 和 **刪除**
 
-   ![從「管理內容」導覽至Sites Console中的啟動](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
-* 使用&#x200B;**References**&#x200B;邊欄，返回&#x200B;**Launch Source**頁面：
-   ![Sites Console — 啟動來源](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
+   ![從管理內容在站點控制台中導航啟動](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+* 使用 **引用** 鐵軌回到 **啟動源** 頁面：
+   ![站點控制台 — 啟動源](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
-## 將頁面新增至您的Launch {#add-pages-to-launch}
+## 將頁面添加到您的啟動 {#add-pages-to-launch}
 
-若要將新頁面新增至您的啟動：
+要將新頁面添加到您的啟動中，請執行以下操作：
 
-1. [導覽至您啟動時的必要位置](#navigate-structure-of-launch)。
+1. [導航到啟動中所需的位置](#navigate-structure-of-launch)。
 
-1. 照常選擇&#x200B;**建立**&#x200B;以[建立頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)。
+1. 選擇 **建立** 至 [建立頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) 像往常一樣。
 
-## 從您的Launch {#remove-pages-from-launch}中移除頁面
+## 從啟動中刪除頁面 {#remove-pages-from-launch}
 
-若要從啟動中移除頁面：
+要從啟動中刪除頁面：
 
-1. [導覽至您啟動時的必要位置](#navigate-structure-of-launch)。
+1. [導航到啟動中所需的位置](#navigate-structure-of-launch)。
 
-1. 照常選擇&#x200B;**刪除**&#x200B;以[刪除頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)。
+1. 選擇 **刪除** 至 [刪除頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) 像往常一樣。

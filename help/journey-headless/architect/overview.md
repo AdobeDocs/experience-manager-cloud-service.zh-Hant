@@ -1,6 +1,6 @@
 ---
-title: AEM無頭式內容架構者歷程
-description: 從這裡開始，引導您逐步了解AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個無頭式專案中建立內容模型。
+title: 無AEM頭內容架構師旅程
+description: 從此開始，您可以帶導遊地瞭解功能強大、靈活的無頭功能AEM、其功能，以及如何在您的第一個無頭項目上對內容建模。
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
@@ -9,63 +9,63 @@ ht-degree: 1%
 
 ---
 
-# AEM無頭式內容架構者歷程 {#aem-headless-content-architect-journey}
+# 無AEM頭內容架構師旅程 {#aem-headless-content-architect-journey}
 
-從這裡開始，引導您逐步了解AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個無頭式專案中運用這些功能。
+從此開始，您可以帶導遊地瞭解功能強大、靈活的無頭功能AEM、功能，以及如何將它們用於您的第一個無頭項目。
 
 ## 簡介 {#introduction}
 
-無頭式實作對於將體驗提供給對象（無論對象在何處、無論管道為何）越來越重要。
+無頭實施對於向您的觀眾提供體驗越來越重要。
 
-無頭實作會放棄頁面和元件管理，如同在完整堆疊解決方案中的傳統做法，並著重於建立不受管道影響、可重複使用的內容片段及其跨管道傳送。 這是實作數位體驗的現代化、動態開發模式。
+無頭實施將放棄頁面和元件管理，這與整個堆棧解決方案中的傳統做法一樣，並側重於建立不依賴渠道、可重複使用的內容片段及其跨渠道交付。 它是一種實現數字型驗的現代動態發展模式。
 
-本指南會引導您了解最重要的主題，以便您在完成時：
+本指南引導您瞭解最重要的主題，以便在完成後：
 
-* 了解無頭式內容傳送的功能及其優點。
-* 了解如何為AEM無頭功能建立內容模型。
-* 能夠為您的第一個AEM無頭專案建立內容模型的前幾個步驟。
+* 瞭解無頭內容交付的內容及其好處。
+* 瞭解如何為您的內容建模以AEM獲得無頭功能。
+* 能夠為您的第一個無頭項目進行內容建模的第AEM一步。
 
-## AEM檔案歷程 {#documentation-journeys}
+## 文檔AEM旅程 {#documentation-journeys}
 
-[檔案歷程](/help/journey-documentation/documentation-journeys.md) 將許多不同的、可能複雜的主題和特徵聯繫起來，提供一種敘述，幫助讀者從頭到尾理解並解決業務問題，同時假定事先的主題或AEM知識最少。
+[文檔旅程](/help/journey-documentation/documentation-journeys.md) 通過提供幫助讀者瞭解和解決商業問題的敘事，將許多不同的、或許複雜的主題和特徵聯繫起來AEM，讀者可以從頭到尾對商業問題有新意，但只要假設事先的主題或知AEM識很少。
 
-說明檔案歷程是根據最佳實務原則而設計，根據Adobe的最新研究、Adobe顧問經驗證的實作經驗，以及客戶專案的意見回饋。
+文檔旅程是圍繞最佳做法原則設計的，這些原則由Adobe的最新研究、Adobe顧問的經驗證的實施經驗和客戶項目的反饋所指導。
 
-如果您想了解Adobe建議如何使用AEM解決無頭式業務案例， [AEM無頭歷程](/help/journey-documentation/documentation-journeys.md) 是開始的位置。
+如果您想瞭解Adobe如何推薦解決無頭業務案例AEM, [無AEM頭遊記](/help/journey-documentation/documentation-journeys.md) 是從哪開始的。
 
 ## 對象 {#audience}
 
-此歷程專為內容架構師角色而設計。 作為內容架構師，您將定義內容的結構。 內容作者建立實際內容時，就會使用這些定義。
+此路程是為「內容架構師」角色設計的。 作為內容架構師，您將定義內容的結構。 然後，內容作者將在建立實際內容時使用這些定義。
 
-此歷程從內容架構師的角度來規劃AEM Headless專案的需求、步驟和方法。 歷程會定義其他角色，內容架構者必須與這些角色互動，才能使專案成功，但歷程的觀點是內容架構者的觀點。
+該過程從內容架構師的角度列出了無AEM頭項目的要求、步驟和方法。 此行程將定義內容架構師為成功項目必須與之交互的其他角色，但此行程的視點是內容架構師的視點。
 
-此歷程中的資訊當然對其他角色有用，但某些資訊對某些角色來說會是多餘的。 請持續關注即將提供的歷程，涵蓋其他角色。
+在此過程中，資訊當然對其他人士有用，但某些資訊對某些角色來說將是多餘的。 請繼續觀看即將到來的行程，內容涉及其他角色。
 
-## 無頭式內容架構者歷程 {#the-journey}
+## 無頭內容架構師之旅 {#the-journey}
 
-您將在此歷程中探索許多主題。 以下文章提供您AEM中無頭的基礎知識，並連結至詳細的技術檔案。
+您將在此旅途中探索許多主題。 以下文章為您提供了有關詳細技術文檔AEM的無頭知識並提供了連結。
 
-雖然您可以直接前往歷程的特定部分，但許多概念都是以先前文章中的概念為基礎而建立。 因此，如果您剛接觸AEM中的無頭部，建議您從頭開始，依序進行。
+雖然你可以直接進入旅程的某個特定部分，但許多概念都建立在先前文章中的概念之上。 因此，如果您剛剛進入無頭AEM狀態，我們建議您從開始開始按順序進行。
 
 | # | 文章 | 說明 |
 |---|---|---|
-| 0 | AEM無頭式內容架構者歷程 | 此文檔 |
-| 1 | [使用AEM建立無頭模型 — 簡介](introduction.md) | 了解無頭技術，以及其對建模的意義。 |
-| 2 | [了解建模基本知識](basics.md) | 了解使用AEM建模的基本概念 |
-| 3 | [如何建立模型結構](model-structure.md) | 了解如何為無頭結構建立多層結構的模型 |
+| 0 | 無AEM頭內容架構師旅程 | 此文檔 |
+| 1 | [無頭模型AEM — 簡介](introduction.md) | 瞭解無頭技術及其對建模的意義。 |
+| 2 | [瞭解建模基礎知識](basics.md) | 學習建模的基礎知AEM識 |
+| 3 | [如何構建模型結構](model-structure.md) | 瞭解如何為無頭結構建立多層模型 |
 
-## 下一步 {#what-is-next}
+## 下一步是什麼 {#what-is-next}
 
-您現在已準備好開始Adobe無頭歷程。 我們鼓勵您繼續前往歷程的下一個部分並閱讀文章 [使用AEM建立無頭的內容模型 — 簡介](introduction.md).
+您現在已準備好開始Adobe無頭之旅。 我們鼓勵您繼續下一段旅程，閱讀文章 [無頭內容建模AEM — 簡介](introduction.md)。
 
 ## 其他資源 {#additional-resources}
 
-說明檔案歷程會告訴您AEM如何透過提供敘述來解決業務問題，以引導您完成複雜、相互關聯的流程和功能。 歷程說明多個功能如何搭配運作以滿足單一業務需求。
+文檔旅程向您介AEM紹如何通過提供一種說明來解決業務問題，該說明可指導您完成複雜且相互關聯的流程和功能。 一段旅程說明了多種功能如何協同工作，以滿足單一業務需求。
 
-因此，這些旅程的設計是獨立的。 但是，其中許多是可以相互關聯的。 請查看這些其他歷程，深入了解AEM強大功能如何搭配運作。
+因此，這種旅行是設計為獨立的。 但是，其中的一些是相互關聯的。 查看這些附加旅程，瞭解有關功能強大的功能AEM如何協同工作的詳細資訊。
 
-* [AEM無頭翻譯歷程](/help/journey-headless/translation/overview.md)  — 本檔案歷程可讓您廣泛了解無頭式技術、AEM如何提供無頭式內容，以及如何翻譯內容。
-* [無頭製作歷程](/help/journey-headless/author/overview.md)  — 從這裡開始，引導您一路探索AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個無頭式專案中建立內容模型。
-* [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md)  — 從這裡開始，逐步引導您了解AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個開發專案中運用這些功能。
-* [AEMas a Cloud Service技術檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  — 如果您已對AEM和無頭技術有明確的了解，您可直接諮詢我們的深入技術檔案。
-* [AEM Headless教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 如果您偏好從實踐中學習，而且在技術上有傾向，請利用我們按API和架構組織的實作教學課程，探索如何建立和使用以AEM Headless建置的應用程式。
+* [無AEM頭翻譯之旅](/help/journey-headless/translation/overview.md)  — 此文檔記錄過程讓您能夠全面瞭解無頭技術、如何AEM處理無頭內容以及如何翻譯。
+* [無頭創作旅程](/help/journey-headless/author/overview.md)  — 從此開始，引導您瞭解功能強大、靈活的無頭功能AEM、功能，以及如何在您的第一個無頭項目上對內容建模。
+* [無AEM頭開發者之旅](/help/journey-headless/developer/overview.md)  — 從此開始，引導您瞭解功能強大、靈活的無頭功能AEM、功能，以及如何在您的第一個開發項目中利用這些功能。
+* [AEMas a Cloud Service技術文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  — 如果您已經對無頭技術有了AEM深入的瞭解，您可能希望直接咨詢我們的深入技術文檔。
+* [無AEM頭教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 如果您喜歡通過實踐來學習，並且在技術上有傾向，請參閱我們按API和框架組織的動手教程，該教程將探討建立和使用基於AEMHeadless的應用程式。

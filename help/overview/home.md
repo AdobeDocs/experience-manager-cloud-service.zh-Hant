@@ -18,7 +18,7 @@ ht-degree: 83%
 * [簡介](introduction.md)
 * [術語](terminology.md)
 * [新增功能與不同之處](what-is-new-and-different.md)
-* [架構簡介](architecture.md)
+* [體系結構簡介](architecture.md)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
@@ -30,11 +30,11 @@ ht-degree: 83%
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何使用及管理 Experience Manager Sites as a Cloud Service。 |
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何使用及管理 Experience Manager Assets as a Cloud Service。 |
 | [轉移至 AEM as a Cloud Service ](/help/journey-migration/getting-started.md) | 了解轉換至雲端服務的過程。 |
-| [實作使用手冊](/help/implementing/home.md) | 透過探索這些開發和部署主題，了解如何使用AEM強大功能來建立和自訂體驗。 |
-| [無頭式開發人員歷程](/help/journey-headless/developer/overview.md) | 探索此引導式歷程，了解AEM強大且靈活的無頭式功能，為您的第一個無頭式專案做好準備。 |
+| [實作使用手冊](/help/implementing/home.md) | 瞭解如何通過瀏覽這些開發和部AEM署主題來使用強大功能構建和定制體驗。 |
+| [無頭開發者之旅](/help/journey-headless/developer/overview.md) | 探索這一指導性的旅程，體驗您強大而靈活的無AEM頭功能，為第一個無頭項目做好準備。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 後端的操作方式，例如製作索引和執行維護任務。 |
-| [商務使用手冊](/help/commerce-cloud/home.md) | 了解AEM as a Cloud Service上的Commerce Integration Framework。 |
+| [《 Commerce使用手冊》](/help/commerce-cloud/home.md) | 瞭解有關Commerce Integration Framework的AEMas a Cloud Service。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 

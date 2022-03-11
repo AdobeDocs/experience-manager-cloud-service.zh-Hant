@@ -1,13 +1,13 @@
 ---
-title: '已知問題 '
+title: 已知問題
 description: 通信最佳做法、已知問題和限制
-source-git-commit: bf7ce5850700141a8a6d1eeb90ea0fd21ff811e7
+exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 0%
 
 ---
-
 
 # 考慮已知問題和最佳做法 {#best-practices-known-issues-and-limitations}
 

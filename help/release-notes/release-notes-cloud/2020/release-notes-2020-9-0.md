@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0 版發行說明。'
-description: '"[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.9.0."'
+description: '"[!DNL Adobe Experience Manager] as a Cloud Service2020.9.0發行說明。」'
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
@@ -11,11 +11,11 @@ ht-degree: 12%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 版發行說明  {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
+以下部分概述了有關 [!DNL Experience Manager] as a Cloud Service2020.9.0。
 
 ## 發行日期 {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+發放日期 [!DNL Adobe Experience Manager] as a Cloud Service2020.9.0是2020年9月24日。
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
@@ -37,7 +37,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 * 要瞭解以下增強功能，請參見 [Brand Portal的新聞嗎](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
    * 通過Adobe Document Cloud視圖SDK整合增強PDF預覽。
-   * Single-click download functionality.
+   * 按一下下載功能。
    * 下載體驗的新管理配置。
 
 <!--
@@ -56,7 +56,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * 添加到產品和類別的屬性頁面，使業務用戶能夠查看與產品SKU/類別ID相關的詳細資訊。
 
-* Sorting feature added to Product Console to allow sorting of products/categories by name or price attributes.
+* 添加到產品控制台的排序功能允許按名稱或價格屬性對產品/類別進行排序。
 
 * 產品搜索功能已添加到產品控制台。
 
@@ -68,7 +68,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 發行日期 {#release-date-cm}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03, 2020.
+發放日期 [!UICONTROL 雲管理器] 版本2020.9.0為2020年9月3日。
 
 ### 新增功能 {#what-is-new-cloud-manager}
 
@@ -78,7 +78,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 ### 錯誤修正 {#bug-fixes-cm}
 
-* The Content Audit tab incorrectly displayed the base URL using the author domain instead of the publish domain.
+* 「內容審核」頁籤使用作者域而不是發佈域錯誤地顯示了基本URL。
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
@@ -86,9 +86,9 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 ### 新增功能 {#what-is-new-cra}
 
-* The Cloud Readiness Analyzer (CRA) has a start state console that displays an explicit **Generate Report** button for the user to click to execute the CRA.
+* 雲就緒性分析器(CRA)有一個啟動狀態控制台，該控制台顯示 **生成報告** 按鈕以執行CRA。
 
-* The CRA UI displays progress while it is running. 它顯示正在分析的項目和在執行期間找到的查找結果。
+* CRA UI在運行時顯示進度。 它顯示正在分析的項目和在執行期間找到的查找結果。
 
 * CRA報告以表格格式顯示按查找類型和重要性級別組織的摘要和查找結果數。 按一下該查找結果的數量將自動滾動到該查找結果在報告中的位置。
 
@@ -108,7 +108,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 * 添加到CTT用戶介面以檢索的按鈕 *訪問令牌* 容易。
 
-* Descriptive validation message added for *URL* and *Migration Set Name*.
+* 為添加的描述性驗證消息 *URL* 和 *遷移集名稱*。
 
 ## 程式碼重構工具 {#code-refactoring}
 
@@ -116,10 +116,10 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 ### 新增功能 {#what-is-new-refactoring}
 
-* AIO-CLI plugin supports Repository Modernizer and allows users to execute the tool using the plugin.
+* AIO-CLI插件支援Repository Modernizer，允許用戶使用該插件執行該工具。
 
    請參閱 [Git資源：aio-cli-plugin-aem — 雲服務 — 遷移](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 的子菜單。
 
 * Repository Modernizer實用程式可用於將現有項目包重構為與為AEMas a Cloud Service定義的項目結構相容的包。
 
-   Refer to [Git Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for more details.
+   請參閱 [Git資源：儲存庫現代化器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 的子菜單。

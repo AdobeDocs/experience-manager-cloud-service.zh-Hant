@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# 內容和商務 {#content-commerce}
+# Content and Commerce {#content-commerce}
 
 借助Adobe Experience Manager的內容和商務，各品牌可以更快地擴展和創新，以區別不同的商務體驗，並抓住線上支出的加速增長。 內AEM容和商務將身臨其境、人性化和個性化的Experience Manager體驗與任意數量的商業解決方案相結合，為購物旅程的所有部分帶來與眾不同的體驗，縮短時間實現價值並推動更高的轉換。
 

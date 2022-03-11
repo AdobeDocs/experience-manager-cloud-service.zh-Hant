@@ -21,7 +21,7 @@ Experience Manager as a Cloud Service 的 2020.2.0 的發行日期為 2020 年 2
 
 請詳閱本節，了解 AEM as a Cloud Service 2020.2.0 版中 Cloud Manager 的新增功能和更新。
 
-### 新功能 {#what-is-new}
+### 新增功能 {#what-is-new}
 
 * Adobe Experience Manager 原型版本已更新為 22 版。
 * 現在，沙箱/示範程式中的階段和生產環境可透過 Cloud Manager UI 更新。
@@ -30,7 +30,7 @@ Experience Manager as a Cloud Service 的 2020.2.0 的發行日期為 2020 年 2
 * 「程式碼掃描」步驟現在提供記錄檔以供下載。
 * 現在起，程式碼掃描期間所發現之問題的試算表中，會有一個欄位顯示特定規則文件的連結。
 
-### 錯誤修正 {#bug-fixes}
+### 錯誤修正  {#bug-fixes}
 
 * 有時，瀏覽器安全原則會導致管道執行畫面上的特定按鈕無法正常運作。
 * Cloud Manager 登陸頁面有時會提供「概述」、「環境」和「活動」連結。

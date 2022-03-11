@@ -42,7 +42,7 @@ Dynamic Media公司別名帳戶可確保用戶介面中所有出廠設定的Dyna
 
 您首先提交支援案例，開始配置Dynamic Media公司別名帳戶。 此步驟是必需的。
 
-1. [使用Admin Console建立支援案例](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)。
+1. [使用Admin Console建立支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
 1. 在支援案例中提供以下資訊：
 
    * 要使用的Dynamic Media公司別名。 名稱必須包含 *僅* 字母（允許使用混合大小寫）、數字、連字元和下划線。

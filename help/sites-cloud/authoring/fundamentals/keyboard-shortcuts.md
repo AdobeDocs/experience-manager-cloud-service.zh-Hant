@@ -1,6 +1,6 @@
 ---
-title: 頁面編輯的鍵盤快速鍵
-description: AEM提供各種鍵盤快速鍵，包括一些用於頁面編輯
+title: 頁面編輯的鍵盤快捷鍵
+description: 整個過程中都提供各種鍵盤快捷鍵AEM，包括一些用於頁面編輯的快捷鍵
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -9,43 +9,43 @@ ht-degree: 1%
 
 ---
 
-# 頁面編輯的鍵盤快速鍵{#keyboard-shortcuts-when-editing-pages}
+# 頁面編輯的鍵盤快捷鍵 {#keyboard-shortcuts-when-editing-pages}
 
-AEM提供各種鍵盤快速鍵。 有些在編輯頁面時適用，有些則適用於控制台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)的使用。[
+您可以使用各種鍵盤快捷鍵AEM。 有些在編輯頁面時應用，有些則應用於 [控制台的使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
->AEM鍵盤快速鍵所需的[修飾鍵](#os-specific-modifier-keys)取決於作業系統。
+>的 [修飾鍵](#os-specific-modifier-keys) 鍵盤快捷AEM方式所需時間因作業系統而異。
 
-## 編輯鍵盤快捷鍵{#editing-keyboard-shortcuts}
+## 編輯鍵盤快捷鍵 {#editing-keyboard-shortcuts}
 
-| 位置 | 快速鍵 | 說明 |
+| 位置 | 快捷方式 | 說明 |
 |---|---|---|
-| 任何編輯窗口模式 | `Ctrl-Shift-m` | 在&#x200B;**預覽**&#x200B;和目前選取的[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a>之間切換(例如&#x200B;**Edit**、**Layout**&#x200B;等)* |
-| **** 編輯模式 | `Ctrl-z` | [撤消上次更改](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
-|  | `Ctrl-y` | [取消上次更改](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
+| 任何編輯窗口模式 | `Ctrl-Shift-m` | 在 **預覽** 和當前選定的 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (例如 **編輯**。 **佈局**，等)* |
+| **編輯** 模式 | `Ctrl-z` | [撤消上次更改](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
+|  | `Ctrl-y` | [重做上次更改](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 選擇多個段落 |
 |  | `Ctrl-c` | 複製選定段落 |
-|  | `Ctrl-x` | 剪切選定段落，（剪切段落在貼上之前不會在UI中消失） |
-|  | `Ctrl-v` | 貼上先前剪下或複製的段落 |
+|  | `Ctrl-x` | 剪切選定段落（剪切段落在貼上之前不會在用戶介面中消失） |
+|  | `Ctrl-v` | 貼上以前剪切或複製的段落 |
 |  | `Ctrl-Backspace` | 刪除選定段落 |
-| **** 編輯模式 — RTF編輯器 | `Ctrl-b` | 粗體 |
+| **編輯** 模式 — 富格文本編輯器 | `Ctrl-b` | 粗體 |
 |  | `Ctrl-I` | 斜體 |
 |  | `Ctrl-u` | 底線 |
 
 >[!NOTE]
 >
->一旦使用者開始以預覽模式與頁面互動，`Ctrl-Shift-m`快速鍵將不再可用。 使用者必須按一下頂端編輯器列，或返回「編輯」模式，快速鍵才能再次可用。
+>一旦用戶開始在預覽模式下與頁面交互， `Ctrl-Shift-m` 快捷方式不再可用。 用戶必須按一下頂部編輯器欄或返回「編輯」模式，以便快捷方式再次可用。
 
-使用[consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)時，案頭使用者也可使用各種鍵盤快速鍵。
+使用 [控制台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
->無論[控制台快捷鍵是否已停用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)，編輯器鍵盤快捷鍵始終處於活動狀態。
+>無論編輯器鍵盤快捷鍵是否處於活動狀態 [已停用控制台快捷方式](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)。
 
-## OS特定修飾詞鍵{#os-specific-modifier-keys}
+## 特定於作業系統的修改鍵 {#os-specific-modifier-keys}
 
-鍵盤快速鍵使用的修飾鍵會因用戶端使用的作業系統而異。
+用於鍵盤快捷鍵的修改鍵因客戶端使用的作業系統而異。
 
 | Windows和Linux | macOS |
 |---|---|

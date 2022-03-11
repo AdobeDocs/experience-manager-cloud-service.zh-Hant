@@ -1,6 +1,6 @@
 ---
 title: ' — 使用AEMCommerce Integration Framework進行Commerce Integration常見問題'
-description: ' — 使用AEMCommerce Integration Framework進行Commerce Integration常見問題'
+description: AEM - Commerce Integration using Commerce Integration Framework FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 #  — 使用AEMCommerce Integration Framework進行Commerce Integration常見問題
 
-## 1。CIF GraphQL是否僅用於商業，或者它是否可用於查詢在上創作的AEM內容？ JCR?
+## 1. Is CIF GraphQL only used for commerce or will this be available for querying content authored on AEMs JCR?
 
-Adobe已採用Adobe Commerce的GraphQL APIs作為所有商業相關資料的官方商業API。 因此，AEM使用GraphQL通過I/O Runtime與Adobe Commerce和任何商務引擎交換商務資料。 此GraphQL API獨立於AEMGraphQL API以訪問內容片段。
+Adobe has adopted Adobe Commerce&#39;s GraphQL APIs as its official commerce API for all commerce-related data. 因此，AEM使用GraphQL通過I/O Runtime與Adobe Commerce和任何商務引擎交換商務資料。 此GraphQL API獨立於AEMGraphQL API以訪問內容片段。
 
 ## 2.產品資產（映像）是否可以通過Adobe Commerce管理員AEM進行儲存和引用？ 如何消費Dynamic Media的資產？
 

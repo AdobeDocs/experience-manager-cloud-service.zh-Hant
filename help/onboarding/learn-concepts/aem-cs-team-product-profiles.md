@@ -1,6 +1,6 @@
 ---
-title: AEM as a Cloud Service團隊和產品設定檔
-description: 請詳閱本頁面，了解AEM as a Product Team and Product Profiles。
+title: AEMas a Cloud Service團隊和產品配置檔案
+description: 按照本頁瞭解有關AEMas a Cloud Service團隊和產品配置檔案。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 source-git-commit: 56ca8e80081e62ceb3f5fc2bf9c32aa3bcee12c6
 workflow-type: tm+mt
@@ -9,52 +9,52 @@ ht-degree: 0%
 
 ---
 
-# AEM as a Cloud Service團隊和產品設定檔 {#product-profiles}
+# AEMas a Cloud Service團隊和產品配置檔案 {#product-profiles}
 
-## 產品設定檔 {#profiles}
+## 產品配置檔案 {#profiles}
 
-授與使用者特定Adobe解決方案的存取權時，您不一定想授予他們完整存取權。 產品設定檔可讓每個解決方案擁有自己的一組使用者權限。 這些檔案可透過[Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md)取得。
+在授予用戶對特定Adobe解決方案的訪問權限時，您不一定希望授予他們完全訪問權限。 「產品配置檔案」使每個解決方案都具有自己的一組用戶權限。 可通過 [Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md)。
 
-深入了解[AEM as a Cloud Service產品設定檔](#aem-product-profiles)和[Cloud Manager產品設定檔](#cloud-manager-product-profiles)，以了解在您的團隊設定時，這些設定檔如何搭配運作。
+閱讀有關 [AEMas a Cloud Service產品配置](#aem-product-profiles) 和 [Cloud Manager產品配置檔案](#cloud-manager-product-profiles) 瞭解在您的團隊設定時，這些工作如何協調進行。
 
-## AEM as a Cloud Service產品設定檔 {#aem-product-profiles}
+## AEMas a Cloud Service產品配置檔案 {#aem-product-profiles}
 
-AEM as aCloud Service是提供AEM as a service的完全雲端原生產品。 它以雲端原生方式提供AEM，並提供新屬性，例如永遠開啟、隨時最新、一律安全且隨時可擴充。 同時，它保留了AEM作為可自訂平台提供給客戶的主要價值主張，並允許企業級團隊整合到其開發和交付過程中。 請參閱[Adobe Experience Manager as aCloud Service簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en)以深入了解AEM as aCloud Service。
+AEMas a Cloud Service是完全雲本地的服務AEM。 它以AEM雲本機方式提供，並具有新屬性，如始終開啟、始終最新、始終安全且始終處於規模。 同時，它保留了作為可定製平台為客戶提AEM供的主要價值主張，並允許企業級團隊在其開發和交付過程中整合。 請參閱 [Adobe Experience Manager as a Cloud Service簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en) 來瞭解更多AEMas a Cloud Service。
 
-您的AEM作為Cloud Service團隊成員將會在上線期間，透過Admin Console新增並指派給下列一或多個產品設定檔。
+您AEM的as a Cloud Service團隊成員將在入職期間通過Admin Console添加並分配到以下一個或多個產品配置檔案。
 
-* **AEM管理員**:通常會將AEM管理員指派給開發人員，尤其是需要存取開發環境的開發人員。AEM管理員產品設定檔將用來授予相關聯AEM例項的管理員權限。
+* **管AEM理員**:通常AEM會將管理員分配給開發人員，特別是需要訪問開發環境的開發人員。 Administrators產AEM品配置檔案將用於授予關聯實例中的管理員AEM權限。
 
-* **AEM使用者**:AEM使用者是貴組織中使用AEM作為Cloud Service，並與Adobe簽訂合約的使用者。這些成員需要存取AEM才能執行其工作。 AEM使用者產品設定檔通常會指派給建立及檢閱內容的AEM內容作者(這可以是數種類型；例如頁面、資產、出版物等)，再發佈到您的網站。 系統會將下列AEM使用者產品設定檔指派給這些成員。
+* **用AEM戶**:用AEM戶是您組織中使用as a Cloud Service作為AEM與Adobe協定的一部分的用戶。 這些成員需要訪問AEM以執行其任務。 用戶AEM產品配置檔案通常分配給創AEM建和審閱內容的內容作者(這可以是幾種類型；例如，頁面、資產、出版物等)，然後將其發佈到您的網站。 下面AEM顯示的用戶產品配置檔案已分配給這些成員。
 
    ![](/help/onboarding/learn-concepts/assets/admin-console-profiles.png)
 
    >[!NOTE]
-   >指派給AEM作為Cloud Service產品設定檔的每位使用者都擁有Cloud Manager的（唯讀）存取權。
+   >分配給as a Cloud Service產品配AEM置檔案的每個用戶都具有（只讀）Cloud Manager訪問權限。
 
-## Cloud Manager產品設定檔 {#cloud-manager-product-profiles}
+## Cloud Manager產品配置檔案 {#cloud-manager-product-profiles}
 
-Cloud Manager已預先設定產品設定檔，或更簡單的角色型權限。 系統管理員將指派給這些產品設定檔，負責設定您的Cloud Manager團隊，且必須熟悉這些產品設定檔，以及要指派給哪些團隊成員。
+Cloud Manager具有預配置的產品配置檔案，或更簡單的基於角色的權限。 您的系統管理員將負責通過為這些產品配置檔案分配來設定您的雲管理器團隊，並且必須熟悉這些產品配置檔案以及要分配給哪些團隊成員。
 >[!NOTE]
->如需詳細資訊，請參閱Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md##role-based-permissions)中的[角色型權限。
+>請參閱 [雲管理器中基於角色的權限](/help/onboarding/learn-concepts/cloud-manager-introduction.md##role-based-permissions) 的子菜單。
 
-每個產品設定檔都有與其相關聯的特定權限。 例如，如果您的角色為：
+每個產品配置檔案都具有與其關聯的特定權限。 例如，如果您的角色是：
 
-* **業務擁有者**，您就擁有新增程式或編輯程式、新增或更新環境、新增/編輯/刪除管道和執行任何管道，以及將程式碼部署至AEM環境或程式碼品質的權限。
+* **業務所有者**，您有權添加新程式或編輯程式、添加或更新環境、添加/編輯/刪除管道並運行任何管道，以及將代碼部署到環境或代AEM碼質量。
 
-* **部署管理員**，則您有權新增或更新環境、執行任何管道，以及將程式碼部署至AEM環境或程式碼品質。
+* **部署管理器**，您具有添加或更新環境、運行任何管道以及將代碼部署到環境或代AEM碼質量的權限。
 
-* **開發人員**，您便有權產生個人存取權杖以存取Git。
+* **開發人員**，您有權生成訪問Git的個人訪問令牌。
 
-* **計畫管理員**，您有權計畫管道、覆蓋3層質量門並提供生產批准。
+* **程式管理器**，您有權調度管道、覆蓋3層質量門和提供生產批准。
 
-可將使用者指派給多個產品設定檔。 例如，將業務所有者和部署管理器角色分配給用戶時，會為其提供這些權限的組合或總和。
+用戶可以分配給多個產品配置檔案。 例如，將業務所有者和部署管理器角色分配給用戶時，會為用戶提供這些權限的組合或總和。
 
-您的Cloud Manager團隊將至少包含：
+您的雲管理器團隊將至少包括：
 
-* 一個業務所有者（通常也是系統管理員）必須是登錄和訪問Cloud Manager的第一個人
-* 一個部署管理員
-* 一位開發人員
+* 一個業務所有者，通常也是系統管理員，並且必須是第一個登錄並訪問雲管理器的人
+* 一個部署管理器
+* 一個開發人員
 
    >[!NOTE]
-   >若要授與AEM as aCloud Service的存取權，使用者必須屬於下列兩個產品設定檔之一：`AEM Users`或`AEM Administrators`。 您必須獲得執行個體的權限，但管理相關Cloud Manager的權限是不夠的。
+   >要授予用戶對AEMas a Cloud Service的訪問權限，用戶必須屬於以下兩種產品配置檔案之一： `AEM Users` 或 `AEM Administrators`。 必須授予您對實例的權限，管理關聯雲管理器的權限將不足。

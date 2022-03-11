@@ -1,82 +1,82 @@
 ---
-title: 匯入、匯出和組織最適化Forms、PDF forms和其他資產
+title: 進口、出口和組織自適應Forms、PDF forms和其他資產
 seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
-description: '想要將適用性Forms和資產移轉至AEM例項或從例項移轉？ 在此了解如何從匯入和匯出適用性Forms、PDF forms、主題和其他支援資產 [!DNL AEM Forms] 例項。 '
+description: '希望將Adaptive Forms和資產遷移到實例AEM或遷移？ 在此處瞭解如何從AdaptiveForms、PDF forms、主題和其他支援資產 [!DNL AEM Forms] 實例。 '
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1211'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 匯入、匯出和組織最適化Forms、PDF forms和其他資產{#importing-and-exporting-assets-to-aem-forms}
+# 匯入、匯出及組織最適化表單、PDF 表單和其他資產{#importing-and-exporting-assets-to-aem-forms}
 
-您可以在下列之間移動適用性Forms和相關資產：適用性表單主題、表單資料模型、適用性表單範本、檔案片段和PDF forms [!DNL AEM Forms] 例項。 您可以匯入和匯出CRX套件或二進位檔案格式的資產。
+您可以在以下位置之間移動自適應Forms和相關資產：自適應表單主題、表單資料模型、自適應表單模板、文檔片段和PDF forms [!DNL AEM Forms] 實例。 可以以CRX包或二進位檔案格式導入和導出資產。
 
-匯出適用性表單時，內容原則和範本不會匯出。 使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) 匯出這些資產。
+導出自適應表單時，不會導出內容策略和模板。 使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) 以導出這些資產。
 
-## 下載適用性Forms、PDF forms或相關資產 {#download-forms-amp-documents-assets}
+## 下載AdaptiveForms、PDF forms或相關資產 {#download-forms-amp-documents-assets}
 
-若要下載表單或相關資產：
+要下載表單或相關資產，請執行以下操作：
 
-1. 登入 [!DNL AEM Forms] 例項。
-1. 點選 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 圖示> **[!UICONTROL 導覽]** ![羅盤](assets/Smock_Compass_18_N.svg) 圖示> **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
-1. 選取資產，然後點選 **[!UICONTROL 下載]** 表徵圖。
-1. 在「下載資產」中，選擇下列其中一個選項，然後點選 **[!UICONTROL 下載]**.
+1. 登錄到 [!DNL AEM Forms] 實例。
+1. 點擊 **[!UICONTROL Adobe Experience Manager]** ![adobeexperience manager](assets/adobeexperiencemanager.png) 表徵圖 **[!UICONTROL 導航]** ![羅盤](assets/Smock_Compass_18_N.svg) 表徵圖 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文檔]**。
+1. 選擇資產並點擊 **[!UICONTROL 下載]** 表徵圖
+1. In the Download Asset(s), choose one of the following options, and tap **[!UICONTROL Download]**.
 
-   * **下載為CRX套件：** 使用選項，從 [!DNL AEM Forms] 例項。 它會以CRX套件形式下載所有資產和資料夾，包括以AEM(適用性Forms和適用性表單片段)製作的表單、表單集、表單資料模型、表單範本、PDF檔案和參考資源（XSD和影像）。
-以套件形式下載資產的好處，在於也會下載所選資產所參考的資產。 例如，如果您的適用性表單使用表單範本XSD和影像。 選取此適用性表單並以套件形式下載時，下載的套件也會包含表單範本、XSD和影像。 也會下載與資產相關聯的所有中繼資料屬性（包括自訂屬性）。
+   * **下載為CRX包：** 使用此選項從 [!DNL AEM Forms] 例子。 It downloads all assets and folders as a CRX package including the forms authored in AEM (Adaptive Forms and Adaptive Form Fragments), form sets, form data model, form templates, PDF documents, and referenced resources (XSDs and images).
+The advantage of downloading assets as a package is that it also downloads referenced by selected assets. For example, If you have an Adaptive Form that uses a form template, XSD, and an image. When you select this Adaptive Form and download it as a package, the downloaded package also contains the form template, XSD, and the image. 還下載與資產關聯的所有元資料屬性（包括自定義屬性）。
 
-   * **以二進位檔案形式下載資產：** 使用選項僅下載表單模板(XDP)、PDF forms(PDF)、文檔(PDF)和資源（影像、結構、樣式表）。 您可以使用外部應用程式編輯這些資產。 它會將具有二進位檔的資產(例如影像、PDF和其他支援格式)下載為.zip檔案。
-您無法下載適用性Forms、適用性表單片段、主題和表單集，具有 **[!UICONTROL 以二進位檔案形式下載資產]** 選項。 若要下載這些資產，您應使用 **[!UICONTROL 下載為CRX套件]** 選項。
+   * **Download asset(s) as binary files:** Use the option to download only form templates (XDP), PDF forms (PDF), document (PDF), and resources (images, schemas, stylesheets). 您可以使用外部應用程式編輯這些資產。 It downloads the assets that have binaries, such as images, PDFs, and other supported formats  as a .zip file.
+您無法下載帶有的自適應Forms、自適應表單片段、主題和表單集 **[!UICONTROL 將資產下載為二進位檔案]** 的雙曲餘切值。 要下載這些資產，您應使用 **[!UICONTROL 下載為CRX包]** 的雙曲餘切值。
 
-   選取的資產會以封存檔（.zip檔案）的形式下載。
-
-   >[!NOTE]
-   >
-   >AEM套件和二進位檔案都會以封存檔（.zip檔案）的形式下載。 系統不會隨資產下載資產的範本。 您需要個別匯出資產範本。
-
-## 上傳適用性Forms、PDF forms或相關資產 {#upload-forms-amp-documents-assets}
-
-您可以個別上傳支援的資產類型，或以ZIP封存的形式上傳。 若為ZIP檔案，則會顯示所有受支援資產的相對路徑。 系統會忽略ZIP中不支援的資產，且不會列出。 不過，如果ZIP封存檔僅包含不支援的資產，則會顯示錯誤訊息，而非快顯對話方塊。
-若要上傳表單或相關資產：
-
-1. 登入 [!DNL AEM Forms] 例項。
-1. 點選 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 圖示> **[!UICONTROL 導覽]** ![羅盤](assets/Smock_Compass_18_N.svg) 圖示> **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
-1. 點選 **[!UICONTROL 建立]** > **[!UICONTROL 檔案上傳]**. 對話方塊隨即顯示。
-1. 在對話方塊中，瀏覽並選取要匯入的套件或封存。 您也可以選取其他支援的檔案類型。 點選 **[!UICONTROL 開啟]**. 所選資料夾或檔案名稱不得包含任何特殊字元。
-
-   在對話方塊中，驗證要上傳之資產的詳細資訊，然後點選 **[!UICONTROL 上傳]**.
-
-   如果您上傳現有的表單資產，資產便會更新。
+   選定的資產將作為存檔（.zip檔案）下載。
 
    >[!NOTE]
    >
-   > * 當名稱與不同的資源類型衝突時，上傳套件不會取代現有的資料夾階層。 例如，如果您有一個名為「培訓」的適用性表單，其位置為/content/dam/formsanddocuments，位於單一伺服器上。 您可以下載適用性表單並在其他伺服器上傳表單。 第二台伺服器的相同位置也有一個名為「Training」的資料夾/content/dam/formsanddocuments。 上傳失敗。
-   > * 只有 `form-power-user` 群組可上傳XDP檔案。
+   >包文AEM件和二進位檔案都作為存檔檔案（.zip檔案）下載。 不會隨資產一起下載資產模板。 您需要單獨導出資產模板。
+
+## 上載自適應Forms、PDF forms或相關資產 {#upload-forms-amp-documents-assets}
+
+您可以單獨或作為ZIP存檔上載受支援的資產類型。 對於ZIP檔案，將顯示所有受支援資產的相對路徑。 ZIP中不支援的資產將被忽略，且未列出。 但是，如果ZIP存檔中只包含不受支援的資產，則會顯示一條錯誤消息，而不是彈出對話框。
+要上載表單或相關資產，請執行以下操作：
+
+1. 登錄到 [!DNL AEM Forms] 實例。
+1. 點擊 **[!UICONTROL Adobe Experience Manager]** ![adobeexperience manager](assets/adobeexperiencemanager.png) 表徵圖 **[!UICONTROL 導航]** ![羅盤](assets/Smock_Compass_18_N.svg) 表徵圖 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文檔]**。
+1. 點擊 **[!UICONTROL 建立]** > **[!UICONTROL 檔案上載]**。 對話方塊隨即顯示。
+1. 在對話框中，瀏覽並選擇要導入的包或存檔。 也可以選擇其他支援的檔案類型。 點擊 **[!UICONTROL 開啟]**。 您選擇的資料夾或檔案名不得包含任何特殊字元。
+
+   在對話框中，驗證上載的資產的詳細資訊，然後點擊 **[!UICONTROL 上載]**。
+
+   如果您上載現有的表單資產，則會更新該資產。
+
+   >[!NOTE]
+   >
+   > * 當名稱與不同的資源類型衝突時，上載包不會替換現有資料夾層次結構。 例如，如果在一台伺服器上的/content/dam/formsanddocuments位置有一個名為「Training」的Adaptive Form。 您可以下載Adaptive Form，然後將表單上載到另一台伺服器上。 第二台伺服器在同一位置/content/dam/formsanddocuments還有一個名為「Training」的資料夾。 上載失敗。
+   > * 只有 `form-power-user` 組可以上載XDP檔案。
 
 
 
 ## 下載主題 {#downloading-a-theme}
 
-您可以在 [!DNL AEM Forms] 供您用於其他專案或例項。 AEM可讓您以zip檔案的形式下載主題，以便上傳至執行個體。
+可以在中導出主題 [!DNL AEM Forms] 可用於其他項目或實例。 可AEM以將主題作為zip檔案下載，並可以在實例上載。
 
-若要下載主題：
+下載主題：
 
-1. 登入 [!DNL AEM Forms] 例項。
-1. 點選 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 圖示> **[!UICONTROL 導覽]** ![羅盤](assets/Smock_Compass_18_N.svg) 圖示> **[!UICONTROL Forms]** > **[!UICONTROL 主題]**.
-1. 選取主題並點選 **[!UICONTROL 下載]**. 主題會下載為封存（.zip檔案）。
+1. 登錄到 [!DNL AEM Forms] 實例。
+1. 點擊 **[!UICONTROL Adobe Experience Manager]** ![adobeexperience manager](assets/adobeexperiencemanager.png) 表徵圖 **[!UICONTROL 導航]** ![羅盤](assets/Smock_Compass_18_N.svg) 表徵圖 **[!UICONTROL Forms]** > **[!UICONTROL 主題]**。
+1. 選擇主題並點擊 **[!UICONTROL 下載]**。 主題將作為存檔檔案（.zip檔案）下載。
 
-## 上傳主題 {#uploading-a-theme}
+## 上載主題 {#uploading-a-theme}
 
-您可以上傳並使用其他人在您的表單中建立的主題。 上傳主題：
+您可以上載和使用其他人在您的表單中建立的主題。 To upload a theme:
 
-1. 在Experience Manager中，導覽至 **[!UICONTROL Forms]** > **[!UICONTROL 主題]**.
-1. 在主題頁上，按一下 **[!UICONTROL 建立]** > **[!UICONTROL 檔案上傳]**.
-1. 在「檔案上傳」提示中，瀏覽並選擇電腦上的主題包，然後按一下 **[!UICONTROL 上傳]**. 已上傳的主題可在主題頁面上使用。
+1. 在Experience Manager中，導航到 **[!UICONTROL Forms]** > **[!UICONTROL 主題]**。
+1. 在「主題」頁面上，按一下 **[!UICONTROL 建立]** > **[!UICONTROL 檔案上載]**。
+1. 在「File Upload（檔案上載）」提示符下，瀏覽並選擇電腦上的主題包，然後按一下 **[!UICONTROL 上載]**。 上載的主題可在主題頁面上找到。
 
 <!-- ## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
 
@@ -148,47 +148,47 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
    >
    >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator. -->
 
-## 匯出工作流程應用程式 {#export-a-workflow-application}
+## 導出工作流應用程式 {#export-a-workflow-application}
 
-您可以使用套件管理器來匯出工作流程應用程式。 此程式如下所列：
+可以使用包管理器導出工作流應用程式。 此過程如下所列：
 
-1. 開啟 [!DNL AEM Forms] 套件管理器。 套件管理器的URL為 `https://[server]:[port]/crx/packmgr`.
-1. 按一下 **[!UICONTROL 建立套件]**. 此 **[!UICONTROL 新套件]** 對話框。
-1. 指定套件的名稱、版本和群組。 按一下&#x200B;**[!UICONTROL 「確定」]**。
-1. 按一下 **[!UICONTROL 編輯]** 然後開啟 **[!UICONTROL 篩選器]** 標籤。 按一下 **[!UICONTROL 新增篩選]**. 指定工作流應用程式的路徑。 例如， /etc/fd/dashboard/startpoints/homemortgage。 按一下 **[!UICONTROL 新增規則]**.
+1. 開啟 [!DNL AEM Forms] 包管理器。 包管理器的URL是 `https://[server]:[port]/crx/packmgr`。
+1. 按一下 **[!UICONTROL 建立包]**。 的 **[!UICONTROL 新建包]** 對話框。
+1. 指定包的名稱、版本和組。 按一下&#x200B;**[!UICONTROL 「確定」]**。
+1. 按一下 **[!UICONTROL 編輯]** 開啟 **[!UICONTROL 篩選器]** 頁籤。 按一下 **[!UICONTROL 添加篩選器]**。 指定工作流應用程式的路徑。 例如， /etc/fd/dashboard/startpoints/homemtorgage。 按一下 **[!UICONTROL 添加規則]**。
 
-1. 開啟 **[!UICONTROL 進階]** 標籤。 選擇 **[!UICONTROL 合併]** 或 **[!UICONTROL 覆寫]** 在ACL處理欄位中。 按一下「**[!UICONTROL 儲存]**」。
-1. 按一下 **[!UICONTROL 建置]** 來建立套件。
+1. 開啟 **[!UICONTROL 高級]** 頁籤。 選擇 **[!UICONTROL 合併]** 或 **[!UICONTROL 覆蓋]** 在「ACL處理」欄位中。 按一下「**[!UICONTROL 儲存]**」。
+1. Click **[!UICONTROL Build]** to create the package.
 
-   建置套件後，您可以下載套件並將其匯入至其他伺服器。 工作流程應用程式會顯示在上傳套件的伺服器上。
+   生成包後，您可以下載該包並將其導入到其他伺服器。 工作流應用程式出現在上載包的伺服器上。
 
    >[!NOTE]
    >
-   >為了使工作流應用程式正常工作，還導出相應的最適化表單和工作流模型與工作應用程式。
+   >為了使工作流應用程式正常工作，還導出了相應的自適應表單和工作流模型。
 
-## 使用資料夾來組織適用性Forms、PDF forms和相關資產  {#folders-and-organizing-assets}
+## 使用資料夾組織AdaptiveForms、PDF forms和相關資產  {#folders-and-organizing-assets}
 
-您可以使用資料夾來排列和組織資產。 在資料夾中組織檔案和資產可讓您將檔案分組，以便輕鬆管理。 您可以選取資料夾，然後選擇下載或刪除資料夾。 若要建立資料夾，請完成下列步驟：
+您可以使用資料夾來排列和組織資產。 將文檔和資產組織在資料夾中，使您可以對檔案進行分組，以便輕鬆管理。 您可以選擇資料夾並選擇下載或刪除它。 要建立資料夾，請完成以下步驟：
 
 ### 建立資料夾 {#create-a-folder}
 
-1. 登入 [!DNL AEM Forms] 例項。
-1. 點選Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 圖示>導覽 ![羅盤](assets/Smock_Compass_18_N.svg) 表徵圖> **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**.
-1. 點選 **[!UICONTROL 建立]** > **[!UICONTROL 資料夾]**.
+1. 登錄到 [!DNL AEM Forms] 實例。
+1. 點擊Experience Manager ![adobeexperience manager](assets/adobeexperiencemanager.png) 表徵圖 ![羅盤](assets/Smock_Compass_18_N.svg) 表徵圖> **[!UICONTROL Forms]** > **[!UICONTROL Forms和文檔]**。
+1. 點擊 **[!UICONTROL 建立]** > **[!UICONTROL 資料夾]**。
 1. 輸入以下詳細資訊：
 
    * **[!UICONTROL 標題]**:資料夾的顯示名稱
-   * **[!UICONTROL 名稱]**: *（強制）* 要在儲存庫中儲存資料夾的節點名稱
+   * **[!UICONTROL Name]**: *(Mandatory)* The node name under which you want to store the folder in the repository
 
    >[!NOTE]
    >
-   >依預設，名稱欄位的值會從標題自動填入。 名稱只能包含英數字元，或連字型大小(-)和底線(_)特殊字元。 標題中輸入的任何其他特殊字元都會自動以連字型大小取代，系統會提示您確認新名稱。 您可以選擇繼續使用建議的名稱或進一步編輯。
+   >預設情況下，名稱欄位的值會自動從標題中填充。 The name can only contain alphanumeric characters, or the hyphen (-) and underscore (_) special characters. 在標題中輸入的任何其他特殊字元將自動替換為連字元，並提示您確認新名稱。 You can choose to continue with the suggested name or edit it further.
 
-1. 資產清單中的目前位置會顯示帶有您所定義標題的新資料夾。
+1. 在資產清單的當前位置顯示具有您定義的標題的新資料夾。
 
-   如果資料夾存在並指定名稱，則提交會失敗，並出現錯誤。 您可以將游標移至錯誤上以檢視錯誤訊息 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 表徵圖，顯示在名稱欄位旁邊。
+   如果存在具有指定名稱的資料夾，則提交將失敗並出現錯誤。 通過懸停在錯誤上方，可以查看錯誤消息 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 表徵圖。
 
-   您可以點選新建立的資料夾，以前往資料夾內，並在資料夾內建立資產或資料夾。 此外，您可以選取資料夾，並選擇將其排入佇列以供下載、刪除或編輯其名稱。
+   您可以點擊新建立的資料夾進入資料夾並在資料夾中建立資產或資料夾。 此外，您可以選擇資料夾並選擇將其排入隊列以便下載、刪除或編輯其名稱。
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}

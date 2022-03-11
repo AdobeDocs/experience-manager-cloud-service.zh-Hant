@@ -1,6 +1,6 @@
 ---
 title: 匯出為 CSV
-description: 將您頁面的相關資訊匯出至本機系統上的CSV檔案
+description: 將有關頁面的資訊導出到本地系統上的CSV檔案
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -11,15 +11,15 @@ ht-degree: 42%
 
 # 匯出為 CSV {#export-to-csv}
 
-**建立CSV** 可報表，將您頁面的相關資訊匯出至本機系統上的CSV檔案。
+**建立CSV報告** 允許您將有關頁面的資訊導出到本地系統上的CSV檔案。
 
-* 下載的檔案名為`export.csv`
+* 已下載的檔案稱為 `export.csv`
 * 內容取決於您選擇的屬性。
-* 可以定義路徑與導出深度。
+* 可以定義路徑和導出深度。
 
 >[!NOTE]
 >
->會使用瀏覽器的下載功能和預設目的地。
+>使用瀏覽器的下載功能和預設目標。
 
 「建 **立CSV匯出** 」精靈可讓您選擇：
 
@@ -42,20 +42,20 @@ ht-degree: 42%
    * 其他層級的子項
    * 層級
 
-產生的`export.csv`檔案可在Excel或任何其他相容的應用程式中開啟。
+結果 `export.csv` 可以在Excel或任何其他相容應用程式中開啟檔案。
 
-若要建立CSV匯出：
+要建立CSV導出：
 
 1. 開啟 **Sites** Console，視需要導覽至所需位置。
    * 瀏覽Sites **控制台時**  (在「清單」檢視中)，可使用「建立 **CSV報表** 」選項
-   * 它是&#x200B;**Create**&#x200B;下拉式選單的選項：
+   * 它是 **建立** 下拉菜單：
 
       ![建立CSV選項](/help/sites-cloud/authoring/assets/csv-create.png)
 
 1. 從工具列中，依序選 **取「建立****CSV報表** 」以開啟精靈：
 
-   ![CSV匯出選項](/help/sites-cloud/authoring/assets/csv-options.png)
+   ![CSV導出選項](/help/sites-cloud/authoring/assets/csv-options.png)
 
 1. 選擇要導出的必需屬性。
 1. 選擇 **建立**。
-   ![產生的CSV匯出至Excel](/help/sites-cloud/authoring/assets/csv-example.png)
+   ![在Excel中導出結果CSV](/help/sites-cloud/authoring/assets/csv-example.png)

@@ -284,7 +284,7 @@ GraphQL是無頭內容與AEM用戶之間的「粘合」。 GraphQL是查詢必AE
 * [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)  — 在上發佈內容的技術文AEM檔
 * [命名約定](/help/implementing/developing/introduction/naming-conventions.md)  — 中頁面命名限制的技術文AEM檔
 * [多站點管理器和翻譯](/help/sites-cloud/administering/msm-and-translation.md)  — 有關強大翻譯功AEM能的技術文檔
-* [AEM工作流](/help/sites-cloud/authoring/workflows/overview.md)  — 關於如何自動執行中的工作流的技術文AEM檔
+* [AEM工作流](/help/sites-cloud/authoring/workflows/overview.md)  — 有關如何自動執行中的工作流的技術文AEM檔
 * [內容片段](/help/assets/content-fragments/content-fragments.md)  — 內容片段的技術文檔。
 * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 內容片段模型的技術文檔。
 * [GraphQL技術文檔](https://graphql.org) - GraphQL定義（外部連結）

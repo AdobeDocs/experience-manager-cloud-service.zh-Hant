@@ -27,7 +27,7 @@ ht-degree: 97%
 |---|---|
 | Adobe Pipeline | 承接作者發佈的內容並進一步發佈的機制。 |
 | AEM 作者階層 | 說明 Sites 和 Assets 的製作環境。 |
-| AEM預覽層 | 說明Sites的預覽環境。 |
+| 預AEM覽層 | 描述站點的預覽環境。 |
 | AEM 發佈階層 | 說明 Sites 的發佈環境。 |
 
 

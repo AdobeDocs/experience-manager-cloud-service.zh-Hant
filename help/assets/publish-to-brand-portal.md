@@ -2,13 +2,13 @@
 title: 將資產、資料夾和集合發佈至 Brand Portal
 description: 將資產、資料夾和集合發佈至 Brand Portal。
 contentOwner: Vishabh Gupta
-feature: Brand Portal，資產分送，設定
+feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 source-git-commit: 13ea0161771776f23d3789adfb8487df06a7e4b1
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 97%
+source-wordcount: '1153'
+ht-degree: 98%
 
 ---
 
@@ -218,7 +218,7 @@ ht-degree: 97%
 
 1. 在 AEM Assets 例項的&#x200B;**集合**&#x200B;控制台中，選取您要取消發佈的集合。
 
-   ![select_collection](assets/select_collection-1.png)
+   ![選擇集合](assets/select_collection-1.png)
 
 1. 在工具列中按一下&#x200B;**[!UICONTROL 從 Brand Portal 移除]**&#x200B;圖示。
 1. 在對話方塊中，按一下&#x200B;**[!UICONTROL 取消發佈]**。

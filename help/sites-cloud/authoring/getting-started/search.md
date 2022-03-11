@@ -11,100 +11,100 @@ ht-degree: 8%
 
 # 搜尋 {#search-feature}
 
-AEM的製作環境提供多種搜尋內容的機制，視資源類型而定。
+作者環境提AEM供了各種機制來搜索內容，這取決於資源類型。
 
-## 搜索基本知識{#search-basics}
+## 搜索基礎 {#search-basics}
 
-您可以從頂端工具列使用搜尋功能：
+可從頂部工具欄進行搜索：
 
-![搜尋圖示](/help/sites-cloud/authoring/assets/search-icon.png)
+![「搜索」表徵圖](/help/sites-cloud/authoring/assets/search-icon.png)
 
-透過搜尋邊欄，您可以：
+使用搜索欄，您可以：
 
-* 搜尋特定關鍵字、路徑或標籤
-* 根據資源特定條件進行篩選，例如修改的日期、頁面狀態、檔案大小等。
-* 根據上述條件定義並使用[已儲存的搜尋](#saved-searches) -
+* 搜索特定關鍵字、路徑或標籤
+* 根據資源特定的條件進行篩選，如修改日期、頁面狀態、檔案大小等。
+* 定義和使用 [保存的搜索](#saved-searches)  — 根據上述標準
 
 >[!NOTE]
 >
->只要搜尋邊欄可見，也可使用快捷鍵`/`（正斜線）叫用搜尋。
+>也可以使用熱鍵調用搜索 `/` （正斜線）。
 
 ## 搜尋與篩選 {#search-and-filter}
 
-若要搜尋及篩選資源：
+要搜索和篩選資源：
 
-1. 開啟&#x200B;**搜尋**（工具列中有放大鏡）並輸入您的搜尋詞。 將會提供建議，並可以選取：
+1. 開啟 **搜索** （工具欄中帶有放大鏡）並輸入搜索詞。 將提出建議，並可以選擇：
 
    ![搜尋期限](/help/sites-cloud/authoring/assets/search-term.png)
 
-   依預設，搜尋結果將限制在您目前的位置（即主控台和相關資源類型）:
+   預設情況下，搜索結果將限於當前位置（即控制台和相關資源類型）:
 
-   ![搜尋位置](/help/sites-cloud/authoring/assets/search-term-location.png)
+   ![搜索位置](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. 如有需要，您可以移除位置篩選器（在您要移除的篩選器上選取&#x200B;**X**），以搜尋所有主控台/資源類型。
-1. 將顯示結果，並根據控制台和相關資源類型分組。
+1. 如果需要，可以刪除位置篩選器(選擇 **X** 在要刪除的篩選器上)搜索所有控制台/資源類型。
+1. 將顯示結果，並根據控制台和相關資源類型進行分組。
 
-   您可以選擇特定資源（以便執行進一步的操作），或通過選擇所需的資源類型進行細化；例如&#x200B;**查看所有站點**:
+   您可以選擇特定資源（用於進一步操作），或通過選擇所需的資源類型進行細化；例如 **查看所有站點**:
 
    ![搜尋結果](/help/sites-cloud/authoring/assets/search-results.png)
 
-1. 如果您想要進一步深入研究，請選取邊欄符號（左上角）以開啟側面板&#x200B;**篩選器與選項**。
+1. 如果要進一步深入，請選擇「軌」符號（左上）以開啟側面板 **篩選器和選項**。
 
-   ![邊欄按鈕](/help/sites-cloud/authoring/assets/rail-button.png)
+   ![軌道按鈕](/help/sites-cloud/authoring/assets/rail-button.png)
 
-   根據資源類型，「搜尋」將顯示預先定義的搜尋/篩選條件選項。
+   根據資源類型，「搜索」將顯示預定義的搜索/篩選條件選擇。
 
    側面板允許您選擇：
 
    * 已儲存的搜尋
    * 搜索目錄
    * 標記
-   * 搜尋條件，例如修改日期、發佈狀態、LiveCopy狀態
+   * 搜索條件，例如修改日期、發佈狀態、LiveCopy狀態
 
    >[!NOTE]
    >
-   >搜尋條件可能有所不同：
+   >搜索標準可能會有所不同：
    >
-   >* 視您選取的資源類型而定；例如，資產和社群條件是可理解的專門性。
-   >* 您可以自訂搜尋Forms的例項(適合AEM內的位置)。
+   >* 根據您選擇的資源類型；例如，資產和社區標準是可以理解的專門性。
+   >* 您的實例作為「搜索Forms」可以自定義(適合於中的位AEM置)。
 
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
   -->
 
-![搜尋端面板](/help/sites-cloud/authoring/assets/search-side-panel.png)
+![搜索側面板](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
-1. 您也可以新增其他搜尋詞。
+1. 您還可以添加其他搜索詞。
 
 1. 使用 **X** (右上方 **** )關閉搜尋。
 
 >[!NOTE]
 >
->在搜尋結果中選取項目時，搜尋條件持續存在。
+>在搜索結果中選擇項時，將保留搜索條件。
 >
->在搜尋結果頁面上選取項目時，使用瀏覽器返回按鈕後返回搜尋頁面時，搜尋條件仍會保留。
+>在搜索結果頁面上選擇項目時，當使用「後退瀏覽器」按鈕返回到搜索頁面時，搜索標準將保留。
 
 ## 已儲存的搜尋 {#saved-searches}
 
-除了按範圍廣泛的Facet進行搜索外，您還可以保存特定搜索配置以便檢索，並在以後階段使用：
+除了通過各種方面進行搜索外，還可以保存特定搜索配置以在稍後階段進行檢索和使用：
 
-1. 定義搜索標準並選擇&#x200B;**Save**。
+1. 定義搜索條件並選擇 **保存**。
 
-   ![儲存搜尋](/help/sites-cloud/authoring/assets/search-side-panel.png)
+   ![保存搜索](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
-1. 指派名稱，然後使用&#x200B;**Save**&#x200B;確認：
+1. 指定名稱，然後使用 **保存** 確認：
 
-   ![以名稱保存搜索](/help/sites-cloud/authoring/assets/search-save-name.png)
+   ![使用名稱保存搜索](/help/sites-cloud/authoring/assets/search-save-name.png)
 
-1. 下次存取搜尋面板時，您儲存的搜尋將可從選取器使用：
+1. 下次訪問搜索面板時，您保存的搜索將可從選擇器獲得：
 
-   ![已儲存的搜尋](/help/sites-cloud/authoring/assets/saved-searches.png)
+   ![已保存的搜索](/help/sites-cloud/authoring/assets/saved-searches.png)
 
-1. 儲存後，您可以：
+1. 保存後，您可以：
 
-   * 使用&#x200B;**x**（根據已保存的搜索的名稱）啟動新查詢（不會刪除已保存的搜索本身）。
-   * **編輯已保存的搜索**，更改搜索條件，然後重 **** 新保存。
+   * 使用 **x** （根據已保存的搜索的名稱）啟動新查詢（不會刪除已保存的搜索本身）。
+   * **編輯保存的搜索**，然後 **保存** 的雙曲餘切值。
 
 通過選擇保存的搜索並按一下搜索面板底部的「編 **輯保存的搜索** 」(Edit Saved Search)，可以修改保存的搜索。
 

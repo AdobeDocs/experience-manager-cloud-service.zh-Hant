@@ -1,6 +1,6 @@
 ---
-title: 使用選取器
-description: 了解您可以使用哪些方法來選取Dynamic Media中互動式影像、互動式視訊和輪播橫幅的資產。
+title: 使用選擇器
+description: 瞭解可用於選擇Dynamic Media互動式影像、互動式視頻和旋轉木馬橫幅的資產的方法。
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
@@ -10,104 +10,104 @@ ht-degree: 1%
 
 ---
 
-# 在Dynamic Media中使用選取器 {#working-with-selectors}
+# 在Dynamic Media使用選擇器 {#working-with-selectors}
 
-使用互動式影像、互動式視訊或轉盤橫幅時，您會選取資產，然後選取熱點和影像地圖的網站和產品以連結至。 使用影像集、回轉集和多媒體集時，您也可以使用資產選擇器選取資產。
+使用互動式影像、互動式視頻或旋轉傳送條幅時，您將選擇資產，並為熱點和影像映射選擇要連結的站點和產品。 使用影像集、旋轉集和多媒體集時，還可以使用資產選擇器選擇資產。
 
-本主題說明如何使用產品、網站和資產選取器，包括在選取器內瀏覽、篩選、排序的功能。
+本主題介紹如何使用「產品」、「站點」和「資產」選擇器，包括在選擇器內瀏覽、篩選和排序的功能。
 
-您在建立轉盤集、新增熱點和影像地圖、建立互動式視訊和影像時存取選取器。
+在建立傳送帶集、添加熱點和影像映射、建立互動式視頻和影像時，可訪問選擇器。
 
-例如，在此轉盤橫幅中，如果您要將熱點或影像地圖連結至快速檢視頁面，請使用產品選取器。 如果要將熱點或影像映射連結到超連結，請使用站點選擇器；建立投影片時，請使用「資產」選取器。
+例如，在此Carousel Banner中，如果要將熱點或影像映射連結到Quickview頁面，則使用「產品」選擇器。 如果要將熱點或影像映射連結到超連結，請使用「站點」選擇器；建立幻燈片時，請使用「資產」選擇器。
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-選擇熱點或影像映射的位置時（而不是手動輸入），使用的是選擇器。 網站選取器只有在您是[!DNL Adobe Experience Manager Sites]客戶時才有效。 產品選擇器也需要[!DNL Experience Manager Commerce]。
+選擇（而不是手動輸入）熱點或影像映射到的位置時，將使用選擇器。 僅當您是 [!DNL Adobe Experience Manager Sites] 客戶。 產品選擇器還需要 [!DNL Experience Manager Commerce]。
 
-## 在Dynamic Media中選取產品 {#selecting-products}
+## 在Dynamic Media選擇產品 {#selecting-products}
 
-當您想要熱點或影像地圖為產品目錄中的特定產品提供快速檢視時，請使用產品選取器來選擇產品。
+當您希望熱點或影像映射為產品目錄中的特定產品提供快速視圖時，使用「產品」選擇器選擇產品。
 
-1. 導覽至「轉盤集」、「互動式影像」或「互動式視訊」，然後選取「**[!UICONTROL 動作]**」標籤（僅在您已定義熱點或影像地圖時可用）。
+1. 導航至「旋轉軸集」、「互動式影像」或「互動式視頻」，然後選擇 **[!UICONTROL 操作]** 頁籤（僅當定義了熱點或影像映射時才可用）。
 
-   產品選擇器位於&#x200B;**[!UICONTROL 動作類型]**&#x200B;區域。
+   產品選擇器位於 **[!UICONTROL 操作類型]** 的子菜單。
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. 選取&#x200B;**[!UICONTROL 產品選取器]**&#x200B;圖示（放大鏡），並導覽至目錄中的產品。
+1. 選擇 **[!UICONTROL 產品選擇器]** 表徵圖（放大鏡），並導航到目錄中的產品。
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   您可以點選&#x200B;**[!UICONTROL Filter]**&#x200B;並輸入關鍵字，或選取標籤，或兩者，以依關鍵字或標籤來篩選。
+   可以通過點擊按關鍵字或標籤進行篩選 **[!UICONTROL 篩選]** 輸入關鍵字，或選擇標籤，或同時輸入兩者。
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   您可以點選&#x200B;**[!UICONTROL Browse]**&#x200B;並導覽至其他資料夾，以變更[!DNL Experience Manager]瀏覽產品資料的位置。
+   你可以更改 [!DNL Experience Manager] 通過點擊瀏覽產品資料 **[!UICONTROL 瀏覽]** 並導航到另一個資料夾。
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   選擇&#x200B;**[!UICONTROL 按]**&#x200B;排序以更改[!DNL Experience Manager]按最新到最舊或最舊到最新排序。
+   選擇 **[!UICONTROL 排序依據]** 更改 [!DNL Experience Manager] 按最新到最舊或最舊到最新的順序排序。
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   選擇&#x200B;**[!UICONTROL 以]**&#x200B;查看以更改查看產品的方式 — **[!UICONTROL 清單視圖]**&#x200B;或&#x200B;**[!UICONTROL 卡片視圖]**。
+   選擇 **[!UICONTROL 視為]** 更改查看產品的方式 —  **[!UICONTROL 清單視圖]** 或 **[!UICONTROL 卡視圖]**。
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
-1. 選取產品後，欄位會以產品縮圖和名稱填入。
+1. 選擇產品後，該欄位將填充產品縮略圖和名稱。
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式下，可以選擇熱點或影像映射，並查看快速視圖的顯示方式。
+1. 在 **[!UICONTROL 預覽]** 模式下，可以選擇熱點或影像映射，並查看快速視圖的顯示方式。
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## 在Dynamic Media中選取網站 {#selecting-sites}
+## 選擇Dynamic Media站點 {#selecting-sites}
 
-當您希望熱點或影像映射連結到[!DNL Experience Manager]網站內管理的網頁時，請使用網站選擇器選擇網頁。
+當希望熱點或影像映射連結到在中管理的網頁時，使用站點選擇器選擇網頁 [!DNL Experience Manager] 站點。
 
-1. 導覽至「轉盤集」、「互動式影像」或「互動式視訊」，然後選取「**[!UICONTROL 動作]**」標籤（僅在您已定義熱點或影像地圖時可用）。
+1. 導航至「旋轉軸集」、「互動式影像」或「互動式視頻」，然後選擇 **[!UICONTROL 操作]** 頁籤（僅當定義了熱點或影像映射時才可用）。
 
    「網站選擇器」位於「動 **[!UICONTROL 作類型]** 」區。
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. 選取&#x200B;**[!UICONTROL 網站選取器]**&#x200B;圖示（含放大鏡的資料夾），並導覽至您[!DNL Experience Manager]網站中要連結熱點或影像地圖的頁面。
+1. 選擇 **[!UICONTROL 站點選擇器]** 表徵圖（帶放大鏡的資料夾），並導航至 [!DNL Experience Manager] 要將熱點或影像映射連結到的站點。
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
-1. 選取網站後，欄位會填入路徑。
+1. 選擇站點後，欄位將填充路徑。
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中，如果選擇熱點或影像映射，則導航到您指定的[!DNL Experience Manager]網站頁。
+1. 在 **[!UICONTROL 預覽]** 模式：如果選擇熱點或影像映射，則導航至 [!DNL Experience Manager] 的子菜單。
 
-## 在Dynamic Media中選取資產 {#selecting-assets}
+## 在Dynamic Media選擇資產 {#selecting-assets}
 
-使用此選取器來選擇要用於轉盤橫幅、互動式視訊、影像集、混合媒體集和回轉集的影像。 在互動式視訊中，當您在&#x200B;**[!UICONTROL Content]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Select Assets]**&#x200B;時，即可使用資產選取器。 在轉盤集中，當您建立投影片時，可使用資產選取器。 在影像集、混合媒體集和回轉集中，當您分別建立影像集、混合媒體集或回轉集時，可使用資產選取器。
+使用此選擇器選擇在旋轉傳送條幅、互動式視頻、影像集、混合媒體集和旋轉集中使用的影像。 在互動式視頻中，當您選擇 **[!UICONTROL 選擇資產]** 的 **[!UICONTROL 內容]** 頁籤。 在「旋轉軸集」中，建立幻燈片時資產選擇器可用。 在映像集、混合媒體集和旋轉集中，當您分別建立映像集、混合媒體集或旋轉集時，資產選擇器可用。
 
-如需詳細資訊，請參閱[資產選擇器](/help/assets/search-assets.md#asset-selector)。
+另請參閱 [資產選取器](/help/assets/search-assets.md#asset-selector) 的子菜單。
 
-1. 導覽至轉盤集並建立投影片。 或者，導覽至互動式視訊，前往&#x200B;**[!UICONTROL Content]**&#x200B;標籤，然後選取資產。 或者，建立混合媒體集、影像集或回轉集。
-1. 選取&#x200B;**[!UICONTROL 資產選取器]**&#x200B;圖示（含放大鏡的資料夾）並導覽至資產。
+1. 導航到「旋轉軸集」並建立幻燈片。 或者，導航到互動式視頻，轉到 **[!UICONTROL 內容]** ，然後選擇「資產」。 或者，建立混合媒體集、映像集或旋轉集。
+1. 選擇 **[!UICONTROL 資產選擇器]** 表徵圖（帶放大鏡的資料夾），並導航到資產。
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   點選&#x200B;**[!UICONTROL Filter]**&#x200B;並輸入關鍵字，或新增條件，或兩者，依關鍵字或標籤篩選。
+   通過點擊按關鍵字或標籤篩選 **[!UICONTROL 篩選]** 輸入關鍵字，或添加條件，或兩者兼有。
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   您可以導覽至&#x200B;**[!UICONTROL Path]**&#x200B;欄位中的其他資料夾，以變更[!DNL Experience Manager]瀏覽資產的位置。
+   你可以更改 [!DNL Experience Manager] 導航到資產中的其他資料夾瀏覽資產 **[!UICONTROL 路徑]** 的子菜單。
 
-   選取&#x200B;**[!UICONTROL 集合]**&#x200B;以僅搜尋集合內的資產。
+   選擇 **[!UICONTROL 集合]** 只搜索集合中的資產。
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   選擇「**[!UICONTROL 以]**&#x200B;查看」以更改您查看產品的方式 — **[!UICONTROL 清單視圖]**、**[!UICONTROL 列視圖]**&#x200B;或&#x200B;**[!UICONTROL 卡片視圖]**。
+   選擇 **[!UICONTROL 視為]** 更改查看產品的方式 —  **[!UICONTROL 清單視圖]**。 **[!UICONTROL 列視圖]**&#x200B;或 **[!UICONTROL 卡視圖]**。
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. 若要選取資產，請選取核取記號。 資產隨即顯示。
+1. 要選擇資產，請選擇複選標籤。 將顯示資產。
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
 —>

@@ -1,51 +1,50 @@
 ---
-title: 在Cloud Manager中將Screens附加元件新增至新程式
-description: 本頁說明如何在Cloud Manager for Screens中將Screens附加元件新增至新程式，作為Cloud Service。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+title: 在雲管理器中向新程式添加螢幕載入項
+description: 本頁介紹在Cloud Manager for Screensas a Cloud Service中向新程式添加螢幕載入項。
+exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 1%
 
 ---
 
+# 在雲管理器中將螢幕添加為新程式的載入項 {#create-programs-screens-cloud}
 
-# 在Cloud Manager中將Screens新增為新程式的附加元件 {#create-programs-screens-cloud}
-
-本節說明如何在Cloud Manager中將Screens新增為新程式的附加元件。
+本節介紹如何將螢幕作為Cloud Manager中新程式的附加項添加。
 
 >[!NOTE]
->請參閱[了解方案和方案類型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en)以深入了解Cloud Manager方案。
+>請參閱 [瞭解程式和程式類型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) 瞭解有關雲管理器程式的詳細資訊。
 
 ## 目標 {#objective}
 
-以下章節說明如何在Cloud Manager中將Screens新增為新程式的附加元件。
+以下部分介紹如何將螢幕作為Cloud Manager中新程式的附加項添加。
 
-## 在Cloud Manager中將Screens作為附加元件新增至新程式的步驟 {#add-screens-add-on}
+## 將螢幕作為Cloud Manager中新程式的載入項添加的步驟 {#add-screens-add-on}
 
-請依照下列步驟，在Cloud Manager中將Screens作為新程式的附加元件新增：
+按照以下步驟將螢幕作為Cloud Manager中新程式的附加項添加到：
 
-1. 導覽至[Cloud Manager](https://my.cloudmanager.adobe.com/)。
+1. 導航到 [雲管理器](https://my.cloudmanager.adobe.com/)。
 
    >[!NOTE]
-   >請參閱[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)簡介，了解Cloud Manager。
+   >請參閱 [雲管理器簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) 瞭解Cloud Manager。
 
-1. 按一下Cloud Manager登陸頁面中的&#x200B;**新增程式** 。
+1. 按一下 **添加程式** 從Cloud Manager登錄頁。
 
    ![影像](/help/screens-cloud/assets/onboarding/onboard-screens-addon1.png)
 
-1. 在「建立程式」嚮導中選擇「為生產設定」 **以建立生產程式。**&#x200B;用戶可以接受預設程式名或在選擇&#x200B;**Continue**&#x200B;之前對其進行編輯。
+1. 選擇 **為生產設定** 建立程式嚮導中建立生產程式。 用戶可以接受預設程式名或在選擇之前對其進行編輯 **繼續**。
 
    ![影像](/help/screens-cloud/assets/onboarding/onboard-screens-addon2.png)
 
-1. 從嚮導的此步驟中的&#x200B;**為生產設定**&#x200B;螢幕中選擇&#x200B;**Screens**&#x200B;作為附加元件，然後按一下&#x200B;**建立**。
+1. 選擇 **螢幕** 作為 **為生產設定** 從嚮導的此步驟中進行螢幕，然後按一下 **建立**。
 
    ![影像](/help/screens-cloud/assets/onboarding/onboard-screens-addon3.png)
 
-1. 程式建立設定完成後，您就會看到您的Cloud Manager程式，例如&#x200B;**ScreensCloud示範程式**（如下圖所示），其中Screens是程式中的附加元件。
+1. 程式建立設定完成後，您將看到Cloud Manager程式，例如， **ScreensCloud演示程式**，如下圖所示，「螢幕」作為程式的載入項。
 
    ![影像](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
-## 下一步 {#whats-next}
+## 下一步是什麼 {#whats-next}
 
-一旦您學會如何將Screens作為附加元件新增至現有的Cloud Manager程式，並在Cloud Manager的「程式和產品」下看到您的程式，您現在就可以繼續進行入門程式的下一個步驟，即[在Cloud Manager中為您的專案建立分支](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)。
-
+一旦您學會了如何將螢幕添加為現有Cloud Manager程式的附加項，並在Cloud Manager的「程式和產品」下看到您的程式，您現在就可以進入入門流程的下一步，即， [在雲管理器中為項目建立分支](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)。

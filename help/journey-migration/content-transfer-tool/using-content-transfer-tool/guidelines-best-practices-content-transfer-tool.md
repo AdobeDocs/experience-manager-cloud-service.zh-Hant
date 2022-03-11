@@ -1,24 +1,24 @@
 ---
-title: 使用內容轉移工具的准則和最佳作法
-description: 使用內容轉移工具的准則和最佳作法
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+title: 使用內容傳輸工具的指導原則和最佳做法
+description: 使用內容傳輸工具的指導原則和最佳做法
+exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 25%
 
 ---
 
-
-# 使用內容轉移工具的准則和最佳作法 {#guidelines}
+# 使用內容傳輸工具的指導原則和最佳做法 {#guidelines}
 
 ## 准則與最佳作法 {#best-practices}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_guidelines"
 >title="准則與最佳作法"
->abstract="檢閱使用「內容轉移」工具的准則和最佳實務，包括修訂清除任務、磁碟空間考量事項等。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="使用內容轉移工具的重要考量"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Important Considerations for using User Mapping Tool"
+>abstract="查看使用內容傳輸工具的指導原則和最佳做法，包括修訂版清理任務、磁碟空間注意事項等。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="使用內容傳輸工具的重要注意事項"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="使用用戶映射工具的重要注意事項"
 
 請依照以下章節了解使用「內容轉移工具」的准則與最佳作法：
 
@@ -36,50 +36,50 @@ ht-degree: 25%
    * *資料存放區大小*：「內容轉移工具」會使用 64GB，即使實際資料存放區較大亦然。
    * *節點存放區大小*：區段存放區目錄大小或 MongoDB 資料庫大小。因此，若區段存放區的大小為 20GB，則需要的可用磁碟空間為 94GB。
 
-* 需要在整個內容轉移活動中維護移轉集，以支援追加內容。 由於在內容轉移活動期間，一次最多可建立並維護10個移轉集，因此建議您據以劃分內容存放庫，以確保移轉集不會用完。
+* 需要在整個內容傳輸活動中維護遷移集以支援內容補充。 由於在內容傳輸活動期間一次最多可以建立和維護十個遷移集，因此建議相應地分拆內容儲存庫，以確保不會用完遷移集。
 
-## 使用內容轉移工具前的重要考量 {#important-considerations}
+## 使用內容傳輸工具之前的重要注意事項 {#important-considerations}
 
 請跟隨以下章節，了解執行「內容轉移工具」時的重要考量：
 
-* 「內容轉移工具」的最低系統需求為 AEM 6.3 + 和 JAVA 8。如果您使用較低的AEM版本，您需要將內容存放庫升級至AEM 6.5，才能使用「內容轉移工具」。
+* 「內容轉移工具」的最低系統需求為 AEM 6.3 + 和 JAVA 8。如果您的版AEM本較低，則需要將內容儲存庫升級AEM到6.5以使用內容傳輸工具。
 
-* 必須在AEM環境上設定Java，以便 `java` 命令可由啟動AEM的使用者執行。
+* 必須在環境上配AEM置Java，以便 `java` 命令可由啟動的用戶執AEM行。
 
-* 安裝1.3.0版時，建議解除安裝舊版「內容轉移工具」，因為工具的架構有重大變更。 使用1.3.0時，您也應建立新的移轉集，並對新移轉集重新執行提取和擷取。
+* 建議在安裝1.3.0版時卸載舊版內容傳輸工具，因為該工具中存在重大體系結構更改。 使用1.3.0，您還應建立新遷移集，並重新運行新遷移集的提取和接收。
 
-* 「內容轉移工具」可搭配下列類型的資料存放區使用：檔案資料儲存、S3資料儲存、共用S3資料儲存和Azure Blob儲存資料儲存。
+* 內容傳輸工具可用於以下類型的資料儲存：檔案資料儲存、S3資料儲存、共用的S3資料儲存和Azure Blob儲存資料儲存。
 
-* If you are using a *Sandbox Environment*, ensure that your environment is current and upgraded to the latest release. 如果您使用&#x200B;*生產環境*，則會自動更新。
+* 如果使用 *沙盒環境*，確保您的環境是最新的，並已升級到最新版本。 如果您使用&#x200B;*生產環境*，則會自動更新。
 
-* 若要使用「內容轉移工具」，您必須是來源例項的管理員使用者，且屬於本機AEM **管理員** 群組(在您要將內容傳送至的Cloud Service例項中)。 無權限的使用者將無法擷取能使用「內容轉移工具」的存取 Token。
+* 要使用內容傳輸工具，您需要是源實例上的管理員用戶，並且屬於本AEM地 **管理員** Cloud Service實例中的組。 無權限的使用者將無法擷取能使用「內容轉移工具」的存取 Token。
 
-* 若設定 **擷取前先擦去雲端例項上的現有內容** 選項，該選項將刪除整個現有儲存庫並建立新儲存庫以將內容嵌入。 這表示會重設所有設定，包括目標Cloud Service例項的權限。 對於新增至 **管理員** 群組。 使用者必須重新新增至 **管理員** 群組以擷取CTT的存取權杖。
+* 如果設定 **在接收之前擦除雲實例上的現有內容** 選項，它將刪除整個現有儲存庫並建立新儲存庫以將內容插入。 這意味著它會重置所有設定，包括對目標Cloud Service實例的權限。 對於添加到 **管理員** 組。 用戶必須重新添加到 **管理員** 組以檢索CTT的訪問令牌。
 
-* 存取權杖可能會在特定時段之後或Cloud Service環境升級後定期過期。 如果存取權杖已過期，您將無法連線至Cloud Service執行個體，因此您需要擷取新的存取權杖。 與現有移轉集相關聯的狀態圖示會變更為紅色雲端，當您將游標暫留在紅色雲端上時，會顯示訊息。
+* 訪問令牌可以在特定時間段之後或在升級Cloud Service環境之後定期過期。 如果訪問令牌已過期，您將無法連接到Cloud Service實例，您需要檢索新的訪問令牌。 與現有遷移集關聯的狀態表徵圖將更改為紅色雲，並在懸停在紅色雲上時顯示消息。
 
-* 內容轉移工具(CTT)在將內容從來源例項轉移至目標例項之前，不會執行任何類型的內容分析。 例如，CTT不會在將內容擷取至發佈環境時，區分已發佈和未發佈的內容。 無論移轉集中指定什麼內容，都會擷取至選取的目標例項。 使用者能將移轉集內嵌至製作例項、發佈例項或兩者。 建議將內容移至生產執行個體時，應在來源製作執行個體上安裝CTT，以將內容移至目標製作執行個體，同樣地，請在來源發佈執行個體上安裝CTT，將內容移至目標發佈執行個體。 請參閱 [在發佈執行個體上執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) 以取得更多詳細資訊。
+* 內容傳輸工具(CTT)在將內容從源實例傳輸到目標實例之前不執行任何類型的內容分析。 例如， CTT在將內容插入發佈環境時不會區分已發佈和未發佈的內容。 遷移集中指定的任何內容都將被引入所選目標實例。 用戶能夠將遷移集插入Author實例或Publish實例或兩者。 建議在將內容移動到生產實例時，在源Author實例上安裝CTT以將內容移動到目標Author實例，同樣，在源Publish實例上安裝CTT以將內容移動到目標Publish實例。 請參閱 [在發佈實例上運行內容傳輸工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) 的子菜單。
 
-* 「內容轉移工具」轉移的「使用者」和「群組」只是內容滿足權限所需的使用者和群組。 此 *提取* 進程複製整個 `/home` 移轉集和 *擷取* 進程會複製遷移內容ACL中引用的所有用戶和組。 若要自動將現有的使用者和群組對應至其IMS ID，請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
+* 內容傳輸工具傳輸的用戶和組僅是內容滿足權限所需的用戶和組。 的 *提取* 進程拷貝整個 `/home` 遷移集和 *攝取* 進程複製遷移內容ACL中引用的所有用戶和組。 要自動將現有用戶和組映射到其IMS ID，請參閱 [使用用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)。
 
 * 在提取階段中，「內容轉移工具」會在作用中的 AEM 來源例項上執行。
 
-* 完成 *提取* 內容轉移過程的階段，以及開始 *擷取階段* 將內容內嵌至AEMas a Cloud Service *階段* 或 *生產* 例項中，您需要記錄支援票證，以通知Adobe您有意執行 *擷取* 以便Adobe可確保在 *擷取* 程式。 您需要在計畫前1週登錄支援票證 *擷取* 日期。 一旦您提交了支援票證，支援團隊就會提供後續步驟的指引。 您可以記錄支援票證，並提供下列詳細資訊：
+* 完成 *提取* 內容傳輸過程的階段和開始之前 *攝取階段* 將內容錄入AEMas a Cloud Service *舞台* 或 *生產* 實例，您需要記錄支援票證以通知Adobe您打算運行 *攝取* 以便Adobe能夠確保在 *攝取* 處理。 您需要在計畫前1週記錄支援票證 *攝取* 日期。 一旦您提交了支援票證，支援團隊將提供有關後續步驟的指導。 您可以記錄支援票證，具有以下詳細資訊：
 
-   * 您計劃開始時的確切日期和預計時間（搭配您的時區） *擷取* 階段。
-   * 您打算將資料內嵌至的環境類型（預備或生產）。
-   * 方案ID。
+   * 計畫啟動時的確切日期和估計時間（與時區） *攝取* 。
+   * 您計畫將資料插入的環境類型（階段或生產）。
+   * 程式ID。
 
-* 此 *擷取階段* 針對作者縮小整個製作部署。 這表示在整段擷取程序中，將無法使用製作 AEM。此外，請確定在執行 *擷取* 階段。
+* 的 *攝取階段* 因為作者縮小了整個作者部署。 這表示在整段擷取程序中，將無法使用製作 AEM。還請確保在運行雲管理器 *攝取* 。
 
-* 使用時 `Amazon S3` 或 `Azure` 作為源AEM系統上的資料儲存，應配置資料儲存，以便無法刪除儲存的blob（垃圾收集）。 這樣可確保索引資料的完整性，並且如果未能配置此方式，則可能由於此索引資料的完整性不完整而導致提取失敗。
+* 使用時 `Amazon S3` 或 `Azure` 作為源系統上的數AEM據儲存，應配置資料儲存，以便無法刪除儲存的blob（垃圾收集）。 這確保了索引資料的完整性，如果無法配置這種方式，則可能由於此索引資料的完整性不足而導致提取失敗。
 
-* 如果您使用自訂索引，則必須確保使用 `tika` 節點。 請參閱 [準備新索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) 以取得更多詳細資訊。
+* 如果使用自定義索引，則必須確保使用 `tika` 節點，然後運行內容傳輸工具。 請參閱 [準備新索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) 的子菜單。
 
-* 如果您要追加提取，則必須不要變更現有內容的內容結構，從進行初始提取到執行追加提取的時間皆然。 自初始擷取後，結構已變更的內容無法執行追加。 請務必在移轉程式期間加以限制。
+* 如果要執行頂層提取，則必須不更改現有內容的內容結構，從初始提取到運行頂層提取。 無法對自初始提取後結構已更改的內容運行頂層。 請確保在遷移過程中限制此操作。
 
-* 如果您打算將版本納入移轉集，且要以 `wipe=false`，則您必須停用版本清除，因為「內容轉移工具」中目前有限制。 如果您偏好保持已啟用版本清除功能，並在移轉集中執行追加，則您必須以 `wipe=true`.
+* 如果您打算將版本作為遷移集的一部分包括，並且正在執行 `wipe=false`，則由於內容傳輸工具中的當前限制，您必須禁用版本清除。 如果您希望啟用版本清除功能，並在遷移集中執行頂置操作，則必須將接收操作執行為 `wipe=true`。
 
-## 下一步 {#whats-next}
+## 下一步是什麼 {#whats-next}
 
-了解使用「內容轉移工具」的准則、最佳作法和重要考量後，您現在就可以安裝及使用此工具，從建立移轉集開始。 請參閱 [內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 了解更多。
+一旦您瞭解了使用內容傳輸工具的指導原則、最佳做法和重要注意事項，現在您就可以安裝和使用該工具了，從建立遷移集開始。 請參閱 [內容傳輸工具入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 來瞭解更多資訊。

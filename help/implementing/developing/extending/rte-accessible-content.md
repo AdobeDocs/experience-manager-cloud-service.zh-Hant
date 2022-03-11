@@ -1,6 +1,6 @@
 ---
-title: 配置RTE以建立可訪問的網頁和網站。
-description: 了解如何設定RTF編輯器，以在 [!DNL Adobe Experience Manager]中建立可存取的網站。
+title: 配置RTE以建立可訪問的網頁和站點。
+description: 瞭解如何配置富格文本編輯器以在 [!DNL Adobe Experience Manager]。
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
@@ -12,49 +12,49 @@ ht-degree: 1%
 
 # 設定 RTE 以建立可存取的網站 {#configure-rte-accessible-sites}
 
-[!DNL Adobe Experience Manager] 支援標準協助工具功能，例如影像的替代文字，以及建立內容時可存取的額外功能。內容作者搭配使用RTF編輯器(RTE)的元件來使用這些功能。 功能包括新增替代文字、透過標題和段落元素提供結構資訊等。
+[!DNL Adobe Experience Manager] 支援標準輔助功能，如影像的替代文本，以及建立內容時可訪問的額外功能。 內容作者將這些功能與使用RTE的元件一起使用。 這些功能包括添加Alt-Text、通過標題和段落元素的結構資訊等。
 
-如需了解RTE的典型設定，請參閱[設定RTE](rich-text-editor.md)和[設定RTE外掛程式以用於特定功能](configure-rich-text-editor-plug-ins.md)。
+要瞭解RTE的典型配置，請參見 [配置RTE](rich-text-editor.md) 和 [為特定功能配置RTE插件](configure-rich-text-editor-plug-ins.md)。
 
-使用RTE外掛程式設定來設定及自訂協助工具相關功能。 例如，使用`paraformat`添加額外的塊級語義元素，包括將支援的標題級數擴展到預設提供的基本`H1`、`H2`和`H3`之外。 使用製作使用者介面中的許多元件，即可進行RTF編輯。 常用的元件有文字、影像、下載等。
+使用RTE插件配置配置和自定義與輔助功能相關的功能。 例如，使用 `paraformat` 添加額外的塊級語義元素，包括擴展支援的標題級數超出基本 `H1`。 `H2` 和 `H3` 預設提供。 富格文本編輯可以使用創作用戶介面中的許多元件。 常用的元件有文本、影像、下載等。
 
-RTE功能可在許多元件中使用。 主要元件為`Text`元件。
+RTE功能可在許多元件中使用。 主要元件是 `Text` 元件。
 
-對於[!DNL Experience Manager]中的`Text`元件，以下螢幕截圖顯示啟用了一系列插件的RTF編輯器，包括`paraformat`:
+對於 `Text` 元件 [!DNL Experience Manager]，以下螢幕快照顯示啟用了一系列插件的富格文本編輯器，包括 `paraformat`:
 
-![全螢幕模式的RTE文字元件](assets/rte-toolbar-full-screen-mode.png)
+![RTE全屏模式下的文本元件](assets/rte-toolbar-full-screen-mode.png)
 
-## 設定外掛程式功能 {#configuring-the-plugin-features}
+## 配置插件功能 {#configuring-the-plugin-features}
 
-如需設定RTE的指示，請參閱[設定RTF編輯器](rich-text-editor.md)頁面。 文章內容包括：
+有關配置RTE的說明，請參見 [配置RTF編輯器](rich-text-editor.md) 的子菜單。 文章包括：
 
-* [外掛程式及其功能](rich-text-editor.md#aboutplugins)
+* [插件及其功能](rich-text-editor.md#aboutplugins)
 * [配置位置](rich-text-editor.md#understand-the-configuration-paths-and-locations)
-* [啟動外掛程式並設定features屬性](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
-* [設定RTE的其他功能](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
+* [激活插件並配置features屬性](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
+* [配置RTE的其他功能](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-若要啟用外掛程式的幾項或所有功能，請在CRXDE Lite中適當的`rtePlugins`子分支中設定外掛程式。
+要激活插件的幾項或所有功能，請在適當的 `rtePlugins` CRXDE Lite支行。
 
-![CRXDE Lite顯示範例rtePlugin](assets/example-rteplugin-crxde-lite.png)
+![CRXDE Lite顯示示例rtePlugin](assets/example-rteplugin-crxde-lite.png)
 
-### 指定RTE選擇欄位中可用段落格式的示例 {#example-specifying-paragraph-formats-available-in-rte-selection-field}
+### 指定RTE選擇欄位中可用的段落格式的示例 {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
 新的語義塊格式可供選擇。
 
-1. 視您的RTE而定，決定並導覽至[設定位置](rich-text-editor.md#understand-the-configuration-paths-and-locations)。
-1. [啟用外掛程](rich-text-editor.md) 式 [以啟用段落選取欄位](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)。
-1. [在段落選擇欄位中指定您要使用的格式](rich-text-editor.md)。
-1. 然後，內容作者可從RTE中的選取欄位使用段落格式。
+1. 根據RTE，確定並導航到 [配置位置](rich-text-editor.md#understand-the-configuration-paths-and-locations)。
+1. [啟用段落選擇欄位](rich-text-editor.md) 按 [激活插件](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)。
+1. [指定段落選擇欄位中要使用的格式](rich-text-editor.md)。
+1. 然後，從RTE的選擇欄位中，內容作者可以使用段落格式。
 
-使用段落格式選項在RTE中可用的結構元素，[!DNL Experience Manager]為開發可訪問內容提供了良好的基礎。 內容作者無法使用RTE來設定字型大小、顏色或其他相關屬性的格式，因而無法建立內嵌格式。 相反地，作者可以選取適當的結構元素，例如標題，並使用從樣式選項中選取的全域樣式，以確保簡潔的標籤，以及為使用自己的樣式表和正確結構化內容瀏覽的使用者提供更多選項。
+在RTE中通過段落格式選項提供結構元素的情況下， [!DNL Experience Manager] 為可訪問內容的開發提供了良好的基礎。 內容作者不能使用RTE格式化字型大小、顏色或其他相關屬性，從而阻止建立內嵌格式。 相反，作者可以選擇適當的結構元素，如標題，並使用從「樣式」選項中選擇的全局樣式，以確保使用自己的樣式表和正確結構化內容瀏覽的用戶具有乾淨的標籤和更好的選項。
 
-## 使用源編輯功能 {#use-of-the-source-edit-feature}
+## 源編輯功能的使用 {#use-of-the-source-edit-feature}
 
-在某些情況下，內容作者會發現必須檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE內建立的內容片段可能需要更多標籤，以確保符合WCAG 2.0。這可以透過RTE的[來源edit](rich-text-editor.md#aboutplugins)選項完成。 您可以在`misctools`外掛程式](rich-text-editor.md#aboutplugins)上指定[`sourceedit`功能。
+在某些情況下，內容作者將發現有必要檢查和調整使用RTE建立的HTML原始碼。 例如，在RTE中建立的某一內容可能需要更多標籤，以確保符合WCAG 2.0。這可以通過 [源編輯](rich-text-editor.md#aboutplugins) 選項。 可以指定 [`sourceedit` 功能 `misctools` 插件](rich-text-editor.md#aboutplugins)。
 
 >[!CAUTION]
 >
->請小心使用`sourceedit`功能。 任何輸入錯誤和不支援的功能都可能導致問題。
+>使用 `sourceedit` 特寫。 任何鍵入錯誤和不受支援的功能都可能導致問題。
 
 <!--
 TBD ENGREVIEW: Is this only applicable to Classic UI? 
@@ -147,6 +147,6 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 
 >[!MORELIKETHIS]
 >
->* [WCAG標準快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
-* [如何在Experience Manager中建立可存取的內容](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
+>* [WCAG標準的快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
+>* [如何在Experience Manager中建立可訪問內容](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 

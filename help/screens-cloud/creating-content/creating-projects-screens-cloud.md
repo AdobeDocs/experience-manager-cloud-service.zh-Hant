@@ -1,64 +1,64 @@
 ---
-title: 在Screens中建立專案作為Cloud Service
-description: 本頁面說明如何在Screens中以Cloud Service形式建立專案。
-source-git-commit: d9d38f5949c9590ae68276452eea28044c7e5155
+title: 在螢幕中建立項目as a Cloud Service
+description: 此頁介紹如何在螢幕as a Cloud Service中建立項目。
+exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
+# 在螢幕中建立和管理項目as a Cloud Service {#creating-project-screens-cloud}
 
-# 在Screens中建立和管理專案作為Cloud Service {#creating-project-screens-cloud}
-
-在Screens as aCloud Service中實作新專案的第一步，是建立新專案。
+在螢幕as a Cloud Service中實施新項目的第一步是建立新項目。
 
 ## 目標 {#objective}
 
-本檔案可協助您了解如何在Screens內容提供者中建立新的AEM Screens專案。 閱讀後，您應該就範圍而言，能夠建立AEM Screens專案。
+此文檔幫助您瞭解如何在螢幕內容提供程式中建立新的AEM Screens項目。 讀完之後，你應該能夠建立你的AEM Screens項目，在範圍上。
 
-## 建立新專案 {#create-new-project}
+## 建立新項目 {#create-new-project}
 
-請依照下列步驟，在Screens中以Cloud Service形式建立新專案：
+按照以下步驟在螢幕as a Cloud Service中建立新項目：
 
-1. 導覽至「Screens內容提供者」。
+1. 導航到「螢幕內容提供程式」。
 
    >[!NOTE]
-   >請參閱[使用螢幕內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) ，了解如何存取螢幕內容提供者以建立您的專案。
+   >請參閱 [使用螢幕內容提供程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) 瞭解如何訪問螢幕內容提供程式以建立項目。
 
-1. 按一下動作列右上角的&#x200B;**建立螢幕專案** 。
+1. 按一下 **建立螢幕項目** 按鈕。
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
-1. 在&#x200B;**建立螢幕專案**&#x200B;對話方塊中，輸入專案的&#x200B;**標題**，例如&#x200B;*FirstDigitalExperience*。
+1. 輸入 **標題** 你的項目 **建立螢幕項目** 對話框，例如， *FirstDigitalExperience*。
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
-   >根據您選擇的標題，在&#x200B;**建立螢幕專案**&#x200B;對話方塊中自動填入&#x200B;**名稱**&#x200B;欄位。
+   >的 **名稱** 在 **建立螢幕項目** 對話框。
 
-1. 按一下&#x200B;**Save**。 您會在「螢幕內容提供者」中看到Screens專案，標題為&#x200B;*FirstDigitalExperience*。 您會在「Screens內容提供者」中看到您的專案，其中包含兩個資料夾，標題為&#x200B;**Locations**&#x200B;和&#x200B;**Channels**。
+1. 按一下 **保存**。 您將看到您的螢幕項目，標題為 *FirstDigitalExperience* 在螢幕內容提供程式中。 您將在螢幕內容提供程式中看到您的項目，其中兩個資料夾的標題為： **位置** 和 **頻道**。
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
-   現在您已設定AEM Screens專案，可以開始將管道和位置新增至專案。
+   現在，您已經設定了AEM Screens項目，可以開始向項目添加渠道和位置。
 
-### 刪除現有專案 {#deleting-project}
+### 刪除現有項目 {#deleting-project}
 
-您可以將現有的畫面刪除為Cloud Service專案。
-請依照下列步驟，從Screens內容提供者中刪除現有專案：
+您可以刪除現有螢幕as a Cloud Service項目。
+按照以下步驟從螢幕內容提供程式中刪除現有項目：
 
-1. 導覽至「Screens內容提供者」。
-1. 選取您要刪除的專案。
-1. 按一下動作列中的&#x200B;**Delete**&#x200B;以刪除專案。
+1. 導航到「螢幕內容提供程式」。
+1. 選擇要刪除的項目。
+1. 按一下 **刪除** 的子菜單。
 
    ![](/help/screens-cloud/assets/create-content/create-project5.png)
 
-1. 按一下&#x200B;**Delete**&#x200B;以確認刪除專案。
+1. 按一下 **刪除** 確認刪除項目。
 
    >[!NOTE]
-   >您可以選取多個專案，因此可以在單一步驟中刪除多個專案。
+   >您可以選擇多個項目，因此可以在一個步驟中刪除多個項目。
 
-## 下一步 {#whats-next}
+## 下一步是什麼 {#whats-next}
 
-現在您已設定AEM Screens專案，可以建立新頻道並新增內容至頻道。 請參考[建立和管理頻道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en)，了解如何建立和管理頻道中的內容。
+現在，您已經設定了AEM Screens項目，您可以建立新頻道並向頻道添加內容。 請參閱 [建立和管理渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en) 瞭解如何在渠道中建立和管理內容。

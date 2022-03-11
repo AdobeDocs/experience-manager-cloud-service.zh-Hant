@@ -2,13 +2,13 @@
 title: 《 2022.2.0版中遷移工具AEM發行說明》
 description: 《 2022.2.0版中遷移工具AEM發行說明》
 feature: Release Information
-source-git-commit: 8876702f1a172282fd1ff46387ade2a45e187fed
+exl-id: b1cd871d-c71e-4902-a97e-2c859f6a4da4
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 6%
 
 ---
-
 
 # 《 2022.2.0版中遷移工具AEM發行說明》 {#release-notes}
 
@@ -44,4 +44,3 @@ ht-degree: 6%
 ### 錯誤修正 {#bug-fixes-ctt}
 
 * 某些用戶未映射，因為用戶映射區分大小寫。 這個已經修復了。 用戶映射不再區分大小寫。
-

@@ -1,34 +1,34 @@
 ---
-title: 自訂網站範本和主題
-description: 了解如何使用AEM網站範本預先定義網站結構和初始內容，以及如何使用主題來定義網站樣式，以便快速建立網站。
+title: 自定義網站模板和主題
+description: 瞭解如AEM何使用站點模板來預定義站點結構和初始內容，以及如何使用主題來定義站點樣式以允許您快速建立站點。
 feature: Administering
 role: Admin
-source-git-commit: 0babdc80421c8a2a4be55d005884475dcebeda84
+exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 1%
 
 ---
 
+# 自定義網站模板和主題 {#customizing-site-templates-themes}
 
-# 自訂網站範本和主題 {#customizing-site-templates-themes}
-
-了解如何使用AEM網站範本預先定義網站結構和初始內容，以及如何使用主題來定義網站樣式，以便快速建立網站。
+瞭解如AEM何使用站點模板來預定義站點結構和初始內容，以及如何使用主題來定義站點樣式以允許您快速建立站點。
 
 ## 概覽 {#overview}
 
-為了讓AEM管理員快速建立符合業務需求的網站，AEM支援使用網站範本和網站主題來建立新網站。
+為了讓管理員AEM快速建立適應業務需求的站點，AEM支援使用站點模板和站點主題建立新站點。
 
-* 安 **AEM網站範本** 通常包含基本網站內容和結構，以及網站樣式資訊（稱為網站主題），以快速啟動新網站。 範本功能強大，因為可重複使用且可自訂。 由於AEM安裝中提供多個範本，因此您可以彈性建立不同的網站，以符合各種業務需求。
-* 安 **AEM網站主題** 是包含CSS、JavaScript和靜態資源的套件，可定義AEM網站的樣式並符合AEM網站主題的結構。
+* 安 **AEM站點模板** 通常包含基站內容和結構以及網站樣式資訊，即網站主題，以便快速啟動新網站。 模板功能強大，因為它們可重複使用，而且可自定義。 而且，由於您可以在安裝中使用多AEM個模板，因此您可以靈活地建立不同的站點以滿足各種業務需求。
+* 安 **AEM網站主題** 是包含CSS、JavaScript和靜態資源的包，這些資源定義了站點的樣AEM式並符合站點主AEM題的結構。
 
 ## 其他資源 {#additional-resources}
 
-因為 [網站建立](/help/sites-cloud/administering/site-creation/create-site.md) 一般由AEM管理員負責，請參閱管理檔案，取得自訂網站範本和主題的詳細資訊。
+因為 [站點建立](/help/sites-cloud/administering/site-creation/create-site.md) 通常由管理員負責，請AEM參閱管理文檔，瞭解有關自定義網站模板和主題的詳細資訊。
 
-* [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)  — 了解如何使用AEM網站範本預先定義網站結構和初始內容，以便快速建立新網站。
-* [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)  — 了解如何使用AEM網站主題自訂網站的樣式和設計。
+* [站點模板](/help/sites-cloud/administering/site-creation/site-templates.md)  — 瞭解如AEM何使用站點模板來預定義站點結構和初始內容，以便您快速建立新站點。
+* [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)  — 瞭解如AEM何使用網站主題來自定義網站的樣式和設計。
 
 >[!TIP]
 >
->從範本建立網站及自訂其主題的程式的端對端說明，位於 [快速網站建立歷程。](/help/journey-sites/quick-site/overview.md)
+>有關從模板建立站點和自定義其主題的過程的端到端說明，請參見 [快速建立站點行程。](/help/journey-sites/quick-site/overview.md)

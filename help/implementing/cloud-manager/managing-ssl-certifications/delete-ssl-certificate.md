@@ -1,6 +1,6 @@
 ---
-title: 刪除SSL憑證 — 管理SSL憑證
-description: 刪除SSL憑證 — 管理SSL憑證
+title: 刪除SSL證書 — 管理SSL證書
+description: 刪除SSL證書 — 管理SSL證書
 exl-id: 43f66871-cca4-4709-95d0-68aa715c0da2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -9,19 +9,19 @@ ht-degree: 0%
 
 ---
 
-# 刪除SSL證書{#deleting-an-ssl-certificate}
+# 刪除SSL證書 {#deleting-an-ssl-certificate}
 
 >[!IMPORTANT]
->從Cloud Manager移除憑證是無法還原的永久性動作。 最佳作法是先將任何必要的SSL檔案儲存在本機，再在Cloud Manager使用者介面中刪除。
+>從雲管理器中刪除證書是無法撤消的永久操作。 最佳做法是，在Cloud Manager用戶介面中刪除任何必要的SSL檔案之前，將其保存在本地。
 
-使用者必須處於業務擁有者或部署管理員角色中，才能刪除Cloud Manager中的SSL憑證。 Cloud Manager不會允許您刪除與一或多個網域相關聯的SSL憑證。  刪除SSL憑證之前，必須先刪除所有相關網域。 請參閱[刪除自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)以深入了解。
+用戶必須處於業務所有者或部署管理器角色中，才能刪除雲管理器中的SSL證書。 Cloud Manager不允許您刪除具有一個或多個與其關聯的域的SSL證書。  刪除SSL證書之前必須刪除所有關聯的域。 請參閱 [刪除自定義域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) 來瞭解更多資訊。
 
-請依照下列步驟刪除SSL憑證：
+按照以下步驟刪除SSL證書：
 
-1. 從&#x200B;**Environments**&#x200B;頁面導覽至&#x200B;**SSL憑證**畫面。
+1. 導航到 **SSL證書** 螢幕 **環境** 的子菜單。
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
-1. 識別列出您要刪除之SSL憑證名稱的列。
-1. 選擇&#x200B;**...**&#x200B;功能表。
-1. 選擇&#x200B;**Delete**。
+1. 標識要刪除的SSL證書名稱所在的行。
+1. 選擇 **...** 的子菜單。
+1. 選擇 **刪除**。
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete01.png)
-1. 從&#x200B;**刪除SSL憑證**&#x200B;對話方塊確認您的提交。
+1. 確認您的提交 **刪除SSL證書** 對話框。

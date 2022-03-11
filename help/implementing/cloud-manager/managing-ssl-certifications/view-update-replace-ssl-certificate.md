@@ -1,6 +1,6 @@
 ---
-title: '檢視更新和取代SSL憑證 — 管理SSL '
-description: 檢視更新和取代SSL憑證 — 管理SSL憑證
+title: '查看更新和替換SSL證書 — 管理SSL '
+description: 查看更新和替換SSL證書 — 管理SSL證書
 exl-id: 662494b1-a710-4822-97ef-057043ef89ba
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -9,40 +9,40 @@ ht-degree: 0%
 
 ---
 
-# 查看和更新和替換SSL證書{#view-update-replace-ssl-certificate}
+# 查看、更新和替換SSL證書  {#view-update-replace-ssl-certificate}
 
-## 查看和更新SSL證書{#view-update}
+## 查看和更新SSL證書 {#view-update}
 
-何時要在Cloud Manager UI中使用這些選項：
+何時在雲管理器UI中使用這些選項：
 
-* 現有憑證即將過期。 使用者已與憑證供應商續約憑證，並想要取代即將過期的現有憑證。 注意：只有具有適當權限的使用者才能進行更新。
-* 使用&#x200B;**檢視與更新**&#x200B;功能表，只需檢視SSL憑證詳細資訊即可。
-* 或者，您也可以變更已用來從此畫面參考憑證的名稱。
-* 只有具有適當權限的使用者才能進行更新。
+* 現有證書即將過期。 用戶已使用證書供應商續訂證書，並希望替換即將過期的現有證書。 注意：只有具有相應權限的用戶才能進行更新。
+* 使用 **查看和更新** 的子菜單。
+* 或者，可以更改已用於從此螢幕引用證書的名稱。
+* 只有具有相應權限的用戶才能進行更新。
 
 
-## 更新SSL憑證即將過期{#update-ssl-certificate}
+## 正在更新SSL證書即將過期 {#update-ssl-certificate}
 
-當憑證過期時，任何與過期憑證搭配使用的網域都將無法繼續運作。 若要更新過期的憑證，您必須依照下列步驟操作。 這將確保您的網域可繼續正常運作。 新增憑證後，網域才能正常運作，必須以新憑證更新自訂網域名稱。 如需詳細資訊，請參閱[檢視和更新及取代自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) 。
+當證書過期時，任何與過期證書一起使用的域將不再工作。 要更新過期的證書，必須遵循下面列出的步驟。 這將確保您的域繼續按需要工作。 添加新證書將需要使用新證書更新自定義域名，然後域才能按需要工作。 請參閱 [查看、更新和替換自定義域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) 的子菜單。
 
-請依照下列步驟更新SSL憑證：
+按照以下步驟更新SSL證書：
 
 >[!NOTE]
->使用者必須處於業務擁有者或部署管理員角色中，才能更新Cloud Manager中的SSL憑證。
+>用戶必須處於業務所有者或部署管理器角色中，才能更新雲管理器中的SSL證書。
 
-1. 從&#x200B;**Environments**&#x200B;頁面導覽至「SSL憑證」畫面。
-1. 您會看到一個表格，其中列顯示已成功安裝在程式中的每個SSL憑證。
-1. 可通過選擇感興趣行最右端的三個按鈕來訪問每行的菜單選項。
-1. 選擇&#x200B;**查看和更新**。 您可從此處檢視憑證詳細資訊。
+1. 從導航到「SSL證書」螢幕 **環境** 的子菜單。
+1. 您將看到一個表，其中每個SSL證書都已成功安裝在您的程式中。
+1. 通過選擇感興趣行最右端的三個按鈕，可以訪問每行的菜單選項。
+1. 選擇 **查看和更新**。 可以從此處查看證書詳細資訊。
 
-## 替換SSL證書{#replace-ssl-certificate}
+## 替換SSL證書 {#replace-ssl-certificate}
 
-請依照下列步驟取代SSL憑證：
+按照以下步驟替換SSL證書：
 
-1. 從&#x200B;**Environments**&#x200B;頁面導覽至「SSL憑證」畫面。
-1. 您會看到一個表格，其中列顯示已成功安裝在程式中的每個SSL憑證。
-1. 可通過選擇感興趣行最右端的三個按鈕來訪問每行的菜單選項。
-1. 選擇&#x200B;**查看和更新**。
-1. 若要取代憑證，請將新內容貼入適當的輸入欄位，然後按一下「**儲存**」。 您需要解決任何可能出現的錯誤。
+1. 從導航到「SSL證書」螢幕 **環境** 的子菜單。
+1. 您將看到一個表，其中每個SSL證書都已成功安裝在您的程式中。
+1. 通過選擇感興趣行最右端的三個按鈕，可以訪問每行的菜單選項。
+1. 選擇 **查看和更新**。
+1. 要替換證書，請將新內容貼上到相應的輸入欄位中，然後按一下 **保存**。 您需要解決可能出現的任何錯誤。
 
-   請參閱[憑證錯誤](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-error)以處理常見的問題。
+   請參閱 [證書錯誤](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-error) 解決常見問題。

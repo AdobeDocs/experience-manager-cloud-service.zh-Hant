@@ -1,7 +1,7 @@
 ---
-title: 參考最適化表單片段
+title: 參考自適應格式片段
 seo-title: Reference Adaptive Form Fragments
-description: 'AEM Forms提供最適化表單片段，供您作為資產來快速建立表單。 '
+description: 'AEM Forms提供了可用作資產的自適應表單片段，以快速建立表單。 '
 seo-description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create a form quickly.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -16,30 +16,30 @@ ht-degree: 1%
 ---
 
 
-# 參考最適化表單片段 {#reference-adaptive-form-fragments}
+# 參考自適應格式片段 {#reference-adaptive-form-fragments}
 
-適用性表單片段是一組欄位，或是包含一組欄位的面板，可供您在建立表單時使用。 它可讓您輕鬆快速地建立表單。 您可以使用側欄中的資產瀏覽器，將適用性表單片段拖放至表單中，也可以在表單編輯器中編輯。
+自適應表單片段是一組欄位，或是包含一組欄位的面板，在建立表單時可使用這些欄位。 它使您能夠輕鬆快速地建立表單。 可以使用邊欄中的資產瀏覽器將自適應表單片段拖放到表單中，並可以在表單編輯器中對其進行編輯。
 
-針對適用性Forms作者， [!DNL AEM Forms] 套件 [[!DNL AEM FORMS] 參考片段](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). 包含下列片段：
+對於自適應Forms作者，在 [!DNL AEM Forms] 包 [[!DNL AEM FORMS] 引用片段](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS)。 它包括以下片段：
 
 * 地址
 * 連絡人資訊
 * 信用卡資訊
-* 當前就業
-* 相依項資訊
-* 就業史
-* 收支
+* 當前雇傭
+* 依存對象資訊
+* 就業歷史記錄
+* 收入和支出
 * 名稱
-* 條款與條件
-* 使用手寫的條款與條件
+* 條款和條件
+* 使用Scribble的條款和條件
 
-安裝套件時，會在Forms與檔案下方建立包含參考片段的參考片段資料夾。 如需安裝套件，請參閱 [透過Cloud Manager和Package Manager部署內容套件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) 和 [如何使用套件](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+安裝包時，將在「Forms和文檔」下建立包含引用片段的「引用片段」資料夾。 有關安裝軟體包的資訊，請參見 [通過雲管理器和包管理器部署內容包](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) 和 [如何使用包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
 
-![列出的所有片段](assets/ootb-frags.png)
+![列出的所有碎片](assets/ootb-frags.png)
 
 ## 地址 {#address}
 
-包括用於指定郵寄地址的欄位。 可用欄位包括街道地址、郵遞區號、城市、州和國家。 此外也包含預先設定的Web服務，會針對指定的美國郵遞區號填入城市和州。
+包括用於指定郵寄地址的欄位。 可用欄位包括街道地址、郵遞區號、城市、州和國家/地區。 它還包括預配置的Web服務，用於填充指定的美國郵遞區號的城市和州。
 
 ![地址片段](assets/address.png)
 
@@ -59,10 +59,10 @@ ht-degree: 1%
 
 ## 信用卡資訊 {#credit-card-information}
 
-包括用於捕獲信用卡資訊的欄位，這些資訊可用於處理付款。
+包括用於捕獲可用於處理付款的信用卡資訊的欄位。
 [ ![信用卡資訊片段](assets/cc-info.png)](assets/cc-info-1.png)
 
-## 當前就業 {#current-employment}
+## 當前雇傭 {#current-employment}
 
 包括用於獲取當前雇傭詳細資訊的欄位，如雇傭狀態、雇傭欄位、指定、組織和加入日期。
 
@@ -72,31 +72,31 @@ ht-degree: 1%
 
 ](assets/current-emp-1.png)-->
 
-## 相依項資訊 {#dependents-information}
+## 依存對象資訊 {#dependents-information}
 
-包括欄位，以指定一個或多個相依項的相關資訊，如其名稱、關係和年齡，以表格格式顯示。
+包含以表格格式指定一個或多個依存對象資訊的欄位，如其名稱、關係和年齡。
 
-![相依資訊片段](assets/dependents-info.png)
+![從屬資訊片段](assets/dependents-info.png)
 
 <!--[Click to enlarge
 
 ](assets/dependents-info-1.png)-->
 
-## 就業史 {#employment-history}
+## 就業歷史記錄 {#employment-history}
 
-包括用於捕獲雇傭歷史記錄的欄位。 它允許新增多個組織。
+包括用於捕獲雇傭歷史記錄的欄位。 它允許添加多個組織。
 
-![就業歷史片段](assets/emp-history.png)
+![雇傭歷史記錄片段](assets/emp-history.png)
 
 <!--[Click to enlarge
 
 ](assets/emp-history-1.png)-->
 
-## 收支 {#income-expenditure}
+## 收入和支出 {#income-expenditure}
 
-包括用於獲取每月現金流和費用的欄位。 Forms若要求使用者提供財務詳細資料，可使用此片段擷取收入和支出。
+包括用於獲取每月現金流和費用的欄位。 Forms要求用戶提供財務細節，可以利用這一片段獲取收入和支出。
 
-![收入和支出部分](assets/income.png)
+![收入和支出分段](assets/income.png)
 
 <!--[Click to enlarge
 
@@ -104,7 +104,7 @@ ht-degree: 1%
 
 ## 名稱 {#name}
 
-包括用於指定標題、名字、中間名和姓氏的欄位。
+包括用於指定標題、名、中名和姓氏的欄位。
 
 ![名稱片段](assets/name.png)
 
@@ -112,21 +112,21 @@ ht-degree: 1%
 
 ](assets/name-1.png)-->
 
-## 條款與條件 {#terms-conditions}
+## 條款和條件 {#terms-conditions}
 
-指定提交表單之前，用戶要接受的條款和條件。
+指定用戶在提交表單之前接受的條款和條件。
 
-![條款與條件片段](assets/tnc.png)
+![條款與條件部分](assets/tnc.png)
 
 <!--[Click to enlarge
 
 ](assets/tnc-1.png)-->
 
-## 使用手寫的條款與條件 {#terms-conditions-with-scribble}
+## 使用Scribble的條款和條件 {#terms-conditions-with-scribble}
 
-指定使用者在提交表單前接受和簽署的條款與條件。
+指定用戶在提交表單之前接受和簽名的條款和條件。
 
-![使用手寫的條款與條件](assets/tnc-scribble.png)
+![使用Scribble的條款和條件](assets/tnc-scribble.png)
 
 <!--[Click to enlarge
 

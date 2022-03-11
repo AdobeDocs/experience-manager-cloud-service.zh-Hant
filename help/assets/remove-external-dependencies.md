@@ -2,13 +2,13 @@
 title: 刪除現有安裝的外部依賴項
 description: 安裝 [!DNL Workfront for Experience Manager enhanced connector]
 feature: Integrations
-source-git-commit: b61915a27968b11472ae458d7be3d73f3449fbbe
+exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
+source-git-commit: d1f7b3ee9394751795273820c17e6feba84f7bf6
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 1%
 
 ---
-
 
 # 刪除現有安裝的外部依賴項 {#remove-external-depedencies}
 
@@ -47,4 +47,3 @@ Adobe建議您為Workfront執行現有增強連接器安裝的配置步驟，以
    ```
 
 1. 執行 [新安裝步驟](workfront-connector-install.md)。
-

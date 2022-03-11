@@ -2,13 +2,13 @@
 title: 《 2022.1.0版中遷移工具AEM發行說明》
 description: 《 2022.1.0版中遷移工具AEM發行說明》
 feature: Release Information
-source-git-commit: 45520a55958030fa053491b921e70da18b16377f
+exl-id: cbd0c316-bda3-48fb-89d6-a8f97bad1970
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 6%
 
 ---
-
 
 # 《 2022.1.0版中遷移工具AEM發行說明》 {#release-notes}
 
@@ -27,4 +27,3 @@ ht-degree: 6%
 ### 錯誤修正 {#bug-fixes-ctt}
 
 * 已更新預設配置，以減少提取期間的執行超時。
-

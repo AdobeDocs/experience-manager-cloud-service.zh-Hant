@@ -2,13 +2,13 @@
 title: 配置生產管線
 description: 瞭解如何配置生產管道以構建代碼並將其部署到生產環境。
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1367'
 ht-degree: 0%
 
 ---
-
 
 # 配置生產管道 {#configure-production-pipeline}
 

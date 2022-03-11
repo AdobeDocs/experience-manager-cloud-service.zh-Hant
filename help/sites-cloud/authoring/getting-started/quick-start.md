@@ -1,6 +1,6 @@
 ---
 title: 製作頁面的快速入門手冊
-description: 快速的高階指南，協助您開始編寫頁面內容
+description: 快速、高級的指南，幫助您開始創作頁面內容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -11,304 +11,307 @@ ht-degree: 5%
 
 # 製作頁面的快速入門手冊 {#quick-guide-to-authoring-pages}
 
-本檔案旨在提供AEM中關鍵頁面編寫動作的高階快速入門手冊。 本文檔：
+本文檔旨在作為中關鍵頁面創作操作的高級快速入門指AEM南。 此文檔：
 
-* 不是全面涵蓋。
+* 不是全面覆蓋。
 * 提供指向詳細文檔的連結。
 
-如需使用AEM製作的完整詳細資訊，請參閱：
+有關創作的完整詳細資訊，請參AEM閱：
 
-* [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [創作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 * [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)
 
-## 一些快速提示{#a-few-quick-hints}
+## 幾個簡短提示 {#a-few-quick-hints}
 
-開始快速入門手冊之前，以下是一小組一般提示和提示，您應謹記這些提示，並分為編寫系統的各個區域。
+在開始快速入門手冊之前，這裡是一小組一般提示和提示，您應記住這些提示和提示，這些提示分為創作系統的各個區域。
 
-### 在站點控制台{#sites-console}中
+### 在站點控制台中 {#sites-console}
 
 * 建立按鈕
 
-   * 此按鈕在許多主控台中都可用 — 所呈現的選項是內容相關的，因此可能會根據情境而有所不同。
+   * 此按鈕在許多控制台中都可用 — 所提供的選項是上下文相關的，因此可能因場景而異。
 
 * 重新排序頁面
 
-   * 這可在[清單檢視](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)中完成。 將應用這些更改，並在其他視圖中可見。
+   * 可以在 [清單視圖](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)。 將應用這些更改，並在其他視圖中可見。
 
-### 頁面編寫{#page-authoring}
+### 頁面創作 {#page-authoring}
 
-* 導覽連結
+* 導航連結
 
-   * **處於「編輯」模** 式時，無法導覽 **** 連結。若要導覽至連結，您需使用下列任一項來預覽頁面](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages):[
+   * **連結不可用於導航** 當您進入 **編輯** 的子菜單。 要使用需要的連結導航 [預覽頁面](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) 使用其中之一：
 
       * [預覽模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [以已發佈狀態檢視](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* 版本不會從頁面編輯器啟動/建立。 現在可從&#x200B;**Sites**&#x200B;控制台（透過&#x200B;**Create**&#x200B;或[Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)選取資源完成）執行此操作。
+* 版本未從頁面編輯器啟動/建立。 現在從 **站點** 控制台(通過 **建立** 或 [時間軸](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) )。
 
 >[!NOTE]
 >
->有許多鍵盤快速鍵可讓編寫體驗更輕鬆。
+>有許多鍵盤快捷方式可讓創作體驗更輕鬆。
 >
->* [編輯頁面時的鍵盤快速鍵](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-* [控制台的鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+>* [編輯頁面時的鍵盤快捷鍵](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+>* [控制台的鍵盤快捷鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
-### 查找頁面{#finding-your-page}
+### 查找頁面 {#finding-your-page}
 
-尋找頁面有各種方面；您可以導覽及/或搜尋：
+查找頁面有多方面；您可以導航和/或搜索：
 
-1. 開啟&#x200B;**Sites**&#x200B;主控台(使用[全域導覽](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)中的&#x200B;**Sites**&#x200B;選項 — 當您選取Adobe Experience Manager連結（左上角）時，就會觸發（下拉式）。
+1. 開啟 **站點** 控制台(使用 **站點** 的上界 [全局導航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)  — 當您選擇Adobe Experience Manager連結（左上）時，將觸發（下拉）該連結。
 
-1. 點選/按一下適當的頁面，以向下導覽樹狀結構。 頁面資源的呈現方式取決於您使用的檢視 — [卡片、清單或欄](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
+1. 按一下/按一下相應頁面，在樹下導航。 頁面資源的表示方式取決於您使用的視圖 —  [卡、清單或列](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
-   ![檢視選取範圍下拉式清單](/help/sites-cloud/authoring/assets/views.png)
+   ![「查看選擇」下拉清單](/help/sites-cloud/authoring/assets/views.png)
 
-1. 使用標題](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)中的[階層連結向上導覽樹狀結構，讓您返回至選取的位置：
+1. 使用 [標題中的breadcrumb](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)，允許您返回到選定位置：
 
-   ![階層連結下拉式清單](/help/sites-cloud/authoring/assets/breadcrumb.png)
+   ![Breadcrumb下拉清單](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
-1. 您也可以[搜尋](/help/sites-cloud/authoring/getting-started/search.md)以取得頁面。 您可以從顯示的結果中選取您的頁面。
+1. 您也可以 [搜索](/help/sites-cloud/authoring/getting-started/search.md) 的雙曲餘切值。 您可以從顯示的結果中選擇頁面。
 
-   ![搜尋欄位](/help/sites-cloud/authoring/assets/search.png)
+   ![搜索欄位](/help/sites-cloud/authoring/assets/search.png)
 
-### 建立新頁面{#creating-a-new-page}
+### 建立新頁面 {#creating-a-new-page}
 
-若要[建立新頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
+至 [建立新頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
-1. [導覽至](#finding-your-page) 您要建立新頁面的位置。
-1. 使用&#x200B;**Create**&#x200B;圖示，然後從清單中選取&#x200B;**Page**:
+1. [導航到位置](#finding-your-page) 建立新頁面的位置。
+1. 使用 **建立** 表徵圖，然後選擇 **頁面** 清單中：
 
-   ![建立按鈕](/help/sites-cloud/authoring/assets/create.png)
+   ![「建立」按鈕](/help/sites-cloud/authoring/assets/create.png)
 
-1. 這會開啟精靈，引導您收集建立新頁面[時所需的資訊。 ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)按照螢幕說明操作。
+1. 這將開啟嚮導，該嚮導將指導您收集在 [建立新頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)。 按照螢幕上的說明進行操作。
 
-### 選擇您的頁面以執行進一步操作{#selecting-your-page-for-further-action}
+### 選擇頁面以執行進一步操作 {#selecting-your-page-for-further-action}
 
-您可以選取頁面，以便對其採取動作。 選取頁面會自動更新工具列，以顯示與該資源相關的動作。
+您可以選擇頁面，以便對其執行操作。 選擇頁面將自動更新工具欄，以便顯示與該資源相關的操作。
 
-如何選取頁面取決於您在主控台中使用的檢視：
+如何選擇頁面取決於您在控制台中使用的視圖：
 
 1. 欄檢視:
 
-   * 點選/按一下所需資源的縮圖 — 縮圖將會與勾號重疊，以顯示其已選取。
+   * 點擊/按一下所需資源的縮略圖 — 縮略圖將覆蓋一個勾選項，以顯示其已被選中。
 
 1. 清單檢視:
 
-   * 點選/按一下所需資源的縮圖 — 縮圖將會與勾號重疊，以顯示其已選取。
+   * 點擊/按一下所需資源的縮略圖 — 縮略圖將覆蓋一個勾選項，以顯示其已被選中。
 
 1. 卡片檢視:
 
-   * 通過[選擇所需資源](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)進入選擇模式。 具體操作方式取決於您的設備：
+   * 進入選擇模式 [選擇所需資源](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。 如何執行此操作取決於設備：
 
-      * 在行動裝置上：點選並按住卡片
-      * 在桌上型電腦上：使用刻度表表徵圖表示的[快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions):
-   * 卡片將覆蓋上勾號，以顯示已選取頁面。
+      * 在移動設備上：點擊並握住卡
+      * 在案頭設備上：使用 [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) 表徵圖表示：
+   * 卡片將覆蓋一個勾號，以顯示已選擇頁面。
 
-   ![範例卡片](/help/sites-cloud/authoring/assets/card.png)
+   ![示例卡](/help/sites-cloud/authoring/assets/card.png)
 
-### 快速操作（僅卡片視圖/案頭）{#quick-actions-card-view-desktop-only}
+### 快速操作（僅限卡視圖/案頭） {#quick-actions-card-view-desktop-only}
 
-[提供](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) 快速操作：
+[快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) 可用：
 
-1. [導覽至](#finding-your-page) 您要對其採取動作的頁面。
-1. 將滑鼠指標暫留在代表您所需資源的資訊卡上。 將顯示快速操作：
+1. [導航到該頁](#finding-your-page) 你想對它採取行動。
+1. 將滑鼠指針懸停在表示所需資源的卡上。 將顯示快速操作：
 
-   ![卡片動作](/help/sites-cloud/authoring/assets/card-actions.png)
+   ![卡操作](/help/sites-cloud/authoring/assets/card-actions.png)
 
-### 編輯頁面內容{#editing-your-page-content}
+### 編輯頁面內容 {#editing-your-page-content}
 
-若要編輯頁面：
+要編輯頁面：
 
-1. [導覽至](#finding-your-page) 您要編輯的頁面。
-1. [使用「編輯」(](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing) 鉛筆)圖示開啟頁面進行編輯：
+1. [導航到該頁](#finding-your-page) 編輯。
+1. [開啟頁面進行編輯](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing) 使用「編輯（鉛筆）」表徵圖：
 
-   ![編輯按鈕](/help/sites-cloud/authoring/assets/edit.png)
+   ![「編輯」按鈕](/help/sites-cloud/authoring/assets/edit.png)
 
-   這可透過下列任一項存取：
+   可以從以下任一位置訪問此選項：
 
-   * [適當資源的快速動作（僅限卡片檢視/案頭）](#quick-actions-card-view-desktop-only) 。
-   * 選取[頁面時的工具列](#selecting-your-page-for-further-action)。
+   * [快速操作（僅卡視圖/案頭）](#quick-actions-card-view-desktop-only) 的子目錄。
+   * 工具欄 [已選擇頁面](#selecting-your-page-for-further-action)。
 
-1. 編輯器開啟時，您可以：
+1. 開啟編輯器時，您可以：
 
-   * [將新元件新增至您的](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component) 頁面：
+   * [將新元件添加到頁面](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component) 按：
 
       * 開啟側面板
-      * 選擇元件頁簽（[元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)）
-      * 將所需元件拖曳至頁面上。
+      * 選擇元件頁籤( [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser))
+      * 將所需元件拖到頁面上。
 
       側面板可開啟（和關閉），具有：
 
       ![側面板切換按鈕](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-   * [編輯頁面上現有元](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 件的內容：
+   * [編輯現有元件的內容](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 頁上：
 
-      * 開啟元件工具列，點選或按一下。 使用&#x200B;**Edit**（鉛筆）圖示開啟對話方塊。
-      * 使用點選並按住或按兩下，開啟元件的就地編輯器。 將顯示可用的動作（對於某些元件，這是有限的選取項目）。
-      * 若要查看所有可用動作，請使用以下項目進入全螢幕模式：
+      * 按一下或按一下開啟元件工具欄。 使用 **編輯** （鉛筆）表徵圖以開啟對話框。
+      * 開啟元件的就地編輯器，按一下並按住或按兩下。 將顯示可用操作（對於某些元件，這將是有限的選擇）。
+      * 要查看所有可用操作，請使用：
 
-         ![全螢幕按鈕](/help/sites-cloud/authoring/assets/full-screen.png)
+         ![全屏按鈕](/help/sites-cloud/authoring/assets/full-screen.png)
    * [配置現有元件的屬性](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * 開啟元件工具列，點選或按一下。 使用&#x200B;**Configure**（扳手）圖示開啟對話方塊。
-   * [移動元](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) 件：
+      * 按一下或按一下開啟元件工具欄。 使用 **配置** （扳手）表徵圖以開啟對話框。
+   * [移動元件](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) 其中之一：
 
-      * 將所需元件拖曳至其新位置。
-      * 開啟元件工具列，點選或按一下。 視需要使用&#x200B;**Cut**&#x200B;然後使用&#x200B;**Paste**&#x200B;圖示。
+      * 將所需元件拖到其新位置。
+      * 按一下或按一下開啟元件工具欄。 使用 **剪切** 然後 **貼上** 表徵圖。
    * [複製（並貼上）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 元件：
 
-      * 開啟元件工具列，點選或按一下。 視需要使用&#x200B;**Copy**&#x200B;然後使用&#x200B;**Paste**&#x200B;圖示。
+      * 按一下或按一下開啟元件工具欄。 使用 **複製** 然後 **貼上** 表徵圖。
    >[!NOTE]
-   您可以將&#x200B;**貼上**&#x200B;元件至相同頁面或不同頁面。 如果貼到剪下/復製作業前已開啟的不同頁面，則該頁面需要重新整理頁面。
+   >
+   >你可以 **貼上** 元件到同一頁或不同頁。 如果貼上到剪切/複製操作之前已開啟的其他頁面，則該頁面需要刷新頁面。
 
-   * [](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 刪除元件：
+   * [刪除](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 元件：
 
-      * 開啟元件工具列並點選或按一下，然後使用&#x200B;**Delete**&#x200B;圖示。
-   * [將注](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) 釋新增至頁面：
+      * 使用點擊或按一下開啟元件工具欄，然後使用 **刪除** 表徵圖
+   * [添加註釋](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) 到頁面：
 
-      * 選擇&#x200B;**注釋**&#x200B;模式（語音氣泡圖示）。 使用&#x200B;**Add annotation**（加號）圖示添加註釋。 使用右上角的X退出注釋模式。
+      * 選擇 **注釋** 模式（語音氣泡表徵圖）。 使用 **添加註釋** 表徵圖。 使用右上角的X退出注釋模式。
 
-         ![註解按鈕](/help/sites-cloud/authoring/assets/annotations.png)
-   * [預覽頁面](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) （以查看頁面在發佈環境中的顯示方式）
+         ![「注釋」按鈕](/help/sites-cloud/authoring/assets/annotations.png)
+   * [預覽頁面](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) （查看它在發佈環境中的顯示方式）
 
-      * 從工具欄中選擇&#x200B;**預覽**。
-   * 使用&#x200B;**Edit**&#x200B;下拉選擇器返回到編輯模式（或選擇其他模式）。
+      * 選擇 **預覽** 的子菜單。
+   * 使用 **編輯** 下拉選擇器。
 
    >[!NOTE]
-   若要在內容中使用連結進行導覽，您必須使用[預覽模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)。
+   >
+   >要使用必須使用的內容中的連結導航 [預覽模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)。
 
-### 編輯頁面屬性{#editing-the-page-properties}
+### 編輯頁面屬性 {#editing-the-page-properties}
 
-[編輯頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md)有兩種（主要）方法：
+有兩種（主要）方法 [編輯頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md):
 
-* 從&#x200B;**Sites**&#x200B;控制台：
+* 從 **站點** 控制台：
 
-   1. [導覽至](#finding-your-page) 您要發佈的頁面。
-   1. 從以下任一項中選擇&#x200B;**屬性**&#x200B;表徵圖：
+   1. [導航到該頁](#finding-your-page) 要發佈。
+   1. 選擇 **屬性** 表徵圖：
 
-      * [適當資源的快速動作（僅限卡片檢視/案頭）](#quick-actions-card-view-desktop-only) 。
-      * 選取[頁面時的工具列](#selecting-your-page-for-further-action)。
+      * [快速操作（僅限卡視圖/案頭）](#quick-actions-card-view-desktop-only) 的子目錄。
+      * 工具欄 [已選擇頁面](#selecting-your-page-for-further-action)。
 
       ![「屬性」按鈕](/help/sites-cloud/authoring/assets/properties.png)
 
-   1. 將顯示頁面屬性。 您可以視需要進行更新，然後使用「儲存」來保留這些
+   1. 將顯示頁面屬性。 您可以根據需要進行更新，然後使用「保存」保留這些
 
 
-* 當[編輯頁面](#editing-your-page-content)時：
+* 當 [編輯頁面](#editing-your-page-content):
 
-   1. 開啟&#x200B;**頁面資訊**&#x200B;功能表。
-   1. 選擇&#x200B;**開啟屬性**&#x200B;以開啟用於編輯屬性的對話框。
+   1. 開啟 **頁面資訊** 的子菜單。
+   1. 選擇 **開啟屬性** 開啟對話框以編輯屬性。
 
-      ![頁面資訊按鈕](/help/sites-cloud/authoring/assets/page-information.png)
+      ![「頁面資訊」按鈕](/help/sites-cloud/authoring/assets/page-information.png)
 
-### 發佈您的頁面（或取消發佈）{#publishing-your-page-or-unpublishing}
+### 發佈頁面（或取消發佈） {#publishing-your-page-or-unpublishing}
 
-[發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)的主要方法有兩種（以及取消發佈）:
+有兩種主要方法 [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) （以及取消發佈）:
 
-* 從&#x200B;**Sites**&#x200B;控制台：
+* 從 **站點** 控制台：
 
-   1. [導覽至](#finding-your-page) 您要發佈的頁面。
-   1. 從以下任一項中選擇&#x200B;**快速發佈**&#x200B;表徵圖：
+   1. [導航到該頁](#finding-your-page) 要發佈。
+   1. 選擇 **快速發佈** 表徵圖：
 
-      * [適當資源的快速動作（僅限卡片檢視/案頭）](#quick-actions-card-view-desktop-only) 。
-      * 選取[頁面時的工具列](#selecting-your-page-for-further-action)（也提供[稍後發佈](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)的存取權）。
+      * [快速操作（僅限卡視圖/案頭）](#quick-actions-card-view-desktop-only) 的子目錄。
+      * 工具欄 [已選擇頁面](#selecting-your-page-for-further-action) (還允許訪問 [稍後發佈](/help/sites-cloud/authoring/fundamentals/publishing-pages.md))。
 
-      ![快速發佈按鈕](/help/sites-cloud/authoring/assets/quick-publish.png)
+      ![「快速發佈」按鈕](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 
-* 當[編輯頁面](#editing-your-page-content)時：
+* 當 [編輯頁面](#editing-your-page-content):
 
-   1. 開啟&#x200B;**頁面資訊**&#x200B;功能表。
-   1. 選擇&#x200B;**發佈頁面**。
+   1. 開啟 **頁面資訊** 的子菜單。
+   1. 選擇 **發佈頁面**。
 
 * 從主控台取消發佈頁面只能透過「管理出版物 **** 」選項完成，此選項只能在工具列上使用 (不能透過快速動作)。
 
-   ![「管理出版物」按鈕](/help/sites-cloud/authoring/assets/manage-publication.png)
+   ![「管理發布」按鈕](/help/sites-cloud/authoring/assets/manage-publication.png)
 
-   仍可透過編輯器中的&#x200B;**頁面資訊**&#x200B;功能表使用&#x200B;**取消發佈頁面**&#x200B;選項。
+   的 **取消發佈頁面** 選項 **頁面資訊** 的子菜單。
 
-   如需詳細資訊，請參閱[發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) 。
+   請參閱 [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) 的子菜單。
 
-### 移動、複製和貼上或刪除您的頁面{#move-copy-and-paste-or-delete-your-page}
+### 移動、複製和貼上或刪除頁面 {#move-copy-and-paste-or-delete-your-page}
 
-這些動作皆可由下列項目觸發：
+這些操作都可通過以下方式觸發：
 
-1. [導覽至](#finding-your-page) 您要移動、複製和貼上或刪除的頁面。
+1. [導航到該頁](#finding-your-page) 要移動、複製和貼上或刪除。
 1. 選擇複製 (然後貼上) 、移動或刪除圖示 (視需要)，使用下列任一項：
 
-   * [所需資源的快速動作（僅限卡片檢視/案頭）](#quick-actions-card-view-desktop-only) 。
-   * 選取[頁面時的工具列](#selecting-your-page-for-further-action)。
+   * [快速操作（僅限卡視圖/案頭）](#quick-actions-card-view-desktop-only) 的下界。
+   * 工具欄 [已選擇頁面](#selecting-your-page-for-further-action)。
 
-   然後，根據您的動作：
+   然後，取決於您的操作：
 
    * 複製:
 
-      * 然後，您需要導覽至新位置並貼上。
+      * 然後，您需要導航到新位置並貼上。
    * 移動:
 
-      * 將會開啟精靈，以收集移動頁面所需的資訊。 按照螢幕上的說明操作。
+      * 將開啟嚮導以收集移動頁面所需的資訊。 按照螢幕上的說明進行操作。
    * 刪除:
 
-      * 系統會要求您確認動作。
+      * 系統將要求您確認操作。
    >[!NOTE]
-   刪除不作為快速操作。
+   >
+   >「刪除」不能作為「快速操作」使用。
 
-### 鎖定頁面（然後解鎖）{#locking-your-page-then-unlocking}
+### 鎖定頁面（然後解鎖） {#locking-your-page-then-unlocking}
 
 [鎖定頁面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) ，會使其他作者無法在您執行時使用頁面。您可以找到「鎖定 (和解除鎖定) 」圖示/按鈕：
 
-* 選取[頁面時的工具列](#selecting-your-page-for-further-action)。
-* 編輯頁面時，「頁面資訊」下拉式功能表](#editing-the-page-properties)。[
-* 編輯頁面時（頁面鎖定時），頁面工具列
+* 工具欄 [已選擇頁面](#selecting-your-page-for-further-action)。
+* 的 [「頁面資訊」下拉菜單](#editing-the-page-properties) 編輯頁面時。
+* 編輯頁面時（當頁面被鎖定時），頁面工具欄
 
 例如，鎖表徵圖如下所示：
 
 ![鎖定按鈕](/help/sites-cloud/authoring/assets/lock.png)
 
-### 存取頁面參考{#accessing-page-references}
+### 訪問頁面引用 {#accessing-page-references}
 
-[可在「參](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 考」邊欄中快速存取參考/參考頁面。
+[快速訪問引用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 「參考」(References)導軌中提供「至」(to)/「自」(from)頁面。
 
-1. 使用工具欄表徵圖選擇&#x200B;**引用**（在[選擇您的頁面](#selecting-your-page-for-further-action)之前或之後）:
+1. 選擇 **引用** 使用工具欄表徵圖（之前或之後） [選擇頁面](#selecting-your-page-for-further-action)):
 
-   ![參考視圖選項](/help/sites-cloud/authoring/assets/references.png)
+   ![「參照」視圖選項](/help/sites-cloud/authoring/assets/references.png)
 
-   將顯示參考類型清單：
+   將顯示參考型別清單：
 
-   ![參考檢視](/help/sites-cloud/authoring/assets/references-list.png)
+   ![引用視圖](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. 點選/按一下所需的參照類型，以顯示更多詳細資訊，並（若適用）採取進一步動作。
+1. 點擊/按一下所需的參考型別以顯示更多詳細資訊，並（在適當時）採取進一步的操作。
 
-### 建立頁面版本{#creating-a-version-of-your-page}
+### 建立頁面版本 {#creating-a-version-of-your-page}
 
-若要建立頁面的[version](/help/sites-cloud/authoring/features/page-versions.md):
+建立 [版本](/help/sites-cloud/authoring/features/page-versions.md) 頁面中：
 
-1. 若要開啟「時間軸」邊欄，請使用工具列圖示（在[選取您的頁面](#selecting-your-page-for-further-action)之前或之後）選取&#x200B;**[時間軸](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**:
+1. 要開啟時間軸滑軌，請選擇 **[時間軸](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** 使用工具欄表徵圖（之前或之後） [選擇頁面](#selecting-your-page-for-further-action)):
 
-   ![時間軸視圖選項](/help/sites-cloud/authoring/assets/timeline.png)
+   ![時間線視圖選項](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. 點選/按一下「時間軸」欄右下方的省略號，以顯示額外的按鈕，包括&#x200B;**另存為版本**。
+1. 點擊/按一下「時間軸」列右下角的省略號以顯示額外的按鈕，包括 **另存為版本**。
 
-   ![時間軸檢視](/help/sites-cloud/authoring/assets/timeline-view.png)
+   ![時間軸視圖](/help/sites-cloud/authoring/assets/timeline-view.png)
 
-1. 選擇&#x200B;**另存為版本**，然後選擇&#x200B;**建立**。
+1. 選擇 **另存為版本**，則 **建立**。
 
-### 還原/比較頁面版本{#restoring-comparing-a-version-of-your-page}
+### 恢復/比較頁面版本 {#restoring-comparing-a-version-of-your-page}
 
-還原和/或比較頁面版本時，會使用相同的基本機制：
+恢復和/或比較頁面版本時使用的基本機制相同：
 
-1. 使用工具欄表徵圖選擇&#x200B;**[時間軸](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**（在[選擇您的頁面](#selecting-your-page-for-further-action)之前或之後）:
+1. 選擇 **[時間軸](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** 使用工具欄表徵圖（之前或之後） [選擇頁面](#selecting-your-page-for-further-action)):
 
-   ![時間軸視圖選項](/help/sites-cloud/authoring/assets/timeline.png)
+   ![時間線視圖選項](/help/sites-cloud/authoring/assets/timeline.png)
 
-   如果已儲存您的頁面版本，則時間軸會列出此版本。
+   如果已保存頁面的版本，則會在時間軸中列出。
 
-1. 點選/按一下您要還原的版本 — 這將顯示其他動作按鈕：
+1. 點擊/按一下要恢復的版本 — 這將顯示其他操作按鈕：
 
    * **還原為此版本**
 
-      * 版本將會還原。
+      * 版本將還原。
    * **顯示差異**
 
-      * 將會開啟頁面，並強調顯示差異（兩個版本之間）。
+      * 將開啟頁面，並突出顯示兩個版本之間的差異。

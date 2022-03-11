@@ -143,6 +143,6 @@ AEM 每天 01:00 會執行清除作業，將超過一天的已完成非同步作
 >[!MORELIKETHIS]
 >
 >* [建立及組織頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
-* [大量匯入和匯出資產的中繼資料](/help/assets/metadata-import-export.md)。
-* [透過連線資產共用遠端部署的 DAM 資產](/help/assets/use-assets-across-connected-assets-instances.md)。
+>* [大量匯入和匯出資產的中繼資料](/help/assets/metadata-import-export.md)。
+>* [透過連線資產共用遠端部署的 DAM 資產](/help/assets/use-assets-across-connected-assets-instances.md)。
 

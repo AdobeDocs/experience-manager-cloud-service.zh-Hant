@@ -5,7 +5,7 @@ exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
 workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 2%
    * 可用型號取決於 [**雲配置** 為「資產」資料夾定義的](create-assets-folder.md) 建立內容片段。
    * 如果您收到消息 `We could not find any models`，檢查資產資料夾的配置。
 
-   ![選擇內容片段模型](../assets/content-fragment-model-select.png)
+   ![選取內容片段模型](../assets/content-fragment-model-select.png)
 1. 提供 **標題**。 **說明**, **標籤** 根據需要按一下 **建立**。
 
    ![建立內容片段](../assets/content-fragment-create.png)
