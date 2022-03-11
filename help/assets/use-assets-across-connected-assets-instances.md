@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 9f90c343aad8a8eaa8624d388e31ad21ef5c02f6
+source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
 workflow-type: tm+mt
 source-wordcount: '3770'
 ht-degree: 15%
@@ -249,45 +249,65 @@ Experience Manager顯示 `expired` 「遠程資產內容查找器」中資產狀
 
 ## 常見問題 {#frequently-asked-questions}
 
-### 如果需要使用上的可用資產，是否應配置已連接資產 [!DNL Sites] 部署？
++++**如果需要使用上的可用資產，是否應配置已連接資產 [!DNL Sites] 部署？**
 
 在這種情況下，無需配置連接的資產。 您可以使用 [!DNL Sites] 部署。
 
-### 您何時需要配置「已連接資產」功能？
++++
+
++++**您何時需要配置「已連接資產」功能？**
 
 僅當需要使用遠程DAM部署上的可用資產時，才配置「已連接資產」功能 [!DNL Sites] 部署。
 
-### 多少 [!DNL Sites] 部署配置連接的資產後，您能否連接到遠程DAM部署？
++++
+
++++**多少 [!DNL Sites] 部署配置連接的資產後，您能否連接到遠程DAM部署？**
 
 最多可連接4個 [!DNL Sites] 在配置連接的資產後部署到遠程DAM部署。 有關詳細資訊，請參見 [連接資產體系結構](#connected-assets-architecture)。
 
-### 您可以連接到 [!DNL Sites] 配置連接的資產後部署？
++++
+
++++**您可以連接到 [!DNL Sites] 配置連接的資產後部署？**
 
 您可以將一個遠程DAM部署連接到 [!DNL Sites] 配置連接的資產後進行部署。 有關詳細資訊，請參見 [連接資產體系結構](#connected-assets-architecture)。
 
-### 你能用Dynamic Media的資產 [!DNL Sites] 配置連接的資產後部署？
++++
+
++++**你能用Dynamic Media的資產 [!DNL Sites] 配置連接的資產後部署？**
 
 配置連接的資產後， [!DNL Dynamic Media] 資產於 [!DNL Sites] 以只讀模式部署。 因此，您不能使用 [!DNL Dynamic Media] 處理 [!DNL Sites] 部署。 有關詳細資訊，請參見 [配置站點和Dynamic Media部署之間的連接](#dynamic-media-assets)。
 
-### 您能否使用上遠程DAM部署中的「映像」和「文檔」格式類型的資產 [!DNL Sites] 配置連接的資產後部署？
++++
+
++++**您能否使用上遠程DAM部署中的「映像」和「文檔」格式類型的資產 [!DNL Sites] 配置連接的資產後部署？**
 
 是，您可以使用上的遠程DAM部署中的「映像」和「文檔」格式類型的資產 [!DNL Sites] 配置連接的資產後進行部署。
 
-### 您能否使用上遠程DAM部署的內容片段和視頻資產 [!DNL Sites] 配置連接的資產後部署？
++++
+
++++**您能否使用上遠程DAM部署的內容片段和視頻資產 [!DNL Sites] 配置連接的資產後部署？**
 
 否，您不能使用上遠程DAM部署中的內容片段和視頻資產 [!DNL Sites] 配置連接的資產後進行部署。
 
-### 是否使用上遠程DAM部署的Dynamic Media資產 [!DNL Sites] 配置連接的資產後部署？
++++
+
++++**是否使用上遠程DAM部署的Dynamic Media資產 [!DNL Sites] 配置連接的資產後部署？**
 
 是，您可以配置和使用Dynamic Media映像資產，這些資產來自 [!DNL Sites] 配置連接的資產後進行部署。 有關詳細資訊，請參見 [配置站點和Dynamic Media部署之間的連接](#dynamic-media-assets)。
 
-### 配置連接的資產後，您能否對遠程DAM資產或資料夾執行更新、刪除、更名和移動操作？
++++
+
++++**配置連接的資產後，您能否對遠程DAM資產或資料夾執行更新、刪除、更名和移動操作？**
 
 是的，在配置連接的資產後，您可以對遠程DAM資產或資料夾執行更新、刪除、更名和移動操作。 這些更新在站點部署中自動可用，但有一些延遲。 有關詳細資訊，請參見 [管理遠程DAM中資產的更新](#handling-updates-to-remote-assets)。
 
-### 配置連接的資產後，可以在 [!DNL Sites] 部署並使其在遠程DAM部署中可用？
++++
+
++++**配置連接的資產後，可以在 [!DNL Sites] 部署並使其在遠程DAM部署中可用？**
 
 可以將資產添加到 [!DNL Sites] 但是，這些資產無法用於遠程DAM部署。
+
++++
 
 
 ## 限制和最佳做法 {#tip-and-limitations}
