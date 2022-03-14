@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的維護任務
 description: AEM as a Cloud Service 中的維護任務
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 9177741a57bb16c36b51d1a042538b9cee20a0b8
+source-git-commit: cd48b78383974027d8980397632c395a5958edbf
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '1024'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 ## 配置維護任務
 
-在以前的版本AEM中，您可以使用維護卡（「工具」>「操作」>「維護」）配置維護任務。 對於AEMas a Cloud Service，維護卡不再可用，因此應提交配置以使用雲管理器進行原始碼控制和部署。 Adobe將管理不需要客戶決策的維護任務（例如，資料儲存垃圾收集），而客戶可以配置其他維護任務（請參閱下表）。
+在以前的版本AEM中，您可以使用維護卡（「工具」>「操作」>「維護」）配置維護任務。 對於AEMas a Cloud Service，維護卡不再可用，因此應提交配置以使用雲管理器進行原始碼控制和部署。 Adobe管理那些具有客戶無法配置的設定的維護任務（例如，資料儲存垃圾收集、審核日誌清除、版本清除）。 其他維護任務可由客戶配置，如下表所述。
 
 >[!CAUTION]
 >
@@ -56,14 +56,22 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <tr>
     <td>版本清除</td>
     <td>Adobe</td>
-    <td>完全歸Adobe所有，但在將來，客戶將能夠配置某些參數。</td>
+    <td>為了使作者層保持效能，在 <code>/content</code> 根據以下行為清除儲存庫的節點：<br><ol>
+  <li>刪除30天以上的版本</li>
+  <li>最近30天中的5個版本保留</li>
+  <li>不論上述規則如何，最新版本都將保留。</li>
+</ol><br>注：上述行為自2022年3月14日起對新環境強制執行，並將於2022年4月21日對現有環境（在2022年3月14日之前建立的環境）強制執行。</td>
   </td>
   </tr>
   <tr>
     <td>審核日誌清除</td>
     <td>Adobe</td>
-    <td>完全歸Adobe所有，但在將來，客戶將能夠配置某些參數。</td>
-  </td>
+    <td>為了使作者層保持效能， <code>/content</code> 根據以下行為清除儲存庫的節點：<br><ol>
+  <li>對於複製審核，刪除3天以上的審核日誌</li>
+  <li>對於DAM（資產）審核，刪除30天以上的審核日誌</li>
+  <li>對於頁面審核，刪除3天以上的日誌。<br></li>
+</ol><br>注：上述行為自2022年3月14日起對新環境強制執行，並將於2022年4月21日對現有環境（在2022年3月14日之前建立的環境）強制執行。</td>
+   </td>
   </tr>
   <tr>
     <td>Lucene 二進位清理</td>
