@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 279b263b72f8b99aed3fb55c7625a3b54dd6a370
+source-git-commit: 5e71b569280f486a50da0148b745200a6bbdc991
 workflow-type: tm+mt
-source-wordcount: '3428'
+source-wordcount: '3431'
 ht-degree: 42%
 
 ---
@@ -773,6 +773,7 @@ ht-degree: 42%
       + [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md)
       + [包管理器](/help/implementing/developing/tools/package-manager.md)
       + [連結外部化程式](/help/implementing/developing/tools/externalizer.md)
+      + [儲存庫瀏覽器](/help/implementing/developing/tools/repository-browser.md)
    + 個性化 {#personalization}
       + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
       + [配置ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)

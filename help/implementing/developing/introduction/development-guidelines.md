@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發指導方針
 description: AEM as a Cloud Service 開發指導方針
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
+source-git-commit: 925f451b11e599691ad7dcec27c88913ca6efcdd
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2306'
 ht-degree: 2%
 
 ---
@@ -158,6 +158,8 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 客戶可以在作者層的開發環境中訪問CRXDE lite ，但不能進行階段或生產。 不可變的儲存庫(`/libs`。 `/apps`)無法在運行時寫入，因此嘗試寫入將導致錯誤。
 
+相反，可以從開發人員控制台啟動儲存庫瀏覽器，為作者、發佈和預覽層上的所有環境提供儲存庫的只讀視圖。 閱讀有關儲存庫瀏覽器的詳細資訊 [這裡](/help/implementing/developing/tools/repository-browser.md)。
+
 在開發人員控制台中，AEM提供一組用於調試as a Cloud Service開發人員環境的工具，用於開發、階段和生產環境。 可以通過調整「作者」或「發佈」服務URL來確定URL，如下所示：
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
@@ -184,11 +186,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ![開發控制台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-對於生產程式，對開發人員控制台的訪問由Admin Console中的「雲管理器 — 開發人員角色」定義，而對於沙盒程式，任何用戶都可以使用開發人員控制台，其產品配置檔案允許他們訪問AEMas a Cloud Service。 對於所有程式，狀態轉儲需要「Cloud Manager - Developer Role」，而且用戶還必須在作者和發佈服務的「用戶」或「管理員產品配置檔案」中定義，才能查看來自兩個服務的狀態轉儲資料。 有關設定用戶權限的詳細資訊，請參見 [Cloud Manager文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
-
-### 試AEM運行和生產服務 {#aem-staging-and-production-service}
-
-客戶將無法訪問用於過渡和生產環境的開發人員工具。
+對於生產程式，對開發人員控制台的訪問由Admin Console中的「雲管理器 — 開發人員角色」定義，而對於沙盒程式，任何用戶都可以使用開發人員控制台，其產品配置檔案允許他們訪問AEMas a Cloud Service。 對於所有程式，狀態轉儲需要「雲管理器 — 開發人員角色」，而且還必須在作者和發佈服務的「用戶」或「管理員產品配置檔案」中定義儲存庫瀏覽器和用戶，以便查看來自兩個服務的資料。 有關設定用戶權限的詳細資訊，請參見 [Cloud Manager文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
 ### 效能監控 {#performance-monitoring}
 
