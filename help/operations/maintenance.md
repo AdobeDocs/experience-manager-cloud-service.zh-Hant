@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 中的維護任務
 description: AEM as a Cloud Service 中的維護任務
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: cd48b78383974027d8980397632c395a5958edbf
+source-git-commit: 6af0a140005bcc684c72151024affb117437f6ce
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 4%
@@ -56,21 +56,23 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <tr>
     <td>版本清除</td>
     <td>Adobe</td>
-    <td>為了使作者層保持效能，在 <code>/content</code> 根據以下行為清除儲存庫的節點：<br><ol>
-  <li>刪除30天以上的版本</li>
-  <li>最近30天中的5個版本保留</li>
-  <li>不論上述規則如何，最新版本都將保留。</li>
-</ol><br>注：上述行為自2022年3月14日起對新環境強制執行，並將於2022年4月21日對現有環境（在2022年3月14日之前建立的環境）強制執行。</td>
+    <td>為了使作者層保持效能，在 <code>/content</code> 根據以下行為清除儲存庫的節點：<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+     <ol>
+       <li>刪除30天以上的版本</li>
+       <li>最近30天中的5個版本保留</li>
+       <li>不論上述規則如何，最新版本都將保留。</li>
+     </ol><br>注：上述行為自2022年3月14日起對新環境強制執行，並將於2022年4月21日對現有環境（在2022年3月14日之前建立的環境）強制執行。</td>
   </td>
   </tr>
   <tr>
     <td>審核日誌清除</td>
     <td>Adobe</td>
-    <td>為了使作者層保持效能， <code>/content</code> 根據以下行為清除儲存庫的節點：<br><ol>
-  <li>對於複製審核，刪除3天以上的審核日誌</li>
-  <li>對於DAM（資產）審核，刪除30天以上的審核日誌</li>
-  <li>對於頁面審核，刪除3天以上的日誌。<br></li>
-</ol><br>注：上述行為自2022年3月14日起對新環境強制執行，並將於2022年4月21日對現有環境（在2022年3月14日之前建立的環境）強制執行。</td>
+    <td>為了使作者層保持效能， <code>/content</code> 根據以下行為清除儲存庫的節點：<br><br> <!-- See above for the two line breaks -->
+     <ol>
+       <li>對於複製審核，刪除3天以上的審核日誌</li>
+       <li>對於DAM（資產）審核，刪除30天以上的審核日誌</li>
+       <li>對於頁面審核，刪除3天以上的日誌。</li>
+     </ol><br>注：上述行為自2022年3月14日起對新環境強制執行，並將於2022年4月21日對現有環境（在2022年3月14日之前建立的環境）強制執行。</td>
    </td>
   </tr>
   <tr>
