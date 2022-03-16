@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發指導方針
 description: AEM as a Cloud Service 開發指導方針
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 925f451b11e599691ad7dcec27c88913ca6efcdd
+source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
 workflow-type: tm+mt
-source-wordcount: '2306'
+source-wordcount: '2356'
 ht-degree: 2%
 
 ---
@@ -55,15 +55,19 @@ ht-degree: 2%
 
 ## 傳出HTTP連接 {#outgoing-http-connections}
 
-強烈建議任何傳出HTTP連接設定合理的連接和讀取超時。 對於不應用這些超時的代碼，在AEMas a Cloud Service上運行的實AEM例將強制執行全局超時。 以下超時值是連接調用10秒，下列常用Java庫使用的連接讀取調用60秒：
+強烈建議任何傳出HTTP連接設定合理的連接和讀取超時；建議的值是連接超時的1秒，讀超時的5秒。 具體數字必鬚根據處理這些請求的後端系統的效能確定。
+
+對於不應用這些超時的代碼，在AEMas a Cloud Service上運行的實AEM例將強制執行全局超時。 這些超時值是連接呼叫10秒，連接讀取呼叫60秒。
 
 Adobe建議使用 [Apache HttpComponents客戶端4.x庫](https://hc.apache.org/httpcomponents-client-ga/) 用於建立HTTP連接。
 
 已知有效但可能需要自己提供依賴的替代方案有：
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) 和/或 [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (提供者AEM)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) 和/或 [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (提供者AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) （不建議使用，因為它已過時，並被4.x版取代）
 * [確定Http](https://square.github.io/okhttp/) (未由提供AEM)
+
+在提供超時的旁邊，還應實現對此類超時和意外HTTP狀態代碼的正確處理。
 
 ## 無經典UI自定義 {#no-classic-ui-customizations}
 
