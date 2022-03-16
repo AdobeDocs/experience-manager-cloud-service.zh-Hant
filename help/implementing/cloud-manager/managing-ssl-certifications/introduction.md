@@ -2,7 +2,7 @@
 title: 簡介 — 管理SSL證書
 description: 簡介 — 管理SSL證書
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
+source-git-commit: 09a2c24b848364954dc5621995d0d0dc24059011
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Cloud Manager為客戶提供通過Cloud Manager UI安裝SSL證書的自助服務
 
 * AEMas a Cloud Service將接受域的通配符SSL證書。
 
-* 在任何給定時間，Cloud Manager將允許最多20個SSL證書，這些證書可以與您程式中的一個或多個環境關聯，即使證書已過期。 但是，Cloud Manager UI將允許在此約束下在程式中安裝最多50個SSL證書。 通常，證書可以覆蓋多個域（最多100個SAN），因此請考慮將同一證書中的多個域分組以保持在此限制下。
+* 在任何給定時間，Cloud Manager將允許最多50個SSL證書，這些證書可以與您程式中的一個或多個環境關聯，即使證書已過期。 但是，Cloud Manager UI將允許在此約束下在程式中安裝最多50個SSL證書。 通常，證書可以覆蓋多個域（最多100個SAN），因此請考慮將同一證書中的多個域分組以保持在此限制下。
 
 Cloud Manager支援以下客戶SSL證書要求：
 
