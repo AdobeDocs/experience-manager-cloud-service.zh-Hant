@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5e71b569280f486a50da0148b745200a6bbdc991
+source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
-source-wordcount: '3431'
+source-wordcount: '3434'
 ht-degree: 42%
 
 ---
@@ -103,7 +103,8 @@ ht-degree: 42%
    + [上線](/help/journey-migration/post-go-live.md)
    + [遷移指南，以Experience Manager合作夥伴的as a Cloud Service](/help/journey-migration/getting-started-partners.md)
    + 遷移工具發行說明 {#release-notes-migration-tools}
-      + [最新發行說明 (2022.2.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [最新發行說明 (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [用於2022.2.0的Notea](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
       + [2022.1.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 {#2021}
          + [2021.12.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
