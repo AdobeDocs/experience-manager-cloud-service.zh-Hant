@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 265999e5e92fc7b0f78f41bee4545ca6cee618a5
+source-git-commit: b490d581532576bc526f9bd166003df7f2489495
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1549'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Define DISABLE_DEFAULT_CACHING
    >其他方法，包括 [dispatcher-ttl AEM ACS Commons項目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，將無法成功覆蓋值。
 
    >[!NOTE]
-   >請注意，調度程式可能仍會根據其自己的內容快取內容 [快取規則](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html)。 要使內容真正私有，您應確保該內容不由調度程式進行快取。
+   >請注意，調度程式可能仍會根據其自己的內容快取內容 [快取規則](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html)。 要使內容真正私有，您應確保該內容不由調度程式進行快取。
 
 ### 客戶端庫(js,css) {#client-side-libraries}
 
