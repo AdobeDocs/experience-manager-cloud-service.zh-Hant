@@ -2,9 +2,9 @@
 title: 導航到螢幕服務提供程式
 description: 此頁介紹如何導航到螢幕服務提供程式。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 9263c833edf092a4254b7692924c1638100b9f6d
+source-git-commit: 9e43db0fdd55e396de2cf737e1d79bd06a1835e4
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '264'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,8 @@ ht-degree: 2%
    ![影像](/help/screens-cloud/assets/configure/configure-screens0.png)
 
 3. 在「編輯設定」(Edit Settings)對話框中輸入以下詳細資訊。
-奧 **基本URL** - AEM發佈URL o **作者URL** - AEM作者URL o **通道提供程式路徑** - /screens/channels.json
+   * **發佈URL**  — 發AEM布URL(例如 `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * **作者URL**  — 作AEM者URL(例如 `https://author-p12345-e12345.adobeaemcloud.com`)
 
    ![影像](/help/screens-cloud/assets/configure/configure-screens4.png)
 
