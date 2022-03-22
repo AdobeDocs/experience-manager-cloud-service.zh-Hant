@@ -1,10 +1,10 @@
 ---
-title: 無AEM頭內容架構師旅程
+title: 無頭內容建模與介AEM紹
 description: 介紹Adobe Experience Manager as a Cloud Service強大、靈活、無頭的功能，以及如何為項目建模內容。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
