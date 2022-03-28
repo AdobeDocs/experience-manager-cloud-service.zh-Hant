@@ -2,9 +2,9 @@
 title: 配置高級網路AEM以as a Cloud Service
 description: 瞭解如何配置高級網路功能，如VPN或靈活或專用的出口IP地址，以便AEMas a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
 workflow-type: tm+mt
-source-wordcount: '2982'
+source-wordcount: '2976'
 ht-degree: 1%
 
 ---
@@ -305,11 +305,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-## 舊式專用出口地址客戶 {#legacy-dedicated-egress-address-customers}
-
-如果您在2021.09.30之前已使用專用出口IP進行配置，則專用出口IP功能將按如下所述工作。
-
-### 功能使用 {#feature-usage}
+## 功能使用 {#feature-usage}
 
 該功能與導致出站通信的Java代碼或庫相容，前提是它們使用標準Java系統屬性進行代理配置。 在實踐中，這應包括最常見的圖書館。
 
@@ -351,11 +347,14 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 同一專用IP適用於客戶Adobe組織中的所有計畫以及每個計畫中的所有環境。 它適用於作者和發佈服務。
 
-僅支援HTTP和HTTPS埠。 這包括加密時的HTTP/1.1和HTTP/2。
-
 ### 調試注意事項 {#debugging-considerations}
 
 為了驗證通信確實在預期的專用IP地址上傳出，請檢查目標服務中的日誌（如果可用）。 否則，呼叫調試服務(例如 [https://ifconfig.me/IP](https://ifconfig.me/IP)，將返回呼叫IP地址。
+
+## 舊式專用出口地址客戶 {#legacy-dedicated-egress-address-customers}
+
+如果您在2021.09.30之前已使用專用出口IP進行配置，則專用出口IP功能僅支援HTTP和HTTPS埠。
+這包括加密時的HTTP/1.1和HTTP/2。
 
 ## 虛擬專用網(VPN) {#vpn}
 
