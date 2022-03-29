@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
+source-git-commit: 3c1012469db3e8a947634d5995eaee09a632e7f8
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 42%
+source-wordcount: '3417'
+ht-degree: 43%
 
 ---
 
@@ -675,11 +675,8 @@ ht-degree: 42%
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + 管理SSL證書 {#manage-ssl-certificates}
          + [簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-         + [獲取SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
          + [添加SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-         + [查看、更新和替換SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
-         + [檢查SSL證書的狀態](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
-         + [刪除SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+         + [管理SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + 管理自定義域名 {#custom-domain-names}
          + [簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [獲取自定義域名](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
