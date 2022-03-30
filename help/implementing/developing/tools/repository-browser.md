@@ -3,19 +3,23 @@ title: 儲存庫瀏覽器
 seo-title: Repository Browser
 description: 儲存庫瀏覽器為作者、發佈和預覽層上的所有環境提供了儲存庫的只讀視圖。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
-source-git-commit: 76e28ca5628fb985df21f53d1c3e9898985dc736
+exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
+source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '814'
 ht-degree: 2%
 
 ---
-
 
 # 儲存庫瀏覽器 {#repository-browser}
 
 >[!NOTE]
 >
 >6582及更高版本上AEM提供了儲存庫瀏覽器。
+
+>[!INFO]
+>
+>您還可以 [這個剪輯](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) 有關如何使用儲存庫瀏覽器調試as a Cloud Service的快速視頻介AEM紹。
 
 ## 簡介 {#introduction}
 
