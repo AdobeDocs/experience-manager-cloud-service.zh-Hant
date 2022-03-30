@@ -2,9 +2,9 @@
 title: 管理環境
 description: 瞭解您可以建立的環境類型以及如何為Cloud Manager項目建立這些環境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1747'
 ht-degree: 0%
 
 ---
@@ -216,9 +216,7 @@ Cloud Manager向每個as a Cloud Service環境提供預覽服務(作為附加發
 
 * [添加自定義域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-* [查看和更新自定義域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-
-* [刪除自定義域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+* [管理自定義域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
 
 * [檢查自定義域名的狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 或 [SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn)。
 

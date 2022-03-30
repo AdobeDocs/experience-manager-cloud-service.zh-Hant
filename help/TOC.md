@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3c1012469db3e8a947634d5995eaee09a632e7f8
+source-git-commit: 1530763a4817b9d6c17b55fb2d8db98304f1d433
 workflow-type: tm+mt
-source-wordcount: '3417'
+source-wordcount: '3397'
 ht-degree: 43%
 
 ---
@@ -679,15 +679,12 @@ ht-degree: 43%
          + [管理SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + 管理自定義域名 {#custom-domain-names}
          + [簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-         + [獲取自定義域名](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
          + [添加自定義域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [添加TXT記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [正在檢查自定義域名狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [配置DNS設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [正在檢查DNS記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-         + [查看、更新和替換自定義域名](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-         + [更新自定義域名的SSL證書](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-         + [刪除自定義域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+         + [管理自定義域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + 管理IP允許清單 {#ip-allow-lists}
          + [簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [添加IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

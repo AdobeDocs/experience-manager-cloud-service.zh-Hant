@@ -1,13 +1,13 @@
 ---
 title: 管理SSL證書
 description: 瞭解如何使用雲管理器檢查SSL證書的狀態，以及如何編輯、替換、更新和刪除這些證書。
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
+source-git-commit: 6cc1620d139db3804325c118d0874c5f94cb23a4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
-
 
 # 管理SSL證書 {#managing-ssl-certificates}
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 從雲管理器中刪除證書是無法撤消的永久操作。 作為最佳做法，Adobe建議在Cloud Manager中刪除SSL檔案之前將其保存在本地。
 
-Cloud Manager不允許您刪除具有一個或多個與其關聯的域的SSL證書。 刪除SSL證書之前必須刪除所有關聯的域。 請參閱文檔 [刪除自定義域名](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) 來瞭解更多資訊。
+Cloud Manager不允許您刪除具有一個或多個與其關聯的域的SSL證書。 刪除SSL證書之前必須刪除所有關聯的域。 請參閱文檔 [管理自定義域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) 來瞭解更多資訊。
 
 按照以下步驟刪除SSL證書。
 
