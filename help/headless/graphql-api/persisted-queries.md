@@ -1,18 +1,22 @@
 ---
 title: 永續GraphQL查詢
-description: 瞭解如何在Adobe Experience Manager保留GraphQL查詢以優化效能。 永續查詢可由客戶端應用使用HTTPGET方法來請求，響應可在分發程式和CDN層快取，最終改善客戶端應用程式的效能。
+description: 瞭解如何在Adobe Experience Manager as a Cloud Service保留GraphQL查詢以優化效能。 永續查詢可由客戶端應用使用HTTPGET方法來請求，響應可在分發程式和CDN層快取，最終改善客戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: dfcad7aab9dda7341de3dc4975eaba9bdfbd9780
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
 
 # 永續GraphQL查詢 {#persisted-queries-caching}
 
-永續查詢是在伺服器上建立和儲存的GraphQLAEM查詢。 標準GraphQL查詢是使用POST請求執行的，無法輕鬆快取響應。 可以通過客戶端應用程式的GET請求來請求保留的查詢。 在調度器和CDN層可快取GET請求的響應，最終改善請求客戶端應用的效能。
+永續查詢是在Adobe Experience Manager()as a Cloud Service伺服器上建立和儲存的AEMGraphQL查詢。 客戶端應用程式可以通過GET請求來請求它們。 在調度器和CDN層可快取GET請求的響應，最終改善請求客戶端應用的效能。 這與標準GraphQL查詢不同，這些查詢使用無法輕鬆快取響應的POST請求執行。
+
+的 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 在(默AEM認情況下) `dev-author`)，以便您開發、test和保留GraphQL查詢 [轉移到生產環境](#transfer-persisted-query-production)。 對於需要自定義的案例(例如， [自定義快取](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries))可以使用API;請參閱中提供的curl示例 [如何永續GraphQL查詢](#how-to-persist-query)。
+
+## 永續查詢和終結點 {#persisted-queries-and-endpoints}
 
 永續查詢必須始終使用與 [適當的站點配置](graphql-endpoint.md);這樣它們就可以使用其中一種或兩種：
 
@@ -24,7 +28,7 @@ ht-degree: 1%
 >
 >請參閱 [在配置瀏覽器中啟用內容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) 的子菜單。
 >
->的 **GraphQL持久性查詢** 需要啟用相應的站點配置。
+>的 **GraphQL持久查詢** 需要啟用相應的站點配置。
 
 例如，如果有一個特定查詢 `my-query`，它使用模型 `my-model` 從站點配置 `my-conf`:
 
@@ -39,9 +43,15 @@ ht-degree: 1%
 >
 >他們只是碰巧使用了同一種模式 — 但是通過不同的端點。
 
-## 如何永續GraphQL查詢
+## 如何永續GraphQL查詢 {#how-to-persist-query}
 
-建議先保留對作者環境的AEM查詢，然後 [發佈查詢](#publish-persisted-query) 到發AEM布環境。 工具，如 [郵遞員](https://www.postman.com/) 或命令行工具 [捲曲](https://curl.se/) 可使用。
+建議先保留對作者環境的AEM查詢，然後 [傳送查詢](#transfer-persisted-query-production) 生產發佈AEM環境，供應用程式使用。
+
+存在多種保留查詢的方法，包括：
+
+* GraphiQL IDE — 請參見 [保存永續查詢](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* curl — 請參見以下示例
+* 其他工具，包括 [郵遞員](https://www.postman.com/)
 
 以下是使用 **捲曲** 命令行工具：
 
@@ -183,13 +193,23 @@ ht-degree: 1%
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-## 發佈永續查詢 {#publish-persisted-query}
+## 將永續查詢傳輸到生產環境  {#transfer-persisted-query-production}
 
-永續查詢可以發佈到AEM發佈環境，在該環境中客戶端應用程式可以請求它們。 要在發佈時使用永續查詢，需要複製相關的持久樹。
+最終，您的永續查詢需要位於生產發佈環境(AEMas a Cloud Service)中，客戶端應用程式可以在該環境中請求它。 要在生產發佈環境上使用永續查詢，需要複製相關的永續樹：
 
-發佈永續查詢有幾種方法：
+* 初始到生產作者，以通過查詢驗證新創作的內容，
+* 最後，為生活消費發佈產品
 
-* **使用POST進行複製**:
+傳輸永續查詢有幾種方法：
+
+1. 使用包：
+   1. 建立新包定義。
+   1. 包括配置(例如， `/conf/wknd/settings/graphql/persistentQueries`)。
+   1. 生成包。
+   1. 傳輸包（下載/上載或複製）。
+   1. 安裝軟體包。
+
+1. 使用POST進行複製：
 
    ```xml
    $ curl -X POST   http://localhost:4502/bin/replicate.json \
@@ -198,20 +218,16 @@ ht-degree: 1%
    -F cmd=activate
    ```
 
-* **使用包**:
-   1. 建立新包定義。
-   1. 包括配置(例如， `/conf/wknd/settings/graphql/persistentQueries`)。
-   1. 生成包。
-   1. 複製包。
+<!--
+1. Using replication/distribution tool:
+   1. Go to the Distribution tool.
+   1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
-* **使用複製/分發工具**:
-   1. 轉到分發工具。
-   1. 為配置選擇樹激活(例如， `/conf/wknd/settings/graphql/persistentQueries`)。
+* Using a workflow (via workflow launcher configuration):
+  1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
+-->
 
-* **使用工作流（通過工作流啟動程式配置）**:
-   1. 定義工作流啟動程式規則，用於執行將在不同事件上複製配置的工作流模型（例如，建立、修改等）。
-
-在發佈上查詢配置後，同樣的驗證原則將適用，只使用發佈終結點。
+查詢配置在生產中的發佈環境上後，同樣的驗證原則將適用，只使用發佈終結點。
 
 >[!NOTE]
 >
@@ -219,13 +235,14 @@ ht-degree: 1%
 >
 >如果情況不是這樣，它將無法執行。
 
->[!NOTE]
->
->需要對URL中的任何分號(&quot;;&quot;)進行編碼。
->
->例如，與執行永續查詢的請求一樣：
->
->
+## 對查詢URL進行編碼，供應用使用 {#encoding-query-url}
+
+為供應用程式使用，需要對URL中的任何分號(&quot;;&quot;)進行編碼。
+
+例如，與執行永續查詢的請求一樣：
+
 ```xml
->curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
->```
+curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+```
+
+要在客戶端應用中使用永續查詢，AEM應使用無頭客戶端SDK [用AEM於JavaScript的無頭客戶端](https://github.com/adobe/aem-headless-client-js)。

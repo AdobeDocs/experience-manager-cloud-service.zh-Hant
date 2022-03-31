@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
+source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -74,14 +74,45 @@ Date24/08/2021
 
 ## 使用標籤組織資產 {#use-tags-to-organize-assets}
 
-使用標籤作為元資料，您可以輕鬆搜索資產、使用搜索結果建立集合、提高某些資產的搜索排名，以及將Adobe Sensei的AI算法應用於資產發現。
+<!--
+Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
 
-[!DNL Adobe Experience Manager Assets] 使用自學習算法建立高度描述性的標籤，使您只需按一下幾下即可找到合適的資產。 智慧標籤使用Adobe Sensei、人工智慧和機器學習框架，可訓練其識別和應用標準標籤和特定於業務的標籤到影像。 智慧標籤還可以識別內容、單個詞或短語，並自動將描述性標籤應用於資產
+[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
+
+For more information, see the following articles:
+
+* [Edit asset metadata](meta-edit.md)
+* [Smart Tags in Assets](smart-tags.md)
+-->
+
+向資產添加標籤使它們在搜索過程中更容易檢索，使用搜索結果建立集合，提高某些資產的搜索排名，並將Adobe Sensei的AI算法應用於資產發現。
+
+[!DNL Adobe Experience Manager Assets] 使用自學習算法建立高度描述性的標籤，使您只需按一下幾下即可找到合適的資產。 智慧標籤使用Adobe Sensei、人工智慧和機器學習框架，可訓練其識別和應用標準標籤和特定於業務的標籤到影像。 智慧標籤還可以識別內容、單個詞或短語，並自動將描述性標籤應用於資產。
+
+以下是向資產添加標籤的步驟：
+
+1. 登錄到 [!DNL Experience Manager Assets]。
+1. 按一下 **[!UICONTROL 資產]** > **[!UICONTROL 檔案]**，選擇資產並按一下 **[!UICONTROL 屬性]** 開啟資產屬性。
+1. 在 **[!UICONTROL 基本]** 的子菜單。 **[!UICONTROL 標籤]** 元資料。 將開啟一個彈出窗口。
+1. 從中的現有標籤中搜索或選擇相應的標籤 `cq-tags`。 您可以為資產分配多個標籤。
+
+   您可以根據 **[!UICONTROL 名稱]** （按字母順序排列）, **[!UICONTROL 已建立]** 日期或 **[!UICONTROL 已修改]** 日期。 在下圖中，標籤結構根據 **[!UICONTROL 名稱]**。
+
+   ![添加標籤](assets/add-tags-to-asset.png)
+
+1. 按一下 **保存** 更新資產元資料更改。
+
+>[!NOTE]
+>
+>在建立智慧標籤以及使用標籤謂詞應用搜索篩選器時，可以對標籤結構進行排序。
+>
+>排序標籤功能在預發行渠道中可用。 請參閱 [預發行渠道文檔](/help/release-notes/prerelease.md#enable-prerelease) 的子菜單。
 
 有關詳細資訊，請參閱以下文章：
 
 * [編輯資產元資料](meta-edit.md)
 * [資產中的智慧標籤](smart-tags.md)
+* [將標籤謂詞添加到搜索面板](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## 組織為集合 {#organize-as-collections}
 

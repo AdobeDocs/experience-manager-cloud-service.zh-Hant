@@ -2,9 +2,9 @@
 title: 建立API請求 — 無頭設定
 description: 瞭解如何使用GraphQL API來無頭地傳遞內容片段內容和資AEM產REST API來管理內容片段。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '670'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,16 @@ ht-degree: 0%
 GraphiQL是可安裝在環境上的AEMIDE。 按照上的步驟操作 [使用GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 安裝到您的AEM環境中。
 
 1. 登錄到AEMas a Cloud Service並訪問GraphiQL介面：
-   * 例如： `https://<host>:<port>/content/graphiql.html`。
+   * 例如： `https://<host>:<port>/aem/graphiql.html`。
 
-1. GraphiQL IDE是GraphQL的瀏覽器內查詢編輯器。 您可以使用它構建查詢以檢索內容片段，以JSON形式直接傳遞這些內容片段。
-   * 左面板允許您生成查詢。
-   * 右面板顯示結果。
+1. GraphiQL IDE是GraphQL的瀏覽器內查詢編輯器。 您可以使用它構建查詢以檢索內容片段，以JSON形式無頭地傳遞這些內容片段。
+   * 右上下拉框允許您選擇端點。
+   * 最左側的面板列出保留的查詢（如果可用）
+   * 中左側面板允許您生成查詢。
+   * 中右面板顯示結果。
    * 查詢編輯器具有代碼完成和熱鍵，以便輕鬆執行查詢。
-      ![GraphiQL編輯器](../assets/graphiql.png)
+
+   ![GraphiQL編輯器](../assets/graphiql.png)
 
 1. 假設我們建立的模型被稱為 `person` 帶 `firstName`。 `lastName`, `position`，我們可以構建一個簡單的查詢來檢索內容片段的內容。
 

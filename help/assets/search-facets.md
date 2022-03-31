@@ -4,9 +4,9 @@ description: 本文介紹如何在Experience Manager中建立、修改和使用�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2397'
 ht-degree: 19%
 
 ---
@@ -23,18 +23,18 @@ ht-degree: 19%
 
 ## 添加謂詞 {#adding-a-predicate}
 
-在「過濾器」面板中出現的搜索小平面在基礎搜索表單中使用謂語定義。 要顯示更多或不同的小平面，可將謂語添加到預設窗體，或使用包含所選小平面的自定義窗體。
+The search facets that appear in the Filters panel are defined in the underlying search form using predicates. 要顯示更多或不同的小平面，可將謂語添加到預設窗體，或使用包含所選小平面的自定義窗體。
 
-對於全文搜索，請添加 `Fulltext` 謂詞。 使用「屬性」謂詞搜索與指定的單個屬性匹配的資產。 使用「選項」謂詞搜索與特定屬性的一個或多個值匹配的資產。 添加「日期範圍」謂詞以搜索在指定日期範圍內建立的資產。
+For full-text searches, add the `Fulltext` predicate to the form. 使用「屬性」謂詞搜索與指定的單個屬性匹配的資產。 使用「選項」謂詞搜索與特定屬性的一個或多個值匹配的資產。 添加「日期範圍」謂詞以搜索在指定日期範圍內建立的資產。
 
 1. 按一下Experience Manager徽標，然後轉到 **[!UICONTROL 工具]** > **[!UICONTROL 常規]** > **[!UICONTROL 搜索Forms]**。
-1. 從「搜索Forms」頁中，選擇 **[!UICONTROL 資產管理搜索欄]**，然後按一下  **編輯** ![aemassets_edit](assets/aemassets_edit.png)。
+1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then tap  **Edit** ![aemassets_edit](assets/aemassets_edit.png).
 
-   ![查找並選擇「Assets Admin Search Rail（資產管理搜索欄）」](assets/assets_admin_searchrail.png)
+   ![Locate and select the Assets Admin Search Rail](assets/assets_admin_searchrail.png)
 
-1. 在「編輯搜索Forms」頁中，從 **[!UICONTROL 選擇謂詞]** 的子菜單。 例如，拖動 **[!UICONTROL 屬性謂詞]**。
+1. 在「編輯搜索Forms」頁中，從 **[!UICONTROL 選擇謂詞]** 的子菜單。 For example, drag **[!UICONTROL Property Predicate]**.
 
-   ![選擇並移動謂詞以自定義搜索篩選器](assets/drag_predicate.png)
+   ![Select and move a predicate to customize the search filters](assets/drag_predicate.png)
 
    *圖：選擇並移動謂詞以自定義搜索篩選器。*
 
@@ -100,7 +100,7 @@ CRXDE中所示的檔案類型的值屬性用於搜索查詢以工作
 1. 從「搜 **[!UICONTROL 尋表單」頁面]** ，選取「資 ****&#x200B;產管理搜尋邊欄」，然後點選「編輯」圖示。
 1. 在「編 **[!UICONTROL 輯搜索表單]** 」頁中，將「選 **[!UICONTROL 項謂詞」從]** 「選擇謂詞 **** 」頁籤拖到主窗格。
 1. 在「設 **[!UICONTROL 定]** 」標籤中，輸入屬性的標籤和名稱。例如，若要根據資產的格式來搜尋資產，請為標籤指定好記的名稱，例如「檔案類 **[!UICONTROL 型」]**。指定在屬性欄位中根據其執行搜索的屬性，例如 `jcr:content/metadata/dc:format.`
-1. 執行下列操作之一：
+1. 執行下列任一項作業：
 
    * 在 **[!UICONTROL 屬性名稱]** 欄位中，提及JSON檔案的路徑，在該路徑中為選項定義節點並指定相應的鍵值對。
    * 點擊 ![「資產」添加表徵圖](assets/do-not-localize/aem_assets_add_icon.png) 在「選項」欄位旁邊，指定要在「篩選器」面板中提供的選項的顯示文本和值。 要添加其他選項，請點擊/按一下 ![「資產」添加表徵圖](assets/do-not-localize/aem_assets_add_icon.png) 然後重複步驟。
@@ -116,10 +116,10 @@ CRXDE中所示的檔案類型的值屬性用於搜索查詢以工作
 
 ## 添加多值屬性謂語 {#adding-a-multi-value-property-predicate}
 
-的 `Multi Value Property` 謂詞允許您搜索多個值的資產。 請考慮您在中有多個產品的映像的情形 [!DNL Assets] 每個映像的元資料包括與產品關聯的SKU號。 您可以使用此謂語根據多個SKU編號搜索產品映像。
+The `Multi Value Property` predicate lets you search assets for multiple values. 請考慮您在中有多個產品的映像的情形 [!DNL Assets] 每個映像的元資料包括與產品關聯的SKU號。 You can use this predicate to search for product images based on multiple SKU numbers.
 
 1. 按一下Experience Manager徽標，然後轉到 **[!UICONTROL 工具]** > **[!UICONTROL 常規]** > **[!UICONTROL 搜索Forms]**。
-1. 在「搜索Forms」頁面上，選擇 **[!UICONTROL 資產管理搜索欄]**，點擊 **編輯** ![aemassets_edit](assets/aemassets_edit.png)。
+1. On the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, the tap **Edit** ![aemassets_edit](assets/aemassets_edit.png).
 1. 在「編輯搜索表單」頁中，將「 **[!UICONTROL Multi Value Property Predicate]** 」從「 **[!UICONTROL Select Predicate]** 」頁籤拖動到主窗格。
 1. 在 **[!UICONTROL 設定]** 頁籤，輸入謂詞的標籤和佔位符文本。 指定屬性名稱，例如，在屬性欄位中根據該名稱執行搜索 `jcr:content/metadata/dc:value`。 也可以使用選擇對話框來選擇節點。
 1. 請確定已 **[!UICONTROL 選取「分隔字元]** 」支援。在「輸入 **[!UICONTROL 分隔字元]** 」欄位中，指定分隔字元以分隔個別值。依預設，逗號會指定為分隔字元。您可以指定不同的分隔字元。
@@ -144,6 +144,11 @@ CRXDE中所示的檔案類型的值屬性用於搜索查詢以工作
 1. 導航到「搜索」面板。 的 **[!UICONTROL 標籤]** 謂詞將添加到「搜索」面板。
 1. 指定要根據其搜索資產或從建議清單中選擇的標籤。
 1. 選擇 **[!UICONTROL 全部匹配]** 搜索包含您指定的所有標籤的匹配項。
+
+您可以根據 **[!UICONTROL 名稱]** （按字母順序排列）, **[!UICONTROL 已建立]** 日期或 **[!UICONTROL 已修改]** 日期。 在下圖中，標籤結構根據 **[!UICONTROL 名稱]**。
+
+![添加標籤](assets/add-tags-to-asset.png)
+
 
 ## 添加其他謂語 {#adding-other-predicates}
 
@@ -199,12 +204,12 @@ CRXDE中所示的檔案類型的值屬性用於搜索查詢以工作
   </tr>
   <tr>
    <td><p>相對日期</p> </td>
-   <td><p>搜索謂詞，根據資產建立的相對日期搜索資產。 例如，可以配置選項，如2個月前、3週前等。 </p> </td>
+   <td><p>Search predicate to search assets based on the relative date of their creation. 例如，可以配置選項，如2個月前、3週前等。 </p> </td>
    <td>
     <ul>
      <li>標籤</li>
      <li>屬性名稱</li>
-     <li>相對日期</li>
+     <li>Relative date</li>
     </ul> </td>
   </tr>
   <tr>
@@ -213,7 +218,7 @@ CRXDE中所示的檔案類型的值屬性用於搜索查詢以工作
    <td>
     <ul>
      <li>標籤</li>
-     <li>屬性名稱</li>
+     <li>Property name</li>
      <li>說明</li>
     </ul> </td>
   </tr>
@@ -226,7 +231,7 @@ CRXDE中所示的檔案類型的值屬性用於搜索查詢以工作
      <li>預留位置</li>
      <li>屬性名稱</li>
      <li>範圍文本（自）</li>
-     <li>範圍文本（至）</li>
+     <li>Range text (To)</li>
      <li>說明</li>
     </ul> </td>
   </tr>
@@ -241,8 +246,8 @@ CRXDE中所示的檔案類型的值屬性用於搜索查詢以工作
     </ul> </td>
   </tr>
   <tr>
-   <td><p>檔案大小</p> </td>
-   <td><p>搜索謂詞以根據資產大小搜索資產。 它是基於滑塊的謂詞，在其中可以從可配置節點中選擇滑塊選項。 預設選項在CRX儲存庫中的/libs/dam/options/predicates/filesize中定義。 檔案大小以位元組為單位提供。</p> </td>
+   <td><p>File Size</p> </td>
+   <td><p>搜索謂詞以根據資產大小搜索資產。 它是基於滑塊的謂詞，在其中可以從可配置節點中選擇滑塊選項。 The default options are defined at /libs/dam/options/predicates/filesize in the CRX repository. 檔案大小以位元組為單位提供。</p> </td>
    <td>
     <ul>
      <li>標籤</li>

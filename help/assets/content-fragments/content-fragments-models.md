@@ -4,9 +4,9 @@ description: 瞭解內容片段模型如何作為您的無頭內容的基礎AEM�
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
+source-git-commit: 0d964a981f7b9004e99768888f78558c57ae398a
 workflow-type: tm+mt
-source-wordcount: '2838'
+source-wordcount: '2924'
 ht-degree: 5%
 
 ---
@@ -180,13 +180,16 @@ ht-degree: 5%
 
 * 請參閱 **[片段引用（嵌套片段）](#fragment-reference-nested-fragments)** 的子菜單。
 
-<!--
-* **Translatable**
-  Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
+* **可翻譯**
 
-  * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
-  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
--->
+   >[!NOTE]
+   此功能在預發行渠道中可用。
+   查看 [預發行渠道文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 有關如何為您的環境啟用該功能的資訊。
+
+   檢查 **可翻譯** 「內容片段模型」編輯器中某個欄位的複選框將：
+
+   * 確保將欄位的屬性名稱添加到翻譯配置、上下文 `/content/dam/<sites-configuration>`，也請參見Wiki頁。
+   * 對於GraphQL:設定 `<translatable>` 「內容片段」欄位上的屬性 `yes`，允許僅具有可翻譯內容的JSON輸出的GraphQL查詢篩選器。
 
 ## 驗證 {#validation}
 

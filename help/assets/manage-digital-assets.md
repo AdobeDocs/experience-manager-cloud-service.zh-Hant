@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: 13537eef0aa222b943e7d6f86a8acb8f98dc669b
 workflow-type: tm+mt
-source-wordcount: '4356'
-ht-degree: 10%
+source-wordcount: '4326'
+ht-degree: 11%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 10%
 
 本文介紹如何在中管理和編輯資產 [!DNL Adobe Experience Manager Assets]。 管理 [!DNL Content Fragments]，請參閱 [[!DNL Content Fragments]](content-fragments/content-fragments.md) 資產。
 
-## 建立資料夾 {#creating-folders}
+## 建立檔案夾 {#creating-folders}
 
 組織資產集合時，例如， `Nature` 影像，您可以建立資料夾以將它們保持在一起。 您可以使用資料夾對資產進行分類和組織。 [!DNL Experience Manager Assets] 不要求您組織資料夾中的資產以更好地工作。
 
 >[!NOTE]
 >
->* 共用類型的Assets資料夾 `sling:OrderedFolder`，共用到Marketing Cloud時不受支援。 如果要共用資料夾，不要選擇 [!UICONTROL 已訂購] 建立資料夾時。
+>* 共用類型的Assets資料夾 `sling:OrderedFolder`，共用到Experience Cloud時不受支援。 如果要共用資料夾，不要選擇 [!UICONTROL 已訂購] 建立資料夾時。
 >* Experience Manager不允許使用 `subassets` word作為資料夾的名稱。 它是為包含複合資產子集的節點保留的關鍵字
 
 
@@ -36,7 +36,7 @@ ht-degree: 10%
 * 資產檔案名不能包含以下任何字元： `* / : [ \\ ] | # % { } ? &`
 * 資產資料夾名稱不能包含以下任何字元： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## 上載資產 {#uploading-assets}
+## 上傳資產 {#uploading-assets}
 
 請參閱 [將數字資產添加到Experience Manager](add-assets.md)。
 
@@ -45,10 +45,6 @@ ht-degree: 10%
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
 如果DAM用戶上載儲存庫中已存在的一個或多個資產， [!DNL Experience Manager] 檢測複製並通知用戶。 預設情況下禁用重複檢測，因為重複檢測可能會根據儲存庫的大小和上載的資產數量對效能產生影響。
-
->[!NOTE]
->
->此功能在預發行渠道中可用。 請參閱 [預發行渠道文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 的子菜單。
 
 要啟用功能：
 
@@ -518,7 +514,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 要打印注釋和審閱狀態，請點擊/按一下 **[!UICONTROL 打印]** 表徵圖，並按照嚮導中的說明進行操作。 的 **[!UICONTROL 打印]** 表徵圖僅在資產至少分配了一個注釋或審閱狀態時才出現在工具欄中。
 
 1. 從資產UI中，開啟資產的預覽頁。
-1. 執行下列操作之一：
+1. 執行下列任一項作業：
 
    * 要打印所有注釋和審閱狀態，請跳過步驟3並直接轉到步驟4。
    * 要打印特定注釋和審閱狀態，請開啟 [時間](/help/assets/manage-digital-assets.md#timeline) 然後轉到步驟3。
@@ -611,7 +607,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![比較版本](assets/compare_versions.png)
 
-### 對資產啟動工作流 {#starting-a-workflow-on-an-asset}
+### 啟動資產的工作流 {#starting-a-workflow-on-an-asset}
 
 1. 定位至要為其啟動工作流的資產的位置，然後點擊/按一下該資產以開啟資產頁。
 1. 點擊/按一下GlobalNav表徵圖，然後選擇 **[!UICONTROL 時間軸]** 的子菜單。

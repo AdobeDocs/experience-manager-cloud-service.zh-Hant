@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 7%
+source-wordcount: '1435'
+ht-degree: 8%
 
 ---
 
@@ -61,10 +61,6 @@ ht-degree: 7%
 
 ### 新增內容 {#add-content}
 
->[!NOTE]
->
->此功能在預發行渠道中可用。 請參閱 [預發行渠道文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 的子菜單。
-
 發佈到 [!DNL Experience Manager Assets] 允許您進一步將更多內容（資產和資料夾）添加到發佈清單。 您可以跨儲存庫向清單中添加更多資產或資料夾。 按一下 **[!UICONTROL 添加內容]** 按鈕以添加更多內容。
 
 您可以從資料夾添加多個資產，也可以一次添加多個資料夾。 但您不能一次從多個資料夾中添加資產。
@@ -72,10 +68,6 @@ ht-degree: 7%
 ![新增內容](assets/manage-publication-add-content.png)
 
 ### 包含資料夾設定 {#include-folder-settings}
-
->[!NOTE]
->
->此功能在預發行渠道中可用。 請參閱 [預發行渠道文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 的子菜單。
 
 預設情況下，將資料夾發佈到 [!DNL Experience Manager Assets] 發佈所有資產、子資料夾及其引用。
 

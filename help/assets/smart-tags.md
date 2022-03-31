@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
+source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2411'
 ht-degree: 5%
 
 ---
@@ -118,7 +118,13 @@ ht-degree: 5%
 1. 建立必要的標籤和相應的標籤結構。 在DAM儲存庫中上載相關映像。
 1. 在 [!DNL Experience Manager] 用戶介面，訪問 **[!UICONTROL 資產]** > **[!UICONTROL 智慧標籤培訓]**。
 1. 按一下&#x200B;**[!UICONTROL 建立]**。提供 **[!UICONTROL 標題]**。 **[!UICONTROL 說明]**。
-1. 瀏覽並從中的現有標籤中選擇標籤 `cq:tags` 你想為之訓練模型。 按一下&#x200B;**[!UICONTROL 下一步]**。
+1. 按一下中的資料夾表徵圖 **[!UICONTROL 標籤]** 的子菜單。 將開啟一個彈出窗口。
+1. 從中的現有標籤中搜索或選擇相應的標籤 `cq-tags` 要添加到模型中。 按一下&#x200B;**[!UICONTROL 下一步]**。
+
+   >[!NOTE]
+   >
+   >您可以根據 **[!UICONTROL 名稱]** （按字母順序排列）, **[!UICONTROL 已建立]** 日期或 **[!UICONTROL 已修改]** 日期。
+
 1. 在 **[!UICONTROL 選擇資產]** 對話框，按一下 **[!UICONTROL 添加資產]** 標籤。 在DAM儲存庫中搜索或瀏覽儲存庫以選擇至少10個和最多50個映像。 選擇資產，而不是資料夾。 選擇影像後，按一下 **[!UICONTROL 選擇]**。
 
    ![查看培訓狀態](assets/smart-tags-training-status.png)

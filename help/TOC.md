@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 62c0c4cbc6de202e4fb2aecb02a146a19088d7ee
+source-git-commit: 170f93e9ef8b92ce258cc6f3e2d35ece27709fd5
 workflow-type: tm+mt
-source-wordcount: '3387'
+source-wordcount: '3409'
 ht-degree: 43%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 43%
    + [發行資訊](/help/release-notes/home.md)
    + 發行說明 {#release-notes}
       + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2022 {#2022}
+         + [2022.1.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
          + [2021.11.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [2021.10.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
@@ -104,7 +106,7 @@ ht-degree: 43%
    + [遷移指南，以Experience Manager合作夥伴的as a Cloud Service](/help/journey-migration/getting-started-partners.md)
    + 遷移工具發行說明 {#release-notes-migration-tools}
       + [最新發行說明 (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + [用於2022.2.0的Notea](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+      + [2022.2.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
       + [2022.1.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 {#2021}
          + [2021.12.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
@@ -263,7 +265,9 @@ ht-degree: 43%
    + 整合 AEM as a Cloud Service {#integrations}
       + [整合 Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [與Adobe Analytics自動設定整合](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [與Adobe Analytics整合時使用的IMS配置](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [整合 Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+      + [與Adobe Target整合時使用的IMS配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [將體驗片段導出到Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + 資產 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
