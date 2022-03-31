@@ -2,9 +2,9 @@
 title: 在螢幕中建立和管理顯示as a Cloud Service
 description: 此頁介紹如何建立和管理螢幕as a Cloud Service中的顯示。
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: b56c7e5de41cf75f4442d8294ddfbe1a05cb3dee
+source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '668'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 2%
 
 1. 將顯示資料夾側導軌。
 
-![影像](/help/screens-cloud/assets/display/toggle-rail.png)
+   ![影像](/help/screens-cloud/assets/display/toggle-rail.png)
 
 1. 選擇 **隱藏資料夾** 再關上它。
 
@@ -74,13 +74,62 @@ ht-degree: 2%
 1. 定位至顯示的庫存視圖。
 1. 請確保您當前未在資料夾中，您應看到以下內容：
 
-![影像](/help/screens-cloud/assets/display/verify-view.png)
+   ![影像](/help/screens-cloud/assets/display/verify-view.png)
 
-注： **所有顯示** 應在資料夾側欄中選擇，並且breadcrumb導航應僅顯示 **顯示**。
+   注： **所有顯示** 應在資料夾側欄中選擇，並且breadcrumb導航應僅顯示 **顯示**。
 
-1. 按一下右上角的「建立」按鈕，然後選擇 **資料夾** 選項
+1. 按一下右上角的「建立」按鈕，然後選擇 **資料夾** 的雙曲餘切值。
+
+   ![影像](/help/screens-cloud/assets/display/Createfolder.png)
 
 1. 填寫新資料夾的標題，然後按一下 **建立**。
+
+   ![影像](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## 如何建立新嵌套資料夾 {#nested-folder}
+
+1. 定位至顯示的庫存視圖。
+
+1. 從資料夾側導軌或通過在清單視圖中瀏覽來選擇所需的父資料夾。
+1. 驗證是否已選擇所需的父資料夾。
+
+   ![影像](/help/screens-cloud/assets/display/Nestedview.png)
+
+   * 應在資料夾側滑軌中選擇資料夾。
+   * breadcrumb導航應顯示當前資料夾名稱旁邊的 **顯示**。
+
+1. 按一下  **建立**  在右上角選擇 **資料夾** 的雙曲餘切值。
+
+   ![影像](/help/screens-cloud/assets/display/Createfolder.png)
+
+1. 填寫新資料夾的標題，然後按一下 **建立**。
+
+   ![影像](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## 如何將內容移動到新資料夾 {#move-folder}
+
+您可以將內容移動到新資料夾以更好地組織顯示。
+
+1. 定位至顯示的庫存視圖。
+
+1. 從資料夾側導軌或從清單視圖中選擇所需的父資料夾。
+
+1. 驗證是否已選擇所需的父資料夾。
+
+![影像](/help/screens-cloud/assets/display/movetofolder.png)
+
+**注釋**:應在資料夾側滑軌中選擇資料夾。 此外，breadcrumb導航應顯示當前資料夾名稱旁邊的 **顯示**。
+
+## 如何從資料夾中刪除內容 {#delete-folder}
+
+所有資料夾操作都可通過清單視圖中的選擇操作欄進行訪問。
+
+1. 導航到父資料夾或從側滑軌中選擇它。
+
+1. 在清單視圖中，選擇要刪除的所需子資料夾，並確保它為空。
+
+1. 按一下 **刪除** 選項。 如果資料夾不為空，則將禁用該操作。
+
 
 ## 下一步是什麼 {#whats-next}
 

@@ -2,9 +2,9 @@
 title: 在螢幕中建立和管理通道as a Cloud Service
 description: 本頁介紹如何在螢幕as a Cloud Service中建立和管理通道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: afcee8019c9b59f3eb1fdcabd569272eeea76dab
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '1116'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 1%
 
 * 瞭解如何建立螢幕內容提供程式的通道
 * 管理和編輯您的渠道中的內容
+* 您的渠道的激活計畫
 
 ## 在螢幕中建立新序列通道的步驟as a Cloud Service {#create-new-channel}
 
@@ -87,6 +88,89 @@ ht-degree: 1%
 | 順序頻道 | 允許建立按順序播放元件的通道（幻燈片放映中逐個播放）。 |
 | 左或右L-Bar拆分螢幕通道 | 允許內容作者在適當大小的區域中查看不同類型的資產。 |
 
+## 使用渠道的預設分配詳細資訊 {#default-channels}
+
+此功能允許您為通道定義預設激活計畫，並預設將其用於顯示的每個分配。 這提供了一種方法，使得不需要重複繁瑣的調度定義。
+
+### 為通道建立預設分配詳細資訊 {#create-default}
+
+1. 導航到要配置的通道的詳細資訊頁。
+1. 查找 **預設分配詳細資訊** 頁面上的磁貼。
+
+   ![影像](/help/screens-cloud/assets/display/Assignment1.png)
+
+1. 按一下 **設定預設詳細資訊**。
+1. 配置預設分配詳細資訊，包括優先順序、開始和結束日期以及渠道的重複模式，然後按一下 **分配**。
+
+   ![影像](/help/screens-cloud/assets/display/Assignments2.png)
+
+1. 請注意，分配的詳細資訊顯示在 **預設分配詳細資訊** 磁貼：
+
+   ![影像](/help/screens-cloud/assets/display/Assignments3.png)
+
+此磁貼顯示以下資訊：
+* 顯示中通道的預設優先順序。
+* 計畫播放頻道的激活開始和結束日期。
+* 定期的綜合視圖（每小時/每日/每週/每月/每年以及指定該定期的名稱）。
+
+### 分配給顯示時使用預設分配詳細資訊 {#default-display}
+
+具有預設分配詳細資訊的通道可以指定為顯示常規通道的方式相同，添加的選項可利用預設分配詳細資訊，而不是每次手動定義自定義分配詳細資訊。
+
+1. 導航到要將通道分配給的顯示詳細資訊頁，然後按一下 **分配通道**。
+或者，在清單視圖中選擇所需的顯示，然後按一下 **分配通道**。
+1. 通道分配對話框開啟。
+
+   ![影像](/help/screens-cloud/assets/display/Assignments4.png)
+
+1. 從通道選取器中選擇具有預設分配詳細資訊的所需通道。
+1. 請注意，通道分配對話框將更改，以便您選擇預設分配詳細資訊，或選擇自定義分配詳細資訊：
+
+   ![影像](/help/screens-cloud/assets/display/Assignments5.png)
+
+1. 按一下 **分配** 完成分配，或 **設定自定義分配詳細資訊** 如果您希望在特定顯示的上下文中用其它值覆蓋預設值。
+
+   ![影像](/help/screens-cloud/assets/display/Assignments6.png)
+
+1. 注意 **分配的頻道** 磁貼已用新分配更新：
+
+   ![影像](/help/screens-cloud/assets/display/Assignments7.png)
+
+1. 請注意，這些通道將具有不同的表徵圖，具體取決於它們是使用自定義時間表（時鐘錶徵圖）還是繼承預設詳細資訊（世界時鐘錶徵圖），按一下這些表徵圖將顯示計畫詳細資訊。
+1. 另請注意，每種類型的可用操作將不同。
+
+   ![影像](/help/screens-cloud/assets/display/Assignments8.png)
+
+**注：** 利用預設分配詳細資訊的通道分配在顯示的上下文中不可編輯。
+
+* 如果需要將其更改為自定義分配，則必須先將其刪除，然後使用 **設定自定義分配詳細資訊** 的雙曲餘切值。
+* 如果需要更改預設分配詳細資訊的屬性，則必須直接從渠道詳細資訊頁面執行此操作。
+
+### 從通道中刪除預設分配詳細資訊 {#remove-display}
+
+1. 導航到要刪除預設分配詳細資訊的渠道的詳細資訊頁面。
+1. 查找 **預設分配詳細資訊** 頁面中的平鋪
+1. 按一下 **刪除預設**。
+
+   ![影像](/help/screens-cloud/assets/display/Assignments9.png)
+
+1. 將顯示確認對話框，詳細資訊將與以下條件之一匹配：
+   **a.** 任何顯示中均不使用通道。
+
+   ![影像](/help/screens-cloud/assets/display/Assignments10.png)
+
+**b.** 通道用於單個顯示器。
+
+![影像](/help/screens-cloud/assets/display/Assignment11.png)
+
+**c.** 通道用於多個顯示器。
+
+![影像](/help/screens-cloud/assets/display/Assignments12.png)
+
+1. 按一下 *刪除* 來驗證更改。
+
+**注：** 從通道中刪除預設分配詳細資訊將刪除正在使用該分配的所有顯示器上的匹配分配。
+因此，如果這些顯示器上沒有要播放的替代內容，則這可能會導致空白螢幕。
 
 ## 下一步是什麼 {#whats-next}
 
