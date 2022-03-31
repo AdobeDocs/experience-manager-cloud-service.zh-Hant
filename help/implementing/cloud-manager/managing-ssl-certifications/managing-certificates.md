@@ -2,7 +2,7 @@
 title: 管理SSL證書
 description: 瞭解如何使用雲管理器檢查SSL證書的狀態，以及如何編輯、替換、更新和刪除這些證書。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 6cc1620d139db3804325c118d0874c5f94cb23a4
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
@@ -24,16 +24,6 @@ ht-degree: 0%
    * Cloud Manager將在UI中發送定期通知，以提醒您即將到期的證書。
 
 * **紅色**  — 此狀態表示SSL證書已過期。
-
-## 預先存在的CDN配置 {#pre-existing-cdn}
-
-如果SSL證書的CDN配置已預先存在，則 **SSL證書** 頁面，鼓勵您通過UI添加這些配置，以便它們在雲管理器中可見且可配置。
-
-使用UI遷移所有預先存在的環境配置後，消息將消失。 消息可能需要1-2個工作日才能消失。
-
-請參閱文檔 [添加SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 的子菜單。
-
-此外，在 **IP允許清單** 和 **環境** IP的CDN配置已預先存在的環境的頁面允許清單或自定義域名。
 
 ## 更新SSL證書 {#update-ssl-certificate}
 
@@ -70,3 +60,13 @@ Cloud Manager不允許您刪除具有一個或多個與其關聯的域的SSL證�
 >[!NOTE]
 >
 >用戶必須是 **業務所有者** 或 **部署管理器** 角色，以刪除雲管理器中的SSL證書。
+
+## 預先存在的CDN配置 {#pre-existing-cdn}
+
+如果SSL證書的CDN配置已預先存在，則 **SSL證書** 頁面，鼓勵您通過UI添加這些配置，以便它們在雲管理器中可見且可配置。
+
+使用UI遷移所有預先存在的環境配置後，消息將消失。 消息可能需要1-2個工作日才能消失。
+
+請參閱文檔 [添加SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 的子菜單。
+
+此外，在 **IP允許清單** 和 **環境** IP的CDN配置已預先存在的環境的頁面允許清單或自定義域名。

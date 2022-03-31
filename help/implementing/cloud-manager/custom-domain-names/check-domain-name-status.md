@@ -2,9 +2,9 @@
 title: 正在檢查域名狀態
 description: 瞭解如何確定您的自定義域名是否已由雲管理器成功驗證。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,8 @@ Cloud Manager將通過TXT值驗證域所有權，並顯示以下狀態消息之�
 
 ## 針對自定義域名的預先存在的CDN配置 {#pre-existing-cdn}
 
-如果您的自定義域名具有預先存在的CDN配置，則在 **IP允許清單** 和 **環境** 頁面，鼓勵您通過UI添加這些配置，以便它們在雲管理器中可見且可配置。
+如果您的自定義域名具有預先存在的CDN配置，則在 **自定義域名** 和 **環境** 頁面，鼓勵您通過UI添加這些配置，以便它們在雲管理器中可見且可配置。
 
 使用UI遷移所有預先存在的環境配置後，消息將消失。 消息可能需要1-2個工作日才能消失。
 
 請參閱文檔 [添加自定義域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) 的子菜單。
-
-![預存的CDN配置消息](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)

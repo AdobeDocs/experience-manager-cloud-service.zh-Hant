@@ -2,9 +2,9 @@
 title: 管理環境
 description: 瞭解您可以建立的環境類型以及如何為Cloud Manager項目建立這些環境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1745'
 ht-degree: 0%
 
 ---
@@ -105,9 +105,9 @@ Cloud Manager向每個as a Cloud Service環境提供預覽服務(作為附加發
 
 1. 建立相應的IP允許清單，將其應用於預覽服務，並立即取消應用 `Preview Default [<envId>]` 清單。
 
-   * 請參閱 [取消應用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) 的子菜單。
+   * 請參閱文檔 [應用和取消應用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 的子菜單。
 
-1. 使用更新 **IP允許清單** 工作流，以刪除預設IP並根據需要添加IP。 請參閱 [查看和更新IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) 來瞭解更多資訊。
+1. 使用更新 **IP允許清單** 工作流，以刪除預設IP並根據需要添加IP。 請參閱 [管理IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) 來瞭解更多資訊。
 
 一旦對預覽服務的訪問被解鎖，預覽服務名稱前面的鎖定表徵圖將不再顯示。
 
@@ -220,7 +220,7 @@ Cloud Manager向每個as a Cloud Service環境提供預覽服務(作為附加發
 
 * [檢查自定義域名的狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 或 [SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn)。
 
-* [檢查IP允許清單的狀態](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+* [管理IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
 
 
 ## 管理IP允許清單 {#manage-ip-allow-lists}
