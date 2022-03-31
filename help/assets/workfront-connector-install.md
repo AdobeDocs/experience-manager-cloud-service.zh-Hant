@@ -4,9 +4,9 @@ description: 安裝 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 34f3cf925a3ea58de176521be459a61f4317eec3
+source-git-commit: 7ffac94eace3eaa276f0ad1705e0b32c886c795c
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '564'
 ht-degree: 1%
 
 ---
@@ -110,6 +110,8 @@ ht-degree: 1%
 1. 將管線運行到 [將更改部署到雲管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。
 
 1. 要建立系統用戶配置，請建立 `wf-workfront-users` 在 [!DNL Experience Manager] 用戶組並分配權限 `jcr:all` 至 `/content/dam`。 系統用戶 `workfront-tools` 自動建立，並自動管理所需權限。 所有用戶 [!DNL Workfront] 使用增強連接器的用戶將自動添加為此組的一部分。
+
+有關更新的資訊 [!DNL Workfront for Experience Manager enhanced connector] 從上一版本到最新版本，按一下 [這裡](update-workfront-enhanced-connector.md)。
 
 ## 配置之間的連接 [!DNL Experience Manager] 作為 [!DNL Cloud Service] 和 [!DNL Workfront] {#configure-connection}
 
