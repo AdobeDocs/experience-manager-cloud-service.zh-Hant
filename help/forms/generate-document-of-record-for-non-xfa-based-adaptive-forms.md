@@ -2,9 +2,9 @@
 title: 生成適應性Forms的記錄文檔
 description: 說明如何為Adaptive Forms的記錄文檔(DoR)生成模板。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
+source-git-commit: da30318fb965535ae12d09a8ef397431714f9109
 workflow-type: tm+mt
-source-wordcount: '3678'
+source-wordcount: '3658'
 ht-degree: 2%
 
 ---
@@ -403,10 +403,6 @@ When you select a form model, configure Document of Record using options availab
 * **如果隱藏，則從DoR中排除欄位：** 設定屬性將覆蓋「從記錄文檔中排除」欄位級別屬性的行為（如果不為true）。 如果在提交表單時隱藏欄位，則如果屬性設定為true，則這些欄位將從「記錄文檔」中排除，前提是未設定「從記錄文檔中排除」屬性。
 
 ## 使用自定義XCI檔案
-
->[!NOTE]
->
-> 此功能在預發行渠道中可用。 請參閱 [預發行渠道文檔](/help/release-notes/prerelease.md#enable-prerelease) 的子菜單。
 
 XCI檔案可幫助您設定文檔的各種屬性。 Formsas a Cloud Service有主XCI檔案。 可以使用自定義XCI檔案覆蓋在主XCI檔案中指定的一個或多個預設屬性。 例如，您可以選擇將字型嵌入文檔或為所有文檔啟用標籤屬性。 下表指定了XCI選項：
 
