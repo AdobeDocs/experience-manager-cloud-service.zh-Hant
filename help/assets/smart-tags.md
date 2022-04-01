@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
+source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
 source-wordcount: '2411'
 ht-degree: 5%
@@ -124,6 +124,7 @@ ht-degree: 5%
    >[!NOTE]
    >
    >您可以根據 **[!UICONTROL 名稱]** （按字母順序排列）, **[!UICONTROL 已建立]** 日期或 **[!UICONTROL 已修改]** 日期。
+
 
 1. 在 **[!UICONTROL 選擇資產]** 對話框，按一下 **[!UICONTROL 添加資產]** 標籤。 在DAM儲存庫中搜索或瀏覽儲存庫以選擇至少10個和最多50個映像。 選擇資產，而不是資料夾。 選擇影像後，按一下 **[!UICONTROL 選擇]**。
 

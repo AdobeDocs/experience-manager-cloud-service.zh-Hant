@@ -4,9 +4,9 @@ description: 將數字資產添加到 [!DNL Adobe Experience Manager] 作為 [!D
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
+source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
 workflow-type: tm+mt
-source-wordcount: '2744'
+source-wordcount: '2943'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 當創意人員和營銷人員從受支援者內部處理資產時非常有用 [!DNL Creative Cloud] 案頭應用。 | 創意，營銷 |
 | [資產批量導入](#asset-bulk-ingestor) | 建議進行大規模遷移和偶爾進行批量遷移。 僅用於支援的資料儲存。 | 管理員、開發人員 |
 
-## 上載資產 {#upload-assets}
+## 上傳資產 {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -116,12 +116,12 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 檔案名處理和禁止字元 {#filename-handling}
 
-[!DNL Experience Manager Assets] 試圖阻止您上載檔案名中禁止字元的資產。 如果嘗試上載包含不允許的字元或更多字元的檔案名的資產， [!DNL Assets] 顯示警告消息並停止上載，直到您刪除這些字元或使用允許的名稱上載。
+[!DNL Experience Manager Assets] 阻止您使用其檔案名中的禁止字元上載資產。 如果嘗試上載檔案名中包含不允許的字元或更多字元的資產， [!DNL Assets] 顯示警告消息並停止上載，直到您刪除這些字元或使用允許的名稱上載。
 
 要適合組織的特定檔案命名約定， [!UICONTROL 上載資產] 對話框用於為上載的檔案指定長名稱。 不支援以下（以空格分隔的）字元清單：
 
-* 資產檔案名無效字元 `* / : [ \\ ] | # % { } ? &`
-* 資產資料夾名稱的字元無效 `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* 資產名稱的字元無效： `* / : [ \\ ] | # % { } ? &`
+* 資產資料夾名稱的字元無效： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## 批量上載資產 {#bulk-upload}
 
@@ -147,7 +147,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ![批量攝取工具](assets/bulk-ingestion.png)
 
-#### 必備條件 {#prerequisites-bulk-ingestion}
+**必備條件**
 
 使用此功能需要Azure或AWS的外部儲存帳戶或儲存桶。
 
@@ -155,7 +155,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >將儲存帳戶容器或儲存桶建立為專用，並僅接受來自授權請求的連接。 但是，不支援對入口網路連接的其他限制。
 
-#### 配置批量導入工具 {#configure-bulk-ingestor-tool}
+### 配置批量導入工具 {#configure-bulk-ingestor-tool}
 
 要配置批量導入工具，請執行以下步驟：
 
@@ -187,31 +187,108 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 按一下 **[!UICONTROL 保存]** 的子菜單。
 
-#### 管理批量導入工具配置 {#manage-bulk-import-configuration}
+### 管理批量導入工具配置 {#manage-bulk-import-configuration}
 
 在建立批量導入工具配置後，您可以執行評估配置的任務，然後將資產批量導入Experience Manager實例。 選擇可用的配置 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 批量導入]** 查看可用選項以管理批量導入工具配置。
 
-##### 編輯配置 {#edit-configuration}
+### 編輯配置 {#edit-configuration}
 
 選擇配置並按一下 **[!UICONTROL 編輯]** 修改配置詳細資訊。 執行編輯操作時，無法編輯配置和導入資料源的標題。
 
-##### 刪除配置 {#delete-configuration}
+### 刪除配置 {#delete-configuration}
 
 選擇配置並按一下 **[!UICONTROL 刪除]** 刪除批量導入配置。
 
-##### 驗證與資料源的連接 {#validate-connection}
+### 驗證與資料源的連接 {#validate-connection}
 
 選擇配置並按一下 **[!UICONTROL 檢查]** 驗證與資料源的連接。 如果連接成功，Experience Manager將顯示以下消息：
 
 ![批量導入成功消息](assets/bulk-import-success-message.png)
 
-##### 調用批量導入作業的test運行 {#invoke-test-run-bulk-import}
+### 調用批量導入作業的test運行 {#invoke-test-run-bulk-import}
 
 選擇配置並按一下 **[!UICONTROL 乾跑]** 調用批量導入作業的test運行。 Experience Manager顯示有關批量導入作業的以下詳細資訊：
 
 ![試執行結果](assets/dry-assets-result.png)
 
-##### 計劃一次性或循環批量導入 {#schedule-bulk-import}
+### 在批量導入期間處理檔案名 {#filename-handling-bulkimport}
+
+批量導入資產或資料夾時， [!DNL Experience Manager Assets] 導入輸入源中存在的全部結構。 [!DNL Experience Manager] 遵循資產名稱和資料夾名稱中特殊字元的內置規則，因此這些檔案名需要清理。 對於資料夾名稱和資產名稱，用戶定義的標題保持不變，並儲存在 `jcr:title`。
+
+在批量導入期間， [!DNL Experience Manager] 查找現有資料夾以避免重新導入資產和資料夾，並驗證在進行導入的父資料夾中應用的清理規則。 如果在父資料夾中應用了清除規則，則相同的規則將應用於導入源。 對於新導入，將應用以下簡化規則來管理資產和資料夾的檔案名。
+
+**在批量導入中處理資產名稱**
+
+對於資產檔案名，使用API清理Jcr名稱和路徑： `JcrUtil.escapeIllegalJcrChars`。
+
+* 將Unicode保持原樣
+* 將特殊字元替換為其URL轉義代碼，例如， `new*asset.png` 已更新為 `new%2Aasset.png`:
+
+   ```
+          URL escape code   
+   
+   "         %22
+   %         %25
+   '         %27
+   *         %2A
+   .         %2E
+   /         %2F
+   :         %3A
+   [         %5B
+   \n        %5Cn
+   \r        %5Cr
+   \t        %5Ct
+   ]         %5D
+   |         %7C
+   ```
+
+**在批量導入中處理資料夾名稱**
+
+對於資料夾檔案名，使用API清理Jcr名稱和路徑： `JcrUtil.createValidName`。
+
+* 將大小寫轉換為小寫
+* 保持Unicode原樣
+* 將特殊字元替換為短划線(&#39;-&#39;)，例如， `new*asset.png` 已更新為 `new-asset.png`:
+
+   ```
+   "                           
+   #                         
+   %                           
+   &                          
+   *                           
+   +                          
+   .                           
+   :                           
+   ;                          
+   ?                          
+   [                           
+   ]                           
+   ^                         
+   {                         
+   }                         
+   |                           
+   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \      Not allowed in Azure, allowed in AWS.
+   \t                          
+   ```
+
+<!-- 
+[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
+
+Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
+
+| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
+|---|---|---|---|
+| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
+| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
+| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
+| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
+
+&Dagger; The list of characters is a whitespace-separated list.
+-->
+
+#### 計劃一次性或循環批量導入 {#schedule-bulk-import}
 
 要計劃一次性或循環批量導入，請執行以下步驟：
 
@@ -222,7 +299,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    ![計畫批量導入作業](assets/bulk-ingest-schedule1.png)
 
 
-##### 查看Assets目標資料夾 {#view-assets-target-folder}
+#### 查看Assets目標資料夾 {#view-assets-target-folder}
 
 選擇配置並按一下 **[!UICONTROL 查看資產]** 查看在執行批量導入作業後導入資產的資產目標位置。
 
