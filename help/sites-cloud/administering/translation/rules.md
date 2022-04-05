@@ -4,9 +4,9 @@ description: 瞭解翻譯規則如何識別需要翻譯的內容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1292'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,22 @@ ht-degree: 0%
 >[!TIP]
 >
 >如果您是翻譯內容的新手，請參閱我們的 [網站翻譯之旅，](/help/journey-sites/translation/overview.md) 它是指通過使用功能強大的翻譯工具AEM翻譯您的AEM Sites內容的指導路AEM徑，是那些沒有翻譯經驗的人的理想選擇。
+
+## 內容片段和翻譯規則 {#content-fragments}
+
+本文檔中描述的翻譯規則僅在以下情況下適用於內容片段： **啟用用於翻譯的內容模型欄位** 選項 [轉換整合框架配置級別。](integration-framework.md#assets-configuration-properties)
+
+如果 **啟用用於翻譯的內容模型欄位** 選項處於活動狀態，AEM將使用 **可翻譯** 欄位 [內容片段模型](/help/assets/content-fragments/content-fragments-models.md#properties) 以確定是否要轉換該欄位。 在這個例子中， [翻譯規則](rules.md) 被取代。
+
+如果希望使用翻譯規則來翻譯內容片段， **啟用用於翻譯的內容模型欄位** 必須禁用轉換整合框架配置中的選項。
+
+>[!NOTE]
+>
+>此功能在預發行渠道中可用。
+> 
+>查看 [預發行渠道文檔](/help/release-notes/prerelease.md#enable-prerelease) 有關如何為您的環境啟用該功能的資訊。
+
+## 概覽 {#overview}
 
 頁面和資產在JCR儲存庫中以節點表示。 提取的內容是節點的一個或多個屬性值。 轉換規則標識包含要提取內容的屬性。
 

@@ -2,9 +2,9 @@
 title: 配置翻譯接頭(AEM無頭)
 description: 瞭解如何連AEM接到翻譯服務。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1296'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,11 @@ ht-degree: 0%
    1. **轉換元資料**  — 選中此項可轉換資產元資料。
    1. **翻譯標籤**  — 選中此項可轉換與資產關聯的標籤。
    1. **自動執行翻譯**  — 如果希望翻譯自動發送到翻譯服務，請選中此屬性。
+   1. **禁用僅更新轉換**  — 選中此選項後，更新翻譯項目將提交所有可翻譯的欄位進行翻譯，而不僅是上次翻譯後更改的欄位。 更新您的翻譯項目將在旅程的稍後部分討論。
+   1. **啟用用於翻譯的內容模型欄位**  — 選中此選項，以便翻譯配置根據 **可翻譯** 。
+      * 如果可用，應選中此選項以簡化翻譯過程。
+      * 此選項僅在as a Cloud Service的預發行通道中AEM可用。
+      * 查看 [「其他資源」部分](#additional-resources) 的子菜單。
 
 1. 點擊或按一下 **保存並關閉**。
 
@@ -138,3 +143,4 @@ ht-degree: 0%
 
 * [配置翻譯整合框架](/help/sites-cloud/administering/translation/integration-framework.md)  — 查看選定翻譯連接器的清單並瞭解如何配置翻譯整合框架以與第三方翻譯服務整合。
 * [連接到Microsoft翻譯](/help/sites-cloud/administering/translation/connect-ms-translator.md)  — 提AEM供試用Microsoft翻譯帳戶以用於測試。
+* [AEMas a Cloud Service預發行渠道](/help/release-notes/prerelease.md#enable-prerelease)  — 瞭解如何選擇預發行的AEMas a Cloud Service，以嘗試新功能和即將推出的功能。

@@ -2,12 +2,13 @@
 title: 翻譯內容(AEM無頭)
 description: 使用翻譯連接器和規則來翻譯無頭內容。
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
+
 
 # 翻譯內容 {#translate-content}
 
@@ -21,6 +22,10 @@ ht-degree: 0%
 * 能夠定義自己的翻譯規則。
 
 既然已設定了連接器和翻譯規則，本文將引導您完成翻譯無頭內容的下一步。
+
+>[!NOTE]
+>
+>如果跳過 [配置轉換規則](translation-rules.md) 您在as a Cloud Service的預發行渠道上，AEM因此您無需考慮本文檔中提到的翻譯規則。
 
 ## 目標 {#objective}
 

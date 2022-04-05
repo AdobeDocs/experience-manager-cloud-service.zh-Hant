@@ -2,9 +2,9 @@
 title: 配置翻譯規則(AEM無頭)
 description: 瞭解如何定義翻譯規則以標識翻譯內容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,15 @@ ht-degree: 0%
 * 能夠設定自己與翻譯服務的連接。
 
 現在已設定連接器，本文將引導您完成確定需要翻譯的內容的下一步。
+
+>[!CAUTION]
+>
+>只有在您不在as a Cloud Service的預發行渠道上，才需要執行此文檔旅程步AEM驟。
+>
+>* 如果您在預發行頻道，請跳至此行程的下一步 [翻譯內容。](translate-content.md)
+>* 如果您不在預發行頻道，請繼續閱讀此文檔。
+>
+>查看 [「其他資源」部分](#additional-resources) 的子菜單。
 
 ## 目標 {#objective}
 
@@ -99,3 +108,4 @@ ht-degree: 0%
 建議您通過查看文檔來進入無頭翻譯過程的下一部分 [翻譯內容，](translate-content.md) 下面是一些附加的可選資源，這些資源對本文檔中提到的一些概念進行了更深入的探討，但不需要繼續進行無頭之旅。
 
 * [確定要翻譯的內容](/help/sites-cloud/administering/translation/rules.md)  — 瞭解翻譯規則如何識別需要翻譯的內容。
+* [AEMas a Cloud Service預發行渠道](/help/release-notes/prerelease.md#enable-prerelease)  — 瞭解如何選擇預發行的AEMas a Cloud Service，以嘗試新功能和即將推出的功能。

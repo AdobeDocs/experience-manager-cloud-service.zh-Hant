@@ -2,7 +2,7 @@
 title: 如何通過交付API訪AEM問內容
 description: 在「無頭開發AEM人員之旅」的這一部分，瞭解如何使用GraphQL查詢訪問內容片段內容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
@@ -272,7 +272,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 查詢可以在GraphiQL介面中輸入，例如：
 
-* `http://localhost:4502/content/graphiql.html`
+* `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL介面](assets/graphiql-interface.png "GraphiQL介面")
 

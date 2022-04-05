@@ -2,9 +2,9 @@
 title: Formsas a Cloud Service通訊
 description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
+source-git-commit: 09452aa799fc59bfc08c59d69820aa22daf07e9f
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1138'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## 文檔操作
 
-通信文檔處理API有助於組合、重新排列和驗證PDF文檔。 通常，您會建立DDX並將其提交到文檔處理API以匯編或重新排列文檔。 DDX文檔提供了有關如何使用源文檔生成一組所需文檔的說明。 DDX參考文檔提供了有關所有支援操作的詳細資訊。 文檔處理的一些示例包括：
+通信文檔處理API有助於組合、重新排列和驗證PDF文檔。 通常，您會建立DDX並將其提交到文檔處理API以匯編或重新排列文檔。 的 [DDX文檔](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 提供了有關如何使用源文檔生成一組所需文檔的說明。 DDX參考文檔提供了有關所有支援操作的詳細資訊。 文檔處理的一些示例包括：
 
 ### 匯編PDF文檔
 

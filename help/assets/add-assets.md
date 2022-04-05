@@ -4,9 +4,9 @@ description: 將數字資產添加到 [!DNL Adobe Experience Manager] 作為 [!D
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
+source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '2948'
 ht-degree: 0%
 
 ---
@@ -219,36 +219,37 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 **在批量導入中處理資產名稱**
 
-對於資產檔案名，使用API清理Jcr名稱和路徑： `JcrUtil.escapeIllegalJcrChars`。
+對於資產檔案名，JCR名稱和路徑將使用API進行清理： `JcrUtil.escapeIllegalJcrChars`。
 
-* 將Unicode保持原樣
-* 將特殊字元替換為其URL轉義代碼，例如， `new*asset.png` 已更新為 `new%2Aasset.png`:
+* 未更改Unicode字元
+* 將特殊字元替換為其URL轉義代碼，例如， `new asset.png` 已更新為 `new%20asset.png`:
 
    ```
-          URL escape code   
+                   URL escape code   
    
-   "         %22
-   %         %25
-   '         %27
-   *         %2A
-   .         %2E
-   /         %2F
-   :         %3A
-   [         %5B
-   \n        %5Cn
-   \r        %5Cr
-   \t        %5Ct
-   ]         %5D
-   |         %7C
+   "               %22
+   %               %25
+   '               %27
+   *               %2A
+   .               %2E
+   /               %2F
+   :               %3A
+   [               %5B
+   \n              %5Cn
+   \r              %5Cr
+   \t              %5Ct
+   ]               %5D
+   |               %7C
+   space char      %20
    ```
 
 **在批量導入中處理資料夾名稱**
 
-對於資料夾檔案名，使用API清理Jcr名稱和路徑： `JcrUtil.createValidName`。
+對於資料夾檔案名，JCR名稱和路徑將使用API進行清理： `JcrUtil.createValidName`。
 
-* 將大小寫轉換為小寫
-* 保持Unicode原樣
-* 將特殊字元替換為短划線(&#39;-&#39;)，例如， `new*asset.png` 已更新為 `new-asset.png`:
+* 大寫字元轉換為小寫字元
+* 未更改Unicode字元
+* 將特殊字元替換為短划線(&#39;-&#39;)，例如， `new asset.png` 已更新為 `new-asset.png`:
 
    ```
    "                           
@@ -267,9 +268,10 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    {                         
    }                         
    |                           
-   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
-   \      Not allowed in Azure, allowed in AWS.
-   \t                          
+   /         It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \         Not allowed in Azure, allowed in AWS.
+   \t
+   space     It is the space character.
    ```
 
 <!-- 

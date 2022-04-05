@@ -1,17 +1,17 @@
 ---
-title: 無頭內容建模與介AEM紹
-description: 介紹Adobe Experience Manager as a Cloud Service強大、靈活、無頭的功能，以及如何為項目建模內容。
+title: 作為無AEM頭CMS的內容建模 — 簡介
+description: 介紹使用Adobe Experience Manager as a Cloud Service的功能作為無頭CMS來為項目的內容建模。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
 
-# 無頭內容建模AEM — 簡介 {#architect-headless-introduction}
+# 作為無AEM頭CMS的內容建模 — 簡介 {#architect-headless-introduction}
 
-在 [無AEM頭內容架構師旅程](overview.md)，您可以瞭解必要的（基本）概念和術語，以便瞭解用Adobe Experience Manager()as a Cloud Service進行無頭內容交付的內AEM容建模。
+在 [無AEM頭內容架構師旅程](overview.md)，您可以學習在將Adobe Experience Manager()as a Cloud Service用作無頭CMS時理解內容建模所必AEM要的（基本）概念和術語。
 
 本文檔幫助您瞭解無頭內容的交付、AEM如何支援無頭內容以及如何為無頭內容建模。 閱讀完後，您應：
 
