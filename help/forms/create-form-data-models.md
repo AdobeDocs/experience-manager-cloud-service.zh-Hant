@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 1e2b58015453c194af02fdae62c3735727981da1
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 1%
+source-wordcount: '1534'
+ht-degree: 0%
 
 ---
 
@@ -84,6 +84,51 @@ ht-degree: 1%
 >[!NOTE]
 >
 >在表單資料模型中添加新資料源或更新現有資料源後，請確保在Adaptive Forms中更新綁定引用<!--and interactive communications--> 使用更新的表單資料模型。
+
+## 特定運行模式的上下文感知配置 {#runmode-specific-context-aware-config}
+
+[!UICONTROL 窗體資料模型] 利用 [吊帶上下文感知配置](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) 支援不同的資料源參數，以便與不同的資料源連接 [!DNL Experience Manager] 運行模式。
+
+當 [!UICONTROL 窗體資料模型] 使用雲配置來儲存參數，當通過原始碼管理（Cloud-Manager GIT儲存庫）簽入和部署時，這些參數將為所有運行模式（開發、階段和生產）建立具有相同參數的雲配置。 但是，對於需要為test和生產環境提供不同資料集的使用情形，則我們使用不同資料源參數（例如資料源URL） [!DNL Experience Manager] 運行模式。
+
+要實現此目標，您需要建立包含資料源參數 — 值對的OSGi配置。 這將覆蓋來自 [!UICONTROL 窗體資料模型] 運行時的雲配置。 由於OSGi配置預設支援這些運行模式，因此您可以根據運行模式將資料源參數覆蓋到不同的值。
+
+在中啟用特定於部署的雲配置 [!UICONTROL 窗體資料模型]:
+
+1. 在本地開發實例上建立雲配置。 有關詳細步驟，請參見 [如何配置資料源](/help/forms/configure-data-sources.md)。
+
+1. 將雲配置儲存到檔案系統。
+   1. 使用篩選器建立包 `/conf/{foldername}/settings/cloudconfigs/fdm`。 使用相同 `{foldername}` 按 替換 `fdm` 與 `azurestorage` 用於Azure儲存配置。
+   1. 生成和下載包。 有關詳細資訊，請參閱 [包操作](/help/implementing/developing/tools/package-manager.md)。
+
+1. 將雲配置整合到 [!DNL Experience Manager] 原型計畫。
+   1. 解壓縮下載的包。
+   1. 複製 `jcr_root` 資料夾 `ui.content` > `src` > `main` > `content`。
+   1. 更新 `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` 包含篩選器 `/conf/{foldername}/settings/cloudconfigs/fdm`。 有關詳細資訊，請參閱 [項目原型的ui.AEMcontent模組](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)。 當通過CM管道部署此原型項目時，所有環境（或運行模式）上都會安裝相同的雲配置。 要根據環境更改雲配置的欄位（如URL）的值，請使用以下步驟中討論的OSGi配置。
+
+1. 建立Apache Sling上下文感知配置。 要建立OSGi配置：
+   1. **在中設定OSGi配置檔案 [!DNL Experience Manager] 原型計畫。**
+使用PID建立OSGi工廠配置檔案 
+`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. 在每個運行模式資料夾下建立具有相同名稱的檔案，其中每個運行模式需要更改值。 有關詳細資訊，請參閱 [為配置OSGi [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations)。
+
+   1. **設定OSGI配置json。** 要使用Apache Sling上下文感知配置覆蓋提供程式：
+      1. 論地方發展實例 `/system/console/configMgr`，選擇具有名稱的工廠OSGi配置 **[!UICONTROL Apache Sling上下文感知配置覆蓋提供程式：OSGi配置]**。
+      1. 提供說明。
+      1. 選擇 **[!UICONTROL 啟用]**。
+      1. 在覆蓋下，提供需要根據sling覆蓋語法中的環境更改的欄位。 有關詳細資訊，請參閱 [Apache Sling上下文感知配置 — 覆蓋](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax)。 比如說， `cloudconfigs/fdm/{configName}/url="newURL"`。
+通過選擇 **[!UICONTROL +]**。
+      1. 選擇 **[!UICONTROL 保存]**。
+      1. 要獲取OSGi配置JSON，請按照中的步驟操作 [使用SDK快速啟動生成AEMOSGi配置](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)。
+      1. 將JSON放在上一步中建立的OSGi工廠配置檔案中。
+      1. 更改 `newURL` 基於環境（或運行模式）。
+      1. 要根據運行模式更改機密值，可以使用 [雲管理器API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 以後可以在 [OSGi配置](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values)。
+當此原型項目通過CM管道部署時，覆蓋將在不同的環境（或運行模式）上提供不同的值。
+
+      >[!NOTE]
+      >
+      >[!DNL Adobe Managed Service] 用戶可以使用加密支援加密密鑰值(有關詳細資訊，請參閱 [配置屬性的加密支援](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) 並將加密文本放在 [上下文感知配置在service pack 6.5.13.0中提供](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config)。
+
+1. 使用選項刷新中的資料源定義來刷新資料源定義 [表單資料模型編輯器](#data-sources) 通過FDM UI刷新FDM快取並獲取最新配置。
 
 ## 後續步驟 {#next-steps}
 
