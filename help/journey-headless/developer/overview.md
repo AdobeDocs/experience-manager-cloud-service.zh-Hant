@@ -1,18 +1,18 @@
 ---
 title: 無AEM頭開發者之旅
-description: AEM Headless CMS 文件。從這裡開始，逐步引導您了解 AEM 強大且有彈性的無周邊功能、其功能，以及如何在您的第一個開發專案中運用這些功能。
+description: 從此開始，在將Adobe Experience Manager(AEM)as a Cloud Service用作無頭內容管理系統(CMS)時，進行有指導的旅行。 此過程為您提供開發第一個無頭應用程式所需的所有資訊。
 landing-page-description: 從這裡開始，逐步引導您了解 AEM 的無周邊功能、其功能，以及如何在您的第一個開發專案中運用這些功能。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
+source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 6%
+source-wordcount: '1277'
+ht-degree: 3%
 
 ---
 
 # 無AEM頭開發者之旅 {#aem-headless-developer-journey}
 
-從此開始，您可以帶導遊地瞭解功能強大、靈活的無AEM頭功能，以及如何在您的第一個無頭開發項目中利用這些功能。 此路程為您提供開發第AEM一個無頭應用程式所需的所有無頭文檔。
+從此開始，在將Adobe Experience Manager(AEM)as a Cloud Service用作無頭內容管理系統(CMS)時，進行有指導的旅行。 瞭解功能強大、靈活的無頭功能、功能，以及如何在您的第一個無頭開發項目中利用它們。 此過程為您提供開發第一個無頭應用程式所需的所有資訊。
 
 ## 簡介 {#introduction}
 
