@@ -3,10 +3,10 @@ title: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 description: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 372e40eb90d87d9ed366e08a3c0117068542680b
+source-git-commit: a96824cede31414963ff7e6f5ef1315bd35a51c1
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 4%
+source-wordcount: '1099'
+ht-degree: 5%
 
 ---
 
@@ -96,40 +96,7 @@ ht-degree: 4%
 
 ## Cloud Manager {#cloud-manager}
 
-### 2月發佈日期 {#release-date-cm-feb}
-
-Cloud Manager在as a Cloud Service2022.02.0中的發AEM布日期為2022年2月10日。 下一版計畫於2022年3月10日發行。
-
-### 新增功能 {#what-is-new-cm-feb}
-
-* 新加速 [Web層配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 已引入專門部署HTTPD/dispatcher配置。
-   * 您必須處於版AEM本 `2021.12.6151.20211217T120950Z` 或更新 [選擇調度工具的靈活模式](/help/implementing/dispatcher/disp-overview.md#validation-debug) 功能。
-   * 此功能將在發佈後的兩週內分階段2022.02.0出。
-* Cloud Manager登錄頁體驗已刷新，可提供改進的導航、網格/平鋪視圖之間的輕鬆切換，以及彈出窗口，以快速獲得程式摘要。
-* 新的失敗閾值(`< D`)已添加到 [可靠性評級指標。](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
-   * 如果客戶遇到嚴重質量問題，影響系統穩定性，主要與無效索引和工作流進程有關，則在這些問題得到解決之前，他們將無法進行部署。
-* 嚴重性 `BannedPath` [質量規則](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) 已從阻止程式更改為關鍵。
-* 管道嚮導將在配置環境之前AEM通知用戶何時需要環境更新 [Web層配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 關聯。
-
-### 錯誤修正 {#bug-fixes-cm-feb}
-
-* 當生成新密碼時，舊Git儲存庫密碼始終無效。
-* 通過API更新環境變數不再會在極少數情況下干擾管道執行。
-
-### 3月發行日期 {#release-date-cm-march}
-
-2022年3月10日Cloud Manager版本2022.3.0AEM的發佈日期。 下一版計畫於2022年4月7日發行。
-
-### 新增功能 {#what-is-new-cm-march}
-
-* 可以AEM使用開發人員角色訪問環境日誌。
-
-### 錯誤修正 {#bug-fixes-cm-march}
-
-* 手動建立的Git儲存庫的子集具有不正確的名稱值，這防止了生成項目重用功能的有效性。 這些資料庫的名稱已更改，用戶將在Cloud Manager API/UI中看到更正的名稱。
-* 來自非生產管道的生成工件在生產完整堆棧管道上被不恰當地重複使用。
-* 添加或編輯代碼質量管道時，不再顯示處理度量失敗的選項。
-* 生成步驟中可能會導致某些意外的管道變數配置。
+您可以找到Cloud Manager每月版本的完整清單 [這裡](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)。
 
 ## 內容轉移工具 {#ctt-release}
 
