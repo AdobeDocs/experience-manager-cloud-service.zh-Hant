@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7d3f553765580c1d81a80bea456e9df908939bc0
+source-git-commit: b6c654f5456e1a7778b453837f04cbed32a82a77
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1536'
 ht-degree: 3%
 
 ---
@@ -135,6 +135,28 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. 點擊 **[!UICONTROL 建立]** 為REST風格服務建立雲配置。
+
+### 表單資料模型HTTP客戶端配置以優化效能 {#fdm-http-client-configuration}
+
+[!DNL Experience Manager Forms] 當與REST風格的Web服務整合為資料源時，將形成資料模型，包括用於效能優化的HTTP客戶端配置。
+執行以下步驟來配置表單資料模型HTTP客戶端：
+
+1. 登錄到 [!DNL Experience Manager Forms] 以管理員身份建立實例並轉到 [!DNL Experience Manager] web控制台捆綁包。 預設URL為 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)。
+
+1. 點擊 **[!UICONTROL REST資料源的表單資料模型HTTP客戶端配置]**。
+
+1. 在 [!UICONTROL REST資料源的表單資料模型HTTP客戶端配置] 對話框：
+
+   * 指定表單資料模型和REST風格Web服務之間允許的最大連接數 **[!UICONTROL 連接限制總數]** 的子菜單。 預設值為20個連接。
+
+   * 指定中每個路由允許的最大連接數 **[!UICONTROL 每個路由的連接限制]** 的子菜單。 預設值為2個連接。
+
+   * 指定持續HTTP連接保持活動的持續時間， **[!UICONTROL 保持活力]** 的子菜單。 預設值為15秒。
+
+   * 指定持續時間， [!DNL Experience Manager Forms] 伺服器等待建立連接，在 **[!UICONTROL 連接超時]** 的子菜單。 預設值為10秒。
+
+   * 指定中兩個資料包之間不活動的最大時間段 **[!UICONTROL 套接字超時]** 的子菜單。 預設值為30秒。
+
 
 ## 配置SOAP Web服務 {#configure-soap-web-services}
 
