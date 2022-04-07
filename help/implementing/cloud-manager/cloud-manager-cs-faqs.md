@@ -2,9 +2,9 @@
 title: Cloud Manager常見問題
 description: 在as a Cloud Service中查找有關Cloud Manager的最常見問題的答AEM案。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 11ac22974524293ce3e4ceaa26e59fe75ea387e6
+source-git-commit: 5f4bbedaa5c4630d6f955bb0986e8b32444d6aa3
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -16,64 +16,56 @@ ht-degree: 0%
 
 ## 是否可以將Java 11與Cloud Manager生成一起使用？ {#java-11-cloud-manager}
 
-嘗AEM試將生成從Java 8切換到11時，Cloud Manager生成可能失敗。 問題可能有許多原因，本節記錄了最常見的原因。
+是. 您需要添加 `maven-toolchains-plugin` 為Java 11設定。
 
-* 添加 `maven-toolchains-plugin` 為Java 11設定。
-   * 這是有記錄的 [這裡](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)。
-   * 例如，請參見 [wknd項目示例項目代碼](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
+* 這是有記錄的 [這裡](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)。
+* 例如，請參見 [wknd項目示例項目代碼](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
 
-* 如果遇到以下錯誤，則需要刪除 `maven-scr-plugin` 將所有OSGi注釋轉換為OSGi R6注釋。
-   * 有關說明，請參見 [給。](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)。
+## 在從Java 8切換到Java 11後，我的生成失敗，並出現有關maven-scr插件的錯誤。 我能做什麼？ {#build-fails-maven-scr-plugin}
 
-   ```text
-   [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
-   ```
+嘗AEM試將生成從Java 8切換到11時，Cloud Manager生成可能失敗。 如果遇到以下錯誤，則需要刪除 `maven-scr-plugin` 將所有OSGi注釋轉換為OSGi R6注釋。
 
-* 對於Cloud Manager版本， `maven-enforcer-plugin` 錯誤 `"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion"`。 這是已知問題，因為Cloud Manager使用不同版本的Java運行maven命令而不是編譯代碼。 暫時省略 `requireJavaVersion` 從 `maven-enforcer-plugin` 配置。
+```text
+[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
+```
+
+有關如何刪除此插件的說明，請參見 [給。](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)
+
+## 從Java 8切換到Java 11後，我的生成失敗，出現有關RequireJavaVersion的錯誤。 我能做什麼？ {#build-fails-requirejavaversion}
+
+對於Cloud Manager版本， `maven-enforcer-plugin` 失敗，出現此錯誤。
+
+```text
+"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
+```
+
+這是已知問題，因為Cloud Manager使用不同版本的Java運行maven命令而不是編譯代碼。 簡單省略 `requireJavaVersion` 從 `maven-enforcer-plugin` 配置。
 
 ## 代碼質量檢查失敗，我們的部署停滯。 有辦法繞過這張支票嗎？ {#deployment-stuck}
 
-除安全評級之外的所有代碼質量檢查失敗都是非關鍵度量，因此可以通過擴展結果UI中的項來繞過它們。
-
-中的用戶 [部署管理器、程式管理器或業務所有者](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md) 角色可以覆蓋問題，在這種情況下，管道將繼續。 這些用途還可以接受問題，在這種情況下，管線會因故障而停止。
+是. 除安全評級之外的所有代碼質量檢查失敗都是非關鍵度量，因此可以通過擴展結果UI中的項來繞過它們。
 
 查看文檔 [代碼質量測試](/help/implementing/cloud-manager/code-quality-testing.md) 的子菜單。
 
-## 是否可以將SNAPSHOT用於Maven項目的版本？ 軟體包和捆綁jar檔案的版本控制如何用於階段和生產部署？ {#snapshot-version}
+## 是否可以將SNAPSHOT用於Maven項目的版本？ {#use-snapshot}
 
-以下方案涉及用於階段和生產部署的包和捆綁包jar檔案版本控制。
+是. 對於開發人員部署， Git分支 `pom.xml` 檔案必須包含 `-SNAPSHOT` 在 `<version>` 值。
 
-* 對於開發人員部署， Git分支 `pom.xml` 檔案必須包含 `-SNAPSHOT` 在 `<version>` 值。
-   * 這允許在版本未更改時仍安裝後續部署。 在開發人員部署中，不會為maven內部版本添加或生成自動版本。
+這允許在版本未更改時仍安裝後續部署。 在開發人員部署中，不會為maven內部版本添加或生成自動版本。
 
-* 在階段和生產部署中，自動版本生成為 [記錄在此。](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+也可以將版本設定為 `-SNAPSHOT` 用於階段和生產構建或部署。 Cloud Manager會自動設定正確的版本號，並以Git為您建立標籤。 如果需要，可以稍後引用此標籤。
 
-* 對於階段和生產部署中的自定義版本控制，請設定一個適當的三部分版本，如 `1.0.0`。 每次部署到生產環境時都增加版本。
+## 軟體包和捆綁包版本控制在階段和生產部署中如何工作？ {#snapshot-version}
 
-* Cloud Manager會自動將其版本添加到舞台和生產構建中並建立Git分支。 不需要特殊配置。 如果未按前面所述設定主版本，則部署仍將成功，並自動設定版本。
+在階段和生產部署中，自動版本生成為 [記錄在此。](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
 
-* 可以將版本設定為 `-SNAPSHOT` 用於無問題的階段和生產構建或部署。 Cloud Manager會自動設定正確的版本號，並以Git為您建立標籤。 如果需要，可以稍後引用此標籤。
+對於階段和生產部署中的自定義版本控制，請設定一個適當的三部分版本，如 `1.0.0`。 每次部署到生產環境時都增加版本。
 
-* 如果要在開發環境中嘗試一些實驗代碼，可以建立新的git分支並設定管道以使用該分支。
-   * 當部署失敗時，此功能非常有用，您希望與較舊版本的代碼test，以確定導致故障的更改。
-
-   * 下面的git命令將建立一個名為 `testbranch1` 基於預先存在的提交 `485548e4fbafbc83b11c3cb12b035c9d26b6532b`。  此分支可在Cloud Manager中使用，而不影響任何其他分支。
-
-   ```shell
-   git push origin 485548e4fbafbc83b11c3cb12b035c9d26b6532b:refs/heads/testbranch1
-   ```
-
-   * 查看 [git文檔](https://git-scm.com/book/en/v2/Git-Internals-Git-References) 的子菜單。
-
-   * 如果以後要刪除test分支，請使用delete命令：
-
-   ```shell
-   git push origin --delete testbranch1
-   ```
+Cloud Manager會自動將其版本添加到舞台和生產構建中並建立Git分支。 不需要特殊配置。 如果未按前面所述設定主版本，則部署仍將成功，並自動設定版本。
 
 ## 我的maven生成對Cloud Manager部署失敗，但是它在本地生成，沒有錯誤。 怎麼了？ {#maven-build-fail}
 
-請參閱 [Git資源](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) 的子菜單。
+請參閱 [此git資源](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) 的子菜單。
 
 ## 如果Cloud Manager部署在as a Cloud Service的部署步驟失敗，我該怎麼辦AEM? {#cloud-manager-deployment-cloud-service}
 
@@ -88,7 +80,7 @@ Caused by: org.apache.sling.api.resource.PersistenceException: Unable to commit 
 Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventAdminAsyncThread #7] org.apache.sling.distribution.journal.impl.publisher.DistributionPublisher [null] Error processing distribution package` `dstrpck-1583514457813-c81e7751-2da6-4d00-9814-434187f08d32. Retry attempts 344/infinite. Message: Error trying to extract package at path /etc/packages/com.myapp/myapp-base.ui.content-5.1.0-SNAPSHOT.
 ```
 
-在這個例子中， `sling-distribution-importer` 用戶需要對中定義的內容路徑的附加權限 `ui.content package`。  這通常意味著您需要為兩者添加權限 `/conf` 和 `/var`。
+的 `sling-distribution-importer` 用戶需要對中定義的內容路徑的附加權限 `ui.content package`。  這通常意味著您需要為兩者添加權限 `/conf` 和 `/var`。
 
 解決方案是 [RepositoryInitializer OSGi配置](/help/implementing/deploying/overview.md#repoint) 指令碼到應用部署包，以添加ACL `sling-distribution-importer` 。
 
@@ -97,7 +89,9 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 這是一個例子 [org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) 添加對 `sling-distribution-importer` 。  此配置在以下項下添加權限 `/var`。  下面的此xml檔案 [1] 需要添加到應用程式套件中 `/apps/myapp/config` （其中myapp是儲存應用程式碼的資料夾）。
 org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
 
-如果添加RepositoryInitializer OSGi配置未解決錯誤，則可能是由於以下其他問題之一所致。
+## 在as a Cloud Service的部署步驟中，My Cloud Manager部署失敗，AEM並且我已經擁有RepositoryInitializer OSGi配置。 我還能做什麼？ {#build-failures}
+
+如果 [添加RepositoryInitializer OSGi配置](##cloud-manager-deployment-cloud-service) 未解決錯誤，可能是由於這些附加問題之一。
 
 * 部署可能因OSGi配置錯誤而失敗，該配置中斷了現成服務。
    * 在部署期間檢查日誌，查看是否存在明顯錯誤。

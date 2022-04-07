@@ -3,9 +3,9 @@ title: 配置非生產管道
 description: 瞭解如何配置非生產管道以在部署到生產環境之前test代碼的質量。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1119'
 ht-degree: 0%
 
 ---
@@ -74,6 +74,7 @@ ht-degree: 0%
    >查看文檔 [添加和管理儲存庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 瞭解如何在雲管理器中添加和管理儲存庫。
 
    * **Git分支**  — 此選項定義管線中應從哪個分支檢索代碼。
+      * 輸入分支名稱的前幾個字元，此欄位的自動完成功能將查找匹配的分支以幫助您選擇。
    * **代碼位置**  — 此選項定義選定回購的分支中的路徑，管道應從中檢索代碼。
 
    ![前端管線](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
@@ -102,7 +103,8 @@ ht-degree: 0%
    >查看文檔 [添加和管理儲存庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 瞭解如何在雲管理器中添加和管理儲存庫。
 
    * **Git分支**  — 此選項定義管線中應從哪個分支檢索代碼。
-   * **忽略Web層配置** -
+      * 輸入分支名稱的前幾個字元，此欄位的自動完成功能將查找匹配的分支以幫助您選擇。
+   * **忽略Web層配置**  — 選中後，管道將不部署您的Web層配置。
 
    ![全堆棧管線](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 

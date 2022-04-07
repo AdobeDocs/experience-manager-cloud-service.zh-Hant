@@ -3,9 +3,9 @@ title: 配置生產管線
 description: 瞭解如何配置生產管道以構建代碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,7 @@ ht-degree: 0%
    >查看文檔 [添加和管理儲存庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 瞭解如何在雲管理器中添加和管理儲存庫。
 
    * **Git分支**  — 此選項定義管線中應從哪個分支檢索代碼。
+      * 輸入分支名稱的前幾個字元，此欄位的自動完成功能將查找匹配的分支以幫助您選擇。
    * **代碼位置**  — 此選項定義選定回購的分支中的路徑，管道應從中檢索代碼。
    * **在部署到生產之前暫停**  — 此選項在部署到生產之前暫停管道。
 
@@ -104,6 +105,7 @@ ht-degree: 0%
    >查看文檔 [添加和管理儲存庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 瞭解如何在雲管理器中添加和管理儲存庫。
 
    * **Git分支**  — 此選項定義管線中應從哪個分支檢索代碼。
+      * 輸入分支名稱的前幾個字元，此欄位的自動完成功能將查找匹配的分支以幫助您選擇。
    * **代碼位置**  — 此選項定義選定回購的分支中的路徑，管道應從中檢索代碼。
    * **在部署到生產之前暫停**  — 此選項在部署到生產之前暫停管道。
    * **計畫**  — 此選項允許用戶啟用計畫生產部署。
@@ -150,6 +152,7 @@ Web層配置管道部署HTTPD/Dispatcher配置。 查看文檔 [CI/CD管道](/he
    >查看文檔 [添加和管理儲存庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 瞭解如何在雲管理器中添加和管理儲存庫。
 
    * **Git分支**  — 此選項定義管線中應從哪個分支檢索代碼。
+      * 輸入分支名稱的前幾個字元，此欄位的自動完成功能將查找匹配的分支以幫助您選擇。
    * **代碼位置**  — 此選項定義選定回購的分支中的路徑，管道應從中檢索代碼。
       * 對於Web層配置管道，這通常是包含 `conf.d`。 `conf.dispatcher.d`, `opt-in` 的子菜單。
       * 例如，如果項目結構是從 [原型AEM計畫，](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 那條路是 `/dispatcher/src`。
