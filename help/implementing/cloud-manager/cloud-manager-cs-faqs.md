@@ -2,9 +2,9 @@
 title: Cloud Manager常見問題
 description: 在as a Cloud Service中查找有關Cloud Manager的最常見問題的答AEM案。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 5f4bbedaa5c4630d6f955bb0986e8b32444d6aa3
+source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,9 @@ ht-degree: 0%
 
 是. 您需要添加 `maven-toolchains-plugin` 為Java 11設定。
 
-* 這是有記錄的 [這裡](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)。
-* 例如，請參見 [wknd項目示例項目代碼](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
+流程已記錄 [這裡](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)。
+
+例如，請參見 [wknd項目示例項目代碼](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
 
 ## 在從Java 8切換到Java 11後，我的生成失敗，並出現有關maven-scr插件的錯誤。 我能做什麼？ {#build-fails-maven-scr-plugin}
 
@@ -33,7 +34,7 @@ ht-degree: 0%
 
 ## 從Java 8切換到Java 11後，我的生成失敗，出現有關RequireJavaVersion的錯誤。 我能做什麼？ {#build-fails-requirejavaversion}
 
-對於Cloud Manager版本， `maven-enforcer-plugin` 失敗，出現此錯誤。
+對於Cloud Manager版本， `maven-enforcer-plugin` 可能會因此錯誤而失敗。
 
 ```text
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
@@ -55,7 +56,9 @@ ht-degree: 0%
 
 也可以將版本設定為 `-SNAPSHOT` 用於階段和生產構建或部署。 Cloud Manager會自動設定正確的版本號，並以Git為您建立標籤。 如果需要，可以稍後引用此標籤。
 
-## 軟體包和捆綁包版本控制在階段和生產部署中如何工作？ {#snapshot-version}
+有關版本處理的詳細資訊包括 [記錄在此。](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+
+## 軟體包和捆綁包版本控制如何用於階段和生產部署？ {#snapshot-version}
 
 在階段和生產部署中，自動版本生成為 [記錄在此。](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
 
@@ -86,12 +89,11 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 
 在上一個示例錯誤中，包 `myapp-base.ui.content-*.zip` 包含內容 `/conf` 和 `/var/workflow`。 為使部署成功， `sling-distribution-importer` 這些道路是必要的。
 
-這是一個例子 [org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) 添加對 `sling-distribution-importer` 。  此配置在以下項下添加權限 `/var`。  下面的此xml檔案 [1] 需要添加到應用程式套件中 `/apps/myapp/config` （其中myapp是儲存應用程式碼的資料夾）。
-org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
+這是一個 [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi配置，它為 `sling-distribution-importer` 。  該配置在 `/var`。  必須將此配置添加到以下應用程式套件： `/apps/myapp/config` （其中myapp是儲存應用程式碼的資料夾）。
 
-## 在as a Cloud Service的部署步驟中，My Cloud Manager部署失敗，AEM並且我已經擁有RepositoryInitializer OSGi配置。 我還能做什麼？ {#build-failures}
+## 在as a Cloud Service的部署步驟中，My Cloud Manager部署失敗AEM，並且我已添加了RepositoryInitializer OSGi配置。 我還能做什麼？ {#build-failures}
 
-如果 [添加RepositoryInitializer OSGi配置](##cloud-manager-deployment-cloud-service) 未解決錯誤，可能是由於這些附加問題之一。
+如果 [添加RepositoryInitializer OSGi配置](#cloud-manager-deployment-cloud-service) 未解決錯誤，可能是由於這些附加問題之一。
 
 * 部署可能因OSGi配置錯誤而失敗，該配置中斷了現成服務。
    * 在部署期間檢查日誌，查看是否存在明顯錯誤。
@@ -127,6 +129,6 @@ setting variables... !
 Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/222/variables (403 Forbidden)
 ```
 
-在這種情況下，需要將執行這些命令的用戶添加到 **部署管理** 在Admin Console中。
+在這種情況下，需要將執行這些命令的用戶添加到 **部署管理器** 在Admin Console中。
 
 請參閱 [API權限](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md) 的子菜單。
