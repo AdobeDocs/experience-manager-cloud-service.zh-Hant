@@ -3,10 +3,10 @@ title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## 簡介 {#apache-and-dispatcher-configuration-and-testing}
 
-本頁介紹調度程式工具以及如何下載和提取它們以及受支援的apache模組，並概要介紹了傳統和靈活模式。 此外，還有關於驗證和調試以及將Dispatcher配置從AMS遷移到AEMas a Cloud Service
+本頁介紹調度程式工具以及如何下載和提取它們以及受支援的apache模組，並概要介紹了傳統和靈活模式。 此外，還有關於驗證和調試以及將Dispatcher配置從AMS遷移到AEMas a Cloud Service的參考。 另請參見 [這個視頻](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) 有關在雲服務環境中部署調度程式檔案的詳細資訊。
 
 ## Dispatcher工具 {#dispatcher-sdk}
 

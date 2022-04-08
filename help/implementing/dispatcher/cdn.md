@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: ef0a4d3c8daf091ef10c7ebb2bcaa562cf4357fa
+source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 7%
 因AEM為Cloud Service隨內置CDN一起提供。 其主要用途，就是透過從瀏覽器附近的邊緣 CDN 節點傳遞可快取的內容，以便減少延遲的情形。它已完全受管理，並且已設定為提供最佳的 AEM 應用程式效能。
 
 托管AEMCDN將滿足大多數客戶的效能和安全要求。 對於發佈層，客戶可以選擇從自己的CDN指向它，他們需要管理它。 這將基於滿足某些先決條件（包括但不限於與其CDN供應商進行舊式整合的客戶很難放棄）而按個例允許。
+
+另外，請參閱以下視頻 [雲5 AEM CDN第1部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) 和 [雲5 AEM CDN第2部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) 有關as a Cloud Service中CDN的其AEM他資訊。
 
 ## 托AEM管CDN  {#aem-managed-cdn}
 
