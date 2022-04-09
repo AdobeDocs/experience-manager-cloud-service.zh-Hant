@@ -2,9 +2,9 @@
 title: 創作商業體驗
 description: 工作商業經驗
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ CIF產品目錄頁是即時呈現的虛擬頁。 因此，不可能為常規頁A
 
 結果按類型分組。
 
-    >[！注釋]
-    >
-    > Omnisearch中的全文搜索不支援關聯的內容片段。 使用SKU或UID查找關聯的內容片段。
+>[!NOTE]
+>
+> Omnisearch中的全文搜索不支援關聯的內容片段。 使用SKU或UID查找關聯的內容片段。
