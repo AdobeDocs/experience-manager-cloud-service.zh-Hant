@@ -2,9 +2,9 @@
 title: 為伺服器端API生成訪問令牌
 description: 瞭解如何通過生成安全的JWT令牌AEM來促進第三方伺服器與as a Cloud Service之間的通信
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: c4f4ce968c17db1f1185ce7be9cad833eaf0b91b
+source-git-commit: fc49b004a61d5f981ac61cca684dc0bacf843443
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->除本文檔外，您還可以參考 [基於令牌的AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)。
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
 
 ## 伺服器到伺服器流 {#the-server-to-server-flow}
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### 獲取AEMas a Cloud Service憑據 {#fetch-the-aem-as-a-cloud-service-credentials}
 
-對as a Cloud Service開發人員控AEM制台具有訪問權限的用戶將看到給定環境的開發人員控制台中的整合頁籤以及兩個按鈕。 具有「AEMas a Cloud Service環境」管理員角色的用戶可以 **生成服務憑據** 按鈕，生成並顯示服務憑據json，該憑據將包含非伺服器所需的所有資訊AEM，包括客戶端id、客戶機密鑰、私鑰、證書以及環境的作者和發佈層的配置，而不管選擇什麼pod。
+對as a Cloud Service開發人員控AEM制台具有訪問權限的用戶將看到給定環境的開發人員控制台中的整合頁籤以及兩個按鈕。 A user with the AEM as a Cloud Service Environment administrator role can click the **Generate Service Credentials** button to generate and display the service credentials json, which will contain all the information required for the non AEM server, including client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
 
 ![JWT Generation](assets/JWTtoken3.png)
 
@@ -63,11 +63,11 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->IMS組織管理員（通常是通過雲管理器設定環境的同一用戶），也應是AEM作者上的「用戶AEM」或AEM「管理員產品配置檔案」的成員，必須首先訪問開發人員控制台並按一下 **生成服務憑據** 的子菜單。 如果IMS組織管理員沒有這樣做，就會收到一條消息通知他們他們需要IMS組織管理員角色。
+>IMS組織管理員（通常是通過雲管理器設定環境的同一用戶），也應是AEM作者上的「用戶AEM」或AEM「管理員產品配置檔案」的成員，必須首先訪問開發人員控制台並按一下 **生成服務憑據** 的子菜單。 If the IMS org administrator has not done this, a message will inform them that they need the IMS org Administrator role.
 
 ### 在非服AEM務器上安裝服務憑AEM據 {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-調用的AEM非應用AEM程式應能訪問as a Cloud Service憑AEM據，將其視為機密。
+The non-AEM application making calls to AEM should be able to access the AEM as a Cloud Service credentials, treating it as a secret.
 
 ### 生成JWT令牌，並將其交換為訪問令牌 {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
@@ -115,7 +115,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## 顯影劑流 {#developer-flow}
 
-開發人員可能希望使用其非應用程式(在其筆記型電腦上運行或托AEM管)的開發實例進行test，該實例向開發as a Cloud Service的開發環境提AEM出請求。 但是，由於開發人員不一定具有IMS管理員角色權限，因此我們不能假設他們能夠生成常規伺服器到伺服器流中描述的JWT承載。 因此，我們為開發者直接生成訪問令牌的機制，該訪問令牌可以用於他AEM們有權訪問的as a Cloud Service環境的請求。
+Developers will likely want to test using a development instance of their non-AEM application (either running on their laptop or hosted) that makes requests to a development AEM as a Cloud Service dev environment. 但是，由於開發人員不一定具有IMS管理員角色權限，因此我們不能假設他們能夠生成常規伺服器到伺服器流中描述的JWT承載。 因此，我們為開發者直接生成訪問令牌的機制，該訪問令牌可以用於他AEM們有權訪問的as a Cloud Service環境的請求。
 
 查看 [開發人員指南文檔](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) 有關使用as a Cloud Service開發者控制台所需AEM權限的資訊。
 
@@ -123,7 +123,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 >
 >本地開發訪問令牌的有效期最長為24小時，此後必須使用相同方法重新生成該令牌。
 
-開發人員可以使用此令牌從其非test應AEM用程式向AEMas a Cloud Service環境進行呼叫。 通常，開發人員會將此令牌與非應用程式一起AEM使用在自己的筆記型電腦上。 此外，AEM作為雲通常是非生產環境。
+開發人員可以使用此令牌從其非test應AEM用程式向AEMas a Cloud Service環境進行呼叫。 通常，開發人員會將此令牌與非應用程式一起AEM使用在自己的筆記型電腦上。 Also, the AEM as a Cloud is typically a non-production environment.
 
 開發人員流包括以下步驟：
 
@@ -154,7 +154,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 >
 > 按一下 **刷新服務憑據** 按鈕，舊憑據將一直註冊到過期，但只有最近的憑據集可以在任何時候從開發人員控制台查看。
 
-## 服務憑據吊銷 {#service-credentials-revocation}
+## Service Credentials Revocation {#service-credentials-revocation}
 
 如果需要撤銷憑據，您需要使用以下步驟向客戶支援提交請求：
 
