@@ -3,9 +3,9 @@ title: CI/CD管道
 description: 瞭解Cloud Manager的CI/CD管道，以及如何使用這些管道來高效地部署代碼。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6c246444f48440c64af0951e75f2071c00e477fa
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,12 @@ Cloud Manager提供兩種類型的管道：
 * [非生產管道](#non-prod-pipeline)
 
 ![管線類型](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
+
+## 視頻概述 {#video}
+
+要快速查看管道類型，請查看此短視頻。
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)
 
 ## 生產管線 {#prod-pipeline}
 
