@@ -2,9 +2,9 @@
 title: 上線
 description: 瞭解如何在代碼和內容準備好雲後執行遷移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 在從生產環境進行初始遷移後，您必須執行增量頂置，以確保您的內容在雲實例上是最新的。 因此，建議您遵循以下最佳做法：
 
 * 收集有關內容量的資料。 例如：每週，兩週或一個月。
-* 確保以這樣的方式規劃追加內容，以避免超過48小時的內容提取和攝取。 建議這樣做，以便內容補充將適合週末時間。
+* 確保以這樣的方式規劃追加內容，以避免超過48小時的內容提取和攝取。 建議這樣做，以便內容頂部內容將適合週末時間範圍。
 * 計畫所需的頂層數量，並使用這些估計值在「投入使用」日期前後進行計畫。
 
 ## 確定遷移的代碼和內容凍結時間表 {#code-content-freeze}
@@ -82,7 +82,7 @@ ht-degree: 0%
 執行生產遷移時，應避免從克隆運行內容傳輸工具，因為：
 
 * 如果客戶要求在自上而下的遷移期間遷移內容版本，則從克隆執行內容傳輸工具不會遷移這些版本。 即使克隆是從即時作者頻繁重新建立的，每次建立克隆時，內容傳輸工具將使用的檢查點將被重置以計算增量。
-* 由於無法將克隆作為一個整體進行刷新，因此必須使用ACL查詢包來打包和安裝從生產到克隆添加或編輯的內容。 此方法的問題在於源實例上任何已刪除的內容將永遠無法訪問克隆，除非從源實例和克隆中手動刪除它。 這就帶來了這樣一種可能性，即在克隆和AEMas a Cloud Service上不會刪除生產上刪除的內容。
+* 由於無法將克隆作為一個整體進行刷新，因此必須使用ACL查詢包來打包和安裝從生產到克隆添加或編輯的內容。 此方法的問題在於源實例上任何已刪除的內容將永遠無法訪問克隆，除非從源實例和克隆中手動刪除它。 這會導致在克隆和AEMas a Cloud Service上刪除生產上刪除的內容。
 
 **在執行內容遷移AEM時優化源上的負載**
 
@@ -113,13 +113,45 @@ ht-degree: 0%
 
 ## 上線核對表 {#Go-Live-Checklist}
 
-請查看下面列出的活動清單，以確保您能夠順利成功執行遷移：
+請查看此活動清單，以確保順利成功執行遷移。
 
-* 計畫代碼和內容凍結期。 另請參閱 [遷移的代碼和內容凍結時間表](#code-content-freeze)。
-* 執行最終內容向上
-* 完成測試反覆項目
-* 執行效能與安全性測試
-* 完全移轉 並在生產實例上執行遷移
+* 運行具有功能和UI測試的端到端生產管線，以確保 **始終為當前** 產品AEM體驗。 請參閱以下資源。
+   * [版AEM本更新](/help/implementing/deploying/aem-version-updates.md)
+   * [自定義功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
+   * [UI測試](/help/implementing/cloud-manager/ui-testing.md)
+* 將內容遷移到生產環境，並確保在準備測試時提供相關子集。
+   * 請注意，DevOps的最AEM佳實踐意味著代碼從開發向生產環境移動， [內容從生產環境中移下。](/help/overview/enterprise-devops.md#code-movement)
+* 計畫代碼和內容凍結期。
+   * 另請參見一節 [遷移的代碼和內容凍結時間表](#code-content-freeze)
+* 執行最後內容的上行操作。
+* 驗證調度程式配置。
+   * 使用本地調度程式驗證程式，該程式便於在本地配置、驗證和模擬調度程式
+      * [設定本地調度程式工具。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+   * 仔細檢查虛擬主機配置。
+      * 最簡單（和預設）的解決方案是 `ServerAlias *` 在虛擬主機檔案中 `/dispatcher/src/conf.d/available_vhostsfolder`。
+         * 這將允許產品功能test、調度程式快取無效和克隆使用的主機別名發揮作用。
+      * 但是，如果 `ServerAlias *` 不可接受，至少以下 `ServerAlias` 除了自定義域外，還必須允許輸入：
+         * `localhost`
+         * `*.local`
+         * `publish*.adobeaemcloud.net`
+         * `publish*.adobeaemcloud.com`
+* 配置CDN、SSL和DNS。
+   * 如果您正在使用自己的CDN，請輸入支援票證以配置適當的路由。
+      * 請參閱一節 [客戶CDN指向托AEM管CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) 的子目錄。
+      * 您需要根據CDN供應商的文檔配置SSL和DNS。
+   * 如果您沒有使用其他CDN，請按照以下文檔管理SSL和DNS:
+      * 管理SSL證書
+         * [管理SSL證書簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [管理SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      * 管理自定義域名(DNS)
+         * [自定義域名簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         * [添加自定義域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         * [管理自定義域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+   * 切記驗證DNS記錄的TTL集。
+      * TTL是DNS記錄在請求伺服器更新之前在快取中停留的時間。
+      * 如果TTL很高，則對DNS記錄的更新傳播需要更長的時間。
+* 運行滿足您的業務需求和目標的效能和安全test。
+* 切換，確保在不進行任何新部署或內容更新的情況下執行實際上線。
 
 在執行遷移時需要重新校準任務時，您始終可以引用該清單。
 
