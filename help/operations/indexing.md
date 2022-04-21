@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
+source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2442'
 ht-degree: 1%
 
 ---
@@ -60,17 +60,19 @@ ht-degree: 1%
 
 請注意，現成索引的自定義和完全自定義索引都需要包含 `-custom-`。 只有完全自定義索引必須以前置詞開頭。
 
-### 準備新索引定義 {#preparing-the-new-index-definition}
+## 準備新索引定義 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->如果自定義現成索引，例如 `damAssetLucene-6`，請從 *Cloud Service環境* 並在上面添加您的自定義項，這樣可確保不會意外刪除所需的配置。 例如， `tika` 節點 `/oak:index/damAssetLucene-6/tika` 是必需的節點，也應是自定義索引的一部分，並且雲SDK中不存在該節點。
+>如果自定義現成索引，例如 `damAssetLucene-6`，請從 *Cloud Service環境* 使用CRX DE包管理器的開發環境(`/crx/packmgr/`)。 然後將配置更名為 `damAssetLucene-6-custom-1`，並在頂部添加您的自定義項。 這可確保不會無意中刪除所需的配置。 例如， `tika` 節點 `/oak:index/damAssetLucene-6/tika` 在雲服務的自定義索引中需要。 雲SDK上不存在該選項。
 
 您需要按照以下命名模式準備包含實際索引定義的新索引定義包：
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
 那就得倒下 `ui.apps/src/main/content/jcr_root`。 目前不支援子根資料夾。
+
+需要設定包的篩選器，以便保留現有（現成索引）。 有兩種方法可以做到這一點：或者，篩選器設定為 `<filter root="/oak:index/" mode="merge"/>` 檔案 `ui.apps/src/main/content/META-INF/vault/filter.xml`，或每個自定義（或自定義）索引需要在篩選器部分中單獨列出，例如 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`。 如果是後一種情況，則每次更改版本時，都需要調整篩選器。
 
 上面示例中的包生成為 `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`。
 
@@ -80,7 +82,7 @@ ht-degree: 1%
 >
 >`noIntermediateSaves=true`
 
-### 部署索引定義 {#deploying-index-definitions}
+## 部署索引定義 {#deploying-index-definitions}
 
 >[!NOTE]
 >
