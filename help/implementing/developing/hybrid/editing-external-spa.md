@@ -2,9 +2,9 @@
 title: 編輯SPA外部AEM
 description: 本文檔介紹了將獨立內容上載到實SPA例、添AEM加可編輯內容部分以及啟用創作的建議步驟。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
 workflow-type: tm+mt
-source-wordcount: '2127'
+source-wordcount: '2401'
 ht-degree: 0%
 
 ---
@@ -257,6 +257,42 @@ mvn clean install -PautoInstallSinglePackage
 * 如果通過提供，則指向建立新節點的節點的路徑必須有效 `itemPath`。
    * 在本例中， `root/responsivegrid` 必須存在，以便新節點 `text_20` 可以建立。
 * 僅支援葉元件建立。 未來版本將支援虛擬容器和頁面。
+
+### 虛擬容器 {#virtual-containers}
+
+支援添加容器的功能，即使在中尚未建立相應的容AEM器。 該概念和方法類似於 [虛擬葉元件。](#virtual-leaf-components)
+
+前端開發人員可以將容器元件添加到中的適當位置SPA，這些元件在中的編輯器中開啟時將顯示佔位符AEM。 然後，作者可以將元件及其內容添加到容器中，該容器將在JCR結構中建立所需的節點。
+
+例如，如果容器已存在於 `/root/responsivegrid` 開發人員希望添加新的子容器：
+
+![容器位置](assets/container-location.png)
+
+`newContainer` 中尚不存在AEM。
+
+在中編輯包含此元件的頁AEM面時，將顯示一個容器的空佔位符，作者可以將內容添加到該佔位符中。
+
+![容器佔位符](assets/container-placeholder.png)
+
+![JCR中的容器位置](assets/container-jcr-structure.png)
+
+一旦作者將子元件添加到容器中，就會在JCR結構中使用相應名稱建立新容器節點。
+
+![具有內容的容器](assets/container-with-content.png)
+
+![JCR中包含內容的容器](assets/container-with-content-jcr.png)
+
+現在，可以根據作者的要求將更多元件和內容添加到容器中，並且這些更改將被保留。
+
+#### 要求和限制 {#container-limitations}
+
+添加虛擬容器有許多要求，也存在一些限制。
+
+* 用於確定可添加哪些元件的策略將從父容器繼承。
+* 要建立的容器的直接父級必須已存在AEM。
+   * 如果容器 `root/responsivegrid` 容器中已AEM存在，則可以通過提供路徑建立新容器 `root/responsivegrid/newContainer`。
+   * 但是 `root/responsivegrid/newContainer/secondNewContainer` 不可能。
+* 一次只能虛擬建立一個新級別的元件。
 
 ## 其他自定義項 {#additional-customizations}
 
