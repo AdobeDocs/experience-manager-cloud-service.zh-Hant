@@ -19,12 +19,12 @@ ht-degree: 40%
 
 ## 如何準備發行 {#how-to-prepare}
 
-With the continuous release model in [!DNL Adobe Experience Manager] as a Cloud Service, the application is auto updated on an ongoing basis. 有兩種更新類型、功能版本和關鍵更新：
+在 [!DNL Adobe Experience Manager] as a Cloud Service，應用程式會持續自動更新。 有兩種更新類型、功能版本和關鍵更新：
 
-* Feature releases are done with a predictable monthly frequency and are focused on new capabilities and product innovations.
-* 關鍵更新頻繁進行，重點是安全更新、錯誤修復和效能增強。 This ensures that [!DNL Adobe Experience Manager] as a Cloud Service is always up-to-date with any critical fixes.
+* 功能版本以可預測的每月頻率完成，並側重於新功能和產品創新。
+* 關鍵更新頻繁進行，重點是安全更新、錯誤修復和效能增強。 這確保 [!DNL Adobe Experience Manager] as a Cloud Service始終具有任何關鍵修復程式的最新。
 
-除了創新速度， [!DNL Adobe Experience Manager] as a Cloud Service還提供了在即將推出的功能投入生產之前提前一個月預覽這些功能的靈活性。 This allows you to assess the impact of an upcoming release on their organization by test driving the features in your own custom environment and train/prepare the internal users well in advance.
+除了創新速度， [!DNL Adobe Experience Manager] as a Cloud Service還提供了在即將推出的功能投入生產之前提前一個月預覽這些功能的靈活性。 這允許您通過test在您自己的自定義環境中驅動功能並提前培訓/準備內部用戶，來評估即將發佈的版本對其組織的影響。
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ With the continuous release model in [!DNL Adobe Experience Manager] as a Cloud 
 要準備發行，請執行以下操作：
 
 1. 標籤日曆：檢查上的每月版本的關鍵日期 [Experience Manager發佈路線圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 並標籤日曆，為重要活動做好準備，以便準備發佈。
-1. Review the release notes: Read the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) to get familiarized with the release and prerelease features.
+1. 查看發行說明：閱讀 [當前發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md) 瞭解發佈和預發佈功能。
 1. 訪問並嘗試新功能：啟用 [預釋放通道](/help/release-notes/prerelease.md) 在非生產環境中，並開始嘗試在自定義環境中評估這些功能。
 1. 培訓用戶：使用文檔和Experience League資源，讓用戶快速掌握並精通新功能。
 
