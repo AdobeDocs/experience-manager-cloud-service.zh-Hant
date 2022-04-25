@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發指導方針
 description: AEM as a Cloud Service 開發指導方針
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
+source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2444'
 ht-degree: 2%
 
 ---
@@ -225,15 +225,17 @@ Adobe監控應用程式效能，並採取措施在出現惡化時予以解決。
 * SMTP伺服器主機名應設定為$[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * 配置高級網路時，SMTP伺服器埠應設定為API調用中使用的portForws參數中設定的原始代理埠的值。 例如，30465（而不是465）
 
-如果已請求埠465，還建議：
+SMTP伺服器埠應設定為 `portDest` 在配置高級網路時在API調用中使用的portForws參數中設定的值 `portOrig` 值應是一個在所需範圍30000 - 30999內的有意義值。 例如，如果SMTP伺服器埠為465，則埠30465應用作 `portOrig` 值。
 
-* 集 `smtp.port` 至 `465`
-* 集 `smtp.ssl` 至 `true`
+在此情況下，假定在配置中需要啟用SSL **第CQ天郵件服務OSGI** 服務：
 
-如果已請求埠587:
+* 設定 `smtp.port` 至 `30465`
+* 設定 `smtp.ssl` 至 `true`
 
-* 集 `smtp.port` 至 `587`
-* 集 `smtp.ssl` 至 `false`
+或者，如果目標埠為587，則 `portOrig` 值30587。 假定應禁用SSL，則Day CQ Mail Service OSGI服務的配置：
+
+* 設定 `smtp.port` 至 `30587`
+* 設定 `smtp.ssl` 至 `false`
 
 的 `smtp.starttls` 在運行時，as a Cloud Service將AEM自動將屬性設定為適當的值。 因此，如果 `smtp.ssl` 設定為true, `smtp.startls` 忽略。 如果 `smtp.ssl` 設定為false, `smtp.starttls` 設定為true。 這不管 `smtp.starttls` 在OSGI配置中設定的值。
 
