@@ -1,11 +1,11 @@
 ---
 title: 無AEM頭開發者之旅
-description: 從此開始，在將Adobe Experience Manager(AEM)as a Cloud Service用作無頭內容管理系統(CMS)時，進行有指導的旅行。 此過程為您提供開發第一個無頭應用程式所需的所有資訊。
+description: 從此開始，在Adobe Experience Manager(AEM)as a Cloud Service使用內容模型、內容片段和GraphQL API等功能以無頭內容管理系統(CMS)為無頭體驗提供動力時，可進行有指導的旅行。 此過程為您提供開發第一個無頭應用程式所需的所有資訊。
 landing-page-description: 從這裡開始，逐步引導您了解 AEM 的無周邊功能、其功能，以及如何在您的第一個開發專案中運用這些功能。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
+source-git-commit: 21bd90fa61cfb1c567a7eea4b439206c38b49a5f
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1307'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ## 簡介 {#introduction}
 
-無頭實施將放棄頁面和元件管理，這與整個堆棧解決方案中的傳統做法一樣，並側重於建立不依賴渠道、可重複使用的內容片段及其跨渠道交付。 它是一種實現數字型驗的現代動態發展模式。
+無頭實現AEM使用內容片段模型和內容片段來重點建立結構化、通道中性和可重複使用的內容片段及其跨通道傳遞。 為了實現這一點，它放棄了傳統的全堆棧解決方案中的頁面和元件管理。 它是一種實現數字型驗的現代動態發展模式。
 
 本指南引導您瞭解中最無頭的實施主AEM題，以便在完成後：
 
