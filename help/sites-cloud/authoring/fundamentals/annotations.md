@@ -2,9 +2,9 @@
 title: 新增頁面註解
 description: 使用注釋模式將注釋和草繪保留在頁面上，就像使用便箋來幫助內容審閱過程一樣
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
+source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
