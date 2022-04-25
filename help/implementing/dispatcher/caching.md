@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: b490d581532576bc526f9bd166003df7f2489495
+source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 1%
+source-wordcount: '1878'
+ht-degree: 0%
 
 ---
 
@@ -31,14 +31,18 @@ Define DISABLE_DEFAULT_CACHING
 例如，當您的業務邏輯需要對帳齡標題（具有基於日曆日的值）進行微調時，這可能很有用，因為預設情況下帳齡標題設定為0。 也就是說， **關閉預設快取時，請小心。**
 
 * 可通過定義所有HTML/文本內容來覆蓋 `EXPIRATION_TIME` 變數 `global.vars` 使用AEMas a Cloud ServiceSDK Dispatcher工具。
-* 以下apache mod_headers指令可在更細的粒度級別上覆蓋：
+* 可以在更精細的粒度級別上覆蓋，包括使用以下apache mod_headers指令獨立控制CDN和瀏覽器快取：
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
+        Header set Surrogate-Control "max-age=3600"
         Header set Age 0
    </LocationMatch>
    ```
+
+   >[!NOTE]
+   >Surgote-Control標頭應用於Adobe管理的CDN。 如果使用 [客戶管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN)，根據您的CDN提供程式，可能需要不同的標頭。
 
    在設定全局快取控制標頭或與寬規則運算式匹配的標頭時，請小心謹慎，以使這些標頭不會應用於您可能希望保持私有的內容。 考慮使用多個指令來確保以細粒度方式應用規則。 使用這種方法AEM，如果as a Cloud Service檢測到快取報頭已應用到它檢測到的調度程式無法執行的內容，則它將刪除快取報頭，如調度程式文檔中所述。 為了強制始終AEM應用快取頭，您可以添加 **總是** 選項：
 
@@ -110,6 +114,73 @@ Define DISABLE_DEFAULT_CACHING
 * 無預設快取
 * 不能使用 `EXPIRATION_TIME` 用於html/text檔案類型的變數
 * 通過指定適當的regex，可以使用html/text節中描述的相同LocationMatch策略來設定快取過期
+
+### Furthur優化
+
+* 避免使用 `User-Agent` 作為 `Vary` 標題。 預設調度程式設定的較舊版本（早於原型版本28）包括了這一點，我們建議您使用以下步驟刪除該設定。
+   * 在中查找vhost檔案 `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
+   * 刪除或注釋掉行： `Header append Vary User-Agent env=!dont-vary` 從所有vhost檔案中，預設為vhost，該值為只讀
+* 使用 `Surrogate-Control` 控制獨立於瀏覽器快取的CDN快取的報頭
+* 考慮應用 [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) 和 [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) 指令，允許後台刷新並避免快取未命中，使用戶能夠保持內容快速、新鮮。
+   * 應用這些指令有多種方法，但需要添加30分鐘 `stale-while-revalidate` 到所有快取控制標頭是一個良好的起點。
+* 下面是各種內容類型的一些示例，在設定自己的快取規則時，這些內容可作為指南。 請仔細考慮並test您的特定設定和要求：
+
+   * 快取可變客戶端庫資源，12h後進行後台刷新。
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * 快取不可變的客戶端庫資源，具有後台刷新，可長期（30天），以避免MISS。
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * 快取HTML頁面5分鐘，後台刷新1h（在瀏覽器上）,CDN上刷新12h。 始終會添加Cache-Control標頭，因此必須確保/content/*下的匹配html頁面是公開的。 否則，請考慮使用更具體的規則運算式。
+
+      ```
+      <LocationMatch "^/content/.*\.html$">
+         Header unset Cache-Control
+         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * 快取內容服務/Sling模型導出器json響應，時間為5分鐘，後台刷新時間為瀏覽器1h,CDN為12h。
+
+      ```
+      <LocationMatch "^/content/.*\.model\.json$">
+         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * 通過後台刷新，從核心映像元件中長期（30天）快取不可變的URL，以避免MISS。
+
+      ```
+      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * 快取DAM中可變資源（如影像和視頻）,24小時後進行背景刷新，以避免MISS
+
+      ```
+      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
 
 ## Dispatcher快取無效 {#disp}
 
