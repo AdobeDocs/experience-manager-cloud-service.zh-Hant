@@ -2,7 +2,7 @@
 title: 上線
 description: 瞭解如何在代碼和內容準備好雲後執行遷移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
+source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 0%
@@ -120,7 +120,7 @@ ht-degree: 0%
    * [自定義功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [UI測試](/help/implementing/cloud-manager/ui-testing.md)
 * 將內容遷移到生產環境，並確保在準備測試時提供相關子集。
-   * 請注意，DevOps的最AEM佳實踐意味著代碼從開發向生產環境移動， [內容從生產環境中移下。](/help/overview/enterprise-devops.md#code-movement)
+   * 請注意，DevOps的最佳AEM實踐意味著代碼從開發向生產環境移動，而內容從生產環境向下移動。
 * 計畫代碼和內容凍結期。
    * 另請參見一節 [遷移的代碼和內容凍結時間表](#code-content-freeze)
 * 執行最後內容的上行操作。
