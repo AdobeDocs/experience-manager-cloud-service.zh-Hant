@@ -2,9 +2,9 @@
 title: 部署代碼
 description: 瞭解如何在as a Cloud Service中使用Cloud Manager管道部署AEM代碼。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,19 @@ ht-degree: 0%
 此過程一直持續到部署到達拓撲中的所有發佈者和調度程式為止。
 
 ![生產部署階段](assets/production-deployment.png)
+
+## 超時 {#timeouts}
+
+如果留在等待用戶反饋，以下步驟將超時：
+
+| 步驟 | 逾時 |
+|--- |--- |
+| 代碼質量測試 | 14天 |
+| 安全測試 | 14天 |
+| 效能測試 | 14天 |
+| 申請審批 | 14天 |
+| 計畫生產部署 | 14天 |
+| CSE支援 | 14天 |
 
 ## 部署過程 {#deployment-process}
 
