@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,31 @@ ht-degree: 0%
 
    ![智慧替換對象](/help/assets/assets/content-automation-objectreplace.png)
 
+## 為as a Cloud Service程式啟AEM用內容自動化 {#enable-content-automation}
+
+要使用雲管理器為as a Cloud Service程式啟AEM用內容自動附加程式：
+
+1. 請與您的客戶代表聯繫，以許可「內容自動化」附加模組。
+1. 訪問Cloud Manager，然後使用組織選擇器切換到您的組織。
+1. 按一下 **[!UICONTROL 添加程式]** 並指定程式名。
+1. 按一下 **[!UICONTROL 繼續]**。
+1. 展開 **[!UICONTROL 資產]** 選擇 **[!UICONTROL 內容自動化]**。
+1. 按一下&#x200B;**[!UICONTROL 建立]**。
+1. 將管線運行到 [將更改部署到雲管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。
+
+如果您需要將Content Automation附加模組添加到Cloud Manager中AEM的現有as a Cloud Service程式：
+
+1. 按一下……在程式卡上。
+
+1. 選擇 **[!UICONTROL 編輯程式]** ，然後選擇 **[!UICONTROL 解決方案和附加模組]** 頁籤。
+
+1. 展開 **[!UICONTROL 資產]** 選擇 **[!UICONTROL 內容自動化]**。
+1. 按一下 **[!UICONTROL 更新]**。
+1. 將管線運行到 [將更改部署到雲管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。
+
 ## 使用處理配置檔案批量編輯您的創意資產 {#process-assets}
 
 要使用處理配置檔案自動建立變體，請執行以下步驟：
-
-1. 聯繫人 [Adobe客戶支援](https://experienceleague.adobe.com/#support) 才能拿到許可證。
 
 1. 導航到 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理配置檔案]**。
 
