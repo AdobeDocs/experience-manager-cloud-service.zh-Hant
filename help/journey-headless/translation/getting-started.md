@@ -1,10 +1,10 @@
 ---
-title: 開始無AEM頭翻譯
+title: 開始無頭AEM翻譯
 description: 瞭解如何組織無頭內容以及翻譯工AEM具的工作。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: d5a7138cd5e3e9f0febe20b7447589beadc45554
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1409'
 ht-degree: 0%
 
 ---
@@ -88,15 +88,11 @@ ht-degree: 0%
       ![內容片段模型編輯器](assets/content-fragment-model-editor.png)
 1. 按一下或按一下模型的其中一個欄位。 AEM標籤，該欄位的詳細資訊顯示在右列中。
    ![內容片段模型編輯器詳細資訊](assets/content-fragment-model-editor-detail.png)
+1. 內容架構器 **可翻譯** 欄位。
 
 >[!TIP]
 >
 >通常，內容架構師負責確定翻譯所需的欄位。 為了瞭解翻譯專家，提供了先前的步驟。
-
-如何管理「內容模型」欄位的翻譯取決於您是否使用預發行的AEMas a Cloud Service。 查看 [「其他資源」部分](#additional-resources) 的子菜單。
-
-* **如果您使用預發行渠道**，內容架構 **可翻譯** 欄位。
-* **如果您不使用預發行渠道**，內容架構師將 **屬性名稱** 欄位。 在旅程的稍後部分，您需要這些資訊。 這些 **屬性名稱**&#x200B;必須通知AEM必須翻譯內容的欄位。
 
 ### 內容片段 {#content-fragments}
 
@@ -170,10 +166,9 @@ ht-degree: 0%
 現在，您瞭解了內容片段是什麼以及內容結構的重要性，我們可以瞭解如何翻譯此內容。 中的翻譯工AEM具功能強大，但在高級別上易於理解。
 
 * **翻譯連接器**  — 連接器是您使用的AEM翻譯服務之間的連結。
-* **翻譯規則**  — 規則定義應翻譯特定路徑下的內容。 僅當您未使用預發行通道時，才AEM需要規則。
 * **翻譯項目**  — 翻譯項目收集應作為單一翻譯工作處理的內容，並跟蹤翻譯的進度，與連接器介面以傳輸要翻譯的內容並從翻譯服務接收回來。
 
-通常只為實例設定一次連接器。 如果需要規則，則按無頭項目設定規則。 然後，您可以使用翻譯項目來翻譯您的內容並使其翻譯不斷更新。
+通常只為實例設定一次連接器。 然後，您可以使用翻譯項目來翻譯您的內容並使其翻譯不斷更新。
 
 ## 下一步是什麼 {#what-is-next}
 
@@ -193,4 +188,3 @@ ht-degree: 0%
 * [確定要翻譯的內容](/help/sites-cloud/administering/translation/rules.md)  — 瞭解翻譯規則如何識別需要翻譯的內容。
 * [配置翻譯整合框架](/help/sites-cloud/administering/translation/integration-framework.md)  — 瞭解如何配置翻譯整合框架以與第三方翻譯服務整合。
 * [管理翻譯項目](/help/sites-cloud/administering/translation/managing-projects.md)  — 瞭解如何在中建立和管理機器和人類翻譯項AEM目。
-* [AEMas a Cloud Service預發行渠道](/help/release-notes/prerelease.md#enable-prerelease)  — 瞭解如何選擇預發行的AEMas a Cloud Service，以嘗試新功能和即將推出的功能。

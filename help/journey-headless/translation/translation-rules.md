@@ -1,10 +1,10 @@
 ---
-title: 配置翻譯規則(AEM無頭)
+title: 配置無頭內容的翻譯規則
 description: 瞭解如何定義翻譯規則以標識翻譯內容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->只有在您不在as a Cloud Service的預發行渠道上，才需要執行此文檔旅程步AEM驟。
+>只有當您不使用 **可翻譯** 內容片段上的標誌。
 >
->* 如果您在預發行頻道，請跳至此行程的下一步 [翻譯內容。](translate-content.md)
->* 如果您不在預發行頻道，請繼續閱讀此文檔。
->
->查看 [「其他資源」部分](#additional-resources) 的子菜單。
+>* 的 **可翻譯** flag會自動為您建立翻譯規則，無需干預。
+>* 的 **可翻譯** 僅當「翻譯整合框架」配置設定為 **[啟用用於翻譯的內容模型欄位。](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* 在TIF配置中啟用此選項將取代任何手動建立的轉換規則。|
+
 
 ## 目標 {#objective}
 
@@ -108,4 +108,3 @@ ht-degree: 0%
 建議您通過查看文檔來進入無頭翻譯過程的下一部分 [翻譯內容，](translate-content.md) 下面是一些附加的可選資源，這些資源對本文檔中提到的一些概念進行了更深入的探討，但不需要繼續進行無頭之旅。
 
 * [確定要翻譯的內容](/help/sites-cloud/administering/translation/rules.md)  — 瞭解翻譯規則如何識別需要翻譯的內容。
-* [AEMas a Cloud Service預發行渠道](/help/release-notes/prerelease.md#enable-prerelease)  — 瞭解如何選擇預發行的AEMas a Cloud Service，以嘗試新功能和即將推出的功能。

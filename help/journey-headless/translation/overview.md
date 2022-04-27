@@ -2,9 +2,9 @@
 title: 無AEM頭翻譯之旅
 description: 從此開始，通過使用功能強大的翻譯工具翻譯無頭內AEM容，進行指導性的旅程。
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1029'
 ht-degree: 1%
 
 ---
@@ -67,9 +67,8 @@ ht-degree: 1%
 | 1 | [瞭解無頭內容以及如何將其翻譯AEM到](learn-about.md) | 學習無頭概念，它們如何AEM映射，以及翻AEM譯理論。 |
 | 2 | [開始無AEM頭翻譯](getting-started.md) | 瞭解如何組織無頭內容以及翻譯工AEM具的工作。 |
 | 3 | [配置翻譯連接器](configure-connector.md) | 瞭解如何連AEM接到翻譯服務。 |
-| 4 | [配置轉換規則](translation-rules.md) | 瞭解如何定義翻譯規則以標識翻譯內容。 |
-| 5 | [翻譯內容](translate-content.md) | 使用翻譯連接器和規則來翻譯無頭內容。 |
-| 6 | [發佈已翻譯的內容](publish-content.md) | 瞭解如何在更新基礎內容時發佈已翻譯的內容並更新翻譯。 |
+| 4 | [翻譯內容](translate-content.md) | 使用翻譯連接器和規則來翻譯無頭內容。 |
+| 5 | [發佈已翻譯的內容](publish-content.md) | 瞭解如何在更新基礎內容時發佈已翻譯的內容並更新翻譯。 |
 
 ## 下一步是什麼 {#what-is-next}
 

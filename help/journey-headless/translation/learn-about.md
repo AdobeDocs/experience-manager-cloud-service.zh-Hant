@@ -1,10 +1,10 @@
 ---
-title: 瞭解無頭內容以及如何將其翻譯AEM到
+title: 瞭解無頭內容並將其翻譯AEM
 description: 學習無頭概念，它們如何AEM映射，以及翻AEM譯理論。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---

@@ -4,9 +4,9 @@ description: 瞭解如何配置翻譯整合框架以與第三方翻譯服務整�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 5ef9ac087ec3feab9c68935b81882451c308daed
+source-git-commit: 3c37b66b63ed19635854cf277aaf7d5f2a7c1fe8
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1522'
 ht-degree: 1%
 
 ---
@@ -39,8 +39,8 @@ ht-degree: 1%
 * [雲字](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM雲](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [林戈泰克](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
 * [智慧靈](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
-* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [瑟斯特蘭](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
 安裝連接器包後，可以為連接器建立雲配置。 通常，您需要提供憑據，以便向翻譯服務進行身份驗證。 有關為Microsoft翻譯器連接器添加雲配置的資訊，請參見 [與Microsoft翻譯器整合](connect-ms-translator.md)。
@@ -109,13 +109,7 @@ ht-degree: 1%
 | 翻譯標記 | 激活此屬性以轉換與資產關聯的標籤。 |
 | 自動執行翻譯 | 選擇此屬性可在建立翻譯項目後自動執行翻譯作業。 選擇此選項時，您沒有機會複查或確定翻譯作業的範圍。 |
 | 禁用僅更新轉換 | 選中此選項後，更新翻譯項目將提交所有可翻譯的欄位以供翻譯，而不僅僅是自上次翻譯後更改的欄位。 |
-| 啟用翻譯內容模型欄位* | 啟用此選項將使用 **可翻譯** 欄位 [內容片段模型](/help/assets/content-fragments/content-fragments-models.md#properties) 以確定是否轉換該欄位。 在這個例子中， [翻譯規則](rules.md) 被取代。 |
-
->[!NOTE]
->
->*此功能在預發行渠道中可用。
-> 
->查看 [預發行渠道文檔](/help/release-notes/prerelease.md#enable-prerelease) 有關如何為您的環境啟用該功能的資訊。
+| 啟用用於翻譯的內容模型欄位 | 啟用此選項將使用 **可翻譯** 欄位 [內容片段模型](/help/assets/content-fragments/content-fragments-models.md#properties) 確定是否翻譯了欄位並自動建立 [翻譯規則](rules.md) 因此。 此選項取代您可能建立的任何翻譯規則。 |
 
 ## 配置翻譯頁面 {#configuring-pages-for-translation}
 
