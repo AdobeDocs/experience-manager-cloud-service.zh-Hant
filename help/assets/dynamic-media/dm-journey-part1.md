@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media之旅
+title: Dynamic Media之旅，第一部分
 description: '《Dynamic Media之旅》介紹了Dynamic Media的基本知識、工作原理、能為您做什麼，以及它給您的工作和客戶帶來什麼價值。 '
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: b830c6e2f86b92b03cb9c03e94ae2bb2e3bda444
+source-git-commit: dc290be237c938af59960834b32269a1f6c5bd97
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3487'
 ht-degree: 0%
 
 ---
@@ -43,21 +43,21 @@ ht-degree: 0%
 * 建立影像預設以呈現資產的基礎
 * 映像集、旋轉集和混合媒體集
 
-**_Audience_**
-The audience that best fits readers of this journey are the following who are new to Dynamic Media on Experience Manager:
+**_觀眾_**
+最適合這段旅程讀者的觀眾是那些剛到Dynamic MediaExperience Manager的讀者：
 
 * 管理員
-* Business Analyst
-* Content Architect
+* 業務分析師
+* 內容架構師
 * 內容作者
-* Designer
+* 設計師
 * 開發人員
 * 營銷
 * 產品經理/所有者
 
 ## 什麼是Dynamic Media，它能幫你什麼？ {#dm-journey-a}
 
-Dynamic Media helps you deliver rich visual merchandising and marketing assets on demand. 它還幫助您建立和提供互動式觀看體驗，包括縮放、360度旋轉和視頻。 Your assets are dynamically scaled for consumption on web, mobile, and social sites. 使用一組主要源資產（如影像、視頻和3D）,Dynamic Media通過其全球、可擴展、效能優化的CDN（內容交付網路）即時生成並提供此豐富內容的多種變體。
+Dynamic Media幫助您按需提供豐富的視覺商品銷售和營銷資產。 它還幫助您建立和提供互動式觀看體驗，包括縮放、360度旋轉和視頻。 您的資產將動態擴展，以用於Web、移動和社交網站上的消費。 使用一組主要源資產（如影像、視頻和3D）,Dynamic Media通過其全球、可擴展、效能優化的CDN（內容交付網路）即時生成並提供此豐富內容的多種變體。
 
 Dynamic Media公司採用Adobe Experience Manager資產數字資產管理解決方案的工作流程，以簡化和簡化數字市場活動管理流程。
 
@@ -73,7 +73,8 @@ Dynamic Media公司採用Adobe Experience Manager資產數字資產管理解決�
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![AdobeDynamic Media以不同大小和格式向不同介質提供相同的主映像。](/help/assets/assets-dm/dm-oneasset-multioutput.png)
+![AdobeDynamic Media以不同大小和格式向不同介質提供相同的主映像。](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+
 *AdobeDynamic Media確保向任何螢幕提供一致、高質量的體驗，而不管其大小和頻寬如何。*
 
 在您閱讀時，您將瞭解為什麼「一個主要資產檔案，無限可能性」這一概念非常重要。
@@ -104,7 +105,7 @@ Dynamic Media已經通過CDN在優化資產和確保移動和案頭系統上快�
 
 總體而言，通過智慧映像，您可以期望根據現有映像預設設定和特定最終用戶特性，將效能提高22%到47%。 同時保持影像質量好像從未被觸及。
 
-![智慧映像](/help/assets/assets-dm/dm-smart-imaging.png)
+![智慧映像](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *Smart Imaging根據客戶的瀏覽器功能和網路速度自動優化映像的格式和檔案大小。*
 
 預設情況下，智慧映像未開啟，因為它需要您與AdobeDynamic Media技術支援人員進行協調。 此外，啟用智慧映像需要完全清除CDN快取，然後重新填充時間。 如果您對使用智慧映像感興趣，可以通過提交技術支援票證與Adobe協作以啟用它。 然後，技術支援會為您提供一個URL參數，讓您提前嘗試智慧成像。 你可以在任何網頁或圖片上嘗試，這樣你就能看到你獲得的效能和節約。 然後，您可以為整個站點啟用智慧映像。
@@ -117,33 +118,33 @@ Dynamic Media已經通過CDN在優化資產和確保移動和案頭系統上快�
 
 為瞭解決這個問題，Dynamic Media讓你能夠 *自適應視頻集*。
 
-![自適應視頻集](/help/assets/dynamic-media/assets/dm-adaptive-video.png)
+![自適應視頻集](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *自適應視頻集將以不同比特率和格式編碼的同一視頻的版本分組。*
 
 您首先將原始的主視頻上傳到系統中。 Dynamic Media自動調整大小，或 *轉碼*&#x200B;把那個視頻放進多個視頻里。 然後，在交付時，它智慧地確定要使用的視頻螢幕、質量和格式，並將其交付到電話、平板電腦或台式電腦。
 
 例如，在iOS移動設備上，它檢測4G、5G或Wi-Fi等頻寬。 然後，自動從自適應視頻集內的各種視頻比特率中選擇正確編碼的視頻。 視頻被流式傳輸到移動設備、平板電腦或台式電腦。
 
-此外，如果網路狀況改變，視頻質量將自動切換。 And, if a customer enters full-screen mode on a desktop, the Adaptive Video Set responds by using a better resolution, improving the customer’s viewing experience.
+此外，如果網路狀況改變，視頻質量將自動切換。 而且，如果客戶在案頭上進入全屏模式，則自適應視頻集會通過使用更好的解析度來響應，從而改善客戶的觀看體驗。
 
-Using Adaptive Video Sets provides a smooth, high-quality playback for customers playing Dynamic Media video on multiple screens and devices. 它真的把複雜性從視頻中去除了。
+使用自適應視頻集為在多個螢幕和設備上播放Dynamic Media視頻的客戶提供了流暢、高質量的回放。 它真的把複雜性從視頻中去除了。
 
 <!-- X-REF to videos chapter.  -->
 
 ## 用於Dynamic Media {#dm-journey-b}
 
-The following are common use case issues and solutions that Dynamic Media can help you with to drive positive customer engagement, loyalty, conversion, and increased ROI.
+以下是常見的使用案例問題和解決方案，Dynamic Media可以幫助您推動積極的客戶參與、忠誠度、轉換和增加ROI。
 
-### Use case: Primary file approach
+### 用例：主檔案方法
 
-One of the most important use cases for Dynamic Media is also one of the most obvious. 也就是說，減輕頁面和體驗的重量，減少內容的大小，不管是影像還是視頻，這些內容正在被傳送。
+Dynamic Media最重要的使用案例之一也是最明顯的例子之一。 也就是說，減輕頁面和體驗的重量，減少內容的大小，不管是影像還是視頻，這些內容正在被傳送。
 
 以下顯示典型體驗或網頁。 大約90%的頁面由富媒體組成，例如影像和視頻，這些檔案通常比較重。
 
 ![內容頁面權重](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
 *典型網頁的內容頁面權重。*
 
-The remaining 10% is HTML, CSS code, and specific tags. 您希望優化90%的頁面重量，而Dynamic Media則幫助您完成這一工作。 之前，你讀到了 *一個具有無限可能性的主資產檔案*。 This approach is significant in reducing overall page weight. The ability to take one primary asset and use it on a product detail page, a thumbnail page, your shopping cart, and your search grid, is a great timesaver. 它還確保了不同體驗之間的一致性。
+其餘10%為HTML、CSS代碼和特定標籤。 您希望優化90%的頁面重量，而Dynamic Media則幫助您完成這一工作。 之前，你讀到了 *一個具有無限可能性的主資產檔案*。 此方法對於降低總頁重量非常重要。 獲取一個主要資產並將其用於產品詳細資訊頁面、縮略圖頁面、購物車和搜索網格，這是一項非常寶貴的時間。 它還確保了不同體驗之間的一致性。
 
 ![主檔案方法](/help/assets/dynamic-media/assets/dm-onefile.png)
 *一個檔案，其中動態建立了多個格式副本。*
@@ -191,12 +192,12 @@ Dynamic Media的解決方案是獲取一個主視頻檔案，並讓Dynamic Media
 | **問題** | **Dynamic Media解** |
 |---|---|
 | 分散在整個組織中的數字資產，分散在不同的團隊或業務部門。 | 將所有數字資產儲存和管理在一個中心位置。 |
-| 團隊成員下載並建立本地版本。 | Team members use a single primary file to create *and* deliver all necessary versions across various screen sizes and devices. |
-| 為每個體驗和設備建立的一次性資產。 | Eliminates single-use assets, saving time and money creating them. |
+| 團隊成員下載並建立本地版本。 | 團隊成員使用單個主檔案建立 *和* 提供各種螢幕大小和設備所需的所有版本。 |
+| 為每個體驗和設備建立的一次性資產。 | 消除一次性資產，節省時間和資金來建立這些資產。 |
 
 ### 用例：基於AI的富媒體智慧裁剪
 
-| **問題** | **Dynamic Media solution** |
+| **問題** | **Dynamic Media解** |
 |---|---|
 | 手動繪製、測量和剪切影像或視頻以突出顯示焦點並在所有螢幕尺寸和設備上適當顯示，耗時且耗力。 | 使用Adobe Sensei人工智慧功能Dynamic Media的Smart Crop自動檢測任何影像或視頻中的焦點，並裁剪來維護它。 |
 | 時間的損失可以更好地用於創造高影響體驗。 | 捕獲預期興趣點，而不管螢幕大小。 |

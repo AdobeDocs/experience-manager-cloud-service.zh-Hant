@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
+source-git-commit: 277da5aaf1703b549f5697fb708333abc9df1664
 workflow-type: tm+mt
-source-wordcount: '3422'
+source-wordcount: '3433'
 ht-degree: 43%
 
 ---
@@ -340,6 +340,9 @@ ht-degree: 43%
       + [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [預覽 — JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
    + 動態媒體 {#dynamicmedia}
+      + Dynamic Media之旅 {#dm-journey}
+         + [《基礎》，第一部分](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [基本，第二部分](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Dynamic Media各Experience League通訊檔案](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [設定Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [與Dynamic Media合作](/help/assets/dynamic-media/dynamic-media.md)
