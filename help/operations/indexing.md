@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
+source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2420'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 那就得倒下 `ui.apps/src/main/content/jcr_root`。 目前不支援子根資料夾。
 
-需要設定包的篩選器，以便保留現有（現成索引）。 有兩種方法可以做到這一點：或者，篩選器設定為 `<filter root="/oak:index/" mode="merge"/>` 檔案 `ui.apps/src/main/content/META-INF/vault/filter.xml`，或每個自定義（或自定義）索引需要在篩選器部分中單獨列出，例如 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`。 如果是後一種情況，則每次更改版本時，都需要調整篩選器。
+需要設定包的篩選器，以便保留現有（現成索引）。 在檔案中 `ui.apps/src/main/content/META-INF/vault/filter.xml`，需要列出每個自定義（或自定義）索引，例如 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`。 如果稍後更改了索引版本，則需要調整篩選器。
 
 上面示例中的包生成為 `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`。
 
