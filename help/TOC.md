@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 277da5aaf1703b549f5697fb708333abc9df1664
+source-git-commit: 3afac18e9173497961be27879ebaf5a7fc13316d
 workflow-type: tm+mt
-source-wordcount: '3433'
+source-wordcount: '3436'
 ht-degree: 43%
 
 ---
@@ -105,7 +105,8 @@ ht-degree: 43%
    + [上線](/help/journey-migration/post-go-live.md)
    + [遷移指南，以Experience Manager合作夥伴的as a Cloud Service](/help/journey-migration/getting-started-partners.md)
    + 遷移工具發行說明 {#release-notes-migration-tools}
-      + [最新發行說明 (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [最新發行說明 (2022.4.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [2022.3.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
       + [2022.2.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
       + [2022.1.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 {#2021}
@@ -239,11 +240,11 @@ ht-degree: 43%
          + 多站點管理員 {#msm}
             + [MSM和即時拷貝概述](/help/sites-cloud/administering/msm/overview.md)
             + [配置即時拷貝同步](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
-            + [建立和同步即時拷貝](/help/sites-cloud/administering/msm/creating-live-copies.md)
-            + [Live Copy概述控制台](/help/sites-cloud/administering/msm/live-copy-overview.md)
-            + [部署衝突](/help/sites-cloud/administering/msm/rollout-conflicts.md)
+            + [Creating and Synchronizing Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md)
+            + [Live Copy Overview Console](/help/sites-cloud/administering/msm/live-copy-overview.md)
+            + [Rollout Conflicts](/help/sites-cloud/administering/msm/rollout-conflicts.md)
             + [MSM最佳實踐](/help/sites-cloud/administering/msm/best-practices.md)
-            + [故障排除和常見問題](/help/sites-cloud/administering/msm/troubleshooting.md)
+            + [Troubleshooting and FAQ](/help/sites-cloud/administering/msm/troubleshooting.md)
          + 轉換 {#translation}
             + 網站翻譯之旅 {#sites}
                + [瞭解中的站點翻AEM譯](/help/journey-sites/translation/overview.md)
@@ -286,8 +287,8 @@ ht-degree: 43%
       + [資產管理常見任務](/help/assets/manage-digital-assets.md)
       + [管理發佈](/help/assets/manage-publication.md)
       + [預覽3D資產](/help/assets/dynamic-media/previewing-3d-assets.md)
-      + [影像智慧標籤](/help/assets/smart-tags.md)
-      + [智慧標籤視頻資產](/help/assets/smart-tags-video-assets.md)
+      + [Smart tags for images](/help/assets/smart-tags.md)
+      + [Smart tag your video assets](/help/assets/smart-tags-video-assets.md)
       + [如何組織資產](/help/assets/organize-assets.md)
       + [使用 [!DNL Adobe Stock] 資產](/help/assets/aem-assets-adobe-stock.md)
       + [管理集合](/help/assets/manage-collections.md)
@@ -303,9 +304,9 @@ ht-degree: 43%
       + [下載資產](/help/assets/download-assets-from-aem.md)
       + [要編輯的簽入和簽出資產](/help/assets/check-out-and-submit-assets.md)
       + [建立和共用專用資料夾](/help/assets/private-folder.md)
-      + [Digital Rights Management資產](/help/assets/drm.md)
-      + [水印資產](/help/assets/watermark-assets.md)
-      + [使用 [!DNL Creative Cloud] API](/help/assets/cc-api-integration.md)
+      + [Digital Rights Management for assets](/help/assets/drm.md)
+      + [Watermark assets](/help/assets/watermark-assets.md)
+      + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
    + 配置、管理和擴展 [!DNL Assets] {#admin}
       + [開發人員文檔和API參考](/help/assets/developer-reference-material-apis.md)
       + [資料夾中繼資料結構](/help/assets/folder-metadata-schema.md)
@@ -347,22 +348,22 @@ ht-degree: 43%
       + [設定Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [與Dynamic Media合作](/help/assets/dynamic-media/dynamic-media.md)
       + [配置Dynamic Media](/help/assets/dynamic-media/config-dm.md)
-      + [可選 — 配置Dynamic Media，常規設定](/help/assets/dynamic-media/dm-general-settings.md)
+      + [Optional - Configure Dynamic Media, General Settings](/help/assets/dynamic-media/dm-general-settings.md)
       + [可選 — 配置Dynamic Media，發佈設定](/help/assets/dynamic-media/dm-publish-settings.md)
       + [排除Dynamic Media故障](/help/assets/dynamic-media/troubleshoot-dm.md)
-      + [配置Dynamic Media別名帳戶](/help/assets/dynamic-media/dm-alias-account.md)
+      + [Configure a Dynamic Media Alias Account](/help/assets/dynamic-media/dm-alias-account.md)
       + [Dynamic Media 無障礙內容](/help/assets/dynamic-media/accessibility-dm.md)
-      + [管理Dynamic Media資產](/help/assets/dynamic-media/managing-assets.md)
+      + [Manage Dynamic Media assets](/help/assets/dynamic-media/managing-assets.md)
       + [影像品質最佳化的最佳作法](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
       + [影像設定檔](/help/assets/dynamic-media/image-profiles.md)
       + [視訊設定檔](/help/assets/dynamic-media/video-profiles.md)
-      + [管理Dynamic Media影像預設](/help/assets/dynamic-media/managing-image-presets.md)
-      + [應用Dynamic Media影像預設](/help/assets/dynamic-media/image-presets.md)
-      + [管理Dynamic Media查看器預設](/help/assets/dynamic-media/managing-viewer-presets.md)
+      + [Manage Dynamic Media Image Presets](/help/assets/dynamic-media/managing-image-presets.md)
+      + [Apply Dynamic Media Image Presets](/help/assets/dynamic-media/image-presets.md)
+      + [Manage Dynamic Media Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md)
       + [應用Dynamic Media查看器預設](/help/assets/dynamic-media/viewer-presets.md)
       + [批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md)
       + [通過Dynamic Media使CDN快取無效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-      + [通過Dynamic Media Classic使CDN快取無效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+      + [Invalidate the CDN cache by way of Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [智慧型影像](/help/assets/dynamic-media/imaging-faq.md)
       + [交付Dynamic Media資產](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [在Dynamic Media激活熱鏈路保護](/help/assets/dynamic-media/hotlink-protection.md)
@@ -391,10 +392,10 @@ ht-degree: 43%
       + [Flash觀眾生命結束](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML查看器生命結束](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + 與Adobe Workfront {#integrations}
-      + [WorkfrontExperience Manager增強連接器發行說明](/help/assets/release-notes-enhanced-connector-workfront.md)
+      + [Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [與 [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
-      + [安裝 [!DNL enhanced connector] 為 [!DNL Workfront]](/help/assets/workfront-connector-install.md)
-      + [刪除現有安裝的外部依賴項](/help/assets/remove-external-dependencies.md)
+      + [Install [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
+      + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
       + [配置 [!DNL enhanced connector] 為 [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + 表單 {#forms}
@@ -466,7 +467,7 @@ ht-degree: 43%
       + [使用「外出」選項](/help/forms/configure-out-of-office-settings.md)
    + 使用通訊{#using-communications}
       + [簡介 到通信API](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-      + [通信API — 同步處理](/help/forms/aem-forms-cloud-service-communications.md)
+      + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
       + [通訊 API - 批次處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [在PDF文檔中使用自定義字型](/help/forms/use-custom-fonts.md)
       + [已知問題、最佳做法和常見問題](/help/forms/communications-known-issues-limitations.md)
@@ -485,7 +486,7 @@ ht-degree: 43%
       + [首次登入](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
       + 在雲管理器中將螢幕程式添加為載入項 {#adding-screens-addon}
          + [將螢幕程式作為新程式的載入項添加](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)
-         + [將螢幕程式作為現有程式的載入項](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md)
+         + [Adding Screens Program as an Add-On to an Existing Program](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md)
       + [建立分支](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)
       + [建立環境](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md)
       + [運行管線](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)
@@ -840,7 +841,7 @@ ht-degree: 43%
    + [維護任務](/help/operations/maintenance.md)
    + [備份和還原](/help/operations/backup.md)
    + [非同步作業](/help/operations/asynchronous-jobs.md)
-   + [刪除通用lucene索引](/help/operations/removal-generic-lucene-index.md)
+   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
 + 合規性 {#compliance}
    + [AEM as a Cloud Service 合規性](/help/compliance/home.md)
    + 資料隱私權和保護整備 {#data-privacy}
