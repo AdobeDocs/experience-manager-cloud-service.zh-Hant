@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 description: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 81%
+source-wordcount: '822'
+ht-degree: 69%
 
 ---
 
@@ -34,7 +34,7 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 
 * [/apps 和 /libs 在執行階段不可修改](#apps-libs-immutable)
 
-* [OSGi 套件和設定必須依儲存庫為準](#osgi)
+* [OSGi捆綁包和配置必須被視為代碼](#osgi)
 
 * [禁止變更發佈用儲存庫](#changes-to-publish-repo)
 
@@ -54,7 +54,7 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 
 * 完全禁止變更 `/libs`。
    * 這不是新規則，但內部部署的舊版 AEM 並未強制執行此規則。
-* `/libs` 中允許重疊的區域覆蓋仍可在 `/apps` 內使用。
+* 覆蓋中的區域 `/libs` 仍允許在 `/apps`。
    * 此類覆蓋必須透過 CI/CD 管道從 Git 取得。
 * 無法透過 UI 編輯儲存於 `/apps` 的靜態範本設計資訊。
    * 建議您改用可編輯的範本。
@@ -62,12 +62,14 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 * MSM Blueprint 和自訂 MSM 轉出設定必須透過 CI/CD 管道從 Git 安裝。
 * 若要變更 I18n 翻譯，須透過 CI/CD 管道從 Git 執行。
 
-## OSGi 套件和設定必須依儲存庫為準 {#osgi}
+## OSGi捆綁包和配置必須被視為代碼 {#osgi}
 
-舊版 AEM 中用於變更 OSGi 設定的 Web 主控台，無法在 AEM 雲端服務中使用。因此，若要變更 OSGi，必須透過 CI/CD 管道執行。
+必須通過CI/CD管道引入對OSGi捆綁包和配置的更改。
 
-* 只能透過 Git 持續性變更 OSGi 設定，作為 JCR 型 OSGi 設定使用。
-* 全新或更新的 OSGi 套件必須在 CI/CD 管道建置程序中透過 Git 導入。
+* 必須通過CI/CD管道通過Git引入新的或更新的OSGi捆綁包。
+* 對OSGi配置的更改只能通過CI/CD管道從Git進行。
+
+Web控制台在以前版本中用AEM於更改OSGi捆綁包和配置，在AEM Cloud Service不可用。
 
 ## 禁止變更發佈用儲存庫 {#changes-to-publish-repo}
 
