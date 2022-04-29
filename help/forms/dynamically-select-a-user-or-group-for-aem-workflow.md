@@ -1,15 +1,11 @@
 ---
 title: 為以AEM Forms為中心的工作流步驟動態選擇用戶或組
-seo-title: Dynamically select a user or group for AEM Forms-centric workflow steps
 description: '瞭解如何為 [!DNL AEM Forms] 工作流。 '
-seo-description: Learn how to select a user or group for an [!DNL AEM Forms] workflow at the runtime.
-uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
-discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -116,9 +112,9 @@ function getAdobeSignRecipients() {
 
 ## 使用Java介面動態選擇用戶或組 {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-您可以使用 [收件人資訊說明符](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) 動態選擇用戶或組的Java介面 [!DNL Adobe Sign] 和分配任務步驟。 可以建立使用 [收件人資訊說明符](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面並將其部署到 [!DNL AEM Forms] 伺服器。 它使選項可供「分配任務」和 [!DNL Adobe Sign] 工作流的組AEM件。
+您可以使用 [收件人資訊說明符](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) 動態選擇用戶或組的Java介面 [!DNL Adobe Sign] 和分配任務步驟。 可以建立使用 [收件人資訊說明符](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面並將其部署到 [!DNL AEM Forms] 伺服器。 它使選項可供「分配任務」和 [!DNL Adobe Sign] 工作流的組AEM件。
 
-您需要 [[!DNL AEM Forms] 客戶端SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 罐子 [花崗岩](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 檔案以編譯下面列出的代碼示例。 將這些jar檔案作為外部依賴項添加到OSGi捆綁項目。 可以使用任何Java IDE建立OSGi包。 以下過程提供了使用Eclipse建立OSGi捆綁包的步驟：
+您需要 [[!DNL AEM Forms] 客戶端SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 罐子 [花崗岩](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 檔案以編譯下面列出的代碼示例。 將這些jar檔案作為外部依賴項添加到OSGi捆綁項目。 可以使用任何Java IDE建立OSGi包。 以下過程提供了使用Eclipse建立OSGi捆綁包的步驟：
 
 1. 開啟Eclipse IDE。 導航到 **[!UICONTROL 檔案]**> **[!UICONTROL 新建項目]**。
 1. 在選擇嚮導螢幕上，選擇 **[!UICONTROL 馬文項目]**，然後按一下 **[!UICONTROL 下一個]**。
@@ -141,7 +137,7 @@ function getAdobeSignRecipients() {
            <repository>
                <id>adobe</id>
                <name>Adobe Public Repository</name>
-               <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+               <url>https://repo1.maven.org/maven2/com/adobe/</url>
                <layout>default</layout>
            </repository>
        </repositories>
@@ -149,7 +145,7 @@ function getAdobeSignRecipients() {
            <pluginRepository>
                <id>adobe</id>
                <name>Adobe Public Repository</name>
-               <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+               <url>https://repo1.maven.org/maven2/com/adobe/</url>
                <layout>default</layout>
            </pluginRepository>
        </pluginRepositories>
@@ -225,7 +221,7 @@ function getAdobeSignRecipients() {
    </project>
    ```
 
-1. 添加使用 [收件人資訊說明符](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面，用於動態選擇「分配」任務步驟的用戶或組。 有關示例代碼，請參見 [使用Java介面動態選擇用戶或組的示例](#-sample-scripts-for)。
+1. 添加使用 [收件人資訊說明符](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面，用於動態選擇「分配」任務步驟的用戶或組。 有關示例代碼，請參見 [使用Java介面動態選擇用戶或組的示例](#-sample-scripts-for)。
 1. 開啟命令提示符並導航到包含OSGi捆綁項目的目錄。 使用以下命令建立OSGi捆綁包：
 
    `mvn clean install`
@@ -349,4 +345,3 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
 }
 ```
-
