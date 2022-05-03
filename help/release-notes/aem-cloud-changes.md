@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 description: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
+source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 69%
+source-wordcount: '846'
+ht-degree: 66%
 
 ---
 
@@ -40,7 +40,7 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 
 * [禁止自訂執行模式](#custom-runmodes)
 
-* [移除複寫代理](#replication-agents)
+* [刪除複製代理和相關更改](#replication-agents)
 
 * [移除傳統 UI](#classic-ui)
 
@@ -96,13 +96,15 @@ AEM 雲端服務提供以下現成執行模式：
 
 AEM 雲端服務無法使用其他或自訂的執行模式。
 
-## 移除複寫代理 {#replication-agents}
+## 刪除複製代理和相關更改 {#replication-agents}
 
 在 AEM 雲端服務中，內容是使用 [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) 發佈。舊版 AEM 不再使用或提供複寫代理，這可能會影響現有 AEM 專案的下列作業：
 
 * 例如，將內容推送至預覽伺服器複寫代理的自訂工作流程。
 * 自訂複寫代理以轉換內容
 * 使用「反向複寫」將內容從發佈階段撤回給作者
+
+此外，請注意，暫停和禁用按鈕已從複製代理管理控制台中刪除。
 
 ## 移除傳統 UI {#classic-ui}
 
