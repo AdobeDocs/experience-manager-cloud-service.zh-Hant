@@ -2,9 +2,9 @@
 title: 部署代碼
 description: 瞭解如何在as a Cloud Service中使用Cloud Manager管道部署AEM代碼。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
+source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,18 @@ ht-degree: 0%
 
 # 部署代碼 {#deploy-your-code}
 
-瞭解如何在as a Cloud Service中使用Cloud Manager管道部署AEM代碼。
+瞭解如何在as a Cloud Service中使用Cloud Manager管道將代碼部署到生產AEM中。
+
+![生產管線圖](./assets/configure-pipeline/production-pipeline-diagram.png)
+
+將代碼無縫地部署到Stage ，然後直到Production ，通過生產管道完成。 生產管道執行分為兩個邏輯階段。
+
+1. 部署到階段環境
+   * 該代碼已構建並部署到Stage環境，用於自動功能測試、UI測試、體驗審核和用戶接受測試(UAT)。
+1. 部署到生產環境
+   * 在階段上驗證生成並批准升級到生產後，同一生成對象將部署到生產環境。
+
+_只有「完整堆棧代碼」管道類型支援代碼掃描、功能測試、UI測試和體驗審核。_
 
 ## 在as a Cloud Service中使用雲管理器部署代AEM碼 {#deploying-code-with-cloud-manager}
 
