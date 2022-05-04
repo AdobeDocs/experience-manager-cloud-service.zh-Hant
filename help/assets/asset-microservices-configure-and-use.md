@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
+source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2899'
 ht-degree: 0%
 
 ---
@@ -185,7 +185,7 @@ asset compute服務整合允許Experience Manager使用 [!UICONTROL 服務參數
 
 對於需要額外處理無法使用處理配置檔案實現的資產的情況，可以將附加的後處理工作流添加到配置中。 後期處理允許您在使用資產微服務的可配置處理之上添加完全定製的處理。
 
-後處理工作流（如果已配置）由自動執行 [!DNL Experience Manager] 在微服務處理完成後。 無需手動添加工作流啟動程式來觸發工作流。 示例包括：
+後處理工作流，或 [自動啟動工作流](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html)，如果已配置，則自動執行 [!DNL Experience Manager] 在微服務處理完成後。 無需手動添加工作流啟動程式來觸發工作流。 示例包括：
 
 * 處理資產的自定義工作流步驟。
 * 將元資料或屬性添加到外部系統資產的整合，例如產品或流程資訊。
@@ -233,6 +233,32 @@ asset compute服務整合允許Experience Manager使用 [!UICONTROL 服務參數
 * 按表達式(`postProcWorkflowsByExpression`):可以根據不同的規則運算式列出多個工作流模型。 表達式和模型應用冒號分隔。 規則運算式應直接指向「資產」節點，而不是任何格式副本或檔案。 例如： `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
 
 要瞭解如何部署OSGi配置，請參見 [部署 [!DNL Experience Manager]](/help/implementing/deploying/overview.md)。
+
+#### 禁用後處理工作流執行
+
+當不需要後處理時，在中建立和使用「空」工作流模型 __自動啟動工作流__ 的子菜單。
+
+##### 建立禁用的自動啟動工作流模型
+
+1. 導航到 __工具>工作流>模型__
+1. 選擇 __建立>建立模型__ 按鈕
+1. 提供新工作流模型的標題和名稱，例如：
+   * 標題：禁用自動啟動工作流
+   * 名稱：禁用自動啟動工作流
+1. 選擇 __完成__ 建立工作流模型
+1. __選擇__ 和 __編輯__ 新建立的工作流模型
+1. 在「工作流模型」編輯器中，選擇 __步驟1__ 從模型定義中刪除它
+1. 開啟 __側面板__，然後選擇 __步驟__
+1. 拖動 __DAM更新資產工作流已完成__ 進入模型定義
+1. 選擇 __頁面資訊__ 按鈕(在 __側面板__ 切換)，然後選擇 __開啟屬性__
+1. 在 __基本__ 頁籤 __臨時工作流__
+1. 選擇 __保存並關閉__ 從頂部操作欄
+1. 選擇 __同步__ 的子菜單。
+1. 關閉工作流模型編輯器
+
+##### 應用禁用的自動啟動工作流模型
+
+按照中概述的步驟操作 [將工作流模型應用到資料夾](#apply-workflow-model-to-folder) 並設定 __禁用自動啟動工作流__ 的 __自動啟動工作流__ 資料夾不需要對資產進行後處理。
 
 ## 最佳做法和限制 {#best-practices-limitations-tips}
 
