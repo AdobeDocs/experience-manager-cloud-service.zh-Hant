@@ -2,9 +2,9 @@
 title: '如何設定 [!DNL AEM Forms] as a Cloud Service環境？ '
 description: 學習設定和配置 [!DNL AEM Forms] as a Cloud Service環境
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '588'
 ht-degree: 1%
 
 ---
@@ -39,16 +39,38 @@ ht-degree: 1%
 
 * （僅適用於沙盒）登陸服務後， [建立](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) 和 [運行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 生產及非生產管道。 它支援並帶來 [!DNL AEM Forms] as a Cloud Service於您的環境。
 
+您可以使用Formsas a Cloud Service建立自適應表單（數字註冊）或生成客戶通信。 完成後 [登機](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) 到 [!DNL Adobe Experience Manager] as a Cloud Service，執行以下操作之一以啟用數字註冊或客戶通信功能。 您還可以啟用以下兩項功能：
+
+1. 登錄到Cloud Manager並開啟您的AEM Formsas a Cloud Service實例。
+
+1. 開啟「編輯程式」選項，轉到「解決方案和載入項」頁籤，然後選擇 **[!UICONTROL Forms — 通信]** 的雙曲餘切值。
+
+   ![通信](assets/communications.png)
+
+   如果已啟用 **[!UICONTROL Forms — 數字註冊]** ，然後選擇 **[!UICONTROL Forms — 通信插件]** 的雙曲餘切值。
+
+   ![阿登](assets/add-on.png)
+
+1. 按一下 **[!UICONTROL 更新]**。
+
+1. 運行生成管道。 生成管道成功後，將為您的環境啟用Communications API。
+
+>[!NOTE]
+>
+> 要啟用和配置文檔處理API，請將以下規則添加到 [調度程式配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+>
+> `# Allow Forms Doc Generation requests`
+> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
+
 ## 配置用戶 {#config-users}
 
 完成服務登錄後，請登錄 [!DNL AEM Forms] as a Cloud Service環境、開啟作者和發佈實例，以及將用戶添加到特定於Forms的 [AEM組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)基於他們的個性。 下表列出了特定於FormsAEM的組、現成的組以及相應的用戶類型。 該表還為每個AEM用戶類型提供實例類型：
-
 
 | 用戶類型（角色） | 用戶組 | AEM實例 |
 |---|---|---|
 | 窗體從業人員/Forms開發人員 | <ul> <li> [!DNL forms-users] </li><li> [!DNL template-author] </li><li> [!DNL workflow-users] </li><li> [!DNL workflow-editors] </li><li> [!DNL fdm-authors] </li></ul> | 作者實例 |
 | 用戶體驗(UX)設計器 | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | 作者實例 |
-| AEM 管理員 | <ul> <li>[!DNL aem-administrators]。</li> <li>[!DNL fd-administrators] </li> </ul> | 作者和發佈實例 |
+| AEM 管理員 | <ul> <li>[!DNL aem-administrators],</li> <li>[!DNL fd-administrators] </li> </ul> | 作者和發佈實例 |
 | 最終用戶 | <ul> <li>當用戶必須登錄才能查看和提交自適應表單時，請將這些用戶添加到 [!DNL forms-users] 組。 </li> <li>如果訪問Adaptive Forms不需要用戶身份驗證，則不要向此類用戶分配任何組。 </li> </ul> | 作者和發佈實例 |
 
 有關Forms特定組和相AEM應權限的詳細資訊，請參見 [組和權限](forms-groups-privileges-tasks.md)。
@@ -60,7 +82,6 @@ ht-degree: 1%
 [設定本地開發環境](setup-local-development-environment.md)。 您可以使用本地開發環境建立自適應表單和相關資產（主題、模板、自定義提交操作、預填充服務等）和 [將PDF forms轉換為自適應Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 不登錄雲開發環境。
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
-
 
 | Role| Organization| Description|
 |-----|-------|-----|
@@ -90,10 +111,7 @@ After you onboard the service, configure a [local development environment](setup
 
 Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect and use your [!DNL AEM Forms] as a Cloud Service program. When an administrator is provisioned for an organization, the administrator receives an email with title ‘You now have administrator rights to manage Adobe software and services for your organization’. If you are an administrator, check your mailbox for email with previously mentioned title and proceed to [add users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#onboarding-users-in-admin-console) via IMS and assign [form-specific groups](forms-groups-privileges-tasks.md) to users based on their role.
 
-
 ## Next step {#next-steps} -->
-
-
 
 <!-- ## Prerequisites {#prerequisites}
 

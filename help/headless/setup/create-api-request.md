@@ -2,9 +2,9 @@
 title: 建立API請求 — 無頭設定
 description: 瞭解如何使用GraphQL API來無頭地傳遞內容片段內容和資AEM產REST API來管理內容片段。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,12 @@ ht-degree: 0%
 # 建立API請求 — 無頭設定 {#accessing-delivering-content-fragments}
 
 瞭解如何使用GraphQL API來無頭地傳遞內容片段內容和資AEM產REST API來管理內容片段。
+
+>[!NOTE]
+>
+>此功能的某些功能在預發行渠道中可用。 特別是與永續查詢相關的功能。
+> 
+>查看 [預發行渠道文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 有關如何為您的環境啟用該功能的資訊。
 
 ## 什麼是GraphQL和Assets REST API? {#what-are-the-apis}
 
@@ -27,7 +33,7 @@ ht-degree: 0%
 
 必須先建立GraphQL終結點，然後才能使用GraphQL API。
 
-1. 導航到 **工具**。 **資產**，然後選擇 **圖形QL**。
+1. 導航到 **工具**。 **常規**，然後選擇 **圖形QL**。
 1. 選擇 **建立**。
 1. 的 **建立新GraphQL終結點** 對話框。 您可以在此處指定：
    * **名稱**:端點名稱；可以輸入任何文本。
@@ -48,7 +54,11 @@ ht-degree: 0%
 GraphiQL是可安裝在環境上的AEMIDE。 按照上的步驟操作 [使用GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 安裝到您的AEM環境中。
 
 1. 登錄到AEMas a Cloud Service並訪問GraphiQL介面：
-   * 例如： `https://<host>:<port>/aem/graphiql.html`。
+
+   可以從以下任一位置訪問查詢編輯器：
+
+   * **工具** -> **常規** -> **GraphQL查詢編輯器**
+   * 直接；比如說， `http://localhost:4502/aem/graphiql.html`
 
 1. GraphiQL IDE是GraphQL的瀏覽器內查詢編輯器。 您可以使用它構建查詢以檢索內容片段，以JSON形式無頭地傳遞這些內容片段。
    * 右上下拉框允許您選擇端點。

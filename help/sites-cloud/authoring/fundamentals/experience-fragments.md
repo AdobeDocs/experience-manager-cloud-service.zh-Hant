@@ -2,9 +2,9 @@
 title: 體驗片段
 description: 使用Adobe Experience Manager as a Cloud Service體驗片段使您的體驗可重複使用且靈活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1560'
 ht-degree: 8%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 8%
 
 * 如果作者希望重新使用頁面的部分（體驗的一部分）。
 如果沒有「經驗片段」，作者需要複製並貼上該片段。 建立和維護這些複製/貼上體驗非常耗時且容易出現用戶錯誤。
-Experience Fragments eliminate the need for copy/paste.
+體驗片段消除了複製/貼上的需要。
 * 支援無頭CMS使用案例。
 作者只想AEM用於創作，而不想交付給客戶。 第三方系統/觸點將消耗該體驗，然後交付給最終用戶。
 
@@ -53,8 +53,8 @@ Experience Fragments eliminate the need for copy/paste.
 
 * 無論何時您想要重用體驗。
    * 將使用相同或相似內容重用的體驗。
-* When you use AEM as a content delivery platform for third parties.
-   * Any solution that wants to use AEM as the content delivery platform.
+* 當您用作AEM第三方的內容交付平台時。
+   * 任何希望用作內AEM容交付平台的解決方案。
    * 將內容嵌入第三方觸點。
 * 如果您有「體驗」，但有不同的變體或格式副本。
    * 渠道或上下文特定變體。
@@ -97,7 +97,7 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
 
 1. [建立資料夾](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-folder)。
 
-1. [Configure the allowed Experience Fragment templates for that folder](#configure-allowed-templates-folder).
+1. [配置該資料夾允許的體驗片段模板](#configure-allowed-templates-folder)。
 
 >[!NOTE]
 >
@@ -174,15 +174,15 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
 
 1. 輸入 **體驗****片段的屬性**。
 
-   A **標題** 的子菜單。 If the **Name** is left blank it will be derived from the **Title**.
+   A **標題** 的子菜單。 如果 **名稱** 留空，它將從 **標題**。
 
    ![體驗片段屬性](/help/sites-cloud/authoring/assets/xf-04.png)
 
    >[!NOTE]
    >
-   >Tags from the Experience Fragment template will not be merged with tags on this Experience Fragment root page.
+   >「體驗片段」模板中的標籤將不會與此「體驗片段」根頁上的標籤合併。
    >
-   >These are completely separate.
+   >這些是完全分開的。
 
 1. 按一下&#x200B;**建立**。
 
@@ -199,15 +199,15 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
 >
 >請參閱 [編輯頁面內容](/help/sites-cloud/authoring/fundamentals/editing-content.md) 的子菜單。
 
-The following example procedure illustrates how to create a teaser for a product:
+以下示例過程說明了如何為產品建立預告：
 
 1. 從 [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。
 
 1. 取決於元件：
    * 根據需要添加任何內容和/或資產。
-   * Configure the properties as required.
+   * 根據需要配置屬性。
 
-1. Add more components as required.
+1. 根據需要添加更多元件。
 
 例如：`http://<host>:<port>/editor.html/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master.html`
 
@@ -281,7 +281,7 @@ The following example procedure illustrates how to create a teaser for a product
 
 1. 輸入建置塊的名 **稱**，並使用 **Convert確認**:
 
-   ![Name Building Block](/help/sites-cloud/authoring/assets/xf-11.png)
+   ![名稱構建塊](/help/sites-cloud/authoring/assets/xf-11.png)
 
 1. 建 **立區塊** (Building Block **)將顯示在左側標籤(** Local)中，並可以選取以執行進一步動作：
 
@@ -291,7 +291,7 @@ The following example procedure illustrates how to create a teaser for a product
 
 您的構建基塊在 **構造塊** 頁籤。 對於每個塊，可執行以下操作：
 
-* **Go to master**: open the root page variation in a new tab
+* **轉到首頁**:在新頁籤中開啟根頁變體
 * **重新命名**
 * **刪除**
 
@@ -319,17 +319,17 @@ The following example procedure illustrates how to create a teaser for a product
 
 1. 開啟 **屬性** 體驗片段：
 
-   ![Properties button](/help/sites-cloud/authoring/assets/xf-16.png)
+   ![「屬性」按鈕](/help/sites-cloud/authoring/assets/xf-16.png)
 
-   The properties are available in various tabs:
+   這些屬性可在以下各個頁籤中使用：
 
    >[!CAUTION]
    >
-   >These tabs are shown when you open **Properties** from the Experience Fragments console.
+   >開啟時會顯示這些頁籤 **屬性** 從「體驗片段」控制台。
    >
    >如果您 **在編輯體驗片段時開啟屬性** ，則會顯示適當 [的頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md) 。
 
-   ![Experience Fragment properties](/help/sites-cloud/authoring/assets/xf-17.png)
+   ![體驗片段屬性](/help/sites-cloud/authoring/assets/xf-17.png)
 
    * **基本**
       * **標題**  — 強制
@@ -354,6 +354,12 @@ The following example procedure illustrates how to create a teaser for a product
 >[!NOTE]
 >
 >雖然這可以直接從瀏覽器獲得， [主要目的是允許其他應用程式（例如，第三方Web應用程式、自定義移動實現）直接使用URL訪問體驗片段的內容](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)。
+
+## 發佈體驗片段 {#publishing-experience-fragments}
+
+發佈您的體驗片段與 [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) （從「體驗片段」控制台或編輯器）。
+
+或者，您也可以 [發佈到預覽](/help/sites-cloud/authoring/fundamentals/previewing-content.md) （再次從「體驗片段」控制台或編輯器中）。
 
 ## 導出體驗片段 {#exporting-experience-fragments}
 

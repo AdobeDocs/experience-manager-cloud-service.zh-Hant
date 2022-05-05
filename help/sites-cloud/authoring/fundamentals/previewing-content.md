@@ -2,9 +2,9 @@
 title: 預覽內容
 description: 瞭解如何使用預AEM覽服務在上線前預覽內容。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e70e6ee055c2542752e66e53aa70a9378b1bc5c0
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 它便於預覽在作者環境中無法看到的頁面體驗，如頁面過渡和僅發佈端內容。
 
 有關預覽環境的詳細資訊，請參閱文檔 [管理環境。](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)。
+
+>[!NOTE]
+>
+>將體驗片段發佈到預覽基本上遵循與頁面相同的步驟，不過是從體驗片段控制台或編輯器進行。
 
 ## 發佈內容以預覽 {#publishing-content-to-preview}
 

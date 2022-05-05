@@ -3,9 +3,9 @@ title: 在中使用GraphiQL IDE AEM
 description: 瞭解如何在Adobe Experience Manager使用GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
+source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,10 @@ ht-degree: 0%
 * 查看 **歷史** 你以前的查詢
 * 使用 **文檔資源管理器** 訪問文檔；幫助您瞭解和瞭解可用的方法。
 
-例如：
+可以從以下任一位置訪問查詢編輯器：
 
-* `http://localhost:4502/aem/graphiql.html`
+* **工具** -> **常規** -> **GraphQL查詢編輯器**
+* 直接；比如說， `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL介面](assets/cfm-graphiql-interface.png "GraphiQL介面")
 

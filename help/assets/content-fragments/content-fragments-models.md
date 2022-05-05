@@ -4,9 +4,9 @@ description: 瞭解內容片段模型如何作為您的無頭內容的基礎AEM�
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 0d964a981f7b9004e99768888f78558c57ae398a
+source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2892'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >當欄位為「必 **要**」時，左側窗格中指出的「標籤 **」將會標示為字元(** *****)。
+   >當欄位為 **必需**，也請參見Wiki頁。 **標籤** 在左窗格中指示，將標有標注符(**&#42;**)。
 
 ![屬性](assets/cfm-models-03.png)
 
@@ -74,8 +74,10 @@ ht-degree: 5%
       * 鍵入 **欄位標籤** 將自動完成 **屬性名稱**   — 如果為空，則可以隨後手動更新。
 
          >[!CAUTION]
-         手動更新屬性時 **屬性名稱** 對於資料類型，請注意名稱必須只包含拉丁文字元、數字和下划線「_」作為特殊字元。
-         如果在早期版本中建立的模AEM型包含非法字元，請刪除或更新這些字元。
+         >
+         >手動更新屬性時 **屬性名稱** 對於資料類型，請注意名稱必須只包含拉丁文字元、數字和下划線「_」作為特殊字元。
+         >
+         >如果在早期版本中建立的模AEM型包含非法字元，請刪除或更新這些字元。
       例如：
 
       ![欄位屬性](assets/cfm-models-05.png)
@@ -103,7 +105,7 @@ ht-degree: 5%
    * 可以是富格文本、純文字檔案或標籤的文本區域
 * **數量**
    * 添加一個或多個數字欄位
-* **布林值 (Boolean)**
+* **布林值**
    * 添加布爾複選框
 * **日期時間**
    * 添加日期和/或時間
@@ -130,7 +132,8 @@ ht-degree: 5%
 在片段編輯器中，每個實例將顯示為一個頁籤。
 
       >[!NOTE]
-      此資料類型純粹用於格式設定，GraphQL架AEM構忽略它。
+      >
+      >此資料類型純粹用於格式設定，GraphQL架AEM構忽略它。
 
 ## 屬性 {#properties}
 
@@ -141,7 +144,8 @@ ht-degree: 5%
    手動更新資料類型的此屬性時，請注意名稱 **必須** 含 *僅* 拉丁文字元、數字和下划線&quot;_&quot;作為特殊字元。
 
    >[!CAUTION]
-   如果在早期版本中建立的模AEM型包含非法字元，請刪除或更新這些字元。
+   >
+   >如果在早期版本中建立的模AEM型包含非法字元，請刪除或更新這些字元。
 
 * **呈現為**
 用於在片段中實現/呈現該欄位的各種選項。 這通常允許您定義作者是將看到該欄位的單個實例，還是允許建立多個實例。
@@ -171,20 +175,18 @@ ht-degree: 5%
    例如， **單行文本** 欄位 `Country` 內容片段模型中不能具有 `Japan` 的子目錄。 當嘗試第二個實例時將發出警告。
 
    >[!NOTE]
-   確保每個語言根的唯一性。
+   >
+   >確保每個語言根的唯一性。
 
    >[!NOTE]
-   變體可以具有相同 *獨特* 值作為同一片段的變體，但與用於其它片段的任何變體的值不相同。
+   >
+   >變體可以具有相同 *獨特* 值作為同一片段的變體，但與用於其它片段的任何變體的值不相同。
 
 * 請參閱 **[內容引用](#content-reference)** 的子菜單。
 
 * 請參閱 **[片段引用（嵌套片段）](#fragment-reference-nested-fragments)** 的子菜單。
 
 * **可翻譯**
-
-   >[!NOTE]
-   此功能在預發行渠道中可用。
-   查看 [預發行渠道文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 有關如何為您的環境啟用該功能的資訊。
 
    檢查 **可翻譯** 「內容片段模型」編輯器中某個欄位的複選框將：
 
@@ -219,13 +221,19 @@ ht-degree: 5%
    * 允許您包括/檢索結構化資料。
 
       >[!NOTE]
-      該方法與 [使用GraphQL的內容片段進行無頭內容傳遞](/help/assets/content-fragments/content-fragments-graphql.md)。
+      >
+      >該方法與 [使用GraphQL的內容片段進行無頭內容傳遞](/help/assets/content-fragments/content-fragments-graphql.md)。
    * 可以為一個或多個引用（在生成的片段中）配置。
 
 >[!NOTE]
-具AEM有以下項的重複保護：
-* 內容引用這會阻止用戶添加對當前片段的引用。 這可能導致「片段引用選取器」對話框為空。
-* GraphQL中的片段引用如果建立深度查詢，該查詢返回彼此引用的多個內容片段，則它將在首次出現時返回空值。
+>
+>具AEM有以下項的重複保護：
+>
+>* 內容參考資料
+   >  這防止用戶添加對當前片段的引用。 這可能導致「片段引用選取器」對話框為空。
+>
+>* GraphQL中的片段引用
+   >  如果建立一個深度查詢，該查詢返回彼此引用的多個內容片段，則它將在第一次出現時返回null。
 
 
 ### 內容參考資料 {#content-reference}
@@ -267,7 +275,8 @@ type CompanyModel {
 ```
 
 >[!NOTE]
-這與 [使用GraphQL的內容片段進行無頭內容傳遞](/help/assets/content-fragments/content-fragments-graphql.md)。
+>
+>這與 [使用GraphQL的內容片段進行無頭內容傳遞](/help/assets/content-fragments/content-fragments-graphql.md)。
 
 除了標準屬性外，您還可以定義：
 
@@ -292,8 +301,10 @@ type CompanyModel {
    ![片段引用](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
-已建立重複保護機制。 它禁止用戶在片段引用中選擇當前內容片段。 這可能導致「片段引用選取器」對話框為空。
-GraphQL中還對片段引用提供重複保護。 如果跨兩個相互引用的內容片段建立深度查詢，則它將返回空值。
+>
+>已建立重複保護機制。 它禁止用戶在片段引用中選擇當前內容片段。 這可能導致「片段引用選取器」對話框為空。
+>
+>GraphQL中還對片段引用提供重複保護。 如果跨兩個相互引用的內容片段建立深度查詢，則它將返回空值。
 
 ## 內容片段模型 — 屬性 {#content-fragment-model-properties}
 
@@ -351,7 +362,8 @@ GraphQL中還對片段引用提供重複保護。 如果跨兩個相互引用的
 要實施內容治理，您可以配置 **策略** 在「資產」資料夾上，以控制允許在該資料夾中建立片段的內容片段模型。
 
 >[!NOTE]
-該機制類似於 [允許頁面模板](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 的子級。
+>
+>該機制類似於 [允許頁面模板](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 的子級。
 
 配置 **策略** 為 **允許的內容片段模型**:
 
@@ -383,7 +395,8 @@ GraphQL中還對片段引用提供重複保護。 如果跨兩個相互引用的
 ## 刪除內容片段模型 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
-刪除內容片段模型可能會影響相關片段。
+>
+>刪除內容片段模型可能會影響相關片段。
 
 要刪除內容片段模型：
 
@@ -393,7 +406,8 @@ GraphQL中還對片段引用提供重複保護。 如果跨兩個相互引用的
 1. 選擇模型，然後 **刪除** 的子菜單。
 
    >[!NOTE]
-   如果參照了模型，則會給出警告。 採取適當行動。
+   >
+   >如果參照了模型，則會給出警告。 採取適當行動。
 
 ## 發佈內容片段模型 {#publishing-a-content-fragment-model}
 
@@ -408,7 +422,8 @@ GraphQL中還對片段引用提供重複保護。 如果跨兩個相互引用的
 發佈狀態將在控制台中指示。
 
    >[!NOTE]
-   如果發佈模型尚未發佈的內容片段，則選擇清單將指示此情況，並且模型將隨片段一起發佈。
+   >
+   >如果發佈模型尚未發佈的內容片段，則選擇清單將指示此情況，並且模型將隨片段一起發佈。
 
 ## 取消發佈內容片段模型 {#unpublishing-a-content-fragment-model}
 
@@ -495,6 +510,7 @@ GraphQL中還對片段引用提供重複保護。 如果跨兩個相互引用的
       ![編輯 — 鎖定的內容片段模型](assets/cfm-model-editor-locked-edit.png)
 
       >[!NOTE]
-      頂部可能仍有警告，但此時模型已由現有內容片段使用。
+      >
+      >頂部可能仍有警告，但此時模型已由現有內容片段使用。
 
    * **取消** 將返回控制台。

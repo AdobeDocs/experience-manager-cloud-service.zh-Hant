@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
+source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '879'
 ht-degree: 1%
 
 ---
@@ -90,12 +90,6 @@ Date24/08/2021
    ![添加標籤](assets/add-tags-to-asset.png)
 
 1. 按一下 **保存** 更新資產元資料更改。
-
->[!NOTE]
->
->在建立智慧標籤以及使用標籤謂詞應用搜索篩選器時，可以對標籤結構進行排序。
->
->排序標籤功能在預發行渠道中可用。 請參閱 [預發行渠道文檔](/help/release-notes/prerelease.md#enable-prerelease) 的子菜單。
 
 有關詳細資訊，請參閱以下文章：
 

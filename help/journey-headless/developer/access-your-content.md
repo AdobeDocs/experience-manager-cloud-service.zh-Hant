@@ -2,9 +2,9 @@
 title: 如何通過交付API訪AEM問內容
 description: 在「無頭開發AEM人員之旅」的這一部分，瞭解如何使用GraphQL查詢訪問內容片段內容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1410'
 ht-degree: 1%
 
 ---
@@ -12,6 +12,12 @@ ht-degree: 1%
 # 如何通過交付API訪AEM問內容 {#access-your-content}
 
 在 [無AEM頭開發者之旅，](overview.md) 您可以學習如何使用GraphQL查詢訪問內容片段的內容並將其饋送到您的應用（無頭傳遞）。
+
+>[!NOTE]
+>
+>此功能的某些功能在預發行渠道中可用。 特別是與永續查詢相關的功能。
+> 
+>查看 [預發行渠道文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 有關如何為您的環境啟用該功能的資訊。
 
 ## 到目前為止的故事 {#story-so-far}
 
@@ -242,7 +248,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 在開始查詢內容之前，您需要：
 
 * 啟用終結點
-   * 使用工具 — >資產 — > GraphQL
+   * 使用工具 — >常規 — > GraphQL
    * [啟用GraphQL終結點](/help/headless/graphql-api/graphql-endpoint.md)
 
 * 安裝GraphiQL（如果需要）
@@ -270,9 +276,10 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 ### test查詢的位置 {#where-to-test-your-queries}
 
-查詢可以在GraphiQL介面中輸入，例如：
+查詢可以在GraphiQL介面中輸入。 可以從以下任一位置訪問查詢編輯器：
 
-* `http://localhost:4502/aem/graphiql.html`
+* **工具** -> **常規** -> **GraphQL查詢編輯器**
+* 直接；比如說， `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL介面](assets/graphiql-interface.png "GraphiQL介面")
 
@@ -362,7 +369,7 @@ query {
    * [結構描述](https://graphql.org/learn/schema/)
    * [變數](https://graphql.org/learn/queries/#variables)
    * [GraphQL Java庫](https://graphql.org/code/#java)
-* [圖形QL](https://graphql.org/learn/serving-over-http/#graphiql)
+* [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [學習將GraphQL與](/help/headless/graphql-api/content-fragments.md)
    * [啟用GraphQL終結點](/help/headless/graphql-api/graphql-endpoint.md)
    * [安裝AEMGraphiQL介面](/help/headless/graphql-api/graphiql-ide.md)

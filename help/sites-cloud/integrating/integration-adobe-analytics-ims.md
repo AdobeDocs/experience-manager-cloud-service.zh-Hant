@@ -1,28 +1,23 @@
 ---
 title: 與Adobe Analytics整合時使用的IMS配置
-description: Learn about IMS Configuration for use when Integrating with Adobe Analytics
-source-git-commit: 7686329de2ef621f69899e07efa9af16e50a35f9
+description: 瞭解與Adobe Analytics整合時使用的IMS配置
+exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
+source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '893'
 ht-degree: 2%
 
 ---
 
 # 與Adobe Analytics整合時使用的IMS配置 {#ims-configuration-for-integration-with-adobe-analytics}
 
-通過分析標準API將Adobe Experience Manager as a Cloud Service(AEMaaCS)與Adobe Analytics整合需要配置Adobe IMS(Identity Management系統)。 配置是通過Adobe開發者控制台實現的。
-
->[!NOTE]
-> 
->This feature is available in the prerelease channel.
->
->查看 [預發行渠道文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 有關如何為您的環境啟用該功能的資訊。
+通過分析標準API將Adobe Experience Manager as a Cloud Service(AEMaaCS)與Adobe Analytics整合需要配置Adobe IMS(Identity Management系統)。 配置是通過Adobe Developer控制台實現的。
 
 >[!NOTE]
 >
 >AEMaaCS 2022.2.0中新增了對Adobe Analytics StandardAPI 2.0的支援。此版本的API支援IMS驗證。
 >
->The API selection is driven by the authentication method used for AEM/Analytics integration.
+>API選擇由用於AEM/Analytics整合的驗證方法驅動。
 >
 >進一步資訊也可在下 [遷移到2.0 API](https://developer.adobe.com/analytics-apis/docs/2.0/guides/migration/)。
 
@@ -32,15 +27,15 @@ ht-degree: 2%
 
 * [Adobe支援](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html) 必須設定帳戶：
 
-   * Adobe Console
-   * Adobe Developer Console
+   * Adobe控制台
+   * Adobe開發人員控制台
    * Adobe Analytics
    * Adobe IMS(Identity Management系統)
 
 * 您組織的系統管理員應使用該Admin Console將組織中所需的開發人員添加到相關的產品配置檔案中。
 
-   * 這為特定開發人員提供了使用Adobe開發人員控制台啟用整合的權限。
-   * For further details see [Manage Developers](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+   * 這為特定開發人員提供了使用Adobe Developer控制台啟用整合的權限。
+   * 有關詳細資訊，請參閱 [管理開發人員](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)。
 
 
 ## 配置IMS配置 — 生成公鑰 {#configuring-ims-generating-a-public-key}
@@ -51,7 +46,7 @@ ht-degree: 2%
 1. 在 **安全** 節選 **Adobe IMS配置**。
 1. 選擇 **建立** 開啟 **Adobe IMS技術帳戶配置**。
 1. 使用下拉框 **雲配置**&#x200B;選中 **Adobe Analytics**。
-1. Activate **Create new certificate** and enter a new alias.
+1. 激活 **建立新證書** 並輸入新別名。
 1. 確認 **建立證書**。
 
    ![建立憑證](assets/integrate-analytics-ims-01.png)
@@ -66,27 +61,27 @@ ht-degree: 2%
 
 ## 配置IMS以與Adobe Analytics集AEM成 {#configuring-ims-adobe-analytics-integration-with-aem}
 
-使用Adobe開發人員控制台，您需要與Adobe Analytics（供使用）建立項目(集AEM成)，然後分配所需的權限。
+使用Adobe Developer控制台，您需要與Adobe Analytics（供使用）建立項目(集AEM成)，然後分配所需權限。
 
-### Creating the Project {#creating-the-project}
+### 建立項目 {#creating-the-project}
 
-開啟Adobe開發者控制台，以建立將使用以下功能的具有Adobe AnalyticsAEM的項目：
+開啟Adobe Developer控制台，與Adobe Analytics一起創AEM建項目：
 
 1. 開啟項目Adobe開發人員控制台：
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Any projects that you have will be shown. Select **Create New Project** - the location and usage will depend on:
+1. 將顯示您擁有的任何項目。 選擇 **建立新項目**  — 地點和用途取決於：
 
-   * If you do not have any project yet, **Create new project** will be center, bottom.
-      ![Create New Project - First Project](assets/integration-analytics-ims-02.png)
+   * 如果你還沒有項目， **建立新項目** 中間，底部。
+      ![新建項目 — 第一個項目](assets/integration-analytics-ims-02.png)
    * 如果您已經擁有現有項目，將列出並 **建立新項目** 右上。
       ![建立新項目 — 多個項目](assets/integration-analytics-ims-03.png)
 
 
-1. Select **Add to Project** followed by **API**:
+1. 選擇 **添加到項目** 後跟 **API**:
 
-   ![Get Started with your new Project](assets/integration-analytics-ims-10.png)
+   ![開始新項目](assets/integration-analytics-ims-10.png)
 
 1. 選擇 **Adobe Analytics**，則 **下一個**:
 
@@ -94,25 +89,25 @@ ht-degree: 2%
    >
    >如果您訂閱了Adobe Analytics，但未看到列出，則應檢查 [先決條件](#prerequisites)。
 
-   ![Add an API](assets/integration-analytics-ims-12.png)
+   ![添加API](assets/integration-analytics-ims-12.png)
 
-1. Select **Service Account (JWT)** as the type of type of authentication, then continue with **Next**:
+1. 選擇 **服務帳戶(JWT)** 作為身份驗證類型，然後繼續 **下一個**:
 
    ![選擇驗證類型](assets/integration-analytics-ims-12a.png)
 
-1. **Upload your public key**, and when complete, continue with **Next**:
+1. **上載公鑰**，完成後繼續 **下一個**:
 
    ![上載公鑰](assets/integration-analytics-ims-13.png)
 
 1. 查看憑據，並繼續 **下一個**:
 
-   ![Review credentials](assets/integration-analytics-ims-15.png)
+   ![查看憑據](assets/integration-analytics-ims-15.png)
 
 1. 選擇所需的產品配置檔案，然後繼續 **保存已配置的API**:
 
    ![選擇所需的產品配置檔案](assets/integration-analytics-ims-16.png)
 
-1. The configuration will be confirmed.
+1. 將確認配置。
 
 ### 為整合分配權限 {#assigning-privileges-to-the-integration}
 
@@ -122,29 +117,29 @@ ht-degree: 2%
 
    * [https://adminconsole.adobe.com](https://adminconsole.adobe.com/)
 
-1. Navigate to **Products** (top toolbar), then select **Adobe Analytics - &lt;*your-tenant-id*>** (from the left panel).
-1. 選擇 **產品配置檔案**，然後從顯示的清單中找到所需的工作區。 For example, Default Workspace.
-1. Select **API Credentials**, then the required integration configuration.
+1. 導航到 **產品** （頂部工具欄），然後選擇 **Adobe Analytics- &lt;*您的租戶ID*>** （從左面板）。
+1. 選擇 **產品配置檔案**，然後從顯示的清單中找到所需的工作區。 例如，預設工作區。
+1. 選擇 **API憑據**，然後是所需的整合配置。
 1. 選擇 **編輯器** 的 **產品角色**;而不是 **觀察者**。
 
 ## 為Adobe開發人員控制台整合項目儲存的詳細資訊 {#details-stored-for-the-ims-integration-project}
 
-在Adobe開發者控制台 — 項目中，您可以看到所有整合項目的清單：
+從「Adobe Developer控制台 — 項目」中，您可以看到所有整合項目的清單：
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 選擇特定項目條目以顯示有關配置的詳細資訊。 這些包括：
 
-* Project overview
+* 項目概述
 * 分析
 * 憑據
-   * Service Account (JWT)
-      * Credential details
+   * 服務帳戶(JWT)
+      * 憑據詳細資訊
       * 生成JWT
 * APIS
    * 比如說Adobe Analytics
 
-Some of these you will need to complete the integration of Adobe Analytics in AEM based on IMS.
+其中一些需要完成Adobe Analytics在基於IMSAEM的整合。
 
 ## 在中完成IMS配AEM置 {#completing-the-ims-configuration-in-aem}
 
@@ -158,14 +153,14 @@ Some of these you will need to complete the integration of Adobe Analytics in AE
    * **標題**:你的簡訊。
    * **授權伺服器**:從 `aud` 行 **負載** 如 `https://ims-na1.adobelogin.com` 在下面的示例中
    * **API密鑰**:從 **憑據** 的下界 [項目概述](#details-stored-for-the-ims-integration-project)
-   * **Client Secret**: Generate this in the [Client Secret tab of the Service Account (JWT) section](#details-stored-for-the-ims-integration-project), and copy
+   * **客戶端密碼**:在 [「服務帳戶(JWT)」部分的「客戶機密鑰」頁籤](#details-stored-for-the-ims-integration-project)，然後複製
    * **負載**:從 [生成「服務帳戶(JWT)」部分的JWT頁籤](#details-stored-for-the-ims-integration-project)
 
    ![IMS配AEM置詳細資訊](assets/integrate-analytics-ims-10.png)
 
 1. 確認 **建立**。
 
-1. Your Adobe Analytics configuration will be shown in the AEM console.
+1. 您的Adobe Analytics配置將顯示在控AEM制台中。
 
    ![IMS 設定](assets/integrate-analytics-ims-11.png)
 

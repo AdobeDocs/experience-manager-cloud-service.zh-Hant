@@ -2,9 +2,9 @@
 title: 發佈頁面
 description: 如何使用
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1791'
 ht-degree: 7%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 7%
 這稱為發佈頁面。 當要從發佈環境中刪除頁面時，稱為取消發佈。 在發佈和取消發佈頁面時，該頁面在作者環境中仍然可用，以便進行進一步更改，直到您將其刪除。
 
 您可以立即發佈/取消發佈頁面，也可以在將來的預定義日期/時間發佈/取消發佈頁面。
+
+>[!NOTE]
+>
+>發佈體驗片段與發佈頁面的過程基本相同，但是從體驗片段控制台或編輯器發佈。
 
 ## 術語 {#terminology}
 

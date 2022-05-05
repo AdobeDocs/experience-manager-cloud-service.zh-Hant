@@ -3,7 +3,7 @@ title: 管理GraphQL端點AEM
 description: 瞭解如何管理Adobe Experience Manager as a Cloud Service的GraphQL終端節點，以便無頭內容交付。
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a4f3e55bb3bc39575d43894b9fea1180eaf1a578
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 5%
@@ -60,7 +60,7 @@ ht-degree: 5%
 
 要啟用相應端點，請執行以下操作：
 
-1. 導航到 **工具**。 **資產**，然後選擇 **圖形QL**。
+1. 導航到 **工具**。 **常規**，然後選擇 **圖形QL**。
 1. 選擇 **建立**。
 1. 的 **建立新GraphQL終結點** 對話框。 您可以在此處指定：
    * **名稱**:端點名稱；可以輸入任何文本。
