@@ -4,7 +4,7 @@ description: 瞭解如何在Dynamic Media使用視頻，如編碼視頻、向You
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 22718edcfb6d233a1316fcf2546e685b57609e8c
 workflow-type: tm+mt
 source-wordcount: '9349'
 ht-degree: 4%
@@ -473,7 +473,7 @@ Google定期更改其用戶介面。 因此，向YouTube發佈視頻的步驟與
 
    ![6_5_googleaccount-apis應用程式類型](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
 
-1. 執行下列操作之一：
+1. 執行下列任一項作業：
 
    * 在 **[!UICONTROL 名稱]** 欄位，輸入OAuth 2.0客戶端的唯一名稱。
    * 使用Google已在 **[!UICONTROL 名稱]** 的子菜單。
@@ -1070,7 +1070,7 @@ Dynamic Media可以將字幕檔案轉換為JSON（JavaScript對象表示法）�
 
    請參閱 [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-1. 執行下列操作之一：
+1. 執行下列任一項作業：
 
    * 要獲得彈出式視頻查看器體驗，請選擇 **[!UICONTROL URL]**。 在「URL」對話框中，選擇URL並將其複製到剪貼簿，然後將URL傳到簡單文本編輯器中。 使用以下語法追加視頻的複製URL:
 
@@ -1130,7 +1130,7 @@ Cost-efficient access to rapidly evolving technology.
 
    請參閱 [上載資產](/help/assets/manage-digital-assets.md#uploading-assets)。
 
-1. 執行下列操作之一：
+1. 執行下列任一項作業：
 
    <table>
      <tbody>
