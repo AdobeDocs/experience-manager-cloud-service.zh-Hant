@@ -2,9 +2,9 @@
 title: 配置高級網路AEM以as a Cloud Service
 description: 瞭解如何配置高級網路功能，如VPN或靈活或專用的出口IP地址，以便AEMas a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 906c8aed146724c1bb18e8031e5dd97f4cf68d25
+source-git-commit: 3325a7a0f99c427040e868f9cafc5f9890d97d69
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2964'
 ht-degree: 1%
 
 ---
@@ -70,11 +70,11 @@ API應在幾秒內作出響應，指示更新狀態，大約10分鐘後，終結
 
 ### 刪除或禁用靈活埠出口 {#deleting-disabling-flexible-port-egress-provision}
 
-至 **刪除** 程式的網路基礎架構，調用 *DELETE/program/{program ID}/ networkinfrastructure/{networkinfrastructureID}* 有關詳細資訊，請參閱Cloud Manager API文檔。
+至 **刪除** 程式的網路基礎架構，調用 `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`。
 
 為了 **禁用** 從特定環境執行靈活埠出口，調用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
 
-有關詳細資訊，請參見 [Cloud Manager API文檔](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
+有關API的詳細資訊，請參見 [Cloud Manager API文檔](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
 
 ### 流量路由 {#flexible-port-egress-traffic-routing}
 
