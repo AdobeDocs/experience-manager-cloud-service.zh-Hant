@@ -2,7 +2,7 @@
 title: 配置高級網路AEM以as a Cloud Service
 description: 瞭解如何配置高級網路功能，如VPN或靈活或專用的出口IP地址，以便AEMas a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
+source-git-commit: 906c8aed146724c1bb18e8031e5dd97f4cf68d25
 workflow-type: tm+mt
 source-wordcount: '2976'
 ht-degree: 1%
@@ -70,7 +70,7 @@ API應在幾秒內作出響應，指示更新狀態，大約10分鐘後，終結
 
 ### 刪除或禁用靈活埠出口 {#deleting-disabling-flexible-port-egress-provision}
 
-為了 **刪除** 網路基礎架構、提交客戶支援票證、說明已建立的內容以及需要刪除的原因。
+至 **刪除** 程式的網路基礎架構，調用 *DELETE/program/{program ID}/ networkinfrastructure/{networkinfrastructureID}* 有關詳細資訊，請參閱Cloud Manager API文檔。
 
 為了 **禁用** 從特定環境執行靈活埠出口，調用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
 

@@ -2,9 +2,9 @@
 title: 部署代碼
 description: 瞭解如何在as a Cloud Service中使用Cloud Manager管道部署AEM代碼。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
+source-git-commit: c6e930f62cc5039e11f2067ea31882c72be18774
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
@@ -121,3 +121,72 @@ _只有「完整堆棧代碼」管道類型支援代碼掃描、功能測試、U
 ## 部署過程 {#deployment-process}
 
 所有Cloud Service部署都遵循滾動過程以確保零停機。 請參閱文檔 [滾動部署的工作方式](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 來瞭解更多資訊。
+
+## 重新執行生產部署 {#Reexecute-Deployment}
+
+對於生產部署步驟已完成的執行，支援重新執行生產部署步驟。 完成的類型不重要 — 部署可能被取消或失敗。 話雖如此，預計主要使用案例將是生產部署步驟因暫時原因而失敗的案例。 重新執行使用同一管道建立新執行。 此新執行包括三個步驟：
+
+1. 驗證步驟 — 這實質上與正常管道執行期間發生的驗證相同。
+1. 生成步驟 — 在重新執行的上下文中，生成步驟是複製對象，而不是實際執行新的生成進程。
+1. 生產部署步驟 — 與正常管道執行中的生產部署步驟使用相同的配置和選項。
+
+生成步驟在UI中的標籤可能稍有不同，以反映它正在複製對象，而不是重新生成。
+
+![重新部署](assets/Re-deploy.png)
+
+限制:
+
+* 重新執行生產部署步驟將僅在上次執行時可用。
+* 無法重新執行推式更新執行。 如果上次執行是推式更新執行，則不可能重新執行。
+* 如果上次執行是推式更新執行，則不可能重新執行。
+* 如果上次執行在生產部署步驟之前的任何時間點失敗，則無法重新執行。
+
+### 重新執行API {#Reexecute-API}
+
+### 標識重新執行
+
+為了確定執行是否是重新執行，可檢查觸發欄位。 它的價值是 *執行(_E)*。
+
+### 觸發新執行
+
+要觸發重新執行，需要向HAL連結&lt;(PUT請求)<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)>。 如果存在此連結，則可以從該步驟重新啟動執行。 如果缺少，則無法從該步驟重新啟動執行。 在初始版本中，此連結將只出現在生產部署步驟中，但將來的版本可能支援從其他步驟啟動管道。 範例:
+
+```Javascript
+ {
+  "_links": {
+    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+      "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
+      "templated": false
+    },
+    "self": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530",
+      "templated": false
+    }
+  },
+  "id": "6187842",
+  "stepId": "2983530",
+  "phaseId": "1575676",
+  "action": "deploy",
+  "environment": "weretail-global-b75-prod",
+  "environmentType": "prod",
+  "environmentId": "59254",
+  "startedAt": "2022-01-20T14:47:41.247+0000",
+  "finishedAt": "2022-01-20T15:06:19.885+0000",
+  "updatedAt": "2022-01-20T15:06:20.803+0000",
+  "details": {
+  },
+  "status": "FINISHED"
+```
+
+
+HAL連結的語法 _href_  以上值不打算用作參考點。 實際值應始終從HAL連結中讀取而不是生成。
+
+提交 *PUT* 對此終結點的請求將導致 *201* 如果成功，則響應主體將表示新執行。 這類似於通過API啟動常規執行。
