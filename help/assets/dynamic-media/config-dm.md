@@ -3,9 +3,9 @@ title: 配置Dynamic MediaCloud Service
 description: 瞭解如何在Adobe Experience Manager as a Cloud Service配置Dynamic Media。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
+source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
 workflow-type: tm+mt
-source-wordcount: '3438'
+source-wordcount: '3449'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. 在Experience Manageras a Cloud Service中，選擇Experience Manageras a Cloud Service徽標以訪問全局導航控制台。
 1. 在控制台左側，選擇「工具」表徵圖，然後轉到 **[!UICONTROL Cloud Services>Dynamic Media配置]**。
 1. 在「Dynamic Media配置瀏覽器」頁面的左窗格中，選擇 **[!UICONTROL 全球]** (不選擇資料夾表徵圖 **[!UICONTROL 全球]**)。 然後選擇 **[!UICONTROL 建立]**。
-1. 在 **[!UICONTROL 建立Dynamic Media配置]** 頁，輸入標題、Dynamic Media帳戶電子郵件地址、密碼，然後選擇您的區域。 此資訊是通過Adobe在預配電子郵件中提供給您的。 如果您未收到此電子郵件，請與Adobe客戶支援聯繫。
+1. 在 **[!UICONTROL 建立Dynamic Media配置]** 頁，輸入Dynamic Media帳戶的公司管理員的標題、Dynamic Media帳戶電子郵件地址和密碼，然後選擇您的區域。 此資訊是通過Adobe在預配電子郵件中提供給您的。 如果您未收到此電子郵件，請與Adobe客戶支援聯繫。
 1. 選擇 **[!UICONTROL 連接到Dynamic Media]**。
 1. 在 **[!UICONTROL 更改密碼]** 對話框 **[!UICONTROL 新密碼]** 欄位中，輸入包含8-25個字元的新密碼。 密碼必須至少包含下列各項之一：
 
@@ -284,7 +284,7 @@ Dynamic Media色彩管理允許您對正確的資產進行色彩調整。 通過
 
    * 按兩下 **[!UICONTROL jobParam]** 開啟其關聯的文本欄位。 請參閱 [支援的MIME類型](/help/assets/file-format-support.md) 可用於給定MIME類型的允許處理參數值清單。
 
-1. 執行下列操作之一：
+1. 執行下列任一項作業：
    * 重複步驟3-4以編輯更多MIME類型。
    * 在CRXDE Lite頁的菜單欄上，選擇 **[!UICONTROL 全部保存]**。
 
