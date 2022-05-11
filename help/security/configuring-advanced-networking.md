@@ -2,9 +2,9 @@
 title: 配置高級網路AEM以as a Cloud Service
 description: 瞭解如何配置高級網路功能，如VPN或靈活或專用的出口IP地址，以便AEMas a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: d5d17c554cc0877ebe89710b3ea512355fec2a84
+source-git-commit: 290f75af3da5fb10fadc578163568913be4878df
 workflow-type: tm+mt
-source-wordcount: '2977'
+source-wordcount: '2981'
 ht-degree: 1%
 
 ---
@@ -520,7 +520,7 @@ API應在幾秒內響應，表示 `updating` 大約10分鐘後，調用Cloud Man
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>從VPN側到客AEM戶側的通信的IP。 這可以在客戶配置中列出，以確保只能從中建立連AEM接。</td>
-    <td>如果客戶希望僅允許VPN訪問，AEM則應將CNAME DNS條目配置為映射 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code>  和/或 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 這個。</td>
+    <td>如果客戶希望允許VPN訪問，AEM他們應配置CNAME DNS條目以映射其自定義域和/或 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 和/或 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 這個。</td>
   </tr>
 </tbody>
 </table>
