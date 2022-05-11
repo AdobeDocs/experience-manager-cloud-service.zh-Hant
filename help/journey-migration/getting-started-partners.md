@@ -2,10 +2,10 @@
 title: 遷移指南，以Experience Manager合作夥伴的as a Cloud Service
 description: 遷移指南，以Experience Manager合作夥伴的as a Cloud Service
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 12%
+source-wordcount: '2126'
+ht-degree: 11%
 
 ---
 
@@ -29,7 +29,9 @@ Cloud Service將Adobe Experience Manager豐富的現成功能和可擴充性與�
 * Developer Journey in Adobe Experience Manager as a Cloud Service
 * Moving to Adobe Experience Manager as a Cloud Service -->
 
-<br>
+有關遷移過程的一般說明，請參閱下圖。
+
+![影像](/help/journey-migration/assets/migration-process.png)
 
 ## Adobe Experience Manager as a Cloud Service入門 {#getting-started}
 
@@ -56,7 +58,7 @@ Cloud Service將Adobe Experience Manager豐富的現成功能和可擴充性與�
 | <ol><li>審閱 [Adobe Experience ManagerSDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) 文檔以瞭解詳細資訊。</li><li>監視 [安裝Dispatcher SDK](https://video.tv.adobe.com/v/30601) 瞭解如何安裝Dispatcher SDK</li><li>監視 [配置Dispatcher SDK](https://video.tv.adobe.com/v/30602) 瞭解如何配置Dispatcher SDK</li><li>審閱 [本地開發設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up) 文檔以瞭解詳細資訊</li><li>配置對Experience Manager的訪問 [穿行](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing)</li></ol> | <ol><li>[開發要點](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[開發指導方針](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)</li><li>[瞭解Experience Manager項目結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)</li><li>[數字基礎藍圖](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[樣式系統](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=en#authoring)</li><li>[覆蓋](/help/implementing/developing/introduction/overlays.md)</li><li>[Experience Manageras a Cloud ServiceAPI參考](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/)</li></ol> |
 
 >[!TIP]
-> 請參閱有關如何 [在本地Experience ManagerSDK上開發和部署WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+> 請參閱有關如何 [在本地Experience ManagerSDK上開發和部署WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)
 
 ### 部署
 
@@ -112,7 +114,7 @@ Cloud Manager是Managed Services的可選內容交付工具，是必需的。 �
 
 轉換至雲端服務的過程包括三個階段：「規劃」、「執行」和「上線後」。為了順利成功轉換，您應該確保有正確規劃，並遵守本指南所綜覽的最佳作法。
 
-下圖將以插圖呈現建議您用來轉換至雲端服務的過程。
+下圖顯示了建議的向Cloud Service過渡的高級代表。
 
 ![影像](/help/journey-migration/assets/home-img1.png)
 
