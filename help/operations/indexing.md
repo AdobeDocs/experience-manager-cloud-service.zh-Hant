@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
+source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2535'
 ht-degree: 1%
 
 ---
@@ -64,13 +64,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果自定義現成索引，例如 `damAssetLucene-6`，請從 *Cloud Service環境* 使用CRX DE包管理器的開發環境(`/crx/packmgr/`)。 然後將配置更名為 `damAssetLucene-6-custom-1`，並在頂部添加您的自定義項。 這可確保不會無意中刪除所需的配置。 例如， `tika` 節點 `/oak:index/damAssetLucene-6/tika` 在雲服務的自定義索引中需要。 雲SDK上不存在該選項。
+>如果自定義現成索引，例如 `damAssetLucene-6`，請從 *Cloud Service環境* 使用CRX DE包管理器(`/crx/packmgr/`)。 然後將配置更名為 `damAssetLucene-6-custom-1`，並在頂部添加您的自定義項。 這可確保不會無意中刪除所需的配置。 例如， `tika` 節點 `/oak:index/damAssetLucene-6/tika` 在雲服務的自定義索引中需要。 雲SDK上不存在該選項。
 
 您需要按照以下命名模式準備包含實際索引定義的新索引定義包：
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-那就得倒下 `ui.apps/src/main/content/jcr_root`。 目前不支援子根資料夾。
+那就得倒下 `ui.apps/src/main/content/jcr_root`。 所有自定義和自定義索引定義都需要儲存在 `/oak:index`。
 
 需要設定包的篩選器，以便保留現有（現成索引）。 在檔案中 `ui.apps/src/main/content/META-INF/vault/filter.xml`，需要列出每個自定義（或自定義）索引，例如 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`。 如果稍後更改了索引版本，則需要調整篩選器。
 
@@ -84,15 +84,69 @@ ht-degree: 1%
 
 ## 部署索引定義 {#deploying-index-definitions}
 
->[!NOTE]
->
->Jackrabbit Filevault Maven包插件版本存在已知問題 **1.1.0** 不允許添加 `oak:index` 到模組 `<packageType>application</packageType>`。 您應該更新到該插件的最新版本。
-
-索引定義現在標籤為自定義和版本化：
+索引定義被標籤為自定義和版本控制：
 
 * 索引定義本身(例如 `/oak:index/ntBaseLucene-custom-1`)
 
-因此，為了部署索引，索引定義(`/oak:index/definitionname`)需要通過 `ui.apps` 通過Git和Cloud Manager部署過程。
+要部署自定義或自定義索引，請使用索引定義(`/oak:index/definitionname`)需要通過 `ui.apps` 通過Git和Cloud Manager部署過程。 在FileVault篩選器中， `ui.apps/src/main/content/META-INF/vault/filter.xml`，分別列出每個自定義索引和自定義索引，例如 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`。 自定義/自定義索引定義本身將儲存在檔案中 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`，如下所示：
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="[async,nrt]"
+        compatVersion="{Long}2"
+        ...
+        </indexRules>
+        <tika jcr:primaryType="nt:unstructured">
+            <config.xml jcr:primaryType="nt:file"/>
+        </tika>
+</jcr:root>
+```
+
+上例包含Apache Tika的配置。 Tika配置檔案將儲存在 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`。
+
+### 項目配置
+
+根據使用的Jackrabbit Filevault Maven包插件的版本，需要在項目中進行更多配置。 使用Jackrabbit Filevault Maven包插件版本時 **1.1.6** 或更新，然後 `pom.xml` 需要在插件配置中包含以下部分 `filevault-package-maven-plugin`, `configuration/validatorsSettings` （前） `jackrabbit-nodetypes`):
+
+```xml
+<jackrabbit-packagetype>
+    <options>
+        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+    </options>
+</jackrabbit-packagetype>
+```
+
+另外，在這個例子中 `vault-validation` 版本需要升級到較新版本：
+
+```xml
+<dependency>
+    <groupId>org.apache.jackrabbit.vault</groupId>
+    <artifactId>vault-validation</artifactId>
+    <version>3.5.6</version>
+</dependency>
+```
+
+然後，在 `ui.apps.structure/pom.xml` 和 `ui.apps/pom.xml`, `filevault-package-maven-plugin` 需要 `allowIndexDefinitions` 以及 `noIntermediateSaves` 啟用。 選項 `noIntermediateSaves` 確保以原子方式添加索引配置。
+
+```xml
+<groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    <configuration>
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <properties>
+            <cloudManagerTarget>none</cloudManagerTarget>
+            <noIntermediateSaves>true</noIntermediateSaves>
+        </properties>
+    ...
+```
+
+在 `ui.apps.structure/pom.xml`，也請參見Wiki頁。 `filters` 此插件的節需要包含以下篩選器根：
+
+```xml
+<filter><root>/oak:index</root></filter>
+```
 
 添加新索引定義後，需要通過雲管理器部署新應用程式。 在部署兩個作業後，將啟動兩個作業，負責將索引定義分別添加（並在需要時合併）到MongoDB和Azure段儲存，供作者和發佈。 在「藍綠」切換開始之前，正在使用新索引定義重新為基礎儲存庫編製索引。
 
