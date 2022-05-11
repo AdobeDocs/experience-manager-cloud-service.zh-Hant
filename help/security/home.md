@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 安全性
-description: Adobe Experience Manager as a Cloud Service 安全性自助資源與文件連結
+description: '瞭解有關Adobe Experience Manager as a Cloud Service安全功能的詳細資訊。 '
 landing-page-description: 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。
 exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 76%
+source-wordcount: '382'
+ht-degree: 68%
 
 ---
 
 # Experience Manager as a Cloud Service 安全性 {#aem-security-guide}
 
-此頁面提供 Experience Manager as a Cloud Service 安全性的相關自助資源。
+瞭解有關Adobe Experience Manager as a Cloud Service安全功能的詳細資訊。
 
 ## 安全性重要文章 {#key-articles}
 

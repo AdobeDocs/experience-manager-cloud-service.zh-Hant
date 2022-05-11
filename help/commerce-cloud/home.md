@@ -1,26 +1,26 @@
 ---
 title: AEM 內容與商務
-description: AEM Content and Commerce 自助資源和文件連結
+description: 了解如何使用及管理 Experience Manager Content and Commerce as a Cloud Service。
 landing-page-description: 了解如何使用及管理 Experience Manager Content and Commerce as a Cloud Service。
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 68%
+source-wordcount: '367'
+ht-degree: 71%
 
 ---
 
 # AEM 內容與商務 {#commerce-guide}
 
-This page lists the self-help resources regarding AEM Content and Commerce.
+了解如何使用及管理 Experience Manager Content and Commerce as a Cloud Service。
 
 >[!NOTE]
 >
->For AEM Content and Commerce with AEM 6.5 and classic CIF, see [AEM 6.5 Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>有AEM關6.5和AEM經典CIF的內容和商業，請參見 [AEM6.5內容與商業](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html)。
 
-## Key Content and Commerce Articles {#key-articles}
+## 主要內容和商業條目 {#key-articles}
 
-* [Introduction of AEM Content and Commerce](introduction.md)
+* [內容與AEM商務簡介](introduction.md)
 * [內容和商AEM務入門](/help/commerce-cloud/getting-started.md)
 * [開AEM發內容與商業](/help/commerce-cloud/develop.md)
 

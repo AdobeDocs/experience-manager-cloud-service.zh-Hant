@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 之運作與維護
-description: Adobe Experience Manager as a Cloud Service 運作與維護自助資源和文件連結
-landing-page-description: 了解 AEM as a Cloud Service 的後端作業，例如建立索引和維護工作。
+description: '瞭解Experience Manageras a Cloud Service的後端操作（如索引和維護任務），並獲取查詢的答案。 '
+landing-page-description: 瞭解Experience Manageras a Cloud Service的後端操作（如索引和維護任務），並獲取查詢的答案。
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 80%
+source-wordcount: '398'
+ht-degree: 62%
 
 ---
 
 # Experience Manager as a Cloud Service 之運作與維護 {#aem-operations-guide}
 
-此頁面提供 Experience Manager as a Cloud Service 運作與維護的自助資源。
+瞭解Experience Manageras a Cloud Service的後端操作（如索引和維護任務），並獲取查詢的答案。
 
 ## 重要運作文章 {#key-articles}
 

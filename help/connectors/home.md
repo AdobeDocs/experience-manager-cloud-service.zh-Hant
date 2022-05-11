@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 連接器
-description: Adobe Experience Manager as a Cloud Service 連接器自助資源與文件連結
-landing-page-description: 了解如何將連接器整合至 AEM as a Cloud Service。
+description: 瞭解Connectors、它們可以做什麼，以及如何在Experience Manager中實施這些寶貴的工具。
+landing-page-description: 瞭解Connectors、它們可以做什麼，以及如何在Experience Manager中實施這些寶貴的工具。
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 80%
+source-wordcount: '394'
+ht-degree: 66%
 
 ---
 
 # 為 Experience Manager as a Cloud Service 實作連接器 {#aem-connectors-guide}
 
-此頁面提供 Experience Manager as a Cloud Service 連接器的相關自助資源。
+瞭解Experience Manageras a Cloud Service的連接器、它們可以做什麼，以及如何在Experience Manager中實施這些重要工具。
 
 ## Experience Manager as a Cloud Service 連接器重要文章 {#key-articles}
 

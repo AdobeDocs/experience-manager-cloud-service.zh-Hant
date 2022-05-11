@@ -1,18 +1,18 @@
 ---
 title: 無AEM頭開發者之旅
-description: 從此開始，在Adobe Experience Manager(AEM)as a Cloud Service使用內容模型、內容片段和GraphQL API等功能以無頭內容管理系統(CMS)為無頭體驗提供動力時，可進行有指導的旅行。 此過程為您提供開發第一個無頭應用程式所需的所有資訊。
-landing-page-description: 從這裡開始，逐步引導您了解 AEM 的無周邊功能、其功能，以及如何在您的第一個開發專案中運用這些功能。
+description: '從此開始，在將Adobe Experience Manager(AEM)as a Cloud Service用作無頭內容管理系統(CMS)時，進行有指導的旅行。 瞭解功能強大、靈活的無頭功能、功能，以及如何在您的第一個無頭開發項目中利用它們。 此過程為您提供開發第一個無頭應用程式所需的所有資訊。 '
+landing-page-description: '瞭解無頭內容的交付和實施。 瞭解有關在業務中制定戰略的更多資訊。 '
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 21bd90fa61cfb1c567a7eea4b439206c38b49a5f
+source-git-commit: 2ec6b29800867462bbc2e88048c583d4e5eefa57
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 3%
+source-wordcount: '1301'
+ht-degree: 1%
 
 ---
 
 # 無AEM頭開發者之旅 {#aem-headless-developer-journey}
 
-從此開始，在將Adobe Experience Manager(AEM)as a Cloud Service用作無頭內容管理系統(CMS)時，進行有指導的旅行。 瞭解功能強大、靈活的無頭功能、功能，以及如何在您的第一個無頭開發項目中利用它們。 此過程為您提供開發第一個無頭應用程式所需的所有資訊。
+從此開始，進行帶導的旅程 [!DNL Adobe Experience Manager as a Cloud Service] (AEM)用作無頭內容管理系統(CMS)時。 瞭解功能強大、靈活的無頭功能、功能，以及如何在您的第一個無頭開發項目中利用它們。 此過程為您提供開發第一個無頭應用程式所需的所有資訊。
 
 ## 簡介 {#introduction}
 
@@ -87,7 +87,7 @@ ht-degree: 3%
 
 因此，這種旅行是設計為獨立的。 但是，其中的一些是相互關聯的。 查看這些附加旅程，瞭解有關功能強大的功能AEM如何協同工作的詳細資訊。
 
-* [無AEM頭教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 如果您喜歡通過實踐來學習，並且具有技術傾向，請參閱我們按API和框架組織的動手教程，該教程將探討建立和使用基於AEMHeadless的應用程式。
+* [無AEM頭教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 如果您喜歡通過實踐來學習，並且在技術上有傾向，請參閱我們按API和框架組織的動手教程，該教程將探討建立和使用基於AEMHeadless的應用程式。
 * [無AEM頭翻譯之旅](/help/journey-headless/translation/overview.md)  — 此文檔記錄過程讓您能夠全面瞭解無頭技術、如何AEM處理無頭內容以及如何翻譯。
 * [無頭創作旅程](/help/journey-headless/author/overview.md)  — 從此開始，引導您瞭解功能強大、靈活的無頭功能AEM、功能，以及如何在您的第一個無頭項目上對內容建模。
 * [無頭建築師之旅](/help/journey-headless/architect/overview.md)  — 從此處開始，介紹Adobe Experience Manager as a Cloud Service強大、靈活、無頭的功能，以及如何為您的項目建模內容。

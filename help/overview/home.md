@@ -1,17 +1,17 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 概覽
-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
+title: Experience Manageras a Cloud Service入門
+description: 瞭解Experience Manageras a Cloud Service如何工作以及軟體可以為您做些什麼。
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 83%
+source-wordcount: '360'
+ht-degree: 70%
 
 ---
 
 # Experience Manager as a Cloud Service 概覽 {#aem-overview-guide}
 
-此頁面提供 Experience Manager as a Cloud Service 簡介及概覽的自助資源。
+從此處開始，瞭解Experience Manageras a Cloud Service如何工作以及軟體可為您做些什麼。
 
 ## 重要文章概覽 {#key-articles}
 

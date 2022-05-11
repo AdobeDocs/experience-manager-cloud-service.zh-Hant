@@ -1,18 +1,18 @@
 ---
 title: 合規性
-description: 本頁列出自助資源，提供有關 Experience Manager as a Cloud Service 合規性的資訊。
+description: 獲取Experience Manageras a Cloud Service中的法規遵從性概述。
 landing-page-description: 如需 AEM as a Cloud Service 合規性的總覽，包括隱私權和協助工具，請從這裡開始。
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 84%
+source-wordcount: '378'
+ht-degree: 78%
 
 ---
 
 # AEM as a Cloud Service 合規性 {#aem-compliance}
 
-本頁列出自助資源，提供有關 Experience Manager as a Cloud Service 合規性的資訊。
+獲取Experience Manageras a Cloud Service中的法規遵從性概述。
 
 ## 重要文章概覽 {#key-articles}
 
