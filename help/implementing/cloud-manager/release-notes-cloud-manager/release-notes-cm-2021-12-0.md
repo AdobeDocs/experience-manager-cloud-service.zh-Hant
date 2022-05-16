@@ -2,7 +2,7 @@
 title: Cloud Manager在as a Cloud Service版AEM2021.12.0中的發行說明
 description: 以下是as a Cloud Service版本2021.12.0中Cloud Manager的AEM發行說明。
 feature: Release Information
-source-git-commit: e402578fc95fd97f808fde01a860d4c583af4c9b
+source-git-commit: bd31dc0ca5b0f4cd84314dba67c8a611f490d377
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 發行日期 {#release-date}
 
-Cloud Manager在as a Cloud Service中的AEM發佈日期為2021年12月16日。 下一版計畫於2022年1月發行。
+Cloud Manager在as a Cloud Service中的AEM發佈日期為2021年12月16日。 下一版計畫於2022年1月20日發行。
 
 ## 新增功能 {#what-is-new}
 

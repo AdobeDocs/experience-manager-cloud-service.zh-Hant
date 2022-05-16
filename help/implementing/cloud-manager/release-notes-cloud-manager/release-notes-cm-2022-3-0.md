@@ -2,13 +2,13 @@
 title: Adobe Experience Manager as a Cloud Service的Cloud Manager 2022.3.0發行說明
 description: 以下是Cloud Manager 2022.3.0在as a Cloud Service中的發行說明AEM。
 feature: Release Information
-source-git-commit: 437be8c82a4dee6c9e56af09afa7e9048c8cb3c0
+exl-id: d09d48c5-6e0a-4a6a-85e9-1a60fdd6e5bf
+source-git-commit: 68586304724530f83649cffee76cefef3e1c8627
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '196'
 ht-degree: 3%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service的Cloud Manager 2022.3.0發行說明 {#release-notes}
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## 發行日期 {#release-date}
 
-2022年3月10日Cloud Manager版本2022.3.0AEM的發佈日期。 下一版計畫於2022年4月7日發行。
+Cloud Manager在as a Cloud Service中2022.3.0版的AEM發佈日期為2022年3月10日。 下一版計畫於2022年4月7日發行。
 
 ## 新增功能 {#what-is-new}
 
