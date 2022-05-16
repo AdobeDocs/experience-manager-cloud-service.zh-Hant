@@ -2,9 +2,9 @@
 title: 配置高級網路AEM以as a Cloud Service
 description: 瞭解如何配置高級網路功能，如VPN或靈活或專用的出口IP地址，以便AEMas a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 290f75af3da5fb10fadc578163568913be4878df
+source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
 workflow-type: tm+mt
-source-wordcount: '2981'
+source-wordcount: '3053'
 ht-degree: 1%
 
 ---
@@ -68,13 +68,7 @@ API應在幾秒內作出響應，指示更新狀態，大約10分鐘後，終結
 
 通過再次調用 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 端點，確保包括完整的配置參數集，而不是子集。
 
-### 刪除或禁用靈活埠出口 {#deleting-disabling-flexible-port-egress-provision}
-
-至 **刪除** 程式的網路基礎架構，調用 `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`。
-
->[!NOTE]
->
-> 如果存在使用基礎架構的任何環境，則刪除不會刪除該基礎架構。
+### 禁用靈活埠出口 {#disabling-flexible-port-egress-provision}
 
 為了 **禁用** 從特定環境執行靈活埠出口，調用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
 
@@ -206,6 +200,12 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 除了中靈活埠出口支援的路由規則外， `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點，專用出口IP地址支援 `nonProxyHosts` 的下界。 這允許您聲明一組應通過共用IP地址範圍而不是專用IP路由的主機，這可能非常有用，因為通過共用IP的流量可能會進一步優化。 的 `nonProxyHost` URL可能遵循以下模式 `example.com` 或 `*.example.com`，其中只在域的開頭支援通配符。
 
 在確定靈活的埠出口和專用的出口IP地址時，如果不需要特定的IP地址，客戶應選擇靈活的埠出口，因為Adobe可以優化靈活的埠出口通信的效能。
+
+### 禁用專用出口IP地址 {#disabling-dedicated-egress-IP-address}
+
+為了 **禁用** 特定環境的專用出口IP地址，調用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
+
+有關API的詳細資訊，請參見 [Cloud Manager API文檔](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
 
 ### 流量路由 {#dedcated-egress-ip-traffic-routing}
 
@@ -397,9 +397,7 @@ API應在幾秒內響應，表示 `updating` 大約10分鐘後，調用Cloud Man
 
 通過再次調用 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 端點，確保包括完整的配置參數集，而不是子集。 應用環境更新通常需要5到10分鐘。
 
-### 刪除或禁用VPN {#deleting-or-disabling-the-vpn}
-
-要刪除網路基礎架構，請提交客戶支援票證，說明已建立的內容以及需要刪除的原因。
+### 禁用VPN {#disabling-the-vpn}
 
 要為特定環境禁用VPN，請調用 `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`。 中的詳細資訊 [API文檔](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
 
@@ -540,6 +538,25 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
+## 刪除程式的網路基礎架構 {#deleting-network-infrastructure}
+
+至 **刪除** 程式的網路基礎架構，調用 `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`。
+
+>[!NOTE]
+>
+> 僅當所有環境都禁用其高級網路時，「刪除」將刪除基礎結構。
+
 ## 在高級網路類型之間轉換 {#transitioning-between-advanced-networking-types}
 
-自 `kind` 無法修改參數，請與客戶支援聯繫以獲得幫助，說明已建立的內容和更改的原因。
+可以通過以下步驟在高級網路類型之間遷移：
+
+* 在所有環境中禁用高級網路
+* 刪除高級網路基礎架構
+* 使用正確的值重新建立高級網路資訊
+* 啟用環境級高級網路
+
+>[!WARNING]
+>
+> 此過程將導致刪除和重新建立之間的高級網路服務停機
+
+如果停機會對業務產生重大影響，請聯繫客戶支援以獲得幫助，介紹已建立的內容和更改的原因。
