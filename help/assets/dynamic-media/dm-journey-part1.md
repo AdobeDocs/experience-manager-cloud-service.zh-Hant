@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '3585'
+source-wordcount: '3708'
 ht-degree: 0%
 
 ---
@@ -52,14 +52,14 @@ _第二部分_
 * 業務分析師
 * 內容架構師
 * 內容作者
-* 設計師
+* Designer
 * 開發人員
 * 營銷
 * 產品經理/所有者
 
 >[!TIP]
 >
->為獲得最佳效果，Adobe建議您在台式電腦上閱讀和查看Dynamic Media之旅。
+>為獲得最佳效果，Adobe建議您在台式電腦上閱讀和查看此Dynamic Media之旅。
 
 ## 什麼是Dynamic Media，它能幫你什麼？ {#dm-journey-a}
 
@@ -249,44 +249,50 @@ Adobe建議以無損格式上載資產。 通常，最好避免JPEG，因為當�
 
 除了手動發佈資產外，您還可以配置Dynamic Media，以便在上載時立即發佈資產（無需任何用戶干預）。
 
-上載後，在Dynamic Media中預覽資產的格式副本有不同的方法。 預覽格式副本可以幫助您瞭解客戶所看到的內容。 常見的預覽方法是選擇一個資產，然後通過選擇 *影像預設* 如下所示。
+上載後，在Dynamic Media中預覽資產的格式副本有不同的方法。 預覽格式副本可以幫助您瞭解客戶所看到的內容。 常見的預覽方法是選擇一個資產，然後通過選擇 _影像預設_ 如下所示。
 
 ![基於「大影像」預設預覽資產的格式副本](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _基於所選「大」影像預設預覽資產的格式副本。 已按一下URL按鈕。 生成的URL路徑包含「大」影像預設名稱，可用於網頁。_
 
 上面的URL是即時的！ [試試看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$)。
 
-預覽資產的另一種方法是選擇影像資產，然後選擇 *查看者* 如下所示。
+預覽資產的另一種方法是選擇影像資產，然後選擇 _查看者_ 如下所示。
 
 ![基於「縮放垂直光線查看器」預設預覽資產](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _根據所選的「ZoomVertical_light」查看器預設預覽資產。 滑鼠指針(`+`)被移到監視器上以放大。 注意URL和「嵌入」按鈕。_
 
 上面的節目是實況轉播！ [試試看](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light)。
 
-讓我們仔細檢查這些URL，以便您能夠更好地瞭解發生了什麼。 帶我去 [Dynamic Media之旅：《基礎》，第二部](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d)。
+## 可選 — 瞭解詳情
 
-## 了解更多
+這趟旅程的第一部分涉及各種Dynamic Media主題的基本內容。 如果您想瞭解有關剛剛閱讀的內容的更多資訊，請使用下面的材料來更詳細地瞭解概念。 否則，你可以繼續你的旅程的第二部分。 請參閱 [這趟Dynamic Media之旅接下來是什麼](#whats-next)。
 
-_Dynamic Media話題_
+_Dynamic Media幫助主題_
 
-* [與Dynamic Media合作](/help/assets/dynamic-media/dynamic-media.md)
-* [智慧型影像](/help/assets/dynamic-media/imaging-faq.md)
-* [自適應視頻集](/help/assets/dynamic-media/video.md)
+* [與Dynamic MediaExperience Manager合作](/help/assets/dynamic-media/dynamic-media.md)
+* [關於智慧映像](/help/assets/dynamic-media/imaging-faq.md)
+* [如何建立自適應視頻集](/help/assets/dynamic-media/video.md)
 * [影像品質最佳化的最佳作法](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
-* [上傳資產](/help/assets/add-assets.md#upload-assets)
-* [預覽資產](/help/assets/dynamic-media/previewing-assets.md)
-* [預覽3D資產](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [交付Dynamic Media資產](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
-* [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+* [如何上載資產](/help/assets/add-assets.md#upload-assets)
+* [如何預覽資產](/help/assets/dynamic-media/previewing-assets.md)
+* [如何預覽3D資產](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [如何交付Dynamic Media資產](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [如何發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [與選擇性出版合作在Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
 
 _Dynamic Media教程_
 
 * [將Dynamic Media與Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （搜索） *Dynamic Media*)
+* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （搜索） _Dynamic Media_)
 
 _Dynamic Media觀眾_
 
-* [現場演示](https://landing.adobe.com/tw/na/dynamic-media/ctir-2755/live-demos.html)
+* [現場演示](https://landing.adobe.com/tw/na/dynamic-media/ctir-2755/live-demos.html) 每位觀眾
+
+## 這趟Dynamic Media之旅接下來是什麼 {#whats-next}
+
+在此路程的第二部分中，您將更仔細地檢查Dynamic MediaURL，以便更好地瞭解交付資產時發生的情況。 您還將瞭解建立影像預設以呈現資產背後的基本原理，並瞭解影像集、旋轉集和混合媒體集及其建立方式。
+
+帶我去 [Dynamic Media之旅：《基礎》，第二部](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d)。
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 1e7280bd867d2d8673e42750005d82debf7cf44f
+source-git-commit: 06b98a0613b860e4192391c5c0d29079bec82b1e
 workflow-type: tm+mt
-source-wordcount: '3454'
+source-wordcount: '3456'
 ht-degree: 42%
 
 ---
@@ -324,7 +324,7 @@ ht-degree: 42%
       + [智慧標籤視頻資產](/help/assets/smart-tags-video-assets.md)
       + [如何組織資產](/help/assets/organize-assets.md)
       + [使用 [!DNL Adobe Stock] 資產](/help/assets/aem-assets-adobe-stock.md)
-      + [管理集合](/help/assets/manage-collections.md)
+      + [管理收藏集](/help/assets/manage-collections.md)
       + [中繼資料概覽](/help/assets/manage-metadata.md)
       + [與 [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
       + [如何新增或編輯中繼資料](/help/assets/meta-edit.md)
@@ -374,9 +374,9 @@ ht-degree: 42%
       + [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [預覽 — JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
    + 動態媒體 {#dynamicmedia}
-      + Dynamic Media之旅 {#dm-journey}
-         + [《基礎》，第一部分](/help/assets/dynamic-media/dm-journey-part1.md)
-         + [基本，第二部分](/help/assets/dynamic-media/dm-journey-part2.md)
+      + Dynamic Media之旅：基礎 {#dm-journey}
+         + [基本資訊：第一部分](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [基本資訊：第二部分](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Dynamic Media各Experience League通訊檔案](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [設定Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [與Dynamic Media合作](/help/assets/dynamic-media/dynamic-media.md)

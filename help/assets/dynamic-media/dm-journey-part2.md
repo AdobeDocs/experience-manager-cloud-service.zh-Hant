@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2877'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->為獲得最佳效果，Adobe建議您在台式電腦上閱讀和查看Dynamic Media之旅。
+>為獲得最佳效果，Adobe建議您在台式電腦上閱讀和查看此Dynamic Media之旅。
 
 ## Dynamic MediaURL的剖析及Dynamic Media如何提供內容 {#dm-journey-d}
 
@@ -43,7 +43,7 @@ _Dynamic MediaURL的解剖。_
 
 帳戶名是紫色部分。 在這種情況下，該帳戶稱為 `jpearldemo`。
 
-資產ID或名稱， `AdobeStock_28563982` 是綠色的。 注意資產已 *不* 檔案副檔名(如 `.png` 或 `.jpg`。 當將資產放入Dynamic Media時，將刪除檔案副檔名並建立另一種檔案：金字塔TIFF檔案。 吡唑TIFF允許Dynamic Media快速建立格式副本。
+資產ID或名稱， `AdobeStock_28563982` 是綠色的。 注意資產已 _不_ 檔案副檔名(如 `.png` 或 `.jpg`。 當將資產放入Dynamic Media時，將刪除檔案副檔名並建立另一種檔案：金字塔TIFF檔案。 吡唑TIFF允許Dynamic Media快速建立格式副本。
 
 最後，還有一些影像處理參數， `?wid=1000&fmt=jpeg&qlt=85`，以黃色顯示。
 
@@ -68,7 +68,7 @@ Dynamic Media有許多影像處理參數，您可以使用這些參數來微調�
 
 手錶仍略向左傾斜。 更改的旋轉值 `90` 至 `92`，然後按 **[!UICONTROL 輸入]**。 [試試看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)
 
-再說一遍，當你按 **[!UICONTROL 輸入]**&#x200B;這款手錶幾乎在瞬間產生了新的再現。 您可以看到您獲得的效能，這就解釋了為什麼Dynamic Media可以提供800,000多個映像請求， *每秒*&#x200B;在忙碌的週末或主要的假期。
+再說一遍，當你按 **[!UICONTROL 輸入]**&#x200B;這款手錶幾乎在瞬間產生了新的再現。 您可以看到您獲得的效能，這就解釋了為什麼Dynamic Media可以提供800,000多個映像請求， _每秒_&#x200B;在忙碌的週末或主要的假期。
 
 雖然可以逐張影像地更改URL中的影像處理參數，但這不是一種有效的方法，尤其是如果您的網站有成千上萬張影像。 一種更好的方法是使用影像預設。
 
@@ -204,17 +204,19 @@ Flyout查看器是預設的開箱查看器，可編輯其屬性。 或者，就�
 * `ZoomVertical_dark` 應用於影像資產的查看器。 [試試看](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark)。
 * `Zoom_light` 應用於影像的查看器。 [試試看](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light)。
 
-## 了解更多
+## 可選 — 瞭解詳情
 
-_Dynamic Media話題_
+如果您想瞭解有關剛剛閱讀的內容的更多資訊，請使用下面的材料來更詳細地瞭解概念。 否則，你的Dynamic Media之旅就完了！
 
-* [建立影像預設](/help/assets/dynamic-media/image-presets.md)
+_Dynamic Media幫助主題_
+
+* [如何建立影像預設](/help/assets/dynamic-media/image-presets.md)
 * 清單 [影像處理參數](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) 在建立影像預設時可在「影像修改量」欄位中使用的
-* [預覽資產](/help/assets/dynamic-media/previewing-assets.md)
-* [預覽3D資產](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [影像集](/help/assets/dynamic-media/image-sets.md)
-* [旋轉集](/help/assets/dynamic-media/spin-sets.md)
-* [混合媒體集](/help/assets/dynamic-media/mixed-media-sets.md)
+* [如何預覽資產](/help/assets/dynamic-media/previewing-assets.md)
+* [如何預覽3D資產](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [如何建立映像集](/help/assets/dynamic-media/image-sets.md)
+* [如何建立旋轉集](/help/assets/dynamic-media/spin-sets.md)
+* [如何建立混合媒體集](/help/assets/dynamic-media/mixed-media-sets.md)
 
 _Dynamic Media教程_
 
@@ -223,6 +225,6 @@ _Dynamic Media教程_
 
 _Dynamic Media觀眾_
 
-* [現場演示](https://landing.adobe.com/tw/na/dynamic-media/ctir-2755/live-demos.html)
+* [現場演示](https://landing.adobe.com/tw/na/dynamic-media/ctir-2755/live-demos.html) 每位觀眾
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
