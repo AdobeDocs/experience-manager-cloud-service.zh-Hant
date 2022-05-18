@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
+source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1960'
 ht-degree: 0%
 
 ---
@@ -181,6 +181,10 @@ Define DISABLE_DEFAULT_CACHING
          Header set Age 0
       </LocationMatch>
       ```
+
+### HEAD請求行為 {#request-behavior}
+
+當在HEADCDN上接收到Adobe請求時， **不** 快取，該請求被調度器和/或實例轉換和接AEM收作為GET請求。 如果響應是可快取的，則將從CDN提供後續HEAD請求。 如果響應不可快取，則後續HEAD請求將在一段時間內被傳遞AEM給調度程式和/或實例，該時間段取決於 `Cache-Control` TTL。
 
 ## Dispatcher快取無效 {#disp}
 
