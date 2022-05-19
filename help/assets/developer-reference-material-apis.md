@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f5282d149e80328742ff9008441960f62cea6290
+source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1795'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 2%
 | **中繼資料** |  |  |  |  |  |  |
 | 建立元資料 | - | ✓ | ✓ | ✓ | ✓ | - |
 | 讀取元資料 | - | ✓ | - | ✓ | ✓ | - |
-| 更新元資料 | - | ✓ | ✓ | ✓ | ✓ | - |
+| 更新中繼資料 | - | ✓ | ✓ | ✓ | ✓ | - |
 | 刪除元資料 | - | ✓ | ✓ | ✓ | ✓ | - |
 | 複製元資料 | - | ✓ | - | ✓ | ✓ | - |
 | 移動元資料 | - | ✓ | - | ✓ | ✓ | - |
@@ -163,10 +163,12 @@ CDN邊緣節點有助於加速請求的二進位檔案上載。
 | `fileName` | 字串 | 必要 | 資產名稱，如初始資料所提供。 |
 | `mimeType` | 字串 | 必要 | 啟動資料提供的二進位檔案的HTTP內容類型。 |
 | `uploadToken` | 字串 | 必要 | 正如啟動資料提供的那樣，為二進位檔案上載令牌。 |
-| `createVersion` | 布林值 (Boolean) | 可選 | 如果 `True` 並且存在具有指定名稱的資產， [!DNL Experience Manager] 建立資產的新版本。 |
+| `createVersion` | 布林值 | 可選 | 如果 `True` 並且存在具有指定名稱的資產， [!DNL Experience Manager] 建立資產的新版本。 |
 | `versionLabel` | 字串 | 可選 | 如果建立了新版本，則與資產的新版本關聯的標籤。 |
 | `versionComment` | 字串 | 可選 | 如果建立了新版本，則與該版本關聯的注釋。 |
-| `replace` | 布林值 (Boolean) | 可選 | 如果 `True` 並且存在指定名稱的資產， [!DNL Experience Manager] 刪除該資產，然後重新建立它。 |
+| `replace` | 布林值 | 可選 | 如果 `True` 並且存在指定名稱的資產， [!DNL Experience Manager] 刪除該資產，然後重新建立它。 |
+| `uploadDuration` | 數量 | 可選 | 檔案完整上載的總時間（毫秒）。 如果指定，則上載持續時間將包含在系統日誌檔案中以用於傳輸速率分析。 |
+| `fileSize` | 數量 | 可選 | 檔案的大小（以位元組為單位）。 如果指定，則檔案大小將包含在系統日誌檔案中以用於傳輸速率分析。 |
 
 >[!NOTE]
 如果資產存在且 `createVersion` 無 `replace` 指定，然後 [!DNL Experience Manager] 使用新的二進位檔案更新資產的當前版本。
