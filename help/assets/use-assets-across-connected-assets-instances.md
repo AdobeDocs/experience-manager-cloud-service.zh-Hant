@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
+source-git-commit: ec4b5b391cb3ba2d13c67a6da30eea59674cf072
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3763'
 ht-degree: 15%
 
 ---
@@ -47,7 +47,7 @@ Connected Assets功能通過整合支援上述使用案例 [!DNL Experience Mana
 
 作者在Content Finder中搜索影像和以下類型的文檔，並在頁面編輯器中拖動搜索到的資產。 文檔將添加到 `Download` 元件和影像 `Image` 元件。 作者還可以在任何自定義中添加遠程資產 [!DNL Experience Manager] 擴展預設值的元件 `Download` 或 `Image` 元件。 支援的格式包括：
 
-* **影像格式**:格式 [影像元件](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 支援。
+* **影像格式**:格式 [影像元件](file-format-support.md#image-formats) 支援。
 * **文檔格式**:查看 [支援的文檔格式](file-format-support.md#document-formats)。
 
 ### 相關使用者和群組 {#users-and-groups-involved}
@@ -247,7 +247,7 @@ Experience Manager顯示 `expired` 「遠程資產內容查找器」中資產狀
 >
 >只有在遠程DAM和站點部署處於Experience Manageras a Cloud Service時，才可將遠程DAM中資產的更新提供給站點部署。
 
-## 常見問題 {#frequently-asked-questions}
+## 常見問答 {#frequently-asked-questions}
 
 +++**如果需要使用上的可用資產，是否應配置已連接資產 [!DNL Sites] 部署？**
 
