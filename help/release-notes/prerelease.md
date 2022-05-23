@@ -2,9 +2,9 @@
 title: '"[!DNL Adobe Experience Manager] as a Cloud Service預發行渠道」'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service預發行渠道」'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -29,28 +29,41 @@ ht-degree: 0%
 
 ### 雲環境 {#cloud-environments}
 
-要查看雲開發環境的站點控制台中的新功能以及任何項目自定義的結果：
+要更新雲環境以使用預發行版，請添加新 [環境變數](../implementing/cloud-manager/environment-variables.md) 在Cloud Manager中使用環境配置UI:
 
-* 使用 [Cloud Manager API的環境變數終結點](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)的子菜單。 **AEM_釋放_通道** 環境變數到值 **預釋放**。
+1. 導航到 **計畫** > **環境** > **環境配置** 您希望更新。
+1. 添加新 [環境變數](../implementing/cloud-manager/environment-variables.md):
 
-```
-PATCH /program/{programId}/environment/{environmentId}/variables
-[
-        {
-                "name" : "AEM_RELEASE_CHANNEL",
-                "value" : "prerelease",
-                "type" : "string"
-        }
-]
-```
+   | 名稱 | 值 | 已應用服務 | 類型 |
+   |------|-------|-----------------|------|
+   | `AEM_RELEASE_CHANNEL` | `prerelease` | 全部 | 變數 |
 
-也可以按照以下說明使用Cloud Manager CLI: [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
-```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+1. 保存更改，並啟用預發行功能後，環境將刷新。
+
+   ![新環境變數](assets/env-configuration-prerelease.png)
 
 
-如果希望將環境恢復為常規（非預發行）通道的行為，則可以刪除該變數或將其設定回其他值
+**或者，** 可以使用Cloud Manager API和CLI更新環境變數：
 
-* 或者，您也可以從 [雲管理器UI](/help/implementing/cloud-manager/environment-variables.md)。
+* 使用 [Cloud Manager API的環境變數終結點](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)的子菜單。 **AEM_釋放_通道** 環境變數到值 **預釋放**。
+
+   ```
+   PATCH /program/{programId}/environment/{environmentId}/variables
+   [
+           {
+                   "name" : "AEM_RELEASE_CHANNEL",
+                   "value" : "prerelease",
+                   "type" : "string"
+           }
+   ]
+   ```
+
+* 也可以按照以下說明使用Cloud Manager CLI: [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
+
+   ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+
+
+如果希望將環境恢復為常規（非預發行）通道的行為，則可以刪除該變數或將其設定回其他值。
 
 ### 本地SDK {#local-sdk}
 
