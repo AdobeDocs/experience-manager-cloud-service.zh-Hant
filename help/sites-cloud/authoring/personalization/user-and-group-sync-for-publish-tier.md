@@ -2,9 +2,9 @@
 title: '註冊、登錄和用戶配置檔案 '
 description: 瞭解有關註冊、登錄、用戶資料和組同步的AEMas a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
+source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Web應用程式通常提供帳戶管理功能，供最終用戶在網站上註�
 >
 >只有IdP對用戶的憑據進行初始驗證，並且只要Cookie可用，AEM就使用登AEM錄令牌Cookie執行後續請求。
 
-有關 [SAML 2.0身份驗證處理程式](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=en#saml-authentication-handler)。
+有關 [SAML 2.0身份驗證處理程式](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)。
 
 **OAuth/SSO**
 
