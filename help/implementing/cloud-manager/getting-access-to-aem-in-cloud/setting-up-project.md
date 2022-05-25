@@ -2,7 +2,7 @@
 title: 項目設定
 description: 瞭解如AEM何使用Maven構建項目以及建立自己的項目時必須遵守的標準。
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: e0774c34ed81d23a5d7a897f65d50dcbf8f8af0d
+source-git-commit: 3bd3221676a3558225baa7a3b0c78174e21091be
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 1%
@@ -143,7 +143,7 @@ ht-degree: 1%
            <server>
                <id>myco-repository</id>
                <username>cloudmanager</username>
-              <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+              <password>${secret.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
            </server>
        </servers>
    </settings>
@@ -296,7 +296,7 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 代碼質量步驟的日誌將包含類似資訊。
 
-### 示例 {#example-reuse}
+### 範例 {#example-reuse}
 
 #### 示例1 {#example-1}
 
