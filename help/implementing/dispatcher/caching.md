@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
+source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
 workflow-type: tm+mt
-source-wordcount: '1960'
-ht-degree: 0%
+source-wordcount: '2183'
+ht-degree: 1%
 
 ---
 
@@ -83,31 +83,42 @@ Define DISABLE_DEFAULT_CACHING
 * 通過使用AEM客戶端庫框架，JavaScript和CSS代碼的生成方式使瀏覽器可以無限期地快取它，因為任何更改都以具有唯一路徑的新檔案的形式顯示。  換句話說，將根據需要生成引用客戶端庫的HTML，以便客戶在發佈新內容時能夠體驗新內容。 對於不尊重「不可變」值的較舊瀏覽器，快取控制設定為「不可變」或30天。
 * 請參閱一節 [客戶端庫和版本一致性](#content-consistency) 的雙曲餘切值。
 
-### 影像和儲存在blob儲存中的任何內容 {#images}
+### 影像和任何大到可以儲存在blob儲存中的內容 {#images}
 
-* 預設情況下，不快取
-* 可以通過以下apache在更細的粒度級別上設定 `mod_headers` 指令：
+預設情況下，2022年5月中旬後建立的程式（具體來說，對於高於65000的程式ID）的預設行為是快取，同時也尊重請求的驗證上下文。 預設情況下，較舊的程式（程式ID等於或低於65000）不快取blob內容。
 
-   ```
-      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
-        Header set Cache-Control "max-age=222"
-        Header set Age 0
-      </LocationMatch>
-   ```
+在這兩種情況下，可以使用apache在apache/dispatcher層的更細粒度級別上覆蓋快取頭 `mod_headers` 指令，例如：
 
-   請參閱上面html/text部分中的討論，以提醒不要快取太廣，以及如何強制AEM始終使用「always」選項應用快取。
+```
+   <LocationMatch "^/content/.*\.(jpeg|jpg)$">
+     Header set Cache-Control "max-age=222"
+     Header set Age 0
+   </LocationMatch>
+```
 
-   必須確保檔案 `src/conf.dispatcher.d/`快取具有以下規則（預設配置中）:
+在調度器層修改快取標頭時，請小心不要快取太廣，請參閱HTML/文本部分中的討論 [上](#html-text))。 另外，確保本應保持私有（而非快取）的資產不屬於 `LocationMatch` 指令篩選器。
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+#### 新建預設快取行為 {#new-caching-behavior}
 
-   確保要保持私有而不是快取的資產不是LocationMatch指令篩選器的一部分。
+層AEM將根據是否已設定快取標頭和請求類型的值來設定快取標頭。 請注意，如果未設定快取控制標頭，則公共內容將被快取，並且已驗證的通信將設定為專用。 如果已設定快取控制標頭，則快取標頭將保持不變。
 
-   >[!NOTE]
-   >其他方法，包括 [dispatcher-ttl AEM ACS Commons項目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，將無法成功覆蓋值。
+| 是否存在快取控制標頭？ | 請求類型 | AEM將快取頭設定為 |
+|------------------------------|---------------|------------------------------------------------|
+| 否 | 公共 | 快取控制：public, max-age=600，不可變 |
+| 否 | 已驗證 | 快取控制：private,max-age=600，不可變 |
+| 是 | 任何 | 不變 |
+
+雖然不推薦，但可以通過設定Cloud Manager環境變數來更改新預設行為以遵循較舊行為（程式ID等於或低於65000） `AEM_BLOB_ENABLE_CACHING_HEADERS` 錯誤。
+
+#### 較舊的預設快取行為 {#old-caching-behavior}
+
+預設AEM情況下，該層不會快取blob內容。
+
+>[!NOTE]
+>建議通過將Cloud Manager環境變數AEM_BLOB_ENABLE_CACHING_HEADERS設定為true，將舊預設行為更改為與新行為（程式ID高於65000）一致。 如果程式已在運行，請確保在更改後內容的行為與預期一致。
+
+>[!NOTE]
+>其他方法，包括 [dispatcher-ttl AEM ACS Commons項目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，將無法成功覆蓋值。
 
 ### 節點儲存中的其他內容檔案類型 {#other-content}
 
@@ -115,7 +126,7 @@ Define DISABLE_DEFAULT_CACHING
 * 不能使用 `EXPIRATION_TIME` 用於html/text檔案類型的變數
 * 通過指定適當的regex，可以使用html/text節中描述的相同LocationMatch策略來設定快取過期
 
-### Furthur優化
+### 進一步優化 {#further-optimizations}
 
 * 避免使用 `User-Agent` 作為 `Vary` 標題。 預設調度程式設定的較舊版本（早於原型版本28）包括了這一點，我們建議您使用以下步驟刪除該設定。
    * 在中查找vhost檔案 `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`

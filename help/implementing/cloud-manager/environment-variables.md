@@ -2,18 +2,19 @@
 title: Cloud Manager環境變數
 description: 標準環境變數可通過雲管理器進行配置和管理，並提供給運行時環境，以用於OSGi配置。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: e03a209079b393d29e02977a2698f8d803a916cd
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
+
 
 # Cloud Manager環境變數 {#environment-variables}
 
 標準環境變數可以通過雲管理器進行配置和管理。 它們被提供給運行時間環境，並可用於OSGi配置。 環境變數可以是特定於環境的值，也可以是基於正在更改的內容的環境機密。
 
-## 概覽 {#overview}
+## 總覽 {#overview}
 
 環境變數為as a Cloud Service用戶提供了許多AEM好處：
 
@@ -90,3 +91,14 @@ ht-degree: 0%
 >[!TIP]
 >
 >如果要更新多個變數，建議使用 **環境配置** 對話框，在按一下或按一下之前立即更新所有必需的變數 **保存**。 這樣，您就可以通過一次更新將它們添加到環境中。
+
+## 使用環境變數 {#using}
+
+環境變數可以 `pom.xml` 更安全、更靈活的配置。 例如，密碼無需硬編碼，您的配置可以根據環境變數中的值進行調整。
+
+您可以通過XML訪問環境變數和機密，如下所示。
+
+* `${env.VARIABLE_NAME}`
+* `${env.SECRET_NAME}`
+
+查看文檔 [設定項目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) 例如，如何在 `pom.xml` 的子菜單。
