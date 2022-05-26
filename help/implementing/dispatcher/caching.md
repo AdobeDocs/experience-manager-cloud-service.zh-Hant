@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
+source-git-commit: 58999e2aec2f9decaa55554c9488967b70701522
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -96,7 +96,7 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
 ```
 
-在調度器層修改快取標頭時，請小心不要快取太廣，請參閱HTML/文本部分中的討論 [上](#html-text))。 另外，確保本應保持私有（而非快取）的資產不屬於 `LocationMatch` 指令篩選器。
+在調度器層修改快取標頭時，請小心不要快取太廣，請參閱HTML/文本部分中的討論 [上](#html-text)。 另外，確保本應保持私有（而非快取）的資產不屬於 `LocationMatch` 指令篩選器。
 
 #### 新建預設快取行為 {#new-caching-behavior}
 
