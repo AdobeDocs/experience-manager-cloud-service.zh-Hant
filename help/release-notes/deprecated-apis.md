@@ -2,7 +2,7 @@
 title: 棄用的API
 description: 特定於中已棄用和刪除的API的發行說明 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 8e205c92b1d3ca14988b7ae9187cd708428774a9
+source-git-commit: 8325d8a69f453573a177a46cde54afe5365b17f8
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 5%
@@ -53,7 +53,7 @@ ht-degree: 5%
     <td>org.apache.fop.apps</td>
     <td></td>
     <td>3/1/21</td>
-    <td>6/1/21</td>
+    <td>已移除</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml.xerces.dom<br>org.apache.jackrabbit.vault.util.xml.xerces.util<br>org.apache.jackrabbit.vault.util.xml.xerces.xni<br>org.apache.jackrabbit.vault.util.xml.xerces.xni.parser</td>
@@ -75,7 +75,7 @@ ht-degree: 5%
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead.</td>
+    <td>Commons Lang 2 is in maintenance mode. 而應使用Commons Lang 3。</td>
     <td>4/30/21</td>
     <td>12/31/21</td>
   </tr>
