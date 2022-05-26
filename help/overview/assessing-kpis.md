@@ -2,9 +2,9 @@
 title: 訪問KPI
 description: 訪問KPI
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
+source-git-commit: 6c6412a05bc00480623ee0d08106f53f4c0c416a
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,3 @@ Experience Manager啟動後，一組強大的KPI將迅速讓您瞭解自己是�
 >[!TIP]
 >
 > 如果您希望獲得有關KPI的更多幫助，請聯繫 [Adobe咨詢服務](https://www.adobe.com/experience-cloud/consulting-services.html) 或您的實施夥伴。
-
-有關主要公司從使用Adobe Experience Manager獲得的結果類型的更多示例，請下載IDC報告：
-* [Adobe Experience Manager Sites的商業價值](https://www.adobe.com/content/dam/acom/en/modal-offers/idc-aem-sites-q218/pdfs/22037555.en.aem.whitepaper.IDCBusinessValueAEMSites.pdf)
-* [Adobe Experience Manager資產的商業價值](https://wwwimages2.adobe.com/content/dam/acom/en/modal-offers/idc-aem-Assets-q218/pdfs/220380622.en.aem.whitepaper.IDCBusinessValueAEMAssets.pdf)
