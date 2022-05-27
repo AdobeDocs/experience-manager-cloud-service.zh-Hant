@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 06b98a0613b860e4192391c5c0d29079bec82b1e
+source-git-commit: 8f75eb16718bba38bc6a12d5558f50335fd647aa
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3484'
 ht-degree: 42%
 
 ---
@@ -133,7 +133,7 @@ ht-degree: 42%
       + [開發人員和部署經理的學習路徑](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
       + [用戶學習路AEM徑](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
    + 參AEM考演示附加行程 {#demo-add-on}
-      + [概覽](/help/journey-sites/demos-add-on/overview.md)
+      + [概觀](/help/journey-sites/demos-add-on/overview.md)
       + [安裝](/help/journey-sites/demos-add-on/installation.md)
       + [建立程式](/help/journey-sites/demos-add-on/create-program.md)
       + [建立演示網站](/help/journey-sites/demos-add-on/create-site.md)
@@ -148,7 +148,7 @@ ht-degree: 42%
    + [遷移指南，以Experience Manager合作夥伴的as a Cloud Service](/help/journey-migration/getting-started-partners.md)
    + 雲加速管理器 {#cloud-acceleration-manager}
       + 雲加速管理器簡介 {#introduction-cam}
-         + [概覽](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+         + [概觀](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [好處](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + 使用雲加速管理器 {#using-cam}
          + [雲加速管理器入門](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
@@ -157,10 +157,10 @@ ht-degree: 42%
          + [上線階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + 雲端轉換工具 {#cloud-migration}
       + 最佳做法分析器 {#best-practices-analyzer}
-         + [概覽](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+         + [概觀](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [使用最佳做法分析器](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + 內容轉移工具 {#content-transfer-tool}
-         + [概覽](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+         + [概觀](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [內容傳輸工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [使用內容傳輸工具的指導原則和最佳做法](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [內容傳輸工具入門](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
@@ -173,7 +173,7 @@ ht-degree: 42%
          + [在發佈實例上運行內容傳輸工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [內容傳輸工具故障排除](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 用戶映射工具 {#user-mapping-tool}
-            + [概覽](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
+            + [概觀](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
             + [重要注意事項](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
             + [使用用戶映射工具](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
    + 程式碼重構工具 {#refactoring-tools}
@@ -375,8 +375,8 @@ ht-degree: 42%
       + [預覽 — JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
    + 動態媒體 {#dynamicmedia}
       + Dynamic Media之旅：基礎 {#dm-journey}
-         + [基本資訊：第一部分](/help/assets/dynamic-media/dm-journey-part1.md)
-         + [基本資訊：第二部分](/help/assets/dynamic-media/dm-journey-part2.md)
+         + [第一部分：什麼是Dynamic Media — 使用案例 — 資產如何通過系統流動](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [第二部分：解剖Dynamic MediaURL — 影像預設的基礎 — 關於影像集、旋轉集和混合媒體集](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Dynamic Media各Experience League通訊檔案](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [設定Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [與Dynamic Media合作](/help/assets/dynamic-media/dynamic-media.md)
@@ -678,7 +678,7 @@ ht-degree: 42%
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [部署代碼](/help/implementing/cloud-manager/deploy-code.md)
       + 了解測試結果 {#test-results}
-         + [概覽](/help/implementing/cloud-manager/overview-test-results.md)
+         + [概觀](/help/implementing/cloud-manager/overview-test-results.md)
          + [代碼質量測試](/help/implementing/cloud-manager/code-quality-testing.md)
          + [自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + [功能測試](/help/implementing/cloud-manager/functional-testing.md)
@@ -793,9 +793,9 @@ ht-degree: 42%
       + [使用ContextHub配置分段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
    + 設定和擴充 AEM as a Cloud Service {#configuring-and-extending}
       + 使用App AEM Builder擴展{#app-builder}
-         + [使用AEMAdobe開發人員應用程式生成器擴展](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
+         + [使用AEMAdobe Developer應用程式生成器擴展](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder簡介](/help/implementing/developing/extending/app-builder/videos/introduction.md)
-         + [Adobe開發人員控制台](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
+         + [Adobe Developer控制台](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
          + [SDK和CLI](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
          + [建立應用程式](/help/implementing/developing/extending/app-builder/videos/create.md)
          + [動作](/help/implementing/developing/extending/app-builder/videos/actions.md)

@@ -4,9 +4,9 @@ description: 瞭解Adobe SenseiAI的智慧成像如何應用每個用戶的獨�
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 743782e2716aa79491adee2f32da6d746bcc40a7
 workflow-type: tm+mt
-source-wordcount: '2624'
+source-wordcount: '2629'
 ht-degree: 1%
 
 ---
@@ -78,9 +78,10 @@ ht-degree: 1%
 |---|---|
 | `network=off` | 在單個影像URL級別關閉網路優化。 |
 
->[!NOTE]
->
->DPR和網路頻寬值基於所綁定CDN的檢測到的客戶端值。 這些價值有時是不準確的。 例如，DPR=2的iPhone5和DPR=3的iPhone12都顯示DPR=2。 但是，對於高解析度設備，發送DPR=2比發送DPR=1要好。 即將推出：Adobe正在處理客戶端代碼以準確確定最終用戶的DPR。
+DPR和網路頻寬值基於所綁定CDN的檢測到的客戶端值。 這些價值有時是不準確的。 例如，DPR為2的iPhone5和iPhone12 `dpr=3`雙 `dpr=2`。 不過，對於高解析度設備，發送 `dpr=2` 比發送 `dpr=1`。 <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->
+
+
+客戶端DPR為您提供100%的準確值，適用於任何設備，無論是Apple還是剛剛啟動的任何其他新設備。
 
 ## 最新智慧映像的主要優勢是什麼？ {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -257,11 +258,11 @@ Smart Imaging可與現有「影像預設」配合使用。 它會觀察除質量
 
 ## 是否可以關閉智慧映像以滿足任何請求？{#turning-off-smart-imaging}
 
-是. 通過添加修飾符，可以關閉智慧成像 `bfc=off` 的子菜單。
+可以。 通過添加修飾符，可以關閉智慧成像 `bfc=off` 的子菜單。
 
 ## 是否可以請求在公司級別關閉DPR和網路優化？ {#dpr-companylevel-turnoff}
 
-是. 要在您的公司禁用DPR和網路優化，請建立支援案例，如本主題前面所述。
+可以。 要在您的公司禁用DPR和網路優化，請建立支援案例，如本主題前面所述。
 
 ## 有哪些「調諧」可用？ 是否可以定義任何設定或行為？ {#tuning-settings}
 
