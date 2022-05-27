@@ -5,9 +5,9 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 86a223231aacb4c7159e695d3ce731ff35fc469d
+source-git-commit: 263808980a9542b1a333c59e68e59122cf43025d
 workflow-type: tm+mt
-source-wordcount: '3524'
+source-wordcount: '3525'
 ht-degree: 1%
 
 ---
@@ -125,7 +125,7 @@ DPR和網路頻寬值基於所綁定CDN的檢測到的客戶端值。 這些價�
 
 ## Smart Imaging是如何工作的？ {#how-does-smart-imaging-work}
 
-當用戶請求影像時，智慧映像會檢查用戶特徵並根據使用中的瀏覽器轉換為適當的影像格式。 這些格式轉換以不降低視覺保真度的方式進行。 智慧成像按照以下方式根據瀏覽器功能自動將影像轉換為不同格式。
+當用戶請求影像時，Smart Imaging會檢查用戶特徵，並根據使用中的瀏覽器將其轉換為適當的影像格式。 這些格式轉換以不降低視覺保真度的方式進行。 智慧成像按照以下方式根據瀏覽器功能自動將影像轉換為不同格式。
 
 * 如果瀏覽器支援格式，則自動轉換為AVIF
 * 如果AVIF轉換無益或瀏覽器不支援AVIF，則自動轉換為WebP
