@@ -5,9 +5,9 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 70d472776b5530cbb1048b7284780408326df604
+source-git-commit: 86a223231aacb4c7159e695d3ce731ff35fc469d
 workflow-type: tm+mt
-source-wordcount: '3480'
+source-wordcount: '3524'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 |---|---|
 | `network=off` | 在單個影像URL級別關閉網路優化。 |
 
-DPR和網路頻寬值基於所綁定CDN的檢測到的客戶端值。 這些價值有時是不準確的。 例如，DPR為2的iPhone5和iPhone12 `dpr=3`雙 `dpr=2`。 不過，對於高解析度設備，發送 `dpr=2` 比發送 `dpr=1`。 <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->。
+DPR和網路頻寬值基於所綁定CDN的檢測到的客戶端值。 這些價值有時是不準確的。 例如，DPR為2的iPhone5和iPhone12 `dpr=3`雙 `dpr=2`。 不過，對於高解析度設備，發送 `dpr=2` 比發送 `dpr=1`。 但是，克服這種不準確性的最佳方法是使用客戶端DPR為您提供100%的準確值。 它適用於任何設備，無論是Apple還是其他發射的設備。 請參閱 [使用具有客戶端設備像素比的智慧映像](/help/assets/dynamic-media/client-side-dpr.md)。
 
 ### 智慧映像的其他關鍵優勢
 

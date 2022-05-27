@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8f75eb16718bba38bc6a12d5558f50335fd647aa
+source-git-commit: 20118fd9226a7b3ca92cdf3fc78071457d965a77
 workflow-type: tm+mt
-source-wordcount: '3484'
+source-wordcount: '3491'
 ht-degree: 42%
 
 ---
@@ -398,6 +398,7 @@ ht-degree: 42%
       + [通過Dynamic Media使CDN快取無效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [通過Dynamic Media Classic使CDN快取無效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [智慧型影像](/help/assets/dynamic-media/imaging-faq.md)
+      + [具有客戶端設備像素比的智慧成像](/help/assets/dynamic-media/client-side-dpr.md)
       + [交付Dynamic Media資產](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [在Dynamic Media激活熱鏈路保護](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D 支援](/help/assets/dynamic-media/assets-3d.md)
