@@ -2,9 +2,9 @@
 title: 如何通過AEM AssetsAPI更新您的內容
 description: 在「無頭開發AEM者之旅」的這一部分，瞭解如何使用REST API訪問和更新內容片段的內容。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 83248913929f196b2f84913f0fe761f291f68d8f
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1071'
 ht-degree: 2%
 
 ---
@@ -225,7 +225,7 @@ Associated content is currently not exposed.
 >* `/content/path/to/page` **是** 要求使用 `.model` 選擇器。
 
 
-### 操作 {#operation}
+### 作業 {#operation}
 
 HTTP方法確定要執行的操作：
 
@@ -303,7 +303,7 @@ HTTP方法確定要執行的操作：
 * Adobe Experience Manager資產HTTP API（附加資源）
 * AEM AssetsHTTP API中的內容片段支援（其他資源）
 
-## 下一步是什麼 {#whats-next}
+## 下一步 {#whats-next}
 
 現在，您已完成了「無頭開發AEM者之旅」的這一部分，您應：
 
@@ -318,7 +318,7 @@ HTTP方法確定要執行的操作：
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-您應繼續無AEM頭之旅，下次查看文檔 [如何與無頭應用程式一起生活](go-live.md) 讓你的&quot;無頭AEM計畫&quot;實現！
+您應繼續無AEM頭之旅，下次查看文檔 [如何將所有內容放在一起 — 您的應用和您的內容以無AEM頭](put-it-all-together.md) 在此，您將熟悉將應AEM用程式組合起來所需的體系結構基礎知識和工具。
 
 ## 其他資源 {#additional-resources}
 
