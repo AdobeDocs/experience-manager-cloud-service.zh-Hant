@@ -2,9 +2,9 @@
 title: 同一站點Cookie支援Adobe Experience Manager as a Cloud Service
 description: 同一站點Cookie支援Adobe Experience Manager as a Cloud Service
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,15 @@ ht-degree: 0%
 
 為了繞過此問題，您需要將SameSite Cookie屬性設定為 `None` 的下界。
 
-您可以通過以下步驟來完成此操作：
+>[!CAUTION]
+>
+>的 `SameSite=None` 僅當協定安全(HTTPS)時才應用設定。
+>
+>如果協定不安全(HTTP)，則忽略該設定，伺服器將顯示以下WARN消息：
+>
+>`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
+
+您可以通過以下步驟添加設定：
 
 1. 在本地安裝SDK快AEM速啟動版本
 1. 轉到Web控制台，位於 `http://serveraddress:serverport/system/console/configMgr`
