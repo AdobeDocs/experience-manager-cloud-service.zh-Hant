@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1e2b58015453c194af02fdae62c3735727981da1
+source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1531'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
    * 指定表單資料模型的名稱。
    * (**可選**)指定表單資料模型的標題、說明和標籤。
-   * (**只有配置了資料源時才可選和適用**)按一下 **[!UICONTROL 資料源配置]** 欄位，並選擇要使用的資料源的雲服務所在的配置節點。 它將下一頁上可供選擇的資料源清單限制為所選配置節點中可用的資料源清單。 但是，任何JDBC資料庫和 [!DNL Experience Manager] 預設情況下會列出用戶配置檔案資料源。 如果未選擇配置節點，則會列出來自所有配置節點的資料源。
+   * (**只有配置了資料源時才可選和適用**)按一下 **[!UICONTROL 資料源配置]** 欄位，並選擇要使用的資料源的雲服務所在的配置節點。 它將下一頁上可供選擇的資料源清單限制為所選配置節點中可用的資料源清單。 但是， [!DNL Experience Manager] 預設情況下會列出用戶配置檔案資料源。 如果未選擇配置節點，則會列出來自所有配置節點的資料源。
 
 1. 點擊 **[!UICONTROL 下一個]**。
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 1. 建立Apache Sling上下文感知配置。 要建立OSGi配置：
    1. **在中設定OSGi配置檔案 [!DNL Experience Manager] 原型計畫。**
 使用PID建立OSGi工廠配置檔案 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. 在每個運行模式資料夾下建立具有相同名稱的檔案，其中每個運行模式需要更改值。 有關詳細資訊，請參閱 [為配置OSGi [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations)。
+`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`。 在每個運行模式資料夾下建立具有相同名稱的檔案，其中每個運行模式需要更改值。 有關詳細資訊，請參閱 [為配置OSGi [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations)。
 
    1. **設定OSGI配置json。** 要使用Apache Sling上下文感知配置覆蓋提供程式：
       1. 論地方發展實例 `/system/console/configMgr`，選擇具有名稱的工廠OSGi配置 **[!UICONTROL Apache Sling上下文感知配置覆蓋提供程式：OSGi配置]**。

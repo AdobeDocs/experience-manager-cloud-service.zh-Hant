@@ -3,9 +3,9 @@ title: 'Formsas a Cloud Service常見問題 '
 description: Formsas a Cloud Service常見問題
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: a5cd8a49a74eb8372d1d363ff859e1aef921859b
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '993'
 ht-degree: 2%
 
 ---
@@ -89,3 +89,7 @@ Custom parameters are planned for an upcoming release. -->
 
 * **哪些功能不是初始GA版本的一部分？**
 Forms門戶網站， [!DNL AEM Forms] 應用程式、與Adobe Analytics的整合以及與Adobe Target的整合併非首次正式發佈的一部分。 有關新功能的資訊，請查看每月發行說明。
+
+* **我設計了一個 [JSON架構以建立自適應表單](adaptive-form-json-schema-form-model.md)。 JSON架構為自適應表單的某些元件定義事件。 AEM Formsas a Cloud Service支援事件嗎？**
+在Experience Manager6.5Forms環境上基於JSON架構建立自適應表單，並使用 [遷移實用程式](migrate-to-forms-as-a-cloud-service.md) 將這種適應性Forms遷移到AEM Formsas a Cloud Service。 該實用程式將此類事件轉換為客戶端庫，您可以繼續在Cloud Service環境中使用Adaptive Forms來處理事件。
+

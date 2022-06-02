@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6c654f5456e1a7778b453837f04cbed32a82a77
+source-git-commit: 983f1b815fd213863ddbcd83ac7e3f076c57d761
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 3%
+source-wordcount: '1716'
+ht-degree: 5%
 
 ---
 
@@ -16,13 +16,16 @@ ht-degree: 3%
 
 ![資料整合](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] 資料整合允許您配置和連接到不同的資料源。 支援開箱即用的以下類型。 但是，只需少量自定義，您也可以整合其他資料源。
+[!DNL Experience Manager Forms] 資料整合允許您配置和連接到不同的資料源。 支援開箱即用的以下類型：
 
 <!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
 * [!DNL Experience Manager] user profile  -->
 * REST風格的Web服務
 * 基於SOAP的Web服務
-* OData服務
+* OData服務（4.0版）
+* Microsoft動力
+* SalesForce
+* MicrosoftAzure Blob儲存
 
 資料整合支援OAuth2.0、基本身份驗證和API密鑰身份驗證類型的開箱即用，並允許為訪問Web服務實施自定義身份驗證。 而RESTful、基於SOAP和OData服務是在 [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> 和連接器 [!DNL Experience Manager] 在中配置用戶配置檔案 [!DNL Experience Manager] web控制台。
 
@@ -110,7 +113,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 ## 配置REST風格的Web服務 {#configure-restful-web-services}
 
-可使用 [Swagger規格](https://swagger.io/specification/) JSON或YAML格式 [!DNL Swagger] 定義檔案。 在中配置REST風格的Web服務 [!DNL Experience Manager] as a Cloud Service，確保您 [!DNL Swagger] 檔案系統或檔案所在的URL上。
+可使用 [Swagger規格](https://swagger.io/specification/v2/) JSON或YAML格式 [!DNL Swagger] 定義檔案。 在中配置REST風格的Web服務 [!DNL Experience Manager] as a Cloud Service，確保您 [!DNL Swagger] 檔案([Swagger 2.0版](https://swagger.io/specification/v2/))或檔案所在的URL。
 
 執行以下操作以配置REST風格的服務：
 
@@ -139,6 +142,35 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 ### 表單資料模型HTTP客戶端配置以優化效能 {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] 當與REST風格的Web服務整合為資料源時，將形成資料模型，包括用於效能優化的HTTP客戶端配置。
+
+設定以下屬性 **[!UICONTROL REST資料源的表單資料模型HTTP客戶端配置]** 用於指定規則運算式的配置：
+
+* 使用 `http.connection.max.per.route` 屬性，用於設定表單資料模型和REST風格的Web服務之間允許的最大連接數。 預設值為20個連接。
+
+* 使用 `http.connection.max` 屬性，指定每個路由允許的最大連接數。 預設值為40個連接。
+
+* 使用 `http.connection.keep.alive.duration` 屬性，指定持續HTTP連接保持活動的持續時間。 預設值為15秒。
+
+* 使用 `http.connection.timeout` 屬性，指定持續時間 [!DNL Experience Manager Forms] 伺服器等待連接建立。 預設值為10秒。
+
+* 使用 `http.socket.timeout` 屬性，指定兩個資料包之間不活動的最大時間段。 預設值為30秒。
+
+以下JSON檔案顯示示例：
+
+```json
+{   
+   "http.connection.keep.alive.duration":"15",   
+   "http.connection.max.per.route":"20",   
+   "http.connection.timeout":"10",   
+   "http.socket.timeout":"30",   
+   "http.connection.idle.connection.timeout":"15",   
+   "http.connection.max":"40" 
+} 
+```
+
+若要設定值，[請使用 AEM SDK 產生 OSGi Configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)，並將[設定部署至](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)您的 Cloud Service 執行個體。
+
+
 執行以下步驟來配置表單資料模型HTTP客戶端：
 
 1. 登錄到 [!DNL Experience Manager Forms] 以管理員身份建立實例並轉到 [!DNL Experience Manager] web控制台捆綁包。 預設URL為 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)。
@@ -156,7 +188,6 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
    * 指定持續時間， [!DNL Experience Manager Forms] 伺服器等待建立連接，在 **[!UICONTROL 連接超時]** 的子菜單。 預設值為10秒。
 
    * 指定中兩個資料包之間不活動的最大時間段 **[!UICONTROL 套接字超時]** 的子菜單。 預設值為30秒。
-
 
 ## 配置SOAP Web服務 {#configure-soap-web-services}
 

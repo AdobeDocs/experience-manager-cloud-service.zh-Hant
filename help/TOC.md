@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4bfd1c144642f5c2f3b2bf4cd7469b0a7ce8f8fe
+source-git-commit: 333653e42de895fdd2097ad52ed3904192c57437
 workflow-type: tm+mt
-source-wordcount: '3497'
+source-wordcount: '3502'
 ht-degree: 42%
 
 ---
@@ -437,6 +437,7 @@ ht-degree: 42%
    + [簡介](/help/forms/home.md)
    + [重要功能](/help/forms/key-features.md)
    + [重大變更](/help/forms/notable-changes.md)
+   + [架構](/help/forms/aem-forms-cloud-service-architecture.md)
    + 安裝及設定服務{#setup-environment}
       + [Cloud Service 環境入門](/help/forms/setup-forms-cloud-service.md)
       + [設定本機開發環境](/help/forms/setup-local-development-environment.md)
@@ -477,6 +478,7 @@ ht-degree: 42%
          + [設定重新導向頁面](/help/forms/configuring-redirect-page.md)
          + [為最適化表單設定非同步提交](/help/forms/asynchronous-submissions-adaptive-forms.md)
          + [建立自訂提交動作](/help/forms/custom-submit-action-form.md)
+      + [預填充自適應表單域](/help/forms/prepopulate-adaptive-form-fields.md)
       + [產生記錄文件](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
       + 新增或改進中繼資料{#manage-metadata}
          + [新增、移除或編輯最適化表單的中繼資料](/help/forms/manage-form-metadata.md)

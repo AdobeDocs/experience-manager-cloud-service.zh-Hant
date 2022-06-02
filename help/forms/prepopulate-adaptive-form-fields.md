@@ -3,15 +3,12 @@ title: 預填充自適應表單域
 seo-title: Prefill Adaptive Form fields
 description: 使用現有資料預填充自適應表單的欄位。
 seo-description: With Adaptive Forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
-uuid: 574de83a-7b5b-4a1f-ad37-b9717e5c14f1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6b3c0abbbd7a5b3c9a3790937b933699389b0cd2
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 0%
+source-wordcount: '1948'
+ht-degree: 1%
 
 ---
 
@@ -28,11 +25,11 @@ ht-degree: 0%
 
 可以預填充自適應表單的綁定和未綁定欄位。 預填充資料包含afBoundData和afUnBoundData節，用於預填充自適應表單的綁定和未綁定欄位。 的 `afBoundData` 部分包含綁定欄位和面板的預填充資料。 此資料必須與關聯的表單模型架構相容：
 
-* 對於自適應Forms，使用 [XFA表單模板](prepopulate-adaptive-form-fields.md)，使用與XFA模板的資料架構相容的預填充XML。
-* 適應Forms使用 [XML架構](#xml-schema-af)，使用與XML架構結構相容的預填充XML。
-* 適應Forms使用 [JSON架構](#json-schema-based-adaptive-forms)，使用與JSON架構相容的預填充JSON。
-* 對於使用FDM架構的Adaptive Forms，請使用與FDM架構相容的預填充JSON。
-* 適應Forms [無表單模型](#adaptive-form-with-no-form-model)，沒有綁定資料。 每個欄位都是未綁定的欄位，並使用未綁定的XML預填充。
+- 對於自適應Forms，使用 [XFA表單模板](#xfa-based-af)，使用與XFA模板的資料架構相容的預填充XML。
+- 適應Forms使用 [XML架構](#xml-schema-af)，使用與XML架構結構相容的預填充XML。
+- 適應Forms使用 [JSON架構](#json-schema-based-adaptive-forms)，使用與JSON架構相容的預填充JSON。
+- 對於使用FDM架構的Adaptive Forms，請使用與FDM架構相容的預填充JSON。
+- 適應Forms [無表單模型](#adaptive-form-with-no-form-model)，沒有綁定資料。 每個欄位都是未綁定的欄位，並使用未綁定的XML預填充。
 
 ### 示例預填充XML結構 {#sample-prefill-xml-structure}
 
@@ -51,8 +48,8 @@ ht-degree: 0%
          .
          .
       <numericbox>12</numericbox>
-         . 
-         .              
+         .
+         .
     </data>
   </afUnboundData>
 </afData>
@@ -80,9 +77,9 @@ ht-degree: 0%
 
 基於XFA的自適應Forms預填充XML和提交XML的結構如下：
 
-* **預填充XML結構**:基於XFA的自適應表單的預填充XML必須與XFA表單模板的資料模式相容。 要預填充未綁定的欄位，請將預填充XML結構包裝到 `/afData/afBoundData` 標籤。
+- **預填充XML結構**:基於XFA的自適應表單的預填充XML必須與XFA表單模板的資料模式相容。 要預填充未綁定的欄位，請將預填充XML結構包裝到 `/afData/afBoundData` 標籤。
 
-* **已提交的XML結構**:當未使用預填充XML時，提交的XML包含綁定欄位和未綁定欄位的資料 `afData` 包裝標籤。 如果使用預填充XML，則提交的XML與預填充XML的結構相同。 如果預填充XML以 `afData` 根標籤，輸出XML的格式也相同。 如果預填充XML沒有 `afData/afBoundData`包裝，而是直接從模式根標籤(如 `employeeData`，提交的XML也以 `employeeData` 標籤。
+- **已提交的XML結構**:當未使用預填充XML時，提交的XML包含綁定欄位和未綁定欄位的資料 `afData` 包裝標籤。 如果使用預填充XML，則提交的XML與預填充XML的結構相同。 如果預填充XML以 `afData` 根標籤，輸出XML的格式也相同。 如果預填充XML沒有 `afData/afBoundData`包裝，而是直接從模式根標籤(如 `employeeData`，提交的XML也以 `employeeData` 標籤。
 
 Prefill-Submit-Data-ContentPackage.zip
 
@@ -93,17 +90,17 @@ Prefill-Submit-Data-ContentPackage.zip
 
 基於XML架構的自適應Forms預填充XML和提交XML的結構如下：
 
-* **預填充XML結構**:預填充XML必須與關聯的XML架構相容。 要預填充未綁定的欄位，請將預填充XML結構包裝到/afData/afBoundData標籤中。
-* **已提交的XML結構**:如果未使用預填充XML，則提交的XML包含中綁定和未綁定欄位的資料 `afData` 包裝標籤。 如果使用預填充XML，則提交的XML與預填充XML的結構相同。 如果預填充XML以 `afData` 根標籤，輸出XML的格式相同。 如果預填充XML沒有 `afData/afBoundData` 包裝，而是直接從模式根標籤(如 `employeeData`，提交的XML也以 `employeeData` 標籤。
+- **預填充XML結構**:預填充XML必須與關聯的XML架構相容。 要預填充未綁定的欄位，請將預填充XML結構包裝到/afData/afBoundData標籤中。
+- **已提交的XML結構**:如果未使用預填充XML，則提交的XML包含中綁定和未綁定欄位的資料 `afData` 包裝標籤。 如果使用預填充XML，則提交的XML與預填充XML的結構相同。 如果預填充XML以 `afData` 根標籤，輸出XML的格式相同。 如果預填充XML沒有 `afData/afBoundData` 包裝，而是直接從模式根標籤(如 `employeeData`，提交的XML也以 `employeeData` 標籤。
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?>
 <xs:schema targetNamespace="https://adobe.com/sample.xsd"
             xmlns="https://adobe.com/sample.xsd"
             xmlns:xs="https://www.w3.org/2001/XMLSchema">
- 
+
     <xs:element name="sample" type="SampleType"/>
-         
+
     <xs:complexType name="SampleType">
         <xs:sequence>
             <xs:element name="noOfProjectsAssigned" type="xs:string"/>
@@ -146,24 +143,28 @@ Prefill-Submit-Data-ContentPackage.zip
 
 對於基於JSON架構的自適應Forms，下面介紹了預填充JSON和已提交JSON的結構。 有關詳細資訊，請參見 [使用JSON架構建立自適應Forms](adaptive-form-json-schema-form-model.md)。
 
-* **預填充JSON結構**:預填充JSON必須與關聯的JSON架構相容。 或者，如果您也想預填充未綁定的欄位，可以將其包裝到/afData/afBoundData對象中。
-* **已提交JSON結構**:如果未使用預填充JSON，則提交的JSON包含afData包裝標籤中綁定和未綁定欄位的資料。 如果使用預填充JSON，則提交的JSON與預填充JSON具有相同的結構。 如果預填充JSON以afData根對象開頭，則輸出JSON的格式相同。 如果預填充JSON沒有afData/afBoundData包裝，而是直接從架構根對象（如用戶）啟動，則提交的JSON也以用戶對象啟動。
+- **預填充JSON結構**:預填充JSON必須與關聯的JSON架構相容。 或者，如果您也想預填充未綁定的欄位，可以將其包裝到/afData/afBoundData對象中。
+- **已提交JSON結構**:如果未使用預填充JSON，則提交的JSON包含afData包裝標籤中綁定和未綁定欄位的資料。 如果使用預填充JSON，則提交的JSON與預填充JSON具有相同的結構。 如果預填充JSON以afData根對象開頭，則輸出JSON的格式相同。 如果預填充JSON沒有afData/afBoundData包裝，而是直接從架構根對象（如用戶）啟動，則提交的JSON也以用戶對象啟動。
 
 ```json
 {
-    "id": "https://some.site.somewhere/entry-schema#",
-    "$schema": "https://json-schema.org/draft-04/schema#",
-    "type": "object",
-    "properties": {
-        "address": {
-            "type": "object",
-            "properties": { 
-    "name": {
-     "type": "string"
-    },
-    "age": {
-     "type": "integer"
-}}}}}
+  "id": "https://some.site.somewhere/entry-schema#",
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "address": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
 ```
 
 對於使用JSON架構模型的欄位，資料將預填入afBoundData對象，如下面的示例JSON所示。 它可用於使用一個或多個未綁定文本欄位預填充自適應表單。 下面是資料的示例 `afData/afBoundData` 包裝：
@@ -187,16 +188,18 @@ Prefill-Submit-Data-ContentPackage.zip
 
 ```json
 {
- "user": {
-  "address": {
-   "city": "Noida",
-   "country": "India"
-}}}
+  "user": {
+    "address": {
+      "city": "Noida",
+      "country": "India"
+    }
+  }
+}
 ```
 
 >[!NOTE]
 >
->在綁定面板中使用未綁定的欄位（通過從「邊」或「資料源」頁籤中拖動元件建立的具有非空bindRef的面板） **不** 建議，因為它可能導致未綁定欄位的資料丟失。 建議在窗體中具有唯一的欄位名，特別是對於未綁定的欄位。
+> 在綁定面板中使用未綁定的欄位（通過從「邊」或「資料源」頁籤中拖動元件建立的具有非空bindRef的面板） **不** 建議，因為它可能導致未綁定欄位的資料丟失。 建議在窗體中具有唯一的欄位名，特別是對於未綁定的欄位。
 
 ### 無表單模型的自適應表單 {#adaptive-form-with-no-form-model}
 
@@ -225,45 +228,36 @@ Prefill-Submit-Data-ContentPackage.zip
 </afData>
 ```
 
-## 使用Configuration Manager配置預填充服務 {#configuring-prefill-service-using-configuration-manager}
+## 配置預填充服務 {#configuring-prefill-service-using-configuration-manager}
 
-要啟用預填充服務，請在Web控制台配置中指定預設預AEM填充服務配置。 使用以下步驟配置預填充服務：
+使用 `alloweddataFileLocations` 屬性 **預設預填充服務配置** 設定資料檔案的位置或資料檔案位置的regex（規則運算式）。
+
+以下JSON檔案顯示示例：
+
+```JSON
+  {
+  "alloweddataFileLocations": "`file:///C:/Users/public/Document/Prefill/.*`"
+  }
+```
+
+要設定配置值， [使用SDK生成OSGi配AEM置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) 和 [部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) 你的Cloud Service。
 
 >[!NOTE]
 >
->預填充服務配置適用於AdaptiveForms、HTML5表單和HTML5表單集。
+> - 預設情況下，允許通過crx檔案為所有類型的自適應Forms（XSD、XDP、JSON、FDM和不基於表單模型）預填充。 僅JSON和XML檔案允許預填充。
+> - crx協定負責預填充的資料安全，因此預設允許。 通過使用泛型regex的其他協定進行預填充可能會導致漏洞。 在配置中，指定用於保護資料的安全URL配置。
 
-1. 開啟 **[!UICONTROL Adobe Experience ManagerWeb控制台配置]** 使用URL:\
-   https://&lt;server>:&lt;port>/system/console/configMgr
-1. 搜索並開啟 **[!UICONTROL 預設預填充服務配置]**。
-
-   ![預填充配置](assets/prefill_config_new.png)
-
-1. 輸入資料位置或規則運算式（規則運算式） **資料檔案位置**。 有效資料檔案位置的示例有：
-
-   * `file:///C:/Users/public/Document/Prefill/.*`;
-   * `https://servername/somesamplexmlfile.xml`
-
-   >[!NOTE]
-   >
-   >預設情況下，允許通過crx檔案為所有類型的自適應Forms（XSD、XDP、JSON、FDM和不基於表單模型）預填充。 僅JSON和XML檔案允許預填充。
-
-1. 現在為您的表單配置了預填服務。
-
-   >[!NOTE]
-   >
-   >crx協定負責預填充的資料安全，因此預設允許。 通過使用泛型regex的其他協定進行預填充可能會導致漏洞。 在配置中，指定用於保護資料的安全URL配置。
 
 ## 可重複面板的奇特案例 {#the-curious-case-of-repeatable-panels}
 
 通常，綁定（表單架構）和未綁定欄位是在同一自適應表單中創作的，但在綁定是可重複的情況下，以下是少數例外：
 
-* 對於使用XFA表單模板、XSD、JSON架構或FDM架構的Adaptive Forms，不支援未綁定的可重複面板。
-* 請勿在綁定的可重複面板中使用未綁定欄位。
+- 對於使用XFA表單模板、XSD、JSON架構或FDM架構的Adaptive Forms，不支援未綁定的可重複面板。
+- 請勿在綁定的可重複面板中使用未綁定欄位。
 
 >[!NOTE]
 >
->作為經驗法則，如果綁定和未綁定欄位在未綁定欄位中被最終用戶填充的資料中交叉，則不要混合綁定和未綁定欄位。 如果可能，應修改架構或XFA表單模板並為未綁定欄位添加一個條目，以便它也會被綁定，並且其資料與已提交資料中的其他欄位一樣可用。
+> 作為經驗法則，如果綁定和未綁定欄位在未綁定欄位中被最終用戶填充的資料中交叉，則不要混合綁定和未綁定欄位。 如果可能，應修改架構或XFA表單模板並為未綁定欄位添加一個條目，以便它也會被綁定，並且其資料與已提交資料中的其他欄位一樣可用。
 
 ## 支援的預填充用戶資料的協定 {#supported-protocols-for-prefilling-user-data}
 
@@ -298,12 +292,12 @@ https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
-* SERVICE_NAME指OSGI預填充服務的名稱。 參考 [建立並運行預填服務](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service)。
-* IDENTIFIER指OSGI預填充服務獲取預填充資料所需的任何元資料。 登錄用戶的標識符是可以使用的元資料的示例。
+- SERVICE_NAME指OSGI預填充服務的名稱。 參考 [建立並運行預填服務](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service)。
+- IDENTIFIER指OSGI預填充服務獲取預填充資料所需的任何元資料。 登錄用戶的標識符是可以使用的元資料的示例。
 
 >[!NOTE]
 >
->不支援傳遞身份驗證參數。
+> 不支援傳遞身份驗證參數。
 
 ### 在slingRequest中設定資料屬性 {#setting-data-attribute-in-slingrequest}
 
@@ -344,10 +338,10 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 預填充服務是OSGi服務，並通過OSGi捆綁包打包。 您可以建立OSGi捆綁包、上載並將其安裝到 [!DNL AEM Forms] 捆綁。 在開始建立捆綁包之前：
 
-* [下載 [!DNL AEM Forms] 客戶端SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
-* 下載模板包
+- [下載 [!DNL AEM Forms] 客戶端SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+- 下載模板包
 
-* 將資料（預填充資料）檔案放在crx-repository中。 可以將檔案放在crx-repository的\contents資料夾中的任何位置。
+- 將資料（預填充資料）檔案放在crx-repository中。 可以將檔案放在crx-repository的\contents資料夾中的任何位置。
 
 [取得檔案](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
@@ -358,8 +352,8 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 1. 開啟src\main\java\com\adobe\test\Prefill.java檔案進行編輯。
 1. 在代碼中，設定以下值：
 
-   * `nodePath:` 指向crx-repository位置的節點路徑變數包含資料（預填充）檔案的路徑。 例如，/content/prefilldata.xml
-   * `label:` 標籤參數指定服務的顯示名稱。 例如，預設預填充服務
+   - `nodePath:` 指向crx-repository位置的節點路徑變數包含資料（預填充）檔案的路徑。 例如，/content/prefilldata.xml
+   - `label:` 標籤參數指定服務的顯示名稱。 例如，預設預填充服務
 
 1. 保存並關閉 `Prefill.java` 的子菜單。
 1. 添加 `AEM Forms Client SDK` 包到模板項目的生成路徑。
@@ -373,20 +367,21 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 1. 在「屬性」控制台中，導航至 [!DNL AEM Forms] 容器>基本>預填充服務。
 1. 選擇預設預填充服務，然後按一下 **[!UICONTROL 保存]**。 服務與表單關聯。
 
-## 在客戶端預填充資料 {#prefill-at-client}
+<!-- ## Prepopulate data at client {#prefill-at-client}
 
-預填充自適應表單時， [!DNL AEM Forms] 伺服器將資料與Adaptive Form合併，並將填充的表單交付給您。 預設情況下，資料合併操作將在伺服器上進行。
+When you prefill an Adaptive Form, the [!DNL AEM Forms] server merges data with an Adaptive Form and delivers the filled form to you. By default, the data merge action takes place at the server.
 
-您可以配置 [!DNL AEM Forms] 伺服器，以在客戶端而不是伺服器上執行資料合併操作。 它顯著減少了預填充和渲染自適應Forms所需的時間。 預設情況下，該功能被禁用。 可以從Configuration Manager或命令行啟用它。
+You can configure the [!DNL AEM Forms] server to perform the data merge action at the client instead of the server. It significantly reduces the time required to prefill and render Adaptive Forms. By default, the feature is disabled. You can enable it from the Configuration Manager or command line.
 
-* 要從配置管理器啟用或禁用：
-   1. 開啟AEMConfiguration Manager。
-   1. 查找並開啟自適應表單和互動式通信Web通道配置
-   1. 啟用Configuration.af.clientside.datamerge.enabled.name選項
-* 要從命令行啟用或禁用：
-   * 要啟用，請運行以下cURL命令：
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+* To enable or disable from configuration manager:
+  1. Open AEM Configuration Manager.
+  1. Locate and open the Adaptive Form and Interactive Communication Web Channel Configuration
+  1. Enable the Configuration.af.clientside.datamerge.enabled.name option
+* To enable or disable from the command line:
+  * To enable, run the following cURL command:
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   * 要禁用，請運行以下cURL命令：
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
-   要充分利用客戶端預填充資料選項，請更新預填充服務以返回 [檔案附件映射](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) 和 [自定義上下文](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
+  * To disable, run the following cURL command:
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
