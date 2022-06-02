@@ -3,10 +3,10 @@ title: 排除Dynamic Media故障
 description: 使用Dynamic Media時的故障排除技巧。
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: a7152785e8957dcc529d1e2138ffc8c895fa5c29
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 1%
+source-wordcount: '1135'
+ht-degree: 0%
 
 ---
 
@@ -169,53 +169,71 @@ ht-degree: 1%
 
 如果與查看者有問題，請參閱以下故障排除指南。
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>問題</strong></td>
-   <td><strong>如何調試</strong></td>
-   <td><strong>解決方案</strong></td>
-  </tr>
-  <tr>
-   <td>未發佈查看器預設</td>
-   <td><p>繼續到示例管理器診斷頁： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>觀察計算值。 正確操作時，您會看到：</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注釋</strong>:配置查看器資產的Dynamic Media雲設定後，可能需要大約10分鐘才能同步。</p> <p>如果未激活的資產仍然存在，請選擇 <strong>列出所有未激活的資產</strong> 按鈕以查看詳細資訊。</p> </td>
-   <td>
-    <ol>
-     <li>導航到管理工具中的查看器預設清單： <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>選擇所有查看器預設，然後選擇 <strong>發佈</strong>。</li>
-     <li>返回至示例經理，並觀察未激活的資產計數現在為零。</li>
-    </ol> </td>
-  </tr>
-  <tr>
-   <td>查看器預設圖稿從資產詳細資訊或複製URL/嵌入代碼中的預覽返回404</td>
-   <td><p>在CRXDE Lite中，執行以下操作：</p>
-    <ol>
-     <li>導航到 <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> 資料夾(例如， <code>/content/dam/_CSS/_OOTB</code>)</li>
-     <li>查找有問題資產的元資料節點(例如， <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>)。</li>
-     <li>檢查是否存在 <code>dam:scene7*</code> 屬性。 如果資產已成功同步並發佈，您將看到 <code>dam:scene7FileStatus</code> 設定為 <strong>發佈完成</strong>。</li>
-     <li>嘗試通過連接以下屬性和字串文本的值來直接從Dynamic Media請求圖稿
-      <ul>
-       <li><code>dam:scene7Domain</code></li>
-       <li><code>"is/content"</code></li>
-       <li><code>dam:scene7Folder</code></li>
-       <li><code>&lt;asset-name&gt;</code></li>
-       <li>範例: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
-      </ul> </li>
-    </ol> </td>
-   <td><p>如果示例資產或查看器預設圖稿尚未同步或發佈，請重新啟動整個複製/同步過程：</p>
-    <ol>
-     <li>導航到 <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
-     </li>
-     <li>按順序選擇以下操作：
-      <ol>
-       <li>刪除同步資料夾。</li>
-       <li>刪除預設資料夾（下） <code>/conf</code>)。
-       <li>觸發DM安裝非同步作業。</li>
-      </ol> </li>
-     <li>等待Experience Manager收件箱中同步成功的通知。
-     </li>
-    </ol> </td>
-  </tr>
- </tbody>
-</table>
+### 問題：未發佈查看器預設 {#viewers-not-published}
+
+**如何調試**
+
+1. 繼續到示例管理器診斷頁： `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`。
+1. 觀察計算值。 正確操作時，將看到以下內容： `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`。
+
+   >[!NOTE]
+   >
+   >配置查看器資產的Dynamic Media雲設定後，可能需要大約10分鐘才能同步。
+
+1. 如果未激活的資產仍然存在，請選擇 **列出所有未激活的資產** 按鈕以查看詳細資訊。
+
+**解決方案**
+
+1. 導航到管理工具中的查看器預設清單： `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. 選擇所有查看器預設，然後選擇 **發佈**。
+1. 返回至示例經理，並觀察未激活的資產計數現在為零。
+
+### 問題：查看器預設圖稿從資產詳細資訊中的預覽或複製URL/嵌入代碼返回404 {#viewer-preset-404}
+
+**如何調試**
+
+在CRXDE Lite中，執行以下操作：
+
+1. 導航到 `<sync-folder>/_CSS/_OOTB` 資料夾(例如， `/content/dam/_CSS/_OOTB`)。
+1. 查找有問題資產的元資料節點(例如， `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`)。
+1. 檢查是否存在 `dam:scene7*` 屬性。 如果資產已成功同步並發佈，您將看到 `dam:scene7FileStatus` 設定為 **發佈完成**。
+1. 嘗試通過連接以下屬性和字串文本的值直接從動態媒體請求圖稿：
+
+   * `dam:scene7Domain`
+   * `"is/content"`
+   * `dam:scene7Folder`
+   * `<asset-name>`
+範例: 
+`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+
+**解決方案**
+
+如果示例資產或查看器預設圖稿尚未同步或發佈，請重新啟動整個複製/同步過程：
+
+1. 導航到CRXDE Lite。
+1. 刪除 `<sync-folder>/_CSS/_OOTB`.
+1. 導航到CRX包管理器： `https://localhost:4502/crx/packmgr/`。
+1. 在清單中搜索查看器包；開始 `cq-dam-scene7-viewers-content`。
+1. 選擇 **重新安裝**。
+1. 在Cloud Services下，導航到「Dynamic Media配置」頁，然後開啟Dynamic Media- S7配置的配置對話框。
+1. 不更改，選擇 **保存**。
+此保存操作將再次觸發邏輯，以建立和同步示例資源、查看器預設的CSS和圖稿。
+
+### 問題：影像預覽未載入到Viewer預設創作中 {#image-preview-not-loading}
+
+**解決方案**
+
+1. 在Experience Manager中，選擇Experience Manager徽標以訪問全局導航控制台，然後導航至 **[!UICONTROL 工具]** > **[!UICONTROL 常規]** > **[!UICONTROL CRXDE Lite]**。
+1. 在左滑軌中，導航到以下位置的示例內容資料夾：
+
+   `/content/dam/_DMSAMPLE`
+
+1. 刪除 `_DMSAMPLE` 的子菜單。
+1. 在左滑軌中，導航到以下位置的預設資料夾：
+
+   `/conf/global/settings/dam/dm/presets/viewer`
+
+1. 刪除 `viewer` 的子菜單。
+1. 在CRXDE Lite頁的左上角附近，選擇 **[!UICONTROL 全部保存]**。
+1. 在CRXDE Lite頁的左上角，選擇 **返回首頁** 表徵圖
+1. 重新建立 [Dynamic MediaCloud Services配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)。
