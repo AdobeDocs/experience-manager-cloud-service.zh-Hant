@@ -2,7 +2,7 @@
 title: 內容傳輸工具入門
 description: 內容傳輸工具入門
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f84806c1579f8ef163dd9454fcae4a57bf22a452
+source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 8%
@@ -102,7 +102,7 @@ ht-degree: 8%
 
 要填充在雲加速管理器中建立的遷移集，您需要在源Adobe Experience Manager(AEM)實例上安裝最新版本的內容傳輸工具。 請按照本部分瞭解如何填充遷移集。
 
-1. 在源Adobe Experience Manager實例上安裝最新版本(Vxxx)的內容傳輸工具後，請轉到 **操作 — 內容遷移**
+1. 在源Adobe Experience Manager實例上安裝最新版本(v2.0.10)的內容傳輸工具後，請轉到 **操作 — 內容遷移**
 
 1. 按一下 **建立遷移集**
 

@@ -2,7 +2,7 @@
 title: 內容轉移工具綜覽
 description: 內容轉移工具綜覽
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ab63e9af7b52429fea1e2b2981effc1356f0787f
+source-git-commit: 3bf12642e94076a67010e4701715a54138a490ee
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 43%
@@ -36,7 +36,7 @@ ht-degree: 43%
 * 通過更好的載入狀態、護欄和錯誤處理改進用戶體驗
 * 攝取日誌被保留，並始終可用於排除故障
 
-開始使用新版本(Vxx) <!-- update when version is available --> 您需要卸載舊版本的內容傳輸工具，因為該工具中發生了重大體系結構更改。
+開始使用新版本(v2.0.10) <!-- update when version is available --> 您需要卸載舊版本的內容傳輸工具，因為該工具中發生了重大體系結構更改。
 
 >[!NOTE]
 >
