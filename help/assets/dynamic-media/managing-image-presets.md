@@ -4,7 +4,7 @@ description: 瞭解影像預設以及如何建立、修改和管理影像預設�
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: ca0385ee974c7b06725f687c0ef237880bb230ea
 workflow-type: tm+mt
 source-wordcount: '3629'
 ht-degree: 8%
@@ -236,7 +236,7 @@ DAM更新資產工作流中「介質提取」進程元件的參數中的ExtendSc
 
 * **[!UICONTROL 啟用簡單銳利化]** -請勿選取「啟用簡 **** 單銳利化」 (此銳利化濾鏡提供的控制力比「非銳利化遮色片」設定少)。
 
-* **[!UICONTROL 銳化：重新取樣模式]**  — 選擇 **[!UICONTROL 雙立方]**。
+* **[!UICONTROL 銳化：重新取樣模式]**  — 選擇 **[!UICONTROL 夏普2]**。
 
 #### 基本頁籤選項 {#basic-tab-options}
 
