@@ -2,9 +2,9 @@
 title: 雲加速管理器的實施階段
 description: 本頁概述了Cloud Acceleration Manager中的實施階段。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f2cad442ba85d1d889eda669502e120406a4380b
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '793'
 ht-degree: 2%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 2%
 
    該頁在三個不同的頁籤中顯示代碼重構注意事項：
 
-   * 概覽
+   * 概觀
    * Dispatcher
    * 測試
 
@@ -89,24 +89,32 @@ AEMas a Cloud Service部署卡提供所有相關內容，幫助您將代碼部�
 
 ## 使用內容傳輸卡 {#content-transfer}
 
-「內容傳輸」活動卡提供了使用內容傳輸工具將內容從當前實例移動到as a Cloud Service時應檢查AEM的指導AEM和注意事項。
+內容傳輸卡允許您啟動和管理從當前實例到AEMas a Cloud Service的內AEM容傳輸。
 
 按照本節來瀏覽內容傳輸活動卡：
 
-1. 按一下 **視圖** 按鈕 **內容傳輸** 活動卡。
+1. 按一下 **審閱** 按鈕 **內容傳輸** 活動卡。
 
-   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-8.png)
+   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. 內容傳送器顯示遷移過程的這一階段的相關資訊。
+1. 要啟動內容傳輸，您需要建立遷移集。 按一下 **建立遷移集**。 遷移集允許內容傳輸到AEMas a Cloud Service。
 
-   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/content-transfertool-card.png)
+   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >請查看 [先決條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) 和 [最佳做法和准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) 使用內容傳輸工具之前。
 
+1. 您需要下載並安裝內容傳輸工具以填充遷移集並完成內容傳輸的提取階段。 審閱 [內容傳輸工具入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 瞭解如何使用內容傳輸工具。
+
+1. 要將遷移集中的內容從as a Cloud Service上的AEM環境中攝取，您需要開始攝取。 導航到 **攝取作業** 按一下 **新攝取**。 審閱 [將內容插入目標](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) 瞭解如何完成內容傳輸的接收階段。
+
+   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+
 ### 估計內容傳輸時間 {#calculating}
 
-已提供一個新的內容傳輸工具計算器，用於估計完成內容傳輸活動可能需要多長時間。 可以使用內容儲存庫大小滑塊選擇適用於項目的大小。 對於提取和攝取階段，轉移時間不同。
+已提供內容傳輸工具計算器來估計完成內容傳輸活動可能需要多長時間。 可以使用內容儲存庫大小滑塊選擇適用於項目的大小。 對於提取和攝取階段，轉移時間不同。
+
+![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
 >[!NOTE]
 >這些時代只是估算。 這些估計中沒有考慮網路速度和擴展實例的時間等因素。
@@ -115,6 +123,6 @@ AEMas a Cloud Service部署卡提供所有相關內容，幫助您將代碼部�
 
 您還可以使用 `path` 參數，例如 `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`。
 
-## 下一步是什麼 {#whats-next}
+## 下一步 {#whats-next}
 
 一旦您學會了如何登錄到Cloud Acceleration Manager以及如何利用實施階段，您現在就可以繼續查看中的下一步 [上線階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en)。

@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 333653e42de895fdd2097ad52ed3904192c57437
+source-git-commit: 689a9212d2b2a9c4459f1e0f9e5f580d8972b1d0
 workflow-type: tm+mt
-source-wordcount: '3502'
-ht-degree: 42%
+source-wordcount: '3565'
+ht-degree: 41%
 
 ---
 
@@ -178,6 +178,19 @@ ht-degree: 42%
             + [概觀](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
             + [重要注意事項](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
             + [使用用戶映射工具](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+         + 舊式內容傳輸工具 {#legacy}
+            + [概觀](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
+            + [內容傳輸工具的先決條件](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
+            + [使用內容傳輸工具的指導原則和最佳做法](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
+            + [內容傳輸工具入門](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
+            + [驗證內容傳輸](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
+            + [處理大型內容儲存庫](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
+            + [從源中提取內容](/help/journey-migration/content-transfer-tool/ctt-legacy/extracting-content-legacy.md)
+            + [將內容插入目標](/help/journey-migration/content-transfer-tool/ctt-legacy/ingesting-content-legacy.md)
+            + [檢視移轉集記錄](/help/journey-migration/content-transfer-tool/ctt-legacy/viewing-logs-legacy.md)
+            + [刪除移轉集](/help/journey-migration/content-transfer-tool/ctt-legacy/deleting-migrationset-legacy.md)
+            + [在發佈實例上運行內容傳輸工具](/help/journey-migration/content-transfer-tool/ctt-legacy/running-content-transfer-tool-publish-instance-legacy.md)
+            + [內容傳輸工具故障排除](/help/journey-migration/content-transfer-tool/ctt-legacy/troubleshooting-content-transfer-tool-legacy.md)
    + 程式碼重構工具 {#refactoring-tools}
       + [統一體驗](/help/journey-migration/unified-experience.md)
       + [儲存庫現代化器](/help/journey-migration/refactoring-tools/repo-modernizer.md)

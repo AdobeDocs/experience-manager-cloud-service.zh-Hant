@@ -1,15 +1,16 @@
 ---
-title: 驗證內容傳輸
+title: 驗證內容傳輸（舊版）
 description: 使用內容傳輸工具驗證內容傳輸
-exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '950'
 ht-degree: 1%
 
 ---
 
-# 驗證內容傳輸 {#validating-content-transfers}
+# 驗證內容傳輸（舊版） {#validating-content-transfers}
 
 ## 快速入門 {#getting-started}
 
@@ -44,11 +45,11 @@ ht-degree: 1%
 
 * **提取（覆蓋）**
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+   ![影像](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
 
 * **攝取（擦除）**
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+   ![影像](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **附註**
 
@@ -58,11 +59,11 @@ ht-degree: 1%
 
 * **擷取**
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+   ![影像](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
 * **攝取**
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+   ![影像](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
 * **附註**
 
@@ -127,10 +128,22 @@ Migration validation took 0 minutes
 
 上述故障示例是通過運行攝取，然後在禁用擦除的情況下再次運行相同的攝取，以便在攝取期間不涉及節點 — 目標上已存在所有內容。
 
-除了包含在接收日誌中，還可以從 **攝取作業** Cloud Acceleration Manager中的用戶介面。 為此，請按一下三點(**...**)，然後按一下 **驗證報告** 的子菜單。
+除了包含在接收日誌中外，還可以從內容傳輸工具用戶介面訪問驗證報告。 為此，請選擇遷移集，然後按一下 **驗證** 按鈕
 
 
-![影像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+![影像](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
+
+將會開啟「驗證日誌」對話框：
+
+![影像](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
+
+使用 **驗證發佈/作者報告** 按鈕，查看目標環境給定層最近攝取的驗證報告。 請參見下面一個小型發佈接收示例：
+
+![影像](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
+
+>[!NOTE]
+>
+>的 **驗證發佈/作者報告** 攝入完成後，將顯示連結。 此外，驗證報告將保留，因此它們不會像接收日誌那樣在接收完成後過期。
 
 ## 疑難排解 {#troubleshooting}
 

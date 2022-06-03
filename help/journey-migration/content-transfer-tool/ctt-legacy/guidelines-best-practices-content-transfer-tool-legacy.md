@@ -1,34 +1,20 @@
 ---
-title: 使用內容傳輸工具的指導原則和最佳做法
+title: 使用內容傳輸工具的准則和最佳做法（舊版）
 description: 使用內容傳輸工具的指導原則和最佳做法
-exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 9ee931223c3600643fbaeefd790f5f23827da367
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 21%
+source-wordcount: '1512'
+ht-degree: 25%
 
 ---
 
-# 使用內容傳輸工具的指導原則和最佳做法 {#guidelines}
+# 使用內容傳輸工具的准則和最佳做法（舊版） {#guidelines}
 
 ## 准則與最佳作法 {#best-practices}
 
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_guidelines"
->title="准則與最佳作法"
->abstract="查看使用內容傳輸工具的指導原則和最佳做法，包括修訂版清理任務、磁碟空間注意事項等。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="使用內容傳輸工具的重要注意事項"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="使用用戶映射工具的重要注意事項"
-
-新版內容傳輸工具可將內容傳輸過程與Cloud Acceleration Manager整合。 強烈建議切換到此新版本，以利用它提供的所有好處：
-
-* 自助式方法，一次提取遷移集並將其並行接收到多個環境中
-* 通過更好的載入狀態、護欄和錯誤處理改進用戶體驗
-* 攝取日誌被保留，並始終可用於排除故障
-
-要開始使用新版本(Vxx)，您需要卸載舊版本的內容傳輸工具。 這是必需的，因為新版本具有重大的體系結構更改。 使用Vxx ，您需要建立新遷移集並重新運行新遷移集的提取和接收。 如果遷移已在進行中，則可以繼續使用CTT的以前版本，直到遷移完成。
-
-以下准則和最佳做法適用於新版的內容傳輸工具：
+請依照以下章節了解使用「內容轉移工具」的准則與最佳作法：
 
 * 建議您對&#x200B;**來源**&#x200B;存放庫執行[修訂清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html)和[資料存放區一致性檢查](https://helpx.adobe.com/tw/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)，以找出潛在問題並降低存放庫大小。
 
@@ -44,7 +30,7 @@ ht-degree: 21%
    * *資料存放區大小*：「內容轉移工具」會使用 64GB，即使實際資料存放區較大亦然。
    * *節點存放區大小*：區段存放區目錄大小或 MongoDB 資料庫大小。因此，若區段存放區的大小為 20GB，則需要的可用磁碟空間為 94GB。
 
-* 需要在整個內容傳輸活動中維護遷移集以支援內容補充。 在內容傳輸活動期間，每次最多可以建立和維護雲加速管理器中每個項目的5個遷移集。 如果需要5個以上的遷移集，您需要在雲加速管理器中建立第二個項目。 但是，這將需要額外的項目管理和產品外治理，以避免多個用戶覆蓋目標上的內容。
+* 需要在整個內容傳輸活動中維護遷移集以支援內容補充。 由於在內容傳輸活動期間一次最多可以建立和維護十個遷移集，因此建議相應地分拆內容儲存庫，以確保不會用完遷移集。
 
 ## 使用內容傳輸工具之前的重要注意事項 {#important-considerations}
 
@@ -54,17 +40,19 @@ ht-degree: 21%
 
 * 必須在環境上配AEM置Java，以便 `java` 命令可由啟動的用戶執AEM行。
 
+* 建議在安裝1.3.0版時卸載舊版內容傳輸工具，因為該工具中存在重大體系結構更改。 使用1.3.0，您還應建立新遷移集，並重新運行新遷移集的提取和接收。
+
 * 內容傳輸工具可用於以下類型的資料儲存：檔案資料儲存、S3資料儲存、共用的S3資料儲存和Azure Blob儲存資料儲存。
 
 * 如果使用 *沙盒環境*，確保您的環境是最新的，並已升級到最新版本。 如果您使用&#x200B;*生產環境*，則會自動更新。
 
-* 要使用內容傳輸工具，您需要是源實例上的管理員用戶，並且屬於本AEM地 **管理員** Cloud Service實例中的組。 未授權用戶將無法啟動接收。
+* 要使用內容傳輸工具，您需要是源實例上的管理員用戶，並且屬於本AEM地 **管理員** Cloud Service實例中的組。 無權限的使用者將無法擷取能使用「內容轉移工具」的存取 Token。
 
 * 如果設定 **在接收之前擦除雲實例上的現有內容** 選項，它將刪除整個現有儲存庫並建立新儲存庫以將內容插入。 這意味著它會重置所有設定，包括對目標Cloud Service實例的權限。 對於添加到 **管理員** 組。 必須將用戶重新添加到 **管理員** 以檢索內容傳輸工具的訪問令牌。
 
 * 如果將來自兩個源的內容移動到目標上的相同路徑，則內容傳輸工具不支援將來自多個源的內容合併到目標Cloud Service實例。 要將內容從多個源移動到單個目標Cloud Service實例，您需要確保源的內容路徑不重疊。
 
-* 提取密鑰自建立/續訂之日起有效14天。 它可以隨時更新。 如果提取密鑰已過期，您將無法執行提取。
+* 訪問令牌可以在特定時間段之後或在升級Cloud Service環境之後定期過期。 如果訪問令牌已過期，您將無法連接到Cloud Service實例，您需要檢索新的訪問令牌。 與現有遷移集關聯的狀態表徵圖將更改為紅色雲，並在懸停在紅色雲上時顯示消息。
 
 * 內容傳輸工具(CTT)在將內容從源實例傳輸到目標實例之前不執行任何類型的內容分析。 例如， CTT在將內容插入發佈環境時不會區分已發佈和未發佈的內容。 遷移集中指定的任何內容都將被引入所選目標實例。 用戶能夠將遷移集插入Author實例或Publish實例或兩者。 建議在將內容移動到生產實例時，在源Author實例上安裝CTT以將內容移動到目標Author實例，同樣，在源Publish實例上安裝CTT以將內容移動到目標Publish實例。 請參閱 [在發佈實例上運行內容傳輸工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) 的子菜單。
 

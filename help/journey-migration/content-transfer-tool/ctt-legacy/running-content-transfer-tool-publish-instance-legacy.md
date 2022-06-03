@@ -1,15 +1,16 @@
 ---
-title: 在發佈實例上運行內容傳輸工具
+title: 在發佈實例上運行內容傳輸工具（舊版）
 description: 在發佈實例上運行內容傳輸工具
-exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
+hide: true
+hidefromtoc: true
 source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '272'
 ht-degree: 1%
 
 ---
 
-# 在發佈實例上運行內容傳輸工具 {#run-content-transfer-tool-publish-instance}
+# 在發佈實例上運行內容傳輸工具（舊版） {#run-content-transfer-tool-publish-instance}
 
 ## 簡介 {#introduction}
 
@@ -25,6 +26,8 @@ ht-degree: 1%
 * 使用在Author實例上使用的相同版本的內容傳輸工具。
 
 * 只需遷移一個發佈節點。 在開始提取之前，應從負載平衡器中刪除它。
+
+* 建立遷移集時，請使用作者的AEMas a Cloud Service環境URL。
 
 * 在接收發佈期間，不會縮小發佈層（與作者不同）。
 
