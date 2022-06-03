@@ -2,10 +2,10 @@
 title: 《 2022.6.0版中遷移工具AEM發行說明》
 description: 《 2022.6.0版中遷移工具AEM發行說明》
 feature: Release Information
-source-git-commit: 717b2c851a18ef5171d64a462509ce08fb87a59c
+source-git-commit: 666635fc951ceb10e1a4a9a90a042d60da9f463a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '399'
+ht-degree: 4%
 
 ---
 
@@ -22,11 +22,8 @@ ht-degree: 0%
 ### 新增功能 {#what-is-new-bpa}
 
 * 能夠使用CoralUI和Classic對話框小部件檢測並報告自定義對話框小部件的使用情況。 建議將自定義經典對話框小部件從ExtJS轉換為CoralUI。 應將自定義Coral對話框小部件更新為CoralUI3。
-
 * 能夠檢測並報告資產共用公域的使用和版本。 as a Cloud Service不支援資產共用公AEM域1.x，必須升級到2.x。
-
 * 能夠檢測和報告版本中的節點數。
-
 * 能夠檢測並報告已修改的自定義複製代理或出廠預裝的複製代理。
 
 ### 錯誤修正 {#bug-fixes-bpa}
