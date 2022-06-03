@@ -1,17 +1,17 @@
 ---
-title: 《 2022.6.0版中遷移工具AEM發行說明》
-description: 《 2022.6.0版中遷移工具AEM發行說明》
+title: 《 2022.5.0版中遷移工具AEM發行說明》
+description: 《 2022.5.0版中遷移工具AEM發行說明》
 feature: Release Information
-source-git-commit: 666635fc951ceb10e1a4a9a90a042d60da9f463a
+source-git-commit: 48dd6b3184cdde06b902eae35fac42515f606e77
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 4%
 
 ---
 
-# 《 2022.6.0版中遷移工具AEM發行說明》 {#release-notes}
+# 《 2022.5.0版中遷移工具AEM發行說明》 {#release-notes}
 
-本頁概述了as a Cloud Service2022.6.0中遷移工具的AEM發行說明。
+本頁概述了as a Cloud Service2022.5.0中遷移工具的AEM發行說明。
 
 ## 最佳做法分析器 {#bpa-release}
 
