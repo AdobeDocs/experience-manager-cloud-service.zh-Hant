@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 58999e2aec2f9decaa55554c9488967b70701522
+source-git-commit: 91a88cb02192defdd651ecb6d108d4540186d06e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2183'
+ht-degree: 1%
 
 ---
 
@@ -206,7 +206,7 @@ Define DISABLE_DEFAULT_CACHING
 與以前版本的AEM頁面一樣，發佈或取消發佈頁面將從調度程式快取中清除內容。 如果懷疑存在快取問題，客戶應重新發佈有問題的頁面，並確保虛擬主機與ServerAlias localhost匹配，而ServerAlias localhost是調度程式快取失效所必需的。
 
 
-當發佈實例從作者處收到頁面或資產的新版本時，它使用刷新代理使其調度程式上的適當路徑無效。 更新的路徑將從調度程式快取及其父快取中刪除到一個級別(您可以使用 [statfilesel（狀態檔案級）](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)。
+當發佈實例從作者處收到頁面或資產的新版本時，它使用刷新代理使其調度程式上的適當路徑無效。 更新的路徑將從調度程式快取及其父快取中刪除到一個級別(您可以使用 [statfilesel（狀態檔案級）](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
 
 ### 顯式調度程式快取失效 {#explicit-invalidation}
 
