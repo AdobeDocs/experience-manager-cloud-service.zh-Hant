@@ -2,9 +2,9 @@
 title: 構建環境
 description: 瞭解Cloud Manager的生成環境以及它如何生成和test您的代碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 5f344682aa0427d46dc6ca75fe83b0071348ad83
+source-git-commit: b327af40a003b055b8e44688e1b84ac15a8c8439
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
@@ -94,6 +94,12 @@ Cloud Manager使用專用的生成環境生成和test您的代碼。
 >[!NOTE]
 >
 >從2022年4月開始，OracleJDK將是應用程式開發和操作的預設JDKAEM。 即使在Maven工具鏈中顯式選擇了替代選項，Cloud Manager的生成過程也會自動切換到使用OracleJDK。 請參閱一經發佈的4月份發行說明，以瞭解更多詳情。
+
+#### 備用Maven執行JDK版本 {#alternate-maven-jdk-version}
+
+也可以選擇Java 8或Java 11作為整個Maven執行的JDK。 與工具鏈選項不同，這將更改用於所有插件的JDK，除非還設定了工具鏈配置，在這種情況下，仍將對具有工具鏈意識的Maven插件應用工具鏈配置。 因此，使用 [Apache Maven Enforcer插件](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 會奏效的。
+
+為此，請建立名為 `.cloudmanager/java-version` 管道使用的git儲存庫分支中。 此檔案可以包含內容11或8。 忽略任何其他值。 如果指定11，則使用Oracle11, `JAVA_HOME` 環境變數設定為 `/usr/lib/jvm/jdk-11.0.2`。 如果指定8，則使用Oracle8並 `JAVA_HOME` 環境變數設定為 `/usr/lib/jvm/jdk1.8.0_202`。
 
 ## 環境變數 {#environment-variables}
 
