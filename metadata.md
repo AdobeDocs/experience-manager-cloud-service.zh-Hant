@@ -11,20 +11,20 @@ cloud: Experience Cloud
 source-git-commit: 5bc43af20dc8893303b1d1f4dc70939631933eb7
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 6%
+ht-degree: 68%
 
 ---
 
 
 # 內部使用的中繼資料
 
-GitHub創作系統中的元資料是分層的，並且定義了以下不斷增加的先例級別。
+GitHub 編寫系統中的中繼資料具有階層式架構，而且會定義以下相對於前一項的遞增層級。
 
 1. metadata.md
-1. 至
+1. ToC
 1. 文章
 
-元資料.md檔案中定義的元資料適用於整個回購，但可以在ToC和文章級別被覆蓋。 元資料的任何覆蓋都應在盡可能最低的級別執行。
+metadata.md 檔案中所定義的中繼資料會套用到整個存放庫，但可以在 ToC 和文章層級被覆寫。 中繼資料的任何覆寫都應該盡量在最低層級進行。
 
 體驗管理器 — cloud-service.en repo中的元資料是最低要求的。
 
@@ -40,7 +40,7 @@ metadata.md
 * `tutorials-title`
 * `tutorials-url`
 
-目標
+ToCs
 
 * `sub-product`
 * `user-guide-title`
