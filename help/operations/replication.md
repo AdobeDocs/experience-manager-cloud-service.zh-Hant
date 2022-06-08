@@ -2,7 +2,7 @@
 title: 複寫
 description: 分發和排除複製故障。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
+source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 1%
@@ -58,9 +58,9 @@ Adobe Experience Manager as a Cloud Service使用 [Sling內容分發](https://sl
 
 為獲得最佳效能，使用此功能時請遵循以下准則：
 * 建議一次複製少於100條路徑，並且有500條路徑硬限制。
-* 複製內容的總大小必須低於5 MB。 這隻包括節點和屬性，但不包括任何二進位檔案，包括工作流包和內容包。
+* 複製內容的總大小必須低於10 MB。 這隻包括節點和屬性，但不包括任何二進位檔案，包括工作流包和內容包。
 
-### 發佈內容樹工作流 {#publish-content-tree-workflow}
+### 發佈內容樹狀工作流程 {#publish-content-tree-workflow}
 
 通過選擇 **工具 — 工作流 — 模型** 複製 **發佈內容樹** 現成工作流模型，如下所示：
 
@@ -194,7 +194,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 **複製API路徑和大小限制**
 
-建議複製少於100條路徑，其中500條是硬限制。 超過硬限制後，將拋出ReplicationException。 如果應用程式邏輯不需要原子複製，則可以通過將ReplicationOptions.setUseAtomicCalls設定為false來克服此限制，該值將接受任意數目的路徑，但會在內部建立儲存段以保持低於此限制。 每次複製調用傳輸的內容量不得超過5 MB，其中包括節點和屬性，但不包括任何二進位檔案（工作流包和內容包被視為二進位檔案）。
+建議複製少於100條路徑，其中500條是硬限制。 超過硬限制後，將拋出ReplicationException。 如果應用程式邏輯不需要原子複製，則可以通過將ReplicationOptions.setUseAtomicCalls設定為false來克服此限制，該值將接受任意數目的路徑，但會在內部建立儲存段以保持低於此限制。 每次複製調用傳輸的內容量不得超過10 MB，其中包括節點和屬性，但不包括任何二進位檔案（工作流包和內容包被視為二進位檔案）。
 
 ## 疑難排解 {#troubleshooting}
 
