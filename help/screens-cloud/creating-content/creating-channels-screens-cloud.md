@@ -2,9 +2,9 @@
 title: 在螢幕中建立和管理通道as a Cloud Service
 description: 本頁介紹如何在螢幕as a Cloud Service中建立和管理通道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: afcee8019c9b59f3eb1fdcabd569272eeea76dab
+source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1107'
 ht-degree: 1%
 
 ---
@@ -172,6 +172,6 @@ ht-degree: 1%
 **注：** 從通道中刪除預設分配詳細資訊將刪除正在使用該分配的所有顯示器上的匹配分配。
 因此，如果這些顯示器上沒有要播放的替代內容，則這可能會導致空白螢幕。
 
-## 下一步是什麼 {#whats-next}
+## 下一步 {#whats-next}
 
-現在，在您的項目中設定了AEM Screens頻道，您需要發佈您的頻道。 請參閱 [在螢幕中發佈通道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en) 從螢幕服務提供商管理玩家之前。
+現在，在您的項目中設定了AEM Screens頻道，您需要發佈您的頻道。 請參閱 [在螢幕中發佈通道as a Cloud Service](manage-publish.md) 從螢幕服務提供商管理玩家之前。

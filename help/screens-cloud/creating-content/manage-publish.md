@@ -2,10 +2,10 @@
 title: 在螢幕中發佈頻道as a Cloud Service
 description: 此頁介紹如何在螢幕as a Cloud Service中發佈頻道。
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -47,6 +47,6 @@ ht-degree: 0%
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
-## 下一步是什麼 {#whats-next}
+## 下一步 {#whats-next}
 
-現在，既然您已在項目中發佈了您的頻道，您現在應繼續「螢幕」as a Cloud Service的過程，方法是下次查看文檔， [在螢幕中安裝和配置播放器as a Cloud Service](/help/screens-cloud/creating-content/manage-publish.md)。
+現在，既然您已在項目中發佈了您的頻道，您現在應繼續「螢幕」as a Cloud Service的過程，方法是下次查看文檔， [在螢幕中安裝和配置播放器as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)。

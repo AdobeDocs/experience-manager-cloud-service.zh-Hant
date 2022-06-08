@@ -2,9 +2,9 @@
 title: 在螢幕中建立項目as a Cloud Service
 description: 此頁介紹如何在螢幕as a Cloud Service中建立項目。
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 7a11ce1ce5862068b3087848065b661b13bed1e0
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,6 @@ ht-degree: 0%
    >[!NOTE]
    >您可以選擇多個項目，因此可以在一個步驟中刪除多個項目。
 
-## 下一步是什麼 {#whats-next}
+## 下一步 {#whats-next}
 
-現在，您已經設定了AEM Screens項目，您可以建立新頻道並向頻道添加內容。 請參閱 [建立和管理渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en) 瞭解如何在渠道中建立和管理內容。
+現在，您已經設定了AEM Screens項目，您可以建立新頻道並向頻道添加內容。 請參閱 [建立和管理渠道](creating-channels-screens-cloud.md) 瞭解如何在渠道中建立和管理內容。
