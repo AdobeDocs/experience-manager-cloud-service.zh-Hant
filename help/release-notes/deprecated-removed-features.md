@@ -2,10 +2,10 @@
 title: 過時和移除的功能
 description: 特定於中已棄用和已刪除功能的發行說明 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: d55e2aec4718e752cfc0dfa610abf1a1d36a583f
+source-git-commit: c4809bcbeae5339427b1da588021606d18b482a5
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 34%
+source-wordcount: '666'
+ht-degree: 31%
 
 ---
 
@@ -41,6 +41,10 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | [!DNL Assets] | 不支援 [ 工作流程中的](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)某些工作流程步驟`DAM Asset Update`，包括呼叫命令列工具，例如 [!DNL ImageMagick]. | [資產微服務](/help/assets/asset-microservices-overview.md)可取代許多工作流程。若要自訂處理程序，請使用[後期處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
 | [!DNL Assets] | FFmpeg 影片轉碼。 | 若要產生 FFmpeg 縮圖，請使用[資產微服務](/help/assets/asset-microservices-overview.md)。若是 FFmpeg 轉碼，請使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 複製代理的「分發」頁籤下的樹複製UI（2021年9月30日後刪除） | [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹工作流](/help/operations/replication.md#publish-content-tree-workflow) 方法 |
+| [!DNL Foundation] | 複製代理管理螢幕的「分發」頁籤和複製API都不能用於複製超過10MB的內容包（2022年9月12日之後實施） | [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹工作流](/help/operations/replication.md#publish-content-tree-workflow) 方法 |
+
+
+| [!DNL Foundation]       |複製代理管理螢幕的「分發」頁籤和複製API都不能用於複製超過10MB的內容包。 而是使用 [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹工作流](/help/operations/replication.md#publish-content-tree-workflow) |
 
 ## 刪除的功能 {#removed-features}
 
