@@ -2,7 +2,7 @@
 title: 建立內容片段模型 — 無頭設定
 description: 通過使用內容片段模型，定義將建立和使用無AEM頭功能提供服務的內容的結構。
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 資訊架構師只會在需要新模型時偶爾執行這些任務。 為了完成本入門指南的目的，我們只需建立一個模型。
 
-1. 登錄AEM到as a Cloud Service並從主菜單選擇 **工具 — >資產 — >內容片段模型**。
+1. 登錄AEM到as a Cloud Service並從主菜單選擇 **工具**。 **常規**。 **內容片段模型**。
 1. 按一下或按一下通過建立配置建立的資料夾。
 
    ![模型資料夾](../assets/models-folder.png)

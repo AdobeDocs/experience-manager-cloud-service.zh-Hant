@@ -1,17 +1,17 @@
 ---
-title: 儲存庫瀏覽器
+title: 存放庫瀏覽器
 seo-title: Repository Browser
 description: 儲存庫瀏覽器為作者、發佈和預覽層上的所有環境提供了儲存庫的只讀視圖。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
+source-git-commit: b4d28a0c827fb07d6f731118078ecdf448e2f58b
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 2%
 
 ---
 
-# 儲存庫瀏覽器 {#repository-browser}
+# 存放庫瀏覽器 {#repository-browser}
 
 >[!NOTE]
 >
@@ -65,6 +65,18 @@ ht-degree: 2%
 可以使用左側導航窗格來對內容層次結構進行修改。 按一下每個資料夾或節點將顯示其子項。 資料夾結構反映Sling資源樹，它是JCR節點樹的超集。
 
 ![repbrowser 3](/help/implementing/developing/tools/assets/repobrowser3.png)
+
+<!-- Alexandru: temporarily commenting this out, please don't delete. 
+
+Alternatively, you can navigate directly to a path by entering it in the **Path** field, as shown below. This will also expand its location in the content hierarcy view on the left.
+
+![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
+
+Whenever you click a folder on the left, the Path field automatically populates with its location. This is useful for copying and pasting the value for later usage.
+
+Additionally, when you click on a folder, the URL is dynamically modified to include the path to that folder. This allows for bookmarkable URLs.
+
+-->
 
 對於發佈，預設情況下儲存庫瀏覽器只顯示公共內容，因此某些資料夾如 `/conf` 或 `/home` 不可見。
 

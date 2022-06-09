@@ -3,9 +3,9 @@ title: 永續GraphQL查詢
 description: 瞭解如何在Adobe Experience Manager as a Cloud Service保留GraphQL查詢以優化效能。 永續查詢可由客戶端應用使用HTTPGET方法來請求，響應可在分發程式和CDN層快取，最終改善客戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: dfcad7aab9dda7341de3dc4975eaba9bdfbd9780
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '766'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 永續查詢是在Adobe Experience Manager()as a Cloud Service伺服器上建立和儲存的AEMGraphQL查詢。 客戶端應用程式可以通過GET請求來請求它們。 在調度器和CDN層可快取GET請求的響應，最終改善請求客戶端應用的效能。 這與標準GraphQL查詢不同，這些查詢使用無法輕鬆快取響應的POST請求執行。
 
-的 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 在(默AEM認情況下) `dev-author`)，以便您開發、test和保留GraphQL查詢 [轉移到生產環境](#transfer-persisted-query-production)。 對於需要自定義的案例(例如， [自定義快取](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries))可以使用API;請參閱中提供的curl示例 [如何永續GraphQL查詢](#how-to-persist-query)。
+的 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 在中可AEM供您開發、test和保留GraphQL查詢 [轉移到生產環境](#transfer-persisted-query-production)。 對於需要自定義的案例(例如， [自定義快取](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries))可以使用API;請參閱中提供的curl示例 [如何永續GraphQL查詢](#how-to-persist-query)。
 
 ## 永續查詢和終結點 {#persisted-queries-and-endpoints}
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 * GraphiQL IDE — 請參見 [保存永續查詢](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
 * curl — 請參見以下示例
-* 其他工具，包括 [郵遞員](https://www.postman.com/)
+* 其他工具，包括 [Postman](https://www.postman.com/)
 
 以下是使用 **捲曲** 命令行工具：
 

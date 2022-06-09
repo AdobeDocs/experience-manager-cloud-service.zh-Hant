@@ -3,22 +3,16 @@ title: 學習將GraphQL與AEM樣例內容和查詢一起使用
 description: 學習將GraphQL與一起AEM使用，通過瀏覽示例內容和查詢來無拘無束地為內容提供服務。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+source-git-commit: 0ff90afca3fb72ac6d0a79793a332c1c2172cd67
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 5%
+source-wordcount: '1430'
+ht-degree: 6%
 
 ---
 
 # 學習將GraphQL與AEM樣例內容和查詢一起使用 {#learn-graphql-with-aem-sample-content-queries}
 
 學習將GraphQL與一起AEM使用，通過瀏覽示例內容和查詢來無拘無束地為內容提供服務。
-
->[!NOTE]
->
->此功能的某些功能在預發行渠道中可用。 特別是與永續查詢相關的功能。
-> 
->查看 [預發行渠道文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 有關如何為您的環境啟用該功能的資訊。
 
 >[!NOTE]
 >

@@ -3,9 +3,9 @@ title: 在中使用GraphiQL IDE AEM
 description: 瞭解如何在Adobe Experience Manager使用GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '960'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此功能的某些功能在預發行渠道中可用。 特別是與永續查詢相關的功能。
-> 
->查看 [預發行渠道文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 有關如何為您的環境啟用該功能的資訊。
-
->[!NOTE]
+>GraphiQL包含在的所有環境AEM中（但只有在配置端點時才可訪問/可見）。
 >
->GraphiQL包含在AEM中，但預設情況下僅在 `dev-authors` 環境。
+>在以前的版本中，安裝GraphiQL IDE需要軟體包。 如果已安裝此程式，則現在可以將其刪除。
 
 >[!NOTE]
 >你一定有 [已配置終端](/help/headless/graphql-api/graphql-endpoint.md) 的 [配置瀏覽器](/help/assets/content-fragments/content-fragments-configuration-browser.md) 在使用GraphiQL IDE之前。
@@ -35,7 +31,7 @@ ht-degree: 0%
 * 運行查詢以立即查看結果
 * 管理 **查詢變數**
 * 保存和管理 **永續查詢**
-* 發佈或取消發佈， **永續查詢** （至/自） `dev-publish`)
+* 發佈或取消發佈， **永續查詢** (例如，至/自 `dev-publish`)
 * 查看 **歷史** 你以前的查詢
 * 使用 **文檔資源管理器** 訪問文檔；幫助您瞭解和瞭解可用的方法。
 
@@ -46,7 +42,7 @@ ht-degree: 0%
 
 ![GraphiQL介面](assets/cfm-graphiql-interface.png "GraphiQL介面")
 
-您可以在開發作者系統上使用GraphiQL，以便客戶端應用程式可以使用GET請求和發佈查詢來請求它們。 對於生產用途，則 [將查詢移至生產環境](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)。 最初發送給生產作者，用於驗證帶有查詢的新創作內容，最後為即時使用發佈生產內容。
+您可以在系統上使用GraphiQL，以便客戶端應用程式可以使用GET請求來請求查詢，並發佈查詢。 對於生產用途，您可以 [將查詢移至生產環境](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)。 最初發送給生產作者，用於驗證帶有查詢的新創作內容，最後為即時使用發佈生產內容。
 
 ## 選擇終結點 {#selecting-endpoint}
 
@@ -100,9 +96,9 @@ GraphiQL IDE還允許您管理 [查詢變數](/help/headless/graphql-api/content
 
 ![GraphQL變數](assets/cfm-graphqlapi-03.png "GraphQL變數")
 
-## 發佈永續查詢（開發 — 發佈） {#publishing-persisted-queries}
+## 發佈永續查詢 {#publishing-persisted-queries}
 
-從清單（左面板）中選擇永續查詢後，可以使用 **發佈** 和 **取消發佈** 操作。 這將激活它們到您的開發發佈環境(`dev-publish`)環境，以便應用程式在測試時輕鬆訪問。
+從清單（左面板）中選擇永續查詢後，可以使用 **發佈** 和 **取消發佈** 操作。 這會將它們激活到發佈環境(例如， `dev-publish`)，以便應用程式在測試時輕鬆訪問。
 
 >[!NOTE]
 >

@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d379c0fe84c566923682e058f212b805a03fb533
+source-git-commit: 4f0ba5de5d1e4c0163c411dd611cb0ca09798dba
 workflow-type: tm+mt
-source-wordcount: '3576'
-ht-degree: 42%
+source-wordcount: '3594'
+ht-degree: 41%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 42%
    + [術語 - 雲端新功能](/help/overview/terminology.md)
    + [AEM as a Cloud Service 架構簡介](/help/overview/architecture.md)
    + [SEO 和 URL 管理](/help/overview/seo-and-url-management.md)
+   + [統一AEMShell上的as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [評估KPI](/help/overview/assessing-kpis.md)
    + [調整KPI](/help/overview/aligning-kpis.md)
    + [選擇正確的團隊](/help/overview/choose-right-team.md)
@@ -33,6 +34,7 @@ ht-degree: 42%
    + 一般AEMaaCS發行說明 {#release-notes}
       + [當前發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [2022.4.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [2022.3.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
          + [2022.1.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
@@ -358,6 +360,7 @@ ht-degree: 42%
       + [Digital Rights Management資產](/help/assets/drm.md)
       + [水印資產](/help/assets/watermark-assets.md)
       + [使用 [!DNL Creative Cloud] API](/help/assets/cc-api-integration.md)
+      + [影像的顏色標籤](/help/assets/color-tag-images.md)
    + 配置、管理和擴展 [!DNL Assets] {#admin}
       + [開發人員文檔和API參考](/help/assets/developer-reference-material-apis.md)
       + [資料夾中繼資料結構](/help/assets/folder-metadata-schema.md)
@@ -612,6 +615,7 @@ ht-degree: 42%
       + [GraphQL終結點](/help/headless/setup/create-api-request.md)
    + 內容片段 {#content-fragments}
       + [概覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+      + [內容片段控制台](/help/headless/content-fragments/content-fragment-console.md)
       + [內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
       + [管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
       + 製作{#authoring}

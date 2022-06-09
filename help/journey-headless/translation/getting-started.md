@@ -2,10 +2,10 @@
 title: 開始無頭AEM翻譯
 description: 瞭解如何組織無頭內容以及翻譯工AEM具的工作。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 因為內容模型定義了內容的結構，所以您需要知道必須翻譯模型的哪些欄位。 通常，您與內容架構師一起定義此項。 要瀏覽內容模型的欄位，請執行以下步驟。
 
-1. 導航到 **工具** -> **資產** -> **內容片段模型**。
+1. 導航到 **工具** -> **常規** -> **內容片段模型**。
 1. 內容片段模型通常儲存在資料夾結構中。 按一下或按一下項目的資料夾。
 1. 列出了模型。 點擊或按一下模型以查看詳細資訊。
    ![內容片段模型](assets/content-fragment-models.png)
@@ -170,7 +170,7 @@ ht-degree: 0%
 
 通常只為實例設定一次連接器。 然後，您可以使用翻譯項目來翻譯您的內容並使其翻譯不斷更新。
 
-## 下一步是什麼 {#what-is-next}
+## 下一步 {#what-is-next}
 
 現在，您完成了這段無頭翻譯之旅，您應該：
 
