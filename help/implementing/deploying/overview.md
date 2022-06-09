@@ -3,9 +3,9 @@ title: '部署至 AEM as a Cloud Service '
 description: '部署至 AEM as a Cloud Service  '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
+source-git-commit: 91361eb49eaf4ec3b89dbd816aecca3c5bfe029f
 workflow-type: tm+mt
-source-wordcount: '3364'
+source-wordcount: '3360'
 ht-degree: 2%
 
 ---
@@ -191,7 +191,7 @@ above appears to be internal, to confirm with Brian -->
 
 客戶通常會包括來自第三方來源的預構建軟體包，如Adobe翻譯合作夥伴等軟體供應商。 建議將這些軟體包托管在遠程儲存庫中，並在 `pom.xml`。 這對於公共儲存庫和具有密碼保護的專用儲存庫是可能的，如中所述 [受密碼保護的maven主要儲存庫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)。
 
-如果無法將包儲存在遠程儲存庫中，則客戶可以將其放置在基於本地檔案系統的Maven儲存庫中，該儲存庫作為項目的一部分提交給SCM，並由任何依賴它的資訊引用。 儲存庫將在下文所示的項目公告中聲明：
+如果無法將包儲存在遠程儲存庫中，則客戶可以將其放置在基於本地檔案系統的Maven儲存庫中，該儲存庫作為項目的一部分提交給SCM，並由任何依賴它的資訊引用。 儲存庫將在項目pom中聲明，如下所示：
 
 
 ```
@@ -309,13 +309,17 @@ above appears to be internal, to confirm with Brian -->
 * **config.publish.dev** (*應用於開發AEM人員發佈服務*)
 * **config.publish.stage** (*應用於AEM臨時發佈服務*)
 * **config.publish.prod** (*應用於AEM生產發佈服務*)
-* **config.dev** (*適用於開發AEM服務)
-* **config.stage** (*適用於臨AEM時服務)
-* **config.prod** (*適用於生AEM產服務)
+* **config.dev** (*適用於開發AEM服務*)
+* **config.stage** (*適用於AEM暫存服務*)
+* **config.prod** (*適用於生AEM產服務*)
 
 使用具有最匹配運行模式的OSGI配置。
 
-在本地開發時，可以傳遞運行模式啟動參數，以指示將使用哪種運行模式OSGI配置。
+本地開發時，運行模式啟動參數， `-r`，用於指定運行模式OSGI配置。
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 

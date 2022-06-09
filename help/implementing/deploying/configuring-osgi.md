@@ -3,9 +3,9 @@ title: 為Adobe Experience Manager as a Cloud Service配置OSGi
 description: '具有機密值和環境特定值的OSGi配置 '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
+source-git-commit: 69fa35f55617746bfd9e8bdf6e1a0490c341ae90
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3240'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,17 @@ OSGi配置檔案的定義位置：
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-遵循cfg.json OSGi配置格式。
+以 `cfg.json` OSGi配置格式。
 
 >[!NOTE]
 >
->以前版本的AEM支援OSGi配置檔案使用不同的檔案格式，如.cfg.、.config和XML sling:OsgiConfig資源定義。 這些格式被cfg.json OSGi配置格式取代。
+>使用不同文AEM件格式(如 `.cfg`。 `.config` 和XML `sling:OsgiConfig` 資源定義。 這些格式由 `.cfg.json` OSGi配置格式。
 
 ## 運行模式解析 {#runmode-resolution}
+
+>[!TIP]
+>
+>AEM 6.x支援自定義運行模式，AEM但as a Cloud Service不支援。 AEMas a Cloud Service [精確的運行模式集](./overview.md#runmodes)。 必須使用以下方法處理AEMas a Cloud Service環境之間OSGi配置的任何變化 [OSGi配置環境變數](#environment-specific-configuration-values)。
 
 通過使用運行模式，特定OSGiAEM配置可以針對特定實例。 要使用運行模式，請在 `/apps/example` （其中示例為項目名稱），格式為：
 
@@ -60,9 +64,35 @@ OSGi配置檔案的定義位置：
 
 >[!NOTE]
 >
->A `config.preview` OSGI配置資料夾 **不能** 以與 `config.publish` 可以聲明資料夾。 相反，預覽層從發佈層的值繼承其OSGI配置。
+>A `config.preview` OSGi配置資料夾 **不能** 以與 `config.publish` 可以聲明資料夾。 相反，預覽層從發佈層的值繼承其OSGi配置。
 
-在本地開發時，可以傳遞運行模式啟動參數以指示使用哪種運行模式OSGI配置。
+本地開發時，運行模式啟動參數， `-r`，用於指定運行模式OSGI配置。
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
+
+### 驗證運行模式
+
+AEM根據環境類型和服務定義了as a Cloud Service的運行模式。 查看 [可用as a Cloud Service運行模AEM式的完整清單](./overview.md#runmodes)。
+
+運行模式指定的OSGi配置值可通過以下方式驗證：
+
+1. 開啟AEM為Cloud Services環境 [開發人員控制台](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
+1. 使用 __莢__ 下拉清單
+1. 選擇 __狀態__ 頁籤
+1. 選擇 __配置__ 從 __狀態轉儲__ 下拉清單
+1. 選擇 __獲取狀態__ 按鈕
+
+結果視圖顯示所選層的所有OSGi元件配置及其適用的OSGi配置值。 這些值可以與項目原始碼中的OSGi配置值AEM交叉引用，該代碼位於 `/apps/example/osgiconfig/config.<runmode(s)>`。
+
+
+要驗證是否應用了相應的OSGi配置值：
+
+1. 在開發人員控制台的配置輸出中
+1. 查找 `pid` 表示要驗證的OSGi配置；這是項目原始碼中OSGi配AEM置檔案的名稱。
+1. Inspect `properties` 清單 `pid` 並驗證要驗證的運行模式的項目原始碼中AEM的OSGi配置檔案與密鑰和值是否匹配。=
+
 
 ## OSGi配置值的類型 {#types-of-osgi-configuration-values}
 
@@ -200,7 +230,7 @@ OSGi配置應為要按環境定義的變數分配佔位符：
 use $[env:ENV_VAR_NAME]
 ```
 
-客戶只應將此技術用於與其自定義代碼相關的OSGI配置屬性；它不能用於覆蓋Adobe定義的OSGI配置。
+客戶只應將此技術用於與其自定義代碼相關的OSGi配置屬性；它不能用於覆蓋Adobe定義的OSGi配置。
 
 >[!NOTE]
 >
@@ -268,12 +298,12 @@ export ENV_VAR_NAME=my_value
 
 ### 作者與發佈配置 {#author-vs-publish-configuration}
 
-如果OSGI屬性要求作者值與發佈值不同：
+如果OSGi屬性需要不同的作者值和發佈值：
 
 * 獨立 `config.author` 和 `config.publish` 必須使用OSGi資料夾，如 [「運行模式解析度」部分](#runmode-resolution)。
 * 建立應使用的獨立變數名稱有兩個選項：
-   * 第一個選項，建議：在所有OSGI資料夾中(例如 `config.author` 和 `config.publish`)聲明以定義不同的值，請使用相同的變數名。 例如
-      `$[env:ENV_VAR_NAME;default=<value>]`，其中預設值與該層（作者或發佈）的預設值相對應。 當通過 [雲管理器API](#cloud-manager-api-format-for-setting-properties) 或通過客戶端，使用本中所述的「service」參數區分層 [API參考文檔](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)。 「service」參數將變數的值綁定到相應的OSGI層。 它可以是「作者」、「發佈」或「預覽」。
+   * 第一個選項，建議：在所有OSGi資料夾中(如 `config.author` 和 `config.publish`)聲明以定義不同的值，請使用相同的變數名。 例如
+      `$[env:ENV_VAR_NAME;default=<value>]`，其中預設值與該層（作者或發佈）的預設值相對應。 當通過 [雲管理器API](#cloud-manager-api-format-for-setting-properties) 或通過客戶端，使用本中所述的「service」參數區分層 [API參考文檔](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)。 「service」參數將變數的值綁定到相應的OSGi層。 它可以是「作者」、「發佈」或「預覽」。
    * 第二個選項，即使用前置詞(如 `author_<samevariablename>` 和 `publish_<samevariablename>`
 
 ### 配置示例 {#configuration-examples}
@@ -282,7 +312,7 @@ export ENV_VAR_NAME=my_value
 
 **示例1**
 
-目的是為OSGI屬性的值 `my_var1` 對於階段和prod相同，但對於三個dev環境中的每個環境不同。
+目的是為OSGi屬性的值 `my_var1` 對於階段和prod相同，但對於三個dev環境中的每個環境不同。
 
 <table>
 <tr>
@@ -295,7 +325,7 @@ export ENV_VAR_NAME=my_value
 </tr>
 <tr>
 <td>
-配置
+config
 </td>
 <td>
 <pre>
@@ -317,7 +347,7 @@ config.dev
 
 **示例2**
 
-目的是為OSGI屬性的值 `my_var1` 對於階段、prod和三個dev環境中的每個環境都不同。 因此，必須調用Cloud Manager API以設定 `my_var1` 每個dev環境。
+目的是為OSGi屬性的值 `my_var1` 對於階段、prod和三個dev環境中的每個環境都不同。 因此，必須調用Cloud Manager API以設定 `my_var1` 每個dev環境。
 
 <table>
 <tr>
