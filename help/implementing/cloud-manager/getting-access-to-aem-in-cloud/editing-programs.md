@@ -2,9 +2,9 @@
 title: 編輯程式
 description: 瞭解如何編輯您的生產程式和沙盒程式，以在您建立它們後調整其選項。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,13 @@ ht-degree: 0%
 
    ![編輯程式選項](assets/edit-program-overview.png)
 
-1. 的 **編輯程式** 頁面顯示兩個頁籤： **常規** 和 **解決方案和附加模組**。 選擇 **常規** 頁籤。
+1. 的 **編輯程式** 的上界。 在 **常規** 頁籤，編輯程式名稱和說明。
 
    * 必須為程式至少選擇一個解決方案。
 
    ![常規頁籤](assets/edit-program-prod1.png)
 
-1. 選擇 **解決方案和附加模組** 頁籤
+1. 在 **解決方案和附加模組** 頁籤。
 
    ![選擇解決方案](assets/edit-prg.png)
 
@@ -46,9 +46,15 @@ ht-degree: 0%
 
    ![編輯載入項](assets/edit-program-add-on.png)
 
+1. 在 **轉到即時設定** 頁籤，修改程式的計畫上線日期。
+
+   ![編輯即時設定](assets/edit-program-go-live.png)
+
+   * 此日期僅供參考，並觸發程式概述頁面上的「開始使用」小部件，以及時提供到AEMas a Cloud Service最佳做法文檔的產品內連結，以與您的旅程保持一致，最終獲得成功且流暢的開始使用體驗。
+
 1. 按一下 **更新** 以保存對程式所做的更改。
 
-更新完成後，如果選定的解決方案已更改，則這些更改將在下次部署後生效。
+只要編輯程式（包括添加或刪除解決方案或載入項），這些更改將在下次部署後生效。
 
 ## 刪除沙盒程式 {#delete-sandbox-program}
 

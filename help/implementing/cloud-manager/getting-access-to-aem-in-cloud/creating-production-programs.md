@@ -2,9 +2,9 @@
 title: '建立生產程式 '
 description: 瞭解如何使用雲管理器建立您自己的生產程式來承載即時流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -34,11 +34,11 @@ ht-degree: 0%
 
    ![雲管理器登錄頁](assets/first_timelogin1.png)
 
-1. 選擇 **為生產設定** 建立程式嚮導中建立生產程式。 您可以接受預設程式名或在選擇 **建立**。
+1. 選擇 **為生產設定** 建立程式嚮導中建立生產程式。 您可以接受預設程式名稱，或在按一下 **繼續**。
 
    ![建立程式嚮導](assets/create-prod1.png)
 
-1. 在下一個頁籤中，選擇要包含在程式中的解決方案。
+1. 在 **解決方案和附加模組** 頁籤。
 
    ![選擇解決方案](assets/setup-prod-select.png)
 
@@ -46,7 +46,16 @@ ht-degree: 0%
 
    ![選擇載入項](assets/setup-prod-commerce.png)
 
-1. 選擇瞭解決方案和載入項後，按一下 **建立**。
+1. 選擇瞭解決方案和載入項後，按一下 **繼續**。
+
+1. 在 **上線日期** 頁籤，輸入計畫生產程式開始運行的日期。
+
+   ![定義計畫上線日期](assets/setup-go-live.png)
+
+   * 此日期可以隨時編輯。
+   * 此日期僅供參考，並觸發程式概述頁面上的「開始使用」小部件，以及時提供到AEMas a Cloud Service最佳做法文檔的產品內連結，以與您的旅程保持一致，最終獲得成功且流暢的開始使用體驗。
+
+1. 按一下&#x200B;**建立**。
 
 您的程式由雲管理器建立，在登錄頁上顯示和選擇。
 
