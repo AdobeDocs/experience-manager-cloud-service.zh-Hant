@@ -2,9 +2,9 @@
 title: Cloud Manager常見問題
 description: 在as a Cloud Service中查找有關Cloud Manager的最常見問題的答AEM案。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
+source-git-commit: 8e02f470b474ad448a5fb80dd3b410d414d78a3b
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,9 @@ ht-degree: 0%
 
 可以。 除安全等級之外的所有代碼質量檢查失敗都是非關鍵度量，因此可以通過擴展結果UI中的項作為部署管道的一部分來繞過它們。
 
-查看文檔 [代碼質量測試](/help/implementing/cloud-manager/code-quality-testing.md) 和 [配置非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 的子菜單。
+具有 [部署經理、項目經理或業務所有者](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) 角色可以覆蓋問題，在這種情況下，管線將繼續，或者他們可以接受問題，在這種情況下，管線將因失敗而停止。
+
+查看文檔 [代碼質量測試](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) 和 [配置非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) 的子菜單。
 
 ## 是否可以將SNAPSHOT用於Maven項目的版本？ {#use-snapshot}
 
