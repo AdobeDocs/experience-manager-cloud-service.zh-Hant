@@ -3,10 +3,10 @@ title: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 description: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a2cdc7c4e9d3dfd52ca76afcf951fa67b279918a
+source-git-commit: e5b0bee3e2e4a10b3015f115d5193c43a1e15c1b
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 4%
+source-wordcount: '821'
+ht-degree: 5%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 4%
 ### [!DNL Sites] 搶鮮版頻道中可用的新功能 {#prerelease-features-sites}
 
 * 各種GraphQL功能
-* 為無頭使用內容片段而優化的新控制台
+* A [新控制台](/help/headless/content-fragments/content-fragment-console.md) 為無頭使用內容片段而優化
 
 ## [!DNL Experience Manager Assets] 作為 [!DNL Cloud Service] {#assets}
 
@@ -89,6 +89,10 @@ Experience Manager Assets目前使用Adobe SenseiAI功能 [區分影像中的顏
 * 複製代理管理螢幕下的「添加樹」選項 **分發頁籤**&#x200B;此前已宣佈為棄用的，將於2022年6月20日或不久後刪除。 應使用樹層次結構複製內容的包 [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹工作流](/help/operations/replication.md#publish-content-tree-workflow)。
 
 * 不建議使用複製代理管理螢幕或複製API來分發大於10 MB（具有屬性的節點，不包括二進位檔案）的內容包，並將在2022年9月12日或之後立即實施。 相反， [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹工作流](/help/operations/replication.md#publish-content-tree-workflow) 必須用於複製這些大型內容包。 在7月，複製代理管理螢幕的 **分發頁籤** 如果嘗試複製這些大型內容包，則無論何時AEM使用複製API複製這些大型內容包，都會在錯誤日誌中進行複製。 9月，警告將替換為錯誤。 請相應地調整您的流程。
+
+### [!DNL Experience Manager] 搶鮮版頻道中可用的新功能 {#prerelease-features-foundation}
+
+* 現AEM在as a Cloud Service與Unified Shell整合，以改進用戶體驗，並將其與所有其它Experience Cloud應用程式統一。 請參閱 [統一AEMShell上的as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 的子菜單。
 
 ## [!DNL Experience Manager] 作為 [!DNL Cloud Service] 基礎安全 {#foundation-security}
 
