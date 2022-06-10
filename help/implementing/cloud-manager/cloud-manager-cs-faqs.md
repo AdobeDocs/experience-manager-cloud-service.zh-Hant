@@ -2,9 +2,9 @@
 title: Cloud Manager常見問題
 description: 在as a Cloud Service中查找有關Cloud Manager的最常見問題的答AEM案。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
+source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 是否可以將Java 11與Cloud Manager生成一起使用？ {#java-11-cloud-manager}
 
-是. 您需要添加 `maven-toolchains-plugin` 為Java 11設定。
+可以。 您需要添加 `maven-toolchains-plugin` 為Java 11設定。
 
 流程已記錄 [這裡](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)。
 
@@ -44,13 +44,13 @@ ht-degree: 0%
 
 ## 代碼質量檢查失敗，我們的部署停滯。 有辦法繞過這張支票嗎？ {#deployment-stuck}
 
-是. 除安全評級之外的所有代碼質量檢查失敗都是非關鍵度量，因此可以通過擴展結果UI中的項來繞過它們。
+可以。 除安全等級之外的所有代碼質量檢查失敗都是非關鍵度量，因此可以通過擴展結果UI中的項作為部署管道的一部分來繞過它們。
 
-查看文檔 [代碼質量測試](/help/implementing/cloud-manager/code-quality-testing.md) 的子菜單。
+查看文檔 [代碼質量測試](/help/implementing/cloud-manager/code-quality-testing.md) 和 [配置非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 的子菜單。
 
 ## 是否可以將SNAPSHOT用於Maven項目的版本？ {#use-snapshot}
 
-是. 對於開發人員部署， Git分支 `pom.xml` 檔案必須包含 `-SNAPSHOT` 在 `<version>` 值。
+可以。 對於開發人員部署， Git分支 `pom.xml` 檔案必須包含 `-SNAPSHOT` 在 `<version>` 值。
 
 這允許在版本未更改時仍安裝後續部署。 在開發人員部署中，不會為maven內部版本添加或生成自動版本。
 
