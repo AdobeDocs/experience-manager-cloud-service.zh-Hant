@@ -2,9 +2,9 @@
 title: 新舊一號
 description: 瞭解針對as a Cloud Service的New Relic One應用程式效能監控(APM)服務AEM以及您如何訪問該服務。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 09049213eaf92830dc0e0d4c0885017c69a5d56e
+source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1612'
 ht-degree: 1%
 
 ---
@@ -46,13 +46,11 @@ New Relic One APM for AEM as a Cloud Service有許多功能。
 
 1. 按一下要為其管理New Relic One用戶的程式。
 
-1. 切換到 **環境** 從 **計畫概述** 的 **環境** 按鈕。
-
-1. 在 **環境** 螢幕中，按一下螢幕頂部旁邊的省略號按鈕 **添加環境** 按鈕
-
-1. 在省略號菜單中，按一下 **管理用戶**。
+1. 在 **環境** 在程式概述頁面上的卡，按一下省略號按鈕並選擇 **管理用戶**。
 
    ![管理用戶](assets/newrelic-manage-users.png)
+
+   * 您還可以訪問 **管理用戶** 選項 **環境** 的子菜單。
 
 1. 在 **管理New Relic用戶** 對話框，輸入要添加的用戶的姓和名，然後按一下 **添加** 按鈕 對要添加的所有用戶重複此步驟。
 
@@ -98,11 +96,11 @@ New Relic One APM for AEM as a Cloud Service有許多功能。
 
 1. 按一下要訪問New Relic One的程式。
 
-1. 切換到 **環境** 從 **計畫概述** 的 **環境** 按鈕。
+1. 在 **環境** 在程式概述頁面上的卡，按一下省略號按鈕並選擇 **開啟新舊檔案**。
 
-1. 在 **環境** 螢幕中，按一下螢幕頂部旁邊的省略號按鈕 **添加環境** 按鈕
+   ![管理用戶](assets/newrelic-access.png)
 
-1. 在省略號菜單中，按一下 **開啟新舊檔案**。
+   * 您還可以通過位於New Relic的頂部的省略號按鈕訪問 **環境** 的子菜單。
 
 1. 在開啟的新瀏覽器頁籤中，登錄到New Relic One。
 
