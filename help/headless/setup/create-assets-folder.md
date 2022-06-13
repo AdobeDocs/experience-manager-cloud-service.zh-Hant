@@ -2,7 +2,7 @@
 title: 建立資產資料夾 — 無頭設定
 description: 使用AEM內容片段模型來定義內容片段的結構，內容片段是無頭內容的基礎。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 65c20293f2b5481d9c7fdd050af4bee5f64a33e6
+source-git-commit: 131225c8303bdd8900a8e22ef51b545da2257f40
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 使用AEM內容片段模型來定義內容片段的結構，內容片段是無頭內容的基礎。 然後，內容片段儲存在資產資料夾中。
 
-##  什麼是資產資料夾？ {#what-is-an-assets-folder}
+## 什麼是資產資料夾？ {#what-is-an-assets-folder}
 
 [現在您已建立內容片段模型](create-content-model.md) 定義您希望為將來的內容片段定義的結構，您可能很興奮地建立一些片段。
 
