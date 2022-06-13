@@ -3,9 +3,9 @@ title: 用AEM於內容片段的GraphQL API
 description: 瞭解如何在GraphQL API中使用Adobe Experience Manager(AEM)as a Cloud Service的內AEM容片段進行無頭內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
+source-git-commit: 71dc0f18dfea348ab291ac1a32f38d6b03ac577c
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2664'
 ht-degree: 1%
 
 ---
@@ -104,6 +104,27 @@ GraphQL使用以下功能：
 您還可以執行以下操作：
 
 * [已快取的永續查詢](/help/headless/graphql-api/persisted-queries.md)
+
+### GraphQL查詢最佳做法(Dispatcher) {#graphql-query-best-practices}
+
+的 [永續查詢](/help/headless/graphql-api/persisted-queries.md) 推薦的方法為：
+
+* 它們被快取
+* 由AEMas a Cloud Service
+
+不建議使用直接查詢和/或POST，因為它們沒有快取，因此在預設實例中， Dispatcher配置為阻止此類查詢。
+
+>[!NOTE]
+>
+>要允許直接查詢和/或POST調度程式中的查詢，您可以要求系統管理員：
+>
+>* 建立名為的Cloud Manager環境變數 `ENABLE_GRAPHQL_ENDPOINT`
+>* 值 `true`
+
+
+>[!NOTE]
+>
+>將來某個時候，可能不建議使用執行直接查詢的功能。
 
 ### GraphiQL IDE {#graphiql-ide}
 
@@ -211,7 +232,7 @@ GraphQL規範提供了一系列指導原則，說明如何建立用於查詢特�
 | 單行文本 | 字串， [字串] |  用於簡單字串，如作者名、位置名等。 |
 | 多行文本 | 字串 |  用於輸出文本，例如文章的正文 |
 | 數量 |  浮起， [浮動] | 用於顯示浮點數和常規數 |
-| 布林值 (Boolean) |  布林函數 |  用於顯示複選框→簡單的true/false語句 |
+| 布林值 |  布林值 |  用於顯示複選框→簡單的true/false語句 |
 | 日期和時間 | 日曆 |  用於以ISO 8086格式顯示日期和時間。 根據所選類型，GraphQL中有三種可用的AEM類型： `onlyDate`。 `onlyTime`。 `dateTime` |
 | 列舉 |  String |  用於從建立模型時定義的選項清單中顯示選項 |
 |  標記 |  [String] |  用於顯示表示中使用的標籤的字串列AEM表 |
@@ -432,7 +453,7 @@ query {
    * 請參閱 [示例查詢 — 有關所有城市的所有資訊](#sample-all-information-all-cities)
 
 * 如果要使用邏輯OR:
-   * 使用 ` _logOp: OR`
+   * use ` _logOp: OR`
    * 請參閱 [示例查詢 — 名稱為「Jobs」或「Smith」的所有人員](#sample-all-persons-jobs-smith)
 
 * 邏輯AND也存在，但是（通常）是隱式的
