@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 00dced631aa293630f923ee1e94f321bbf4cddb9
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 75%
@@ -43,7 +43,7 @@ ht-degree: 75%
    >
    >建立自適應表單時，在 **[!UICONTROL 配置容器]** 的子菜單。
 
-1. 在配置頁上，點擊 **[!UICONTROL 建立]** 建立 [!DNL Adobe Sign]配置在AEM Forms。
+1. 在配置頁上，點擊 **[!UICONTROL 建立]** 建立 [!DNL Adobe Sign] 配置在AEM Forms。
 1. 在 **[!UICONTROL 常規]** 頁籤 **[!UICONTROL 建立Adobe Sign配置]** 頁，指定 **[!UICONTROL 名稱]** ，然後點擊 **[!UICONTROL 下一個]**。 您可以選擇指定 **[!UICONTROL 標題]** 並瀏覽以選擇 **[!UICONTROL 縮略圖]** 的子菜單。
 
 1. 將您目前瀏覽器視窗中的 URL 複製到筆記本。在後續步驟中，需要使用此 URL 設定 [!DNL Adobe Sign] 應用程式和 [!DNL AEM Forms]。
