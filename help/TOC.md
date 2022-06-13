@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4f0ba5de5d1e4c0163c411dd611cb0ca09798dba
+source-git-commit: d634c6f3707b0fef444e0e84945727b52d2ec2c6
 workflow-type: tm+mt
-source-wordcount: '3594'
+source-wordcount: '3599'
 ht-degree: 41%
 
 ---
@@ -605,6 +605,7 @@ ht-degree: 41%
    + [遷移](/help/commerce-cloud/migration.md)
    + [常見問題](/help/commerce-cloud/faq.md)
 + 無頭 {#headless}
+   + [什麼是無頭CMS?](/help/headless/what-is-headless.md)
    + [無頭引AEM言](/help/headless/introduction.md)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)
