@@ -1,13 +1,13 @@
 ---
 title: 影像的顏色標籤
 description: Experience Manager Assets使您能夠區分影像中的顏色，並自動將這些顏色作為標籤應用。 然後，可以使用這些標籤來搜索和篩選影像。
-source-git-commit: 74c13efe99b50ba08d9dc38c246de71482a536a0
+exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
+source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # 影像的顏色標籤 {#color-tag-images}
 
@@ -106,6 +106,24 @@ Experience Manager Assets使用Adobe SenseiAI功能來區分影像中的顏色�
 
    >[!VIDEO](https://video.tv.adobe.com/v/340124)
 
+## DAM中現有影像的顏色標籤 {#color-tags-existing-images}
+
+DAM中已有的影像不會自動進行顏色標籤。 你需要 [!UICONTROL 重新處理資產] 手動為其生成顏色標籤。
+
+要為資產儲存庫中已存在的資產的標籤影像或資料夾（包括子資料夾）添加顏色，請執行以下步驟：
+
+1. 選擇 [!DNL Adobe Experience Manager] 標識，然後從 [!UICONTROL 導航] 的子菜單。
+
+1. 選擇 [!UICONTROL 檔案] 顯示「資產」介面。
+
+1. 導航到要應用顏色標籤的資料夾。
+
+1. 選擇整個資料夾或特定影像。
+
+1. 選擇 ![「重新處理資產」表徵圖](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 重新處理資產] 表徵圖，然後選擇 [!UICONTROL 完整流程] 的雙曲餘切值。
+
+流程完成後，導航到 [!UICONTROL 屬性] 資料夾中任何影像的頁面。 在中可看到自動添加的標籤 [!UICONTROL 智慧顏色標籤] 部分 [!UICONTROL 基本] 頁籤。
+
 
 ## 查看影像的智慧顏色標籤 {#view-color-tags}
 
@@ -167,7 +185,3 @@ Experience Manager Assets使用Adobe SenseiAI功能來區分影像中的顏色�
    可以根據選擇的一種顏色來過濾影像。 將選定顏色作為智慧顏色標籤之一且位於 [覆蓋/佔優閾值%](#manage-color-tagging-settings) 顯示。
 
 1. 在「搜索」欄中按一下x以清除篩選器。
-
-
-
-
