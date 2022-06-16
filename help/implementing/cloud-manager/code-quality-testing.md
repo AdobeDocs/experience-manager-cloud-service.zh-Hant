@@ -2,9 +2,9 @@
 title: 代碼質量測試
 description: 瞭解管道的代碼質量測試如何工作以及它如何提高部署質量。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
+source-git-commit: 8eada48aaef62aa942b98981a3510a2c64ea582b
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1177'
 ht-degree: 1%
 
 ---
@@ -41,6 +41,12 @@ ht-degree: 1%
 * **重要**  — 這些問題導致管道進入暫停狀態。 部署經理、項目經理或業務所有者可以覆蓋問題，在這種情況下，管道將繼續，或者他們可以接受問題，在這種情況下，管道將因失敗而停止。
 
 * **資訊**  — 這些問題純粹是為了提供資訊而提供的，對管道執行沒有影響
+
+>[!NOTE]
+>
+>在僅代碼質量管道中，無法覆蓋「代碼質量」門中的重要故障，因為代碼質量測試步驟是管道中的最後一步。
+
+### 評等 {#ratings}
 
 此步驟的結果將作為 **評級**。
 
