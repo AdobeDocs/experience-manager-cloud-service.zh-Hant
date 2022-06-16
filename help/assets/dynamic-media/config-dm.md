@@ -3,9 +3,9 @@ title: 配置Dynamic MediaCloud Service
 description: 瞭解如何在Adobe Experience Manager as a Cloud Service配置Dynamic Media。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
+source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
 workflow-type: tm+mt
-source-wordcount: '3449'
+source-wordcount: '3537'
 ht-degree: 3%
 
 ---
@@ -270,6 +270,7 @@ Dynamic Media色彩管理允許您對正確的資產進行色彩調整。 通過
 
 **要編輯支援格式的MIME類型：**
 
+1. 以產品管理員身份登錄到Experience Manageras a Cloud Service。
 1. 在Experience Manageras a Cloud Service中，選擇Experience Manageras a Cloud Service徽標以訪問全局導航控制台，然後轉到 **[!UICONTROL 常規>CRXDE Lite]**。
 1. 在左滑軌中，導航到以下位置：
 
@@ -296,6 +297,7 @@ Dynamic Media色彩管理允許您對正確的資產進行色彩調整。 通過
 
 **要為不支援的格式添加MIME類型：**
 
+1. 以產品管理員身份登錄到Experience Manageras a Cloud Service。
 1. 從Experience Manageras a Cloud Service，轉到 **[!UICONTROL 工具>操作> Web控制台]**。
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
@@ -377,6 +379,10 @@ Adobe建議對PDF、PostScript®和PSD檔案使用以下「調諧」作業參數
 
 花崗岩工作流隊列用於非暫態工作流。 在Dynamic Media，它用 **[!UICONTROL Dynamic Media編碼視頻]** 工作流。
 
+>[!NOTE]
+>
+>必須以產品管理員身份登錄到Experience Manageras a Cloud Service才能完成此任務。
+
 **要更新預定義的花崗岩工作流隊列（視頻資產）工作線程：**
 
 1. 導航到 `https://<server>/system/console/configMgr` 並搜索 **隊列：花崗岩工作流隊列**。
@@ -398,6 +404,10 @@ Adobe建議對PDF、PostScript®和PSD檔案使用以下「調諧」作業參數
 #### 更新預定義的花崗岩瞬態工作流隊列工作線程 {#update-granite-transient-workflow-queue-worker-threads-images}
 
 花崗岩傳輸工作流隊列用於 **[!UICONTROL DAM更新資產]** 工作流。 在Dynamic Media，它用於影像和非視頻資產的接收和處理。
+
+>[!NOTE]
+>
+>必須以產品管理員身份登錄到Experience Manageras a Cloud Service才能完成此任務。
 
 **要更新預定義的Granite Transient Workflow隊列工作線程，請執行以下操作：**
 
@@ -423,6 +433,10 @@ Adobe建議對PDF、PostScript®和PSD檔案使用以下「調諧」作業參數
 #### 更新到Dynamic Media Classic(Scene7)伺服器的最大上載連接 {#update-max-s7-upload-connections}
 
 Dynamic Media Classic(Scene7)上載連接設定將Experience Manager資產同步到Dynamic Media Classic伺服器。
+
+>[!NOTE]
+>
+>必須以產品管理員身份登錄到Experience Manageras a Cloud Service才能完成此任務。
 
 **要更新到Dynamic Media Classic(Scene7)伺服器的最大上載連接：**
 
