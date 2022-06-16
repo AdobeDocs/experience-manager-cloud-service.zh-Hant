@@ -2,7 +2,7 @@
 title: 體驗審計測試
 description: 瞭解體驗審核如何驗證您的部署流程並幫助確保部署的更改符合效能、可訪問性、最佳實踐和SEO的基準標準。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
+source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 瞭解體驗審核如何驗證您的部署流程並幫助確保部署的更改符合效能、可訪問性、最佳實踐和SEO的基準標準。
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 體驗審計是Cloud Manager站點生產管道中提供的一項功能，可驗證部署過程並幫助確保部署的更改：
 
@@ -31,7 +31,7 @@ Cloud Manager中的體驗審核可確保最終用戶在站點上的體驗符合�
 
 審計結果是資訊性的，使部署管理器能夠查看當前和以前的分數之間的分數和變化。 這一洞見對於確定當前部署中是否將引入回歸非常重要。
 
-體驗審計由Google燈塔提供支援，後者是谷歌的開源工具，在所有Cloud Manager生產管道中都啟用。
+體驗審計由GoogleLighthouse提供支援，後者是Google的開源工具，在所有Cloud Manager生產管道中都啟用。
 
 ## 瞭解經驗審計結果 {#understanding-experience-audit-results}
 

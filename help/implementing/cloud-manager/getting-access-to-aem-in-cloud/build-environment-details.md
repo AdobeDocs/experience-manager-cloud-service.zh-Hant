@@ -2,7 +2,7 @@
 title: 構建環境
 description: 瞭解Cloud Manager的生成環境以及它如何生成和test您的代碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: b327af40a003b055b8e44688e1b84ac15a8c8439
+source-git-commit: c138f0be15550df85a2ec23b6b551ccba07996c8
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Cloud Manager使用專用的生成環境生成和test您的代碼。
 
 * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
 * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
+* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven在系統級配置 `settings.xml` 檔案，它自動包括使用名為 `adobe-public`。 (請參閱 [Adobe公共Maven儲存庫](https://repo1.maven.org/) )的正平方根。
 
 >[!NOTE]

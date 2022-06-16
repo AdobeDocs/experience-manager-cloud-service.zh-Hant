@@ -2,7 +2,7 @@
 title: 模SPA型路由
 description: 對於中的單頁應AEM用程式，應用程式負責路由。 本文檔介紹了可用的傳送機制、合同和選項。
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 823b6412c9e75fe523e93c4f234ddd9d0ae93f5a
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
@@ -44,7 +44,7 @@ App擁有路由，然後由項目前端開發人員實施。 本文檔介紹特�
 預設情況下，此行為將自動啟用。 要禁用它，SPA應呈現以下元屬性：
 
 ```
-<meta property="cq:pagemodel_router" content="disable"\>
+<meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
 請注意，每條路SPA由都應與中的可訪問資AEM源對應(例如， `/content/mysite/mypage"`) `PageModelManager` 將在選擇路由後自動嘗試載入相應的頁面模型。 但是，如果需要，SPA還可以定義路由的「阻止清單」，這些路由應被 `PageModelManager`:

@@ -2,10 +2,10 @@
 title: Adobe內容包Maven插件
 description: 使用內容包管理插件部署應AEM用程式
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
+source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 5%
+source-wordcount: '1851'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,10 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->包建立現在由 [Apache Jackrabbit FileVault包Maven插件](https://jackrabbit.apache.org/filevault-package-maven-plugin/)。 將構建的包部署AEM到由Adobe內容包Maven插件執行，如此處所述。
+>包 **建立** 現在由 [Apache Jackrabbit FileVault包Maven插件。](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>* 的 `content-package-maven-plugin` 不再支援1.0.2版中的打包。
+>* 本文介紹 **部署** 由Adobe內容包MavenAEM插件執行的。
+
 
 ## 包和項AEM目結構 {#aem-project-structure}
 
@@ -47,7 +50,7 @@ AEMas a Cloud Service遵循最新「項目原型」實施的包管理和項目�
 <plugin>
  <groupId>com.day.jcr.vault</groupId>
  <artifactId>content-package-maven-plugin</artifactId>
- <version>0.0.24</version>
+ <version>1.0.4</version>
  <configuration>
        <!-- parameters and values common to all goals, as required -->
  </configuration>
