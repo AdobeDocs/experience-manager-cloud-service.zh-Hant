@@ -2,7 +2,7 @@
 title: 使用頁面版本
 description: 建立、比較和還原頁面的版本
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -193,9 +193,9 @@ ht-degree: 5%
 
 時間曲線是用於模擬 *出版* 過去特定時間的頁面狀態。
 
->[!NOTE]
+>[!TIP]
 >
->[Timewarp還可與「啟動」一起使用，以預覽將來](/help/sites-cloud/authoring/launches/preview.md)。
+>[Timewarp還可與「啟動」一起使用，以預覽將來。](/help/sites-cloud/authoring/launches/preview.md)
 
 由於內容建立是一個持續和協作的過程，因此Timewarp的目的是允許作者跟蹤已發佈的網站，以便瞭解內容是如何更改的。 此功能使用頁面版本來確定發佈環境的狀態。
 

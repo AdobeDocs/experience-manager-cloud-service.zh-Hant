@@ -3,10 +3,10 @@ title: '部署至 AEM as a Cloud Service '
 description: '部署至 AEM as a Cloud Service  '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 91361eb49eaf4ec3b89dbd816aecca3c5bfe029f
+source-git-commit: 4fcb2ff39f0634cfcdab5500b03441f6db0b474d
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 2%
+source-wordcount: '3358'
+ht-degree: 1%
 
 ---
 
@@ -206,7 +206,7 @@ above appears to be internal, to confirm with Brian -->
 
 任何包含的第三方包都必須遵守本文中AEM描述的as a Cloud Service服務編碼和打包指南，否則，包含它將導致部署失敗。
 
-以下Maven POM XML程式碼片段顯示如何透過 **filevault-package-maven-plugin** Maven增效模組組態，將第三方套件內嵌在專案的「容器」套件中，通常稱為 **** &#39;all&#39;。
+以下馬文 `POM.xml` 代碼段顯示如何將第三方包嵌入項目的「容器」包(通常名為 **「全部」**，通過 **filevault-package-maven-plugin** Maven插件配置。
 
 ```
 ...
@@ -216,26 +216,18 @@ above appears to be internal, to confirm with Brian -->
   <extensions>true</extensions>
   <configuration>
       ...
-      <subPackages>
-           
-          <!-- Include the application's ui.apps and ui.content packages -->
+      <embeddeds>
+
           ...
- 
-          <!-- Include any other extra packages such as AEM WCM Core Components -->
-          <!-- Set the version for all dependencies, including 3rd party packages, in the project's Reactor POM -->
-          <subPackage>
-              <groupId>com.adobe.cq</groupId>
-              <artifactId>core.wcm.components.all</artifactId>
-              <filter>true</filter>
-          </subPackage>
- 
- 
-          <subPackage>
-              <groupId>com.3rdparty.groupId</groupId>
-              <artifactId>core.3rdparty.artifactId</artifactId>
-              <filter>true</filter>
-          </subPackage>
-      <subPackages>
+
+          <!-- Include any other extra packages  -->
+          <embedded>
+              <groupId>com.vendor.x</groupId>
+              <artifactId>vendor.plug-in.all</artifactId>
+              <type>zip</type>
+              <target>/apps/vendor-packages/container/install</target>
+          </embedded>
+      <embeddeds>
   </configuration>
 </plugin>
 ...
