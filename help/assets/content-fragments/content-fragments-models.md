@@ -4,9 +4,9 @@ description: 瞭解內容片段模型如何作為您的無頭內容的基礎AEM�
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2894'
 ht-degree: 5%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 5%
 ## 建立內容片段模型 {#creating-a-content-fragment-model}
 
 1. 導航到 **工具**。 **常規**，然後開啟 **內容片段模型**。
-1. 導航到適合您的資料夾 [配置](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
+1. 導航到適合您的資料夾 [配置或子配置](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
 1. 使用 **建立** 的子菜單。
 
    >[!CAUTION]

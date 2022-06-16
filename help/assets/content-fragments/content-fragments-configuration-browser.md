@@ -4,10 +4,10 @@ description: 瞭解如何在配置瀏覽器中啟用某些內容片段功能，�
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 17%
+source-wordcount: '339'
+ht-degree: 15%
 
 ---
 
@@ -43,9 +43,20 @@ ht-degree: 17%
 >
 >有關詳細資訊，請參閱 [配置瀏覽器：](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)。
 
->[!CAUTION]
+>[!NOTE]
 >
->子配置（嵌套在配置中的配置）支援與內容片段一起使用，但不能用於GraphQL查詢。
+>[子配置](/help/implementing/developing/introduction/configurations.md#configuration-resolution) （嵌套在另一配置中的配置）完全支援用於內容片段、內容片段模型和GraphQL查詢。
+>
+>只要注意：
+>
+>
+>* 在子配置中建立模型後，不能將模型移動或複製到另一個子配置。
+>
+>* GraphQL終結點將（仍然）基於父（根）配置。
+>
+>* 保留的查詢將（仍然）保存為與父（根）配置相關。
+
+
 
 1. 導覽至「 **工具**」、「 **一般**」，然後開啟「 **設定瀏覽器**」。
 
