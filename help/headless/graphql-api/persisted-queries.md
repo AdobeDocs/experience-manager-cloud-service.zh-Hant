@@ -3,10 +3,10 @@ title: 永續GraphQL查詢
 description: 瞭解如何在Adobe Experience Manager as a Cloud Service保留GraphQL查詢以優化效能。 永續查詢可由客戶端應用使用HTTPGET方法來請求，響應可在分發程式和CDN層快取，最終改善客戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 368c2d537d740b2126aa7cce657ca54f7ad6b329
+source-git-commit: 8a9cdc451a5da09cef331ec0eaadd5d3a68b1985
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 1%
+source-wordcount: '1109'
+ht-degree: 0%
 
 ---
 
@@ -53,17 +53,17 @@ ht-degree: 1%
 
 存在多種保留查詢的方法，包括：
 
-* GraphiQL IDE — 請參見 [保存永續查詢](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* GraphiQL IDE — 請參見 [保存永續查詢](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) （首選方法）
 * curl — 請參見以下示例
 * 其他工具，包括 [Postman](https://www.postman.com/)
 
-以下是使用 **捲曲** 命令行工具：
+GraphiQL IDE是 **首選** 用於保留查詢的方法。 使用 **捲曲** 命令行工具：
 
 1. 通過將查詢PUTing到新終結點URL來準備查詢 `/graphql/persist.json/<config>/<persisted-label>`。
 
    例如，建立永續查詢：
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -86,7 +86,7 @@ ht-degree: 1%
 
    例如，檢查是否成功：
 
-   ```xml
+   ```json
    {
      "action": "create",
      "configurationName": "wknd",
@@ -100,7 +100,7 @@ ht-degree: 1%
 
    例如，使用永續查詢：
 
-   ```xml
+   ```shell
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
@@ -109,7 +109,7 @@ ht-degree: 1%
 
    例如，使用永續查詢：
 
-   ```xml
+   ```shell
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -135,7 +135,7 @@ ht-degree: 1%
 
    例如：
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -148,7 +148,7 @@ ht-degree: 1%
 
    例如：
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -161,7 +161,7 @@ ht-degree: 1%
 
    例如：
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -183,44 +183,131 @@ ht-degree: 1%
      }'
    ```
 
+
+## 如何執行永續查詢 {#execute-persisted-query}
+
+要執行永續查詢，客戶端應用程式使用以下語法發出GET請求：
+
+```
+GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
+```
+
+位置 `PERSISTENT_PATH` 是保存永久查詢的縮短路徑。
+
+1. 例如 `wknd` 是配置名和 `plain-article-query` 是永久查詢的名稱。 要執行查詢，請執行以下操作：
+
+   ```shell
+   $ curl -X GET \
+       https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query
+   ```
+
 1. 使用參數執行查詢。
+
+   >[!NOTE]
+   >
+   > 查詢變數和值必須正確 [編碼](#encoding-query-url) 執行永久查詢時。
 
    例如：
 
    ```xml
-   $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   
    $ curl -X GET \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+       "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
+
+   請參閱使用 [查詢變數](#query-variables) 的子菜單。
+
+## 使用查詢變數 {#query-variables}
+
+查詢變數可與永續查詢一起使用。 查詢變數將附加到以分號(`;`)。 多個變數用分號分隔。
+
+該模式如下所示：
+
+```
+<AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
+```
+
+例如，以下查詢包含變數 `activity` 要根據活動值篩選清單：
+
+```graphql
+query getAdventuresByActivity($activity: String!) {
+      adventureList (filter: {
+        adventureActivity: {
+          _expressions: [
+            {
+              value: $activity
+            }
+          ]
+        }
+      }){
+        items {
+          _path
+        adventureTitle
+        adventurePrice
+        adventureTripLength
+      }
+    }
+  }
+```
+
+此查詢可以保留在路徑下 `wknd/adventures-by-activity`。 調用永續查詢時 `activity=Camping` 請求將如下所示：
+
+```
+<AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
+```
+
+請注意 `%3B` 是UTF-8編碼 `;` 和 `%3D` 是 `=`。 查詢變數和任何特殊字元必須是 [已編碼](#encoding-query-url) 執行永續查詢。
+
+## 對查詢URL進行編碼，供應用使用 {#encoding-query-url}
+
+為供應用程式使用，構造查詢變數時使用的任何特殊字元(即分號(`;`)，等號(`=`)，斜線 `/`)必須轉換為使用相應的UTF-8編碼。
+
+例如：
+
+```xml
+curl -X GET \ "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/adventure-by-path%3BadventurePath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fadventures%2Fbali-surf-camp%2Fbali-surf-camp"
+```
+
+URL可分為以下部分：
+
+| URL部分 | 說明 |
+|----------| -------------|
+| `/graphql/execute.json` | 永久查詢終結點 |
+| `/wknd/adventure-by-path` | 持久查詢路徑 |
+| `%3B` | 編碼 `;` |
+| `adventurePath` | 查詢變數 |
+| `%3D` | 編碼 `=` |
+| `%2F` | 編碼 `/` |
+| `%2Fcontent%2Fdam...` | 內容片段的編碼路徑 |
+
+在純文字檔案中，請求URI如下所示：
+
+```plaintext
+/graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
+```
+
+要在客戶端應用中使用永續查詢，AEM應使用無頭客戶端SDK [JavaScript](https://github.com/adobe/aem-headless-client-js)。 [爪哇](https://github.com/adobe/aem-headless-client-java)或 [節點JS](https://github.com/adobe/aem-headless-client-nodejs)。 無頭客戶端SDK將自動對請求中的任何查詢變數進行適當編碼。
 
 ## 將永續查詢傳輸到生產環境  {#transfer-persisted-query-production}
 
-最終，您的永續查詢需要位於生產發佈環境(AEMas a Cloud Service)中，客戶端應用程式可以在該環境中請求它。 要在生產發佈環境上使用永續查詢，需要複製相關的永續樹：
+應始終在AEM Author服務上建立永續查詢，然後將其發佈（複製）到AEM Publish服務。 通常，永續查詢是在較低環境（如本地或開發環境）上建立和測試的。 然後，有必要將永續查詢提升到更高級別的環境，最終使這些查詢在生產AEM發佈環境中可用，供客戶端應用程式使用。
 
-* 初始到生產作者，以通過查詢驗證新創作的內容，
-* 最後，為生活消費發佈產品
+### 包持久性查詢
 
-傳輸永續查詢有幾種方法：
+可將持久查詢內置到 [包AEM](/help/implementing/developing/tools/package-manager.md)。 然AEM後可以下載軟體包並將其安裝到不同環境中。 還AEM可以將包從AEM Author環境複製到AEM Publish環境。
 
-1. 使用包：
-   1. 建立新包定義。
-   1. 包括配置(例如， `/conf/wknd/settings/graphql/persistentQueries`)。
-   1. 生成包。
-   1. 傳輸包（下載/上載或複製）。
-   1. 安裝軟體包。
+要建立包：
 
-1. 使用POST進行複製：
+1. 導航到 **工具** > **部署** > **包**。
+1. 通過點擊建立新包 **建立包**。 這將開啟一個對話框來定義包。
+1. 在「包定義」對話框中，在 **常規** 輸入 **名稱** 例如「wknd-persistent-querys」。
+1. 輸入版本號（如「1.0」）。
+1. 下 **篩選器** 添加新 **篩選**。 使用路徑查找器選擇 `persistentQueries` 資料夾。 例如 `wknd` 配置完整路徑將 `/conf/wknd/settings/graphql/persistentQueries`。
+1. 點擊 **保存** 保存新包定義並關閉對話框。
+1. 點擊 **生成** 按鈕。
 
-   ```xml
-   $ curl -X POST   http://localhost:4502/bin/replicate.json \
-   -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-   -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-   -F cmd=activate
-   ```
+生成包後，您可以：
+* **下載** 包並重新上傳到其他環境。
+* **複製** 點擊包裝 **更多** > **複製**。 這將將包複製到連接的AEM發佈環境。
 
 <!--
 1. Using replication/distribution tool:
@@ -230,23 +317,3 @@ ht-degree: 1%
 * Using a workflow (via workflow launcher configuration):
   1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 -->
-
-查詢配置在生產中的發佈環境上後，同樣的驗證原則將適用，只使用發佈終結點。
-
->[!NOTE]
->
->對於匿名訪問，系統假定ACL允許「每個人」訪問查詢配置。
->
->如果情況不是這樣，它將無法執行。
-
-## 對查詢URL進行編碼，供應用使用 {#encoding-query-url}
-
-為供應用程式使用，需要對URL中的任何分號(&quot;;&quot;)進行編碼。
-
-例如，與執行永續查詢的請求一樣：
-
-```xml
-curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-```
-
-要在客戶端應用中使用永續查詢，AEM應使用無頭客戶端SDK [用AEM於JavaScript的無頭客戶端](https://github.com/adobe/aem-headless-client-js)。
