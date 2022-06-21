@@ -3,7 +3,7 @@ title: 永續GraphQL查詢
 description: 瞭解如何在Adobe Experience Manager as a Cloud Service保留GraphQL查詢以優化效能。 永續查詢可由客戶端應用使用HTTPGET方法來請求，響應可在分發程式和CDN層快取，最終改善客戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8a9cdc451a5da09cef331ec0eaadd5d3a68b1985
+source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 0%
@@ -306,6 +306,7 @@ URL可分為以下部分：
 1. 點擊 **生成** 按鈕。
 
 生成包後，您可以：
+
 * **下載** 包並重新上傳到其他環境。
 * **複製** 點擊包裝 **更多** > **複製**。 這將將包複製到連接的AEM發佈環境。
 
