@@ -4,10 +4,10 @@ description: 瞭解如何在Dynamic Media處理旋轉集。
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 9%
+source-wordcount: '1927'
+ht-degree: 8%
 
 ---
 
@@ -24,6 +24,14 @@ ht-degree: 9%
 >[!NOTE]
 >
 >有關Assets用戶介面的資訊，請參閱 [使用Touch UI管理資產](/help/assets/manage-digital-assets.md) 並將其應用於上載映像集資產的新資料夾。
+
+建立「旋轉集」時，Adobe建議採用以下最佳做法並強制實施以下限制：
+
+| 限制類型 | 最佳實踐 | 已實現的限制 |
+| --- | --- | --- |
+| 每2D集的最大行/列數 | 每組12-18頁圖片 | 1000 |
+
+另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md)。
 
 ## 快速啟動：旋轉集 {#quick-start-spin-sets}
 
@@ -108,6 +116,14 @@ ht-degree: 9%
 >[!NOTE]
 >
 >影像在自旋集中出現的順序。 請務必訂購它們，使旋轉為360°的平滑視圖。
+
+建立「旋轉集」時，Adobe建議採用以下最佳做法並強制實施以下限制：
+
+| 限制類型 | 最佳實踐 | 已實現的限制 |
+| --- | --- | --- |
+| 每2D集的最大行/列數 | 每組12-18頁圖片 | 1000 |
+
+另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md)。
 
 **要建立旋轉集：**
 

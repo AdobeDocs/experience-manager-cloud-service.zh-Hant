@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d634c6f3707b0fef444e0e84945727b52d2ec2c6
+source-git-commit: 181a2d63972cc1d9d6c2a621771d28008114f763
 workflow-type: tm+mt
-source-wordcount: '3599'
+source-wordcount: '3602'
 ht-degree: 41%
 
 ---
@@ -423,6 +423,7 @@ ht-degree: 41%
       + [交付Dynamic Media資產](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [在Dynamic Media激活熱鏈路保護](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D 支援](/help/assets/dynamic-media/assets-3d.md)
+      + [Dynamic Media限制](/help/assets/dynamic-media/limitations.md)
       + [影像集](/help/assets/dynamic-media/image-sets.md)
       + [全景影像](/help/assets/dynamic-media/panoramic-images.md)
       + [混合媒體集](/help/assets/dynamic-media/mixed-media-sets.md)

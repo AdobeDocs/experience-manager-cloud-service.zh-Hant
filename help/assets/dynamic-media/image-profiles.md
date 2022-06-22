@@ -4,9 +4,9 @@ description: 瞭解如何建立包含非銳化蒙版設定和智慧裁剪或智�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '3234'
+source-wordcount: '3271'
 ht-degree: 7%
 
 ---
@@ -54,6 +54,14 @@ ht-degree: 7%
 
 ## 裁剪選項 {#crop-options}
 
+在映像上實施Smart Crop時，Adobe建議採用以下最佳做法並強制實施以下限制：
+
+| 限制類型 | 最佳實踐 | 已實現的限制 |
+| --- | --- | --- |
+| 每個映像的智慧作物數 | 5 | 100 |
+
+另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md)。
+
 <!-- CQDOC-16069 for the paragraph directly below -->
 
 智慧裁剪坐標與縱橫比相關。 對於影像配置檔案中的智慧裁剪設定，如果影像配置檔案中添加的尺寸的長寬比相同，則向Dynamic Media發送相同的長寬比。 Adobe建議您使用相同的裁剪區域。 這樣可確保對「影像配置檔案」中使用的不同尺寸沒有影響。
@@ -66,7 +74,7 @@ ht-degree: 7%
 >
 >Adobe建議您複查所有生成的作物和色板，以確保它們與您的品牌和價值相適當且相關。
 
-| 選項 | 何時使用 | 說明 |
+| 選項 | 使用時機 | 說明 |
 | --- | --- | --- |
 | **[!UICONTROL 像素裁切]** | 僅基於尺寸批量裁剪影像。 | 從 **[!UICONTROL 裁剪選項]** 下拉清單，選擇 **[!UICONTROL 像素裁剪]**。<br>要從影像的兩側裁剪，請輸入要從影像的任何一側或每一側裁剪的像素數。 剪切的影像量取決於影像檔案中的ppi（像素/英吋）設定。<br>「影像輪廓」像素裁剪按以下方式呈現：<br>·值為「上」、「下」、「左」和「右」。<br>·左上角 `0,0` 像素裁剪是從那裡計算的。<br>·裁剪起點：左為X，上為Y<br>·水準計算：原始影像的水準像素大小減左後減右。<br>·垂直計算：垂直像素高度減去頂部，然後減去底部。<br>例如，假設您有4000 x 3000像素的影像。 您使用值：上=250，下=500，左=300，右=700。<br>從左上角(300,250)以（4000-300-700、3000-250-500或3000,2250）的填充空間作物。 |
 | **[!UICONTROL 智慧型裁切]** | 基於視覺焦點批量裁剪影像。 | Smart Crop利用Adobe Sensei人工智慧的力量，快速實現影像批量裁剪的自動化。 Smart Crop自動檢測任何影像中的焦點並將其裁剪到焦點，以獲得預期的興趣點，而不管螢幕大小。<br>從 **[!UICONTROL 裁剪選項]** 下拉清單，選擇 **[!UICONTROL 智慧裁剪]**，然後在右側 **[!UICONTROL 響應影像裁剪]**，啟用（開啟）該功能。<br>預設斷點大小(**[!UICONTROL 大]**。 **[!UICONTROL 中]**。 **[!UICONTROL 小]**)涵蓋大多數影像在移動和平板電腦設備、台式機和橫幅上使用的所有大小。 如果需要，可編輯「大」(Large)、「中」(Medium)和「小」(Small)的預設名稱。<br>要添加更多斷點，請選擇 **[!UICONTROL 添加裁剪]**;要刪除裁剪，請選擇「垃圾桶」表徵圖。 |
@@ -82,11 +90,11 @@ ht-degree: 7%
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | 是 |
 | EPS |  |  |  |  | 否 |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | 是；動畫GIF的第一幀用於再現。 不能配置或更改第一個幀。 |
-| JPEG | `.jpg`與`.jpeg` | image/jpeg | sRGB | 15 GB | 是 |
+| JPEG | `.jpg` 和 `.jpeg` | image/jpeg | sRGB | 15 GB | 是 |
 | PNG | `.png` | image/png | sRGB | 15 GB | 是 |
 | PSD | `.psd` | image/vnd.adobe.photoshop | sRGB<br>CMYK | 2 GB | 是 |
 | SVG |  |  |  |  | 否 |
-| TIFF | `.tif`與`.tiff` | image/tiff | sRGB<br>CMYK | 4 GB | 是 |
+| TIFF | `.tif` 和 `.tiff` | image/tiff | sRGB<br>CMYK | 4 GB | 是 |
 | WebP/動畫WebP |  |  |  |  | 否 |
 
 ## 建立Dynamic Media映像配置檔案 {#creating-image-profiles}
@@ -173,7 +181,7 @@ ht-degree: 7%
 
 **要全局應用Dynamic Media映像配置檔案：**
 
-1. 執行下列操作之一：
+1. 執行下列任一項作業：
 
    * 導航到 `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` 並應用相應的配置檔案，然後選擇 **[!UICONTROL 保存]**。
 

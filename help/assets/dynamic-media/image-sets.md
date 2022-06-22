@@ -4,9 +4,9 @@ description: 瞭解如何在Dynamic Media處理影像集。
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2155'
 ht-degree: 5%
 
 ---
@@ -28,6 +28,15 @@ ht-degree: 5%
 >[!NOTE]
 >
 >有關Assets用戶介面的資訊，請參閱 [使用Touch UI管理資產](/help/assets/manage-digital-assets.md)。
+
+建立映像集時，Adobe建議採用以下最佳做法並強制實施以下限制：
+
+| 資產 — 限制類型 | 最佳實踐 | 已實現的限制 | 2022年12月31日限額變動 |
+| --- | --- | --- | --- |
+| **影像集**  — 每個集的重複資產數 | 無重複項 | 100 | 20 |
+| **影像集**  — 每個集的最大影像數 | 每組5-10頁影像 | 1000 |
+
+另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md)。
 
 ## 快速啟動：影像集 {#quick-start-image-sets}
 
@@ -126,6 +135,15 @@ ht-degree: 5%
 >[!NOTE]
 >
 >檔案名中具有「，」（逗號）的資產不支援映像集。
+
+建立映像集時，Adobe建議採用以下最佳做法並強制實施以下限制：
+
+| 資產 — 限制類型 | 最佳實踐 | 已實現的限制 | 2022年12月31日限額變動 |
+| --- | --- | --- | --- |
+| **影像集**  — 每個集的重複資產數 | 無重複項 | 100 | 20 |
+| **影像集**  — 每個集的最大影像數 | 每組5-10頁影像 | 1000 |
+
+另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md)。
 
 **要建立映像集：**
 

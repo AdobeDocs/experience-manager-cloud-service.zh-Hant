@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: cca950b0a4eed60f82d65779766405ed216111e3
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2522'
 ht-degree: 4%
 
 ---
@@ -135,6 +135,8 @@ Dynamic Media常規設定僅供經驗豐富的網站開發人員和程式設計�
 | **[!UICONTROL 錨點]** | 指定如何將影像定位到從PSD檔案生成的分層合成生成的模板中。 預設情況下，錨點為中心。 中心錨點允許替換影像最好地填充相同的空間，而不管替換影像的長寬比。 當引用模板並使用參數替換時，具有不同方面的影像可替換此影像，有效地佔用了相同的空間。 如果應用程式需要替換影像來填充模板中分配的空間，請更改為其他設定。 |
 
 ### PDF頁籤 {#pdf-tab}
+
+要考慮提取的PDF的最大頁數為5000，用於新上載。 到2022年12月31日，此限制將改為100頁。 另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md)。
 
 您可以選擇柵格化檔案、提取搜索詞和連結、設定解析度並選擇顏色空間。
 
