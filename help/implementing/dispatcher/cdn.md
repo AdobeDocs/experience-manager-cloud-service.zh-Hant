@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
+source-git-commit: 472a4311372ce9a01730f7ced6d4b26018aae4b9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '993'
+ht-degree: 7%
 
 ---
 
@@ -72,10 +72,18 @@ ht-degree: 0%
 
 在接受即時通信之前，您應該向Adobe的客戶支援驗證端到端通信路由是否正常運行。
 
-獲取 `X-AEM-Edge-Key`，您可以test請求已正確路由，如下所示：
+獲取 `X-AEM-Edge-Key`，您可以test請求已正確路由，如下所示。
+
+在Linux中：
 
 ```
-curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
+```
+
+在Windows中：
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
 
 請注意，使用您自己的CDN時，無需在雲管理器中安裝域和證書。 AdobeCDN中的路由將使用預設域完成 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
