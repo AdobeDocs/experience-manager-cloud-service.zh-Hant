@@ -4,7 +4,7 @@ description: 瞭解如何在Dynamic Media處理旋轉集。
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
 source-wordcount: '1927'
 ht-degree: 8%
@@ -27,7 +27,7 @@ ht-degree: 8%
 
 建立「旋轉集」時，Adobe建議採用以下最佳做法並強制實施以下限制：
 
-| 限制類型 | 最佳實踐 | 已實現的限制 |
+| 限制類型 | 最佳實踐 | 強加的限制 |
 | --- | --- | --- |
 | 每2D集的最大行/列數 | 每組12-18頁圖片 | 1000 |
 
@@ -119,7 +119,7 @@ ht-degree: 8%
 
 建立「旋轉集」時，Adobe建議採用以下最佳做法並強制實施以下限制：
 
-| 限制類型 | 最佳實踐 | 已實現的限制 |
+| 限制類型 | 最佳實踐 | 強加的限制 |
 | --- | --- | --- |
 | 每2D集的最大行/列數 | 每組12-18頁圖片 | 1000 |
 

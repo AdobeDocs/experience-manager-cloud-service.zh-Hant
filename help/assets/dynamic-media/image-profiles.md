@@ -4,9 +4,9 @@ description: 瞭解如何建立包含非銳化蒙版設定和智慧裁剪或智�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
-source-wordcount: '3271'
+source-wordcount: '3277'
 ht-degree: 7%
 
 ---
@@ -56,9 +56,9 @@ ht-degree: 7%
 
 在映像上實施Smart Crop時，Adobe建議採用以下最佳做法並強制實施以下限制：
 
-| 限制類型 | 最佳實踐 | 已實現的限制 |
-| --- | --- | --- |
-| 每個映像的智慧作物數 | 5 | 100 |
+| 限制類型 | 最佳實踐 | 強加的限制 | 2022年12月31日變更上限 |
+| --- | --- | --- | --- |
+| 每個映像的智慧作物數 | 5 | 100 | 20 |
 
 另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md)。
 

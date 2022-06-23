@@ -4,9 +4,9 @@ description: 瞭解如何在Dynamic Media處理影像集。
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
-source-wordcount: '2155'
+source-wordcount: '2135'
 ht-degree: 5%
 
 ---
@@ -31,10 +31,10 @@ ht-degree: 5%
 
 建立映像集時，Adobe建議採用以下最佳做法並強制實施以下限制：
 
-| 資產 — 限制類型 | 最佳實踐 | 已實現的限制 | 2022年12月31日限額變動 |
-| --- | --- | --- | --- |
-| **影像集**  — 每個集的重複資產數 | 無重複項 | 100 | 20 |
-| **影像集**  — 每個集的最大影像數 | 每組5-10頁影像 | 1000 |
+| 限制類型 | 最佳實踐 | 強加的限制 |
+| --- | --- | --- |
+| 每集重複的資產數 | 無重複項 | 20 |
+| 每集的最大影像數 | 每組5-10頁影像 | 1000 |
 
 另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md)。
 
@@ -138,10 +138,10 @@ ht-degree: 5%
 
 建立映像集時，Adobe建議採用以下最佳做法並強制實施以下限制：
 
-| 資產 — 限制類型 | 最佳實踐 | 已實現的限制 | 2022年12月31日限額變動 |
-| --- | --- | --- | --- |
-| **影像集**  — 每個集的重複資產數 | 無重複項 | 100 | 20 |
-| **影像集**  — 每個集的最大影像數 | 每組5-10頁影像 | 1000 |
+| 限制類型 | 最佳實踐 | 強加的限制 |
+| --- | --- | --- |
+| 每集重複的資產數 | 無重複項 | 20 |
+| 每集的最大影像數 | 每組5-10頁影像 | 1000 |
 
 另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md)。
 
