@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2525'
 ht-degree: 4%
 
 ---
@@ -136,7 +136,7 @@ Dynamic Media常規設定僅供經驗豐富的網站開發人員和程式設計�
 
 ### PDF頁籤 {#pdf-tab}
 
-要考慮提取的PDF的最大頁數為5000，用於新上載。 到2022年12月31日，此限制將改為100頁。 另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md)。
+要考慮提取的PDF的最大頁數為5000，用於新上載。 此限制將於2022年12月31日改為100頁(所有PDF)。 另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md)。
 
 您可以選擇柵格化檔案、提取搜索詞和連結、設定解析度並選擇顏色空間。
 
