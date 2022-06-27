@@ -2,9 +2,9 @@
 title: Cloud Manager環境變數
 description: 標準環境變數可通過雲管理器進行配置和管理，並提供給運行時環境，以用於OSGi配置。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 7f8d6afdb5e3aecc90fdeb870eaaa0a5c5d29ca9
+source-git-commit: 4b2ea300f61ad7d1218a984f7238365c5b170a8e
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '879'
 ht-degree: 0%
 
 ---
@@ -96,9 +96,10 @@ ht-degree: 0%
 
 環境變數可以 `pom.xml` 更安全、更靈活的配置。 例如，密碼無需硬編碼，您的配置可以根據環境變數中的值進行調整。
 
-您可以分別通過XML訪問環境變數和機密，如下所示。
+您可以通過XML訪問環境變數和機密，如下所示。
 
 * `${env.VARIABLE_NAME}`
-* `${secret.SECRET_NAME}`
 
 查看文檔 [設定項目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) 例如，如何在 `pom.xml` 的子菜單。
+
+查看 [正式Maven檔案](https://maven.apache.org/settings.html#quick-overview) 的子菜單。
