@@ -3,9 +3,9 @@ title: 配置Dynamic MediaCloud Service
 description: 瞭解如何在Adobe Experience Manager as a Cloud Service配置Dynamic Media。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
+source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
 workflow-type: tm+mt
-source-wordcount: '3537'
+source-wordcount: '3574'
 ht-degree: 3%
 
 ---
@@ -272,6 +272,9 @@ Dynamic Media色彩管理允許您對正確的資產進行色彩調整。 通過
 
 1. 以產品管理員身份登錄到Experience Manageras a Cloud Service。
 1. 在Experience Manageras a Cloud Service中，選擇Experience Manageras a Cloud Service徽標以訪問全局導航控制台，然後轉到 **[!UICONTROL 常規>CRXDE Lite]**。
+
+   如果您沒有訪問CRXDE Lite的權限，請參閱 [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md)。
+
 1. 在左滑軌中，導航到以下位置：
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -326,6 +329,8 @@ Dynamic Media色彩管理允許您對正確的資產進行色彩調整。 通過
 
 1. 返回到具有開啟的Experience Manageras a Cloud Service控制台的瀏覽器頁籤。
 1. 從Experience Manageras a Cloud Service，轉到 **[!UICONTROL 工具>常規>CRXDE Lite]**。
+
+   如果您沒有訪問CRXDE Lite的權限，請參閱 [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md)。
 
    ![工具>常規>CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
@@ -382,6 +387,8 @@ Adobe建議對PDF、PostScript®和PSD檔案使用以下「調諧」作業參數
 >[!NOTE]
 >
 >必須以產品管理員身份登錄到Experience Manageras a Cloud Service才能完成此任務。
+
+如果您沒有訪問OSGi的權限，請參閱 [OSGi配置](/help/implementing/developing/components/overview.md#osgi-configuration)。
 
 **要更新預定義的花崗岩工作流隊列（視頻資產）工作線程：**
 
