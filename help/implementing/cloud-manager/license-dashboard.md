@@ -1,13 +1,13 @@
 ---
 title: 許可證儀表板
 description: Cloud Manager提供了一個儀表板，可以輕鬆查看您的組織或租戶可用的AEMaaCS產品權利。
-source-git-commit: 82b4a4c8da9f42de08c19eb3caf25ff3a1bad4d4
+exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
+source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '782'
 ht-degree: 1%
 
 ---
-
 
 # 許可證儀表板 {#license-dashboard}
 
@@ -57,13 +57,15 @@ Cloud Manager許可證儀表板可方便地訪問以下資訊：
 
 內容請求是進入AEM Sites或任何客戶提供的快取系統（例如內容傳遞網路）以HTML格式作為頁面視圖或JSON格式作為API調用來傳遞內容或資料的請求。
 
-在第一快取系統的入口處測量每個頁面視圖或每五個API調用的一個內容請求以接收內容請求。
+在第一快取系統的入口處測量每個頁面視圖或每五個API調用的一個內容請求以接收內容請求。 內容請求僅根據生產環境計算。
 
 內容請求排除由Adobe發起或代表其發起的僅用於提供產品和服務的請求或活動。 Adobe識別的來自與普通搜索引擎和社交媒體服務相關的機器人、爬蟲和蜘蛛的用戶代理通信也被排除。
 
 ### Adobe Experience Manager如何衡量內容請求？ {#how-are-content-requests-measured}
 
-在Cloud Service中跟蹤內容請求。 CDN內置到as a Cloud ServiceAEM跟蹤有效HTML和JSON請求。 還AEM制定了排除知名bot的規則，包括定期訪問網站以更新搜索索引或服務的知名服務。
+內容請求在AEMas a Cloud Service的邊緣伺服器上跟蹤。 源通信不計入內容請求。 CDN內置到as a Cloud ServiceAEM跟蹤有效HTML和JSON請求。
+
+還AEM制定了排除知名bot的規則，包括定期訪問網站以更新搜索索引或服務的知名服務。
 
 以下是排除的知名服務實例的非詳盡清單。
 
