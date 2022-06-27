@@ -2,9 +2,9 @@
 title: 編輯頁面屬性
 description: 定義頁面的必需屬性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
 workflow-type: tm+mt
-source-wordcount: '1966'
+source-wordcount: '1987'
 ht-degree: 8%
 
 ---
@@ -98,7 +98,8 @@ ht-degree: 8%
 
    * **語言**  — 頁面語言
    * **語言根**  — 如果頁面是語言副本的根，則必須選中
-   * **重定向**  — 指示此頁應自動重定向到的頁
+   * **重定向**  — 指示此頁應自動重定向到的頁面，並帶有HTML `302 Found` 狀態。
+      * **永久重定向**  — 選中後，頁面將重定向到與HTML一起提供的目標路徑 `301 Moved Permanently` 狀態。
    * **設計**  — 指示頁面是在生成站點的頁面導航中顯示還是隱藏
    * **別名**  — 指定要與此頁一起使用的別名
       * 例如，如果定義的別名 `private` 頁 `/content/wknd/us/en/magazine/members-only`，此頁也可通過 `/content/wknd/us/en/magazine/private`
@@ -158,7 +159,7 @@ ht-degree: 8%
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
-### 個性化 {#personalization}
+### 個人化 {#personalization}
 
 * **ContextHub 組態**
 
