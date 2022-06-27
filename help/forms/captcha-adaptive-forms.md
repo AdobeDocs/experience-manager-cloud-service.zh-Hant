@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
+source-git-commit: 0c303439c879605f1ab0927cf79b132dbb448af5
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 3%
@@ -41,14 +41,14 @@ CAPTCHA(完全自動化公共圖靈test，將電腦和人區分開)是線上交�
 1. 獲取 [reCAPTCHA API密鑰對](https://www.google.com/recaptcha/admin) Google。 它包括一個站點密鑰和一個秘密。
 1. 為雲服務建立配置容器。
 
-   1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
-      * See the [Configuration Browser](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=en#introduction) documentation for more information.
+   1. 轉到 **[!UICONTROL 工具>常規>配置瀏覽器]**。
+      * 查看 [配置瀏覽器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=en#introduction) 的子菜單。
    1. 執行以下操作以啟用雲配置的全局資料夾，或跳過此步驟為雲服務配置建立和配置另一個資料夾。
 
       1. 在配置瀏覽器中，選擇 **[!UICONTROL 全球]** 資料夾和點擊 **[!UICONTROL 屬性]**。
 
-      1. In the Configuration Properties dialog, enable **[!UICONTROL Cloud Configurations]**.
-      1. Tap **[!UICONTROL Save &amp; Close]** to save the configuration and exit the dialog.
+      1. 在「配置屬性」對話框中，啟用 **[!UICONTROL 雲配置]**。
+      1. 點擊 **[!UICONTROL 保存並關閉]** 以保存配置並退出對話框。
    1. 在配置瀏覽器中，按一下 **[!UICONTROL 建立]**。
    1. 在「建立配置」對話框中，指定資料夾的標題並啟用 **[!UICONTROL 雲配置]**。
    1. 點擊 **[!UICONTROL 建立]** 建立為雲服務配置啟用的資料夾。
@@ -57,7 +57,7 @@ CAPTCHA(完全自動化公共圖靈test，將電腦和人區分開)是線上交�
 1. 為reCAPTCHA配置雲服務。
 
    1. 在您的Experience Manager作者實例上，轉到 ![工具–1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**。
-   1. 點擊 **[!UICONTROL reCAPTCHA]**。 將開啟「配置」頁。 Select the configuration container created in the previous step and tap **[!UICONTROL Create]**.
+   1. 點擊 **[!UICONTROL reCAPTCHA]**。 將開啟「配置」頁。 選擇在上一步中建立的配置容器，然後點擊 **[!UICONTROL 建立]**。
    1. 為reCAPTCHA服務指定名稱、站點密鑰和密鑰並點擊 **[!UICONTROL 建立]** 建立雲服務配置。
    1. 在「編輯元件」對話框中，指定在步驟1中獲取的站點和密鑰。 點擊 **[!UICONTROL 保存設定]** 然後點擊 **[!UICONTROL 確定]** 完成配置。
 
@@ -65,7 +65,7 @@ CAPTCHA(完全自動化公共圖靈test，將電腦和人區分開)是線上交�
 
 ## 在自適應Forms中使用驗證碼 {#using-captcha}
 
-To use CAPTCHA in Adaptive Forms:
+要在自適應Forms中使用驗證碼：
 
 1. 在編輯模式下開啟自適應表單。
 
@@ -85,22 +85,22 @@ To use CAPTCHA in Adaptive Forms:
 
 1. 選擇您添加的驗證碼元件並點擊 ![招商](assets/configure-icon.svg) 編輯其屬性。
 1. 指定驗證碼構件的標題。 預設值為 **[!UICONTROL 驗證碼]**。 選擇 **[!UICONTROL 隱藏標題]** 的子菜單。
-1. 從 **[!UICONTROL 驗證碼服務]** 下拉，選擇 **[!UICONTROL 雷卡普查]** 啟用reCAPTCHA服務（如所述） [ReCAPTCHA服務，Google](#google-recaptcha)。 Select a configuration from the Settings drop-down.
-1. Select the type as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. 也可以選擇 **[!UICONTROL 不可見]** 選項，僅在可疑活動時顯示驗證碼挑戰。 受reCAPTCHA標籤保護的標籤顯示在受保護的表單上。
+1. 從 **[!UICONTROL 驗證碼服務]** 下拉，選擇 **[!UICONTROL 雷卡普查]** 啟用reCAPTCHA服務（如所述） [ReCAPTCHA服務，Google](#google-recaptcha)。 從「設定」(Settings)下拉菜單中選擇配置。
+1. 選擇類型為 **[!UICONTROL 正常]** 或 **[!UICONTROL 緊湊]** 用於reCAPTCHA小部件。 也可以選擇 **[!UICONTROL 不可見]** 選項，僅在可疑活動時顯示驗證碼挑戰。 受reCAPTCHA標籤保護的標籤顯示在受保護的表單上。
 
-   ![Google用reCAPTCHA徽章處理](assets/google-recaptcha-v2.png)
+   ![Google受reCAPTCHA徽章保護](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >Do not select **[!UICONTROL Default]** from the Captcha service drop-down as the default Experience Manager CAPTCHA service is deprecated.
+   >不選擇 **[!UICONTROL 預設]** 不建議使用預設Experience ManagerCAPTCHA服務時，從「驗證碼服務」下拉清單中。
 
-1. Save the properties.
+1. 保存屬性。
 
 reCAPTCHA服務在自適應表單上啟用。 您可以預覽表單並查看驗證碼正在工作。
 
-### Show or hide CAPTCHA component based on rules {#show-hide-captcha}
+### 根據規則顯示或隱藏驗證碼元件 {#show-hide-captcha}
 
-You can select to show or hide the CAPTCHA component based on rules that you apply on a component in an Adaptive Form. 按一下元件，選擇 ![編輯規則](assets/edit-rules-icon.svg)，然後點擊 **[!UICONTROL 建立]** 的子菜單。 有關建立規則的詳細資訊，請參閱 [規則編輯器](rule-editor.md)。
+您可以根據在自適應表單中的元件上應用的規則選擇顯示或隱藏CAPTCHA元件。 按一下元件，選擇 ![編輯規則](assets/edit-rules-icon.svg)，然後點擊 **[!UICONTROL 建立]** 的子菜單。 有關建立規則的詳細資訊，請參閱 [規則編輯器](rule-editor.md)。
 
 例如，僅當表單中的「貨幣值」欄位的值大於25000時，CAPTCHA元件才必須顯示在自適應表單中。
 
@@ -150,9 +150,9 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
 
 執行以下步驟以使用 `ValidateCAPTCHA` 使用自定義提交操作驗證驗證碼的API:
 
-1. 添加包含 `ValidateCAPTCHA` 自定義提交操作的API。 For more on custom Submit Actions, see [Create a custom Submit Action for Adaptive Forms](custom-submit-action-form.md).
+1. 添加包含 `ValidateCAPTCHA` 自定義提交操作的API。 有關自定義提交操作的詳細資訊，請參閱 [為自適應Forms建立自定義提交操作](custom-submit-action-form.md)。
 1. 從中選擇自定義提交操作的名稱 **[!UICONTROL 提交操作]** 下拉清單 **[!UICONTROL 提交]** 自適應窗體的屬性。
-1. Tap **[!UICONTROL Submit]**. The CAPTCHA gets validated based on the conditions defined in `ValidateCAPTCHA` API of the custom Submit Action.
+1. 點擊 **[!UICONTROL 提交]**。 根據中定義的條件驗證驗證驗證碼 `ValidateCAPTCHA` 自定義提交操作的API。
 
 **選項2:使用 [!DNL Experience Manager Forms] 在提交表單之前驗證CAPTCHA API以驗證用戶操作上的CAPTCHA**
 
@@ -160,17 +160,17 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
 
 例如，添加 **[!UICONTROL 驗證驗證驗證碼]** 的子菜單。
 
-The following figure illustrates how you can invoke a service on the click of a **[!UICONTROL Validate CAPTCHA]** button:
+下圖說明了如何在按一下時調用服務 **[!UICONTROL 驗證驗證驗證碼]** 按鈕：
 
 ![進行驗證碼驗證](assets/captcha-validation1.gif)
 
 可以調用包含的自定義Servlet `ValidateCAPTCHA` 使用規則編輯器的API，並根據驗證結果啟用或禁用自適應表單的提交按鈕。
 
-Similarly, you can use rule editor to include a custom method to validate CAPTCHA in an Adaptive Form.
+同樣，您可以使用規則編輯器在自適應表單中包含驗證驗證碼查詢的自定義方法。
 
 ### 添加自定義驗證碼服務 {#add-custom-captcha-service}
 
-[!DNL Experience Manager Forms] provides reCAPTCHA as the CAPTCHA service. 但是，您可以添加要在 **[!UICONTROL 驗證碼服務]** 的子菜單。
+[!DNL Experience Manager Forms] 提供reCAPTCHA作為驗證碼服務。 但是，您可以添加要在 **[!UICONTROL 驗證碼服務]** 的子菜單。
 
 下面是向自適應表單添加附加CAPTCHA服務的介面的示例實現：
 
@@ -206,9 +206,9 @@ public interface GuideCaptchaValidator {
 
 `userResponseToken` 指 `g_recaptcha_response` 在解決一個形式的驗證碼後產生的。
 
-### Edit reCAPTCHA service domain {#recaptcha-service-domain}
+### 編輯reCAPTCHA服務域 {#recaptcha-service-domain}
 
-reCAPTCHA服務使用 `https://www.recaptcha.net/` 作為預設域。 You can modify the settings to set `https://www.google.com/` or any custom domain name for loading, rendering, and validating the reCAPTCHA service.
+reCAPTCHA服務使用 `https://www.recaptcha.net/` 作為預設域。 可以修改要設定的設定 `https://www.google.com/` 或用於載入、呈現和驗證reCAPTCHA服務的任何自定義域名。
 
 設定 **[!UICONTROL af.cloudservices.recaptcha.domain]** 屬性 **[!UICONTROL 自適應形式與交互通信Web通道配置]** 指定配置 `https://www.google.com/` 或任何其他自定義域名。 以下JSON檔案顯示示例：
 
