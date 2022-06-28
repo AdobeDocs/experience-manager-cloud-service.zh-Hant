@@ -2,7 +2,7 @@
 title: 使用CRXDE Lite
 description: CRXDE Lite是快速啟AEM動的一部分，您可以訪問和修改瀏覽器中本地開發環境中的儲存庫。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: ae79dbf490c5e8b819c287b3013bbd93cdb6a59f
+source-git-commit: a9c646d24378e67df84c00a4355c692cac85e50b
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 0%
@@ -94,7 +94,7 @@ Top Switcher欄允許您在CRXDE Lite和 [包管理器。](package-manager.md)
 
 的 **複製頁籤** 顯示當前節點的複製狀態。 可以複製和複製當前節點。
 
-###  控制台頁籤 {#console-tab}
+### 控制台頁籤 {#console-tab}
 
 的 **控制台頁籤** 顯示日誌消息。 您可以配置日誌級別、清除控制台、在選定滾動位置固定並啟用/禁用消息顯示。
 
