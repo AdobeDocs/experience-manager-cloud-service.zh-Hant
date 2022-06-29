@@ -4,10 +4,10 @@ description: 將數字資產添加到 [!DNL Adobe Experience Manager] 作為 [!D
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
+source-git-commit: a715594f74187ad61cdea566274723d170fd3783
 workflow-type: tm+mt
-source-wordcount: '2948'
-ht-degree: 0%
+source-wordcount: '3029'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 [!DNL Assets] 提供了以下上載方法。 Adobe建議您在使用上載選項之前瞭解其使用案例和適用性。
 
-| 上載方法 | 何時使用？ | 主要角色 |
+| 上載方法 | 使用時機? | 主要角色 |
 |---------------------|----------------|-----------------|
 | [資產控制台用戶介面](#upload-assets) | 偶爾上載、輕鬆按下和拖動、查找器上載。 不要用於上載大量資產。 | 所有用戶 |
 | [上載API](#upload-using-apis) | 用於上載期間的動態決策。 | 開發人員 |
@@ -155,6 +155,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >將儲存帳戶容器或儲存桶建立為專用，並僅接受來自授權請求的連接。 但是，不支援對入口網路連接的其他限制。
 
+>[!NOTE]
+>
+>外部儲存帳戶可能具有與批量導入工具不同的檔案/資料夾名稱規則。 請參閱 [在批量導入期間處理檔案名](#filename-handling-bulkimport) 的子菜單。
+
+
 ### 配置批量導入工具 {#configure-bulk-ingestor-tool}
 
 要配置批量導入工具，請執行以下步驟：
@@ -216,6 +221,15 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 批量導入資產或資料夾時， [!DNL Experience Manager Assets] 導入輸入源中存在的全部結構。 [!DNL Experience Manager] 遵循資產名稱和資料夾名稱中特殊字元的內置規則，因此這些檔案名需要清理。 對於資料夾名稱和資產名稱，用戶定義的標題保持不變，並儲存在 `jcr:title`。
 
 在批量導入期間， [!DNL Experience Manager] 查找現有資料夾以避免重新導入資產和資料夾，並驗證在進行導入的父資料夾中應用的清理規則。 如果在父資料夾中應用了清除規則，則相同的規則將應用於導入源。 對於新導入，將應用以下簡化規則來管理資產和資料夾的檔案名。
+
+**批量導入中不允許的名稱**
+
+檔案和資料夾名稱中不允許使用以下字元：
+
+* 控制和專用字元（0x00到0x1F、\u0081、\uE000）
+* 以點(.)結尾的檔案或資料夾名稱
+
+在導入過程中，將跳過名稱與這些條件匹配的檔案或資料夾，並標籤為失敗。
 
 **在批量導入中處理資產名稱**
 
@@ -380,7 +394,7 @@ Experience Manager顯示作業歷史記錄。 在「批量導入作業歷史記�
 >[!MORELIKETHIS]
 >
 >* [[!DNL Adobe Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [關於 [!DNL Adobe Asset Link]](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [關於 [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 文件](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [資產上載的技術參考](developer-reference-material-apis.md#asset-upload)
 
