@@ -3,9 +3,9 @@ title: 在中使用GraphiQL IDE AEM
 description: 瞭解如何在Adobe Experience Manager使用GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,33 @@ GraphiQL IDE還允許您管理 [查詢變數](/help/headless/graphql-api/content
 
 ![GraphQL變數](assets/cfm-graphqlapi-03.png "GraphQL變數")
 
+## 管理永續查詢的快取 {#managing-cache}
+
+[永續查詢](/help/headless/graphql-api/persisted-queries.md) 建議在分發程式和CDN層快取這些應用程式，從而最終提高請求客戶端應用程式的效能。 預設AEM情況下，內容傳遞網路(CDN)快取將基於預設生存時間(TTL)失效。
+
+使用GraphQL可以配置HTTP快取標頭，以控制單個永續查詢的這些參數。
+
+1. 的 **標題** 選項可通過永續查詢名稱右側的三個垂直點（左側面板）訪問：
+
+   ![永續查詢HTTP快取頭](assets/cfm-graphqlapi-headers-01.png "永續查詢HTTP快取頭")
+
+1. 選擇此項將開啟 **快取配置** 對話框：
+
+   ![永續查詢HTTP快取頭設定](assets/cfm-graphqlapi-headers-02.png "永續查詢HTTP快取頭設定")
+
+1. 選擇相應的參數，然後根據需要調整值：
+
+   * **快取控制** - **最大年齡**
+快取可以將此內容儲存指定的秒數。 通常是瀏覽器TTL（生存時間）。
+   * **代理控制** - **S最大值**
+與最大使用時間相同，但特別適用於代理快取。
+   * **代理控制** - **過時重新驗證**
+快取在快取響應過時後可繼續提供快取響應，最長可達指定的秒數。
+   * **代理控制** - **失效 — if-error**
+在出現或源錯誤時，快取可以繼續提供快取響應，最長可達指定的秒數。
+
+1. 選擇 **保存** 來保留更改。
+
 ## 發佈永續查詢 {#publishing-persisted-queries}
 
 從清單（左面板）中選擇永續查詢後，可以使用 **發佈** 和 **取消發佈** 操作。 這會將它們激活到發佈環境(例如， `dev-publish`)，以便應用程式在測試時輕鬆訪問。
@@ -103,32 +130,6 @@ GraphiQL IDE還允許您管理 [查詢變數](/help/headless/graphql-api/content
 >[!NOTE]
 >
 >永續查詢的快取的定義 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value}的預設值為2小時（7200秒）。
-
-## 快取永續查詢 {#caching-persisted-queries}
-
-將AEM根據預設生存時間(TTL)使內容分發網路(CDN)快取失效。
-
-此值設定為：
-
-* 7200秒是Dispatcher和CDN的預設TTL;也稱為 *共用快取*
-   * 預設：s-maxage=7200
-* 60是客戶端（例如瀏覽器）的預設TTL
-   * 預設：maxage=60
-
-AEMGraphiQL UI中保留的GraphQL查詢在執行時將使用預設TTL。 如果要更改GraphLQ查詢的TTL，則必須使用API方法保留該查詢。 這包括在命令行界AEM面中使用CURL將查詢過帳。
-
-例如：
-
-```xml
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
-```
-
-的 `cache-control` 可以在建立時間(PUT)或更晚時間(例如，通過實例的POST請求)進行設定。 建立永續查詢時，cache-control是可選的，AEM因為可以提供預設值。 請參閱 [如何永續GraphQL查詢](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)，以示使用curl保存查詢的示例。
 
 ## 複製URL以直接訪問查詢 {#copy-url}
 

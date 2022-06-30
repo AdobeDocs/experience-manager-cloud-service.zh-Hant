@@ -3,9 +3,9 @@ title: 永續GraphQL查詢
 description: 瞭解如何在Adobe Experience Manager as a Cloud Service保留GraphQL查詢以優化效能。 永續查詢可由客戶端應用使用HTTPGET方法來請求，響應可在分發程式和CDN層快取，最終改善客戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 存在多種保留查詢的方法，包括：
 
-* GraphiQL IDE — 請參見 [保存永續查詢](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) （首選方法）
+* GraphiQL IDE — 請參見 [保存永續查詢](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) （首選方法）
 * curl — 請參見以下示例
 * 其他工具，包括 [Postman](https://www.postman.com/)
 
@@ -256,6 +256,45 @@ query getAdventuresByActivity($activity: String!) {
 ```
 
 請注意 `%3B` 是UTF-8編碼 `;` 和 `%3D` 是 `=`。 查詢變數和任何特殊字元必須是 [已編碼](#encoding-query-url) 執行永續查詢。
+
+## 快取永續查詢 {#caching-persisted-queries}
+
+建議保留查詢，因為它們可以在分發程式和CDN層快取，從而最終改善請求客戶端應用程式的效能。
+
+預設AEM情況下，內容傳遞網路(CDN)快取將基於預設生存時間(TTL)失效。
+
+此值設定為：
+
+* 7200秒是Dispatcher和CDN的預設TTL;也稱為 *共用快取*
+   * 預設：s-maxage=7200
+* 60是客戶端（例如瀏覽器）的預設TTL
+   * 預設：maxage=60
+
+如果要更改GraphLQ查詢的TTL，則查詢必須是：
+
+* 管理後保留 [HTTP快取頭 — 從GraphQL IDE](#http-cache-headers)
+* 使用 [API方法](#cache-api)。
+
+### 管理GraphQL中的HTTP快取頭  {#http-cache-headers-graphql}
+
+GraphiQL IDE — 請參見 [保存永續查詢](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+### 從API管理快取 {#cache-api}
+
+這包括在命令行界AEM面中使用CURL將查詢過帳。
+
+例如：
+
+```xml
+curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "https://publish-p123-e456.adobeaemcloud.com/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
+的 `cache-control` 可以在建立時間(PUT)或更晚時間(例如，通過實例的POST請求)進行設定。 建立永續查詢時，cache-control是可選的，AEM因為可以提供預設值。 請參閱 [如何永續GraphQL查詢](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)，以示使用curl保存查詢的示例。
 
 ## 對查詢URL進行編碼，供應用使用 {#encoding-query-url}
 

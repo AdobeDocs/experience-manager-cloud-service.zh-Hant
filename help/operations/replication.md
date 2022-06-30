@@ -2,9 +2,9 @@
 title: 複寫
 description: 分發和排除複製故障。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
+source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1216'
 ht-degree: 1%
 
 ---
@@ -40,25 +40,6 @@ Adobe Experience Manager as a Cloud Service使用 [Sling內容分發](https://sl
 為「以後發佈」選項包括資料夾的子項將調用「發佈內容樹」工作流，本文中介紹了該工作流。
 
 您可以在 [發佈基礎文檔](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)。
-
-### 樹激活 {#tree-activation}
-
->[!NOTE]
->
->此方法應被視為已棄用，並將於2021年9月30日或之後刪除，因為它不會保留狀態，並且比其他方法的可擴充性較差。 Adobe的建議是改用管理發布或工作流方法
-
-要執行樹激活，請執行以下操作：
-
-1. 從「開始」AEM菜單導航到 **工具>部署>分發**
-2. 選擇卡 **發佈**
-3. 一旦進入發佈Web控制台UI, **選擇分發**
-
-   ![分發](assets/publish-distribute.png "分發")
-4. 在路徑瀏覽器中選擇路徑，根據需要選擇添加節點、樹或刪除，然後選擇 **提交**
-
-為獲得最佳效能，使用此功能時請遵循以下准則：
-* 建議一次複製少於100條路徑，並且有500條路徑硬限制。
-* 複製內容的總大小必須低於10 MB。 這隻包括節點和屬性，但不包括任何二進位檔案，包括工作流包和內容包。
 
 ### 發佈內容樹狀工作流程 {#publish-content-tree-workflow}
 
@@ -192,9 +173,12 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 整體 `ReplicationStatus` 僅當複製操作包括至少一個預設處於活動狀態的代理時，才修改資源的。 在上例中，情況並非如此，因為複製只是使用「預覽」代理。 因此，您需要使用 `getStatusForAgent()` 方法，它允許查詢特定代理的狀態。 此方法也適用於「發佈」代理。 如果使用提供的代理執行了任何複製操作，則返回非空值。
 
 
-**複製API路徑和大小限制**
+**複製API容量限制**
 
-建議複製少於100條路徑，其中500條是硬限制。 超過硬限制後，將拋出ReplicationException。 如果應用程式邏輯不需要原子複製，則可以通過將ReplicationOptions.setUseAtomicCalls設定為false來克服此限制，該值將接受任意數目的路徑，但會在內部建立儲存段以保持低於此限制。 每次複製調用傳輸的內容量不得超過10 MB，其中包括節點和屬性，但不包括任何二進位檔案（工作流包和內容包被視為二進位檔案）。
+建議一次複製少於100條路徑，其中500條是硬限制。 超過硬極限， `ReplicationException` 就會被扔掉。
+如果您的應用程式邏輯不需要原子複製，則可以通過設定 `ReplicationOptions.setUseAtomicCalls` 為false，它將接受任意數目的路徑，但在內部建立儲存段以保持在此限制以下。
+
+每個複製調用所傳輸的內容的大小不得超過 `10 MB`。 這包括節點和屬性，但不包括任何二進位檔案（工作流包和內容包被視為二進位檔案）。
 
 ## 疑難排解 {#troubleshooting}
 

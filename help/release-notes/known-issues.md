@@ -2,10 +2,10 @@
 title: 已知問題
 description: 已知的Adobe Experience Manager as a Cloud Service問題
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: 755c0072148ad73486df2ccfed69248b9d73ec2a
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 33%
+source-wordcount: '177'
+ht-degree: 21%
 
 ---
 
@@ -17,9 +17,16 @@ ht-degree: 33%
 
 <!-- 
 ## Platform {#platform}
+-->
 
 ## Sites {#sites}
--->
+
+中的一些已知問題 [!DNL Sites] 為：
+
+* 在GraphQL IDE中，您可以 [管理永續查詢的快取](/help/headless/graphql-api/graphiql-ide.md##managing-cache)。
+   * 在第一次保存時，為標題保存的值將設定為 `0` （而不是預設值） — 如果用戶未更改對話框中的這些值。
+   * 在後續保存時，值會正確保存。
+   * 因此，用戶必須保存兩次頭。
 
 ## [!DNL Assets] {#assets}
 
