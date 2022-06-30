@@ -2,7 +2,7 @@
 title: 建立內容片段模型 — 無頭設定
 description: 通過使用內容片段模型，定義將建立和使用無AEM頭功能提供服務的內容的結構。
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -69,4 +69,4 @@ ht-degree: 0%
 
 >[!TIP]
 >
->有關內容片段模型的完整詳細資訊，請參閱 [內容片段模型文檔](/help/assets/content-fragments/content-fragments-models.md)
+>有關內容片段模型的完整詳細資訊，請參閱 [內容片段模型文檔](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)

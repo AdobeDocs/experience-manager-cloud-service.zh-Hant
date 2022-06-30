@@ -2,10 +2,10 @@
 title: 為元件啟用JSON導出
 description: 元件可適於基於建模器框架生成其內容的JSON導出。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 4%
+source-wordcount: '473'
+ht-degree: 5%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 元件可適於基於建模器框架生成其內容的JSON導出。
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 JSON導出基於 [吊具模型](https://sling.apache.org/documentation/bundles/models.html)的 [Sling模型導出器](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) 框架(它本身依賴 [Jackson批注](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations))。
 
@@ -78,7 +78,7 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 有關詳細資訊，請參閱：
 
-* [資產使用手冊中的內容片段](/help/assets/content-fragments/content-fragments.md)
-* [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+* [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [使用內容片段創作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

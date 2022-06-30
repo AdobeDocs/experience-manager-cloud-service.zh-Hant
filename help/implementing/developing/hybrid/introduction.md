@@ -2,7 +2,7 @@
 title: 介SPA紹和漫遊
 description: 本文介紹了a的概念，SPA並介紹了使用基本應SPA用程式進行創作的過程，並說明它與基礎編AEM輯器的關SPA聯。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1984'
 ht-degree: 1%
@@ -177,7 +177,7 @@ a背後的主要SPA思想是減少對伺服器的調用和對伺服器的依賴�
 
    ![WKND項目主SPA頁的JSON](assets/wknd-json.png)
 
-   編AEM輯器SPA利用 [內AEM容服務](/help/assets/content-fragments/content-fragments.md) 以JSON模型的形式傳遞頁面的整個內容。
+   編AEM輯器SPA利用 [內AEM容服務](/help/sites-cloud/administering/content-fragments/content-fragments.md) 以JSON模型的形式傳遞頁面的整個內容。
 
    通過實現特定的介面，Sling Models為Sling Models提供所需的信SPA息。 JSON資料的傳遞向下委託給每個元件（從頁面、段落、元件等）。
 

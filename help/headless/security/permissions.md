@@ -3,7 +3,7 @@ title: 無頭內容的權限考慮事項
 description: 瞭解與Adobe Experience Manager一起實施無頭項的不同權限和ACL注意事項。 瞭解「作者」和「發佈」環境所需的不同角色和潛在權限級別。
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 要獲得更細的權限，請使用 **權限** 控制台AEM中並更新路徑 `/content/dam` 到更具體的路徑，即 `/content/dam/mycontentfragments`。
 
-最好給這組用戶授予建立和編輯內容片段而不是刪除的權限。 要查看和分配編輯權限，但不要刪除，請參閱 [內容片段 — 刪除注意事項](/help/assets/content-fragments/content-fragments-delete.md)。
+最好給這組用戶授予建立和編輯內容片段而不是刪除的權限。 要查看和分配編輯權限，但不要刪除，請參閱 [內容片段 — 刪除注意事項](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)。
 
 ### 模型編輯器
 

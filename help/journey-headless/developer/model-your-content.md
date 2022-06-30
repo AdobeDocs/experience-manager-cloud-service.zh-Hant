@@ -2,7 +2,7 @@
 title: 如何對內容建模
 description: 在「無頭開發人AEM員之旅」的這一部分，瞭解如何使用內容碎片模型和內容碎片AEM內容建模來為無頭交付內容建模。
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 2%
@@ -270,10 +270,10 @@ tbc...
 
 ## 其他資源 {#additional-resources}
 
-* [使用內容片段](/help/assets/content-fragments/content-fragments.md)  — 內容片段的導入頁
-   * [配置瀏覽器中的內容片段](/help/assets/content-fragments/content-fragments-configuration-browser.md)  — 在配置瀏覽器中啟用內容片段功能
-   * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 建立和編輯內容片段模型
-   * [管理內容片段](/help/assets/content-fragments/content-fragments-managing.md)  — 建立和創作內容片段；本頁將引導您閱讀其他詳細章節
+* [使用內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)  — 內容片段的導入頁
+   * [配置瀏覽器中的內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)  — 在配置瀏覽器中啟用內容片段功能
+   * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)  — 建立和編輯內容片段模型
+   * [管理內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)  — 建立和創作內容片段；本頁將引導您閱讀其他詳細章節
 * [AEMGraphQL架構](access-your-content.md) - GraphQL如何實現模型
 * [樣本內容片段結構](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [無頭入門AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一個短視頻教程系列，概述了使用無AEM頭功能（包括內容建模和GraphQL）

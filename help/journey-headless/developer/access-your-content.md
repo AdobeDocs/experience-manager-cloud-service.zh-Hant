@@ -2,7 +2,7 @@
 title: 如何通過交付API訪AEM問內容
 description: 在「無頭開發AEM人員之旅」的這一部分，瞭解如何使用GraphQL查詢訪問內容片段內容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 1%
@@ -369,10 +369,10 @@ query {
    * [示例查詢 — 單個特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
    * [元資料查詢示例 — 列出標題為GB的獎項的元資料](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
    * [示例查詢 — 具有命名變體的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-* [在配置瀏覽器中啟用內容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [使用內容片段](/help/assets/content-fragments/content-fragments.md)
-   * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
-   * [JSON輸出](/help/assets/content-fragments/content-fragments-json-preview.md)
+* [在配置瀏覽器中啟用內容片段功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
+* [使用內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+   * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [JSON輸出](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
 * [瞭解跨源資源共用(CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
 * [為伺服器端API生成訪問令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [無頭入門AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  — 一個短視頻教程系列，概述了使用無AEM頭功能（包括內容建模和GraphQL）。

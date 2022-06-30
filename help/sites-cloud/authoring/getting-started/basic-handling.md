@@ -2,9 +2,9 @@
 title: 基本處理
 description: 熟悉導航及AEM其基本用途
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
+source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
 workflow-type: tm+mt
-source-wordcount: '2954'
+source-wordcount: '2993'
 ht-degree: 5%
 
 ---
@@ -69,10 +69,11 @@ ht-degree: 5%
 | 主控台 | 目的 |
 |---|---|
 | 專案 | 「項目」控制台可讓您直接訪問項目。 [項目是虛擬儀表板](/help/sites-cloud/authoring/projects/overview.md) 可以用來組建團隊。 然後，您可以讓該團隊訪問資源、工作流和任務，從而允許人員朝著共同的目標工作。 |
-| 網站 | Sites控制台允許您 [建立、查看和管理站點](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) 運行AEM。 通過此控制台，您可以建立、編輯、複製、移動和刪除頁面、啟動工作流和發佈頁面。 |
+| Sites | Sites控制台允許您 [建立、查看和管理站點](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) 運行AEM。 通過此控制台，您可以建立、編輯、複製、移動和刪除頁面、啟動工作流和發佈頁面。 |
 | 體驗片段 | 安 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 是一種獨立體驗，可跨渠道重複使用，並且有各種變化，避免了反複複製和貼上體驗或部分體驗的麻煩。 |
-| 資產 | Assets控制台允許您導入和管理 [影像、視頻、文檔和音頻檔案等數字資產](/help/assets/overview.md)。 然後，在同一實例上運行的任何站點都可以使用這些AEM資產。 您還可以建立和管理 [內容片段](/help/assets/content-fragments/content-fragments.md) 從「資產」控制台。 |
-| 個性化 | 此控制台提供了工具框架 [創作目標內容和呈現個性化體驗。](/help/sites-cloud/authoring/personalization/overview.md) |
+| Assets | Assets控制台允許您導入和管理 [影像、視頻、文檔和音頻檔案等數字資產](/help/assets/overview.md)。 然後，在同一實例上運行的任何站點都可以使用這些AEM資產。 您還可以建立和管理 [內容片段](/help/assets/content-fragments/content-fragments.md) 從「資產」控制台。 |
+| 個人化 | 此控制台提供了工具框架 [創作目標內容和呈現個性化體驗。](/help/sites-cloud/authoring/personalization/overview.md) |
+| 內容片段 | [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) 允許您設計、建立、建立和發佈與頁面無關的內容。 它們使您能夠準備結構化內容，以便在多個位置/多個渠道中使用，並且非常適合於頁面創作和無頭交付。 |
 
 ## 工具面板 {#tools-panel}
 

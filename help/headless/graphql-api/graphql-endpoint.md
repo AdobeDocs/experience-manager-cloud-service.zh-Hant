@@ -3,7 +3,7 @@ title: 管理GraphQL端點AEM
 description: 瞭解如何管理Adobe Experience Manager as a Cloud Service的GraphQL終端節點，以便無頭內容交付。
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: a4f3e55bb3bc39575d43894b9fea1180eaf1a578
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 5%
@@ -22,10 +22,10 @@ ht-degree: 5%
 
 * 全域
    * 可供所有站點使用。
-   * 此終結點可以使用所有站點配置(在 [配置瀏覽器](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser))。
+   * 此終結點可以使用所有站點配置(在 [配置瀏覽器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser))。
    * 如果站點配置之間應共用任何內容片段模型，則應在全局站點配置下建立這些模型。
 * 站點配置：
-   * 對應於在 [配置瀏覽器](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)。
+   * 對應於在 [配置瀏覽器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)。
    * 特定於指定的站點/項目。
    * 特定站點配置的終結點將使用來自該特定站點配置的內容片段模型以及來自全局站點配置的內容片段模型。
 
@@ -52,11 +52,11 @@ ht-degree: 5%
 
 ## 啟用GraphQL終結點 {#enabling-graphql-endpoint}
 
-要啟用GraphQL終結點，您首先需要具有適當的配置。 請參閱 [內容片段 — 配置瀏覽器](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
+要啟用GraphQL終結點，您首先需要具有適當的配置。 請參閱 [內容片段 — 配置瀏覽器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)。
 
 >[!CAUTION]
 >
->如果 [未啟用內容片段模型的使用](/help/assets/content-fragments/content-fragments-configuration-browser.md)，也請參見Wiki頁。 **建立** 選項。
+>如果 [未啟用內容片段模型的使用](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)，也請參見Wiki頁。 **建立** 選項。
 
 要啟用相應端點，請執行以下操作：
 

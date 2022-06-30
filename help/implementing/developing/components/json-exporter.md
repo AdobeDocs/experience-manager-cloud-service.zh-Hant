@@ -2,10 +2,10 @@
 title: Content Services的JSON導出器
 description: Content Services旨在AEM將內容的描述和交付範圍從關注網AEM頁的範圍延伸出來。 它們使用可供任何客戶使用的標準化方法，將內AEM容交付到非傳統網頁的渠道。
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 5%
+source-wordcount: '404'
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Content Services旨在AEM將內容的描述和交付範圍擴展到網頁AEM的焦點之外。
 
-它們使用可供任何客戶使用的標準化方法，將內AEM容交付到非傳統網頁的渠道。 這些渠道可以包括：
+它們使用可供任何客戶使用的標準化方法，將內AEM容交付到非傳統網頁的渠道。 這些渠道可包括：
 
 * 單頁應用程式
 * 本機移動應用程式
@@ -80,7 +80,7 @@ Content Services旨在AEM將內容的描述和交付範圍擴展到網頁AEM的�
 
 有關詳細資訊，請參閱：
 
-* [資產使用手冊中的內容片段](/help/assets/content-fragments/content-fragments.md)
-* [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+* [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [使用內容片段創作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 和 [內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

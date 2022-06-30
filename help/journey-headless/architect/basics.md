@@ -2,7 +2,7 @@
 title: 瞭解內容建模基礎知識
 description: 瞭解使用內容片段為無頭CMS建模內容的基本內容。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 4%
@@ -80,7 +80,7 @@ AEM提供以下資料類型，以便對內容進行建模：
 * 單行文字
 * 多行文字
 * 數量
-* 布林值 (Boolean)
+* 布林值
 * 日期時間
 * 列舉
 * 標記
@@ -143,18 +143,18 @@ AEM提供以下資料類型，以便對內容進行建模：
 
 使用片段引用可以表示這些相互關係，正如您（架構師）、內容作者和無頭應用程式所理解的那樣。
 
-## 下一步是什麼 {#whats-next}
+## 下一步 {#whats-next}
 
 既然你已經學到了基本知識，下一步就是 [瞭解在中建立內容片段模型AEM](model-structure.md)。 這將介紹和討論各種可用參照，以及如何使用「片段參照」(Fragment References)建立結構的級別。
 
 ## 其他資源 {#additional-resources}
 
-* [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+* [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-   * [內容片段模型 — 資料類型](/help/assets/content-fragments/content-fragments-models.md#data-types)
+   * [內容片段模型 — 資料類型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
 * [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 本頁主要基於 **站點** 控制台，但許多/大多數功能也與創作相關 **內容片段** 下 **資產** 控制台。
 
-* [使用內容片段](/help/assets/content-fragments/content-fragments.md)
+* [使用內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)

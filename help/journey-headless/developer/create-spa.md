@@ -2,10 +2,10 @@
 title: 可選 — 如何使用建立單頁應用SPA程式(AEM)
 description: 在此可選的無AEM頭開發人員旅程的繼續中，您將了AEM解如何將無頭交付與傳統的全堆棧CMS功能結合起來，以及如何使用編輯器框架SPA創AEM建可SPA編輯。
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -101,7 +101,7 @@ RemotePage元件允許在中呈現SPA外部AEM。
 
 有關如何使外部可編輯的完SPA整說明AEM，請參見 [額外資源](#additional-resources) 的子目錄。
 
-## 下一步是什麼 {#what-is-next}
+## 下一步 {#what-is-next}
 
 要開始開發您自己的SPA文AEM檔，請查看以下文檔：
 
@@ -126,5 +126,5 @@ RemotePage元件允許在中呈現SPA外部AEM。
 * [編SPA輯器概述](/help/implementing/developing/hybrid/editor-overview.md)  — 編輯器工作方式SPA的詳細資訊
 * [伺服器端呈現](/help/implementing/developing/hybrid/ssr.md)  — 如何配置SSRAEM SPA
 * [參考SPA文檔](/help/implementing/developing/hybrid/reference-materials.md) - JavaScript API引用和指向開源AEMGitHub項SPA目的連結
-* [內容片段](/help/assets/content-fragments/content-fragments.md)  — 如何建立內容片段
+* [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)  — 如何建立內容片段
 * [項AEM目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Maven模板，它建立基於最佳做法的最小化Adobe Experience Manager(AEM)項目，作為您網站的起點

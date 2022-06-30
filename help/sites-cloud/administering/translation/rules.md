@@ -4,7 +4,7 @@ description: 瞭解翻譯規則如何識別需要翻譯的內容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 0c75a367861c9e4c77ee537322fa49330c70db85
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 0%
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 本文檔中描述的翻譯規則僅在以下情況下適用於內容片段： **啟用用於翻譯的內容模型欄位** 選項 [轉換整合框架配置級別。](integration-framework.md#assets-configuration-properties)
 
-如果 **啟用用於翻譯的內容模型欄位** 選項處於活動狀態，AEM將使用 **可翻譯** 欄位 [內容片段模型](/help/assets/content-fragments/content-fragments-models.md#properties) 確定是否要翻譯該欄位並自動建立翻譯規則。 此選項取代您可能建立的任何翻譯規則，不需要干預或其他步驟。
+如果 **啟用用於翻譯的內容模型欄位** 選項處於活動狀態，AEM將使用 **可翻譯** 欄位 [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) 確定是否要翻譯該欄位並自動建立翻譯規則。 此選項取代您可能建立的任何翻譯規則，不需要干預或其他步驟。
 
 如果希望使用翻譯規則來翻譯內容片段， **啟用用於翻譯的內容模型欄位** 必須禁用翻譯整合框架配置中的選項，您需要按照下面概述的步驟建立規則。
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 頁面和資產在JCR儲存庫中以節點表示。 提取的內容是節點的一個或多個屬性值。 轉換規則標識包含要提取內容的屬性。
 

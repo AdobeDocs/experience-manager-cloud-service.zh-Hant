@@ -2,7 +2,7 @@
 title: 無頭AEM
 description: 項AEM目可以採用無頭和無頭的模式，但選擇不是二進位的。 為在AEM一個項目中利用這兩種模型的優點提供了靈活性。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Adobe Experience Manager項目可以採用頭腦式和頭腦式兩種模式，但選擇不是二元的。 為在AEM一個項目中利用這兩種模型的優點提供了靈活性。 本文檔提供並概述了不同的模型，並介紹了整合SPA級別。
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 提AEM供了功能強大的工具，可管理內容的建立和在一個平台中的交付。 這是一種傳統的內容管理「大頭」模式，內容作者和開發人員在同一平台上工作，以向內容消費者提供體驗。
 
@@ -53,18 +53,18 @@ Adobe Experience Manager項目可以採用頭腦式和頭腦式兩種模式，�
    * 和SPA分AEM開存在，不交換資訊。
    * 內容是在兩個獨立的系統中獨立建立、管理和提供的。
 * **第1級：內容片段整合**
-   * [內容片段](/help/assets/content-fragments/content-fragments.md) 用於創AEM建和管理受限內SPA容。
+   * [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) 用於創AEM建和管理受限內SPA容。
    * 將SPA此內容檢索AEM到 [GraphQL API。](/help/headless/graphql-api/content-fragments.md)
    * 某些內容在外部AEM系統中管理，有些在外部系統中管理。
    * 只能在中查看內SPA容。
 * **第2級：嵌SPA入AEM**
-   * [內容片段](/help/assets/content-fragments/content-fragments.md) 用於創AEM建和管理內容SPA。
+   * [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) 用於創AEM建和管理內容SPA。
    * 將SPA此內容檢索AEM到 [GraphQL API。](/help/headless/graphql-api/content-fragments.md)
    * 某些內容在外部AEM系統中管理，有些在外部系統中管理。
    * 內容可在內的上下文中查AEM看。
    * 可在中編輯有限的內AEM容。
 * **第3級：在中嵌入並完SPA全啟AEM用**
-   * [內容片段](/help/assets/content-fragments/content-fragments.md) 用於創AEM建和管理內容SPA。
+   * [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) 用於創AEM建和管理內容SPA。
    * 將SPA此內容檢索AEM到 [GraphQL API。](/help/headless/graphql-api/content-fragments.md)
    * 內容可在內的上下文中查AEM看。
    * 大多數內容都可在內AEM編輯。

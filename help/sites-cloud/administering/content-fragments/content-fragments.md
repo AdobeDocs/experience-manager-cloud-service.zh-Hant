@@ -1,23 +1,20 @@
 ---
 title: 使用內容片段
-description: 瞭解Adobe Experience Manager(AEM)as a Cloud Service中的內容片段如何使您能夠設計、建立、管理和使用與頁面無關的內容，是無頭傳送的理想選擇。
-feature: Content Fragments
-role: User
-exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: bd589f689174f4da20e0f5e73a8786a3dee0f352
+description: 瞭解Adobe Experience Manager(AEM)as a Cloud Service中的內容片段如何使您能夠設計、建立、管理和使用與頁面無關的內容，非常適合於頁面創作和無頭傳送。
+source-git-commit: 6de4120a5b8b312ca1a665b7d7ef7686670c4997
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2068'
 ht-degree: 3%
 
 ---
 
 # 使用內容片段 {#working-with-content-fragments}
 
-使用Adobe Experience Manager(AEM)as a Cloud Service，內容片段允許您設計、建立、策劃和 [發佈頁面無關內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 它們使您能夠準備內容，以便在多個位置/多個渠道中使用，非常適合無頭傳送。
+使用Adobe Experience Manager(AEM)as a Cloud Service，內容片段允許您設計、建立、策劃和 [發佈頁面無關內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 它們使您能夠準備內容，以便在多個位置/多個渠道中使用，非常適合於頁面創作和無頭傳送。
 
 內容片段包含結構化內容：
 
-* 它們基於 [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)，它為生成的片段預定義結構。
+* 它們基於 [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)，它為生成的片段預定義結構。
 * 該結構可以介於以下之間：
    * 基本
       * 例如，單行多行文本欄位。
@@ -34,20 +31,21 @@ ht-degree: 3%
 * 允許您使用元件來管理要傳遞的片段元素
 * 允許批量交付，方法是在用於API交付的頁面上添加多個內容片段核心元件
 
->[!NOTE]
->
->內容片段儲存為 **資產**。 現在，它們主要由 **[內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 控制台，但仍可以從 **資產** 控制台。 本節介紹 **資產** 控制台。
-
 本頁和以下頁介紹建立、配置、維護和使用內容片段的任務：
 
-* [為實例啟用內容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-* [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 啟用、建立和定義模型
-* [管理內容片段](/help/assets/content-fragments/content-fragments-managing.md)  — 建立內容片段；然後編輯、發佈和引用
-* [變體 — 創作片段內容](/help/assets/content-fragments/content-fragments-variations.md)  — 編寫片段內容並建立主檔案的變體
-* [馬爾克當](/help/assets/content-fragments/content-fragments-markdown.md)  — 使用標籤語法
-* [使用關聯內容](/help/assets/content-fragments/content-fragments-assoc-content.md)  — 添加關聯內容
-* [元資料 — 片段屬性](/help/assets/content-fragments/content-fragments-metadata.md)  — 查看和編輯片段屬性
-* 使用 [內容片段與GraphQL一起提供內容](/help/assets/content-fragments/content-fragments-graphql.md) 在您的應用程式中使用。 要幫助處理此問題，可以預覽 [JSON輸出](/help/assets/content-fragments/content-fragments-json-preview.md)。
+* [為實例啟用內容片段功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
+* [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)  — 啟用、建立和定義模型
+* [使用「內容片段」控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)  — 訪問、建立、編輯、發佈和引用您的片段
+* [管理內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)  — 建立內容片段；然後編輯、發佈和引用
+* [變體 — 創作片段內容](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)  — 編寫片段內容並建立主檔案的變體
+* [馬爾克當](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)  — 使用標籤語法
+* [使用關聯內容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)  — 添加關聯內容
+* [元資料 — 片段屬性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)  — 查看和編輯片段屬性
+* 使用內容片段：
+
+   * [頁面創作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+   * [與GraphQL一起，無頭地交付到您的應用程式](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)。
+要幫助此操作，可以預覽 [結構樹](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md) 和 [JSON輸出](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)。
 
 >[!NOTE]
 >
@@ -120,9 +118,11 @@ Content Services旨在AEM將內容的描述和交付範圍從關注網AEM頁的�
 
 內容片段包括：
 
+* A **站點** 的子菜單。
+
 * 儲存為 **資產**:
 
-   * 內容片段（及其變體）可從 **資產** 控制台。
+   * 內容片段（及其變體）可由兩者建立和維護 **內容片段** 控制台和 **資產** 控制台。
    * 在內容片段編輯器中創作和編輯。
 
 * 在 [通過「內容片段」元件進行頁面編輯](/help/sites-cloud/authoring/fundamentals/content-fragments.md) （引用元件）:
@@ -150,7 +150,7 @@ Content Services旨在AEM將內容的描述和交付範圍從關注網AEM頁的�
 
    * 是片段的一部分(請參見 [內容片段的組成部分](#constituent-parts-of-a-content-fragment))。
    * 定義資產的位置。
-   * 請參閱 [將資產插入片段](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) 的子菜單。
+   * 請參閱 [將資產插入片段](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) 的子菜單。
 
    >[!NOTE]
    >
@@ -161,7 +161,7 @@ Content Services旨在AEM將內容的描述和交付範圍從關注網AEM頁的�
    * 連接到片段；但不是碎片的固定部分(請參見 [內容片段的組成部分](#constituent-parts-of-a-content-fragment))。
    * 允許一定的定位靈活性。
    * 在頁面上使用片段時，可以輕鬆使用（如內容）。
-   * 請參閱 [關聯內容](/help/assets/content-fragments/content-fragments-assoc-content.md) 的子菜單。
+   * 請參閱 [關聯內容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) 的子菜單。
 
 * 頁面編輯器的「 **資產** 」瀏覽器可用的資產
 
@@ -183,7 +183,7 @@ Content Services旨在AEM將內容的描述和交付範圍從關注網AEM頁的�
 
    * 文本塊（通常為多行），它們被分隔為單個實體。
 
-   * 在富 [文本](/help/assets/content-fragments/content-fragments-variations.md#rich-text)[](/help/assets/content-fragments/content-fragments-variations.md#markdown) 和標籤下拉模式中，段落可以格式化為標題，在這種情況下，它和以下段落作為一個單位一起組成。
+   * 在富 [文本](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#rich-text)[](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#markdown) 和標籤下拉模式中，段落可以格式化為標題，在這種情況下，它和以下段落作為一個單位一起組成。
 
    * 在頁面創作期間啟用內容控制。
 
@@ -193,7 +193,7 @@ Content Services旨在AEM將內容的描述和交付範圍從關注網AEM頁的�
    * 嵌入片段的段落系統中。
    * 可在 [頁面上使用/引用片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
    * 只能使用片段編輯器將片段添加到、從中刪除或移動到其中。 無法在頁面編輯器中執行這些操作。
-   * 只能使用 [片段編輯器中的RTF格式](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)。
+   * 只能使用 [片段編輯器中的RTF格式](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)。
    * 只能添加到多行文本元素（任何片段類型）。
    * 附於前文（第1款）。
 
@@ -209,7 +209,7 @@ Content Services旨在AEM將內容的描述和交付範圍從關注網AEM頁的�
 
    * 這是片段之外的內容，但與編輯相關。 通常是影像、視頻或其他片段。
    * 將集合中的單個資產添加到頁面編輯器中時，可將其與片段一起使用。 這意味著它們是可選的，具體取決於特定渠道的要求。
-   * 資產 [通過集合關聯片段](/help/assets/content-fragments/content-fragments-assoc-content.md);關聯的集合允許作者在創作頁面時決定要使用哪些資產。
+   * 資產 [通過集合關聯片段](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md);關聯的集合允許作者在創作頁面時決定要使用哪些資產。
 
       * 集合可以作為預設內容與片段相關聯，或者由作者在片段創作期間關聯。
       * [資產(DAM)收集](/help/assets/manage-collections.md) 是片段關聯內容的基礎。
@@ -236,7 +236,7 @@ Content Services旨在AEM將內容的描述和交付範圍從關注網AEM頁的�
 
       * 每個內容片段都有一個主實例。
       * 無法刪除主節點。
-   * 在片段編輯器中，可訪問首頁 **[變體](/help/assets/content-fragments/content-fragments-variations.md)**。
+   * 在片段編輯器中，可訪問首頁 **[變體](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)**。
    * Master不是這樣的變體，而是所有變體的基礎。
 
 
@@ -246,9 +246,9 @@ Content Services旨在AEM將內容的描述和交付範圍從關注網AEM頁的�
    * 建立為 **母版**，但可根據需要編輯；變異本身之間通常存在內容重疊。
    * 可在片段創作期間定義。
    * 儲存在片段中，以幫助避免內容副本的分散。
-   * 變體可以是 [同步](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) 的子目錄。
-   * 可以 [摘要](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) 快速將文本截斷為預定義長度。
-   * 在 [變體](/help/assets/content-fragments/content-fragments-variations.md) 頁籤。
+   * 變體可以是 [同步](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#synchronizing-with-master) 的子目錄。
+   * 可以 [摘要](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#summarizing-text) 快速將文本截斷為預定義長度。
+   * 在 [變體](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md) 頁籤。
 
 ### 使用內容片段創作頁面時的內容 {#in-between-content-when-page-authoring-with-content-fragments}
 
@@ -270,9 +270,9 @@ Content Services旨在AEM將內容的描述和交付範圍從關注網AEM頁的�
 
 * **內容模型**
 
-   * 是 [已使用配置瀏覽器啟用](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
-   * 是 [使用工具建立](/help/assets/content-fragments/content-fragments-models.md)。
-   * 要求 [建立片段](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)。
+   * 是 [已使用配置瀏覽器啟用](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)。
+   * 是 [使用工具建立](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)。
+   * 要求 [建立片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-content-fragments)。
    * 定義片段的結構（標題、內容元素、標籤定義）。
    * 內容模型定義需要一個標題和一個資料元素；其他一切都是可選的。
    * 模型可定義預設內容（如果適用）。

@@ -2,7 +2,7 @@
 title: 使用無頭設備獲得第一次體AEM驗
 description: 在「無頭開發AEM者之旅」的這一部分，您將瞭解實施第一次無頭體驗的步驟AEM，包括規劃考慮事項，還將學習最佳實踐，使您的路徑盡可能順暢。
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '2014'
 ht-degree: 0%
@@ -120,7 +120,7 @@ ht-degree: 0%
 * 利用您的翻譯技術系統提供的所有功能，這些功能可AEM以與翻譯記憶庫整合。
 * 瞭解富媒體內容（如影像和視頻）是否需要本地化。
 
-## 下一步是什麼 {#what-is-next}
+## 下一步 {#what-is-next}
 
 現在，您已完成了「無頭開發AEM者之旅」的這一部分，您應：
 
@@ -149,6 +149,6 @@ ht-degree: 0%
 * [參考AEM線WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  — 此GitHub項目包含突出顯示GraphQL APIAEM的示例應用程式。
 * [Adobe Experience Manager as a Cloud Service建築](/help/overview/architecture.md)  — 體系結構的完整概AEM述
 * [無頭設定](/help/headless/introduction.md#getting-started)  — 快速介紹AEM已熟悉的無頭功能AEM。
-* [建立內容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 內容片段模型技術文檔
-* [建立內容片段](/help/assets/content-fragments/content-fragments.md)  — 有關內容片段的技術文檔
+* [建立內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)  — 內容片段模型技術文檔
+* [建立內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)  — 有關內容片段的技術文檔
 * [使用GraphQL查詢內容](/help/headless/graphql-api/content-fragments.md) - GraphQL API的技術文檔

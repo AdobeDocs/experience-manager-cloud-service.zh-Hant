@@ -3,7 +3,7 @@ title: 用AEM於內容片段的GraphQL API
 description: 瞭解如何在GraphQL API中使用Adobe Experience Manager(AEM)as a Cloud Service的內AEM容片段進行無頭內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 71dc0f18dfea348ab291ac1a32f38d6b03ac577c
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '2664'
 ht-degree: 1%
@@ -152,7 +152,7 @@ GraphQL是強類型API，這意味著資料必須按類型清晰地結構化和�
 
 GraphQL規範提供了一系列指導原則，說明如何建立用於查詢特定實例上的資料的強健API。 要執行此操作，客戶端需要獲取 [架構](#schema-generation)，其中包含查詢所需的所有類型。
 
-對於內容片段，GraphQL架構（結構和類型）基於 **已啟用** [內容片段模型](/help/assets/content-fragments/content-fragments-models.md) 以及資料類型。
+對於內容片段，GraphQL架構（結構和類型）基於 **已啟用** [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) 以及資料類型。
 
 >[!CAUTION]
 >

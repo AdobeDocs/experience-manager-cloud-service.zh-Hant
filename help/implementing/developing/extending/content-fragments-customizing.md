@@ -2,7 +2,7 @@
 title: 自訂和擴充內容片段
 description: 內容片段擴展標準資產。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 1%
@@ -13,13 +13,13 @@ ht-degree: 1%
 
 在Adobe Experience Manager as a Cloud Service，內容片段擴展了標準資產；請參閱：
 
-* [建立和管理內容片段](/help/assets/content-fragments/content-fragments.md) 和 [帶內容片段的頁面創作](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 的子菜單。
+* [建立和管理內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) 和 [帶內容片段的頁面創作](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 的子菜單。
 
 * [管理資產](/help/assets/manage-digital-assets.md) 以獲取有關標準資產的更多資訊。
 
 ## 架構 {#architecture}
 
-基本 [組成部分](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 內容片段的值為：
+基本 [組成部分](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 內容片段的值為：
 
 * A *內容片段*。
 * 由一個或多個 *內容元素*。
@@ -46,13 +46,13 @@ ht-degree: 1%
 
 * 內容片段是資產。
 * 它們使用現有資產功能。
-* They are fully integrated with Assets (admin consoles, etc.).
+* 它們與Assets（管理控制台等）完全整合。
 
 內容片段被視為「站點」功能：
 
 * 在創作頁面時使用它們。
 
-#### Mapping Content Fragments to Assets {#mapping-content-fragments-to-assets}
+#### 將內容片段映射到資產 {#mapping-content-fragments-to-assets}
 
 ![內容片段到資產](assets/content-fragment-to-assets.png)
 
@@ -73,25 +73,25 @@ ht-degree: 1%
 
 #### 資產位置 {#asset-location}
 
-As with standard assets, a content fragment is held under:
+與標準資產一樣，內容片段的持有方式如下：
 
 `/content/dam`
 
 #### 資產權限 {#asset-permissions}
 
-For further details see [Content Fragment - Delete Considerations](/help/assets/content-fragments/content-fragments-delete.md).
+有關詳細資訊，請參閱 [內容片段 — 刪除注意事項](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)。
 
-#### Feature Integration {#feature-integration}
+#### 功能整合 {#feature-integration}
 
 要與資產核心整合：
 
 * 內容片段管理(CFM)功能構建在「資產」核心上。
 
-* CFM provides its own implementations for items in the card/column/list views; these plug into the existing Assets content rendering implementations.
+* CFM為卡/列/清單視圖中的項目提供自己的實現；這些插件將插入現有的Assets內容呈現實現。
 
 * 已擴展了若干Assets元件，以滿足內容片段的需要。
 
-### Using Content Fragments in Pages {#using-content-fragments-in-pages}
+### 在頁面中使用內容片段 {#using-content-fragments-in-pages}
 
 >[!CAUTION]
 >
@@ -103,11 +103,11 @@ For further details see [Content Fragment - Delete Considerations](/help/assets/
 
 * 元件允許您選擇要顯示的變體。
 
-* Additionally, a range of paragraphs can be selected to restrict the output; for example, this can be used for multi-column output.
+* 此外，還可以選擇一系列段落來限制輸出；例如，這可用於多列輸出。
 
 * 該元件允許在以下內容之間插入：
 
-   * Here the component allows you to place other assets (images, etc.) in between the paragraphs of the referenced fragment.
+   * 在此元件允許您放置其他資產（影像等） 在引用片段的段落之間。
 
    * 對於中間內容，您需要：
 
@@ -137,7 +137,7 @@ For further details see [Content Fragment - Delete Considerations](/help/assets/
 
          `/content/dam/<path>/en/<to>/<fragment>`
 
-         vs.
+         與
 
          `/content/dam/<path>/de/<to>/<fragment>`
    * 除了基於規則的路徑外，內容片段的不同語言版本之間沒有進一步的連接；它們被處理為兩個單獨的片段，儘管UI提供了在語言變體之間導航的方法。
@@ -178,11 +178,11 @@ For further details see [Content Fragment - Delete Considerations](/help/assets/
 
    此介面允許您以抽象方式處理內容片段。
 
-   The interface provides you with the means to:
+   該介面提供了以下方法：
 
    * 管理基本資料(如獲取名稱；獲取/設定標題/說明
-   * Access meta data
-   * Access elements:
+   * 訪問元資料
+   * 訪問元素：
 
       * 清單元素
       * 按名稱獲取元素
@@ -203,8 +203,8 @@ For further details see [Content Fragment - Delete Considerations](/help/assets/
    * **內容元素** ([內容元素](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * 獲取基本資料（名稱、標題、說明）
-      * Get/Set content
-      * Access variations of an element:
+      * 獲取/設定內容
+      * 訪問元素的變體：
 
          * 清單變體
          * 按名稱獲取變體
@@ -214,15 +214,15 @@ For further details see [Content Fragment - Delete Considerations](/help/assets/
       * 解析變體的快捷方式（如果指定的變體不適用於元素，則應用某些附加的特定於實現的回退邏輯）
    * **內容變體** ([內容變體](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
-      * Get basic data (name, title, description)
+      * 獲取基本資料（名稱、標題、說明）
       * 獲取/設定內容
       * 基於上次修改的資訊的簡單同步
 
    所有三個介面( `ContentFragment`。 `ContentElement`。 `ContentVariation`)擴展 `Versionable` 介面，添加內容片段所需的版本控制功能：
 
-   * Create new version of the element
+   * 建立元素的新版本
    * 列出元素的版本
-   * Get the content of a specific version of the versioned element
+   * 獲取版本化元素的特定版本的內容
 
 
 
@@ -232,7 +232,7 @@ For further details see [Content Fragment - Delete Considerations](/help/assets/
 
 ### 適配 — 使用適配對象() {#adapting-using-adaptto}
 
-The following can be adapted:
+可以調整以下內容：
 
 * `ContentFragment` 可適用於：
 
@@ -252,7 +252,7 @@ The following can be adapted:
 
 ### 警告 {#caveats}
 
-It should be noted that:
+應當指出：
 
 * 整個API的設計 **不** 自動保留更改（除非API JavaDoc中另有說明）。 因此，您必須始終提交相應請求（或您實際使用的解析程式）的資源解析程式。
 
@@ -291,7 +291,7 @@ It should be noted that:
 邊緣案件有一些安全措施，例如，如果用戶試圖離開編輯器而未保存或取消編輯會話。 此外，還提供定期自動保存，以防止資料丟失。
 請注意，兩個用戶可以同時編輯同一內容片段，因此可能會覆蓋彼此的更改。 為防止出現此情況，需要通過應用DAM管理 *簽出* 對片段執行操作。
 
-## 示例 {#examples}
+## 範例 {#examples}
 
 ### 示例：訪問現有內容片段 {#example-accessing-an-existing-content-fragment}
 
@@ -326,7 +326,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### 示例：指定自動保存間隔 {#example-specifying-the-auto-save-interval}
 
-的 [自動保存間隔](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) （以秒為單位）可以使用配置管理器(ConfMgr)定義：
+的 [自動保存間隔](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) （以秒為單位）可以使用配置管理器(ConfMgr)定義：
 
 * 節點： `<conf-root>/settings/dam/cfm/jcr:content`
 * 屬性名稱: `autoSaveInterval`
@@ -336,7 +336,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 如果要設定5分鐘的自動儲存間隔，則需要在節點上定義屬性；例如：
 
-* Node: `/conf/global/settings/dam/cfm/jcr:content`
+* 節點： `/conf/global/settings/dam/cfm/jcr:content`
 * 屬性名稱: `autoSaveInterval`
 
 * 類型: `Long`

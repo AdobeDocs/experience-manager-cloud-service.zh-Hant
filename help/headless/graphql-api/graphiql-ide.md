@@ -3,7 +3,7 @@ title: 在中使用GraphiQL IDE AEM
 description: 瞭解如何在Adobe Experience Manager使用GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
+source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 >在以前的版本中，安裝GraphiQL IDE需要軟體包。 如果已安裝此程式，則現在可以將其刪除。
 
 >[!NOTE]
->你一定有 [已配置終端](/help/headless/graphql-api/graphql-endpoint.md) 的 [配置瀏覽器](/help/assets/content-fragments/content-fragments-configuration-browser.md) 在使用GraphiQL IDE之前。
+>你一定有 [已配置終端](/help/headless/graphql-api/graphql-endpoint.md) 的 [配置瀏覽器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) 在使用GraphiQL IDE之前。
 
 
 的 **圖形QL** 工具允許您test和調試GraphQL查詢，方法是：

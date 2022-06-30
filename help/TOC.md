@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0f6546d4a25a59a93090952f0ee58e27f0f0f838
+source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
-source-wordcount: '3612'
+source-wordcount: '3682'
 ht-degree: 41%
 
 ---
@@ -274,6 +274,20 @@ ht-degree: 41%
          + [使用ContextHub配置分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [註冊、登錄和用戶配置檔案](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
    + 管理 {#administering}
+      + 內容片段 {#content-fragments}
+         + [使用內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+         + [帶內容片段和GraphQL的無頭傳送](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
+         + [為實例啟用內容片段功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
+         + [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+         + [內容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+         + [管理內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+         + [變化 - 編寫片段內容](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+         + [內容片段關聯內容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
+         + [中繼資料 - 片段屬性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+         + [內容片段 - 刪除考量事項](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
+         + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
+         + [樹狀結構](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
+         + [預覽 — JSON表示法](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
       + 網站建立 {#site-creation}
          + [建立新網站](/help/sites-cloud/administering/site-creation/create-site.md)
          + [啟用前端管線](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -393,7 +407,7 @@ ht-degree: 41%
       + [內容片段關聯內容](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [中繼資料 - 片段屬性](/help/assets/content-fragments/content-fragments-metadata.md)
       + [內容片段 - 刪除考量事項](/help/assets/content-fragments/content-fragments-delete.md)
-      + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
+      + [馬爾克當](/help/assets/content-fragments/content-fragments-markdown.md)
       + [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [預覽 — JSON表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
    + 動態媒體 {#dynamicmedia}
@@ -619,18 +633,18 @@ ht-degree: 41%
       + [內容片段](/help/headless/setup/create-content-fragment.md)
       + [GraphQL終結點](/help/headless/setup/create-api-request.md)
    + 內容片段 {#content-fragments}
-      + [概覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+      + [概覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
       + [內容片段控制台](/help/headless/content-fragments/content-fragment-console.md)
-      + [內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
-      + [管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
+      + [內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
+      + [管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
       + 製作{#authoring}
-         + [製作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
-         + [文本編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
-         + [相關聯的內容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
-         + [變數](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
-      + [中繼資料](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-      + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-      + [JSON預覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+         + [製作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
+         + [文本編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
+         + [相關聯的內容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
+         + [變數](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
+      + [中繼資料](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
+      + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
+      + [JSON預覽](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
    + GraphQL API {#graphql-api}
       + [用於內容片段的GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [管理 GraphQL 端點](/help/headless/graphql-api/graphql-endpoint.md)

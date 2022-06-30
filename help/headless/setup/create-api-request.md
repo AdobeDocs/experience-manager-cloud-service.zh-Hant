@@ -2,7 +2,7 @@
 title: 建立API請求 — 無頭設定
 description: 瞭解如何使用GraphQL API來無頭地傳遞內容片段內容和資AEM產REST API來管理內容片段。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -96,6 +96,6 @@ GraphQL可以避免迭代API請求和過量傳遞，而是允許批量傳遞對�
 
 就這樣！ 您現在對中的無頭內容管理有了基本的了AEM解。 當然，您還有更多資源可以深入瞭解可用功能。
 
-* **[內容片段](/help/assets/content-fragments/content-fragments.md)**  — 有關建立和管理內容片段的詳細資訊
+* **[內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)**  — 有關建立和管理內容片段的詳細資訊
 * **[AEM AssetsHTTP API中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)**  — 有關通過HTTP API直接訪AEM問內容的詳細資訊，請通過CRUD操作（建立、讀取、更新、刪除）
 * **[GraphQL API](/help/headless/graphql-api/content-fragments.md)**  — 有關如何無頭傳送內容片段的詳細資訊

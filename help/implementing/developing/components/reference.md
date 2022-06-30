@@ -2,7 +2,7 @@
 title: 元件參考指南
 description: 關於元件及其結構細節的開發人員參考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 由於WKND教程涵蓋了大多數使用案例，因此本文檔僅作為這些資源的補充。 它提供了有關元件在中的結構和配置方式的詳細AEM技術說明，並且不打算作為入門指南。
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 本節介紹開發您自己的元件時所需的詳細資訊。
 
@@ -474,4 +474,4 @@ Content not found
 
 ![README.md在元件控制台中可見](assets/components-documentation-console.png)
 
-支援的標籤與 [內容片段。](/help/assets/content-fragments/content-fragments.md)
+支援的標籤與 [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)。

@@ -2,10 +2,10 @@
 title: 瞭解創作基礎知識
 description: 瞭解使用內容片段為無頭CMS創作內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 2%
+source-wordcount: '1668'
+ht-degree: 3%
 
 ---
 
@@ -53,38 +53,68 @@ ht-degree: 2%
 
 首次登錄小型線上教程時，將突出介紹用戶介面的一些主要功能。
 
-然後，可以使用「導航面板」訪問的關鍵AEM區域。 對於內容片段，您將使用 **資產控制台**。
+然後，可以使用「導航面板」訪問的關鍵AEM區域。 對於內容片段，您將使用 **內容片段** 控制台(對於某些操作，您還將使用 **資產** 控制台)。
 
-通過選擇左上角的Adobe表徵圖，然後是小羅盤表徵圖，可以開啟導航面板：
+通過選擇左上角的Adobe表徵圖，然後是小羅盤表徵圖，可以開啟導航面板。
 
-![導航面板](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+<!--
+The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
+
+![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+-->
 
 >[!NOTE]
->儘管內容片段是 **站點**，在 **資產** 控制台。 這是一個技術細節，不應影響您，但可能對您有幫助。
+>儘管內容片段是 **站點**，它們被保存為 **資產**。 這是一個技術細節，不應影響您，但可能對您有幫助。
 
-在控制台中，您可以選擇要導航到內容片段的資料夾，或者選擇導航路徑（在標題中）以導航備份樹。
+在控制台中，您可以在左側面板中選擇資料夾以導航到內容片段。 您還可以過濾和/或搜索。
 
-![階層連結](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
+![內容片段控制台](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
 
 ### 操作，選擇，查看 {#actions-selecting-viewing}
 
-的 **資產** 控制台專用 **操作工具欄**, **快速操作** 在選擇資源（例如，資料夾或內容片段）後可以使用的。
+在 **內容片段** 控制台工具欄中的內容片段提供了一系列操作：
 
-「快速操作」可用於單個資源，請參閱 **巴塞爾** 在以下示例中：
+<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
-![快速動作](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
+* **在資產中開啟**
+* **建立**
+* 的 **引用者** 列還提供了顯示該片段的所有父引用的直接連結；包括引用內容片段、體驗片段和頁面。
+* 懸停在資料夾名稱上將顯示JCR路徑。
 
-「操作」工具欄提供了對所有操作的訪問權限 — 適用於當前方案。 可用的操作可能改變；例如，取決於您的位置，或您是否選擇了多個資源：
+選擇片段後，所有相應操作都可用：
 
-![動作工具列](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
-您可以使用「視圖選擇器」選擇查看資源的格式：
+* **開啟**
+* **發佈** (和 **取消發佈**)
+* **複製**
+* **移動**
+* **重新命名**
+* **刪除**
 
-![檢視選擇器](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+>[!NOTE]
+>
+>諸如「發佈」、「取消發佈」、「刪除」、「移動」、「更名」、「複製」等操作會觸發非同步作業。 可以通過非同步作業UI監AEM視該作業的進度。
 
-可以使用「軌道選擇器」查看有關項目的附加資訊。 這還允許訪問其他操作。
+<!--
+The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
 
-![左側邊欄](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+The Quick Actions are available for a single resource, see **Basel** in the example below:
+
+![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
+
+The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
+
+![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+
+You can select the format for viewing your resources with the View Selector:
+
+![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+
+You can view additional information about items using the Rail Selector. This also gives access to additional actions.
+
+![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+-->
 
 ## 創作內容片段 {#authoring-content-fragments}
 
@@ -98,7 +128,7 @@ ht-degree: 2%
 
 #### 建立資料夾 {#creating-folder}
 
-可以通過在 **檔案** 的子菜單。 選擇 **建立** 選項（右上），後跟 **資料夾**:
+可以通過在 **檔案** 的下界 **資產** 控制台。 選擇 **建立** 選項（右上），後跟 **資料夾**:
 
 ![「建立資料夾」選項](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -136,23 +166,39 @@ ht-degree: 2%
 
 ### 建立內容片段 {#creating-fragment}
 
-建立內容片段非常相似 — 您只需使用 **內容片段** 選項：
+在 **內容片段** 控制台可使用 **建立** 開啟 **新內容片段** 對話框：
 
-![「建立內容片段」選項](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+![內容片段控制台 — 建立新片段](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-此時將開啟嚮導。 第一步是選擇您的片段將基於的內容片段模型：
+指定：
 
-![建立內容片段 — 選擇模型](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+* **位置**
+* **內容片段模型**
+* **標題**
+* **名稱**
+* **說明**
 
-繼續 **下一個** 您可以提供詳細資訊(**基本** 和 **高級**):
+然後，通過 **建立** 或 **建立並開啟**。
 
-![建立內容片段 — 提供名稱](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+<!--
+Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
 
-確認 **建立** 你可以 **開啟** 編輯器中的片段。
+![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+
+![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+
+After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
+
+![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+Confirm with **Create** and you can then **Open** your fragment in the editor.
+-->
 
 ### 編輯片段 {#editing-fragment}
 
-可以在建立片段後立即開啟它，或從Assets控制台中選擇它。
+您可以在建立片段後立即開啟它，或從「內容片段」控制台（也從「資產」控制台）中選擇它。
 
 當編輯器首次開啟時，您將看到：
 
@@ -217,11 +263,11 @@ ht-degree: 2%
 
 完成碎片後，您可以 **發佈** 使其可用於無頭應用。
 
-發佈操作可在編輯器(或 **資產** 控制台):
+發佈操作可在編輯器中(或從 **內容片段** 控制台或 **資產** 控制台):
 
 ![內容片段編輯器 — 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
-## 下一步是什麼 {#whats-next}
+## 下一步 {#whats-next}
 
 既然你已經學到了基本知識，下一步就是 [瞭解有關引用的資訊](references.md)。 這將介紹和討論各種可用參照，以及如何使用「片段參照」(Fragment References)建立結構的級別 — 這是無頭創作的關鍵部分。
 
@@ -249,22 +295,22 @@ ht-degree: 2%
 
       * [管理發佈](/help/assets/manage-publication.md#manage-publication)
 
-* [使用內容片段](/help/assets/content-fragments/content-fragments.md)
+* [使用內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [管理內容片段](/help/assets/content-fragments/content-fragments-managing.md)
+   * [管理內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [將配置應用到您的資產資料夾](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [將配置應用到您的資產資料夾](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [建立內容片段](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [變體 — 創作內容片段](/help/assets/content-fragments/content-fragments-variations.md)
+      * [建立內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [變體 — 創作內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+   * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [內容片段模型 — 資料類型](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [內容片段模型 — 資料類型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
-      * [內容片段模型 — 屬性](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [內容片段模型 — 屬性](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
-      * [內容片段模型 — 允許在資產資料夾上建立內容片段模型](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [內容片段模型 — 允許在資產資料夾上建立內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 
 * 入門指南

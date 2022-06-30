@@ -2,7 +2,7 @@
 title: 無頭as a Cloud Service入AEM門
 description: 在「無頭開發AEM者之旅」的這一部分，瞭解無AEM頭先決條件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 0%
@@ -260,7 +260,7 @@ GraphQL是無頭內容與AEM用戶之間的「粘合」。 GraphQL是查詢必AE
 * 某些類型的內容是否在特定時間段後過期？
 * 是否存在特定於用戶的因素，因此無法快取？
 
-## 下一步是什麼 {#what-is-next}
+## 下一步 {#what-is-next}
 
 現在，您已完成了「無頭開發AEM者之旅」的這一部分，您應：
 
@@ -284,9 +284,9 @@ GraphQL是無頭內容與AEM用戶之間的「粘合」。 GraphQL是查詢必AE
 * [發佈頁面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)  — 在上發佈內容的技術文AEM檔
 * [命名約定](/help/implementing/developing/introduction/naming-conventions.md)  — 中頁面命名限制的技術文AEM檔
 * [多站點管理器和翻譯](/help/sites-cloud/administering/msm-and-translation.md)  — 有關強大翻譯功AEM能的技術文檔
-* [AEM工作流](/help/sites-cloud/authoring/workflows/overview.md)  — 有關如何自動執行中的工作流的技術文AEM檔
-* [內容片段](/help/assets/content-fragments/content-fragments.md)  — 內容片段的技術文檔。
-* [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 內容片段模型的技術文檔。
+* [AEM工作流](/help/sites-cloud/authoring/workflows/overview.md)  — 關於如何自動執行中的工作流的技術文AEM檔
+* [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)  — 內容片段的技術文檔。
+* [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)  — 內容片段模型的技術文檔。
 * [GraphQL技術文檔](https://graphql.org) - GraphQL定義（外部連結）
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md)  — 技術文檔，說明如何建立訪問和傳遞內容片段的請求
 * [資產REST API](/help/assets/content-fragments/assets-api-content-fragments.md)  — 說明如何建立和修改內容片段（和其他資產）的技術文檔

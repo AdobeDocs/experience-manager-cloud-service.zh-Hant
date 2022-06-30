@@ -2,10 +2,10 @@
 title: 瞭解定義內容片段的元資料和標籤
 description: 瞭解定義內容片段的元資料和標籤
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 0b953e0155fa1b90b5bccbf10b9ceaf1c1f63ae7
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 3%
+source-wordcount: '241'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 可以使用三種方法來添加元資料和標籤：
 
-* 首次建立片段時：
+* 首次建立碎片時(從 **資產** 控制台):
 
    ![建立內容片段 — 提供名稱](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
@@ -38,14 +38,14 @@ ht-degree: 3%
 
    * 也可使用 **屬性** 的子菜單。
 
-## 下一步是什麼 {#whats-next}
+## 下一步 {#whats-next}
 
 現在，您可以使用所有這些知識，並開始為項目建立內容片段。
 
 ## 其他資源 {#additional-resources}
 
-* [中繼資料 - 片段屬性](/help/assets/content-fragments/content-fragments-metadata.md)
+* [中繼資料 - 片段屬性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [使用標記](/help/sites-cloud/authoring/features/tags.md)
 
-* [內容片段模型 — 允許在資產資料夾上建立內容片段模型](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [內容片段模型 — 允許在資產資料夾上建立內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

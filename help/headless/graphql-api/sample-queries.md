@@ -3,7 +3,7 @@ title: 學習將GraphQL與AEM樣例內容和查詢一起使用
 description: 學習將GraphQL與一起AEM使用，通過瀏覽示例內容和查詢來無拘無束地為內容提供服務。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 0ff90afca3fb72ac6d0a79793a332c1c2172cd67
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 6%
@@ -18,8 +18,8 @@ ht-degree: 6%
 >
 >此頁應與以下內容一起閱讀：
 >
->* [內容片段](/help/assets/content-fragments/content-fragments.md)
->* [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+>* [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+>* [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [用AEM於內容片段的GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
 

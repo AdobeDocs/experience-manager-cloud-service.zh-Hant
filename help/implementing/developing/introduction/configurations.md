@@ -2,7 +2,7 @@
 title: 配置和配置瀏覽器
 description: 了AEM解中的配置及其管理工作區設定AEM的方式。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 1%
@@ -34,7 +34,7 @@ ht-degree: 1%
 可以為內部的許多不同功能建立配AEM置。
 
 * [上下文中心段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+* [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [可編輯的範本](/help/sites-cloud/authoring/features/templates.md)
 * 各種雲配置
 
@@ -80,7 +80,7 @@ ht-degree: 1%
       * 必要時可進行調整。
 1. 檢查您希望允許的配置類型。
    * [上下文中心段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+   * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [可編輯的範本](/help/sites-cloud/authoring/features/templates.md)
    * 各種雲配置
 1. 點擊或按一下 **建立**。
