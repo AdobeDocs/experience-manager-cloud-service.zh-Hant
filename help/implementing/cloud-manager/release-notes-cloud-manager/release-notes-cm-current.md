@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service的Cloud Manager 2022.6.0發行說明
-description: 以下是Cloud Manager 2022.6.0在as a Cloud Service中的發行說明AEM。
+title: Adobe Experience Manager as a Cloud Service的Cloud Manager 2022.7.0發行說明
+description: 以下是Cloud Manager 2022.7.0在as a Cloud Service中的發行說明AEM。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
+source-git-commit: 5200ee315ad88dae4b52c0ea904489e73f62a8a0
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 1%
+source-wordcount: '200'
+ht-degree: 3%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service的Cloud Manager 2022.6.0發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service的Cloud Manager 2022.7.0發行說明 {#release-notes}
 
-本頁記錄了Cloud Manager 2022.6.0在as a Cloud Service中的發行說明AEM。
+本頁記錄了Cloud Manager 2022.7.0在as a Cloud Service中的發行說明AEM。
 
 >[!NOTE]
 >
@@ -21,25 +21,15 @@ ht-degree: 1%
 
 ## 發行日期 {#release-date}
 
-Cloud Manager在as a Cloud Service中2022.6.0版的AEM發佈日期為2022年6月9日。 下一版計畫於2022年6月30日發行。
+Cloud Manager在as a Cloud Service版本2022.7.0的發佈日期AEM為2022年6月30日。 下一版計畫於2022年8月11日發行。
 
 ## 新增功能 {#what-is-new}
 
-* Cloud Manager UI現在允許 [自服務內容恢復](/help/operations/backup.md) 到已知良好的雲環境AEM狀態。
-   * 此功能將在發佈後的幾週內分階段2022.06.0出。
-* Cloud Manager登錄頁上的新歡迎卡使用戶能夠快速訪問與租戶相關的入門教程和進度度量。
-   * 此功能將在發佈後的一週內分階段2022.06.0出。
-* 具有必要權限的用戶可以訪問新 [許可證儀表板](/help/implementing/cloud-manager/license-dashboard.md) 在雲管理器登錄頁上查看租戶可用權利的詳細資訊。
-   * AEM Sites是第一個通過雲管理儀表板提供可用性和使用消耗的解決方案。
-   * 此功能將在發佈後的幾週內分階段2022.06.0出。
-* [New Relic子帳戶和自助服務用戶管理](/help/implementing/cloud-manager/user-access-new-relic.md) 現在可通過雲管理器UI訪問。
-   * 此功能將在發佈後的幾週內分階段2022.06.0出。
-* Cloud Service製作程式首頁上的新Go Live小部件現在提供了指導，為成功的go Live體驗做好準備。
-* [現在可以重用生成對象](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 使用git鏡像時。
+* Cloud Manager用戶現在可以從 **歡迎** 登錄頁上的卡。
+* 上的跨距 **[還原內容](/help/operations/backup.md)** 「環境詳細資訊」頁的頁籤現在顯示一個方便的git命令清單，允許用戶在本地查看更改。
 
-## API更改 {#api-changes}
+## 錯誤修正 {#bug-fixes}
 
-* 的 [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API已棄用， [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) 應改為使用。
-   * `List Programs` 繼續工作，但其使用將在日誌中生成警告消息。
-   * 三個月後，它將不再得到支援。
-
+* UI中與在程式建立期間建立New Relic子帳戶相關的反饋消息已得到改進。
+* 用戶現在可以從雲管理器UI下載自定義UI測試日誌。
+* 在前線管道批准後未調用以執行部署步驟時，問題已得到解決。
