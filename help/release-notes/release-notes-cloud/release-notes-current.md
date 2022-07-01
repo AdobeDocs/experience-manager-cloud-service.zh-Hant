@@ -3,9 +3,9 @@ title: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 description: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9c76ff2e0b789894ef5492ee940ce79cddb47e11
+source-git-commit: 88506fd4538c55a880904ea37055eb97d4ae05b3
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '639'
 ht-degree: 3%
 
 ---
@@ -95,8 +95,6 @@ Experience Manager Assets目前使用Adobe SenseiAI功能 [區分影像中的顏
 ## [!DNL Experience Manager] 作為 [!DNL Cloud Service] 基礎 {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
-
-* 現AEM在as a Cloud Service與Unified Shell整合，以改進用戶體驗，並將其與所有其它Experience Cloud應用程式統一。 請參閱 [統一AEMShell上的as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 的子菜單。
 
 * 如5月(2022.5.0)發行說明中所述，複製代理管理螢幕下的「添加樹」選項 **分發** 頁籤。 應使用樹層次結構複製內容的包 [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) 工作流。
 
