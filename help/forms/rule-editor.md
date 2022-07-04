@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6340'
+source-wordcount: '6351'
 ht-degree: 0%
 
 ---
 
 # 將規則新增至最適化表單 {#adaptive-forms-rule-editor}
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 規則編輯器功能使表單業務用戶和開發人員能夠在自適應表單對象上編寫規則。 這些規則根據表單上的預設條件、用戶輸入和用戶操作定義對表單對象觸發的操作。 它有助於進一步簡化表單填充體驗，確保準確性和速度。
 
@@ -306,7 +306,7 @@ _
 
 要啟動規則編輯器用戶介面：
 
-1. 在創作模式下開啟自適應表單。
+1. 在創作模式下開啟「自適應表單」。
 1. 按一下要為其編寫規則的表單對象，然後在元件工具欄中按一下 ![編輯規則](assets/edit-rules-icon.svg)。 將顯示規則編輯器用戶介面。
 
    ![建立規則](assets/create-rules.png)
@@ -531,6 +531,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 * 如果要自定義配置和說明
 * 因為有多種方法在中聲明函式 `JavaScript,` 和注釋，讓你瞭解這些功能。
 
+規則編輯器支援指令碼和自定義函式的JavaScript ES2015語法。
 有關詳細資訊，請參見 [jsdoc.app](https://jsdoc.app/)。
 
 支援 `jsdoc` 標籤：
