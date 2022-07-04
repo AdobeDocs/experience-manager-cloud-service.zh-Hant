@@ -4,18 +4,14 @@ description: 將自適應表單與Microsoft® Power Automet整合。
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 27aa5016d6bdc4a101ba044bf9e49c483ecdae13
+source-git-commit: ccc4d487cb180273284276cf9cdf18680a3efcb8
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1183'
 ht-degree: 1%
 
 ---
 
 # 使用Microsoft® Power Automate連接自適應表單 {#connect-adaptive-form-with-power-automate}
-
->[!NOTE]
->
->該功能在預發佈計畫下，在公開發佈前可能發生重大更改。
 
 您可以配置自適應表單以在提交時運行Microsoft® Power自動雲流。 配置的自適應表單將捕獲的資料、附件和記錄文檔發送到Power Automate Cloud Flow進行處理。 它幫助您構建自定義資料捕獲體驗，同時利用Microsoft® Power Automate的強大功能，圍繞捕獲的資料構建業務邏輯並自動化客戶工作流。 以下是將自適應表單與Microsoft® Power Automate整合後可執行的操作的幾個示例：
 
