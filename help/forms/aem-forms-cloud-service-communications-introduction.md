@@ -2,9 +2,9 @@
 title: Formsas a Cloud Service通訊
 description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 09452aa799fc59bfc08c59d69820aa22daf07e9f
+source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1137'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 文檔生成
 
-通信文檔生成API幫助將模板(XFA或PDF)與客戶資料([XML資料](#form-data))以PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）生成文檔。 這些API利用 [PDF和XFA模板](#supported-document-types) 與 [XML資料](communications-known-issues-limitations.md#form-data) 使用批處理作業生成單個單據按需或多個單據。
+通信文檔生成API幫助將模板(XFA或PDF)與客戶資料(XML)組合，以PS、PCL、DPL、IPL和ZPL格式等PDF和打印格式生成文檔。 這些API利用PDF和XFA模板 [XML資料](communications-known-issues-limitations.md#form-data) 使用批處理作業生成單個單據按需或多個單據。
 
 通常，您使用 [設計師](use-forms-designer.md) 並使用Communications API將資料與模板合併。 您的應用程式可以將輸出文檔發送到網路打印機、本地打印機或儲存系統進行存檔。 典型的開箱即用工作流和自定義工作流如下所示：
 
@@ -101,7 +101,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### 匯編PDF文檔
 
-您可以使用文檔製造API將兩個或多個PDF或XDP文檔匯編為單個PDF文檔或PDFPortfolio。 以下是匯編PDF文檔的一些方法：
+可以使用文檔處理API將兩個或多個PDF或XDP文檔匯編為單個PDF文檔或PDFPortfolio。 以下是匯編PDF文檔的一些方法：
 
 * 匯編簡單PDF文檔
 * 建立PDFPortfolio
@@ -114,7 +114,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### 拆卸PDF文檔
 
-您可以使用文檔製造API來拆解PDF文檔。 API可以從源文檔中提取頁面或基於書籤劃分源文檔。 通常，如果PDF文檔最初是從許多單個文檔（如語句集合）建立的，則此任務非常有用。
+可以使用文檔處理API來拆解PDF文檔。 API可以從源文檔中提取頁面或基於書籤劃分源文檔。 通常，如果PDF文檔最初是從許多單個文檔（如語句集合）建立的，則此任務非常有用。
 
 * 從源文檔中提取頁面
 * 基於書籤劃分源文檔
@@ -124,7 +124,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### 轉換為並驗證符合PDF/A的文檔
 
-您可以使用文檔PDFAPI將PDF文檔轉換為符合PDF/A的文檔，並確定PDF文檔是否符合/A。 PDF/A是一種存檔格式，旨在長期保存文檔的內容。 字型嵌入到文檔中，檔案未壓縮。 因此，PDF/A文檔通常比標準PDF文檔大。 此外，PDF/文檔不包含音頻和視頻內容。
+您可以使用文檔處理API將PDF文檔轉換為符合PDF/A的文檔，並確定PDF文檔是否符合PDF/A。 PDF/A是一種存檔格式，旨在長期保存文檔的內容。 字型嵌入到文檔中，檔案未壓縮。 因此，PDF/A文檔通常比標準PDF文檔大。 此外，PDF/文檔不包含音頻和視頻內容。
 
 ## 通信API的類型
 
