@@ -2,7 +2,7 @@
 title: 內容片段控制台
 description: 瞭解如何從內容片段控制台管理內容片段。
 landing-page-description: 瞭解如何從內容片段控制台管理內容片段，該控制台側重於無頭使用案例中大量使用內容片段，但在頁面創作時也使用。
-source-git-commit: 19ec74f98bf0dedb768db5c4ec7eb6063779b03c
+source-git-commit: 8c44ecf0237c7a3660ef9fa97f46cc400e4bd30f
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 內容片段控制台  {#content-fragments-console}
 
-瞭解內容片段控制台如何優化對內容片段的訪問，幫助您通過執行管理操作（如發佈、取消發佈、複製）來建立、搜索和管理內容片段。
+瞭解內容片段控制台如何優化對內容片段的訪問，幫助您通過執行諸如發佈、取消發佈、複製等管理操作來建立、搜索和管理內容片段。
 
 內容片段控制台專用於管理、搜索和建立內容片段。 它已優化為在無頭上下文中使用，但在建立內容片段以用於頁面創作時也使用。
 
