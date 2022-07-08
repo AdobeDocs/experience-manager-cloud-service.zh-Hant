@@ -2,7 +2,7 @@
 title: 建立內容片段 — 無頭設定
 description: 瞭解如何使用內AEM容片段來設計、建立、建立和使用與頁面無關的內容進行無頭傳送。
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 
    添加標題、名稱，並根據需要添加說明。
 
-   ![「新建內容片段」對話框](/help/headless/content-fragments/assets/cfc-console-create.png)
+   ![「新建內容片段」對話框](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 1. 點擊或按一下 **建立** 或  **建立並開啟**。
 
