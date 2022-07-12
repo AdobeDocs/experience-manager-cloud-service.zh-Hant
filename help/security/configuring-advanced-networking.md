@@ -2,9 +2,9 @@
 title: 配置高級網路AEM以as a Cloud Service
 description: 瞭解如何配置高級網路功能，如VPN或靈活或專用的出口IP地址，以便AEMas a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
+source-git-commit: e34759aeea2e3819cf76a8bba433b96ae201c16f
 workflow-type: tm+mt
-source-wordcount: '3053'
+source-wordcount: '3006'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 >
 >您還可以找到一系列文章，旨在指導您瞭解此處的每個高級網路選項 [位置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en)。
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 AEMas a Cloud Service提供多種高級網路功能，客戶可使用Cloud Manager API進行配置。 這些包括：
 
@@ -209,29 +209,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ### 流量路由 {#dedcated-egress-ip-traffic-routing}
 
-通過埠80或443到達目的地的HTTP或https通信將通過預配置的代理（假定使用標準Java網路庫）。 對於通過其他埠的http或https通信，應使用以下屬性配置代理。
-
-```
-AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
-AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
-```
-
-例如，此處是將請求發送到 `www.example.com:8443`:
-
-```java
-String url = "www.example.com:8443"
-String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
-
-HttpClient client = HttpClient.newBuilder()
-      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
-      .build();
- 
-HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
-HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-```
-
-如果使用非標準Java網路庫，請為所有通信配置使用上述屬性的代理。
+Http或https通信將通過預配置的代理，前提是它們使用標準Java系統屬性進行代理配置。
 
 通過在中聲明的埠進行目標的非http/s通信 `portForwards` 參數應引用名為 `AEM_PROXY_HOST`，以及映射的埠。 例如：
 
