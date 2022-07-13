@@ -2,10 +2,10 @@
 title: 編SPA輯器概述
 description: 本文全面概述了編輯SPA器及其工作方式，包括了編輯器在內交互的SPA詳細工AEM作流。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: c7759e390d9ea6c2196c9f6c895232c4e75c6d23
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 1%
+source-wordcount: '1635'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ SPA中的AEM支援引入了一個精簡JS層，當載入到頁面編輯器中時
 * [使用反SPA應入AEM門](getting-started-react.md) 快速瀏覽一SPA下
 * [使用AngularSPA入門AEM](getting-started-angular.md) 快速瀏覽一下簡單SPA的Angular
 
-## 設計 {#design}
+## Design {#design}
 
 某的頁元件SPA不會通過JSP或HTL檔案提供其子元件的HTML元素。 此操作已委託到該SPA框架。 子元件或模型的表示從JCR中作為JSON資料結構提取。 然SPA後根據該結構將元件添加到頁面。 此行為將頁面元件的初始主體組合與非對SPA應項區分。
 
@@ -177,13 +177,12 @@ Editor SPA SDK支援以下最低版本：
 
 ### 限制 {#limitations}
 
-AdobeAEM完全支SPA持編輯器SDK，並且作為一項新功能，它將繼續得到增強和擴展。 編輯AEM器尚不支援以SPA下功能：
+AdobeAEM完全支SPA持編輯器SDK，並且它將繼續得到增強和擴展。 編輯AEM器尚不支援以SPA下功能：
 
 * 目標模式
 * ContextHub
 * 內聯影像編輯
 * 編輯配置(例如 監聽器)
-* 樣式系統
 * 撤消/重做
 * 頁面差異和時間偏差
 * 執行HTML重寫伺服器端的功能，如連結檢查器、CDN重寫器服務、URL縮短等。
