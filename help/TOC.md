@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 778a3687447c1e07605fdb95b3934b10d22483e8
+source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
 workflow-type: tm+mt
-source-wordcount: '3691'
+source-wordcount: '3674'
 ht-degree: 41%
 
 ---
@@ -123,24 +123,19 @@ ht-degree: 41%
    + [同一站點Cookie支援AEMas a Cloud Service](/help/security/same-site-cookie-support.md)
    + [OAuth2對郵件服務的支援](/help/security/oauth2-support-for-mail-service.md)
 + 入門 {#onboarding}
-   + [AEM as a Cloud Service 入門](/help/onboarding/home.md)
-   + 學習入門概念 {#onboarding-concepts}
-      + [系統管理員](/help/onboarding/learn-concepts/system-administrator.md)
-      + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
-      + [AdobeIdentity Management系統](/help/onboarding/learn-concepts/ims.md)
-      + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
-      + [Cloud Manager 簡介](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
-      + [AEMas a Cloud Service團隊和產品配置檔案](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
-      + [Adobe支援](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+   + [從此處開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 登機之旅 {#journey}
-      + [登機之旅](/help/journey-onboarding/home.md)
-      + [登機旅程概覽](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
-      + [入門流程](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md)
-      + [將團隊成員分配給Cloud Manager產品配置檔案](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md)
-      + [通過雲管理器設定雲資源](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md)
-      + [將團隊成員分配AEM給as a Cloud Service產品配置檔案](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
-      + [開發人員和部署經理的學習路徑](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
-      + [用戶學習路AEM徑](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+      + [登機旅程概述](/help/journey-onboarding/overview.md)
+      + [登機準備](/help/journey-onboarding/preparation.md)
+      + [AEMas a Cloud Service術語](/help/journey-onboarding/terminology.md)
+      + [Admin Console](/help/journey-onboarding/admin-console.md)
+      + [分配Cloud Manager產品配置檔案](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+      + [訪問雲管理器](/help/journey-onboarding/cloud-manager.md)
+      + [建立程式](/help/journey-onboarding/create-program.md)
+      + [建立環境](/help/journey-onboarding/create-environments.md)
+      + [分配AEM產品配置檔案](/help/journey-onboarding/assign-profiles-aem.md)
+      + [開發人員和部署管理器任務](/help/journey-onboarding/developers.md)
+      + [用AEM戶任務](/help/journey-onboarding/aem-users.md)
    + 參AEM考演示附加行程 {#demo-add-on}
       + [概觀](/help/journey-sites/demos-add-on/overview.md)
       + [安裝](/help/journey-sites/demos-add-on/installation.md)
@@ -148,6 +143,9 @@ ht-degree: 41%
       + [建立演示網站](/help/journey-sites/demos-add-on/create-site.md)
       + [啟用螢幕](/help/journey-sites/demos-add-on/screens.md)
       + [管理演示網站](/help/journey-sites/demos-add-on/manage.md)
+   + 其他登機概念 {#concepts}
+      + [Cloud Manager 簡介](/help/onboarding/cloud-manager-introduction.md)
+      + [AEMas a Cloud Service團隊和產品配置檔案](/help/onboarding/aem-cs-team-product-profiles.md)
 + AEMas a Cloud Service遷移 {#migration-journey}
    + [移動as a Cloud Service入AEM門](/help/journey-migration/getting-started.md)
    + [就緒階段](/help/journey-migration/readiness.md)
@@ -750,7 +748,7 @@ ht-degree: 41%
          + [應用和取消應用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [管理IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [許可證儀表板](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Cloud Manager常見問題](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+      + [Cloud Manager常見問題](/help/implementing/cloud-manager/faqs.md)
    + 為 AEM as a Cloud Service 開發 {#developing}
       + [AEM 專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 專案存放庫結構套件](/help/implementing/developing/introduction/repository-structure-package.md)

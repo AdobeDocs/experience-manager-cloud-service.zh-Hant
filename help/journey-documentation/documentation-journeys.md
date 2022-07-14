@@ -3,7 +3,7 @@ title: 文檔AEM旅程
 description: 文檔旅程通過將複雜和AEM不同的功能結合在一起，以最佳做法方式解決業務目標，在文檔中提供敘事結構。 旅程設AEM計以初學者為出發點，引入概念和功能，以實現從A到Z的目標。
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 1%
@@ -90,7 +90,7 @@ AEM Documentation Journeys的主要目標是幫助讀者瞭解該系統AEM有多
 | [無頭創作旅程](/help/journey-headless/author/overview.md) | 從此開始，您可以帶導遊地瞭解功能強大、靈活的無頭功能AEM、其功能，以及如何在您的第一個無頭項目上對內容建模。 |
 | [無頭建築師之旅](/help/journey-headless/architect/overview.md) | 從此處開始，介紹Adobe Experience Manager as a Cloud Service強大、靈活、無頭的功能，以及如何為您的項目建模內容。 |
 | [無頭翻譯之旅](/help/journey-headless/translation/overview.md) | 從此處開始，瞭解如何在中設定和管理您的無頭翻譯項AEM目。 |
-| [登AEM機之旅](/help/journey-onboarding/home.md) | 從此開始，利用您的新as a Cloud Service環境快AEM速啟動！ |
+| [登AEM機之旅](/help/journey-onboarding/overview.md) | 從此開始，利用您的新as a Cloud Service環境快AEM速啟動！ |
 | [快速AEM建立站點](/help/journey-sites/quick-site/overview.md) | 從此開始，您可以通過簡單易用的AEM快速站點建立工具進行指導性的學習，以簡化站點的前端開發，並在不具備後端知識的情況下快速AEM自定義您的AEM站點。 |
 | 《商AEM旅》 | 即將推出！ |
 | [AEMas a Cloud Service遷移](/help/journey-migration/getting-started.md) | 從此開始，逐步瞭解如何從您的內部或Adobe托管安裝遷移到完全基於雲的as a Cloud ServiceAEM，並介紹其AEM諸多優點。 |

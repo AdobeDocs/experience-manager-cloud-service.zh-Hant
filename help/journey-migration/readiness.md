@@ -2,9 +2,9 @@
 title: 就緒階段
 description: 瞭解您需要採取哪些步驟以確保AEM您的安裝已準備好移至雲
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2079'
 ht-degree: 6%
 
 ---
@@ -210,7 +210,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 請參閱 [開發KPI](https://guided.adobe.com/welcome/aem/part6.html) 瞭解如何為業務目標選擇正確的KPI。
 
-## 下一步是什麼 {#what-is-next}
+## 下一步 {#what-is-next}
 
 一旦您瞭解了移動到as a Cloud Service所需的更AEM改範圍，就該 [使您的代碼和內容雲準備就緒](/help/journey-migration/implementation.md) 執行遷移之前。
 
@@ -220,4 +220,4 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 * [AEMas a Cloud Service:導論、建築與思維的異化](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
 * [AEMCloud Service](/help/overview/home.md)  — 有關Experience Manageras a Cloud Service文檔的概述，請從此處開始。
 * [AEMas a Cloud Service概述](/help/overview/home.md)  — 本指南概述了Experience Manager作為雲服務，包括簡介、術語和體系結構。
-* [登機](/help/onboarding/home.md) — 本指南提供了如何開始使用Experience Manageras a Cloud Service的摘要，包括如何獲得訪問權限和設定您的團隊
+* [登機之旅](/help/journey-onboarding/overview.md) — 本指南提供了如何開始使用Experience Manageras a Cloud Service的摘要，包括如何獲得訪問權限和設定您的團隊

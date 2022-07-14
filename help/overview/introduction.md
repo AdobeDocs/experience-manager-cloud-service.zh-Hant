@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service 簡介
 description: Adobe Experience Manager (AEM) as a Cloud Service 簡介。
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 50%
@@ -78,6 +78,6 @@ AEM 採用現代化雲端服務的主要特色來達成下列目標：
 
 >[!TIP]
 >
->一旦您概述了AEMas a Cloud Service，您就可以通過查看 [登機之旅。](/help/journey-onboarding/home.md)
+>一旦您概述了AEMas a Cloud Service，您就可以通過查看 [登機之旅。](/help/journey-onboarding/overview.md)
 >
 >已裝上或準備好深入測試功AEM能？ 安裝 [參AEM考演示附件](/help/journey-sites/demos-add-on/overview.md) 使用豐AEM富的示例來探索功能。

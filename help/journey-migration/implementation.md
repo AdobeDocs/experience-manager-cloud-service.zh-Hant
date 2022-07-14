@@ -2,10 +2,10 @@
 title: 實施階段
 description: 確保您的代碼和內容已準備好遷移到雲
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 9%
+source-wordcount: '2416'
+ht-degree: 8%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager 可讓組織在雲端中自行管理 AEM。其內容包含持續�
 
 您可以通過咨詢以下資源來熟悉使用雲管理器：
 
-* [加入 Experience Manager as a Cloud Service](/help/onboarding/home.md)，了解有關加入 Experience Manager as a Cloud Service 的自助資源。
+* [登機之旅](/help/journey-onboarding/overview.md) 瞭解自助資源，Experience Manageras a Cloud Service。
 
 * [整合 Git 與 Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)，了解如何使用 Single Git 存放庫來部署程式碼。
 
@@ -170,7 +170,7 @@ Cloud Manager管道支援針對階段環境運行的test的執行。
 
 下表說明了典型的遷移計畫：
 
-| 遷移迭代 | 開始日期 | 估計結束日期 | 相依關係 | 估計持續時間（天） | 附加詳細資訊/措施項 |
+| 遷移迭代 | 開始日期 | 估計結束日期 | 相依性 | 估計持續時間（天） | 附加詳細資訊/措施項 |
 |---|---|---|---|---|---|
 | PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |  |  |  |  |  |
 | PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |  |  |  |  |  |
@@ -249,6 +249,6 @@ Cloud Manager管道支援針對階段環境運行的test的執行。
    * 瞭解每週添加的內容數
    * 根據遷移證明推斷所測量的時間以建立 [遷移計畫](#migration-plan)。
 
-## 下一步是什麼 {#what-is-next}
+## 下一步 {#what-is-next}
 
 一旦您完全瞭解了如何評估AEM您的安裝是否已準備好移至雲，我們將學習如何使用使安裝準備就緒所需的工具，現在就是時候繼續 [上線階段](/help/journey-migration/go-live.md)。

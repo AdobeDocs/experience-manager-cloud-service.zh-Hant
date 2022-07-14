@@ -2,7 +2,7 @@
 title: 部署自定義主題
 description: 瞭解如何使用管道部署站點主題。
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 1%
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 ## 檢查管道狀態 {#pipeline-status}
 
-You can check the status of the pipeline to see the detail of its progress at any time.
+您可以隨時檢查管道的狀態以查看其進度的詳細資訊。
 
 1. 點擊或按一下管道旁的省略號。
 
@@ -109,12 +109,12 @@ You can check the status of the pipeline to see the detail of its progress at an
 * [Cloud Manager資料庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)  — 如果您需要有關如何為AEMaaCS項目設定和管理Git儲存庫的詳細資訊，請參閱此文檔。
 * [配置CI/CD管道 — Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)  — 瞭解有關在本文檔中設定管道（完整堆棧和前端）的詳細資訊。
 * [標AEM準站點模板](https://github.com/adobe/aem-site-template-standard)  — 這是「標準站點」模板的GitHubAEM儲存庫。
-* [AEM Site Theme](https://github.com/adobe/aem-site-template-standard-theme-e2e) - This is the GitHub repository of the AEM Site Theme.
+* [網AEM站主題](https://github.com/adobe/aem-site-template-standard-theme-e2e)  — 這是網站主題的GitHubAEM儲存庫。
 * [npm](https://www.npmjs.com)  — 用AEM於快速構建站點的主題基於npm。
 * [網路包](https://webpack.js.org)  — 用AEM於快速構建網站的主題依賴webpack。
 * [建立和組織頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)  — 本指南詳細說明了在從模板建立網站AEM後，如果您希望進一步自定義網站的頁面，如何管理網站頁面。
 * [如何使用包](/help/implementing/developing/tools/package-manager.md)  — 包允許導入和導出儲存庫內容。 本文檔介紹了如何處理6.5AEM中的包，該軟體包也適用於AEMaaCS。
-* [登機之旅](/help/journey-onboarding/home.md)  — 本指南是您的出發點，可確保您的團隊已建立並能夠訪問AEMas a Cloud Service。
-* [Adobe Experience Manager雲管理器文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant)  — 瀏覽Cloud Manager文檔以瞭解其功能的全部詳細資訊。
+* [登機之旅](/help/journey-onboarding/overview.md)  — 本指南是您的出發點，可確保您的團隊已建立並能夠訪問AEMas a Cloud Service。
+* [Adobe Experience Manager雲管理器文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)  — 瀏覽Cloud Manager文檔以瞭解其功能的全部詳細資訊。
 * [站點管理文檔](/help/sites-cloud/administering/site-creation/create-site.md)  — 查看現場建立技術文檔，瞭解有關快速站點建立工具功能的詳細資訊。
 * [利用前端管道開發站點](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)  — 本文檔介紹了一些需要注意的注意事項，以便利用前端管道從前端開發過程中充分挖掘潛力。

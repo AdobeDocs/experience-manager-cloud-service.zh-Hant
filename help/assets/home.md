@@ -1,14 +1,14 @@
 ---
 title: 資產as a Cloud Service指南
-description: 瞭解資產as a Cloud Service並瞭解最新動態。
+description: 了解 Assets as a Cloud Service，並取得服務和功能的最新資訊。
 landing-page-description: 了解如何使用及管理 Experience Manager Assets as a Cloud Service。
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 35%
+source-wordcount: '294'
+ht-degree: 39%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 35%
 | [概覽](/help/overview/home.md) | 介紹性概述和辭彙表， [!DNL Experience Manager] 作為 [!DNL Cloud Service]。 |
 | [發行說明](/help/release-notes/home.md) | 內容包括發行說明、新增功能、過時和移除的功能，以及已知問題。 |
 | [安全性使用手冊](/help/security/home.md) | 瞭解有關 [!DNL Experience Manager] 作為 [!DNL Cloud Service]。 |
-| [入門](/help/onboarding/home.md) | 開始 [!DNL Experience Manager] 作為 [!DNL Cloud Service]  — 獲取訪問和保護重要資料。 |
+| [登機之旅](/help/journey-onboarding/overview.md) | 開始 [!DNL Experience Manager] 作為 [!DNL Cloud Service]  — 獲取訪問和保護重要資料。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 瞭解如何編寫和管理 [!DNL Experience Manager Sites] 作為 [!DNL Cloud Service]。 |
 | [實作使用手冊](/help/implementing/home.md) | 瞭解如何通過瀏覽這些開發和部署主題來使用Experience Manager的強大功能構建和定制體驗。 |
 | [無頭開發者之旅](/help/journey-headless/developer/overview.md) | 探索這一帶導向的旅程，體驗Experience Manager強大而靈活的無頭功能，為您的第一個無頭項目做好準備。 |
@@ -45,7 +45,7 @@ ht-degree: 35%
 * [Dispatcher 文件](/help/implementing/dispatcher/overview.md)
 * [HTL 文件](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
 * [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
-* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant)
+* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GDPR 整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager [!DNL Cloud Service] Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)

@@ -3,7 +3,7 @@ title: 配置生產管線
 description: 瞭解如何配置生產管道以構建代碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 94e37ae6aef64ec61e633e4c034ceefe5e75c7c8
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 瞭解如何配置生產管道以構建代碼並將其部署到生產環境。 生產管道首先將代碼部署到階段環境，並在批准後將相同代碼部署到生產環境。
 
-用戶必須具有 **[部署管理器](/help/onboarding/learn-concepts/cloud-manager-introduction.md#role-based-permissions)** 用於配置生產管道的角色。
+用戶必須具有 **[部署管理器](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** 用於配置生產管道的角色。
 
 >[!NOTE]
 >

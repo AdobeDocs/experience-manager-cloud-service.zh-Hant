@@ -2,9 +2,9 @@
 title: 有何不同和新增 — Adobe Experience Manager as a Cloud Service
 description: What Different and What New -Adobe Experience Manager(AEM)as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 7665bc1a27eec6474c1f21c61ac9cf444cf3d443
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1904'
 ht-degree: 10%
 
 ---
@@ -125,10 +125,6 @@ Cloud Manager在多個地理區域的資料中心建立環境，提供全球覆�
 
 ## 入門 {#onboarding}
 
->[!NOTE]
->
->有關詳細資訊，請參閱 [登機](/help/onboarding/home.md)。
-
 當將項目用作雲服AEM務時，啟動和管AEM理項目非常簡單，因為Adobe負責很多方面：
 
 * 基線AEM影像針對特定使用情形進行優化。
@@ -137,7 +133,7 @@ Cloud Manager在多個地理區域的資料中心建立環境，提供全球覆�
 
 與現在的情況相比，這也有明顯不同：
 
-* 一個評估階段，確保滿足所有先決條件；包括，例如：
+* 一個評估階段，以確保滿足所有先決條件；包括，例如：
 
    * 法律要求
 
@@ -150,6 +146,10 @@ Cloud Manager在多個地理區域的資料中心建立環境，提供全球覆�
    * 代碼更新；任何為以前版本開發的客戶應用程式AEM都需要審查並可能更新。
 
    * 內容遷移
+
+>[!TIP]
+>
+>有關登機過程的完整概述，請參閱 [登機之旅。](/help/journey-onboarding/overview.md)
 
 ## 開發 {#developing}
 
@@ -227,7 +227,7 @@ Web控制台（其中管理OSGI捆綁包及其關聯配置，並且以前是Quic
 
 對as a Cloud Service的一AEM個主要改變是完全整合地使用AdobeID訪問作者層。
 
-這需要使用 [Adobe管理控制台](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 用於管理用戶和組。 用戶帳戶使您的用戶能夠訪問Adobe產品和服務，因為用戶配置檔案資訊集中在AdobeIdentity Management系統(IMS)中，以便在所有雲服務中共用。 一旦分配了訪AEM問權限，用戶帳戶就可以AEM在as a Cloud Service中引用（如以前）;例如，用於從「安全」用戶介面定AEM義角色和權限。
+這需要使用 [Adobe管理控制台](https://helpx.adobe.com/enterprise/using/admin-console.html) 用於管理用戶和組。 用戶帳戶使您的用戶能夠訪問Adobe產品和服務，因為用戶配置檔案資訊集中在AdobeIdentity Management系統(IMS)中，以便在所有雲服務中共用。 一旦分配了訪AEM問權限，用戶帳戶就可以AEM在as a Cloud Service中引用（如以前）;例如，用於從「安全」用戶介面定AEM義角色和權限。
 
 這結合了以下優點：
 
@@ -273,6 +273,6 @@ Adobe Experience Manager資產as a Cloud Service提供雲本地PaaS解決方案�
 
 >[!TIP]
 >
->一旦您概述了AEMas a Cloud Service，您就可以通過查看 [登機之旅。](/help/journey-onboarding/home.md)
+>一旦您概述了AEMas a Cloud Service，您就可以通過查看 [登機之旅。](/help/journey-onboarding/overview.md)
 >
 >已裝上或準備好深入測試功AEM能？ 安裝 [參AEM考演示附件](/help/journey-sites/demos-add-on/overview.md) 使用豐AEM富的示例來探索功能。

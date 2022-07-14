@@ -2,7 +2,7 @@
 title: 管理環境
 description: 瞭解您可以建立的環境類型以及如何為Cloud Manager項目建立這些環境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 0%
@@ -24,8 +24,8 @@ ht-degree: 0%
 
 單個環境的功能取決於在包含 [的子菜單。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
-* [網站](/help/sites-cloud/home.md)
-* [資產](/help/assets/home.md)
+* [Sites](/help/sites-cloud/home.md)
+* [Assets](/help/assets/home.md)
 * [Forms](/help/forms/home.md)
 * [畫面](/help/screens-cloud/home.md)
 

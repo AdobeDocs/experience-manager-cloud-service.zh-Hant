@@ -2,7 +2,7 @@
 title: 授予對前端開發人員的訪問權限
 description: 將前端開發人員裝載到Cloud Manager中，以便他們能夠訪問您的站AEM點Git儲存庫和管道。
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
@@ -91,7 +91,7 @@ ht-degree: 0%
 * 程式的名稱或程式的URL [從雲管理器複製](pipeline-setup.md#login)
 * 前端設計要求
 
-## 下一步是什麼 {#what-is-next}
+## 下一步 {#what-is-next}
 
 現在，您已完成快速站點創AEM建旅程的這一部分，您應該知道：
 
@@ -104,4 +104,4 @@ ht-degree: 0%
 
 建議您通過審閱文檔進入快速站點建立過程的下一部分 [檢索前端開發人員憑據，](retrieve-access.md) 下面是一些附加的可選資源，這些資源對本文檔中提到的一些概念進行了更深入的瞭解，但不需要繼續旅行。
 
-* [登機之旅](/help/journey-onboarding/home.md)  — 本指南是您的出發點，可確保您的團隊已建立並能夠訪問AEMas a Cloud Service。
+* [登機之旅](/help/journey-onboarding/overview.md)  — 本指南是您的出發點，可確保您的團隊已建立並能夠訪問AEMas a Cloud Service。
