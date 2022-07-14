@@ -1,9 +1,9 @@
 ---
 title: 管理內容片段
 description: 瞭解如何使用內容片段控制台管AEM理內容片段；頁面創作，或作為無頭內容的基礎。
-source-git-commit: 2c5b04d297a71a276ef3e85386f052de36337622
+source-git-commit: 9de8becfd69ea2a65a847cba88468c94e2fdf484
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2047'
 ht-degree: 2%
 
 ---
@@ -69,13 +69,13 @@ ht-degree: 2%
 在存在期間，內容片段可以具有幾種狀態，如 [內容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
 
 * **新建**
-已建立新的內容片段，但從未在內容片段編輯器中編輯或開啟。
+已在內容片段編輯器中建立了新的內容片段，但從未編輯或開啟。
 * **草稿**
-在內容片段編輯器中編輯或開啟內容片段之前，已有人對其進行編輯或開啟。
+有人已編輯或開啟內容片段編輯器中的（新）內容片段 — 但尚未發佈。
 * **已發佈**
 內容片段已發佈。
 * **已修改**
-內容片段在發佈後（但在再次發佈之前）已編輯。
+內容片段在發佈後（但在發佈修改之前）已編輯。
 * **未發佈**
 內容片段已未發佈。
 
