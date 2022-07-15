@@ -2,10 +2,10 @@
 title: 影像的顏色標籤
 description: Experience Manager Assets使您能夠區分影像中的顏色，並自動將這些顏色作為標籤應用。 然後，可以使用這些標籤來搜索和篩選影像。
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
+source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1195'
+ht-degree: 3%
 
 ---
 
@@ -16,10 +16,6 @@ ht-degree: 0%
 Experience Manager Assets使用Adobe SenseiAI功能來區分影像中的顏色，並在攝取時自動將這些顏色作為標籤。 這些標籤基於影像顏色合成，支援增強的搜索體驗。
 
 您可以配置標籤到影像的顏色數量，以便以後可以根據這些顏色搜索影像。 Experience Manager Assets根據影像中的顏色覆蓋率應用標籤。 也可以配置顏色標籤的顯示格式。
-
->[!NOTE]
->
->此功能在預發行渠道中可用。 請參閱 [預發行渠道文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 的子菜單。
 
 下圖說明了在Experience Manager Assets為影像配置和管理顏色標籤時所執行的任務的順序：
 
