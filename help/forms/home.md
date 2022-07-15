@@ -1,12 +1,12 @@
 ---
 title: 簡介 [!DNL AEM Forms] as a Cloud Service
-description: 瞭解AEM Forms並瞭解它如何幫助您生成業務就緒型文檔和形成內容。 瞭解平台即服務(PaaS)，以及如何管理企業級數字表單和業務流程，以及將Forms連接到當前資料源。
+description: 探索 AEM Forms 並了解此表單如何幫助您製作業務適用的文件和表單內容。 了解關於 Platform-as-a-Service (PaaS)，以及如何管理企業級數位表單和業務流程，以及連接表單至現有的資料來源。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

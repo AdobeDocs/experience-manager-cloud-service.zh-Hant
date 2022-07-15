@@ -4,8 +4,8 @@ description: 從此處開始，概括瞭解從登機過程到AEMas a Cloud Servi
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
