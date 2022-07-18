@@ -2,10 +2,10 @@
 title: 將內容插入目標
 description: 將內容插入目標
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 05765bdaa681502b60fc5a7c943e2265c09764ec
+source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 16%
+source-wordcount: '908'
+ht-degree: 12%
 
 ---
 
@@ -44,8 +44,7 @@ ht-degree: 16%
 
    >[!IMPORTANT]
    >
-   >只有您屬於本地環境，您才能啟動對目標環境的接收 **AEM管理員** 正在傳輸內容的Cloud Service實例中的組。 如果您不屬於管理AEM員組，則在嘗試開始攝取時將出現如下所示的錯誤。
-   >![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
+   >只有您屬於本地環境，您才能啟動對目標環境的接收 **AEM管理員** 目標Cloud Service作者服務上的組。 如果無法開始攝取，請參閱 [無法啟動攝取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 的子菜單。
 
    >[!IMPORTANT]
    >
@@ -103,7 +102,25 @@ ht-degree: 16%
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
+## 疑難排解 {#troubleshooting}
 
+### CAM無法檢索遷移令牌 {#cam-unable-to-retrieve-the-migration-token}
+
+遷移令牌的自動檢索可能因不同原因而失敗，包括您 [通過雲管理器設定IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 在目標Cloud Service環境中。  在這些情況下，當您嘗試開始攝取時，將看到以下對話框：
+
+![影像](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
+
+您需要通過按一下對話框上的「獲取令牌」連結手動檢索遷移令牌。 這將開啟另一個顯示令牌的頁籤。 然後，可以複製標籤並將其貼上到 **遷移令牌輸入** 的子菜單。 現在，你應該能開始消化。
+
+>[!NOTE]
+>
+>該令牌將可供屬於本地的用戶使用 **AEM管理員** 目標Cloud Service作者服務上的組。
+
+### 無法啟動攝取 {#unable-to-start-ingestion}
+
+只有您屬於本地環境，您才能啟動對目標環境的接收 **AEM管理員** 目標Cloud Service作者服務上的組。 如果您不屬於管理AEM員組，則在嘗試開始攝取時將出現如下所示的錯誤。 您可以要求管理員將您添加到本地 **AEM管理員** 或者要求令牌本身，然後你可以將令牌貼上到 **遷移令牌輸入** 的子菜單。
+
+![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ## 下一步 {#whats-next}
 
