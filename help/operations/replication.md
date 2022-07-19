@@ -2,9 +2,9 @@
 title: 複寫
 description: 分發和排除複製故障。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
+source-git-commit: b79752c43cd9907236b511aa1be60b5b2256a7b8
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1259'
 ht-degree: 1%
 
 ---
@@ -172,6 +172,9 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 整體 `ReplicationStatus` 僅當複製操作包括至少一個預設處於活動狀態的代理時，才修改資源的。 在上例中，情況並非如此，因為複製只是使用「預覽」代理。 因此，您需要使用 `getStatusForAgent()` 方法，它允許查詢特定代理的狀態。 此方法也適用於「發佈」代理。 如果使用提供的代理執行了任何複製操作，則返回非空值。
 
+### 使內容無效的方法 {#invalidating-content}
+
+您可以直接使內容失效，方法是使用作者的Sling Content Invalidation(SCD)（首選方法），或使用複製API調用發佈調度程式刷新複製代理。 請參閱 [快取](/help/implementing/dispatcher/caching.md) 的子菜單。
 
 **複製API容量限制**
 
@@ -179,6 +182,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 如果您的應用程式邏輯不需要原子複製，則可以通過設定 `ReplicationOptions.setUseAtomicCalls` 為false，它將接受任意數目的路徑，但在內部建立儲存段以保持在此限制以下。
 
 每個複製調用所傳輸的內容的大小不得超過 `10 MB`。 這包括節點和屬性，但不包括任何二進位檔案（工作流包和內容包被視為二進位檔案）。
+
 
 ## 疑難排解 {#troubleshooting}
 

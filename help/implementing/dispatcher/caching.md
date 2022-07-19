@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 91a88cb02192defdd651ecb6d108d4540186d06e
+source-git-commit: ff78e359cf79afcb4818e0599dca5468b4e6c754
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2591'
 ht-degree: 1%
 
 ---
@@ -205,36 +205,232 @@ Define DISABLE_DEFAULT_CACHING
 
 與以前版本的AEM頁面一樣，發佈或取消發佈頁面將從調度程式快取中清除內容。 如果懷疑存在快取問題，客戶應重新發佈有問題的頁面，並確保虛擬主機與ServerAlias localhost匹配，而ServerAlias localhost是調度程式快取失效所必需的。
 
-
 當發佈實例從作者處收到頁面或資產的新版本時，它使用刷新代理使其調度程式上的適當路徑無效。 更新的路徑將從調度程式快取及其父快取中刪除到一個級別(您可以使用 [statfilesel（狀態檔案級）](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
 
-### 顯式調度程式快取失效 {#explicit-invalidation}
+## 調度程式快取的顯式失效 {#explicit-invalidation}
 
-通常，不需要手動使調度程式中的內容無效，但如果需要，可能會使其無效。
+Adobe建議依靠標準快取頭來控制內容交付生命週期。 但是，如果需要，可以直接使調度程式中的內容無效。
+
+以下清單包含可能希望顯式使快取失效（同時可選地偵聽無效完成情況）的情形：
+
+* 在發佈內容（如經驗片段或內容片段）後，將引用這些元素的已發佈和快取內容無效。
+* 在引用的頁已成功失效時通知外部系統。
+
+有兩種方法可顯式使快取無效：
+
+* 首選方法是使用作者的Sling Content Distribution(SCD)。
+* 使用複製API調用發佈調度程式刷新複製代理。
+
+這些方法在層可用性、消除重複事件的能力和事件處理保證方面存在差異。 下表概述了以下選項：
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>N/A</th>
+    <th>層可用性</th>
+    <th>重複資料消除 </th>
+    <th>保證 </th>
+    <th>動作 </th>
+    <th>影響 </th>
+    <th>說明 </th>
+  </tr>  
+  <tr>
+    <td>Sling內容分發(SCD)API</td>
+    <td>作者</td>
+    <td>可能使用Discovery API或啟用 <a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">重複資料消除模式</a>。</td>
+    <td>至少一次。</td>
+    <td>
+     <ol>
+       <li>新增</li>
+       <li>刪除</li>
+       <li>失效</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>分層/統計級別</li>
+       <li>分層/統計級別</li>
+       <li>僅級別資源</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>發佈內容並使快取失效。</li>
+       <li>刪除內容並使快取失效。</li>
+       <li>在不發佈內容的情況下使內容失效。</li>
+     </ol>
+     </td>
+  </tr>
+  <tr>
+    <td>複製API</td>
+    <td>發佈</td>
+    <td>不可能，在每個發佈實例上引發的事件。</td>
+    <td>盡力。</td>
+    <td>
+     <ol>
+       <li>激活</li>
+       <li>停用</li>
+       <li>刪除</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>分層/統計級別</li>
+       <li>分層/統計級別</li>
+       <li>分層/統計級別</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>發佈內容並使快取失效。</li>
+       <li>從作者/發佈層 — 刪除內容並使快取失效。</li>
+       <li><p><strong>從作者層</strong>  — 刪除內容並使快取失效（如果從發佈代理上的AEM作者層觸發）。</p>
+           <p><strong>從發佈層</strong>  — 僅使快取失效（如果從刷新或僅資源刷新代理上的AEM發佈層觸發）。</p>
+       </li>
+     </ol>
+     </td>
+  </tr>
+  </tbody>
+</table>
+
+請注意，與快取失效直接相關的兩個操作是Sling Content Distribution(SCD)API Invalidate和Replication API Deactivate。
+
+另外，從桌子上我們可以看到：
+
+* 當必須保證每個事件（例如與需要準確知識的外部系統同步）時，需要SCD API。 請注意，如果在無效調用時存在發佈層升級事件，則當每個新發佈處理無效時，將引發一個附加事件。
+
+* 使用複製API不是常見的使用情形，但應用於使快取失效的觸發器來自發佈層而不是作者層的情況。 如果配置了調度程式TTL，則此功能可能非常有用。
+
+總之，如果您希望使調度程式快取失效，建議的選項是使用作者提供的SCD API Invalidate操作。 此外，您還可以偵聽事件，這樣您就可以觸發更多下游操作。
+
+### Sling內容分發(SCD) {#sling-distribution}
 
 >[!NOTE]
->在AEMas a Cloud Service之前，有兩種方法使調度程式快取無效。
->
->1. 調用複製代理，指定發佈調度程式刷新代理
->2. 直接調用 `invalidate.cache` API(例如， `POST /dispatcher/invalidate.cache`)
+>使用下面介紹的說明時，請注意您應該在AEM Cloud Service開發環境中test自定義代碼，而不是在本地。
 
->
->調度員的 `invalidate.cache` 不再支援API方法，因為它只針對特定的調度程式節點。 AEMas a Cloud Service在服務級別運行，而不是單個節點級別，因此 [取消驗證快取頁AEM面](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) 頁面對AEMas a Cloud Service無效
+使用Author的SCD操作時，實現模式如下：
 
-應使用複製刷新代理。 可以使用 [複製API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html)。 刷新代理終結點不可配置，但已預配置為指向調度程式，與運行刷新代理的發佈服務匹配。 刷新代理通常可由OSGi事件或工作流觸發。
+1. 從作者，編寫自定義代碼以調用sling內容分發 [API](https://sling.apache.org/documentation/bundles/content-distribution.html)，使用路徑清單傳遞無效操作：
+
+```
+@Reference
+private Distributor distributor;
+
+ResourceResolver resolver = ...; // the resource resolver used for authorizing the request
+String agentName = "publish";    // the name of the agent used to distribute the request
+
+String pathToInvalidate = "/content/to/invalidate";
+DistributionRequest distributionRequest = new SimpleDistributionRequest(DistributionRequestType.INVALIDATE, false, pathToInvalidate);
+distributor.distribute(agentName, resolver, distributionRequest);
+```
+
+* （可選）偵聽反映所有調度程式實例的資源無效的事件：
+
+
+```
+package org.apache.sling.distribution.journal.shared;
+
+import org.apache.sling.discovery.DiscoveryService;
+import org.apache.sling.distribution.journal.impl.event.DistributionEvent;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.event.Event;
+import org.osgi.service.event.EventHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import static org.apache.sling.distribution.DistributionRequestType.INVALIDATE;
+import static org.apache.sling.distribution.event.DistributionEventProperties.DISTRIBUTION_PATHS;
+import static org.apache.sling.distribution.event.DistributionEventProperties.DISTRIBUTION_TYPE;
+import static org.apache.sling.distribution.event.DistributionEventTopics.AGENT_PACKAGE_DISTRIBUTED;
+import static org.osgi.service.event.EventConstants.EVENT_TOPIC;
+
+@Component(immediate = true, service = EventHandler.class, property = {
+        EVENT_TOPIC + "=" + AGENT_PACKAGE_DISTRIBUTED
+})
+public class InvalidatedHandler implements EventHandler {
+    private static final Logger LOG = LoggerFactory.getLogger(InvalidatedHandler.class);
+
+    @Reference
+    private DiscoveryService discoveryService;
+
+    @Override
+    public void handleEvent(Event event) {
+
+        String distributionType = (String) event.getProperty(DISTRIBUTION_TYPE);
+
+        if (INVALIDATE.name().equals(distributionType)) {
+            boolean isLeader = discoveryService.getTopology().getLocalInstance().isLeader();
+            // process the OSGi event on the leader author instance
+            if (isLeader) {
+                String[] paths = (String[]) event.getProperty(DISTRIBUTION_PATHS);
+                String packageId = (String) event.getProperty(DistributionEvent.PACKAGE_ID);
+                invalidated(paths, packageId);
+            }
+        }
+    }
+
+    private void invalidated(String[] paths, String packageId) {
+        // custom logic
+        LOG.info("Successfully applied package with id {}, paths {}", packageId, paths);
+    }
+}
+```
+
+<!-- Optionally, instead of using the isLeader approach, one could add an OSGi configuration for the PID org.apache.sling.distribution.journal.impl.publisher.DistributedEventNotifierManager and property deduplicateEvent=true. But we'll stick with just one strategy and not mention it (double-check this).**review this**-->
+
+* （可選）在 `invalidated(String[] paths, String packageId)` 的上界。
+
+>[!NOTE]
+>
+>AdobeCDN在分派程式失效時不刷新。 Adobe管理的CDN考慮TTL，因此不需要刷新它。
+
+### 複製API {#replication-api}
+
+下面是使用複製API停用操作時的實現模式：
+
+1. 在發佈層上，調用複製API以觸發發佈調度程式刷新複製代理。
+
+刷新代理終結點不可配置，但是預配置為指向調度程式，與與刷新代理一起運行的發佈服務匹配。
+
+刷新代理通常可由基於OSGi事件或工作流的自定義代碼觸發。
+
+```
+String[] paths = …
+ReplicationOptions options = new ReplicationOptions();
+options.setSynchronous(true);
+options.setFilter( new AgentFilter {
+  public boolean isIncluded (Agent agent) {
+   return agent.getId().equals(“flush”);
+  }
+});
+
+Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
+```
+
+<!-- In general, it will not be necessary to manually invalidate content in the dispatcher, but it is possible if needed.
+
+>[!NOTE]
+>Prior to AEM as a Cloud Service, there were two ways of invalidating the dispatcher cache.
+>
+>1. Invoke the replication agent, specifying the publish dispatcher flush agent
+>2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
+>
+>The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service.
+
+The replication flush agent should be used. This can be done using the [Replication API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
 <!-- Need to find a new link and/or example -->
 <!-- 
 and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents). 
--->
 
-下圖說明了這一點。
+The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-如果擔心調度程式快取未清除，請與 [客戶支援](https://helpx.adobe.com/support.ec.html) 如果需要，可以刷新調度程式快取。
+If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
-Adobe管理的CDN考慮TTL，因此不需要刷新它。 如果有問題， [聯繫客戶支援](https://helpx.adobe.com/support.ec.html) 支援，他們可以根據需要刷新Adobe管理的CDN快取。
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## 客戶端庫和版本一致性 {#content-consistency}
 
