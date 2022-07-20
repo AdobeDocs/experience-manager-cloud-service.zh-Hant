@@ -2,10 +2,10 @@
 title: 內容傳輸工具入門
 description: 內容傳輸工具入門
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
+source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 8%
+source-wordcount: '1341'
+ht-degree: 7%
 
 ---
 
@@ -44,6 +44,18 @@ ht-degree: 8%
 
 >[!NOTE]
 >如果 `HTTP/2 200` 已接收，連接到AEMas a Cloud Service成功。
+
+### 啟用SSL日誌記錄 {#enable-ssl-logging}
+
+瞭解SSL/TLS連接問題有時會很困難。 要在提取過程中排除連接問題，您可以通過源環境的系統控制台啟用SSL日誌記錄，AEM具體步驟如下：
+
+1. 轉到源實例上的Adobe Experience ManagerWeb控制台 **工具 — 操作 — Web控制台** 或直接到URL *https://serveraddress:serverport/system/console/configMgr*
+1. 搜索 **內容傳輸工具抽取服務配置**
+1. 使用鉛筆表徵圖按鈕編輯其配置值
+1. 啟用 **啟用SSL日誌以進行提取** 設定，然後按 **保存**:
+
+   ![影像](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
+
 
 ## 執行「內容轉移工具」  {#running-tool}
 
