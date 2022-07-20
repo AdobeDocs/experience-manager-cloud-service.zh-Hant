@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助資源與文件連結
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f84327096951772e1bed8656334841e1292d6bcf
+source-git-commit: 0ee8f080c0e712e4a34086a75cbd8750a7d08b74
 workflow-type: tm+mt
-source-wordcount: '3677'
+source-wordcount: '3680'
 ht-degree: 41%
 
 ---
@@ -500,6 +500,7 @@ ht-degree: 41%
       + 將元件新增至最適化表單{#add-components-to-an-adaptive-form}
          + [在最適化表單中使用驗證碼](/help/forms/captcha-adaptive-forms.md)
          + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+         + [應用Scribble簽名](/help/forms/signing-forms-using-scribble.md)
       + 設定版面並將樣式套用至最適化表單{#configure-layout-of-an-adaptive-form}
          + [設定最適化表單的版面](/help/forms/layout-capabilities-adaptive-forms.md)
          + [使用版面模式調整元件大小](/help/forms/resize-using-layout-mode.md)
