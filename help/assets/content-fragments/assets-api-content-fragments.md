@@ -3,16 +3,16 @@ title: Adobe Experience Manager as a Cloud Service資產HTTP API中的內容片�
 description: 瞭解資產HTTP API中對內容片段的支援，這是無頭傳遞功能AEM的重要部分。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: ad51218652d3e7fbe90abb1fc02cce7212394c21
+source-git-commit: cf8c8353d83e4446f52235a2ea1a322a84786b61
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
 
 # AEM Assets HTTP API 內容片段支援 {#content-fragments-support-in-aem-assets-http-api}
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 瞭解資產HTTP API中對內容片段的支援，這是無頭傳遞功能AEM的重要部分。
 
@@ -204,7 +204,7 @@ Assets REST API公開了對資料夾屬性的訪問；例如，其名稱、標�
 >
 >根據子資產和資料夾的資產類型，子實體清單可能已經包含定義相應子實體的全套屬性。 或者，對於子實體清單中的實體，只能公開縮減的屬性集。
 
-### 資產 {#assets}
+### Assets {#assets}
 
 如果請求資產，響應將返回其元資料；如標題、名稱和由相應資產架構定義的其他資訊。
 
@@ -255,47 +255,6 @@ A [內容片段](/help/assets/content-fragments/content-fragments.md) 是一種�
 >[!NOTE]
 >
 >有關詳細資訊，請參閱 [API參考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)。 特別是， [Adobe Experience Manager資產API — 內容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
-
-### 讀取/傳遞 {#read-delivery}
-
-用法：
-
-`GET /{cfParentPath}/{cfName}.json`
-
-例如：
-
-`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
-
-響應是以內容片段中的結構化內容進行序列化的JSON。 引用作為引用URL傳遞。
-
-有兩種讀操作：
-
-* 按路徑讀取特定內容片段，這將返回內容片段的JSON表示。
-* 按路徑讀取內容片段的資料夾：這將返回資料夾內所有內容片段的JSON表示法。
-
-### 建立 {#create}
-
-用法：
-
-`POST /{cfParentPath}/{cfName}`
-
-主體必須包含要建立的內容片段的JSON表示法，包括應在內容片段元素上設定的任何初始內容。 必須設定 `cq:model` 屬性，並且它必須指向有效的內容片段模型。 如果無法執行此操作，將導致錯誤。 還需要添加標題 `Content-Type` 設定為 `application/json`。
-
-### 更新 {#update}
-
-使用是通過
-
-`PUT /{cfParentPath}/{cfName}`
-
-主體必須包含為給定內容片段更新的內容的JSON表示。
-
-這可以只是內容片段、單個元素或所有元素值和/或元資料的標題或說明。
-
-### 刪除 {#delete}
-
-用法：
-
-`DELETE /{cfParentPath}/{cfName}`
 
 ## 限制 {#limitations}
 
