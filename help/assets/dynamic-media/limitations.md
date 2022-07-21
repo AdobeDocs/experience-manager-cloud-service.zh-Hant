@@ -1,16 +1,17 @@
 ---
 title: Dynamic Media限制
-description: '瞭解建立映像集或旋轉集或上載PDF時的最佳做法和強制限制。 還瞭解Dynamic Media查看器不支援的Web瀏覽器和作業系統組合。 '
+description: 瞭解建立映像集或旋轉集或上載PDF時的最佳做法和強制限制。 還瞭解Dynamic Media查看器不支援的Web瀏覽器和作業系統組合。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
+source-git-commit: f93db6f59d927b2e302f2c0d7d103ca73e9b4824
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 6%
+source-wordcount: '254'
+ht-degree: 4%
 
 ---
 
@@ -20,11 +21,10 @@ ht-degree: 6%
 
 本主題包括以下部分：
 
-* Dynamic Media對資產類型的最佳做法和強制限制
+* [Dynamic Media對資產類型的最佳做法和強制限制](#best-practice-enforced-limits)
+* [不支援的Web瀏覽器和Dynamic Media查看器的作業系統組合](#unsupported-browser-os)
 
-<!-- * Unsupported web browser and operating system combinations for Dynamic Media Viewers -->
-
-## Dynamic Media對資產類型的最佳做法和強制限制
+## Dynamic Media對資產類型的最佳做法和強制限制 {#best-practice-enforced-limits}
 
 在建立「旋轉集」或「映像集」或上載頁面提取PDF時，Adobe建議採用以下最佳做法並強制實施以下限制：
 
@@ -38,16 +38,16 @@ ht-degree: 6%
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
-<!-- ## Unsupported web browser and operating system combinations for Dynamic Media Viewers
+## 不支援的Web瀏覽器和Dynamic Media查看器的作業系統組合 {#unsupported-browser-os}
 
-Dynamic Media Viewers do not support following combinations of web browser and operating system.
+Dynamic Media查看器不支援以下Web瀏覽器和作業系統組合。
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
 * Internet Explorer 11 + Windows Phone 8.1
-* Internet Explorer 11 + Windows Phone 8.1 Update
-* Safari 6 + iOS 6.0.1
-* Safari 7 + iOS 7.1
-* Safari 7 + macOS X 10.9 Mavericks
-* Safari 8 + iOS 8.4
-* Safari 8 + macOS X 10.10 Yosemite -->
+* Internet Explorer 11 + Windows Phone 8.1更新
+* Safari 6 +iOS6.0.1
+* Safari 7 +iOS7.1
+* Safari 7 + OS X 10.9小牛隊
+* Safari 8 +iOS8.4
+* Safari 8 + OS X 10.10 Yosemite
