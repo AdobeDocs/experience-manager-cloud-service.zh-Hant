@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
+source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2251'
 ht-degree: 1%
 
 ---
@@ -280,17 +280,7 @@ ht-degree: 1%
 
 如果不再需要自定義出廠設定索引，則必須複製出廠設定索引定義。 例如，如果您已部署 `damAssetLucene-8-custom-3`，但不再需要自定義，並希望切換回預設 `damAssetLucene-8` 索引，則必須添加索引 `damAssetLucene-8-custom-4` 包含的索引定義 `damAssetLucene-8`。
 
-## 索引優化 {#index-optimizations}
+## 索引和查詢優化 {#index-query-optimizations}
 
-Apache Jackrabbit Oak支援靈活的索引配置，以高效地處理搜索查詢。 索引對於較大的儲存庫尤為重要。 請確保所有查詢都有相應的索引作為備份。 沒有合適索引的查詢可以讀取數千個節點，然後記錄為警告。 應通過分析日誌檔案來標識此類查詢，以便可以優化索引定義。 請參閱 [此頁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) 的子菜單。
-
-### Lucene全文索引AEM在as a Cloud Service {#index-lucene}
-
-全文索引 `/oak:index/lucene-2` 可能會變得非常大，因為預設情況下它為儲存庫中的所AEM有節點編製索引。  在Adobe計畫退出此索引後，它將不再在as a Cloud Service產品端使AEM用，並且不應要求運行客戶代碼。 對於AEM具有通用Lucene索引的as a Cloud Service環境，Adobe正在與客戶單獨協作，以找到一種協調的方法來補償此索引並使用更好的優化索引。 客戶無需在未另行通知的情況下採取任何行動。 在AEM此優化方面需要採取行動時，as a Cloud Service客戶將獲得Adobe通知。 如果自定義查詢需要此索引，作為臨時解決方案，應使用其他名稱建立此索引的副本，例如， `/oak:index/acme.lucene-1-custom-1`，如所述 [這裡](/help/operations/indexing.md)。
-預設情況下，此優化不適用於其AEM他托管在本地或由Adobe Managed Services管理的環境。
-
-## 查詢優化 {#index-query}
-
-的 **查詢效能** 工具允許您觀察常用和慢速的JCR查詢。 此外，它還能夠分析查詢並顯示有關的各種資訊，最顯著的是，如果某個索引正用於此查詢或不使用該索引。
-
-與本AEM地不AEM同，as a Cloud Service **查詢效能** 工具。 現在，它可通過Cloud Manager上的Developer Console（在Cloud Manager中） [查詢](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) 頁籤。
+Apache Jackrabbit Oak支援靈活的索引配置，以高效地處理搜索查詢。 索引對於較大的儲存庫尤為重要。 請確保所有查詢都有相應的索引作為備份。 沒有合適索引的查詢可以讀取數千個節點，然後記錄為警告。
+請參閱 [此頁](best-practices-for-querying-and-indexing.md) 查詢和索引的優化方式。
