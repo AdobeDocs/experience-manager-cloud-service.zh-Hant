@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
+source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2253'
 ht-degree: 1%
 
 ---
@@ -283,4 +283,5 @@ ht-degree: 1%
 ## 索引和查詢優化 {#index-query-optimizations}
 
 Apache Jackrabbit Oak支援靈活的索引配置，以高效地處理搜索查詢。 索引對於較大的儲存庫尤為重要。 請確保所有查詢都有相應的索引作為備份。 沒有合適索引的查詢可以讀取數千個節點，然後記錄為警告。
-請參閱 [此頁](best-practices-for-querying-and-indexing.md) 查詢和索引的優化方式。
+
+請參閱 [此文檔](query-and-indexing-best-practices.md) 有關如何優化查詢和索引的資訊。
