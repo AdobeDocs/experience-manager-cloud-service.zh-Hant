@@ -2,9 +2,9 @@
 title: 管理SSL證書簡介
 description: 瞭解Cloud Manager如何為您提供自助工具來安裝SSL證書。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 898f7bc46a3f1b0ac93ee43fbf7b60a11682a073
+source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 0%
 >id="aemcloud_golive_sslcert"
 >title="管理SSL證書"
 >abstract="瞭解Cloud Manager如何為您提供自助服務工具來安裝和管理SSL證書，以保護您的站點的安全。 Cloud Manager使用平台TLS服務來管理客戶擁有並從第三方認證機構獲得的SSL證書和私鑰。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="查看、更新和替換SSL證書"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="檢查SSL證書的狀態"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="查看、更新和替換SSL證書"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="檢查SSL證書的狀態"
 
 Cloud Manager為您提供自助服務工具來安裝和管理SSL證書，以保護您的站點供用戶使用。 Cloud Manager使用平台TLS服務來管理客戶擁有的、從第三方認證機構（如Let&#39;s Encrypt）獲取的SSL證書和私鑰。
 
