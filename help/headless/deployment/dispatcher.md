@@ -3,7 +3,7 @@ title: 具有無頭的調度AEM程式配置
 description: Dispatcher是Adobe Experience Manager發佈環境前的快取和安全層。 幾種配置用於向無頭應用程式開啟GraphQL端點。
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 6%

@@ -3,7 +3,7 @@ title: 永續GraphQL查詢
 description: 瞭解如何在Adobe Experience Manager as a Cloud Service保留GraphQL查詢以優化效能。 永續查詢可由客戶端應用使用HTTPGET方法來請求，響應可在分發程式和CDN層快取，最終改善客戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 >
 >請參閱 [在配置瀏覽器中啟用內容片段功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) 的子菜單。
 >
->的 **GraphQL持久查詢** 需要啟用相應的站點配置。
+>的 **GraphQL永續查詢** 需要啟用相應的站點配置。
 
 例如，如果有一個特定查詢 `my-query`，它使用模型 `my-model` 從站點配置 `my-conf`:
 
@@ -192,9 +192,9 @@ GraphiQL IDE是 **首選** 用於保留查詢的方法。 使用 **捲曲** 命�
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 ```
 
-位置 `PERSISTENT_PATH` 是保存永久查詢的縮短路徑。
+位置 `PERSISTENT_PATH` 是保存永續查詢的縮短路徑。
 
-1. 例如 `wknd` 是配置名和 `plain-article-query` 是永久查詢的名稱。 要執行查詢，請執行以下操作：
+1. 例如 `wknd` 是配置名和 `plain-article-query` 是永續查詢的名稱。 要執行查詢，請執行以下操作：
 
    ```shell
    $ curl -X GET \
@@ -205,7 +205,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
    >[!NOTE]
    >
-   > 查詢變數和值必須正確 [編碼](#encoding-query-url) 執行永久查詢時。
+   > 查詢變數和值必須正確 [編碼](#encoding-query-url) 執行永續查詢時。
 
    例如：
 
@@ -310,8 +310,8 @@ URL可分為以下部分：
 
 | URL部分 | 說明 |
 |----------| -------------|
-| `/graphql/execute.json` | 永久查詢終結點 |
-| `/wknd/adventure-by-path` | 持久查詢路徑 |
+| `/graphql/execute.json` | 永續查詢終結點 |
+| `/wknd/adventure-by-path` | 永續查詢路徑 |
 | `%3B` | 編碼 `;` |
 | `adventurePath` | 查詢變數 |
 | `%3D` | 編碼 `=` |
@@ -330,9 +330,9 @@ URL可分為以下部分：
 
 應始終在AEM Author服務上建立永續查詢，然後將其發佈（複製）到AEM Publish服務。 通常，永續查詢是在較低環境（如本地或開發環境）上建立和測試的。 然後，有必要將永續查詢提升到更高級別的環境，最終使這些查詢在生產AEM發佈環境中可用，供客戶端應用程式使用。
 
-### 包持久性查詢
+### 包永續查詢
 
-可將持久查詢內置到 [包AEM](/help/implementing/developing/tools/package-manager.md)。 然AEM後可以下載軟體包並將其安裝到不同環境中。 還AEM可以將包從AEM Author環境複製到AEM Publish環境。
+可將永續查詢內置到 [包AEM](/help/implementing/developing/tools/package-manager.md)。 然AEM後可以下載軟體包並將其安裝到不同環境中。 還AEM可以將包從AEM Author環境複製到AEM Publish環境。
 
 要建立包：
 

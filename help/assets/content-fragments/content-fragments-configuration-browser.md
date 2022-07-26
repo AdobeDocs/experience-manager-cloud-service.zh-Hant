@@ -4,10 +4,10 @@ description: 瞭解如何在配置瀏覽器中啟用某些內容片段功能，�
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 15%
+source-wordcount: '371'
+ht-degree: 14%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 15%
 在使用內容片段之前，您需要使用 **配置瀏覽器** 啟用：
 
 * **內容片段模型**  — 強制
-* **GraphQL持久查詢**  — 可選
+* **GraphQL永續查詢**  — 可選
 
 >[!CAUTION]
 >
@@ -63,9 +63,12 @@ ht-degree: 15%
 1. 使用 **建立** 開啟對話框，在其中：
 
    1. 指定 **標題**。
+   1. 的 **名稱** 將成為儲存庫中的節點名稱。
+      * 根據標題自動生成並根據 [命AEM名約定。](/help/implementing/developing/introduction/naming-conventions.md)
+      * 如有必要，您可以調整它。
    1. 要啟用其使用，請選擇
       * **內容片段模型**
-      * **GraphQL持久查詢**
+      * **GraphQL永續查詢**
 
       ![定義配置](assets/cfm-conf-01.png)
 

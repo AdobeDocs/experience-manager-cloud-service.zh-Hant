@@ -2,7 +2,7 @@
 title: 建立配置 — 無頭安裝
 description: 建立配置，作為as a Cloud Service中開始無頭功能的第一步AEM。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 2%
@@ -33,7 +33,7 @@ ht-degree: 2%
       * 必要時可進行調整。
 1. 檢查以下選項：
    * **內容片段模型**
-   * **GraphQL持久查詢**
+   * **GraphQL永續查詢**
 
    ![建立設定](../assets/create-configuration.png)
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->除了 **內容片段模型** 和 **GraphQL持久查詢** 可能是必要的，具體取決於您的實施要求。
+>除了 **內容片段模型** 和 **GraphQL永續查詢** 可能是必要的，具體取決於您的實施要求。
 
 ## 後續步驟 {#next-steps}
 
