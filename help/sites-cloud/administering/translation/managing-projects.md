@@ -4,9 +4,9 @@ description: 瞭解如何在中建立和管理機器和人類翻譯項AEM目。
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 154fb4bf9bea187a2f733c35cc720f3da99755bb
 workflow-type: tm+mt
-source-wordcount: '3863'
+source-wordcount: '3920'
 ht-degree: 0%
 
 ---
@@ -178,6 +178,11 @@ ht-degree: 0%
 ![比較翻譯記憶庫的更改](../assets/update-translation-memory-compare.png)
 
 將AEM將選定的字串發回翻譯管理系統。
+
+* 該操作更新配置的翻譯管理系統(TMS)的翻譯儲存器中現有字串的翻譯。
+* 它不會建立新的翻譯作業。
+* 它通過轉換API將字串的值對及其轉換發回到TMSAEM。
+* 此功能要求將翻譯管理系統配置為與一起使AEM用。
 
 ### 檢查頁面的翻譯狀態 {#check-translation-status}
 
