@@ -3,9 +3,9 @@ title: 使用Dispatcher工具驗證和調試
 description: 使用Dispatcher工具驗證和調試
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
+source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: '2536'
 ht-degree: 1%
 
 ---
@@ -78,6 +78,10 @@ ht-degree: 1%
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
 您可以擁有一個或多個這些檔案。 它們包含 `<VirtualHost>` 與主機名匹配且允許Apache使用不同規則處理每個域通信的條目。 檔案是在 `available_vhosts` 目錄中的符號連結啟用 `enabled_vhosts` 的子菜單。 從 `.vhost` 將包括檔案、其他檔案（如重寫和變數）。
+
+>[!NOTE]
+>
+>在靈活模式下，應使用相對路徑而不是絕對路徑。
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -480,11 +484,15 @@ $ docker exec d75fbd23b29 httpd-test
 隨著Cloud Manager 2021.7.0版的推出，新的Cloud Manager程式將生成許多項目結構 [原AEM型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 或更高版本，包括檔案 **opt-in/USE_SOURCES_DIRECTLY**。 這將刪除 [舊模式](/help/implementing/dispatcher/validation-debug-legacy.md) 在檔案數量和大小上，還會導致SDK和運行時以改進的方式驗證和部署配置。 如果您的調度程式配置沒有此檔案，強烈建議您遷移。 使用以下步驟確保安全過渡：
 
 1. **本地測試。** 使用最新的調度程式工具SDK添加資料夾和檔案 `opt-in/USE_SOURCES_DIRECTLY`。 按照本文中的「本地驗證」說明test調度程式在本地工作。
-2. **雲開發測試：**
+1. **雲開發測試：**
    * 提交檔案 `opt-in/USE_SOURCES_DIRECTLY` 到由非生產管道部署到雲開發環境的git分支。
    * 使用Cloud Manager部署到雲開發環境。
    * Test。 在將更改部署到更高的環境之前，必須驗證您的apache和分派程式配置是否像您預期的那樣工作。 檢查與自定義配置相關的所有行為！ 如果您認為部署的調度程式配置不反映您的自定義配置，請提交客戶支援票證。
-3. **部署到生產：**
+
+   >[!NOTE]
+   >
+   >在靈活模式下，應使用相對路徑而不是絕對路徑。
+1. **部署到生產：**
    * 提交檔案 `opt-in/USE_SOURCES_DIRECTLY` 到生產管道部署到雲階段和生產環境的git分支。
    * 使用雲管理器部署到暫存。
    * Test。 在將更改部署到更高的環境之前，必須驗證您的apache和分派程式配置是否像您預期的那樣工作。 檢查與自定義配置相關的所有行為！ 如果您認為部署的調度程式配置不反映您的自定義配置，請提交客戶支援票證。
