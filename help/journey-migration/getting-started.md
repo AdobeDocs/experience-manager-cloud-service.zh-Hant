@@ -4,8 +4,8 @@ description: 熟悉 AEM as a Cloud Service 移轉的基本知識，開始您的�
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '587'
+ht-degree: 11%
 
 ---
 
@@ -43,7 +43,7 @@ AEMas a Cloud Service為Experience Manager Assets、Forms和螢幕提供了可�
 
 ![影像](/help/journey-migration/assets/migration-process.png)
 
-## 雲加速管理器 {#cloud-acceleration-manager}
+## Cloud Acceleration Manager {#cloud-acceleration-manager}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_overview"
