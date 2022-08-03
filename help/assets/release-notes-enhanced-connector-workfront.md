@@ -2,10 +2,10 @@
 title: ' 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]'
 description: ' 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: d763bacb0844a438ebea6ef206dfa184a49993fe
+source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
@@ -15,23 +15,19 @@ ht-degree: 3%
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.1的發佈日期 [!DNL Workfront for Experience Manager enhanced connector] 是2022年7月1日。
+最新版本1.9.2的發佈日期 [!DNL Workfront for Experience Manager enhanced connector] 是2022年8月3日。
 
 ## 發佈亮點 {#release-highlights}
 
 的最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包括以下增強和錯誤修復：
 
-* 為遷移到Adobe IMS的實例增加了對使用WorkfrontAPI密鑰的Experience Manager和Workfront應用程式之間身份驗證的支援。
+* 的 **[!UICONTROL 上載文檔]** 工作流步驟無法將文檔附加到Workfront。
 
-* 連結外部檔案或資料夾時，Workfront應用程式將顯示 `SERVER_ERROR` 錯誤消息。 錯誤消息引用由於API鍵不匹配而導致的未授權異常。
-
-* 為資產執行「建立任務」工作流時，日誌消息中將顯示「空指針」例外。
-
-* 啟用 `Replace Spaces with DASH` Experience Manager中的「高級設定」下的配置選項，將導致在Workfront建立重複的資料夾。
+* 的 **[!UICONTROL 上載文檔]** 工作流步驟無法將文檔附加到Workfront的任務和問題。 工作流步驟將文檔成功附加到項目。
 
 >[!IMPORTANT]
 >
->Adobe建議您 [升級到最新1.9.1版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector]。
+>Adobe建議您 [升級到最新1.9.2版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector]。
 
 ## 已知問題 {#known-issues}
 
@@ -40,6 +36,18 @@ ht-degree: 3%
 * 當你用經典Workfront經驗時， **[!UICONTROL 發送到]** 的 **[!UICONTROL 更多]** 下拉清單不允許您在Experience Manager中選擇目標目標。 的 **[!UICONTROL 發送到]** 選項使用 **[!UICONTROL 文檔操作]** 下拉清單。 的 **[!UICONTROL 發送到]** 選項正確工作 **[!UICONTROL 更多]** 下拉清單以及 **[!UICONTROL 文檔操作]** 新Workfront體驗中提供的下拉清單。
 
 ## 以前的版本 {#previous-releases}
+
+### 2022年7月發行 {#july-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.1版包含以下更新：
+
+* 為遷移到Adobe IMS的實例增加了對使用WorkfrontAPI密鑰的Experience Manager和Workfront應用程式之間身份驗證的支援。
+
+* 連結外部檔案或資料夾時，Workfront應用程式將顯示 `SERVER_ERROR` 錯誤消息。 錯誤消息引用由於API鍵不匹配而導致的未授權異常。
+
+* 為資產執行「建立任務」工作流時，日誌消息中將顯示「空指針」例外。
+
+* 啟用 `Replace Spaces with DASH` Experience Manager中的「高級設定」下的配置選項，將導致在Workfront建立重複的資料夾。
 
 ### 2022年6月發行 {#june-2022-release}
 
