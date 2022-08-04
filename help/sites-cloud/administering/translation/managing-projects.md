@@ -4,9 +4,9 @@ description: 瞭解如何在中建立和管理機器和人類翻譯項AEM目。
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 154fb4bf9bea187a2f733c35cc720f3da99755bb
+source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
 workflow-type: tm+mt
-source-wordcount: '3920'
+source-wordcount: '3992'
 ht-degree: 0%
 
 ---
@@ -177,12 +177,20 @@ ht-degree: 0%
 
 ![比較翻譯記憶庫的更改](../assets/update-translation-memory-compare.png)
 
-將AEM將選定的字串發回翻譯管理系統。
+更AEM新配置TMS的翻譯儲存器中現有字串的翻譯。
 
-* 該操作更新配置的翻譯管理系統(TMS)的翻譯儲存器中現有字串的翻譯。
+* 該操作更新配置TMS的翻譯儲存器中現有字串的翻譯。
 * 它不會建立新的翻譯作業。
-* 它通過轉換API將字串的值對及其轉換發回到TMSAEM。
-* 此功能要求將翻譯管理系統配置為與一起使AEM用。
+* 它通過翻譯API(參見下AEM面)將翻譯發回TMS。
+
+要使用此功能：
+
+* 必須配置TMS以與一起使AEM用。
+* 連接器需要實現該方法 [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html)。
+   * 此方法中的代碼確定翻譯記憶庫更新請求發生的情況。
+   * 轉AEM換框架通過該方法實現將字串值對（原始和更新的轉換）發回到TMS。
+
+對於使用專有翻譯儲存器的情況，翻譯儲存器更新可以被截取併發送到定制目的地。
 
 ### 檢查頁面的翻譯狀態 {#check-translation-status}
 
