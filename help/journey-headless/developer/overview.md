@@ -3,9 +3,9 @@ title: 無AEM頭開發者之旅
 description: '從此開始，在將Adobe Experience Manager(AEM)as a Cloud Service用作無頭內容管理系統(CMS)時，進行有指導的旅行。 瞭解功能強大、靈活的無頭功能、功能，以及如何在您的第一個無頭開發項目中利用它們。 此過程為您提供開發第一個無頭應用程式所需的所有資訊。 '
 landing-page-description: '瞭解無頭內容的交付和實施。 瞭解有關在業務中制定戰略的更多資訊。 '
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 2ec6b29800867462bbc2e88048c583d4e5eefa57
+source-git-commit: 1424c604e175cce0728f49f548d0bebec76043f4
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1300'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 1%
 | 管理員 | 管理基本設定和配AEM置 | 開發人員與管理員協作，以進行開發所需的配置更改。 |
 | 內容架構師 | 分析對必須直接提供的資料的要求，並定義此資料的結構 | 開發人員與內容架構師合作，瞭解資料的結構和無拘無束地提供資料的要求。 |
 
-此過程中的資訊當然對所有角色都有用，但某些資訊對某些角色來說可能是多餘的。 繼續關注 [即將到來的旅程，涉及其他角色。](/help/journey-documentation/documentation-journeys.md#journeys)
+此行程中的資訊對所有角色都有用，但某些角色可能不需要某些資訊。 繼續關注 [即將到來的旅程，涉及其他角色。](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## 《無頭開發者之旅》 {#the-journey}
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 | 8 | [如何與無頭應用程式一起生活](go-live.md) | 瞭解如何即時部署應用程式並以Git格式獲取您的本地代碼並將其移到Cloud Manager Git for CI/CD管道。 |
 | 9 | [可選 — 如何建立單頁應用程式(SPA)，具AEM有](create-spa.md) | 瞭解無頭功AEM能後，瞭解如何將無頭和無頭交付結合起來，並瞭解如何使用編輯器框架創SPA建可AEM編SPA輯功能。 |
 
-## 下一步是什麼 {#what-is-next}
+## 下一步 {#what-is-next}
 
 您現在已準備好開始Adobe無頭之旅。 我們鼓勵您繼續下一段旅程，閱讀文章 [瞭解CMS無頭開發。](learn-about.md)
 
