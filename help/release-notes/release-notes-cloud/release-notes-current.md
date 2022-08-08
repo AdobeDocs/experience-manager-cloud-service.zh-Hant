@@ -3,9 +3,9 @@ title: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 description: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2340c9416d90f7973109ba57c1769ae892049026
+source-git-commit: 0ae79facb4233988db4a649b8e79ca3041832584
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '955'
 ht-degree: 3%
 
 ---
@@ -111,6 +111,11 @@ ht-degree: 3%
 ### [!DNL Experience Manager] 搶鮮版頻道中可用的新功能 {#prerelease-features-foundation}
 
 * 現AEM在as a Cloud Service與Unified Shell整合，以改進用戶體驗，並將其與所有其它Experience Cloud應用程式統一。 請參閱 [統一AEMShell上的as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 的子菜單。
+
+## Adobe學習管理器連接器 {#learn-manage}
+
+* 新的Adobe學習管理器連接了Adobe Experience Manager Sites、Marketo Engage和Adobe Commerce。 要瞭解更多資訊，請參閱： [Adobe學習管理器使用手冊](https://helpx.adobe.com/learning-manager/user-guide.html)。
+
 
 ## Cloud Manager {#cloud-manager}
 
