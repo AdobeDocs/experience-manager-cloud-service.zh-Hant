@@ -2,9 +2,9 @@
 title: 統一AEMShell上的as a Cloud Service
 description: 統一AEMShell上的as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 9ef6bda76667b08b5fb62b90acdc75002889d420
+source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '369'
 ht-degree: 1%
 
 ---
@@ -12,14 +12,11 @@ ht-degree: 1%
 # 統一AEMShell上的as a Cloud Service {#aem-as-a-cloud-service-on-unified-shell}
 
 >[!NOTE]
->此功能在2022年5月的預發行渠道中。
+>此功能在2022年7月的預發行渠道中。
 >
->這是對2022年6月發佈的新功能的介紹。
+>這是對2022年8月發佈的新功能的介紹。
 >
 >查看 [預發行渠道文檔](/help/release-notes/prerelease.md#enable-prerelease) 有關如何為您的環境啟用該功能的資訊。
-
->[!INFO]
->由於最近發現的問題，已暫時禁AEM用與as a Cloud Service的統一Shell整合。 問題解決後將重新啟用它。 謝謝大家的理解。
 
 ## 概觀 {#overview}
 

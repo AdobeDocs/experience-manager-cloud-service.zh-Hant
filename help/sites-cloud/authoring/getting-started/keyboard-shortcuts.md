@@ -2,16 +2,16 @@
 title: 控制台的鍵盤快捷鍵
 description: 使用這些鍵盤快捷鍵在創作時節省時間
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
+source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '373'
 ht-degree: 4%
 
 ---
 
 # 控制台的鍵盤快捷鍵 {#keyboard-shortcuts-for-consoles}
 
-以下快捷方式可用於「站點」、「資產」、「用戶」、「組」、「項目」和「體驗片段」控制台。
+以下快捷方式可用於「站點」、「資產」、「用戶」、「組」、「項目」和「體驗片段」控制台。 還有特定的快捷方式 [內容片段控制台](#keyboard-shortcuts-for-the-content-fragments-console)。
 
 | 位置 | 快捷方式 | 說明 |
 |---|---|---|
@@ -81,3 +81,7 @@ AEM避免常用瀏覽器已使用的常用快捷方式，但預設瀏覽器行�
 ## 頁面編輯器的鍵盤快捷鍵 {#keyboard-shortcuts-for-the-page-editor}
 
 您可以使用各種鍵盤快捷鍵AEM。 有些適用於控制台的使用，有些適用於 [頁面編輯](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)。
+
+## 內容片段控制台的鍵盤快捷鍵 {#keyboard-shortcuts-for-the-content-fragments-console}
+
+某些鍵盤快捷鍵適用於 [內容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)

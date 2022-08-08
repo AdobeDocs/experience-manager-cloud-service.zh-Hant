@@ -9,21 +9,43 @@ topic-tags: author
 discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 73953a3d71f3328def3bd4c1f03516b4839695ea
+exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
+source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
-
 
 # 使用手寫簽名將電子簽名應用於表單{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 您可以使用 **Scribble簽名** 元件和 **簽名步驟** 要在自適應表單上繪製(Scribble)簽名的元件。 「簽名」步驟元件顯示自適應表單的PDF版本。 您需要啟用「記錄文檔」選項或基於表單模板的自適應Forms才能使用「簽名」步驟元件。
 
-這兩個元件都提供了一個窗口，如下所示，用於簽署表單。 也可按一下地理位置表徵圖 ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) 將地理位置添加到簽名中。
-
 ![「Scribble符號」對話框](assets/scribble-signature.png)
+
+## 「簽名」窗口中提供的各種選項
+
+* **答：** 按一下 **畫筆** 表徵圖，在畫布上繪製簽名。
+* **B:** 按一下 **清除** 表徵圖以清除畫布上的簽名。
+* **C:** 按一下 **地理位置** 表徵圖，添加地理位置以及簽名。
+* **D:** 按一下 **鍵盤** 表徵圖，在畫布上鍵入名稱。
+
+點擊完成 ![aem_forms_save](assets/aem_forms_save.png) 表徵圖，則無法編輯簽名。 如果要編輯簽名，則必須忽略當前簽名，然後使用上面的「畫筆/鍵盤」選項重新簽名。
+
+可以點擊 **配置** ![](assets/configure.png) 表徵圖，以設定Scribble簽名畫布的縱橫比。
+* 當Scribble簽名畫布的長寬比小於1時，在Scribble簽名畫布的底部添加地理位置資訊。
+
+
+* 當Scribble簽名畫布的長寬比大於1時，將地理位置資訊添加到Scribble簽名畫布的右側。
+
+
+![粗略簽名](assets/scribble-signature-aspectratio.PNG)
+
+
+
+>[!NOTE]
+>
+>簽名始終以PNG格式保存。
 
 ## 配置自適應表單以使用Scribble簽名 {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -36,7 +58,7 @@ ht-degree: 0%
    >
    >「簽名步驟」元件佔用表單的全寬。 建議在包含簽名步驟元件的部分上不使用任何其他元件。
 
-1. 在內容瀏覽器中，點擊 **窗體容器**，然後按一下 **配置** ![](assets/configure.png) 表徵圖 它開啟屬性瀏覽器並顯示「自適應表單」容器屬性。 導航到 **自適應窗體容器** > **電子簽名** 取消選擇 **啟用Adobe Sign** 的雙曲餘切值。 點擊完成 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 表徵圖。
+1. 在內容瀏覽器中，點擊 **窗體容器**，然後按一下 **配置** ![](assets/configure.png) 表徵圖 它開啟屬性瀏覽器並顯示「自適應表單」容器屬性。 導航到 **自適應窗體容器** > **電子簽名** 取消選擇 **啟用Adobe Sign** 的雙曲餘切值。 點擊完成 ![aem_forms_save](assets/aem_forms_save.png) 表徵圖。
 
    >[!NOTE]
    >
@@ -52,7 +74,7 @@ ht-degree: 0%
 
    * **CSS類**:指定客戶端庫的CSS類（如果有）。 建議使用 [主題](themes.md) 和 [內線樣式](inline-style-adaptive-forms.md) 而不是CSS類。
 
-   點擊完成 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 表徵圖。 已成功配置簽名。
+   點擊完成 ![aem_forms_save](assets/aem_forms_save.png) 表徵圖。 已成功配置簽名。
 
    現在，當您填寫表單時，將顯示自適應表單的PDF版本，並提供對PDF文檔進行簽名的選項。 有關詳細資訊，請參見 [使用Scribble簽名對自適應表單簽名](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature)。
 
@@ -62,13 +84,12 @@ ht-degree: 0%
 
    ![EchoSign頁的簽名螢幕](assets/esignscribblesign.jpg)
 
-1. 按一下 **[!UICONTROL 簽名]**。 出現「Scribble sign（塗寫符號）」對話框。 簽名表單，然後按一下「完成」 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 表徵圖以保存簽名。
+1. 按一下 **[!UICONTROL 簽名]**。 出現「Scribble sign（塗寫符號）」對話框。 簽名表單，然後按一下「完成」 ![aem_forms_save](assets/aem_forms_save.png) 表徵圖以保存簽名。
 
-   ![「Scribble符號」對話框](assets/scribblewidget.jpg)
+   ![「Scribble符號」對話框](assets/scribblewidget.png)
 
 1. 按一下「完成」以完成簽名過程。
 
    ![完成簽名過程](assets/scribblecomplete.jpg)
 
 簽名將添加到表單中，表單控制項將移到下一個面板。
-

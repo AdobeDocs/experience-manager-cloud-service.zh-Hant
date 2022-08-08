@@ -2,9 +2,10 @@
 title: 內容片段控制台
 description: 瞭解如何從內容片段控制台管理內容片段。
 landing-page-description: 瞭解如何從內容片段控制台管理內容片段，該控制台側重於無頭使用案例中大量使用內容片段，但在頁面創作時也使用。
-source-git-commit: 8c44ecf0237c7a3660ef9fa97f46cc400e4bd30f
+exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
+source-git-commit: 99e3c07f8376859692db41c633bfaa602ed65358
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -26,6 +27,10 @@ ht-degree: 0%
 >* 這個 **內容片段** 控制台
 >* 這樣 **資產** 控制台 — 請參見 [管理內容片段](/help/assets/content-fragments/content-fragments-managing.md)
 
+
+>[!NOTE]
+>
+>選擇 [鍵盤快捷鍵可在此控制台中使用](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)。
 
 可以從全局導航的頂級直接訪問「內容片段」控制台：
 

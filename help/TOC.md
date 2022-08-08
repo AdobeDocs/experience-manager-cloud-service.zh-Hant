@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d0e2dda682a45483964336aac2c0d3f87b4ca833
+source-git-commit: 3fc0a6626fdf0addfdc572560c01eac3296c5012
 workflow-type: tm+mt
-source-wordcount: '3697'
+source-wordcount: '3709'
 ht-degree: 41%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 41%
    + 一般AEMaaCS發行說明 {#release-notes}
       + [當前發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [2022.6.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
          + [2022.5.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
          + [2022.4.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [2022.3.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
@@ -290,6 +291,7 @@ ht-degree: 41%
          + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [樹狀結構](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
          + [預覽 — JSON表示法](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+         + [內容片段控制台 — 鍵盤快捷鍵](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + 網站建立 {#site-creation}
          + [建立新網站](/help/sites-cloud/administering/site-creation/create-site.md)
          + [啟用前端管線](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -396,6 +398,7 @@ ht-degree: 41%
       + [XMP 中繼資料](/help/assets/xmp-metadata.md)
       + [MediaLibrary 功能](/help/assets/medialibrary.md)
       + [匯入和匯出資產中繼資料](/help/assets/metadata-import-export.md)
+      + [配置資產上載限制](/help/assets/configure-asset-upload-restrictions.md)
    + 共用與發佈資產 {#brand-portal}
       + [設定  [!DNL Assets]  和 [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [將資產發佈到 [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)

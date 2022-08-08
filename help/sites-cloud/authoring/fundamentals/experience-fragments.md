@@ -2,9 +2,9 @@
 title: 體驗片段
 description: 使用Adobe Experience Manager as a Cloud Service體驗片段使您的體驗可重複使用且靈活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1566'
 ht-degree: 8%
 
 ---
@@ -346,6 +346,10 @@ WKND工程根據經驗分段 `Contributors`。 使用的結構還說明了如何
       * **Pinterest Board**
    * **引用**
       * 引用清單
+   * **個人化**
+      * **ContextHub 路徑**
+      * **區段路徑**
+      * **品牌**
 
 ## 純HTML格式副本 {#the-plain-html-rendition}
 

@@ -2,16 +2,16 @@
 title: 頁面編輯的鍵盤快捷鍵
 description: 整個過程中都提供各種鍵盤快捷鍵AEM，包括一些用於頁面編輯的快捷鍵
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 1%
+source-wordcount: '237'
+ht-degree: 2%
 
 ---
 
 # 頁面編輯的鍵盤快捷鍵 {#keyboard-shortcuts-when-editing-pages}
 
-您可以使用各種鍵盤快捷鍵AEM。 有些在編輯頁面時應用，有些則應用於 [控制台的使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
+您可以使用各種鍵盤快捷鍵AEM。 有些在編輯頁面時應用，有些則應用於 [控制台的使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)，有些 [內容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ ht-degree: 1%
 >
 >一旦用戶開始在預覽模式下與頁面交互， `Ctrl-Shift-m` 快捷方式不再可用。 用戶必須按一下頂部編輯器欄或返回「編輯」模式，以便快捷方式再次可用。
 
-使用 [控制台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
+使用 [控制台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)，有些 [內容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)。
 
 >[!NOTE]
 >

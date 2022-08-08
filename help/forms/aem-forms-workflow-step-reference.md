@@ -3,9 +3,9 @@ title: '如何將工作流分配給其他用戶、發送電子郵件、在工作
 description: 以Forms為中心的工作流允許您快速構建基於Forms的自適應工作流。 您可以使用Adobe Sign對文檔進行電子簽名、建立基於表單的業務流程、檢索資料並將資料發送到多個資料源以及發送電子郵件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 69d86454c9d3dd869a69c7f720bce077b0149860
+source-git-commit: 447dd15cfa7e414b56fe09f2affb5f720bcd734e
 workflow-type: tm+mt
-source-wordcount: '5467'
+source-wordcount: '6098'
 ht-degree: 1%
 
 ---
@@ -140,6 +140,23 @@ ht-degree: 1%
 >
 >在為外部資料儲存配置工作流模型時，將「分配任務」步驟另存為草稿並檢索「分配任務」步驟歷史記錄的選項AEM將被禁用。 此外，在「收件箱」中，禁用了保存選項。
 
+## 轉換為PDF/步驟 {#convert-pdfa}
+
+PDF/A是一種存檔格式，用於通過嵌入字型和解壓縮檔案來長期保存文檔的內容。 因此，PDF/A文檔通常比標準PDF文檔大。 您可以使用 ***轉換為PDF/A*** 的上界AEM。
+
+轉換為PDF/A步驟具有以下屬性：
+
+**[!UICONTROL 輸入文檔]**:輸入文檔可以相對於有效載荷，具有絕對路徑，可以作為有效載荷提供或儲存在文檔資料類型的變數中。
+
+**[!UICONTROL 轉換選項]**:使用此屬性，指定將PDF文檔轉換為PDF/A文檔的設定。 此頁籤下提供的各種選項包括：
+* **[!UICONTROL 合規性]**:指定輸出PDF/A文檔必須遵守的標準。
+* **[!UICONTROL 結果級別]**:指定轉換輸出的結果級別為PassFail、Summary或Detailed。
+* **[!UICONTROL 顏色空間]**:指定用於輸出PDF/A檔案的預定義顏色空間。
+* **[!UICONTROL 可選內容]**:僅當滿足指定的一組標準時，才允許在輸出PDF/A文檔中顯示特定圖形對象和/或注釋。
+
+**[!UICONTROL 輸出文檔]**:指定保存輸出檔案的位置。 輸出檔案可以保存在與負載相關的位置，如果負載是檔案，則覆蓋負載，或保存在「文檔」資料類型的變數中。
+
+
 ## 發送電子郵件步驟 {#send-email-step}
 
 使用電子郵件步驟發送電子郵件，例如帶有「記錄文檔」的電子郵件，以及自適應表單的連結 <!-- , link of an interactive communication-->或附加的PDF文檔。 「發送電子郵件」步驟支援 [HTML電子郵件](https://en.wikipedia.org/wiki/HTML_email)。 HTML電子郵件能夠響應並適應收件人的電子郵件客戶端和螢幕大小。 您可以使用HTML電子郵件模板來定義電子郵件的外觀、顏色方案和行為。
@@ -197,6 +214,31 @@ ht-degree: 1%
 **[!UICONTROL 使用以下選項保存生成的記錄文檔]**:指定保留「記錄文檔」檔案的位置。 您可以選擇覆蓋負載資料夾、將「記錄文檔」(Document of Record)放置在負載目錄中的某個位置，或將「記錄文檔」(Document of Record)儲存在「文檔」(Document)資料類型的變數中。
 
 **[!UICONTROL 區域設定]**:指定記錄文檔的語言。 選擇 **[!UICONTROL 文字]** 從下拉清單中選擇區域設定，或選擇 **[!UICONTROL 變數]** 從字串資料類型變數中儲存的值中檢索區域設定。 在變數中儲存區域設定值時，必須定義區域設定代碼。 例如，指定 **en_US** 英語和 **fr_FR** 法語。
+
+## 調用DDX步驟 {#invokeddx}
+
+文檔描述XML(DDX)是聲明性標籤語言，其元素表示文檔的構建塊。 這些構造塊包括PDF和XDP文檔，以及諸如注釋、書籤和樣式文本等其他元素。 DDX定義一組操作，這些操作可以應用於一個或多個輸入文檔以生成一個或多個輸出文檔。  單個DDX可與一系列源文檔一起使用。 您可以使用 ***調用DDX步驟*** 在工AEM作流中執行各種操作，如「匯編拆卸文檔」、「建立和修改Acrobat」和XFAForms，以及中介紹的其他操作 [DDX參考文檔](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)。
+
+調用DDX步驟具有以下屬性：
+
+**[!UICONTROL 輸入文檔]**:用於設定輸入文檔的屬性。 此頁籤下提供的各種選項包括：
+* **[!UICONTROL 指定DDX使用]**:指定相對於負載的輸入文檔、具有絕對路徑、可以作為負載提供或儲存在文檔資料類型的變數中。
+* **[!UICONTROL 從負載建立映射]**:將有效負載資料夾下的所有文檔添加到匯編器中調用API的「輸入文檔」映射中。 每個文檔的節點名稱用作映射中的鍵。
+* **[!UICONTROL 輸入文檔的映射]**:選項用於使用 **[!UICONTROL 添加]** 按鈕 每個條目都表示映射中文檔的鍵和文檔的源。
+
+**[!UICONTROL 環境選項]**:此選項用於設定調用API的處理設定。 此頁籤下提供的各種選項包括：
+* **[!UICONTROL 僅驗證]**:檢查輸入DDX文檔的有效性。
+* **[!UICONTROL 錯誤時失敗]**:檢查調用API服務是否失敗（如果出現錯誤）。 預設情況下，其值設定為False。
+* **[!UICONTROL 第一個Bates數]**:指定自增量的數字。 此自增量數字將自動顯示在每個連續頁面上。
+* **[!UICONTROL 預設樣式]**:設定輸出檔案的預設樣式。
+
+>[!NOTE]
+>
+>環境選項與HTTP API保持同步。
+
+**[!UICONTROL 輸出文檔]**:指定保存輸出檔案的位置。 此頁籤下提供的各種選項包括：
+* **[!UICONTROL 在負載中保存輸出]**:將輸出文檔保存在負載資料夾下，或覆蓋負載，以防負載是檔案。
+* **[!UICONTROL 輸出文檔的映射]**:通過為每個文檔添加一個條目，指定顯式保存每個文檔檔案的位置。 每個條目都表示文檔和保存文檔的位置。 如果有多個輸出文檔，則使用此選項。
 
 ## 調用表單資料模型服務步驟 {#invoke-form-data-model-service-step}
 

@@ -3,22 +3,15 @@ title: 將Adobe Analytics與Experience Cloud設定自動化整合
 description: Experience Cloud設定自動化提供了一種簡單而自動化的方法，可以將Experience Manager Sites與Experience Platform Launch整合，使用簡單的UI嚮導介面對Adobe Analytics進行測試。 瞭解如何在您自己的站點上使用自動設定。
 feature: Administering
 role: Admin
-hide: true
-hidefromtoc: true
-index: false
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 0%
+source-wordcount: '756'
+ht-degree: 1%
 
 ---
 
 # 將Adobe Analytics與Experience Cloud設定自動化整合 {#integrate-adobe-analytics-automation-setup}
-
->[!CAUTION]
->
-> 此功能當前處於內部測試版中。 目標發佈日期為2022年第一季度。
 
 Experience Cloud設定自動化提供了一種簡單而自動化的方法，可以將Experience Manager Sites與Experience Platform Launch整合，使用簡單的UI嚮導介面對Adobe Analytics進行測試。
 
@@ -26,11 +19,27 @@ Experience Cloud設定自動化提供了一種簡單而自動化的方法，可�
 
 此視頻探討如何使AEM用Experience Platform Launch設定自動化與Experience Cloud和分析整合站點：
 
->[!VIDEO](https://video.tv.adobe.com/v/339605/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
 ## 要求
 
 自動化設定設計為在使用 [核AEM心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 和 [Adobe客戶端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 啟用。 您可以使用 [項AEM目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 或通過使用 [站點模板](/help/journey-sites/quick-site/create-site.md)。
+
+## 必備條件 {#prerequisites}
+
+在使用此功能之前，必須按照以下說明來確保在您的環境中正確設定了必備服務：
+
+1. 登錄Adobe Admin Console(https://adminconsole.adobe.com/)。
+1. 確保在右上角選擇了正確的IMS組織ID。
+1. 按一下「產品」(Products)導航選項。
+1. 檢查IMS組織的&quot;Adobe Experience Manager as a Cloud Service&quot;是否已預配。
+1. 檢查IMS組織的&quot;Adobe Analytics&quot;是否已預配。
+1. 轉到雲管理器(https://experience.adobe.com/cloud-manager)。
+1. 選擇相應的程式。
+1. 檢查「Cloud Service」是否位於最新版本的「環境」（如果不在，請在菜單選項中選擇「更新」）。
+1. 在雲管理器中運行完整堆棧管道。
+
+現在，Experience Cloud應準備好進行安裝自動化。
 
 ## 如何設定
 
