@@ -3,9 +3,9 @@ title: 使用Dispatcher工具驗證和調試
 description: 使用Dispatcher工具驗證和調試
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
+source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2653'
 ht-degree: 1%
 
 ---
@@ -229,6 +229,10 @@ Phase 3 finished
 
 在部署雲管理器期間， `httpd -t` 語法檢查也將執行，並且Cloud Manager中將包含任何錯誤 `Build Images step failure` 日誌。
 
+>[!NOTE]
+>
+>查看 [自動載入和驗證](#automatic-loading) 節，用於運行 `validate.sh` 在每次配置修改之後。
+
 ### 階段1 {#first-phase}
 
 如果不允許列出指令，則工具將記錄錯誤並返回非零退出代碼。 另外，它還用模式掃描所有檔案 `conf.dispatcher.d/enabled_farms/*.farm` 並檢查：
@@ -417,6 +421,42 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 在本地運行Dispatcher時，日誌會直接打印到終端輸出。 大多數時候，您希望這些日誌處於DEBUG中，這可以通過在運行Docker時將調試級別作為參數傳遞來完成。 例如： `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`。
 
 雲環境的日誌通過Cloud Manager中提供的日誌服務公開。
+
+### 自動載入和驗證 {#automatic-loading}
+
+>[!NOTE]
+>
+>由於Windows作業系統的限制，此功能僅適用於Linux用戶。
+
+而不是運行本地驗證(`validate.sh`)並啟動docker容器(`docker_run.sh`)每次修改配置時，您也可以 `docker_run_hot_reload.sh` 的下界。  指令碼將監視對配置的任何更改，並會自動重新載入並重新運行驗證。 使用此選項可在調試時節省大量時間。
+
+可以使用以下命令運行指令碼： `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
+
+請注意，第一行輸出的外觀與為 `docker_run.sh`，例如：
+
+```
+~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
+opt-in USE_SOURCES_DIRECTLY marker file detected
+Running script /docker_entrypoint.d/10-check-environment.sh
+Running script /docker_entrypoint.d/15-check-pod-name.sh
+Running script /docker_entrypoint.d/20-create-docroots.sh
+Running script /docker_entrypoint.d/30-wait-for-backend.sh
+Waiting until host.docker.internal is available
+host.docker.internal resolves to 192.168.65.2
+Running script /docker_entrypoint.d/40-generate-allowed-clients.sh
+Running script /docker_entrypoint.d/50-check-expiration.sh
+Running script /docker_entrypoint.d/60-check-loglevel.sh
+Running script /docker_entrypoint.d/70-check-forwarded-host-secret.sh
+Running script /docker_entrypoint.d/80-frontend-domain.sh
+Running script /docker_entrypoint.d/zzz-import-sdk-config.sh
+WARN Mon Jul  4 09:53:54 UTC 2022: Pseudo symlink conf.d seems to point to a non-existing file!
+INFO Mon Jul  4 09:53:55 UTC 2022: Copied customer configuration to /etc/httpd.
+INFO Mon Jul  4 09:53:55 UTC 2022: Start testing
+Cloud manager validator 2.0.43
+2022/07/04 09:53:55 No issues found
+INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
+INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
 
 ## 每個環境的不同Dispatcher配置 {#different-dispatcher-configurations-per-environment}
 
