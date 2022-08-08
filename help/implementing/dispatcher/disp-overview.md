@@ -3,10 +3,10 @@ title: 雲端中的 Dispatcher
 description: '雲端中的 Dispatcher '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
+source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '952'
+ht-degree: 6%
 
 ---
 
@@ -86,6 +86,8 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 | `mod_ssl (only the SSLProxyEngine directive)` | [https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine) |
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
+| `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
+
 
 客戶不能添加任意模組，但將來可能會考慮添加附加模組。 客戶可以通過在SDK中執行驗證程式的allowlist命令來查找指定Dispatcher版本可用的指令清單。
 
