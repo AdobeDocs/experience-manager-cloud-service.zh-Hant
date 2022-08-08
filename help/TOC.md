@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5de4f8642d6dfae2697bd2fc18b8b9845b883e18
+source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
 workflow-type: tm+mt
-source-wordcount: '3698'
+source-wordcount: '3697'
 ht-degree: 41%
 
 ---
@@ -273,6 +273,9 @@ ht-degree: 41%
          + [了解區段](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [使用ContextHub配置分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [註冊、登錄和用戶配置檔案](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+      + 行銷活動 {#campaign}
+         + 
+            + [使用建立新聞稿AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + 管理 {#administering}
       + 內容片段 {#content-fragments}
          + [使用內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -340,7 +343,6 @@ ht-degree: 41%
       + [與Adobe Target整合時使用的IMS配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [將體驗片段導出到Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與Adobe Campaign Classic整合](/help/sites-cloud/integrating/integrating-campaign-classic.md)
-      + [建立Adobe Experience Manager通訊](/help/sites-cloud/integrating/creating-newsletter.md)
 + 資產 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概覽與新增功能](/help/assets/overview.md)

@@ -4,7 +4,7 @@ description: 瞭解如何將AEMas a Cloud Service與Adobe Campaign Classic整合
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: 9ad97fdb26c0049f1b6a4b0958c93e2d4af803fb
+source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
 workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 0%
@@ -225,4 +225,4 @@ Adobe Campaign現在可以和AEM他溝通
 
 配置了Adobe Campaign Classic和AEMas a Cloud Service後，整合現已完成。
 
-您現在可以繼續學習如何在Adobe Experience Manager建立新聞簡報 [。](/help/sites-cloud/integrating/creating-newsletter.md)
+您現在可以繼續學習如何在Adobe Experience Manager建立新聞簡報 [。](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
