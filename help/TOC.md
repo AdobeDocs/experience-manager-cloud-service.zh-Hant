@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3fc0a6626fdf0addfdc572560c01eac3296c5012
+source-git-commit: a324bcc64842ff3c3d04dc5164d21b47c14ac94e
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3714'
 ht-degree: 41%
 
 ---
@@ -340,6 +340,7 @@ ht-degree: 41%
       + [整合 Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [與Adobe Analytics自動設定整合](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [與Adobe Analytics整合時使用的IMS配置](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
+      + [與Adobe學習管理器整合](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [整合 Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [與Adobe Target整合時使用的IMS配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [將體驗片段導出到Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
