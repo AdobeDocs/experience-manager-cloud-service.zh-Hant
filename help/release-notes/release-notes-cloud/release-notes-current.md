@@ -3,7 +3,7 @@ title: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 description: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 0ae79facb4233988db4a649b8e79ca3041832584
+source-git-commit: a3e18349c3cf2240cc68275a3862abeb75ea372a
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 3%
@@ -39,7 +39,7 @@ ht-degree: 3%
 
 ### 中的新功能 [!DNL Sites] {#sites-features}
 
-* 的 [內容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 現在支援鍵盤快捷鍵。
+* 的 [內容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 現在支援 [鍵盤快捷鍵](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)。
 
 * AEM作為Cloud Service [Web優化的影像傳送](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 允許通過提供WebP等格式來顯著提高頁面速度。 此新服務還提供了更靈活的影像調整和轉換選項。 所有版本 [核心影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 允許通過按一下映像元件策略中的選項來利用此服務並將映像作為WebP提供。
 
