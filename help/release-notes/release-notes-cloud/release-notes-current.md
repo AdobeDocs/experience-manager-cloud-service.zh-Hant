@@ -3,9 +3,9 @@ title: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 description: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a3e18349c3cf2240cc68275a3862abeb75ea372a
+source-git-commit: f947a328897387d37e2092580e6992f14a344eb2
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '956'
 ht-degree: 3%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 3%
 
 ### 中的新功能 [!DNL Forms] {#forms-features}
 
-* **對Scribble簽名的鍵盤輸入支援**:自適應Forms正越來越多地被用於觸摸設備，一個常見要求是支援簽名。 在觸摸設備上簽名文檔已成為一種公認的簽名方式。 AdaptiveForms公司對Scribble簽名和Adobe Sign公司的此類使用案例有本地支援。 現在，除了其他已受支援的選項外，您還可以使用鍵盤在自適應表單中對簽名進行塗抹。 它還有助於提高可訪問性合規性。
+* **[對Scribble簽名的鍵盤輸入支援](/help/forms/signing-forms-using-scribble.md)**:自適應Forms正越來越多地被用於觸摸設備，一個常見要求是支援簽名。 在觸摸設備上簽名文檔已成為一種公認的簽名方式。 AdaptiveForms公司對Scribble簽名和Adobe Sign公司的此類使用案例有本地支援。 現在，除了其他已受支援的選項外，您還可以使用鍵盤在自適應表單中對簽名進行塗抹。 它還有助於提高可訪問性合規性。
 
 ![iphone上Scribble簽名的鍵盤輸入支援](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
@@ -72,13 +72,17 @@ ht-degree: 3%
 
 ### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#prerelease-features-forms}
 
-<!-- * **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
+<!-- 
 
-![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) -->
+* **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
 
-* **調用 — 工AEM作流步驟**:文檔描述XML(DDX)是聲明性標籤語言，其元素表示文檔的構建塊。 這些構造塊包括PDF和XDP文檔，以及諸如注釋、書籤和樣式文本等其他元素。 DDX文檔是文檔的模板，描述了源文檔的所需特徵，這些特徵應出現在生成的文檔中。 單個DDX可與一系列源文檔一起使用。 您可以使用調用步驟和AEM工作流來執行各種操作，如匯編拆卸文檔、建立和修改Acrobat和XFAForms，以及中所述的其他操作 [DDX參考](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 文檔。
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) 
 
-* **轉換為PDF/A — 工作AEM流步驟**:PDF/A是一種存檔格式，用於長期保存文檔的內容，所有字型都被嵌入，檔案也未壓縮。 現在，您可以使用「轉換為PDF/A」步驟和「工作流」AEM將任何格式的文檔或檔案轉換為PDF/A格式。
+-->
+
+* **[調用DDX — 工AEM作流步驟](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**:文檔描述XML(DDX)是聲明性標籤語言，其元素表示文檔的構建塊。 這些構造塊包括PDF和XDP文檔，以及諸如注釋、書籤和樣式文本等其他元素。 DDX文檔是文檔的模板，描述了源文檔的所需特徵，這些特徵應出現在生成的文檔中。 單個DDX可與一系列源文檔一起使用。 您可以使用調用步驟和AEM工作流來執行各種操作，如匯編拆卸文檔、建立和修改Acrobat和XFAForms，以及中所述的其他操作 [DDX參考](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 文檔。
+
+* **[轉換為PDF/A — 工作AEM流步驟](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**:PDF/A是一種存檔格式，用於長期保存文檔的內容，所有字型都被嵌入，檔案也未壓縮。 現在，您可以使用「轉換為PDF/A」步驟和「工作流」AEM將任何格式的文檔或檔案轉換為PDF/A格式。
 
 
 ## CIF附加模組 {#cloud-services-cif}

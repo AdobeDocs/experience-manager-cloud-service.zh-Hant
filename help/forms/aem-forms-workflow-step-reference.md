@@ -3,7 +3,7 @@ title: '如何將工作流分配給其他用戶、發送電子郵件、在工作
 description: 以Forms為中心的工作流允許您快速構建基於Forms的自適應工作流。 您可以使用Adobe Sign對文檔進行電子簽名、建立基於表單的業務流程、檢索資料並將資料發送到多個資料源以及發送電子郵件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 447dd15cfa7e414b56fe09f2affb5f720bcd734e
+source-git-commit: ebd7942cfaa7717d68ad039f3e0301cb52cbcec7
 workflow-type: tm+mt
 source-wordcount: '6098'
 ht-degree: 1%
@@ -54,18 +54,25 @@ ht-degree: 1%
 * **[!UICONTROL 到期日後超時]**:選擇此選項以啟用超時處理程式選擇欄位。
 * **[!UICONTROL 超時處理程式]**:選擇當分配任務步驟超過到期日期時要執行的指令碼。 放置在CRX儲存庫中的指令碼 [應用]/fd/dashboard/scripts/timeoutHandler可供選擇。 crx-repository中不存在指定的路徑。 管理員在使用路徑之前建立路徑。
 * **[!UICONTROL 突出顯示任務詳細資訊中最後一個任務中的操作和注釋]**:選擇此選項可顯示在任務的任務詳細資訊部分上執行的最後操作和收到的注釋。
-* **[!UICONTROL 類型]**:選擇啟動工作流時要填寫的文檔類型。 您可以選擇「自適應表單」、只讀自適應表單、非互動式PDF文檔。 <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+* **[!UICONTROL 類型]**:選擇啟動工作流時要填寫的文檔類型。 您可以選擇「自適應表單」、只讀自適應表單、非互動式PDF文檔。
+
+<!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+
+
 * **[!UICONTROL 使用自適應窗體]**:指定定位輸入自適應表單的方法。 如果從「類型」(Type)下拉清單中選擇「自適應表單」(Adaptive Form)或「只讀自適應表單」(Read-only Adaptive Form)，則此選項可用。 可以使用提交到工作流的自適應表單，該表單可以在絕對路徑上使用，也可以在變數的路徑上使用。 可以使用字串類型的變數指定路徑。\
    可以將多個AdaptiveForms與工作流關聯。 因此，可以使用可用的輸入方法在運行時指定自適應表單。
 
 <!-- 
+
 * **[!UICONTROL Use Interactive Communication]**: Specify the method to locate the input interactive communication. You can use the interactive communication submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
 
 > [!NOTE]
 >
->You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  -->
+>You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  
 
-* **[!UICONTROL 自適應窗體路徑]**:指定「自適應表單」的路徑。<!--  or Interactive Communication.--> 可以使用自適應窗體 <!-- or interactive communication --> 提交到工作流（在絕對路徑中可用），或從字串資料類型變數中儲存的路徑檢索自適應表單。
+-->
+
+* **[!UICONTROL 自適應窗體路徑]**:指定「自適應表單」的路徑。 可以使用提交到工作流的自適應表單（可以在絕對路徑中使用），或從儲存在字串資料類型變數中的路徑檢索自適應表單。
 * **[!UICONTROL 選擇輸入PDF]**:指定非互動式PDF文檔的路徑。 在「類型」(Type)欄位中選擇非互動式PDF文檔時，該欄位可用。 可以使用相對於負載的路徑、保存在絕對路徑上的路徑或使用「文檔」資料類型的變數來選擇輸入PDF。 比如說， [負載目錄]/Workflow/PDF/credit-card.pdf。 crx-repository中不存在路徑。 管理員在使用路徑之前建立路徑。 您需要啟用「記錄文檔」選項或基於表單模板的「自適應Forms」來使用「PDF路徑」選項。
 * **[!UICONTROL 對於已完成的任務，將自適應表單渲染為]**:當任務標籤為完成時，可將自適應表單呈現為只讀自適應表單或PDF文檔。 您需要啟用「記錄文檔」選項或基於表單模板的「自適應Forms」來將「自適應表單」呈現為「記錄文檔」。
 * **[!UICONTROL 預填充]**:下面列出的下列欄位是任務的輸入：
@@ -73,14 +80,23 @@ ht-degree: 1%
    * **[!UICONTROL 使用]**:輸入資料檔案（.json、.xml、.doc或表單資料模型）的路徑。 可以使用相對於負載的路徑檢索輸入資料檔案，或檢索儲存在文檔、XML或JSON資料類型變數中的檔案。 例如，檔案包含通過收件箱應用程式為表單提交AEM的資料。 示例路徑是 [負載目錄]/workflow/data。
    * **[!UICONTROL 使用]**:在該位置可用的附件將附加到與任務關聯的表單。 該路徑可以相對於有效載荷或檢索儲存在文檔變數中的附件。 示例路徑是 [負載目錄]/attachments/。 您可以指定相對於負載放置的附件，或使用文檔類型（「陣列清單」>「文檔」）變數為「自適應表單」指定輸入附件。
 
-   <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+   <!-- 
+    
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
-    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. -->
+    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. 
+    
+    -->
+
    * **[!UICONTROL 請求屬性映射]**:使用「請求屬性映射」部分定義 [請求屬性的名稱和值](work-with-form-data-model.md#bindargument)。 根據請求中指定的屬性名稱和值從資料源檢索詳細資訊。 可以使用字面值或字串資料類型的變數定義請求屬性值。
 
-   <!--  The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. -->
+   <!--  
+     
+     The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
+     
+     -->
 
 * **[!UICONTROL 已提交資訊]**:下面列出的下列欄位用作任務的輸出位置：
 
@@ -88,9 +104,13 @@ ht-degree: 1%
    * **[!UICONTROL 使用]**:保存任務中提供的表單附件。 可以使用與負載相關的路徑保存附件，或將其儲存在「文檔」資料類型的陣列清單的變數中。
    * **[!UICONTROL 使用保存記錄文檔]**:保存記錄文檔的路徑。 比如說， [負載目錄]/DocumentofRecord/credit-card.pdf。 可以使用相對於負載的路徑保存「記錄文檔」，或將其儲存在「文檔」資料類型的變數中。 如果選擇 **[!UICONTROL 相對於負載]** 選項，如果路徑欄位為空，則不生成記錄文檔。 僅當從「類型」(Type)下拉清單中選擇「自適應表單」(Adaptive Form)時，此選項才可用。
 
-   <!-- * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+   <!-- 
+    
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
-    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
+    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
+    
+    -->
 
 * **[!UICONTROL 受分配人]** > **[!UICONTROL 分配選項]**:指定將任務分配給用戶的方法。 您可以使用「參與者選擇器」指令碼將任務動態分配給用戶或組，或將任務分配給AEM特定用戶或組。
 * **[!UICONTROL 參與者選擇器]**:當 **[!UICONTROL 動態到用戶或組]** 選項。 可以使用ECMAScript或服務動態選擇用戶或組。 有關詳細資訊，請參見 [將工作流動態分配給用戶](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 和 [建立自定義Adobe Experience Manager動態參與者步驟。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
@@ -183,7 +203,12 @@ PDF/A是一種存檔格式，用於通過嵌入字型和解壓縮檔案來長期
 
 * **[!UICONTROL 工作流元資料]**:當要使用的值保存在工作流元資料屬性中時，請使用該選項。 選擇該選項後，在「工作流元資料」選項下的空文本框中輸入元資料屬性名稱。 例如， emailAddress。
 
-<!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
+<!-- 
+
+* **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. 
+
+-->
+
 * **[!UICONTROL 影像]**:使用該選項將影像嵌入到電子郵件中。 選擇該選項後，瀏覽並選擇影像。 影像選項僅適用於電子郵件模板中可用的影像標籤(&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>)。&#42;
 
 **[!UICONTROL 發件人/收件人的電子郵件地址]**:選擇 **[!UICONTROL 文字]** 選項，以手動指定電子郵件地址或選擇 **[!UICONTROL 從工作流元資料中檢索]** 選項從元資料屬性中檢索電子郵件地址。 您還可以為 **[!UICONTROL 從工作流元資料中檢索]** 的雙曲餘切值。 選擇 **[!UICONTROL 變數]** 選項，從字串資料類型變數中儲存的值檢索電子郵件地址。
@@ -367,7 +392,9 @@ PDF/A是一種存檔格式，用於通過嵌入字型和解壓縮檔案來長期
 * **[!UICONTROL 指令碼或服務以選擇簽名者]**:僅當在「選擇簽名者」(Select Signers)欄位中選擇了「動態」(Dynamically)選項時，此選項才可用。 可以指定ECMAScript或服務來為文檔選擇簽名器和驗證選項。
 * **[!UICONTROL 簽名者詳細資訊]**:僅當在「選擇簽名者」(Select Signers)欄位中選擇了「手動」(Manual)選項時，此選項才可用。 指定電子郵件地址並選擇可選的驗證機制。 在選擇兩步驗證機制之前，請確保已配置的驗證選項已啟用 [!DNL Adobe Sign] 帳戶。 可以使用字串資料類型的變數來定義「電子郵件」、「國家/地區代碼」和「電話號碼」欄位的值。 僅當從2步驗證下拉清單中選擇電話驗證時，才會顯示「國家/地區代碼」和「電話號碼」欄位。
 
-<!-- ## Document Services steps {#document-services-steps}
+<!-- 
+
+## Document Services steps {#document-services-steps}
 
 AEM Document services are a set of services for creating, assembling, and securing PDF Documents. [!DNL AEM Forms] provides a separate AEM Workflow step for each document service.
 
@@ -519,4 +546,6 @@ The Generate Printed Output step has the following properties:
 * **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
     * **[!UICONTROL Duplex Long Edge]**: Use two-sided printing and print using long-edge pagination. 
     * **[!UICONTROL Duplex Short Edge]**: Use two-sided printing and print using short-edge pagination. 
-    * **[!UICONTROL Simplex]**: Use single-sided printing.-->
+    * **[!UICONTROL Simplex]**: Use single-sided printing.
+    
+    -->
