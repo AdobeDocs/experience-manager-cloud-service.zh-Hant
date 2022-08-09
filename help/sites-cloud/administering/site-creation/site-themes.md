@@ -4,9 +4,9 @@ description: 瞭解如AEM何使用網站主題來自定義網站的樣式和設�
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 62ae8bf09e616135cbd5498d1d083a74bb6b0e2a
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '357'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 瞭解如AEM何使用網站主題來自定義網站的樣式和設計。
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 站AEM點主題是包含CSS、JavaScript和靜態資源的包，這些資源定義站點的樣式並AEM遵循站點主題的AEM結構。
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ## 標準網站主題 {#standard-site-theme}
 
-Adobe提供了最佳實踐參考主題，您可以將其用作建立自己主題的基礎。 [GitHub上提供標準網站主題。](https://github.com/adobe/aem-site-template-standard-theme-e2e)
+Adobe提供了最佳實踐參考主題，您可以將其用作建立自己主題的基礎。 [GitHub上提供標準網站主題](https://github.com/adobe/aem-site-template-standard/tree/main/theme)。
 
 ## 開發網站主題 {#developing-themes}
 
