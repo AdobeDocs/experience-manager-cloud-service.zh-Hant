@@ -5,9 +5,9 @@ feature: Content Fragments, GraphQL API
 topic: Headless
 role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
+source-git-commit: e776368891457d3d8cb91b1bb31c1563131f7557
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '731'
 ht-degree: 1%
 
 ---
@@ -37,11 +37,7 @@ ht-degree: 1%
 
 ## 無頭CMS {#headless-cms}
 
-無頭內容管理系統(CMS)是：
-
-* &quot;*無頭內容管理系統（或無頭CMS）是僅後端內容管理系統(CMS)，它從頭開始構建為內容儲存庫，使內容可通過API訪問，以便在任何設備上顯示。*
-
-   請參閱 [維基百科](https://en.wikipedia.org/wiki/Headless_content_management_system)。
+無頭內容管理系統(CMS)是僅用於後端的內容管理系統，它明確地設計和構建為內容儲存庫，使內容可通過API訪問，以便在任何設備上顯示。
 
 就創作內容片段而言，AEM這意味著：
 

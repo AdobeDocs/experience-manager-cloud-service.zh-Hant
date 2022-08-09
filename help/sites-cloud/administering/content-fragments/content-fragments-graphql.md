@@ -1,9 +1,10 @@
 ---
 title: 使用GraphQL的內容片段進行無頭內容傳遞
 description: 瞭解使用GraphQL內容片段AEM實現無頭CMS的基本概念，以便無頭內容傳遞。
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
+source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '731'
 ht-degree: 1%
 
 ---
@@ -33,11 +34,7 @@ ht-degree: 1%
 
 ## 無頭CMS {#headless-cms}
 
-無頭內容管理系統(CMS)是：
-
-* &quot;*無頭內容管理系統（或無頭CMS）是僅後端內容管理系統(CMS)，它從頭開始構建為內容儲存庫，使內容可通過API訪問，以便在任何設備上顯示。*
-
-   請參閱 [維基百科](https://en.wikipedia.org/wiki/Headless_content_management_system)。
+無頭內容管理系統(CMS)是僅用於後端的內容管理系統，它明確地設計和構建為內容儲存庫，使內容可通過API訪問，以便在任何設備上顯示。
 
 就創作內容片段而言，AEM這意味著：
 

@@ -1,13 +1,13 @@
 ---
 title: 什麼是無頭CMS?
 description: 瞭解無頭CMS 它們如何工作？ 還有什麼選擇和不同？ 您為什麼要使用無頭CMS?
-source-git-commit: 35064ef7d9a4a3f2368667be02b11840b29d56f0
+exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
+source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
-
 
 # 什麼是無頭CMS? {#what-is-a-headless-cms}
 
@@ -31,11 +31,7 @@ ht-degree: 0%
 
 有了無頭內容管理系統，後端和前端現在已分離。
 
-無頭部件是內容後端。
-
-* &quot;*無頭內容管理系統（或無頭CMS）是僅後端內容管理系統(CMS)，它從頭開始構建為內容儲存庫，使內容可通過API訪問，以便在任何設備上顯示。*
-
-   請參閱 [維基百科](https://en.wikipedia.org/wiki/Headless_content_management_system)。
+無頭部分是內容後端，因為無頭內容管理系統(CMS)是僅用於後端的內容管理系統，它明確地設計和構建為內容儲存庫，使內容可通過API訪問，以便在任何設備上顯示。
 
 前端是獨立開發和維護的，它使用內容傳遞API從無頭後端提取內容，通常採用JSON格式。 例如，這可以是React或Angular應用程式(單頁應用程式(SPA))。
 
