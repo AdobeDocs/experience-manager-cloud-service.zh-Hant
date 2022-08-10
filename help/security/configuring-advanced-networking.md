@@ -2,9 +2,9 @@
 title: 配置高級網路AEM以as a Cloud Service
 description: 瞭解如何配置高級網路功能，如VPN或靈活或專用的出口IP地址，以便AEMas a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: e34759aeea2e3819cf76a8bba433b96ae201c16f
+source-git-commit: b8a827e73d8eba9184be352d0aa4705dfb24b642
 workflow-type: tm+mt
-source-wordcount: '3006'
+source-wordcount: '3016'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ AEMas a Cloud Service提供多種高級網路功能，客戶可使用Cloud Manag
 
 如果程式範圍的靈活埠出口配置已就緒， `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 必鬚根據環境調用端點，以在環境級別啟用網路，並可選地聲明任何埠轉發規則。 可根據環境配置參數，以提供靈活性。
 
-對於80/443以外的任何埠，都應通過指定目標主機集（名稱或IP，以及帶埠）來聲明埠轉發規則。 對於每個目標主機，客戶必須將目標埠映射到從30000到30999的埠。
+對於除80/443以外的任何目標埠，應聲明埠轉發規則，但僅當不使用http或https協定時，才應指定目標主機集（名稱或IP，並帶有埠）。 對於每個目標主機，客戶必須將目標埠映射到從30000到30999的埠。
 
 API應在幾秒內作出響應，指示更新狀態，大約10分鐘後，終結點的 `GET` 方法應指示已啟用高級網路。
 
