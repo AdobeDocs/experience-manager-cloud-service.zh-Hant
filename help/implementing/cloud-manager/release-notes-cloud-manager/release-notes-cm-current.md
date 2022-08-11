@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service的Cloud Manager 2022.7.0發行說明
-description: 以下是Cloud Manager 2022.7.0在as a Cloud Service中的發行說明AEM。
+title: Adobe Experience Manager as a Cloud Service的Cloud Manager 2022.8.0發行說明
+description: 以下是Cloud Manager 2022.8.0在as a Cloud Service中的發行說明AEM。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 9f76f77365c0e9b2986e9bb3560bc039e0ca7961
+source-git-commit: 0476fda614ce693222ae2e2fb62ea2f84243f80c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 3%
+source-wordcount: '187'
+ht-degree: 7%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service的Cloud Manager 2022.7.0發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service的Cloud Manager 2022.8.0發行說明 {#release-notes}
 
-本頁記錄了Cloud Manager 2022.7.0在as a Cloud Service中的發行說明AEM。
+本頁記錄了Cloud Manager 2022.8.0在as a Cloud Service中的發行說明AEM。
 
 >[!NOTE]
 >
@@ -21,15 +21,16 @@ ht-degree: 3%
 
 ## 發行日期 {#release-date}
 
-Cloud Manager在as a Cloud Service中2022.7.0版的AEM發佈日期是2022年8月8日。 下一版計畫於2022年8月11日發行。
+Cloud Manager在as a Cloud Service中2022.8.0版的AEM發佈日期為2022年8月11日。 下一版計畫於2022年9月9日發行。
 
 ## 新增功能 {#what-is-new}
 
-* Cloud Manager用戶現在可以從 **歡迎** 登錄頁上的卡。
-* 上的跨距 **[還原內容](/help/operations/backup.md)** 「環境詳細資訊」頁的頁籤現在顯示一個方便的git命令清單，允許用戶在本地查看更改。
+* 中有刷新的UI體驗 [添加環境工作流。](/help/implementing/cloud-manager/manage-environments.md)
+* [項AEM目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 已將雲管理器中包含的內容更新為版本37。
 
 ## 錯誤修正 {#bug-fixes}
 
-* UI中與在程式建立期間建立New Relic子帳戶相關的反饋消息已得到改進。
-* 用戶現在可以從雲管理器UI下載自定義UI測試日誌。
-* 在前線管道批准後未調用以執行部署步驟時，問題已得到解決。
+* 更正了未在雲管理器UI中建立或刪除New Relic用戶的情況。
+* 某些不經常發生的儲存庫建立失敗案例已變得更具彈性。
+* 現在，由於引入重試，VSTS組織設定錯誤的少發次數減少。
+* New Relic子帳戶用戶建立過程中改進的驗證現在可防止某些錯誤。
