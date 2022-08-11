@@ -3,7 +3,7 @@ title: 使用Dispatcher工具驗證和調試
 description: 使用Dispatcher工具驗證和調試
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
+source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 1%
@@ -231,7 +231,7 @@ Phase 3 finished
 
 >[!NOTE]
 >
->查看 [自動載入和驗證](#automatic-loading) 節，用於運行 `validate.sh` 在每次配置修改之後。
+>查看 [自動重裝和驗證](#automatic-loading) 節，用於運行 `validate.sh` 在每次配置修改之後。
 
 ### 階段1 {#first-phase}
 
@@ -422,7 +422,7 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 雲環境的日誌通過Cloud Manager中提供的日誌服務公開。
 
-### 自動載入和驗證 {#automatic-loading}
+### 自動重裝和驗證 {#automatic-reloading}
 
 >[!NOTE]
 >

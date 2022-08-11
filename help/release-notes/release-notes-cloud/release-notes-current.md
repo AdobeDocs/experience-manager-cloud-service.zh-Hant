@@ -3,7 +3,7 @@ title: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 description: 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f947a328897387d37e2092580e6992f14a344eb2
+source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 3%
@@ -109,7 +109,7 @@ ht-degree: 3%
 
 ### AEMas a Cloud ServiceSDK Dispatcher Tools增強 {#dispatcher-tools-enhancements}
 
-* Apache可以使用 `update_sdk.sh` 指令碼，它將自動載入和驗證對apache和dispatcher配置的任何後續更改，從而提高開發人員速度。 僅支援調度程式工具靈活模式。 另請參見 [調試Apache和Dispatcher配置](/help/implementing/dispatcher/validation-debug.md#automatic-loading) 有關自動載入和驗證的其他詳細資訊。
+* Apache可以使用 `docker_run_hot_reload.sh` 指令碼，它將自動載入和驗證對apache和dispatcher配置的任何後續更改，從而提高開發人員速度。 僅支援調度程式工具靈活模式。 另請參見 [調試Apache和Dispatcher配置](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) 有關自動重裝和驗證的其他詳細資訊。
 * 本地apache/dispatcher配置將更密切地跟蹤雲環境中的更改，從而提高兩個環境之間的奇偶校驗。
 
 ### [!DNL Experience Manager] 搶鮮版頻道中可用的新功能 {#prerelease-features-foundation}
