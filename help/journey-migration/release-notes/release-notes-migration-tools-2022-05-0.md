@@ -2,11 +2,10 @@
 title: 《 2022.5.0版中遷移工具AEM發行說明》
 description: 《 2022.5.0版中遷移工具AEM發行說明》
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: f84327096951772e1bed8656334841e1292d6bcf
+source-git-commit: 6196f3fc67dbcfe03a71bb6a0796dd5d1d0f8546
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -45,7 +44,7 @@ ht-degree: 4%
    * 通過更好的載入狀態、護欄和錯誤處理改善用戶體驗。
    * 攝取日誌被保留，並且始終可用於故障排除。
 
-## 雲加速管理器 {#cam-release}
+## Cloud Acceleration Manager {#cam-release}
 
 ### 發行日期 {#release-date-cam}
 

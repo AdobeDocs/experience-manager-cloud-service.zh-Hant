@@ -2,9 +2,9 @@
 title: 使用建立市場活動新聞AEM稿
 description: 瞭解如何AEM使用as a Cloud Service建立可與Adobe Campaign Classic一起發送的新聞稿。
 feature: Authoring
-role: Author
+role: User
 exl-id: 60a6a9d0-f5e6-424f-b320-dd4943c55d45
-source-git-commit: 0323317c8819d7f44ac05c8c6125d202b2a6ba2c
+source-git-commit: 6196f3fc67dbcfe03a71bb6a0796dd5d1d0f8546
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 1%
