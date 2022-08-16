@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2d84e6f2cc8345598af64f5b33ef88b26faa15fa
+source-git-commit: 5e8f70da6de27bf59e4a89e196a016820245a068
 workflow-type: tm+mt
-source-wordcount: '3717'
+source-wordcount: '3709'
 ht-degree: 41%
 
 ---
@@ -503,7 +503,6 @@ ht-degree: 41%
       + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
          + [建立最適化表單](/help/forms/creating-adaptive-form.md)
          + [為最適化表單設計 JSON 綱要](/help/forms/adaptive-form-json-schema-form-model.md)
-         + [為最適化表單設計 XML 綱要](/help/forms/adaptive-form-xml-schema-form-model.md)
          + [使用 Forms Designer](/help/forms/use-forms-designer.md)
          + [透過延遲載入改善大型表單的效能](/help/forms/lazy-loading-adaptive-forms.md)
       + 將元件新增至最適化表單{#add-components-to-an-adaptive-form}
