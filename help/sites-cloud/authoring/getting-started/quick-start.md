@@ -2,7 +2,7 @@
 title: 製作頁面的快速入門手冊
 description: 快速、高級的指南，幫助您開始創作頁面內容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
 workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 5%
@@ -244,13 +244,13 @@ ht-degree: 5%
 
    然後，取決於您的操作：
 
-   * 複製:
+   * [複製](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
 
       * 然後，您需要導航到新位置並貼上。
-   * 移動:
+   * [移動](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
       * 將開啟嚮導以收集移動頁面所需的資訊。 按照螢幕上的說明進行操作。
-   * 刪除:
+   * [刪除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
       * 系統將要求您確認操作。
    >[!NOTE]
