@@ -3,9 +3,9 @@ title: 使用Dispatcher工具驗證和調試
 description: 使用Dispatcher工具驗證和調試
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
+source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2655'
 ht-degree: 1%
 
 ---
@@ -426,7 +426,7 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 >[!NOTE]
 >
->由於Windows作業系統的限制，此功能僅適用於Linux用戶。
+>由於Windows作業系統的限制，此功能僅適用於macOS和Linux用戶。
 
 而不是運行本地驗證(`validate.sh`)並啟動docker容器(`docker_run.sh`)每次修改配置時，您也可以 `docker_run_hot_reload.sh` 的下界。  指令碼將監視對配置的任何更改，並會自動重新載入並重新運行驗證。 使用此選項可在調試時節省大量時間。
 
