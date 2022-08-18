@@ -2,7 +2,7 @@
 title: 內容傳輸工具入門
 description: 內容傳輸工具入門
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
+source-git-commit: 8e1cc042da37fd246a5048e67fc04cbacfa69775
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 7%
@@ -35,7 +35,7 @@ ht-degree: 7%
 源實AEM例可能在防火牆後運行，在防火牆中它只能訪問已添加到允許清單的某些主機。 為了成功運行抽取，需要從正在運行的實例訪問以下終結點AEM:
 
 * 目標AEMas a Cloud Service環境： `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* Azure Blob儲存服務： `*.blob.core.windows.net`
+* Azure Blob儲存服務： `casstorageprod.blob.core.windows.net`
 * 用戶映射IO終結點： `usermanagement.adobe.io`
 
 要test到目標as a Cloud ServiceAEM環境的連接，請從源實例的shell中發出以下cURL命令(替換 `program_id`。 `environment_id`, `migration_token`):
