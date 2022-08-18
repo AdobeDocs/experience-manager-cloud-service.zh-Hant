@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 472a4311372ce9a01730f7ced6d4b26018aae4b9
+source-git-commit: 9ac5426c71c2ed794b9e72c1eacd936b9aa8d70c
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1042'
 ht-degree: 7%
 
 ---
@@ -70,6 +70,8 @@ ht-degree: 7%
    * 這是必需的，以便AdobeCDN可以驗證請求源並傳遞 `X-Forwarded-*` 到應用程式AEM的標題。 比如說，`X-Forwarded-For` 用於確定客戶端IP。 因此，它成為可信呼叫者（即客戶管理的CDN）的責任，以確保CDN的正確性 `X-Forwarded-*` 標題（請參閱下面的注釋）。
    * 可選地，當AdobeCDN的入口被阻止時 `X-AEM-Edge-Key` 不存在。 如果您需要直接訪問AdobeCDN的入口（要阻止），請通知Adobe。
 
+查看 [示例CDN供應商配置](#sample-configurations) 部分，以瞭解主要CDN供應商的配置示例。
+
 在接受即時通信之前，您應該向Adobe的客戶支援驗證端到端通信路由是否正常運行。
 
 獲取 `X-AEM-Edge-Key`，您可以test請求已正確路由，如下所示。
@@ -99,6 +101,25 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 由於額外的躍點，可能會對效能造成很小的影響，儘管從客戶CDN到受管AEM理CDN的躍點可能會很高效。
 
 請注意，發佈層支援此客戶CDN配置，但不在作者層前。
+
+### 示例CDN供應商配置 {#sample-configurations}
+
+下面是一些主要CDN供應商的幾個配置示例。
+
+**Akamai**
+
+![阿卡邁1](assets/akamai1.png "阿卡邁")
+![阿卡邁2](assets/akamai2.png "Akamai")
+
+**Amazon雲前**
+
+![雲前1](assets/cloudfront1.png "Amazon雲前")
+![CloudFront2](assets/cloudfront2.png "Amazon雲前")
+
+**雲閃**
+
+![雲閃1](assets/cloudflare1.png "雲閃")
+![雲閃2](assets/cloudflare2.png "雲閃")
 
 ## 地理位置標題 {#geo-headers}
 
