@@ -2,9 +2,9 @@
 title: 外部化URL
 description: Externalizer是OSGi服務，它允許您以寫程式方式將資源路徑轉換為外部和絕對URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 28903c1cbadece9d0ef575cdc0f0d7fd32219538
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,28 @@ ht-degree: 0%
 
 ## 外部化器的預設行為及如何覆蓋 {#default-behavior}
 
-出廠設定後，Externalizer服務具有如 `author-p12345-e6789.adobeaemcloud.com` 和 `publish-p12345-e6789.adobeaemcloud.com`。
+現成情況下，Externalizer服務將幾個域標識符映射到與為環境生成的服務AEMURL匹配的絕對URL前置詞，如 `author https://author-p12345-e6789.adobeaemcloud.com` 和 `publish https://publish-p12345-e6789.adobeaemcloud.com`。 每個預設域的基本URL都從雲管理器定義的環境變數中讀取。
 
-要覆蓋此類值，請使用文章中所述的Cloud Manager環境變數 [配置OSGiAEM以as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 並設定預定義 `AEM_CDN_DOMAIN_AUTHOR` 和 `AEM_CDN_DOMAIN_PUBLISH` 變數。
+參考，預設OSGi配置 `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` 有效：
+
+```json
+{
+   "externalizer.domains": [
+      "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+      "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+      "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]",
+      "preview $[env:AEM_EXTERNALIZER_PREVIEW;default=http://localhost:4503]"
+   ]
+}
+```
+
+>[!CAUTION]
+>
+>預設 `local`。 `author`。 `preview`, `publish` OSGi配置中的外部化程式域映射必須與原始 `$[env:...]` 上面列出的值。
+>
+>部署自定義 `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` 檔案到AEMas a Cloud Service，如果忽略這些預置域映射中的任何一個，則可能導致無法預知的應用程式行為。
+
+要覆蓋 `preview` 和 `publish` 值，使用文章中所述的Cloud Manager環境變數 [配置OSGiAEM以as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 並設定預定義 `AEM_CDN_DOMAIN_PUBLISH` 和 `AEM_CDN_DOMAIN_PREVIEW` 變數。
 
 ## 配置外部化程式服務 {#configuring-the-externalizer-service}
 
