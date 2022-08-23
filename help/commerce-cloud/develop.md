@@ -3,12 +3,12 @@ title: 開AEM發商AEM業
 description: 瞭解如何使用項目原型AEM生成啟AEM用商業的項目。 瞭解如何使用as a Cloud ServiceSDK構建項目並將其部署到本地AEM開發環境。
 topics: Commerce, Development
 feature: Commerce Integration Framework
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 9%

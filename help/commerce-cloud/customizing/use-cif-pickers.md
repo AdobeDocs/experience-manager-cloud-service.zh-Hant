@@ -3,12 +3,12 @@ title: CIF產品和類別選取器的使用
 description: 瞭解如何在客戶商務元件中使用CIF產品和類別選取器，以支援作者和營銷人員高效地處理商務產品和目錄資料。
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: 2e0a2b543fe0b6302a5dd62055f89a8f30427e6b
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 0%

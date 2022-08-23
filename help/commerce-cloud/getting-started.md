@@ -3,12 +3,12 @@ title: Commerce AEMas a Cloud Service入門
 description: 瞭解如何將支援商業的項AEM目部署到以雲服務AEM環境運行的項目。 使用Adobe雲管理器和CI/CD管道的功能，將Venia參考庫構建到運行環境。
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 2%
@@ -69,7 +69,7 @@ CIF附加模組（可選）只支援Adobe Commerce企業/雲，支援為作者�
 
 1. 使用Cloud Manager插件獲取Adobe I/OCLI
 
-   檢查 [Adobe雲管理器文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant) 如何下載、設定和使用 [Adobe I/OCLI](https://github.com/adobe/aio-cli) 和 [Cloud Manager CLI插件](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
+   檢查 [Adobe雲管理器文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) 如何下載、設定和使用 [Adobe I/OCLI](https://github.com/adobe/aio-cli) 和 [Cloud Manager CLI插件](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
 
 2. 使用as a Cloud Service程式驗證Adobe I/OAEM CLI
 

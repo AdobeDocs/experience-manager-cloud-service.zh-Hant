@@ -3,7 +3,7 @@ title: 自定義CIF核心元件
 description: 瞭解如何自定義AEMCIF核心元件。 本教程介紹如何安全擴展CIF核心元件以滿足業務特定要求。 瞭解如何擴展GraphQL查詢以返回自定義屬性並在CIF核心元件中顯示新屬性。
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 1%
@@ -500,5 +500,5 @@ Sling模型以Java形式實現，可在 **核** 生成項目的模組。
 - [AEMCIF核心元件](https://github.com/adobe/aem-core-cif-components)
 - [自定義AEMCIF核心元件](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [自訂核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
-- [AEM Sites入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [AEM Sites入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)
 - [CIF產品和類別選取器的使用](use-cif-pickers.md)

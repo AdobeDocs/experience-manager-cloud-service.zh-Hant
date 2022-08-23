@@ -2,7 +2,7 @@
 title: 高級URL配置
 description: 瞭解如何自定義產品和類別頁的URL。 這允許實現優化搜索引擎的URL並促進發現。
 sub-product: Commerce
-version: cloud-service
+version: Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: af07bce8618c7b13b4dc5e287c7218316029f565
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 3%
@@ -171,7 +171,7 @@ ht-degree: 3%
 | `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html` | 是 | 完全匹配 |
 | `{{page}}.html/{{sku}}/{{url_path}}.html` | 是 | 是 |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style=&quot;table-layout:auto&quot;}
 
 >[!NOTE]
 >
