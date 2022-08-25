@@ -2,9 +2,9 @@
 title: 記錄AEMas a Cloud Service
 description: 瞭解如何將日誌記錄AEM用於as a Cloud Service，以便為中央日誌記錄服務配置全局參數、單個服務的特定設定或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 47bd338469a1d47b8f9863b8454e2074657c9fe8
+source-git-commit: 690939074570fb5285f242fe8d782380cfa5abc1
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2324'
 ht-degree: 2%
 
 ---
@@ -549,7 +549,7 @@ Apache層日誌（包括調度程式）位於Docker容器中，該容器容納Di
 
 在支援請求中，客戶應指出：
 
-* Splunk HEC終結點地址
+* Splunk HEC終結點地址。 此終結點必須具有有效的SSL證書
 * Splunk指數
 * 斯普隆克港
 * Splunk HEC令牌。 請參閱 [此頁](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) 的子菜單。
