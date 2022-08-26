@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 28bf3e1c33def6c8a17b39a6bd9abca10faa1bd8
+source-git-commit: 72c53bf69c36c265d25d136c0d2887cac2fe98fc
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1028'
 ht-degree: 70%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 70%
 
    ![OAuth Config](assets/oauthconfig_new.png)
 
-1. 返回 **[!UICONTROL 建立Adobe Sign配置]** 的子菜單。 指定[**[!UICONTROL 客戶端ID]** （也稱為應用程式ID）和 **[!UICONTROL 客戶端密碼]**]。 使用 [客戶端ID與Adobe Sign應用的客戶端密碼](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) 在上一步中建立的。
+1. 返回 **[!UICONTROL 建立Adobe Sign配置]** 的子菜單。 在 **[!UICONTROL 設定]** 頁籤，指定[**[!UICONTROL 客戶端ID]** （也稱為應用程式ID）和 **[!UICONTROL 客戶端密碼]**]。 使用 [客戶端ID與Adobe Sign應用的客戶端密碼](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) 在上一步中建立的。
 
 1. 選擇 **[!UICONTROL 為附件啟用Adobe Sign]** 選項，將附加到自適應窗體的檔案附加到相應的 [!DNL Adobe Sign] 文檔已發送以進行簽名。
 
