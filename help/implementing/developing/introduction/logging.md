@@ -2,9 +2,9 @@
 title: 記錄AEMas a Cloud Service
 description: 瞭解如何將日誌記錄AEM用於as a Cloud Service，以便為中央日誌記錄服務配置全局參數、單個服務的特定設定或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 690939074570fb5285f242fe8d782380cfa5abc1
+source-git-commit: 197bff164df83788b4b8b16ba4c7a82021f86002
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2334'
 ht-degree: 2%
 
 ---
@@ -560,7 +560,7 @@ Apache層日誌（包括調度程式）位於Docker容器中，該容器容納Di
 >
 >不支援沙盒程式環境的Splunk轉發。
 
-您應確保初始請求包括除階段/prod環境外應啟用的所有開發環境。
+您應確保初始請求包括除階段/prod環境外應啟用的所有開發環境。 Splunk必須具有SSL證書，並且是面向公共的。
 
 如果在初始請求後建立的任何新開發環境都打算進行Splunk轉發，但未啟用它，則應發出其他請求。
 
