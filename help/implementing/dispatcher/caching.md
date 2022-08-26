@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ff78e359cf79afcb4818e0599dca5468b4e6c754
+source-git-commit: 5319eca105564843f26e7fb6d9cfd5aa065b8ca0
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2683'
 ht-degree: 1%
 
 ---
@@ -196,6 +196,18 @@ Define DISABLE_DEFAULT_CACHING
 ### HEAD請求行為 {#request-behavior}
 
 當在HEADCDN上接收到Adobe請求時， **不** 快取，該請求被調度器和/或實例轉換和接AEM收作為GET請求。 如果響應是可快取的，則將從CDN提供後續HEAD請求。 如果響應不可快取，則後續HEAD請求將在一段時間內被傳遞AEM給調度程式和/或實例，該時間段取決於 `Cache-Control` TTL。
+
+### 市場營銷活動參數
+
+市場營銷培訓參數被添加到網站以跟蹤不同的市場營銷活動，但很少對網站的外觀產生影響。 這就是為什麼在調度程式中，在調度程式快取決策中，它們大多可以被忽略。 可通過設定 [ignoreUrlParams](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters)。
+Adobe在檔案中維護常用市場營銷查詢參數的清單 `conf.dispatcher.d/cache/marketing_query_parameters.any`。 撤消對網站市場營銷活動使用的行的注釋，並撤消對 `/ignoreUrlParams` 的子菜單。
+
+```
+/ignoreUrlParams {
+ 	/0001 { /glob "*" /type "deny" }
+ 	$include "../cache/marketing_query_parameters.any"
+}
+```
 
 ## Dispatcher快取無效 {#disp}
 
