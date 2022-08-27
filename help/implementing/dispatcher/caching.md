@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 中的快取
 description: 'AEM as a Cloud Service 中的快取 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a624b4f1999238adae2f6a03c2169cb30de9f730
+source-git-commit: 42c1d4fcfef4487aca6225821c16304ccf4deb04
 workflow-type: tm+mt
 source-wordcount: '2591'
 ht-degree: 1%
@@ -196,19 +196,6 @@ Define DISABLE_DEFAULT_CACHING
 ### HEAD請求行為 {#request-behavior}
 
 當在HEADCDN上接收到Adobe請求時， **不** 快取，該請求被調度器和/或實例轉換和接AEM收作為GET請求。 如果響應是可快取的，則將從CDN提供後續HEAD請求。 如果響應不可快取，則後續HEAD請求將在一段時間內被傳遞AEM給調度程式和/或實例，該時間段取決於 `Cache-Control` TTL。
-
-<!---### Marketing campaign parameters {#marketing-parameters}
-
-Marketing campaign parameters are added to a website to track different marketing campaigns but rarely have impact on how the website should look like. That's why in the dispatcher they can mostly be ignored for dispatcher caching decisions. This can be achieved by setting the [ignoreUrlParams](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters) parameter.
-Adobe maintains a list of commonly used marketing query parameters in the file `conf.dispatcher.d/cache/marketing_query_parameters.any`. Uncomment the lines that are used by the websites marketing campaigns and uncomment the `/ignoreUrlParams` section in the enabled farm.
-
-```
-/ignoreUrlParams {
- 	/0001 { /glob "*" /type "deny" }
- 	$include "../cache/marketing_query_parameters.any"
-}
-```
--->
 
 ## Dispatcher快取無效 {#disp}
 
