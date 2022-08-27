@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5e8f70da6de27bf59e4a89e196a016820245a068
+source-git-commit: 4eebe0fe80f816bb7f92026531848cec84285078
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3712'
 ht-degree: 41%
 
 ---
@@ -67,6 +67,7 @@ ht-degree: 41%
    + Cloud Manager發行說明 {#cloud-manager}
       + [當前發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 {#2022}
+         + [2022.8.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
          + [2022.7.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
          + [2022.6.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
          + [2022.5.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
@@ -141,7 +142,7 @@ ht-degree: 41%
       + [開發人員和部署管理器任務](/help/journey-onboarding/developers.md)
       + [用AEM戶任務](/help/journey-onboarding/aem-users.md)
    + 參AEM考演示附加行程 {#demo-add-on}
-      + [概觀](/help/journey-sites/demos-add-on/overview.md)
+      + [總覽](/help/journey-sites/demos-add-on/overview.md)
       + [安裝](/help/journey-sites/demos-add-on/installation.md)
       + [建立程式](/help/journey-sites/demos-add-on/create-program.md)
       + [建立演示網站](/help/journey-sites/demos-add-on/create-site.md)
@@ -159,7 +160,7 @@ ht-degree: 41%
    + [遷移指南，以Experience Manager合作夥伴的as a Cloud Service](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + 雲加速管理器簡介 {#introduction-cam}
-         + [概觀](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+         + [總覽](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [好處](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + 使用雲加速管理器 {#using-cam}
          + [雲加速管理器入門](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
@@ -168,10 +169,10 @@ ht-degree: 41%
          + [上線階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + 雲端轉換工具 {#cloud-migration}
       + 最佳做法分析器 {#best-practices-analyzer}
-         + [概觀](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+         + [總覽](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [使用最佳做法分析器](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + 內容轉移工具 {#content-transfer-tool}
-         + [概觀](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+         + [總覽](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [內容傳輸工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [使用內容傳輸工具的指導原則和最佳做法](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [內容傳輸工具入門](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
@@ -184,11 +185,11 @@ ht-degree: 41%
          + [在發佈實例上運行內容傳輸工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [內容傳輸工具故障排除](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 用戶映射工具 {#user-mapping-tool}
-            + [概觀](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
+            + [總覽](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
             + [重要注意事項](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
             + [使用用戶映射工具](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
          + 舊式內容傳輸工具 {#legacy}
-            + [概觀](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
+            + [總覽](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
             + [內容傳輸工具的先決條件](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
             + [使用內容傳輸工具的指導原則和最佳做法](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
             + [內容傳輸工具入門](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
@@ -730,7 +731,7 @@ ht-degree: 41%
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [部署代碼](/help/implementing/cloud-manager/deploy-code.md)
       + 了解測試結果 {#test-results}
-         + [概觀](/help/implementing/cloud-manager/overview-test-results.md)
+         + [總覽](/help/implementing/cloud-manager/overview-test-results.md)
          + [代碼質量測試](/help/implementing/cloud-manager/code-quality-testing.md)
          + [自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + [功能測試](/help/implementing/cloud-manager/functional-testing.md)
