@@ -2,9 +2,9 @@
 title: 許可證儀表板
 description: Cloud Manager提供了一個儀表板，可以輕鬆查看您的組織或租戶可用的AEMaaCS產品權利。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
+source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '787'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Cloud Manager提供了一個儀表板，可以輕鬆查看您的組織或租戶可用的AEMaaCS產品權利。
 
-## 概觀 {#overview}
+## 總覽 {#overview}
 
 Cloud Manager許可證儀表板可方便地訪問以下資訊：
 
@@ -67,35 +67,21 @@ Cloud Manager許可證儀表板可方便地訪問以下資訊：
 
 還AEM制定了排除知名bot的規則，包括定期訪問網站以更新搜索索引或服務的知名服務。
 
-以下是排除的知名服務實例的非詳盡清單。
-
-* AddSearchBot
-* AhrefsBot
-* 阿普爾博特
-* 詢問Jeeves公司蜘蛛
-* 賓博特
-* 必應預覽
-* 布萊克斯布
-* 使用
-* 白蜘蛛
-* 爬蟲坑
-* Facebookexternalhit
-* GoogleAdsBot
-* GoogleAdsBot移動
-
 ### 為什麼我的分析報告顯示的結果與內容請AEM求不同？ {#why-are-reports-different}
 
 內容請求將與本表中匯總的組織的分析報告工具存在差異。
 
 | 差異原因 | 解釋 |
 |---|---|
-| 標記 | 跟蹤為內容請求AEM的所有頁面都可能標籤分析跟蹤。<br>作為內容請求跟蹤的所AEM有API調用將不會由組織的分析工具進行標籤。<br>可以標籤頁面或API調用以跟蹤操作而不是視圖。 |
+| 標記 | 跟蹤為內容請求AEM的所有頁面都可能標籤分析跟蹤。 作為內容請求跟蹤的所AEM有API調用將不會由組織的分析工具進行標籤。<br>可以標籤頁面或API調用以跟蹤操作或僅標籤唯一的頁面視圖，而不是所有視圖。 |
 | Tag Management規則 | 標籤管理規則設定可能導致頁面上的各種資料收集配置，導致內容請求跟蹤與差異的某種組合。 |
 | 機器人 | 未預先識別和刪除的未知Bot可能AEM導致跟蹤差異。 |
 | 報表套裝 | 屬於同一實例和域的AEM頁面可能會將資料發送到不同的分析報告套件。 |
 | 第三方監控和安全工具 | 監視和安全掃描工具可能生成分析報AEM告中未跟蹤的內容請求。 |
 | 預回遷請求 | 使用預回遷服務預載入頁以提高速度可能會導致內容請求流量顯著增加。 |
-| DDOS | 雖然Adobe會盡其所能自動檢測並過濾掉DDOS攻擊中的流量，但無法保證會檢測到所有可能的DDOS攻擊。 |
+| DDOS | 雖然Adobe盡了一切努力來自動檢測和過濾來自DDOS攻擊的通信量，但無法保證會檢測到所有可能的DDOS攻擊 |
+| 流量阻止程式 | 在瀏覽器中使用跟蹤程式攔截程式可能會選擇不跟蹤某些請求。 |
+| 防火牆 | 防火牆可能會阻止分析跟蹤。 在企業防火牆中，這種情況更為頻繁。 |
 
 ### 如果我使用自己的CDN怎麼辦？ {#using-own-cdn}
 
