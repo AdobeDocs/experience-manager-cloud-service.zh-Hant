@@ -2,9 +2,9 @@
 title: 上線
 description: 瞭解如何在代碼和內容準備好雲後執行遷移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
+source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---
@@ -144,6 +144,7 @@ ht-degree: 0%
          * [管理SSL證書簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [管理SSL證書](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * 管理自定義域名(DNS)
+         * 為確保DNS切換器不會引起意外問題，最好在您投入使用並執行一輪UAT測試之前建立一個test子域，將生產實例連接到。 因此，如果您的域是example.com，則可以建立子域test.example.com，並將其應用於生產。 在域的UAT測試期間，您需要查找適當的鏈路重定向、快取和調度程式配置。
          * [自定義域名簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [添加自定義域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [管理自定義域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
@@ -155,6 +156,6 @@ ht-degree: 0%
 
 在執行遷移時需要重新校準任務時，您始終可以引用該清單。
 
-## 下一步是什麼 {#what-is-next}
+## 下一步 {#what-is-next}
 
 一旦您瞭解了如何執行遷移到AEMas a Cloud Service，可以檢查 [上線後](/help/journey-migration/post-go-live.md) 頁面以保持實例順利運行。
