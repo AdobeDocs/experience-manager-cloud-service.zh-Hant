@@ -3,9 +3,9 @@ title: 配置Dynamic MediaCloud Service
 description: 瞭解如何在Adobe Experience Manager as a Cloud Service配置Dynamic Media。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
+source-git-commit: 7a7a3de89d02ac34d40a59e87cc049652730a72d
 workflow-type: tm+mt
-source-wordcount: '3574'
+source-wordcount: '3566'
 ht-degree: 3%
 
 ---
@@ -92,7 +92,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | 屬性 | 說明 |
    |---|---|
-   | 公司 | Dynamic Media帳戶的名稱。 您可能有多個Dynamic Media客戶，分別針對不同的子品牌、部門或分段/生產環境。<br>另請參閱 [配置Dynamic Media公司別名帳戶](/help/assets/dynamic-media/dm-alias-account.md)。 |
+   | 公司 | Dynamic Media帳戶的名稱。 你可以在Dynamic Media有個Experience Manager賬戶。<!-- CQDOC-19579 and CQDOC-19612 --><br>另請參閱 [配置Dynamic Media公司別名帳戶](/help/assets/dynamic-media/dm-alias-account.md)。 |
    | 公司根資料夾路徑 | 您公司的根資料夾路徑。 |
    | 發佈資產 | 您可以從以下三個選項中進行選擇：<br>**[!UICONTROL 立即&#x200B;]**— 上載資產時，系統將接收資產並立即提供URL/Embed。 發佈資產不需要用戶干預。<br>**[!UICONTROL 激活時]**  — 在提供URL/嵌入連結之前，必須先顯式發佈資產。<br>**[!UICONTROL 選擇性發佈&#x200B;]**— 資產僅自動發佈用於安全預覽。 也可將它們明確發佈到Experience Manageras a Cloud Service，而不發佈到DMS7以在公共域中交付。 今後，此選項打算將資產公佈到Experience Manageras a Cloud Service，並將資產公佈到Dynamic Media，相互排斥。 即，您可以將資產發佈到DMS7，以便可以使用智慧裁剪或動態格式副本等功能。 或者，您可以只發佈Experience Manageras a Cloud Service中的資產以供預覽；這些相同的資產未在DMS7中發佈，以便在公共域中交付。 |
    | 安全預覽伺服器 | 用於指定安全格式副本預覽伺服器的URL路徑。 即，在生成格式副本後，Experience Manageras a Cloud Service可以安全訪問和預覽遠程Dynamic Media格式副本(不會將二進位檔案發回Experience Manageras a Cloud Service實例)。<br>除非您有使用自己公司伺服器或特殊伺服器的特殊安排，否則Adobe建議您保留指定的此設定。 |
