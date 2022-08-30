@@ -2,9 +2,9 @@
 title: 有何不同和新增 — Adobe Experience Manager as a Cloud Service
 description: What Different and What New -Adobe Experience Manager(AEM)as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1903'
 ht-degree: 10%
 
 ---
@@ -67,26 +67,27 @@ AEM as a Cloud Service 現已具備：
 
 ## 更AEM新 {#aem-updates}
 
->[!NOTE]
->有關詳細資訊，請參閱 [版AEM本更新](/help/implementing/deploying/aem-version-updates.md)。
-
-AEMas a Cloud Service現在使用連續整合和連續交付(CI/CD)來確保您的項目處於最新的AEM版本。 這意味著生產實例和階段實例將更新為最AEM新版本，而不會中斷用戶服務。
+AEMas a Cloud Service現在使用連續整合和連續交付(CI/CD)來確保項目處於最新的AEM版本。 這意味著生產實例和交叉實例將更新為最AEM新版本，而不會中斷用戶服務。
 
 >[!NOTE]
-> 如果更新到生產環境失敗，Cloud Manager將自動回滾該階段環境。 此操作將自動執行，以確保更新完成後，階段環境和生產環境都處於同一AEM版本。
+>
+>如果更新到生產環境失敗，Cloud Manager將自動回退登台環境。 此操作將自動執行，以確保在更新完成後，轉移環境和生產環境都處於同一AEM版本。
 
-版AEM本更新有兩種類型：
+有兩種版本更AEM新類型：
 
-* **推送AEM更新**
+* **維AEM護更新**
 
    * 可以每天發佈。
-   * 主要是維護，包括最新的錯誤修復和安全更新。
-
-      由於定期應用更改，因此影響是遞增的，因此減少了對服務的影響。
+   * 主要用於維護目的，包括最新的錯誤修復和安全更新。
+   * 由於定期應用更改，因此影響最小。
 
 * **新功能更新**
 
    * 通過可預測的每月計畫發佈。
+
+>[!TIP]
+>
+>有關詳細資訊，請參閱 [版AEM本更新](/help/implementing/deploying/aem-version-updates.md)。
 
 ## 雲管理器 {#cloud-manager}
 
@@ -133,7 +134,7 @@ Cloud Manager在多個地理區域的資料中心建立環境，提供全球覆�
 
 與現在的情況相比，這也有明顯不同：
 
-* 一個評估階段，以確保滿足所有先決條件；包括，例如：
+* 一個評估階段，確保滿足所有先決條件；包括，例如：
 
    * 法律要求
 

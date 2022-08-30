@@ -3,7 +3,7 @@ title: Cloud Manager在as a Cloud Service版AEM2021.3.0中的發行說明
 description: Cloud Manager在as a Cloud Service版AEM2021.3.0中的發行說明
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Cloud Manager在as a Cloud Service中的AEM發佈日期為2021年3月11日。
    * 從具有站點和資產的現有程式中刪除站點或資產。
    * 將第二個未使用的解決方案權利添加到現有程式或作為新程式。
 
-* **推AEM送更新** 現在將同時顯示「管線執行」和「活動」螢幕的標籤。
+* **維AEM護更新** 現在將同時顯示「管線執行」和「活動」螢幕的標籤。
 
 * 如果某個環境已休眠，但還有可AEM用的更新， **冬眠** 狀態將優先於 **更新可用**。
 
