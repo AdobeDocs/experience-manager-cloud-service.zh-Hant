@@ -2,10 +2,10 @@
 title: '沙盒程式簡介 '
 description: 瞭解沙盒程式與生產程式有何不同。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 05cba12cdd14c2e29f6a471047ce95fcf720abc4
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 0%
+source-wordcount: '437'
+ht-degree: 2%
 
 ---
 
@@ -46,6 +46,10 @@ ht-degree: 0%
 ### 沒有自定義域或IP允許清單 {#ip-allow}
 
 自定義域和IP允許清單在沙盒程式中不可用。
+
+### 無高級網路 {#advanced-networking}
+
+[高級網路功能](/help/security/configuring-advanced-networking.md) （例如VPN的自助配置、非標準埠、專用出口IP地址等） 在沙盒程式中不可用。
 
 ### 手動更AEM新 {#updates}
 

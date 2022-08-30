@@ -2,9 +2,9 @@
 title: 添加SSL證書
 description: 瞭解如何使用Cloud Manager的自助服務工具添加您自己的SSL證書。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 2c87d5fb33b83ca77b97391e4b0baaf38f8dd026
+source-git-commit: 14e0255b3ce2ca44579b9fc3de6c7b7f5d8f34b6
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 證書格式 {#certificate-format}
 
-SSL證書檔案必須採用PEM格式才能隨Cloud Manager一起安裝。 PEM格式的公共檔案擴展包括 `.pem,` 。`crt`。 `.cer`, `.cert`。
+SSL證書檔案必須採用PEM格式才能隨Cloud Manager一起安裝。 PEM格式的公共檔案擴展包括 `.pem,` 。`crt`, `.cer`, 和 `.cert`.
 
 以下 `openssl` 命令可用於轉換非PEM證書。
 
@@ -57,9 +57,7 @@ SSL證書檔案必須採用PEM格式才能隨Cloud Manager一起安裝。 PEM格
 
    * 在中輸入證書的名稱 **證書名稱**。
       * 這僅供參考，可以是任何有助於您輕鬆引用證書的名稱。
-   * 貼上 **證書**。 **私鑰**, **證書鏈** 值。
-      * 可以使用輸入框右側的貼上表徵圖。
-      * 這三個欄位都是必填的。
+   * 貼上 **證書**。 **私鑰**, **證書鏈** 值。 這三個欄位都是必填的。
 
    ![「添加SSL證書」對話框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
