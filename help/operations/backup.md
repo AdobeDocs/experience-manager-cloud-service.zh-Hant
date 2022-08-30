@@ -2,9 +2,9 @@
 title: 內容在AEMas a Cloud Service
 description: 瞭解如何使用Cloud Manager從AEM備份中恢復as a Cloud Service內容。
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: a61eaa8f13c96c87f45f4074ebd15e1dc8597c2c
+source-git-commit: e816bd55b8b5febb19566f3d6009e6f5e823b22e
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,13 @@ ht-degree: 0%
 
 瞭解如何使用Cloud Manager從AEM備份中恢復as a Cloud Service內容。
 
-## 概觀 {#overview}
+>[!NOTE]
+>
+>* 此功能正在分階段推出，可能尚未在Cloud Manager中的所有租戶中啟用。
+>* 此功能目前僅限於暫存和開發環境。 這些環境類型的功能使用和反饋將確保在不久的將來成功部署到生產環境。
+
+
+## 總覽 {#overview}
 
 Cloud Manager的自助服務還原過程將資料從Adobe系統備份中複製並還原到其原始環境。 執行恢復以將丟失、損壞或意外刪除的資料返回到其原始狀態。
 
