@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service團隊和產品配置檔案
 description: 瞭解AEMas a Cloud Service團隊和產品配置檔案以及授予和限制對許可Adobe解決方案的訪問。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
+source-git-commit: d54c25791cbb06232ff6e24bb7b8005b366a2144
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Cloud Manager具有預配置的產品配置檔案，可以將其視為基於角�
 
 每個產品配置檔案都具有與它們關聯的特定權限。
 
-* **業務所有者**  — 在此角色中，您有權添加新程式或編輯程式、添加或更新環境、添加/編輯/刪除/運行管道、將代碼部署到環境AEM或執行代碼質量檢查。
+* **業務所有者**  — 在此角色中，您有權添加新程式或編輯程式、添加或更新環境、將代碼部署到環境AEM或執行代碼質量檢查。
 * **部署管理器**  — 在此角色中，您具有添加或更新環境、運行任何管道以及將代碼部署到環境或執AEM行代碼質量檢查的權限。
 * **開發人員**  — 在此角色中，您具有生成個人訪問令牌以訪問Git的權限。
 * **程式管理器**  — 在此角色中，您有權安排管道、覆蓋3層質量門並提供生產批准。

@@ -2,9 +2,9 @@
 title: Cloud Manager環境變數
 description: 標準環境變數可通過雲管理器進行配置和管理，並提供給運行時環境，以用於OSGi配置。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 4b2ea300f61ad7d1218a984f7238365c5b170a8e
+source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 標準環境變數可以通過雲管理器進行配置和管理。 它們被提供給運行時間環境，並可用於OSGi配置。 環境變數可以是特定於環境的值，也可以是基於正在更改的內容的環境機密。
 
-## 概觀 {#overview}
+## 總覽 {#overview}
 
 環境變數為as a Cloud Service用戶提供了許多AEM好處：
 
@@ -31,6 +31,10 @@ ht-degree: 0%
 * 當程式中存在多個開發環境，並且某些配置不同於一個環境時，
 
 ## 添加環境變數 {#add-variables}
+
+>[!NOTE]
+>
+>您必須是 [**部署管理器** 角色](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) 以添加或修改環境變數。
 
 1. 登錄到Adobe雲管理器，位於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)。
 1. 雲管理器列出了各種可用程式。 選擇要管理的。
