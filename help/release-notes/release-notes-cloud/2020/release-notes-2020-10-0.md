@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service2020.10.0發行說明。」'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1197'
 ht-degree: 19%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 19%
 
 ### [!DNL Sites]的新增功能 {#what-is-new-sites}
 
-* **[核心元件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)**:Adobe Experience Manager as a Cloud Service受益於對最新版核心元件的自動更新。 2.12.0版包括社區提供的最新改進。 改進包括 [新的POST表格處理程式；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 能夠包括自定義CSS、JavaScript和元資料 [標籤通過上下文感知配置；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 和 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 用於簡化自定義元件中的Adobe資料層整合。 查看 [更改清單](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 的子2.12.0。
+* **[核心元件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**:Adobe Experience Manager as a Cloud Service受益於對最新版核心元件的自動更新。 2.12.0版包括社區提供的最新改進。 改進包括 [新的POST表格處理程式；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 能夠包括自定義CSS、JavaScript和元資料 [標籤通過上下文感知配置；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 和 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 用於簡化自定義元件中的Adobe資料層整合。 查看 [更改清單](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 的子2.12.0。
 
 * **[原型24工程](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**:建議的啟動新Experience Manager項目的基礎更好。 現在包括了 [Adobe客戶端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)，選擇 [在AMP中傳送站點，](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) 新建 [添加項目CSS/JS的擴展點。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
 
@@ -39,7 +39,7 @@ ht-degree: 19%
    * 用戶可以 [選擇並下載特定格式副本](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) 現在。 可透過「資產」詳細內容頁面的「轉譯」面板新的轉譯下載選項。
    * 來賓用戶會話超時15分鐘可確保所有併發用戶獲得更好的體驗。
 
-* **[!DNL Adobe Asset Link]版本2.1**:新版本 [Adobe資產連結](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html) 擴展 [!DNL Adobe Photoshop]。 [!DNL Adobe Illustrator], [!DNL Adobe InDesign] 的子菜單。 它增加了與最新 [!DNL Adobe Creative Cloud] 2021版的應用程式，於2020年10月發佈。
+* **[!DNL Adobe Asset Link]版本2.1**:新版本 [Adobe資產連結](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 擴展 [!DNL Adobe Photoshop]。 [!DNL Adobe Illustrator], [!DNL Adobe InDesign] 的子菜單。 它增加了與最新 [!DNL Adobe Creative Cloud] 2021版的應用程式，於2020年10月發佈。
 
 * **[!DNL Assets]WebP檔案支援**: [!DNL Assets] as a Cloud Service現在支援WebP影像格式。 WebP是Google建立的一種新興的影像格式。 WebP檔案格式的影像在視覺上與JPG或PNG檔案無法區分，而且檔案要小得多。 降低資產的檔案大小可縮短頁面載入時間，並幫助內容建立者提供更快的Web體驗。 請參閱中如何使用WebP [建立處理配置檔案](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)。
 
@@ -55,7 +55,7 @@ ht-degree: 19%
 
 ### [!DNL Forms]的 Beta 版功能 {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) 幫助您將模板和XML資料組合起來，以生成各種格式的文檔。 該服務允許您以同步和批處理模式生成文檔。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 幫助您將模板和XML資料組合起來，以生成各種格式的文檔。 該服務允許您以同步和批處理模式生成文檔。
 
 您可以寫信寄到 [!DNL formscsbeta@adobe.com] 來註冊 beta 版計劃。
 

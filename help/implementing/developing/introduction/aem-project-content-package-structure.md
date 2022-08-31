@@ -2,7 +2,7 @@
 title: AEM 專案結構
 description: 瞭解如何定義部署到Adobe Experience ManagerCloud Service的包結構。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2930'
 ht-degree: 13%
@@ -144,12 +144,12 @@ AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**
 
 將使用其聲明的包類型標籤包。 包類型有助於闡明包的用途和部署。
 
-+ 容器包必須設定 `packageType` 至 `container`。 容器包不能包含常規節點。 僅允許OSGi捆綁包、配置和子包。 不允AEM許as a Cloud Service中的容器 [安裝掛接](http://jackrabbit.apache.org/filevault/installhooks.html)。
++ 容器包必須設定 `packageType` 至 `container`。 容器包不能包含常規節點。 僅允許OSGi捆綁包、配置和子包。 不允AEM許as a Cloud Service中的容器 [安裝掛接](https://jackrabbit.apache.org/filevault/installhooks.html)。
 + 代碼（不可變）包必須設定 `packageType` 至 `application`。
 + 內容（可變）包必須設定其 `packageType` 至 `content`。
 
 
-有關詳細資訊，請參閱 [Apache Jackrabbit FileVault — 包Maven插件文檔](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType)。 [Apache Jackrabbit包類型](http://jackrabbit.apache.org/filevault/packagetypes.html)的 [FileVault Maven配置段](#marking-packages-for-deployment-by-adoube-cloud-manager) 下。
+有關詳細資訊，請參閱 [Apache Jackrabbit FileVault — 包Maven插件文檔](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType)。 [Apache Jackrabbit包類型](https://jackrabbit.apache.org/filevault/packagetypes.html)的 [FileVault Maven配置段](#marking-packages-for-deployment-by-adoube-cloud-manager) 下。
 
 >[!TIP]
 >
@@ -236,7 +236,7 @@ Repo Init指令碼的完整辭彙可在 [Apache Sling Repo初始化文檔](https
    >根據慣例，子包嵌入資料夾的名稱為尾碼為 `-packages`。這可確保部署代碼和內容包 **未部署** ，而是不會部署任何子包的目標資料夾， `/apps/<app-name>/...` 從而導致破壞性和循環安裝行為。
 
 + 第3級資料夾必須是
-   `application`。 `content` 或 `container`
+   `application`, `content` 或 `container`
    + 的 `application` 資料夾包含代碼包
    + 的 `content` 資料夾包含內容包
    + 的 `container` 資料夾包含 [額外的應用程式套件](#extra-application-packages) 可能包含在應用程式AEM中。
@@ -625,4 +625,4 @@ scripts=["
 ## 其他資源 {#additional-resources}
 
 + [使用Maven管理包](/help/implementing/developing/tools/maven-plugin.md)
-+ [FileVault內容包主插件](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault內容包主插件](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

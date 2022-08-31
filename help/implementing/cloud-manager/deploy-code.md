@@ -2,7 +2,7 @@
 title: 部署代碼
 description: 瞭解如何在as a Cloud Service中使用Cloud Manager管道部署AEM代碼。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: c6e930f62cc5039e11f2067ea31882c72be18774
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 0%
@@ -149,20 +149,20 @@ _只有「完整堆棧代碼」管道類型支援代碼掃描、功能測試、U
 
 ### 觸發新執行
 
-要觸發重新執行，需要向HAL連結&lt;(PUT請求)<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)>。 如果存在此連結，則可以從該步驟重新啟動執行。 如果缺少，則無法從該步驟重新啟動執行。 在初始版本中，此連結將只出現在生產部署步驟中，但將來的版本可能支援從其他步驟啟動管道。 範例:
+要觸發重新執行，需要向HAL連結&lt;(PUT請求)<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)>。 如果存在此連結，則可以從該步驟重新啟動執行。 如果缺少，則無法從該步驟重新啟動執行。 在初始版本中，此連結將只出現在生產部署步驟中，但將來的版本可能支援從其他步驟啟動管道。 範例:
 
 ```Javascript
  {
   "_links": {
-    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {
       "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
       "templated": false
     },
-    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
       "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
       "templated": false
     },
-    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
       "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
       "templated": false
     },

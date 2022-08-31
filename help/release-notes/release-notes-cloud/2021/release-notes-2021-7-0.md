@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.7.0 版發行說明。'
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1316'
 ht-degree: 21%
 
 ---
@@ -88,7 +88,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中不可用 [!DNL Experi
 
 ### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 可幫助您合併 XDP 範本和 XML 資料，以產生多種格式的列印文件。 該服務允許您以同步模式生成文檔。 這些 API 可讓您建立以下用途的應用程式：
    * 使用 XML 資料填寫範本檔案來產生文件。
    * 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
    * 從 XFA 表格 PDF 和 Adobe Acrobat Form 產生列印 PDF 檔案。
@@ -134,11 +134,11 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中不可用 [!DNL Experi
 
 * 無法以前建立名稱相同但命名空間不同的標籤。
 
-## 用於Experience Manageras a Cloud Service的XML文檔 {#xml-documentation}
+## XML DocumentationExperience Manageras a Cloud Service {#xml-documentation}
 
 ### 新增功能 {#what-is-new-xml-documentation}
 
-Experience Manageras a Cloud Service的XML文檔通常可用。 它允許Experience Manageras a Cloud Service的客戶購買XML文檔附加，以跨多個渠道(包括Experience Manager Sites)導入、建立、管理和交付技術內容。
+XML Documentation的Experience Manageras a Cloud Service一般可以獲得。 它允許Experience Manageras a Cloud Service客戶購買XML Documentation的附件，以跨多個渠道(包括Experience Manager Sites)導入、建立、管理和交付技術內容。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -181,7 +181,7 @@ Cloud Manager在as a Cloud Service中的AEM發佈日期為2021年7月15日。
 
 切換使用阿祖爾JDK的客戶應該知道，並非所有現有應用程式都會在阿祖爾JDK上進行編譯，而且不會出錯。 強烈建議在切換前在本地test。
 
-## 雲加速管理器 {#cam}
+## Cloud Acceleration Manager {#cam}
 
 ### 發行日期 {#release-date-july-cam}
 

@@ -2,10 +2,10 @@
 title: UI測試
 description: 自定義UI測試是一項可選功能，使您能夠建立並自動運行自定義應用程式的UItest
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 自定義UI測試是一項可選功能，使您能夠建立並自動運行應用程式的UItest。
 
-## 概覽 {#custom-ui-testing}
+## 總覽 {#custom-ui-testing}
 
 AEM提供 [Cloud Manager質量門](/help/implementing/cloud-manager/custom-code-quality-rules.md) 確保對自定義應用程式的平滑更新。 特別是，ITtest門已使用API建立和自動化自定AEM義test。
 
@@ -79,7 +79,7 @@ Maven項目生成Docker生成上下文。 此Docker生成上下文介紹如何�
 * 生成包含 `Dockerfile` 以及用test構建Docker映像所需的其他檔案。
 * 使用 `ui-test-docker-context` 分類器。
 
-最簡單的方法是配置 [Maven程式集插件](http://maven.apache.org/plugins/maven-assembly-plugin/) 建立Docker生成上下文存檔並為其分配正確的類元。
+最簡單的方法是配置 [Maven程式集插件](https://maven.apache.org/plugins/maven-assembly-plugin/) 建立Docker生成上下文存檔並為其分配正確的類元。
 
 您可以使用不同的技術和框架構建UItest，但本節假定您的項目是以類似於以下方式佈局的。
 
@@ -167,7 +167,7 @@ Maven項目生成Docker生成上下文。 此Docker生成上下文介紹如何�
 
 以下環境變數將在運行時傳遞給您的Docker映像。
 
-| 變數 | 示例 | 說明 |
+| 變數 | 範例 | 說明 |
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium伺服器的URL |
 | `SELENIUM_BROWSER` | `chrome` | Selenium Server使用的瀏覽器實現 |

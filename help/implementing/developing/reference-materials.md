@@ -2,7 +2,7 @@
 title: API參考資料
 description: 具AEM有廣泛而強大的API，您可以利用這些API進行數字型驗項目。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 4%
@@ -34,7 +34,7 @@ AEM依賴於許多其他開源API。
 | API | 說明 |
 |---|---|
 | [阿帕奇斯林](https://sling.apache.org/apidocs/sling11/) | 使用Java內容儲存庫(JCR)儲存和管理內容的Web框架 |
-| [阿帕奇長兔橡樹](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 實現可擴展的高效能分層Java內容儲存庫(JCR)，以用作現代世界級網站的基礎 |
+| [阿帕奇長兔橡樹](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 實現可擴展的高效能分層Java內容儲存庫(JCR)，以用作現代世界級網站的基礎 |
 | [Java內容儲存庫](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | JCR 2.0版的規範 |
 | [阿帕奇費利克斯](https://felix.apache.org) | 開放服務網關倡議(OSGi)框架和服務平台的實施 |
 
@@ -46,7 +46,7 @@ AEM依賴於許多其他開源API。
 |---|---|---|
 | 1 | [Adobe Experience Manager as a Cloud Service ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 產品抽象，如頁面、資產、工作流等。 |
 | 2 | [阿帕奇斯林](https://sling.apache.org/apidocs/sling11/) | REST和基於資源的抽象，如資源、值映射和HTTP請求。 |
-| 3 | [阿帕奇長兔橡樹](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 資料和內容抽象，如節點、屬性和會話。 |
+| 3 | [阿帕奇長兔橡樹](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 資料和內容抽象，如節點、屬性和會話。 |
 | 4 | [阿帕奇費利克斯](https://felix.apache.org/) | OSGi應用容器抽象，如服務和(OSGi)元件。 |
 
 如果API是由提供AEM的，則比Sling、JCR和OSGi更好。 如AEM果不提供API，則選擇Sling而不是JCR和OSGi。
@@ -61,7 +61,7 @@ AEM依賴於許多其他開源API。
 
 | 功能 | 說明 |
 |---|---|
-| [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) | 標準化的Web內容管理(WCM)元件AEM，可加快網站開發時間並降低網站維護成本 |
+| [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 標準化的Web內容管理(WCM)元件AEM，可加快網站開發時間並降低網站維護成本 |
 | [JSON導出器](/help/implementing/developing/components/json-exporter.md) | 以JSON資料模型格AEM式傳遞任何頁的內容 |
 | [為元件啟用JSON導出](/help/implementing/developing/components/enabling-json-exporter.md) | 基於建模器框架生成元件內容的JSON導出 |
 | [資產API](/help/assets/mac-api-assets.md) | 允許對資產執行建立 — 讀取 — 更新 — 刪除(CRUD)操作，包括二進位、元資料、格式副本和注釋。 請參見AEM AssetsHTTP API |

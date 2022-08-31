@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 90%
@@ -229,7 +229,7 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. 使用者新增至適當的設定檔後，應該就能從使用者介面的右上角，透過 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) 存取 Cloud Manager 的個別租用戶。
+1. 使用者新增至適當的設定檔後，應該就能從使用者介面的右上角，透過 [Adobe Experience Cloud](https://my.cloudmanager.adobe.com) 存取 Cloud Manager 的個別租用戶。
 
 
 ### 存取 AEM as a Cloud Service 中的例項 {#accessing-instance-cloud-service}

@@ -2,7 +2,7 @@
 title: '註冊、登錄和用戶配置檔案 '
 description: 瞭解有關註冊、登錄、用戶資料和組同步的AEMas a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Web應用程式通常提供帳戶管理功能，供最終用戶在網站上註�
 客戶可以編寫自己的自定義元件。 要瞭解更多資訊，請考慮熟悉：
 
 * 的 [Sling驗證框架](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
-* 考慮 [詢問社AEM區專家會議](http://bit.ly/ATACEFeb15) 關於登錄。
+* 考慮 [詢問社AEM區專家會議](https://bit.ly/ATACEFeb15) 關於登錄。
 
 ### 與身份提供程式整合 {#integration-with-an-idp}
 

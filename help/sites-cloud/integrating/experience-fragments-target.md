@@ -2,7 +2,7 @@
 title: 將體驗片段導出到Adobe Target
 description: 將體驗片段導出到Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 8e13f671ada67e4e22b66094ad23bf5a0508ccba
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2259'
 ht-degree: 0%
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Target工作區在Adobe Target本身不存在。 它們在Adobe IMS(Identity Management系統)中定義和管理，然後使用Adobe開發人員控制台選擇用於解決方案。
+>Adobe Target工作區在Adobe Target本身不存在。 它們在Adobe IMS(Identity Management系統)中定義和管理，然後選擇在使用Adobe Developer控制台的解決方案中使用。
 
 >[!NOTE]
 >
@@ -51,8 +51,8 @@ ht-degree: 0%
 >
 >有關詳細資訊，請參閱：
 >
->* [Adobe Target開發](http://developers.adobetarget.com/)
->* [核心元件 — 體驗片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+>* [Adobe Target開發](https://developers.adobetarget.com/)
+>* [核心元件 — 體驗片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 >* [Adobe Target — 如何使用Adobe Experience Manager(AEM)體驗碎片？](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en)
 >* [6AEM.5 — 手動配置與Adobe Target的整合 — 建立目標雲配置](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
 
@@ -213,7 +213,7 @@ ht-degree: 0%
       >
       >可以在 **客戶端庫** 的下界。
 
-   * **使用標籤管理系統來傳遞客戶端庫**  — 選擇此選項可使用Adobe啟動或其他標籤管理系統（或不建議使用的DTM）中的客戶端庫。
+   * **使用Tag Management系統提供客戶端庫**  — 選擇此選項可使用Adobe啟動或其他標籤管理系統（或不建議使用的DTM）中的客戶端庫。
 
    * **自定義AT.js**:瀏覽以上載自定義AT.js。 留空以使用預設庫。
 

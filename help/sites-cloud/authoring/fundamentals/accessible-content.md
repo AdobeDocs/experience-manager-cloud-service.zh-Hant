@@ -2,7 +2,7 @@
 title: 為Adobe Experience Manager as a Cloud Service建立可訪問內容（WCAG 2.1一致性）
 description: 使AEM用as a Cloud Service幫助使殘疾人能夠訪問和使用Web內容
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '14050'
 ht-degree: 5%
@@ -229,7 +229,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
       * 這允許用戶在現有音頻軌道之間切換( *不* 包含音頻說明)和新音頻軌道( *是* 包含音頻說明)。
       * 這防止了不需要附加說明的用戶中斷。
    * 建立視頻內容的第二版本，以允許擴展音頻說明。 這通過在適當點暫停音頻和視頻，減少了在現有對話之間的間隙中提供詳細音頻描述的困難。 因此，在再次開始操作之前，可以給出更長的音頻描述。 如上例所示，最好將其作為可選的附加音頻軌道提供，以防止對不需要附加說明的用戶造成中斷。
-1. 提供與視頻或動畫的音頻和視覺元素等價的適當文本文字記錄。 這應當包括，在適當情況下，說明說話者、對設定的描述、視覺上呈現的任何事件或資訊以及聲音表達。 視其長度而定，可以將文字記錄放在視頻或動畫的同一頁面，或放在單獨的頁面上；如果選擇後一個選項，請提供視頻或動畫旁邊的文字記錄的連結。
+1. 提供與視頻或動畫的音頻和視覺元素等價的適當文本文本記錄。 這應當包括，在適當情況下，說明說話者、對設定的描述、視覺上呈現的任何事件或資訊以及聲音表達。 視其長度而定，可以將文字記錄放在視頻或動畫的同一頁面，或放在單獨的頁面上；如果選擇後一個選項，請提供視頻或動畫旁邊的文字記錄的連結。
 
 有關如何建立音頻描述視頻的詳細資訊超出本指南的範圍。 建立視頻和音頻說明可能非常耗時，但其他Adobe產品可幫助完成這些任務。
 
@@ -355,8 +355,8 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
       >
       >標準安裝中AEM的RTE設定為使用：
       >
-      >* `<b>` 的 `<strong>`
-      >* `<i>` 的 `<em>`
+      >* `<b>` 代表 `<strong>`
+      >* `<i>` 代表 `<em>`
 
       >
       >它們實際上是一樣的，但 `<strong>` 和 `<em>` 是最好的，因為它們在語義上是正確的html。 您的開發團隊可以配置RTE以使用 `<strong>` 和 `<em>` (而不是 `<b>` 和 `<i>`)。
@@ -564,7 +564,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 >
 >* [Px到Em計算器 — Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [字型大小轉換：像素點 — em-rem百分比](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com:PX到EM的轉換變得簡單](http://pxtoem.com)
+>* [PMtoEM.com:PX到EM的轉換變得簡單](https://pxtoem.com)
 
 
 要檢查對比度，請使用顏色對比度工具，如 [Paciello組顏色對比分析儀](https://www.paciellogroup.com/resources/contrast-analyser.html) 或 [WebAIM顏色對比度檢查器](https://www.webaim.org/resources/contrastchecker/)。 這些工具允許您檢查顏色對並報告任何對比度問題。
@@ -1182,7 +1182,7 @@ John Smith’s publications
 
 #### 用途 — 標籤或說明(3.3.2) {#purpose-labels-or-instructions}
 
-提供幫助人們完成表單的說明是介面可用性方面良好實踐的一個基本部分。 這樣做對於視覺或認知障礙患者特別有幫助，否則他們可能很難理解表單的佈局以及在特定表單域中提供的資料類型。
+提供幫助人們完成表單的說明是介面可用性方面良好實踐的基本部分。 這樣做對於視覺或認知障礙患者特別有幫助，否則他們可能很難理解表單的佈局以及在特定表單域中提供的資料類型。
 
 ##### Forms
 

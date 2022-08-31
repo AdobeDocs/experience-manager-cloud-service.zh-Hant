@@ -2,7 +2,7 @@
 title: 實作 AEM 連接器
 description: 實作 AEM 連接器
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 8%
@@ -37,7 +37,7 @@ ht-degree: 8%
 
 Experience Manageras a Cloud Service [文檔](../overview/introduction.md) 為開發提供了有價值的AEM見解。 以下是一些在實施連接器時可能有用的特定技術主題和AEM參考：
 
-* Adobe咨詢服務(ACS) [示AEM例](http://adobe-consulting-services.github.io/acs-aem-samples/) 為開發人員提供有條理AEM的代碼
+* Adobe咨詢服務(ACS) [示AEM例](https://adobe-consulting-services.github.io/acs-aem-samples/) 為開發人員提供有條理AEM的代碼
 * 本文「通用整合模式」部分中的各種文檔連結
 
 社區資源
@@ -45,9 +45,9 @@ Experience Manageras a Cloud Service [文檔](../overview/introduction.md) 為�
 
 除了上面的靜態文檔之外，Adobe和社AEM區還提供資源幫助將連接器推向市場：
 
-* Adobe社區 [論AEM壇](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) 是您的同齡人提問和回答問題的活動站點
+* Adobe社區 [論AEM壇](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) 是您的同齡人提問和回答問題的活動站點
 * 某些合作夥伴級別可提供其他Adobe技術資源。 瞭解有關 [AdobeExchange計畫](https://partners.adobe.com/exchangeprogram/experiencecloud)。
-* 如果貴組織想要實作協助，請考慮選擇Adobe的 [Professional Services](http://www.adobe.com/tw/marketing-cloud/service-support/professional-consulting-training.html) team，或參閱 [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) ，以取得Adobe全球合作夥伴的清單
+* 如果貴組織想要實作協助，請考慮選擇Adobe的 [Professional Services](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) team，或參閱 [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) ，以取得Adobe全球合作夥伴的清單
 
 包結構規則
 -----------------------
@@ -55,7 +55,7 @@ Experience Manageras a Cloud Service [文檔](../overview/introduction.md) 為�
 為了支援滾動部署，AEMas a Cloud Service的包（例如連接器）在&quot;不可變&quot;和&quot;可變&quot;內容之間有嚴格的分隔。 應將包與包(包括：
 
 * `/apps`
-* `/content`與`/conf`
+* `/content` 和 `/conf`
 
 連接器應遵守這些封裝指南，如中所述 [這篇文章](/help/implementing/developing/introduction/aem-project-content-package-structure.md)。 現有連接器也應進行重構以符合要求。
 

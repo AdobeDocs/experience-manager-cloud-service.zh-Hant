@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: ec4b5b391cb3ba2d13c67a6da30eea59674cf072
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '3763'
 ht-degree: 15%
@@ -162,7 +162,7 @@ Experience Manager允許您將遠程DAM部署作為源連接到多個Experience 
    * 論本地 [!DNL Sites]，也請參見Wiki頁。 **[!UICONTROL 發佈資產]** 選項，選擇 **[!UICONTROL 選擇性發佈]**。 不選擇 **[!UICONTROL 同步所有內容]**。
    * 在遠程 [!DNL Assets] 部署，在 [!UICONTROL Dynamic Media同步模式]選中 **[!UICONTROL 預設啟用]**。
 
-1. 啟用 [[!DNL Dynamic Media] 影像核心元件中的支援](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)。 此功能啟用預設 [影像元件](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 顯示 [!DNL Dynamic Media] 影像 [!DNL Dynamic Media] 影像由作者在本地網頁中使用 [!DNL Sites] 部署。
+1. 啟用 [[!DNL Dynamic Media] 影像核心元件中的支援](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)。 此功能啟用預設 [影像元件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) 顯示 [!DNL Dynamic Media] 影像 [!DNL Dynamic Media] 影像由作者在本地網頁中使用 [!DNL Sites] 部署。
 
 ## 使用遠端資產 {#use-remote-assets}
 

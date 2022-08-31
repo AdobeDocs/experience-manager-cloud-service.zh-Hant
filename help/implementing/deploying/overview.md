@@ -3,7 +3,7 @@ title: '部署至 AEM as a Cloud Service '
 description: '部署至 AEM as a Cloud Service  '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4fcb2ff39f0634cfcdab5500b03441f6db0b474d
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '3358'
 ht-degree: 1%
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 對於具有現有代碼庫的客戶，必須完成文檔中介紹的儲存庫重組練習AEM，以確保以前在/etc下的內容移動到正確的位置。
 
-對這些代碼包應用一些附加限制，例如 [安裝掛接](http://jackrabbit.apache.org/filevault/installhooks.html) 不支援。
+對這些代碼包應用一些附加限制，例如 [安裝掛接](https://jackrabbit.apache.org/filevault/installhooks.html) 不支援。
 
 ## OSGI配置 {#osgi-configuration}
 
@@ -104,7 +104,7 @@ ht-degree: 1%
    * 資料夾（添加、修改、刪除）
    * 可編輯模板（添加、修改、刪除）
    * 上下文感知配置(下面的任何內容 `/conf`)（添加、修改、刪除）
-   * 指令碼(軟體包可以在軟體包安裝過程的各個階段觸發安裝掛接。 查看 [Jackrabbit檔案](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) 關於安裝掛接。 請注意AEM,CS當前使用Filevault版本3.4.0，該版本將安裝掛接限制為管理員用戶、系統用戶和管理員組成員)。
+   * 指令碼(軟體包可以在軟體包安裝過程的各個階段觸發安裝掛接。 查看 [Jackrabbit檔案](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) 關於安裝掛接。 請注意AEM,CS當前使用Filevault版本3.4.0，該版本將安裝掛接限制為管理員用戶、系統用戶和管理員組成員)。
 
 通過將包嵌入install.author或install.publish資料夾中，可以將可變內容安裝限制為創作或發佈 `/apps`。 6.5中進行了重組，以AEM反映這一分離，建議的項目重組詳情見 [AEM6.5文檔。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 

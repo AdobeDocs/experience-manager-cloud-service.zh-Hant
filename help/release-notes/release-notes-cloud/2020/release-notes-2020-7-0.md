@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service2020.7.0發行說明。」'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 76%
@@ -61,9 +61,9 @@ ht-degree: 76%
 
 ### 新增功能 {#what-is-new-core-components}
 
-[AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 2.11.0 版現在隨附於 AEM Sites，其中包含：
+[AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 2.11.0 版現在隨附於 AEM Sites，其中包含：
 
-* 導入最新 [PDF 檢視器元件](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)。
+* 導入最新 [PDF 檢視器元件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html)。
 
 * 提供核心元件的 Accelerated Mobile Pages (AMP) 支援。從 Google 行動搜尋結果進入網站時，系統會即時轉換頁面，有助於提供更快速的客戶體驗，進而改善使用者參與和 SEO。
 如需詳細資訊，請參閱[核心元件的 AMP 支援](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)。
