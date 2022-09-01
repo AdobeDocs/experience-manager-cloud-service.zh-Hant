@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 99c37c941dfd285c63199aba4970a019b245f3b1
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3787'
-ht-degree: 76%
+source-wordcount: '3714'
+ht-degree: 55%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 76%
 
 ### URL {#urls}
 
-處理 URL 時，業界有一些普遍接受的最佳作法。
+URL中有一些已接受的最佳實務。
 
 在評估 AEM 專案的 URL 時，請先自問以下問題：
 
-*「使用者能在尚未過目任何網頁內容之下，光是看到此 URL 就能說明頁面內容嗎？」*
+*「使用者若是看見此URL而未看見頁面上的任何內容，可以說明此頁面的內容嗎？」*
 
-如果答案是可以，則此 URL 在搜尋引擎中很可能成效良好。
+如果答案為是，則URL對搜尋引擎可能很有效。
 
 以下為幾項針對 SEO 建構 URL 的常見訣竅：
 
@@ -39,9 +39,9 @@ ht-degree: 76%
 * 可行的話，避免使用查詢參數。如需使用，請不要超過兩個。
 
    * 如果可用，請使用目錄結構來指示資訊架構。
-   * 如果無法使用目錄結構，請在 URL 中使用 Sling 選擇器，而非查詢字串。除了可提供 SEO 值，Sling 選擇器也會使網頁可供 Dispatcher 進行快取。
+   * 如果目錄結構不適用，請在URL中使用Sling選取器，而非查詢字串。 除了提供的SEO值以外，Sling選取器也可讓頁面供Dispatcher快取。
 
-* URL 越容易透過字面理解越好；如果 URL 中存在關鍵字，SEO 值會大幅提升。
+* URL越容易讀，越好；URL中有關鍵字會提升值。
 
    * 在網頁上使用選擇器時，建議使用提供語意值的選取器。
    * 如果使用者無法透過字面理解您的 URL，則搜尋引擎也無法。
@@ -50,11 +50,11 @@ ht-degree: 76%
 比  更適合 
 `mybrand.com/products/product-detail.1234.html`
 
-* 盡可能避免子網域，因為搜尋引擎會將子網域視為不同的實體，進而分割網站的 SEO 值。
+* 盡可能避免子網域，因為搜尋引擎會將子網域視為不同的實體，進而分割網站的SEO值。
 
    * 請使用第一層子路徑。舉例來說，請避免使用 `es.mybrand.com/home.html`，改用 `www.mybrand.com/es/home.html`。
 
-   * 請根據本指引規劃內容階層，以便符合內容呈現方式。
+   * 根據本指引規劃內容階層，以符合內容呈現方式。
 
 * URL 的長度和關鍵字的位置增加，URL 中關鍵字的有效性就會降低。換句話說，URL 越短越好。
 
@@ -73,14 +73,14 @@ ht-degree: 76%
 
 * 支援在 URL 請求中不區分大小寫。
 
-   * 將 Dispatcher 設定為將所有傳入請求重新寫入為小寫字母。
+   * 將Dispatcher設定為將所有傳入請求重新寫入為小寫字母。
    * 請訓練內容作者使用小寫字母來建立所有網頁。
 
 * 每個網頁都必須只經由一個通訊協定來提供。
 
-   * 有時，網站會透過 `http` 提供，直到使用者以結帳或登入形式抵達網頁後，才會切換為透過 `https` 提供。從這個頁面連結時，如果使用者可返回 `http` 頁面並透過 `https` 存取，搜尋引擎會將這些頁面當成兩個獨立頁面來追蹤。
+   * 有時，網站會透過 `http` 提供，直到使用者以結帳或登入形式抵達網頁後，才會切換為透過 `https` 提供。從此頁面連結時，如果使用者可以返回 `http` 頁面，透過 `https`，搜尋引擎會以兩個不同的頁面來追蹤這些頁面。
 
-   * 目前 Google 偏好使用 `https` 頁面，而非 `http` 頁面。因此，往往讓大家的生活更容易為整個網站服務 `https`。
+   * 目前 Google 偏好使用 `https` 頁面，而非 `http` 頁面。因此，透過提供整個網站通常可讓每個人的生活更輕鬆 `https`.
 
 ### 伺服器設定 {#server-configuration}
 
@@ -96,17 +96,17 @@ ht-degree: 76%
 
 ## AEM 設定 {#aem-configurations}
 
-本節介紹配置以遵循這些SEO建議所AEM需的實施步驟。
+本節說明設定AEM以遵循這些SEO建議所需的實作步驟。
 
 ### 使用 Sling 選擇器 {#using-sling-selectors}
 
-過去，業界在建置企業網路應用程式時普遍使用查詢參數。
+過去，使用查詢參數是建立企業Web應用程式時的慣例。
 
-但近年來，趨勢已改為移除這些參數，以便讓 URL 從字面上更易於理解。在許多平台上，這種趨勢包括在網頁伺服器或內容傳遞網路 (CDN) 上實作重新導向，但 Sling 可讓這項作業變得簡單明瞭。Sling 選擇器：
+近年來的趨勢是移除這些URL，讓URL更容易閱讀。 在許多平台上，這種趨勢包括在網頁伺服器或內容傳遞網路 (CDN) 上實作重新導向，但 Sling 可讓這項作業變得簡單明瞭。Sling 選擇器：
 
 * 改善 URL 可讀性。
-* 讓您在 Dispatcher 上對網頁進行快取，且通常可提高安全性。
-* 您可以直接處理內容，而不是採用一般 servlet 來擷取內容。此特性可讓您將 ACL 的優勢應用在存放庫，並將篩選器應用在 Dispatcher。
+* 讓您在Dispatcher上快取頁面，通常可提高安全性。
+* 您可以直接處理內容，而不是採用一般 servlet 來擷取內容。這可授予您套用至存放庫的ACL的優點，以及套用至Dispatcher的篩選器。
 
 #### 針對 servlet 使用選擇器 {#using-selectors-for-servlets}
 
@@ -115,7 +115,7 @@ AEM 提供兩種編寫 servlet 的選項：
 * **bin** servlet
 * **Sling** servlet
 
-下列範例說明如何註冊同時符合以下兩種模式的 servlet，以及使用 Sling servlet 所獲的益處。
+下列範例說明如何註冊同時符合這兩種模式的servlet，以及使用Sling servlet所獲得的好處。
 
 #### Bin servlet (向下一個層級) {#bin-servlets-one-level-down}
 
@@ -140,9 +140,9 @@ String myParam = req.getParameter("myParam");
 採用這種方法需要考量以下幾點：
 
 * URL 本身會遺失 SEO 值。存取網站 (包括搜尋引擎) 的使用者不會從 URL 收到任何語意值，因為 URL 代表程式設計路徑，而非內容階層。
-* URL 中存在查詢參數，代表 Dispatcher 將無法對回應進行快取。
+* URL中存在查詢參數，表示Dispatcher將無法快取回應。
 * 如果要保護此 servlet 的安全，您需要在 servlet 中實作自己的自訂安全邏輯。
-* Dispatcher 必須經過審慎設定以公開 `/bin/myApp/myServlet`。僅僅公開 `/bin`，會使網站訪客可存取不應向他們開放的特定 servlet。
+* Dispatcher必須經過審慎設定才能公開 `/bin/myApp/myServlet`. 僅僅公開 `/bin`，會使網站訪客可存取不應向他們開放的特定 servlet。
 
 #### Sling servlet (向下一個層級) {#sling-servlets-one-level-down}
 
@@ -167,13 +167,13 @@ Resource myPage = req.getResource();
 此方法的優點包括：
 
 * 您可以控制經由網站階層和網頁名稱中所呈現語意而獲得的 SEO 值。
-* 由於不存在查詢參數，因此 Dispatcher 可以對回應進行快取。此外，已定址網頁一經啟用，對該網頁所做的任何更新都會使這個快取失效。
-* 如有使用者嘗試存取此 servlet，套用到 `/content/my-brand/my-page` 的所有 ACL 都會生效。
-* Dispatcher 將會已預先設定為將此內容當作為網站供應內容的函式來提供，無需額外設定。
+* 由於沒有查詢參數，Dispatcher可以快取回應。 此外，已定址頁面的任何更新都會在頁面啟動時讓此快取失效。
+* 所有ACL均應用於 `/content/my-brand/my-page` 當使用者嘗試存取此servlet時生效。
+* Dispatcher將已設定為將此內容當作為網站服務的函式來提供。 無需額外設定。
 
 ### URL 重新寫入 {#url-rewriting}
 
-在 AEM 中，所有網頁都儲存在下方 `/content/my-brand/my-content`。雖然從存放庫資料管理的角度來看，這樣的設定很實用，但卻未必是您希望客戶看到網站的方式，而且可能與 SEO 指導方針有衝突，不符合盡可能縮短 URL 的原則。此外，您可能會從同一個 AEM 例項及不同網域名稱為多個網站供應內容。
+在 AEM 中，所有網頁都儲存在下方 `/content/my-brand/my-content`。雖然從存放庫資料管理的角度來看，這樣的設定很實用，但卻未必是您希望客戶看到網站的方式，而且可能與 SEO 指導方針有衝突，不符合盡可能縮短 URL 的原則。此外，您可能會從相同AEM例項和不同網域名稱為多個網站提供服務。
 
 本節將說明在 AEM 管理這些 URL 並且以更容易從字面理解的 SEO 建議方法向使用者呈現的可用選項。
 
@@ -183,7 +183,7 @@ Resource myPage = req.getResource();
 
 #### 本地化的網頁名稱 {#localized-page-names}
 
-您可能希望向翻譯內容的用戶顯示本地化的頁面名稱。 例如：
+您可能想要向翻譯內容的使用者顯示本地化的頁面名稱。 例如：
 
 * 與其讓講西班牙語的使用者導覽至：
    `www.mydomain.com/es/home.html`
@@ -229,21 +229,21 @@ Resource myPage = req.getResource();
 
 您可以在此位置新增對應定義，以便對應傳入請求、重新寫入 AEM 中的網頁 URL，或兩者皆執行。
 
-如要建立新對應，則在此位置的 `/http` 或 `/https` 之下建立新 `sling:Mapping` 節點。AEM 會根據設定在此節點上的 `sling:match` 和 `sling:internalRedirect` 屬性，將相符 URL 的所有流量重新導向至在 `internalRedirect` 屬性指定的值。
+若要建立對應，請建立 `sling:Mapping` 此位置中的節點 `/http` 或 `/https`. AEM 會根據設定在此節點上的 `sling:match` 和 `sling:internalRedirect` 屬性，將相符 URL 的所有流量重新導向至在 `internalRedirect` 屬性指定的值。
 
-雖然上述方法已記錄在官方 AEM 和 Sling 文件中，但與直接使用 `SlingResourceResolver` 時的可用選項相比，這種實作方法支援的規則運算式卻範圍有限。此外，以這種方式實作對應可能會導致 Dispatcher 快取失效的問題。
+雖然上述方法已記錄在官方 AEM 和 Sling 文件中，但與直接使用 `SlingResourceResolver` 時的可用選項相比，這種實作方法支援的規則運算式卻範圍有限。此外，以這種方式實作對應可能會導致Dispatcher快取失效的問題。
 
 以下是此問題發生的例子：
 
 1. 使用者造訪您的網站並請求 `https://www.mydomain.com/my-page.html`
-1. Dispatcher 將此請求轉發到發佈伺服器。
+1. Dispatcher將此請求轉發到發佈伺服器。
 1. 發佈伺服器使用 `/etc/map` 將此請求解析到 `/content/my-brand/my-page`，並轉譯網頁。
 
-1. Dispatcher 在 `/my-page.html` 對回應進行快取，並將回應回傳給使用者。
-1. 內容作者對此網頁作出變更並加以啟用。
-1. Dispatcher 排清代理程式傳送 `/content/my-brand/my-page`**的無效請求。** 由於 Dispatcher 在此路徑上沒有經過快取的網頁，因此系統會維持對舊內容進行快取，導致內容過時。
+1. Dispatcher在 `/my-page.html` 並傳回回應給使用者。
+1. 內容作者會變更此頁面並加以啟用。
+1. Dispatcher排清代理程式傳送的無效請求 `/content/my-brand/my-page`**.** 由於Dispatcher在此路徑上沒有快取的頁面，因此舊內容會維持已快取和過時的狀態。
 
-有些方法可以設定自訂發送排清規則，針對快取失效將較短的 URL 對應至較長的 URL。
+有些方法可設定自訂調度排清規則，將較短的URL對應至較長的URL，以便快取失效。
 
 不過，另外也有更簡單的方法可用於管理這個問題：
 
@@ -288,7 +288,7 @@ Resource myPage = req.getResource();
 
 至此，您已與元件中的邏輯一併實作完成對應，以便在將 URL 輸出至頁面時使用這些對應。
 
-最後一個步驟，就是在這些縮短的 URL 進入 `mod_rewrite` 會發揮作用的 Dispatcher 時處理這些 URL。使用 `mod_rewrite` 的最大優點，就是 URL 在傳送到 Dispatcher 模組&#x200B;*之前*&#x200B;會先重新對應到原本的較長格式。也就是說，Dispatcher 會從發佈伺服器請求長 URL 並加以進行快取。因此，任何來自發佈伺服器的 Dispatcher 排清請求都可以成功使該內容無效。
+最後一個步驟，就是在這些縮短的URL進入Dispatcher時處理這些URL,Dispatcher就是這個位置 `mod_rewrite` 開始起作用。 使用的最大好處 `mod_rewrite` 是URL會對應回其長格式 *befor* 會傳送至Dispatcher模組。 這表示Dispatcher會從發佈伺服器要求長URL，並據此進行快取。 因此，來自發佈伺服器的任何Dispatcher都會成功使此內容無效。
 
 要實作這些規則，您可以在 Apache HTTP 伺服器設定的虛擬主機下新增 `RewriteRule` 元素。如果您想要拉長上個範例中縮短的 URL，則可實作如下規則：
 
@@ -303,14 +303,14 @@ Resource myPage = req.getResource();
 
 ### 標準 URL 標籤 {#canonical-url-tags}
 
-標準 URL 標籤是放置在 HTML 文件開頭的連結標籤，可釐清搜尋引擎在建立內容索引時應如何處理網頁。它們可帶來的好處是，即使連向網頁的 URL 可能有些差異，也可確保系統對其他版本的網頁建立相同索引。
+標準 URL 標籤是放置在 HTML 文件開頭的連結標籤，可釐清搜尋引擎在建立內容索引時應如何處理網頁。他們提供的好處是，即使頁面的URL可能包含差異，也可確保對頁面（不同版本的）建立相同的索引。
 
-舉例來說，如果網站想要提供適合列印的網頁版本，搜尋引擎可能會對此版本與一般版本分開建立索引。但標準標籤會告訴搜尋引擎兩者是相同版本。
+舉例來說，如果網站想要提供適合列印的網頁版本，搜尋引擎可能會對此版本與一般版本分開建立索引。標準標籤會告訴搜尋引擎兩者相同。
 
 範例：
 
-* https://www.mydomain.com/my-brand/my-page.html
-* https://www.mydomain.com/my-brand/my-page.print.html
+* `<https://www.mydomain.com/my-brand/my-page.html>`
+* `<https://www.mydomain.com/my-brand/my-page.print.html>`
 
 兩者都會在網頁開頭套用下列標籤：
 
@@ -320,9 +320,9 @@ Resource myPage = req.getResource();
 
 `href` 可以是相對或絕對的值。程式碼應包含在網頁標記中，以便判斷網頁的標準 URL 並輸出此標籤。
 
-### 將 Dispatcher 設定為不區分大小寫 {#configuring-the-dispatcher-for-case-insensitivity}
+### 將Dispatcher設定為不區分大小寫 {#configuring-the-dispatcher-for-case-insensitivity}
 
-使用小寫字母來提供所有網頁是建議的最佳作法。但是，您也不應讓使用者在 URL 中輸入大寫字母來存取網站時，收到 404 錯誤訊息。因此，Adobe 建議您在 Apache HTTP 伺服器設定中新增重新寫入規則，以便將所有傳入的 URL 對應至小寫。此外，內容作者必須接受訓練以小寫名稱建立網頁。
+使用小寫字母來提供所有網頁是建議的最佳作法。但是，您也不應讓使用者在 URL 中輸入大寫字母來存取網站時，收到 404 錯誤訊息。因此，Adobe 建議您在 Apache HTTP 伺服器設定中新增重新寫入規則，以便將所有傳入的 URL 對應至小寫。此外，內容作者必須接受訓練以小寫名稱建立其頁面。
 
 如要設定 Apache 以強制所有轉入流量都轉換為小寫，請將以下內容新增到 `vhost` 設定中：
 
@@ -331,7 +331,7 @@ RewriteEngine On
 RewriteMap lowercase int:tolower
 ```
 
-此外，將下列內容新增至 `htaccess` 檔案的最上方：
+此外，將下列項目新增至 `htaccess` 檔案：
 
 ```xml
 RewriteCond $1 [A-Z]
@@ -340,7 +340,7 @@ RewriteRule ^(.*)$ /${lowercase:$1} [R=301,L]
 
 ### 實作 robots.txt 以保護開發環境 {#implementing-robots-txt-to-protect-development-environments}
 
-搜尋引擎在對網站進行編目之前，*必須*&#x200B;先檢查網站的根目錄中是否有 `robots.txt` 檔案。我們在此強調「必須」，是因為雖然 Google、Yahoo 或 Bing 等主流搜尋引擎都會這麼做，但有些外國搜尋引擎卻並不如此。
+搜尋引擎在對網站進行編目之前，*必須*&#x200B;先檢查網站的根目錄中是否有 `robots.txt` 檔案。雖然Google、雅虎或必應等主要搜尋引擎都這麼看，但有些外國搜尋引擎卻不這麼看。
 
 封鎖使用者存取整個網站的最簡單方式，是將名為 `robots.txt` 的檔案置於網站根目錄中，且含有以下內容：
 
@@ -351,44 +351,44 @@ Disallow: /
 
 或者，您可以在即時環境中選擇不允許某些不希望建立索引的路徑。
 
-將 `robots.txt` 檔案置於網站根目錄時應注意，Dispatcher 排清請求可能會清除此檔案，且 URL 對應可能會將網站根目錄置於與 Apache HTTP 伺服器設定中已定義的 `DOCROOT` 不同之處。因此，常見的方式是將此檔案放置在根目錄的作者例項上，並複製到發佈例項。
+附註： `robots.txt` 位於網站根目錄的檔案是，Dispatcher排清請求可能會清除此檔案，而URL對應可能會將網站根目錄置於與 `DOCROOT` 如Apache HTTP伺服器設定中所定義。 因此，常見的方式是將此檔案放置在根目錄的作者例項上，並複製到發佈例項。
 
 ### 在 AEM 上建置 XML Sitemap {#building-an-xml-sitemap-on-aem}
 
-編目程式可透過 XML Sitemap 加強瞭解網站的結構。雖然提供 Sitemap 並不保證可改善 SEO 排名，但這是一項普遍採用的最佳作法。您可以手動在網頁伺服器上維護 XML 檔案，以便將它當作 Sitemap 使用，但建議以程式設計方式產生 Sitemap，確保當作者建立新內容時，Sitemap 會自動反映變更。
+編目程式可透過 XML Sitemap 加強瞭解網站的結構。雖然提供Sitemap並無保證可改善SEO排名，但這是公認的最佳作法。 您可以在網頁伺服器上手動維護XML檔案，以作為Sitemap，但建議以程式設計方式產生Sitemap，以確保當作者建立內容時，Sitemap會自動反映其變更。
 
-使AEM用 [Apache Sling Sitemap模組](https://github.com/apache/sling-org-apache-sling-sitemap) 生成XML站點集，它為開發人員和編輯器提供了多種選項，使站點XML站點地圖保持最新。
+AEM使用 [Apache Sling Sitemap模組](https://github.com/apache/sling-org-apache-sling-sitemap) 產生XML網站地圖，為開發人員和編輯提供多種選項，讓網站XML網站地圖保持最新。
 
-Apache Sling Sitemap模組區分頂層站點地圖和嵌套站點地圖，這兩者都是為具有 `sling:sitemapRoot` 屬性設定為 `true`。 通常，使用樹的頂級站點地圖路徑（即沒有其他站點地圖根祖先的資源）上的選擇器來呈現站點。 此頂級站點地圖根還顯示站點地圖索引，該索引通常是站點所有者在搜索引擎的配置門戶中配置或添加到站點的索引 `robots.txt`。
+Apache Sling Sitemap模組會區分頂層Sitemap和巢狀Sitemap，兩者皆為具有 `sling:sitemapRoot` 屬性設定為 `true`. 一般而言，網站地圖是使用樹狀結構頂層Sitemap路徑上的選取器來轉譯，而該路徑是沒有其他Sitemap根上階的資源。 此頂層Sitemap根目錄也會顯示Sitemap索引，這通常是網站擁有者在搜尋引擎的設定入口網站中所設定或新增至網站的索引 `robots.txt`.
 
-例如，請考慮在以下位置定義頂級站點地圖根的站點 `my-page` 和嵌套站點地圖根 `my-page/news`，為新聞子樹中的頁面生成專用站點地圖。 因此，相關的URL
+例如，假設網站在以下位置定義頂層Sitemap根 `my-page` 和巢狀的Sitemap根 `my-page/news`，為新聞子樹狀結構中的頁面產生專用的Sitemap。 因此，相關URL會
 
-* https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
-* https://www.mydomain.com/my-brand/my-page.sitemap.xml
-* https://www.mydomain.com/my-brand/my-page.sitemap.news-sitemap.html
+* `<https://www.mydomain.com/my-brand/my-page.sitemap-index.xml>`
+* `<https://www.mydomain.com/my-brand/my-page.sitemap.xml>`
+* `<https://www.mydomain.com/my-brand/my-page.sitemap.news-sitemap.html>`
 
 >[!NOTE]
 >
-> 選擇器 `sitemap` 和 `sitemap-index` 可能會干擾自定義實現。 如果不想使用產品功能，請配置您自己的Servlet，使用 `service.ranking` 高於0。
+> 選取器 `sitemap` 和 `sitemap-index` 可能會干擾自訂實施。 如果您不想使用產品功能，請使用 `service.ranking` 高於0。
 
-在預設配置中，「頁面屬性」對話框提供了將頁面標籤為站點地圖根的選項，因此，如上所述，將生成其自身及其子體的站點地圖。 此行為由 `SitemapGenerator` 可通過添加替代實現來擴展介面。 但是，由於重新生成XML站點的頻率高度取決於內容創作工作流和工作負載，因此產品不會發運任何 `SitemapScheduler` 配置。 這樣，該功能就可以有效地選擇加入。
+在預設設定中，「頁面屬性」對話方塊提供將頁面標示為Sitemap根的選項，因此，如上所述，會產生本身及其子系的Sitemap。 此行為由 `SitemapGenerator` 介面，並可透過新增替代實作來擴充。 但是，由於重新生成XML站點映射的頻率高度取決於內容創作工作流和工作負載，因此產品不會發運任何 `SitemapScheduler` 設定。 這可讓功能有效地選擇加入。
 
-為了啟用生成XML模板的後台作業 `SitemapScheduler` 必須配置。 為此，請為PID建立OSGI配置 `org.apache.sling.sitemap.impl.SitemapScheduler`。 調度程式表達式 `0 0 0 * * ?` 可以用作起點，在午夜每天重新生成一次所有XMLsitemap。
+為了啟用生成XML站點的後台作業， `SitemapScheduler` 必須已設定。 若要這麼做，請為PID建立OSGI設定 `org.apache.sling.sitemap.impl.SitemapScheduler`. 排程器運算式 `0 0 0 * * ?` 可作為開始點，在午夜時每天重新產生一次所有XML網站地圖。
 
-![Apache Sling Sitemap — 計畫程式](assets/sling-sitemap-scheduler.png)
+![Apache Sling Sitemap — 排程器](assets/sling-sitemap-scheduler.png)
 
-站點地圖生成作業可以在作者和發佈層實例上運行。 在大多數情況下，建議在發佈層實例上運行生成，因為只能在該處生成適當的規範URL（因為通常只在發佈層實例上存在Sling資源映射規則）。 但是，可以通過實現用於生成規範URL的外部化機制的自定義實現 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) 。 如果自定義實現能夠在作者層實例上生成站點地圖的規範URL，則 `SitemapScheduler` 可以為作者運行模式配置，並且XML sitemap生成工作負載可以分佈在作者服務群集的實例中。 在此方案中，在處理尚未發佈、已修改或僅對受限用戶組可見的內容時必須特別小心。
+Sitemap產生工作可在製作和發佈層級例項上執行。 在大多數情況下，建議在發佈層級例項上執行產生，因為只能在那裡產生適當的標準URL（因為Sling資源對應規則通常僅存在於發佈層級例項上）。 不過，您可以外掛用於產生標準URL之外部化機制的自訂實作，方法是實作 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) 介面。 如果自訂實作能在製作層級例項上產生Sitemap的標準URL，則 `SitemapScheduler` 可針對作者執行模式進行設定，而XML sitemap產生工作量可分佈於作者服務叢集的執行個體。 在此案例中，在處理尚未發佈、已修改或僅對受限制的使用者群組可見的內容時，必須格外小心。
 
-AEM Sites包含預設 `SitemapGenerator` 遍歷一樹頁以生成站點地圖。 它已預配置為僅輸出站點的規範URL和任何語言替代項（如果可用）。 如果需要，還可以將其配置為包括頁面的上次修改日期。 為此，啟用 _添加上次修改時間_ 選項 _AdobeAEMSEO — 頁面樹站點地圖生成器_ 配置並選擇 _上次修改的源_。 在發佈層上生成Sitemap時，建議使用 `cq:lastModified` 日期。
+AEM Sites包含的預設實作 `SitemapGenerator` 會周遊一樹狀結構的頁面，以產生Sitemap。 系統已預先設定此URL，只會輸出網站的標準URL和任何語言替代項目（若有）。 您也可以視需要將其設定為包含頁面的最後修改日期。 為此，請啟用 *添加上次修改時間* 選項 *AdobeAEM SEO — 頁面樹Sitemap產生器* 設定並選取 *上次修改的源*. 在發佈層級產生網站地圖時，建議使用 `cq:lastModified` 日期。
 
-![AdobeAEMSEO — 頁面樹站點地圖生成器配置](assets/sling-sitemap-pagetreegenerator.png)
+![AdobeAEM SEO — 頁面樹Sitemap產生器設定](assets/sling-sitemap-pagetreegenerator.png)
 
-要限制站點地圖的內容，可在需要時實現以下服務介面：
+若要限制Sitemap的內容，可視需要實作下列服務介面：
 
-* 這樣 [站點地圖頁面篩選器](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) 可實現為隱藏由AEM Sites特定站點地圖生成器生成的XML站點集中的頁面
-* a [站點地圖產品篩選器](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 或 [站點地圖類別篩選器](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) 可以實現從由XML生成的XML站點中篩選產品或類別 [商業整合框架](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) 特定站點地圖生成器
+* the [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) 可實作以隱藏AEM Sites特定Sitemap產生器產生之XML網站地圖的頁面
+* a [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 或 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) 可實作以從XML網站地圖中篩除產品或類別 [商務整合架構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) 特定Sitemap產生器
 
-如果預設實現不適用於特定的使用情形，或者如果擴展點不夠靈活，則自定義 `SitemapGenerator` 可實施以完全控制所生成站點地圖的內容。 以下示例說明如何利用預設實現的AEM Sites邏輯來執行此操作。 它使用 [資源樹站點地圖生成器](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) 作為遍歷頁面樹的起點：
+如果預設實作不適用於特定使用案例，或如果擴充點不夠彈性，請自訂 `SitemapGenerator` 可實作以完全控制產生的Sitemap的內容。 下列範例說明如何運用AEM Sites的預設實作邏輯來執行此作業。 它會使用 [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) 作為瀏覽頁面樹的起點：
 
 ```
 import java.util.Optional;
@@ -461,7 +461,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-此外，為XML站點集實現的功能也可用於不同的使用情形，例如將規範連結或語言替代添加到頁面的首部。 請參閱 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 的子菜單。
+此外，針對XML網站地圖所實作的功能也可用於不同的使用案例，例如新增標準連結或替代語言至頁面標題。 請參閱 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 介面以取得詳細資訊。
 
 ### 為舊版 URL 建立 301 重新導向 {#creating-redirects-for-legacy-urls}
 
@@ -470,7 +470,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 * 舊版 URL 已累積一段時間的 SEO 值了。實作重新導向，搜尋引擎才可將此值套用至新 URL。
 * 您的網站使用者可能已建立連向這些網頁的書籤了。實作重新導向，您才能確實將使用者導向新網站上與他們在嘗試進入舊網站時所前往位置最相符的網頁。
 
-請務必參閱下方的其他資源章節，瞭解實作 301 重新導向的操作指示，並以工具測試重新導向是否如期運作。
+請務必查看下方的其他資源區段，以取得實作301重新導向的指示，以及用來測試重新導向是否如預期般運作的工具。
 
 ## 其他資源 {#additional-resources}
 
@@ -488,7 +488,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 * [https://httpd.apache.org/docs/current/mod/mod_rewrite.html](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)
 * [https://moz.com/blog/canonical-url-tag-the-most-important-advancement-in-seo-practices-since-sitemaps](https://moz.com/blog/canonical-url-tag-the-most-important-advancement-in-seo-practices-since-sitemaps)
 * [https://www.robotstxt.org/robotstxt.html](https://www.robotstxt.org/robotstxt.html)
-* [https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/](https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/)
+* [https://www.internetmarketingninjas.com/blog/search-engine-optimization/](https://www.internetmarketingninjas.com/blog/search-engine-optimization/)
 * [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester)
 * [https://adobe-consulting-services.github.io/](https://adobe-consulting-services.github.io/)
 * [https://github.com/apache/sling-org-apache-sling-sitemap](https://github.com/apache/sling-org-apache-sling-sitemap)

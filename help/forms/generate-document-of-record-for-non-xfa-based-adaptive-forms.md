@@ -2,9 +2,9 @@
 title: 產生最適化Forms的記錄檔案
 description: 說明如何為適用性Forms的記錄檔案(DoR)產生範本。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: e9f235f4e4a1d314370a423ee8a2ef997346a794
+source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
 workflow-type: tm+mt
-source-wordcount: '3677'
+source-wordcount: '3659'
 ht-degree: 2%
 
 ---
@@ -408,8 +408,8 @@ XCI檔案可協助您設定檔案的各種屬性。 Formsas a Cloud Service有�
 
 | XCI選項 | 說明 |
 |--- |--- |
-| config/present/pdf/creator | 使用「文檔資訊」字典中的「建立者」條目標識文檔建立者。 如需此字典的相關資訊，請參閱 [PDF參考指南](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
-| config/present/pdf/producer | 使用「文檔資訊」字典中的「生成者」條目標識文檔生成者。 如需此字典的相關資訊，請參閱 [PDF參考指南](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/present/pdf/creator | 使用「文檔資訊」字典中的「建立者」條目標識文檔建立者。 如需此字典的相關資訊，請參閱 [PDF參考指南](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/producer | 使用「文檔資訊」字典中的「生成者」條目標識文檔生成者。 如需此字典的相關資訊，請參閱 [PDF參考指南](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
 | 配置/存在/佈局 | 控制輸出是單一面板還是編頁。 |
 | config/present/pdf/compression/level | 指定生成PDF文檔時要使用的壓縮程度。 |
 | config/present/pdf/fontInfo/embed | 控制輸出文檔中的字型嵌入。 |
