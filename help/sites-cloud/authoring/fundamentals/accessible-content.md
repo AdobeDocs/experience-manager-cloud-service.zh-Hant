@@ -2,10 +2,10 @@
 title: 建立Adobe Experience Manager as a Cloud Service的無障礙內容（符合WCAG 2.1）
 description: 使用AEMas a Cloud Service，協助殘疾人存取及使用網路內容
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 13885fbb3ed35c43ccfff03d47e4dc3ced2bc327
 workflow-type: tm+mt
-source-wordcount: '14054'
-ht-degree: 5%
+source-wordcount: '14053'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 5%
 
 * **** A級：您的網站達到基本的最低協助功能等級。要達到此級別，將滿足所有A級成功標準。
 * **AA級：** 這是您努力追求的理想無障礙環境等級，其中您的網站可達到基本無障礙環境等級，因此大部分使用者都能使用大部分技術來存取。 要達到此級別，將滿足所有A級和A級成功標準。
-* **** AAA級：您的網站可達到非常高的協助功能。要達到此級別，將滿足所有A級、AA級和AAA級成功標準。
+* **AAA級：** 您的網站可達到高度的協助功能。 要達到此級別，將滿足所有A級、AA級和AAA級成功標準。
 
 建立網站時，您必須決定要讓網站遵循的整體等級。
 
@@ -40,7 +40,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->在本檔案中，我們使用：
+>在本檔案中，我們使用下列項目：
 >
 >* 此 [WCAG 2.1指引的簡短名稱](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* 此 [WCAG 2.1指引中使用的編號](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) 以輔助與WCAG網站的交叉參照。
@@ -74,17 +74,17 @@ ht-degree: 5%
 >
 >部分現成可用的核心元件，例如 **[輪播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** 不提供 **替代文字** 欄位，將替代文字說明新增至個別影像，但有 **標籤** 欄位()**[協助工具](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** 標籤)，以取得Advertising Cloud的說明。
 >
->當針對您的AEM例項實作這些版本時，您的開發團隊將需要設定這些元件以支援屬性，讓作者可以將其新增至內容 (請參閱新增支援其他HTML元素和屬性)。`alt`
+>當您為AEM例項實作這些版本時，您的開發團隊必須設定這些元件以支援 `alt` 屬性，讓作者可將其新增至內容(請參閱新增支援其他HTML元素和屬性)。
 >
 >部分現成可用的核心元件，例如 **[輪播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** 不提供 **替代文字** 欄位，將替代文字說明新增至個別影像，但有 **標籤** 欄位()**[協助工具](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** 標籤)，以取得Advertising Cloud的說明。
 >
->當針對您的AEM例項實作這些版本時，您的開發團隊將需要設定這些元件以支援 `alt` 屬性，讓作者可將其新增至內容(請參閱 [新增對其他HTML元素和屬性的支援](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
+>當您為AEM例項實作這些版本時，您的開發團隊必須設定這些元件以支援 `alt` 屬性，讓作者可將其新增至內容(請參閱 [新增對其他HTML元素和屬性的支援](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
 
 AEM需要 **替代文字** 欄位以預設填入。 如果影像純粹是裝飾性的，而替代文字是不必要的， **影像是裝飾** 選項。
 
 #### 建立良好的文字替代項目 {#creating-good-text-alternatives}
 
-非文字內容有多種形式，因此替代文字的值取決於圖形在網頁中扮演的角色。 以下是一些一般經驗法則：
+非文字內容有多種形式，因此替代文字的值取決於圖形在網頁中扮演的角色。 您可能會發現一些實用的一般規則包括：
 
 * 替代案文應簡明扼要，但應清楚掌握非文本內容提供的基本資訊。
 * 應避免過長的說明（超過100個字元）。 如果替代文字需要更詳細的資訊：
@@ -258,7 +258,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 本檔案不提供詳細說明，但下列資源提供實用資訊：
 
-* [WebAIM:即時字幕](https://www.webaim.org/techniques/captions/realtime.php)
+* [WebAIM:即時字幕](https://webaim.org/techniques/captions/realtime.php)
 
 * [AccessComputing項目（華盛頓大學）:字幕是否可以使用語音識別自動生成？](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -567,7 +567,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構具語義意義的網頁內�
 >* [PMtoEM.com:將PX轉換為EM變更為簡單](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
-若要檢查對比度，請使用顏色對比工具，例如 [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) 或 [WebAIM顏色對比檢查程式](https://www.webaim.org/resources/contrastchecker/). 這些工具可讓您檢查色彩配對，並報告任何對比問題。
+若要檢查對比度，請使用顏色對比工具，例如 [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) 或 [WebAIM顏色對比檢查程式](https://webaim.org/resources/contrastchecker/). 這些工具可讓您檢查色彩配對，並報告任何對比問題。
 
 或者，如果您不太在意指定頁面的外觀，可以選擇不指定背景和前景文字顏色。 不需要對比度檢查，因為用戶的瀏覽器將確定文本和背景的顏色。
 
