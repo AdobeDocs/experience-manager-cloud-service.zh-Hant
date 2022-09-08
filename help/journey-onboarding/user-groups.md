@@ -3,7 +3,7 @@ title: 通知的使用者群組
 description: 了解如何在Admin Console中建立使用者群組，以管理重要電子郵件通知的接收。
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 93a5e1b8851353f368a01ea6b50265ec3f2de836
+source-git-commit: 532184edca597452e76fdf763e7377d5e835bebc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -81,7 +81,7 @@ Adobe不時需要聯絡有關其AEMas a Cloud Service環境的資訊。 除了�
 
 1. 選取 **使用者** 標籤，然後選取 **添加用戶**.
 
-![使用者](assets/cloud_manager_add_user.png)
+   ![使用者](assets/cloud_manager_add_user.png)
 
 1. 在 **新增使用者至您的團隊** 對話框，輸入要添加的用戶的電子郵件ID。
 
