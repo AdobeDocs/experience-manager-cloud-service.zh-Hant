@@ -2,9 +2,9 @@
 title: 編輯頁面內容
 description: 建立頁面後，您可以編輯內容以進行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
+source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
 workflow-type: tm+mt
-source-wordcount: '2992'
+source-wordcount: '3019'
 ht-degree: 6%
 
 ---
@@ -466,12 +466,11 @@ AEM可讓您鎖定頁面，讓其他人都無法修改內容。 當您對特定�
 
 >[!CAUTION]
 >
->模擬使用者時，可執行鎖定頁面的作業。 不過，以此方式鎖定的頁面只能由模擬的使用者或具有管理員權限的使用者(AEM管理員IMS設定檔的成員)解除鎖定。
+>模擬使用者時，可執行鎖定頁面的作業。 不過，以此方式鎖定的頁面只能使用模擬的使用者來解除鎖定（由客戶）。
 >
 >無法通過模擬鎖定頁面的用戶來解除鎖定頁面。
-<!--
->Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
--->
+>
+>如果鎖定頁面的使用者無法解除鎖定頁面，請聯絡客戶支援以評估移除鎖定的選項。
 
 ## 解鎖頁面 {#unlocking-a-page}
 
@@ -483,9 +482,20 @@ AEM可讓您鎖定頁面，讓其他人都無法修改內容。 當您對特定�
 
 >[!CAUTION]
 >
->模擬使用者時，可執行鎖定頁面的作業。 不過，以此方式鎖定的頁面只能由模擬的使用者或具有管理員權限的使用者(AEM管理員IMS設定檔的成員)解除鎖定。
+>模擬使用者時，可執行鎖定頁面的作業。 不過，以此方式鎖定的頁面，只能透過模擬的使用者（由客戶）解除鎖定。
 >
 >無法通過模擬鎖定頁面的用戶來解除鎖定頁面。
+>
+>如果鎖定頁面的使用者無法解除鎖定頁面，請聯絡客戶支援以評估移除鎖定的選項。
+
+<!--
+>[!CAUTION]
+>
+>Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
+>
+>Pages can not be unlocked by impersonating the user who locked the page.
+-->
+
 <!--
 >Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 -->
