@@ -1,6 +1,6 @@
 ---
-title: 內容傳輸工具故障排除
-description: 內容傳輸工具故障排除
+title: 疑難排解內容轉移工具
+description: 疑難排解內容轉移工具
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 93%
 
 ---
 
-# 內容傳輸工具故障排除 {#troubleshoot-content-transfer-tool}
+# 疑難排解內容轉移工具 {#troubleshoot-content-transfer-tool}
 
 
 ## 遺失 Blob ID {#missing-blobs}
