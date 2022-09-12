@@ -1,6 +1,6 @@
 ---
-title: 添加SSL證書
-description: 瞭解如何使用Cloud Manager的自助服務工具添加您自己的SSL證書。
+title: 新增SSL憑證
+description: 了解如何使用Cloud Manager的自助服務工具新增您自己的SSL憑證。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 14e0255b3ce2ca44579b9fc3de6c7b7f5d8f34b6
 workflow-type: tm+mt
@@ -9,19 +9,19 @@ ht-degree: 0%
 
 ---
 
-# 添加SSL證書 {#adding-an-ssl-certificate}
+# 新增SSL憑證 {#adding-an-ssl-certificate}
 
-瞭解如何使用Cloud Manager的自助服務工具添加您自己的SSL證書。
+了解如何使用Cloud Manager的自助服務工具新增您自己的SSL憑證。
 
 >[!TIP]
 >
->證書可能需要幾天時間才能配置。 因此，Adobe建議提前預配證書。
+>憑證可能需要數天時間才能布建。 因此，Adobe建議事先布建憑證。
 
-## 證書格式 {#certificate-format}
+## 憑證格式 {#certificate-format}
 
-SSL證書檔案必須採用PEM格式才能隨Cloud Manager一起安裝。 PEM格式的公共檔案擴展包括 `.pem,` 。`crt`, `.cer`, 和 `.cert`.
+SSL憑證檔案必須採用PEM格式才能與Cloud Manager一起安裝。 PEM格式的常見副檔名包括 `.pem,` .`crt`, `.cer`, 和 `.cert`.
 
-以下 `openssl` 命令可用於轉換非PEM證書。
+以下 `openssl` 命令來轉換非PEM憑證。
 
 * 將PFX轉換為PEM
 
@@ -41,56 +41,56 @@ SSL證書檔案必須採用PEM格式才能隨Cloud Manager一起安裝。 PEM格
    openssl x509 -inform der -in certificate.cer -out certificate.pem
    ```
 
-## 添加證書 {#adding-a-cert}
+## 新增憑證 {#adding-a-cert}
 
-按照以下步驟使用雲管理器添加證書。
+請依照下列步驟，使用Cloud Manager新增憑證。
 
-1. 登錄到Cloud Manager(位於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇相應的組織和程式。
+1. 登入Cloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇適當的組織和方案。
 
-1. 導航到 **環境** 螢幕 **概述** 的子菜單。
+1. 導覽至 **環境** 螢幕 **概述** 頁面。
 
-1. 按一下 **SSL證書** 的下界。 主螢幕上將顯示一個包含任何現有SSL證書詳細資訊的表。
+1. 按一下 **SSL憑證** 從左側導覽面板。 主畫面上會顯示包含任何現有SSL憑證詳細資訊的表格。
 
-   ![添加SSL證書](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+   ![新增SSL憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. 按一下 **添加SSL證書** 開啟 **添加SSL證書** 對話框。
+1. 按一下 **新增SSL憑證** 開啟 **新增SSL憑證** 對話框。
 
-   * 在中輸入證書的名稱 **證書名稱**。
-      * 這僅供參考，可以是任何有助於您輕鬆引用證書的名稱。
-   * 貼上 **證書**。 **私鑰**, **證書鏈** 值。 這三個欄位都是必填的。
+   * 在 **憑證名稱**.
+      * 這僅供參考，可以是任何可協助您輕鬆參考憑證的名稱。
+   * 貼上 **憑證**, **私密金鑰**，和 **憑證鏈** 值填入其各自的欄位中。 這三個欄位都是必填欄位。
 
    ![「添加SSL證書」對話框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
    * 將顯示檢測到的任何錯誤。
-      * 必須解決所有錯誤，才能保存證書。
-      * 請參閱 [證書錯誤](#certificate-errors) 的子菜單。
+      * 您必須先解決所有錯誤，才能儲存憑證。
+      * 請參閱 [憑證錯誤](#certificate-errors) 一節，以進一步了解如何處理常見錯誤。
 
 
-1. 按一下 **保存** 保存證書。
+1. 按一下 **儲存** 來儲存憑證。
 
-保存後，您將在表中看到證書顯示為新行。
+儲存後，您會在表格中看到憑證顯示為新列。
 
-![已保存SSL證書](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![已儲存SSL憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
 >[!NOTE]
 >
->用戶必須是 **業務所有者** 或 **部署管理器** 角色，以便在雲管理器中安裝SSL證書。
+>使用者必須是 **業務負責人** 或 **部署管理員** 角色，以在Cloud Manager中安裝SSL憑證。
 
-## 證書錯誤 {#certificate-errors}
+## 憑證錯誤 {#certificate-errors}
 
-如果證書安裝不正確或滿足Cloud Manager的要求，可能會出現某些錯誤。
+若未正確安裝憑證或符合Cloud Manager的要求，便可能會產生某些錯誤。
 
 ### 證書策略 {#certificate-policy}
 
-如果您看到以下錯誤，請檢查證書的策略。
+如果您看到下列錯誤，請檢查憑證的原則。
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-通常，證書策略由嵌入的OID值標識。 將證書輸出到文本並搜索OID將顯示證書的策略。
+通常，證書策略由嵌入的OID值標識。 將證書輸出為文本並搜索OID將顯示證書的策略。
 
-您可以使用以下示例作為指南將證書詳細資訊輸出為文本。
+您可以使用下列範例作為指南，將憑證詳細資料輸出為文字。
 
 ```text
 openssl x509 -in 9178c0f58cb8fccc.pem -text
@@ -111,13 +111,13 @@ certificate:
 
 文本中的OID模式定義證書的策略類型。
 
-| 圖案 | 政策 | 在雲管理器中可接受 |
+| 圖樣 | 政策 | Cloud Manager可接受 |
 |---|---|---|
 | `2.23.140.1.1` | EV | 是 |
 | `2.23.140.1.2.2` | OV | 是 |
 | `2.23.140.1.2.1` | DV | 否 |
 
-按 `grep`對於輸出證書文本中的OID模式，您可以確認證書策略。
+依據 `grep`在輸出證書文本中對OID模式執行ping操作，可以確認證書策略。
 
 ```shell
 # "EV Policy"
@@ -130,19 +130,19 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-### 正確的證書訂單 {#correct-certificate-order}
+### 正確的證書順序 {#correct-certificate-order}
 
-證書部署失敗的最常見原因是中間或鏈證書的順序不正確。
+憑證部署失敗的最常見原因，是中間或鏈式憑證的順序不正確。
 
-中間證書檔案必須以根證書或最接近根證書的證書結尾。 它們必須按從 `main/server` 證書到根。
+中間憑證檔案的結尾必須是根憑證，或最接近根憑證的憑證。 它們必須以 `main/server` 憑證至根。
 
-可以使用以下命令確定中間檔案的順序。
+您可以使用下列命令來判斷中間檔案的順序。
 
 ```shell
 openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
 ```
 
-您可以驗證私鑰和 `main/server` 證書與以下命令匹配。
+您可以確認私密金鑰和 `main/server` 證書使用以下命令匹配。
 
 ```shell
 openssl x509 -noout -modulus -in certificate.pem | openssl md5
@@ -154,8 +154,8 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->這兩個命令的輸出必須完全相同。 如果找不到您的 `main/server` 證書，您將需要通過生成新的CSR和/或向SSL供應商請求更新的證書來重新密鑰證書。
+>這兩個命令的輸出必須完全相同。 如果您找不到 `main/server` 憑證時，您必須產生新CSR及/或向SSL廠商要求更新的憑證，以重新輸入憑證。
 
 ### 證書有效日期 {#certificate-validity-dates}
 
-Cloud Manager要求SSL證書在當前日期起至少90天內有效。 您應檢查證書鏈的有效性。
+Cloud Manager預期SSL憑證自目前日期起至少90天內有效。 您應該檢查憑證鏈的有效性。
