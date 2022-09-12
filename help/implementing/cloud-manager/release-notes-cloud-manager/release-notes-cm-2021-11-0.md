@@ -1,6 +1,6 @@
 ---
-title: Cloud Manager在as a Cloud Service版AEM2021.11.0中的發行說明
-description: 以下是as a Cloud Service版AEM2021.11.0中的Cloud Manager發行說明
+title: AEMas a Cloud Service版2021.11.0中的Cloud Manager發行說明
+description: 以下是AEM 2021.11.0as a Cloud Service版中Cloud Manager的發行說明
 feature: Release Information
 exl-id: 98fd6d8a-ddc2-4f53-9dfc-d8e21af0c14d
 source-git-commit: 4505f703754fa46cd746ae4794a3cab65cb19976
@@ -10,56 +10,56 @@ ht-degree: 1%
 
 ---
 
-# Adobe Experience Manager as a Cloud ServiceCloud Manager發行說明2021.11.0 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.11.0中的Cloud Manager發行說明 {#release-notes}
 
-本頁概述了as a Cloud Service2021.11.0中Cloud Manager的發行說明AEM。
+本頁概述AEM 2021.11.0中Cloud Manager的發行說明。
 
 >[!NOTE]
 >
->請參閱 [此頁](/help/release-notes/release-notes-cloud/release-notes-current.md) 為Adobe Experience Manager as a Cloud Service提供的本發行說明。
+>請參閱 [本頁](/help/release-notes/release-notes-cloud/release-notes-current.md) Adobe Experience Manager as a Cloud Service的最新發行說明。
 
 ## 發行日期 {#release-date}
 
-Cloud Manager在as a Cloud ServiceAEM2021.11.0中的發佈日期為2021年11月4日。
-下一版計畫於2021年12月16日發行。
+AEMas a Cloud Service中Cloud Manager的發行日期為2021.11.0年11月4日。
+下一版預計於2021年12月16日發行。
 
 ## 新增功能 {#what-is-new}
 
-* 用戶現在可以利用新的前端管道以加速的方式專門部署前端代碼。 請參閱 [Cloud Manager前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 來瞭解更多資訊。
+* 使用者現在可以運用新的前端管道，以加速方式專門部署前端程式碼。 請參閱 [Cloud Manager前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 了解更多。
 
    >[!IMPORTANT]
-   >您必須處於版AEM本 `2021.10.5933.20211012T154732Z` 利用新的前端管道。
+   >您必須使用AEM版本 `2021.10.5933.20211012T154732Z` 以利用新的前端管道。
 
-* 通過以更有效的方式執行代碼分析而不需要構建整個影像，代碼質量流水線持續時間顯著AEM縮短。 此更改將在發佈後的幾週內逐步展開。
+* 以更有效的方式執行程式碼分析，而不需要建立整個AEM影像，可大幅縮短程式碼品質管道持續時間。 此變更將在發行後的數週內逐步推出。
 
-* Git提交ID現在將顯示在管道執行詳細資訊中，使跟蹤生成的代碼更容易。
+* Git提交ID現在會顯示在管道執行詳細資訊中，以便更輕鬆追蹤已建置的程式碼。
 
-* 現在可通過公開的API建立程式。
+* 現在可透過公開的API建立方案。
 
-* 現在可通過公開的API建立環境。
+* 現在可透過公開的API建立環境。
 
-* 的 `x-request-id` 響應標頭現在可在上的API Ploagn中看到 [www.adobe.io](https://www.adobe.io/)。 此標題在提交客戶關心問題以進行故障排除時非常有用。
+* 此 `x-request-id` 回應標題現在會顯示在 [www.adobe.io](https://www.adobe.io/). 提交客戶服務問題以進行疑難排解時，此標題相當實用。
 
-* 作為用戶，我看到零管線的管線卡為我提供了適當的指導。
+* 身為使用者，我看到管道為零的管道卡為我提供適當的指引。
 
-* 現在可以使用新的「活動」頁，其中可以查看諸如管道和代碼執行等活動及其關聯的詳細資訊。 隨著時間的推移，此頁中列出的活動將擴展範圍以及提供的詳細資訊。
+* 現在提供新的「活動頁面」，供檢視活動（例如管道和程式碼執行）及其相關詳細資訊之用。 隨著時間推移，此頁面所列的活動將會擴展範圍以及提供的詳細資料。
 
-* 現在可以使用一個新的「管線」(Pipelines)頁面，該頁面具有懸停時的狀態跨距，以便輕鬆查看詳細資訊摘要。 可以查看管道執行及其關聯的詳細資訊。
+* 提供新的管道頁面，可在暫留時顯示狀態彈出視窗，方便您檢視詳細資訊摘要。 可檢視管道執行及其相關聯的詳細資訊。
 
-* 「編輯管道API」現在支援更改部署階段中使用的環境。
+* 「編輯管道API」現在支援變更部署階段所使用的環境。
 
-* 介紹了OakPal掃描過程中對大包裝的優化。
+* 已針對大型封裝導入OakPal掃描程式的最佳化。
 
-* 質量問題CSV檔案現在將包含每個質量問題的時間戳。
+* 品質問題CSV檔案現在會包含每個品質問題的時間戳記。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 某些非常規的生成配置導致不必要的檔案儲存在管道的Maven項目快取中，這導致在啟動和停止生成容器時產生額外的網路I/O。
+* 某些非正統的組建設定會導致管道的Maven工件快取中儲存不必要的檔案，導致在啟動和停止組建容器時產生多餘的網路I/O。
 
-* 如果部署階段不存在，管道PATCHAPI將失敗。
+* 如果部署階段不存在，管道PATCHAPI就會失敗。
 
-* 的 `ClientlibProxyResourceCheck` 當存在具有共同基本路徑的客戶端庫時，質量規則會產生誤報問題。
+* 此 `ClientlibProxyResourceCheck` 當有具有共同基本路徑的用戶端程式庫時，品質規則會產生誤判問題。
 
-* 達到最大資料庫數時的錯誤消息未指定錯誤原因。
+* 達到最大儲存庫數時，錯誤訊息未指定錯誤的原因。
 
-* 在少數情況下，管道由於某些響應代碼的重試處理不當而失敗。
+* 在少數情況下，管道由於某些回應代碼的重試處理不當而失敗。
