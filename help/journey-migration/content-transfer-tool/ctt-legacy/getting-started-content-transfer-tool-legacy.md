@@ -1,39 +1,40 @@
 ---
-title: 內容傳輸工具入門（舊版）
-description: 內容傳輸工具入門
+title: 內容轉移工具快速入門（舊版）
+description: 內容轉移工具快速入門
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: a6ee6996-510e-42d7-9a7c-f64732764f97
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '966'
 ht-degree: 21%
 
 ---
 
-# 內容傳輸工具入門（舊版） {#getting-started-content-transfer-tool}
+# 內容轉移工具快速入門（舊版） {#getting-started-content-transfer-tool}
 
 
 ## 可用性 {#availability}
 
-內容傳輸工具可從軟體分發門戶下載為zip檔案。 您可以通過 [包管理器](/help/implementing/developing/tools/package-manager.md) 源Adobe Experience Manager(AEM)實例。 確保下載最新版本。 有關最新版本的詳細資訊，請參閱 [發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)。
+您可以從軟體發佈入口網站下載「內容轉移工具」的ZIP檔案。 您可以透過 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 在來源Adobe Experience Manager(AEM)例項上。 請務必下載最新版本。 如需最新版本的詳細資訊，請參閱 [發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
 >從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)入口網站下載內容轉移工具。
 
 ## 源環境連接 {#source-environment-connectivity}
 
-源實AEM例可能在防火牆後運行，在防火牆中它只能訪問已添加到允許清單的某些主機。 為了成功運行抽取，需要從正在運行的實例訪問以下終結點AEM:
+源AEM實例可能在防火牆後運行，在防火牆中它只能訪問已添加到允許清單中的某些主機。 若要成功執行擷取，必須從執行AEM的執行個體存取下列端點：
 
 * 目標AEMas a Cloud Service環境： `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* Azure Blob儲存服務： `*.blob.core.windows.net`
+* Azure blob儲存服務： `*.blob.core.windows.net`
 * 用戶映射IO終結點： `usermanagement.adobe.io`
 
-要test到目標as a Cloud ServiceAEM環境的連接，請從源實例的shell中發出以下cURL命令(替換 `program_id`。 `environment_id`, `migration_token`):
+若要測試與目標AEMas a Cloud Service環境的連線，請從來源例項的殼層發出下列cURL命令(取代 `program_id`, `environment_id`，和 `migration_token`):
 
 `curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
 
 >[!NOTE]
->如果 `HTTP/2 200` 已接收，連接到AEMas a Cloud Service成功。
+>若 `HTTP/2 200` 收到時，與AEMas a Cloud Service的連線成功。
 
 ## 執行「內容轉移工具」  {#running-tool}
 
@@ -42,24 +43,24 @@ ht-degree: 21%
 
 請依照以下章節了解如何使用「內容轉移工具」，將內容移轉至 AEM as a Cloud Service (製作/發佈)：
 
-1. 選擇Adobe Experience Manager並導航至工具 — > **操作** -> **內容遷移**。
+1. 選取Adobe Experience Manager並導覽至工具 — > **操作** -> **內容移轉**.
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
 
-1. 選擇 **內容傳輸** 選項 **內容遷移** 的子菜單。
+1. 選取 **內容轉移** 選項 **內容移轉** 嚮導。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
 
 
-1. 建立第一個遷移集時，將顯示以下控制台。 按一下&#x200B;**建立移轉集**&#x200B;以建立新的移轉集。
+1. 建立第一個移轉集時，會顯示下列主控台。 按一下&#x200B;**建立移轉集**&#x200B;以建立新的移轉集。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
-   >如果您有現有遷移集，控制台將顯示現有遷移集的清單，其當前狀態為。
+   >如果您有現有的移轉集，主控台會顯示現有移轉集清單及其目前狀態。
 
 
-1. 填充中的欄位 **建立遷移集** 螢幕，如下所述。
+1. 填入 **建立移轉集** 螢幕，如下所述。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
 
@@ -70,89 +71,89 @@ ht-degree: 21%
    1. **Cloud Service 設定**：輸入目標 AEM as a Cloud Service 製作 URL。
 
       >[!NOTE]
-      >在內容傳輸活動期間，您一次最多可以建立和維護十個遷移集。
+      >在內容轉移活動期間，您一次最多可以建立並維護10個移轉集。
       >此外，您還須針對每個特定環境 (*預備*、*開發*&#x200B;或&#x200B;*生產*) 分別建立移轉。
 
    1. **存取 Token**：輸入存取 Token。
 
       >[!NOTE]
-      >可以使用 **開啟訪問令牌** 按鈕 您需要確保您屬於目標Cloud Service實例中的「管理員」組。
+      >您可以使用 **開啟存取權杖** 按鈕。 您必須確定自己屬於目標Cloud Service例項中的「管理員」群組。
 
    1. **參數**：選取以下參數以建立移轉集：
 
-      1. **包含版本**：視需要選取。包含版本時，路徑 `/var/audit` 自動包含以遷移審核事件。
+      1. **包含版本**：視需要選取。包含版本時，路徑 `/var/audit` 會自動納入，以移轉稽核事件。
 
          ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
-         >如果您打算將版本作為遷移集的一部分包括，並且正在執行 `wipe=false`，則由於內容傳輸工具中的當前限制，您必須禁用版本清除。 如果您希望啟用版本清除功能，並在遷移集中執行頂置操作，則必須將接收操作執行為 `wipe=true`。
+         >如果您打算將版本納入移轉集，且要以 `wipe=false`，則您必須停用版本清除，因為「內容轉移工具」中目前有限制。 如果您偏好保持已啟用版本清除功能，並在移轉集中執行追加，則您必須以 `wipe=true`.
 
 
-      1. **欲包含的路徑**：使用路徑瀏覽器來選取需要移轉的路徑。路徑選取器通過鍵入或選擇接受輸入。
+      1. **欲包含的路徑**：使用路徑瀏覽器來選取需要移轉的路徑。路徑選擇器通過鍵入或選擇接受輸入。
 
          >[!IMPORTANT]
          >建立移轉集時會限制下列路徑：
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc` （部分） `/etc` 允許在CTT中選擇路徑)
+         >* `/etc` (部分 `/etc` 允許在CTT中選擇路徑)
 
 
-1. 按一下 **保存** 填充了 **建立遷移集** 詳細資訊螢幕。
+1. 按一下 **儲存** 填入 **建立移轉集** 詳細資訊畫面。
 
-1. 您將在 **內容傳輸** ，如下圖所示。
+1. 您可在 **內容轉移** 嚮導，如下圖所示。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
-   所有現有遷移集都顯示在 **內容傳輸** 的子菜單。 您可能會看到下面介紹的一些表徵圖。
+   所有現有移轉集都會顯示在 **內容轉移** 嚮導及其當前狀態和狀態資訊。 您可能會看到以下說明的其中一些圖示。
 
    * *紅色雲朵*&#x200B;表示您無法完成提取程序。
-   * A *綠雲* 表示您可以完成提取過程。
+   * A *綠雲* 表示您可以完成提取程式。
    * *黃色圖示*&#x200B;表示您並未建立現有移轉集，且該特定移轉集是由相同例項中的其他使用者所建立。
 
-1. 選擇遷移集並按一下 **屬性** 查看或編輯遷移集屬性。 編輯屬性時，無法更改 **遷移集名稱** 或 **服務URL**。
+1. 選取移轉集，然後按一下 **屬性** 查看或編輯遷移集屬性。 編輯屬性時，無法變更 **移轉集名稱** 或 **服務URL**.
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
 
 ### 確定遷移集大小和磁碟空間 {#migration-set-size}
 
-建立遷移集後，強烈建議在啟動抽取進程之前對遷移集運行大小檢查。
-通過對遷移集運行大小檢查，您將能夠：
-* 確定磁碟空間是否足夠 `crx-quickstart` 子目錄以成功完成提取。
-* 確定遷移集大小是否在支援的產品限制範圍內，並避免內容攝取失敗。
+建立移轉集後，強烈建議您先對移轉集執行大小檢查，再開始提取程式。
+對移轉集執行大小檢查後，您將能：
+* 確定 `crx-quickstart` 子目錄，以成功完成提取。
+* 判斷移轉集大小是否符合支援的產品限制，並避免內容擷取失敗。
 
-按照以下步驟運行大小檢查：
+請依照下列步驟執行大小檢查：
 
-1. 選擇遷移集並按一下 **檢查大小**。
+1. 選取移轉集，然後按一下 **檢查大小**.
 
    ![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
 
-1. 這將開啟 **檢查大小** 對話框。
+1. 這會開啟 **檢查大小** 對話框。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
 
-1. 按一下 **檢查大小** 以啟動進程。 然後，您將返回到遷移集清單視圖，您應看到一條消息，指出 **檢查大小** 正在運行。
+1. 按一下 **檢查大小** 來啟動程式。 接著，您會返回移轉集清單檢視，並看到訊息，指出 **檢查大小** 執行中。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
 
 
-1. 一次 **檢查大小** 進程已完成，狀態將更改為 **已完成**。 選擇同一遷移集，然後按一下 **檢查大小** 的子菜單。
+1. 一次 **檢查大小** 程式已完成，狀態將變更為 **已完成**. 選取相同的移轉集，然後按一下 **檢查大小** 來查看結果。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
 
-   下面是 **檢查大小** 結果沒有警告。
+   以下是 **檢查大小** 結果沒有警告。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
 
-1. 如果 **檢查大小** 結果表明磁碟空間不足和/或遷移集超出產品限制， **警告** 將顯示狀態。
+1. 若 **檢查大小** 結果表明磁碟空間不足和/或遷移集超出產品限制， **警告** 狀態。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
 
-下面是 **檢查大小** 結果帶有警告。
+以下是 **檢查大小** 結果顯示警告。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 
 
 ## 下一步 {#whats-next}
 
-學會了如何建立遷移集後，您現在就可以學習內容傳輸工具中的提取和接收過程。 在瞭解這些流程之前，必須先查看 [處理大型內容儲存庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 顯著加快內容傳輸活動的提取和攝取階段，以將內容移動到AEMas a Cloud Service。
+學習如何建立移轉集後，您現在就可以了解「內容轉移工具」中的提取和擷取程式。 在了解這些流程之前，您必須先檢閱 [處理大型內容存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 大幅加快內容轉移活動的擷取和擷取階段，以便將內容移至AEMas a Cloud Service。
