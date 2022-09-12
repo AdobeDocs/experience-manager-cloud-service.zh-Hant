@@ -1,6 +1,6 @@
 ---
-title: 螢幕中的Dispatcher配置as a Cloud Service
-description: 本頁介紹螢幕as a Cloud Service中的Dispatcher配置。
+title: 螢幕中的Dispatcher設定as a Cloud Service
+description: 本頁說明Screensas a Cloud Service的Dispatcher設定。
 exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -9,15 +9,15 @@ ht-degree: 0%
 
 ---
 
-# 螢幕中的Dispatcher配置as a Cloud Service {#dispatcher-configurations-screens-cloud}
+# 螢幕中的Dispatcher設定as a Cloud Service {#dispatcher-configurations-screens-cloud}
 
-本節介紹螢幕as a Cloud Service的調度程式配置。
+本節說明Screensas a Cloud Service的Dispatcher設定。
 
-## 在Dispatcher中為螢幕添加篩選器和快取規則as a Cloud Service部署 {#deployment}
+## 在Dispatcher for Screens中新增篩選器和快取規則，以as a Cloud Service部署 {#deployment}
 
-允許在調度程式中為螢幕as a Cloud Service中的發佈實例使用以下篩選器和快取規則。
+在Screensas a Cloud Service中，為發佈例項在Dispatcher中允許下列篩選器和快取規則。
 
-### AEM Screens過濾器 {#filters}
+### AEM Screens篩選器 {#filters}
 
 ```
 ## # Content Configurations
@@ -32,12 +32,12 @@ ht-degree: 0%
 
 ### 快取規則 {#cache-rules}
 
-* 添加 `/statfileslevel "10"` 至 `/cache` 部分 `publish_farm.any`/。
+* 新增 `/statfileslevel "10"` to `/cache` 區段 `publish_farm.any`/.
 
    >[!NOTE]
-   >此快取規則支援從快取域快取多達10個級別，並在發佈內容時使其失效，而不是使所有內容失效。 您可以根據內容結構的設定深度更改此級別。
+   >此快取規則支援從快取快取中快取高達10個層級，且內容發佈時會失效，而非使所有內容失效。 您可以根據內容結構的設定深度來變更此層級。
 
-* 將以下內容添加到 `/invalidate` 部分 `publish_farm.any`。
+* 將下列項目新增至 `/invalidate` 區段 `publish_farm.any`.
 
    ```
    /0003 {
@@ -46,7 +46,7 @@ ht-degree: 0%
    }
    ```
 
-* 將以下規則添加到 `/rules` 部分 `/cache` publish_farm.any或包含於 `publish_farm.any`。
+* 將下列規則新增至 `/rules` 區段 `/cache` 在publish_farm.any中，或包含在 `publish_farm.any`.
 
    ```
    ## Allow Dispatcher Cache for Screens channels
