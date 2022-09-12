@@ -1,6 +1,6 @@
 ---
-title: '內置 [!DNL AEM Forms] as a Cloud Service組 '
-description: '現成用戶組清單和分配給每個組的權限 '
+title: 內建 [!DNL AEM Forms] as a Cloud Service群組
+description: 現成可用的使用者群組清單及指派給每個群組的權限
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 5%
 
 # 群組與權限 {#aem-forms-on-osgi-groups-and-privileges}
 
-你可以 [建立組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 並分配策略和 [用戶](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 組。 這些策略控制屬於組的用戶的權限。
+您可以 [建立群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 並分配策略和 [使用者](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 群組。 這些策略控制屬於組的用戶的權限。
 
-一旦設定 [!DNL AEM Forms] as a Cloud Service，下表中列出的組，如 [!DNL forms-users] 和forms-power-user，可自動進行分配：
+設定後 [!DNL AEM Forms] as a Cloud Service，下表所列的群組，例如 [!DNL forms-users] 和forms-power-user，可自動供分配：
 
 <table>
  <tbody>
@@ -25,9 +25,9 @@ ht-degree: 5%
    <td>[!DNL forms-users] <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>建立、預覽、發佈和提交自適應Forms</li> 
+     <li>建立、預覽、發佈及提交最適化Forms</li> 
     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> -->
-     <li>將資產上載到實AEM例</li> 
+     <li>上傳資產至AEM例項</li> 
      <li>建立主題</li> 
     </ul> </td> 
   </tr>
@@ -35,12 +35,12 @@ ht-degree: 5%
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
-     <li>建立、預覽、發佈和提交自適應Forms</li> 
+     <li>建立、預覽、發佈及提交最適化Forms</li> 
      <!-- <li>Create, preview, and publish interactive communications and document fragments</li> 
      <li>Create scripts for Adaptive Forms using code editor</li> -->
-     <li>上載資產（包括指令碼）</li> 
+     <li>上傳資產，包括指令碼</li> 
      <li>建立主題</li> 
-     <li>導入包含XDP的包</li> 
+     <li>包含XDP的匯入套件</li> 
     </ul> </td> 
   </tr>
   <!-- <tr>
@@ -55,7 +55,7 @@ ht-degree: 5%
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>建立和預覽自適應Forms <!-- or interactive communications --> 模板</li> 
+     <li>建立和預覽適用性Forms <!-- or interactive communications --> 範本</li> 
     </ul> </td> 
   </tr>
   <tr>
