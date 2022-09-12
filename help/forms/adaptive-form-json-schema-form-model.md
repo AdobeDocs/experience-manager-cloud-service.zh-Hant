@@ -1,6 +1,6 @@
 ---
 title: 為最適化表單設計 JSON 綱要
-description: 瞭解如何使用JSON架構作為表單模型建立自適應Forms。 可以使用現有JSON架構建立自適應Forms。 使用JSON架構的示例進行更深入的挖掘，在JSON架構定義中預配置欄位，限制Adaptive Form元件的可接受值，並學習不支援的構造。
+description: 了解如何使用JSON結構描述作為表單模型來建立適用性Forms。 您可以使用現有的JSON結構來建立最適化Forms。 深入了解JSON結構描述的範例、JSON結構描述定義中的預先設定欄位、限制適用性表單元件的可接受值，以及了解不支援的建構。
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
@@ -16,24 +16,24 @@ ht-degree: 3%
 
 ## 必備條件 {#prerequisites}
 
-使用JSON架構作為其表單模型創作自適應表單需要對JSON架構有基本的瞭解。 建議在本文之前閱讀以下內容。
+使用JSON結構描述製作最適化表單模型，需要基本了解JSON結構描述。 建議在本文之前閱讀下列內容。
 
-* [建立自適應窗體](creating-adaptive-form.md)
-* [JSON架構](https://json-schema.org/)
+* [建立最適化表單](creating-adaptive-form.md)
+* [JSON結構](https://json-schema.org/)
 
-## 將JSON架構用作表單模型  {#using-a-json-schema-as-form-model}
+## 使用JSON結構描述作為表單模型  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager格式支援使用現有JSON架構作為表單模型建立自適應表單。 此JSON架構表示組織中後端系統生成或使用資料的結構。 您使用的JSON架構應與 [v4規格](https://json-schema.org/draft-04/schema)。
+Adobe Experience Manager表單支援使用現有的JSON結構描述作為表單模型來建立最適化表單。 此JSON結構表示組織中後端系統產生或使用資料的結構。 您使用的JSON結構應符合 [v4規格](https://json-schema.org/draft-04/schema).
 
-使用JSON架構的主要功能有：
+使用JSON結構描述的主要功能為：
 
-* JSON的結構在Adaptive Form的創作模式下的「內容查找器」頁籤中顯示為樹。 您可以將元素從JSON層次結構拖放到自適應表單中。
-* 可以使用與關聯架構相容的JSON預填充表單。
-* 在提交時，用戶輸入的資料將作為與關聯架構對齊的JSON提交。
+* JSON的結構在最適化表單的製作模式中，會顯示為「內容尋找器」索引標籤中的樹狀結構。 您可以從JSON階層將元素拖曳並新增至最適化表單。
+* 您可以使用符合相關結構的JSON預先填入表單。
+* 提交時，使用者輸入的資料會以符合相關結構的JSON提交。
 
-JSON架構由簡單和複雜的元素類型組成。 元素具有向元素添加規則的屬性。 當這些元素和屬性被拖到「自適應表單」上時，它們將自動映射到相應的「自適應表單」元件。
+JSON結構包含簡單且複雜的元素類型。 元素具有將規則新增至元素的屬性。 將這些元素和屬性拖曳至適用性表單時，會自動對應至對應的適用性表單元件。
 
-JSON元素與自適應表單元件的映射如下：
+此JSON元素與適用性表單元件的對應如下：
 
 ```json
 "birthDate": {
@@ -58,70 +58,70 @@ JSON元素與自適應表單元件的映射如下：
  <tbody>
   <tr>
    <th><strong>JSON元素、屬性或屬性</strong></th>
-   <th><strong>自適應表單元件</strong></th>
+   <th><strong>適用性表單元件</strong></th>
   </tr>
   <tr>
    <td><p>具有enum和enumNames約束的字串屬性。</p> <p>語法，</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td>
    <td><p>下拉元件：</p>
     <ul>
      <li>enumNames中列出的值將顯示在下拉框中。</li>
-     <li>枚舉中列出的值用於計算。</li>
+     <li>列舉中列出的值會用於計算。</li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>帶格式約束的字串屬性。 例如，電子郵件和日期。</p> <p>語法，</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td><p>具有格式約束的字串屬性。 例如，電子郵件和日期。</p> <p>語法，</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
    <td>
     <ul>
-     <li>當類型為字串且格式為電子郵件時，將映射電子郵件元件。</li>
-     <li>當類型為字串且格式為主機名時，將映射帶驗證的文本框元件。</li>
+     <li>類型為字串且格式為電子郵件時，會對應電子郵件元件。</li>
+     <li>類型為字串且格式為主機名時，會對應具有驗證的TextBox元件。</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>}</code></p> </td>
-   <td><br /> <br /> 文本欄位<br /> <br /> <br /> </td>
+   <td><br /> <br /> 文字欄位<br /> <br /> <br /> </td>
   </tr>
   <tr>
-   <td>number屬性<br /> </td>
-   <td>子類型設定為浮動的數字欄位<br /> </td>
+   <td>數字屬性<br /> </td>
+   <td>子類型設定為float的數值欄位<br /> </td>
   </tr>
   <tr>
    <td>整數屬性<br /> </td>
-   <td>子類型設定為整數的數字欄位<br /> </td>
+   <td>子類型設為整數的數值欄位<br /> </td>
   </tr>
   <tr>
-   <td>布爾型<br /> </td>
+   <td>布林屬性<br /> </td>
    <td>切換<br /> </td>
   </tr>
   <tr>
-   <td>對象屬性<br /> </td>
+   <td>物件屬性<br /> </td>
    <td>面板<br /> </td>
   </tr>
   <tr>
    <td>陣列屬性</td>
-   <td>最小值和最大值分別等於minItems和maxItems的可重複面板。 僅支援同構陣列。 因此項目約束必須是對象而不是陣列。<br /> </td>
+   <td>最小值和最大值分別等於minItems和maxItems的可重複面板。 僅支援同質陣列。 因此，項約束必須是對象而不是陣列。<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ### 公用架構屬性 {#common-schema-properties}
 
-自適應表單使用JSON架構中的可用資訊來映射每個生成的欄位。 特別是：
+適用性表單使用JSON結構描述中的可用資訊來對應每個產生的欄位。 特別是：
 
-* 的 `title` 屬性用作Adaptive Form元件的標籤。
-* 的 `description` 屬性設定為Adaptive Form元件的長說明。
-* 的 `default` 屬性用作「自適應表單」欄位的初始值。
-* 的 `maxLength` 屬性設定為 `maxlength` 文本欄位元件的屬性。
-* 的 `minimum`。 `maximum`。 `exclusiveMinimum`, `exclusiveMaximum` 屬性用於「數字」框元件。
-* 支援範圍 `DatePicker component` 其他JSON架構屬性 `minDate` 和 `maxDate` 。
-* 的 `minItems` 和 `maxItems` 屬性用於限制可從面板元件中添加或刪除的項/欄位數。
-* 的 `readOnly` 屬性設定 `readonly` 自適應表單元件的屬性。
-* 的 `required` 屬性將「自適應表單」欄位標籤為必需欄位，而在面板（其中type為object）中，最終提交的JSON資料具有與該對象對應的空值欄位。
-* 的 `pattern` 屬性設定為Adaptive Form中的驗證模式（規則運算式）。
-* JSON架構檔案的副檔名必須保留為.schema.json。 比如說， &lt;filename>.schema.json。
+* 此 `title` 屬性可作為適用性表單元件的標籤。
+* 此 `description` 屬性設為適用性表單元件的詳細說明。
+* 此 `default` 屬性可作為「適用性表單」欄位的初始值。
+* 此 `maxLength` 屬性設為 `maxlength` 屬性。
+* 此 `minimum`, `maximum`, `exclusiveMinimum`，和 `exclusiveMaximum` 屬性用於數值框元件。
+* 支援範圍 `DatePicker component` 其他JSON結構屬性 `minDate` 和 `maxDate` 已提供……
+* 此 `minItems` 和 `maxItems` 屬性可用來限制可從面板元件新增或移除的項目/欄位數。
+* 此 `readOnly` 屬性設定 `readonly` 屬性。
+* 此 `required` 屬性會將「適用性表單」欄位標示為必填欄位，但在面板中（其中type為object），最終提交的JSON資料中的欄位會包含與該物件對應的空白值。
+* 此 `pattern` 屬性在適用性表單中設為驗證模式（規則運算式）。
+* JSON結構描述檔案的副檔名必須保留為.schema.json。 例如， &lt;filename>.schema.json。
 
-## 示例JSON架構 {#sample-json-schema}
+## 範例JSON結構描述 {#sample-json-schema}
 
-下面是JSON架構的示例。
+以下是JSON結構描述的範例。
 
 ```json
 {
@@ -301,9 +301,9 @@ JSON元素與自適應表單元件的映射如下：
 }
 ```
 
-### 可重用架構定義 {#reusable-schema-definitions}
+### 可重複使用的架構定義 {#reusable-schema-definitions}
 
-定義鍵用於標識可重用方案。 可重用架構定義用於建立片段。 <!-- It is similar to identifying complex types in XSD.--> 下面提供了一個帶定義的示例JSON架構：
+定義索引鍵可用來識別可重複使用的結構描述。 可重複使用的架構定義用於建立片段。 <!-- It is similar to identifying complex types in XSD.--> 以下提供定義的範例JSON結構描述：
 
 ```json
 {
@@ -330,11 +330,11 @@ JSON元素與自適應表單元件的映射如下：
 }
 ```
 
-上例定義了客戶記錄，其中每個客戶都有發運地址和開單地址。 兩個地址的結構相同 — 地址具有街道地址、城市地址和省/市/自治區地址 — 因此最好不要複製這些地址。 它還使添加和刪除欄位變得容易，以便將來進行任何更改。
+上例定義了客戶記錄，其中每個客戶都有發運和計費地址。 地址的結構相同（地址具有街道地址、城市地址和州地址），因此最好不要複製地址。 此外，欄位的新增和刪除也方便您日後進行任何變更。
 
-## JSON架構定義中的預配置欄位 {#pre-configuring-fields-in-json-schema-definition}
+## JSON結構定義中的預先設定欄位 {#pre-configuring-fields-in-json-schema-definition}
 
-您可以使用 **aem:afProperties** 屬性，用於預配置要映射到自定義Adaptive Form元件的JSON架構欄位。 下面列出了一個示例：
+您可以使用 **aem:afProperties** 屬性來預先設定JSON結構描述欄位以對應至自訂適用性表單元件。 以下列出範例：
 
 ```json
 {
@@ -625,25 +625,25 @@ Here is the sample JSON code for previously mentioned examples.
 ```
 -->
 
-## 限制自適應表單元件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
+## 限制最適化表單元件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
 
-可以將以下限制添加到JSON架構元素，以限制Adaptive Form元件可接受的值：
+您可以將下列限制新增至JSON結構元素，以限制適用性表單元件可接受的值：
 
 <table>
  <tbody>
   <tr>
-   <td><p><strong> 架構屬性</strong></p> </td>
+   <td><p><strong> 結構屬性</strong></p> </td>
    <td><p><strong>資料類型</strong></p> </td>
    <td><p><strong>說明</strong></p> </td>
-   <td><p><strong>元件</strong></p> </td>
+   <td><p><strong>Component</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>maximum</code></p> </td>
    <td><p>字串</p> </td>
-   <td><p>指定數值和日期的上限。 預設情況下，包括最大值。</p> </td>
+   <td><p>指定數值和日期的上界。 預設會包含最大值。</p> </td>
    <td>
     <ul>
-     <li>數字框</li>
+     <li>數值方塊</li>
      <li>數值步進器<br /> </li>
      <li>日期挑選器</li>
     </ul> </td>
@@ -651,32 +651,32 @@ Here is the sample JSON code for previously mentioned examples.
   <tr>
    <td><p><code>minimum</code></p> </td>
    <td><p>字串</p> </td>
-   <td><p>指定數值和日期的下界。 預設情況下，包括最小值。</p> </td>
+   <td><p>指定數值和日期的下限。 預設會包含最小值。</p> </td>
    <td>
     <ul>
-     <li>數字框</li>
+     <li>數值方塊</li>
      <li>數值步進器</li>
      <li>日期挑選器</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>exclusiveMaximum</code></p> </td>
-   <td><p>布林值 (Boolean)</p> </td>
-   <td><p>如果為true，則在窗體元件中指定的數值或日期必須小於為maximum屬性指定的數值或日期。</p> <p>如果為false，則在表單元件中指定的數值或日期必須小於或等於為maximum屬性指定的數值或日期。</p> </td>
+   <td><p>布林值</p> </td>
+   <td><p>如果為true，則表單元件中指定的數值或日期必須小於為maximum屬性指定的數值或日期。</p> <p>如果為false，則表單元件中指定的數值或日期必須小於或等於為最大屬性指定的數值或日期。</p> </td>
    <td>
     <ul>
-     <li>數字框</li>
+     <li>數值方塊</li>
      <li>數值步進器</li>
      <li>日期挑選器</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>exclusiveMinimum</code></p> </td>
-   <td><p>布林值 (Boolean)</p> </td>
-   <td><p>如果為true，則在窗體元件中指定的數值或日期必須大於為minimum屬性指定的數值或日期。</p> <p>如果為false，則表單元件中指定的數值或日期必須大於或等於為最小值屬性指定的數值或日期。</p> </td>
+   <td><p>布林值</p> </td>
+   <td><p>如果為true，則表單元件中指定的數值或日期必須大於為最小屬性指定的數值或日期。</p> <p>如果為false，則表單元件中指定的數值或日期必須大於或等於為最小屬性指定的數值或日期。</p> </td>
    <td>
     <ul>
-     <li>數字框</li>
+     <li>數值方塊</li>
      <li>數值步進器</li>
      <li>日期挑選器</li>
     </ul> </td>
@@ -684,40 +684,40 @@ Here is the sample JSON code for previously mentioned examples.
   <tr>
    <td><p><code>minLength</code></p> </td>
    <td><p>字串</p> </td>
-   <td><p>指定元件中允許的最小字元數。 最小長度必須等於或大於零。</p> </td>
+   <td><p>指定元件中允許的字元數量最小。 最小長度必須等於或大於零。</p> </td>
    <td>
     <ul>
-     <li>文本框</li>
+     <li>文字方塊</li>
     </ul> </td>
   </tr>
   <tr>
    <td><code>maxLength</code></td>
    <td>字串</td>
-   <td>指定元件中允許的最大字元數。 最大長度必須等於或大於零。</td>
+   <td>指定元件中允許的字元數上限。 最大長度必須等於或大於零。</td>
    <td>
     <ul>
-     <li>文本框</li>
+     <li>文字方塊</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>pattern</code></p> </td>
    <td><p>字串</p> </td>
-   <td><p>指定字元的順序。 如果字元符合指定的模式，則元件將接受字元。</p> <p>模式屬性映射到相應的「自適應表單」元件的驗證模式。</p> </td>
+   <td><p>指定字元的順序。 如果字元符合指定的模式，元件將接受字元。</p> <p>模式屬性映射至對應的適用性表單元件的驗證模式。</p> </td>
    <td>
     <ul>
-     <li>映射到XSD架構的所有自適應Forms元件 </li>
+     <li>對應至XSD結構的所有適用性Forms元件 </li>
     </ul> </td>
   </tr>
   <tr>
    <td><code>maxItems</code></td>
    <td>字串</td>
-   <td>指定陣列中的最大項數。 最大項必須等於或大於零。</td>
+   <td>指定陣列中的項目數上限。 最大項目必須等於或大於零。</td>
    <td> </td>
   </tr>
   <tr>
    <td><code>minItems</code></td>
    <td>字串</td>
-   <td>指定陣列中最小項數。 最小項必須等於或大於零。</td>
+   <td>指定陣列中的最小項目數。 最小項目必須等於或大於零。</td>
    <td> </td>
   </tr>
  </tbody>
@@ -725,26 +725,26 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## 不支援的構造  {#non-supported-constructs}
 
-自適應Forms不支援以下JSON架構構造：
+適用性Forms不支援下列JSON結構：
 
-* 空類型
-* 聯合類型，如any和
+* Null類型
+* 聯合類型（如any）和
 * OneOf、AnyOf、AllOf和NOT
-* 僅支援同構陣列。 因此，項目約束必須是對象而不是陣列。
+* 僅支援同質陣列。 因此，項約束必須是對象而不是陣列。
 
 ## 常見問題 {#frequently-asked-questions}
 
-**為什麼無法為可重複子表單拖動子表單（從任何複雜類型生成的結構）的單個元素（minOccours或maxOccurs值大於1）?**
+**為什麼我無法為可重複的子表單拖曳子表單的個別元素（從任何複雜類型產生的結構）（minOccours或maxOccurs值大於1）?**
 
-在可重複的子窗體中，必須使用完整的子窗體。 如果只需要選擇欄位，請使用整個結構並刪除不需要的欄位。
+在可重複的子表單中，您必須使用完整的子表單。 如果您只想要選擇性欄位，請使用整個結構並刪除不需要的結構。
 
-**我在Content Finder中有一個很長的複雜結構。 如何找到特定元素？**
+**我在「內容尋找器」中有一個長而複雜的結構。 如何尋找特定元素？**
 
-您有兩個選擇：
+您有兩個選項：
 
 * 滾動瀏覽樹結構
-* 使用「搜索」框查找元素
+* 使用「搜尋」方塊來尋找元素
 
-**JSON架構檔案的副檔名應是什麼？**
+**JSON結構描述檔案的副檔名為何？**
 
-JSON架構檔案的副檔名必須為.schema.json。 比如說， &lt;filename>.schema.json。
+JSON結構描述檔案的副檔名必須為.schema.json。 例如， &lt;filename>.schema.json。
