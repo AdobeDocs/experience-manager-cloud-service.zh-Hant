@@ -1,6 +1,6 @@
 ---
 title: 雲端中的 Dispatcher
-description: '雲端中的 Dispatcher '
+description: 雲端中的 Dispatcher
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
@@ -15,27 +15,27 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispoverview"
 >title="雲端中的 Dispatcher"
->abstract="本頁介紹如何下載和提取調度程式工具以及受支援的apache模組，並提供了對傳統和靈活模式的高級概述。"
+>abstract="本頁說明如何下載和擷取Dispatcher工具、支援的Apache模組，並提供舊版和彈性模式的概觀。"
 
 ## 簡介 {#apache-and-dispatcher-configuration-and-testing}
 
-本頁介紹調度程式工具以及如何下載和提取它們以及受支援的apache模組，並概要介紹了傳統和靈活模式。 此外，還有關於驗證和調試以及將Dispatcher配置從AMS遷移到AEMas a Cloud Service的參考。 另請參見 [這個視頻](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) 有關在雲服務環境中部署調度程式檔案的詳細資訊。
+本頁說明Dispatcher工具，以及如何下載和擷取工具、支援的Apache模組，並提供舊版和彈性模式的概觀。 此外，也有進一步的驗證和除錯參考，以及將Dispatcher設定從AMS移轉至AEMas a Cloud Service。 另請參閱 [此影片](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) 如需有關在雲端服務環境中部署dispatcher檔案的其他詳細資訊。
 
 ## Dispatcher工具 {#dispatcher-sdk}
 
-Dispatcher Tools是整個as a Cloud ServiceSDK的一AEM部分，它提供：
+Dispatcher工具是整體AEMas a Cloud ServiceSDK的一部分，並提供：
 
-* 一種香草檔案結構，包含要包含在Dispatcher的主項目中的配置檔案。
-* 用於驗證Dispatcher配置是否只包括as a Cloud Service支援的指AEM令的客戶工具。        此外，工具還驗證語法是否正確，以便apache能夠成功啟動。
-* 將Dispatcher本地調出的Docker映像。
+* 包含要納入Dispatcher專案之Maven專案的組態檔的Vanilla檔案結構。
+* 客戶驗證Dispatcher設定是否僅包含AEMas a Cloud Service支援指示的工具。        此外，工具也會驗證語法是否正確，以便Apache能成功啟動。
+* 在本機開啟Dispatcher的Docker影像。
 
-## 下載和提取工具 {#extracting-the-sdk}
+## 下載和解壓縮工具 {#extracting-the-sdk}
 
-Dispatcher Tools, [AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)，可從zip檔案下載 [軟體分發](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 門戶。 該新Dispatcher Tools版本中提供的任何新配置都可用於部署到雲中運行該版本或更高版本AEM的雲環境。
+Dispatcher工具， [AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)，可從zip檔案下載： [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 入口網站。 該新Dispatcher工具版本中可用的任何新設定，皆可部署至在雲端或更新版本中執行該AEM版本的雲端環境。
 
-解壓SDK，該SDK捆綁了用於macOS、Linux和Windows的Dispatcher Tools。
+將SDK解壓縮，此SDK捆綁了macOS、Linux和Windows的Dispatcher工具。
 
-**對於macOS/Linux**，使Dispatcher工具項目可執行並運行它。 它將自解壓您儲存到的目錄下的Dispatcher Tools檔案(其中 `version` 是Dispatcher Tools的版本)。
+**針對macOS/Linux**，讓Dispatcher工具工件可執行並執行。 它會從您儲存的目錄下(其中 `version` 是Dispatcher工具的版本)。
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -44,23 +44,23 @@ Verifying archive integrity...  100%   All good.
 Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**對於Windows**，提取Dispatcher Tooling zip存檔。
+**Windows版**，解壓縮Dispatcher工具zip封存。
 
-## 使用Dispatcher Tools進行驗證和調試 {#validation-debug}
+## 使用Dispatcher工具進行驗證和除錯 {#validation-debug}
 
-調度程式工具用於驗證和調試項目的Dispatcher配置。 瞭解有關如何在下面引用的頁面中使用這些工具的更多資訊，具體取決於項目的調度程式配置是以靈活模式還是傳統模式構建的：
+Dispatcher工具可用來驗證專案的Dispatcher設定並除錯。 進一步了解如何根據專案的Dispatcher設定是以彈性模式還是舊式模式建構，在以下參考的頁面中使用這些工具：
 
-* **靈活模式**  — 建議的模式，以及 [原AEM型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 以及更高版本，Cloud Manager也用於在Cloud Manager 2021.7.0版本後建立的新環境。 客戶可以通過添加資料夾和檔案來激活此模式 `opt-in/USE_SOURCES_DIRECTLY`。 通過使用此更靈活的模式，在舊模式下需要單個的重寫資料夾下，檔案結構沒有任何限制 `rewrite.rules` 的子菜單。 此外，您可以添加的規則數量沒有限制。 有關資料夾結構和本地驗證的詳細資訊，請參閱 [使用Dispatcher工具驗證和調試](/help/implementing/dispatcher/validation-debug.md)。
+* **彈性模式**  — 建議的模式，以及 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 以及更高版本，Cloud Manager也用於Cloud Manager 2021.7.0版之後建立的新環境。 客戶可以新增資料夾和檔案來啟動此模式 `opt-in/USE_SOURCES_DIRECTLY`. 使用此更靈活的模式時，重寫資料夾下的檔案結構沒有限制，在舊版模式中，只需單一 `rewrite.rules` 檔案。 此外，您可新增的規則數目並無限制。 如需資料夾結構和本機驗證的詳細資訊，請參閱 [使用Dispatcher工具進行驗證和除錯](/help/implementing/dispatcher/validation-debug.md).
 
-* **舊模式**  — 有關dispatcher配置舊模式的資料夾結構和本地驗證的詳細資訊，請參見 [使用Dispatcher Tools（舊版）驗證和調試](/help/implementing/dispatcher/validation-debug-legacy.md)
+* **舊式模式**  — 如需dispatcher設定舊版模式的資料夾結構和本機驗證的詳細資訊，請參閱 [使用Dispatcher工具（舊版）進行驗證和除錯](/help/implementing/dispatcher/validation-debug-legacy.md)
 
-有關如何從舊式配置模型遷移到更靈活的配置模型的詳細資訊，請AEM參見 [本文檔](/help/implementing/dispatcher/validation-debug.md#migrating)。
+如需如何從舊版設定模型移轉至更具彈性模型(隨附於AEM原型28)的詳細資訊，請參閱 [本檔案](/help/implementing/dispatcher/validation-debug.md#migrating).
 
 ## 支援的Apache模組 {#supported-directives}
 
-下表顯示了支援的apache模組：
+下表顯示了支援的Apache模組：
 
-| 模組名稱 | 參考頁 |
+| 模組名稱 | 參考頁面 |
 |---|---|
 | `core` | [https://httpd.apache.org/docs/2.4/mod/core.html](https://httpd.apache.org/docs/2.4/mod/core.html) |
 | `mod_access_compat` | [https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html) |
@@ -89,9 +89,9 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 | `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
 
 
-客戶不能添加任意模組，但將來可能會考慮添加附加模組。 客戶可以通過在SDK中執行驗證程式的allowlist命令來查找指定Dispatcher版本可用的指令清單。
+客戶無法添加任意模組，但將來可能會考慮添加其他模組。 客戶可在SDK中執行驗證器的allowlist命令，以找到指定Dispatcher版本可用的指令清單。
 
-通過運行驗證程式的allowlist命令，可以列出Apache配置檔案中允許的指令：
+運行驗證器的allowlist命令可以列出Apache配置檔案中允許的指令：
 
 ```
 $ validator allowlist
@@ -105,8 +105,8 @@ Allowlisted directives:
 
 ## 資料夾結構 {#folder-structure}
 
-項目的apache和dispatcher資料夾結構將因項目使用的模式而略有不同，如中所述 [使用Dispatcher Tools進行驗證和調試](#validation-debug) 的上界。
+專案的apache和dispatcher資料夾結構會因專案使用的模式而稍有不同，如 [使用Dispatcher工具進行驗證和除錯](#validation-debug) 一節。
 
-## 從AMS遷移Dispatcher配置。 {#ams-aem}
+## 從AMS移轉Dispatcher設定。 {#ams-aem}
 
-有關如何將Dispatcher配置從AMS遷移到AEMas a Cloud Service的詳細資訊，請參見 [將Dispatcher配置從AMS遷移到AEM](/help/implementing/dispatcher/ams-aem.md) as a Cloud Service頁面。
+如需如何將Dispatcher設定從AMS移轉至AEM as a Cloud Service的詳細資訊，請參閱 [將Dispatcher設定從AMS移轉至AEM](/help/implementing/dispatcher/ams-aem.md) as a Cloud Service頁面。
