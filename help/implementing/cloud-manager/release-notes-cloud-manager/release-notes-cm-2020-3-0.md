@@ -1,6 +1,6 @@
 ---
-title: Cloud Manager在as a Cloud Service版AEM2020.3.0中的發行說明
-description: Cloud Manager在as a Cloud Service版AEM2020.3.0中的發行說明
+title: AEM as a Cloud Service2020.3.0版中Cloud Manager的發行說明
+description: AEM as a Cloud Service2020.3.0版中Cloud Manager的發行說明
 feature: Release Information
 exl-id: 2ff62ba5-a657-4739-b646-1e948332bf79
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
@@ -10,13 +10,13 @@ ht-degree: 73%
 
 ---
 
-# Adobe Experience Manager as a Cloud ServiceCloud Manager發行說明2020.3.0 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.3.0中的Cloud Manager發行說明 {#release-notes}
 
-本頁概述了as a Cloud Service2020.3.0中Cloud Manager的發行說明AEM。
+本頁概述AEM 2020.3.0as a Cloud Service版中Cloud Manager的發行說明。
 
 ## 發行日期 {#release-date}
 
-Cloud Manager在as a Cloud Service中的發AEM布日期為2020年3月5日。
+AEM 2020.3.0中的Cloud Manageras a Cloud Service日期為2020年3月5日。
 
 ### 新增功能 {#what-is-new}
 
