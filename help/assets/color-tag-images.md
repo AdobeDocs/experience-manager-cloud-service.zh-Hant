@@ -1,6 +1,6 @@
 ---
 title: 影像的顏色標籤
-description: Experience Manager Assets使您能夠區分影像中的顏色，並自動將這些顏色作為標籤應用。 然後，可以使用這些標籤來搜索和篩選影像。
+description: Experience Manager Assets可讓您區分影像中的顏色，並自動套用作為標籤。 然後，您可以使用這些標籤來搜尋和篩選影像。
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
 workflow-type: tm+mt
@@ -13,44 +13,44 @@ ht-degree: 3%
 
 ![顏色標籤橫幅](assets/banner-image.png)
 
-Experience Manager Assets使用Adobe SenseiAI功能來區分影像中的顏色，並在攝取時自動將這些顏色作為標籤。 這些標籤基於影像顏色合成，支援增強的搜索體驗。
+Experience Manager Assets使用Adobe Sensei AI功能來區分影像中的顏色，並在擷取時自動將這些顏色套用為標籤。 這些標籤可根據影像色彩構成啟用增強的搜尋體驗。
 
-您可以配置標籤到影像的顏色數量，以便以後可以根據這些顏色搜索影像。 Experience Manager Assets根據影像中的顏色覆蓋率應用標籤。 也可以配置顏色標籤的顯示格式。
+您可以配置在1到40之間的範圍內被標籤到影像的顏色數，以便以後可以根據這些顏色搜索影像。 Experience Manager Assets會根據影像中的色彩涵蓋範圍套用標籤。 您也可以設定顏色標籤的顯示格式。
 
-下圖說明了在Experience Manager Assets為影像配置和管理顏色標籤時所執行的任務的順序：
+下圖說明您在Experience Manager Assets中設定和管理影像的顏色標籤時所執行的工作順序：
 
 ![顏色標記](assets/color-tagging-dfd.gif)
 
 ## 支援的檔案格式 {#supported-file-formats-color-tags}
 
-| 檔案格式 | 副檔名 | MIME類型 | 輸入顏色空間 | 支援的最大源檔案大小 | 支援的最大檔案大小解析 |
+| 檔案格式 | 副檔名 | MIME類型 | 輸入色域 | 最大支援源檔案大小 | 支援的最大檔案大小解析度 |
 |---|---|---|---|---|---|
-| JPEG | .jpg,.jpeg | image/jpeg | sRGB | 15GB | 20000px X 20000px |
+| JPEG | .jpg, .jpeg | image/jpeg | sRGB | 15GB | 20000px X 20000px |
 | PNG | .PNG | image/png | sRGB | 15GB | 20000px X 20000px |
-| TIFF | .tif, .tiff | image/tiff | sRGB | 4GB（受格式規範限制） | 20000px X 20000px |
-| PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2 GB（受格式規範限制） | 20000px X 20000px |
+| TIFF | .tif, .tiff | image/tiff | sRGB | 4GB（受格式規格限制） | 20000px X 20000px |
+| PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2GB（受格式規格限制） | 20000px X 20000px |
 | GIF | .gif | image/gif | sRGB | 15GB | 20000px X 20000px |
-| BMP | .bmp | image/bmp | sRGB | 4 GB（受格式規範限制） | 20000px X 20000px |
+| BMP | .bmp | image/bmp | sRGB | 4GB（受格式規格限制） | 20000px X 20000px |
 
 ## 管理顏色標籤屬性 {#manage-color-tagging-properties}
 
-要管理影像的顏色標籤屬性：
+要管理影像的顏色標籤屬性，請執行以下操作：
 
-1. 導航到 **[!UICONTROL 「工具」>「資產」>「顏色標籤」]**。
+1. 導覽至 **[!UICONTROL 工具>資產>顏色標籤]**.
 
    ![顏色標籤屬性](assets/color-tag-settings.png)
 
-1. 為中的顏色標籤指定顯示格式 **[!UICONTROL 顯示格式]** 的子菜單。 可能的選項包括顏色名稱、RGB或HEX格式。
+1. 指定 **[!UICONTROL 顯示格式]** 欄位。 可能的選項包括顏色名稱、RGB或HEX格式。
 
-1. 為中的影像指定要標籤的顏色數 **[!UICONTROL 限制]** 的子菜單。 當您查看影像的屬性時，這些顏色將顯示。  您可以在此欄位中定義介於1和40之間的數字。 此欄位的預設值為十種顏色。
+1. 指定要標籤的影像顏色數 **[!UICONTROL 限制]** 欄位。 當您檢視影像的屬性時，會顯示這些顏色。  您可以在此欄位中定義介於1到40之間的數字。 此欄位的預設值為10色。
 
-1. 指定最小顏色覆蓋率百分比以在搜索結果中包含顏色標籤 **[!UICONTROL 覆蓋率/優勢閾值%]** 的子菜單。 例如，如果影像中紅色的覆蓋率為10%，並且您在此欄位中定義了9%，則搜索具有紅色的影像時會包括影像。 但是，如果影像中紅色的覆蓋率為10%，而您在此欄位中定義了11%，則搜索具有紅色的影像時不會包括影像。
+1. 指定最小色彩涵蓋百分比，以在 **[!UICONTROL 覆蓋/支配閾值%]** 欄位。 例如，如果影像中紅色的覆蓋率為10%，而您在此欄位中定義了9%，則當您搜索具有紅色的影像時，將包括該影像。 但是，如果影像中紅色的覆蓋率為10%，並且您在此欄位中定義了11%，則搜索具有紅色的影像時不會包括該影像。
 
-   您可以在此欄位中指定介於5和0之間的任意數字。 預設值為11。
+   您可以在此欄位中指定介於5到00之間的任何數字。 預設值為11。
 
    >[!NOTE]
    >
-   >Adobe建議使用此欄位中接近預設值的值。 為此欄位設定高數值（例如，大於25）可能返回很少的搜索結果。 同樣，設定一個低數值（例如，小於6）可能會返回太多的搜索結果，這可能沒有用處。
+   >Adobe建議在此欄位中使用接近預設值的值。 為此欄位設定高數字值（例如，大於25）可能會傳回極少的搜尋結果。 同樣地，設定低數值（例如，小於6）可能會傳回太多搜尋結果，但這可能沒有用。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
@@ -58,19 +58,19 @@ Experience Manager Assets使用Adobe SenseiAI功能來區分影像中的顏色�
    >[!VIDEO](https://video.tv.adobe.com/v/340108)
 
 
-### 禁用顏色標籤 {#disable-color-tagging}
+### 停用顏色標籤 {#disable-color-tagging}
 
-預設情況下會啟用影像的顏色標籤。 可以在資料夾級別禁用顏色標籤。 所有子資料夾都從父資料夾繼承顏色標籤屬性。
+預設會啟用影像的色彩標籤。 您可以在資料夾層級停用顏色標籤。 所有子資料夾都會從父資料夾繼承顏色標籤屬性。
 
-要在資料夾級別禁用顏色標籤，請執行以下操作：
+要在資料夾級別禁用顏色標籤：
 
-1. 導航到 **[!UICONTROL Adobe Experience Manager>資產>檔案]**。
+1. 導覽至 **[!UICONTROL Adobe Experience Manager >資產>檔案]**.
 
-1. 選擇資料夾並按一下 **[!UICONTROL 屬性]**。
+1. 選取資料夾，然後按一下 **[!UICONTROL 屬性]**.
 
-1. 在 **[!UICONTROL 資產處理]** 頁籤，導航到 **[!UICONTROL 影像的顏色標籤]** 的子菜單。 從下拉清單中選擇以下值之一：
+1. 在 **[!UICONTROL 資產處理]** 頁簽，導航到 **[!UICONTROL 影像的顏色標籤]** 檔案夾。 從下拉式清單中選取下列其中一個值：
 
-   * 繼承 — 資料夾從父資料夾繼承啟用或禁用選項。
+   * 繼承 — 資料夾繼承父資料夾的啟用或禁用選項。
 
    * 啟用 — 為所選資料夾啟用顏色標籤。
 
@@ -78,84 +78,84 @@ Experience Manager Assets使用Adobe SenseiAI功能來區分影像中的顏色�
 
    ![顏色標籤設定](assets/color-tags-folder.png)
 
-## 配置元資料架構以添加智慧顏色標籤元件 {#configure-metadata-schema}
+## 配置元資料結構以添加智慧顏色標籤元件 {#configure-metadata-schema}
 
-元資料架構包含要填寫的特定資訊的特定欄位。 它還包含佈局資訊，以用戶友好的方式顯示元資料欄位。 元資料屬性包括標題、說明、MIME類型、標籤等。 您可以使用 [!UICONTROL 元資料架構Forms] 編輯器以修改現有架構或添加自定義元資料架構。
+中繼資料結構包含要填入之特定資訊的特定欄位。 它也包含版面資訊，以方便使用的方式顯示中繼資料欄位。 中繼資料屬性包括標題、說明、MIME類型、標籤等。 您可以使用 [!UICONTROL 中繼資料結構Forms] 編輯器來修改現有結構或新增自訂中繼資料結構。
 
 >[!NOTE]
 >
->預設元資料架構中提供了「智慧顏色標籤」欄位。 如果使用自定義元資料架構，請將架構配置為添加智慧顏色標籤欄位。
+>預設中繼資料結構中提供「智慧顏色標籤」欄位。 如果您使用自訂中繼資料結構，請設定您的結構以新增智慧顏色標籤欄位。
 
-要將智慧顏色標籤元件添加到元資料架構表單編輯器中，請執行以下操作：
+要將智慧顏色標籤元件添加到元資料結構表單編輯器中，請執行以下操作：
 
-1. 導航到 **[!UICONTROL 「工具」>「資產」>「元資料架構」]**。
+1. 導覽至 **[!UICONTROL 工具>資產>中繼資料結構]**.
 
-1. 選擇架構名稱並按一下 **[!UICONTROL 編輯]**。
+1. 選擇架構名稱，然後按一下 **[!UICONTROL 編輯]**.
 
-1. 拖動 **[!UICONTROL 智慧顏色標籤]** 從 **[!UICONTROL 生成窗體]** 頁籤 **[!UICONTROL 元資料架構窗體編輯器]**。
+1. 拖曳 **[!UICONTROL 智慧色標籤]** 從 **[!UICONTROL 建置表單]** 標籤 **[!UICONTROL 中繼資料結構表單編輯器]**.
 
-1. 按一下 **[!UICONTROL 智慧顏色標籤欄位]** 的 **[!UICONTROL 元資料架構窗體編輯器]**。
+1. 按一下 **[!UICONTROL 智慧顏色標籤欄位]** 在 **[!UICONTROL 中繼資料結構表單編輯器]**.
 
-1. 在 **[!UICONTROL 欄位標籤]** 的 **[!UICONTROL 設定]**  頁籤。
+1. 在 **[!UICONTROL 欄位標籤]** 欄位 **[!UICONTROL 設定]**  標籤。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
    >[!VIDEO](https://video.tv.adobe.com/v/340124)
 
-## DAM中現有影像的顏色標籤 {#color-tags-existing-images}
+## DAM中現有影像的色彩標籤 {#color-tags-existing-images}
 
-DAM中已有的影像不會自動進行顏色標籤。 你需要 [!UICONTROL 重新處理資產] 手動為其生成顏色標籤。
+DAM中現有的影像不會自動加上顏色標籤。 您需要 [!UICONTROL 重新處理資產] 手動產生顏色標籤。
 
-要為資產儲存庫中已存在的資產的標籤影像或資料夾（包括子資料夾）添加顏色，請執行以下步驟：
+若要為資產存放庫中已存在的資產的影像或資料夾（包括子資料夾）加色，請遵循下列步驟：
 
-1. 選擇 [!DNL Adobe Experience Manager] 標識，然後從 [!UICONTROL 導航] 的子菜單。
+1. 選取 [!DNL Adobe Experience Manager] 標誌，然後從中選取資產 [!UICONTROL 導覽] 頁面。
 
 1. 選擇 [!UICONTROL 檔案] 顯示「資產」介面。
 
-1. 導航到要應用顏色標籤的資料夾。
+1. 導覽至您要套用顏色標籤的資料夾。
 
-1. 選擇整個資料夾或特定影像。
+1. 選取整個資料夾或特定影像。
 
-1. 選擇 ![「重新處理資產」表徵圖](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 重新處理資產] 表徵圖，然後選擇 [!UICONTROL 完整流程] 的雙曲餘切值。
+1. 選擇 ![重新處理資產圖示](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 重新處理資產] 圖示並選取 [!UICONTROL 完整流程] 選項。
 
-流程完成後，導航到 [!UICONTROL 屬性] 資料夾中任何影像的頁面。 在中可看到自動添加的標籤 [!UICONTROL 智慧顏色標籤] 部分 [!UICONTROL 基本] 頁籤。
+程式完成後，導覽至 [!UICONTROL 屬性] 資料夾內任何影像的頁面。 自動新增的標籤會顯示在 [!UICONTROL 智慧色標籤] 區段 [!UICONTROL 基本] 標籤。
 
 
 ## 查看影像的智慧顏色標籤 {#view-color-tags}
 
 要查看影像的智慧顏色標籤，請執行以下操作：
 
-1. 導航到 **[!UICONTROL Adobe Experience Manager>資產>檔案]**。
+1. 導覽至 **[!UICONTROL Adobe Experience Manager >資產>檔案]**.
 
-1. 按一下相應的資料夾並選擇影像。
+1. 按一下適當的資料夾並選取影像。
 
-1. 選擇 **[!UICONTROL 屬性]** 並查看 **[!UICONTROL 智慧顏色標籤]** 的子菜單。
+1. 選擇 **[!UICONTROL 屬性]** 並檢視 **[!UICONTROL 智慧色標籤]** 欄位。
 
-   ![查看顏色標籤](assets/view-color-tags.png)
+   ![檢視顏色標籤](assets/view-color-tags.png)
 
-   將滑鼠懸停在顏色標籤上以查看 **[!UICONTROL 覆蓋率/優勢閾值%]** 的下界。
+   將滑鼠移至顏色標籤上，即可檢視 **[!UICONTROL 覆蓋/支配閾值%]** 在影像中的顏色。
 
-## 配置AEM Assets顏色謂詞 {#configure-search-predicate}
+## 設定AEM Assets色彩述詞 {#configure-search-predicate}
 
-可以配置影像的搜索篩選器。 然後，您可以根據特定顏色來篩選結果。
+您可以設定影像的搜尋篩選。 然後，您可以根據特定顏色來篩選結果。
 
 >[!NOTE]
 >
->僅在不使用預設搜索表單時配置AEM Assets顏色謂詞。
+>只有在您未使用預設搜尋表單時，才設定AEM Assets顏色述詞。
 
-要配置搜索篩選器，請使用資產管理搜索導軌建立資產顏色謂詞。
+若要設定搜尋篩選，請使用「資產管理搜尋邊欄」建立「資產顏色述詞」。
 
-配置搜索篩選器：
+要配置搜索篩選器：
 
-1. 導航到 **[!UICONTROL 工具>常規>搜索Forms]**。
+1. 導覽至 **[!UICONTROL 工具>一般>搜尋Forms]**.
 
-1. 選擇 **[!UICONTROL 資產管理搜索欄]** 按一下 **[!UICONTROL 編輯]**。
+1. 選擇 **[!UICONTROL Assets管理搜尋邊欄]** 按一下 **[!UICONTROL 編輯]**.
 
-1. 拖動 **[!UICONTROL 資產顏色謂詞]** 從 **[!UICONTROL 選擇謂詞]** 頁籤 **[!UICONTROL 搜索表單編輯器]**。
+1. 拖曳 **[!UICONTROL 資產色彩述詞]** 從 **[!UICONTROL 選擇謂詞]** 標籤 **[!UICONTROL 搜尋表單編輯器]**.
 
-1. 在 **[!UICONTROL 欄位標籤]** 的 **[!UICONTROL 設定]**  頁籤。
+1. 在 **[!UICONTROL 欄位標籤]** 欄位 **[!UICONTROL 設定]**  標籤。
 
-1. 按一下 **[!UICONTROL 完成]** 按鈕。
+1. 按一下 **[!UICONTROL 完成]** 以儲存設定。
 
    >[!VIDEO](https://video.tv.adobe.com/v/340110)
 
@@ -163,21 +163,21 @@ DAM中已有的影像不會自動進行顏色標籤。 你需要 [!UICONTROL 重
 
 >[!VIDEO](https://video.tv.adobe.com/v/340761)
 
-配置所有顏色標籤屬性和 [配置資產顏色謂詞](#search-images-based-on-colors)，可以根據顏色作為濾鏡搜索影像。
+配置所有顏色標籤屬性後， [設定資產色彩述詞](#search-images-based-on-colors)，您可以根據顏色作為篩選條件來搜尋影像。
 
-要根據顏色搜索影像：
+要根據顏色搜索影像，請執行以下操作：
 
-1. 導航到 **[!UICONTROL 資產>檔案]**。
+1. 導覽至 **[!UICONTROL 資產>檔案]**.
 
-1. 選擇 **[!UICONTROL 篩選]** 清單中。
+1. 選擇 **[!UICONTROL 篩選]** 從下拉式清單。
    ![篩選資產](assets/filter-assets.png)
 
-1. 選擇 [AEM Assets色謂語](#configure-search-predicate)。
+1. 選取 [AEM Assets色彩述詞](#configure-search-predicate).
 
-1. 拖動顏色選取器以選擇適當的顏色。 所選顏色顯示在顏色選取器下方的只讀欄位中。 可以選擇RGB或十六進位作為顏色的顯示格式。
+1. 拖曳檢色器以選取適當的顏色。 所選顏色顯示在檢色器下方的唯讀欄位中。 您可以選取RGB或十六進位作為顏色的顯示格式。
 
    ![檢色器](assets/color-picker-color-tags.png)
 
-   可以根據選擇的一種顏色來過濾影像。 將選定顏色作為智慧顏色標籤之一且位於 [覆蓋/佔優閾值%](#manage-color-tagging-settings) 顯示。
+   您可以根據選取的一種顏色來篩選影像。 將所選顏色作為智慧顏色標籤之一且位於 [覆蓋/支配閾值%](#manage-color-tagging-settings) 顯示在右窗格中。
 
-1. 在「搜索」欄中按一下x以清除篩選器。
+1. 按一下搜尋列中的x以清除篩選器。
