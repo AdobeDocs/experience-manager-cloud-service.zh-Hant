@@ -1,6 +1,6 @@
 ---
-title: AdobeApp Builder的Developer控制台
-description: 瞭解AdobeDeveloper Console和App Builder項目。
+title: Adobe Developer Console for App Builder
+description: 了解Adobe Developer Console和App Builder專案。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -16,32 +16,32 @@ ht-degree: 0%
 
 ---
 
-# AdobeApp Builder的Developer控制台
+# Adobe Developer Console for App Builder
 
 >[!IMPORTANT]
 >
-> _AdobeProject Firefly（如本系列視頻中所述）現在被命名為App Builder_
+> _AdobeProject Firefly（如本系列影片所述）現在更名為App Builder_
 
-## Adobe開發人員控制台入門
+## 開始使用Adobe Developer Console
 
-瞭解Adobe開發人員控制台是什麼，以及如何訪問和導航它。
+了解Adobe Developer Console的功能，以及如何存取和導覽。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
 
-## 使用項目和模板
+## 使用專案和範本
 
-瞭解如何使用Adobe開發人員控制台的App Builder模板建立App Builder項目。
+了解如何使用Adobe Developer Console的App Builder範本建立App Builder專案。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339163/?quality=12&learn=on)
 
-## 項目憑據
+## 專案憑證
 
-瞭解如何在Adobe開發人員控制台的憑據菜單和批准過程中使用選項。
+了解如何使用Adobe Developer Console的認證功能表和核准程式中的選項。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339164/?quality=12&learn=on)
 
-## 見解和配額使用情況
+## 分析和配額使用
 
-瞭解App Builder應用程式洞察力和配額使用情況。
+了解App Builder應用程式分析和配額使用情況。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339165/?quality=12&learn=on)
