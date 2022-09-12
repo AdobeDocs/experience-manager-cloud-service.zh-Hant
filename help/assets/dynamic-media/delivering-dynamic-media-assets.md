@@ -1,6 +1,6 @@
 ---
-title: 交付Dynamic Media資產
-description: 瞭解如何交付Dynamic Media資產。
+title: 傳送Dynamic Media Assets
+description: 了解如何傳送Dynamic Media資產。
 feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
@@ -11,37 +11,37 @@ ht-degree: 0%
 
 ---
 
-# 交付Dynamic Media資產{#delivering-dynamic-media-assets}
+# 傳送Dynamic Media Assets{#delivering-dynamic-media-assets}
 
-您如何交付您的Dynamic Media資產 — 包括視頻和影像 — 取決於您網站的實施方式。
+如何傳送Dynamic Media資產（包括視訊和影像）取決於網站的實作方式。
 
-對於Dynamic Media，你有幾種選擇：
+有了Dynamic Media，您有數個選項：
 
-* 如果您的網站位於Adobe Experience Manager，則您希望將Dynamic Media資產直接添加到您的頁面。
-* 如果您的網站未Experience Manager，則您可以選擇：
+* 如果您的網站托管於Adobe Experience Manager，則您想要直接將Dynamic Media資產新增至頁面。
+* 如果您的網站未Experience Manager，您可以選擇：
 
-   * 將視頻或影像嵌入到您的網站。
-   * 將URL連結到Web應用程式。 當要將視頻播放器作為彈出窗口或模式窗口傳送時，請使用連結。
-   * 如果您的站點響應迅速，您可以 [提供優化的映像](/help/assets/dynamic-media/responsive-site.md)。
+   * 將您的視訊或影像嵌入網站。
+   * 將URL連結至您的Web應用程式。 當您想要以快顯視窗或強制回應視窗的形式傳送視訊播放器時，請使用連結。
+   * 如果您的網站回應式，您可以 [傳遞最佳化的影像](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->智慧成像可與現有影像預設配合使用。 它使用在傳送的最後一毫秒時的智慧，根據瀏覽器或網路連接速度進一步減小影像檔案大小。 請參閱 [智慧映像](/help/assets/dynamic-media/imaging-faq.md) 的子菜單。
+>智慧型影像處理可與您現有的影像預設集搭配使用。 它會在傳送的最後毫秒使用智慧，根據瀏覽器或網路連線速度進一步縮小影像檔案大小。 請參閱 [智慧型影像](/help/assets/dynamic-media/imaging-faq.md) 以取得更多資訊。
 
-有關詳細資訊，請參閱以下主題：
+如需詳細資訊，請參閱下列主題：
 
-* [將Dynamic Media資產添加到網頁](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-* [將視頻或影像查看器嵌入網頁](/help/assets/dynamic-media/embed-code.md)
-* [在Dynamic Media激活熱鏈路保護](/help/assets/dynamic-media/hotlink-protection.md)
-* [將URL連結到Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-* [為響應性站點提供優化的映像](/help/assets/dynamic-media/responsive-site.md)
-* [HTTP2內容傳遞](/help/assets/dynamic-media/http2faq.md)
-* [通過Dynamic Media使CDN快取無效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [通過Dynamic Media Classic使CDN快取無效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+* [將Dynamic Media Assets新增至網頁](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [將視訊或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)
+* [在Dynamic Media中啟用快速連結保護](/help/assets/dynamic-media/hotlink-protection.md)
+* [將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+* [為回應式網站提供最佳化的影像](/help/assets/dynamic-media/responsive-site.md)
+* [HTTP2內容傳送](/help/assets/dynamic-media/http2faq.md)
+* [透過Dynamic Media使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [透過Dynamic Media Classic使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [使用規則集轉換URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
-## HTTP/2交付Dynamic Media資產 {#http-delivery-of-dynamic-media-assets}
+## HTTP/2傳送Dynamic Media資產 {#http-delivery-of-dynamic-media-assets}
 
-Experience Manager現在支援通過HTTP/2傳遞所有Dynamic Media內容（影像和視頻）。 即，可將影像或視頻的已發佈URL或嵌入代碼與接受託管資產的任何應用程式整合。 然後，該已發佈資產將通過HTTP/2協定交付。 這種傳送方法改進了瀏覽器和伺服器之間的通信方式，使您的所有Dynamic Media資產都能得到更好的響應和載入時間。
+Experience Manager現在支援透過HTTP/2傳送所有Dynamic Media內容（影像和影片）。 也就是說，影像或視訊的已發佈URL或內嵌程式碼可與接受託管資產的任何應用程式整合。 然後會透過HTTP/2通訊協定來傳送已發佈的資產。 此傳遞方法可改善瀏覽器和伺服器通訊的方式，讓所有Dynamic Media資產的回應和載入時間都更佳。
 
-要瞭解更多資訊，請參閱 [HTTP/2內容傳遞常見問題](/help/assets/dynamic-media/http2faq.md)。
+若要進一步了解，請參閱 [HTTP/2傳送內容常見問題](/help/assets/dynamic-media/http2faq.md).
