@@ -1,6 +1,6 @@
 ---
 title: 功能測試
-description: 瞭解as a Cloud Service部署流程中內置的三種不同類型的功能測AEM試，以確保代碼的質量和可靠性。
+description: 了解AEMas a Cloud Service部署程式中內建的三種不同功能測試類型，以確保程式碼的品質和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: f8d5b94d176dfbd5bcecf552f974dc77c5afe4e2
 workflow-type: tm+mt
@@ -15,51 +15,51 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="功能測試"
->abstract="瞭解as a Cloud Service部署流程中內置的三種不同類型的功能測AEM試，以確保代碼的質量和可靠性。"
+>abstract="了解AEMas a Cloud Service部署程式中內建的三種不同功能測試類型，以確保程式碼的品質和可靠性。"
 
-瞭解內置於 [AEMas a Cloud Service部署](/help/implementing/cloud-manager/deploy-code.md) 確保代碼的質量和可靠性。
+了解內建在 [AEMas a Cloud Service部署程式](/help/implementing/cloud-manager/deploy-code.md) 以確保程式碼的品質和可靠性。
 
-## 概覽 {#overview}
+## 總覽 {#overview}
 
-在as a Cloud Service中有三種不同的功能測試AEM。
+AEMas a Cloud Service中有三種不同的功能測試類型。
 
 * [產品功能測試](#product-functional-testing)
-* [自定義功能測試](#custom-functional-testing)
-* [自定義UI測試](#custom-ui-testing)
+* [自訂功能測試](#custom-functional-testing)
+* [自訂UI測試](#custom-ui-testing)
 
-對於所有功能test，可以將test的詳細結果下載為 `.zip` 檔案 **下載生成日誌** 按鈕 [部署過程。](/help/implementing/cloud-manager/deploy-code.md)
+對於所有功能測試，測試的詳細結果可下載為 `.zip` 檔案，使用 **下載組建記錄** 「建置概述」畫面中的按鈕，作為 [部署程式。](/help/implementing/cloud-manager/deploy-code.md)
 
-這些日誌不包括實際運行時進AEM程的日誌。 要訪問這些日誌，請參閱文檔 [訪問和管理日誌](/help/implementing/cloud-manager/manage-logs.md) 的子菜單。
+這些記錄檔不包含實際AEM執行階段程式的記錄檔。 要訪問這些日誌，請參閱文檔 [存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md) 以取得更多詳細資訊。
 
-產品功能test和示例自定義功能test均基於 [正在AEM測試客戶端。](https://github.com/adobe/aem-testing-clients)
+產品功能測試和自訂功能測試範例都以 [AEM測試用戶端。](https://github.com/adobe/aem-testing-clients)
 
 ## 產品功能測試 {#product-functional-testing}
 
-產品功能test是一組穩定的HTTP整合test(IT)，它們是創作和複製任務AEM中的核心功能。 這些test由Adobe維護，旨在防止在自定義應用程式碼中斷核心功能時部署更改。
+產品功能測試是AEM中核心功能（例如製作和復寫工作）的一組穩定HTTP整合測試(IT)。 這些測試由Adobe維護，目的是防止在自訂應用程式程式碼中斷核心功能時，部署變更。
 
-產品功能test在將新代碼部署到雲管理器時自動運行，無法跳過。
+每當您將新程式碼部署至Cloud Manager且無法略過時，產品功能測試就會自動執行。
 
-產品功能test作為開源項目進行維護。 請參閱 [產品功能test](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 在GitHub中獲取詳細資訊。
+產品功能測試會保留為開放原始碼專案。 請參閱 [產品功能測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 以取得詳細資訊。
 
-## 自定義功能測試 {#custom-functional-testing}
+## 自訂功能測試 {#custom-functional-testing}
 
-雖然產品功能測試由Adobe定義，但您可以為自己的應用程式編寫自己的質量測試。 此操作將作為生產流水線的一部分執行，以確保應用程式的質量。
+雖然產品功能測試由Adobe定義，但您可以為自己的應用程式編寫自己的品質測試。 這會作為生產管道的一部分，以自訂功能測試的形式執行，以確保應用程式的品質。
 
-自定義功能測試既針對自定義代碼部署也針對推式升級執行，這對於編寫良好的功能test來防止代碼更改破壞您的AEM應用程式碼尤為重要。 自定義功能測試步驟始終存在，無法跳過。
+自訂功能測試會同時針對自訂程式碼部署和推送升級執行，因此撰寫良好的功能測試來防止AEM程式碼變更破壞您的應用程式程式碼，尤其重要。 自訂功能測試步驟一律存在，且無法略過。
 
-### 編寫自定義功能Test {#writing-functional-tests}
+### 撰寫自訂功能測試 {#writing-functional-tests}
 
-Adobe用於編寫產品功能test的工具可用於編寫自定義功能test。 使用 [產品功能test](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 在GitHub中，作為如何編寫test的示例。
+Adobe用來編寫產品功能測試的工具，可用來編寫自訂功能測試。 使用 [產品功能測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 以示如何撰寫測試的範例。
 
-自定義功能test的代碼是位於 `it.tests` 資料夾。 它應生成具有所有功能test的單個JAR。 如果生成多個testJAR，則選擇的JAR不是確定性的。 如果它產生零testJAR，則預設情況下test步驟會通過。 [查看項AEM目原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) 示例test。
+自訂功能測試的程式碼為位於 `it.tests` 檔案夾。 它應生成包含所有功能測試的單個JAR。 如果生成多個測試JAR，則選定的JAR不是確定性的。 如果它產生零個測試JAR，則測試步驟預設會通過。 [請參閱AEM專案原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) 以取得範例測試。
 
-該test在Adobe維護的測試基礎設施上執行，該測試基礎設施包括至少兩個作者實例、兩個發佈實例和調度器配置。 這意味著您的自定義功能test針對整個堆棧AEM運行。
+這些測試會在Adobe維護的測試基礎架構上執行，其中至少包含兩個製作例項、兩個發佈例項和一個Dispatcher設定。 這表示您的自訂功能測試會針對整個AEM堆疊執行。
 
-自定義功能test必須打包為由與要部署到的對象相同的Maven內部版本生成的單獨JAR文AEM件。 通常，這是一個單獨的Maven模組。 生成的JAR檔案必須包含所有必需的依賴關係，並且通常使用 `maven-assembly-plugin` 使用 `jar-with-dependencies` 描述符。
+自訂功能測試必須封裝為由要部署至AEM的成品所產生的個別JAR檔案。 一般而言，這會是個別的Maven模組。 產生的JAR檔案必須包含所有必要的相依性，且通常會使用 `maven-assembly-plugin` 使用 `jar-with-dependencies` 描述符。
 
-此外，JAR必須 `Cloud-Manager-TestType` 將清單頭設定為 `integration-test`。
+此外，JAR必須具有 `Cloud-Manager-TestType` 資訊清單標題設為 `integration-test`.
 
-以下是 `maven-assembly-plugin`。
+以下是 `maven-assembly-plugin`.
 
 ```java
 <build>
@@ -92,33 +92,33 @@ Adobe用於編寫產品功能test的工具可用於編寫自定義功能test。 
     </plugins>
 ```
 
-在此JAR檔案中，要執行的實際test的類名必須以 `IT`。
+在此JAR檔案中，要執行的實際測試的類名必須以結尾 `IT`.
 
-例如，名為 `com.myco.tests.aem.it.ExampleIT` 將被執行，但是一個 `com.myco.tests.aem.it.ExampleTest` 不會的。
+例如，名為 `com.myco.tests.aem.it.ExampleIT` 會被執行，但是一個 `com.myco.tests.aem.it.ExampleTest` 不會。
 
-此外，要從代碼掃描的覆蓋率檢查中排除test代碼，test代碼必須位於名為 `it` (覆蓋範圍排除篩選器為 `**/it/**/*.java`)。
+此外，要將測試代碼排除在代碼掃描的覆蓋檢查之外，測試代碼必須位於名為的包的下方 `it` (涵蓋範圍排除篩選器為 `**/it/**/*.java`)。
 
-test類必須是普通JUnittest。 test基礎架構設計並配置為與 `aem-testing-clients` test庫。 強烈鼓勵開發人員使用此庫並遵循其最佳做法。
+測試類需要是正常的JUnit測試。 測試基礎架構經過設計並配置以與 `aem-testing-clients` 測試程式庫。 強烈建議開發人員使用此程式庫並遵循其最佳實務。
 
-請參閱 [`aem-testing-clients` GitHub回購](https://github.com/adobe/aem-testing-clients) 的子菜單。
+請參閱 [`aem-testing-clients` GitHub存放庫](https://github.com/adobe/aem-testing-clients) 以取得更多詳細資訊。
 
 >[!TIP]
 >
->[觀看此視頻](https://www.youtube.com/watch?v=yJX6r3xRLHU) 關於如何使用自定義功能test來提高您對CI/CD管道的信心。
+>[觀看此視頻](https://www.youtube.com/watch?v=yJX6r3xRLHU) 關於如何使用自訂功能測試來提升您對CI/CD管道的信心。
 
-## 自定義UI測試 {#custom-ui-testing}
+## 自訂UI測試 {#custom-ui-testing}
 
-自定義UI測試是一項可選功能，使您能夠建立並自動運行應用程式的UItest。 UItest是基於Selenium的test，打包在Docker映像中，以允許在語言和框架（如Java和Maven、Node和WebDriver.io，或基於Selenium構建的任何其它框架和技術）中進行廣泛選擇。
+自訂UI測試是選用功能，可讓您建立並自動執行應用程式的UI測試。 UI測試是封裝在Docker影像中的基於硒的測試，以允許在語言和框架（如Java和Maven、Node和WebDriver.io，或基於Selenium構建的任何其他框架和技術）中進行廣泛選擇。
 
-請參閱文檔 [自定義UI測試](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) 的子菜單。
+請參閱該文檔 [自訂UI測試](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) 以取得更多資訊。
 
-## 本地Test執行 {#local-test-execution}
+## 本地測試執行 {#local-test-execution}
 
-因為test類是JUnittest，所以它們可以從主流Java IDE（如Eclipse、IntelliJ、NetBeans等）中運行。 由於產品功能test和定制功能test都基於相同的技術，因此，通過將產品test複製到您的定製test中，都可以在本地運行。
+由於測試類是JUnit測試，因此可以從主流Java IDE（如Eclipse、IntelliJ、NetBeans等）運行。 由於產品功能測試和自訂功能測試都以相同技術為基礎，因此可將產品測試複製到您的自訂測試，以便在本機執行。
 
-但是，在運行這些test時，需要設定 `aem-testing-clients` （和基礎Sling測試客戶端）庫。
+不過，執行這些測試時，必須設定 `aem-testing-clients` （和基礎的Sling Testing Clients）程式庫。
 
-系統屬性如下所示。
+系統屬性如下。
 
 * `sling.it.instances - should be set to 2`
 * `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
