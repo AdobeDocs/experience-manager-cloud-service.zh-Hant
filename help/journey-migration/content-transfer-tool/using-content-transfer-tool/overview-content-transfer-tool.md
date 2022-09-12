@@ -9,13 +9,13 @@ ht-degree: 43%
 
 ---
 
-# 概觀 {#overview-content-transfer-tool}
+# 總覽 {#overview-content-transfer-tool}
 
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
->title="概觀"
->abstract="內容傳輸工具是Adobe開發的工具，可用於將現有內容從源實例AEM（本地或AMS）移到目標AEM Cloud Service實例。 此工具也會自動轉移主體 (使用者或群組)。"
+>title="總覽"
+>abstract="「內容轉移工具」是由Adobe開發的工具，可用來將現有內容從來源AEM例項（內部部署或AMS）移至目標AEM Cloud Service例項。 此工具也會自動轉移主體 (使用者或群組)。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="准則與最佳作法"
 
 <!-- Alexandru: Old version of contextual help, keep for failover/debugging
@@ -30,19 +30,19 @@ ht-degree: 43%
 
 此工具也會自動轉移主體 (使用者或群組)。
 
-新版內容傳輸工具可將內容傳輸過程與Cloud Acceleration Manager整合。 強烈建議切換到此新版本，以利用它提供的所有好處：
+新版「內容轉移工具」已推出，其整合了內容轉移程式與Cloud Acceleration Manager。 強烈建議您切換至此新版本，以充分運用其提供的所有優點：
 
-* 自助式方法，一次提取遷移集並將其並行接收到多個環境中
-* 通過更好的載入狀態、護欄和錯誤處理改進用戶體驗
-* 攝取日誌被保留，並始終可用於排除故障
+* 自助式方式，只需擷取一次移轉集，並同時內嵌至多個環境
+* 透過更好的載入狀態、護欄和錯誤處理改善使用者體驗
+* 擷取記錄會持續存在，且一律可用於疑難排解
 
-開始使用新版本(v2.0.10) <!-- update when version is available --> 您需要卸載舊版本的內容傳輸工具，因為該工具中發生了重大體系結構更改。
+若要開始使用新版本(v2.0.10) <!-- update when version is available --> 您需要解除安裝舊版「內容轉移工具」，因為工具的架構有重大變更。
 
 >[!NOTE]
 >
-> 對於已在進行遷移的情況，您可以繼續使用CTT的以前版本，直到遷移完成。 有關與CTT的上一版本相關的文檔，請參閱 [舊文檔](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)。
+> 若移轉作業已在進行中，您可以繼續使用舊版CTT，直到移轉完成為止。 如需與舊版CTT相關的檔案，請參閱 [舊版檔案](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
 
-## 內容傳輸工具中的階段 {#phases-content-transfer-tool}
+## 內容轉移工具中的階段 {#phases-content-transfer-tool}
 
 有兩個階段與內容轉移相關聯：
 
@@ -51,17 +51,17 @@ ht-degree: 43%
    如需詳細資訊，請參考[內容轉移中的提取程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html)。
 
    >[!NOTE]
-   > 建議在抽取階段運行用戶映射工具。 請參閱 [使用用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html) 的子菜單。
+   > 建議在提取階段中執行使用者對應工具。 請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html) 以取得更多詳細資訊。
 
 1. **擷取**：擷取指的是從&#x200B;*移轉集*&#x200B;擷取內容，並存放至目標雲端服務例項。
 
-   請參閱 [內容傳輸中的攝取過程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html) 的子菜單。
+   請參閱 [內容轉移中的擷取程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html) 以取得更多詳細資訊。
 
-## 遷移集的屬性 {#attributes-migration-set}
+## 移轉集的屬性 {#attributes-migration-set}
 
 移轉集有下列屬性：
 
-* 使用新版本，您可以在在Cloud Acceleration Manager中建立的項目中最多建立五個遷移集。
+* 透過新版本，您可以在Cloud Acceleration Manager中建立的專案中，最多建立5個移轉集。
 * 每個移轉集的名稱必須是唯一的。
 
 「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。
@@ -75,4 +75,4 @@ ht-degree: 43%
 
 ## 下一步 {#whats-next}
 
-瞭解內容傳輸工具及其描述此工具的概述後，您就可以將現有內容從源實例AEM（本地或AMS）移到目標AEM Cloud Service實例，您必須查看 [內容傳輸工具的先決條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en)。
+了解「內容轉移工具」及其概觀（說明此工具）後，您就必須檢閱，才能將現有內容從來源AEM例項（內部部署或AMS）移至目標AEM Cloud Service例項 [內容轉移工具的必要條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
