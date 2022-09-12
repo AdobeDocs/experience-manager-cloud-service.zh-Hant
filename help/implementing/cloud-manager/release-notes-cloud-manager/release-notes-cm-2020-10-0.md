@@ -1,6 +1,6 @@
 ---
-title: Cloud Manager在as a Cloud Service版AEM2020.10.0中的發行說明
-description: Cloud Manager在as a Cloud Service版AEM2020.10.0中的發行說明
+title: AEMas a Cloud Service版2020.10.0中的Cloud Manager發行說明
+description: AEMas a Cloud Service版2020.10.0中的Cloud Manager發行說明
 feature: Release Information
 exl-id: 129d0dd8-3d6e-4cf0-b42e-5526f5cf0836
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
@@ -10,28 +10,28 @@ ht-degree: 48%
 
 ---
 
-# Adobe Experience Manager as a Cloud ServiceCloud Manager發行說明2020.10.0 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.10.0中的Cloud Manager發行說明 {#release-notes}
 
-本頁概述了as a Cloud Service2020.10.0中Cloud Manager的發行說明AEM。
+本頁概述AEM 2020.10.0中Cloud Manager的發行說明。
 
 ## 發行日期 {#release-date}
 
-Cloud Manager在as a Cloud Service中的AEM發佈日期為2020年10月1日。
+AEMas a Cloud Service的Cloud Manager發行日期為2020.10.0年10月1日。
 
 ## Cloud Manager {#cloud-manager}
 
 ### 新增功能 {#what-is-new}
 
-* 「環境」頁面已重新設計。
+* 環境頁面已重新設計。
 
 * 休眠環境現在會在 Cloud Manager 休眠時顯示分離狀態。
 
-* Cloud Manager生成容器現在支援使用Java 8或Java 11編譯項目。 Maven工具鏈系統提供對Java 11的支援。
+* Cloud Manager建置容器現在支援使用Java 8或Java 11來編譯專案。 Maven工具鏈系統支援Java 11。
 
 * 每個環境的環境變數數量提高至 200 個。
 
-* 「概述」(Overview)頁面上的「環境」(Environment)卡現在最多將列出三個環境。 用戶可以選擇 **全部顯示** 按鈕，來查看包含完整環境清單的表。
-請參閱 [查看環境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 的子菜單。
+* 「概述」頁面上的「環境」卡片現在會列出最多三個環境。 使用者可以選取 **全部顯示** 按鈕，導覽至「環境摘要」頁面，以檢視包含完整環境清單的表格。
+請參閱 [檢視環境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 以取得更多詳細資訊。
 
 
 ### 錯誤修正 {#bug-fixes-cloud-manager}
@@ -40,7 +40,7 @@ Cloud Manager在as a Cloud Service中的AEM發佈日期為2020年10月1日。
 
 * 直接從 Cloud Manager 連結至開發人員控制台時，系統未顯示將沙箱方案的環境解除休眠/休眠的選項。
 
-* 「非生產管道編輯」(Non-Production Pipeline Edit)頁面上的「取消」(Cancel)和「保存」(Save)按鈕並不總是可見。
+* 非生產管道編輯頁面上的取消和儲存按鈕不一定會顯示。
 
 * 程式碼品質處理程序的某些失敗作業可能導致系統無法正確產生記錄檔。
 
