@@ -1,56 +1,56 @@
 ---
 title: AEMas a Cloud Service術語
-description: 在登錄AEMaaCS之前，瞭解系統的一些術語及其基本結構會有所幫助。
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+description: 登入AEMaaCS之前，請先了解系統的一些術語及其基本結構，這是很有幫助的。
+exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
 
 ---
 
-
 # AEMas a Cloud Service術語 {#terminology}
 
-在 [登機之旅，](overview.md) 您將學習一些as a Cloud Service的術AEM語和基本結構。
+在 [入門旅程，](overview.md) 您將學習AEM as a Cloud Service的一些術語及其基本結構。
 
 ## 目標 {#objective}
 
-現在，您通過閱讀文檔瞭解了導致登機過程的原因 [準備，](preparation.md) 在登錄前，瞭解系統的一些術語及其基本結構是有幫助的。
+現在，您已了解導致上線程式的原因，請閱讀檔案 [入門準備，](preparation.md) 在登錄前，先了解系統的一些術語及其基本結構，這是很有幫助的。
 
-AEMas a Cloud Service是一種功能強大、靈活的工具，使用任何工具時，您都應熟悉它的組織以及描述它所使用的術語和語言。 本文檔總結了在開始使用系統之前需要瞭解的一些關鍵術語。
+AEM as a Cloud Service是功能強大且有彈性的工具，可讓您使用您應熟悉其組織以及用來說明的術語和語言的任何工具。 本檔案概述開始使用系統之前需要了解的一些重要術語。
 
-閱讀完此文檔後，您將瞭解：
+閱讀本檔案後，您將了解：
 
 * 組成AEMaaCS的不同層。
-* 每個層的基本功能。
+* 每個圖層功能的基本概念。
 
-## AEMaaCS結構 {#structure}
+## AEMaCS結構 {#structure}
 
-在登機旅程中，不必完全理解AEMas a Cloud Service的結構。 但熟悉以下概念會讓在旅途的後期更容易跟進。
+就本入門歷程而言，您不需要完全了解AEM as a Cloud Service的結構。 但熟悉下列概念後，在歷程的後續步驟將更為容易。
 
-![雲管理器結構](/help/journey-sites/quick-site/assets/cloud-manager-structure.png)
+![Cloud Manager結構](/help/journey-sites/quick-site/assets/cloud-manager-structure.png)
 
-* **租戶**  — 每個客戶都有租戶。 租戶也稱為IMS組織（本次旅程稍後更涉及IMS）
-* **程式。**  — 每個租戶都有一個或多個計畫，這些計畫通常反映客戶的許可解決方案。
-* **環境**  — 每個計畫都有多個環境，例如為即時內容製作、一個用於試運行，一個用於開發。
-* **儲存庫**  — 這些環境具有一個或多個Git儲存庫，其中維護了應用程式和前端代碼。
-* **工具和工作流**  — 管道管理從儲存庫到環境的代碼部署。
+* **租用戶**  — 每個客戶都布建了租用戶。 租用戶也稱為IMS組織（稍後此歷程會在IMS上提供更多資訊）
+* **計畫。**  — 每個租戶都有一個或多個程式，這些程式通常反映客戶的授權解決方案。
+* **環境**  — 每個方案有多個環境，例如針對即時內容的生產、一個用於測試，以及一個用於開發用途。
+* **存放庫**  — 環境擁有一或多個Git存放庫，可維護應用程式和前端程式碼。
+* **工具與工作流程**  — 管道管理從儲存庫到環境的代碼部署。
 
-一個示例通常有助於將此層次結構置於背景中。
+範例通常有助於將此階層與情境結合。
 
-* WKND旅行和冒險企業可能是 **租戶** 以旅行相關媒體為主。
-* WKND旅遊和冒險企業租戶可能有兩個 **方案**:
-   * WKND雜誌部門的一個網站方案
-   * WKND媒體部門的&quot;一項資產&quot;方案
-* WKND雜誌和WKND媒體項目都將進行開發、準備和製作 **環境**。
+* WKND Travel and Adventure Enterprises可能是 **用戶** 以旅行相關媒體為主。
+* WKND Travel and Adventure Enterprises租戶可能有兩個 **方案**:
+   * WKND雜誌部的One Sites計畫
+   * WKND媒體部一項資產計畫
+* 《WKND雜誌》和《WKND Media》節目都有開發、測試和生產 **環境**.
 * **儲存庫** 用於維護WKND雜誌和WKND媒體的自定義代碼和應用程式。
-* 各種 **工具和工作流** 在repo中使用CI/CD管道、訪問日誌、訪問等部AEM署代碼。
+* 各種 **工具和工作流程** 跨存放區使用CI/CD管道、存取記錄、存取AEM等來部署程式碼。
 
-## 下一步是什麼 {#what-is-next}
+## 下一步 {#what-is-next}
 
-現在，您已完成登機旅AEM程的這一部分，您應該明白：
+現在您已完成AEM入門歷程的這一部分，請您了解：
 
 * 組成AEMaaCS的不同層。
-* 每個層的基本功能。
+* 每個圖層功能的基本概念。
 
-在此知識的基礎上再接再厲，AEM繼續您的登機之旅，繼續閱讀文檔 [訪問Admin Console](admin-console.md)中，您將學習如何訪問控制台並以系統管理員的身份驗證您的狀態。
+借由下次閱讀檔案，繼續您的AEM入門歷程 [存取Admin Console](admin-console.md)，您將在此了解如何存取主控台，以及以系統管理員的身分驗證您的狀態。
