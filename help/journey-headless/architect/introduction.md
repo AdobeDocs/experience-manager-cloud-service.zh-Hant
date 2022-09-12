@@ -1,6 +1,6 @@
 ---
-title: 作為無AEM頭CMS的內容建模 — 簡介
-description: 介紹使用Adobe Experience Manager as a Cloud Service的功能作為無頭CMS來為項目的內容建模。
+title: AEM as a Headless CMS的內容模型 — 簡介
+description: 介紹如何使用Adobe Experience Manager as a Cloud Service as a Headless CMS的功能來為您的專案建立內容模型。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
@@ -9,75 +9,75 @@ ht-degree: 0%
 
 ---
 
-# 作為無AEM頭CMS的內容建模 — 簡介 {#architect-headless-introduction}
+# AEM as a Headless CMS的內容模型 — 簡介 {#architect-headless-introduction}
 
-在 [無AEM頭內容架構師旅程](overview.md)，您可以學習在將Adobe Experience Manager()as a Cloud Service用作無頭CMS時理解內容建模所必AEM要的（基本）概念和術語。
+在 [AEM無頭式內容架構者歷程](overview.md)，您可以了解使用Adobe Experience Manager(AEM)as a Cloud Service做為無頭式CMS時，了解內容模型所需的（基本）概念和術語。
 
-本文檔幫助您瞭解無頭內容的交付、AEM如何支援無頭內容以及如何為無頭內容建模。 閱讀完後，您應：
+本檔案可協助您了解無頭式內容傳送、AEM如何支援無頭式內容，以及如何針對無頭式內容建立內容模型。 閱讀後，您應：
 
-* 瞭解無頭內容交付的基本概念。
-* 熟悉如何支AEM持無頭和內容建模。
+* 了解無頭式內容傳送的基本概念。
+* 請熟悉AEM如何支援無頭和內容模型。
 
 ## 目標 {#objective}
 
-* **觀眾**:初學者
+* **對象**:入門者
 * **目標**:介紹與無頭內容建模相關的概念和術語。
 
-## 完整堆棧內容交付 {#full-stack}
+## 完整堆疊內容傳送 {#full-stack}
 
-自從易於使用的大規模內容管理系統(CMS)興起以來，各公司一直利用它們作為管理消息傳遞、品牌推廣和通信的中心位置。 將CMS用作管理經驗的中心點，通過消除在不同系統中重複任務的需要而提高了效率。
+自易用、大規模的內容管理系統(CMS)興起以來，企業一直將它們作為管理報文傳送、品牌推廣和通信的中心位置。 將CMS作為管理體驗的中心點，可消除在不同系統中複製任務的需求，進而提高效率。
 
-![經典的全堆棧CMS](/help/journey-headless/developer/assets/full-stack.png)
+![傳統的全堆棧CMS。](/help/journey-headless/developer/assets/full-stack.png)
 
-在全棧CMS中，用於處理內容的所有功能都在CMS中。 系統的功能構成了CMS堆棧的不同元件。 全棧解決方案具有許多優點。
+在全堆棧CMS中，用於操作內容的所有功能都在CMS中。 系統的功能構成了CMS堆棧的不同元件。 該全棧解決方案具有許多優點。
 
 * 有一個系統要維護。
-* 內容集中管理。
-* 系統的所有服務都是整合的。
-* 內容創作是無縫的。
+* 內容是集中管理的。
+* 系統的所有服務均已整合。
+* 內容製作順暢。
 
-因此，如果需要添加新的通道或需要支援新類型的體驗，則可以將一個（或多個）新元件插入堆棧中，並且只有一個位置可以進行更改。
+因此，如果需要新增管道或需要支援新體驗類型，可以將一（或多個）新元件插入堆疊中，而且只有一個位置可進行變更。
 
-![向堆棧添加新通道](/help/journey-headless/developer/assets/adding-channel.png)
+![將新通道新增至堆疊](/help/journey-headless/developer/assets/adding-channel.png)
 
-但是，堆棧內依賴項的複雜性很快變得明顯，因為堆棧中的其他項需要調整以適應更改。
+但是，由於堆棧中的其他項目需要調整以適應更改，因此堆棧內的依賴項的複雜性很快變得明顯。
 
-## 《無頭》 {#the-head}
+## 無頭的頭 {#the-head}
 
-任何系統的頭通常是該系統的輸出呈現器，通常以GUI或其他圖形輸出的形式。
+任何系統的頭通常是該系統的輸出渲染器，通常以GUI或其它圖形輸出的形式。
 
-當我們討論無頭CMS時， CMS會管理內容，並繼續將其提供給消費者。 但是，只通過 **內容** 無頭CMS以標準化方式忽略最終輸出渲染， **演示** 內容到消費服務。
+當我們討論無頭式CMS時， CMS會管理內容並繼續將內容提供給消費者。 不過，若只傳送 **內容** 無頭式CMS以標準化的方式省略了最終輸出呈現，而 **簡報** 內容到消費服務。
 
-![無頭CMS](/help/journey-headless/developer/assets/headless-cms.png)
+![無頭式CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-消費服務，無論是AR體驗、網店、移動體驗、漸進式Web應用(PWA)等，都會從無頭CMS中獲取內容並提供自己的呈現。 他們會為您的內容提供自己的頭腦。
+無論是AR體驗、網站商店、行動體驗、漸進式網頁應用程式(PWA)等等，使用的服務都會從無頭式CMS接收內容，並提供自己的轉譯。 他們負責為您的內容提供自己的頭腦。
 
-省去頭部，通過消除複雜性來簡化CMS。 這樣做還會將內容呈現的責任轉移到實際需要內容並且通常更適合此類呈現的服務上。
+省略頭部可移除複雜性，簡化CMS。 這麼做也會將內容呈現的責任轉移到實際需要內容且通常更適合這類呈現的服務。
 
-## 內容建模 {#content-modeling}
+## 內容模型 {#content-modeling}
 
-內容建模（也稱為資料建模）是您的專長，因此在為無頭對象建模時需要考慮哪些因素？
+內容模型（也稱為資料模型）是您的專業，因此在為無頭建模時需要考慮哪些事項？
 
-為了讓無頭應用程式能夠訪問您的內容並對其執行某些操作，內容真正需要有一個預定義的結構。 你的內容可以自由格式，但它會讓生活 *非常* 應用程式複雜。
+為了讓無頭應用程式能夠訪問您的內容並執行某些操作，內容確實需要有一個預定義的結構。 你的內容可以自由形式，但它會創造生活 *very* 應用程式複雜。
 
-作AEM為內容架構師，您將執行內容建模以設計 **內容片段模型**。 這些定義內容作者建立 **內容片段** 保存內容。
+對於AEM，您身為內容架構師，將執行內容模型以設計一系列 **內容片段模型**. 這些定義內容作者建立 **內容片段** 保存內容的。
 
-### 訪問內容 {#access-content}
+### 存取內容 {#access-content}
 
-這更像是一個開發細節 — 但你可能會感興趣，只是為了完成這個故事。
+這更像是一個開發細節 — 但也許你會感興趣，只是為了完成這個故事。
 
-一旦您建立了內容片段模型，並且您的作者使用它們來生成內容，無頭應用程式就需要訪問此內容。
+一旦您建立了內容片段模型，且作者已使用這些模型產生內容後，無頭式應用程式就需要存取此內容。
 
-Adobe Experience Manager(AEM)as a Cloud Service，可以使用AEMGraphQL API有選擇地訪問您的內容片段，以僅返回所需的內容。 使用API，開發人員可以制定選擇特定內容的查詢。此選擇過程基於 *你* 內容片段模型。
+Adobe Experience Manager(AEM)as a Cloud Service，可以使用AEM GraphQL API選擇性地存取內容片段，以僅傳回所需的內容。 使用API，開發人員可以制定用於選擇特定內容的查詢。此選擇過程基於 *您的* 內容片段模型。
 
-這意味著您的項目可以實現結構化內容的無頭交付，以便在您的應用程式中使用。
+這表示您的專案可實現無頭式傳送結構化內容，以便用於您的應用程式。
 
-## 下一步是什麼 {#whats-next}
+## 下一步 {#whats-next}
 
-現在您已經掌握了概念和術語，下一步是 [瞭解使用內容片段模型進行建模的基礎知識](basics.md)。
+既然您已經學過概念和術語，下一步就是 [了解使用內容片段模型建立模型的基本知識](basics.md).
 
 ## 其他資源 {#additional-resources}
 
-* 無AEM頭開發者之旅
-   * [瞭解CMS無頭開發](/help/journey-headless/developer/learn-about.md)
-   * [瞭解如何對內容建模](/help/journey-headless/developer/model-your-content.md)
+* AEM Headless Developer Journey
+   * [了解CMS無頭開發](/help/journey-headless/developer/learn-about.md)
+   * [了解如何建立內容模型](/help/journey-headless/developer/model-your-content.md)
