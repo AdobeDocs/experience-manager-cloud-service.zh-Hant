@@ -9,44 +9,44 @@ ht-degree: 16%
 
 ---
 
-# 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-以下部分概述了當前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
-
->[!NOTE]
->
->從此處，您可以導航到以前版本的發行說明；比如2020年，2021年等等。
+以下章節概述目前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
->請參閱 [最近的文檔更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 有關與版本不直接相關的文檔更新的詳細資訊。
+>您可從這裡導覽至舊版的發行說明；例如，2020年、2021年等。
+
+>[!NOTE]
+>
+>請參閱 [近期檔案更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 如需與版本不直接相關的檔案更新詳細資訊。
 
 ## 發行日期 {#release-date}
 
-發佈日期 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] 本期(2021.10.0)是2021年11月4日。
-以下版本(2021.11.0)是2021年12月2日。
+發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新發行(2021.10.0)是2021年11月4日。
+下列版本(2021.11.0)將於2021年12月2日發行。
 
-## 發佈視頻 {#release-video}
+## 發行影片 {#release-video}
 
-看看 [2021年10月發佈概述](https://video.tv.adobe.com/v/338253) 視頻，瞭解添加的功能的摘要。
+查看 [2021年10月發行概述](https://video.tv.adobe.com/v/338253) 視訊，以取得新增功能的摘要。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### 中的新功能 [!DNL Sites] {#sites-features}
 
-* 內容片段模型在發佈後將自動設定為只讀狀態，以避免在重新發佈編輯的模型後無意中中斷即時API查詢。 嘗試編輯已發佈模型時，系統會提示用戶出現警告。 接受警告後可進行編輯。
+* 內容片段模型發佈後，現在會自動設為唯讀狀態，以避免重新發佈已編輯的模型後，無意中中斷即時API查詢。 嘗試編輯已發佈的模型時，系統會提示使用者警告。 接受警告後即可進行編輯。
 
-## [!DNL Experience Manager Assets] 作為 [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### 中的新功能 [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] 現在支援使用內置連接器從支援的音頻和視頻資產自動生成文本記錄 [!DNL Azure Media Services]。 的 [支援的檔案類型](/help/assets/file-format-support.md#audio-video-transcription-formats) 文本以WebVTT格式儲存。 WebVTT字幕用於更有效的搜索、字幕或翻譯。 此外，該功能還改進了資產的可訪問性、可發現性和本地化。
+* [!DNL Experience Manager] 現在支援使用內建連接器，從支援的音訊和視訊資產自動產生文字記錄 [!DNL Azure Media Services]. 此 [支援的檔案類型](/help/assets/file-format-support.md#audio-video-transcription-formats) 會自動轉錄，且文字會以WebVTT格式儲存。 WebVTT字幕用於更有效的搜索、字幕或翻譯。 此外，此功能還可改善資產的協助工具、可探索性和本地化。
 
-### 中的新功能 [!DNL Assets] 預釋放通道 {#assets-prerelease-features}
+### 中的新功能 [!DNL Assets] 預發行管道 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Image Smart Crop and Swatch現在由最新的Sensei服務提供支援，該服務可生成改良的作物和色板。 此外，已啟動增強，以生成不同的作物內容，對於相同的長寬比，但跨不同的解析度。 此外，如果「影像配置檔案」中的寬度和高度沒有變化，則在重新處理時將保留任何手動編輯。
+* [!DNL Dynamic Media] 影像智慧型裁切和色票現在由最新的Sensei服務提供技術支援，可產生改良的裁切和色票。 此外，已推出增強功能，以產生不同的裁切內容，針對相同外觀比例，但跨不同解析度。 此外，如果影像描述檔中的寬度和高度沒有變更，則任何手動編輯都會保留在重新處理時。
 
-* 智慧標籤將自動應用於使用資產微服務（而不是Smart Content Services）的資產。 更新基礎模型以改進標籤結果並減少偏差。 <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
+* 智慧標籤會使用資產微服務（而非智慧內容服務）自動套用至資產。 更新基礎模型，以改善標籤結果並減少偏誤。 <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
 <!-- Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
@@ -54,7 +54,7 @@ ht-degree: 16%
 No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 -->
 
-## [!DNL Experience Manager Forms] 作為 [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]的新增功能 {#what-is-new-forms-oct-2021}
 
@@ -73,115 +73,115 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 您可以寫信寄到 [!DNL formscsbeta@adobe.com] 來註冊 beta 版計劃。
 
-## CIF附加模組 {#cloud-services-cif}
+## CIF附加元件 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* CIF附加模組支援最新的Commerce v2.4.3和新的GraphQL API和架構
+* CIF附加元件支援最新的Commerce v2.4.3，並提供新的GraphQL API和結構
 
-* 作者可以使用富格文本編輯器(RTE)在文本欄位中添加到產品和目錄頁面的連結。 CIF表徵圖已添加到RTE工具欄，該工具欄將開啟選擇者以快速搜索和選擇產品或類別而不離開上下文。
+* 作者可使用RTF編輯器(RTE)，在文字欄位中新增產品和目錄頁面的連結。 RTE工具列中已新增CIF圖示，可開啟選擇器以快速搜尋並選取產品或類別，而不需離開內容。
 
-* 現有的彈出式購物車和結帳已替換為專用的購AEM物車和結帳頁。 這些頁面上的元件是使用Adobe Commerce的可擴展Peregrine元件構建的
+* 現有的快顯購物車和結帳已取代為專用的AEM購物車和結帳頁面。 這些頁面上的元件是使用Adobe Commerce的可擴充Peregrine元件所建置
 
-* 商家可以使用Commerce後端在導航中隱藏某些產品目錄類別。 CIF導航核心元件尊重商業後端配置「包括在菜單中」以顯示/隱藏導航中的類別
+* 商家可使用商務後端，在導覽中隱藏特定產品目錄類別。 CIF導覽核心元件會依照商務後端設定「包含在功能表中」，顯示/隱藏導覽中的類別
 
-* 如AEM果找不到類別或產品頁，Storefront Venia將返回HTTP 404錯誤
+* AEM Storefront Venia在找不到類別或產品頁面時傳回HTTP 404錯誤
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述了as a Cloud Service2021.10.0中Cloud Manager的發行說明AEM。
+本節概述AEM as a Cloud Service的2021.10.0版發行說明。
 
 ### 發行日期 {#release-date-cm-nov}
 
-Cloud Manager在as a Cloud Service中的發AEM布日期為2021年11月4日。
-下一版計畫於2021年12月9日發行。
+AEMas a Cloud Service的Cloud Manager發行日期2021.11.0為2021年11月4日。
+下一版預計於2021年12月9日發行。
 
 ### 新增功能 {#what-is-new-cm-nov}
 
-* 用戶現在可以利用新的前端管道以加速的方式專門部署前端代碼。 請參閱 [Cloud Manager前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 來瞭解更多資訊。
+* 使用者現在可以運用新的前端管道，以加速方式專門部署前端程式碼。 請參閱 [Cloud Manager前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 了解更多。
 
    >[!IMPORTANT]
-   >您必須處於版AEM本 `2021.10.5933.20211012T154732Z` 利用新的前端管道。
+   >您必須使用AEM版本 `2021.10.5933.20211012T154732Z` 以利用新的前端管道。
 
-* 通過以更有效的方式執行代碼分析而不需要構建整個影像，代碼質量流水線持續時間顯著AEM縮短。 此更改將在發佈後的幾週內逐步展開。
+* 以更有效的方式執行程式碼分析，而不需要建立整個AEM影像，可大幅縮短程式碼品質管道持續時間。 此變更將在發行後的數週內逐步推出。
 
-* Git提交ID現在將顯示在管道執行詳細資訊中，使跟蹤生成的代碼更容易。
+* Git提交ID現在會顯示在管道執行詳細資訊中，以便更輕鬆追蹤已建置的程式碼。
 
-* 現在可通過公開的API建立程式。
+* 現在可透過公開的API建立方案。
 
-* 現在可通過公開的API建立環境。
+* 現在可透過公開的API建立環境。
 
-* 的 `x-request-id` 響應標頭現在可在上的API Ploagn中看到 [www.adobe.io](https://www.adobe.io/)。 此標題在提交客戶關心問題以進行故障排除時非常有用。
+* 此 `x-request-id` 回應標題現在會顯示在 [www.adobe.io](https://www.adobe.io/). 提交客戶服務問題以進行疑難排解時，此標題相當實用。
 
-* 作為用戶，我看到零管線的管線卡為我提供了適當的指導。
+* 身為使用者，我看到管道為零的管道卡為我提供適當的指引。
 
-* 現在可以使用新的「活動」頁，其中可以查看諸如管道和代碼執行等活動及其關聯的詳細資訊。 隨著時間的推移，此頁中列出的活動將擴展範圍以及提供的詳細資訊。
+* 現在提供新的「活動頁面」，供檢視活動（例如管道和程式碼執行）及其相關詳細資訊之用。 隨著時間推移，此頁面所列的活動將會擴展範圍以及提供的詳細資料。
 
-* 現在可以使用一個新的「管線」(Pipelines)頁面，該頁面具有懸停時的狀態跨距，以便輕鬆查看詳細資訊摘要。 可以查看管道執行及其關聯的詳細資訊。
+* 提供新的管道頁面，可在暫留時顯示狀態彈出視窗，方便您檢視詳細資訊摘要。 可檢視管道執行及其相關聯的詳細資訊。
 
-* 「編輯管道API」現在支援更改部署階段中使用的環境。
+* 「編輯管道API」現在支援變更部署階段所使用的環境。
 
-* 介紹了OakPal掃描過程中對大包裝的優化。
+* 已針對大型封裝導入OakPal掃描程式的最佳化。
 
-* 質量問題CSV檔案現在將包含每個質量問題的時間戳。
+* 品質問題CSV檔案現在會包含每個品質問題的時間戳記。
 
 ### 錯誤修正 {#bug-fixes-nov}
 
-* 某些非常規的生成配置導致不必要的檔案儲存在管道的Maven項目快取中，這導致在啟動和停止生成容器時產生額外的網路I/O。
+* 某些非正統的組建設定會導致管道的Maven工件快取中儲存不必要的檔案，導致在啟動和停止組建容器時產生多餘的網路I/O。
 
-* 如果部署階段不存在，管道PATCHAPI將失敗。
+* 如果部署階段不存在，管道PATCHAPI就會失敗。
 
-* 的 `ClientlibProxyResourceCheck` 當存在具有共同基本路徑的客戶端庫時，質量規則會產生誤報問題。
+* 此 `ClientlibProxyResourceCheck` 當有具有共同基本路徑的用戶端程式庫時，品質規則會產生誤判問題。
 
-* 達到最大資料庫數時的錯誤消息未指定錯誤原因。
+* 達到最大儲存庫數時，錯誤訊息未指定錯誤的原因。
 
-* 在少數情況下，管道由於某些響應代碼的重試處理不當而失敗。
+* 在少數情況下，管道由於某些回應代碼的重試處理不當而失敗。
 
 
 ## 發行日期 {#release-date-cm-oct}
 
-Cloud Manager在as a Cloud Service中的AEM發佈日期為2021年10月14日。
+AEMas a Cloud Service的Cloud Manager發行日期為2021.10.0年10月14日。
 
 ### 新增功能 {#what-is-new-cm-oct}
 
-* 為準備即將進行的一些更改，現在將在用戶介面中引用現有部署管道並將其標籤為 **完整堆棧** 管線。
+* 為準備日後的一些變更，現在會在使用者介面中參照現有的部署管道，並將其標示為 **完整堆棧** 管道。
 
-* 管道卡已刷新，現在將顯示一個顯示生產管線和非生產管線的單個整合面，用戶可以直接從與每個管線關聯的操作菜單中選擇「運行/暫停/恢復」。
+* 管道卡已重新整理，現在會顯示顯示生產管道和非生產管道的單一整合面板，且使用者可從與每個管道相關聯的動作功能表中直接選取「執行/暫停/繼續」。
 
-* 部署管理器角色中的用戶現在可以通過UI以自助方式刪除生產管道。
+* 部署管理員角色中的使用者現在可以透過UI以自助方式刪除生產管道。
 
-* 添加和編輯管道體驗已刷新，現在可使用熟悉的現代模型。
+* 新增和編輯管道體驗已重新整理，現在可使用熟悉的現代模組。
 
-* Cloud Manager的用戶現在可以通過以下方式直接從用戶介面提交反饋： **反饋** 按鈕。
+* Cloud Manager的使用者現在可以透過 **意見反應** 按鈕。
 
-* 現在，可以從Cloud Manager的用戶介面下載年度SLA圖表。
+* 每年的SLA圖表現在可以從Cloud Manager的使用者介面下載。
 
-* 代碼質量和非生產流水線執行現在將在生成步驟期間使用一個更高效的淺層克隆過程，從而為具有特別大的Git儲存庫的客戶帶來更快的生成時間。
+* 程式碼品質和非生產管道執行現在會在建置步驟期間使用更有效率的淺層復製程式，為擁有特別大型Git存放庫的客戶提供更快的建置時間。
 
-* 「添加IP允許清單」嚮導現在將通知用戶是否已達到允許的IP允許清單的最大數量。
+* 「新增IP允許清單」精靈現在會通知使用者已達到允許的IP允許清單數目上限。
 
-* Cloud Manager API文檔現在包括一個互動式操場，允許登錄用戶從其瀏覽器中試用API。 請參閱 [Cloud Manager API遊樂場](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) 的子菜單。
+* Cloud Manager API檔案現在包含互動式操作場，可讓登入的使用者透過瀏覽器試驗API。 請參閱 [Cloud Manager API遊樂場](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) 以取得更多詳細資訊。
 
-* 如果禁用「導航至」下的選擇選項，則程式卡上的工具提示將更具說明性。 現在顯示「生產環境不存在」。
+* 如果禁用「導航到」下的選擇選項，則「程式」卡上的工具提示將更具描述性。 現在會顯示「生產環境不存在」。
 
 ### 錯誤修正 {#bug-fixes-cm-oct}
 
-* 在極少數情況下，當Adobe員工恢復客戶的環境時，在環境完全正常運行之前，會認為恢復已完成。
+* 在極少數情況下，當Adobe員工恢復客戶的環境時，在環境完全運行之前，會將恢復視為已完成。
 
-* 未重試在建立環境期間發出的某些內部請求。
+* 環境建立期間提出的某些內部請求未重試。
 
-* 如果在域名驗證後出現部署失敗錯誤，則已更正錯誤消息以請求客戶聯繫其Adobe代表。
+* 如果在域名驗證後發生部署失敗錯誤，則錯誤消息已更正，以請客戶聯繫其Adobe代表。
 
-## 最佳做法分析器 {#best-practices-analyzer}
+## Best Practices Analyzer {#best-practices-analyzer}
 
 ### 發行日期 {#release-date-bpa-latest}
 
-最佳做法分析器2.1.20版的發佈日期為2021年10月5日。
+Best Practices Analyzer v2.1.20的發行日期為2021年10月5日。
 
 ### 新增功能 {#what-is-new}
 
-* 能夠檢測並報告節點名稱長度。
+* 偵測及報告節點名稱長度的功能。
 
-* 能夠檢測並報告總索引大小。
+* 能夠偵測並報告總索引大小。
 
-* 能夠檢測並報告丟失原始格式副本的資產。
+* 能夠偵測遺失原始轉譯的資產並製作報表。
