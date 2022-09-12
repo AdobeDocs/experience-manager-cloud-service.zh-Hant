@@ -9,115 +9,115 @@ ht-degree: 21%
 
 ---
 
-# 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-以下部分概述了當前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
-
->[!NOTE]
->
->從此處，您可以導航到以前版本的發行說明；比如2020年，2021年等等。
+以下章節概述目前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
->請參閱 [最近的文檔更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 有關與版本不直接相關的文檔更新的詳細資訊。
+>您可從這裡導覽至舊版的發行說明；例如，2020年、2021年等。
+
+>[!NOTE]
+>
+>請參閱 [近期檔案更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 如需與版本不直接相關的檔案更新詳細資訊。
 
 ## 發行日期 {#release-date}
 
-發放日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.6.0是2021年6月28日。
-以下版本(2021.7.0)將於2021年7月29日發佈。
+的發行日期 [!DNL Adobe Experience Manager] as a Cloud Service的2021.6.0是2021年6月28日。
+下列版本(2021.7.0)將於2021年7月29日發行。
 
-## 發佈視頻 {#release-video}
+## 發行影片 {#release-video}
 
-看看 [2021年6月發佈概述](https://video.tv.adobe.com/v/334296) 視頻，瞭解添加的功能的摘要。
+查看 [2021年6月發行概述](https://video.tv.adobe.com/v/334296) 視訊，以取得新增功能的摘要。
 
-## 作為雲服AEM務的XML文檔 {#xml-documentation}
+## XML Documentation for AEM as a cloud service {#xml-documentation}
 
 ### 新增功能 {#what-is-new-xml-documentation}
 
-* as a Cloud Service的XML文AEM檔現在正式啟動。
-* 這將使現有的AEM Cloud Service客戶能夠購買XML文檔附加，以便跨多個渠道（包括站點）導入、建立、管理和提供技AEM術內容
+* XML Documentation for AEMas a Cloud Service現已正式發行。
+* 這可讓現有AEM Cloud Service客戶購買XML Documentation addon，以便跨多個管道(包括AEM網站)匯入、建立、管理和傳遞技術內容
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述了as a Cloud Service和中的Cloud ManagerAEM的2021.6.0行說2021.5.0。
+本節概述AEM 2021.6.0和2021.5.0中Cloud Manageras a Cloud Service的發行說明。
 
 ### 發行日期 {#release-date-june-cm}
 
-Cloud Manager在as a Cloud Service中的AEM發佈日期為2021年6月10日。
-下一版計畫於2021年7月15日發行。
+AEM 2021.6.0中的Cloud Manageras a Cloud Service日期為2021年6月10日。
+下一版預計於2021年7月15日發行。
 
 ### 新增功能 {#what-is-new-junecm}
 
-* 預覽服務將以滾動方式部署到所有程式。 客戶在為其預覽服務啟用計畫時將收到產品通知。 請參閱 [訪問預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 的子菜單。
+* 預覽服務將以滾動方式部署到所有程式。 當客戶的計畫啟用預覽服務時，將在產品中收到通知。 請參閱 [存取預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 以取得更多詳細資訊。
 
-* 現在，在生成步驟期間下載的Maven Dependencies將在管道執行之間快取。 此功能將在未來幾週內為客戶啟用。
+* 現在，系統會在管道執行之間快取建置步驟期間下載的Maven相依性。 此功能將在未來數週內為客戶啟用。
 
-* 現在，可以通過編輯程式對話框編輯程式的名稱。
+* 現在可以通過編輯程式對話框編輯程式的名稱。
 
-* 在項目建立期間和通過管理Git工作流在預設推送命令中使用的預設分支名稱已更改為 `main`。
+* 在專案建立期間和透過管理Git工作流程的預設推送命令中使用的預設分支名稱，已變更為 `main`.
 
-* 已刷新UI中的編輯程式體驗。
+* 重新整理UI中的編輯方案體驗。
 
-* 質量規則 `ImmutableMutableMixCheck` 已更新以分類 `/oak:index` 節點是不可變的。
+* 品質規則 `ImmutableMutableMixCheck` 已更新為可分類 `/oak:index` 節點不可修改。
 
-* 質量規則 `CQBP-84` 和 `CQBP-84--dependencies` 被整合為一條規則。 作為此整合的一部分，對依賴項的掃描可以更準確地確定正在部署到運行時的第三方依賴項中AEM的問題。
+* 品質規則 `CQBP-84` 和 `CQBP-84--dependencies` 已整合為單一規則。 作為此整合的一部分，對依賴項的掃描可以更準確地識別部署到AEM運行時的第三方依賴項中的問題。
 
-* 為避免混淆，「環境詳細AEM資訊」頁上的「發佈」和「發佈調度程式」段行已合併。
+* 為避免混淆，「環境詳細資料」頁面上的「發佈AEM」和「發佈Dispatcher」區段列已整合。
 
    ![](/help/implementing/cloud-manager/release-notes-cloud-manager/assets/aem-dispatcher.png)
 
-* 新代碼質量規則已添加以驗證 `damAssetLucene` 索引。 請參閱 [自定義DAM資產Lucene Oak索引](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) 的子菜單。
+* 已新增新的程式碼品質規則，以驗證 `damAssetLucene` 索引。 請參閱 [自訂DAM資產Lucene Oak索引](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) 以取得更多詳細資訊。
 
-* 「環境詳細資訊」頁面現在將顯示發佈和預覽服務的多個域名（如果適用）。 請參閱 [環境詳細資訊](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 的雙曲餘切值。
+* 環境詳細資訊頁面現在會顯示「發佈」和「預覽」服務的多個網域名稱（如適用）。 請參閱 [環境詳細資訊](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 以取得更多詳細資訊。
 
 ### 錯誤修正 {#bug-fixes-junecm}
 
-* 未正確分析根元素名稱后包含換行符的JCR節點定義。
+* 未正確剖析根元素名稱后包含新行的JCR節點定義。
 
 * 清單儲存庫API不會篩選已刪除的儲存庫。
 
-* 為計畫步驟提供了無效值時，顯示錯誤錯誤消息。
+* 為排程步驟提供無效值時，顯示錯誤錯誤訊息。
 
-* 有時，用戶可能看到綠色 *活動* 即使未部署該配置，「IP允許清單」旁邊的狀態也仍然存在。
+* 有時，使用者可能會看到綠色 *活動* 狀態（即使未部署該配置）。
 
-* 某些程式編輯序列可能導致無法建立或編輯生產管線。
+* 某些程式編輯序列可能導致無法建立或編輯生產管道。
 
-* 某些程式編輯序列可能導致 **概述** 顯示誤導性消息以重新執行程式設定。
+* 某些程式編輯序列可能會導致 **概述** 顯示誤導性消息的頁面，以重新執行程式設定。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### 中的新功能 [!DNL Assets] {#ga-features-assets}
 
-* 內容自動化功能允許 [!DNL Experience Manager Assets] 利用 [!DNL Adobe Creative Cloud] API，可實現資產生產的自動化。 它通過顯著減少建立相同資產變體所需的時間和迭代來提高內容速度。 該功能不需要任何代碼，並可從DAM中運行。
-* [!DNL Adobe Asset Link] v3.0 [!DNL Adobe Photoshop]。 [!DNL Adobe Illustrator], [!DNL Adobe InDesign] 和 [!DNL Adobe Asset Link] v2.0 [!DNL Adobe XD] 的子菜單。 它提供：
+* 內容自動化功能可讓 [!DNL Experience Manager Assets] 善用 [!DNL Adobe Creative Cloud] API可大規模自動化資產生產。 它可大幅減少建立相同資產變異所需的時間和迭代次數，進而改善內容速度。 功能不需要任何程式碼，且可在DAM內運作。
+* [!DNL Adobe Asset Link] v3.0 [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]，和 [!DNL Adobe InDesign] 和 [!DNL Adobe Asset Link] v2.0 [!DNL Adobe XD] 已發行。 它提供：
 
-   * 支援 [!DNL Assets Essentials]。
-   * 能夠自動連接到 [!DNL Experience Manager] 作為 [!DNL Cloud Service] 或 [!DNL Assets Essentials]。
+   * 支援 [!DNL Assets Essentials].
+   * 自動連線至 [!DNL Experience Manager] as a [!DNL Cloud Service] 或 [!DNL Assets Essentials].
 
 <!-- TBD: Checking with PMs if AAE release should be mentioned here.
 -->
 
-### 中提供的新功能 [!DNL Assets] 預釋放通道 {#beta-features-assets}
+### 此 [!DNL Assets] 預發行管道 {#beta-features-assets}
 
-* 視圖設定將得到增強，以便用戶選擇預設視圖和預設排序參數。
-* Linkshare下載功能使用提高下載速度的非同步下載。
-* 用戶可以根據屬性謂詞搜索和篩選資料夾。
-* [!DNL Experience Manager Assets] 嵌入了PDF查看器 [!DNL Adobe Document Cloud] 預覽支援的文檔。 此功能允許用戶預覽PDF和其他多頁檔案，而無需任何複雜處理。 這改進了功能奇偶校驗 [!DNL Experience Manager] 6.5
+* 已增強檢視設定，讓使用者選擇預設檢視和預設排序參數。
+* Linkshare下載功能使用非同步下載，可大幅提升下載速度。
+* 使用者可以根據屬性述詞來搜尋和篩選資料夾。
+* [!DNL Experience Manager Assets] 內嵌PDF檢視器，由 [!DNL Adobe Document Cloud] 預覽支援的文檔。 此功能可讓使用者預覽PDF和其他多頁檔案，而不需進行任何複雜的處理。 這可改善與 [!DNL Experience Manager] 6.5。
 
 ### 修正在[!DNL Assets]中的錯誤 {#bugs-fixed-assets}
 
-* 將所有者添加到子資料夾時， [!DNL Assets] 還會添加與父資料夾所有者相同的用戶。 (CQ-4323737)
-* 在將資產添加到收集時，如果用戶對「收集」搜索應用篩選器，則用戶無法查看「清單中的收集」視圖。 (CQ-4323181)
-* 搜索檔案和資料夾時，如果用戶應用篩選器並選擇 [!UICONTROL 檔案和資料夾]，只顯示檔案，而不顯示資料夾。 (CQ-4319543)
+* 將所有者添加到子資料夾時， [!DNL Assets] 也會新增與父資料夾擁有者相同的使用者。 (CQ-4323737)
+* 將資產新增至集合時，如果使用者對「集合」搜尋套用篩選，則使用者無法在「清單」檢視中檢視集合。 (CQ-4323181)
+* 搜索檔案和資料夾時，如果用戶應用了篩選器並選擇 [!UICONTROL 檔案和資料夾]，只會顯示檔案，不會顯示資料夾。 (CQ-4319543)
 
-## [!DNL Experience Manager Sites] 作為 [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### 中的新功能 [!DNL Sites] {#ga-features-sites}
 
-* 「發佈到預覽層」現在在「站點管理UI」中顯示為頁面狀態
-* 現在，發佈到預覽層將在操作結束時呈現預覽URL，並將URL保留在頁面屬性中以供以後參考
+* 發佈至預覽層級現在在Sites Admin UI中顯示為頁面狀態
+* 發佈到預覽層現在會在動作結束時呈現預覽URL，並將URL保留在頁面屬性中以供稍後參考
 
-## [!DNL Experience Manager Forms] 作為 [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]的新增功能 {#what-is-new-forms}
 
@@ -140,72 +140,72 @@ Cloud Manager在as a Cloud Service中的AEM發佈日期為2021年6月10日。
 ### 修正在[!DNL Forms]中的錯誤 {#forms-bugs-fixed}
 
 * 當欄位在透過表單資料模型 (FDM) 提交資料到後端服務前驗證時，雖然會成功驗證，但表單資料模型無法叫用發佈驗證。
-* 從 Apple iOS 裝置提交包含標準 HTML 上傳欄位的表單時，有時不會傳送檔案內容並在另一端收到 0 位元組檔案。這是AppleiOS的一個已知問題。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* 從 Apple iOS 裝置提交包含標準 HTML 上傳欄位的表單時，有時不會傳送檔案內容並在另一端收到 0 位元組檔案。這是Apple iOS的已知問題。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
-## [!DNL Experience Manager Screens] 作為 [!DNL Cloud Service] {#screens}
+## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
-本節概述AEM Screensas a Cloud Service的發行說明。
+本節概述AEM Screens as a Cloud Service的發行說明。
 
 ### 發行日期 {#release-date-june-screens}
 
-AEM Screensas a Cloud Service發佈日期為2021年6月24日。
+AEM Screensas a Cloud Service的發行日期為2021年6月24日。
 
 ### 新增功能 {#what-is-new-screens-june}
 
 >[!NOTE]
->請參閱 [AEM Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) 有關成功安裝、配置和運行螢幕as a Cloud Service所需的基礎知識的指南，並連結到詳細概念技術文檔。
+>請參閱 [AEM Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) 成功安裝、設定和執行Screensas a Cloud Service所需基礎知識的指南，以及詳細概念技術檔案的連結。
 
 * 批量設備註冊管理意味著提供大量播放器設備更快、更高效。
 
-* 改進了設備、顯示和渠道清單視圖的搜索和篩選選項。
+* 改善裝置、顯示和管道詳細目錄檢視的搜尋和篩選選項。
 
-* 設備運行狀況快照通過提供關鍵狀態即可節省時間。
+* 設備健康快照通過提供關鍵狀態如一覽而節省時間。
 
-* 「對象詳細資訊」頁面提供了項目中每個對象最相關資訊的摘要。
+* 「對象詳細資訊」頁為項目中的每個對象提供了最相關資訊的摘要。
 
-## CIF附加模組 {#cloud-services-cif}
+## CIF附加元件 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* 內容片段的新CIF產品和類別引用資料類型(包括 產品/類別選取器UI支援)
+* 內容片段的新CIF產品和類別參考資料類型(包括 產品/類別選擇器UI支援)
 * 新商務內容片段核心元件
-* 後端支援全文商務搜AEM索
-* Commerce核心元件支援Adobe CommerceSenseiRecs資料收集
-* 類別頁的SEO友好型URL的改進
-* 支援每個站點/配置的自定義HTTP標頭
+* AEM後端支援的全文商務搜尋
+* 商務核心元件支援Adobe Commerce Sensei Recs資料收集
+* 改善類別頁面的SEO易記URL
+* 支援每個網站/設定的自訂HTTP標題
 
 ## 內容轉移工具 {#content-transfer-tool}
 
 ### 發行日期 {#release-date-ctt-latest}
 
-內容傳輸工具v1.5.4的發佈日期為2021年6月28日。
+內容轉移工具1.5.4版的發行日期為2021年6月28日。
 
 ### 新增功能 {#what-is-new-ctt-latest}
 
-* 支援可選 [預拷貝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 添加到CTT中。 當源實例配置為使用AmazonS3或Azure Blob儲存資料儲存時，預拷貝步驟可用於顯著加快內容傳輸活動的提取和接收階段AEM。
+* 支援選用 [預復](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 與CTT搭配使用的步驟。 當來源AEM例項設定為使用Amazon S3或Azure Blob儲存資料存放區時，預先複製步驟可用來大幅加快內容傳輸活動的擷取和擷取階段。
 
-* Guardrail已添加到CTT中，以防止用戶在資料在接收階段到達臨界點時停止接收並可能損壞資料。
+* CTT新增了防護性功能，以防止使用者在擷取階段期間達到關鍵點時停止擷取，並可能損毀資料。
 
-* 提取日誌的描述性更強，有助於進行故障排除。
+* 提取記錄檔的描述性更強，有助於疑難排解。
 
-* 在UI中添加了更多描述性接收狀態消息。
+* 在UI中新增了較清楚描述的擷取狀態訊息。
 
 ### 錯誤修正 {#bug-fixes-ctt-latest}
 
-* 在停止Author實例上的攝取時，UI將先前在Publish實例上完成的攝取改寫為 `STOPPED` 從 `FINISHED`。 這個已經修復了。
+* 在製作例項上停止擷取時，UI會將先前完成的擷取覆寫至 `STOPPED` 從 `FINISHED`. 此問題已修正。
 
-## 最佳做法分析器 {#best-practices-analyzer}
+## Best Practices Analyzer {#best-practices-analyzer}
 
 ### 發行日期 {#release-date-bpa}
 
-最佳做法分析器2.1.16版的發佈日期為2021年6月30日。
+Best Practices Analyzer v2.1.16的發行日期為2021年6月30日。
 
 ### 新增功能 {#what-is-new-bpa-latest}
 
-* 能夠檢測並報告資料夾中缺少的子節點 `/content/dam`。
+* 能夠偵測資料夾中遺失的子節點並製作報表 `/content/dam`.
 
-* 能夠檢測並報告所使用的最佳做法分析器版本。
+* 能夠偵測並報告所使用的最佳實務分析器版本。
 
 ### 錯誤修正 {#bug-fixes-bpa-latest}
 
-* 與已修復的不受支援的儲存庫結構(URS)相關的日誌記錄錯誤。
+* 修正了與不支援的存放庫結構(URS)相關的記錄錯誤。
