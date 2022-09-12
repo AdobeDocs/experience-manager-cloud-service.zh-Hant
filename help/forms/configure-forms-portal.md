@@ -2,9 +2,9 @@
 title: 如何在Experience Manager Sites頁面上建立Forms Portal
 description: 了解如何在Forms頁面上建立AEM Sites入口網站和使用現成可用的核心元件。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1784'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,9 @@ AEM Forms可立即提供下列入口網站元件：
 
    此外，變更 `appTitle`, `appId`，和 `groupId`，以反映您的環境。
 
-   專案準備就緒後，請更新 `<core.forms.components.version>x.y.z</core.forms.components.version>` 頂層屬性 `pom.xml` 原型專案，以反映 [core-forms-components](https://github.com/adobe/aem-core-forms-components) 在 `AEM Archetype` 專案。
+1. **在發行前，請執行下列步驟以使用Forms Portal元件：**
+   * [啟用發行前管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
+   * 取代 `core-forms-components-*` 版本，以及 `Cloud Manager/AEM Archetype` 透過更新 `<core.forms.components.version>x.y.z</core.forms.components.version>` 頂層屬性 `pom.xml` 原型項目。
 
 1. **將專案部署至本機開發環境：** 您可以使用下列命令來部署至本機開發環境
 
