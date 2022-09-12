@@ -1,6 +1,6 @@
 ---
-title: '如何設定 [!DNL AEM Forms] as a Cloud Service環境？ '
-description: 學習設定和配置 [!DNL AEM Forms] as a Cloud Service環境
+title: 如何設定 [!DNL AEM Forms] as a Cloud Service環境？
+description: 了解如何設定 [!DNL AEM Forms] as a Cloud Service環境
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
 workflow-type: tm+mt
@@ -11,19 +11,19 @@ ht-degree: 1%
 
 # 板載至 [!DNL AEM Forms] as a Cloud Service {#overview}
 
-## 確定角色 {#personas-aem-forms-project}
+## 決定角色 {#personas-aem-forms-project}
 
 <!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Before onboarding to an [!DNL AEM Forms] as a Cloud Service environment, decide personas and structure a team for your project. A typical [!DNL AEM Forms] project team has the following personas:
 
-* **用戶體驗(UX)設計器**:用戶體驗(UX)設計器為 [!DNL AEM Forms] 資產。
+* **使用者體驗(UX)設計工具**:使用者體驗(UX)設計工具可定義的樣式、版面和品牌 [!DNL AEM Forms] 資產。
 
-* **Forms醫師**:Forms實踐者根據UX設計器提供的樣式、佈局和品牌建立自適應Forms、主題和模板。 實踐者還建立並整合自適應表單與表單資料模型和工AEM作流。 Forms從業人員通常承擔與前端相關的任務。
+* **Forms從業人員**:Forms從業人員會根據UX設計人員提供的樣式、版面和品牌，建立最適化Forms、主題和範本。 從業者還建立並整合適用性表單與表單資料模型和AEM工作流程。 Forms從業者通常負責前端相關任務。
 
-* **Forms開發商**:Forms開發商開發定制表單解決方案。  Forms開發人員通常負責後端開發，如開AEM發定制元件、工作流、預填充服務等。
+* **Forms開發人員**:Forms開發人員開發自訂表單解決方案。  Forms開發人員通常會進行後端開發，例如開發自訂元件、AEM工作流程、預填服務等。
 
-* **AEM管理員**:管理AEM員可幫助進行總體配置，如設定用戶、強化環境、配置資料源、配置電子郵件和第三方軟體。 管理AEM員還幫助整合，如與Adobe Analytics、Adobe Target和Adobe Sign整合。
+* **AEM管理員**:AEM管理員可協助進行整體設定，例如設定使用者、強化環境、設定資料來源、設定電子郵件和協力廠商軟體。 AEM管理員也可協助進行整合，例如與Adobe Analytics、Adobe Target和Adobe Sign整合。
 
-* **最終用戶**:最終用戶與已發佈的表單交互並提交，標籤已提交的表單，通過Web門戶跟蹤已提交的應用程式，並接收個性化通信。
+* **一般使用者**:最終用戶與發佈的表單交互並提交，簽名提交的表單，通過Web門戶跟蹤提交的應用程式，並接收個人化通信。
 
 <!-- While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
 
@@ -33,53 +33,53 @@ ht-degree: 1%
 | UX Designer| forms-users, template-authors|
 | End-User| <ul> <li>When a user must login to view and submit an Adaptive Form, add such users to forms-users group. </li> <li>When no user authentication is required to access Adaptive Forms, do not assign any group to such users. </li> </ul>| -->
 
-## 板載到服務 {#onboarding}
+## 上線到服務 {#onboarding}
 
 * [板載](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) 到 [!DNL Adobe Experience Manager] as a Cloud Service。
 
-* （僅適用於沙盒）登陸服務後， [建立](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) 和 [運行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 生產及非生產管道。 它支援並帶來 [!DNL AEM Forms] as a Cloud Service於您的環境。
+* （僅限沙箱）上線服務後， [建立](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) 和 [執行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 生產及非生產管道。 它可啟用並提供 [!DNL AEM Forms] as a Cloud Service於您的環境。
 
-您可以使用Formsas a Cloud Service建立自適應表單（數字註冊）或生成客戶通信。 完成後 [登機](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) 到 [!DNL Adobe Experience Manager] as a Cloud Service，執行以下操作之一以啟用數字註冊或客戶通信功能。 您還可以啟用以下兩項功能：
+您可以使用Formsas a Cloud Service建立最適化表單（數位註冊）或產生客戶通訊。 完成後 [入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) 到 [!DNL Adobe Experience Manager] as a Cloud Service，請執行下列任一操作以啟用數字註冊或客戶通信功能。 您也可以啟用這兩項功能：
 
-1. 登錄到Cloud Manager並開啟您的AEM Formsas a Cloud Service實例。
+1. 登入Cloud Manager並開啟AEM Formsas a Cloud Service例項。
 
-1. 開啟「編輯程式」選項，轉到「解決方案和載入項」頁籤，然後選擇 **[!UICONTROL Forms — 通信]** 的雙曲餘切值。
+1. 開啟「編輯方案」選項，前往「解決方案與附加元件」標籤，然後選取 **[!UICONTROL Forms — 通訊]** 選項。
 
-   ![通信](assets/communications.png)
+   ![通訊](assets/communications.png)
 
-   如果已啟用 **[!UICONTROL Forms — 數字註冊]** ，然後選擇 **[!UICONTROL Forms — 通信插件]** 的雙曲餘切值。
+   如果您已啟用 **[!UICONTROL Forms — 數位註冊]** 選項，然後選取 **[!UICONTROL Forms — 通訊附加元件]** 選項。
 
-   ![阿登](assets/add-on.png)
+   ![Addon](assets/add-on.png)
 
-1. 按一下 **[!UICONTROL 更新]**。
+1. 按一下 **[!UICONTROL 更新]**.
 
-1. 運行生成管道。 生成管道成功後，將為您的環境啟用Communications API。
+1. 執行建置管道。 建置管道成功後，即會為您的環境啟用通訊API。
 
 >[!NOTE]
 >
-> 要啟用和配置文檔處理API，請將以下規則添加到 [調度程式配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> 若要啟用並設定檔案操作API，請新增下列規則至 [Dispatcher設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
-## 配置用戶 {#config-users}
+## 設定使用者 {#config-users}
 
-完成服務登錄後，請登錄 [!DNL AEM Forms] as a Cloud Service環境、開啟作者和發佈實例，以及將用戶添加到特定於Forms的 [AEM組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)基於他們的個性。 下表列出了特定於FormsAEM的組、現成的組以及相應的用戶類型。 該表還為每個AEM用戶類型提供實例類型：
+完成服務上線後，請登入 [!DNL AEM Forms] as a Cloud Service環境，開啟製作和發佈執行個體，並將使用者新增至Forms專用 [AEM群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)，根據其角色。 下表列出Forms專用的AEM群組（可立即使用）以及對應的使用者類型。 表格也提供每個使用者類型的AEM例項類型：
 
-| 用戶類型（角色） | 用戶組 | AEM實例 |
+| 使用者類型（角色） | 使用者群組 | AEM例項 |
 |---|---|---|
-| 窗體從業人員/Forms開發人員 | <ul> <li> [!DNL forms-users] </li><li> [!DNL template-author] </li><li> [!DNL workflow-users] </li><li> [!DNL workflow-editors] </li><li> [!DNL fdm-authors] </li></ul> | 作者實例 |
-| 用戶體驗(UX)設計器 | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | 作者實例 |
-| AEM 管理員 | <ul> <li>[!DNL aem-administrators],</li> <li>[!DNL fd-administrators] </li> </ul> | 作者和發佈實例 |
-| 最終用戶 | <ul> <li>當用戶必須登錄才能查看和提交自適應表單時，請將這些用戶添加到 [!DNL forms-users] 組。 </li> <li>如果訪問Adaptive Forms不需要用戶身份驗證，則不要向此類用戶分配任何組。 </li> </ul> | 作者和發佈實例 |
+| 表單從業人員/Forms開發人員 | <ul> <li> [!DNL forms-users] </li><li> [!DNL template-author] </li><li> [!DNL workflow-users] </li><li> [!DNL workflow-editors] </li><li> [!DNL fdm-authors] </li></ul> | 製作例項 |
+| 使用者體驗(UX)設計工具 | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | 製作例項 |
+| AEM 管理員 | <ul> <li>[!DNL aem-administrators],</li> <li>[!DNL fd-administrators] </li> </ul> | 製作和發佈例項 |
+| 一般使用者 | <ul> <li>當使用者必須登入才能檢視和提交最適化表單時，請將這類使用者新增至 [!DNL forms-users] 群組。 </li> <li>當存取適用性Forms不需要使用者驗證時，請勿將任何群組指派給這類使用者。 </li> </ul> | 製作和發佈例項 |
 
-有關Forms特定組和相AEM應權限的詳細資訊，請參見 [組和權限](forms-groups-privileges-tasks.md)。
+如需Forms專用AEM群組和對應權限的詳細資訊，請參閱 [群組和權限](forms-groups-privileges-tasks.md).
 
 <!-- You can also create  [user groups](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) specific  to your organization, assign policies, and [users](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) to the groups. The policies help control permissions of the users that are part of the group. For information a -->
 
 ## 下一步 {#next-steps}
 
-[設定本地開發環境](setup-local-development-environment.md)。 您可以使用本地開發環境建立自適應表單和相關資產（主題、模板、自定義提交操作、預填充服務等）和 [將PDF forms轉換為自適應Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 不登錄雲開發環境。
+[設定本機開發環境](setup-local-development-environment.md). 您可以使用本機開發環境來建立最適化表單和相關資產（主題、範本、自訂提交動作、預填服務等），以及 [將PDF forms轉換為最適化Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 而不需登入雲端開發環境。
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 
