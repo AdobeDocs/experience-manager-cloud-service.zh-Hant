@@ -23,7 +23,7 @@ ht-degree: 97%
 
 ### 新功能 {#whats-new-2020.6.0}
 
-[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 2.9.0 版現已隨附於 AEM Sites，其中包含：
+[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 2.9.0 版現已隨附於 AEM Sites，其中包含：
 
 * [Adobe 用戶端資料層](https://github.com/adobe/adobe-client-data-layer)與核心元件的整合
 * 所有元件可設定的 HTML ID 屬性
@@ -108,7 +108,7 @@ AEM 專案的 pom.xml 中所有的參照移至遠端存放庫 `https://downloads
 
 增強型智慧標記可讓組織訓練智慧標記模型，以在一般智慧標記以外，還能根據客戶特定的商業標記來識別影像。
 
-此版本提供了新的引導式使用者體驗，有助於針對客戶特定的標記集設定智慧標記訓練，並使用資產加以訓練，以便在日後以標記來辨識和標示這些資產。現在的體驗更符合直覺。訓練增強型智慧標記，讓智慧標記的訓練更符合直覺。請參閱 [如何將智慧標籤添加到資產](/help/assets/smart-tags.md)。
+此版本提供了新的引導式使用者體驗，有助於針對客戶特定的標記集設定智慧標記訓練，並使用資產加以訓練，以便在日後以標記來辨識和標示這些資產。現在的體驗更符合直覺。訓練增強型智慧標記，讓智慧標記的訓練更符合直覺。請參閱 [如何將智慧標籤新增至資產](/help/assets/smart-tags.md).
 
 **擷取、預覽和傳遞 3D 內容的支援**
 
@@ -188,4 +188,4 @@ AEM 專案的 pom.xml 中所有的參照移至遠端存放庫 `https://downloads
 * 在下載資產時，如果選取了電子郵件選項，即使已提供有效的電子郵件 ID，下載選項仍無法使用。(CQ-4296535)
 * 儲存為智慧型集合的自訂篩選器無法正確套用至資產。(CQ-4294942)
 * 有多項搜尋和索引增強功能以及錯誤修正可改善效能。(CQ-4286373)
-* 無法在「資產」中訪問資料夾屬性頁籤，並返回500錯誤。 (CQ-4295701)
+* 無法在「資產」中存取資料夾屬性標籤，並傳回500錯誤。 (CQ-4295701)
