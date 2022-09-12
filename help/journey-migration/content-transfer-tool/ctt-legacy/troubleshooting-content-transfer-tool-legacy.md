@@ -1,16 +1,17 @@
 ---
-title: 排除內容傳輸工具故障（舊版）
-description: 內容傳輸工具故障排除
+title: 疑難排解內容轉移工具（舊版）
+description: 疑難排解內容轉移工具
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: b99f8f2b-b1b7-4ec1-b1d2-0efe83e17e91
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 92%
 
 ---
 
-# 排除內容傳輸工具故障（舊版） {#troubleshoot-content-transfer-tool}
+# 疑難排解內容轉移工具（舊版） {#troubleshoot-content-transfer-tool}
 
 
 ## 遺失 Blob ID {#missing-blobs}
