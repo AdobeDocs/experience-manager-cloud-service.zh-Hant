@@ -1,6 +1,6 @@
 ---
-title: AEM Sites旅程
-description: 從此處開始，瞭解可瞭解功能強大的網站功能AEM的引導式旅程。
+title: AEM Sites Journeys
+description: 請從這裡開始，概略了解AEM強大網站功能的引導式歷程。
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
 workflow-type: tm+mt
@@ -9,38 +9,38 @@ ht-degree: 0%
 
 ---
 
-# AEM Sites旅程 {#aem-sites-journeys}
+# AEM Sites Journeys {#aem-sites-journeys}
 
-從此處開始，瞭解可瞭解功能強大的網站功能AEM的引導式旅程。
+請從這裡開始，概略了解AEM強大網站功能的引導式歷程。
 
 ## 簡介 {#introduction}
 
-[AEM Sites](https://business.adobe.com/products/experience-manager/sites/aem-sites.html) 是一套功能強大的統一工具，使您能夠跨渠道輕鬆建立、管理和發佈數字型驗。 從設定初始內容結構，到輕鬆建立可重複使用的內容，再到部署到多個市場和語言，以及建立提供個性化體驗的定製應用程式，AEM Sites是全面、中心的解決方案，可為您的受眾建立令人驚嘆的體驗。
+[AEM Sites](https://business.adobe.com/products/experience-manager/sites/aem-sites.html) 是功能強大的統一工具套件，可讓您輕鬆建立、管理和發佈跨管道的數位體驗。 從設定您的初始內容結構，到輕鬆建立可重複使用的內容，到部署至多個市場和語言，以及建立可提供個人化體驗的自訂應用程式，AEM Sites都是全方位的集中解決方案，能讓您的對象無論身在何處都能建立絕佳的體驗。
 
-## 文檔AEM旅程 {#documentation-journeys}
+## AEM檔案歷程 {#documentation-journeys}
 
-[文檔旅程](/help/journey-documentation/documentation-journeys.md) 通過提供幫助讀者瞭解和解決商業問題的敘事，將許多不同的、或許複雜的主題和特徵聯繫起來AEM，讀者可以從頭到尾對商業問題有新意，但只要假設事先的主題或知AEM識很少。
+[檔案歷程](/help/journey-documentation/documentation-journeys.md) 將許多不同的、可能複雜的主題和特徵聯繫起來，提供一種敘述，幫助讀者從頭到尾理解並解決業務問題，同時假定事先的主題或AEM知識最少。
 
-文檔旅程是圍繞最佳做法原則設計的，這些原則由Adobe的最新研究、Adobe顧問的經驗證的實施經驗和客戶項目的反饋所指導。
+說明檔案歷程是根據最佳實務原則而設計，根據Adobe的最新研究、Adobe顧問經驗證的實作經驗，以及客戶專案的意見回饋。
 
-如果你想知道Adobe如何推薦如何解決AEM Sites的商業案例，AEM Sites旅程就是起點。
+如果您想了解Adobe建議如何使用AEM Sites解決業務案例，AEM Sites歷程即為起點。
 
 ## 對象 {#audiences}
 
-站點行程為不同人員設計，從不同角度闡述實施站點解決方案的要求、步驟和方法。
+Sites Journeys是針對不同角色而設計，從不同角度規劃實作網站解決方案的需求、步驟及方法。
 
-為特定人物或觀眾定義個人旅程，但也定義讀者與之交互的附加人物。
+系統會針對特定角色或對象定義個別歷程，但也會定義讀者與之互動的其他角色。
 
-旅程中的資訊當然對多個角色有用，但行程是針對特定角色的，某些資訊對某些角色可能是多餘的。
+歷程中的資訊當然對多個角色有用，但歷程會鎖定特定角色，而某些資訊對某些角色可能是多餘的。
 
-## 站點旅程 {#sites-journeys}
+## 網站歷程 {#sites-journeys}
 
-以下文檔旅程可用於AEM Sites主題。
+下列檔案歷程適用於AEM Sites主題。
 
 | 標題 | 說明 | 主要受眾 |
 |---|---|---|
-| [快速建立站點行程](/help/journey-sites/quick-site/overview.md) | 從此開始，引導您瀏覽易用的AEM快速站點建立工具，以簡化站點的前端開發，並在不具備後端知識的情況下快速自AEM定義您的AEM站點。 | 前端開發人員 |
-| [參考演示附加行程](/help/journey-sites/demos-add-on/overview.md) | 從此開始，瞭解如何以最小的配置將參考演示附加程式輕鬆添加到沙箱環境AEM，並能夠通過基於最佳實踐的豐富示例來testAEM的強大功能。 | 系統管理員 |
-| [網站翻譯之旅](/help/journey-sites/translation/overview.md) | 瞭解AEM Sites技術、它們在項目中的使用方式，以及如何在A到Z中建立和更新AEM翻譯項目。 | 翻譯專家 |
+| [快速網站建立歷程](/help/journey-sites/quick-site/overview.md) | 從這裡開始，透過簡單易用的AEM快速網站建立工具進行引導式歷程，以簡化AEM網站的前端開發，並在不具備AEM後端知識的情況下快速自訂您的網站。 | 前端開發人員 |
+| [參考示範附加歷程](/help/journey-sites/demos-add-on/overview.md) | 從這裡開始進行引導式歷程，了解如何輕鬆將AEM參考示範附加元件新增至沙箱環境，並將AEM設定降至最低，以及能夠根據最佳實務以豐富的範例來測試AEM的強大功能。 | 系統管理員 |
+| [網站翻譯歷程](/help/journey-sites/translation/overview.md) | 了解AEM Sites技術、在專案中如何使用，以及如何在AEM中從A到Z建立和更新翻譯專案。 | 翻譯專家 |
 
-繼續關注 [即將到來的旅程，涉及其他角色。](/help/journey-documentation/documentation-journeys.md#journeys)
+請繼續觀看 [即將到來的歷程，涵蓋其他角色。](/help/journey-documentation/documentation-journeys.md#journeys)
