@@ -268,7 +268,7 @@ Dynamic Media色彩管理可讓您為資產加上色彩校正。 透過色彩校
 
 請參閱 [上傳資產](/help/assets/add-assets.md).
 
-**要編輯支援格式的MIME類型，請執行以下操作：**
+**要編輯支援格式的MIME類型：**
 
 1. 以產品管理員身分登入您的Experience Manageras a Cloud Service。
 1. 在Experience Manageras a Cloud Service中，選取Experience Manageras a Cloud Service標誌以存取全域導覽主控台，然後前往 **[!UICONTROL 一般>CRXDE Lite]**.
