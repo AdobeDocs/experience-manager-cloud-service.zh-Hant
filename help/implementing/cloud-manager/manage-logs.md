@@ -1,6 +1,6 @@
 ---
 title: 存取和管理記錄檔
-description: 瞭解如何訪問和管理日誌以幫助您在as a Cloud Service中開AEM發過程。
+description: 了解如何存取和管理記錄，以協助您在AEMas a Cloud Service中進行開發程式。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
@@ -12,49 +12,49 @@ ht-degree: 3%
 
 # 存取和管理記錄檔 {#manage-logs}
 
-瞭解如何訪問和管理日誌以幫助您在as a Cloud Service中開AEM發過程。
+了解如何存取和管理記錄，以協助您在AEMas a Cloud Service中進行開發程式。
 
-您可以使用 **環境** 卡 **概述** 頁或「環境詳細資訊」頁。
+您可以使用 **環境** 卡片 **概述** 頁面或環境詳細資料頁面。
 
 ## 正在下載日誌 {#download-logs}
 
-按照以下步驟下載日誌。
+請依照下列步驟下載記錄檔。
 
-1. 登錄到Cloud Manager(位於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇相應的組織和程式。
+1. 登入Cloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇適當的組織和方案。
 
-1. 導航到 **環境** 卡 **概述** 的子菜單。
+1. 導覽至 **環境** 卡片 **概述** 頁面。
 
-1. 選擇 **下載日誌** 中。
+1. 選擇 **下載記錄檔** 從刪節號菜單。
 
    ![下載日誌菜單項](assets/download-logs1.png)
 
-1. 在 **下載日誌** 對話框，選擇相應的 **服務** 下拉菜單中
+1. 在 **下載記錄檔** 對話框，選擇相應的 **服務** 從下拉式功能表
 
    ![「下載日誌」對話框](assets/download-preview.png)
 
-1. 選擇服務後，按一下要檢索的日誌旁邊的下載表徵圖。
+1. 選取服務後，按一下您要擷取之記錄旁的下載圖示。
 
-您也可以從 **環境** 的子菜單。
+您也可以從 **環境** 頁面。
 
-![「環境」螢幕中的日誌](assets/download-logs.png)
+![從「環境」畫面記錄](assets/download-logs.png)
 
-## 通過API記錄 {#logs-through-api}
+## 透過API記錄 {#logs-through-api}
 
-除了通過UI下載日誌外，日誌還可通過API和命令行介面獲得。
+除了透過UI下載記錄檔外，記錄檔也可透過API和命令列介面使用。
 
-要下載特定環境的日誌檔案，該命令類似於以下命令。
+若要下載特定環境的記錄檔，命令將類似下列。
 
 ```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-也可以通過命令行介面跟蹤日誌。
+您也可以透過命令列介面追蹤記錄。
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-為了獲得環境ID（本例中為1884）和可用的服務或日誌名稱選項，可以使用以下命令。
+為了獲得環境ID（本示例中為1884）和可用的服務或日誌名稱選項，可以使用以下命令。
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### 其他資源 {#resources}
 
-請參閱以下其他資源以瞭解有關Cloud Manager API和Adobe I/OCLI的詳細資訊：
+請參考下列其他資源，以進一步了解Cloud Manager API和Adobe I/OCLI:
 
-* [Cloud Manager API文檔](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Cloud Manager API檔案](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
 * [Adobe I/OCLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
