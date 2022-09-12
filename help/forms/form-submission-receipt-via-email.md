@@ -1,7 +1,7 @@
 ---
-title: 通過電子郵件發送表單提交確認
+title: 透過電子郵件傳送表單提交確認
 seo-title: Sending a form submission acknowledgement via email
-description: AEM Forms允許您配置電子郵件提交操作，在提交表單時向用戶發送確認。
+description: AEM Forms可讓您設定電子郵件「提交動作」，在提交表單時向使用者傳送確認。
 seo-description: AEM Forms allows you to configure the email Submit Action that sends an acknowledgement to a user on submitting the form.
 uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
@@ -17,23 +17,23 @@ ht-degree: 0%
 ---
 
 
-# 通過電子郵件發送表單提交確認 {#sending-a-form-submission-acknowledgement-via-email}
+# 透過電子郵件傳送表單提交確認 {#sending-a-form-submission-acknowledgement-via-email}
 
-## 自適應表單資料提交 {#adaptive-form-data-submission}
+## 適用性表單資料提交 {#adaptive-form-data-submission}
 
-自適應Forms提供了幾種 [提交操作](configuring-submit-actions.md) 將表單資料提交到不同終結點的工作流。
+適用性Forms提供數種現成可用的 [提交操作](configuring-submit-actions.md) 將表單資料提交至不同端點的工作流程。
 
-例如， **[!UICONTROL 發送電子郵件]** 提交操作在成功提交自適應表單時發送電子郵件。 還可以配置它以發送電子郵件中的表單資料和PDF。
+例如， **[!UICONTROL 傳送電子郵件]** 提交動作會在成功提交適用性表單時傳送電子郵件。 您也可以設定它，以傳送電子郵件中的表單資料和PDF。
 
-本文詳細介紹了在自適應表單上啟用電子郵件操作的步驟及其提供的不同配置。
+本文詳細說明在適用性表單上啟用「電子郵件」動作的步驟，以及其提供的不同設定。
 
 >[!NOTE]
 >
->您還可以使用 **[!UICONTROL 通過電子郵件發送PDF]** 按鈕，將選定控制項在Tab鍵次序中下移一個位置。 此操作可用的配置選項與 **[!UICONTROL 發送電子郵件]** 操作。 「電子郵件PDF」操作僅適用於基於XFA的自適應Forms
+>您也可以使用 **[!UICONTROL 透過電子郵件傳送PDF]** 選項，以透過電子郵件以PDF附件的形式傳送已完成的表單。 此動作可用的設定選項與 **[!UICONTROL 傳送電子郵件]** 動作。 「電子郵件PDF」動作僅適用於XFA型適用性Forms
 
-## 發送電子郵件操作 {#email-action}
+## 傳送電子郵件動作 {#email-action}
 
-通過「發送電子郵件」操作，作者可以在成功提交自適應表單時自動向一個或多個收件人發送電子郵件。
+「傳送電子郵件」動作可讓作者在成功提交適用性表單時，自動傳送電子郵件給一或多個收件者。
 
 <!-- >>[!NOTE]
 >
@@ -63,25 +63,25 @@ ht-degree: 0%
 
 1. Click ![save](assets/save_icon.svg) to save the changes. -->
 
-### 使用「自適應表單」欄位名稱動態建立電子郵件內容 {#using-adaptive-form-field-names-to-dynamically-create-email-content}
+### 使用適用性表單欄位名稱以動態方式建立電子郵件內容 {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
-自適應表單中的欄位名稱稱為佔位符，用戶提交表單後，這些佔位符將替換為該欄位的值。
+適用性表單中的欄位名稱稱為預留位置，在使用者提交表單後，會以該欄位的值取代。
 
-在 **[!UICONTROL 發送電子郵件]** 操作中，可以使用執行操作時處理的佔位符。 它意味著電子郵件的標題(如 **[!UICONTROL 至]**。 **[!UICONTROL 抄送]**。 **[!UICONTROL 密件抄送]**。 **[!UICONTROL 主題]**)。
+在 **[!UICONTROL 傳送電子郵件]** 動作時，您可以使用在執行動作時處理的預留位置。 這表示電子郵件的標題(例如 **[!UICONTROL 結束日期]**, **[!UICONTROL CC]**, **[!UICONTROL 密件副本]**, **[!UICONTROL 主旨]**)會在使用者提交表單時產生。
 
-要定義佔位符，請指定 `${<field name>}` 在 **[!UICONTROL 發送電子郵件]** 作為「提交操作」。
+要定義佔位符，請指定 `${<field name>}` 在欄位中選取 **[!UICONTROL 傳送電子郵件]** 作為提交動作。
 
-例如，如果窗體包含 **[!UICONTROL 電子郵件地址]** 欄位，命名 `email_addr`，要捕獲用戶的電子郵件ID，可以在 **[!UICONTROL 至]**。 **[!UICONTROL 抄送]**&#x200B;或 **[!UICONTROL 密件抄送]** 的子菜單。
+例如，如果表單包含 **[!UICONTROL 電子郵件地址]** 欄位，已命名 `email_addr`，若要擷取使用者的電子郵件ID，您可以在 **[!UICONTROL 結束日期]**, **[!UICONTROL CC]**，或 **[!UICONTROL 密件副本]** 欄位。
 
 `${email_addr}`
 
-當用戶提交表單時，會向在 `email_addr` 的子菜單。
+當使用者提交表單時，會傳送電子郵件至 `email_addr` 欄位。
 
 >[!NOTE]
 >
 >您可以在 **[!UICONTROL 編輯]** 對話框。
 
-變數佔位符也可用於 **[!UICONTROL 主題]** 和 **[!UICONTROL 電子郵件模板]** 的子菜單。
+變數預留位置也可用於 **[!UICONTROL 主旨]** 和 **[!UICONTROL 電子郵件範本]** 欄位。
 
 例如：
 
@@ -95,5 +95,5 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->可重複面板中的欄位不能用作變數佔位符。
+>可重複面板中的欄位無法作為變數預留位置。
 
