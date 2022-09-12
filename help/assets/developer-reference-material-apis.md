@@ -1,6 +1,6 @@
 ---
 title: 的開發人員參考 [!DNL Assets]
-description: '"[!DNL Assets] API和開發人員參考內容可讓您管理資產，包括二進位檔案、中繼資料、轉譯、留言和 [!DNL Content Fragments]."'
+description: "[!DNL Assets] API和開發人員參考內容可讓您管理資產，包括二進位檔案、中繼資料、轉譯、留言和 [!DNL Content Fragments]."
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
