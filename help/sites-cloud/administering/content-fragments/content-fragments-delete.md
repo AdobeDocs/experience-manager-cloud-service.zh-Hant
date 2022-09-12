@@ -1,7 +1,8 @@
 ---
 title: 內容片段 - 刪除考量事項
-description: 在中定義內容片段刪除策略之前，請查看這些重要注意事項AEM。 內容片段是提供無頭內容的強大工具，刪除它們的含義必須仔細考慮。
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+description: 在AEM中定義內容片段刪除原則前，請先檢閱這些重要考量事項。 內容片段是傳遞無頭內容的強大工具，刪除這些片段的含意必須謹慎考量。
+exl-id: f6698dd8-3e2a-44ac-b00f-df578aa85ffe
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 10%
@@ -10,73 +11,73 @@ ht-degree: 10%
 
 # 內容片段 - 刪除考量事項 {#content-fragments-delete-considerations}
 
-在中定義內容片段刪除策略之前，請查看這些重要注意事項AEM。 內容片段是提供無頭內容的強大工具，刪除它們的含義必須仔細考慮。
+在AEM中定義內容片段刪除原則前，請先檢閱這些重要考量事項。 內容片段是傳遞無頭內容的強大工具，刪除這些片段的含意必須謹慎考量。
 
 ## 權限 — 刪除或不刪除 {#permissions-delete-or-not-delete}
 
-刪除內容的能力非常強大，但可能是敏感的，許多行業需要限制和控制這些權限的分配方式。
+刪除內容的能力強大，但可能很敏感，許多行業需要限制和控制這些權限的分配方式。
 
-關於刪除權限，必須在兩個級別考慮內容片段：
+關於刪除權限，內容片段必須在兩個層級考量：
 
-1. **內容片段作為單個實體。**
+1. **內容片段為單一實體。**
 
-   * **用例**:需要編輯/更新內容片段的用戶 —  **並刪除整個片段**。
-   * **權限**:可以通過「用戶和/或組管理」來分配「刪除」權限。 <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **使用案例**:需要編輯/更新內容片段的使用者 —  **並刪除整個片段**.
+   * **權限**:可透過「使用者」和/或「群組管理」來指派「刪除」權限。 <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-2. **構成內容片段的多個子實體；例如，變體，子節點。**
+2. **組成內容片段的多個子實體；例如，變異、子節點。**
 
-   內容片段編輯器的基本操作要求可以刪除此類臨時子元素。 例如，在操縱變體時；編輯元資料或管理關聯內容時。
+   內容片段編輯器的基本操作要求可以刪除這種暫時的子元素。 例如，在操縱變異時；編輯中繼資料或管理相關內容時，也會一併啟用。
 
-   * **用例**:需要編輯/更新內容片段的用戶 —  **不允許刪除整個片段**。
-   * **權限**:請參閱 [僅編輯器功能所需的權限](#permissions-required-for-editor-functionality-only)。
-
->[!NOTE]
->
->當用戶沒有任何「刪除」權限時，內容片段編輯器將在 *只讀* 的子菜單。 <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+   * **使用案例**:需要編輯/更新內容片段的使用者 —  **而不允許刪除整個片段**.
+   * **權限**:請參閱 [僅編輯器功能所需的權限](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >
->另請參閱中的「如何審核用戶管理操AEM作」。 <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
+>當使用者沒有任何刪除權限時，內容片段編輯器會在 *只讀* 模式。 <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+
+>[!NOTE]
+>
+>另請參閱如何在AEM中稽核使用者管理作業。 <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
 ## 僅編輯器功能所需的權限 {#permissions-required-for-editor-functionality-only}
 
 對於需要編輯/更新內容片段而不允許他們刪除整個片段的使用者 ****，必須指派特定權限，因為內容片段編輯器的基本操作要求可以刪除暫時的子元素。
 
-例如，在操縱變體時；編輯元資料或管理關聯內容時。
+例如，在操縱變異時；編輯中繼資料或管理相關內容時，也會一併啟用。
 
 >[!NOTE]
 >
->編輯/更新內容片段所需的刪除權限包含在通過「用戶」和/或「組管理」分配的「刪除」權限中。 <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+>編輯/更新內容片段所需的刪除權限，會包含在透過「使用者」和/或「群組管理」指派的「刪除」權限中。 <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-編輯/更新片段所需的權限需要應用於包含內容片段的節點或相應的父節點（位於以下任何級別） `/content/dam`)。 當分配給這樣的父節點時，權限將應用於該分支中的所有節點。
+編輯/更新片段所需的權限需要套用至包含內容片段的節點或適當的父節點（位於「 」下的任何層級） `/content/dam`)。 當指派給此父節點時，權限會套用至該分支內的所有節點。
 
-例如，將保存所有內容片段的資料夾，如：
+例如，會保留所有內容片段的資料夾，例如：
 
 * `/content/dam/contentfragments`
 
 >[!CAUTION]
 >
->設定權限 `/content/dam` 也是可能的，因為所有內容片段都儲存在這裡。
+>在 `/content/dam` 也是可能的，因為所有內容片段都儲存在此處。
 >
->但是，此操作將相同的刪除權限應用於 *全部* 其他資產類型。
+>但此動作會將相同的刪除權限套用至 *all* 其他資產類型。
 
-允許特定用戶和/或組編輯/更新內容片段的權限先決條件是：
+允許特定使用者和/或群組編輯/更新內容片段的權限先決條件為：
 
 >[!NOTE]
 >
->此清單顯示所需的所有權限，而不僅顯示刪除權限。
+>此清單顯示所需的所有權限，而不只是刪除權限。
 
-* 對於「內容片段」節點或資料夾：
+* 對於內容片段節點或資料夾：
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* 對於 `jcr:content`所有內容片段的節點：
+* 若 `jcr:content`所有內容片段的節點：
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` 和 `jcr:removeChildNodes`
 
-* 適用於以下所有節點 `jcr:content` 所有內容片段：
+* 適用於以下所有節點 `jcr:content` 所有內容片段的：
 
-   * `jcr:addChildNodes`。 `jcr:modifyProperties` 和 `jcr:removeChildNodes`。 `jcr:removeNode`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` 和 `jcr:removeChildNodes`, `jcr:removeNode`
 
 <!-- There is no CRXDE Lite -->
 
