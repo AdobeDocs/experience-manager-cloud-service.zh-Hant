@@ -1,6 +1,6 @@
 ---
-title: 商AEM務整合框架與Adobe Commerce
-description: 而AEMAdobe Commerce則利用商業整合框架(CIF)進行無縫整合。 CIF使AEM用GraphQL訪問Adobe Commerce實例並與Adobe Commerce通信。 它還允許AEM作者使用產品和類別選擇器以及產品控制台瀏覽從Adobe Commerce按需獲取的產品和類別資料。 此外，CIF還提供了一個現成的店面，可以加快商業項目。
+title: AEM與Adobe Commerce使用Commerce Integration Framework整合
+description: AEM和Adobe Commerce可透過Commerce Integration Framework(CIF)順暢整合。 CIF可讓AEM存取Adobe Commerce執行個體，並透過GraphQL與Adobe Commerce通訊。 此外，AEM作者也可以使用產品和類別選擇器，以及產品主控台，瀏覽從Adobe Commerce依需求擷取的產品和類別資料。 此外，CIF提供現成可加速商業項目的店面。
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
 source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
@@ -10,43 +10,43 @@ ht-degree: 1%
 
 ---
 
-# 利用AEM商務整合框架實現Adobe Commerce整合 {#aem-framework}
+# AEM與Adobe Commerce使用Commerce Integration Framework整合 {#aem-framework}
 
-該Experience Manager和Adobe Commerce利用商業整合框架(CIF)進行無縫整合。 CIF使AEM用Adobe Commerce的 [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/)。
-
->[!NOTE]
->
-> 支援的GraphQL API最低版本為2.3.5。某些功能僅在較新版本或僅在Adobe Commerce版中受支援。
+Experience Manager與Adobe Commerce可透過Commerce Integration Framework(CIF)順暢整合。 CIF可讓AEM使用Adobe Commerce直接存取商務執行個體並與其通訊 [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/).
 
 >[!NOTE]
 >
->GraphQL目前在Adobe Experience Manager()as a Cloud Service的兩種(單獨AEM的)情形中使用：
+> 最低支援的GraphQL API版本為2.3.5。某些功能僅在較新版本或Adobe Commerce版本中受支援。
+
+>[!NOTE]
 >
->* 此情形是CIF通過GraphQL與商業通信。
->* [內AEM容片段與AEMGraphQL API（基於標準GraphQL的自定義實現）一起工作，以提供結構化內容供您的應用程式使用](/help/headless/graphql-api/content-fragments.md)。
+>Adobe Experience Manager(AEM)as a Cloud Service中，GraphQL目前用於兩種（個別）的情況：
+>
+>* 此情境中，CIF會透過GraphQL與商務通訊。
+>* [AEM內容片段可與AEM GraphQL API（以標準GraphQL為基礎的自訂實作）搭配使用，提供結構化內容以供您的應用程式使用](/help/headless/graphql-api/content-fragments.md).
 
 
-## 體系結構概述 {#overview}
+## 架構概述 {#overview}
 
-總體體系結構如下：
+整體架構如下：
 
-![CIF體系結構概述](../assets/AEM_Magento_Architecture.png)
+![CIF架構概觀](../assets/AEM_Magento_Architecture.png)
 
-在CIF中，支援伺服器端和客戶端通信模式。
-伺服器端API調用是使用內置的通用 [GraphQL客戶端](https://github.com/adobe/commerce-cif-graphql-client) 與 [生成的資料模型集](https://github.com/adobe/commerce-cif-magento-graphql) GraphQL架構。 此外，可以使用任何GQL格式的GraphQL查詢或變異。
+CIF內支援伺服器端和用戶端通訊模式。
+伺服器端API呼叫是使用內建的一般實作 [GraphQL客戶端](https://github.com/adobe/commerce-cif-graphql-client) 與 [生成的資料模型集](https://github.com/adobe/commerce-cif-magento-graphql) （商務GraphQL架構）。 此外，還可以使用GQL格式的任何GraphQL查詢或變異。
 
-對於客戶端元件，使用 [反應](https://reactjs.org/)，也請參見Wiki頁。 [阿波羅客戶](https://www.apollographql.com/docs/react/) 的子菜單。
+針對用戶端元件，使用 [React](https://reactjs.org/), [阿波羅客戶](https://www.apollographql.com/docs/react/) 中所有規則的URL區段。
 
-## CIF核AEM心元件體系結構 {#cif-core-components}
+## AEM CIF核心元件架構 {#cif-core-components}
 
-![CIF核AEM心元件體系結構](../assets/cif-component-architecture.jpg)
+![AEM CIF核心元件架構](../assets/cif-component-architecture.jpg)
 
-[AEMCIF核心元件](https://github.com/adobe/aem-core-cif-components) 遵循非常相似的設計模式和最佳做法 [AEMWCM核心元件](https://github.com/adobe/aem-core-wcm-components)。
+[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components) 遵循與 [AEM WCM核心元件](https://github.com/adobe/aem-core-wcm-components).
 
-CIF核心元件的業務邏輯和與Adobe CommerceAEM的後端通信在Sling模型中實現。 如果需要自定義此邏輯以滿足項目特定要求，則可以使用Sling模型的委託模式。
+AEM CIF核心元件與Adobe Commerce的商業邏輯和後端通訊是在Sling模型中實作。 如果您需要自訂此邏輯以符合專案特定需求，則可使用Sling模型的委派模式。
 
 >[!TIP]
 >
->的 [自定義AEMCIF核心元件](../customizing/customize-cif-components.md) 頁面提供了有關如何自定義CIF核心元件的詳細示例和最佳實踐。
+>此 [自訂AEM CIF核心元件](../customizing/customize-cif-components.md) 頁面提供自訂CIF核心元件的詳細範例和最佳實務。
 
-在項目中，AEM CIF核心元件和定制項目元件可以通過Sling Context-Aware配置輕鬆檢索與頁面關聯的Adobe Commerce儲存的AEM配置客戶端。
+在專案中，AEM CIF核心元件和自訂專案元件可透過Sling內容感知設定，輕鬆擷取與AEM頁面相關聯的Adobe Commerce存放區所設定的用戶端。
