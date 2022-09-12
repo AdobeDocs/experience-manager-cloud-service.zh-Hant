@@ -1,22 +1,23 @@
 ---
-title: 內容傳輸工具概述（舊版）
+title: 內容轉移工具概觀（舊版）
 description: 內容轉移工具綜覽
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: dd031580-e9d7-461e-8689-9bc3dbb2121b
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 63%
 
 ---
 
-# 內容傳輸工具概述（舊版） {#overview-content-transfer-tool}
+# 內容轉移工具概述（舊版） {#overview-content-transfer-tool}
 
 「內容轉移工具」是 Adobe 開發的工具，可用來將現有內容從來源 AEM 例項 (內部部署或 AMS) 移至目標 AEM 雲端服務例項。
 
 此工具也會自動轉移主體 (使用者或群組)。
 
-## 內容傳輸工具中的階段 {#phases-content-transfer-tool}
+## 內容轉移工具中的階段 {#phases-content-transfer-tool}
 
 有兩個階段與內容轉移相關聯：
 
@@ -25,17 +26,17 @@ ht-degree: 63%
    如需詳細資訊，請參考[內容轉移中的提取程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html)。
 
    >[!NOTE]
-   > 建議在抽取階段運行用戶映射工具。 請參閱 [使用用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html) 的子菜單。
+   > 建議在提取階段中執行使用者對應工具。 請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html) 以取得更多詳細資訊。
 
 1. **擷取**：擷取指的是從&#x200B;*移轉集*&#x200B;擷取內容，並存放至目標雲端服務例項。
 
-   請參閱 [內容傳輸中的攝取過程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html) 的子菜單。
+   請參閱 [內容轉移中的擷取程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html) 以取得更多詳細資訊。
 
-## 遷移集的屬性 {#attributes-migration-set}
+## 移轉集的屬性 {#attributes-migration-set}
 
 移轉集有下列屬性：
 
-* 在內容傳輸活動期間，一次最多可建立和維護十個遷移集。
+* 在內容轉移活動期間，一次最多可建立並維護10個移轉集。
 * 每個移轉集的名稱必須是唯一的。
 * 如果移轉集已停用超過 30 天，則會自動刪除。
 * 無論何時建立移轉集，它都與特定環境有關聯。您只能將內容擷取至相同環境中的製作或發佈例項。
@@ -52,4 +53,4 @@ ht-degree: 63%
 
 ## 下一步 {#whats-next}
 
-瞭解內容傳輸工具及其描述此工具的概述後，您就可以將現有內容從源實例AEM（本地或AMS）移到目標AEM Cloud Service實例，您必須查看 [內容傳輸工具的先決條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en)。
+了解「內容轉移工具」及其概觀（說明此工具）後，您就必須檢閱，才能將現有內容從來源AEM例項（內部部署或AMS）移至目標AEM Cloud Service例項 [內容轉移工具的必要條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
