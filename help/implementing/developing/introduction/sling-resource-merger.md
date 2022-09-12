@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager as a Cloud ServiceSling資源合併
-description: Sling Resource Compurate提供訪問和合併資源的服務
+title: 在Adobe Experience Manager as a Cloud Service中使用Sling Resource Merger
+description: Sling Resource Merger提供存取和合併資源的服務
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
@@ -11,44 +11,44 @@ ht-degree: 2%
 
 # 在 AEM as a Cloud Service 中使用 Sling Resource Merger {#using-the-sling-resource-merger-in-aem}
 
-## 目的 {#purpose}
+## 用途 {#purpose}
 
-Sling Resource Compurate提供訪問和合併資源的服務。 它為以下兩項提供了差異（差異）機制：
+Sling Resource Merger提供存取和合併資源的服務。 它為以下兩者提供差異（差異）機制：
 
-* **[覆蓋](/help/implementing/developing/introduction/overlays.md)** 使用 [搜索路徑](/help/implementing/developing/introduction/overlays.md#search-paths)。
+* **[覆蓋](/help/implementing/developing/introduction/overlays.md)** 使用 [搜尋路徑](/help/implementing/developing/introduction/overlays.md#search-paths).
 
-* **覆蓋** 啟用觸摸的UI的元件對話框(`cq:dialog`)，使用資源類型層次結構(通過屬性 `sling:resourceSuperType`)。
+* **覆寫** 觸控式UI的元件對話方塊(`cq:dialog`)，使用資源類型階層(透過屬性 `sling:resourceSuperType`)。
 
-使用Sling Resource Mobare，重疊/覆蓋資源和/或屬性與原始資源/屬性合併：
+透過Sling Resource Merger，覆蓋/覆寫資源和/或屬性會與原始資源/屬性合併：
 
-* 自定義定義的內容比原始定義的內容具有更高的優先順序(即 *重疊* 或 *覆蓋* )。
+* 自訂定義的內容具有比原始定義更高的優先順序(即 *覆蓋* 或 *覆寫* )。
 
-* 必要時， [屬性](#properties) 定義，指明如何使用從原始檔案合併的內容。
-
->[!CAUTION]
->
->Sling資源合併及相關方法只能與啟用觸摸的UI一起使用(該UI是唯一可用於AEMas a Cloud Service的UI)。
-
-### 目標AEM {#goals-for-aem}
-
-在中使用Sling Resource Compure的目AEM標是：
-
-* 確保未在中進行自定義更改 `/libs`。
-* 減少複製自 `/libs`。
-
-   使用Sling Resource Mobale時，建議不要從 `/libs` 這將導致在自定義中保留太多資訊(通常 `/apps`)。 當系統以任何方式升級時，重複資訊會不必要地增加出現問題的可能性。
+* 必要時， [屬性](#properties) 在自訂中定義，指出如何使用合併自原始內容的內容。
 
 >[!CAUTION]
 >
->你 ***必須*** 沒有改變 `/libs` 路徑。
+>Sling Resource Merger及相關方法只能搭配觸控式UI使用(這是唯一可供AEMas a Cloud Service使用的UI)。
+
+### AEM目標 {#goals-for-aem}
+
+在AEM中使用Sling Resource Merger的目標為：
+
+* 確保未在中進行自訂變更 `/libs`.
+* 減少從複製的結構 `/libs`.
+
+   使用Sling Resource Merger時，不建議從 `/libs` 因此，會導致在自訂中保留太多資訊(通常 `/apps`)。 以任何方式升級系統時，重複資訊會不必要地增加出現問題的機會。
+
+>[!CAUTION]
 >
->這是因為 `/libs` 可能會在將升級應用到實例時被覆蓋。
+>您 ***必須*** 不會變更 `/libs` 路徑。
 >
->* 重疊取決於 [搜索路徑](/help/implementing/developing/introduction/overlays.md#search-paths)。
+>這是因為 `/libs` 只要將升級套用至執行個體，即可加以覆寫。
 >
->* 替代不依賴於搜索路徑，它們使用屬性 `sling:resourceSuperType` 建立聯繫。
+>* 覆蓋圖取決於 [搜尋路徑](/help/implementing/developing/introduction/overlays.md#search-paths).
 >
->但是，覆蓋通常在 `/apps`，因為在as a Cloud Service中的AEM最佳做法是在 `/apps`;因為你不能在 `/libs`。
+>* 覆寫不取決於搜尋路徑，而是使用屬性 `sling:resourceSuperType` 來建立連接。
+>
+>不過，覆寫通常定義於 `/apps`,AEMas a Cloud Service的最佳實務是在下定義自訂 `/apps`;因為您不得變更下方的任何項目 `/libs`.
 
 ### 屬性 {#properties}
 
@@ -58,53 +58,53 @@ Sling Resource Compurate提供訪問和合併資源的服務。 它為以下兩�
 
    指定要隱藏的屬性或屬性清單。
 
-   通配符 `*` 全部隱藏。
+   萬用字元 `*` 全部隱藏。
 
 * `sling:hideResource` ( `Boolean`)
 
-   指示是否應完全隱藏資源，包括其子資源。
+   指出是否應完全隱藏資源，包括其子項。
 
 * `sling:hideChildren` ( `String` 或 `String[]`)
 
-   包含要隱藏的子節點或子節點清單。 將維護節點的屬性。
+   包含要隱藏的子節點或子節點清單。 節點的屬性將會保留。
 
-   通配符 `*` 全部隱藏。
+   萬用字元 `*` 全部隱藏。
 
 * `sling:orderBefore` ( `String`)
 
-   包含當前節點應位於的前面的同級節點的名稱。
+   包含當前節點應位於前面的同級節點的名稱。
 
-這些屬性影響相應/原始資源/屬性(來自 `/libs`)由覆蓋/覆蓋使用(通常在 `/apps`)。
+這些屬性會影響對應/原始資源/屬性(來自 `/libs`)會由覆蓋/覆寫使用(通常在 `/apps`)。
 
 ### 建立結構 {#creating-the-structure}
 
-要建立覆蓋或覆蓋，您需要在目標（通常是）下重新建立具有等效結構的原始節點 `/apps`)。 例如：
+若要建立覆蓋或覆寫，您必須在目標(通常為 `/apps`)。 例如：
 
 * 覆蓋
 
-   * 「站點」控制台的導航條目定義，如滑軌中所示，定義如下：
+   * 如邊欄中所示，Sites主控台的導覽項目定義如下：
 
       `/libs/cq/core/content/nav/sites/jcr:title`
 
-   * 要覆蓋此節點，請建立以下節點：
+   * 若要覆蓋，請建立下列節點：
 
       `/apps/cq/core/content/nav/sites`
 
-      然後更新屬性 `jcr:title` 按需要。
+      然後更新屬性 `jcr:title` 視需要。
 
 * 覆寫
 
-   * 「文本」控制台的「啟用觸摸」對話框的定義在以下位置定義：
+   * Texts控制台的觸控式對話方塊的定義，定義於：
 
       `/libs/foundation/components/text/cq:dialog`
 
-   * 要覆蓋此項，請建立以下節點 — 例如：
+   * 若要覆寫此值，請建立下列節點，例如：
 
       `/apps/the-project/components/text/cq:dialog`
 
-要建立其中任何一種，您只需重新建立骨架結構。 為了簡化結構的重構，所有中間節點都可以是類型 `nt:unstructured` (不需要反映原節點類型；例如，在 `/libs`)。
+要建立其中任一項，您只需重新建立骨架結構。 為簡化結構的重構，所有中間節點都可以是類型 `nt:unstructured` (不必反映原節點類型；例如， `/libs`)。
 
-因此，在上面的覆蓋示例中，需要以下節點：
+因此，在上述覆蓋範例中，需要下列節點：
 
 ```shell
 /apps
@@ -117,126 +117,126 @@ Sling Resource Compurate提供訪問和合併資源的服務。 它為以下兩�
 
 >[!NOTE]
 >
->使用Sling Resource Mobale（即，在處理標準的啟用觸摸的UI時）時，建議不要從 `/libs` 因為它會導致太多資訊 `/apps`。 這會在系統以任何方式升級時引起問題。
+>使用Sling Resource Merger時（亦即處理標準觸控式UI時），不建議從 `/libs` 因此，將導致資訊被保留過多 `/apps`. 這在系統以任何方式升級時都可能造成問題。
 
 ### 使用案例 {#use-cases}
 
-這些功能與標準功能相結合，使您能夠：
+這些功能與標準功能結合，可讓您：
 
-* **添加屬性**
+* **新增屬性**
 
-   該屬性在 `/libs` 定義，但在 `/apps` 覆蓋/覆蓋。
+   屬性不存在於 `/libs` 定義，但是 `/apps` 覆蓋/覆寫。
 
-   1. 在內建立相應的節點 `/apps`
-   1. 在此節點「」上建立新屬性
+   1. 在內建立對應的節點 `/apps`
+   1. 在此節點上建立新屬性「
 
-* **重定義屬性（不是自動建立的屬性）**
+* **重定義屬性（非自動建立的屬性）**
 
-   屬性在中定義 `/libs`，但在 `/apps` 覆蓋/覆蓋。
+   屬性定義於 `/libs`，但需要新值 `/apps` 覆蓋/覆寫。
 
-   1. 在內建立相應的節點 `/apps`
-   1. 在此節點上建立匹配屬性（在/下） `apps`)
+   1. 在內建立對應的節點 `/apps`
+   1. 在此節點上建立相符的屬性（在/底下） `apps`)
 
-      * 屬性將具有基於Sling資源解析器配置的優先順序。
-      * 支援更改屬性類型。
+      * 屬性的優先順序會以Sling資源解析器設定為基礎。
+      * 支援變更屬性類型。
 
-         如果使用的屬性類型與中使用的屬性類型不同 `/libs`，則將使用您定義的屬性類型。
+         如果您使用的屬性類型與 `/libs`，則會使用您定義的屬性類型。
    >[!NOTE]
    >
-   >支援更改屬性類型。
+   >支援變更屬性類型。
 
 * **重定義自動建立的屬性**
 
-   預設情況下，自動建立的屬性(如 `jcr:primaryType`)不受覆蓋/覆蓋的影響，以確保當前位於 `/libs` 受人尊重。 要施加覆蓋/覆蓋，必須在中重新建立節點 `/apps`，顯式隱藏屬性並重定義它：
+   依預設，自動建立的屬性(例如 `jcr:primaryType`)不受覆蓋/覆寫的限制，以確保目前位在下的節點類型 `/libs` 受人尊重。 若要加上覆蓋/覆寫，您必須在中重新建立節點 `/apps`，顯式隱藏屬性並重定義它：
 
-   1. 在下面建立相應節點 `/apps` 與期望 `jcr:primaryType`
-   1. 建立屬性 `sling:hideProperties` 在該節點上，將值設定為自動建立屬性的值；比如說， `jcr:primaryType`
+   1. 在下建立對應的節點 `/apps` 與所需 `jcr:primaryType`
+   1. 建立屬性 `sling:hideProperties` 在該節點上，將值設為自動建立屬性的值；例如， `jcr:primaryType`
 
-      此屬性，定義於 `/apps`，現在將優先於在 `/libs`
+      此屬性，定義於 `/apps`，現在會比下定義的優先順序 `/libs`
 
-* **重定義節點及其子級**
+* **重新定義節點及其子節點**
 
-   節點及其子代在中定義 `/libs`，但在 `/apps` 覆蓋/覆蓋。
+   節點及其子項定義於 `/libs`，但需要新的設定 `/apps` 覆蓋/覆寫。
 
-   1. 組合下列操作：
+   1. 結合下列動作：
 
-      1. 隱藏節點的子級（保留節點的屬性）
+      1. 隱藏節點的子項（保留節點的屬性）
       1. 重定義屬性/屬性
 
 * **隱藏屬性**
 
-   屬性在中定義 `/libs`，但在 `/apps` 覆蓋/覆蓋。
+   屬性定義於 `/libs`，但不是 `/apps` 覆蓋/覆寫。
 
-   1. 在內建立相應的節點 `/apps`
-   1. 建立屬性 `sling:hideProperties` 類型 `String` 或 `String[]`。 使用此選項可指定要隱藏/忽略的屬性。 也可以使用通配符。 例如：
+   1. 在內建立對應的節點 `/apps`
+   1. 建立屬性 `sling:hideProperties` 類型 `String` 或 `String[]`. 使用它指定要隱藏/忽略的屬性。 您也可以使用萬用字元。 例如：
 
       * `*`
       * `["*"]`
       * `jcr:title`
       * `["jcr:title", "jcr:description"]`
 
-* **隱藏節點及其子級**
+* **隱藏節點及其子代**
 
-   節點及其子代在中定義 `/libs`，但在 `/apps` 覆蓋/覆蓋。
+   節點及其子項定義於 `/libs`，但不是 `/apps` 覆蓋/覆寫。
 
-   1. 在/apps下建立相應的節點
+   1. 在/apps下建立對應節點
    1. 建立屬性 `sling:hideResource`
 
       * 類型: `Boolean`
       * 值: `true`
 
-* **隱藏節點的子級（同時保留節點的屬性）**
+* **隱藏節點的子項（同時保留節點的屬性）**
 
-   節點、其屬性及其子代在中定義 `/libs`。 節點及其屬性在 `/apps` 覆蓋/覆蓋，但是在 `/apps` 覆蓋/覆蓋。
+   節點、其屬性及其子項定義於 `/libs`. 節點及其屬性是 `/apps` 覆蓋/覆蓋，但部分或所有子節點在 `/apps` 覆蓋/覆寫。
 
-   1. 在下面建立相應節點 `/apps`
+   1. 在下建立對應的節點 `/apps`
    1. 建立屬性 `sling:hideChildren`:
 
       * 類型: `String[]`
-      * 值：子節點清單（如中定義） `/libs`)隱藏/忽略
+      * 值：子節點的清單(如 `/libs`)以隱藏/忽略
 
       通配符&amp;ast;可用於隱藏/忽略所有子節點。
 
 
 * **重新排序節點**
 
-   節點及其同級在 `/libs`。 需要新位置，因此在 `/apps` 覆蓋/覆蓋，其中新位置是在引用中相應的同級節點時定義的 `/libs`。
+   節點及其同層級在 `/libs`. 需要新位置，因此會在 `/apps` 覆蓋/覆蓋，其中新位置是在參考中適當的同級節點時定義 `/libs`.
 
    * 使用 `sling:orderBefore` 屬性：
 
-      1. 在下面建立相應節點 `/apps`
+      1. 在下建立對應的節點 `/apps`
       1. 建立屬性 `sling:orderBefore`:
 
-         這指定節點(如 `/libs`)當前節點應位於以下位置之前：
+         這會指定節點(如 `/libs`)，目前節點應放置在以下位置之前：
 
          * 類型: `String`
          * 值: `<before-SiblingName>`
 
-### 從您的代碼中調用Sling資源合併 {#invoking-the-sling-resource-merger-from-your-code}
+### 從程式碼叫用Sling Resource Merger {#invoking-the-sling-resource-merger-from-your-code}
 
-Sling資源合併包括兩個自定義資源提供商 — 一個用於覆蓋，另一個用於覆蓋。 可以使用裝載點在代碼中調用以下每項：
+Sling Resource Merger包含兩個自訂資源提供者：一個用於覆蓋，另一個用於覆寫。 您可以使用裝載點在您的代碼中叫用其中的每一項：
 
 >[!NOTE]
 >
 >訪問資源時，建議使用適當的裝載點。
 >
->這可確保調用Sling資源合併並返回完全合併的資源（減少需要從中複製的結構） `/libs`)。
+>這可確保叫用Sling Resource Merger並傳回完全合併的資源(減少需要從 `/libs`)。
 
 * 覆蓋:
 
-   * 目的：根據其搜索路徑合併資源
+   * 目的：根據資源的搜索路徑合併資源
    * 裝載點： `/mnt/overlay`
    * 用法： `mount point + relative path`
-   * 示例：
+   * 範例：
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
 * 覆寫:
 
-   * 目的：基於其超級類型合併資源
+   * 目的：根據資源的超類型合併資源
    * 裝載點： `/mnt/overide`
    * 用法： `mount point + absolute path`
-   * 示例：
+   * 範例：
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
