@@ -19,11 +19,11 @@ ht-degree: 90%
 
 >[!TIP]
 >
->查看我們的Experience League課程 [為管理員配AEM置訪問權限](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) 介紹使用Adobe IMS對AEMas a Cloud Service進行身份驗證的用戶，以及如何使用Adobe IMS用戶、用戶組和產品配置檔案來控制對其功能及AEM其訪問。 Adobe ID必填。
+>查看我們的Experience League課程 [設定管理員的AEM存取權](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) 了解使用者如何使用Adobe IMS執行AEMas a Cloud Service驗證，以及如何使用Adobe IMS使用者、使用者群組和產品設定檔來控制AEM存取權及其功能。 Adobe ID為必要。
 
 >[!NOTE]
 >
->當AEM前不支援將組分配給配置檔案。 應單獨添加用戶。
+>AEM目前不支援將群組指派給設定檔。 使用者應改為個別新增。
 
 ## 重要焦點 {#key-highlights}
 
@@ -132,15 +132,15 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 ### 在 Admin Console 中管理產品和使用者存取權限 {#managing-products-and-user-access-in-admin-console}
 
-當產品管理員登錄到Admin Console時，他們將看到as a Cloud Service產品上AEM下文的多個實例，如下所示。 例如，從 **概述** 頁：
+產品管理員登入Admin Console時，會看到AEMas a Cloud Service產品內容的多個例項，如下所示。 例如，選取 **概述** 頁面：
 
 ![例項登入](/help/security/assets/ims6.png)
 
-您將看到現有實例的清單：
+您會看到現有例項的清單：
 
 ![例項登入 2](/help/security/assets/ims7.png)
 
-在每個產品上下文實例下，將有跨生產、階段或開發環境的作者或發佈服務的實例。 每個實例都將與產品配置檔案或雲管理器角色關聯。 這些產品配置檔案用於為具有所需權限的用戶和組分配訪問權限。
+在每個「產品內容」例項下，都有橫跨生產、預備或開發環境之製作或發佈服務的例項。 每個例項都會與產品設定檔或Cloud Manager角色相關聯。 這些產品設定檔可用來指派存取權給具有必要權限的使用者和群組。
 
 **Administrator_xxx** 設定檔可授與相關聯 AEM 例項的管理員權限，而 **User_xxx** 設定檔則可新增一般使用者。
 
@@ -167,7 +167,7 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 
 >[!NOTE]
 >
->在 IMS 中建立的任何使用者都可使用 Adobe ID 或 Federated ID 來建立。如果用戶是使用Federated ID進行設定的，則使用其公司的身份提供程式對其進行身份驗證以登錄。
+>在 IMS 中建立的任何使用者都可使用 Adobe ID 或 Federated ID 來建立。如果使用Federated ID來設定使用者，則使用者需透過公司的身分提供者來登入，以通過驗證。
 
 接著，系統會將使用者重新導向至 IMS 登入畫面，此時使用者需輸入憑證：
 
