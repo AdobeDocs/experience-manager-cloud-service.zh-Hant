@@ -1,6 +1,6 @@
 ---
-title: '建立生產程式 '
-description: 瞭解如何使用雲管理器建立您自己的生產程式來承載即時流量。
+title: 建立生產計畫
+description: 了解如何使用Cloud Manager建立您自己的生產程式來托管即時流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
 workflow-type: tm+mt
@@ -10,73 +10,73 @@ ht-degree: 0%
 ---
 
 
-# 建立生產程式 {#create-production-program}
+# 建立生產計畫 {#create-production-program}
 
-生產程式面向熟悉和AEMCloud Manager並準備開始編寫、構建和測試代碼的用戶，目標是將其部署到即時流量主機。
+生產計畫是專為熟悉AEM和Cloud Manager且準備好開始編寫、建立和測試程式碼，以將程式碼部署至托管即時流量的使用者而設計。
 
-瞭解有關文檔中程式類型的詳細資訊 [瞭解程式和程式類型。](program-types.md)
+進一步了解檔案中的方案類型 [了解方案和方案類型。](program-types.md)
 
-## 視頻Tutorials {#video-tutorials}
+## 視訊Tutorials {#video-tutorials}
 
-您可以觀看這兩個教程視頻，以瞭解如何在雲管理器中建立程式或 [按照我們的文檔說明進行操作。](#create)
+您可以觀看這兩個教學課程影片，了解如何在Cloud Manager中建立方案，或 [請依照我們記錄的指示操作。](#create)
 
 >[!VIDEO](https://video.tv.adobe.com/v/334953)
 
 >[!VIDEO](https://video.tv.adobe.com/v/334954)
 
-## 建立生產程式 {#create}
+## 建立生產計畫 {#create}
 
-按照以下步驟建立生產程式。
+請依照下列步驟建立生產程式。
 
-1. 登錄到Cloud Manager(位於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇相應的組織。
+1. 登入Cloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選取適當的組織。
 
 1. 按一下 **添加程式** 從螢幕的右上角。
 
-   ![雲管理器登錄頁](assets/first_timelogin1.png)
+   ![Cloud manager登陸頁面](assets/first_timelogin1.png)
 
-1. 選擇 **為生產設定** 建立程式嚮導中建立生產程式。 您可以接受預設程式名稱，或在按一下 **繼續**。
+1. 選擇 **為生產環境設定** 在「建立程式」嚮導中建立生產程式。 您可以接受預設程式名稱，或在按一下 **繼續**.
 
    ![建立程式嚮導](assets/create-prod1.png)
 
-1. 在 **解決方案和附加模組** 頁籤。
+1. 在 **解決方案和附加元件** 頁簽中，選擇要包含在程式中的解決方案。
 
    ![選擇解決方案](assets/setup-prod-select.png)
 
-1. 按一下解決方案名稱前的雪佛龍，以顯示可選的附加項，如 **商業** 載入項選項 **站點**。
+1. 按一下解決方案名稱前的>形圖示，即可顯示選用的附加元件，例如選取 **商務** 下方的附加選項 **網站**.
 
-   ![選擇載入項](assets/setup-prod-commerce.png)
+   ![選擇附加元件](assets/setup-prod-commerce.png)
 
-1. 選擇瞭解決方案和載入項後，按一下 **繼續**。
+1. 在選取解決方案和附加元件後，按一下 **繼續**.
 
-1. 在 **上線日期** 頁籤，輸入計畫生產程式開始運行的日期。
+1. 在 **上線日期** 頁簽，輸入計畫生產計畫的上線日期。
 
    ![定義計畫上線日期](assets/setup-go-live.png)
 
-   * 此日期可以隨時編輯。
-   * 此日期僅供參考，並觸發程式概述頁面上的「開始使用」小部件，以及時提供到AEMas a Cloud Service最佳做法文檔的產品內連結，以與您的旅程保持一致，最終獲得成功且流暢的開始使用體驗。
+   * 您可以隨時編輯此日期。
+   * 此日期僅供參考，並會觸發計畫概述頁面上的上線介面工具集，即時提供產品內連結至AEMas a Cloud Service最佳實務檔案，以符合您的歷程，最終達成成功且順暢的上線體驗。
 
 1. 按一下&#x200B;**建立**。
 
-您的程式由雲管理器建立，在登錄頁上顯示和選擇。
+您的程式由Cloud Manager建立，並會在登陸頁面上顯示及選取。
 
-![雲管理器概述](assets/navigate-cm.png)
+![Cloud Manager概述](assets/navigate-cm.png)
 
-## 訪問您的程式 {#acessing}
+## 存取您的方案 {#acessing}
 
-1. 在登錄頁上看到程式卡後，選擇省略號按鈕以查看可用的菜單選項。
+1. 在登陸頁面上看到節目卡後，請選取刪節號按鈕，檢視可用的選單選項。
 
-   ![計畫概述](assets/program-overview.png)
+   ![方案概述](assets/program-overview.png)
 
-1. 選擇 **計畫概述** 導航至雲管理器 **概述** 的子菜單。
+1. 選擇 **計畫概述** 導覽至 **概述** 頁面。
 
-1. 概述頁面上的主操作呼叫卡將指導您建立環境、非生產管道，最後建立生產管道。
+1. 概述頁面上的主要動作呼叫卡會引導您建立環境、非生產管道，最後是生產管道。
 
-   ![計畫概述](assets/set-up-prod5.png)
+   ![方案概述](assets/set-up-prod5.png)
 
-如果您需要隨時切換到其他程式或返回概覽頁以建立其他程式，請按一下螢幕左上角的程式名稱以顯示 **導航到** 的雙曲餘切值。
+如果您隨時需要切換至其他程式或返回概覽頁面以建立其他程式，請按一下畫面左上角的程式名稱以顯示 **導覽至** 選項。
 
 ![導航到](assets/create-program-a1.png)
 
 >[!NOTE]
 >
->與 [沙盒程式，](introduction-sandbox-programs.md#auto-creation) 生產程式將要求具有相應雲管理器角色的用戶通過自助服務UI建立項目並添加環境。
+>不同於 [沙箱方案，](introduction-sandbox-programs.md#auto-creation) 生產計畫需要具有適當Cloud Manager角色的使用者，才能建立專案並透過自助服務UI新增環境。
