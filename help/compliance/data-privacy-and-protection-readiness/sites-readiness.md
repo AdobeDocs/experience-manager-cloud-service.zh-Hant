@@ -1,6 +1,6 @@
 ---
-title: 資料保護和資料隱私法規 — Adobe Experience Manager as a Cloud Service站點就緒性
-description: 瞭解Adobe Experience Manager as a Cloud Service站點對各種資料保護和資料隱私法規的支援；包括歐盟一般資料保護條例(GDPR)、加利福尼亞消費者隱私法以及實施新as a Cloud Service項目時如AEM何遵守。
+title: 資料保護與資料隱私權法規 — Adobe Experience Manager as a Cloud Service Sites整備
+description: 了解Adobe Experience Manager as a Cloud Service Sites對各種資料保護和資料隱私權法規的支援；包括歐盟一般資料保護規範(GDPR)、加州消費者隱私法，以及實作新AEMas a Cloud Service專案時如何遵循。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
@@ -9,35 +9,35 @@ ht-degree: 1%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service站點為資料保護和資料隱私法規做好準備 {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager as a Cloud Service Sites對資料保護與資料隱私權法規的整備 {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
->本檔案的內容不構成法律咨詢，也不是作為法律咨詢的替代。
+>本檔案的內容不構成法律建議，且用意並非取代法律建議。
 >
->有關資料保護和資料隱私法規的建議，請咨詢您公司的法律部門。
+>如需資料保護與資料隱私權法規的相關建議，請諮詢貴公司的法律部門。
 
 >[!NOTE]
 >
->有關Adobe對隱私問題的響應以及這對您作為Adobe客戶意味著什麼的詳細資訊，請參閱 [Adobe隱私中心](https://www.adobe.com/privacy.html)。
+>如需有關Adobe對隱私權問題之回應，以及這對您身為Adobe客戶所代表之意義的詳細資訊，請參閱 [Adobe的隱私中心](https://www.adobe.com/privacy.html).
 
-Adobe Experience Manager as a Cloud Service網站已準備好幫助客戶履行其資料隱私和保護合規性義務。 本頁指導客戶完成在AEM Sites處理此類請求的過程。 它描述了儲存的專用資料的位置，以及如何手動或使用代碼刪除這些資料。
+Adobe Experience Manager as a Cloud Service Sites已準備好協助客戶履行其資料隱私權和保護法規遵循義務。 本頁面會引導客戶完成在AEM Sites中處理此類請求的程式。 它說明了儲存的私人資料位置，以及如何手動或使用程式碼移除這些資料。
 
-有關詳細資訊，請參閱 [Adobe隱私中心](https://www.adobe.com/privacy.html)。
+如需詳細資訊，請參閱 [Adobe隱私中心](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->請參閱 [Adobe Experience Manager as a Cloud Service為資料保護和資料隱私法規做好準備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md) 的上界。
+>請參閱 [Adobe Experience Manager as a Cloud Service對資料保護與資料隱私權法規的整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md) 以取得詳細資訊。
 
 ## AEM 作者階層 {#aem-author-tier}
 
-作者伺服器上的用戶帳戶和UGC內容在 [基AEM礎文檔](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)。
+作者伺服器上的使用者帳戶和UGC內容在 [AEM Foundation檔案](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md).
 
 ## AEM 發佈階層 {#aem-publish-tier}
 
-用於驗證站點上訪問者的用戶帳戶以及發佈伺服器上的UGC內容在 [基AEM礎文檔](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)。
+用於驗證網站訪客的使用者帳戶，以及發佈伺服器上的UGC內容，在 [AEM Foundation檔案](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md).
 
-預設情況下，AEM Sites元件不儲存訪問者在發佈伺服器上輸入的表單資料。 建議將資料轉發給第三方系統或Adobe Campaign以進一步處理。
+依預設，AEM Sites元件不會儲存訪客在發佈伺服器上輸入的表單資料。 建議將資料轉送至協力廠商系統或Adobe Campaign以進行進一步處理。
 
 ## 選擇加入/選擇退出 {#opt-in-opt-out}
 
@@ -45,43 +45,43 @@ Adobe Experience Manager as a Cloud Service網站已準備好幫助客戶履行�
 AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) that can be used for managing the opt-in/opt-out for users.
 -->
 
-Adobe Experience Manager受cookie opt-out服務的約束，該服務用於管理用戶的opt-in/opt-out。
+Adobe Experience Manager受限於cookie選擇退出服務，此服務用於管理使用者的選擇加入/退出。
 
-要選擇退出：
+若要退出：
 
 1. 導航到:
    [Adobe隱私中心 — 選擇退出](https://www.adobe.com/privacy/opt-out.html)
 
-1. 向下滾動到 **服務** - **Experience Cloud服務使用資料**。
+1. 向下捲動至 **服務** - **Experience Cloud服務使用量資料**.
 
-1. 選擇引用的連結；當前標題 **這裡**。
+1. 選擇引用的連結；目前標題 **此處**.
 
-1. 您將收到以下詳細資訊，以及選擇退出或加入的選項：
+1. 系統會提供下列詳細資料，以及選擇退出或加入的選項：
 
-   * 要選擇不聚合和分析有關您訪問此站點的資料，必須在瀏覽器上安裝Cookie。 此Cookie標識您已選擇退出。
+   * 若要選擇退出匯總及分析您造訪此網站的相關資料，必須在瀏覽器上安裝Cookie。 此Cookie可識別您已選擇退出。
 
-      如果刪除選擇退出Cookie，或者更改電腦或Web瀏覽器，則需要再次選擇退出。
+      如果您刪除選擇退出Cookie，或變更電腦或網頁瀏覽器，則需要再次選擇退出。
 
-      選擇退出 — 將我排除在訪問者會話聚合和分析之外(安裝 `amcglobal.sc.omtrdc.net` opt-out cookie) — 按一下這裡。
+      選擇退出 — 將我排除在訪客工作階段匯總及分析之外(安裝 `amcglobal.sc.omtrdc.net` 選擇退出cookie) — 按一下這裡。
 
-      選擇加入 — 在訪問者會話聚合和分析中包括我(不安裝 `amcglobal.sc.omtrdc.net` opt-out cookie) — 按一下這裡。
-   按照上述步驟訪問實際連結。
+      選擇加入 — 將我加入訪客工作階段匯總及分析(請勿安裝 `amcglobal.sc.omtrdc.net` 選擇退出cookie) — 按一下這裡。
+   請依照上述步驟來存取實際連結。
 
    >[!NOTE]
    >
-   > 在 **2. 隱私策略.** 的下界 [Adobe一般使用條款](https://www.adobe.com/tw/legal/terms.html)。
+   > 中有進一步說明 **2. 隱私策略.** 區段 [Adobe一般使用條款](https://www.adobe.com/tw/legal/terms.html).
 
-## 分析基礎 {#analytics-foundation}
+## Analytics Foundation {#analytics-foundation}
 
-AEM Sites包括與Analytics Foundation的可選整合，該整合使用Adobe Analytics按需服務中的功能。
+AEM Sites包含與Analytics Foundation的選用整合，後者使用Adobe Analytics隨需服務中的功能。
 
-有關管理與Adobe Analytics有關的資料主題請求的進一步資訊，請參見 [Adobe Analytics與資料隱私](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)。
+如需管理與Adobe Analytics相關的資料主體請求的詳細資訊，請參閱 [Adobe Analytics與資料隱私權](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
-## 按目標排列的個性化基礎 {#personalization-foundation-by-target}
+## 依Target的個人化基礎 {#personalization-foundation-by-target}
 
-AEM Sites公司包括可選的與Personalization Foundation by Target的整合，該整合使用Adobe Target按需服務中的功能。
+AEM Sites包含選用的Personalization Foundation by Target整合，可在Adobe Target隨需服務中使用功能。
 
-有關管理與Adobe Target有關的資料主題請求的進一步資訊，請參見 [Adobe Target — 隱私和一般資料保護法規](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
+如需管理與Adobe Target相關的資料主體請求的詳細資訊，請參閱 [Adobe Target — 隱私權與一般資料保護規範](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -89,73 +89,73 @@ AEM Sites公司包括可選的與Personalization Foundation by Target的整合�
 AEM provides an optional data layer with [ContextHub](/help/sites-developing/contexthub.md).
 -->
 
-提供AEM了可選的ContextHub資料層。 這會保留瀏覽器中特定於訪問者的資料，以用於基於規則的個性化。
+AEM提供ContextHub的選用資料層。 這可讓瀏覽器中的訪客專屬資料保留，以用於規則型個人化。
 
-預設情況下，此訪問者資料不儲存在AEM中；將規AEM則發送到資料層以在瀏覽器中做出個性化決策。
+依預設，此訪客資料不會儲存在AEM中；AEM會將規則傳送至資料層，以在瀏覽器中做出個人化決策。
 
-### 實施選擇加入/選擇退出 {#implementing-opt-in-opt-out}
+### 實作選擇加入/選擇退出 {#implementing-opt-in-opt-out}
 
-站點所有者需要根據以下准則實施選擇退出元件。
+網站擁有者必鬚根據下列准則實作選擇退出元件。
 
-這些准則將預設情況下的選擇加入。 因此，網站訪問者必須明確同意，才能將任何個人資料儲存在瀏覽器（客戶端）的持久性中。
+這些准則會將選擇加入設為預設。 因此，網站訪客必須明確同意，才會將任何個人資料儲存在瀏覽器（用戶端）的持續性中。
 
-* 每次包括ContextHub元件時都應包括opt-out元件。
-* 必須向網站訪問者顯示與網站資料保護和隱私相關的條款和條件，以便他們：
+* 每次包含ContextHub元件時，都應包含選擇退出元件。
+* 與網站資料保護和隱私權相關的條款與條件必須顯示給網站訪客，讓他們能夠：
 
    * 接受
    * 拒絕
-   * 更改上一個選項
+   * 改變先前的選擇
 
-* 如果站點訪問者接受站點的條款和條件，則應刪除ContextHub opt-outcookie:
+* 如果網站訪客接受網站的條款與條件，應移除ContextHub選擇退出Cookie:
 
    ```
    ContextHub.Utils.Cookie.removeItem('cq-opt-out');
    ```
 
-* 如果站點訪問者不接受站點的條款和條件，則應設定ContextHub opt-out cookie:
+* 如果網站訪客不接受網站的條款與條件，應設定ContextHub選擇退出Cookie:
 
    ```
    ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
    ```
 
-* 要檢查ContextHub是否在選擇退出模式下運行，應在瀏覽器的控制台中進行以下調用：
+* 若要檢查ContextHub是否在選擇退出模式中執行，應在瀏覽器的主控台中進行下列呼叫：
 
    ```
    var isOptedOut = ContextHub.isOptedOut(true) === true;
    // if isOptedOut is true, ContextHub is running in opt-out mode
    ```
 
-### 預覽ContextHub的持久性 {#previewing-persistence-of-contexthub}
+### ContextHub的預覽持續性 {#previewing-persistence-of-contexthub}
 
-要預覽使用的持久性ContextHub，用戶可以：
+若要預覽使用ContextHub的持續時間，使用者可以：
 
-* 使用瀏覽器的控制台；例如：
+* 使用瀏覽器的主控台；例如：
 
-   * 鉻：
+   * 鉻黃：
 
       * 開啟開發人員工具>應用程式>儲存：
 
-         * 本地儲存>（網站）> ContextHubPersistence
-         * 會話儲存>（網站）> ContextHubPersistence
+         * 本機儲存>（網站）> ContextHubPersistence
+         * 工作階段儲存>（網站）> ContextHubPersistence
          * Cookie >（網站）> SessionPersistence
    * Firefox:
 
       * 開啟開發人員工具>儲存：
 
-         * 本地儲存>（網站）> ContextHubPersistence
-         * 會話儲存>（網站）> ContextHubPersistence
+         * 本機儲存>（網站）> ContextHubPersistence
+         * 工作階段儲存>（網站）> ContextHubPersistence
          * Cookie >（網站）> SessionPersistence
    * Safari:
 
-      * 開啟「首選項」>「高級」>「在菜單欄中顯示開發」菜單
-      * 開啟「開發」>「顯示JavaScript控制台」
+      * 在菜單欄中開啟「首選項」>「高級」>「顯示開發」菜單
+      * 開啟「開發>顯示JavaScript主控台」
 
          * 控制台>儲存>本地儲存>（網站）> ContextHubPersistence
-         * 控制台>儲存>會話儲存>（網站）> ContextHubPersistence
-         * 控制台>儲存> Cookies >（網站）> ContextHubPersistence
+         * 控制台>儲存>工作階段儲存>（網站）> ContextHubPersistence
+         * 控制台>儲存> Cookie >（網站）> ContextHubPersistence
    * Internet Explorer:
 
-      * 開啟開發人員工具>控制台
+      * 開啟開發人員工具>主控台
 
          * `localStorage.getItem('ContextHubPersistence')`
          * `sessionStorage.getItem('ContextHubPersistence')`
@@ -164,46 +164,46 @@ AEM provides an optional data layer with [ContextHub](/help/sites-developing/con
 
 
 
-* 使用瀏覽器控制台中的ContextHub API:
+* 在瀏覽器的主控台中使用ContextHub API:
 
-   * ContextHub提供以下資料持久性層：
+   * ContextHub提供下列資料持續性層：
 
       * `ContextHub.Utils.Persistence.Modes.LOCAL` (預設)
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      ContextHub儲存區定義將使用的持久性層，因此應檢查所有層的持久性的當前狀態。
+      ContextHub存放區會定義將使用的持續性層，因此，若要檢視持續性的目前狀態，應檢查所有層。
 
 
 例如，要查看儲存在localStorage中的資料：
 
-要預覽使用的持久性ContextHub，用戶可以：
+若要預覽使用ContextHub的持續時間，使用者可以：
 
-* 使用瀏覽器的控制台：
+* 使用瀏覽器的主控台：
 
    * Chrome — 開啟開發人員工具>應用程式>儲存：
 
-      * 本地儲存>（網站）> ContextHubPersistence
-      * 會話儲存>（網站）> ContextHubPersistence
+      * 本機儲存>（網站）> ContextHubPersistence
+      * 工作階段儲存>（網站）> ContextHubPersistence
       * Cookie >（網站）> SessionPersistence
    * Firefox — 開啟開發人員工具>儲存：
 
-      * 本地儲存>（網站）> ContextHubPersistence
-      * 會話儲存>（網站）> ContextHubPersistence
+      * 本機儲存>（網站）> ContextHubPersistence
+      * 工作階段儲存>（網站）> ContextHubPersistence
       * Cookie >（網站）> SessionPersistence
 
 
-* 使用瀏覽器控制台中的ContextHub API:
+* 在瀏覽器的主控台中使用ContextHub API:
 
-   * ContextHub提供以下資料持久性層：
+   * ContextHub提供下列資料持續性層：
 
       * `ContextHub.Utils.Persistence.Modes.LOCAL` (預設)
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      ContextHub儲存區定義將使用的持久性層，因此應檢查所有層的持久性的當前狀態。
+      ContextHub存放區會定義將使用的持續性層，因此，若要檢視持續性的目前狀態，應檢查所有層。
 
 
 例如，要查看儲存在localStorage中的資料：
@@ -213,11 +213,11 @@ var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persiste
 console.log(storage.getTree());
 ```
 
-### 清除ContextHub的持久性 {#clearing-persistence-of-contexthub}
+### 清除ContextHub的持續性 {#clearing-persistence-of-contexthub}
 
-要清除ContextHub持久性：
+若要清除ContextHub持續性：
 
-* 要清除當前載入的儲存的持久性：
+* 要清除當前載入的儲存的持久性，請執行以下操作：
 
    ```
    // in order to be able to fully access persistence layer, Opt-Out must be turned off
@@ -230,7 +230,7 @@ console.log(storage.getTree());
    ContextHub.resetAllStores();
    ```
 
-* 清除特定的持久性層；例如，sessionStorage:
+* 清除特定持久層；例如，sessionStorage:
 
    ```
    var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
@@ -241,7 +241,7 @@ console.log(storage.getTree());
    console.log(storage.getTree());
    ```
 
-* 要清除所有ContextHub持久性層，必須為所有層調用相應的代碼：
+* 若要清除所有ContextHub持續性層，必須為所有層呼叫適當的程式碼：
 
    * `ContextHub.Utils.Persistence.Modes.LOCAL` (預設)
    * `ContextHub.Utils.Persistence.Modes.SESSION`
