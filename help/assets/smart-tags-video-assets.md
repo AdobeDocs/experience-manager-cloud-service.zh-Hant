@@ -1,6 +1,6 @@
 ---
-title: 智慧標籤視頻資產
-description: Experience Manager使用 [!DNL Adobe Sensei]。
+title: 智慧標籤您的視訊資產
+description: Experience Manager會使用 [!DNL Adobe Sensei].
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
@@ -11,107 +11,107 @@ ht-degree: 0%
 
 ---
 
-# 智慧標籤視頻資產 {#video-smart-tags}
+# 智慧標籤您的視訊資產 {#video-smart-tags}
 
-對新內容的不斷增長需求要求減少手動工作，以便在短時間內提供引人注目的數字型驗。 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] 支援使用人工智慧對視頻資產進行自動標籤。 手動標籤視頻可能非常耗時。 但是， [!DNL Adobe Sensei] 支援視頻智慧標籤功能使用人工智慧模型來分析視頻內容並向視頻資產添加標籤。 從而縮短DAM用戶為其客戶提供豐富體驗的時間。 Adobe的機器學習服務為一個視頻生成兩組標籤。 而一組則與視頻中的對象、場景和屬性相對應；另一組則與飲酒，跑步，慢跑等動作有關。
+對新內容的需求不斷增加，需要減少手動操作，以便不時提供引人入勝的數位體驗。 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 支援使用人工智慧自動標籤視訊資產。 手動標籤視訊可能很耗時。 不過， [!DNL Adobe Sensei] 支援視訊智慧標籤功能使用人工智慧模型來分析視訊內容，並為視訊資產新增標籤。 因此，DAM使用者可縮短向客戶提供豐富體驗的時間。 Adobe的機器學習服務會為視訊產生兩組標籤。 而一組則對應於該影片中的物件、場景和屬性；另一組與飲用、跑步和慢跑等動作有關。
 
-預設情況下，在 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。 但是， [選擇退出視頻智慧標籤](#opt-out-video-smart-tagging) 資料夾。 當您上傳新視頻或重新處理現有視頻時，會自動標籤視頻。 [!DNL Experience Manager] 同時建立縮覽圖並提取視頻檔案的元資料。 智慧標籤按其降序顯示 [置信度](#confidence-score-video-tag) 資產 [!UICONTROL 屬性]。
+視訊標籤預設為在 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. 不過，您可以 [選擇退出視訊智慧標籤](#opt-out-video-smart-tagging) 在資料夾中。 上傳新視訊或重新處理現有視訊時，會自動標籤視訊。 [!DNL Experience Manager] 也會建立縮圖並擷取視訊檔案的中繼資料。 智慧標籤會以遞減順序顯示 [信賴分數](#confidence-score-video-tag) 在資產中 [!UICONTROL 屬性].
 
-## 上傳時的智慧標籤視頻 {#smart-tag-assets-on-ingestion}
+## 上傳時的智慧標籤影片 {#smart-tag-assets-on-ingestion}
 
-當你 [上載視頻資產](add-assets.md#upload-assets) 至 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]，處理視頻。 處理完成後，請參閱 [!UICONTROL 基本] 頁籤 [!UICONTROL 屬性] 的子菜單。 智慧標籤會自動添加到視頻的 [!UICONTROL 智慧標籤]。 資產微服務利用 [!DNL Adobe Sensei] 建立這些智慧標籤。
+當您 [上傳影片資產](add-assets.md#upload-assets) to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]，則會處理影片。 處理完成後，請參閱 [!UICONTROL 基本] 資產索引標籤 [!UICONTROL 屬性] 頁面。 智慧標籤會自動新增至 [!UICONTROL 智慧標籤]. 資產微服務可利用 [!DNL Adobe Sensei] 來建立這些智慧標籤。
 
-![智慧標籤會添加到視頻中，並可在資產屬性的「基本」頁籤中查看](assets/smart-tags-added-to-videos.png)
+![智慧標籤會新增至影片，並在資產屬性的「基本」標籤中顯示](assets/smart-tags-added-to-videos.png)
 
-應用的智慧標籤按降序排序， [置信度](#confidence-score-video-tag)，組合用於對象和操作標籤，在 [!UICONTROL 智慧標籤]。
+套用的智慧標籤會以 [信賴分數](#confidence-score-video-tag)，結合物件和動作標籤，在 [!UICONTROL 智慧標籤].
 
 >[!IMPORTANT]
 >
->建議您查看這些自動生成的標籤，以確保它們符合您的品牌及其價值。
+>建議您檢閱這些自動產生的標籤，以確保這些標籤符合您的品牌及其值。
 
-## 智慧標籤DAM中的現有視頻 {#smart-tag-existing-videos}
+## 在DAM中智慧標籤現有視訊 {#smart-tag-existing-videos}
 
-DAM中已有的視頻資產不是自動智慧標籤的。 你需要 [!UICONTROL 重新處理資產] 手動為它們生成智慧標籤。
+DAM中現有的視訊資產不會自動加上智慧標籤。 您需要 [!UICONTROL 重新處理資產] 手動為其產生智慧標籤。
 
-要智慧標籤資源庫中已存在的資源的視頻資產或資料夾（包括子資料夾），請執行以下步驟：
+若要智慧標籤資產或資產存放庫中已存在之資產的資料夾（包括子資料夾），請遵循下列步驟：
 
-1. 選擇 [!DNL Adobe Experience Manager] 標識，然後從 [!UICONTROL 導航] 的子菜單。
+1. 選取 [!DNL Adobe Experience Manager] 標誌，然後從中選取資產 [!UICONTROL 導覽] 頁面。
 
 1. 選擇 [!UICONTROL 檔案] 顯示「資產」介面。
 
-1. 導航到要應用智慧標籤的資料夾。
+1. 導覽至您要套用智慧標籤的資料夾。
 
-1. 選擇整個資料夾或特定視頻資產。
+1. 選取整個資料夾或特定視訊資產。
 
-1. 選擇 ![「重新處理資產」表徵圖](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 重新處理資產] 表徵圖，然後選擇 [!UICONTROL 完整流程] 的雙曲餘切值。
+1. 選擇 ![重新處理資產圖示](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 重新處理資產] 圖示並選取 [!UICONTROL 完整流程] 選項。
 
 <!-- TBD: Limit size -->
 
-![重新處理資產以將標籤添加到現有DAM儲存庫的視頻](assets/reprocess.gif)
+![重新處理資產，將標籤新增至現有DAM存放庫的影片](assets/reprocess.gif)
 
-流程完成後，導航到 [!UICONTROL 屬性] 資料夾中任何視頻資源的頁面。 在中可看到自動添加的標籤 [!UICONTROL 智慧標籤] 部分 [!UICONTROL 基本] 頁籤。 這些應用的智慧標籤按降序排序， [置信度](#confidence-score-video-tag)。
+程式完成後，導覽至 [!UICONTROL 屬性] 資料夾內任何視訊資產的頁面。 自動新增的標籤會顯示在 [!UICONTROL 智慧標籤] 區段 [!UICONTROL 基本] 標籤。 這些套用的智慧標籤會以下列順序排序： [信賴分數](#confidence-score-video-tag).
 
 ## 搜索標籤的視頻 {#search-smart-tagged-videos}
 
-要根據自動生成的智慧標籤搜索視頻資產，請使用 [奧姆尼瑟克](search-assets.md#search-assets-in-aem):
+若要根據自動產生的智慧標籤來搜尋視訊資產，請使用 [Omnisearch](search-assets.md#search-assets-in-aem):
 
-1. 選擇搜索表徵圖 ![搜索表徵圖](assets/do-not-localize/search_icon.png) 的子菜單。
+1. 選擇搜索表徵圖 ![搜尋圖示](assets/do-not-localize/search_icon.png) 顯示「Omnisearch」欄位。
 
-1. 在Omnisearch欄位中指定尚未顯式添加到視頻的標籤。
+1. 在Omnisearch欄位中指定您尚未明確新增至視訊的標籤。
 
-1. 根據標籤進行搜索。
+1. 根據標籤進行搜尋。
 
-搜索結果將根據您指定的標籤顯示視頻資產。
+搜尋結果會根據您指定的標籤顯示視訊資產。
 
-搜索結果是元資料中搜索關鍵字的視頻資產和用搜索關鍵字智慧標籤的視頻資產的組合。 但是，首先顯示與元資料欄位中的所有搜索項相匹配的搜索結果，然後顯示與智慧標籤中的任何搜索項相匹配的搜索結果。 有關詳細資訊，請參見 [瞭解 [!DNL Experience Manager] 使用智慧標籤搜索結果](smart-tags.md#understand-search)。
+您的搜尋結果是視訊資產與中繼資料中搜尋關鍵字的組合，以及智慧標籤搜尋關鍵字的視訊資產。 不過，會先顯示符合中繼資料欄位中所有搜尋詞的搜尋結果，接著顯示符合智慧標籤中任何搜尋詞的搜尋結果。 如需詳細資訊，請參閱 [了解 [!DNL Experience Manager] 使用智慧標籤搜尋結果](smart-tags.md#understand-search).
 
-## 中等視頻智慧標籤 {#moderate-video-smart-tags}
+## 協調視訊智慧標籤 {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] 允許您將智慧標籤設定為：
+[!DNL Adobe Experience Manager] 可讓您將智慧標籤組織為：
 
-* 刪除分配給您的品牌視頻的不準確標籤。
+* 移除指派給您品牌影片的不正確標籤。
 
-* 通過確保您的視頻顯示在搜索結果中以查找最相關的標籤，優化基於標籤的視頻搜索。 因此，它消除了不相關視頻出現在搜索結果中的可能性。
+* 確保視訊顯示在最相關標籤的搜尋結果中，以縮小視訊的標籤搜尋範圍。 因此，搜尋結果中不會顯示不相關視訊。
 
-* 為標籤指定更高的等級以增強其與視頻的相關性。 當基於該標籤執行搜索時，升級視頻的標籤增加了在搜索結果中出現該視頻的可能性。
+* 指派較高的排名給標籤，以提高與視訊的相關性。 促銷視訊的標籤，會增加根據該標籤執行搜尋時，視訊出現在搜尋結果中的機率。
 
-要瞭解有關如何調整資產智慧標籤的詳細資訊，請參閱 [管理智慧標籤](smart-tags.md#manage-smart-tags-and-searches)。
+若要進一步了解如何協調資產的智慧標籤，請參閱 [管理智慧標籤](smart-tags.md#manage-smart-tags-and-searches).
 
-![中等視頻智慧標籤](assets/manage-video-smart-tags.png)
+![協調視訊智慧標籤](assets/manage-video-smart-tags.png)
 
 >[!NOTE]
 >
->使用中的步驟審核的任何標籤 [管理智慧標籤](smart-tags.md#manage-smart-tags-and-searches) 不會因為資產的重新處理而被記住。 將再次顯示原始標籤集。
+>使用 [管理智慧標籤](smart-tags.md#manage-smart-tags-and-searches) 重新處理資產時不會記住。 原始標籤集會再次顯示。
 
-## 選擇退出視頻智慧標籤 {#opt-out-video-smart-tagging}
+## 選擇退出視訊智慧標籤 {#opt-out-video-smart-tagging}
 
-由於自動標籤視頻與建立縮略圖和提取元資料等其他資產處理任務並行運行，因此可能非常耗時。 要加快資產處理，您可以選擇在資料夾級別上載時不使用視頻智慧標籤。
+由於視訊的自動標籤會與其他資產處理工作（例如建立縮圖和擷取中繼資料）同時執行，因此可能會很耗時。 若要加快資產處理速度，您可以在資料夾層級上傳時選擇退出視訊智慧標籤。
 
-為上載到特定資料夾的資產選擇不生成自動視頻智慧標籤：
+若要針對上傳至特定資料夾的資產選擇退出自動產生智慧型視訊標籤：
 
-1. 開啟 [!UICONTROL 資產處理] 資料夾 [!UICONTROL 屬性]。
+1. 開啟 [!UICONTROL 資產處理] 檔案夾中的標籤 [!UICONTROL 屬性].
 
-1. 在 [!UICONTROL 視頻智慧標籤] 菜單， [!UICONTROL 繼承] 選項，並啟用視頻智慧標籤。
+1. 在 [!UICONTROL 影片智慧標籤] 菜單， [!UICONTROL 繼承] 選項，並啟用視訊智慧標籤。
 
-   當 [!UICONTROL 繼承] 選項，繼承的資料夾路徑以及是否設定為的資訊也可見 [!UICONTROL 啟用] 或 [!UICONTROL 禁用]。
+   當 [!UICONTROL 繼承] 選項，繼承的資料夾路徑也將隨資訊一起顯示(無論它設定為 [!UICONTROL 啟用] 或 [!UICONTROL 停用].
 
-   ![禁用視頻智慧標籤](assets/disable-video-tagging.png)
+   ![停用視訊智慧標籤](assets/disable-video-tagging.png)
 
-1. 選擇 [!UICONTROL 禁用] 選擇不對上傳到資料夾的視頻進行智慧標籤。
+1. 選擇 [!UICONTROL 停用] 選擇退出已上傳至資料夾的影片智慧標籤。
 
 >[!IMPORTANT]
 >
->如果您選擇在上載時不在資料夾上標籤視頻，並希望在上載後智慧標籤視頻，則 **[!UICONTROL 為視頻啟用智慧標籤]** 從 [!UICONTROL 資產處理] 頁籤 [!UICONTROL 屬性] 使用 [[!UICONTROL 重新處理資產] 選項](#smart-tag-existing-videos) 添加智慧標籤。
+>如果您在上傳時選擇退出在資料夾上標籤影片，且想在上傳後以智慧標籤影片，則 **[!UICONTROL 啟用視訊的智慧標籤]** 從 [!UICONTROL 資產處理] 頁簽 [!UICONTROL 屬性] 和使用 [[!UICONTROL 重新處理資產] 選項](#smart-tag-existing-videos) 新增智慧標籤至視訊。
 
-## 信心評分 {#confidence-score-video-tag}
+## 信賴分數 {#confidence-score-video-tag}
 
-[!DNL Adobe Experience Manager] 對對象和操作智慧標籤應用最小置信度閾值以避免每個視頻資產的標籤過多，這會降低索引速度。 您的資產搜索結果會根據置信度得分進行排序，這通常會改善搜索結果，超出對任何視頻資產的已分配標籤的檢查所建議的範圍。 不準確的標籤通常具有低置信度分數，因此它們很少出現在資產的「智慧標籤」清單的頂部。
+[!DNL Adobe Experience Manager] 對對象和動作智慧標籤套用最小信賴度臨界值，以避免每個視訊資產的標籤過多，進而減緩索引速度。 您的資產搜尋結果會根據可信度分數進行排名，這通常會改善搜尋結果，超出任何視訊資產所指派標籤的檢查所建議的程度。 不準確的標籤常會有較低的信賴分數，因此很少出現在資產的「智慧標籤」清單頂端。
 
-中操作和對象標籤的預設閾值 [!DNL Adobe Experience Manager] 為0.7（應為介於0和1之間的值）。 如果某些視頻資源沒有被特定標籤標籤，則表明該算法對預測標籤的信心小於70%。 預設閾值可能並不總是對所有用戶最佳。 因此，您可以更改OSGI配置中的置信度分數值。
+中動作和物件標籤的預設臨界值 [!DNL Adobe Experience Manager] 為0.7（值應介於0和1之間）。 如果某些視訊資產未被特定標籤加上標籤，表示演算法對預測標籤的信賴度低於70%。 對於所有使用者，預設臨界值不一定都是最佳的。 因此，您可以變更OSGI設定中的信賴分數值。
 
-將置信度分數OSGI配置添加到部署到的項目 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] 通 [!DNL Cloud Manager]:
+將信賴分數OSGI設定新增至部署至的專案 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] through [!DNL Cloud Manager]:
 
-* 在 [!DNL Adobe Experience Manager] 項目(P)`ui.config` 從原型24開始，或者之前 `ui.apps`) `config.author` OSGi配置，包括名為 `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` 內容如下：
+* 在 [!DNL Adobe Experience Manager] 項目(`ui.config` 自原型24起或之前 `ui.apps`) `config.author` OSGi設定，包含名為 `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` 內容如下：
 
 ```json
 {
@@ -122,20 +122,20 @@ DAM中已有的視頻資產不是自動智慧標籤的。 你需要 [!UICONTROL 
 
 >[!NOTE]
 >
->手動標籤的置信度為100%（最大置信度）。 因此，如果存在具有與搜索查詢匹配的手動標籤的視頻資產，則在匹配搜索查詢的智慧標籤之前顯示這些視頻資產。
+>手動標籤的可信度為100%（最大可信度）。 因此，如果有具有手動標籤的視訊資產符合搜尋查詢，則會在符合搜尋查詢的智慧標籤之前顯示。
 
 ## 限制 {#video-smart-tagging-limitations}
 
-* 您不能使用任何特定視頻培訓將智慧標籤應用於視頻的服務。 它與預設 [!DNL Adobe Sensei] 的子菜單。
+* 您無法使用任何特定影片訓練將智慧標籤套用至影片的服務。 可搭配預設值使用 [!DNL Adobe Sensei] 設定。
 
 * 未顯示標籤進度。
 
-* 只有檔案大小小於300 MB的視頻才會自動標籤。 的 [!DNL Adobe Sensei] 服務跳過大小較大的視頻檔案。
+* 只有小於300 MB的影片會自動加上標籤。 此 [!DNL Adobe Sensei] 服務會略過大小較大的視訊檔案。
 
-* 只有中提到的檔案格式和支援的編解碼器中的視頻 [智慧標籤](/help/assets/smart-tags.md#smart-tags-supported-file-formats) 標籤。
+* 僅提及檔案格式的影片和支援的轉碼器 [智慧標籤](/help/assets/smart-tags.md#smart-tags-supported-file-formats) 標籤。
 
 >[!MORELIKETHIS]
 >
->* [管理智慧標籤和資產搜索](smart-tags.md#manage-smart-tags-and-searches)
->* [培訓智慧標籤服務並標籤您的映像](smart-tags.md)
+>* [管理智慧標籤和資產搜尋](smart-tags.md#manage-smart-tags-and-searches)
+>* [訓練智慧標籤服務並標籤影像](smart-tags.md)
 
