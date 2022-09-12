@@ -15,9 +15,9 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_notable_changes"
->title="AEMas a Cloud Service"
->abstract="在此頁籤中，您可以查看有助於您瞭解內部或Adobe Managed Services之間AEM的差異的內容，與as a Cloud Service相比AEM。"
->additional-url="https://video.tv.adobe.com/v/330543" text="as a Cloud Service的演AEM變"
+>title="AEMas a Cloud Service中重大變更"
+>abstract="在此標籤中，您可以檢視有助於您了解內部部署AEM或Adobe Managed Services之間差異的內容，與AEMas a Cloud Service比較。"
+>additional-url="https://video.tv.adobe.com/v/330543" text="AEMas a Cloud Service的演變"
 
 
 >[!NOTE]
@@ -34,13 +34,13 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 
 * [/apps 和 /libs 在執行階段不可修改](#apps-libs-immutable)
 
-* [OSGi捆綁包和配置必須被視為代碼](#osgi)
+* [OSGi套件和設定必須視為程式碼](#osgi)
 
 * [禁止變更發佈用儲存庫](#changes-to-publish-repo)
 
 * [禁止自訂執行模式](#custom-runmodes)
 
-* [刪除複製代理和相關更改](#replication-agents)
+* [移除復寫代理及相關變更](#replication-agents)
 
 * [移除傳統 UI](#classic-ui)
 
@@ -54,7 +54,7 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 
 * 完全禁止變更 `/libs`。
    * 這不是新規則，但內部部署的舊版 AEM 並未強制執行此規則。
-* 覆蓋中的區域 `/libs` 仍允許在 `/apps`。
+* 中區域的覆蓋 `/libs` 允許重疊的 `/apps`.
    * 此類覆蓋必須透過 CI/CD 管道從 Git 取得。
 * 無法透過 UI 編輯儲存於 `/apps` 的靜態範本設計資訊。
    * 建議您改用可編輯的範本。
@@ -62,18 +62,18 @@ AEM 雲端服務提供許多管理 AEM 專案的新功能，並帶來許多可�
 * MSM Blueprint 和自訂 MSM 轉出設定必須透過 CI/CD 管道從 Git 安裝。
 * 若要變更 I18n 翻譯，須透過 CI/CD 管道從 Git 執行。
 
-## OSGi捆綁包和配置必須被視為代碼 {#osgi}
+## OSGi套件和設定必須視為程式碼 {#osgi}
 
-必須通過CI/CD管道引入對OSGi捆綁包和配置的更改。
+必須透過CI/CD管道導入OSGi套件組合和組態的變更。
 
-* 必須通過CI/CD管道通過Git引入新的或更新的OSGi捆綁包。
-* 對OSGi配置的更改只能通過CI/CD管道從Git進行。
+* 必須透過CI/CD管道透過Git導入新的或更新的OSGi套件組合。
+* 只能透過CI/CD管道從Git變更OSGi設定。
 
-Web控制台在以前版本中用AEM於更改OSGi捆綁包和配置，在AEM Cloud Service不可用。
+舊版AEM中用於變更OSGi套件組合和設定的Web主控台，在AEM Cloud Service中無法使用。
 
 ## 禁止變更發佈用儲存庫 {#changes-to-publish-repo}
 
-除了 `/home` 資料夾，不允許在AEM Cloud Service上直接更改發佈儲存庫。 在以前的內部版本AEM或AEMAMS上，可以直接對發佈儲存庫進行代碼更改。 可以通過以下方式緩解某些限制：
+除了 `/home` 資料夾，則AEM Cloud Service不允許直接變更發佈存放庫。 在舊版內部部署AEM或AMS上的AEM中，程式碼可直接變更發佈用存放庫。 可透過下列方式緩解部分限制：
 
 * 內容和以內容為基礎的設定：變更作者例項並發佈。
 * 程式碼和設定：在 GIT 儲存庫中變更，並執行 CI/CD 管線以轉出這些變更。
@@ -96,7 +96,7 @@ AEM 雲端服務提供以下現成執行模式：
 
 AEM 雲端服務無法使用其他或自訂的執行模式。
 
-## 刪除複製代理和相關更改 {#replication-agents}
+## 移除復寫代理及相關變更 {#replication-agents}
 
 在 AEM 雲端服務中，內容是使用 [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) 發佈。舊版 AEM 不再使用或提供複寫代理，這可能會影響現有 AEM 專案的下列作業：
 
@@ -104,7 +104,7 @@ AEM 雲端服務無法使用其他或自訂的執行模式。
 * 自訂複寫代理以轉換內容
 * 使用「反向複寫」將內容從發佈階段撤回給作者
 
-此外，請注意，暫停和禁用按鈕已從複製代理管理控制台中刪除。
+此外，請注意，暫停和停用按鈕已從復寫代理管理控制台中移除。
 
 ## 移除傳統 UI {#classic-ui}
 
@@ -118,4 +118,4 @@ AEM 雲端服務預設啟用 HTTP 加速功能，包括適用於作者與發佈�
 
 ## 資產處理與傳送 {#asset-handling}
 
-資產上載、處理和下載在 [!DNL Experience Manager Assets] 作為 [!DNL Cloud Service]。 [!DNL Assets] 現在更高效，支援更大的擴展，並允許您以更快的速度上傳和下載。 此外，它還會影響現有的自定義代碼和一些操作。 用於更改清單和與的奇偶校驗 [!DNL Experience Manager] 6.5功能，請參見 [更改 [!DNL Assets]](/help/assets/assets-cloud-changes.md)。
+資產上傳、處理和下載都可在 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] 現在更有效率、更能擴充，並且讓您以更快的速度上傳和下載。 此外，這也會影響現有的自訂程式碼和某些操作。 以取得變更清單，並與 [!DNL Experience Manager] 6.5功能，請參閱 [變更 [!DNL Assets]](/help/assets/assets-cloud-changes.md).
