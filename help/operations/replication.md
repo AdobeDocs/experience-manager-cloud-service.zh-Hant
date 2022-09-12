@@ -2,9 +2,9 @@
 title: 複寫
 description: 發佈和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: b79752c43cd9907236b511aa1be60b5b2256a7b8
+source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1258'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling內容分送](https://sl
 * `enableVersion` （布林值，預設值） `true`)。 此參數會決定是否在復寫時建立新版本。
 * `agentId` （字串值，預設值表示僅使用發佈的代理）。 建議您明確說明agentId;例如，設定它：發佈。 將代理設定為 `preview` 將發佈至預覽服務
 * `filters` （字串值，預設值表示所有路徑皆已啟用）。 可用值包括：
-   * `onlyActivated`  — 只有未標示為已啟用的路徑才會啟用。
+   * `onlyActivated`  — 只會啟動標示為已啟用的路徑。
    * `onlyModified`  — 僅啟用已啟用且修改日期晚於啟用日期的路徑。
    * 上方可以用垂直號「|」來ORed。 例如， `onlyActivated|onlyModified`.
 
