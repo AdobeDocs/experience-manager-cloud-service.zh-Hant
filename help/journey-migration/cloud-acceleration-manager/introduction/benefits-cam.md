@@ -1,6 +1,6 @@
 ---
-title: 使用雲加速管理器的好處
-description: 本頁重點介紹使用Cloud Acceleration Manager的主要優點。
+title: 使用Cloud Acceleration Manager的優點
+description: 本頁重點說明使用Cloud Acceleration Manager的主要優點。
 exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -9,34 +9,34 @@ ht-degree: 0%
 
 ---
 
-# 使用雲加速管理器的好處 {#benefits-cam}
+# 使用Cloud Acceleration Manager的優點 {#benefits-cam}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_benefits"
->title="使用雲加速管理器的好處"
->abstract="Cloud Acceleration Manager(CAM)為您的團隊提供了指導性的體驗，可通過Adobe建議的最佳實踐和方法幫助您的團隊規劃、實施和信心十足地投入運營。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en" text="Cloud Acceleration Manager入門"
+>title="使用Cloud Acceleration Manager的優點"
+>abstract="Cloud Acceleration Manager(CAM)為您的團隊提供引導式體驗，並提供Adobe建議的最佳實務和方法，協助您的團隊規劃、實作和上線充滿信心。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en" text="開始使用Cloud Acceleration Manager"
 
-隨著各種業務要求和定製的不斷深入，遷移到雲可能是一個相關項目。 Cloud Acceleration Manager(CAM)為您的團隊提供了指導性的體驗，可通過Adobe建議的最佳實踐和方法幫助您的團隊規劃、實施和信心十足地投入運營。
+有了廣泛的業務需求和自定義項，遷移到雲可能是一個相關項目。 Cloud Acceleration Manager(CAM)為您的團隊提供引導式體驗，並提供Adobe建議的最佳實務和方法，協助您的團隊規劃、實作和上線充滿信心。
 
-使用Cloud Acceleration Manager的主要好處是：
+使用Cloud Acceleration Manager的主要優點如下：
 
 1. 更好、更明智地規劃：
 
-   * 通過易於閱讀的結果可視化表示來簡化對當前實例的評估。
+   * 透過簡單易懂的結果視覺呈現來簡化目前例項的評估。
 
-   * 使用詳細的自定義報告評估和瞭解移AEM到as a Cloud Service的估計複雜性。
+   * 透過詳細的自訂報表，評估並了解移轉至AEM as a Cloud Service的預計複雜度。
 
-1. 通過端到端指導簡化移動：
+1. 通過端到端指導來簡化遷移：
 
-   * 使用內置智慧管理遷移過程，該智慧在遷移過程中提供上下文幫助。
+   * 使用內建的智慧管理移轉歷程，並提供相關的說明。
 
-   * 檢查和確定as a Cloud Service中不支援或需要重構AEM的區域以確保相容性。
+   * 檢閱並識別AEMas a Cloud Service中不支援或需要重構的區域，以確保相容性。
 
 1. 優化工作：
 
-   訪問Adobe建議的最佳做法和自動化工具，以幫助加快遷移工作並訪問工具，以最大限度地縮短遷移時間。
+   存取Adobe建議的最佳實務和自動化工具，以協助加速移轉工作，並存取工具，將移轉時間減到最少。
 
-## 下一步是什麼 {#whats-next}
+## 下一步 {#whats-next}
 
-一旦您瞭解了什麼是Cloud Acceleration Manager ，您就可以使用並 [Cloud Acceleration Manager入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en)。
+了解Cloud Acceleration Manager的功能後，您就可以使用和 [開始使用Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
