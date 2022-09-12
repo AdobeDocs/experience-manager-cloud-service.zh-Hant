@@ -1,6 +1,6 @@
 ---
 title: 支援的檔案格式和MIME類型
-description: 支援的檔案格式和MIME類型 [!DNL Experience Manager Assets] 作為 [!DNL Cloud Service]。
+description: 支援的檔案格式和MIME類型 [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
@@ -14,47 +14,47 @@ ht-degree: 7%
 
 # [!DNL Assets] 支援的檔案格式 {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] 支援任何二進位檔案的基本內容管理功能（儲存、線上管理元資料、版本控制、上載和下載等），與其格式無關。 [!DNL Adobe Experience Manager Assets] 支援多種檔案格式，每種產品功能都支援不同格式。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 支援任何二進位檔案的基本內容管理功能（儲存、線上管理元資料、版本設定、上傳和下載等），不受其格式影響。 [!DNL Adobe Experience Manager Assets] 支援多種檔案格式，每種產品功能對不同格式的支援各不相同。
 
-另外， [!DNL Experience Manager Assets] 為生成預覽和格式副本以及提取元資料和文本以進行全文索引提供了擴展支援。 此擴展支援使用 [資產微服務](asset-microservices-configure-and-use.md)。
+此外， [!DNL Experience Manager Assets] 提供延伸支援，以產生預覽和轉譯，以及擷取中繼資料和文字以建立全文索引。 此延伸支援的提供方式為 [資產微服務](asset-microservices-configure-and-use.md).
 
-使用資產微型服務進行資產轉換的亮點包括：
+使用資產微服務進行資產轉換的重點包括：
 
-* 鍵 [Adobe檔案格式](#adobe-formats) 由Adobe應用程式和服務生產，包括 [!DNL Adobe Photoshop]。 [!DNL Adobe InDesign]。 [!DNL Adobe Illustrator]。 [!DNL Adobe XD]。 [!DNL Adobe Dimension], [!DNL Adobe Acrobat] 或PDF。
-* 鍵 [成像檔案格式](#image-formats)。
+* 金鑰 [Adobe檔案格式](#adobe-formats) 由Adobe應用程式和服務產生，包括 [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension]，和 [!DNL Adobe Acrobat] 或PDF。
+* 金鑰 [影像檔案格式](#image-formats).
 * [Camera Raw檔案格式](#camera-raw-formats) 包括佳能、尼康、富士膠片、奧林匹斯和其他製造商(由Adobe Camera Raw提供)。
-* 常用 [文檔格式](#document-formats)包括Microsoft辦公室和開放文檔格式。
+* 常見 [檔案格式](#document-formats)，包括Microsoft Office和Open Document格式。
 * 各種視訊 [和音訊](#video-formats)[格式.](#audio-formats)
 
-以下圖例說明了每種格式的支援級別。
+下圖說明每種格式的支援級別。
 
-| 支援級別 | 說明 |
+| 支援層級 | 說明 |
 | ------------- | --------------------------- |
 | ✓ | 支援 |
-| * | 請參閱表下的注釋 |
+| * | 請參閱表格下方的備注 |
 | - | 不適用 |
 
 ## Adobe格式 {#adobe-formats}
 
-| 檔案格式 | 縮略圖生成 | 全文提取 | 元資料提取 | 寬/高 |
+| 檔案格式 | 縮圖產生 | 全文擷取 | 中繼資料擷取 | 寬度/高度 |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | - | ✓ | ✓ |
-| 拼貼 | - | - | ✓ | - |
+| COLLAGE | - | - | ✓ | - |
 | DN | ✓ | - | ✓ | ✓ |
-| 思想 | - | - | ✓ | - |
-| INDD | ✓ | - | ✓ | ✓ |
+| 構想 | - | - | ✓ | - |
+| INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
 | PDF | ✓ | ✓ | ✓ | ✓ |
-| 原始 | - | - | ✓ | - |
+| PROTO | - | - | ✓ | - |
 | PSB | ✓ | - | ✓ | ✓ |
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\*對於 [!DNL Adobe InDesign] 檔案(INDD)，格式副本的大小由嵌入在INDD檔案中的預覽確定。 在中配置首選項 [!DNL InDesign] (**[!UICONTROL 首選項>檔案處理>始終將預覽影像與文檔一起保存，預覽大小]**)以嵌入較大格式副本。
+\*針對 [!DNL Adobe InDesign] 檔案(INDD)，則格式副本的大小由嵌入在INDD檔案中的預覽確定。 在 [!DNL InDesign] (**[!UICONTROL 首選項>檔案處理>始終使用文檔保存預覽影像，預覽大小]**)以內嵌大型轉譯。
 
 ## 影像格式 {#image-formats}
 
-| 檔案格式 | 縮略圖生成 | 元資料提取 | 寬/高 | 裁切 |
+| 檔案格式 | 縮圖產生 | 中繼資料擷取 | 寬度/高度 | 裁切 |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
 | BMP | ✓ | - | ✓ | ✓ |
 | EPS | ✓ | ✓ | - | - |
@@ -69,11 +69,11 @@ ht-degree: 7%
 
 ## 3D格式 {#support-3d-formats}
 
-支援以下3D格式。
+支援下列3D格式。
 
-另請參閱 [在Dynamic Media處理3D資產](/help/assets/dynamic-media/assets-3d.md)。
+另請參閱 [在Dynamic Media中使用3D資產](/help/assets/dynamic-media/assets-3d.md).
 
-| 格式 | 儲存 | 版本設定 | 工作流程 | 發佈 | 訪問控制 | 縮略圖預覽 | 3D預覽 | Dynamic Media |
+| 格式 | 儲存 | 版本設定 | 工作流程 | 發佈 | 存取控制 | 縮圖預覽 | 3D預覽 | Dynamic Media傳送 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
@@ -84,7 +84,7 @@ ht-degree: 7%
 
 ## [!DNL Camera RAW] 格式 {#camera-raw-formats}
 
-| 檔案格式 | 縮略圖生成 | 元資料提取 | 寬/高 |
+| 檔案格式 | 縮圖產生 | 中繼資料擷取 | 寬度/高度 |
 | ----------- | -------------------- | ------------------- | ------------ |
 | 3FR | ✓ | ✓ | ✓ |
 | ARW | ✓ | ✓ | ✓ |
@@ -95,7 +95,7 @@ ht-degree: 7%
 | DNG | ✓ | ✓ | ✓ |
 | ERF | ✓ | ✓ | ✓ |
 | FFF | ✓ | ✓ | ✓ |
-| 探地雷達 | ✓ | ✓ | ✓ |
+| GPR | ✓ | ✓ | ✓ |
 | IIQ | ✓ | ✓ | ✓ |
 | KDC | ✓ | ✓ | ✓ |
 | MEF | ✓ | ✓ | ✓ |
@@ -105,8 +105,8 @@ ht-degree: 7%
 | NEF | ✓ | ✓ | ✓ |
 | NRW | ✓ | ✓ | ✓ |
 | ORF | ✓ | ✓ | ✓ |
-| 脈衝電場 | ✓ | ✓ | ✓ |
-| 皇家空軍 | ✓ | ✓ | ✓ |
+| PEF | ✓ | ✓ | ✓ |
+| RAF | ✓ | ✓ | ✓ |
 | 原始 | ✓ | ✓ | ✓ |
 | RW2 | ✓ | ✓ | ✓ |
 | RWL | ✓ | ✓ | ✓ |
@@ -114,20 +114,20 @@ ht-degree: 7%
 | SRW | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ |
 
-## 文檔格式 {#document-formats}
+## 檔案格式 {#document-formats}
 
 資產管理功能支援的文檔格式如下。
 
-| 檔案格式 | 縮略圖生成 | 全文提取 | 寬/高 | 元資料管理 | [連線資產](use-assets-across-connected-assets-instances.md) |
+| 檔案格式 | 縮圖產生 | 全文擷取 | 寬度/高度 | 中繼資料管理 | [連線資產](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | DOC | - | - | - | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | ePub | - | ✓ | - | - | - |
 | HTML | - | ✓ | - | ✓ | ✓ |
 | ODF | ✓ | ✓ | ✓ | - | - |
-| 原設計製造 | ✓ | ✓ | ✓ | - | - |
-| 耗氧潛能 | ✓ | ✓ | ✓ | - | - |
-| 耗氧物質 | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | - | - |
+| ODP | ✓ | ✓ | ✓ | - | - |
+| ODS | ✓ | ✓ | ✓ | - | - |
 | ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
 | OFG | ✓ | ✓ | ✓ | - | - |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -140,13 +140,13 @@ ht-degree: 7%
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-## 視頻格式 {#video-formats}
+## 視訊格式 {#video-formats}
 
-| 檔案格式 | 縮略圖生成 | 元資料提取 | 寬/高 |
+| 檔案格式 | 縮圖產生 | 中繼資料擷取 | 寬度/高度 |
 | ----------- | -------------------- | ------------------- | ------------ |
 | 3G2 | - | ✓ | - |
 | 3GP | - | ✓ | - |
-| 艾維 | ✓ | ✓ | ✓ |
+| AVI | ✓ | ✓ | ✓ |
 | DIVX | ✓ | - | ✓ |
 | F4V | ✓ | ✓ | ✓ |
 | FLV | ✓ | ✓ | ✓ |
@@ -168,9 +168,9 @@ ht-degree: 7%
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-## 音頻格式 {#audio-formats}
+## 音訊格式 {#audio-formats}
 
-[!DNL Assets] 作為 [!DNL Cloud Service] 為XMPAIF、ASF、M4A、MP3、WAV和WMA音頻格式提供元資料提取支援。
+[!DNL Assets] as a [!DNL Cloud Service] 為AIF、ASF、M4A、MP3、WAV和WMA音頻格式提供XMP元資料提取支援。
 
 ## 支援的音頻和視頻轉錄輸入格式 {#audio-video-transcription-formats}
 
@@ -178,86 +178,86 @@ ht-degree: 7%
 * MXF(.mxf)
 * MPEG2-PS、MPEG2-TS、3GP(.ts、.ps、.3gp、.3gpp、.mpg)
 * Windows Media Video(WMV)/ASF(.wmv、.asf)
-* AVI（未壓縮的8位/10位）(.avi)
+* AVI（未壓縮8位/10位）(.avi)
 * MP4(.mp4、.m4a、.m4v)
-* Microsoft數字錄像(DVR-MS)(.dvr-ms)
+* Microsoft數位視訊錄制(DVR-MS)(.dvr-ms)
 * 馬特羅斯卡/WebM(.mkv)
 * 波/波(.wav)
-* 快速時間(.mov)
+* QuickTime(.mov)
 
 ## 提示和限制 {#limitations-and-tips}
 
-* 當前，元資料提取的檔案大小限制約為15 GB。 上載超大資產時，有時元資料提取操作會失敗。
+* 目前，中繼資料擷取的檔案大小限制約為15 GB。 上傳非常大型的資產時，有時中繼資料擷取作業會失敗。
 
-## Dynamic Media — 支援的用於轉碼的輸入視頻格式 {#video-dynamic-media-transcoding}
+## Dynamic Media — 支援的轉碼輸入視訊格式 {#video-dynamic-media-transcoding}
 
-| 視頻檔案副檔名 | 容器 | 推薦的視頻編解碼器 | 不支援的視頻編解碼器 |
+| 影片副檔名 | 容器 | 建議的視訊轉碼器 | 不支援的視訊轉碼器 |
 | --- | --- | --- | --- |
-| 艾維 | A/V交織 | XVID、DIVX、HDV、MiniDV(DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3(IV30)、MJPEG、Microsoft視頻1(MS-CRAM) |
-| FLV、F4V | AdobeFlash | H264/AVC、Flix VP6、H263、Sorenson | SWF（向量動畫檔案） |
-| M4V | AppleiTunes | H264/AVC | − |
+| AVI | A/V插播 | XVID、DIVX、HDV、MiniDV(DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3(IV30)、MJPEG、Microsoft Video 1(MS-CRAM) |
+| FLV、F4V | AdobeFlash | H264/AVC, Flix VP6, H263, Sorenson | SWF（向量動畫檔案） |
+| M4V | Apple iTunes | H264/AVC | − |
 | MKV | 馬特羅斯卡 | H264/AVC | - |
-| MOV,QT | Apple快速時間 | H264/AVC、AppleProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、松下DVCPro、AppleDV(DV25)、ApplePhotoSON、Avid DNxHD、JpegAVD AVR | Apple中級，Apple動畫 |
+| MOV, QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV(DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple中級，Apple動畫 |
 | MP4 | MPEG-4 | H264/AVC（所有配置檔案） | - |
 | MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
-| MXF? | MXF | Sony XDCAM、MPEG-2、MPEG-4、松下DVCPro | - |
-| OGV,OGG | 奧格 | 蒂奧拉，VP3，狄拉克 | - |
-| WebM | WebM | GoogleVP8 | - |
-| WMV | Windows Media 9 | WMV3(v9)、WMV2(v8)、WMV1(v7)、GoToMeeting(G2M2、G2M3、G2M4) | Microsoft螢幕(MSS2)、Microsoft照片(WVP2) |
+| MXF‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、松下DVCPro | - |
+| 奧格夫、奧格 | 奧格 | 蒂奧拉，VP3，狄拉克 | - |
+| WebM | WebM | Google VP8 | - |
+| WMV | Windows Media 9 | WMV3(v9)、WMV2(v8)、WMV1(v7)、GoToMeeting(G2M2、G2M3、G2M4) | Microsoft Screen(MSS2)、Microsoft Photo Story(WVP2) |
 
-？此視頻格式尚不支援用於Dynamic Media的互動式視頻或用於Experience Manager Assets的注釋。
+*此視訊格式尚不支援與Dynamic Media中的互動式視訊搭配使用，或與Experience Manager Assets中的附註搭配使用。
 
-## Dynamic Media — 支援的文檔格式 {#document-support-dynamic-media}
+## Dynamic Media — 支援的檔案格式 {#document-support-dynamic-media}
 
-| 格式 | 上載（輸入格式） | 建立影像預設（輸出格式） | 預覽動態格式副本 | 提供動態格式副本 | 下載動態格式副本 |
+| 格式 | 上傳（輸入格式） | 建立影像預設集（輸出格式） | 預覽動態轉譯 | 傳送動態轉譯 | 下載動態轉譯 |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
-| PDF（請參閱下面的注釋） | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PDF（請參閱下方附註） | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 >[!NOTE]
 >
->對於安全PDF，僅支援上載。
+>針對安全PDF，僅支援上傳。
 
-## Dynamic Media — 支援的光柵影像格式 {#image-support-dynamic-media}
+## Dynamic Media — 支援的點陣影像格式 {#image-support-dynamic-media}
 
-| 格式 | 上載（輸入格式） | 建立影像預設（輸出格式） | 預覽動態格式副本 | 提供動態格式副本 | 下載動態格式副本 | 設定支援此格式的類型 |
+| 格式 | 上傳（輸入格式） | 建立影像預設集（輸出格式） | 預覽動態轉譯 | 傳送動態轉譯 | 下載動態轉譯 | 設定支援此格式的類型 |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
-| BMP | ✓ | - | - | - | - | [影像](/help/assets/dynamic-media/image-sets.md)。 [混合介質](/help/assets/dynamic-media/mixed-media-sets.md), [自旋](/help/assets/dynamic-media/spin-sets.md) |
+| BMP | ✓ | - | - | - | - | [影像](/help/assets/dynamic-media/image-sets.md), [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)，和 [回轉](/help/assets/dynamic-media/spin-sets.md) |
 | EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)。 [混合介質](/help/assets/dynamic-media/mixed-media-sets.md), [自旋](/help/assets/dynamic-media/spin-sets.md) |
-| 皮克 | ✓ | - | - | - | - | - |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)。 [混合介質](/help/assets/dynamic-media/mixed-media-sets.md), [自旋](/help/assets/dynamic-media/spin-sets.md) |
-| PSD? | ✓ | - | - | - | - | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md)。 [混合介質](/help/assets/dynamic-media/mixed-media-sets.md), [自旋](/help/assets/dynamic-media/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md), [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)，和 [回轉](/help/assets/dynamic-media/spin-sets.md) |
+| PICT | ✓ | - | - | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md), [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)，和 [回轉](/help/assets/dynamic-media/spin-sets.md) |
+| PSD協定 | ✓ | - | - | - | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md), [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)，和 [回轉](/help/assets/dynamic-media/spin-sets.md) |
 
-？從PSD檔案中提取合併的影像。 它是由 [!DNL Adobe Photoshop] 並包含在PSD檔案中。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
+*從PSD檔案擷取合併的影像。 這是由 [!DNL Adobe Photoshop] 和包含在PSD檔案中。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
 
-## Dynamic Media — 不支援的光柵影像格式 {#unsupported-raster-image-formats-dm}
+## Dynamic Media — 不支援的點陣影像格式 {#unsupported-raster-image-formats-dm}
 
-以下子類型的光柵影像檔案格式 *不* 支援 [!DNL Dynamic Media]:
+以下子類型的光柵影像檔案格式為 *not* 支援 [!DNL Dynamic Media]:
 
 * IDAT區塊大小大於100 MB的PNG檔案。
 * PSB檔案。
-* 不支援具有非CMYK、RGB、灰度或點陣圖的色彩空間的PSD檔案。 不支援DuoTone、Lab和索引顏色空間。
-* PSD深度大於16的檔案。
+* 不支援具有CMYK、RGB、灰度或點陣圖以外的顏色空間的PSD檔案。 不支援DuoTone、Lab和索引色空間。
+* PSD位深度大於16的檔案。
 * TIFF具有浮點資料的檔案。
-* TIFF具有實驗室顏色空間的檔案。
+* TIFF具有Lab色域的檔案。
 
 ## Dynamic Media — 支援的3D檔案格式 {#support-3d-formats-dynamic-media}
 
-另請參閱 [支援的3D格式](/help/assets/file-format-support.md#support-3d-formats)
+另請參閱 [支援3D格式](/help/assets/file-format-support.md#support-3d-formats)
 
 | 3D檔案副檔名 | 檔案格式 | MIME類型 | 附註 |
 |---|---|---|---|
-| 格爾布 | 二進位GL傳輸 | 模型/gltf二進位 | 將材料和紋理作為單個資源包括在內。 |
-| OBJ | WaveFront 3D對象檔案 | 應用程式/x-tgif |  |
+| GLB | 二進位GL傳輸 | 模型/gltf二進位 | 將材料和紋理作為單一資產包含。 |
+| OBJ | WaveFront 3D對象檔案 | application/x-tgif |  |
 | STL | 光固化成形 | application/vnd.ms-pki.stl |  |
-| 烏茲 | 通用場景描述Zip存檔 | model/vnd.usdz | *僅支援攝入；沒有可用的查看或交互。* USDZ是專有的3D格式，可由Safari或iOS以本機方式查看。 |
+| USDZ | 通用場景描述Zip封存 | model/vnd.usdz+zip | *僅支援擷取；沒有可用的檢視或互動。* USDZ是專屬的3D格式，可由Safari或iOS以原生方式檢視。 |
 
 >[!MORELIKETHIS]
 >
->* [使用資產微服務的資產處理](asset-microservices-overview.md)
->* [支援的檔案格式，用於智慧標籤基於文本的資產](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [使用資產微服務進行資產處理](asset-microservices-overview.md)
+>* [支援的檔案格式，適用於文字型資產的智慧標籤](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
