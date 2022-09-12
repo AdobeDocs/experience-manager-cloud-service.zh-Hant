@@ -1,6 +1,6 @@
 ---
-title: 內容交付流概述
-description: 內容交付流概述
+title: 內容傳遞流程概觀
+description: 內容傳遞流程概觀
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 source-git-commit: 60fc1b8f93c93ca427507dbe56511342f285e6bc
 workflow-type: tm+mt
@@ -11,27 +11,27 @@ ht-degree: 1%
 
 # 內容傳遞流程 {#content-delivery}
 
-當前頁面詳細資訊在as a Cloud Service中發佈服務內容AEM傳遞。 發佈服務內容傳遞包括：
+目前頁面詳細說明AEMas a Cloud Service中的發佈服務內容傳送。 發佈服務內容傳送包括：
 
 * CDN
-* 調度AEM員
-* 發AEM布
+* AEM dispatcher
+* AEM發佈
 
-資料流如下：
+資料流程如下：
 
-1. URL將添加到瀏覽器中
-1. 在DNS中映射到該域的CDN請求
-1. 如果內容在CDN上完全快取，則CDN會將其提供給瀏覽器
-1. 如果內容未完全快取，則CDN將調用（反向代理）到調度程式
-1. 如果內容在分發程式上完全快取，則分發程式將其提供給CDN
-1. 如果內容未完全快取，則調度程式將調用（反向代理）到發AEM布
-1. 該內容由瀏覽器呈現，該瀏覽器也可根據標題快取它
+1. URL會新增至瀏覽器
+1. 向DNS中對應至該網域的CDN提出請求
+1. 如果CDN已完全快取內容，CDN會將內容提供給瀏覽器
+1. 如果未完全快取內容，CDN會呼叫（反向代理）給Dispatcher
+1. 如果Dispatcher已完全快取內容，Dispatcher會將內容提供給CDN
+1. 如果未完全快取內容，則Dispatcher會呼叫（反向Proxy）至AEM發佈
+1. 內容由瀏覽器轉譯，瀏覽器也可根據標題快取
 
-預設情況下，內容類型HTML/文本設定為在分發程式層300秒（5分鐘）後過期，該閾值是分發程式快取和CDN都尊重的。 在重新部署發佈服務期間，在新發佈節點接受通信量之前清除調度器快取並隨後預熱。
+依預設，內容類型HTML/文字會設為在Dispatcher層300秒（5分鐘）後過期，此臨界值會同時受到Dispatcher快取和CDN的尊重。 在重新部署發佈服務期間，會清除Dispatcher快取，然後在新的發佈節點接受流量之前加熱。
 
-以下各節提供了有關內容交付的更詳細資訊：
-* [CDN配置](/help/implementing/dispatcher/cdn.md)
+以下章節提供內容傳送的更詳細資訊：
+* [CDN設定](/help/implementing/dispatcher/cdn.md)
 * [快取](/help/implementing/dispatcher/caching.md)
 
 
-有關從作者服務到發佈服務的複製的資訊可用 [這裡](/help/operations/replication.md)。
+有關從作者服務復寫至發佈服務的資訊可供使用 [此處](/help/operations/replication.md).
