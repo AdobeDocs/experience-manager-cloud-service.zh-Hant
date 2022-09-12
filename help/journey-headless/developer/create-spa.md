@@ -1,6 +1,6 @@
 ---
-title: 可選 — 如何使用建立單頁應用SPA程式(AEM)
-description: 在此可選的無AEM頭開發人員旅程的繼續中，您將了AEM解如何將無頭交付與傳統的全堆棧CMS功能結合起來，以及如何使用編輯器框架SPA創AEM建可SPA編輯。
+title: 選用 — 如何使用AEM建立單頁應用程式(SPA)
+description: 在此選用的AEM無頭式開發人員歷程延續中，您將了解AEM如何將無頭式傳送與傳統的完整堆疊CMS功能結合，以及如何使用AEM SPA編輯器架構建立可編輯的SPA。
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
@@ -9,122 +9,122 @@ ht-degree: 1%
 
 ---
 
-# 如何使用建立單頁應用SPA程式(AEM) {#create-spa}
+# 如何使用AEM建立單頁應用程式(SPA) {#create-spa}
 
-在此可選的繼續 [無AEM頭開發者之旅，](overview.md) 您將了AEM解如何將無頭傳遞與傳統的全堆棧CMS功能結合起來，以及如何使用SPAAEM Editor框架建立可編輯SPA，以及如何整合外SPA部，從而根據需要啟用編輯功能。
+在此選用的延續中， [AEM無頭開發者歷程，](overview.md) 您了解AEM如何將無頭式傳送與傳統的完整堆疊CMS功能結合，以及如何使用AEM SPA編輯器架構建立可編輯的SPA，以及整合外部SPA，以視需要啟用編輯功能。
 
-## 到目前為止的故事 {#story-so-far}
+## 迄今為止的故事 {#story-so-far}
 
-此時，您應該已完成 [無AEM頭開發者之旅](overview.md) 並瞭解無頭遞送的基本知識，AEM包括瞭解：
+此時，您應已完成整個 [AEM Headless Developer Journey](overview.md) 並了解AEM中無頭式傳送的基本概念，包括：
 
-* 無頭內容和有頭內容交付之間的區別。
-* 無AEM頭部特徵。
-* 如何組織和AEM無頭項目。
-* 如何在中建立無頭內AEM容。
-* 如何檢索和更新中的無頭內AEM容。
-* 如何與無頭項目AEM共處。
+* 無頭式內容傳送與無頭式內容傳送之間的差異。
+* AEM無頭功能。
+* 如何組織及AEM Headless專案。
+* 如何在AEM中建立無頭式內容。
+* 如何在AEM中擷取和更新無標題內容。
+* 如何與AEM Headless專案同時執行。
 
-因此，你要麼接受了你的第一個AEM無頭項目，要麼擁有了實現這一目標所需的所有知識。 恭喜！
+因此，您現在要麼已上線使用您的第一個AEM Headless專案，要麼已具備完成該專案所需的所有知識。 恭喜！
 
-那麼，你為什麼要閱讀這段額外的，可選的旅程延續？ 你可能還記得 [入門](getting-started.md#integration-levels) 我們簡要地AEM討論了如何不僅支援無頭遞送和傳統的全棧模型，還支援結合兩者優點的混合模型。 雖然不是傳統的無頭模型，但這種混合模型可以為某些項目提供前所未有的靈活性。
+那麼，為什麼您要閱讀這個額外的、可選的歷程延續？ 你可能記得 [快速入門](getting-started.md#integration-levels) 我們簡要地討論了AEM如何不僅支援無頭式傳送和傳統的完整堆疊模型，還支援結合兩者優點的混合模型。 雖然這種混合模式不是傳統的無頭模式，但可以為某些項目提供前所未有的靈活性。
 
-本文基於您對AEMHeadless的瞭解，深入探討如何建立您自己的單頁應用程式(SPA在中實際可編AEM輯)。 這樣，您就可以建立內容並將其直接傳送到SPA，但SPA在中仍可編AEM輯。
+本文以您對AEM Headless的了解為基礎，深入探討如何建立您自己的單頁應用程式(SPA)，而這些應用程式實際上可在AEM中編輯。 如此一來，您就可以建立內容，並無頭地傳送至SPA，但SPA在AEM中仍可編輯。
 
 ## 目標 {#objective}
 
-本文檔幫助您瞭解如何使用編輯器框架開發AEM單頁SPA應用程式。 閱讀此文檔後，您應：
+本檔案可協助您了解如何使用AEM SPA Editor架構開發單頁應用程式。 閱讀本檔案後，您應：
 
-* 瞭解編輯器的基SPA本功能。
-* 瞭解為建立完全可編輯SPA的要AEM求。
-* 瞭解外部SPA如何整合到AEM。
-* 瞭解應如何實現或不應如何實現伺服器端呈現。
+* 了解SPA編輯器的基本功能。
+* 了解針對AEM建立可完全編輯的SPA的需求。
+* 了解如何將外部SPA整合至AEM。
+* 了解應該或不應該如何實作伺服器端轉譯。
 
-## 要求和先決條件 {#requirements-prerequisites}
+## 需求與必要條件 {#requirements-prerequisites}
 
-在開始使用之前，有許多要SPA求AEM。
+開始使用AEM中的SPA之前，有許多需求。
 
 ### 知識 {#knowledge}
 
-* 使用反應或SPAAngular框架建立開發經驗
-* 建立內AEM容片段和使用編輯器的基本技能
-* 確保審閱文檔 [無頭AEM](/help/implementing/developing/headful-headless.md) 來瞭解整合的各SPA個層次。
+* 使用React或React架構建立SPA的開發Angular
+* 基本AEM技能建立內容片段及使用編輯器
+* 請務必檢閱檔案 [AEM中的Headful和Headless](/help/implementing/developing/headful-headless.md) 以便了解SPA整合的各種層級。
 
 ### 工具 {#tools}
 
-* 用於測試部署項目的沙盒訪問
+* 測試部署專案的沙箱存取權
 * 用於資料建模和測試的本地開發實例
-* 現有外部SPA（可選，取決於選擇的整合模型）
+* 現有外部SPA（選用，視選擇的整合模型而定）
 * AEM 專案原型
 
-## 什麼SPA? {#what-is-a-spa}
+## 什麼是SPA? {#what-is-a-spa}
 
-單頁應用程SPA序(1)與常規頁不同，其是呈現客戶端，並且主要是Javascript驅動的，依靠Ajax調用載入資料並動態更新頁面。 大多數或所有內容在單個頁面負載中檢索一次，並根據用戶與頁面的交互情況根據需要非同步載入其他資源。
+單頁應用程式(SPA)與傳統頁面不同，前者是在用戶端轉譯，主要是Javascript導向，需仰賴Ajax呼叫來載入資料並動態更新頁面。 根據使用者與頁面的互動，大部分或所有內容在單一頁面載入中會擷取一次，並視需要以非同步方式載入其他資源。
 
-這減少了頁面刷新的需要，並為用戶提供了無縫、快速且更像本地應用程式體驗的體驗。
+這可減少頁面重新整理的需求，並為使用者呈現流暢、快速的體驗，且感覺更像原生應用程式體驗。
 
-前AEM端開發SPA人員可建立可SPA整合到站點的內容，使內容作者能夠像任何其他內容一樣SPA輕鬆地編輯內容。
+AEM SPA編輯器可讓前端開發人員建立可整合至AEM網站的SPA，讓內容作者可像編輯任何其他AEM內容一樣輕鬆編輯SPA內容。
 
-## 為什麼SPA? {#why-spa}
+## 為什麼是SPA? {#why-spa}
 
-通過更快、更流暢和更像本地應用程式，SPA不僅對網頁訪問者，而且由於工作方式的性質，對營銷人員和開發人員來說，都成為非常有吸引力的體SPA驗。
+SPA更像原生應用程式，更加快速、流暢，不僅對網頁的訪客，而且由於SPA的運作方式，對行銷人員和開發人員而言，都成為極具吸引力的體驗。
 
-有關使用它們的SPA完整說明和原因，請參閱 [額外資源](#additional-resources) 的子目錄。
+如需SPA的完整說明及使用原因，請參閱 [其他資源](#additional-resources) 區段，取得更多內部檔案的連結。
 
-## 處理方AEM式SPA
+## AEM如何處理SPA
 
-開發單頁應用程式AEM時，假定前端開發人員在建立時遵守標準的最佳SPA做法。 如果作為前端開發人員，您遵循這些一般的最佳做法以及AEM少數特定的原則，則SPA您將能夠利用其AEM內容創作功能發揮作用。
+在AEM上開發單頁應用程式時，會假設前端開發人員在建立SPA時遵守標準最佳實務。 如果您是前端開發人員，請遵循這些一般最佳實務以及幾項AEM專屬原則，您的SPA將可搭配AEM及其內容製作功能運作。
 
-* **便攜性**  — 與任何元件一樣，SPA元件應盡可能便攜。 應該SPA使用可移植和可重複使用的元件來構建。
-* **驅動AEM器站點結構**  — 前端開發人員建立元件並擁有其內部結構，但依AEM賴於定義站點的內容結構。
-* **動態渲染**  — 所有渲染都應是動態的。
-* **動態路由**  — 負SPA責路由並監聽路AEM由並基於路由讀取。 任何路由都應是動態的。
+* **便攜性**  — 如同任何元件，SPA元件應盡可能攜帶。 SPA應使用可移植且可重複使用的元件來建立。
+* **AEM驅動器站點結構**  — 前端開發人員建立元件並擁有其內部結構，但需仰賴AEM來定義網站的內容結構。
+* **動態演算**  — 所有呈現應為動態。
+* **動態路由** - SPA負責路由，AEM會監聽路由並據此擷取。 任何路由都應是動態的。
 
-有關如何處理的AEM完整SPA說明，請參見 [額外資源](#additional-resources) 的子目錄。
+如需AEM如何處理SPA的完整說明，請參閱 [其他資源](#additional-resources) 區段，取得更多內部檔案的連結。
 
-## 編AEM輯SPA器 {#aem-spa-editor}
+## AEM SPA編輯器 {#aem-spa-editor}
 
-使用常SPA用框架(如React和Angular)構建的站點通過動態JSON載入其內容，並且不提供頁面編輯器能夠放置編輯控AEM件所必需的HTML結構。
+使用通用SPA架構(例如React和Angular)建置的網站會透過動態JSON載入其內容，不提供AEM頁面編輯器必須的HTML結構才能放置編輯控制項。
 
-要啟用在中的編SPA輯AEM，需要在儲存庫中的JSON輸SPA出和內容模型之AEM間進行映射以保存對內容的更改。
+若要啟用AEM內的SPA編輯功能，需要SPA的JSON輸出與AEM存放庫中的內容模型之間的對應，才能儲存內容的變更。
 
-SPA中的AEM支援引入了一個精簡JS層，當載入到頁面編輯器中時，該層與SPAJS代碼交互，可通過該層發送事件，並激活編輯控制項的位置以允許上下文編輯。 此功能基於Content Services API端點概念，因為來自內容的內SPA容需要通過Content Services載入。
+AEM中的SPA支援導入了精簡JS層，當載入頁面編輯器時，此層會與SPA JS程式碼互動，以便傳送事件，並啟用編輯控制項的位置以允許內容內編輯。 此功能以「內容服務API端點」概念為基礎，因為SPA的內容需透過「內容服務」載入。
 
-有關編輯器的AEM完整SPA說明，請參見 [額外資源](#additional-resources) 的子目錄。
+如需AEM SPA編輯器的完整說明，請參閱 [其他資源](#additional-resources) 區段，取得更多內部檔案的連結。
 
-## 適應現有SPA {#existing-spas}
+## 調整現有SPA {#existing-spas}
 
-如果您有現有SPA的AEM，則支援將其嵌入AEM到編輯器中，以便您的內容作者可以看到AEM它。 這對於查看他們通過內容片段建立的內容非常有用，這些內容將在要使用的最終應用程式的上下文中顯示。
+如果您已有SPA,AEM支援將其內嵌至AEM，讓內容作者可在AEM編輯器中看到它。 在使用內容片段的最終應用程式內容中，若要檢視這些片段所建立的內容，這個功能會相當實用。
 
-此外，只需稍作更改，您就可以啟用編輯器內外部SPA的特定編AEM輯功能。
+此外，只要進行小幅變更，您就可以在AEM編輯器中對外部SPA啟用特定編輯功能。
 
-RemotePage元件允許在中呈現SPA外部AEM。
+RemotePage元件允許在AEM中轉譯外部SPA。
 
-有關如何使外部可編輯的完SPA整說明AEM，請參見 [額外資源](#additional-resources) 的子目錄。
+如需如何讓外部SPA在AEM中可編輯的完整說明，請參閱 [其他資源](#additional-resources) 區段，取得更多內部檔案的連結。
 
 ## 下一步 {#what-is-next}
 
-要開始開發您自己的SPA文AEM檔，請查看以下文檔：
+若要開始開發自己的SPA for AEM，請檢閱下列檔案：
 
-* [WKND教SPA程](/help/implementing/developing/hybrid/wknd-tutorial.md)
-* [開始使用React](/help/implementing/developing/hybrid/getting-started-react.md)
+* [SPA WKND教學課程](/help/implementing/developing/hybrid/wknd-tutorial.md)
+* [React快速入門](/help/implementing/developing/hybrid/getting-started-react.md)
 * [開始使用Angular](/help/implementing/developing/hybrid/getting-started-angular.md)
 
-如果您需要調整現有SPA文檔以在中AEM使用它，請查看以下文檔：
+如果您需要調整現有SPA以在AEM中使用，請檢閱下列檔案：
 
 * [RemotePage元件](/help/implementing/developing/hybrid/remote-page.md)
-* [編輯SPA外部AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
+* [在AEM中編輯外部SPA](/help/implementing/developing/hybrid/editing-external-spa.md)
 
-請參閱下面 [額外資源](#additional-resources) 能讓你更深入地瞭解SPA話題AEM。
+請參閱下方的 [其他資源](#additional-resources) 這可讓您在AEM中深入探討SPA主題。
 
 ## 其他資源 {#additional-resources}
 
-以下是一些附加資源，可對本文檔中提到的一些概念進行更深入的介紹。
+以下是一些額外資源，可深入探討本檔案中提及的一些概念。
 
-* [無頭AEM](/help/implementing/developing/headful-headless.md)  — 中提供的不同交付模式的說AEM明
-* [介SPA紹和漫遊。](/help/implementing/developing/hybrid/introduction.md) - 2014年12月10日至2014年12SPA月AEM1
-* [開SPA發AEM](/help/implementing/developing/hybrid/developing.md)  — 關於如何為
-* [編SPA輯器概述](/help/implementing/developing/hybrid/editor-overview.md)  — 編輯器工作方式SPA的詳細資訊
-* [伺服器端呈現](/help/implementing/developing/hybrid/ssr.md)  — 如何配置SSRAEM SPA
-* [參考SPA文檔](/help/implementing/developing/hybrid/reference-materials.md) - JavaScript API引用和指向開源AEMGitHub項SPA目的連結
+* [AEM中的Headful和Headless](/help/implementing/developing/headful-headless.md)  — 說明AEM中提供的不同傳送模型
+* [SPA簡介和逐步說明。](/help/implementing/developing/hybrid/introduction.md) - AEM中的SPA簡介
+* [開發SPA for AEM](/help/implementing/developing/hybrid/developing.md)  — 如何開發SPA for AEM的指引
+* [SPA編輯器概述](/help/implementing/developing/hybrid/editor-overview.md) - SPA編輯器運作方式的詳細資訊
+* [伺服器端轉譯](/help/implementing/developing/hybrid/ssr.md)  — 如何為AEM SPA配置SSR
+* [SPA參考檔案](/help/implementing/developing/hybrid/reference-materials.md) - JavaScript API參考和連結至開放原始碼AEM SPA GitHub專案
 * [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)  — 如何建立內容片段
-* [項AEM目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Maven模板，它建立基於最佳做法的最小化Adobe Experience Manager(AEM)項目，作為您網站的起點
+* [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Maven範本，可建立基於最佳實務的簡化Adobe Experience Manager(AEM)專案，作為網站的起點
