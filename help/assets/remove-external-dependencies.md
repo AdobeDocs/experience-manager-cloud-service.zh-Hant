@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # 刪除現有安裝的外部依賴項 {#remove-external-depedencies}
 
-Adobe建議您為Workfront執行現有增強連接器安裝的配置步驟，以刪除對Hoodoo分發點的依賴項。
+Adobe建議您為Workfront的現有增強連接器安裝執行配置步驟，以移除對Hoodoo分佈點的依賴項。
 
 >[!NOTE]
 >
->僅在2022年3月之前為Workfront安裝了增強型連接器時，才執行配置步驟。 從2022年3月起，在Workfront安裝新的增強連接器時，對Hoodoo分發點沒有依賴性。
+>只有在2022年3月之前已安裝Workfront的增強連接器時，才執行設定步驟。 自2022年3月起，Workfront全新增強連接器安裝對Hoodoo分發點沒有相依性。
 
 要刪除外部依賴項：
 
@@ -30,7 +30,7 @@ Adobe建議您為Workfront執行現有增強連接器安裝的配置步驟，以
      </repository>
    ```
 
-1. 從 `settings.xml` 檔案，可用於 `./cloudmanager/maven/settings.xml`:
+1. 從 `settings.xml` 檔案，可在 `./cloudmanager/maven/settings.xml`:
 
    ```XML
          <server>
@@ -46,4 +46,4 @@ Adobe建議您為Workfront執行現有增強連接器安裝的配置步驟，以
          </server>
    ```
 
-1. 執行 [新安裝步驟](workfront-connector-install.md)。
+1. 執行 [新安裝步驟](workfront-connector-install.md).
