@@ -1,6 +1,6 @@
 ---
-title: 高級URL配置
-description: 瞭解如何自定義產品和類別頁的URL。 這允許實現優化搜索引擎的URL並促進發現。
+title: 進階URL設定
+description: 了解如何自訂產品和類別頁面的URL。 這可讓實施最佳化搜尋引擎的URL，並促進探索。
 sub-product: Commerce
 version: Cloud Service
 doc-type: technical-video
@@ -17,27 +17,27 @@ ht-degree: 3%
 
 ---
 
-# 高級URL配置 {#url}
+# 進階URL設定 {#url}
 
 >[!NOTE]
 >
-> 搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，在許多 Adobe Experience Manager (AEM) as a Cloud Service 專案中，SEO 考量都是需要解決的問題。請閱讀 [SEO和URL管理最佳實踐](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html) 的雙曲餘切值。
+> 搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，在許多 Adobe Experience Manager (AEM) as a Cloud Service 專案中，SEO 考量都是需要解決的問題。請閱讀 [SEO和URL管理最佳作法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html) 以取得其他資訊。
 
-[AEMCIF核心元件](https://github.com/adobe/aem-core-cif-components) 提供高級配置，以自定義產品和類別頁的URL。 許多實現將自定義這些URL以用於搜索引擎優化(SEO)。 以下視頻詳細資訊如何配置 `UrlProvider` 服務和功能 [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 自定義產品和類別頁的URL。
+[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components) 提供進階設定，可自訂產品和類別頁面的URL。 許多實作會為了搜尋引擎最佳化(SEO)目的自訂這些URL。 以下影片詳細說明如何設定 `UrlProvider` 服務與功能 [Sling對應](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 自訂產品和類別頁面的URL。
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## 設定 {#configuration}
 
-配置 `UrlProvider` 服務時，項目必須提供OSGI配置 _CIF URL提供程式配置_。
+若要設定 `UrlProvider` 服務（根據SEO需求和需求）必須提供 _CIF URL提供者設定_.
 
 >[!NOTE]
 >
-> 自CIF核心元件2.0.0版以來，URL提供程式配置僅提供預定義的URL格式，而不提供1.x版中已知的自由文本配置格式。 此外，使用選擇器傳遞URL中的資料已被尾碼取代。
+> 自AEM CIF核心元件2.0.0版起，URL提供者設定僅提供預先定義的URL格式，而非1.x版已知的可自由文字設定的格式。 此外，在URL中使用選取器傳遞資料的做法已取代為尾碼。
 
-### 產品頁URL格式 {#product}
+### 產品頁面URL格式 {#product}
 
-這將配置產品頁的URL，並支援以下選項：
+這可設定產品頁面的URL並支援下列選項：
 
 * `{{page}}.html/{{sku}}.html#{{variant_sku}}` (預設)
 * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
@@ -47,72 +47,72 @@ ht-degree: 3%
 * `{{page}}.html/{{category}}/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 
-對於 [Venia參考儲存](https://github.com/adobe/aem-cif-guides-venia):
+若 [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` 將替換為 `/content/venia/us/en/products/product-page`
-* `{{sku}}` 將被產品的sku替換，例如 `VP09`
+* `{{sku}}` 將替換為產品的sku，例如 `VP09`
 * `{{url_key}}` 將被產品的 `url_key` 屬性，例如 `lenora-crochet-shorts`
 * `{{url_path}}` 將被產品的 `url_path`，例如 `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` 將替換為當前選定的變型，例如 `VP09-KH-S`
+* `{{variant_sku}}` 將替換為目前選取的變體，例如 `VP09-KH-S`
 
-自 `url_path` 已棄用，預定義的產品URL格式使用產品 `url_rewrites` 選擇路徑段最多的路徑段， `url_path` 不可用。
+由於 `url_path` 已遭取代，預先定義的產品URL格式會使用產品的 `url_rewrites` 並挑選路徑區段最多的區段，若 `url_path` 無法使用。
 
-使用上面的示例資料，使用預設URL格式格式化的產品變型URL將看起來類似 `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`。
+使用上述範例資料，使用預設URL格式格式化的產品變體URL看起來會像 `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
-### 類別頁URL格式 {#product-list}
+### 類別頁面URL格式 {#product-list}
 
-這將配置類別或產品清單頁的URL，並支援以下選項：
+這可設定類別或產品清單頁面的URL，並支援下列選項：
 
 * `{{page}}.html/{{url_path}}.html` (預設)
 * `{{page}}.html/{{url_key}}.html`
 
-對於 [Venia參考儲存](https://github.com/adobe/aem-cif-guides-venia):
+若 [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` 將替換為 `/content/venia/us/en/products/category-page`
-* `{{url_key}}` 將被類別的 `url_key` 屬性
-* `{{url_path}}` 將被類別的 `url_path`
+* `{{url_key}}` 將替換為類別的 `url_key` 屬性
+* `{{url_path}}` 將替換為類別的 `url_path`
 
-使用上面的示例資料，使用預設URL格式設定的類別頁URL將看起來類似 `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`。
+使用上述範例資料，使用預設URL格式格式化的類別頁面URL看起來會像 `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
 >[!NOTE]
 > 
-> 的 `url_path` 是 `url_keys` 產品或類別的祖先和產品或類別的 `url_key` 分隔 `/` 斜線。 每個 `url_key` 在給定商店中被認為是唯一的。
+> 此 `url_path` 是 `url_keys` 產品或類別的祖先和產品或類別的 `url_key` 分隔 `/` 斜線。 每個 `url_key` 在指定商店內被視為唯一。
 
 ### 儲存特定配置 {#store-specific-urlformats}
 
-系統範圍的類別和產品頁面URL格式由 _CIF URL提供程式配置_ 可以為每個商店更改。
+由 _CIF URL提供者設定_ 可針對每個商店進行變更。
 
-在CIF配置中，編輯器可以選擇替代產品或類別頁URL格式。 如果未選擇任何內容，則實施將回退到系統範圍的配置。
+在CIF設定中，編輯器可以選取替代產品或類別頁面URL格式。 若未選取任何項目，則實作會回退至系統範圍設定。
 
-更改即時網站的URL格式可能會對站點的有機通信產生負面影響。 請參閱 [最佳做法](#best-practices) 並事先仔細規劃URL格式的更改。
+變更即時網站的URL格式可能會對網站的自然流量造成負面影響。 請參閱 [最佳實務](#best-practices) 並事先謹慎規劃URL格式的變更。
 
-![CIF配置中的URL格式](assets/store-specific-url-formats.png)
+![CIF設定中的URL格式](assets/store-specific-url-formats.png)
 
 >[!NOTE]
 >
-> URL格式的儲存特定配置需要 [CIF核心元件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 以及Adobe Experience Manager內容與商業附加軟體的最新版本。
+> 儲存URL格式的特定配置需要 [CIF核心元件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 和最新版Adobe Experience Manager Content and Commerce附加元件。
 
-## 類別感知產品頁URL {#context-aware-pdps}
+## 類別感知產品頁面URL {#context-aware-pdps}
 
-由於可以對產品URL中的類別資訊進行編碼，因此可以用多個產品URL對處於多個類別的產品進行定址。
+由於可以將產品URL中的類別資訊編碼，因此多個類別中的產品也可以用多個產品URL來定址。
 
-預設URL格式將使用以下方案選擇一個可能的替代方案：
+預設URL格式會使用下列配置來選取其中一個可能的替代方案：
 
-* 的 `url_path` 由電子商務後端使用它（不建議使用）定義
+* 若 `url_path` 由電子商務後端使用它來定義（已過時）
 * 從 `url_rewrites` 使用以產品結尾的URL `url_key` 作為替代
-* 形成這些替代方案時使用路徑段最多的
-* 如果有多個，請按電子商務後端給定的順序選擇第一個
+* 形成這些替代項目時，會使用路徑區段最多的
+* 如果有多個，請依電子商務後端提供的順序取用第一個
 
-此方案將選擇 `url_path` 基於子類別比其父類別更具體的假設。 所選 `url_path` 考慮 _正則_ 並且將始終用作產品頁面或產品站點地圖中的規範連結。
+此配置將選取 `url_path` 以最祖先為基礎，假設子類別比父類別更具體。 所選 `url_path` 被視為 _正則_ 和一律會在產品頁面或產品Sitemap中當作標準連結。
 
-但是，當購物者從類別頁導航到產品頁，或從一個產品頁導航到同一類別中的另一個相關產品頁時，保留當前類別上下文是值得的。 在本例中， `url_path` 選擇應選擇在當前類別上下文內而不是 _正則_ 中。
+不過，當購物者從類別頁面導覽至產品頁面，或從一個產品頁面導覽至相同類別中的另一個相關產品頁面時，應保留目前的類別內容。 在此案例中， `url_path` 選取項目應偏好替代項目，而這些替代項目位於目前類別內容，而非 _正則_ 選項。
 
-必須在 _CIF URL提供程式配置_。 如果啟用，則選擇的備選項分數將更高
+此功能必須在 _CIF URL提供者設定_. 如果已啟用，則選取項目的評分會較高，當
 
-* 它們匹配給定類別的部分 `url_path` 從開頭（模糊前置詞匹配）
-* 或者它們與給定類別匹配 `url_key` 任意位置（完全部匹配）
+* 它們與給定類別的部分匹配 `url_path` 從開頭開始（模糊前置詞匹配）
+* 或者它們與指定類別的 `url_key` 隨處（完全部分比對）
 
-例如，請考慮 [產品查詢](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 下。 如果用戶位於「2022年夏季的新產品/新產品」類別頁面，且儲存區使用預設類別頁URL格式，則替代「new-products/new-in-summer-2022/gold-cirque-earrings.html」將從頭開始匹配上下文的2個路徑段：「新產品」和「2022年夏季新產品」。 如果儲存使用僅包含該類別的類別頁URL格式 `url_key`，當與上下文匹配時，仍將選擇相同的替代 `url_key` 任何地方。 在這兩種情況下，都將為「new-products/new-in-summer-2022/gold-cirque-earrings.html」建立產品頁URL `url_path`。
+例如，請考量 [產品查詢](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 下方。 由於使用者位於「2022年夏季的新產品/新產品」類別頁面，且商店使用預設類別頁面URL格式，因此替代的「new-products/new-in-summer-2022/gold-cirque-earrings.html」會從頭開始符合上下文的2個路徑區段：「新產品」和「2022年夏季新產品」。 如果商店使用的類別頁面URL格式僅包含類別 `url_key`，則仍會選取相同的替代，因為它符合上下文的 `url_key` 隨處皆可。 在這兩種情況下，都會為&quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot;建立產品頁面URL `url_path`.
 
 ```
 {
@@ -148,95 +148,95 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 類別感知產品URL需要 [CIF核心元件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 或更新。
+> 類別感知產品URL需要 [CIF核心元件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 或更新版本。
 
-## 特定類別和產品頁 {#specific-pages}
+## 特定類別和產品頁面 {#specific-pages}
 
-可以建立 [多類別和產品頁](../authoring/multi-template-usage.md) 僅用於目錄的特定類別或產品子集。
+您可以建立 [多類別和產品頁面](../authoring/multi-template-usage.md) 僅適用於目錄的特定類別或產品子集。
 
-### 選擇條件 {#specific-pages-selection}
+### 選擇標準 {#specific-pages-selection}
 
-根據類別，選擇特定類別頁面是直接向前的 `url_path` 或 `url_key`。 僅對包含完整類別的URL格式支援匹配子類別 `url_path`。 否則，僅與 `url_key` 可能。
+根據類別，直接選擇特定類別頁面 `url_path` 或 `url_key`. 只有包含完整類別的URL格式才支援相符的子類別 `url_path`. 否則，只有 `url_key` 是可能的。
 
-特定產品頁面按產品的sku或類別進行選擇。 後者要求在產品URL中編碼某些類別資訊。 這僅適用於某些預設URL格式。 有關URL格式支援按sku或類別選擇特定頁面的比較，請參閱下表。
+特定產品頁面會依產品的SKU或類別來選取。 後者需要在產品URL中編碼某些類別資訊。 這僅適用於部分預設URL格式。 請參閱下表以取得比較，了解哪些URL格式支援依SKU或類別選取特定頁面。
 
 
-| URL格式 | 按sku | 按類別 |
+| URL格式 | 按sku | 依類別 |
 | ----------------------------------------------------- | ------ | ---------------- |
 | `{{page}}.html/{{url_key}}.html` | 否 | 否 |
-| `{{page}}.html/{{category}}/{{url_key}}.html` | 否 | 完全匹配 |
+| `{{page}}.html/{{category}}/{{url_key}}.html` | 否 | 僅完全匹配 |
 | `{{page}}.html/{{url_path}}.html` | 否 | 是 |
 | `{{page}}.html/{{sku}}.html` | 是 | 否 |
 | `{{page}}.html/{{sku}}/{{url_key}}.html` | 是 | 否 |
-| `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html` | 是 | 完全匹配 |
+| `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html` | 是 | 僅完全匹配 |
 | `{{page}}.html/{{sku}}/{{url_path}}.html` | 是 | 是 |
 
 {style=&quot;table-layout:auto&quot;}
 
 >[!NOTE]
 >
-> 按類別選擇特定產品頁面需要 [CIF核心元件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 或更新。
+> 需要依類別選取特定產品頁面 [CIF核心元件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 或更新版本。
 
 ### 深度連結 {#specific-pages-deep-linking}
 
-的 `UrlProvider` 預配置為在作者層實例上生成指向特定類別和產品頁的深層連結。 這對編輯器非常有用，編輯器使用「預覽」模式瀏覽網站，導航到特定產品或類別頁面並切換回「編輯」模式以編輯該頁面。
+此 `UrlProvider` 已預先設定，以在製作層級例項上產生特定類別和產品頁面的深層連結。 對於編輯者來說，這很實用，他們可以使用預覽模式瀏覽網站、導覽至特定產品或類別頁面，然後切換回編輯模式以編輯頁面。
 
-另一方面，在發佈層實例上，目錄頁URL應保持穩定，以避免在搜索引擎排名上失利。 由於該發佈層實例將不會在預設情況下呈現指向特定目錄頁的深度連結。 要更改此行為， _CIF URL提供程式特定頁面策略_ 可以配置為始終生成特定頁URL。
+另一方面，在發佈層級例項上，目錄頁面URL應保持穩定，以免在搜尋引擎排名上失去增益。 因為該發佈層級例項預設不會呈現特定目錄頁面的深層連結。 若要變更此行為， _CIF URL提供者特定頁面策略_ 可設定為一律產生特定頁面URL。
 
-## 自定義 {#customization}
+## 自訂 {#customization}
 
-### 自定義URL格式 {#custom-url-format}
+### 自訂URL格式 {#custom-url-format}
 
-要提供自定義URL格式，項目可以 [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) 或 [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) 服務介面，將實現註冊為OSGI服務。 如果可用，這些實現將替換已配置的預定義格式。 如果註冊了多個實現，則具有較高服務等級的實現用較低服務等級代替所述一個或多個實現。
+若要提供自訂URL格式，專案可在 [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) 或 [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) 服務介面，並將實作註冊為OSGI服務。 這些實作（若有）將取代已設定的預先定義格式。 如果已註冊多個實施，則服務排名較高的實施會以較低的服務排名取代該實施。
 
-自定義URL格式實現必須實現一對方法，以從給定參數構建URL，並分析URL以分別返回相同的參數。
+自訂URL格式實施必須實作一對方法，以從指定參數建立URL，並剖析URL以分別傳回相同參數。
 
-### 與Sling映射組合 {#sling-mapping}
+### 結合Sling對應 {#sling-mapping}
 
-除 `UrlProvider`，也可以配置 [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 以便重寫和處理URL。 Archetype項AEM目還提供 [示例配置](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) 為埠4503（發佈）和80（調度程式）配置某些Sling映射。
+除了 `UrlProvider`，也可以設定 [Sling對應](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 以便重寫及處理URL。 AEM原型專案也提供 [範例設定](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) 為連接埠4503（發佈）和80（調度程式）設定某些Sling對應。
 
-### 與Dispatcher結AEM合 {#dispatcher}
+### 結合AEM Dispatcher {#dispatcher}
 
-還可以使用Dispatcher HTTP伺服器AEM和 `mod_rewrite` 中。 的 [項AEM目原型](https://github.com/adobe/aem-project-archetype) 提供已包AEM含基本功能的引用Dispatcher配置 [重寫規則](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) 生成大小。
+URL重新寫入也可透過使用AEM Dispatcher HTTP伺服器來達成，並搭配 `mod_rewrite` 模組。 此 [AEM專案原型](https://github.com/adobe/aem-project-archetype) 提供參考AEM Dispatcher設定，其中已包含基本 [重寫規則](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) ，取代所產生的大小。
 
 ## 最佳作法 {#best-practices}
 
 ### 選擇最佳URL格式 {#choose-url-format}
 
-正如在選擇可用預設格式之一或甚至實施自定義格式之前所提到的，這高度取決於儲存的需要和要求。 以下建議可能有助於作出明智的決定。
+如在選取可用的預設格式之一，或甚至實作自訂格式前所述，高度取決於商店的需求和需求。 下列建議有助於做出有根據的決定。
 
-_**使用包含sku的產品頁面URL格式。**_
+_**使用包含SKU的產品頁面URL格式。**_
 
-CIF核心元件將sku用作所有元件中的主標識符。 如果產品頁面URL格式不包含sku，則需要GraphQL查詢來解析它。 這可能會影響時間到第一位元組。 此外，消費者可以通過使用搜索引擎的sku來查找產品。
+CIF核心元件會以SKU作為所有元件的主要識別碼。 如果產品頁面URL格式不包含SKU，則需要GraphQL查詢才能加以解析。 這可能會影響到首位元組時間。 此外，購物者可使用搜尋引擎，依SKU尋找產品。
 
-_**使用包含類別上下文的產品頁URL格式。**_
+_**使用包含類別內容的產品頁面URL格式。**_
 
-CIF URL提供程式的某些功能僅在使用產品URL格式（對類別上下文進行編碼）時可用，如類別 `url_key` 或類別 `url_path`。 即使新商店可能不需要這些功能，但在開始時使用這些URL格式有助於減少將來的遷移工作。
+CIF URL提供者的某些功能只有在使用產品URL格式時才可使用，這些格式可編碼類別內容，例如類別 `url_key` 或類別 `url_path`. 即使新商店可能不需要這些功能，但一開始使用其中一種URL格式有助於減少日後的移轉工作。
 
-_**在URL長度和編碼資訊之間平衡。**_
+_**平衡URL長度與編碼資訊。**_
 
-根據目錄大小，特別是類別樹的大小和深度，對完整目錄進行編碼可能不合理 `url_path` 的子菜單。 在這種情況下，只包括類別的URL長度 `url_key` 的雙曲餘切值。 這將支援使用類別時可用的大多數功能 `url_path`。
+根據目錄大小，特別是類別樹的大小和深度，對完整目錄進行編碼可能不合理 `url_path` 的類別。 在這種情況下，只要包含類別的 `url_key` 。 這將支援使用類別時可用的大部分功能 `url_path`.
 
-此外， [Sling映射](#sling-mapping) 以便把sku和產品 `url_key`。 在大多數電子商務系統中，sku遵循特定格式，並將sku與 `url_key` 對於傳入的請求，應該很容易。 考慮到這一點，應將產品頁面URL重寫為 `/p/{{category}}/{{sku}}-{{url_key}}.html`和類別URL `/c/{{url_key}}.html` 分別來。 的 `/p` 和 `/c` 為了將產品和類別頁面與其他內容頁面區分開來，前置詞仍然是必要的。
+此外，請使用 [Sling對應](#sling-mapping) 以便將sku與產品結合 `url_key`. 在大部分的電子商務系統中，SKU會遵循特定格式，並將SKU與 `url_key` 對於傳入的請求，應該很容易。 有鑑於此，將產品頁面URL重新寫入 `/p/{{category}}/{{sku}}-{{url_key}}.html`，以及類別URL `/c/{{url_key}}.html` 分別來說。 此 `/p` 和 `/c` 為了將產品和類別頁面與其他內容頁面區分開來，首碼仍然是必要的。
 
-### 遷移到新URL格式 {#migrate-url-formats}
+### 移轉至新URL格式 {#migrate-url-formats}
 
-許多預設URL格式在某種程度上彼此相容，這意味著由一個格式形成的URL可能由另一個格式解析。 這有助於在URL格式之間遷移。
+許多預設URL格式彼此不同程度地相容，這表示由某個格式轉換的URL可能會由另一個格式剖析。 這有助於在URL格式之間移轉。
 
-另一方面，搜索引擎需要一些時間來使用新的URL格式重新搜索所有目錄頁。 為支援此過程並改善最終用戶體驗，建議提供將用戶從舊URL轉發到新URL的重定向。
+另一方面，搜尋引擎需要一些時間，才能以新的URL格式重新編目所有目錄頁面。 若要支援此程式並改善一般使用者體驗，建議您提供重新導向，將使用者從舊的URL轉送至新的URL。
 
-一種方法是將階段環境連接到生產電子商務後端，並將其配置為使用新的URL格式。 隨後獲取 [由CIF產品站點地圖生成器生成的產品站點地圖](../../overview/seo-and-url-management.md) 為階段和生產環境建立 [Apache httpd重寫映射](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html)。 此重寫映射可以與新URL格式的推廣一起部署到調度程式。
+其中一個方法是將預備環境連結至生產電子商務後端，並設定為使用新的URL格式。 之後請取得 [由CIF產品Sitemap產生器產生的產品Sitemap](../../overview/seo-and-url-management.md) 針對預備和生產環境，並使用它們來建立 [Apache httpd重寫映射](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). 此重新寫入地圖可與新URL格式的轉出一併部署至Dispatcher。
 
 ## 範例 {#example}
 
-的 [Venia參考儲存](https://github.com/adobe/aem-cif-guides-venia) 項目包括示例配置，以演示產品和類別頁的自定義URL的使用。 這允許每個項目根據其SEO需求為產品和類別頁面設定單個URL模式。 CIF的組合 `UrlProvider` 和Sling映射（如上所述）。
+此 [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) 專案包含設定範例，以示範產品和類別頁面的自訂URL使用方式。 這可讓每個專案根據其SEO需求，為產品和類別頁面設定個別的URL模式。 CIF的組合 `UrlProvider` 和Sling對應已使用，如上所述。
 
 >[!NOTE]
 >
->此配置必須與項目使用的外部域一起調整。 Sling映射基於主機名和域工作。 因此，預設情況下禁用此配置，並且必須在部署之前啟用此配置。 要執行此操作，請更名Sling映射 `hostname.adobeaemcloud.com` 資料夾 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 根據使用的域名，通過添加 `resource.resolver.map.location="/etc/map.publish"` 到 `JcrResourceResolver` 項目的配置。
+>此設定必須與專案使用的外部網域一併調整。 Sling對應會根據主機名稱和網域運作。 因此，預設情況下會停用此設定，且必須在部署前啟用。 若要這麼做，請重新命名Sling對應 `hostname.adobeaemcloud.com` 資料夾 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 根據使用的網域名稱，並借由新增 `resource.resolver.map.location="/etc/map.publish"` 到 `JcrResourceResolver` 專案的設定。
 
 ## 其他資源 {#additional}
 
-* [Venia參考儲存](https://github.com/adobe/aem-cif-guides-venia)
-* [資AEM源映射](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
-* [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+* [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
+* [AEM資源對應](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [Sling對應](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
