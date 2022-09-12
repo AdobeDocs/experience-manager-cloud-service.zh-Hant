@@ -1,68 +1,68 @@
 ---
-title: 《 2021.10.0版中遷移工具AEM發行說明》
-description: 《 2021.11.0版中遷移工具AEM發行說明》
+title: AEMas a Cloud Service版2021.10.0中移轉工具發行說明
+description: AEMas a Cloud Service版2021.11.0中移轉工具發行說明
 feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
-# 《 2021.10.0版中遷移工具AEM發行說明》 {#release-notes}
+# AEMas a Cloud Service版2021.10.0中移轉工具發行說明 {#release-notes}
 
-本頁概述了as a Cloud Service2021.10.0中遷移工具的AEM發行說明。
+此頁面概述AEM 2021.10.0中移轉工具的發行說明。
 
 >[!NOTE]
->要查看Adobe Experience Manager as a Cloud Service的當前發行說明，請按一下 [這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hant)。
+>若要查看最新的Adobe Experience Manager as a Cloud Service發行說明，請按一下 [此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
-## 雲加速管理器 {#cam-release}
+## Cloud Acceleration Manager {#cam-release}
 
 ### 發行日期 {#release-date-cam}
 
-Cloud Acceleration Manager的發佈日期為2021年10月25日。
+Cloud Acceleration Manager的發行日期為2021年10月25日。
 
 ### 新增功能 {#what-is-new-cam}
 
-Cloud Acceleration Manager現在允許用戶在趨勢線報告中查看歷史BPA報告。 使用此報告，用戶可以輕鬆使用圖形表示方式來查看他們正在取得的進展。 請參閱 [使用查看趨勢線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) 的子菜單。
+Cloud Acceleration Manager現在可讓使用者在趨勢線報表中檢視歷史BPA報表。 透過此報表，使用者可以輕鬆使用圖形表示來檢視其所取得的進展。 請參閱 [使用檢視趨勢線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) 以取得更多詳細資訊。
 
 ### 發行日期 {#release-date-october-cam}
 
-Cloud Acceleration Manager的發佈日期為2021年10月4日。
+Cloud Acceleration Manager的發行日期為2021年10月4日。
 
 ### 新增功能 {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager現在允許用戶在可打印預覽中查看BPA報告，從而允許簡單打印或打印到PDF，以便於共用。 請參閱中的步驟6和7 [使用最佳做法分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis)。
+Cloud Acceleration Manager現在讓使用者能以可列印的預覽方式檢視BPA報表，輕鬆列印或列印至PDF，以方便共用。 請參閱 [使用最佳實務分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 
 ## 內容轉移工具 {#ctt-release}
 
 ### 發行日期 {#release-date-ctt-latest}
 
-內容傳輸工具v1.6.0的發佈日期為2021年10月4日。
+內容轉移工具1.6.0版的發行日期為2021年10月4日。
 
 ### 新增功能 {#what-is-new-ctt-oct}
 
-* 使用簡化的用戶體驗改進了用戶映射工具，包括下面列出的以下功能。 有關詳細資訊，請參閱 [使用用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html)。
-   * Test到用戶管理API的連接，然後運行用戶映射
-   * 順利跳過錯誤並繼續「用戶映射」活動
-   * 如果 **訪問令牌** 24小時後過期。 可以從上次停止的位置重新運行用戶映射。
+* 透過簡化的使用者體驗改善使用者對應工具，包括下列功能。 如需詳細資訊，請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
+   * 在執行使用者對應之前，測試與使用者管理API的連線
+   * 適度略過錯誤，並繼續進行「使用者對應」活動
+   * 若 **存取權杖** 24小時後過期。 可以從上次停止的位置重新運行用戶映射。
 
-* 要增強內容傳輸工具的健壯性，可以一次將內容攝取到Author實例或Publish實例。 請參閱 [內容傳輸工具入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 的子菜單。
+* 若要提高「內容轉移工具」的健全性，一次可將內容擷取至「製作」例項或「發佈」例項。 請參閱 [內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 以取得更多詳細資訊。
 
-* 包含版本時，路徑 `/var/audit` 自動包含以遷移審核事件。
+* 包含版本時，路徑 `/var/audit` 會自動納入，以移轉稽核事件。
 
-## 最佳做法分析器 {#best-practices-analyzer}
+## Best Practices Analyzer {#best-practices-analyzer}
 
 ### 發行日期 {#release-date-bpa-latest}
 
-最佳做法分析器2.1.20版的發佈日期為2021年10月5日。
+Best Practices Analyzer v2.1.20的發行日期為2021年10月5日。
 
 ### 新增功能 {#what-is-new-bpa-oct}
 
-* 能夠檢測並報告節點名稱長度。
+* 偵測及報告節點名稱長度的功能。
 
-* 能夠檢測並報告總索引大小。
+* 能夠偵測並報告總索引大小。
 
-* 能夠檢測並報告丟失原始格式副本的資產。
+* 能夠偵測遺失原始轉譯的資產並製作報表。
