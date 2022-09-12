@@ -9,42 +9,42 @@ ht-degree: 16%
 
 ---
 
-# 當前發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-以下部分概述了當前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
-
->[!NOTE]
->
->從此處，您可以導航到以前版本的發行說明；比如2020年，2021年等等。
+以下章節概述目前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
->請參閱 [最近的文檔更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 有關與版本不直接相關的文檔更新的詳細資訊。
+>您可從這裡導覽至舊版的發行說明；例如，2020年、2021年等。
+
+>[!NOTE]
+>
+>請參閱 [近期檔案更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 如需與版本不直接相關的檔案更新詳細資訊。
 
 ## 發行日期 {#release-date}
 
-發佈日期 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] 本期(2021.11.0)是2021年12月16日。
-以下版本(2022.1.0)是2022年2月3日。
+發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新發行(2021.11.0)為2021年12月16日。
+下列版本(2022.1.0)將於2022年2月3日發行。
 
-## 發佈視頻 {#release-video}
+## 發行影片 {#release-video}
 
-看看 [2021年12月發佈概述](https://video.tv.adobe.com/v/339278) 視頻，瞭解2021.11.0版（2021年11月）中添加的功能摘要。
+查看 [2021年12月發行概述](https://video.tv.adobe.com/v/339278) 影片，以取得2021.11.0（2021年11月）版本中新增功能的摘要。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### 中的新功能 [!DNL Assets] {#assets-features}
 
-* Dynamic MediaImage Smart Crop and Swatch現在由Sensei最新的服務提供支援，這些服務生產改良的作物和色板。 此外，已啟動增強，以生成不同的作物內容，對於相同的長寬比，但跨不同的解析度。 此外，如果「影像配置檔案」中的寬度和高度沒有變化，則在重新處理時將保留任何手動編輯。
+* Dynamic Media影像智慧型裁切和色票現在由最新的Sensei服務提供技術支援，可產生改良的裁切和色票。 此外，已推出增強功能，以產生不同的裁切內容，針對相同外觀比例，但跨不同解析度。 此外，如果影像描述檔中的寬度和高度沒有變更，則任何手動編輯都會保留在重新處理時。
 
-### 中的新功能 [!DNL Assets] 預釋放通道 {#assets-prerelease-features}
+### 中的新功能 [!DNL Assets] 預發行管道 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media]  — 現在，您可以使AEM用Dynamic Media介面配置常規設定和發佈設定，而不必通過Dynamic Media Classic案頭應用程式。
+* [!DNL Dynamic Media]  — 您現在可以使用AEM Dynamic Media介面來設定「一般設定」和「發佈設定」，而不需要透過Dynamic Media Classic案頭應用程式。
 
-* [!DNL Dynamic Media] 現在支援MXF視頻的接收、預覽、播放和發佈。 尚不支援MXF視頻的注釋和可購物視頻。
+* [!DNL Dynamic Media] 現在支援MXF影片的擷取、預覽、播放和發佈。 尚不支援MXF視訊的註解和可購買視訊。
 
-* 在配置遠程DAM和站點部署之間的連接後，遠程DAM上的資產可在站點部署中使用。 您現在可以執行 [更新、刪除、更名和移動操作](/help/assets/use-assets-across-connected-assets-instances.md) 資料夾。 這些更新在站點部署中自動可用，但有一些延遲。
+* 在遠端DAM和Sites部署之間設定連線後，即可在Sites部署中使用遠端DAM上的資產。 您現在可以執行 [更新、刪除、更名和移動操作](/help/assets/use-assets-across-connected-assets-instances.md) 在遠端DAM資產或資料夾上。 Sites部署會自動提供延遲的更新。
 
-## [!DNL Experience Manager Forms] 作為 [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]的新增功能 {#what-is-new-forms}
 
@@ -57,85 +57,85 @@ ht-degree: 16%
    * 使用 XML 資料填寫範本檔案 (PDF 和 XDP) 來產生文件。
    * 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
 
-* **記錄文檔的自定義字型和使用Communications API建立的PDF文檔**:現在，您可以在使用Communications API生成的PDF文檔中使用品牌批准的字型，以符合您的組織要求。
+* **記錄檔的自訂字型和使用通訊API建立的PDF檔案**:您現在可以在使用通訊API產生的PDF檔案中使用品牌核准字型，以符合您的組織需求。
 
-* **Forms門戶**:您可以使用 [Forms門戶](/help/forms/configure-forms-portal.md) 列出已發佈的自適應表單。 它可幫助站點訪問者發現所有可用表格。 此外，訪問者可以使用表單門戶來保存和訪問自適應表單的草稿，並查看已提交自適應表單的PDF版本。
+* **Forms入口網站**:您可以使用 [Forms入口網站](/help/forms/configure-forms-portal.md) 將已發佈的最適化表單列在AEM Sites頁面上。 可協助網站訪客探索所有可用的表單。 此外，訪客可使用表單入口網站來儲存及存取最適化表單的草稿，並查看已提交最適化表單的PDF版本。
 
-## CIF附加模組 {#cloud-services-cif}
+## CIF附加元件 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* 基於Commerce可擴展的Peregrine元件的擴展myAccount元件
+* 擴展了基於Commerce可擴展的Peregrine元件的myAccount元件
 
-![擴展的myAccount元件](/help/assets/CIF/extended-myAccount-components.png)
+![擴展myAccount元件](/help/assets/CIF/extended-myAccount-components.png)
 
-* 作者可以使用其他建議類型建立臨時商務產品Recommendations
+* 作者可使用其他建議類型建立隨選商務產品Recommendations
 
-* 在店面中支援禮品AEM卡
+* 支援AEM Storefront中的禮品卡
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述了as a Cloud Service2021.11.0中Cloud Manager的發行說明AEM。
+本節概述AEM as a Cloud Service的2021.11.0版發行說明。
 
 ### 發行日期 {#release-date-cm-nov}
 
-Cloud Manager在as a Cloud Service中的發AEM布日期為2021年11月4日。
-下一版計畫於2021年12月9日發行。
+AEMas a Cloud Service的Cloud Manager發行日期2021.11.0為2021年11月4日。
+下一版預計於2021年12月9日發行。
 
 ### 新增功能 {#what-is-new-cm-nov}
 
-* 用戶現在可以利用新的前端管道以加速的方式專門部署前端代碼。 請參閱 [Cloud Manager前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 來瞭解更多資訊。
+* 使用者現在可以運用新的前端管道，以加速方式專門部署前端程式碼。 請參閱 [Cloud Manager前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 了解更多。
 
    >[!IMPORTANT]
-   >您必須處於版AEM本 `2021.10.5933.20211012T154732Z` 或更高版本，以利用新的前端管道。
+   >您必須使用AEM版本 `2021.10.5933.20211012T154732Z` 或更高版本，以利用新的前端管道。
 
-* 通過以更有效的方式執行代碼分析而不需要構建整個影像，代碼質量流水線持續時間顯著AEM縮短。 此更改將在發佈後的幾週內逐步展開。
+* 以更有效的方式執行程式碼分析，而不需要建立整個AEM影像，可大幅縮短程式碼品質管道持續時間。 此變更將在發行後的數週內逐步推出。
 
-* Git提交ID現在將顯示在管道執行詳細資訊中，使跟蹤生成的代碼更容易。
+* Git提交ID現在會顯示在管道執行詳細資訊中，以便更輕鬆追蹤已建置的程式碼。
 
-* 現在可通過公開的API建立程式。
+* 現在可透過公開的API建立方案。
 
-* 現在可通過公開的API建立環境。
+* 現在可透過公開的API建立環境。
 
-* 的 `x-request-id` 響應標頭現在可在上的API Ploagn中看到 [www.adobe.io](https://www.adobe.io/)。 此標題在提交客戶關心問題以進行故障排除時非常有用。
+* 此 `x-request-id` 回應標題現在會顯示在 [www.adobe.io](https://www.adobe.io/). 提交客戶服務問題以進行疑難排解時，此標題相當實用。
 
-* 作為用戶，我看到零管線的管線卡為我提供了適當的指導。
+* 身為使用者，我看到管道為零的管道卡為我提供適當的指引。
 
-* 現在可以使用新的「活動」頁，其中可以查看諸如管道和代碼執行等活動及其關聯的詳細資訊。 隨著時間的推移，此頁中列出的活動將擴展範圍以及提供的詳細資訊。
+* 現在提供新的「活動頁面」，供檢視活動（例如管道和程式碼執行）及其相關詳細資訊之用。 隨著時間推移，此頁面所列的活動將會擴展範圍以及提供的詳細資料。
 
-* 現在可以使用一個新的「管線」(Pipelines)頁面，該頁面具有懸停時的狀態跨距，以便輕鬆查看詳細資訊摘要。 可以查看管道執行及其關聯的詳細資訊。
+* 提供新的管道頁面，可在暫留時顯示狀態彈出視窗，方便您檢視詳細資訊摘要。 可檢視管道執行及其相關聯的詳細資訊。
 
-* 「編輯管道API」現在支援更改部署階段中使用的環境。
+* 「編輯管道API」現在支援變更部署階段所使用的環境。
 
-* 介紹了OakPal掃描過程中對大包裝的優化。
+* 已針對大型封裝導入OakPal掃描程式的最佳化。
 
-* 質量問題CSV檔案現在將包含每個質量問題的時間戳。
+* 品質問題CSV檔案現在會包含每個品質問題的時間戳記。
 
 ### 錯誤修正 {#bug-fixes-nov}
 
-* 某些非常規的生成配置導致不必要的檔案儲存在管道的Maven項目快取中，這導致在啟動和停止生成容器時產生額外的網路I/O。
+* 某些非正統的組建設定會導致管道的Maven工件快取中儲存不必要的檔案，導致在啟動和停止組建容器時產生多餘的網路I/O。
 
-* 如果部署階段不存在，管道PATCHAPI將失敗。
+* 如果部署階段不存在，管道PATCHAPI就會失敗。
 
-* 的 `ClientlibProxyResourceCheck` 當存在具有共同基本路徑的客戶端庫時，質量規則會產生誤報問題。
+* 此 `ClientlibProxyResourceCheck` 當有具有共同基本路徑的用戶端程式庫時，品質規則會產生誤判問題。
 
-* 達到最大資料庫數時的錯誤消息未指定錯誤原因。
+* 達到最大儲存庫數時，錯誤訊息未指定錯誤的原因。
 
-* 在少數情況下，管道由於某些響應代碼的重試處理不當而失敗。
+* 在少數情況下，管道由於某些回應代碼的重試處理不當而失敗。
 
-## 最佳做法分析器 {#bpa-release}
+## Best Practices Analyzer {#bpa-release}
 
 ### 發行日期 {#release-date-bpa}
 
-最佳做法分析器2.1.22版的發佈日期為2021年12月1日。
+Best Practices Analyzer v2.1.22的發行日期為2021年12月1日。
 
 ### 新增功能 {#what-is-new-bpa}
 
-* 能夠檢測並報告所使用的ACS共用版本。
-* 能夠檢測和報告組中的用戶和子組數。
-* 能夠檢測並報告超過16MB的MongoDB中的節點屬性值。
+* 能夠檢測並報告所使用的ACS公域的版本。
+* 偵測群組中使用者和子群組數目並製作報表的功能。
+* 能夠偵測並報告MongoDB中超過16MB的節點屬性值。
 
 ### 錯誤修正 {#bug-fixes-bpa}
 
-* 對Foundation元件的檢測進行細化，減少漏檢。
-* 對於AEM Forms客戶，BPA消息 `EMAIL_PDF_SUBMIT_ACTION` 未在AEMas a Cloud Service上可用
+* 對基礎元件的檢測進行了細化，以減少偽陰性。
+* 針對AEM Forms客戶，BPA傳訊關於 `EMAIL_PDF_SUBMIT_ACTION` 「AEMas a Cloud Service」上無法使用的問題已修正。
