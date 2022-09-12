@@ -1,6 +1,6 @@
 ---
-title: 永續GraphQL查詢
-description: 瞭解如何在Adobe Experience Manager as a Cloud Service保留GraphQL查詢以優化效能。 永續查詢可由客戶端應用使用HTTPGET方法來請求，響應可在分發程式和CDN層快取，最終改善客戶端應用程式的效能。
+title: 持續GraphQL查詢
+description: 了解如何在Adobe Experience Manager as a Cloud Service中保留GraphQL查詢，以最佳化效能。 用戶端應用程式可使用HTTPGET方法來請求持續查詢，且可在Dispatcher和CDN層快取回應，最終改善用戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
@@ -10,58 +10,58 @@ ht-degree: 0%
 
 ---
 
-# 永續GraphQL查詢 {#persisted-queries-caching}
+# 持續GraphQL查詢 {#persisted-queries-caching}
 
-永續查詢是在Adobe Experience Manager()as a Cloud Service伺服器上建立和儲存的AEMGraphQL查詢。 客戶端應用程式可以通過GET請求來請求它們。 在調度器和CDN層可快取GET請求的響應，最終改善請求客戶端應用的效能。 這與標準GraphQL查詢不同，這些查詢使用無法輕鬆快取響應的POST請求執行。
-
->[!NOTE]
->
->建議使用保留查詢。 請參閱 [GraphQL查詢最佳做法(Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) 以及相關的Dispatcher配置。
-
-的 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 在中可AEM供您開發、test和保留GraphQL查詢 [轉移到生產環境](#transfer-persisted-query-production)。 對於需要自定義的案例(例如， [自定義快取](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries))可以使用API;請參閱中提供的curl示例 [如何永續GraphQL查詢](#how-to-persist-query)。
-
-## 永續查詢和終結點 {#persisted-queries-and-endpoints}
-
-永續查詢必須始終使用與 [適當的站點配置](graphql-endpoint.md);這樣它們就可以使用其中一種或兩種：
-
-* 全局配置和終結點查詢有權訪問所有內容片段模型。
-* 特定站點配置和終結點為特定站點配置建立永續查詢需要特定於特定站點配置的相應終結點（以提供對相關內容片段模型的訪問）。
-例如，要為WKND站點配置專門建立永續查詢，必須提前建立相應的WKND特定站點配置和WKND特定終結點。
+持續查詢是在Adobe Experience Manager(AEM)as a Cloud Service伺服器上建立並儲存的GraphQL查詢。 客戶應用程式可透過GET要求來要求這些ID。 可在Dispatcher和CDN層快取GET要求的回應，最終改善請求用戶端應用程式的效能。 這與標準的GraphQL查詢不同，這些查詢是使用POST請求執行，因為無法輕鬆快取回應。
 
 >[!NOTE]
 >
->請參閱 [在配置瀏覽器中啟用內容片段功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) 的子菜單。
+>建議使用持續查詢。 請參閱 [GraphQL查詢最佳作法(Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) 以取得詳細資訊，以及相關的Dispatcher設定。
+
+此 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 在AEM中可供您開發、測試及保留GraphQL查詢，於之前完成 [轉移至生產環境](#transfer-persisted-query-production). 需要自訂的情況(例如 [自訂快取](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries))您可以使用API;請參閱 [如何保留GraphQL查詢](#how-to-persist-query).
+
+## 持續查詢和端點 {#persisted-queries-and-endpoints}
+
+持續查詢必須一律使用與 [適當的站點配置](graphql-endpoint.md);以便兩者皆可使用：
+
+* 全域設定和端點查詢可存取所有內容片段模型。
+* 特定網站配置和端點為特定網站配置建立持續查詢時，需要對應的網站配置特定端點（以提供對相關內容片段模型的存取）。
+例如，要為WKND Sites配置特別建立持續查詢，必須事前建立相應的WKND特定Sites配置和WKND特定端點。
+
+>[!NOTE]
 >
->的 **GraphQL永續查詢** 需要啟用相應的站點配置。
+>請參閱 [在設定瀏覽器中啟用內容片段功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) 以取得更多詳細資訊。
+>
+>此 **GraphQL持續查詢** 需要啟用，才能進行適當的Sites設定。
 
-例如，如果有一個特定查詢 `my-query`，它使用模型 `my-model` 從站點配置 `my-conf`:
+例如，如果有一個名為的特定查詢 `my-query`，此模型使用 `my-model` 從Sites配置 `my-conf`:
 
-* 您可以使用 `my-conf` 特定端點，然後查詢將保存如下：
+* 您可以使用 `my-conf` 特定端點，則查詢將儲存為下列內容：
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* 可以使用 `global` 終結點，但查詢將保存如下：
+* 您可以使用 `global` 端點，但查詢將儲存如下：
    `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
->這是兩個不同的查詢 — 保存在不同的路徑下。
+>這是兩個不同的查詢 — 儲存在不同的路徑下。
 >
->他們只是碰巧使用了同一種模式 — 但是通過不同的端點。
+>他們只是碰巧使用相同的模型，但透過不同的端點。
 
-## 如何永續GraphQL查詢 {#how-to-persist-query}
+## 如何保留GraphQL查詢 {#how-to-persist-query}
 
-建議先保留對作者環境的AEM查詢，然後 [傳送查詢](#transfer-persisted-query-production) 生產發佈AEM環境，供應用程式使用。
+建議您先在AEM製作環境上保留查詢，然後再保留查詢 [傳輸查詢](#transfer-persisted-query-production) 至您的生產AEM發佈環境，供應用程式使用。
 
-存在多種保留查詢的方法，包括：
+持續查詢有多種方法，包括：
 
-* GraphiQL IDE — 請參見 [保存永續查詢](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) （首選方法）
-* curl — 請參見以下示例
+* GraphiQL IDE — 請參見 [保存持續查詢](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) （偏好方法）
+* curl — 請參閱下列範例
 * 其他工具，包括 [Postman](https://www.postman.com/)
 
-GraphiQL IDE是 **首選** 用於保留查詢的方法。 使用 **捲曲** 命令行工具：
+GraphiQL IDE是 **preder** 持續查詢的方法。 若要使用 **捲曲** 命令行工具：
 
-1. 通過將查詢PUTing到新終結點URL來準備查詢 `/graphql/persist.json/<config>/<persisted-label>`。
+1. 將查詢PUT輸入新端點URL以準備該查詢 `/graphql/persist.json/<config>/<persisted-label>`.
 
-   例如，建立永續查詢：
+   例如，建立持續查詢：
 
    ```shell
    $ curl -X PUT \
@@ -82,7 +82,7 @@ GraphiQL IDE是 **首選** 用於保留查詢的方法。 使用 **捲曲** 命�
    }'
    ```
 
-1. 此時，檢查響應。
+1. 此時，請檢查回應。
 
    例如，檢查是否成功：
 
@@ -96,18 +96,18 @@ GraphiQL IDE是 **首選** 用於保留查詢的方法。 使用 **捲曲** 命�
    }
    ```
 
-1. 然後，可以通過獲取URL來請求保留的查詢 `/graphql/execute.json/<shortPath>`。
+1. 然後，您可以透過GET URL來請求持續的查詢 `/graphql/execute.json/<shortPath>`.
 
-   例如，使用永續查詢：
+   例如，使用持續查詢：
 
    ```shell
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
 
-1. 通過POSTing將永續查詢更新到已存在的查詢路徑。
+1. 將POSTing更新為已存在的查詢路徑，以保存查詢。
 
-   例如，使用永續查詢：
+   例如，使用持續查詢：
 
    ```shell
    $ curl -X POST \
@@ -131,7 +131,7 @@ GraphiQL IDE是 **首選** 用於保留查詢的方法。 使用 **捲曲** 命�
    }'
    ```
 
-1. 建立換行的純查詢。
+1. 建立包裝的純查詢。
 
    例如：
 
@@ -157,7 +157,7 @@ GraphiQL IDE是 **首選** 用於保留查詢的方法。 使用 **捲曲** 命�
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
    ```
 
-1. 使用參數建立永續查詢：
+1. 使用參數建立持續查詢：
 
    例如：
 
@@ -184,17 +184,17 @@ GraphiQL IDE是 **首選** 用於保留查詢的方法。 使用 **捲曲** 命�
    ```
 
 
-## 如何執行永續查詢 {#execute-persisted-query}
+## 如何執行持續查詢 {#execute-persisted-query}
 
-要執行永續查詢，客戶端應用程式使用以下語法發出GET請求：
+若要執行持續查詢，用戶端應用程式會使用下列語法提出GET要求：
 
 ```
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 ```
 
-位置 `PERSISTENT_PATH` 是保存永續查詢的縮短路徑。
+其中 `PERSISTENT_PATH` 是儲存「持續存在」查詢的簡短路徑。
 
-1. 例如 `wknd` 是配置名和 `plain-article-query` 是永續查詢的名稱。 要執行查詢，請執行以下操作：
+1. 例如 `wknd` 是設定名稱， `plain-article-query` 是持續查詢的名稱。 要執行查詢，請執行以下操作：
 
    ```shell
    $ curl -X GET \
@@ -205,7 +205,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
    >[!NOTE]
    >
-   > 查詢變數和值必須正確 [編碼](#encoding-query-url) 執行永續查詢時。
+   > 查詢變數和值必須正確 [編碼](#encoding-query-url) 執行持續查詢時。
 
    例如：
 
@@ -214,19 +214,19 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
        "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
 
-   請參閱使用 [查詢變數](#query-variables) 的子菜單。
+   請參閱使用 [查詢變數](#query-variables) 以取得更多詳細資訊。
 
 ## 使用查詢變數 {#query-variables}
 
-查詢變數可與永續查詢一起使用。 查詢變數將附加到以分號(`;`)。 多個變數用分號分隔。
+查詢變數可與持續查詢搭配使用。 查詢變數會附加至以分號(`;`)，使用變數名稱和值。 多個變數會以分號分隔。
 
-該模式如下所示：
+模式如下所示：
 
 ```
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-例如，以下查詢包含變數 `activity` 要根據活動值篩選清單：
+例如，下列查詢包含變數 `activity` 若要根據活動值篩選清單：
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -249,39 +249,39 @@ query getAdventuresByActivity($activity: String!) {
   }
 ```
 
-此查詢可以保留在路徑下 `wknd/adventures-by-activity`。 調用永續查詢時 `activity=Camping` 請求將如下所示：
+此查詢可保存在路徑下 `wknd/adventures-by-activity`. 若要呼叫保存的查詢，其中 `activity=Camping` 請求如下所示：
 
 ```
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-請注意 `%3B` 是UTF-8編碼 `;` 和 `%3D` 是 `=`。 查詢變數和任何特殊字元必須是 [已編碼](#encoding-query-url) 執行永續查詢。
+請注意 `%3B` 是 `;` 和 `%3D` 是的編碼 `=`. 查詢變數和任何特殊字元必須 [編碼正確](#encoding-query-url) 以執行「持續存在」查詢。
 
-## 快取永續查詢 {#caching-persisted-queries}
+## 快取持續查詢 {#caching-persisted-queries}
 
-建議保留查詢，因為它們可以在分發程式和CDN層快取，從而最終改善請求客戶端應用程式的效能。
+建議使用持續查詢，因為可在Dispatcher和CDN層快取查詢，最終改善提出請求的用戶端應用程式的效能。
 
-預設AEM情況下，內容傳遞網路(CDN)快取將基於預設生存時間(TTL)失效。
+依預設，AEM會根據預設的存留時間(TTL)，使內容傳送網路(CDN)快取失效。
 
-此值設定為：
+此值設為：
 
-* 7200秒是Dispatcher和CDN的預設TTL;也稱為 *共用快取*
-   * 預設：s-maxage=7200
-* 60是客戶端（例如瀏覽器）的預設TTL
-   * 預設：maxage=60
+* 7200秒是Dispatcher和CDN的預設TTL;又稱為 *共用快取*
+   * 預設值：s-maxage=7200
+* 60是用戶端（例如瀏覽器）的預設TTL
+   * 預設值：maxage=60
 
-如果要更改GraphLQ查詢的TTL，則查詢必須是：
+如果您想要變更GraphLQ查詢的TTL，則查詢必須是：
 
-* 管理後保留 [HTTP快取頭 — 從GraphQL IDE](#http-cache-headers)
-* 使用 [API方法](#cache-api)。
+* 在管理後持續存在 [HTTP快取標頭 — 從GraphQL IDE](#http-cache-headers)
+* 持續使用 [API方法](#cache-api).
 
-### 管理GraphQL中的HTTP快取頭  {#http-cache-headers-graphql}
+### 在GraphQL中管理HTTP快取標題  {#http-cache-headers-graphql}
 
-GraphiQL IDE — 請參見 [保存永續查詢](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+GraphiQL IDE — 請參見 [保存持續查詢](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
 
 ### 從API管理快取 {#cache-api}
 
-這包括在命令行界AEM面中使用CURL將查詢過帳。
+這包括在命令列介面中使用CURL將查詢發佈至AEM。
 
 例如：
 
@@ -294,11 +294,11 @@ curl -X PUT \
 '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
 ```
 
-的 `cache-control` 可以在建立時間(PUT)或更晚時間(例如，通過實例的POST請求)進行設定。 建立永續查詢時，cache-control是可選的，AEM因為可以提供預設值。 請參閱 [如何永續GraphQL查詢](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)，以示使用curl保存查詢的示例。
+此 `cache-control` 可在建立時(PUT)或稍後設定(例如，透過例項的POST請求)。 建立持續查詢時，快取控制為選用，因為AEM可提供預設值。 請參閱 [如何保留GraphQL查詢](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)，以示使用curl保存查詢的範例。
 
-## 對查詢URL進行編碼，供應用使用 {#encoding-query-url}
+## 對查詢URL進行編碼，以供應用程式使用 {#encoding-query-url}
 
-為供應用程式使用，構造查詢變數時使用的任何特殊字元(即分號(`;`)，等號(`=`)，斜線 `/`)必須轉換為使用相應的UTF-8編碼。
+為供應用程式使用，建構查詢變數時使用的任何特殊字元(即分號(`;`)，等號(`=`)，斜線 `/`)才能使用對應的UTF-8編碼。
 
 例如：
 
@@ -306,48 +306,48 @@ curl -X PUT \
 curl -X GET \ "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/adventure-by-path%3BadventurePath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fadventures%2Fbali-surf-camp%2Fbali-surf-camp"
 ```
 
-URL可分為以下部分：
+URL可劃分為下列部分：
 
 | URL部分 | 說明 |
 |----------| -------------|
-| `/graphql/execute.json` | 永續查詢終結點 |
-| `/wknd/adventure-by-path` | 永續查詢路徑 |
+| `/graphql/execute.json` | 持續查詢端點 |
+| `/wknd/adventure-by-path` | 持續查詢路徑 |
 | `%3B` | 編碼 `;` |
 | `adventurePath` | 查詢變數 |
 | `%3D` | 編碼 `=` |
 | `%2F` | 編碼 `/` |
 | `%2Fcontent%2Fdam...` | 內容片段的編碼路徑 |
 
-在純文字檔案中，請求URI如下所示：
+在純文字中，請求URI如下所示：
 
 ```plaintext
 /graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
 ```
 
-要在客戶端應用中使用永續查詢，AEM應使用無頭客戶端SDK [JavaScript](https://github.com/adobe/aem-headless-client-js)。 [爪哇](https://github.com/adobe/aem-headless-client-java)或 [節點JS](https://github.com/adobe/aem-headless-client-nodejs)。 無頭客戶端SDK將自動對請求中的任何查詢變數進行適當編碼。
+若要在用戶端應用程式中使用持續的查詢，應將AEM無標題用戶端SDK用於 [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java)，或 [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). 無頭式用戶端SDK會自動為要求中的任何查詢變數進行適當編碼。
 
-## 將永續查詢傳輸到生產環境  {#transfer-persisted-query-production}
+## 將持續存在的查詢傳輸至生產環境  {#transfer-persisted-query-production}
 
-應始終在AEM Author服務上建立永續查詢，然後將其發佈（複製）到AEM Publish服務。 通常，永續查詢是在較低環境（如本地或開發環境）上建立和測試的。 然後，有必要將永續查詢提升到更高級別的環境，最終使這些查詢在生產AEM發佈環境中可用，供客戶端應用程式使用。
+持續的查詢應一律在AEM製作服務上建立，然後發佈（復寫）至AEM發佈服務。 持續查詢通常會在較低環境（例如本機或開發環境）中建立和測試。 接著，您必須將持續存在的查詢提升至較高層級的環境，最終讓這些查詢可在生產AEM Publish環境中供用戶端應用程式使用。
 
-### 包永續查詢
+### 包持續查詢
 
-可將永續查詢內置到 [包AEM](/help/implementing/developing/tools/package-manager.md)。 然AEM後可以下載軟體包並將其安裝到不同環境中。 還AEM可以將包從AEM Author環境複製到AEM Publish環境。
+可將持續查詢內建到 [AEM套件](/help/implementing/developing/tools/package-manager.md). 然後，可以下載AEM套件並安裝在不同的環境上。 AEM套件也可從AEM製作環境複製至AEM發佈環境。
 
 要建立包：
 
-1. 導航到 **工具** > **部署** > **包**。
-1. 通過點擊建立新包 **建立包**。 這將開啟一個對話框來定義包。
-1. 在「包定義」對話框中，在 **常規** 輸入 **名稱** 例如「wknd-persistent-querys」。
-1. 輸入版本號（如「1.0」）。
-1. 下 **篩選器** 添加新 **篩選**。 使用路徑查找器選擇 `persistentQueries` 資料夾。 例如 `wknd` 配置完整路徑將 `/conf/wknd/settings/graphql/persistentQueries`。
-1. 點擊 **保存** 保存新包定義並關閉對話框。
-1. 點擊 **生成** 按鈕。
+1. 導覽至 **工具** > **部署** > **套件**.
+1. 點選以建立新套件 **建立套件**. 這將開啟一個對話框以定義包。
+1. 在「包定義」對話框中，位於 **一般** 輸入 **名稱** 例如&quot;wknd-persistent-queries&quot;。
+1. 輸入版本號，如「1.0」。
+1. 在 **篩選器** 新增 **篩選**. 使用路徑查找器來選擇 `persistentQueries` 資料夾。 例如， `wknd` 配置完整路徑將 `/conf/wknd/settings/graphql/persistentQueries`.
+1. 點選 **儲存** 以保存新包定義並關閉對話框。
+1. 點選 **建置** 按鈕。
 
-生成包後，您可以：
+套件建置完成後，您可以：
 
-* **下載** 包並重新上傳到其他環境。
-* **複製** 點擊包裝 **更多** > **複製**。 這將將包複製到連接的AEM發佈環境。
+* **下載** 套件並重新上傳至不同環境。
+* **複製** 點選 **更多** > **複製**. 這會將套件復寫至已連線的AEM發佈環境。
 
 <!--
 1. Using replication/distribution tool:
