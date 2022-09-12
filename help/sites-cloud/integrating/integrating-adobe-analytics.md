@@ -1,6 +1,6 @@
 ---
 title: 整合 Adobe Analytics
-description: '整合 Adobe Analytics '
+description: 整合 Adobe Analytics
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
@@ -13,58 +13,58 @@ ht-degree: 3%
 
 # 整合 Adobe Analytics{#integrating-with-adobe-analytics}
 
-整合Adobe AnalyticsAEM和as a Cloud Service允許您跟蹤網頁活動。 整合需要：
+整合Adobe Analytics和AEMas a Cloud Service可讓您追蹤網頁活動。 整合需要：
 
-* 使用Touch UI在as a Cloud Service中建立分析配AEM置。 請注意，Adobe Analytics與as a Cloud Service整合需要IMS驗AEM證。
-* 添加和配置Adobe Analytics作為 [Adobe啟動](#analytics-launch)。 有關Adobe啟動的詳細資訊，請參閱 [此頁](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)。
+* 使用觸控式UI在AEM as a Cloud Service中建立Analytics設定。 請注意，若要整合Adobe Analytics與AEMas a Cloud Service，需要IMS驗證。
+* 將Adobe Analytics新增及設定為 [Adobe啟動](#analytics-launch). 如需Experience Launch的詳細資訊，請參閱 [本頁](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
-與以前版本相比AEM，在as a Cloud Service的分析配置中未提供框架AEM支援。 現在，它通過Adobe啟動完成，該啟動是使用分析功能（JS庫）AEM檢測站點的實際工具。 在「Adobe啟動」中，將建立一個屬性，在該屬性中可以配置Adobe Analytics擴展，並建立規則將資料發送到Adobe Analytics。 Adobe啟動已經取代了催化劑提供的分析任務。
+與舊版AEM相比，AEMas a Cloud Service中的Analytics設定不提供架構支援。 現在改為透過AdobeLaunch完成，Launch是實際上用來檢測具有Analytics功能（JS資料庫）的AEM網站的工具。 在AdobeLaunch中，會建立屬性，可在此設定Adobe Analytics擴充功能，並建立規則以將資料傳送至Adobe Analytics。 Adobe啟動已取代sitecatalyst提供的分析工作。
 
 >[!NOTE]
 >
->Adobe Experience Manager as a Cloud Service客戶如果沒有現有的Analytics帳戶，可以請求訪問Analytics Foundation Pack以進行Experience Cloud。 此Foundation Pack提供了分析的有限量使用。
+>Adobe Experience Manager as a Cloud Service客戶若沒有現有的Analytics帳戶，可要求存取Analytics Foundation Pack以取得Experience Cloud。 此Foundation Pack提供Analytics的有限量使用。
 
-## 建立Adobe Analytics配置 {#analytics-configuration}
+## 建立Adobe Analytics設定 {#analytics-configuration}
 
-1. 導航到 **工具** → **Cloud Services**。
-2. 選擇 **Adobe Analytics**。
-   ![Adobe Analytics窗](assets/analytics_screen2.png "Adobe Analytics窗")
-3. 選擇 **建立** 按鈕
-4. 填寫詳細資訊（請參閱下面），然後按一下 **連接**。
+1. 導覽至 **工具** → **Cloud Services**.
+2. 選擇 **Adobe Analytics**.
+   ![Adobe Analytics視窗](assets/analytics_screen2.png "Adobe Analytics視窗")
+3. 選取 **建立** 按鈕。
+4. 填寫詳細資訊（請參閱下方），然後按一下 **Connect**.
 
-### 配置參數 {#configuration-parameters}
+### 設定參數 {#configuration-parameters}
 
-配置窗口中顯示的欄位如下：
+設定視窗中顯示的欄位如下：
 
-![配置參數](assets/properties_field2.png "配置參數")
+![設定參數](assets/properties_field2.png "設定參數")
 
 | 屬性 | 說明 |
 |---|---|
 | 標題 | 配置名稱 |
-| IMS 設定 | 選擇IMS配置（請參閱下面的章節） |
-| 區段 | 選項，用於使用在當前報告套件中定義的分析段。 分析報告將根據段進行篩選。 請參閱 [此頁](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) 的雙曲餘切值。 |
-| 報表套裝 | 用於發送資料和獲取報告的儲存庫。 報告套件定義所選網站、網站集或網站頁面子集上的完整、獨立的報告。 您可以查看從單個報告套件獲取的報告，並可以根據您的要求隨時在配置中編輯此欄位。 |
+| IMS 設定 | 選取IMS設定（請參閱下文章節） |
+| 區段 | 使用目前報表套裝中定義之Analytics區段的選項。 系統會根據區段來篩選Analytics報表。 請參閱 [本頁](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) 以取得其他詳細資訊。 |
+| 報表套裝 | 您傳送資料和提取報表的存放庫。 報表套裝可全面而獨立地定義針對選定網站、一組網站或網站頁面子集的報告。 您可以檢視從單一報表套裝擷取的報表，並隨時根據您的需求在設定中編輯此欄位。 |
 
-### Adobe AnalyticsIMS認證 {#configuration-parameters-ims}
+### Adobe Analytics，具有IMS驗證 {#configuration-parameters-ims}
 
-為了將Adobe Analytics與as a Cloud Service正確整合，需要IMS配AEM置。 必須建立此配置，請參閱此 [頁](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) 瞭解如何建立分析IMS配置。
+若要正確整合Adobe Analytics與AEMas a Cloud Service，需要IMS設定。 必須建立此配置，請參閱此 [頁面](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) 了解如何建立Analytics IMS設定。
 
-### 向站點添加配置 {#add-configuration}
+### 將配置添加到站點 {#add-configuration}
 
-要將Touch UI配置應用到站點，請轉至： **站點** → **選擇任何網站頁** → **屬性** → **高級** → **配置** →選擇配置租戶。
+若要將觸控式UI設定套用至網站，請前往： **網站** → **選擇任何網站頁面** → **屬性** → **進階** → **設定** →選擇配置租戶。
 
-## 利用Adobe Analytics發AEM布將Adobe整合到現場 {#analytics-launch}
+## 使用Launch整合AEM網站上的Adobe Analytics {#analytics-launch}
 
-Adobe Analytics可以作為啟動屬性的擴展添加。 可以定義規則以執行映射和對Adobe Analytics進行後續調用：
+Adobe Analytics可在Launch屬性中以擴充功能的形式新增。 可定義規則，以執行對應及對Adobe Analytics進行後置呼叫：
 
-* 監視 [這個視頻](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) 瞭解如何在啟動中為基本站點配置分析擴展。
+* Watch [此影片](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) 了解如何在Launch中為基本網站設定Analytics擴充功能。
 
-* 請參閱 [此頁](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) 有關如何建立規則和將資料發送到Adobe Analytics的詳細資訊。
-
->[!NOTE]
->
->用於啟動的IMS配置（技術帳戶）已在AEMas a Cloud Service中預配置。 您不必建立此配置。
+* 請參閱 [本頁](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) 以取得如何建立規則和傳送資料至Adobe Analytics的詳細資訊。
 
 >[!NOTE]
 >
->現有（舊）框架仍然有效，但無法在Touch UI中配置。 建議在「啟動」中重建變數映射配置。
+>Launch的IMS設定（技術帳戶）已在AEMas a Cloud Service中預先設定。 您不必建立此設定。
+
+>[!NOTE]
+>
+>現有（舊版）架構仍可運作，但無法在觸控式UI中設定。 建議您在Launch中重建變數對應設定。
