@@ -11,4 +11,4 @@ ht-degree: 1%
 
 # 簡介 {#introduction}
 
-Adobe Experience Manager Formsas a Cloud Service提供雲本地平台即服務(PaaS)解決方案，供企業建立、管理、發佈和更新複雜數字表單，同時將提交的資料與後端流程、業務規則整合在一起，並將資料保存到外部資料儲存中。 該服務始終是最新的、始終可用的和始終學習的。
+Adobe Experience Manager Forms as a Cloud Service提供雲端原生的Platform as a Service(PaaS)解決方案，供企業建立、管理、發佈和更新複雜的數位表單，同時將提交的資料與後端流程、業務規則整合，並將資料儲存在外部資料存放區。 此服務始終是最新的，始終可用，並且始終學習。
