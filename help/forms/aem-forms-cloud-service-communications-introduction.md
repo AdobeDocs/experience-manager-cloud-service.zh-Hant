@@ -1,5 +1,5 @@
 ---
-title: Formsas a Cloud Service通訊
+title: Formsas a Cloud Service通訊簡介
 description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
@@ -9,45 +9,45 @@ ht-degree: 1%
 
 ---
 
-# 使用AEM Formsas a Cloud Service通信 {#frequently-asked-questions}
+# 使用AEM Formsas a Cloud Service通訊 {#frequently-asked-questions}
 
-通信功能可幫助您建立品牌認可、個性化和標準化的文檔，如業務信函、報表、理賠信函、福利通知、每月帳單或歡迎套件。
+通信功能可幫助您建立品牌認可、個性化和標準化的文檔，如業務往來函、對帳單、報銷申請處理信函、福利通知、每月賬單或歡迎套件。
 
-該功能提供API來生成和操作文檔。 您可以按需生成或操作文檔或建立批處理作業以按定義的間隔生成多個文檔。 通信API提供：
+此功能提供API來產生和操控檔案。 您可以按需生成或操作文檔，或建立批處理作業以按定義的間隔生成多個文檔。 通訊API提供：
 
-* 簡化的按需和批處理文檔生成功能。
+* 簡化隨需和批次檔案的產生功能。
 
-* 可按需組合、重新排列和驗證PDF文檔。
+* 按需組合、重新排列和驗證PDF文檔的功能。
 
-* HTTP API可更輕鬆地與外部系統整合。 包括用於按需（低延遲）和批處理操作（高吞吐量操作）的單獨API。
+* HTTP API可輕鬆與外部系統整合。 包括獨立的API，以用於隨選（低延遲）和批次作業（高吞吐量作業）。
 
-* 安全訪問資料。 通信API僅連接到客戶指定的資料儲存庫並從其訪問資料，使通信高度安全。
+* 安全存取資料。 通信API僅連接到客戶指定的資料儲存庫並訪問資料，使通信高度安全。
 
-![信用卡對帳單樣本](assets/statement.png)
-可以使用通信API建立信用卡對帳單。 此示例對帳單使用相同的模板，但根據每個客戶信用卡的使用情況分別使用資料。
+![信用卡報表示例](assets/statement.png)
+信用卡對帳單可使用Communications API來建立。 此示例對帳單使用相同的模板，但根據每個客戶的信用卡使用情況，為每個客戶分別提供資料。
 
-## 文檔生成
+## 檔案產生
 
-通信文檔生成API幫助將模板(XFA或PDF)與客戶資料(XML)組合，以PS、PCL、DPL、IPL和ZPL格式等PDF和打印格式生成文檔。 這些API利用PDF和XFA模板 [XML資料](communications-known-issues-limitations.md#form-data) 使用批處理作業生成單個單據按需或多個單據。
+通信文檔生成API有助於將模板(XFA或PDF)與客戶資料(XML)結合，以PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）生成文檔。 這些API透過運用PDF和XFA範本 [XML資料](communications-known-issues-limitations.md#form-data) 使用批任務按需生成單個文檔或多個文檔。
 
-通常，您使用 [設計師](use-forms-designer.md) 並使用Communications API將資料與模板合併。 您的應用程式可以將輸出文檔發送到網路打印機、本地打印機或儲存系統進行存檔。 典型的開箱即用工作流和自定義工作流如下所示：
+通常，您使用 [設計工具](use-forms-designer.md) 和使用通訊API來合併資料與範本。 您的應用程式可以將輸出文檔發送到網路打印機、本地打印機或儲存系統進行存檔。 典型的現成可用和自訂工作流程如下所示：
 
 ![通信文檔生成工作流](assets/communicaions-workflow.png)
 
-根據使用案例，您還可以通過網站或儲存伺服器下載這些文檔。
+您也可以根據使用案例，透過您的網站或儲存伺服器下載這些檔案。
 
-文檔生成API的一些示例包括：
+檔案產生API的一些範例如下：
 
 ### 建立PDF文檔 {#create-pdf-documents}
 
-可以使用文檔生成API建立基於表單設計和XML表單資料的PDF文檔。 輸出是非互動式PDF文檔。 即用戶不能輸入或修改表單資料。 基本工作流是將XML表單資料與表單設計合併，以建立PDF文檔。 下圖顯示了表單設計與XML表單資料的合併，以生成PDF文檔。
+您可以使用文檔生成API來建立基於表單設計和XML表單資料的PDF文檔。 輸出是非互動式PDF檔案。 也就是說，使用者無法輸入或修改表單資料。 基本的工作流是將XML表單資料與表單設計合併，以建立PDF文檔。 下圖顯示表單設計與XML表單資料的合併，以產生PDF檔案。
 
 ![建立PDF文檔](assets/outPutPDF_popup.png)
 圖：建立PDF文檔的典型工作流
 
 ### 建立PostScript(PS)、打印機命令語言(PCL)、Zebra打印語言(ZPL)文檔 {#create-PS-PCL-ZPL-documents}
 
-可以使用文檔生成API建立基於XDP表單設計或PDF文檔的PostScript(PS)、打印機命令語言(PCL)和Zebra打印語言(ZPL)文檔。 這些API有助於將表單設計與表單資料合併以生成文檔。 您可以將文檔保存到檔案中，並開發自定義流程以將其發送到打印機。
+您可以使用文檔生成API來建立基於XDP表單設計或PDF文檔的PostScript(PS)、打印機命令語言(PCL)和Zebra打印語言(ZPL)文檔。 這些API有助於將表單設計與表單資料合併，以產生檔案。 您可以將檔案儲存至檔案，並開發自訂程式以將其傳送至印表機。
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -59,9 +59,9 @@ The following illustration shows Communications APIs processing an XML data file
 
  -->
 
-### 處理批處理資料以建立多個文檔 {#processing-batch-data-to-create-multiple-documents}
+### 處理批資料以建立多個文檔 {#processing-batch-data-to-create-multiple-documents}
 
-您可以使用文檔生成API為XML批資料源中的每個記錄建立單獨的文檔。 您可以在批量和非同步模式下生成文檔。 您可以為轉換配置各種參數，然後啟動批處理。
+您可以使用文檔生成API為XML批資料源內的每個記錄建立單獨的文檔。 您可以以批量和非同步模式生成文檔。 您可以為轉換設定各種參數，然後開始批次處理。
 
 ![建立PDF文檔](assets/ou_OutputBatchMany_popup.png)
 
@@ -95,68 +95,68 @@ An interactive PDF document contains various elements that constitute a form. Th
 
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form. -->
 
-## 文檔操作
+## 檔案操作
 
-通信文檔處理API有助於組合、重新排列和驗證PDF文檔。 通常，您會建立DDX並將其提交到文檔處理API以匯編或重新排列文檔。 的 [DDX文檔](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 提供了有關如何使用源文檔生成一組所需文檔的說明。 DDX參考文檔提供了有關所有支援操作的詳細資訊。 文檔處理的一些示例包括：
+通信文檔操作API有助於組合、重新排列和驗證PDF文檔。 通常，您會建立DDX並將其提交至檔案操作API，以組合或重新排列檔案。 此 [DDX文檔](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 提供了有關如何使用源文檔生成一組所需文檔的說明。 DDX參考檔案提供所有支援操作的詳細資訊。 文檔操作的一些示例包括：
 
 ### 匯編PDF文檔
 
-可以使用文檔處理API將兩個或多個PDF或XDP文檔匯編為單個PDF文檔或PDFPortfolio。 以下是匯編PDF文檔的一些方法：
+您可以使用檔案操作API將兩個或多個PDF或XDP檔案組合為單一PDF檔案或PDFPortfolio。 以下是匯編PDF文檔的一些方法：
 
-* 匯編簡單PDF文檔
+* 組合簡單的PDF文檔
 * 建立PDFPortfolio
-* 匯編加密文檔
-* 使用Bates編號來匯編文檔
-* 拼合和匯編文檔
+* 組合加密文檔
+* 使用Bates編號來組合文檔
+* 平面化和組合檔案
 
-![從多個PDF文檔中組裝簡單PDF文檔](assets/as_document_assembly.png)
-圖：從多個PDF文檔中組裝簡單PDF文檔
+![從多個PDF文檔組裝簡單的PDF文檔](assets/as_document_assembly.png)
+圖：從多個PDF文檔組裝簡單的PDF文檔
 
-### 拆卸PDF文檔
+### 拆解PDF文檔
 
-可以使用文檔處理API來拆解PDF文檔。 API可以從源文檔中提取頁面或基於書籤劃分源文檔。 通常，如果PDF文檔最初是從許多單個文檔（如語句集合）建立的，則此任務非常有用。
+您可以使用文檔操作API來拆解PDF文檔。 API可從來源檔案擷取頁面，或根據書籤分割來源檔案。 通常，如果PDF文檔最初是從許多單個文檔（如語句集合）建立，則此任務非常有用。
 
 * 從源文檔中提取頁面
-* 基於書籤劃分源文檔
+* 根據書籤劃分源文檔
 
 ![將基於書籤的源文檔劃分為多個文檔](assets/as_intro_pdfsfrombookmarks.png)
 圖：將基於書籤的源文檔劃分為多個文檔
 
-### 轉換為並驗證符合PDF/A的文檔
+### 轉換為並驗證PDF/A相容文檔
 
-您可以使用文檔處理API將PDF文檔轉換為符合PDF/A的文檔，並確定PDF文檔是否符合PDF/A。 PDF/A是一種存檔格式，旨在長期保存文檔的內容。 字型嵌入到文檔中，檔案未壓縮。 因此，PDF/A文檔通常比標準PDF文檔大。 此外，PDF/文檔不包含音頻和視頻內容。
+您可以使用文檔操作API將PDF文檔轉換為符合PDF/A的文檔，並確定PDF文檔是否符合PDF/A。 PDF/A是一種存檔格式，用於對文檔的內容進行長期保存。 這些字型嵌入到文檔中，並且該檔案被解壓縮。 因此，PDF/A文檔通常比標準PDF文檔大。 此外，PDF/檔案不包含音訊和視訊內容。
 
-## 通信API的類型
+## 通訊API類型
 
-通信為按需和批處理文檔生成提供HTTP API:
+通訊提供HTTP API，以供隨需和批次檔案產生：
 
-* **[同步API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 適用於按需、低延遲和單記錄文檔生成情形。 這些API更適合基於用戶操作的使用案例。 例如，在用戶完成填寫表單後生成文檔。
+* **[同步API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 適用於按需、低延遲和單記錄文檔生成方案。 這些API更適合使用者動作的使用案例。 例如，在使用者填妥表單後產生檔案。
 
-* **[批處理API（非同步API）](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 適用於計畫、高吞吐量和多個文檔生成方案。 這些API以批次形式生成文檔。 例如，每月生成電話單、信用卡對帳單和福利對帳單。
+* **[批次API（非同步API）](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 適合於計畫、高吞吐量和多文檔生成方案。 這些API會以批次產生檔案。 例如，每月生成電話賬單、信用卡對帳單和福利對帳單。
 
 ## 入門
 
-通信功能可作為Formsas a Cloud Service用戶的獨立和附加模組使用。 您可以聯繫Adobe銷售團隊或Adobe代表以請求訪問權限。 Adobe 為您的組織啟用存取權限，並向您指定的組織管理員提供所需的特權。 管理員可授予您組織的Formsas a Cloud Service開發人員（用戶）使用API的權限。
+通訊功能是供Formsas a Cloud Service使用者使用的獨立附加模組。 您可以聯絡Adobe銷售團隊或您的Adobe代表以要求存取權。 Adobe 為您的組織啟用存取權限，並向您指定的組織管理員提供所需的特權。 管理員可授予您組織的Formsas a Cloud Service開發人員（使用者）使用API的存取權。
 
-登機後，要為您的Formsas a Cloud Service環境啟用通信功能：
+上線後，若要為您的Formsas a Cloud Service環境啟用通訊功能：
 
-1. 登錄到Cloud Manager並開啟您的AEM Formsas a Cloud Service實例。
+1. 登入Cloud Manager並開啟AEM Formsas a Cloud Service例項。
 
-1. 開啟「編輯程式」選項，轉到「解決方案和載入項」頁籤，然後選擇 **[!UICONTROL Forms — 通信]** 的雙曲餘切值。
+1. 開啟「編輯方案」選項，前往「解決方案與附加元件」標籤，然後選取 **[!UICONTROL Forms — 通訊]** 選項。
 
-   ![通信](assets/communications.png)
+   ![通訊](assets/communications.png)
 
-   如果已啟用 **[!UICONTROL Forms — 數字註冊]** ，然後選擇 **[!UICONTROL Forms — 通信插件]** 的雙曲餘切值。
+   如果您已啟用 **[!UICONTROL Forms — 數位註冊]** 選項，然後選取 **[!UICONTROL Forms — 通訊附加元件]** 選項。
 
-   ![阿登](assets/add-on.png)
+   ![Addon](assets/add-on.png)
 
-1. 按一下 **[!UICONTROL 更新]**。
+1. 按一下 **[!UICONTROL 更新]**.
 
-1. 運行生成管道。 生成管道成功後，將為您的環境啟用Communications API。
+1. 執行建置管道。 建置管道成功後，即會為您的環境啟用通訊API。
 
 >[!NOTE]
 >
-> 要啟用和配置文檔處理API，請將以下規則添加到 [調度程式配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> 若要啟用並設定檔案操作API，請新增下列規則至 [Dispatcher設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
