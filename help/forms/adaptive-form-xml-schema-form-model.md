@@ -1,6 +1,6 @@
 ---
-title: 自適應表單的XML架構設計
-description: 瞭解如何在自適應表單中將XML架構用作表單模型。 使用XML架構的示例進行更深入的挖掘，使用XML架構向欄位添加特殊屬性，並限制Adaptive Form元件的可接受值。
+title: 設計最適化表單的XML架構
+description: 了解如何在最適化表單中將XML結構用作表單模型。 透過XML架構的範例，深入探討，使用XML架構將特殊屬性新增至欄位，並限制適用性表單元件的可接受值。
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
@@ -12,42 +12,42 @@ ht-degree: 3%
 
 ---
 
-# 自適應表單的XML架構設計 {#creating-adaptive-forms-using-xml-schema}
+# 設計最適化表單的XML架構 {#creating-adaptive-forms-using-xml-schema}
 
 ## 必備條件 {#prerequisites}
 
-使用XML架構作為其表單模型創作自適應表單需要對XML架構有基本的瞭解。 此外，建議在本文之前閱讀以下內容。
+使用XML結構作為表單模型來製作最適化表單，需要基本了解XML結構。 此外，建議在本文之前閱讀下列內容。
 
-* [建立自適應窗體](creating-adaptive-form.md)
+* [建立最適化表單](creating-adaptive-form.md)
 * [XML架構](https://www.w3.org/TR/xmlschema-2/)
 
-## 將XML架構用作表單模型 {#using-an-xml-schema-as-form-model}
+## 使用XML架構作為表單模型 {#using-an-xml-schema-as-form-model}
 
-[!DNL Experience Manager Forms] 支援使用現有XML架構作為表單模型建立自適應表單。 此XML架構表示組織中後端系統生成或使用資料的結構。
+[!DNL Experience Manager Forms] 支援使用現有XML架構作為表單模型來建立適用性表單。 此XML架構表示組織中的後端系統產生或使用資料的結構。
 
-使用XML架構的主要功能是：
+使用XML架構的主要功能包括：
 
-* XSD的結構在Adaptive Form的創作模式下的「內容查找器」頁籤中顯示為樹。 您可以將元素從XSD層次結構拖放到自適應表單中。
-* 可以使用與關聯方案相容的XML預填充表單。
-* 在提交時，用戶輸入的資料將作為與關聯架構對齊的XML提交。
+* XSD的結構在適用性表單的製作模式中，在「內容尋找器」索引標籤中會顯示為樹狀結構。 您可以將元素從XSD階層拖曳並新增至最適化表單。
+* 您可以使用符合相關架構的XML預先填入表單。
+* 提交時，用戶輸入的資料將以符合關聯架構的XML形式提交。
 
-XML架構由簡單和複雜的元素類型組成。 元素具有向元素添加規則的屬性。 當這些元素和屬性被拖到「自適應表單」上時，它們將自動映射到相應的「自適應表單」元件。
+XML架構由簡單和複雜的元素類型組成。 元素具有將規則新增至元素的屬性。 將這些元素和屬性拖曳至適用性表單時，會自動對應至對應的適用性表單元件。
 
-XML元素與Adaptive Form元件的映射如下：
+此XML元素與適用性表單元件的對應如下：
 
 <table>
  <tbody>
   <tr>
    <th><strong>XML元素或屬性 </strong></th>
-   <th><strong>自適應表單元件</strong></th>
+   <th><strong>適用性表單元件</strong></th>
   </tr>
   <tr>
    <td><code>xs:string</code></td>
-   <td>文本框</td>
+   <td>文字方塊</td>
   </tr>
   <tr>
    <td><code>xs:boolean</code></td>
-   <td>複選框</td>
+   <td>核取方塊</td>
   </tr>
   <tr>
    <td>
@@ -56,18 +56,18 @@ XML元素與Adaptive Form元件的映射如下：
      <li><code>xs:xs:int</code></li>
      <li><code class="code">xs:decimal
         </code></li>
-     <li>所有類型的數值</li>
+     <li>所有數值類型</li>
     </ul> </td>
-   <td>數字框</td>
+   <td>數值方塊</td>
   </tr>
   <tr>
    <td><code>xs:date</code></td>
-   <td>日期選取器</td>
+   <td>日期選擇器</td>
   </tr>
   <tr>
    <td><code class="code">xs:enumeration
       </code></td>
-   <td>下拉</td>
+   <td>下拉式清單</td>
   </tr>
   <tr>
    <td>任何複雜類型元素</td>
@@ -76,9 +76,9 @@ XML元素與Adaptive Form元件的映射如下：
  </tbody>
 </table>
 
-## 示例XML架構 {#sample-xml-schema}
+## 範例XML架構 {#sample-xml-schema}
 
-這是XML架構的示例。
+以下是XML架構的範例。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -126,34 +126,34 @@ XML元素與Adaptive Form元件的映射如下：
 
 ## 使用XML架構向欄位添加特殊屬性 {#adding-special-properties-to-fields-using-xml-schema}
 
-可以將以下屬性添加到XML架構元素，以便將特殊屬性添加到關聯的自適應表單的欄位中。
+您可以將下列屬性新增至XML結構元素，以新增特殊屬性至相關適用性表單的欄位。
 
 <table>
  <tbody>
   <tr>
-   <th><strong>架構屬性</strong></th>
-   <th><strong>在自適應窗體中使用</strong></th>
+   <th><strong>結構屬性</strong></th>
+   <th><strong>在適用性表單中使用</strong></th>
    <th><strong>支援 </strong></th>
   </tr>
   <tr>
    <td><code>use=required </code></td>
-   <td>將欄位標籤為必填<br /> </td>
+   <td>將欄位標示為必填欄位<br /> </td>
    <td>屬性</td>
   </tr>
   <tr>
    <td><code>default="default value"</code></td>
-   <td>添加預設值</td>
+   <td>新增預設值</td>
    <td>元素和屬性</td>
   </tr>
   <tr>
    <td><code>minOccurs="3"</code></td>
-   <td><p>指定最小發生次數</p> <p>(對於可重複子表單（複雜類型）)</p> </td>
+   <td><p>指定最小發生次數</p> <p>(適用於可重複的子表單（複雜類型）)</p> </td>
    <td>元素（複雜類型）</td>
   </tr>
   <tr>
    <td><code class="code">maxOccurs="10"
       </code></td>
-   <td><p>指定最大發生次數</p> <p>(對於可重複子表單（複雜類型）)</p> </td>
+   <td><p>指定最大發生次數</p> <p>(適用於可重複的子表單（複雜類型）)</p> </td>
    <td>元素（複雜類型）</td>
   </tr>
  </tbody>
@@ -161,42 +161,42 @@ XML元素與Adaptive Form元件的映射如下：
 
 >[!NOTE]
 >
->將架構元素拖動到自適應表單時，預設標題由以下方法生成：
+>將結構元素拖曳至適用性表單時，會產生預設標題：
 >
->* 正在大寫元素名稱的第一個字元
->* 在駱駝大小寫邊界處插入空白。
+>* 大寫元素名稱的第一個字元
+>* 在駝峰大小寫邊界插入空白字元。
 >
->例如，如果 `userFirstName` 模式元素，自適應表單中生成的標題為 `User First Name`。
+>例如，若您新增 `userFirstName` 綱要元素中產生的標題為 `User First Name`.
 
-## 限制自適應表單元件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
+## 限制最適化表單元件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
 
-可以將以下限制添加到XML架構元素中，以限制Adaptive Form元件可接受的值：
+您可以將下列限制新增至XML架構元素，以限制適用性表單元件可接受的值：
 
 <table>
  <tbody>
   <tr>
-   <td><p><strong> 架構屬性</strong></p> </td>
+   <td><p><strong> 結構屬性</strong></p> </td>
    <td><p><strong>資料類型</strong></p> </td>
    <td><p><strong>說明</strong></p> </td>
-   <td><p><strong>元件</strong></p> </td>
+   <td><p><strong>Component</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>totalDigits</code></p> </td>
    <td><p>字串</p> </td>
-   <td><p>指定元件中允許的最大位數。 指定的位數必須大於零。</p> </td>
+   <td><p>指定元件中允許的位數上限。 指定的位數必須大於零。</p> </td>
    <td>
     <ul>
-     <li>數字框</li>
+     <li>數值方塊</li>
      <li>數值步進器</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>maximum</code></p> </td>
    <td><p>字串</p> </td>
-   <td><p>指定數值和日期的上限。 預設情況下，包括最大值。</p> </td>
+   <td><p>指定數值和日期的上界。 預設會包含最大值。</p> </td>
    <td>
     <ul>
-     <li>數字框</li>
+     <li>數值方塊</li>
      <li>數值步進器<br /> </li>
      <li>日期挑選器</li>
     </ul> </td>
@@ -204,32 +204,32 @@ XML元素與Adaptive Form元件的映射如下：
   <tr>
    <td><p><code>minimum</code></p> </td>
    <td><p>字串</p> </td>
-   <td><p>指定數值和日期的下界。 預設情況下，包括最小值。</p> </td>
+   <td><p>指定數值和日期的下限。 預設會包含最小值。</p> </td>
    <td>
     <ul>
-     <li>數字框</li>
+     <li>數值方塊</li>
      <li>數值步進器</li>
      <li>日期挑選器</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>exclusiveMaximum</code></p> </td>
-   <td><p>布林值 (Boolean)</p> </td>
-   <td><p>如果為true，則在窗體元件中指定的數值或日期必須小於為maximum屬性指定的數值或日期。</p> <p>如果為false，則在表單元件中指定的數值或日期必須小於或等於為maximum屬性指定的數值或日期。</p> </td>
+   <td><p>布林值</p> </td>
+   <td><p>如果為true，則表單元件中指定的數值或日期必須小於為maximum屬性指定的數值或日期。</p> <p>如果為false，則表單元件中指定的數值或日期必須小於或等於為最大屬性指定的數值或日期。</p> </td>
    <td>
     <ul>
-     <li>數字框</li>
+     <li>數值方塊</li>
      <li>數值步進器</li>
      <li>日期挑選器</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>exclusiveMinimum</code></p> </td>
-   <td><p>布林值 (Boolean)</p> </td>
-   <td><p>如果為true，則在窗體元件中指定的數值或日期必須大於為minimum屬性指定的數值或日期。</p> <p>如果為false，則表單元件中指定的數值或日期必須大於或等於為最小值屬性指定的數值或日期。</p> </td>
+   <td><p>布林值</p> </td>
+   <td><p>如果為true，則表單元件中指定的數值或日期必須大於為最小屬性指定的數值或日期。</p> <p>如果為false，則表單元件中指定的數值或日期必須大於或等於為最小屬性指定的數值或日期。</p> </td>
    <td>
     <ul>
-     <li>數字框</li>
+     <li>數值方塊</li>
      <li>數值步進器</li>
      <li>日期挑選器</li>
     </ul> </td>
@@ -237,19 +237,19 @@ XML元素與Adaptive Form元件的映射如下：
   <tr>
    <td><p><code>minLength</code></p> </td>
    <td><p>字串</p> </td>
-   <td><p>指定元件中允許的最小字元數。 最小長度必須等於或大於零。</p> </td>
+   <td><p>指定元件中允許的字元數量最小。 最小長度必須等於或大於零。</p> </td>
    <td>
     <ul>
-     <li>文本框</li>
+     <li>文字方塊</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>maxLength</code></p> </td>
    <td><p>字串</p> </td>
-   <td><p>指定元件中允許的最大字元數。 最大長度必須大於零。</p> </td>
+   <td><p>指定元件中允許的字元數上限。 最大長度必須大於零。</p> </td>
    <td>
     <ul>
-     <li>文本框</li>
+     <li>文字方塊</li>
     </ul> </td>
   </tr>
   <tr>
@@ -258,7 +258,7 @@ XML元素與Adaptive Form元件的映射如下：
    <td><p>指定元件中允許的字元數。 長度必須等於或大於零。</p> </td>
    <td>
     <ul>
-     <li>文本框</li>
+     <li>文字方塊</li>
     </ul> </td>
   </tr>
   <tr>
@@ -267,16 +267,16 @@ XML元素與Adaptive Form元件的映射如下：
    <td><p>指定元件中允許的最大小數位數。 fractionDigits必須等於或大於零。</p> </td>
    <td>
     <ul>
-     <li> 具有資料類型浮點或小數的數字框</li>
+     <li> 具有資料類型浮點數或小數的數值框</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>pattern</code></p> </td>
    <td><p>字串</p> </td>
-   <td><p>指定字元的順序。 如果字元符合指定的模式，則元件將接受字元。</p> <p>模式屬性映射到相應的「自適應表單」元件的驗證模式。</p> </td>
+   <td><p>指定字元的順序。 如果字元符合指定的模式，元件將接受字元。</p> <p>模式屬性映射至對應的適用性表單元件的驗證模式。</p> </td>
    <td>
     <ul>
-     <li>映射到XSD架構的所有自適應Forms元件 </li>
+     <li>對應至XSD結構的所有適用性Forms元件 </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -284,17 +284,17 @@ XML元素與Adaptive Form元件的映射如下：
 
 ## 常見問題 {#frequently-asked-questions}
 
-**我在Content Finder中有一個很長的複雜結構。 如何找到特定元素？**
+**我在「內容尋找器」中有一個長而複雜的結構。 如何尋找特定元素？**
 
-您有兩個選擇：
+您有兩個選項：
 
 * 滾動瀏覽樹結構
-* 使用「搜索」框查找元素
+* 使用「搜尋」方塊來尋找元素
 
 **什麼是bindRef?**
 
-A `bindRef` 是Adaptive Form元件與模式元素或屬性之間的連接。 它決定了 `XPath` 其中，從此元件或欄位捕獲的值在輸出XML中可用。 A `bindRef`在從預填充（預填充）XML中預填充欄位值時也使用。
+A `bindRef` 是適用性表單元件與結構元素或屬性之間的連線。 這決定了 `XPath` 其中，從此元件或欄位捕獲的值在輸出XML中可用。 A `bindRef`從預填（預填）的XML預填欄位值時，也會使用。
 
-**為什麼無法為可重複子表單拖動子表單（從任何複雜類型生成的結構）的單個元素（minOccours或maxOccurs值大於1）?**
+**為什麼我無法為可重複的子表單拖曳子表單的個別元素（從任何複雜類型產生的結構）（minOccours或maxOccurs值大於1）?**
 
-在可重複子窗體中，必須使用「完成」子窗體。 如果只需要選擇欄位，請使用整個結構並刪除不需要的欄位。
+在可重複的子表單中，您必須使用「完成」子表單。 如果您只想要選擇性欄位，請使用整個結構並刪除不需要的結構。
