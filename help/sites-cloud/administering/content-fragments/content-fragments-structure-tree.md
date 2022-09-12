@@ -1,7 +1,8 @@
 ---
 title: 內容片段結構樹
-description: 使用中的內容片段編輯器的「結構樹」功AEM能，以更好地瞭解您的無頭內容。
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+description: 使用AEM中內容片段編輯器的結構樹功能，更清楚了解您的無頭內容。
+exl-id: 7e55d7b7-3a82-4665-b4aa-9b47094d91c9
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -10,16 +11,16 @@ ht-degree: 0%
 
 # 內容片段結構樹 {#content-fragment-structure-tree}
 
-使用中內容片段編輯器的「結構樹」功AEM能，幫助您瞭解無頭內容。
+使用AEM中內容片段編輯器的結構樹功能，協助您了解無頭內容。
 
-在內容片段編輯器中，可以選擇「結構樹」表徵圖：
+在內容片段編輯器中，您可以選取「結構樹」圖示：
 
 ![內容片段結構樹](assets/cfm-structuretree-01.png)
 
-這將開啟左側窗格中片段結構的表示形式。 使用此選項，可以瀏覽和瀏覽引用的片段。 選取參照會開啟該片段進行編輯。
+這會開啟左側窗格中片段結構的表示。 使用此功能，您可以導覽及導覽至參考的片段。 選取參考會開啟該片段以供編輯。
 
 >[!NOTE]
 >
->使用主面板中的麵包屑，您可以導航回起始點。
+>使用主面板中的階層連結，您可以導覽回起始點。
 
 ![內容片段結構樹](assets/cfm-structuretree-02.png)
