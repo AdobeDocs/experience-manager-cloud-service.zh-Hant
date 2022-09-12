@@ -1,6 +1,6 @@
 ---
-title: Experience Manager [!DNL AEM Forms] as a Cloud Service體系結構
-description: 瞭解 [!DNL AEM Forms] as a Cloud Service瞭解平台的可擴充性、恢復性和效能方面。
+title: Experience Manager [!DNL AEM Forms] as a Cloud Service架構
+description: 了解 [!DNL AEM Forms] as a Cloud Service了解平台的可擴充性、可復原性和效能方面。
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: cd9ef0db59f07173c8c5bd4b38ff946b774ce53c
 workflow-type: tm+mt
@@ -9,98 +9,98 @@ ht-degree: 2%
 
 ---
 
-# [!DNL AEM] Formsas a Cloud Service建築 {#architecture}
+# [!DNL AEM] Formsas a Cloud Service架構 {#architecture}
 
-[!DNL Adobe Experience Manager Forms] as a Cloud Service是一種雲本地解決方案，供企業建立、管理、發佈和更新複雜的數字表單和通信，同時將提交的資料與後端流程、業務規則整合在一起，並將資料保存到外部資料儲存中。 它延伸了 [!DNL Adobe Experience Manager as a Cloud Service]。 要瞭解有關擴展、部署、環境和其他基礎架構的更多資訊，請參見 [淺談建築 [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html)。
+[!DNL Adobe Experience Manager Forms] as a Cloud Service是雲端原生解決方案，供企業建立、管理、發佈和更新複雜的數位表單和通訊，同時將提交的資料與後端流程、業務規則整合，並將資料儲存在外部資料存放區。 它延伸 [!DNL Adobe Experience Manager as a Cloud Service]. 要進一步了解擴展、部署、環境和其他基礎架構，請參閱 [A.B.C. [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html).
 
-AEM Formsas a Cloud Service支援兩大用例：數字註冊和客戶通信。 以下圖說明了兩種使用情形的體系結構。
+AEM Formsas a Cloud Service支援兩種主要使用案例：數位註冊和客戶通訊。 下圖說明兩種使用案例的架構。
 
-## Forms數字註冊
+## Forms數位註冊
 
-![Forms — 數字入學](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
+![Forms數位入學](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
 
 ## Forms通訊
 
-![Forms通訊](assets/forms-cloud-service-architecture-forms-communications.svg)
+![Forms — 通訊](assets/forms-cloud-service-architecture-forms-communications.svg)
 
 ## 元件
 
-Formsas a Cloud Service包括多個元件：
+Formsas a Cloud Service包含多個元件：
 
-### CDN（內容分發網路）
+### CDN（內容傳遞網路）
 
-每個AEM Formsas a Cloud Service項目 [內置CDN服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)。 它被列入Forms作為Cloud Services的執照中。
+每個AEM Formsas a Cloud Service計畫都可 [內建CDN服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html). 隨附於Forms的Cloud Services授權中。
 
 ### 作者
 
-「作者」是在標準「作者」運行模式下運行的AEM Formsas a Cloud Service實例。 它適用於內部用戶、表單設計者和開發人員。 Author環境可啟用以下功能：
+Author是在標準Author執行模式中執行的AEM Formsas a Cloud Service例項。 此範本適用於內部使用者、表單設計人員和開發人員。 製作環境可啟用下列功能：
 
-* 創作和管理表單。
-* 連接到Automated forms conversion服務以將PDF或XDP表單轉換為自適應表單。
-* 建立並運行以Forms為中心的工作流。
-* 管理自適應表單資產。
-* 管理通信資產。
-* 同步REST風格的API（即時API）和批處理API，用於建立、裝配和提供面向品牌的個性化通信。
-* 同步API，用於組合、重新排列和驗證PDF文檔。
+* 製作和管理表單。
+* 連線至Automated forms conversion服務，將PDF或XDP表單轉換為最適化表單。
+* 建立並執行以Forms為中心的工作流程。
+* 管理最適化表單資產。
+* 管理通訊資產。
+* 同步RESTful API（即時API）和批次API，以建立、組合及提供面向品牌的個人化通訊。
+* 同步API來合併、重新排列及驗證PDF檔案。
 
 ### 發佈
 
-發佈實例是在標準發佈運行模式下運行的AEM Formsas a Cloud Service。 發佈實例旨在為基於表單的應用程式的最終用戶提供，例如訪問公共網站和提交表單的用戶。 它啟用以下功能：
+Publish例項是在標準Publish執行模式中執行的AEM Formsas a Cloud Service。 發佈例項的用途為表單式應用程式的一般使用者，例如存取公開網站和提交表單的使用者。 可啟用下列功能：
 
-* 為最終用戶呈現和提交表單。
-* 傳輸原始提交的表單資料，以便在最終記錄系統中進一步處理和儲存。
-* 連接到客戶托管儲存以儲存資料。
-* 與Adobe Sign連接，以電子簽名自適應表單提交記錄。
-* 同步API以建立、裝配和提供面向品牌和個性化的通信。
-* 同步API以組合、重新排列和驗證PDF文檔。
+* 為使用者轉譯和提交表單。
+* 傳輸原始提交的表單資料，以便進一步處理和儲存在最終記錄系統中。
+* 連接到客戶管理儲存以儲存資料。
+* 與Adobe Sign連線，以電子簽署最適化表單提交記錄。
+* 同步API以建立、組合及提供以品牌為導向的個人化通訊。
+* 同步API以合併、重新排列及驗證PDF檔案。
 
-在as a Cloud Service上，「反向復AEM制」不可用，無法將內容/資料從發佈服務發送到作者服務。 但是，您可以配置在發佈上運行的自適應Forms，以將資料提交到作者上的工作流（工作流只能在作者上運行）。 這對批准使用案例很有幫助。
+AEMas a Cloud Service上無法使用「反向復寫」來將內容/資料從發佈服務傳送至製作服務。 不過，您可以設定在發佈上執行的適用性Forms，以將資料提交至作者的工作流程（工作流程只能在作者上執行）。 這在核准使用案例中很有幫助。
 
 #### Dispatcher
 
-[調度程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) 是Adobe Experience Manager的快取和/或負載平衡工具，可與企業級Web伺服器一起使用。
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) 是Adobe Experience Manager的快取和/或負載平衡工具，可與企業級Web伺服器搭配使用。
 
-### Adobe服務
+### Adobe Services
 
 **automated forms conversion服務**
 
-[automated forms conversion服務](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 自動將PDF和XFA表單轉換為設備友好、響應快速且基於HTML5的自適應表單。
+[automated forms conversion服務](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 自動將PDF和XFA表單轉換為適合裝置、回應式且以HTML5為基礎的最適化表單。
 
 **Adobe Sign**
 
-Adobe Sign是一種基於雲的電子簽名服務，允許用戶使用瀏覽器或移動設備發送、簽名、跟蹤和管理簽名過程。 您可以將Adobe Sign與自適應表單整合，以自動化簽名工作流、簡化單個和多個簽名過程，以及以電子方式簽署自適應表單。
+Adobe Sign是雲端式電子簽名服務，可讓使用者使用瀏覽器或行動裝置來傳送、簽署、追蹤及管理簽名程式。 您可以整合Adobe Sign與最適化表單，以自動化簽署工作流程、簡化單一和多重簽名流程，以及以電子方式簽署最適化表單。
 
 <!-- **PDF Service API**
 Adobe’s PDF Services API lets create, combine, export, and extract data from PDFs through powerful and flexible cloud-based APIs. -->
 
-### 客戶托管儲存
+### 客戶管理儲存
 
-Formsas a Cloud Service提供了將內容儲存在外部儲存系統（如Blob儲存區、資料庫或儲存服務）中的選項。 您還可以將包含敏感個人資料(SPD)元素的在製品工作流資料(AEM工作流變數資料)儲存在客戶管理的儲存庫中，以便進行安全處理。 Adobe建議僅將敏感資料儲存在客戶管理的儲存上。
+Formsas a Cloud Service提供可在外部儲存系統（如Blob儲存、資料庫或儲存服務）中儲存內容的選項。 您也可以將包含敏感個人資料(SPD)元素的處理中工作流程資料(AEM工作流程變數資料)儲存在客戶管理的存放庫中，以進行安全處理。 Adobe建議僅將敏感資料儲存在客戶管理的儲存上。
 
-您可以使用 **統一儲存連接器** 連接到Blob儲存和 **窗體資料模型** 連接到資料庫或後端服務（RESTful、SOAP、Azure Blob儲存等）。
+您可以使用 **統一儲存連接器** 連接到Blob儲存和 **表單資料模型** 連接到資料庫或後端服務（RESTful、SOAP、Azure Blob儲存等）。
 
 ### 文件服務
 
 檔案服務包括：
 
-* **輸出服務（通信 — 文檔生成API）** 幫助建立品牌批准、個性化和標準化的文檔，如業務往來、報表、理賠信函、福利通知、每月帳單或歡迎套件。
+* **輸出服務（通訊 — 檔案產生API）** 有助於建立品牌認可、個人化和標準化的檔案，例如業務往來函、對帳單、報銷申請處理信函、福利通知、每月帳單或歡迎套件。
 
-* **匯編程式服務（通信 — 文檔操作API）** 幫助合併、重新排列和驗證PDF文檔。
+* **組合器服務（通信 — 文檔操作API）** 有助於合併、重新排列和驗證PDF檔案。
 
-* **記錄文檔(DoR)服務** 幫助生成記錄文檔(DoR)。 該服務以其自己的Pod運行，Pouss形式分別為「作者」和「發佈Formsas a Cloud Service」實例。 它有助於提供更好的效能，並根據負載獨立地擴展莢。
+* **記錄檔案(DoR)服務** 有助於生成記錄文檔(DoR)。 服務會在其自己的Pod中執行，形式分別為Forms as a Cloud Service的Author和Publish例項。 這可協助提供更佳效能，並根據負載獨立調整Pod。
 
 ### Cloud Manager
 
-雲管理器是 [AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html)。 它是我們客戶的運營和開發人員形象的單一入口點。 它是管理程式和AEM環境的場所。 Cloud Manager已演變為自助服務門戶，在該門戶中可以建立AEM和配置as a Cloud Service的主要元件：
+Cloud Manager是 [AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html). 它是我們客戶的運營和開發人員角色的單一入口點。 這是可管理AEM程式和環境的位置。 Cloud Manager已發展為自助入口網站，可在此建立及設定AEMas a Cloud Service的主要元件：
 
-* 建立和管理程式
-* 建立和管理AEM程式內的環境
-* 建立和管理管道，以將客戶代碼和配置部署到特定環境
-* 獲取有關這些元件的重要生命週期事件（例如，產品更新）的通知有關Cloud Manager的詳細資訊，請參閱 [瞭解Adobe雲管理器](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) 和 [雲管理器簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)。
+* 建立和管理方案
+* 在方案中建立和管理AEM環境
+* 建立和管理管道，以便將客戶代碼和配置部署到特定環境
+* 收到這些元件重要生命週期事件的通知（例如產品更新）如需Cloud Manager的詳細資訊，請參閱 [了解AdobeCloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) 和 [Cloud Manager簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
 
 ### 開發人員控制台
 
-開發人員控制台提供作為雲服務環境運行的每個Forms的各種詳細資訊。 這些詳細資訊有助於調試環境。 有關詳細資訊，請參閱 [使用開AEM發人員控制台調試as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)。
+開發人員控制台提供每個執行Forms as a Cloud Service環境的各種詳細資訊。 這些詳細資訊有助於偵錯環境。 如需詳細資訊，請參閱 [使用開發人員主控台除錯AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
 
 <!--
 
@@ -181,10 +181,10 @@ Also, one of the most common requirements for developers is quick access to the 
 * Service users and user groups
 Set up your development environment, [Configure your CI/CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html), and learn to [deploy your code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) on the environment. -->
 
-### 自適應表單創作 {#local-development}
+### 最適化表單製作 {#local-development}
 
-設定和配置 [!DNL AEM Forms] as a Cloud Service環境，您可以設定開發、試運行和生產環境。 此外，還設定和配置本地開發環境，以便快速重複和開發。 您可以下載並設定AEMSDK和 [!DNL AEM Forms] 附加功能存檔以設定本地 [!DNL Forms] as a Cloud Service發展環境。  有關詳細說明，請參見 [設定本地開發環境](setup-local-development-environment.md)。
+當您設定並設定 [!DNL AEM Forms] as a Cloud Service環境，您可以設定開發、測試和生產環境。 此外，還可設定並設定本機開發環境，以快速反覆執行和開發。 您可以下載並設定AEM SDK，以及 [!DNL AEM Forms] 附加功能封存以設定本機 [!DNL Forms] as a Cloud Service開發環境。  如需詳細指示，請參閱 [設定本機開發環境](setup-local-development-environment.md).
 
 ## 偵錯 {#debugging}
 
-AEMas a Cloud Service運行在自助服務、可擴展的雲基礎架構上。 它要求開AEM發人員瞭解和調試as a Cloud Service的各個方面，AEM從構建和部署到獲取運行應用程式的詳細AEM資訊。 有關詳細資訊，請參見 [調試AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html)。
+AEMas a Cloud Service在自助式、可擴充的雲端基礎架構上執行。 它需要AEM開發人員了解AEMas a Cloud Service的各個層面並除錯，從建立和部署，到取得執行AEM應用程式的詳細資訊。 如需詳細資訊，請參閱 [除錯AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html).
