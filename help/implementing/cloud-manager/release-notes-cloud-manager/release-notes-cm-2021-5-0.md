@@ -1,6 +1,6 @@
 ---
-title: Cloud Manager在as a Cloud Service版AEM2021.5.0中的發行說明
-description: Cloud Manager在as a Cloud Service版AEM2021.5.0中的發行說明
+title: AEM as a Cloud Service2021.5.0版中Cloud Manager發行說明
+description: AEM as a Cloud Service2021.5.0版中Cloud Manager發行說明
 feature: Release Information
 exl-id: 8ae3cf2f-1865-427a-b612-bdf56e2f0304
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
@@ -10,47 +10,47 @@ ht-degree: 3%
 
 ---
 
-# Adobe Experience Manager as a Cloud ServiceCloud Manager發行說明2021.5.0 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.5.0中的Cloud Manager發行說明 {#release-notes}
 
-本頁概述了as a Cloud Service2021.5.0中Cloud Manager的發行說明AEM。
+本頁概述AEM 2021.5.0as a Cloud Service版中Cloud Manager的發行說明。
 
 >[!NOTE]
->要查看Adobe Experience Manager as a Cloud Service的當前發行說明，請按一下 [這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hant)。
+>若要查看最新的Adobe Experience Manager as a Cloud Service發行說明，請按一下 [此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## 發行日期 {#release-date}
 
-Cloud Manager在as a Cloud Service2021.5.0中的發佈日AEM期為2021年5月6日。
+AEM 2021.5.0中的Cloud Manageras a Cloud Service日期為2021年5月6日。
 
 ### 新增功能 {#what-is-new}
 
-* PackageOveraps質量規則現在可檢測在同一部署的軟體包集中多次部署同一軟體包的情況，即在多個嵌入位置中。
+* PackageOverlaps質量規則現在會檢測在同一部署的包集中多次部署相同包的情況，即在多個嵌入位置中。
 
-* Public API中的儲存庫終結點現在包括Git URL。
+* 公用API中的存放庫端點現在包含Git URL。
 
-* 雲管理器用戶下載的部署日誌將更有洞察力，現在將包括有關失敗和成功方案的詳細資訊。
+* Cloud Manager使用者下載的部署記錄將更有洞察力，現在會包含有關失敗和成功案例的詳細資訊。
 
-* 將代碼推送到AdobeGit時遇到的間歇性故障現已解決。
+* 現在已解決將程式碼推送至AdobeGit時發生的間歇性故障。
 
-* 現在，在「編輯」程式工作流期間，Commerce載入項可以應用於沙盒程式。
+* 現在，在編輯方案工作流程期間，商務附加元件可套用至沙箱方案。
 
-* 的 *編輯程式* 體驗已刷新。
+* 此 *編輯程式* 體驗已重新整理。
 
-* 「環境詳細資訊」(Environment Details)頁面中的「域名」(Domain Names)表格將通過分頁顯示多達250個域名。
+* 「環境詳細資料」頁面中的「網域名稱」表格會透過分頁顯示最多250個網域名稱。
 
-* 的 **解決方案和附加模組** 頁籤 **添加程式** 和 **編輯程式** 工作流將顯示該解決方案，即使只有一個解決方案可用於該程式。
+* 此 **解決方案和附加元件** 標籤 **添加程式** 和 **編輯方案** 即使方案只有一個解決方案可用，工作流程仍會顯示解決方案。
 
-* 生成步驟日誌中未生成任何已部署的內容包時的錯誤消息不明確。
+* 當組建未產生任何已部署的內容套件時，建置步驟記錄中的錯誤訊息不清楚。
 
 ### 錯誤修正 {#bug-fixes}
 
-* 有時，即使未部署IP允許清單，用戶也可能看到該配置旁邊的綠色「活動」狀態。
+* 有時，即使未部署該設定，使用者仍可能在IP允許清單旁看到綠色的「作用中」狀態。
 
-* 管道變數API將僅將其標籤為狀態，而不是刪除「已刪除」變數 **已刪除**。
+* 管道變數API不會移除「已刪除」的變數，而只會將其標示為狀態 **已刪除**.
 
-* 某些代碼氣味類型的質量問題錯誤地影響了可靠性評級。
+* 某些代碼氣味類型的質量問題錯誤地影響了可靠性等級。
 
-* 由於不支援通配符域，因此UI將不允許用戶提交通配符域。
+* 由於不支援萬用字元網域，因此UI將不允許使用者提交萬用字元網域。
 
-* 在午夜到UTC凌晨1點之間開始管道執行時，Cloud Manager生成的項目版本不保證大於前一天建立的版本。
+* 當午夜至凌晨1:00之間開始執行管道時，Cloud Manager產生的工件版本不一定會大於前一天建立的版本。
 
-* 在沙盒程式設定期間，一旦成功建立了包含示例代碼的項目，「管理Git」將作為「概述」頁中英雄卡的連結顯示。
+* 在沙箱方案設定期間，成功建立包含范常式式碼的專案後，「管理Git」會顯示為「概述」頁面中主圖卡的連結。
