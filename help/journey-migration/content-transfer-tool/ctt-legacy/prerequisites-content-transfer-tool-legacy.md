@@ -1,31 +1,32 @@
 ---
-title: 內容傳輸工具（舊版）的先決條件
-description: 內容傳輸工具的先決條件
+title: 內容轉移工具（舊版）的必要條件
+description: 內容轉移工具的必要條件
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 6b2878cb-6882-452b-8cab-e590316633f6
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
 
 ---
 
-# 內容傳輸工具（舊版）的先決條件 {#prerequisites}
+# 內容轉移工具（舊版）的必要條件 {#prerequisites}
 
-下表概述了使用內容傳輸工具的先決條件。
+下表概述使用「內容轉移工具」的先決條件。
 
-請查看下面列出的所有注意事項：
+請檢閱下列所有考量事項：
 
-| 注意事項 | 當前支援的內容 |
+| 考量事項 | 目前支援的項目 |
 |--- |--- |
-| 版AEM本 | 內容傳輸工具只能在AEM6.3或更高版本上運行。 |
-| 段儲存的大小 | 現有儲存庫，其JCR節點少於5500萬，最大83 GB（聯機壓縮大小） *作者* 和31 GB *發佈* 當前支援。 建立支援票證，與Adobe客戶服務一起討論超過這些限制的段儲存大小選項。 |
-| 內容儲存庫的總大小 <br>*（段儲存+資料儲存）* | 內容傳輸工具旨在為檔案資料儲存類型的資料儲存傳輸高達20 TB的內容。 當前不支援高於20 TB的任何內容。 通過Adobe客戶服務建立支援票證，以討論超過20 TB的內容選項。 <br>要顯著加快大型儲存庫的內容傳輸過程，可選 [預拷貝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) 中。 這適用於檔案資料儲存、AmazonS3和Azure資料儲存類型的資料儲存。 對於AmazonS3和Azure資料儲存，支援大於20TB的儲存庫大小。 |
-| Lucene索引總大小 | 當前支援最大25GB的Lucene索引總大小。 建立支援票證，與Adobe客戶服務討論索引大小超過此限制的選項。 |
-| 節點名稱長度 | 節點名稱的長度必須小於或等於150位元組。 長於150位元組的節點名稱必須縮短為&lt;= 150位元組，以便Document節點儲存在AEMas a Cloud Service中受支援。 如果這些長節點名稱未固定，則接收將失敗。 |
-| 不可變路徑中的內容 | 內容傳輸工具不能用於遷移不可變路徑中的內容。 從 `/etc` 只有 `/etc` 允許選擇路徑，但僅支援 [AEM Forms與AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets)。 有關所有其他使用情形，請參閱 [通用儲存庫重組](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) 瞭解有關儲存庫重組的詳細資訊。 |
-| MongoDB中的節點屬性值 | MongoDB中儲存的節點屬性值不能超過16MB。 這由MongoDB強制執行。 如果屬性值大於此限制，則接收將失敗。 運行抽取之前，請運行此 [橡樹](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) 的下界。 查看所有大型屬性值，並驗證是否需要這些值。 超過16MB的需要轉換為二進位值。 |
+| AEM版本 | 「內容轉移工具」僅能在AEM 6.3或更新版本上執行。 |
+| 區段存放區大小 | 現有的存放庫，其JCR節點少於5500萬個，在 *作者* 31 GB開啟 *發佈* 目前受支援。 與Adobe客戶服務建立支援票證，討論區段存放區大小超過這些限制的選項。 |
+| 內容存放庫總大小 <br>*（區段存放區+資料存放區）* | 「內容轉移工具」的設計目的是，針對「檔案資料儲存」類型的資料儲存傳輸高達20 TB的內容。 目前不支援高於20 TB的任何項目。 與Adobe客戶服務建立支援票證，討論大於20 TB內容的選項。 <br>為了顯著加快大型儲存庫的內容傳輸流程，可選 [預復](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) 步驟。 這適用於檔案資料存放區、Amazon S3和Azure資料存放區的資料存放類型。 若為Amazon S3和Azure資料存放區，則支援大於20TB的存放庫大小。 |
+| Lucene索引總大小 | 當前支援最大25GB的Lucene索引總大小。 與Adobe客戶服務建立支援票證，以討論索引大小超過此限制的選項。 |
+| 節點名稱長度 | 節點名稱的長度必須為150個位元組或更小。 長度超過150個位元組的節點名稱必須縮短為&lt;= 150個位元組，AEMas a Cloud Service中的Document節點存放區才能支援此功能。 如果這些長節點名稱未修正，擷取將會失敗。 |
+| 不可變路徑中的內容 | 「內容轉移工具」無法用來移轉不可變路徑中的內容。 要從 `/etc` 僅限 `/etc` 允許選取路徑，但僅支援 [AEM Forms至AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). 如需其他所有使用案例，請參閱 [常見儲存庫重組](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) 了解有關重新調整儲存庫的更多資訊。 |
+| MongoDB中的節點屬性值 | 儲存在MongoDB中的節點屬性值不能超過16MB。 這由MongoDB強制執行。 如果有大於此限制的屬性值，則擷取會失敗。 執行解壓縮前，請執行此 [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) 指令碼。 檢閱所有大型屬性值，並視需要加以驗證。 超過16MB的資料需要轉換為二進位值。 |
 
 ## 下一步 {#whats-next}
 
-在您查看了先決條件並確定是否可以在遷移項目中使用內容傳輸工具後，請參閱 [使用內容傳輸工具的指導原則和最佳做法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en)。
+檢閱必要條件，並決定是否可以在移轉專案中使用內容轉移工具後，請參閱 [使用內容轉移工具的准則和最佳作法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).
