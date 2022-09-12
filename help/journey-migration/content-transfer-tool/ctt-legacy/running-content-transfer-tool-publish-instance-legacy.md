@@ -1,38 +1,39 @@
 ---
-title: 在發佈實例上運行內容傳輸工具（舊版）
-description: 在發佈實例上運行內容傳輸工具
+title: 在發佈執行個體（舊版）上執行「內容轉移工具」
+description: 在發佈執行個體上執行內容轉移工具
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 0a699dc1-9977-4cf9-a1b0-7b503ea2fc69
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 1%
 
 ---
 
-# 在發佈實例上運行內容傳輸工具（舊版） {#run-content-transfer-tool-publish-instance}
+# 在發佈執行個體（舊版）上執行「內容轉移工具」 {#run-content-transfer-tool-publish-instance}
 
 ## 簡介 {#introduction}
 
-內容傳輸工具(CTT)在將內容從源實例傳輸到目標實例之前不執行任何類型的內容分析。 例如， CTT在將內容插入發佈環境時不會區分已發佈和未發佈的內容。 遷移集中指定的任何內容都將被引入所選目標實例。 用戶能夠將遷移集插入Author實例或Publish實例或兩者。
+內容轉移工具(CTT)在將內容從來源例項轉移至目標例項之前，不會執行任何類型的內容分析。 例如，CTT不會在將內容擷取至發佈環境時，區分已發佈和未發佈的內容。 無論移轉集中指定什麼內容，都會擷取至選取的目標例項。 使用者能將移轉集內嵌至製作例項、發佈例項或兩者。
 
 >[!NOTE]
->建議在將內容移動到生產實例時，在源Author實例上安裝Content Transfer Tool，以將內容移動到目標Author實例，同樣，在源Publish實例上安裝Content Transfer Tool，將內容移動到目標Publish實例。 請參閱 [建議的方法](#recommended-approach) 的子菜單。
+>建議在將內容移至生產例項時，在來源製作例項上安裝內容轉移工具，以將內容移至目標製作例項，同樣地，在來源發佈例項上安裝內容轉移工具，將內容移至目標發佈例項。 請參閱 [建議方法](#recommended-approach) 一節以取得詳細資訊。
 
 ## 建議做法 {#recommended-approach}
 
-按照以下所述的建議方法操作：
+請遵循以下說明的建議方法：
 
-* 使用在Author實例上使用的相同版本的內容傳輸工具。
+* 使用與Author例項上使用相同版本的「內容轉移工具」。
 
-* 只需遷移一個發佈節點。 在開始提取之前，應從負載平衡器中刪除它。
+* 只需移轉單一發佈節點。 在開始提取之前，應從負載平衡器中移除它。
 
-* 建立遷移集時，請使用作者的AEMas a Cloud Service環境URL。
+* 建立移轉集時，請使用製作AEMas a Cloud Service環境的URL。
 
-* 在接收發佈期間，不會縮小發佈層（與作者不同）。
+* 擷取至發佈期間，發佈層級不會縮小（與作者不同）。
 
    >[!IMPORTANT]
-   >為防患於未然，請避免任何用戶啟動的寫操作，例如：
-   > * 從as a Cloud Service作AEM者到在該環境中發佈的內容
-   > * 發佈實例之間的用戶同步
+   >為了防患於未然，請避免任何用戶啟動的寫操作，例如：
+   > * 從AEMas a Cloud Service作者發佈至該環境中發佈的內容
+   > * 發佈執行個體之間的使用者同步
 
