@@ -1,6 +1,6 @@
 ---
-title: 應用生成器安全性
-description: 瞭解App Builder應用程式安全性。
+title: App Builder安全性
+description: 了解App Builder應用程式安全性。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -16,12 +16,12 @@ ht-degree: 0%
 
 ---
 
-# 應用生成器安全性
+# App Builder安全性
 
 >[!IMPORTANT]
 >
-> _AdobeProject Firefly（如本系列視頻中所述）現在被命名為App Builder_
+> _AdobeProject Firefly（如本系列影片所述）現在更名為App Builder_
 
-瞭解Adobe運行時操作安全性、用戶和AppBuilder身份驗證和授權。
+了解Adobe執行階段動作安全性、使用者，以及AppBuilder驗證和授權。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339249/?quality=12&learn=on)
