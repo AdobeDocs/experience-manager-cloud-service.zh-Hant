@@ -1,9 +1,10 @@
 ---
 title: 驗證內容傳輸（舊版）
-description: 使用內容傳輸工具驗證內容傳輸
+description: 使用「內容轉移工具」來驗證內容轉移
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 304b7aee-1d84-4d90-a89b-0c532d5d9c92
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 1%
@@ -14,74 +15,74 @@ ht-degree: 1%
 
 ## 快速入門 {#getting-started}
 
-用戶能夠可靠地確定內容傳輸工具提取的所有內容是否已成功地被攝取到目標實例中。 此驗證功能通過比較提取過程中涉及的節點的摘要和攝取過程中涉及的節點的摘要來工作。 如果提取摘要中包含的任何節點路徑在攝取摘要中缺失，則認為驗證已失敗，可能需要進行額外的手動驗證。
+使用者能夠可靠判斷「內容轉移工具」擷取的所有內容是否已成功內嵌至目標例項。 此驗證功能的運作方式是將擷取期間涉及的節點摘要與擷取期間涉及的節點摘要進行比較。 如果擷取摘要中包含的任何節點路徑從擷取摘要中遺失，則會將驗證視為失敗，且可能需要進行額外的手動驗證。
 
 >[!INFO]
 >
->此功能將在內容傳輸工具(CTT)1.8.x版中提供。 AEM Cloud Service目標環境必須至少運行6158版或更高版本。 它還要求設定源環境以運行 [預拷貝](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step)。 驗證功能在源上查找azcopy.config檔案。 如果找不到此檔案，則驗證將不運行。 要瞭解有關如何配置azcopy.config檔案的詳細資訊，請參見 [此頁](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file)。
+>自內容轉移工具(CTT)1.8.x版發行起，即可使用此功能。 AEM Cloud Service目標環境至少必須執行6158版或更新版本。 還需要設定源環境才能運行 [預復](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). 驗證功能會在來源上尋找azcopy.config檔案。 如果找不到此檔案，則不會運行驗證。 若要進一步了解如何設定azcopy.config檔案，請參閱 [本頁](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-驗證內容傳輸是一項可選功能。 啟用此功能將增加執行提取和攝取所花的時間。 要使用該功能，請按照以下步驟在源環境的系統控制台AEM中啟用該功能：
+驗證內容轉移是選用功能。 啟用此功能將增加執行提取和擷取所需的時間。 若要使用此功能，請依照下列步驟，在來源AEM環境的「系統主控台」中啟用此功能：
 
-1. 轉到源實例上的Adobe Experience ManagerWeb控制台 **工具 — 操作 — Web控制台** 或直接到URL *https://serveraddress:serverport/system/console/configMgr*
-1. 搜索 **內容傳輸工具抽取服務配置**
-1. 使用鉛筆表徵圖按鈕編輯其配置值
-1. 啟用 **在提取期間啟用遷移驗證** 設定，然後按 **保存**:
+1. 導覽至來源例項上的Adobe Experience Manager Web Console，方法是前往 **工具 — 操作 — Web控制台** 或直接傳至URL() *https://serveraddress:serverport/system/console/configMgr*
+1. 搜尋 **內容轉移工具提取服務設定**
+1. 使用鉛筆圖示按鈕來編輯其設定值
+1. 啟用 **在提取期間啟用遷移驗證** 設定，然後按 **儲存**:
 
    ![影像](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
 
-啟用此設定並且目標AEM Cloud Service環境運行相容版本後，將在後續的所有提取和接收過程中進行遷移驗證。
+啟用此設定，且目標AEM Cloud Service環境執行相容的版本後，所有後續的擷取和擷取作業都會進行移轉驗證。
 
-有關如何安裝內容傳輸工具的詳細資訊，請參見 [內容傳輸工具入門](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)。
+如需如何安裝「內容轉移工具」的詳細資訊，請參閱 [內容轉移工具快速入門](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
 
-## 如何驗證內容傳輸 {#how-to-validate-a-content-transfer}
+## 如何驗證內容轉移 {#how-to-validate-a-content-transfer}
 
-在源環境上啟用遷移驗AEM證後，開始提取。
+在來源AEM環境上啟用移轉驗證後，開始擷取。
 
-如果 **提取期間覆蓋暫存容器** 啟用後，所有與提取相關的節點都將記錄到提取路徑摘要中。 使用此設定時，啟用 **在接收之前擦除雲實例上的現有內容** 設定，否則可能會在攝取摘要中缺少節點。 這些節點是以前接收中在目標上已存在的節點。
+若 **提取期間覆寫預備容器** 啟用後，所有與提取相關的節點將記錄到提取路徑摘要中。 使用此設定時，請務必啟用 **擷取前先擦去雲端例項上的現有內容** 擷取期間進行設定，否則擷取摘要中可能會有節點遺失。 這些節點已存在於目標上，且來自先前擷取。
 
-有關此問題的圖形說明，請參閱以下示例：
+如需此項目的圖形圖示，請參閱下列範例：
 
-### 示例1 {#example-1}
+### 範例1 {#example-1}
 
-* **提取（覆蓋）**
+* **提取（覆寫）**
 
    ![影像](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
 
-* **攝取（擦除）**
+* **擷取（擦去）**
 
    ![影像](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **附註**
 
-   「覆蓋」和「擦除」的這種組合將導致一致的驗證結果，即使對於重複的接收也是如此。
+   這種「覆寫」和「擦去」的組合將產生一致的驗證結果，即使重複擷取亦然。
 
-### 示例2 {#example-2}
+### 範例2 {#example-2}
 
 * **擷取**
 
    ![影像](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
-* **攝取**
+* **擷取**
 
    ![影像](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
 * **附註**
 
-   「覆蓋」和「擦除」的這種組合將導致初始攝取的驗證結果一致。
+   此「覆寫」和「擦去」的組合將產生初始擷取的一致驗證結果。
 
-   如果重複攝取，則攝取摘要將為空，驗證似乎已失敗。 接收摘要將為空，因為此提取中的所有節點都已存在於目標上。
+   如果重複擷取，擷取摘要將會是空的，且驗證似乎已失敗。 擷取摘要將為空，因為此擷取中的所有節點都已存在於目標上。
 
-提取完成後，開始攝取。
+提取一旦完成，即開始擷取。
 
-接收日誌頂部將包含一個條目，類似於 `aem-ethos/tools:1.2.438`。 確保此版本號為 **1.2.438** 或更高版本，否則您使用的AEMas a Cloud Service版本不支援驗證。
+擷取記錄頂端將包含項目，類似於 `aem-ethos/tools:1.2.438`. 請確定此版本號碼為 **1.2.438** 或更新版本，否則您所使用的AEM as a Cloud Service版不支援驗證。
 
-一旦接收完成並驗證開始，將在接收日誌中記錄以下日誌條目：
+擷取完成且驗證開始後，擷取記錄中會記錄下列記錄項目：
 
 ```
 Gathering artifacts for migration validation...  
 ```
 
-驗證的詳細資訊將跟隨此條目。 從以下大型遷移中查找示例：
+驗證的詳細資訊將遵循此項。 請尋找下列大型移轉的範例：
 
 ```
 Beginning publish migration validation. Migration job id=[3aba1f96-84b6-4bd0-8642-c61c0d528387]
@@ -100,9 +101,9 @@ Comparing the path digests took 29 seconds
 Migration validation took 33 minutes
 ```
 
-這是已成功驗證的示例，因為提取摘要中不存在攝取摘要中缺少的條目。
+這是已成功驗證的範例，因為擷取摘要中沒有遺漏任何存在於擷取摘要中的項目。
 
-要進行比較，以下是驗證報告在驗證失敗時的看法：
+若要比較，驗證報表在驗證失敗時的外觀如下：
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]
@@ -126,35 +127,35 @@ Comparing the path digests took 0 seconds
 Migration validation took 0 minutes
 ```
 
-上述故障示例是通過運行攝取，然後在禁用擦除的情況下再次運行相同的攝取，以便在攝取期間不涉及節點 — 目標上已存在所有內容。
+上述失敗範例是透過執行擷取來達成，然後在停用「擦去」的情況下重新執行相同的擷取，如此一來擷取期間就不會涉及任何節點 — 目標上已存在所有內容。
 
-除了包含在接收日誌中外，還可以從內容傳輸工具用戶介面訪問驗證報告。 為此，請選擇遷移集，然後按一下 **驗證** 按鈕
+除了包含在擷取記錄中，驗證報表也可從「內容轉移工具」使用者介面存取。 若要這麼做，請選取移轉集，然後按一下 **驗證** 按鈕（從操作欄）:
 
 
 ![影像](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
 
-將會開啟「驗證日誌」對話框：
+將會開啟驗證記錄對話方塊：
 
 ![影像](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
 
-使用 **驗證發佈/作者報告** 按鈕，查看目標環境給定層最近攝取的驗證報告。 請參見下面一個小型發佈接收示例：
+使用 **驗證發佈/作者報表** 按鈕來檢視驗證報表，以取得目標環境的指定層的最新擷取。 請參閱以下來自小型發佈擷取的範例：
 
 ![影像](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
 
 >[!NOTE]
 >
->的 **驗證發佈/作者報告** 攝入完成後，將顯示連結。 此外，驗證報告將保留，因此它們不會像接收日誌那樣在接收完成後過期。
+>此 **驗證發佈/作者報表** 擷取完成後，連結就會顯示。 此外，驗證報表會持續存在，因此擷取完成後不會過期，就像擷取記錄一樣。
 
 ## 疑難排解 {#troubleshooting}
 
-### 驗證失敗. 現在怎麼辦？ {#validation-fail}
+### 驗證失敗. 現在呢？ {#validation-fail}
 
-第一步是確定攝入是否確實失敗，或提取的內容是否已存在於目標環境中。 如果與 **在接收之前擦除雲實例上的現有內容** 禁用選項。
+第一步是判斷擷取是否確實失敗，或擷取的內容是否已存在於目標環境中。 如果對 **擷取前先擦去雲端例項上的現有內容** 選項已禁用。
 
-要驗證，請從驗證報告中選擇一個路徑，然後檢查該路徑是否存在於目標環境中。 如果這是發佈環境，則您可能僅限於直接檢查頁面和資產。 如果您需要此步驟的幫助，請與客戶服務部門開啟票證。
+若要驗證，請從驗證報表中選擇路徑，並檢查其是否存在於目標環境中。 如果這是發佈環境，您可能受限於僅能直接檢查頁面和資產。 如果您需要此步驟的協助，請向客戶服務開立票證。
 
-### 節點計數低於我預期。 為什麼？ {#node-count-lower-than-expected}
+### 節點計數低於我的預期。 為什麼？ {#node-count-lower-than-expected}
 
-有目的地排除抽取和攝取摘要中的某些路徑，以保持這些檔案的大小可管理，目標是能夠在攝取完成後的兩小時內計算遷移驗證結果。
+系統會有目的地排除擷取和擷取摘要中的某些路徑，以便讓這些檔案的大小保持可管理，目標是能夠在擷取完成後的兩小時內計算移轉驗證結果。
 
-當前從摘要中排除的路徑包括： `cqdam.text.txt` 格式副本，節點 `/home`，以及 `/jcr:system`。
+當前從摘要中排除的路徑包括： `cqdam.text.txt` 轉譯，內的節點 `/home`，以及 `/jcr:system`.
