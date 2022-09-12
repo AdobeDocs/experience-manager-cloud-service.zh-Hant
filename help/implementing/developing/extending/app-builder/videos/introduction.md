@@ -1,6 +1,6 @@
 ---
 title: App Builder簡介
-description: 從App Builder的業務價值到其體系結構，瞭解其基本知識。
+description: 了解App Builder的基本概念，從其商業價值到架構。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -20,28 +20,28 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
-> _AdobeProject Firefly（如本系列視頻中所述）現在被命名為App Builder_
+> _AdobeProject Firefly（如本系列影片所述）現在更名為App Builder_
 
 ## 簡介
 
-瞭解App Builder及其功能以及App Builder提供的業務價值。
+了解App Builder、其功能，以及App Builder提供的商業價值。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
 
-## 觸點
+## 接觸點
 
-瞭解最終用戶如何與App Builder交互SPA，以及開發人員可以在何處瞭解App Builder開發。
+了解使用者如何與App Builder SPA互動，以及開發人員可在何處了解App Builder開發。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
 
 ## 架構
 
-瞭解App Builder的應用架構及其優勢。
+了解App Builder的應用程式架構及其優點。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339160/?quality=12&learn=on)
 
 ## 業務價值和使用案例
 
-瞭解App Builder的設計原則和常用用例。
+了解App Builder的設計原則和常見使用案例。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339161/?quality=12&learn=on)
