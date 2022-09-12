@@ -1,6 +1,6 @@
 ---
 title: SLA報告
-description: 瞭解如何查看您的生產環AEM境相對於合同服務級別協定(SLA)的效能。
+description: 了解如何了解生產AEM環境相對於合約服務等級合約(SLA)的效能。
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
 source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
 workflow-type: tm+mt
@@ -12,40 +12,40 @@ ht-degree: 0%
 
 # SLA報告 {#sla-reporting}
 
-瞭解如何查看您的生產環AEM境相對於合同服務級別協定(SLA)的效能。
+了解如何了解生產AEM環境相對於合約服務等級合約(SLA)的效能。
 
 ## 簡介 {#introduction}
 
-SLA報告資料可通過 **報告** 頁籤。 按照以下步驟訪問。
+SLA報告資料可用於每個生產計畫，透過 **報表** 標籤。 請依照下列步驟存取。
 
-1. 登錄到Cloud Manager(位於 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇相應的組織和程式。
+1. 登入Cloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇適當的組織和方案。
 
-1. 導航到 **報告** 的 **概述** 的子菜單。
+1. 導覽至 **報表** 標籤 **概述** 頁面。
 
-1. 按一下所需年份，查看SLA資料圖表。
+1. 按一下所需的年份，查看圖表中的SLA資料。
 
-![SLA圖示例](assets/sla-reporting-1.png)
+![SLA圖表範例](assets/sla-reporting-1.png)
 
-將游標置於資料點上，以顯示該點的特定值。
+將游標移到資料點上以顯示該點的特定值。
 
 ![顯示詳細資料](assets/sla-reporting-b.png)
 
-## SLA度量 {#sla-metrics}
+## SLA量度 {#sla-metrics}
 
-所選年份的圖形包括多個資料集。
+所選年份的圖表包含許多資料集。
 
-* **發佈層合同**  — 這是您的合同中為發佈層定義的AdobeSLA。
+* **發佈層級合約**  — 這是您與發佈層級Adobe的合約中定義的SLA。
 
-* **發佈層實際**  — 這是由Adobe或Adobe供應商引起的生產發佈層代理事件的正常運行時間。
+* **發佈層實際**  — 這是由Adobe或Adobe供應商導致的生產發佈層級保理事件的正常運行時間。
 
-* **作者層合同**  — 這是您在合同中為作者層定義的AdobeSLA。
+* **作者階層合約**  — 這是您合約中針對作者階層的Adobe所定義的SLA。
 
-* **作者層實際**  — 這是由Adobe或Adobe供應商引起的生產作者層代理事件的正常運行時間。
+* **作者階層實際**  — 這是由Adobe或Adobe供應商造成的生產製作層級保理事件的正常運行時間。
 
 ## 事件分析 {#event-analysis}
 
-的 **事件分析** 圖表下的部分顯示了在選定年份中為程式發生的事件集。
+此 **事件分析** 圖表下的部分顯示選定年度內為程式發生的事件集。
 
-每個事件都有一個時間範圍、一個原因和一組注釋。
+每個事件都有時間範圍、原因和一組注釋。
 
-![事件分析示例](assets/sla-reporting-c.png)
+![事件分析範例](assets/sla-reporting-c.png)
