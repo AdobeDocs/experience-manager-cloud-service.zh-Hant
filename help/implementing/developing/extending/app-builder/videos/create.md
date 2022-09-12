@@ -1,6 +1,6 @@
 ---
 title: 建立App Builder應用程式
-description: 瞭解如何建立和引導新的App Builder應用程式。
+description: 了解如何建立和引導新的App Builder應用程式。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -20,28 +20,28 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
-> _AdobeProject Firefly（如本系列視頻中所述）現在被命名為App Builder_
+> _AdobeProject Firefly（如本系列影片所述）現在更名為App Builder_
 
-## 設定第一個項目
+## 設定您的第一個專案
 
-瞭解建立第一個App Builder項目的基礎知識。
+了解建立第一個App Builder專案的基本知識。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339168/?quality=12&learn=on)
 
-## 設定本地開發環境
+## 設定您的本機開發環境
 
-瞭解如何設定本地環境以進行App Builder開發。
+了解如何設定您的本機環境，以進行App Builder開發。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
 
-## 初始化第一個項目
+## 初始化您的第一個專案
 
-瞭解如何初始化App Builder項目。
+了解如何初始化App Builder專案。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
 
-## 構建、運行和test應用程式
+## 建立、執行和測試您的應用程式
 
-瞭解如何構建、運行和testApp Builder應用程式。
+了解如何建置、執行和測試您的App Builder應用程式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339171/?quality=12&learn=on)
