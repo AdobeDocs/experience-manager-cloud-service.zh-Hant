@@ -1,6 +1,6 @@
 ---
-title: 資料保護和資料隱私法規 — Adobe Experience Manager as a Cloud Service就緒性
-description: 瞭解Adobe Experience Manager as a Cloud Service對各種資料保護和資料隱私法規的支援；包括歐盟一般資料保護條例(GDPR)、加利福尼亞消費者隱私法以及實施新as a Cloud Service項目時如AEM何遵守。
+title: 資料保護與資料隱私權法規 — Adobe Experience Manager as a Cloud Service整備
+description: 了解Adobe Experience Manager as a Cloud Service對各種資料保護和資料隱私權法規的支援；包括歐盟一般資料保護規範(GDPR)、加州消費者隱私法，以及實作新AEMas a Cloud Service專案時如何遵循。
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
@@ -9,91 +9,91 @@ ht-degree: 2%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service為資料保護和資料隱私法規做好準備 {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager as a Cloud Service對資料保護與資料隱私權法規的整備 {#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
->本檔案的內容不構成法律咨詢，也不是作為法律咨詢的替代。
+>本檔案的內容不構成法律建議，且用意並非取代法律建議。
 >
->有關資料保護和資料隱私法規的建議，請咨詢您公司的法律部門。
+>如需資料保護與資料隱私權法規的相關建議，請諮詢貴公司的法律部門。
 
 >[!NOTE]
 >
->有關Adobe對隱私問題的響應以及這對您作為Adobe客戶意味著什麼的詳細資訊，請參閱 [Adobe隱私中心](https://www.adobe.com/privacy.html)。
+>如需有關Adobe對隱私權問題之回應，以及這對您身為Adobe客戶所代表之意義的詳細資訊，請參閱 [Adobe的隱私中心](https://www.adobe.com/privacy.html).
 
-Adobe正在提供文檔和過程（如果有API），讓客戶隱私管理員或管理員處理資料保護和資料隱私請求AEM，並幫助我們的客戶遵守這些法規。 所記錄的過程將允許客戶手動或通過從外部門戶或服務調用API（如果可用）來執行管理要求。
+Adobe提供檔案和程式（若有API可用），供客戶隱私權管理員或AEM管理員處理資料保護和資料隱私權請求，並協助客戶遵守這些法規。 記錄的程式可讓客戶手動執行法規要求，或透過外部入口網站或服務呼叫API（若有）。
 
 >[!CAUTION]
 >
->此處記錄的細節僅限於Adobe Experience Manager as a Cloud Service。
+>此處記錄的詳細資訊僅限於Adobe Experience Manager as a Cloud Service。
 >
->來自其他Adobe按需服務的資料以及任何相關的隱私請求將要求對該服務採取操作。
+>其他Adobe隨選服務的資料，連同任何相關的隱私權要求，都需要對該服務採取動作。
 >
->有關詳細資訊，請參閱 [Adobe隱私中心](https://www.adobe.com/privacy.html)。
+>如需詳細資訊，請參閱 [Adobe的隱私中心](https://www.adobe.com/privacy.html).
 
 ## 簡介 {#introduction}
 
-Adobe Experience Manager as a Cloud Service的實例以及運行在它們上的應用程式由我們的客戶擁有和操作。
+Adobe Experience Manager as a Cloud Service的例項以及在其上執行的應用程式，由我們的客戶擁有和運作。
 
-因此，資料保護法規（如GDPR 、 CCPA和其他法規）在很大程度上是客戶的責任。
+因此，GDPR、CCPA等資料保護法規在很大程度上是客戶的責任。
 
-作為一個非常簡要的介紹，資料隱私和保護法規包括了新的規則，應遵循以下角色：
+作為非常簡短的介紹，資料隱私和保護法規包括了新規則，這些規則將遵循：
 
-* 業務實體(CCPA)和/或資料控制器(GDPR)
+* 業務實體(CCPA)和/或資料控管單位(GDPR)
 
-* 服務提供商(CCPA)和/或資料處理器(GDPR)
+* 服務提供者(CCPA)及/或資料處理者(GDPR)
 
 這些條例的主要規定是：
 
-1. 擴展了個人資料定義，包括所有唯一ID;直接和間接可識別的資料。
+1. 擴展個人資料的定義，納入所有唯一ID;與可直接或間接識別的資料相同。
 
 2. 加強同意要求。
 
-3. 更多地關注刪除權限（資料擦除）。
+3. 增加對刪除權限（資料擦除）的關注。
 
-4. 退出資料銷售。
+4. 選擇退出資料銷售。
 
-Adobe Experience Manager as a Cloud Service:
+若為Adobe Experience Manager as a Cloud Service:
 
-* 這些實例和在它們上運行的應用程式由客戶擁有和操作。
+* 執行個體和在其上執行的應用程式由客戶擁有和操作。
 
-   * 這有效地意味著客戶管理法規角色，包括業務實體和服務提供商、資料控制器和資料處理器等。
+   * 這意味著客戶管理法規角色，包括業務實體和服務提供商、資料控制方和資料處理方等。
 
-   * 如下圖所示，Adobe Experience Platform Privacy Service將不AEM是工作流的一部分。
+   * 如下圖所示，Adobe Experience Platform Privacy Service不屬於AEM的工作流程。
 
-* 包AEM括客戶隱私管理員和/或管理員執AEM行隱私法規請求的文檔和過程；手動或通過API（如果可用）。
+* AEM包含客戶隱私權管理員和/或AEM管理員執行隱私權法規要求的檔案和程式；手動或透過API（若有）。
 
-* 未添加新服務或UI。
+* 未新增任何服務或UI。
 
-   * 相反，將記錄過程和API，供處理隱私管理請求的客戶UI/門戶使用。
+   * 而是會記錄程式和API，以供處理隱私權法規要求的客戶UI/入口網站使用。
 
-* 不AEM會包括任何現成工具來支援隱私請求工作流。
+* AEM將不包含任何現成可用的工具，以支援隱私權要求工作流程。
 
-   * Adobe將為客戶的隱私管理員和/或管理員提供文檔和過程AEM，使他們能夠手動執行與隱私法規相關的請求。
+   * Adobe將提供客戶隱私權管理員和/或AEM管理員的檔案和程式，讓他們能手動執行與隱私權法規相關的要求。
 
-Adobe正在提供處理與Adobe Experience Manager as a Cloud Service訪問、刪除和退出相關的隱私請求的程式。 在某些情況下，可以從客戶開發的門戶或指令碼中調用可用的API，以幫助實現自動化。
+Adobe提供處理Adobe Experience Manager as a Cloud Service存取、刪除和選擇退出相關隱私權要求的程式。 某些情況下，客戶可從開發的入口網站或指令碼呼叫可用的API，以協助實現自動化。
 
-下圖說明隱私請求工作流可能的樣子(使用Adobe Experience Manager6.5說明):
+下圖說明隱私權要求工作流程看起來的樣子(使用Adobe Experience Manager 6.5圖示):
 
-![資料保護和隱私](assets/data-protection-and-privacy-01.png)
+![資料保護與隱私](assets/data-protection-and-privacy-01.png)
 
-## Adobe Experience Manager as a Cloud Service和法規就緒性 {#aem-as-a-cloud-service-and-regulatory-readiness}
+## Adobe Experience Manager as a Cloud Service與法規整備 {#aem-as-a-cloud-service-and-regulatory-readiness}
 
-有關as a Cloud Service產品區的法規文檔，請參閱以下AEM各節。
+如需AEMas a Cloud Service產品領域的規範檔案，請參閱以下各節。
 
 ## Adobe Experience Manager as a Cloud Service 基礎 {#aem-foundation}
 
-請參閱 [資料AEM保護和資料隱私法規的基礎準備](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)。
+請參閱 [AEM對資料保護與資料隱私權法規的基礎整備](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md).
 
 ## Adobe Experience Manager as a Cloud Service Sites {#aem-sites}
 
-請參閱 [AEM Sites準備好實施資料保護和資料隱私法規。](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+請參閱 [AEM Sites對資料保護與資料隱私權法規的整備。](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
 
-## Adobe Experience Manager as a Cloud Service與Adobe Target和Adobe Analytics的整合 {#aem-integration-with-adobe-target-adobe-analytics}
+## Adobe Experience Manager as a Cloud Service與Adobe Target和Adobe Analytics整合 {#aem-integration-with-adobe-target-adobe-analytics}
 
-Adobe Experience Manager as a Cloud Service的這些整合與資料保護和隱私（如GDPR）就緒服務相結合。 與整合相關的Adobe Target或Adobe AnalyticsAEM的個人資料未儲存。
-有關詳細資訊，請參閱：
+這些Adobe Experience Manager as a Cloud Service整合包含資料保護與隱私權（例如GDPR）就緒服務。 AEM中不會儲存任何來自Adobe Target或Adobe Analytics的與整合相關的個人資料。
+如需詳細資訊，請參閱：
 
-* [Adobe Target — 隱私概述](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html)
+* [Adobe Target — 隱私權概觀](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html)
 
-* [Adobe Analytics資料隱私工作流](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html)
+* [Adobe Analytics資料隱私權工作流程](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html)
