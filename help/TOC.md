@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4e18d2e075833bd455087aca149a12c0dc2a9245
+source-git-commit: b423aaad1857e8b8016b4d61fe71360ead88c65f
 workflow-type: tm+mt
-source-wordcount: '3721'
+source-wordcount: '3723'
 ht-degree: 41%
 
 ---
@@ -274,7 +274,7 @@ ht-degree: 41%
          + [如何架構目標內容的多網站管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [管理活動](/help/sites-cloud/authoring/personalization/activities.md)
          + [管理對象](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [建立和管理選件](/help/sites-cloud/authoring/personalization/offers.md)
+         + [建立和管理優惠方案（優惠方案主控台）](/help/sites-cloud/authoring/personalization/offers.md)
          + [了解區段](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [使用ContextHub設定區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [註冊、登入和使用者設定檔](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
