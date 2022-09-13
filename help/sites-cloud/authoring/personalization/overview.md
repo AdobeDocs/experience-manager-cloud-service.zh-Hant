@@ -2,9 +2,9 @@
 title: 個人化和內容鎖定
 description: 了解AEM如何建立個人化內容
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8b741b64db43369bf0ca3bfbe947fb58ef5ec05a
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '517'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,11 @@ AEM提供工具架構，用於編寫目標內容及呈現個人化體驗。
 
 例如，範例網站的女性頁面可以使用選件作為預告影像，顯示在頁面頂端。 另一個優惠方案則用作30歲以上女性體驗和30歲以下女性體驗的預告。
 
-使用 [選件主控台](/help/sites-cloud/authoring/personalization/offers.md) 來建立可在多個體驗中使用的選件。 建立單一使用選件，或在 [製作目標內容](/help/sites-cloud/authoring/personalization/targeted-content.md).
+使用 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) 來建立可在多個體驗中使用的選件。 建立單一使用選件，或在 [製作目標內容](/help/sites-cloud/authoring/personalization/targeted-content.md).
+
+<!--
+Use the [Offers console](/help/sites-cloud/authoring/personalization/offers.md) to create offers that you can use in multiple experiences. Create single-use offers or add offers from an offer library when [authoring targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md).
+-->
 
 ## 定位引擎 {#targeting-engine}
 
