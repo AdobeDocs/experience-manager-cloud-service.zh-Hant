@@ -2,9 +2,9 @@
 title: 建立和管理優惠方案（優惠方案主控台）
 description: 使用選件主控台來建立可在活動體驗中使用的選件
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
+source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1393'
 ht-degree: 1%
 
 ---
@@ -88,6 +88,23 @@ A **轉換為體驗片段變數** 選項和工作流程，可協助您將舊版�
 1. 確認為 **完成**.
 
    如果您現在導覽至 **體驗片段選件** 主控台中，您會看到新的體驗片段及其相關變數。
+
+### 使用優惠方案範本鎖定目標 {#targeting-offers-template}
+
+>[!CAUTION]
+>
+>此選項僅適用於原先現存的舊版選件的客戶。
+>
+>與 **選件** 控制台將不再可用：
+>
+>* 最後一個舊版選件轉換為體驗片段後
+>* 舊版選件遭取代時（日後將不再使用）
+>
+>因此，建議的選項是使用體驗片段，而非此選項。
+
+若客戶已預先存在舊版選件， **使用優惠方案範本** 定位元件時，會顯示選項 **not** 體驗片段：
+
+![轉換為體驗片段變化對話方塊](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
 ## 選件主控台 {#offers-console}
 
