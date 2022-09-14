@@ -4,9 +4,9 @@ description: 了解如何建立包含遮色片銳利化設定、智慧型裁切�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
 workflow-type: tm+mt
-source-wordcount: '3277'
+source-wordcount: '3333'
 ht-degree: 7%
 
 ---
@@ -84,6 +84,10 @@ ht-degree: 7%
 ### 智慧型裁切和色票支援的影像檔案格式
 
 支援的最大輸入檔案大小解析度為16K。
+
+>[!NOTE]
+>
+>16K解析度是水準約16,000像素的顯示解析度。 最常討論的16K解析度是15360 × 8640，它使每個維度8K UHD的像素計數加倍，總數是像素的4倍。 此解析度為1.327億像素，是4K解析度的16倍，是1080p解析度的64倍。
 
 | 影像格式 | 不區分大小寫的副檔名 | MIME類型 | 支援的輸入色域 | 支援的最大輸入檔案大小 | 支援的影像格式？ |
 | --- | --- | --- | --- | --- | --- |
