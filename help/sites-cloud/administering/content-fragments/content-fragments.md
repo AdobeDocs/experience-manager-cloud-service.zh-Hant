@@ -2,9 +2,9 @@
 title: 使用內容片段
 description: 了解Adobe Experience Manager(AEM)as a Cloud Service中的內容片段如何讓您設計、建立、組織及使用不受頁面影響的內容，是製作頁面和無頭傳送的理想選擇。
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2107'
 ht-degree: 3%
 
 ---
@@ -86,6 +86,11 @@ ht-degree: 3%
 >體驗片段可以包含內容片段形式的內容，但不能以相反的方式。
 >
 >如需詳細資訊，另請參閱 [了解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="建立應用程式的內容結構"
+>abstract="您會依照我們一系列互動式指南操作時，將學習建立結構（也稱為內容片段模型），此結構可作為所有無頭式內容的基礎。"
 
 ## 內容片段與內容服務 {#content-fragments-and-content-services}
 

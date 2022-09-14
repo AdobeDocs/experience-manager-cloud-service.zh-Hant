@@ -2,9 +2,9 @@
 title: 使用內容片段搭配GraphQL的無周邊內容傳送
 description: 了解使用內容片段搭配GraphQL實現AEM無周邊CMS，以提供無周邊內容的基本概念。
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,11 @@ ht-degree: 1%
 >* [AEM商務會透過GraphQL取用商務平台中的資料](/help/commerce-cloud/integrating/magento.md).
 >* [AEM內容片段可與AEM GraphQL API（以標準GraphQL為基礎的自訂實作）搭配使用，提供結構化內容以供您的應用程式使用](/help/headless/graphql-api/content-fragments.md).
 
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="使用GraphQL API擷取內容"
+>abstract="在本模組中，您將學習如何使用內容片段和GraphQL API作為無周邊內容管理系統。"
 
 ## 無頭式CMS {#headless-cms}
 
