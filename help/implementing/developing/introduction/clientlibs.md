@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service上使用用戶端程式庫
 description: AEM提供用戶端程式庫資料夾，可讓您將用戶端程式碼(clientlibs)儲存在存放庫中、將其組織為類別，以及定義將每個類別的程式碼提供給用戶端的時間和方式
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
 workflow-type: tm+mt
-source-wordcount: '2561'
+source-wordcount: '2565'
 ht-degree: 1%
 
 ---
@@ -211,7 +211,7 @@ AEM中的用戶端程式庫資料夾支援許多其他功能。 不過，AEMas a
 
 #### 應用程式專屬用戶端程式庫資料夾 {#app-specific-client-library-folders}
 
-最好將所有與應用程式相關的檔案保留在以下其應用程式資料夾中 `/app`. 也是拒絕網站訪客存取 `/app` 檔案夾。 若要同時滿足這兩種最佳實務，請在 `/etc` 內嵌用戶端程式庫的資料夾，位於下方 `/app`.
+最好將所有應用程式相關檔案保留在其/apps之下的應用程式資料夾中。 拒絕網站訪客存取/apps資料夾也是最佳作法。 為滿足這兩種最佳做法，請在/etc資料夾下建立一個客戶端庫資料夾，該資料夾嵌入位於/apps下的客戶端庫。
 
 使用categories屬性來識別要內嵌的用戶端程式庫資料夾。 若要內嵌程式庫，請新增屬性至內嵌 `cq:ClientLibraryFolder` 節點，使用以下屬性：
 
