@@ -2,7 +2,7 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 8e1cc042da37fd246a5048e67fc04cbacfa69775
+source-git-commit: 501441717f541439ac8d914f1e419491399e6667
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 7%
@@ -65,9 +65,6 @@ ht-degree: 7%
 >abstract="了解如何使用「內容轉移工具」將內容移轉至AEMas a Cloud Service（製作/發佈）。"
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" 請參閱示範"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="教學課程 — 使用內容轉移工具"
-
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
-<!-- Need to remove the video -->
 
 以下章節適用於新版「內容轉移工具」。 請詳閱本節，了解如何使用「內容轉移工具」將內容移轉至AEMas a Cloud Service:
 
