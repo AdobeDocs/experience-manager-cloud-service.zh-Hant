@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 9ac5426c71c2ed794b9e72c1eacd936b9aa8d70c
+source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1056'
 ht-degree: 7%
 
 ---
@@ -98,7 +98,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 >
 >沙箱方案環境不支援客戶提供的CDN。
 
-由於額外的躍點，可能會導致效能點擊較小，但從客戶CDN到AEM管理CDN的躍點可能會很有效。
+只有在快取遺失時，才需要客戶CDN與AEM CDN之間的額外躍點。 若使用本文所述的快取最佳化策略，新增客戶CDN應該只會造成可忽略的延遲。
 
 請注意，此客戶CDN設定支援發佈層級，但不支援在製作層級之前。
 
