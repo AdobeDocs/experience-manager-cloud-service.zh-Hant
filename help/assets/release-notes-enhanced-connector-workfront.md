@@ -2,9 +2,9 @@
 title: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
+source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '568'
 ht-degree: 2%
 
 ---
@@ -15,19 +15,24 @@ ht-degree: 2%
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.2的發行日期： [!DNL Workfront for Experience Manager enhanced connector] 是2022年8月3日。
+最新版本1.9.3的發行日期： [!DNL Workfront for Experience Manager enhanced connector] 是2022年9月16日。
 
 ## 發行重點 {#release-highlights}
 
 最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包含下列增強功能和錯誤修正：
 
-* 此 **[!UICONTROL 上傳檔案]** 工作流程步驟無法將檔案附加至Workfront。
+* 無法上傳大小超過8 GB的檔案。
+* 自動發佈從Workfront傳送至AEM的資產時發生問題。
+* 編輯預設的中繼資料結構表單時，「標籤」欄位沒有「根路徑」欄位可用。
+* 使用AEM工作流程在Workfront中新增版本時發生問題
+* 當您對Workfront中可用的資產執行AEM搜尋時，AEM會顯示錯誤訊息。
+* 從資產建立任務建立的AEM工作流程且未定義父任務名稱時，不會在Workfront中建立該任務。
 
-* 此 **[!UICONTROL 上傳檔案]** 工作流程步驟無法將檔案附加至Workfront中的工作和問題。 工作流步驟將文檔成功附加到項目。
+
 
 >[!IMPORTANT]
 >
->Adobe建議您 [升級至最新1.9.2版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建議您 [升級至最新1.9.3版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知問題 {#known-issues}
 
@@ -35,7 +40,17 @@ ht-degree: 2%
 
 * 使用傳統Workfront體驗時， **[!UICONTROL 傳送至]** 選項 **[!UICONTROL 更多]** 下拉式清單不允許您選取Experience Manager內的目標目標。 此 **[!UICONTROL 傳送至]** 選項可使用 **[!UICONTROL 文檔操作]** 下拉式清單。 此 **[!UICONTROL 傳送至]** 選項可正確運作 **[!UICONTROL 更多]** 下拉式清單以及 **[!UICONTROL 文檔操作]** 新Workfront體驗中提供的下拉式清單。
 
+* Workfront顯示 `SERVER_ERROR` 升級至版本8316後，將檔案連結至AEM時出現訊息。 若要解決此問題，請指派 `rep:readProperties` to `content/dam/collections` for `wf-workfront-user` AEM使用者群組。
+
 ## 舊版 {#previous-releases}
+
+### 2022年8月發行 {#august-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.2版（於8月03日發行）包含下列更新：
+
+* 此 **[!UICONTROL 上傳檔案]** 工作流程步驟無法將檔案附加至Workfront。
+
+* 此 **[!UICONTROL 上傳檔案]** 工作流程步驟無法將檔案附加至Workfront中的工作和問題。 工作流步驟將文檔成功附加到項目。
 
 ### 2022年7月發行 {#july-2022-release}
 
