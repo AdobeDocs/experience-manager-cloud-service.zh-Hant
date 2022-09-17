@@ -2,7 +2,7 @@
 title: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
+source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 * 無法上傳大小超過8 GB的檔案。
 * 自動發佈從Workfront傳送至AEM的資產時發生問題。
 * 編輯預設的中繼資料結構表單時，「標籤」欄位沒有「根路徑」欄位可用。
-* 使用AEM工作流程在Workfront中新增版本時發生問題
+* 使用AEM工作流程在Workfront中新增版本時發生問題。
 * 當您對Workfront中可用的資產執行AEM搜尋時，AEM會顯示錯誤訊息。
 * 從資產建立任務建立的AEM工作流程且未定義父任務名稱時，不會在Workfront中建立該任務。
 
