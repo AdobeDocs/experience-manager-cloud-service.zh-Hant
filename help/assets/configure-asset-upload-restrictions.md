@@ -2,10 +2,10 @@
 title: 設定資產上傳限制
 description: 設定Adobe Experience Manager Assets以根據MIME類型限制使用者可上傳的資產類型。 它有助於防止意外上傳不想要的格式和惡意檔案。
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
+source-git-commit: d2d0d8b0d484d2e5cd2bf44449e7d71d3da98eea
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 1%
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
@@ -42,6 +42,12 @@ ht-degree: 1%
 ![資產上傳限制](assets/asset-upload-restrictions.png)
 
 `image/*` 因為MIME類型允許以所有格式上傳影像。 `application/pdf` 因為MIME類型允許將PDF檔案上傳至Experience Manager Assets。
+
+如果您嘗試上傳未包含在允許的MIME類型清單中的檔案，Experience Manager Assets會顯示下列錯誤訊息：
+
+![受限檔案](assets/asset-upload-restricted-files.png)
+
+`Screen Recording 2022-08-31 at 3.36.09 PM.mov` 是指未包含在允許的MIME類型中的檔案名。
 
 **範例2:允許將特定影像格式上傳至Experience Manager Assets**
 
