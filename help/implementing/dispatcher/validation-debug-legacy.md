@@ -4,9 +4,9 @@ description: 使用Dispatcher工具（舊版）進行驗證和除錯
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 97279969981d6abacbf4d15eb2002cce577d8fc9
+source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
 workflow-type: tm+mt
-source-wordcount: '2304'
+source-wordcount: '2342'
 ht-degree: 1%
 
 ---
@@ -309,6 +309,10 @@ Apache虛擬主機配置中有兩種類型的檔案，可以指定為包括：�
 | 重寫 | `conf.d/rewrites/rewrite.rules` |
 | 變數 | `conf.d/variables/custom.vars` |
 
+>[!TIP]
+>
+>若要以更少限制的方式包含更多檔案，您可能會想要切換至彈性的Dispatcher設定模式。 請查看該文檔 [使用Dispatcher工具進行驗證和除錯](/help/implementing/dispatcher/validation-debug.md) 以取得彈性模式的詳細資訊。
+
 或者，您也可以包含 **預設** 重寫規則的版本，其名稱為 `conf.d/rewrites/default_rewrite.rules`.
 請注意，變數檔案沒有預設版本。
 
@@ -316,7 +320,7 @@ Apache虛擬主機配置中有兩種類型的檔案，可以指定為包括：�
 
 此訊息指出您的設定已棄用第1版配置，包含完整的Apache設定和具有 `ams_` 前置詞。 雖然回溯相容性仍支援此功能，但您應切換至新版面。
 
-請注意，第一階段也可以 **單獨運行**，而非來自包裝函式 `validate.sh` 指令碼。
+請注意，第一階段也可 **單獨運行**，而非來自包裝函式 `validate.sh` 指令碼。
 
 當對你的瑪文藏物或 `dispatcher/src` 子目錄，它會報告驗證失敗：
 

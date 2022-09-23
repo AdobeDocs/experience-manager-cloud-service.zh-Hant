@@ -3,9 +3,9 @@ title: 使用Dispatcher工具進行驗證和除錯
 description: 使用Dispatcher工具進行驗證和除錯
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
+source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2690'
 ht-degree: 1%
 
 ---
@@ -312,13 +312,26 @@ Phase 3 finished
 
 **包含的檔案(...)與任何已知檔案不匹配**
 
-Apache虛擬主機配置中有兩種類型的檔案，可以指定為包括：重寫和變數。
-包含的檔案需命名如下：
+預設情況下，Apache虛擬主機配置中的兩種檔案可指定為包括：重寫和變數。
 
 | 類型 | 包含檔案名 |
 |-----------|---------------------------------|
 | 重寫 | `conf.d/rewrites/rewrite.rules` |
 | 變數 | `conf.d/variables/custom.vars` |
+
+在彈性模式中，只要其他檔案位於的子目錄（任何層級），則也可以包括其他檔案 `conf.d` 目錄首碼如下。
+
+| 包括檔案上目錄前置詞 |
+|-------------------------------------|
+| `conf.d/includes` |
+| `conf.d/modsec` |
+| `conf.d/rewrites` |
+
+例如，您可以在以下某些新建立的目錄中包含檔案 `conf.d/includes` 目錄如下：
+
+```
+Include conf.d/includes/mynewdirectory/myincludefile.conf
+```
 
 或者，您也可以包含 **預設** 重寫規則的版本，其名稱為 `conf.d/rewrites/default_rewrite.rules`.
 請注意，變數檔案沒有預設版本。

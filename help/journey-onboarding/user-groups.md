@@ -3,9 +3,9 @@ title: 通知的使用者群組
 description: 了解如何在Admin Console中建立使用者群組，以管理重要電子郵件通知的接收。
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 532184edca597452e76fdf763e7377d5e835bebc
+source-git-commit: b56bb15f8330deefc11d19e784e36590ef674dd8
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '908'
 ht-degree: 1%
 
 ---
@@ -17,12 +17,12 @@ ht-degree: 1%
 
 ## 總覽 {#overview}
 
-Adobe不時需要聯絡有關其AEMas a Cloud Service環境的資訊。 除了產品內通知外，Adobe偶爾也會使用電子郵件來傳送此類通知。 此類通知有兩種類型：
+Adobe有時需要聯絡使用者，了解其AEMas a Cloud Service環境。 除了產品內通知外，Adobe偶爾也會使用電子郵件接收通知。 此類電子郵件通知有兩種類型：
 
-* **事件通知 — Cloud Service**  — 這些通知會在發生事件或Adobe發現AEMas a Cloud Service環境可能有可用性問題時傳送。
-* **主動通知 — Cloud Service**  — 當Adobe支援團隊成員想要提供潛在最佳化或建議的指引，以利於您的AEMas a Cloud Service環境時，會傳送這些通知。
+* **事件通知**  — 這些通知會在發生事件或Adobe發現AEMas a Cloud Service環境可能有可用性問題時傳送。
+* **主動通知**  — 當Adobe支援團隊成員想要提供潛在最佳化或建議的指引，以利於您的AEMas a Cloud Service環境時，會傳送這些通知。
 
-若要讓正確的使用者收到這些通知，您必須設定使用者群組。
+若要讓正確的使用者收到這些通知，您需要設定並指派使用者群組，本檔案中會有相關說明。
 
 ## 必備條件 {#prerequisites}
 
@@ -45,31 +45,41 @@ Adobe不時需要聯絡有關其AEMas a Cloud Service環境的資訊。 除了�
 
    ![建立使用者群組](assets/cloud_manager_instance.png)
 
-1. 您會看到所有已設定Cloud Manager產品設定檔的清單。 例如：
+1. 您會看到所有已設定Cloud Manager產品設定檔的清單。
 
    ![建立使用者群組](assets/cloud_manager_profiles.png)
 
-1. 按一下 **新設定檔** 並介紹以下細節：
+1. 按一下 **新設定檔** 並提供下列詳細資訊：
 
-   * 產品設定檔名稱：事件通知 — Cloud Service
-   * 顯示名稱：事件通知 — Cloud Service
-   * 說明：適用於在事件期間或Adobe發現AEMas a Cloud Service環境可能存在可用性問題時會收到通知之使用者的Cloud Manager設定檔。
+   * **產品設定檔名稱**: `Incident Notification - Cloud Service`
+   * **顯示名稱**: `Incident Notification - Cloud Service`
+   * **說明**:適用於在事件期間或Adobe發現AEMas a Cloud Service環境可能存在可用性問題時會收到通知之使用者的Cloud Manager設定檔
 
-1. 按一下 **儲存** 並重複步驟5，並提供下列詳細資訊：
+1. 按一下「**儲存**」。
 
-   * 產品設定檔名稱：主動通知 — Cloud Service
-   * 顯示名稱：主動通知 — Cloud Service
-   * 說明：適用於當Adobe支援團隊成員想要針對您的AEMas a Cloud Service環境設定提供潛在最佳化或建議的指引時，會收到通知之使用者的Cloud Manager設定檔。
+1. 按一下 **新設定檔** 並再次提供下列詳細資料：
+
+   * **產品設定檔名稱**: `Proactive Notification - Cloud Service`
+   * **顯示名稱**: `Proactive Notification - Cloud Service`
+   * **說明**:當Adobe支援團隊成員想要針對您的AEMas a Cloud Service環境設定提供潛在最佳化或建議的指引時，會收到通知之使用者的Cloud Manager設定檔
+
+1. 按一下「**儲存**」。
+
+會建立您的兩個新通知群組。
 
 >[!NOTE]
 >
->請務必使Cloud Manager設定檔名稱與上述完全相同。 請從提供的說明複製並貼上產品設定檔名稱。 任何偏差或錯字都會導致通知無法視需要傳送。 如果發生錯誤或尚未定義設定檔，Adobe會預設通知指派給Cloud Manager開發人員（是、或和）Deployment Manager設定檔的現有使用者。
+>Cloud Manager必須 **產品設定檔名稱** 與提供的完全相同。 請複製並貼上提供的產品設定檔名稱，以避免發生錯誤。 任何偏差或錯字都會導致通知無法視需要傳送。
+>
+>如果發生錯誤或尚未定義設定檔，Adobe預設會通知指派給 **Cloud Manager開發人員** 或 **部署管理員** 設定檔。
 
 ## 將使用者指派至新通知產品設定檔 {#add-users}
 
 現在已建立群組，您必須指派適當的使用者。 您可以在建立新使用者或更新現有使用者時執行此操作。
 
 ### 新增使用者至群組 {#new-user}
+
+請依照下列步驟，新增尚未設定同盟ID的使用者。
 
 1. 識別應接收事件或主動通知的使用者。
 
@@ -79,24 +89,46 @@ Adobe不時需要聯絡有關其AEMas a Cloud Service環境的資訊。 除了�
 
    ![使用者](assets/product_services.png)
 
-1. 選取 **使用者** 標籤，然後選取 **添加用戶**.
+1. 如果尚未設定團隊成員的Federated ID，請選取 **使用者** 標籤，然後選取 **添加用戶**. 否則請跳至區段 [新增現有使用者至群組。](#existing-users)
 
    ![使用者](assets/cloud_manager_add_user.png)
 
-1. 在 **新增使用者至您的團隊** 對話框，輸入要添加的用戶的電子郵件ID。
+1. 在 **新增使用者至您的團隊** 對話框，輸入要添加的用戶的電子郵件ID並選擇 `Adobe ID` 針對 **ID類型**.
 
-   * 如果尚未設定團隊成員的Federated ID，請為ID類型選取Adobe ID 。
-   * 如果用戶已存在，請參閱步驟9。
+1. 按一下 **選擇產品** 開始選擇產品。
 
-1. 按一下 **選擇產品** 開始選擇產品並選擇 **Adobe Experience Manager as a Cloud Service** 並指派 **事件通知 — Cloud Service** 或 **主動通知 — Cloud Service**，或兩者皆對使用者。
+1. 選擇 **Adobe Experience Manager as a Cloud Service** 並將一個或兩個新群組指派給使用者。
 
-1. 按一下 **儲存** 會傳送歡迎電子郵件給您新增的使用者。 受邀的使用者現在會收到通知。
+   * **事件通知 — Cloud Service**
+   * **主動通知 — Cloud Service**
 
-1. 對您要接收通知的團隊使用者重複這些步驟。
+1. 按一下 **儲存** 會傳送歡迎電子郵件給您新增的使用者。
 
-1. 如果用戶已存在，請搜索用戶的名稱，並：
+受邀的使用者現在會收到通知。 對您要接收通知的團隊使用者重複這些步驟。
 
-   * 按一下使用者的名稱。
-   * 在 **產品** ，按一下 **編輯**.
-   * 按一下鉛筆按鈕 **選擇產品** 開始選擇產品並選擇 **Adobe Experience Manager as a Cloud Service** 並指派 **事件通知 — Cloud Service** 或 **主動通知 — Cloud Service**，或兩者皆對使用者。
-   * 按一下 **儲存** 會傳送歡迎電子郵件給您新增的使用者。 受邀的使用者現在會收到通知。
+### 新增現有使用者至群組 {#existing-user}
+
+請依照下列步驟，新增已存在同盟ID的使用者。
+
+1. 識別應接收事件或主動通知的使用者。
+
+1. 登入Admin Console: [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 如果您尚未登入。
+
+1. 從 **概述** 頁面，選取 **Adobe Experience Manager as a Cloud Service** 從 **產品和服務** 卡片。
+
+1. 選取 **使用者** 標籤。
+
+1. 如果想要新增至通知群組的團隊成員已有同盟ID，請在清單中找到該使用者，然後按一下該使用者。 否則請跳至區段 [新增使用者至群組。](#add-user)
+
+1. 在 **產品** 按一下刪節號按鈕，然後選擇 **編輯**.
+
+1. 在 **編輯產品** ，按一下 **選擇產品** 開始選擇產品。
+
+1. 選擇 **Adobe Experience Manager as a Cloud Service** 並將一個或兩個新群組指派給使用者。
+
+   * **事件通知 — Cloud Service**
+   * **主動通知 — Cloud Service**
+
+1. 按一下 **儲存** 會傳送歡迎電子郵件給您新增的使用者。
+
+受邀的使用者現在會收到通知。 對您要接收通知的團隊使用者重複這些步驟。
