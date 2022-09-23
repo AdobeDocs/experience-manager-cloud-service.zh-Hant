@@ -340,7 +340,7 @@ Include conf.d/includes/mynewdirectory/myincludefile.conf
 
 此訊息指出您的設定已棄用第1版配置，包含完整的Apache設定和具有 `ams_` 前置詞。 雖然回溯相容性仍支援此功能，但您應切換至新版面。
 
-請注意，第一階段也可 **單獨運行**，而非來自包裝函式 `validate.sh` 指令碼。
+請注意，第一階段也可以 **單獨運行**，而非來自包裝函式 `validate.sh` 指令碼。
 
 當對你的瑪文藏物或 `dispatcher/src` 子目錄，它會報告驗證失敗：
 
