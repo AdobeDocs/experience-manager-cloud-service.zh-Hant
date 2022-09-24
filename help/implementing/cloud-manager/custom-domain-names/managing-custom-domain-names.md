@@ -2,7 +2,7 @@
 title: 管理自訂網域名稱
 description: 了解如何使用Cloud Manager檢視、更新、取代和刪除自訂網域名稱。
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: 955f4bb55434eeb1a429a1972714b71c5370de1e
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Cloud Manager可讓您檢視、更新、取代和刪除自訂網域名稱。
 >
 >SSL憑證必須有效， [已配置，](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 並包含您正在更新的自訂網域名稱。
 
-##  刪除自訂網域名稱 {#deleting}
+## 刪除自訂網域名稱 {#deleting}
 
 使用 **業務負責人** 或 **部署管理員** 角色可以使用Cloud Manager刪除自訂網域名稱。
 
