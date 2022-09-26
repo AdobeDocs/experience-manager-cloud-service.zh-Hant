@@ -2,43 +2,92 @@
 title: 通知
 description: 了解如何使用Adobe Experience Cloud通知系統接收管道部署的相關資訊。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 42d4e3bb38e3a7ecb4507d15e2307ed08d752b5c
+source-git-commit: 0de041211c8257d920bcf354593b3caa2db43572
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 0%
+source-wordcount: '559'
+ht-degree: 1%
 
 ---
 
+
 # 通知 {#notifications}
 
-[!UICONTROL Cloud Manager] 可讓使用者在生產部署期間，於生產管道開始並完成（成功或未成功）時收到通知。
+了解Cloud Manager如何通知您重要事件。
 
-這些通知會透過Adobe傳送 [!UICONTROL Experience Cloud] 通知系統給具有角色的用戶 **業務負責人**, **計畫經理**，和 **部署管理員**.
+## Cloud Manager中的通知 {#cloud-manager-notifications}
 
-通知會顯示在 [!UICONTROL Cloud Manager] UI和整個Adobe [!UICONTROL Experience Cloud].
+[!UICONTROL Cloud Manager] 生產管道在生產部署開始時開始並完成（成功或未成功）時，會傳送通知給您。
 
-![功能表列中的通知圖示](assets/notify-1.png)
+這些通知會透過 [!UICONTROL Experience Cloud] 通知系統 **業務負責人**, **計畫經理**，和 **部署管理員** 角色。
 
-有新通知時，鈴聲表徵圖被標籤。 按一下它以開啟面板以檢視通知。
+通知會出現在 [!UICONTROL Cloud Manager] 和整個Adobe [!UICONTROL Experience Cloud]. 收到新通知時，標題中的鈴聲表徵圖會標籤。
 
-![檢視通知](assets/notify-2.png)
+![通知圖示](assets/notifications-bell-badged.png)
 
-面板只會列出最新的通知。 按一下 **查看全部** ，查看所有通知。
+按一下鈴聲表徵圖開啟側欄並查看通知。 此 **通知** 邊欄中的索引標籤會列出最新通知，例如部署確認。 通知與您的環境有關。
 
-## 電子郵件通知 {#email-notifications}
+![通知側欄](assets/notifications-activities.png)
 
-依預設，通知可在使用者介面中跨Adobe使用 [!UICONTROL Experience Cloud] 解決方案。 個別使用者也可以依照下列步驟，選擇透過電子郵件傳送這些通知。
+此 **公告** 索引標籤包含Adobe產品公告。 公告與產品有關。
 
-1. 按一下鈴聲圖示以顯示通知。
-1. 按一下 **編輯偏好設定** 圖示（形狀像齒輪）。
-1. 在開啟的視窗中，按一下 **通知** 的下一頁。
-   ![編輯首選項窗口](assets/notification-preferences.png)
-1. 向下捲動至 **電子郵件** 標題。
-   ![電子郵件選項](assets/email-preferences.png)
-1. 選取您要如何接收電子郵件。
-   * 不傳送電子郵件（預設）
-   * 即時通知
-   * 每日摘要
-   * 每週摘要
+![通知側欄](assets/notificaitons-announcements.png)
 
-選取後，您的選擇會自動儲存，而無需按一下儲存或套用按鈕。
+按一下通知或公告以檢視其詳細資訊。 連結至活動（如管道部署）的通知會帶您查看該活動的詳細資訊，例如管道執行視窗。
+
+按一下 **查看全部** 選項，查看收件匣中的所有公告。
+
+按一下 **將所有標籤為已讀** 選項，將所有未讀通知標籤為已讀，並清除鈴聲表徵表徵圖簽。
+
+## 通知配置 {#configuration}
+
+您可以自訂接收通知的方式，以及接收哪些通知。
+
+按一下通知側欄頂端的齒輪圖示。
+
+![通知設定圖示](assets/notifications-configuration.png)
+
+這會開啟 **Experience Cloud偏好設定** 視窗中，您可以在此定義通知訂閱及接收通知的方式。
+
+### 訂閱 {#subscriptions}
+
+訂閱會定義您接收通知的產品，以及哪些通知。
+
+![通知訂閱](assets/notifications-subscriptions.png)
+
+依預設，您會收到所有產品的所有通知。 按一下 **自訂** ，定義您為該產品接收的通知類型。
+
+![通知訂閱自定義](assets/notifications-subscriptions-customize.png)
+
+### 優先順序 {#priority}
+
+優先順序警報會標示為 **高** 標籤，且可設定為僅接收作為警報。 在 **優先順序** 區段中，您可以定義哪些類別符合優先順序通知的資格。
+
+![通知優先順序](assets/notifications-priority.png)
+
+使用下拉式清單，將符合優先順序的類別新增至清單。 按一下類別名稱旁的X以移除它們。
+
+### 警報 {#alerts}
+
+警報會在視窗的右上角出現幾秒鐘。 使用 **警報** 區段，定義您接收警報的通知。
+
+![通知警報](assets/notifications-alerts.png)
+
+您可以定義警報的行為。
+
+* **顯示**  — 定義觸發警報的通知類型
+* **警報應會一直顯示在螢幕上，直到我關閉警報為止**  — 控制應持續存在的警報，除非您主動解除警報
+* **持續時間**  — 定義如果您未選擇警報應保留在畫面上，則警報應保留在畫面上的時間。
+
+## 電子郵件 {#emails}
+
+Web用戶介面中提供各種Adobe的通知 [!UICONTROL Experience Cloud] 解決方案。 您也可以選擇透過 **電子郵件** 區段。
+
+![通知電子郵件](assets/notifications-emails.png)
+
+預設不會傳送任何電子郵件。 您可以選擇以下方式接收電子郵件：
+
+* 立即
+* 每日
+* 每週
+
+當 **即時通知** 若選取，則會立即傳送每則通知的電子郵件。 針對 **每日摘要** 和 **每週摘要** 您可以選擇每日摘要的傳送時間，以及每週摘要的傳送日期和時間。
