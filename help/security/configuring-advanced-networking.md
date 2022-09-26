@@ -2,9 +2,9 @@
 title: 配置AEMas a Cloud Service的高級網路
 description: 了解如何配置高級網路功能，如VPN或靈活或專用的輸出IP地址，以便AEMas a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: b8a827e73d8eba9184be352d0aa4705dfb24b642
+source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
 workflow-type: tm+mt
-source-wordcount: '3016'
+source-wordcount: '3036'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ AEM as a Cloud Service提供數種進階網路功能，可由使用Cloud Manager
 
 ### 設定 {#configuring-flexible-port-egress-provision}
 
-每個程式一次，POST `/program/<programId>/networkInfrastructures` 叫用端點，只需傳遞 `flexiblePortEgress` 針對 `kind` 參數和地區。 端點會以 `network_id`，以及其他資訊，包括狀態。 API檔案中應參考完整的參數集和確切語法。
+每個程式一次，POST `/program/<programId>/networkInfrastructures` 叫用端點，只需傳遞 `flexiblePortEgress` 針對 `kind` 參數和地區。 端點會以 `network_id`，以及其他資訊，包括狀態。 完整的參數集和確切語法，以及重要資訊，例如以後無法變更的參數， [可在API檔案中參考。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 呼叫後，配置網路基礎架構通常需要約15分鐘。 呼叫Cloud Manager的 [網路基礎結構GET端點](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 會顯示「就緒」狀態。
 
