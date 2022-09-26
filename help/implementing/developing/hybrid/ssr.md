@@ -2,9 +2,9 @@
 title: SPA和伺服器端轉譯
 description: 在SPA中使用伺服器端轉譯(SSR)可加速頁面的初始載入，然後將進一步轉譯傳遞至用戶端。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
+source-git-commit: cc50520d7ee2bb3e7d1491154d531aa84ac9e956
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ SSR通常在下列任一問題都有明確的「是」時提供一些值：
 * **SEO:** 您的網站是否仍需要SSR才能由帶來流量的搜尋引擎正確編列索引？ 請記住，主要搜尋引擎編目程式現在會評估JS。
 * **頁面速度：** SSR是否在真實環境中提供了可衡量的速度改進，並增加了總體用戶體驗？
 
-只有在這兩個問題中至少有一個以明確的「是」回答，您的專案才會Adobe建議實作SSR。 以下各節將說明如何使用Adobe I/O Runtime執行此作業。
+只有在這兩個問題中至少有一個以明確的「是」回答，您的專案才會Adobe建議實作SSR。 以下各節將說明如何使用Adobe I/O Runtime( [App Builder](https://developer.adobe.com/app-builder).
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
@@ -34,8 +34,9 @@ SSR通常在下列任一問題都有明確的「是」時提供一些值：
 
 如需Adobe I/O Runtime的詳細資訊，請參閱
 
-* [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html)  — 服務概觀
-* [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html)  — 如需有關平台的詳細檔案
+* [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime)  — 應用程式產生器執行階段功能的概觀
+* [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder)  — 如需完整App Builder產品的詳細資訊
+* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs)  — 詳細檔案
 
 以下幾節將詳細說明如何使用Adobe I/O Runtime，在兩種不同的模型中為SPA實作SSR:
 
@@ -44,7 +45,7 @@ SSR通常在下列任一問題都有明確的「是」時提供一些值：
 
 >[!NOTE]
 >
->Adobe建議每個環境（預備、生產、測試等）分別使用Adobe I/O Runtime工作區。 這允許典型的系統開發生命週期(SDLC)模式，將不同版本的單個應用程式部署到不同的環境。 請參閱檔案 [適用於Project Firefly應用程式的CI/CD](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) 以取得更多資訊。
+>Adobe建議每個環境（預備、生產、測試等）分別使用Adobe I/O Runtime工作區。 這允許典型的系統開發生命週期(SDLC)模式，將不同版本的單個應用程式部署到不同的環境。  請參閱檔案 [應用程式建立工具應用程式的CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) 以取得更多資訊。
 >
 >每個例項（製作、發佈）不需要個別的工作區，除非每個例項類型在執行階段實施中有差異。
 
