@@ -2,9 +2,9 @@
 title: 配置AEMas a Cloud Service的高級網路
 description: 了解如何配置高級網路功能，如VPN或靈活或專用的輸出IP地址，以便AEMas a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
+source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
 workflow-type: tm+mt
-source-wordcount: '3036'
+source-wordcount: '3053'
 ht-degree: 1%
 
 ---
@@ -336,7 +336,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 ## 舊版專屬出口地址客戶 {#legacy-dedicated-egress-address-customers}
 
 如果您在2021.09.30之前已布建專用的輸出IP，則您的專用輸出IP功能僅支援HTTP和HTTPS埠。
-加密時包括HTTP/1.1和HTTP/2。
+加密時包括HTTP/1.1和HTTP/2。 此外，一個專用的輸出端點只能分別通過埠80/443上的HTTP/HTTPS與任何目標通話。
 
 ## 虛擬專用網(VPN) {#vpn}
 
