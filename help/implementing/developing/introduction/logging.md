@@ -2,9 +2,9 @@
 title: 記錄AEMas a Cloud Service
 description: 了解如何使用AEMas a Cloud Service記錄功能，為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 197bff164df83788b4b8b16ba4c7a82021f86002
+source-git-commit: 4b737e1b9355cbb5c4532e0a614c18f5679d61f2
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2347'
 ht-degree: 2%
 
 ---
@@ -559,6 +559,10 @@ Apache層記錄檔（包括Dispatcher）位於Docker容器中，該容器保有D
 >[!NOTE]
 >
 >不支援沙箱方案環境的Splunk轉送。
+
+>[!NOTE]
+>
+>無法從專用的輸出IP地址使用Splunk轉發功能。
 
 除了預備/生產環境外，您還應確定初始要求包含所有應啟用的開發環境。 Splunk必須有SSL憑證，且必須公開。
 
