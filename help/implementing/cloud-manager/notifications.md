@@ -2,35 +2,35 @@
 title: 通知
 description: 了解如何使用Adobe Experience Cloud通知系統接收管道部署的相關資訊。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 0de041211c8257d920bcf354593b3caa2db43572
+source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 1%
+ht-degree: 9%
 
 ---
 
 
 # 通知 {#notifications}
 
-了解Cloud Manager如何通知您重要事件。
+了解 Cloud Manager 如何通知您重要事件。
 
-## Cloud Manager中的通知 {#cloud-manager-notifications}
+## Cloud Manager 中的通知 {#cloud-manager-notifications}
 
 [!UICONTROL Cloud Manager] 生產管道在生產部署開始時開始並完成（成功或未成功）時，會傳送通知給您。
 
 這些通知會透過 [!UICONTROL Experience Cloud] 通知系統 **業務負責人**, **計畫經理**，和 **部署管理員** 角色。
 
-通知會出現在 [!UICONTROL Cloud Manager] 和整個Adobe [!UICONTROL Experience Cloud]. 收到新通知時，標題中的鈴聲表徵圖會標籤。
+通知會出現在 [!UICONTROL Cloud Manager] 和整個Adobe [!UICONTROL Experience Cloud]. 當您有新通知時，標題中的鈴鐺圖示會出現標記。
 
 ![通知圖示](assets/notifications-bell-badged.png)
 
-按一下鈴聲表徵圖開啟側欄並查看通知。 此 **通知** 邊欄中的索引標籤會列出最新通知，例如部署確認。 通知與您的環境有關。
+按一下該鈴鐺圖示，即可開啟側邊欄並檢視通知。此 **通知** 邊欄中的索引標籤會列出最新通知，例如部署確認。 通知與您的環境有關。
 
-![通知側欄](assets/notifications-activities.png)
+![功能側邊欄](assets/notifications-activities.png)
 
 此 **公告** 索引標籤包含Adobe產品公告。 公告與產品有關。
 
-![通知側欄](assets/notificaitons-announcements.png)
+![功能側邊欄](assets/notificaitons-announcements.png)
 
 按一下通知或公告以檢視其詳細資訊。 連結至活動（如管道部署）的通知會帶您查看該活動的詳細資訊，例如管道執行視窗。
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 * **警報應會一直顯示在螢幕上，直到我關閉警報為止**  — 控制應持續存在的警報，除非您主動解除警報
 * **持續時間**  — 定義如果您未選擇警報應保留在畫面上，則警報應保留在畫面上的時間。
 
-## 電子郵件 {#emails}
+### 電子郵件 {#emails}
 
 Web用戶介面中提供各種Adobe的通知 [!UICONTROL Experience Cloud] 解決方案。 您也可以選擇透過 **電子郵件** 區段。
 
