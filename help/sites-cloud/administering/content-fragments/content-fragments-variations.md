@@ -1,8 +1,10 @@
 ---
 title: 變化 - 編寫片段內容
 description: 了解變異如何讓您為片段製作內容，然後根據用途建立該內容的變異。 這為無頭式傳送和頁面編寫提供了新的彈性。
+feature: Content Fragments
+role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2287'
 ht-degree: 12%
@@ -274,7 +276,7 @@ RTF編輯可讓您設定格式：
 
 1. 關閉全螢幕編輯器時，仍會強調顯示註解。 如果選中，將開啟一個對話框，以便您可以進一步編輯注釋。
 
-1. 選擇 **儲存**.
+1. 選取&#x200B;**儲存**。
 
 1. 關閉全螢幕編輯器時，仍會強調顯示註解。 如果選中，將開啟一個對話框，以便您可以進一步編輯注釋。
 

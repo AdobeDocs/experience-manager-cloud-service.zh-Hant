@@ -1,10 +1,8 @@
 ---
 title: 內容片段模型（資產 — 內容片段）
 description: 了解內容片段模型如何成為AEM中無頭內容的基礎，以及如何使用結構化內容建立內容片段。
-feature: Content Fragments
-role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2893'
 ht-degree: 5%
@@ -193,7 +191,7 @@ AEM中的內容片段模型會定義 [內容片段，](/help/assets/content-frag
    * 確認欄位的屬性名稱已新增至翻譯設定、內容 `/content/dam/<sites-configuration>`，如果尚未出現。
    * 對於GraphQL:設定 `<translatable>` 「內容片段」欄位上的屬性 `yes`，以允許僅具有可翻譯內容的JSON輸出的GraphQL查詢篩選。
 
-## 驗證 {#validation}
+## 驗證  {#validation}
 
 各種資料類型現在都包含為內容輸入到產生片段時定義驗證需求的可能性：
 

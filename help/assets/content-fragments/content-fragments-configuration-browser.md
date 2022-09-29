@@ -1,13 +1,11 @@
 ---
 title: 內容片段 — 設定瀏覽器（資產 — 內容片段）
-description: 了解如何在設定瀏覽器中啟用特定內容片段功能，以運用AEM強大的無頭傳送功能。
-feature: Content Fragments
-role: User
+description: 了解如何在設定瀏覽器中啟用內容片段功能。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 13%
+source-wordcount: '364'
+ht-degree: 14%
 
 ---
 

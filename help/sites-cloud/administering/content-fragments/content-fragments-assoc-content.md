@@ -1,10 +1,12 @@
 ---
 title: 相關聯的內容
-description: 了解AEM相關內容功能如何提供連線，讓資產可在新增至內容頁面時選擇性地與片段搭配使用，為頁面製作和無標題內容傳送增加額外的彈性。
+description: 了解內容片段的相關內容功能如何為要（選擇性）與片段搭配使用的資產提供連線，為頁面製作和無頭內容傳送增加額外的彈性。
+feature: Content Fragments
+role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '243'
 ht-degree: 6%
 
 ---

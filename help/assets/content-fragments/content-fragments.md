@@ -1,12 +1,10 @@
 ---
 title: 使用內容片段（資產 — 內容片段）
-description: 了解Adobe Experience Manager(AEM)as a Cloud Service中的內容片段如何讓您設計、建立、組織及使用不受頁面影響的內容，最適合無頭式傳送。
-feature: Content Fragments
-role: User
+description: 了解Adobe Experience Manager(AEM)as a Cloud Service中的內容片段如何讓您設計、建立、組織及使用不受頁面影響的內容，是製作頁面和無頭傳送的理想選擇。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2073'
 ht-degree: 3%
 
 ---

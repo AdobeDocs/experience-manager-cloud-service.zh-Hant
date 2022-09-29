@@ -1,12 +1,10 @@
 ---
 title: 預覽 — JSON表示法（資產 — 內容片段）
 description: 了解如何在實作AEM無頭式解決方案時，輕鬆預覽內容片段的JSON表示法。
-feature: Content Fragments
-role: User
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '117'
 ht-degree: 1%
 
 ---

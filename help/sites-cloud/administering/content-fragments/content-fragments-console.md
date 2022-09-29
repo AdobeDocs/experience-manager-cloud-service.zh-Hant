@@ -2,10 +2,12 @@
 title: 內容片段主控台
 description: 了解如何從內容片段主控台管理內容片段。
 landing-page-description: 了解如何從內容片段主控台管理內容片段，著重於無頭使用案例中大量使用內容片段，但也用於頁面編寫。
+feature: Content Fragments
+role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '883'
 ht-degree: 1%
 
 ---

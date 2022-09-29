@@ -1,8 +1,10 @@
 ---
 title: Markdown
-description: 了解內容片段編輯器如何使用Markdown語法，輕鬆建立頁面製作和無頭傳送的內容。
+description: 了解內容片段編輯器如何使用Markdown語法，輕鬆建立頁面製作和無頭傳送內容。
+feature: Content Fragments
+role: User
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 4%

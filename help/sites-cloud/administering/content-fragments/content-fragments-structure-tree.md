@@ -1,8 +1,10 @@
 ---
 title: 內容片段結構樹
 description: 使用AEM中內容片段編輯器的結構樹功能，更清楚了解您的無頭內容。
+feature: Content Fragments
+role: User
 exl-id: 7e55d7b7-3a82-4665-b4aa-9b47094d91c9
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%

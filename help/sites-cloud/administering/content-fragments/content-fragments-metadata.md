@@ -1,10 +1,12 @@
 ---
 title: 中繼資料 - 片段屬性
-description: 請參閱如何檢視和編輯AEM內容片段的中繼資料屬性。
+description: 了解如何在AEM內容片段中檢視和編輯中繼資料屬性，以進行無頭式內容傳送和頁面編寫。
+feature: Content Fragments
+role: User
 exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '203'
 ht-degree: 5%
 
 ---
