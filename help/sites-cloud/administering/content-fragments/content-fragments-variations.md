@@ -4,9 +4,9 @@ description: 了解變異如何讓您為片段製作內容，然後根據用途�
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 3e08f725cfa0ba06b18da9e435978ba41eb4dbde
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2306'
 ht-degree: 12%
 
 ---
@@ -369,6 +369,12 @@ RTF編輯可讓您設定格式：
 
 
 ## 管理變數 {#managing-variations}
+
+[!CONTEXTUALHELP]
+id="aemcloud_sites_contentfragments_variations"
+title="管理變數"
+abstract="了解如何變更內容以搭配特定管道使用。"
+additional-url="https://video.tv.adobe.com/v/333295" text="內容片段變化"
 
 ### 建立變異 {#creating-a-variation}
 

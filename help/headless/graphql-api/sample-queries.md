@@ -3,9 +3,9 @@ title: 學習如何搭配AEM使用GraphQL — 範例內容與查詢
 description: 了解如何透過探索範例內容和查詢，將GraphQL與AEM搭配使用，以無故提供內容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 7e89ac3f575082d19e509ca133500b71070cc605
+source-git-commit: 3e08f725cfa0ba06b18da9e435978ba41eb4dbde
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1448'
 ht-degree: 6%
 
 ---
@@ -31,6 +31,10 @@ ht-degree: 6%
 
 * 有些 [範例GraphQL查詢](#graphql-sample-queries)，以範例內容片段結構（內容片段模型和相關內容片段）為基礎。
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_headless_graphql_sample"
+>title="使用GraphQL"
+>abstract="了解如何透過探索範例內容和查詢，將GraphQL與AEM搭配使用，以無故提供內容。"
 
 ## GraphQL — 使用範例內容片段結構的範例查詢 {#graphql-sample-queries-sample-content-fragment-structure}
 
