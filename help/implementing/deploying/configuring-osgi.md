@@ -3,9 +3,9 @@ title: 為Adobe Experience Manager as a Cloud Service配置OSGi
 description: 具有機密值和環境特定值的OSGi設定
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: aeff6c3e81eb71521dbd75fc73d3e177aac60abd
+source-git-commit: 74fbf5e3e910106f48a1ec6e316e3ea7c71e65aa
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3311'
 ht-degree: 0%
 
 ---
@@ -298,7 +298,9 @@ export ENV_VAR_NAME=my_value
 
 >[!CAUTION]
 >
->文本檔案必須命名 **server_password**  — 沒有副檔名。
+>不允許對文本檔案使用副檔名。
+>
+>因此，在上述範例中，文字檔案的名稱必須為 **server_password**  — 沒有副檔名。
 
 此 `org.apache.felix.configadmin.plugin.interpolation.secretsdir` 是Sling架構屬性；因此，此屬性未在felix console(/system/console)中設定，而是在系統引導時使用的sling.properties檔案中設定。 可在擷取的Jar/install資料夾(crx-quickstart/conf)的/conf子目錄中找到此檔案。
 
