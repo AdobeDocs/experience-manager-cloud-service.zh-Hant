@@ -2,7 +2,7 @@
 title: 個人化和內容鎖定
 description: 了解如何使用AEM建立個人化、目標式內容
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 635a9e577f03c865cdb31f539598fb8fe034d7b7
+source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 1%
@@ -38,9 +38,6 @@ AEM提供以下工具的架構：
 
 ### 選件 {#offer}
 
-<!-- not clear - needs clarification -->
-<!-- is an offer a personalized experience, or an activity? -->
-
 優惠方案是個人化體驗，通常可在有限的時段內使用。
 
 例如，範例網站的頁面可以使用選件作為預告影像，顯示在頁面頂端。 30歲以上的人和30歲以下的人會將不同的優惠方案視為體驗預告。
@@ -62,8 +59,6 @@ AEM提供以下工具的架構：
 * 定義特定對象（區段）與特定體驗的對應
 * 定義套用定位的時段
 * 識別 [目標引擎](#targeting-engine) 您的頁面使用
-
-<!-- an example for each of the two types would be good -->
 
 活動可以是個人化活動或A/B測試活動(在AEM和Adobe Target個人化工作流程的案例中)。
 
