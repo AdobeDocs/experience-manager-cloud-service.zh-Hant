@@ -2,9 +2,9 @@
 title: 個人化和內容鎖定
 description: 了解如何使用AEM建立個人化、目標式內容
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
+source-git-commit: f2466cb5cda759f0c97cd69810d208d47fb73b98
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1056'
 ht-degree: 1%
 
 ---
@@ -111,29 +111,32 @@ AEM提供以下工具的架構：
 
 ### AEM ContextHub {#aem-contexthub}
 
-AEM提供內建的定位引擎ContextHub，用於處理頁面請求並決定要顯示的內容。 使用AEM定位引擎時，您只能使用在AEM中建立的區段來定義體驗的對象。
+AEM提供內建的定位引擎 [ContextHub](/help/implementing/developing/personalization/contexthub.md) 處理頁面請求並決定要顯示的內容。 使用AEM定位引擎時，您只能使用在AEM中建立的區段來定義體驗的對象。
 
 ### Adobe Target {#adobe-target}
 
-Adobe Target定位引擎會使從頁面造訪收集到的資訊在Adobe Target中受到追蹤。
+此 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) 定位引擎會使從頁面造訪收集到的資訊在Adobe Target中受到追蹤。
 
 * 使用此定位引擎時，您會使用從Adobe Target匯入的區段來定義體驗的對象。
 * 使用Adobe Target引擎的活動包括 [已同步到Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
-若您有 [與Adobe Target整合](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+若您有 [與Adobe Target整合](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ## 如何設定您的個人化內容 {#how-to-setup-personalized-content}
 
 提供個人化內容需要各種步驟和定義：
 
-1. 將AEM與您的定位引擎整合。
+1. 設定您的定位引擎，方法為：
+
+   1. 設定 [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
+   1. 與整合 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
 1. 設定對象。
 
-   1. 根據您的定位引擎，定義對象或區段以及規則。
+   1. 根據您的定位引擎，定義 [目標對象](https://experienceleague.adobe.com/docs/target/using/audiences/target.html) 或 [ContextHub區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)，以及規則。
 
-1. 建立您的品牌和活動。
+1. 建立 [品牌與活動](/help/sites-cloud/authoring/personalization/activities.md).
 
 1. 製作您要向各種對象顯示的體驗選集。
 
-1. 將體驗鎖定在特定對象（區段），借此個人化這些體驗。
+1. 個人化這些體驗，方法為 [目標定位](/help/sites-cloud/authoring/personalization/targeted-content.md) 對特定對象（區段）的區段。
