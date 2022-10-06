@@ -2,7 +2,7 @@
 title: 從來源擷取內容
 description: 從來源擷取內容
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: a2e14d73fd6b8138799799c6408a0846224cd8c9
+source-git-commit: 509715eb6324a370e28d681111ee0fd3fa2a7b44
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 19%
@@ -35,7 +35,7 @@ ht-degree: 19%
    >[!IMPORTANT]
    >
    >請確定提取金鑰有效，且未接近其有效期。 如果快到到期日，您可以選取移轉集並按一下「屬性」，以續約提取金鑰。 按一下 **續約**. 這會帶您前往Cloud Acceleration Manager，您可在此按一下 **複製提取金鑰**. 每次您點按 **複製提取金鑰**，則會產生新的提取金鑰，自建立時起14天內有效。
-   >[!影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. 這會顯示提取對話方塊。 按一下 **Extract** 開始提取階段。
 
