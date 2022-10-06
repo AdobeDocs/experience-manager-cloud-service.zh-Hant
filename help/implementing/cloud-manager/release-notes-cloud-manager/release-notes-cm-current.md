@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service中Cloud Manager 2022.9.0發行說明
-description: 以下是AEM as a Cloud Service中Cloud Manager 2022.9.0的發行說明。
+title: Adobe Experience Manager as a Cloud Service中Cloud Manager 2022.10.0發行說明
+description: 以下是AEM 2022.10.0as a Cloud Service中的Cloud Manager發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4c04ab85f8760b9f72f7540b991edc7691995f66
+source-git-commit: a873b23f7dac8742820300ef154b94a72e4b8a23
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 2%
+source-wordcount: '207'
+ht-degree: 6%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service中Cloud Manager 2022.9.0發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service中Cloud Manager 2022.10.0發行說明 {#release-notes}
 
-本頁記錄AEM as a Cloud Service中Cloud Manager 2022.9.0的發行說明。
+本頁記錄AEM 2022.10.0as a Cloud Service中的Cloud Manager發行說明。
 
 >[!NOTE]
 >
@@ -21,16 +21,15 @@ ht-degree: 2%
 
 ## 發行日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager 2022.9.0版的發行日期為2022年9月8日。 下一版預計於2022年10月6日發行。
+AEMas a Cloud Service中Cloud Manager 2022.9.0版的發行日期為2022年10月6日。 下一版預計於2022年11月3日發行。
 
 ## 新增功能 {#what-is-new}
 
-* AEM指南現在可在沙箱方案上以自助方式設定。
-* 沒有任何Cloud Manager角色的客戶將無法存取計畫詳細資訊。 不過，他們可以從Cloud Manager登陸頁面導覽至「製作」端點。
-* 客戶可以設定 **事件和主動通知** 群組，以聽取與其AEMaaCS應用程式相關的事件或建議的Adobe。 請參閱 [通知的使用者群組](/help/journey-onboarding/user-groups.md) 以取得更多詳細資訊。
-* 當由於權限或權限相關原因而停用時，UI中新增方案可供支援會持續提供工具提示。
+* 版本 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) Cloud Manager使用的已更新至39版。
+* 如果Sites程式以AEMas a Cloud Service設定CDN，授權控制面板UI現在會通知使用者。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 「新增環境」工作流程包含其他驗證，以確保成功。
-* 改善當maven遇到私人回購的連線問題時，與客戶AEM應用程式建置相關的客戶意見。
+* 已修正無法將電子郵件地址中含有大寫字母的使用者新增至Cloud Manager中New Relic子帳戶的情況。
+* 如果程式中有多個解決方案，現在會顯示Screens解決方案。
+* 當環境的狀態為「更新」時，前端管道執行無法啟動的情況已得到修正。

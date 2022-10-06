@@ -1,15 +1,15 @@
 ---
-title: 授權控制面板
+title: 授權儀表板
 description: Cloud Manager提供控制面板，供您輕鬆檢視組織或租用戶可用的AEMaaCS產品權益。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
+source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 1%
+source-wordcount: '876'
+ht-degree: 2%
 
 ---
 
-# 授權控制面板 {#license-dashboard}
+# 授權儀表板 {#license-dashboard}
 
 Cloud Manager提供控制面板，供您輕鬆檢視組織或租用戶可用的AEMaaCS產品權益。
 
@@ -32,7 +32,7 @@ Cloud Manager授權控制面板可讓您輕鬆存取下列資訊：
 
 1. 在產品概觀頁面上，切換至 **授權** 標籤。
 
-![授權控制面板](assets/license-dashboard.png)
+![授權儀表板](assets/license-dashboard.png)
 
 控制面板分為三個區段，顯示您：
 
@@ -49,7 +49,7 @@ Cloud Manager授權控制面板可讓您輕鬆存取下列資訊：
 
 >[!TIP]
 >
->請參閱 [Admin Console概述](https://helpx.adobe.com/enterprise/using/admin-console.html) 了解如何透過Admin Console管理整個組織的Adobe權益。
+>請參閱 [Admin Console概述](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 了解如何透過Admin Console管理整個組織的Adobe權益。
 
 ## 常見問答 {#faq}
 
@@ -83,6 +83,10 @@ AEM也有排除知名機器人的規則，包括定期造訪網站的知名服�
 | 流量封鎖程式 | 在瀏覽器中使用追蹤器封鎖程式可能會選擇退出某些請求不予追蹤。 |
 | 防火牆 | 防火牆可能會封鎖Analytics追蹤。 這在公司防火牆中更常見。 |
 
+### 如果我想要進一步了解我的內容要求卷，該怎麼辦？ {#current-request-volumes}
+
+如果您想要進一步深入分析「授權控制面板」中顯示的內容要求量，您的Adobe團隊可提供報表，以顯示內容要求的最大數量驅動因素。 請洽詢您的Adobe團隊或Adobe客戶服務，以要求最常使用量報表。
+
 ### 如果我使用自己的CDN呢？ {#using-own-cdn}
 
-Cloud Manager中的內容請求控制面板不會顯示您自己CDN的追蹤。
+「授權控制面板」只會顯示Cloud ServiceCDN追蹤的資料。  如果您選擇自攜CDN(BYOCDN)，則會依照合約中的說明，每年向Adobe回報內容要求量。

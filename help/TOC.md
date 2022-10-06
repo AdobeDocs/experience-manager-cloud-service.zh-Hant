@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 05adf79b66c36e6354fe95fe4d5f654b49980589
+source-git-commit: 115c98b207d3dea89cbeb3dbc8559a81efefe461
 workflow-type: tm+mt
-source-wordcount: '3726'
-ht-degree: 41%
+source-wordcount: '3729'
+ht-degree: 42%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 41%
 # Experience Manager as a Cloud Service 說明 {#content}
 
 + [AEMaaCS首頁](/help/overview/home.md)
-+ 概覽 {#overview}
++ 總覽 {#overview}
    + [AEM as a Cloud Service 簡介](/help/overview/introduction.md)
    + [新增功能與不同之處](/help/overview/what-is-new-and-different.md)
    + [術語 - 雲端新功能](/help/overview/terminology.md)
@@ -53,7 +53,7 @@ ht-degree: 41%
          + [2021.3.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
          + [2021.2.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
          + [2021.1.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
-      + 2020年 {#2020}
+      + 2020 {#2020}
          + [2020.12.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
          + [2020.11.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-11-0.md)
          + [2020.10.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-10-0.md)
@@ -68,6 +68,7 @@ ht-degree: 41%
    + Cloud Manager發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022年 {#2022}
+         + [2022.9.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
          + [2022.8.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
          + [2022.7.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
          + [2022.6.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
@@ -722,8 +723,8 @@ ht-degree: 41%
       + [管理環境](/help/implementing/cloud-manager/manage-environments.md)
       + 管理程式碼 {#managing-code}
          + [Maven 專案版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [Cloud Manager中的存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
-         + [存取儲存庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [存放庫 在Cloud Manager中](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+         + [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [搭配Cloud Manager使用Git](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多個儲存庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企業開發團隊設定](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
@@ -732,7 +733,7 @@ ht-degree: 41%
          + [簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+         + [管理管道 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [部署程式碼](/help/implementing/cloud-manager/deploy-code.md)
       + 了解測試結果 {#test-results}
          + [總覽](/help/implementing/cloud-manager/overview-test-results.md)
@@ -742,7 +743,7 @@ ht-degree: 41%
          + [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [UI測試](/help/implementing/cloud-manager/ui-testing.md)
       + [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md)
-      + [SLA報告](/help/implementing/cloud-manager/sla-reporting.md)
+      + [SLA 報告](/help/implementing/cloud-manager/sla-reporting.md)
       + [新遺跡一號](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + SSL憑證 {#manage-ssl-certificates}
@@ -762,8 +763,8 @@ ht-degree: 41%
          + [新增IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
          + [套用和取消套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [管理IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
-      + [授權控制面板](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Cloud Manager常見問題集](/help/implementing/cloud-manager/faqs.md)
+      + [授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)
+      + [Cloud Manager 常見問題集](/help/implementing/cloud-manager/faqs.md)
    + 為 AEM as a Cloud Service 開發 {#developing}
       + [AEM 專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 專案存放庫結構套件](/help/implementing/developing/introduction/repository-structure-package.md)
