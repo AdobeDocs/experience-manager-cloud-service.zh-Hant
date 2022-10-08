@@ -2,10 +2,10 @@
 title: AEM 專案結構
 description: 了解如何定義部署至Adobe Experience ManagerCloud Service的套件結構。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2930'
-ht-degree: 13%
+source-wordcount: '2931'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 13%
 
 AEM應用程式部署必須由單一AEM套件組成。 此程式包又應包含子程式包，這些子程式包包括應用程式運行所需的所有內容，包括代碼、配置和任何支援的基準內容。
 
-AEM需要分離內 **容和程式碼** ，這表示單一內容套件 **無法**&#x200B;部署至 ********`/apps` Runtime可寫區域 (例如，可寫區域)。`/content`、 `/conf`、 `/home`或其他非 `/apps`)。而應用程式必須將程式碼和內容分隔為獨立套件，以便部署至AEM。
+AEM需要分離 **內容** 和 **代碼**，表示單一內容套件 **不能** 部署至 **both** `/apps` 和運行時可寫區域(例如， `/content`, `/conf`, `/home`或其他 `/apps`)。 而應用程式必須將程式碼和內容分隔為獨立套件，以便部署至AEM。
 
 本檔案中概述的套件結構與本機開 **發部署** 和AEM cloud服務部署都相容。
 

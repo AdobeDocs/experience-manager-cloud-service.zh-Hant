@@ -2,10 +2,10 @@
 title: WCAG 2.1 快速指南
 description: WCAG 2.1 快速指南
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 100%
+source-wordcount: '1776'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ WCAG 2.1 的專用技術闡明於《[Techniques for WCAG 2.1](https://www.w3.org
 
 在 WCAG 2.1 階層中，**技術**&#x200B;層級僅在成功標準之下。WAI 將技巧歸類為資訊，而非基準。換言之，要讓資源遵循 WCAG 2.1，並不需要按照某項特定技術操作。
 
-因為技術比成功標準更具體，通常指涉特定技術或內容類型 (例如 HTML 或影片) 或情境 (例如電子商務或電子學習應用程式)。您可以將技術視為達成特定指引和成功標準的實證範例，因此對於在特定情境下作業的作者和開發人員很有幫助。
+由於技術比成功標準更具體，因此通常是指特定技術或內容類型(例如HTML或視訊)或情況（例如電子商務或電子學習應用程式）。 您可以將技術視為達成特定指引和成功標準的實證範例，因此對於在特定情境下作業的作者和開發人員很有幫助。
 
 技術可透過以下來源存取：
 

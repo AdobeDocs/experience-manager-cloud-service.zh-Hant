@@ -2,9 +2,9 @@
 title: 發佈頁面
 description: 如何使用AEM發佈和取消發佈頁面
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 5a804895013e19592f918341bbc7921261b26945
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1812'
 ht-degree: 6%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 6%
    * 這些詞語等同於發佈/取消發佈。
    * 這些詞語用於舊版AEM。
 * **複製/複製**
-   * 這些技術術語說明當您發佈頁面時，資料（例如頁面內容、檔案、程式碼、使用者註解）在不同環境間的移動。
+   * 這些技術術語說明在您發佈頁面時，資料（例如頁面內容、檔案、程式碼、使用者註解）從一個環境移動至另一個環境。
    * 這些術語主要由開發人員使用。
 
 ## 發佈頁面 {#publishing-pages-1}

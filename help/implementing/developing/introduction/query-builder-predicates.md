@@ -2,9 +2,9 @@
 title: 查詢產生器述詞參考
 description: 查詢產生器API的述詞參考。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2221'
 ht-degree: 1%
 
 ---
@@ -265,7 +265,7 @@ group.2_group.type=dam:Asset
    * `equals` 完全相符（預設）
    * `unequals` 不等式比較
    * `like` 用於 `jcr:like` xpath函式（可選）
-   * `not` 不符合(例如 `not(@prop)` 在xpath中，值參數將被忽略)
+   * `not` 若不相符(例如 `not(@prop)` 在xpath中，值參數將被忽略)
    * `exists` 存在檢查
       * `true` 屬性必須存在
       * `false` 與相同 `not` 和是預設值

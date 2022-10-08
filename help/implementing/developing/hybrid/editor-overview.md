@@ -2,9 +2,9 @@
 title: SPA編輯器概述
 description: 本文提供SPA Editor的完整概述，以及其運作方式，包括SPA Editor在AEM中互動的詳細工作流程。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: c7759e390d9ea6c2196c9f6c895232c4e75c6d23
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1636'
 ht-degree: 0%
 
 ---
@@ -171,7 +171,7 @@ SPA Editor SDK支援下列最低版本：
 如果要使用在SPA中建立之文字元件的就地編輯器，則需要其他設定。
 
 1. 在包含文字HTML的容器包裝元素上設定屬性（可以是任何屬性）。 若為WKND SPA專案，此 `<div>` 元素和已使用的選取器 `data-rte-editelement`.
-1. 設定 `editElementQuery` 對應AEM文字元件的 `cq:InplaceEditingConfig` 指向該選取器，例如 `data-rte-editelement`. 這可讓編輯者知道哪個HTML元素會包裝HTML文字。
+1. 設定 `editElementQuery` 對應AEM文字元件的 `cq:InplaceEditingConfig` 例如指向該選取器， `data-rte-editelement`. 這可讓編輯者知道哪個HTML元素會包裝HTML文字。
 
 如需 `editElementQuery` rtf編輯器的屬性和設定，請參閱 [設定RTF編輯器。](/help/implementing/developing/extending/rich-text-editor.md)
 

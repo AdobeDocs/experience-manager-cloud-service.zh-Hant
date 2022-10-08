@@ -2,9 +2,9 @@
 title: 在AEM應用程式中建立標籤
 description: 以程式設計方式使用標籤，或在自訂AEM應用程式中擴充標籤
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---

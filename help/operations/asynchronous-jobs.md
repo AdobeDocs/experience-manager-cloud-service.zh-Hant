@@ -2,10 +2,10 @@
 title: 非同步作業
 description: Adobe Experience Manager 能以非同步方式完成部分耗用大量資源的工作，實現效能最佳化。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 100%
+source-wordcount: '886'
+ht-degree: 98%
 
 ---
 
@@ -101,7 +101,7 @@ AEM 每天 01:00 會執行清除作業，將超過一天的已完成非同步作
 
    ![資產刪除臨界值](assets/async-delete-threshold.png)
 
-1. 勾選&#x200B;**「啟用電子郵件通知」**&#x200B;選項，接收此作業狀態的電子郵件通知，例如成功、失敗。
+1. 勾選&#x200B;**「啟用電子郵件通知」**&#x200B;選項，接收此作業狀態的電子郵件通知，例如，成功、失敗。
 1. 儲存變更。
 
 ### 設定非同步資產移動操作 {#configuring-asynchronous-move-operations}
@@ -114,7 +114,7 @@ AEM 每天 01:00 會執行清除作業，將超過一天的已完成非同步作
 
    ![資產移動臨界值](assets/async-move-threshold.png)
 
-1. 勾選&#x200B;**「啟用電子郵件通知」**&#x200B;選項，接收此作業狀態的電子郵件通知，例如成功、失敗。
+1. 勾選&#x200B;**「啟用電子郵件通知」**&#x200B;選項，接收此作業狀態的電子郵件通知，例如，成功、失敗。
 1. 儲存變更。
 
 ### 設定非同步頁面移動操作 {#configuring-asynchronous-page-move-operations}
@@ -127,14 +127,14 @@ AEM 每天 01:00 會執行清除作業，將超過一天的已完成非同步作
 
    ![頁面移動臨界值](assets/async-page-move.png)
 
-1. 勾選&#x200B;**「啟用電子郵件通知」**&#x200B;選項，接收此作業狀態的電子郵件通知，例如成功、失敗。
+1. 勾選&#x200B;**「啟用電子郵件通知」**&#x200B;選項，接收此作業狀態的電子郵件通知，例如，成功、失敗。
 1. 儲存變更。
 
 ### 設定非同步 MSM 操作 {#configuring-asynchronous-msm-operations}
 
 1. 在「全域導覽」中，按一下&#x200B;**[!UICONTROL 「工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web 主控台」]**。
 1. 在 Web 主控台中，開啟&#x200B;**[!UICONTROL 「非同步頁面移動操作作業處理設定」]**。
-1. 勾選&#x200B;**「啟用電子郵件通知」**&#x200B;選項，接收此作業狀態的電子郵件通知，例如成功、失敗。
+1. 勾選&#x200B;**「啟用電子郵件通知」**&#x200B;選項，接收此作業狀態的電子郵件通知，例如，成功、失敗。
 
    ![MSM 設定](assets/async-msm.png)
 

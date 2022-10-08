@@ -2,9 +2,9 @@
 title: SPA Blueprint
 description: 本檔案說明任何SPA架構在AEM中實作可編輯SPA元件時，都應履行的一般、獨立於架構合約。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2057'
 ht-degree: 0%
 
 ---

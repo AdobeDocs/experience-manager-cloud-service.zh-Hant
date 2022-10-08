@@ -2,9 +2,9 @@
 title: 導覽至Screens Services Provider
 description: 本頁面說明如何導覽至Screens Services Provider。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 9e43db0fdd55e396de2cf737e1d79bd06a1835e4
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '266'
 ht-degree: 3%
 
 ---

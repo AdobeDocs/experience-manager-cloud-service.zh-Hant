@@ -2,7 +2,7 @@
 title: 記錄AEMas a Cloud Service
 description: 了解如何使用AEMas a Cloud Service記錄功能，為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 437c6b3bcd331bf385f2845bfdb0be656a57488e
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 2%
@@ -554,7 +554,7 @@ Apache層記錄檔（包括Dispatcher）位於Docker容器中，該容器保有D
 * Splunk埠
 * Splunk HEC代號。 請參閱 [本頁](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) 以取得更多資訊。
 
-應為每個相關程式/環境類型組合指定上述屬性。  例如，如果客戶想要開發、測試和生產環境，他們應提供三組資訊，如下所示。
+應為每個相關程式/環境類型組合指定上述屬性。 例如，如果客戶想要開發、測試和生產環境，他們應提供三組資訊，如下所示。
 
 >[!NOTE]
 >

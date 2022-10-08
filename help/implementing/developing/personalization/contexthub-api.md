@@ -2,9 +2,9 @@
 title: ContextHub Javascript API參考資料
 description: 將ContextHub元件新增至頁面時，您的指令碼即可使用ContextHub Javascript API
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '4621'
+source-wordcount: '4622'
 ht-degree: 2%
 
 ---

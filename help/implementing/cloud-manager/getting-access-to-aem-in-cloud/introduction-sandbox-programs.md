@@ -2,9 +2,9 @@
 title: 沙箱方案簡介
 description: 了解哪些沙箱方案與生產方案有何不同。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 05cba12cdd14c2e29f6a471047ce95fcf720abc4
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '438'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 ### 無高級網路 {#advanced-networking}
 
-[高級網路功能](/help/security/configuring-advanced-networking.md) （例如VPN的自助配置、非標準埠、專用的輸出IP地址等） 沙箱方案中無法使用。
+[高級網路功能](/help/security/configuring-advanced-networking.md) （例如，自助配置VPN、非標準埠、專用輸出IP地址等） 沙箱方案中無法使用。
 
 ### 手動更新AEM {#updates}
 

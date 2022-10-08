@@ -4,7 +4,7 @@ description: 了解如何準備翻譯內容。
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 0%
@@ -71,7 +71,7 @@ ht-degree: 0%
 * `<language-code>`  — 支援的語言代碼是ISO-639-1所定義的雙字母代碼，例如 `en`.
 * `<language-code>_<country-code>` 或 `<language-code>-<country-code>`  — 支援的國家/地區代碼是ISO 3166定義的小寫或大寫雙字母代碼，例如 `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-您可以根據您為全域網站選擇的結構，使用任一格式。  例如， WKND網站的法文語言副本的根頁面具有 `fr` 作為 **名稱** 屬性。 請注意， **名稱** 屬性會作為存放庫中頁面節點的名稱，因此會決定頁面的路徑(`http://<host>:<4502>/content/wknd/language-masters/fr.html`)。
+您可以根據您為全域網站選擇的結構，使用任一格式。 例如， WKND網站的法文語言副本的根頁面具有 `fr` 作為 **名稱** 屬性。 請注意， **名稱** 屬性會作為存放庫中頁面節點的名稱，因此會決定頁面的路徑(`http://<host>:<4502>/content/wknd/language-masters/fr.html`)。
 
 1. 導覽至網站。
 1. 按一下或點選您要建立語言副本的網站。

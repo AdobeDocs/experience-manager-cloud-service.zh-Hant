@@ -2,9 +2,9 @@
 title: 頁面編輯的鍵盤快速鍵
 description: AEM提供各種鍵盤快速鍵，包括一些用於頁面編輯
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ AEM提供各種鍵盤快速鍵。 有些可套用於編輯頁面，有些則套�
 
 | 位置 | 快速鍵 | 說明 |
 |---|---|---|
-| 任何編輯窗口模式 | `Ctrl-Shift-m` | 切換 **預覽** 和目前選取的 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (例如 **編輯**, **版面**,etc)* |
+| 任何編輯窗口模式 | `Ctrl-Shift-m` | 切換 **預覽** 和目前選取的 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (例如， **編輯**, **版面**,etc)* |
 | **編輯** 模式 | `Ctrl-z` | [撤消上次更改](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [取消上次更改](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 選擇多個段落 |

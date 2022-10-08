@@ -4,9 +4,9 @@ description: 了解由Adobe工程和諮詢團隊編譯的最佳實務，以協�
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1434'
 ht-degree: 0%
 
 ---

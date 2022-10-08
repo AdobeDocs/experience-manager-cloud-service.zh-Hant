@@ -3,9 +3,9 @@ title: 簡介和概述
 description: 內容與商務的簡介和概述。 Experience Manager商務整合架構(CIF)是Adobe的建議模式，可將Adobe Commerce及其他第三方商務解決方案的商務服務與Experience Cloud整合及延伸。
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '895'
 ht-degree: 1%
 
 ---

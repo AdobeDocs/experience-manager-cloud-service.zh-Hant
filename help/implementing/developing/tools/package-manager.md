@@ -4,9 +4,9 @@ description: 了解AE的基本知識；使用套件管理器進行套件管理�
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3584'
+source-wordcount: '3585'
 ht-degree: 1%
 
 ---

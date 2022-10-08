@@ -2,10 +2,10 @@
 title: 企業 DevOps
 description: 了解輕鬆部署、簡化共同作業所需的程序、方法和溝通方式。
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: 98eaa1390e499f48bb1a615e21b2dfb7a0523c57
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 100%
+source-wordcount: '1002'
+ht-degree: 97%
 
 ---
 
@@ -108,7 +108,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 通常由多個環境組成，
 * 然後在預備環境中再次測試
 * 此時，才可以將程式碼部署至生產環境
 
-通常會透過在不同內容存放庫間匯出和匯入封裝，來轉移程式碼 (例如自訂的 Web 應用程式功能和設計範本)。這代表可以將此複寫設定為自動程序。
+通常會透過在不同內容存放庫之間匯出和匯入套件，來轉移程式碼（例如自訂的Web應用程式功能和設計範本）。 這代表可以將此複寫設定為自動程序。
 
 AEM as a Cloud Service 專案通常以下列方式觸發程式碼部署：
 

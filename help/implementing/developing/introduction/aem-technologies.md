@@ -2,9 +2,9 @@
 title: AEM技術基礎
 description: 概述AEM的技術基礎，包括AEM的結構方式和基本技術（例如JCR、Sling和OSGi）。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2191'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ AEM是使用 [Sling](https://sling.apache.org/site/index.html)，此Web應用程
 Sling是 *以內容為中心*. 這表示處理作業會聚焦在內容上，因為每個(HTTP)請求會以JCR資源（存放庫節點）的形式對應至內容：
 
 * 第一個目標是保留內容的資源（JCR節點）
-* 其次，表示或指令碼是結合請求的特定部分（例如選取器和/或擴充功能）從資源屬性中找到
+* 其次，表示法或指令碼是結合請求的某些部分（例如選取器和/或擴充功能）從資源屬性中找到
 
 ### RESTful Sling {#restful-sling}
 
@@ -123,8 +123,8 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 會劃分要求並擷取必要資訊。 系統會搜索所請求的資源（內容節點）:
 
-* 第一個Sling會檢查節點是否存在於要求中指定的位置；例如 `../content/corporate/jobs/developer.html`
-* 如果未找到節點，則刪除擴展並重複搜索；例如 `../content/corporate/jobs/developer`
+* 第一個Sling會檢查節點是否存在於要求中指定的位置；例如， `../content/corporate/jobs/developer.html`
+* 如果未找到節點，則刪除擴展並重複搜索；例如， `../content/corporate/jobs/developer`
 * 如果找不到節點，Sling會傳回http程式碼404（找不到）。
 
 Sling也允許JCR節點以外的其他項目成為資源，但這是進階功能。

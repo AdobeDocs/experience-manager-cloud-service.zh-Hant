@@ -2,9 +2,9 @@
 title: 設定帳戶環境
 description: AEM可讓您設定帳戶，以及製作環境的某些方面
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '490'
 ht-degree: 10%
 
 ---
@@ -67,7 +67,7 @@ AEM可讓您設定帳戶，以及製作環境的某些方面。
 
 * **相對日期顯示**
 
-   為了改善可讀性，AEM會將過去七天內的日期轉譯為相對日期（例如三天前），並將舊日期轉譯為確切日期（例如2017年3月20日）。
+   為了改善可讀性，AEM會將過去七天內的日期轉譯為相對日期（例如三天前），並將較舊日期轉譯為確切日期（例如2017年3月20日）。
 
    此選項會定義系統中日期的顯示方式。 可使用下列選項：
 

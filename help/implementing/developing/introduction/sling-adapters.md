@@ -2,9 +2,9 @@
 title: 使用 Sling 介面卡
 description: Sling提供適配器模式，可方便轉換實作可適應介面的物件
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2221'
 ht-degree: 1%
 
 ---
@@ -121,7 +121,7 @@ Node node = resource.adaptTo(Node.class);
   </tr>
   <tr>
    <td><a href="https://sling.apache.org/apidocs/sling5/org/apache/sling/api/scripting/SlingScript.html">SlingScript</a></td>
-   <td>如果此資源是指令碼（例如jsp檔案），且指令碼引擎已使用sling進行註冊。</td>
+   <td>如果此資源是指令碼（例如jsp檔案），且指令碼引擎已用sling註冊。</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/products/servlet/2.2/javadoc/javax/servlet/Servlet.html">Servlet</a></td>

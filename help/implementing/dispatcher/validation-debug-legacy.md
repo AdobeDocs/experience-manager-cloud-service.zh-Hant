@@ -4,10 +4,10 @@ description: 使用Dispatcher工具（舊版）進行驗證和除錯
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '2342'
-ht-degree: 1%
+source-wordcount: '2345'
+ht-degree: 0%
 
 ---
 
@@ -270,7 +270,7 @@ Phase 3 finished
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-或者，您也可以包含 **這些檔案的預設版本** ，其名稱會以字詞 `default_`為前置詞，例如。`../filters/default_filters.any`。
+或者，您也可以包含 **預設** 這些檔案的版本，其名字前面加上 `default_`，例如 `../filters/default_filters.any`.
 
 **包含位於(...)的語句，位於任何已知位置之外：...**
 
@@ -289,7 +289,7 @@ Phase 3 finished
 
 **篩選不得使用全域模式以允許請求**
 
-允許的要求具有 `/glob` 樣式規則，此規則與完整的請求行相符，例如
+允許的要求具有 `/glob` 樣式規則，此規則會與完整的請求行相符，例如
 
 ```
 /0100 {

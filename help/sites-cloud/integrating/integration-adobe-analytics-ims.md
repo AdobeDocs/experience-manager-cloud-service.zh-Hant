@@ -2,9 +2,9 @@
 title: IMS設定，以在與Adobe Analytics整合時使用
 description: 了解與Adobe Analytics整合時可使用的IMS設定
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '894'
 ht-degree: 2%
 
 ---
@@ -151,7 +151,7 @@ ht-degree: 2%
 1. 您可以在此處使用 [Adobe Developer Console中專案設定的詳細資訊](#details-stored-for-the-ims-integration-project):
 
    * **標題**:你的簡訊。
-   * **授權伺服器**:複製/貼上 `aud` 行 **裝載** 一節，例如 `https://ims-na1.adobelogin.com` 在以下範例中
+   * **授權伺服器**:複製/貼上 `aud` 行 **裝載** 以下章節為例， `https://ims-na1.adobelogin.com` 在以下範例中
    * **API金鑰**:從 **憑證** 區段 [專案概述](#details-stored-for-the-ims-integration-project)
    * **用戶端密碼**:在 [服務帳戶(JWT)區段的用戶端密碼標籤](#details-stored-for-the-ims-integration-project)，並複製
    * **裝載**:從 [生成服務帳戶(JWT)部分的JWT頁簽](#details-stored-for-the-ims-integration-project)

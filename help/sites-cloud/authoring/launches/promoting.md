@@ -2,9 +2,9 @@
 title: 提升啟動
 description: 發佈前，您必須促銷啟動頁面，才能將內容移回來源（生產）。
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '818'
 ht-degree: 5%
 
 ---

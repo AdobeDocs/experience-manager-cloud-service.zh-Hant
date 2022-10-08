@@ -2,9 +2,9 @@
 title: Repository Modernizer
 description: Repository Modernizer
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '300'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ Repository Modernizer會建立下列部署結構，以建立相容的AEM Cloud S
 
 * `ui.apps` 包部署 `/apps` 並包含所有程式碼
 
-* `ui.content` 包部署到運行時可寫區域(例如 `/content`, `/conf`, `/home`或其他 `/apps`)和包含所有內容和設定。
+* `ui.content` 包部署到運行時可寫區域(例如， `/content`, `/conf`, `/home`或其他 `/apps`)和包含所有內容和設定。
 
 * `all` 包是包含子包的容器包 `ui.apps` 和 `ui.content`.
 

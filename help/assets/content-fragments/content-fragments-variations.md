@@ -2,9 +2,9 @@
 title: 變數 — 編寫片段內容（資產 — 內容片段）
 description: 了解變異如何讓您在AEM中的無頭式內容更有彈性，方法是允許您為片段製作內容，然後根據目的建立該內容的變異。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2286'
+source-wordcount: '2288'
 ht-degree: 12%
 
 ---

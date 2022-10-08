@@ -2,9 +2,9 @@
 title: 部署程式碼
 description: 了解如何在AEMas a Cloud Service中使用Cloud Manager管道部署程式碼。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: cb08fcbd6c1060466ca9e6b4639774d43b70c83c
+source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1221'
 ht-degree: 16%
 
 ---

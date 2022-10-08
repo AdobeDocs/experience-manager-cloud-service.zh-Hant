@@ -2,9 +2,9 @@
 title: AEM中使用React的SPA快速入門
 description: 本文提供範例SPA應用程式，說明其組合方式，並可讓您使用React架構快速上手並執行自己的SPA。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1144'
 ht-degree: 2%
 
 ---

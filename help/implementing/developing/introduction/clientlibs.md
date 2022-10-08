@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service上使用用戶端程式庫
 description: AEM提供用戶端程式庫資料夾，可讓您將用戶端程式碼(clientlibs)儲存在存放庫中、將其組織為類別，以及定義將每個類別的程式碼提供給用戶端的時間和方式
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2566'
 ht-degree: 1%
 
 ---
@@ -348,5 +348,5 @@ compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advance
 1. 尋找和編輯 **AdobeGraniteHTML程式庫管理員**.
 1. 啟用 **Minify** 選項（如果尚未啟用）。
 1. 設定值 **JS處理器預設配置** to `min:gcc`.
-   * 如果以分號(例如 `min:gcc;obfuscate=true`.
+   * 如果以分號分隔，則可傳遞選項，例如 `min:gcc;obfuscate=true`.
 1. 按一下 **儲存** 以儲存變更。

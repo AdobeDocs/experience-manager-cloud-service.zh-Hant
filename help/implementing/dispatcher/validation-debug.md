@@ -3,10 +3,10 @@ title: 使用Dispatcher工具進行驗證和除錯
 description: 使用Dispatcher工具進行驗證和除錯
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '2690'
-ht-degree: 1%
+source-wordcount: '2693'
+ht-degree: 0%
 
 ---
 
@@ -281,7 +281,7 @@ Phase 3 finished
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-或者，您也可以包含 **這些檔案的預設版本** ，其名稱會以字詞 `default_`為前置詞，例如。`../filters/default_filters.any`。
+或者，您也可以包含 **預設** 這些檔案的版本，其名字前面加上 `default_`，例如 `../filters/default_filters.any`.
 
 **包含位於(...)的語句，位於任何已知位置之外：...**
 
@@ -300,7 +300,7 @@ Phase 3 finished
 
 **篩選不得使用全域模式以允許請求**
 
-允許的要求具有 `/glob` 樣式規則，此規則與完整的請求行相符，例如
+允許的要求具有 `/glob` 樣式規則，此規則會與完整的請求行相符，例如
 
 ```
 /0100 {
@@ -340,7 +340,7 @@ Include conf.d/includes/mynewdirectory/myincludefile.conf
 
 此訊息指出您的設定已棄用第1版配置，包含完整的Apache設定和具有 `ams_` 前置詞。 雖然回溯相容性仍支援此功能，但您應切換至新版面。
 
-請注意，第一階段也可以 **單獨運行**，而非來自包裝函式 `validate.sh` 指令碼。
+請注意，第一階段也可 **單獨運行**，而非來自包裝函式 `validate.sh` 指令碼。
 
 當對你的瑪文藏物或 `dispatcher/src` 子目錄，它會報告驗證失敗：
 

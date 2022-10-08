@@ -2,9 +2,9 @@
 title: 使用隱藏條件
 description: 隱藏條件可用來判斷元件資源是否已呈現。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '615'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 定義隱藏運算式時請記住：
 
-* 為了有效，應表示找到屬性的範圍(例如 `cqDesign.myProperty`)。
+* 為了有效，應表示找到屬性的範圍(例如， `cqDesign.myProperty`)。
 * 值為唯讀。
 * 函式（如有需要）應限於服務提供的指定集。
 

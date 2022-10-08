@@ -4,9 +4,9 @@ description: 了解Adobe Experience Manager(AEM)as a Cloud Service中的內容�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2109'
 ht-degree: 3%
 
 ---

@@ -2,9 +2,9 @@
 title: 為查詢產生器實作自訂述詞求值器
 description: AEM中的查詢產生器提供簡單且可自訂的方式，可查詢內容存放庫
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 謂語求值器處理某些謂語的求值，這些謂語是查詢的定義約束。
 
-它會對應更高層級的搜尋限制(例如 `width>200`)至符合實際內容模型的特定JCR查詢(例如 `metadata/@width > 200`)。 或者，它可以手動篩選節點並檢查其限制。
+它會對應更高層級的搜尋限制(例如 `width>200`)，以符合實際內容模型(例如 `metadata/@width > 200`)。 或者，它可以手動篩選節點並檢查其限制。
 
 >[!TIP]
 >

@@ -2,9 +2,9 @@
 title: IMS設定，以在與Adobe Target整合時使用
 description: 了解與Adobe Target整合時可使用的IMS設定
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '860'
 ht-degree: 2%
 
 ---
@@ -161,7 +161,7 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
 1. 您可以在此處使用 [Adobe Developer Console中專案設定的詳細資訊](#details-stored-for-the-ims-integration-project):
 
    * **標題**:你的簡訊。
-   * **授權伺服器**:複製/貼上 `aud` 行 **裝載** 一節，例如 `https://ims-na1.adobelogin.com` 在以下範例中
+   * **授權伺服器**:複製/貼上 `aud` 行 **裝載** 以下章節為例， `https://ims-na1.adobelogin.com` 在以下範例中
    * **API金鑰**:從專案複製此內容 [概述](#details-stored-for-the-ims-integration-project) 節
    * **用戶端密碼**:在專案中產生此項目 [概述](#details-stored-for-the-ims-integration-project) 節，並複製
    * **裝載**:從 [產生JWT](#details-stored-for-the-ims-integration-project) 節

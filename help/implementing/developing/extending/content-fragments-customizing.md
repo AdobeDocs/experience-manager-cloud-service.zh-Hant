@@ -2,9 +2,9 @@
 title: 自訂和擴充內容片段
 description: 內容片段會延伸標準資產。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1811'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 1%
    * 元素資料儲存在主子節點下：
       `jcr:content/data/master`
 
-   * 變數儲存在帶有變數名稱的子節點下：例如 `jcr:content/data/myvariation`
+   * 變數儲存在帶有變數名稱的子節點下：例如， `jcr:content/data/myvariation`
 
    * 每個元素的資料作為具有元素名稱的屬性儲存在相應的子節點中：例如，元素的內容 `text` 儲存為屬性 `text` on `jcr:content/data/master`
 
@@ -180,7 +180,7 @@ ht-degree: 1%
 
    該介面提供您以下方法：
 
-   * 管理基本資料(例如取得名稱；get/set title/description)
+   * 管理基本資料(例如，獲取名稱；get/set title/description)
    * 存取中繼資料
    * 存取元素：
 

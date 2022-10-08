@@ -2,9 +2,9 @@
 title: 在AEM中編輯外部SPA
 description: 本檔案說明將獨立SPA上傳至AEM執行個體、新增可編輯的內容區段及啟用編寫的建議步驟。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2401'
+source-wordcount: '2402'
 ht-degree: 0%
 
 ---
@@ -245,7 +245,7 @@ mvn clean install -PautoInstallSinglePackage
 
 ![text20節點](assets/external-spa-text20-node.png)
 
-#### 需求和限制 {#limitations}
+#### 要求和限制 {#limitations}
 
 添加虛擬葉元件有許多要求，也有一些限制。
 
@@ -284,7 +284,7 @@ mvn clean install -PautoInstallSinglePackage
 
 您現在可以根據作者的要求，將更多元件和內容新增至容器，而且這些變更將持續存在。
 
-#### 需求和限制 {#container-limitations}
+#### 要求和限制 {#container-limitations}
 
 新增虛擬容器有許多需求，以及一些限制。
 

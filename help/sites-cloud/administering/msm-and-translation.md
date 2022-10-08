@@ -4,9 +4,9 @@ description: 了解如何在專案中重複使用內容，以及在AEM中管理�
 feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---

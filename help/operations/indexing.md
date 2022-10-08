@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2255'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 1%
 
 * 索引定義本身(例如 `/oak:index/ntBaseLucene-custom-1`)
 
-要部署自定義或自定義索引，請使用索引定義(`/oak:index/definitionname`)需要透過 `ui.apps` 透過Git和Cloud Manager部署程式。 在FileVault篩選器中，例如 `ui.apps/src/main/content/META-INF/vault/filter.xml`，分別列出每個自訂和自訂索引，例如 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 然後，自訂/自訂索引定義本身將儲存在檔案中 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`，如下所示：
+要部署自定義或自定義索引，請使用索引定義(`/oak:index/definitionname`)需要透過 `ui.apps` 透過Git和Cloud Manager部署程式。 例如，在FileVault篩選器中， `ui.apps/src/main/content/META-INF/vault/filter.xml`，分別列出每個自訂和自訂索引，例如 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 然後，自訂/自訂索引定義本身將儲存在檔案中 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`，如下所示：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

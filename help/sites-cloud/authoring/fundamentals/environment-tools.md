@@ -2,10 +2,10 @@
 title: 製作環境和工具
 description: AEM的製作環境提供多種機制，可組織及編輯您的內容
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 13%
+source-wordcount: '2157'
+ht-degree: 12%
 
 ---
 
@@ -230,7 +230,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
 ## 事件 — 時間軸 {#events-timeline}
 
-適當資源(例如 **網站** 主控台，或來自 **資產** 控制台) [時間軸可用來顯示任何所選項目上最近的活動](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
+若是適當的資源(例如， **網站** 主控台，或來自 **資產** 控制台) [時間軸可用來顯示任何所選項目上最近的活動](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
 開啟所需的主控台，然後導覽至所需資源並開啟 **時間表**，使用：
 
@@ -282,7 +282,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 >* 根據頁面的特性，某些模式可能無法使用。
 >* 存取某些模式需要適當的權限/權限。
 >* 由於空間限制，行動裝置上無法使用開發人員模式。
->* 有一個鍵 [盤](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`可切換 **)，在「預覽」和目前選取的模式之間切換(例如，「編輯」、「排版**********」等)。
+>* 有 [鍵盤快捷鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`)切換 **預覽** 和目前選取的模式(例如 **編輯**, **版面**&#x200B;等)。
 >
 
 

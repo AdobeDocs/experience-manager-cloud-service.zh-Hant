@@ -3,9 +3,9 @@ title: 將Dispatcher設定從AMS移轉至AEMas a Cloud Service
 description: 將Dispatcher設定從AMS移轉至AEMas a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1447'
 ht-degree: 14%
 
 ---
@@ -105,7 +105,7 @@ $ validator httpd .
 
 ### 重新命名伺服器陣列檔案
 
-所有農場 `conf.d/enabled_farms` 必須重新命名以符合模式 `*.farm`，例如，伺服器陣列檔案，稱為 `customerX_farm.any` 應重新命名 `customerX.farm`.
+所有農場 `conf.d/enabled_farms` 必須重新命名以符合模式 `*.farm`，因此，例如，伺服器陣列檔案稱為 `customerX_farm.any` 應重新命名 `customerX.farm`.
 
 ### 檢查快取
 

@@ -4,9 +4,9 @@ description: 了解內容片段的相關內容功能如何為要（選擇性）�
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '244'
 ht-degree: 6%
 
 ---

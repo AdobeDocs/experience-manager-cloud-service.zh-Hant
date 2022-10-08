@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
@@ -116,7 +116,7 @@ ht-degree: 1%
 生產設定可能有多方面差異。
 
 * 您可以有單一同盟的GraphQL端點，此端點結合AEM和Adobe Commerce GraphQL資料，而非自訂Apollo用戶端。
-* 您的PWA Studio應用程式可以直接使用AEM GraphQL端點URL，不需要具有UPPRASH的代理。 也可以將代理移至不同層（例如CDN）。
+* 您的PWA Studio應用程式可以直接使用AEM GraphQL端點URL，不需要具有UPPRASH的代理。 也可以將代理移至不同的層（例如CDN）。
 * 哪種方法最適合您，還取決於您如何將PWA Studio應用程式提供給最終用戶。
 
 此擴充功能提供兩個範例。

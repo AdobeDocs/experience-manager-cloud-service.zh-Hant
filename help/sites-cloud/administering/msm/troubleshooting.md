@@ -4,9 +4,9 @@ description: 了解如何疑難排解最常見的MSM相關問題，並取得最�
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ MSM同步動作可高度設定。 轉出期間修改的屬性或元件直接取�
 
 ### 為何會看到尾碼為「_msm_moved」的Live Copy頁面？ {#moved-pages}
 
-如果Blueprint頁面已推出，它會更新其「即時副本」頁面，或在尚未存在時建立新的「即時副本」頁面（例如首次推出或手動刪除「即時副本」頁面）。
+如果Blueprint頁面已推出，它會更新其「即時副本」頁面，或如果尚未存在新的「即時副本」頁面（例如，首次推出或手動刪除「即時副本」頁面時）。
 
 但在後一種情況下，如果頁面沒有 `cq:LiveRelationship` 屬性存在且名稱相同，因此在建立Live Copy頁面之前，此頁面會據此重新命名。
 

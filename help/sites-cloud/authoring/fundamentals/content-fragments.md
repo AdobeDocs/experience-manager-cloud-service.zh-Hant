@@ -2,9 +2,9 @@
 title: 內容片段
 description: Adobe Experience Manager as a Cloud Service內容片段可讓您設計、建立、組織及使用不受頁面影響的內容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 624b202efd08243e91b36a35f3df7c8c0bd998a9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1166'
 ht-degree: 5%
 
 ---

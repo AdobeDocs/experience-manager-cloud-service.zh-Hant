@@ -2,16 +2,16 @@
 title: 將URL外部化
 description: Externalizer是OSGi服務，可讓您以程式設計方式將資源路徑轉換為外部和絕對URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 28903c1cbadece9d0ef575cdc0f0d7fd32219538
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
 
 # 將URL外部化 {#externalizing-urls}
 
-在AEM中， **外置器** 是OSGi服務，可讓您以程式設計方式轉換資源路徑(例如 `/path/to/my/page`)放入外部和絕對URL(例如 `https://www.mycompany.com/path/to/my/page`)，方法是使用預先設定的DNS來預先修正路徑。
+在AEM中， **外置器** 是OSGi服務，可讓您以程式設計方式轉換資源路徑(例如， `/path/to/my/page`)放入外部和絕對URL(例如 `https://www.mycompany.com/path/to/my/page`)，方法是使用預先設定的DNS來預先修正路徑。
 
 由於AEMas a Cloud Service例項無法知道其外部可見的URL，而且有時必須在要求範圍外建立連結，因此此服務可提供集中位置來設定這些外部URL並建置這些URL。
 

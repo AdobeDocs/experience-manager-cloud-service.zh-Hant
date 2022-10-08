@@ -2,9 +2,9 @@
 title: 建立及組織頁面
 description: 如何使用AEM建立及組織頁面
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2561'
 ht-degree: 7%
 
 ---

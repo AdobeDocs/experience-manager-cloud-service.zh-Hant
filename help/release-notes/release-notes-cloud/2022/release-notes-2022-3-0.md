@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1153'
 ht-degree: 7%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 7%
 
    ![repbrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* 用於驗證伺服器對伺服器API呼叫的憑證（例如，用於GraphQL API請求）現在可從開發人員控制台以自助式方式在到期前重新整理。 請參閱 [檔案](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 以取得詳細資訊。
+* 現在，用於驗證伺服器對伺服器API呼叫的憑證（例如，用於GraphQL API請求）可從開發人員控制台以自助式方式在到期前重新整理。 請參閱 [檔案](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 以取得詳細資訊。
 
 * 版本清除和審核日誌清除維護任務（以前未啟用）將啟用新環境。 請參閱 [維護任務](/help/operations/maintenance.md) 文章。
 

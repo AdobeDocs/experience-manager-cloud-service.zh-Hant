@@ -2,9 +2,9 @@
 title: 基本處理
 description: 熟悉如何導覽AEM及其基本用途
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2994'
 ht-degree: 5%
 
 ---

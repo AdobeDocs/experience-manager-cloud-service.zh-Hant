@@ -2,9 +2,9 @@
 title: SPA頁面元件
 description: 在SPA中，頁面元件不提供其子元件的HTML元素，而是將此元素委派至SPA架構。 本檔案說明如何讓SPA的頁面元件獨一無二。
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---

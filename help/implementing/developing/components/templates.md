@@ -2,9 +2,9 @@
 title: 頁面範本
 description: 建立將用作新頁面基礎的頁面時，會使用「頁面範本」
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3297'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
    * 這種專業作者被稱為 **範本作者**
    * 範本作者必須是 `template-authors` 群組。
 * 「頁面範本」會保留動態連線至從這些範本建立的任何頁面。 這可確保對範本所做的任何變更都反映在頁面本身中。
-* 頁面範本可讓頁面元件更為通用，讓核心頁面元件可供使用，而不需自訂。
+* 頁面範本可讓頁面元件更為通用，讓核心頁面元件可供使用，而無須自訂。
 
 使用「頁面範本」時，製作頁面的片段會獨立於元件中。 您可以在UI中設定必要的元件組合，因此不需要針對每個頁面變異開發新的頁面元件。
 
