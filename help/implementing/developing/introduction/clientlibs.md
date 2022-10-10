@@ -2,12 +2,13 @@
 title: 在AEMas a Cloud Service上使用用戶端程式庫
 description: AEM提供用戶端程式庫資料夾，可讓您將用戶端程式碼(clientlibs)儲存在存放庫中、將其組織為類別，以及定義將每個類別的程式碼提供給用戶端的時間和方式
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2568'
 ht-degree: 1%
 
 ---
+
 
 # 在AEMas a Cloud Service上使用用戶端程式庫 {#using-client-side-libraries}
 
@@ -55,7 +56,7 @@ AEM會將網站的CSS和Javascript收集到集中位置的單一檔案，以確�
 
 每個 `cq:ClientLibraryFolder` 會填入一組JS和/或CSS檔案，以及一些支援檔案（請參閱下方）。 重要屬性 `cq:ClientLibraryFolder` 設定如下：
 
-* `allowProxy`:由於所有clientlib必須儲存在 `apps`，此屬性可讓您透過Proxy servlet存取clientlibraries。 請參閱 [找到客戶端庫資料夾並使用代理客戶端庫Servlet](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) 下方。
+* `allowProxy`:由於所有clientlib必須儲存在 `apps`，此屬性可透過代理servlet存取用戶端程式庫。 請參閱 [找到客戶端庫資料夾並使用代理客戶端庫Servlet](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) 下方。
 * `categories`:識別JS和/或CSS檔案集在此內所屬的類別 `cq:ClientLibraryFolder` 摔倒。 此 `categories` 屬性為多值，可讓程式庫資料夾成為多個類別的一部分（請參閱下方以了解其效用）。
 
 如果用戶端程式庫資料夾包含一或多個執行階段會合併為單一JS和/或CSS檔案的來源檔案。 產生的檔案名稱為節點名稱，且 `.js` 或 `.css` 檔案名副檔名。 例如，名為的程式庫節點 `cq.jquery` 導致產生的檔案名為 `cq.jquery.js` 或 `cq.jquery.css`.
@@ -87,7 +88,7 @@ AEM會將網站的CSS和Javascript收集到集中位置的單一檔案，以確�
    * 類型：布林值
    * 值: `true`
 1. 如果您需要管理靜態資源，請建立名為 `resources` 在客戶端庫資料夾下。
-   * 如果將靜態資源儲存在資料夾下 `resources`，則無法在發佈例項上參照。
+   * 如果將靜態資源儲存在資料夾下以外的任何位置 `resources`，則無法在發佈例項上參照。
 1. 將源檔案添加到庫資料夾。
    * 這通常是由 [AEM專案原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * 您可以視需要在子資料夾中組織源檔案。
@@ -211,7 +212,7 @@ AEM中的用戶端程式庫資料夾支援許多其他功能。 不過，AEMas a
 
 #### 應用程式專屬用戶端程式庫資料夾 {#app-specific-client-library-folders}
 
-最好將所有應用程式相關檔案保留在其/apps之下的應用程式資料夾中。 拒絕網站訪客存取/apps資料夾也是最佳作法。 為滿足這兩種最佳做法，請在/etc資料夾下建立一個客戶端庫資料夾，該資料夾嵌入位於/apps下的客戶端庫。
+最好將所有與應用程式相關的檔案保留在以下其應用程式資料夾中 `/apps`. 也是拒絕網站訪客存取 `/apps` 檔案夾。 若要同時滿足這兩種最佳實務，請在 `/etc` 內嵌用戶端程式庫的資料夾，位於下方 `/apps`.
 
 使用categories屬性來識別要內嵌的用戶端程式庫資料夾。 若要內嵌程式庫，請新增屬性至內嵌 `cq:ClientLibraryFolder` 節點，使用以下屬性：
 
