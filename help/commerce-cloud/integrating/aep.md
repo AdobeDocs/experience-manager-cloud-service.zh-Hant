@@ -10,9 +10,9 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
+source-git-commit: 2ebe9ddccd0b657b8aaeaf005c0ecb5b16079dee
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 此 [商務整合架構(CIF)](https://github.com/adobe/aem-core-cif-components) 核心元件提供緊密整合， [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) 從用戶端互動(例如 __新增至購物車__.
 
-此 [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components) 專案提供名為的JavaScript程式庫 [Experience Platform連接器](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 從您的商務商店收集事件資料。 該事件資料會傳送至其他Adobe Experience Cloud產品(例如Adobe Analytics和Adobe Target)中用於的Experience Platform，以建立涵蓋客戶歷程的360度設定檔。 將商務資料連結至Adobe Experience Cloud中的其他產品，您可以執行分析網站上的使用者行為、執行AB測試，以及建立個人化促銷活動等工作。
+此 [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components) 專案提供名為的JavaScript程式庫 [Adobe Experience Platform connector for Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 從您的商務商店收集事件資料。 該事件資料會傳送至其他Adobe Experience Cloud產品(例如Adobe Analytics和Adobe Target)中用於的Experience Platform，以建立涵蓋客戶歷程的360度設定檔。 將商務資料連結至Adobe Experience Cloud中的其他產品，您可以執行分析網站上的使用者行為、執行AB測試，以及建立個人化促銷活動等工作。
 
 深入了解 [Experience Platform資料收集](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) 可讓您從用戶端來源收集客戶體驗資料的技術套裝。
 
