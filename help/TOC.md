@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 115c98b207d3dea89cbeb3dbc8559a81efefe461
+source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
 workflow-type: tm+mt
-source-wordcount: '3729'
-ht-degree: 42%
+source-wordcount: '3731'
+ht-degree: 46%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 42%
    + [SEO 和 URL 管理](/help/overview/seo-and-url-management.md)
    + [AEMas a Cloud Service於Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [評估KPI](/help/overview/assessing-kpis.md)
-   + [調整KPI](/help/overview/aligning-kpis.md)
+   + [調整 KPI](/help/overview/aligning-kpis.md)
    + [選擇正確的團隊](/help/overview/choose-right-team.md)
    + [檔案歷程](/help/journey-documentation/documentation-journeys.md)
 + 發行說明 {#release-notes}
@@ -133,17 +133,17 @@ ht-degree: 42%
 + 入門 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 入門歷程 {#journey}
-      + [入門歷程概觀](/help/journey-onboarding/overview.md)
+      + [入門歷程總覽](/help/journey-onboarding/overview.md)
       + [入門準備](/help/journey-onboarding/preparation.md)
-      + [AEMas a Cloud Service術語](/help/journey-onboarding/terminology.md)
+      + [AEM as a Cloud Service 技術](/help/journey-onboarding/terminology.md)
       + [Admin Console](/help/journey-onboarding/admin-console.md)
-      + [指派Cloud Manager產品設定檔](/help/journey-onboarding/assign-profiles-cloud-manager.md)
-      + [存取Cloud Manager](/help/journey-onboarding/cloud-manager.md)
-      + [建立方案](/help/journey-onboarding/create-program.md)
+      + [指派 Cloud Manager 產品設定檔](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+      + [存取 Cloud Manager](/help/journey-onboarding/cloud-manager.md)
+      + [建立計畫](/help/journey-onboarding/create-program.md)
       + [建立環境](/help/journey-onboarding/create-environments.md)
-      + [指派AEM產品設定檔](/help/journey-onboarding/assign-profiles-aem.md)
-      + [開發人員和部署管理員任務](/help/journey-onboarding/developers.md)
-      + [AEM使用者任務](/help/journey-onboarding/aem-users.md)
+      + [指派 AEM 產品設定檔](/help/journey-onboarding/assign-profiles-aem.md)
+      + [開發人員和部署管理員工作](/help/journey-onboarding/developers.md)
+      + [AEM 使用者工作](/help/journey-onboarding/aem-users.md)
       + [使用者群組](/help/journey-onboarding/user-groups.md)
    + AEM參考示範附加元件歷程 {#demo-add-on}
       + [總覽](/help/journey-sites/demos-add-on/overview.md)
@@ -154,7 +154,7 @@ ht-degree: 42%
       + [管理您的示範網站](/help/journey-sites/demos-add-on/manage.md)
    + 其他入門概念 {#concepts}
       + [Cloud Manager 簡介](/help/onboarding/cloud-manager-introduction.md)
-      + [AEMas a Cloud Service團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)
+      + [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)
 + AEMas a Cloud Service移轉歷程 {#migration-journey}
    + [開始移動AEMas a Cloud Service](/help/journey-migration/getting-started.md)
    + [準備階段](/help/journey-migration/readiness.md)
@@ -614,6 +614,7 @@ ht-degree: 42%
    + Integrations {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
       + [第三方商務解決方案](/help/commerce-cloud/integrating/third-party.md)
+      + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
       + [快速入門](/help/commerce-cloud/getting-started.md)
       + 製作 {#authoring}
@@ -709,66 +710,66 @@ ht-degree: 42%
    + [為 AEM as a Cloud Service 實作應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
       + 計劃 {#programs}
-         + [方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+         + [計畫和計畫類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+         + [建立生產計劃](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [建立沙箱方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [編輯方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+         + [編輯計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [休眠環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + 建立 AEM 應用程式專案 {#create-application-project}
-         + [項目建立嚮導](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [專案建立精靈](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [專案設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+         + [組建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [管理環境](/help/implementing/cloud-manager/manage-environments.md)
       + 管理程式碼 {#managing-code}
          + [Maven 專案版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [存放庫 在Cloud Manager中](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+         + [Cloud Manager中的存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
          + [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [搭配Cloud Manager使用Git](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [使用多個儲存庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [將 Git 與 Cloud Manager 一起使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [使用多個存放庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企業開發團隊設定](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [環境變數](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD管道 {#cicd-pipelines}
          + [簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [管理管道 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
-      + [部署程式碼](/help/implementing/cloud-manager/deploy-code.md)
+         + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+      + [部署您的計劃碼](/help/implementing/cloud-manager/deploy-code.md)
       + 了解測試結果 {#test-results}
          + [總覽](/help/implementing/cloud-manager/overview-test-results.md)
-         + [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)
-         + [自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)
+         + [計劃碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)
+         + [自訂計劃碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + [功能測試](/help/implementing/cloud-manager/functional-testing.md)
          + [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)
-         + [UI測試](/help/implementing/cloud-manager/ui-testing.md)
+         + [UI 測試](/help/implementing/cloud-manager/ui-testing.md)
       + [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA 報告](/help/implementing/cloud-manager/sla-reporting.md)
-      + [新遺跡一號](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + SSL憑證 {#manage-ssl-certificates}
          + [簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-         + [新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-         + [管理SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+         + [正在新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [管理 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + 自訂網域名稱 {#custom-domain-names}
          + [簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         + [新增TXT記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+         + [新增 TXT 記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [檢查自定義域名狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-         + [配置DNS設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
-         + [正在檢查DNS記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-         + [管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+         + [正在設定 DNS 設定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+         + [檢查 DNS 記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+         + [管理客戶網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + IP允許清單 {#ip-allow-lists}
          + [簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
-         + [新增IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [套用和取消套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-         + [管理IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
+         + [新增 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+         + [應用和取消應用 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [管理 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)
       + [Cloud Manager 常見問題集](/help/implementing/cloud-manager/faqs.md)
    + 為 AEM as a Cloud Service 開發 {#developing}
       + [AEM 專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 專案存放庫結構套件](/help/implementing/developing/introduction/repository-structure-package.md)
-      + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+      + [AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [AEM as a Cloud Service 開發指導方針](/help/implementing/developing/introduction/development-guidelines.md)
       + [記錄](/help/implementing/developing/introduction/logging.md)
       + [配置和配置瀏覽器](/help/implementing/developing/introduction/configurations.md)
@@ -776,7 +777,7 @@ ht-degree: 42%
       + [API參考資料](/help/implementing/developing/reference-materials.md)
       + [產生伺服器端API的存取權杖](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
       + [快速建立網站和前端定制](/help/implementing/developing/introduction/quick-site-creation.md)
-      + [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+      + [使用前端管道開發 Sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [自訂網站範本和主題](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [AEM中的Headful和Headless](/help/implementing/developing/headful-headless.md)
       + 完整堆疊AEM開發 {#full-stack}
