@@ -2,9 +2,9 @@
 title: 使用ContextHub設定區段
 description: 了解如何使用ContextHub設定分段。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 43f0c3611f63b3e1ea9085d828d5daab7b361a8e
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1697'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ AEM可讓您輕鬆個人化使用者的體驗。 也可讓您驗證區段定義�
 
 此 [對象](audiences.md) console可用來管理ContextHub的區段，以及Adobe Target帳戶的對象。 本檔案涵蓋管理ContextHub的區段。
 
-若要存取區段，請在全域導覽中選取 **導覽>個人化>對象**.
+若要存取區段，請在全域導覽中選取 **導覽>個人化>對象**. 選取您的設定（例如WKND網站）以查看您的區段：
 
 ![管理對象](../assets/contexthub-segmentation-audiences.png)
 
@@ -86,7 +86,7 @@ AEM可讓您輕鬆個人化使用者的體驗。 也可讓您驗證區段定義�
 
 若要定義新區段：
 
-1. 之後 [存取區段](#accessing-segments), [導覽至資料夾](#organizing-segments) 建立區段或將其保留在根目錄中的位置。
+1. 之後 [存取區段](#accessing-segments), [導覽至資料夾](#organizing-segments) 建立區段的位置。
 
 1. 點選或按一下 **建立** 按鈕並選取 **建立ContextHub區段**.
 
