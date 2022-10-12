@@ -2,9 +2,9 @@
 title: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
+source-git-commit: 1509afad94208e62d5222f4c95c98d90f95be30e
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '619'
 ht-degree: 2%
 
 ---
@@ -15,24 +15,19 @@ ht-degree: 2%
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.3的發行日期： [!DNL Workfront for Experience Manager enhanced connector] 是2022年9月16日。
+最新版本1.9.4的發行日期： [!DNL Workfront for Experience Manager enhanced connector] 是2022年10月7日。
 
 ## 發行重點 {#release-highlights}
 
 最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包含下列增強功能和錯誤修正：
 
-* 無法上傳大小超過8 GB的檔案。
-* 自動發佈從Workfront傳送至AEM的資產時發生問題。
-* 編輯預設的中繼資料結構表單時，「標籤」欄位沒有「根路徑」欄位可用。
-* 使用AEM工作流程在Workfront中新增版本時發生問題。
-* 當您對Workfront中可用的資產執行AEM搜尋時，AEM會顯示錯誤訊息。
-* 從資產建立任務建立的AEM工作流程且未定義父任務名稱時，不會在Workfront中建立該任務。
+* 由於大量事件，無法在增強連接器設定頁面上檢視「事件訂閱」索引標籤。
 
-
+* Workfront無法擷取專案中現有資料夾的清單，而導致建立重複資料夾。
 
 >[!IMPORTANT]
 >
->Adobe建議您 [升級至最新1.9.3版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建議您 [升級至最新1.9.4版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知問題 {#known-issues}
 
@@ -43,6 +38,17 @@ ht-degree: 2%
 * Workfront顯示 `SERVER_ERROR` 升級至版本8316後，將檔案連結至AEM時出現訊息。 若要解決此問題，請指派 `rep:readProperties` to `content/dam/collections` for `wf-workfront-user` AEM使用者群組。
 
 ## 舊版 {#previous-releases}
+
+### 2022年9月發行 {#september-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.3版（於9月16日發行）包含下列更新：
+
+* 無法上傳大小超過8 GB的檔案。
+* 自動發佈從Workfront傳送至AEM的資產時發生問題。
+* 編輯預設的中繼資料結構表單時，「標籤」欄位沒有「根路徑」欄位可用。
+* 使用AEM工作流程在Workfront中新增版本時發生問題。
+* 當您對Workfront中可用的資產執行AEM搜尋時，AEM會顯示錯誤訊息。
+* 從資產建立任務建立的AEM工作流程且未定義父任務名稱時，不會在Workfront中建立該任務。
 
 ### 2022年8月發行 {#august-2022-release}
 
