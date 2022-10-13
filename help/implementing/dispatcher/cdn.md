@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
+source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 6%
+source-wordcount: '1163'
+ht-degree: 8%
 
 ---
 
@@ -27,14 +27,18 @@ AEM管理的CDN將可滿足大部分客戶的效能和安全性需求。 對於�
 
 請依照下節所述，使用Cloud Manager自助服務UI，透過現成可用的AEM CDN來準備內容傳遞：
 
-1. [管理SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-1. [管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+1. [管理 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+1. [管理客戶網域名稱](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+
+>[!NOTE]
+>
+>Cloud Manager支援自訂網域 **僅限** 如果您使用AEM管理的CDN。 如果您自帶CDN和 [指向AEM管理的CDN](/help/implementing/dispatcher/cdn.md) 您必須使用該特定CDN來管理網域，而非Cloud Manager。
 
 **限制流量**
 
 依預設，針對AEM管理的CDN設定，針對生產及非生產（開發及預備）環境，所有公用流量皆可進入發佈服務。 如果您想要針對特定環境限制發佈服務的流量（例如，限制預備的IP位址範圍），您可以透過Cloud Manager UI以自助方式執行此作業。
 
-請參閱 [管理IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) 了解更多。
+如需了解更多，請參閱[管理 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
 
 >[!CAUTION]
 >
@@ -54,10 +58,6 @@ AEM管理的CDN將可滿足大部分客戶的效能和安全性需求。 對於�
 * 客戶必須能將CDN設定為可與AEMas a Cloud Service搭配使用 — 請參閱下方的設定指示。
 * 若發生相關問題，客戶必須有工程CDN專家隨時待命。
 * 客戶必須先執行並成功通過負載測試，才能開始生產。
-
->[!NOTE]
->
->AdobeCDN不是選用。 客戶自攜CDN必須指向AEM Managed CDN。
 
 配置說明：
 
@@ -88,7 +88,9 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
 
-請注意，使用您自己的CDN時，不需要在Cloud Manager中安裝網域和憑證。 AdobeCDN中的路由將使用預設網域完成 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>[!NOTE]
+>
+>使用您自己的CDN時，不需要在Cloud Manager中安裝網域和憑證。 AdobeCDN中的路由作業將使用預設網域完成 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >
