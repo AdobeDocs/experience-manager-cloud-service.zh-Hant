@@ -1,109 +1,109 @@
 ---
-title: Cloud Manager環境變數
-description: 標準環境變數可透過Cloud Manager進行設定和管理，並提供給執行時環境，以用於OSGi設定。
+title: Cloud Manager 環境變數
+description: 標準環境變數可以透過 Cloud Manager 進行設定和管理，並提供給執行階段環境，用於 OSGi 設定。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Cloud Manager環境變數 {#environment-variables}
+# Cloud Manager 環境變數 {#environment-variables}
 
-標準環境變數可透過Cloud Manager進行設定和管理。 它們提供給執行時間環境，並可用於OSGi設定。 環境變數可以是環境特定值或環境機密，視變更內容而定。
+可以透過 Cloud Manager 設定和管理標準環境變數。它們提供給執行階段環境並且可以在 OSGi 設定中使用。環境變數可以是特定環境的值或環境祕密，具體取決於變更的內容。
 
 ## 總覽 {#overview}
 
-環境變數為AEMas a Cloud Service的使用者提供許多優點：
+環境變數為 AEM as a Cloud Service 的使用者提供了許多好處：
 
-* 它們可讓您的程式碼和應用程式的行為根據內容和環境而有所不同。 例如，它們可用來在開發環境中啟用與生產或預備環境不同的設定，以避免代價高昂的錯誤。
-* 只需設定一次，即可視需要更新及刪除。
-* 其值可隨時更新，且立即生效，不需變更或部署程式碼。
-* 它們可將程式碼與設定分開，並移除在版本控制中納入敏感資訊的需求。
-* 它們可改善AEMas a Cloud Service應用程式的安全性，因為它們位於程式碼之外。
+* 環境變數可讓您的計劃碼和應用計劃的行為根據內容和環境而變化。例如，與生產或測試環境相比，環境變數可用於在開發環境中啟用不同的設定，以避免代價高昂的錯誤。
+* 環境變數只需要設定一次，並且可以在必要時更新和刪除。
+* 環境變數的值可以隨時更新並立即生效，無需任何計劃碼變更或部署。
+* 環境變數可以將計劃碼與設定分開，也無須在版本控制中包含敏感資訊。
+* 環境變數提高了 AEM as a Cloud Service 應用計劃的安全性，因為它們位於計劃碼之外。
 
 使用環境變數的典型使用案例包括：
 
-* 使用不同的外部端點連接AEM應用程式
-* 在儲存密碼時使用參考，而非直接在程式碼基底中
-* 當程式中有多個開發環境，且某些設定會因不同環境而有所不同
+* 連接您的 AEM 應用計劃與不同的外部端點
+* 在儲存密碼時使用參考而不是直接在計劃碼庫中儲存
+* 當一個計畫中存在多個開發環境，且環境間的部分設定不同時
 
 ## 新增環境變數 {#add-variables}
 
 >[!NOTE]
 >
->您必須是 [**部署管理員** 角色](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) 以新增或修改環境變數。
+>您必須是 [**Deployment Manager** 角色](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)的成員才能新增或修改環境變數。
 
-1. 登入AdobeCloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager會列出各種可用的方案。 選取您要管理的項目。
-1. 選取 **環境** 頁簽，然後在左側導航面板中選擇要為其建立環境變數的環境。
-1. 在環境的詳細資訊中，選取 **設定** 然後選取 **新增** 開啟 **環境配置** 對話框。
-   * 如果您是第一次新增環境變數，您會看到 **新增設定** 按鈕。 您可以使用此按鈕或 **新增** 開啟 **環境配置** 對話框。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Adobe Cloud Manager。
+1. Cloud Manager 列出了可用的各種計畫。選擇您要管理的計畫。
+1. 選擇所選計畫的&#x200B;**環境**&#x200B;索引標籤，然後在左側瀏覽面板中選擇要建立環境變數的環境。
+1. 在環境的詳細資訊中，選擇&#x200B;**設定**&#x200B;索引標籤，然後選擇&#x200B;**新增**&#x200B;以打開&#x200B;**環境設定**&#x200B;對話框。
+   * 如果您是第一次新增環境變數，將會在頁面中央看到&#x200B;**新增設定**&#x200B;按鈕。您可以使用此按鈕或&#x200B;**新增**&#x200B;來打開&#x200B;**環境設定**&#x200B;對話框。
 
-   ![「配置」頁簽](assets/configuration-tab.png)
+   ![設定索引標籤](assets/configuration-tab.png)
 
 1. 輸入變數詳細資訊。
    * **名稱**
    * **值**
-   * **已應用服務**  — 定義變數套用或套用至所有服務的服務（製作/發佈/預覽）
-   * **類型**  — 定義變數是一般變數或機密
+   * **已套用服務** - 定義變數適用於哪個服務 (作者/發佈/預覽)，或適用於所有服務
+   * **類型** - 定義變數是普通變數還是祕密
 
    ![新增變數](assets/add-variable.png)
 
-1. 輸入新變數後，您必須選取 **新增** 在包含新變數的列的最後一欄中。
-   * 您可以輸入新行並選取 **新增**.
+1. 輸入新變數後，您必須在包含新變數之列的最後一欄中選擇&#x200B;**新增**。
+   * 您可以透過輸入新行並選擇&#x200B;**新增**&#x200B;來一次輸入多個變數。
 
    ![儲存變數](assets/save-variables.png)
 
-1. 選擇 **儲存** 來保留變數。
+1. 選取「**儲存**」以儲存變數。
 
-狀態指標 **更新** 會顯示在表格頂端和新新增的變數旁，以指出環境正以設定更新。 完成後，新環境變數將顯示在表格中。
+具有&#x200B;**更新**&#x200B;狀態的指示器會顯示在表格頂端和新增的變數旁邊，表示正在使用設定更新環境。完成後，新的環境變數將顯示在表格中。
 
 ![更新變數](assets/updating-variables.png)
 
 >[!TIP]
 >
->如果您想要新增多個變數，建議您新增第一個變數，然後使用 **新增** 按鈕 **環境配置** 對話方塊以新增其他變數。 這樣，您就可以將其新增至環境，並附上一項更新。
+>如果要新增多個變數，建議新增第一個變數，然後使用&#x200B;**環境設定**&#x200B;對話框中的&#x200B;**新增**&#x200B;按鈕以新增其他變數。這樣，只要更新環境一次即可新增這些變數。
 
 ## 更新環境變數 {#update-variables}
 
-建立環境變數後，可使用 **添加/更新** 按鈕以啟動 **環境配置** 對話框。
+建立環境變數後，您可以使用&#x200B;**新增/更新**&#x200B;按鈕以啟動&#x200B;**環境設定**&#x200B;對話框來更新變數。
 
-1. 登入AdobeCloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager會列出各種可用的方案。 選取您要管理的項目。
-1. 選取 **環境** 頁簽，然後在左側導航面板中選擇要為其建立環境變數的環境。
-1. 在環境的詳細資訊中，選取 **設定** 然後選取 **添加/更新** 在右上方，開啟 **環境配置** 對話框。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Adobe Cloud Manager。
+1. Cloud Manager 列出了可用的各種計畫。選擇您要管理的計畫。
+1. 選擇&#x200B;**環境**&#x200B;所選計畫的索引標籤，然後在左側瀏覽面板中選擇要為其建立環境變數的環境。
+1. 在環境的詳細資訊中，選擇&#x200B;**設定**&#x200B;索引標籤，然後在右上角選擇&#x200B;**新增更新**&#x200B;以打開&#x200B;**環境設定**&#x200B;對話框。
 
-   ![變數的「新增/更新」按鈕](assets/add-update-variables.png)
+   ![變數的新增/更新按鈕](assets/add-update-variables.png)
 
-1. 使用要修改的變數列最後一列中的省略號按鈕，選擇 **編輯** 或 **刪除**.
+1. 使用要修改變數之列最後一欄中的省略符號按鈕，選擇&#x200B;**編輯**&#x200B;或&#x200B;**刪除**。
 
    ![編輯或刪除變數](assets/edit-delete-variable.png)
 
-1. 視需要編輯環境變數。
-   * 編輯時，刪節號按鈕會變更為選項，以回復成原始值或確認變更。
-   * 編輯機密時，只能更新值，無法檢視。
+1. 根據需要編輯環境變數。
+   * 編輯時，省略符號按鈕將變更為選項以恢復原始值或確認您的變更。
+   * 編輯祕密時，只能更新值，不能查看。
 
    ![編輯變數](assets/edit-variable.png)
 
-1. 完成所有必要配置更改後，請選擇 **儲存**.
+1. 完成所有必需的設定變更後，選擇&#x200B;**儲存**。
 
-[新增變數時，](#add-variables) 狀態指標 **更新** 會顯示在表格頂端和新更新的變數旁，以指出環境正以設定更新。 完成後，更新的環境變數將顯示在表格中。
+[新增變數時](#add-variables)，具有&#x200B;**更新**&#x200B;狀態的指示器會顯示在表格頂端和更新的變數旁邊，表示正在使用設定更新環境。完成後，更新的環境變數將顯示在表格中。
 
 >[!TIP]
 >
->如果您想要更新多個變數，建議您使用 **環境配置** 對話方塊，以在點選或按一下之前一次更新所有必要變數 **儲存**. 這樣，您就可以將其新增至環境，並附上一項更新。
+>如果要更新多個變數，建議使用&#x200B;**環境設定**&#x200B;對話框，在點選或按一下&#x200B;**儲存**&#x200B;之前立即更新所有必要的變數。這樣，只要更新環境一次即可新增這些變數。
 
 ## 使用環境變數 {#using}
 
-環境變數可讓 `pom.xml` 配置更安全、更靈活。 例如，密碼不需要硬式編碼，而且您的設定可根據環境變數中的值進行調整。
+環境變數可讓您的 `pom.xml` 設定更加安全和靈活。例如，密碼不需要硬式編碼，您的設定可以根據環境變數中的值進行調整。
 
-您可以透過XML存取環境變數和機密，如下所示。
+您可以透過 XML 存取環境變數和祕密，如下所示。
 
 * `${env.VARIABLE_NAME}`
 
-請參閱檔案 [設定專案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) ，以了解如何在 `pom.xml` 檔案。
+有關如何在 `pom.xml` 檔案中使用這兩種類型變數的範例，請參見文件：[設定專案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories)。
 
-請參閱 [官方Maven檔案](https://maven.apache.org/settings.html#quick-overview) 以取得更多詳細資訊。
+如需詳細資訊，請參閱[正式 Maven 文件](https://maven.apache.org/settings.html#quick-overview)。

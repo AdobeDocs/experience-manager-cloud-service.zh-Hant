@@ -1,35 +1,35 @@
 ---
-title: 生產計畫簡介
-description: 了解哪些生產計畫以及如何設定您的計畫和建議。
+title: 生產計劃簡介
+description: 了解什麼是生產程序以及如何設定您的計劃的建議。
 exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 source-git-commit: a6152a1529b5c70bcf056857204e7ff97fc614e4
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# 生產計畫簡介 {#production-programs}
+# 生產計劃簡介 {#production-programs}
 
-生產計畫是為準備好開始編寫、建立和測試程式碼，以將程式碼部署至托管即時流量的團隊所設計。
+生產程序適用於準備開始編寫、構建和測試計劃碼的團隊，目標是部署它以託管實時流量。
 
-在 [建立您的生產計畫，](creating-production-programs.md) a [程式建立精靈](using-the-wizard.md) 根據用戶建立方案時的目標引導用戶完成選擇。
+在你之後[建立您的生產程序，](creating-production-programs.md)一個[程序建立嚮導](using-the-wizard.md)根據使用者建立程序的目標，引導使用者進行選擇。
 
-## 方案建立選項 {#program-creation-options}
+## 程序建立選項 {#program-creation-options}
 
-您與Adobe的合約合約會定義在建立生產方案時，您特定組織可用的解決方案數量和類型。 您可以控制如何將可用的解決方案對應至Cloud Manager程式。
+您與 Adobe 的合約協議定義了您的特定組織在建立製作程序時可用的解決方案的數量和類型。您可以控制如何將可用解決方案映射到 Cloud Manager 程序。
 
-下表說明可用解決方案的常見情況以及根據這些解決方案建立的典型生產程式。
+下表描述了可用解決方案的常見場景以及基於它們建立的典型生產程序。
 
-| 可用的解決方案 | 方案選項 | 包含的項目 | 使用時機 | 範例 |
+| 可用的解決方案 | 計劃選項 | 包括什麼 | 使用時機 | 範例 |
 |--- |--- |--- |--- |---|
-| 1個站點解決方案 | 建立1個僅Sites計畫 | 1生產+1階段，1開發 | N/A | 不適用 |
-| 1個Assets解決方案 | 建立1個僅限Assets方案 | 1生產+1階段，1開發 | 不適用 | 不適用 |
-| 1個網站+1個資產 | 建立一個方案： <br>1個網站與資產計畫 | 1生產+1階段，2開發 | 當大部分數位資產都用於支援網站實施時。<br>在此情況下，大部分的數位資產都處於已完成狀態，可供透過Sites用於跨管道體驗。<br>通常，單一團隊負責管理Sites和Assets的內容。 | 主要用於網站的影像。<br>PDF將透過AEM Sites內建的內部入口網站發佈。 |
-| 1個網站+1個資產 | 建立單獨的程式：<br>1個僅站點計畫和1個僅資產計畫 | 1生產+1階段，1開發<br> 1生產+1階段，1開發 | 許多數位資產不直接支援網站實作時。<br> 在這種情況下，資產處於各種狀態，包括原始檔案類型和正在進行中的工作。<br>專屬的創意團隊會透過自己的生命週期管理數位資產，且與Sites內容管理團隊相比，其工作流程和發行週期也不同。 | 照片拍攝的原始影像會儲存在Assets程式中，而Sites實作中只會使用少數影像。<br>大量Creative Cloud檔案類型(例如Photoshop和Illustrator)會在AEM Assets中進行管理，並在產生完成的資產前先執行其自己的核准工作流程。<br>請考慮使用 [連線資產](/help/assets/use-assets-across-connected-assets-instances.md#overview-of-connected-assets) 在這種情況下。 |
-| 1個站點+ 1個站點 | 建立單獨的程式：<br>1個僅站點計畫1個僅站點計畫 | 1生產+1階段，1開發<br>1生產+1階段，1開發 | 適用於多租用戶網站實施。<br>在這種情況下，必須管理多個網站，以及各自的發行排程和專屬的開發與內容團隊。 | 兩個零售品牌，有專屬網站和不同的開發團隊 |
+| 1 Sites 解決方案 | 建立 1 Sites 專用計劃 | 1 生產 + 1 階段、1 開發 | N/A | 不適用 |
+| 1 Assets 解決方案 | 建立 1 Assets 專用計劃 | 1 生產 + 1 階段、1 開發 | 不適用 | 不適用 |
+| 1 個 Sites +1 個 Assets | 建立一個計劃：<br> 1 Sites &amp; Assets 計劃 | 1 生產 + 1 階段、2 開發 | 當大多數數位資產用於支援網站實施時。<br>在這種情況下，大多數數位資產都處於完成狀態，可以透過 Sites 用於跨渠道體驗。<br>通常，一個團隊負責管理 Sites 和 Assets 的內容。 | 主要用於網站的圖像。<br>將透過 AEM Sites 中內建的內部入口網站分發的 PDF。 |
+| 1 個 Sites +1 個 Assets | 建立獨立的計劃：<br>僅 1 個 Sites 計劃和僅 1 個 Assets 計劃 | 1 生產 + 1 階段，1 開發<br>1 生產 + 1 階段，1 開發 | 當許多數位資產不直接支援網站實施時。<br>在這種情況下，資產處於各種狀態，包括原始文件類型和正在進行的工作。<br>一個專門的創意團隊透過其自己的生命週期管理數位資產，並且具有與 Sites 內容管理團隊不同的工作流程和發布週期。 | 照片拍攝的原始圖像存儲在 Assets 程序中，只有少數幾個將用於 Sites 實施。<br>大量 Creative Cloud 文件類型 (如 Photoshop 和 Illustrator) 在 AEM Assets 中進行管理，並在生成完成的資源之前透過自己的核准工作流程。<br>考慮在這種情況下使用[關聯 Assets](/help/assets/use-assets-across-connected-assets-instances.md#overview-of-connected-assets)。 |
+| 1 個 Sites + 1 個 Sites | 建立獨立的計劃：<br>僅 1 個 Sites 和僅 1 個 Sites 計劃 | 1 生產 + 1 階段，1 開發<br>1 生產 + 1 階段，1 開發 | 對於多租使用者網站實施。<br>在這種情況下，必須管理具有自己的發布計劃和專門的開發和內容團隊的多個網站。 | 兩個擁有專門網站和獨立開發團隊的零售品牌 |
 
 >[!NOTE]
 >
->生產計畫 [無法刪除。](editing-programs.md)
+>[不能編輯和刪除](editing-programs.md)生產計畫。

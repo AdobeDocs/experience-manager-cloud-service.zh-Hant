@@ -1,77 +1,78 @@
 ---
-title: 布建過程 — 概述
-description: 布建過程 — 概述
+title: 佈建程序 - 總覽
+description: 佈建程序 - 總覽
 source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 
-# AEMas a Cloud Service:入門與存取
+# AEM as a Cloud Service：到職和存取
 
-此頁面提供布建程式的相關自助資源，以供Experience Manageras a Cloud Service。
+此頁面提供 Experience Manager as a Cloud Service 佈建程序的相關自助資源。
 
-## AEMas a Cloud Service布建程式概述
+## AEM as a Cloud Service 佈建程序概覽
 
 本節提供下列主題的重要文章：
 
-* 存取AEMas a Cloud Service
-* Adobe Experience Manager as a Cloud Service入門和布建程式
+* 正在存取 AEM as a Cloud Service
+* Adobe Experience Manager as a Cloud Service 上線和佈建程序
 * 說明和資源
 
 
-### 存取AEMas a Cloud Service
+### 正在存取 AEM as a Cloud Service
 
-自動布建完成後：
+自動配置完成後：
 
-* 授予的存取權限 — Adobe會在AdobeIdentity Management系統(IMS)中建立組織
+* Access 已授予權利–Adobe 將在 Adobe Identity Management System (IMS) 中建立一個組織
 * 指定管理員預設擁有管理員權限
-* 管理員可以通過Admin Console為其他團隊成員添加用戶和角色
-* 檢閱使用者的角色型權限，以決定Cloud Manager中的權限指派
+* 管理員可以透過 Admin Console 為其他團隊成員新增使用者和角色
+* 查看使用者基於角色的權限以確定 Cloud Manager 中的權限指派
 
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-欲知更多資訊，請訪問 [Experience Manageras a Cloud ServiceExperience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
+若要了解更多資訊，請造訪[Experience League 上的 Experience Manager as a Cloud Service 入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=zh-Hant)
 
-### 資源與連結
+### 資源和連結
 
-* [AEM as a Cloud Service 的 IMS 支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)
-* [Cloud Manager中的角色型權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)
-* [存取 Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
+* [AEM as a Cloud Service 的 IMS 支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=zh-Hant)
+* [Cloud Manager 中基於角色的權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=zh-Hant#what-is-required)
+* [存取 Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=zh-Hant#getting-access)
 
 
-## Adobe Experience Manager as a Cloud Service入門程式
+## Adobe Experience Manager as a Cloud Service 上線程序
 
-### 1.採購訂單觸發器自動置備。
+### 1. 採購訂單觸發自動供應。
 
-### 2.將組織載入Adobe Admin Console:
+### 2. 在 Adobe Admin Console 中佈建組織：
 
 ![processoverview2.jpg](assets/processOverview2.jpg)
 
 * 系統管理員：
-   * 布建AEM方案和環境。
-   * 導覽至Admin Console以執行管理任務。
-   * 聲明域以確認各個域的所有權
-   * 設定用戶目錄。
-   * IDP配置。
+   * 配置 AEM 程序和環境。
+   * 瀏覽到 Admin Console 以執行管理任務。
+   * 聲明一個網域以確認相應網域的所有權
+   * 設定使用者目錄。
+   * IDP 設定。
 * AEM 管理員:
-   * 管理本機群組、權限和權限。
+   * 管理本機組、權限和特權。
 
-### 3.板載用戶和管理Admin Console中的訪問：
+### 3. 在 Admin Console 中加入使用者並管理存取：
 
 ![processoverview3.jpg](assets/processOverview3.jpg)
 
-根據大小和偏好設定，將使用者上線的三種方法：
-* 手動建立Admin Console中的使用者
-* 上傳.csv檔案
-* 從企業Active Directory同步用戶
+根據規模和偏好，三種方法來吸引使用者：
+* 在 Admin Console 中手動建立使用者
+* 上傳 .csv 檔案
+* 從企業 Active 同步使用者
+目錄
 
-### 4.管理員設定組織並授予使用者和群組對環境的存取權
+### 4. 管理員配置組織並授予使用者和組對環境的存取權限
 
 ## 說明和資源
 
-* [首次登入 — Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-* [設定AEMas a Cloud Service的存取權](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
+* [首次登入 - 雲端服務](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+* [設定存取權限至 AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=zh-Hant#accessing)

@@ -1,11 +1,11 @@
 ---
 title: 功能測試
-description: 了解AEMas a Cloud Service部署程式中內建的三種不同功能測試類型，以確保程式碼的品質和可靠性。
+description: 了解內建在 AEM as a Cloud Service 部署流程中的三種不同類型的功能測試，以確保計劃碼的品質和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -15,51 +15,51 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="功能測試"
->abstract="了解AEMas a Cloud Service部署程式中內建的三種不同功能測試類型，以確保程式碼的品質和可靠性。"
+>abstract="了解內置在 AEM as a Cloud Service 部署過程中的三種不同類型的功能測試，以確保計劃碼的品質和可靠性。"
 
-了解內建在 [AEMas a Cloud Service部署程式](/help/implementing/cloud-manager/deploy-code.md) 以確保程式碼的品質和可靠性。
+了解內建在 [AEM as a Cloud Service 部署流程](/help/implementing/cloud-manager/deploy-code.md)中的三種不同類型的功能測試，以確保計劃碼的品質和可靠性。
 
 ## 總覽 {#overview}
 
-AEMas a Cloud Service中有三種不同的功能測試類型。
+AEM as a Cloud Service 中有三種不同類型的功能測試。
 
 * [產品功能測試](#product-functional-testing)
 * [自訂功能測試](#custom-functional-testing)
-* [自訂UI測試](#custom-ui-testing)
+* [自訂 UI 測試](#custom-ui-testing)
 
-對於所有功能測試，測試的詳細結果可下載為 `.zip` 檔案，使用 **下載組建記錄** 「建置概述」畫面中的按鈕，作為 [部署程式。](/help/implementing/cloud-manager/deploy-code.md)
+對於所有功能測試，作為[部署流程](/help/implementing/cloud-manager/deploy-code.md)的一部分，可以使用組建總覽畫面中的&#x200B;**下載組建記錄**&#x200B;按鈕，將測試的詳細結果下載為 `.zip` 檔案。
 
-這些記錄檔不包含實際AEM執行階段程式的記錄檔。 要訪問這些日誌，請參閱文檔 [存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md) 以取得更多詳細資訊。
+這些記錄不包括實際 AEM 執行時進程的記錄。若要存取這些記錄，請參閱[存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md)文件以了解詳細資訊。
 
-產品功能測試和自訂功能測試範例都以 [AEM測試用戶端。](https://github.com/adobe/aem-testing-clients)
+產品功能測試和範例自訂功能測試均以 [AEM 測試用戶端](https://github.com/adobe/aem-testing-clients)為基礎。
 
 ## 產品功能測試 {#product-functional-testing}
 
-產品功能測試是AEM中核心功能（例如製作和復寫工作）的一組穩定HTTP整合測試(IT)。 這些測試由Adobe維護，目的是防止在自訂應用程式程式碼中斷核心功能時，部署變更。
+產品功能測試是 AEM 中核心功能 (例如製作和複製任務) 的一組穩定 HTTP 整合測試 (IT)。這些測試由 Adobe 維護，旨在防止自訂應用計劃計劃碼變更而破壞核心功能時進行部署。
 
-每當您將新程式碼部署至Cloud Manager且無法略過時，產品功能測試就會自動執行。
+每當您將新計劃碼部署到 Cloud Manager 時，都會自動執行產品功能測試，且不能跳過。
 
-產品功能測試會保留為開放原始碼專案。 請參閱 [產品功能測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 以取得詳細資訊。
+產品功能測試會作為開放原始碼專案進行維護。如需詳細資訊，請參閱 GitHub 中的[產品功能測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)。
 
 ## 自訂功能測試 {#custom-functional-testing}
 
-雖然產品功能測試由Adobe定義，但您可以為自己的應用程式編寫自己的品質測試。 這會作為生產管道的一部分，以自訂功能測試的形式執行，以確保應用程式的品質。
+雖然產品功能測試由 Adobe 定義，但您可以為自己的應用計劃編寫自己的品質測試。這將作為自訂功能測試作為生產管道的一部分執行，以確保您應用計劃的品質。
 
-自訂功能測試會同時針對自訂程式碼部署和推送升級執行，因此撰寫良好的功能測試來防止AEM程式碼變更破壞您的應用程式程式碼，尤其重要。 自訂功能測試步驟一律存在，且無法略過。
+自訂功能測試會針對自訂計劃碼部署和推送升級執行，這對於編寫良好的功能測試，以防止 AEM 計劃碼變更而破壞應用計劃計劃碼尤為重要。自訂功能測試步驟一律存在且不能跳過。
 
-### 撰寫自訂功能測試 {#writing-functional-tests}
+### 寫入自訂功能測試 {#writing-functional-tests}
 
-Adobe用來編寫產品功能測試的工具，可用來編寫自訂功能測試。 使用 [產品功能測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 以示如何撰寫測試的範例。
+Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功能測試。使用 GitHub 中的[產品功能測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)作為寫入測試的範例。
 
-自訂功能測試的程式碼為位於 `it.tests` 檔案夾。 它應生成包含所有功能測試的單個JAR。 如果生成多個測試JAR，則選定的JAR不是確定性的。 如果它產生零個測試JAR，則測試步驟預設會通過。 [請參閱AEM專案原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) 以取得範例測試。
+自訂功能測試的計劃碼是位於專案 `it.tests` 檔案夾中的 Java 計劃碼。它應該產生一個包含所有功能測試的 JAR。如果建置產生多個測試 JAR，則無法確定要選擇哪個 JAR。如果產生零個測試 JAR，則測試步驟預設透過。如需測試範例，[請參閱 AEM 專案原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)。
 
-這些測試會在Adobe維護的測試基礎架構上執行，其中至少包含兩個製作例項、兩個發佈例項和一個Dispatcher設定。 這表示您的自訂功能測試會針對整個AEM堆疊執行。
+這些測試會在 Adobe 維護的測試基礎結構上執行，包括至少兩個作者執行個體、兩個發佈執行個體和一個 Dispatcher 設定。這代表您的自訂功能測試針對整個 AEM 堆疊執行。
 
-自訂功能測試必須封裝為由要部署至AEM的成品所產生的個別JAR檔案。 一般而言，這會是個別的Maven模組。 產生的JAR檔案必須包含所有必要的相依性，且通常會使用 `maven-assembly-plugin` 使用 `jar-with-dependencies` 描述符。
+自訂功能測試必須封裝為單獨的 JAR 檔案，該檔案由與要部署到 AEM 的成品相同的 Maven 組建產生。通常這將是一個單獨的 Maven 模組。產生的 JAR 檔案必須包含所有必要的相依性，通常使用 `maven-assembly-plugin` 和 `jar-with-dependencies` 描述項建立。
 
-此外，JAR必須具有 `Cloud-Manager-TestType` 資訊清單標題設為 `integration-test`.
+此外，JAR 必須將 `Cloud-Manager-TestType` 資訊清單標題設為 `integration-test`。
 
-以下是 `maven-assembly-plugin`.
+以下為 `maven-assembly-plugin` 的設定範例。
 
 ```java
 <build>
@@ -92,31 +92,31 @@ Adobe用來編寫產品功能測試的工具，可用來編寫自訂功能測試
     </plugins>
 ```
 
-在此JAR檔案中，要執行的實際測試的類名必須以結尾 `IT`.
+在這個 JAR 檔案中，要執行的實際測試的類別名稱必須以 `IT` 結尾。
 
-例如，名為 `com.myco.tests.aem.it.ExampleIT` 會被執行，但是一個 `com.myco.tests.aem.it.ExampleTest` 不會。
+例如，將執行名為 `com.myco.tests.aem.it.ExampleIT` 的類別，但不會執行名為 `com.myco.tests.aem.it.ExampleTest` 的類別。
 
-此外，要將測試代碼排除在代碼掃描的覆蓋檢查之外，測試代碼必須位於名為的包的下方 `it` (涵蓋範圍排除篩選器為 `**/it/**/*.java`)。
+此外，要從計劃碼掃描的覆蓋檢查中排除測試計劃碼，測試計劃碼必須位於名為`it` 的套件之下 (覆蓋排除篩選是`**/it/**/*.java`)。
 
-測試類需要是正常的JUnit測試。 測試基礎架構經過設計並配置以與 `aem-testing-clients` 測試程式庫。 強烈建議開發人員使用此程式庫並遵循其最佳實務。
+測試類別必須是一般的 JUnit 測試。測試基礎結構的設計和設定與 `aem-testing-clients` 測試庫使用的慣例相容。強烈鼓勵開發人員使用此計劃庫並遵循其最佳實務。
 
-請參閱 [`aem-testing-clients` GitHub存放庫](https://github.com/adobe/aem-testing-clients) 以取得更多詳細資訊。
+如需更多詳細資訊，請參閱 [`aem-testing-clients`GitHub 存放庫](https://github.com/adobe/aem-testing-clients)。
 
 >[!TIP]
 >
->[觀看此視頻](https://www.youtube.com/watch?v=yJX6r3xRLHU) 關於如何使用自訂功能測試來提升您對CI/CD管道的信心。
+>[觀看此影片](https://www.youtube.com/watch?v=yJX6r3xRLHU)，了解如何使用自訂功能測試來提高您對 CI/CD 管道的信心。
 
-## 自訂UI測試 {#custom-ui-testing}
+## 自訂 UI 測試 {#custom-ui-testing}
 
-自訂UI測試是選用功能，可讓您建立並自動執行應用程式的UI測試。 UI測試是封裝在Docker影像中的基於硒的測試，以允許在語言和框架（如Java和Maven、Node和WebDriver.io，或基於Selenium構建的任何其他框架和技術）中進行廣泛選擇。
+自訂 UI 測試是一項選擇性功能，可讓您為應用計劃建立和自動執行 UI 測試。UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。
 
-請參閱該文檔 [自訂UI測試](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) 以取得更多資訊。
+如需更多詳細資訊，請參閱文件：[自訂 UI 測試](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)。
 
-## 本地測試執行 {#local-test-execution}
+## 本機測試執行 {#local-test-execution}
 
-由於測試類是JUnit測試，因此可以從主流Java IDE（如Eclipse、IntelliJ、NetBeans等）運行。 由於產品功能測試和自訂功能測試都以相同技術為基礎，因此可將產品測試複製到您的自訂測試，以便在本機執行。
+由於測試類別是 JUnit 測試，所以它們可以從主流的 Java IDE (如 Eclipse、IntelliJ、NetBeans 等) 執行。因為產品功能測試和自訂功能測試都基於相同的技術，所以兩者都可以透過將產品測試複製到自訂測試中，以在本機執行。
 
-不過，執行這些測試時，必須設定 `aem-testing-clients` （和基礎的Sling Testing Clients）程式庫。
+但是，在執行這些測試時，需要設定 `aem-testing-clients` (和底層 Sling 測試用戶端) 計劃庫應有的各種系統屬性。
 
 系統屬性如下。
 

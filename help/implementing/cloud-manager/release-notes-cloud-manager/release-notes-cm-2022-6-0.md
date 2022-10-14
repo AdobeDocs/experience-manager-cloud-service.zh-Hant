@@ -1,43 +1,43 @@
 ---
-title: Adobe Experience Manager as a Cloud Service中Cloud Manager 2022.6.0發行說明
-description: 以下是AEM as a Cloud Service中Cloud Manager 2022.6.0的發行說明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2022.6.0 的發行說明
+description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2022.6.0 的發行說明。
 feature: Release Information
 exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service中Cloud Manager 2022.6.0發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2022.6.0 的發行說明 {#release-notes}
 
-本頁記錄AEM as a Cloud Service中Cloud Manager 2022.6.0的發行說明。
+本頁面記錄了 AEM as a Cloud Service 中 Cloud Manager 2022.6.0 的發行說明
 
 >[!NOTE]
 >
->請參閱 [本頁](/help/release-notes/release-notes-cloud/release-notes-current.md) Adobe Experience Manager as a Cloud Service的最新發行說明。
+>有關 Adobe Experience Manager as a Cloud Service 的目前發行說明，請參閱[本頁面](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 ## 發行日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager 2022.6.0版的發行日期為2022年6月9日。 下一版預計於2022年6月30日發行。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2022.6.0 發行日期是 2022 年 6 月 9 日。下一版本計劃於 2022 年 6 月 30 日發行。
 
 ## 新增功能 {#what-is-new}
 
-* Cloud Manager UI現在允許 [自助服務內容還原](/help/operations/backup.md) 至AEM雲端環境的已知良好狀態。
-   * 此功能將在2022.06.0版後的數週內分階段推出。
-* Cloud Manager登陸頁面上新增的歡迎卡，可讓使用者快速存取入門教學課程和與租用戶相關的進度量度。
-   * 此功能將在2022.06.0版發行後的一週內分階段推出。
-* 具有必要權限的使用者可以存取新 [授權控制面板](/help/implementing/cloud-manager/license-dashboard.md) 在Cloud Manager登陸頁面上，檢視租用戶可用權益的詳細資訊。
-   * AEM Sites是透過「雲端管理」控制面板提供可用性和使用量耗用量的第一個解決方案。
-   * 此功能將在2022.06.0版後的數週內分階段推出。
-* [新Relic子帳戶與自助服務使用者管理](/help/implementing/cloud-manager/user-access-new-relic.md) 現在可透過Cloud Manager UI使用。
-   * 此功能將在2022.06.0版後的數週內分階段推出。
-* Cloud Service生產計畫首頁上的全新上線介面工具集現在提供指引，為成功上線體驗做好準備。
-* [現在可以重複使用生成成品](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 使用git鏡像時。
+* Cloud Manager UI 現在允許[自助內容恢復](/help/operations/backup.md)到 AEM cloud 環境的已知良好狀態。
+   * 此功能將在 2022.06.0 版發行後的一週內分階段推出。
+* Cloud Manager 登入頁面上的新歡迎卡讓使用者可以快速存取和租使用者相關的上線教學課程和進度量度。
+   * 此功能將在 2022.06.0 版發行後的一週內分階段推出。
+* 具有必要權限的使用者可以存取新的[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)在 Cloud Manager 登入頁面上查看租使用者可用權利的詳細資訊。
+   * AEM Sites 是第一個透過 Cloud Manage 儀表板提供可用性和使用量消耗的解決方案。
+   * 此功能將在 2022.06.0 版發行後的一週內分階段推出。
+* [New Relic 子帳號和自助使用者管理](/help/implementing/cloud-manager/user-access-new-relic.md)現在可透過 Cloud Manager UI 使用。
+   * 此功能將在 2022.06.0 版發行後的一週內分階段推出。
+* Cloud Service 生產計劃主頁上的新 Go Live 小工具現在提供了為成功上線體驗做準備的指導。
+* 使用 Git 鏡像時，[現在可重複使用組建成品](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)。
 
-## API變更 {#api-changes}
+## API 變更 {#api-changes}
 
-* 此 [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API已淘汰， [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) 的值。
-   * `List Programs` 會繼續運作，但其使用情形會在記錄中產生警告訊息。
-   * 三個月後將不再支援。
+* 此 [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API 已過時，並應改用 [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant)。
+   * `List Programs` 會持續運作，但其使用方式將在紀錄中產生警告訊息。
+   * 三個月後將不再受支援。

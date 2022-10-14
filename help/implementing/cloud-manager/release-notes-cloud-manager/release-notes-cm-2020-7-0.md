@@ -1,22 +1,22 @@
 ---
-title: AEM as a Cloud Service2020.7.0版中Cloud Manager發行說明
-description: AEM as a Cloud Service2020.7.0版中Cloud Manager發行說明
+title: AEM as a Cloud Service 版本 2020.7.0 中 Cloud Manager 的發行說明
+description: AEM as a Cloud Service 版本 2020.7.0 中 Cloud Manager 的發行說明
 feature: Release Information
 exl-id: b5ac4dd4-18c6-4867-b2df-53711555007f
 source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2020.7.0版Cloud Manager發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.7.0 中 Cloud Manager 的發行說明 {#release-notes}
 
-本頁概述AEM 2020.7.0as a Cloud Service版中Cloud Manager的發行說明。
+本頁面總覽 AEM as a Cloud Service 2020.7.0 中 Cloud Manager 的發行說明
 
 ## 發行日期 {#release-date}
 
-AEM 2020.7.0中的Cloud Manageras a Cloud Service日期為2020年7月9日。
+AEM as a Cloud Service 2020.7.0 中的 Cloud Manager 發行日期是 2020 年 7 月 9 日。
 
 ## 新增功能 {#whats-new-cloud-manager}
 
@@ -30,9 +30,9 @@ AEM 2020.7.0中的Cloud Manageras a Cloud Service日期為2020年7月9日。
 
    如需詳細資訊，請參閱管道變數。
 
-* 現在支援與驗證綁定的專用Maven儲存庫。
+* 現在支援身份驗證綁定的私有 Maven 存放庫。
 
-* Cloud Manager 建置容器現可支援 Java 8 和 Java 11。如需詳細資訊，請參閱使用Java 11支援。
+* Cloud Manager 建置容器現可支援 Java 8 和 Java 11。有關更多詳細資訊，請參閱使用 Java 11 支援。
 
 ### 錯誤修正 {#bug-fixes-cm}
 
@@ -54,4 +54,4 @@ AEM 2020.7.0中的Cloud Manageras a Cloud Service日期為2020年7月9日。
 
 ### 已知問題 {#known-issues}
 
-* 由於程式碼涵蓋範圍的計算方式有所變更，Jacoco 外掛程式的&#x200B;*最低*&#x200B;版本現在是 0.7.5.201505241946 (2015 年 5 月發佈)。若客戶明確參考較舊版本，會在程式碼品質處理程序中收到錯誤訊息。
+* 由於計劃碼涵蓋範圍的計算方式有所變更，Jacoco 外掛計劃的&#x200B;*最低*&#x200B;版本現在是 0.7.5.201505241946 (2015 年 5 月發佈)。若客戶明確參考較舊版本，會在程式碼品質處理程序中收到錯誤訊息。

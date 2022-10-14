@@ -1,28 +1,28 @@
 ---
-title: AEM as a Cloud Service2020.6.0版中Cloud Manager發行說明
-description: AEM as a Cloud Service2020.6.0版中Cloud Manager發行說明
+title: AEM as a Cloud Service 版本 2020.6.0 中 Cloud Manager 的發行說明
+description: AEM as a Cloud Service 版本 2020.6.0 中 Cloud Manager 的發行說明
 feature: Release Information
 exl-id: 879a5025-f94f-4549-bf6e-e1cc6b6a7b58
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '604'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2020.6.0版Cloud Manager發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.6.0 中 Cloud Manager 的發行說明 {#release-notes}
 
-本頁概述AEM 2020.6.0as a Cloud Service版中Cloud Manager的發行說明。
+本頁面總覽 AEM as a Cloud Service 2020.6.0 中 Cloud Manager 的發行說明
 
 ## 發行日期 {#release-date}
 
-AEM 2020.6.0中的Cloud Manageras a Cloud Service日期為2020年6月4日。
+AEM as a Cloud Service 2020.6.0 中的 Cloud Manager 發行日期是 2020 年 6 月 04 日。
 
 ## 新增功能 {#whats-new-cloud-manager}
 
 * 在 Cloud Manager 中，屬於&#x200B;*業務擁有者*&#x200B;角色的使用者現在可以從登陸頁面 (透過「方案」卡片上的快速動作按鈕) 或從方案中刪除沙箱方案。
 
-   如需詳細資訊，請參閱[刪除沙箱方案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
+   如需詳細資訊，請參閱[刪除沙箱方案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=zh-Hant)。
 
 * 在 Cloud Manager 中，屬於&#x200B;*業務擁有者*&#x200B;或&#x200B;*部署管理員*&#x200B;角色的沙箱方案使用者現在可以刪除透過 Cloud Manager UI 設定的生產和預備環境。現在，您可以從&#x200B;**方案概覽**&#x200B;頁面和&#x200B;**環境**&#x200B;頁面上的「環境」卡片中使用刪除選項。在「生產」或「預備」上選取刪除選項，也可刪除集合中的其他項目。
 
@@ -38,11 +38,11 @@ AEM 2020.6.0中的Cloud Manageras a Cloud Service日期為2020年6月4日。
 
 * 現在，SysAdmin 角色中的使用者可以從可管理 Cloud Manager 使用者角色或權限的位置，單鍵存取 Admin Console 中的位置。在登陸頁面上，**新增方案**&#x200B;按鈕旁現在有&#x200B;**管理存取**&#x200B;按鈕可供使用。
 
-   如需詳細資訊，請參閱 [SysAdmin 任務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)。
+   如需詳細資訊，請參閱 [SysAdmin 任務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=zh-Hant#sysadmin-tasks)。
 
 * SysAdmin 角色中的使用者現在可以直接從 Cloud Manager 單鍵存取製作例項。
 
-   如需詳細資訊，請參閱[管理對製作例項的存取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)。
+   如需詳細資訊，請參閱[管理對製作例項的存取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=zh-Hant#manage-access-aem)。
 
 * 「建置」記錄現在包含探索到的成品清單，包括略過的內容封裝。
 

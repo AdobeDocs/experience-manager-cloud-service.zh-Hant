@@ -1,60 +1,60 @@
 ---
 title: 存取和管理記錄檔
-description: 了解如何存取和管理記錄，以協助您在AEMas a Cloud Service中進行開發程式。
+description: 了解如何存取和管理記錄檔以協助進行 AEM as a Cloud Service 中的開發流程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
 # 存取和管理記錄檔 {#manage-logs}
 
-了解如何存取和管理記錄，以協助您在AEMas a Cloud Service中進行開發程式。
+了解如何存取和管理記錄檔以協助進行 AEM as a Cloud Service 中的開發流程。
 
-您可以使用 **環境** 卡片 **概述** 頁面或環境詳細資料頁面。
+您可以從&#x200B;**總覽**&#x200B;頁面或環境詳細資訊頁面使用&#x200B;**環境**&#x200B;卡，存取所選環境的可用記錄檔清單。
 
-## 正在下載日誌 {#download-logs}
+## 正在下載記錄檔 {#download-logs}
 
-請依照下列步驟下載記錄檔。
+若要下載記錄檔，請依照下列步驟：
 
-1. 登入Cloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 導覽至 **環境** 卡片 **概述** 頁面。
+1. 從&#x200B;**總覽**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;卡。
 
-1. 選擇 **下載記錄檔** 從刪節號菜單。
+1. 從省略符號選單，選取&#x200B;**「下載記錄檔」**。
 
-   ![下載日誌菜單項](assets/download-logs1.png)
+   ![下載記錄檔專案](assets/download-logs1.png)
 
-1. 在 **下載記錄檔** 對話框，選擇相應的 **服務** 從下拉式功能表
+1. 在&#x200B;**下載記錄**&#x200B;對話框，從下拉式選單中選擇合適的&#x200B;**服務**
 
-   ![「下載日誌」對話框](assets/download-preview.png)
+   ![下載記錄檔對話框](assets/download-preview.png)
 
-1. 選取服務後，按一下您要擷取之記錄旁的下載圖示。
+1. 選擇服務後，按一下要擷取記錄旁邊的下載圖示。
 
-您也可以從 **環境** 頁面。
+您也可以從&#x200B;**環境**&#x200B;頁面存取記錄檔。
 
-![從「環境」畫面記錄](assets/download-logs.png)
+![環境畫面的記錄檔](assets/download-logs.png)
 
-## 透過API記錄 {#logs-through-api}
+## 透過 API 的記錄檔 {#logs-through-api}
 
-除了透過UI下載記錄檔外，記錄檔也可透過API和命令列介面使用。
+除了透過 UI 下載記錄外，還可以透過 API 和命令行介面取得記錄。
 
-若要下載特定環境的記錄檔，命令將類似下列。
+若要下載特定環境的記錄文件，該命令會類似於以下內容。
 
 ```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-您也可以透過命令列介面追蹤記錄。
+您還可以透過命令行介面追蹤記錄。
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-為了獲得環境ID（本示例中為1884）和可用的服務或日誌名稱選項，可以使用以下命令。
+為了取得環境 ID (本例中為 1884) 和可用的服務或記錄名稱選項，您可以使用以下命令。
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### 其他資源 {#resources}
 
-請參考下列其他資源，以進一步了解Cloud Manager API和Adobe I/OCLI:
+請參閱以下更多資源，以深入了解如何使用 Cloud Manager API 和 Adobe I/O CLI：
 
-* [Cloud Manager API檔案](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/OCLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Cloud Manager API 文件](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)

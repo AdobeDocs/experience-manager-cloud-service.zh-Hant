@@ -1,98 +1,98 @@
 ---
 title: Cloud Manager 簡介
-description: 了解Cloud Manager如何透過其方案、環境和管道支援您的AEM專案。
+description: 了解 Cloud Manager 如何透過其程序、環境和管道支援您的 AEM 專案。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
 workflow-type: tm+mt
 source-wordcount: '834'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 # Cloud Manager 簡介 {#intro-cloud-manager}
 
-Cloud Manager是AEMas a Cloud Service的必要元件，是您團隊的單一進入點。 其專門建立的CI/CD管道可確保徹底測試和最高的程式碼品質，以提供優越的體驗。 為確保客戶能快速啟動其專案，Cloud Manager以自助方式提供所需的一切，包括建立雲端資源和環境並存取Git存放庫的能力。 這些功能可支援企業開發設定，讓團隊能夠經常致力於提交變更、快速提供卓越的數位體驗，並加快實現價值的速度。
+Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的單一入口點。其專門構建的 CI/CD 管道可確保進行徹底的測試和最高的計劃碼品質，從而提供卓越的體驗。為確保客戶能夠快速啟動他們的項目，Cloud Manager 以自助方式提供所需的一切，包括建立您的 cloud 資源和環境以及存取您的 git 存放庫的能力。這些功能支援企業開發設定，因此團隊可以致力於頻繁提交更改、快速提供卓越的數字體驗並加快實現價值的時間。
 
-您的系統管理員負責設定您的Cloud Manager團隊，團隊中將包括將建立您雲端資源和開發人員的人員。 有關如何設定和擴展企業開發團隊以及查看AEM as a Cloud Service如何支援您的開發流程的詳細資訊，請參閱本檔案 [AEMas a Cloud Service的企業團隊開發設定。](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+您的系統管理員負責建立您的 Cloud Manager 團隊，其中包括將建立您的 cloud 資源和開發人員的個人。有關如何設定和擴展您的企業開發團隊以及了解 AEM as a Cloud Service 如何支援您的開發流程的更多資訊，請參閱文件[AEM as a Cloud Service 的企業團隊開發設定。](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
 
-## 導覽至Cloud Manager的概觀頁面 {#navigate-cloud-manager}
+## 瀏覽到 Cloud Manager 的概覽頁面 {#navigate-cloud-manager}
 
-請依照下列步驟導覽至Cloud Manager。
+依照這些步驟操作即可前往 Cloud Manager。
 
-1. 導覽至Cloud Manager的登入頁面，網址為 [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/).
+1. 瀏覽至 [`https://my.cloudmanager.adobe.com` Cloud Manager 登入頁面的概覽頁面。](https://my.cloudmanager.adobe.com/)
 
-1. 從Cloud Manager的 **方案和產品** 頁面來啟動 **概述** 頁面。
+1. 從 Cloud Manager 中選擇程序&#x200B;**程序和產品**&#x200B;頁面啟動&#x200B;**總覽**&#x200B;頁。
 
-您也可以依照下列步驟，從Adobe Experience Cloud首頁導覽至Cloud Manager的方案和產品頁面。
+您還可以按照以下步驟從 Adobe Experience Cloud 主頁瀏覽到 Cloud Manager 的程序和產品頁面。
 
-1. 導覽至Adobe Experience Cloud，網址為 [`https://experience.adobe.com`](https://experience.adobe.com) 並使用Adobe ID登入。
+1. 導覽至 [`https://experience.adobe.com`](https://experience.adobe.com) 的 Adobe Experience Cloud 並使用您的 Adobe ID 憑證登入。
 
-1. 參考工具列右上角顯示的組織名稱，確定您位於正確的組織。
+1. 透過參考工具欄右上角顯示的組織名稱，確保您在正確的組織中。
 
-1. 選擇 **Experience Manager**.
+1. 選擇&#x200B;**Experience Manager**。
 
-1. 在 **Cloud Manager** 卡片，按一下 **Launch**
+1. 在&#x200B;**Cloud Manager**&#x200B;卡片，點擊&#x200B;**啟動**
 
-## Cloud Manager中的角色型權限 {#role-based-permissions}
+## Cloud Manager 中基於角色的權限 {#role-based-permissions}
 
-| 權限 | 說明 | 業務負責人 | 部署管理員 | 計畫經理 | 開發人員 |
+| 權限 | 說明 | 企業所有者 | 部署管理員 | 方案管理員 | 開發人員 |
 |--- |--- |--- |--- |--- |--- |
-| 添加程式<br>編輯方案 | 新增方案<br>添加或刪除解決方案或附加元件 | x |  |  |  |
-| 建立環境 | 建立生產+測試和開發環境 | x | x |  |  |
-| 更新環境 | 更新生產+測試和開發環境 | x | x |  |  |
-| 刪除開發環境 | 刪除開發環境 | x | x |  |  |
+| 新增程序<br>編輯程序 | 新增新程序<br>新增或刪除解決方案或附加組件 | x |  |  |  |
+| 建立環境 | 建立生產+登台和開發環境 | x | x |  |  |
+| 更新環境 | 更新生產+登台和開發環境 | x | x |  |  |
+| 刪除裝置環境 | 刪除開發環境 | x | x |  |  |
 | 管道設定 | 設定和編輯管道 |  | x |  |  |
 | 管道執行 | 啟動管道 | x | x |  |  |
-| 管道執行 | 拒絕/批准重要的3層質量門故障 | x | x | x |  |
-| 管道執行 | 提供上線批准 | x | x | x |  |
-| 管道執行 | 排程生產部署 | x | x | x |  |
-| 管道刪除 | 允許刪除管道 |  | x |  |  |
-| 執行取消 | 取消當前執行 |  | x |  |  |
-| 產生個人存取權杖 | 存取Git |  | x |  | x |
+| 管道執行 | 拒絕/核准重要第三級品質閘道失敗 | x | x | x |  |
+| 管道執行 | 提供上線核准 | x | x | x |  |
+| 管道執行 | 生產部署排程 | x | x | x |  |
+| 管道刪除 | 允許管道刪除 |  | x |  |  |
+| 執行取消 | 取消目前的執行 |  | x |  |  |
+| 產生個人存取權杖 | 存取 Git |  | x |  | x |
 
 >[!NOTE]
 >
->可以將用戶分配給多個角色。 例如，指派兩者 **業務負責人** 和 **部署管理員** 使用者的角色會提供這些權限的總和。
+>可以將一個使用者指派給多個角色。例如，同時指派&#x200B;**業務負責人**&#x200B;和&#x200B;**部署管理員**&#x200B;角色以賦予使用者的所有權限。
 
-## Cloud Manager方案 {#cloud-manager-programs}
+## Cloud Manager 計劃 {#cloud-manager-programs}
 
-Cloud Manager計畫代表一組Cloud Manager環境，支援業務計畫的邏輯分組。 這些分組通常對應於購買的服務級別協定(SLA)。 例如，一個方案可代表AEM資源以支援組織的公開網站，而另一個方案則代表內部DAM。
+Cloud Manager 程序表示支援業務計劃的邏輯分組的 Cloud Manager 環境集。這些分組通常對應於購買的服務水平協議 (SLA)。例如，一個程序可能代表 AEM 資源以支援組織的公共網站，而另一個程序代表內部 DAM。
 
 
-看這個 [影片](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) 進一步了解使用Cloud Manager計畫。
+請觀看這段[影片](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=zh-Hant)了解有關使用 Cloud Manager 計劃的更多資訊。
 
-使用者可以建立 **沙箱** 或 **生產** 程式。
+使用者可以建立&#x200B;**沙箱**&#x200B;或&#x200B;**生產**&#x200B;計畫。
 
-* A **生產計畫** 會建立，以便在未來的適當時間啟用即時流量。
-   * 請參閱該文檔 [生產計畫簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 以取得更多詳細資訊。
+* 一個&#x200B;**生產計劃**&#x200B;是為了在未來的適當時間啟用實時流量而建立的。
+   * 如需了解詳細資訊，請參閱文件：[生產計畫簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)。
 
-* A **沙箱方案** 通常建立的目的是提供培訓、運行演示、培訓、建立POC或文檔。
-   * 它不是用來傳輸即時流量，且會有生產計畫無法使用的限制。
-   * 其中包含Sites和Assets，且會以Git分支自動填入，該分支包含范常式式碼、開發環境和非生產管道。
-   * 請參閱該文檔 [沙箱方案簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) 以取得更多詳細資訊。
+* **沙箱計畫**&#x200B;通常建立的目的是提供培訓、執行示範、訓練、建立 POC 或文件。
+   * 這不代表能承載即時流量，並且會有生產計畫沒有的限制。
+   * 其中包含 Sites 和 Assets，且會透過 Git 分支自動填入，分支中包含範例計劃碼、開發環境及非生產管道。
+   * 如需了解詳細資訊，請參閱文件：[沙箱計畫簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
 
-## Cloud Manager環境 {#cloud-manager-environments}
+## Cloud Manager 環境 {#cloud-manager-environments}
 
-您的雲端環境將透過Cloud Manager建立、存取及檢視。 這些環境可以是生產、測試或開發環境。 不同的環境有不同的用途，可搭配不同的CI/CD管道使用。 環境由下列服務組成：
+您的雲端環境將透過 Cloud Manager 建立、存取和查看。環境包含生產、測試和開發。不同的環境有不同的用途，可以與不同的 CI/CD 管道一起使用。環境由以下服務組成：
 
-* [AEM Authoring Services](#author-services)
-* [AEM Publishing Services](#publish-services)
-* [Dispatcher服務](#dispatcher-services)
+* [AEM 創作服務](#author-services)
+* [AEM 出版服務](#publish-services)
+* [Dispatcher 服務](#dispatcher-services)
 
 >[!TIP]
 >
-> 請參閱影片 [使用AdobeCloud Manager環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) 可用環境的概觀。
+> 參考視頻[使用 Adobe Cloud Manager 環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=zh-Hant)可用環境的概覽。
 >
->請參閱檔案 [管理環境](/help/implementing/cloud-manager/manage-environments.md) 若要進一步了解使用者可建立的環境類型，以及使用者如何建立環境。
+>參考文件[管理環境](/help/implementing/cloud-manager/manage-environments.md)了解有關使用者可以建立的環境類型以及使用者如何建立環境的更多資訊。
 
-### AEM Authoring Service {#author-services}
+### AEM 創作服務 {#author-services}
 
-在建立、管理及更新網站內容和數位資產的環境中，會包含AEM製作服務。 通常只有內部使用者能存取製作服務，並會在登入畫面後面維護。 製作服務可同時作為製作和預覽環境。
+AEM 創作服務包含在建立、管理和更新網站內容和數位資產的環境中。通常只有內部使用者才能存取創作服務，並且在登入畫面後面進行維護。授權服務可作為創作和預覽環境。
 
-### AEM Publishing Service {#publish-services}
+### AEM 出版服務 {#publish-services}
 
-托管一般使用者體驗的環境（例如網站）中包含AEM發佈服務。 這是網站訪客將檢視並與之互動的服務。 發佈服務通常可公開使用。
+AEM 發布服務包含在託管最終使用者體驗的環境中，例如網站。這是網站訪客將查看並與之交互的服務。通常，發布服務是公開可用的。
 
-### AEM Dispatcher服務 {#dispatcher-services}
+### AEM Dispatcher 服務 {#dispatcher-services}
 
-Dispatcher是 `Apache HTTP Web server` 提供安全性與效能層，且位於AEM發佈服務之前的模組。
+Dispatcher 是一個`Apache HTTP Web server`提供位於 AEM 發布服務前面的安全和效能層的模組。

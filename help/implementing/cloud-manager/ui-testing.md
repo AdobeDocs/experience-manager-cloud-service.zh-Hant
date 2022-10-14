@@ -1,50 +1,50 @@
 ---
-title: UI測試
-description: 自訂UI測試是選用功能，可讓您建立並自動執行自訂應用程式的UI測試
+title: UI 測試
+description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用計劃建立和自動執行 UI 測試。
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# UI測試 {#ui-testing}
+# UI 測試 {#ui-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
->title="UI測試"
->abstract="自訂UI測試是選用功能，可讓您建立並自動執行應用程式的UI測試。 UI測試是封裝在Docker影像中的基於硒的測試，以允許在語言和框架（如Java和Maven、Node和WebDriver.io，或基於Selenium構建的任何其他框架和技術）中進行廣泛選擇。"
+>title="UI 測試"
+>abstract="自訂 UI 測試是一項選擇性功能，可讓您為應用計劃建立和自動執行 UI 測試。UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。"
 
-自訂UI測試是選用功能，可讓您建立並自動執行應用程式的UI測試。
+自訂 UI 測試是一項選擇性功能，可讓您為應用計劃建立和自動執行 UI 測試。
 
 ## 總覽 {#custom-ui-testing}
 
-AEM提供整合的 [Cloud Manager品質入口](/help/implementing/cloud-manager/custom-code-quality-rules.md) 確保自訂應用程式的流暢更新。 尤其是，IT測試已開始使用AEM API建立和自動化自訂測試。
+AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)整合套件，以確保自訂應用程序順利更新。尤其是 IT 測試門已經使用 AEM API 建立和自動化自訂測試。
 
-UI測試是封裝在Docker影像中的基於硒的測試，以允許在語言和框架（如Java和Maven、Node和WebDriver.io，或基於Selenium構建的任何其他框架和技術）中進行廣泛選擇。 此外，使用 [AEM專案原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。此外，可以透過使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)輕鬆生成 UI 測試專案。
 
-UI測試會在每個Cloud Manager管道(具有 [專屬 **自訂UI測試** 步驟。](/help/implementing/cloud-manager/deploy-code.md) 任何UI測試（包括回歸和新功能）都能偵測到錯誤並加以報告。
+UI 測試作為每個 Cloud Manager 管道的特定品質門的一部分執行，具有[投入的&#x200B;**自訂 UI 測試**&#x200B;步。](/help/implementing/cloud-manager/deploy-code.md)包括回歸和新功能在內的任何 UI 測試都可以檢測和報告錯誤。
 
-自訂功能測試（以Java寫入的HTTP測試）不同，UI測試可以是Docker影像，測試以任何語言寫入，只要測試遵循區段中定義的慣例 [建立UI測試。](#building-ui-tests)
+與使用 Java 編寫的 HTTP 測試的自訂功能測試不同，UI 測試可以是 Docker 映像，其中包含以任何語言編寫的測試，只要它們遵循本節中定義的約定[構建 UI 測試。](#building-ui-tests)
 
 >[!TIP]
 >
->Adobe建議遵循 [AEM專案原型。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)
+>Adobe 建議遵循本文件中提供的結構和語言（JavaScript 和 WDIO）[ AEM Project 原型。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)
 
 ### 客戶選擇加入 {#customer-opt-in}
 
-若要讓Cloud Manager建立並執行您的UI測試，您必須借由將檔案新增至存放庫來選擇加入此功能。
+為了讓 Cloud Manager 構建和執行 UI 測試，您必須透過將文件新增到存放庫來選擇使用此功能。
 
-* 檔案名必須是 `testing.properties`.
-* 檔案內容必須 `ui-tests.version=1`.
-* 檔案必須位於maven子模組下，才能進行UI測試，緊鄰 `pom.xml` 檔案。
-* 檔案必須位於建置的根目錄 `tar.gz` 檔案。
+* 檔案名稱必須是 `testing.properties`。
+* 檔案內容必須是 `ui-tests.version=1`。
+* 該文件必須位於 maven 子模組下，用於 UI 測試`pom.xml`UI 測試子模組的文件。
+* 該文件必須位於構建的根目錄`tar.gz`文件。
 
-如果此檔案不存在，則會略過UI測試建置和執行。
+如果此文件不存在，將跳過 UI 測試構建和執行。
 
-若要包含 `testing.properties` 檔案（在生成對象中），添加 `include` 語句 `assembly-ui-test-docker-context.xml` 檔案。
+包括一個`testing.properties`在構建工件中的文件，新增一個`include`中的聲明`assembly-ui-test-docker-context.xml`文件。
 
 ```xml
 [...]
@@ -58,30 +58,30 @@ UI測試會在每個Cloud Manager管道(具有 [專屬 **自訂UI測試** 步驟
 
 >[!NOTE]
 >
->如果您的專案未包含此行，您需要編輯檔案以選擇加入UI測試。
+>如果您的項目不包含此行，則需要編輯文件以選擇進行 UI 測試。
 >
->檔案可能包含一行，告知不要編輯它。 這是因為在引入選擇加入UI測試之前，已將其導入您的專案中，且用戶端的並非用來編輯檔案。 這可以安全地忽略。
+>該文件可能包含一條建議不要編輯它的行。這是因為它是在引入選擇加入 UI 測試之前被引入您的項目的，並且客戶端不打算編輯該文件。這可以安全地忽略。
 
-## 建立UI測試 {#building-ui-tests}
+## 構建 UI 測試 {#building-ui-tests}
 
-Maven專案會產生Docker建置內容。 此Docker建置內容說明如何建立包含UI測試的Docker影像，Cloud Manager使用者要產生包含實際UI測試的Docker影像。
+一個 Maven 項目會生成一個 Docker 構建上下文。此 Docker 構建上下文描述瞭如何建立包含 UI 測試的 Docker 映像，Cloud Manager 使用者可以透過該映像生成包含實際 UI 測試的 Docker 映像。
 
-本節說明將UI測試專案新增至存放庫所需的步驟。
+本節介紹將 UI 測試項目新增到存放庫所需的步驟。
 
 >[!TIP]
 >
->此 [AEM專案原型](https://github.com/adobe/aem-project-archetype) 可以為您沒有程式設計語言的特殊需求產生UI測試專案。
+>這[AEM Project 原型](https://github.com/adobe/aem-project-archetype)可以為您對編程語言沒有特殊要求的生成 UI 測試項目。
 
-### 生成Docker生成上下文 {#generate-docker-build-context}
+### 生成 Docker 構建上下文 {#generate-docker-build-context}
 
-若要產生Docker建置內容，您需要Maven模組，該模組應：
+為了生成 Docker 構建上下文，您需要一個 Maven 模組：
 
-* 產生包含 `Dockerfile` 以及使用測試建立Docker映像所需的所有其他檔案。
-* 使用標籤封存 `ui-test-docker-context` 分類器。
+* 生成一個包含`Dockerfile`以及使用您的測試構建 Docker 映像所需的所有其他文件。
+* 用`ui-test-docker-context`分類器。
 
-最簡單的方法是設定 [Maven程式集外掛程式](https://maven.apache.org/plugins/maven-assembly-plugin/) 來建立Docker構建上下文歸檔檔案，並為其分配正確的分類器。
+最簡單的方法是配置[Maven 組裝插件](https://maven.apache.org/plugins/maven-assembly-plugin/)建立 Docker 構建上下文封存並為其指派正確的分類器。
 
-您可以使用不同的技術和架構來建立UI測試，但本節假設您的專案是以類似下列的方式規劃。
+您可以使用不同的技術和框架構建 UI 測試，但本節假定您的項目以類似於以下方式佈局。
 
 ```text
 ├── Dockerfile
@@ -94,7 +94,7 @@ Maven專案會產生Docker建置內容。 此Docker建置內容說明如何建�
 └── wait-for-grid.sh
 ```
 
-此 `pom.xml` 檔案會處理Maven組建。 將執行新增至Maven程式集外掛程式，如下所示。
+這`pom.xml`文件負責 Maven 構建。將執行新增到 Maven 程序集插件，類似於以下內容。
 
 ```xml
 <plugin>
@@ -118,7 +118,7 @@ Maven專案會產生Docker建置內容。 此Docker建置內容說明如何建�
 </plugin>
 ```
 
-此執行會指示Maven程式集外掛程式根據 `assembly-ui-test-docker-context.xml`，稱為 **裝配描述符** 用外掛程式的術語。 程式集描述符列出必須是歸檔檔案一部分的所有檔案。
+此執行指示 Maven 程序集插件根據包含在`assembly-ui-test-docker-context.xml`，稱為&#x200B;**程序集描述符**&#x200B;在插件的行話中。程序集描述符列出了必須是歸檔一部分的所有文件。
 
 ```xml
 <assembly>
@@ -147,63 +147,63 @@ Maven專案會產生Docker建置內容。 此Docker建置內容說明如何建�
 </assembly>
 ```
 
-程式集描述符指示插件建立類型的存檔 `.tar.gz` 並指派 `ui-test-docker-context` 分類器。 此外，它還列出了必須包含在存檔中的檔案，包括以下內容。
+程序集描述符指示插件建立類型的封存`.tar.gz`並指派`ui-test-docker-context`分類器。此外，它列出了必須包含在封存中的文件，包括以下內容。
 
-* A `Dockerfile`，是建置Docker影像的必填項目
-* 此 `wait-for-grid.sh` 指令碼，其用途如下所述
-* 實際的UI測試，由 `test-module` 資料夾
+* 一個 `Dockerfile`，構建 Docker 鏡像所必需的
+* `wait-for-grid.sh` 腳本，其用途如下所述
+* 由 Node.js 項目實現的實際 UI 測試`test-module`檔案夾
 
-程式集描述符還排除了在本地運行UI測試時可能生成的一些檔案。 這可保證檔案的規模更小，組建更快。
+程序集描述符還排除了在本機執行 UI 測試時可能生成的一些文件。這保證了更小的封存和更快的建構。
 
-包含Docker建置上下文的封存會由Cloud Manager自動擷取，Cloud Manager會在部署管道期間建立包含您測試的Docker影像。 最終，Cloud Manager會執行Docker影像，對您的應用程式執行UI測試。
+包含 Docker 建構上下文的封存由 Cloud Manager 自動獲取，它將在其部署管道期間構建包含您的測試的 Docker 影像。最終，Cloud Manager 將執行 Docker 映像以針對您的應用程序執行 UI 測試。
 
-組建應產生零或一個封存。 如果它生成零存檔，則預設情況下測試步驟會通過。 如果組建產生多個封存，選取的封存則不確定。
+建構應生成零個或一個封存。如果產生零個封存，則測試步驟預設透過。如果建置產生多個封存，則無法確定要選擇哪個封存。
 
-## 編寫UI測試 {#writing-ui-tests}
+## 編寫 UI 測試 {#writing-ui-tests}
 
-本節說明包含您UI測試的Docker影像必須遵循的慣例。 Docker映像是使用前一節中描述的Docker生成上下文構建的。
+本節介紹包含 UI 測試的 Docker 映像必須遵循的約定。Docker 映像是根據上一節中描述的 Docker 建構上下文建構的。
 
 ### 環境變數 {#environment-variables}
 
-下列環境變數將在執行時傳遞至您的Docker影像。
+以下環境變量將在執行時傳遞給您的 Docker 映像。
 
 | 變數 | 範例 | 說明 |
 |---|---|---|
-| `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium伺服器的URL |
-| `SELENIUM_BROWSER` | `chrome` | Selenium Server使用的瀏覽器實施 |
-| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM製作例項的URL |
-| `AEM_AUTHOR_USERNAME` | `admin` | 登入AEM製作例項的使用者名稱 |
-| `AEM_AUTHOR_PASSWORD` | `admin` | 登入AEM製作例項的密碼 |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM發佈例項的URL |
-| `AEM_PUBLISH_USERNAME` | `admin` | 登入AEM發佈執行個體的使用者名稱 |
-| `AEM_PUBLISH_PASSWORD` | `admin` | 登入AEM發佈執行個體的密碼 |
-| `REPORTS_PATH` | `/usr/src/app/reports` | 必須保存測試結果的XML報告的路徑 |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | 必須上傳檔案的URL，以便供Selenium存取 |
+| `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 伺服器的 URL |
+| `SELENIUM_BROWSER` | `chrome` | Selenium 伺服器使用的瀏覽器實作 |
+| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 作者執行個體的 URL |
+| `AEM_AUTHOR_USERNAME` | `admin` | 用於登入 AEM 作者執行個體的使用者名稱 |
+| `AEM_AUTHOR_PASSWORD` | `admin` | 用於登入 AEM 作者執行個體的密碼 |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 發佈執行個體的 URL |
+| `AEM_PUBLISH_USERNAME` | `admin` | 用於登入 AEM 發佈執行個體的使用者名稱 |
+| `AEM_PUBLISH_PASSWORD` | `admin` | 用於登入 AEM 發佈執行個體的密碼 |
+| `REPORTS_PATH` | `/usr/src/app/reports` | 測試結果 XML 報告必須儲存的路徑 |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | 必須將文件上傳到的 URL 使 Selenium 可以存取 |
 
-### 等待硒準備就緒 {#waiting-for-selenium}
+### 等待 Selenium 準備就緒 {#waiting-for-selenium}
 
-在測試開始之前，Docker映像有責任確保Selenium伺服器已啟動並運行。 等待Selenium服務是兩步驟的過程。
+在測試開始之前，Docker 影像負責確保 Selenium 伺服器啟動並執行。等待 Selenium 服務有兩個步驟。
 
-1. 從 `SELENIUM_BASE_URL` 環境變數。
-1. 以定期間隔輪詢至 [狀態端點](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) 由Selenium API公開。
+1. 從 `SELENIUM_BASE_URL` 環境變數中讀取 Selenium 服務的 URL。
+1. 定期輪詢 Selenium API 公開的[狀態端點](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)。
 
-一旦Selenium的狀態端點以正面回應回答，測試就可以開始。
+一旦 Selenium 的狀態端點得到肯定的響應，測試就可以開始了。
 
-### 產生測試報表 {#generate-test-reports}
+### 生成測試報告 {#generate-test-reports}
 
-Docker映像必須以JUnit XML格式生成測試報告，並將其保存在環境變數指定的路徑中 `REPORTS_PATH`. JUnit XML格式是報告測試結果的廣泛使用的格式。 如果Docker影像使用Java和Maven，則標準測試模組如 [Maven Surefire外掛程式](https://maven.apache.org/surefire/maven-surefire-plugin/) 和 [Maven Failsafe Plugin](https://maven.apache.org/surefire/maven-failsafe-plugin/) 可立即產生這類報表。
+Docker 鏡像必須生成 JUnit XML 格式的測試報告，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。JUnit XML 格式是一種廣泛使用的報告測試結果的格式。如果 Docker 鏡像使用 Java 和 Maven，標準測試模組如[Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和[Maven 故障安全插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)可以開箱即用地生成此類報告。
 
-如果Docker影像是使用其他寫程式語言或測試運行者實現的，請查看所選工具的文檔，以了解如何生成JUnit XML報告。
+如果 Docker 映像是使用其他編程語言或測試執行計劃實現的，請查看所選工具的文件以了解如何生成 JUnit XML 報告。
 
 ### 上傳檔案 {#upload-files}
 
-測試有時必須將檔案上傳至要測試的應用程式。 為了讓Selenium的部署相對於您的測試保持靈活，無法直接將資產上傳至Selenium。 但是，上傳檔案需要下列步驟。
+測試有時必須將文件上傳到被測試的應用計劃。為了使 Selenium 的部署相對於您的測試保持靈活，不能直接將資產直接上傳到 Selenium。相反，上傳文件需要以下步驟。
 
-1. 在 `UPLOAD_URL` 環境變數。
-   * 上傳必須以一個包含多部分表單的POST請求執行。
-   * 多部分表單必須有單一檔案欄位。
-   * 這等同於 `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`.
-   * 請參閱Docker影像中使用之程式設計語言的檔案和程式庫，了解如何執行此類HTTP要求。
-1. 如果上傳成功，要求會傳回 `200 OK` 類型的回應 `text/plain`.
-   * 回應的內容是不透明的檔案控點。
-   * 您可以使用此控制代碼來取代 `<input>` 元素來測試應用程式中的檔案上傳。
+1. 在指定的 URL 上傳檔案 `UPLOAD_URL` 環境變數。
+   * 上傳必須在一個帶有多部分表單的 POST 要求中執行。
+   * 多部分表單必須有一個檔案欄位。
+   * 這相當於 `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`。
+   * 請查閱 Docker 映像中使用的編程語言的檔案和資料庫，以了解如何執行此類 HTTP 要求。
+1. 如果上傳成功，請求傳回一個`200 OK`類型響應 `text/plain`。
+   * 回應的內容是一個不透明的檔案。
+   * 您可以使用此句柄代替文件路徑`<input>`在您的應用程序中測試文件上傳的元素。

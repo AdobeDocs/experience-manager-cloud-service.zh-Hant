@@ -1,91 +1,91 @@
 ---
 title: 管理管道
-description: 了解如何管理現有的管道，包括編輯、執行和刪除管道。
+description: 了解如何管理現有管道，包括將其編輯、執行和刪除。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # 管理管道 {#managing-pipelines}
 
-了解如何管理現有的管道，包括編輯、執行和刪除管道。
+了解如何管理現有管道，包括將其編輯、執行和刪除。
 
 ## 管道卡 {#pipeline-card}
 
-此 **管道** 卡 **計畫概述** Cloud Manager中的頁面提供所有管道及其目前狀態的概述。
+此&#x200B;**管道**&#x200B;卡位於 Cloud Manager 中的&#x200B;**方案總覽**&#x200B;頁面上，可讓您總覽您所有的管道及其目前狀態。
 
-![Cloud Manager中的管道卡](/help/implementing/cloud-manager/assets/configure-pipeline/pipelines-card.png)
+![Cloud Manager 中的管道卡](/help/implementing/cloud-manager/assets/configure-pipeline/pipelines-card.png)
 
-按一下每條管道旁的刪節號按鈕，可執行下列操作。
+按一下每個管道旁邊的省略符號按鈕，您就可以執行下列操作。
 
 * [執行管道](#running-pipelines)
 * [編輯管道](#editing-pipelines)
 * [刪除管道](#deleting-pipelines)
-* [檢視詳情](#view-details)
+* [檢視詳細資訊](#view-details)
 
-在管道清單的底部，您有常規選項。
+在管道清單底部有一般選項。
 
-* **新增**  — 至 [新增生產管道](configuring-production-pipelines.md) 或 [新增非生產管道](configuring-non-production-pipelines.md)
-* **全部顯示**  — 將用戶帶到管道螢幕，在更詳細的表中查看所有管道。
-* **存取存放庫資訊**  — 顯示存取Cloud Manager Git存放庫所需的資訊
-* **更多詳情**  — 導覽至CI/CD管道檔案資源。
+* **新增** - 至[可新增生產管道](configuring-production-pipelines.md)或是[新增非生產管道](configuring-non-production-pipelines.md)
+* **全部顯示** - 將使用者帶到管道畫面，在更詳細的表格中檢視所有管道。
+* **存取存放庫資訊** - 顯示要存取 Cloud Manager Git 存放庫所必需的資訊
+* **了解更多** - 瀏覽至 CI/CD 管道文件資源。
 
-## 正在運行管道 {#running-pipelines}
+## 執行管道 {#running-pipelines}
 
-1. 登入Cloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 導覽至 **管道** 卡片 **計畫概述** 頁面，然後按一下您所執行之選取管道旁的刪節號按鈕 **執行** 的上界。
+1. 瀏覽至&#x200B;**管道**&#x200B;卡 (位於&#x200B;**方案總覽**&#x200B;頁面)，並按一下您執行的管道旁的省略符號按鈕，從選單中選取&#x200B;**執行**。
 
-1. 管道運行開始，由 **狀態** 欄。
+1. 此管道執行開始，並由&#x200B;**狀態**&#x200B;欄顯示。
 
-您可以再次按一下省略號按鈕，然後選取 **[查看詳細資訊。](#view-details)**
+您可以查看執行的詳細資訊，只要再按一下省略符號按鈕，並選取&#x200B;**[檢視詳細資訊。](#view-details)**
 
-根據管道類型，您可以再次按一下省略號按鈕並選擇 **取消**.
+依管道的類型而定，您也許可以取消執行，只要再按一下省略符號按鈕，並選取&#x200B;**取消**。
 
 ## 編輯管道 {#editing-pipelines}
 
-1. 登入Cloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 導覽至 **管道** 卡片 **計畫概述** 頁面，按一下要編輯的管道旁的刪節號按鈕，然後選取 **編輯** 的上界。
+1. 瀏覽至&#x200B;**管道**&#x200B;卡 (位於&#x200B;**方案總覽**&#x200B;頁面)，並按一下您要編輯的管道旁的省略符號按鈕，然後從選單中選取&#x200B;**編輯**。
 
-1. 此 **編輯生產管道** 或 **編輯非生產管道** 對話框，允許您編輯建立管道時輸入的相同詳細資訊。
+1. **編輯生產管道**&#x200B;或是&#x200B;**編輯非生產管道**&#x200B;對話框會隨即顯示，讓您可以對您在建立管道時輸入的詳細資訊進行編輯。
 
-   * 有關管道可用的所有欄位和配置選項的詳細資訊，請參閱以下頁。
+   * 如需有關管道可用的所有欄位和設定選項的詳細資訊，請參閱以下頁面。
       * [設定生產管道](configuring-production-pipelines.md)
       * [設定非生產管道](configuring-non-production-pipelines.md)
 
-1. 按一下 **更新** 編輯管道後。
+1. 按一下&#x200B;**更新**&#x200B;一次，您即完成編輯管道。
 
 >[!NOTE]
 >
->無法編輯正在運行的管道。
+>您無法編輯執行中的管道。
 
 ## 刪除管道 {#deleting-pipelines}
 
-1. 登入Cloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 導覽至 **管道** 卡片 **計畫概述** 頁面，然後按一下您所執行之選取管道旁的刪節號按鈕 **刪除** 的上界。
+1. 瀏覽至&#x200B;**管道**&#x200B;卡 (位於&#x200B;**方案總覽**&#x200B;頁面)，並按一下您執行的管道旁的省略符號按鈕，從選單中選取&#x200B;**刪除**。
 
 >[!NOTE]
 >
->無法刪除正在運行的管道。
+>您無法刪除執行中的管道。
 
 ## 檢視詳情 {#view-details}
 
-1. 登入Cloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 導覽至 **管道** 卡片 **計畫概述** 頁面，然後按一下您所執行之選取管道旁的刪節號按鈕 **查看詳細資訊** 的上界。
+1. 瀏覽至&#x200B;**管道**&#x200B;卡 (位於&#x200B;**方案總覽**&#x200B;頁面)，並按一下您執行的管道旁的省略符號按鈕，從選單中選取&#x200B;**檢視詳情**。
 
-1. 系統會將您帶至執行中管道的詳細資訊頁面。
+1. 系統將會帶您前往執行中管道的詳細資訊頁面。
 
-![管道詳細資訊](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
+![管道詳情](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
-從這裡，您可以查看管道各個步驟的狀態，並擷取建置記錄以用於診斷用途。 請參閱檔案 [部署程式碼](/help/implementing/cloud-manager/deploy-code.md) 以取得更多資訊。
+從這裡您可以查看管道各個步驟的狀態，並擷取組建紀錄以進行診斷。如需詳細資訊，請參閱文件：[部署計劃碼](/help/implementing/cloud-manager/deploy-code.md)。
 
 >[!NOTE]
 >
->只能查看正在運行或至少已運行一次的管道的詳細資訊。
+>您只能查看正在執行或已執行至少一次的管道的詳細資訊。

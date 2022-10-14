@@ -1,105 +1,105 @@
 ---
 title: 企業開發團隊設定
-description: 了解如何設定和擴充您的企業開發團隊，並了解AEM as a Cloud Service如何支援您的開發流程。
+description: 了解如何設定和擴展您的企業開發團隊，並了解 AEM as a Cloud Service 如何支援您的開發流程。
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: a31c3693c9b2af9bd7f9d7f1f6fb0a61a4411df0
 workflow-type: tm+mt
 source-wordcount: '1444'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# AEMas a Cloud Service的企業開發團隊設定 {#enterprise-setup}
+# AEM as a Cloud Service 的企業開發團隊設定 {#enterprise-setup}
 
-了解如何設定和擴充您的企業開發團隊，並了解AEM as a Cloud Service如何支援您的開發流程。
+了解如何設定和擴展您的企業開發團隊，並了解 AEM as a Cloud Service 如何支援您的開發流程。
 
 ## 簡介 {#introduction}
 
-為了透過企業開發設定支援客戶，AEM as a Cloud Service與Cloud Manager及其專門建立的完全整合， [確信的CI/CD管道。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 這些管道和服務是根據最佳做法構建的，確保做到徹底 [測試和最高的程式碼品質。](/help/implementing/cloud-manager/code-quality-testing.md)
+為了支援具有企業開發設定的客戶，AEM as a Cloud Service 與 Cloud Manager 及其專門建置的[教條式 CI/CD 管道完全整合。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)這些管道和服務根據最佳實務建置，以確保整體的[ 測試和最高的計劃碼品質。](/help/implementing/cloud-manager/code-quality-testing.md)
 
-## Cloud Manager在企業團隊開發設定中的支援 {#cloud-manager}
+## 在企業團隊開發設定中 Cloud Manager 的支援 {#cloud-manager}
 
-為確保快速上線，Cloud Manager提供立即開始開發數位體驗所需的一切，包括Git存放庫，以儲存自訂內容，然後由Cloud Manager建立、驗證和部署。
+為確保快速入門，Cloud Manager 提供了立即開始開發數位體驗所需的一切，包括用於儲存自訂的 Git 存放庫，然後由 Cloud Manager 建置、驗證和部署。
 
-使用Cloud Manager，開發團隊可以經常致力於提交變更，而不需依賴Adobe人員。
+使用 Cloud Manager，開發團隊可以在不依賴 Adobe 人員的情況下頻繁提交變更。
 
-Cloud Manager提供三種類型的環境。
+Cloud Manager 中提供了三種類型的環境。
 
 * 開發
-* 分段
+* 測試
 * 生產
 
-可使用非生產管道將程式碼部署至開發環境。 對於測試環境和生產環境，生產管道會使用 [質量門](/help/implementing/cloud-manager/custom-code-quality-rules.md) 以驗證應用程式程式碼和設定變更。
+可以使用非生產管道將計劃碼部署到開發環境。測試和生產環境總是一起執行，從而確保在生產部署之前進行驗證作為最佳實務，生產管道使用[品質門檻](/help/implementing/cloud-manager/custom-code-quality-rules.md)來驗證應用計劃計劃碼和設定變更。
 
-生產管道會先將程式碼和設定部署至測試環境，測試應用程式，最後部署至生產環境。
+生產管道會先將計劃碼和設定部署到測試環境、測試應用計劃，最後部署到生產環境。
 
-隨時更新的Cloud ServiceSDK具有最新的AEMas a Cloud Service改善，可讓開發人員的本機硬體直接用於本機開發。 這使得可以以非常低的週轉時間實現快速開發。 因此，開發人員可以停留在熟悉的本機環境中，從多種開發工具中進行選擇，並在發現適合時推送至開發環境或生產環境。
+雲端服務 SDK 一律使用最新的 AEM as a Cloud Service 改善進行更新，允許直接利用開發人員的本機硬體進行本機開發。這可以在極短的返回時間內實現快速開發。因此，開發人員可以留在他們熟悉的本機環境中，並從各種開發工具中進行選擇，以在他們認為合適的時候推動開發環境或生產。
 
-Cloud Manager支援靈活的多團隊設定，可根據企業需求進行調整。 為確保有多個團隊進行穩定部署，同時避免某個團隊影響所有團隊的生產，Cloud Manager的確定管道一律會一起驗證並測試所有團隊的程式碼。
+Cloud Manager 支援靈活的多團隊設定，可以根據企業的需求進行調整。為了確保多個團隊的穩定部署，同時避免一個團隊影響所有團隊的生產情況，Cloud Manager 教條式管道總是一起驗證和測試來自所有團隊的計劃碼。
 
-## 真實世界範例 {#real-world-example}
+## 真實世界的範例 {#real-world-example}
 
-每個企業都有不同的需求，包括不同的團隊設定、流程和開發工作流程。 以下說明的設定供Adobe用於在AEMas a Cloud Service上提供體驗的數個專案。
+每個企業都有不同的需求，包括不同的團隊設定、流程和開發工作流程。Adobe 將下述設定用於在 AEM as a Cloud Service 之上提供體驗的多個專案。
 
-例如，Adobe Creative Cloud應用程式(例如Adobe Photoshop或Adobe Illustrator)包含教學課程、範例和指南等內容資源，供一般使用者使用。 用戶端應用程式會以無頭方式使用AEMas a Cloud Service、對AEM Cloud發佈層級進行API呼叫以擷取結構化內容（如JSON資料流），並運用 [AEMas a Cloud Service中的內容傳遞網路(CDN)](/help/implementing/dispatcher/cdn.md#content-delivery) 以最佳效能為結構化和非結構化內容提供服務。
+例如，Adobe Photoshop 或 Adobe Illustrator 等 Adobe Creative Cloud 應用計劃包括可供一般使用者使用的教學課程、範例和指南等內容資源。此內容由使用 AEM as a Cloud Service 的用戶端應用計劃以無頭方式使用，透過對 AEM 雲端發佈層進行 API 呼叫以將結構化內容擷取為 JSON 串流，並利用 [AEM as a Cloud Service 中的內容交付網路 (CDN)](/help/implementing/dispatcher/cdn.md#content-delivery)，以最佳效能提供結構化和非結構化內容。
 
-本專案的參與團隊會遵循下列程式。
+為本專案貢獻內容的團隊應遵循以下流程。
 
-每個團隊都會使用自己的開發工作流程，並有個別的Git存放庫。 額外的共用Git存放庫用於上線專案。 此Git存放庫包含Cloud Manager的Git存放庫根結構，包括共用Dispatcher設定。
+每個團隊都使用自己的開發工作流程並擁有單獨的 Git 存放庫。額外的共用 Git 存放庫用於入門專案。此 Git 存放庫包含 Cloud Manager 之 Git 存放庫的根結構，包括共用 Dispatcher 設定。
 
-若要上線新專案，須將清單列在共用Git存放庫根目錄的reactor Maven專案檔案中。 對於Dispatcher設定，會在Dispatcher專案內建立新的設定檔案。 然後，主要Dispatcher設定便會包含此檔案。 每個團隊都負責各自的Dispatcher設定檔案。 共用Git存放庫很少有變更，且通常只有在新專案上線時才需要變更。 主要工作由各專案團隊在各自的Git存放庫中完成。
+加入新專案需要在共用 Git 存放庫根目錄下的反應器 Maven 專案檔案中列出。對於 Dispatcher 設定，在 Dispatcher 專案中建立一個新的設定檔。然後此檔案會包含在主要 Dispatcher 設定中。每個團隊負責自己的 Dispatcher 設定檔。並不常對共用 Git 存放庫進行變更，通常僅在新專案入門時才需要。主要工作由每個專案團隊在自己的 Git 存放庫中完成。
 
 ![工作流程圖](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-每個的Git存放庫都使用 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 並遵循設定AEM專案的最佳實務。 唯一的例外是在共用Git存放庫中完成的Dispatcher設定，如上所述。
+各個 Git 存放庫都使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，因此遵循設定 AEM 專案的最佳實務。唯一的例外是在共用 Git 存放庫中完成的 Dispatcher 設定 (如上所述)。
 
-每個團隊依照git流程模型，使用兩個+ N分支的簡化git工作流程：
+每個團隊都會使用簡化的 Git 工作流程，其中包含兩個 + N 分支，遵循 Git 流程模型：
 
-* 穩定的發行分支包含生產代碼。
+* 穩定發行分支包含生產計劃碼。
 
-* 開發分支包含最新開發。
+* 開發分支包含最新的開發。
 
-* 為每個特徵建立新分支。
+* 對於每個功能，都會建立一個新分支。
 
-開發在特徵分支中完成。 特徵成熟後，將合併到開發分支中。 已完成和已驗證的功能會從開發分支中挑選，並合併到穩定分支中。
+開發是在功能分支中完成的。當功能成熟時，它會合併到開發分支中。從開發分支中挑選完成和驗證的功能並合併到穩定分支中。
 
-所有變更都是透過提取請求(PR)完成。 每個PR都會由品質閘門自動驗證。 聲納用於檢查程式碼的品質，並執行一組測試套裝，以確保新程式碼不會引入任何回歸。
+所有變更都是透過提取要求 (PR) 完成的。每個 PR 都由品質門檻自動驗證。Sonar 用於對計劃碼進行品質檢查，並執行一組測試套件以確保新計劃碼不會引入任何迴歸。
 
-Cloud Manager的Git存放庫中的設定有兩個分支。
+Cloud Manager 的 Git 存放庫中的設定有兩個分支。
 
-* 穩定的發行分支包含所有團隊的生產代碼。
-* 開發分支包含所有團隊的開發程式碼。
+* 穩定發行分支包含自所有團隊的生產計劃碼。
+* 開發分支包含來自所有團隊的開發計劃碼。
 
-開發或穩定分支中推送至團隊的Git存放庫時，都會觸發 [GitHub動作。](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
+在開發或穩定分支中，每次推送到團隊的 Git 存放庫都會觸發 [GitHub 動作。](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
 
-所有項目都遵循穩定分支的相同設定。 推送至專案的穩定分支會自動推送至Cloud Manager的Git存放庫中的穩定分支。 Cloud Manager中的生產管道設定為透過推送至穩定分支而觸發。 因此，生產管道會由任何團隊的每個推送執行至穩定的分支，而且，如果所有品質閘道都通過，生產部署會更新。
+所有專案都遵循相同的穩定分支設定。推送到專案的穩定分支會自動推送到 Cloud Manager Git 存放庫中的穩定分支。Cloud Manager 中的生產管道設定為透過推送到穩定分支來觸發。因此，生產管道由任何團隊每次推送到穩定分支來執行，如果所有品質門檻都透過，生產部署就會更新。
 
-![推播圖表](/help/implementing/cloud-manager/assets/team-setup2.png)
+![推送圖](/help/implementing/cloud-manager/assets/team-setup2.png)
 
-推送至開發分支的處理方式不同。 推送至團隊Git存放庫中的開發人員分支時，也會觸發GitHub動作，且程式碼會自動推送至Cloud Manager Git存放庫的開發分支，而程式碼推送不會自動觸發非生產管道。 這會由呼叫Cloud Manager的API觸發。
+推送到開發分支的處理方式不同。雖然推送到團隊 Git 存放庫中的開發人員分支也會觸發 GitHub 動作，且計劃碼會自動推送到 Cloud Manager Git 存放庫中的開發分支，但計劃碼推送不會自動觸發非生產管道。它由呼叫 Cloud Manager 的 API 觸發。
 
-執行生產管道包括透過提供的品質閘道檢查所有團隊的程式碼。 將程式碼部署至預備後，會執行測試和稽核，以確保一切皆如預期般運作。 一旦所有門都通過，更改就可以在生產環境中進行，而不會發生任何中斷或停機。
+執行生產管道包括透過提供的品質門檻檢查所有團隊的計劃碼。將計劃碼部署到階段後，將執行測試和稽核以確保一切如期運作。透過了所有的門檻後，這些變更就會在沒有任何中斷或停機的情況下推廣到生產中。
 
-就地方發展而言， [AEM適用的SDKas a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing) 中所有規則的URL區段。 SDK可讓您設定本機作者、發佈和調度程式。 這可讓離線開發及快速週轉時間。 有時只會使用製作環境進行開發，但快速設定Dispatcher和發佈環境，可在將一切都推送至Git存放庫之前，先在本機測試。
+對於本機開發，使用[適用於 AEM as a Cloud Service的 SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing)。SDK 可設定本機作者、發佈和 Dispatcher。這讓離線開發和快速返回時間有可能實現。有時只使用作者環境進行開發，但快速設定 Dispatcher 和發佈環境允許在推送至 Git 存放庫之前在本機測試所有內容。
 
-每個團隊的成員通常會從的共用Git結帳程式碼，以及其專案程式碼。 由於專案獨立，因此不需要結帳其他專案。
+每個團隊的成員通常會從共用的 Git 中簽出計劃碼以及他們自己的專案計劃碼。由於專案是獨立的，因此無需簽出其他專案。
 
-![本機結帳和SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
+![本機簽出和 SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
-這個現實世界的設定可作為藍圖，然後根據企業的需求進行自訂。 Git的彈性分支和合併概念可提供上述工作流程的各種變數，並根據每個團隊的需求加以自訂。 AEM as a Cloud Service支援所有這些變異，但不會犧牲確信的Cloud Manager管道的核心值。
-
->[!TIP]
->
->請參閱該文檔 [使用多個來源Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code) 以深入了解此設定。
-
-### 多團隊設定的考量事項 {#considerations}
-
-透過Cloud Manager的git存放庫和生產管道，完整的生產程式碼一律會在所有品質入口執行，並將其視為一個部署單位。 這樣，生產系統就始終處於正常運行狀態，不會中斷或停機。
-
-相反，如果沒有這樣的系統，因為每個團隊都可以單獨部署，所以來自單個團隊的更新可能會導致生產穩定性問題。 此外，它需要協調和計畫內停機，才能推出更新。 隨著團隊人數的增加，協調工作將變得複雜得多，而且很快無法管理。
-
-如果在質量門中檢測到問題，則不影響生產，並且可以檢測並修復問題，而不需要Adobe人員介入。 如果不進行Cloud Service，而且不總是要測試整個部署，部分部署可能會導致停機，需要請求回滾，甚至需要從備份中完全恢復。 部分測試也可能導致其他問題，在事實再次發生後，這些問題需要Adobe人員的協調和支援。
+這種現實世界的設定可以作為藍圖，然後根據企業的需求進行自訂。Git 靈活的分支和合併概念能容許上述工作流程的變化，並根據每個團隊的需求進行自訂。AEM as a Cloud Service 支援這些變化，而不會犧牲教條式 Cloud Manager 管道的核心價值。
 
 >[!TIP]
 >
->對於任何多團隊設定，定義治理模式和一套所有團隊都必須遵循的標準至關重要。 多團隊設定的上一個藍圖可讓更多團隊擴充，以供您作為起點。
+>若想了解此設定的更多資訊，請參閱文件：[使用多來源 Git 存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=zh-Hant#managing-code)。
+
+### 多團隊設定的注意事項 {#considerations}
+
+藉由 Cloud Manager 的 Git 存放庫和生產管道，完整的生產計劃碼一律透過所有品質門檻執行，並將其視為一個部署單位。這樣，生產系統一律處於執行狀態而不會中斷或停機。
+
+相反，如果沒有這樣的系統，因為每個團隊都可以單獨部署，所以單個團隊的更新可能會導致生產穩定性問題。此外，它需要協調和規劃停機時間來推出更新。隨著團隊數量增加，協調工作將變得更加複雜且很快會變得難以管理。
+
+如果在品質門檻中偵測到問題則不會影響生產，且無需 Adobe 人員介入即可偵測和修復問題。如果沒有 Cloud Service 且沒有總是測試整個部署，部分部署可能會造成中斷，需要要求復原甚至從備份中完全還原。部分測試還可能導致其他問題，而這些問題需要在事後由 Adobe 人員協調和支援來解決。
+
+>[!TIP]
+>
+>對於任何多團隊設定，定義治理模型和所有團隊都必須遵循的一組標準至關重要。之前的多團隊設定藍圖允許跨大量團隊進行擴展，您可以將其作為起點。

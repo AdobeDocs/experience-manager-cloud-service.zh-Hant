@@ -1,41 +1,41 @@
 ---
-title: 新增IP允許清單
-description: 了解如何使用Cloud Manager新增您自己的IP允許清單。
+title: 新增 IP 允許清單
+description: 了解如何使用 Cloud Manager 新增您自己的 IP 允許清單。
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 source-git-commit: 378ff582435f1ab3db431a0c9c3e80a4661cccc4
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# 新增IP允許清單 {#add-ip-allow-list}
+# 新增 IP 允許清單 {#add-ip-allow-list}
 
-了解如何使用Cloud Manager新增您自己的IP允許清單。
+了解如何使用 Cloud Manager 新增您自己的 IP 允許清單。
 
-中的使用者 **業務負責人** 或 **部署管理員** 角色可依照下列步驟新增IP允許清單。
+具有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的使用者可以按照以下步驟新增 IP 允許清單。
 
-1. 登入Cloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇適當的組織和方案。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 導覽至 **環境** 螢幕 **概述** 頁面。
+1. 從&#x200B;**總覽**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 
-1. 導覽至 **IP允許清單** 頁面 **環境** 螢幕。
+1. 從&#x200B;**環境**&#x200B;畫面瀏覽到&#x200B;**IP 允許清單**&#x200B;頁面。
 
-   ![側面板中的IP允許清單選項](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
+   ![IP 側面板中的允許清單選項](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
-1. 按一下 **添加IP允許清單** 開啟 **添加IP允許清單** 對話框。
+1. 點擊&#x200B;**新增 IP 允許清單**&#x200B;打開&#x200B;**新增 IP 允許清單**&#x200B;對話。
 
-   ![添加IP允許清單對話框](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
+   ![新增 IP 允許清單對話框](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. 輸入要用來參考 **IP允許清單名稱** 欄位。
+1. 在&#x200B;**IP 允許清單名稱**&#x200B;欄位。
 
-   * 這僅提供資訊，且應具有描述性，以協助您識別清單。
+   * 這僅供參考，應該是描述性的，以幫助您識別清單。
 
-1. 在 **IP位址/CIDR** 欄位。
+1. 在&#x200B;**IP 地址/CIDR**&#x200B;場地。
 
-   * 多個區塊可以以逗號或索引標籤分隔。
+   * 多個區塊可以用逗號或製表符分隔。
 
-1. 按一下 **儲存** 確認您的提交。
+1. 按一下&#x200B;**「儲存」**，確認您的提交內容。
 
-儲存時，新建立的IP允許清單會以列的形式顯示在 **IP允許清單** 頁面。
+保存後，新建立的 IP 允許清單將在&#x200B;**IP 允許清單**&#x200B;頁。
