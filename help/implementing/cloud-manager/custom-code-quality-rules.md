@@ -2,10 +2,10 @@
 title: 自訂計劃碼品質規則
 description: 本頁說明了 Cloud Manager 在計劃碼品質測試過程中執行的自訂計劃碼品質規則。它們是根據 AEM Engineering 的最佳實務。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: d7509556e4ae7a377498f2de2bae57f3557522ac
 workflow-type: tm+mt
 source-wordcount: '3493'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >title="自訂計劃碼品質規則"
 >abstract="本頁說明了 Cloud Manager 在計劃碼品質測試過程中執行的自訂計劃碼品質規則。它們是根據 AEM Engineering 的最佳實務。"
 
-本頁說明了 Cloud Manager 在[計劃碼品質測試過程中執行的自訂計劃碼品質規則。](/help/implementing/cloud-manager/code-quality-testing.md)它們是根據 AEM Engineering 的最佳實務。
+本頁說明Cloud Manager在 [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md). 它們是根據 AEM Engineering 的最佳實務。
 
 >[!NOTE]
 >
