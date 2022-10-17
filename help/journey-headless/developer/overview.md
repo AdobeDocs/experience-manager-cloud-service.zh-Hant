@@ -1,12 +1,12 @@
 ---
 title: AEM Headless Developer Journey
-description: 從這裡開始，as a Cloud Service於Adobe Experience Manager(AEM)作為無頭式內容管理系統(CMS)時，進行引導式歷程。 了解功能強大、靈活的無頭式功能、其功能，以及如何在您的第一個無頭式開發專案中運用這些功能。 此歷程提供您開發第一個無頭應用程式所需的所有資訊。
+description: 了解如何使用Adobe Experience Manager(AEM)作為無頭式CMS，開發您的專案以傳送無頭式內容。 了解如何使用內容模型、內容片段和GraphQL API等功能來提供無周邊體驗。
 landing-page-description: 了解無頭式內容的傳送和實作。 進一步了解如何在您的企業中開發您的策略。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 1424c604e175cce0728f49f548d0bebec76043f4
+source-git-commit: 2d0856b7370b6b50935378ad26c7361e95820f4d
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 1%
+source-wordcount: '1273'
+ht-degree: 9%
 
 ---
 
@@ -24,11 +24,11 @@ AEM的無頭式實作使用內容片段模型和內容片段，著重於建立�
 * 了解AEM無頭功能，以及它們如何共同合作以提供無頭體驗。
 * 能夠採取實作第一個AEM無頭專案的前幾個步驟。
 
-## AEM檔案歷程 {#documentation-journeys}
+## AEM 文件歷程 {#documentation-journeys}
 
-[檔案歷程](/help/journey-documentation/documentation-journeys.md) 將許多不同的、可能複雜的主題和特徵聯繫起來，提供一種敘述，幫助讀者從頭到尾理解並解決業務問題，同時假定事先的主題或AEM知識最少。
+[文件歷程](/help/journey-documentation/documentation-journeys.md)提供敘述來協助剛開始使用 AEM 的讀者，讓他們能從頭到尾理解和解決業務問題，同時將採用的先前主題或 AEM 知識降至最低，藉以連結許多不同且複雜的主題和功能。
 
-說明檔案歷程是根據最佳實務原則而設計，根據Adobe的最新研究、Adobe顧問經驗證的實作經驗，以及客戶專案的意見回饋。
+文件歷程根據最佳實務原則而設計，其中包含 Adobe 的最新研究、Adobe 顧問的成熟實施經驗以及客戶專案的意見回饋。
 
 如果您想了解Adobe建議如何使用AEM解決無頭式業務案例， [AEM無頭歷程](/help/journey-documentation/documentation-journeys.md) 是開始的位置。
 
@@ -55,11 +55,11 @@ AEM的無頭式實作使用內容片段模型和內容片段，著重於建立�
 
 您將在此歷程中探索許多主題。 以下文章提供您AEM中無頭的基礎知識，並連結至詳細的技術檔案。
 
-雖然您可以直接前往歷程的特定部分，但許多概念都是以先前文章中的概念為基礎而建立。 因此，如果您剛接觸AEM中的無頭部，建議您從頭開始，依序進行。
+儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。因此，如果您剛接觸AEM中的無頭部，建議您從頭開始，依序進行。
 
 | # | 文章 | 說明 |
 |---|---|---|
-| 0 | AEM Headless Developer Journey | 此文檔 |
+| 0 | AEM Headless Developer Journey | 本文件 |
 | 1 | [了解CMS無頭開發](learn-about.md) | 了解無頭技術及其使用時機。 |
 | 2 | [AEM Headlessas a Cloud Service快速入門](getting-started.md) | 了解AEM Headless必要條件 |
 | 3 | [使用AEM Headless的第一次體驗路徑](path-to-first-experience.md) | 設定您的開發環境，並了解如何將簡單應用程式與AEM Headless整合 |
