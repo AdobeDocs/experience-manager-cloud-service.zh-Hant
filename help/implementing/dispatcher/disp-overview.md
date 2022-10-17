@@ -3,10 +3,10 @@ title: 雲端中的 Dispatcher
 description: 雲端中的 Dispatcher
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 6%
+source-wordcount: '998'
+ht-degree: 7%
 
 ---
 
@@ -50,11 +50,24 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 Dispatcher工具可用來驗證專案的Dispatcher設定並除錯。 進一步了解如何根據專案的Dispatcher設定是以彈性模式還是舊式模式建構，在以下參考的頁面中使用這些工具：
 
-* **彈性模式**  — 建議的模式，以及 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 以及更高版本，Cloud Manager也用於Cloud Manager 2021.7.0版之後建立的新環境。 客戶可以新增資料夾和檔案來啟動此模式 `opt-in/USE_SOURCES_DIRECTLY`. 使用此更靈活的模式時，重寫資料夾下的檔案結構沒有限制，在舊版模式中，只需單一 `rewrite.rules` 檔案。 此外，您可新增的規則數目並無限制。 如需資料夾結構和本機驗證的詳細資訊，請參閱 [使用Dispatcher工具進行驗證和除錯](/help/implementing/dispatcher/validation-debug.md).
+* **彈性模式**  — 建議的模式，以及 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 以及更高版本，Cloud Manager也用於Cloud Manager 2021.7.0版之後建立的新環境。 客戶可以新增資料夾和檔案來啟動此模式 `opt-in/USE_SOURCES_DIRECTLY`. 使用此更靈活的模式時，重寫資料夾下的檔案結構沒有限制，在舊版模式中，只需單一 `rewrite.rules` 檔案。 此外，您可新增的規則數目並無限制。 如需資料夾結構和本機驗證的詳細資訊，請參閱 [使用Dispatcher工具進行驗證和除錯](/help/implementing/dispatcher/validation-debug.md).
 
 * **舊式模式**  — 如需dispatcher設定舊版模式的資料夾結構和本機驗證的詳細資訊，請參閱 [使用Dispatcher工具（舊版）進行驗證和除錯](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 如需如何從舊版設定模型移轉至更具彈性模型(隨附於AEM原型28)的詳細資訊，請參閱 [本檔案](/help/implementing/dispatcher/validation-debug.md#migrating).
+
+## 內容處置 {#content-disposition}
+
+對於發佈層級，提供Blob的預設值為附件。 這可以使用標準來覆寫 [內容處置標題](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) 在dispatcher中。
+
+以下是設定看起來的範例：
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## 支援的Apache模組 {#supported-directives}
 
