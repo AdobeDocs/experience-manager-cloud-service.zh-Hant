@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service上使用用戶端程式庫
 description: AEM提供用戶端程式庫資料夾，可讓您將用戶端程式碼(clientlibs)儲存在存放庫中、將其組織為類別，以及定義將每個類別的程式碼提供給用戶端的時間和方式
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
+source-git-commit: b93ec12616742910e35a3dac4224b690cd2c7116
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2567'
 ht-degree: 1%
 
 ---
@@ -114,7 +114,7 @@ AEM會將網站的CSS和Javascript收集到集中位置的單一檔案，以確�
 
 此 `allowProxy` 屬性可讓您要求：
 
-* clientlib（通過j）`/etc.clientlibs/myprojects/clientlibs/foo.js`
+* clientlib(透過 `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * 靜態影像，透過 `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
 
 ### 透過HTL載入用戶端程式庫 {#loading-via-htl}
