@@ -1,11 +1,11 @@
 ---
 title: AEM Headless Developer Journey
-description: 了解如何使用Adobe Experience Manager(AEM)作為無頭式CMS，開發您的專案以傳送無頭式內容。 了解如何使用內容模型、內容片段和GraphQL API等功能來提供無周邊體驗。
+description: 了解如何使用Adobe Experience Manager(AEM)作為無頭式CMS進行無頭式開發。 了解如何使用內容模型、內容片段和GraphQL API等功能，強化無周邊內容的傳送。
 landing-page-description: 了解無頭式內容的傳送和實作。 進一步了解如何在您的企業中開發您的策略。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 2d0856b7370b6b50935378ad26c7361e95820f4d
+source-git-commit: 8932a8f158fe478d23457ac24afdd17f05a048f5
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1268'
 ht-degree: 9%
 
 ---
