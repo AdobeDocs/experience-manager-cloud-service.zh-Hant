@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: ac7e4f7d7b771c392d8f67bd0751dfeede970a5f
 workflow-type: tm+mt
-source-wordcount: '2255'
+source-wordcount: '2246'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,9 @@ ht-degree: 1%
 
 需要設定套件的篩選器，以保留現有（現成的索引）。 在檔案中 `ui.apps/src/main/content/META-INF/vault/filter.xml`，則每個自訂（或自訂）索引都需列出，例如 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. 如果稍後變更了索引版本，則需要調整篩選器。
 
-上述範例中的套件會建置為 `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
 
 >[!NOTE]
 >
