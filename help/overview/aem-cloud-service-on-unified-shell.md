@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service於Unified Shell
 description: AEMas a Cloud Service於Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
+source-git-commit: 51ecb21bf479cfaacb01a9c99c88d7f112f6ff95
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '370'
 ht-degree: 1%
 
 ---
@@ -30,14 +30,14 @@ AEM as a Cloud Service與Unified Shell整合，以改善使用者體驗，並與
 * 在組織之間輕鬆切換或切換到不同的應用程式
 * 改善產品說明
 * 輕鬆的產品內意見回饋按鈕，可回報問題或與Adobe分享意見
-* 除了通知專用的AEMas a Cloud Service外，還可存取全球產品公告和通知
+* 存取全球產品公告和通知，以及AEMas a Cloud Service專屬通知
 
 ## 禁用統一殼層 {#disabling-unified-shell}
 
 現成可用的AEMas a Cloud Service已啟用統一殼層。 但是，如果已自訂頂端標題，建議停用統一殼層，以避免自訂的任何問題。 要禁用統一殼，請執行以下步驟：
 
 >[!NOTE]
->只有具有管理權限的帳戶才能禁用統一的Shell。
+>只有具有管理權限的帳戶才能停用統一殼層。
 
 1. 前往 **工具 — Cloud Services**.
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service與Unified Shell整合，以改善使用者體驗，並與
 
    ![影像](/help/overview/assets/unifiedshell3.png)
 
-## 變更為深色主題 {#chaning-to-dark-theme}
+## 變更為深色主題 {#changing-to-dark-theme}
 
 若要變更為深色主題，請按一下您的設定檔圖示。 這會顯示快顯視窗，如下所示。 您可以使用切換按鈕，切換至「統一殼層」的深色主題。
 
