@@ -2,9 +2,9 @@
 title: AEM中的內容還原as a Cloud Service
 description: 了解如何使用Cloud Manager從備份還原AEMas a Cloud Service內容。
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 564be5a7bcbcab95b1bbf824b01f80e018aae2a2
+source-git-commit: a32b8d94be8119854e21fc89456474ac554082a3
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1262'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Cloud Manager提供兩種備份類型，您可以從中恢復內容。
 在AEM as a ContentService中還原內容的效能量度指的是標準基準：
 
 * **恢復時間目標(RTO):** 恢復時間目標會根據儲存庫的大小而有所不同，但根據經驗，恢復序列一旦開始，大約需要30分鐘。
-* **恢復點目標(RPO):** 恢復點目標取決於您的實例已運行多久：
+* **恢復點目標(RPO):** 恢復點目標取決於所選恢復時間過去的距離：
    * 前24小時運行：24小時內的任何時間點。
    * 24小時後：前六天最多12小時。
 
