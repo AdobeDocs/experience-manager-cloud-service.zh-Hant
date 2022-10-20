@@ -2,10 +2,10 @@
 title: AEM中的內容還原as a Cloud Service
 description: 了解如何使用Cloud Manager從備份還原AEMas a Cloud Service內容。
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: e816bd55b8b5febb19566f3d6009e6f5e823b22e
+source-git-commit: 564be5a7bcbcab95b1bbf824b01f80e018aae2a2
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 0%
+source-wordcount: '1259'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,9 @@ Cloud Manager提供兩種備份類型，您可以從中恢復內容。
 在AEM as a ContentService中還原內容的效能量度指的是標準基準：
 
 * **恢復時間目標(RTO):** 恢復時間目標會根據儲存庫的大小而有所不同，但根據經驗，恢復序列一旦開始，大約需要30分鐘。
-* **恢復點目標(RPO):** 恢復點目標最大為24小時
+* **恢復點目標(RPO):** 恢復點目標取決於您的實例已運行多久：
+   * 前24小時運行：24小時內的任何時間點。
+   * 24小時後：前六天最多12小時。
 
 >[!TIP]
 >
@@ -67,7 +69,7 @@ Cloud Manager提供兩種備份類型，您可以從中恢復內容。
 >
 >使用 **業務負責人** 或 **部署管理員** 必須登錄角色，才能啟動還原操作。
 
-1. 登入Cloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選取適當的組織。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
 1. 按一下要啟動還原的程式。
 
@@ -112,7 +114,7 @@ Cloud Manager提供兩種備份類型，您可以從中恢復內容。
 
 ## 選擇正確的備份 {#choosing-backup}
 
-僅將內容還原為AEM。 因此，您必須仔細考慮在所需還原點和當前時間之間所做的代碼更改，方法是查看當前提交ID和要還原到的ID之間的提交歷史記錄。
+僅將內容還原為AEM。 因此，您必須仔細考慮在所需的還原點和當前時間之間所做的代碼更改，方法是查看當前提交ID和要還原到的ID之間的提交歷史記錄。
 
 有幾種情況。
 
