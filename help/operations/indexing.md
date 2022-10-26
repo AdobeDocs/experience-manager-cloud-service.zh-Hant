@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: ac7e4f7d7b771c392d8f67bd0751dfeede970a5f
+source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2289'
 ht-degree: 1%
 
 ---
@@ -34,11 +34,6 @@ ht-degree: 1%
 1. 在AEMas a Cloud Service的高層級，導入 [藍綠色部署模型](#index-management-using-blue-green-deployments) 將存在兩組索引：一個為舊版（藍色）設定，另一個為新版（綠色）設定。
 
 1. 客戶可以在Cloud Manager建置頁面上查看索引工作是否已完成，並會在新版本準備好接收流量時收到通知。
-
-1. 限制:
-* 目前，AEMas a Cloud Service上的索引管理僅支援類型的索引 `lucene`.
-* 僅支援標準分析器（即隨產品提供的分析器）。 不支援自訂分析器。
-* 在內部，可以配置其他索引並用於查詢。 例如，針對 `damAssetLucene` 索引在Skyline上，實際上可能會針對此索引的Elasticsearch版本執行。 應用程式和使用者通常看不到此差異，但某些工具(例如 `explain` 功能會報告不同的索引。 有關Lucene索引和Elastic索引之間的差異，請參見 [Apache Jackrabbit Oak中的彈性檔案](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 客戶不需要也無法直接設定Elasticsearch索引。
 
 ## 使用方式 {#how-to-use}
 
@@ -221,7 +216,11 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 目前限制 {#current-limitations}
 
-當前僅支援類型的索引的索引管理 `lucene`. 在內部，可以配置其他索引，並用於查詢，例如彈性索引。
+當前僅支援類型的索引的索引管理 `lucene`，使用 `compatVersion` 設為 `2`. 在內部，可以配置其他索引並用於查詢，例如Elasticsearch索引。 針對 `damAssetLucene` 在AEMas a Cloud Service上，索引實際上可能會針對此索引的Elasticsearch版本執行。 此差異對應用程式最終用戶不可見，但某些工具(如 `explain` 功能會報告不同的索引。 有關Lucene和Elasticsearch索引之間的差異，請參見 [Apache Jackrabbit Oak中的Elasticsearch檔案](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 客戶不能也不需要直接配置Elasticsearch索引。
+
+僅支援內建分析器（即產品隨附的分析器）。 不支援自訂分析器。
+
+為獲得最佳運行效能，索引不應過大。 所有索引的總大小都可作為指南：如果在新增自訂索引並在開發環境中調整標準索引後，此值增加超過100%，則應調整自訂索引定義。 AEM as a Cloud Service可防止部署會對系統穩定性和效能產生負面影響的索引。
 
 ### 添加索引 {#adding-an-index}
 
