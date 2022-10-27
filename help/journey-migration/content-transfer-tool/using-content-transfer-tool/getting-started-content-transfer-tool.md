@@ -2,10 +2,10 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 501441717f541439ac8d914f1e419491399e6667
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 7%
+source-wordcount: '1292'
+ht-degree: 8%
 
 ---
 
@@ -34,16 +34,8 @@ ht-degree: 7%
 
 源AEM實例可能在防火牆後運行，在防火牆中它只能訪問已添加到允許清單中的某些主機。 若要成功執行擷取，必須從執行AEM的執行個體存取下列端點：
 
-* 目標AEMas a Cloud Service環境： `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 * Azure blob儲存服務： `casstorageprod.blob.core.windows.net`
 * 用戶映射IO終結點： `usermanagement.adobe.io`
-
-若要測試與目標AEMas a Cloud Service環境的連線，請從來源例項的殼層發出下列cURL命令(取代 `program_id`, `environment_id`，和 `migration_token`):
-
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
-
->[!NOTE]
->若 `HTTP/2 200` 收到時，與AEMas a Cloud Service的連線成功。
 
 ### 啟用SSL記錄 {#enable-ssl-logging}
 
@@ -111,7 +103,7 @@ ht-degree: 7%
 
 若要填入您在Cloud Acceleration Manager中建立的移轉集，您必須在來源Adobe Experience Manager(AEM)執行個體上安裝最新版的「內容轉移工具」。 請依照本節了解如何填入移轉集。
 
-1. 在來源Adobe Experience Manager例項上安裝最新版本(v2.0.10)的「內容轉移工具」後，請前往 **操作 — 內容遷移**
+1. 在您的來源Adobe Experience Manager例項上安裝最新版「內容轉移工具」後，請前往 **操作 — 內容遷移**
 
 1. 按一下 **建立移轉集**
 
