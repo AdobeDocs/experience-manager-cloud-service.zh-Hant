@@ -2,9 +2,9 @@
 title: 查詢產生器述詞參考
 description: 查詢產生器API的述詞參考。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3c7e6d2213e059b1b8a90feea4672a4436873a01
 workflow-type: tm+mt
-source-wordcount: '2221'
+source-wordcount: '2268'
 ht-degree: 1%
 
 ---
@@ -244,10 +244,12 @@ group.2_group.type=dam:Asset
 * **`path`**  — 這會定義路徑模式。
    * 視 `exact` 屬性，則整個子樹狀結構會相符(例如附加 `//*` 在xpath中，但請注意，這不包含基本路徑)，或僅包含完全相符的路徑，其中可能包含萬用字元(`*`)。
       * 預設為 `true`
-   * 若 `self`屬性已設定，則會搜尋包含基礎節點的整個子樹狀結構。
+
+<!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
 * **`exact`**  — 如果 `exact` is `true`，則完全路徑必須符合，但可包含簡單的萬用字元(`*`)，該名稱符合，但不符合 `/`;如果 `false` （預設）包含所有子系（可選）
 * **`flat`**  — 僅搜索直接子項(如附加 `/*` (僅用於 `exact` 不是true，選用)
-* **`self`**  — 搜索子樹，但包含指定為路徑的基節點（無通配符）
+* **`self`**  — 搜尋子樹狀結構，但包含指定為路徑的基節點（無萬用字元）。
+   * *重要備注*:已識別問題 `self` 屬性在查詢建立器的目前實施中及在查詢中使用可能無法產生正確的搜尋結果。 變更目前的實作 `self` 屬性也不可行，因為它可能會破壞依賴它的現有應用程式。 因此， `self` 屬性已遭取代，建議避免使用。
 
 ### 屬性 {#property}
 
