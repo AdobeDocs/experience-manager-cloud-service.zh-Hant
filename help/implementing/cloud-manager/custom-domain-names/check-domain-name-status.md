@@ -2,10 +2,10 @@
 title: 檢查網域名稱狀態
 description: 了解如何確定您的自訂網域名稱是否已透過 Cloud Manager 成功驗證。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '663'
+ht-degree: 71%
 
 ---
 
@@ -52,23 +52,35 @@ Cloud Manager 將透過 TXT 值驗證網路擁有權，並顯示以下其中一�
 
 ## 網域名稱錯誤 {#domain-error}
 
-本節說明您可能會看到的錯誤以及如何解決這些錯誤。
+以下是常見的網域名稱錯誤及其典型解析度。
 
-**未安裝網域** - 即使您檢查記錄已正確更新，也會在 TXT 記錄的網域驗證期間收到此錯誤。
+### 未安裝域錯誤 {#domain-not-installed}
 
-**錯誤說明** - Fastly 會將網域鎖定到註冊它的初始帳戶，沒有其他帳戶可以在未經許可的情況下註冊子網域。此外，Fastly 只允許您將一個頂點網域和關聯的子網域指派給一個 Fastly 服務和帳戶。如果您有現有的 Fastly 帳戶，該帳戶連結了用於 AEM Cloud Service 網域的相同頂點和子網域，您將看到此錯誤。
+即使您已檢查記錄是否已適當更新，在TXT記錄的網域驗證期間仍可能發生此錯誤。
 
-**錯誤解決** - 錯誤修復如下：
+#### 錯誤原因 {#cause}
 
-* 在 Cloud Manager 中安裝網域之前，從現有帳戶中移除頂點和子網域。使用此選項可將頂點網域和所有子網域連結到 AEM as a Cloud Service Fastly 帳戶。如需詳細資訊，請參閱[在 Fastly 文件中使用網域](https://docs.fastly.com/en/guides/working-with-domains)。
+以快速方式將域鎖定到註冊該域的初始帳戶，而沒有其他帳戶可以在未請求權限的情況下註冊子域。 此外，Fastly 只允許您將一個頂點網域和關聯的子網域指派給一個 Fastly 服務和帳戶。如果您有現有的 Fastly 帳戶，該帳戶連結了用於 AEM Cloud Service 網域的相同頂點和子網域，您將看到此錯誤。
 
-* 如果您的頂點網域有多個用於 AEM as a Cloud Service 和非 AEM as a Cloud Service 網站的子網域，而您希望將其連結到不同的 Fastly 帳戶，然後嘗試在 Cloud Manager 中安裝網域，如果網域安裝失敗，請建立 Fastly 的客戶支援票證，以便我們代表您跟進 Fastly。
+#### 錯誤解決 {#resolution}
+
+錯誤已修正如下：
+
+* 在 Cloud Manager 中安裝網域之前，從現有帳戶中移除頂點和子網域。
+
+* 使用此選項可將頂點網域和所有子網域連結到 AEM as a Cloud Service Fastly 帳戶。如需詳細資訊，請參閱[在 Fastly 文件中使用網域](https://docs.fastly.com/en/guides/working-with-domains)。
+
+* 如果您的Apex網域有多個子網域，供您要連結至不同Abply帳戶的AEMas a Cloud Service和非AEMas a Cloud Service網站之用，請嘗試在Cloud Manager中安裝網域。 如果域安裝失敗，請使用Ampley建立「客戶支援」票證，以便Adobe可以代表您跟進Amply。
+
+>[!TIP]
+>
+>使用Ampley解決網域委派問題通常需要1至2個工作天。 因此，強烈建議您在網域上線日期之前先安裝網域。
 
 >[!NOTE]
 >
->注意：如果網域未成功安裝，請勿將網站的 DNS 路由到 AEM as a Cloud Service IP。
+>如果未成功安裝網域，請勿將網站的DNS路由至AEMas a Cloud ServiceIP。
 
-## 自訂網域名稱的預先存在 CDN 設定 {#pre-existing-cdn}
+## 自訂網域名稱的現有CDN設定 {#pre-existing-cdn}
 
 如果您有自訂網域名稱的預先存在 CDN 設定，則&#x200B;**自訂網域名稱**&#x200B;和&#x200B;**環境**&#x200B;頁面上將顯示一則資訊訊息，鼓勵您透過 UI 新增這些設定，以便在 Cloud Manager 中顯示和設定它們。
 

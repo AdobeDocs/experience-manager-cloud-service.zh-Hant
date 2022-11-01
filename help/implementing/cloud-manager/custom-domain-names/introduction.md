@@ -2,10 +2,10 @@
 title: 自訂網域名稱簡介
 description: Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 92%
+source-wordcount: '665'
+ht-degree: 84%
 
 ---
 
@@ -64,3 +64,7 @@ Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一�
 | 5 | 檢查 DNS 記錄狀態 | 客戶 | [檢查 DNS 記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5a | 如果 DNS 記錄狀態失敗：`DNS status not detected` | 客戶 | [檢查 DNS 記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5b | 如果 DNS 記錄狀態失敗：`DNS resolves incorrectly` | 客戶 | [檢查 DNS 記錄狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+
+>[!TIP]
+>
+>使用AEM as a Cloud Service設定自訂網域名稱通常是簡單的程式。 不過，有時候網域委派問題可能會發生，而這可能需要1至2個工作天才能解決。 因此，強烈建議您在網域上線日期之前先安裝網域。 請參閱檔案 [檢查域名狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以取得更多資訊。
