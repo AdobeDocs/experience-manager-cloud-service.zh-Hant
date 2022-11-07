@@ -2,9 +2,9 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
+source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
 workflow-type: tm+mt
-source-wordcount: '1987'
+source-wordcount: '1975'
 ht-degree: 8%
 
 ---
@@ -306,7 +306,7 @@ ht-degree: 8%
    * 您可以更新可用欄位中的值。
       * 當您選取 **完成**.
       * 當欄位為多值時（例如「標籤」），您可以附加新值或移除通用值。
-   * 在不同頁面上共有但值不同的欄位，將會以特殊值（例如文字）指出 `<Mixed Entries>`. 編輯此類欄位時應謹慎處理，以防止資料遺失。
+   * 在不同頁面上共有但值不同的欄位，將會以特殊值（例如文字）指出 `<Mixed Entries>`.
 
 >[!NOTE]
 >
