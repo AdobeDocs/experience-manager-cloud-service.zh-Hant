@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service於Unified Shell
 description: AEMas a Cloud Service於Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 53e22737e62835872e47ac07530078c3d1dfcf31
+source-git-commit: 5d9acdd9b6a377a7509e0638984cb40983fa6652
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '372'
 ht-degree: 1%
 
 ---
@@ -58,12 +58,6 @@ AEMas a Cloud Service（作者服務）與Unified Shell整合，以改善使用�
 >深色主題僅適用於「統一殼層」（頂端列）。
 
 ![影像](/help/overview/assets/unifiedshell4.png)
-
-## 識別AEMas a Cloud Service環境 {#identify-aemaacs-environment}
-
-AEMas a Cloud Service提供三種環境：生產、預備和開發。 請參閱 [環境類型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) 以取得更多詳細資訊。 透過與Unified Shell的整合，使用者登入Author服務的環境類型會透過標籤顯示在頂端標題上，如下所示。
-
-![影像](/help/overview/assets/unifiedshell_header_label.png)
 
 
 ## 存取AEM收件匣 {#accessing-the-aem-inbox}
