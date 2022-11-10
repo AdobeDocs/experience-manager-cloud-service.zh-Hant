@@ -3,10 +3,10 @@ title: 存取 Cloud Manager
 description: 了解如何存取 Cloud Manager，以便您可以設定專案資源。
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 93%
+source-wordcount: '1055'
+ht-degree: 97%
 
 ---
 
@@ -32,10 +32,6 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的
 通常是指派給&#x200B;**業主**&#x200B;產品設定檔負責新增您的雲端資源，例如計劃和環境。此人了解業務需求以及完成初始 Cloud Manager 設定的人員。
 
 出於此上線歷程的目的，您作為系統管理員已經將自己指派到&#x200B;**業主**&#x200B;產品設定檔，並將設定雲端資源。根據實際項目需求，業務所有者可能與系統管理員相同，也可能不同。
-
->[!NOTE]
->
->依預設，具有AEM環境存取權的使用者也會擁有「雲端>管理員」使用者角色。 此角色本身和本身不足以讓使用者存取方案詳細資料檢視。 只有Cloud Manager使用者角色的這類使用者，可透過方案功能表選項導覽至AEM環境製作URL（如果存在環境）。 如果這些用戶希望獲得程式級訪問權限，則必須與其管理員聯繫。
 
 ## Access Cloud Manager 可作為系統管理員和業主 {#access-sysadmin-bo}
 
@@ -137,3 +133,4 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的
 按照其他資源了解：
 
 * [Cloud Manager 簡介](/help/onboarding/cloud-manager-introduction.md) - 了解 Cloud Manager、Cloud Manager 計畫和環境。
+* [AEMas a Cloud Service團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)  — 了解AEMas a Cloud Service團隊和產品設定檔如何授予和限制您授權Adobe解決方案的存取權。

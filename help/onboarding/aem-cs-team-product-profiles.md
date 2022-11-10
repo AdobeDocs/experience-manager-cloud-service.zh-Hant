@@ -1,17 +1,17 @@
 ---
 title: AEM as a Cloud Service 團隊和產品設定檔
-description: 了解 AEM as a Cloud Service 團隊和產品設定檔如何授與和限制您的授權 Adobe 解決方案的存取權。
+description: 了解AEMas a Cloud Service團隊和產品設定檔如何授予和限制您授權Adobe解決方案的存取權。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: d4786b5d527092027e8e825d0a2475a8be6a710a
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 94%
+source-wordcount: '748'
+ht-degree: 78%
 
 ---
 
 # AEM as a Cloud Service 團隊和產品設定檔 {#product-profiles}
 
-了解 AEM as a Cloud Service 團隊和產品設定檔如何授與和限制對您的許可 Adobe 解決方案的存取權。
+了解AEMas a Cloud Service團隊和產品設定檔如何授予和限制您授權Adobe解決方案的存取權。
 
 ## 產品設定檔 {#profiles}
 
@@ -31,7 +31,9 @@ AEM as a Cloud Service 是完全的雲端原生產品，可提供 AEM 即服務�
 
 >[!NOTE]
 >
->指派給 AEM as a Cloud Service 產品設定檔的每個使用者都具有 (唯讀) 對 Cloud Manager 的存取權。
+>指派給AEMas a Cloud Service產品設定檔的每位使用者都能透過 **Cloud Manager使用者** 角色。
+>
+>僅具有 **Cloud Manager使用者** 角色可登入Cloud Manager，並使用 **方案** 功能表。 此 **Cloud Manager使用者** 角色不足以訪問程式詳細資訊。 如果需要此類訪問，則必須由其系統管理員授予用戶其他角色。
 
 >[!TIP]
 >

@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 28c64256c64bf3f7f2e38e1f52a615ff8ca457bb
+source-git-commit: d310b48d3abe8ffba2f25a27899cd042a186db84
 workflow-type: tm+mt
-source-wordcount: '3738'
-ht-degree: 46%
+source-wordcount: '3739'
+ht-degree: 45%
 
 ---
 
@@ -145,7 +145,6 @@ ht-degree: 46%
       + [指派 AEM 產品設定檔](/help/journey-onboarding/assign-profiles-aem.md)
       + [開發人員和部署管理員工作](/help/journey-onboarding/developers.md)
       + [AEM 使用者工作](/help/journey-onboarding/aem-users.md)
-      + [使用者群組](/help/journey-onboarding/user-groups.md)
    + AEM參考示範附加元件歷程 {#demo-add-on}
       + [總覽](/help/journey-sites/demos-add-on/overview.md)
       + [安裝](/help/journey-sites/demos-add-on/installation.md)
@@ -156,6 +155,7 @@ ht-degree: 46%
    + 其他入門概念 {#concepts}
       + [Cloud Manager 簡介](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)
+      + [通知使用者群組](/help/journey-onboarding/user-groups.md)
 + AEMas a Cloud Service移轉歷程 {#migration-journey}
    + [開始移動AEMas a Cloud Service](/help/journey-migration/getting-started.md)
    + [準備階段](/help/journey-migration/readiness.md)

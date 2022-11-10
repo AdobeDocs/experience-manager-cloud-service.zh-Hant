@@ -3,10 +3,10 @@ title: 建立計畫
 description: 了解如何使用 Cloud Manager 來建立您的首個計劃。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 88%
+source-wordcount: '604'
+ht-degree: 95%
 
 ---
 
@@ -38,10 +38,6 @@ Cloud Manager 程序代表一組 Cloud Manager 環境。這些程序支援業務
 * **沙箱計畫**&#x200B;通常建立的目的是提供培訓、執行示範、培訓、POC 或文件。
 
 由於它們服務於不同的目的，不同的環境有不同的選擇。但是建立它們的過程是相似的。對於此入門之旅，我們將建立一個沙箱環境。
-
->[!NOTE]
->
->依預設，具有AEM環境存取權的使用者也會擁有「雲端>管理員」使用者角色。 此角色本身和本身不足以讓使用者存取方案詳細資料檢視。 只有Cloud Manager使用者角色的這類使用者，可透過方案功能表選項導覽至AEM環境製作URL（如果存在環境）。 如果這些用戶希望獲得程式級訪問權限，則必須與其管理員聯繫。
 
 ## 建立沙箱計畫 {#create-sandbox}
 
@@ -75,3 +71,4 @@ Cloud Manager 程序代表一組 Cloud Manager 環境。這些程序支援業務
 * [建立沙箱計劃](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - 了解如何使用 Cloud Manager 建立您自己的沙箱程序，用於培訓、演示、POC 或其他非生產目的。
 * [建立生產程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)- 了解如何使用 Cloud Manager 建立您自己的生產程序來託管實時流量。
 * [使用 Adobe Cloud Manager - 計劃](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=zh-Hant) - Cloud Manager 計劃代表支援邏輯業務計劃集合的 AEM 環境集合，通常會對應到已購買的服務等級協定 (SLA)。
+* [AEMas a Cloud Service團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)  — 了解AEMas a Cloud Service團隊和產品設定檔如何授予和限制您授權Adobe解決方案的存取權。
