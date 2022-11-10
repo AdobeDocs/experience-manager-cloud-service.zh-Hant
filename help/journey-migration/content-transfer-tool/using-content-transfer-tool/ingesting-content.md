@@ -2,9 +2,9 @@
 title: 將內容擷取至Target
 description: 將內容擷取至Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
+source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '916'
 ht-degree: 12%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 12%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. 接著，您可以從擷取工作清單檢視中監控擷取階段
+1. 接著，您可以從擷取工作清單檢視中監控擷取階段，並使用擷取的動作功能表，隨著擷取進行而檢視記錄。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -124,4 +124,4 @@ ht-degree: 12%
 
 ## 下一步 {#whats-next}
 
-在內容轉移工具中學習將內容擷取至Target後，您就可以在完成每個步驟（擷取和擷取）時檢視記錄，並尋找錯誤。 請參閱 [檢視移轉集記錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 了解更多。
+在您將內容擷取到Target中後，您就可以檢視每個步驟的記錄（擷取和擷取）並尋找錯誤。 請參閱 [檢視移轉集記錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 了解更多。

@@ -2,9 +2,9 @@
 title: 處理大型內容存放庫
 description: 本節介紹如何處理大型內容儲存庫
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: be66d3e255d43156dfd181711d5a372f2c85f6d5
+source-git-commit: 7a9c601dd42aed9fbd0113e71c1c7a58b5bba8f7
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1732'
 ht-degree: 1%
 
 ---
@@ -21,9 +21,6 @@ ht-degree: 1%
 
 使用內容轉移工具(CTT)複製大量Blob可能需要數天時間。
 為了大幅加快內容轉移活動的提取和擷取階段，以將內容移至AEMas a Cloud Service,CTT可運用 [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 作為選用的預先複製步驟。 當來源AEM例項設定為使用Amazon S3、Azure Blob儲存資料存放區或檔案資料存放區時，可使用此預先複製步驟。 預複製步驟對於第1次完全擷取和擷取最有效。 但是，不建議對後續追加使用預拷貝（如果追加大小小於200GB），因為這可能會為整個過程增加時間。 配置此預先步驟後，在提取階段中，AzCopy將Blob從Amazon S3、Azure Blob儲存或檔案資料儲存複製到遷移集blob儲存。 在獲取階段，AzCopy將Blob從遷移集Blob儲存區複製到目標AEMas a Cloud ServiceBlob儲存區。
-
->[!NOTE]
-> 此功能已於CTT 1.5.4版中推出。
 
 ## 開始前的重要考量 {#important-considerations}
 
@@ -42,9 +39,9 @@ ht-degree: 1%
 
 ### 如果來源AEM例項設定為使用Amazon S3或Azure Blob儲存資料存放區，則需額外考量 {#additional-considerations-amazons3-azure}
 
-* 由於從Amazon S3和Azure Blob儲存中傳輸資料會產生相關成本，因此傳輸成本會與儲存容器中的資料總量(無論是否在AEM中參考)相關。 請參閱 [Amazon S3](https://aws.amazon.com/s3/pricing/) 和 [Azure Blob儲存](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) 以取得更多詳細資訊。
+* 由於從Amazon S3和Azure Blob儲存中傳輸資料會產生相關成本，因此傳輸成本會與您現有儲存容器中的資料總量(無論是否在AEM中參考)相關。 請參閱 [Amazon S3](https://aws.amazon.com/s3/pricing/) 和 [Azure Blob儲存](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) 以取得更多詳細資訊。
 
-* 您將需要源Amazon S3儲存桶的訪問密鑰和密鑰對，或源Azure Blob儲存容器的SAS URI（只讀訪問可以正常）。
+* 您將需要現有源Amazon S3儲存桶的訪問密鑰和密鑰對，或現有源Azure Blob儲存容器的SAS URI（只讀訪問可以正常）。
 
 ### 若來源AEM例項已設定為使用檔案資料存放區，則需額外考量 {#additional-considerations-aem-instance-filedatastore}
 
@@ -52,7 +49,7 @@ ht-degree: 1%
 
 * 每次在啟用AzCopy的情況下運行提取時，整個檔案資料儲存區都會平面化並複製到雲遷移容器中。 如果您的遷移集大大小於資料儲存的大小，則AzCopy提取不是最佳方法。
 
-* 一旦使用AzCopy通過資料儲存庫進行複製，請禁用它進行增量或追加提取。
+* 一旦使用AzCopy複製現有資料儲存，請禁用它進行增量或追加提取。
 
 ## 設定使用AzCopy作為預複製步驟 {#setting-up-pre-copy-step}
 
@@ -64,11 +61,9 @@ ht-degree: 1%
 
 * 如果源AEM配置為使用檔案資料儲存，則本地系統的可用空間必須嚴格大於源資料儲存的1/256大小。
 
-* 了解資料存放區的總大小有助於預估擷取和擷取時間。 使用 [內容轉移工具電腦](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en#content-transfer) in [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/overview-cam.html?lang=en) 以取得提取和擷取時間的預估值。
-
 #### Azure Blob儲存資料儲存 {#azure-blob-storage}
 
-從Azure入口網站的容器屬性頁面，使用 **計算大小** 按鈕，確定容器中所有內容的大小。 例如：
+從Azure入口網站中的現有容器屬性頁面，使用 **計算大小** 按鈕，確定容器中所有內容的大小。 例如：
 
 ![影像](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
@@ -82,7 +77,7 @@ ht-degree: 1%
 #### 檔案資料存放區 {#file-data-store-determine-size}
 
 * 對於mac、UNIX系統，在資料儲存目錄上運行du命令以獲取其大小：
-   `du -sh [path to datastore on the instance]`. 例如，如果資料存放區位於 `/mnt/author/crx-quickstart/repository/datastore`，下列命令會取得大小： `du -sh /mnt/author/crx-quickstart/repository/datastore`.
+   `du -sh [path to datastore on the instance]`。例如，如果資料存放區位於 `/mnt/author/crx-quickstart/repository/datastore`，下列命令會取得大小： `du -sh /mnt/author/crx-quickstart/repository/datastore`.
 
 * 對於Windows，請使用資料儲存目錄上的dir命令獲取其大小：
    `dir /a/s [location of datastore]`。
@@ -98,8 +93,11 @@ ht-degree: 1%
 
 ### 2.安裝內容轉移工具(CTT)版本，並支援AzCopy {#install-ctt-azcopy-support}
 
-CTT 1.5.4版包含對Amazon S3和Azure Blob儲存的AzCopy支援。
-CTT 1.7.2版支援檔案資料存放區您可從以下網址下載最新版本的CTT: [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 入口網站。
+>[!IMPORTANT]
+>應使用最新發行的CTT版本。
+
+Amazon S3、Azure Blob儲存和檔案資料儲存的AzCopy支援包含在最新的CTT版本中。
+您可以從 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 入口網站。
 
 
 ### 3.設定azcopy.config檔案 {#configure-azcopy-config-file}
@@ -115,7 +113,7 @@ CTT 1.7.2版支援檔案資料存放區您可從以下網址下載最新版本�
 
 >[!NOTE]
 >
-> 如果您不想授予Blob儲存容器的寫入訪問權限，則可以生成只具有讀取和清單權限的新SAS URI。
+> 如果您不想授予對現有blob儲存容器的寫入訪問權限，則可以生成只具有讀取和清單權限的新SAS URI。
 
 ```
 azCopyPath=/usr/bin/azcopy
@@ -140,7 +138,7 @@ s3SecretKey=--REDACTED--
 
 #### 檔案資料存放區 {#file-data-store-azcopy-config}
 
-您的 `azcopy.config` 檔案必須包含azcopyPath屬性，以及指向檔案資料存放區位置的可選repository.home屬性。 請為您的例項使用正確的值。
+您的 `azcopy.config` 檔案必須包含azCopyPath屬性，以及指向檔案資料儲存庫位置的可選repository.home屬性。 請為您的例項使用正確的值。
 檔案資料存放區
 
 ```
@@ -148,7 +146,7 @@ azCopyPath=/usr/bin/azcopy
 repository.home=/mnt/crx/author/crx-quickstart/repository/datastore
 ```
 
-azcopyPath屬性必須包含源AEM實例上安裝azCopy命令行工具的位置的完整路徑。 如果缺少azCopyPath屬性，則不執行blob預復步驟。
+azCopyPath屬性必須包含源AEM實例上安裝azCopy命令行工具的位置的完整路徑。 如果缺少azCopyPath屬性，則不執行blob預復步驟。
 
 若 `repository.home` azcopy.config中缺少屬性，然後是預設資料存放區位置 `/mnt/crx/author/crx-quickstart/repository/datastore` 將用於執行預復。
 
@@ -168,7 +166,7 @@ azcopyPath屬性必須包含源AEM實例上安裝azCopy命令行工具的位置�
 c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy phase ***************
 ```
 
-恭喜！ 此日誌條目表示您的配置被視為有效，並且AzCopy當前正在將源容器中的所有Blob複製到遷移容器。
+恭喜！此日誌條目表示您的配置被視為有效，並且AzCopy當前正在將源容器中的所有Blob複製到遷移容器。
 
 來自AzCopy的日誌條目將出現在提取日誌中，並且前置詞將為c.a.gs.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy預拷貝]
 
@@ -196,15 +194,12 @@ AzCopy會在後續運行時自動跳過在錯誤之前複製的任何Blob，而�
 
 ### 5.使用AzCopy獲取 {#ingesting-azcopy}
 
-隨著內容轉移工具1.5.4的推出，我們為製作擷取新增了AzCopy支援。
-
->[!NOTE]
->建議先單獨執行「作者」擷取。 這會在稍後執行時加速發佈擷取。
+請參閱 [將內容擷取至Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html)
+有關從Cloud Acceleration Manager(CAM)將內容內嵌到目標中的一般資訊，包括在「新建獲取」對話框中有關如何使用AzCopy（預複製）的說明。
 
 為了在獲取過程中利用AzCopy，我們要求您使用至少2021.6.5561版的AEMas a Cloud Service版。
 
-從CTT UI開始擷取作者。 請參閱 [擷取程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) 以取得更多詳細資訊。
-AzCopy的日誌條目將出現在獲取日誌中。 它們看起來會像這樣：
+請參閱Cloud Acceleration Manager中的「擷取工作」清單及擷取記錄，查看進度。  與成功的AzCopy任務相關的日誌條目將顯示如下（允許一些差異）。 檢查日誌時常會提前提醒您問題，並幫助您找到任何問題的快速解決方案。
 
 ```
 *************** Beginning AzCopy pre-copy phase ***************
@@ -213,13 +208,10 @@ INFO: Failed to create one or more destination container(s). Your transfers may 
 INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
 INFO: azcopy: A newer version 10.11.0 is available to download
  
- 
 Job 419d98da-fc05-2a45-70cc-797fee632031 has started
 Log file is located at: /root/.azcopy/419d98da-fc05-2a45-70cc-797fee632031.log
  
- 
 0.0 %, 0 Done, 0 Failed, 886 Pending, 0 Skipped, 886 Total,
- 
  
 Job 419d98da-fc05-2a45-70cc-797fee632031 summary
 Elapsed Time (Minutes): 0.0334
@@ -235,12 +227,6 @@ Final Job Status: CompletedWithSkipped
 *************** Completed AzCopy pre-copy phase ***************
 ```
 
-## 禁用AzCopy {#disable-azcopy}
-
-要禁用AzCopy，請更名或刪除 `azcopy.config` 檔案。
-
-例如，azcopy擷取可透過： `mv /mnt/crx/author/crx-quickstart/cloud-migration/azcopy.config /mnt/crx/author/crx-quickstart/cloud-migration/noazcopy.config`.
-
 ## 下一步 {#whats-next}
 
-學習「處理大型內容存放庫」以大幅加快內容轉移活動的提取和擷取階段，以便將內容移至AEMas a Cloud Service後，您現在就可以了解「內容轉移工具」的提取程式。 請參閱 [在內容轉移工具中從來源擷取內容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 了解如何從「內容轉移工具」中擷取您的移轉集。
+學習「處理大型內容存放庫」以大幅加快內容轉移活動的提取和擷取階段，以便將內容移至AEMas a Cloud Service後，您現在就可以使用「內容轉移工具」了解提取程式。 請參閱 [在內容轉移工具中從來源擷取內容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 了解如何從「內容轉移工具」中擷取您的移轉集。
