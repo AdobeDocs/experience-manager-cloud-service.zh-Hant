@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: bcd9f3cfe6c22a6db51a9e6f96576bb8cdde7d0c
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,11 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 1. 在源頁簽中，選擇模板：
 
    * 選取可編輯的範本時，會自動選取範本中指定的主題和提交動作，並 **[!UICONTROL 建立]** 按鈕。 您可以前往 **[!UICONTROL 樣式]** 或 **[!UICONTROL 提交]** 頁簽，以選擇不同的主題或提交操作。 如果所選的可編輯模板未指定主題，則建立按鈕將保持禁用狀態。 您可以前往 **[!UICONTROL 樣式]** 頁簽，手動選擇主題。
+
+      >[!NOTE]
+      >
+      > 您也可以建立 [!UICONTROL 記錄檔案] 範本。 如需詳細資訊，請參閱 [適用性表單編輯器中的記錄支援檔案](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
    * 選取靜態範本時，資料、樣式、提交、傳送和預覽選項無法使用。 建立新的適用性表單時，建議使用可編輯的範本。
 
 1. 在樣式標籤中，選擇主題：
@@ -159,3 +164,15 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
    * 如果適用性表單是以表單模型為基礎，您可以選擇其他表單 <!-- form template, --> XML或JSON結構，或相同表單模型的表單資料模型。
 
 1. 點選 **[!UICONTROL 儲存]** 以儲存屬性。
+
+您也可以從適用性表單編輯器或適用性表單範本編輯器修改表單模型屬性。
+
+1. 選取 **[!UICONTROL 適用性表單容器（根）]** 元件。
+1. 按一下 ![配置表徵圖](/help/forms/assets/configure-icon.svg) 圖示以開啟 **[!UICONTROL 屬性]** 的下一個參數。
+1. 選取 **[!UICONTROL 資料模型]** 標籤，並執行下列其中一項操作：
+
+   * 如果適用性表單沒有表單模型，則可以選擇表單模型並相應地選擇 <!-- a form template, --> XML或JSON結構，或表單資料模型。
+   * 如果適用性表單是以表單模型為基礎，則無法變更表單模型。 您可以選擇其他 <!-- form template, --> 適用的相同表單模型為XML或JSON結構，或表單資料模型。
+1. 點選 ![儲存](/help/forms/assets/check-button.png) 以儲存屬性。
+
+![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)

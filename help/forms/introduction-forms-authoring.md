@@ -9,10 +9,10 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '2317'
-ht-degree: 3%
+source-wordcount: '2409'
+ht-degree: 2%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 3%
 
 適用性Forms可讓您建立吸引人、回應式、動態且最適化的表單。 [!DNL AEM Forms] 提供直覺式使用者介面和現成可用的元件，供您建立及使用適用性Forms。 您可以選擇根據表單模型或架構建立適用性表單，或不使用表單模型。 必須仔細選擇不僅符合您要求而且擴展您現有基礎設施投資和資產的表單模型。 您可以從下列選項中選擇以建立最適化表單：
 
-<!-- * **Using a form data model**
-  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source. -->
+* **使用表單資料模型**
+   [資料整合](data-integration.md) 可讓您將不同資料來源的實體和服務整合到表單資料模型中，以便用來建立適用性Forms。 如果您建立的適用性表單涉及從多個資料來源擷取資料並將其寫入多個資料來源，請選擇「表單資料模型」。
 
 * **使用XDP表單範本**
 如果您對XFA或XDP表單有投資，則此表單是理想的表單模型。 它提供將XFA型表單轉換為最適化Forms的直接方式。 任何現有的XFA規則都會保留在相關聯的適用性Forms中。 產生的適用性Forms支援XFA結構，例如驗證、事件、屬性和模式。
@@ -35,7 +35,11 @@ XML和JSON結構代表組織內的後端系統產生或使用資料的結構。 
 * **無或不使用表單模型**
 使用此選項建立的適用性Forms不使用任何表單模型。 從這種表單生成的資料XML具有帶有欄位和相應值的扁平結構。
 
-<!--  For more information about creating an Adaptive Form, see [Creating an Adaptive Form](creating-adaptive-form.md). -->
+   >[!NOTE]
+   >
+   > 您可以從適用性表單編輯器或適用性表單範本編輯器修改表單模型屬性。 如需詳細資訊，請參閱 [編輯最適化表單的表單模型屬性](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+
+若要建立最適化表單，請參閱 [建立最適化表單](creating-adaptive-form.md).
 
 ## 適用性表單製作UI {#adaptive-form-authoring-ui}
 

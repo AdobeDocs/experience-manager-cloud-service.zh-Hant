@@ -4,9 +4,9 @@ description: 將數位資產新增至 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1ef60a024d6ffe704ef48df97ca998af3cd6b8a8
+source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3064'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 若要上傳和管理任何二進位檔案，請依 [!DNL Experience Manager]，最常用的檔案格式會支援其他服務，例如中繼資料擷取或預覽/轉譯產生。 請參閱 [支援的檔案格式](file-format-support.md) 以取得詳細資訊。
 
-您也可以選擇對上傳的資產執行其他處理。 您可以在資料夾上設定多個資產處理設定檔，並將資產上傳至該資料夾，以新增特定中繼資料、轉譯或影像處理服務。 請參閱 [上傳時處理資產](#process-when-uploaded).
+您也可以選擇對上傳的資產執行其他處理。 您可以在資料夾上設定多個資產處理設定檔，將資產上傳至該資料夾，以新增特定中繼資料、轉譯或影像處理服務。 請參閱 [上傳時處理資產](#process-when-uploaded).
 
 [!DNL Assets] 提供下列上傳方法。 Adobe建議您先了解上傳選項的使用案例和適用性，再加以使用。
 
@@ -58,7 +58,7 @@ ht-degree: 1%
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-若要上傳檔案（或多個檔案），您可以在案頭上選取檔案，然後拖曳使用者介面（網頁瀏覽器）至目標資料夾。 或者，您也可以從使用者介面起始上傳。
+若要上傳檔案（或多個檔案），您可以在案頭上選取檔案，然後拖曳使用者介面（網頁瀏覽器）至目標資料夾。 或者，您也可以從使用者介面開始上傳。
 
 1. 在 [!DNL Assets] 使用者介面，導覽至您要新增數位資產的位置。
 1. 若要上傳資產，請執行下列其中一項操作：
@@ -118,7 +118,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 [!DNL Experience Manager Assets] 防止上傳檔案名稱中含有禁止字元的資產。 如果您嘗試上傳檔案名稱包含不允許的字元或更多字元的資產， [!DNL Assets] 顯示警告訊息並停止上傳，直到您移除這些字元或上傳並且允許名稱為止。
 
-若要符合貴組織的特定檔案命名慣例，請 [!UICONTROL 上傳資產] 對話方塊可讓您為上傳的檔案指定長名稱。 不支援下列（以空格分隔的）字元清單：
+為符合貴組織的特定檔案命名慣例， [!UICONTROL 上傳資產] 對話方塊可讓您為上傳的檔案指定長名稱。 不支援下列（以空格分隔的）字元清單：
 
 * 資產名稱的字元無效： `* / : [ \\ ] | # % { } ? &`
 * 資產資料夾名稱的字元無效： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
@@ -172,6 +172,8 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 提供值以建立與資料來源的連線。 例如，若您選取 **Azure Blob儲存** 作為資料源，請指定Azure儲存帳戶、Azure blob容器和Azure訪問密鑰的值。
 
+1. 從下拉式清單中選取所需的驗證模式。 **Azure訪問密鑰** 提供對Azure儲存帳戶的完整存取，但 **Azure SAS令牌** 可讓管理員使用權限和過期原則來限制代號的功能。
+
 1. 提供根資料夾的名稱，該根資料夾包含 **[!UICONTROL 源資料夾]** 欄位。
 
 1. （選用）提供資產的檔案大小下限(MB)，以便納入 **[!UICONTROL 按最小大小篩選]** 欄位。
@@ -220,7 +222,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 大量匯入資產或資料夾時， [!DNL Experience Manager Assets] 導入導入源中存在的整個結構。 [!DNL Experience Manager] 會遵循資產和資料夾名稱中特殊字元的內建規則，因此這些檔案名稱需要淨化。 對於資料夾名稱和資產名稱，使用者定義的標題維持不變，並儲存在 `jcr:title`.
 
-在大量匯入期間， [!DNL Experience Manager] 尋找現有資料夾以避免重新匯入資產和資料夾，同時驗證在進行匯入的父資料夾中套用的處理規則。 如果在父資料夾中應用了清理規則，則相同的規則將應用到導入源。 對於新匯入，會套用下列雜湊規則來管理資產和資料夾的檔案名稱。
+在大量匯入期間， [!DNL Experience Manager] 尋找現有資料夾以避免重新匯入資產和資料夾，同時驗證在進行匯入的父資料夾中套用的處理規則。 如果在父資料夾中應用了清理規則，則相同的規則將應用到導入源。 若是新匯入，會套用下列處理規則來管理資產和資料夾的檔案名稱。
 
 **批量導入中不允許的名稱**
 

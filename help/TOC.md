@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d310b48d3abe8ffba2f25a27899cd042a186db84
+source-git-commit: 50b2859dc2a8a83a007bfef30d5c0959e92aa212
 workflow-type: tm+mt
-source-wordcount: '3739'
+source-wordcount: '3759'
 ht-degree: 45%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 45%
    + 一般AEMaaCS發行說明 {#release-notes}
       + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [2022.8.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
          + [2022.7.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
          + [2022.6.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
          + [2022.5.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
@@ -388,6 +389,7 @@ ht-degree: 45%
       + [浮水印資產](/help/assets/watermark-assets.md)
       + [使用 [!DNL Creative Cloud] API](/help/assets/cc-api-integration.md)
       + [影像的顏色標籤](/help/assets/color-tag-images.md)
+      + [管理PDF檔案](/help/assets/manage-pdf-documents.md)
    + 配置、管理和擴展 [!DNL Assets] {#admin}
       + [開發人員檔案和API參考](/help/assets/developer-reference-material-apis.md)
       + [資料夾中繼資料結構](/help/assets/folder-metadata-schema.md)
@@ -501,6 +503,7 @@ ht-degree: 45%
       + [檢閱並修正轉換後的表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
    + 建立及發佈最適化表單{#create-an-adaptive-form}
       + 開始之前{#before-you-start}
+         + [製作最適化Forms簡介](/help/forms/introduction-forms-authoring.md)
          + [建立範本](/help/forms/template-editor.md)
          + [建立主題](/help/forms/themes.md)
          + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
@@ -535,19 +538,21 @@ ht-degree: 45%
       + 改進最適化表單的協助工具功能{#accessible-adaptive-forms}
          + [建立無障礙的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
       + [設定Forms Portal](/help/forms/configure-forms-portal.md)
-   + 將表單與一個或多個資料來源整合{#use-form-data-model}
-      + [設定資料來源](/help/forms/configure-data-sources.md)
-      + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-      + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
-      + [設定 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 雲端服務](/help/forms/configure-msdynamics-salesforce.md)
-      + [建立表單資料模型](/help/forms/create-form-data-models.md)
+   + 整合 {#integrate}
+      + 將表單與一個或多個資料來源整合{#use-form-data-model}
+         + [設定資料來源](/help/forms/configure-data-sources.md)
+         + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+         + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
+         + [設定 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 雲端服務](/help/forms/configure-msdynamics-salesforce.md)
+         + [建立表單資料模型](/help/forms/create-form-data-models.md)
       + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
       + [使用表單資料模型](/help/forms/using-form-data-model.md)
-   + [與 Adobe Sign 整合](/help/forms/adobe-sign-integration-adaptive-forms.md)
-   + [與 DocuSign 整合](/help/forms/integrate-docusign-adaptive-forms.md)
-   + [與Sites整合](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
-   + [與 Adobe Analytics 整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-   + [整合最適化表單與Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+      + [與 Adobe Sign 整合](/help/forms/adobe-sign-integration-adaptive-forms.md)
+      + [與 DocuSign 整合](/help/forms/integrate-docusign-adaptive-forms.md)
+      + [與Sites整合](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+      + [與 Adobe Analytics 整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+      + [整合最適化表單與Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+      + [在AEM Sites中內嵌適用性Forms](/help/forms/embed-adaptive-form-aem-sites.md)
    + 建立及使用工作流程{#create-form-centric-workflows}
       + [在工作流程中使用以Forms為中心的步驟+步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以 Forms 為中心的工作流程中使用變數](/help/forms/variable-in-aem-workflows.md)

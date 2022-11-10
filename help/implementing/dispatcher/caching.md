@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: AEM as a Cloud Service 中的快取
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
+source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2663'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ Define DISABLE_DEFAULT_CACHING
    >其他方法，包括 [dispatcher-ttl AEM ACS公域專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，將不會成功覆寫值。
 
    >[!NOTE]
-   >請注意，Dispatcher可能仍會根據自己的內容來快取內容 [快取規則](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 若要讓內容真正私密，您應確保Dispatcher不會快取內容。
+   >請注意，Dispatcher可能仍會根據自己的內容來快取內容 [快取規則](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=zh-Hant). 若要讓內容真正私密，您應確保Dispatcher不會快取內容。
 
 ### 用戶端資料庫(js,css) {#client-side-libraries}
 
@@ -196,6 +196,19 @@ AEM層會根據快取標題是否已設定及請求類型的值，來設定快�
 ### HEAD請求行為 {#request-behavior}
 
 在HEADCDN收到Adobe請求時， **not** 快取時，Dispatcher和/或AEM例項會轉換並接收該要求作為GET要求。 如果回應可快取，則會從CDN提供後續的HEAD要求。 如果回應無法快取，則後續的HEAD請求會在一段視乎 `Cache-Control` TTL。
+
+### 行銷活動參數 {#marketing-parameters}
+
+網站URL常包含用來追蹤促銷活動成功的促銷活動參數。 為了有效使用Dispatcher的快取，建議您設定Dispatcher設定的 `ignoreUrlParams` 屬性為 [記錄](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+
+此 `ignoreUrlParams` 區段必須取消註解，且應參考檔案 `conf.dispatcher.d/cache/marketing_query_parameters.any`，可透過取消註解與行銷管道相關參數對應的行來修改此欄。 您也可以新增其他參數。
+
+```
+/ignoreUrlParams {
+{{ /0001 { /glob "*" /type "deny" }}}
+{{ $include "../cache/marketing_query_parameters.any"}}
+}
+```
 
 ## Dispatcher快取失效 {#disp}
 

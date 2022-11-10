@@ -2,21 +2,14 @@
 title: AEMas a Cloud Service於Unified Shell
 description: AEMas a Cloud Service於Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 5d9acdd9b6a377a7509e0638984cb40983fa6652
+source-git-commit: 76b7fb1d354664ec9fa773623ea4dee09164bec8
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 1%
+source-wordcount: '328'
+ht-degree: 2%
 
 ---
 
 # AEMas a Cloud Service於Unified Shell {#aem-as-a-cloud-service-on-unified-shell}
-
->[!NOTE]
->此功能於2022年7月在發行前管道提供。
->
->這是2022年8月發行版本中全面推出的新功能的簡介。
->
->請參閱 [發行前管道檔案](/help/release-notes/prerelease.md#enable-prerelease) 以取得如何為環境啟用功能的資訊。
 
 ## 總覽 {#overview}
 

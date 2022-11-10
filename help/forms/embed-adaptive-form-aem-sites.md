@@ -3,9 +3,9 @@ title: 在AEM Sites頁面中內嵌適用性表單
 seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
 description: 您可以使用AEM Forms容器元件將適用性Forms新增或內嵌至AEM Sites頁面，以填寫和提交表單，而不需離開AEM Sites頁面。
 feature: Adaptive Forms
-source-git-commit: dac38b2a90b2a1969e5332b8a658e8f1e0e5eccb
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---
@@ -20,17 +20,21 @@ AEM Forms可讓表單開發人員將最適化表單流暢內嵌於AEM Sites頁�
 
 在AEM Sites頁面中，您可以使用下列方式新增最適化表單：
 
-* **[AEM Forms容器元件](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+* **AEM Forms容器元件**
 AEM Forms提供可新增至網站頁面的元件。 AEM Forms容器元件可讓您內嵌最適化表單。
 
-* **[資產瀏覽器](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
+* **資產瀏覽器**
 所有表單都可在「資產」下取得。 您可以拖放表單為頁面上的資產。
 
 ## 必備條件 {#prerequisites}
 
-若要在使用可編輯範本的AEM Sites頁面中內嵌適用性表單，請確定AEM表單元件已在相關範本中設定為允許的元件。 如需詳細資訊，請參閱 **策略和屬性（佈局容器）** 區段 [建立頁面範本](/help/sites-authoring/templates.md).
+若要在使用可編輯範本的AEM Sites頁面中內嵌適用性表單，請確定AEM表單元件已在相關範本中設定為允許的元件。
 
-若「網站」頁面使用靜態範本，則需在網站頁面的段落系統中進行設定。 請參閱 [在設計模式中配置元件](/help/sites-authoring/default-components-designmode.md) 以取得更多資訊。
+在 **AEM Forms容器元件** 不可見於 **元件瀏覽器面板** 執行以下步驟（如影片所示）。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410544)
+
+若「網站」頁面使用靜態範本，您必須在網站頁面的段落系統中加以設定。
 
 ## 內嵌最適化表單 {#af-component}
 
@@ -48,21 +52,31 @@ AEM Forms提供可新增至網站頁面的元件。 AEM Forms容器元件可讓�
 1. 點選網站頁面中的內嵌AEM Forms容器元件，然後點選 ![settings_icon](assets/settings_icon.png) 在動作列上。 此 **[!UICONTROL 編輯AEM Forms容器]** 對話框開啟。
 1. 在「編輯AEM Forms容器」對話方塊中，指定下列項目。
 
-   <!-- * **Asset Type:** Select the type of asset to embed. The options are Adaptive Form -->
+   **資產類型：** 選取要內嵌的資產類型。
    * **資產路徑**:瀏覽並選取要內嵌的適用性表單。 如果您從「資產」瀏覽器中拖放，則會自動填入。
    * **貼文提交** :選取要在表單提交時觸發的動作。 您可以選擇顯示感謝訊息或感謝頁面。
+      * 顯示
 
       * **感謝訊息**:使用RTF編輯器撰寫訊息，以在表單提交時顯示。 只有在您選擇顯示感謝訊息時，才可使用此選項。
       * **感謝頁面**:瀏覽並選取要在表單提交時顯示的頁面。 只有在您選擇顯示感謝頁面時，才可使用此選項。
          * **重新導向至感謝頁面**:啟用選項，將包含內嵌適用性表單的頁面取代為感謝頁面。 否則，感謝頁面會取代AEM Forms容器中的適用性表單，而不會重新整理頁面中的基礎網站。 只有在您選擇顯示感謝頁面時，才可使用此選項。
    * **使用頁面語言**:使用AEM Sites頁面的本機區域設定，而非適用性表單。
    * **將焦點置於表單上**:選取「 」，將焦點設定在最適化表單的第一個欄位上。
-
    * **主題**:選取定義最適化表單元件樣式的主題。 樣式包括外觀屬性，如字型樣式、背景顏色、尺寸和對齊方式。
+   * **表單覆蓋框架的整個寬度**:若勾選此選項，系統不會使用iframe來轉譯表單。
    * **高度**:指定容器的高度。 保留為空白以自動調整容器大小。
    * **CSS用戶端程式庫**:指定CSS用戶端程式庫的路徑。
 
 1. 儲存設定。 適用性表單現已內嵌於頁面中。
+
+AEM網站也可讓您使用AEM forms容器元件即時建立最適化表單。 依照步驟建立最適化表單，使用 **AEM Forms容器元件** 在AEM網站頁面上：
+1. 在編輯模式中，開啟您要內嵌適用性表單的AEM網站頁面。
+1. 從「元件」瀏覽器面板，將「AEM Forms容器」元件拖放至頁面上。
+1. 按一下 **加號** 圖示，系統就會將您重新導向至表單建立精靈。
+
+   ![AEM表單容器元件](/help/forms/assets/aemformcontainer.png)
+
+1. 建立適用性表單時，系統會將您重新導向至AEM網站頁面，而建立的表單會在AEM網站頁面轉譯。
 
 ## 發佈內嵌適用性表單 {#publishing-embedded-adaptive-form}
 

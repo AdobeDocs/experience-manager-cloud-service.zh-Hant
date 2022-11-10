@@ -2,10 +2,10 @@
 title: 產生最適化Forms的記錄檔案
 description: 說明如何為適用性Forms的記錄檔案(DoR)產生範本。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '3659'
-ht-degree: 2%
+source-wordcount: '4100'
+ht-degree: 1%
 
 ---
 
@@ -330,27 +330,35 @@ When you select a form model, configure Document of Record using options availab
 1. 在「記錄檔」中選取面板（根面板），然後點選 ![設定](assets/configure.png).
 1. 點選 ![多塔布](assets/dortab.png). 此時將顯示「記錄文檔」頁簽。
 1. 選擇預設模板或自定義模板以呈現記錄文檔。 如果選擇預設模板，則「記錄文檔」(Document of Record)的縮圖預覽將顯示在「模板」(Template)下拉清單下方。
+1. 根據您是選擇預設模板還是自定義模板，以下部分或全部屬性將出現在「記錄文檔」頁簽中。 指定以下提及的屬性以定義記錄文檔的外觀：
 
-   ![品牌範本](assets/brandingtemplate.png)
+   1. **基本屬性**:
+      * **範本**:如果您選擇選取自訂範本，請瀏覽您 [!DNL AEM Forms] 伺服器。 如果您想使用尚未在您的 [!DNL AEM Forms] 伺服器上，您應先將XDP上傳至您的 [!DNL AEM Forms] 伺服器。
+      * **重音顏色**:在文檔或記錄PDF中呈現標題文本和分隔符行的顏色。
+      * **字型系列**:「記錄文檔」PDF中文本的字型系列。
+      * **包括未綁定到資料模型的表單對象**:設定屬性時，包括記錄文檔中基於架構的最適化表單中的未綁定欄位。
+      * **從記錄文檔中排除隱藏的欄位**:設定屬性可識別「記錄檔」中排除的隱藏欄位。
+      * **隱藏面板的說明**:設定屬性會從記錄檔案中排除面板/表格的說明。 適用於面板和表格。
 
-   如果您選擇選取自訂範本，請瀏覽您 [!DNL AEM Forms] 伺服器。 如果您想使用尚未在您的 [!DNL AEM Forms] 伺服器上，您應先將XDP上傳至您的 [!DNL AEM Forms] 伺服器。
+      ![基本屬性](/help/forms/assets/basicpropertiesdor.png)
 
-1. 根據您是選擇預設模板還是自定義模板，以下部分或全部屬性將出現在「記錄文檔」頁簽中。 適當地指定下列項目：
+   1. **表單欄位屬性**:
+      * **對於核取方塊和選項按鈕元件，僅顯示選取的值**:設定屬性時，僅會顯示中的核取方塊和選項按鈕的選取值 [!UICONTROL 記錄檔案].
+      * **多個值的分隔符號**:您可以選擇任何分隔符號，例如逗號或分行符號，以顯示多個值。
+      * **選項對齊**:您可以選取所需的對齊方式（水準、垂直、與最適化表單相同），以設定要顯示於的欄位對齊方式，例如核取方塊或選項按鈕 [!UICONTROL 記錄檔案]. 預設情況下，會為 [!UICONTROL 記錄檔案]. 從 [!UICONTROL 表單欄位屬性] 的DoR會覆寫 [!UICONTROL 項目對齊方式] （適用於適用性表單上的欄位）。 如果是，請選取 [!UICONTROL 與適用表單相同] 選項，則適用性表單製作例項中設定的對齊方式會用於 [!UICONTROL 記錄檔案] 欄位。
+      * **水準對齊選項數**：您可以設定要在「記錄文檔」上顯示的水準對齊選項的數量。
 
-   * **標誌影像**:您可以選擇從適用性表單使用標誌影像、從DAM中選擇一個，或從電腦上傳一個。
-   * **表單標題**
-   * **頁首文字**
-   * **免責聲明標籤**
-   * **免責聲明**
-   * **免責聲明文字**
-   * **重音顏色**:在文檔或記錄PDF中呈現標題文本和分隔符行的顏色
-   * **字型系列**:記錄文檔中文本的字型系列PDF
-   * **對於核取方塊和選項按鈕元件，僅顯示選取的值**
-   * **所選多個值的分隔符號**
-   * **包括未綁定到資料模型的表單對象**
-   * **從記錄文檔中排除隱藏的欄位**
-   * **隱藏面板描述**
+      ![表單欄位屬性](/help/forms/assets/formfieldpropertiesdor.png)
 
+   1. **主版頁面屬性**:
+      * **標誌影像**:您可以選擇從適用性表單使用標誌影像、從DAM中選擇一個，或從電腦上傳一個。
+      * **表單標題**:DoR的標題。
+      * **標題文字**:出現在記錄檔案標題區段的文字。
+      * **免責聲明標籤**:免責聲明標籤。
+      * **免責聲明**:說明記錄檔案權利和義務範圍的文本。
+      * **免責聲明文本**:免責聲明文本。
+
+      ![主版頁面屬性](/help/forms/assets/masterpagepropertiesdor.png)
    >[!NOTE]
    >
    >如果您使用使用6.3之前版本的設計器建立的適用性表單模板，以便「重音顏色」和「字型系列」屬性工作，請確保根子表單下的適用性表單模板中存在以下內容：
@@ -367,7 +375,30 @@ When you select a form model, configure Document of Record using options availab
    </proto>
    ```
 
-1. 若要儲存品牌變更，請點選「完成」。
+1. 若要儲存品牌變更，請點選 **[!UICONTROL 完成]**.
+
+## 適用性表單編輯器中的記錄支援檔案 {#dor-support-in-adaptiveform}
+
+您可以設定 [!UICONTROL 記錄檔案] 直接從適用性表單編輯器或適用性表單範本編輯器建立範本。
+
+從適用性表單編輯器的製作例項執行下列步驟：
+
+1. 選取 **[!UICONTROL 適用性表單容器（根）]** 元件。
+1. 按一下 ![配置表徵圖](/help/forms/assets/configure-icon.svg) 圖示以開啟 **[!UICONTROL 屬性]** 的下一個參數。
+1. 開啟 **[!UICONTROL 記錄模板文檔]** 標籤，然後從下列選項中選取：
+   * **[!UICONTROL 無]**:若選取此選項，則否 [!UICONTROL 記錄檔案] 為最適化表單建立的範本。
+
+   * **[!UICONTROL 將表單模板與記錄模板文檔關聯]**：選中此選項時，XFA表單將用作記錄文檔的模板。
+
+   * **[!UICONTROL 生成記錄文檔]**:選取此選項時， [!UICONTROL 記錄檔案] 會自動為您的適用性表單產生範本。
+
+1. 點選 ![儲存](/help/forms/assets/check-button.png) 以儲存屬性。
+
+![記錄模板支援文檔](/help/forms/assets/dor-templatesupport.png)
+
+>[!NOTE]
+>
+>當 [!UICONTROL 記錄檔案] 使用適用性表單範本編輯器建立範本，之後只有兩個選項可在 [!UICONTROL 記錄模板文檔] 標籤 [!UICONTROL 無] 和 [!UICONTROL 生成記錄文檔].
 
 ## 記錄文檔中面板的表和列佈局 {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -400,7 +431,7 @@ When you select a form model, configure Document of Record using options availab
 **表單層級設定**
 
 * **在DoR中包含未綁定欄位：** 設定屬性時，包括記錄文檔中基於架構的最適化表單中的未綁定欄位。 預設為true。
-* **如果隱藏，則從DoR排除欄位：** 設定屬性會覆寫「從記錄檔案中排除」欄位層級屬性的行為（若非true）。 如果欄位在表單提交時隱藏，如果屬性設定為true，則這些欄位將從記錄文檔中排除，但未設定「從記錄文檔中排除」屬性。 設定 [在伺服器上重新驗證](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) 屬性設為true可在伺服器端識別記錄檔案中排除的隱藏欄位。
+* **如果隱藏，則從DoR排除欄位：** 設定屬性會覆寫「從記錄檔案中排除」欄位層級屬性的行為（若非true）。 如果欄位在表單提交時隱藏，如果屬性設定為true，則這些欄位將從記錄文檔中排除，但未設定「從記錄文檔中排除」屬性。 設定 [在伺服器上重新驗證](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) 屬性設為true可在伺服器端識別要從記錄檔案排除的隱藏欄位。
 
 ## 使用自訂XCI檔案
 

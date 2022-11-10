@@ -2,9 +2,9 @@
 title: 如何建立最適化表單範本？
 description: 建立最適化表單範本，以使用範本編輯器定義基本結構和初始內容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1806'
 ht-degree: 1%
 
 ---
@@ -153,9 +153,17 @@ Experience Manager提供用於組織模板的全局資料夾。 但預設不會�
 
 表單可與其範本搭配使用。 下載使用自訂範本建立的適用性表單時，不會下載範本。 當您在不同的 [!DNL AEM Forms] 例項，則會匯入而不含其範本。 如果已匯入表單但其範本無法使用，則不會轉譯表單。 您可以封裝自訂範本，方法為 `/conf` 節點 `https://<server>:<port>/crx/packmgr`，並將其插入 [!DNL AEM Forms] 要上傳表單的例項。 您也可以 [使用AEM原型建立範本，並將其部署至您的Cloud Services例項](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
+>[!NOTE]
+>
+> * 您可以將 [!UICONTROL 表單資料模型結構] 至範本編輯器中的適用性表單範本。 請參閱 [建立最適化表單](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) 以取得更多資訊。
+> * 您也可以設定 [!UICONTROL 記錄檔案] 直接從適用性表單編輯器或適用性表單範本編輯器建立範本。 如需詳細資訊，請參閱 [產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
 ## 使用範本建立最適化表單 {#creating-an-adaptive-form-using-the-template}
 
 建立並啟用範本後，當您建立最適化表單時，可在Forms Manager中使用範本。 若要使用範本並建立最適化表單，請參閱 [建立最適化表單](creating-adaptive-form.md).
+
 
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}
