@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 團隊和產品設定檔
 description: 了解 AEM as a Cloud Service 團隊和產品設定檔如何授與和限制您的授權 Adobe 解決方案的存取權。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: d54c25791cbb06232ff6e24bb7b8005b366a2144
+source-git-commit: d4786b5d527092027e8e825d0a2475a8be6a710a
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '687'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,9 @@ AEM as a Cloud Service 是完全的雲端原生產品，可提供 AEM 即服務�
 
 >[!TIP]
 >
->如需入門流程的詳細資訊，請參閱[入門歷程](/help/journey-onboarding/overview.md)
+>* 若要進一步了解AEM產品設定檔，請參閱本檔案 [指派AEM產品設定檔。](/help/journey-onboarding/assign-profiles-aem.md)
+>* 如需入門流程的詳細資訊，請參閱[入門歷程](/help/journey-onboarding/overview.md)
+
 
 ## Cloud Manager 產品設定檔 {#cloud-manager-product-profiles}
 
@@ -63,3 +65,9 @@ Cloud Manager 具有預先設定的產品設定檔，可以將其視為角色型
 >[!NOTE]
 >
 >要取得AEM as a Cloud Service 的存取權，使用者必須屬於以下兩個產品設定檔之一：`AEM Users` 或 `AEM Administrators`。管理 Cloud Manager 的權限是不夠的。
+
+>[!TIP]
+>
+>* 若要進一步了解Cloud Manager產品設定檔，請參閱本檔案 [將團隊成員指派給Cloud Manager產品設定檔。](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+>* 如需入門流程的詳細資訊，請參閱[入門歷程](/help/journey-onboarding/overview.md)
+
