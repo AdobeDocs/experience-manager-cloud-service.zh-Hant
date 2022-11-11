@@ -2,9 +2,9 @@
 title: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 8bcfcae211b2203915e7facc361188a0f5739547
+source-git-commit: 31198a1279e07d0a1afe41100d3cfe59d02fd686
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '830'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 1%
          `200` 因為回應代碼表示成功刪除錯誤的事件訂閱。
    >[!NOTE]
    >
-   >如果在執行本程式中提及的步驟之前已刪除錯誤的事件訂閱，則可跳過步驟4。
+   >如果在執行本過程中提到的步驟之前已刪除錯誤的事件訂閱，則可以跳過本過程的最後一步。
 
 
 >[!IMPORTANT]
