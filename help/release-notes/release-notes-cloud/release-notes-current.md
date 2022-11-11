@@ -3,10 +3,10 @@ title: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service�
 description: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: b1715c819a6d049c88de8f0bc7061951bbcd5248
+source-git-commit: a8d632818dd0514d63a5cb544e4b64301819483f
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 2%
+source-wordcount: '896'
+ht-degree: 3%
 
 ---
 
@@ -14,10 +14,6 @@ ht-degree: 2%
 # 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 以下章節概述目前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
-
->[!NOTE]
->
->相應AEMas a Cloud ServiceSDK的供應將延遲，預計於11月11日推出。
 
 >[!NOTE]
 >
