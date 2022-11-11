@@ -2,10 +2,10 @@
 title: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 1509afad94208e62d5222f4c95c98d90f95be30e
+source-git-commit: 8bcfcae211b2203915e7facc361188a0f5739547
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 2%
+source-wordcount: '825'
+ht-degree: 1%
 
 ---
 
@@ -15,19 +15,54 @@ ht-degree: 2%
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.4的發行日期： [!DNL Workfront for Experience Manager enhanced connector] 是2022年10月7日。
+最新版本1.9.5的發行日期： [!DNL Workfront for Experience Manager enhanced connector] 是2022年11月11日。
 
 ## 發行重點 {#release-highlights}
 
 最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包含下列增強功能和錯誤修正：
 
-* 由於大量事件，無法在增強連接器設定頁面上檢視「事件訂閱」索引標籤。
+* 若您在Workfront中只為多值欄位定義一個值，則欄位值無法適當對應至Experience Manager。
 
-* Workfront無法擷取專案中現有資料夾的清單，而導致建立重複資料夾。
+* Experience Manager顯示 `SERVER_ERROR` 在 **[!UICONTROL 連結外部檔案和資料夾]** 畫面，同時存取資產資料夾，因為 `/content/dam/collections`.
+
+* 啟用 **[!UICONTROL 將資產發佈至Brand Portal]** 「 Workfront enhanced connector設定」頁面上的「 」選項會建立不正確的事件。 即使停用選項後，也不會刪除事件。
+
+   若要解決此問題：
+
+   1. 升級至1.9.5版的增強連接器。
+
+   1. 停用 **[!UICONTROL 將資產發佈至Brand Portal]** 選項。
+
+   1. 啟用 **[!UICONTROL 將資產發佈至Brand Portal]** 選項。
+
+   1. 刪除錯誤的事件訂閱。
+
+      1. 執行GET呼叫 `/attask/eventsubscription/api/v1/subscriptions?page=<page-number>`
+
+         對每個頁碼執行一個API呼叫。
+
+      1. 搜尋下列文字，以尋找符合下列URL且沒有的事件訂閱 `objId`:
+
+         ```
+              "objId": "",
+             "url": "<your-aem-domain>/bin/workfront-tools/events/linkedfolderprojectupdate<your-aem-domain>/
+         ```
+
+         請確定 `"objId": "",` 和 `"url"` 符合JSON回應。 建議的執行方法是從具有 `objId` 然後刪除數字。
+
+      1. 記下事件訂閱ID。
+
+      1. 刪除錯誤的事件訂閱。 對發出刪除API呼叫 `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
+
+         `200` 因為回應代碼表示成功刪除錯誤的事件訂閱。
+   >[!NOTE]
+   >
+   >如果在執行本程式中提及的步驟之前已刪除錯誤的事件訂閱，則可跳過步驟4。
+
 
 >[!IMPORTANT]
 >
->Adobe建議您 [升級至最新1.9.4版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建議您 [升級至最新1.9.5版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知問題 {#known-issues}
 
@@ -35,9 +70,15 @@ ht-degree: 2%
 
 * 使用傳統Workfront體驗時， **[!UICONTROL 傳送至]** 選項 **[!UICONTROL 更多]** 下拉式清單不允許您選取Experience Manager內的目標目標。 此 **[!UICONTROL 傳送至]** 選項可使用 **[!UICONTROL 文檔操作]** 下拉式清單。 此 **[!UICONTROL 傳送至]** 選項可正確運作 **[!UICONTROL 更多]** 下拉式清單以及 **[!UICONTROL 文檔操作]** 新Workfront體驗中提供的下拉式清單。
 
-* Workfront顯示 `SERVER_ERROR` 升級至版本8316後，將檔案連結至AEM時出現訊息。 若要解決此問題，請指派 `rep:readProperties` to `content/dam/collections` for `wf-workfront-user` AEM使用者群組。
-
 ## 舊版 {#previous-releases}
+
+### 2022年10月發行 {#october-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.4版（於10月07日發行）包含下列更新：
+
+* 由於大量事件，無法在增強連接器設定頁面上檢視「事件訂閱」索引標籤。
+
+* Workfront無法擷取專案中現有資料夾的清單，而導致建立重複資料夾。
 
 ### 2022年9月發行 {#september-2022-release}
 
