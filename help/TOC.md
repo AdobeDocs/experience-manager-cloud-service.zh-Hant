@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 50b2859dc2a8a83a007bfef30d5c0959e92aa212
+source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
 workflow-type: tm+mt
-source-wordcount: '3759'
+source-wordcount: '3764'
 ht-degree: 45%
 
 ---
@@ -872,6 +872,7 @@ ht-degree: 45%
       + [擴充體驗片段](/help/implementing/developing/extending/experience-fragments.md)
       + [自訂和擴充內容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [轉譯專用內容片段設定元件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+      + [自訂內容片段主控台](/help/implementing/developing/extending/content-fragment-console-customizing.md)
       + 管理搜尋Forms {#manage-search-forms}
          + [設定搜尋表單](/help/implementing/developing/extending/search-forms.md)
          + [配置收件箱的搜索篩選器](/help/implementing/developing/extending/configure-inbox-search-rail.md)

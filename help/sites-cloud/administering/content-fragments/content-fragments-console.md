@@ -5,9 +5,9 @@ landing-page-description: 了解如何從內容片段主控台管理內容片段
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '901'
 ht-degree: 1%
 
 ---
@@ -33,6 +33,10 @@ ht-degree: 1%
 >[!NOTE]
 >
 >選取 [此控制台中可使用鍵盤快捷鍵](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+
+>[!NOTE]
+>
+>您的專案團隊可視需要自訂主控台。 請參閱 [自訂內容片段主控台](/help/implementing/developing/extending/content-fragment-console-customizing.md) 以取得詳細資訊。
 
 您可以從全域導覽的頂層直接存取內容片段主控台：
 
