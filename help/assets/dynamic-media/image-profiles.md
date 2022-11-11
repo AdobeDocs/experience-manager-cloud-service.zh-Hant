@@ -4,9 +4,9 @@ description: 了解如何建立包含遮色片銳利化設定、智慧型裁切�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
+source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
 workflow-type: tm+mt
-source-wordcount: '3333'
+source-wordcount: '3351'
 ht-degree: 7%
 
 ---
@@ -17,15 +17,15 @@ ht-degree: 7%
 
 >[!IMPORTANT]
 >
->影像描述檔不適用於PDF、動畫GIF或INDD(Adobe InDesign)檔案。
+>·智慧型裁切不支援CMYK影像格式。
+·影像設定檔不適用於PDF、動畫GIF或INDD(Adobe InDesign)檔案。
 
 ## 遮色片不銳利化選項 {#unsharp-mask}
 
 建立影像設定檔時，您可以使用 **[!UICONTROL 不銳利化遮色片]** 選項來微調最終縮減取樣影像的銳利化濾鏡效果。 您可以控制效果的強度、效果半徑（以像素計量），以及忽略的對比度臨界值。 此效果使用的選項與Adobe Photoshop的「遮色片銳利化」濾鏡相同。
 
 >[!NOTE]
->
->不銳利化遮色片只會套用至縮減取樣超過50%的PTIFF（金字塔Tiff）內縮減縮放的轉譯。 這表示Ptiff中大小最大的轉譯不受遮色片銳利化影響。 而縮小的轉譯（例如縮圖）則會更改（並顯示不銳利化遮色片）。
+不銳利化遮色片只會套用至縮減取樣超過50%的PTIFF（金字塔Tiff）內縮減縮放的轉譯。 這表示Ptiff中大小最大的轉譯不受遮色片銳利化影響。 而縮小的轉譯（例如縮圖）則會更改（並顯示不銳利化遮色片）。
 
 在 **[!UICONTROL 不銳利化遮色片]**，您有下列篩選選項：
 
@@ -71,8 +71,7 @@ ht-degree: 7%
 您有兩個影像裁切選項可供選擇。 您也可以選擇自動建立顏色和影像色票，或保留目標解析度間的裁切內容。
 
 >[!IMPORTANT]
->
->Adobe建議您檢閱任何產生的裁切和色票，以確保這些裁切和色票適當且與您的品牌和值相關。
+Adobe建議您檢閱任何產生的裁切和色票，以確保這些裁切和色票適當且與您的品牌和值相關。
 
 | 選項 | 使用時機 | 說明 |
 | --- | --- | --- |
@@ -85,9 +84,10 @@ ht-degree: 7%
 
 支援的最大輸入檔案大小解析度為16K。
 
+智慧型裁切不支援CMYK影像格式。
+
 >[!NOTE]
->
->16K解析度是水準約16,000像素的顯示解析度。 最常討論的16K解析度是15360 × 8640，它使每個維度8K UHD的像素計數加倍，總數是像素的4倍。 此解析度為1.327億像素，是4K解析度的16倍，是1080p解析度的64倍。
+16K解析度是水準約16,000像素的顯示解析度。 最常討論的16K解析度是15360 × 8640，它使每個維度8K UHD的像素計數加倍，總數是像素的4倍。 此解析度為1.327億像素，是4K解析度的16倍，是1080p解析度的64倍。
 
 | 影像格式 | 不區分大小寫的副檔名 | MIME類型 | 支援的輸入色域 | 支援的最大輸入檔案大小 | 支援的影像格式？ |
 | --- | --- | --- | --- | --- | --- |
@@ -121,7 +121,7 @@ ht-degree: 7%
 
    ![農作物](assets/crop.png)
 
-1. 選擇 **[!UICONTROL 儲存]**. 新建立的配置檔案將顯示在可用配置檔案清單中。
+1. 選取&#x200B;**[!UICONTROL 儲存]**。新建立的配置檔案將顯示在可用配置檔案清單中。
 
 ## 編輯或刪除Dynamic Media影像設定檔 {#editing-or-deleting-image-profiles}
 
@@ -200,17 +200,15 @@ ht-degree: 7%
 ## 編輯單一影像的智慧型裁切或智慧型色票 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
->
->Adobe建議您檢閱任何產生的智慧型裁切和智慧色票，以確保這些裁切和智慧色票適當且與您的品牌和值相關。
+Adobe建議您檢閱任何產生的智慧型裁切和智慧色票，以確保這些裁切和智慧色票適當且與您的品牌和值相關。
 
 您可以手動重新對齊或調整影像的智慧型裁切視窗大小，以進一步細化其焦點。
 
 編輯智慧型裁切並儲存後，變更會傳播至您對特定影像使用裁切的所有位置。
 
 >[!IMPORTANT]
->
->手動重新對齊或調整資產的智慧型裁切視窗大小時，即使您稍後決定重新處理資產，編輯的項目仍會維持並保留。 不過，如果您在 **[!UICONTROL 回應式影像裁切]** 影像設定檔的區域，則該資產會重新處理。
->請參閱 [在資料夾中重新處理Dynamic Media資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+手動重新對齊或調整資產的智慧型裁切視窗大小時，即使您稍後決定重新處理資產，編輯的項目仍會維持並保留。 不過，如果您在 **[!UICONTROL 回應式影像裁切]** 影像設定檔的區域，則該資產會重新處理。
+請參閱 [在資料夾中重新處理Dynamic Media資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 如有必要，您可以重新執行智慧型裁切，再次產生其他裁切。
 
@@ -240,9 +238,7 @@ ht-degree: 7%
 編輯智慧型裁切並儲存後，變更會傳播至您對特定影像使用裁切的所有位置。
 
 >[!IMPORTANT]
->
->當您手動重新對齊或調整多個資產的智慧型裁切視窗的大小時，即使您稍後決定重新處理這些資產，這些編輯內容仍會保留和保留。 然而，如果您在「影像設定檔」的&#x200B;**[!UICONTROL 回應式影像裁切]**區域中編輯寬度或/及高度，這些資產就需要重新處理。
->請參閱 [在資料夾中重新處理Dynamic Media資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+當您手動重新對齊或調整多個資產的智慧型裁切視窗的大小時，即使您稍後決定重新處理這些資產，這些編輯內容仍會保留和保留。 然而，如果您在「影像設定檔」的&#x200B;**[!UICONTROL 回應式影像裁切]**&#x200B;區域中編輯寬度或/及高度，這些資產就需要重新處理。請參閱 [在資料夾中重新處理Dynamic Media資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 如有必要，您可以重新執行智慧型裁切，再次產生其他裁切。
 
