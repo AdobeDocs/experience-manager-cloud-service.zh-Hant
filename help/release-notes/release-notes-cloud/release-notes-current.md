@@ -3,9 +3,9 @@ title: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service�
 description: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
+source-git-commit: 6446f5e334c3802505d6a41035b6d2ab3ad2b72c
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1106'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,8 @@ ht-degree: 2%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### 中提供的新功能 [!DNL Forms] 頻道 {#new-features-available-in-channel}
+### 中提供的新功能 [!DNL Forms] {#new-features-available-in-channel}
+
 
 * [適用性Forms精靈](/help/forms/creating-adaptive-form.md):AEM Forms提供商務使用者易記精靈，可快速撰寫最適化Forms。 精靈提供快速的索引標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項，以建立最適化表單。 此版本對精靈進行下列改良：
 
@@ -85,8 +86,6 @@ ht-degree: 2%
    * 使用靜態範本：如果客戶現有投資於舊版靜態範本，則可在精靈中使用靜態範本來撰寫最適化表單，以繼續雲端採用歷程。 這可讓客戶將舊靜態範本移轉至現代可編輯的範本，以提供額外的時間。
 
 * [在伺服器端處理時，從記錄檔案(DoR)中移除隱藏欄位](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md):您可以為最終用戶生成記錄PDF文檔，該文檔僅包含在資料捕獲體驗期間對他們可見的欄位。 提交表單時，伺服器會根據提交的資料驗證向最終用戶隱藏的欄位，並從記錄中排除以保持一致。
-
-
 
 ### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#prerelease-features-forms}
 
