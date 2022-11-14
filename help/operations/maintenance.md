@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的維護任務
 description: AEM as a Cloud Service 中的維護任務
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 4e820caa043eeba22d14894d6943c957ea0bf80a
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1013'
 ht-degree: 4%
 
 ---
@@ -44,23 +44,23 @@ ht-degree: 4%
   <tr>
     <td>版本清除</td>
     <td>Adobe</td>
-    <td>為了讓製作層級保持效能， <code>/content</code> 儲存庫的節點會依照下列行為清除：<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>對於現有環境（在2023年3月1日之前建立的環境），清除會停用，且除非客戶明確啟用，否則將來不會啟用，屆時客戶也可以使用自訂值來設定清除。<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->新環境（從2023年3月1日開始建立的環境）預設會啟用清除，並包含下列值，讓客戶能夠使用自訂值進行設定。
      <ol>
        <li>30天以前的版本會遭移除</li>
        <li>會保留過去30天內的最新5個版本</li>
        <li>不論上述規則為何，都會保留最新版本。</li>
-     </ol><br>注意：2022年3月14日之後建立的新環境預設會強制執行上述行為。 如果您需要不同的設定，請提交客戶支援票證。</td>
+     </ol></td>
   </td>
   </tr>
   <tr>
     <td>審核日誌清除</td>
     <td>Adobe</td>
-    <td>為了讓製作層級保持效能，舊的稽核記錄會記錄在 <code>/content</code> 儲存庫的節點會依照下列行為清除：<br><br> <!-- See above for the two line breaks -->
+    <td>對於現有環境（在2023年3月1日之前建立的環境），清除會停用，且除非客戶明確啟用，否則將來不會啟用，屆時客戶也可以使用自訂值來設定清除。<br><br> <!-- See above for the two line breaks -->新環境（從2023年3月1日開始建立的環境）將依預設在 <code>/content</code> 儲存庫的節點，依下列行為進行：
      <ol>
        <li>對於複製審核，將刪除3天以前的審核日誌</li>
        <li>若是DAM(Assets)稽核，超過30天的稽核記錄會遭到移除</li>
        <li>對於頁面稽核，會移除3天以前的記錄檔。</li>
-     </ol><br>注意：2022年3月14日之後建立的新環境預設會強制執行上述行為。 如果您需要不同的設定，請提交客戶支援票證。</td>
+     </ol></td>
    </td>
   </tr>
   <tr>
