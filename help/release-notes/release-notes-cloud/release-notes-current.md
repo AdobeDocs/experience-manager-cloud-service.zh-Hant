@@ -3,10 +3,10 @@ title: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service�
 description: 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ac209259b8e8ac7c1734c0662dd640809b4e2932
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 3%
+source-wordcount: '1107'
+ht-degree: 2%
 
 ---
 
@@ -75,6 +75,18 @@ ht-degree: 3%
 * 現在Experience Manager Assets [支援SAS令牌](/help/assets/add-assets.md#asset-bulk-ingestor) 除了用於驗證的存取金鑰外，還連接到Azure Blob儲存資料來源，以使用大量匯入工具擷取資產。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### 中提供的新功能 [!DNL Forms] 頻道 {#new-features-available-in-channel}
+
+* [適用性Forms精靈](/help/forms/creating-adaptive-form.md):AEM Forms提供商務使用者易記精靈，可快速撰寫最適化Forms。 精靈提供快速的索引標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項，以建立最適化表單。 此版本對精靈進行下列改良：
+
+   * 選擇或取消選擇欄位：精靈可讓您根據JSON和表單資料模型結構建立最適化表單。 您現在可以選取結構內要納入適用性表單的欄位子集。 選取的欄位會轉換為對應的最適化表單資料擷取元件，以快速建立所需的最適化表單。
+
+   * 使用靜態範本：如果客戶現有投資於舊版靜態範本，則可在精靈中使用靜態範本來撰寫最適化表單，以繼續雲端採用歷程。 這可讓客戶將舊靜態範本移轉至現代可編輯的範本，以提供額外的時間。
+
+* [在伺服器端處理時，從記錄檔案(DoR)中移除隱藏欄位](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md):您可以為最終用戶生成記錄PDF文檔，該文檔僅包含在資料捕獲體驗期間對他們可見的欄位。 提交表單時，伺服器會根據提交的資料驗證向最終用戶隱藏的欄位，並從記錄中排除以保持一致。
+
+
 
 ### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#prerelease-features-forms}
 

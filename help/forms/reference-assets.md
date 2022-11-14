@@ -4,9 +4,9 @@ seo-title: Reference Themes
 description: AEM Forms提供可透過Software Distribution取得，且用來設定表單樣式的最適化表單主題。
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '513'
 ht-degree: 3%
 
 ---
@@ -14,8 +14,7 @@ ht-degree: 3%
 
 # Forms的參考資產as a Cloud Service {#reference-themes}
 
-您可以安裝 [參考資產套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 有助於快速開始並加速您的適用性Forms開發。 您可以使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 將此套件部署至您的AEM Formsas a Cloud Service環境。
-
+您可以安裝 [參考資產套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 有助於快速開始並加速您的適用性Forms開發。 您可以使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 將此套件部署至您的Formsas a Cloud Service環境。
 套件中包含的參考資產包括：
 
 ## 主題 {#themes}
