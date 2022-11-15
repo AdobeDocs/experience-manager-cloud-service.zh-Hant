@@ -3,7 +3,7 @@ title: Maven 專案版本處理
 description: 為了進行 AEM as a Cloud Service 的測試和生產部署，Cloud Manager 會產生一個唯一且遞增的版本。
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 source-git-commit: 21607fadf33dac038c7f794b933b92f60b8e20a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
 ht-degree: 100%
 
