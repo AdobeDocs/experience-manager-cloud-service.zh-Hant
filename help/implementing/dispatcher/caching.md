@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: AEM as a Cloud Service 中的快取
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
+source-git-commit: 18f8a0737dbcce643a5949fb5f942e73f066fa59
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2666'
 ht-degree: 1%
 
 ---
@@ -199,9 +199,9 @@ AEM層會根據快取標題是否已設定及請求類型的值，來設定快�
 
 ### 行銷活動參數 {#marketing-parameters}
 
-網站URL常包含用來追蹤促銷活動成功的促銷活動參數。 為了有效使用Dispatcher的快取，建議您設定Dispatcher設定的 `ignoreUrlParams` 屬性為 [記錄](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+網站URL常包含用來追蹤促銷活動成功的促銷活動參數。 為了有效使用Dispatcher快取，建議您設定Dispatcher設定的 `ignoreUrlParams` 屬性為 [這裡](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
 
-此 `ignoreUrlParams` 區段必須取消註解，且應參考檔案 `conf.dispatcher.d/cache/marketing_query_parameters.any`，可透過取消註解與行銷管道相關參數對應的行來修改此欄。 您也可以新增其他參數。
+此 `ignoreUrlParams` 區段必須取消註解，且應參考檔案 `conf.dispatcher.d/cache/marketing_query_parameters.any`. 您可以取消註解與行銷管道相關參數對應的行，以修改檔案。 您也可以新增其他參數。
 
 ```
 /ignoreUrlParams {
