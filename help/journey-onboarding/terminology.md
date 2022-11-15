@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 技術
 description: 在您登入 AEMaaCS 之前，了解系統的一些術語及其基本結構會很有幫助。
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
 ht-degree: 100%
 
