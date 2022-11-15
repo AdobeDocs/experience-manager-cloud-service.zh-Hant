@@ -3,7 +3,7 @@ title: 新增 IP 允許清單
 description: 了解如何使用 Cloud Manager 新增您自己的 IP 允許清單。
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 source-git-commit: 378ff582435f1ab3db431a0c9c3e80a4661cccc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
 ht-degree: 100%
 
