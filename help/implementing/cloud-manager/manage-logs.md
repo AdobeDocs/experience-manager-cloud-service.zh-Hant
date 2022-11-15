@@ -3,7 +3,7 @@ title: 存取和管理記錄檔
 description: 了解如何存取和管理記錄檔以協助進行 AEM as a Cloud Service 中的開發流程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
 ht-degree: 100%
 
