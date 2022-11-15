@@ -3,7 +3,7 @@ title: 功能測試
 description: 了解內建在 AEM as a Cloud Service 部署流程中的三種不同類型的功能測試，以確保計劃碼的品質和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '898'
 ht-degree: 100%
 
