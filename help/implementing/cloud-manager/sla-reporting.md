@@ -3,7 +3,7 @@ title: SLA 報告
 description: 了解如何查看生產 AEM 環境相對於簽訂的服務水平協議 (SLA) 的效能。
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
 source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '248'
 ht-degree: 100%
 
