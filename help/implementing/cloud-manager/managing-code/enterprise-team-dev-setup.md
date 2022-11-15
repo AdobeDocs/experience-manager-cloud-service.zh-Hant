@@ -3,7 +3,7 @@ title: 企業開發團隊設定
 description: 了解如何設定和擴展您的企業開發團隊，並了解 AEM as a Cloud Service 如何支援您的開發流程。
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: a31c3693c9b2af9bd7f9d7f1f6fb0a61a4411df0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1444'
 ht-degree: 100%
 
