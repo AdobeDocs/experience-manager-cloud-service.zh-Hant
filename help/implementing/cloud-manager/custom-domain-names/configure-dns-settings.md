@@ -3,7 +3,7 @@ title: 正在設定 DNS 設定
 description: 正在設定 DNS 設定
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 source-git-commit: 60b496024b3d012033309632999851c08f43c5d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
 ht-degree: 100%
 
