@@ -4,7 +4,7 @@ description: 以下是 AEM as a Cloud Service 版本 2022.01.0 中 Cloud Manager
 feature: Release Information
 exl-id: 2dfdc943-0518-40ea-8712-1dabb97eeaa9
 source-git-commit: 6e394aaabcb123aea53fba49684aaade3e6c87a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '246'
 ht-degree: 100%
 
