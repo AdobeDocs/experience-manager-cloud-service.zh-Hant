@@ -3,7 +3,7 @@ title: 建立生產計劃
 description: 了解如何使用 Cloud Manager 建立您自己的生產程序來主持即時流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
 ht-degree: 100%
 
