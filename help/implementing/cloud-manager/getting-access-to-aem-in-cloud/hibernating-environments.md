@@ -3,7 +3,7 @@ title: 休眠和去休眠沙箱環境
 description: 了解沙箱程序的環境如何自動進入休眠模式以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '669'
 ht-degree: 100%
 
