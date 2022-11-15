@@ -4,9 +4,9 @@ description: 了解如何建立包含遮色片銳利化設定、智慧型裁切�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
+source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
 workflow-type: tm+mt
-source-wordcount: '3351'
+source-wordcount: '3344'
 ht-degree: 7%
 
 ---
@@ -84,14 +84,13 @@ Adobe建議您檢閱任何產生的裁切和色票，以確保這些裁切和色
 
 支援的最大輸入檔案大小解析度為16K。
 
-智慧型裁切不支援CMYK影像格式。
-
 >[!NOTE]
 16K解析度是水準約16,000像素的顯示解析度。 最常討論的16K解析度是15360 × 8640，它使每個維度8K UHD的像素計數加倍，總數是像素的4倍。 此解析度為1.327億像素，是4K解析度的16倍，是1080p解析度的64倍。
 
 | 影像格式 | 不區分大小寫的副檔名 | MIME類型 | 支援的輸入色域 | 支援的最大輸入檔案大小 | 支援的影像格式？ |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | 是 |
+| CMYK |  |  |  |  | 否 |
 | EPS |  |  |  |  | 否 |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | 是；動畫GIF的第一幀用於轉譯。 不能配置或更改第一個幀。 |
 | JPEG | `.jpg` 和 `.jpeg` | image/jpeg | sRGB | 15 GB | 是 |
