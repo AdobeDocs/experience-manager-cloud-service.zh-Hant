@@ -3,7 +3,7 @@ title: 專案建立精靈
 description: 了解專案建立精靈，以幫助您在建立生產計畫後快速設定專案。
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
 ht-degree: 100%
 
