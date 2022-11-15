@@ -3,7 +3,7 @@ title: 新增自訂網域名稱
 description: 了解如何使用 Cloud Manager 新增自訂網域名稱。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 0febf4b4a59617e6cc4f8414963c4a91fcf8765e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '570'
 ht-degree: 100%
 
