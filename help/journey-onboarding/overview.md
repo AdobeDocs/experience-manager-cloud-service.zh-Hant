@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 入門歷程簡介
 description: 從此處開始，逐步引導您了解 AEM as a Cloud Service 的入門流程。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1175'
 ht-degree: 100%
 
