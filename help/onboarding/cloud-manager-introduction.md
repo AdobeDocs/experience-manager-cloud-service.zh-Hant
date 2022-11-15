@@ -3,7 +3,7 @@ title: Cloud Manager 簡介
 description: 了解 Cloud Manager 如何透過其程序、環境和管道支援您的 AEM 專案。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '834'
 ht-degree: 100%
 
