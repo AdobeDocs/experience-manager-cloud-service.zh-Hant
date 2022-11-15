@@ -3,7 +3,7 @@ title: 管理 IP 允許清單
 description: 了解如何在 Cloud Manager 中檢視、編輯、刪除和檢查 IP 允許清單的狀態。
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 source-git-commit: 3080427529bb65e27721e05069012b33579fdd73
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '821'
 ht-degree: 100%
 
