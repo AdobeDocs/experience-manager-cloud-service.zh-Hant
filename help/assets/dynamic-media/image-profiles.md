@@ -4,9 +4,9 @@ description: 了解如何建立包含遮色片銳利化設定、智慧型裁切�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
+source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
 workflow-type: tm+mt
-source-wordcount: '3344'
+source-wordcount: '3390'
 ht-degree: 7%
 
 ---
@@ -56,9 +56,9 @@ ht-degree: 7%
 
 當您在影像上實作智慧型裁切時，Adobe會建議下列最佳實務並強制執行下列限制：
 
-| 限制類型 | 最佳實務 | 限制 | 2022年12月31日上限的變更 |
-| --- | --- | --- | --- |
-| 每個影像的智慧作業數 | 5 | 100 | 20 |
+| 限制類型 | 最佳實務 | 限制 |
+| --- | --- | --- |
+| 每個影像的智慧作業數 | 5 | 100 |
 
 另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
 
@@ -71,7 +71,8 @@ ht-degree: 7%
 您有兩個影像裁切選項可供選擇。 您也可以選擇自動建立顏色和影像色票，或保留目標解析度間的裁切內容。
 
 >[!IMPORTANT]
-Adobe建議您檢閱任何產生的裁切和色票，以確保這些裁切和色票適當且與您的品牌和值相關。
+·Adobe建議您檢閱任何產生的裁切和色票，以確保這些裁切和色票適當且與您的品牌和值相關。
+·智慧型裁切不支援CMYK影像格式。
 
 | 選項 | 使用時機 | 說明 |
 | --- | --- | --- |
@@ -199,7 +200,8 @@ Adobe建議您檢閱任何產生的裁切和色票，以確保這些裁切和色
 ## 編輯單一影像的智慧型裁切或智慧型色票 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-Adobe建議您檢閱任何產生的智慧型裁切和智慧色票，以確保這些裁切和智慧色票適當且與您的品牌和值相關。
+·Adobe建議您檢閱任何產生的智慧型裁切和智慧色板，以確保它們適當且與您的品牌和價值相關。
+·智慧型裁切不支援CMYK影像格式。
 
 您可以手動重新對齊或調整影像的智慧型裁切視窗大小，以進一步細化其焦點。
 
@@ -231,6 +233,10 @@ Adobe建議您檢閱任何產生的智慧型裁切和智慧色票，以確保這
 1. 在頁面的右上角附近，選取 **[!UICONTROL 儲存]**，然後選取 **[!UICONTROL 關閉]** 返回資產資料夾。
 
 ## 編輯多個影像的智慧型裁切或智慧型色票 {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+·Adobe建議您檢閱任何產生的智慧型裁切和智慧色板，以確保它們適當且與您的品牌和價值相關。
+·智慧型裁切不支援CMYK影像格式。
 
 將包含智慧型裁切的影像描述檔套用至資料夾後，該資料夾中的所有影像都會套用裁切至它們。 如果需要，您可以 *手動* 重新對齊或調整多個影像中智慧型裁切窗口的大小，以進一步細化其焦點。
 
