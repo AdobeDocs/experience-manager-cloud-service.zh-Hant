@@ -2,10 +2,10 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: 1dfef0f1157ead7f1240e9a41794436197136daa
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 8%
+source-wordcount: '1327'
+ht-degree: 7%
 
 ---
 
@@ -36,6 +36,9 @@ ht-degree: 8%
 
 * Azure blob儲存服務： `casstorageprod.blob.core.windows.net`
 * 用戶映射IO終結點： `usermanagement.adobe.io`
+
+>[!NOTE]
+>如果提取因下列錯誤而失敗：&quot;javax.net.ssl.SSLHandshakeException:sun.security.validator.ValidatorException:PKIX路徑生成失敗：sun.security.provider.certpath.SunCertPathBuilderException:找不到到被請求目標的有效證書路徑」，則可通過導入相關CA證書來解決此問題。
 
 ### 啟用SSL記錄 {#enable-ssl-logging}
 
