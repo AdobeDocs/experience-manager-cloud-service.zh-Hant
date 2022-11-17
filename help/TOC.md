@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
+source-git-commit: 6d5ca58e8545da89dc424304586bc8a1afc07540
 workflow-type: tm+mt
-source-wordcount: '3766'
+source-wordcount: '3786'
 ht-degree: 45%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 45%
 # Experience Manager as a Cloud Service 說明 {#content}
 
 + [AEMaaCS首頁](/help/overview/home.md)
-+ 總覽 {#overview}
++ 概觀 {#overview}
    + [AEM as a Cloud Service 簡介](/help/overview/introduction.md)
    + [新增功能與不同之處](/help/overview/what-is-new-and-different.md)
    + [術語 - 雲端新功能](/help/overview/terminology.md)
@@ -147,7 +147,7 @@ ht-degree: 45%
       + [開發人員和部署管理員工作](/help/journey-onboarding/developers.md)
       + [AEM 使用者工作](/help/journey-onboarding/aem-users.md)
    + AEM參考示範附加元件歷程 {#demo-add-on}
-      + [總覽](/help/journey-sites/demos-add-on/overview.md)
+      + [概觀](/help/journey-sites/demos-add-on/overview.md)
       + [安裝](/help/journey-sites/demos-add-on/installation.md)
       + [建立方案](/help/journey-sites/demos-add-on/create-program.md)
       + [建立示範網站](/help/journey-sites/demos-add-on/create-site.md)
@@ -166,7 +166,7 @@ ht-degree: 45%
    + [移轉指南以Experience Manager合作夥伴的as a Cloud Service](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Cloud Acceleration Manager簡介 {#introduction-cam}
-         + [總覽](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+         + [概觀](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [優點](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + 使用Cloud Acceleration Manager {#using-cam}
          + [Cloud Acceleration Manager快速入門](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
@@ -175,10 +175,10 @@ ht-degree: 45%
          + [上線階段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + 雲端轉換工具 {#cloud-migration}
       + Best Practices Analyzer {#best-practices-analyzer}
-         + [總覽](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+         + [概觀](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [使用Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + 內容轉移工具 {#content-transfer-tool}
-         + [總覽](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+         + [概觀](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [內容轉移工具的必要條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [使用內容轉移工具的准則和最佳作法](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [內容轉移工具快速入門](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
@@ -191,11 +191,11 @@ ht-degree: 45%
          + [在發佈執行個體上執行內容轉移工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [疑難排解內容轉移工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 使用者對應工具 {#user-mapping-tool}
-            + [總覽](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
+            + [概觀](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
             + [重要考量](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
             + [使用使用者對應工具](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
          + 舊版內容轉移工具 {#legacy}
-            + [總覽](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
+            + [概觀](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
             + [內容轉移工具的必要條件](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
             + [使用內容轉移工具的准則和最佳作法](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
             + [內容轉移工具快速入門](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
@@ -645,6 +645,7 @@ ht-degree: 45%
 + 無頭 {#headless}
    + [什麼是無頭式CMS?](/help/headless/what-is-headless.md)
    + [AEM Headless簡介](/help/headless/introduction.md)
+   + [開發人員入口網站（其他資源）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)
       + [設定](/help/headless/setup/create-configuration.md)
@@ -692,6 +693,7 @@ ht-degree: 45%
          + [如何把它們拼在一起](/help/journey-headless/developer/put-it-all-together.md)
          + [如何與無頭應用程式一起運行](/help/journey-headless/developer/go-live.md)
          + [選用 — 如何使用AEM建立單頁應用程式](/help/journey-headless/developer/create-spa.md)
+         + [開發人員入口網站（其他資源）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
       + 無頭式內容架構者歷程 {#architect}
          + [AEM無頭式內容架構師歷程概述](/help/journey-headless/architect/overview.md)
          + [使用AEM建立無頭的內容模型 — 簡介](/help/journey-headless/architect/introduction.md)
@@ -742,7 +744,7 @@ ht-degree: 45%
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [部署您的計劃碼](/help/implementing/cloud-manager/deploy-code.md)
       + 了解測試結果 {#test-results}
-         + [總覽](/help/implementing/cloud-manager/overview-test-results.md)
+         + [概觀](/help/implementing/cloud-manager/overview-test-results.md)
          + [計劃碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)
          + [自訂計劃碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + [功能測試](/help/implementing/cloud-manager/functional-testing.md)
