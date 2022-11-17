@@ -2,10 +2,10 @@
 title: 自訂網域名稱簡介
 description: Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
+source-git-commit: 42318a42a55134501eb13feca22791bb5db4e83f
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -55,7 +55,7 @@ Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一�
 
 | 步驟 | 說明 | 責任 | 了解更多 |
 |--- |--- |--- |---|
-| 1 | 將 SLL 憑證新增到 Cloud Manager | 客戶 | [新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 1 | 新增SSL憑證至Cloud Manager | 客戶 | [新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | 新增 TXT 記錄以驗證網域 | 客戶 | [新增 TXT 記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
 | 3 | 查看網域驗證狀態 | 客戶 | [檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
 | 3a | 如果網域驗證失敗並顯示狀態為 `Domain Verification Failure` | 客戶 | [檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
