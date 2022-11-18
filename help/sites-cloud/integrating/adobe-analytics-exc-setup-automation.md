@@ -1,27 +1,27 @@
 ---
 title: 將Adobe Analytics與Experience Cloud設定自動化整合
-description: Experience Cloud設定自動化提供簡單且自動化的方式，透過簡單的UI精靈介面，整合及檢測Experience Manager Sites與Experience Platform Launch及Adobe Analytics。 了解如何透過您自己的網站使用自動化設定。
+description: Experience Cloud設定自動化提供簡單且自動化的方式，透過簡單的UI精靈介面，整合及檢測Experience Manager Sites與Experience Platform標籤及Adobe Analytics。 了解如何透過您自己的網站使用自動化設定。
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
+source-git-commit: 539d3947964652dd92620ce0b0b057754742be96
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 將Adobe Analytics與Experience Cloud設定自動化整合 {#integrate-adobe-analytics-automation-setup}
 
-Experience Cloud設定自動化提供簡單且自動化的方式，透過簡單的UI精靈介面，整合及檢測Experience Manager Sites與Experience Platform Launch及Adobe Analytics。
+Experience Cloud設定自動化提供簡單且自動化的方式，透過簡單的UI精靈介面，整合及檢測Experience Manager Sites與Experience Platform標籤及Adobe Analytics。
 
 將Adobe Analytics與AEM Sites整合從未像現在這樣簡單。 透過Experience Cloud設定自動化，您只需按幾下，即可設定、整合和檢測網站以擷取效能分析，以了解客戶的互動和轉換成效。
 
-本影片探討如何使用AEM設定自動化將Experience Cloud網站與Experience Platform Launch和Analytics整合：
+本影片探討如何使用AEM設定自動化將Experience Cloud網站與Experience Platform標籤和Analytics整合：
 
 >[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
-## 需求
+## 要求
 
 自動化設定是專為使用 [AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [Adobe用戶端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 已啟用。 您可以使用 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 或使用 [網站範本](/help/journey-sites/quick-site/create-site.md).
 
@@ -57,7 +57,7 @@ Experience Cloud設定自動化提供簡單且自動化的方式，透過簡單�
    自動化設定會以非同步方式進行。 此 **檢查整合狀態** 會顯示整合的目前狀態。
 
    * **正在進行中**  — 表示作業正在運行。
-   * **整合完成**  — 指出工作已完成整合Analytics和Launch、設定Launch擴充功能和Launch規則，以及在Adobe Analytics中建立新的報表套裝。
+   * **整合完成**  — 指出工作已完成整合Analytics與標籤、設定標籤擴充功能與標籤規則，以及在Adobe Analytics中建立新的報表套裝。
    * **失敗**  — 表示自動作業無法成功完成。 按一下「日誌」連結，檢查此作業的日誌檔案。
 
 ## 驗證AEM設定
@@ -66,7 +66,7 @@ Experience Cloud設定自動化提供簡單且自動化的方式，透過簡單�
 
 1. 使用 **網站編輯器**.
 1. 使用 **檢視為已發佈** 選項來載入已發佈的頁面版本。
-1. 使用瀏覽器的開發人員工具來檢查網路流量，以及 **Launch** 和 `AppMeasurement.js` 檔案現在正在載入。
+1. 使用瀏覽器的開發人員工具來檢查網路流量，以及 **標籤** 和 `AppMeasurement.js` 檔案現在正在載入。
 1. Inspect瀏覽器的主控台，以查看Adobe用戶端資料層已引發並收集頁面和元件層級事件。
 
 ## 驗證Analytics設定
