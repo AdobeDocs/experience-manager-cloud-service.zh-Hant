@@ -3,9 +3,9 @@ title: 雲端中的 Dispatcher
 description: 雲端中的 Dispatcher
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
+source-git-commit: 10da82c572682156534f7a897715d703ba3bde3d
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1010'
 ht-degree: 7%
 
 ---
@@ -100,6 +100,7 @@ Dispatcher工具可用來驗證專案的Dispatcher設定並除錯。 進一步�
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 | `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
+| `mod_include (no directives supported)` | [https://httpd.apache.org/docs/2.4/mod/mod_include.html](https://httpd.apache.org/docs/2.4/mod/mod_include.html) |
 
 
 客戶無法添加任意模組，但將來可能會考慮添加其他模組。 客戶可在SDK中執行驗證器的allowlist命令，以找到指定Dispatcher版本可用的指令清單。
