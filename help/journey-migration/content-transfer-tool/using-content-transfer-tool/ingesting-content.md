@@ -2,9 +2,9 @@
 title: 將內容擷取至Target
 description: 將內容擷取至Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
+source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '956'
 ht-degree: 12%
 
 ---
@@ -26,6 +26,11 @@ ht-degree: 12%
 1. 前往Cloud Acceleration Manager。 按一下您的專案卡，然後按一下「內容轉移」卡。 導覽至 **擷取工作** 按一下 **新擷取**
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
+
+
+1. 檢閱擷取檢查清單，並確保所有步驟皆已完成。 這些是確保成功擷取的必要步驟。 您可以繼續 **下一個** 步驟（僅在檢查清單已完成時執行）。
+
+   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
 1. 提供建立新擷取所需的資訊。
 

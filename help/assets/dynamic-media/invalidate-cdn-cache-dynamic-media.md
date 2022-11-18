@@ -4,7 +4,7 @@ description: 了解如何使您的CDN（內容傳遞網路）快取內容失效�
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
+source-git-commit: 532d32334456b4b791e3a5ffe17a780f378dd1cc
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%
@@ -23,11 +23,11 @@ Dynamic Media資產會由CDN（內容傳遞網路）快取，以快速傳遞給�
 
 如果您已啟用 [智慧型影像](/help/assets/dynamic-media/imaging-faq.md) 在您的帳戶中，當您使用Adobe套件的CDN時，可以清除單一基礎URL，以清除具有不同查詢字串的所有URL。
 
-例如，使用 `https://weekendsite.scene7.com/is/image/grundfos/image`，也會讓下列URL失效：
+例如，使用 `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image`，也會讓下列URL失效：
 
-* `https://weekendsite.scene7.com/is/image/grundfos/image`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?$PLP$`
 * 等等。
 
 不過，不支援智慧型影像處理的一般網域並非如此，例如 `s7d1.scene7.com`. 此類網域仍需要完整的URL才能成功失效。
@@ -93,7 +93,7 @@ Dynamic Media資產會由CDN（內容傳遞網路）快取，以快速傳遞給�
 
 在所有情況下，會處理整個批次以失效，或處理整個批次失敗。
 
-| 錯誤 | 說明 |
+| 錯誤 | 解釋 |
 | --- | --- |
 | *無法擷取所選資產的URL。* | 在符合下列任一情況時發生：<br> — 找不到Dynamic Media設定。<br> — 擷取可透過讀取Dynamic Media設定的服務使用者時發生例外狀況。<br>-Dynamic Media設定中缺少發佈伺服器或用來形成URL的公司根。 |
 | *有些URL未正確定義。 更正並重新提交。* | 如果IPS CDN快取失效API傳回錯誤，則會發生此情況。 此錯誤表示URL參照不同的公司，或該URL無效，如IPS cdnCacheInvalidation API所完成的驗證。 |
