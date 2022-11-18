@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager中的實作階段
 description: 本頁概述Cloud Acceleration Manager的實作階段。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 24331b974ded34ef949cc3d6fb157b124c145dee
+source-git-commit: dbf01e5bd9ee83e378b4297d2f3d341d548f9238
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '683'
 ht-degree: 2%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 2%
 
    頁面會在三個不同的標籤中顯示程式碼重構考量事項：
 
-   * 總覽
+   * 概觀
    * Dispatcher
    * 測試
 
@@ -110,18 +110,18 @@ AEMas a Cloud Service部署卡提供所有相關內容，可協助您將程式�
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
-### 預估內容轉移時間 {#calculating}
+<!--### Estimating Content Transfer Time {#calculating}
 
-提供「內容轉移工具」電腦，估計完成內容轉移活動可能需要多久的時間。 您可以使用內容存放庫大小滑桿來選取套用至專案的大小。 提取和擷取階段的傳輸時間會有所不同。
+A Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
 
-![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
->[!NOTE]
->這些時候只是估計。 這些估計沒有考慮網路速度和擴展實例的時間等因素。
+   >[!NOTE]
+   >These times are estimates only. Factor such as network speeds and time to scale up instances have not been accounted for in these estimates.
 
-若要預估AEM存放庫的大小，您可以在 `http://HOST:PORT/etc/reports/diskusage.html`.
+To estimate the size of the AEM Repository, you can run the Disk Usage report under `http://HOST:PORT/etc/reports/diskusage.html`. 
 
-您也可以使用 `path` 參數，例如 `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
+You can also estimate the size of specific repository paths by using the `path` parameter, for example, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`. -->
 
 ## 下一步 {#whats-next}
 
