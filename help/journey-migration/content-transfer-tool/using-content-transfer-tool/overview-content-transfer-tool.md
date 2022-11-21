@@ -2,19 +2,19 @@
 title: 內容轉移工具綜覽
 description: 內容轉移工具綜覽
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: 99ecf1309b9fa7613bfb9c99de9677700082f128
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 44%
 
 ---
 
-# 總覽 {#overview-content-transfer-tool}
+# 概觀 {#overview-content-transfer-tool}
 
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
->title="總覽"
+>title="概觀"
 >abstract="「內容轉移工具」是由Adobe開發的工具，可用來將現有內容從來源AEM例項（內部部署或AMS）移至目標AEM Cloud Service例項。 此工具也會自動轉移主體 (使用者或群組)。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="准則與最佳作法"
 
@@ -34,7 +34,7 @@ ht-degree: 44%
 
 * 自助式方式，只需擷取一次移轉集，並同時內嵌至多個環境
 * 透過更好的載入狀態、護欄和錯誤處理改善使用者體驗
-* 擷取記錄會持續存在，且一律可用於疑難排解
+* 擷取記錄會持續存在，且隨時都可用於疑難排解
 
 若要開始使用新版本，您需要解除安裝舊版「內容轉移工具」，因為工具的架構有重大變更。
 

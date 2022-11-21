@@ -2,10 +2,10 @@
 title: 驗證內容傳輸
 description: 使用「內容轉移工具」來驗證內容轉移
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 015f3b0232861ac961922245650cb02db44daf77
+source-git-commit: 99ecf1309b9fa7613bfb9c99de9677700082f128
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '890'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 如需此項目的圖形圖示，請參閱下列範例：
 
-### 範例1 {#example-1}
+### 範例 1 {#example-1}
 
 * **提取（覆寫）**
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
    這種「覆寫」和「擦去」的組合將產生一致的驗證結果，即使重複擷取亦然。
 
-### 範例2 {#example-2}
+### 範例 2 {#example-2}
 
 * **擷取**
 
@@ -136,7 +136,7 @@ Migration validation took 0 minutes
 
 ### 驗證失敗. 現在呢？ {#validation-fail}
 
-第一步是判斷擷取是否確實失敗，或擷取的內容是否已存在於目標環境中。 如果對 **擷取前先擦去雲端例項上的現有內容** 選項已禁用。
+第一步是判斷擷取是否確實失敗，或擷取的內容是否已存在於目標環境中。 如果對 **擷取前先擦去雲端例項上的現有內容** 選項。
 
 若要驗證，請從驗證報表中選擇路徑，並檢查其是否存在於目標環境中。 如果這是發佈環境，您可能受限於僅能直接檢查頁面和資產。 如果您需要此步驟的協助，請向客戶服務開立票證。
 

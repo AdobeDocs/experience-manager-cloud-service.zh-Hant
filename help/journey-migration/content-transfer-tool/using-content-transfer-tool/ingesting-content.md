@@ -2,10 +2,10 @@
 title: 將內容擷取至Target
 description: 將內容擷取至Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
+source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 12%
+source-wordcount: '1029'
+ht-degree: 11%
 
 ---
 
@@ -40,6 +40,10 @@ ht-degree: 12%
    >[!NOTE]
    >
    >如果來源為「作者」，建議將其內嵌至目標上的「作者」階層。 同樣地，如果來源為「發佈」，則target也應為「發佈」。
+
+   >[!NOTE]
+   >
+   >如果目標層為 `Author`，則擷取期間會關閉author例項，且使用者無法使用（例如，作者或執行維護的任何人等）。 這是為了保護系統，並防止任何可能遺失或導致擷取衝突的變更。 請確保您的團隊了解這一事實。 另請注意，環境在製作擷取期間會顯示為休眠。
 
    >[!NOTE]
    >
