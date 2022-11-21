@@ -3,10 +3,10 @@ title: 使用Dispatcher工具進行驗證和除錯
 description: 使用Dispatcher工具進行驗證和除錯
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
+source-git-commit: 687323031ecfd179a1875033411b8398a3d1d74b
 workflow-type: tm+mt
 source-wordcount: '2693'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -50,6 +50,7 @@ ht-degree: 0%
     ├── cache
     │   ├── default_invalidate.any
     │   ├── default_rules.any
+    │   ├── marketing_query_parameters.any
     │   └── rules.any
     ├── clientheaders
     │   ├── clientheaders.any
@@ -534,7 +535,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 從舊版模式移轉至彈性模式 {#migrating}
 
-在Cloud Manager 2021.7.0版本中，新的Cloud Manager計畫可透過 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 或更高版本，包括檔案 **選擇加入/USE_SOURCES_DIRECTLY**. 這移除了 [舊模式](/help/implementing/dispatcher/validation-debug-legacy.md) 大小，也會導致SDK和執行階段以改良的方式驗證和部署設定。 如果您的Dispatcher設定沒有此檔案，強烈建議您進行移轉。 使用下列步驟確保安全轉換：
+在Cloud Manager 2021.7.0版本中，新的Cloud Manager計畫可透過 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 或更高版本，包括檔案 **選擇加入/USE_SOURCES_DIRECTLY**. 這移除了 [舊模式](/help/implementing/dispatcher/validation-debug-legacy.md) 大小，也會導致SDK和執行階段以改良的方式驗證和部署設定。 如果您的Dispatcher設定沒有此檔案，強烈建議您進行移轉。 使用下列步驟確保安全轉換：
 
 1. **本機測試。** 使用最新的Dispatcher工具SDK，新增資料夾和檔案 `opt-in/USE_SOURCES_DIRECTLY`. 請依照本文的「本機驗證」指示，測試Dispatcher是否可在本機運作。
 1. **雲開發測試：**

@@ -4,7 +4,7 @@ description: 使用Dispatcher工具（舊版）進行驗證和除錯
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
+source-git-commit: 687323031ecfd179a1875033411b8398a3d1d74b
 workflow-type: tm+mt
 source-wordcount: '2345'
 ht-degree: 0%
@@ -54,6 +54,7 @@ ht-degree: 0%
     ├── cache
     │   ├── default_invalidate.any
     │   ├── default_rules.any
+    │   ├── marketing_query_parameters.any
     │   └── rules.any
     ├── clientheaders
     │   ├── clientheaders.any
@@ -320,7 +321,7 @@ Apache虛擬主機配置中有兩種類型的檔案，可以指定為包括：�
 
 此訊息指出您的設定已棄用第1版配置，包含完整的Apache設定和具有 `ams_` 前置詞。 雖然回溯相容性仍支援此功能，但您應切換至新版面。
 
-請注意，第一階段也可 **單獨運行**，而非來自包裝函式 `validate.sh` 指令碼。
+請注意，第一階段也可以 **單獨運行**，而非來自包裝函式 `validate.sh` 指令碼。
 
 當對你的瑪文藏物或 `dispatcher/src` 子目錄，它會報告驗證失敗：
 
