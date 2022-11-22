@@ -2,10 +2,10 @@
 title: UI 測試
 description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用計劃建立和自動執行 UI 測試。
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
-source-wordcount: '1338'
-ht-degree: 100%
+source-git-commit: 31e84b7383cd9774b0eaf8ee0f2fe39bcd77fa15
+workflow-type: tm+mt
+source-wordcount: '1407'
+ht-degree: 95%
 
 ---
 
@@ -51,7 +51,7 @@ UI 測試作為每個 Cloud Manager 管道的特定品質門的一部分執行�
 <includes>
     <include>Dockerfile</include>
     <include>wait-for-grid.sh</include>
-    <include>testing.properties</include> <!- opt-in test module in Cloud Manager -->
+    <include>testing.properties</include> <!-- opt-in test module in Cloud Manager -->
 </includes>
 [...]
 ```
@@ -194,6 +194,24 @@ UI 測試作為每個 Cloud Manager 管道的特定品質門的一部分執行�
 Docker 鏡像必須生成 JUnit XML 格式的測試報告，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。JUnit XML 格式是一種廣泛使用的報告測試結果的格式。如果 Docker 鏡像使用 Java 和 Maven，標準測試模組如[Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和[Maven 故障安全插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)可以開箱即用地生成此類報告。
 
 如果 Docker 映像是使用其他編程語言或測試執行計劃實現的，請查看所選工具的文件以了解如何生成 JUnit XML 報告。
+
+### 擷取螢幕擷取畫面和影片 {#capture-screenshots}
+
+Docker影像可產生其他測試輸出（例如螢幕擷取畫面、視訊），並儲存至環境變數所指定的路徑 `REPORTS_PATH`. 在 `REPORTS_PATH` 包含在測試結果封存中。
+
+如果在UI測試執行期間建立了測試結果存檔，則測試日誌檔案最後包含對測試結果存檔位置的引用。
+
+```
+[...]
+
+===============================================================
+The detailed test results can be downloaded from the URL below.
+Note: the link will expire after 60 days
+
+    https://results-host/test-results.zip
+
+===============================================================
+```
 
 ### 上傳檔案 {#upload-files}
 
