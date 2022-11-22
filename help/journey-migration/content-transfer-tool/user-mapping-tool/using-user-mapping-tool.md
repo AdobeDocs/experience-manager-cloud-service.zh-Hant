@@ -2,9 +2,9 @@
 title: 使用使用者對應工具
 description: 使用使用者對應工具
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '753'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 1. 導覽至 [Adobe Developer Console](https://console.adobe.io) 使用您的Adobe ID。
 1. 建立新專案或開啟現有專案。
 1. 新增API — 按一下 **新增至專案** 選取 **API**
-1. 選擇「用戶管理API」。  您可能需要取得權限才能擁有此選項。
+1. 選擇「用戶管理API」。  您必須擁有系統管理員權限才能使用此選項。
 1. 建立JWT憑證。
 1. 產生金鑰組或上傳公開金鑰（rsa不好）。  有個按鈕， **產生公開/私用金鑰組**，這會幫您完成。  請務必儲存公開金鑰和私密金鑰。
 1. 導覽至「使用者管理API」。
