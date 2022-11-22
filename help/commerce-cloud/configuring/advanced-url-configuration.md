@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: fbd2fdcb61bcbae49f07c3da26b14d56d50b1cab
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2214'
 ht-degree: 3%
 
 ---
@@ -183,6 +183,18 @@ ht-degree: 3%
 
 另一方面，在發佈層級例項上，目錄頁面URL應保持穩定，以免在搜尋引擎排名上失去增益。 因為該發佈層級例項預設不會呈現特定目錄頁面的深層連結。 若要變更此行為， _CIF URL提供者特定頁面策略_ 可設定為一律產生特定頁面URL。
 
+### 多個目錄頁面 {#multiple-product-pages}
+
+當編輯者想要完全控制網站的頂層導覽時，可能不需要使用單一目錄頁面來呈現目錄的頂層類別。 編輯者可以建立多個目錄頁面，針對他們要包含在頂層導覽中的目錄類別各建立一個頁面。
+
+對於該使用案例，每個目錄頁面可具有對針對目錄頁面配置的類別的特定產品和類別頁面的參考。 此 `UrlProvider` 將使用這些來建立已設定類別中頁面和類別的連結。 不過，基於效能考量，僅會考慮網站導覽根/登陸頁面的直接目錄頁面子項。
+
+建議將目錄頁面的產品和類別頁面子系至該目錄頁面，否則導覽或階層連結等元件可能無法正常運作。
+
+>[!NOTE]
+>
+> 需要完整支援多個目錄頁面 [CIF核心元件2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) 或更新版本。
+
 ## 自訂 {#customization}
 
 ### 自訂URL格式 {#custom-url-format}
@@ -221,7 +233,7 @@ _**平衡URL長度與編碼資訊。**_
 
 ### 移轉至新URL格式 {#migrate-url-formats}
 
-許多預設URL格式彼此不同程度地相容，這表示由某個格式轉換的URL可能會由另一個格式剖析。 這有助於在URL格式之間移轉。
+許多預設URL格式彼此不同程度地相容，這表示由某個格式設定的URL可能會由另一個格式設定的URL剖析。 這有助於在URL格式之間移轉。
 
 另一方面，搜尋引擎需要一些時間，才能以新的URL格式重新編目所有目錄頁面。 若要支援此程式並改善一般使用者體驗，建議您提供重新導向，將使用者從舊的URL轉送至新的URL。
 
