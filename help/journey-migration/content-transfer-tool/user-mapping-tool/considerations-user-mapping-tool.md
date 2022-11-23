@@ -2,9 +2,9 @@
 title: 使用者對應工具的重要考量
 description: 使用者對應工具的重要考量
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 18047b129a9a347cbf6edcdc07dc6570fca26d3b
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,15 @@ ht-degree: 0%
 
 將記錄下列特定案例：
 
-1. 若使用者在 `profile/email` 欄位 *jcr* 節點將遷移有關用戶或組，但未映射。
+1. 若使用者在 `profile/email` 欄位 *jcr* 節點將遷移有關用戶或組，但未映射。  即使使用電子郵件地址做為登入的使用者名稱，也會是這種情況。
 
 1. 如果在AdobeIdentity Management系統(IMS)系統中找不到所使用組織ID的指定電子郵件（或如果IMS ID因其他原因無法擷取），則相關的使用者或群組將會移轉，但不會對應。
 
 1. 如果用戶當前已禁用，則會將其視為與未禁用相同。 它會照常對應和移轉，並在雲端例項上保持停用狀態。
 
 1. 如果目標AEM Cloud Service實例上存在與源AEM實例上的某個用戶同名的用戶(rep:principalName)，則不會遷移該用戶或組。
+
+1. 如果使用者在移轉時未先透過「使用者對應」進行對應，則在目標雲端系統上，他們將無法使用其IMS ID登入。  他們可能能使用傳統AEM方法登入，但請記住，這不是通常需要或預期的。
 
 ## 其他考量事項 {#additional-considerations}
 
