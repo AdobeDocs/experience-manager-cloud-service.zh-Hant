@@ -2,9 +2,9 @@
 title: 為您的示範網站啟用AEM Screens
 description: 了解在示範網站上啟用完整AEM Screensas a Cloud Service體驗的步驟。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
+source-git-commit: 71e318f93b6edab5d2ae685d8603c3d0040f72a3
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2699'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,11 @@ ht-degree: 0%
 
 了解在示範網站上啟用完整AEM Screensas a Cloud Service體驗的步驟。
 
-## 迄今為止的故事 {#story-so-far}
+>[!NOTE]
+>
+>AEM Screens示範需要將Screens附加元件新增至Cloud Manager計畫。 學習 [此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html) 如何新增。
+
+## 到目前為止 {#story-so-far}
 
 在AEM參考示範附加元件歷程的上一份檔案中， [建立演示網站，](create-site.md) 您根據「參考演示附加元件」的模板建立了新的演示站點。 您現在應該：
 
