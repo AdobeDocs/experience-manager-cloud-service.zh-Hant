@@ -2,9 +2,9 @@
 title: 使用使用者對應工具
 description: 使用使用者對應工具
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
+source-git-commit: a9e30f6a15bbc9fc830849e05e1814a2cdd50fd5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '816'
 ht-degree: 3%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 3%
 使用者對應工具使用API，可透過電子郵件查詢AdobeIdentity Management系統(IMS)使用者並傳回其IMS ID。 此API需要使用者為其組織、用戶端密碼和存取或承載權杖建立用戶端ID。
 
 ## 設定使用者對應工具 {#setting-up-user-mapping}
+
+**先決條件：** 使用者對應需要每個使用者對應至其IMS ID在AEM的設定檔和IMS中都有電子郵件地址。  請注意，即使使用者使用電子郵件地址做為使用者ID來登入，除非該電子郵件地址也位於設定檔中，以及IMS中，否則對應將無法供該使用者使用。
 
 請依照下列步驟設定此設定：
 
