@@ -3,9 +3,9 @@ title: 設定Dynamic MediaCloud Service
 description: 了解如何在Adobe Experience Manager as a Cloud Service中設定Dynamic Media。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 58aee2ad24b38fd8abc197961adda524832d2614
+source-git-commit: 50a7db14a378f99eeadc3f9cb91f228ea4139ff4
 workflow-type: tm+mt
-source-wordcount: '3596'
+source-wordcount: '3795'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | 公司根資料夾路徑 | 您公司的根資料夾路徑。 |
    | 發佈資產 | 您可以從下列三個選項中選擇：<br>**[!UICONTROL 立即&#x200B;]**— 上傳資產時，系統會擷取資產並立即提供URL/內嵌。 發佈資產不需要使用者干預。<br>**[!UICONTROL 啟動時]**  — 您必須先明確發佈資產，才能提供URL/內嵌連結。<br>**[!UICONTROL 選擇性發佈&#x200B;]**— 資產會自動發佈，僅供安全預覽。 也可明確發佈至Experience Manageras a Cloud Service，而無須發佈至DMS7再於公共網域中傳遞。 未來，此選項會將資產發佈至Experience Manageras a Cloud Service，並將資產發佈至Dynamic Media，彼此互斥。 也就是說，您可以將資產發佈至DMS7，以便使用智慧型裁切或動態轉譯等功能。 或者，您只能以Experience Manageras a Cloud Service發佈資產以進行預覽；這些相同資產不會發佈在DMS7中，以供在公共網域傳送。 |
    | 安全預覽伺服器 | 可讓您指定安全轉譯預覽伺服器的URL路徑。 也就是說，產生轉譯後，Experience Manageras a Cloud Service可以安全地存取和預覽遠端Dynamic Media轉譯(不會將任何二進位檔傳回至Experience Manageras a Cloud Service執行個體)。<br>除非您有使用自己公司的伺服器或特殊伺服器的特殊安排，否則Adobe建議您保留此設定的指定。 |
-   | 同步處理所有內容 | 預設為選取。 如果您想要選擇性地包含或排除從同步至Dynamic Media的資產，請取消選取此選項。 取消選取此選項可讓您從下列兩個Dynamic Media同步模式中選擇：<br>**[!UICONTROL Dynamic Media同步模式]**<br>**[!UICONTROL 預設啟用&#x200B;]**— 預設會將設定套用至所有資料夾，除非您特別標示要排除的資料夾。 <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 預設為停用]**  — 在您明確標示選取的資料夾以同步至Dynamic Media之前，不會將設定套用至任何資料夾。<br>若要將選取的資料夾標示為同步至Dynamic Media，請選取資產資料夾，然後在工具列中選取 **[!UICONTROL 屬性]**. 在 **[!UICONTROL 詳細資料]** 標籤中 **[!UICONTROL Dynamic Media同步模式]** 下拉式清單中，從下列三個選項中選擇。 完成後，選取 **[!UICONTROL 儲存]**. *記住：如果您選取&#x200B;**同步所有內容**更早。* 另請參閱 [在Dynamic Media的資料夾層級使用選擇性發佈](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL 繼承&#x200B;]**— 資料夾上沒有明確的同步值。 相反，資料夾會繼承其上階資料夾中的一個同步值或雲配置中的預設模式。 繼承的詳細狀態會透過工具提示顯示。<br>**[!UICONTROL 啟用子資料夾]**  — 將所有項目納入此子樹狀結構中，以同步至Dynamic Media。 資料夾特定設定會覆寫雲端設定中的預設模式。<br>**[!UICONTROL 子資料夾已停用&#x200B;]**— 排除此子樹狀結構中的所有項目，使其無法同步至Dynamic Media。 |
+   | 同步處理所有內容 | 預設為選取。 如果您想要選擇性地包含或排除從同步至Dynamic Media的資產，請取消選取此選項。 取消選取此選項可讓您從下列兩個Dynamic Media同步模式中選擇：<br>**[!UICONTROL Dynamic Media同步模式]**<br>**[!UICONTROL 預設啟用&#x200B;]**— 預設會將設定套用至所有資料夾，除非您特別標示要排除的資料夾。 <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 預設為停用]**  — 在您明確標示選取的資料夾以同步至Dynamic Media之前，不會將設定套用至任何資料夾。<br>若要將選取的資料夾標示為同步至Dynamic Media，請選取資產資料夾，然後在工具列中選取 **[!UICONTROL 屬性]**. 在 **[!UICONTROL 詳細資料]** 標籤中 **[!UICONTROL Dynamic Media同步模式]** 下拉式清單中，從下列三個選項中選擇。 完成後，選取 **[!UICONTROL 儲存]**. _記住：如果您選取&#x200B;**同步所有內容**更早。_ 另請參閱 [在Dynamic Media的資料夾層級使用選擇性發佈](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL 繼承&#x200B;]**— 資料夾上沒有明確的同步值。 相反，資料夾會繼承其上階資料夾中的一個同步值或雲配置中的預設模式。 繼承的詳細狀態會透過工具提示顯示。<br>**[!UICONTROL 啟用子資料夾]**  — 將所有項目納入此子樹狀結構中，以同步至Dynamic Media。 資料夾特定設定會覆寫雲端設定中的預設模式。<br>**[!UICONTROL 子資料夾已停用&#x200B;]**— 排除此子樹狀結構中的所有項目，使其無法同步至Dynamic Media。 |
 
    >[!NOTE]
    >
@@ -107,7 +107,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![dynamicmediaconfiguration_updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. 選擇 **[!UICONTROL 儲存]**. 新Dynamic Media密碼和設定已儲存。 如果您選取 **[!UICONTROL 取消]** 但是，不會更新密碼。
+1. 選取&#x200B;**[!UICONTROL 儲存]**。新Dynamic Media密碼和設定已儲存。 如果您選取 **[!UICONTROL 取消]** 但是，不會更新密碼。
 1. 在 **[!UICONTROL 設定Dynamic Media]** 對話框，選擇 **[!UICONTROL 確定]** 以開始設定。
 
    >[!IMPORTANT]
@@ -129,7 +129,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 您現在已完成基本設定；您已準備好使用Dynamic Media。
 
-如果您想進一步自訂設定，您可以選擇完成下方的任何工作 [在Dynamic Media中設定進階設定](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+如果要進一步自定義配置，例如啟用ACL（訪問控制清單）權限，您可以選擇完成以下任何任務 [在Dynamic Media中設定進階設定](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ### 疑難排解新的Dynamic Media設定 {#troubleshoot-dm-config}
 
@@ -185,8 +185,9 @@ Dynamic Media中的密碼過期時間會從目前系統日期開始設為100年�
 
 ## （選用）在Dynamic Media中設定進階設定{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-若要進一步自訂Dynamic Media的設定和設定，或最佳化其效能，您可以完成下列一或多個作業 *可選* 任務：
+若要進一步自訂Dynamic Media的設定和設定，或最佳化其效能，您可以完成下列一或多個作業 _可選_ 任務：
 
+* [（選用）在Dynamic Media中啟用ACL權限](#optional-enable-acl)
 * [（選用）Dynamic Media設定的設定和設定](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [（選用）調整Dynamic Media的效能](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
@@ -195,6 +196,33 @@ Dynamic Media中的密碼過期時間會從目前系統日期開始設為100年�
 * [(Optional) Filtering assets for replication](#optional-filtering-assets-for-replication)
 
 -->
+
+### （選用）在Dynamic Media中啟用存取控制清單權限 {#optional-enable-acl}
+
+當您在AEM上執行Dynamic Media時，它目前會轉送 `/is/image` 請求保護預覽影像伺服，而不檢查PlatformServerServlet的ACL（存取控制清單）權限。 不過， _啟用_ ACL權限。 這樣會轉發授權 `/is/image` 要求。 如果使用者未獲授權存取資產，則會顯示「403 — 禁止」錯誤。
+
+**若要在Dynamic Media中啟用ACL權限：**
+
+1. 從Experience Manager導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web主控台]**.
+
+   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+
+1. 新的瀏覽器標籤隨即開啟， **[!UICONTROL Adobe Experience Manager Web主控台設定]** 頁面。
+
+   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+
+1. 在頁面上，捲動至名稱 _Adobe CQ Scene7 PlatformServer_.
+
+1. 在名稱的右側，選取鉛筆圖示(**[!UICONTROL 編輯配置值]**)。
+
+1. 在 **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** 頁面中，選取下列兩個設定的核取方塊：
+
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name`  — 啟用後，此設定會快取要保存的2分鐘（預設值）權限結果。
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name`  — 啟用後，此設定會透過Dynamic Media Image Server預覽資產時，驗證使用者的存取權。
+
+   ![在Dynamic Media - Scene7模式中啟用存取控制清單設定](/help/assets/dynamic-media/assets/acl.png)
+
+1. 在頁面的右下角附近，選取 **[!UICONTROL 儲存]**.
 
 ### （選用）Dynamic Media設定的設定和設定 {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
@@ -245,7 +273,7 @@ Dynamic Media色彩管理可讓您為資產加上色彩校正。 透過色彩校
    | RGB預設顏色空間 | 預設RGB顏色配置檔案的名稱。 |
    | 色彩轉換色彩演算比對方式 | 指定渲染目的。 可接受的值為： **[!UICONTROL 知覺]**, **[!UICONTROL 相對冷量]**, **[!UICONTROL 飽和度]**, **[!UICONTROL 絕對冷量]**. Adobe建議 **[!UICONTROL 相對]** 作為預設值。 |
 
-1. 選擇 **[!UICONTROL 儲存]**.
+1. 選取&#x200B;**[!UICONTROL 儲存]**。
 
 例如，您可以將「 **[!UICONTROL RGB預設顏色空間]** 」設 *為sRGB*，將「 **[!UICONTROL CMYK預設顏色空間」設為]**** WebCobatedCholor。
 
@@ -268,7 +296,7 @@ Dynamic Media色彩管理可讓您為資產加上色彩校正。 透過色彩校
 
 請參閱 [上傳資產](/help/assets/add-assets.md).
 
-**要編輯支援格式的MIME類型：**
+**要編輯支援格式的MIME類型，請執行以下操作：**
 
 1. 以產品管理員身分登入您的Experience Manageras a Cloud Service。
 1. 在Experience Manageras a Cloud Service中，選取Experience Manageras a Cloud Service標誌以存取全域導覽主控台，然後前往 **[!UICONTROL 一般>CRXDE Lite]**.
@@ -406,7 +434,7 @@ Granite工作流程佇列用於非暫時性的工作流程。 在Dynamic Media�
 
    ![作業處理佇列的設定](assets/chlimage_1-1.jpeg)
 
-1. 選擇 **[!UICONTROL 儲存]**.
+1. 選取&#x200B;**[!UICONTROL 儲存]**。
 
 #### 更新預先定義的Granite暫時工作流隊列工作線程 {#update-granite-transient-workflow-queue-worker-threads-images}
 
@@ -435,7 +463,7 @@ Granite傳輸工作流程佇列用於 **[!UICONTROL DAM更新資產]** 工作流
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. 選擇 **[!UICONTROL 儲存]**.
+1. 選取&#x200B;**[!UICONTROL 儲存]**。
 
 #### 更新最大上傳連線至Dynamic Media Classic(Scene7)伺服器 {#update-max-s7-upload-connections}
 
@@ -447,7 +475,7 @@ Dynamic Media Classic(Scene7)「上傳連線」設定會將Experience Manager資
 
 **若要更新至Dynamic Media Classic(Scene7)伺服器的上傳連線上限：**
 
-1. 導航到 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. 瀏覽到 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 在 **[!UICONTROL 連接數]** 欄位，或 **[!UICONTROL 活動作業超時]** 欄位或兩者，視需要變更數字。
 
    此 **[!UICONTROL 連接數]** 設定會控制Experience Manager上傳至Dynamic Media所允許的HTTP連線數量上限。 通常，十個連線的預先定義值就足夠了。
@@ -458,7 +486,7 @@ Dynamic Media Classic(Scene7)「上傳連線」設定會將Experience Manager資
 
    ![Adobe Scene7上傳服務](assets/chlimage_1-2.jpeg)
 
-1. 選擇 **[!UICONTROL 儲存]**.
+1. 選取&#x200B;**[!UICONTROL 儲存]**。
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
