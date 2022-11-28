@@ -2,9 +2,9 @@
 title: 將內容擷取至Target
 description: 將內容擷取至Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
+source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1072'
 ht-degree: 11%
 
 ---
@@ -22,6 +22,9 @@ ht-degree: 11%
 請依照下列步驟，從「內容轉移工具」中擷取您的移轉集：
 >[!NOTE]
 >您可以執行選用的預先複製步驟，大幅加快擷取階段。 預複製步驟對於第1次完全擷取和擷取最有效。 請參閱 [使用AzCopy擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以取得更多詳細資訊。
+
+>[!NOTE]
+>您是否記得記錄此擷取的支援票證？ 請參閱 [使用內容轉移工具前的重要考量](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 以及其他考量事項，協助讓擷取成功。
 
 1. 前往Cloud Acceleration Manager。 按一下您的專案卡，然後按一下「內容轉移」卡。 導覽至 **擷取工作** 按一下 **新擷取**
 
@@ -96,7 +99,8 @@ ht-degree: 11%
 ## 追加擷取 {#top-up-ingestion-process}
 
 >[!CONTEXTUALHELP]
->id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion"
+>id="aemcloud_ctt_ingestion_topup"
+>title="追加擷取"
 >abstract="使用追加功能來移動自上次內容轉移活動以來修改的內容。 擷取完成後，檢查記錄中是否有任何錯誤/警告。 您應處理回報的問題，或聯絡Adobe客戶服務，以立即解決任何錯誤。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="檢視記錄"
 
