@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
+source-git-commit: 093a83b7e76167b1962639b245332e515df2447b
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1145'
 ht-degree: 8%
 
 ---
@@ -90,7 +90,8 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->使用您自己的CDN時，不需要在Cloud Manager中安裝網域和憑證。 AdobeCDN中的路由作業將使用預設網域完成 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>使用您自己的CDN時，您不需要在Cloud Manager中安裝網域和憑證。 AdobeCDN中的路由作業將使用預設網域完成 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` 應在請求中傳送 `Host` 頁首。 覆寫請求 `Host` 具有自訂網域名稱的標題，可能會導致AdobeCDN錯誤地路由請求。
+
 
 >[!NOTE]
 >
