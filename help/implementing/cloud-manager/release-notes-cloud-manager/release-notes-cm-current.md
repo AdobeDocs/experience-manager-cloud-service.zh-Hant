@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2022.11.0 的發行說明
-description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2022.11.0 的發行說明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2022.12.0 的發行說明
+description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2022.12.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3045c042129951bf693bca36a42c9111862e09f2
+source-git-commit: aa7f2175e2a43a318a6171e622d292ed3a8e958b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 37%
+source-wordcount: '202'
+ht-degree: 38%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2022.11.0 的發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2022.12.0 的發行說明 {#release-notes}
 
-本頁面記錄了 AEM as a Cloud Service 中 Cloud Manager 2022.11.0 的發行說明
+本頁面記錄了 AEM as a Cloud Service 中 Cloud Manager 2022.12.0 的發行說明
 
 >[!NOTE]
 >
@@ -21,19 +21,15 @@ ht-degree: 37%
 
 ## 發行日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager 2022.11.0版的發行日期為2022年11月3日。 下一版預計於2022年11月29日發行。
+AEMas a Cloud Service中Cloud Manager 2022.12.0版的發行日期為2022年11月29日。 下一版預計於2023年1月19日發行。
 
 ## 新增功能 {#what-is-new}
 
-* AEM Sites解決方案的授權控制面板現在會顯示合約詳細資訊，包括租用戶是否在其訂閱內。
-
->[!NOTE]
->
-> 未來幾週，這項功能將分階段推出給所有租戶。
-
-* 當與管道相關聯的環境具有不允許執行管道的狀態時，將禁用運行操作，並提供說明性工具提示。
-* UI新增改良訊息，當 **添加程式** 按鈕因租用戶的權限不足而停用。
+* 通知 [AEM維護更新](/help/overview/what-is-new-and-different.md#aem-updates) 會在Cloud Manager UI中呈現。 此變更將在2022.12.0版發行後的數週內分階段推出。
+* 透過 [內容轉移工具(CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 進行中，開發人員主控台和Cloud Manager中的環境狀態都會顯示為 `Ingestion in Progress`.
+* 提高 [Cloud Manager管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 都做了。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 改善編輯生產管道期間的意見反應，以不經常發生一或多個遺失的環境。
+* 已進行變更，以防止 [前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 在相同環境中執行管道時從執行。
+* 已進行變更，以防止 `PATCH /program//environment//variables` 要求環境 `FAILED` 狀態。
