@@ -10,13 +10,13 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 2ebe9ddccd0b657b8aaeaf005c0ecb5b16079dee
+exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
+source-git-commit: c2fd3d33eb02ea671d9811ad527bf167a279ff01
 workflow-type: tm+mt
-source-wordcount: '2010'
-ht-degree: 0%
+source-wordcount: '2080'
+ht-degree: 1%
 
 ---
-
 
 # AEM-CIF核心元件與Adobe Experience Platform整合 {#aem-cif-aep-integration}
 
@@ -471,10 +471,31 @@ PWA Studio專案可讓您建立由Adobe Commerce或Magento Open Source提供技�
 
 目前支援下列事件：
 
-- addToCart
-- pageView
-- customUrl
-- referrerUrl
+__體驗XDM事件：__
+
+1. 新增至購物車(AEM)
+1. 檢視頁面(AEM)
+1. 檢視產品(AEM)
+1. 已傳送搜尋請求(AEM)
+1. 已收到搜尋回應(AEM)
+
+當 [Peregrine元件](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) 在AEM Commerce專案中重複使用：
+
+__體驗XDM事件：__
+
+1. 從購物車中移除
+1. 開啟購物車
+1. 檢視購物車
+1. 即時購買
+1. 開始結帳
+1. 完成結帳
+
+__設定檔XDM事件：__
+
+1. 登入
+1. 建立帳戶
+1. 編輯帳戶
+
 
 ## 其他資源 {#additional-resources}
 
@@ -482,5 +503,5 @@ PWA Studio專案可讓您建立由Adobe Commerce或Magento Open Source提供技�
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Experience Platform連接器概述](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
+- [Experience Platform連接器事件](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
 - [Adobe Experience Platform概述](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
-
