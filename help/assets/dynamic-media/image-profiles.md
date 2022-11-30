@@ -4,10 +4,10 @@ description: 了解如何建立包含遮色片銳利化設定、智慧型裁切�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
+source-git-commit: 08b523fe66b86867f65c794e843fc55fe0faa050
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3524'
+ht-degree: 7%
 
 ---
 
@@ -68,6 +68,15 @@ ht-degree: 0%
 
 您建立的每個智慧型裁切產生都需要額外處理。 例如，新增超過五個智慧型裁切長寬比可能會導致資產擷取速度緩慢。 這也可能導致系統負載增加。 由於您可以在資料夾層級套用智慧型裁切，因此Adobe建議您在資料夾上使用智慧型裁切 *僅限* 需要的地方。
 
+**定義影像設定檔中智慧型裁切的准則**
+為了控制智慧型裁切的使用，並為處理時間和裁切的儲存進行最佳化，Adobe建議下列准則和提示：
+
+* 請避免建立具有相同寬度和高度值的重複智慧型裁切設定檔。
+* 根據裁切維度為智慧型裁切命名，而非根據最終用途。 這麼做有助於最佳化多個頁面上使用單一維度的重複項目。
+* 為特定資料夾和子資料夾建立頁面式/資產類型式的影像設定檔，而非套用至所有資料夾或所有資產的通用智慧型裁切設定檔。
+* 您套用至子資料夾的影像設定檔會覆寫套用至資料夾的影像設定檔。
+* 理想情況下，每個影像要有10-15個智慧裁切，以針對螢幕比例和處理時間進行最佳化。
+
 您有兩個影像裁切選項可供選擇。 您也可以選擇自動建立顏色和影像色票，或保留目標解析度間的裁切內容。
 
 >[!IMPORTANT]
@@ -126,7 +135,7 @@ ht-degree: 0%
 ## 編輯或刪除Dynamic Media影像設定檔 {#editing-or-deleting-image-profiles}
 
 1. 選取Experience Manager標誌並導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 影像設定檔]**.
-1. 選擇要編輯或刪除的影像配置檔案。 若要編輯，請選取 **[!UICONTROL 編輯影像處理設定檔]**. 若要移除，請選取 **[!UICONTROL 刪除影像處理設定檔]**.
+1. 選擇要編輯或刪除的「影像配置檔案」。 若要編輯，請選取 **[!UICONTROL 編輯影像處理設定檔]**. 若要移除，請選取 **[!UICONTROL 刪除影像處理設定檔]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
