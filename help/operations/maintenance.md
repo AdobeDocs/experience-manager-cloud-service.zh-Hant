@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的維護任務
 description: AEM as a Cloud Service 中的維護任務
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 174e9b2410745ec766dbcd071a3508a509b8367a
+source-git-commit: 0e33ef91ce3668e7ce6aff98053c9f798b940dfd
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1068'
 ht-degree: 4%
 
 ---
@@ -49,6 +49,7 @@ ht-degree: 4%
        <li>30天以前的版本會遭移除</li>
        <li>會保留過去30天內的最新5個版本</li>
        <li>不論上述規則為何，都會保留最新版本。</li>
+       <li>若客戶需符合法規要求，要呈現特定日期所顯示的網站頁面，建議您將其與專業的外部服務整合。<li>
      </ol></td>
   </td>
   </tr>
@@ -60,6 +61,7 @@ ht-degree: 4%
        <li>對於複製審核，將刪除3天以前的審核日誌</li>
        <li>若是DAM(Assets)稽核，超過30天的稽核記錄會遭到移除</li>
        <li>對於頁面稽核，會移除3天以前的記錄檔。</li>
+       <li>建議有法規要求的客戶生成不可編輯的審核日誌，與專門的外部服務整合。<li>
      </ol></td>
    </td>
   </tr>
