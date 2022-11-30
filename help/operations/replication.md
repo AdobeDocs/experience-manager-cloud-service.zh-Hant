@@ -2,9 +2,9 @@
 title: 複寫
 description: 發佈和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
+source-git-commit: b40c46ff5d4399e6feff0ccaf37bdf0336c88016
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1374'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,14 @@ Adobe Experience Manager as a Cloud Service使用 [Sling內容分送](https://sl
 >閱讀 [分發](/help/overview/architecture.md#content-distribution) 以取得更多資訊。
 
 ## 發佈內容的方法 {#methods-of-publishing-content}
+
+>[!NOTE]
+>
+>如果您對大量發佈內容感興趣，請使用 [發佈內容樹工作流](#publish-content-tree-workflow).
+>此工作流程步驟是專為Cloud Service而建置，可有效處理大負載。
+>不建議自行建立大量發佈自訂程式碼。
+>如果您因任何原因需要自訂，您可以使用現有的工作流程API來觸發此工作流程/工作流程步驟。
+>雖然僅發佈需要發佈的內容並謹慎行事（若不需要）不嘗試發佈大量內容始終是最佳作法，但您可透過「發佈內容樹狀結構」工作流程傳送的內容數量並無限制。
 
 ### 快速取消/發佈 — 計畫取消/發佈 {#publish-unpublish}
 
