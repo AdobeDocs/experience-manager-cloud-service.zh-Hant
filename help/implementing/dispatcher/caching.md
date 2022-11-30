@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的快取
 description: AEM as a Cloud Service 中的快取
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 18f8a0737dbcce643a5949fb5f942e73f066fa59
+source-git-commit: 6c2baf7fde73abc831db906c7a6471751be3572d
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 1%
+source-wordcount: '2753'
+ht-degree: 2%
 
 ---
 
@@ -72,6 +72,8 @@ Define DISABLE_DEFAULT_CACHING
      </LocationMatch>
    ```
 
+* 雖然設為私密的HTML內容不會在CDN上快取，但若 [需要權限的快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hant) ，可有效確保只向授權使用者提供內容。
+
    >[!NOTE]
    >其他方法，包括 [dispatcher-ttl AEM ACS公域專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，將不會成功覆寫值。
 
@@ -80,7 +82,7 @@ Define DISABLE_DEFAULT_CACHING
 
 ### 用戶端資料庫(js,css) {#client-side-libraries}
 
-* 使用AEM用戶端程式庫架構時，會產生JavaScript和CSS程式碼，讓瀏覽器可無限快取，因為任何變更都會以唯一路徑顯示為新檔案。  換句話說，會視需要產生參考用戶端資料庫的HTML，讓客戶在發佈新內容時能體驗新內容。 對於不遵守「不可變」值的舊版瀏覽器，快取控制項會設為「不可變」或30天。
+* 使用AEM用戶端程式庫架構時，會產生JavaScript和CSS程式碼，讓瀏覽器可無限快取，因為任何變更都會以具有唯一路徑的新檔案顯示。  換句話說，會視需要產生參考用戶端資料庫的HTML，讓客戶在發佈新內容時能體驗新內容。 對於不遵守「不可變」值的舊版瀏覽器，快取控制項會設為「不可變」或30天。
 * 請參閱區段 [用戶端程式庫與版本一致性](#content-consistency) 以取得其他詳細資訊。
 
 ### 影像和任何大到可以儲存在blob儲存體中的內容 {#images}
@@ -116,6 +118,8 @@ AEM層會根據快取標題是否已設定及請求類型的值，來設定快�
 
 >[!NOTE]
 >建議您將Cloud Manager環境變數AEM_BLOB_ENABLE_CACHING_HEADERS設為true，將舊的預設行為變更為與新行為(程式ID高於65000)一致。 如果程式已上線，請確定在變更後，內容會如預期般運作。
+
+目前，Dispatcher無法快取Blob儲存中標示為私密的影像，方法是使用 [需要權限的快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). 系統一律會從AEM原始伺服器要求影像，並在使用者獲得授權時提供影像。
 
 >[!NOTE]
 >其他方法，包括 [dispatcher-ttl AEM ACS公域專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，將不會成功覆寫值。
