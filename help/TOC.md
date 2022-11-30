@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 概覽自助
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ce2866c90353a086cd9288c0209bf624c597922d
+source-git-commit: f1e1e12d9a19afd6c98029fc5b7a7b73ebf41686
 workflow-type: tm+mt
-source-wordcount: '3789'
+source-wordcount: '3816'
 ht-degree: 45%
 
 ---
@@ -158,6 +158,12 @@ ht-degree: 45%
       + [Cloud Manager 簡介](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)
       + [通知使用者群組](/help/journey-onboarding/user-groups.md)
++ AEMaCS試用版 {#trials}
+   + 無頭式試驗 {#headless}
+      + [自訂範例React應用程式中的內容](/help/trials/headless/customize-app.md)
+      + [建立應用程式的內容結構](/help/trials/headless/content-structure.md)
+      + [建立無頭內容](/help/trials/headless/create-content.md)
+      + [透過GraphQL API擷取內容](/help/trials/headless/extract-content.md)
 + AEMas a Cloud Service移轉歷程 {#migration-journey}
    + [開始移動AEMas a Cloud Service](/help/journey-migration/getting-started.md)
    + [準備階段](/help/journey-migration/readiness.md)
