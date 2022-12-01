@@ -4,9 +4,9 @@ description: 介紹 [!DNL Assets] 和 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5937ee8328be1af7e7f3f4765e24d65b074e02f1
+source-git-commit: 20dbcff249e3fc1beab24600cd54ce1bf4085d38
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1267'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,7 @@ Adobe選件至 [整合 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Asset
 
 | 功能 | 說明 | [!DNL Workfront] 和 [!DNL Assets Essentials] *無連接器(OOTB)* | [!DNL Workfront] for [!DNL AEM] 連接器 *需要連接器* | [!DNL Workfront for Experience Manager enhanced connector] *需要連接器* | Workfront和 [!DNL Experience Manager as a Cloud Service] *無連接器(OOTB)* |
 |----|----|----|------|-----|-----|
-| 部署方法 | 適合 [!DNL Assets] 提供。 | Assets Essentials | Cloud Service, Adobe Managed Services，內部部署 | Cloud Service, Adobe Managed Services，內部部署 | Cloud Service, Adobe Managed Services，內部部署 |
+| 部署方法 | 適合 [!DNL Assets] 提供。 | Assets Essentials | Cloud Service, Adobe Managed Services，內部部署 | Cloud Service, Adobe Managed Services，內部部署 | 雲端服務 |
 | **一般** |
 | 從 [!DNL Workfront] to [!DNL Assets] | WF文檔的最新版本可以上載到AEM Assets，該文檔將作為新版本連結。 | ✓ | ✓ | ✓ | ✓ |
 | 手動將AEM資料夾連結至Workfront物件 | 現有的AEM資料夾可以連結為Workfront資料夾，其子資產可以連結為新的Workfront檔案。 | ✓ | ✓ | ✓ | ✓ |
@@ -66,7 +66,7 @@ Adobe選件至 [整合 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Asset
 | 按一下「將使用者導向AEM」時在Workfront中連結的資產 | 系統會將使用者導向至AEM，從Workfront內預覽連結的資產。 | ✓ | ✓ | ✓ | 即將推出 |
 | 在Workfront中自動建立連結的AEM資料夾 | 使用專案狀態在Workfront中自動建立連結的AEM資料夾。 根據WorkfrontPortfolio、方案和專案自動設定AEM資料夾。 | 否 | 否 | ✓ | 否 |
 | 從Workfront直接導覽至AEM存放庫 | 允許使用者導覽至在Workfront中設定的可用AEM存放庫。 | ✓ | 否 | 否 | ✓ |
-| 在Workfront中自動建立連結的AEM資料夾 | 使用「檔案」標籤中的選項，在Workfront中自動建立連結的AEM資料夾。 | ✓ | 否 | 否 | ✓ |
+| 在Workfront中建立連結的AEM資料夾 | 使用「檔案」標籤中的選項，在Workfront中手動建立連結的AEM資料夾。 | ✓ | 否 | 否 | ✓ |
 | 注釋同步 | 自動同步資產的註解 [!DNL Workfront] to [!DNL Assets] | 否 | ✓ | ✓ | 否 |
 | 支援連線至單一AEM環境的多個Workfront環境 | 來自多個Workfront環境的使用者可以連線至單一AEM環境。 | ✓ | 否 | 否 | ✓ |
 | 支援連線至單一Workfront環境的多個AEM環境 | 單一Workfront環境中的使用者可以在多個AEM環境之間傳送或連結資產。 | ✓ | ✓ | ✓ | ✓ |
