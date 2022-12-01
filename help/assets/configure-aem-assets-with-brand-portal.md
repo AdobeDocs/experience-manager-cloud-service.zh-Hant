@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 3255e988c5ec9a0de33660061aeb21d91c3bc4d3
+source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
 workflow-type: tm+mt
-source-wordcount: '2449'
+source-wordcount: '2420'
 ht-degree: 7%
 
 ---
@@ -29,11 +29,11 @@ Cloud Manager使用者會為Experience Manager Assets as a [!DNL Cloud Service] 
 
 >[!NOTE]
 >
->Experience Manager Assets as a [!DNL Cloud Service] 例項只有權與一個Brand Portal租用戶連線。 您的Experience Manager Assets as a [!DNL Cloud Service] 例項，其中Brand Portal會在單一環境中啟動。
+>Experience Manager Assets as a [!DNL Cloud Service] 與Brand Portal租用戶連線的例項。
 
 **啟動Brand Portal的步驟**
 
-您可以在為Experience Manager Assets as建立環境時啟用Brand Portal [!DNL Cloud Service] 例項，或個別。 假設環境已建立，您現在必須啟用Brand Portal。
+您可以在為Experience Manager Assets as建立生產環境時啟用Brand Portal [!DNL Cloud Service] 例項，或個別。 假設環境已建立，您現在必須啟用Brand Portal。
 
 1. 登入AdobeCloud Manager並導覽至 **[!UICONTROL 環境]**.
 
@@ -69,7 +69,7 @@ Cloud Manager使用者會為Experience Manager Assets as a [!DNL Cloud Service] 
 * [在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
 
-**登入您的Brand Portal租用戶**:
+**登入Brand Portal租用戶**:
 
 在Cloud Manager中啟用Brand Portal租用戶後，您可以從Admin Console或直接使用租用戶URL登入Brand Portal。
 
@@ -80,7 +80,7 @@ Brand Portal租用戶的預設URL為： `https://<tenant-id>.brand-portal.adobe.
 如果您不確定Brand Portal URL，請執行下列步驟：
 
 1. 登入 [Admin Console](https://adminconsole.adobe.com/) 並導覽至 **[!UICONTROL 產品]**.
-1. 在左側邊欄中，選取 **[!UICONTROL Adobe Experience Manager Brand Portal -Brand Portal]**.
+1. 從左側面板中，選取 **[!UICONTROL Adobe Experience Manager Brand Portal -Brand Portal]**.
 1. 按一下 **[!UICONTROL 前往Brand Portal]** 直接在瀏覽器中開啟Brand Portal。
 
    或從 **[!UICONTROL 前往Brand Portal]** 連結並貼到您的瀏覽器中，以開啟Brand Portal介面。
@@ -403,7 +403,7 @@ IMS 設定包括兩個步驟：
 
 Perform the following steps to validate the configuration:
 
-1. Log in to AEM Assets.
+1. Login to AEM Assets.
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
