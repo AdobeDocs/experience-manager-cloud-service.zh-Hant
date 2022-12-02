@@ -2,16 +2,16 @@
 title: 產生最適化Forms的記錄檔案
 description: 說明如何為適用性Forms的記錄檔案(DoR)產生範本。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 8d6a5aceaf930c6597f570cdaec44015b86e20cd
 workflow-type: tm+mt
-source-wordcount: '4100'
+source-wordcount: '4065'
 ht-degree: 1%
 
 ---
 
 # 產生最適化Forms的記錄檔案
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 填寫或提交表單時，您可以以打印或文檔格式保存表單記錄。 此記錄稱為記錄檔案(DoR)。 這是已提交表單的可打印副本。 您也可以參考記錄檔案，了解客戶在以後填寫的資訊，或使用記錄檔案將表單和內容以PDF格式一起歸檔。
 
@@ -431,7 +431,7 @@ When you select a form model, configure Document of Record using options availab
 **表單層級設定**
 
 * **在DoR中包含未綁定欄位：** 設定屬性時，包括記錄文檔中基於架構的最適化表單中的未綁定欄位。 預設為true。
-* **如果隱藏，則從DoR排除欄位：** 設定屬性會覆寫「從記錄檔案中排除」欄位層級屬性的行為（若非true）。 如果欄位在表單提交時隱藏，如果屬性設定為true，則這些欄位將從記錄文檔中排除，但未設定「從記錄文檔中排除」屬性。 設定 [在伺服器上重新驗證](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) 屬性設為true可在伺服器端識別要從記錄檔案排除的隱藏欄位。
+* **如果隱藏，則從DoR排除欄位：** 設定屬性，以在表單提交時從記錄檔案中排除隱藏欄位。 啟用時 [在伺服器上重新驗證](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)，伺服器會在從記錄文檔中排除這些欄位之前重新計算隱藏欄位。
 
 ## 使用自訂XCI檔案
 
