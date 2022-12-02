@@ -3,14 +3,14 @@ title: New Relic One
 description: 了解適用於 AEM as a Cloud Service的 New Relic One 應用程序性能監控 (APM) 服務以及如何存取它。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1612'
 ht-degree: 100%
 
 ---
 
 
-# 新遺跡一號 {#user-access}
+# New Relic One {#user-access}
 
 了解適用於 AEM as a Cloud Service的 New Relic One 應用程序性能監控 (APM) 服務以及如何存取它。
 
@@ -150,7 +150,7 @@ Adobe 非常重視應用程序的監控、可用性和性能。AEM as a Cloud Se
 * 新增到 New Relic 的使用者將屬於以下類型&#x200B;**受限制的**&#x200B;參考[有關詳細資訊，請參閱 New Relic 文件。](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=在%20general%2C%20Admins%20take%20responsibility, Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
 * AEM as a Cloud Service僅提供 New Relic One APM 解決方案，不支援警報、記錄或 API 整合。
 
-有關 AEM as a Cloud Service計劃的 New Relic One 產品的更多幫助或其他指導，請透過以下方式打開支援票證[AEM 支援門戶](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)。
+有關 AEM as a Cloud Service計劃的 New Relic One 產品的更多幫助或其他指導，請透過以下方式打開支援票證[AEM 支援門戶](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
 
 ## 與 New Relic One 有關的常見問答 {#faqs}
 
