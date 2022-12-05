@@ -3,7 +3,7 @@ title: IP 允許清單簡介
 description: 了解 IP 允許清單如何限制使用者可以從哪些地址存取您的 AEM as a Cloud Service 網域。
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: 18ecf3394ff575213756fced84a3b08795188240
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 100%
 

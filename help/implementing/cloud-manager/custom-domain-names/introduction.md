@@ -3,7 +3,7 @@ title: 自訂網域名稱簡介
 description: Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 42318a42a55134501eb13feca22791bb5db4e83f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 100%
 

@@ -2,7 +2,7 @@
 title: 佈建程序 - 總覽
 description: 佈建程序 - 總覽
 source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 100%
 

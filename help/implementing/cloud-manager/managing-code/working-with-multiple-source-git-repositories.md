@@ -3,7 +3,7 @@ title: 使用多個存放庫
 description: 了解如何在使用 Cloud Manager 時管理多個 Git 存放庫。
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 source-git-commit: a7ae6d75d6820f48d3d45cb5830f888a87d51de1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 100%
 

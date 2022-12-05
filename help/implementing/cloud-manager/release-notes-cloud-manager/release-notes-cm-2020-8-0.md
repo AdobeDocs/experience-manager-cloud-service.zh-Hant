@@ -4,7 +4,7 @@ description: AEM as a Cloud Service 版本 2020.8.0 中 Cloud Manager 的發行�
 feature: Release Information
 exl-id: 70674e16-f9ba-4777-98fe-34161e90a481
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 100%
 

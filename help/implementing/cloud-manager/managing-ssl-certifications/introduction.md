@@ -3,7 +3,7 @@ title: 管理 SSL 憑證的簡介
 description: 了解 Cloud Manager 如何提供自助服務工具以安裝 SSL 憑證。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >title="管理 SSL 憑證"
 >abstract="了解 Cloud Manager 如何提供自助服務工具來安裝和管理 SSL 憑證，從而為您的使用者保護您的網站。Cloud Manager 使用平台 TLS 服務來管理客戶擁有並從第三方憑證授權單位獲得的 SSL 憑證和私密金鑰。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=zh-Hant" text="檢視、更新和取代 SSL 憑證"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=zh-Hant" text="檢查 SSL 憑證狀態"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="檢查 SSL 憑證狀態"
 
 Cloud Manager 提供自助服務工具來安裝和管理 SSL 憑證，從而為您的使用者保護您的網站。Cloud Manager 使用平台 TLS 服務來管理客戶擁有並從第三方憑證授權單位 (例如 Let’s Encrypt) 獲得的 SSL 憑證和私密金鑰。
 

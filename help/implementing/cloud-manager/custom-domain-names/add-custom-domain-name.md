@@ -3,7 +3,7 @@ title: 新增自訂網域名稱
 description: 了解如何使用 Cloud Manager 新增自訂網域名稱。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 0febf4b4a59617e6cc4f8414963c4a91fcf8765e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 從&#x200B;**總覽**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
+1. 從「**概觀**」頁面瀏覽到「**環境**」畫面。
 
 1. 在左側瀏覽面板中按一下&#x200B;**網域設定**。
 

@@ -3,7 +3,7 @@ title: 自訂程式碼品質規則
 description: 本頁說明了 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則。它們是根據 AEM Engineering 的最佳實務。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: d7509556e4ae7a377498f2de2bae57f3557522ac
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3493'
 ht-degree: 100%
 
@@ -860,7 +860,7 @@ AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-舊版基礎元件 (即 `/libs/foundation` 下的元件) 已在[多個 AEM 版本](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=zh-Hant)中被取代，以支援核心元件。不建議使用基礎元件作為自訂元件的基礎 (無論是透過覆蓋還是繼承)，並應轉換為相對應的核心元件。
+舊版基礎元件 (即 `/libs/foundation` 下的元件) 已在[多個 AEM 版本](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)中被取代，以支援核心元件。不建議使用基礎元件作為自訂元件的基礎 (無論是透過覆蓋還是繼承)，並應轉換為相對應的核心元件。
 
 [AEM 現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可有助於這種轉換。
 

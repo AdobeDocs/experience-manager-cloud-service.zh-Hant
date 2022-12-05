@@ -3,7 +3,7 @@ title: 新增 TXT 記錄
 description: 了解如何新增 TXT 記錄以在雲管理器中新增自訂網域名稱。
 exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: 491e710223c5878bfa81c4b0a57d18ec0ec29479
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 100%
 

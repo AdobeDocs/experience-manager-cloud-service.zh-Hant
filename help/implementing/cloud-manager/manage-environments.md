@@ -3,7 +3,7 @@ title: 管理環境
 description: 了解您可以建立的環境類型，以及如何為您的 Cloud Manager 專案建立環境類型。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 100%
 

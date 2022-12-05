@@ -3,7 +3,7 @@ title: 部署您的程式碼
 description: 了解如何在 AEM as a Cloud Service 中使用 Cloud Manager 管道來將程式碼部署。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 100%
 

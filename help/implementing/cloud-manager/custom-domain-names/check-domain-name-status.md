@@ -3,7 +3,7 @@ title: 檢查網域名稱狀態
 description: 了解如何確定您的自訂網域名稱是否已透過 Cloud Manager 成功驗證。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 100%
 

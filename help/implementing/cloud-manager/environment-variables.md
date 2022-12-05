@@ -3,7 +3,7 @@ title: Cloud Manager 環境變數
 description: 標準環境變數可以透過 Cloud Manager 進行設定和管理，並提供給執行階段環境，用於 OSGi 設定。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 100%
 

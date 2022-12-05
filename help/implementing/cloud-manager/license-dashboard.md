@@ -3,7 +3,7 @@ title: 授權儀表板
 description: Cloud Manager 提供了一個儀表板，用於輕鬆查看您的組織或租使用者可用的 AEMaaCS 產品權利。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 100%
 

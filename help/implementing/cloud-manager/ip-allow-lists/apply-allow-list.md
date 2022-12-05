@@ -3,7 +3,7 @@ title: 應用和取消應用 IP 允許清單
 description: 了解如何對環境應用和取消應用 IP 允許清單。
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
 

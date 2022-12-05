@@ -3,7 +3,7 @@ title: Cloud Manager 測試總覽
 description: 大致了解 Cloud Manager 自動執行的三種類型的測試，以確保您的自訂計劃碼的品質。
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 100%
 

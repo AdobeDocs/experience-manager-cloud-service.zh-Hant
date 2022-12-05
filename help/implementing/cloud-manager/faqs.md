@@ -3,7 +3,7 @@ title: Cloud Manager 常見問題集
 description: 在 AEM as a Cloud Service 中尋找 Cloud Manager 常見問題的解答。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 100%
 

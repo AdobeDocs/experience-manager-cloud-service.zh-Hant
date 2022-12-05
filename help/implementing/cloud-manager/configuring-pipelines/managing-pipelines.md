@@ -4,7 +4,7 @@ description: 了解如何管理現有管道，包括將其編輯、執行和刪�
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 

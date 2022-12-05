@@ -3,7 +3,7 @@ title: 存取存放庫
 description: 了解如何使用 Cloud Manager 中的自助 Git 帳戶管理存取和管理您的 Git 存放庫。
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 100%
 

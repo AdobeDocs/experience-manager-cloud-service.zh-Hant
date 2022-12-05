@@ -3,7 +3,7 @@ title: 沙箱程序簡介
 description: 了解沙箱程序與生產程序有何不同。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 100%
 

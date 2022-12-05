@@ -3,7 +3,7 @@ title: 管理 SSL 憑證
 description: 了解如何使用 Cloud Manager 檢查 SSL 憑證的狀態以及如何編輯、取代、更新和刪除它們。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 100%
 
