@@ -3,9 +3,9 @@ title: 授權儀表板
 description: Cloud Manager 提供了一個儀表板，用於輕鬆查看您的組織或租使用者可用的 AEMaaCS 產品權利。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 80%
 
 Cloud Manager 提供了一個儀表板，用於輕鬆查看您的組織或租使用者可用的 AEMaaCS 產品權利。
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
@@ -55,7 +55,7 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
 ### 什麼是內容請求？ {#what-is-a-content-request}
 
-內容要求是進入AEM Sites或任何客戶提供的快取系統（例如內容傳送網路）的要求，以HTML格式（以頁面檢視）或JSON格式（以API呼叫）傳送內容或資料。
+內容請求是進入 AEM Sites 或任何客戶提供的快取系統 (例如內容傳遞網路) 的請求，以 HTML 格式作為頁面檢視或 JSON 格式作為 API 呼叫以傳遞內容或資料。
 
 每次頁面查看或每五個 API 調用計算一個內容請求，在接收內容請求的第一個緩存系統的入口處測量。內容請求僅計入生產環境。
 
@@ -63,7 +63,7 @@ Cloud Manager 授權儀表板提供對以下資訊的輕鬆存取：
 
 ### Adobe Experience Manager 如何衡量內容請求？ {#how-are-content-requests-measured}
 
-內容要求會在AEM as a Cloud Service的邊緣伺服器上追蹤。 原始流量不計入內容請求。AEMas a Cloud Service內建的CDN會追蹤有效的HTML和JSON要求。
+內容請求在 AEM as a Cloud Service 的邊緣伺服器進行追蹤。原始流量不計入內容請求。AEM as a Cloud Service 內建的 CDN 可跟踪有效的 HTML 和 JSON 請求。
 
 AEM 還制定了排除知名機器人的規則，包括定期存取該網站以刷新其搜索索引或服務的知名服務。
 
@@ -83,10 +83,10 @@ AEM 還制定了排除知名機器人的規則，包括定期存取該網站以�
 | 流量攔截器 | 在瀏覽器中使用跟踪器阻止程序可能會選擇不跟踪某些請求。 |
 | 防火牆 | 防火牆可能會阻止 Analytics 跟踪。這在企業防火牆中更為常見。 |
 
-### 如果我想要進一步了解我的內容要求卷，該怎麼辦？ {#current-request-volumes}
+### 如果我想了解更多有關我的內容請求量的資訊呢? {#current-request-volumes}
 
-如果您想要進一步深入分析「授權控制面板」中顯示的內容要求量，您的Adobe團隊可提供報表，以顯示內容要求的最大數量驅動因素。 請洽詢您的Adobe團隊或Adobe客戶服務，以要求最常使用量報表。
+如果您想進一步了解授權儀表板中顯示的內容請求量，您的 Adobe 團隊可以提供一份報告，顯示內容請求的主要數量驅動因素。請聯繫您的 Adobe 團隊或 Adobe 客戶服務，申請最高使用率報告。
 
 ### 如果我使用自己的 CDN 怎麼辦？ {#using-own-cdn}
 
-「授權控制面板」只會顯示Cloud ServiceCDN追蹤的資料。  如果您選擇自攜CDN(BYOCDN)，則會依照合約中的說明，每年向Adobe回報內容要求量。
+授權儀表板只會顯示 Cloud Service CDN 追蹤的資料。如果您選擇使用自己的 CDN (BYOCDN)，您將按照合約中的規定每年向 Adobe 報告您的內容請求量。
