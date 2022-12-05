@@ -1,11 +1,11 @@
 ---
 title: UI 測試
-description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用計劃建立和自動執行 UI 測試。
+description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 31e84b7383cd9774b0eaf8ee0f2fe39bcd77fa15
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1407'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI 測試"
->abstract="自訂 UI 測試是一項選擇性功能，可讓您為應用計劃建立和自動執行 UI 測試。UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。"
+>abstract="自訂 UI 測試是一項選擇性功能，可讓您為應用程式建立和自動執行 UI 測試。UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。"
 
-自訂 UI 測試是一項選擇性功能，可讓您為應用計劃建立和自動執行 UI 測試。
+自訂 UI 測試是一項選擇性功能，可讓您為應用程式建立和自動執行 UI 測試。
 
-## 總覽 {#custom-ui-testing}
+## 概觀 {#custom-ui-testing}
 
 AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)整合套件，以確保自訂應用程序順利更新。尤其是 IT 測試門已經使用 AEM API 建立和自動化自訂測試。
 
@@ -195,11 +195,11 @@ Docker 鏡像必須生成 JUnit XML 格式的測試報告，並保存在環境�
 
 如果 Docker 映像是使用其他編程語言或測試執行計劃實現的，請查看所選工具的文件以了解如何生成 JUnit XML 報告。
 
-### 擷取螢幕擷取畫面和影片 {#capture-screenshots}
+### 擷取螢幕擷圖和視訊 {#capture-screenshots}
 
-Docker影像可產生其他測試輸出（例如螢幕擷取畫面、視訊），並儲存至環境變數所指定的路徑 `REPORTS_PATH`. 在 `REPORTS_PATH` 包含在測試結果封存中。
+Docker 映像必須產生額外的測試輸出 (例如，螢幕擷圖、影片)，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。在 `REPORTS_PATH` 下找到的任何檔案都包含在測試結果封存檔中。
 
-如果在UI測試執行期間建立了測試結果存檔，則測試日誌檔案最後包含對測試結果存檔位置的引用。
+如果在 UI 測試執行期間建立了測試結果封存檔，則測試記錄檔案末尾會包含對測試結果封存檔位置的參照。
 
 ```
 [...]
@@ -215,7 +215,7 @@ Note: the link will expire after 60 days
 
 ### 上傳檔案 {#upload-files}
 
-測試有時必須將文件上傳到被測試的應用計劃。為了使 Selenium 的部署相對於您的測試保持靈活，不能直接將資產直接上傳到 Selenium。相反，上傳文件需要以下步驟。
+測試有時必須將文件上傳到被測試的應用程式。為了使 Selenium 的部署相對於您的測試保持靈活，不能直接將資產直接上傳到 Selenium。相反，上傳文件需要以下步驟。
 
 1. 在指定的 URL 上傳檔案 `UPLOAD_URL` 環境變數。
    * 上傳必須在一個帶有多部分表單的 POST 要求中執行。
