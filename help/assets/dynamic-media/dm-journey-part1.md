@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
+source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3712'
 ht-degree: 0%
 
 ---
@@ -254,7 +254,7 @@ Adobe建議您以無損格式上傳資產。 一般來說，最好避免JPEG，�
 ![根據大型影像預設集預覽資產的轉譯](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _根據選取的「大型」影像預設集預覽資產的轉譯。 已按一下URL按鈕。 產生的URL路徑包含「大型」影像預設集名稱，可用於網頁。_
 
-上述URL為即時！ [試試看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
+上述URL為即時！ [試試看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target=&quot;_blank&quot;}。
 
 預覽資產的另一種方法是選取影像資產，然後選取 _檢視器_ 預設集，如下所示。
 
