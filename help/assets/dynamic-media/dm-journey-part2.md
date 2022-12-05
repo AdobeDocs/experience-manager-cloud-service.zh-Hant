@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
+source-git-commit: 9e425601c493740050d61e8025ea3f9e3dbdc4d8
 workflow-type: tm+mt
-source-wordcount: '2900'
+source-wordcount: '2902'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ _Dynamic Media URL的解剖。_
 
 請注意，手錶的新轉譯已產生。 要從這個改變影像寬度的簡單練習中了解這一點，關鍵在於所看到的影像是動態100%產生的。
 
-現在變更的寬度值 `500` 像素到 `1000` 像素，然後按 **[!UICONTROL 輸入]**. [試試看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000).
+現在變更的寬度值 `500` 像素到 `1000` 像素，然後按 **[!UICONTROL 輸入]**. [試試看](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}。
 你按下 **[!UICONTROL 輸入]**，則瀏覽器會返回Dynamic Media Image Server。 它會根據您剛輸入的新寬度值，產生全新的手錶轉譯，然後將新影像傳回瀏覽器並快取。
 
 Dynamic Media有許多影像處理參數，您可以用來微調網頁上的影像資產。 您可以 [在這裡看到一份清單](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
@@ -128,7 +128,9 @@ _從「進階」標籤選取選項，建立影像預設集。_
 ![套用影像預設集 *中* 生成影像的格式副本](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _應用影像預設集「介質」以生成影像的轉譯。_
 
-您可以複製URL，然後貼到瀏覽器中以檢查影像外觀。 [試試看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}。 在您的瀏覽器中，注意影像預設集的名稱 _中_ 填入完整URL路徑。
+您可以複製URL，然後貼到瀏覽器中以檢查影像外觀。 [試試看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}。
+
+在您的瀏覽器中，注意影像預設集的名稱 _中_ 填入完整URL路徑。
 
 您可以看到影像中顯示的清晰度。 這種品質部分是因為一碗巧克力的拍攝方式。 另外，部分原因是使用Dynamic Media時，您可儲存比傳送至數位頻道更大的影像。
 
