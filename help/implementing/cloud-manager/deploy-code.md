@@ -1,37 +1,37 @@
 ---
-title: 部署您的計劃碼
-description: 了解如何在 AEM as a Cloud Service 中使用 Cloud Manager 管道來將計劃碼部署。
+title: 部署您的程式碼
+description: 了解如何在 AEM as a Cloud Service 中使用 Cloud Manager 管道來將程式碼部署。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1221'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# 部署您的計劃碼 {#deploy-your-code}
+# 部署您的程式碼 {#deploy-your-code}
 
-了解如何在 AEM as a Cloud Service 中使用 Cloud Manager 管道來將計劃碼部署到生產環境中。
+了解如何在 AEM as a Cloud Service 中使用 Cloud Manager 管道來將程式碼部署到生產環境中。
 
 ![生產管道圖表](./assets/configure-pipeline/production-pipeline-diagram.png)
 
-將計劃碼無縫部署到 Stage，然後再部署到生產是透過生產管道完成的。生產管道執行分為兩個邏輯階段。
+將程式碼無縫部署到 Stage，然後再部署到生產是透過生產管道完成的。生產管道執行分為兩個邏輯階段。
 
 1. 部署到 Stage 環境
-   * 計劃碼構建並部署到 Stage 環境，用於自動化功能測試、UI 測試、體驗稽核和使用者驗收測試 (UAT)。
+   * 程式碼構建並部署到 Stage 環境，用於自動化功能測試、UI 測試、體驗稽核和使用者驗收測試 (UAT)。
 1. 部署至生產環境
    * 一旦構建在 Stage 上得到驗證，並批准升級到生產，相同的構建工件將部署到生產環境。
 
-_只有 Full Stack Code 流水線類型支援計劃碼掃描、功能測試、UI 測試和體驗稽核。_
+_只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI 測試和體驗稽核。_
 
 ## 在 AEM as a Cloud Service 中使用 Cloud Manager 部署程式碼 {#deploying-code-with-cloud-manager}
 
-[在配置了 Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)  (儲存庫、環境和測試環境) 後，您就可以部署計劃碼。
+[在配置了 Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)  (儲存庫、環境和測試環境) 後，您就可以部署程式碼。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 按一下要部署計劃碼的方案。
+1. 按一下要部署程式碼的程序。
 
 1. 點擊&#x200B;**部署**&#x200B;從號召性用語&#x200B;**總覽**&#x200B;畫面開始部署過程。
 
@@ -41,7 +41,7 @@ _只有 Full Stack Code 流水線類型支援計劃碼掃描、功能測試、UI
 
    ![管道執行畫面](assets/deploy-code2.png)
 
-構建過程透過三個階段部署您的計劃碼。
+構建過程透過三個階段部署您的程式碼。
 
 1. [中繼部署](#stage-deployment)
 1. [階段測試](#stage-testing)
@@ -55,11 +55,11 @@ _只有 Full Stack Code 流水線類型支援計劃碼掃描、功能測試、UI
 
 **階段部署**&#x200B;階段。涉及這些步驟。
 
-* **驗證**- 此步驟確保管道配置為使用當前可用的資源。例如，測試已配置的分支是否存在以及環境是否可用。
+* **驗證**- 此步驟確保管道配置為使用當前可用的資源。例如，測試設定的分支是否存在並且環境是否可用。
 * **建置及單位測試** - 此步驟會執行容器化的建置流程。 
    * 請看文件[構建環境詳細資訊](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)有關構建環境的詳細資訊。
-* **計劃碼掃描** - 此步驟會評估應用計劃計劃碼的品質。
-   * 如需有關測試流程的詳細資訊，請參閱文件[計劃碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)。
+* **程式碼掃描** - 此步驟會評估應用計劃程式碼的品質。
+   * 如需有關測試流程的詳細資訊，請參閱文件[程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)。
 * **構建映像**- 此過程負責將構建步驟生成的內容和調度程序包轉換為 Docker 映像和 Kubernetes 配置。
 * **部署到階段**- 將映像部署到登台環境以準備[階段測試階段。](#stage-testing)
 
@@ -75,7 +75,7 @@ _只有 Full Stack Code 流水線類型支援計劃碼掃描、功能測試、UI
 * **自訂功能測試** - 步驟一律存在且不能跳過。如果構建沒有生成測試 JAR，則測試預設透過。
    * 如需更多詳細資訊，請參閱文件：[自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。
 
-* **自訂 UI 測試**&#x200B;是一項選擇性功能，可讓您為自訂應用計劃建立和自動執行 UI 測試。
+* **自訂 UI 測試**&#x200B;是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
    * UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。
    * 如需更多詳細資訊，請參閱文件：[自訂 UI 測試](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)。
 
@@ -111,7 +111,7 @@ _只有 Full Stack Code 流水線類型支援計劃碼掃描、功能測試、UI
 
 | 步驟 | 逾時 |
 |--- |--- |
-| 計劃碼品質測試 | 14 天 |
+| 程式碼品質測試 | 14 天 |
 | 安全測試 | 14 天 |
 | 效能測試 | 14 天 |
 | 申請核准 | 14 天 |
@@ -124,7 +124,7 @@ _只有 Full Stack Code 流水線類型支援計劃碼掃描、功能測試、UI
 
 >[!NOTE]
 >
->每個部署上的Dispatcher快取都會消失。 新的發佈節點接受流量前，系統會先加熱此節點。
+>每次部署都會清除 Dispatcher 快取。它隨後在新發佈節點接受流量之前會做準備。
 
 ## 重新執行生產部署 {#Reexecute-Deployment}
 
@@ -149,7 +149,7 @@ _只有 Full Stack Code 流水線類型支援計劃碼掃描、功能測試、UI
 
 ### 識別重新執行的執行
 
-若要識別是否為重新執行的執行，可檢查觸發計劃欄位。它的價值將是&#x200B;*RE_EXECUTE*.
+若要識別是否為重新執行的執行，可檢查觸發程序欄位。它的價值將是&#x200B;*RE_EXECUTE*.
 
 ### 觸發新執行
 
