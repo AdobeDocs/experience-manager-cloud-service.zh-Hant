@@ -2,13 +2,13 @@
 title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2022.10.0 的發行說明
 description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2022.10.0 的發行說明。
 feature: Release Information
-source-git-commit: 435d42e750f868970bed8f6b3f30a2762c5ce395
-workflow-type: tm+mt
+exl-id: 2e502ead-8515-4594-becc-caa207643a36
+source-git-commit: 83e49215eff975300f263dcf0215081b02260e70
+workflow-type: ht
 source-wordcount: '207'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2022.10.0 的發行說明 {#release-notes}
 
@@ -20,15 +20,15 @@ ht-degree: 41%
 
 ## 發行日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager 2022.10.0版的發行日期為2022年10月6日。 下一版預計於2022年11月3日發行。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2022.10.0 發行日期是 2022 年 10 月 6 日。下一個版本計畫於 2022 年 11 月 3 日發行。
 
 ## 新增功能 {#what-is-new}
 
-* 版本 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) Cloud Manager使用的已更新至39版。
-* 如果Sites程式以AEMas a Cloud Service設定CDN，授權控制面板UI現在會通知使用者。
+* Cloud Manager 所使用的 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)版本已更新至版本 39。
+* 如果在 AEM as a Cloud Service 之上使用 CDN 設定了 Sites 程序，授權儀表板 UI 現在將通知使用者。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 已修正無法將電子郵件地址中含有大寫字母的使用者新增至Cloud Manager中New Relic子帳戶的情況。
-* 如果程式中有多個解決方案，現在會顯示Screens解決方案。
-* 當環境的狀態為「更新」時，前端管道執行無法啟動的情況已得到修正。
+* 已修正無法將電子郵件地址中包含大寫字母的使用者新增到 Cloud Manager 中的 New Relic 子帳戶的情況。
+* 如果程序中有多個解決方案，現在會顯示 Screens 解決方案。
+* 已修正當環境處於「更新中」狀態時前端管道執行不啟動的情況。
