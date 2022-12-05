@@ -3,9 +3,9 @@ title: 自訂網域名稱簡介
 description: Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 42318a42a55134501eb13feca22791bb5db4e83f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '665'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -37,17 +37,17 @@ Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一�
 
 搭配 AEMaaCS 使用自訂網域名稱有幾項限制。
 
-* Cloud Manager 支援自訂網域名稱，適用於 Sites 計劃的發佈和預覽服務。不支援製作端的自訂網域。
+* Cloud Manager 支援自訂網域名稱，適用於 Sites 程序的發佈和預覽服務。不支援製作端的自訂網域。
 * 每個 Cloud Manager 環境最多可以託管 500 個自訂網域。
 * AEM as a Cloud Service 不支援萬用字元網域。
-* 在新增自訂網域名稱之前，必須為您的計畫安裝包含自訂網域名稱的有效 SSL 憑證。請參閱新增 SSL 憑證以了解更多資訊。
+* 在新增自訂網域名稱之前，必須為您的程序安裝包含自訂網域名稱的有效 SSL 憑證。請參閱新增 SSL 憑證以了解更多資訊。
 * 當有一個目前正在執行的管道連接到這些環境時，無法將網域名稱新增到環境中。
 * 一次只能新增一個網域名稱。
 * 同一個網域名稱不能在多個環境中使用。
 
 >[!NOTE]
 >
->Cloud Manager支援自訂網域 **僅限** 如果您使用AEM管理的CDN。 如果您自帶CDN和 [指向AEM管理的CDN](/help/implementing/dispatcher/cdn.md) 您必須使用該特定CDN來管理網域，而非Cloud Manager。
+>Cloud Manager **只會**&#x200B;在您使用 AEM 管理的 CDN 時才支援自訂網域。如果您自備 CDN 並且[將其指向 AEM 管理的 CDN](/help/implementing/dispatcher/cdn.md)，您將必須使用特定的 CDN 來管理網域而不是 Cloud Manager。
 
 ## 工作流程 {#workflow}
 
@@ -55,7 +55,7 @@ Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一�
 
 | 步驟 | 說明 | 責任 | 了解更多 |
 |--- |--- |--- |---|
-| 1 | 新增SSL憑證至Cloud Manager | 客戶 | [新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 1 | 將 SSL 憑證新增到 Cloud Manager | 客戶 | [新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | 新增 TXT 記錄以驗證網域 | 客戶 | [新增 TXT 記錄](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
 | 3 | 查看網域驗證狀態 | 客戶 | [檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
 | 3a | 如果網域驗證失敗並顯示狀態為 `Domain Verification Failure` | 客戶 | [檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
@@ -67,4 +67,4 @@ Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一�
 
 >[!TIP]
 >
->使用AEM as a Cloud Service設定自訂網域名稱通常是簡單的程式。 不過，有時候網域委派問題可能會發生，而這可能需要1至2個工作天才能解決。 因此，強烈建議您在網域上線日期之前先安裝網域。 請參閱檔案 [檢查域名狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 以取得更多資訊。
+>使用 AEM as a Cloud service 設定自訂網域名稱通常是一個簡單的過程。 但是，有時可能會出現網域委派問題，這可能需要 1-2 個工作日才能解決。出於這個原因，強烈建議在上線日期之前安裝網域。請參閱文件：[檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)以了解詳細資訊。
