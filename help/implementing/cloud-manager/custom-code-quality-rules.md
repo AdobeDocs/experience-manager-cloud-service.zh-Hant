@@ -1,26 +1,26 @@
 ---
-title: 自訂計劃碼品質規則
-description: 本頁說明了 Cloud Manager 在計劃碼品質測試過程中執行的自訂計劃碼品質規則。它們是根據 AEM Engineering 的最佳實務。
+title: 自訂程式碼品質規則
+description: 本頁說明了 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則。它們是根據 AEM Engineering 的最佳實務。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: d7509556e4ae7a377498f2de2bae57f3557522ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3493'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# 自訂計劃碼品質規則 {#custom-code-quality-rules}
+# 自訂程式碼品質規則 {#custom-code-quality-rules}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
->title="自訂計劃碼品質規則"
->abstract="本頁說明了 Cloud Manager 在計劃碼品質測試過程中執行的自訂計劃碼品質規則。它們是根據 AEM Engineering 的最佳實務。"
+>title="自訂程式碼品質規則"
+>abstract="本頁說明了 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則。它們是根據 AEM Engineering 的最佳實務。"
 
-本頁說明Cloud Manager在 [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md). 它們是根據 AEM Engineering 的最佳實務。
+本頁說明 Cloud Manager 在[程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)過程中執行的自訂程式碼品質規則。 它們是根據 AEM Engineering 的最佳實務。
 
 >[!NOTE]
 >
->在此提供的計劃碼範例僅供說明用途。請參閱 SonarQube [概念文件](https://docs.sonarqube.org/7.4/user-guide/concepts/)以了解 SonarQube 概念和品質規則。
+>在此提供的程式碼範例僅供說明用途。請參閱 SonarQube [概念文件](https://docs.sonarqube.org/7.4/user-guide/concepts/)以了解 SonarQube 概念和品質規則。
 
 ## SonarQube 規則 {#sonarqube-rules}
 
@@ -35,7 +35,7 @@ ht-degree: 99%
 
 方法 `Thread.stop()` 和 `Thread.interrupt()` 可能產生難以複製的問題，在某些情況下，還可能產生安全漏洞。它們的使用應受到嚴密監控和驗證。總的來說，傳遞資訊是實現類似目標的更安全的方式。
 
-#### 不符合規範的計劃碼 {#non-compliant-code}
+#### 不符合規範的程式碼 {#non-compliant-code}
 
 ```java
 public class DontDoThis implements Runnable {
@@ -58,7 +58,7 @@ public class DontDoThis implements Runnable {
 }
 ```
 
-#### 符合規範的計劃碼 {#compliant-code}
+#### 符合規範的程式碼 {#compliant-code}
 
 ```java
 public class DoThis implements Runnable {
@@ -91,7 +91,7 @@ public class DoThis implements Runnable {
 
 使用來自外部來源的格式字串 (例如要求參數或使用者產生的內容) 可能會讓應用計劃遭受拒絕服務的攻擊。在某些情況下，格式字串可能會受到外部控制，但僅允許來自受信任的來源。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-1}
+#### 不符合規範的程式碼 {#non-compliant-code-1}
 
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
@@ -110,7 +110,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 從 AEM 應用計劃內部執行 HTTP 要求時，需確保設定適當的逾時以避免不必要的執行緒消耗，這點極為重要。不幸的是，Java 的預設 HTTP 用戶端 (`java.net.HttpUrlConnection`) 和常用的 Apache HTTP 元件用戶端的預設行為是永不逾時，因此必須明確設定逾時。此外，依據最佳做法的要求，上述逾時不應超過 60 秒。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-2}
+#### 不符合規範的程式碼 {#non-compliant-code-2}
 
 ```java
 @Reference
@@ -139,7 +139,7 @@ public void dontDoThisEither() {
 }
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-1}
+#### 符合規範的程式碼 {#compliant-code-1}
 
 ```java
 @Reference
@@ -179,7 +179,7 @@ public void orDoThis() {
 ### ResourceResolver 物件應該一直保持關閉 {#resourceresolver-objects-should-always-be-closed}
 
 * **索引碼**：CQRules:CQBP-72
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：重大
 * **始自**：2018.4.0 版本
 
@@ -187,7 +187,7 @@ public void orDoThis() {
 
 一個相當常見的誤解是，不應將使用現有 JCR 工作階段建立的 `ResourceResolver` 物件明確關閉，否則會將基本的 JCR 工作階段關閉。情況並非如此。無論 `ResourceResolver` 如何開啟，不使用時都經將其關閉。由於 `ResourceResolver` 實作 `Closeable` 介面，也有可能使用 `try-with-resources` 語法而不是明確地叫用 `close()`。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-4}
+#### 不符合規範的程式碼 {#non-compliant-code-4}
 
 ```java
 public void dontDoThis(Session session) throws Exception {
@@ -196,7 +196,7 @@ public void dontDoThis(Session session) throws Exception {
 }
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-2}
+#### 符合規範的程式碼 {#compliant-code-2}
 
 ```java
 public void doThis(Session session) throws Exception {
@@ -221,13 +221,13 @@ public void orDoThis(Session session) throws Exception {
 ### 請勿使用 Sling Servlet 路徑來註冊 Servlet {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **索引碼**：CQRules:CQBP-75
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：重大
 * **始自**：2018.4.0 版本
 
 如同在 [Sling 文件紀錄](http://sling.apache.org/documentation/the-sling-engine/servlets.html)中的說明，不建議按路徑繫結 servlet。路徑繫結的 servlet 不能使用標準的 JCR 存取控制，因此需要額外嚴格的安全性。建議不要使用路徑繫結的 servlet，而是在存放庫中建立節點並按資源類型註冊 servlet。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-5}
+#### 不符合規範的程式碼 {#non-compliant-code-5}
 
 ```java
 @Component(property = {
@@ -241,13 +241,13 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### 應將攔截到的例外狀況記錄或擲回，而非執行兩者。 {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **索引碼**：CQRules:CQBP-44---CatchAndEitherLogOrThrow
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
 一般而言，應該只記錄一次例外狀況。記錄多次例外狀況可能會導致混淆，因為會不清楚發生了多少次例外狀況。會導致這種情況的最常見模式是將攔截到的例外狀況記錄並擲回。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-6}
+#### 不符合規範的程式碼 {#non-compliant-code-6}
 
 ```java
 public void dontDoThis() throws Exception {
@@ -260,7 +260,7 @@ public void dontDoThis() throws Exception {
 }
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-3}
+#### 符合規範的程式碼 {#compliant-code-3}
 
 ```java
 public void doThis() {
@@ -283,13 +283,13 @@ public void orDoThis() throws MyCustomException {
 ### 避免 Log 陳述式後緊跟著 Throw 陳述式 {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **索引碼**：CQRules:CQBP-44---ConsecutivelyLogAndThrow
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
 另一個要避免的常見模式是記錄一則訊息後立即擲回例外狀況。這通常表範例外狀況訊息最終會在記錄檔案中重複。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-7}
+#### 不符合規範的程式碼 {#non-compliant-code-7}
 
 ```java
 public void dontDoThis() throws Exception {
@@ -298,7 +298,7 @@ public void dontDoThis() throws Exception {
 }
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-4}
+#### 符合規範的程式碼 {#compliant-code-4}
 
 ```java
 public void doThis() throws Exception {
@@ -309,7 +309,7 @@ public void doThis() throws Exception {
 ### 處理 GET 或 HEAD 要求時避免在 INFO 上記錄 {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **索引碼**：CQRules:CQBP-44---LogInfoInGetOrHeadRequests
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 
 一般而言，應該使用 INFO 紀錄層級來區分重要操作，並且預設情況下，會將 AEM 設定為在 INFO 或以上層級記錄。GET 和 HEAD 方法應僅能唯讀操作，因此不構成重要操作。在 INFO 層級記錄以回應 GET 或 HEAD 要求可能會產生顯著的紀錄噪音，從而使在紀錄檔中識別有用資訊變得更加困難。 在處理 GET 或 HEAD 要求時若出現錯誤，應該在 WARN 或 ERROR 層級進行記錄，或者若是更深入的疑難排解資訊會有幫助，則應在 DEBUG 或 TRACE 層級。
@@ -318,7 +318,7 @@ public void doThis() throws Exception {
 >
 >這不適用於每個要求的 `access.log`-type 記錄。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-8}
+#### 不符合規範的程式碼 {#non-compliant-code-8}
 
 ```java
 public void doGet() throws Exception {
@@ -326,7 +326,7 @@ public void doGet() throws Exception {
 }
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-5}
+#### 符合規範的程式碼 {#compliant-code-5}
 
 ```java
 public void doGet() throws Exception {
@@ -337,13 +337,13 @@ public void doGet() throws Exception {
 ### 請勿使用 Exception.getMessage() 作為紀錄陳述式的第一個參數。 {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **索引碼**：CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
 依據最佳做法的要求，紀錄訊息應提供有關應用計劃中發生例外狀況的位置的內容相關資訊。雖然也可以透過使用堆疊追踪來確定內容，但紀錄訊息通常將更容易讀取和理解。因此，在記錄例外狀況時，若將例外狀況的訊息當成紀錄訊息來使用，是不好的做法。例外狀況訊息將包含所發生的問題，而紀錄訊息則應該用於告知紀錄讀取計劃例外狀況發生時應用計劃正在做什麼。例外狀況訊息仍將會受到記錄。透過指定您自己的訊息，將更容易理解這些紀錄。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-9}
+#### 不符合規範的程式碼 {#non-compliant-code-9}
 
 ```java
 public void dontDoThis() {
@@ -355,7 +355,7 @@ public void dontDoThis() {
 }
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-6}
+#### 符合規範的程式碼 {#compliant-code-6}
 
 ```java
 public void doThis() {
@@ -370,13 +370,13 @@ public void doThis() {
 ### 登入 Catch 區塊應在 WARN 或 ERROR 層級 {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **索引碼**：CQRules:CQBP-44---WrongLogLevelInCatchBlock
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
 顧名思義，在例外情況下，應隨時使用 Java 例外狀況。因此，當攔截到例外狀況時，確保將紀錄訊息記錄在以下適當層級 (WARN 或 ERROR) 非常重要。這可確保這些訊息正確地顯示在紀錄中。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-10}
+#### 不符合規範的程式碼 {#non-compliant-code-10}
 
 ```java
 public void dontDoThis() {
@@ -388,7 +388,7 @@ public void dontDoThis() {
 }
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-7}
+#### 符合規範的程式碼 {#compliant-code-7}
 
 ```java
 public void doThis() {
@@ -403,13 +403,13 @@ public void doThis() {
 ### 不可將堆疊追踪列印到控制台 {#do-not-print-stack-traces-to-the-console}
 
 * **索引碼**：CQRules:CQBP-44---ExceptionPrintStackTrace
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
 如前所述，在了解紀錄訊息時，內容極為重要。使用 `Exception.printStackTrace()` 只會導致堆疊追踪輸出至標準錯誤流，從而遺失所有內容。此外，在像 AEM 這類多執行緒應用計劃中，如果使用此方法同時列印多個例外狀況，它們的堆疊追踪可能會重疊，從而產生嚴重的混亂。僅能透過紀錄架構記錄例外狀況。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-11}
+#### 不符合規範的程式碼 {#non-compliant-code-11}
 
 ```java
 public void dontDoThis() {
@@ -421,7 +421,7 @@ public void dontDoThis() {
 }
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-8}
+#### 符合規範的程式碼 {#compliant-code-8}
 
 ```java
 public void doThis() {
@@ -436,13 +436,13 @@ public void doThis() {
 ### 不可輸出到標準輸出或標準錯誤 {#do-not-output-to-standard-output-or-standard-error}
 
 * **索引碼**：CQRules:CQBP-44—LogLevelConsolePrinters
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
 應該永遠都透過紀錄架構 (SLF4J) 完成登入 AEM。直接輸出到標準輸出或標準錯誤串流會遺失紀錄架構提供的結構和相關內容資訊，而且在某些情況下還可能導致效能問題。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-12}
+#### 不符合規範的程式碼 {#non-compliant-code-12}
 
 ```java
 public void dontDoThis() {
@@ -454,7 +454,7 @@ public void dontDoThis() {
 }
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-9}
+#### 符合規範的程式碼 {#compliant-code-9}
 
 ```java
 public void doThis() {
@@ -469,13 +469,13 @@ public void doThis() {
 ### 避免硬式編碼 /應用計劃和 /libs 路徑 {#avoid-hardcoded-apps-and-libs-paths}
 
 * **索引碼**：CQRules:CQBP-71
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
 一般而言，以 `/libs` 和 `/apps` 開頭的路徑不應為硬式編碼，因為它們參考的路徑最常儲存為和 Sling 搜尋路徑 (預設情況下會設定為 `/libs,/apps`) 相關的路徑。使用絕對路徑可能會引進難以察覺的缺陷，而且只會在專案生命週期的後期出現。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-13}
+#### 不符合規範的程式碼 {#non-compliant-code-13}
 
 ```java
 public boolean dontDoThis(Resource resource) {
@@ -483,7 +483,7 @@ public boolean dontDoThis(Resource resource) {
 }
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-10}
+#### 符合規範的程式碼 {#compliant-code-10}
 
 ```java
 public void doThis(Resource resource) {
@@ -494,7 +494,7 @@ public void doThis(Resource resource) {
 ### 不應使用 Sling 排程器 {#sonarqube-sling-scheduler}
 
 * **索引碼**：CQRules:AMSCORE-554
-* **類型**：計劃碼異味/雲端服務相容性
+* **類型**：程式碼異味/雲端服務相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -505,7 +505,7 @@ public void doThis(Resource resource) {
 ### 不應使用 AEM 已過時的 API {#sonarqube-aem-deprecated}
 
 * **索引碼**：AMSCORE-553
-* **類型**：計劃碼異味/雲端服務相容性
+* **類型**：程式碼異味/雲端服務相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -531,13 +531,13 @@ AEM API 表面經過不斷修正，以識別不鼓勵使用並因此被視為已
 * **嚴重度**：嚴重
 * **始自**：2018.7.0 版本
 
-AEM API包含Java介面和類別，這些介面和類別僅能由自訂計劃碼使用，但不能實作。例如，介面 `com.day.cq.wcm.api.Page` 僅由 AEM實作。
+AEM API包含Java介面和類別，這些介面和類別僅能由自訂程式碼使用，但不能實作。例如，介面 `com.day.cq.wcm.api.Page` 僅由 AEM實作。
 
-將新方法新增到這些介面時，這些附加方法不會影響使用這些介面的現有計劃碼，因此，在這些介面中新增新方法會被視為向後相容。但是，如果自訂計劃碼實作其中一個介面，該自訂計劃碼會給客戶帶來向後相容性風險。
+將新方法新增到這些介面時，這些附加方法不會影響使用這些介面的現有程式碼，因此，在這些介面中新增新方法會被視為向後相容。但是，如果自訂程式碼實作其中一個介面，該自訂程式碼會給客戶帶來向後相容性風險。
 
-只打算由 AEM 實作的介面和分類會使用 `org.osgi.annotation.versioning.ProviderType` 進行註解，或在某些情況下，會使用類似的舊註解 `aQute.bnd.annotation.ProviderType`。此規則會識別實作此類介面或由自訂計劃碼擴展的分類的情況。
+只打算由 AEM 實作的介面和分類會使用 `org.osgi.annotation.versioning.ProviderType` 進行註解，或在某些情況下，會使用類似的舊註解 `aQute.bnd.annotation.ProviderType`。此規則會識別實作此類介面或由自訂程式碼擴展的分類的情況。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-3}
+#### 不符合規範的程式碼 {#non-compliant-code-3}
 
 ```java
 import com.day.cq.wcm.api.Page;
@@ -558,7 +558,7 @@ public class DontDoThis implements Page {
 
 有關自訂索引定義的詳細資訊，請參閱[索引文件](/help/operations/indexing.md#preparing-the-new-index-definition)。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-indextikanode}
+#### 不符合規範的程式碼 {#non-compliant-code-indextikanode}
 
 ```text
 + oak:index
@@ -571,7 +571,7 @@ public class DontDoThis implements Page {
       - type: lucene
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-indextikanode}
+#### 符合規範的程式碼 {#compliant-code-indextikanode}
 
 ```text
 + oak:index
@@ -595,7 +595,7 @@ public class DontDoThis implements Page {
 
 `lucene` 類型的 Oak 索引必須一律進行非同步索引。如果不這樣做可能會導致系統不穩定。有關 lucene 索引結構的更多資訊可在以下連結中找到：[Oak 文件。](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)
 
-#### 不符合規範的計劃碼 {#non-compliant-code-indexasync}
+#### 不符合規範的程式碼 {#non-compliant-code-indexasync}
 
 ```text
 + oak:index
@@ -611,7 +611,7 @@ public class DontDoThis implements Page {
         + config.xml
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-indexasync}
+#### 符合規範的程式碼 {#compliant-code-indexasync}
 
 ```text
 + oak:index
@@ -635,7 +635,7 @@ public class DontDoThis implements Page {
 
 為了使資產搜尋在 AEM Assets 中正常運作，`damAssetLucene`Oak 索引的自訂必須遵循一組特定於此索引的準則。此規則會檢查索引定義是否必須具有包含值 `visualSimilaritySearch`，名為 `tags` 的多值屬性。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-damAssetLucene}
+#### 不符合規範的程式碼 {#non-compliant-code-damAssetLucene}
 
 ```text
 + oak:index
@@ -649,7 +649,7 @@ public class DontDoThis implements Page {
         + config.xml
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-damAssetLucene}
+#### 符合規範的程式碼 {#compliant-code-damAssetLucene}
 
 ```text
 + oak:index
@@ -690,7 +690,7 @@ public class DontDoThis implements Page {
 >
 >會發生這種情況通常是因為未遵循[內容套件結構指南。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)。在此特定範例中，套件 `com.myco:com.myco.ui.apps` 中缺少 `<cloudManagerTarget>none</cloudManagerTarget>` 屬性。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-osgi}
+#### 不符合規範的程式碼 {#non-compliant-code-osgi}
 
 ```text
 + apps
@@ -702,7 +702,7 @@ public class DontDoThis implements Page {
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-osgi}
+#### 符合規範的程式碼 {#compliant-code-osgi}
 
 ```text
 + apps
@@ -722,7 +722,7 @@ public class DontDoThis implements Page {
 
 一個常見問題是在元件對話框中或在為內嵌編輯指定 RTF 文字編輯器設定時會使用名為 `config` 的節點。若要解決此問題，應將違規節點重新命名為合規名稱。對於 RTF 文字編輯器設定，請使用 `configPath` 屬性 (在 `cq:inplaceEditing` 節點上) 來指定新位置。
 
-#### 不符合規範的計劃碼 {#non-compliant-code-config-install}
+#### 不符合規範的程式碼 {#non-compliant-code-config-install}
 
 ```text
 + cq:editConfig [cq:EditConfig]
@@ -731,7 +731,7 @@ public class DontDoThis implements Page {
       + rtePlugins [nt:unstructured]
 ```
 
-#### 符合規範的計劃碼 {#compliant-code-config-install}
+#### 符合規範的程式碼 {#compliant-code-config-install}
 
 ```text
 + cq:editConfig [cq:EditConfig]
@@ -753,7 +753,7 @@ public class DontDoThis implements Page {
 ### 預設的撰寫模式不應該是 Classic UI {#oakpal-default-authoring}
 
 * **索引碼**：ClassicUIAuthoringMode
-* **類型**：計劃碼異味/雲端服務相容性
+* **類型**：程式碼異味/雲端服務相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -762,7 +762,7 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 會定義 AEM 
 ### 包含對話框的元件應該有 Touch UI 對話框 {#oakpal-components-dialogs}
 
 * **索引碼**：ComponentWithOnlyClassicUIDialog
-* **類型**：計劃碼異味/雲端服務相容性
+* **類型**：程式碼異味/雲端服務相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -777,7 +777,7 @@ AEM 現代化工具文件提供了有關如何將元件從 Classic UI 轉換為 
 ### 套件不應該混合可變和不可變的內容 {#oakpal-packages-immutable}
 
 * **索引碼**：ImmutableMutableMixedPackage
-* **類型**：計劃碼異味/雲端服務相容性
+* **類型**：程式碼異味/雲端服務相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -792,7 +792,7 @@ AEM 現代化工具文件提供了有關如何將元件從 Classic UI 轉換為 
 ### 不應使用反向複寫代理計劃 {#oakpal-reverse-replication}
 
 * **索引碼**：ReverseReplication
-* **類型**：計劃碼異味/雲端服務相容性
+* **類型**：程式碼異味/雲端服務相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -809,7 +809,7 @@ Cloud Service 部署中不支援反向複寫，如 AEM as a Cloud Service 的[�
 
 AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用前置處理器](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)文件中所述，使用透過 Proxy 的用戶端資料庫時，這些靜態資源必須包含在名為 `resources` 的子檔案夾中，以便在發佈執行個體上有效地參考。
 
-#### 不符合規範的計劃碼 {#non-compliant-proxy-enabled}
+#### 不符合規範的程式碼 {#non-compliant-proxy-enabled}
 
 ```text
 + apps
@@ -820,7 +820,7 @@ AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用
         + myimage.jpg
 ```
 
-#### 符合規範的計劃碼 {#compliant-proxy-enabled}
+#### 符合規範的程式碼 {#compliant-proxy-enabled}
 
 ```tet
 + apps
@@ -845,7 +845,7 @@ AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用
 ### 不建議使用靜態範本而支援可編輯範本 {#oakpal-static-template}
 
 * **索引碼**：StaticTemplateUsage
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -856,18 +856,18 @@ AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用
 ### 不建議使用舊版基礎元件 {#oakpal-usage-legacy}
 
 * **索引碼**：LegacyFoundationComponentUsage
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-舊版基礎元件 (即 `/libs/foundation` 下的元件) 已在[多個 AEM 版本](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)中被取代，以支援核心元件。不建議使用基礎元件作為自訂元件的基礎 (無論是透過覆蓋還是繼承)，並應轉換為相對應的核心元件。
+舊版基礎元件 (即 `/libs/foundation` 下的元件) 已在[多個 AEM 版本](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=zh-Hant)中被取代，以支援核心元件。不建議使用基礎元件作為自訂元件的基礎 (無論是透過覆蓋還是繼承)，並應轉換為相對應的核心元件。
 
 [AEM 現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可有助於這種轉換。
 
 ### 僅應使用受支援的執行模式名稱和順序 {#oakpal-supported-runmodes}
 
 * **索引碼**：SupportedRunmode
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -876,7 +876,7 @@ AEM as a Cloud Service 對執行模式名稱實施嚴格的命名原則，並對
 ### 自訂搜尋索引定義節點必須是 /oak:index 的直接子節點 {#oakpal-custom-search}
 
 * **索引碼**：OakIndexLocation
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -885,7 +885,7 @@ AEM as a Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndex
 ### 自訂搜尋索引定義節點的 compatVersion 必須為 2 {#oakpal-custom-search-compatVersion}
 
 * **索引碼**：IndexCompatVersion
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -894,7 +894,7 @@ AEM as a Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndex
 ### 自訂搜尋索引定義節點的下階節點必須屬於 nt:unstructured 類型 {#oakpal-descendent-nodes}
 
 * **索引碼**：IndexDescendantNodeType
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -903,7 +903,7 @@ AEM as a Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndex
 ### 自訂搜尋索引定義節點必須包含名為 indexRules 並有子系的子節點 {#oakpal-custom-search-index}
 
 * **索引碼**：IndexRulesNode
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -912,7 +912,7 @@ AEM as a Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndex
 ### 自訂搜尋索引定義節點必須遵循命名慣例 {#oakpal-custom-search-definitions}
 
 * **索引碼**：IndexName
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -930,7 +930,7 @@ AEM as a Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndex
 ### 自訂搜尋索引定義節點不得包含名為 seed 的屬性 {#oakpal-property-name-seed}
 
 * **索引碼**：IndexSeedProperty
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -939,7 +939,7 @@ AEM as a Cloud Service 禁止自訂搜尋索引定義 (即 `oak:QueryIndexDefini
 ### 自訂搜尋索引定義節點不得包含名為 reindex 的屬性 {#oakpal-reindex-property}
 
 * **索引碼**：IndexReindexProperty
-* **類型**：計劃碼異味
+* **類型**：程式碼異味
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
