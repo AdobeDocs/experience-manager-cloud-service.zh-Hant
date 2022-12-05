@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
+source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
 workflow-type: tm+mt
-source-wordcount: '3708'
+source-wordcount: '3710'
 ht-degree: 0%
 
 ---
@@ -261,7 +261,7 @@ _根據選取的「大型」影像預設集預覽資產的轉譯。 已按一下
 ![根據「縮放垂直光源」檢視器預設集預覽資產](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _根據選取的「ZoomVertical_light」檢視器預設集預覽資產。 滑鼠指針(`+`)移過手錶以放大。 請注意URL和內嵌按鈕。_
 
-上述轉譯為即時！ [試試看](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
+上述轉譯為即時！ [試試看](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target=&quot;_blank&quot;}。
 
 ## 選用 — 深入了解
 
@@ -278,7 +278,7 @@ _Dynamic Media說明主題_
 * [如何預覽3D資產](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [如何傳送Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [如何發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-* [在Dynamic Media中使用選擇性發佈](/help/assets/dynamic-media/selective-publishing.md)
+* [在 Dynamic Media 中使用選擇性發佈](/help/assets/dynamic-media/selective-publishing.md)
 
 _Dynamic Media教學課程_
 
