@@ -1,21 +1,21 @@
 ---
 title: 組建環境
-description: 了解 Cloud Manager 的構建環境以及它如何構建和測試您的計劃碼。
+description: 了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '986'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 組建環境 {#build-environment}
 
-了解 Cloud Manager 的構建環境以及它如何構建和測試您的計劃碼。
+了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
 
 ## 檢視環境詳細資訊 {#build-environment-details}
 
-Cloud Manager 使用專門的構建環境構建和測試您的計劃碼。
+Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 
 * 組建環境以 Linux 為基礎，衍生自 Ubuntu 18.04。
 * 已安裝 Apache Maven 3.6.0。
@@ -51,7 +51,7 @@ Cloud Manager 使用專門的構建環境構建和測試您的計劃碼。
 
 #### Maven 工具鏈 {#maven-toolchains}
 
-此 [Maven 工具鏈外掛計劃](https://maven.apache.org/plugins/maven-toolchains-plugin/)讓專案可選取特定 JDK (或工具鏈)，以用於工具鏈感知的 Maven 外掛計劃內容中。這可透過指定廠商和版本值，在專案的 `pom.xml` 檔案中完成。
+此 [Maven 工具鏈外掛程式](https://maven.apache.org/plugins/maven-toolchains-plugin/)讓專案可選取特定 JDK (或工具鏈)，以用於工具鏈感知的 Maven 外掛程式內容中。這可透過指定廠商和版本值，在專案的 `pom.xml` 檔案中完成。
 
 ```xml
 <plugin>
@@ -76,9 +76,9 @@ Cloud Manager 使用專門的構建環境構建和測試您的計劃碼。
 </plugin>
 ```
 
-這將導致所有工具鏈感知的 Maven 外掛計劃使用 Oracle JDK 版本 11。
+這將導致所有工具鏈感知的 Maven 外掛程式使用 Oracle JDK 版本 11。
 
-使用此方法時，Maven 本身仍使用預設的 JDK (Oracle 8) 執行，並且 `JAVA_HOME` 環境變數未受到變更。因此，透過 Apache Maven 強制器外掛計劃之類的外掛計劃來檢查或強制執行 Java 版本並不可行，且不得使用這類外掛計劃。
+使用此方法時，Maven 本身仍使用預設的 JDK (Oracle 8) 執行，並且 `JAVA_HOME` 環境變數未受到變更。因此，透過 Apache Maven 強制器外掛程式之類的外掛程式來檢查或強制執行 Java 版本並不可行，且不得使用這類外掛程式。
 
 目前可提供的廠商/版本組合為：
 
@@ -93,11 +93,11 @@ Cloud Manager 使用專門的構建環境構建和測試您的計劃碼。
 
 >[!NOTE]
 >
->從 2022 年 4 月開始，Oracle JDK 將成為 AEM 應用計劃開發和操作的預設 JDK。Cloud Manager 的建置流程將自動切換成使用 Oracle JDK，即使在 Maven 工具鏈中明確選取了替代選項。如需進一步詳細資訊，請參閱四月發行說明。
+>從 2022 年 4 月開始，Oracle JDK 將成為 AEM 應用程式開發和操作的預設 JDK。Cloud Manager 的建置流程將自動切換成使用 Oracle JDK，即使在 Maven 工具鏈中明確選取了替代選項。如需進一步詳細資訊，請參閱四月發行說明。
 
 #### 備用 Maven 執行 JDK 版本 {#alternate-maven-jdk-version}
 
-也可以選取 Java 8 或 Java 11 作為整個 Maven 執行的 JDK。和工具鏈選項不同，這會變更用於所有外掛計劃的 JDK，除非還設定了工具鏈設定，若是這種情況，則工具鏈設定仍適用於工具鏈感知的 Maven 外掛計劃。結果，利用 [Apache Maven 強制器外掛計劃](https://maven.apache.org/enforcer/maven-enforcer-plugin/)來檢查和強制執行 Java 版本將變得可行。
+也可以選取 Java 8 或 Java 11 作為整個 Maven 執行的 JDK。和工具鏈選項不同，這會變更用於所有外掛程式的 JDK，除非還設定了工具鏈設定，若是這種情況，則工具鏈設定仍適用於工具鏈感知的 Maven 外掛程式。結果，利用 [Apache Maven 強制器外掛程式](https://maven.apache.org/enforcer/maven-enforcer-plugin/)來檢查和強制執行 Java 版本將變得可行。
 
 為此，可在管道使用的 Git 存放庫分支中建立名為 `.cloudmanager/java-version` 的檔案。本檔案可能有的內容為 11 或 8。任何其他值會受到忽略。若指定 ，會使用 Oracle 11，而 `JAVA_HOME` 環境變數會設為 `/usr/lib/jvm/jdk-11.0.2`。若指定 ，會使用 Oracle 8，而 `JAVA_HOME` 環境變數會設為 `/usr/lib/jvm/jdk1.8.0_202`。
 
@@ -105,7 +105,7 @@ Cloud Manager 使用專門的構建環境構建和測試您的計劃碼。
 
 ### 標準環境變數 {#standard-environ-variables}
 
-您可能會發現有必要根據有關方案或管道的資訊來改變建置流程。
+您可能會發現有必要根據有關程序或管道的資訊來改變建置流程。
 
 例如，如果透過 gulp 之類的工具完成建置時間 JavaScript 縮製，則在為開發環境建置而不是為中繼和生產環境建置時，可能希望使用不同的縮製等級。
 
@@ -117,8 +117,8 @@ Cloud Manager 使用專門的構建環境構建和測試您的計劃碼。
 | `BRANCH` | 為執行設定的分支 |
 | `CM_PIPELINE_ID` | 數值的管道識別碼 |
 | `CM_PIPELINE_NAME` | 管道名稱 |
-| `CM_PROGRAM_ID` | 數值的方案識別碼 |
-| `CM_PROGRAM_NAME` | 方案名稱 |
+| `CM_PROGRAM_ID` | 數值的程序識別碼 |
+| `CM_PROGRAM_NAME` | 程序名稱 |
 | `ARTIFACTS_VERSION` | 對於中繼或生產管道，由 Cloud Manager 產生的綜合版本 |
 | `CM_AEM_PRODUCT_VERSION` | 發行版本 |
 
@@ -220,7 +220,7 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
         </profile>
 ```
 
-此相同技術可用於安裝語言特定套件，例如使用 `gem` (RubyGems或 `pip` 用於Python包。
+此同一技術可用於安裝特定語言的套件，例如將 `gem` 用於 RubyGems 或將 `pip` 用於 Python 套件。
 
 >[!NOTE]
 >
