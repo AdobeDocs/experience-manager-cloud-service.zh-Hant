@@ -1,24 +1,24 @@
 ---
-title: 沙箱計劃簡介
+title: 沙箱程序簡介
 description: 了解沙箱程序與生產程序有何不同。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# 沙箱計劃簡介 {#sandbox-programs}
+# 沙箱程序簡介 {#sandbox-programs}
 
 了解沙箱程序與生產程序有何不同。
 
 ## 簡介 {#introduction}
 
-沙箱計畫通常建立的目的是提供培訓、執行示範、培訓、或概念證明 (POC) ，而不是承載即實流量。
+建立沙箱程序的目的通常是提供培訓、執行示範、培訓、或概念證明 (POC) ，而不是承載即實流量。
 
-沙箱程序是 AEM Cloud Service 中可用的兩種程序之一，另一種是[生產程序。](introduction-production-programs.md)請參考[了解計劃和計劃類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)了解有關計劃類型的更多資訊。
+沙箱程序是 AEM Cloud Service 中可用的兩種程序之一，另一種是[生產程序。](introduction-production-programs.md)請參考[了解程序和程序類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)了解有關程序類型的更多資訊。
 
 ## 自動建立 {#auto-creation}
 
@@ -49,7 +49,7 @@ ht-degree: 96%
 
 ### 非進階網路 {#advanced-networking}
 
-[高級網路功能](/help/security/configuring-advanced-networking.md) （例如，自助配置VPN、非標準埠、專用輸出IP地址等） 在沙箱程序中不可用。
+[進階網路功能](/help/security/configuring-advanced-networking.md) (例如自助式佈建 VPN、非標準連接埠、專用輸出 IP 位址等)在沙箱程序中不可用。
 
 ### 手動 AEM 更新 {#updates}
 
@@ -64,7 +64,7 @@ AEM 更新不會自動推送到沙箱程序，但可以手動應用於沙箱程�
 
 ### 休眠和刪除 {#hibernation}
 
-沙箱計劃內的環境在 8 小時不活動後自動休眠：一旦休眠，它們可以手動解除休眠。
+沙箱程序內的環境在 8 小時不活動後自動休眠：一旦休眠，它們可以手動解除休眠。
 
 沙箱程序在處於連續休眠模式 6 個月後被刪除，之後可以重新建立它們。
 
