@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2022'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -13,24 +13,24 @@ ht-degree: 90%
 
 ## 簡介 {#introduction}
 
-* AEM as a Cloud Service 包含適用於 AEM 例項和 Adobe 身分管理系統 (簡稱 IMS) 驗證的 Admin Console 支援。
+* AEM as a Cloud Service 包含適用於 AEM 執行個體和 Adobe 身分管理系統 (簡稱 IMS) 驗證的 Admin Console 支援。
 * Admin Console 可讓管理員集中管理所有 Experience Cloud 使用者。
-* 管理員可將使用者和群組指派給與 AEM as a Cloud Service 例項相關聯的產品設定檔，讓他們能登入該例項。
+* 管理員可將使用者和群組指派給與 AEM as a Cloud Service 執行個體相關聯的產品設定檔，讓他們能登入該執行個體。
 
 >[!TIP]
 >
->查看我們的Experience League課程 [設定管理員的AEM存取權](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) 了解使用者如何使用Adobe IMS執行AEMas a Cloud Service驗證，以及如何使用Adobe IMS使用者、使用者群組和產品設定檔來控制AEM存取權及其功能。 Adobe ID為必要。
+>查看我們的 Experience League 課程[為管理員設定 AEM 存取權](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)，了解使用者如何使用 Adobe IMS 向 AEM as a Cloud Service 進行驗證，以及如何使用 Adobe IMS 使用者、使用者群組和產品設定檔來控制對 AEM 及其特性和功能的存取。需要 Adobe ID。
 
 >[!NOTE]
 >
->AEM目前不支援將群組指派給設定檔。 使用者應改為個別新增。
+>AEM 目前不支援指派群組到設定檔。應單獨新增使用者。
 
 ## 重要焦點 {#key-highlights}
 
 AEM as a Cloud Service 僅針對「作者」、「管理員」和「開發」使用者提供 IMS 驗證支援。不支援客戶網站的外部使用者，例如網站訪客。
 
-* Admin Console 會在產品內容例項環境中，將客戶顯示為 IMS 組織、作者和發佈例項。這樣一來，系統和產品管理員就能妥善管理例項的存取權限。
-* Admin Console 中的產品設定檔能決定使用者可存取的例項。
+* Admin Console 會在產品內容執行個體環境中，將客戶顯示為 IMS 組織、作者和發佈執行個體。這樣一來，系統和產品管理員就能妥善管理執行個體的存取權限。
+* Admin Console 中的產品設定檔能決定使用者可存取的執行個體。
 * 客戶可使用符合 SAML 2 的身分服務供應商 (簡稱 IDP)，完成單一登入程序。
 * 僅支援客戶以 Enterprise ID 或 Federated ID 進行單一登入，不支援個人 Adobe ID。
 
@@ -50,13 +50,13 @@ IMS 驗證採用 OAuth 通訊協定，能在 AEM 和 Adobe IMS 端點之間運�
 
 首先，客戶需有佈建於 Adobe IMS 的組織。Adobe 企業客戶在 [Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 中會顯示為 IMS 組織。Adobe 客戶可使用此入口網站管理使用者和群組的產品權益。
 
-AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admin Console 中使用客戶例項，管理使用者權益和存取權限。
+AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admin Console 中使用客戶執行個體，管理使用者權益和存取權限。
 
 客戶成為 IMS 組織後，即可依以下摘要內容設定其系統：
 
 ![IMS 入門](/help/security/assets/ims2.png)
 
-1. 指定的系統管理員會收到 Cloud Manager 的登入邀請函。登入 Cloud Manager 後，系統管理員可以選擇佈建 AEM 方案和環境，或導覽至 Admin Console 執行管理任務。
+1. 指定的系統管理員會收到 Cloud Manager 的登入邀請函。登入 Cloud Manager 後，系統管理員可以選擇佈建 AEM 程序和環境，或導覽至 Admin Console 執行管理任務。
 1. 系統管理員需先宣告網域，以確認各別網域的所有權 (例如 acme.com)
 1. 系統管理員設定使用者目錄
 1. 系統管理員在 Admin Console 中執行 IDP 設定，以設定單一登入。
@@ -118,9 +118,9 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 >[!NOTE]
 >
->佈建 AEM 環境和例項時，系統會自動設定所需的 AEM IMS 設定。不過，管理員可透過[此處](/help/implementing/deploying/overview.md)所述方法，依需求適度修改。
+>佈建 AEM 環境和執行個體時，系統會自動設定所需的 AEM IMS 設定。不過，管理員可透過[此處](/help/implementing/deploying/overview.md)所述方法，依需求適度修改。
 
-佈建 AEM 環境和例項時，系統會自動設定所需的 AEM IMS 設定。客戶管理員可依需求適度修改部分設定
+佈建 AEM 環境和執行個體時，系統會自動設定所需的 AEM IMS 設定。客戶管理員可依需求適度修改部分設定
 
 整體方式是將 Adobe IMS 設為 OAuth 提供者，並像處理 LDAP 同步作業一樣，修改 **Apache Jackrabbit Oak Default Sync Handler**。
 
@@ -132,19 +132,19 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 ### 在 Admin Console 中管理產品和使用者存取權限 {#managing-products-and-user-access-in-admin-console}
 
-產品管理員登入Admin Console時，會看到AEMas a Cloud Service產品內容的多個例項，如下所示。 例如，選取 **概述** 頁面：
+產品管理員登入 Admin Console 後，會看到 AEM as a Cloud Service 產品內容的多個執行個體，如下所示：例如，從「**概觀**」頁面選取任何產品：
 
-![例項登入](/help/security/assets/ims6.png)
+![執行個體登入](/help/security/assets/ims6.png)
 
-您會看到現有例項的清單：
+您將看到現有的執行個體清單：
 
-![例項登入 2](/help/security/assets/ims7.png)
+![執行個體登入 2](/help/security/assets/ims7.png)
 
-在每個「產品內容」例項下，都有橫跨生產、預備或開發環境之製作或發佈服務的例項。 每個例項都會與產品設定檔或Cloud Manager角色相關聯。 這些產品設定檔可用來指派存取權給具有必要權限的使用者和群組。
+在每個產品內容執行個體下，將有跨生產、階段或開發環境的編寫或發佈服務的執行個體。每個執行個體都將關聯到產品設定檔或 Cloud Manager 角色。這些產品設定檔的主要功用在於指派存取權限給具有必要權限的使用者和群組。
 
-**Administrator_xxx** 設定檔可授與相關聯 AEM 例項的管理員權限，而 **User_xxx** 設定檔則可新增一般使用者。
+**Administrator_xxx** 設定檔可授與相關聯 AEM 執行個體的管理員權限，而 **User_xxx** 設定檔則可新增一般使用者。
 
-此產品設定檔中新增的任何使用者和群組都可以登入該特定例項，如以下範例所示：
+此產品設定檔中新增的任何使用者和群組都可以登入該特定執行個體，如以下範例所示：
 
 ![產品設定檔](/help/security/assets/ims8.png)
 
@@ -160,14 +160,14 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 
 **IMS 登入**
 
-若是其他使用者，在例項上設定 IMS 後，即可使用 IMS 登入。使用者需先按一下「使用 Adobe 登入」按鈕，如下所示：
+若是其他使用者，在執行個體上設定 IMS 後，即可使用 IMS 登入。使用者需先按一下「使用 Adobe 登入」按鈕，如下所示：
 
 ![IMS 登入](/help/security/assets/ims10.png)
 
 
 >[!NOTE]
 >
->在 IMS 中建立的任何使用者都可使用 Adobe ID 或 Federated ID 來建立。如果使用Federated ID來設定使用者，則使用者需透過公司的身分提供者來登入，以通過驗證。
+>在 IMS 中建立的任何使用者都可使用 Adobe ID 或 Federated ID 來建立。若是使用 Federated ID 設定使用者，使用者需透過公司合作之身分服務供應商登入，以完成驗證。
 
 接著，系統會將使用者重新導向至 IMS 登入畫面，此時使用者需輸入憑證：
 
@@ -232,19 +232,19 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 1. 使用者新增至適當的設定檔後，應該就能從使用者介面的右上角，透過 [Adobe Experience Cloud](https://my.cloudmanager.adobe.com) 存取 Cloud Manager 的個別租用戶。
 
 
-### 存取 AEM as a Cloud Service 中的例項 {#accessing-instance-cloud-service}
+### 存取 AEM as a Cloud Service 中的執行個體 {#accessing-instance-cloud-service}
 
 >[!IMPORTANT]
->您必須先完成前述章節所提及的步驟，才能取得 AEM as a Cloud Service 例項的存取權限。
+>您必須先完成前述章節所提及的步驟，才能取得 AEM as a Cloud Service 執行個體的存取權限。
 
-若要在 **Admin Console** 中存取 AEM 例項，您應該會在 **Admin Console** 的產品清單中看見 Cloud Manager 程式和程式內的環境。
+若要在 **Admin Console** 中存取 AEM 執行個體，您應該會在 **Admin Console** 的產品清單中看見 Cloud Manager 程式和程式內的環境。
 
-舉例來說，在下方螢幕截圖中，您會看到兩個可供使用的環境，即 *dev author* 和 *publish*。
+舉例來說，在下方螢幕擷圖中，您會看到兩個可供使用的環境，即 *dev author* 和 *publish*。
 
 ![ACL3](/help/security/assets/ims19.png)
 
-若要存取 AEM 例項，使用者必須新增至適當雲端服務產品群組。
+若要存取 AEM 執行個體，使用者必須新增至適當雲端服務產品群組。
 
-每個作者例項都會有 AEM 管理員和 AEM 使用者設定檔，而每個發佈例項都有 AEM 使用者設定檔。您可以視需求新增其他設定檔。
+每個作者執行個體都會有 AEM 管理員和 AEM 使用者設定檔，而每個發佈執行個體都有 AEM 使用者設定檔。您可以視需求新增其他設定檔。
 
-若要取得管理員層級的 AEM 例項存取權限，使用者需新增至特定產品的 AEM 管理員設定檔。
+若要取得管理員層級的 AEM 執行個體存取權限，使用者需新增至特定產品的 AEM 管理員設定檔。
