@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: aa7f2175e2a43a318a6171e622d292ed3a8e958b
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 38%
+ht-degree: 55%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 38%
 
 ## 發行日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager 2022.12.0版的發行日期為2022年11月29日。 下一版預計於2023年1月19日發行。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2022.12.0 發行日期是 2022 年 11 月 29 日。下一個版本計劃於 2023 年 1 月 19 日發行。
 
 ## 新增功能 {#what-is-new}
 
 * 通知 [AEM維護更新](/help/overview/what-is-new-and-different.md#aem-updates) 會在Cloud Manager UI中呈現。 此變更將在2022.12.0版發行後的數週內分階段推出。
 * 透過 [內容轉移工具(CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 進行中，開發人員主控台和Cloud Manager中的環境狀態都會顯示為 `Ingestion in Progress`.
-* 提高 [Cloud Manager管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 都做了。
+* 改善 [Cloud Manager 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)的可用性和可靠性。
 
 ## 錯誤修正 {#bug-fixes}
 
