@@ -2,9 +2,9 @@
 title: 體驗片段概觀
 description: 擴充Adobe Experience Manager as a Cloud Service體驗片段。
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 912ecb02f0f38fc2766a81445c448f869964f94a
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,19 @@ ht-degree: 0%
 純格式副本選擇器使用變壓器，而不使用其他指令碼；the [Sling重寫器](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) 用作變壓器。 此設定於
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### 設定HTML轉譯產生 {#configuring-html-rendition-generation}
+
+HTML轉譯是使用Sling Rewriter管道產生。 管道定義於 `/libs/experience-fragments/config/rewriter/experiencefragments`. HTML變壓器支援下列選項：
+
+* `allowedCssClasses`
+   * RegEx運算式，符合最終轉譯中應保留的CSS類別。
+   * 如果客戶想要移除某些特定CSS類別，這個功能會很實用
+* `allowedTags`
+   * 要在最終轉譯中允許的HTML標籤清單。
+   * 依預設，允許下列標籤（不需要設定）:html, head，標題， body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h5, h6, br, noscript, div, link和script
+
+建議使用覆蓋來設定重寫器。 請參閱 [AEMas a Cloud Service中的覆蓋](/help/implementing/developing/introduction/overlays.md)
 
 ## 體驗片段的範本 {#templates-for-experience-fragments}
 
