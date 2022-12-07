@@ -1,16 +1,16 @@
 ---
-title: 使用Dispatcher工具進行驗證和除錯
-description: 使用Dispatcher工具進行驗證和除錯
+title: 使用 Dispatcher 工具進行驗證和偵錯
+description: 使用 Dispatcher 工具進行驗證和偵錯
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 687323031ecfd179a1875033411b8398a3d1d74b
+source-git-commit: 3915e0f281731928b8d918e741235f8bef41c885
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2701'
 ht-degree: 1%
 
 ---
 
-# 使用Dispatcher工具進行驗證和除錯 {#Dispatcher-in-the-cloud}
+# 使用 Dispatcher 工具進行驗證和偵錯 {#Dispatcher-in-the-cloud}
 
 ## 簡介 {#apache-and-dispatcher-configuration-and-testing}
 
@@ -31,11 +31,12 @@ ht-degree: 1%
 ./
 ├── conf.d
 │   ├── available_vhosts
+│   │   ├── my_site.vhost # Created by customer
 │   │   └── default.vhost
 │   ├── dispatcher_vhost.conf
 │   ├── enabled_vhosts
 │   │   ├── README
-│   │   └── default.vhost -> ../available_vhosts/default.vhost
+│   │   └── my_site.vhost -> ../available_vhosts/my_site.vhost  # Created by customer
 │   └── rewrites
 │   │   ├── default_rewrite.rules
 │   │   └── rewrite.rules
@@ -46,6 +47,7 @@ ht-degree: 1%
 │   └── USE_SOURCES_DIRECTLY
 └── conf.dispatcher.d
     ├── available_farms
+    │   ├── my_farm.farm # Created by customer
     │   └── default.farm
     ├── cache
     │   ├── default_invalidate.any
@@ -58,7 +60,7 @@ ht-degree: 1%
     ├── dispatcher.any
     ├── enabled_farms
     │   ├── README
-    │   └── default.farm -> ../available_farms/default.farm
+    │   └── my_farm.farm -> ../available_farms/my_farm.farm  # Created by customer
     ├── filters
     │   ├── default_filters.any
     │   └── filters.any
@@ -131,6 +133,7 @@ ht-degree: 1%
 * `conf.d/available_vhosts/default.vhost`
 
 包含範例虛擬主機。 針對您自己的虛擬主機，建立此檔案的副本、自訂，請前往 `conf.d/enabled_vhosts` 並建立到自定義副本的符號連結。
+請勿將default.vhost檔案直接複製到 `conf.d/enabled_vhosts`.
 
 確保虛擬主機始終可用，且與ServerAlias匹配 `\*.local` 以及本地主機，這是內部Adobe流程所需的。
 
