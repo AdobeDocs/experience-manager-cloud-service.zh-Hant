@@ -2,10 +2,10 @@
 title: 建立生產計劃
 description: 了解如何使用 Cloud Manager 建立您自己的生產程序來主持即時流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
+source-git-commit: c68d4240fb70cc1d533c5fad6472c6c192085603
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 100%
+source-wordcount: '541'
+ht-degree: 79%
 
 ---
 
@@ -32,13 +32,26 @@ ht-degree: 100%
 
 1. 從畫面的右上角，點擊&#x200B;**新增計劃**。
 
-   ![Cloud Manager 登陸頁面](assets/first_timelogin1.png)
+   ![Cloud Manager 登陸頁面](assets/log-in.png)
 
-1. 選擇&#x200B;**為生產設定**&#x200B;在建立程序嚮導中建立生產計劃。您可以接受預設程序名稱或在單擊之前對其進行編輯&#x200B;**繼續**。
+1. 選擇&#x200B;**為生產設定**&#x200B;在建立程序嚮導中建立生產計劃。
 
-   ![建立計劃精靈](assets/create-prod1.png)
+   1. 您可以接受預設程式名稱或對其進行編輯。
+   1. 您可以選擇拖放縮圖影像來識別您的方案。
+   1. 點選或按一下 **繼續**.
+
+   ![建立計劃精靈](assets/create-production-program.png)
+
+1. 如果您已增強安全性權限，則 **增強的安全性** 索引標籤將提供 **啟用增強的安全性** 來製作。 如果需要，請核取選項以啟用增強的安全性，然後點選或按一下 **繼續**.
+
+   * 在建立程式後，無法啟用或禁用增強的安全性。
+   * [深入了解](https://www.adobe.com/go/hipaa-ready) 關於Adobe的HIPAA就緒解決方案實施。
+
+   ![增強的安全性選項](assets/create-production-program-enhanced.png)
 
 1. 在&#x200B;**解決方案和附加元件**&#x200B;索引標籤，選擇計畫的解決方案。
+
+   * 如果您選取 **啟用增強的安全性** 以前，您只能選擇HIPAA權限可用的任意多個解決方案。
 
    ![選取解決方案](assets/setup-prod-select.png)
 

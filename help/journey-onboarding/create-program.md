@@ -3,10 +3,10 @@ title: 建立程序
 description: 了解如何使用 Cloud Manager 來建立您的首個程序。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
-workflow-type: ht
-source-wordcount: '604'
-ht-degree: 100%
+source-git-commit: 228330465b6266590a5badbfa84644b3d1329033
+workflow-type: tm+mt
+source-wordcount: '626'
+ht-degree: 96%
 
 ---
 
@@ -38,6 +38,10 @@ Cloud Manager 程序代表一組 Cloud Manager 環境。這些程序支援業務
 * **沙箱程序**&#x200B;通常建立的目的是提供培訓、執行示範、培訓、POC 或文件。
 
 由於它們服務於不同的目的，不同的環境有不同的選擇。但是建立它們的過程是相似的。對於此入門之旅，我們將建立一個沙箱環境。
+
+>[!TIP]
+>
+>如果您需要建立生產程式，請參閱 [其他資源](#additional-resources) 一節，以取得詳細說明方案的檔案連結。
 
 ## 建立沙箱程序 {#create-sandbox}
 
