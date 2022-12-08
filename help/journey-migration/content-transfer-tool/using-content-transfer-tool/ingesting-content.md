@@ -1,15 +1,15 @@
 ---
-title: 將內容擷取至Target
-description: 將內容擷取至Target
+title: 將內容內嵌至目標
+description: 將內容內嵌至目標
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
+source-git-commit: ee2240eac76d4df372d94152a7c17b6e449ef7c8
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1181'
 ht-degree: 11%
 
 ---
 
-# 將內容擷取至Target {#ingesting-content}
+# 將內容內嵌至目標 {#ingesting-content}
 
 ## 內容轉移工具中的擷取程式 {#ingestion-process}
 
@@ -119,7 +119,7 @@ ht-degree: 11%
 
 ### CAM無法檢索遷移令牌 {#cam-unable-to-retrieve-the-migration-token}
 
-自動擷取移轉代號可能會因不同原因而失敗，包括您 [透過Cloud Manager設定IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 在目標Cloud Service環境中。  在這類情況下，當您嘗試開始擷取時，會看到下列對話方塊：
+自動擷取移轉代號可能會因不同原因而失敗，包括您 [透過Cloud Manager設定IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 在目標Cloud Service環境中。 在這類情況下，當您嘗試開始擷取時，會看到下列對話方塊：
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -134,6 +134,14 @@ ht-degree: 11%
 只有在您屬於本機環境時，才能開始擷取至目的地環境 **AEM管理員** 群組(在目標Cloud Service作者服務上)。 如果您不屬於AEM管理員群組，當您嘗試開始擷取時，會看到錯誤，如下所示。 您可以要求管理員將您新增至本機 **AEM管理員** 或要求代號本身，然後您可將其貼入 **移轉代號輸入** 欄位。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
+
+### 仍啟用通過Release Orchestrator進行自動更新
+
+Release Orchestrator通過自動應用更新來使環境保持最新。 如果執行擷取時觸發更新，可能會造成無法預測的結果，包括環境損毀。 這是啟動獲取之前應記錄支援票證的原因之一（請參閱上面的「注意」），以便可以安排臨時禁用Release Orchestrator的時間。
+
+如果開始擷取時Release Orchestrator仍在執行中，UI會顯示此錯誤訊息。 您仍然可以選擇繼續操作，接受風險，方法是檢查欄位並再次按按鈕。
+
+![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
 ## 下一步 {#whats-next}
 
