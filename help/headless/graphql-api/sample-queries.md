@@ -1,18 +1,18 @@
 ---
 title: 學習如何搭配AEM使用GraphQL — 範例內容與查詢
-description: 了解如何透過探索範例內容和查詢，將GraphQL與AEM搭配使用，以無故提供內容。
+description: 了解如何透過探索範例內容和查詢，以無端方式使用GraphQL與AEM。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
+source-git-commit: dba0223fd05956934fe5a3405f21fcd099637726
 workflow-type: tm+mt
-source-wordcount: '1456'
-ht-degree: 6%
+source-wordcount: '1554'
+ht-degree: 5%
 
 ---
 
 # 學習如何搭配AEM使用GraphQL — 範例內容與查詢 {#learn-graphql-with-aem-sample-content-queries}
 
-了解如何透過探索範例內容和查詢，將GraphQL與AEM搭配使用，以無故提供內容。
+了解如何透過探索範例內容和查詢，以無端方式使用GraphQL與AEM。
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 6%
 >* [AEM GraphQL API以搭配內容片段使用](/help/headless/graphql-api/content-fragments.md)
 
 
-若要開始使用GraphQL查詢，以及這些查詢如何搭配AEM內容片段使用，請參閱一些實用範例。
+若要開始使用GraphQL查詢及其如何使用AEM內容片段，請參閱一些實用範例。
 
 如需此項目的協助，請參閱：
 
@@ -34,7 +34,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
 >title="學習如何搭配AEM使用GraphQL — 範例內容與查詢"
->abstract="了解如何透過探索範例內容和查詢，將GraphQL與AEM搭配使用，以無故提供內容。"
+>abstract="了解如何透過探索範例內容和查詢，以無端方式使用GraphQL與AEM。"
 
 ## GraphQL — 使用範例內容片段結構的範例查詢 {#graphql-sample-queries-sample-content-fragment-structure}
 
@@ -52,7 +52,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->範例查詢以 [與GraphQL搭配使用的內容片段結構範例](#content-fragment-structure-graphql)
+>範例查詢以 [與GraphQL搭配使用的範例內容片段結構](#content-fragment-structure-graphql)
 
 ### 範例查詢 — 所有可用的結構和資料類型 {#sample-all-schemes-datatypes}
 
@@ -60,7 +60,7 @@ ht-degree: 6%
 
 **範例查詢**
 
-```xml
+```graphql
 {
   __schema {
     types {
@@ -73,7 +73,7 @@ ht-degree: 6%
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "__schema": {
@@ -152,7 +152,7 @@ ht-degree: 6%
 若要擷取關於所有城市的所有資訊，您可以使用非常基本的查詢：
 **範例查詢**
 
-```xml
+```graphql
 {
   cityList {
     items
@@ -162,7 +162,7 @@ ht-degree: 6%
 
 執行時，系統會自動展開查詢以包含所有欄位：
 
-```xml
+```graphql
 {
   cityList {
     items {
@@ -177,7 +177,7 @@ ht-degree: 6%
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -236,7 +236,7 @@ ht-degree: 6%
 
 **範例查詢**
 
-```xml
+```graphql
 query {
   cityList {
     items {
@@ -248,7 +248,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -286,7 +286,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 {
   cityByPath (_path: "/content/dam/sample-content-fragments/cities/berlin") {
     item {
@@ -302,7 +302,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "cityByPath": {
@@ -327,7 +327,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 {
   cityList (variation: "berlin_center") {
     items {
@@ -343,7 +343,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -370,7 +370,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 query {
   companyList {
     items {
@@ -399,7 +399,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -498,7 +498,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -523,7 +523,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -552,7 +552,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -574,7 +574,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -619,7 +619,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 query {
   adventureList(
     filter: {
@@ -641,7 +641,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "adventureList": {
@@ -664,7 +664,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     population: {
@@ -700,7 +700,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -727,7 +727,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     name: {
@@ -751,7 +751,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -778,7 +778,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -802,7 +802,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -836,7 +836,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -862,7 +862,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -888,7 +888,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -920,7 +920,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -954,7 +954,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -996,7 +996,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -1046,7 +1046,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 query {
   awardList(filter: {
       id: {
@@ -1073,7 +1073,7 @@ query {
 
 **範例結果**
 
-```xml
+```json
 {
   "data": {
     "awardList": {
@@ -1110,27 +1110,40 @@ query {
 * 下列位置提供內容片段（和其他內容）:
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
+   `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
+
 >[!NOTE]
 >
 >由於結果可能很廣泛，因此這些結果不會在此處重現。
+
+>[!NOTE]
+>
+>各種查詢會參考變數 `variation1`. 這不在標準WKND包中。 必須建立它以進行測試。
+>
+>若 `variation1` 不存在，則 `master`變數將傳回為預設值。
 
 ### 具有指定屬性之特定模型的所有內容片段的範例查詢 {#sample-wknd-all-model-properties}
 
 此示例查詢將詢問：
 
 * 適用於所有類型的內容片段 `article`
-* 和 `path`和 `author` 屬性。
+* 和 `_path` 和屬性 `authorFragment`.
 
 **範例查詢**
 
-```xml
+```graphql
 {
   articleList {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
     }
-  }
+ }
 }
 ```
 
@@ -1143,7 +1156,7 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 {
   adventureList {
     items {
@@ -1208,12 +1221,17 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
+  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures") {
     item {
         _path
-        author
+        authorFragment {
+          _path
+          firstName
+          lastName
+          birthDay
+        }
         main {
           html
           markdown
@@ -1234,12 +1252,12 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 {
-  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
       _path
-      adventureTitle
+      title
       _model {
         _path
         title
@@ -1262,15 +1280,15 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
+      _path
+      title
+      _model {
         _path
-        author
-        referencearticle {
-          _path
-          author
+        title
       }
     }
   }
@@ -1288,7 +1306,9 @@ query {
 >
 >欄位 `fragments` 具有資料類型 `fragment-reference`，與模型 `Article`, `Adventure` 已選取。
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
     items {
@@ -1323,7 +1343,9 @@ query {
 
 以下查詢會透過使用 `_references`:
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
      _references {
@@ -1363,7 +1385,9 @@ query {
 >
 >欄位 `attachments` 具有資料類型 `content-reference`，並選取各種表單。
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
     items {
@@ -1405,9 +1429,11 @@ query {
 >
 >RTE內嵌參照在中水合 `_references`.
 
+<!-- need replacement query -->
+
 **範例查詢**
 
-```xml
+```graphql
 {
   bookmarkByPath(_path: "/content/dam/wknd/en/bookmarks/skitouring") {
     item {
@@ -1449,12 +1475,17 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
     item {
-      _path
-      author
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1474,12 +1505,19 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 {
-  articleList (variation: "variation1") {
+  articleList(variation: "variation1") {
     items {
       _path
-      author
+      _variation
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1499,12 +1537,17 @@ query {
 
 **範例查詢**
 
-```xml
+```graphql
 { 
-  articleList (_locale: "fr") {
+  articleList(_locale: "fr") {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1516,44 +1559,45 @@ query {
 }
 ```
 
-<!-- CQDOC-19418 -->
+### 使用偏移和限制的清單查詢示例 {#sample-list-offset-limit}
 
-<!--
+此查詢將詢問：
 
-### Sample List Query using offset and limit {#sample-list-offset-limit}
+* 從 *complete* 結果清單
 
-This query interrogates:
+**範例查詢**
 
-* for the page of results containing up to five articles, starting from the fifth article from the *complete* results list
-
-**Sample Query**
-
-```xml
-query {
-   articleList(offset: 5, limit:5) {
+```graphql
+{
+   articleList(offset: 5, limit: 5) {
     items {
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
       _path
     }
   }
 }
 ```
 
-### Sample Pagination Query using first and after  {#sample-pagination-first-after}
+### 使用第一個和之後的分頁查詢範例  {#sample-pagination-first-after}
 
-This query interrogates:
+此查詢將詢問：
 
-* for the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list
+* 針對包含最多五個歷險的結果頁面，從 *complete* 結果清單
 
-**Sample Query**
+**範例查詢**
 
-```xml
-query {
+```graphql
+{
     adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
         edges {
           cursor
           node {
-            adventureTitle
+            title
           }
         }
         pageInfo {
@@ -1564,13 +1608,11 @@ query {
 }
 ```
 
--->
-
-## 範例內容片段結構（與GraphQL搭配使用） {#content-fragment-structure-graphql}
+## 範例內容片段結構(與GraphQL搭配使用) {#content-fragment-structure-graphql}
 
 範例查詢以下列結構為基礎，其使用：
 
-* 一個或多個， [範例內容片段模型](#sample-content-fragment-models-schemas)  — 構成GraphQL架構的基礎
+* 一個或多個， [範例內容片段模型](#sample-content-fragment-models-schemas)  — 成為GraphQL結構的基礎
 
 * [範例內容片段](#sample-content-fragments) 基於上述模型
 
