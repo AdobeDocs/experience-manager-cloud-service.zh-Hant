@@ -2,10 +2,10 @@
 title: New Relic One
 description: 了解適用於 AEM as a Cloud Service的 New Relic One 應用程序性能監控 (APM) 服務以及如何存取它。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
+source-git-commit: 9089c66a2fdb5a05eb888e2af736862aff1b7a11
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 100%
+source-wordcount: '1607'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe 非常重視應用程序的監控、可用性和性能。AEM as a Cloud Se
 
 用於 AEM as a Cloud Service的 New Relic One APM 具有許多功能。
 
-* 直接存取專用的 New Relic One 帳戶（存取由 Adobe 支援管理）
+* 直接存取專屬New Relic One帳戶
 
 * 檢測的 New Relic 一個 APM 代理，顯示帶有行號的準確方法調用，包括外部依賴項和數據庫
 
