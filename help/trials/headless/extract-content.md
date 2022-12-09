@@ -1,49 +1,49 @@
 ---
-title: 透過GraphQL API擷取內容
-description: 了解如何將內容片段和GraphQL API作為無周邊的內容管理系統。
+title: 通過 GraphQL API 擷取內容
+description: 了解如何將內容片段和 GraphQL API 用作 Headless 內容管理系統。
 hidefromtoc: true
 index: false
-source-git-commit: a832ed1d81866a6470b47d8e30f5c242b10d1422
-workflow-type: tm+mt
+exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
+source-git-commit: 63b3eccbe1fb4c4b4c61a30f75f10d749635f095
+workflow-type: ht
 source-wordcount: '1189'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# 通過 GraphQL API 擷取內容 {#extract-content}
 
-# 透過GraphQL API擷取內容 {#extract-content}
+到目前為止，在 AEM 試用版 Headless 內容，您已經[建立自己的內容片段模式](content-structure.md)，並建立您自己的 Headless 內容作為[內容片段。](create-content.md)您現在了解如何將內容片段和 GraphQL API 用作 Headless 內容管理系統並交付您的內容。
 
-到目前為止，在AEM Trials中， [建立您自己的內容片段模型](content-structure.md) 建立您自己的無頭內容 [內容片段。](create-content.md) 現在，您可以了解如何使用內容片段和GraphQL API，作為無周邊位置的內容管理系統，來傳遞您的內容。
+GraphQL 提供查詢式的 API，允許外部客戶端應用程式使用單一 API 呼叫，以便查詢 AEM 所需的內容。
 
-GraphQL提供以查詢為基礎的API，讓外部用戶端應用程式只能透過單一API呼叫，查詢AEM所需的內容。
-
-首先，您將學習如何執行兩種不同類型的查詢： **清單** 和 **byPath** 查詢。 接著，您將學習如何從您先前建立的內容片段擷取內容。 本檔案是互動式導覽的補充，涵蓋相同步驟，並視需要連結至其他資源。
+首先，您將了解如何執行兩種不同類型的查詢：**清單** 和 **byPath** 查詢。 然後，您將了解如何從您先前建立的內容片段擷取內容。 本文件可用作互動式導覽的補充資料，內容說明相同的步驟並在需要時連至其他資源。
 
 >[!TIP]
 >
->如果您想要進一步了解GraphQL API，請參閱 [「其他資源」部分](#additional-resources) 在本模組的結尾，請參閱GraphQL API指南。
+>如果您想了解有關 GraphQL API 的更多詳細資訊，請參閱本模組最後的「[其他資源部分](#additional-resources)」，了解 GraphQL API 指南。
 
 ## GraphQL Explorer {#graphql-explorer}
 
-您可以在GraphQL資源管理器上啟動。 您可以在此針對無頭式內容建立和執行查詢。
+您先從 GraphQL Explorer 開始。 在這裡，您可以建立和執行對 Headless 內容的查詢。
 
-![GraphQL查詢編輯器](assets/extract-content/query-editor.png)
+![GraphQL 查詢編輯器](assets/extract-content/query-editor.png)
 
-如果您想在應用程式內指引之外自行導覽至GraphQL Explorer，請使用頁面左上角的Adobe圖示找到。 這會開啟AEM的全域導覽。 從這裡，您選擇 **工具** 標籤，然後 **一般** -> **GraphQL查詢編輯器**.
+如果您希望在應用程式內用指南之外自行導覽到 GraphQL Explorer，您可以使用頁面左上方的 Adobe 圖示找到。 如此將可開啟 AEM 的全域導覽模式。從這裡，您要選擇「**工具**」標籤，然後選擇「**一般** -> **GraphQL 查詢編輯器**」。
 
 >[!TIP]
 >
->如果您想進一步了解AEM中的導覽，請參閱 [「其他資源」部分](#additional-resources) ，以取得AEM基本處理的詳細資訊。
+>如果您想深入了解有關 AEM 導覽的資訊，請參閱本文件的「[其他資源部分](#additional-resources)」，了解有關 AEM 基本處理的更多資訊。
 
-AEM試用版隨附預先載入內容的端點，您可從中擷取內容以用於測試用途。
+AEM 試用版附有一個與內容預先載入的端點，您可以從中擷取內容以進行測試。
 
-![選擇端點](assets/extract-content/select-endpoint.png)
+![選取端點](assets/extract-content/select-endpoint.png)
 
-選取 **AEM示範資產** 從 **端點** 編輯器右上角的下拉式功能表（如果尚未執行）。
+選取「**AEM 示範資產**」端點 (從編輯器右上方的「**端點**」下拉式清單中選取，如果還未選取)。
 
-## 複製並運行清單查詢 {#list-query}
+## 複製並執行一個清單查詢 {#list-query}
 
-從簡單的清單查詢開始，了解如何運用AEM as a Cloud Service的GraphQL API運作方式。 此清單查詢範例將傳回使用特定內容片段模型的所有內容清單。 庫存和類別頁面通常使用此查詢格式。
+先從簡單的清單查詢開始，以便了解 AEM as a Cloud Service 的 GraphQL API 如何運作。 此清單查範例將返回使用特定內容片段模式的所有內容清單。 詳細目錄和類別頁面通常使用這種查詢格式。
 
 1. 複製下列程式碼片段。
 
@@ -68,23 +68,23 @@ AEM試用版隨附預先載入內容的端點，您可從中擷取內容以用�
     }
    ```
 
-1. 然後，借由貼上複製的程式碼，取代查詢編輯器中的現有內容。
+1. 然後，貼上複製的程式碼，以之取代查詢編輯器中的現有內容。
 
    ![清單查詢](assets/extract-content/list-query.png)
 
-1. 貼上後，按一下 **播放** 按鈕，執行查詢。
+1. 貼上後，在查詢編輯器左上方按一下「**播放**」按鈕以執行查詢。
 
-1. 查詢成功執行後，結果會顯示在查詢編輯器旁的右側面板中。 如果查詢不正確，右側面板中會顯示錯誤。
+1. 一旦查詢執行成功，結果將顯示在右側面板中 (在查詢編輯器旁邊)。 如果查詢不正確，右側面板中會出現錯誤。
 
    ![列出查詢結果](assets/extract-content/list-query-results.png)
 
-您剛剛驗證了清單查詢以取得所有內容片段的完整清單。 此程式可協助確保回應符合應用程式的預期，結果可說明應用程式和網站如何擷取在AEM中建立的內容。
+您剛剛驗證了所有內容片段完整清單的清單查詢。 此過程有助於確保查詢的回應符合您應用程式的預期，且結果會說明您的應用程式和網站將如何擷取在 AEM 建立的內容。
 
-您的內容需要顯示的不同管道和平台現在可以使用此查詢或類似內容來擷取無頭內容。
+您的內容需要出現的不同頻道和平台現在可以使用此查詢或類似查詢來擷取您的 Headless 內容。
 
-## 複製並運行byPath查詢 {#bypath-query}
+## 複製並執行一個 byPath 查詢 {#bypath-query}
 
-執行byPath查詢可讓您擷取特定內容片段的資產。 專注於特定內容集的產品詳細資料頁面和頁面通常需要此類型的查詢。
+執行 byPath 查詢可讓您擷取特定內容片段的資產。 產品詳細資訊頁面，以及著重在通常需要這類查詢的一組特定內容頁面。
 
 1. 複製下列程式碼片段。
 
@@ -111,68 +111,68 @@ AEM試用版隨附預先載入內容的端點，您可從中擷取內容以用�
    }
    ```
 
-1. 然後，借由貼上複製的程式碼，取代查詢編輯器中的現有內容。
+1. 然後，貼上複製的程式碼，以之取代查詢編輯器中的現有內容。
 
-   ![byPath查詢](assets/extract-content/bypath-query.png)
+   ![byPath 查詢](assets/extract-content/bypath-query.png)
 
-1. 貼上後，按一下 **播放** 按鈕，執行查詢。
+1. 貼上後，在查詢編輯器左上方按一下「**播放**」按鈕以執行查詢。
 
-1. 查詢成功執行後，結果會顯示在查詢編輯器旁的右側面板中。 如果查詢不正確，右側面板中會顯示錯誤。
+1. 一旦查詢執行成功，結果將顯示在右側面板中 (在查詢編輯器旁邊)。 如果查詢不正確，右側面板中會出現錯誤。
 
-1. 查詢成功執行後，結果會顯示在查詢編輯器旁的右側面板中。 如果查詢不正確，右側面板中會顯示錯誤。
+1. 一旦查詢執行成功，結果將顯示在右側面板中 (在查詢編輯器旁邊)。 如果查詢不正確，右側面板中會出現錯誤。
 
-   ![byPath查詢結果](assets/extract-content/bypath-query-results.png)
+   ![byPath 查詢結果](assets/extract-content/bypath-query-results.png)
 
-您剛剛驗證了清單查詢以取得所有內容片段的完整清單。 此程式可協助確保回應符合應用程式的預期，結果可說明應用程式和網站如何擷取在AEM中建立的內容。
+您剛剛驗證了所有內容片段完整清單的清單查詢。 此過程有助於確保查詢的回應符合您應用程式的預期，且結果會說明您的應用程式和網站將如何擷取在 AEM 建立的內容。
 
-您的內容需要顯示的不同管道和平台現在可以使用此查詢或類似內容來擷取無頭內容。
+您的內容需要出現的不同頻道和平台現在可以使用此查詢或類似查詢來擷取您的 Headless 內容。
 
-## 對您自己的內容執行查詢 {#own-queries}
+## 對您自己的內容進行查詢 {#own-queries}
 
-現在您已經運行了兩種主要類型的查詢，您就可以針對自己建立的內容設定並運行查詢。
+您現在已經進行了兩種主要類型的查詢，您已準備好為自己建立的內容設定和執行查詢。
 
-1. 若要對您自己的內容片段執行查詢，請變更 **AEM示範資產** 檔案夾 **您的專案** 檔案夾。
+1. 若要針對您自己的內容片段進行查詢，請將端點從「**AEM 示範資產**」資料夾變更為「**您的專案**」資料夾。
 
    ![選取您自己的端點](assets/extract-content/select-endpoint.png)
 
-1. 首先，在查詢編輯器中選取並刪除所有現有內容。 然後鍵入開括弧 `{` 和按Ctrl+空格鍵或Option+空格鍵可自動完成內容片段模型中定義的模型清單。 選取您建立的結尾於 `List` 從清單中。
+1. 先從選取並刪除查詢編輯器中所有現有內容開始。 然後，輸入左方括號 `{` 並按 Ctrl+Space 或 Option+Space，可獲得內容片段模式中定義的模式自動完成清單。 從清單中選取您建立且以 `List`結尾的模式。
 
-   ![在查詢編輯器中自動完成模型](assets/extract-content/auto-complete-models.png)
+   ![在查詢編輯器中自動完成模式](assets/extract-content/auto-complete-models.png)
 
-1. 為您選取的內容片段模型定義查詢應包含的項目。 同樣，鍵入開括弧 `{`，然後按Ctrl+空格鍵或Option+空格鍵以自動完成清單。 選擇 `items` 從清單中。
+1. 為您選取的內容片段模式定義查詢應包含的項目。 再次輸入左方括號 `{`，然後按 Ctrl+Space 或 Option+Space 以獲得自動完成清單。從清單中選取 `items`。
 
    ![在查詢編輯器中自動完成項目](assets/extract-content/auto-complete-items.png)
 
-1. 為您選取的內容片段模型定義查詢應包含的欄位。 同樣，鍵入開括弧 `{`，然後按Ctrl+空格鍵或Option+空格鍵以自動完成「內容片段」模型中可用欄位的清單。 從清單中選取您希望的模型欄位。
+1. 為您選取的內容片段模式定義查詢應包含的欄位。 再次，輸入左方括號 `{`，然後按 Ctrl+Space 或 Option+Space，可獲得內容片段模式中適用欄位的自動完成清單。 從清單中選取您希望從模式中選取的欄位。
 
-   ![查詢編輯器中的自動完成欄位](assets/extract-content/auto-complete-fields.png)
+   ![在查詢編輯器中自動完成欄位](assets/extract-content/auto-complete-fields.png)
 
-1. 請使用逗號分隔多個欄位(`,`)或空格鍵，然後按Ctrl+空格鍵或Option+空格鍵以選取其他欄位。
+1. 用逗號 (`,`) 或空格分隔多個欄位，然後再次按 Ctrl+Space 或 Option+Space 以選擇其他欄位。
 
-1. 在您工作時，您可以點選或按一下 **美化** 按鈕以自動格式化程式碼，以便更輕鬆閱讀。
+1. 在工作時，您可以點選或按一下「**修飾**」按鈕，自動格式化您的程式碼以便更易於閱讀。
 
-   ![美化](assets/extract-content/prettify.png)
+   ![修飾](assets/extract-content/prettify.png)
 
-1. 完成後，點選或按一下 **播放** 按鈕，以運行查詢。
+1. 完成後，在查詢編輯器左上方點選或按一下「**播放**」按鈕以進行查詢。
 
    ![您自己的查詢結果](assets/extract-content/custom-query-results.png)
 
-這是將內容傳遞至全通路數位體驗的方式。 請參閱 [「其他資源」部分](#additional-resources) 如需其他範例查詢，並了解GraphQL API的功能。
+這就是將您的內容傳送至全頻道數位體驗的方式。請參閱「[其他資源部分](#additional-resources)」以獲取更多範例查詢，並了解您可以使用 GraphQL API 做更多事情。
 
-## 您已學會如何查詢內容！ {#conclusion}
+## 您已經了解如何查詢內容！ {#conclusion}
 
-幹得好！ 您已了解兩種基本的查詢類型以及如何查詢您自己的內容。 請務必查看 [「其他資源」部分](#additional-resources) 如需其他範例查詢，並了解GraphQL API的功能。
+做得很好！您已經了解關於兩種基本類型的查詢以及如何查詢您自己的內容。 請務必查看「[其他資源部分](#additional-resources)」以獲取更多範例查詢，並了解您可以使用 GraphQL API 做更多事情。
 
-如果您想要了解擷取的內容之後如何用於自訂React應用程式，請務必檢閱模組 [自訂範例React應用程式中的內容。](customize-app.md)
+如果您想了解如何在自訂 React 應用程式中使用擷取的內容，請務必查看模組[「在範例 React 應用程式中自訂內容」。](customize-app.md)
 
-您可以按一下，返回試用主螢幕 **解決方案** 按鈕，然後選擇 **Experience Manager**.
+您可以在導覽列右上方按一下「**解決方案**」按鈕，並選取 **Experience Manager**，即可返回您的試用版主畫面。
 
 ![導覽首頁](assets/extract-content/home.png)
 
 ## 其他資源 {#additional-resources}
 
-如需內容片段和AEM的詳細資訊，請考慮檢閱此額外檔案。
+有關內容片段和 AEM 的更多資訊，請考慮查看此附加文件。
 
-* [GraphQL API指南](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/explore-graphql-api.html)
-* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 如何為新使用者導覽和使用AEM的檔案
-* [學習如何搭配AEM使用GraphQL — 範例內容與查詢](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html)
+* [GraphQL API 指南](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/explore-graphql-api.html)
+* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 有關新用戶如何導覽和使用 AEM 的文件
+* [了解透過 AEM 使用 GraphQL - 範例內容和查詢](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html)
