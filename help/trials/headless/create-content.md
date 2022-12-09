@@ -1,99 +1,99 @@
 ---
-title: 建立無頭內容
-description: 使用您先前建立的內容片段模型來建立可用於頁面編寫的內容，或作為無頭內容的基礎。
+title: 建立 Headless 內容
+description: 使用您先前建立的內容片段模式來建立可用來編寫頁面的內容，或作為 Headless 內容的依據。
 hidefromtoc: true
 index: false
-source-git-commit: 7d5161d97a93d4731e33eda586179560a6a55ef3
-workflow-type: tm+mt
+exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
+source-git-commit: 63b3eccbe1fb4c4b4c61a30f75f10d749635f095
+workflow-type: ht
 source-wordcount: '782'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# 建立 Headless 內容 {#create-content}
 
-# 建立無頭內容 {#create-content}
-
-遵循產品內學習模組，了解如何使用 [您先前建立的內容片段模型](content-structure.md) 來建立可用於頁面製作的內容，或作為無頭內容的基礎。 本檔案是互動式導覽的補充，涵蓋相同步驟，並視需要連結至其他資源。
+依照產品提供的學習模式，了解如何使用[您先前建立的內容片段模式](content-structure.md)來建立可用來編寫頁面的內容，或作為 Headless 內容的依據。 本文件可用作互動式導覽的補充資料，內容說明相同的步驟並在需要時連至其他資源。
 
 ## 內容片段 {#introduction}
 
-在AEMas a Cloud Service中，內容片段是根據內容片段模型所定義的結構而組成的無頭內容片段。 您可以從「內容片段」主控台開始，建立您自己的內容片段。 內容片段主控台可視為無頭內容的程式庫。 您可以使用主控台建立新內容片段，並管理現有片段。 您的主控台會啟動空白，因此我們要建立新片段！
+在 AEM as a Cloud Service 中，內容片段是以內容片段模式所定義的結構為依據形成的許多小段 Headless 內容。 您可以從內容片段控制台為起頭來建立自己的內容片段。 您可以將內容片段控制台視為您的 Headless 內容資料庫。 您使用該控制台來建立新的內容片段並管理現有片段。 您的控制台一開始是空的，所以我們來建立一個新片段！
 
 ![編輯片段的內容](assets/create-content/content-fragment-console.png)
 
-如果您想自行導覽至應用程式內指引以外的內容片段主控台，請使用頁面左上角的Adobe圖示找到。 這會開啟AEM的全域導覽。 從這裡，您選擇 **導覽** 標籤，然後 **內容片段**.
+如果您希望在應用程式內用指南之外自行導覽到內容片段控制台，您可以使用頁面左上方的 Adobe 圖示找到。 如此將可開啟 AEM 的全域導覽模式。 從這裡，您需選擇「**導覽**」標籤，然後選擇「**內容片段**」。
 
 >[!TIP]
 >
->如果您想進一步了解AEM中的導覽，請參閱 [「其他資源」部分](#additional-resources) ，以取得AEM基本處理的詳細資訊。
+>如果您想深入了解有關 AEM 導覽的資訊，請參閱本文件的「[其他資源部分](#additional-resources)」，了解有關 AEM 基本處理的更多資訊。
 
 ## 建立內容片段 {#create-fragment}
 
-內容片段代表您的無頭內容。 但只能根據預先定義的內容結構來建立。 您先前建立的內容片段模型可作為該結構。
+內容片段代表您的 Headless 內容。 但是這類內容只能據預定義的內容結構來建立。 您先前建立的內容片段模式可作為該結構使用。
 
-1. 點選或按一下 **建立** 按鈕，開啟 **新內容片段** 對話方塊，以開始建立新內容片段。
+1. 在控制台右上方，點選或按一下「**建立**」按鈕，即可開啟「**新內容片段**」對話框，並開始建立一個新的內容片段。
 
-   ![建立內容片段對話方塊](assets/create-content/create-content-fragment.png)
+   ![「建立內容片段」對話框](assets/create-content/create-content-fragment.png)
 
-1. 如果您遵循應用程式內指引， **位置** 會自動填入。
+1. 如果您是依應用程式內用指南進行，「**地點**」欄將自動填入。
 
-   1. 如果您未遵循指南，請使用路徑瀏覽器來選取專案資料夾。
+   1. 如果您不是依照指南進行，請使用路徑瀏覽器來選取您的專案檔案夾。
 
-   1. 在 **新內容片段** 對話框，點選或按一下 **選擇位置** 按鈕（看起來像資料夾的圖示） **位置** 欄位。
+   1. 在「**新內容片段**」對話框中，點選或按一下「**選擇地點**」按鈕 (看起來像檔案夾的圖示，位於「**地點**」欄位內)。
 
-      ![選擇位置對話框](assets/create-content/choose-location.png)
-   * 或者，在按一下前，在內容片段控制台的左側導覽面板中選取路徑 **建立**.
+      ![選擇地點對話框](assets/create-content/choose-location.png)
+   * 或者，在按一下「**建立**」之前，另外在內容片段控制台的左側導覽面板中選取路徑。
 
 
-1. 在 **內容片段模型** 下拉式清單中，從下拉式清單中選取您先前建立的內容片段模型。
+1. 在「**內容片段模式**」下拉式清單中，選取您先前在下拉式清單建立的內容片段模式。
 
-1. 新增 **標題** （針對內容片段）。
+1. 為內容片段新增&#x200B;**標題**。
 
-1. 點選或按一下 **建立和開啟**.
+1. 點選或按一下「**建立並開啟**」。
 
 ## 內容片段編輯器 {#edit-fragment}
 
-儲存新內容片段後，內容片段編輯器隨即開啟，您可在其中提供片段的實際內容。
+儲存新的內容片段後，內容片段編輯器將開啟；您可以在編輯器中提供片段的實際內容。
 
-1. 編輯器顯示在所選模型中定義的欄位。 您可以在此編輯它們以完成內容片段。 系統會自動儲存您的進度。
+1. 編輯器會顯示您在所選模式中定義的欄位。 您可以在此處編輯內容，以完成您的內容片段。 您的進度會自動儲存。
 
    ![內容片段編輯器](assets/create-content/content-fragment-editor.png)
 
-1. 如果內容片段的模型有許多欄位，您可以使用 **變數** 面板。 系統會在此處標籤有錯誤的欄位。
+1. 如果您的內容片段模式有很多欄位，您可以使用編輯器左側的 「**變數**」面板快速前往任何欄位。 有錯誤的欄位將標記在此處。
 
-1. 為了讓內容片段可供外部應用程式使用，您需要發佈它。 點選或按一下 **發佈** 按鈕。
+1. 為了讓內容片段可供外部應用程式使用，您需要將內容片段發佈。 在編輯器右上方，點選或按一下「**發佈**」按鈕。
 
-1. 選擇 **現在** 從下拉式清單中。 您也可以排程在稍後發佈。
+1. 從下拉式清單中選取「**立即**」。 您還可以安排在以後發佈。
 
    ![發佈按鈕](assets/create-content/publish.png)
 
    >[!TIP]
    >
-   >如果您想要進一步了解在AEM中發佈內容，請參閱 [「其他資源」部分](#additional-resources) ，以取得有關發佈的詳細資訊。
+   >如果您想深入了解有關在 AEM 發佈內容的資訊，請參閱本文件的「[其他資源部分](#additional-resources)」，了解有關發佈內容的更多資訊。
 
-1. AEM會自動執行參考檢查，以確定已針對您的內容片段發佈所有必要資源。 在此情況下，您也需要發佈您建立的模型。 點選或按一下 **發佈**.
+1. AEM 會自動執行參考檢查，以確保為您的內容片段發佈所有必要的資源。 在這種情況下，您還需要發佈您建立的模式。 點選或按一下「**發佈**」。
 
    ![參考檢查](assets/create-content/references.png)
 
-1. 出版物在橫幅中確認。
+1. 這項內容發佈會在橫幅中確認。
 
-   ![發佈確認](assets/create-content/publish-confirm.png)
+   ![確認發佈](assets/create-content/publish-confirm.png)
 
-## 您已學習如何建立內容片段！ {#conclusion}
+## 您已經了解如何建立內容片段！ {#conclusion}
 
-在本模組中，您學習了如何根據您先前建立的模型建立內容片段。 這是內容作者建立結構化無頭內容的方式。
+在本模式中，您已了解如何根據先前建立的模式建立內容片段。 這就是內容作者建立結構化 Headless 內容的方式。
 
-現在您的內容已建立並發佈，您可以透過AEM API透過Graph QL擷取該內容。 您將在模組中了解此資訊 [透過GraphQL API擷取內容。](extract-content.md)
+您的內容已建立並發佈，現在，您可以透過 AEM 的 API 以 Graph QL 擷取該內容。 您將在「[透過 GraphQL API 擷取內容](extract-content.md)」中了解關於這一點
 
-您可以按一下，返回試用主螢幕 **解決方案** 按鈕，然後選擇 **Experience Manager**.
+您可以在導覽列右上方按一下「**解決方案**」按鈕，並選取 **Experience Manager**，即可返回您的試用版主畫面。
 
 ![導覽首頁](assets/create-content/home.png)
 
 ## 其他資源 {#additional-resources}
 
-如需內容片段和AEM的詳細資訊，請考慮檢閱此額外檔案。
+有關內容片段和 AEM 的更多資訊，請考慮查看此附加文件。
 
-* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 如何為新使用者導覽和使用AEM的檔案
-* [管理內容片段 — 發佈和參考](/help/assets/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment)  — 如何在AEM中發佈內容的詳細資訊
-* [內容片段](/help/assets/content-fragments/content-fragments.md)  — 內容片段的概觀和內容片段完整檔案的連結
-* [管理內容片段](/help/assets/content-fragments/content-fragments-managing.md)  — 如何建立和管理內容片段
+* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 有關新用戶如何導覽和使用 AEM 的文件
+* [管理內容片段 - 發布和引用](/help/assets/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment) - 有關如何在 AEM 中發佈內容的詳細資訊
+* [內容片段](/help/assets/content-fragments/content-fragments.md) - 內容片段概觀和內容片段完整文件的連結
+* [管理內容片段](/help/assets/content-fragments/content-fragments-managing.md) - 如何建立和管理內容片段
