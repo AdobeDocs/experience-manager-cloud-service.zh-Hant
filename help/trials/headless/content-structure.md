@@ -1,114 +1,114 @@
 ---
-title: 建立應用程式的內容結構
-description: 了解如何使用AEM內容片段模型，建立可作為所有無頭內容基礎的結構。
+title: 為您的應用程式建立內容結構
+description: 了解如何使用 AEM 的內容片段模式來建立結構，使其成為所有 Headless 內容的基礎。
 hidefromtoc: true
 index: false
-source-git-commit: 6010fb398ec8c04ae9153f313585bcf38ccaa26d
-workflow-type: tm+mt
+exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
+source-git-commit: 63b3eccbe1fb4c4b4c61a30f75f10d749635f095
+workflow-type: ht
 source-wordcount: '1003'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# 為您的應用程式建立內容結構 {#content-structure}
 
-# 建立應用程式的內容結構 {#content-structure}
+內容片段允許您設計、建立、規劃和發佈每頁自主的內容。使用這些內容片段，您可以準備適用於多個位置和多個管理使用的內容，非常適合 Headless 傳送。內容片段模式是用來定義此內容的結構，並且是您需要建立的第一件事，以便管理您的 Headless 內容。
 
-內容片段可讓您設計、建立、組織和發佈不受頁面影響的內容。 使用它們，您可以準備可在多個位置和多個頻道上使用的內容，非常適合無頭傳送。 內容片段模型可用來定義此內容的結構，且是您管理無頭內容所需的第一件事。
+為了幫助您了解如何完成這一點，AEM 試用版這項模組將以快速互動式導覽帶您完成整個過程，先建立模式然後新增其結構。本文件可用作產品內導覽的補充資料，內容說明相同的步驟並在需要時連至其他資源。
 
-為協助您了解如何完成此作業，此AEM Trials模組會透過快速互動導覽，引導您完成程式，先建立模型，然後新增其結構。 本檔案是產品內導覽的補充，涵蓋相同步驟，並視情況連結至其他資源。
+## 內容片段模式控制台 {#content-fragment-model-console}
 
-## 內容片段模型主控台 {#content-fragment-model-console}
+您將從內容片段模式控制台開始。您可以將內容片段模式控制台視為您的模式資料庫。您使用該控制台來建立新的模式並管理現有模式。您的控制台一開始是空的，所以我們來建立一個新模式！
 
-您可以在內容片段模型控制台上啟動。 內容片段模型主控台可視為模型庫。 您可使用主控台建立新模型並管理現有模型。 您的主控台會啟動空白，因此我們建立新模型！
+![內容片段模式控制台](assets/content-structure/content-fragment-model-console.png)
 
-![內容片段模型主控台](assets/content-structure/content-fragment-model-console.png)
-
-如果您想自行導覽至應用程式內指引以外的內容片段模型主控台，請使用頁面左上角的Adobe圖示找到。 這會開啟AEM的全域導覽。 從這裡，您選擇 **工具** 標籤，然後 **一般** -> **內容片段模型**.
+如果您希望在應用程式內用指南之外自行導覽到內容片段模式，您可以使用頁面左上方的 Adobe 圖示找到。如此將可開啟 AEM 的全域導覽模式。 從這裡，您要選擇「**工具**」標籤，然後選擇「**一般** -> **內容片段模式**」。
 
 >[!TIP]
 >
->如果您想進一步了解AEM中的導覽，請參閱 [「其他資源」部分](#additional-resources) ，以取得AEM基本處理的詳細資訊。
+>如果您想深入了解有關 AEM 導覽的資訊，請參閱本文件的「[其他資源部分](#additional-resources)」，了解有關 AEM 基本處理的更多資訊。
 
-## 建立模型 {#create-model}
+## 建立一個模式 {#create-model}
 
-進入內容片段模型控制台後，您可以建立新模型來代表您自己的無頭內容。
+進入內容片段模式控制台後，您可以建立一個新模式來代表您自己的 Headless 內容。
 
-1. 在內容片段模型控制台中，按一下 **建立** 按鈕，開始建立內容片段模型。
+1. 在內容片段控制台的螢幕右上方，點選「**建立**」按鈕，即可開始建立一個內容片段模式。
 
-1. 「建立模型」精靈會啟動，引導您建立內容片段模型。
+1. 建立模式精靈會啟動，然後會引導您建立內容片段模式。
 
-   ![內容片段模型精靈](assets/content-structure/model-wizard.png)
+   ![內容片段模式精靈](assets/content-structure/model-wizard.png)
 
    提供必填資訊。
 
-   * **模型標題**  — 這是模型的簡要描述，通常指明其目的。
-   * **啟用模型**  — 預設會核取此選項，且必須勾選此選項，才能稍後根據此模型建立內容片段。
+   * **模式標題** - 這是模式的簡短描述，通常會指明其用途。
+   * **啟用模式** - 此選項依預設為勾選，必須勾選才能在後根據此模式建立內容片段。
 
-   您也可以選擇新增更長時間 **說明** 和 **標籤** 以便日後在內容片段模型主控台中對其分類並區別給您的使用者。
+   您還可以選擇為模式新增更長的「**說明**」和「**標籤**」，以便進行模式分類並在內容片段模式控制台中讓您的用戶以後能區分不同模式。
 
    >[!TIP]
    >
-   >如果您對標籤如何組織內容感興趣，請參閱 [「其他資源」部分](#additional-resources) ，以取得AEM中標籤的詳細資訊。
+   >如果您有興趣了解標籤如何整理您的內容，請參閱本文件的「[其他資源部分](#additional-resources)」，了解在 AEM 新增標籤的更多資訊。
 
-1. 填入必填欄位後，按一下 **建立** ，以建立模型。
+1. 必填欄位填入後，在左上方按一下「**建立**」以建立模式。
 
-1. 此 **成功** 對話框確認已建立模型。
+1. 「**成功** 」對話框會確認模式已建立。
 
-   ![建立新內容片段模型的成功對話方塊](assets/content-structure/success.png)
+   ![建立新內容片段模式的成功對話框](assets/content-structure/success.png)
 
-1. 在可以使用模型之前，還需要定義其資料的結構。 按一下 **開啟** 在對話框中開啟它，然後繼續定義模型。
+1. 在使用模式之前，您還需要定義其資料結構。在對話框按一下「**開啟**」，即可開啟並繼續定義模式。
 
-## 向模型添加欄位 {#configure-model}
+## 新增欄位至模式 {#configure-model}
 
-內容片段模型本質上是內容片段的結構。 即定義模型包含的欄位/資料類型。
+內容片段模式基本上是您內容片段的結構。例如，模式會定義模式包含的欄位/資料類型。
 
-![內容片段模型編輯器](assets/content-structure/model-editor.png)
+![內容片段模式編輯器](assets/content-structure/model-editor.png)
 
-使用內容片段模型編輯器，您可以使用拖放介面來定義內容片段模型的欄位。
+使用內容片段模式編輯器，您可以使用拖放介面為內容片段模式定義欄位。
 
-1. 從拖曳欄位 **資料類型** 面板，並將其拖放至您的內容片段模型。 有多種資料類型可供選擇，例如單行文字、多行文字、編號，以及其他片段的參考。
+1. 在螢幕右側，從「**資料類型**」面板中拖動一個欄位，並將其放到您的內容片段模式上。有多種資料類型可供選擇，例如單行文字、多行文字、數字和對其他片段的引用。
 
    ![新增資料類型](assets/content-structure/drop-fields.png)
 
    >[!TIP]
    >
-   >如果您想要取得可用資料類型的詳細資訊，請參閱 [「其他資源」部分](#additional-resources) ，取得詳細內容片段模型檔案。
+   >如果您想了解更多有關可用資料類型，請參閱本文件的「[其他資源部分](#additional-resources)」，取得詳細的內容片段模式文件。
 
-1. 放置資料類型後， **資料類型** 欄自動變更為 **屬性** 索引標籤，您可在此定義剛放置的資料類型的詳細資料。
+1. 放好資料類型後，「**資料類型**」欄會自動變更為「**屬性**」標籤，您可以在其中定義您剛剛放好的詳細資料類型。
 
-   ![資料欄位的「屬性」索引標籤](assets/content-structure/data-type-properties.png)
+   ![資料欄位的「屬性」標籤](assets/content-structure/data-type-properties.png)
 
-   模型的屬性可以包括欄位名稱、欄位類型、欄位長度（如果是強制欄位）等。
+   模式的屬性可能包括欄位名稱、欄位類型、欄位長度 (若必填) 等。
 
-1. 使用 **屬性** 索引標籤來定義屬性，例如預設值、最大長度（如果是必要欄位）等。
+1. 使用所選資料類型的「**屬性**」標籤來定義屬性，例如預設值、最大長度、是否為必填欄位等。
 
    >[!TIP]
    >
-   >如果您想要取得可用屬性的詳細資訊，請參閱 [「其他資源」部分](#additional-resources) ，取得詳細內容片段模型檔案。
+   >如果您想了解更多有關可用屬性，請參閱本文件的「[其他資源部分](#additional-resources)」，取得詳細的內容片段模式文件。
 
-1. 新增內容片段模型所需的所有欄位後，按一下 **儲存** 窗口的右上角。
+1. 新增內容片段模式所需的所有欄位後，在視窗右上方按一下「**儲存**」。
 
-1. 這會儲存模型，並將您傳回「內容片段模型控制台」，您可在其中新增更多模型。
+1. 這將儲存模式並返回至內容片段模式控制台，您可以在其中新增更多模式。
 
 ![模組完成](assets/content-structure/content-fragment-model-console-populated.png)
 
-## 您已學習如何建立內容片段模型 {#conclusion}
+## 您已經了解如何建立內容片段模式 {#conclusion}
 
-在本模組中，您學習了如何建立內容片段模型來表示無頭資料的結構。 首先，您建立了模型，然後以資料類型及其相關屬性填入模型，借此定義無頭內容的架構。
+在本模組中，您已了解如何建立內容片段模式來代表的結 Headless 資料的結構。首先，您建立了模式，然後以資料類型及其相關屬性來填入模式，進而定義 Headless 內容的結構。
 
-現在您有了自己的內容片段模型，可以使用模型來建立內容片段。 模組 [建立新內容](create-content.md) 詳細資訊，以使用新的內容片段模型來建立無標題內容。
+現在您有了自己的內容片段模式，您可以使用該模式來建立內容片段。「[建立新內容](create-content.md)」模組有詳細資訊，讓您了解如何使用新內容片段模式來建立 Headless 內容。
 
-您可以按一下，返回試用主螢幕 **解決方案** 按鈕，然後選擇 **Experience Manager**.
+您可以在導覽列右上方按一下「**解決方案**」按鈕，並選取 **Experience Manager**，即可返回您的試用版主畫面。
 
 ![導覽首頁](assets/content-structure/home.png)
 
 ## 其他資源 {#additional-resources}
 
-如需內容片段和AEM的詳細資訊，請考慮檢閱此額外檔案。
+有關內容片段和 AEM 的更多資訊，請考慮查看此附加文件。
 
-* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 如何為新使用者導覽和使用AEM的檔案
-* [使用標籤](/help/sites-cloud/authoring/features/tags.md)  — 如何使用AEM中的標籤來組織內容的檔案
-* [內容片段](/help/assets/content-fragments/content-fragments.md)  — 內容片段的概觀和內容片段完整檔案的連結
-* [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 內容片段模型的完整檔案
-* [內容片段模型 — 資料類型](/help/assets/content-fragments/content-fragments-models.md#data-types)  — 內容片段模型可用各種資料類型的詳細資訊
-* [內容片段模型 — 屬性](/help/assets/content-fragments/content-fragments-models.md#data-types)  — 內容片段模型資料類型可用各種屬性的詳細資訊
+* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 有關新用戶如何導覽和使用 AEM 的文件
+* [使用標籤](/help/sites-cloud/authoring/features/tags.md) - 有關如何在 AEM 中使用標籤來整理內容的文件
+* [內容片段](/help/assets/content-fragments/content-fragments.md) - 內容片段概觀和內容片段完整文件的連結
+* [內容片段模式](/help/assets/content-fragments/content-fragments-models.md) - 關於內容片段模式的完整文件
+* [內容片段模式 - 資料類型](/help/assets/content-fragments/content-fragments-models.md#data-types) - 內容片段模式可用的各種資料類型詳細資訊
+* [內容片段模式 - 屬性](/help/assets/content-fragments/content-fragments-models.md#data-types) - 內容片段模式資料類型可用的各種屬性詳細資訊
