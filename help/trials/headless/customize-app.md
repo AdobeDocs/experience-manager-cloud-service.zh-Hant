@@ -1,179 +1,179 @@
 ---
-title: 自訂範例React應用程式中的內容
-description: 使用範例React應用程式，了解如何使用AEM as a Cloud Service中的無頭功能集來自訂內容。
+title: 在範例 React 應用程式中自訂內容
+description: 使用範例 React 應用程式，了解如何使用 AEM as a Cloud Service 中的 Headless 功能集來自訂內容。
 hidefromtoc: true
 index: false
-source-git-commit: 62c8be81d0d46e69b44cc803419fafcce2e93d33
-workflow-type: tm+mt
+exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
+source-git-commit: 63b3eccbe1fb4c4b4c61a30f75f10d749635f095
+workflow-type: ht
 source-wordcount: '1371'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# 在範例 React 應用程式中自訂內容 {#customize-app}
 
-# 自訂範例React應用程式中的內容 {#customize-app}
+Headless 內容的 AEM 試用版有一個預先載入的簡單 React 應用程式，可展示 Headless 內容。 在本模式中，您將了解如何預覽該應用程式，以及透過變換影像並為其建立可購物機會來修改該內容。
 
-無頭的AEM試用預先載入簡單的React應用程式，以展示無頭內容。 在此模組中，您將學習如何透過交換影像和為其建立可購買的時刻來預覽該應用程式並修改其內容。
-
-應用程式本身以內容片段的結構為基礎。 您可以使用AEM中的內容片段編輯器，修改應用程式內容。 為協助您了解如何完成此作業，此AEM Trials模組會透過快速互動導覽，帶您完成此程式。 本檔案是互動式導覽的補充，涵蓋相同步驟，並視需要連結至其他資源。
+應用程式本身是根據內容片段的結構來建立。 使用 AEM 中的內容片段編輯器，您可以修改您的應用程式內容。 為了幫助您了解如何完成這一點，AEM 試用版這項模式將以快速互動式導覽帶您完成整個過程。 本文件可用作互動式導覽的補充資料，內容說明相同的步驟並在需要時連至其他資源。
 
 ## 內容片段編輯器 {#fragment-editor}
 
-您從範例應用程式的內容片段編輯器中開始。
+您會從此範例應用程式的內容片段編輯器開始。
 
 ![內容片段編輯器](assets/customize-app/content-fragment-editor.png)
 
-如果您想自行導覽至應用程式內指引以外的內容片段編輯器，請使用頁面左上角的Adobe圖示找到。 這會開啟AEM的全域導覽。 從這裡，您選擇 **導覽** 標籤，然後 **內容片段**.
+如果您希望在應用程式內用指南之外自行導覽到內容片段編輯器，您可以使用頁面左上方的 Adobe 圖示找到。 如此將可開啟 AEM 的全域導覽模式。 從這裡，您需選擇「**導覽**」標籤，然後選擇「**內容片段**」。
 
-![在內容片段主控台中導覽至應用程式](assets/customize-app/navigate-to-app.png)
+![在內容片段控制台中導覽至應用程式](assets/customize-app/navigate-to-app.png)
 
-這會開啟內容片段主控台。 從那裡，您可以使用左側面板的內容樹狀結構，導覽至應用程式內容的位置。 在此案例中， **內容片段** -> **範例WKND應用程式** -> **英文** -> **內容片段** -> **頁面**.
+如此將可開啟內容片段控制台。 從那裡，您可以使用左側面板中的內容樹導覽至應用程式內容的位置。 此時，前往「**內容片段** -> **範例 WKND 應用程式** -> **英文** -> **內容片段** -> **頁面**」下。
 
-點選或按一下 **WKND首頁** 顯示在內容樹狀結構右側的主控台中的頁面片段，以啟動應用程式內容的編輯器。
+在內容樹右側控制台中，點選或按一下顯示的「**WKND 首頁**」頁面片段，即可啟動應用程式內容的編輯器。
 
 >[!TIP]
 >
->如果您想進一步了解AEM中的導覽，請參閱 [「其他資源」部分](#additional-resources) ，以取得AEM基本處理的詳細資訊。
+>如果您想深入了解有關 AEM 導覽的資訊，請參閱本文件的「[其他資源部分](#additional-resources)」，了解有關 AEM 基本處理的更多資訊。
 
 ## 預覽應用程式 {#preview}
 
-開始修改應用程式之前，請先透過預覽其目前狀態來熟悉應用程式。 點選或按一下 **預覽** 按鈕。
+在開始修訂應用程式以前，請先透過預覽目前狀態來熟悉內容。 在編輯器畫面的右上方，點選或按一下「**預覽**」按鈕。
 
 示範應用程式會在新標籤中開啟。
 
 ![示範應用程式預覽](assets/customize-app/preview-demo-app.png)
 
-這款應用本身是一款簡單的電子商務應用，適用於虛構的WKND戶外生活風格品牌，在React中實現。 按一下以導覽範例內容。
+該應用程式本身是一個簡單的電子商務應用程式，適用於在 React 實施的虛構 WKND 戶外生活方式品牌。 按一下不同內容，以導覽範例內容。
 
-返回內容片段編輯器的索引標籤以繼續。
+返回內容片段編輯器的標籤，並且繼續。
 
-## 編輯應用程式中的文字 {#edit-app}
+## 在應用程式中編輯文字 {#edit-app}
 
-如前所述，應用程式本身由內容片段組成。 這些片段在結構中連結在一起，以建立應用程式。
+如前所述，應用程式本身是由內容片段組成。 這些片段在結構中會連結在一起，並建立為應用程式。
 
-內容片段編輯器會將應用程式的基本版面顯示為頁面。 此頁面是內容片段，其本身是其他片段的集合。 此 **面板** 代表應用程式的不同頁面，每個頁面都是其專屬的內容片段。 您可以修改這些片段，以變更應用程式的內容。
+內容片段編輯器會將應用程式的基本版面顯示為頁面。 此頁面是一個內容片段，本身就是其他片段的集合。 **面版**&#x200B;代表應用程式的不同頁面，每個頁面都是自己的內容片段。 透過修訂這些片段，您可以變更應用程式的內容。
 
-1. 點選或按一下 **美恩峽谷腳踏車** 在 **面板** 區段。
+1. 點選或按一下「**峽谷中的越野騎士**」，在「**面版**」區段中。
 
-   ![在峽谷碎片中點擊Mtn腳踏車](assets/customize-app/mtn-biker-in-canyon.png)
+   ![點選「峽谷中的越野騎士」片段](assets/customize-app/mtn-biker-in-canyon.png)
 
-1. 編輯器會開啟山地摩托車手的標題面板。 每個面板都由圖層組成，代表應用程式頁面內的不同內容。
+1. 編輯器會開啟越野車的標題面板。 每個面板是由不同內容層組成，代表應用程式頁面中的不同內容。
 
    ![面板](assets/customize-app/panels.png)
 
-1. 選取文字層 **峽谷文本層中的Mtn腳踏車**. 這會開啟編輯器中圖層的詳細資訊。 圖層由多個內容片段組成。
+1. 選取文字層「**峽谷中的越野騎士文字層**」。 這將在編輯器中開啟內容層的詳細資訊。 該內容層是由多個內容片段組成。
 
-   ![在峽谷標題中選擇Mtn摩托車](assets/customize-app/mtn-biker-in-canyon-text-layer.png)
+   ![選取「峽谷中的越野騎士」標題](assets/customize-app/mtn-biker-in-canyon-text-layer.png)
 
-1. 選取 **峽谷標題中的Mtn摩托車手** 文字項目。 這會開啟內容片段編輯器，顯示此片段的內容並允許您修改它。
+1. 選取「**峽谷中的越野騎士標題**」文字項目。 這將開啟「內容片段」編輯器，顯示該片段內容並允許您修改內容。
 
-   ![在「峽谷標題」(Canyon Title)文本項中選擇Mtn騎行者](assets/customize-app/mtn-biker-in-canyon-title.png)
+   ![選取「峽谷中的越野騎士標題」文字項目](assets/customize-app/mtn-biker-in-canyon-title.png)
 
-1. 將文字從 `Your next great adventure is calling` to `Choose your own adventure`. 編輯器會自動儲存變更。
+1. 將文字從 `Your next great adventure is calling` 變更為 `Choose your own adventure`。 此變更會由編輯器自動儲存。
 
-1. 按一下預覽以查看變更。 示範應用程式會在新標籤中開啟。
+1. 按一下 「預覽」，可查看您的變更。 示範應用程式會在新標籤中開啟。
 
    ![示範應用程式預覽](assets/customize-app/preview-demo-app-text.png)
 
-返回內容片段編輯器的索引標籤以繼續模組。
+返回內容片段編輯器的標籤，並且繼續進行此模式。
 
-## 變更應用程式的主影像 {#change-image}
+## 變更應用程式的主要影像 {#change-image}
 
-現在您已修改應用程式中的文字，請嘗試變更應用程式的主影像。 首先，您需要找到該內容。
+現在您已經修改了應用程式中的一些文字，請嘗試變更應用程式的主要影像。 首先，您需要找到該內容。
 
-編輯器左上角的階層連結會顯示您在內容階層中的位置。
+編輯器左上方的階層連結顯示您在內容層次結構中的位置。
 
-1. 點選或按一下 **美恩峽谷腳踏車** 以返回該頁面。
+1. 在階層連結中，點選或按一下「**峽谷中的越野騎士**」，可返回該頁面。
 
    ![階層連結](assets/customize-app/breadcrumbs.png)
 
-1. 使用應用程式的各種圖層返回面板。 圖層不僅表示文本內容。 它們代表您應用程式中的所有內容。 因此，您也可以使用內容片段編輯器交換影像。
+1. 返回該面板及應用程式的不同內容層。 這些內容層不僅僅代表文字內容，還代表您應用程式中的所有內容。因此，您也可以使用內容片段編輯器來變換影像。
 
    ![面板](assets/customize-app/panels.png)
 
-1. 選取 **Mtn騎腳踏車 — 腳踏車** 影像層。 這會開啟內容片段編輯器，顯示此片段的內容並允許您修改它。
+1. 選取「**騎越野車 - 騎士**」影像層。 這將開啟「內容片段」編輯器，顯示該片段內容並允許您修改內容。
 
    ![編輯影像片段](assets/customize-app/mtn-biking-biker.png)
 
-1. 點選或按一下 **X** 移除摩托車手影像。 影像會消失，而編輯器會顯示錯誤，因為影像是此內容片段模型的必要資料。
+1. 點選或按一下 **X** 以刪除騎士的影像。 影像會消失且編輯器會顯示錯誤，因為影像是此內容片段模式所需的資料。
 
-   ![從片段中移除的影像](assets/customize-app/mtn-biking-biker-no-image.png)
+   ![從片段移除的影像](assets/customize-app/mtn-biking-biker-no-image.png)
 
-1. 點選或按一下 **新增資產** 並在 **sample-wknd-app** > **en** > **影像檔案**. 使用 **選取資產** 對話框，導航內容層次結構。
+1. 點選或按一下「**新增資產**」 ，並在「**範例-wknd-應用程式** > **英文** > **影像-檔案**」中找到黃色騎士的影像。 使用「**選取資產**」對話框左側的樹狀視圖，即可導覽內容層次結構。
 
-   ![選取資產對話方塊](assets/customize-app/select-assets.png)
+   ![選取資產對話框](assets/customize-app/select-assets.png)
 
-1. 篩選文字 `yellow`. 使用 **搜尋所有資產** 欄位 **選取資產** 窗口，搜索影像。 輸入搜索文本，然後按Enter鍵或返回搜索。
+1. 篩選文字 `yellow`。 使用「**搜尋全部資產**」欄位 (在「**選取資產**」視窗上方) 並搜尋該影像。 輸入搜尋文字，然後按一下輸入鍵或返回進行搜尋。
 
    ![搜尋資產](assets/customize-app/search-assets.png)
 
-1. 點選或按一下以選取 `biker-yellow.png` 影像，然後點選或按一下 **選擇**.
+1. 點選或按一下以選取 `biker-yellow.png` 影像，然後點選或按一下「**選取**」。
 
    ![選取資產](assets/customize-app/select-asset.png)
 
-1. 腳踏車的影像已被選定影像替換。 編輯器會自動儲存變更。
+1. 騎士影像已更換為所選影像。 編輯器會自動儲存這些變更。
 
-   ![編輯的腳踏車影像片段](assets/customize-app/mtn-biking-biker-edited.png)
+   ![騎士影像的已編輯片段](assets/customize-app/mtn-biking-biker-edited.png)
 
-## 建立可購買的時刻 {#create-moment}
+## 建立一個「可購物機會」 {#create-moment}
 
-現在你更新了摩托車手的影像，你可以為摩托車手的黃色短褲添加一個可購買的時刻。
+現在您已經更新騎士影像，您可以為騎士的黃色短褲加入一個「可購物機會」。
 
-1. 首先，返回頁面片段的內容片段編輯器。 編輯器左上角的階層連結會顯示您在內容階層中的位置。 點選或按一下 **WKND首頁** 以返回該頁面。
+1. 首先返回頁面片段的內容片段編輯器。 編輯器左上方的階層連結顯示您在內容層次結構中的位置。 在階層連結中，點選或按一下「**WKND 首頁**」，可返回該頁面。
 
-   ![導覽回版面畫面](assets/customize-app/breadcrumbs-2.png)
+   ![導覽回到版面螢幕](assets/customize-app/breadcrumbs-2.png)
 
-1. 選取 **WKND黃色的Mtn摩托車手** 中。
+1. 選取「**在 WKND 黃色的越野騎士**」面板。
 
-   ![建立可購買的時刻](assets/customize-app/mtn-biker-on-wknd-yellow.png)
+   ![建立一個「可購物機會」](assets/customize-app/mtn-biker-on-wknd-yellow.png)
 
-1. 你現在可以看到構成摩托車手影像的圖層。 選取 **Mtn騎腳踏車 — 可購買** 圖層。
+1. 您現在可以看到構成騎士影像的圖層。 透過選取「**越野騎士 - 可選購**」圖層，為騎車人的黃色短褲加入一個「可購物機會」。
 
-   ![選擇可購買的矩層](assets/customize-app/mtn-biking-shoppable.png)
+   ![選取「可購物機會」圖層](assets/customize-app/mtn-biking-shoppable.png)
 
-1. 若要建立可購買的時刻，您必須建立代表該時刻的新內容片段。 點選或按一下 **+建立新片段** 為腳踏車的短褲增加可購買的時刻。
+1. 為了建立一個可購物機會，您必須建立一個新的內容片段來代表該時刻。 單選或按一下「**+ 建立新片段**」按鈕，為騎士短褲加入可購物機會。
 
-   ![添加可購買的時刻](assets/customize-app/create-new-fragment.png)
+   ![新增一個「可購物機會」](assets/customize-app/create-new-fragment.png)
 
-1. 因為內容片段代表結構化無頭資料，每當您建立內容片段時，您必須先選擇要為其建立的模型。 選取 **可購買矩形項** 從 **內容片段模型** 下拉式清單。
+1. 因為內容片段代表結構化的 Headless 資料，所以無論何時建立內容片段，您都必須首先選擇一個可作為依據的模式。 選取「**可購機會商品**」模式 (從「**內容片段模式**」下拉式清單)。
 
-   ![選擇內容片段模型](assets/customize-app/new-content-fragment.png)
+   ![選擇內容片段模式](assets/customize-app/new-content-fragment.png)
 
-1. 為將代表這個新可購買瞬間的內容片段命名。 例如，輸入 `Shorts` 進入 **名稱** 欄位。
+1. 為這個全新可購物機會的內容片段取一個代表名稱。 例如，在欄位中輸入 `Shorts` (在「**名稱**」欄位中)。
 
-   ![為可購買的時刻命名](assets/customize-app/new-content-fragment.png)
+   ![為可購物機會命名](assets/customize-app/new-content-fragment.png)
 
-1. 點選或按一下 **建立和開啟**.
+1. 點選或按一下「**建立並開啟**」。
 
-1. 會針對您的新內容片段開啟編輯器。
-   * 在中為可購買的時刻命名 **文字** 欄位，例如 `Yellow shorts`.
-   * 設定X和Y，以覆蓋此可購物瞬間的位置。
+1. 編輯器會為您的新內容片段開啟。
+   * 在「**文字**」欄位內為可購物機會命名，例如命名為 `Yellow shorts`。
+   * 設定一個 X 和 Y，為可購物機會設定覆蓋的位置。
       * **X**: `-18`
       * **Y**: `-28`
-   * 編輯器會自動儲存對片段的變更
+   * 編輯器會自動儲存片段的變更
 
-   ![編輯可購買的時刻](assets/customize-app/edit-shoppable-moment.png)
+   ![編輯可購物機會](assets/customize-app/edit-shoppable-moment.png)
 
-1. 點選或按一下 **預覽** 測試此定位並視需要進行調整。
+1. 點選或按一下「**預覽**」，測試此定位並根據需要進行調整。
 
-   ![預覽您的新可購買時刻](assets/customize-app/preview-demo-app-shoppable.png)
+   ![預覽您新的可購物機會](assets/customize-app/preview-demo-app-shoppable.png)
 
-## 您已學會自訂範例React應用程式！ {#conclusion}
+## 您已經了解如何自訂範例 React 應用程式！ {#conclusion}
 
-在本模組中，您已學會如何自訂範例React應用程式。 首先，您學會了如何編輯現有文字。 接著，影像會與該影像的另一個例項交換。 最後，您看到了如何建立和定位可購買的力矩項。
+在本模式中，您已了解如何自訂範例 React 應用程式。 首先，您了解如何編輯現有文字。 然後，將影像變換為該圖像的另一個執行個體。 最後，您已看到如何建立可購物機會商品並進行定位。
 
-請務必查看 [「其他資源」部分](#additional-resources) 以取得有關使用AEM及其內容片段的其他資源。
+請務必查看「[其他資源部分](#additional-resources)」，了解使用 AEM 及其內容片段的其他資源。
 
-如果您想要了解如何建立內容片段和無標題內容以供自訂應用程式使用，您可以先檢閱模組 [建立應用程式的內容結構。](content-structure.md)
+如果您想了解如何為自訂應用程式建立可用的內容片段和 Headless 內容，您可以先開始查看模組[「為您的應用程式建立內容結構」。](content-structure.md)
 
-您可以按一下，返回試用主螢幕 **解決方案** 按鈕，然後選擇 **Experience Manager**.
+您可以在導覽列右上方按一下「**解決方案**」按鈕，並選取 **Experience Manager**，即可返回您的試用版主畫面。
 
 ![導覽首頁](assets/customize-app/home.png)
 
 ## 其他資源 {#additional-resources}
 
-如需內容片段和AEM的詳細資訊，請考慮檢閱此額外檔案。
+有關內容片段和 AEM 的更多資訊，請考慮查看此附加文件。
 
-* [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 內容片段模型的完整檔案
-* [內容片段](/help/assets/content-fragments/content-fragments.md)  — 內容片段的概觀和內容片段完整檔案的連結
-* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — 如何為新使用者導覽和使用AEM的檔案
+* [內容片段模式](/help/assets/content-fragments/content-fragments-models.md) - 關於內容片段模式的完整文件
+* [內容片段](/help/assets/content-fragments/content-fragments.md) - 內容片段概觀和內容片段完整文件的連結
+* [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 有關新用戶如何導覽和使用 AEM 的文件
