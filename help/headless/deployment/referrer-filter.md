@@ -3,7 +3,7 @@ title: 使用AEM無標題的反向連結篩選設定
 description: Adobe Experience Manager的「反向連結篩選器」可啟用來自協力廠商主機的存取。 需要反向連結篩選器的OSGi設定，才能為無頭式應用程式啟用GraphQL端點的存取權。
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: d8cc024fa5128e4b27098d1bff92588487fe101a
+source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%

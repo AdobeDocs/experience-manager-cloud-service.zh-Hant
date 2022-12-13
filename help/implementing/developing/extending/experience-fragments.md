@@ -2,7 +2,7 @@
 title: 體驗片段概觀
 description: 擴充Adobe Experience Manager as a Cloud Service體驗片段。
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 912ecb02f0f38fc2766a81445c448f869964f94a
+source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 0%

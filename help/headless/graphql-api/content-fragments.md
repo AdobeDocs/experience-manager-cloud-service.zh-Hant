@@ -3,9 +3,9 @@ title: AEM GraphQL API以搭配內容片段使用
 description: 了解如何以AEM GraphQL APIas a Cloud Service使用Adobe Experience Manager(AEM)中的內容片段來傳送無頭內容。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9ad36e1b81d41a49cd318bbbb6ff8f4aaf6efd4a
+source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
 workflow-type: tm+mt
-source-wordcount: '4179'
+source-wordcount: '4174'
 ht-degree: 1%
 
 ---
@@ -122,11 +122,9 @@ AEM提供將查詢（兩種類型）轉換為 [可快取的持續查詢](/help/h
 >
 >若要允許直接和/或POSTDispatcher中的查詢，您可以要求系統管理員：
 >
->* 建立Cloud Manager環境變數，稱為 `ENABLE_GRAPHQL_ENDPOINT`
+>* 建立 [Cloud Manager環境變數](/help/implementing/cloud-manager/environment-variables.md) 呼叫 `ENABLE_GRAPHQL_ENDPOINT`
 >* 值 `true`
 
-
-<!-- maybe add a link to the documentation that explains how to create that environment variable -->
 
 >[!NOTE]
 >
@@ -501,8 +499,8 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 | 選項 | 類型 | 說明 |
 |--- |--- |--- |
-| _ignoreCase | 字串 | 忽略字串的大小寫，例如 `time` 符合 `TIME`, `time`, `tImE`, ... |
-| 敏感性 | 浮點數 | 允許將浮點值的一定餘額視為相同(以解決浮點值的內部表示所導致的技術限制；應避免，因為此選項可能對效能造成負面影響 |
+| `_ignoreCase` | `String` | 忽略字串的大小寫，例如 `time` 符合 `TIME`, `time`, `tImE`, ... |
+| `_sensitiveness` | `Float` | 允許 `float` 值應視為相同(以解決由於內部代表 `float` 值；應避免，因為此選項可能對效能造成負面影響 |
 
 運算式可在邏輯運算子的協助下結合至集合(`_logOp`):
 
@@ -513,7 +511,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 篩選器定義(以 `filter` 引數)包含：
 
-* 每個欄位的子定義(可透過其名稱存取欄位，例如有 `lastName` 欄位 `lastName` 欄位類型)
+* 每個欄位的子定義(可透過其名稱存取欄位，例如有 `lastName` 欄位 `lastName` 欄位（欄位）類型)
 * 每個子定義都包含 `_expressions` 陣列，提供運算式集，和 `_logOp` 定義邏輯運算子的欄位，運算式應與
 * 每個運算式都由值(`value` 欄位)和運算子(`_operator` 欄位)的內容應與
 
@@ -652,15 +650,15 @@ query {
 }
 ```
 
-<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query level" with a more neutral term. -->
 
-<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query result set" with a more neutral term. -->
 
 >[!NOTE]
 >
->* 分頁需要穩定的排序順序才能在多個查詢中正確工作，請求同一結果集的不同頁。 預設情況下，它使用結果集中每個項的儲存庫路徑，以確保順序始終相同。 如果使用了不同的排序順序，並且無法在jcr查詢級別執行排序，則會產生負面效能影響，因為必須先將整個結果集載入到記憶體中，才能確定頁。
+>* 分頁需要穩定的排序順序才能在多個查詢中正確工作，請求同一結果集的不同頁。 預設情況下，它使用結果集中每個項的儲存庫路徑，以確保順序始終相同。 如果使用了不同的排序順序，並且無法在JCR查詢級別執行排序，則會產生負面效能影響，因為必須先將整個結果集載入到記憶體中，才能確定頁。
 >
->* 偏移值越高，從完整jcr查詢結果集中跳過項目所需的時間就越長。 大型結果集的替代解決方案是搭配使用已編頁查詢 `first` 和 `after` 方法。
+>* 偏移值越高，從完整JCR查詢結果集中跳過項目所需的時間就越長。 大型結果集的替代解決方案是搭配使用已編頁查詢 `first` 和 `after` 方法。
 
 
 ### 編頁查詢 — 首頁和後頁 {#paginated-first-after}

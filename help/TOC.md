@@ -8,10 +8,10 @@ user-guide-description: 了解Experience Manageras a Cloud Service如何運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 76eb13cc1efeb8617b48b7e6134bdf1c7d324e27
+source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
 workflow-type: tm+mt
 source-wordcount: '3820'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -158,12 +158,12 @@ ht-degree: 98%
       + [Cloud Manager 簡介](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)
       + [通知使用者群組](/help/journey-onboarding/user-groups.md)
-+ AEMaCS試用版 {#trials}
-   + 無頭式試驗 {#headless}
-      + [自訂範例React應用程式中的內容](/help/trials/headless/customize-app.md)
-      + [建立應用程式的內容結構](/help/trials/headless/content-structure.md)
-      + [建立無頭內容](/help/trials/headless/create-content.md)
-      + [透過GraphQL API擷取內容](/help/trials/headless/extract-content.md)
++ AEMaaCS 試用版{#trials}
+   + Headless 試用版 {#headless}
+      + [在範例 React 應用程式中自訂內容](/help/trials/headless/customize-app.md)
+      + [為您的應用程式建立內容結構](/help/trials/headless/content-structure.md)
+      + [建立 Headless 內容](/help/trials/headless/create-content.md)
+      + [通過 GraphQL API 擷取內容](/help/trials/headless/extract-content.md)
 + AEM as a Cloud Service 移轉歷程 {#migration-journey}
    + [移動 AEM as a Cloud Service 快速入門](/help/journey-migration/getting-started.md)
    + [整備階段](/help/journey-migration/readiness.md)

@@ -4,7 +4,7 @@ description: 將數位資產新增至 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bc46064093c22d8902a673e76fdb53c626a5cbb0
+source-git-commit: a01a9e34fed9182c6c1e7325b2035c63acf875dd
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 1%
@@ -394,7 +394,7 @@ Experience Manager顯示作業歷史記錄。 在「批量導入作業歷史記�
 >[!MORELIKETHIS]
 >
 >* [[!DNL Adobe Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [關於 [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [關於 [!DNL Adobe Asset Link]](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 文件](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [資產上傳技術參考](developer-reference-material-apis.md#asset-upload)
 

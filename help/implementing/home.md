@@ -3,7 +3,7 @@ title: 實作 Adobe Experience Manager as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service 實作自助資源與文件連結
 landing-page-description: 了解如何自訂您的 Experience Manager as a Cloud Service 部署。
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
-source-git-commit: 76eb13cc1efeb8617b48b7e6134bdf1c7d324e27
+source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 92%
