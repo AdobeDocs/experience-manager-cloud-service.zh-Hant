@@ -3,9 +3,9 @@ title: 了解透過 AEM 使用 GraphQL - 範例內容和查詢
 description: 了解如何透過探索範例內容和查詢，以無端方式使用GraphQL與AEM。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 31bd142b6748f2367f136975ead583982aab1b6e
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1540'
 ht-degree: 7%
 
 ---
@@ -1116,12 +1116,6 @@ query {
 >
 >由於結果可能很廣泛，因此這些結果不會在此處重現。
 
->[!NOTE]
->
->各種查詢會參考變數 `variation1`. 這不在標準WKND包中。 必須建立它以進行測試。
->
->若 `variation1` 不存在，則 `master`變數將傳回為預設值。
-
 ### 具有指定屬性之特定模型的所有內容片段的範例查詢 {#sample-wknd-all-model-properties}
 
 此示例查詢將詢問：
@@ -1471,27 +1465,19 @@ query {
 此查詢將詢問：
 
 * 適用於單一內容片段類型 `article` 特定路徑
-   * 其中，與變異相關的資料： `variation1`
+   * 其中，與變異相關的資料： `another`
 
 **範例查詢**
 
 ```graphql
 {
-  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo", variation: "another") {
     item {
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
@@ -1501,29 +1487,23 @@ query {
 
 此查詢將詢問：
 
-* 適用於類型的內容片段 `article` 具有特定變異： `variation1`
+* 適用於類型的內容片段 `article` 具有特定變異： `another`
+
+>[!NOTE]
+>
+>這將示範針對沒有 [變異](/help/headless/graphql-api/content-fragments.md#variations) 指定名稱的。
 
 **範例查詢**
 
 ```graphql
 {
-  articleList(variation: "variation1") {
+  authorList(variation: "another") {
     items {
-      _path
-      _variation
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
