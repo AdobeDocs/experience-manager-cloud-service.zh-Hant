@@ -3,7 +3,7 @@ title: 了解透過 AEM 使用 GraphQL - 範例內容和查詢
 description: 了解如何透過探索範例內容和查詢，以無端方式使用GraphQL與AEM。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 31bd142b6748f2367f136975ead583982aab1b6e
+source-git-commit: df1bccc632b3287c73a926bc5f9c6b63d51d8de6
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 7%
@@ -1464,7 +1464,7 @@ query {
 
 此查詢將詢問：
 
-* 適用於單一內容片段類型 `article` 特定路徑
+* 適用於單一內容片段類型 `author` 特定路徑
    * 其中，與變異相關的資料： `another`
 
 **範例查詢**
@@ -1487,7 +1487,7 @@ query {
 
 此查詢將詢問：
 
-* 適用於類型的內容片段 `article` 具有特定變異： `another`
+* 適用於類型的內容片段 `author` 具有特定變異： `another`
 
 >[!NOTE]
 >
