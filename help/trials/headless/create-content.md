@@ -4,16 +4,21 @@ description: 使用您先前建立的內容片段模式來建立可用來編寫�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 100%
+source-wordcount: '814'
+ht-degree: 96%
 
 ---
 
 # 建立 Headless 內容 {#create-content}
 
 依照產品提供的學習模式，了解如何使用[您先前建立的內容片段模式](content-structure.md)來建立可用來編寫頁面的內容，或作為 Headless 內容的依據。 本文件可用作互動式導覽的補充資料，內容說明相同的步驟並在需要時連至其他資源。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="建立新內容"
+>abstract="您將學習如何根據您在模組1中建立的模型建立可用於頁面編寫的內容，或作為無頭內容的基礎。"
 
 ## 內容片段 {#introduction}
 

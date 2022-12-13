@@ -4,9 +4,9 @@ description: 了解如何使用內容片段主控台管理您的AEM內容片段�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1915'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 2%
 >可使用內容片段：
 >
 >* 編寫頁面時；請參閱 [使用內容片段進行頁面編寫](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
->* for [使用內容片段搭配GraphQL的無周邊內容傳送](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
+>* for [透過GraphQL使用內容片段進行無頭式內容傳送](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
 
 
 >[!NOTE]
@@ -54,11 +54,6 @@ ht-degree: 2%
 * [在內容片段主控台中搜尋和篩選](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## 建立內容片段 {#creating-content-fragments}
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="建立新內容"
->abstract="您將學習如何根據您在模組1中建立的模型建立可用於頁面編寫的內容，或作為無頭內容的基礎。"
 
 ### 建立內容模型 {#creating-a-content-model}
 

@@ -4,10 +4,10 @@ description: 了解如何將內容片段和 GraphQL API 用作 Headless 內容�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 100%
+source-wordcount: '1216'
+ht-degree: 97%
 
 ---
 
@@ -22,6 +22,11 @@ GraphQL 提供查詢式的 API，允許外部客戶端應用程式使用單一 A
 >[!TIP]
 >
 >如果您想了解有關 GraphQL API 的更多詳細資訊，請參閱本模組最後的「[其他資源部分](#additional-resources)」，了解 GraphQL API 指南。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="使用GraphQL API擷取內容"
+>abstract="在本模組中，您將了解如何使用內容片段和GraphQL API作為無頭式內容管理系統。"
 
 ## GraphQL Explorer {#graphql-explorer}
 

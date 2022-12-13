@@ -4,9 +4,9 @@ description: 了解Adobe Experience Manager(AEM)as a Cloud Service中的內容�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2070'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 3%
 * 使用您的內容片段：
 
    * [頁面編寫](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-   * [與GraphQL一起，為您的應用程式提供無周邊部署的](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
+   * [與GraphQL搭配，以無頭式傳遞至您的應用程式](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
 若要協助您進行此操作，您可以預覽 [結構樹](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md) 和 [JSON輸出](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
@@ -88,11 +88,6 @@ ht-degree: 3%
 >體驗片段可以包含內容片段形式的內容，但不能以相反的方式。
 >
 >如需詳細資訊，另請參閱 [了解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview"
->title="建立應用程式的內容結構"
->abstract="您會依照我們一系列互動式指南操作時，將學習建立結構（也稱為內容片段模型），此結構可作為所有無頭式內容的基礎。"
 
 ## 內容片段與內容服務 {#content-fragments-and-content-services}
 

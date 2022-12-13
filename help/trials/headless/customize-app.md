@@ -4,10 +4,10 @@ description: 使用範例 React 應用程式，了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 100%
+source-wordcount: '1400'
+ht-degree: 97%
 
 ---
 
@@ -16,6 +16,11 @@ ht-degree: 100%
 Headless 內容的 AEM 試用版有一個預先載入的簡單 React 應用程式，可展示 Headless 內容。 在本模式中，您將了解如何預覽該應用程式，以及透過變換影像並為其建立可購物機會來修改該內容。
 
 應用程式本身是根據內容片段的結構來建立。 使用 AEM 中的內容片段編輯器，您可以修改您的應用程式內容。 為了幫助您了解如何完成這一點，AEM 試用版這項模式將以快速互動式導覽帶您完成整個過程。 本文件可用作互動式導覽的補充資料，內容說明相同的步驟並在需要時連至其他資源。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app"
+>title="自訂範例React應用程式中的內容"
+>abstract="我們已設定現代化的React應用程式，您可借此了解如何使用無頭功能集來自訂內容。"
 
 ## 內容片段編輯器 {#fragment-editor}
 

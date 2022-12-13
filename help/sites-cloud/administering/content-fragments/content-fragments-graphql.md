@@ -1,21 +1,21 @@
 ---
-title: 使用內容片段搭配GraphQL的無周邊內容傳送
-description: 了解使用內容片段搭配GraphQL實現AEM無周邊CMS，以提供無周邊內容的基本概念。
+title: 透過GraphQL使用內容片段進行無頭式內容傳送
+description: 了解透過GraphQL實現AEM無頭式CMS的基本概念，將內容片段用於無頭式內容傳送。
 feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: bdbd78f0fdb14113d0eddccf4faba499849d48fe
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 1%
+source-wordcount: '731'
+ht-degree: 2%
 
 ---
 
-# 使用內容片段搭配GraphQL的無周邊內容傳送 {#headless-content-delivery-using-content-fragments-with-graphQL}
+# 透過GraphQL使用內容片段進行無頭式內容傳送 {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-有了內容片段和GraphQL API，您可以將Adobe Experience Manager(AEM)as a Cloud Service用作無周邊內容管理系統(CMS)。
+透過內容片段和GraphQL API，您可以使用Adobe Experience Manager(AEM)as a Cloud Service作為無頭式內容管理系統(CMS)。
 
-這是使用內容片段與AEM GraphQL API（以標準GraphQL為基礎的自訂實作）來達成，以無周邊方式提供結構化內容供您的應用程式使用。 自訂單一API查詢的功能可讓您擷取並傳送您要/需要呈現的特定內容（作為單一API查詢的回應）。
+這是使用內容片段與AEM GraphQL API(以標準GraphQL為基礎的自訂實作)來無條理地提供結構化內容，以便在您的應用程式中使用而達成。 自訂單一API查詢的功能可讓您擷取並傳送您要/需要呈現的特定內容（作為單一API查詢的回應）。
 
 >[!NOTE]
 >
@@ -28,16 +28,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe Experience Manager(AEM)as a Cloud Service中，GraphQL目前用於兩種（個別）的情況：
+>GraphQL目前用於Adobe Experience Manager(AEM)的兩個（個別）案例as a Cloud Service:
 >
->* [AEM商務會透過GraphQL取用商務平台中的資料](/help/commerce-cloud/integrating/magento.md).
->* [AEM內容片段可與AEM GraphQL API（以標準GraphQL為基礎的自訂實作）搭配使用，提供結構化內容以供您的應用程式使用](/help/headless/graphql-api/content-fragments.md).
+>* [AEM商務會透過GraphQL取用來自商務平台的資料](/help/commerce-cloud/integrating/magento.md).
+>* [AEM內容片段可與AEM GraphQL API(以標準GraphQL為基礎的自訂實作)搭配使用，提供結構化內容以供您的應用程式使用](/help/headless/graphql-api/content-fragments.md).
 
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_graphql"
->title="使用GraphQL API擷取內容"
->abstract="在本模組中，您將學習如何使用內容片段和GraphQL API作為無周邊內容管理系統。"
 
 ## 無頭式CMS {#headless-cms}
 
@@ -51,7 +46,7 @@ ht-degree: 1%
 
 ## GraphQL — 概觀 {#graphql-overview}
 
-GraphQL為：
+GraphQL是：
 
 * &quot;*...API的查詢語言，以及使用您現有資料完成這些查詢的執行階段。*」。
 
@@ -63,11 +58,11 @@ GraphQL為：
 
 針對Adobe Experience as a Cloud Experience，已開發標準GraphQL API的自訂實作。 請參閱 [AEM GraphQL API以搭配內容片段使用](/help/headless/graphql-api/content-fragments.md) 以取得詳細資訊。
 
-AEM GraphQL API實作以 [GraphQL Java庫](https://graphql.org/code/#java).
+AEM GraphQL API實作以 [GraphQL Java程式庫](https://graphql.org/code/#java).
 
-## 與AEM GraphQL API搭配使用的內容片段 {#content-fragments-use-with-aem-graphql-api}
+## 要與AEM GraphQL API搭配使用的內容片段 {#content-fragments-use-with-aem-graphql-api}
 
-[內容片段](#content-fragments) 可作為AEM查詢之基礎的GraphQL，如下所示：
+[內容片段](#content-fragments) 可作為GraphQL查詢的基礎，如下：
 
 * 它們可讓您設計、建立、組織和發佈不受頁面影響的內容。
 * 此 [內容片段模型](#content-fragments-models) 通過定義的資料類型提供所需的結構。
@@ -97,7 +92,7 @@ AEM GraphQL API實作以 [GraphQL Java庫](https://graphql.org/code/#java).
 
 此 **[片段參考](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#fragment-reference-nested-fragments)**:
 
-* 與GraphQL搭配使用時尤其受到關注。
+* 與GraphQL有特別的興趣。
 
 * 是定義內容片段模型時可使用的特定資料類型。
 
@@ -107,14 +102,14 @@ AEM GraphQL API實作以 [GraphQL Java庫](https://graphql.org/code/#java).
 
    * 定義為 **多重摘要**，則主要片段可參考（擷取）多個子片段。
 
-### JSON預覽 {#json-preview}
+### JSON 預覽 {#json-preview}
 
 若要協助設計和開發內容片段模型，您可以預覽 [JSON輸出](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md).
 
-## 學習如何搭配AEM使用GraphQL — 範例內容與查詢 {#learn-graphql-with-aem-sample-content-queries}
+## 了解透過 AEM 使用 GraphQL - 範例內容和查詢 {#learn-graphql-with-aem-sample-content-queries}
 
-請參閱 [學習如何搭配AEM使用GraphQL — 範例內容與查詢](/help/headless/graphql-api/sample-queries.md) 如需使用AEM GraphQL API的簡介。
+請參閱 [學習如何搭配AEM使用GraphQL — 範例內容與查詢](/help/headless/graphql-api/sample-queries.md) AEM GraphQL API的使用簡介。
 
-## 教學課程 — 開始使用AEM無周邊和GraphQL
+## 教學課程 — AEM Headless和GraphQL快速入門
 
-尋找實作教學課程？ 結帳 [開始使用AEM無周邊和GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) 端對端教學課程，說明如何在無周邊CMS情境下，使用AEM GraphQL API建置和公開內容，並供外部應用程式使用。
+尋找實作教學課程？ 結帳 [AEM Headless和GraphQL快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) 端對端教學課程，說明如何在無頭CMS情境中，使用AEM GraphQL API建置和公開內容，並供外部應用程式使用。

@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 的內容片段模式來建立結構，使�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '1149'
+ht-degree: 87%
 
 ---
 
@@ -16,6 +16,21 @@ ht-degree: 100%
 內容片段允許您設計、建立、規劃和發佈每頁自主的內容。使用這些內容片段，您可以準備適用於多個位置和多個管理使用的內容，非常適合 Headless 傳送。內容片段模式是用來定義此內容的結構，並且是您需要建立的第一件事，以便管理您的 Headless 內容。
 
 為了幫助您了解如何完成這一點，AEM 試用版這項模組將以快速互動式導覽帶您完成整個過程，先建立模式然後新增其結構。本文件可用作產品內導覽的補充資料，內容說明相同的步驟並在需要時連至其他資源。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
+>title="啟動模型編輯器"
+>abstract="建立內容片段模型首先在模型管理工作流程中建立模型項目，然後使用內容片段模型編輯器將結構元素新增至模型項目。<br><br>按一下以下，在新索引標籤中啟動功能，並依照本學習檔案建立您的第一個內容片段。"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
+>title="啟動模型編輯器"
+>abstract="建立內容片段模型首先在模型管理工作流程中建立模型項目，然後使用內容片段模型編輯器將結構元素新增至模型項目。\n\n按一下以下內容，在新頁簽中啟動功能，然後按照本學習文檔建立第一個內容片段。"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="建立應用程式的內容結構"
+>abstract="您會依照我們一系列互動式指南操作時，將學習建立結構（也稱為內容片段模型），此結構可作為所有無頭式內容的基礎。"
 
 ## 內容片段模式控制台 {#content-fragment-model-console}
 
