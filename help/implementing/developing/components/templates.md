@@ -2,9 +2,9 @@
 title: 頁面範本
 description: 建立將用作新頁面基礎的頁面時，會使用「頁面範本」
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3300'
 ht-degree: 1%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 1%
    * 這種專業作者被稱為 **範本作者**
    * 範本作者必須是 `template-authors` 群組。
 * 「頁面範本」會保留動態連線至從這些範本建立的任何頁面。 這可確保對範本所做的任何變更都反映在頁面本身中。
-* 頁面範本可讓頁面元件更為通用，讓核心頁面元件可供使用，而無須自訂。
+* 頁面範本可讓頁面元件更為通用，讓核心頁面元件可供使用，而不需自訂。
 
 使用「頁面範本」時，製作頁面的片段會獨立於元件中。 您可以在UI中設定必要的元件組合，因此不需要針對每個頁面變異開發新的頁面元件。
 
-本文檔：
+本文件:
 
 * 提供建立頁面範本的概觀
 * 說明建立可編輯的範本所需的管理員/開發人員工作
@@ -165,7 +165,7 @@ ht-degree: 1%
 * 以程式設計方式或使用CRXDE Lite
 * 使用 [配置瀏覽器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
-## 使用CRXDE Lite {#using-crxde-lite}
+## 使用 CRXDE Lite {#using-crxde-lite}
 
 1. 可以以程式設計方式或使用CRXDE Lite為執行個體建立新資料夾（在/conf下）。
 
@@ -357,7 +357,7 @@ When creating a new editable template, the value is copied from the template typ
 1. 建立範本的方式與任何頁面範本相同 [這裡記載的](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author)，這將作為範本類型的基礎。
 1. 使用CRXDE Lite，從 `templates` 節點 `template-types` 節點 [範本資料夾](#template-folders).
 1. 從 `templates` 節點 [範本資料夾](#template-folders).
-1. 在位於 `template-types` 節點，全部刪除 `cq:template` 和 `cq:templateType` `jcr:content` 屬性。
+1. 在位於 `template-types` 節點，全部刪除 `cq:template` 和 `cq:templateType` 全部屬性 `jcr:content` 節點。
 
 您也可以使用可編輯範本範例來開發自己的範本類型，此範本可在GitHub上取得。
 
