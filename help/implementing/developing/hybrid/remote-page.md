@@ -1,19 +1,19 @@
 ---
-title: RemotePage元件
+title: RemotePage 元件
 description: RemotePage元件是自訂頁面元件，可用於編輯AEM內的遠端React SPA。
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
-source-git-commit: eaa59b6ecfa50c4a6b4e316e5e305e48cb3d5676
+source-git-commit: d213dd0788e66015237d241caf0f3b5737ce725c
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
-# RemotePage元件 {#remote-page-component}
+# RemotePage 元件 {#remote-page-component}
 
 決定 [整合的等級](/help/implementing/developing/headful-headless.md) 您想要在外部SPA和AEM之間，通常很清楚，您需要在AEM中檢視和編輯SPA。 RemotePage元件是專門用於此目的的自定義頁面元件。
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 RemotePage元件從應用程式生成的所有必要資產中提取 `asset-manifest.json` 並在AEM中使用它轉譯SPA。
 
@@ -23,7 +23,7 @@ RemotePage元件從應用程式生成的所有必要資產中提取 `asset-manif
 
 請參閱文章 [在AEM中編輯外部SPA](editing-external-spa.md) 如需AEM中可編輯外部SPA的詳細資訊。
 
-## 需求 {#requirements}
+## 要求 {#requirements}
 
 * 啟用開發中的CORS
 * 在頁面屬性中設定遠端URL
@@ -37,7 +37,7 @@ RemotePage元件從應用程式生成的所有必要資產中提取 `asset-manif
 
 ## 限制 {#limitations}
 
-* RemotePage元件的當前實施僅支援遠程React應用程式。
+* RemotePage元件預期實施會提供類似的資產資訊清單 [找到。](https://github.com/shellscape/webpack-manifest-plugin) 不過，RemotePage元件僅通過測試與React框架（和Next.js通過remote-page-next元件）一起使用，因此不支援從其他框架(如Angular)遠程載入應用程式。
 * 在AEM中執行遠端轉譯時，應用程式根HTML檔案中定義的內部CSS以及根DOM節點上的內嵌CSS將無法使用。
 
 ## 技術詳細資訊 {#technical-details}
