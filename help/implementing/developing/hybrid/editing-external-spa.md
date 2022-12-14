@@ -1,19 +1,19 @@
 ---
-title: 在AEM中編輯外部SPA
+title: 在 AEM 中編輯外部 SPA
 description: 本檔案說明將獨立SPA上傳至AEM執行個體、新增可編輯的內容區段及啟用編寫的建議步驟。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
 workflow-type: tm+mt
-source-wordcount: '2402'
-ht-degree: 0%
+source-wordcount: '2456'
+ht-degree: 1%
 
 ---
 
-# 在AEM中編輯外部SPA {#editing-external-spa-within-aem}
+# 在 AEM 中編輯外部 SPA {#editing-external-spa-within-aem}
 
 決定 [整合的等級](/help/implementing/developing/headful-headless.md) 您想要在外部SPA和AEM之間，通常需要能夠在AEM中編輯和檢視SPA。
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 本檔案說明將獨立SPA上傳至AEM執行個體、新增可編輯的內容區段及啟用編寫的建議步驟。
 
@@ -359,11 +359,15 @@ mvn clean install -PautoInstallSinglePackage
 
    * 將專案部署至AEM，並導覽至新建立的 `test` 頁面。 現在會呈現頁面內容，且AEM元件可編輯。
 
+## 架構限制 {#framework-limitations}
+
+RemotePage元件預期實施會提供類似的資產資訊清單 [找到。](https://github.com/shellscape/webpack-manifest-plugin) 不過，RemotePage元件僅通過測試與React框架（和Next.js通過remote-page-next元件）一起使用，因此不支援從其他框架(如Angular)遠程載入應用程式。
+
 ## 其他資源 {#additional-resources}
 
 下列參考資料有助於在AEM中了解SPA。
 
-* [AEM中的Headful和Headless](/help/implementing/developing/headful-headless.md)
+* [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)
 * [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [WKND SPA專案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
 * [AEM中使用React的SPA快速入門](/help/implementing/developing/hybrid/getting-started-react.md)
