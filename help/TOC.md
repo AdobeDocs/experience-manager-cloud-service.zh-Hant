@@ -8,9 +8,9 @@ user-guide-description: 了解Experience Manageras a Cloud Service如何運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
+source-git-commit: 91d3e2ea02f34963688dd9ee44aed17f55752587
 workflow-type: tm+mt
-source-wordcount: '3820'
+source-wordcount: '3823'
 ht-degree: 99%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 99%
          + [2020.2.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + Cloud Manager 發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-      + 2022年 {#2022}
+      + 2022 {#2022}
          + [2022.11.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-11-0.md)
          + [2022.10.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-10-0.md)
          + [2022.9.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
@@ -80,7 +80,7 @@ ht-degree: 99%
          + [2022.3.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
          + [2022.2.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
          + [2022.1.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
-      + 2021年 {#2021}
+      + 2021 {#2021}
          + [202.12.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-12-0.md)
          + [2021.11.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
          + [2021.10.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
@@ -93,7 +93,7 @@ ht-degree: 99%
          + [2021.3.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
          + [2021.2.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
          + [2021.1.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-      + 2020年 {#2020}
+      + 2020 {#2020}
          + [2020.12.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
          + [2020.11.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
          + [2020.10.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
@@ -107,14 +107,15 @@ ht-degree: 99%
          + [2020.2.0 版發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
    + 移轉工具發行說明 {#migration-tools}
       + [最新發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + 2022年 {#2022}
+      + 2022 {#2022}
+         + [2022.9.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
          + [2022.7.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
          + [2022.5.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
          + [2022.4.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
          + [2022.3.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
          + [2022.2.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
          + [2022.1.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
-      + 2021年 {#2021}
+      + 2021 {#2021}
          + [2021.12.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [2021.11.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [2021.10.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
@@ -700,7 +701,7 @@ ht-degree: 99%
          + [如何整合一切](/help/journey-headless/developer/put-it-all-together.md)
          + [如何使用無周邊應用程式](/help/journey-headless/developer/go-live.md)
          + [選擇性 - 如何使用 AEM 建立單頁應用程式](/help/journey-headless/developer/create-spa.md)
-         + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+         + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
       + Headless 內容架構者歷程 {#architect}
          + [AEM Headless 內容架構者歷程概觀](/help/journey-headless/architect/overview.md)
          + [使用 AEM 建立 Headless 的內容模型 - 簡介](/help/journey-headless/architect/introduction.md)
@@ -808,7 +809,7 @@ ht-degree: 99%
          + 元件和範本 {#components-templates}
             + [元件概觀](/help/implementing/developing/components/overview.md)
             + [範本](/help/implementing/developing/components/templates.md)
-            + [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+            + [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
             + [樣式系統](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
             + [內容服務的 JSON 匯出工具](/help/implementing/developing/components/json-exporter.md)
             + [為元件啟用 JSON 匯出](/help/implementing/developing/components/enabling-json-exporter.md)
