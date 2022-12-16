@@ -1,15 +1,15 @@
 ---
-title: SPA簡介和逐步說明
+title: SPA 簡介和逐步解說
 description: 本文會介紹SPA的概念，並逐步說明如何使用基本的SPA應用程式進行製作，說明它與基礎AEM SPA編輯器的關聯。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
 workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 1%
+source-wordcount: '2076'
+ht-degree: 2%
 
 ---
 
-# SPA簡介和逐步說明 {#spa-introduction}
+# SPA 簡介和逐步解說 {#spa-introduction}
 
 單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能使用SPA架構建立網站，而作者則想在AEM中為使用此架構建立的網站順暢地編輯內容。
 
@@ -23,7 +23,18 @@ SPA編輯器提供全方位的解決方案，可支援AEM中的SPA。 本文逐�
 
 本簡介和逐步說明的目標是向AEM開發人員說明SPA的相關性、其一般運作方式、AEM SPA編輯器如何處理SPA，以及它與標準AEM應用程式有何不同。
 
-逐步說明以標準AEM功能和範例WKND SPA專案應用程式為基礎。 請跟進 [請在此處從GitHub下載並安裝範例WKND SPA專案應用程式。](https://github.com/adobe/aem-guides-wknd-spa)
+## 要求 {#requirements}
+
+逐步說明以標準AEM功能和範例WKND SPA專案應用程式為基礎。 若要遵循此逐步說明，您必須具備下列功能。
+
+* [AEMaaCS最新開發SDK](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   * 它應作為本機開發環境執行。
+   * 您必須擁有系統的管理員權限。
+* [GitHub上提供的WKND SPA專案應用程式範例](https://github.com/adobe/aem-guides-wknd-spa)
+   * 下載 [React應用程式的最新版本](https://github.com/adobe/aem-guides-wknd-spa/releases) 命名類似於 `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
+   * 下載 [應用程式的最新範例影像](https://github.com/adobe/aem-guides-wknd-spa/releases) 命名類似於 `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [使用套件管理器](/help/implementing/developing/tools/package-manager.md) 若要安裝這兩個套件，如同您在AEM中安裝任何其他套件一樣。
+   * 在本逐步說明中，不需要使用Maven來安裝應用程式。
 
 >[!CAUTION]
 >
@@ -31,7 +42,7 @@ SPA編輯器提供全方位的解決方案，可支援AEM中的SPA。 本文逐�
 
 >[!TIP]
 >
->任何AEM專案皆應運用 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，可支援使用React或Angular的SPA專案，並運用SPA SDK。
+>任何AEM專案皆應運用 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，可支援使用React或Angular的SPA專案，並運用SPA SDK。
 
 ### 什麼是SPA? {#what-is-a-spa}
 
@@ -81,7 +92,7 @@ SPA的主要思想是減少對伺服器的呼叫和對伺服器的依賴，以�
 >* [AEM中使用SPA快速入門Angular](getting-started-angular.md)
 >
 >如需深入了解SPA編輯器的設計、架構和技術工作流程，請參閱文章：
->* [SPA編輯器概述](editor-overview.md).
+>* [SPA 編輯器概觀](editor-overview.md).
 
 
 ## 使用SPA編輯內容體驗 {#content-editing-experience-with-spa}
@@ -229,7 +240,7 @@ SPA的主要思想是減少對伺服器的呼叫和對伺服器的依賴，以�
    >
    >SPA編輯器中的此方法不需要插入自訂元素，而僅需依賴其他資料屬性，讓前端開發人員可更輕鬆地完成標籤。
 
-## AEM中的Headful和Headless {#headful-headless}
+## AEM 中的 Headful 和 Headless {#headful-headless}
 
 SPA可透過AEM內靈活的整合層級來啟用，包括在AEM外部開發和維護的SPA。 此外，SPA還可在AEM中運用，同時無故使用AEM將內容傳送至其他端點。
 
