@@ -2,9 +2,9 @@
 title: Formsas a Cloud Service通訊簡介
 description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1442'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 * HTTP API可輕鬆與外部系統整合。 包括獨立的API，以用於隨選（低延遲）和批次作業（高吞吐量作業）。
 
-* 安全存取資料。 通信API僅連接到客戶指定的資料儲存庫並訪問資料，使通信高度安全。
+* 安全存取資料。 通信API僅連接到客戶指定的資料儲存庫並訪問資料，因此通信高度安全。
 
 ![信用卡報表示例](assets/statement.png)
 信用卡對帳單可使用Communications API來建立。 此示例對帳單使用相同的模板，但根據每個客戶的信用卡使用情況，為每個客戶分別提供資料。
@@ -126,15 +126,39 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 您可以使用文檔操作API將PDF文檔轉換為符合PDF/A的文檔，並確定PDF文檔是否符合PDF/A。 PDF/A是一種存檔格式，用於對文檔的內容進行長期保存。 這些字型嵌入到文檔中，並且該檔案被解壓縮。 因此，PDF/A文檔通常比標準PDF文檔大。 此外，PDF/檔案不包含音訊和視訊內容。
 
+## 文檔實用程式
+
+文檔實用程式同步API可幫助您在PDF和XDP檔案格式之間轉換文檔，以及查詢PDF文檔的相關資訊。 例如，您可以確定PDF文檔是包含注釋還是附件。
+
+### 檢索PDF文檔屬性
+
+您可以 [查詢PDF文檔](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) 以取得下列資訊：
+
+* 是PDF文檔：檢查源文檔是否為PDF文檔。
+* 是可填寫的表單：檢查源PDF文檔是否為可填寫的表單。
+* 表單類型：檢索文檔的表單類型。
+* 檢查附件：檢查源PDF文檔是否包含任何附件。
+* 檢查注釋：檢查源PDF文檔是否具有任何審核注釋。
+* 是PDF套件：檢查文檔是否為PDF包。
+* 取得PDF版本：擷取 [PDF文檔的版本](https://en.wikipedia.org/wiki/History_of_PDF).
+* 建議的Acrobat版本：擷取所需的Acrobat版本(Reader)以開啟PDF檔案。
+* 是XFA檔案：檢查源PDF文檔是否為基於XFA的PDF文檔。
+* 是殼PDF:檢查源PDF文檔是否為shellPDF。 殼層PDF僅包含XFA資料流、字型和影像資源，且一個頁面空白或包含警告，指出必須使用Acrobat或Adobe Reader開啟檔案。 殼層PDF與PDF轉換搭配使用，以僅最佳化PDFForm轉換的傳送。
+* 取得XFA版本：擷取 [XFA型PDF檔案的XFA版本](https://en.wikipedia.org/wiki/XFA#XFA_versions).
+
+### 將PDF檔案轉換為XDP檔案
+
+此 [PDF至XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) 將PDF文檔轉換為XDP檔案。 若要成功將PDF檔案轉換為XDP檔案，PDF檔案必須在字典中包含XFA資料流。
+
 ## 通訊API類型
 
 通訊提供HTTP API，以供隨需和批次檔案產生：
 
-* **[同步API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 適用於按需、低延遲和單記錄文檔生成方案。 這些API更適合使用者動作的使用案例。 例如，在使用者填妥表單後產生檔案。
+* **[同步API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 適用於按需、低延遲和單記錄文檔生成方案。 這些API更適合使用者動作的使用案例。 例如，在使用者填妥表單後產生檔案。
 
-* **[批次API（非同步API）](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 適合於計畫、高吞吐量和多文檔生成方案。 這些API會以批次產生檔案。 例如，每月生成電話賬單、信用卡對帳單和福利對帳單。
+* **[批次API（非同步API）](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 適合於計畫、高吞吐量和多文檔生成方案。 這些API會以批次產生檔案。 例如，每月生成電話賬單、信用卡對帳單和福利對帳單。
 
-## 入門
+## 上線
 
 通訊功能是供Formsas a Cloud Service使用者使用的獨立附加模組。 您可以聯絡Adobe銷售團隊或您的Adobe代表以要求存取權。 Adobe 為您的組織啟用存取權限，並向您指定的組織管理員提供所需的特權。 管理員可授予您組織的Formsas a Cloud Service開發人員（使用者）使用API的存取權。
 
