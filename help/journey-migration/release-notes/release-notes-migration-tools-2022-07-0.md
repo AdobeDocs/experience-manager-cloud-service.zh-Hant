@@ -2,8 +2,8 @@
 title: AEM as a Cloud Service2022.7.0版中移轉工具發行說明
 description: AEM as a Cloud Service2022.7.0版中移轉工具發行說明
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 05adf79b66c36e6354fe95fe4d5f654b49980589
+exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
+source-git-commit: cc52dfac1e7495d6a792bc7525720695022db8eb
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 5%
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 此頁面概述AEM 2022.7.0中移轉工具的發行說明。
 
-## Best Practices Analyzer {#bpa-release}
+## 最佳做法分析工具 {#bpa-release}
 
 ### 發行日期 {#release-date-bpa}
 
