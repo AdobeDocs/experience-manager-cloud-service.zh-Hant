@@ -1,38 +1,38 @@
 ---
 title: New Relic One
-description: 了解適用於 AEM as a Cloud Service的 New Relic One 應用程序性能監控 (APM) 服務以及如何存取它。
+description: 了解適用於 AEM as a Cloud Service的 New Relic One 應用程式效能監控 (APM) 服務以及如何存取它。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: abc3be85679724fd4a8ce1ddcbd2ac5cca151953
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1607'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# 新遺跡一號 {#user-access}
+# New Relic One {#user-access}
 
-了解適用於 AEM as a Cloud Service的 New Relic One 應用程序性能監控 (APM) 服務以及如何存取它。
+了解適用於 AEM as a Cloud Service的 New Relic One 應用程式效能監控 (APM) 服務以及如何存取它。
 
 ## 簡介 {#introduction}
 
-Adobe 非常重視應用程序的監控、可用性和性能。AEM as a Cloud Service提供對作為標準產品的一部分的自訂 New Relic One 監控套件的存取，以確保您的團隊最大程度地了解您的 AEM as a Cloud Service 系統和環境性能指標。
+Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Service提供對作為標準產品的一部分的自訂 New Relic One 監控套件的存取，以確保您的團隊最大程度地了解您的 AEM as a Cloud Service 系統和環境性能指標。
 
-本文件介紹瞭如何管理對在 AEM as a Cloud Service環境中啟用的 New Relic One 應用程序性能監控 (APM) 功能的存取，以幫助支援性能並讓您充分利用 AEM as a Cloud Service。
+本文件介紹瞭如何管理對在 AEM as a Cloud Service環境中啟用的 New Relic One 應用程式效能監控 (APM) 功能的存取，以幫助支援性能並讓您充分利用 AEM as a Cloud Service。
 
-建立新的生產程序時，會自動建立與您的 AEM as a Cloud Service Program 關聯的 New Relic One 子帳戶。
+建立新的生產計畫時，會自動建立與您的 AEM as a Cloud Service Program 關聯的 New Relic One 子帳戶。
 
 ## 功能 {#transaction-monitoring}
 
 用於 AEM as a Cloud Service的 New Relic One APM 具有許多功能。
 
-* 直接存取專屬New Relic One帳戶
+* 直接存取專用的 New Relic One 帳戶
 
-* 檢測的 New Relic 一個 APM 代理，顯示帶有行號的準確方法調用，包括外部依賴項和數據庫
+* 檢測的 New Relic One 一個 APM 代理，顯示帶有行號的準確方法調用，包括外部依賴項和數據庫
 
-* 透過結合來自基礎設施級監控和應用程序 (Adobe Experience Manager) 監控的關鍵指標來優化整體性能
+* 透過結合來自基礎設施級監控和應用程式 (Adobe Experience Manager) 監控的關鍵指標來優化整體性能
 
-* 直接在 New Relic Insights 指標中公開 AEM as a Cloud Service JMX Mbean 和執行狀況檢查，從而可以深入檢查應用程序堆棧性能和執行狀況指標。
+* 直接在 New Relic Insights 指標中公開 AEM as a Cloud Service JMX Mbean 和執行狀況檢查，從而可以深入檢查應用程式堆疊效能和執行狀況指標。
 
 ## 管理 New Relic One使用者 {#manage-users}
 
@@ -44,13 +44,13 @@ Adobe 非常重視應用程序的監控、可用性和性能。AEM as a Cloud Se
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 單擊您要為其管理 New Relic One 使用者的程序。
+1. 單擊您要為其管理 New Relic One 使用者的計畫。
 
-1. 在底部&#x200B;**環境**&#x200B;程序概覽頁面上的卡片，單擊省略符號按鈕並選擇&#x200B;**管理使用者**.
+1. 在底部&#x200B;**環境**&#x200B;計畫概覽頁面上的卡片，單擊省略符號按鈕並選擇&#x200B;**管理使用者**.
 
    ![管理使用者](assets/newrelic-manage-users.png)
 
-   * 您還可以存取&#x200B;**管理使用者**&#x200B;透過頂部的省略符號按鈕選擇&#x200B;**環境**&#x200B;程序的畫面。
+   * 您還可以存取&#x200B;**管理使用者**&#x200B;透過頂部的省略符號按鈕選擇&#x200B;**環境**&#x200B;計畫的畫面。
 
 1. 在裡面&#x200B;**管理 New Relic 使用者**&#x200B;對話框中，輸入您要新增的使用者的名字和姓氏，然後單擊&#x200B;**新增**&#x200B;按鈕。對您要新增的所有使用者重複此步驟。
 
@@ -94,13 +94,13 @@ Adobe 非常重視應用程序的監控、可用性和性能。AEM as a Cloud Se
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 存取您要為其管理 New Relic One 使用者的程序。
+1. 存取您要為其管理 New Relic One 使用者的計畫。
 
-1. 在底部&#x200B;**環境**&#x200B;程序概覽頁面上的卡片，單擊省略符號按鈕並選擇&#x200B;**打開 New Relic**。
+1. 在底部&#x200B;**環境**&#x200B;計畫概覽頁面上的卡片，單擊省略符號按鈕並選擇&#x200B;**打開 New Relic**。
 
    ![管理使用者](assets/newrelic-access.png)
 
-   * 您還可以存取 New Relic 透過頂部的省略符號按鈕選擇&#x200B;**環境**&#x200B;程序的畫面。
+   * 您還可以存取 New Relic 透過頂部的省略符號按鈕選擇&#x200B;**環境**&#x200B;計畫的畫面。
 
 1. 在打開的新瀏覽器索引標籤中，登入到 New Relic One。
 
@@ -116,7 +116,7 @@ Adobe 非常重視應用程序的監控、可用性和性能。AEM as a Cloud Se
 
 如果您不驗證您的電子郵件地址，New Relic 將嘗試使用與您的電子郵件地址關聯的最近建立的使用者記錄來登入。為避免在每次登入時驗證您的電子郵件，請單擊&#x200B;**記得我**&#x200B;登入畫面中的複選框。
 
-如需更多幫助，請透過以下方式打開支援票證 [AEM 支援門戶](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
+如需更多幫助，請透過以下方式打開支援票證 [AEM 支援門戶](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)。
 
 ## 偵錯 New Relic One Access {#troubleshooting}
 
@@ -158,15 +158,15 @@ Adobe 非常重視應用程序的監控、可用性和性能。AEM as a Cloud Se
 
 Adobe 透過 New Relic One 的 Java 外掛程式監視 AEM as a Cloud Service 創作、發佈和預覽 (如果可用) 服務。Adobe 支援跨非生產和生產 AEM as a Cloud Service 環境的自訂 New Relic One APM 遙測和監控。
 
-您的 New Relic One 帳戶附加到 Adobe 維護的主帳戶，並有多個應用程序向其中報告：每個 AEM as a Cloud Service環境三個。
+您的 New Relic One 帳戶附加到 Adobe 維護的主帳戶，並有多個應用程式向其中報告：每個 AEM as a Cloud Service環境三個。
 
-* 每個環境一個作者服務應用程序
-* 每個環境一個發布服務應用程序（包括 Golden Publish）
-* 每個環境一個預覽服務應用程序
+* 每個環境一個作者服務應用程式
+* 每個環境一個發布服務應用程式（包括 Golden Publish）
+* 每個環境一個預覽服務應用程式
 
 請注意:
 
-* 每個應用程序使用一個授權密鑰。
+* 每個應用程式使用一個授權密鑰。
 * AEM as a Cloud Service環境僅向一個 New Relic One 帳戶報告。
 * New Relic One 的完整監控指標和事件將保留 7 天。
 
@@ -184,7 +184,7 @@ New Relic One 是 New Relic 的新可觀察性平台，它使 Adobe 支援人員
 
 New Relic One 使使用者能夠搜索他們有權存取的所有帳戶，並在一個視圖中可視化來自所有服務和主機的數據。
 
-雖然 Adobe 支援將使用 New Relic One 和其他內部工具作為您服務的一部分來監控 AEM as a Cloud Service 應用程序，但您的團隊可以繼續將 New Relic 用於本機託管服務和基礎架構。他們將能夠可視化來自 Adobe New Relic One 帳戶和客戶管理的 New Relic 帳戶的數據。
+雖然 Adobe 支援將使用 New Relic One 和其他內部工具作為您服務的一部分來監控 AEM as a Cloud Service 應用程式，但您的團隊可以繼續將 New Relic 用於本機託管服務和基礎架構。他們將能夠可視化來自 Adobe New Relic One 帳戶和客戶管理的 New Relic 帳戶的數據。
 
 >[!NOTE]
 >
