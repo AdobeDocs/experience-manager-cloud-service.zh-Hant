@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1149'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -20,17 +20,17 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
 >title="啟動模型編輯器"
->abstract="建立內容片段模型首先在模型管理工作流程中建立模型項目，然後使用內容片段模型編輯器將結構元素新增至模型項目。<br><br>按一下以下，在新索引標籤中啟動功能，並依照本學習檔案建立您的第一個內容片段。"
+>abstract="建立內容片段模型開始於在模型管理工作流程中建立模型項目，然後使用內容片段模型編輯器在其中新增結構元素。<br><br>按一下底下，在新的索引標籤中啟動該功能，然後依照此學習文件的說明建立您的第一個內容片段。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
 >title="啟動模型編輯器"
->abstract="建立內容片段模型首先在模型管理工作流程中建立模型項目，然後使用內容片段模型編輯器將結構元素新增至模型項目。\n\n按一下以下內容，在新頁簽中啟動功能，然後按照本學習文檔建立第一個內容片段。"
+>abstract="建立內容片段模型開始於在模型管理工作流程中建立模型項目，然後使用內容片段模型編輯器在其中新增結構元素。\n\n按一下底下，在新的索引標籤中啟動該功能，然後依照此學習文件的說明建立您的第一個內容片段。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
->title="建立應用程式的內容結構"
->abstract="您會依照我們一系列互動式指南操作時，將學習建立結構（也稱為內容片段模型），此結構可作為所有無頭式內容的基礎。"
+>title="為您的應用程式建立內容結構"
+>abstract="當您依照我們的互動式指南系列進行時，您將了解如何建立當作您所有 Headless 內容基礎的結構 (也稱為內容片段模型)。"
 
 ## 內容片段模式控制台 {#content-fragment-model-console}
 
