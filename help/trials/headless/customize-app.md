@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1400'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,8 +19,8 @@ Headless 內容的 AEM 試用版有一個預先載入的簡單 React 應用程�
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
->title="自訂範例React應用程式中的內容"
->abstract="我們已設定現代化的React應用程式，您可借此了解如何使用無頭功能集來自訂內容。"
+>title="在範例 React 應用程式中自訂內容"
+>abstract="我們已設定好現代 React 應用程式，您可以用它來了解如何使用 Headless 功能集自訂內容。"
 
 ## 內容片段編輯器 {#fragment-editor}
 
