@@ -3,12 +3,13 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道以及如何使用它們來有效地部署您的計劃碼。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 6c246444f48440c64af0951e75f2071c00e477fa
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 100%
+source-wordcount: '1368'
+ht-degree: 99%
 
 ---
+
 
 # Cloud Manager CI/CD 管道 {#intro-cicd}
 
@@ -120,9 +121,9 @@ Cloud Manager 提供兩種類型的管道：
 >
 >一個使用者&#x200B;**部署管理器**&#x200B;角色可以同時建立和執行多個前端管道。
 >
->但是，每個程序（所有類型）最多有 300 個管道。這些可以是前端計劃碼品質或前端部署管道。
+>但是，每個程序（所有類型）最多有 300 個管道。
 
-前端管道可以是計劃碼品質管道或部署。
+前端管道可以是程式碼品質管道或部署管道。
 
 ### 配置前端管道之前 {#before-start}
 

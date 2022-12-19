@@ -1,21 +1,36 @@
 ---
-title: 使用前端管道開發網站
-description: 前端管道更加獨立，開發過程可以獲得相當的速度。
+title: 使用前端管道開發 Sites
+description: 前端管道更加獨立，開發過程可以獲得相當的速度。 本檔案說明應提供的前端建置程式的一些特定考量。
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 0%
+source-wordcount: '1157'
+ht-degree: 1%
 
 ---
 
-# 使用前端管道開發網站 {#developing-site-with-front-end-pipeline}
+
+# 使用前端管道開發 Sites {#developing-site-with-front-end-pipeline}
 
 [有了前端管道，](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 前端開發人員更具獨立性，開發過程可獲得相當的速度。 本檔案說明此程式的運作方式，以及需注意的一些事項，以便充分發揮此程式的潛力。
 
 >[!TIP]
 >
 >如果您還不熟悉如何使用前端管道及可提供哪些好處，請查看 [快速網站建立歷程](/help/journey-sites/quick-site/overview.md) 例如，如何快速部署新網站並自訂其主題，而完全不受後端開發影響的範例。
+
+## 前端建置合同 {#front-end-build-contract}
+
+類似於 [完整堆疊構建環境，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 前端管道有自己的環境。 只要遵守下列前端建置合約，開發人員就能在此管道中擁有一些彈性。
+
+前端管道需要前端Node.js專案才能使用 `build` 指令碼指令，用於生成將由前端管道部署的生成。 亦即Cloud Manager會使用命令 `npm run build` 生成可部署項目 `dist` 檔案夾。
+
+內容 `dist` 資料夾是從Cloud Manager管道最終部署至AEM as a Cloud Service的項目。
+
+### 節點版本 {#node-versions}
+
+預設情況下，前端管道使用Node 14，但16和16也可用。
+
+您可以使用 `CM_CUSTOM_VAR_NODE_VERSION` 環境變數來設定所需的版本。
 
 ## 單一真理來源 {#single-source-of-truth}
 
