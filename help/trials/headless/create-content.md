@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '814'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="建立新內容"
->abstract="您將學習如何根據您在模組1中建立的模型建立可用於頁面編寫的內容，或作為無頭內容的基礎。"
+>abstract="使用您在單元 1 建立的模型當作基礎，您將了解如何建立可用於編寫頁面或作為 Headless 內容基礎的內容。"
 
 ## 內容片段 {#introduction}
 
