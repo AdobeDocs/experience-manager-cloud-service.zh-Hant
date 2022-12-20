@@ -2,9 +2,9 @@
 title: AEM Formsas a Cloud Service — 通訊
 description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,11 @@ Formsas a Cloud Service — 通訊提供隨選和批次API（非同步API），�
 * 檔案產生API
 * 檔案操作API
 
-### 多租用戶API
+<!-- 
+### Multi-tenant APIs
 
-* 檔案公用程式API
+* Document utility APIs -->
+
 
 ### 驗證單一租用戶API
 
@@ -53,47 +55,52 @@ Formsas a Cloud Service — 通訊提供隨選和批次API（非同步API），�
    >
    >Adobe建議在生產環境中使用代號式驗證。
 
-### 驗證多租用戶API
+<!-- 
 
-#### 驗證標題
+### Authenticate a multi-tenant API
 
-對Cloud Manager API發出的每個傳入HTTP API呼叫都必須包含以下三個標題：
+#### Authentication Headers
+
+Every inbound HTTP API call to the multi-tenant API must contain these three headers:
+
 
 * `x-api-key`
 * `x-gw-ims-org-id`
 * `Authorization`
 
-應在 `x-api-key` 和 `x-gw-ims-org-id` 標題會顯示在「認證詳細資訊」畫面中的 [Adobe Developer Console](https://developer.adobe.com/console). 的值 `x-api-key` header是用戶端ID和 `x-gw-ims-org-id` header是組織ID。
+The values which should be sent in the `x-api-key` and `x-gw-ims-org-id` headers are provided in the Credentials details screen in the [Adobe Developer Console](https://developer.adobe.com/console). The value of the `x-api-key` header is the Client ID and the value for the `x-gw-ims-org-id` header is the Organization ID.
 
-#### 設定Adobe Developer主控台以產生存取權杖
+#### Configure Adobe Developer console to generate an access token
 
-若要設定驗證API，請在Adobe Developer Console中建立專案，並將通訊API新增至Adobe Developer Console上的專案。 整合會產生API金鑰、用戶端密碼、裝載(JWT):
+To set up authentication APIs, create a project in Adobe Developer Console and add Communication APIs to the project on Adobe Developer Console. The integration generates API Key, Client Secret, Payload (JWT):
 
-1. 請連絡您的Adobe Developer Console管理員。 要求管理員新增為開發人員。
-1. 登入 `https://developer.adobe.com/console/`. 使用管理員已布建的開發人員帳戶登入Adobe Developer Console。
-1. 從右上角選取您的組織。 如果您不清楚自己的組織為何，請聯絡您的管理員。
-1. 點選 **[!UICONTROL 建立新專案]**. 隨即顯示開始使用新專案的畫面。 點選 **[!UICONTROL 新增API]**. 畫面會顯示為您的帳戶啟用所有API的清單。
-1. 選擇 **[!UICONTROL AEM Forms — 通訊]** 點選 **[!UICONTROL 下一個]**. 畫面隨即顯示設定API的畫面。
-1. 選擇 **[!UICONTROL 選項1生成密鑰對]** 點選 **[!UICONTROL 產生鍵對]**. 它會建立及下載設定檔案。 下載的組態檔包含您的所有應用程式設定，以及唯一的私密金鑰復本。 Adobe不會記錄您的私密金鑰，請務必安全地儲存下載的檔案。 點選 **[!UICONTROL 下一個]**.
-1. 選擇 **[!UICONTROL 整合 — Cloud Service]** 點選 **[!UICONTROL 儲存已設定的API]**. 點選 **[!UICONTROL 服務帳戶(JWT)]** 檢視API金鑰、用戶端密碼和存取API所需的其他資訊。 您設為使用Token來存取API。
+1. Contact you Adobe Developer Console administrator. Ask the administrator to add as a developer.
+1. Log in to `https://developer.adobe.com/console/`. Use your developer account that your administrator has provisioned to log in to Adobe Developer Console.
+1. Select your organization from the top-right corner. If you do not know your organization, contact your administrator.
+1. Tap **[!UICONTROL Create new project]**. A screen to get started with your new project appears. Tap **[!UICONTROL Add API]**. A screen with list of all the APIs enabled for your account appears.
+1. Select **[!UICONTROL AEM Forms - Communications]** and tap **[!UICONTROL Next]**. A screen to configure the API appears.
+1. Select **[!UICONTROL OPTION 1 Generate a key pair]** and tap **[!UICONTROL Generate keypair]**. It creates and downloads the configuration file. The downloaded configuration file contains all your app settings, along with the only copy of your private key. Adobe does not record your private key, make sure to securely store the downloaded file. Tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Integrations - Cloud Service]** and tap **[!UICONTROL Save configured API]**. Tap **[!UICONTROL Service Account (JWT)]** to view the API Key, Client Secret, and other information required to access the APIs. You set to use the token to access the APIs.
 
-#### 以程式設計方式產生和使用存取權杖
+#### Programmatically generate and use an access token
 
-若要以程式設計方式產生存取權杖，請產生JSON網頁權杖(JWT)，並與AdobeIdentity Management服務(IMS)交換以取得存取權杖。
+To programmatically generate an access token, generate a JSON Web Token (JWT) and exchange it with the Adobe Identity Management Service (IMS) for an access token.
 
-使用下列索引鍵（稱為聲明）來建構JWT JSON物件：
+Use the following keys, referred to as claims, to construct JWT JSON object:
 
-* `exp` — 要求的存取權杖過期時間，以自1970年1月1日起的秒數表示。 對於大多數使用案例而言，這是相對較小的值。 例如，5分鐘，若從現在開始計算，則此值應為1670923791。
-* `iss` - Adobe Developer Console專案中的組織ID，格式為org_ident@AdobeOrg。
-* `sub`  — 來自Adobe Developer主控台整合的技術帳戶ID，格式為：id@techacct.adobe.com。
-* `aud`  — 在Adobe Developer主控台整合的前端加上 `https://ims-na1.adobelogin.com/c/`.
-* `https://ims-na1-stg1.adobelogin.com/s/ent_aemforms_docprocessing`  — 設為常值 `true`
 
-然後，此JSON物件必須使用專案的私密金鑰進行base64編碼和簽署。 最後，在POST請求的正文中傳送編碼值至 `https://ims-na1.adobelogin.com/ims/exchange/jwt` 以及專案的用戶端ID和用戶端密碼。
+* `exp`- the requested expiration of the access token, expressed as a number of seconds since January 1, 1970 GMT. For most use cases, this is a relatively small value. For example, 5 minutes, for five minutes from now, this value should be 1670923791.
+* `iss` - the Organization ID from the Adobe Developer Console project, in the format org_ident@AdobeOrg.
+* `sub` - the Technical Account ID from the Adobe Developer Console integration, in the format: id@techacct.adobe.com.
+* `aud` - the Client ID from the Adobe Developer Console integration prepended with `https://ims-na1.adobelogin.com/c/`.
+* `https://ims-na1-stg1.adobelogin.com/s/ent_aemforms_docprocessing` - set to the literal value `true`
 
-##### 範例
+This JSON object must be then base64 encoded and signed using the private key for the project. Finally, the encoded value is sent in the body of a POST request to `https://ims-na1.adobelogin.com/ims/exchange/jwt` along with the Client ID and Client Secret for the project.
+
+##### Example
 
 ```JSON
+
     ========================= REQUEST ==========================
     POST https://ims-na1.adobelogin.com/ims/exchange/jwt
     -------------------------- body ----------------------------
@@ -101,11 +108,14 @@ Formsas a Cloud Service — 通訊提供隨選和批次API（非同步API），�
     ------------------------- headers --------------------------
     Content-Type: application/x-www-form-urlencoded
     Cache-Control: no-cache
+
 ```
 
-#### JWT的語言支援
+#### Language Support for JWT
 
-雖然可以在自訂程式碼中執行整個JWT產生和交換程式，但使用較高層級的程式庫來執行更常見的作法。 許多這類程式庫會列於 [Adobe I/OJWT檔案](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/).
+While it is possible to do the entire JWT generation and exchange process in custom code, it is more common to use a higher-level library to do so. A number of such libraries are listed on the [Adobe I/O JWT Documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/).
+
+-->
 
 ### （僅適用於檔案產生API）設定資產和權限
 
