@@ -4,8 +4,8 @@ description: 了解如何設定非生產管道以在部署到生產環境之前�
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: tm+mt
-source-wordcount: '1177'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
