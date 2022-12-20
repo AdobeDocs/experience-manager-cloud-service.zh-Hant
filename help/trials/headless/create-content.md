@@ -4,10 +4,10 @@ description: 使用您先前建立的內容片段模式來建立可用來編寫�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 93%
 
 ---
 
@@ -19,6 +19,13 @@ ht-degree: 100%
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="建立新內容"
 >abstract="使用您在單元 1 建立的模型當作基礎，您將了解如何建立可用於編寫頁面或作為 Headless 內容基礎的內容。"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
+>title="啟動內容片段主控台"
+>abstract="在AEM無頭式CMS中，「內容片段」是符合預先定義結構（稱為「內容片段模型」）的所有內容片段。 在此逐步說明中，您將學習如何為內容片段模型建立內容。<br><br>按一下底下，在新的索引標籤中啟動該功能，然後依照此學習文件的說明建立您的第一個內容片段。"
+>additional-url="https://video.tv.adobe.com/v/328618" text="簡介視頻的佔位符"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="影片縮圖：新增內容 — 成功方式"
 
 ## 內容片段 {#introduction}
 
