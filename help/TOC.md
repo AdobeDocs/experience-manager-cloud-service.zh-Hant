@@ -4,14 +4,14 @@ product: Adobe Experience Manager
 sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
 feature: Release Information
-user-guide-description: 了解Experience Manageras a Cloud Service如何運作，以及軟體可為您做什麼。
+user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 91d3e2ea02f34963688dd9ee44aed17f55752587
 workflow-type: tm+mt
 source-wordcount: '3823'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -143,7 +143,7 @@ ht-degree: 99%
       + [Admin Console](/help/journey-onboarding/admin-console.md)
       + [指派 Cloud Manager 產品設定檔](/help/journey-onboarding/assign-profiles-cloud-manager.md)
       + [存取 Cloud Manager](/help/journey-onboarding/cloud-manager.md)
-      + [建立程序](/help/journey-onboarding/create-program.md)
+      + [建立計畫](/help/journey-onboarding/create-program.md)
       + [建立環境](/help/journey-onboarding/create-environments.md)
       + [指派 AEM 產品設定檔](/help/journey-onboarding/assign-profiles-aem.md)
       + [開發人員和部署管理員工作](/help/journey-onboarding/developers.md)
@@ -151,7 +151,7 @@ ht-degree: 99%
    + AEM 參考示範附加元件歷程{#demo-add-on}
       + [概觀](/help/journey-sites/demos-add-on/overview.md)
       + [安裝](/help/journey-sites/demos-add-on/installation.md)
-      + [建立程序](/help/journey-sites/demos-add-on/create-program.md)
+      + [建立計畫](/help/journey-sites/demos-add-on/create-program.md)
       + [建立示範網站](/help/journey-sites/demos-add-on/create-site.md)
       + [啟用 Screens](/help/journey-sites/demos-add-on/screens.md)
       + [管理您的示範網站](/help/journey-sites/demos-add-on/manage.md)
@@ -395,7 +395,7 @@ ht-degree: 99%
       + [建立和共用私人資料夾](/help/assets/private-folder.md)
       + [資產的 Digital Rights Management](/help/assets/drm.md)
       + [浮水印資產](/help/assets/watermark-assets.md)
-      + [使用 [!DNL Creative Cloud] API 的程序資產](/help/assets/cc-api-integration.md)
+      + [使用 [!DNL Creative Cloud] API 處理資產](/help/assets/cc-api-integration.md)
       + [影像的顏色標記](/help/assets/color-tag-images.md)
       + [管理 PDF 文件](/help/assets/manage-pdf-documents.md)
    + 設定、管理及擴充 [!DNL Assets] {#admin}
@@ -523,7 +523,7 @@ ht-degree: 99%
          + [透過延遲載入改善大型表單的效能](/help/forms/lazy-loading-adaptive-forms.md)
       + 將元件新增至最適化表單{#add-components-to-an-adaptive-form}
          + [在最適化表單中使用驗證碼](/help/forms/captcha-adaptive-forms.md)
-         + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+         + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
          + [套用手寫簽名](/help/forms/signing-forms-using-scribble.md)
       + 設定版面並將樣式套用至最適化表單{#configure-layout-of-an-adaptive-form}
          + [設定最適化表單的版面](/help/forms/layout-capabilities-adaptive-forms.md)
@@ -653,7 +653,7 @@ ht-degree: 99%
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
-   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
+   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)
       + [設定](/help/headless/setup/create-configuration.md)
@@ -680,7 +680,7 @@ ht-degree: 99%
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
       + [範例 GraphQL 查詢](/help/headless/graphql-api/sample-queries.md)
       + [持續的 GraphQL 查詢](/help/headless/graphql-api/persisted-queries.md)
-   + [內容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-Hant)
+   + [內容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
    + 安全性 {#security}
       + [權限](/help/headless/security/permissions.md)
       + [驗證](/help/headless/security/authentication.md)
@@ -701,7 +701,7 @@ ht-degree: 99%
          + [如何整合一切](/help/journey-headless/developer/put-it-all-together.md)
          + [如何使用無周邊應用程式](/help/journey-headless/developer/go-live.md)
          + [選擇性 - 如何使用 AEM 建立單頁應用程式](/help/journey-headless/developer/create-spa.md)
-         + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
+         + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
       + Headless 內容架構者歷程 {#architect}
          + [AEM Headless 內容架構者歷程概觀](/help/journey-headless/architect/overview.md)
          + [使用 AEM 建立 Headless 的內容模型 - 簡介](/help/journey-headless/architect/introduction.md)
@@ -724,13 +724,13 @@ ht-degree: 99%
 + 實施 {#implementing}
    + [為 AEM as a Cloud Service 實施應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
-      + 程序 {#programs}
-         + [程序和程序類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
-         + [生產程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [建立生產程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-         + [沙箱程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [建立沙箱程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [編輯程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+      + 計畫 {#programs}
+         + [計畫和計畫類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+         + [生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+         + [建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+         + [沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+         + [建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+         + [編輯計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [休眠環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + 建立 AEM 應用程式專案 {#create-application-project}
          + [專案建立精靈](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
@@ -809,7 +809,7 @@ ht-degree: 99%
          + 元件和範本 {#components-templates}
             + [元件概觀](/help/implementing/developing/components/overview.md)
             + [範本](/help/implementing/developing/components/templates.md)
-            + [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+            + [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [樣式系統](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
             + [內容服務的 JSON 匯出工具](/help/implementing/developing/components/json-exporter.md)
             + [為元件啟用 JSON 匯出](/help/implementing/developing/components/enabling-json-exporter.md)
