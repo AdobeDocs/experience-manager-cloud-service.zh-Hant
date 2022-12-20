@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
+source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
 workflow-type: tm+mt
-source-wordcount: '2899'
+source-wordcount: '2902'
 ht-degree: 0%
 
 ---
@@ -111,10 +111,10 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 開發人員可使用 [!DNL Asset Compute Service] to [建立自訂應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) 以了解支援的使用案例。 [!DNL Experience Manager] 可使用管理員設定的自訂設定檔，從使用者介面呼叫這些自訂應用程式。 [!DNL Asset Compute Service] 支援以下叫用外部服務的使用案例：
 
-* 使用 [!DNL Adobe Photoshop]&#39;s [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 並將結果儲存為轉譯。
+* 使用 [!DNL Adobe Photoshop]&#39;s [ImageCutout API](https://developer.adobe.com/photoshop/photoshop-api-docs/) 並將結果儲存為轉譯。
 * 呼叫協力廠商系統以更新資料，例如PIM系統。
 * 使用 [!DNL Photoshop] API以根據Photoshop範本產生各種轉譯。
-* 使用 [Adobe Lightroom API](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) 將擷取的資產最佳化，並將其儲存為轉譯。
+* 使用 [Adobe Lightroom API](https://developer.adobe.com/photoshop/photoshop-api-docs/) 將擷取的資產最佳化，並將其儲存為轉譯。
 
 >[!NOTE]
 >
@@ -129,17 +129,17 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 提供下列資訊。
 
    * 每個轉譯的檔案名和支援的副檔名。
-   * [Firefly自訂應用程式的端點URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). 應用程式必須來自與Experience Manager帳戶相同的組織。
+   * [App Builder自訂應用程式的端點URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). 應用程式必須來自與Experience Manager帳戶相同的組織。
    * 將服務參數添加到 [將額外資訊或參數傳遞至自訂應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend).
    * 已包含和排除的MIME類型，以將處理限制為少數特定檔案格式。
 
    按一下「**[!UICONTROL 儲存]**」。
 
-自定義應用程式無頭 [螢火蟲專案](https://github.com/AdobeDocs/project-firefly) 應用程式。 如果自訂應用程式是以處理設定檔設定，則會取得所有提供的檔案。 應用程式必須篩選檔案。
+自定義應用程式無頭 [專案應用程式產生器](https://developer.adobe.com/app-builder/docs/overview/) 應用程式。 如果您的自訂應用程式是以處理設定檔設定，則會取得所有提供的檔案。 應用程式必須篩選檔案。
 
 >[!CAUTION]
 >
->如果螢火蟲應用程式和 [!DNL Experience Manager] 帳戶不來自同一個組織，整合無法運作。
+>如果App Builder應用程式和 [!DNL Experience Manager] 帳戶不來自同一個組織，整合無法運作。
 
 ### 自訂設定檔的範例 {#custom-profile-example}
 
