@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 12%
+source-wordcount: '324'
+ht-degree: 11%
 
 ---
 
@@ -28,6 +28,10 @@ ht-degree: 12%
 * 當您從Apple iOS裝置提交包含標準HTML上傳欄位的最適化表單時，不會傳送檔案內容，且另一端會收到0位元組檔案。 此問題間歇性發生，且僅在使用同步提交時發生。 這是 [已知問題](https://feedbackassistant.apple.com/feedback/9117687) 在AppleiOS。
 
 * 當您從Apple iOS裝置提交包含標準HTML上傳欄位的表單時，有時不會傳送檔案內容，且另一端會收到0位元組檔案。 這是Apple iOS的已知問題。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+
+* AEM Forms as a Cloud Service不會為XDP和JSON結構檔案產生縮圖。 服務會顯示預設圖示，取代縮圖。
+
+   ![Forms縮圖已知問題](/help/forms/assets/forms-tumbnail-known-issue.png)
 
 
 ## 限制 {#limitations}
