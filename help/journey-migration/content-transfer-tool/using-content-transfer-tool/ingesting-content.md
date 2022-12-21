@@ -2,10 +2,10 @@
 title: 將內容內嵌至目標
 description: 將內容內嵌至目標
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 11%
+source-wordcount: '1375'
+ht-degree: 9%
 
 ---
 
@@ -142,6 +142,18 @@ Release Orchestrator通過自動應用更新來使環境保持最新。 如果�
 如果開始擷取時Release Orchestrator仍在執行中，UI會顯示此錯誤訊息。 您仍然可以選擇繼續操作，接受風險，方法是檢查欄位並再次按按鈕。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+
+### 追加擷取失敗
+
+這是 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失敗是節點id中的衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似下列的項目：
+
+>java.lang.RuntimeException:org.apache.jackrabbit.oak.api.CommitFailedException:OakConstraint0030:唯一性約束違反了屬性 [jcr:uuid] 具有值a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5:/some/path/jcr:content, /some/other/path/jcr:content
+
+AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的節點與目標執行個體上其他路徑上已存在的節點具有相同的uuid。
+如果節點在提取與後續之間的源上移動，則會發生此情況 [追加提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+如果目標上的節點在擷取與後續的追加擷取之間移動，也會發生此情況。
+
+必須手動解決此衝突。 熟悉內容的人必須決定必須刪除這兩個節點中的哪個節點，並記住參照該節點的其他內容。 該解決方案可能要求在沒有違規節點的情況下再次執行追加提取。
 
 ## 下一步 {#whats-next}
 
