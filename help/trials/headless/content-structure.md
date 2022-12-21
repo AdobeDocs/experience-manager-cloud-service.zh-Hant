@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 的內容片段模式來建立結構，使�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 96%
+source-wordcount: '1104'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 96%
 >title="啟動模型編輯器"
 >abstract="建立內容片段模型開始於在模型管理工作流程中建立模型項目，然後使用內容片段模型編輯器在其中新增結構元素。<br><br>按一下以下，在新索引標籤中啟動功能，並依照本學習檔案建立您的第一個內容片段模型。"
 >additional-url="https://video.tv.adobe.com/v/328618" text="簡介視頻的佔位符"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="影片縮圖：AEM Headless的基本要素"
 
 ## 內容片段模式控制台 {#content-fragment-model-console}
 

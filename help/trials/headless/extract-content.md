@@ -4,10 +4,10 @@ description: 了解如何將內容片段和 GraphQL API 用作 Headless 內容�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 93%
+source-wordcount: '1287'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +33,6 @@ GraphQL 提供查詢式的 API，允許外部客戶端應用程式使用單一 A
 >title="啟動GraphQL Explorer"
 >abstract="GraphQL提供查詢式API，讓外部用戶端應用程式只能使用單一API呼叫，查詢AEM所需的內容。 請依照本指南，了解如何執行兩種不同類型的查詢，然後從您在先前模組中建立的內容片段中擷取內容。<br><br>按一下下方，在新索引標籤中啟動功能。"
 >additional-url="https://video.tv.adobe.com/v/328618" text="簡介視頻的佔位符"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="影片縮圖：GraphQL快速內容擷取"
 
 ## GraphQL Explorer {#graphql-explorer}
 

@@ -4,10 +4,10 @@ description: 使用您先前建立的內容片段模式來建立可用來編寫�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 93%
+source-wordcount: '885'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,6 @@ ht-degree: 93%
 >title="啟動內容片段主控台"
 >abstract="在AEM無頭式CMS中，「內容片段」是符合預先定義結構（稱為「內容片段模型」）的所有內容片段。 在此逐步說明中，您將學習如何為內容片段模型建立內容。<br><br>按一下底下，在新的索引標籤中啟動該功能，然後依照此學習文件的說明建立您的第一個內容片段。"
 >additional-url="https://video.tv.adobe.com/v/328618" text="簡介視頻的佔位符"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="影片縮圖：新增內容 — 成功方式"
 
 ## 內容片段 {#introduction}
 
