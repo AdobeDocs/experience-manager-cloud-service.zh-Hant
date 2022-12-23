@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1104'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="啟動模型編輯器"
->abstract="建立內容片段模型開始於在模型管理工作流程中建立模型項目，然後使用內容片段模型編輯器在其中新增結構元素。<br><br>按一下以下，在新索引標籤中啟動功能，並依照本學習檔案建立您的第一個內容片段模型。"
->additional-url="https://video.tv.adobe.com/v/328618" text="簡介視頻的佔位符"
+>abstract="建立內容片段模型開始於在模型管理工作流程中建立模型項目，然後使用內容片段模型編輯器在其中新增結構元素。<br><br>按一下底下，在新的索引標籤中啟動該功能，然後依照此學習文件的說明建立您的第一個內容片段模式。"
+>additional-url="https://video.tv.adobe.com/v/328618" text="介紹影片的預留位置"
 
 ## 內容片段模式控制台 {#content-fragment-model-console}
 
