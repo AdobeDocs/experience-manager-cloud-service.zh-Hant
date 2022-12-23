@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '885'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="啟動內容片段主控台"
->abstract="在AEM無頭式CMS中，「內容片段」是符合預先定義結構（稱為「內容片段模型」）的所有內容片段。 在此逐步說明中，您將學習如何為內容片段模型建立內容。<br><br>按一下底下，在新的索引標籤中啟動該功能，然後依照此學習文件的說明建立您的第一個內容片段。"
->additional-url="https://video.tv.adobe.com/v/328618" text="簡介視頻的佔位符"
+>abstract="在 AEM Headless CMS 中，「內容片段」是指在名為「內容片段模式」預先定義結構中的所有內容片段。在本逐步解說中，您將了解如何建立內容片段模型的內容。<br><br>按一下底下，在新的索引標籤中啟動該功能，然後依照此學習文件的說明建立您的第一個內容片段。"
+>additional-url="https://video.tv.adobe.com/v/328618" text="介紹影片的預留位置"
 
 ## 內容片段 {#introduction}
 
