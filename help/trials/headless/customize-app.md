@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1465'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ Headless 內容的 AEM 試用版有一個預先載入的簡單 React 應用程�
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="啟動內容片段編輯器"
->abstract="Headless 內容的 AEM 試用版有一個預先載入的簡單 React 應用程式，可展示 Headless 內容。 應用程式以內容片段的結構為基礎。 您可以使用AEM中的內容片段編輯器，修改您應用程式的內容。<br><br>按一下下方的，在新標籤中啟動功能，然後遵循本指南。"
->additional-url="https://video.tv.adobe.com/v/328618" text="簡介視頻的佔位符"
+>abstract="Headless 內容的 AEM 試用版有一個預先載入的簡單 React 應用程式，可展示 Headless 內容。應用程式是根據內容片段的結構來建立。 使用 AEM 中的內容片段編輯器，您可以修改您的應用程式內容。<br><br>點選下方，在新標籤中啟動該功能，然後按照本指南進行操作。"
+>additional-url="https://video.tv.adobe.com/v/328618" text="介紹影片的預留位置"
 
 ## 內容片段編輯器 {#fragment-editor}
 
