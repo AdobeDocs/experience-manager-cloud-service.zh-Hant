@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1287'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ GraphQL 提供查詢式的 API，允許外部客戶端應用程式使用單一 A
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
->title="啟動GraphQL Explorer"
->abstract="GraphQL提供查詢式API，讓外部用戶端應用程式只能使用單一API呼叫，查詢AEM所需的內容。 請依照本指南，了解如何執行兩種不同類型的查詢，然後從您在先前模組中建立的內容片段中擷取內容。<br><br>按一下下方，在新索引標籤中啟動功能。"
->additional-url="https://video.tv.adobe.com/v/328618" text="簡介視頻的佔位符"
+>title="啟動 GraphQL Explorer"
+>abstract="GraphQL 提供查詢式的 API，允許外部客戶端應用程式使用單一 API 呼叫，以便查詢 AEM 所需的內容。按照本指南了解如何執行兩種不同類型的查詢，然後從您在上一個模組中建立的內容片段中擷取內容。<br><br>點選下方，在新標籤中啟動該功能。"
+>additional-url="https://video.tv.adobe.com/v/328618" text="介紹影片的預留位置"
 
 ## GraphQL Explorer {#graphql-explorer}
 
