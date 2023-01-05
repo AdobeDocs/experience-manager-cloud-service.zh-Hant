@@ -3,7 +3,7 @@ title: 組建環境
 description: 了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1003'
 ht-degree: 100%
 
