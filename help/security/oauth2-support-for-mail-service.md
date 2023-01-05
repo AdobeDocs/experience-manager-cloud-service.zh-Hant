@@ -3,7 +3,7 @@ title: 郵件服務的 OAuth2 支援
 description: Adobe Experience Manager as a Cloud Service 對郵件服務的 Oauth2 支援
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: 0d0b137dfca0a91f02ff8358747f59ec7530cae5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '674'
 ht-degree: 100%
 
