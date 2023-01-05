@@ -11,7 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: c2fd3d33eb02ea671d9811ad527bf167a279ff01
+source-git-commit: 73fe6ce5bbdf0ad437ae4b47b892ad05e016ab68
 workflow-type: tm+mt
 source-wordcount: '2080'
 ht-degree: 1%
@@ -146,7 +146,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 ### 配置Apollo客戶端
 
-此 [阿波羅客戶](https://www.apollographql.com/docs/react/) 用於使用GraphQL管理本地和遠程資料。 它還將GraphQL查詢的結果儲存在本地標準化記憶體內快取中。
+此 [阿波羅客戶](https://www.apollographql.com/docs/react/) 用於透過GraphQL管理本機和遠端資料。 它也會將GraphQL查詢的結果儲存在本機標準化的記憶體內快取中。
 
 針對 [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) 要高效工作，你需要 `possibleTypes.js` 檔案。 要生成此檔案，請參閱 [自動生成可能的類型](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). 另請參閱 [PWA Studio參考實作](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) 和 [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) 檔案。
 

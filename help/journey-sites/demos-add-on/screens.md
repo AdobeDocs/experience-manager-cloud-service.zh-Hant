@@ -2,7 +2,7 @@
 title: 為您的示範網站啟用AEM Screens
 description: 了解在示範網站上啟用完整AEM Screensas a Cloud Service體驗的步驟。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 71e318f93b6edab5d2ae685d8603c3d0040f72a3
+source-git-commit: 8ee3de944290a917c320ad9aa4205b28ad1620bb
 workflow-type: tm+mt
 source-wordcount: '2699'
 ht-degree: 0%

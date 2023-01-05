@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 開發指導方針
 description: 了解在AEMas a Cloud Service上開發的准則，以及AMS中與內部部署和AEM不同的重要方式。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 88d7728758927f16ed0807de8d261ca1b4b8b104
+source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
 workflow-type: tm+mt
 source-wordcount: '2590'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 

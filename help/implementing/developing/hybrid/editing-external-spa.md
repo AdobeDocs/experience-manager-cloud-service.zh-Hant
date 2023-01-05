@@ -368,7 +368,7 @@ RemotePage元件預期實施會提供類似的資產資訊清單 [找到。](htt
 下列參考資料有助於在AEM中了解SPA。
 
 * [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)
-* [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)
 * [WKND SPA專案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
 * [AEM中使用React的SPA快速入門](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA參考資料（API參考）](/help/implementing/developing/hybrid/reference-materials.md)

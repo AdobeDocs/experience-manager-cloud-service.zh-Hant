@@ -3,7 +3,7 @@ title: 設定Dynamic MediaCloud Service
 description: 了解如何在Adobe Experience Manager as a Cloud Service中設定Dynamic Media。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 50a7db14a378f99eeadc3f9cb91f228ea4139ff4
+source-git-commit: 8066d24193822a79d88f564a2db26b3acbb4e918
 workflow-type: tm+mt
 source-wordcount: '3795'
 ht-degree: 3%
@@ -105,7 +105,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >
    >啟動資產後，任何更新都會立即上線發佈至S7傳送。
 
-   ![dynamicmediaconfiguration_updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
+   ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
 1. 選取&#x200B;**[!UICONTROL 儲存]**。新Dynamic Media密碼和設定已儲存。 如果您選取 **[!UICONTROL 取消]** 但是，不會更新密碼。
 1. 在 **[!UICONTROL 設定Dynamic Media]** 對話框，選擇 **[!UICONTROL 確定]** 以開始設定。
@@ -296,7 +296,7 @@ Dynamic Media色彩管理可讓您為資產加上色彩校正。 透過色彩校
 
 請參閱 [上傳資產](/help/assets/add-assets.md).
 
-**要編輯支援格式的MIME類型，請執行以下操作：**
+**要編輯支援格式的MIME類型：**
 
 1. 以產品管理員身分登入您的Experience Manageras a Cloud Service。
 1. 在Experience Manageras a Cloud Service中，選取Experience Manageras a Cloud Service標誌以存取全域導覽主控台，然後前往 **[!UICONTROL 一般>CRXDE Lite]**.

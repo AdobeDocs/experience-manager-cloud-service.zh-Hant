@@ -4,7 +4,7 @@ description: Experience Cloud設定自動化提供簡單且自動化的方式，
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 539d3947964652dd92620ce0b0b057754742be96
+source-git-commit: f91885a7d15c0ff927c6e10f65852f787cf26eb3
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Experience Cloud設定自動化提供簡單且自動化的方式，透過簡單�
 
 ## 要求
 
-自動化設定是專為使用 [AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [Adobe用戶端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 已啟用。 您可以使用 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 或使用 [網站範本](/help/journey-sites/quick-site/create-site.md).
+自動化設定是專為使用 [AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [Adobe用戶端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 已啟用。 您可以使用 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 或使用 [網站範本](/help/journey-sites/quick-site/create-site.md).
 
 ## 必備條件 {#prerequisites}
 

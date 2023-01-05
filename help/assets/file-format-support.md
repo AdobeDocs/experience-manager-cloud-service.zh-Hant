@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 93e25fcbe07d3262d924f97551e19661ea80a034
+source-git-commit: 614d15838665306d01140048e35fc265b9f7b5e1
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 7%
@@ -196,13 +196,13 @@ ht-degree: 7%
 | AVI | A/V插播 | XVID、DIVX、HDV、MiniDV(DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3(IV30)、MJPEG、Microsoft Video 1(MS-CRAM) |
 | FLV、F4V | AdobeFlash | H264/AVC, Flix VP6, H263, Sorenson | SWF（向量動畫檔案） |
 | M4V | Apple iTunes | H264/AVC | − |
-| MKV | 馬特羅斯卡 | H264/AVC | - |
+| MKV | 馬特羅斯卡 | H264/AVC | − |
 | MOV, QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV(DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple中級，Apple動畫 |
-| MP4 | MPEG-4 | H264/AVC（所有配置檔案） | - |
-| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
-| MXF‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、松下DVCPro | - |
-| 奧格夫、奧格 | 奧格 | 蒂奧拉，VP3，狄拉克 | - |
-| WebM | WebM | Google VP8 | - |
+| MP4 | MPEG-4 | H264/AVC（所有配置檔案） | − |
+| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | − |
+| MXF‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、松下DVCPro | − |
+| 奧格夫、奧格 | 奧格 | 蒂奧拉，VP3，狄拉克 | − |
+| WebM | WebM | Google VP8 | − |
 | WMV | Windows Media 9 | WMV3(v9)、WMV2(v8)、WMV1(v7)、GoToMeeting(G2M2、G2M3、G2M4) | Microsoft Screen(MSS2)、Microsoft Photo Story(WVP2) |
 
 *此視訊格式尚不支援與Dynamic Media中的互動式視訊搭配使用，或與Experience Manager Assets中的附註搭配使用。

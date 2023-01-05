@@ -2,7 +2,7 @@
 title: 內容片段模型（資產 — 內容片段）
 description: 了解內容片段模型如何成為AEM中無頭內容的基礎，以及如何使用結構化內容建立內容片段。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
+source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
 workflow-type: tm+mt
 source-wordcount: '2887'
 ht-degree: 5%
@@ -122,7 +122,7 @@ AEM中的內容片段模型會定義 [內容片段，](/help/assets/content-frag
 * **JSON 物件**
    * 允許內容片段作者在片段的對應元素中輸入JSON語法。
       * 允許AEM儲存您從其他服務複製/貼上的直接JSON。
-      * JSON會傳遞，並在GraphQL中以JSON格式輸出。
+      * JSON會傳遞，並在GraphQL中輸出為JSON。
       * 在內容片段編輯器中包含JSON語法醒目提示、自動完成和錯誤醒目提示。
 * **標籤預留位置**
    * 允許導入頁簽，以便在編輯內容片段內容時使用。
@@ -131,7 +131,7 @@ AEM中的內容片段模型會定義 [內容片段，](/help/assets/content-frag
 
       >[!NOTE]
       >
-      >此資料類型僅用於格式設定，AEM GraphQL架構會忽略此資料類型。
+      >此資料類型僅用於格式設定，AEM GraphQL結構會忽略它。
 
 ## 屬性 {#properties}
 
@@ -189,7 +189,7 @@ AEM中的內容片段模型會定義 [內容片段，](/help/assets/content-frag
    檢查 **可翻譯** 內容片段模型編輯器中欄位上的核取方塊將：
 
    * 確認欄位的屬性名稱已新增至翻譯設定、內容 `/content/dam/<sites-configuration>`，如果尚未出現。
-   * 對於GraphQL:設定 `<translatable>` 「內容片段」欄位上的屬性 `yes`，以允許僅具有可翻譯內容的JSON輸出的GraphQL查詢篩選。
+   * 若為GraphQL:設定 `<translatable>` 「內容片段」欄位上的屬性 `yes`，允許GraphQL查詢篩選器只能輸出可翻譯的內容。
 
 ## 驗證  {#validation}
 
@@ -220,7 +220,7 @@ AEM中的內容片段模型會定義 [內容片段，](/help/assets/content-frag
 
       >[!NOTE]
       >
-      >該方法與 [使用內容片段搭配GraphQL的無周邊內容傳送](/help/assets/content-fragments/content-fragments-graphql.md).
+      >該方法與 [透過GraphQL使用內容片段進行無頭式內容傳送](/help/assets/content-fragments/content-fragments-graphql.md).
    * 可針對一或多個參照（在產生的片段中）進行設定。
 
 >[!NOTE]
@@ -274,7 +274,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->這與 [使用內容片段搭配GraphQL的無周邊內容傳送](/help/assets/content-fragments/content-fragments-graphql.md).
+>這與 [透過GraphQL使用內容片段進行無頭式內容傳送](/help/assets/content-fragments/content-fragments-graphql.md).
 
 除了標準屬性之外，您還可以定義：
 
@@ -324,7 +324,7 @@ type CompanyModel {
 
 * 建立新內容片段時可供選取。
 * 可從內容片段模型內參考。
-* 可用於GraphQL;以便產生架構。
+* 適用於GraphQL;以便產生架構。
 
 啟用標籤為以下任一項的模型：
 
@@ -346,7 +346,7 @@ type CompanyModel {
 * 不過：
    * GraphQL結構會持續產生且仍可查詢（以避免影響JSON API）。
    * 您仍可以查詢任何以模型為基礎的內容片段，並從GraphQL端點傳回。
-* 無法再參照模型，但現有的參照保持不變，仍可查詢並從GraphQL端點傳回。
+* 無法再參照模型，但現有參照保持不變，仍可查詢並從GraphQL端點傳回。
 
 禁用標籤為的模型 **已啟用** 您使用 **停用** 選項，可從以下任一項取得：
 
@@ -449,15 +449,15 @@ type CompanyModel {
 
 ### 挑戰 {#the-challenge}
 
-* 內容片段模型決定AEM中GraphQL查詢的架構。
+* 內容片段模型決定AEM中GraphQL查詢的結構。
 
-   * AEM GraphQL結構會在建立內容片段模型時立即建立，且可同時存在於製作和發佈環境中。
+   * AEM GraphQL結構會在建立內容片段模型時立即建立，且可存在於製作和發佈環境中。
 
    * 發佈的結構描述是最重要的，因為它們為JSON格式的內容片段內容的即時傳送奠定了基礎。
 
-* 修改內容片段模型或編輯內容片段模型時，可能會發生問題。 這表示架構會變更，進而可能影響現有的GraphQL查詢。
+* 修改內容片段模型或編輯內容片段模型時，可能會發生問題。 這表示結構會變更，進而可能影響現有的GraphQL查詢。
 
-* 將新欄位新增至內容片段模型（通常）不應有任何有害影響。 但是，修改現有資料欄位（例如其名稱）或刪除欄位定義，將會在請求這些欄位時中斷現有的GraphQL查詢。
+* 將新欄位新增至內容片段模型（通常）不應有任何有害影響。 不過，修改現有資料欄位（例如其名稱）或刪除欄位定義，會在現有GraphQL查詢要求這些欄位時中斷這些查詢。
 
 ### 要求 {#the-requirements}
 

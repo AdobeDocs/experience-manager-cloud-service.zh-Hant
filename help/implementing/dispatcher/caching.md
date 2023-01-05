@@ -119,7 +119,7 @@ AEM層會根據快取標題是否已設定及請求類型的值，來設定快�
 >[!NOTE]
 >建議您將Cloud Manager環境變數AEM_BLOB_ENABLE_CACHING_HEADERS設為true，將舊的預設行為變更為與新行為(程式ID高於65000)一致。 如果程式已上線，請確定在變更後，內容會如預期般運作。
 
-目前，Dispatcher無法快取Blob儲存中標示為私密的影像，方法是使用 [需要權限的快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). 系統一律會從AEM原始伺服器要求影像，並在使用者獲得授權時提供影像。
+目前，Dispatcher無法快取Blob儲存中標示為私密的影像，方法是使用 [需要權限的快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hant). 系統一律會從AEM原始伺服器要求影像，並在使用者獲得授權時提供影像。
 
 >[!NOTE]
 >其他方法，包括 [dispatcher-ttl AEM ACS公域專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，將不會成功覆寫值。

@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: fbd2fdcb61bcbae49f07c3da26b14d56d50b1cab
+source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 3%
@@ -219,7 +219,7 @@ URL重新寫入也可透過使用AEM Dispatcher HTTP伺服器來達成，並搭�
 
 _**使用包含SKU的產品頁面URL格式。**_
 
-CIF核心元件會以SKU作為所有元件的主要識別碼。 如果產品頁面URL格式不包含SKU，則需要GraphQL查詢才能加以解析。 這可能會影響到首位元組時間。 此外，購物者可使用搜尋引擎，依SKU尋找產品。
+CIF核心元件會以SKU作為所有元件的主要識別碼。 如果產品頁面URL格式不包含SKU，則必須有GraphQL查詢才能加以解析。 這可能會影響到首位元組時間。 此外，購物者可使用搜尋引擎，依SKU尋找產品。
 
 _**使用包含類別內容的產品頁面URL格式。**_
 

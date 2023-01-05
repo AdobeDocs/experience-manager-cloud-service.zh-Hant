@@ -1,11 +1,11 @@
 ---
 title: 開始使用Experience Manageras a Cloud Service
-description: 了解Experience Manageras a Cloud Service如何運作，以及軟體可為您做什麼。
+description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 80%
+ht-degree: 84%
 
 ---
 

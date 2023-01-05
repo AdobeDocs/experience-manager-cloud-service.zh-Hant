@@ -395,6 +395,6 @@ Experience Manager顯示作業歷史記錄。 在「批量導入作業歷史記�
 >
 >* [[!DNL Adobe Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [關於 [!DNL Adobe Asset Link]](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
->* [[!DNL Adobe Asset Link] 文件](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] 文件](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
 >* [資產上傳技術參考](developer-reference-material-apis.md#asset-upload)
 
