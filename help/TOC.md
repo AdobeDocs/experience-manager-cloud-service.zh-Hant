@@ -9,9 +9,9 @@ breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 156cf55a33184bd986628d775475ed1f841e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3827'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -785,7 +785,7 @@ ht-degree: 99%
       + [AEM 專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 專案存放庫結構套件](/help/implementing/developing/introduction/repository-structure-package.md)
       + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-      + [AEM快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md)
+      + [AEM 快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [AEM as a Cloud Service 開發指導方針](/help/implementing/developing/introduction/development-guidelines.md)
       + [記錄](/help/implementing/developing/introduction/logging.md)
       + [設定和設定瀏覽器](/help/implementing/developing/introduction/configurations.md)
