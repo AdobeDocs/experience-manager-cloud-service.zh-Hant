@@ -8,7 +8,7 @@ exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 40%
+ht-degree: 42%
 
 ---
 
@@ -33,18 +33,18 @@ ht-degree: 40%
 | [入門歷程](/help/journey-onboarding/overview.md) | 開始使用 [!DNL Experience Manager] as a [!DNL Cloud Service]  — 訪問和保護重要資料。 |
 | [Sites 使用手冊](/help/sites-cloud/home.md) | 了解如何使用及管理 [!DNL Experience Manager Sites] as a [!DNL Cloud Service]. |
 | [實作使用手冊](/help/implementing/home.md) | 透過探索這些開發和部署主題，了解如何使用Experience Manager的強大功能來建立和自訂體驗。 |
-| [無頭式開發人員歷程](/help/journey-headless/developer/overview.md) | 探索引導式歷程，體驗Experience Manager強大且靈活的無頭式功能，為您的第一個無頭式專案做好準備。 |
+| [Headless 開發人員歷程](/help/journey-headless/developer/overview.md) | 探索引導式歷程，體驗Experience Manager強大且靈活的無頭式功能，為您的第一個無頭式專案做好準備。 |
 | [移至 [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/journey-migration/getting-started.md) | 了解轉換至 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器整合至 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [操作使用手冊](/help/operations/home.md) | 了解 [!DNL Experience Manager] as a [!DNL Cloud Service]，例如索引和維護任務。 |
-| [商務使用手冊](/help/commerce-cloud/home.md) | 了解Commerce Integration Framework，位於 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
+| [Commerce 使用手冊](/help/commerce-cloud/home.md) | 了解Commerce Integration Framework，位於 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
 * [近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html#aem-as-a-cloud-service)
 * [Dispatcher 文件](/help/implementing/dispatcher/overview.md)
 * [HTL 文件](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
-* [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [核心元件文件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
 * [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant)
 * [GDPR 整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a [!DNL Cloud Service] Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
