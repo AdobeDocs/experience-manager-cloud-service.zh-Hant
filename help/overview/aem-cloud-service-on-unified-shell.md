@@ -1,17 +1,17 @@
 ---
-title: AEMas a Cloud Service於Unified Shell
-description: AEMas a Cloud Service於Unified Shell
+title: Unified Shell 上的 AEM as a Cloud Service
+description: Unified Shell 上的 AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 76b7fb1d354664ec9fa773623ea4dee09164bec8
+source-git-commit: aeb8244b4da17a0675b86a69727807abf45ca84a
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 2%
+source-wordcount: '399'
+ht-degree: 8%
 
 ---
 
-# AEMas a Cloud Service於Unified Shell {#aem-as-a-cloud-service-on-unified-shell}
+# Unified Shell 上的 AEM as a Cloud Service {#aem-as-a-cloud-service-on-unified-shell}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 AEMas a Cloud Service（作者服務）與Unified Shell整合，以改善使用者體驗，並與所有其他Experience Cloud應用程式統一。 此整合的影響可在應用程式的頂端看到，如下所示。
 
@@ -52,6 +52,11 @@ AEMas a Cloud Service（作者服務）與Unified Shell整合，以改善使用�
 
 ![影像](/help/overview/assets/unifiedshell4.png)
 
+## 識別AEMas a Cloud Service環境 {#identify-aemaacs-environment}
+
+AEMas a Cloud Service提供三種環境：生產、預備和開發。 請參閱 [環境類型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) 以取得更多詳細資訊。 透過與Unified Shell的整合，使用者登入Author服務的環境類型會透過標籤顯示在頂端標題上，如下所示。
+
+![影像](/help/overview/assets/unifiedshell_header_label.png)
 
 ## 存取AEM收件匣 {#accessing-the-aem-inbox}
 
