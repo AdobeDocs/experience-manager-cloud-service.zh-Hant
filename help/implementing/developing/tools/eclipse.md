@@ -1,19 +1,19 @@
 ---
-title: AEM Developer Tools for Eclipse
-description: AEM Developer Tools for Eclipse
+title: Eclipse 適用的 AEM 開發人員工具
+description: Eclipse 適用的 AEM 開發人員工具
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3af790d9b42eb2f685258eb18352ec4cd752efcc
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 1%
+source-wordcount: '1179'
+ht-degree: 3%
 
 ---
 
-# AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
+# Eclipse 適用的 AEM 開發人員工具{#aem-developer-tools-for-eclipse}
 
 ![](assets/eclipse-logo.png)
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 AEM Developer Tools for Eclipse是以 [適用於Apache Sling的Eclipse外掛程式](https://sling.apache.org/documentation/development/ide-tooling.html) 依Apache授權2發行。
 
@@ -25,7 +25,7 @@ AEM Developer Tools for Eclipse是以 [適用於Apache Sling的Eclipse外掛程�
 * 透過特定專案建立精靈簡單引導AEM專案
 * 輕鬆編輯JCR屬性
 
-## 需求 {#requirements}
+## 要求 {#requirements}
 
 使用AEM開發人員工具之前，您需要：
 
@@ -196,7 +196,7 @@ AEM Developer Tools for Eclipse隨附範例多模組專案，可協助您快速�
 
 如果您想從專案中重新建置套件，請以滑鼠右鍵按一下 `PROJECT.ui.apps` 或 `PROJECT.ui.content` 選擇 **執行方式** -> **Maven安裝**.
 
-您現在有已在內建立並包含套件的目標資料夾(例如 `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`)。
+您現在已建立目標資料夾，且內含您的套件(例如 `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`)。
 
 ## 疑難排解 {#troubleshooting}
 
@@ -216,7 +216,7 @@ Eclipse下載所需的相依性。 這可能需要一些時間。
 
 適用於Eclipse網站的官方Apache Sling IDE工具可提供您實用的資訊：
 
-* 此 [**適用於Eclipse的Apache Sling IDE工具** 使用手冊](https://sling.apache.org/documentation/development/ide-tooling.html)，本檔案將引導您了解AEM開發工具支援的整體概念、伺服器整合和部署功能。
+* 此 [**適用於Eclipse的Apache Sling IDE工具** 使用手冊](https://sling.apache.org/documentation/development/ide-tooling.html)，本檔案會逐步引導您了解AEM開發工具所支援的整體概念、伺服器整合和部署功能。
 * 此 [疑難排解區段](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * 此 [已知問題清單](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
