@@ -3,9 +3,9 @@ title: Cloud Manager 環境變數
 description: 標準環境變數可以透過 Cloud Manager 進行設定和管理，並提供給執行階段環境，用於 OSGi 設定。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1021'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -110,26 +110,26 @@ ht-degree: 88%
 
 ## 環境變數可用性 {#availability}
 
-環境變數可用於多個位置。
+環境變數可以用在很多地方。
 
-### 製作、預覽和發佈 {#author-preview-publish}
+### 編寫、預覽和發佈 {#author-preview-publish}
 
-一般環境變數和機密都可用於製作、預覽和發佈環境。
+一般環境變數和祕密均可用於編寫、預覽和發佈環境。
 
 ### Dispatcher {#dispatcher}
 
-只有一般環境變數可搭配使用 [調度程式。](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant) 無法使用機密。
+[Dispatcher 只能使用一般環境變數。](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)不能使用祕密。
 
-不過，環境變數無法用於 `IfDefine` 指令。
+但是環境變數不能在 `IfDefine` 指令中使用。
 
 >[!TIP]
 >
->您應驗證是否使用環境變數搭配 [本機](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) 部署前。
+>在部署之前，您應該透過 [本機 Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) 驗證您對環境變數的使用。
 
-### OSGi配置 {#osgi}
+### OSGi 設定 {#osgi}
 
-規則環境變數和機密皆可用於 [OSGi設定。](/help/implementing/deploying/configuring-osgi.md)
+一般環境變數和祕密都可以在 [OSGi 設定](/help/implementing/deploying/configuring-osgi.md)中使用。
 
 ### 管道變數 {#pipeline}
 
-除了環境變數外，還有管線變數，這些變數會在建置階段公開。 [如需管道變數的詳細資訊，請參閱這裡。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+除了環境變數，還有管道變數會在建置階段顯示。[在此處了解更多管道變數。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
