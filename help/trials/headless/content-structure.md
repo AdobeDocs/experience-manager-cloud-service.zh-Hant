@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 的內容片段模式來建立結構，使�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
-workflow-type: ht
-source-wordcount: '1104'
-ht-degree: 100%
+source-git-commit: 900f9fc951a2b95b77abc5835ef9651128824826
+workflow-type: tm+mt
+source-wordcount: '1129'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,12 @@ ht-degree: 100%
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="啟動模型編輯器"
 >abstract="建立內容片段模型開始於在模型管理工作流程中建立模型項目，然後使用內容片段模型編輯器在其中新增結構元素。<br><br>按一下底下，在新的索引標籤中啟動該功能，然後依照此學習文件的說明建立您的第一個內容片段模式。"
->additional-url="https://video.tv.adobe.com/v/328618" text="介紹影片的預留位置"
+>additional-url="https://video.tv.adobe.com/v/3413261" text="內容結構簡介影片"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
+>title="啟動模型編輯器"
+>abstract="恭喜！透過建立內容片段模型，您邁出了以縮放和標準方式傳送全頻道內容的第一步。"
 
 ## 內容片段模式控制台 {#content-fragment-model-console}
 
