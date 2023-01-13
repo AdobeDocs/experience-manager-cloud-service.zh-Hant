@@ -2,9 +2,9 @@
 title: Eclipse 適用的 AEM 開發人員工具
 description: Eclipse 適用的 AEM 開發人員工具
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 3af790d9b42eb2f685258eb18352ec4cd752efcc
+source-git-commit: cac6692e10da4b271610edd495d4cb38507a726b
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1182'
 ht-degree: 3%
 
 ---
@@ -40,11 +40,11 @@ AEM Developer Tools for Eclipse是以 [適用於Apache Sling的Eclipse外掛程�
 
 當您完成 [需求](#requirements) 如上所述，您可以依照下列方式安裝外掛程式：
 
-1. 開啟 [AEM開發人員工具網站](https://eclipse.adobe.com/aem/dev-tools/).
+1. 開啟 [AEM開發人員工具網站](https://eclipse.adobe.com/aem/dev-tools/). <!-- RB: This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. 複製 **安裝連結**.
 
-   請注意，您也可以下載封存檔，而不是使用安裝連結。 這允許離線安裝，但您會以這種方式遺漏自動更新通知。
+   請注意，您也可以下載封存檔，而不是使用安裝連結。 此方法允許離線安裝，但您不會以此方式收到遺漏的自動更新通知。
 
 1. 在Eclipse中，開啟 **說明** 功能表。
 1. 按一下 **安裝新軟體**.
