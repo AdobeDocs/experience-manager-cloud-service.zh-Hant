@@ -1,26 +1,22 @@
 ---
-title: 適用性Forms中的表格
-seo-title: Tables in Adaptive Forms
-description: 中的表格元件 [!DNL AEM Forms] 可讓您在適用性Forms中建立對行動配置有回應的表格，並允許使用XDP表格元件。
-seo-description: The Table component in [!DNL AEM Forms] lets you create tables in Adaptive Forms that are responsive to mobile layouts, and also allows using XDP table components.
-uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
-topic-tags: author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+title: 適用性表單中的表格
+seo-title: Tables in adaptive forms
+description: AEM Forms中的表格元件可讓您以回應行動配置的最適化表單建立表格，也允許使用XDP表格元件。
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Adaptive Forms
+source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2418'
 ht-degree: 0%
 
 ---
 
-
-# 適用性Forms中的表格 {#tables-in-adaptive-forms}
+# 適用性表單中的表格 {#tables-in-adaptive-forms}
 
 使用表格是呈現複雜資料的有效、簡化且有組織的方式。 它幫助用戶方便地識別資訊，並以有序排列的行和列提供輸入。 金融服務和政府組織的大多數表單都要求使用大資料表來放置數字並執行計算。
 
-[!DNL AEM Forms] 在側欄的元件瀏覽器中提供「表格」元件，可讓您在適用性Forms中建立表格。 它提供的一些關鍵功能包括：
+AEM Forms在側欄的「元件」瀏覽器中提供「表格」元件，可讓您以最適化表單建立表格。 它提供的一些關鍵功能包括：
 
 * 行動裝置上的回應式版面
 * 可設定的列和列
@@ -34,7 +30,7 @@ ht-degree: 0%
 
 ## 建立表格 {#create-a-table}
 
-若要建立表格，請從「適用性表單」的sidekick中的元件瀏覽器，拖放表格元件。 依預設，表格包含兩欄和三列，包括標題列。
+若要建立表格，請從最適化表單的sidekick中的元件瀏覽器，拖放表格元件。 依預設，表格包含兩欄和三列，包括標題列。
 
 ![AEM側欄中的表元件](assets/sidebar-tables.png)
 
@@ -42,7 +38,7 @@ ht-degree: 0%
 
 標題儲存格是文字欄位。 若要變更標題的標籤，請以滑鼠右鍵按一下標題儲存格，然後按一下 **編輯**. 在「編輯」對話方塊中，更新 **值** 欄位，按一下 **確定**.
 
-內文儲存格預設為文字方塊。 您可以將內文儲存格取代為sidekick中可用的任何其他適用性Forms元件，例如數值方塊、日期選取器或下拉式清單。
+內文儲存格預設為文字方塊。 您可以將內文儲存格取代為sidekick中可用的任何其他適用性表單元件，例如數值方塊、日期選取器或下拉式清單。
 
 例如，下表中的第一個內文列包含文字方塊、日期選取器，以及儲存格形式的下拉式清單元件。
 
@@ -54,25 +50,30 @@ ht-degree: 0%
 
 您可以新增和刪除列或欄，以及在表格中上下移動列。
 
-要添加或刪除行或列或移動行，請按一下行或列中的任何單元格。 下拉式功能表會顯示在欄頂端和列左側。 頂端的功能表提供新增或刪除欄的選項，而左側的功能表則可讓您新增、刪除或移動列。
+#### 添加、刪除或移動行
 
-* 「添加」操作將在所選行或列的右下添加一行或列。
-* 「刪除」操作將刪除選定的行或列。
-* 上移和下移操作可上下移動所選行。
+若要新增、刪除或移動該列，請按一下該列的任何儲存格。 開啟內容瀏覽器 ![內容瀏覽器](/help/forms/assets/Smock_Layers_18_N.svg) 並選取對應的列，它會使用工具列選項來反白標示選取的列，您可以在其中上或下新增、刪除或移動該列。
+* 此 **[!UICONTROL 上移]** 和 **[!UICONTROL 下移]** 操作將選定行上下移動。
 
-該行的下拉菜單還提供編輯操作，以編輯行屬性、設定和樣式選項。
+* 此 **[!UICONTROL 添加列]** 操作將在選定行的下方添加一行。
 
-![add-delete-move-row-column](assets/add-delete-move-row-column.png)
+* 此 **[!UICONTROL 刪除列]** 操作將刪除選定的行。
+
+![add-delete-move-row-column](assets/add-delete-move-row.png)
+
+按兩下該行以配置行的屬性，如名稱、綁定引用、重複設定、CSS類。
+![add-delete-move-row-column](assets/row-properties-image.png)
+
+
+#### 新增或刪除欄
+
+若要新增或刪除欄，請按一下標題區段中的文字儲存格，工具列隨即開啟，其中包含新增或刪除欄的選項：
+
+![add-delete-move-row-column](assets/add-delet-column.png)
 
 >[!NOTE]
 >
->* 雖然您可以在表格中新增任意數量的列，但您可新增的最大欄數為6。 此外，您也無法從表格中刪除標題列。
->
->* 將PDF表單自動轉換為最適化表單，可建立沒有標題的表格。 您可以新增欄和刪除沒有標題的表格。 隱藏的標題會新增至這些表格，以協助您新增和刪除欄。 這些標題在製作期間可見，但在已發佈的表單中仍隱藏。
-
-
-
-
+>雖然您可以在表格中新增任意數量的列，但您可新增的最大欄數為6。 此外，您也無法從表格中刪除標題列。
 
 ### 添加表說明 {#add-table-description}
 
@@ -84,7 +85,7 @@ ht-degree: 0%
 
 ### 對表中的列進行排序 {#sortcolumnstable}
 
-您可以根據適用性表單中表格中的任何欄來排序資料。 欄中的值可依遞增或遞減順序排序。
+您可以根據最適化表單中表格中的任何欄來排序資料。 欄中的值可依遞增或遞減順序排序。
 
 排序可套用至包含：
 
@@ -113,6 +114,14 @@ ht-degree: 0%
 
    您也可以在 **預覽** 模式，然後再按一下欄標題來排序欄值。
 
+## 設定表的列寬 {#set-column-width}
+
+執行下列步驟來設定表格的欄寬：
+
+1. 在 **[!UICONTROL 內容]** 標籤，點選 **[!UICONTROL 表格]** 元件，然後點選「設定」(![設定](assets/configure-icon.svg))圖示。
+
+1.在 **[!UICONTROL 欄寬]** 欄位來指定表格中每欄的比例寬度。 例如，對於包含3欄的表格，將2,4,6指定為 **[!UICONTROL 欄寬]** 欄位會將第一欄的欄寬設為2/12，第二欄設為4/12，第三欄設為6/12。 2/12：第一列的寬度是表寬度的六分之一。 同樣，4/12將第二列寬度設定為表寬的三分之一，而6/12將第三列寬度設定為表寬的一半。
+
 ## 配置表樣式 {#configure}
 
 可以使用頁面工具欄中的樣式模式來定義表的樣式。 執行下列步驟以切換至樣式模式並編輯表格樣式
@@ -126,7 +135,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可以變更LESS變數的值，以變更標題和內文列的顏色主題。 如需詳細資訊，請參閱 [主題 [!DNL AEM Forms]](themes.md)
+>您可以變更標題和內文列的值，以變更顏色主題 [較少變數](https://lesscss.org//). 如需詳細資訊，請參閱 [AEM Forms主題](/help/forms/themes.md).
 
 ## 動態新增或刪除列 {#add-or-delete-a-row-dynamically}
 
@@ -136,9 +145,9 @@ ht-degree: 0%
 1. 在「重複設定」索引標籤中，指定限制表格中列數的最小和最大計數。
 1. 按一下 **完成**.
 
-在執行階段中，您會看到 **+** 和 *-* 按鈕添加或刪除行。
+在執行階段或預覽時，您會看到 **+** 和 ![刪除按鈕](/help/forms/assets/Smock_Delete.svg) 按鈕添加或刪除行。
 
-![add-delete-rows-dynamically](assets/add-delete-rows-dynamically.png)
+![add-delete-rows-dynamically](assets/add-delete-layout.png)
 
 >[!NOTE]
 >
@@ -146,7 +155,7 @@ ht-degree: 0%
 
 ## 表中的運算式 {#expressions-in-a-table}
 
-適用性Forms中的表格可讓您在JavaScript中撰寫運算式，以誘導行為，例如顯示或隱藏表格或列、加總所有數字並顯示儲存格中的總計、啟用或停用儲存格、驗證使用者輸入等。 這些運算式使用適用性Forms指令碼模型API。
+適用性表單中的表格可讓您在JavaScript中撰寫運算式，以誘導行為，例如顯示或隱藏表格或列、加總所有數字並顯示儲存格中的總計、啟用或停用儲存格、驗證使用者輸入等。 這些運算式使用適用性表單指令碼模型API。
 
 雖然表格和列僅支援可見性運算式，以便根據運算式傳回的值來控制其可見性，但儲存格支援下列運算式：
 
@@ -164,11 +173,11 @@ ht-degree: 0%
 
 表或行的可見性表達式可在其相應「編輯」元件對話框的「面板屬性」頁簽中定義。 儲存格的運算式可在其「編輯」元件對話方塊的「指令碼」索引標籤中定義。
 
-如需適用性Forms類別、事件、物件和公用API的完整清單，請參閱 [適用性Forms的JavaScript程式庫API參考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+如需適用性表單類別、事件、物件和公用API的完整清單，請參閱 [適用於最適化表單的JavaScript程式庫API參考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## 行動版面 {#mobile-layouts}
 
-適用性Forms中的表格因其流暢且回應式的配置，提供無與倫比的體驗行動裝置。 [!DNL AEM Forms] 為表格提供兩種類型的行動配置 — 左側標題和可折疊欄。
+適用性表單中的表格因其流暢且回應式的配置，提供無與倫比的體驗行動裝置。 AEM Forms提供兩種類型的表格行動配置 — 左側標題和可折疊欄。
 
 您可以從表格的「編輯」元件對話方塊的「樣式」索引標籤，為表格設定行動版面。
 
@@ -204,7 +213,7 @@ ht-degree: 0%
 
 ## 合併表格中的資料 {#merge-data-in-a-table}
 
-適用性Forms中的表格可讓您使用XML檔案中的資料，在執行階段填入表格。 資料XML檔案可駐留在電腦的本地檔案系統中，其中 [!DNL AEM Forms] 伺服器正在運行或在CRX儲存庫中。
+適用性表單中的表格可讓您使用XML檔案中的資料，在執行階段填入表格。 資料XML檔案可位於執行AEM Forms伺服器之電腦的本機檔案系統或CRX存放庫中。
 
 讓我們舉一下要用XML檔案中的資料填充的銀行交易摘要表。
 
@@ -278,23 +287,23 @@ ht-degree: 0%
 
 在範例XML中，列的資料由 `<Row1>` 標籤，即表格中列的元素名稱。 在 `<Row1>` 標籤，則每個儲存格的資料會在標籤中定義其元素名稱，例如 `<tableItem1>`, `<tableItem2>`, `<tableItem3>`，和 `<type>`.
 
-若要在執行階段將此資料與表格合併，我們需要將包含表格的適用性表單指向停用wcmmode時的絕對XML位置。 例如，如果適用性表單位於 *https://`servername`/myForms/bankTransaction.html* 而資料XML檔案儲存在 *C:/myTransactions/bankSummary.xml*，您可以在下列URL中檢視含有資料的表格：
+若要在執行階段將此資料與表格合併，我們需要將包含表格的最適化表單指向停用wcmmode時的絕對XML位置。 例如，如果適用性表單位於 *https://localhost:4502/myForms/bankTransaction.html* 而資料XML檔案儲存在 *C:/myTransactions/bankSummary.xml*，您可以在下列URL中檢視含有資料的表格：
 
-*https://`servername`/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
+*https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
 ![資料合併表](assets/data-merged-table.png)
 
 ## 使用XDP元件和XSD複雜類型 {#use-xdp-components-and-xsd-complex-types}
 
-如果您根據XFA表單範本建立適用性表單，「AEM內容尋找器」的「資料模型」標籤中會提供XFA元素。 您可以在適用性表單中拖放這些XFA元素，包括表格。
+如果您根據XFA表單範本建立最適化表單，「AEM內容尋找器」的「資料模型」標籤中會提供XFA元素。 您可以在最適化表單中拖放這些XFA元素，包括表格。
 
-XFA表格元素會對應至表格元件，並在適用性Forms中立即可用。 XDP表格的所有屬性和功能在移入適用性表單時都會保留，而且您可以像處理原生適用性表單表格一樣對其執行任何操作。 例如，如果XDP表格中的列標示為可重複，則也會在將其放入適用性Forms時重複。
+XFA表格元素會對應至表格元件，並在最適化表單中立即可用。 XDP表格的所有屬性和功能在移入最適化表單時都會保留，您可以像使用原生最適化表單表格一樣對其執行任何操作。 例如，如果XDP表格中的列標示為可重複，則也會在最適化表單中放置時重複該列。
 
 此外，您可以拖放XDP子表單，在表格中新增一列。 但請注意，刪除巢狀子表單並無作用。
 
 >[!NOTE]
 >
->沒有標題列的XDP表格將不會對應至適用性表單表格元件。 而是會以流暢的版面配置對應至最適化表單面板元件。 此外，當您將巢狀表格從XDP新增至適用性表單時，外表會轉換為面板，同時保留內表。
+>沒有標題列的XDP表格將不會對應至最適化表單表格元件。 而是會以流暢的版面配置，對應至最適化表單面板元件。 此外，當您將巢狀表格從XDP新增至最適化表單時，外表會轉換為面板，同時保留內表。
 
 此外，您可以拖放一組XSD複雜類型元素，以建立表格列。 系統會在您放置元素的列正下方建立新列。 使用XSD複雜類型元素建立的儲存格會維護XSD的系結參考。 您也可以將元素拖放至儲存格，以XSD複雜類型元素取代內文儲存格。
 
@@ -310,4 +319,3 @@ XFA表格元素會對應至表格元件，並在適用性Forms中立即可用。
 * 預設表格中的每個主體單元格都具有與其關聯的預定義元素名稱。 如果您在適用性表單中新增其他表格，新表格中的預設內文儲存格將與第一個表格中的元素名稱相同。 在這種情況下，提交表單時產生的資料將僅包含其中一個表格的預設內文儲存格中的資料。 因此，請務必重新命名預設內文儲存格的元素名稱，以讓這些名稱在各表格中保持唯一，並避免資料遺失。
 
    請注意，這僅適用於預設的內文儲存格。 如果向表中添加更多行或列，則會自動為非預設主體單元格生成唯一的元素名稱。
-
