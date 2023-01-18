@@ -1,15 +1,15 @@
 ---
-title: 產生伺服器端API的存取權杖
+title: 為伺服器端 API 產生存取權杖
 description: 了解如何產生安全的JWT代號，以便利第三方伺服器與AEMas a Cloud Service之間的通訊
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: fc49b004a61d5f981ac61cca684dc0bacf843443
+source-git-commit: dd6753c6605d5c48c54d173803a541db54991481
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
 
-# 簡介 {#introduction}
+# 為伺服器端 API 產生存取權杖 {#generating-access-tokens-for-server-side-apis}
 
 有些架構依賴從AEM基礎架構外的伺服器上托管的應用程式對AEM進行as a Cloud Service的呼叫。 例如，呼叫伺服器的行動應用程式，接著會向AEMas a Cloud Service提出API請求。
 
