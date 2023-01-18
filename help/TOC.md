@@ -9,9 +9,9 @@ breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 077ab3c83e3d97cfdec939081b5862e173f17603
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3834'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
