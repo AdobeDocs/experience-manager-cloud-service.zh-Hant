@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 的內容片段模式來建立結構，使�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
+source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 38%
+source-wordcount: '477'
+ht-degree: 72%
 
 ---
 
@@ -17,60 +17,46 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="為您的應用程式建立內容結構"
->abstract="依照這系列互動式指南，您將學習如何建立結構（稱為內容片段模型），此結構可作為無頭式內容的基礎。"
+>abstract="當您依照我們的互動式指南系列進行時，您將瞭解如何建立當作您 Headless 內容基礎的結構 (也稱為內容片段模式)。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
->title="啟動模型控制台"
->abstract="讓我們來探索如何為Adobe Experience Manager as a Cloud Service中的內容建立可重複使用的架構（稱為內容片段模型）。 觀看影片以了解這是重要步驟的原因。 <br><br>按一下下方的按鈕，然後依照本指南操作，在新索引標籤中啟動此模組。"
+>title="啟動模式主控台"
+>abstract="讓我們探討如何在 Adobe Experience Manager as a Cloud Service 中，為您的內容建立一個可重複使用的結構描述，稱為內容片段模式。觀看影片，瞭解為什麼這個步驟很重要。<br><br>點選下方按鈕，在新標籤中啟動此單元，然後按照本指南進行操作。"
 >additional-url="https://video.tv.adobe.com/v/3413261" text="內容結構介紹影片"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
->title="恭喜！您學習了如何建立內容片段模型以呈現無頭資料的結構，並採取第一步，以縮放和標準的方式傳送全頻道內容。"
+>title="恭喜！您已經瞭解如何建立內容片段模式來表示 Headless 資料的結構，並邁出了以縮放和標準方式提供全通路內容的第一步。"
 >abstract=""
 
 ## 建立一個模式 {#create-model}
 
-按一下 **啟動模型控制台** 按鈕會在新索引標籤中開啟內容片段模型主控台。
+「內容片段模型」主控台會在新索引標籤中開啟。 您可以將內容片段模式主控台視為模式庫，您可以在其中建立新模式和管理現有模式。
 
-![內容片段模式控制台](assets/content-structure/content-fragment-model-console.png)
+1. 按一下 **建立** 按鈕，開始建立內容片段模型。
 
-將內容片段模型主控台想像成您的模型程式庫，您可在其中建立新模型並管理現有模型。 您的控制台一開始是空的，所以我們來建立一個新模式！
+1. 「建立模式」精靈隨即啟動，它會引導您。提供必填資訊。
 
-1. 在內容片段控制台的螢幕右上方，點選「**建立**」按鈕，即可開始建立一個內容片段模式。
+   * **模式標題** - 這是模式的簡短描述，通常會指明模式的用途。
+   * **啟用模式** - 此選項依預設為勾選，必須勾選才能根據此模式建立內容片段。
 
-1. 「建立模型」嚮導將啟動，該嚮導將引導您。
+1. 填入必填欄位後，在左上方按一下「**建立**」以建立模式。
 
-   ![內容片段模式精靈](assets/content-structure/model-wizard.png)
+1. 「**成功** 」對話框會確認模式已建立。按一下 **開啟** 在對話方塊中，在新索引標籤的編輯器中開啟新的內容片段模型。 然後繼續下一步，將資料欄位新增至模型。
 
-   提供必填資訊。
-
-   * **模型標題**  — 這是模型的簡要描述，通常指明模型的目的。
-   * **啟用模型**  — 預設會核取此選項，且必須勾選此選項才能根據此模型建立內容片段。
-
-1. 填入必填欄位後，按一下 **建立** ，以建立模型。
-
-1. 「**成功** 」對話框會確認模式已建立。
-
-   ![建立新內容片段模式的成功對話框](assets/content-structure/success.png)
+![建立內容片段模型的步驟二和步驟三](assets/do-not-localize/create-model-2-3.png)
 
 ## 新增欄位至模式 {#configure-model}
 
-使用模型之前，需要定義其資料的結構。
+您必須先定義其資料結構，才能使用模型。 內容片段模型編輯器可在此設定定義模型內容的資料類型和屬性。
 
-1. 按一下 **開啟** 在 **成功** 對話方塊，以在「內容片段模型編輯器」中開啟新模型，您可在此定義其欄位。
-
-1. 從拖曳欄位 **資料類型** 面板，並將其拖放至內容片段模型。
-
-   ![新增資料類型](assets/content-structure/drop-fields.png)
+1. 在編輯器右側，從「**資料類型**」面板中拖動一個欄位，並將其放到您的內容片段模式上。
 
 1. 放好資料類型後，「**資料類型**」欄會自動變更為「**屬性**」標籤，您可以在其中定義您剛剛放好的詳細資料類型。
 
-   ![資料欄位的「屬性」標籤](assets/content-structure/data-type-properties.png)
-
 1. 新增內容片段模式所需的所有欄位後，在視窗右上方按一下「**儲存**」。
 
-模型會儲存，您會返回「內容片段模型控制台」，視需要可在其中新增更多模型。
+1. 模型會儲存，然後您會返回「內容片段模型控制台」。
 
-![模組完成](assets/content-structure/content-fragment-model-console-populated.png)
+![將欄位添加到模型的步驟一、步驟二和步驟三](assets/do-not-localize/define-model-fields-1-2-3.png)
