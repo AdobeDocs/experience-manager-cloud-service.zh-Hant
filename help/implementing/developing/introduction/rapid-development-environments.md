@@ -2,10 +2,10 @@
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
 hidefromtoc: true
-source-git-commit: 983901387d059a98942b4f7c533770a55dd4ff4a
+source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
 workflow-type: tm+mt
-source-wordcount: '2114'
-ht-degree: 7%
+source-wordcount: '2350'
+ht-degree: 6%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 >[!AVAILABILITY]
 >
->此功能尚未提供。
+>此功能預計在2月整個月逐步推出給客戶。
 
 為了部署變更，目前的雲端開發環境需要使用採用廣泛程式碼安全性和品質規則的程式，稱為CI/CD管道。 對於需要快速和迭代更改的情況，Adobe引入了快速開發環境（簡稱RDE）。
 
@@ -30,9 +30,7 @@ RDE可用於程式碼、內容，以及Apache或Dispatcher設定。 與一般雲
 
 通常，單一開發人員會在指定時間使用RDE來測試和除錯特定功能。 完成開發工作階段時，RDE可重設為下次使用的預設狀態。
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
-
-Additional RDEs may be purchased for Production programs -->
+其他RDE可授權給生產（非沙箱）方案。
 
 ## 在程式中啟用RDE {#enabling-rde-in-a-program}
 
@@ -388,14 +386,17 @@ RDE重設程式一旦啟動，通常需要幾分鐘的時間才能完成，並�
 
 基於這些原因，建議您在RDE環境上驗證程式碼後，使用非生產管道將程式碼部署至雲端開發環境。 最後，使用生產管道部署前，請先測試程式碼。
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
+另請注意下列解決方案專屬考量事項：
 
-## How many RDEs do I need? {#how-many-rds-do-i-need}
+* RDE目前不支援檢視和偵錯使用Cloud Manager前端管道部署的前端程式碼。
 
-The purchase of additional RDEs for Production programs will be possible beginning with late January.
 
-The number of RDEs needed depends on the make-up and processes of an organization. The most flexible model is where an organization purchases a dedicated RDE for each one of their AEM CS developers. In this model, each developer can test their code on the RDE without needing to coordinate with other team members around whether an RDE environment is available.
+## 我需要多少個RDE? {#how-many-rds-do-i-need}
 
-At the other extreme, a team with a single RDE may use internal processes to coordinate which developer can use the environment at a given time. This can possibly be whenever a developer has hit an intermediate feature milestone and is ready to validate in a Cloud environment where they can quickly make the changes they need.
+每個授權解決方案都提供RDE，而Adobe也提供額外的RDE，這些RDE可授權給生產（非沙箱）方案。
 
-An intermediate model is one where an organization purchases a number of RDEs that will create a situation in which not every developer will have a dedicated environment, but there is a greater likelihood of an unused RDE being available. One strategy could be to allocate an RDE per scrum team or major feature. Internal processes may be used to coordinate usage of the environments. -->
+需要的RDE數量取決於組織的組成和流程。 最靈活的模型是，組織可為每位AEM Cloud Service開發人員購買專屬的RDE。 在此模型中，每個開發人員都可以在RDE上測試其程式碼，而不需就RDE環境是否可用與其他團隊成員進行協調。
+
+在另一個極端，具有單一RDE的團隊可能會使用內部流程來協調哪些開發人員可以在指定時間使用環境。 開發人員只要達到中繼功能里程碑並準備好在雲端環境中驗證，就能快速進行所需的變更，就可能是此情形。
+
+中間模型是指組織購買多個RDE，因此未使用RDE可用的可能性較大的模型。 一個策略可能是為每個掃描團隊或主要功能分配RDE。 內部過程可用於協調環境的使用。
