@@ -3,7 +3,7 @@ title: AEM GraphQL API以搭配內容片段使用
 description: 了解如何以AEM GraphQL APIas a Cloud Service使用Adobe Experience Manager(AEM)中的內容片段來傳送無頭內容。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 24dda46f8a3ac5179ae3bc95fba38c5d1f0660ca
 workflow-type: tm+mt
 source-wordcount: '4174'
 ht-degree: 1%
@@ -241,15 +241,15 @@ GraphQL for AEM支援類型清單。 所有支援的內容片段模型資料類�
 
 | 內容片段模型 — 資料類型 | GraphQL類型 | 說明 |
 |--- |--- |--- |
-| 單行文字 | 字串， [字串] |  用於簡單字串，例如作者名稱、位置名稱等。 |
-| 多行文本 | 字串， [字串] |  用於輸出文本，例如物品的本體 |
-| 數量 |  漂浮， [浮點數] | 用於顯示浮點數和規則數 |
-| 布林值 |  布林值 |  用於顯示複選框→簡單的true/false語句 |
-| 日期和時間 | 日曆 |  用於以ISO 8601格式顯示日期和時間。 根據選取的類型，AEM GraphQL中有三種可用的方式： `onlyDate`, `onlyTime`, `dateTime` |
-| 列舉 |  String |  用於從建立模型時定義的選項清單中顯示選項 |
-|  標記 |  [String] |  用來顯示代表AEM中所用標籤之字串的清單 |
-| 內容參考資料 |  字串， [字串] |  用於顯示AEM中其他資產的路徑 |
-| 片段引用 |  *模型類型* |  用於參照建立模型時定義的特定模型類型的另一個內容片段 |
+| 單行文字 | 字串， [字串] | 用於簡單字串，例如作者名稱、位置名稱等。 |
+| 多行文本 | 字串， [字串] | 用於輸出文本，例如物品的本體 |
+| 數量 | 漂浮， [浮點數] | 用於顯示浮點數和規則數 |
+| 布林值 | 布林值 | 用於顯示複選框→簡單的true/false語句 |
+| 日期和時間 | 日曆 | 用於以ISO 8601格式顯示日期和時間。 根據選取的類型，AEM GraphQL中有三種可用的方式： `onlyDate`, `onlyTime`, `dateTime` |
+| 列舉 | 字串 | 用於從建立模型時定義的選項清單中顯示選項 |
+| 標記 | [String] | 用來顯示代表AEM中所用標籤之字串的清單 |
+| 內容參考資料 | 字串， [字串] | 用於顯示AEM中其他資產的路徑 |
+| 片段引用 | *模型類型* | 用於參照建立模型時定義的特定模型類型的另一個內容片段 |
 
 ### 協助欄位 {#helper-fields}
 
