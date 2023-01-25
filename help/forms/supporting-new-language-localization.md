@@ -3,7 +3,7 @@ title: 支援最適化表單本地化的新地區設定
 seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms可讓您新增當地語系化適用性表單的地區設定。 英語(en)、西班牙語(es)、法語(fr)、義大利語(it)、德語(de)、日語(ja)、葡萄牙語 — 巴西語(pt-BR)、中文(zh-CN)、中文 — 台灣語(zh-TW)和韓語(ko-KR)地區設定。
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: f8bbc6605e77cf2858c69dae96e9ab32698d1f16
+source-git-commit: eb722054f6a51320a7772bf666f656418f8392cd
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%
@@ -34,8 +34,8 @@ AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利�
 1. [複製存放庫](#1-clone-the-repository-clone-the-repository)
 1. [向GuideLocalizationService服務添加區域設定](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [添加特定於語言環境名稱的資料夾](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-1. [為地區設定新增XFA用戶端程式庫](#3-add-xfa-client-library-for-a-locale)
-1. [為地區設定新增適用性表單用戶端程式庫](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+3.1 [為地區設定新增XFA用戶端程式庫](#3-add-xfa-client-library-for-a-locale)
+3.2 [為地區設定新增適用性表單用戶端程式庫](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [為字典添加地區支援](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [提交儲存庫中的更改並部署管道](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
