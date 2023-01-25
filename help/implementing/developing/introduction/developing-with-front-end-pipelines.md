@@ -2,7 +2,7 @@
 title: 使用前端管道開發 Sites
 description: 前端管道更加獨立，開發過程可以獲得相當的速度。 本檔案說明應提供的前端建置程式的一些特定考量。
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
+source-git-commit: 2afdd0682d1baf39d737ee7a5721657e639739a7
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ### 節點版本 {#node-versions}
 
-預設情況下，前端管道使用Node 14，但16和16也可用。
+預設情況下，前端管道使用Node 14，但12和16也可用。
 
 您可以使用 `CM_CUSTOM_VAR_NODE_VERSION` 環境變數來設定所需的版本。
 
