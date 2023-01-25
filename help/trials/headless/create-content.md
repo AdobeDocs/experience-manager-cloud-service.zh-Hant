@@ -4,10 +4,10 @@ description: 使用您先前建立的內容片段模式來建立可用來編寫�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: 4a99ce530f3ca13f52648ffc0782d62cd5ebf395
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 95%
+source-wordcount: '459'
+ht-degree: 100%
 
 ---
 
@@ -22,8 +22,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="啟動內容片段主控台"
->abstract="建立可在您的應用程式和網站上無縫執行的高品質一致內容，能帶來出色的客戶體驗。本單元將引導您建立您的第一個內容片段，以說明如何實際操作。觀看影片，瞭解為什麼這個步驟很重要。<br><br>點選下方按鈕，在新標籤中啟動此單元，然後按照本指南進行操作。"
->additional-url="https://video.tv.adobe.com/v/328618" text="建立新內容介紹影片"
+>abstract="建立可在您的應用程式和網站上無縫執行的高品質一致內容，能帶來出色的客戶體驗。本單元將引導您建立您的第一個內容片段，以說明如何實際操作。<br><br>點選下方按鈕，在新標籤中啟動此單元，然後按照本指南進行操作。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
@@ -32,7 +31,7 @@ ht-degree: 95%
 
 ## 建立內容片段 {#create-fragment}
 
-內容片段代表您的 Headless 內容，且以預先定義的結構為基礎，稱為內容片段模式。將內容片段主控台視為您的 Headless 內容資料庫。 使用它建立新的內容片段並管理現有片段。
+內容片段代表您的 Headless 內容，且以預先定義的結構為基礎，稱為內容片段模式。將內容片段主控台視為您的 Headless 內容資料庫。 使用該控制台來建立新的內容片段並管理現有片段。
 
 1. 在主控台右上方，點選或按一下「**建立**」按鈕。
 
@@ -44,7 +43,7 @@ ht-degree: 95%
 
 1. 點選或按一下「**建立並開啟**」。
 
-![建立新內容片段](assets/do-not-localize/create-content-3-4-5.png)
+![正在建立新內容片段](assets/do-not-localize/create-content-3-4-5.png)
 
 ## 新增內容至您的內容片段 {#add-content}
 
@@ -60,7 +59,7 @@ ht-degree: 95%
 
 1. **發佈內容片段**&#x200B;對話框隨即出現。AEM 會自動執行參考檢查，以確保為您的內容片段發佈所有必要的資源。 在這種情況下，您還需要發佈您建立的模式。 點選或按一下「**發佈**」。
 
-   ![發佈和參考檢查](assets/do-not-localize/publish-4.png)
+   ![發布和引用檢查](assets/do-not-localize/publish-4.png)
 
 1. 這項內容發佈會在橫幅中確認。
 

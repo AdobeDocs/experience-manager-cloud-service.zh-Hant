@@ -4,10 +4,10 @@ description: 使用範例 React 應用程式，了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: c811268d4882204c5a5610c9f45cd344df50b8dd
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 88%
+source-wordcount: '1028'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,6 @@ ht-degree: 88%
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="啟動內容片段編輯器"
 >abstract="您的 AEM Headless 試用版與範例 React 應用程式整合在一起，因此大家無需開發時間即可獨立管理內容，這一切就是如此簡單。<br><br>點選下方，在新標籤中啟動此單元，然後按照本指南進行操作。"
->additional-url="https://video.tv.adobe.com/v/328618" text="自訂應用程式介紹影片"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
@@ -32,7 +31,7 @@ ht-degree: 88%
 
 ## 預覽應用程式 {#preview}
 
-從內容片段編輯器開始，您的AEM無標題試用版隨附的範例應用程式已載入。 範例應用程式由透過GraphQL傳送的內容片段提供技術支援。 使用內容片段編輯器，透過預覽範例應用程式來熟悉編輯器。
+您從內容片段編輯器開始，您的 AEM Headless 試用版隨附的範例應用程式已載入。範例應用程式由透過 GraphQL 提供的內容片段支援。使用內容片段編輯器透過預覽範例應用程式來熟悉編輯器。
 
 1. 在編輯器畫面的右上方，點選或按一下「**預覽**」按鈕。
 
@@ -48,13 +47,13 @@ ht-degree: 88%
 
 1. 點選或按一下「**峽谷中的越野騎士**」，在「**面版**」區段中。
 
-   ![選取文字面板](assets/do-not-localize/edit-header-1.png)
+   ![選擇文本面板](assets/do-not-localize/edit-header-1.png)
 
 1. 編輯器會開啟越野車的應用程式標題面板。 每個面板都由圖層組成，代表構成體驗的不同影像和文字。
 
-1. 選取文字層 **峽谷文本層中的Mtn腳踏車** 在編輯器中開啟圖層的詳細資訊。 該圖層由多個內容片段組成，這些片段控制應用程式面板中顯示的文字。
+1. 選擇文本層 **Mtn Biker in Canyon Text Layer** 在編輯器中打開層的詳細資訊。該圖層由多個內容片段組成，這些片段控制應用程式面板中顯示的文字。
 
-1. 選取「**峽谷中的越野騎士標題**」文字項目。 這會開啟內容片段編輯器，顯示此片段的內容，並允許您修改它。
+1. 選取「**峽谷中的越野騎士標題**」文字項目。 這將開啟「內容片段」編輯器，顯示該片段內容並允許您修改內容。
 
 1. 將文字從 `Your next great adventure is calling` 變更為 `Choose your own adventure`。 此變更會由編輯器自動儲存。
 
@@ -68,7 +67,7 @@ ht-degree: 88%
 
 現在您已經修改了應用程式中的標題，請嘗試變更影像。 
 
-1. 從預覽返回內容片段編輯器的瀏覽器索引標籤。
+1. 從預覽返回內容片段編輯器的瀏覽器標籤。
 
 1. 您需要返回到內容片段編輯器中的正確位置。編輯器左上方的階層連結顯示您在內容層次結構中的位置。 在階層連結中，點選或按一下「**峽谷中的越野騎士**」，可返回該頁面。
 
@@ -78,7 +77,7 @@ ht-degree: 88%
 
 1. 點選或按一下 **X** 以刪除騎士的影像。 影像會消失且編輯器會顯示錯誤，因為影像是此內容片段模式所需的資料。
 
-   ![從片段中移除影像](assets/do-not-localize/swap-image-4.png)
+   ![從片段移除影像](assets/do-not-localize/swap-image-4.png)
 
 1. 點選或按一下&#x200B;**新增資產**。
 
@@ -98,7 +97,7 @@ ht-degree: 88%
 
 ![可購物機會範例](assets/do-not-localize/example-shoppable-moment.png)
 
-1. 從預覽標籤返回到內容片段編輯器的瀏覽器頁簽。
+1. 從預覽分頁返回內容片段編輯器的瀏覽器標籤。
 
 1. 您需要返回到內容片段編輯器中的正確位置。編輯器左上方的階層連結顯示您在內容層次結構中的位置。 在階層連結中，點選或按一下「**WKND 首頁**」，可返回該頁面。
 
