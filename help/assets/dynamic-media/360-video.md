@@ -4,9 +4,9 @@ description: 了解如何在Dynamic Media中使用360和虛擬現實(VR)視訊�
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
+source-git-commit: 419ec6604ee8c93510cb8bf4e1d46bc9b9c9383a
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Dynamic Media包含360個視訊資產的原生支援。 依預設，檢視或播
 
 選擇 [空間站360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) 開啟瀏覽器視窗並觀看360°影片。 在視訊播放期間，將指標拖曳至新位置以變更檢視角度。
 
-![360影片範例](assets/6_5_360videoiss_simplified.png)
+![空間站360視頻中的視頻幀](assets/6_5_360videoiss_simplified.png)
 *360號空間站的視頻幀*
 
 ## 360/VR影片和Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
@@ -42,7 +42,7 @@ Dynamic Media包含360個視訊資產的原生支援。 依預設，檢視或播
 
 360個視訊資產已上傳至 [!DNL Experience Manager] 標示為 **多媒體** 在「資產」頁面上，類似於一般視訊資產。
 
-![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
+![卡片檢視中顯示的已上傳360視訊資產](assets/6_5_360video-selecttopreview.png)
 *卡片檢視中顯示的已上傳360視訊資產。 資產標示為多媒體。*
 
 **上傳要與360視訊檢視器搭配使用的資產：**
@@ -106,25 +106,25 @@ Start by uploading 360 Videos.
 
 1. 在 **[!UICONTROL 資產]**，導覽至您建立的現有360影片。 若要在預覽模式中開啟，請選取360視訊資產。
 
-   ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
+   ![已上傳360個視訊資產的螢幕擷圖，如Experience Manager的「卡片」檢視所示。](assets/6_5_360video-selecttopreview-1.png)
 
    若要預覽視訊，請選取360視訊資產。
 
 1. 在預覽頁面的左上角附近，選取下拉式清單，然後選取 **[!UICONTROL 檢視器]**.
 
-   ![6_5_360視訊預覽檢視器](assets/6_5_360video-preview-viewers.png)
+   ![選取「檢視器」以查看可用視訊檢視器清單的螢幕擷圖。](assets/6_5_360video-preview-viewers.png)
 
    從「檢視器」清單中，選取 **[!UICONTROL Video360_social]**，然後執行下列其中一項操作：
 
    * 若要變更靜態場景的觀看角度，請拖曳指標穿過視訊。
    * 若要開始播放，請選取視訊的 **[!UICONTROL 播放]** 按鈕。 當視訊播放時，拖曳指標至視訊上以變更檢視角度。
 
-   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*360視頻螢幕截圖。*
+   ![選取Video360_Social檢視器以預覽360度視訊之使用者的螢幕擷圖。](assets/6_5_360video-preview-video360-social.png)*360視頻螢幕截圖。*
 
    * 從「檢視器」清單中，選取 **[!UICONTROL Video360VR]**.
 
       虛擬現實(VR)視訊是沈浸式視訊內容，可透過虛擬現實頭戴式裝置存取。 和普通視訊一樣，當您使用360°視訊相機來錄制或擷取視訊時，您一開始就會建立VR視訊。
-   ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
+   ![將滑鼠指針懸停在Video360VR查看器選項上的用戶螢幕截圖。](assets/6_5_360video-preview-video360vr.png)
    *360 VR視訊螢幕擷圖。*
 
 1. 在預覽頁面的右上方附近，選取 **[!UICONTROL 關閉]**.
