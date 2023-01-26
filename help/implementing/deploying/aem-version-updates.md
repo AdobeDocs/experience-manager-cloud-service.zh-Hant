@@ -1,21 +1,21 @@
 ---
-title: AEM版本更新
-description: AEM版本更新
+title: AEM 版本更新
+description: AEM 版本更新
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
+source-git-commit: c3e1559923699d300d78a71195bd5658c3323331
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# AEM版本更新 {#aem-version-updates}
+# AEM 版本更新 {#aem-version-updates}
 
 ## 簡介 {#introduction}
 
-AEM as a Cloud Service現在使用持續整合和持續傳送(CI/CD)，確保您的專案使用最新的AEM版本。 這表示生產和測試執行個體會更新為最新的AEM版本，使用者的服務不會中斷。
+AEM as a Cloud Service現在使用持續整合和持續傳送(CI/CD)，確保您的專案使用最新的AEM版本。 這表示生產和測試執行個體會更新為最新的AEM版本，而不會中斷使用者的服務。
 
 >[!NOTE]
 >

@@ -1,13 +1,14 @@
 ---
-title: AEM 雲端服務中 AEM Sites 的重大變更
-description: AEM 雲端服務中 AEM Sites 的重大變更
+title: AEM Cloud Service 中 AEM Sites 的重大變更
+description: AEM Cloud Service 中 AEM Sites 的重大變更
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 7becee73a64fbfd2b4f89c307f63868461b0e853
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '534'
 ht-degree: 20%
 
 ---
+
 
 # AEM Sites as a Cloud Service 的重大變更 {#notable-changes}
 
@@ -45,9 +46,9 @@ AEM Sitesas a Cloud Service的變更及新增如下：
 
 ## 新參考網站和教學課程 {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/)，此新的AEM參考網站已更新並發佈，以反映使用AEM建立網站的最佳實務，以及AEM中可用的完整功能、元件和部署模型集。 新的參考網站和 [隨附教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 涵蓋基本主題，例如專案設定、核心元件、可編輯範本、用戶端程式庫，以及使用Adobe Experience Manager Sites開發元件。
+[WKND](https://wknd.site/)，此新的AEM參考網站已更新並發佈，以反映使用AEM建立網站的最佳實務，以及AEM中提供的完整功能、元件和部署模型。 新的參考網站和 [隨附教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant) 涵蓋基本主題，例如專案設定、核心元件、可編輯的範本、用戶端程式庫，以及使用Adobe Experience Manager Sites開發元件。
 
-之前，We.Retail預設會與AEM一起安裝（生產模式中啟動時除外）。  現在，以後預設不會安裝參考網站。  而是 [git repo](https://github.com/adobe/aem-guides-wknd/) 和 [隨附教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 提供更新的WKND參考網站代碼。
+之前，We.Retail預設會與AEM一起安裝（生產模式中啟動時除外）。 在AEMas a Cloud Service中，預設不安裝參考網站。 而是 [git repo](https://github.com/adobe/aem-guides-wknd/) 和 [隨附教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant) 提供更新的WKND參考網站代碼。
 
 ## 運行時無法使用的功能 {#capabilities-not-available-at-runtime}
 
