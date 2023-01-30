@@ -2,9 +2,9 @@
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
 hidefromtoc: true
-source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
+source-git-commit: c8cb222cdba805652123df852410ffed8b047ceb
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2446'
 ht-degree: 6%
 
 ---
@@ -390,6 +390,20 @@ RDE重設程式一旦啟動，通常需要幾分鐘的時間才能完成，並�
 ![從環境卡重置RDE](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 如需如何使用Cloud Manager管理環境的詳細資訊，請參閱 [Cloud Manager檔案。](/help/implementing/cloud-manager/manage-environments.md)
+
+## 執行模式 {#runmodes}
+
+您可以在資料夾名稱上使用尾碼來套用RDE特定OSGI設定，如下列範例所示：
+
+* `config.rde`
+* `config.author.rde`
+* `config.publish.rde`
+
+請參閱 [runmode檔案](/help/implementing/deploying/overview.md#runmodes) ，了解有關運行模式的一般資訊。
+
+>[!NOTE]
+>
+>RDE OSGI配置是唯一的，因為它繼承了由捆綁包聲明的任何OSGI屬性的值 `dev` 運行模式。
 
 ## 記錄 {#logging}
 
