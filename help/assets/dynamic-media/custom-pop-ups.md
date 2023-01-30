@@ -1,17 +1,18 @@
 ---
-title: 使用Quickview建立自訂快顯視窗
-description: 「了解預設快速檢視如何用於電子商務體驗，借此顯示含有產品資訊的快顯視窗以促進購買。 您可以觸發自訂內容以在快顯視窗中顯示。」
+title: 使用 Quickview 建立自訂快顯視窗
+description: 了解預設Quickview如何用於電子商務體驗，借此顯示含有產品資訊的快顯視窗以促進購買。 您可以觸發自訂內容以在快顯視窗中顯示。
+contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 462ce45d24cf8bcad6963011d2d57d9d7da45550
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 使用Quickview建立自訂快顯視窗 {#using-quickviews-to-create-custom-pop-ups}
+# 使用 Quickview 建立自訂快顯視窗 {#using-quickviews-to-create-custom-pop-ups}
 
 預設的「快速檢視」用於電子商務體驗，其中會顯示包含產品資訊的快顯視窗以促進購買。 不過，您可以觸發自訂內容以顯示在快顯視窗中。 根據您使用的檢視器，客戶可以選取熱點、縮圖影像或影像地圖，以查看資訊或相關內容。
 
@@ -36,11 +37,11 @@ Dynamic Media中的下列檢視器支援Quickview:
     <td><strong>若要建立快速檢視，請完成下列步驟</strong></td>
     </tr>
     <tr>
-    <td>互動影像</td>
+    <td>互動式影像</td>
     <td><a href="/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">向影像橫幅添加熱點</a>.</td>
     </tr>
     <tr>
-    <td>互動影片</td>
+    <td>互動式影片</td>
     <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">為視訊新增互動功能</a>.</td>
     </tr>
     <tr>

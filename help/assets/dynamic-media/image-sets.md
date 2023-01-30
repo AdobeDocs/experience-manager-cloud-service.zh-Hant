@@ -1,10 +1,11 @@
 ---
 title: 影像集
 description: 了解如何在Dynamic Media中使用影像集。
+contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 5%
@@ -42,7 +43,7 @@ ht-degree: 5%
 
 快速啟動並運行：
 
-1. 選填。[建立批集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md) 並將其套用至上傳回轉集影像的新資料夾。
+1. 選用. [建立批集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md) 並將其套用至上傳回轉集影像的新資料夾。
 
    批次集預設集可協助您自動建立影像集。
 

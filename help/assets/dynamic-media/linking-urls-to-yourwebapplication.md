@@ -1,16 +1,17 @@
 ---
-title: 將URL連結至您的Web應用程式
+title: 將 URL 連結至您的網頁應用程式
 description: 了解如何在Dynamic Media中將URL連結至您的Web應用程式。
+contentOwner: Rick Brough
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1275'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
-# 將URL連結至您的Web應用程式 {#linking-urls-to-your-web-application}
+# 將 URL 連結至您的網頁應用程式 {#linking-urls-to-your-web-application}
 
 您的網站和應用程式會透過URL呼叫存取Dynamic Media服務。 發佈資產後，Dynamic Media會啟用參考資產的URL字串。 您可以將這些URL貼到網頁瀏覽器中以進行測試。
 

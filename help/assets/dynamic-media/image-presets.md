@@ -1,17 +1,18 @@
 ---
-title: 套用Dynamic Media影像預設集
+title: 套用 Dynamic Media 影像預設集
 description: 了解如何在Dynamic Media中套用影像預設集。
+contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
-# 套用Dynamic Media影像預設集 {#applying-image-presets}
+# 套用 Dynamic Media 影像預設集 {#applying-image-presets}
 
 「影像預設集」可讓資產以動態方式傳送不同大小、不同格式的影像，或以其他動態產生的影像屬性。 在導出時，可以選擇預設集，以按照管理員列出的規格重新格式化影像。
 

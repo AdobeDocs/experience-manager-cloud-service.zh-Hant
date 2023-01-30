@@ -1,10 +1,11 @@
 ---
 title: 套用Dynamic Media檢視器預設集
 description: 了解如何在Dynamic Media中套用檢視器預設集。
+contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 16%

@@ -1,13 +1,14 @@
 ---
 title: 傳送Dynamic Media Assets
 description: 了解如何傳送Dynamic Media資產。
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '319'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 0%
 * 如果您的網站未Experience Manager，您可以選擇：
 
    * 將您的視訊或影像嵌入網站。
-   * 將URL連結至您的Web應用程式。 當您想要以快顯視窗或強制回應視窗的形式傳送視訊播放器時，請使用連結。
+   * 將 URL 連結至您的網頁應用程式. 當您想要以快顯視窗或強制回應視窗的形式傳送視訊播放器時，請使用連結。
    * 如果您的網站回應式，您可以 [傳遞最佳化的影像](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
@@ -32,12 +33,12 @@ ht-degree: 0%
 
 * [將Dynamic Media Assets新增至網頁](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [將視訊或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)
-* [在Dynamic Media中啟用快速連結保護](/help/assets/dynamic-media/hotlink-protection.md)
+* [在 Dynamic Media 中啟動直接連結保護](/help/assets/dynamic-media/hotlink-protection.md)
 * [將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [為回應式網站提供最佳化的影像](/help/assets/dynamic-media/responsive-site.md)
 * [HTTP2內容傳送](/help/assets/dynamic-media/http2faq.md)
-* [透過Dynamic Media使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [透過Dynamic Media Classic使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+* [透過 Dynamic Media 使 CDN 快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [透過 Dynamic Media Classic 使 CDN 快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [使用規則集轉換URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## HTTP/2傳送Dynamic Media資產 {#http-delivery-of-dynamic-media-assets}

@@ -1,10 +1,11 @@
 ---
 title: 管理檢視器預設集
 description: 了解如何在Dynamic Media中建立和管理檢視器預設集。
+contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 1b9864c4532d15068b6edbd187a78a0ee0fdcfb4
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4194'
 ht-degree: 9%
@@ -69,7 +70,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
 * Android™智慧手機
 * Android™平板電腦
 
-<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
+<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### 檢視器預設集的多媒體類型 {#rich-media-types-for-viewer-presets}
 
@@ -78,7 +79,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
 <table>
  <tbody>
   <tr>
-   <td><strong>傳送集</strong><br /> </td>
+   <td><strong>輪播集</strong><br /> </td>
    <td><p>熱點（或影像映射）或兩者都添加到一系列兩個或多個影像中。 客戶可以向左或向右平移影像，然後在影像上選取熱點以取得詳細資訊，或直接從網站的登陸、類別或首頁購買。</p> </td>
   </tr>
     <tr>
@@ -577,7 +578,7 @@ Experience Manager從檢視資產時，會顯示各種檢視器預設集 **[!UIC
 
 1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側邊欄中，選取 **[!UICONTROL 工具]** （錘子表徵圖）> **[!UICONTROL 資產] > [!UICONTROL 檢視器預設集]**.
 1. 在「檢視器預設集」頁面上，核取「預設集標題」，然後選取 **[!UICONTROL 垃圾]** 表徵圖。
-1. 選擇 **[!UICONTROL 刪除]**.
+1. 選取&#x200B;**[!UICONTROL 刪除]**。
 
 ## 將檢視器預設集套用至資產 {#applying-a-viewer-preset-to-an-asset}
 

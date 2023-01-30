@@ -1,10 +1,11 @@
 ---
 title: Dynamic Media 影片設定檔
 description: Dynamic Media已隨附預先定義的最適化視訊編碼設定檔。 此現成可用設定檔中的設定已最佳化，可為客戶提供最佳的檢視體驗。 您也可以將智慧型裁切新增至影片。
+contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3656'
 ht-degree: 7%
@@ -70,22 +71,22 @@ Dynamic Media已隨附預先定義的最適化視訊編碼設定檔。 此現成
   </tr>
   <tr>
    <td><p>MP4 H.264(mp4)</p> </td>
-   <td>自動</td>
+   <td>auto</td>
    <td>540</td>
    <td>是</td>
-   <td>2000年<br /> </td>
+   <td>2000<br /> </td>
    <td>30</td>
-   <td>杜比HE-AAC</td>
+   <td>Dolby HE-AAC</td>
    <td>128</td>
   </tr>
   <tr>
    <td><p>MP4 H.264(mp4)</p> </td>
-   <td>自動</td>
+   <td>auto</td>
    <td>720<br /> </td>
    <td>是</td>
    <td>3000<br /> </td>
    <td>30</td>
-   <td>杜比HE-AAC</td>
+   <td>Dolby HE-AAC</td>
    <td>128</td>
   </tr>
  </tbody>

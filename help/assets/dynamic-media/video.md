@@ -1,10 +1,11 @@
 ---
-title: Dynamic Media中的影片
+title: Dynamic Media 中的視訊
 description: 了解如何在Dynamic Media中使用視訊，例如編碼視訊、將視訊發佈至YouTube、檢視視訊報表，以及將隱藏式字幕、字幕或章節標籤新增至視訊的最佳實務。
+contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 22718edcfb6d233a1316fcf2546e685b57609e8c
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '9349'
 ht-degree: 4%
@@ -90,7 +91,7 @@ ht-degree: 4%
    * 如果您使用協力廠商網頁內容管理系統，您可以將視訊連結或內嵌至您的網頁。
 
       * 使用URL整合視訊：
-         [將URL連結至您的Web應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
+         [將 URL 連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * 使用網頁上的內嵌程式碼整合視訊：
          [將視訊檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md).
@@ -132,9 +133,9 @@ Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品�
 
 各種iOS平台均支援最適化視訊串流。 請參閱 [Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
-<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows® devices that support this video format at the following [Supported video formats on Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
+OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that support this video format at the following [Supported video formats on Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 * 使用Dynamic Media視訊檢視器預設集播放視訊，包括下列內容：
 
@@ -244,7 +245,7 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
-   <td>BlackBerry®</td>
+   <td>BlackBerry&reg;</td>
    <td>HLS</td>
   </tr>
  -->
@@ -283,7 +284,7 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
 |--- |--- |--- |
 | 1024 X 768 | 4:3 | 大部分視訊為4500 kbps。 |
 | 1280 X 720 | 16:9 | 3000 - 6000 kbps，視訊中的運動量而定。 |
-| 1920 X 1080 | 16時9分 | 6000 - 8000 kbps，視訊中的運動量而定。 |
+| 1920 X 1080 | 16:9 | 6000 - 8000 kbps，視訊中的運動量而定。 |
 
 ### 取得檔案的中繼資料 {#obtaining-a-file-s-metadata}
 
@@ -307,8 +308,8 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
 |--- |--- |
 | 1.33 | 4:3 |
 | 0.75 | 3:4 |
-| 1.78 | 16時9分 |
-| 0.56 | 9時16分 |
+| 1.78 | 16:9 |
+| 0.56 | 9:16 |
 
 例如，寬度為1440 x 1080的視頻的長寬比為1440/1080，即1.33。在這種情況下，選擇寬寬比為4:3的視頻編碼預設集來編碼視頻檔案。
 
@@ -339,7 +340,7 @@ VBR編碼需要較長的時間，但會產生最有利的結果；媒體檔案�
 |--- |--- |
 | 256 | 撥號連接。 |
 | 800 | 典型的行動連線。 對於此連線，若為3G體驗，將資料速率定位在400到最大800的範圍內。 |
-| 2000年 | 典型的寬頻案頭連接。 對於此連接，目標資料速率為800-2000 Kbps，大多數目標平均為1200-1500 Kbps。 |
+| 2000 | 典型的寬頻案頭連接。 對於此連接，目標資料速率為800-2000 Kbps，大多數目標平均為1200-1500 Kbps。 |
 | 5000 | 典型的高寬頻連接。 不建議使用此上限的編碼，因為大多數消費者無法使用此速度的視訊傳送。 |
 
 ### 解析度 {#resolution}
@@ -350,8 +351,8 @@ VBR編碼需要較長的時間，但會產生最有利的結果；媒體檔案�
 
 | 解析度 | 每幀像素 |
 |--- |--- |
-| 320 x 240 | 七萬六千八百 |
-| 640 x 480 | 30.72萬 |
+| 320 x 240 | 76,800 |
+| 640 x 480 | 307,200 |
 
 640 x 480檔案的像素是每幀的4倍。 若要針對這兩個範例解析度取得相同的資料速率，您可對640 x 480檔案套用4倍的壓縮，以降低視訊品質。 因此，250 Kbps的視頻資料速率以320 x 240解析度產生高質量的觀看，而不是以640 x 480解析度產生。
 
@@ -366,12 +367,12 @@ VBR編碼需要較長的時間，但會產生最有利的結果；媒體檔案�
 
 | 解析度 | 高度 (像素) | 螢幕大小 |
 |--- |--- |--- |
-| 240便士 | 240 | 小螢幕 |
-| 300便士 | 300 | 小螢幕，通常用於行動裝置 |
-| 360便士 | 360 | 小螢幕 |
-| 480便士 | 480 | 中螢幕 |
-| 720便士 | 720 | 大螢幕 |
-| 1080便士 | 1080 | 高清大螢幕 |
+| 240p | 240 | 小螢幕 |
+| 300p | 300 | 小螢幕，通常用於行動裝置 |
+| 360p | 360 | 小螢幕 |
+| 480p | 480 | 中螢幕 |
+| 720p | 720 | 大螢幕 |
+| 1080p | 1080 | 高清大螢幕 |
 
 ### Fps（每秒幀數） {#fps-frames-per-second}
 
@@ -1091,11 +1092,11 @@ Dynamic Media可將註解檔案轉換為JSON（JavaScript物件標籤法）格�
 >[!NOTE]
 使用的視訊播放器必須支援使用章節標籤。 Dynamic Media視訊播放器確實支援章節標籤，但使用協力廠商視訊播放器則否。
 
-<!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 您為視訊建立章節清單的方式與建立字幕的方式大致相同。 即，建立WebVTT檔案。 但請注意，此檔案必須與任何WebVTT標題檔案分開。 不能將字幕和章節合併為一個WebVTT檔案。
 
-您可以使用下列範例作為建立具有章節導覽的WebVTT檔案時所使用格式的範例：
+您可以使用下列範例，作為建立具有章節導覽的WebVTT檔案時所使用格式的範例：
 
 ### 具有視訊章節導覽的WebVTT檔案 {#webvtt-file-with-video-chapter-navigation}
 

@@ -1,9 +1,10 @@
 ---
 title: 使用具有用戶端裝置像素比的智慧型影像
 description: 了解如何搭配Dynamic Media在Adobe Experience Manager as a Cloud Service中使用用戶端裝置像素比率與智慧型影像。
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: 1dae0459073e84eee4382b4b7ec864b3ef55a5bd
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%

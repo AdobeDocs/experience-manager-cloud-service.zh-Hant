@@ -1,12 +1,13 @@
 ---
 title: 使用選取器
 description: 了解您可以使用哪些方法來選取Dynamic Media中互動式影像、互動式視訊和輪播橫幅的資產。
+contentOwner: Rick Brough
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '728'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -110,4 +111,4 @@ ht-degree: 1%
 1. 若要選取資產，請選取核取記號。 資產隨即顯示。
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
-—>
+-->

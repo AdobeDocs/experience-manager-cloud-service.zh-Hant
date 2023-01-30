@@ -1,10 +1,11 @@
 ---
 title: 整合 Dynamic Media 檢視器與 Analytics 和 Adobe Experience Platform 標記
 description: 了解適用於Experience Platform標籤的Dynamic Media檢視器擴充功能和Dynamic Media檢視器5.13。它可讓Adobe Analytics和平台標籤的客戶在其Experience Platform標籤設定中使用Dynamic Media檢視器專屬的事件和資料。
+contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 3060b6b411c3ce2f0b70e08628bccfece3e1fd49
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '6679'
 ht-degree: 7%

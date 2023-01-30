@@ -1,17 +1,18 @@
 ---
-title: 為回應式網站提供最佳化的影像
+title: 為回應式網站傳遞最佳化影像
 description: 了解如何使用回應式程式碼功能，從Dynamic Media提供最佳化的影像。
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 10%
+ht-degree: 15%
 
 ---
 
-# 為回應式網站提供最佳化的影像 {#delivering-optimized-images-for-a-responsive-site}
+# 為回應式網站傳遞最佳化影像 {#delivering-optimized-images-for-a-responsive-site}
 
 當您想要與網頁開發人員共用程式碼以進行回應式服務時，請使用回應式程式碼功能。 您複製回應式(**[!UICONTROL RESS]**)程式碼，以便與網頁開發人員共用。
 

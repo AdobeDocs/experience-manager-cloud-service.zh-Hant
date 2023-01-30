@@ -1,13 +1,14 @@
 ---
 title: 互動式影像
 description: 了解如何在Dynamic Media中使用互動式影像。
+contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4176'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -64,7 +65,7 @@ ht-degree: 1%
 >* 您想要透過觸發快速檢視來為影像新增互動功能。
 >* 您的Experience Manager實作可 *not* 使用電子商務整合架構，從任何電子商務解決方案將產品資料提取至Experience Manager。 此類解決方案包括IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop。
 >
->如果您的Experience Manager實作使用電子商務，您可以略過此工作，並繼續執行下一個工作。
+如果您的Experience Manager實作使用電子商務，您可以略過此工作，並繼續執行下一個工作。
 
 首先，識別您現有Quickview實作所使用的動態變數，以便您可以輸入熱點資料來建立互動式影像。
 
@@ -220,8 +221,7 @@ ht-degree: 1%
 請參閱 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->將檢視器內嵌在體驗片段時，不支援互動式影像中的社交媒體共用工具。 請改用或建立沒有社交媒體分享工具的檢視器預設集。 這類檢視器預設集可讓您成功將其內嵌在體驗片段中。
+將檢視器內嵌在體驗片段時，不支援互動式影像中的社交媒體共用工具。 請改用或建立沒有社交媒體分享工具的檢視器預設集。 這類檢視器預設集可讓您成功將其內嵌在體驗片段中。
 
 目前建立/編輯工作階段期間，支援在頁面右上角附近還原和重做選項。
 
@@ -230,8 +230,7 @@ ht-degree: 1%
 請參閱 [（可選）預覽互動式影像](#optional-previewing-interactive-images).
 
 >[!NOTE]
->
->在互動式影像或轉盤橫幅中將熱點新增至影像時，熱點資訊會儲存在相同的中繼資料位置。 無論是互動式影像還是輪播橫幅，此位置都是影像的位置相對位置。 此功能表示您可以在任一檢視器中輕鬆重複使用相同的影像（及其定義的熱點資料）。
+在互動式影像或轉盤橫幅中將熱點新增至影像時，熱點資訊會儲存在相同的中繼資料位置。 無論是互動式影像還是輪播橫幅，此位置都是影像的位置相對位置。 此功能表示您可以在任一檢視器中輕鬆重複使用相同的影像（及其定義的熱點資料）。
 但請注意，轉盤橫幅支援影像上的影像地圖，這些影像中也可能包含熱點；互動式影像則否。 如果您要建立使用相同影像的互動式影像或輪播橫幅，請記住這個想法。 您可以改為使用相同影像的個別副本來建立互動式影像和轉盤橫幅。
 另請參閱 [輪播橫幅](/help/assets/dynamic-media/carousel-banners.md).
 
@@ -490,6 +489,6 @@ loadQuickView(quickViewUrl);
 
 此 [完全整合互動式影像的最終示範網站](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
 
-## 使用Quickview建立自訂快顯視窗 {#using-quickviews-to-create-custom-pop-ups}
+## 使用 Quickview 建立自訂快顯視窗 {#using-quickviews-to-create-custom-pop-ups}
 
 請參閱 [使用Quickview建立自定義彈出式窗口®](/help/assets/dynamic-media/custom-pop-ups.md).

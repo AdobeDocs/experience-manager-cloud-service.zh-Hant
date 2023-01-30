@@ -1,10 +1,11 @@
 ---
 title: 關於Dynamic Media影像設定檔和影片設定檔
 description: 影像設定檔或視訊設定檔是套用至上傳至資料夾之資產的選項方式。 例如，您可以指定要將哪些視訊編碼套用至您上傳的Dynamic Media視訊資產。 或者，要套用至Dynamic Media影像資產的影像設定檔，以便正確裁切。
+contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 419ec6604ee8c93510cb8bf4e1d46bc9b9c9383a
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 0%

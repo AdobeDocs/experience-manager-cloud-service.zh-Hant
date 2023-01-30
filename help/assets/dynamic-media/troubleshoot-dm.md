@@ -1,16 +1,17 @@
 ---
-title: 疑難排解Dynamic Media
+title: Dynamic Media 疑難排解
 description: 使用Dynamic Media時的疑難排解提示。
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a7152785e8957dcc529d1e2138ffc8c895fa5c29
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1135'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 疑難排解Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
+# Dynamic Media 疑難排解 {#troubleshooting-dynamic-media-scene-mode}
 
 以下主題說明Dynamic Media的疑難排解。
 

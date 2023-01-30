@@ -1,13 +1,14 @@
 ---
 title: 迴轉集
 description: 了解如何在Dynamic Media中使用回轉集。
+contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1927'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -37,7 +38,7 @@ ht-degree: 8%
 
 若要使用回轉集快速上手並執行，請執行下列步驟：
 
-1. 選填。[建立批集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md) 並套用至新的資產資料夾。
+1. 選用. [建立批集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md) 並套用至新的資產資料夾。
 
    批次集預設集可協助您自動建立回轉集。
 
@@ -166,7 +167,7 @@ ht-degree: 8%
 
    * 若要套用預設集，請在頁面右上角附近選取 **[!UICONTROL 預設集]**，然後選取要一次套用至所有資產的預設集。
 
-1. 選擇 **[!UICONTROL 儲存]**. 新建立的回轉集會顯示在您建立該回轉集的資料夾中。
+1. 選取&#x200B;**[!UICONTROL 儲存]**。新建立的回轉集會顯示在您建立該回轉集的資料夾中。
 
 ## 檢視回轉集 {#viewing-spin-sets}
 

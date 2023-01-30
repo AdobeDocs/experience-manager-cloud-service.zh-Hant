@@ -1,13 +1,14 @@
 ---
 title: 混合媒體集
 description: 了解如何在Dynamic Media中使用混合媒體集。
+contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1501'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -117,7 +118,7 @@ ht-degree: 11%
 
 1. 若要刪除資產，請選取對應的核取方塊並選取 **[!UICONTROL 刪除資產]**.
 1. 若要套用預設集，請選取 **[!UICONTROL 預設集]** 在右上角，選取要套用至資產的預設集。
-1. 選擇 **[!UICONTROL 儲存]**. 新建立的混合媒體集會顯示在您建立它的資料夾中。
+1. 選取&#x200B;**[!UICONTROL 儲存]**。新建立的混合媒體集會顯示在您建立它的資料夾中。
 
 ## 編輯混合媒體集 {#editing-mixed-media-sets}
 

@@ -1,17 +1,18 @@
 ---
-title: 互動影片
+title: 互動式影片
 description: 了解如何在Dynamic Media中使用互動式視訊和可購買視訊。
+contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '5966'
 ht-degree: 3%
 
 ---
 
-# 互動影片{#interactive-videos}
+# 互動式影片{#interactive-videos}
 
 您可以輕鬆建立互動式影片（也稱為可購買影片），直接從影片推動轉換。 客戶與影片的互動會與影片播放器一起在面板中進行，影片會根據影片中的特色內容，將相關服務、資訊或產品縮圖捲動至檢視中。 客戶可以選取縮圖並直接連結至服務，或將項目新增至購物車以立即購買，或連結至網頁以取得詳細資訊。
 
@@ -68,9 +69,8 @@ There was a link here that showed the video frame of an interactive video and wh
 
 1. **（可選）識別Quickview變數**  — 首先，識別您現有Quickview實作所使用的動態變數。 建立互動式視訊時，您可以使用變數將產品縮圖對應至其對應的產品Quickview。 請參閱 [（可選）識別Quickview變數](#optional-identifying-quickview-variables).
    **只有在下列所有情況皆為真時，才需要執行此步驟：**
-·您想要透過觸發快速檢視來增加視訊的互動功能。
-·您實作的Experience Manager 
-*not* 使用電子商務整合框架，從任何電子商務解決方案(如IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop)將產品資料提取到Experience Manager中。
+   * 您想要透過觸發快速檢視來為視訊增加互動功能。
+   * 您的Experience Manager實作可 *not* 使用電子商務整合框架，從任何電子商務解決方案(如IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop)將產品資料提取到Experience Manager中。
 
 1. **（選用）建立互動式視訊檢視器預設集**  — 自訂構成播放器的各種元件的外觀和行為，例如視訊清除程式和互動式縮圖。
 如果您要使用現成可用的互動式視訊檢視器預設集，則不需要建立您自己的互動式視訊檢視器預設集 `Shoppable_Video_Light` 或 `Shoppable_Video_Dark` 。
@@ -102,7 +102,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >* 您想要透過觸發快速檢視來為視訊增加互動功能。
 >* 您的Experience Manager實作可 *not* 使用電子商務整合框架，從任何電子商務解決方案(如IBM® WebSphere® Commerce、Elastic Path、SAP Hybris或Intershop)將產品資料提取到Experience Manager中。 <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
->如果您的Experience Manager實作使用電子商務，您可以略過此工作，並繼續執行下一個工作。
+如果您的Experience Manager實作使用電子商務，您可以略過此工作，並繼續執行下一個工作。
 
 首先，找出您現有Quickview實作所使用的動態變數，以便您可以在互動式視訊建立程式期間，將產品縮圖對應至其對應的產品Quickview。
 
@@ -242,8 +242,7 @@ There was a link here that showed the video frame of an interactive video and wh
 如果您已上傳視訊和縮圖資產，請繼續 [為影片增加互動功能](#adding-interactivity-to-your-video).
 
 >[!NOTE]
->
->尚不支援MXF視訊格式以搭配Dynamic Media中的互動式視訊使用。
+尚不支援MXF視訊格式以搭配Dynamic Media中的互動式視訊使用。
 
 如果您上傳了錯誤的影片或影像，或想要刪除您不再需要的已上傳影片或影像，請參閱 [刪除資產](/help/assets/manage-digital-assets.md#delete-assets).
 
@@ -265,12 +264,10 @@ There was a link here that showed the video frame of an interactive video and wh
 請參閱 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->將檢視器內嵌在體驗片段中時，互動式視訊中不支援社交媒體共用工具。 相反地，您可以使用或建立沒有社交媒體共用工具的檢視器預設集。 這類檢視器預設集可讓您成功將其內嵌在體驗片段中。
+將檢視器內嵌在體驗片段中時，互動式視訊中不支援社交媒體共用工具。 相反地，您可以使用或建立沒有社交媒體共用工具的檢視器預設集。 這類檢視器預設集可讓您成功將其內嵌在體驗片段中。
 
 >[!NOTE]
->
->如果您的互動式內容有連結與相對URL(尤其是連結至Experience Manager Sites頁面)，則無法使用以URL為基礎的連結方法。
+如果您的互動式內容有連結與相對URL(尤其是連結至Experience Manager Sites頁面)，則無法使用以URL為基礎的連結方法。
 
 目前建立/編輯工作階段期間，支援在頁面右上角附近還原和重做選項。
 
@@ -311,11 +308,11 @@ There was a link here that showed the video frame of an interactive video and wh
         </tr>
         <tr>
         <td>3分鐘以上</td>
-        <td>60秒</td>
+        <td>60 秒</td>
         </tr>
         <tr>
         <td>2-3分鐘</td>
-        <td>30秒</td>
+        <td>30 秒</td>
         </tr>
         <tr>
         <td>1-2 分鐘</td>
@@ -323,11 +320,11 @@ There was a link here that showed the video frame of an interactive video and wh
         </tr>
         <tr>
         <td>30-60秒</td>
-        <td>10秒</td>
+        <td>10 秒</td>
         </tr>
         <tr>
         <td>30秒或更短時間</td>
-        <td>5秒</td>
+        <td>5 秒</td>
         </tr>
       </tbody>
     </table>
@@ -491,8 +488,7 @@ There was a link here that showed the video frame of an interactive video and wh
    完成後，請選取 **[!UICONTROL 儲存]**.
 
    >[!NOTE]
-   >
-   >當您儲存互動式視訊時，會自動 `.vtt` 儲存相關的檔案。此 `.vtt` 檔案會儲存至 `_VTT` 根目錄的資料夾 **[!UICONTROL 資產]**. 您的互動式視訊必須有檔案和資料夾才能在網站上正確播放。因此，請勿移動、編輯或刪除資料夾 `_VTT` 或其內容。
+   當您儲存互動式視訊時，會自動 `.vtt` 儲存相關的檔案。此 `.vtt` 檔案會儲存至 `_VTT` 根目錄的資料夾 **[!UICONTROL 資產]**. 您的互動式視訊必須有檔案和資料夾才能在網站上正確播放。因此，請勿移動、編輯或刪除資料夾 `_VTT` 或其內容。
 
 1. 發佈互動式影片。 發佈會建立內嵌程式碼或URL，您最終會將其複製並貼到您的網站體驗。
 
@@ -501,8 +497,7 @@ There was a link here that showed the video frame of an interactive video and wh
    請參閱 [發佈資產](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   >
-   >若要發佈可購買且可快速檢視的視訊，請確定您也從您的商務區域個別發佈每個視訊的相關影像資產。
+   若要發佈可購買且可快速檢視的視訊，請確定您也從您的商務區域個別發佈每個視訊的相關影像資產。
 
    新增時間軸區段並發佈互動式視訊後，您就可以將其新增至現有的網站登陸頁面。 請參閱 [將互動式視訊與您的網站整合](#integrating-an-interactive-video-with-your-website).
 
@@ -527,10 +522,8 @@ There was a link here that showed the video frame of an interactive video and wh
 複製的內嵌程式碼會針對回應式環境進行設定，以自動符合先前由靜態視訊佔用的區域。
 
 >[!NOTE]
->
->此時，如果您只以超連結網頁新增互動功能，即可完成。
->
->不過，如果您新增任何互動來觸發Quickview，互動式視訊旁的縮圖僅會用於顯示用途；它們尚未與您現有的快速檢視整合。 在這種情況下，您必須將互動式視訊與網站上現有的快速檢視整合。
+此時，如果您只以超連結網頁新增互動功能，即可完成。
+不過，如果您新增任何互動來觸發Quickview，互動式視訊旁的縮圖僅會用於顯示用途；它們尚未與您現有的快速檢視整合。 在這種情況下，您必須將互動式視訊與網站上現有的快速檢視整合。
 
 **範例**
 
@@ -572,8 +565,7 @@ There was a link here that showed the video frame of an interactive video and wh
 ## 將互動式視訊與現有的Quickview整合 {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
->
->只有當您是獨立Experience Manager Assets客戶時，才適用此工作。
+只有當您是獨立Experience Manager Assets客戶時，才適用此工作。
 
 此程式的最後一個步驟是將您的互動式視訊與網站上使用的現有Quickview實作整合。 整合沒有適用於所有情況的解決方案。 每個Quickview實作都是唯一的。 因此，需要一種具體的方法，需要前端IT人員的協助。
 

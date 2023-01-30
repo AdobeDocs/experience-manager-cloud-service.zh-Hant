@@ -1,17 +1,18 @@
 ---
 title: 透過Dynamic Media Classic使CDN（內容傳遞網路）快取失效
 description: 了解如何使您的CDN（內容傳遞網路）快取內容失效，讓您快速更新Dynamic Media所傳送的資產，而不必等待快取過期。
+contentOwner: Rick Brough
 feature: Asset Management,Dynamic Media Classic
 role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
-# 透過Dynamic Media Classic使CDN快取失效 {#invalidating-your-cdn-cached-content}
+# 透過 Dynamic Media Classic 使 CDN 快取失效 {#invalidating-your-cdn-cached-content}
 
 Dynamic Media資產由CDN（內容傳遞網路）快取，以便快速傳遞。 不過，當您更新資產時，請希望這些變更立即生效。 使CDN快取內容失效可讓您快速更新由Dynamic Media傳送的資產，而不必等待快取過期。
 

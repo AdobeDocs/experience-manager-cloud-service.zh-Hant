@@ -1,10 +1,11 @@
 ---
 title: 透過Dynamic Media使內容傳送網路快取失效
 description: 了解如何使您的CDN（內容傳遞網路）快取內容失效，讓您快速更新Dynamic Media所傳送的資產，而不必等待快取過期。
+contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: db0451e76564f238b34555aafa3692202887a1d6
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%

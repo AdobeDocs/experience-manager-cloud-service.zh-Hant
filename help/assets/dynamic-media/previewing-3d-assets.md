@@ -1,10 +1,11 @@
 ---
-title: 預覽3D資產
+title: 預覽 3D 資產
 description: 了解如何以Experience Manager預覽3D資產。
+contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 6%
@@ -47,7 +48,7 @@ Experience Manager在製作程式中支援3D資產的上傳、傳送和互動式
 
 在資產詳細資訊檢視頁面中開啟3D資產所花的時間，取決於頻寬、影像複雜度和伺服器延遲等數項因素。
 
-此外，當您以交互方式操作攝像機時，還需要考慮客戶端電腦的功能，如工作站、筆記型電腦或移動觸摸設備。 具有良好圖形功能的強大系統可讓互動式3D觀看體驗更流暢、更有利。
+此外，當您以互動方式操作相機時，還需要考慮客戶端電腦的功能，例如工作站、筆記型電腦或移動觸摸設備。 具有良好圖形功能的強大系統可讓互動式3D觀看體驗更流暢、更有利。
 
 **若要預覽3D資產的Experience Manager:**
 

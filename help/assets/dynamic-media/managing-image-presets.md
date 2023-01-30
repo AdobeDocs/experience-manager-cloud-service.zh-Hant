@@ -1,10 +1,11 @@
 ---
 title: 管理影像預設集
 description: 了解影像預設集，以及如何建立、修改和管理影像預設集。
+contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: ca0385ee974c7b06725f687c0ef237880bb230ea
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3629'
 ht-degree: 8%
@@ -98,8 +99,8 @@ Adobe Illustrator的檔案格式是PDF的變體。 Experience Manager Assets的�
 | 進程參數 | 預設設定 | 說明 |
 |---|---|---|
 | Mime 類型 | application/pdf<br>application/postscript<br>application/illustrator | 被視為PDF或Illustrator文檔的文檔mime類型清單。 |
-| 寬度上限 | 2048年 | 產生的預覽轉譯的最大寬度（像素）。 |
-| 高度上限 | 2048年 | 產生的預覽轉譯的最大高度（像素）。 |
+| 寬度上限 | 2048 | 產生的預覽轉譯的最大寬度（像素）。 |
+| 高度上限 | 2048 | 產生的預覽轉譯的最大高度（像素）。 |
 | 解析度 | 72 | 以ppi（每英吋像素）顯示第一頁的解析度。 |
 
 使用預設進程參數，PDF/AI文檔的第一頁柵格化為72 ppi，生成的預覽影像的大小為2048 x 2048像素。 對於一般部署，您可將解析度提高至至少150 ppi或更高。 例如，300 ppi的美國字母大小文檔要求最大寬度和高度分別為2550 x 3300像素。
@@ -212,7 +213,7 @@ ExtendScript會在「DAM更新資產」工作流程中，路徑為「媒體擷�
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. 選擇 **[!UICONTROL 儲存]**.
+1. 選取&#x200B;**[!UICONTROL 儲存]**。
 
 ### 建立回應式影像預設集 {#creating-a-responsive-image-preset}
 
@@ -287,7 +288,7 @@ ExtendScript會在「DAM更新資產」工作流程中，路徑為「媒體擷�
     <ul>
      <li>選擇 <strong>無</strong> 如果要停用銳利化。</li>
      <li>選擇 <strong>銳利化 </strong>以在所有縮放發生後，將基本銳利化濾鏡應用到影像。 銳利化有助於補償以不同大小顯示影像時可能產生的模糊性。 </li>
-     <li>選擇<strong> 不銳利化遮色片</strong> 如果您想要微調最終縮減取樣影像的銳利化濾鏡效果。 您可以控制效果的強度、效果半徑（以像素計量），以及忽略的對比度臨界值。 此效果使用的選項與 Photoshop的「遮色片銳利化」濾鏡相同。</li>
+     <li>選擇<strong> 不銳利化遮色片</strong> 如果您想要微調最終縮減取樣影像的銳利化濾鏡效果。 您可以控制效果的強度、效果半徑（以像素計量），以及忽略的對比度臨界值。 此效果使用的選項與Photoshop的「遮色片銳利化」篩選器相同。</li>
     </ul> <p>在 <strong>不銳利化遮色片</strong>，您有下列選項：</p>
     <ul>
      <li><strong>金額</strong>  — 控制套用至邊緣像素的對比度量。 預設的實數值為1.0。對於高解析度影像，您可以將其增加到高達5.0。請將「量」想像為濾鏡強度的度量。</li>

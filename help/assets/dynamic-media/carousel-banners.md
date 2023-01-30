@@ -1,10 +1,11 @@
 ---
 title: 輪播橫幅
 description: 了解如何在Dynamic Media中使用轉盤橫幅。
+contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4535'
 ht-degree: 1%
@@ -318,7 +319,7 @@ ht-degree: 1%
 
    您也可以預覽轉盤橫幅的外觀。 請參閱 [（選用）預覽轉盤橫幅](#optional-previewing-carousel-banners).
 
-1. 選擇 **[!UICONTROL 儲存]**.
+1. 選取&#x200B;**[!UICONTROL 儲存]**。
 1. 發佈轉盤集。 發佈會建立您可在網站頁面上使用的內嵌程式碼或URL。 如果您是Experience Manager Sites客戶，請直接將轉盤集新增至您的網頁。
 
    請參閱 [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

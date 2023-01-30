@@ -1,9 +1,10 @@
 ---
 title: HTTP2 傳送內容常見問答集
 description: 了解HTTP2內容傳送。
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 1%

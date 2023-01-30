@@ -1,11 +1,12 @@
 ---
 title: 智慧型影像
 description: 了解Adobe Sensei AI的智慧型影像處理如何套用每位使用者的獨特檢視特性，自動提供符合其體驗最佳化的適當影像，進而提升效能和參與度。
+contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 263808980a9542b1a333c59e68e59122cf43025d
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3525'
 ht-degree: 1%
@@ -130,7 +131,7 @@ DPR和網路頻寬值以所偵測到的套裝CDN用戶端值為基礎。 這些�
 * 如果瀏覽器支援格式，則自動轉換為AVIF
 * 如果AVIF轉換不利或瀏覽器不支援AVIF，則自動轉換為WebP
 * 如果Safari不支援WebP，則自動轉換為JPEG2000
-* 自動轉換為IE 9+版JPEGXR，或如果Edge不支援WebP\
+* 自動轉換為IE 9+版JPEGXR，或Edge不支援WebP版\
    |影像格式 |受支援的瀏覽器 | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) | |JPEG2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
 * 若瀏覽器不支援這些格式，則會提供原始要求的影像格式。
 
@@ -299,7 +300,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 ## 是否可以針對任何請求關閉智慧影像？{#turning-off-smart-imaging}
 
-可以。 您可以新增下列任何修飾元，以關閉智慧型影像處理：
+可以。您可以新增下列任何修飾元，以關閉智慧型影像處理：
 
 * `bfc=off` 關閉瀏覽器格式轉換。 另請參閱 [瀏覽器格式轉換](#bfc).
 * `dpr=off` 關閉「設備像素比率」。 另請參閱 [裝置像素比率](#dpr).
