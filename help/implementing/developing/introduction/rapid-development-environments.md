@@ -2,7 +2,7 @@
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
 hidefromtoc: true
-source-git-commit: c8cb222cdba805652123df852410ffed8b047ceb
+source-git-commit: 966644ae0027264f25a3aaf3b2f777fb3e97c556
 workflow-type: tm+mt
 source-wordcount: '2446'
 ht-degree: 6%
@@ -126,14 +126,14 @@ RDE可用於程式碼、內容，以及Apache或Dispatcher設定。 與一般雲
 
    `aio cloudmanager:environment:open-developer-console`
 
->[!TIP]
->
->   如果您看到 `Warning: cloudmanager:list-programs is not a aio command.` 錯誤，您需要安裝 [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 執行以下命令：
->
->   
-```
->   aio plugins:install @adobe/aio-cli-plugin-cloudmanager
->   ```
+   >[!TIP]
+   >
+   >如果您看到 `Warning: cloudmanager:list-programs is not a aio command.` 錯誤，您需要安裝 [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 執行以下命令：
+   >
+   >
+   ```
+   >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+   >```
 
 
 ## 在開發新功能時使用RDE {#using-rde-while-developing-a-new-feature}
