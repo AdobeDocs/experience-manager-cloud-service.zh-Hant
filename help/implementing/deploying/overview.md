@@ -3,9 +3,9 @@ title: 部署至 AEM as a Cloud Service
 description: 部署至 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3415'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 這些程式碼套件會套用一些其他限制，例如 [安裝掛接](https://jackrabbit.apache.org/filevault/installhooks.html) 不支援。
 
-## OSGI設定 {#osgi-configuration}
+## OSGI 設定 {#osgi-configuration}
 
 如上所述，OSGI設定應提交至原始碼控制，而非透過Web主控台。 這樣做的技巧包括：
 
@@ -137,7 +137,7 @@ ht-degree: 1%
 
 * Repoinit在啟動時會建立資源，這樣邏輯就能將這些資源的存在視為已授予。 在可變內容包方法中，資源是在啟動後建立的，因此依賴這些資源的應用程式代碼可能會失敗。
 * 當您明確控制要採取的動作時，重新指示是相對安全的指令集。 此外，唯一支援的操作是附加操作，但少數安全相關案例除外，這些案例允許刪除用戶、服務用戶和組。 相反，移除可變內容包方法中的某些內容是明確的；當您定義篩選器時，篩選器所涵蓋的任何項目都會遭到刪除。 不過，您仍應小心謹慎，因為如果有任何內容，出現新內容可能會改變應用程式的行為。
-* 重新指定執行快速和原子操作。 相比之下，可變內容包可以高度取決於過濾器所覆蓋的結構而是效能。 即使更新單個節點，也可能建立大型樹的快照。
+* 重新指定執行快速和原子操作。 相比之下，可變內容包可以高度取決於過濾器覆蓋的結構的效能。 即使更新單個節點，也可能建立大型樹的快照。
 * 可以在運行時驗證本地開發環境上的repoinit語句，因為這些語句將在註冊OSGi配置時執行。
 * 重新指向語句是原子的，且顯式，如果狀態已匹配，則將跳過。
 
@@ -171,6 +171,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="套件管理器 — 移轉可變內容套件"
 >abstract="探索套件管理器的使用案例，了解內容套件應安裝為「一次性」的使用案例，包括將特定內容從生產匯入測試環境，以偵錯生產問題、將小型內容套件從內部部署環境傳輸至AEM雲端環境等。"
+>abstract="探索套件管理器的使用案例，了解內容套件應安裝為「一次性」，其中包括將特定內容從生產匯入測試環境，以偵錯生產問題、將小型內容套件從內部部署環境傳輸至AEM雲端環境等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="內容轉移工具"
 
 有些使用案例會將內容套件安裝為「一次性」。 例如，將特定內容從生產匯入測試環境，以偵錯生產問題。 對於這些情況， [封裝管理員](/help/implementing/developing/tools/package-manager.md) 可用於AEMas a Cloud Service環境。
@@ -281,11 +282,11 @@ above appears to be internal, to confirm with Brian -->
 
 ## 執行模式 {#runmodes}
 
-在現有的AEM解決方案中，客戶可以選擇以任意執行模式執行例項，並套用OSGI設定或將OSGI套件組合安裝至這些特定例項。 定義的執行模式通常包括 *服務* （製作和發佈）與環境（開發、預備、生產）。
+在現有的AEM解決方案中，客戶可以選擇以任意執行模式執行例項，並套用OSGI設定或將OSGI套件組合安裝至這些特定例項。 定義的執行模式通常包括 *服務* （製作和發佈）與環境(rde、dev、stage、prod)。
 
 AEM as a Cloud Service則對哪些執行模式可用，以及OSGI套件組合和OSGI組態如何對應至這些模式有更明確的看法：
 
-* OSGI設定執行模式必須參考開發、預備、環境產品或製作、服務發佈。 組合 `<service>.<environment_type>` 受支援，但必須依此特定順序使用(例如 `author.dev` 或 `publish.prod`)。 OSGI代號應直接從程式碼參考，而非使用 `getRunModes` 方法，其將不再包含 `environment_type` 執行階段。 如需詳細資訊，請參閱 [為AEM as a Cloud Service配置OSGi](/help/implementing/deploying/configuring-osgi.md).
+* OSGI配置運行模式必須參考RDE、dev、stage、prod for the environment或author, publish for the service。 組合 `<service>.<environment_type>` 受支援，但必須依此特定順序使用(例如 `author.dev` 或 `publish.prod`)。 OSGI代號應直接從程式碼參考，而非使用 `getRunModes` 方法，其將不再包含 `environment_type` 執行階段。 如需詳細資訊，請參閱 [為AEM as a Cloud Service配置OSGi](/help/implementing/deploying/configuring-osgi.md).
 * OSGI套件組合執行模式僅限於服務（製作、發佈）。 每個執行模式的OSGI套件組合應安裝在內容套件中，位於 `install/author` 或 `install/publish`.
 
 與現有的AEM解決方案一樣，您無法使用執行模式來僅為特定環境或服務安裝內容。 如果想要為開發環境植入資料或HTML，而不是在預備或生產環境中，則可使用封裝管理程式。
@@ -295,13 +296,16 @@ AEM as a Cloud Service則對哪些執行模式可用，以及OSGI套件組合和
 * **設定** (*預設值會套用至所有AEM服務*)
 * **config.author** (*套用至所有AEM作者服務*)
 * **config.author.dev** (*套用至AEM Dev Author服務*)
+* **config.author.rde** (*套用至AEM RDE Author服務*)
 * **config.author.stage** (*套用至AEM Staging Author服務*)
 * **config.author.prod** (*套用至AEM Production Author服務*)
 * **config.publish** (*套用至AEM發佈服務*)
 * **config.publish.dev** (*套用至AEM開發發佈服務*)
+* **config.publish.rde** (*套用至AEM RDE Publish服務*)
 * **config.publish.stage** (*套用至AEM測試發佈服務*)
 * **config.publish.prod** (*套用至AEM Production Publish服務*)
 * **config.dev** (*套用至AEM開發服務*)
+* **config.rde** (*適用於RDE服務*)
 * **config.stage** (*套用至AEM測試服務*)
 * **config.prod** (*套用至AEM Production Services*)
 
