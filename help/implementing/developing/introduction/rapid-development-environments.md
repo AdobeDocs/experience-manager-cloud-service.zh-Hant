@@ -2,9 +2,9 @@
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
 hidefromtoc: true
-source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
+source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
 workflow-type: tm+mt
-source-wordcount: '2350'
+source-wordcount: '2396'
 ht-degree: 6%
 
 ---
@@ -72,6 +72,11 @@ RDE可用於程式碼、內容，以及Apache或Dispatcher設定。 與一般雲
 
 使用Cloud Manager為程式新增RDE後，您就可以依照下列步驟所述設定命令列工具，以與程式互動：
 
+>[!IMPORTANT]
+>
+>請確定您有 [已安裝節點和NPM](https://nodejs.org/en/download/) 以使Adobe I/OCLI和相關外掛程式正常運作。
+
+
 1. 按照以下過程安裝Adobe I/OCLI工具 [此處](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 1. 安裝Adobe I/OCLI工具cloud manager外掛程式，並依照說明進行配置 [此處](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 1. 運行以下命令以安裝Adobe I/OCLI工具AEM RDE插件：
@@ -120,6 +125,16 @@ RDE可用於程式碼、內容，以及Apache或Dispatcher設定。 與一般雲
    或者，如果您可以執行以下命令登入開發人員主控台，則可確認您擁有此開發人員角色：
 
    `aio cloudmanager:environment:open-developer-console`
+
+>[!TIP]
+>
+>   如果您看到 `Warning: cloudmanager:list-programs is not a aio command.` 錯誤，您需要安裝 [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 執行以下命令：
+>
+>   
+```
+>   aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+>   ```
+
 
 ## 在開發新功能時使用RDE {#using-rde-while-developing-a-new-feature}
 
