@@ -2,9 +2,9 @@
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
 hidefromtoc: true
-source-git-commit: 966644ae0027264f25a3aaf3b2f777fb3e97c556
+source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2476'
 ht-degree: 6%
 
 ---
@@ -202,6 +202,8 @@ RDE一次支援單一專案。 由於程式碼會從本機開發環境同步至R
 您可以參考遠端存放庫（可選）:
 
 `aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+
+依預設，成品會部署至製作和發佈層級，但可使用「 — s」標幟來鎖定特定層級。
 
 <u>部署OSGI設定</u>
 
@@ -415,9 +417,10 @@ RDE重設程式一旦啟動，通常需要幾分鐘的時間才能完成，並�
 
 基於這些原因，建議您在RDE環境上驗證程式碼後，使用非生產管道將程式碼部署至雲端開發環境。 最後，使用生產管道部署前，請先測試程式碼。
 
-另請注意下列解決方案專屬考量事項：
+另請注意下列考量事項：
 
 * RDE目前不支援檢視和偵錯使用Cloud Manager前端管道部署的前端程式碼。
+* RDE目前不支援發行前管道。
 
 
 ## 我需要多少個RDE? {#how-many-rds-do-i-need}
