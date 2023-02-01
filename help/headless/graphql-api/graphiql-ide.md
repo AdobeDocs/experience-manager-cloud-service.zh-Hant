@@ -3,16 +3,16 @@ title: 在AEM中使用GraphiQL IDE
 description: 了解如何使用Adobe Experience Manager中的GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
+source-git-commit: 6e6bdc539f07fd15649a4f99d491f0486a511bdc
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
 
 # 使用GraphiQL IDE {#graphiql-ide}
 
-標準的實施 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE可與Adobe Experience Manager(AEM)as a Cloud Service的GraphQL API搭配使用。
+標準的實施 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE可與Adobe Experience Manager的GraphQL API(AEM)as a Cloud Service搭配使用。
 
 >[!NOTE]
 >
@@ -99,6 +99,12 @@ GraphiQL IDE還允許您管理 [查詢變數](/help/headless/graphql-api/content
 ## 管理持續查詢的快取 {#managing-cache}
 
 [持續查詢](/help/headless/graphql-api/persisted-queries.md) 建議您在dispatcher和CDN層快取這些檔案，以最終改善請求用戶端應用程式的效能。 依預設，AEM會根據預設的存留時間(TTL)，使內容傳送網路(CDN)快取失效。
+
+>[!NOTE]
+>
+>Dispatcher上的自訂重寫規則可能會覆寫AEM發佈的預設值。
+>
+>如果您根據位置比對模式，從Dispatcher傳送TTL型快取控制標題，則如有需要，您可能會想要排除 `/graphql/execute.json/*` 從火柴中。
 
 使用GraphQL，您可以設定HTTP快取標題，以控制個別持續查詢的這些參數。
 
