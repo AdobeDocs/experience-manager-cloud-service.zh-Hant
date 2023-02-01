@@ -1,15 +1,15 @@
 ---
-title: 配置和配置瀏覽器
+title: 設定和設定瀏覽器
 description: 了解AEM設定，以及如何在AEM中管理工作區設定。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 8f94d7ee3cfe436b5d41f2428b901ee1a5002993
 workflow-type: tm+mt
 source-wordcount: '1498'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 配置和配置瀏覽器 {#configuration-browser}
+# 設定和設定瀏覽器 {#configuration-browser}
 
 AEM設定可用於管理AEM中的設定，並作為工作區。
 
@@ -145,7 +145,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
       - cq:conf = "/conf/wknd"
     + image.png [dam:Asset]
 
-/conf/wkns
+/conf/wknd
     + settings
       + dam
         + imageserver [cq:Page]
