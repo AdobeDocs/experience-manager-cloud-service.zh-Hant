@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 592810c45c89d569644263c01b843d51761ebe8d
-workflow-type: ht
-source-wordcount: '3849'
-ht-degree: 100%
+source-git-commit: edb6e23341289308837509eef444a8642b903bb7
+workflow-type: tm+mt
+source-wordcount: '3857'
+ht-degree: 99%
 
 ---
 
@@ -66,6 +66,8 @@ ht-degree: 100%
          + [2020.4.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [2020.3.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [2020.2.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
+   + 維護AEMaaCS發行說明 {#maintenance}
+      + [最新維護髮行說明](/help/release-notes/maintenance/latest.md)
    + Cloud Manager 發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 {#2022}
