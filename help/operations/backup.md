@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service中備份和還原
 description: 在AEMas a Cloud Service中備份和還原
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 12e747ff73e9416775a3f26040ac7e15c21505ec
+source-git-commit: eec03acf5d208236ddac338134f95fb3aaa5ee26
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ AEMas a Cloud Service支援：
 
 在所有情況下，自訂程式碼版本都會從還原點之前上次成功部署取得。
 
-恢復時間目標(RTO)可能有所不同，但作為一般准則，恢復順序平均需要60到90分鐘，具體取決於幾個因素，如儲存庫大小。
+恢復時間目標(RTO)可能有所不同，但作為一般准則，恢復順序平均需要60到90分鐘，具體取決於幾個因素，如儲存庫大小。 預覽環境和多區域發佈器可能會延長還原時間目標。
 
 還原後，AEM版本將更新為最新版本。
 
