@@ -1,15 +1,17 @@
 ---
 title: 的最新維護髮行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
 description: 的最新維護髮行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
-source-git-commit: 23c4b815c0485286806ca76796460ef4fd81951c
+source-git-commit: bb310f87a3bbc114e971dc2dca5eab6a028d140a
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 4%
+source-wordcount: '153'
+ht-degree: 3%
 
 ---
 
 
 # 維護髮行說明 {#maintenance-release-notes}
+
+以下章節概述Experience Manageras a Cloud Service最新維護版本的技術發行說明。
 
 ## 版本10912 {#release-10912}
 
