@@ -2,9 +2,9 @@
 title: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 56fe4fde38fd6662c30b313a887f9740e919e0dc
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '987'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,32 @@ ht-degree: 1%
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.6的發行日期： [!DNL Workfront for Experience Manager enhanced connector] 是2022年12月9日。
+最新版本1.9.7的發行日期： [!DNL Workfront for Experience Manager enhanced connector] 是2023年2月2日。
 
 ## 發行重點 {#release-highlights}
 
-最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包含下列增強功能和錯誤修正：
+最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包含下列更新：
+
+* 安裝1.9.6版之後，中繼資料編輯器沒有列出Workfront自訂表單屬性。
+
+* 開發控制台隨即顯示 `/content/dam/jcr:content/metadata/wfProjectURL not found` 安裝Workfront enhanced連接器並開啟「資產」首頁後，出現錯誤訊息。
+
+
+>[!IMPORTANT]
+>
+>Adobe建議您 [升級至最新1.9.7版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+
+## 已知問題 {#known-issues}
+
+* 使用AEM 6.4設定專案連結資料夾時，Experience Manager不會儲存 **[!UICONTROL 子資料夾]** 和 **[!UICONTROL 在具有產品組合的專案中建立連結資料夾]** 欄位。 的值 **[!UICONTROL 子資料夾]** 欄位更新至 **[!UICONTROL 未定義]** 和 **[!UICONTROL 在具有產品組合的專案中建立連結資料夾]** 欄位更新至 **[!UICONTROL 預設Portfolio]** 儲存設定後自動執行。
+
+* 使用傳統Workfront體驗時， **[!UICONTROL 傳送至]** 選項 **[!UICONTROL 更多]** 下拉式清單不允許您選取Experience Manager內的目標目標。 此 **[!UICONTROL 傳送至]** 選項可使用 **[!UICONTROL 文檔操作]** 下拉式清單。 此 **[!UICONTROL 傳送至]** 選項可正確運作 **[!UICONTROL 更多]** 下拉式清單以及 **[!UICONTROL 文檔操作]** 新Workfront體驗中提供的下拉式清單。
+
+## 舊版 {#previous-releases}
+
+### 2022年12月發行 {#december-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.6版（於12月09日發行）包含下列更新：
 
 **增強功能**
 
@@ -36,18 +57,6 @@ ht-degree: 1%
 * 檔案版本中繼資料無法在Workfront和Experience Manager之間適當同步。
 * 在Workfront中建立連結至Experience Manager的資料夾時，若資料夾使用的架構在全域設定中缺少定義，則會發生問題。
 * 由於載入時間超過預期，當您按一下任何欄位時，中繼資料結構編輯器表單會停止回應。 已新增自訂表單的特定OSGi設定以解決問題。 記錄檔中會提供您新增至中繼資料結構編輯器的自訂表單名稱。
-
->[!IMPORTANT]
->
->Adobe建議您 [升級至最新1.9.6版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
-
-## 已知問題 {#known-issues}
-
-* 使用AEM 6.4設定專案連結資料夾時，Experience Manager不會儲存 **[!UICONTROL 子資料夾]** 和 **[!UICONTROL 在具有產品組合的專案中建立連結資料夾]** 欄位。 的值 **[!UICONTROL 子資料夾]** 欄位更新至 **[!UICONTROL 未定義]** 和 **[!UICONTROL 在具有產品組合的專案中建立連結資料夾]** 欄位更新至 **[!UICONTROL 預設Portfolio]** 儲存設定後自動執行。
-
-* 使用傳統Workfront體驗時， **[!UICONTROL 傳送至]** 選項 **[!UICONTROL 更多]** 下拉式清單不允許您選取Experience Manager內的目標目標。 此 **[!UICONTROL 傳送至]** 選項可使用 **[!UICONTROL 文檔操作]** 下拉式清單。 此 **[!UICONTROL 傳送至]** 選項可正確運作 **[!UICONTROL 更多]** 下拉式清單以及 **[!UICONTROL 文檔操作]** 新Workfront體驗中提供的下拉式清單。
-
-## 舊版 {#previous-releases}
 
 ### 2022年11月發行 {#november-2022-release}
 
