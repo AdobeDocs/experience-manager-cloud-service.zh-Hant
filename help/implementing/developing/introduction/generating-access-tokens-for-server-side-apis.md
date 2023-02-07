@@ -2,18 +2,14 @@
 title: 為伺服器端 API 產生存取權杖
 description: 了解如何產生安全的JWT代號，以便利第三方伺服器與AEMas a Cloud Service之間的通訊
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 41458eb1fba12e8ef45a32d3bb6fc5dd732f78ec
+source-git-commit: 9f7157be1a9e7b635b9c7d0f0c653646e6f1b43b
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2132'
 ht-degree: 1%
 
 ---
 
 # 為伺服器端 API 產生存取權杖 {#generating-access-tokens-for-server-side-apis}
-
->[!AVAILABILITY]
->
->Adobe正在逐步推出本文所述的新的多證書和憑據撤銷功能。 如果您在組織的AEM開發人員控制台中勾選整合標籤時，發現畫面外觀與下方的螢幕擷取畫面不同，這表示新變更尚未推出給您的組織。 在此情況下，請參閱 [舊版檔案](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md).
 
 有些架構依賴從AEM基礎架構外的伺服器上托管的應用程式對AEM進行as a Cloud Service的呼叫。 例如，呼叫伺服器的行動應用程式，接著會向AEMas a Cloud Service提出API請求。
 
