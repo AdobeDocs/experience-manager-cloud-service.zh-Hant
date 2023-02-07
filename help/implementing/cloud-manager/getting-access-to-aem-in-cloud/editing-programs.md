@@ -2,9 +2,9 @@
 title: 編輯計畫
 description: 了解如何編輯您的生產和沙箱計畫，以在建立計畫後調整其選項。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 2638843c5646d3190327ae1dbd5348a9c207d674
-workflow-type: ht
-source-wordcount: '513'
+source-git-commit: d8815a17601f475267b50a6a527246f1433ed7eb
+workflow-type: tm+mt
+source-wordcount: '517'
 ht-degree: 100%
 
 ---
@@ -18,9 +18,11 @@ ht-degree: 100%
 * 將第二個未使用的解決方案權利新增到現有計畫，或作為新計畫。
 * 刪除沙箱計畫。
 
->[!NOTE]
->
->您必須擁有&#x200B;**業務負責人**&#x200B;角色才能編輯計畫或刪除沙箱計畫。
+## 權限 {#permissions}
+
+您必須擁有&#x200B;**業務負責人**&#x200B;角色才能編輯計畫或刪除沙箱計畫。
+
+## 編輯方案 {#editing}
 
 請依照以下步驟編輯計畫。
 
