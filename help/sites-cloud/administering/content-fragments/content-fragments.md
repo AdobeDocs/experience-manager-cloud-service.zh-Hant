@@ -4,9 +4,9 @@ description: 了解Adobe Experience Manager(AEM)as a Cloud Service中的內容�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2066'
 ht-degree: 3%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 3%
 >[!NOTE]
 >
 >**內容片段** 和 **[體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** 是AEM中的不同功能：
->* **內容片段** 是編輯內容，可用來存取結構化資料，包括文字、數字和日期等。 它們是純內容，具有定義和結構，但沒有額外的視覺設計和/或版面。
+>* **內容片段** 是編輯內容，具有定義和結構，但不含其他視覺設計和/或版面。 它們可用來存取結構化資料，包括文字、數字和日期等。
 >* **體驗片段** 內容全面；網頁的片段。
 >
 >體驗片段可以包含內容片段形式的內容，但不能以相反的方式。

@@ -2,9 +2,9 @@
 title: 內容片段
 description: Adobe Experience Manager as a Cloud Service內容片段可讓您設計、建立、組織及使用不受頁面影響的內容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1200'
 ht-degree: 5%
 
 ---
@@ -13,18 +13,19 @@ ht-degree: 5%
 
 Adobe Experience Manager(AEM)as a Cloud Service中的內容片段為 [建立並管理為獨立於頁面的資產](/help/sites-cloud/administering/content-fragments/content-fragments.md).
 
-它們可讓您建立管道中性內容，以及（可能是管道特定的）變異。 然後，您可以在編寫內容頁面時使用這些片段及其變體。
+它們可讓您建立管道中性內容，以及（可能是管道特定的）變化。 然後，您可以在編寫內容頁面時使用這些片段及其變體。
 
 結構化內容片段與更新的JSON匯出工具一起，也可用來透過內容服務將AEM內容傳送至AEM頁面以外的管道。
 
 >[!NOTE]
 >
 >**內容片段** 和 **[體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** 是AEM中的不同功能：
->
->* **內容片段** 是編輯內容，主要是文字和相關影像。 它們是純內容，沒有設計和佈局。
->* **體驗片段** 內容及網頁片段的完整版面。
+>* **內容片段** 是編輯內容，具有定義和結構，但不含其他視覺設計和/或版面。 它們可用來存取結構化資料，包括文字、數字和日期等。
+>* **體驗片段** 內容全面；網頁的片段。
 >
 >體驗片段可以包含內容片段形式的內容，但不能以相反的方式。
+>
+>如需詳細資訊，另請參閱 [了解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!CAUTION]
 >

@@ -2,9 +2,9 @@
 title: 體驗片段
 description: 使用Adobe Experience Manager as a Cloud Service體驗片段，讓您的體驗可重複使用且靈活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '2064'
 ht-degree: 6%
 
 ---
@@ -38,6 +38,16 @@ ht-degree: 6%
 體驗片段不需要複製/貼上。
 * 支援無頭式CMS使用案例。
 作者只想使用AEM進行製作，而不想提供給客戶。 協力廠商系統/接觸點會使用該體驗，然後傳送給使用者。
+
+>[!NOTE]
+>
+>**[內容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** 和 **體驗片段** 是AEM中的不同功能：
+>* **內容片段** 是編輯內容，具有定義和結構，但不含其他視覺設計和/或版面。 它們可用來存取結構化資料，包括文字、數字和日期等。
+>* **體驗片段** 內容全面；網頁的片段。
+>
+>體驗片段可以包含內容片段形式的內容，但不能以相反的方式。
+>
+>如需詳細資訊，另請參閱 [了解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!NOTE]
 >
@@ -425,4 +435,4 @@ WKND專案會根據 `Contributors`. 使用的結構也說明如何使用其他�
 若要匯出至Adobe Target，也可以使用JSON。 請參閱：
 
 * [整合 Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
-* [將體驗片段匯出至Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+* [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)

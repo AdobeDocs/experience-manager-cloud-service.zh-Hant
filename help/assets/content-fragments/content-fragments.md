@@ -2,9 +2,9 @@
 title: 使用內容片段（資產 — 內容片段）
 description: 了解Adobe Experience Manager(AEM)as a Cloud Service中的內容片段如何讓您設計、建立、組織及使用不受頁面影響的內容，是製作頁面和無頭傳送的理想選擇。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 4478cee8f9a20e0b70bfe2fa8767e3262188cb33
 workflow-type: tm+mt
-source-wordcount: '2075'
+source-wordcount: '2071'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 3%
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)  — 使用您的片段的markdown語法
 * [使用關聯內容](/help/assets/content-fragments/content-fragments-assoc-content.md)  — 新增關聯內容
 * [中繼資料 — 片段屬性](/help/assets/content-fragments/content-fragments-metadata.md)  — 查看和編輯片段屬性
-* 使用 [內容片段與GraphQL搭配，可傳送內容](/help/assets/content-fragments/content-fragments-graphql.md) 以用於您的應用程式。 若要協助您進行此操作，您可以預覽 [JSON輸出](/help/assets/content-fragments/content-fragments-json-preview.md).
+* 使用 [內容片段與GraphQL搭配，以傳送內容](/help/assets/content-fragments/content-fragments-graphql.md) 以用於您的應用程式。 若要協助您進行此操作，您可以預覽 [JSON輸出](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ ht-degree: 3%
 >[!NOTE]
 >
 >**內容片段** 和 **[體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** 是AEM中的不同功能：
->* **內容片段** 是編輯內容，可用來存取結構化資料，包括文字、數字和日期等。 它們是純內容，具有定義和結構，但沒有額外的視覺設計和/或版面。
+>* **內容片段** 是編輯內容，具有定義和結構，但不含其他視覺設計和/或版面。 它們可用來存取結構化資料，包括文字、數字和日期等。
 >* **體驗片段** 內容全面；網頁的片段。
 >
 >體驗片段可以包含內容片段形式的內容，但不能以相反的方式。
