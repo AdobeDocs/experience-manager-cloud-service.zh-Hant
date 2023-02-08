@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: AEM as a Cloud Service 中的快取
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
+source-git-commit: b0db2224e3dd7af01bf61fe29e8e24793ab33c5b
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2832'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ Define DISABLE_DEFAULT_CACHING
      </LocationMatch>
    ```
 
-* 雖然設為私密的HTML內容不會在CDN上快取，但若 [需要權限的快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hant) ，可有效確保只向授權使用者提供內容。
+* 雖然設為私密的HTML內容不會在CDN上快取，但若 [需要權限的快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hant) 已設定，確保只能向獲授權的使用者提供內容。
 
    >[!NOTE]
    >其他方法，包括 [dispatcher-ttl AEM ACS公域專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，將不會成功覆寫值。
