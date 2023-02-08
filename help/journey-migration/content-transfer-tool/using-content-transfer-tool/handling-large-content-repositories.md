@@ -2,16 +2,16 @@
 title: 處理大型內容存放庫
 description: 本節介紹如何處理大型內容儲存庫
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7a9c601dd42aed9fbd0113e71c1c7a58b5bba8f7
+source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
 workflow-type: tm+mt
-source-wordcount: '1732'
-ht-degree: 1%
+source-wordcount: '1749'
+ht-degree: 2%
 
 ---
 
 # 處理大型內容存放庫 {#handling-large-content-repositories}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_precopy"
@@ -36,6 +36,9 @@ ht-degree: 1%
 
 * 資料儲存垃圾收集已在源上前7天內運行。 如需詳細資訊，請參閱 [資料儲存垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).
 
+### 使用AzCopy時的其他注意事項
+
+CTT提取期間，Windows目前不支援使用AzCopy的預複製。
 
 ### 如果來源AEM例項設定為使用Amazon S3或Azure Blob儲存資料存放區，則需額外考量 {#additional-considerations-amazons3-azure}
 
