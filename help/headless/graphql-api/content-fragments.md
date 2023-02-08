@@ -3,9 +3,9 @@ title: AEM GraphQL API以搭配內容片段使用
 description: 了解如何以AEM GraphQL APIas a Cloud Service使用Adobe Experience Manager(AEM)中的內容片段來傳送無頭內容。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 24dda46f8a3ac5179ae3bc95fba38c5d1f0660ca
+source-git-commit: 17b0604cb192a375c3097255812c89caa8580d5b
 workflow-type: tm+mt
-source-wordcount: '4174'
+source-wordcount: '4173'
 ht-degree: 1%
 
 ---
@@ -470,8 +470,6 @@ query GetAdventureByType($includePrice: Boolean!) {
 ```
 
 會比較欄位的內容與值 `some text` 如果內容等於值，則和會成功。 否則，運算式會失敗。
-
-此
 
 下列運算子可用來比較欄位與特定值：
 
