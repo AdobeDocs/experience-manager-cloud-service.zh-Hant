@@ -2,9 +2,9 @@
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
 hidefromtoc: true
-source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
+source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2634'
 ht-degree: 6%
 
 ---
@@ -406,6 +406,20 @@ RDE重設程式一旦啟動，通常需要幾分鐘的時間才能完成，並�
 >[!NOTE]
 >
 >RDE OSGI配置是唯一的，因為它繼承了由捆綁包聲明的任何OSGI屬性的值 `dev` 運行模式。
+
+RDE與其他環境不同，其內容可安裝在/apps底下的install.rde資料夾（或install.author.rde或install.publish.rde）中。 這可讓您將內容提交至Git，並使用命令列工具將其傳送至RDE。
+
+## 填入內容 {#populating-content}
+
+重設RDE時，會移除所有內容，因此，如果需要，必須執行明確動作以新增內容。 最佳實務是，請考慮組裝一組內容，以用作RDE中驗證或偵錯功能的測試內容。 使用該內容填入RDE的幾種可能策略：
+
+1. 使用命令行工具將內容包顯式同步到RDE
+
+1. 將範例內容放置並提交至git中/apps底下的install.rde資料夾，然後使用命令列工具將整體內容套件同步至RDE。
+
+1. 使用套件管理器
+
+請注意，同步內容套件時，限制為1GB。
 
 ## 記錄 {#logging}
 
