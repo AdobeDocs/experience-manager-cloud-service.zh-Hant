@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: ede33e43bdfd4b6aa4670fe74c2133a7a3b54b75
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '890'
 ht-degree: 5%
 
 ---
@@ -29,6 +29,7 @@ ht-degree: 5%
 [!DNL Experience Manager Assets] 會為您產生下列標準報表：
 
 * 上傳
+* 下載
 * 過期
 * 修改
 * 發佈
@@ -60,7 +61,7 @@ ht-degree: 5%
 
    ![選擇報表類型](assets/choose_report.png)
 
-1. 在儲存報表的CRX存放庫中設定報表詳細資訊，例如標題、說明、縮圖和資料夾路徑。 依預設，資料夾路徑為 `/content/dam`. 您可以指定不同的路徑。
+1. 設定報表詳細資訊，例如標題、說明、縮圖和資料夾路徑。 依預設，資料夾路徑為 `/content/dam`. 您可以指定不同的路徑，以對特定資料夾執行報表。
 
    ![新增報表詳細資料的頁面](assets/report_configuration.png)
 
@@ -104,6 +105,10 @@ ht-degree: 5%
    ![產生的報表](assets/report_page.png)
 
    按一下 **[!UICONTROL 下載]** 從工具列下載CSV格式的報表。
+
+   >[!NOTE]
+   >
+   >您可以根據過去360天內產生的事件產生報表。 Experience Manager會保留使用者ID資料30天。
 
 ## 新增自訂欄至報表 {#add-custom-columns}
 

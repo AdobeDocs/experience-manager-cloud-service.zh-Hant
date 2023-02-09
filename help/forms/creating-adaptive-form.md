@@ -5,17 +5,22 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
 
-# 建立最適化表單 {#creating-an-adaptive-form}
+# 建立最適化表單（Foundation元件） {#creating-an-adaptive-form}
 
 
 適用性Forms可讓您建立吸引人、回應式、動態且最適化的表單。 AEM Forms提供商務使用者易記精靈，可快速撰寫最適化Forms。 精靈提供快速的索引標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項，以建立最適化表單。
+
+>[!NOTE]
+>
+> 本文說明建立最適化表單的舊方法。 若要根據最新方法建立適用性Forms，請參閱 [建立最適化表單（核心元件）](creating-adaptive-form.md).
+
 
 <!-- 
 
@@ -39,7 +44,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-   Adaptive Forms created with this option don’t use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
+   Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
 
 ## 先決條件
 
@@ -54,6 +59,8 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 * **權限**:將使用者新增至 [!DNL forms-users] 提供建立最適化表單的權限。 如需特定使用者群組的表單詳細清單，請參閱 [群組和權限](forms-groups-privileges-tasks.md).
 
+## 建立最適化表單（Foundation元件） {#create-an-adaptive-form-foundation-components}
+
 1. 存取 [!DNL Experience Manager Forms] 製作例項。 可以是雲端例項或本機開發例項。
 
 1. 在Experience Manager登入頁面上輸入您的憑證。
@@ -67,15 +74,19 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
       >[!NOTE]
       >
-      > 您也可以建立 [!UICONTROL 記錄檔案] 範本。 如需詳細資訊，請參閱 [適用性表單編輯器中的記錄支援檔案](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+      > 您也可以建立 [!UICONTROL 記錄檔案] 範本(使用適用性Forms編輯器)。 如需詳細資訊，請參閱 [適用性表單編輯器中的記錄支援檔案](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * 選取靜態範本時，資料、樣式、提交、傳送和預覽選項無法使用。 建立新的適用性表單時，建議使用可編輯的範本。
 
-1. 在樣式標籤中，選擇主題：
+1. 在 **[!UICONTROL 樣式]** 頁簽，選擇主題：
+
    * 當所選模板指定主題時，該主題將在嚮導中自動選中。 您也可以從「樣式」索引標籤中選擇不同的主題。
    * 如果所選模板未指定主題，則可以使用「樣式」頁簽選擇主題。 此 **[!UICONTROL 建立]** 按鈕僅在選取主題後啟用。
-1. （可選）在「資料」索引標籤中，選取資料模型：
+
+1. （選用）在 **[!UICONTROL 資料]** 頁簽，選擇資料模型：
+
    * **表單資料模型**:A [表單資料模型](data-integration.md) 可讓您將不同資料來源的實體和服務整合至最適化表單。 如果您建立的適用性表單涉及從多個資料來源擷取資料並將其寫入多個資料來源，請選擇「表單資料模型」。
+
    * **JSON結構**: [JSON結構](adaptive-form-json-schema-form-model.md) 代表組織內後端系統產生或使用資料的結構。 您可以將結構與適用性表單建立關聯，並使用其元素將動態內容新增至適用性表單。 製作適用性Forms時，結構的元素可用於內容瀏覽器的「資料模型物件」索引標籤，所有欄位也會新增至新建立的適用性表單。
 
    預設情況下，會選取資料模型的所有欄位。 建立適用性表單時，所有選取的資料模型欄位都會轉換為對應的適用性表單元件。 精靈提供您的核取方塊，以僅選取應包含在適用性表單中的欄位。
@@ -86,7 +97,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    
    -->
 
-1. 在「提交」頁簽中，選擇提交操作：
+1. 在 **[!UICONTROL 提交]** 頁簽，選擇提交操作：
 
    * 選取範本時，會自動選取範本中指定的提交動作。 您可以從「提交」頁簽中選擇不同的提交操作。 此 **[!UICONTROL 提交]** 標籤顯示所有可用的提交操作。
 
@@ -176,3 +187,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 點選 ![儲存](/help/forms/assets/check-button.png) 以儲存屬性。
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
+
+>[!NOTE]
+>
+> 您也可以將「適用性表單」儲存為範本。 如需詳細資訊，請參閱 [使用適用性表單建立範本](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).

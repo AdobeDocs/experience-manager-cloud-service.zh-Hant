@@ -2,9 +2,9 @@
 title: 如何建立最適化表單範本？
 description: 建立最適化表單範本，以使用範本編輯器定義基本結構和初始內容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1920'
 ht-degree: 1%
 
 ---
@@ -184,6 +184,23 @@ Perform the following steps to show and hide templates:
     * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
+
+## 將適用性表單儲存為範本 {#saving-adaptive-form-as-template}
+
+您也可以將適用性表單儲存為範本，以供日後使用。 將適用性表單儲存為範本：
+
+1. 選取適用性表單以將其儲存為範本。
+1. 按一下 **[!UICONTROL 另存為範本]**. 對話方塊隨即顯示。
+1. 指定 **[!UICONTROL 標題]** （必填欄位）, **[!UICONTROL 位置]** （必填欄位）和 **[!UICONTROL 說明]** （選用欄位）。
+1. 按一下&#x200B;**[!UICONTROL 建立]**。
+
+   ![另存為模板](/help/forms/assets/saveformastemplate.png)
+
+
+
+>[!NOTE]
+>
+>若要使用與來源適用性表單相同的容器原則，建議將範本儲存在與來源適用性表單相同的資料夾中。 如果是，模板將保存在任何其他資料夾中，而建立的模板使用預設容器策略。
 
 ## 建議 {#recommendations}
 

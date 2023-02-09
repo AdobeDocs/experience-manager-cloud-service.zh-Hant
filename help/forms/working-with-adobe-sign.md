@@ -6,21 +6,15 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3072'
 ht-degree: 1%
 
 ---
 
 
 # 使用 [!DNL Adobe Sign] 在適用性表單中 {#using-adobe-sign-in-an-adaptive-form}
-
-
->[!NOTE]
->
->在適用性表單中使用Adobe Sign角色的功能於2021年8月的發行前管道提供。 此功能將於2021年9月發行。
-
 
 [!DNL Adobe Sign] 可啟用最適化表單的電子簽名工作流程。 電子簽名改進了處理法律、銷售、工資、人力資源管理等領域的文檔的工作流。
 

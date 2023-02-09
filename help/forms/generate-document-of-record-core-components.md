@@ -1,14 +1,15 @@
 ---
 title: 產生最適化Forms的記錄檔案
 description: 說明如何為適用性Forms的記錄檔案(DoR)產生範本。
+exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '4065'
+source-wordcount: '3214'
 ht-degree: 1%
 
 ---
 
-# 產生最適化Forms的記錄檔案
+# 產生最適化Forms（核心元件）的記錄檔案
 
 ## 概觀 {#overview}
 
@@ -16,8 +17,7 @@ ht-degree: 1%
 
 ![記錄文件](assets/document-of-record.png)
 
-若要建立記錄檔案，系統會將XFA或Acroform範本與透過最適化表單收集的資料合併。 您可以自動或按需生成記錄文檔。
-隨需選項可讓您指定自訂XFA或Acroform範本，為記錄檔案提供自訂外觀。
+若要建立記錄檔案，系統會將XFA或Acroform範本與透過最適化表單收集的資料合併。 您可以自動或按需生成記錄文檔。 隨需選項可讓您指定自訂XFA或Acroform範本，為記錄檔案提供自訂外觀。
 
 您可以：
 
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 開始學習並準備記錄檔案所需的資產之前：
 
-**基本模板：** 在Forms Designer或Acrobat表單(AcroForm)中建立的XFA範本（XDP檔案）。 [基礎範本](#base-template-of-a-document-of-record) 用於指定記錄文檔的樣式和品牌資訊。 先將XFA範本（XDP檔案）上傳至AEM Forms執行個體
+**基本模板：** 在Forms Designer或Acrobat表單(AcroForm)中建立的XFA範本（XDP檔案）。 [基礎範本](#base-template-of-a-document-of-record) 用於指定記錄文檔的樣式和品牌資訊。 先將XFA範本（XDP檔案）上傳至AEM Forms執行個體。
 
 **適用性表單：** 要為其生成記錄文檔的最適化表單。
 
@@ -38,9 +38,9 @@ ht-degree: 1%
 上傳XFA範本（XDP檔案）至AEM Forms執行個體。 執行下列步驟來設定適用性表單，以使用XFA範本（XDP檔案）作為記錄檔案的範本：
 
 1. 在Experience Manager製作例項中，按一下 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案].**
-1. 選取表單，然後按一下 **[!UICONTROL 屬性]**.
+1. 選取表單或建立最適化表單，然後按一下 **[!UICONTROL 屬性]**.
 1. 在「屬性」視窗中，點選 **[!UICONTROL 表單模型]**.
-1. 在  **[!UICONTROL 表單模型]** 標籤中 **[!UICONTROL 從]** 下拉式清單，選取 **[!UICONTROL 結構]** 或 **[!UICONTROL 無]**. 建立表單時，也可以選取表單模型。
+1. 在  **[!UICONTROL 表單模型]** 標籤中 **[!UICONTROL 從]** 下拉式清單，選取 **[!UICONTROL 表單資料模型]**, **[!UICONTROL 結構]** 或 **[!UICONTROL 無]**. 建立表單時，也可以選取表單模型。
 1. 在「表單模型」頁簽的「記錄模板配置文檔」部分中，選擇 **將表單模板與記錄模板文檔關聯**. 選取此選項時，會顯示您電腦上可用的所有XFA範本（XDP檔案）。 選取適當的檔案。 此外，請確認適用性表單和選取的XFA範本（XDP檔案）使用相同的結構描述（資料結構描述）。
 1. 按一下 **[!UICONTROL 完成。]**
 
@@ -51,30 +51,30 @@ ht-degree: 1%
 將Adobe AcrobatPDF(Acroform)上傳至AEM Forms執行個體。 執行下列步驟來設定適用性表單，以使用Adobe AcrobatPDF(Acroform)作為記錄檔案的範本：
 
 1. 在Experience Manager製作例項中，按一下 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案].**
-1. 選取表單，然後按一下 **[!UICONTROL 屬性]**.
+1. 選取表單或 **[!UICONTROL 建立最適化表單]**，然後按一下 **[!UICONTROL 屬性]**.
 1. 在「屬性」視窗中，點選 **[!UICONTROL 表單模型]**.
-1. 在  **[!UICONTROL 表單模型]** 標籤中 **[!UICONTROL 從]** 下拉式清單，選取 **[!UICONTROL 結構]** 或 **[!UICONTROL 無]**. 建立表單時，也可以選取表單模型。
-1. 在「表單模型」頁簽的「記錄模板配置文檔」部分中，選擇 **將表單模板與記錄模板文檔關聯**. 選取此選項時，會顯示您電腦上可用的所有AcrobatPDF(Acroform)。 選取適當的檔案。
+1. 在  **[!UICONTROL 表單模型]** 標籤中 **[!UICONTROL 從]** 下拉式清單，選取 **[!UICONTROL 表單資料模型]**, **[!UICONTROL 結構]** 或 **[!UICONTROL 無]**. 建立表單時，也可以選取表單模型。
+1. 在「表單模型」頁簽的「記錄模板配置文檔」部分中，選擇 **將表單模板與記錄模板文檔關聯**. 選取此選項時，會顯示您電腦上可用的所有AcrobatPDF(Acroform)。 選取您要使用的對應表單。
 1. 按一下 **[!UICONTROL 完成。]**
 
 您的適用性表單現在已設定為使用Acroform作為記錄檔案的範本。 接下來的步驟是 [使用對應的範本欄位系結適用性表單元件](#bind-adaptive-form-components-with-template-fields).
 
 ## 自動生成記錄文檔 {#auto-generate-a-document-of-record}
 
-當適用性表單配置為自動生成記錄文檔時，每次更改表單時，其記錄文檔都會立即更新。 例如，如果從現有的最適化表單中移除欄位，則也會移除對應欄位，且在記錄檔案中不會顯示。 自動生成記錄文檔還有許多其他優點。 :
+當適用性表單配置為自動生成記錄文檔時，每次更改表單時，其記錄文檔都會立即更新。 例如，如果從現有的最適化表單中移除欄位，則也會移除對應欄位，且在記錄檔案中不會顯示。 自動生成記錄文檔還有許多其他優點：
 
 * 表單開發人員不必手動維護資料綁定。 自動產生的記錄檔案會處理資料系結相關的更新。
 * 表單開發人員不必手動隱藏標示為從記錄檔案中排除的欄位。 預先配置自動生成的記錄文檔以排除此類欄位。
 * 自動生成的記錄文檔選項可節省為記錄文檔建立表單模板所需的時間。
 * 自動生成的「記錄文檔」選項允許您使用不同的基模板來使用不同的樣式和外觀。 它有助於為貴組織的記錄檔案選擇最佳樣式和外觀。 如果未指定樣式，系統樣式將設定為預設樣式。
-* 自動生成的記錄文檔可確保任何表單更改立即反映在記錄文檔中。
+* 自動生成的記錄文檔可確保任何形式更改立即反映在記錄文檔中。
 
 執行下列步驟來設定適用性表單以自動產生記錄檔案：
 
 1. 在Experience Manager製作例項中，按一下 **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案].**
-1. 選取表單，然後按一下 **[!UICONTROL 屬性]**.
+1. 選取表單或建立最適化表單，然後按一下 **[!UICONTROL 屬性]**.
 1. 在「屬性」視窗中，點選 **[!UICONTROL 表單模型]**.
-1. 在  **[!UICONTROL 表單模型]** 標籤中 **[!UICONTROL 從]** 下拉式清單，選取 **[!UICONTROL 結構]** 或 **[!UICONTROL 無]**. 建立表單時，也可以選取表單模型。
+1. 在  **[!UICONTROL 表單模型]** 標籤中 **[!UICONTROL 從]** 下拉式清單，選取 **[!UICONTROL 表單資料模型]**, **[!UICONTROL 結構]** 或 **[!UICONTROL 無]**. 建立表單時，也可以選取表單模型。
 1. 在「表單模型」頁簽的「記錄模板配置文檔」部分中，選擇 **生成記錄文檔**.
 1. 按一下 **[!UICONTROL 完成。]**
 
@@ -97,7 +97,10 @@ ht-degree: 1%
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-您可以搭配使用「傳送電子郵件」、「Experience Manager工作流程」提交動作 [記錄步驟的文檔和其他提交操作](configuring-submit-actions.md) 接收記錄檔。
+您可以使用「傳送電子郵件」、「叫用AEM工作流程」、「叫用電源自動化流程」等提交動作 [提交操作](configuring-submit-actions.md) 接收記錄檔。
+![影像提交動作](/help/forms/assets/submit-actions-img.png)
+
+
 
 ## 記錄文檔模板的增量更新 {#document-of-record-template-incremental-updates}
 
@@ -120,7 +123,7 @@ In the following video Adaptive Form components are binded with corresponding Ac
 表單開發人員會將適用性Forms欄位與對應的記錄檔案範本系結。
 >[!VIDEO](assets/we-retail-binding.mp4)
 
-現在，提交適用性表單時，會建立更新的記錄檔案。
+現在，提交適用性表單時，會產生更新的記錄檔案。
 
 ![已更新-](assets/we-retail-new-invoice-sent-to-customer.png)
 
@@ -189,21 +192,9 @@ When you select a form model, configure Document of Record using options availab
    <td> </td>
   </tr>
   <tr>
-   <td>草寫簽名</td>
-   <td>簽名手寫</td>
-   <td>true</td>
-   <td> </td>
-  </tr>
-  <tr>
    <td>數值方塊</td>
    <td>數值欄位</td>
    <td>true</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>密碼框</td>
-   <td>密碼欄位</td>
-   <td>false</td>
    <td> </td>
   </tr>
   <tr>
@@ -228,12 +219,6 @@ When you select a form model, configure Document of Record using options availab
    <td>提交按鈕</td>
    <td><p>電子郵件提交按鈕</p> <p>HTTP提交按鈕</p> </td>
    <td>false</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>條款與條件</td>
-   <td> </td>
-   <td>true</td>
    <td> </td>
   </tr>
   <tr>
@@ -275,15 +260,15 @@ When you select a form model, configure Document of Record using options availab
 
 ## 記錄文檔的基礎模板 {#base-template-of-a-document-of-record}
 
-基礎模板為記錄文檔提供樣式和外觀資訊。 它允許您自定義自動生成的記錄文檔的預設外觀。 例如，您可以使用基本模板將公司徽標添加到「記錄文檔」頁首中，並在「記錄文檔」頁尾中添加版權資訊。
+基礎模板為記錄文檔提供樣式和外觀資訊。 它允許您自定義自動生成的記錄文檔的預設外觀。 例如，您可以使用基本模板將公司徽標添加到記錄文檔頁首中，並在文檔頁尾中添加版權資訊。
 
-基礎模板中的首頁用作記錄文檔模板的首頁。 主版頁可以有頁首、頁尾和頁碼等資訊，您可以將這些資訊應用到記錄文檔。 您可以使用基本模板將此類資訊應用於記錄文檔，以自動生成記錄文檔。 使用基本模板可更改欄位的預設屬性。
+基礎模板中的首頁用作記錄文檔模板的首頁。 主版頁可以有頁首、頁尾和頁碼等資訊，您可以將這些資訊應用到記錄文檔。 您可以使用基本模板將此類資訊應用於記錄文檔，以自動生成記錄文檔。 使用基本模板可以更改欄位的預設屬性。
 
 一律遵循 [基本範本慣例](#base-template-conventions) 設計基礎模板時。
 
 ## 基本範本慣例 {#base-template-conventions}
 
-基本模板用於定義記錄文檔的頁眉、頁腳、樣式和外觀。 頁首和頁尾可包含公司標誌和版權文字等資訊。 基本模板中的第一個母版頁被複製並用作記錄文檔的母版頁，其中包含頁首、頁尾、頁碼，或應出現在記錄文檔中所有頁上的任何其他資訊。 如果使用的基礎模板不符合基礎模板約定，則基礎模板的第一個首頁仍用於記錄文檔模板。 強烈建議您根據基本模板的慣例設計基礎模板，並將其用於自動生成記錄文檔。
+基本模板用於定義記錄文檔的頁眉、頁腳、樣式和外觀。 頁首和頁尾可包含公司標誌和版權文字等資訊。 基本模板中的第一個母版頁被複製並用作記錄文檔的母版頁，該母版頁包含標題、頁尾、頁碼，或應出現在記錄文檔中所有頁上的任何其他資訊。 如果使用的基礎模板不符合基礎模板約定，則基礎模板的第一個首頁仍用於記錄文檔模板中。 強烈建議您根據基本模板的慣例設計基礎模板，並將其用於自動生成記錄文檔。
 
 **主版頁面慣例**
 
@@ -310,12 +295,13 @@ When you select a form model, configure Document of Record using options availab
 
 1. （可選）修改要應用於記錄文檔中欄位的欄位的樣式和外觀。
 1. 儲存表單。
+   ![基本屬性](/help/forms/assets/form-designer-dor-img.png)
 
 您現在可以將保存的表單用作記錄文檔的基礎模板。 請勿修改或移除基本範本中存在的任何指令碼。
 
 **修改基礎模板**
 
-* 如果不對基本模板中的欄位應用任何樣式，建議從基本模板中刪除這些欄位，以便自動拾取對基本模板的任何升級。
+* 請勿對基礎範本中的欄位套用任何樣式，建議您從基礎範本中移除這些欄位，以便自動擷取對基礎範本的任何升級。
 * 修改基本模板時，請勿刪除、添加或修改指令碼。
 
 嚴格遵守上述慣例和指示設計基礎模板。
@@ -332,23 +318,17 @@ When you select a form model, configure Document of Record using options availab
 1. 根據您是選擇預設模板還是自定義模板，以下部分或全部屬性將出現在「記錄文檔」頁簽中。 指定以下提及的屬性以定義記錄文檔的外觀：
 
    1. **基本屬性**:
-      * **範本**:如果您選擇選取自訂範本，請瀏覽您 [!DNL AEM Forms] 伺服器。 如果您想使用尚未在您的 [!DNL AEM Forms] 伺服器上，您應先將XDP上傳至您的 [!DNL AEM Forms] 伺服器。
-      * **重音顏色**:在文檔或記錄PDF中呈現標題文本和分隔符行的顏色。
+      * **範本**:如果您想要選取自訂範本，請瀏覽並在您的 [!DNL AEM Forms] 伺服器。 如果您想使用的範本在 [!DNL AEM Forms] 伺服器上，您應先將XDP上傳至您的 [!DNL AEM Forms] 伺服器。
+      * **重音顏色**:在記錄PDF文檔中呈現標題文本和分隔符行的顏色。
       * **字型系列**:「記錄文檔」PDF中文本的字型系列。
-      * **包括未綁定到資料模型的表單對象**:設定屬性時，包括記錄文檔中基於架構的最適化表單中的未綁定欄位。
+      * **包括未綁定到資料模型的表單對象**:設定屬性時，記錄檔案中的「基於架構的最適化表單」中的未綁定欄位。
       * **從記錄文檔中排除隱藏的欄位**:設定屬性可識別「記錄檔」中排除的隱藏欄位。
       * **隱藏面板的說明**:設定屬性會從記錄檔案中排除面板/表格的說明。 適用於面板和表格。
-
-      ![基本屬性](/help/forms/assets/basicpropertiesdor.png)
-
    1. **表單欄位屬性**:
       * **對於核取方塊和選項按鈕元件，僅顯示選取的值**:設定屬性時，僅會顯示中的核取方塊和選項按鈕的選取值 [!UICONTROL 記錄檔案].
       * **多個值的分隔符號**:您可以選擇任何分隔符號，例如逗號或分行符號，以顯示多個值。
       * **選項對齊**:您可以選取所需的對齊方式（水準、垂直、與最適化表單相同），以設定要顯示於的欄位對齊方式，例如核取方塊或選項按鈕 [!UICONTROL 記錄檔案]. 預設情況下，會為 [!UICONTROL 記錄檔案]. 從 [!UICONTROL 表單欄位屬性] 的DoR會覆寫 [!UICONTROL 項目對齊方式] （適用於適用性表單上的欄位）。 如果是，請選取 [!UICONTROL 與適用表單相同] 選項，則適用性表單製作例項中設定的對齊方式會用於 [!UICONTROL 記錄檔案] 欄位。
       * **水準對齊選項數**：您可以設定要在「記錄文檔」上顯示的水準對齊選項的數量。
-
-      ![表單欄位屬性](/help/forms/assets/formfieldpropertiesdor.png)
-
    1. **主版頁面屬性**:
       * **標誌影像**:您可以選擇從適用性表單使用標誌影像、從DAM中選擇一個，或從電腦上傳一個。
       * **表單標題**:DoR的標題。
@@ -357,7 +337,7 @@ When you select a form model, configure Document of Record using options availab
       * **免責聲明**:說明記錄檔案權利和義務範圍的文本。
       * **免責聲明文本**:免責聲明文本。
 
-      ![主版頁面屬性](/help/forms/assets/masterpagepropertiesdor.png)
+      ![主版頁面屬性](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
    >如果您使用使用6.3之前版本的設計器建立的適用性表單模板，以便「重音顏色」和「字型系列」屬性工作，請確保根子表單下的適用性表單模板中存在以下內容：
@@ -376,28 +356,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 若要儲存品牌變更，請點選 **[!UICONTROL 完成]**.
 
-## 適用性表單編輯器中的記錄支援檔案 {#dor-support-in-adaptiveform}
 
-您可以設定 [!UICONTROL 記錄檔案] 直接從適用性表單編輯器或適用性表單範本編輯器建立範本。
-
-從適用性表單編輯器的製作例項執行下列步驟：
-
-1. 選取 **[!UICONTROL 適用性表單容器（根）]** 元件。
-1. 按一下 ![配置表徵圖](/help/forms/assets/configure-icon.svg) 圖示以開啟 **[!UICONTROL 屬性]** 的下一個參數。
-1. 開啟 **[!UICONTROL 記錄模板文檔]** 標籤，然後從下列選項中選取：
-   * **[!UICONTROL 無]**:若選取此選項，則否 [!UICONTROL 記錄檔案] 為最適化表單建立的範本。
-
-   * **[!UICONTROL 將表單模板與記錄模板文檔關聯]**：選中此選項時，XFA表單將用作記錄文檔的模板。
-
-   * **[!UICONTROL 生成記錄文檔]**:選取此選項時， [!UICONTROL 記錄檔案] 會自動為您的適用性表單產生範本。
-
-1. 點選 ![儲存](/help/forms/assets/check-button.png) 以儲存屬性。
-
-![記錄模板支援文檔](/help/forms/assets/dor-templatesupport.png)
-
->[!NOTE]
->
->當 [!UICONTROL 記錄檔案] 使用適用性表單範本編輯器建立範本，之後只有兩個選項可在 [!UICONTROL 記錄模板文檔] 標籤 [!UICONTROL 無] 和 [!UICONTROL 生成記錄文檔].
 
 ## 記錄文檔中面板的表和列佈局 {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -431,65 +390,3 @@ When you select a form model, configure Document of Record using options availab
 
 * **在DoR中包含未綁定欄位：** 設定屬性時，包括記錄文檔中基於架構的最適化表單中的未綁定欄位。 預設為true。
 * **如果隱藏，則從DoR排除欄位：** 設定屬性，以在表單提交時從記錄檔案中排除隱藏欄位。 啟用時 [在伺服器上重新驗證](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)，伺服器會在從記錄文檔中排除這些欄位之前重新計算隱藏欄位。
-
-## 使用自訂XCI檔案
-
-XCI檔案可協助您設定檔案的各種屬性。 Formsas a Cloud Service有主XCI檔案。 您可以使用自訂XCI檔案來覆寫主XCI檔案中指定的一或多個預設屬性。 例如，您可以選擇將字型嵌入文檔，或為所有文檔啟用標籤屬性。 下表指定XCI選項：
-
-| XCI選項 | 說明 |
-|--- |--- |
-| config/present/pdf/creator | 使用「文檔資訊」字典中的「建立者」條目標識文檔建立者。 如需此字典的相關資訊，請參閱 [PDF參考指南](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
-| config/present/pdf/producer | 使用「文檔資訊」字典中的「生成者」條目標識文檔生成者。 如需此字典的相關資訊，請參閱 [PDF參考指南](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
-| 配置/存在/佈局 | 控制輸出是單一面板還是編頁。 |
-| config/present/pdf/compression/level | 指定生成PDF文檔時要使用的壓縮程度。 |
-| config/present/pdf/fontInfo/embed | 控制輸出文檔中的字型嵌入。 |
-| config/present/pdf/scriptModel | 控制輸出PDF文檔中是否包含XFA特定資訊。 |
-| config/present/common/data/adjustData | 控制XFA應用程式在合併後是否調整資料。 |
-| config/present/pdf/renderPolicy | 控制頁面內容的產生是在伺服器上完成，還是延遲至用戶端。 |
-| config/present/common/locale | 指定輸出文檔中使用的預設區域設定。 |
-| 設定/存在/目的地 | 當包含在當前元素中時，指定輸出格式。 當openAction元素包含時，指定在互動式客戶端中開啟文檔時要執行的操作。 |
-| config/present/output/type | 指定要應用於檔案的壓縮類型或要生成的輸出類型。 |
-| config/present/common/temp/uri | 指定表單URI。 |
-| config/present/common/template/base | 在表單設計中為URI提供基本位置。 當此元素不存在或為空時，表單設計的位置將用作基礎。 |
-| config/present/common/log/to | 控制日誌資料或輸出資料寫入的位置。 |
-| config/present/output/to | 控制日誌資料或輸出資料寫入的位置。 |
-| config/present/script/currentPage | 指定開啟文檔時的初始頁。 |
-| config/present/script/exclude | 通知Formsas a Cloud Service要忽略的事件。 |
-| config/present/pdf/line化 | 控制輸出PDF文檔是否被線性化。 |
-| config/present/script/runScripts | 控制要執行哪組指令碼Formsas a Cloud Service。 |
-| config/present/pdf/tagged | 控制在輸出PDF文檔中包含標籤。 在PDF的上下文中，標籤是文檔中包含的用於公開文檔的邏輯結構的附加資訊。 標籤有助於輔助工具和重新格式化。 例如，頁碼可以被標籤為工件，這樣螢幕閱讀器就不會在文本的中間發出它。 雖然標籤使文檔更有用，但它們也會增加文檔的大小和處理時間以建立文檔。 |
-| config/present/pdf/fontInfo/alwaysEmbed | 指定嵌入到輸出文檔中的字型。 |
-| config/present/pdf/fontInfo/neverEmbed | 指定絕不可嵌入輸出文檔的字型。 |
-| config/present/pdf/pdfa/part | 指定文檔符合的PDF/A規範的版本號。 |
-| config/present/pdf/pdfa/amd | 指定PDF/A規範的修訂級別。 |
-| config/present/pdf/pdfa/conformance | 指定與PDF/A規範的符合級別。 |
-| config/present/pdf/version | 指定要生成的PDF文檔的版本 |
-| config/present/pdf/version/map | 指定文檔的後退字型 |
-
-### 在Formsas a Cloud Service環境中使用自訂XCI檔案
-
-1. 將自訂XCI檔案新增至您的開發專案。
-1. 指定下列項目 [內嵌屬性](/help/implementing/deploying/configuring-osgi.md):
-
-   ```JSON
-    {
-     "xciFilePath": "[path of XCI file]"
-    }
-   ```
-
-   例如，
-
-   ```JSON
-    {
-     "xciFilePath": "/content/dam/formsanddocuments/customMinionProBoldAndTagged.xci"
-    }
-   ```
-
-1. 將專案部署至您的Cloud Service環境。
-
-### 在本機Formsas a Cloud Service開發環境中使用自訂XCI檔案
-
-1. 上傳XCI檔案至本機開發環境。
-1. 開啟Cloud ServiceSDK設定管理器。 預設URL為： <http://localhost:4502/system/console/configMgr>.
-1. 找出並開啟 **[!UICONTROL 適用性Forms與互動式通訊Web通道]** 設定。
-1. 指定XCI檔案的路徑，然後按一下 **[!UICONTROL 儲存]**.

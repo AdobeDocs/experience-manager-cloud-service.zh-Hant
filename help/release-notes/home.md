@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: e98ba2840795f136bf2c10c66863b52beede1342
+source-git-commit: fda4fdd3a28caa0a35014fbf4b0bbac8800e343c
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 | 產品 | Adobe Experience Manager as a Cloud Service  |
 |---|---|
-| 版本 | 2022.10.0 |
+| 版本 | 2023.1.0 |
 | 類型 | 持續更新 |
 | 推出日期 | 持續更新 |
 
@@ -21,8 +21,8 @@ ht-degree: 100%
 
 利用 [!DNL Adobe Experience Manager] as a Cloud Service 中的持續發行模型，應用程式會持續自動更新。有兩種類型的更新，功能發行和維護發行：
 
-* 功能發行以可預測的每月頻率進行，並專注於新功能和產品創新。
-* 維護發行會時常進行，並專注於安全性更新、錯誤修正和效能增強。這可確保 [!DNL Adobe Experience Manager] as a Cloud Service 始終保持最新狀態並包含任何關鍵修正。
+* [功能發行以可預測的每月頻率進行，並專注於新功能和產品創新。](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [維護發行會時常進行，並專注於安全性更新、錯誤修正和效能增強。](/help/release-notes/maintenance/latest.md)這可確保 [!DNL Adobe Experience Manager] as a Cloud Service 始終保持最新狀態並包含任何關鍵修正。
 
 除了創新的速度，[!DNL Adobe Experience Manager] as a Cloud Service 還提供了靈活性，可以在功能發行到生產環境之前提前整整一個月預覽即將推出的功能。這能讓您透過在您自己的自訂環境中測試功能來評估即將發行的版本對其組織的影響，並提前培訓/準備內部使用者。
 
