@@ -2,9 +2,9 @@
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
 hidefromtoc: true
-source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
+source-git-commit: 10d74413ece591de52b7dbebd59191cace81e238
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2664'
 ht-degree: 6%
 
 ---
@@ -201,9 +201,13 @@ RDE一次支援單一專案。 由於程式碼會從本機開發環境同步至R
 
 您可以參考遠端存放庫（可選）:
 
-`aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+`aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 依預設，成品會部署至製作和發佈層級，但可使用「 — s」標幟來鎖定特定層級。
+
+>[!IMPORTANT]
+>
+>WKND專案的Dispatcher設定不會透過上述內容套件安裝進行部署。 您需要依照「部署Apache/Dispatcher設定」步驟，個別部署。
 
 <u>部署OSGI設定</u>
 
