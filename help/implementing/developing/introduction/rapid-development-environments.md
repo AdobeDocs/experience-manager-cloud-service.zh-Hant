@@ -1,9 +1,9 @@
 ---
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '2903'
+source-wordcount: '2898'
 ht-degree: 5%
 
 ---
@@ -452,7 +452,7 @@ RDE與其他環境不同，其內容可安裝在/apps底下的install.rde資料�
 
 ## AEM FormsCloud Service快速開發環境(RDE)與其他環境有何不同？ {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Forms開發人員可使用AEM FormsCloud Service快速開發環境來快速開發適用性Forms、工作流程和自訂項目，例如自訂核心元件、與協力廠商系統的整合等。 AEM FormsCloud Service快速開發環境(RDE)不支援需要記錄檔的功能，例如在提交最適化表單時產生記錄檔。 以下列出的功能使用記錄文檔。 這些不適用於快速開發環境(RDE):
+Forms開發人員可使用AEM FormsCloud Service快速開發環境來快速開發適用性Forms、工作流程和自訂項目，例如自訂核心元件、與協力廠商系統的整合等。 AEM FormsCloud Service快速開發環境(RDE)不支援通訊API，也不支援需要記錄檔的功能，例如在提交最適化表單時產生記錄檔。 下列AEM Forms功能不適用於快速開發環境(RDE):
 
 * 設定最適化表單的記錄檔案
 * 在提交最適化表單或使用工作流程步驟時產生記錄檔案
@@ -460,9 +460,7 @@ Forms開發人員可使用AEM FormsCloud Service快速開發環境來快速開�
 * 在適用性表單或工作流程步驟中使用Adobe Sign
 * 通訊API
 
-在使用需要記錄檔的功能時，您會遇到錯誤訊息。
-
 >[!NOTE]
 >
-> 快速開發環境(RDE)的UI與Forms的其他Cloud Service環境之間沒有變更。 所有與「記錄檔案」相關的選項（例如為最適化表單選取記錄範本檔案）會繼續顯示在UI中。 這些環境沒有記錄檔功能來測試這些選項。 因此，當您選擇任何「記錄文檔」選項時，不執行任何操作，並且顯示或返回錯誤消息。
+> 快速開發環境(RDE)的UI與Forms的其他Cloud Service環境之間沒有變更。 所有與「記錄檔案」相關的選項（例如為最適化表單選取記錄範本檔案）會繼續顯示在UI中。 這些環境沒有通訊API和記錄檔功能來測試這些選項。 因此，當您選擇任何需要通信API或記錄檔案功能的選項時，將不執行任何操作，並顯示或返回錯誤消息。
 

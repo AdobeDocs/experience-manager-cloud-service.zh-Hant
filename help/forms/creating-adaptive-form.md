@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,12 @@ ht-degree: 0%
 
 適用性Forms可讓您建立吸引人、回應式、動態且最適化的表單。 AEM Forms提供商務使用者易記精靈，可快速撰寫最適化Forms。 精靈提供快速的索引標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項，以建立最適化表單。
 
->[!NOTE]
->
-> 本文說明建立最適化表單的舊方法。 若要根據最新方法建立適用性Forms，請參閱 [建立最適化表單（核心元件）](creating-adaptive-form.md).
+開始之前，請先了解可用的Forms元件類型：
+
+* [適用性Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) 是標準化的資料擷取元件。 這些元件可提供自訂功能、縮短開發時間，並降低數位註冊體驗的維護成本。 開發人員可輕鬆自訂和設定這些元件的樣式。 Adobe建議運用這些現代且可擴充的元件來開發最適化Forms。
+
+* [適用性Forms Foundation元件](creating-adaptive-form.md) 是傳統（舊）資料擷取元件。 您可以繼續使用這些元件來編輯現有的基礎元件（以最適化表單為基礎）。 如果您要建立新表單，Adobe建議使用  [適用性Forms核心元件](creating-adaptive-form-core-components.md) 來建立適用性Forms。
+
 
 
 <!-- 

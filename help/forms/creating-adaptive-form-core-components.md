@@ -4,9 +4,9 @@ description: 了解如何使用 [!DNL Experience Manager Forms]. 適用性Forms�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # 建立最適化表單（核心元件） {#creating-an-adaptive-form-core-components}
 
-適用性Forms可讓您建立吸引人、回應式、動態且最適化的表單。 AEM Forms提供商務使用者易記精靈，可快速建立最適化Forms。 精靈提供快速的索引標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項，以建立最適化表單。 適用性Forms提供兩種元件：
+適用性Forms可讓您建立吸引人、回應式、動態且最適化的表單。 AEM Forms提供商務使用者易記精靈，可快速建立最適化Forms。 精靈提供快速的索引標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項，以建立最適化表單。
 
-* 適用性Forms核心元件是標準化的資料擷取元件。 這些元件可提供自訂功能、縮短開發時間，並降低數位註冊體驗的維護成本。 開發人員可輕鬆自訂這些元件。 Adobe建議運用這些現代且可擴充的元件來開發最適化Forms。
+開始之前，請先了解可用的Forms元件類型：
 
-* 適用性Forms Foundation元件是傳統（舊）資料擷取元件。
+* [適用性Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en):這些是標準化的資料捕獲元件。 這些元件可提供自訂功能、縮短開發時間，並降低數位註冊體驗的維護成本。 開發人員可輕鬆自訂和設定這些元件的樣式。 Adobe建議運用這些現代且可擴充的元件來開發最適化Forms。
 
-本文說明建立最適化表單的最新方法。 若要根據舊方法建立適用性Forms，請參閱 [建立最適化表單（Foundation元件）](creating-adaptive-form.md)
+* [適用性Forms Foundation元件](creating-adaptive-form.md):這些是傳統（舊）資料捕獲元件。 您可以繼續使用這些元件來編輯現有的基礎元件（以最適化表單為基礎）。 如果您要建立新表單，Adobe建議使用  [適用性Forms核心元件](creating-adaptive-form-core-components.md) 來建立適用性Forms。
 
 ![建立最適化表單的精靈](/help/release-notes/assets/wizard.png)
 
@@ -89,30 +89,7 @@ ht-degree: 0%
 
 ## 可用適用性Forms核心元件
 
-適用性Forms核心元件是標準化的資料擷取元件。 這些元件可提供自訂功能、縮短開發時間，並降低數位註冊體驗的維護成本。 下列核心元件可立即使用：
-
-* 適用性Forms折疊式功能表：折疊式功能可讓使用者顯示和隱藏「最適化表單」上的相關內容區段。
-
-* 適用性Forms按鈕
-* 適用性Forms核取方塊群組
-* 適用性Forms日期選擇器
-* 適用性Forms下拉式清單
-* 適用性Forms電子郵件輸入
-* 適用性Forms檔案附件
-* 適用性Forms水準標籤
-* 適用性Forms影像
-* 適用性Forms數字輸入
-* 適用性Forms面板
-* 適用性Forms選項按鈕
-* 適用性Forms重設按鈕
-* 適用性Forms提交按鈕
-* 最適化Forms電話輸入
-* 適用性Forms文字
-* 適用性Forms文字方塊
-* 適用性Forms標題
-* 適用性Forms精靈版面
-* 頁首
-* 頁尾
+適用性Forms核心元件是標準化的資料擷取元件。 這些元件提供自訂功能，有助於縮短開發時間，並降低數位註冊體驗的維護成本。 [適用性Forms核心元件檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) 有詳細的可用元件清單，以及每個元件功能的詳細資訊。 您也可以造訪 [https://aemcomponents.dev/](https://aemcomponents.dev/) 檢視可用的核心元件。
 
 ## 編輯最適化表單的表單模型屬性 {#edit-form-model}
 

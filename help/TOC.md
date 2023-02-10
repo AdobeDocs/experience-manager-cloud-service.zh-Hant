@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '3918'
+source-wordcount: '3932'
 ht-degree: 96%
 
 ---
@@ -511,7 +511,7 @@ ht-degree: 96%
       + [設定統一的儲存連接器](/help/forms/configure-unified-storage-connector.md)
    + 移轉 {#setup-environment}
       + [移轉至 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + 管理 {#administering}
+   + 配置和管理 {#administering}
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
       + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
    + 整合 {#integrate}
@@ -562,26 +562,28 @@ ht-degree: 96%
             + [建立自訂提交動作](/help/forms/custom-submit-action-form.md)
          + [預填調適型表單欄位](/help/forms/prepopulate-adaptive-form-fields.md)
          + [產生記錄文件](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + [將對新地區設定的支援新增至最適化表單](/help/forms/supporting-new-language-localization.md)
          + 新增或改進中繼資料{#manage-metadata}
             + [新增、移除或編輯最適化表單的中繼資料](/help/forms/manage-form-metadata.md)
             + [重複使用最適化表單的中繼資料屬性](/help/forms/reusing-adaptive-forms.md)
          + 改進最適化表單的協助工具功能{#accessible-adaptive-forms}
             + [建立無障礙的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
          + [設定表單入口網站](/help/forms/configure-forms-portal.md)
-      + 表單資料模型 {#use-form-data-model}
-         + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
-         + [設定資料來源](/help/forms/configure-data-sources.md)
-         + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
-         + [設定 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 雲端服務](/help/forms/configure-msdynamics-salesforce.md)
-         + [建立表單資料模型](/help/forms/create-form-data-models.md)
-         + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
-         + [使用表單資料模型](/help/forms/using-form-data-model.md)
-      + Forms中心工作流程 {#create-form-centric-workflows}
-         + [在工作流程中使用以 Forms 為中心的步驟 + 步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
-         + [在以 Forms 為中心的工作流程中使用變數](/help/forms/variable-in-aem-workflows.md)
-         + [使用「外出」選項](/help/forms/configure-out-of-office-settings.md)
-   + 使用通訊API {#using-communications}
+         + [建立和管理審核](/help/forms/create-reviews-forms.md)
+   + 表單資料模型 {#use-form-data-model}
+      + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
+      + [設定資料來源](/help/forms/configure-data-sources.md)
+      + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+      + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
+      + [設定 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 雲端服務](/help/forms/configure-msdynamics-salesforce.md)
+      + [建立表單資料模型](/help/forms/create-form-data-models.md)
+      + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
+      + [使用表單資料模型](/help/forms/using-form-data-model.md)
+   + Forms中心工作流程 {#create-form-centric-workflows}
+      + [在工作流程中使用以 Forms 為中心的步驟 + 步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
+      + [在以 Forms 為中心的工作流程中使用變數](/help/forms/variable-in-aem-workflows.md)
+      + [使用「外出」選項](/help/forms/configure-out-of-office-settings.md)
+   + 通訊 API {#using-communications}
       + [通訊API簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [通訊 API - 同步處理](/help/forms/aem-forms-cloud-service-communications.md)
       + [通訊 API - 批次處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

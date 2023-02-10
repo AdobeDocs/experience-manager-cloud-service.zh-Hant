@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1032'
 ht-degree: 21%
 
 ---
@@ -66,17 +66,18 @@ ht-degree: 21%
 
 ### [!DNL Forms] 發行前版本的新功能 {#prerelease-features-forms}
 
-* **[使用資料擷取核心元件來建立最適化Forms](/help/forms/creating-adaptive-form-core-components.md)**:使用適用性Forms編輯器，根據標準化資料擷取元件（核心元件）建立表單。 這些元件可提供自訂功能、縮短開發時間，並降低數位註冊體驗的維護成本。
+* **[使用資料擷取核心元件來建立最適化Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [使用適用性Forms編輯器](/help/forms/creating-adaptive-form-core-components.md) 根據標準化資料擷取元件（核心元件）建立表單。 這些元件可提供自訂功能、縮短開發時間，並降低數位註冊體驗的維護成本。
 * **[基於樣式核心元件的前端管道支援自適應Forms](/help/forms/using-themes-in-core-components.md)**:透過前端部署管道部署核心元件的適用性Forms，運用可輕鬆自訂的BEM型主題，增強表單的外觀和風格。
 * **[產生核心元件適用性Forms的記錄檔案](/help/forms/generate-document-of-record-core-components.md)**:在提交以供長期存檔、打印或文檔格式使用時，為核心元件建立基於最適化表單的記錄。
 
-![](/help/forms/assets/sample-core-components-based-adaptive-form.png)
+![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **共用最適化表單以供審核**:使用適用性Forms審核機制，允許一或多位審核者審核表單。
 * **[將適用性Forms提交至Microsoft SharePoint和Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**:透過直接將適用性表單資料傳送至Microsoft SharePoint和Microsoft OneDrive的功能，簡化資料提交作業。 您可以提交結構型和無結構型資料。 這些提交操作除了現有的提交操作之外。
 * **[以「儲存最適化表單為範本」功能有效建立表單](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**:將最適化表單儲存為範本，並重複使用下一個最適化表單的範本，以簡化您的表單建立流程。
-* **[將Forms資料模型連接到支援JDBC的資料庫](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)**:將AEM Formsas a Cloud Service連接到支援JDBC的資料庫，以讀取和寫入資料到此類資料庫。
-* **將表單資料模型連接到支援Open API規範3.0版的REST端點**:將AEM Formsas a Cloud Service連線至支援Open API規格3.0版的REST端點，以傳送和接收資料。
+* **[將AEM Forms連接到JDBC支援的資料庫](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**:輕鬆將您的AEM Forms資料模型連接到支援JDBC的資料庫，讓您能夠無縫地讀寫資料。
+* **[使用Open API 3.0與REST端點整合](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**:將AEM Formsas a Cloud Service表單資料模型連線至支援Open API規格3.0版的REST端點，讓您輕鬆傳送和接收資料。
+* **[共用最適化表單以供審核](/help/forms/create-reviews-forms.md)**:使用適用性Forms審核機制，允許一或多位審核者審核表單。
+
 
 ## CIF 附加元件 {#cloud-services-cif}
 
