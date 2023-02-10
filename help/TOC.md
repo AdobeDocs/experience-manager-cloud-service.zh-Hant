@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: ef617b38c8dec355a0fa8ca72af652f37d6668a4
 workflow-type: tm+mt
-source-wordcount: '3932'
+source-wordcount: '3931'
 ht-degree: 96%
 
 ---
@@ -504,22 +504,30 @@ ht-degree: 96%
       + [架構](/help/forms/aem-forms-cloud-service-architecture.md)
       + [常見問題](/help/forms/faq.md)
       + [已知問題](/help/forms/known-issues.md)
-   + 設定 {#setup-environment}
+   + 設定和移轉 {#setup-configure-migrate}
       + [Cloud Service 環境入門](/help/forms/setup-forms-cloud-service.md)
       + [設定本機開發環境](/help/forms/setup-local-development-environment.md)
       + [安裝及設定 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [設定統一的儲存連接器](/help/forms/configure-unified-storage-connector.md)
-   + 移轉 {#setup-environment}
       + [移轉至 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + 配置和管理 {#administering}
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
       + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
    + 整合 {#integrate}
-      + [整合AEM Forms as a Cloud Service與Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-      + [將AEM Formsas a Cloud Service與DocuSign整合](/help/forms/integrate-docusign-adaptive-forms.md)
-      + [整合AEM Forms as a Cloud Service與Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-      + [將調適型表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [將適用性Forms內嵌在AEM Sites頁面中](/help/forms/embed-adaptive-form-aem-sites.md)
+      + 服務 {#services}
+         + [整合AEM Forms as a Cloud Service與Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+         + [將AEM Formsas a Cloud Service與DocuSign整合](/help/forms/integrate-docusign-adaptive-forms.md)
+         + [整合AEM Forms as a Cloud Service與Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+         + [將調適型表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
+         + [將適用性Forms內嵌在AEM Sites頁面中](/help/forms/embed-adaptive-form-aem-sites.md)
+      + 表單資料模型 {#use-form-data-model}
+         + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
+         + [設定資料來源](/help/forms/configure-data-sources.md)
+         + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+         + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
+         + [設定 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 雲端服務](/help/forms/configure-msdynamics-salesforce.md)
+         + [建立表單資料模型](/help/forms/create-form-data-models.md)
+         + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
+         + [使用表單資料模型](/help/forms/using-form-data-model.md)
    + 調適型表單 {#adaptive-forms-authoring}
       + 編寫適用性Forms — 核心元件 {#authoring-adaptive-forms-core-components}
          + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
@@ -570,15 +578,6 @@ ht-degree: 96%
             + [建立無障礙的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
          + [設定表單入口網站](/help/forms/configure-forms-portal.md)
          + [建立和管理審核](/help/forms/create-reviews-forms.md)
-   + 表單資料模型 {#use-form-data-model}
-      + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
-      + [設定資料來源](/help/forms/configure-data-sources.md)
-      + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-      + [設定 [!DNL Azure] 儲存空間](/help/forms/configure-azure-storage.md)
-      + [設定 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 雲端服務](/help/forms/configure-msdynamics-salesforce.md)
-      + [建立表單資料模型](/help/forms/create-form-data-models.md)
-      + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
-      + [使用表單資料模型](/help/forms/using-form-data-model.md)
    + Forms中心工作流程 {#create-form-centric-workflows}
       + [在工作流程中使用以 Forms 為中心的步驟 + 步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以 Forms 為中心的工作流程中使用變數](/help/forms/variable-in-aem-workflows.md)
@@ -589,7 +588,7 @@ ht-degree: 96%
       + [通訊 API - 批次處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [在 PDF 文件中使用自訂字型](/help/forms/use-custom-fonts.md)
       + [已知問題、最佳實務和常見問題集](/help/forms/communications-known-issues-limitations.md)
-      + 開發人員API參考 {#aem-forms-developer-api-reference}
+   + 開發人員API參考 {#aem-forms-developer-api-reference}
       + [AEM FormsCloud Service通訊API參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM FormsCloud ServiceJavaScript API參考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [AEM FormsCloud ServiceJava API參考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
