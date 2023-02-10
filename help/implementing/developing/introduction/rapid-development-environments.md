@@ -1,9 +1,9 @@
 ---
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
 workflow-type: tm+mt
-source-wordcount: '2898'
+source-wordcount: '3062'
 ht-degree: 5%
 
 ---
@@ -26,6 +26,8 @@ RDE可讓開發人員快速部署和審核變更，將測試經證實可在本�
 RDE可用於程式碼、內容，以及Apache或Dispatcher設定。 與一般雲端開發環境不同，開發人員可使用本機命令列工具，將本機建置的程式碼同步至RDE。
 
 每個計畫都布建了RDE。 如果是沙箱帳戶，則會在數小時未使用後休眠。
+
+建立後，RDE會設為最新可用的AEM版本。 RDE重設（可使用Cloud Manager執行）將循環RDE，並將其設為最新可用的AEM版本。
 
 通常，單一開發人員會在指定時間使用RDE來測試和除錯特定功能。 完成開發工作階段時，RDE可重設為下次使用的預設狀態。
 
@@ -64,6 +66,8 @@ RDE可用於程式碼、內容，以及Apache或Dispatcher設定。 與一般雲
 1. 按一下&#x200B;**儲存**，以新增指定的環境。
 
 現在&#x200B;**總覽**&#x200B;畫面會在&#x200B;**環境**&#x200B;卡中顯示您的新環境。
+
+建立後，RDE會設為最新可用的AEM版本。 RDE重設（也可使用Cloud Manager執行）將循環RDE，並將其設為最新可用的AEM版本。
 
 如需有關使用Cloud Manager建立環境、管理誰有權存取環境以及指派自訂網域的詳細資訊，請參閱 [Cloud Manager檔案。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
@@ -141,7 +145,12 @@ Adobe建議使用下列工作流程來開發新功能：
 
 * 當達到中間里程碑並透過AEMas a Cloud Service SDK在本機成功驗證時，程式碼應提交至尚未納入主要行的git功能分支，不過提交至git是選用項目。 構成「中間里程碑」的內容因團隊習慣而異。 例如幾行新程式碼、半天工作或完成子功能。
 
-* 如果RDE已被其他功能使用，並且您想要 [將其重設為預設狀態](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->重設需要幾分鐘的時間，所有現有內容和程式碼都將被刪除。 您可以使用RDE狀態命令來確認RDE已就緒。
+* 如果RDE已被其他功能使用，並且您想要 [將其重設為預設狀態](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->重設需要幾分鐘的時間，所有現有內容和程式碼都將被刪除。 您可以使用RDE狀態命令來確認RDE已就緒。 RDE將會提供最新的AEM版本。
+
+   >[!IMPORTANT]
+   >
+   > 如果您的測試和生產環境未收到自動AEM版本更新，且遠落在最新的AEM版本之後，請留意RDE上執行的程式碼可能不符合程式碼在測試和生產上的運作方式。 在此情況下，在將程式碼部署至生產環境之前，請務必先在測試環境上對程式碼執行徹底測試。
+
 
 * 使用RDE命令行介面，將本地代碼同步到RDE。 選項包括安裝內容套件、特定套件組合、OSGI設定檔案、內容檔案，以及Apache/Dispatcher設定的zip檔案。 也可參考遠端內容套件。 請參閱 [RDE命令行工具](#rde-cli-commands) 一節以取得詳細資訊。 您可以使用status命令來驗證部署是否成功。 （可選）使用包管理器來安裝內容包。
 
@@ -337,6 +346,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 ## 重設 {#reset-rde}
 
 重設RDE會同時移除製作和發佈執行個體中的所有自訂程式碼、設定和內容。 例如，如果已使用RDE測試特定功能，並且您想要將其重置為預設狀態以測試不同功能，則此功能會很有用。
+
+重設會將RDE設為最新可用的AEM版本。
 
 <!-- Alexandru: hiding for now, please don't delete
 
