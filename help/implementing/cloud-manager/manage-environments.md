@@ -2,10 +2,10 @@
 title: 管理環境
 description: 了解您可以建立的環境類型，以及如何為您的 Cloud Manager 專案建立環境類型。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
+source-git-commit: 2af14814a4e8af22cfdc1caa2ff656020c79ce77
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 100%
+source-wordcount: '1826'
+ht-degree: 88%
 
 ---
 
@@ -17,12 +17,13 @@ ht-degree: 100%
 
 具有必要權限的使用者可以建立以下環境類型 (在特定租使用者可用的範圍內)。
 
-* **生產與測試** - 生產環境和測試環境組成一組使用，分別用於生產和測試目的。
+* **生產+階段**  — 生產和測試環境可分別以對的形式提供，並用於生產和測試用途。
 
 * **開發** - 可以為開發和測試目的建立開發環境，並且只能與非生產管道相關聯。
 
+* **快速發展**  — 快速開發環境(RDE)使開發人員能夠快速部署和審核更改，從而最大限度地減少測試經證明可在本地開發環境中工作的功能所需的時間。 請參閱 [快速開發環境檔案](/help/implementing/developing/introduction/rapid-development-environments.md) 以取得如何使用RDE的詳細資訊。
 
-各個環境的功能取決於包含在[計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中啟用的解決方案。
+個別環境的功能取決於 [方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 環境。
 
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
@@ -51,13 +52,14 @@ ht-degree: 100%
 
 1. 在出現的&#x200B;**新增環境**&#x200B;對話框中：
 
-   * 選取&#x200B;**環境類型**。
-      * 可用/已使用環境的數量會顯示在開發環境類型後面的括號中。
-   * 提供&#x200B;**環境名稱**。
-   * 提供&#x200B;**環境說明**。
-   * 選取&#x200B;**雲端區域**。
-
-   ![新增環境對話框](assets/add-environment2.png)
+   * 選取 [**環境類型**.](#environment-types)
+      * 可用/使用的環境數量會以括弧顯示在環境類型名稱后面。
+   * 提供環境 **名稱**.
+   * 提供環境 **說明**.
+   * 選取 **主區域** 從下拉式清單中。
+      * 請注意，建立後無法變更。
+   * 如果您新增 **生產+階段** 環境中，您必須為生產和測試環境提供環境名稱和說明。
+      ![新增環境對話框](assets/add-environment2.png)
 
 1. 按一下&#x200B;**儲存**，以新增指定的環境。
 
@@ -101,7 +103,7 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 ![預覽服務和其允許清單](assets/preview-ip-allow.png)
 
-具有必要權限的使用者必須在與您的任何團隊共用預覽服務 URL 之前完成以下選項的步驟，以確保存取預覽 URL。
+擁有必要權限的使用者必須先完成下列步驟，才能共用預覽服務URL，才能確保可存取。
 
 1. 建立適當的 IP 允許清單，將其套用於預覽服務，然後立即取消套用 `Preview Default [<envId>]` 允許清單。
 
@@ -109,13 +111,13 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 1. 使用更新 **IP 允許清單**&#x200B;工作流程移除預設 IP，並依需要新增 IP。如需了解更多，請參閱[管理 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)。
 
-解鎖預覽服務的存取權後，預覽服務名稱前面的鎖定圖示將不再顯示。
+一旦預覽服務的存取解除鎖定，預覽服務名稱前面的鎖定圖示將不再顯示。
 
 啟動後，您可以使用 AEM 中的管理發佈 UI 將內容發佈到預覽服務。如需更多詳細資訊，請參閱文件：[預覽內容](/help/sites-cloud/authoring/fundamentals/previewing-content.md)。
 
 >[!NOTE]
 >
->您的環境必須是 AEM 版本 `2021.05.5368.20210529T101701Z` 或更新版本。確保更新管道已在您的環境中成功執行以執行此操作。
+>您的環境必須使用AEM版本 `2021.05.5368.20210529T101701Z` 或更新版本，以使用預覽服務。 確保更新管道已在您的環境中成功執行以執行此操作。
 
 ## 更新環境 {#updating-dev-environment}
 
