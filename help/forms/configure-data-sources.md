@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: e353fd386d2dfbc39c76a0ab56b50c44f3c54afc
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 4%
+source-wordcount: '2139'
+ht-degree: 2%
 
 ---
 
@@ -18,14 +18,13 @@ ht-degree: 4%
 
 [!DNL Experience Manager Forms] 資料整合可讓您設定並連線至不同的資料來源。 支援的現成可用類型如下：
 
-<!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
-* [!DNL Experience Manager] user profile  -->
+* 關係資料庫 — MySQL、 [!DNL Microsoft SQL Server], [!DNL IBM DB2]，和 [!DNL Oracle RDBMS]
 * RESTful Web服務
 * 基於SOAP的Web服務
 * OData服務（4.0版）
-* Microsoft Dynamics
+* Microsoft® Dynamics
 * SalesForce
-* Microsoft Azure Blob儲存
+* Microsoft® Azure Blob儲存
 
 資料整合支援OAuth2.0、基本驗證和API金鑰驗證類型，且可立即使用，並可實作自訂驗證以存取網站服務。 而RESTful、SOAP型和OData服務則配置在 [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> 和連接器 [!DNL Experience Manager] 使用者設定檔設定於 [!DNL Experience Manager] web主控台。
 
@@ -37,7 +36,10 @@ ht-degree: 4%
 
 ### 必備條件
 
-配置關係資料庫之前，使用 [!DNL Experience Manager] Web主控台設定，這是 [通過cloud manager API啟用高級網路](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)，因為預設會停用埠。
+配置關係資料庫之前，使用 [!DNL Experience Manager] Web控制台配置，必須：
+* [通過cloud manager API啟用高級網路](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)，因為預設會停用埠。
+* [在Maven中添加JDBC驅動程式依賴項](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
+
 
 ### 配置關係資料庫的步驟
 
@@ -45,27 +47,30 @@ ht-degree: 4%
 
 1. 前往 [!DNL Experience Manager] 網站主控台 `https://server:host/system/console/configMgr`.
 1. 找出 **[!UICONTROL Day Commons JDBC連接池]** 設定。 點選以在編輯模式中開啟設定。
-<br>
 
-![JDBC連接器池](/help/forms/assets/jdbc_connector.png)
-<br>
+   ![JDBC連接器池](/help/forms/assets/jdbc_connector.png)
+
 1. 在配置對話框中，指定要配置的資料庫的詳細資訊，例如：
 
-   * JDBC驅動程式的Java類名
+   * JDBC驅動程式的Java™類名
    * JDBC連接URI
    * 用於建立與JDBC驅動程式連接的用戶名和口令
    * 在 **[!UICONTROL 驗證查詢]** 欄位，驗證池中的連接。 查詢必須至少返回一行。 根據您的資料庫，指定下列任一項：
       * 選擇1（MySQL和MS SQL）
       * 從雙(Oracle)中選擇1
-   * 選取 **預設為唯讀** 核取方塊，因此無法修改。
-   * 選擇 **預設情況下自動提交** 複選框以自動提交更改。
-   * 指定池大小和池等待時間（以毫秒為單位）。
    * 資料源的名稱
-   * 儲存資料源名稱的資料源服務屬性
+
+   用於配置關係資料庫的示例字串：
+
+   ```text
+      "datasource.name": "sqldatasourcename-mysql",
+      "jdbc.driver.class": "com.mysql.jdbc.Driver",
+      "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/sqldatasourcename"
+   ```
 
    >[!NOTE]
    >
-   > 請參閱 [使用JDBC DataSourcePool的SQL連接](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html#mysql-driver-dependencies) 以取得詳細資訊。
+   > 請參閱 [使用JDBC DataSourcePool的SQL連接](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) 以取得詳細資訊。
 
 1. 點選 **[!UICONTROL 儲存]** 以儲存設定。
 
@@ -118,7 +123,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 RESTful Web服務可使用 [Swagger規格](https://swagger.io/specification/v2/) JSON或YAML格式 [!DNL Swagger] 定義檔案。 要配置RESTful Web服務，請在 [!DNL Experience Manager] as a Cloud Service，確保您擁有 [!DNL Swagger] 檔案([Swagger 2.0版](https://swagger.io/specification/v2/))或 [!DNL Swagger] 檔案([Swagger 3.0版](https://swagger.io/specification/v3/))，或托管檔案的URL。
 
-### 為Open API規範2.0版配置RESTful服務 {#configure-restful-services-swagger-version2.0}
+### 為Open API規範2.0版配置RESTful服務 {#configure-restful-services-open-api-2.0}
 
 1. 前往 **[!UICONTROL 工具>Cloud Services>資料來源]**. 點選以選取您要建立雲端設定的資料夾。
 
@@ -142,7 +147,7 @@ RESTful Web服務可使用 [Swagger規格](https://swagger.io/specification/v2/)
 
 1. 點選 **[!UICONTROL 建立]** 為RESTful服務建立雲配置。
 
-### 配置RESTful服務開放API規範2.0版 {#configure-restful-services-swagger-version3.0}
+### 為Open API規範3.0版配置RESTful服務 {#configure-restful-services-open-api-3.0}
 
 1. 前往 **[!UICONTROL 工具>Cloud Services>資料來源]**. 點選以選取您要建立雲端設定的資料夾。
 
@@ -152,7 +157,7 @@ RESTful Web服務可使用 [Swagger規格](https://swagger.io/specification/v2/)
 1. 為RESTful服務指定以下詳細資訊：
 
    * 從 [!UICONTROL Swagger源] 下拉式清單，並據此指定 [!DNL Swagger 3.0 URL] 到[!DNL  Swagger] 定義檔案或上傳 [!DNL Swagger] 檔案。
-   * 根據[!DNL  Swagger] 源輸入，伺服器名稱將自動顯示。
+   * 根據[!DNL  Swagger] 源輸入，顯示與目標伺服器的連接資訊。
    * 選取驗證類型（無、OAuth2.0、基本驗證、API密鑰或自訂驗證）以存取RESTful服務，並據此提供驗證的詳細資訊。
 
    如果您選取 **[!UICONTROL API金鑰]** 作為驗證類型，請指定API金鑰的值。 API金鑰可以以要求標題或查詢參數的形式傳送。 從 **[!UICONTROL 位置]** 下拉式清單中，並指定標題的名稱或 **[!UICONTROL 參數名稱]** 欄位。
@@ -161,10 +166,11 @@ RESTful Web服務可使用 [Swagger規格](https://swagger.io/specification/v2/)
 
 1. 點選 **[!UICONTROL 建立]** 為RESTful服務建立雲配置。
 
-RESTful服務Swagger 3.0版不支援的一些操作包括：
+RESTful服務Open API規範3.0版不支援的一些操作包括：
 * 回呼
 * oneof/anyof
 * 遠端參考
+* 連結
 * 針對單一作業的不同MIME類型，提供不同的要求內文
 
 您可以指 [OpenAPI 3.0規範](https://swagger.io/specification/v3/) 以取得詳細資訊。
@@ -187,6 +193,7 @@ RESTful服務Swagger 3.0版不支援的一些操作包括：
 
 下列JSON檔案顯示範例：
 
+
 ```json
 {   
    "http.connection.keep.alive.duration":"15",   
@@ -198,20 +205,13 @@ RESTful服務Swagger 3.0版不支援的一些操作包括：
 } 
 ```
 
-若要設定值，[請使用 AEM SDK 產生 OSGi Configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)，並將[設定部署至](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)您的 Cloud Service 執行個體。
-
-
-執行下列步驟來設定表單資料模型HTTP用戶端：
-
-1. 登入 [!DNL Experience Manager Forms] 以管理員身分撰寫執行個體，並前往 [!DNL Experience Manager] web控制台套件組合。 預設URL為 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
 1. 點選 **[!UICONTROL REST資料來源的表單資料模型HTTP用戶端設定]**.
 
 1. 在 [!UICONTROL REST資料來源的表單資料模型HTTP用戶端設定] 對話框：
 
    * 指定表單資料模型與RESTful Web服務之間允許的最大連接數，位於 **[!UICONTROL 連線總數限制]** 欄位。 預設值為20個連線。
 
-   * 指定 **[!UICONTROL 每個路由的連接限制]** 欄位。 預設值為2個連線。
+   * 指定 **[!UICONTROL 每個路由的連接限制]** 欄位。 預設值為兩個連線。
 
    * 在 **[!UICONTROL 保持活力]** 欄位。 預設值為15秒。
 
@@ -249,11 +249,13 @@ RESTful服務Swagger 3.0版不支援的一些操作包括：
 
 設定 `importAllowlistPattern` 屬性 **[!UICONTROL 表單資料模型SOAP網站服務匯入允許清單]** 設定來指定規則運算式。 下列JSON檔案顯示範例：
 
+
 ```json
 {
   "importAllowlistPattern": ".*"
 }
 ```
+
 
 若要設定值，[請使用 AEM SDK 產生 OSGi Configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)，並將[設定部署至](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)您的 Cloud Service 執行個體。
 
@@ -264,7 +266,7 @@ OData服務由其服務根URL識別。 若要在 [!DNL Experience Manager] as a 
 >[!NOTE]
 >
 > 表單資料模型支援 [OData第4版](https://www.odata.org/documentation/).
->設定的逐步指南 [!DNL Microsoft Dynamics 365]、線上或內部部署，請參閱 [[!DNL Microsoft Dynamics] OData配置](ms-dynamics-odata-configuration.md).
+>設定的逐步指南 [!DNL Microsoft® Dynamics 365]、線上或內部部署，請參閱 [[!DNL Microsoft® Dynamics] OData配置](ms-dynamics-odata-configuration.md).
 
 1. 前往 **[!UICONTROL 工具>Cloud Services>資料來源]**. 點選以選取您要建立雲端設定的資料夾。
 
@@ -280,7 +282,7 @@ OData服務由其服務根URL識別。 若要在 [!DNL Experience Manager] as a 
 
    >[!NOTE]
    >
-   >您必須選取OAuth 2.0驗證類型才能連線 [!DNL Microsoft Dynamics] 服務使用OData端點作為服務根。
+   >您必須選取OAuth 2.0驗證類型才能連線 [!DNL Microsoft® Dynamics] 服務使用OData端點作為服務根。
 
 1. 點選 **[!UICONTROL 建立]** 為OData服務建立雲配置。
 
@@ -299,4 +301,4 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## 後續步驟 {#next-steps}
 
-您已設定資料來源。 接下來，您可以建立表單資料模型，或者如果您已經建立了沒有資料源的表單資料模型，則可以將其與剛配置的資料源關聯。 請參閱 [建立表單資料模型](create-form-data-models.md) 以取得詳細資訊。
+您已設定資料來源。 接下來，您可以建立表單資料模型，或者如果您已經建立了沒有資料源的表單資料模型，則可以將其與您配置的資料源關聯。 請參閱 [建立表單資料模型](create-form-data-models.md) 以取得詳細資訊。
