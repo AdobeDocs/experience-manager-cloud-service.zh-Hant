@@ -2,10 +2,10 @@
 title: Cloud Manager 簡介
 description: 了解 Cloud Manager 如何透過其程序、環境和管道支援您的 AEM 專案。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
-workflow-type: ht
-source-wordcount: '834'
-ht-degree: 100%
+source-git-commit: 50217b0ff63eb87123c3a1238822441a56c1995e
+workflow-type: tm+mt
+source-wordcount: '852'
+ht-degree: 98%
 
 ---
 
@@ -49,6 +49,8 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的
 | 管道刪除 | 允許管道刪除 |  | x |  |  |
 | 執行取消 | 取消目前的執行 |  | x |  |  |
 | 產生個人存取權杖 | 存取 Git |  | x |  | x |
+| 建立RDE | 建立快速開發環境 | x |  |  | x |
+| 重置RDE | 重置快速開發環境 | x |  |  | x |
 
 >[!NOTE]
 >
