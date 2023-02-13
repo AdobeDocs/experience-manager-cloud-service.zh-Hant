@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 開發指導方針
 description: 了解在AEMas a Cloud Service上開發的准則，以及AMS中與內部部署和AEM不同的重要方式。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2591'
 ht-degree: 2%
 
 ---
@@ -162,7 +162,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 而是可從開發人員控制台啟動存放庫瀏覽器，提供製作、發佈和預覽層級上所有環境的存放庫唯讀檢視。 深入了解存放庫瀏覽器 [此處](/help/implementing/developing/tools/repository-browser.md).
 
-開發人員主控台中提供一組工具，用於針對開發、預備和生產環境偵錯AEMas a Cloud Service開發人員環境。 可依下列方式調整「作者」或「發佈」服務URL來決定URL:
+針對RDE、開發、預備和生產環境，可在開發人員主控台中取得一組用於除錯AEMas a Cloud Service開發人員環境的工具。 可依下列方式調整「作者」或「發佈」服務URL來決定URL:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 

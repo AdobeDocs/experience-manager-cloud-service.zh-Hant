@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 架構簡介
 description: Adobe Experience Manager as a Cloud Service 架構簡介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 82%
+source-wordcount: '1797'
+ht-degree: 81%
 
 ---
 
@@ -77,9 +77,11 @@ AEM as a Cloud Service 可作為個別例項使用，每個例項皆代表完整
 
 * **開發環境**：開發人員可在與預備和生產環境相同的執行階段條件下，實作 AEM 應用程式。
 
-   請參閱 [管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) 以取得更多詳細資訊。
+   如需詳細資訊，請參閱[管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager)。
 
-## 計劃 {#programs}
+* **快速開發環境**:允許快速開發迭代，以偵錯新程式碼或現有程式碼。
+
+## 計畫 {#programs}
 
 所有新的 AEM 專案都會與單一特定程式碼基底建立繫結，專案的設定和自訂程式碼都會儲存於基底之中。這些資訊會儲存在程式碼存放庫中，供您在建立新計劃時使用，透過一般的 Git 用戶端即可存取。
 
@@ -90,7 +92,7 @@ AEM 計劃是包含下列項目的容器：
 | 程式碼存放庫 (Git) |  1 |
 | 基準映像 (Sites 或 Assets) |  1 |
 | 預備和生產環境集 (1:1) | 0 或 1 |
-| 非生產環境 (開發或展示) | 0 到 N |
+| 非生產環境（RDE、開發或示範） | 0 到 N |
 | 各環境相關管道 | 0 或 1 |
 
 AEM as a Cloud Service 最初提供兩種類型的計劃：

@@ -3,9 +3,9 @@ title: 部署至 AEM as a Cloud Service
 description: 部署至 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
+source-git-commit: 0481267958fe8ac4b28b2742924d2bc2c337eebc
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3497'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## 簡介 {#introduction}
 
-與AEM On Premise和Managed Services解決方案相比，AEM as a Cloud Service中的程式碼開發基礎相似。 開發人員編寫程式碼並在本機測試，然後推送至遠端AEMas a Cloud Service環境。 需要Cloud Manager，這是Managed Services的選用內容傳送工具。 這現在是將程式碼部署至AEMas a Cloud Service環境的唯一機制。
+與AEM On Premise和Managed Services解決方案相比，AEM as a Cloud Service中的程式碼開發基礎相似。 開發人員編寫程式碼並在本機測試，然後推送至遠端AEMas a Cloud Service環境。 需要Cloud Manager，這是Managed Services的選用內容傳送工具。 這現在是將程式碼部署至AEMas a Cloud Service開發、預備和生產環境的唯一機制。 為了在部署上述環境之前快速進行功能驗證和除錯，可將程式碼從本機環境同步至 [快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 更新 [AEM版本](/help/implementing/deploying/aem-version-updates.md) 一律是獨立的部署事件，而非推送 [自訂程式碼](#customer-releases). 以其他方式檢視，自訂程式碼發行應針對生產環境中的AEM版本進行測試，因為這是將部署在頂端的程式碼。 AEM版本會更新後發生的，且會經常發生並自動套用。 它們旨在向後相容已部署的客戶代碼。
 
@@ -137,7 +137,7 @@ ht-degree: 1%
 
 * Repoinit在啟動時會建立資源，這樣邏輯就能將這些資源的存在視為已授予。 在可變內容包方法中，資源是在啟動後建立的，因此依賴這些資源的應用程式代碼可能會失敗。
 * 當您明確控制要採取的動作時，重新指示是相對安全的指令集。 此外，唯一支援的操作是附加操作，但少數安全相關案例除外，這些案例允許刪除用戶、服務用戶和組。 相反，移除可變內容包方法中的某些內容是明確的；當您定義篩選器時，篩選器所涵蓋的任何項目都會遭到刪除。 不過，您仍應小心謹慎，因為如果有任何內容，出現新內容可能會改變應用程式的行為。
-* 重新指定執行快速和原子操作。 相比之下，可變內容包可以高度取決於過濾器覆蓋的結構的效能。 即使更新單個節點，也可能建立大型樹的快照。
+* 重新指定執行快速和原子操作。 相比之下，可變內容包可以高度取決於過濾器所覆蓋的結構而是效能。 即使更新單個節點，也可能建立大型樹的快照。
 * 可以在運行時驗證本地開發環境上的repoinit語句，因為這些語句將在註冊OSGi配置時執行。
 * 重新指向語句是原子的，且顯式，如果狀態已匹配，則將跳過。
 
@@ -170,7 +170,6 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="套件管理器 — 移轉可變內容套件"
->abstract="探索套件管理器的使用案例，了解內容套件應安裝為「一次性」的使用案例，包括將特定內容從生產匯入測試環境，以偵錯生產問題、將小型內容套件從內部部署環境傳輸至AEM雲端環境等。"
 >abstract="探索套件管理器的使用案例，了解內容套件應安裝為「一次性」，其中包括將特定內容從生產匯入測試環境，以偵錯生產問題、將小型內容套件從內部部署環境傳輸至AEM雲端環境等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="內容轉移工具"
 
@@ -279,6 +278,12 @@ above appears to be internal, to confirm with Brian -->
 ### 用於回傳的保守編碼 {#conservative-coding-for-rollbacks}
 
 如果在部署後報告或檢測到故障，則可能需要回滾到藍色版本。 最好確保藍色代碼與綠色版本建立的任何新結構相容，因為新結構（任何可變內容內容）將不會回滾。 如果舊程式碼不相容，則需要在後續的客戶版本中套用修正。
+
+## 快速開發環境(RDE) {#rde}
+
+[快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md) （或簡稱RDE）可讓開發人員快速部署和檢閱變更，將測試已證實可在本機開發環境中運作的功能所需的時間減到最少。
+
+與透過Cloud Manager管道部署程式碼的一般開發環境不同，開發人員使用命令列工具將程式碼從本機開發環境同步至RDE。 在RDE中成功測試變更後，應透過Cloud Manager管道將變更部署至一般雲端開發環境，將程式碼置於適當的品質入口。
 
 ## 執行模式 {#runmodes}
 
