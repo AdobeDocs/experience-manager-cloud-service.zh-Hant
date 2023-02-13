@@ -2,10 +2,10 @@
 title: 自訂網站主題
 description: 了解網站主題的建立方式、如何自訂，以及如何使用即時AEM內容進行測試。
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9f5930fce8c2a7768cad696746a7c9fa3d8c2f9e
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 0%
+source-wordcount: '963'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 了解網站主題的建立方式、如何自訂，以及如何使用即時AEM內容進行測試。
 
-## 迄今為止的故事 {#story-so-far}
+## 到目前為止 {#story-so-far}
 
 在AEM快速網站建立歷程的上一份檔案中， [擷取Git存放庫存取資訊，](retrieve-access.md) 您了解前端開發人員使用者Cloud Manager如何存取git存放庫資訊，現在您應：
 
@@ -67,6 +67,10 @@ ht-degree: 0%
 1. 代理伺服器啟動時，會自動開啟瀏覽器以 `http://localhost:7001/`. 點選或按一下 **本機登入（僅限管理工作）** 並使用AEM管理員提供給您的proxy使用者憑證登入。
 
    ![在本機登入](assets/sign-in-locally.png)
+
+   >[!TIP]
+   >
+   >如果您沒有這些憑證，請洽詢您的管理員以參考 [在範本中建立網站文章的「設定代理使用者」區段](/help/journey-sites/quick-site/create-site.md#proxy-user) 在這個歷程中。
 
 1. 登入後，請變更瀏覽器中的URL，以指向AEM管理員提供給您的範例內容的路徑。
 
