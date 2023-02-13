@@ -2,9 +2,9 @@
 title: 產生最適化Forms的記錄檔案
 description: 說明如何為適用性Forms的記錄檔案(DoR)產生範本。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3172'
 ht-degree: 1%
 
 ---
@@ -116,11 +116,16 @@ In the following video Adaptive Form components are binded with corresponding Ac
 
 ![更新的範本](assets/we-retail-new-invoice.png)
 
-開發人員將上傳並套用至更新的範本至最適化表單。 適用性表單會自動偵測並顯示已變更系結的欄位清單。
+<!--
 
-![綁定錯誤](assets/we-retail-binding-error.png)
+The developer uploads and applies to the updated template to the adaptive form. The adaptive form automatically detects and displays list of fields where binding has changed.
 
-表單開發人員會將適用性Forms欄位與對應的記錄檔案範本系結。
+![Binding Error](assets/we-retail-binding-error.png)
+
+The form developer binds Adaptive Forms fields with corresponding Document of Record template.
+
+-->
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 現在，提交適用性表單時，會產生更新的記錄檔案。

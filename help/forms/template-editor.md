@@ -2,9 +2,9 @@
 title: 如何建立最適化表單範本？
 description: 建立最適化表單範本，以使用範本編輯器定義基本結構和初始內容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '2017'
 ht-degree: 1%
 
 ---
@@ -50,8 +50,7 @@ Experience Manager提供用於組織模板的全局資料夾。 但預設不會�
    * **頁面資訊**:可讓您指定資訊，例如發佈/取消發佈時間、縮圖、用戶端程式庫、頁面原則，以及頁面設計用戶端程式庫。
 
    <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **模式選擇器：** 可讓您變更模式。
-您可以選擇 **[!UICONTROL 結構]** 模式， **[!UICONTROL 初始內容]**, **[!UICONTROL 版面控制]** 模式。 結構模式可讓您新增及自訂頁首與頁尾。 「初始內容」模式可讓您自訂表單內容。
+   * **模式選擇器：** 可讓您變更模式。您可以選擇 **[!UICONTROL 結構]** 模式， **[!UICONTROL 初始內容]**, **[!UICONTROL 版面控制]** 模式。 結構模式可讓您新增及自訂頁首與頁尾。 「初始內容」模式可讓您自訂表單內容。
    * **預覽：** 可讓您預覽範本在您發佈時的外觀。 您可以使用「圖層選擇器」和「預覽」切換編輯和預覽模式。
 * **側欄：** 提供內容、屬性、資產和元件瀏覽器。
 * **元件工具欄：** 選取元件時，您會看到可自訂元件的工具列。
@@ -151,12 +150,24 @@ Experience Manager提供用於組織模板的全局資料夾。 但預設不會�
 
 ## 匯入或匯出範本 {#importing-or-exporting-a-template}
 
-表單可與其範本搭配使用。 下載使用自訂範本建立的適用性表單時，不會下載範本。 當您在不同的 [!DNL AEM Forms] 例項，則會匯入而不含其範本。 如果已匯入表單但其範本無法使用，則不會轉譯表單。 您可以封裝自訂範本，方法為 `/conf` 節點 `https://<server>:<port>/crx/packmgr`，並將其插入 [!DNL AEM Forms] 要上傳表單的例項。 您也可以 [使用AEM原型建立範本，並將其部署至您的Cloud Services例項](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
+表單可與其範本搭配使用。 下載使用自訂範本建立的適用性表單時，不會下載範本。 當您將表單匯入其他 [!DNL AEM Forms] 例項，則會匯入而不含其範本。 如果已匯入表單但其範本無法使用，則不會轉譯表單。 您可以封裝自訂範本，方法為 `/conf` 節點 `https://<server>:<port>/crx/packmgr`，並將其插入 [!DNL AEM Forms] 要上傳表單的例項。 您也可以 [使用AEM原型建立範本，並將其部署至您的Cloud Services例項](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >
-> * 您可以將 [!UICONTROL 表單資料模型結構] 至範本編輯器中的適用性表單範本。 請參閱 [建立最適化表單](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) 以取得更多資訊。
 > * 您也可以設定 [!UICONTROL 記錄檔案] 直接從適用性表單編輯器或適用性表單範本編輯器建立範本。 如需詳細資訊，請參閱 [產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
+### 將表單資料模型結構與範本關聯 {#associating-form-data-model-schema-in-template}
+
+作者可將 [!UICONTROL 表單資料模型結構] 至範本編輯器中的最適化表單範本。 它可讓作者從範本編輯器中選取結構。 將架構與模板關聯，並且表單作者根據模板建立表單時，將為表單預先選擇該架構。 它可協助表單作者規範結構描述的使用，並為表單作者節省時間。 要在模板編輯器中選擇表單資料模型架構：
+
+1. 點選 **[!UICONTROL 內容瀏覽器]** 位於左側。
+1. 移至表單容器 **[!UICONTROL 設定]**.
+1. 選擇 **[!UICONTROL 資料模型]**.
+1. 透過 **[!UICONTROL 選擇表單資料模型]** 並儲存設定。
+
+![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img.png)
 
 
 
