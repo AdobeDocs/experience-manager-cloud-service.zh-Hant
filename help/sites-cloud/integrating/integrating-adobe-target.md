@@ -4,9 +4,9 @@ description: 整合 Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 9df5c3326d80e1a6c1726395722d86556af1ee29
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1042'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ AdobeLaunch是管理AEM頁面（JS程式庫/標籤）中Analytics和Target的用
 
 ### IMS 設定 {#ims-configuration}
 
-若要正確整合Target與AEM和Launch,Launch和Target的IMS設定是必要的。 雖然Launch的IMS設定已在AEMas a Cloud Service中預先設定，但必須建立Target IMS設定（在布建Target後）。 請參閱 [此影片](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) 和 [本頁](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) 了解如何建立Target IMS設定。
+若要正確整合Target與AEM和Launch,Launch和Target的IMS設定是必要的。 雖然Launch的IMS設定已在AEMas a Cloud Service中預先設定，但必須建立Target IMS設定（在布建Target後）。 請參閱 [IMS設定，以在與Adobe Target整合時使用](/help/sites-cloud/integrating/integration-adobe-target-ims.md) 和視頻 [整合Experience Platform Launch與AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) 了解如何建立Target IMS設定。
 
 ### Adobe Target租用戶ID和Adobe Target用戶端代碼 {#tenant-client}
 
@@ -120,7 +120,7 @@ AEM提供立即可用的與Experience Platform Launch整合。 將Adobe Target�
 1. 選擇 **資料元素**.
 2. 選擇 **新增資料元素**.
 3. 提供資料元素的名稱，並將其對應至內容中樞參數。
-4. 選擇 **儲存**.
+4. 選取&#x200B;**儲存**。
    ![資料元素](assets/data_elem1.png "資料元素")
 
 ### 建立頁面規則 {#page-rule}
