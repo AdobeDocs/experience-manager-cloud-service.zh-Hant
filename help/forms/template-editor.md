@@ -2,7 +2,7 @@
 title: 如何建立最適化表單範本？
 description: 建立最適化表單範本，以使用範本編輯器定義基本結構和初始內容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
+source-git-commit: b4cc89f32dcdddf93f12f087a20395e055ea85bb
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 1%
@@ -158,7 +158,7 @@ Experience Manager提供用於組織模板的全局資料夾。 但預設不會�
 
 
 
-### 將表單資料模型結構與範本關聯 {#associating-form-data-model-schema-in-template}
+## 將表單資料模型結構與範本關聯 {#associating-form-data-model-schema-in-template}
 
 作者可將 [!UICONTROL 表單資料模型結構] 至範本編輯器中的最適化表單範本。 它可讓作者從範本編輯器中選取結構。 將架構與模板關聯，並且表單作者根據模板建立表單時，將為表單預先選擇該架構。 它可協助表單作者規範結構描述的使用，並為表單作者節省時間。 要在模板編輯器中選擇表單資料模型架構：
 
