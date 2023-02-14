@@ -4,9 +4,9 @@ description: 了解如何在AEM中建立和管理機器和人類翻譯專案。
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
+source-git-commit: c9d901db6873965643f5ababe544be3aa635a8e4
 workflow-type: tm+mt
-source-wordcount: '3992'
+source-wordcount: '4086'
 ht-degree: 0%
 
 ---
@@ -445,6 +445,16 @@ AEM中的翻譯專案使用標準 [AEM專案主控台。](/help/sites-cloud/auth
 
 1. 兩個頁面（啟動和來源）將並排開啟。
    * 如需使用此功能的完整資訊，請參閱 [頁面差異](/help/sites-cloud/authoring/features/page-diff.md).
+
+## 移動或更名源頁 {#move-source}
+
+如果需要翻譯的源頁面 [重新命名或移動](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)，移動後重新轉譯頁面會根據新頁面名稱/位置建立新語言副本。 根據先前名稱/位置的舊語言副本仍會存在。
+
+此情境的最佳實務是遵循此程式：
+1. 取消發佈與要移動的源頁面關聯的語言副本。
+1. 刪除它們。
+1. 從新移動的源頁面建立新語言副本。
+1. 發佈新建立的語言副本。
 
 ## 匯入和匯出翻譯工作 {#import-export}
 
