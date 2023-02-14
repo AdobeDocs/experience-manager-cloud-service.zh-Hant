@@ -2,9 +2,9 @@
 title: 產生最適化Forms的記錄檔案
 description: 說明如何為適用性Forms的記錄檔案(DoR)產生範本。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
+source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
 workflow-type: tm+mt
-source-wordcount: '3172'
+source-wordcount: '3109'
 ht-degree: 1%
 
 ---
@@ -326,8 +326,10 @@ When you select a form model, configure Document of Record using options availab
       * **範本**:如果您想要選取自訂範本，請瀏覽並在您的 [!DNL AEM Forms] 伺服器。 如果您想使用的範本在 [!DNL AEM Forms] 伺服器上，您應先將XDP上傳至您的 [!DNL AEM Forms] 伺服器。
       * **重音顏色**:在記錄PDF文檔中呈現標題文本和分隔符行的顏色。
       * **字型系列**:「記錄文檔」PDF中文本的字型系列。
+
       * **包括未綁定到資料模型的表單對象**:設定屬性時，記錄檔案中的「基於架構的最適化表單」中的未綁定欄位。
-      * **從記錄文檔中排除隱藏的欄位**:設定屬性可識別「記錄檔」中排除的隱藏欄位。
+      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+
       * **隱藏面板的說明**:設定屬性會從記錄檔案中排除面板/表格的說明。 適用於面板和表格。
    1. **表單欄位屬性**:
       * **對於核取方塊和選項按鈕元件，僅顯示選取的值**:設定屬性時，僅會顯示中的核取方塊和選項按鈕的選取值 [!UICONTROL 記錄檔案].
@@ -341,7 +343,6 @@ When you select a form model, configure Document of Record using options availab
       * **免責聲明標籤**:免責聲明標籤。
       * **免責聲明**:說明記錄檔案權利和義務範圍的文本。
       * **免責聲明文本**:免責聲明文本。
-
       ![主版頁面屬性](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
@@ -394,4 +395,4 @@ When you select a form model, configure Document of Record using options availab
 **表單層級設定**
 
 * **在DoR中包含未綁定欄位：** 設定屬性時，包括記錄文檔中基於架構的最適化表單中的未綁定欄位。 預設為true。
-* **如果隱藏，則從DoR排除欄位：** 設定屬性，以在表單提交時從記錄檔案中排除隱藏欄位。 啟用時 [在伺服器上重新驗證](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)，伺服器會在從記錄文檔中排除這些欄位之前重新計算隱藏欄位。
+<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
