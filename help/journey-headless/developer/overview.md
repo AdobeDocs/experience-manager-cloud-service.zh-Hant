@@ -3,9 +3,9 @@ title: AEM無頭CMS開發人員歷程
 description: 了解如何使用Adobe Experience Manager(AEM)作為無頭式CMS進行無頭式開發。 了解如何使用內容模型、內容片段和GraphQL API等功能，強化無頭式內容傳送。
 landing-page-description: 了解無頭式內容的傳送和實作。 進一步了解如何在您的企業中開發您的策略。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: b3a3fbaf9a18e15cfba4f240b6f3abdd9aed077c
+source-git-commit: 39a8b505ebf323ea18d014d9603356239dc39646
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1086'
 ht-degree: 7%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 7%
 歡迎參閱Adobe Experience Manager無頭式CMS新手開發人員的檔案！
 
 了解功能強大、靈活的無頭式功能、其功能，以及如何在您的第一個無頭式開發專案中運用這些功能。 此歷程提供您開發第一個無頭應用程式所需的所有資訊。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_headless_developer_resources"
+>title="AEM無頭開發人員資源與進階檔案"
+>abstract="您了解AEM無頭式CMS、構建和提供更好的應用程式和更快的體驗所需的一切。"
+>additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html" text="AEM無頭開發人員資源"
 
 ## 簡介 {#introduction}
 
