@@ -2,9 +2,9 @@
 title: 如何設定最適化表單的提交動作
 description: 適用性表單提供多個提交動作。 「提交動作」可定義提交後最適化表單的處理方式。 您可以使用內建的提交動作，或建立自己的動作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 6a124b476b4dd18ea38d35438866a07958918461
 workflow-type: tm+mt
-source-wordcount: '3065'
+source-wordcount: '3131'
 ht-degree: 2%
 
 ---
@@ -185,6 +185,10 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
    * 新增API權限 `offline_access` 和 `Sites.Manage.All` 提供讀/寫權限。
    * 使用OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 取代 `<tenant-id>` 和 `tenant-id` 從Microsoft Azure入口網站取得。
 
+   >[!NOTE]
+   >
+   > 此 **用戶密碼** 欄位為必填或選填，取決於您的Azure Active Directory應用程式配置。 如果您的應用程式設定為使用用戶端密碼，則必須提供用戶端密碼。
+
 1. 按一下 **[!UICONTROL Connect]**. 在成功連線上， `Connection Successful` 訊息。
 
 1. 現在，請選取 **SharePoint網站** > **檔案庫** > **SharePoint資料夾**，以儲存資料。
@@ -239,6 +243,10 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
    * 在Microsoft Azure入口網站中，將重新導向URI新增為 `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. 取代 `[author-instance]` 搭配您Author例項的URL。
    * 新增API權限 `offline_access` 和 `Files.ReadWrite.All` 提供讀/寫權限。
    * 使用OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 取代 `<tenant-id>` 和 `tenant-id` 從Microsoft Azure入口網站取得。
+
+   >[!NOTE]
+   >
+   > 此 **用戶密碼** 欄位為必填或選填，取決於您的Azure Active Directory應用程式配置。 如果您的應用程式設定為使用用戶端密碼，則必須提供用戶端密碼。
 
 1. 按一下 **[!UICONTROL Connect]**. 在成功連線上， `Connection Successful` 訊息。
 
