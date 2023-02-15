@@ -1,9 +1,9 @@
 ---
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
-source-git-commit: 79f58c14625ed3e7a9d684006b3abbc97334ceeb
+source-git-commit: e5a9f497e753f328ff14487f4985541c1c77ae0e
 workflow-type: tm+mt
-source-wordcount: '3069'
+source-wordcount: '3259'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,11 @@ ht-degree: 5%
 RDE可讓開發人員快速部署和審核變更，將測試經證實可在本機開發環境中運作的功能所需的時間減至最少。
 
 在RDE中測試變更後，即可透過Cloud Manager管道部署至一般雲端開發環境。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
+
+
+您可以參閱其他示範影片 [如何設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [如何使用](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)，和 [開發生命週期](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) 使用RDE。
 
 ## 簡介 {#introduction}
 
@@ -138,6 +143,7 @@ RDE可用於程式碼、內容，以及Apache或Dispatcher設定。 與一般雲
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
+如需詳細資訊和示範，請參閱 [如何設定RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) 影片教學課程。
 
 ## 在開發新功能時使用RDE {#using-rde-while-developing-a-new-feature}
 
@@ -256,13 +262,23 @@ RDE一次支援單一專案。 由於程式碼會從本機開發環境同步至R
 
 <u>部署Apache/Dispatcher設定</u>
 
-此類型的設定需要整個資料夾結構的壓縮檔案形式。 您可以從Dispatcher設定資料夾的根目錄中執行此命令來壓縮：
+此類型的設定需要整個資料夾結構的壓縮檔案形式。
 
-`zip -y -r dispatcher.zip`
+從 `dispathcer` AEM專案的模組，您可以執行下列maven命令來壓縮dispatcher設定：
+
+`mvn clean package`
+
+或使用下列zip命令，從 `src` 目錄 `dispatcher` 模組：
+
+`zip -y -r dispatcher.zip .`
 
 然後，使用以下命令部署配置：
 
-`aio aem:rde:install -t dispatcher-config dispatcher-wknd-2.1.0.zip`
+`aio aem:rde:install target/aem-guides-wknd.dispatcher.cloud-X.X.X-SNAPSHOT.zip`
+
+>[!TIP]
+>
+>上述命令假設您部署 [WKND](https://github.com/adobe/aem-guides-wknd) 專案的dispatcher設定。 請務必更換 `X.X.X` 部署專案的dispatcher設定時，使用對應的WKND專案版本號碼或您專屬的版本號碼。
 
 成功的部署會產生類似下列的回應：
 
@@ -342,6 +358,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
+
+如需詳細資訊和示範，請參閱 [如何使用RDE命令](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html) 影片教學課程。
 
 ## 重設 {#reset-rde}
 
@@ -464,7 +482,7 @@ RDE與其他環境不同，其內容可安裝在/apps底下的install.rde資料�
 
 ## AEM FormsCloud Service快速開發環境(RDE)與其他環境有何不同？ {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Forms開發人員可使用AEM FormsCloud Service快速開發環境來快速開發適用性Forms、工作流程和自訂項目，例如自訂核心元件、與協力廠商系統的整合等。 AEM FormsCloud Service快速開發環境(RDE)不支援通訊API，也不支援需要記錄檔的功能，例如在提交最適化表單時產生記錄檔。 下列AEM Forms功能不適用於快速開發環境(RDE):
+Forms開發人員可使用AEM FormsCloud Service快速開發環境來快速開發適用性Forms、工作流程和自訂項目，例如自訂核心元件、與協力廠商系統的整合等。 AEM FormsCloud Service快速開發環境(RDE)不支援通訊API，以及需要記錄檔的功能，例如在提交最適化表單時產生記錄檔。 下列AEM Forms功能不適用於快速開發環境(RDE):
 
 * 設定最適化表單的記錄檔案
 * 在提交最適化表單或使用工作流程步驟時產生記錄檔案
@@ -474,5 +492,9 @@ Forms開發人員可使用AEM FormsCloud Service快速開發環境來快速開�
 
 >[!NOTE]
 >
-> 快速開發環境(RDE)的UI與Forms的其他Cloud Service環境之間沒有變更。 所有與「記錄檔案」相關的選項（例如為最適化表單選取記錄範本檔案）會繼續顯示在UI中。 這些環境沒有通訊API和記錄檔功能來測試這些選項。 因此，當您選擇任何需要通信API或記錄檔案功能的選項時，將不執行任何操作，並顯示或返回錯誤消息。
+> 快速開發環境(RDE)的UI與Forms的其他Cloud Service環境之間沒有差異。 所有與「記錄檔案」相關的選項（例如為最適化表單選取記錄範本檔案）會繼續顯示在UI中。 這些環境沒有測試這些選項的通訊API和記錄檔案功能。 因此，當您選擇任何需要通信API或記錄檔案功能的選項時，將不執行任何操作，並顯示或返回錯誤消息。
+
+## RDE教學課程
+
+若要了解AEMas a Cloud Service中的RDE，請參閱 [示範如何設定、如何使用及開發生命週期的影片教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
