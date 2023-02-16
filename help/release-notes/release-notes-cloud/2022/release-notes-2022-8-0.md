@@ -1,25 +1,25 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 版發行說明。'
-source-git-commit: 6a4e9015e18556c04a71cba0dfa6c7f688c36cb6
+exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 7%
+ht-degree: 59%
 
 ---
 
+# [!DNL Adobe Experience Manager] as a Cloud Service 目前發行說明 {#release-notes}
 
-# 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
-
-以下章節概述目前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
-
->[!NOTE]
->
->您可從這裡導覽至舊版的發行說明；例如，2020年、2021年等。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的一般發行說明。
 
 >[!NOTE]
 >
->請參閱 [近期檔案更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 如需與版本不直接相關的檔案更新詳細資訊。
+>從這裡，您可以瀏覽至舊版的發行說明；例如，2020、2021 等版本。
+
+>[!NOTE]
+>
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -34,7 +34,7 @@ ht-degree: 7%
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 中的新功能 [!DNL Sites] {#sites-features}
+### [!DNL Sites] 中的新功能 {#sites-features}
 
 * 電子郵件元件可在AEM中建立內容，然後透過Campaign Classic以電子郵件傳送。 核心電子郵件元件：
    * 是根據 [核心WCM元件](https://github.com/adobe/aem-core-wcm-components) 支援可編輯的模板和樣式系統。
@@ -43,15 +43,15 @@ ht-degree: 7%
    * 借助於 [CSS樣式內嵌](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), [HTML屬性內線](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)，和 [HTML消毒劑](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
    * 可隨處建立電子郵件。
 
-### [!DNL Sites] 搶鮮版頻道中可用的新功能 {#prerelease-features-sites}
+### [!DNL Sites] 發行前通道中可用的新功能 {#prerelease-features-sites}
 
-* 此 [內容片段主控台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 為使用者提供可顯示與內容片段相關聯的語言副本總數的選項。 提供一鍵式存取，也可檢視所有語言副本。 使用者也可以依所感興趣的地區來篩選表格檢視。
+* 此 [內容片段主控台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 為使用者提供可顯示與內容片段相關聯的語言副本總數的選項。 另外提供一鍵式存取，以便檢視所有語言版本。 使用者也可以依照他們感興趣的地區設定來篩選表格檢視。
 
 ![內容片段語言](/help/release-notes/assets/cfconsole-languages.png)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 中的新功能 [!DNL Assets] {#features-assets}
+### [!DNL Assets] 中的新功能 {#features-assets}
 
 * 您現在可以將Adobe Experience Manager Assets設定為 [根據MIME類型限制使用者可上傳的資產類型](/help/assets/configure-asset-upload-restrictions.md).
 
@@ -59,17 +59,17 @@ ht-degree: 7%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#prerelease-features-forms}
+### [!DNL Forms] 發行前通道中可用的新功能 {#prerelease-features-forms}
 
-* [適用性Forms精靈](/help/forms/creating-adaptive-form.md):AEM Forms提供商務使用者易記精靈，可快速撰寫最適化Forms。 精靈提供快速的索引標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項，以建立最適化表單。 此版本對精靈進行下列改良：
+* [調適型表單精靈](/help/forms/creating-adaptive-form.md)：AEM Forms 為商業使用者提供好用的精靈，以便快速撰寫調適型表單。 此精靈具有快速索引標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項來建立調適型表單。 此版本引進了對此精靈的以下改良：
 
-   * 選擇或取消選擇欄位：精靈可讓您根據JSON和表單資料模型結構建立最適化表單。 您現在可以選取結構內要納入適用性表單的欄位子集。 選取的欄位會轉換為對應的最適化表單資料擷取元件，以快速建立所需的最適化表單。
+   * 選取或取消選取欄位：此精靈可讓您根據 JSON 和表單資料模型結構描述建立調適型表單。 您現在可以選取結構描述中的欄位子集以納入調適型表單中。 選取的欄位會轉換成對應的調適型表單資料結構元件，以快速建立所需的調適型表單。
 
-   * 使用靜態範本：如果客戶現有投資於舊版靜態範本，則可在精靈中使用靜態範本來撰寫最適化表單，以繼續雲端採用歷程。 這可讓客戶將舊靜態範本移轉至現代可編輯的範本，以提供額外的時間。
+   * 使用靜態範本：已投資於舊型靜態範本的客戶可以在此精靈中使用靜態範本來撰寫調適型表單，繼續他們的雲端採用之旅。 這讓客戶有更多時間可以將舊的靜態範本移轉到可編輯的新式範本。
 
-* [在伺服器端處理時，從記錄檔案(DoR)中移除隱藏欄位](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md):您可以為最終用戶生成記錄PDF文檔，該文檔僅包含在資料捕獲體驗期間對他們可見的欄位。 提交表單時，伺服器會根據提交的資料驗證向最終用戶隱藏的欄位，並從記錄中排除以保持一致。
+* [在伺服器端進行處理時從記錄文件 (DoR) 中移除隱藏欄位](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)：您可以為一般使用者產生記錄文件 PDF，檔案中僅包含他們在資料擷取體驗期間可以看到的那些欄位。 在提交表單後，伺服器會根據提交的資料來驗證哪些欄位已對一般使用者隱藏，並從記錄文件中將其排除以維持一致性。
 
-## CIF附加元件 {#cloud-services-cif}
+## CIF 附加元件 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
@@ -78,8 +78,8 @@ ht-degree: 7%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以找到Cloud Manager每月發行的完整清單 [此處](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+您可以找到Cloud Manager每月發行的完整清單 [這裡。](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 移轉工具 {#migration-tools}
 
-您可以找到移轉工具發行的完整清單 [此處](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。

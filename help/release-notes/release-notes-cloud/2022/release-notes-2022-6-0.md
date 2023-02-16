@@ -2,24 +2,24 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 版發行說明。'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 6%
+ht-degree: 20%
 
 ---
 
-# 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 目前發行說明 {#release-notes}
 
-以下章節概述目前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
-
->[!NOTE]
->
->您可從這裡導覽至舊版的發行說明；例如，2020年、2021年等。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的一般發行說明。
 
 >[!NOTE]
 >
->請參閱 [近期檔案更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 如需與版本不直接相關的檔案更新詳細資訊。
+>從這裡，您可以瀏覽至舊版的發行說明；例如，2020、2021 等版本。
+
+>[!NOTE]
+>
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -35,7 +35,7 @@ ht-degree: 6%
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 中的新功能 [!DNL Sites] {#sites-features}
+### [!DNL Sites] 中的新功能 {#sites-features}
 
 * 新 [使用者介面](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 內容管理員和內容作者現在可以有效管理（執行動作，例如發佈、取消發佈、複製、移動等）、搜尋/篩選，以及建立無頭使用案例的內容片段。
 
@@ -45,13 +45,13 @@ ht-degree: 6%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 中的新功能 [!DNL Assets] {#assets-features}
+### [!DNL Assets] 中的新功能 {#assets-features}
 
 Experience Manager Assets目前使用Adobe Sensei AI功能 [區分影像中的顏色，並在擷取時自動將這些顏色套用為標籤](/help/assets/color-tag-images.md). 這些標籤可根據影像色彩構成啟用增強的搜尋體驗。 您可以配置在1到40之間的範圍內被標籤到影像的顏色數，以便以後可以根據這些顏色搜索影像。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### 中的新功能 [!DNL Forms] {#forms-features}
+### [!DNL Forms] 中的新功能 {#forms-features}
 
 * **[整合適用性Forms與Microsoft®電源自動化](/help/forms/forms-microsoft-power-automate-integration.md)**:您現在可以設定適用性表單，在提交時執行Microsoft® Power Automate Cloud Flow。 配置的適用性表單會將捕獲的資料、附件和記錄文檔發送到Power Automate Cloud Flow進行處理。 它可協助您建立自訂資料擷取體驗，同時運用Microsoft® Power Automate的強大功能，圍繞擷取的資料建立業務邏輯，並自動化客戶工作流程。
 
@@ -59,7 +59,7 @@ Experience Manager Assets目前使用Adobe Sensei AI功能 [區分影像中的�
 
    ![建立最適化表單的精靈](/help/release-notes/assets/wizard.png)
 
-## CIF附加元件 {#cloud-services-cif}
+## CIF 附加元件 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
@@ -98,8 +98,8 @@ Experience Manager Assets目前使用Adobe Sensei AI功能 [區分影像中的�
 
 ## Cloud Manager {#cloud-manager}
 
-您可以找到Cloud Manager每月發行的完整清單 [此處](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+您可以找到Cloud Manager每月發行的完整清單 [這裡。](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 移轉工具 {#migration-tools}
 
-您可以找到移轉工具發行的完整清單 [此處](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。

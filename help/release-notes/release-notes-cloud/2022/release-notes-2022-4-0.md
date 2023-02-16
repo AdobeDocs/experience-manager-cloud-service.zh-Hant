@@ -2,24 +2,24 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.4.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.4.0 版發行說明。'
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: f42cf1b82f7cf42be2afd30d69d71354fe0afeb3
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 5%
+ht-degree: 20%
 
 ---
 
-# 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 目前發行說明 {#release-notes}
 
-以下章節概述目前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
-
->[!NOTE]
->
->您可從這裡導覽至舊版的發行說明；例如，2020年、2021年等。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的一般發行說明。
 
 >[!NOTE]
 >
->請參閱 [近期檔案更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 如需與版本不直接相關的檔案更新詳細資訊。
+>從這裡，您可以瀏覽至舊版的發行說明；例如，2020、2021 等版本。
+
+>[!NOTE]
+>
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -32,13 +32,13 @@ ht-degree: 5%
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 中的新功能 [!DNL Sites] {#sites-features}
+### [!DNL Sites] 中的新功能 {#sites-features}
 
 * 內容模型資料類型現在可定義為 [可翻譯](/help/assets/content-fragments/content-fragments-models.md#properties) 在內容模型編輯器中使用簡單核取方塊。 此外，也會自動更新AEM翻譯規則和設定。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 中的新功能 [!DNL Assets] {#assets-features}
+### [!DNL Assets] 中的新功能 {#assets-features}
 
 * 您現在可以 [排序標籤](/help/assets/organize-assets.md#use-tags-to-organize-assets) 依據標籤名稱、建立日期或修改日期，以遞增或遞減順序在標籤選取器視窗中顯示。
 
@@ -78,8 +78,8 @@ AEMas a Cloud ServiceSDK建置Analyzer Maven外掛程式會偵測Maven專案中�
 
 ## Cloud Manager {#cloud-manager}
 
-您可以找到Cloud Manager每月發行的完整清單 [此處](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+您可以找到Cloud Manager每月發行的完整清單 [這裡。](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 移轉工具 {#migration-tools}
 
-您可以找到移轉工具發行的完整清單 [此處](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。

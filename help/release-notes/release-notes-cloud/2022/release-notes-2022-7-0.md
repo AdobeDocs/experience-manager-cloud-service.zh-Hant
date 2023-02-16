@@ -1,25 +1,25 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 版發行說明。'
-source-git-commit: b1c4706d2d148c136eed66b0bff6f792a89e9d8c
+exl-id: b339ab48-e836-4589-a573-9c50917b9280
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 5%
+ht-degree: 15%
 
 ---
 
+# [!DNL Adobe Experience Manager] as a Cloud Service 目前發行說明 {#release-notes}
 
-# 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
-
-以下章節概述目前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
-
->[!NOTE]
->
->您可從這裡導覽至舊版的發行說明；例如，2020年、2021年等。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的一般發行說明。
 
 >[!NOTE]
 >
->請參閱 [近期檔案更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 如需與版本不直接相關的檔案更新詳細資訊。
+>從這裡，您可以瀏覽至舊版的發行說明；例如，2020、2021 等版本。
+
+>[!NOTE]
+>
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -35,7 +35,7 @@ ht-degree: 5%
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 中的新功能 [!DNL Sites] {#sites-features}
+### [!DNL Sites] 中的新功能 {#sites-features}
 
 * 此 [內容片段主控台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 現在支援 [鍵盤快捷鍵](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
@@ -52,7 +52,7 @@ ht-degree: 5%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets] 搶鮮版頻道中可用的新功能 {#prerelease-features-assets}
+### [!DNL Assets] 發行前通道中可用的新功能 {#prerelease-features-assets}
 
 您現在可以將Adobe Experience Manager Assets設定為 [根據MIME類型限制使用者可上傳的資產類型](/help/assets/configure-asset-upload-restrictions.md).
 
@@ -60,7 +60,7 @@ ht-degree: 5%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### 中的新功能 [!DNL Forms] {#forms-features}
+### [!DNL Forms] 中的新功能 {#forms-features}
 
 * **[手寫簽名的鍵盤輸入支援](/help/forms/signing-forms-using-scribble.md)**:適用性Forms在觸控裝置上的使用日益增加，一項常見需求是支援簽名。 在觸控式裝置上簽署檔案已成為簽署表單的公認方式。 適用性Forms針對這類使用案例原生支援手寫簽名和Adobe Sign。 現在，除了其他已支援的選項外，您還可以使用鍵盤在適用性表單中手寫簽名。 它還有助於改善無障礙法規遵循。
 
@@ -68,7 +68,7 @@ ht-degree: 5%
 
 * **以本機語言使用適用性Forms精靈**:您可以使用您所選擇的語言來使用精靈。 現在支援Adobe Experience Manager支援的所有語言。
 
-### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#prerelease-features-forms}
+### [!DNL Forms] 發行前通道中可用的新功能 {#prerelease-features-forms}
 
 <!-- 
 
@@ -83,7 +83,7 @@ ht-degree: 5%
 * **[轉換為PDF/A -AEM工作流程步驟](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**:PDF/A是用於長期保存文檔內容的存檔格式，所有字型都嵌入並解壓檔案。 現在，您可以使用AEM Workflow(轉換為PDF/A)步驟，將任何格式的檔案或檔案轉換為PDF/A格式。
 
 
-## CIF附加元件 {#cloud-services-cif}
+## CIF 附加元件 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
@@ -110,7 +110,7 @@ ht-degree: 5%
 * Apache可以以 `docker_run_hot_reload.sh` 指令碼，此指令碼會自動載入及驗證apache和dispatcher設定的任何後續變更，進而提升開發人員速度。 僅支援調度工具的靈活模式。 另請參閱 [對Apache和Dispatcher設定進行除錯](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) 有關自動重新載入和驗證的其他詳細資訊。
 * 本機Apache/Dispatcher設定將更密切地追蹤雲端環境中的變更，提高兩個環境之間的對等關係。
 
-### [!DNL Experience Manager] 搶鮮版頻道中可用的新功能 {#prerelease-features-foundation}
+### [!DNL Experience Manager] 發行前通道中可用的新功能 {#prerelease-features-foundation}
 
 * AEM as a Cloud Service現已與Unified Shell整合，以改善使用者體驗，並與所有其他Experience Cloud應用程式統一。 請參閱 [AEMas a Cloud Service於Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) 以取得更多詳細資訊。
 
@@ -120,8 +120,8 @@ ht-degree: 5%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以找到Cloud Manager每月發行的完整清單 [此處](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+您可以找到Cloud Manager每月發行的完整清單 [這裡。](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 移轉工具 {#migration-tools}
 
-您可以找到移轉工具發行的完整清單 [此處](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。

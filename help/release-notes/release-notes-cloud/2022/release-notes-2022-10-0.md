@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 版發行說明。'
-source-git-commit: 151cc9777b40bb79f9035c99ec587a9a9285f2df
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '853'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 100%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[這裡](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)找到 Cloud Manager 每月發行的完整清單。
+您可以找到Cloud Manager每月發行的完整清單 [這裡。](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 移轉工具 {#migration-tools}
 

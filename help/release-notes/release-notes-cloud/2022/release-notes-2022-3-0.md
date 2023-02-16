@@ -2,24 +2,24 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '1153'
-ht-degree: 7%
+ht-degree: 14%
 
 ---
 
-# 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 目前發行說明 {#release-notes}
 
-以下章節概述目前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
-
->[!NOTE]
->
->您可從這裡導覽至舊版的發行說明；例如，2020年、2021年等。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的一般發行說明。
 
 >[!NOTE]
 >
->請參閱 [近期檔案更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 如需與版本不直接相關的檔案更新詳細資訊。
+>從這裡，您可以瀏覽至舊版的發行說明；例如，2020、2021 等版本。
+
+>[!NOTE]
+>
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -32,13 +32,13 @@ ht-degree: 7%
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites] 搶鮮版頻道中可用的新功能 {#prerelease-features-sites}
+### [!DNL Sites] 發行前通道中可用的新功能 {#prerelease-features-sites}
 
 * 內容模型資料類型現在可使用內容模型編輯器中的簡單核取方塊定義為可翻譯。 此外，也會自動更新AEM翻譯規則和設定。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 中的新功能 [!DNL Assets] {#assets-features}
+### [!DNL Assets] 中的新功能 {#assets-features}
 
 * [!DNL AEM Dynamic Media] 現在可靈活地 [配置一個別名帳戶](/help/assets/dynamic-media/dm-alias-account.md) ，進而確保更新現成可用的Dynamic Media URL和檢視器內嵌程式碼。 這對SEO有正面影響，可反映對您的業務內容所做的更新，例如品牌重塑。
 
@@ -52,7 +52,7 @@ ht-degree: 7%
 
 * 此 [管理出版物](/help/assets/manage-publication.md) 透過改善的使用者介面來增強功能。 使用者可以從選取的目的地，發佈或取消發佈內容， [新增內容](/help/assets/manage-publication.md#add-content) 從DAM存放庫的發佈清單， [包含資料夾設定](/help/assets/manage-publication.md#include-folder-settings) 發佈所選資料夾的內容並應用篩選器，以及 [排程發佈](/help/assets/manage-publication.md#publish-assets-later) 到以後的日期或時間。
 
-### [!DNL Assets] 搶鮮版頻道中可用的新功能 {#prerelease-features-assets}
+### [!DNL Assets] 發行前通道中可用的新功能 {#prerelease-features-assets}
 
 * 您現在可以 [排序標籤](/help/assets/organize-assets.md#use-tags-to-organize-assets) 依據標籤名稱、建立日期或修改日期，以遞增或遞減順序在標籤選取器視窗中顯示。
 
@@ -68,13 +68,13 @@ ht-degree: 7%
 
 * **自動將大於15頁的PDF forms轉換為最適化表單**:您現在可以使用automated forms conversion服務，將最多40頁的PDF forms轉換為最適化表單。 此服務現在提供將超過15頁的表單區段轉換為最適化表單片段的選項。 有助於改善轉換表單的轉譯速度，並讓您在最適化表單編輯器中輕鬆載入大型表單。
 
-### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#prerelease-features-forms}
+### [!DNL Forms] 發行前通道中可用的新功能 {#prerelease-features-forms}
 
 * **使用自訂XCI產生記錄檔案**:您現在可以使用自訂XCI檔案來設定記錄檔案的各種屬性。 會以自訂變更覆寫主XCI。
 
 * **在最適化表單中使用不可見的驗證碼**:只有在可疑活動時，才可使用隱形驗證碼來顯示驗證碼挑戰。 如果未發現任何可疑活動，則不顯示驗證碼質詢。
 
-## CIF附加元件 {#cloud-services-cif}
+## CIF 附加元件 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
@@ -95,7 +95,7 @@ ht-degree: 7%
 
    ![repbrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* 現在，用於驗證伺服器對伺服器API呼叫的憑證（例如，用於GraphQL API請求）可從開發人員控制台以自助式方式在到期前重新整理。 請參閱 [檔案](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 以取得詳細資訊。
+* 現在，用於驗證伺服器對伺服器API呼叫的憑證(例如GraphQL API請求)可在到期前，從開發人員控制台以自助式方式重新整理。 請參閱 [檔案](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 以取得詳細資訊。
 
 * 版本清除和審核日誌清除維護任務（以前未啟用）將啟用新環境。 請參閱 [維護任務](/help/operations/maintenance.md) 文章。
 
@@ -103,7 +103,7 @@ ht-degree: 7%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以找到Cloud Manager每月發行的完整清單 [此處](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+您可以找到Cloud Manager每月發行的完整清單 [這裡。](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 內容轉移工具 {#ctt-release}
 
@@ -115,7 +115,7 @@ ht-degree: 7%
 
 * 檢查大小護欄 — 「內容轉移工具檢查大小」功能有助於減少失敗的內容轉移。  使用「檢查大小」功能，用戶可以1)確定他們在 `crx-quickstart` 子目錄，提取前，和2)預估移轉集大小並確認是否支援。 如果違反上述一項或兩項檢查，使用者在CTT UI中會看到警告。 透過此護欄，您可以避免內容傳輸失敗，並主動與Adobe客戶服務討論移轉選項。 請參閱 [確定遷移集大小和磁碟空間](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) 以取得更多詳細資訊。
 
-## Best Practices Analyzer {#bpa-release}
+## 最佳做法分析工具 {#bpa-release}
 
 ### 發行日期 {#release-date-bpa}
 
