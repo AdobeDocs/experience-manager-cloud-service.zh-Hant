@@ -1,15 +1,15 @@
 ---
-title: 內容轉移工具的必要條件
-description: 內容轉移工具的必要條件
+title: 內容轉移工具的先決條件
+description: 內容轉移工具的先決條件
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: 4ccebe19d38f1ece58ea7170344ef2fd86a513d2
+source-git-commit: 048f358ed125e3627896aeeb86242340e2db9272
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
-# 內容轉移工具的必要條件 {#prerequisites}
+# 內容轉移工具的先決條件 {#prerequisites}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
