@@ -4,9 +4,9 @@ description: 了解如何管理工作流程例項
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
+source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,12 @@ ht-degree: 0%
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
+   >[!NOTE]
+   >
+   >
+   >為了終止或中止工作流，它必須處於等待用戶干預的狀態，如參與者步驟。 嘗試中止當前正在執行的作業（正在執行的活動線程）的工作流可能不會產生預期的結果。
+
+
 ## 檢視封存的工作流程 {#viewing-archived-workflows}
 
 1. 使用導覽選取 **工具**，然後 **工作流程**.
@@ -76,6 +82,7 @@ ht-degree: 0%
    >
    >* 使用 **終止** 動作
    >* 當受工作流約束的頁面被（強制）刪除時，工作流將被終止
+
 
 
 1. 選取特定項目，然後 **開啟歷史記錄** 若要查看更多詳細資訊，請：
