@@ -2,10 +2,10 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: eacd418ead2cc754a055449a99037b6541f55f6a
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,6 +22,8 @@ ht-degree: 9%
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution入口網站"
 
 您可以從軟體發佈入口網站下載「內容轉移工具」的ZIP檔案。 您可以透過 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 在來源Adobe Experience Manager(AEM)例項上。 請務必下載最新版本。 如需最新版本的詳細資訊，請參閱 [發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+
+僅支援2.0.0版及更新版本，建議您使用最新版本。
 
 >[!NOTE]
 >從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)入口網站下載內容轉移工具。

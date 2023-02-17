@@ -2,10 +2,10 @@
 title: 處理大型內容存放庫
 description: 本節介紹如何處理大型內容儲存庫
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -101,7 +101,7 @@ CTT提取期間，Windows目前不支援使用AzCopy的預複製。
 
 Amazon S3、Azure Blob儲存和檔案資料儲存的AzCopy支援包含在最新的CTT版本中。
 您可以從 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 入口網站。
-
+請注意，僅支援2.0.0版及更新版本，建議使用最新版本。
 
 ### 3.設定azcopy.config檔案 {#configure-azcopy-config-file}
 
