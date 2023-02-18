@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
 workflow-type: tm+mt
-source-wordcount: '4194'
-ht-degree: 9%
+source-wordcount: '4369'
+ht-degree: 8%
 
 ---
 
@@ -440,6 +440,19 @@ Experience Manager從檢視資產時，會顯示各種檢視器預設集 **[!UIC
 
 1. （可選）在「編輯檢視器預設集」頁面頂端附近，選取 **[!UICONTROL 案頭]**, **[!UICONTROL 平板電腦]**，或 **[!UICONTROL 電話]** 以針對不同的裝置和螢幕類型唯一定義視覺樣式。
 1. 在「檢視器預設集編輯器」頁面上，選取 **[!UICONTROL 行為]** 標籤。 或者，您也可以在檢視器中選取任何視覺元素，以選取它進行設定。
+例如，對於 *VideoPlayer* 類型，在 **[!UICONTROL 修飾元]** > **[!UICONTROL 播放]**，您可以從三個最適化串流選項之一中選取：
+
+   * **[!UICONTROL 破折號]**  — 視訊僅以破折號形式串流。
+   * **[!UICONTROL hls]**  — 視訊資料流僅限hls。
+   * **[!UICONTROL 自動]**  — 最佳實務。 DASH和HLS資料流的建立已經過儲存優化。 因此，Adobe建議您一律選取 **[!UICONTROL 自動]** 作為播放類型。 視訊以破折號、hls或漸進式方式串流，如下所示：
+      * 如果瀏覽器支援DASH，則首先使用DASH串流。
+      * 如果瀏覽器不支援DASH，則使用HLS串流，第二。
+      * 如果瀏覽器不支援DASH或HLS，則最後會使用漸進式播放。
+
+   >[!NOTE]
+   >
+   >若要查看和使用 **[!UICONTROL 破折號]** 選項，必須先由帳戶上的Adobe技術支援啟用。 請參閱 [在您的帳戶上啟用DASH](/help/assets/dynamic-media/video.md#enable-dash).
+
 1. 從「選 **[!UICONTROL 定類型]** 」(Selected Type)下拉菜單中，選擇要更改其行為的元件。
 
    可視化編輯器中的許多元件都有與其相關聯的詳細說明。 展開元件以顯示其相關參數時，這些說明會顯示在藍色方塊中。
@@ -454,15 +467,19 @@ Experience Manager從檢視資產時，會顯示各種檢視器預設集 **[!UIC
    >在文字欄位中輸入值後，請在使用者介面的其他位置選取以提交變更並關閉虛擬鍵盤。 如果您選取 **[!UICONTROL 輸入]**，則不會執行任何動作。
 
 1. 在頁面的右上角附近，選取 **[!UICONTROL 儲存]**.
-1. 發佈新的檢視器預設集。 您必須先發佈預設集，才能在網站上使用。
+1. 發佈新的檢視器預設集。 您必須發佈預設集，才能在網站上使用產生的URL。
 
    請參閱 [發佈檢視器預設集](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >對於使用最適化串流設定檔的舊視訊，URL會繼續照常播放（與HLS串流），直到您 [重新處理視訊資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). 重新處理後，相同的URL仍可繼續運作，但現在可搭配 *both* 已啟用DASH和HLS串流。
 
 ### 建立互動式檢視器預設集的特殊考量事項 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **關於面板中影像縮圖的顯示模式：**
 
-當您建立或編輯互動式視訊檢視器預設集時，可以選擇要使用的顯示模式設定。 選取 `InteractiveSwatches` 從 **[!UICONTROL 所選元件]** 下拉式功能表 **[!UICONTROL 行為]** 標籤。 您選擇的「顯示」模式會影響縮圖在視訊播放時的顯示方式和時間。您可以選擇「顯 `segment`示」模式 (預設) 或「顯 `continuous` 示」模式。
+當您建立或編輯互動式視訊檢視器預設集時，可以選擇要使用的顯示模式設定。 選取 `InteractiveSwatches` 從 **[!UICONTROL 所選元件]** 下拉式功能表 **[!UICONTROL 行為]** 標籤。 您選擇的「顯示」模式會影響縮圖在視訊播放時的顯示方式和時間。 您可以選擇「顯 `segment`示」模式 (預設) 或「顯 `continuous` 示」模式。
 
 <table>
  <tbody>
@@ -561,7 +578,7 @@ Experience Manager從檢視資產時，會顯示各種檢視器預設集 **[!UIC
 1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側邊欄中，選取 **[!UICONTROL 工具]** （錘子表徵圖）> **[!UICONTROL 資產]** > **[!UICONTROL 檢視器預設集]**.
 1. 勾選檢視器預設集標題左側的方塊，以選取預設集。
 1. 在工具列上，選取 **[!UICONTROL 編輯]**.
-1. 在 **[!UICONTROL 檢視器預設集編輯器]** 頁面，使用在 **[!UICONTROL 外觀]** 和 **[!UICONTROL 行為]** 標籤。
+1. 在 **[!UICONTROL 檢視器預設集編輯器]** 頁面，使用在 **[!UICONTROL 外觀]** 和 **[!UICONTROL 行為]** 頁簽。
 
    從 **[!UICONTROL 外觀]** 頁簽，在「查看器預設集編輯器」頁的左上角附近，選擇 **[!UICONTROL 案頭]**, **[!UICONTROL 平板電腦]**，或 **[!UICONTROL 電話]** 來更改資產的演示模式。
 

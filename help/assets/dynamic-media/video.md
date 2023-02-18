@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media 中的視訊
-description: 了解如何在Dynamic Media中使用視訊，例如編碼視訊、將視訊發佈至YouTube、檢視視訊報表，以及將隱藏式字幕、字幕或章節標籤新增至視訊的最佳實務。
+description: 了解如何在Dynamic Media中使用影片。 檢閱對視訊編碼、將視訊發佈至YouTube、檢視視訊報表，以及將隱藏式字幕、字幕或章節標籤新增至視訊的最佳實務。
 contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: d711057024e62aab00d76f40a729ee59590bbb59
 workflow-type: tm+mt
-source-wordcount: '9349'
+source-wordcount: '10264'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 ## 快速入門：影片 {#quick-start-videos}
 
-下列逐步工作流程說明旨在協助您透過Dynamic Media中的最適化視訊集快速上手並執行。 在每個步驟之後，會交叉參照主題標題，以取得詳細資訊。
+下列逐步工作流程說明旨在協助您透過Dynamic Media中的最適化視訊集快速上手並執行。 在每個步驟之後，都會有主題標題的交叉參考，您可在其中找到詳細資訊。
 
 >[!NOTE]
 >
@@ -155,19 +155,30 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 
 在播放器的設計端，您可以使用標準網頁開發工具來設計視訊播放器的功能。 例如，您可以使用HTML5和CSS來設計按鈕、控制項和自訂海報影像背景，以協助您以自訂外觀觸及客戶。
 
-在檢視器的播放端，會自動偵測瀏覽器的視訊功能。 接著，它會使用HLS（HTTP即時串流）（也稱為最適化視訊串流）提供視訊。 或者，如果這些傳送方法不存在，則會改用HTML5漸進式。
+在檢視器的播放端，會自動偵測瀏覽器的視訊功能。 接著，它會使用HLS或DASH（也稱為最適化視訊串流）提供視訊。 或者，如果這些傳送方法不存在，則會改用HTML5漸進式。
+
+>[!IMPORTANT]
+>
+>若要查看或使用DASH，必須先由您帳戶的Adobe技術支援啟用。 請參閱 [在您的帳戶上啟用DASH](#enable-dash).)
 
 您可以結合為單一播放器，使用HTML5和CSS來設計播放元件。 它可以有內嵌播放，並根據瀏覽器的功能使用最適化和漸進式串流。 所有這些功能都表示您可以將多媒體內容的觸及範圍擴展至案頭和行動使用者，並確保簡化視訊體驗。
 
 另請參閱 [僅限Experience Manager Assets的檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) 在 [Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
+
 ### 使用HTML5視訊檢視器在桌上型電腦和行動裝置上播放視訊 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 針對案頭和行動最適化視訊串流，用於位元速率切換的視訊是以最適化視訊集中的所有MP4視訊為基礎。
 
-使用HLS或漸進式視訊下載時發生視訊播放。 在舊版Experience Manager（例如6.0、6.1和6.2）中，視訊是透過HTTP串流。
+使用HLS或DASH或漸進式視訊下載時，會發生視訊播放。 在舊版Experience Manager（例如6.0、6.1和6.2）中，視訊是透過HTTP串流。
 
-不過，在Experience Manager6.3及以上版本中，視訊現在會透過HTTPS（即HLS）串流，因為DM閘道服務URL一律使用HTTPS。 此預設行為不會有客戶影響。 也就是說，除非瀏覽器不支援，否則視訊串流一律會透過HTTPS進行。 （請參閱下表）。 因此，
+不過，在Experience Manager6.3和上，視訊現在會透過HTTPS（即HLS或DASH）串流，因為DM閘道服務URL一律使用HTTPS。 此預設行為不會有客戶影響。 也就是說，除非瀏覽器不支援，否則視訊串流一律會透過HTTPS進行。 （請參閱下表）。
+
+>[!IMPORTANT]
+>
+>若要查看或使用DASH，必須先由您帳戶的Adobe技術支援啟用。 請參閱 [在您的帳戶上啟用DASH](#enable-dash).)
+
+因此，
 
 * 如果您的HTTPS網站採用HTTPS視訊串流，則串流沒問題。
 * 如果您的HTTP網站採用HTTPS視訊串流，串流沒問題，且網頁瀏覽器沒有混合的內容問題。
@@ -203,17 +214,17 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
   <tr>
    <td>桌面</td>
    <td>Firefox 45或更新版本</td>
-   <td>HLS</td>
+   <td>HLS或DASH*自適應流</td>
   </tr>
   <tr>
    <td>桌面</td>
    <td>鉻黃</td>
-   <td>HLS</td>
+   <td>HLS或DASH*自適應流</td>
   </tr>
   <tr>
    <td>桌面</td>
    <td>Safari(Mac)</td>
-   <td>HLS</td>
+   <td>HLS或DASH*自適應流</td>
   </tr>
   <tr>
    <td>行動</td>
@@ -223,7 +234,7 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
   <tr>
    <td>行動</td>
    <td>Chrome(Android™ 7或更新版本)</td>
-   <td>HLS</td>
+   <td>HLS或DASH*自適應流/td&gt;
   </tr>
   <tr>
    <td>行動</td>
@@ -233,20 +244,24 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
   <tr>
    <td>行動</td>
    <td>Safari(iOS)</td>
-   <td>HLS</td>
+   <td>HLS或DASH*自適應流</td>
   </tr>
   <tr>
    <td>行動</td>
    <td>Chrome(iOS)</td>
-   <td>HLS</td>
+   <td>HLS或DASH*自適應流</td>
   </tr>
  </tbody>
 </table>
 
+>[!IMPORTANT]
+>
+>*若要查看或使用DASH，必須先由您帳戶的Adobe技術支援啟用。 請參閱 [在您的帳戶上啟用DASH](#enable-dash).)
+
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
    <td>BlackBerry&reg;</td>
-   <td>HLS</td>
+   <td>HLS or DASH</td>
   </tr>
  -->
 
@@ -288,7 +303,7 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
 
 ### 取得檔案的中繼資料 {#obtaining-a-file-s-metadata}
 
-您可以使用視訊編輯工具檢視其中繼資料，或使用專為取得中繼資料而設計的應用程式，以取得檔案的中繼資料。 以下是使用協力廠商應用程式MediaInfo來取得視訊檔案中繼資料的指示：
+您可以使用視訊的編輯工具檢視其中繼資料，或使用為取得中繼資料而設計的應用程式，以取得檔案的中繼資料。 以下是使用協力廠商應用程式MediaInfo來取得視訊檔案中繼資料的指示：
 
 1. 前往 [MediaInfo下載](https://mediaarea.net/en/MediaInfo/Download).
 1. 選擇並下載GUI版本的安裝程式，並按照安裝說明操作。
@@ -326,7 +341,7 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
 * **[!UICONTROL 常數位元速率編碼]** (CBR) — 在CBR編碼期間，位元速率或每秒位數在整個編碼過程中保持不變。 CBR編碼在整個視頻中將設定的資料速率保存為設定。 此外，CBR編碼不會為質量優化介質檔案，但會節省儲存空間。
 如果視頻在整個視頻中包含類似的運動級別，則使用CBR。 CBR最常用於流式視頻內容。 另請參閱 [使用自訂新增的視訊編碼參數](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL 變數位元速率編碼]** (VBR)- VBR編碼根據壓縮機所需的資料，將資料速率調低並調整到設定的上限。 此功能表示在VBR編碼過程中，媒體檔案的位元速率會根據媒體檔案的位元速率需求，以動態方式增加或減少。
+* **[!UICONTROL 變數位元速率編碼]** (VBR)- VBR編碼會根據壓縮程式所需的資料，將資料速率調低至您設定的上限。 此功能表示在VBR編碼過程中，媒體檔案的位元速率會根據媒體檔案的位元速率需求，以動態方式增加或減少。
 VBR編碼需要較長的時間，但會產生最有利的結果；媒體檔案的品質優越。 VBR最常用於http漸進式傳送視訊內容。
 
 何時使用VBR或CRB?
@@ -400,6 +415,41 @@ VBR編碼需要較長的時間，但會產生最有利的結果；媒體檔案�
 ### 編碼視訊檔案格式 {#encoded-video-file-format}
 
 Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用H.264視訊轉碼器，因此可提供高品質的視訊，但檔案大小壓縮。
+
+### 在您的帳戶上啟用DASH {#enable-dash}
+
+DASH(Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，在不同的視訊觀看者中廣泛採用。 啟用「破折號」時，您可以選擇HLS或DASH以進行最適化視訊串流。 您也可以選擇兩者，並自動切換播放器。
+
+在您的帳戶上啟用DASH的一些主要優點包括：
+
+* 封裝DASH串流視訊，以進行最適化串流。 此方法可提高傳送效率。 最適化串流可確保為客戶提供最佳的檢視體驗。
+* 使用Dynamic Media播放器在HLS和DASH串流之間切換，以最佳化服務品質，進行瀏覽器最佳化串流。 使用Safari瀏覽器時，視訊播放器會自動切換至HLS。
+* 您可以編輯視訊檢視器預設集，以設定您偏好的串流方法（HLS或DASH）。
+* 最佳化的視訊編碼可確保在啟用DASH功能時不會使用其他儲存空間。 為HLS和DASH建立一組視訊編碼，以最佳化視訊儲存成本。
+* 有助於讓客戶更容易存取視訊傳送。
+* 也可透過API取得串流URL。
+
+您可以啟動使用DASH的請求；不會在您的帳戶上自動啟用。
+
+>[!IMPORTANT]
+>
+>目前僅在北美提供對您帳戶啟用DASH的功能。
+
+建立支援案例，如下所述。 在您的支援案例中，請務必提及您要在帳戶上啟用DASH。
+
+**要啟用帳戶上的DASH，請執行以下操作：**
+
+1. [使用Admin Console開始建立新的支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html).
+1. 請依照指示建立支援案例，同時確保您提供下列資訊：
+
+   * 主要聯繫人姓名、電子郵件、電話。
+   * 您想在Dynamic Media帳戶上啟用DASH。
+
+1. Adobe客戶支援會根據提交請求的順序將您新增至DASH客戶等待清單。
+1. 當Adobe準備好處理您的請求時，客戶支援會聯絡您，協調並設定啟用破折號的目標日期。
+1. 客戶支援在完成後通知您。
+1. 建立 [視訊檢視器預設集](#creating-a-new-viewer-preset) 照常。
+
 
 ## 將影片發佈至YouTube {#publishing-videos-to-youtube}
 
@@ -1296,3 +1346,330 @@ T**o add a custom video thumbnail**,
    The custom thumbnail is added to your video.
 
 -->
+
+## 變更Dynamic Media資產的Dynamic Media URL
+
+處理至Dynamic Media的影片可透過現成可用的檢視器，以及直接存取資訊清單URL，並透過您自己的自訂檢視器播放。 以下是擷取視訊資訊清單URL的API。
+
+### 關於getVideoManifestURI API
+
+此 `getVideoManifestURI`API透過c公開`q-scene7-api:com.day.cq.dam.scene7.api` 和可用來產生下列資訊清單URL:
+
+```java
+/**   
+* Returns the manifest url for videos 
+* @param resource video resource 
+* @param manifestType type of video streaming manifest being requested 
+* @param onlyIfPublished return a manifest only if the video is published 
+* @return the manifest url for videos 
+* 
+* @throws Exception 
+*/
+@Nullable 
+String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean onlyIfPublished) throws Exception;
+```
+
+#### getVideoManifestURI API參數
+
+此API會採用下列三個參數：
+
+| 參數 | 說明 |
+| --- | --- |
+| `resource` | 與Dynamic Media已擷取的視訊相對應的資源。 |
+| `manifestType` | 可以是 `ManifestType.DASH` 或 `ManifestType.HLS` |
+| `onlyIfPublished` | 若資訊清單uri僅在已發佈且可在傳送層級上使用時，才產生，則設為true。 |
+
+若要使用上述方法擷取影片的資訊清單URL，請新增 [視訊編碼設定檔](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 上傳影片資料夾。 Dynamic Media會根據指派給資料夾的視訊編碼檔案中的編碼來處理這些視訊。 現在您可以叫用上述API，擷取已上傳影片的資訊清單URL。
+
+### 錯誤情況
+
+如果有錯誤，API會傳回null。 Experience Manager錯誤記錄中記錄異常。 所有此類記錄錯誤的開頭皆為 `Could not generate Video Manifest URI`. 在下列情況下，可能會發生此類錯誤：
+
+* 安 `IllegalArgumentException` 會針對下列任一項目進行記錄：
+
+   * 此 `resource` 傳遞的參數為null。
+   * 此 `resource` 傳遞的參數不是視訊。
+   * 此 `manifestType` 傳遞的參數為null。
+   * 此 `onlyIfPublished` 參數會以true傳遞，但視訊不會發佈。
+   * 未使用Dynamic Media的最適化視訊集擷取視訊。
+
+* `IOException` 當連線至Dynamic Media時發生問題時會被記錄。
+* `UnsupportedOperationException` 在 `manifestType` 傳遞的參數 `ManifestType.DASH`，而未使用DASH格式處理視訊。
+
+以下是上述API使用中寫入之servlet的範例 *HTTPWhiteBoard* 規範。
+
+**在pom.xml中新增相依性**
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
+**Servlet範例**
+
+```java
+@Component
+        service = Servlet.class 
+) 
+@HttpWhiteboardServletPattern(value = ManifestServlet.SERVLET_PATTERN) 
+@HttpWhiteboardContextSelect(value = Constants.SERVLET_CONTEXT_SELECTOR) 
+public class ManifestServlet extends HttpServlet { 
+
+   private static final Logger LOGGER = LoggerFactory.getLogger(ManifestServlet.class); 
+
+   private final ObjectMapper objectMapper; 
+
+    @Reference 
+    private Scene7Service scene7Service; 
+
+   public static final String SERVLET_PATTERN = Constants.VIDEO_API_PREFIX + "/manifestUrl"; 
+
+   public ManifestServlet() {
+         this.objectMapper = new ObjectMapper(); 
+         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); 
+   }
+
+   @Override 
+
+   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        final ResourceResolver resolver = getResourceResolver(request); 
+        String assetPath = request.getParameter("assetPath"); 
+        String manifest = request.getParameter("manifestType"); 
+        String onlyIfPublished = request.getParameter("onlyIfPublished"); 
+        Resource resource = resolver.getResource(assetPath); 
+        response.setCharacterEncoding(StandardCharsets.UTF_8.toString()); 
+        response.setContentType("application/json"); 
+        if(resource == null) { 
+            LOGGER.info("could not retrieve the resource from JCR"); 
+            error("could not retrieve the resource from JCR", response); 
+            return; 
+        }
+
+        String manifestUri = null; 
+
+        try{ 
+            ManifestType manifestType =  ManifestType.DASH; 
+            if(manifest != null) { 
+                manifestType = ManifestType.valueOf(manifest); 
+            } 
+            manifestUri = scene7Service.getVideoManifestURI(resource, manifestType, onlyIfPublished != null); 
+            objectMapper.writeValue(response.getWriter(), new ManifestUrl(manifestUri)); 
+            response.setContentType("application/json"); 
+        } catch (Exception e) { 
+            LOGGER.error(e.getMessage(), e); 
+            error(String.format("Unable to get the manifest url for %s. %s", assetPath, e.getMessage()), response); 
+        } 
+    } 
+
+    private ResourceResolver getResourceResolver(HttpServletRequest request) { 
+        Object rr = request.getAttribute(AuthenticationSupport.REQUEST_ATTRIBUTE_RESOLVER); 
+        if (!(rr instanceof ResourceResolver)) { 
+            throw new IllegalStateException( 
+                    "The request does not seem to have been created via Apache Sling's authentication mechanism."); 
+        } else { 
+            return (ResourceResolver) rr; 
+        } 
+    } 
+
+    private void error(String errorMessage, HttpServletResponse response) throws IOException { 
+        ManifestUrl errorManifest = new ManifestUrl(null); 
+        errorManifest.setErrorMessage(errorMessage); 
+        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
+        objectMapper.writeValue(response.getWriter(), errorManifest); 
+    } 
+} 
+```
+
++++
+
++++
+**Servlet的響應類**
+
+```java
+public class ManifestUrl extends VideoResponse { 
+     String manifestUrl; 
+     public ManifestUrl(String manifestUrl) { 
+         this.manifestUrl = manifestUrl; 
+     } 
+     public String getManifestUrl() { 
+         return manifestUrl; 
+     } 
+} 
+
+public abstract class VideoResponse { 
+     String errorString; 
+
+     public String getErrorString() { 
+         return errorString; 
+     } 
+
+     public void setErrorMessage(String errorString) { 
+         this.errorString = errorString; 
+     } 
+} 
+```
+
++++
+
+
++++
+**Servlet中引用的常數檔案**
+
+```java
+public final class Constants { 
+
+     private Constants() { 
+     } 
+
+     public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
+     public static final String SERVLET_CONTEXT_SELECTOR = "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "=" + 
+             DMSampleApiHttpContext.CONTEXT_NAME + ")"; 
+
+ } 
+```
+
++++
+
++++
+**ServletContext**
+
+使用 `servletContext`. 以下是的範例 `servletContext`.
+
+```java
+public class DMSampleApiHttpContext extends ServletContextHelper { 
+
+ public static final String CONTEXT_NAME = "com.adobe.dmSample"; 
+ public static final String CONTEXT_PATH = "/dmSample"; 
+
+ private final MimeTypeService mimeTypeService; 
+
+ private final AuthenticationSupport authenticationSupport; 
+
+ /** 
+  * Constructs a new context that will use the given dependencies. 
+  * 
+  * @param mimeTypeService Used when providing mime type of requests. 
+  * @param authenticationSupport Used to authenticate requests with sling. 
+  */ 
+ @Activate 
+ public DMSampleApiHttpContext(@Reference final MimeTypeService mimeTypeService, 
+                               @Reference final AuthenticationSupport authenticationSupport) { 
+     this.mimeTypeService = mimeTypeService; 
+     this.authenticationSupport = authenticationSupport; 
+ } 
+
+ // ---------- HttpContext interface ---------------------------------------- 
+ /** 
+  * Returns the MIME type as resolved by the <code>MimeTypeService</code> or 
+  * <code>null</code> if the service is not available. 
+  */ 
+ @Override 
+ public String getMimeType(String name) { 
+     MimeTypeService mtservice = mimeTypeService; 
+     if (mtservice != null) { 
+         return mtservice.getMimeType(name); 
+     } 
+     return null; 
+ } 
+
+ /** 
+  * Returns the real context path that is used to mount this context. 
+  * @param req servlet request 
+  * @return the context path 
+  */ 
+ public static String getRealContextPath(HttpServletRequest req) { 
+     final String path = req.getContextPath(); 
+     if (path.equals(CONTEXT_PATH)) { 
+         return ""; 
+     } 
+     return path.substring(CONTEXT_PATH.length()); 
+ } 
+
+ /** 
+  * Returns a request wrapper that transforms the context path back to the original one 
+  * @param req request 
+  * @return the request wrapper 
+  */ 
+ public static HttpServletRequest createContextPathAdapterRequest(HttpServletRequest req) { 
+     return new HttpServletRequestWrapper(req) { 
+
+         @Override 
+         public String getContextPath() { 
+             return getRealContextPath((HttpServletRequest) getRequest()); 
+         } 
+
+     }; 
+
+ } 
+
+ /** 
+  * Always returns <code>null</code> because resources are all provided 
+  * through individual endpoint implementations. 
+  */ 
+ @Override 
+ public URL getResource(String name) { 
+     return null; 
+ } 
+
+ /** 
+  * Tries to authenticate the request using the 
+  * <code>SlingAuthenticator</code>. If the authenticator or the Repository 
+  * is missing this method returns <code>false</code> and sends a 503/SERVICE 
+  * UNAVAILABLE status back to the client. 
+  */ 
+ @Override 
+ public boolean handleSecurity(HttpServletRequest request, 
+                               HttpServletResponse response) throws IOException { 
+
+     final AuthenticationSupport authenticator = this.authenticationSupport; 
+     if (authenticator != null) { 
+         return authenticator.handleSecurity(createContextPathAdapterRequest(request), response); 
+     } 
+
+     // send 503/SERVICE UNAVAILABLE, flush to ensure delivery 
+     response.sendError(HttpServletResponse.SC_SERVICE_UNAVAILABLE, 
+             "AuthenticationSupport service missing. Cannot authenticate request."); 
+     response.flushBuffer(); 
+
+     // terminate this request now 
+     return false; 
+ } 
+}
+```
+
++++
+
+### 使用範例servlet
+
+您可借由執行 `GET` 操作 `/dmSample/dynamicmedia/video/manifestUrl`. 會傳遞下列查詢參數：
+
+| 查詢參數 | 說明 |
+| --- | --- |
+| `assetPath` | 必要. 視訊的路徑，其 `manifestUrl` 的URL。 |
+| `manifestType` | 選用. 參數可以是虛線或HLS。 如果未傳遞，則預設為DASH。 |
+| `onlyIfPublished` | 選用. 若通過， `manifestUrl` 只有在已發佈視訊時才會傳回。 |
+
+在此範例中，我們假設下列設定：
+
+* 公司 `samplecompany`.
+* 製作例項為 `http://sample-aem-author.com`.
+* 資料夾 `/content/dam/video-example` 已套用視訊編碼設定檔。
+* 影片 `scenery.mp4` 已上傳至資料夾 `/content/dam/video-example`.
+
+您可以透過下列方式叫用servlet:
+
+| 類型 | 說明 |
+| :--- | --- |
+| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>若已啟用DASH傳送：<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>如果停用DASH傳送：<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
+| 破折號 | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>若已啟用DASH傳送：<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>如果停用DASH傳送：<br>`{}` |
+| 錯誤：資產路徑錯誤 | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+
+
+
+
+

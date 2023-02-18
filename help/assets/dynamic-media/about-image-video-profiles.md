@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 8b878a26653874c94a671a404d9b35740e43a514
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 您可以重新處理已有現有Dynamic Media影像設定檔或您之後已變更之Dynamic Media影片設定檔的資料夾中的資產。
 
-例如，假設您建立了Dynamic Media影像設定檔，並將其指派給資料夾。 您上傳至資料夾的任何影像資產都會自動將影像設定檔套用至資產。 不過，之後您決定將新的智慧型裁切比例新增至「影像描述檔」。 現在，您只需執行「 」，而不需再次選取資產並重新上傳至資料夾 *Scene7:重新處理資產* 工作流程。
+例如，假設您建立了Dynamic Media影像設定檔，並將其指派給資料夾。 您上傳至資料夾的任何影像資產都會自動將影像設定檔套用至資產。 不過，之後您決定將新的智慧型裁切比例新增至「影像描述檔」。 現在，您只需執行 *Scene7:重新處理資產* 工作流程。
 
 您可以對第一次處理失敗的資產執行重新處理工作流程。 即使您尚未編輯影像設定檔或視訊設定檔，或已套用影像設定檔或視訊設定檔，您仍可以隨時對資產資料夾執行重新處理工作流程。
 
