@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 4b51ace98d547a6a31f30d6348508a71266dbfed
+source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
 workflow-type: tm+mt
-source-wordcount: '10300'
+source-wordcount: '10318'
 ht-degree: 4%
 
 ---
@@ -157,9 +157,9 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 
 在檢視器的播放端，會自動偵測瀏覽器的視訊功能。 接著，它會使用HLS或DASH（也稱為最適化視訊串流）提供視訊。 或者，如果這些傳送方法不存在，則會改用HTML5漸進式。
 
->[!IMPORTANT]
+>[!NOTE]
 >
->若要查看或使用DASH，必須先由您帳戶的Adobe技術支援啟用。 請參閱 [在您的帳戶上啟用DASH](#enable-dash).)
+>若要對您的影片使用DASH，必須先由您的帳戶上的Adobe技術支援啟用。 請參閱 [在您的帳戶上啟用DASH](#enable-dash).)
 
 您可以結合為單一播放器，使用HTML5和CSS來設計播放元件。 它可以有內嵌播放，並根據瀏覽器的功能使用最適化和漸進式串流。 所有這些功能都表示您可以將多媒體內容的觸及範圍擴展至案頭和行動使用者，並確保簡化視訊體驗。
 
@@ -174,9 +174,9 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 
 不過，在Experience Manager6.3和上，視訊現在會透過HTTPS（即HLS或DASH）串流，因為DM閘道服務URL一律使用HTTPS。 此預設行為不會有客戶影響。 也就是說，除非瀏覽器不支援，否則視訊串流一律會透過HTTPS進行。 （請參閱下表）。
 
->[!IMPORTANT]
+>[!NOTE]
 >
->若要查看或使用DASH，必須先由您帳戶的Adobe技術支援啟用。 請參閱 [在您的帳戶上啟用DASH](#enable-dash).)
+>若要對您的影片使用DASH，必須先由您的帳戶上的Adobe技術支援啟用。 請參閱 [在您的帳戶上啟用DASH](#enable-dash).)
 
 因此，
 
@@ -256,7 +256,7 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
 
 >[!IMPORTANT]
 >
->*若要查看或使用DASH，必須先由您帳戶的Adobe技術支援啟用。 請參閱 [在您的帳戶上啟用DASH](#enable-dash).)
+>*若要使用視訊的DASH，必須先由您的帳戶上的Adobe技術支援啟用。 請參閱 [在您的帳戶上啟用DASH](#enable-dash).)
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
@@ -1396,9 +1396,13 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 * `IOException` 當連線至Dynamic Media時發生問題時會被記錄。
 * `UnsupportedOperationException` 在 `manifestType` 傳遞的參數 `ManifestType.DASH`，而未使用DASH格式處理視訊。
 
-以下是上述API使用中寫入之servlet的範例 *HTTPWhiteBoard* 規範。
+以下是上述API使用中寫入之servlet的範例 *HTTPWhiteBoard* 規範。 選取每個索引標籤以取得程式碼語法。
 
-**在pom.xml中新增相依性**
+>[!BEGINTABS]
+
+>[!TAB 在pom.xml中新增相依性]
+
++++**在pom.xml中新增相依性**
 
 ```java
 dependency> 
@@ -1409,7 +1413,7 @@ dependency>
 </dependency> 
 ```
 
->[!BEGINTABS]
++++
 
 >[!TAB Servlet範例]
 
@@ -1650,6 +1654,19 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 +++
 
 >[!ENDTABS]
+
++++**在pom.xml中新增相依性**
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
 
 +++**Servlet範例**
 
