@@ -3,9 +3,9 @@ title: AEM GraphQL API以搭配內容片段使用
 description: 了解如何以AEM GraphQL APIas a Cloud Service使用Adobe Experience Manager(AEM)中的內容片段來傳送無頭內容。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 17b0604cb192a375c3097255812c89caa8580d5b
+source-git-commit: e156ed7348815e02c942cb8feace70c675956752
 workflow-type: tm+mt
-source-wordcount: '4173'
+source-wordcount: '4203'
 ht-degree: 1%
 
 ---
@@ -556,6 +556,10 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 ## 排序 {#sorting}
 
+>[!NOTE]
+>
+>為獲得最佳效能，請考慮 [在GraphQL篩選中更新內容片段以進行分頁和排序](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+
 此功能可讓您根據指定欄位來排序查詢結果。
 
 排序標準：
@@ -593,8 +597,6 @@ query {
 }
 ```
 
-<!-- to be included? -->
-
 您也可以使用 `nestedFragmentname.fieldname`.
 
 >[!NOTE]
@@ -620,6 +622,10 @@ query {
 ```
 
 ## 分頁 {#paging}
+
+>[!NOTE]
+>
+>為獲得最佳效能，請考慮 [在GraphQL篩選中更新內容片段以進行分頁和排序](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
 
 此功能可讓您對傳回清單的查詢類型執行分頁。 提供兩種方法：
 
