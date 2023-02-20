@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
+source-git-commit: f3d8f0a7a5c41ecca7bced1d5de9017ada422f7a
 workflow-type: tm+mt
-source-wordcount: '10318'
+source-wordcount: '10322'
 ht-degree: 4%
 
 ---
@@ -204,7 +204,7 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
   <tr>
    <td>桌面</td>
    <td>Internet Explorer 11+</td>
-   <td>在Windows® 8和Windows® 10上 — 每當請求HLS時強制使用HTTPS。 已知限制：HLS上的HTTP在此瀏覽器/作業系統組合中無法運作<br /> <br /> 在Windows® 7上 — 漸進式下載。 使用標準邏輯來選取HTTP與HTTPS通訊協定。</td>
+   <td>在Windows® 8和Windows® 10上 — 每當請求DASH或HLS時，強制使用HTTPS。 已知限制：在此瀏覽器/作業系統組合中，HTTP on DASH或HLS無法運作<br /> <br /> 在Windows® 7上 — 漸進式下載。 使用標準邏輯來選取HTTP與HTTPS通訊協定。</td>
   </tr>
   <tr>
    <td>桌面</td>
@@ -448,8 +448,7 @@ DASH(Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，在�
 1. Adobe客戶支援會根據提交請求的順序將您新增至DASH客戶等待清單。
 1. 當Adobe準備好處理您的請求時，客戶支援會聯絡您，協調並設定啟用破折號的目標日期。
 1. 客戶支援在完成後通知您。
-1. 建立 [視訊檢視器預設集](#creating-a-new-viewer-preset) 照常。
-
+1. 建立 [視訊檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) 照常。
 
 ## 將影片發佈至YouTube {#publishing-videos-to-youtube}
 
