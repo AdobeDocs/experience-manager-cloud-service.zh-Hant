@@ -4,9 +4,9 @@ description: 了解如何使用 [!DNL Experience Manager Forms]. 適用性Forms�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ ht-degree: 0%
 
 您需要下列項目才能建立最適化表單：
 
+* **為您的環境啟用適用性Forms核心元件**:如果您使用AEM原型40版或更新版本型程式，系統會為您的環境自動啟用核心元件。 若要根據舊版原型為您的AEM Formsas a Cloud Service環境啟用適用性Forms核心元件，請參閱 [為您的環境啟用適用性Forms核心元件](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
 * **最適化表單範本**:範本提供基本結構並定義最適化表單的外觀（配置和樣式）。 它具有包含特定屬性和內容結構的預格式化元件。 它還提供定義主題和提交動作的選項。 主題定義外觀和風格，並定義提交動作，以便在提交最適化表單時採取動作。 例如，將收集的資料傳送至資料來源。 雲端服務提供OOTB範本，命名為空白：
 
    * 此 `blank` 每個全新AEM Formsas a Cloud Service計畫都包含範本。

@@ -2,9 +2,9 @@
 title: 為Adobe Experience Manager Forms as a Cloud Service設定本機開發環境
 description: 為Adobe Experience Manager Forms as a Cloud Service設定本機開發環境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2974'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 您可以使用本機開發環境來執行下列動作，而不需登入雲端開發環境：
 
 * [建立表單](creating-adaptive-form.md) 和相關資產（主題、範本、自訂提交動作等）
-* [將PDF forms轉換為最適化Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
+* [將 PDF 表單轉換為調適型表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
 * 生成應用程式 [客戶通訊](aem-forms-cloud-service-communications-introduction.md) 按需或批處理模式。
 
 在本地開發實例或應用程式上準備好生成適用性表單或相關資產後 [客戶通訊] 準備就緒，您可以將適用性表單或客戶通訊應用程式從本機開發環境匯出至Cloud Service環境，以進一步測試或移至生產環境。
@@ -241,7 +241,7 @@ AEM Forms as aCloud Services提供以Docker為基礎的SDK環境，以更輕鬆�
 >[!NOTE]
 >
 > 設定AEM原型30版或更新版本型專案，以取得和使用Microsoft® Dynamics 365和Salesforce表單資料模型，並搭配AEM Formsas a Cloud Service。
-> 設定AEM Archetype 32版或更新版本型專案，以取得和使用具有AEM Formsas a Cloud Service的Tranquil、Urbane和Ultramarine主題。
+設定AEM Archetype 32版或更新版本型專案，以取得和使用具有AEM Formsas a Cloud Service的Tranquil、Urbane和Ultramarine主題。
 
 若要設定專案：
 
@@ -252,19 +252,21 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 **Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **建立 [!DNL Experience Manager Forms] as a [Cloud Service] 專案：** 建立 [!DNL Experience Manager Forms] as a [Cloud Service] 基於 [AEM原型32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) 或更新版本。 原型可協助開發人員輕鬆開始開發 [!DNL AEM Forms] as a Cloud Service。 此外也包含一些範例主題和範本，可協助您快速上手。
+1. **建立 [!DNL Experience Manager Forms] as a [Cloud Service] 專案：** 建立 [!DNL Experience Manager Forms] as a [Cloud Service] 根據最新 [AEM原型](https://github.com/adobe/aem-project-archetype) 或更新版本。 原型可協助開發人員輕鬆開始開發 [!DNL AEM Forms] as a Cloud Service。 此外也包含一些範例主題和範本，可協助您快速上手。
 
    開啟命令提示字元，然後執行以下命令以建立 [!DNL Experience Manager Forms] as a Cloud Service專案。
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y"
+   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y" includeFormsheadless="y"    
    ```
 
-   變更 `appTitle`, `appId`，和 `groupId` 以反映您的環境。
+   變更 `appTitle`, `appId`，和 `groupId` 以反映您的環境。 此外，為includeFormsenrollment、includeFormscommunications和includeFormsheadless設定值，以 `y` 或 `n` 視您的授權和需求而定。 必須使用includeFormsheadless才能根據核心元件建立最適化Forms。
 
-   * 使用 `includeFormsenrollment=y` 選項包含建立最適化Forms所需的Forms特定設定、主題、範本、核心元件和相依性。 如果您使用Forms Portal，請設定 `includeExamples=y` 選項。 將Forms Portal核心元件新增至專案。
+   * 使用 `includeFormsenrollment=y` 選項包含建立最適化Forms所需的Forms特定設定、主題、範本、核心元件和相依性。 如果您使用Forms Portal，請設定 `includeExamples=y` 選項。 此外，也將Forms Portal核心元件新增至專案。
 
    * 使用 `includeFormscommunications=y` 選項包含Forms核心元件和包含客戶通訊功能所需的相依性。
+
+   * 使用 `includeFormsheadless` 選項，新增建立無頭適用性Forms所需的成品和程式庫。
 
 1. 將專案部署至本機開發環境。 您可以使用下列命令來部署至本機開發環境
 
@@ -328,6 +330,101 @@ Dispatcher上的快取允許 [!DNL AEM Forms] 在用戶端預填適用性Forms�
 * 使用URL格式時 `http://host:port/content/forms/af/<adaptivefName>.html`，並啟用設定管理器中的「使用瀏覽器地區設定」 ，則會提供適用性表單的本地化版本（如果可用）。 本地化「適用性表單」的語言是根據為瀏覽器設定的地區（瀏覽器地區）。 這會導致 [僅快取適用性表單的第一個例項]. 若要防止問題在您的執行個體上發生，請參閱 [系統只會快取最適化表單的第一個例項](troubleshooting-caching-performance.md) 疑難排解一節。
 
 您的本地開發環境已就緒。
+
+## 為現有的AEM原型專案啟用適用性Forms核心元件 {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
+
+如果您針對AEM Formsas a Cloud Service使用AEM原型40版或更新版本型程式，核心元件會針對您的環境自動啟用。
+
+若要根據舊版原型為您的AEM Formsas a Cloud Service環境啟用適用性Forms核心元件，請在專案中內嵌WCM核心元件範例成品和Forms核心元件成品（包括範例）:
+
+1. 在純文字程式碼編輯器中開啟AEM原型專案資料夾。 例如VS程式碼。
+
+1. 在本機環境中開啟AEM原型專案的頂層.pom檔案（父pom），將下列屬性新增至檔案並儲存。
+
+   ```XML
+   <properties>
+       <core.forms.components.version>2.0.4</core.forms.components.version> <!-- Replace the version with the latest released version at https://github.com/adobe/aem-core-forms-components/tags -->
+       <core.wcm.components.version>2.21.2</core.wcm.components.version>
+   </properties>
+   ```
+
+   針對 `core.forms.components` 和 `core.wcm.components`，檢查 [核心元件檔案](https://github.com/adobe/aem-core-forms-components).
+
+1. 在頂層（父級）ppm.xml檔案的「相依性」區段中，新增下列相依性：
+
+   ```XML
+       <!-- Forms Core Component Dependencies -->
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-core</artifactId>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-apps</artifactId>
+                   <version>${core.forms.components.version}</version>
+                   <type>zip</type>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-af-core</artifactId>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-af-apps</artifactId>
+                   <version>${core.forms.components.version}</version>
+                   <type>zip</type>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-examples-apps</artifactId>
+                   <type>zip</type>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-examples-content</artifactId>
+                   <type>zip</type>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+       <!-- End of AEM Forms Core Component Dependencies -->
+   ```
+
+1. 開啟all/pom.xml檔案並新增下列相依性，將適用性Forms核心元件成品新增至AEM原型專案：
+
+   ```XML
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-af-apps</artifactId>
+           <type>zip</type>
+       </dependency>
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-examples-apps</artifactId>
+           <type>zip</type>
+       </dependency>
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-examples-content</artifactId>
+           <type>zip</type>
+       </dependency>
+   ```
+
+   >[!NOTE]
+   確認專案中未包含下列適用性Forms核心元件成品。
+   `<dependency>`
+   `<groupId>com.adobe.aem</groupId>`
+   `<artifactId>core-forms-components-apps</artifactId>`
+   `</dependency>`
+   和
+   `<dependency>`
+   `<groupId>com.adobe.aem</groupId>`
+   `<artifactId>core-forms-components-core</artifactId>`
+   `</dependency>`
+
+1. [執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). 成功執行管道後，您的環境即會啟用適用性Forms核心元件。 此外，適用性Forms（核心元件）範本和畫布主題已新增至您的Formsas a Cloud Service環境。
+
 
 ## 升級您的本機開發環境 {#upgrade-your-local-development-environment}
 
