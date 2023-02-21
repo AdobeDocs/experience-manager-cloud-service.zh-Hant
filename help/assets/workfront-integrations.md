@@ -4,9 +4,9 @@ description: 介紹 [!DNL Assets] 和 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 269dff32b41dba86fb048418da3f3b3ef8a6781e
+source-git-commit: 1631ec4b7174c9d98747fe290e21db3839777fcb
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1224'
 ht-degree: 3%
 
 ---
@@ -50,7 +50,7 @@ Adobe選件至 [整合 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Asset
 
 | 功能 | 說明 | [!DNL Workfront] 和 [!DNL Assets Essentials] *無連接器(OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *需要連接器* | Workfront和 [!DNL Experience Manager as a Cloud Service] *無連接器(OOTB)* |
 |----|----|----|-----|-----|
-| 部署方法 | 適合 [!DNL Assets] 提供。 | Assets Essentials | Cloud Service, Adobe Managed Services，內部部署 | 雲端服務 |
+| 部署方法 | 適合 [!DNL Assets] 提供。 | Assets Essentials | Adobe Managed Services，內部部署 | 雲端服務 |
 | **一般** |
 | 從 [!DNL Workfront] to [!DNL Assets] | WF文檔的最新版本可以上載到AEM Assets，該文檔將作為新版本連結。 | ✓ | ✓ | ✓ |
 | 手動將AEM資料夾連結至Workfront物件 | 現有的AEM資料夾可以連結為Workfront資料夾，其子資產可以連結為新的Workfront檔案。 | ✓ | ✓ | ✓ |
