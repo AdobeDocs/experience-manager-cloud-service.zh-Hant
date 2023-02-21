@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 41e17fdae57244d83c8ee715326a0ee41488ba60
+source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 7%
@@ -274,7 +274,7 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
    <td><code>keyframe</code></td>
    <td>關鍵幀之間的幀的目標數量。 計算此值，以便每2-10秒生成一個關鍵幀。 例如，在每秒30幀時，關鍵幀間隔為60-300。<br /> <br /> 較低的關鍵幀間隔可改善最適化視頻編碼的資料流搜索和資料流切換行為，還可以改善具有大量運動的視頻的質量。 但是，由於關鍵幀會增加檔案的大小，因此較低的關鍵幀間隔通常會導致以指定位元速率顯示的整體視頻質量較低。</td>
    <td><code>String</code></td>
-   <td><p>正數。</p> <p>預設為300。</p> <p>HLS或DASH（最適化串流）的建議值為60-90。 (若要使用DASH，您的影片必須先由帳戶上的Adobe技術支援啟用。 請參閱 <a href="/help/assets/dynamic-media/video.md#enable-dash">在您的帳戶上啟用DASH</a>.)</p> </td>
+   <td><p>正數。</p> <p>預設為300。</p> <p>HLS或DASH（最適化串流）的建議值為60-90。 (若要對您的影片使用DASH，必須先由您的帳戶上的Adobe技術支援啟用。 請參閱 <a href="/help/assets/dynamic-media/video.md#enable-dash">在您的帳戶上啟用DASH</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
