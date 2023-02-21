@@ -1,7 +1,7 @@
 ---
 title: 最佳化GraphQL查詢
 description: 了解如何在Adobe Experience Manager as a Cloud Service中篩選、分頁及排序內容片段以傳送無頭式內容時，最佳化您的GraphQL查詢。
-source-git-commit: e156ed7348815e02c942cb8feace70c675956752
+source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->套用這些最佳化建議前，請考慮 [在GraphQL篩選中更新內容片段以進行分頁和排序](/help/headless/graphql-api/graphql-paging-sorting-content-update.md) 以獲得最佳效能。
+>套用這些最佳化建議前，請考慮 [在GraphQL篩選中更新內容片段以進行分頁和排序](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) 以獲得最佳效能。
 
 在具有大量共用相同模型的內容片段的AEM例項上，GraphQL清單查詢可能會變得昂貴（就資源而言）。
 
