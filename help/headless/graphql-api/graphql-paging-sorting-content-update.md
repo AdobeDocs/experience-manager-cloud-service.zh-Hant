@@ -1,7 +1,7 @@
 ---
 title: 更新內容片段以進行分頁和排序
 description: 了解如何在Adobe Experience Manager as a Cloud Service中更新內容片段以進行無頭式內容傳送，以進行分頁和排序。
-source-git-commit: 130f653a1b0db55ea6d49a87be1215001223bf78
+source-git-commit: d12e2c3c23b5c0eebe35038c6c461c7f05dedc55
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 6%
@@ -32,7 +32,7 @@ ht-degree: 6%
 
    可用的變數包括：
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
