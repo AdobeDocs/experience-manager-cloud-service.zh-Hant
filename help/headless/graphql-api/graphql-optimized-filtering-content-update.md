@@ -1,7 +1,7 @@
 ---
 title: 更新內容片段以最佳化GraphQL篩選
 description: 了解如何更新內容片段，以便在Adobe Experience Manager as a Cloud Service中最佳化GraphQL篩選以傳送無頭式內容。
-source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
+source-git-commit: 7c6dcf4548972740803d64e21a74e885caf8b487
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 6%
@@ -158,7 +158,7 @@ ht-degree: 6%
 
    執行更新程式後，重設雲端環境變數 `CF_MIGRATION_ENABLED` 為「0」，以觸發所有豆莢的回收。
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
