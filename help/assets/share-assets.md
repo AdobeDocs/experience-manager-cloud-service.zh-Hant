@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 86bf6ba711740bd4c39070c2fa600d23f201ee7e
+source-git-commit: 0d4db4fc19180cff5e15d58c4506933597ca7cce
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1292'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 * [以連結形式共用](#sharelink).
 * [下載資產](/help/assets/download-assets-from-aem.md) 和分享。
 * 共用使用 [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
-* 共用使用 [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
+* 共用使用 [[!DNL Adobe Asset Link]](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html).
 * 共用使用 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
 ## 以連結方式共用資產 {#sharelink}
@@ -245,7 +245,7 @@ Adobe資產連結可簡化創意人員與行銷人員在內容建立程式中的
 ## 最佳實務和疑難排解 {#bestpractices}
 
 * 資產資料夾或名稱中包含空白字元的集合可能無法共用。
-* 如果使用者無法下載共用資產，請洽詢您的Experience Manager管理員 [下載限制](#maxdatasize) 。
+* 如果使用者無法下載共用資產，請洽詢您的Experience Manager管理員下載限制。 預設值為100 MB。
 * 若要讓使用者預覽使用連結共用共用的視訊，視訊必須有靜態視訊轉譯，位於 `/jcr:content/renditions` 位於存放庫中視訊的節點。 預覽不取決於 [!DNL Dynamic Media] 轉譯。
 * 透過連結共用下載視訊資產時， [!DNL Dynamic Media] 下載的封存中不包含轉譯。
 
