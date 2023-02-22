@@ -2,9 +2,9 @@
 title: 為Adobe Experience Manager Forms as a Cloud Service設定本機開發環境
 description: 為Adobe Experience Manager Forms as a Cloud Service設定本機開發環境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
+source-git-commit: 55a53f23ee81877bd3a6ba3b9b0a1c3c98edb764
 workflow-type: tm+mt
-source-wordcount: '2974'
+source-wordcount: '2960'
 ht-degree: 2%
 
 ---
@@ -257,7 +257,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    開啟命令提示字元，然後執行以下命令以建立 [!DNL Experience Manager Forms] as a Cloud Service專案。
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y" includeFormsheadless="y"    
+   mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=40 -D aemVersion="cloud" -D appTitle="Borgo AEM Forms" -D appId="bgaemforms" -D groupId="com.bgaemforms" -D includeFormsenrollment="y" -D includeFormscommunications="y" -D includeExamples="y" -D 
    ```
 
    變更 `appTitle`, `appId`，和 `groupId` 以反映您的環境。 此外，為includeFormsenrollment、includeFormscommunications和includeFormsheadless設定值，以 `y` 或 `n` 視您的授權和需求而定。 必須使用includeFormsheadless才能根據核心元件建立最適化Forms。
@@ -265,8 +265,6 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    * 使用 `includeFormsenrollment=y` 選項包含建立最適化Forms所需的Forms特定設定、主題、範本、核心元件和相依性。 如果您使用Forms Portal，請設定 `includeExamples=y` 選項。 此外，也將Forms Portal核心元件新增至專案。
 
    * 使用 `includeFormscommunications=y` 選項包含Forms核心元件和包含客戶通訊功能所需的相依性。
-
-   * 使用 `includeFormsheadless` 選項，新增建立無頭適用性Forms所需的成品和程式庫。
 
 1. 將專案部署至本機開發環境。 您可以使用下列命令來部署至本機開發環境
 
