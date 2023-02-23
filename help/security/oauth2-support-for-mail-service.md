@@ -2,8 +2,8 @@
 title: 郵件服務的 OAuth2 支援
 description: Adobe Experience Manager as a Cloud Service 對郵件服務的 Oauth2 支援
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 0d0b137dfca0a91f02ff8358747f59ec7530cae5
-workflow-type: ht
+source-git-commit: 9f9c1c45b27e249e7051af1fe5eea7580aceab15
+workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 100%
 
@@ -29,11 +29,14 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 1. 前往新建的應用程式，然後選取「**API 權限**」
 1. 移至「**新增權限** - **Graph 權限** - **委派的權限**」
 1. 為您的應用程式選取以下權限，然後按一下「**新增權限**」：
-   * `SMTP.Send`
-   * `Mail.Read`
-   * `Mail.Send`
+   * `https://graph.microsoft.com/SMTP.Send`
+   * `https://graph.microsoft.com/Mail.Read`
+   * `https://graph.microsoft.com/Mail.Send`
+   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
+   * `email`
+   * `profile`
 1. 移至「**驗證** - **新增平台** - **Web**」，並且在「**重新島向 URL**」區段，新增以下 URL - 一個有正斜線，一個沒有正斜線：
    * `http://localhost/`
    * `http://localhost`
@@ -55,7 +58,7 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 
 您可以按照以下步驟執行此操作：
 
-1. 取代 `clientID` 和 `tenantID` 後在瀏覽器中開啟如下 URL，並使用特定於您帳戶的值：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize?client_id=<clientId>&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https%3A%2F%2Foutlook.office365.com%2FSMTP.Send%20EWS.AccessAsUser.All%20https%3A%2F%2Foutlook.office365.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office365.com%2FMail.Read%20https%3A%2F%2Foutlook.office365.com%2FMail.Send%20openid%20offline_access&state=12345`
+1. 取代 `clientID` 和 `tenantID` 後在瀏覽器中開啟如下 URL，並使用特定於您帳戶的值：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize?client_id=<clientId>&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access&state=12345`
 1. 詢問時允許權限
 1. 該 URL 將重新導向到一個新位置，以此格式建構：`http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
 1. 複製上例中`<code>` 的值
@@ -66,7 +69,7 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_5vR5dAQAAALDXP9gOAAAAwIpkkQEAAACT2T_YDgAAAA' \
    --data-urlencode 'client_id=<clientID>' \
-   --data-urlencode 'scope=https://outlook.office365.com/SMTP.Send https://outlook.office365.com/Mail.Read https://outlook.office365.com/Mail.Send openid' \
+   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=authorization_code' \
    --data-urlencode 'client_secret=<clientSecret>' \
@@ -86,7 +89,7 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_IezHLAQAAAPeNSdgOAAAA' \
    --data-urlencode 'client_id=<client_id>' \
-   --data-urlencode 'scope=https://outlook.office365.com/SMTP.Send https://outlook.office365.com/Mail.Read https://outlook.office365.com/Mail.Send openid' \
+   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=refresh_token' \
    --data-urlencode 'client_secret=<client_secret>' \
@@ -113,6 +116,7 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
           "scope1",
           "scope2"
        ],
+       authCodeRedirectUrl: "http://localhost",
        refreshUrl: "<Refresh token Url>",
        refreshToken: "$[secret:SECRET_SMTP_OAUTH_REFRESH_TOKEN]"
    }
@@ -120,11 +124,14 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 
 1. 填寫 `authUrl`、`tokenUrl` 和 `refreshURL`，並按照上一節中的描述建構它們。
 1. 將以下範圍新增到設定中：
+   * `https://graph.microsoft.com/SMTP.Send`
+   * `https://graph.microsoft.com/Mail.Read`
+   * `https://graph.microsoft.com/Mail.Send`
+   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
-   * `https://outlook.office365.com/Mail.Send`
-   * `https://outlook.office365.com/Mail.Read`
-   * `https://outlook.office365.com/SMTP.Send`
+   * `email`
+   * `profile`
 1. 建立 OSGI 屬性檔案 `called com.day.cq.mailer.DefaultMailService.cfg.json`
 (在 
 `/apps/<my-project>/osgiconfig/config` 下)，並使用下列語法：
