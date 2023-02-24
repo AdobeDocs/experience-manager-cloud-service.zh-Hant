@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '10066'
+source-wordcount: '10103'
 ht-degree: 4%
 
 ---
@@ -245,7 +245,7 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
   <tr>
    <td>行動</td>
    <td>Chrome(iOS)</td>
-   <td>HLS或DASH*自適應流</td>
+   <td>HLS自適應串流</td>
   </tr>
  </tbody>
 </table>
@@ -414,7 +414,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
 ### 在您的帳戶上啟用DASH {#enable-dash}
 
-DASH(Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，在不同的視訊觀看者中廣泛採用。 啟用「破折號」時，您可以選擇HLS或DASH以進行最適化視訊串流。 您也可以選擇兩者，並自動切換播放器。
+DASH(Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，在不同的視訊觀看者中廣泛採用。 在帳戶上啟用「破折號」時，您可以選擇使用「破折號」或HLS進行最適化視訊串流。 或者，您可以選擇兩者，並在 **[!UICONTROL 自動]** 在檢視器預設集中，已選取為播放類型。
 
 在您的帳戶上啟用DASH的一些主要優點包括：
 
@@ -425,13 +425,13 @@ DASH(Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，在�
 * 有助於讓客戶更容易存取視訊傳送。
 * 也可透過API取得串流URL。
 
+   >[!IMPORTANT]
+   >
+   >目前僅在北美提供對您帳戶啟用DASH的功能。
+
 您可以啟動使用DASH的請求；不會在您的帳戶上自動啟用。
 
->[!IMPORTANT]
->
->目前僅在北美提供對您帳戶啟用DASH的功能。
-
-建立支援案例，如下所述。 在您的支援案例中，請務必提及您要在帳戶上啟用DASH。
+若要在您的帳戶上啟用DASH，請建立客戶支援案例，如下所述。 在您的支援案例中，請指定您要在Dynamic Media帳戶和Experience Manager上啟用DASH。
 
 **要啟用帳戶上的DASH，請執行以下操作：**
 
@@ -439,7 +439,8 @@ DASH(Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，在�
 1. 請依照指示建立支援案例，同時確保您提供下列資訊：
 
    * 主要聯繫人姓名、電子郵件、電話。
-   * 您想在Dynamic Media帳戶上啟用DASH。
+   * 您的Dynamic Media帳戶名稱。
+   * 指定您要在Dynamic Media帳戶和Experience Manager上啟用DASH。
 
 1. Adobe客戶支援會根據提交請求的順序將您新增至DASH客戶等待清單。
 1. 當Adobe準備好處理您的請求時，客戶支援會聯絡您，協調並設定啟用破折號的目標日期。

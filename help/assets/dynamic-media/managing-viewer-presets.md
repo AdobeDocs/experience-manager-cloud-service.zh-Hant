@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '4369'
+source-wordcount: '4382'
 ht-degree: 8%
 
 ---
@@ -442,8 +442,8 @@ Experience Manager從檢視資產時，會顯示各種檢視器預設集 **[!UIC
 1. 在「檢視器預設集編輯器」頁面上，選取 **[!UICONTROL 行為]** 標籤。 或者，您也可以在檢視器中選取任何視覺元素，以選取它進行設定。
 例如，對於 *VideoPlayer* 類型，在 **[!UICONTROL 修飾元]** > **[!UICONTROL 播放]**，您可以從三個最適化串流選項之一中選取：
 
-   * **[!UICONTROL 破折號]**  — 視訊僅以破折號形式串流。
-   * **[!UICONTROL hls]**  — 視訊資料流僅限hls。
+   * **[!UICONTROL 破折號]**  — 視訊僅以DASH形式串流。 不過，在Safari/iOS裝置上，您必須選取 **[!UICONTROL hls]** 作為類型。
+   * **[!UICONTROL hls]**  — 視訊僅作為HLS串流。
    * **[!UICONTROL 自動]**  — 最佳實務。 DASH和HLS資料流的建立已經過儲存優化。 因此，Adobe建議您一律選取 **[!UICONTROL 自動]** 作為播放類型。 視訊以破折號、hls或漸進式方式串流，如下所示：
       * 如果瀏覽器支援DASH，則首先使用DASH串流。
       * 如果瀏覽器不支援DASH，則使用HLS串流，第二。
@@ -578,7 +578,7 @@ Experience Manager從檢視資產時，會顯示各種檢視器預設集 **[!UIC
 1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側邊欄中，選取 **[!UICONTROL 工具]** （錘子表徵圖）> **[!UICONTROL 資產]** > **[!UICONTROL 檢視器預設集]**.
 1. 勾選檢視器預設集標題左側的方塊，以選取預設集。
 1. 在工具列上，選取 **[!UICONTROL 編輯]**.
-1. 在 **[!UICONTROL 檢視器預設集編輯器]** 頁面，使用在 **[!UICONTROL 外觀]** 和 **[!UICONTROL 行為]** 頁簽。
+1. 在 **[!UICONTROL 檢視器預設集編輯器]** 頁面，使用在 **[!UICONTROL 外觀]** 和 **[!UICONTROL 行為]** 標籤。
 
    從 **[!UICONTROL 外觀]** 頁簽，在「查看器預設集編輯器」頁的左上角附近，選擇 **[!UICONTROL 案頭]**, **[!UICONTROL 平板電腦]**，或 **[!UICONTROL 電話]** 來更改資產的演示模式。
 
