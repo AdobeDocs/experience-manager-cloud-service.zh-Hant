@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
+source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 3%
+source-wordcount: '1816'
+ht-degree: 5%
 
 ---
 
@@ -28,6 +28,21 @@ ht-degree: 3%
 * 此服務僅協助將內容從 [!DNL AEM Forms] 在OSGi環境上。 將內容從 [!DNL AEM Forms] 不支援在JEE上傳送至Cloud Service環境。
 
 * (僅適用於AEM 6.3 Forms或升級至AEM 6.4 Forms或AEM 6.5 Forms的舊版環境)不支援以AEM 6.3 Forms或舊版中可用的現成可用範本和主題為基礎的適用性Forms [!DNL AEM Forms] as a Cloud Service。
+
+* 驗證步驟無法使用。先移除現有適用性Forms中的驗證步驟，再將這類表單移至Cloud Service環境。
+
+* 適用性Forms的簽名步驟無法使用。 從現有的最適化表單移除簽名步驟。設定最適化表單以使用瀏覽器內簽名體驗。它會顯示 Adobe Sign 合約，以便在提交最適化表單時於瀏覽器中簽署合約。瀏覽器內簽名體驗有助於提供更快的簽名體驗，為簽署者節省寶貴時間。
+
+## 與AEM 6.5 Forms的差異
+
+| 功能 | 與AEM 6.5 Forms的差異 |
+|--------------|-----------|
+| HTML5 Forms(行動Forms) | 此服務不支援HTML5 Forms(行動Forms)。 如果您將XDP型表單轉譯為HTML5 Forms，則可繼續使用AEM 6.5 Forms上的功能。 |
+| 調適型表單 | <li><b>基於XSD的適用性Forms:</b> 此服務不支援HTML5 Forms(行動Forms)。 如果您將XDP型表單轉譯為HTML5 Forms，則可繼續使用AEM 6.5 Forms上的功能。 </li> <li><b> 適用性表單範本：</b> 使用程式的建置管道和對應的Git存放庫，以匯入現有的最適化表單範本。 </li><li><b>規則編輯器：</b> AEM Formsas a Cloud Service [規則編輯器](rule-editor.md#visual-rule-editor). Forms as a Cloud Service上無法使用程式碼編輯器。 移轉公用程式可協助您移轉具有自訂規則的表單（在程式碼編輯器中建立）。 此公用程式會將這些規則轉換為Forms as a Cloud Service上支援的自訂函式。 您可以使用可重複使用的函式搭配規則編輯器，繼續取得使用規則指令碼取得的結果。 `onSubmitError` 或 `onSubmitSuccess` 函式現在可作為規則編輯器中的動作使用。 </li> <li><b>草稿和提交：</b> 服務不會保留草稿和已提交適用性Forms的中繼資料。 </li> <li><b> 預填服務：</b> 預設情況下，預填服務會合併用戶端上的適用性表單資料，而非合併AEM 6.5 Forms中的伺服器上的資料。 此功能有助於縮短預填最適化表單的所需時間。 您一律可以設定在Adobe Experience Manager Forms伺服器上執行合併動作。 </li><li><b>提交操作：</b> 此 **以電子郵件方式PDF** 無法使用動作。 此 **電子郵件** 「提交」操作提供了發送附件和附加「記錄文檔(DoR)」和電子郵件的選項。 </li> |
+| 表單資料模型 | <li>Forms資料模型僅支援HTTP和HTTP端點來提交資料。 </li><li>Formsas a Cloud Service允許將Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive和支援一般CRUD（建立、讀取、更新和刪除）操作的服務用作資料儲存。 此服務不支援JDBC連接器、Mutual SSL for Rest連接器，以及x509憑證式SOAP資料來源驗證。 </li> |
+| automated forms conversion服務 | 服務不提供Automated forms conversion服務的元模型。 您可以 [從Automated forms conversion服務檔案下載](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model). |
+| 設定 | <li>依預設，電子郵件僅支援HTTP和HTTP通訊協定。 [聯絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 啟用用於發送電子郵件的埠，並為您的環境啟用SMTP協定。 </li> <li>如果您使用自訂套件組合，請先使用最新版的adobe-aemfd-docmanager重新編譯程式碼，再將這些套件組合與Forms as a Cloud Service搭配使用。</li> |
+| 文檔操作API（組合器服務） | 該服務不支援依賴於其他服務或應用程式的操作： <li>不支援將非PDF格式的文檔轉換為PDF格式。 例如，不支援Microsoft Word至PDF、不支援Microsoft Excel至PDF、不支援HTML至PDF</li><li>Adobe不支援以Distiller為基礎的轉換。 例如，將PostScript(PS)PDF</li><li>Forms不支援以服務為基礎的轉換。 例如，從XDP轉換為PDF forms。</li><li>此服務不支援將已簽名的PDF或透明PDF轉換為其他PDF格式。</li> |
 
 ## 必備條件 {#prerequisites}
 
