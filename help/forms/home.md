@@ -3,9 +3,9 @@ title: 簡介 [!DNL AEM Forms] as a Cloud Service
 description: 探索 AEM Forms 並了解此表單如何幫助您製作業務適用的文件和表單內容。 了解關於 Platform-as-a-Service (PaaS)，以及如何管理企業級數位表單和業務流程，以及連接表單至現有的資料來源。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
+source-git-commit: f8e229820bb7aef3923e955c928033ef7d3d9460
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1108'
 ht-degree: 5%
 
 ---
@@ -18,32 +18,45 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 提供雲端原生的Pl
 
 組織可使用 [!DNL AEM Forms] as a Cloud Service於建立數位表單，將表單連結至現有的資料來源，將表單與 [!DNL Adobe Sign] 向表單添加電子簽名，並生成記錄文檔(DoR)以將提交的表單存檔為PDF檔案。 組織也可以使用服務將其現有PDF forms轉換為數位表單。
 
-組織可使用 [!DNL AEM Forms] as a Cloud Service，無需任何本地基礎架構，即可在雲中獲取所有這些功能。 此服務還使組織從複雜的升級週期中解脫出來，因為它始終具有最新的功能。 若要進一步了解此服務，請參閱：
+組織可使用 [!DNL AEM Forms] as a Cloud Service，無需任何本地基礎架構，即可在雲中獲取所有這些功能。 此服務還使組織從複雜的升級週期中解脫出來，因為它始終具有最新的功能。
 
 ## 重要功能 {#key-features}
 
-
+<!-- 
 >[!BEGINTABS]
 
->[!TAB 調適型表單]
+>[!TAB Adaptive Forms]
 
-適用性Forms可讓企業針對其網站和其他數位通道建立和管理互動式、資料導向的表單，而無需回應式、適合行動裝置的表單。 </br> </br> AEM中的適用性Forms也包含拖放表單產生器，可讓非技術使用者使用預先建立的表單元件（例如文字方塊、下拉式功能表和日期挑選器）輕鬆建立和自訂表單。 這樣可加快表單建立速度，並且無需進行大量的編碼和開發。 </br> </br> 此外，AEM Adaptive Forms還提供其他幾項功能，包括： <ul><li>傳送、核准和提交表單資料的進階工作流程即時驗證和錯誤檢查，以確保資料正確無誤 </li><li>與協力廠商資料來源和API整合，以預先填寫表單欄位或驗證資料 </li><li>追蹤表單使用量、轉換率和其他關鍵量度的進階分析和報表功能 </li><li>與Adobe Sign和DocuSign整合以進行電子簽名 </li>
+Adaptive Forms allows businesses to create and manage interactive, data-driven forms for their websites and other digital channels responsive, mobile-friendly forms without. </br> </br> Adaptive Forms in AEM also include a drag-and-drop form builder, which enables non-technical users to easily create and customize forms using pre-built form components such as text boxes, dropdown menus, and date pickers. This enables faster form creation and eliminates the need for extensive coding and development. </br> </br> In addition, AEM Adaptive Forms offer several other features, including: <ul><li>Advanced workflows for routing, approval, and submission of form data Real-time validation and error checking to ensure data accuracy </li><li>Integration with third-party data sources and APIs for pre-filling form fields or validating data </li><li>Advanced analytics and reporting capabilities to track form usage, conversion rates, and other key metrics </li><li>Integration with Adobe Sign and DocuSign for e-signatures </li>
 
->[!TAB automated forms conversion服務]
+>[!TAB Automated Forms Conversion Service]
 
-automated forms conversion服務可讓企業將舊式以PDF為基礎的表單轉換為互動式數位表單，以便線上輕鬆管理和分發。 此服務的好處： <ul><li>無須手動將列印表單轉換為最適化表單.</li><li>在轉換過程中應用模式和適當的驗證</li><li>在轉換過程中生成記錄文件 </li><li>將常出現的欄位分組為可重複使用的表單片段 </li> <li>在轉換過程中啟用 Adobe Analytics</li>
+Automated Forms Conversion Service allows businesses to convert legacy PDF-based forms into interactive, digital forms that can be easily managed and distributed online. The service helps: <ul><li>Save manual effort required to convert print forms to adaptive forms.</li><li>Applies patterns and appropriate validations during conversion</li><li>Generate Document of Record during conversion </li><li>Group commonly occurring fields into reusable form fragments </li> <li>Enables Adobe Analytics during conversion</li>
 
->[!TAB 通訊API（檔案服務）]
+>[!TAB Communications API (Document Services)]
 
-通信API是一組RESTful API（應用程式寫程式介面），使企業能夠自動建立、管理和提供個人化、資料驅動的通信。 </br> </br> 這些API也可讓企業將其通訊工作流程與協力廠商系統和資料來源整合，以便建立由特定事件或使用者行為所觸發、目標明確且個人化的訊息。 AEM Forms Communications API的部分主要功能包括：<ul><li> 動態內容傳送：API可讓企業建立並提供動態內容，這些內容會根據個別使用者的偏好、行為和過去與企業的互動而量身打造。</li> <li>個人化訊息：API可讓企業透過包含使用者專屬資料（例如名稱、位址和購買歷史記錄）來個人化其通訊。</li><li>與後端系統整合：API可與廣泛的後端系統整合，包括CRM、資料庫和行銷自動化平台。</li><li> 生成完美像素PDF文檔：API可產生像素級最佳化的PDF檔案，這些檔案會以使用者專屬的資料和內容加以自訂。 此功能使企業能夠建立以PDF格式向用戶交付的高度專業化和精良的文檔，如發票、合同和對帳單。
+Communications APIs are a set of RESTful APIs (Application Programming Interfaces) that enable businesses to automate the creation, management, and delivery of personalized, data-driven communications. </br> </br> These APIs also enable businesses to integrate their communications workflows with third-party systems and data sources, allowing them to create highly targeted and personalized messages that are triggered by specific events or user behaviors. Some key features of AEM Forms Communications APIs include:<ul><li> Dynamic content delivery: The APIs allow businesses to create and deliver dynamic content that is tailored to individual users based on their preferences, behaviors, and past interactions with the business.</li> <li>Personalized messaging: The APIs enable businesses to personalize their communications by including user-specific data such as names, addresses, and purchase history.</li><li>Integration with back-end systems: The APIs can be integrated with a wide range of back-end systems, including CRMs, databases, and marketing automation platforms.</li><li> Generate Pixel Perfect PDF documents: The APIs generate pixel-perfect PDF documents that are customized with user-specific data and content. This feature enables businesses to create highly professional and polished documents, such as invoices, contracts, and statements, that are delivered to users in PDF format.
 
->[!TAB 進階分析]
+>[!TAB Advanced Analytics]
 
-此服務提供OOTB支援以連線Adobe Analytics。 將表單與Adobe Analytics連結可為企業帶來數項好處，包括： <ul><li> 改善對使用者行為的了解：透過將表單與Adobe Analytics連結，企業可更深入了解使用者與表單的互動方式。 這包括對使用者參與度、轉換率、流失點和其他關鍵量度的深入分析，這些量度可協助企業找出需要改善的領域，並最佳化其表單以提供更佳的使用者體驗。 </li><li>更好地鎖定行銷工作：透過分析使用者在表單上的行為，企業可獲得關於使用者偏好和興趣的寶貴見解。 這些資訊可用來更有效地鎖定行銷工作，並建立更有效的行銷活動，以促進參與和轉換。 </li><li> 降低錯誤率：將表單與Adobe Analytics整合後，您就能找到關於欄位的深入分析，發現大部分錯誤並改善資料品質，進而提供更佳的決策和更精確的分析。 </li><li> 提高ROI:透過根據Adobe Analytics的深入分析來最佳化表單，企業可以改善轉換率，並從數位管道創造更多收入。 這可以為營銷和數字計畫帶來更高的投資回報(ROI)，幫助企業實現其目標並推動增長。</li>
+The service provides OOTB support to connect with Adobe Analytics. Connecting forms with Adobe Analytics provides several benefits for businesses, including: <ul><li> Improved understanding of user behavior: By connecting forms with Adobe Analytics, businesses can gain a deeper understanding of how users are interacting with their forms. This includes insights into user engagement, conversion rates, drop-off points, and other key metrics that can help businesses identify areas for improvement and optimize their forms for better user experiences. </li><li>Better targeting of marketing efforts: By analyzing user behavior on forms, businesses can gain valuable insights into user preferences and interests. This information can be used to better target marketing efforts and create more effective campaigns that drive engagement and conversions. </li><li> Reduced error rate: By integrating forms with Adobe Analytics, you can find insights about field with most errors and improve data quality, leading to better decision-making and more accurate insights. </li><li> Improved ROI: By optimizing forms based on insights gained from Adobe Analytics, businesses can improve conversion rates and drive more revenue from their digital channels. This can lead to a higher return on investment (ROI) for marketing and digital initiatives, helping businesses to achieve their goals and drive growth.</li>
 
 
->[!ENDTABS]
+>[!ENDTABS] -->
 
+| 調適型表單 | automated forms conversion服務 | 通訊 API | Forms Analytics |
+|---|---|---|---|
+| 適用性Forms可讓企業為其網站和其他數位通道建立和管理互動式、資料導向的表單，以回應式、適合行動裝置的表單。 | automated forms conversion服務可讓企業將舊式以PDF為基礎的表單轉換為互動式數位表單，以便線上輕鬆管理和分發。 | 通信API是一組RESTful API（應用程式寫程式介面），使企業能夠自動建立、管理和提供個人化、資料驅動的通信。 | 此服務提供OOTB支援以連線Adobe Analytics。 將表單與Adobe Analytics連結可為企業帶來數項好處，包括改善對使用者行為的了解、更有針對性地鎖定行銷工作、減少錯誤狀態、改善投資報酬率。 |
+
+<!--
+| | |
+|---|---|
+| Adaptive Forms | Adaptive Forms allows businesses to create and manage interactive, data-driven forms for their websites and other digital channels responsive, mobile-friendly forms without. </br> </br> Adaptive Forms in AEM also include a drag-and-drop form builder, which enables non-technical users to easily create and customize forms using pre-built form components such as text boxes, dropdown menus, and date pickers. This enables faster form creation and eliminates the need for extensive coding and development. </br> </br> In addition, AEM Adaptive Forms offer several other features, including: <ul><li>Advanced workflows for routing, approval, and submission of form data Real-time validation and error checking to ensure data accuracy </li><li>Integration with third-party data sources and APIs for pre-filling form fields or validating data </li><li>Advanced analytics and reporting capabilities to track form usage, conversion rates, and other key metrics </li><li>Integration with Adobe Sign and DocuSign for e-signatures </li>|
+| Automated Forms Conversion Service | Automated Forms Conversion Service allows businesses to convert legacy PDF-based forms into interactive, digital forms that can be easily managed and distributed online. The service helps: <ul><li>Save manual effort required to convert print forms to adaptive forms.</li><li>Applies patterns and appropriate validations during conversion</li><li>Generate Document of Record during conversion </li><li>Group commonly occurring fields into reusable form fragments </li> <li>Enables Adobe Analytics during conversion</li>|
+| Communications API (Document Services) | Communications APIs are a set of RESTful APIs (Application Programming Interfaces) that enable businesses to automate the creation, management, and delivery of personalized, data-driven communications. </br> </br> These APIs also enable businesses to integrate their communications workflows with third-party systems and data sources, allowing them to create highly targeted and personalized messages that are triggered by specific events or user behaviors. Some key features of AEM Forms Communications APIs include:<ul><li> Dynamic content delivery: The APIs allow businesses to create and deliver dynamic content that is tailored to individual users based on their preferences, behaviors, and past interactions with the business.</li> <li>Personalized messaging: The APIs enable businesses to personalize their communications by including user-specific data such as names, addresses, and purchase history.</li><li>Integration with back-end systems: The APIs can be integrated with a wide range of back-end systems, including CRMs, databases, and marketing automation platforms.</li><li> Generate Pixel Perfect PDF documents: The APIs generate pixel-perfect PDF documents that are customized with user-specific data and content. This feature enables businesses to create highly professional and polished documents, such as invoices, contracts, and statements, that are delivered to users in PDF format.|
+|Advanced Analytics| The service provides OOTB support to connect with Adobe Analytics. Connecting forms with Adobe Analytics provides several benefits for businesses, including: <ul><li> Improved understanding of user behavior: By connecting forms with Adobe Analytics, businesses can gain a deeper understanding of how users are interacting with their forms. This includes insights into user engagement, conversion rates, drop-off points, and other key metrics that can help businesses identify areas for improvement and optimize their forms for better user experiences. </li><li>Better targeting of marketing efforts: By analyzing user behavior on forms, businesses can gain valuable insights into user preferences and interests. This information can be used to better target marketing efforts and create more effective campaigns that drive engagement and conversions. </li><li> Reduced error rate: By integrating forms with Adobe Analytics, you can find insights about field with most errors and improve data quality, leading to better decision-making and more accurate insights. </li><li> Improved ROI: By optimizing forms based on insights gained from Adobe Analytics, businesses can improve conversion rates and drive more revenue from their digital channels. This can lead to a higher return on investment (ROI) for marketing and digital initiatives, helping businesses to achieve their goals and drive growth.</li>|
+
+-->
 
 ## 最新創新 {#latest-innovations}
 
@@ -157,6 +170,7 @@ Overall, AEM Adaptive Forms provide businesses with a powerful tool for creating
 | Acroform-based Document of Record | &#x2611; | &#x2611; | 
 | Government ID based identity authentication for Adobe Sign enabled Adaptive Forms | &#x2611; | &#x2611; | 
 | Document Security | &#x2612; | &#x2611; |
+
 
 * [Notable changes in comparison to AEM 6.5 Forms](notable-changes.md)
 * [Frequently asked questions](faq.md)
