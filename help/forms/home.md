@@ -3,10 +3,10 @@ title: 簡介 [!DNL AEM Forms] as a Cloud Service
 description: 探索 AEM Forms 並了解此表單如何幫助您製作業務適用的文件和表單內容。 了解關於 Platform-as-a-Service (PaaS)，以及如何管理企業級數位表單和業務流程，以及連接表單至現有的資料來源。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 95e1981faf9532aa56cc8a2e18166d08f35ecf29
+source-git-commit: e28eb4340f9beb2d350620d635dc00de11c6e32b
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 4%
+source-wordcount: '1158'
+ht-degree: 5%
 
 ---
 
@@ -44,11 +44,9 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-
-| 調適型表單 | automated forms conversion服務 | 通訊 API | Integrations | Forms Workflow |
-|---|---|---|---|---|
-| 適用性Forms可讓企業為其網站和其他數位通道建立和管理互動式、資料導向的表單，以回應式、適合行動裝置的表單。 | automated forms conversion服務可讓企業將舊式以PDF為基礎的表單轉換為互動式數位表單，以便線上輕鬆管理和分發。 | 通信API是一組RESTful API（應用程式寫程式介面），使企業能夠自動建立、管理和提供個人化、資料驅動的通信。 | 此平台可整合Adobe Sign和DocuSign，讓使用者可直接透過最適化表單傳送及追蹤數位簽名請求。 </br></br>此外，該平台可與Adobe Analytics整合，讓組織能針對使用者行為和偏好取得有價值的深入分析。 </br></br> 最後，AEM FormsCloud Service可讓使用者將最適化表單直接內嵌至AEM Sites頁面，提供順暢的使用者體驗 | Adobe Experience Manager(AEM)Forms中以Forms為中心的工作流程專為自動化涉及表單的業務流程而設計。 這些工作流程可讓表單在業務流程的不同階段間移動時的路由、審核和核准過程自動化。 Forms工作流程可使用AEM Forms工作流程設計工具以視覺化方式建立，並可與AEM Forms整合，以在提交表單時觸發工作流程。 您可以設定工作流程，根據特定條件將表單路由至不同的使用者或群組，並可包含自動通知和提醒，以確保表單能及時處理。 AEM Forms中以表單為中心的整體工作流程可協助組織簡化其業務流程、提高效率並減少錯誤。 |
-
+| 調適型表單 | automated forms conversion服務 | 通訊 API | Forms Workflow | 電子簽名 | Forms Analytics |
+|---|---|---|---|---|---|
+| 適用性Forms可讓企業為其網站和其他數位通道建立和管理互動式、資料導向的表單，以回應式、適合行動裝置的表單。 | automated forms conversion服務可讓企業將舊式以PDF為基礎的表單轉換為互動式數位表單，以便線上輕鬆管理和分發。 | 通信API是一組RESTful API（應用程式寫程式介面），使企業能夠自動建立、管理和提供個人化、資料驅動的通信。 | 以Forms為中心的工作流程旨在自動化涉及表單和檔案服務的業務流程。 這些工作流程可自動傳送、審核和批准表單和文檔生成，使其在業務流程的不同階段間移動。 | 此平台可與Adobe Analytics整合，讓組織能針對使用者行為和偏好取得寶貴見解。 | 平台提供與Adobe Sign的立即可用整合。 您也可以將其與和DocuSign整合，讓使用者能輕鬆傳送Forms進行電子簽名。 |
 
 <!--
 | | |
