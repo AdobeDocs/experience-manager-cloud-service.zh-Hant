@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '10103'
+source-wordcount: '10122'
 ht-degree: 4%
 
 ---
@@ -151,7 +151,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 ## 最佳實務：使用HTML5視訊檢視器 {#best-practice-using-the-html-video-viewer}
 
-Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可以使用它們來避免許多與HTML5視訊播放相關的常見問題，以及與行動裝置相關的問題。 例如，缺乏最適化串流傳送，且案頭瀏覽器觸及範圍有限。
+Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可以使用它們來避免許多與HTML5視訊播放相關的常見問題，以及與行動裝置相關的問題。 例如，缺乏最適化位元速率串流傳送，且案頭瀏覽器觸及範圍有限。
 
 在播放器的設計端，您可以使用標準網頁開發工具來設計視訊播放器的功能。 例如，您可以使用HTML5和CSS來設計按鈕、控制項和自訂海報影像背景，以協助您以自訂外觀觸及客戶。
 
@@ -179,7 +179,7 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 * 如果您的HTTPS網站採用HTTPS視訊串流，則串流沒問題。
 * 如果您的HTTP網站採用HTTPS視訊串流，串流沒問題，且網頁瀏覽器沒有混合的內容問題。
 
-HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調整播放。 它也可讓客戶「搜尋」視訊中的任何點，而不需等待視訊的其餘部分下載。
+DASH是國際標準，HLS是Apple標準。 兩者皆用於最適化視訊串流。 而且，這兩種技術都會根據網路頻寬容量自動調整播放。 它也可讓客戶「搜尋」視訊中的任何點，而不需等待視訊的其餘部分下載。
 
 通過在用戶的案頭系統或移動設備上本地下載和儲存視頻來傳送漸進式視頻。
 
@@ -210,17 +210,17 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
   <tr>
    <td>桌面</td>
    <td>Firefox 45或更新版本</td>
-   <td>HLS或DASH*自適應流</td>
+   <td>HLS或DASH*適用位元速率串流</td>
   </tr>
   <tr>
    <td>桌面</td>
    <td>鉻黃</td>
-   <td>HLS或DASH*自適應流</td>
+   <td>HLS或DASH*適用位元速率串流</td>
   </tr>
   <tr>
    <td>桌面</td>
    <td>Safari(Mac)</td>
-   <td>HLS自適應串流</td>
+   <td>HLS自適應位元速率串流</td>
   </tr>
   <tr>
    <td>行動</td>
@@ -230,7 +230,7 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
   <tr>
    <td>行動</td>
    <td>Chrome(Android™ 7或更新版本)</td>
-   <td>HLS或DASH*自適應流/td&gt;
+   <td>HLS或DASH*適用位元速率串流/td&gt;
   </tr>
   <tr>
    <td>行動</td>
@@ -240,12 +240,12 @@ HLS是適用性視訊串流的Apple標準，可根據網路頻寬容量自動調
   <tr>
    <td>行動</td>
    <td>Safari(iOS)</td>
-   <td>HLS自適應串流</td>
+   <td>HLS自適應位元速率串流</td>
   </tr>
   <tr>
    <td>行動</td>
    <td>Chrome(iOS)</td>
-   <td>HLS自適應串流</td>
+   <td>HLS自適應位元速率串流</td>
   </tr>
  </tbody>
 </table>
@@ -418,7 +418,7 @@ DASH(Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，在�
 
 在您的帳戶上啟用DASH的一些主要優點包括：
 
-* 封裝DASH串流視訊，以進行最適化串流。 此方法可提高傳送效率。 最適化串流可確保為客戶提供最佳的檢視體驗。
+* 封裝DASH串流視訊，以進行最適化位元速率串流。 此方法可提高傳送效率。 最適化串流可確保為客戶提供最佳的檢視體驗。
 * 使用Dynamic Media播放器在HLS和DASH串流之間切換，以最佳化服務品質，進行瀏覽器最佳化串流。 使用Safari瀏覽器時，視訊播放器會自動切換至HLS。
 * 您可以編輯視訊檢視器預設集，以設定您偏好的串流方法（HLS或DASH）。
 * 最佳化的視訊編碼可確保在啟用DASH功能時不會使用其他儲存空間。 為HLS和DASH建立一組視訊編碼，以最佳化視訊儲存成本。
