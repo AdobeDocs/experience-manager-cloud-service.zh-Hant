@@ -4,7 +4,7 @@ description: 了解如何使用 [!DNL Experience Manager Forms]. 適用性Forms�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 0d158082973cd0f0745f5e3f0391119e585fc743
+source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
 workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 開始之前，請先了解可用的Forms元件類型：
 
-* [適用性Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en):這些是標準化的資料捕獲元件。 這些元件可提供自訂功能、縮短開發時間，並降低數位註冊體驗的維護成本。 開發人員可輕鬆自訂和設定這些元件的樣式。 Adobe建議運用這些現代且可擴充的元件來開發最適化Forms。
+* [適用性Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en):這些是標準化的資料捕獲元件。 這些元件為您的數位註冊體驗提供自訂功能、縮短開發時間並降低維護成本。 開發人員可輕鬆自訂和設定這些元件的樣式。 Adobe建議運用這些現代且可擴充的元件來開發最適化Forms。
 
 * [適用性Forms Foundation元件](creating-adaptive-form.md):這些是傳統（舊）資料捕獲元件。 您可以繼續使用這些元件來編輯現有的基礎元件（以最適化表單為基礎）。 如果您要建立新表單，Adobe建議使用  [適用性Forms核心元件](creating-adaptive-form-core-components.md) 來建立適用性Forms。
 

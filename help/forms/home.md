@@ -3,9 +3,9 @@ title: 簡介 [!DNL AEM Forms] as a Cloud Service
 description: 探索 AEM Forms 並了解此表單如何幫助您製作業務適用的文件和表單內容。 了解關於 Platform-as-a-Service (PaaS)，以及如何管理企業級數位表單和業務流程，以及連接表單至現有的資料來源。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 2f9c4d85c55ee63a769c0137d4a70b2126228d5b
+source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1312'
 ht-degree: 5%
 
 ---
@@ -23,6 +23,17 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 提供雲端原生的Pl
 組織可使用 [!DNL AEM Forms] as a Cloud Service，無需任何本地基礎架構，即可在雲中獲取所有這些功能。 此服務還使組織從複雜的升級週期中解脫出來，因為它始終具有最新的功能。
 
 ## 重要功能 {#key-features}
+
+|  |  |
+|---|---|
+| 調適型表單 | 為您的網站、應用程式和其他數位和列印管道，建立並管理互動式、動態、回應式、行動裝置易用且資料導向的表單。 請檢閱下列項目，以開始、了解及實作註冊體驗： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html">建立最適化表單</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html">設定最適化表單的樣式</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br"> 將資料提交至資料存放區或工作流程</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html"> 建立長期存檔的表單記錄</a></li></ul> |
+| 通訊 API | 透過RESTful API按需或按照每月報表和帳戶通知等排程間隔，自動建立、管理和提供個人化、資料導向的通訊。 請檢閱下列項目，以開始、了解和建立： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-generation"> 產生個人化通訊 </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-manipulation"> 匯編或拆解PDF文檔 </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#convert-to-and-validate-pdf%2Fa-compliant-documents">建立PDF/A相容文檔 </a></li></ul> |
+| automated forms conversion服務 | 將舊式PDF型表單轉換為可輕鬆線上管理及分發的最適化Forms。 請檢閱下列項目以開始使用： <ul><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html">設定Automated forms conversion服務</a></li><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html">將 PDF 表單轉換為最適化表單</a></li></ul> |
+| Forms Workflow | 自動化涉及表單和文檔服務的業務流程。 當表單和文檔在業務流程的不同階段中移動時分配、傳送、審核和批准。 請檢閱下列項目以開始使用：  <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html">傳送表單或檔案以供審核</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#assign-task-step">建立核准拒絕工作流</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#generate-document-of-record-step">添加記錄文檔 </a> 或 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#sign-document-step"> 電子簽名 </a> 業務工作流程步驟</a></li></ul> |
+| 電子簽名 | 與Adobe Sign和DocuSign整合，以輕鬆傳送Forms和檔案給使用者，以供電子簽名使用。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html">使用Adobe Sign以電子方式簽署最適化表單 </a></li><li></a> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-docusign-adaptive-forms.html">使用DocuSign對適用性表單進行電子簽署 </a></li></ul> |
+| Forms Analytics | 使用Adobe Analytics獲得使用者行為和偏好的寶貴分析。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html?lang=en">使用Adobe Analytics連接最適化表單</a></li></ul> |
+| 資料來源 | 輕鬆將表單和檔案與外部資料來源連結，以便擷取和傳送資料。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=en">連接到RDBMS或Rest端點</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en">連線至Microsoft Dynamics 365或Salesforce雲端服務</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=en">連線至Microsoft Azure Blob儲存</a></li></ul> |
+
 
 <!-- 
 >[!BEGINTABS]
@@ -44,11 +55,12 @@ Communications APIs are a set of RESTful APIs (Application Programming Interface
 The service provides OOTB support to connect with Adobe Analytics. Connecting forms with Adobe Analytics provides several benefits for businesses, including: <ul><li> Improved understanding of user behavior: By connecting forms with Adobe Analytics, businesses can gain a deeper understanding of how users are interacting with their forms. This includes insights into user engagement, conversion rates, drop-off points, and other key metrics that can help businesses identify areas for improvement and optimize their forms for better user experiences. </li><li>Better targeting of marketing efforts: By analyzing user behavior on forms, businesses can gain valuable insights into user preferences and interests. This information can be used to better target marketing efforts and create more effective campaigns that drive engagement and conversions. </li><li> Reduced error rate: By integrating forms with Adobe Analytics, you can find insights about field with most errors and improve data quality, leading to better decision-making and more accurate insights. </li><li> Improved ROI: By optimizing forms based on insights gained from Adobe Analytics, businesses can improve conversion rates and drive more revenue from their digital channels. This can lead to a higher return on investment (ROI) for marketing and digital initiatives, helping businesses to achieve their goals and drive growth.</li>
 
 
->[!ENDTABS] -->
+>[!ENDTABS] 
 
-| 調適型表單 | 通訊 API | automated forms conversion服務 | Forms Workflow | 電子簽名 | Forms Analytics | 資料模型 |
+| Adaptive Forms | Communications APIs  | Automated Forms Conversion Service | Forms Workflows | E-Sign | Forms Analytics | Data Model | 
 |---|---|---|---|---|---| ---|
-| 為您的網站、應用程式及其他數位和列印管道，建立並管理互動式、動態、回應式、行動裝置易用且資料導向的表單。 | 按需或按計畫的間隔自動建立、管理和提供個人化、資料驅動的通信。 | 將舊式PDF型表單轉換為可輕鬆線上管理及分發的最適化Forms。 | 自動化涉及表單和文檔服務的業務流程。 當表單和文檔在業務流程的不同階段中移動時分配、傳送、審核和批准。 | 與Adobe Sign和DocuSign整合，以輕鬆傳送Forms和檔案給使用者，以供電子簽名使用。 | 使用Adobe Analytics獲得使用者行為和偏好的寶貴分析。 | 輕鬆將表單和檔案與外部資料來源連結，以便擷取和傳送資料。 |
+|Create and manage interactive, dynamic, responsive, mobile-friendly, and data-driven forms for your websites, apps, and other digital and Print channels. | Automate creation, management, and delivery of personalized, data-driven communications with RESTful APIs (Application Programming Interfaces) on-demand or at scheduled intervals. | Convert legacy PDF-based forms into Adaptive Forms that can be easily managed and distributed online. | Automate business processes involving forms and document services. Assign, route, review, and approve forms and document as these move through different stages of a business process.| Integrate with Adobe Sign and DocuSign to easliy send send Forms and documents to users for e-signatures. | Use Adobe Analytics to gain valuable insights into user behavior and preferences. | Easily connect your forms and documents with external data sources to retieve and send data. |
+|<ul><li>Create an Adaptive Form</li><li>Style an Adaptive Form</li><li>Submit data to a data store or a workflow</li></ul>|<ul><li>Generate personalized communciations</li><li>Assemble or disassemble PDF documents</li><li>Create PDF/A-compliant documents</li></ul>|<ul><li>Configure Automated Forms Conversion Service</li><li>Convert PDF forms to adaptive forms</li></ul>|<ul><li>Send a form or document for review</li><li>Create an approval rejection Workflow</li><li>Add Document of Record or e-signatures to a business workflow</li></ul>|<ul><li>E-sign an Adaptive Form with Adobe Sign</li><li>E-sign an Adaptive Form with DocuSign</li></ul>|<ul><li>Connect an Adaptive Form with Adobe Analytics</li></ul>|<ul><li>Connect to a RDBMS or Rest endpoint</li><li>Connect to Microsoft Dynamics 365 or Salesforce cloud service</li><li>Connect to Microsoft&reg; Azure Blob Storage</li></ul>|
 
 <!--
 | | |
@@ -66,14 +78,14 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!TAB 無頭式適用性&#x200B; Forms]
 
-|| |—|—| |![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?lang=en)|建立和管理 [無頭網路表單](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 在Adobe Experience Manager平台中。 讓您的開發人員可建立、發佈及管理互動式表單，這些表單可透過API存取和互動，而非透過傳統的圖形使用者介面。 <br/> <br/> 這些表單設計為可提交，無需傳統的HTML表單介面。 換言之，它們可讓您透過API或後端程式碼，以程式設計方式提交表單資料，而不要求前端有任何可見的表單元素。 <br/> <br/> 無頭表單在多種情況下都很有用，例如在建立單頁應用程式、漸進式網頁應用程式或行動應用程式時，傳統的HTML表單介面可能不是必需的或實用。 無頭式表單可讓開發人員直接透過API或後端程式碼提交表單資料，有助於簡化工作流程並改善網頁應用程式的整體效能。|
+|| |—|—| |![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?)|建立和管理 [無頭式適用性Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 在Adobe Experience Manager平台中。 讓您的開發人員可建立、發佈及管理互動式表單，這些表單可透過API存取和互動，而非透過傳統的圖形使用者介面。 <br/> <br/> 這些表單設計為可提交，無需傳統的HTML表單介面。 換言之，它們可讓您透過API或後端程式碼，以程式設計方式提交表單資料，而不要求前端有任何可見的表單元素。 <br/> <br/> 無頭表單在多種情況下都很有用，例如在建立單頁應用程式、漸進式網頁應用程式或行動應用程式時，傳統的HTML表單介面可能不是必需的或實用。 無頭式表單可讓開發人員直接透過API或後端程式碼提交表單資料，有助於簡化工作流程並改善網頁應用程式的整體效能。|
 
 
 
 
 >[!TAB 核心元件]
 
-|| |—|—| |![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?lang=en) | [適用性Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) 是一組24個開放原始碼、符合BEM規範的元件，建置於Adobe Experience Manager WCM核心元件之上。 這些表單經過專門設計，可用來建立最適化Forms，這些表單可適應使用者的裝置、瀏覽器和螢幕大小。 <br/> <br/> 這些元件可用於通過提供多種表單欄位選項（包括文本欄位、複選框、下拉菜單等）來建立卓越的資料捕獲和註冊體驗。 這些功能也包含驗證、條件式邏輯和回應式設計等功能，可用來建立方便使用且易於使用的表單。 <br/> <br/>  此外，由於這些元件是開放原始碼，開發人員可輕鬆自訂和擴充元件，以符合其組織的特定需求。 此外，這些元件均以BEM方法為基礎，可確保可擴充且可維護。|
+|| |—|—| |![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?) | [適用性Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) 是一組24個開放原始碼、符合BEM規範的元件，建置於Adobe Experience Manager WCM核心元件之上。 這些表單經過專門設計，可用來建立最適化Forms，這些表單可適應使用者的裝置、瀏覽器和螢幕大小。 <br/> <br/> 這些元件可用於通過提供多種表單欄位選項（包括文本欄位、複選框、下拉菜單等）來建立卓越的資料捕獲和註冊體驗。 這些功能也包含驗證、條件式邏輯和回應式設計等功能，可用來建立方便使用且易於使用的表單。 <br/> <br/>  此外，由於這些元件是開放原始碼，開發人員可輕鬆自訂和擴充元件，以符合其組織的特定需求。 此外，這些元件均以BEM方法為基礎，可確保可擴充且可維護。|
 
 
 
@@ -84,7 +96,7 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!TAB Microsoft Storage Connectors:OneDrive和Sharepoint]
 
-|| |—|—| |![](/help/forms/assets/onedrive-and-sharepoint.jpg)|AEM Forms Microsoft OneDrive和SharePoint的儲存連接器可讓您將Adobe Experience Manager(AEM)Forms與Microsoft OneDrive和SharePoint整合。 這些連接器可讓您在Microsoft的雲端儲存解決方案中儲存和管理AEM Forms資料和檔案。 <br/> <br/> 這些連接器可讓您在Microsoft OneDrive中儲存和管理AEM Forms資料和文檔。 使用此連接器，您可以直接從AEM Forms將資料檔案和附件上傳至OneDrive和SharePoint。 <br/> <br/> 將AEM Forms Microsoft Storage Connectors用於OneDrive和SharePoint有以下幾個優點： <ul><li> **整合**:這些連接器可讓您將AEM Forms與Microsoft的雲端儲存解決方案整合，讓您善用這些平台的強大功能。 </li> <li> **協作**:OneDrive和SharePoint是協作平台，使團隊成員能夠在檔案和文檔上協同工作。 將AEM Forms與這些平台整合後，您就能改善協作與團隊合作。 </li> <li> **安全性**:OneDrive和SharePoint提供強大的安全功能，確保資料和文檔的儲存和訪問是安全的。 </li> <br/> 總體而言，適用於OneDrive和SharePoint的AEM Forms Microsoft Storage Connectors是功能強大的工具，使您能夠在Microsoft基於雲的儲存解決方案中儲存和管理AEM Forms資料和文檔，從而改進協作和安全性。|
+|| |—|—| |![](/help/forms/assets/onedrive-and-sharepoint.jpg)|AEM Forms Microsoft OneDrive和SharePoint的儲存連接器可讓您將Adobe Experience Manager(AEM)Forms與Microsoft OneDrive和SharePoint整合。 透過此連接器，您可以直接從適用性Forms將資料檔案和附件上傳至OneDrive和SharePoint。 |
 
 
 >[!ENDTABS]
