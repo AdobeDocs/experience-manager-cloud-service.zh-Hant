@@ -2,10 +2,10 @@
 title: 將內容內嵌至目標
 description: 將內容內嵌至目標
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
+source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 9%
+source-wordcount: '1660'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 9%
 >id="aemcloud_ctt_ingestion"
 >title="內容擷取"
 >abstract="擷取是指從移轉集擷取內容，並放入目標Cloud Service例項。 「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="追加擷取"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="追加擷取"
 
 請依照下列步驟，從「內容轉移工具」中擷取您的移轉集：
 >[!NOTE]
@@ -135,11 +135,28 @@ ht-degree: 9%
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
+### 無法到達遷移服務 {#unable-to-reach-migration-service}
+
+請求擷取後，可向使用者顯示如下的訊息：「目標環境上的遷移服務當前無法訪問。 請稍後再試，或聯繫Adobe支援。」
+
+![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
+
+這表示Cloud Acceleration Manager無法到達目標環境的移轉服務以開始擷取。 這可能會發生在許多原因。
+
+>[!NOTE]
+> 
+> 會顯示「移轉Token」欄位，因為在少數情況下，擷取該Token實際上是不允許的。 透過允許手動提供，可讓使用者快速開始擷取，不需任何額外協助。 如果已提供Token，且訊息仍顯示，則擷取Token並非問題。
+
+* AEM as a Cloud Service會維護環境狀態，偶爾會因一些正常原因需要重新啟動移轉服務。 如果該服務正在重新啟動，則無法訪問，但很快將可用。
+* 可能正在執行另一個程式。 例如，如果Release Orchestrator正在應用更新，則系統可能正忙，遷移服務定期不可用。 這以及破壞預備或生產例項的可能性，就是為什麼強烈建議在擷取期間暫停更新。
+* 若 [已套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 透過Cloud Manager，會阻擋Cloud Acceleration Manager前往移轉服務。 無法為擷取新增IP位址，因為其位址非常動態。 目前，唯一的解決方案是在擷取執行時停用IP允許清單。
+* 可能還有其他原因需要調查。 如果擷取仍然失敗，請聯絡Adobe客戶服務。
+
 ### 仍啟用通過Release Orchestrator進行自動更新
 
 Release Orchestrator通過自動應用更新來使環境保持最新。 如果執行擷取時觸發更新，可能會造成無法預測的結果，包括環境損毀。 這是啟動獲取之前應記錄支援票證的原因之一（請參閱上面的「注意」），以便可以安排臨時禁用Release Orchestrator的時間。
 
-如果開始擷取時Release Orchestrator仍在執行中，UI會顯示此錯誤訊息。 您仍然可以選擇繼續操作，接受風險，方法是檢查欄位並再次按按鈕。
+如果開始擷取時Release Orchestrator仍在執行中，UI會顯示此訊息。 您仍然可以選擇繼續操作，接受風險，方法是檢查欄位並再次按按鈕。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
