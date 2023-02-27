@@ -3,9 +3,9 @@ title: 簡介 [!DNL AEM Forms] as a Cloud Service
 description: 探索 AEM Forms 並了解此表單如何幫助您製作業務適用的文件和表單內容。 了解關於 Platform-as-a-Service (PaaS)，以及如何管理企業級數位表單和業務流程，以及連接表單至現有的資料來源。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: e28eb4340f9beb2d350620d635dc00de11c6e32b
+source-git-commit: 2f9c4d85c55ee63a769c0137d4a70b2126228d5b
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1144'
 ht-degree: 5%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 5%
 Adobe [!DNL Experience Manager Forms as a Cloud Service] 提供雲端原生的Platform as a Service(PaaS)解決方案，供企業建立、管理、發佈和更新複雜的數位表單，同時將提交的資料與後端流程、業務規則整合，並將資料儲存在外部資料存放區。 此服務始終是最新的，始終可用，並且始終學習。
 
 您可以使用服務來建立和推出互動式及吸引人的數位表單。 例如，以想要將客戶註冊歷程數位化的組織為例。 他們有多個資料來源和現有客戶資料。 他們希望預先填入表單、新增表單的電子簽名，並將填入的表單封存為PDF檔案。 此外，該組織有多種列印表單(PDF forms)，他們也希望將所有列印表單轉換為數位表單。
+
+
 
 組織可使用 [!DNL AEM Forms] as a Cloud Service於建立數位表單，將表單連結至現有的資料來源，將表單與 [!DNL Adobe Sign] 向表單添加電子簽名，並生成記錄文檔(DoR)以將提交的表單存檔為PDF檔案。 組織也可以使用服務將其現有PDF forms轉換為數位表單。
 
@@ -44,9 +46,9 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-| 調適型表單 | automated forms conversion服務 | 通訊 API | Forms Workflow | 電子簽名 | Forms Analytics |
-|---|---|---|---|---|---|
-| 適用性Forms可讓企業為其網站和其他數位通道建立和管理互動式、資料導向的表單，以回應式、適合行動裝置的表單。 | automated forms conversion服務可讓企業將舊式以PDF為基礎的表單轉換為互動式數位表單，以便線上輕鬆管理和分發。 | 通信API是一組RESTful API（應用程式寫程式介面），使企業能夠自動建立、管理和提供個人化、資料驅動的通信。 | 以Forms為中心的工作流程旨在自動化涉及表單和檔案服務的業務流程。 這些工作流程可自動傳送、審核和批准表單和文檔生成，使其在業務流程的不同階段間移動。 | 此平台可與Adobe Analytics整合，讓組織能針對使用者行為和偏好取得寶貴見解。 | 平台提供與Adobe Sign的立即可用整合。 您也可以將其與和DocuSign整合，讓使用者能輕鬆傳送Forms進行電子簽名。 |
+| 調適型表單 | 通訊 API | automated forms conversion服務 | Forms Workflow | 電子簽名 | Forms Analytics | 資料模型 |
+|---|---|---|---|---|---| ---|
+| 為您的網站、應用程式及其他數位和列印管道，建立並管理互動式、動態、回應式、行動裝置易用且資料導向的表單。 | 按需或按計畫的間隔自動建立、管理和提供個人化、資料驅動的通信。 | 將舊式PDF型表單轉換為可輕鬆線上管理及分發的最適化Forms。 | 自動化涉及表單和文檔服務的業務流程。 當表單和文檔在業務流程的不同階段中移動時分配、傳送、審核和批准。 | 與Adobe Sign和DocuSign整合，以輕鬆傳送Forms和檔案給使用者，以供電子簽名使用。 | 使用Adobe Analytics獲得使用者行為和偏好的寶貴分析。 | 輕鬆將表單和檔案與外部資料來源連結，以便擷取和傳送資料。 |
 
 <!--
 | | |
@@ -64,51 +66,26 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!TAB 無頭式適用性&#x200B; Forms]
 
-[無頭式適用性Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 是在Adobe Experience Manager平台中建立和管理無頭式網路表單的解決方案。 此功能可讓組織建立、發佈及管理可透過API存取和互動的互動式表單，而非透過傳統的圖形使用者介面。 AEM無頭式適用性Forms可提供更大的表單開發和部署彈性和可擴充性，以及透過根據特定需求量身打造表單設計和功能的能力來改善使用者體驗。 此解決方案利用AEM和無頭技術的功能，為建立、管理和部署適用於各種使用案例和應用程式的網路表單提供了強大的平台。
+|| |—|—| |![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?lang=en)|建立和管理 [無頭網路表單](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 在Adobe Experience Manager平台中。 讓您的開發人員可建立、發佈及管理互動式表單，這些表單可透過API存取和互動，而非透過傳統的圖形使用者介面。 <br/> <br/> 這些表單設計為可提交，無需傳統的HTML表單介面。 換言之，它們可讓您透過API或後端程式碼，以程式設計方式提交表單資料，而不要求前端有任何可見的表單元素。 <br/> <br/> 無頭表單在多種情況下都很有用，例如在建立單頁應用程式、漸進式網頁應用程式或行動應用程式時，傳統的HTML表單介面可能不是必需的或實用。 無頭式表單可讓開發人員直接透過API或後端程式碼提交表單資料，有助於簡化工作流程並改善網頁應用程式的整體效能。|
+
+
 
 
 >[!TAB 核心元件]
 
-此 [適用性Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) 是一組24個開放原始碼、符合BEM規範的元件，建置於Adobe Experience Manager WCM核心元件之上。 這些表單經過專門設計，可用來建立最適化Forms，這些表單可適應使用者的裝置、瀏覽器和螢幕大小。
+|| |—|—| |![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?lang=en) | [適用性Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) 是一組24個開放原始碼、符合BEM規範的元件，建置於Adobe Experience Manager WCM核心元件之上。 這些表單經過專門設計，可用來建立最適化Forms，這些表單可適應使用者的裝置、瀏覽器和螢幕大小。 <br/> <br/> 這些元件可用於通過提供多種表單欄位選項（包括文本欄位、複選框、下拉菜單等）來建立卓越的資料捕獲和註冊體驗。 這些功能也包含驗證、條件式邏輯和回應式設計等功能，可用來建立方便使用且易於使用的表單。 <br/> <br/>  此外，由於這些元件是開放原始碼，開發人員可輕鬆自訂和擴充元件，以符合其組織的特定需求。 此外，這些元件均以BEM方法為基礎，可確保可擴充且可維護。|
 
-這些元件可用於通過提供多種表單欄位選項（包括文本欄位、複選框、下拉菜單等）來建立卓越的資料捕獲和註冊體驗。 這些功能也包含驗證、條件式邏輯和回應式設計等功能，可用來建立方便使用且易於使用的表單。
-
-此外，由於這些元件是開放原始碼，開發人員可輕鬆自訂和擴充元件，以符合其組織的特定需求。 此外，這些元件均以BEM方法為基礎，可確保可擴充且可維護。
 
 
 >[!TAB Microsoft PowerAutomate Connector &#x200B;]
 
-Microsoft Power Automate Connector for AEM Forms是可讓您將Adobe Experience Manager(AEM)Forms與Microsoft Power Automate(先前稱為Microsoft Flow)整合的連接器。 Power Automate是一項基於雲的服務，允許您在不同應用程式和服務之間建立自動化的工作流。
+|| |—|—| |![](https://powerusers.microsoft.com/t5/image/serverpage/image-id/182924i17C4BEA1C045D731/image-size/large/is-moderation-mode/true?v=1.0&amp;px=999)| AEM Forms Power Automate Connector可讓您將Adobe Experience Manager(AEM)Forms與Microsoft Power Automate(先前稱為Microsoft Flow)整合。 Power Automate是一項基於雲的服務，允許您在不同應用程式和服務之間建立自動化的工作流。  <br/> <br/> 透過AEM Form Power Automate Connector，您可以建立根據提交適用性表單自動觸發的工作流程。 例如，您可以建立一個工作流，在用戶提交表單時自動向特定人員發送電子郵件通知，或在用戶完成表單時在Microsoft Planner中建立任務。  <br/> <br/> AEM Forms Power Automate Connector是一款功能強大的工具，可讓您將Adaptive Forms與與Microsoft Power Automate連接的其他應用程式和服務自動化並整合起來，讓您能夠使用更廣泛的工具。 您可以根據您的特定需求建立量身打造的工作流程，並新增自訂動作、條件和觸發器。 此外，Power Automate還提供詳細的分析和報告功能，允許您監視和優化隨時間變化的工作流。|
 
-使用AEM表單的Power Automate Connector，您可以建立根據提交適用性表單自動觸發的工作流程。 例如，您可以建立一個工作流，在用戶提交表單時自動向特定人員發送電子郵件通知，或在用戶完成表單時在Microsoft Planner中建立任務。
-
-使用AEM Forms的Power Automate Connector有許多優點，包括：
-
-* **自動化**:您可以自動執行例行任務並簡化流程，節省時間並減少錯誤。
-
-* **整合**:此連接器可讓您將Adobe Experience Manager Forms與其他應用程式和服務整合，讓您能使用更廣泛的工具。
-
-* **自訂**:您可以根據您的特定需求建立量身打造的工作流程，並新增自訂動作、條件和觸發器。
-
-* **Analytics**:Power Automate提供詳細的分析和報告功能，讓您能夠隨著時間監控和最佳化您的工作流程。
-
-總的來說，AEM Forms的Power Automate Connector是一款功能強大的工具，可讓您將AEM Forms與其他應用程式和服務自動化並整合，從而提高效率和生產力。
 
 >[!TAB Microsoft Storage Connectors:OneDrive和Sharepoint]
 
-AEM Forms Microsoft OneDrive和SharePoint的儲存連接器可讓您將Adobe Experience Manager(AEM)Forms與Microsoft OneDrive和SharePoint整合。 這些連接器可讓您在Microsoft的雲端儲存解決方案中儲存和管理AEM Forms資料和檔案。
+|| |—|—| |![](/help/forms/assets/onedrive-and-sharepoint.jpg)|AEM Forms Microsoft OneDrive和SharePoint的儲存連接器可讓您將Adobe Experience Manager(AEM)Forms與Microsoft OneDrive和SharePoint整合。 這些連接器可讓您在Microsoft的雲端儲存解決方案中儲存和管理AEM Forms資料和檔案。 <br/> <br/> 這些連接器可讓您在Microsoft OneDrive中儲存和管理AEM Forms資料和文檔。 使用此連接器，您可以直接從AEM Forms將資料檔案和附件上傳至OneDrive和SharePoint。 <br/> <br/> 將AEM Forms Microsoft Storage Connectors用於OneDrive和SharePoint有以下幾個優點： <ul><li> **整合**:這些連接器可讓您將AEM Forms與Microsoft的雲端儲存解決方案整合，讓您善用這些平台的強大功能。 </li> <li> **協作**:OneDrive和SharePoint是協作平台，使團隊成員能夠在檔案和文檔上協同工作。 將AEM Forms與這些平台整合後，您就能改善協作與團隊合作。 </li> <li> **安全性**:OneDrive和SharePoint提供強大的安全功能，確保資料和文檔的儲存和訪問是安全的。 </li> <br/> 總體而言，適用於OneDrive和SharePoint的AEM Forms Microsoft Storage Connectors是功能強大的工具，使您能夠在Microsoft基於雲的儲存解決方案中儲存和管理AEM Forms資料和文檔，從而改進協作和安全性。|
 
-這些連接器可讓您在Microsoft OneDrive中儲存和管理AEM Forms資料和文檔。 使用此連接器，您可以直接從AEM Forms將資料檔案和附件上傳至OneDrive和SharePoint。
-
-將AEM Forms Microsoft Storage Connectors用於OneDrive和SharePoint有以下幾個優點：
-
-* **整合**:這些連接器可讓您將AEM Forms與Microsoft的雲端儲存解決方案整合，讓您善用這些平台的強大功能。
-
-* **協作**:OneDrive和SharePoint是協作平台，使團隊成員能夠在檔案和文檔上協同工作。 將AEM Forms與這些平台整合後，您就能改善協作與團隊合作。
-
-* **安全性**:OneDrive和SharePoint提供強大的安全功能，確保資料和文檔的儲存和訪問是安全的。
-
-總體而言，適用於OneDrive和SharePoint的AEM Forms Microsoft Storage Connectors是功能強大的工具，使您能夠在Microsoft基於雲的儲存解決方案中儲存和管理AEM Forms資料和文檔，從而改進協作和安全性。
 
 >[!ENDTABS]
 
