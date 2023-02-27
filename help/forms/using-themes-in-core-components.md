@@ -1,7 +1,7 @@
 ---
 title: 建立和使用主題
 description: 您可以使用主題來使用核心元件，使用樣式化並為適用性表單提供視覺識別。 您可以在任意數量的適用性Forms中共用主題。
-source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
+source-git-commit: 1357b36dc3d14d2ceceb6761cb005b592472890a
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 0%
@@ -86,7 +86,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 若要自訂主題，您可以啟動本機Proxy伺服器，以根據實際AEM內容即時查看主題自訂。
 
-### 4.變更畫布主題的package.json和package_lock.json中的名稱 {#changename-packagelock-packagelockjson}
+### 3.變更畫布主題的package.json和package_lock.json中的名稱 {#changename-packagelock-packagelockjson}
 
 更新 `package.json` 和 `package_lock.json` 檔案。
 
@@ -96,7 +96,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 ![畫布主題圖片](/help/forms/assets/changename_canvastheme.png)
 
-### 3.在主題資料夾中建立.env檔案 {#creating-env-file-theme-folder}
+### 4.在主題資料夾中建立.env檔案 {#creating-env-file-theme-folder}
 
 建立 `.env` 檔案，並新增下列參數：
 
@@ -112,7 +112,7 @@ AEM_PROXY_PORT=7000
 
 ![畫布主題結構](/help/forms/assets/env-file-canvas-theme.png)
 
-### 4.啟動本地代理伺服器 {#starting-a-local-proxy-server}
+### 5.啟動本地代理伺服器 {#starting-a-local-proxy-server}
 
 1. 從命令列，導覽至本機電腦上主題的根目錄。
 1. 執行 `npm install` npm會擷取相依性並安裝專案。
@@ -139,7 +139,7 @@ AEM_PROXY_PORT=7000
 
 導覽至適用性表單，查看套用至適用性表單的畫布主題。
 
-### 5.自訂主題 {#customize-theme}
+### 6.自訂主題 {#customize-theme}
 
 1. 在編輯器中，開啟檔案 `<your-theme-sources>/src/site/_variables.scss`.
 
@@ -173,7 +173,7 @@ AEM_PROXY_PORT=7000
 
 將變更提交至AEM Git存放庫前，您必須先存取 [Git存放庫資訊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git).
 
-### 6.提交更改 {#committing-the-changes}
+### 7.提交更改 {#committing-the-changes}
 
 變更主題並使用本機Proxy伺服器進行測試後，請將變更提交至AEM FormsCloud Service的Git存放庫。 它可讓您的FormsCloud Service環境中提供自訂主題，供適用性Forms作者使用。
 
@@ -216,7 +216,7 @@ AEM_PROXY_PORT=7000
 您的自訂內容現在可安全地儲存在Git存放庫。
 
 
-### 7.運行前端管道 {#deploy-pipeline}
+### 8.運行前端管道 {#deploy-pipeline}
 
 1. 建立前端管道以部署自訂主題。 學習 [如何建立一條前線管道，以部署定制主題](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
 1. 執行已建立的前端管道，以在 **[!UICONTROL 樣式]** 「適用性表單建立」精靈的索引標籤。
