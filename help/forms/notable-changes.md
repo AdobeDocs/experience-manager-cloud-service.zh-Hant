@@ -1,9 +1,9 @@
 ---
 title: AEM 6.5 Forms與AEM雲端服務之間的變更
 description: 您是Experience Manager Forms使用者，且想要升級至Adobe Experience Manager Formsas a Cloud Service? 在升級或移轉至Cloud Service之前，請先了解最顯著的變更。
-contentOwner: khsingh
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
-source-git-commit: d77b8d389be4b5c0ffa262ad6f1ff8b4d899e82b
+contentOwner: khsingh
+source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 3%
@@ -16,39 +16,39 @@ Adobe Experience Manager Forms as a Cloud Service對現有功能進行了幾項�
 
 | 功能 | [!DNL AEM Forms] as a Cloud Service | AEM 6.5 Forms |
 |---|---|---|
-| 雲端原生架構 | ☑ | ☒ |
-| 根據負載自動縮放 | ☑ | ☒ |
-| 零停機升級 | ☑ | ☒ |
+| 雲端原生架構 | ✅ | ⛌ |
+| 根據負載自動縮放 | ✅ | ⛌ |
+| 零停機升級 | ✅ | ⛌ |
 | 功能轉出頻率 | 雅居利* | 每季 |
-| 包含的CDN（內容傳遞網路） | ☑ | ☒ |
-| 優化的拓撲，以實現最大的可復原性和效率 | ☑ | ☒ |
-| 雲端原生開發環境 | ☑ | ☒ |
-| 透過Cloud Manager提供自助服務 | ☑ | ☒ |
-| 通過連續整合和連續傳送(CI/CD)實現自動升級 | ☑ | ☒ |
-|  與 [!DNL Micosoft Power Automate] 整合 | ☑ | ☒ |
-|  與 [!DNL DocuSign] 整合 | ☑ | ☒ |
-| 與Microsoft Dynamics和Salesforce輕鬆連接 | ☑ | ☒ |
-| 與Microsoft Azure資料儲存區輕鬆連線 | ☑ | ☒ |
-| 強化規則編輯器 | ☑ | ☒ |
-| 表單建立精靈 | ☑ | ☒ |
-| 記錄檔案的自訂XCI支援 | ☑ | ☒ |
-| 適用性Forms <sup>1</sup> | ☑ | ☑ |
-| 與多個資料來源的資料整合 | ☑ | ☑ |
-| 通訊API（檔案服務） <sup>2,3</sup> | ☑ | ☑ |
-| automated forms conversion服務 <sup>4</sup> | ☑ | ☑ |
-|  與 [!DNL Adobe Sign] 整合 | ☑ | ☑ |
-|  與 [!DNL AEM Sites] 整合 | ☑ | ☑ |
-|  與 [!DNL Adobe Launch] 整合 | ☑ | ☑ |
-|  與 [!DNL Adobe Analytics] 整合 | ☑ | ☑ |
-| Forms入口網站 <sup>5</sup> | ☑ | ☑ |
-| AEM 工作流程 | ☑ | ☑ |
-| 記錄文件 | ☑ | ☑ |
-| 隱形驗證碼 | ☑ | ☑ |
-| 可重複使用的表單資料模型配置 | ☑ | ☑ |
-| 基於Acroform的記錄文檔 | ☑ | ☑ |
-| 啟用適用性Adobe Sign的政府ID身分驗證Forms | ☑ | ☑ |
-| HTML5 <sup>6</sup> | ☒ | ☑ |
-| 文件安全性 | ☒ | ☑ |
+| 包含的CDN（內容傳遞網路） | ✅ | ⛌ |
+| 優化的拓撲，以實現最大的可復原性和效率 | ✅ | ⛌ |
+| 雲端原生開發環境 | ✅ | ⛌ |
+| 透過Cloud Manager提供自助服務 | ✅ | ⛌ |
+| 通過連續整合和連續傳送(CI/CD)實現自動升級 | ✅ | ⛌ |
+|  與 [!DNL Micosoft Power Automate] 整合 | ✅ | ⛌ |
+|  與 [!DNL DocuSign] 整合 | ✅ | ⛌ |
+| 與Microsoft Dynamics和Salesforce輕鬆連接 | ✅ | ⛌ |
+| 與Microsoft Azure資料儲存區輕鬆連線 | ✅ | ⛌ |
+| 強化規則編輯器 | ✅ | ⛌ |
+| 表單建立精靈 | ✅ | ⛌ |
+| 記錄檔案的自訂XCI支援 | ✅ | ⛌ |
+| 適用性Forms <sup>1</sup> | ✅ | ✅ |
+| 與多個資料來源的資料整合 | ✅ | ✅ |
+| 通訊API（檔案服務） <sup>2,3</sup> | ✅ | ✅ |
+| automated forms conversion服務 <sup>4</sup> | ✅ | ✅ |
+|  與 [!DNL Adobe Sign] 整合 | ✅ | ✅ |
+|  與 [!DNL AEM Sites] 整合 | ✅ | ✅ |
+|  與 [!DNL Adobe Launch] 整合 | ✅ | ✅ |
+|  與 [!DNL Adobe Analytics] 整合 | ✅ | ✅ |
+| Forms入口網站 <sup>5</sup> | ✅ | ✅ |
+| AEM 工作流程 | ✅ | ✅ |
+| 記錄文件 | ✅ | ✅ |
+| 隱形驗證碼 | ✅ | ✅ |
+| 可重複使用的表單資料模型配置 | ✅ | ✅ |
+| 基於Acroform的記錄文檔 | ✅ | ✅ |
+| 啟用適用性Adobe Sign的政府ID身分驗證Forms | ✅ | ✅ |
+| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| 文件安全性 | ⛌ | ✅ |
 
 在繼續提供服務之前，請考慮以下特殊情況：
 
