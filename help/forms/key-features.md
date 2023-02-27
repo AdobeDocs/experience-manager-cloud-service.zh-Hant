@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager(AEM)Forms as a Cloud Service的主要特色與功能
-description: '"[!DNL AEM Forms] as a Cloud Service是建立、管理、發佈企業級表單和業務流程的平台。」'
+title: Adobe Experience Manager(AEM)Formsas a Cloud Service的最新創新
+description: 「探索 [!DNL AEM Forms] as a Cloud Service於建立、管理和發佈企業級表單和業務流程。」
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: d77b8d389be4b5c0ffa262ad6f1ff8b4d899e82b
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 1%
+source-wordcount: '678'
+ht-degree: 0%
 
 ---
 
@@ -19,33 +19,48 @@ The organization can use [!DNL AEM Forms] as a Cloud Service to create digital f
 
 An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start using all these features without waiting to buy and set up a local infrastructure. The service also frees the organizations from the cycle of upgrades as it is always up to date and always offers the latest feature.  -->
 
-# 主要功能 {#key-features}
 
-[!DNL AEM Forms] as a Cloud Service提供數種雲端原生功能，例如雲端原生架構、自動調整規模、為升級停機時間零、CDN（內容傳遞網路）、雲端原生開發環境，以及透過Cloud Manager為環境自助服務的功能。 您可以使用服務：
+# 最新創新 {#latest-innovations}
 
-* [建立適用性Forms](creating-adaptive-form.md#strong-create-an-adaptive-form-strong) 會為使用者的裝置和瀏覽器自動呈現。
+AEM Formsas a Cloud Service的部分最新創新包括：
 
-   ![調適型表單](assets/rule-editor-example.gif)
+|  |  |
+|---|---|
+| 無頭式適用性Forms | 建立和管理 [無頭式適用性Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 在Adobe Experience Manager平台中。 讓您的開發人員可建立、發佈及管理互動式表單，這些表單可透過API存取和互動，而非透過傳統的圖形使用者介面。 <br/> <br/> 這些表單設計為可提交，無需傳統的HTML表單介面。 換言之，它們可讓您透過API或後端程式碼，以程式設計方式提交表單資料，而不要求前端有任何可見的表單元素。 <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?)<br/> 無頭表單在多種情況下都很有用，例如在建立單頁應用程式、漸進式網頁應用程式或行動應用程式時，傳統的HTML表單介面可能不是必需的或實用。 無頭式表單可讓開發人員直接透過API或後端程式碼提交表單資料，有助於簡化工作流程並改善網頁應用程式的整體效能。 |
+| 核心元件 | 此 [適用性Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) 是一組24個開放原始碼、符合BEM規範的元件，建置於Adobe Experience Manager WCM核心元件之上。 這些表單經過專門設計，可用來建立最適化Forms，這些表單可適應使用者的裝置、瀏覽器和螢幕大小。 <br/> <br/> 這些元件可用於通過提供多種表單欄位選項（包括文本欄位、複選框、下拉菜單等）來建立卓越的資料捕獲和註冊體驗。 這些功能也包含驗證、條件式邏輯和回應式設計等功能，可用來建立方便使用且易於使用的表單。 <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?)<br/>  此外，由於這些元件是開放原始碼，開發人員可輕鬆自訂和擴充元件，以符合其組織的特定需求。 此外，這些元件均以BEM方法為基礎，可確保可擴充且可維護。 |
+| Microsoft PowerAutomate Connector | AEM Forms Power Automate Connector可讓您將Adobe Experience Manager(AEM)Forms與Microsoft Power Automate(先前稱為Microsoft Flow)整合。 Power Automate是一項基於雲的服務，允許您在不同應用程式和服務之間建立自動化的工作流。  <br/> <br/> 透過AEM Form Power Automate Connector，您可以建立根據提交適用性表單自動觸發的工作流程。 例如，您可以建立一個工作流，在用戶提交表單時自動向特定人員發送電子郵件通知，或在用戶完成表單時在Microsoft Planner中建立任務。  <br/> ![](https://powerusers.microsoft.com/t5/image/serverpage/image-id/182924i17C4BEA1C045D731/image-size/large/is-moderation-mode/true?v=1.0&amp;px=999) <br/> AEM Forms Power Automate Connector是一款功能強大的工具，可讓您將Adaptive Forms與與Microsoft Power Automate連接的其他應用程式和服務自動化並整合起來，讓您能夠使用更廣泛的工具。 您可以根據您的特定需求建立量身打造的工作流程，並新增自訂動作、條件和觸發器。 此外，Power Automate還提供詳細的分析和報告功能，讓您能夠監控和優化一段時間的工作流。 |
+| Microsoft Storage Connectors | AEM Forms Microsoft Storage Connectors for <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-sharedrive">OneDrive</a>, <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-sharedrive"> SharePoint, </a> 和 <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-azure-blob-storage"> Azure Blob儲存 </a> 是連接器，可讓您整合Adobe Experience Manager(AEM)Forms與Microsoft OneDrive和SharePoint。 透過此連接器，您可以直接從適用性Forms將資料檔案和附件上傳至OneDrive和SharePoint。 <br/> ![](/help/forms/assets/onedrive-and-sharepoint.jpg) <br/>OneDrive和SharePoint可以與其他業務應用程式整合，如CRM系統、會計軟體和項目管理工具。 這使您能夠簡化您的業務流程、減少手動資料輸入，並提高整體效率。 |
 
-* [建立像素完美PDF forms](use-forms-designer.md#create-an-adaptive-form) 看起來像紙。
 
-* 使用 [automated forms conversion服務](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 將PDF表單轉換為最適化表單。 它可協助您加速組織的資料擷取體驗的數位化和現代化。
+<!-- 
 
-   ![automated forms conversion服務](assets/pdf-to-adaptive-form-gitx50.gif)
+# Key features and capabilities {#key-features}
 
-* [建立業務流程](aem-forms-workflow-step-reference.md#create-form-centric-workflows). 例如，您可以在提交最適化表單時建立並觸發核准和拒絕工作流程。
+[!DNL AEM Forms] as a Cloud Service provides several cloud-native capabilities such as a cloud-native architecture, auto-scaling, zero downtime for upgrades, a CDN (Content Delivery Network), cloud-native development environment, and ability to self-Service the environments via Cloud Manager. You can use the service to: 
 
-除了上述 [!DNL AEM Forms] as a Cloud Service提供下列功能：
+* [Create Adaptive Forms](creating-adaptive-form.md#strong-create-an-adaptive-form-strong) that automatically render for a user's device and browser.
 
-* 簡單易用的圖形用戶介面，可讓商務用戶輕鬆導入、管理、預覽和發佈表單
-* 回應式表單目錄，具有使用關鍵字、標籤和中繼資料的強大搜尋功能
-* 動態偵測使用者的裝置和位置，以在網路和行動頻道上適當地呈現表單
-* [與Adobe Sign整合](adobe-sign-integration-adaptive-forms.md) 或手寫，以電子方式簽署包含機密資訊的文檔
-* 能 [將服務連接到各種類型的資料源](data-integration.md#create-an-adaptive-form) 來傳送和擷取資料。 該服務支援從RESTful Web服務、基於SOAP的Web服務和啟用OData的服務發送和檢索資料。
-* 與AEM Sites整合。 可將最適化表單內嵌在AEM Sites頁面中。 您也可以將最適化表單整合至任何網頁。
-* 能夠建立記錄文檔(DoR)，以保留您提供的資訊的記錄並在適用性表單中提交，以便您以後可以參考它。 DoR是表單的PDF版本。 其中同時包含範本和資料。 該服務提供預設的DoR模板和工具，以開發自定義模板。
-* 能夠建立適用性Forms，以產生符合架構的資料。 它可協助您將擷取的資料提交至現有的程式和資料來源，而不需進行任何或最少的修改。
-* 能夠根據條件建立預填服務，以使用現有客戶資料填寫表單。 有助於加快表單填寫程式，降低放棄率。
+    ![Adaptive Forms](assets/rule-editor-example.gif)
+
+* [Create pixel-perfect PDF forms](use-forms-designer.md#create-an-adaptive-form) that look almost like paper.
+
+* Use [Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) to convert a PDF Form to an Adaptive Form. It helps you accelerate digitization and modernization of data capture experiences of your organization.
+
+    ![Automated Forms Conversion service](assets/pdf-to-adaptive-form-gitx50.gif)
+
+* [Create business processes](aem-forms-workflow-step-reference.md#create-form-centric-workflows). For example, You can create and trigger an approval and rejection workflow on submission of an Adaptive Form.
+
+In addition to above [!DNL AEM Forms] as a Cloud Service offers the following features and capabilities:
+
+* An easy-to-use graphical user interface to let business users easily import, manage, preview, and publish forms
+* A responsive forms directory with powerful search features using keywords, tags, and metadata
+* Dynamic detection of a user's device and location to render the form appropriately across web and mobile channels
+* [Integration with Adobe Sign](adobe-sign-integration-adaptive-forms.md) services or Scribble to electronically sign documents containing confidential information
+* Ability to [connect the service to various types of data sources](data-integration.md#create-an-adaptive-form) to send and retrieve data. The service supports sending and retrieving data from RESTful web services, SOAP-based web services, and OData enabled services.
+* Integration with AEM Sites. It allows to embed an adaptive form in an AEM Sites page. You can also integrate an adaptive form to any webpage. 
+* Ability to create a Document of Record (DoR) to keep a record of the information that you provide and submit in an Adaptive Form so that you can refer to it later. A DoR is a PDF version of a form. It includes both a template and data. The service provides a default DoR template and tools to develop a custom template.
+* Ability to create Adaptive Forms to produce schema-compliant data. It helps you submit captured data to existing processes and data sources without any or minimal modifications.
+* Ability to create a prefill service to fill a form with existing customer data based on a criteria. It helps fasten the form filling process and reduce the abandon rate.
 
 
 <!-- 
