@@ -1,15 +1,15 @@
 ---
 title: 建立和使用主題
 description: 您可以使用主題來使用核心元件，使用樣式化並為適用性表單提供視覺識別。 您可以在任意數量的適用性Forms中共用主題。
-source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
+source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 0%
 
 ---
 
 
-# 使用核心元件的最適化表單主題簡介 {#introduction-to-themes-for-af-using-core-components}
+# 適用性Forms的主題（核心元件） {#themes-for-af-using-core-components}
 
 您可以使用核心元件建立並套用主題，使最適化表單變得樣式。 主題包含元件和面板的樣式詳細資料。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。 應用主題時，指定的樣式會反映在相應的元件上。 主題可獨立管理，不需參考適用性表單。
 
