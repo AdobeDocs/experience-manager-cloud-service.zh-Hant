@@ -3,7 +3,7 @@ title: 簡介 [!DNL AEM Forms] as a Cloud Service
 description: 探索 AEM Forms 並了解此表單如何幫助您製作業務適用的文件和表單內容。 了解關於 Platform-as-a-Service (PaaS)，以及如何管理企業級數位表單和業務流程，以及連接表單至現有的資料來源。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 6861f83b292dfb8a8e62e685830289e3a2eded2d
+source-git-commit: c51aa20a37e27252a8c1e6a72d4bc6ffacea46f7
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 7%
@@ -20,7 +20,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 提供雲端原生的Pl
 
 組織可使用 [!DNL AEM Forms] as a Cloud Service於建立數位表單，將表單連結至現有的資料來源，將表單與 [!DNL Adobe Sign] 向表單添加電子簽名，並生成記錄文檔(DoR)以將提交的表單存檔為PDF檔案。 組織也可以使用服務將其現有PDF forms轉換為數位表單。
 
-![資料收集 — 回應式表單設計](/help/forms/assets/data-collection.jpeg)
+![資料收集 — 回應式表單設計](/help/forms/assets/data-collection.jpeg){width="40%"}
 回應式表單設計
 
 在大型企業中，表單通常只需建立一次，然後通過複製到內容管理系統來重複使用。 保持大型表單資料庫的最新狀態並使其可被發現，這是一個相當大的挑戰。 AEM提供可自訂的Forms入口網站，確保客戶在網頁和行動裝置頻道間都能找到並存取所需表單。
@@ -34,7 +34,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 提供雲端原生的Pl
 可輕鬆生成個人化文檔，如收據、歡迎工具包和報表。 組織可以推動流向個性化的Web門戶，從而導致註冊或購買其他服務。
 
 
-![個人化通訊 — 回應式設計](/help/forms/assets/personalized-communication.jpeg)
+![個人化通訊 — 回應式設計](/help/forms/assets/personalized-communication.jpeg){width="40%"}
 個人化發票
 
 此服務始終是最新的，始終可用，並且始終學習。 組織可使用 [!DNL AEM Forms] as a Cloud Service，無需任何本地基礎架構，即可在雲中獲取所有這些功能。 此服務還使組織從複雜的升級週期中解脫出來，因為它始終具有最新的功能。
