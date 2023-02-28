@@ -3,9 +3,9 @@ title: AEM 6.5 Forms與AEM雲端服務之間的變更
 description: 您是Experience Manager Forms使用者，且想要升級至Adobe Experience Manager Formsas a Cloud Service? 在升級或移轉至Cloud Service之前，請先了解最顯著的變更。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1215'
 ht-degree: 3%
 
 ---
@@ -103,14 +103,18 @@ Adobe Experience Manager Forms as a Cloud Service對現有功能進行了幾項�
 
 +++ 6.HTML5Forms(行動Forms)
 
-此服務不支援HTML5 Forms(行動Forms)。 如果您將XDP型表單轉譯為HTML5 Forms，則可繼續使用AEM 6.5 Forms上的功能。
+* 此服務不支援HTML5 Forms(行動Forms)。 如果您將XDP型表單轉譯為HTML5 Forms，則可繼續使用AEM 6.5 Forms上的功能。
+
+* 如果您有用於離線捕獲資料並在下次返回聯機時同步資料的資料庫，則可以繼續使用 [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 功能(AEM 6.5 Forms)。
 
 +++
 
 
 +++ 7.表單資料模型
 
-Forms資料模型僅支援HTTP和HTTP端點來提交資料。 此服務不支援REST連接器的Mutual SSL，以及SOAP資料來源的x509憑證式驗證。 * Formsas a Cloud Service允許將Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive和支援一般CRUD（建立、讀取、更新和刪除）操作的服務用作資料儲存，支援Open API規範2.0和Open API規範。 此服務也支援JDBC連接器。
+* Forms資料模型僅支援HTTP和HTTP端點來提交資料。 此服務不支援REST連接器的Mutual SSL，以及SOAP資料來源的x509憑證式驗證。
+
+* Forms as a Cloud Service允許將Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive和支援一般CRUD（建立、讀取、更新和刪除）操作的服務用作資料儲存，支援Open API規範2.0和Open API規範。 此服務也支援JDBC連接器。
 
 +++
 
