@@ -2,9 +2,9 @@
 title: UI 測試
 description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: b1eacc8432a73f015529975e6960afbe9dee7565
+source-git-commit: 3e31b065999d36717b81253d2773e41b76949954
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2141'
 ht-degree: 56%
 
 ---
@@ -221,7 +221,7 @@ UI 測試作為每個 Cloud Manager 管道的特定品質門的一部分執行�
 Adobe測試範例提供存取設定參數的輔助功能：
 
 * JavaScript:請參閱 [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) 模組
-* Java:請參閱 [設定](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 類
+* Java:請參閱 [設定](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 類
 
 ### 等待 Selenium 準備就緒 {#waiting-for-selenium}
 
@@ -255,21 +255,9 @@ Docker影像可產生其他測試輸出（例如螢幕擷取畫面或視訊）�
 您可以使用協助程式功能，透過測試建立螢幕擷取畫面。
 
 * JavaScript: [take螢幕擷取命令](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [命令](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+* Java: [命令](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-如果在UI測試執行期間建立了測試結果存檔，則測試日誌檔案包含對測試結果存檔在結尾的位置的引用。
-
-```
-[...]
-
-===============================================================
-The detailed test results can be downloaded from the URL below.
-Note: the link will expire after 60 days
-
-    https://results-host/test-results.zip
-
-===============================================================
-```
+如果測試結果封存是在UI測試執行期間建立的，您可以使用 `Download Details` 按鈕 [**自訂UI測試** 步驟。](/help/implementing/cloud-manager/deploy-code.md)
 
 ### 上傳檔案 {#upload-files}
 
@@ -282,7 +270,7 @@ Note: the link will expire after 60 days
    * 請查閱 Docker 映像中使用的編程語言的檔案和資料庫，以了解如何執行此類 HTTP 要求。
    * Adobe測試範例提供上傳檔案的輔助功能：
       * JavaScript:請參閱 [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) 命令。
-      * Java:請參閱 [檔案處理程式](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) 類別。
+      * Java:請參閱 [檔案處理程式](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) 類別。
 1. 如果上傳成功，請求傳回一個`200 OK`類型響應 `text/plain`。
    * 回應的內容是一個不透明的檔案。
    * 您可以使用此句柄代替文件路徑`<input>`在您的應用程序中測試文件上傳的元素。
@@ -344,4 +332,4 @@ Cloud Manager中的測試將使用技術管理員使用者執行。
 >
 >* 記錄檔將儲存在 `target/reports` 儲存庫的資料夾。
 >
->如需詳細資訊，請參閱 [AEM測試範例存放庫。](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/README.MD)
+>如需詳細資訊，請參閱 [AEM測試範例存放庫。](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)

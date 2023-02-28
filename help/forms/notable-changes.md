@@ -3,10 +3,10 @@ title: AEM 6.5 Forms與AEM雲端服務之間的變更
 description: 您是Experience Manager Forms使用者，且想要升級至Adobe Experience Manager Formsas a Cloud Service? 在升級或移轉至Cloud Service之前，請先了解最顯著的變更。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 3%
+source-wordcount: '1179'
+ht-degree: 2%
 
 ---
 
@@ -33,21 +33,11 @@ Adobe Experience Manager Forms as a Cloud Service對現有功能進行了幾項�
 | 表單建立精靈 | ✅ | ⛌ |
 | 記錄檔案的自訂XCI支援 | ✅ | ⛌ |
 | 適用性Forms <sup>1</sup> | ✅ | ✅ |
-| 與多個資料來源的資料整合 | ✅ | ✅ |
 | 通訊API（檔案服務） <sup>2,3</sup> | ✅ | ✅ |
 | automated forms conversion服務 <sup>4</sup> | ✅ | ✅ |
-|  與 [!DNL Adobe Sign] 整合 | ✅ | ✅ |
-|  與 [!DNL AEM Sites] 整合 | ✅ | ✅ |
-|  與 [!DNL Adobe Launch] 整合 | ✅ | ✅ |
-|  與 [!DNL Adobe Analytics] 整合 | ✅ | ✅ |
 | Forms入口網站 <sup>5</sup> | ✅ | ✅ |
-| AEM 工作流程 | ✅ | ✅ |
-| 記錄文件 | ✅ | ✅ |
-| 隱形驗證碼 | ✅ | ✅ |
-| 可重複使用的表單資料模型配置 | ✅ | ✅ |
-| 基於Acroform的記錄文檔 | ✅ | ✅ |
-| 啟用適用性Adobe Sign的政府ID身分驗證Forms | ✅ | ✅ |
-| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| Forms資料模型 <sup>6</sup> | ✅ | ✅ |
+| HTML5Forms <sup>7</sup> | ⛌ | ✅ |
 | 文件安全性 | ⛌ | ✅ |
 
 在繼續提供服務之前，請考慮以下特殊情況：
@@ -94,29 +84,31 @@ Adobe Experience Manager Forms as a Cloud Service對現有功能進行了幾項�
 
 +++
 
-+++ 5.Forms門戶
++++ 5.Forms門戶網站
 
-無法立即使用Forms入口網站(OOTB)，且無法提供匿名使用支援。 您可以自訂表單入口網站，為未登入的使用者啟用顯示表單功能。
-
-+++
-
-
-+++ 6.HTML5Forms(行動Forms)
-
-* 此服務不支援HTML5 Forms(行動Forms)。 如果您將XDP型表單轉譯為HTML5 Forms，則可繼續使用AEM 6.5 Forms上的功能。
-
-* 如果您有用於離線捕獲資料並在下次返回聯機時同步資料的資料庫，則可以繼續使用 [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 功能(AEM 6.5 Forms)。
+無法立即取得對匿名使用Forms Portal的支援(OOTB)。 您可以自訂Forms Portal，為未登入的使用者啟用顯示表單功能。
 
 +++
 
-
-+++ 7.表單資料模型
++++ 6.表單資料模型
 
 * Forms資料模型僅支援HTTP和HTTP端點來提交資料。 此服務不支援REST連接器的Mutual SSL，以及SOAP資料來源的x509憑證式驗證。
 
 * Forms as a Cloud Service允許將Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive和支援一般CRUD（建立、讀取、更新和刪除）操作的服務用作資料儲存，支援Open API規範2.0和Open API規範。 此服務也支援JDBC連接器。
 
 +++
+
+
++++ 7.HTML5Forms(行動Forms)
+
+* 此服務不支援HTML5 Forms(行動Forms)。 如果您將XDP型表單轉譯為HTML5 Forms，則可繼續使用AEM 6.5 Forms上的功能。
+
+* 如果您有使用案例可以離線擷取資料，並在下次再上線時同步資料，則可繼續使用 [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 功能(AEM 6.5 Forms)。
+
++++
+
+
+
 
 
 +++ 8.開發人員環境
