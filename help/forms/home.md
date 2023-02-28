@@ -3,9 +3,9 @@ title: 簡介 [!DNL AEM Forms] as a Cloud Service
 description: 探索 AEM Forms 並了解此表單如何幫助您製作業務適用的文件和表單內容。 了解關於 Platform-as-a-Service (PaaS)，以及如何管理企業級數位表單和業務流程，以及連接表單至現有的資料來源。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
+source-git-commit: 6861f83b292dfb8a8e62e685830289e3a2eded2d
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '940'
 ht-degree: 7%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] 提供雲端原生的Platform as a Service(PaaS)解決方案，供企業建立、管理、發佈和更新複雜的數位表單，同時將提交的資料與後端流程、業務規則整合，並將資料儲存在外部資料存放區。
 
-## 資料收集
+## 數位化並簡化註冊和入門體驗
 
 您可以使用服務來建立和推出互動式及吸引人的數位表單。 例如，以想要將客戶註冊歷程數位化的組織為例。 他們有多個資料來源和現有客戶資料。 他們希望預先填入表單、新增表單的電子簽名，並將填入的表單封存為PDF檔案。 此外，該組織有多種列印表單(PDF forms)，他們也希望將所有列印表單轉換為數位表單。
 
