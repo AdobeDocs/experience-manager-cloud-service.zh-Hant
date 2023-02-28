@@ -3,33 +3,21 @@ title: 簡介 [!DNL AEM Forms] as a Cloud Service
 description: 探索AEM Forms，了解其如何協助您製作適合業務的表單和檔案。 了解Platform-as-a-Service(PaaS)，以及如何管理企業級數位表單和業務流程，以及如何將Forms連線至Adobe Sign和目前的資料來源。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
+source-git-commit: 2a464a0a11396a1948ba7211d5c0534769e6659c
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1109'
 ht-degree: 3%
 
 ---
 
-# 簡介 {#introduction}
+# AEM Formsas a Cloud Service簡介 {#introduction}
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] 提供雲端原生的Platform as a Service(PaaS)解決方案，供企業建立、管理、發佈和更新複雜的數位表單，同時將提交的資料與後端流程、業務規則整合，並將資料儲存在外部資料存放區。
 
 此服務始終是最新的，始終可用，並且始終學習。 組織可使用 [!DNL AEM Forms] as a Cloud Service，無需任何本地基礎架構，即可在雲中獲取所有這些功能。 此服務還使組織從複雜的升級週期中解脫出來，因為它始終具有最新的功能。
 
-Adobe [!DNL Experience Manager Forms as a Cloud Service] 是以客戶為中心的解決方案，可支援歷程的每個步驟：
+Adobe [!DNL Experience Manager Forms as a Cloud Service] 是以客戶為中心的解決方案，可支援客戶歷程的每個步驟：
 
-
-![](/help/forms/assets/customer-journey.png)
-
-
-
-
-
-## 輕鬆存取表單以提高認識
-
-在大型企業中，表單通常只需建立一次，然後通過複製到內容管理系統來重複使用。 保持大型表單資料庫的最新狀態並使其易於發現，這是一個相當大的挑戰。 AEM提供可自訂的Forms入口網站，確保客戶在網頁和行動裝置頻道間都能找到並存取所需表單。
-
-您可以自訂Forms Portal的外觀、品牌和標誌，以符合組織的特定需求。
 
 ## 數位化並簡化註冊和入門體驗
 
@@ -40,12 +28,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是以客戶為中心�
 ![回應式表單設計](/help/forms/assets/data-collection.jpeg "適用於多部裝置的最適化Forms體驗"){width="70%" align="center"}
 
 
-## 自動化後台工作流
-
-使用以表單為中心的工作流程，將表單資料的處理和路由功能自動化，傳送給各種利害關係人（例如經理或部門），以便進行審核、核准或進一步處理。
-
-這些工作流通過確保對表單資料進行一致且可審核的處理、自動執行手動任務、提供基於角色的訪問控制，並幫助遵守管理法規要求，幫助貴組織最大限度地降低風險並維護法規遵從性。
-
+在大型企業中，表單通常只需建立一次，然後通過複製到內容管理系統來重複使用。 保持大型表單資料庫的最新狀態並使其易於發現，這是一個相當大的挑戰。 AEM提供可自訂的Forms入口網站，確保客戶在網頁和行動裝置頻道間都能找到並存取所需表單。 您可以自訂Forms Portal的外觀、品牌和標誌，以符合組織的特定需求。
 
 ## 提供個人化的通訊
 
@@ -53,10 +36,16 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是以客戶為中心�
 
 使用AEM Forms，業務使用者可以自訂檔案範本，並將後端程式的資訊整合到範本中，借此建立引人入勝的個人化使用者體驗。 一組直覺式API可協助業務集規則，決定何時根據查詢或以定期間隔分批產生通訊。
 
+![個人化發票](/help/forms/assets/personalized-communication.jpeg "按需生成的個性化PDF發票"){width="70%" align="center"}
+
 可輕鬆生成個性化文檔，如收據、歡迎工具包和報表。 組織可以推動流向個性化的Web門戶，從而導致註冊或購買其他服務。
 
 
-![個人化發票](/help/forms/assets/personalized-communication.jpeg "按需生成的個性化PDF發票"){width="70%" align="center"}
+## 自動化後台工作流
+
+使用以表單為中心的工作流程，將表單資料的處理和路由功能自動化，傳送給各種利害關係人（例如經理或部門），以便進行審核、核准或進一步處理。
+
+這些工作流通過確保對表單資料進行一致且可審核的處理、自動執行手動任務、提供基於角色的訪問控制，並幫助遵守管理法規要求，幫助貴組織最大限度地降低風險並維護法規遵從性。
 
 
 ## 優化表單效能
