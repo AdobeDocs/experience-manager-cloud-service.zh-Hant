@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 59392c3a3dd7481d63ed0a79a018a4d6878011ed
 workflow-type: tm+mt
-source-wordcount: '3488'
+source-wordcount: '3490'
 ht-degree: 7%
 
 ---
@@ -57,9 +57,9 @@ ht-degree: 7%
 
 當您在影像上實作智慧型裁切時，Adobe會建議下列最佳實務並強制執行下列限制：
 
-| 限制類型 | 最佳實務 | 限制 |
+| 資產 — 限制類型 | 最佳實務 | 限制 |
 | --- | --- | --- |
-| 每個影像的智慧作業數 | 5 | 100 |
+| **影像**  — 每個影像的智慧作業數 | 5 | 100 |
 
 另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
 
