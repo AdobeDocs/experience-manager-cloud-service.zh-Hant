@@ -5,7 +5,7 @@ description: AEM Forms中的表格元件可讓您以回應行動配置的最適�
 seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
-source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 0%
@@ -53,6 +53,7 @@ AEM Forms在側欄的「元件」瀏覽器中提供「表格」元件，可讓�
 #### 添加、刪除或移動行
 
 若要新增、刪除或移動該列，請按一下該列的任何儲存格。 開啟內容瀏覽器 ![內容瀏覽器](/help/forms/assets/Smock_Layers_18_N.svg) 並選取對應的列，它會使用工具列選項來反白標示選取的列，您可以在其中上或下新增、刪除或移動該列。
+
 * 此 **[!UICONTROL 上移]** 和 **[!UICONTROL 下移]** 操作將選定行上下移動。
 
 * 此 **[!UICONTROL 添加列]** 操作將在選定行的下方添加一行。

@@ -2,7 +2,7 @@
 title: 使用自訂字型
 description: 使用自訂字型
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -47,7 +47,6 @@ ht-degree: 0%
        </configuration>
    </plugin>
    ```
-
 
 1. 新增 `<Font-Archive-Version>` 資訊清單輸入.pom檔案，並將版本的值設為1:
 

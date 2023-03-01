@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: e353fd386d2dfbc39c76a0ab56b50c44f3c54afc
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '2139'
 ht-degree: 2%
@@ -281,8 +281,7 @@ OData服務由其服務根URL識別。 若要在 [!DNL Experience Manager] as a 
    如果您選取 **[!UICONTROL API金鑰]** 作為驗證類型，請指定API金鑰的值。 API金鑰可以以要求標題或查詢參數的形式傳送。 從 **[!UICONTROL 位置]** 下拉式清單中，並指定標題的名稱或 **[!UICONTROL 參數名稱]** 欄位。
 
    >[!NOTE]
-   >
-   >您必須選取OAuth 2.0驗證類型才能連線 [!DNL Microsoft® Dynamics] 服務使用OData端點作為服務根。
+   您必須選取OAuth 2.0驗證類型才能連線 [!DNL Microsoft® Dynamics] 服務使用OData端點作為服務根。
 
 1. 點選 **[!UICONTROL 建立]** 為OData服務建立雲配置。
 
