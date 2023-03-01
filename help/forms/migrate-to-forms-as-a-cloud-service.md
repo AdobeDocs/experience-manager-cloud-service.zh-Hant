@@ -1,20 +1,20 @@
 ---
 title: 如何從AEM 6.5 Forms和AEM 6.4 Forms移轉至 [!DNL AEM Forms] as a Cloud Service環境？
-description: 從 [!DNL AEM Forms] 內部部署環境 [!DNL AEM Forms] as a Cloud Service環境
+description: 從 [!DNL AEM Forms] （內部部署和AMS環境）至 [!DNL AEM Forms] as a Cloud Service環境
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
+source-git-commit: 4416c43b408f576a547590796141a6b551e25681
 workflow-type: tm+mt
-source-wordcount: '1816'
-ht-degree: 5%
+source-wordcount: '1335'
+ht-degree: 2%
 
 ---
 
-# 移轉至[!DNL AEM Forms]as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# 從 [!DNL AEM Forms] （內部部署和AMS環境）至 [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
 您可以從以下來源移轉最適化Forms、主題、範本和雲端設定： <!-- AEM 6.3 Forms--> AEM 6.4 Forms on OSGi和AEM 6.5 Forms on OSGi to [!DNL AEM] as a Cloud Service。 移轉這些資產前，請使用移轉公用程式，將舊版中使用的格式轉換為 [!DNL AEM] as a Cloud Service。 執行移轉公用程式時，會更新下列資產：
 
@@ -29,20 +29,22 @@ ht-degree: 5%
 
 * (僅適用於AEM 6.3 Forms或升級至AEM 6.4 Forms或AEM 6.5 Forms的舊版環境)不支援以AEM 6.3 Forms或舊版中可用的現成可用範本和主題為基礎的適用性Forms [!DNL AEM Forms] as a Cloud Service。
 
-* 驗證步驟無法使用。先移除現有適用性Forms中的驗證步驟，再將這類表單移至Cloud Service環境。
+* Adobe Experience Manager Forms as a Cloud Service對Adobe Experience Manager 6.5 Forms(內部部署和Adobe管理服務)環境的現有功能進行了一些重大變更。 繼續移轉至服務之前， [了解這些可註解的變更](notable-changes.md) 和 [功能層級差異](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report) 根據貴組織需要的功能決定移轉。
 
-* 適用性Forms的簽名步驟無法使用。 從現有的最適化表單移除簽名步驟。設定最適化表單以使用瀏覽器內簽名體驗。它會顯示 Adobe Sign 合約，以便在提交最適化表單時於瀏覽器中簽署合約。瀏覽器內簽名體驗有助於提供更快的簽名體驗，為簽署者節省寶貴時間。
 
-## 與AEM 6.5 Forms的差異
 
-| 功能 | 與AEM 6.5 Forms的差異 |
+
+<!-- 
+## Difference with AEM 6.5 Forms 
+
+| Feature         | Difference with AEM 6.5 Forms    |
 |--------------|-----------|
-| HTML5 Forms(行動Forms) | 此服務不支援HTML5 Forms(行動Forms)。 如果您將XDP型表單轉譯為HTML5 Forms，則可繼續使用AEM 6.5 Forms上的功能。 |
-| 調適型表單 | <li><b>基於XSD的適用性Forms:</b> 此服務不支援HTML5 Forms(行動Forms)。 如果您將XDP型表單轉譯為HTML5 Forms，則可繼續使用AEM 6.5 Forms上的功能。 </li> <li><b> 適用性表單範本：</b> 使用程式的建置管道和對應的Git存放庫，以匯入現有的最適化表單範本。 </li><li><b>規則編輯器：</b> AEM Formsas a Cloud Service [規則編輯器](rule-editor.md#visual-rule-editor). Forms as a Cloud Service上無法使用程式碼編輯器。 移轉公用程式可協助您移轉具有自訂規則的表單（在程式碼編輯器中建立）。 此公用程式會將這些規則轉換為Forms as a Cloud Service上支援的自訂函式。 您可以使用可重複使用的函式搭配規則編輯器，繼續取得使用規則指令碼取得的結果。 `onSubmitError` 或 `onSubmitSuccess` 函式現在可作為規則編輯器中的動作使用。 </li> <li><b>草稿和提交：</b> 服務不會保留草稿和已提交適用性Forms的中繼資料。 </li> <li><b> 預填服務：</b> 預設情況下，預填服務會合併用戶端上的適用性表單資料，而非合併AEM 6.5 Forms中的伺服器上的資料。 此功能有助於縮短預填最適化表單的所需時間。 您一律可以設定在Adobe Experience Manager Forms伺服器上執行合併動作。 </li><li><b>提交操作：</b> 此 **以電子郵件方式PDF** 無法使用動作。 此 **電子郵件** 「提交」操作提供了發送附件和附加「記錄文檔(DoR)」和電子郵件的選項。 </li> |
-| 表單資料模型 | <li>Forms資料模型僅支援HTTP和HTTP端點來提交資料。 </li><li>Formsas a Cloud Service允許將Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive和支援一般CRUD（建立、讀取、更新和刪除）操作的服務用作資料儲存。 此服務不支援JDBC連接器、Mutual SSL for Rest連接器，以及x509憑證式SOAP資料來源驗證。 </li> |
-| automated forms conversion服務 | 服務不提供Automated forms conversion服務的元模型。 您可以 [從Automated forms conversion服務檔案下載](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model). |
-| 設定 | <li>依預設，電子郵件僅支援HTTP和HTTP通訊協定。 [聯絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 啟用用於發送電子郵件的埠，並為您的環境啟用SMTP協定。 </li> <li>如果您使用自訂套件組合，請先使用最新版的adobe-aemfd-docmanager重新編譯程式碼，再將這些套件組合與Forms as a Cloud Service搭配使用。</li> |
-| 文檔操作API（組合器服務） | 該服務不支援依賴於其他服務或應用程式的操作： <li>不支援將非PDF格式的文檔轉換為PDF格式。 例如，不支援Microsoft Word至PDF、不支援Microsoft Excel至PDF、不支援HTML至PDF</li><li>Adobe不支援以Distiller為基礎的轉換。 例如，將PostScript(PS)PDF</li><li>Forms不支援以服務為基礎的轉換。 例如，從XDP轉換為PDF forms。</li><li>此服務不支援將已簽名的PDF或透明PDF轉換為其他PDF格式。</li> |
+| HTML5 Forms (Mobile Forms)     | The service does not support HTML5 Forms (Mobile Forms). If you render your XDP-based forms as HTML5 Forms, you can continue using the feature on AEM 6.5 Forms. |
+| Adaptive Forms     | <li><b>XSD-Based Adaptive Forms:</b> The service does not support HTML5 Forms (Mobile Forms). If you render your XDP-based forms as HTML5 Forms, you can continue using the feature on AEM 6.5 Forms. </li> <li><b> Adaptive Form templates:</b> Use build pipeline and corresponding Git repository of your program to import existing Adaptive Form templates. </li><li><b>Rule editor:</b> AEM Forms as a Cloud Service provides a hardened [Rule editor](rule-editor.md#visual-rule-editor). The code editor is not available on Forms as a Cloud Service. The migration utility helps you migrate your forms that have custom rules (created in code editor). The utility converts such rules into custom functions supported on Forms as a Cloud Service. You can use the reusable functions with Rule editor to continue obtaining results obtained with rule scripts  The `onSubmitError` or `onSubmitSuccess` functions are now available as actions the Rule Editor. </li> <li><b>Drafts and submissions:</b> The service does not retain metadata for drafts and submitted Adaptive Forms. </li> <li><b> Prefill Service:</b> By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server. </li><li><b>Submit actions:</b> The **Email as PDF** action is not available. The **Email** submit action provide options to send attachments and attach Document of Record (DoR) with email. </li>|
+| Form Data Model | <li>Forms data model supports only HTTP and HTTPs endpoints to submit data. </li><li>Forms as a Cloud Service allows to use Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive, and services supporting general CRUD (Create, Read, Update, and Delete) operations as data stores. The service does not support JDBC connector, Mutual SSL for Rest connector, and x509 certificate-based authentication for SOAP data sources. </li>|
+| Automated Forms Conversion Service     | The service does not provide meta-model for Automated Forms Conversion Service. You can [download it from Automated Forms Conversion Service documentation](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).|
+|Configurations|<li>Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) to enable ports for sending emails and to enable SMTP protocol for your environment. </li> <li>If you use custom bundles, recompile your code with latest version of adobe-aemfd-docmanager before using these bundles with Forms as a Cloud Service.</li> |
+| Document Manipulation APIs (Assembler Service)| The service does not support operations dependent on other services or applications: <li>Conversion of documents in a non-PDF format to a PDF format is not supported. For example, Microsoft Word to PDF, Microsoft Excel to PDF, and HTML to PDF are not supported</li><li>Adobe Distiller-based conversions are not supported. For example, PostScript(PS) to PDF</li><li>Forms Service-based conversions are not supported. For example, XDP to PDF Forms.</li><li>The service does not support converting a Signed PDF or Transparent PDF to another PDF format.</li>| -->
 
 ## 必備條件 {#prerequisites}
 
@@ -56,7 +58,8 @@ ht-degree: 5%
 * 具有管理員權限的帳戶 [!DNL AEM Forms] as a Cloud Service和您的本地 [!DNL AEM Forms] 環境。
 * 下載並安裝Best Practice Analyzer、內容轉移工具，以及 [!DNL AEM Forms] 遷移實用程式從 [Software Distribution入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
 
-* 執行 [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration) 工具並修正回報的問題。
+* 執行 [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration) 工具並修正回報的問題。 如需與從Adobe Experience Manager Forms移轉至Adobe Experience Manager Formsas a Cloud Service相關的可能問題，請參閱 [AEM Pattern Detection for Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report).
+
 
 <!-- * Download the latest [compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases) for your [!DNL AEM Forms] version. -->
 
@@ -124,7 +127,7 @@ ht-degree: 5%
 
 * **工作流模型**:您可以在下列位置找到AEM工作流程模型： `/conf/global/settings/workflow/models/`. 例如，對於標題為WKND註冊添加路徑的工作流模型 `/conf/global/settings/workflow/models/wknd-registration`
 
-您可以新增列在下方的頂層資料夾路徑或特定資料夾路徑，如下所述。 它可讓您一次移轉特定資產以及所有資產和表單。
+您可以新增列在下方的頂層資料夾路徑或特定資料夾路徑，如下所述。 它可讓您移轉特定資產以及所有資產和表單。
 
 * /content/dam/formsanddocuments-fdm
 * /content/dam/formsanddocuments/themes

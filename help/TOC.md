@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: 4416c43b408f576a547590796141a6b551e25681
 workflow-type: tm+mt
-source-wordcount: '3946'
+source-wordcount: '3952'
 ht-degree: 95%
 
 ---
@@ -509,9 +509,8 @@ ht-degree: 95%
    + 設定和移轉 {#setup-configure-migrate}
       + [Cloud Service 環境入門](/help/forms/setup-forms-cloud-service.md)
       + [設定本機開發環境](/help/forms/setup-local-development-environment.md)
-      + [安裝及設定 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [設定統一的儲存連接器](/help/forms/configure-unified-storage-connector.md)
-      + [移轉至 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [從 [!DNL AEM 6.5 Forms] 或更早 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
       + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
    + 整合 {#integrate}
@@ -548,7 +547,6 @@ ht-degree: 95%
             + [建立主題](/help/forms/themes.md)
             + [參照資產](/help/forms/reference-assets.md)
             + [為最適化表單設計 JSON 綱要](/help/forms/adaptive-form-json-schema-form-model.md)
-            + [使用 Forms Designer](/help/forms/use-forms-designer.md)
             + [透過延遲載入改善大型表單的效能](/help/forms/lazy-loading-adaptive-forms.md)
          + 將元件新增至最適化表單{#add-components-to-an-adaptive-form}
             + [在最適化表單中使用驗證碼](/help/forms/captcha-adaptive-forms.md)
@@ -588,6 +586,8 @@ ht-degree: 95%
       + [通訊API簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [通訊 API - 同步處理](/help/forms/aem-forms-cloud-service-communications.md)
       + [通訊 API - 批次處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [安裝及設定 Forms Designer](/help/forms/installing-configuring-designer.md)
+      + [使用Forms Designer建立範本](/help/forms/use-forms-designer.md)
       + [在 PDF 文件中使用自訂字型](/help/forms/use-custom-fonts.md)
       + [已知問題、最佳實務和常見問題集](/help/forms/communications-known-issues-limitations.md)
    + 開發人員API參考 {#aem-forms-developer-api-reference}
