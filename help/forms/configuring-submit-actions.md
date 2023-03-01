@@ -2,9 +2,9 @@
 title: 如何設定最適化表單的提交動作
 description: 適用性表單提供多個提交動作。 「提交動作」可定義提交後最適化表單的處理方式。 您可以使用內建的提交動作，或建立自己的動作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6a124b476b4dd18ea38d35438866a07958918461
+source-git-commit: 7a608304dc93e53815b488de4087f26e346be4b5
 workflow-type: tm+mt
-source-wordcount: '3131'
+source-wordcount: '3133'
 ht-degree: 2%
 
 ---
@@ -165,31 +165,31 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## 提交至 SharePoint {#submit-to-sharedrive}
 
-此 **[!UICONTROL 提交至SharePoint]** 「提交動作」會將適用性表單與Microsoft SharePoint儲存空間連結。 您可以將表單資料檔案、附件或記錄檔案提交到連接的Microsoft Sharepoint儲存。 若要使用 **[!UICONTROL 提交至SharePoint]** 以最適化表單提交動作：
+此 **[!UICONTROL 提交至SharePoint]** 「提交動作」會將適用性表單與Microsoft® SharePoint儲存空間連結。 您可以將表單資料檔案、附件或記錄檔案提交到連接的Microsoft® Sharepoint儲存。 若要使用 **[!UICONTROL 提交至SharePoint]** 以最適化表單提交動作：
 
-1. [建立SharePoint設定](#create-a-sharepoint-configuration-create-sharepoint-configuration):它將AEM Forms連接到您的Microsoft Sharepoint儲存。
-2. [在適用性表單中使用提交至SharePoint提交動作](#use-sharepoint-configuartion-in-af):它會將您的適用性表單連結至設定的Microsoft SharePoint。
+1. [建立SharePoint設定](#create-a-sharepoint-configuration-create-sharepoint-configuration):它將AEM Forms連接到您的Microsoft® Sharepoint儲存。
+2. [在適用性表單中使用提交至SharePoint提交動作](#use-sharepoint-configuartion-in-af):它會將您的適用性表單連結至設定的Microsoft® SharePoint。
 
 ### 建立SharePoint設定 {#create-sharepoint-configuration}
 
-將AEM Forms連接到您的Microsoft Sharepoint儲存：
+將AEM Forms連接到您的Microsoft® Sharepoint儲存：
 
-1. 前往 **AEM Forms作者** 例項> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL MicrosoftSharePoint]**.
-1. 選取 **[!UICONTROL MicrosoftSharePoint]**，您會被重新導向至 **[!UICONTROL SharePoint瀏覽器]**.
+1. 前往 **AEM Forms作者** 例項> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. 選取 **[!UICONTROL Microsoft® SharePoint]**，您會被重新導向至 **[!UICONTROL SharePoint瀏覽器]**.
 1. 選取 **組態容器**. 配置儲存在選定的配置容器中。
 1. 按一下&#x200B;**[!UICONTROL 建立]**。SharePoint設定精靈隨即出現。
    ![Sharepoint配置](/help/forms/assets/sharepoint_configuration.png)
-1. 指定 **[!UICONTROL 標題]**, **[!UICONTROL 用戶端ID]**, **[!UICONTROL 用戶端密碼]** 和 **[!UICONTROL OAuth URL]**. 如需如何擷取用戶端ID、用戶端密碼、OAuth URL的租用戶ID的相關資訊，請參閱 [Microsoft檔案](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * 您可以擷取 `Client ID` 和 `Client Secret` 從Microsoft Azure入口網站取得。
-   * 在Microsoft Azure入口網站中，將重新導向URI新增為 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. 取代 `[author-instance]` 搭配您Author例項的URL。
+1. 指定 **[!UICONTROL 標題]**, **[!UICONTROL 用戶端ID]**, **[!UICONTROL 用戶端密碼]** 和 **[!UICONTROL OAuth URL]**. 如需如何擷取用戶端ID、用戶端密碼、OAuth URL的租用戶ID的相關資訊，請參閱 [Microsoft®檔案](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * 您可以擷取 `Client ID` 和 `Client Secret` 從Microsoft® Azure入口網站下載。
+   * 在Microsoft® Azure入口網站中，將重新導向URI新增為 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. 取代 `[author-instance]` 搭配您Author例項的URL。
    * 新增API權限 `offline_access` 和 `Sites.Manage.All` 提供讀/寫權限。
-   * 使用OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 取代 `<tenant-id>` 和 `tenant-id` 從Microsoft Azure入口網站取得。
+   * 使用OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 取代 `<tenant-id>` 和 `tenant-id` 從Microsoft® Azure入口網站下載。
 
    >[!NOTE]
    >
    > 此 **用戶密碼** 欄位為必填或選填，取決於您的Azure Active Directory應用程式配置。 如果您的應用程式設定為使用用戶端密碼，則必須提供用戶端密碼。
 
-1. 按一下 **[!UICONTROL Connect]**. 在成功連線上， `Connection Successful` 訊息。
+1. 按一下 **[!UICONTROL Connect]**. 成功連線時， `Connection Successful` 訊息。
 
 1. 現在，請選取 **SharePoint網站** > **檔案庫** > **SharePoint資料夾**，以儲存資料。
 
@@ -217,38 +217,38 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 1. 選取 **[!UICONTROL 儲存配置]**，即可儲存資料。
 1. 按一下 **[!UICONTROL 儲存]** 以儲存「提交」設定。
 
-提交表單時，資料將保存在指定的Microsoft Sharepoint儲存中。
+提交表單時，資料將保存在指定的Microsoft® Sharepoint儲存中。
 要儲存資料的資料夾結構為 `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## 提交至 OneDrive {#submit-to-onedrive}
 
-此 **[!UICONTROL 提交到OneDrive]** 「提交動作」會將適用性表單與Microsoft OneDrive連線。 您可以將表單資料、檔案、附件或記錄檔案提交到連接的Microsoft OneDrive儲存。 若要使用 [!UICONTROL 提交到OneDrive] 以最適化表單提交動作：
+此 **[!UICONTROL 提交到OneDrive]** 「提交動作」會將適用性表單與Microsoft® OneDrive連線。 您可以將表單資料、檔案、附件或記錄檔提交到連接的Microsoft® OneDrive儲存。 若要使用 [!UICONTROL 提交到OneDrive] 以最適化表單提交動作：
 
-1. [建立OneDrive配置](#create-a-onedrive-configuration-create-onedrive-configuration):它會將AEM Forms連接到您的Microsoft OneDrive儲存。
-2. [在適用性表單中使用「提交至OneDrive」提交操作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af):它會將您的適用性表單連結至設定的Microsoft OneDrive。
+1. [建立OneDrive配置](#create-a-onedrive-configuration-create-onedrive-configuration):它將AEM Forms連接到您的Microsoft® OneDrive儲存。
+2. [在適用性表單中使用「提交至OneDrive」提交操作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af):它會將您的適用性表單連接至設定的Microsoft® OneDrive。
 
 ### 建立OneDrive配置 {#create-onedrice-configuration}
 
-將AEM Forms連接到您的Microsoft OneDrive儲存：
+將AEM Forms連接到您的Microsoft® OneDrive儲存：
 
-1. 前往 **AEM Forms作者** 例項> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft OneDrive]**.
-1. 選取 **[!UICONTROL Microsoft OneDrive]**，您會被重新導向至 **[!UICONTROL OneDrive瀏覽器]**.
+1. 前往 **AEM Forms作者** 例項> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® OneDrive]**.
+1. 選取 **[!UICONTROL Microsoft® OneDrive]**，您會被重新導向至 **[!UICONTROL OneDrive瀏覽器]**.
 1. 選取 **組態容器**. 配置儲存在選定的配置容器中。
 1. 按一下&#x200B;**[!UICONTROL 建立]**。出現OneDrive配置嚮導。
 
    ![OneDrive配置螢幕](/help/forms/assets/onedrive-configuration.png)
 
-1. 指定 **[!UICONTROL 標題]**, **[!UICONTROL 用戶端ID]**, **[!UICONTROL 用戶端密碼]** 和 **[!UICONTROL OAuth URL]**. 如需如何擷取用戶端ID、用戶端密碼、OAuth URL的租用戶ID的相關資訊，請參閱 [Microsoft檔案](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * 您可以擷取 `Client ID` 和 `Client Secret` 從Microsoft Azure入口網站取得。
-   * 在Microsoft Azure入口網站中，將重新導向URI新增為 `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. 取代 `[author-instance]` 搭配您Author例項的URL。
+1. 指定 **[!UICONTROL 標題]**, **[!UICONTROL 用戶端ID]**, **[!UICONTROL 用戶端密碼]** 和 **[!UICONTROL OAuth URL]**. 如需如何擷取用戶端ID、用戶端密碼、OAuth URL的租用戶ID的相關資訊，請參閱 [Microsoft®檔案](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * 您可以擷取 `Client ID` 和 `Client Secret` 從Microsoft® Azure入口網站下載。
+   * 在Microsoft® Azure入口網站中，將重新導向URI新增為 `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. 取代 `[author-instance]` 搭配您Author例項的URL。
    * 新增API權限 `offline_access` 和 `Files.ReadWrite.All` 提供讀/寫權限。
-   * 使用OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 取代 `<tenant-id>` 和 `tenant-id` 從Microsoft Azure入口網站取得。
+   * 使用OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 取代 `<tenant-id>` 和 `tenant-id` 從Microsoft® Azure入口網站下載。
 
    >[!NOTE]
    >
    > 此 **用戶密碼** 欄位為必填或選填，取決於您的Azure Active Directory應用程式配置。 如果您的應用程式設定為使用用戶端密碼，則必須提供用戶端密碼。
 
-1. 按一下 **[!UICONTROL Connect]**. 在成功連線上， `Connection Successful` 訊息。
+1. 按一下 **[!UICONTROL Connect]**. 成功連線時， `Connection Successful` 訊息。
 
 1. 現在，請選取 **[!UICONTROL OneDrive容器]** > **[OneDrive資料夾]**  來儲存資料。
 
@@ -276,12 +276,12 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 1. 選取 **[!UICONTROL 儲存配置]**，即可儲存資料。
 1. 按一下 **[!UICONTROL 儲存]** 以儲存「提交」設定。
 
-提交表單時，資料將保存在指定的Microsoft OneDrive儲存中。
+提交表單時，資料將保存在指定的Microsoft® OneDrive儲存中。
 要儲存資料的資料夾結構為 `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## 提交到 Azure Blob 儲存體 {#submit-to-azure-blob-storage}
 
-此 **[!UICONTROL 提交至Azure Blob儲存]**  「提交動作」會將適用性表單與Microsoft Azure入口網站連線。 您可以將表單資料、檔案、附件或記錄檔案提交到連接的Azure儲存容器。 要使用Azure Blob儲存的提交操作：
+此 **[!UICONTROL 提交至Azure Blob儲存]**  「提交動作」會將適用性表單與Microsoft® Azure入口網站連線。 您可以將表單資料、檔案、附件或記錄檔案提交到連接的Azure儲存容器。 要使用Azure Blob儲存的提交操作：
 
 1. [建立Azure Blob儲存容器](#create-a-azure-blob-storage-container-create-azure-configuration):它會將AEM Forms連接至Azure儲存容器。
 2. [在最適化表單中使用Azure儲存配置 ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af):它會將您的適用性表單連接至設定的Azure儲存容器。
@@ -298,7 +298,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 1. 指定 **[!UICONTROL 標題]**, **[!UICONTROL Azure儲存帳戶]** 和 **[!UICONTROL Azure訪問密鑰]**.
 
-   * 您可以擷取 `Azure Storage Account` 名稱和 `Azure Access key` 從Microsoft Azure入口網站的儲存帳戶。
+   * 您可以擷取 `Azure Storage Account` 名稱和 `Azure Access key` 從Microsoft® Azure入口網站的儲存帳戶。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
