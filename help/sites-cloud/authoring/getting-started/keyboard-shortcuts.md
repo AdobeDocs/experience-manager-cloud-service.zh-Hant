@@ -2,10 +2,10 @@
 title: 控制台的鍵盤快速鍵
 description: 使用這些鍵盤快速鍵進行編寫時節省時間
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+source-git-commit: 1698b78c3d58714c6e1d354143964741ee17d60e
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 4%
+source-wordcount: '376'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 4%
 |  | `Left Arrow` | 向上導航樹結構/折疊樹節點 |
 |  | `Down Arrow` | 下移同一層的頁面清單 |
 |  | `Up Arrow` | 上移同一層的頁面清單 |
-| 控制台 — 列視圖 | `Shift-Up/Down Arrow` | 上移同一層的頁面清單 |
+| 控制台 — 列視圖 | `Shift-Up/Down Arrow` | 上/下移動，並選取相同層級的頁面清單 |
 |  | `Esc` | 上移同一層的頁面清單 |
 | 主控台 | `?` | 鍵盤快速鍵說明 |
 |  | `/` | 叫用 [搜尋](/help/sites-cloud/authoring/getting-started/search.md) |
