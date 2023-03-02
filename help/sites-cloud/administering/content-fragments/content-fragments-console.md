@@ -5,10 +5,10 @@ landing-page-description: 了解如何從內容片段主控台管理內容片段
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
+source-git-commit: db81eac064d4616cb6b1beae85abc0c55a993fce
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 1%
+source-wordcount: '913'
+ht-degree: 3%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 1%
             * 顯示有關引用的資訊
             * 顯示片段語言版本的相關資訊
          * 您可以 [選取一或多個內容片段以顯示可用動作](#actions-selected-content-fragment)
-      * 您可以選取欄標題，以根據該欄來排序表格；再次選取，在遞增和遞減之間切換
+      * 您可以選取欄標題，以根據該欄來排序表格；再次選取，在遞增和遞減之間切換。 目前， **標題**, **已修改**，和 **修改者** 欄。
    * **[建立](#creating-new-content-fragment)** 新內容片段
    * [篩選](#filtering-fragments) 內容片段會根據謂語的選取，並儲存篩選器以供日後使用
    * [搜尋](#searching-fragments) 內容片段
@@ -144,7 +144,7 @@ ht-degree: 1%
 
 ![內容片段主控台 — 欄設定](assets/cfc-console-column-selection.png)
 
-## 建立新內容片段 {#creating-new-content-fragment}
+## 正在建立新內容片段 {#creating-new-content-fragment}
 
 選取 **建立** 開啟了緊湊型 **新內容片段** 對話框：
 
