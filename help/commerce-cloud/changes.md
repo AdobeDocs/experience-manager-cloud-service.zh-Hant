@@ -2,10 +2,10 @@
 title: 商務整合架構(CIF)附加元件的重大變更
 description: 與舊版CIF相比，Commerce Integration Framework(CIF)有顯著變更。
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b81ac7529e7757fbd9f9fbc48e47e740ab9ecbf3
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 2%
+source-wordcount: '454'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 Adobe Experience Manager as a Cloud Service提供許多管理AEM專案的新功能，並帶來許多可能性。 若要進一步了解這些功能，請遵循 [Experience Manageras a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
-本檔案著重說明Commerce Integration Framework(CIF)附加元件與舊版CIF之間的重要差異，主要稱為CIF Classic(Quickstart)和CIF開放原始碼。
+本檔案著重說明Commerce Integration Framework(CIF)附加元件與舊版CIF(稱為CIF Classic(Quickstart))與CIF開放原始碼之間的重要差異。
 
 ## 安裝和更新
 
@@ -25,7 +25,7 @@ AEM CIF附加元件會透過Cloud Manager安裝。 安裝需要CIF卡，但可�
 
 * CIF Classic:無需安裝，CIF是快速入門的一部分。 CIF更新是一般AEM或Service Pack更新的一部分
 * AEM內部部署的CIF開放原始碼：透過GitHub進行安裝。 更新是手動更新/維護工作的一部分。
-* AEM Adobe Managed Services的CIF開放原始碼：透過Customer Success Manager進行安裝。 更新是手動更新/維護工作的一部分。
+* AEM Adobe Managed Services的CIF開放原始碼：透過Adobe帳戶團隊進行安裝。 更新是手動更新/維護工作的一部分。
 
 ## 端點配置
 
@@ -38,12 +38,12 @@ AEM CIF附加元件會透過Cloud Manager安裝。 安裝需要CIF卡，但可�
 
 ## CIF Venia項目部署
 
-中可用的專案 [Cloud Manager Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) 部署完成(透過 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html)
+中可用的專案 [Cloud Manager Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) 部署完成(透過 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 
 **舊版CIF**
 
-* CIF Classic:透過AEM套件安裝
-* CIF開放原始碼：透過 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* CIF Classic:透過安裝AEM套件
+* CIF開放原始碼：透過 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 
 ## 產品目錄資料
 

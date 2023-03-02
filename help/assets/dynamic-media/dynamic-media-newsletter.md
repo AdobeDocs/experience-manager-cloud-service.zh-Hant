@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b81ac7529e7757fbd9f9fbc48e47e740ab9ecbf3
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 0%
@@ -52,7 +52,7 @@ ht-degree: 0%
    * 觀看Dynamic Media Classic的隨需技能建立網路研討會。
    * 從2020線上Adobe Summit檢視Dynamic Media課程。
    * 進一步了解Adobe的免費Dynamic Media Classic稽核。
-   * 集合 `John Monroe`，客戶成功服務高級計畫經理。
+   * 集合 `John Monroe`,Adobe客戶團隊高級計畫經理。
 
 * **[2020年2月第2期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
