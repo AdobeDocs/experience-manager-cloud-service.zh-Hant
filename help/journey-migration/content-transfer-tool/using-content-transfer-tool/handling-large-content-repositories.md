@@ -2,10 +2,10 @@
 title: 處理大型內容存放庫
 description: 本節介紹如何處理大型內容儲存庫
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
+source-git-commit: 5043caa54c3ba4553245a948758ee7da40c1e227
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1878'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 >id="aemcloud_ctt_precopy"
 >title="處理大型內容存放庫"
 >abstract="為了顯著加快內容轉移活動的提取和擷取階段以將內容移至AEMas a Cloud Service,CTT可以利用AzCopy作為可選的預複製步驟。 配置此預先步驟後，在提取階段中，AzCopy將Blob從Amazon S3或Azure Blob儲存複製到遷移集Blob儲存。 在獲取階段，AzCopy將Blob從遷移集Blob儲存區複製到目標AEMas a Cloud ServiceBlob儲存區。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step" text="以AzCopy作為預複製步驟入門"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="以AzCopy作為預複製步驟入門"
 
 使用內容轉移工具(CTT)複製大量Blob可能需要數天時間。
 為了大幅加快內容轉移活動的提取和擷取階段，以將內容移至AEMas a Cloud Service,CTT可運用 [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 作為選用的預先複製步驟。 當來源AEM例項設定為使用Amazon S3、Azure Blob儲存資料存放區或檔案資料存放區時，可使用此預先複製步驟。 預複製步驟對於第1次完全擷取和擷取最有效。 但是，不建議對後續追加使用預拷貝（如果追加大小小於200GB），因為這可能會為整個過程增加時間。 配置此預先步驟後，在提取階段中，AzCopy將Blob從Amazon S3、Azure Blob儲存或檔案資料儲存複製到遷移集blob儲存。 在獲取階段，AzCopy將Blob從遷移集Blob儲存區複製到目標AEMas a Cloud ServiceBlob儲存區。
@@ -26,19 +26,20 @@ ht-degree: 0%
 
 開始之前，請依照下節了解重要考量事項：
 
+* 從CTT 2.0.16版開始，安裝套件組合時會自動完成預先複製設定。 此外，如果移轉集大小大於200GB，提取程式會自動運用預復本功能。 azcopy.config檔案建立在crx-quickstart/cloud-migration/目錄中。 如果您使用CTT 2.0.16版或更新版本，則不需要手動執行預復設定。
+
 * 來源AEM版本必須為6.3 - 6.5。
 
-* 來源AEM資料存放區已設定為使用Amazon S3或Azure Blob儲存。 如需詳細資訊，請參閱 [在AEM 6中配置節點儲存區和資料儲存區](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en).
+* 來源AEM資料存放區已設定為使用Amazon S3或Azure Blob儲存。 如需詳細資訊，請參閱 [在AEM 6中配置節點儲存區和資料儲存區](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html).
 
 * 每個移轉集都會複製整個資料存放區，因此只應使用單一移轉集。
 
 * 您需要存取權才能安裝 [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 在執行來源AEM例項的執行個體（或VM）上。
 
-* 資料儲存垃圾收集已在源上前7天內運行。 如需詳細資訊，請參閱 [資料儲存垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).
+* 資料儲存垃圾收集已在源上前7天內運行。 如需詳細資訊，請參閱 [資料儲存垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
 
-### 使用AzCopy時的其他注意事項
-
-CTT提取期間，Windows目前不支援使用AzCopy的預複製。
+>[!NOTE]
+>目前，文字轉譯在Windows電腦上無法正常運作，這是已知問題。 不過，我們將在即將發行的版本中解決此問題，並提供相關修正。
 
 ### 如果來源AEM例項設定為使用Amazon S3或Azure Blob儲存資料存放區，則需額外考量 {#additional-considerations-amazons3-azure}
 
@@ -55,6 +56,9 @@ CTT提取期間，Windows目前不支援使用AzCopy的預複製。
 * 一旦使用AzCopy複製現有資料儲存，請禁用它進行增量或追加提取。
 
 ## 設定使用AzCopy作為預複製步驟 {#setting-up-pre-copy-step}
+
+>[!NOTE]
+>從CTT 2.0.16版開始，安裝套件組合時會自動完成預先複製設定。 此外，如果移轉集大小大於200GB，提取程式會自動運用預復本功能。 azcopy.config檔案建立在crx-quickstart/cloud-migration/目錄中。 如果您想要手動更新檔案的設定，請檢閱以下各節。
 
 請遵照本節所述，了解如何設定使用AzCopy作為內容轉移工具的預拷貝步驟，以將內容遷移到AEMas a Cloud Service:
 
@@ -161,7 +165,7 @@ azCopyPath屬性必須包含源AEM實例上安裝azCopy命令行工具的位置�
 >如果AzCopy未正確配置，您將在日誌中看到以下消息：
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
-1. 從CTT UI開始擷取。 請參閱 [內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 和 [提取程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en) 以取得更多詳細資訊。
+1. 從CTT UI開始擷取。 請參閱 [內容轉移工具快速入門](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) 和 [提取程式](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 以取得更多詳細資訊。
 
 1. 確認以下行已打印在提取日誌中：
 
@@ -197,7 +201,7 @@ AzCopy會在後續運行時自動跳過在錯誤之前複製的任何Blob，而�
 
 ### 5.使用AzCopy獲取 {#ingesting-azcopy}
 
-請參閱 [將內容擷取至Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html)
+請參閱 [將內容擷取至Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
 有關從Cloud Acceleration Manager(CAM)將內容內嵌到目標中的一般資訊，包括在「新建獲取」對話框中有關如何使用AzCopy（預複製）的說明。
 
 為了在獲取過程中利用AzCopy，我們要求您使用至少2021.6.5561版的AEMas a Cloud Service版。
