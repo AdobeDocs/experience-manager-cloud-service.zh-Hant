@@ -1,9 +1,9 @@
 ---
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
-source-git-commit: e5a9f497e753f328ff14487f4985541c1c77ae0e
+source-git-commit: 74ccf3a22043bfc7ac47e8fa1c9d064ad88a886e
 workflow-type: tm+mt
-source-wordcount: '3259'
+source-wordcount: '3293'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->此功能預計在2月整個月逐步推出給客戶。
+>此功能預計會逐步推出給客戶使用。
 
 為了部署變更，目前的雲端開發環境需要使用採用廣泛程式碼安全性和品質規則的程式，稱為CI/CD管道。 對於需要快速和迭代更改的情況，Adobe引入了快速開發環境（簡稱RDE）。
 
@@ -264,7 +264,7 @@ RDE一次支援單一專案。 由於程式碼會從本機開發環境同步至R
 
 此類型的設定需要整個資料夾結構的壓縮檔案形式。
 
-從 `dispathcer` AEM專案的模組，您可以執行下列maven命令來壓縮dispatcher設定：
+從 `dispatcher` AEM專案的模組，您可以執行下列maven命令來壓縮dispatcher設定：
 
 `mvn clean package`
 
@@ -279,6 +279,10 @@ RDE一次支援單一專案。 由於程式碼會從本機開發環境同步至R
 >[!TIP]
 >
 >上述命令假設您部署 [WKND](https://github.com/adobe/aem-guides-wknd) 專案的dispatcher設定。 請務必更換 `X.X.X` 部署專案的dispatcher設定時，使用對應的WKND專案版本號碼或您專屬的版本號碼。
+
+>[!NOTE]
+>
+>RDE支援「彈性模式」調度器設定，但不支援「舊式模式」調度器設定。 請參閱 [dispatcher檔案](/help/implementing/dispatcher/disp-overview.md#validation-debug) 以取得這兩種模式的相關資訊。 您也可以參閱 [遷移到靈活模式](/help/implementing/dispatcher/validation-debug.md#migrating)，如果尚未這麼做。
 
 成功的部署會產生類似下列的回應：
 
