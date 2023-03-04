@@ -2,9 +2,9 @@
 title: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 56fe4fde38fd6662c30b313a887f9740e919e0dc
+source-git-commit: 8ce5b0a163c8ddf7f9c9672eff6d752a58c464bb
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '1036'
 ht-degree: 1%
 
 ---
@@ -15,20 +15,22 @@ ht-degree: 1%
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.7的發行日期： [!DNL Workfront for Experience Manager enhanced connector] 是2023年2月2日。
+最新版本1.9.8的發行日期： [!DNL Workfront for Experience Manager enhanced connector] 是2023年3月03日。
 
 ## 發行重點 {#release-highlights}
 
 最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包含下列更新：
 
-* 安裝1.9.6版之後，中繼資料編輯器沒有列出Workfront自訂表單屬性。
+* 在Workfront中建立專案連結資料夾時，改善Experience Manager的效能。
 
-* 開發控制台隨即顯示 `/content/dam/jcr:content/metadata/wfProjectURL not found` 安裝Workfront enhanced連接器並開啟「資產」首頁後，出現錯誤訊息。
+* Workfront中的注釋刪除現在反映在Experience Manager中。
+
+* 在Experience Manager上as a Cloud Service管理阻止新客戶的功能（從配置連接器開始）。
 
 
 >[!IMPORTANT]
 >
->Adobe建議您 [升級至最新1.9.7版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建議您 [升級至最新1.9.8版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知問題 {#known-issues}
 
@@ -37,6 +39,14 @@ ht-degree: 1%
 * 使用傳統Workfront體驗時， **[!UICONTROL 傳送至]** 選項 **[!UICONTROL 更多]** 下拉式清單不允許您選取Experience Manager內的目標目標。 此 **[!UICONTROL 傳送至]** 選項可使用 **[!UICONTROL 文檔操作]** 下拉式清單。 此 **[!UICONTROL 傳送至]** 選項可正確運作 **[!UICONTROL 更多]** 下拉式清單以及 **[!UICONTROL 文檔操作]** 新Workfront體驗中提供的下拉式清單。
 
 ## 舊版 {#previous-releases}
+
+### 2022年1月發行 {#january-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.7版（於2023年2月02日發行）包含下列更新：
+
+* 安裝1.9.6版之後，中繼資料編輯器沒有列出Workfront自訂表單屬性。
+
+* 開發控制台隨即顯示 `/content/dam/jcr:content/metadata/wfProjectURL not found` 安裝Workfront enhanced連接器並開啟「資產」首頁後，出現錯誤訊息。
 
 ### 2022年12月發行 {#december-2022-release}
 
