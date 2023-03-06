@@ -2,10 +2,10 @@
 title: 過時和移除的功能
 description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已過時和已移除功能的發行說明。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: c4809bcbeae5339427b1da588021606d18b482a5
-workflow-type: ht
-source-wordcount: '666'
-ht-degree: 100%
+source-git-commit: d848c1a9369a91cbfd0105e4acf2fb390ca20b1a
+workflow-type: tm+mt
+source-wordcount: '673'
+ht-degree: 99%
 
 ---
 
@@ -60,6 +60,8 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | [!DNL Foundation] | 支援 Apache Sling 資料來源 (OSGi 套件組合 org.apache.sling.datasource) | N/A | 已移除 |
 | [!DNL Foundation] | 支援 JST 指令碼範本 (OSGi 套件組合 org.apache.sling.scripting.jst) | N/A | 已移除 |
 | [!DNL Foundation] | 支援 Apache Felix Http Whiteboard | OSGi Http Whiteboard | 2022 年 3 月 |
+| [!DNL Foundation] | 支援com.adobe.granite.oauth.server | Adobe IMS整合 | 2023 年 3 月 |
+
 
 ## Java API {#java-api}
 
