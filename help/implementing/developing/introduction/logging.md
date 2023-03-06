@@ -2,7 +2,7 @@
 title: 記錄AEMas a Cloud Service
 description: 了解如何使用AEMas a Cloud Service記錄功能，為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 37c948b8906bcf6dd7ee3acdc6c6b7d211a33058
+source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 3%
