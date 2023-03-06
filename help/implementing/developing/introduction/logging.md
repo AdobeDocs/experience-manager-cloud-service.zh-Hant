@@ -2,10 +2,10 @@
 title: 記錄AEMas a Cloud Service
 description: 了解如何使用AEMas a Cloud Service記錄功能，為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 37c948b8906bcf6dd7ee3acdc6c6b7d211a33058
 workflow-type: tm+mt
 source-wordcount: '2351'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -61,7 +61,7 @@ AEM as a Cloud Service提供對Java日誌陳述式的訪問。 AEM應用程式�
 </tr>
 <tr>
 <td>
-分段</td>
+測試</td>
 <td>
 警告</td>
 <td>
@@ -71,7 +71,7 @@ AEM as a Cloud Service提供對Java日誌陳述式的訪問。 AEM應用程式�
 <ul>
 <li> 地方開發</li>
 <li>開發</li>
-<li>分段</li>
+<li>測試</li>
 </ul></td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ AEM as a Cloud Service提供對Java日誌陳述式的訪問。 AEM應用程式�
 <ul>
 <li> 地方開發</li>
 <li>開發</li>
-<li>分段</li>
+<li>測試</li>
 <li>生產</li>
 </ul></td>
 </tr>
@@ -163,7 +163,7 @@ AEM Java記錄檔定義為OSGi設定，因此可使用執行模式資料夾鎖�
 }
 ```
 
-### 分段 {#stage}
+### 測試 {#stage}
 
 /apps/my-app/config.stage/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
 
@@ -396,23 +396,23 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 mod_rewrite日誌級別由檔案中的變數REWRITE_LOG_LEVEL定義 `conf.d/variables/global.var`.
 
-它可以設定為Error、Warn、Info、Debug和Trace1 - Trace8，預設值為Warn。 若要對RewriteRules進行除錯，建議將記錄層級提升為Trace2。
+它可設為error、warn、info、debug和trace1 - trace8，預設值為warn。 若要對RewriteRules進行除錯，建議將記錄層級提升為trace2。
 
 請參閱 [mod_rewrite模組檔案](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) 以取得更多資訊。
 
 若要根據環境設定記錄層級，請在global.var檔案中使用適當的條件分支，如下所述：
 
 ```
-Define REWRITE_LOG_LEVEL Debug
+Define REWRITE_LOG_LEVEL debug
   
 <IfDefine ENVIRONMENT_STAGE>
   ...
-  Define REWRITE_LOG_LEVEL Warn
+  Define REWRITE_LOG_LEVEL warn
   ...
 </IfDefine>
 <IfDefine ENVIRONMENT_PROD>
   ...
-  Define REWRITE_LOG_LEVEL Error
+  Define REWRITE_LOG_LEVEL error
   ...
 </IfDefine>
 ```
@@ -474,23 +474,23 @@ Define REWRITE_LOG_LEVEL Debug
 
 Dispatcher記錄層級由檔案中的變數DISP_LOG_LEVEL定義 `conf.d/variables/global.var`.
 
-它可以設定為Error、Warn、Info、Debug和Trace1，預設值為Warn。
+它可設為error、warn、info、debug和trace1，預設值為warn。
 
 雖然AEM記錄支援數個其他記錄粒度層級，但Dispatcheras a Cloud Service建議使用下列層級。
 
 若要根據環境設定記錄層級，請在 `global.var` 檔案，如下所述：
 
 ```
-Define DISP_LOG_LEVEL Debug
+Define DISP_LOG_LEVEL debug
   
 <IfDefine ENVIRONMENT_STAGE>
   ...
-  Define DISP_LOG_LEVEL Warn
+  Define DISP_LOG_LEVEL warn
   ...
 </IfDefine>
 <IfDefine ENVIRONMENT_PROD>
   ...
-  Define DISP_LOG_LEVEL Error
+  Define DISP_LOG_LEVEL error
   ...
 </IfDefine>
 ```
@@ -501,7 +501,7 @@ Define DISP_LOG_LEVEL Debug
 
 AEM雲端服務的as a Cloud Service記錄檔可透過Cloud Manager介面下載，或使用Adobe I/O命令列介面追蹤命令列的記錄檔，以存取。 如需詳細資訊，請參閱 [Cloud Manager記錄檔案](/help/implementing/cloud-manager/manage-logs.md).
 
-### 本機SDK {#local-sdk}
+### 本機 SDK {#local-sdk}
 
 AEMas a Cloud ServiceSDK提供記錄檔以支援本機開發。
 
@@ -562,7 +562,7 @@ Apache層記錄檔（包括Dispatcher）位於Docker容器中，該容器保有D
 
 >[!NOTE]
 >
->無法從專用的輸出IP地址使用Splunk轉發功能。
+>專用輸出 IP 位址無法提供 Splunk 轉送功能。
 
 除了預備/生產環境外，您還應確定初始要求包含所有應啟用的開發環境。 Splunk必須有SSL憑證，且必須公開。
 

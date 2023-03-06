@@ -4,10 +4,10 @@ description: 使用Dispatcher工具（舊版）進行驗證和除錯
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: deb604c6edfe4feb2ded00827fd2f96638e9335b
+source-git-commit: 37c948b8906bcf6dd7ee3acdc6c6b7d211a33058
 workflow-type: tm+mt
 source-wordcount: '2345'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -393,26 +393,26 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 ```
 # Log level for the dispatcher
 #
-# Possible values are: Error, Warn, Info, Debug and Trace1
-# Default value: Warn
+# Possible values are: error, warn, info, debug and trace1
+# Default value: warn
 #
-# Define DISP_LOG_LEVEL Warn
+# Define DISP_LOG_LEVEL warn
  
 # Log level for mod_rewrite
 #
-# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
-# Default value: Warn
+# Possible values are: error, warn, info, debug and trace1 - trace8
+# Default value: warn
 #
 # To debug your RewriteRules, it is recommended to raise your log
-# level to Trace2.
+# level to trace2.
 #
 # More information can be found at:
 # https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
 #
-# Define REWRITE_LOG_LEVEL Warn
+# Define REWRITE_LOG_LEVEL warn
 ```
 
-在本機執行Dispatcher時，記錄會直接列印至終端輸出。 大部分情況下，您會希望這些記錄處於DEBUG中，這可透過在執行Docker時將Debug層級傳遞為參數來完成。 例如： `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+在本機執行Dispatcher時，記錄會直接列印至終端輸出。 大部分情況下，您會希望這些記錄處於DEBUG中，這可透過在執行Docker時將Debug層級傳遞為參數來完成。 例如：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`。
 
 雲端環境的記錄檔會透過Cloud Manager中可用的記錄服務公開。
 
