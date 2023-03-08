@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5815dacd2806cc7886aa0c7c5c9fd329306b3e1b
+source-git-commit: 59cc80d66880398bb7c7a065a7c9d4baee5141db
 workflow-type: tm+mt
-source-wordcount: '3955'
+source-wordcount: '3960'
 ht-degree: 95%
 
 ---
@@ -69,6 +69,8 @@ ht-degree: 95%
          + [2020.2.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + AEMaaCS維護髮行說明 {#maintenance}
       + [最新維護髮行說明](/help/release-notes/maintenance/latest.md)
+      + 2023 {#2023}
+         + [2023.1.0的維護髮行說明](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Cloud Manager 發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
@@ -698,7 +700,7 @@ ht-degree: 95%
       + [用於內容片段的 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [管理 GraphQL 端點](/help/headless/graphql-api/graphql-endpoint.md)
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
-      + [持續的 GraphQL 查詢](/help/headless/graphql-api/persisted-queries.md)
+      + [持續性 GraphQL 查詢](/help/headless/graphql-api/persisted-queries.md)
       + [最佳化GraphQL查詢](/help/headless/graphql-api/graphql-optimization.md)
       + [更新內容片段以最佳化GraphQL篩選](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [範例 GraphQL 查詢](/help/headless/graphql-api/sample-queries.md)
