@@ -2,9 +2,9 @@
 title: 管理活動
 description: 「活動」主控台可讓您建立、組織和管理品牌的行銷活動
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '2019'
 ht-degree: 18%
 
 ---
@@ -81,6 +81,10 @@ ht-degree: 18%
 * **** 持續時間：套用活動的時段。
 * **** 優先順序：活動的相對優先順序。當活動提供相同使用者區段的內容時，優先順序較高的活動優先。
 * **** 目標量度：如果選取Adobe target作為定位引擎，您可以將成功度量新增至活動。需要一個成功度量。
+
+>[!NOTE]
+>
+>才能 **選擇目標配置** 你肯定在 **Target活動作者** 群組。
 
 >[!NOTE]
 >
