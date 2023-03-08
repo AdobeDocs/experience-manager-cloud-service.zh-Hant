@@ -2,9 +2,9 @@
 title: 處理大型內容存放庫
 description: 本節介紹如何處理大型內容儲存庫
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 5043caa54c3ba4553245a948758ee7da40c1e227
+source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1846'
 ht-degree: 2%
 
 ---
@@ -37,9 +37,6 @@ ht-degree: 2%
 * 您需要存取權才能安裝 [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 在執行來源AEM例項的執行個體（或VM）上。
 
 * 資料儲存垃圾收集已在源上前7天內運行。 如需詳細資訊，請參閱 [資料儲存垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
-
->[!NOTE]
->目前，文字轉譯在Windows電腦上無法正常運作，這是已知問題。 不過，我們將在即將發行的版本中解決此問題，並提供相關修正。
 
 ### 如果來源AEM例項設定為使用Amazon S3或Azure Blob儲存資料存放區，則需額外考量 {#additional-considerations-amazons3-azure}
 
