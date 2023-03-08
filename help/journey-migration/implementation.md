@@ -1,19 +1,19 @@
 ---
-title: 實作階段
+title: 實施階段
 description: 確定您的程式碼和內容已準備好移轉至雲端
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 8%
+source-wordcount: '2353'
+ht-degree: 9%
 
 ---
 
-# 實作階段 {#implementation-phase}
+# 實施階段 {#implementation-phase}
 
 在歷程的實作階段中，您將探索各種工具，讓您的程式碼和內容可隨時移至AEMas a Cloud Service。
 
-## 迄今為止的故事 {#story-so-far}
+## 到目前為止 {#story-so-far}
 
 在歷程的前幾個階段，你 [熟悉AEM as a Cloud Service中的變更](/help/journey-migration/getting-started.md)，以及判斷您的部署是否已準備好透過移至雲端 [準備階段](/help/journey-migration/readiness.md).
 
@@ -160,7 +160,12 @@ Cloud Manager管道支援針對預備環境執行的測試。
 * 追加所花費的總時間 [摘取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
 * 追加所花費的總時間 [擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
 
-更重要的資料點是完成 [使用者對應](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)，如果這與內容移轉結合。 您可以將此資料點納入考量，以獲得更切合實際的估計，因為它將新增至整體提取時間軸，且在追加期間可能不需要執行它。
+
+<!-- Alexandru: hiding this for now
+
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+
+-->
 
 這些資料點也可協助您 [建立KPI](/help/journey-migration/readiness.md#establish-kpis) 以及其他與移轉相關的任務。
 
@@ -238,7 +243,7 @@ Cloud Manager管道支援針對預備環境執行的測試。
    * 克隆製作和發佈 — 群集或發佈場中每個節點
 * 選擇要移轉的內容子集，以便：
    * 它是所有可用內容類型的組合
-   * 包含所有使用者和群組，以防萬一 [使用者對應](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) 必填
+   * 包含所有使用者和群組
 * 包括25%的內容或最多1 TB的內容（以較少者為準）。
 * 至少執行一個完整和 [追加](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 移轉，從生產原地複製到AEMas a Cloud Service非生產環境
 * 解決任何潛在問題，例如：

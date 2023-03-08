@@ -2,10 +2,10 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
+source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1328'
+ht-degree: 9%
 
 ---
 
@@ -37,7 +37,6 @@ ht-degree: 0%
 源AEM實例可能在防火牆後運行，在防火牆中它只能訪問已添加到允許清單中的某些主機。 若要成功執行擷取，必須從執行AEM的執行個體存取下列端點：
 
 * Azure blob儲存服務： `casstorageprod.blob.core.windows.net`
-* 用戶映射IO終結點： `usermanagement.adobe.io`
 
 >[!NOTE]
 >如果提取因下列錯誤而失敗：&quot;javax.net.ssl.SSLHandshakeException:sun.security.validator.ValidatorException:PKIX路徑生成失敗：sun.security.provider.certpath.SunCertPathBuilderException:找不到到被請求目標的有效證書路徑」，則可通過導入相關CA證書來解決此問題。
@@ -195,4 +194,4 @@ ht-degree: 0%
 
 ## 下一步 {#whats-next}
 
-學習如何建立移轉集後，您現在就可以了解「內容轉移工具」中的提取和擷取程式。 在了解這些流程之前，您必須先檢閱 [處理大型內容存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 大幅加快內容轉移活動的擷取和擷取階段，以便將內容移至AEMas a Cloud Service。
+學習如何建立移轉集後，您現在就可以了解「內容轉移工具」中的提取和擷取程式。 在了解這些流程之前，您必須先檢閱 [處理大型內容存放庫](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 大幅加快內容轉移活動的擷取和擷取階段，以便將內容移至AEMas a Cloud Service。
