@@ -3,9 +3,9 @@ title: 如何將工作流程指派給其他使用者、傳送電子郵件、在�
 description: 以Forms為中心的工作流程可讓您快速建立以Forms為基礎的最適化工作流程。 您可以使用Adobe Sign來電子簽署檔案、建立表單式業務流程、擷取資料並傳送至多個資料來源，以及傳送電子郵件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '7210'
+source-wordcount: '7190'
 ht-degree: 1%
 
 ---
@@ -162,7 +162,7 @@ ht-degree: 1%
 
 ## 轉換為PDF/步驟 {#convert-pdfa}
 
-PDF/A是一種存檔格式，通過嵌入字型和解壓縮檔案來長期保存文檔的內容。 因此，PDF/A文檔通常比標準PDF文檔大。 您可以使用 ***轉換為PDF/A*** 步驟，將PDF檔案轉換為PDF/A格式。
+PDF/A是一種存檔格式，通過嵌入字型和解壓縮檔案來長期保存文檔的內容。 因此，PDF/A 文件通常比標準 PDF 文件大。您可以使用 ***轉換為PDF/A*** 步驟，將PDF檔案轉換為PDF/A格式。
 
 轉換為PDF/A步驟具有下列屬性：
 
@@ -181,7 +181,7 @@ PDF/A是一種存檔格式，通過嵌入字型和解壓縮檔案來長期保存
 
 使用電子郵件步驟來傳送電子郵件，例如，含有記錄檔、最適化表單連結的電子郵件 <!-- , link of an interactive communication-->，或附加PDF檔案。 傳送電子郵件步驟支援 [HTML電子郵件](https://en.wikipedia.org/wiki/HTML_email). HTML電子郵件具有回應性，並可適應收件者的電子郵件用戶端和螢幕大小。 您可以使用HTML電子郵件範本來定義電子郵件的外觀、色彩配置和行為。
 
-電子郵件步驟使用Day CQ Mail Service來傳送電子郵件。 使用電子郵件步驟之前，請確定已設定電子郵件服務。 依預設，電子郵件僅支援HTTP和HTTP通訊協定。 [聯絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email) 啟用用於發送電子郵件的埠，並為您的環境啟用SMTP協定。 限制有助於提高平台的安全性。
+電子郵件步驟使用Day CQ Mail Service來傳送電子郵件。 使用電子郵件步驟之前，請確定已設定電子郵件服務。 依預設，電子郵件僅支援HTTP和HTTP通訊協定。 [聯絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) 啟用用於發送電子郵件的埠，並為您的環境啟用SMTP協定。 限制有助於提高平台的安全性。
 
 電子郵件步驟具有下列屬性：
 
@@ -238,11 +238,11 @@ PDF/A是一種存檔格式，通過嵌入字型和解壓縮檔案來長期保存
 
 **[!UICONTROL 使用以下選項保存生成的記錄文檔]**:指定保留記錄檔的位置。 您可以選擇覆蓋有效負載資料夾、將記錄文檔放置在有效負載目錄內的某個位置，或將記錄文檔儲存在文檔資料類型的變數中。
 
-**[!UICONTROL 地區]**:指定記錄檔的語言。 選擇 **[!UICONTROL 常值]** 從下拉清單中選擇區域設定或選擇 **[!UICONTROL 變數]** 從字串資料類型變數中儲存的值檢索區域設定。 在變數中儲存地區設定值時，必須定義地區設定代碼。 例如，指定 **en_US** 英文和 **fr_FR** 法語。
+**[!UICONTROL 地區]**:指定記錄檔的語言。 選擇 **[!UICONTROL 常值]** 從下拉清單中選擇區域設定或選擇 **[!UICONTROL 變數]** 從字串資料類型變數中儲存的值檢索區域設定。 在變數中儲存地區設定值時定義地區設定代碼。 例如，指定 **en_US** 英文和 **fr_FR** 法語。
 
 ## 調用DDX步驟 {#invokeddx}
 
-文檔描述XML(DDX)是一種聲明性標注語言，其元素表示文檔的構成塊。 這些建置區塊包括PDF和XDP檔案，以及其他元素，例如註解、書籤和已設定樣式的文字。 DDX定義一組操作，該操作可以應用於一個或多個輸入文檔以生成一個或多個輸出文檔。  單個DDX可與一系列源文檔一起使用。 您可以使用 ***調用DDX步驟*** 在AEM工作流程中執行各種作業，例如組裝分解檔案、建立和修改Acrobat和XFA Forms，以及 [DDX參考檔案](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+文檔描述XML(DDX)是一種聲明性標注語言，其元素表示文檔的構成塊。 這些建置區塊包括PDF和XDP檔案，以及其他元素，例如註解、書籤和已設定樣式的文字。 DDX定義一組操作，該操作可以應用於一個或多個輸入文檔以生成一個或多個輸出文檔。 單個DDX可與一系列源文檔一起使用。 您可以使用 ***調用DDX步驟*** 在AEM工作流程中執行各種作業，例如組裝分解檔案、建立和修改Acrobat和XFA Forms，以及 [DDX參考檔案](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
 
 調用DDX步驟具有以下屬性：
 
@@ -253,7 +253,7 @@ PDF/A是一種存檔格式，通過嵌入字型和解壓縮檔案來長期保存
 
 **[!UICONTROL 環境選項]**:此選項可用來設定叫用API的處理設定。 此標籤下提供的各種選項有：
 * **[!UICONTROL 僅驗證]**:檢查輸入DDX文檔的有效性。
-* **[!UICONTROL 錯誤時失敗]**:布林值，指出在發生錯誤時，叫用API服務是否失敗。 預設情況下，其值設為False。
+* **[!UICONTROL 錯誤時失敗]**:指示調用API服務是否失敗（如果有錯誤）的布爾值。 預設情況下，其值設為False。
 * **[!UICONTROL 第一個Bates數]**:指定自增加的數字。 此自增數字會自動顯示在每個連續頁面上。
 * **[!UICONTROL 預設樣式]**:設定輸出檔案的預設樣式。
 
@@ -485,12 +485,12 @@ Encrypt, Sign, and certify a document. [!DNL AEM Forms] supports both password b
 Send a document directly to a printer. It supports the following printing access mechanisms:
 
 * **[!UICONTROL Direct accessible printer]**: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.
-* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
+* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX&reg; printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server's IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
     -->
 
 ## 生成打印輸出步驟 {#generatePrintedOutput}
 
-該步驟將生成PCL、PostScript、ZPL、IPL、TPCL或DPL輸出，並提供表單設計和資料檔案。 資料檔案與表單設計合併，並格式化以便打印。 通過此步驟生成的輸出可以直接發送到打印機或另存為檔案。 當您想要使用來自應用程式的表單設計或資料時，建議您使用此步驟。 如果您的表單設計或表單設計位於網路、本地檔案系統或HTTP位置，請使用generatePrintedOutput操作操作。
+該步驟將生成PCL、PostScript、ZPL、IPL、TPCL或DPL輸出，並提供表單設計和資料檔案。 資料檔案與表單設計合併，並格式化以便打印。 通過此步驟生成的輸出可以直接發送到打印機或另存為檔案。 當您想要使用來自應用程式的表單設計或資料時，建議您使用此步驟。 如果您的表單設計位於網路、本地檔案系統或HTTP位置，請使用generatePrintedOutput操作。
 
 例如，您的應用程式要求您將表單設計與資料檔案合併。 資料包含數百筆記錄。 此外，它要求將輸出發送到支援ZPL的打印機。 表單設計和輸入資料位於應用程式中。 使用generatePrintedOutput操作將每個記錄與表單設計合併，並將輸出發送到支援ZPL的打印機。
 
@@ -524,20 +524,20 @@ Send a document directly to a printer. It supports the following printing access
 
 **[!UICONTROL 進階屬性]**
 
-* **[!UICONTROL 使用]**:內容根是字串值，它指定URI、絕對參照或儲存庫中的位置，以檢索表單設計使用的相對資產。 例如，如果表單設計相對參照影像，例如../myImage.gif，則myImage.gif必須位於repository://。 預設值為repository:// ，指向儲存庫的根級別。
+* **[!UICONTROL 使用]**:內容根是字串值，它指定URI、絕對參照或儲存庫中的位置，以檢索表單設計使用的相對資產。 例如，如果表單設計相對參照影像，例如 `../myImage.gif`, `myImage.gif` 必須為 `repository://`. 預設值為 `repository://`，指向存放庫的根層級。
 
-   當您從應用程式中挑選資產時，內容根URI路徑必須具有正確的結構。 例如，如果從名為SampleApp的應用程式中挑選表單，並放在SampleApp/1.0/forms/Test.xdp ，則內容根URI必須指定為repository://administrator@password/Applications/SampleApp/1.0/forms/ ，或存放庫：/Applications/SampleApp/1.0/forms/（當權限為null時）。 以此方式指定「內容根URI」時，表單中所有參考資產的路徑將會針對此URI進行解析。
+   當您從應用程式中挑選資產時，內容根URI路徑必須具有正確的結構。 例如，如果從名為SampleApp的應用程式中挑選表單，並放置在 `SampleApp/1.0/forms/Test.xdp`，內容根URI必須指定為 `repository://administrator@password/Applications/SampleApp/1.0/forms/`，或 `repository:/Applications/SampleApp/1.0/forms/` （當權限為空時）。 以此方式指定「內容根URI」時，表單中所有參考資產的路徑將會針對此URI進行解析。
 
 * **[!UICONTROL 使用]**:XCI檔案用於描述用於表單設計元素的字型和其他屬性。 您可以保留相對於裝載、絕對路徑或使用Document資料類型變數的XCI檔案。
 
 * **[!UICONTROL 地區]**:指定用於生成PDF文檔的語言。 如果您提供常值，請從清單中選取語言，或選取以下任一值：
-   * **[!UICONTROL 使用伺服器預設值]**:（預設）使用 [!DNL AEM Forms] 伺服器。 使用管理控制台配置了「區域設定」。 (請參閱 [設計工具說明](http://www.adobe.com/go/learn_aemforms_designer_65_tw).)
+   * **[!UICONTROL 使用伺服器預設值]**:（預設）使用 [!DNL AEM Forms] 伺服器。 使用管理控制台配置了「區域設定」。 (請參閱 [設計工具說明](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
-   * **[!UICONTROL 使用自訂值]**:在文字框中鍵入地區代碼，或選擇包含地區代碼的字串變數。 有關支援的區域設定代碼的完整清單，請參見http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html。
+   * **[!UICONTROL 使用自訂值]**:在文字框中鍵入地區代碼，或選擇包含地區代碼的字串變數。 有關支援的區域設定代碼的完整清單，請參見https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html。
 
 * **[!UICONTROL 復本]**:一個整數值，它指定要為輸出生成的副本數。 預設值為 1。
 
-* **[!UICONTROL 雙面打印]**:指定是使用雙面打印還是單面打印的分頁值。 支援PostScript和PCL的打印機使用此值。如果提供常值，請選擇以下值之一：
+* **[!UICONTROL 雙面打印]**:指定是使用雙面打印還是單面打印的分頁值。 支援PostScript和PCL的打印機使用此值。 如果您提供常值，請選取以下其中一個值：
    * **[!UICONTROL 雙工長邊]**:使用長邊分頁，進行雙面打印和打印。
    * **[!UICONTROL 雙工短邊]**:使用短邊分頁進行雙面打印和打印。
    * **[!UICONTROL 單純形]**:使用單面打印。
