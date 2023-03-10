@@ -2,7 +2,7 @@
 title: 使用內容轉移工具的准則和最佳作法
 description: 使用內容轉移工具的准則和最佳作法
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 2c53d1cce6b1e889a0e49254621d02bd152bfbbf
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
 source-wordcount: '1554'
 ht-degree: 19%
@@ -69,9 +69,9 @@ ht-degree: 19%
 
 * 提取金鑰自建立/續訂起14天內有效。 可隨時更新。 如果提取金鑰已過期，您將無法執行提取。
 
-* 內容轉移工具(CTT)在將內容從來源例項轉移至目標例項之前，不會執行任何類型的內容分析。 例如，CTT不會在將內容擷取至發佈環境時，區分已發佈和未發佈的內容。 無論移轉集中指定什麼內容，都會擷取至選取的目標例項。 使用者能將移轉集內嵌至製作例項、發佈例項或兩者。 建議將內容移至生產執行個體時，應在來源製作執行個體上安裝CTT，以將內容移至目標製作執行個體，同樣地，請在來源發佈執行個體上安裝CTT，將內容移至目標發佈執行個體。 請參閱 [在發佈執行個體上執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.md?lang=en#running-ctt-on-publish) 以取得更多詳細資訊。
+* 內容轉移工具(CTT)在將內容從來源例項轉移至目標例項之前，不會執行任何類型的內容分析。 例如，CTT不會在將內容擷取至發佈環境時，區分已發佈和未發佈的內容。 無論移轉集中指定什麼內容，都會擷取至選取的目標例項。 使用者能將移轉集內嵌至製作例項、發佈例項或兩者。 建議將內容移至生產執行個體時，應在來源製作執行個體上安裝CTT，以將內容移至目標製作執行個體，同樣地，請在來源發佈執行個體上安裝CTT，將內容移至目標發佈執行個體。 請參閱 [在發佈執行個體上執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) 以取得更多詳細資訊。
 
-* 「內容轉移工具」轉移的「使用者」和「群組」只是內容滿足權限所需的使用者和群組。 此 _提取_ 進程複製整個 `/home` 移轉集中，它會新增從每個使用者電子郵件地址建立的欄位，以執行使用者對應。 如需詳細資訊，請參閱 [用戶映射和主體遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).  此 _擷取_ 進程會複製遷移內容ACL中引用的所有用戶和組。
+* 「內容轉移工具」轉移的「使用者」和「群組」只是內容滿足權限所需的使用者和群組。 此 _提取_ 進程複製整個 `/home` 移轉集中，它會新增從每個使用者電子郵件地址建立的欄位，以執行使用者對應。 如需詳細資訊，請參閱 [用戶映射和主體遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). 此 _擷取_ 進程會複製遷移內容ACL中引用的所有用戶和組。
 
 * 在提取階段中，「內容轉移工具」會在作用中的 AEM 來源例項上執行。
 
