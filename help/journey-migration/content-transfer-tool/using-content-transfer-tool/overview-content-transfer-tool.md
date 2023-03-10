@@ -2,10 +2,10 @@
 title: 內容轉移工具綜覽
 description: 內容轉移工具綜覽
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 47%
+source-wordcount: '708'
+ht-degree: 39%
 
 ---
 
@@ -63,6 +63,25 @@ ht-degree: 47%
 如果要在提取階段中&#x200B;***追加***&#x200B;現有的移轉集，則必須停用&#x200B;*覆蓋*&#x200B;選項。如需詳細資訊，請參考[追加提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)。
 
 如果要在擷取階段中，將差異內容套用至目前內容的頂端，則必須停用&#x200B;*「擦去」*&#x200B;選項。如需詳細資訊，請參考[追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)。
+
+## 遷移集到期 {#migration-set-expiry}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_migrationset_expiry"
+>title="移轉集的到期日"
+>abstract="了解移轉集的到期日。"
+
+所有移轉集最終將在長時間閒置約90天後過期。 在一段時間的專案卡和移轉工作表列上顯示指標後，移轉集即會過期，且其資料將不再可用。 可借由下列方式依移轉集操作，輕鬆延長到期時間：
+
+* 編輯說明
+* 獲取提取密鑰
+* 執行擷取
+* 從中執行擷取
+
+可在「遷移集」行上監視遷移集的到期。 移轉集即將到期的實用視覺指標也會新增專案的卡片。
+
+![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
+
 
 ## 下一步 {#whats-next}
 

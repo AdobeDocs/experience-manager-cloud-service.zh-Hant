@@ -2,9 +2,9 @@
 title: 在內容轉移工具中檢視移轉集記錄
 description: 在內容轉移工具中檢視移轉集記錄
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: 9a098eefbb730ae2930169cf7402ab4799043291
+source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '249'
 ht-degree: 12%
 
 ---
@@ -16,12 +16,14 @@ ht-degree: 12%
 >id="aemcloud_ctt_logs"
 >title="檢視記錄"
 >abstract="擷取擷取完成後，檢查記錄中是否有任何錯誤/警告。 您應處理所回報的問題，或聯絡Adobe支援，以立即解決任何錯誤。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#troubleshooting" text="疑難排解"
->additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="聯絡Adobe支援"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting" text="疑難排解"
+>additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="連絡 Adobe 支援人員"
 
 完成每個步驟（擷取和擷取）後，請檢查記錄並尋找錯誤。  您應處理所回報的問題，或聯絡Adobe支援，以立即解決任何錯誤。
 
 ## 檢視記錄檔的步驟 {#viewing-logs}
+
+### 提取記錄
 
 若要檢視提取記錄，請前往您的來源Adobe Experience Manager例項，然後選取所需的移轉集。
 
@@ -34,6 +36,8 @@ ht-degree: 12%
 
 1. 若要追蹤記錄而不使用使用者介面，您可以透過 SSH 連線至來源 AEM 環境，並追蹤 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`。
 
-1. 若要檢視擷取記錄，請前往Cloud Acceleration Manager中的擷取工作清單，然後按一下三個點(**...**)。 然後，您可以按一下 **下載記錄檔** 下載日誌。
+### 擷取記錄
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)
+若要檢視擷取記錄，請前往Cloud Acceleration Manager中的擷取工作清單，然後尋找需要的移轉工作，然後按一下三個點(**...**)。 然後，您可以按一下 **下載記錄檔** 下載日誌。
+
+![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

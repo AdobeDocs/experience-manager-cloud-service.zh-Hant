@@ -2,9 +2,9 @@
 title: 自來源擷取內容
 description: 自來源擷取內容
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '663'
 ht-degree: 24%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 24%
 請依照下列步驟，從「內容轉移工具」中提取您的移轉集：
 
 >[!NOTE]
->如果使用Amazon S3、Azure資料存放區或檔案資料存放區作為資料存放區類型，您可以執行選用的預複製步驟，大幅加速提取階段。 預複製步驟對於第1次完全擷取和擷取最有效。 若要這麼做，您必須設定 `azcopy.config` 檔案，然後再執行解壓縮。 請參閱 [處理大型內容存放庫](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 以取得更多詳細資訊。
+>如果使用Amazon S3、Azure資料存放區或檔案資料存放區作為資料存放區類型，您可以執行選用的預複製步驟，大幅加速提取階段。 預複製步驟對於第1次完全擷取和擷取最有效。 請參閱 [處理大型內容存放庫](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 以取得更多詳細資訊。
 
 1. 從中選擇遷移集 **內容轉移** 精靈，按一下 **Extract** 開始提取。
 

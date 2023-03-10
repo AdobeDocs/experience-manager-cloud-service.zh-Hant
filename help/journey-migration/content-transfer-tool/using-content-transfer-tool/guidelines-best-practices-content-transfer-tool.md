@@ -2,9 +2,9 @@
 title: 使用內容轉移工具的准則和最佳作法
 description: 使用內容轉移工具的准則和最佳作法
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
+source-git-commit: 2c53d1cce6b1e889a0e49254621d02bd152bfbbf
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1554'
 ht-degree: 19%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 19%
 * 透過更好的載入狀態、護欄和錯誤處理改善使用者體驗
 * 擷取記錄會持續存在，且隨時都可用於疑難排解
 
-若要開始使用新版本，您需要解除安裝舊版「內容轉移工具」。 這是必需的，因為新版本具有重大的體系結構更改。 若使用v2.0.10，您將需要建立新的移轉集，並對新移轉集重新執行提取和擷取。 如果移轉已進行中，您可以繼續使用舊版CTT，直到移轉完成為止。
+若要開始使用新版本，您需要解除安裝舊版「內容轉移工具」。 這是必需的，因為新版本具有重大的體系結構更改。 若使用2.x版，您將需要建立新的移轉集，並對新移轉集重新執行擷取和擷取。
 不再支援2.0.0之前的版本，建議您使用最新版本。
 
 下列准則和最佳實務適用於新版的「內容轉移工具」：
@@ -85,11 +85,13 @@ ht-degree: 19%
 
 * 使用時 `Amazon S3` 或 `Azure` 作為源AEM系統上的資料儲存，應配置資料儲存，以便無法刪除儲存的blob（垃圾收集）。 這樣可確保索引資料的完整性，並且如果未能配置此方式，則可能由於此索引資料的完整性不完整而導致提取失敗。
 
-* 如果您使用自訂索引，則必須確保使用 `tika` 節點。 請參閱 [準備新索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) 以取得更多詳細資訊。
+* 如果您使用自訂索引，則必須確保使用 `tika` 節點。 請參閱 [準備新索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) 以取得更多詳細資訊。
 
 * 如果您要追加提取，則必須不要變更現有內容的內容結構，從進行初始提取到執行追加提取的時間皆然。 自初始擷取後，結構已變更的內容無法執行追加。 請務必在移轉程式期間加以限制。
 
 * 如果您打算將版本納入移轉集，且要以 `wipe=false`，則您必須停用版本清除，因為「內容轉移工具」中目前有限制。 如果您偏好保持已啟用版本清除功能，並在移轉集中執行追加，則您必須以 `wipe=true`.
+
+* 移轉集將在長時間閒置後過期，之後將無法再使用其資料。 請查閱 [遷移集到期](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) 以取得更多詳細資訊。
 
 ## 下一步 {#whats-next}
 

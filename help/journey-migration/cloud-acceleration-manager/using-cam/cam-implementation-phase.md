@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager中的實作階段
 description: 本頁概述Cloud Acceleration Manager的實作階段。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: cdf5280a3875eefa1fe19ddb985d550d00fd418e
+source-git-commit: cba5dccd3b66220bbcd6d3b4dd5298702902b0e5
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 實作階段包括：
 
-* [地方開發](#local-development)
+* [本機開發](#local-development)
 * [程式碼重構](#code-refactoring)
 * [AEMas a Cloud Service部署](#aem-as-a-cloud-service-deployment)
 * [內容轉移](#content-transfer)
@@ -24,7 +24,7 @@ ht-degree: 2%
 ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->請參閱 [在Cloud Acceleration Manager中建立和管理專案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) 了解更多。
+>請參閱 [在Cloud Acceleration Manager中建立和管理專案](getting-started-cam.md#create-project) 了解更多。
 
 
 ## 使用本機開發卡 {#local-development}
@@ -102,11 +102,14 @@ AEMas a Cloud Service部署卡提供所有相關內容，可協助您將程式�
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
-   >請查看 [必要條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) 和 [最佳實務與准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) 內容轉移工具前，請先確認。
+   >請注意，移轉集將在長時間閒置後過期。 請查閱 [遷移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
 
-1. 您需要下載並安裝「內容轉移工具」，以填入移轉集並完成內容轉移的提取階段。 檢閱 [內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 了解如何使用「內容轉移工具」。
+   >[!NOTE]
+   >請查看 [必要條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) 和 [最佳實務與准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 內容轉移工具前，請先確認。
 
-1. 若要從AEMas a Cloud Service的移轉集擷取內容至環境，您需要開始擷取。 導覽至 **擷取工作** 按一下 **新擷取**. 檢閱 [將內容擷取至Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) 了解如何完成內容轉移的擷取階段。
+1. 您需要下載並安裝「內容轉移工具」，以填入移轉集並完成內容轉移的提取階段。 檢閱 [內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) 了解如何使用「內容轉移工具」。
+
+1. 若要從AEMas a Cloud Service的移轉集擷取內容至環境，您需要開始擷取。 導覽至 **擷取工作** 按一下 **新擷取**. 檢閱 [將內容擷取至Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) 了解如何完成內容轉移的擷取階段。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
@@ -125,4 +128,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## 下一步 {#whats-next}
 
-一旦您了解如何登入Cloud Acceleration Manager以及如何運用實作階段，現在就可以開始檢閱 [上線階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en).
+一旦您了解如何登入Cloud Acceleration Manager以及如何運用實作階段，現在就可以開始檢閱 [上線階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html).

@@ -2,10 +2,10 @@
 title: 將內容內嵌至目標
 description: 將內容內嵌至目標
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
+source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 8%
+source-wordcount: '1693'
+ht-degree: 7%
 
 ---
 
@@ -37,7 +37,8 @@ ht-degree: 8%
 
 1. 提供建立新擷取所需的資訊。
 
-   * 選取您剛提取作為來源的移轉集
+   * 選擇包含提取資料作為源的遷移集。
+      * 移轉集將在長時間閒置後過期，因此擷取預計會在執行提取後較快進行。 檢閱 [遷移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
    * 選取目標環境。 這是將擷取移轉集內容的位置。 選擇層。 （製作/發佈）。
 
    >[!NOTE]
@@ -90,7 +91,7 @@ ht-degree: 8%
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
    
-   Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) to learn more.
+   Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
 
