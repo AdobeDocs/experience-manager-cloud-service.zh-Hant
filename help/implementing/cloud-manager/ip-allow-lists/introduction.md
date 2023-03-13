@@ -2,8 +2,8 @@
 title: IP 允許清單簡介
 description: 了解 IP 允許清單如何限制使用者可以從哪些地址存取您的 AEM as a Cloud Service 網域。
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: 18ecf3394ff575213756fced84a3b08795188240
-workflow-type: tm+mt
+source-git-commit: 286bc8e206b7a54cc1869e3965e55852cf62946d
+workflow-type: ht
 source-wordcount: '319'
 ht-degree: 100%
 
@@ -35,4 +35,4 @@ Cloud Manager 的 IP 允許清單可用於限制和控制對此類受信任 IP �
 
 * 最多可以在您的程序中新增 50 個 IP 允許清單
 * 每個 IP 允許清單最多可以新增 50 個 IP/CIDR 地址。
-* Cloud Manager 中支援 IP 允許清單名稱用於環境中的創作和/或發布服務。
+* Cloud Manager 中支援 IP 允許清單名稱用於環境中的編寫和/或發佈服務。
