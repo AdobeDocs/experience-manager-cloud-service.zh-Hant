@@ -1,117 +1,117 @@
 ---
-title: Live Copy概述主控台
-description: 了解Live Copy概觀主控台的基本知識，以便快速了解Live Copy的狀態，以便同步內容。
+title: Live Copy 概觀主控台
+description: 了解 Live Copy 概觀主控台的基本知識，以快速了解您的 Live Copy 狀態，以便同步內容。
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '735'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Live Copy概述主控台 {#live-copy-overview-console}
+# Live Copy 概觀主控台 {#live-copy-overview-console}
 
-此 **即時副本概述** console可讓您：
+**Live Copy 概觀**&#x200B;主控台使您能夠：
 
 * 檢視/管理整個網站的繼承。
-   * 檢視Blueprint樹狀結構和對應的Live Copy結構，及其繼承狀態
-   * 變更繼承狀態，例如暫停和繼續
-   * 檢視Blueprint和Live Copy屬性
-* 執行轉出動作。
+   * 檢視藍圖樹和對應的 Live Copy 結構，以及它們的繼承狀態
+   * 變更暫停和恢復等繼承狀態
+   * 檢視藍圖和 Live Copy 屬性
+* 執行推出動作。
 
-## 開啟即時副本概述 {#opening-the-live-copy-overview}
+## 開啟 Live Copy 概觀 {#opening-the-live-copy-overview}
 
-您可以從以下位置開啟「即時副本概述」：
+您可以從以下位置開啟 Live Copy 概觀：
 
-* [參考Blueprint頁面的側面板（網站主控台）](#opening-live-copy-overview-references-for-a-blueprint-page)
-* [Blueprint頁面的屬性](#opening-live-copy-overview-properties-of-a-blueprint-page)
+* [藍圖頁面的參考側面板 (Sites 主控台)](#opening-live-copy-overview-references-for-a-blueprint-page)
+* [藍圖頁面的屬性](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
-### Blueprint頁面的參考 {#references-to-a-blueprint-page}
+### 藍圖頁面的參考 {#references-to-a-blueprint-page}
 
-此 **即時副本概述** 可從 **參考** 側面板 **網站** 主控台：
+**Live Copy 概觀**&#x200B;可以從 **Sites** 主控台的&#x200B;**參考**&#x200B;側面板開啟：
 
-1. 在 **網站** 主控台， [導覽至您的blueprint頁面並加以選取。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
-1. 開啟 **[參考](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 邊欄和選取 **Live Copies**.
+1. 在 **Sites** 主控台中，[導覽至您的藍圖頁面並選擇它。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. 開啟&#x200B;**[參考](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;邊欄並選擇 **Live Copy**。
 
-   ![從參考邊欄即時複製](../assets/live-copy-references.png)
+   ![來自參考邊欄的 Live Copy](../assets/live-copy-references.png)
 
    >[!TIP]
    >
-   >您也可以先開啟參照，然後選取Blueprint。
+   >您也可以先開啟參考，然後選擇藍圖。
 
-1. 選擇 **即時副本概述** 顯示和使用與所選藍圖相關的所有即時副本的概述。
-1. 使用 **關閉** 退出並返回 **網站** 控制台。
+1. 選擇 **Live Copy 概觀**&#x200B;以顯示和使用與所選藍圖相關的所有 Live Copy 的概觀。
+1. 使用&#x200B;**關閉**&#x200B;以退出並返回 **Sites** 主控台。
 
-### Blueprint頁面的屬性 {#properties-of-a-blueprint-page}
+### 藍圖頁面的屬性 {#properties-of-a-blueprint-page}
 
-此 **即時副本概述** 可在檢視blueprint頁面的屬性時開啟：
+**Live Copy 概觀**&#x200B;可以在檢視藍圖頁面的屬性時開啟：
 
-1. 開啟 **屬性** ，以取得適當的blueprint頁面。
-1. 開啟 **Blueprint** 標籤 —  **即時副本概述** 選項會顯示在頂端工具列中：
+1. 開啟相關藍圖頁面的&#x200B;**屬性**。
+1. 開啟&#x200B;**藍圖**&#x200B;索引標籤 - **Live Copy 概觀** 選項將顯示在頂端工具列中：
 
-   ![Blueprint屬性標籤](../assets/live-copy-blueprint-tab.png)
+   ![藍圖屬性索引標籤](../assets/live-copy-blueprint-tab.png)
 
-1. 選擇 **即時副本概述** 顯示和使用與當前Blueprint相關的所有Live Copy的概述。
+1. 選擇 **Live Copy 概觀**&#x200B;以顯示和使用與目前藍圖相關的所有 Live Copy 的概觀。
 
-1. 使用 **關閉** 退出並返回 **網站** 控制台。
+1. 使用&#x200B;**關閉**&#x200B;以退出並返回 **Sites** 主控台。
 
-## 使用即時副本概述 {#using-the-live-copy-overview}
+## 使用 Live Copy 概觀 {#using-the-live-copy-overview}
 
-此 **即時副本概述** 窗口提供和概述與選定頁面相關的即時副本的狀態。
+**Live Copy 概觀**&#x200B;視窗概要顯示與所選頁面相關之 Live Copy 的狀態。
 
-![即時副本概述窗口](../assets/live-copy-overview.png)
+![Live Copy 概觀視窗](../assets/live-copy-overview.png)
 
-轉出取決於特定轉出設定中定義的同步動作。 某些動作取決於內容的修改。 不過，也有許多動作與內容修改無關，而與頁面啟動等事件有關。 此類事件不會修改內容，但會修改與內容相關的內部屬性。
+推出取決於特定推出設定中定義的同步動作。某些動作取決於對內容的修改。但是，也有很多動作並不取決於對內容的修改，而是取決於事件 (例如頁面啟動)。此類事件不會修改內容，但會修改與內容相關的內部屬性。
 
-狀態欄位也取決於特定轉出設定中定義的同步動作，並指出自上次成功轉出以來，Blueprint或Live Copy是否有任何此類動作。 狀態欄位只會反映特定轉出設定中的動作。 如果尚未對即時副本執行任何成功轉出，則狀態將一律顯示為最新。
+狀態欄位也取決於特定推出設定中定義的同步動作，並指示自上次成功推出後是否對藍圖或 Live Copy 進行了任何此類動作。狀態欄位將僅反映特定推出設定中的動作。如果從未對 Live Copy 執行過成功的推出，則狀態將始終顯示為最新。
 
-例如，轉出設定定義為 `targetActivate`. 因此，轉出將完全取決於啟動事件。 狀態欄位只會指出自上次成功轉出以來，是否發生任何啟動事件。
+例如，推出設定定義為 `targetActivate`。因此，推出將完全取決於啟動事件。狀態欄位將僅指示自上次成功推出以來是否發生任何啟動事件。
 
-此 **即時副本概述** 也可用於在即時副本上執行動作：
+**Live Copy 概觀**&#x200B;也可用於對 Live Copy 執行動作：
 
-1. 開啟 **即時副本概述**.
-1. 選取所需的Blueprint或「即時副本」頁面，工具列將會更新以顯示可用動作。 此 [動作](overview.md#terms-used) 可用取決於您是否選取 [Blueprint](#actions-for-a-blueprint-page) 或 [Live Copy](#actions-for-a-live-copy-page) 頁面。
+1. 開啟 **Live Copy 概觀**。
+1. 選擇所需的藍圖或 Live Copy 頁面，工具列將更新以顯示可用的動作。可用的[動作](overview.md#terms-used)取決於您選擇的是[藍圖](#actions-for-a-blueprint-page)還是 [Live Copy](#actions-for-a-live-copy-page) 頁面。
 
-### Blueprint頁面的動作 {#actions-for-a-blueprint-page}
+### 藍圖頁面的動作 {#actions-for-a-blueprint-page}
 
-選取Blueprint頁面時，可執行下列動作：
+選擇藍圖頁面時，可以執行以下動作：
 
-![Blueprint的即時副本概述動作](../assets/live-copy-overview-actions-blueprint.png)
+![藍圖的 Live Copy 概觀動作](../assets/live-copy-overview-actions-blueprint.png)
 
-* **編輯**  — 開啟Blueprint頁面進行編輯。
-* **[轉出](overview.md#rollout-and-synchronize)**  — 執行轉出以將變更從來源推送至即時副本。
+* **編輯** - 開啟藍圖頁面以進行編輯。
+* **[推出](overview.md#rollout-and-synchronize)** - 執行推出以將變更從來源推送到 Live Copy。
 
-### 即時副本頁面的動作 {#actions-for-a-live-copy-page}
+### Live Copy 頁面的動作 {#actions-for-a-live-copy-page}
 
-選取「即時副本」頁面時，可使用下列動作：
+選擇 Live Copy 頁面時，可以執行以下動作：
 
-![即時副本的即時副本概述動作](../assets/live-copy-overview-actions.png)
+![Live Copy 的 Live Copy 概觀動作](../assets/live-copy-overview-actions.png)
 
-* **編輯**  — 開啟「即時副本」頁面進行編輯。
-* **[關係狀態](#relationship-status)**  — 查看有關狀態和繼承的資訊。
-* **[同步](overview.md#rollout-and-synchronize)**  — 同步即時副本，以從來源提取變更至即時副本。
-* **[重設](creating-live-copies.md#resetting-a-live-copy-page)**  — 重設「即時副本」頁面以移除所有繼承取消，並將頁面傳回與來源頁面相同的狀態。
-* **[暫停](overview.md#suspending-and-cancelling-inheritance-and-synchronization)**  — 暫時停用即時副本與其Blueprint頁面之間的即時關係。
-* **[繼續](creating-live-copies.md#resuming-inheritance-for-a-page)**  — 恢復允許您恢復已暫停的關係。
-* **[分離](overview.md#detaching-a-live-copy)**  — 永久移除即時副本與其Blueprint頁面之間的即時關係。
+* **編輯** - 開啟 Live Copy 頁面進行編輯。
+* **[關係狀態](#relationship-status)** - 檢視關於狀態和繼承的資訊。
+* **[同步](overview.md#rollout-and-synchronize)** - 同步 Live Copy 以將變更從來源推送到 Live Copy。
+* **[重設](creating-live-copies.md#resetting-a-live-copy-page)** - 重設 Live Copy 頁面以刪除所有繼承取消，並將頁面返回到與來源頁面相同的狀態。
+* **[暫停](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** - 暫時停用 Live Copy 與其藍圖頁面之間的即時關係。
+* **[恢復](creating-live-copies.md#resuming-inheritance-for-a-page)** - 恢復允許您回復暫停的關係。
+* **[分離](overview.md#detaching-a-live-copy)** - 永久移除 Live Copy 與其藍圖頁面之間的即時關係。
 
 ## 關係狀態 {#relationship-status}
 
-此 **關係狀態** 主控台有兩個標籤，提供一系列功能。
+**關係狀態**&#x200B;主控台有兩個索引標籤，提供一系列功能。
 
 * [關係狀態](#relationship-status-tab)
-* [即時副本](#live-copy-tab)
+* [Live Copy](#live-copy-tab)
 
 ### 關係狀態 {#relationship-status-tab}
 
-此索引標籤提供Blueprint與Live Copy之間關係狀態的詳細資訊。
+此索引標籤提供藍圖和 Live Copy 之間關係狀態的詳細資訊。
 
-![「關係狀態」頁簽](../assets/live-copy-relationship-status.png)
+![關係狀態索引標籤](../assets/live-copy-relationship-status.png)
 
-### 即時副本 {#live-copy-tab}
+### Live Copy {#live-copy-tab}
 
-此索引標籤可讓您檢視和編輯Live Copy設定。
+此索引標籤允許您檢視和編輯 Live Copy 設定。
 
-![「即時副本」索引標籤](../assets/live-copy-relationship-status-live-copy.png)
+![Live Copy 索引標籤](../assets/live-copy-relationship-status-live-copy.png)
