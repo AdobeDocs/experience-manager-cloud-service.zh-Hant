@@ -1,80 +1,80 @@
 ---
-title: AEM Sites翻譯歷程
-description: 從這裡開始，使用AEM功能強大的翻譯工具，引導您完成AEM Sites內容的轉譯。
+title: AEM Sites 翻譯歷程
+description: 從這裡開始，此歷程會逐步引導您了解如何使用 AEM 的強大翻譯工具來翻譯您的 AEM Sites 內容。
 index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '932'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# AEM Sites翻譯歷程 {#aem-sites-translation-journey}
+# AEM Sites 翻譯歷程 {#aem-sites-translation-journey}
 
-從這裡開始，使用AEM功能強大的翻譯工具，引導您完成AEM Sites內容的轉譯。
+從這裡開始，此歷程會逐步引導您了解如何使用 AEM 的強大翻譯工具來翻譯您的 AEM Sites 內容。
 
 ## 簡介 {#introduction}
 
-AEM Sites是功能強大的工具集，用於建立和管理數位體驗。 內容作者可以使用網站編輯器輕鬆建立數位體驗，並使用網站主控台整理內容，同時可以看到AEM即時內容，如同跨管道傳送給您的對象一樣。
+AEM Sites 是用於建立和管理數位體驗的強大工具集。內容作者可以使用網站編輯器輕鬆建立數位體驗，並使用網站主控台組織內容，同時能夠查看 AEM 跨管道傳遞給您對象的即時內容。
 
-AEM提供同等強大的工具，可翻譯您的內容，讓您盡快將其傳送給其他地區或地區的對象。 本檔案歷程會介紹製作工具，讓您了解如何在AEM中建立和管理內容，然後深入探討管理自己的翻譯專案所需的知識。
+AEM 提供同樣強大的工具來翻譯您的內容，使您能夠盡快將內容傳遞給其他區域或地區設定的對象。此文件歷程介紹了編寫工具，讓您了解如何在 AEM 中建立和管理內容，然後深入探討管理您自己的翻譯專案所需的知識。
 
-如果您已熟悉AEM Sites和翻譯需求，您可能已具備此歷程的基本知識。 若是如此，請考慮參閱以下連結的技術檔案： [下方的其他資源一節。](#additional-resources)
+如果您已經熟悉 AEM Sites 和您的翻譯要求，那麼您可能已經掌握了此歷程的基本知識。倘若如此，請參閱下方[其他資源章節](#additional-resources)下的已連結技術文件。
 
-## AEM檔案歷程 {#documentation-journeys}
+## AEM 文件歷程 {#documentation-journeys}
 
-[檔案歷程](/help/journey-documentation/documentation-journeys.md) 將許多不同的、可能複雜的主題和特徵聯繫起來，提供一種敘述，幫助讀者從頭到尾理解並解決業務問題，同時假定事先的主題或AEM知識最少。
+[文件歷程](/help/journey-documentation/documentation-journeys.md)提供敘述來協助剛開始使用 AEM 的讀者，讓他們能從頭到尾理解和解決業務問題，同時將採用的先前主題或 AEM 知識降至最低，藉以連結許多不同且複雜的主題和功能。
 
-說明檔案歷程是根據最佳實務原則而設計，根據Adobe的最新研究、Adobe顧問經驗證的實作經驗，以及客戶專案的意見回饋。
+文件歷程根據最佳實務原則而設計，其中包含 Adobe 的最新研究、Adobe 顧問的成熟實作經驗以及客戶專案的意見回饋。
 
-如果您想了解Adobe建議如何透過AEM解決網站業務案例，AEM Sites歷程即為起點。
+如果您想了解 Adobe 建議如何使用 AEM 解決網站業務案例，AEM Sites 歷程是理想的出發點。
 
 ## 對象 {#audience}
 
-此歷程專為翻譯專家人員而設計，通常稱為翻譯項目經理或TPM。 此歷程說明翻譯AEM Sites內容的需求、步驟和方法。 歷程可能會定義翻譯專家必須與之互動的其他角色，但歷程的觀點是翻譯專家。
+此歷程專為翻譯專家角色 (通常稱為翻譯專案經理或 TPM) 所設計。此歷程闡述翻譯 AEM Sites 內容的要求、步驟和方法。此歷程定義了翻譯專家必須與之互動的其他角色，但此歷程是以翻譯專家的角度出發。
 
-此歷程假設閱讀者在大型CMS系統上具備翻譯內容的經驗，但假設不具備AEM知識。
+此歷程假設讀者具有在大型 CMS 系統上翻譯內容的經驗，但假設他們不了解 AEM。
 
-以下是在此歷程中互動的角色。
+以下是在此歷程中會互動的角色。
 
 | 角色 | 說明 | 歷程中的角色 |
 |---|---|---|
-| 翻譯專家 | 定義應翻譯的內容並管理這些工作流程 | 此歷程的受眾 |
-| 內容作者 | 建立並管理以網站形式傳送的內容 | 內容作者建立翻譯專家必須翻譯的內容。 |
-| 管理員 | 管理AEM的基本設定和配置 | 翻譯專家會與管理員合作，進行翻譯所需的配置更改，例如安裝翻譯連接器。 |
-| 內容架構師 | 分析必須以站點形式傳送的資料的需求，並定義此資料的結構 | 翻譯專家會與內容架構師合作，定義內容的組織，以便輕鬆翻譯。 |
+| 翻譯專家 | 定義應翻譯的內容並管理這些工作流程 | 此歷程的對象 |
+| 內容作者 | 建立和管理作為網站傳遞的內容 | 內容作者建立翻譯專家必須翻譯的內容。 |
+| 管理員 | 管理 AEM 的基本設定和配置 | 翻譯專家與管理員一起進行翻譯作業所需的設定變更，例如安裝翻譯連接器。 |
+| 內容架構師 | 分析必須作為網站傳遞之資料的要求並定義此資料的結構 | 翻譯專家與內容架構師一起定義內容的組織，以便輕鬆翻譯。 |
 
-此歷程中的資訊當然對所有角色都有用，但某些資訊對某些角色可能是多餘的。 請繼續觀看 [即將到來的歷程，涵蓋其他角色。](/help/journey-documentation/documentation-journeys.md#journeys)
+此歷程的資訊當然對所有角色都有用，但有些資訊對於某些角色可能是多餘的。請密切注意[即將到來、涵蓋其他角色的歷程。](/help/journey-documentation/documentation-journeys.md#journeys)
 
-## 網站翻譯歷程 {#the-journey}
+## Sites 翻譯歷程 {#the-journey}
 
-您將在此歷程中探索許多主題。 下列文章提供您轉譯AEM中網站內容的基本知識，並連結至詳細的技術檔案。
+您將在此歷程中探索許多主題。以下文章讓您對如何在 AEM 翻譯網站內容有基本的了解，並提供詳細外部技術文件的連結。
 
-雖然您可以直接前往歷程的特定部分，但許多概念都是以先前文章中的概念為基礎而建立。 因此，如果您是初次使用AEM翻譯，建議您從頭開始，依序進行。
+儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。因此，如果您剛接觸 AEM 翻譯，我們建議您從頭開始，然後按順序進行。
 
 | # | 文章 | 說明 |
 |---|---|---|
-| 0 | AEM Sites翻譯歷程 | 此文檔 |
-| 1 | [了解網站內容，以及如何在AEM中翻譯](learn-about.md) | 了解網站概念和AEM翻譯理論。 |
-| 2 | [開始使用AEM Sites翻譯](getting-started.md) | 了解如何組織網站內容，以及AEM翻譯工具的運作方式。 |
-| 3 | [配置翻譯連接器](configure-connector.md) | 了解如何將AEM連線至翻譯服務。 |
-| 4 | [配置翻譯規則](translation-rules.md) | 了解如何定義翻譯規則，以識別翻譯內容。 |
+| 0 | AEM Sites 翻譯歷程 | 本文件 |
+| 1 | [了解網站內容與如何在 AEM 翻譯網站內容](learn-about.md) | 了解網站概念和 AEM 翻譯理論。 |
+| 2 | [AEM Sites 翻譯快速入門](getting-started.md) | 了解如何組織網站內容以及 AEM 翻譯工具的運作原理。 |
+| 3 | [設定翻譯連接器](configure-connector.md) | 了解如何將 AEM 連接到翻譯服務。 |
+| 4 | [設定翻譯規則](translation-rules.md) | 了解如何定義翻譯規則以識別要翻譯的內容。 |
 | 5 | [翻譯內容](translate-content.md) | 使用翻譯連接器和規則來翻譯您的網站內容。 |
-| 6 | [發佈翻譯的內容](publish-content.md) | 了解如何發佈翻譯內容，並在更新基礎內容時更新翻譯。 |
+| 6 | [發佈翻譯內容](publish-content.md) | 了解如何發佈翻譯後的內容，並在基礎內容更新時更新翻譯。 |
 
 ## 下一步 {#what-is-next}
 
-您現在已準備好開始Adobe網站的翻譯歷程。 我們鼓勵您繼續前往歷程的下一個部分並閱讀文章 [了解網站內容，以及如何在AEM中翻譯](learn-about.md)
+您現在已準備好開始您的 Adobe 網站翻譯歷程。我們鼓勵您繼續歷程的下一部分並閱讀文章[了解網站內容與如何在 AEM 翻譯網站內容](learn-about.md)
 
 ## 其他資源 {#additional-resources}
 
-請查看這些其他資源，深入了解AEM強大功能如何搭配運作。
+查看這些其他資源，進一步了解 AEM 的強大功能如何協同運作。
 
-* [無頭製作歷程](/help/journey-headless/author/overview.md)  — 從這裡開始，引導您一路探索AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個無頭式專案中建立內容模型。
-* [無頭架構師歷程](/help/journey-headless/architect/overview.md)  — 從這裡開始，介紹Adobe Experience Manager as a Cloud Service強大、靈活、無頭的功能，以及如何為專案建立內容模型。
-* [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md)  — 從這裡開始，逐步引導您了解AEM強大且有彈性的無頭式功能、其功能，以及如何在您的第一個開發專案中運用這些功能。
-* [AEMas a Cloud Service技術檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  — 如果您已對AEM和無頭技術有明確的了解，您可直接諮詢我們的深入技術檔案。
-* [AEM Headless教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  — 如果您偏好從實踐中學習，而且在技術上有傾向，請利用我們按API和架構組織的實作教學課程，探索如何建立和使用以AEM Headless建置的應用程式。
+* [Headless 編寫歷程](/help/journey-headless/author/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的無周邊特性、其功能，以及如何在您的第一個無周邊專案中建立內容模型。
+* [Headless 架構師歷程](/help/journey-headless/architect/overview.md) - 從這裡開始介紹 Adobe Experience Manager as a Cloud Service 的強大、靈活、無周邊功能，以及如何為您的專案建立內容模型。
+* [AEM Headless 開發人員歷程](/help/journey-headless/developer/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的無周邊特性、其功能，以及如何在您的第一個開發專案中運用這些功能。
+* [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 和無周邊技術有深入的了解，您可能想要直接查閱我們深入的技術文件。
+* [AEM Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 如果您偏好做中學並為傾向技術，請加入我們的由 API 和框架組織的實作教學課程，其在探究如何建立和使用 AEM Headless 應用程式。
