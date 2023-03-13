@@ -1,53 +1,53 @@
 ---
-title: Formsas a Cloud Service通訊簡介
-description: 自動將資料與XDP和PDF模板合併，或以PCL、ZPL和PostScript格式生成輸出
+title: Forms as a Cloud Service 通訊簡介
+description: 自動將資料與 XDP 和 PDF 範本合併，或產生 PCL、ZPL 和 PostScript 格式的輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# 使用AEM Formsas a Cloud Service通訊 {#frequently-asked-questions}
+# 使用 AEM Forms as a Cloud Service 通訊 {#frequently-asked-questions}
 
-通信功能可幫助您建立品牌認可、個性化和標準化的文檔，如業務往來函、對帳單、報銷申請處理信函、福利通知、每月賬單或歡迎套件。
+通訊功能可協助您建立品牌核准的、個性化的和標準化的文件，例如業務信函、報表、索賠處理函、福利通知、每月帳單或歡迎套件。
 
-此功能提供API來產生和操控檔案。 您可以按需生成或操作文檔，或建立批處理作業以按定義的間隔生成多個文檔。 通訊API提供：
+該功能提供 API 來產生和操控文件。您可以隨需產生和操控文件，或建立批次作業以按定義的時間間隔產生多個文件。通訊 API 提供：
 
-* 簡化隨需和批次檔案的產生功能。
+* 簡化的隨需和批次文件產生功能。
 
-* 按需組合、重新排列和驗證PDF文檔的功能。
+* 能夠隨需合併、重新排列和驗證 PDF 文件。
 
-* HTTP API可輕鬆與外部系統整合。 包括獨立的API，以用於隨選（低延遲）和批次作業（高吞吐量作業）。
+* 用於輕鬆地與外部系統整合的 HTTP API。包括個別的 API 用於隨需 (低延遲) 和批次操作 (高輸送量操作)。
 
-* 安全存取資料。 通信API僅連接到客戶指定的資料儲存庫並訪問資料，因此通信高度安全。
+* 安全存取資料。通訊 API 僅連接到客戶指定的資料存放庫並從中存取資料，從而使通訊高度安全。
 
-![信用卡報表示例](assets/statement.png)
-信用卡對帳單可使用Communications API來建立。 此示例對帳單使用相同的模板，但根據每個客戶的信用卡使用情況，為每個客戶分別提供資料。
+![信用卡對帳單範例](assets/statement.png)
+可以使用通訊 API 建立信用卡對帳單。此對帳單範例使用相同的範本，但根據每個客戶的信用卡使用情況為每個客戶提供個別的資料。
 
-## 檔案產生
+## 文件產生
 
-通信文檔生成API有助於將模板(XFA或PDF)與客戶資料(XML)結合，以PDF和打印格式（如PS、PCL、DPL、IPL和ZPL格式）生成文檔。 這些API透過運用PDF和XFA範本 [XML資料](communications-known-issues-limitations.md#form-data) 使用批任務按需生成單個文檔或多個文檔。
+通訊文件產生 API 可協助將範本 (XFA 或 PDF) 與客戶資料 (XML) 相結合，以產生 PDF 和列印格式 (例如 PS、PCL、DPL、IPL 和 ZPL 格式) 的文件。這些 API 使用 PDF 和 XFA 範本搭配 [XML 資料](communications-known-issues-limitations.md#form-data)以產生單一隨需文件或使用批次作業產生多個文件。
 
-通常，您使用 [設計工具](use-forms-designer.md) 和使用通訊API來合併資料與範本。 您的應用程式可以將輸出文檔發送到網路打印機、本地打印機或儲存系統進行存檔。 典型的現成可用和自訂工作流程如下所示：
+通常，您使用 [Designer](use-forms-designer.md) 建立範本，並使用通訊 API 將資料與範本合併。您的應用程式可以將輸出文件傳送到網路印表機、本機印表機或儲存系統進行封存。典型的立即可用和自訂工作流程如下所示：
 
-![通信文檔生成工作流](assets/communicaions-workflow.png)
+![通訊文件產生工作流程](assets/communicaions-workflow.png)
 
-您也可以根據使用案例，透過您的網站或儲存伺服器下載這些檔案。
+視使用案例而定，您也可以讓這些文件可透過網站或儲存伺服器下載。
 
-檔案產生API的一些範例如下：
+一些文件產生 API 範例：
 
-### 建立PDF文檔 {#create-pdf-documents}
+### 建立 PDF 文件 {#create-pdf-documents}
 
-您可以使用文檔生成API來建立基於表單設計和XML表單資料的PDF文檔。 輸出是非互動式PDF檔案。 也就是說，使用者無法輸入或修改表單資料。 基本的工作流是將XML表單資料與表單設計合併，以建立PDF文檔。 下圖顯示表單設計與XML表單資料的合併，以產生PDF檔案。
+您可以使用文件產生 API 建立根據表單設計和 XML 表單資料的 PDF 文件。輸出是非互動式 PDF 文件。也就是說，使用者不能輸入或修改表單資料。基本的工作流程是將 XML 表單資料與表單設計合併以建立 PDF 文件。下圖顯示將表單設計與 XML 表單資料合併以產生 PDF 文件。
 
-![建立PDF文檔](assets/outPutPDF_popup.png)
-圖：建立PDF文檔的典型工作流
+![建立 PDF 文件](assets/outPutPDF_popup.png)
+圖：建立 PDF 文件的典型工作流程
 
-### 建立PostScript(PS)、打印機命令語言(PCL)、Zebra打印語言(ZPL)文檔 {#create-PS-PCL-ZPL-documents}
+### 建立 PostScript (PS)、印表機命令語言 (PCL)、Zebra 列印語言 (ZPL) 文件 {#create-PS-PCL-ZPL-documents}
 
-您可以使用文檔生成API來建立基於XDP表單設計或PDF文檔的PostScript(PS)、打印機命令語言(PCL)和Zebra打印語言(ZPL)文檔。 這些API有助於將表單設計與表單資料合併，以產生檔案。 您可以將檔案儲存至檔案，並開發自訂程式以將其傳送至印表機。
+您可以使用文件產生 API 建立根據 XDP 表單設計或 PDF 文件的 PostScript (PS)、印表機命令語言 (PCL)、Zebra 列印語言 (ZPL) 文件。這些 API 可協助將表單設計與表單資料合併以產生文件。您可以將文件儲存到檔案和開發自訂流程將其傳送到印表機。
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -59,11 +59,11 @@ The following illustration shows Communications APIs processing an XML data file
 
  -->
 
-### 處理批資料以建立多個文檔 {#processing-batch-data-to-create-multiple-documents}
+### 處理批次資料以建立多個文件 {#processing-batch-data-to-create-multiple-documents}
 
-您可以使用文檔生成API為XML批資料源內的每個記錄建立單獨的文檔。 您可以以批量和非同步模式生成文檔。 您可以為轉換設定各種參數，然後開始批次處理。
+您可以使用文件產生 API 為 XML 批次資料來源中的每筆記錄建立單獨的文件。您可以採大量和同步模式產生文件。您可以設定各種轉換參數，然後開始批次處理。
 
-![建立PDF文檔](assets/ou_OutputBatchMany_popup.png)
+![建立 PDF 文件](assets/ou_OutputBatchMany_popup.png)
 
 <!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
 
@@ -95,36 +95,36 @@ An interactive PDF document contains various elements that constitute a form. Th
 
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form. -->
 
-## 檔案操作
+## 文件操控
 
-通信文檔操作API有助於組合、重新排列和驗證PDF文檔。 通常，您會建立DDX並將其提交至檔案操作API，以組合或重新排列檔案。 此 [DDX文檔](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 提供了有關如何使用源文檔生成一組所需文檔的說明。 DDX參考檔案提供所有支援操作的詳細資訊。 文檔操作的一些示例包括：
+通訊文件操控 API 可協助合併、重新排列和驗證 PDF 文件。通常，您會建立一個 DDX 並將其提交給文件操控 API 以組合或重新排列文件。[DDX 文件](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)提供了有關如何使用來源文件產生一組所需文件的說明。DDX 參考文件提供關於所有支援之作業的詳細資訊。部分文件操控範例：
 
-### 匯編PDF文檔
+### 組合 PDF 文件
 
-您可以使用檔案操作API將兩個或多個PDF或XDP檔案組合為單一PDF檔案或PDFPortfolio。 以下是匯編PDF文檔的一些方法：
+您可以使用文件操控 API 將兩個或更多 PDF 或 XDP 文件組成單一 PDF 文件或 PDF 組合。以下是一些組合 PDF 文件的方法：
 
-* 組合簡單的PDF文檔
-* 建立PDFPortfolio
-* 組合加密文檔
-* 使用Bates編號來組合文檔
-* 平面化和組合檔案
+* 組合一個簡單 PDF 文件
+* 建立 PDF 組合
+* 組合加密的文件
+* 使用貝茨編號 (Bates numbering) 組合文件
+* 扁平化及組合文件
 
-![從多個PDF文檔組裝簡單的PDF文檔](assets/as_document_assembly.png)
-圖：從多個PDF文檔組裝簡單的PDF文檔
+![將多個 PDF 文件組合成一個簡單 PDF 文件](assets/as_document_assembly.png)
+圖：將多個 PDF 文件組合成一個簡單 PDF 文件
 
-### 拆解PDF文檔
+### 分解 PDF 文件
 
-您可以使用文檔操作API來拆解PDF文檔。 API可從來源檔案擷取頁面，或根據書籤分割來源檔案。 通常，如果PDF文檔最初是從許多單個文檔（如語句集合）建立，則此任務非常有用。
+您可以使用文件操控 API 來分解 PDF 文件。API 可以從來源文件擷取頁面或根據書籤分隔來源文件。通常，如果 PDF 文件最初是從許多個別的文件 (例如報表集合) 建立的，則此作業很有幫助。
 
-* 從源文檔中提取頁面
-* 根據書籤劃分源文檔
+* 從來源文件擷取頁面
+* 根據書籤分隔來源文件
 
-![將基於書籤的源文檔劃分為多個文檔](assets/as_intro_pdfsfrombookmarks.png)
-圖：將基於書籤的源文檔劃分為多個文檔
+![根據書籤將一個來源文件分隔成多個文件](assets/as_intro_pdfsfrombookmarks.png)
+圖：根據書籤將一個來源文件分隔成多個文件
 
-### 轉換為並驗證PDF/A相容文檔
+### 轉換為 PDF/A 相容文件並進行驗證
 
-您可以使用文檔操作API將PDF文檔轉換為符合PDF/A的文檔，並確定PDF文檔是否符合PDF/A。 PDF/A是一種存檔格式，用於對文檔的內容進行長期保存。 這些字型嵌入到文檔中，並且該檔案被解壓縮。 因此，PDF/A文檔通常比標準PDF文檔大。 此外，PDF/檔案不包含音訊和視訊內容。
+您可以使用文件操控 API 將 PDF 文件轉換為 PDF/A 相容文件，並確定 PDF 文件是否 PDF/A 相容。PDF/A 是一種用於長期保存文件內容的封存格式。字體內嵌在文件中，檔案未壓縮。因此，PDF/A 文件通常比標準 PDF 文件大。此外，PDF/A 文件不包含音訊和視訊內容。
 
 <!-- 
 
@@ -152,37 +152,37 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-## 通訊API類型
+## 通訊 API 類型
 
-通訊提供HTTP API，以供隨需和批次檔案產生：
+通訊提供用於隨需和批次產生文件的 HTTP API：
 
-* **[同步API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 適用於按需、低延遲和單記錄文檔生成方案。 這些API更適合使用者動作的使用案例。 例如，在使用者填妥表單後產生檔案。
+* **[同步 API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 適用於隨需、低延遲和單筆記錄文件產生案例。這些 API 更適合根據使用者動作的使用案例。例如，在使用者填寫完表單後產生文件。
 
-* **[批次API（非同步API）](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 適合於計畫、高吞吐量和多文檔生成方案。 這些API會以批次產生檔案。 例如，每月生成電話賬單、信用卡對帳單和福利對帳單。
+* **[批次 API (非同步 API)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 適用於已排程、高輸出量和多文件產生案例。這些 API 批次產生文件。例如，每月產生的電話帳單、信用卡報表和福利報表。
 
 ## 上線
 
-通訊功能是供Formsas a Cloud Service使用者使用的獨立附加模組。 您可以聯絡Adobe銷售團隊或您的Adobe代表以要求存取權。 Adobe 為您的組織啟用存取權限，並向您指定的組織管理員提供所需的特權。 管理員可授予您組織的Formsas a Cloud Service開發人員（使用者）使用API的存取權。
+通訊功能可作為獨立和附加模組供 Forms as a Cloud Service 使用者使用。您可以聯絡 Adobe Sales 團隊或您的 Adobe 代表，要求存取權。Adobe 為您的組織啟用存取權，並向您指定的組織管理員提供所需的權限。管理員可以將存取權授予您組織的 Forms as a Cloud Service 開發人員 (使用者) 以使用 API。
 
-上線後，若要為您的Formsas a Cloud Service環境啟用通訊功能：
+加入後，為您的 Forms as a Cloud Service 環境啟用通訊功能：
 
-1. 登入Cloud Manager並開啟AEM Formsas a Cloud Service例項。
+1. 登入 Cloud Manager 並開啟您的 AEM Forms as a Cloud Service 執行個體。
 
-1. 開啟「編輯方案」選項，前往「解決方案與附加元件」標籤，然後選取 **[!UICONTROL Forms — 通訊]** 選項。
+1. 開啟「編輯方案」選項，前往「解決方案和附加元件」索引標籤，然後選擇&#x200B;**[!UICONTROL Forms - 通訊]**&#x200B;選項。
 
    ![通訊](assets/communications.png)
 
-   如果您已啟用 **[!UICONTROL Forms — 數位註冊]** 選項，然後選取 **[!UICONTROL Forms — 通訊附加元件]** 選項。
+   如果您已經啟用&#x200B;**[!UICONTROL Forms - 數位註冊]**&#x200B;選項，則選擇&#x200B;**[!UICONTROL Forms - 通訊附加元件]**&#x200B;選項。
 
-   ![Addon](assets/add-on.png)
+   ![附加元件](assets/add-on.png)
 
-1. 按一下 **[!UICONTROL 更新]**.
+1. 按一下&#x200B;**[!UICONTROL 更新]**。
 
-1. 執行建置管道。 建置管道成功後，即會為您的環境啟用通訊API。
+1. 執行建置管道。建置管道成功後，將為您的環境啟用通訊 API。
 
 >[!NOTE]
 >
-> 若要啟用並設定檔案操作API，請新增下列規則至 [Dispatcher設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> 若要啟用和設定文件操控 API，請將以下規則新增至[Dispatcher 設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)：
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
