@@ -2,7 +2,7 @@
 title: UI 測試
 description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 3e31b065999d36717b81253d2773e41b76949954
+source-git-commit: 6de0b7c961083d9be00837439757da95326a96da
 workflow-type: tm+mt
 source-wordcount: '2141'
 ht-degree: 56%
