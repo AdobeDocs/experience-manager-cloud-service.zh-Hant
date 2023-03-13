@@ -1,117 +1,117 @@
 ---
-title: 如何將所有內容放在一起 — 您的應用程式和AEM Headless中的內容
-description: 在AEM無周邊開發人員歷程的這部分，了解如何帶您的AEM專案（包括內容片段、GraphQL呼叫、REST API呼叫和應用程式），並為其上線做準備。
+title: 如何在 AEM Headless 中將您的應用程式和內容組合在一起
+description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何使用您的 AEM 專案 (包含內容片段)、GraphQL 呼叫、REST API 呼叫和您的應用程式，並為上線做好準備。
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: tm+mt
+source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+workflow-type: ht
 source-wordcount: '1069'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 如何將所有內容放在一起 — 您的應用程式和AEM Headless中的內容 {#put-it-all-together}
+# 如何在 AEM Headless 中將您的應用程式和內容組合在一起 {#put-it-all-together}
 
-在 [AEM Headless Developer Journey](overview.md)，您就能熟悉如何使用AEM開發工具和無頭式SDK，將應用程式整合在一起。
+在 [AEM Headless 開發人員歷程](overview.md)的這一部分中，了解如何使用 AEM 開發工具和 Headless SDK 將您的應用程式組合在一起。
 
-## 迄今為止的故事 {#story-so-far}
+## 到目前為止 {#story-so-far}
 
-在AEM無頭歷程的上一份檔案中， [如何透過AEM Assets API更新您的內容](update-your-content.md) 您已學會如何透過API更新AEM中現有的無頭內容，現在應：
+在 AEM 無周邊歷程的上一個文件「[如何透過 AEM Assets API 更新您的內容](update-your-content.md)」中，您已了解如何通過 API 更新 AEM 中現有的無周邊內容，您現在應該：
 
-* 了解AEM Assets HTTP API。
+* 了解 AEM Assets HTTP API。
 
 ## 目標 {#objective}
 
-本文旨在協助您了解如何透過下列方式，將AEM無標題應用程式整合在一起：
+本文旨在透過以下方式幫助您了解如何將 AEM 無周邊應用程式組合在一起：
 
-* 了解AEM Headless SDK及所需的開發工具
-* 設定本機開發執行階段，以在上線前模擬您的內容
-* 了解AEM內容復寫基本知識
+* 了解 AEM Headless SDK 和所需的開發工具
+* 設定本機開發執行階段以在上線前模擬您的內容
+* 了解 AEM 內容複製基本知識
 
 ## AEM SDK {#the-aem-sdk}
 
-AEM SDK可用來建置和部署自訂程式碼。 這是您在開發和測試無頭應用程式之前所需的主要工具。 它包含下列成品：
+AEM SDK 用於建置和部署自訂程式碼。它是您在上線前開發和測試無周邊應用程式所需的主要工具。它都包含下列成品：
 
-* Quickstart jar — 可執行的jar檔案，可用於設定作者和發佈執行個體
-* Dispatcher工具 — 適用於Windows和UNIX®系統的Dispatcher模組及其相依性
-* Java™ API Jar - Java™ Jar/Maven相依性，可公開可用於針對AEM進行開發的所有允許Java™ API
-* Javadoc jar - Java™ API jar的javadoc
+* Quickstart jar - 這是可執行的 jar 檔案，可用於設定作者和發佈執行個體
+* Dispatcher 工具 - Dispatcher 模組及其對基於 Windows 和 Unix® 系統的相依性
+* Java™ API Jar - Java™ Jar/Maven 相依性公開了所有允許的 Java™ API，其可用於針對 AEM 進行開發
+* Javadoc jar - Java™ API jar 的 javadoc
 
 ## AEM Headless SDK {#the-aem-headless-sdk}
 
-與AEM SDK不同，AEM **無頭SDK** 是一組程式庫，供用戶端用來透過HTTP快速輕鬆與AEM Headless API互動。
+與 AEM SDK 不同，AEM **Headless SDK** 是一組程式庫，用戶端可以使用這些程式庫透過 HTTP 快速輕鬆地與 AEM Headless API 互動。
 
-如需AEM Headless SDK的詳細資訊，請參閱 [說明](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
+有關 AEM Headless SDK 的詳細資訊，請參閱[此處文件](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)。
 
 ## 其他開發工具 {#additional-development-tools}
 
-除了AEM SDK，您還需要其他工具來協助您在本機開發和測試程式碼和內容：
+除了 AEM SDK 之外，您還需要其他工具來協助您在本機開發和測試程式碼和內容：
 
 * Java™
 * Git
-* 阿帕奇·馬文
-* Node.js程式庫
-* 您選擇的IDE
+* Apache Maven
+* Node.js 程式庫
+* 您選擇的 IDE
 
-由於AEM是Java™應用程式，因此您必須安裝Java™和Java™ SDK，才能支援AEM as a Cloud Service的開發。
+由於 AEM 是 Java™ 應用程式，因此您需要安裝 Java™ 和 Java™ SDK 以支援開發 AEM as a Cloud Service。
 
-您可使用Git來管理原始碼控制項，以及簽入Cloud Manager的變更，然後將其部署至生產執行個體。
+Git 是您用來管理原始檔控制系統和簽入對 Cloud Manager 的變更，然後將它們部署到生產執行個體的工具。
 
-AEM使用Apache Maven來建置從AEM Maven專案原型產生的專案。 所有主要IDE都為Maven提供整合支援。
+AEM 使用 Apache Maven 建置從 AEM Maven 專案原型產生的專案。所有主要的 IDE 都提供對 Maven 的整合支援。
 
-Node.js是JavaScript執行階段環境，用於搭配AEM專案的前端資產使用 `ui.frontend` 子專案。 Node.js與npm一起分發，實際上是Node.js套件管理器，用於管理JavaScript相依性。
+Node.js 是 JavaScript 執行階段環境，用於處理 AEM 專案 `ui.frontend`子專案的前端資產。Node.js 與 npm 一起傳遞，是事實上的 Node.js 套件管理員，用於管理 JavaScript 相依性。
 
-## AEM系統元件一覽 {#components-of-an-aem-system-at-a-glance}
+## AEM 系統元件一覽 {#components-of-an-aem-system-at-a-glance}
 
-接下來，我們來看看AEM環境的組成部分。
+接下來，讓我們看看 AEM 環境的組成部分。
 
-完整的AEM環境由製作、發佈和Dispatcher組成。 這些相同的元件會在本機開發執行階段中提供，讓您在上線前更輕鬆地預覽程式碼和內容。
+完整的 AEM 環境由作者、發佈和 Dispatcher 組成。這些相同的元件在本機開發執行階段中可用，以方便您在上線前預覽您的程式碼和內容。
 
-* **作者服務** 是內部使用者建立、管理和預覽內容的位置。
+* **作者服務**&#x200B;是內部使用者建立、管理和預覽內容的地方。
 
-* **發佈服務** 會視為「即時」環境，且通常是使用者與之互動的環境。 內容在Author服務上經過編輯和核准後，會分發至Publish服務。 AEM無頭式應用程式最常見的部署模式是讓生產版本的應用程式連線至AEM發佈服務。
+* **發佈服務**&#x200B;被認為是「即時」環境，通常是一般使用者與其互動。內容在作者服務上經編輯和核准後，將傳遞到發佈服務。AEM 無周邊應用程式最常見的部署模式是讓應用程式的生產版本連接到 AEM Publish 服務。
 
-* **Dispatcher** 是與AEM Dispatcher模組增強的靜態Web伺服器。 它會快取由發佈例項產生的網頁，以提升效能。
+* **Dispatcher** 是靜態 Web 伺服器，增加了 AEM Dispatcher 模組。它快取發佈執行個體產生的網頁以提升效能。
 
 ## 本機開發工作流程 {#the-local-development-workflow}
 
-本機開發專案以Apache Maven為基礎，且使用Git進行原始碼控制。 為了更新專案，開發人員可使用其偏好的整合開發環境，例如Eclipse、Visual Studio Code或IntelliJ等。
+本機開發專案以 Apache Maven 為基礎建置，並使用 Git 進行原始檔控制。為了更新專案，開發人員可以使用偏好的整合式開發環境，例如 Eclipse、Visual Studio Code 或 IntelliJ 等。
 
-若要測試無頭應用程式所擷取的程式碼或內容更新，您必須將更新部署至本機AEM執行階段，其中包括AEM製作和發佈服務的本機例項。
+若要測試無周邊應用程式取用的程式碼或內容更新，您必須將更新部署到本機 AEM 執行階段，其中包括 AEM 作者和發佈服務的本機執行個體。
 
-請務必注意本機AEM執行階段中每個元件之間的差異，因為在最重要的位置測試更新非常重要。 例如，在製作上測試內容更新，或在發佈例項上測試新程式碼。
+請務必注意本機 AEM 執行階段每個元件之間的區別，因為在與您的更新最有關係的地方測試它，這一點非常重要。例如，在作者執行個體測試內容更新或在發佈執行個體測試新程式碼。
 
-在生產系統中，Dispatcher和http Apache伺服器一律會位於AEM發佈例項之前。 它們為AEM系統提供快取和安全性服務，因此也必須針對Dispatcher測試程式碼和內容更新。
+在生產系統中，Dispatcher 和 http Apache 伺服器一律位於 AEM 發佈執行個體的前面。它們為 AEM 系統提供快取和安全性服務，因此針對 Dispatcher 測試程式碼和內容更新是最重要的。
 
-## 使用本機開發環境在本機預覽您的程式碼和內容 {#previewing-your-code-and-content-locally-with-the-local-development-environment}
+## 使用本機開發環境在本機預覽程式碼和內容 {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-若要為啟動準備AEM無標題專案，您必須確定專案的所有組成部分都正常運作。
+為了讓 AEM 無周邊專案準備好開始，您需要確保專案的所有組成部分都正常運作。
 
-要做到這一點，你必須把所有事情放在一起：程式碼、內容和設定，並在本機開發環境中測試，以備上線準備。
+為此，您必須將所有項目放在一起：程式碼、內容和設定，並在本機開發環境中測試以準備好上線。
 
-地方發展環境由三個主要領域組成：
+本機開發環境由三個主要區域組成：
 
-1. AEM專案 — 此專案包含AEM開發人員將要使用的所有自訂程式碼、設定和內容
-1. 本機AEM執行階段 — 用於從AEM專案部署程式碼的AEM製作和發佈服務的本機版本
-1. 本機Dispatcher執行階段 — 包含Dispatcher模組的Apache httpd網站伺服器的本機版本
+1. AEM 專案 - 此專案包含 AEM 開發人員將要處理的所有自訂程式碼、設定和內容
+1. 本機 AEM 執行階段 - AEM 作者和發佈服務本機版本，用於從 AEM 專案部署程式碼
+1. 本機 Dispatcher 執行階段 - 包含 Dispatcher 模型的 Apache htttpd 網頁伺服器本機版本
 
-設定本機開發環境後，您就可以在本機部署靜態節點伺服器，以模擬提供給React應用程式的內容。
+設定好本機開發環境後，您可以透過在本機部署靜態節點伺服器來模擬提供給 React 應用程式的內容。
 
 <!-- THIS TOPIC IS 404. IT DOES NOT APPEAR IN THE TOC OR ANYWHERE ELSE To get a more in-depth look at setting up a local development environment and all dependencies needed for content preview, see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/headless-tutorial/graphql/multi-step/production-deployment.html). -->
 
 ## 下一步 {#whats-next}
 
-現在您已完成AEM Headless Developer Journey的這一部分，您應：
+您已完成此部分的 AEM Headless 開發人員歷程，您應該：
 
-* 熟悉AEM開發工具
+* 熟悉 AEM 開發工具
 * 了解本機開發工作流程
 
-繼續進行AEM無頭歷程，繼續檢閱此檔案 [如何與無頭應用程式一起運行](/help/journey-headless/developer/go-live.md) 您實際將AEM Headless專案上線的位置！
+接下來查看文件[如何將 Headless 應用程式上線](/help/journey-headless/developer/go-live.md)繼續您的 AEM 無周邊歷程，在其中您可實際將 AEM Headless 專案上線！
 
 ## 其他資源 {#additional-resources}
 
-* [AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-* [設定本機AEM環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [適用於用戶端瀏覽器的AEM Headless SDK(JavaScript)](https://github.com/adobe/aem-headless-client-js)
-* [AEM Headless SDK for server-side/Node.js(JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
-* [AEM Headless SDK for Java™](https://github.com/adobe/aem-headless-client-java)
+* [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [設定本機 AEM 環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [適用於用戶端瀏覽器的 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-js)
+* [適用於伺服器端/Node.js 的 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
+* [適用於 Java™ 的 AEM Headless SDK](https://github.com/adobe/aem-headless-client-java)
 
