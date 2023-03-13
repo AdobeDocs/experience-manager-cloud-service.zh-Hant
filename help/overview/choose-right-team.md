@@ -1,75 +1,76 @@
 ---
-title: 正確的人，正確的角色
-description: 正確的人，正確的角色
+title: 合適的人，合適的角色
+description: 合適的人，合適的角色
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '825'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# 首先，讓合適的人擔任正確的角色 {#get-the-right-people-in-the-right-roles}
+# 首先，讓合適的人擔任合適的角色 {#get-the-right-people-in-the-right-roles}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_chooseteam"
->title="選擇正確的團隊"
->abstract="將適當的人員投入正確的工作，協助推動您的Adobe Experience Manager部署成功。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="調整KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="評估KPI"
+>title="選擇合適的團隊"
+>abstract="讓合適的人擔任合適的工作，促使您的 Adobe Experience Manager 部署成功。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=zh-Hant" text="調整 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=zh-Hant" text="評估 KPI"
 
-貴組織中有數個部門可能擁有數位體驗的不同層面。 沒有治理，舞台就會無休止的辯論、內鬥和混亂。
+很可能在您的組織中，多個部門負責數位體驗的不同層面。若沒有管理，就會出現無止境的爭論、內鬥和混亂。
 
-數位治理首先要弄清楚誰負責什麼，誰在做著以數位為中心的工作。 您可能需要進行一些戰略性招聘，以增加所需的技能。 一個更大的挑戰是推動文化轉變 — 為新技術建立廣泛的支援，幫助人們適應新的做事方式。 這項努力的一個關鍵部分是建立數字社區，讓人們互相學習和支援。
+數位管理首先要弄清楚誰負責什麼以及是誰在做哪個數位工作。您可能需要進行一些策略性雇用以增加所需技能。更大的挑戰是推動文化轉變，為新技術建立廣泛的支援並幫助人員習慣新的做事方式。這項工作的一個關鍵部分是建立數位社群，讓人們互相學習和支援。
 
-目前，我們將專注於讓合適的人員從事適當的工作，以協助推動您的Adobe Experience Manager部署。 針對每個核心產品(Experience Manager Sites和Experience Manager Assets)，我們提供了您需要填補的角色清單，以及能讓人們在各種角色中發揮效益的技能、專業水準和屬性。
+從現在起，讓合適的人擔任合適的工作，讓 Adobe Experience Manager 部署成功。對於每個核心產品 (Experience Manager Sites 和 Experience Manager Assets)，我們都有提供所需角色清單，以及使人們在各種角色中發揮作用的技能、專業知識水準和屬性。
 
-本週您的工作是與您的實作團隊一起檢閱這兩份清單，並確保每個角色都有具備相關資格的人員。
+您本週的任務是與您的實作團隊一起審查這兩個清單，並確保每個角色中都有相關資格的人員擔任。
 
-## **AEM Experience Manager Sites的關鍵角色**
+## **AEM Experience Manager Sites 的關鍵角色**
 
-勝出的團隊需要9個人坐在合適的座位上 — 就像你的部署團隊一樣。 你與Adobe Experience Manager Sites的成功取決於你的團隊成員的實力以及他們合作的程度。 請確定您將這九個角色指派給具有建議資格的人員。
+一個獲勝的團隊需要九個人坐在正確的位置上，就像你的部署團隊一樣。Adobe Experience Manager Sites 的成功取決於團隊成員的實力以及他們的合作程度。確保將這九個角色
+指派給具有建議之資格的人員。
 
-| 角色 | 技能 | 功能層級 | 品質 |
+| 角色 | 技能 | 能力水準 | 資格 |
 |--- |--- |--- |--- |
-| 專案經理 | PMP認證，敏捷認證，風險管理經驗 | 專家 | 公平、一致、負責、有組織、積極、平易近人、願意接受變革 |
-| Scrum主版 | ScrumMaster認證，敏捷認證，促進經驗 | 專家 | 一致、有創意 |
-| 產品擁有者 | 敏捷的認證，深入了解業務需求 | 專家 | 平衡、自信 |
-| IT在安全、基礎架構、工具方面領先 | CISM認證、Adobe Experience Manager元件開發人員認證 | 專家 | 面向細節 |
-| 策略師/超級用戶 | Adobe Experience Manager Sites熟練程度 | 新手到專家 | 堅韌、好奇、徹底、開放、願意接受變革、合作 |
-| QA/UAT銷售機會 | 敏捷認證，了解SDLC | 新手到中級 | 面向細節，過程驅動，一致 |
-| 技術架構師 | IT基礎架構體驗 | 專家 | 以細節為導向，流程驅動，一致 |
-| 後端開發人員 | 敏捷認證 — 電腦寫程式與電腦科學的經驗 | 新手到中級 | 以細節為導向，流程驅動，一致 |
-| 前端開發人員 | 敏捷認證，了解HTML、CSS和JavaScript | 新手到中級 | 以細節為導向，流程驅動，一致 |
+| 專案經理 | PMP 認證、Agile 認證、風險管理經驗 | 專家 | 公平、始終如一、負責、有條理、積極、平易近人、接受變化 |
+| Scrum 達人 | ScrumMaster 認證、Agile 認證、引導經驗 | 專家 | 始終如一、有創意 |
+| 產品所有者 | Agile 認證、對業務需求有深度了解 | 專家 | 平衡、自信 |
+| 安全性、基礎設施、工具的 IT 主管 | CISM 認證、Adobe Experience Manager Component Developer 認證 | 專家 | 注重細節 |
+| 策略家/超級使用者 | 精通 Adobe Experience Manager Sites | 新手到專家 | 堅持、好奇、周密、思想開放、接受變化、易合作 |
+| QA/UAT 主管 | Agile 認證、了解 SDLC | 新手到中級 | 注重細節、流程推動、始終如一 |
+| 技術架構師 | IT 基礎架構經驗 | 專家 | 注重細節、流程推動、始終如一 |
+| 後端開發人員 | Agile 認證、電腦程式設計和電腦科學經驗 | 新手到中級 | 注重細節、流程推動、始終如一 |
+| 前端開發人員 | Agile 認證、了解 HTML、CSS 和 JavaScript | 新手到中級 | 注重細節、流程推動、始終如一 |
 
-現在您知道需要哪些角色，請查看下圖，了解每個角色在實施程式中的作用時間。
+既然您知道需要哪些角色，請查看下表以了解每個角色何時在實作流程中發揮作用。
 
 <br>
 
 ![](assets/team_involvement.png)
 
-**請與您的實作團隊檢閱此清單** 確保每個角色都有具備相關資格的人。 不太熟悉Adobe Experience Cloud的團隊成員可使用 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 學習資源以通過 [Adobe數位學習](https://learning.adobe.com/certification.html).
+**與您的實作團隊一起審查此清單**，並確保每個角色中都有相關資格的人員擔任。團隊成若不熟悉 Adobe Experience Cloud 可以使用 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 學習資源來透過 [Adobe 數位學習](https://learning.adobe.com/certification.html)取得認證。
 
-## **AEM Experience Manager Assets的關鍵角色**
+## **AEM Experience Manager Assets 的關鍵角色**
 
-從架構師到ScrumMaster，此團隊中的每個角色都是不可或缺的 — 包括DAM圖書館員。
+從架構師到 ScrumMaster，這個團隊中的每個角色都是不可或缺的，包括 DAM 圖書管理員。
 
-您可能已有執行成功Adobe Experience Manager Assets實作所需的大部分人員。 此清單與Adobe Experience Manager Sites的清單類似，並附上一個重要的額外項目：您需要一個圖書管理員，以確保數字資產的組織方式和標籤方式易於查找。
+您可能已經擁有成功實作 Adobe Experience Manager Assets 所需的大部分人員。此清單與 Adobe Experience Manager Sites 的類似，但有一個重要的補充：您需要一名圖書管理員來確保您的數位資產的組織和標記方式讓人易於查找。
 
-| 角色 | 技能 | 功能層級 | 品質 |
+| 角色 | 技能 | 能力水準 | 資格 |
 |--- |--- |--- |--- |
-| 專案經理 | PMP認證，敏捷認證，風險管理經驗 | 專家 | 公平、一致、負責、有組織、積極、平易近人、願意接受變革 |
-| Scrum主版 | ScrumMaster認證，敏捷認證，促進經驗 | 專家 | 一致、有創意 |
-| 產品擁有者 | 敏捷的認證，深入了解業務需求 | 專家 | 平衡、自信 |
-| IT在安全、基礎架構、工具方面領先 | CISM認證、Adobe Experience Manager元件開發人員認證 | 專家 | 面向細節 |
-| 策略師/超級用戶 | Adobe Experience Manager Sites熟練程度 | 新手到專家 | 堅韌、好奇、徹底、開放、願意接受變革、合作 |
-| QA/UAT銷售機會 | 敏捷認證，了解SDLC | 新手到中級 | 面向細節，過程驅動，一致 |
-| 技術架構師 | IT基礎架構體驗 | 專家 | 以細節為導向，流程驅動，一致 |
-| 後端開發人員 | 敏捷認證 — 電腦寫程式與電腦科學的經驗 | 新手到中級 | 以細節為導向，流程驅動，一致 |
-| 前端開發人員 | 敏捷認證，了解HTML、CSS和JavaScript | 新手到中級 | 以細節為導向，流程驅動，一致 |
-| DAM圖書館 | 圖書館學背景與學位 | 專家 | 以細節為導向，流程驅動，組織 |
+| 專案經理 | PMP 認證、Agile 認證、風險管理經驗 | 專家 | 公平、始終如一、負責、有條理、積極、平易近人、接受變化 |
+| Scrum 達人 | ScrumMaster 認證、Agile 認證、引導經驗 | 專家 | 始終如一、有創意 |
+| 產品所有者 | Agile 認證、對業務需求有深度了解 | 專家 | 平衡、自信 |
+| 安全性、基礎設施、工具的 IT 主管 | CISM 認證、Adobe Experience Manager Component Developer 認證 | 專家 | 注重細節 |
+| 策略家/超級使用者 | 精通 Adobe Experience Manager Sites | 新手到專家 | 堅持、好奇、周密、思想開放、接受變化、易合作 |
+| QA/UAT 主管 | Agile 認證、了解 SDLC | 新手到中級 | 注重細節、流程推動、始終如一 |
+| 技術架構師 | IT 基礎架構經驗 | 專家 | 注重細節、流程推動、始終如一 |
+| 後端開發人員 | Agile 認證、電腦程式設計和電腦科學經驗 | 新手到中級 | 注重細節、流程推動、始終如一 |
+| 前端開發人員 | Agile 認證、了解 HTML、CSS 和 JavaScript | 新手到中級 | 注重細節、流程推動、始終如一 |
+| DAM 圖書管理員 | 圖書館學背景和學位 | 專家 | 注重細節、流程推動、井然有序 |
 
-現在您知道需要哪些角色，請查看下圖，了解每個角色在實施程式中的作用時間。
+既然您知道需要哪些角色，請查看下表以了解每個角色何時在實作流程中發揮作用。
 
 <br>
 
@@ -77,4 +78,4 @@ ht-degree: 1%
 
 >[!TIP]
 >
-> 深入了解Adobe Experience Cloud並運用資源 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 通過認證 [Adobe數位學習](https://learning.adobe.com/certification.html).
+> 進一步了解 Adobe Experience Cloud 並利用 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 上的資源，並透過 [Adobe 數位學習](https://learning.adobe.com/certification.html)獲得認證。
