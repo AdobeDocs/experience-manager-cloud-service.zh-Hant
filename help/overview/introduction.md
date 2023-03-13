@@ -3,64 +3,64 @@ title: Adobe Experience Manager as a Cloud Service 簡介
 description: Adobe Experience Manager (AEM) as a Cloud Service 簡介。
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '632'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service 簡介 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-[Adobe Experience Manager](https://www.adobe.com/tw/marketing/experience-manager.html) (AEM) 現在能以 Cloud Service 形式使用。
+[Adobe Experience Manager](https://www.adobe.com/tw/marketing/experience-manager.html) (AEM) 現在能以雲端服務形式使用。
 
-Adobe Experience Manager(AEM)as a Cloud Service是AEM產品線的最新產品，可協助您繼續為客戶提供個人化、內容導向的體驗。 它提供雲端原生靈活性，可加快價值實現時間，並可擴充以滿足您獨特的業務需求。 您可以保留並擴充所有使用案例和功能，以過去的投資和創新為基礎。
+Adobe Experience Manager (AEM) as a Cloud Service 是 AEM 產品線的最新產品，可幫助您繼續為客戶提供以內容為主導的個人化體驗。它提供雲端原生敏捷性以加快實現價值的速度，並且可以擴充以滿足您獨特的業務需求。您可以保留和擴充所有使用案例和功能，藉此在過去的投資和創新上建置。
 
-AEM as a Cloud Service可讓您以雲端原生方式利用AEM應用程式，以便：
+AEM as a Cloud Service 讓您能夠以雲端原生方式利用 AEM 應用程式，這樣您就可以：
 
-* 使用Cloud Manager擴展您的DevOps工作：CI/CD架構、自動縮放、API連線、彈性的部署模式、程式碼品質閘道、服務傳送的透明度，以及引導式更新。
+* 使用 Cloud Manager 擴展您的 DevOps 工作：CI/CD 框架、自動縮放、API 連接、靈活的部署模式、程式碼品質閘道、服務傳遞透明度和引導式更新。
 
-* 讓開發人員可將自動化新增至應用程式開發實務。
+* 使開發人員能夠將自動化加入到應用程式開發做法中。
 
-* 使用內建的內容傳遞網路(CDN)和其他網路層最佳實務，以全域規模快速且有效地傳遞內容。
+* 使用內建的內容傳遞網路 (CDN) 和其他網路層最佳做法，快速有效率地以全球規模傳遞內容。
 
-* 利用可自動擴展的動態體系結構，從而消除基礎架構方面的考慮。
+* 利用可自動擴展的動態架構，從而消除基礎架構方面的考量。
 
-* 使用自動化測試掃描常見漏洞，隨時掌握威脅和安全風險緩解。
+* 使用自動化測試掃描常見漏洞，掌握威脅和安全性風險緩解措施。
 
-* 通過優化的效能拓撲確保實現最大的可復原性和效率。
+* 透過最佳化的效能拓撲確保最大的彈性和效率。
 
-* 利用AEM Adobe Experience Cloud的深入整合，提供更佳的客戶線上行銷和網頁分析產品體驗。
+* 利用 AEM as a Cloud Service 與 Adobe Experience Cloud 的深入整合，透過線上行銷和 Web 分析產品提供更好的客戶體驗。
 
-* 運用有助於加速移轉工作的工具，例如程式碼重構、內容傳輸等。
+* 利用有助於加速移轉工作的工具，例如程式碼重構、內容傳送等。
 
-有了AEMas a Cloud Service,
+有了 AEM as a Cloud Service
 
-* 開發人員可使用新的雲端開發模式，專注於設定和擴充AEM。
+* 開發人員可以專注於使用新的雲端式開發模式設定和擴展 AEM。
 
-* 內容作者可利用定期提供的最新創新功能。
+* 內容作者可以利用定期提供給他們的最新創新技術。
 
-* 系統管理員可以最大限度地減少配置和基礎架構維護中的手動任務。
+* 系統管理員可以盡量減少手動設定任務和手動基礎架構維護任務。
 
-* 行銷專業人員可加快實現價值。
+* 行銷專業人員可以更快地實現價值。
 
 >[!NOTE]
->若要了解 AEM as a Cloud Service 的新詞彙，請參閱[術語](terminology.md)。
+>若要了解 AEM as a Cloud Service 的新術語，請參閱[術語](terminology.md)。
 
-## 以 Cloud Service 的形式創造附加價值 {#value-added-as-a-cloud-service}
+## 以雲端服務的形式創造附加價值 {#value-added-as-a-cloud-service}
 
 AEM 採用現代化雲端服務的主要特色來達成下列目標：
 
 * 隨時待命：
 
-   * 我們已重新審視整個服務架構，無論是內容管理或內容傳送功能，都不發生停機問題。
+   * 我們已重新審視整個服務架構，無論是內容管理或內容傳遞功能，都不發生停機問題。
 
 * 調整規模：
 
-   * AEM as a Cloud Service 的所有例項一律平等，因此服務架構會根據您的需求自動縮減或擴大規模。
+   * AEM as a Cloud Service 的所有執行個體一律平等，因此服務架構會根據您的需求自動縮減或擴大規模。
 
 * 永遠最新：
 
-   * AEM as a Cloud Service 為 AEM 程式碼基底實作新的持續傳送管道，每月可自動多次更新。這可讓您隨時使用最新版本，解決 AEM 應用程式的其中一個主要挑戰。
+   * AEM as a Cloud Service 為 AEM 程式碼基底實作新的持續傳遞管道，每月可自動多次更新。這可讓您隨時使用最新版本，解決 AEM 應用程式的其中一個主要挑戰。
 
 * 不斷進化：
 
@@ -78,6 +78,6 @@ AEM 採用現代化雲端服務的主要特色來達成下列目標：
 
 >[!TIP]
 >
->一旦取得AEM as a Cloud Service的概觀，即可透過檢閱 [入門歷程。](/help/journey-onboarding/overview.md)
+>大致了解 AEM as a Cloud Service 後，您可以透過查看[入門歷程](/help/journey-onboarding/overview.md)來快速入門。
 >
->已上線或準備好開始測試AEM功能？ 安裝 [AEM參考示範附加元件](/help/journey-sites/demos-add-on/overview.md) 使用豐富的範例來探索AEM的強大功能。
+>已經入門或準備好深入測試 AEM 功能？安裝 [AEM 參考示範附加元件](/help/journey-sites/demos-add-on/overview.md)以使用豐富的範例探索 AEM 的強大功能。
