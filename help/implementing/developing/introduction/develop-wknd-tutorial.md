@@ -1,33 +1,33 @@
 ---
-title: 開始開發 AEM Sites - WKND 教學課程
-description: 剛開發AEM? 需要重新整理最佳實務嗎？ 這是開始的地方！ 本多部分教學課程的目標是教導剛接觸AEM的開發人員如何使用最新標準和技術在AEM中實作網站。
+title: 開發 AEM Sites 快速入門 - WKND 教學課程
+description: 第一次開發 AEM？需要複習最佳做法？這是開始的地方！這個由多個部分組成的教學課程的目標是指導 AEM 新手開發人員如何使用最新的標準和技術在 AEM 中實作網站。
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '242'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
-# 開始開發 AEM Sites - WKND 教學課程{#getting-started-developing-aem-sites-wknd-tutorial}
+# 開發 AEM Sites 快速入門 - WKND 教學課程{#getting-started-developing-aem-sites-wknd-tutorial}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
-剛開發Adobe Experience Manager as a Cloud Service? 需要重新整理最新實務嗎？ 這是開始的地方！
+第一次開發 Adobe Experience Manager as a Cloud Service？需要複習最新做法？這是開始的地方！
 
-本多部分教學課程的目標是教導剛接觸AEM的開發人員如何使用最新標準和技術在AEM中實作網站。 希望在本教學課程結束時，您能了解AEM平台的基本基礎，並了解一些常見設計模式的知識。
+這個由多個部分組成的教學課程的目標是指導 AEM 新手開發人員如何使用最新的標準和技術在 AEM 中實作網站。希望在本教學課程結束時，您將了解 AEM 平台的基本知識和一些常見設計模式的知識。
 
 ## WKND 開發人員教學課程 {#wknd-developer-tutorial}
 
 ![WKND](assets/wknd-tutorial-homepage.png)
 
-[您可在此處取得WKND開發人員教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 並透過最新技術和最佳實務，引導您建立AEM專案。
+[這裡提供 WKND 開發人員教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)，它會逐步指導您如何使用最新技術和最佳做法建立 AEM 專案。
 
 ## 核心概念 {#core-concepts}
 
-本教學課程實作運用AEM的許多強大功能。 網站的實作方式為：
+教學課程實作利用 AEM 的許多強大功能。此網站將使用以下項目實作：
 
-* [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Maven AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)
 * [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
 * [Sling 模型](https://sling.apache.org/documentation/bundles/models.html)
