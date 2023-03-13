@@ -1,6 +1,6 @@
 ---
-title: App Builder簡介
-description: 了解App Builder的基本概念，從其商業價值到架構。
+title: App Builder 簡介
+description: 了解 App Builder 從其商業價值到架構的基本知識。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -10,38 +10,38 @@ kt: 9452, 9464, 9465, 9466
 thumbnail: 339158.jpg
 exl-id: c6fc96a0-ff95-4fb9-8674-71e60d23ef5c
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# App Builder簡介
+# App Builder 簡介
 
 >[!IMPORTANT]
 >
-> _AdobeProject Firefly（如本系列影片所述）現在更名為App Builder_
+> _如本系列影片中所述，Adobe Project Firefly 現在更名為 App Builder_
 
 ## 簡介
 
-了解App Builder、其功能，以及App Builder提供的商業價值。
+了解 App Builder、其功能以及 App Builder 提供的商業價值。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
 
 ## 接觸點
 
-了解使用者如何與App Builder SPA互動，以及開發人員可在何處了解App Builder開發。
+了解一般使用者如何與 App Builder SPA 互動，以及開發人員可以在何處了解 App Builder 開發。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
 
 ## 架構
 
-了解App Builder的應用程式架構及其優點。
+了解 App Builder 的應用程式架構及其優勢。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339160/?quality=12&learn=on)
 
-## 業務價值和使用案例
+## 商業價值和使用案例
 
-了解App Builder的設計原則和常見使用案例。
+了解 App Builder 的設計原則和常見使用案例。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339161/?quality=12&learn=on)
