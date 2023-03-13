@@ -37,7 +37,7 @@ Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一�
 
 搭配 AEMaaCS 使用自訂網域名稱有幾項限制。
 
-* Cloud Manager 支援自訂網域名稱，適用於 Sites 程序的發佈和預覽服務。不支援製作端的自訂網域。
+* Cloud Manager 支援自訂網域名稱，適用於 Sites 程序的發佈和預覽服務。不支援作者端的自訂網域。
 * 每個 Cloud Manager 環境最多可以託管 500 個自訂網域。
 * AEM as a Cloud Service 不支援萬用字元網域。
 * 在新增自訂網域名稱之前，必須為您的程序安裝包含自訂網域名稱的有效 SSL 憑證。請參閱新增 SSL 憑證以了解更多資訊。
