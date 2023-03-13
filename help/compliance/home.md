@@ -14,7 +14,7 @@ ht-degree: 100%
 
 取得 Experience Manager as a Cloud Service 合規性概觀。
 
-## 重要文章概覽 {#key-articles}
+## 重要文章概觀 {#key-articles}
 
 * [資料保護與資料隱私權法規整備](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [資料保護與資料隱私權法規的基礎整備](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
@@ -33,10 +33,10 @@ ht-degree: 100%
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何使用及管理 Experience Manager Assets as a Cloud Service。 |
 | [轉移至 AEM as a Cloud Service ](/help/journey-migration/getting-started.md) | 了解轉換至雲端服務的過程。 |
 | [實作使用手冊](/help/implementing/home.md) | 透過探索這些開發和部署主題，了解如何使用 AEM 的強大功能建置和自訂體驗。 |
-| [Headless 開發人員歷程](/help/journey-headless/developer/overview.md) | 探索這趟引導式歷程，了解 AEM 強大且彈性的 Headless 功能，為您的第一個 Headless 專案做好準備。 |
+| [Headless 開發人員歷程](/help/journey-headless/developer/overview.md) | 探索這趟引導式歷程，了解 AEM 強大且靈活的無周邊功能，為您的第一個無周邊專案做好準備。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |
 | [操作使用手冊](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 後端的操作方式，例如製作索引和執行維護任務。 |
-| [Commerce 使用手冊](/help/commerce-cloud/home.md) | 了解 AEM as a Cloud Service 上的 Commerce 整合框架。 |
+| [Commerce 使用手冊](/help/commerce-cloud/home.md) | 了解 AEM as a Cloud Service 的商務整合框架。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 

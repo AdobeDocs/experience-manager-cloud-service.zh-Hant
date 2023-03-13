@@ -1,104 +1,104 @@
 ---
-title: 在AEM中使用GraphiQL IDE
-description: 了解如何使用Adobe Experience Manager中的GraphiQL IDE。
+title: 在 AEM 中使用 GraphiQL IDE
+description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 6e6bdc539f07fd15649a4f99d491f0486a511bdc
+source-git-commit: 68b16052bd050d881e82be4ef57b9623f6021a89
 workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 0%
+ht-degree: 96%
 
 ---
 
-# 使用GraphiQL IDE {#graphiql-ide}
+# 使用 GraphiQL IDE {#graphiql-ide}
 
-標準的實施 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE可與Adobe Experience Manager的GraphQL API(AEM)as a Cloud Service搭配使用。
+標準 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE 的實作可與 Adobe Experience Manager (AEM) as a Cloud Service 的 GraphQL API 搭配使用。
 
 >[!NOTE]
 >
->GraphiQL包含在AEM的所有環境中（但只有在配置端點時才能存取/顯示）。
+>GraphiQL 包含在 AEM 的所有環境中 (但只有在您配定端點時才可存取/可見)。
 >
->在以前的版本中，安裝GraphiQL IDE時需要一個包。 如果您已安裝此程式碼，現在可將其移除。
+>在先前版本，需要套件來安裝 GraphiQL IDE。如果您已安裝，現在可以將其移除。
 
 >[!NOTE]
->您必須 [已配置端點](/help/headless/graphql-api/graphql-endpoint.md) 在 [配置瀏覽器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) ，然後再使用GraphiQL IDE。
+>您必須在[設定瀏覽器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)中[設定您的端點](/help/headless/graphql-api/graphql-endpoint.md)，才能使用 GraphiQL IDE。
 
 
-此 **GraphiQL** 工具可讓您測試和偵錯GraphQL查詢，方法是：
-* 選取 **端點** 適合您要用於查詢的Sites設定
+**GraphiQL** 工具可讓您透過以下方式測試和偵錯 GraphQL 查詢：
+* 選擇適合您要用於查詢之 Sites 設定的&#x200B;**端點**
 * 直接輸入新查詢
-* 建立和存取， **[持續查詢](/help/headless/graphql-api/persisted-queries.md)**
-* 運行查詢以立即查看結果
-* 管理 **查詢變數**
-* 儲存並管理 **持續查詢**
-* 發佈或取消發佈， **持續查詢** (例如，從 `dev-publish`)
-* 請參閱 **歷史記錄** 您以前的查詢
-* 使用 **檔案總管** 查閱檔案；可協助您了解和了解可用的方法。
+* 建立和存取&#x200B;**[持續性查詢](/help/headless/graphql-api/persisted-queries.md)**
+* 執行查詢以立即查看結果
+* 管理&#x200B;**查詢變數**
+* 儲存和管理&#x200B;**持續性查詢**
+* 發佈或取消發佈&#x200B;**持續性查詢** (例如，to/from `dev-publish`)
+* 查看您之前查詢的&#x200B;**歷史記錄**
+* 使用&#x200B;**文件總管**&#x200B;以存取文件；協助您學習並了解可用的方法。
 
-您可以透過下列任一項存取查詢編輯器：
+您可以從以下任一方式存取查詢編輯器：
 
-* **工具** -> **一般** -> **GraphQL查詢編輯器**
-* 直接；例如， `http://localhost:4502/aem/graphiql.html`
+* **工具** -> **一般** -> **GraphQL 查詢編輯器**
+* 直接；例如 `http://localhost:4502/aem/graphiql.html`
 
-![GraphiQL介面](assets/cfm-graphiql-interface.png "GraphiQL介面")
+![GraphiQL 介面](assets/cfm-graphiql-interface.png "GraphiQL 介面")
 
-您可以在系統上使用GraphiQL，以便客戶端應用程式可以使用GET請求來請求查詢，並發佈查詢。 就生產用途而言，您可以 [將查詢移至生產環境](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). 最初供生產製作者使用以驗證含有查詢的新撰寫內容，最後供生產發佈以供即時使用。
+您可以在您的系統上使用 GraphiQL，以便您的用戶端應用程式可以使用 GET 要求來要求查詢，和用於發佈查詢。如果是用於生產，您可以[將查詢移至您的生產環境](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)。最初是生產編寫以使用查詢驗證新編寫的內容，最後是生產發佈以供上線取用。
 
-## 選取端點 {#selecting-endpoint}
+## 選取您的端點 {#selecting-endpoint}
 
-作為第一步，您需要選取 **[端點](/help/headless/graphql-api/graphql-endpoint.md)** 用於查詢。 端點適合您要用於查詢的Sites配置。
+第一步，您必須選取您要用於查詢的&#x200B;**[端點](/help/headless/graphql-api/graphql-endpoint.md)**。此端點適合您要用於查詢的 Sites 設定。
 
-這可從右上角的下拉式清單取得。
+這可以從右上角的下拉清單中取得。
 
-## 建立新查詢並保留 {#creating-new-query}
+## 建立並保留新查詢 {#creating-new-query}
 
-您可以在編輯器中輸入新查詢，該編輯器位於中左側面板中，直接位於GraphiQL徽標下。
-
->[!NOTE]
->
->如果您已選取保存的查詢，並在編輯器面板中顯示，請選取 `+` (旁邊 **持續查詢**)以空白編輯器，為新查詢做好準備。
-
-開始打字，編輯還說：
-
-* 使用滑鼠移過來顯示有關元素的其他資訊
-* 提供語法醒目提示、自動完成、自動建議等功能
+您可以在編輯器中輸入新查詢 - 它位於左側中間面板，GraphiQL 標誌正下方。
 
 >[!NOTE]
 >
->GraphQL查詢通常以 `{` 字元。
+>如果您已經選取持續性查詢，並顯示在編輯器面板中，請選取 `+` (**持續性查詢** 旁邊) 以清空編輯器，為您的新查詢做好準備。
+
+只要開始輸入，編輯器也會：
+
+* 使用游標懸停以顯示有關元素的其他資訊
+* 提供像是語法醒目提示、自動完成、自動建議等功能
+
+>[!NOTE]
 >
->以 `#` 會被忽略。
+>GraphQL 查詢通常以 `{` 字元開頭。
+>
+>以 `#` 開頭的行將被忽略。
 
-使用 **另存新檔** 以保留新查詢。
+使用&#x200B;**另存新檔**&#x200B;保留您的新查詢。
 
-## 更新保存的查詢 {#updating-persisted-query}
+## 更新持續性查詢 {#updating-persisted-query}
 
-從 **持續查詢** 面板（最左邊）。
+從&#x200B;**持續性查詢**&#x200B;面板 (最左側) 的清單中選取要更新的查詢。
 
-查詢將顯示在編輯器面板中。 進行您需要的任何變更，然後使用 **儲存** 將更新提交到持續查詢。
+查詢將顯示在編輯器面板中。視需要進行變更，然後使用&#x200B;**儲存**&#x200B;將更新提交到持續性查詢。
 
-## 正在運行查詢 {#running-queries}
+## 執行查詢 {#running-queries}
 
-您可以立即運行新查詢，也可以載入並運行持續查詢。 若要載入持續查詢，請從清單中選取該查詢 — 該查詢將顯示在編輯器面板中。
+您可以立即執行新查詢，也可以載入並執行持續性查詢。若要載入持續性查詢，請從清單中選取 - 查詢將顯示在編輯器面板中。
 
-無論是哪種情況，編輯器面板中顯示的查詢都是將在您執行下列任一操作時執行的查詢：
+在任何一種情況下，編輯器面板顯示的查詢，都是在您執行以下操作時會執行的查詢：
 
-* 按一下/點選 **執行查詢** 圖示
+* 按一下/點選&#x200B;**執行查詢**&#x200B;圖示
 * 使用鍵盤組合 `Control-Enter`
 
 ## 查詢變數 {#query-variables}
 
 <!-- more details needed here? -->
 
-GraphiQL IDE還允許您管理 [查詢變數](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+GraphiQL IDE 也可讓您管理[查詢變數](/help/headless/graphql-api/content-fragments.md#graphql-variables)。
 
 例如：
 
-![GraphQL變數](assets/cfm-graphqlapi-03.png "GraphQL變數")
+![GraphQL 變數](assets/cfm-graphqlapi-03.png "GraphQL 變數")
 
-## 管理持續查詢的快取 {#managing-cache}
+## 管理持續性查詢的快取 {#managing-cache}
 
-[持續查詢](/help/headless/graphql-api/persisted-queries.md) 建議您在dispatcher和CDN層快取這些檔案，以最終改善請求用戶端應用程式的效能。 依預設，AEM會根據預設的存留時間(TTL)，使內容傳送網路(CDN)快取失效。
+建議使用[持續性查詢](/help/headless/graphql-api/persisted-queries.md)，因為可以在 Dispatcher 和 CDN 層進行快取，最終提升發出要求的用戶端應用程式效能。依預設，AEM 將根據預設的存留時間 (TTL) 使內容傳遞網路 (CDN) 快取失效。
 
 >[!NOTE]
 >
@@ -106,40 +106,40 @@ GraphiQL IDE還允許您管理 [查詢變數](/help/headless/graphql-api/content
 >
 >如果您根據位置比對模式，從Dispatcher傳送TTL型快取控制標題，則如有需要，您可能會想要排除 `/graphql/execute.json/*` 從火柴中。
 
-使用GraphQL，您可以設定HTTP快取標題，以控制個別持續查詢的這些參數。
+使用 GraphQL，您可以設定 HTTP 快取標頭來控制您個人持續性查詢的這些參數。
 
-1. 此 **標題** 選項可透過持續查詢名稱右側的三個垂直點來存取（最左側面板）:
+1. **標頭**&#x200B;選項可透過持續性查詢名稱右側的垂直三點存取 (最左側面板)：
 
-   ![持續查詢HTTP快取標題](assets/cfm-graphqlapi-headers-01.png "持續查詢HTTP快取標題")
+   ![持續性查詢 HTTP 快取標頭](assets/cfm-graphqlapi-headers-01.png "持續性查詢 HTTP 快取標頭")
 
-1. 選取此選項會開啟 **快取配置** 對話框：
+1. 選擇此選項將開啟&#x200B;**快取設定**&#x200B;對話框：
 
-   ![持續查詢HTTP快取標題設定](assets/cfm-graphqlapi-headers-02.png "持續查詢HTTP快取標題設定")
+   ![持續性查詢 HTTP 快取標頭設定](assets/cfm-graphqlapi-headers-02.png "持續性查詢 HTTP 快取標頭設定")
 
 1. 選取適當的參數，然後視需要調整值：
 
-   * **快取控制** - **最大年齡**
-快取可以將此內容儲存指定的秒數。 通常是瀏覽器TTL（存留時間）。
-   * **替代控制** - **s-maxage**
-與最大使用時間相同，但特別適用於代理快取。
-   * **替代控制** - **過時重新驗證**
-快取可能在快取響應過時後繼續提供快取響應，最長可以提供指定的秒數。
-   * **替代控制** - **stale-if-error**
-在發生或源錯誤時，快取可以在指定秒數內繼續提供快取響應。
+   * **cache-control** - **max-age**
+快取可以將此內容儲存達指定的秒數。通常這是瀏覽器 TTL (存留時間)。
+   * **surrogate-control** - **s-maxage**
+與 max-age 相同，但專門套用在 Proxy 快取。
+   * **surrogate-control** - **stale-while-revalidate**
+快取可能會在變得陳舊後繼續提供快取的回應服務，最長為指定的秒數。
+   * **surrogate-control** - **stale-if-error**
+發生來源錯誤時，快取可能會繼續提供快取的回應服務，最長為指定的秒數。
 
-1. 選擇 **儲存** 以保留變更。
+1. 選取&#x200B;**儲存**&#x200B;以保留變更。
 
-## 發佈持續查詢 {#publishing-persisted-queries}
+## 發佈持續性查詢 {#publishing-persisted-queries}
 
-從清單（左側面板）中選取持續查詢後，即可使用 **發佈** 和 **取消發佈** 動作。 這會將它們啟用至您的發佈環境(例如 `dev-publish`)，讓應用程式在測試時輕鬆存取。
+從清單 (左側面板) 選取持續性查詢後，您可以使用&#x200B;**發佈**&#x200B;和&#x200B;**取消發佈**&#x200B;動作。這會將其啟動到發佈環境 (例如，`dev-publish`)，以便應用程式在測試時輕鬆存取。
 
 >[!NOTE]
 >
->持續查詢快取的定義 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value}的預設值為2小時（7200秒）。
+>持續性查詢快取 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} 之定義的預設值為 2 小時 (7200 秒)。
 
-## 複製URL以直接存取查詢 {#copy-url}
+## 複製 URL 以直接存取查詢 {#copy-url}
 
-此 **複製URL** 選項可讓您複製用來直接存取持續查詢並查看結果的URL，以模擬查詢。 這可用於測試；例如，透過在瀏覽器中存取：
+**複製 URL** 選項可讓您模擬查詢，方法是複製用於直接存取持續性查詢的 URL，然後查看結果。然後可以將其用於測試；例如，在瀏覽器中存取：
 
 <!--
   >[!NOTE]
@@ -153,34 +153,34 @@ GraphiQL IDE還允許您管理 [查詢變數](/help/headless/graphql-api/content
 
 `http://localhost:4502/graphql/execute.json/global/article-list-01`
 
-在瀏覽器中使用此URL可確認結果：
+在瀏覽器使用此 URL，您可以確認結果：
 
-![GraphiQL — 複製URL](assets/cfm-graphiql-copy-url.png "GraphiQL — 複製URL")
+![GraphiQL - 複製 URL](assets/cfm-graphiql-copy-url.png "GraphiQL - 複製 URL")
 
-此 **複製URL** 選項可透過持續查詢名稱右側的三個垂直點來存取（最左側面板）:
+**複製 URL**&#x200B;選項可透過持續性查詢名稱右側的垂直三點存取 (最左側面板)：
 
-![GraphiQL — 複製URL](assets/cfm-graphiql-persisted-query-options.png "GraphiQL — 複製URL")
+![GraphiQL - 複製 URL](assets/cfm-graphiql-persisted-query-options.png "GraphiQL - 複製 URL")
 
-## 刪除持續查詢 {#deleting-persisted-queries}
+## 刪除持續性查詢 {#deleting-persisted-queries}
 
-此 **刪除** 您也可以透過持續查詢名稱右側的三個垂直點（最左側面板）來存取選項。
+**刪除**&#x200B;選項也可透過持續性查詢名稱右側的垂直三點存取 (最左側面板)。
 
 <!-- what happens if you try to delete something that is still published? -->
 
 
-## 在生產環境上安裝持續查詢 {#installing-persisted-query-production}
+## 在生產環境中安裝持續性查詢 {#installing-persisted-query-production}
 
-使用GraphiQL開發和測試持續存在的查詢後，最終目標是 [將其傳輸到生產環境](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production) 供應用程式使用。
+使用 GraphiQL 開發和測試持續性查詢後，最終目標是[將其傳送到生產環境](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)以供應用程式使用。
 
 ## 鍵盤快速鍵 {#keyboard-shortcuts}
 
-在IDE中，有一系列鍵盤快捷鍵提供了對操作表徵圖的直接訪問：
+有一系列鍵盤快速鍵可用來直接存取 IDE 中的動作圖示：
 
-* Prettify Query:  `Shift-Control-P`
-* 合併查詢：  `Shift-Control-M`
-* 執行查詢：  `Control-Enter`
-* 自動完成：  `Control-Space`
+* 修飾查詢：`Shift-Control-P`
+* 合併查詢：`Shift-Control-M`
+* 執行查詢：`Control-Enter`
+* 自動完成：`Control-Space`
 
 >[!NOTE]
 >
->在一些鍵盤上， `Control` 索引鍵標示為 `Ctrl`.
+>在某些鍵盤上，`Control` 鍵標記為 `Ctrl`。

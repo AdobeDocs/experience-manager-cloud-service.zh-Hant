@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## 重要運作文章 {#key-articles}
 
-* [內容複寫](replication.md)
+* [內容複製](replication.md)
 * [維護任務](maintenance.md)
 * [備份和還原](backup.md)
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 | 使用手冊 | 說明 |
 |---|---|
-| [概覽](/help/overview/home.md) | 本指南提供 Experience Manager as a Cloud Service 概觀，包括簡介、術語、架構等等。 |
+| [概觀](/help/overview/home.md) | 本指南提供 Experience Manager as a Cloud Service 概觀，包括簡介、術語、架構等等。 |
 | [發行說明](/help/release-notes/home.md) | 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。 |
 | [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |
 | [入門歷程](/help/journey-onboarding/overview.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |
@@ -32,9 +32,9 @@ ht-degree: 100%
 | [Assets 使用手冊](/help/assets/home.md) | 了解如何使用及管理 Experience Manager Assets as a Cloud Service。 |
 | [轉移至 AEM as a Cloud Service ](/help/journey-migration/getting-started.md) | 了解轉換至雲端服務的過程。 |
 | [實作使用手冊](/help/implementing/home.md) | 透過探索這些開發和部署主題，了解如何使用 AEM 的強大功能建置和自訂體驗。 |
-| [Headless 開發人員歷程](/help/journey-headless/developer/overview.md) | 探索這趟引導式歷程，了解 AEM 強大且彈性的 Headless 功能，為您的第一個 Headless 專案做好準備。 |
+| [Headless 開發人員歷程](/help/journey-headless/developer/overview.md) | 探索這趟引導式歷程，了解 AEM 強大且靈活的無周邊功能，為您的第一個無周邊專案做好準備。 |
 | [連接器使用手冊](/help/connectors/home.md) | 了解如何將連接器與 Experience Manager as a Cloud Service 整合。 |
-| [Commerce 使用手冊](/help/commerce-cloud/home.md) | 了解 AEM as a Cloud Service 上的 Commerce 整合框架。 |
+| [Commerce 使用手冊](/help/commerce-cloud/home.md) | 了解 AEM as a Cloud Service 的商務整合框架。 |
 
 ## 其他 Experience Manager 資源 {#other-resources}
 
