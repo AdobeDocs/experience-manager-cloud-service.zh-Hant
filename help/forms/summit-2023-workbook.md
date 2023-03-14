@@ -5,9 +5,10 @@ description: 使用核心元件和無頭式架構，打造吸引人的Forms
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
-source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
+hidefromtoc: true
+source-git-commit: b68902ef4f7c61f77aa0d03ad718d5bf3023dea0
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2465'
 ht-degree: 1%
 
 ---
@@ -242,8 +243,6 @@ AEM Forms做為Cloud Service沙箱
 
    ![](/help/forms/assets/screenshot2028116429.png)
 
-   ![](/help/forms/assets/screenshot20228116569.png)
-
 
 1. 在命令提示窗口中，運行以下命令：
 
@@ -271,8 +270,7 @@ AEM Forms做為Cloud Service沙箱
 
    >[!NOTE]
    >
-   >執行 `npm run live` 命令，更改 `localhost` 瀏覽器URL中找到127.0.0.1並點擊 **輸入**.
-
+   >執行 `npm run live` 命令超過3-4分鐘，請更改 `localhost` 瀏覽器URL中找到127.0.0.1並點擊 **輸入**.
 
 
    ![](/help/forms/assets/screenshot2028115129.png)
@@ -381,7 +379,8 @@ AEM Forms做為Cloud Service沙箱
 
    >[!NOTE]
    >
-   >執行 `npm start` 命令，更改 `localhost` 瀏覽器URL中找到127.0.0.1並點擊 **輸入**.
+   > 
+   > 執行 `npm start` 命令超過3-4分鐘，請更改 `localhost` 瀏覽器URL中找到127.0.0.1並點擊 **輸入**.
 
    ![](/help/forms/assets/screenshot2028118229.png)
 
@@ -529,7 +528,7 @@ AEM Forms做為Cloud Service沙箱
 
    >[!NOTE]
    >
-   >執行 `npm start` 命令，更改 `localhost` 瀏覽器URL中找到127.0.0.1並點擊 **輸入**.
+   >執行 `npm start` 命令超過3-4分鐘，請更改 `localhost` 瀏覽器URL中找到127.0.0.1並點擊 **輸入**.
 
    ![](/help/forms/assets/screenshot2028127229.png)
 

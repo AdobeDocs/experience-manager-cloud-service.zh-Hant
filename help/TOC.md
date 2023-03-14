@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4c5c5eed984dcc9361ae2316ce466b4a73c0bf19
+source-git-commit: b68902ef4f7c61f77aa0d03ad718d5bf3023dea0
 workflow-type: tm+mt
-source-wordcount: '3969'
+source-wordcount: '3971'
 ht-degree: 95%
 
 ---
@@ -539,6 +539,7 @@ ht-degree: 95%
             + [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
             + [建立最適化表單的主題 — 核心元件](/help/forms/using-themes-in-core-components.md)
             + [產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-core-components.md)
+            + [峰會活頁簿](/help/forms/summit-2023-workbook.md)
       + 編寫最適化Forms - Foundation元件 {#authoring-adaptive-forms-foundation-components}
          + 將PDF forms轉換為最適化Forms {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
