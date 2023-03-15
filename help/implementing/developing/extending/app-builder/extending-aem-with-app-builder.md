@@ -2,16 +2,16 @@
 title: 延伸 [!DNL Adobe Experience Manager] as a Cloud Service使用Adobe Developer App Builder。
 description: 延伸 [!DNL Adobe Experience Manager] as a Cloud Service使用Adobe Developer App Builder。
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
 # 延伸 [!DNL Adobe Experience Manager] as a Cloud Service使用Adobe Developer App Builder {#extend-using-app-builder}
 
-## 什麼是AEM的App Builder as a Cloud Service {#project-firefly}
+## 什麼是AEM的App Builder as a Cloud Service {#project-appbuilder}
 
 全新Adobe Developer App Builder為開發人員提供可擴充的架構，以輕鬆擴充AEMas a Cloud Service功能。
 
@@ -23,7 +23,7 @@ App Builder可讓客戶在各種使用案例中輕鬆擴充Adobe Experience Mana
 * 核心服務的擴充性 — 透過自訂功能和業務邏輯擴充預設行為，以擴充核心應用程式功能。
 * 使用者體驗的擴充性 — 延伸核心體驗，以支援業務需求，或建立客戶專屬的數位屬性、店面和後台應用程式。
 
-自2020年夏季起，企業客戶和合作夥伴都可透過開發人員預覽功能，取得App Builder（舊稱Project Firefly）。 App Builder的正式發行(GA)預計於2021年12月推出。 歡迎開發人員透過我們的 [試用計畫](https://adobe.ly/appbuilder-trial).
+自2020年夏季起，企業客戶和合作夥伴都可透過開發人員預覽功能取得App Builder。 App Builder的正式發行(GA)預計於2021年12月推出。 歡迎開發人員透過我們的 [試用計畫](https://adobe.ly/appbuilder-trial).
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Adobe Developer App Builder不提供現成可用的解決方案，而是提供�
 
 下圖說明以App Builder建置的標準應用程式如何運用下列功能：
 
-![架構](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
+![架構](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 
 如需App Builder架構的詳細資訊，請參閱 [架構概述](https://www.adobe.io/app-builder/docs/guides/).
 
@@ -62,7 +62,3 @@ App Builder提供開發人員的影片和檔案，包括指南和參考檔案，
 準備好開發了嗎？ 我們提供許多樣本應用程式，幫助您快速前進：
 
 * [Adobe Developer網站上的應用程式建立工具程式碼實驗室](https://www.adobe.io/app-builder/docs/resources/)
-
-## 支援 {#support}
-
-對於開發人員支援類型的請求，我們鼓勵開發人員使用 [Experience League論壇](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly).

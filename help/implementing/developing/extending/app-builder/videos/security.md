@@ -9,18 +9,14 @@ level: Beginner
 kt: 9460
 thumbnail: 339249.jpg
 exl-id: f0f3f254-0efa-4fab-b2fd-96571bbb719f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '40'
+source-wordcount: '24'
 ht-degree: 0%
 
 ---
 
 # App Builder安全性
-
->[!IMPORTANT]
->
-> _AdobeProject Firefly（如本系列影片所述）現在更名為App Builder_
 
 了解Adobe執行階段動作安全性、使用者，以及AppBuilder驗證和授權。
 

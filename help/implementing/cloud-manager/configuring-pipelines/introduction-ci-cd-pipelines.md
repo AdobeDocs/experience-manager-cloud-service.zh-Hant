@@ -3,10 +3,10 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道以及如何使用它們來有效地部署您的計劃碼。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: ht
-source-wordcount: '1368'
-ht-degree: 100%
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+workflow-type: tm+mt
+source-wordcount: '1367'
+ht-degree: 98%
 
 ---
 
@@ -109,7 +109,7 @@ Cloud Manager 提供兩種類型的管道：
 
 ## 前端管道 {#front-end}
 
-前端計劃碼是用作靜態文件的任何計劃碼。它獨立於 AEM 提供的 UI 計劃碼，可能包括網站主題、客戶定義的 SPA、Firefly SPA 和其他解決方案。
+前端計劃碼是用作靜態文件的任何計劃碼。它與AEM提供的UI程式碼不同，可能包含網站主題、客戶定義的SPA、SPA和其他解決方案。
 
 前端管道透過啟用與後端開發異步的前端計劃碼的加速部署，幫助您的團隊簡化您的設計和開發流程。此專用管道將 JavaScript 和 CSS 作為主題部署到 AEM 分發層，從而產生一個新的主題版本，可以從 AEM 提供的頁面中引用。
 
