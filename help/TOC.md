@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b68902ef4f7c61f77aa0d03ad718d5bf3023dea0
+source-git-commit: 5c4248d520cb0f956206d76692041ef980099002
 workflow-type: tm+mt
-source-wordcount: '3971'
-ht-degree: 95%
+source-wordcount: '3975'
+ht-degree: 94%
 
 ---
 
@@ -505,7 +505,7 @@ ht-degree: 95%
 + 表單 {#forms}
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
-      + [最新創新](/help/forms/latest-innovations.md)
+      + [Adobe Experience Manager Forms頂尖創新](/help/forms/latest-innovations.md)
       + [重大變更](/help/forms/notable-changes.md)
       + [架構](/help/forms/aem-forms-cloud-service-architecture.md)
       + [常見問題](/help/forms/faq.md)

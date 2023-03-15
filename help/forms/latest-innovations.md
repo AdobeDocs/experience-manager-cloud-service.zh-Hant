@@ -2,9 +2,9 @@
 title: 探索Adobe Experience Manager Formsas a Cloud Service的最新創新。
 description: 「探索 [!DNL AEM Forms] as a Cloud Service於建立、管理和發佈企業級表單和業務流程。」
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 6949e35b65f4c21b4304fb99bfe71bd4b952ef20
+source-git-commit: 5c4248d520cb0f956206d76692041ef980099002
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1123'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ The organization can use [!DNL AEM Forms] as a Cloud Service to create digital f
 An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start using all these features without waiting to buy and set up a local infrastructure. The service also frees the organizations from the cycle of upgrades as it is always up to date and always offers the latest feature.  -->
 
 
-# 最新創新 {#latest-innovations}
+# Adobe Experience Manager Forms頂尖創新 {#latest-innovations}
 
-AEM Formsas a Cloud Service的部分最新創新包括：
+Adobe Experience Manager Forms的部分最創新包括：
 
 | 創新 | 詳細資料 |
 |---|---|
@@ -32,4 +32,4 @@ AEM Formsas a Cloud Service的部分最新創新包括：
 | Microsoft Storage Connectors | AEM Forms Microsoft Storage Connectors for <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-sharedrive">OneDrive</a>, <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-sharedrive"> SharePoint, </a> 和 <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-azure-blob-storage"> Azure Blob儲存 </a> 是連接器，可讓您整合Adobe Experience Manager(AEM)Forms與Microsoft OneDrive和SharePoint。 透過此連接器，您可以直接從適用性Forms將資料檔案和附件上傳至OneDrive和SharePoint。 <br/> ![](/help/forms/assets/onedrive-and-sharepoint.jpg) <br/>OneDrive和SharePoint可以與其他業務應用程式整合，如CRM系統、會計軟體和項目管理工具。 這使您能夠簡化您的業務流程、減少手動資料輸入，並提高整體效率。 |
 | 精靈UI | 適用性Forms精靈UI是功能強大的工具，可快速輕鬆建立最適化表單。 其用戶友好的介面和定制選項使所有用戶都能訪問，而不管其技術專業水準如何。 <br/> <br/> 精靈UI可引導使用者逐步完成表單建立程式，簡化建立最適化表單的程式。 精靈 — UI分為多個標籤，每個標籤都清楚提供設定最適化表單的選項。 表單作者會以線性方式在索引標籤中前進，以選取表單元件的範本、提交動作和資料來源等選項。 <br/> ![](/help/release-notes/assets/wizard.png) <br/>精靈介面可簡化探索適用性表單所有必要選項的程式，並讓表單建立更輕鬆，即使是不熟悉技術的使用者亦然。 |
 | 快速追蹤分析 | 表單分析可以測量使用者參與度、最佳化轉換率、監控表單績效並改善使用者體驗，為表單績效提供寶貴的深入分析。  透過追蹤使用者行為和意見反應，分析可識別表單中造成挫敗感或混淆的區域，引導改善表單的設計和功能。 <br/> <br/> 使用Fast Track Analytics時，只需按一下按鈕即可啟用Forms Analytics。 快速追蹤分析可讓您將AEM Formsas a Cloud Service與Experience Platform標籤和Adobe Analytics連結，以擷取及追蹤已發佈表單的效能量度。 <br/> <br/> ![](/help/forms/assets/forms-analytics-report.png) <br/><br/> Formsas a Cloud Service提供Adobe Analytics報表OOTB。 可協助您輕鬆了解表單的效能。 表單層級量度可讓您深入分析表單在多個關鍵績效指標(KPI)（如轉譯、訪客、提交、平均填寫時間）上的表現情形。 <br/> <br/> 它還提供用戶訪問面板中欄位上下文幫助的平均次數的詳細資訊，以幫助您確定在提供資訊之前讓用戶停止並搜索資訊的欄位。 您可以進一步簡化這類欄位或協助內容以改善轉換。 |
-| 新一代複合性 | 新一代的組合功能為每個人帶來表單建立功能，讓企業中的員工能夠在自己選擇的工具(如Microsoft Excel和Google工作表)中建立表單。 這可提高內容速度，並消除對新UI工作流程進行培訓的需求。 此外，新一代可組合性還利用Office365和Google套件產品的內置功能，實現直接協作和版本控制。 <br/> <br/> 憑借新一代的可組合性，部署表單既快速又簡單，而且具備簡單明瞭的工具，可將開發時間降至最低，並簡化上線路徑。 此外，您能以無與倫比的速度載入表單，提供出色的體驗。 它規定，Google燈塔的線上評分接近100分。 <br/> <br/> ![](/help/forms/assets/web-vitals.jpeg) <br/> <br/> 總體而言，新一代的可組合性簡化了內容建立和發佈，同時提供卓越的Web效能和協作功能。 通過讓團隊成員使用熟悉的創作工具並消除對內容管理系統的廣泛培訓的需求，企業可以提高內容速度並簡化其操作。 有了新一代的可組合性，客戶可以享受快速、精心設計的Web體驗，同時企業也從提高效率和工作效率中受益。 |
+| 下一代複合性 | 下一代複合功能為每個人帶來表單建立功能，使企業中的員工能夠在自己選擇的工具(如Microsoft Excel和Google工作表)中建立表單。 這可提高內容速度，並消除對新UI工作流程進行培訓的需求。 此外，Next Gen Composibility還利用Office365和Google Suite產品的內置功能，允許直接協作和版本控制。 <br/> <br/> 憑借新一代的可組合性，部署表單既快速又簡單，而且具有簡單明瞭的工具，可將開發時間降至最低，並簡化上線路徑。 此外，您能以無與倫比的速度載入表單，提供出色的體驗。 它規定，Google燈塔的線上評分接近100分。 <br/> ![](/help/forms/assets/web-vitals.jpeg) |
