@@ -1,12 +1,12 @@
 ---
 title: ' [!DNL AEM Forms] as a Cloud Service 簡介'
-description: 探索AEM Forms，了解其如何協助您製作適合業務的表單和檔案。 了解Platform-as-a-Service(PaaS)，以及如何管理企業級數位表單和業務流程，以及如何將Forms連線至Adobe Sign和目前的資料來源。
+description: 探索 AEM Forms 並了解此表單如何幫助您製作業務適用的表單和文件。了解關於 Platform-as-a-Service (PaaS)，以及如何管理企業級數位表單和業務流程，以及連接 Forms 至 Adobe Sign 和現有的資料來源。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表單。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 20%
+ht-degree: 24%
 
 ---
 
@@ -47,7 +47,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是以客戶為中心�
 此服務與Adobe Analytics整合，可讓您擷取及追蹤已發佈表單的效能量度。 分析這些量度的目的，是根據讓表單或檔案更實用所需的變更資料，做出明智的決策。 您可以使用Adobe Analytics來探索使用者使用最適化表單時所面臨的互動模式和問題。
 
 
-## 開始 {#key-features}
+## 開始使用 {#key-features}
 
 |  |  |
 |---|---|
