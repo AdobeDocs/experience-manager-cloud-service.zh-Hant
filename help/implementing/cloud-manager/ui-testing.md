@@ -2,10 +2,10 @@
 title: UI 測試
 description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 6de0b7c961083d9be00837439757da95326a96da
+source-git-commit: a2507c65df5d42ac53fcbb0a81cc2fb897438f44
 workflow-type: tm+mt
-source-wordcount: '2141'
-ht-degree: 56%
+source-wordcount: '2147'
+ht-degree: 55%
 
 ---
 
@@ -25,7 +25,7 @@ AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custo
 
 UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。此外，使用 [AEM專案原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)
 
-UI 測試作為每個 Cloud Manager 管道的特定品質門的一部分執行，具有[投入的&#x200B;**自訂 UI 測試**&#x200B;步。](/help/implementing/cloud-manager/deploy-code.md)包括回歸和新功能在內的任何 UI 測試都可以檢測和報告錯誤。
+UI測試會在每個Cloud Manager管道(具有 [**自訂UI測試** 步驟](/help/implementing/cloud-manager/deploy-code.md) in [生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 或 [非生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)包括回歸和新功能在內的任何 UI 測試都可以檢測和報告錯誤。
 
 與使用 Java 編寫的 HTTP 測試的自訂功能測試不同，UI 測試可以是 Docker 映像，其中包含以任何語言編寫的測試，只要它們遵循本節中定義的約定[構建 UI 測試。](#building-ui-tests)
 

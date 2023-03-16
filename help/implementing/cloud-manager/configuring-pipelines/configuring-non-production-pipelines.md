@@ -3,10 +3,10 @@ title: 設定非生產管道
 description: 了解如何設定非生產管道以在部署到生產環境之前測試計劃碼的品質。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: ht
-source-wordcount: '1177'
-ht-degree: 100%
+source-git-commit: aac397310babe1aa1e950c176459beaf665b72ce
+workflow-type: tm+mt
+source-wordcount: '1369'
+ht-degree: 90%
 
 ---
 
@@ -38,7 +38,10 @@ ht-degree: 100%
 
    ![新增非生產管道](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. 在&#x200B;**設定**&#x200B;索引標籤 (在&#x200B;**新增非生產管道**&#x200B;對話框中) 上，選取您要建立的非生產管道類型：**計劃碼品質管道**&#x200B;或&#x200B;**部署管道**。
+1. 在&#x200B;**新增非生產管道**&#x200B;對話框的&#x200B;**設定**&#x200B;索引標籤上，選取您要新增的非生產管道。
+
+   * **程式碼品質管道**  — 建立管道，以建置程式碼、執行單元測試和評估程式碼品質，但不進行部署。
+   * **部署管道**  — 建立管道，以建置程式碼、執行單元測試、評估程式碼品質，以及部署至環境。
 
    ![新增非生產管道對話框](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
@@ -48,6 +51,12 @@ ht-degree: 100%
 
       * **手動** - 使用此選項以手動方式啟動管道。
       * **開啟 Git 變更** - 只要將認可新增到已設定的 Git 分支，此選項就會啟動 CI/CD 管道。使用此選項，您仍然可以在需要時手動啟動管道。
+
+1. 如果您選擇建立 **部署管道** 您也需要定義 **重要量度失敗行為**.
+
+   * **每次都詢問** - 這是預設設定，要求對任何重要失敗進行手動介入。
+   * **立即失敗** - 如果選取，則每當重要失敗發生時，將取消管道。這基本上是模擬使用者手動拒絕每次失敗。
+   * **立即持續** - 如果選取，則每當重要失敗發生時，管道將自動繼續。這基本上是模擬使用者手動核准每次失敗。
 
 1. 按一下&#x200B;**「繼續」**。
 
@@ -106,6 +115,12 @@ ht-degree: 100%
    * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取計劃碼。
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能將會尋找相符的分支以幫助您進行選擇。
    * **忽略 Web 層配置**- 選中後，管道將不會部署您的 Web 層配置。
+
+   * **管道**  — 如果您的管道是部署管道，您可以選擇執行測試階段。 勾選您要在此階段啟用的選項。 如果未選取任何選項，則在管道執行期間將不會顯示測試階段。
+
+      * **產品功能測試**  — 執行 [產品功能測試](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) 對抗開發環境。
+      * **自訂功能測試**  — 執行 [自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 對抗開發環境。
+      * **自訂UI測試**  — 執行 [自訂UI測試](/help/implementing/cloud-manager/ui-testing.md) 自訂應用程式。
 
    ![完整堆疊管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
