@@ -2,7 +2,7 @@
 title: 元件參考指南
 description: 元件及其結構的詳細資訊開發人員參考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
 workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 1%
@@ -11,15 +11,15 @@ ht-degree: 1%
 
 # 元件參考指南 {#components-reference-guide}
 
-元件是在AEM中建立體驗的核心。 此 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 透過一組現成的強大元件，讓您輕鬆開始使用。 此 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 引導開發人員了解如何使用這些工具，以及如何建立自訂元件以建立新的AEM網站。
+元件是在AEM中建立體驗的核心。 此 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 透過一組現成的強大元件，讓您輕鬆開始使用。 此 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 引導開發人員了解如何使用這些工具，以及如何建立自訂元件以建立新的AEM網站。
 
 >[!TIP]
 >
->參考本檔案之前，請確定您已完成 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 因此對 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [AEM專案原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+>參考本檔案之前，請確定您已完成 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 因此對 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [AEM專案原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)
 
 由於WKND教學課程涵蓋大部分使用案例，本檔案旨在補充這些資源。 它提供有關如何在AEM中架構和設定元件的深入技術細節，而非快速入門手冊。
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 本節介紹開發您自己的元件時所需的詳細資訊，並說明重要概念和問題。
 
@@ -207,7 +207,7 @@ AEM元件的對話方塊：
 
 * 是 `cq:dialog` 類型節點 `nt:unstructured`.
 * 位於 `cq:Component` 節點及其元件定義旁。
-* 定義用於編輯此元件的內容的對話框。
+* 定義用於編輯此元件內容的對話框。
 * 是使用Granite UI元件來定義。
 * 會根據其內容結構和 `sling:resourceType` 屬性。
 * 包含描述對話框內欄位的節點結構
@@ -236,7 +236,7 @@ Granite UI提供在製作環境中建立對話方塊所需的大量基本Widget�
 
 如需其他詳細資訊，請參閱下列資源：
 
-* [AEM UI的結構](/help/implementing/developing/introduction/ui-structure.md)
+* [AEM UI 的結構](/help/implementing/developing/introduction/ui-structure.md)
 
 ### 自訂對話方塊欄位 {#customizing-dialog-fields}
 
@@ -360,7 +360,7 @@ AEM中有許多現有設定。 您可以使用以下位置中的「查詢」工�
 
 ### 就地編輯 — cq:inplaceEditing {#cq-inplaceediting}
 
-就地編輯器可讓使用者直接編輯內容流程中的內容，而不需開啟對話方塊。 例如，標準 **文字** 和 **標題** 元件都有inp-lace編輯器。
+就地編輯器可讓使用者直接編輯內容流程中的內容，而不需開啟對話方塊。 例如，標準 **文字** 和 **標題** 元件都有就地編輯器。
 
 就地編輯器對於每個元件類型並非必要/有意義的。
 
@@ -372,7 +372,7 @@ AEM中有許多現有設定。 您可以使用以下位置中的「查詢」工�
 | `configPath` | `String` | 編輯器配置的路徑，可由配置節點指定 |
 | `editorType` | `String` | 可用類型包括： `plaintext` 針對非HTML內容， `title` 在開始編輯之前將圖形標題轉換為純文字， `text` 使用RTF編輯器 |
 
-下列設定可啟用元件的內嵌編輯，並定義 `plaintext` 作為編輯器類型：
+下列設定可就地編輯元件並定義 `plaintext` 作為編輯器類型：
 
 ```text
     <cq:inplaceEditing
