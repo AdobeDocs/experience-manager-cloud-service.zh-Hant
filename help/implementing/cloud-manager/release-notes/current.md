@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.2.0 的發行說明
-description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.2.0 的發行說明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.3.0 的發行說明
+description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.3.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 9fe49df47c985f94e45d60673f6742788c8014d5
+source-git-commit: bfd2cbd574cac8de226903f923e774875a54ca4b
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 40%
+source-wordcount: '131'
+ht-degree: 64%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.2.0 的發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.3.0 的發行說明 {#release-notes}
 
-本頁面記錄了 AEM as a Cloud Service 中 Cloud Manager 發行 2023.2.0 的發行說明。
+本頁面記錄了 AEM as a Cloud Service 中 Cloud Manager 發行 2023.3.0 的發行說明。
 
 >[!NOTE]
 >
@@ -21,16 +21,9 @@ ht-degree: 40%
 
 ## 發行日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager 2023.2.0版的發行日期為2023年2月16日。 下一個版本計劃於 2023 年 3 月 16 日發行。
+AEMas a Cloud Service中Cloud Manager 2023.3.0版的發行日期為2023年3月16日。 下一版本計劃於 2023 年 4 月 13 日發行。
 
-## 新增功能 {#what-is-new}
+## 錯誤修正 {#bug-fixes}
 
-* 使用者可下載 [自訂UI測試](/help/implementing/cloud-manager/ui-testing.md) 結果。
-* [快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md) (RDE)是新類型的雲端環境，旨在以快速、一致且可擴充的方式驗證本機運作的程式碼在雲端中也能如預期般運作。
-   * RDE可讓開發人員快速疑難排解問題，並在AEM as a Cloud Service上部署新功能。
-   * 開發人員可使用命令列工具，快速將內容套件、套件組合、內容檔案、OSGi設定或Dispatcher設定同步至RDE。
-
-## API 變更 {#api-changes}
-
-* 已變更API以支援 [RDE。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Rapid-Development-Environments)
-* API現在允許擷取 [執行對象。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Execution-Artifacts)
+* 修正上線介面工具集未正確設定先前設定日期的問題。
+* 上的商務圖磚 **學習** 「雲端管理器」的標籤現在會將使用者導覽至正確的頁面。
