@@ -2,10 +2,10 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
+source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 8%
+source-wordcount: '2428'
+ht-degree: 7%
 
 ---
 
@@ -37,10 +37,12 @@ ht-degree: 8%
 
    在每個頁面標題附加品牌概要資訊，借此在頁面間套用一致的品牌識別。 此功能需要使用2.14.0版或更新版本的頁面元件 [核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
-   * **覆寫**  — 核取以定義此頁面上的品牌概要資訊。
-      * 值將由任何子頁面繼承，除非它們也有 **覆寫** 值。
-   * **覆寫值**  — 要附加至頁面標題的品牌概要文本。
-      * 此值會附加在垂直號字元（如「循環托斯卡納」）之後的頁面標題 |始終為WKND做好準備&quot;
+   * **品牌概要**
+
+      * **覆寫**  — 核取以定義此頁面上的品牌概要資訊。
+         * 值將由任何子頁面繼承，除非它們也有 **覆寫** 值。
+      * **覆寫值**  — 要附加至頁面標題的品牌概要文本。
+         * 此值會附加在垂直號字元（如「循環托斯卡納」）之後的頁面標題 |始終為WKND做好準備&quot;
 
 * **HTML ID**
 
@@ -105,14 +107,13 @@ ht-degree: 8%
       * 例如，如果您定義 `private` 頁面 `/content/wknd/us/en/magazine/members-only`，則此頁面也可透過 `/content/wknd/us/en/magazine/private`
       * 建立別名會設定 `sling:alias` 屬性，這只會影響資源，不影響存放庫路徑。
       * 無法發佈編輯器中由別名存取的頁面。 [發佈選項](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 編輯器中的「 」僅適用於透過其實際路徑存取的頁面。
-
-   <!--
-  >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
-  -->
+      * 如需詳細資訊，請參閱 [SEO和URL管理最佳作法下的本地化頁面名稱](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **設定**
 
-   * **雲端設定**  — 設定路徑
+   * **繼承自 &lt;path>**  — 啟用/禁用繼承；切換可用性 **雲端設定** 選擇
+
+   * **雲端設定**  — 所選配置的路徑
 
 * **範本設定**
 
@@ -132,14 +133,40 @@ ht-degree: 8%
 
    * **匯出設定**  — 指定導出配置
 
-### 縮圖 {#thumbnail}
+* **SEO**
 
-設定頁面縮圖
+   * **標準Url**  — 可用來覆寫頁面的標準Url;若將保留為空白，則頁面的URL會是其標準URL
 
-* **產生預覽**  — 產生頁面預覽以作為縮圖
-* **上傳影像**  — 上傳影像以作為縮圖
-* **選擇影像**  — 選取現有資產作為縮圖
-* **還原**  — 對縮圖進行變更後，此選項即可使用。 如果您不想保留變更，可以在儲存前還原該變更。
+   * **機器人標籤**  — 選取「機器人」標籤以控制搜尋引擎編目程式的行為。
+
+      >[!NOTE]
+      >
+      >有些選項相互衝突。 在衝突中，優先選擇更寬容的選項。
+
+   * **產生Sitemap**  — 選取後，會為此頁面及其子系產生sitemap.xml
+
+### 影像 {#images}
+
+* **精選影像**
+
+   選取並設定要精選的影像。 這用於參考頁面的元件中；例如，茶匙、頁面清單等。
+
+   * **影像**
+
+      您可以 **挑選** 或瀏覽要上傳的檔案，然後 **編輯**，或 **清除**.
+
+   * **替代文字**  — 用於表示影像含義和/或功能的文本；例如供螢幕助讀程式使用。
+
+   * **繼承 — 從DAM資產取得的值**  — 若勾選此選項，則會以 `dc:description`DAM中的中繼資料
+
+* **縮圖**
+
+   設定頁面縮圖
+
+   * **產生預覽**  — 產生頁面預覽以作為縮圖
+   * **上傳影像**  — 上傳影像以作為縮圖
+   * **選擇影像**  — 選取現有資產作為縮圖
+   * **還原**  — 對縮圖進行變更後，此選項即可使用。 如果您不想保留變更，可以在儲存前還原該變更。
 
 ### 社交媒體 {#social-media}
 
@@ -156,12 +183,11 @@ ht-degree: 8%
 
 * **Cloud Service配置**  — 定義雲端服務的屬性
 
-   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
-  -->
-
 ### 個人化 {#personalization}
 
 * **ContextHub 組態**
+
+   * **繼承自 &lt;path>**  — 啟用/禁用繼承；切換可用性 **ContextHub路徑** 和 **區段路徑** 選擇
 
    * **ContextHub路徑**  — 定義 [ContextHub設定](/help/sites-cloud/authoring/personalization/contexthub.md)
    * **區段路徑**  — 定義 [區段路徑](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -176,17 +202,11 @@ ht-degree: 8%
 
 * **權限**
 
-   * 新增權限
-   * 編輯已關閉的使用者群組
-   * 檢視有效權限
+   * **新增權限**
+   * **編輯已關閉的使用者群組**
+   * 檢視 **有效權限**
 
-   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-
-   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-
-   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
-
-### Blueprint {#blueprint}
+### 藍圖 {#blueprint}
 
 此頁簽僅對用作藍圖的頁面可見。 Blueprint是Live Copy的基礎，是 [多網站管理。](/help/sites-cloud/administering/msm/overview.md)
 
@@ -194,7 +214,9 @@ ht-degree: 8%
 
 * **轉出設定**  — 控制修改將傳播至即時副本的情況
 
-### 即時副本 {#live-copy}
+### Live Copy {#live-copy}
+
+此索引標籤僅對已設為Live Copy的頁面可見。
 
 * **同步**  — 將即時副本與Blueprint同步，保留本機修改
 * **重設**  — 將「即時副本」重設為Blueprint的狀態，移除本機修改
@@ -220,6 +242,33 @@ ht-degree: 8%
 「預覽」環境啟用後，您會看到：
 
 * 預覽URL — 用於存取預覽環境中內容的URL
+
+### 漸進式網頁應用程式 {#progressive-web-app}
+
+透過簡單的設定，內容作者現在可以為AEM Sites中建立的體驗啟用漸進式網頁應用程式(PWA)功能。
+
+>[!NOTE]
+>
+>如需詳細資訊，請參閱 [啟用漸進式網頁應用程式功能](/help/sites-cloud/authoring/features/enable-pwa.md).
+
+* **設定可安裝體驗**
+
+   * **啟用PWA**  — 啟用/停用功能；允許用戶將站點作為PWA安裝
+   * **啟動URL**  — 首選啟動Url
+   * **顯示模式**  — 如何在本機裝置上隱藏或以其他方式向使用者呈現瀏覽器
+   * **螢幕方向** -PWA如何處理裝置方向
+   * **主題顏色**  — 應用程式的顏色，影響本機使用者作業系統顯示原生UI工具列和導覽控制項的方式
+   * **背景顏色**  — 應用程式的背景顏色，當應用程式載入時即顯示
+   * **圖示**  — 代表使用者裝置上應用程式的圖示
+
+* **快取管理 (進階)**
+
+   * **快取策略與內容重新整理的頻率**  — 定義PWA的快取模型
+   * **要快取以供離線使用的檔案**
+      * **檔案預先快取（技術預覽）**  — 當服務工作程式安裝且使用前，AEM上托管的檔案會儲存至本機瀏覽器快取
+      * **用戶端程式庫**  — 要快取以取得離線體驗的用戶端程式庫
+      * **路徑包含**  — 根據配置的快取策略和內容刷新頻率，截取定義路徑的網路請求並返回快取內容
+      * **路徑排除**  — 無論檔案預快取和路徑包含下的設定為何，都不會快取這些檔案
 
 ## 編輯頁面屬性 {#editing-page-properties-1}
 
