@@ -4,10 +4,10 @@ description: 使用範例 React 應用程式，了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: c811268d4882204c5a5610c9f45cd344df50b8dd
+source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 100%
 
 ## 在應用程式中新增對新內容片段的參考 {#create-moment}
 
-現在您已經更新了騎士的影像，讓我們來看看如何透過建立和參考新的內容片段，來將內容新增到應用程式。您將把由「可購物機會」內容片段管理的產品標註，新增到應用程式的第二個面板。
+現在您已更新摩托車手的影像，接下來讓我們逐步說明如何建立並參考新內容片段，以新增內容至應用程式。 您將把由「可購物機會」內容片段管理的產品標註，新增到應用程式的第二個面板。
 
 ![可購物機會範例](assets/do-not-localize/example-shoppable-moment.png)
 
