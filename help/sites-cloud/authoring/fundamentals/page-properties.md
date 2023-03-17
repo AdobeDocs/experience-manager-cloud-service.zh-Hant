@@ -2,9 +2,9 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2387'
 ht-degree: 7%
 
 ---
@@ -168,17 +168,6 @@ ht-degree: 7%
    * **選擇影像**  — 選取現有資產作為縮圖
    * **還原**  — 對縮圖進行變更後，此選項即可使用。 如果您不想保留變更，可以在儲存前還原該變更。
 
-### 社交媒體 {#social-media}
-
-* **社交媒體分享**
-
-   定義頁面上可用的共用選項。 顯示 [共用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
-
-   * **啟用Facebook的使用者共用**
-   * **啟用Pinterest的使用者共用**
-   * **偏好的 XF 變數**
-      * 定義用於產生頁面中繼資料的體驗片段變數
-
 ### 雲端服務 {#cloud-services}
 
 * **Cloud Service配置**  — 定義雲端服務的屬性
@@ -216,7 +205,7 @@ ht-degree: 7%
 
 ### Live Copy {#live-copy}
 
-此索引標籤僅對已設為Live Copy的頁面可見。
+此索引標籤僅對已設為Live Copy的頁面可見。 與Blueprint一樣， Live Copy是 [多網站管理。](/help/sites-cloud/administering/msm/overview.md).
 
 * **同步**  — 將即時副本與Blueprint同步，保留本機修改
 * **重設**  — 將「即時副本」重設為Blueprint的狀態，移除本機修改
