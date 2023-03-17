@@ -3,9 +3,9 @@ title: 將對新地區設定的支援新增至最適化表單
 seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms可讓您新增當地語系化適用性表單的地區設定。 英語(en)、西班牙語(es)、法語(fr)、義大利語(it)、德語(de)、日語(ja)、葡萄牙語 — 巴西語(pt-BR)、中文(zh-CN)、中文 — 台灣語(zh-TW)和韓語(ko-KR)地區設定。
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 00fcdb3530a441bde2f7f91515aaaec341615a3f
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、�
 
 最適化表單的本地化需要兩種語言環境字典：
 
-* **表單特定字典** 包含適用性表單中使用的字串。 例如，標籤、欄位名稱、錯誤訊息、說明說明等。 它作為一組XLIFF檔案來管理，用於每個區域設定，您可以在 `[author-instance]/libs/cq/i18n/gui/translator.html`.
+* **表單特定字典** 包含適用性表單中使用的字串。 例如，標籤、欄位名稱、錯誤訊息、說明說明。 它作為一組XLIFF檔案來管理，用於每個區域設定，您可以在 `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
 * **全域字典** AEM用戶端程式庫中有兩本全域字典，以JSON物件管理。 這些字典包含預設錯誤訊息、月份名稱、貨幣符號、日期和時間模式等。 您可以在 `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. 這些位置包含每個區域設定的單獨資料夾。 由於全域字典不會經常更新，因此為每個區域設定保留個別的JavaScript檔案，可讓瀏覽器快取，並減少在同一伺服器上存取不同最適化表單時的網路頻寬使用量。
 
@@ -26,8 +26,8 @@ AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、�
 
 執行以下步驟以添加對新區域設定的支援：
 
-1. [添加對不支援的語言環境的本地化支援](#add-localization-support-for-non-supported-locales-add-localization-support-for-non-supported-locales)
-1. [使用適用性Forms中新增的地區設定](#use-added-locale-in-adaptive-forms-use-added-locale-in-af)
+1. [添加對不支援的語言環境的本地化支援](#add-localization-support-for-non-supported-locales)
+1. [使用適用性Forms中新增的地區設定](#use-added-locale-in-af)
 
 ### 添加對不支援的語言環境的本地化支援 {#add-localization-support-for-non-supported-locales}
 
@@ -35,11 +35,11 @@ AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利�
 
 若要在適用性Forms執行階段新增對新地區設定的支援：
 
-1. [複製存放庫](#1-clone-the-repository-clone-the-repository)
-1. [向GuideLocalizationService服務添加區域設定](#2-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
-1. [添加特定於語言環境名稱的資料夾](#3-add-locale-name-specific-folder-client-library-add-locale-name-specific-folder)
-1. [為字典添加地區支援](#about-locale-dictionaries-about-locale-dictionaries)
-1. [提交儲存庫中的更改並部署管道](#5-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-chnages-in-repo-deploy-pipeline)
+1. [複製存放庫](#clone-the-repository)
+1. [向GuideLocalizationService服務添加區域設定](#add-a-locale-to-the-guide-localization-service)
+1. [添加特定於語言環境名稱的資料夾](#add-locale-name-specific-folder)
+1. [為字典添加地區支援](#add-locale-support-for-the-dictionary)
+1. [提交儲存庫中的更改並部署管道](#commit-changes-in-repo-deploy-pipeline)
 
 #### 1.克隆儲存庫 {#clone-the-repository}
 
@@ -48,14 +48,13 @@ AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利�
 1. 使用Git使用者名稱和密碼來複製存放庫。
 1. 在您偏好的編輯器中開啟複製的FormsCloud Service存放庫資料夾。
 
-#### 2.向指南本地化服務添加地區設定 {#add-a-locale-to-the-guide-localization-service-br}
+#### 2.向指南本地化服務添加地區設定 {#add-a-locale-to-the-guide-localization-service}
 
 1. 找出 `Guide Localization Service.cfg.json` 檔案並將要添加到支援區域設定的清單中的區域設定添加到。
 
    >[!NOTE]
    >
-   >* 建立名稱為 `Guide Localization Service.cfg.json` 檔案（如果尚未存在）。
-
+   > 建立名稱為 `Guide Localization Service.cfg.json` 檔案（如果尚未存在）。
 
 #### 3.添加特定於語言環境名稱的資料夾客戶端庫 {#add-locale-name-specific-folder}
 
@@ -70,9 +69,9 @@ AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利�
 * **js.txt** 包含下列項目：
    */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
-##### 3.2.為語言環境地區名稱資料夾新增適用性表單用戶端程式庫 {#add-adaptive-form-client-library-for-a-locale-br}
+##### 3.2.為語言環境地區名稱資料夾新增適用性表單用戶端程式庫
 
-1. 建立名為的節點 `[locale-name]_af` 輸入為 `cq:ClientLibraryFolder` 在 `etc/clientlibs/locale_name`，類別為 `guides.I18N.<locale>` 和依賴項 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 和 `guide.common`.
+1. 建立名為的節點 `[locale-name]_af` 輸入為 `cq:ClientLibraryFolder` 在 `etc/clientlibs/locale_name`，類別為 `guides.I18N.<locale>` 依賴項 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 和 `guide.common`.
 1. 建立名為的資料夾 `javascript` 並新增下列檔案：
 
    * **i18n.js** 定義 `guidelib.i18n`，具有「日曆符號」的模式， `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` 針對 `<locale>` 根據 [地區設定規範](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf).
@@ -85,7 +84,7 @@ AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利�
      LogMessages.js
    ```
 
-#### 4.為字典添加地區支援 {#add-locale-support-for-the-dictionary-br}
+#### 4.為字典添加地區支援 {#add-locale-support-for-the-dictionary}
 
 只有在 `<locale>` 您添加的不在 `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -95,20 +94,18 @@ AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利�
 1. 新增 `<locale-name>` 預設地區值 `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`，如果尚未存在。
 
 1. 新增 `<locale>` 的值 `languages` 屬性 `/etc/languages`.
+1. 在 `filter.xml` 在etc/META-INF/下[資料夾階層] 如下：
 
-
-```text
-Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hierarchy] as:
-<filter root="/etc/clientlibs/[locale-name]"/>
-<filter root="/etc/languages"/>
-```
+   ```
+   <filter root="/etc/clientlibs/[locale-name]"/>
+   <filter root="/etc/languages"/>
+   ```
 
 將變更提交至AEM Git存放庫前，您必須先存取 [Git存放庫資訊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 
-#### 5.提交儲存庫中的更改並部署管道 {#commit-chnages-in-repo-deploy-pipeline}
+#### 5.提交儲存庫中的更改並部署管道 {#commit-changes-in-repo-deploy-pipeline}
 
 新增地區設定支援後，將變更提交至GIT存放庫。 使用完整堆疊管道部署程式碼。 學習 [如何設定管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 添加新區域設定支援。
-
 管道完成後，新新增的地區設定會顯示在AEM環境中。
 
 ### 在適用性Forms中使用新增的地區設定 {#use-added-locale-in-af}
@@ -126,9 +123,9 @@ Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hie
 
 有兩種方法可識別適用性表單的地區設定。 呈現適用性表單時，會透過以下項目識別要求的地區設定：
 
-* 復原 `[local]` 最適化表單URL中的選取器。 URL的格式為 `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. 使用 `[local]` 選取器允許快取最適化表單。
+* 擷取 `[local]` 最適化表單URL中的選取器。 URL的格式為 `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. 使用 `[local]` 選取器允許快取最適化表單。
 
-* 依所列順序擷取下列參數：
+* 以所列順序擷取下列參數：
 
    * 要求參數 `afAcceptLang`
 若要覆寫使用者的瀏覽器地區設定，您可以傳遞 
