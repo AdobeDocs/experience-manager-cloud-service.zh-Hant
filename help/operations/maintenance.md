@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的維護任務
 description: AEM as a Cloud Service 中的維護任務
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f1d1009db31585ff82c02080a6ab7ea7ca5bf66b
+source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1075'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 4%
   <tr>
     <td>版本清除</td>
     <td>Adobe</td>
-    <td>對於現有環境（在2023年3月1日之前建立的環境），清除會停用，且除非客戶明確啟用，否則將來不會啟用，屆時客戶也可以使用自訂值來設定清除。<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->新環境（從2023年3月1日開始建立的環境）預設會啟用清除，並包含下列值，讓客戶能夠使用自訂值進行設定。
+    <td>對於現有環境（在2023年6月1日之前建立的環境），清除會停用，且除非客戶明確啟用，否則將來不會啟用，屆時客戶也可以使用自訂值來設定清除。<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->新環境（從2023年6月1日開始建立的環境）預設會啟用清除，並包含下列值，讓客戶能夠使用自訂值進行設定。
      <ol>
        <li>30天以前的版本會遭移除</li>
        <li>會保留過去30天內的最新5個版本</li>
@@ -56,7 +56,7 @@ ht-degree: 4%
   <tr>
     <td>審核日誌清除</td>
     <td>Adobe</td>
-    <td>對於現有環境（在2023年3月1日之前建立的環境），清除會停用，且除非客戶明確啟用，否則將來不會啟用，屆時客戶也可以使用自訂值來設定清除。<br><br> <!-- See above for the two line breaks -->新環境（從2023年3月1日開始建立的環境）將依預設在 <code>/content</code> 儲存庫的節點，依下列行為進行：
+    <td>對於現有環境（在2023年6月1日之前建立的環境），清除會停用，且除非客戶明確啟用，否則將來不會啟用，屆時客戶也可以使用自訂值來設定清除。<br><br> <!-- See above for the two line breaks -->新環境（從2023年6月1日開始建立的環境）將依預設在 <code>/content</code> 儲存庫的節點，依下列行為進行：
      <ol>
        <li>對於複製審核，將刪除3天以前的審核日誌</li>
        <li>若是DAM(Assets)稽核，超過30天的稽核記錄會遭到移除</li>
@@ -92,7 +92,7 @@ ht-degree: 4%
     <td>客戶</td>
     <td>
     <p>必須以Git完成。 覆蓋下的現成維護窗口配置節點 <code>/libs</code> 在資料夾下建立屬性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code>. 有關其他配置詳細資訊，請參閱下面的「維護窗口」表。</p>
-    <p>通過在上面的節點下添加其他節點（將其命名為）來啟用維護任務 <code>granite_ProjectPurgeTask</code>)和適當的屬性。 設定OSGI屬性。</p>
+    <p>通過在上面的節點下添加其他節點（將其命名為）來啟用維護任務 <code>granite_ProjectPurgeTask</code>)和適當的屬性。 請參閱「Adobe專案清除設定」下的OSGI屬性清單。</p>
   </td>
   </tr>
   </tbody>
