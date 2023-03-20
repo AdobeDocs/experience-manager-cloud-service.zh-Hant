@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 開發指導方針
 description: 了解在AEMas a Cloud Service上開發的准則，以及AMS中與內部部署和AEM不同的重要方式。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
+source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '2591'
 ht-degree: 2%
@@ -150,7 +150,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ## CRX/DE Lite和開發人員控制台 {#crxde-lite-and-developer-console}
 
-### 地方開發 {#local-development}
+### 本機開發 {#local-development}
 
 針對本機開發，開發人員可完整存取CRXDE Lite(`/crx/de`)和AEM Web Console(`/system/console`)。
 

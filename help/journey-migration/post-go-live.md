@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 22%
+ht-degree: 25%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 22%
 
 這是歷程的最後一個部分，讓您了解如何在移轉完成後監控問題並改善效能。 您應確保清理臨時檔案、審查最佳作法以持續開發及管理記錄。
 
-## 迄今為止的故事 {#story-so-far}
+## 到目前為止 {#story-so-far}
 
 在歷程的上一步中，您學習了如何執行移轉， [上線](/help/journey-migration/go-live.md) 當程式碼和內容準備好移至AEMas a Cloud Service時。
 
@@ -59,7 +59,7 @@ ht-degree: 22%
 >id="aemcloud_golive_support"
 >title="說明與支援"
 >abstract="請洽詢AEM支援團隊，以取得說明或解決任何疑慮。"
->additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="支援Experience Cloud"
+>additional-url="https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html" text="支援Experience Cloud"
 
 如果您對存取Cloud Service有任何疑問，請連絡您的Adobe代表，或 [支援Experience Cloud](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 以取得更多詳細資訊。
 
@@ -73,9 +73,9 @@ ht-degree: 22%
 
 接著，您應該與組織內的利害關係人和團隊分享這些移轉後的學習經驗。
 
-## 歷程結束了，還是結束了？ {#journey-ends}
+## 歷程結束 - 還是結束了？ {#journey-ends}
 
-恭喜！ 您已完成AEMas a Cloud Service移轉歷程！ 您應了解如何：
+恭喜！您已完成AEMas a Cloud Service移轉歷程！ 您應了解如何：
 
 * 開始移至AEMas a Cloud Service
 * 判斷您的部署是否已準備好移至AEMas a Cloud Service

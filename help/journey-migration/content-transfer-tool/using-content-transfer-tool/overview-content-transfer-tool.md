@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
 source-wordcount: '708'
-ht-degree: 39%
+ht-degree: 47%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 39%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="概觀"
->abstract="「內容轉移工具」是由Adobe開發的工具，可用來將現有內容從來源AEM例項（內部部署或AMS）移至目標AEM Cloud Service例項。 此工具也會自動轉移主體 (使用者或群組)。"
+>abstract="內容轉移工具由 Adobe 開發，可用於將現有內容從來源 AEM 執行個體 (內部部署或 AMS) 移至目標 AEM Cloud Service 執行個體。此工具也會自動轉移主體 (使用者或群組)。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="准則與最佳作法"
 
 「內容轉移工具」是 Adobe 開發的工具，可用來將現有內容從來源 AEM 例項 (內部部署或 AMS) 移至目標 AEM 雲端服務例項。
@@ -68,8 +68,8 @@ ht-degree: 39%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_migrationset_expiry"
->title="移轉集的到期日"
->abstract="了解移轉集的到期日。"
+>title="移轉集到期"
+>abstract="了解移轉集到期。"
 
 所有移轉集最終將在長時間閒置約90天後過期。 在一段時間的專案卡和移轉工作表列上顯示指標後，移轉集即會過期，且其資料將不再可用。 可借由下列方式依移轉集操作，輕鬆延長到期時間：
 

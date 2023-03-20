@@ -1,21 +1,21 @@
 ---
-title: 使用Best Practices Analyzer
-description: 使用Best Practices Analyzer
+title: 使用最佳做法分析工具
+description: 使用最佳做法分析工具
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2490'
 ht-degree: 41%
 
 ---
 
-# 使用Best Practices Analyzer {#using-best-practices-analyzer}
+# 使用最佳做法分析工具 {#using-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
 >title="使用Best Practices Analyzer"
 >abstract="檢閱使用Best Practices Analyzer（原稱為Cloud Readiness Analyzer）的說明檔案以及產生的報表。 Best Practices Analyzer報表可用來取得對一般升級整備程度的高層了解。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[網路研討會]加速Adobe Experience Manager as a Cloud Service歷程的工具簡介"
 
 ## 使用Best Practices Analyzer的重要考量 {#imp-considerations}
 
@@ -28,12 +28,12 @@ ht-degree: 41%
 * 6.1版及更新版本的AEM例項支援BPA。
 
    >[!NOTE]
-請參閱 [在AEM 6.1上安裝](#installing-on-aem61) 在AEM 6.1上安裝BPA的特殊要求。
+   > 請參閱 [在AEM 6.1上安裝](#installing-on-aem61) 在AEM 6.1上安裝BPA的特殊要求。
 
 * BPA可在任何環境中運行，但最好在 *階段* 環境。
 
    >[!NOTE]
-為避免對業務關鍵實例造成影響，建議您在 *作者* 最接近的環境 *生產* 環境，包括自訂、設定、內容和使用者應用程式。 或者，您可以在複製的生產&#x200B;*製作*&#x200B;環境中執行 CRA。
+   >為避免對業務關鍵實例造成影響，建議您在 *作者* 最接近的環境 *生產* 環境，包括自訂、設定、內容和使用者應用程式。 或者，您可以在複製的生產&#x200B;*製作*&#x200B;環境中執行 CRA。
 
 * 生成BPA報告內容可能需要相當長的時間，從幾分鐘到數小時不等。 所需的時間主要取決於 AEM 存放庫內容的大小和性質、AEM 版本和其他因素。
 
@@ -41,15 +41,15 @@ ht-degree: 41%
 
 ## 可用性 {#availability}
 
-[!CONTEXTUALHELP]
-id="aemcloud_bpa_download"
-title="下載Best Practices Analyzer"
-abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZIP檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。"
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_download"
+>title="下載Best Practices Analyzer"
+>abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZIP檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。"
 
 您可以從軟體發佈入口網站下載Best Practices Analyzer的ZIP檔案。 您可以透過 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 在來源Adobe Experience Manager(AEM)例項上。
 
 >[!NOTE]
-從下載Best Practices Analyzer [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 入口網站。
+>從下載Best Practices Analyzer [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 入口網站。
 
 ## 檢視Best Practices Analyzer報表 {#viewing-report}
 
@@ -83,12 +83,12 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
    ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-您可以按一下，以強制BPA清除其快取並重新產生報表 **重新整理報表**.
+   >您可以按一下，以強制BPA清除其快取並重新產生報表 **重新整理報表**.
 
    ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
-重新產生報表時，會以完成百分比顯示進度，如下圖所示。
+   >重新產生報表時，會以完成百分比顯示進度，如下圖所示。
 
    ![影像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
@@ -103,14 +103,14 @@ abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZI
    ![影像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-只有當BPA偵測到ACS公域的使用時，左側邊欄圖示才會出現。
+   > 只有當BPA偵測到ACS公域的使用時，左側邊欄圖示才會出現。
 
 1. 取消選中該框，以過濾與ACS公域相關的所有結果。 您應會看到 **篩選的結果計數** 如下圖所示。 以逗號分隔值(CSV)格式匯出時，篩選器也會套用至報表。
 
    ![影像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-不應忽視ACS公域的調查結果。 請參閱 [檔案](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以判斷與AEMas a Cloud Service的相容性。
+   > 不應忽視ACS公域的調查結果。 請參閱 [檔案](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以判斷與AEMas a Cloud Service的相容性。
 
 
 <!--
@@ -126,12 +126,12 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 
 ## 解譯Best Practices Analyzer報表 {#cra-report}
 
-[!CONTEXTUALHELP]
-id="aemcloud_bpa_interpreting"
-title="解譯Best Practices Analyzer報表"
-abstract="查看BPA報表輸出有兩個選項：UI和CSV。 在AEM例項中執行Best Practices Analyzer工具時，UI報表會在工具視窗中顯示為結果。 CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和組織。"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="檢閱最佳實務分析報表"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="了解Best Practices Analyzer報表類別"
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_interpreting"
+>title="解譯Best Practices Analyzer報表"
+>abstract="查看BPA報表輸出有兩個選項：UI和CSV。 在AEM例項中執行Best Practices Analyzer工具時，UI報表會在工具視窗中顯示為結果。 CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和組織。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="檢閱最佳實務分析報表"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="了解Best Practices Analyzer報表類別"
 
 在AEM例項中執行Best Practices Analyzer工具時，報表會在工具視窗中顯示為結果。
 
@@ -148,7 +148,7 @@ additional-url="https://experienceleague.adobe.com/docs/experience-manager-patte
 系統會為每個結果指派一個重要性層級，以指出動作的概略優先順序。
 
 >[!NOTE]
-若要進一步了解每個「結果類別」，請參閱 [模式偵測器類別](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>若要進一步了解每個「結果類別」，請參閱 [模式偵測器類別](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 請參考下表以了解重要性層級：
 

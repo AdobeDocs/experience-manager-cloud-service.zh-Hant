@@ -2,8 +2,8 @@
 title: 自訂程式碼品質規則
 description: 本頁說明了 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則。它們是根據 Adobe Experience Manager Engineering 的最佳實務。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 2935338b847f7e852dfd31c93a61e737e8a3ec80
-workflow-type: ht
+source-git-commit: 0b71e15c956cd39907440be319347bd1a749eb0b
+workflow-type: tm+mt
 source-wordcount: '3485'
 ht-degree: 100%
 
@@ -312,7 +312,7 @@ public void doThis() throws Exception {
 * **類型**：程式碼異味
 * **嚴重度**：輕微
 
-一般而言，應該使用 INFO 記錄層級來區分重要操作，並且預設情況下，會將 Experience Manager 設定為在 INFO 或以上層級記錄。GET 和 HEAD 方法應僅能唯讀操作，因此不構成重要操作。在 INFO 層級記錄以回應 GET 或 HEAD 要求可能會產生大量記錄雜訊，而使得在記錄檔中識別有用資訊變得更加困難。 在處理 GET 或 HEAD 要求時若出現錯誤，應該在 WARN 或 ERROR 層級進行記錄，或者若是更深入的疑難排解資訊會有幫助，則應在 DEBUG 或 TRACE 層級進行。
+一般而言，應該使用 INFO 記錄層級來區分重要操作，並且預設情況下，會將 Experience Manager 設定為在 INFO 或以上層級記錄。GET 和 HEAD 方法應僅能唯讀操作，因此不構成重要操作。在 INFO 層級記錄以回應 GET 或 HEAD 要求可能會產生大量記錄雜訊，而使得在記錄檔中識別有用資訊變得更加困難。在處理 GET 或 HEAD 要求時若出現錯誤，應該在 WARN 或 ERROR 層級進行記錄，或者若是更深入的疑難排解資訊會有幫助，則應在 DEBUG 或 TRACE 層級進行。
 
 >[!NOTE]
 >

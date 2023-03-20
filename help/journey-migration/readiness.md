@@ -1,25 +1,25 @@
 ---
-title: 準備階段
+title: 整備階段
 description: 了解您需要採取哪些步驟，才能確定您的AEM安裝已準備好移至雲端
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '2079'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
-# 準備階段 {#readiness-phase}
+# 整備階段 {#readiness-phase}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
 >title="規劃您的轉變"
 >abstract="在展開轉換至 Cloud Service 的過程前，您應該先熟悉 AEM as a Cloud Service、檢視針對其採取的重大變更，並檢視已遭取代或淘汰的功能。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="最佳做法分析工具"
 
 在AEMas a Cloud Service移轉歷程的這個階段，您將熟悉AEMas a Cloud Service、檢閱其所推出的重大變更，並了解成功移轉至雲端所需的計畫。
 
-## 迄今為止的故事 {#story-so-far}
+## 到目前為止 {#story-so-far}
 
 上一份檔案， [開始移轉至AEMas a Cloud Service](/help/journey-migration/getting-started.md)，概述移轉至AEM as a Cloud Service所需執行的階段清單，以及移轉至Analytics的好處。
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許�
 <thead>
   <tr>
     <th>變更為何？</th>
-    <th>引用</th>
+    <th>參考</th>
     <th>主要優點</th>
   </tr>
 </thead>
@@ -149,7 +149,7 @@ AEM as a Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許�
   </tr>
   <tr>
     <td>驗證的變更</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">AEM as a Cloud Service 的 IMS 支援</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=zh-Hant">AEM as a Cloud Service 的 IMS 支援</td>
     <td>如果您先前在移至Cloud Service前同時在製作和發佈上使用SAML 2.0整合，主要變更是AEMas a Cloud Service製作僅與Adobe IMS整合。 不過，AEMas a Cloud Service發佈層級仍可運用SAML或其他驗證整合。 AEM as a Cloud Service 僅針對「作者」、「管理員」和「開發」使用者提供 IMS 驗證支援。IMS驗證不支援客戶網站的外部使用者，例如網站訪客。</td>
   </tr>
 </tbody>

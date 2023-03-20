@@ -5,7 +5,7 @@ exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 12%
+ht-degree: 40%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 12%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_logs"
->title="檢視記錄"
->abstract="擷取擷取完成後，檢查記錄中是否有任何錯誤/警告。 您應處理所回報的問題，或聯絡Adobe支援，以立即解決任何錯誤。"
+>title="檢視記錄檔"
+>abstract="提取和攝入完成後，檢查記錄檔中是否有任何錯誤/警告。如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 支援人員。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting" text="疑難排解"
->additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="連絡 Adobe 支援人員"
+>additional-url="https://helpx.adobe.com/tw/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="連絡 Adobe 支援人員"
 
-完成每個步驟（擷取和擷取）後，請檢查記錄並尋找錯誤。  您應處理所回報的問題，或聯絡Adobe支援，以立即解決任何錯誤。
+完成每個步驟（擷取和擷取）後，請檢查記錄並尋找錯誤。  如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 支援人員。
 
 ## 檢視記錄檔的步驟 {#viewing-logs}
 

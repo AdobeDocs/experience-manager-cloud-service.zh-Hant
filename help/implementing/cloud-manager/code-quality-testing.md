@@ -2,7 +2,7 @@
 title: 計劃碼品質測試
 description: 了解管道計劃碼品質測試如何運作及如何提高部署品質。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: ae586cc2f576aa4aee4cc611b5184e2bbda6696c
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 100%
@@ -114,7 +114,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
-* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (klipped-content-package)
+* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
 如果 `myco-all-1.0.0-SNAPSHOT.zip` 內的項目只有兩個已略過的內容套件，則將掃描這兩個嵌入的套件而不是「全」內容套件。
 

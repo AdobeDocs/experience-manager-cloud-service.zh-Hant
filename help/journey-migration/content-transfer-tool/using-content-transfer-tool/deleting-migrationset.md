@@ -5,7 +5,7 @@ exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
 source-git-commit: c61407d70fb65a7fdc72174881b23db4deca556a
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_delete_migrationset"
->title="刪除遷移集"
+>title="刪除移轉集"
 >abstract="了解如何刪除移轉集。"
 
 您可以從Cloud Acceleration Manager中刪除移轉集。

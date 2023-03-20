@@ -4,7 +4,7 @@ description: 使用者對應和主要移轉概觀
 source-git-commit: aeb8f633b45908a87f15f9feeb3723f90470be92
 workflow-type: tm+mt
 source-wordcount: '759'
-ht-degree: 3%
+ht-degree: 10%
 
 ---
 
@@ -12,8 +12,8 @@ ht-degree: 3%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
->title="用戶對應"
->abstract="「內容轉移工具」可協助您將使用者和群組從您現有的AEM系統移至AEMas a Cloud Service。 現有使用者必須對應至其IMS ID，以免在Cloud Service製作例項上重複。"
+>title="使用者對應"
+>abstract="內容轉移工具可協助您將使用者和群組從現有的 AEM 系統移至 AEM as a Cloud Service。現有使用者需要對應到他們的 IMS ID，以避免 Cloud Service 製作執行個體上出現重複的使用者。"
 
 >[!NOTE]
 >如需舊版使用者對應工具，請參閱 [舊版檔案](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
@@ -31,7 +31,7 @@ AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存�
 * 如果來源系統是製作例項，依預設，執行對應的選項為 _on_，因為這是建議的程式。
 * 如果源系統是發佈實例，預設情況下，執行映射的選擇是 _關閉_，因為使用者通常不會移轉或用於發佈執行個體。
 
-## 對應和移轉使用者時的重要考量 {#important-considerations}
+## 對應和移轉使用者的重要注意事項 {#important-considerations}
 
 
 ### 例外案例 {#exceptional-cases}
