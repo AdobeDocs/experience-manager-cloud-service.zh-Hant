@@ -3,10 +3,10 @@ title: 為Adobe Experience Manager as a Cloud Service配置OSGi
 description: 具有機密值和環境特定值的OSGi設定
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 74fbf5e3e910106f48a1ec6e316e3ea7c71e65aa
+source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
-source-wordcount: '3311'
-ht-degree: 0%
+source-wordcount: '3312'
+ht-degree: 1%
 
 ---
 
@@ -66,7 +66,7 @@ OSGi設定檔案的定義位置：
 >
 >A `config.preview` OSGi配置資料夾 **不能** 以與 `config.publish` 可以聲明資料夾。 預覽層會從發佈層的值繼承其OSGi設定。
 
-本地開發時，運行模式啟動參數， `-r`，可用來指定執行模式OSGI設定。
+在本機開發時，執行模式啟動參數 `-r` 用於指定執行模式 OSGI 設定。
 
 ```shell
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
@@ -165,7 +165,7 @@ Adobe Experience Manager as a Cloud Service需要使用環境特定的設定(`$[
 
 使用機密環境專屬設定，以儲存所有Adobe Experience Manager as a Cloud Service環境（包括預備和生產）上機密的值。
 
-## 建立OSGi配置 {#creating-sogi-configurations}
+## 建立OSGi配置 {#creating-osgi-configurations}
 
 建立OSGi設定的方式有兩種，如下所述。 前一種方法通常用於配置具有由開發人員知道的OSGi屬性和值的自定義OSGi元件，後一種方法用於AEM提供的OSGi元件。
 
@@ -189,8 +189,8 @@ AEM SDK Quickstart Jar的AEM Web Console可用來設定OSGi元件，並將OSGi�
 >
 >AEM Web Console的設定UI會寫入 `.cfg.json` 檔案放入存放庫。 因此，請注意這一點，以避免在本機開發期間，當AEM專案定義的OSGi設定可能與產生的設定不同時，可能會發生非預期行為。
 
-1. 以管理員使用者身分登入AEM SDK Quickstart Jar的AEM Web主控台
-1. 導覽至「OSGi >設定」
+1. 登入AEM SDK Quickstart Jar的AEM Web主控台，位於 `https://<host>:<port>/system/console` 作為管理員使用者
+1. 導覽至 **OSGi** > **設定**
 1. 若要設定，請找出OSGi元件，並點選其標題以進行編輯
    ![OSGi配置](./assets/configuring-osgi/configuration.png)
 1. 視需要透過Web UI編輯OSGi設定屬性值
@@ -280,7 +280,7 @@ $[env:ENV_VAR_NAME;default=<value>]
 
 提供預設值後，預留位置會取代為提供的每個環境值或提供的預設值。
 
-### 地方開發 {#local-development}
+### 本機開發 {#local-development}
 
 下列項目適用於環境特定值和機密設定值。
 
@@ -419,7 +419,7 @@ config.dev
 </tr>
 <tr>
 <td>
-設定
+config
 </td>
 <td>
 <pre>
@@ -452,7 +452,7 @@ config.dev
 </tr>
 <tr>
 <td>
-設定
+config
 </td>
 <td>
 <pre>

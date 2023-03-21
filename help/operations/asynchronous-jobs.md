@@ -1,17 +1,17 @@
 ---
 title: 非同步作業
-description: Adobe Experience Manager 能以非同步方式完成部分耗用大量資源的工作，實現效能最佳化。
+description: Adobe Experience Manager能以非同步方式完成部分耗用大量資源的工作作為背景作業，以最佳化效能。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 98%
+source-wordcount: '971'
+ht-degree: 70%
 
 ---
 
 # 非同步操作 {#asynchronous-operations}
 
-為減少對效能造成負面影響，Adobe Experience Manager 會以非同步方式處理某些長時間執行且耗用大量資源的操作。非同步處理包括將多項作業排入佇列，並根據系統資源的可用情形依序執行。
+為了減少對效能的負面影響，Adobe Experience Manager會以非同步方式處理某些長時間執行且耗用大量資源的作業，作為背景作業。 非同步處理包括將多項作業排入佇列，並根據系統資源的可用情形依序執行。
 
 這些操作包括：
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 * 移動頁面
 * 轉出即時副本
 
-您可以從&#x200B;**[!UICONTROL 「非同步作業狀態」]**&#x200B;儀表板的&#x200B;**「全域導覽** -> **工具** -> **操作** -> **作業」**，檢視非同步作業的狀態。
+您可以從 **[!UICONTROL 背景操作]** 控制面板 **全域導覽** -> **工具** -> **一般** -> **工作**.
 
 >[!NOTE]
 >
@@ -34,11 +34,11 @@ ht-degree: 98%
 
 AEM 以非同步方式處理操作時，您會透過[收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)和電子郵件 (如果已啟用) 收到通知。
 
-如要檢視非同步操作的詳細狀態，請導覽至&#x200B;**[!UICONTROL 「非同步作業狀態」]**&#x200B;頁面。
+要詳細查看非同步操作的狀態，請導航至 **[!UICONTROL 背景操作]** 頁面。
 
-1. 在 Experience Manager 介面中，依序按一下&#x200B;**[!UICONTROL 「操作]** > **[!UICONTROL 作業」]**。
+1. 在Experience Manager介面中選取 **全域導覽** -> **工具** -> **一般** -> **工作**.
 
-1. 進入&#x200B;**[!UICONTROL 「非同步作業狀態」]**&#x200B;頁面後，即可檢視操作的詳細資訊。
+1. 在 **[!UICONTROL 背景操作]** 頁面，檢閱操作的詳細資訊。
 
    ![非同步操作的狀態和詳細資訊](assets/async-operation-status.png)
 
@@ -70,13 +70,22 @@ AEM 以非同步方式處理操作時，您會透過[收件匣](/help/sites-clou
    >
    >狀態為&#x200B;**「執行中」**&#x200B;或&#x200B;**「已排入佇列」**&#x200B;的作業無法刪除。
 
-## 清除完成的作業 {#purging-completed-jobs}
+## 配置非同步作業處理選項 {#configure}
 
-AEM 每天 01:00 會執行清除作業，將超過一天的已完成非同步作業刪除。
+非同步作業有許多可設定的選項。 下列範例說明如何在本機開發系統上使用configuration manager來完成此作業。
+
+>[!NOTE]
+>
+>[OSGi配置](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) 視為可變內容，且任何此類設定都必須部署為生產環境的內容套件。
+
+### 清除完成的作業 {#purging-completed-jobs}
+
+AEM每天01:00執行清除作業，以刪除一天以上已完成的非同步作業。
 
 您可以修改清除作業的排程，並調整已完成作業詳細資訊的保留時間。您也可以針對要保留詳細資訊的已完成作業，隨時設定數量上限。
 
-1. 在「全域導覽」中，按一下&#x200B;**[!UICONTROL 「工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web 主控台」]**。
+1. 登入AEM SDK Quickstart Jar的AEM Web主控台，位於 `https://<host>:<port>/system/console` 身為管理員使用者。
+1. 導覽至 **OSGi** > **設定**
 1. 開啟&#x200B;**[!UICONTROL 「Adobe Granite 非同步作業清除已排程作業」]**。
 1. 指定下列設定：
    * 已完成作業的保留天數上限。
@@ -87,15 +96,12 @@ AEM 每天 01:00 會執行清除作業，將超過一天的已完成非同步作
 
 1. 儲存變更。
 
-## 設定非同步處理 {#configuring-asynchronous-processing}
-
-您可以設定資產、頁面或參照等項目的數量上限，供 AEM 以非同步方式處理特定操作，也可以針對作業執行時間，切換電子郵件通知。
-
 ### 設定非同步資產刪除操作 {#configuring-synchronous-delete-operations}
 
 如果要刪除的資產或資料夾數量超過上限，系統就會以非同步方式執行刪除操作。
 
-1. 在「全域導覽」中，按一下&#x200B;**[!UICONTROL 「工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web 主控台」]**。
+1. 登入AEM SDK Quickstart Jar的AEM Web主控台，位於 `https://<host>:<port>/system/console` 身為管理員使用者。
+1. 導覽至 **OSGi** > **設定**
 1. 在 Web 主控台中，開啟&#x200B;**[!UICONTROL 「非同步處理預設佇列設定」]**。
 1. 在&#x200B;**[!UICONTROL 「資產數上限」]**&#x200B;方塊中，指定非同步處理刪除操作的資產/資料夾數量上限。
 
@@ -108,7 +114,8 @@ AEM 每天 01:00 會執行清除作業，將超過一天的已完成非同步作
 
 如果要移動的資產/資料夾或參照數量超過上限，系統就會以非同步方式執行移動操作。
 
-1. 在「全域導覽」中，按一下&#x200B;**[!UICONTROL 「工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web 主控台」]**。
+1. 登入AEM SDK Quickstart Jar的AEM Web主控台，位於 `https://<host>:<port>/system/console` 身為管理員使用者。
+1. 導覽至 **OSGi** > **設定**
 1. 在 Web 主控台中，開啟&#x200B;**[!UICONTROL 「非同步移動操作作業處理設定」]**。
 1. 在&#x200B;**[!UICONTROL 「資產/參照數上限」]**&#x200B;方塊中，指定非同步處理移動操作的資產/資料夾或參照數量上限。
 
@@ -121,7 +128,8 @@ AEM 每天 01:00 會執行清除作業，將超過一天的已完成非同步作
 
 如果要移動的頁面參照數量超過上限，系統就會以非同步方式執行移動操作。
 
-1. 在「全域導覽」中，按一下&#x200B;**[!UICONTROL 「工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web 主控台」]**。
+1. 登入AEM SDK Quickstart Jar的AEM Web主控台，位於 `https://<host>:<port>/system/console` 身為管理員使用者。
+1. 導覽至 **OSGi** > **設定**
 1. 在 Web 主控台中，開啟&#x200B;**[!UICONTROL 「非同步頁面移動操作作業處理設定」]**。
 1. 在&#x200B;**[!UICONTROL 「參照數上限」]**&#x200B;欄位中，指定非同步處理頁面移動操作的參照數量上限。
 
@@ -132,7 +140,8 @@ AEM 每天 01:00 會執行清除作業，將超過一天的已完成非同步作
 
 ### 設定非同步 MSM 操作 {#configuring-asynchronous-msm-operations}
 
-1. 在「全域導覽」中，按一下&#x200B;**[!UICONTROL 「工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web 主控台」]**。
+1. 登入AEM SDK Quickstart Jar的AEM Web主控台，位於 `https://<host>:<port>/system/console` 身為管理員使用者。
+1. 導覽至 **OSGi** > **設定**
 1. 在 Web 主控台中，開啟&#x200B;**[!UICONTROL 「非同步頁面移動操作作業處理設定」]**。
 1. 勾選&#x200B;**「啟用電子郵件通知」**&#x200B;選項，接收此作業狀態的電子郵件通知，例如，成功、失敗。
 
