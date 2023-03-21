@@ -1,11 +1,11 @@
 ---
 title: 過時和移除的功能
-description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已過時和已移除功能的發行說明。
+description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已過時和已移除功能的版本注意事項。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: 459e6cbf91f9b7f995bd1fd9c8758962c41c9341
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | 功能 | 汰除功能 | 替代方案 |
 | ------------ | ------------------ | ----------- |
 | [!DNL Sites] | **社交媒體狀態**&#x200B;的體驗片段屬性。 | 該功能不久將移除。 |
-| [!DNL Sites] | 基於範本的簡單內容片段。 | 現在[基於模型的結構化內容片段](/help/assets/content-fragments/content-fragments-models.md)。 |
+| [!DNL Sites] | 基於範例的簡單內容片段。 | 現在[基於模型的結構化內容片段](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | 處理所擷取影像的 `DAM Asset Update` 工作流程。 | 資產擷取現在使用[資產微服務](/help/assets/asset-microservices-overview.md)。 |
 | [!DNL Assets] | 將資產直接上傳至 [!DNL Experience Manager]。請參閱[過時的資產上傳 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二進位上傳](/help/assets/add-assets.md)。如需技術詳細資訊，請參閱[直接上傳 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
 | [!DNL Assets] | 不支援 [ 工作流程中的](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)某些工作流程步驟`DAM Asset Update`，包括呼叫命令列工具，例如 [!DNL ImageMagick]. | [資產微服務](/help/assets/asset-microservices-overview.md)可取代許多工作流程。若要自訂處理程序，請使用[後期處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
@@ -58,9 +58,9 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | [!DNL Sites] | Design Importer | 此功能已移除，因為無法在執行階段存取 [!DNL Experience Manager] 存放庫的不可修改區段。 | 已移除 |
 | [!DNL Assets] | [!DNL Assets] 無法與 Marketing Cloud Assets 核心服務和 Creative Cloud 服務共用。 | 若要與 [!DNL Adobe Creative Cloud] 整合，請使用 [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。 | 已移除 |
 | [!DNL Foundation] | 支援 Apache Sling 資料來源 (OSGi 套件組合 org.apache.sling.datasource) | N/A | 已移除 |
-| [!DNL Foundation] | 支援 JST 指令碼範本 (OSGi 套件組合 org.apache.sling.scripting.jst) | N/A | 已移除 |
+| [!DNL Foundation] | 支援 JST 指令碼範例 (OSGi 套件組合 org.apache.sling.scripting.jst) | N/A | 已移除 |
 | [!DNL Foundation] | 支援 Apache Felix Http Whiteboard | OSGi Http Whiteboard | 2022 年 3 月 |
-| [!DNL Foundation] | 支援com.adobe.granite.oauth.server | Adobe IMS整合 | 2023 年 3 月 日 |
+| [!DNL Foundation] | 支援 com.adobe.granite.oauth.server | Adobe IMS 整合  | 2023 年 3 月 |
 
 
 ## Java API {#java-api}

@@ -4,10 +4,10 @@ description: 設定雲端資源後，您需要使用 AEM 產品設定檔授與�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 050e5966728e157bf2ae51f99a31f68a1d347e4b
+source-git-commit: fd0716a95d66908e215ed44bc773ed3c26e0382b
 workflow-type: tm+mt
 source-wordcount: '769'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->請勿編輯或刪除名為AEM Administrators或AEM Users的產品設定檔。 編輯這些設定檔名稱可能會中斷登入AEM雲端例項。
+>不要編輯或刪除名為 AEM 管理員或 AEM 使用者的產品設定檔。編輯這些設定檔名稱可能會中斷 AEM 雲端執行個體的登入。
 
 ## 必備條件 {#prerequisites}
 

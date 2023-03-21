@@ -1,12 +1,12 @@
 ---
-title: Headless for AEM簡介
-description: 了解 Adobe Experience Manager (AEM) Headless，以及了解詳細文件和 Headless 歷程。了解如何使用內容模型、內容片段和 GraphQL API 等功能來增強無周邊體驗。
-landing-page-description: 了解如何使用及管理 Adobe Experience Manager as a Cloud Service Headless。
+title: AEM Headless 簡介
+description: 了解關於 Adobe Experience Manager (AEM) 內的 Headless，以及了解詳細文件和 Headless 歷程。 了解如何使用內容模式、內容片段和 GraphQL API 等功能來增強無周邊體驗。
+landing-page-description: 了解如何使用及管理 Adobe Experience Manager as a Cloud Service 內的 Headless。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 597bb3b92159c685d3692f11359e13f8642a0857
 workflow-type: tm+mt
 source-wordcount: '675'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service 是一種適用於無周邊實作模型的靈活工具，
    * AEM Assets REST API 支援內容片段 CRUD 作業。
    * 使用[內容片段核心元件的 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) 也可以直接傳遞內容。
 
-## 您的第一步 {#first-steps}
+## 您的開始步驟 {#first-steps}
 
 有多種資源可協助開始使用 AEM 的無周邊功能。每個指南都針對不同使用案例和對象量身打造。
 

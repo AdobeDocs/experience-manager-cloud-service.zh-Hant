@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 6464b90e607d3de87d103c744b8e7c0ba9ed2178
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 93%
 
 ## 建立一個模式 {#create-model}
 
-「內容片段模型」主控台會在新索引標籤中開啟。 將內容片段模型控制台想像為模型庫，您可在此建立新模型並管理現有模型。
+內容片段模式控制台會在新分頁中開啟。您可以將內容片段模式主控台視為模式庫，您可以在其中建立新模式和管理現有模式。
 
 1. 點選「**建立**」按鈕，即可開始建立一個內容片段模式。
 

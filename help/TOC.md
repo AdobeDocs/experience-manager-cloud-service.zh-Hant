@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: c37c1c3eca0ae9d457f422efdaf5e29be03e6014
 workflow-type: tm+mt
 source-wordcount: '4006'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -30,107 +30,107 @@ ht-degree: 94%
    + [調整 KPI](/help/overview/aligning-kpis.md)
    + [選擇合適的團隊](/help/overview/choose-right-team.md)
    + [文件歷程](/help/journey-documentation/documentation-journeys.md)
-+ 發行說明 {#release-notes}
++ 版本注意事項 {#release-notes}
    + [發行資訊](/help/release-notes/home.md)
-   + AEMaaCS功能發行說明 {#release-notes}
-      + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   + AEMaaCS 功能版本注意事項{#release-notes}
+      + [最新版本注意事項](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
-         + [2022.10.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
-         + [2022.8.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
-         + [2022.7.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
-         + [2022.6.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
-         + [2022.5.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
-         + [2022.4.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
-         + [2022.3.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
-         + [2022.1.0 版發行說明](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
+         + [2022.10.0 版版本注意事項](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
+         + [2022.8.0 版版本注意事項](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
+         + [2022.7.0 版版本注意事項](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
+         + [2022.6.0 版版本注意事項](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
+         + [2022.5.0 版版本注意事項](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
+         + [2022.4.0 版版本注意事項](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
+         + [2022.3.0 版版本注意事項](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
+         + [2022.1.0 版版本注意事項](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
-         + [2021.11.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
-         + [2021.10.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
-         + [2021.9.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
-         + [2021.8.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
-         + [2021.7.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-7-0.md)
-         + [2021.6.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-6-0.md)
-         + [2021.5.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-5-0.md)
-         + [2021.4.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)
-         + [2021.3.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
-         + [2021.2.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
-         + [2021.1.0 版發行說明](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
+         + [2021.11.0 版版本注意事項](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
+         + [2021.10.0 版版本注意事項](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
+         + [2021.9.0 版版本注意事項](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
+         + [2021.8.0 版版本注意事項](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
+         + [2021.7.0 版版本注意事項](/help/release-notes/release-notes-cloud/2021/release-notes-2021-7-0.md)
+         + [2021.6.0 版版本注意事項](/help/release-notes/release-notes-cloud/2021/release-notes-2021-6-0.md)
+         + [2021.5.0 版版本注意事項](/help/release-notes/release-notes-cloud/2021/release-notes-2021-5-0.md)
+         + [2021.4.0 版版本注意事項](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)
+         + [2021.3.0 版版本注意事項](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
+         + [2021.2.0 版版本注意事項](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
+         + [2021.1.0 版版本注意事項](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
       + 2020 {#2020}
-         + [2020.12.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
-         + [2020.11.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-11-0.md)
-         + [2020.10.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-10-0.md)
-         + [2020.9.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-9-0.md)
-         + [2020.8.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md)
-         + [2020.7.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-7-0.md)
-         + [2020.6.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-6-0.md)
-         + [2020.5.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-5-0.md)
-         + [2020.4.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
-         + [2020.3.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
-         + [2020.2.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-   + AEMaaCS維護髮行說明 {#maintenance}
-      + [最新維護髮行說明](/help/release-notes/maintenance/latest.md)
+         + [2020.12.0 版版本注意事項](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
+         + [2020.11.0 版版本注意事項](/help/release-notes/release-notes-cloud/2020/release-notes-2020-11-0.md)
+         + [2020.10.0 版版本注意事項](/help/release-notes/release-notes-cloud/2020/release-notes-2020-10-0.md)
+         + [2020.9.0 版版本注意事項](/help/release-notes/release-notes-cloud/2020/release-notes-2020-9-0.md)
+         + [2020.8.0 版版本注意事項](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md)
+         + [2020.7.0 版版本注意事項](/help/release-notes/release-notes-cloud/2020/release-notes-2020-7-0.md)
+         + [2020.6.0 版版本注意事項](/help/release-notes/release-notes-cloud/2020/release-notes-2020-6-0.md)
+         + [2020.5.0 版版本注意事項](/help/release-notes/release-notes-cloud/2020/release-notes-2020-5-0.md)
+         + [2020.4.0 版版本注意事項](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
+         + [2020.3.0 版版本注意事項](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
+         + [2020.2.0 版版本注意事項](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
+   + AEMaaCS 維護版本注意事項{#maintenance}
+      + [最新維護版本注意事項](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [2023.1.0的維護髮行說明](/help/release-notes/maintenance/2023/2023.1.0.md)
-   + Cloud Manager 發行說明 {#cloud-manager}
-      + [最新發行說明](/help/implementing/cloud-manager/release-notes/current.md)
+         + [2023.1.0 維護版本注意事項](/help/release-notes/maintenance/2023/2023.1.0.md)
+   + Cloud Manager 版本注意事項 {#cloud-manager}
+      + [最新版本注意事項](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
          + [2023.2.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
-         + [2023.1.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
+         + [2023.1.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
-         + [2022.12.0 版發行說明](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
-         + [2022.11.0 版發行說明](/help/implementing/cloud-manager/release-notes/2022/2022-11-0.md)
-         + [2022.10.0 版發行說明](/help/implementing/cloud-manager/release-notes/2022/2022-10-0.md)
-         + [2022.9.0 版發行說明](/help/implementing/cloud-manager/release-notes/2022/2022-9-0.md)
-         + [2022.8.0 版發行說明](/help/implementing/cloud-manager/release-notes/2022/2022-8-0.md)
-         + [2022.7.0 版發行說明](/help/implementing/cloud-manager/release-notes/2022/2022-7-0.md)
-         + [2022.6.0 版發行說明](/help/implementing/cloud-manager/release-notes/2022/2022-6-0.md)
-         + [2022.5.0 版發行說明](/help/implementing/cloud-manager/release-notes/2022/2022-5-0.md)
-         + [2022.4.0 版發行說明](/help/implementing/cloud-manager/release-notes/2022/2022-4-0.md)
-         + [2022.3.0 版發行說明](/help/implementing/cloud-manager/release-notes/2022/2022-3-0.md)
-         + [2022.2.0 版發行說明](/help/implementing/cloud-manager/release-notes/2022/2022-2-0.md)
-         + [2022.1.0 版發行說明](/help/implementing/cloud-manager/release-notes/2022/2022-1-0.md)
+         + [2022.12.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
+         + [2022.11.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2022/2022-11-0.md)
+         + [2022.10.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2022/2022-10-0.md)
+         + [2022.9.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2022/2022-9-0.md)
+         + [2022.8.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2022/2022-8-0.md)
+         + [2022.7.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2022/2022-7-0.md)
+         + [2022.6.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2022/2022-6-0.md)
+         + [2022.5.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2022/2022-5-0.md)
+         + [2022.4.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2022/2022-4-0.md)
+         + [2022.3.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2022/2022-3-0.md)
+         + [2022.2.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2022/2022-2-0.md)
+         + [2022.1.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2022/2022-1-0.md)
       + 2021 {#2021}
-         + [2021.12.0 版發行說明](/help/implementing/cloud-manager/release-notes/2021/2021-12-0.md)
-         + [2021.11.0 版發行說明](/help/implementing/cloud-manager/release-notes/2021/2021-11-0.md)
-         + [2021.10.0 版發行說明](/help/implementing/cloud-manager/release-notes/2021/2021-10-0.md)
-         + [2021.9.0 版發行說明](/help/implementing/cloud-manager/release-notes/2021/2021-9-0.md)
-         + [2021.8.0 版發行說明](/help/implementing/cloud-manager/release-notes/2021/2021-8-0.md)
-         + [2021.7.0 版發行說明](/help/implementing/cloud-manager/release-notes/2021/2021-7-0.md)
-         + [2021.6.0 版發行說明](/help/implementing/cloud-manager/release-notes/2021/2021-6-0.md)
-         + [2021.5.0 版發行說明](/help/implementing/cloud-manager/release-notes/2021/2021-5-0.md)
-         + [2021.4.0 版發行說明](/help/implementing/cloud-manager/release-notes/2021/2021-4-0.md)
-         + [2021.3.0 版發行說明](/help/implementing/cloud-manager/release-notes/2021/2021-3-0.md)
-         + [2021.2.0 版發行說明](/help/implementing/cloud-manager/release-notes/2021/2021-2-0.md)
-         + [2021.1.0 版發行說明](/help/implementing/cloud-manager/release-notes/2021/2021-1-0.md)
+         + [2021.12.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2021/2021-12-0.md)
+         + [2021.11.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2021/2021-11-0.md)
+         + [2021.10.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2021/2021-10-0.md)
+         + [2021.9.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2021/2021-9-0.md)
+         + [2021.8.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2021/2021-8-0.md)
+         + [2021.7.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2021/2021-7-0.md)
+         + [2021.6.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2021/2021-6-0.md)
+         + [2021.5.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2021/2021-5-0.md)
+         + [2021.4.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2021/2021-4-0.md)
+         + [2021.3.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2021/2021-3-0.md)
+         + [2021.2.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2021/2021-2-0.md)
+         + [2021.1.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2021/2021-1-0.md)
       + 2020 {#2020}
-         + [2020.12.0 版發行說明](/help/implementing/cloud-manager/release-notes/2020/2020-12-0.md)
-         + [2020.11.0 版發行說明](/help/implementing/cloud-manager/release-notes/2020/2020-11-0.md)
-         + [2020.10.0 版發行說明](/help/implementing/cloud-manager/release-notes/2020/2020-10-0.md)
-         + [2020.9.0 版發行說明](/help/implementing/cloud-manager/release-notes/2020/2020-9-0.md)
-         + [2020.8.0 版發行說明](/help/implementing/cloud-manager/release-notes/2020/2020-8-0.md)
-         + [2020.7.0 版發行說明](/help/implementing/cloud-manager/release-notes/2020/2020-7-0.md)
-         + [2020.6.0 版發行說明](/help/implementing/cloud-manager/release-notes/2020/2020-6-0.md)
-         + [2020.5.0 版發行說明](/help/implementing/cloud-manager/release-notes/2020/2020-5-0.md)
-         + [2020.4.0 版發行說明](/help/implementing/cloud-manager/release-notes/2020/2020-4-0.md)
-         + [2020.3.0 版發行說明](/help/implementing/cloud-manager/release-notes/2020/2020-3-0.md)
-         + [2020.2.0 版發行說明](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
-   + 移轉工具發行說明 {#migration-tools}
-      + [最新發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+         + [2020.12.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2020/2020-12-0.md)
+         + [2020.11.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2020/2020-11-0.md)
+         + [2020.10.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2020/2020-10-0.md)
+         + [2020.9.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2020/2020-9-0.md)
+         + [2020.8.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2020/2020-8-0.md)
+         + [2020.7.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2020/2020-7-0.md)
+         + [2020.6.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2020/2020-6-0.md)
+         + [2020.5.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2020/2020-5-0.md)
+         + [2020.4.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2020/2020-4-0.md)
+         + [2020.3.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2020/2020-3-0.md)
+         + [2020.2.0 版版本注意事項](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
+   + 移轉工具版本注意事項 {#migration-tools}
+      + [最新版本注意事項](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2022 {#2022}
-         + [2022.12.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
-         + [2022.9.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
-         + [2022.7.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
-         + [2022.5.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
-         + [2022.4.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
-         + [2022.3.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
-         + [2022.2.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
-         + [2022.1.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
+         + [2022.12.0 版版本注意事項](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
+         + [2022.9.0 版版本注意事項](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
+         + [2022.7.0 版版本注意事項](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
+         + [2022.5.0 版版本注意事項](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
+         + [2022.4.0 版版本注意事項](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
+         + [2022.3.0 版版本注意事項](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
+         + [2022.2.0 版版本注意事項](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+         + [2022.1.0 版版本注意事項](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 {#2021}
-         + [2021.12.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
-         + [2021.11.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
-         + [2021.10.0 版發行說明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Workfront for Experience Manager 加強連接器發行說明{#workfront}
-      + [Workfront for Experience Manager 加強連接器目前發行說明](/help/assets/release-notes-enhanced-connector-workfront.md)
+         + [2021.12.0 版版本注意事項](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
+         + [2021.11.0 版版本注意事項](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
+         + [2021.10.0 版版本注意事項](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
+   + Workfront for Experience Manager 加強連接器版本注意事項{#workfront}
+      + [Workfront for Experience Manager 加強連接器目前版本注意事項](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新增功能 ](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 的重大變更](/help/release-notes/aem-cloud-changes.md)
    + [已知問題](/help/release-notes/known-issues.md)
@@ -142,7 +142,7 @@ ht-degree: 94%
    + [為 AEM as a Cloud Service 設定進階網路](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service 安全性概觀](/help/security/cloud-service-security-overview.md)
    + [AEM as a Cloud Service 的 IMS 支援](/help/security/ims-support.md)
-   + [AEM as a Cloud Service 的同網站 Cookie 支援](/help/security/same-site-cookie-support.md)
+   + [AEM as a Cloud Service 的相同網站 Cookie 支援](/help/security/same-site-cookie-support.md)
    + [郵件服務的 OAuth2 支援](/help/security/oauth2-support-for-mail-service.md)
 + 入門 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -202,14 +202,14 @@ ht-degree: 94%
          + [內容轉移工具快速入門](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [驗證內容轉移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [處理大型內容存放庫](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [用戶映射和主體遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+         + [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [自來源擷取內容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [將內容內嵌至目標](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [檢視移轉集記錄](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [刪除移轉集](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [在發佈執行個體上執行內容轉移工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [內容轉移工具疑難排解](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + 舊版使用者對應工具（舊版）{#legacy-user-mapping-tool}
+         + 舊版使用者對應工具 (舊版){#legacy-user-mapping-tool}
             + [概觀](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [重要考量](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [使用使用者對應工具](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
@@ -233,7 +233,7 @@ ht-degree: 94%
       + [資產工作流程移轉](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher 轉換工具](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [AEM 現代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
-+ 網站 {#sites}
++ Sites {#sites}
    + [AEM Sites as a Cloud Service ](/help/sites-cloud/home.md)
    + [AEM Cloud Service 中 AEM Sites 的重大變更](/help/sites-cloud/sites-cloud-changes.md)
    + 製作 {#authoring}
@@ -265,7 +265,7 @@ ht-degree: 94%
          + [疑難排解](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
          + [鍵盤快速鍵](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
       + 製作功能 {#features}
-         + [頁面範本](/help/sites-cloud/authoring/features/templates.md)
+         + [頁面範例](/help/sites-cloud/authoring/features/templates.md)
          + [樣式系統](/help/sites-cloud/authoring/features/style-system.md)
          + [頁面版本](/help/sites-cloud/authoring/features/page-versions.md)
          + [頁面差異](/help/sites-cloud/authoring/features/page-diff.md)
@@ -321,12 +321,12 @@ ht-degree: 94%
          + [建立新網站](/help/sites-cloud/administering/site-creation/create-site.md)
          + [啟用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [使用網站滑軌](/help/sites-cloud/administering/site-creation/site-rail.md)
-         + [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)
+         + [網站範例](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)
          + AEM 快速網站建立歷程 {#quick-site}
             + [了解 AEM 快速網站建立](/help/journey-sites/quick-site/overview.md)
             + [了解 Cloud Manager](/help/journey-sites/quick-site/cloud-manager.md)
-            + [從範本建立網站](/help/journey-sites/quick-site/create-site.md)
+            + [從範例建立網站](/help/journey-sites/quick-site/create-site.md)
             + [設定您的管道](/help/journey-sites/quick-site/pipeline-setup.md)
             + [授予前端開發人員存取權](/help/journey-sites/quick-site/grant-access.md)
             + [擷取 git 存放庫存取資訊](/help/journey-sites/quick-site/retrieve-access.md)
@@ -344,7 +344,7 @@ ht-degree: 94%
             + [MSM 最佳實務](/help/sites-cloud/administering/msm/best-practices.md)
             + [疑難排解和常見問題 ](/help/sites-cloud/administering/msm/troubleshooting.md)
          + 轉換 {#translation}
-            + 網站翻譯歷程 {#sites}
+            + Sites 翻譯歷程 {#sites}
                + [了解 AEM 中的網站翻譯](/help/journey-sites/translation/overview.md)
                + [AEM Sites 翻譯快速入門](/help/journey-sites/translation/getting-started.md)
                + [了解網站內容以及如何在 AEM 中翻譯](/help/journey-sites/translation/learn-about.md)
@@ -503,7 +503,7 @@ ht-degree: 94%
       + [移除現有安裝的外部相依性](/help/assets/remove-external-dependencies.md)
       + [設定 [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-+ 表單 {#forms}
++ Forms {#forms}
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
       + [Adobe Experience Manager Forms頂尖創新](/help/forms/latest-innovations.md)
@@ -511,21 +511,21 @@ ht-degree: 94%
       + [架構](/help/forms/aem-forms-cloud-service-architecture.md)
       + [常見問題](/help/forms/faq.md)
       + [已知問題](/help/forms/known-issues.md)
-   + 設定和移轉 {#setup-configure-migrate}
+   + 設定和移轉{#setup-configure-migrate}
       + [Cloud Service 環境入門](/help/forms/setup-forms-cloud-service.md)
       + [設定本機開發環境](/help/forms/setup-local-development-environment.md)
       + [設定統一的儲存連接器](/help/forms/configure-unified-storage-connector.md)
-      + [從 [!DNL AEM 6.5 Forms] 或更早 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [從  [!DNL AEM 6.5 Forms]  或更早版本移轉至  [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
       + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
    + 整合 {#integrate}
       + 服務 {#services}
-         + [整合AEM Forms as a Cloud Service與Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-         + [將AEM Formsas a Cloud Service與DocuSign整合](/help/forms/integrate-docusign-adaptive-forms.md)
-         + [整合AEM Forms as a Cloud Service與Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+         + [將 AEM Forms as a Cloud Service 與 Adobe Sign 整合](/help/forms/adobe-sign-integration-adaptive-forms.md)
+         + [將 AEM Forms as a Cloud Service 與 DocuSign 整合](/help/forms/integrate-docusign-adaptive-forms.md)
+         + [將 AEM Forms as a Cloud Service 與 Adobe Analytics 整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [將調適型表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
-         + [將適用性Forms內嵌在AEM Sites頁面中](/help/forms/embed-adaptive-form-aem-sites.md)
-      + 表單資料模型 {#use-form-data-model}
+         + [在 AEM Sites 頁面中內嵌調適型表單](/help/forms/embed-adaptive-form-aem-sites.md)
+      + 表單資料模式 {#use-form-data-model}
          + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
          + [設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
@@ -535,21 +535,21 @@ ht-degree: 94%
          + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
    + 調適型表單 {#adaptive-forms-authoring}
-      + 編寫適用性Forms — 核心元件 {#authoring-adaptive-forms-core-components}
+      + 製作調適型表單 - 核心元件{#authoring-adaptive-forms-core-components}
          + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
             + [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
-            + [建立最適化表單的主題 — 核心元件](/help/forms/using-themes-in-core-components.md)
-            + [產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-core-components.md)
+            + [為調適型表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
+            + [為調適型表單產生記錄文件](/help/forms/generate-document-of-record-core-components.md)
             + [峰會活頁簿](/help/forms/summit-2023-workbook.md)
-      + 編寫最適化Forms - Foundation元件 {#authoring-adaptive-forms-foundation-components}
-         + 將PDF forms轉換為最適化Forms {#afcs}
+      + 製作調適型表單 - 基礎元件{#authoring-adaptive-forms-foundation-components}
+         + 將您的 PDF forms 轉換為調適型表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
             + [將現有 PDF 表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
             + [檢閱並修正轉換後的表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
          + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
             + [製作調適型表單簡介](/help/forms/introduction-forms-authoring.md)
             + [建立最適化表單](/help/forms/creating-adaptive-form.md)
-            + [建立範本](/help/forms/template-editor.md)
+            + [建立範例](/help/forms/template-editor.md)
             + [建立主題](/help/forms/themes.md)
             + [參照資產](/help/forms/reference-assets.md)
             + [為最適化表單設計 JSON 綱要](/help/forms/adaptive-form-json-schema-form-model.md)
@@ -559,7 +559,7 @@ ht-degree: 94%
             + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [套用手寫簽名](/help/forms/signing-forms-using-scribble.md)
             + [將表格新增至最適化表單](/help/forms/adaptive-forms-tables.md)
-            + [新增腳注支援至最適化表單](/help/forms/footnotes-richtextsupport.md)
+            + [將註解支援新增至調適型表單](/help/forms/footnotes-richtextsupport.md)
          + 設定版面並將樣式套用至最適化表單{#configure-layout-of-an-adaptive-form}
             + [設定最適化表單的版面](/help/forms/layout-capabilities-adaptive-forms.md)
             + [使用版面模式調整元件大小](/help/forms/resize-using-layout-mode.md)
@@ -576,30 +576,30 @@ ht-degree: 94%
             + [建立自訂提交動作](/help/forms/custom-submit-action-form.md)
          + [預填調適型表單欄位](/help/forms/prepopulate-adaptive-form-fields.md)
          + [產生記錄文件](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-         + [將對新地區設定的支援新增至最適化表單](/help/forms/supporting-new-language-localization.md)
+         + [將對新語言環境的支援新增至調適型表單](/help/forms/supporting-new-language-localization.md)
          + 新增或改進中繼資料{#manage-metadata}
             + [新增、移除或編輯最適化表單的中繼資料](/help/forms/manage-form-metadata.md)
             + [重複使用最適化表單的中繼資料屬性](/help/forms/reusing-adaptive-forms.md)
          + 改進最適化表單的協助工具功能{#accessible-adaptive-forms}
             + [建立無障礙的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
          + [設定表單入口網站](/help/forms/configure-forms-portal.md)
-         + [建立和管理審核](/help/forms/create-reviews-forms.md)
-   + Forms中心工作流程 {#create-form-centric-workflows}
+         + [建立和管理評論](/help/forms/create-reviews-forms.md)
+   + 以表單為中心的工作流程 {#create-form-centric-workflows}
       + [在工作流程中使用以 Forms 為中心的步驟 + 步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以 Forms 為中心的工作流程中使用變數](/help/forms/variable-in-aem-workflows.md)
       + [使用「外出」選項](/help/forms/configure-out-of-office-settings.md)
    + 通訊 API {#using-communications}
-      + [通訊API簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+      + [通訊 API 簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [通訊 API - 同步處理](/help/forms/aem-forms-cloud-service-communications.md)
       + [通訊 API - 批次處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [安裝及設定 Forms Designer](/help/forms/installing-configuring-designer.md)
-      + [使用Forms Designer建立範本](/help/forms/use-forms-designer.md)
+      + [使用 Forms Designer 建立範本](/help/forms/use-forms-designer.md)
       + [在 PDF 文件中使用自訂字型](/help/forms/use-custom-fonts.md)
       + [已知問題、最佳實務和常見問題集](/help/forms/communications-known-issues-limitations.md)
-   + 開發人員API參考 {#aem-forms-developer-api-reference}
-      + [AEM FormsCloud Service通訊API參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-      + [AEM FormsCloud ServiceJavaScript API參考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [AEM FormsCloud ServiceJava API參考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+   + 開發人員 API 參考 {#aem-forms-developer-api-reference}
+      + [AEM Forms as a Cloud Service 通訊 API 參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [AEM Forms as a Cloud Service JavaScript API 參考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [AEM Forms as a Cloud Service Java API 參考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
    + 疑難排解 {#troubleshooting-aem-forms-cloud-service}
       + [安裝和設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 和 CDN 快取](/help/forms/troubleshooting-caching-performance.md)
@@ -646,7 +646,7 @@ ht-degree: 94%
       + 內容作者歷程 {#author}
          + [AEM Content and Commerce 內容作者歷程](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
          + [CIF 製作快速入門](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
-         + [管理產品目錄頁面和範本](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+         + [管理產品目錄頁面和範例](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
          + [建立分階段產品目錄體驗](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
          + [建立產品體驗](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + 整合 {#integrations}
@@ -658,7 +658,7 @@ ht-degree: 94%
       + 製作 {#authoring}
          + [Commerce 體驗](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
          + [產品駕駛艙](/help/commerce-cloud/authoring/product-cockpit.md)
-         + [多範本使用](/help/commerce-cloud/authoring/multi-template-usage.md)
+         + [多範例使用](/help/commerce-cloud/authoring/multi-template-usage.md)
          + [利用相關聯內容豐富產品資料](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
          + [產品推薦](/help/commerce-cloud/authoring/product-recommendations.md)
       + 管理 {#administering}
@@ -704,8 +704,8 @@ ht-degree: 94%
       + [管理 GraphQL 端點](/help/headless/graphql-api/graphql-endpoint.md)
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
       + [持續性 GraphQL 查詢](/help/headless/graphql-api/persisted-queries.md)
-      + [最佳化GraphQL查詢](/help/headless/graphql-api/graphql-optimization.md)
-      + [更新內容片段以最佳化GraphQL篩選](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+      + [最佳化 GraphQL 查詢](/help/headless/graphql-api/graphql-optimization.md)
+      + [更新您的內容片段，以達到最佳化 GraphQL 篩選](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [範例 GraphQL 查詢](/help/headless/graphql-api/sample-queries.md)
    + [內容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
    + 安全性 {#security}
@@ -822,7 +822,7 @@ ht-degree: 94%
       + [為伺服器端 API 產生存取權杖 (舊版)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [快速網站建立和前端自訂](/help/implementing/developing/introduction/quick-site-creation.md)
       + [使用前端管道開發 Sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
-      + [自訂網站範本和主題](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
+      + [自訂網站範例和主題](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)
       + 全堆疊 AEM 開發 {#full-stack}
          + [開發 AEM Sites 快速入門 - WKND 教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
@@ -835,9 +835,9 @@ ht-degree: 94%
          + [頁面差異](/help/implementing/developing/introduction/page-diff.md)
          + [編輯器限制](/help/implementing/developing/introduction/editor-limitations.md)
          + [命名慣例](/help/implementing/developing/introduction/naming-conventions.md)
-         + 元件和範本 {#components-templates}
+         + 元件和範例 {#components-templates}
             + [元件概觀](/help/implementing/developing/components/overview.md)
-            + [範本](/help/implementing/developing/components/templates.md)
+            + [範例](/help/implementing/developing/components/templates.md)
             + [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [樣式系統](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
             + [內容服務的 JSON 匯出工具](/help/implementing/developing/components/json-exporter.md)

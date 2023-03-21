@@ -5,7 +5,7 @@ exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: c8bfeda015962d3f327057a375b4edd3d80c6316
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Audit 由 Google Lighthouse 提供技術支援，Lighthouse 是 Googl
 
 >[!TIP]
 >
->您可以設定體驗稽核包含哪些頁面，當您 [設定管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>當您[設定您的管道時，您可以設定要將哪些頁面包含在體驗稽核中。](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 
 ## 了解體驗稽核結果 {#understanding-experience-audit-results}
 

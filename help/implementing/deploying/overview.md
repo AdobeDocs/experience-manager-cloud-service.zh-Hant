@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 0d586bf7e9ad6653f9a45c2fe9f0f8a156de5133
 workflow-type: tm+mt
 source-wordcount: '3497'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 ## 簡介 {#introduction}
 
-與 AEM On Premise 和 Managed Services 解決方案相比，AEM as a Cloud Service 的程式碼開發基礎相似。開發人員編寫程式碼並在本機進行測試，然後將程式碼推送到遠端 AEM as a Cloud Service 環境。需要有 Cloud Manager，這是 Managed Services 的選用內容傳遞工具。這現在是將程式碼部署至AEMas a Cloud Service開發、預備和生產環境的唯一機制。 為了在部署上述環境之前快速進行功能驗證和除錯，可將程式碼從本機環境同步至 [快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md).
+與 AEM On Premise 和 Managed Services 解決方案相比，AEM as a Cloud Service 的程式碼開發基礎相似。開發人員編寫程式碼並在本機進行測試，然後將程式碼推送到遠端 AEM as a Cloud Service 環境。需要有 Cloud Manager，這是 Managed Services 的選用內容傳遞工具。現在，這是將程式碼部署到 AEM as a Cloud Service 環境、階段和生產環境的唯一機制。為了在部署上述環境之前進行快速功能驗證和除錯，可以將程式碼從本機環境同步到[快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md)。
 
 [AEM 版本](/help/implementing/deploying/aem-version-updates.md) 的更新始終是獨立於推送[自訂程式碼](#customer-releases) 的部署事件。從另一個角度來看，自訂程式碼版本應該針對 AEM 生產版本進行測試，因為它將部署在頂端。之後發生的 AEM 版本更新會很頻繁並自動套用。它們旨在可回溯相容於已部署的客戶程式碼。
 
@@ -80,7 +80,7 @@ ht-degree: 92%
 
 ## 可變內容 {#mutable-content}
 
-在某些情況下，在原始檔碼管理中準備內容變更可能很有用，如此在環境更新時 Cloud Manager 就可以部署。例如，合理的做法可以是植入特定根資料夾結構或排列可編輯範本中的變更，以為應用程式部署作業所更新的元件啟用政策。
+在某些情況下，在原始檔碼管理中準備內容變更可能很有用，如此在環境更新時 Cloud Manager 就可以部署。例如，合理的做法可以是植入特定根資料夾結構或排列可編輯範例中的變更，以為應用程式部署作業所更新的元件啟用政策。
 
 有兩種策略可用來描述 Cloud Manager 部署到可變存放庫的內容、可變內容套件和 repoinit 陳述式。
 
@@ -102,8 +102,8 @@ ht-degree: 92%
 
 * 可透過 jackrabbit 保存庫定義的所有其他內容。例如：
    * 資料夾 (新增、修改、移除)
-   * 可編輯的範本 (新增、修改、移除)
-   * 上下文感知設定 (`/conf` 下的任何內容) (新增、修改、移除)
+   * 可編輯的範例 (新增、修改、移除)
+   * 內容感知設定 (`/conf` 下的任何內容) (新增、修改、移除)
    * 指令碼 (可以在套件安裝流程的各個階段觸發安裝 Hook。<!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. -->請注意，AEM CS 目前使用 Filevault 版本 3.4.0，它將安裝 Hook 限制為管理員使用者、系統使用者和管理員群組的成員))。
 
 透過在 `/apps`下的 install.author 或 install.publish 資料夾中嵌入套件，可以將可變內容安裝限制在作者或發佈。在 AEM 6.5 中進行了重組以反映這種分離，有關建議的專案重組的詳細資料位在 [AEM 6.5 文件。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
@@ -170,7 +170,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="套件管理員 - 移轉可變內容套件"
->abstract="探索套件管理器的使用案例，了解內容套件應安裝為「一次性」，其中包括將特定內容從生產匯入測試環境，以偵錯生產問題、將小型內容套件從內部部署環境傳輸至AEM雲端環境等。"
+>abstract="探索套件管理員在這些使用案例的使用情況：內容套件應安裝為「一次性」，包括將特定內容從生產環境匯入至預備環境以偵錯生產問題，將小型內容套件從內部部署環境轉移至 AEM 雲端環境等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hant#cloud-migration" text="內容轉移工具"
 
 在某些使用案例中，內容套件應做為「一次性」安裝。例如，將特定內容從生產環境匯入至預備環境以偵錯生產問題。對於這些情況，[套件管理員](/help/implementing/developing/tools/package-manager.md) 可以用在 AEM as a Cloud Service 環境。
@@ -279,38 +279,38 @@ above appears to be internal, to confirm with Brian -->
 
 如果部署後有回報或偵測到故障，則可能需要回復到藍色版本。明智的做法是確保藍色程式碼相容於任何綠色版本建立的新結構，因為新結構 (任何可變內容) 將不會回復。如果舊程式碼不相容，則需要在後續的客戶版本中套用修復。
 
-## 快速開發環境(RDE) {#rde}
+## 快速開發環境 (RED) {#rde}
 
-[快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md) （或簡稱RDE）可讓開發人員快速部署和檢閱變更，將測試已證實可在本機開發環境中運作的功能所需的時間減到最少。
+[快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md) (或簡稱 RDE) 允許開發人員快速部署和查看變動情形，可中大幅減少測試已證明可在本機開發環境中執行功能所需的時間。
 
-與透過Cloud Manager管道部署程式碼的一般開發環境不同，開發人員使用命令列工具將程式碼從本機開發環境同步至RDE。 在RDE中成功測試變更後，應透過Cloud Manager管道將變更部署至一般雲端開發環境，將程式碼置於適當的品質入口。
+與通過 Cloud Manager 管道部署程式碼的一般開發環境不同，開發人員會使用命令行工具將程式碼從本機開發環境同步到 RDE。一旦在 RDE 中成功測試變動內容，這些變動應該透過 Cloud Manager 管道部署到一般雲端開發環境，這將使程式碼能通過適當的品質關卡。
 
 ## 執行模式 {#runmodes}
 
-在現有的 AEM 解決方案中，客戶可以選擇以任意執行模式來使執行個體運作，並在這些特定執行個體套用 OSGI 設定或安裝 OSGI 套裝。定義的執行模式通常包括 *服務* （製作和發佈）與環境(rde、dev、stage、prod)。
+在現有的 AEM 解決方案中，客戶可以選擇以任意執行模式來使執行個體運作，並在這些特定執行個體套用 OSGI 設定或安裝 OSGI 套裝。定義的執行模式通常包括&#x200B;*服務* (作者和發佈) 與環境 (快速開發環境、開發、預備、生產)。
 
 另一方面，AEM as a Cloud Service 對於哪些執行模式可用，以及如何將 OSGI 套裝和 OSGI 設定對應到它們更有自己的做法：
 
-* OSGI配置運行模式必須參考RDE、dev、stage、prod for the environment或author, publish for the service。 支援 `<service>.<environment_type>` 的組合，但必須按此特定順序 (例如 `author.dev` 或 `publish.prod`) 使用。應直接從程式碼中參考 OSGI 權杖，而不是使用 `getRunModes` 方法，後者在執行階段將不再包含 `environment_type`。有關詳細資訊，請參閱[為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md)。
+* OSGI 設定執行模式必須參照快速開發環境、開發、預備、生產環境，或作者、發佈服務。支援 `<service>.<environment_type>` 的組合，但必須按此特定順序 (例如 `author.dev` 或 `publish.prod`) 使用。應直接從程式碼中參考 OSGI 權杖，而不是使用 `getRunModes` 方法，後者在執行階段將不再包含 `environment_type`。有關詳細資訊，請參閱[為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md)。
 * OSGI 套裝執行模式限制在服務 (作者、發佈)。預執行模式 OSGI 套裝應安裝在 `install/author` 或 `install/publish` 下的內容套件中。
 
 如同現有的 AEM 解決方案，無法使用執行模式僅為特定環境或服務安裝內容。如果希望植入開發環境，其中內含未在預備或生產狀態的資料或 HTML，則可以使用套件管理員。
 
 支援的執行模式設定：
 
-* **設定** (*預設值會套用至所有AEM服務*)
+* **config** (*預設值，套用到所有 AEM 服務*)
 * **config.author** (*套用到所有 AEM Author 服務*)
 * **config.author.dev** (*套用到 AEM Dev Author 服務*)
-* **config.author.rde** (*套用至AEM RDE Author服務*)
+* **config.author.rde** (*套用到所有 AEM RDE Author 服務*)
 * **config.author.stage** (*套用到 AEM Staging Author 服務*)
 * **config.author.prod** (*套用到 AEM Production Author 服務*)
 * **config.publish** (*套用到 AEM Publish 服務*)
 * **config.publish.dev** (*套用到 AEM Dev Publish 服務*)
-* **config.publish.rde** (*套用至AEM RDE Publish服務*)
+* **config.publish.rde** (*套用到 AEM RDE Publish 服務*)
 * **config.publish.stage** (*套用到 AEM Staging Publish 服務*)
 * **config.publish.prod** (*套用到 AEM Production Publish 服務*)
 * **config.dev** (*套用到 AEM Dev 服務*)
-* **config.rde** (*適用於RDE服務*)
+* **config.rde** (*套用到 RDE 服務*)
 * **config.stage** (*套用到 AEM Staging 服務*)
 * **config.prod** (*套用到 AEM Production 服務*)
 

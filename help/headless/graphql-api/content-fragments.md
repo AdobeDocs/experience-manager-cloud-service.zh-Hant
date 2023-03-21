@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: cda6d7e382b090fd726b27e565da08c8b1c80008
 workflow-type: tm+mt
 source-wordcount: '4203'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -558,7 +558,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 >[!NOTE]
 >
->為獲得最佳效能，請考慮 [在GraphQL篩選中更新內容片段以進行分頁和排序](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>為獲得最佳效能，請考慮[更新內容片段以便在 GraphQL 篩選中進行分頁和排序](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)。
 
 此功能允許您根據指定的欄位來排序查詢結果。
 
@@ -625,7 +625,7 @@ query {
 
 >[!NOTE]
 >
->為獲得最佳效能，請考慮 [在GraphQL篩選中更新內容片段以進行分頁和排序](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>為獲得最佳效能，請考慮[更新內容片段以便在 GraphQL 篩選中進行分頁和排序](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)。
 
 此功能可讓您對傳回清單的查詢類型執行分頁。提供兩種方法：
 

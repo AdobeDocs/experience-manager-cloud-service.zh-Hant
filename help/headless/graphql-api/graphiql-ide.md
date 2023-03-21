@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 68b16052bd050d881e82be4ef57b9623f6021a89
 workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -102,9 +102,9 @@ GraphiQL IDE 也可讓您管理[查詢變數](/help/headless/graphql-api/content
 
 >[!NOTE]
 >
->Dispatcher上的自訂重寫規則可能會覆寫AEM發佈的預設值。
+>Dispatcher 上的自訂重寫規則可能會覆蓋 AEM 發佈的預設值。
 >
->如果您根據位置比對模式，從Dispatcher傳送TTL型快取控制標題，則如有需要，您可能會想要排除 `/graphql/execute.json/*` 從火柴中。
+>如果您根據位置匹配模式從 Dispatcher 發送以 TTL 為主的快取控制標題，那麼，如有必要，您可能希望從匹配中排除 `/graphql/execute.json/*`。
 
 使用 GraphQL，您可以設定 HTTP 快取標頭來控制您個人持續性查詢的這些參數。
 

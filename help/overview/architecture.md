@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '1797'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 的架構有所變更。
 
 AEM as a Cloud Service 現已具備：
 
-* AEM 映像數量可變的動態架構。
+* AEM 影像數量可變的動態架構。
 
 ![動態架構](assets/concepts-01.png "動態架構")
 
@@ -79,7 +79,7 @@ AEM as a Cloud Service 提供三種類型的環境：
 
    如需詳細資訊，請參閱[管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant#using-cloud-manager)。
 
-* **快速開發環境**:允許快速開發迭代，以偵錯新程式碼或現有程式碼。
+* **快速開發環境**：允許快速開發疊代進行全新或現有程式碼的除錯。
 
 ## 方案 {#programs}
 
@@ -90,9 +90,9 @@ AEM 方案是包含下列項目的容器：
 |  方案元素 |  數字 |
 |--- |--- |
 | 程式碼存放庫 (Git) |  1 |
-| 基準映像 (Sites 或 Assets) |  1 |
+| 基準影像 (Sites 或 Assets) |  1 |
 | 預備和生產環境集 (1:1) | 0 或 1 |
-| 非生產環境（RDE、開發或示範） | 0 到 N |
+| 非生產環境 (快速開發環境、開發或展示) | 0 到 N |
 | 各環境相關管道 | 0 或 1 |
 
 AEM as a Cloud Service 最初提供兩種類型的方案：
@@ -159,7 +159,7 @@ AEM as a Cloud Service 最初提供兩種類型的方案：
 
 Cloud Manager 會管理 AEM as a Cloud Service 執行個體的所有更新。這屬於強制性質的管理作業，是建立、測試及部署客戶應用程式的唯一方式，作者、預覽及發佈層級均可適用。AEM 雲端服務發佈最新版本時，Adobe 便會觸發這些更新作業，或是當客戶的應用程式推出最新版本時，由客戶觸發。
 
-技術上來說，這是基於部署管道，與方案中各環境配合之下的實作結果。Cloud Manager 管道運作時，會針對作者、預覽及發佈層級建立客戶應用程式的最新版本。這主要是透過結合最新客戶套件和最新基準 Adobe 映像來達成。成功建立並測試新映像後，Cloud Manager 會採取滾動式更新模式，更新所有服務節點，使移轉至最新映像版本的作業全面自動化。因此，製作或發佈服務時不會產生任何停機時間。
+技術上來說，這是基於部署管道，與方案中各環境配合之下的實作結果。Cloud Manager 管道運作時，會針對作者、預覽及發佈層級建立客戶應用程式的最新版本。這主要是透過結合最新客戶套件和最新基準 Adobe 影像來達成。成功建立並測試新影像後，Cloud Manager 會採取滾動式更新模式，更新所有服務節點，使移轉至最新影像版本的作業全面自動化。因此，製作或發佈服務時不會產生任何停機時間。
 
 <!--- needs reworking -->
 
@@ -189,4 +189,4 @@ AEM as a Cloud Service 現在主要使用 [Sling 內容分送](https://sling.apa
 
 * 導入 Golden Master 概念，實現發佈節點生命週期自動化。Golden Master 是專門的發佈節點，所有一般使用者都無法存取，且系統會從中建立發佈服務的所有節點。維護操作 (例如壓縮) 會在附加至 Golden Master 的內容存放庫中執行。這些發佈節點每天都會回收，不需任何例行維護。過去，這類維護工作會產生些許停機時間，尤其是處理製作執行個體時，更為顯著。
 
-* 該架構將應用程式內容與應用程式的程式碼和設定完全分離。所有程式碼和設定實際上都不可改變，且會製作成基準映像，據以建立製作及發佈服務的各種節點。因此，每個節點都保證相同，只有執行 Cloud Manager 管道，才能對程式碼和設定執行全域變更。
+* 該架構將應用程式內容與應用程式的程式碼和設定完全分離。所有程式碼和設定實際上都不可改變，且會製作成基準影像，據以建立製作及發佈服務的各種節點。因此，每個節點都保證相同，只有執行 Cloud Manager 管道，才能對程式碼和設定執行全域變更。

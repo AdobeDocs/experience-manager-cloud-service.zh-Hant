@@ -1,24 +1,24 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前版本注意事項。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前版本注意事項。'
 mini-toc-levels: 1
 source-git-commit: ffc3ba84630fe85d2b7e5a1f55aa71a2d978991c
 workflow-type: tm+mt
 source-wordcount: '1032'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 目前發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 目前版本注意事項 {#release-notes}
 
-以下章節概述目前（最新）版本的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能版本注意事項。
 
 >[!NOTE]
 >
->從這裡，您可以瀏覽至舊版的發行說明；例如，2021、2022 等版本。
+>從這裡，您可以瀏覽至舊版的版本注意事項；例如，2021、2022 等版本。
 >
->查看 [Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant) 若要了解 [!DNL Experience Manager] as a Cloud Service。
+>查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
 
 >[!NOTE]
 >
@@ -26,56 +26,56 @@ ht-degree: 19%
 
 ## 發行日期 {#release-date}
 
-發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前的功能版本(2023.1.0)為2023年2月9日。 下一個功能版本(2023.2.0)預計於2023年3月30日推出。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.1.0) 的發行日期是 2023 年 2 月 9 日。 下一個功能版本 (2023.2.0) 計畫於 2023 年 3 月 30 日發行。
 
 ## 發行影片 {#release-video}
 
-請觀看2023年1月版本概述影片，以取得2023.1.0版本中新增功能的摘要：
+請觀看 2023 年 1 月發行概觀影片，了解 2023.1.0 版本新增功能摘要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413479/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites] 中的新功能 預發行 {#prerelease-features-sites}
+### [!DNL Sites] 中的新功能 預先發佈 {#prerelease-features-sites}
 
-* AEM GraphQL內容傳送API現在支援GraphQL [分頁](/help/headless/graphql-api/content-fragments.md#paging) 和 [排序](/help/headless/graphql-api/content-fragments.md#sorting)，讓擷取和轉譯大型內容集更有效率。 GraphQL分頁可透過在子集中傳回結果，而非一次傳回所有結果，來改善查詢回應時間。 GraphQL排序可讓用戶端應用程式以所需順序排列內容集，更輕鬆處理內容。  AEM GraphQL引擎中的混合篩選可進一步改善查詢回應時間。 現在會從JCR讀取與查詢篩選器對應之較小集的內容。
+* AEM GraphQL 內容傳遞 API 現在支援 GraphQL [分頁](/help/headless/graphql-api/content-fragments.md#paging)和[排序](/help/headless/graphql-api/content-fragments.md#sorting)，以提高擷取和呈現大型內容集的效率。GraphQL 分頁允許以子集傳回結果而非一次全部傳回來縮短查詢回應時間。GraphQL 排序允許按所需順序放置內容集，進而讓使用戶端應用程式更容易處理內容。AEM GraphQL 引擎中的混合篩選可進一步改進查詢回應時間。現在以與查詢篩選器相對應的較小集合的形式從 JCR 讀取內容。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* 「資產報表」現在包含管理員 [產生資產下載報表](/help/assets/asset-reports.md) 從Experience Manager Assetsas a Cloud Service部署。 此資料可讓管理員從關鍵成功量度中獲得深入分析，以衡量企業內和客戶對資產的採用程度。
+* 資產報告現在可讓管理員從 Experience Manager Assets as a Cloud Service 部署[產生資產下載報告](/help/assets/asset-reports.md)。此資料可進一步讓管理員從關鍵成功量度取得深入見解，以衡量企業內和客戶對資產的採用程度。
 
    ![其他格式的 PDF 轉譯](/help/release-notes/assets/choose_report.png)
 
 * 除了在連接到 Azure Blob 儲存體資料來源以使用大量匯入工具擷取資產時支援用於驗證的存取金鑰之外，Experience Manager Assets 現在還[支援 SAS 權杖](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-* 改善Asset compute中CMYK影像的管理，讓您為CMYK影像產生智慧型裁切和智慧標籤。
+* 改進 Asset Compute 中 CMYK 影像的管理，可讓您為 CMYK 影像產生智慧型裁切和智慧型標記。
 
 ### [!DNL Assets] 發行前版本的新功能 {#prerelease-features-assets}
 
-* Experience Manager Assets現在支援 [從Google雲端平台大規模擷取資產](/help/assets/add-assets.md#asset-bulk-ingestor) 使用「批量導入」工具。
+* Experience Manager 資產現在支援使用大量匯入工具[從 Google Cloud Platform 大規模擷取資產](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 中可用的新功能 {#new-features-available-in-channel}
 
-* **[生成非互動式PDF文檔和可打印輸出的工作流步驟](/help/forms/aem-forms-workflow-step-reference.md)**:使用AEM Workflow步驟，自動建立非互動式PDF文檔並輸出可打印的業務流程，從而簡化文檔生成流程並節省時間。
-* **[使用腳注在適用性Forms中提供引證或額外資訊](/help/forms/footnotes-richtextsupport.md)**:在最適化表單中使用腳注，以顯示如何完成或使用表單的資訊。 您也可以用它來提供括弧資訊、版權權限和其他實用資訊。
+* **[可產生非互動式 PDF 文件和可列印輸出的工作流程步驟](/help/forms/aem-forms-workflow-step-reference.md)**：使用 AEM 工作流程步驟，將業務流程的非互動式 PDF 文件和可列印輸出建立工作自動化，簡化您文件產生程序並節省時間。
+* **[使用腳註在調適型表單中提供引述或額外資訊](/help/forms/footnotes-richtextsupport.md)**：在調適型表單中使用腳註來顯示有關如何完成或使用表單的資訊。您還可以使用它來提供附加資訊、版權許可和其他有用的資訊。
 
 ### [!DNL Forms] 發行前版本的新功能 {#prerelease-features-forms}
 
-* **[使用資料擷取核心元件來建立最適化Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [使用適用性Forms編輯器](/help/forms/creating-adaptive-form-core-components.md) 根據標準化資料擷取元件（核心元件）建立表單。 這些元件可提供自訂功能、縮短開發時間，並降低數位註冊體驗的維護成本。
-* **[基於樣式核心元件的前端管道支援自適應Forms](/help/forms/using-themes-in-core-components.md)**:透過前端部署管道部署核心元件的適用性Forms，運用可輕鬆自訂的BEM型主題，增強表單的外觀和風格。
-* **[產生核心元件適用性Forms的記錄檔案](/help/forms/generate-document-of-record-core-components.md)**:在提交以供長期存檔、打印或文檔格式使用時，為核心元件建立基於最適化表單的記錄。
+* **[使用資料擷取核心元件以建置調適型表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**：[使用調適型表單編輯器](/help/forms/creating-adaptive-form-core-components.md)根據標準化的資料擷取元件 (核心元件) 建立表單。這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。
+* **[前端管道支援設計以核心元件為基礎之調適型表單的樣式](/help/forms/using-themes-in-core-components.md)**：通過使用前端部署管道部署，為以核心元件為基礎之調適型表單使用易於自訂的 BEM 型主題，以增強表單的外觀和風格。
+* **[為以核心元件為基礎之調適型表單產產生記錄文件](/help/forms/generate-document-of-record-core-components.md)**：為以核心元件為基礎之調適型表單建立記錄，以提交供長期封存，採列印或文件格式。
 
 ![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **[將適用性Forms提交至Microsoft SharePoint和Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**:透過直接將適用性表單資料傳送至Microsoft SharePoint和Microsoft OneDrive的功能，簡化資料提交作業。 您可以提交結構型和無結構型資料。 這些提交操作除了現有的提交操作之外。
-* **[以「儲存最適化表單為範本」功能有效建立表單](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**:將最適化表單儲存為範本，並重複使用下一個最適化表單的範本，以簡化您的表單建立流程。
-* **[將AEM Forms連接到JDBC支援的資料庫](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**:輕鬆將您的AEM Forms資料模型連接到支援JDBC的資料庫，讓您能夠無縫地讀寫資料。
-* **[使用Open API 3.0與REST端點整合](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**:將AEM Formsas a Cloud Service表單資料模型連線至支援Open API規格3.0版的REST端點，讓您輕鬆傳送和接收資料。
-* **[共用最適化表單以供審核](/help/forms/create-reviews-forms.md)**:使用適用性Forms審核機制，允許一或多位審核者審核表單。
+* **[將調適型表單提交到 Microsoft SharePoint 和 Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**：簡化資料提交作業，能夠將調適型表單直接傳送到 Microsoft SharePoint 和 Microsoft OneDrive。您可以提交具結構描述的資料和無結構描述的資料。這些提交動作是對已經可用的提交動作的補充。
+* **[使用將調適型表單另存為模板功能來提升表單建置效率](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**：將調適型表單另存為模板，並在建置下一個調適型表單時重複使用模板，藉此簡化表單建置程序。
+* **[連接 AEM Forms 到支援 JDBC 的資料庫](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**：輕鬆將 AEM Forms 資料模式連接到支援 JDBC 的資料庫，讓您順暢讀寫資料。
+* **[使用 Open API 3.0 與 REST 端點相整合](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**：將 AEM Forms as a Cloud Service 表單資料模式連接到支援 Open API 規格版格 3.0 的 REST 端點，讓您輕鬆傳送和接收資料。
+* **[共用調適型表單以供審閱](/help/forms/create-reviews-forms.md)**：使用調適型表單審閱機制讓一個或多個審核者審閱表單。
 
 
 ## CIF 附加元件 {#cloud-services-cif}
@@ -91,29 +91,29 @@ ht-degree: 19%
 
 ### 新增功能 {#what-is-new-foundation}
 
-* [快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE可讓開發人員快速疑難排解問題，並在AEM as a Cloud Service上部署新功能。
+* [快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE 可讓開發人員可以快速解決問題並在 AEM as a Cloud Service 部署新功能。
 
-   快速開發環境是新類型的雲端環境，旨在以快速、一致且可擴充的方式驗證本機運作的程式碼，且可在雲端中正常運作。 使用命令列工具，快速將內容套件、套件組合、內容檔案、OSGI設定或Dispatcher設定「同步」至RDE。 請觀看以下影片中的動作：
+   快速開發環境是一種新型雲端環境，用於以快速、一致和可擴展的方式來驗證在本機運作的程式碼在雲端是否也能正常運作。使用命令列工具，可以快速將內容套件、套件組合、內容檔案、OSGI 設定或 Dispatcher 設定同步到 RDE。在下面的視訊中看到這個動作：
 
    >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-   在RDE中成功驗證程式碼後，建議您先部署至雲端開發環境以執行Cloud Manager品質閘門，再透過生產管道部署至預備和生產環境。
+   在 RDE 中成功驗證代碼後，鼓勵部署到雲端開發環境以執行 Cloud Manager 品質關卡，然後再透過生產管道部署到階段和生產環境。
 
-   每個程式都包括一個RDE，並可選擇地許可更多。
+   每個程序包括一個 RDE，並且可以選擇授權更多。
 
    >[!NOTE]
    >
-   >RDE將在未來幾週逐步推出；您可以發送電子郵件至aemcs-rde-support@adobe.com以跳到最前面。
+   >RDE 將在接下來幾週內逐步推出；您可以發送電子郵件至 aemcs-rde-support@adobe.com 以跳到該行的前面。
 
-* [延伸支援伺服器端API存取權杖](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)  — 您現在可以產生多個憑證，這對API具有不同特性的情況非常有用。 現在也可以以自助方式撤銷證書。
+* [擴展對伺服器端 API 存取代號的支援](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) – 您現在可以產生多個憑證，這有助於 API 具有不同特性的使用案例。現在也能以自助式方式撤銷憑證。
 
-## 維護髮行說明 {#maintenance}
+## 維護版本注意事項 {#maintenance}
 
-您可以找到最新的維護髮行說明 [此處](/help/release-notes/maintenance/latest.md).
+您可以在[此處](/help/release-notes/maintenance/latest.md)找到最新的維護版本注意事項。
 
 ## Cloud Manager {#cloud-manager}
 
-您可以找到Cloud Manager每月發行的完整清單 [這裡。](/help/implementing/cloud-manager/release-notes/current.md)
+您可以在[這裡](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
 
 ## 移轉工具 {#migration-tools}
 

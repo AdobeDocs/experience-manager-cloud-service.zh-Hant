@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: a2507c65df5d42ac53fcbb0a81cc2fb897438f44
 workflow-type: tm+mt
 source-wordcount: '2147'
-ht-degree: 55%
+ht-degree: 98%
 
 ---
 
@@ -21,60 +21,60 @@ ht-degree: 55%
 
 ## 概觀 {#custom-ui-testing}
 
-AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)整合套件，以確保自訂應用程序順利更新。尤其是，IT測試閘道已支援使用AEM API建立和自動化自訂測試。
+AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)整合套件，以確保自訂應用程序順利更新。尤其是 IT 測試門已經支援使用 AEM API 建立和自動化自訂測試。
 
-UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。此外，使用 [AEM專案原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)
+UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。此外，可以透過使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)輕鬆產生 UI 測試專案。
 
 UI測試會在每個Cloud Manager管道(具有 [**自訂UI測試** 步驟](/help/implementing/cloud-manager/deploy-code.md) in [生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 或 [非生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)包括回歸和新功能在內的任何 UI 測試都可以檢測和報告錯誤。
 
-與使用 Java 編寫的 HTTP 測試的自訂功能測試不同，UI 測試可以是 Docker 映像，其中包含以任何語言編寫的測試，只要它們遵循本節中定義的約定[構建 UI 測試。](#building-ui-tests)
+與使用 Java 編寫的 HTTP 測試的自訂功能測試不同，UI 測試可以是 Docker 影像，其中包含以任何語言編寫的測試，只要它們遵循本節中定義的約定[構建 UI 測試。](#building-ui-tests)
 
 >[!TIP]
 >
 >Adobe 建議遵循本文件中提供的結構和語言（JavaScript 和 WDIO）[ AEM Project 原型。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)
 >
->Adobe還提供了基於Java和WebDriver的UI測試模組示例。 請參閱 [AEM測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver) 以取得詳細資訊。
+>Adobe 還提供了一個以 Java 和 WebDriver 為主的 UI 測試模組範例。 如需更多詳細資訊，請參閱 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)。
 
-## 開始使用UI測試 {#get-started-ui-tests}
+## 開始使用 UI 測試 {#get-started-ui-tests}
 
-本節說明在Cloud Manager中設定執行UI測試所需執行的步驟。
+本節旨在說明設定 UI 測試以便在 Cloud Manager 中執行所需的步驟。
 
-1. 決定您要使用的程式設計語言。
+1. 確定您要使用的編程語言。
 
-   * 若是JavaScript和WDIO，請使用中自動產生的范常式式碼 `ui.tests` Cloud Manager儲存庫的資料夾。
+   * 若為 JavaScript 和 WDIO，請使用在 Cloud Manager 存放庫 `ui.tests` 資料夾中自動產生的範例程式碼。
 
       >[!NOTE]
       >
-      >如果您的存放庫是在Cloud Manager自動建立之前建立 `it.tests` 資料夾，您也可以使用 [AEM專案原型。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+      >如果您的存放庫是在 Cloud Manager 自動建立 `it.tests` 資料夾之前所建立，您還可以使用 [AEM 專案原型產生最新版本。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
-   * 對於Java和WebDriver，請使用 [AEM測試範例存放庫。](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
+   * 若是 Java 和 WebDriver，請使用 [AEM 測試範例存放庫中的範例程式碼。](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
 
-   * 有關其他程式設計語言，請參閱 [建立UI測試](#building-ui-tests) 來設定測試專案。
+   * 若為其他程式語言，請參考本文件內「[建立 UI 測試](#building-ui-tests)」部分來設定測試專案。
 
-1. 確認已依照區段啟動UI測試 [客戶選擇加入](#customer-opt-in) 在此文檔中。
+1. 確保根據本文件內「[客戶選擇加入](#customer-opt-in)」部分來啟動 UI 測試。
 
-1. 開發您的測試案例，並 [在本機執行測試。](#run-ui-tests-locally)
+1. 開發您的測試案例並[在本機執行這些測試。](#run-ui-tests-locally)
 
-1. 將您的程式碼提交至Cloud Manager存放庫並執行Cloud Manager管道。
+1. 將您的程式碼提交到 Cloud Manager 存放庫並執行 Cloud Manager 管道。
 
 ## 構建 UI 測試 {#building-ui-tests}
 
-一個 Maven 項目會生成一個 Docker 構建上下文。此Docker建置內容說明如何建立包含UI測試的Docker影像，Cloud Manager會使用這些測試來產生包含實際UI測試的Docker影像。
+一個 Maven 項目會產生一個 Docker 建置內容。此 Docker 建置內容旨在說明如何建立包含 UI 測試的 Docker 影像，Cloud Manager 會用來透過該影像產生包含實際 UI 測試的 Docker 影像。
 
 本節介紹將 UI 測試項目新增到存放庫所需的步驟。
 
 >[!TIP]
 >
->此 [AEM專案原型](https://github.com/adobe/aem-project-archetype) 如果您對程式設計語言沒有特殊要求，可為您產生符合下列說明的UI測試專案。
+>這[AEM Project 原型](https://github.com/adobe/aem-project-archetype)可以為您產生 UI 測試專案 (遵照以下說明來測試)，但前提是您對編程語言沒有特殊要求。
 
-### 生成 Docker 構建上下文 {#generate-docker-build-context}
+### 產生 Docker 建置內容 {#generate-docker-build-context}
 
-為了生成 Docker 構建上下文，您需要一個 Maven 模組：
+為了產生 Docker 建置內容，您需要一個 Maven 模組：
 
-* 生成一個包含`Dockerfile`以及使用您的測試構建 Docker 映像所需的所有其他文件。
+* 產生一個包含`Dockerfile`以及使用您的測試構建 Docker 影像所需的所有其他文件。
 * 用`ui-test-docker-context`分類器。
 
-最簡單的方法是配置[Maven 組裝插件](https://maven.apache.org/plugins/maven-assembly-plugin/)建立 Docker 構建上下文封存並為其指派正確的分類器。
+最簡單的方法是配置[Maven 組裝插件](https://maven.apache.org/plugins/maven-assembly-plugin/)建立 Docker 建置內容封存並為其指派正確的分類器。
 
 您可以使用不同的技術和框架構建 UI 測試，但本節假定您的項目以類似於以下方式佈局。
 
@@ -148,19 +148,19 @@ UI測試會在每個Cloud Manager管道(具有 [**自訂UI測試** 步驟](/help
 * `wait-for-grid.sh` 腳本，其用途如下所述
 * 由 Node.js 項目實現的實際 UI 測試`test-module`檔案夾
 
-程序集描述符還排除了在本機執行 UI 測試時可能生成的一些文件。這保證了更小的封存和更快的建構。
+程序集描述符還排除了在本機執行 UI 測試時可能產生的一些文件。這保證了更小的封存和更快的建構。
 
-包含 Docker 建構上下文的封存由 Cloud Manager 自動獲取，它將在其部署管道期間構建包含您的測試的 Docker 影像。最終，Cloud Manager 將執行 Docker 映像以針對您的應用程序執行 UI 測試。
+包含 Docker 建置內容的封存由 Cloud Manager 自動獲取，它將在其部署管道期間構建包含您的測試的 Docker 影像。最終，Cloud Manager 將執行 Docker 影像以針對您的應用程序執行 UI 測試。
 
-建構應生成零個或一個封存。如果產生零個封存，則測試步驟預設透過。如果建置產生多個封存，則無法確定要選擇哪個封存。
+建構應產生零個或一個封存。如果產生零個封存，則測試步驟預設透過。如果建置產生多個封存，則無法確定要選擇哪個封存。
 
 ### 客戶選擇加入 {#customer-opt-in}
 
-若要讓Cloud Manager建立並執行您的UI測試，您必須借由將檔案新增至存放庫來選擇加入此功能。
+為了讓 Cloud Manager 構建和執行您的 UI 測試，您必須透過將文件新增到存放庫來選擇使用此功能。
 
 * 檔案名稱必須是 `testing.properties`。
 * 檔案內容必須是 `ui-tests.version=1`。
-* 檔案必須位於maven子模組下，才能進行UI測試，緊鄰 `pom.xml` 檔案。
+* 該文件必須位於 maven 子模組下，用於 UI 測試`pom.xml`UI 測試子模組的文件。
 * 該文件必須位於構建的根目錄`tar.gz`文件。
 
 如果此文件不存在，將跳過 UI 測試構建和執行。
@@ -183,9 +183,9 @@ UI測試會在每個Cloud Manager管道(具有 [**自訂UI測試** 步驟](/help
 >
 >該文件可能包含一條建議不要編輯它的行。這是因為它是在引入選擇加入 UI 測試之前被引入您的項目的，並且客戶端不打算編輯該文件。這可以安全地忽略。
 
-如果您使用Adobe提供的範例：
+如果您是使用 Adobe 提供的範例：
 
-* 針對以JavaScript為基礎 `ui.tests` 根據 [AEM專案原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)，您可以執行以下命令以新增所需的設定。
+* 若是基於來自 [AEM 專案原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) 產生以 JavaScript 為主的 `ui.tests` 資料夾，您可以執行以下命令以新增所需的設定。
 
    ```shell
    echo "ui-tests.version=1" > testing.properties
@@ -195,33 +195,33 @@ UI測試會在每個Cloud Manager管道(具有 [**自訂UI測試** 步驟](/help
    fi
    ```
 
-* 提供的Java測試範例已設定選擇加入標幟。
+* 所提供的 Java 測試範例已經有選擇加入旗標集。
 
 ## 編寫 UI 測試 {#writing-ui-tests}
 
-本節介紹包含 UI 測試的 Docker 映像必須遵循的約定。Docker 映像是根據上一節中描述的 Docker 建構上下文建構的。
+本節介紹包含 UI 測試的 Docker 影像必須遵循的約定。Docker 影像是根據上一節中描述的 Docker 建置內容建構的。
 
 ### 環境變數 {#environment-variables}
 
-以下環境變量將在執行時傳遞給您的 Docker 映像。
+以下環境變量將在執行時傳遞給您的 Docker 影像。
 
 | 變數 | 範例 | 說明 |
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 伺服器的 URL |
 | `SELENIUM_BROWSER` | `chrome` | Selenium 伺服器使用的瀏覽器實作 |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 作者執行個體的 URL |
-| `AEM_AUTHOR_USERNAME` | `admin` | 要登入AEM製作例項的使用者名稱 |
-| `AEM_AUTHOR_PASSWORD` | `admin` | 登入AEM製作例項的密碼 |
+| `AEM_AUTHOR_USERNAME` | `admin` | 用於登入 AEM 作者執行個體的使用者名稱 |
+| `AEM_AUTHOR_PASSWORD` | `admin` | 用於登入 AEM 作者執行個體的密碼 |
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 發佈執行個體的 URL |
-| `AEM_PUBLISH_USERNAME` | `admin` | 要登入AEM發佈例項的使用者名稱 |
-| `AEM_PUBLISH_PASSWORD` | `admin` | 登入AEM發佈執行個體的密碼 |
+| `AEM_PUBLISH_USERNAME` | `admin` | 用於登入 AEM 發佈執行個體的使用者名稱 |
+| `AEM_PUBLISH_PASSWORD` | `admin` | 用於登入 AEM 發佈執行個體的密碼 |
 | `REPORTS_PATH` | `/usr/src/app/reports` | 測試結果 XML 報告必須儲存的路徑 |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | 必須將文件上傳到的 URL 使 Selenium 可以存取 |
 
-Adobe測試範例提供存取設定參數的輔助功能：
+Adobe 測試範例提供了幫助函數來存取設定參數：
 
-* JavaScript:請參閱 [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) 模組
-* Java:請參閱 [設定](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 類
+* JavaScript：參閱 [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) 模組
+* Java：參閱 [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 類
 
 ### 等待 Selenium 準備就緒 {#waiting-for-selenium}
 
@@ -232,32 +232,32 @@ Adobe測試範例提供存取設定參數的輔助功能：
 
 一旦 Selenium 的狀態端點得到肯定的響應，測試就可以開始了。
 
-AdobeUI測試範例會使用指令碼來處理此問題 `wait-for-grid.sh`,Docker啟動時會執行，且只有當格線準備就緒後，才會開始實際測試執行。
+Adobe UI 測試範例使用指令碼 `wait-for-grid.sh` 處理此問題，該指令碼在 Docker 啟動時執行，並且僅在網格準備就緒後才開始實際測試執行。
 
-### 生成測試報告 {#generate-test-reports}
+### 產生測試報告 {#generate-test-reports}
 
-Docker 鏡像必須生成 JUnit XML 格式的測試報告，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。JUnit XML 格式是一種廣泛使用的報告測試結果的格式。如果 Docker 鏡像使用 Java 和 Maven，標準測試模組如[Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和[Maven 故障安全插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)可以開箱即用地生成此類報告。
+Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。JUnit XML 格式是一種廣泛使用的報告測試結果的格式。如果 Docker 鏡像使用 Java 和 Maven，標準測試模組如[Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和[Maven 故障安全插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)可以開箱即用地產生此類報告。
 
-如果 Docker 映像是使用其他編程語言或測試執行計劃實現的，請查看所選工具的文件以了解如何生成 JUnit XML 報告。
+如果 Docker 影像是使用其他編程語言或測試執行計劃實現的，請查看所選工具的文件以了解如何產生 JUnit XML 報告。
 
 >[!NOTE]
 >
->UI測試步驟的結果僅會根據測試報表來評估。 請確定您為測試執行產生相應的報表。
+>UI 測試步驟的結果僅根據測試報告進行評估。 請確保為您的測試執行產生相應的報告。
 >
->使用斷言，而非僅將錯誤記錄到STDERR或傳回非零退出代碼，否則您的部署管道可能會正常進行。
+>使用斷言而不是僅僅將錯誤記錄到 STDERR 或返回非零退出程式碼，否則您的部署管道可能會正常進行。
 
 ### 擷取螢幕擷圖和視訊 {#capture-screenshots}
 
-Docker影像可產生其他測試輸出（例如螢幕擷取畫面或視訊），並儲存至環境變數所指定的路徑 `REPORTS_PATH`. 在 `REPORTS_PATH` 下找到的任何檔案都包含在測試結果封存檔中。
+Docker 影像必須產生額外的測試輸出 (例如，螢幕擷圖或影片)，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。在 `REPORTS_PATH` 下找到的任何檔案都包含在測試結果封存檔中。
 
-預設情況下，Adobe提供的測試示例為任何失敗的測試建立螢幕截圖。
+Adobe 提供的測試範例依預設為任何失敗的測試建立螢幕擷圖。
 
-您可以使用協助程式功能，透過測試建立螢幕擷取畫面。
+您可以使用輔助函數通過測試建立螢幕擷圖。
 
-* JavaScript: [take螢幕擷取命令](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [命令](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+* JavaScript：[takeScreenshot 命令](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
+* Java：[命令](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-如果測試結果封存是在UI測試執行期間建立的，您可以使用 `Download Details` 按鈕 [**自訂UI測試** 步驟。](/help/implementing/cloud-manager/deploy-code.md)
+如果在 UI 測試執行期間建立測試結果存檔，您可以使用&#x200B;[**自訂 UI 測試**&#x200B;步驟下的 `Download Details` 按鈕從 Cloud Manager 下載。](/help/implementing/cloud-manager/deploy-code.md)
 
 ### 上傳檔案 {#upload-files}
 
@@ -267,29 +267,29 @@ Docker影像可產生其他測試輸出（例如螢幕擷取畫面或視訊）�
    * 上傳必須在一個帶有多部分表單的 POST 要求中執行。
    * 多部分表單必須有一個檔案欄位。
    * 這相當於 `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`。
-   * 請查閱 Docker 映像中使用的編程語言的檔案和資料庫，以了解如何執行此類 HTTP 要求。
-   * Adobe測試範例提供上傳檔案的輔助功能：
-      * JavaScript:請參閱 [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) 命令。
-      * Java:請參閱 [檔案處理程式](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) 類別。
+   * 請查閱 Docker 影像中使用的編程語言的檔案和資料庫，以了解如何執行此類 HTTP 要求。
+   * Adobe 測試範本提供了用於上傳文件的輔助函數：
+      * JavaScript：請參閱 [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) 命令。
+      * Java：參閱 [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) 類。
 1. 如果上傳成功，請求傳回一個`200 OK`類型響應 `text/plain`。
    * 回應的內容是一個不透明的檔案。
    * 您可以使用此句柄代替文件路徑`<input>`在您的應用程序中測試文件上傳的元素。
 
-## 在本機執行UI測試 {#run-ui-tests-locally}
+## 在本機執行 UI 測試 {#run-ui-tests-locally}
 
-在Cloud Manager管道中啟用UI測試之前，建議先在本機上對 [AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 或實際的AEMas a Cloud Service例項。
+在 Cloud Manager 管道啟用 UI 測試之前，建議在本機針對 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 或在實際的 AEM as a Cloud Service 執行個體中執行 UI 測試。
 
 ### 必備條件 {#prerequisites}
 
-Cloud Manager中的測試將使用技術管理員使用者執行。
+Cloud Manager 中的測試將使用技術管理員使用者來執行。
 
-若要從本機電腦執行UI測試，請建立具有類似管理員權限的使用者，以達成相同的行為。
+若要從本機電腦執行 UI 測試，請建立一個具備類似管理員權限的使用者來達到相同的行為。
 
-### JavaScript測試範例 {#javascript-sample}
+### JavaScript 測試範例 {#javascript-sample}
 
-1. 開啟殼層並導覽至 `ui.tests` 儲存庫中的資料夾
+1. 打開 shell 並瀏覽至存放庫中的 `ui.tests` 資料夾
 
-1. 執行以下命令以使用Maven啟動測試
+1. 執行以下命令以使用 Maven 啟動測試
 
    ```shell
    mvn verify -Pui-tests-local-execution \
@@ -305,17 +305,17 @@ Cloud Manager中的測試將使用技術管理員使用者執行。
 
 >[!NOTE]
 >
->* 這會啟動獨立的selenium執行個體並針對其執行測試。
->* 記錄檔會儲存在 `target/reports` 儲存庫的資料夾
->* 測試會自動下載最新版的ChromeDriver以進行測試時，您必須確保使用最新的Chrome版本。
+>* 這將啟動一個獨立的 selenium 執行個體並對其執行測試。
+>* 記錄檔案會儲存在您存放庫的 `target/reports` 資料夾中
+>* 您需要確保使用最新的 Chrome 版本，因為測試會自動下載最新版本的 ChromeDriver 以進行測試。
 >
->如需詳細資訊，請參閱 [AEM專案原型存放庫。](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)
+>如需更多詳細資訊，請參閱 [AEM 專案原型存放庫](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)
 
-### Java測試範例 {#java-sample}
+### Java 測試範例 {#java-sample}
 
-1. 開啟殼層並導覽至 `ui.tests/test-module` 儲存庫中的資料夾
+1. 打開 shell 並瀏覽至存放庫中的 `ui.tests/test-module` 資料夾
 
-1. 執行以下命令以使用Maven啟動測試
+1. 執行以下命令以使用 Maven 啟動測試
 
    ```shell
    # Start selenium docker image (for x64 CPUs)
@@ -330,6 +330,6 @@ Cloud Manager中的測試將使用技術管理員使用者執行。
 
 >[!NOTE]
 >
->* 記錄檔將儲存在 `target/reports` 儲存庫的資料夾。
+>* 記錄檔案將儲存在您存放庫的 `target/reports` 資料夾中。
 >
->如需詳細資訊，請參閱 [AEM測試範例存放庫。](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)
+>如需更多詳細資訊，請參閱 [AEM 測試範例存放庫 ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)
