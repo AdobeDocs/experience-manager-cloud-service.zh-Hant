@@ -1,24 +1,24 @@
 ---
-title: 上線
+title: 入門
 description: 了解在程式碼和內容雲端準備就緒後，如何執行移轉
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
+source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 0%
+source-wordcount: '1727'
+ht-degree: 4%
 
 ---
 
-# 上線 {#go-live}
+# 入門 {#go-live}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_prep"
 >title="上線準備"
->abstract="為確保順利成功上線至AEMas a Cloud Service，您應針對程式碼和內容凍結期間、測試反覆項目、內容追加、效能測試、安全性測試等進行規劃。"
+>abstract="為確保 AEM as a Cloud Service 順利而成功地上線，您應該規劃程式碼和內容凍結期、測試反覆項目、內容加值、效能測試、安全性測試等。"
 
 在歷程的這部分，您將學習如何在程式碼和內容都準備好移至AEM  as a Cloud Service時，規劃及執行移轉。 此外，您也會了解執行移轉時的最佳實務和已知限制。
 
-## 迄今為止的故事 {#story-so-far}
+## 到目前為止 {#story-so-far}
 
 在歷程的前幾個階段：
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 此外，當排程最終追加內容時，您需要規劃內容凍結。
 
-## 最佳作法 {#best-practices}
+## 最佳做法 {#best-practices}
 
 規劃或執行移轉時，您應考量下列准則：
 
@@ -116,9 +116,9 @@ ht-degree: 0%
 請檢閱此活動清單，以確保您執行順暢且成功的移轉作業。
 
 * 透過功能和UI測試執行端對端生產管道，以確保 **一律最新** AEM產品體驗。 請參閱下列資源。
-   * [AEM版本更新](/help/implementing/deploying/aem-version-updates.md)
+   * [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
    * [自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
-   * [UI測試](/help/implementing/cloud-manager/ui-testing.md)
+   * [UI 測試](/help/implementing/cloud-manager/ui-testing.md)
 * 將內容移轉至生產環境，並確認有相關子集可在測試環境中使用以進行測試。
    * 請注意，AEM適用的DevOps最佳實務表示程式碼會從開發環境向上移動至生產環境，而內容會從生產環境向下移動。
 * 排程程式碼和內容凍結期間。
@@ -140,8 +140,8 @@ ht-degree: 0%
       * 請參閱 [客戶CDN指向AEM Managed CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) CDN檔案以取得詳細資訊。
       * 您需要根據CDN廠商的檔案來設定SSL和DNS。
    * 如果您未使用其他CDN，請依照下列檔案管理SSL和DNS:
-      * 管理SSL憑證
-         * [管理SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      * 管理 SSL 憑證
+         * [管理 SSL 憑證的簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [管理SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * 管理自訂網域名稱(DNS)
          * 為確保DNS轉換不會引發意外問題，最好先建立測試子網域，將生產執行個體連線至，再開始執行UAT測試。 因此，如果您的網域是example.com，您可以建立子網域test.example.com，並將其套用至生產環境。 在UAT測試網域期間，您會想要尋找適當的連結重新導向、快取和Dispatcher設定等項目。
@@ -153,7 +153,7 @@ ht-degree: 0%
       * 如果您的TTL很高，則DNS記錄的更新需要更長的時間才能傳播。
 * 運行符合您業務要求和目標的效能和安全測試。
 * 切斷，確保實際上線執行時沒有任何新部署或內容更新。
-* 建立Admin Console使用者通知群組。 請參閱 [通知的使用者群組](/help/journey-onboarding/user-groups.md)
+* 建立Admin Console使用者通知設定檔。 請參閱 [通知設定檔](/help/journey-onboarding/notification-profiles.md)
 
 您隨時都可以參考清單，以備在執行移轉時重新校準任務時使用。
 

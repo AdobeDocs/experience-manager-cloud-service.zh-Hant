@@ -2,7 +2,7 @@
 title: 通知中心
 description: 利用通知中心方便地對事件和其他重要資訊採取行動
 hidefromtoc: true
-source-git-commit: a5977c667d831c47d41cd86b68e9196fbe726899
+source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 您可以依照下列步驟來設定接收通知：
 
-1. 建立下列產品設定檔，如所述 [本文](/help/journey-onboarding/user-groups.md)，從您的組織將適當的AdobeID指派給這些設定檔。
+1. 建立下列產品設定檔，如所述 [本文](/help/journey-onboarding/notification-profiles.md)，從您的組織將適當的AdobeID指派給這些設定檔。
 1. 確定通知配置設定。 [在此頁面](https://experience.adobe.com/preferences/notification-section)，請確定Experience Manager訂閱已啟用，且 **其他** 複選框。 此外，建議將「電子郵件」區段設為 **即時通知** 這樣，您就會在事件發生後立即收到通知。
 
 >[!NOTE]
