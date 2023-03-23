@@ -1,9 +1,9 @@
 ---
 title: AEM通用編輯器快速入門
 description: 了解如何存取通用編輯器，以及如何開始檢測您的第一個AEM應用程式以使用它。
-source-git-commit: acafa752c354781e41b11e46ac31a59feb8d94e7
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -157,50 +157,6 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-### 通用編輯器翻譯服務 {#translation}
-
-通用編輯器根據檢測元資料執行翻譯。
-
-#### 基本翻譯原則 {#principle}
-
-請考量上一個範例中的下列選取項目。
-
-```html
-<meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-```
-
-編輯器將執行替換，並在內部執行 `itemid` 會重新寫入下列內容。
-
-```html
-itemid="urn:aem:https://localhost:4502/content/example/list"
-```
-
-這會產生詞語 `aemconnection` 被 `<meta>` 標籤。
-
-#### 查詢選擇器 {#query-selector}
-
-這項取代將產生John Smith的下列查詢字串。
-
-```html
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-  <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="urn:fcs:type/fragment">.  
-    <p itemprop="name" itemtype="text">John Smith</p>
-    <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
-    <img itemprop="avatar" src="urn:fcs:missing" itemtype="image" alt="avatar"/>
-  </li>
-```
-
-`[itemid="urn:fcs:https://example.franklin.adobe.com/345fcdd/content/example/list][itemprop="name"]`
-
-如果要更改John Smith的表徵圖，選擇器將如下。
-
-`[itemid="urn:aem:https://localhost:4502/content/example/another-source"][itemprop="title"]`
-
-取代繼承 `itemid`通用編輯器使用範圍。 可以在節點級別上定義範圍，並由整個子結構繼承。
-
-如果結構內的子結構或定義的離開需要不同的範圍，則另一個 `itemid` 可定義。
-
 ## 準備好使用通用編輯器 {#youre-ready}
 
 您的應用程式現在經過創作，可使用通用編輯器！
@@ -213,6 +169,7 @@ itemid="urn:aem:https://localhost:4502/content/example/list"
 
 * [通用編輯器簡介](introduction.md)  — 了解通用編輯器如何啟用編輯任何實作中任何內容的任何方面，以提供優越的體驗、提高內容速度，並提供最新的開發人員體驗。
 * [使用通用編輯器編寫內容](authoring.md)  — 了解內容作者使用通用編輯器建立內容有多簡單且直覺。
+* [使用通用編輯器發佈內容](publishing.md)  — 了解通用視覺編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
 * [通用編輯器架構](architecture.md)  — 了解通用編輯器的架構，以及資料在其服務與層之間如何流動。
 * [屬性和類型](attributes-types.md)  — 了解通用編輯器需要的資料屬性和類型。
 * [通用編輯器驗證](authentication.md)  — 了解通用編輯器如何驗證。

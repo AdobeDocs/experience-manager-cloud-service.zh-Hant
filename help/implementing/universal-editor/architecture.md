@@ -1,9 +1,9 @@
 ---
 title: 通用編輯器架構
 description: 了解通用編輯器的架構，以及資料在其服務與層之間如何流動。
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '662'
 ht-degree: 1%
 
 ---
@@ -79,6 +79,7 @@ ht-degree: 1%
 
 * [通用編輯器簡介](introduction.md)  — 了解通用編輯器如何啟用編輯任何實作中任何內容的任何方面，以提供優越的體驗、提高內容速度，並提供最新的開發人員體驗。
 * [使用通用編輯器編寫內容](authoring.md)  — 了解內容作者使用通用編輯器建立內容有多簡單且直覺。
+* [使用通用編輯器發佈內容](publishing.md)  — 了解通用視覺編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
 * [AEM通用編輯器快速入門](getting-started.md)  — 了解如何存取通用編輯器，以及如何開始檢測您的第一個AEM應用程式以使用它。
 * [屬性和類型](attributes-types.md)  — 了解通用編輯器需要的資料屬性和類型。
 * [通用編輯器驗證](authentication.md)  — 了解通用編輯器如何驗證。

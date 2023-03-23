@@ -1,9 +1,9 @@
 ---
 title: 通用編輯器驗證
 description: 了解通用編輯器如何驗證。
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,6 @@ ht-degree: 0%
 通用編輯器使用Adobe的Identity Management系統(IMS)驗證，這是透過統一殼層提供。
 
 所有應用程式/遠程頁面都負責對所需的後端系統進行身份驗證。 通用編輯器服務需要此驗證來供後端系統執行CRUD操作，因為它是獨立服務。
-
-實作選項會依您使用通用編輯器的方式而有所不同。
-
-* [標準流量](#standard-flow)  — 適用於AEMas a Cloud Service或使用IMS的AMS。
-* [第三方流量](#third-party-flow)  — 適用於AEM內部部署或不含IMS的AMS
 
 ## 標準流量 {#standard-flow}
 
@@ -40,6 +35,7 @@ ht-degree: 0%
 
 * [通用編輯器簡介](introduction.md)  — 了解通用編輯器如何啟用編輯任何實作中任何內容的任何方面，以提供優越的體驗、提高內容速度，並提供最新的開發人員體驗。
 * [使用通用編輯器編寫內容](authoring.md)  — 了解內容作者使用通用編輯器建立內容有多簡單且直覺。
+* [使用通用編輯器發佈內容](publishing.md)  — 了解通用視覺編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
 * [AEM通用編輯器快速入門](getting-started.md)  — 了解如何存取通用編輯器，以及如何開始檢測您的第一個AEM應用程式以使用它。
 * [通用編輯器架構](architecture.md)  — 了解通用編輯器的架構，以及資料在其服務與層之間如何流動。
 * [屬性和類型](attributes-types.md)  — 了解通用編輯器需要的資料屬性和類型。

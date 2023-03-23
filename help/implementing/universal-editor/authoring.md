@@ -1,9 +1,9 @@
 ---
 title: 使用通用編輯器編寫內容
 description: 了解內容作者使用通用編輯器建立內容有多簡單且直覺。
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1152'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->通用編輯器仍在開發中，目前只能編寫文字。
+>通用編輯器仍在開發中，目前無法編輯所有內容類型。
 
 ## 準備應用程式 {#prepare-app}
 
@@ -106,11 +106,11 @@ Experience Cloud標題一律會顯示在畫面頂端。 此錨點可告訴您Exp
 
 ![漢布格菜單](assets/hamburger-menu.png)
 
-#### 地址欄 {#address-bar}
+#### 位置列 {#Location-bar}
 
-網址列顯示您正在編輯的頁面位置。 點選或按一下以輸入其他頁面的地址以進行編輯。
+位置列會顯示您編輯的頁面位址。 點選或按一下以輸入其他頁面的地址以進行編輯。
 
-![地址欄](assets/address-bar.png)
+![位置列](assets/address-bar.png)
 
 >[!TIP]
 >
@@ -119,12 +119,6 @@ Experience Cloud標題一律會顯示在畫面頂端。 此錨點可告訴您Exp
 >[!NOTE]
 >
 >您要使用通用編輯器編輯的任何頁面都必須 [為支援通用編輯器而創作的儀器。](getting-started.md)
-
-#### 協作指標 {#collaboration}
-
-如果通用編輯器中載入的其他作者具有相同頁面，則會顯示這些作者的影像。 將滑鼠移至影像上，即可查看完整使用者名稱
-
-![協作指標](assets/collaboration.png)
 
 #### 開啟應用程式預覽 {#open-app-preview}
 
@@ -141,6 +135,10 @@ Experience Cloud標題一律會顯示在畫面頂端。 此錨點可告訴您Exp
 點選或按一下「發佈」按鈕，以發佈對即時內容的變更，供讀者使用。
 
 ![發佈按鈕](assets/publish.png)
+
+>[!TIP]
+>
+>請參閱檔案 [使用通用視覺編輯器發佈內容](publishing.md) 以取得有關使用通用編輯器發佈的詳細資訊。
 
 ### 邊欄 {#rail}
 
@@ -195,6 +193,7 @@ Experience Cloud標題一律會顯示在畫面頂端。 此錨點可告訴您Exp
 若要進一步了解通用編輯器，請參閱這些檔案。
 
 * [通用編輯器簡介](introduction.md)  — 了解通用編輯器如何啟用編輯任何實作中任何內容的任何方面，以提供優越的體驗、提高內容速度，並提供最新的開發人員體驗。
+* [使用通用編輯器發佈內容](publishing.md)  — 了解通用視覺編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
 * [AEM通用編輯器快速入門](getting-started.md)  — 了解如何存取通用編輯器，以及如何開始檢測您的第一個AEM應用程式以使用它。
 * [通用編輯器架構](architecture.md)  — 了解通用編輯器的架構，以及資料在其服務與層之間如何流動。
 * [屬性和類型](attributes-types.md)  — 了解通用編輯器需要的資料屬性和類型。
