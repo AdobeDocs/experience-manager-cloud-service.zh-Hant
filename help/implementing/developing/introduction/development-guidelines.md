@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service 開發指導方針
-description: 了解在AEMas a Cloud Service上開發的准則，以及AMS中與內部部署和AEM不同的重要方式。
+description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及它和內部部署的 AEM 以及 AMS 中的 AEM 的重要區別。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '2591'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="AEM as a Cloud Service 開發指導方針"
->abstract="了解在AEMas a Cloud Service上開發的准則，以及AMS中與內部部署和AEM不同的重要方式。"
+>abstract="了解在 AEM as a Cloud Service 上進行開發的準則，以及它和內部部署的 AEM 以及 AMS 中的 AEM 的重要區別。"
 >additional-url="https://video.tv.adobe.com/v/330555/" text="套件結構示範"
 
 本檔案提供在AEMas a Cloud Service上開發的准則，以及AMS中與內部部署和AEM不同的重要方式。
@@ -156,7 +156,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 請注意，在本機開發（使用SDK）時， `/apps` 和 `/libs` 可直接寫入，這與雲端環境不同，雲端環境中的這些頂層資料夾不可修改。
 
-### AEMas a Cloud Service開發工具 {#aem-as-a-cloud-service-development-tools}
+### AEM as a Cloud Service 開發工具 {#aem-as-a-cloud-service-development-tools}
 
 客戶可在製作層級的開發環境中存取CRXDE lite，但無法預備或生產。 不可變的儲存庫(`/libs`, `/apps`)無法在執行階段寫入，因此嘗試寫入會導致錯誤。
 

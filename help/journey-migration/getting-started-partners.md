@@ -5,7 +5,7 @@ exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
 workflow-type: tm+mt
 source-wordcount: '2122'
-ht-degree: 14%
+ht-degree: 21%
 
 ---
 
@@ -13,16 +13,16 @@ ht-degree: 14%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_migration_overview"
->title="移轉至AEM as a Cloud Service"
->abstract="概述建議的分階段方法，將客戶從各種Experience Manager部署轉變為Experience Manageras a Cloud Service，並協助現有客戶提供連線的連續體驗"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html" text="新增功能與不同之處？"
+>title="移轉至 AEM as a Cloud Service"
+>abstract="概述建議的分階段方法，將客戶從各種 Experience Manager 部署轉換到 Experience Manager as a Cloud Service，並協助現有客戶實現連線而持續的體驗"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html" text="有哪些新增的不同功能？"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html" text="AEM as a Cloud Service 簡介."
 
 Adobe Experience Manager(AEM)as a Cloud Service提供重新架構的Experience Manager基礎，以容器為基礎的基礎架構、API導向的開發，以及引導式DevOps程式為基礎，讓行銷人員和開發人員可隨時領先客戶體驗管理創新的潮流。
 
 Cloud Service將Adobe Experience Manager的豐富現成可用功能和擴充性與現代雲端原生架構的靈活性結合在一起，讓品牌可以應付不斷變化的消費者需求。
 
-這個單頁機概述了建議的分階段方法，可將客戶從各種Experience Manager部署移轉至Experience Manageras a Cloud Service，並協助現有客戶在這個專為特定用途打造的現代化平台上提供連線、持續的體驗，以進行體驗管理。
+此單一頁面會概述建議的分階段方法，以用於將客戶從各種 Experience Manager 部署轉換到 Experience Manager as a Cloud Service，並協助現有客戶在此專門建置的新式體驗管理平台上實現連線而持續的體驗。
 
 <!-- It primarily focuses on:
 * Getting Started with Adobe Experience Manager as a Cloud Service
@@ -70,7 +70,7 @@ Cloud Service將Adobe Experience Manager的豐富現成可用功能和擴充性�
 
 1. [配置CM管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=en)
    * 生產管道
-   * 僅限非生產和代碼品質的管道
+   * 非生產和僅限程式碼品質管道
 2. [部署程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en)
 3. [了解測試結果](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=en)
 4. **存取記錄檔**
@@ -101,12 +101,12 @@ Cloud Service將Adobe Experience Manager的豐富現成可用功能和擴充性�
 
 <br>
 
-## 移至Adobe Experience Manager as a Cloud Service {#move-to-cloud}
+## 移至 Adobe Experience Manager as a Cloud Service {#move-to-cloud}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_move_to_cloud"
->title="移至Adobe Experience Manager as a Cloud Service"
->abstract="這個單頁機概述了建議的分階段方法，可將客戶從各種Experience Manager部署移轉至Experience Manageras a Cloud Service，並協助現有客戶在這個專為特定用途打造的現代化平台上提供連線、持續的體驗，以進行體驗管理。"
+>title="移至 Adobe Experience Manager as a Cloud Service"
+>abstract="此單一頁面會概述建議的分階段方法，以用於將客戶從各種 Experience Manager 部署轉換到 Experience Manager as a Cloud Service，並協助現有客戶在此專門建置的新式體驗管理平台上實現連線而持續的體驗。"
 
 **Experience Manageras a Cloud Service為Experience Manager Sites和資產提供可擴充、安全且敏捷的技術基礎，讓行銷人員和IT人員專注於大規模提供具影響力的體驗。**
 

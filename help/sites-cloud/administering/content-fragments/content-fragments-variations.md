@@ -373,7 +373,7 @@ RTF編輯可讓您設定格式：
 [!CONTEXTUALHELP]
 id="aemcloud_sites_contentfragments_variations"
 title="變化 - 編寫片段內容"
-abstract="了解如何變更內容以搭配特定管道使用。"
+abstract="了解如何變化內容以用於特定管道。"
 additional-url="https://video.tv.adobe.com/v/333295" text="內容片段變化"
 
 ### 建立變異 {#creating-a-variation}

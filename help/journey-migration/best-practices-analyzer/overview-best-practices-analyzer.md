@@ -5,24 +5,24 @@ exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 29%
+ht-degree: 68%
 
 ---
 
-# 總覽 {#overview-best-practices-analyzer}
+# 概觀 {#overview-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
->title="Best Practices Analyzer概述"
->abstract="Best Practices Analyzer會指出未遵循AEM最佳實務的區域，以評估您目前的AEM實作。 它也提供採用AEM最佳實務的後續步驟指引。 此外，它有助於加速評估從現有Adobe Experience Manager(AEM)部署移轉至AEMas a Cloud Service的準備程式。"
+>title="最佳做法分析工具概觀"
+>abstract="最佳做法分析工具會透過顯示未遵循 AEM 最佳做法的區域提供對您目前的 AEM 實作的評估。這還會提供有關採用 AEM 最佳做法的後續步驟的指引。此外，這有助於加速從現有的 Adobe Experience Manager (AEM) 部署移轉至 AEM as a Cloud Service 的整備程度的評估流程。"
 
-Best Practices Analyzer會指出未遵循AEM最佳實務的區域，以評估您目前的AEM實作。 它也提供採用AEM最佳實務的後續步驟指引。 此外，它有助於加速評估從現有Adobe Experience Manager(AEM)部署移轉至AEMas a Cloud Service的準備程式。
+最佳做法分析工具會透過顯示未遵循 AEM 最佳做法的區域提供對您目前的 AEM 實作的評估。這還會提供有關採用 AEM 最佳做法的後續步驟的指引。此外，這有助於加速從現有的 Adobe Experience Manager (AEM) 部署移轉至 AEM as a Cloud Service 的整備程度的評估流程。
 
 此工具會產生一份報表以識別可能重構的部分，這是轉換為 AEM as a Cloud Service 的第一步。
 
 ## Best Practices Analyzer報表 {#bpa-report}
 
-Best Practices Analyzer報表可用來取得對一般升級整備程度的高層了解。 此報表包含在成功部署至 AEM as a Cloud Service 之前必須解決的問題類別。
+最佳做法分析工具報表可用於取得對一般升級整備程度的概略了解。此報表包含在成功部署至 AEM as a Cloud Service 之前必須解決的問題類別。
 
 Best Practices Analyzer報表包含下列類別：
 

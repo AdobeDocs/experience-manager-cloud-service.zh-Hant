@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 25%
+ht-degree: 39%
 
 ---
 
@@ -13,10 +13,10 @@ ht-degree: 25%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
->title="疑難排解AEM"
->abstract="檢閱持續開發的最佳實務，並管理記錄，以及開發人員主控台和CRXDE Lite等工具，以協助疑難排解AEM的問題"
+>title="AEM 的移難排解"
+>abstract="檢閱持續開發和管理記錄檔的最佳做法以及開發人員主控台和 CRXDE Lite 之類的工具，以協助對 AEM 的問題進行移難排解"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="存取和管理記錄檔"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEMas a Cloud Service開發工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 開發工具"
 
 這是歷程的最後一個部分，讓您了解如何在移轉完成後監控問題並改善效能。 您應確保清理臨時檔案、審查最佳作法以持續開發及管理記錄。
 
@@ -58,8 +58,8 @@ ht-degree: 25%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="說明與支援"
->abstract="請洽詢AEM支援團隊，以取得說明或解決任何疑慮。"
->additional-url="https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html" text="支援Experience Cloud"
+>abstract="如需澄清或解決任何疑慮，請和我們的 AEM 支援團隊聯絡。"
+>additional-url="https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 的支援"
 
 如果您對存取Cloud Service有任何疑問，請連絡您的Adobe代表，或 [支援Experience Cloud](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 以取得更多詳細資訊。
 

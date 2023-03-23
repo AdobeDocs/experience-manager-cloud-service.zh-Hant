@@ -5,13 +5,13 @@ exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '543'
-ht-degree: 7%
+ht-degree: 18%
 
 ---
 
 # Cloud Acceleration Manager 快速入門 {#get-started-cam}
 
-Cloud Acceleration Manager是雲端型應用程式，旨在引導您的IT團隊完成從規劃到上線的整個轉換過程。Cloud Service 透過Adobe建議的最佳實務、提示、檔案和工具，為您的團隊設定成功的移轉作業，以協助您在前往AEM作為Cloud Service的歷程的每個階段。
+Cloud Acceleration Manager 是雲端型應用程式，旨在引導您的 IT 團隊進行從規劃到在 Cloud Service 上線的轉換歷程。透過Adobe建議的最佳實務、提示、檔案和工具，為您的團隊設定成功的移轉作業，以協助您在前往AEM作為Cloud Service的歷程的每個階段。
 
 ## 目標 {#objective}
 
@@ -41,7 +41,7 @@ Cloud Acceleration Manager(CAM)提供引導式歷程的一站式體驗，提供�
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_gettingstarted"
 >title="Cloud Acceleration Manager 快速入門"
->abstract="建立專案並啟動前往AEMas a Cloud Service的歷程。"
+>abstract="建立您的專案並啟動您的 AEM as a Cloud Service 歷程。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=en" text="使用 Cloud Acceleration Manager 的好處"
 
 Cloud Acceleration Manager(CAM)的登錄頁面可讓您建立和編輯多個專案。

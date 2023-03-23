@@ -16,7 +16,7 @@ ht-degree: 15%
 >title="內容轉移工具的重要使用注意事項"
 >abstract="查看容轉移工具的重要使用注意事項，包括 Java 和 AEM 版本、支援的資料存放區類型、使用者群組注意事項等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#pre-reqs" text="使用內容轉移工具的重要考量"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#best-practices" text="最佳做法和指導方針"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#best-practices" text="最佳做法和準則"
 
 下表概述使用「內容轉移工具」的先決條件。
 

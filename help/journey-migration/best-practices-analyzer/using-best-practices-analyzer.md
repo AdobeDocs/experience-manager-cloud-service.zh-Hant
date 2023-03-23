@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
 workflow-type: tm+mt
 source-wordcount: '2490'
-ht-degree: 41%
+ht-degree: 49%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 41%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
->title="使用Best Practices Analyzer"
->abstract="檢閱使用Best Practices Analyzer（原稱為Cloud Readiness Analyzer）的說明檔案以及產生的報表。 Best Practices Analyzer報表可用來取得對一般升級整備程度的高層了解。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[網路研討會]加速Adobe Experience Manager as a Cloud Service歷程的工具簡介"
+>title="使用此最佳做法分析工具"
+>abstract="檢閱使用最佳做法分析工具 (以前稱為雲端整備程度分析工具) 的文件和產生的報表。最佳做法分析工具報表可用於取得對一般升級整備程度的概略了解。"
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[網絡研討會] 推出加速 Adobe Experience Manager as a Cloud Service 歷程的工具"
 
 ## 使用Best Practices Analyzer的重要考量 {#imp-considerations}
 
@@ -43,10 +43,10 @@ ht-degree: 41%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_download"
->title="下載Best Practices Analyzer"
->abstract="您可以從軟體發佈入口網站下載Best Practices Analyzer的ZIP檔案。 您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。"
+>title="下載最佳做法分析工具"
+>abstract="您可以從軟體發佈入口網站下載最佳做法分析工具的 ZIP 檔案。您可以透過「封裝管理程式」，在來源 Adobe Experience Manager AEM) 例項上安裝封裝。"
 
-您可以從軟體發佈入口網站下載Best Practices Analyzer的ZIP檔案。 您可以透過 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 在來源Adobe Experience Manager(AEM)例項上。
+您可以從軟體發佈入口網站下載最佳做法分析工具的 ZIP 檔案。您可以透過 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 在來源Adobe Experience Manager(AEM)例項上。
 
 >[!NOTE]
 >從下載Best Practices Analyzer [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 入口網站。
@@ -120,16 +120,16 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >In all versions, the included Pattern Detector may run independently.
 -->
 
-## 解譯Best Practices Analyzer報表 {#cra-report}
+## 解讀最佳做法分析工具的報表 {#cra-report}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
->title="解譯Best Practices Analyzer報表"
->abstract="查看BPA報表輸出有兩個選項：UI和CSV。 在AEM例項中執行Best Practices Analyzer工具時，UI報表會在工具視窗中顯示為結果。 CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和組織。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="檢閱最佳實務分析報表"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="了解Best Practices Analyzer報表類別"
+>title="解讀最佳做法分析工具的報表"
+>abstract="檢視 BPA 報表輸出有兩種選項：UI 和 CSV。在 AEM 執行個體中執行最佳做法分析工具時，UI 報表會在工具視窗中顯示為結果。CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和組織。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="檢閱最佳做法分析報表"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="了解最佳做法分析工具報表類別"
 
-在AEM例項中執行Best Practices Analyzer工具時，報表會在工具視窗中顯示為結果。
+在 AEM 執行個體中執行最佳做法分析工具時， 報表會在工具視窗中顯示為結果。
 
 報表格式為：
 
