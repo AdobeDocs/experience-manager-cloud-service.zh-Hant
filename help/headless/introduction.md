@@ -1,19 +1,19 @@
 ---
 title: AEM Headless 簡介
-description: 了解關於 Adobe Experience Manager (AEM) 內的 Headless，以及了解詳細文件和 Headless 歷程。 了解如何使用內容模式、內容片段和 GraphQL API 等功能來增強無周邊體驗。
+description: 了解關於 Adobe Experience Manager (AEM) 內的 Headless，以及了解詳細文件和 Headless 歷程。 了解如何使用內容片段模型、內容片段和GraphQL API等功能來支援無頭式體驗。
 landing-page-description: 了解如何使用及管理 Adobe Experience Manager as a Cloud Service 內的 Headless。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 597bb3b92159c685d3692f11359e13f8642a0857
+source-git-commit: 6d8d75cd0b01154f420dd3d5f14589bb8a2b8297
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 100%
+source-wordcount: '699'
+ht-degree: 76%
 
 ---
 
 
 # Adobe Experience Manager as a Headless CMS 簡介 {#introduction-aem-headless}
 
-了解如何使用 Adobe Experience Manager (AEM) as a Headless CMS，它具有內容模型、內容片段和 GraphQL API 等功能，可大規模強化無周邊體驗。
+了解如何使用Adobe Experience Manager(AEM)作為無頭式CMS（內容管理系統），搭配內容片段模型、內容片段和GraphQL API等功能，大規模提供無頭式體驗。
 
 您可以閱讀相關的各種功能的詳細文件和/或按照所選的[Headless 歷程](#first-steps)來大致了解第一個步驟。
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 AEM Headless 是 Experience Manager 的 CMS 解決方案，它允許任何應用程式使用 GraphQL 透過 HTTP 取用 AEM 中的結構化內容 (內容片段)。Headless 實作可跨平台和管道大規模傳遞體驗。
 
-Headless 實作放棄了全堆疊和混合解決方案中的傳統頁面和元件管理，專注於建立管道中立、可重複使用的內容片段及其跨管道傳遞。它是實作網頁體驗的現代動態開發模式。
+無頭實作會放棄頁面和元件管理，傳統的完整堆疊和混合解決方案亦然。 而是著重於建立不受管道影響、可重複使用的內容片段及其跨管道傳送。 它是實作網頁體驗的現代動態開發模式。
 
 ![AEM 實作模型](assets/aem-implementation-models.png)
 
@@ -33,14 +33,14 @@ Headless 實作放棄了全堆疊和混合解決方案中的傳統頁面和元�
 
 AEM as a Cloud Service 是一種適用於無周邊實作模型的靈活工具，它提供了三個強大的功能：
 
-1. **內容模型**
-   * 內容模型是內容的結構化表示。
-   * 內容模型由資訊架構師在 AEM 內容片段模型編輯器中定義的。
-   * 內容模型是內容片段的基礎。
+1. **內容片段模型**
+   * 內容片段模型是內容的結構化表示。
+   * 內容片段模型由AEM內容片段模型編輯器中的資訊架構師定義。
+   * 內容片段模型是內容片段的基礎。
 1. **內容片段**
-   * 內容片段是根據內容模型建立的。
-   * 由內容作者使用 AEM 內容片段編輯器建立。
-   * 內容片段儲存在 AEM Assets 中，並在 Assets Admin UI 中進行管理。
+   * 內容片段是根據內容片段模型建立。
+   * 內容片段由內容作者使用AEM內容片段編輯器建立。
+   * 內容片段會儲存為AEM Assets，但可透過Assets Console或 [內容片段主控台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
 1. **用於傳遞的內容 API**
    * AEM GraphQL API 支援內容片段傳遞。
    * AEM Assets REST API 支援內容片段 CRUD 作業。
