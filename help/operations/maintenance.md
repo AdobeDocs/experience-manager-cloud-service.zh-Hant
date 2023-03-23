@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的維護任務
 description: AEM as a Cloud Service 中的維護任務
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 020d9a73141f650ebafcdec0a5976e5060fd16c2
+source-git-commit: d4d1e97df58f8bd0951f0d5b0bf46e118b163457
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1111'
 ht-degree: 13%
 
 ---
@@ -114,6 +114,7 @@ ht-degree: 13%
   <p><strong>windowSchedule=daily</strong> （此值不應變更）</p>
   <p><strong>windowStartTime=HH:MM</strong> 24小時。 定義與「每日維護」窗口關聯的維護任務何時開始執行。</p>
   <p><strong>windowEndTime=HH:MM</strong> 24小時。 定義與每日維護窗口關聯的維護任務何時應停止執行（如果它們尚未完成）。</p>
+  <p>在此時間範圍內，維護任務不能執行多次。</p>
   </td> 
   </tr>
   <tr>
@@ -124,6 +125,7 @@ ht-degree: 13%
     <p><strong>windowSchedule=weekly</strong> （此值不應變更）</p>
     <p><strong>windowStartTime=HH:MM</strong> 24小時。 定義與每週維護窗口關聯的維護任務何時開始執行。</p>
     <p><strong>windowEndTime=HH:MM</strong> 24小時。 定義與每週維護窗口關聯的維護任務何時應停止執行（如果它們尚未完成）。</p>
+    <p>在此時間範圍內，維護任務不能執行多次。</p>
     <p><strong>windowScheduleWekdays=從1到7的2個值的陣列（例如[5,5]）</strong> 陣列的第一個值是排程作業的開始日，第二個值是作業停止的結束日。 開始和結束的確切時間分別由windowStartTime和windowEndTime控制。</p>
     </td>
   </tr>
@@ -135,6 +137,7 @@ ht-degree: 13%
     <p><strong>windowSchedule=monthly</strong> （此值不應變更）</p>
     <p><strong>windowStartTime=HH:MM</strong> 24小時。 定義與每月維護窗口關聯的維護任務何時開始執行。</p>
     <p><strong>windowEndTime=HH:MM</strong> 24小時。 定義與每月維護窗口關聯的維護任務何時應停止執行（如果它們尚未完成）。</p>
+    <p>在此時間範圍內，維護任務不能執行多次。</p>
     <p><strong>windowScheduleWeekdays=從1到7的2個值的陣列（例如[5,5]）</strong> 陣列的第一個值是排程作業的開始日，第二個值是作業停止的結束日。 開始和結束的確切時間分別由windowStartTime和windowEndTime控制。</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0：在月的第一週排程，或1：在月的最後一週排程。 若缺少值，則會有效地排程windowScheduleWeekdays（每月）所控制的日期的作業。</p>
     </td>
