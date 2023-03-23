@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的維護任務
 description: AEM as a Cloud Service 中的維護任務
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
+source-git-commit: 020d9a73141f650ebafcdec0a5976e5060fd16c2
 workflow-type: tm+mt
 source-wordcount: '1075'
-ht-degree: 4%
+ht-degree: 13%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
 >title="維護任務"
->abstract="維護任務是按計畫運行以優化儲存庫的進程。 使用AEMas a Cloud Service，客戶配置維護任務的操作屬性的需求非常小。 客戶可以將資源集中在應用程式級別的問題上，使基礎架構操作留待Adobe。"
+>abstract="維護任務指為了將存放庫最佳化而依據排程執行的流程。使用 AEM as a Cloud Service，客戶設定維護任務的操作屬性的需求會降至最低。客戶可以將他們的資源集中在應用程式層級的問題上，將基礎結構的操作交由 Adobe 進行。"
 
-維護任務是按計畫運行以優化儲存庫的進程。 使用AEMas a Cloud Service，客戶配置維護任務的操作屬性的需求非常小。 客戶可以將資源集中在應用程式級別的問題上，使基礎架構操作留待Adobe。
+維護任務指為了將存放庫最佳化而依據排程執行的流程。使用 AEM as a Cloud Service，客戶設定維護任務的操作屬性的需求會降至最低。客戶可以將他們的資源集中在應用程式層級的問題上，將基礎結構的操作交由 Adobe 進行。
 
 ## 配置維護任務 {#maintenance-tasks-configuring}
 
@@ -75,7 +75,7 @@ ht-degree: 4%
     <td>臨機任務清除</td>
     <td>客戶</td>
     <td>
-    <p>必須以Git完成。 覆蓋下的現成維護窗口配置節點 <code>/libs</code> 在資料夾下建立屬性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code>.</p>
+    <p>必須以Git完成。 覆蓋下的現成維護窗口配置節點 <code>/libs</code> 在資料夾下建立屬性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 或 <code>granite_monthly</code>.</p>
     <p>有關其他配置詳細資訊，請參閱下面的「維護窗口」表。 通過在上面的節點下添加其他節點來啟用維護任務。 為其命名 <code>granite_TaskPurgeTask</code>，帶屬性 <code>sling:resourceType</code> 設為 <code>granite/operations/components/maintenance/task</code> 和屬性 <code>granite.maintenance.name</code> 設為 <code>TaskPurge</code>. 設定OSGI屬性，請參閱 <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> ，以了解屬性清單。</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ ht-degree: 4%
     <td>工作流程清除</td>
     <td>客戶</td>
     <td>
-    <p>必須以Git完成。 覆蓋下的現成維護窗口配置節點 <code>/libs</code> 在資料夾下建立屬性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code>. 有關其他配置詳細資訊，請參閱下面的「維護窗口」表。</p>
+    <p>必須以Git完成。 覆蓋下的現成維護窗口配置節點 <code>/libs</code> 在資料夾下建立屬性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 或 <code>granite_monthly</code>. 有關其他配置詳細資訊，請參閱下面的「維護窗口」表。</p>
     <p>通過在上面的節點下添加其他節點（將其命名為）來啟用維護任務 <code>granite_WorkflowPurgeTask</code>)和適當的屬性。 設定OSGI屬性請參閱 <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances">AEM 6.5維護任務檔案</a>.</p>
   </td>
   </tr>
@@ -91,7 +91,7 @@ ht-degree: 4%
     <td>專案清除</td>
     <td>客戶</td>
     <td>
-    <p>必須以Git完成。 覆蓋下的現成維護窗口配置節點 <code>/libs</code> 在資料夾下建立屬性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 或 <code>granite_daily</code>. 有關其他配置詳細資訊，請參閱下面的「維護窗口」表。</p>
+    <p>必須以Git完成。 覆蓋下的現成維護窗口配置節點 <code>/libs</code> 在資料夾下建立屬性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 或 <code>granite_monthly</code>. 有關其他配置詳細資訊，請參閱下面的「維護窗口」表。</p>
     <p>通過在上面的節點下添加其他節點（將其命名為）來啟用維護任務 <code>granite_ProjectPurgeTask</code>)和適當的屬性。 請參閱「Adobe專案清除設定」下的OSGI屬性清單。</p>
   </td>
   </tr>
@@ -132,12 +132,12 @@ ht-degree: 4%
     <td>客戶</td>
     <td>JCR節點定義</td>
     <td>
-    <p><strong>windowSchedule=daily</strong> （此值不應變更）</p>
+    <p><strong>windowSchedule=monthly</strong> （此值不應變更）</p>
     <p><strong>windowStartTime=HH:MM</strong> 24小時。 定義與每月維護窗口關聯的維護任務何時開始執行。</p>
     <p><strong>windowEndTime=HH:MM</strong> 24小時。 定義與每月維護窗口關聯的維護任務何時應停止執行（如果它們尚未完成）。</p>
     <p><strong>windowScheduleWeekdays=從1到7的2個值的陣列（例如[5,5]）</strong> 陣列的第一個值是排程作業的開始日，第二個值是作業停止的結束日。 開始和結束的確切時間分別由windowStartTime和windowEndTime控制。</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0：在月的第一週排程，或1：在月的最後一週排程。 如果缺少值，則有效地每天安排由windowScheduleWeekdays管理的作業。</p>
-    </td> 
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0：在月的第一週排程，或1：在月的最後一週排程。 若缺少值，則會有效地排程windowScheduleWeekdays（每月）所控制的日期的作業。</p>
+    </td>
     </tr>
     </tbody>
 </table>
