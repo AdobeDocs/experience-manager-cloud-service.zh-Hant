@@ -1,11 +1,11 @@
 ---
 title: 功能測試
-description: 了解內建在 AEM as a Cloud Service 部署流程中的三種不同類型的功能測試，以確保計劃碼的品質和可靠性。
+description: 了解內建在 AEM as a Cloud Service 部署流程中的三種不同類型的功能測試，以確保程式碼的品質和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: cd0b40ffa54eac0d7488b23329c4d2666c992da7
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="功能測試"
->abstract="了解內置在 AEM as a Cloud Service 部署過程中的三種不同類型的功能測試，以確保計劃碼的品質和可靠性。"
+>abstract="了解內置在 AEM as a Cloud Service 部署過程中的三種不同類型的功能測試，以確保程式碼的品質和可靠性。"
 
-了解內建在 [AEM as a Cloud Service 部署流程](/help/implementing/cloud-manager/deploy-code.md)中的三種不同類型的功能測試，以確保計劃碼的品質和可靠性。
+了解內建在 [AEM as a Cloud Service 部署流程](/help/implementing/cloud-manager/deploy-code.md)中的三種不同類型的功能測試，以確保程式碼的品質和可靠性。
 
 ## 總覽 {#overview}
 
@@ -35,18 +35,18 @@ AEM as a Cloud Service 中有三種不同類型的功能測試。
 
 ### 產品功能測試 {#product-functional-testing}
 
-產品功能測試是 AEM 中核心功能 (例如製作和複製任務) 的一組穩定 HTTP 整合測試 (IT)。這些測試由 Adobe 維護，旨在防止自訂應用計劃計劃碼變更而破壞核心功能時進行部署。
+產品功能測試是 AEM 中核心功能 (例如編寫和複製任務) 的一組穩定 HTTP 整合測試 (IT)。這些測試由 Adobe 維護，旨在防止自訂應用計劃程式碼變更而破壞核心功能時進行部署。
 
-* [生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md):每當您將新程式碼部署至Cloud Manager且無法略過時，產品功能測試就會自動執行。
-* [非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md):您可以選擇選取產品功能測試，以在您執行非生產管道時執行。
+* [產品管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)：每當您將新程式碼部署到 Cloud Manager 時，都會自動執行產品功能測試，且不能跳過。
+* [非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)：可以選擇在執行非生產管道時執行產品功能測試。
 
 產品功能測試會作為開放原始碼專案進行維護。如需詳細資訊，請參閱 GitHub 中的[產品功能測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)。
 
 ### 自訂功能測試 {#custom-functional-testing}
 
-雖然產品功能測試由 Adobe 定義，但您可以為自己的應用計劃編寫自己的品質測試。這會作為自訂功能測試的一部分執行，屬於 [生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 或 [非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 以確保應用程式的品質。
+雖然產品功能測試由 Adobe 定義，但您可以為自己的應用計劃編寫自己的品質測試。這將作為自訂功能測試作為[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)或選擇性[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)的一部分執行，以確保您應用程式的品質。
 
-自訂功能測試會針對自訂計劃碼部署和推送升級執行，這對於編寫良好的功能測試，以防止 AEM 計劃碼變更而破壞應用程式碼尤為重要。自訂功能測試步驟一律存在且不能跳過。
+自訂功能測試會針對自訂程式碼部署和推送升級執行，這對於編寫良好的功能測試，以防止 AEM 程式碼變更而破壞應用程式碼尤為重要。自訂功能測試步驟一律存在且不能跳過。
 
 ### 自訂 UI 測試 {#custom-ui-testing}
 
@@ -72,15 +72,15 @@ AEM as a Cloud Service 中有三種不同類型的功能測試。
 
 Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功能測試。使用 GitHub 中的[產品功能測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)作為寫入測試的範例。
 
-自訂功能測試的計劃碼是位於專案 `it.tests` 檔案夾中的 Java 計劃碼。它應該產生一個包含所有功能測試的 JAR。如果建置產生多個測試 JAR，則無法確定要選擇哪個 JAR。如果產生零個測試 JAR，則測試步驟預設透過。如需測試範例，[請參閱 AEM 專案原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)。
+自訂功能測試的程式碼是位於專案 `it.tests` 檔案夾中的 Java 程式碼。它應該產生一個包含所有功能測試的 JAR。如果建置產生多個測試 JAR，則無法確定要選擇哪個 JAR。如果產生零個測試 JAR，則測試步驟預設透過。如需測試範例，[請參閱 AEM 專案原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)。
 
-這些測試會在 Adobe 維護的測試基礎結構上執行，包括至少兩個作者執行個體、兩個發佈執行個體和一個 Dispatcher 設定。這代表您的自訂功能測試針對整個 AEM 堆疊執行。
+這些測試會在 Adobe 維護的測試基礎結構上執行，包括至少兩個編寫執行個體、兩個發佈執行個體和一個 Dispatcher 設定。這代表您的自訂功能測試針對整個 AEM 堆疊執行。
 
 ### 功能測試結構 {#functional-tests-structure}
 
 自訂功能測試必須封裝為單獨的 JAR 檔案，該檔案由與要部署到 AEM 的成品相同的 Maven 組建產生。通常這將是一個單獨的 Maven 模組。產生的 JAR 檔案必須包含所有必要的相依性，通常使用 `maven-assembly-plugin` 和 `jar-with-dependencies` 描述項建立。
 
-此外，JAR 必須將 `Cloud-Manager-TestType` 資訊清單標題設為 `integration-test`。
+此外，JAR 必須將 `Cloud-Manager-TestType` 資訊清單標頭設為 `integration-test`。
 
 以下為 `maven-assembly-plugin` 的設定範例。
 
@@ -119,7 +119,7 @@ Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功�
 
 例如，將執行名為 `com.myco.tests.aem.it.ExampleIT` 的類別，但不會執行名為 `com.myco.tests.aem.it.ExampleTest` 的類別。
 
-此外，要從計劃碼掃描的覆蓋檢查中排除測試計劃碼，測試計劃碼必須位於名為`it` 的套件之下 (覆蓋排除篩選是`**/it/**/*.java`)。
+此外，要從程式碼掃描的覆蓋檢查中排除測試程式碼，測試程式碼必須位於名為`it` 的套件之下 (覆蓋排除篩選是`**/it/**/*.java`)。
 
 測試類別必須是一般的 JUnit 測試。測試基礎結構的設計和設定與 `aem-testing-clients` 測試庫使用的慣例相容。強烈鼓勵開發人員使用此計劃庫並遵循其最佳實務。
 
