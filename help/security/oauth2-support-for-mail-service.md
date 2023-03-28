@@ -3,9 +3,9 @@ title: 郵件服務的 OAuth2 支援
 description: Adobe Experience Manager as a Cloud Service 對郵件服務的 Oauth2 支援
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: fb6fd4a86f94ae282d95c73ecb702a372d7c1f86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '691'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
    * `email`
    * `profile`
    * `https://outlook.office365.com/SMTP.Send`
-1. 移至「**驗證** - **新增平台** - **Web**」，並且在「**重新島向 URL**」區段，新增以下 URL - 一個有正斜線，一個沒有正斜線：
+1. 移至「**驗證** - **新增平台** - **Web**」，並且在「**重新導向 URL**」區段，新增以下 URL - 一個有正斜線，一個沒有正斜線：
    * `http://localhost/`
    * `http://localhost`
 1. 新增每個 URL 按「**設定**」，並根據您的要求進行設定
@@ -103,7 +103,7 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 >
 > 您可以從[此位置](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)取得 Postman API 集合。
 >
-> 請查閱MSFT OAuth檔案 [此處](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) 以取得更多詳細資訊。
+> 請在[此處](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth)查看 MSFT OAuth 文件以獲取更多詳細資訊。
 
 ### 與 AEM as a Cloud Service 整合 {#integration-with-aem-as-a-cloud-service}
 
