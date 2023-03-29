@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 發行前通道
 description: 了解如何使用發行前通道來取得即將推出的 AEM as a Cloud Service 功能預覽。
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: 9a76a1c2b5e3b7986654b0843842b015811679a2
-workflow-type: ht
-source-wordcount: '1306'
-ht-degree: 100%
+source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 86%
 
 ---
 
@@ -16,22 +16,22 @@ ht-degree: 100%
 
 ## 簡介 {#introduction}
 
-Adobe Experience Manager as a Cloud Service 會根據 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)每月提供新功能。
+Adobe Experience Manager as a Cloud Service表示， [Experience Manager發行藍圖。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
-若要熟悉排定在下個月上線的功能，您可以訂閱發行前通道，您可藉由設定您的開發環境或任何沙箱環境來存取該通道。客戶可以預覽可透過 AEM UI 存取的變更，也可以針對任何新的發行前 API 建置程式碼。
+為了熟悉排定在下列功能版本中上線的功能，您可以訂閱發行前管道，此管道可透過設定開發環境或任何沙箱環境來存取。 客戶可以預覽可透過 AEM UI 存取的變更，也可以針對任何新的發行前 API 建置程式碼。
 
-特定月份的發行前功能清單會在[每月發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)中發佈。
+特定功能版本的發行前功能清單會發佈在 [發行說明。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## AEM as a Cloud Service 發行 {#releases}
 
 AEM as a Cloud Service 有兩種發行。
 
-* **每月發行**&#x200B;會在 AEM as a Cloud Service 中新增功能和特性
-* **重大更新**&#x200B;會新增安全性更新、效能增強功能和錯誤修正，而且每天都會套用。
+* **功能發行** 在啟動後將功能新增至AEMas a Cloud Service
+* **維護髮行** 新增安全性更新、效能增強和錯誤修正，並定期且經常套用。
 
 此模式可確保持續發行而不會中斷服務。
 
-發行前通道可讓您預覽即將到來的每月發行中預定推出的功能，以便評估即將推出的功能，並針對其可能在您自己專案中的實作方式進行規劃。它可讓您提前規劃下個月的發行。
+發行前管道可讓您預覽已排程在即將發行的功能，以評估即將推出的功能，並針對您自己的專案規劃可能的實作。 它可讓您為下一個功能版本預先規劃。
 
 例如，假設現在是五月，而且您訂閱了發行前通道，您可以評估即將推出的六月發行中的功能。
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service 有兩種發行。
 
 ## 標示您的行事曆 {#mark-calendars}
 
-每月發行都會事先安排好，並於 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 上公開發行日期。
+功能發行事先排定完畢，且功能發行啟用日期會發佈在 [Adobe Experience League。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
 記下發行日期，以便您可以規劃時間來檢閱和測試即將推出的功能。
 
@@ -58,11 +58,11 @@ AEM as a Cloud Service 有兩種發行。
 
 每個版本都附有發行說明，其中不僅記錄了該版本中的新功能，也記錄了可用於發行前評估的功能。取提前掌握情況，並為利用 AEMaaCS 的最新功能進行規劃！
 
-您還可以查看與每個版本一起發佈的[已知問題](/help/release-notes/known-issues.md)，這樣您也可以了解可能對您評估或最終採用任何新功能構成挑戰的任何技術問題。
+您還可以查看與每個版本一起發佈的[已知問題](/help/release-notes/maintenance/latest.md)，這樣您也可以了解可能對您評估或最終採用任何新功能構成挑戰的任何技術問題。
 
 ## 啟用發行前通道來存取及試用新功能 {#new-features}
 
-可以在任何開發或沙箱環境中啟用發行前通道。中繼環境或生產環境中不可啟用發行前通道。
+可以在任何開發或沙箱環境中啟用發行前通道。測試或生產環境中無法啟用發行前版本。
 
 可以透過不同方式體驗發行前功能：
 
