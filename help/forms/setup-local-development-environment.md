@@ -2,7 +2,7 @@
 title: 為Adobe Experience Manager Forms as a Cloud Service設定本機開發環境
 description: 為Adobe Experience Manager Forms as a Cloud Service設定本機開發環境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 55a53f23ee81877bd3a6ba3b9b0a1c3c98edb764
+source-git-commit: dea6c266e5c10135a320f923dc77d0fd2050988e
 workflow-type: tm+mt
 source-wordcount: '2960'
 ht-degree: 2%
@@ -230,7 +230,7 @@ AEM Forms as aCloud Services提供以Docker為基礎的SDK環境，以更輕鬆�
 
 本專案可讓您在本機上建立適用性Forms、部署設定更新、覆蓋、建立自訂適用性表單元件、測試和自訂程式碼 [!DNL Experience Manager Forms] SDK. 在本機測試後，您可以將專案部署至  [!DNL Experience Manager Forms] as a Cloud Service的生產和非生產環境。 部署專案時，也會部署下列AEM Forms資產：
 
-| 主題 | 範本 | 表單資料模型 |
+| 主題 | 範例 | 表單資料模型 |
 ---------|----------|---------
 | 畫布3.0 | 基本 | Microsoft® Dynamics 365 |
 | 寧靜 | 空白 | Salesforce |
@@ -258,6 +258,8 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
    ```shell
    mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=40 -D aemVersion="cloud" -D appTitle="Borgo AEM Forms" -D appId="bgaemforms" -D groupId="com.bgaemforms" -D includeFormsenrollment="y" -D includeFormscommunications="y" -D includeExamples="y" -D 
+   
+   mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion="41" -D appTitle=mysite -D appId=mysite -D groupId=com.mysite -D includeFormsenrollment="y" -D aemVersion="cloud"
    ```
 
    變更 `appTitle`, `appId`，和 `groupId` 以反映您的環境。 此外，為includeFormsenrollment、includeFormscommunications和includeFormsheadless設定值，以 `y` 或 `n` 視您的授權和需求而定。 必須使用includeFormsheadless才能根據核心元件建立最適化Forms。
