@@ -1,41 +1,41 @@
 ---
-title: 通用編輯器驗證
-description: 了解通用編輯器如何驗證。
+title: Universal Editor 驗證
+description: 了解 Universal Editor 如何進行驗證。
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 0%
+ht-degree: 92%
 
 ---
 
 
-# 通用編輯器驗證 {#authentication}
+# Universal Editor 驗證 {#authentication}
 
-了解通用編輯器如何驗證。
+了解 Universal Editor 如何進行驗證。
 
 ## 選項 {#options}
 
-通用編輯器使用Adobe的Identity Management系統(IMS)驗證，這是透過統一殼層提供。
+Universal Editor 使用 Adobe 的 Identity Management System (IMS) 驗證，這是透過 Unified Shell 提供的。
 
-所有應用程式/遠程頁面都負責對所需的後端系統進行身份驗證。 通用編輯器服務需要此驗證來供後端系統執行CRUD操作，因為它是獨立服務。
+所有應用程式/遠端頁面都負責對所需後端系統進行驗證。Universal Editor 服務需要此驗證才能向後端系統執行 CRUD 動作，因為它是一項獨立服務。
 
-## 標準流量 {#standard-flow}
+## 標準流程 {#standard-flow}
 
-這是AEMas a Cloud Service和AMS使用IMS來使用通用編輯器的解決方案。
+這是 AEM as a Cloud Service 和「使用 IMS 的 AMS」運用 Universal editor 的解決方案。
 
-若要使用通用編輯器，使用者必須登入針對IMS驗證的統一殼層。 提供的IMS代號儲存在使用者工作階段存放區中。
+若要使用 Universal Editor，使用者必須登入針對 IMS 進行驗證的 Unified Shell。提供的 IMS 權杖會儲存在使用者工作階段儲存體中。
 
-每當使用者執行CRUD作業時，就會傳送呼叫至通用編輯器服務，並在HTTP標題中帶有IMS承載權杖。 然後，通用編輯器服務會使用承載權杖，根據AEM後端系統驗證請求，以使用者名稱執行操作。
+每當使用者執行 CRUD 動作時，都會使用 HTTP 標頭中的 IMS 持有人權杖向 Universal Editor 服務發送呼叫。然後，Universal Editor 服務使用持有人權杖對 AEM 後端系統的要求進行驗證，並以使用者的名義執行動作。
 
 ![標準驗證流程](assets/standard-flow.png)
 
 ## 其他資源 {#additional-resources}
 
-若要進一步了解通用編輯器，請參閱這些檔案。
+要了解有關 Universal Editor 的更多資訊，請參閱以下文件。
 
-* [通用編輯器簡介](introduction.md)  — 了解通用編輯器如何啟用編輯任何實作中任何內容的任何方面，以提供優越的體驗、提高內容速度，並提供最新的開發人員體驗。
-* [使用通用編輯器編寫內容](authoring.md)  — 了解內容作者使用通用編輯器建立內容有多簡單且直覺。
+* [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實施中編輯任何方面的內容，以提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
+* [使用 Universal Editor 編寫內容](authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
 * [使用通用編輯器發佈內容](publishing.md)  — 了解通用視覺編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
-* [AEM通用編輯器快速入門](getting-started.md)  — 了解如何存取通用編輯器，以及如何開始檢測您的第一個AEM應用程式以使用它。
-* [通用編輯器架構](architecture.md)  — 了解通用編輯器的架構，以及資料在其服務與層之間如何流動。
-* [屬性和類型](attributes-types.md)  — 了解通用編輯器需要的資料屬性和類型。
+* [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
+* [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
+* [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。

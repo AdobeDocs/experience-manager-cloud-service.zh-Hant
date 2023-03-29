@@ -1,56 +1,56 @@
 ---
-title: AEM通用編輯器快速入門
-description: 了解如何存取通用編輯器，以及如何開始檢測您的第一個AEM應用程式以使用它。
+title: AEM 中 Universal Editor 快速入門
+description: 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 93%
 
 ---
 
 
-# AEM通用編輯器快速入門 {#getting-started}
+# AEM 中 Universal Editor 快速入門 {#getting-started}
 
-了解如何存取通用編輯器，以及如何開始檢測您的第一個AEM應用程式以使用它。
+了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 
 >[!TIP]
 >
->如果您想要直接參閱範例，您可以檢閱 [GitHub上的通用編輯器範例應用程式。](https://github.com/adobe/universal-editor-sample-editable-app)
+>如果您想直接研究範例，可以查看 [GitHub 上的 Universal Editor 範例應用程式。](https://github.com/adobe/universal-editor-sample-editable-app)
 
-## 入門步驟 {#onboarding}
+## 上線步驟 {#onboarding}
 
-雖然通用編輯器可以編輯來自任何來源的內容，但本檔案將以AEM應用程式為例。
+雖然 Universal Editor 可以編輯來自任何來源的內容，但本文件將以 AEM 應用程式為例。
 
-您可以執行許多步驟來建立AEM應用程式，並檢測應用程式以使用通用編輯器。
+要將 AEM 應用程式上線，並對其進行檢測以使用 Universal Editor 的步驟很多。
 
-1. [請求對通用編輯器的存取權。](#request-access)
-1. [包含通用編輯器核心程式庫。](#core-library)
-1. [新增必要的OSGi設定。](#osgi-configurations)
+1. [要求存取 Universal Editor。](#request-access)
+1. [包括 Universal Editor 核心庫。](#core-library)
+1. [新增必要的 OSGi 設定。](#osgi-configurations)
 1. [檢測頁面。](#instrument-page)
 
-本檔案將引導您完成這些步驟。
+本文件將引導您完成這些步驟。
 
-## 要求存取通用編輯器 {#request-access}
+## 要求存取 Universal Editor {#request-access}
 
-您必須先要求通用編輯器的存取權。 請前往 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) 和驗證您是否擁有通用編輯器的存取權。
+您需要先要求存取 Universal Editor。請移至 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)，然後驗證您是否有權存取 Universal Editor。
 
-如果您沒有存取權，可透過連結至相同頁面的表單來請求。
+如果您沒有存取權，可以透過同一頁面上連結的表格提出要求。
 
-## 包含通用編輯器核心程式庫 {#core-library}
+## 包括 Universal Editor 核心庫。 {#core-library}
 
-應用程式必須包含下列相依性，才能檢測供通用編輯器使用。
+您的應用程式需要包含以下相依性，才可與 Universal Editor 一起使用。
 
 ```javascript
 @adobe/universal-editor-cors
 ```
 
-要激活檢測，需要將以下導入添加到 `index.js`.
+要啟動檢測，需要將以下匯入內容新增到您的 `index.js`。
 
 ```javascript
 import "@adobe/universal-editor-cors";
 ```
 
-### 非React應用程式的替代方案 {#alternative}
+### Non-React 應用程式的替代方案 {#alternative}
 
 若您未實作React應用程式，且/或需要伺服器端轉譯，替代方法是將下列內容納入檔案內文。
 
@@ -58,20 +58,20 @@ import "@adobe/universal-editor-cors";
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
 ```
 
-## 新增必要的OSGi設定 {#osgi-configurations}
+## 新增必要的 OSGi 設定 {#osgi-configurations}
 
-若要使用通用編輯器來編輯AEM內容與您的應用程式，必須在AEM內完成CORS和Cookie設定。
+為了能夠使用 Universal Editor 透過您的應用程式編輯 AEM 內容，必須在 AEM 中完成 CORS 和 Cookie 設定。
 
-以下 [OSGi設定必須在AEM製作執行個體上設定。](/help/implementing/deploying/configuring-osgi.md)
+[必須在 AEM 編寫執行個體上設定以下 OSGi 設定。](/help/implementing/deploying/configuring-osgi.md)
 
-* `SameSite Cookies = None` 在 `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
-* 刪除X-FRAME-OPTIONS:中的SAMEORIGIN標題 `org.apache.sling.engine.impl.SlingMainServlet`
+* `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` 中的 `SameSite Cookies = None`
+* 移除 X-FRAME-OPTIONS：`org.apache.sling.engine.impl.SlingMainServlet` 中的 SAMEORIGIN 標頭
 
 ### com.day.crx.security.token.impl.impl.TokenAuthenticationHandler {#samesite-cookies}
 
-登入Token Cookie必須以第三方網域的形式傳送至AEM。 因此，同網站Cookie必須明確設定為 `None`.
+登入權杖 Cookie 必須作為協力廠商網域發送到 AEM。因此，必須將同網站的 Cookie 明確設定為 `None`。
 
-此屬性必須設定在 `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` OSGi配置。
+此屬性必須在 `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`OSGi 設定中設定。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -82,9 +82,9 @@ import "@adobe/universal-editor-cors";
 
 ### org.apache.sling.engine.impl.SlingMainServlet {#sameorigin}
 
-X-Frame-Options:SAMEORIGIN可防止在iframe內轉譯AEM頁面。 移除標題可讓頁面載入。
+X-Frame-Options：SAMEORIGIN 禁止在 iframe 中呈現 AEM 頁面。移除標頭可載入頁面。
 
-此屬性必須設定在 `org.apache.sling.engine.impl.SlingMainServlet` OSGi配置。
+此屬性必須在 `org.apache.sling.engine.impl.SlingMainServlet`OSGi 設定中設定。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -96,36 +96,36 @@ X-Frame-Options:SAMEORIGIN可防止在iframe內轉譯AEM頁面。 移除標題�
 
 ## 檢測頁面 {#instrument-page}
 
-通用編輯器服務需要 [統一資源名稱(URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) 識別並運用正在編輯之應用程式中內容的正確後端系統。 因此，需要URN架構將內容對應回內容資源。
+Universal Editor 服務需要[統一資源名稱 (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) 來識別和使用正確的後端系統來處理應用程式中正在編輯的內容。因此，需要 URN 模式將內容對應回內容資源。
 
-添加到頁面的檢測屬性大多由 [HTML微資料，](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) 一種行業標準，也可用於使HTML更加語義化、使HTML文檔可索引等等。
+新增到頁面的檢測屬性主要包括 [HTML Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)，這是一種業界標準格式，也可用於讓 HTML 更具語義，使 HTML 文件可編製索引等。
 
 ### 建立連線 {#connections}
 
-應用程式中使用的連線會儲存為 `<meta>` 頁面的標籤 `<head>`.
+應用程式中使用的連線會儲存為`<meta>`頁面中的標記`<head>`。
 
 ```html
 <meta name="urn:auecon:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<referenceName>`  — 這是一個簡短名稱，在文檔中重複使用，用於標識連接。 例如 `aemconnection`
-* `<protocol>`  — 這表示要使用的通用編輯器持久性服務的持久性插件。 例如 `aem`
-* `<url>`  — 這是系統的URL，系統會保存變更。 例如 `http://localhost:4502`
+* `<referenceName>` - 這是簡短名稱，可在文件中重複使用以標識連線。例如 `aemconnection`
+* `<protocol>` - 這代表要使用 Universal Editor 持續性服務的哪個持續性外掛程式。例如 `aem`
+* `<url>` - 這是儲存變更之系統的 URL。例如 `http://localhost:4502`
 
-簡短識別碼 `auecon` 代表Adobe通用編輯器連線。
+簡短識別碼 `auecon` 表示 Adobe Universal Editor 連線。
 
-`itemid`s將使用 `urn` 前置詞來縮短識別碼。
+`itemid` 將使用 `urn` 首碼來縮短識別碼。
 
 ```html
 itemid="urn:<referenceName>:<resource>"
 ```
 
-* `<referenceName>`  — 這是 `<meta>` 標籤。 例如 `aemconnection`
-* `<resource>`  — 這是指向目標系統中資源的指針。 例如AEM內容路徑，例如 `/content/page/jcr:content`
+* `<referenceName>` - 這是 `<meta>` 標記中提及的命名參考。例如 `aemconnection`
+* `<resource>` - 這是指向目標系統中資源的指標。像是 AEM 內容路徑，例如 `/content/page/jcr:content`
 
 >[!TIP]
 >
->請參閱檔案 [屬性和類型](attributes-types.md) 有關通用編輯器所需資料屬性和類型的詳細資訊。
+>請參閱文件[屬性和類型](attributes-types.md)以深入了解 Universal Editor 需要的資料屬性和類型。
 
 ### 連線範例 {#example}
 
@@ -157,19 +157,19 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## 準備好使用通用編輯器 {#youre-ready}
+## 您已準備好使用 Universal Editor {#youre-ready}
 
-您的應用程式現在經過創作，可使用通用編輯器！
+您的應用程式現在可以使用 Universal Editor 了！
 
-請參閱該文檔 [使用通用編輯器編寫內容](authoring.md) 了解內容作者使用通用編輯器建立內容有多簡單且直覺。
+請參閱文件[使用 Universal Editor 編寫內容](authoring.md)，了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
 
 ## 其他資源 {#additional-resources}
 
-若要進一步了解通用編輯器，請參閱這些檔案。
+要了解有關 Universal Editor 的更多資訊，請參閱以下文件。
 
-* [通用編輯器簡介](introduction.md)  — 了解通用編輯器如何啟用編輯任何實作中任何內容的任何方面，以提供優越的體驗、提高內容速度，並提供最新的開發人員體驗。
-* [使用通用編輯器編寫內容](authoring.md)  — 了解內容作者使用通用編輯器建立內容有多簡單且直覺。
+* [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實施中編輯任何方面的內容，以提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
+* [使用 Universal Editor 編寫內容](authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
 * [使用通用編輯器發佈內容](publishing.md)  — 了解通用視覺編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
-* [通用編輯器架構](architecture.md)  — 了解通用編輯器的架構，以及資料在其服務與層之間如何流動。
-* [屬性和類型](attributes-types.md)  — 了解通用編輯器需要的資料屬性和類型。
-* [通用編輯器驗證](authentication.md)  — 了解通用編輯器如何驗證。
+* [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
+* [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
+* [Universal Editor 驗證](authentication.md) - 了解 Universal Editor 如何進行驗證。

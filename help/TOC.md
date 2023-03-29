@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: c5395c9c844744655054bb15e1b9b2178792b8b5
 workflow-type: tm+mt
 source-wordcount: '4011'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -236,17 +236,17 @@ ht-degree: 98%
 + Sites {#sites}
    + [AEM Sites as a Cloud Service ](/help/sites-cloud/home.md)
    + [AEM Cloud Service 中 AEM Sites 的重大變更](/help/sites-cloud/sites-cloud-changes.md)
-   + 製作 {#authoring}
+   + 編寫 {#authoring}
       + 快速入門 {#getting-started}
-         + [製作頁面的快速入門手冊](/help/sites-cloud/authoring/getting-started/quick-start.md)
-         + [製作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
+         + [編寫頁面的快速入門手冊](/help/sites-cloud/authoring/getting-started/quick-start.md)
+         + [編寫概念](/help/sites-cloud/authoring/getting-started/concepts.md)
          + [基本處理](/help/sites-cloud/authoring/getting-started/basic-handling.md)
          + [搜尋](/help/sites-cloud/authoring/getting-started/search.md)
          + [設定帳戶環境](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [您的收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
       + [Headless 內容作者歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
-      + 製作基礎知識 {#fundamentals}
+      + 編寫基礎知識 {#fundamentals}
          + [環境與工具](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [新增頁面註解](/help/sites-cloud/authoring/fundamentals/annotations.md)
          + [建立新網站](/help/sites-cloud/authoring/fundamentals/create-site.md)
@@ -260,11 +260,11 @@ ht-degree: 98%
          + [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
          + [匯出為 CSV](/help/sites-cloud/authoring/fundamentals/csv-export.md)
          + [元件](/help/sites-cloud/authoring/fundamentals/components.md)
-         + [為行動裝置製作](/help/sites-cloud/authoring/fundamentals/mobile.md)
+         + [為行動裝置編寫](/help/sites-cloud/authoring/fundamentals/mobile.md)
          + [建立可存取的內容 (符合 WCAG 2.1)](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
          + [疑難排解](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
          + [鍵盤快速鍵](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-      + 製作功能 {#features}
+      + 編寫功能 {#features}
          + [頁面範例](/help/sites-cloud/authoring/features/templates.md)
          + [樣式系統](/help/sites-cloud/authoring/features/style-system.md)
          + [頁面版本](/help/sites-cloud/authoring/features/page-versions.md)
@@ -292,7 +292,7 @@ ht-degree: 98%
       + 個人化 {#personalization}
          + [個人化概觀](/help/sites-cloud/authoring/personalization/overview.md)
          + [使用 ContextHub 資料預覽頁面](/help/sites-cloud/authoring/personalization/contexthub.md)
-         + [使用定位模式製作目標內容](/help/sites-cloud/authoring/personalization/targeted-content.md)
+         + [使用定位模式編寫目標內容](/help/sites-cloud/authoring/personalization/targeted-content.md)
          + [在多個網站中使用目標內容](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
          + [如何架構目標內容的多網站管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [管理活動](/help/sites-cloud/authoring/personalization/activities.md)
@@ -506,7 +506,7 @@ ht-degree: 98%
 + Forms {#forms}
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
-      + [Adobe Experience Manager Forms頂尖創新](/help/forms/latest-innovations.md)
+      + [重要 Adobe Experience Manager Forms 創新](/help/forms/latest-innovations.md)
       + [重大變更](/help/forms/notable-changes.md)
       + [架構](/help/forms/aem-forms-cloud-service-architecture.md)
       + [常見問題](/help/forms/faq.md)
@@ -523,8 +523,8 @@ ht-degree: 98%
          + [將 AEM Forms as a Cloud Service 與 Adobe Sign 整合](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [將 AEM Forms as a Cloud Service 與 DocuSign 整合](/help/forms/integrate-docusign-adaptive-forms.md)
          + [將 AEM Forms as a Cloud Service 與 Adobe Analytics 整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-         + [將調適型表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
-         + [在 AEM Sites 頁面中內嵌調適型表單](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
+         + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
       + 表單資料模式 {#use-form-data-model}
          + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
@@ -534,20 +534,20 @@ ht-degree: 98%
          + [建立表單資料模型](/help/forms/create-form-data-models.md)
          + [處理表單資料模型](/help/forms/work-with-form-data-model.md)
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
-   + 調適型表單 {#adaptive-forms-authoring}
-      + 製作調適型表單 - 核心元件{#authoring-adaptive-forms-core-components}
+   + 最適化表單 {#adaptive-forms-authoring}
+      + 編寫最適化表單 - 核心元件{#authoring-adaptive-forms-core-components}
          + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
             + [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
-            + [為調適型表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
-            + [為調適型表單產生記錄文件](/help/forms/generate-document-of-record-core-components.md)
-            + [峰會活頁簿](/help/forms/summit-2023-workbook.md)
-      + 製作調適型表單 - 基礎元件{#authoring-adaptive-forms-foundation-components}
-         + 將您的 PDF forms 轉換為調適型表單 {#afcs}
+            + [為最適化表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
+            + [為最適化表單產生記錄文件](/help/forms/generate-document-of-record-core-components.md)
+            + [Summit 活頁簿](/help/forms/summit-2023-workbook.md)
+      + 編寫最適化表單 - 基礎元件{#authoring-adaptive-forms-foundation-components}
+         + 將您的 PDF forms 轉換為最適化表單 {#afcs}
             + [自動表單轉換服務簡介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
             + [將現有 PDF 表單轉換為最適化表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
             + [檢閱並修正轉換後的表單](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
          + 建立最適化表單{#create-an-adaptive-form-on-forms-cs}
-            + [製作調適型表單簡介](/help/forms/introduction-forms-authoring.md)
+            + [編寫最適化表單簡介](/help/forms/introduction-forms-authoring.md)
             + [建立最適化表單](/help/forms/creating-adaptive-form.md)
             + [建立範例](/help/forms/template-editor.md)
             + [建立主題](/help/forms/themes.md)
@@ -559,7 +559,7 @@ ht-degree: 98%
             + [使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [套用手寫簽名](/help/forms/signing-forms-using-scribble.md)
             + [將表格新增至最適化表單](/help/forms/adaptive-forms-tables.md)
-            + [將註解支援新增至調適型表單](/help/forms/footnotes-richtextsupport.md)
+            + [將註解支援新增至最適化表單](/help/forms/footnotes-richtextsupport.md)
          + 設定版面並將樣式套用至最適化表單{#configure-layout-of-an-adaptive-form}
             + [設定最適化表單的版面](/help/forms/layout-capabilities-adaptive-forms.md)
             + [使用版面模式調整元件大小](/help/forms/resize-using-layout-mode.md)
@@ -574,9 +574,9 @@ ht-degree: 98%
             + [設定重新導向頁面](/help/forms/configuring-redirect-page.md)
             + [為最適化表單設定非同步提交](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [建立自訂提交動作](/help/forms/custom-submit-action-form.md)
-         + [預填調適型表單欄位](/help/forms/prepopulate-adaptive-form-fields.md)
+         + [預填最適化表單欄位](/help/forms/prepopulate-adaptive-form-fields.md)
          + [產生記錄文件](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-         + [將對新語言環境的支援新增至調適型表單](/help/forms/supporting-new-language-localization.md)
+         + [將對新語言環境的支援新增至最適化表單](/help/forms/supporting-new-language-localization.md)
          + 新增或改進中繼資料{#manage-metadata}
             + [新增、移除或編輯最適化表單的中繼資料](/help/forms/manage-form-metadata.md)
             + [重複使用最適化表單的中繼資料屬性](/help/forms/reusing-adaptive-forms.md)
@@ -584,7 +584,7 @@ ht-degree: 98%
             + [建立無障礙的最適化表單](/help/forms/creating-accessible-adaptive-forms.md)
          + [設定表單入口網站](/help/forms/configure-forms-portal.md)
          + [建立和管理評論](/help/forms/create-reviews-forms.md)
-   + 以表單為中心的工作流程 {#create-form-centric-workflows}
+   + 以 Forms 為中心的工作流程 {#create-form-centric-workflows}
       + [在工作流程中使用以 Forms 為中心的步驟 + 步驟參考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以 Forms 為中心的工作流程中使用變數](/help/forms/variable-in-aem-workflows.md)
       + [使用「外出」選項](/help/forms/configure-out-of-office-settings.md)
@@ -619,7 +619,7 @@ ht-degree: 98%
    + 設定 Screens as a Cloud Service 專案 {#configure-screens-cloud}
       + [瀏覽至 Screens 服務提供者](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
       + [使用 Screens 內容提供者](/help/screens-cloud/configuring/using-screens-content-provider.md)
-      + [建立 Screens 視訓轉譯](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
+      + [建立 Screens 視訊轉譯](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [為 Screens as a Cloud Service 設定 Dispatcher](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
    + 建立內容 {#create-content}
       + [在 Screens 內容提供者中建立和管理專案](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
@@ -627,7 +627,7 @@ ht-degree: 98%
       + [管理出版物](/help/screens-cloud/creating-content/manage-publish.md)
       + [在 Screens 服務提供者中建立和管理顯示器](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md)
       + [將頻道指派到顯示器](/help/screens-cloud/creating-content/assigning-channels-to-display.md)
-   + 管理玩家和註冊 {#manage-player-registration}
+   + 管理播放器和註冊 {#manage-player-registration}
       + [安裝 Screens 播放器](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
       + [註冊播放器](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
       + [將播放器指派到顯示器](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
@@ -645,7 +645,7 @@ ht-degree: 98%
    + Commerce 歷程{#journeys}
       + 內容作者歷程 {#author}
          + [AEM Content and Commerce 內容作者歷程](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
-         + [CIF 製作快速入門](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+         + [CIF 編寫快速入門](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
          + [管理產品目錄頁面和範例](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
          + [建立分階段產品目錄體驗](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
          + [建立產品體驗](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
@@ -655,7 +655,7 @@ ht-degree: 98%
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM 店面{#storefront}
       + [快速入門](/help/commerce-cloud/getting-started.md)
-      + 製作 {#authoring}
+      + 編寫 {#authoring}
          + [Commerce 體驗](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
          + [產品駕駛艙](/help/commerce-cloud/authoring/product-cockpit.md)
          + [多範例使用](/help/commerce-cloud/authoring/multi-template-usage.md)
@@ -691,8 +691,8 @@ ht-degree: 98%
       + [內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
       + [內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
       + [管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
-      + 製作{#authoring}
-         + [製作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
+      + 編寫 {#authoring}
+         + [編寫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
          + [文字編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
          + [相關聯的內容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
          + [變數](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
@@ -726,7 +726,7 @@ ht-degree: 98%
          + [如何透過 AEM Delivery API 存取您的內容](/help/journey-headless/developer/access-your-content.md)
          + [如何透過 AEM Assets API 更新您的內容](/help/journey-headless/developer/update-your-content.md)
          + [如何整合一切](/help/journey-headless/developer/put-it-all-together.md)
-         + [如何使用無周邊應用程式](/help/journey-headless/developer/go-live.md)
+         + [如何使用 Headless 應用程式](/help/journey-headless/developer/go-live.md)
          + [選擇性 - 如何使用 AEM 建立單頁應用程式](/help/journey-headless/developer/create-spa.md)
          + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
       + Headless 內容架構者歷程 {#architect}
@@ -925,9 +925,9 @@ ht-degree: 98%
       + [為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md)
       + [OSGi 設定 API](/help/implementing/deploying/osgi-configuration-api.md)
       + [資源對應](/help/implementing/deploying/resource-mapping.md)
-   + 作者階層 {#author-tier}
-      + [存取作者階層](/help/implementing/author-tier/accessing-the-author-tier.md)
-      + [保護作者階層](/help/implementing/author-tier/securing-the-author-tier.md)
+   + 編寫階層 {#author-tier}
+      + [存取編寫階層](/help/implementing/author-tier/accessing-the-author-tier.md)
+      + [保護編寫階層](/help/implementing/author-tier/securing-the-author-tier.md)
    + 內容傳遞概覽 {#content-delivery}
       + [內容傳遞流程](/help/implementing/dispatcher/overview.md)
       + [雲端中的 Dispatcher](/help/implementing/dispatcher/disp-overview.md)
@@ -961,11 +961,11 @@ ht-degree: 98%
    + 協助工具 {#accessibility}
       + [AEM as a Cloud Service 與網頁協助工具準則](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
-+ 通用編輯器 {#universal-editor}
-   + [通用編輯器簡介](/help/implementing/universal-editor/introduction.md)
-   + [使用通用編輯器編寫內容](/help/implementing/universal-editor/authoring.md)
++ Universal Editor {#universal-editor}
+   + [Universal Editor 簡介](/help/implementing/universal-editor/introduction.md)
+   + [使用 Universal Editor 編寫內容](/help/implementing/universal-editor/authoring.md)
    + [使用通用編輯器發佈內容](/help/implementing/universal-editor/publishing.md)
-   + [AEM通用編輯器快速入門](/help/implementing/universal-editor/getting-started.md)
-   + [通用編輯器架構](/help/implementing/universal-editor/architecture.md)
+   + [AEM 中 Universal Editor 快速入門](/help/implementing/universal-editor/getting-started.md)
+   + [Universal Editor 架構](/help/implementing/universal-editor/architecture.md)
    + [屬性和類型](/help/implementing/universal-editor/attributes-types.md)
-   + [通用編輯器驗證](/help/implementing/universal-editor/authentication.md)
+   + [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md)

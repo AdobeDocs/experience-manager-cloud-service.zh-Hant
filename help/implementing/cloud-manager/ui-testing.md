@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: a2507c65df5d42ac53fcbb0a81cc2fb897438f44
 workflow-type: tm+mt
 source-wordcount: '2147'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custo
 
 UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。此外，可以透過使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)輕鬆產生 UI 測試專案。
 
-UI測試會在每個Cloud Manager管道(具有 [**自訂UI測試** 步驟](/help/implementing/cloud-manager/deploy-code.md) in [生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 或 [非生產管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)包括回歸和新功能在內的任何 UI 測試都可以檢測和報告錯誤。
+UI 測試作為每個 Cloud Manager 管道的特定品質門的一部分執行，在[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)或選擇性[非生產管道中具有&#x200B;[**自訂 UI 測試**&#x200B;步驟](/help/implementing/cloud-manager/deploy-code.md)。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)包括回歸和新功能在內的任何 UI 測試都可以檢測和報告錯誤。
 
 與使用 Java 編寫的 HTTP 測試的自訂功能測試不同，UI 測試可以是 Docker 影像，其中包含以任何語言編寫的測試，只要它們遵循本節中定義的約定[構建 UI 測試。](#building-ui-tests)
 
 >[!TIP]
 >
->Adobe 建議遵循本文件中提供的結構和語言（JavaScript 和 WDIO）[ AEM Project 原型。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)
+>Adobe 建議遵循本文件中提供的結構和語言 (JavaScript 和 WDIO) [ AEM Project 原型。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)
 >
 >Adobe 還提供了一個以 Java 和 WebDriver 為主的 UI 測試模組範例。 如需更多詳細資訊，請參閱 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)。
 
@@ -65,7 +65,7 @@ UI測試會在每個Cloud Manager管道(具有 [**自訂UI測試** 步驟](/help
 
 >[!TIP]
 >
->這[AEM Project 原型](https://github.com/adobe/aem-project-archetype)可以為您產生 UI 測試專案 (遵照以下說明來測試)，但前提是您對編程語言沒有特殊要求。
+>這 [AEM Project 原型](https://github.com/adobe/aem-project-archetype)可以為您產生 UI 測試專案 (遵照以下說明來測試)，但前提是您對編程語言沒有特殊要求。
 
 ### 產生 Docker 建置內容 {#generate-docker-build-context}
 
@@ -74,7 +74,7 @@ UI測試會在每個Cloud Manager管道(具有 [**自訂UI測試** 步驟](/help
 * 產生一個包含`Dockerfile`以及使用您的測試構建 Docker 影像所需的所有其他文件。
 * 用`ui-test-docker-context`分類器。
 
-最簡單的方法是配置[Maven 組裝插件](https://maven.apache.org/plugins/maven-assembly-plugin/)建立 Docker 建置內容封存並為其指派正確的分類器。
+最簡單的方法是配置 [Maven 組裝插件](https://maven.apache.org/plugins/maven-assembly-plugin/)建立 Docker 建置內容封存並為其指派正確的分類器。
 
 您可以使用不同的技術和框架構建 UI 測試，但本節假定您的項目以類似於以下方式佈局。
 
@@ -209,9 +209,9 @@ UI測試會在每個Cloud Manager管道(具有 [**自訂UI測試** 步驟](/help
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 伺服器的 URL |
 | `SELENIUM_BROWSER` | `chrome` | Selenium 伺服器使用的瀏覽器實作 |
-| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 作者執行個體的 URL |
-| `AEM_AUTHOR_USERNAME` | `admin` | 用於登入 AEM 作者執行個體的使用者名稱 |
-| `AEM_AUTHOR_PASSWORD` | `admin` | 用於登入 AEM 作者執行個體的密碼 |
+| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 編寫執行個體的 URL |
+| `AEM_AUTHOR_USERNAME` | `admin` | 用於登入 AEM 編寫執行個體的使用者名稱 |
+| `AEM_AUTHOR_PASSWORD` | `admin` | 用於登入 AEM 編寫執行個體的密碼 |
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 發佈執行個體的 URL |
 | `AEM_PUBLISH_USERNAME` | `admin` | 用於登入 AEM 發佈執行個體的使用者名稱 |
 | `AEM_PUBLISH_PASSWORD` | `admin` | 用於登入 AEM 發佈執行個體的密碼 |
@@ -236,7 +236,7 @@ Adobe UI 測試範例使用指令碼 `wait-for-grid.sh` 處理此問題，該指
 
 ### 產生測試報告 {#generate-test-reports}
 
-Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。JUnit XML 格式是一種廣泛使用的報告測試結果的格式。如果 Docker 鏡像使用 Java 和 Maven，標準測試模組如[Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和[Maven 故障安全插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)可以開箱即用地產生此類報告。
+Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。JUnit XML 格式是一種廣泛使用的報告測試結果的格式。如果 Docker 鏡像使用 Java 和 Maven，標準測試模組如 [Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和 [Maven 故障安全插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)可以開箱即用地產生此類報告。
 
 如果 Docker 影像是使用其他編程語言或測試執行計劃實現的，請查看所選工具的文件以了解如何產生 JUnit XML 報告。
 
