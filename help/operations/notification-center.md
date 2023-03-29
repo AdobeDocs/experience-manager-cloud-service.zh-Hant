@@ -1,11 +1,11 @@
 ---
 title: 通知中心
-description: 利用通知中心方便地對事件和其他重要資訊採取行動
+description: 利用通知中心可輕鬆對事件和其他重要資訊採取行動
 hidefromtoc: true
 source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '638'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -13,60 +13,60 @@ ht-degree: 0%
 # 通知中心 {#notification-center}
 
 >[!NOTE]
->此功能尚未發行。
+>此功能尚未推出。
 
-設定後，AEM as Cloud Service會傳送有關客戶應採取動作之重要資訊的通知。 通知的範例包括已封鎖的佇列或即將到期的憑證集。 您可以在 [下表](#current-notification-types)、和會隨著時間而擴展。 通知會透過電子郵件和以新項目的形式接收，可在通知介面工具集下存取，方法是按一下Adobe Experience Cloud右上角的鈴聲圖示。 可以配置通知設定。
+設定後，AEM as Cloud Service 會發送有關客戶應採取行動的重要資訊通知。通知的範例包括鎖定佇列或即將到期的認證組。完整的通知類型集可以在[下表](#current-notification-types)中查看，其會隨時間推移增加。通知透過電子郵件和通知小工具下的新項目接收，可透過點擊整個 Adobe Experience Cloud 右上角的鈴鐺圖示來存取。可設定通知設定。
 
-收到通知時，您可以按一下通知，開啟AEMas a Cloud Service的通知中心，彈出式視窗顯示其他內容，說明客戶應採取的建議動作。
+收到通知後，可以點擊它打開 AEM as a Cloud Service 的通知中心，這會彈出顯示附加內容的快顯視窗，說明建議客戶採取的動作。
 
-除了顯示關於點按通知的資訊外，通知中心還作為中心，您可以在其中查看和管理當前和舊通知集。 <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
+除了顯示有關剛剛點擊的通知資訊外，通知中心還可充當中樞，讓您在其中查看和管理目前和較舊的通知組。<!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
 
-通知分為兩個高階類別：
+有兩種高級通知類別：
 
-1. 事件 — 已發生事件，通常需要迅速解決。 例如，解析已阻止的隊列
-1. 主動 — Adobe建議客戶在不久的將來應採取的動作。 例如，若要停止參考已棄用的UI。
+1. 事件 - 事件已經發生，通常需要及時解決。例如，解析鎖定的佇列
+1. 主動 - Adobe 建議客戶應在近期採取行動。例如，停止參考已棄用的 UI。
 
-請參閱 [下表](#current-notification-types) 以了解目前支援的通知。
+請參閱[下表](#current-notification-types)了解目前支援的通知。
 
-從「通知中心」螢幕中，您可以選擇特定的程式和環境，這將對該範圍進行篩選。
+從通知中心畫面中，您可以選擇特定的程序和環境，這可對該範圍進行篩選。
 
 ## 設定 {#configuration}
 
-您可以依照下列步驟來設定接收通知：
+您可以按照以下步驟設定接收通知：
 
-1. 建立下列產品設定檔，如所述 [本文](/help/journey-onboarding/notification-profiles.md)，從您的組織將適當的AdobeID指派給這些設定檔。
-1. 確定通知配置設定。 [在此頁面](https://experience.adobe.com/preferences/notification-section)，請確定Experience Manager訂閱已啟用，且 **其他** 複選框。 此外，建議將「電子郵件」區段設為 **即時通知** 這樣，您就會在事件發生後立即收到通知。
+1. 建立以下產品設定檔，如[本文](/help/journey-onboarding/notification-profiles.md)中所述，將您組織的適當 Adobe ID 分配給這些設定檔。
+1. 決定通知設定。[在此頁面](https://experience.adobe.com/preferences/notification-section)上，確保已啟用 Experience Manager 訂閱並選取&#x200B;**其他**&#x200B;核取方塊。此外，建議將電子郵件部分設定為&#x200B;**即時通知**，以便您在事件發生後立即收到通知。
 
 >[!NOTE]
->訂閱可在組織層級運作，讓訂閱者會收到這些方案中所有方案和環境的通知。
+>訂閱在組織層級執行，因此訂閱者將收到有關這些程序中的所有程序和環境通知。
 
 ## 詳細的使用者流程 {#detailed-user-flow}
 
-按一下電子郵件會帶您前往通知中心，彈出式視窗會顯示您所點按之通知的內容，在某些情況下，連結會顯示其他資訊，說明如何採取更正動作。
+點擊電子郵件會將您帶到通知中心，快顯視窗會顯示您點擊的通知內容，在某些情況下，還會顯示說明如何採取糾正措施的其他資訊連結。
 
-![事件詳細資訊](/help/operations/assets/incident-details.png)
+![事件詳細資料](/help/operations/assets/incident-details.png)
 
-按一下 **更多詳情** 連結會導覽使用者至本文，以下表格會參照通知，提供採取動作的相關指引。
+點擊&#x200B;**了解更多**&#x200B;連結可將使用者導覽至本文，下表可參考其中的通知，其提供採取何種動作的指導。
 
-在通知中心，您可以看到其他最近通知的清單。 建議您使用「動作」清單確認通知，以Adobe您的組織已知該任務，並稍後在採取更正動作時解決通知。
+在通知中心，您可以看到其他最近通知的清單。建議您使用「動作」清單確認通知，以便向 Adobe 表明您的組織已了解該任務，並在稍後採取糾正措施後解決該通知。
 
 ![通知清單](/help/operations/assets/notification-list.png)
 
-在大多數情況下，通知應提供解決問題的所有必要內容。 不過，如果Adobe支援有問題，您可以按一下 **聯絡支援** 通知快顯視窗中的連結。 這將顯示一個表單，您可以在其中描述問題並提交它以建立支援票證，該表單還包括對特定通知的引用，以便Adobe支援工程師具有相關上下文。
+在大多數情況下，通知應提供解決問題的所有必要內容。但是，如果對 Adobe 支援有疑問，您可以點擊通知快顯視窗中的&#x200B;**聯絡支援人員**&#x200B;連結。這將彈出一個表格，您可以在表格中描述問題並提交它以建立支援票證，其中可包含對特定通知的參考，以便 Adobe 支援工程師了解相關內容。
 
-![聯繫支援1](/help/operations/assets/contact-support1.png)
+![聯絡支援 1](/help/operations/assets/contact-support1.png)
 
-![聯繫支援2](/help/operations/assets/contact-support2.png)
+![聯絡支援 2](/help/operations/assets/contact-support2.png)
 
-如同所有支援票證，它會顯示在 [Adobe Admin Console的支援案例索引標籤](https://helpx.adobe.com/enterprise/using/support-for-enterprise.html)，您可在此追蹤並新增其他備注。
+與所有支援票證一樣，它會出現在 [Adobe Admin Console 的「支援案例」標籤](https://helpx.adobe.com/enterprise/using/support-for-enterprise.html)中，您可以在其中追蹤它並新增其他評論。
 
-![Admin Console支援](/help/operations/assets/admin-console-support.png)
+![Admin Console 支援](/help/operations/assets/admin-console-support.png)
 
-## 目前的通知類型 {#current-notification-types}
+## 目前通知類型 {#current-notification-types}
 
-下表列出目前支援的通知類型
+下表列出了目前支援的通知類型
 
-| 通知類型 | 相關產品設定檔 | 更正操作 |
+| 通知類型 | 相關產品簡介 | 糾正措施 |
 |---|---|---|
-| 阻止的複製隊列 | 事件 | 按照 [復寫檔案](/help/operations/replication.md#troubleshooting) |
-| 即將到期的S2S憑證 | 主動 | 了解如何在 [產生伺服器端API檔案的存取權杖](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) |
+| 鎖定的複製佇列 | 事件 | 按照[複製文件](/help/operations/replication.md#troubleshooting)中的說明解鎖佇列 |
+| 即將到期的 S2S 認證 | 主動 | 在[為伺服器端 API 產生權杖文件](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)中，了解如何重新整理認證 |
