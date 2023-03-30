@@ -3,10 +3,10 @@ title: 持續性 GraphQL 查詢
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保留 GraphQL 查詢，以期將效能最佳化。用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
-workflow-type: ht
-source-wordcount: '1311'
-ht-degree: 100%
+source-git-commit: 872fe7a96f58df0e1e9cce29367cc71778fedb78
+workflow-type: tm+mt
+source-wordcount: '1541'
+ht-degree: 73%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >
 >建議使用持續性查詢。如需詳細資訊以及相關的 Dispatcher 設定，請參閱 [GraphQL 查詢最佳做法 (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices)。
 
-AEM 有提供 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)，可讓您在[傳送到生產環境](#transfer-persisted-query-production)之前，開發、測試和保留您的 GraphQL 查詢。如果需要自訂 (例如[自訂快取](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)時)，您可以使用 API，請參閱[如何保留 GraphQL 查詢](#how-to-persist-query)中提供的 curl 範例。
+AEM 有提供 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)，可讓您在[傳送到生產環境](#transfer-persisted-query-production)之前，開發、測試和保留您的 GraphQL 查詢。需要自訂的情況(例如 [自訂快取](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries))您可以使用API;請參閱 [如何保留GraphQL查詢](#how-to-persist-query).
 
 ## 持續性查詢和端點 {#persisted-queries-and-endpoints}
 
@@ -56,10 +56,10 @@ AEM 有提供 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)，可�
 有多種保留查詢的方法，包括：
 
 * GraphiQL IDE - 請參閱[儲存持續性查詢](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (首選方法)
-* curl - 請參閱以下範例。
+* cURL — 請參閱下列範例
 * 其他工具，包括 [Postman](https://www.postman.com/)
 
-GraphiQL IDE 是保留查詢的&#x200B;**首選**&#x200B;方法。若要使用 **curl** 命令列工具保留給定查詢：
+GraphiQL IDE 是保留查詢的&#x200B;**首選**&#x200B;方法。若要使用 **cURL** 命令行工具：
 
 1. 透過將查詢放入新端點 URL `/graphql/persist.json/<config>/<persisted-label>` 來準備查詢。
 
@@ -261,42 +261,110 @@ query getAdventuresByActivity($activity: String!) {
 
 ## 快取持續性查詢 {#caching-persisted-queries}
 
-建議使用持續性查詢，因為可以在 Dispatcher 和 CDN 層快取，最終提高發出要求之用戶端應用程式的效能。
+建議使用持續查詢，因為可在 [Dispatcher](/help/headless/deployment/dispatcher.md) 和內容傳遞網路(CDN)層，最終改善請求用戶端應用程式的效能。
 
-依預設，AEM 將根據預設的存留時間 (TTL) 使內容傳遞網路 (CDN) 快取失效。
+依預設，AEM會根據存留時間(TTL)定義使快取失效。 這些TTL可由下列參數定義。 這些參數可透過各種方式存取，而名稱會根據所使用的機制而改變：
 
-此值設定為：
+| 快取類型 | [HTTP標題](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi配置  | Cloud Manager |
+|--- |--- |--- |--- |--- |
+| 瀏覽器 | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
+| CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
+| CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
+| CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 
-* Dispatcher 和 CDN (也稱為 *共用快取*) 的預設 TTL 為 7200 秒
-   * 預設值：s-maxage=7200
-* 用戶端 (例如瀏覽器) 的預設 TTL 為 60
-   * 預設值：maxage=60
+### 製作例項 {#author-instances}
 
-如果要變更 GraphLQ 查詢的 TTL，則查詢必須是：
+對於製作例項，預設值為：
 
-* 在管理 [HTTP 快取標頭 - 從 GraphQL IDE](#http-cache-headers) 後持續存在
-* 使用 [API 方法](#cache-api)持續存在。
+* `max-age`  : 60
+* `s-maxage` : 60
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
 
-### 以 GraphQL 管理 HTTP 快取標頭  {#http-cache-headers-graphql}
+這些：
+
+* 無法覆寫：
+   * OSGi設定
+* 可以覆寫：
+   * 使用cURL定義HTTP標題設定的要求；應包含適當的設定 `cache-control` 和/或 `surrogate-control`;如需範例，請參閱 [在持續查詢層級管理快取](#cache-persisted-query-level)
+   * 若您指定 **標題** 對話框 [GraphiQL IDE](#http-cache-headers-graphiql-ide)
+
+### 發佈例項 {#publish-instances}
+
+對於發佈例項，預設值為：
+
+* `max-age`  : 60
+* `s-maxage` : 7200
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
+
+可以覆寫下列項目：
+
+* [從GraphQL IDE](#http-cache-headers-graphiql-ide)
+
+* [在持續查詢層級](#cache-persisted-query-level);這包括在命令列介面中使用cURL將查詢發佈至AEM，以及發佈持續查詢。
+
+* [與Cloud Manager變數](#cache-cloud-manager-variables)
+
+* [OSGi設定](#cache-osgi-configration)
+
+### 在GraphiQL IDE中管理HTTP快取標頭 {#http-cache-headers-graphiql-ide}
 
 GraphiQL IDE - 請參閱[儲存持續性查詢](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
 
-### 從 API 管理快取 {#cache-api}
+### 在持續查詢層級管理快取 {#cache-persisted-query-level}
 
-這涉及在命令列介面中使用 CURL 將查詢發佈到 AEM。
+這包括在命令列介面中使用cURL將查詢發佈至AEM。
 
-舉例來說：
+如需PUT（建立）方法的範例：
 
-```xml
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "https://publish-p123-e456.adobeaemcloud.com/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```bash
+curl -u admin:admin -X PUT \
+--url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+--header "Content-Type: application/json" \
+--data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-`cache-control` 可以在建立時 (PUT) 或稍後 (例如透過 POST 要求) 設定。建立持續性查詢時，快取控制是選用的，因為 AEM 可以提供預設值。如需有關如何使用 curl 保留查詢的範例，請參閱[如何保留 GraphQL 查詢](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)。
+如需POST（更新）方法的範例：
+
+```bash
+curl -u admin:admin -X POST \
+--url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+--header "Content-Type: application/json" \
+--data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
+```
+
+`cache-control` 可以在建立時 (PUT) 或稍後 (例如透過 POST 要求) 設定。建立持續性查詢時，快取控制是選用的，因為 AEM 可以提供預設值。請參閱 [如何保留GraphQL查詢](#how-to-persist-query)，以示使用cURL保留查詢的範例。
+
+### 使用Cloud Manager變數管理快取 {#cache-cloud-manager-variables}
+
+[Cloud Manager環境變數](/help/implementing/cloud-manager/environment-variables.md) 可以由Cloud Manager定義，以定義必要值：
+
+| 名稱 | 值 | 套用的服務 | 類型 |
+|--- |--- |--- |--- |
+| `graphqlStaleIfError` | 86400 | *適當* | *適當* |
+| `graphqlSurrogateControl` | 600 | *適當* | *適當* |
+
+### 使用OSGi配置管理快取 {#cache-osgi-configration}
+
+若要全域管理快取，您可以 [配置OSGi設定](/help/implementing/deploying/configuring-osgi.md) 針對 **持續查詢服務配置**.
+
+>[!NOTE]
+>
+>OSGi設定僅適用於發佈執行個體。 設定存在於製作例項上，但會忽略。
+
+發佈執行個體的預設OSGi設定：
+
+* 讀取Cloud Manager變數（如果可用）:
+
+   | OSGi配置屬性 | 讀取 | Cloud Manager變數 |
+   |--- |--- |--- |
+   | `cacheControlMaxAge` | 讀取 | `graphqlCacheControl` |
+   | `surrogateControlMaxAge` | 讀取 | `graphqlSurrogateControl` |
+   | `surrogateControlStaleWhileRevalidate` | 讀取 | `graphqlStaleWhileRevalidate` |
+   | `surrogateControlStaleIfError` | 讀取 | `graphqlStaleIfError` |
+
+* 若不可用，則OSGi設定會使用 [發佈例項的預設值](#publish-instances).
 
 ## 編碼查詢 URL 以供應用程式使用 {#encoding-query-url}
 
