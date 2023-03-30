@@ -3,7 +3,7 @@ title: 持續性 GraphQL 查詢
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保留 GraphQL 查詢，以期將效能最佳化。用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 872fe7a96f58df0e1e9cce29367cc71778fedb78
+source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 73%
@@ -272,6 +272,8 @@ query getAdventuresByActivity($activity: String!) {
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 
+{style="table-layout:auto"}
+
 ### 製作例項 {#author-instances}
 
 對於製作例項，預設值為：
@@ -345,6 +347,8 @@ curl -u admin:admin -X POST \
 | `graphqlStaleIfError` | 86400 | *適當* | *適當* |
 | `graphqlSurrogateControl` | 600 | *適當* | *適當* |
 
+{style="table-layout:auto"}
+
 ### 使用OSGi配置管理快取 {#cache-osgi-configration}
 
 若要全域管理快取，您可以 [配置OSGi設定](/help/implementing/deploying/configuring-osgi.md) 針對 **持續查詢服務配置**.
@@ -363,6 +367,8 @@ curl -u admin:admin -X POST \
    | `surrogateControlMaxAge` | 讀取 | `graphqlSurrogateControl` |
    | `surrogateControlStaleWhileRevalidate` | 讀取 | `graphqlStaleWhileRevalidate` |
    | `surrogateControlStaleIfError` | 讀取 | `graphqlStaleIfError` |
+
+   {style="table-layout:auto"}
 
 * 若不可用，則OSGi設定會使用 [發佈例項的預設值](#publish-instances).
 
