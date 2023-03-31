@@ -1,20 +1,20 @@
 ---
 title: 通知設定檔
-description: 了解如何在Admin Console中建立使用者設定檔，以管理重要電子郵件通知的接收。
+description: 了解如何在 Admin Console 中建立使用者設定檔來管理重要電子郵件通知的接收。
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: f7b3dec6380266a35f1bf7d90e0195277dd37335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '934'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 
 # 通知設定檔 {#notification-profiles}
 
-了解如何在Admin Console中建立使用者設定檔，以管理重要電子郵件通知的接收。
+了解如何在 Admin Console 中建立使用者設定檔來管理重要電子郵件通知的接收。
 
 ## 概觀 {#overview}
 
@@ -23,34 +23,34 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 * **事件通知** - 這些通知是在事件期間或 Adobe 發現您的 AEM as a Cloud Service 環境存在潛在可用性問題時傳送的。
 * **主動通知** - 當 Adobe 支援團隊成員想要提供有關可使您的 AEM as a Cloud Service 環境受益的潛在最佳化或建議的指引時，將傳送這些通知。
 
-若要讓正確的使用者收到這些通知，您需要依照本檔案所述來設定及指派使用者設定檔。
+為了讓正確的使用者收到這些通知，您需要按照本文件中所述來設定和指派使用者設定檔。
 
 ## 必備條件 {#prerequisites}
 
-由於使用者設定檔是在Admin Console中建立和維護的，因此在建立通知設定檔之前，您必須：
+由於使用者設定檔是在 Admin Console 中建立和維護的，因此在針對通知建立設定檔之前，您必須：
 
-* 具有添加和配置檔案成員資格的權限。
+* 具有新增和設定成員資格的權限。
 * 擁有有效的 Adobe Admin Console 設定檔。
 
 ## 建立新的 Cloud Manager 產品設定檔 {#create-profiles}
 
-若要正確設定接收通知，您需要建立兩個使用者設定檔。 這些步驟只能執行一次。
+要正確設定接收通知，您需要建立兩個使用者設定檔。這些步驟只能執行一次。
 
 1. 請上 [`https://adminconsole.adobe.com` 登入 Admin Console。](https://adminconsole.adobe.com)
 
-1. 請確定您所在的組織正確無誤。
+1. 確認您位於正確的組織。
 
 1. 在「**概觀**」頁面，從「**產品和服務**」卡選取「**Adobe Experience Manager as a Cloud Service**」。
 
-   ![Admin Console中的產品和服務清單](assets/products_services.png)
+   在 ![Admin Console 中的產品和服務清單](assets/products_services.png)。
 
 1. 從所有執行個體清單瀏覽至 **Cloud Manager** 執行個體。
 
-   ![Admin Console中的例項清單](assets/cloud_manager_instance.png)
+   ![Admin Console 中的執行個體清單](assets/cloud_manager_instance.png)
 
 1. 您將看到所有已設定的 Cloud Manager 產品設定檔清單。
 
-   ![Admin Console中的產品設定檔](assets/cloud_manager_profiles.png)
+   ![Admin Console 中的產品設定檔](assets/cloud_manager_profiles.png)
 
 1. 按一下「**新增設定檔**」，並提供以下詳細資料：
 
@@ -68,7 +68,7 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 
 1. 按一下「**儲存**」。
 
-系統會建立您的兩個新通知設定檔。
+您的兩個新通知設定檔就此建立。
 
 >[!NOTE]
 >
@@ -76,11 +76,11 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 >
 >如果出現錯誤或未定義設定檔，Adobe 預設將通知指派到 **Cloud Manager 開發人員**&#x200B;或&#x200B;**部署管理員**&#x200B;設定檔的現有使用者。
 
-## 將使用者指派至通知設定檔 {#add-users}
+## 將使用者指派到通知設定檔 {#add-users}
 
-現在設定檔已建立完畢，您必須指派適當的使用者。 您可以在建立新使用者或更新現有使用者時執行此操作。
+設定檔現已建立，您必須指派適當的使用者。您可以在建立新使用者或更新現有使用者時執行此操作。
 
-### 將新使用者新增至設定檔 {#new-user}
+### 將新的使用者新增至設定檔 {#new-user}
 
 按照以下步驟新增尚未設定 Federated ID 的使用者。
 
@@ -88,13 +88,13 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 
 1. 如果您尚未登入，請登入 Admin Console，位於 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
 
-1. 確定您已選取適當的組織。
+1. 確認您選擇了適當的組織。
 
 1. 在「**概觀**」頁面，從「**產品和服務**」卡選取「**Adobe Experience Manager as a Cloud Service**」。
 
    ![使用者](assets/product_services.png)
 
-1. 如果您的團隊成員尚未設定 Federated ID，請從頂端導覽區域中選取「**使用者**」標籤，然後選取「**新增使用者**」。否則請跳至區段 [將現有使用者新增至設定檔。](#existing-users)
+1. 如果您的團隊成員尚未設定 Federated ID，請從頂端導覽區域中選取「**使用者**」標籤，然後選取「**新增使用者**」。否則請跳到[將現有使用者新增至設定檔](#existing-users)一節。
 
    ![使用者](assets/cloud_manager_add_user.png)
 
@@ -102,7 +102,7 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 
 1. 按一下「**選取產品**」標題下方的加號按鈕，開始選擇產品。
 
-1. 選擇 **Adobe Experience Manager as a Cloud Service** 並將一個或兩個新設定檔指派給使用者。
+1. 選取「**Adobe Experience Manager as a Cloud Service**」並將一個或兩個新設定檔指派給使用者。
 
    * **事件通知 - Cloud Service**
    * **主動通知 - Cloud Service**
@@ -119,19 +119,19 @@ Adobe 有時需要就 AEM as a Cloud Service 環境聯絡使用者。除了產�
 
 1. 如果您尚未登入，請登入 Admin Console，位於 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
 
-1. 請確定您已選取適當的組織。
+1. 確認您選擇了適當的組織。
 
 1. 在「**概觀**」頁面，從「**產品和服務**」卡選取「**Adobe Experience Manager as a Cloud Service**」。
 
 1. 在頂端導覽區域中選取「**使用者**」標籤。
 
-1. 如果想要新增至通知設定檔的團隊成員已有同盟ID，請在清單中找出該使用者，然後按一下該使用者。 否則請跳至區段 [將新使用者新增至設定檔。](#add-user)
+1. 如果要新增到通知設定檔之團隊成員的 Federated ID 已經存在，請在清單中找出並按一下它。否則請跳到[將新的使用者新增至設定檔](#add-user)一節。
 
 1. 在使用者詳細資料視窗的「**產品**」區段，按下省略號按鈕，然後選取「**編輯**」。
 
 1. 在「**編輯產品**」視窗中，按一下「**選取產品**」標題下面的鉛筆按鈕，開始選擇產品。
 
-1. 選擇 **Adobe Experience Manager as a Cloud Service** 並將一個或兩個新設定檔指派給使用者。
+1. 選取「**Adobe Experience Manager as a Cloud Service**」並將一個或兩個新設定檔指派給使用者。
 
    * **事件通知 - Cloud Service**
    * **主動通知 - Cloud Service**
