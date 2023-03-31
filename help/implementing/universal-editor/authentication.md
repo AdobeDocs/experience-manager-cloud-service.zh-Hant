@@ -4,7 +4,7 @@ description: 了解 Universal Editor 如何進行驗證。
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -31,11 +31,11 @@ Universal Editor 使用 Adobe 的 Identity Management System (IMS) 驗證，這�
 
 ## 其他資源 {#additional-resources}
 
-要了解有關 Universal Editor 的更多資訊，請參閱以下文件。
+若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
 
 * [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實施中編輯任何方面的內容，以提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
 * [使用 Universal Editor 編寫內容](authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
-* [使用通用編輯器發佈內容](publishing.md)  — 了解通用視覺編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
+* [使用 Universal Editor 發佈內容](publishing.md) - 了解 Universal Visual Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
 * [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。

@@ -4,7 +4,7 @@ description: 了解 Universal Editor 的架構，以及資料如何在其服務�
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,12 +32,12 @@ Universal Editor 由四個基本建置區塊組成，這些建置區塊可進行
 
 ### 編輯 {#editors}
 
-* **Universal Editor** - Universal Editor 使用經過檢測的 DOM 來就地編輯內容。有關必要的中繼資料詳細資訊，請參閱文件[屬性和類型](attributes-types.md)。請參閱文件[AEM 中 Universal Editor 快速入門](getting-started.md)，了解 AEM 中的檢測範例。
+* **Universal Editor** - Universal Editor 使用經過檢測的 DOM 來就地編輯內容。如需有關必要的中繼資料詳細資訊，請參閱文件[屬性和類型](attributes-types.md)。請參閱文件[AEM 中 Universal Editor 快速入門](getting-started.md)，了解 AEM 中的檢測範例。
 * **屬性邊欄** - 元件的某些屬性不能在內容中編輯，例如浮動切換的切換時間，或摺疊式功能表標籤應始終打開或關閉。為了編輯此類元件資訊，編輯器的側欄提供了表單型編輯器。
 
 ### 遠端應用程式 {#remote-app}
 
-要在 Universal Editor 中編輯應用程式內容，就必須對 DOM 進行檢測。遠端應用程式必須在 DOM 中呈現某些屬性。有關必要中繼資料的詳細資訊，請參閱文件[屬性和類型](attributes-types.md)。請參閱文件[AEM 中 Universal Editor 快速入門](getting-started.md)，了解 AEM 中的檢測範例。
+要在 Universal Editor 中編輯應用程式內容，就必須對 DOM 進行檢測。遠端應用程式必須在 DOM 中呈現某些屬性。如需有關必要中繼資料的詳細資訊，請參閱文件[屬性和類型](attributes-types.md)。請參閱文件[AEM 中 Universal Editor 快速入門](getting-started.md)，了解 AEM 中的檢測範例。
 
 Universal Editor 致力於最小化 SDK，因此檢測是遠端應用程式實施的責任。
 
@@ -75,11 +75,11 @@ Universal Editor 將所有內容變更分派到稱為 Universal Editor Service �
 
 ## 其他資源 {#additional-resources}
 
-要了解有關 Universal Editor 的更多資訊，請參閱以下文件。
+若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
 
 * [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實施中編輯任何方面的內容，以提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
 * [使用 Universal Editor 編寫內容](authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
-* [使用通用編輯器發佈內容](publishing.md)  — 了解通用視覺編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
+* [使用 Universal Editor 發佈內容](publishing.md) - 了解 Universal Visual Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
 * [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
 * [Universal Editor 驗證](authentication.md) - 了解 Universal Editor 如何進行驗證。

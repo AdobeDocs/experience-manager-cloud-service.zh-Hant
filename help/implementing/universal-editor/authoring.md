@@ -4,7 +4,7 @@ description: 了解內容作者使用 Universal Editor 建立內容有多簡單�
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
 source-wordcount: '1152'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Universal Editor 支援在任意實施中編輯任何方面的內容，以提供
 
 >[!NOTE]
 >
->通用編輯器仍在開發中，目前無法編輯所有內容類型。
+>Universal Editor 仍在開發中，目前無法編輯所有內容類型。
 
 ## 準備應用程式 {#prepare-app}
 
@@ -108,7 +108,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 #### 位置列 {#Location-bar}
 
-位置列會顯示您編輯的頁面位址。 點選或點擊以輸入要編輯的其他頁面的網址。
+位置列會顯示您正在編輯頁面的網址。點選或點擊以輸入要編輯的其他頁面的網址。
 
 ![位置列](assets/address-bar.png)
 
@@ -138,7 +138,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 >[!TIP]
 >
->請參閱檔案 [使用通用視覺編輯器發佈內容](publishing.md) 以取得有關使用通用編輯器發佈的詳細資訊。
+>如需有關使用 Universal Visual Editor 進行發佈的詳細資訊，請參閱[使用 Universal Visual Editor 發佈內容](publishing.md)文件。
 
 ### 邊欄 {#rail}
 
@@ -190,10 +190,10 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ## 其他資源 {#additional-resources}
 
-要了解有關 Universal Editor 的更多資訊，請參閱以下文件。
+若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
 
 * [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實施中編輯任何方面的內容，以提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
-* [使用通用編輯器發佈內容](publishing.md)  — 了解通用視覺編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
+* [使用 Universal Editor 發佈內容](publishing.md) - 了解 Universal Visual Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
 * [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。

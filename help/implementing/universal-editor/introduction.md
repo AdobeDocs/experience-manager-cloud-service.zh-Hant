@@ -1,17 +1,17 @@
 ---
-title: 通用可視化編輯器簡介
-description: 了解通用視覺編輯器（亦稱通用編輯器）如何啟用無頭式和有頭式體驗的即是即得(WYSIWYG)編輯。 了解它如何協助內容作者提供絕佳的體驗、提升其內容速度，以及如何提供一流的開發人員體驗。
+title: Universal Visual Editor 簡介
+description: 了解透過 Universal Visual Editor (即 Universal Editor) 如何實現所見即所得 (WYSIWYG) 編輯任何無周邊和有周邊體驗。了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
 source-wordcount: '934'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 
-# 通用可視化編輯器簡介 {#introduction}
+# Universal Visual Editor 簡介 {#introduction}
 
-了解通用視覺編輯器（亦稱通用編輯器）如何啟用無頭式和有頭式體驗的即是即得(WYSIWYG)編輯。 了解它如何協助內容作者提供絕佳的體驗、提升其內容速度，以及如何提供一流的開發人員體驗。
+了解透過 Universal Visual Editor (即 Universal Editor) 如何實現所見即所得 (WYSIWYG) 編輯任何無周邊和有周邊體驗。了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
 
 ## 背景 {#background}
 
@@ -43,13 +43,13 @@ Universal Editor 可以用於任何實施、任何內容和任何方面的內容
 
 * **AEM 頁面結構** - `cq:Pages` 的嵌套`cq:Components`，包括體驗片段
 * **AEM 內容片段** - 編輯出現在體驗內容中內容片段的內容.
-* **檔案**  — 概念證明顯示，Word、Excel、Google檔案或Markdown檔案也可以使用相同方式編輯（即WIP）。
+* **文件** - 概念驗證表明 Word、Excel、Google 文件或 Markdown 文件也可以用相同的方式進行編輯 (這是 WIP)。
 
 ### 任何方面 {#any-aspect}
 
 對於內容作者而言，內容不僅僅是包含的資訊，還包括呈現和接收資訊的方式。內容帶有額外的中繼資料和檢測規則，Universal Editor 可以理解和編輯這些規則，包括：
 
-* **套用版面和樣式**  — 透過使用樣式系統，行銷從業者和內容作者可對其內容套用不同樣式，並為內容建立不同版面，例如欄、輪播、索引標籤、折疊式等。
+* **套用版面和樣式** - 透過使用樣式系統，行銷從業人員和內容作者可以將不同的樣式套用至其內容，並為內容建立不同的版面，例如欄、浮動切換、標籤、摺疊式功能表等。
 
 ## 值 {#value}
 
@@ -61,9 +61,9 @@ Universal Editor 可以用於任何實施、任何內容和任何方面的內容
 * **提高內容速度** - 為了簡化從業人員的管理工作流程，Universal Editor 可在預覽中編輯內容，透過僅顯示與該內容相關的選項來引導從業人員，並使工作流程獨立於內容來源。
 * **最先進的開發人員體驗** - 為了支援真實生活的異質應用程式環境，Universal Editor 具備低耦合且與技術無關的特性，可讓開發人員使用他們喜歡的技術堆棧來實施體驗。
 
-## 通用視覺編輯器和內容片段編輯器 {#universal-editor-content-fragment-editor}
+## Universal Visual Editor 和內容片段編輯器 {#universal-editor-content-fragment-editor}
 
-乍一看，似乎通用視覺編輯器和內容片段編輯器提供了類似的編輯功能。 然而，這些編輯器的功能大不相同，其完成的工作與行銷從業人員不同。
+乍看之下，Universal Visual Editor 和內容片段編輯器的編輯功能似乎很相似。然而，這些編輯器的功能大不相同，其完成的工作與行銷從業人員不同。
 
 ### 內容片段編輯器 {#content-fragment-editor}
 
@@ -71,7 +71,7 @@ Universal Editor 可以用於任何實施、任何內容和任何方面的內容
 
 * 要達成的基本工作是擴展內容策略。
 
-### 通用視覺編輯器 {#universal-editor}
+### Universal Visual Editor {#universal-editor}
 
 行銷從業人員會想建立根據指定內容版面量身定制的內容，以提供卓越的體驗。
 
@@ -79,16 +79,16 @@ Universal Editor 可以用於任何實施、任何內容和任何方面的內容
 
 ## 路線圖 {#road-map}
 
-必須指出，通用編輯器是正在進行的工作，本檔案中列出的某些能力是最終編輯的願景，不一定代表其當前能力。
+請務必注意，Universal Editor 還在開發中，本文件中列出的部分功能是最終編輯器的設想，不一定是目前擁有的功能。
 
-請聯絡您的 Adobe 聯絡人，了解 Universal Editor 規劃即將推出功能的詳細資訊.
+請聯絡您的 Adobe 聯絡人，了解 Universal Editor 規劃即將推出功能的詳細資訊。
 
 ## 其他資源 {#additional-resources}
 
-要了解有關 Universal Editor 的更多資訊，請參閱以下文件。
+若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
 
 * [使用 Universal Editor 編寫內容](authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
-* [使用通用編輯器發佈內容](publishing.md)  — 了解通用視覺編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
+* [使用 Universal Editor 發佈內容](publishing.md) - 了解 Universal Visual Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
 * [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
