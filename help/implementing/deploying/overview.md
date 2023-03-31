@@ -4,9 +4,9 @@ description: 部署至 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3509'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 98%
 >[!NOTE]
 >應用程式在本機電腦的行為與在 Adobe Cloud 上的行為有細微差異。在本機開發過程中必須考慮這些架構差異，在雲端基礎結構上部署時可能會導致不同的行為。由於這些差異，在生產環境中推出新的自訂程式碼之前，在開發和預備環境中執行詳盡的測試非常重要。
 
-若要為內部版本開發自訂程式碼，應下載並安裝相關版本的 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。有關使用 AEM as a Cloud Service Dispatcher 工具的更多資訊，請參閱[此頁面](/help/implementing/dispatcher/disp-overview.md)。
+若要為內部版本開發自訂程式碼，應下載並安裝相關版本的 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。如需有關使用 AEM as a Cloud Service Dispatcher 工具的詳細資訊，請參閱[此頁面](/help/implementing/dispatcher/disp-overview.md)。
 
 以下影片提供了有關如何將程式碼部署到 AEM as a Cloud Service 的概略說明：
 
@@ -76,7 +76,7 @@ ht-degree: 98%
 * 使用 AEM Web 主控台的 Configuration Manager 對開發人員的本機 AEM 環境進行必要的變更，然後將結果匯出到本機檔案系統上的 AEM 專案。
 * 手動在本機檔案系統的 AEM 專案中建立 OSGI 設定，為屬性名稱參考 AEM 主控台的 Configuration Manager。
 
-在[為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md) 閱讀有關 OSGI 設定的更多資訊。
+在[為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md) 閱讀有關 OSGI 設定的詳細資訊。
 
 ## 可變內容 {#mutable-content}
 
@@ -104,7 +104,7 @@ ht-degree: 98%
    * 資料夾 (新增、修改、移除)
    * 可編輯的範例 (新增、修改、移除)
    * 內容感知設定 (`/conf` 下的任何內容) (新增、修改、移除)
-   * 指令碼 (可以在套件安裝流程的各個階段觸發安裝 Hook。請參閱 [Jackrabbit filevault檔案](https://jackrabbit.apache.org/filevault/installhooks.html) 關於安裝掛接。 請注意，AEM CS 目前使用 Filevault 版本 3.4.0，它將安裝 Hook 限制為管理員使用者、系統使用者和管理員群組的成員))。
+   * 指令碼 (可以在套件安裝流程的各個階段觸發安裝 Hook。請參閱 [Jackrabbit Filevault 文件](https://jackrabbit.apache.org/filevault/installhooks.html)，瞭解如何安裝 Hook。請注意，AEM CS 目前使用 Filevault 版本 3.4.0，它將安裝 Hook 限制為管理員使用者、系統使用者和管理員群組的成員))。
 
 透過在 `/apps`下的 install.author 或 install.publish 資料夾中嵌入套件，可以將可變內容安裝限制在作者或發佈。在 AEM 6.5 中進行了重組以反映這種分離，有關建議的專案重組的詳細資料位在 [AEM 6.5 文件。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
@@ -159,7 +159,7 @@ ht-degree: 98%
 >
 >對於 ACL，建立深層結構可能很麻煩，因此較合理的做法是在較高層級和限制上定義 ACL，其中應該透過 rep:glob 限制來採取行動。
 
-有關 repoinit 的更多資訊，請參閱 [Sling 文件](https://sling.apache.org/documentation/bundles/repository-initialization.html)
+如需有關 repoinit 的詳細資訊，請參閱 [Sling 文件](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 
 <!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
 
@@ -291,10 +291,10 @@ above appears to be internal, to confirm with Brian -->
 
 另一方面，AEM as a Cloud Service 對於哪些執行模式可用，以及如何將 OSGI 套裝和 OSGI 設定對應到它們更有自己的做法：
 
-* OSGI 設定執行模式必須參照快速開發環境、開發、預備、生產環境，或作者、發佈服務。支援 `<service>.<environment_type>` 的組合，但必須按此特定順序 (例如 `author.dev` 或 `publish.prod`) 使用。應直接從程式碼中參考 OSGI 權杖，而不是使用 `getRunModes` 方法，後者在執行階段將不再包含 `environment_type`。有關詳細資訊，請參閱[為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md)。
+* OSGI 設定執行模式必須參照快速開發環境、開發、預備、生產環境，或作者、發佈服務。支援 `<service>.<environment_type>` 的組合，但必須按此特定順序 (例如 `author.dev` 或 `publish.prod`) 使用。應直接從程式碼中參考 OSGI 權杖，而不是使用 `getRunModes` 方法，後者在執行階段將不再包含 `environment_type`。如需詳細資訊，請參閱[為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md)。
 * OSGI 套裝執行模式限制在服務 (作者、發佈)。預執行模式 OSGI 套裝應安裝在 `install.author` 或 `install.publish` 下的內容套件中。
 
-AEMas a Cloud Service不允許使用執行模式來安裝特定環境或服務的內容。 如果開發環境需要植入未在測試環境或生產環境中的資料或HTML，則可以使用包管理器。
+AEM as a Cloud Service 不允許使用執行模式為特定環境或服務安裝內容。如果開發環境需要使用暫存或生產環境中不存在的資料或 HTML 進行植入，則可以使用套件管理器。
 
 支援的執行模式設定：
 
