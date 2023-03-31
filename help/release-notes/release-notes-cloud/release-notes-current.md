@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前版本注意�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前版本注意事項。'
 mini-toc-levels: 1
 source-git-commit: b47901d749712384506cf4eb03c099027933e95f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1032'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.1.0) 的發行日期是 2023 年 2 月 9 日。 下一個功能版本(2023.2.0)預計於2023年4月6日推出。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.1.0) 的發行日期是 2023 年 2 月 9 日。 下一個功能版本 (2023.2.0) 計畫於 2023 年 4 月 6 日發行。
 
 ## 發行影片 {#release-video}
 
@@ -65,7 +65,7 @@ ht-degree: 99%
 
 ### [!DNL Forms] 發行前版本的新功能 {#prerelease-features-forms}
 
-* **[使用資料擷取核心元件以建置調適型表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**：[使用調適型表單編輯器](/help/forms/creating-adaptive-form-core-components.md)根據標準化的資料擷取元件 (核心元件) 建立表單。這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。
+* **[使用資料擷取核心元件以建置調適型表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)**：[使用調適型表單編輯器](/help/forms/creating-adaptive-form-core-components.md)根據標準化的資料擷取元件 (核心元件) 建立表單。這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。
 * **[前端管道支援設計以核心元件為基礎之調適型表單的樣式](/help/forms/using-themes-in-core-components.md)**：通過使用前端部署管道部署，為以核心元件為基礎之調適型表單使用易於自訂的 BEM 型主題，以增強表單的外觀和風格。
 * **[為以核心元件為基礎之調適型表單產產生記錄文件](/help/forms/generate-document-of-record-core-components.md)**：為以核心元件為基礎之調適型表單建立記錄，以提交供長期封存，採列印或文件格式。
 
