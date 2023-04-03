@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
+source-git-commit: 936aa33ca334523aa84300f540bde9543eb7ffb4
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2135'
 ht-degree: 2%
 
 ---
@@ -26,11 +26,7 @@ ht-degree: 2%
 * SalesForce
 * Microsoft® Azure Blob儲存
 
-資料整合支援OAuth2.0、基本驗證和API金鑰驗證類型，且可立即使用，並可實作自訂驗證以存取網站服務。 而RESTful、SOAP型和OData服務則配置在 [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> 和連接器 [!DNL Experience Manager] 使用者設定檔設定於 [!DNL Experience Manager] web主控台。
-
->[!NOTE]
->
->[!UICONTROL Experience Manager Forms] 不支援關係資料庫。
+資料整合支援OAuth2.0、基本驗證和API金鑰驗證類型，且可立即使用，並可實作自訂驗證以存取網站服務。 而RESTful、SOAP型和OData服務則配置在 [!DNL Experience Manager] as a Cloud Service、關係資料庫的JDBC和 [!DNL Experience Manager] 使用者設定檔設定於 [!DNL Experience Manager] web主控台。
 
 ## 配置關係資料庫 {#configure-relational-database}
 
