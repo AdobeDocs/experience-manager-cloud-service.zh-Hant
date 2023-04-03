@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 01d54ba56ccab372396829a012c4da8ef4a57fe2
+source-git-commit: a7545f0f2143983a052f272992d5e27b78f271a1
 workflow-type: tm+mt
-source-wordcount: '3797'
+source-wordcount: '3768'
 ht-degree: 15%
 
 ---
@@ -244,10 +244,6 @@ Experience Manager可讓您將遠端DAM部署連結為來源，以連接多個Ex
 Sites作者可以在Sites部署上預覽可用的更新，然後重新發佈變更，以便在AEM發佈例項上使用。
 
 Experience Manager顯示 `expired` 「遠端資產內容尋找器」中資產的狀態視覺指標，可讓網站作者停止在「網站」頁面上使用資產。 如果您使用資產搭配 `expired` 狀態時，資產無法顯示在Experience Manager發佈例項上。
-
->[!NOTE]
->
->只有在遠端DAM和Sites部署處於Experience Manageras a Cloud Service狀態時，遠端DAM中的資產更新才可供Sites部署使用。
 
 ## 常見問答 {#frequently-asked-questions}
 
