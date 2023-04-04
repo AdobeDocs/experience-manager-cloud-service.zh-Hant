@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 48ec92d559f9d1ead096316e77e04f2e1e02526d
+source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
 workflow-type: tm+mt
-source-wordcount: '4009'
+source-wordcount: '4015'
 ht-degree: 99%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 99%
          + [2020.3.0 版版本注意事項](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [2020.2.0 版版本注意事項](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + AEMaaCS 維護版本注意事項{#maintenance}
-      + [最新維護髮行說明](/help/release-notes/maintenance/latest.md)
+      + [目前維護版本注意事項](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
          + [2023.1.0 維護版本注意事項](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Cloud Manager 版本注意事項 {#cloud-manager}
@@ -517,6 +517,7 @@ ht-degree: 99%
       + [從  [!DNL AEM 6.5 Forms]  或更早版本移轉至  [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
       + [匯入、匯出及組織最適化表單、PDF 表單和其他資產](/help/forms/import-export-forms-templates.md)
+      + [參考主題、範本和資料模型](/help/forms/reference-themes-templates-data-models.md)
    + 整合 {#integrate}
       + 服務 {#services}
          + [將 AEM Forms as a Cloud Service 與 Adobe Sign 整合](/help/forms/adobe-sign-integration-adaptive-forms.md)
