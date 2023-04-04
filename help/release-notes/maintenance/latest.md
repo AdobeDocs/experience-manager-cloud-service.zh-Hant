@@ -1,50 +1,50 @@
 ---
-title: 的最新維護髮行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
-description: 的最新維護髮行說明 [!DNL Adobe Experience Manager] as a Cloud Service。
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本注意事項。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本注意事項。'
 source-git-commit: c6acdd922c052d0db5bf1f05bc03329fbc44ca33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '306'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
 
 # 維護版本注意事項 {#maintenance-release-notes}
 
-以下章節概述目前維護版本的Experience Manageras a Cloud Service技術發行說明。
+下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本注意事項。
 
 ## 11382 版 {#release-11382}
 
-以下概述於2023年3月28日公開發行的維護版本11382的持續改善。 此維護版本是針對先前 11289 維護版本的更新。
+下面是 11382 維護版本的持續改善內容，該版本於 2023 年 3 月 28 日公開發布。此維護版本是針對先前 11289 維護版本的更新。
 
 此維護版本的功能啟用將為您提供完整的功能集。 如需完整詳情，請參閱[最新版本注意事項](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 ### 已修正的問題 {#fixed-issues}
 
-- ASSETS-21023 — 修正智慧型裁切轉譯，當客戶嘗試透過API存取這些轉譯時，可在所有AEM環境的Publisher例項上看到Null指標例外狀況。
-- SKYOPS-49280 — 使用RDE安裝設定或套件組合更新至Publish時，結果可能無法觀察，因為Publish Dispatcher快取未失效
+- ASSETS-21023 - 修復了智慧型裁切轉譯，當客戶嘗試透過 API 存取這些轉譯時可能會觀察到所有 AEM 環境的發佈者執行個體有 Null 指標例外狀況。
+- SKYOPS-49280 - 使用 RDE 安裝設定或套件更新到 Publish 時，可能無法觀察到結果，因為 Publish Dispatcher 快取未失效
 
 #### Sites {#sites-issues}
 
-- SITES-7796 — 內容作者在匯出至目標時可發佈主內容片段及其個別變化
-- SITES-97 - GraphQL:分頁與排序，混合篩選
+- SITES-7796 - 內容作者能夠在匯出到目標時發佈主內容片段及其各自的變體
+- SITES-97 - GraphQL：分頁和排序、混合篩選
 
 >[!NOTE]
 >
-> 在SITES-97中，GraphQL實作已進行一些改善，可能會造成非預期的行為。 請參閱 [AEM GraphQL處理null值的相關變更](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html?lang=zh-Hant) 以取得更多資訊。
+> 在 SITES-97 中，對 GraphQL 實作進行了一些改進，這些改進可能會導致未預期的行為。如需詳細資訊，請參閱[關於處理 Null 值的 AEM GraphQL 變更](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html?lang=zh-Hant)。
 
-#### 資產 {#assets-issues}
+#### Assets {#assets-issues}
 
-- ASSETS-20076 — 新增支援符合目前影像浮水印支援的視訊浮水印
-- ASSETS-21428 — 新增CSS變更的排除項目
+- ASSETS-20076 - 新增對影片浮水印的支援，其符合目前影像浮水印支援
+- ASSETS-21428 - 新增 CSS 變更的排除項目
 
 #### Forms {#forms-issues}
 
-- CQ-4351502 — 更新服務使用者對應以允許在Sites中進行讀取存取
+- CQ-4351502 - 更新服務使用者對應以允許在 Sites 中的讀取權限
 
-#### 平台 {#platform-issues}
+#### Platform {#platform-issues}
 
-- SITES-11040 — 在Dispatcher中有條件啟用GraphQL持續查詢快取
+- SITES-11040 - 在 Dispatcher 中有條件地啟用 GraphQL 持續性查詢快取
 
 ### 嵌入式技術 {#embedded-tech}
 
