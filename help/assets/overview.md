@@ -6,9 +6,9 @@ feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: efc0f317cf4540db49b6caf7bb9f6fd31b311583
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '457'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 為企業提供一種�
 
 一開始先了解[雲端原生產品的優勢](#solution-benefits)。查看值得注意的 [Experience Manager as a  [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) 幾項變更，這些變更也會影響 Experience Manager Assets，接者是值得注意的 [Assets 變更](/help/assets/assets-cloud-changes.md)。
 
-繼續閱讀以了解[新 Assets 功能的詳細資訊](#whats-new-assets)和[已知問題](/help/release-notes/maintenance/latest.md)。查看 [過時或移除的功能](/help/release-notes/deprecated-removed-features.md) 以了解此版本中移除的項目。 最後，借助此[術語表](/help/overview/terminology.md)了解 Experience Manager 術語。
+繼續閱讀以了解[新 Assets 功能的詳細資訊](#whats-new-assets)和[已知問題](/help/release-notes/maintenance/latest.md)。查看[已過時或移除的功能](/help/release-notes/deprecated-removed-features.md)清單以了解此版本已刪除的功能。最後，借助此[術語表](/help/overview/terminology.md)了解 Experience Manager 術語。
 
 ## 解決方案優勢 {#solution-benefits}
 
