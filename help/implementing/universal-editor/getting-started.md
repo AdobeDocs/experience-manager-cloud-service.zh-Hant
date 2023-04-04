@@ -1,10 +1,10 @@
 ---
 title: AEM 中 Universal Editor 快速入門
 description: 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
-source-git-commit: 7389e20ba73e84c2320ea8a834b381f415ad3983
+source-git-commit: 031117db4154dc605ae8b0c95f87b829bb5cacd8
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 94%
+source-wordcount: '809'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 94%
 
 ![要求存取通用編輯器](assets/request-access.png)
 
-按一下 **要求存取** 而Adobe代表將審閱您的請求並聯繫以討論您的使用案例。
+按一下 **要求存取** 並依照要求存取權限的指示填寫表單。 Adobe代表將審核您的請求並聯繫以討論您的使用案例。
 
 ## 包括 Universal Editor 核心庫。 {#core-library}
 
