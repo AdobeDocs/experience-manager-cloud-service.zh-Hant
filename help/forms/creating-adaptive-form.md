@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
+source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 開始之前，請先了解可用的Forms元件類型：
 
-* [適用性Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) 是標準化的資料擷取元件。 這些元件可提供自訂功能、縮短開發時間，並降低數位註冊體驗的維護成本。 開發人員可輕鬆自訂和設定這些元件的樣式。 Adobe建議運用這些現代且可擴充的元件來開發最適化Forms。
+* [適用性Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant) 是標準化的資料擷取元件。 這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。開發人員可輕鬆自訂和設定這些元件的樣式。 Adobe建議運用這些現代且可擴充的元件來開發最適化Forms。
 
 * [適用性Forms Foundation元件](creating-adaptive-form.md) 是傳統（舊）資料擷取元件。 您可以繼續使用這些元件來編輯現有的基礎元件（以最適化表單為基礎）。 如果您要建立新表單，Adobe建議使用  [適用性Forms核心元件](creating-adaptive-form-core-components.md) 來建立適用性Forms。
 
@@ -53,14 +53,17 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 您需要下列項目才能建立最適化表單：
 
-* **最適化表單範本**:範本提供基本結構並定義最適化表單的外觀（配置和樣式）。 它具有包含特定屬性和內容結構的預格式化元件。 它還提供定義主題和提交動作的選項。 主題定義外觀和風格，並定義提交動作，以便在提交最適化表單時採取動作。 例如，將收集的資料傳送至資料來源。 雲端服務支援兩種範本：
-
-* **可編輯的範本**:您可以 [建立新](template-editor.md) 或 [匯入現有的可編輯範本](migrate-to-forms-as-a-cloud-service.md). 您也可以部署 [最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20基於Java的%20integration%20tests。) 以取得一些可編輯的範本範例。
-* **靜態範本**:這些是舊版範本，僅建議從Adobe Managed Services(AMS)和內部部署AEM Forms安裝(AEM 6.5 Forms或更舊版本)移轉的客戶使用。 這些功能可讓您繼續運用現有靜態範本投資。 建立新的適用性表單時，建議使用可編輯的範本。
+* **權限**:將使用者新增至 [!DNL forms-users] 提供建立最適化表單的權限。 如需特定使用者群組的表單詳細清單，請參閱 [群組和權限](forms-groups-privileges-tasks.md).
 
 * **最適化表單主題**:主題包含元件和面板的樣式詳細資料。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。 應用主題時，指定的樣式會反映在相應的元件上。 您可以 [建立新主題](themes.md) 或 [導入現有主題](import-export-forms-templates.md#uploading-a-theme). 您也可以部署 [最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) 樣主題。
 
-* **權限**:將使用者新增至 [!DNL forms-users] 提供建立最適化表單的權限。 如需特定使用者群組的表單詳細清單，請參閱 [群組和權限](forms-groups-privileges-tasks.md).
+* **最適化表單範本**:範本提供基本結構並定義最適化表單的外觀（配置和樣式）。 它具有包含特定屬性和內容結構的預格式化元件。 它還提供定義主題和提交動作的選項。 主題定義外觀和風格，並定義提交動作，以便在提交最適化表單時採取動作。 例如，將收集的資料傳送至資料來源。 雲端服務支援兩種範本：
+
+   * **可編輯的範本**:您可以 [建立新](template-editor.md) 或 [匯入現有的可編輯範本](migrate-to-forms-as-a-cloud-service.md). 您也可以部署 [最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20基於Java的%20integration%20tests。) 以取得一些可編輯的範本範例。
+
+   * **靜態範本**:這些是舊版範本，僅建議從Adobe Managed Services(AMS)和內部部署AEM Forms安裝(AEM 6.5 Forms或更舊版本)移轉的客戶使用。 這些功能可讓您繼續運用現有靜態範本投資。 建立新的適用性表單時，建議使用可編輯的範本。
+
+
 
 ## 建立最適化表單（Foundation元件） {#create-an-adaptive-form-foundation-components}
 
