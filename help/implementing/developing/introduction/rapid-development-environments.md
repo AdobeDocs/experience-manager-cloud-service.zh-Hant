@@ -1,9 +1,9 @@
 ---
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
-source-git-commit: 74ccf3a22043bfc7ac47e8fa1c9d064ad88a886e
+source-git-commit: 95787669581c906a9cdc35a0ac450adf17b0b402
 workflow-type: tm+mt
-source-wordcount: '3293'
+source-wordcount: '3314'
 ht-degree: 5%
 
 ---
@@ -218,6 +218,8 @@ RDE一次支援單一專案。 由於程式碼會從本機開發環境同步至R
 `aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 依預設，成品會部署至製作和發佈層級，但可使用「 — s」標幟來鎖定特定層級。
+
+任何AEM套件皆可部署，例如包含程式碼、內容或 [容器包裝](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) （又稱為「all」套件）。
 
 >[!IMPORTANT]
 >
