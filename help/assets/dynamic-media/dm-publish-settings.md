@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
+source-git-commit: 26f697dab03e0a3387669304b7f7f14dc2182a6d
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3483'
 ht-degree: 3%
 
 ---
@@ -195,9 +195,13 @@ Secure Testing可幫助您定義安全的測試環境，並基於一組可配置
 * 網路印刷
 * UGC（使用者產生的內容）服務
 
->[!IMPORTANT]
->
->Adobe Dynamic Media中對新或現有UGC向量影像資產的支援已於2021年9月30日終止。
+   >[!IMPORTANT]
+   >
+   >自2023年5月1日起，Dynamic Media中的UGC資產可供上傳日期起最多60天使用。 60天後，資產將會移除。
+
+   >[!NOTE]
+   >
+   >Adobe Dynamic Media中對新或現有UGC向量影像資產的支援已於2021年9月30日終止。
 
 ### 測試安全測試服務 {#test-secure-testing-service}
 
