@@ -2,10 +2,10 @@
 title: 不同之處與新增功能 - Adobe Experience Manager as a Cloud Service
 description: 不同之處與新增功能 - Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 168e049a5b48818bae3f5971b800f6ddf93c0d06
-workflow-type: ht
+source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
+workflow-type: tm+mt
 source-wordcount: '1903'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ AEM 這麼多年來一直透過以下方式提供：
 
 AEM as a Cloud Service 現已具備：
 
-* AEM 映像數量可變的動態架構。
+* AEM 影像數量可變的動態架構。
 
 ![動態架構](assets/introduction-03.png "動態架構")
 
@@ -67,7 +67,7 @@ AEM as a Cloud Service 現已具備：
 
 ## AEM 更新 {#aem-updates}
 
-AEM as a Cloud Service 現在使用持續整合與持續傳送 (CI/CD) 來確保您的專案使用最新的 AEM 版本。這表示生產和預備執行個體會更新到最新的 AEM 版本，而不會對使用者中斷服務。
+AEM as a Cloud Service 現在使用持續整合與持續傳送 (CI/CD) 來確保您的專案使用最新的 AEM 版本。這表示生產和測試執行個體會更新為最新的AEM版本，而不會中斷使用者的服務。
 
 >[!NOTE]
 >
