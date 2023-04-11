@@ -1,14 +1,14 @@
 ---
-title: 用戶映射和主體遷移
+title: 使用者對應和主體移轉
 description: 使用者對應和主要移轉概觀
-source-git-commit: aeb8f633b45908a87f15f9feeb3723f90470be92
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 10%
+source-wordcount: '757'
+ht-degree: 11%
 
 ---
 
-# 用戶映射和主體遷移 {#user-mapping-and-principal-migration}
+# 使用者對應和主體移轉 {#user-mapping-and-principal-migration}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
@@ -22,7 +22,7 @@ ht-degree: 10%
 
 在轉換至Adobe Experience Manager(AEM)的as a Cloud Service過程中，您必須將使用者和群組從您現有的AEM系統移至AEMas a Cloud Service。 這是由「內容轉移工具」完成。
 
-AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存取作者層。這需要使用 [Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 用於管理使用者和使用者群組。 AdobeIdentity Management系統(IMS)會集中提供使用者設定檔資訊，以針對所有Adobe雲端應用程式提供單一登入。 如需詳細資訊，請參閱 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). 因為此變更，現有使用者必須對應至其IMS ID，以避免Cloud Service製作例項上出現重複的使用者。 由於傳統AEM中的群組與IMS中的群組基本不同，因此群組並未對應，但移轉完成後必須調解兩組群組。
+AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存取作者層。這需要使用 [Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 用於管理使用者和使用者群組。 AdobeIdentity Management系統(IMS)會集中提供使用者設定檔資訊，以針對所有Adobe雲端應用程式提供單一登入。 如需詳細資訊，請參閱 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html#identity-management). 因為此變更，現有使用者必須對應至其IMS ID，以避免Cloud Service製作例項上出現重複的使用者。 由於傳統AEM中的群組與IMS中的群組基本不同，因此群組並未對應，但移轉完成後必須調解兩組群組。
 
 ## 使用者對應和移轉詳細資訊 {#user-mapping-detail}
 
@@ -49,6 +49,6 @@ AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存�
 
 ## 其他考量事項 {#additional-considerations}
 
-* 若設定 **擷取前先擦去雲端例項上的現有內容** 已設定，則會刪除Cloud Service例項上已轉移的使用者，以及整個現有存放庫，並建立新存放庫以將內容內嵌至。 這也會重設所有設定，包括目標Cloud Service例項的權限，若管理員使用者已新增至 **管理員** 群組。 管理員使用者必須讀入 **管理員** 群組以擷取CTT的存取權杖。
+* 若設定 **擷取前先擦去雲端例項上的現有內容** 已設定，則會刪除Cloud Service例項上已轉移的使用者，以及整個現有存放庫，並建立新存放庫以將內容內嵌至。 這也會重設所有設定，包括目標Cloud Service例項的權限，若管理員使用者已新增至 **管理員** 群組。 管理員使用者必須重新新增至 **管理員** 群組以擷取CTT的存取權杖。
 * 當執行內容追加時，如果由於自上次轉移以來內容未更改而未轉移內容，則與該內容相關聯的用戶和組也不會轉移，即使用戶和組在此期間已發生更改。 這是因為使用者和群組會與其相關聯的內容一起移轉。
 * 如果目標AEM Cloud Service實例具有與源AEM實例上的某個用戶具有不同用戶名但電子郵件地址相同的用戶，並且啟用了「用戶映射」，則日誌中會寫入錯誤消息，並且不會傳輸源AEM用戶，因為目標系統上只允許一個具有給定電子郵件地址的用戶。

@@ -2,10 +2,10 @@
 title: 將內容內嵌至目標
 description: 將內容內嵌至目標
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 12%
+source-wordcount: '1722'
+ht-degree: 11%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 12%
 
    * 選擇包含提取資料作為源的遷移集。
       * 移轉集將在長時間閒置後過期，因此擷取預計會在執行提取後較快進行。 檢閱 [遷移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
-   * 選取目標環境。 這是將擷取移轉集內容的位置。 選擇層。 （製作/發佈）。
+   * 選取目標環境。 這是將擷取移轉集內容的位置。 選擇層。 （製作/發佈）。 不支援快速開發環境。
 
    >[!NOTE]
    >
@@ -55,9 +55,13 @@ ht-degree: 12%
    > 
    >如果使用預復本擷取（適用於S3或Azure資料存放區），建議您先單獨執行製作擷取。 這會在稍後執行時加速發佈擷取。
 
+   >[!NOTE]
+   >
+   >擷取不支援快速開發環境(RDE)目的地。 即使使用者有存取權，它們也不會顯示為可能的目的地選項。
+
    >[!IMPORTANT]
    >
-   >只有在您屬於本機環境時，才能開始擷取至目的地環境 **AEM管理員** 群組(在目標Cloud Service作者服務上)。 如果您無法開始擷取，請參閱 [無法開始擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以取得更多詳細資訊。
+   >只有在您屬於本機 **AEM管理員** 群組(在目標Cloud Service作者服務上)。 如果您無法開始擷取，請參閱 [無法開始擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以取得更多詳細資訊。
 
    >[!IMPORTANT]
    >
@@ -103,7 +107,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion_topup"
 >title="追加擷取"
 >abstract="使用填滿功能來移動自上次內容轉移活動以來修改的內容。攝入完成後，檢查記錄檔中是否有任何錯誤/警告。如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 客戶服務。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hant" text="檢視記錄檔"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="檢視記錄檔"
 
 「內容轉移工具」具備支援&#x200B;*追加*&#x200B;差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。
 
@@ -132,7 +136,7 @@ ht-degree: 12%
 
 ### 無法開始擷取 {#unable-to-start-ingestion}
 
-只有在您屬於本機環境時，才能開始擷取至目的地環境 **AEM管理員** 群組(在目標Cloud Service作者服務上)。 如果您不屬於AEM管理員群組，當您嘗試開始擷取時，會看到錯誤，如下所示。 您可以要求管理員將您新增至本機 **AEM管理員** 或要求代號本身，然後您可將其貼入 **移轉代號輸入** 欄位。
+只有在您屬於本機 **AEM管理員** 群組(在目標Cloud Service作者服務上)。 如果您不屬於AEM管理員群組，當您嘗試開始擷取時，會看到錯誤，如下所示。 您可以要求管理員將您新增至本機 **AEM管理員** 或要求代號本身，然後您可將其貼入 **移轉代號輸入** 欄位。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -175,4 +179,4 @@ AEM中的每個節點都必須有唯一的uuid。 此錯誤指出正在擷取的
 
 ## 下一步 {#whats-next}
 
-在您將內容擷取到Target中後，您就可以檢視每個步驟的記錄（擷取和擷取）並尋找錯誤。 請參閱 [檢視移轉集記錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 了解更多。
+在您將內容擷取到Target中後，您就可以檢視每個步驟的記錄（擷取和擷取）並尋找錯誤。 請參閱 [檢視移轉集記錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html) 了解更多。

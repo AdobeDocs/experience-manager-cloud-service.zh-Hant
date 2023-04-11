@@ -2,7 +2,7 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 8264aef85a1d76db1cc04e0a01839089ee5f4b66
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 22%
@@ -177,7 +177,7 @@ ht-degree: 22%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. 按一下 **檢查大小** 來啟動程式。 接著，您會返回移轉集清單檢視，並看到訊息，指出 **檢查大小** 執行中。
+1. 按一下 **檢查大小** 來啟動程式。 之後，您會返回移轉集清單檢視，而您應會看到訊息，指出 **檢查大小** 執行中。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 

@@ -2,10 +2,10 @@
 title: 內容轉移工具的先決條件
 description: 內容轉移工具的先決條件
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 15%
+source-wordcount: '547'
+ht-degree: 11%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 15%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="內容轉移工具的重要使用注意事項"
->abstract="查看容轉移工具的重要使用注意事項，包括 Java 和 AEM 版本、支援的資料存放區類型、使用者群組注意事項等。"
+>abstract="檢閱使用「內容轉移」工具的重要考量，包括Java和AEM版本、支援的資料存放區類型、使用者群組考量事項等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#pre-reqs" text="使用內容轉移工具的重要考量"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#best-practices" text="最佳做法和準則"
 
@@ -23,7 +23,7 @@ ht-degree: 15%
 請檢閱下列所有考量事項：
 
 | 考量事項 | 目前支援的項目 |
-|--- |--- |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AEM版本 | 「內容轉移工具」僅能在AEM 6.3或更新版本上執行。 |
 | 區段存放區大小 | 現有的存放庫，其JCR節點少於5500萬個，在 *作者* 50 GB開啟 *發佈* 目前受支援。 與Adobe客戶服務建立支援票證，討論區段存放區大小超過這些限制的選項。 |
 | 內容存放庫總大小 <br>*（區段存放區+資料存放區）* | 「內容轉移工具」的設計目的是，針對「檔案資料儲存」類型的資料儲存傳輸高達20 TB的內容。 目前不支援高於20 TB的任何項目。 與Adobe客戶服務建立支援票證，討論大於20 TB內容的選項。 <br>為了顯著加快大型儲存庫的內容傳輸流程，可選 [預復](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step) 步驟。 這適用於檔案資料存放區、Amazon S3和Azure資料存放區的資料存放類型。 若為Amazon S3和Azure資料存放區，則支援大於20TB的存放庫大小。 |
@@ -34,4 +34,4 @@ ht-degree: 15%
 
 ## 下一步 {#whats-next}
 
-檢閱必要條件，並決定是否可以在移轉專案中使用內容轉移工具後，請參閱 [使用內容轉移工具的准則和最佳作法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).
+檢閱必要條件，並決定是否可以在移轉專案中使用內容轉移工具後，請參閱 [使用內容轉移工具的准則和最佳作法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html).
