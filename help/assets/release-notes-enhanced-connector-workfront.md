@@ -2,9 +2,9 @@
 title: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 8ce5b0a163c8ddf7f9c9672eff6d752a58c464bb
+source-git-commit: a65f736f922bcb58c09773ff9c6d6f7104b6157d
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1089'
 ht-degree: 1%
 
 ---
@@ -15,22 +15,21 @@ ht-degree: 1%
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.8的發行日期： [!DNL Workfront for Experience Manager enhanced connector] 是2023年3月03日。
+最新版本1.9.9的發行日期： [!DNL Workfront for Experience Manager enhanced connector] 是2023年4月10日。
 
 ## 發行重點 {#release-highlights}
 
-最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包含下列更新：
+最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包括更新：
 
-* 在Workfront中建立專案連結資料夾時，改善Experience Manager的效能。
+* Experience Manager顯示 `DateTimeParseException` 在建立連結資料夾期間從Workfront收到上次修改日期時例外。
 
-* Workfront中的注釋刪除現在反映在Experience Manager中。
+* 在短時間內建立多個連結的專案資料夾時發生問題。
 
-* 在Experience Manager上as a Cloud Service管理阻止新客戶的功能（從配置連接器開始）。
-
+* 無法對新項目連結資料夾集的數量設定閾值限制。
 
 >[!IMPORTANT]
 >
->Adobe建議您 [升級至最新1.9.8版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建議您 [升級至最新1.9.9版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知問題 {#known-issues}
 
@@ -40,7 +39,18 @@ ht-degree: 1%
 
 ## 舊版 {#previous-releases}
 
-### 2022年1月發行 {#january-2022-release}
+### 2023年3月發行 {#march-2023-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.8版（於2023年3月03日發行）包含下列更新：
+
+* 在Workfront中建立專案連結資料夾時，改善Experience Manager的效能。
+
+* Workfront中的注釋刪除現在反映在Experience Manager中。
+
+* 在Experience Manager上as a Cloud Service管理阻止新客戶的功能（從配置連接器開始）。
+
+
+### 2023年1月發行 {#january-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] 1.9.7版（於2023年2月02日發行）包含下列更新：
 
