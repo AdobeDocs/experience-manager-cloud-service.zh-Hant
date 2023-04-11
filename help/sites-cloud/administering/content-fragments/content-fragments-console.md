@@ -5,10 +5,10 @@ landing-page-description: 了解如何從內容片段主控台管理內容片段
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: db81eac064d4616cb6b1beae85abc0c55a993fce
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 3%
    * **[建立](#creating-new-content-fragment)** 新內容片段
    * [篩選](#filtering-fragments) 內容片段會根據謂語的選取，並儲存篩選器以供日後使用
    * [搜尋](#searching-fragments) 內容片段
-   * [自訂表格檢視以顯示選取的資訊欄](#selectuse-available-columns)
+   * [自訂表格檢視以顯示選取的資訊欄](#select-available-columns)
    * 使用 **在資產中開啟** 以直接開啟 **資產** 主控台
 
       >[!NOTE]
@@ -87,7 +87,7 @@ ht-degree: 3%
 ![內容片段主控台 — 所選片段的工具列](assets/cfc-fragment-toolbar.png)
 
 * **開啟**
-* **發佈** (和 **取消發佈**)
+* **發佈** (和&#x200B;**取消發佈**)
 * **複製**
 * **移動**
 * **重新命名**
@@ -95,7 +95,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->「發佈」、「取消發佈」、「刪除」、「移動」、「重新命名」、「複製」等動作會觸發非同步作業。 可透過AEM非同步作業UI監控該作業的進度。
+>發佈、取消發佈、刪除、移動、重新命名、複製等動作觸發非同步作業。可以透過 AEM 非同步作業 UI 監視該作業的進度。
 
 ## 提供的內容片段相關資訊 {#information-content-fragments}
 
@@ -107,7 +107,7 @@ ht-degree: 3%
    * 提供在編輯器中開啟片段的連結。
 * **資料夾**
    * 提供在主控台中開啟資料夾的連結。
-將滑鼠游標暫留在資料夾名稱上會顯示JCR路徑。
+將游標停留在資料夾名稱上將顯示 JCR 路徑。
 * **狀態**
    * 僅資訊
 * **修改時間**
@@ -148,7 +148,7 @@ ht-degree: 3%
 
 選取 **建立** 開啟了緊湊型 **新內容片段** 對話框：
 
-![內容片段主控台 — 建立新片段](assets/cfc-console-create.png)
+![內容片段主控台 - 建立新片段](assets/cfc-console-create.png)
 
 ## 篩選片段 {#filtering-fragments}
 

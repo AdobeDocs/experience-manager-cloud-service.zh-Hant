@@ -2,9 +2,9 @@
 title: 管理內容片段（資產 — 內容片段）
 description: 了解如何使用Assets主控台管理您的AEM內容片段，這是無頭內容的基礎。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1761'
 ht-degree: 9%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 9%
 >可使用內容片段：
 >
 >* 編寫頁面時；請參閱 [使用內容片段進行頁面編寫](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
->* for [使用內容片段搭配GraphQL的無周邊內容傳送](/help/assets/content-fragments/content-fragments-graphql.md).
+>* for [透過GraphQL使用內容片段進行無頭式內容傳送](/help/assets/content-fragments/content-fragments-graphql.md).
 
 
 >[!NOTE]
@@ -131,10 +131,6 @@ ht-degree: 9%
 >[!CAUTION]
 >
 >若要編輯您需要的內容片段 [適當的權限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 如果您遇到問題，請與系統管理員聯繫。
-
->[!CAUTION]
->
->若要編輯內容片段，您需要適當的權限。 如果您遇到問題，請與系統管理員聯繫。
 
 1. 使用 **資產** 主控台，導覽至內容片段的位置。
 1. 開啟片段以進行編輯，方法為：
