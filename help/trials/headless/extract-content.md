@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '755'
+ht-degree: 100%
 
 ---
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 1. 您的 AEM Headless 試用版附有一個預先載入了內容片段的端點，您可以從中擷取內容以進行測試。 記得選取「**AEM 示範資產**」端點 (從編輯器右上方的「**端點**」下拉式清單中選取)。
 
-1. 已知問題：若 **AEM示範資產** 端點不在下拉式選單中，請導覽至套件管理器(`/crx/packmgr` 路徑)，然後重新安裝 `aem-demo-assets.ui.content-{VERSION}.zip` 包：
+1. 已知問題：如果 **AEM 示範資產**&#x200B;端點不在下拉選單中，請導覽至封裝管理員 (您環境中的 `/crx/packmgr` 路徑) 並重新安裝 `aem-demo-assets.ui.content-{VERSION}.zip` 封裝：
 
-   ![重新安裝軟體包](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
+   ![重新安裝封裝](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. 為預先載入的 **AEM 示範資產**&#x200B;端點的清單查詢複製以下程式碼片段。清單查詢將傳回使用特定內容片段模式的所有內容清單。 詳細目錄和類別頁面通常使用這種查詢格式。
 
