@@ -2,9 +2,9 @@
 title: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: a65f736f922bcb58c09773ff9c6d6f7104b6157d
+source-git-commit: 2fb929cae03fa9ac0bf6d18d5eb3cf19bb35fa37
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1090'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 發行重點 {#release-highlights}
 
-最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包括更新：
+最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包含下列更新：
 
 * Experience Manager顯示 `DateTimeParseException` 在建立連結資料夾期間從Workfront收到上次修改日期時例外。
 
