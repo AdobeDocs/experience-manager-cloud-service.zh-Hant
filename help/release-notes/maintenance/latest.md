@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本注意事項。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本注意事項。'
-source-git-commit: c56ed1878b89a1f31c5b7b44696511d51cfa5351
+source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,9 @@ ht-degree: 90%
 
 ### 已知問題 {#known-issues-11382}
 
-- SITES-12573 — 如果未指定某個變數，則在篩選器內使用變數的GraphQL查詢將會失敗。 如果您將GraphQL與AEMas a Cloud Service搭配使用，請勿更新此版本。
+- SITES-12573 - 如果有一個變數未指定，在篩選條件中使用變數的 GraphQL 查詢將會失敗。如果您搭配 AEM as a Cloud Service 使用 GraphQL，請勿更新到這個版本。
+- SKYOPS-51970 — 識別buildImage步驟中使用的FACT版本回歸，導致使用者對應不相符。
+- GRANITE-44542 — 針對未為封裝篩選器中包含的資料夾指定封裝nodetype（透過提供.content.xml與jcr:primaryType）的客戶，回報問題。 這會將這些資料夾視為nt:folder，在各種情況下會造成問題。
 
 ### 已修正的問題 {#fixed-issues-11382}
 
@@ -35,7 +37,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
-> 在 SITES-97 中，對 GraphQL 實作進行了一些改進，這些改進可能會導致未預期的行為。如需詳細資訊，請參閱[關於處理 Null 值的 AEM GraphQL 變更](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html?lang=zh-Hant)。
+> 在 SITES-97 中，對 GraphQL 實作進行了一些改進，這些改進可能會導致未預期的行為。如需詳細資訊，請參閱[關於處理 Null 值的 AEM GraphQL 變更](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html)。
 
 #### Assets {#assets-issues-11382}
 
