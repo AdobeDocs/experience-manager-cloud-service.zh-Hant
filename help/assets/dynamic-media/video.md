@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0ba6ce129322df9ad108822e86e5acfdbf99e613
+source-git-commit: 57666d474cd2ae41048e2d30eb27b0719a447005
 workflow-type: tm+mt
-source-wordcount: '5892'
+source-wordcount: '5899'
 ht-degree: 2%
 
 ---
@@ -427,7 +427,7 @@ DASH(Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，在�
 
    >[!IMPORTANT]
    >
-   >目前僅在北美提供對您帳戶啟用DASH的功能。
+   >目前僅亞太地區和北美提供您帳戶的啟用DASH;即將在歐洲 — 中東 — 非洲推出。
 
 您可以啟動使用DASH的請求；不會在您的帳戶上自動啟用。
 
