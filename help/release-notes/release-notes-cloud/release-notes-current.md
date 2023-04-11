@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前版本注意�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前版本注意事項。'
 mini-toc-levels: 1
 source-git-commit: 411de178588ca94a0bdb60567b3c0a6b718edce1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1032'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >
 >從這裡，您可以瀏覽至舊版的版本注意事項；例如，2021、2022 等版本。
 >
->查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
+>查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.1.0) 的發行日期是 2023 年 2 月 9 日。 下一個功能版本 (2023.2.0) 計畫於 2023 年 4 月 12 日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.1.0) 的發行日期是 2023 年 2 月 9 日。 下一個功能版本 (2023.2.0) 已計劃於 2023 年 4 月 12 日發行。
 
 ## 發行影片 {#release-video}
 
@@ -113,8 +113,8 @@ ht-degree: 100%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[這裡](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
+您可以在[此處](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
 
 ## 移轉工具 {#migration-tools}
 
-您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
+您可以在[此處](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
