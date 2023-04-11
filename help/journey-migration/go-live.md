@@ -2,7 +2,7 @@
 title: 入門
 description: 了解在程式碼和內容雲端準備就緒後，如何執行移轉
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
+source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 4%
@@ -107,7 +107,7 @@ ht-degree: 4%
 與擷取上方的區段比較 **不** 失敗，原因如下： 不過，強烈建議您在下列情況下採取適當步驟：
 
 * 遺失原始轉譯的任何資產
-* 任何缺少的資料夾 `jcr:content` 節點
+* 任何缺少的資料夾 `jcr:content` 節點。
 
 上述兩個項目將於 [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) 報表。
 
