@@ -5,10 +5,10 @@ landing-page-description: 了解如何從內容片段主控台管理內容片段
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 8%
+source-wordcount: '952'
+ht-degree: 7%
 
 ---
 
@@ -56,6 +56,7 @@ ht-degree: 8%
 * 左側面板
    * 在此，您可以隱藏或顯示資料夾樹
    * 可以選取樹的特定分支
+   * 可調整此大小以顯示巢狀資料夾
 * 主面板/右面板 — 從這裡，您可以：
    * 請參閱樹狀結構之所選分支中的所有內容片段清單：
       * 位置會以階層連結表示；這些也可用來變更位置
@@ -64,8 +65,10 @@ ht-degree: 8%
             * 在編輯器中開啟適當的片段
             * 顯示有關引用的資訊
             * 顯示片段語言版本的相關資訊
-         * 您可以 [選取一或多個內容片段以顯示可用動作](#actions-selected-content-fragment)
-      * 您可以選取欄標題，以根據該欄來排序表格；再次選取，在遞增和遞減之間切換。 目前， **標題**, **已修改**，和 **修改者** 欄。
+      * 在欄標題上使用滑鼠移至，將會顯示下拉式動作選取器和寬度滑桿。 這些功能可讓您：
+         * 排序 — 為升序或降序選擇適當的操作。這將根據該列對整個表進行排序。 排序僅適用於適當的欄。
+         * 調整列大小 — 使用操作或寬度滑塊
+      * 您可以 [選取一或多個內容片段以顯示可用動作](#actions-selected-content-fragment)
    * **[建立](#creating-new-content-fragment)** 新內容片段
    * [篩選](#filtering-fragments) 內容片段會根據謂語的選取，並儲存篩選器以供日後使用
    * [搜尋](#searching-fragments) 內容片段
@@ -154,7 +157,7 @@ ht-degree: 8%
 
 篩選面板提供：
 
-* 可選擇和組合的謂語選擇
+* 謂語的選擇；可以選取一或多個謂語並加以組合，以建立篩選器
 * 有機會 **儲存** 您的設定
 * 檢索保存的搜索篩選器以重複使用的選項
 
