@@ -5,7 +5,7 @@ exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
 source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 11%
+ht-degree: 15%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="內容轉移工具的重要使用注意事項"
->abstract="檢閱使用「內容轉移」工具的重要考量，包括Java和AEM版本、支援的資料存放區類型、使用者群組考量事項等。"
+>abstract="查看容轉移工具的重要使用注意事項，包括 Java 和 AEM 版本、支援的資料存放區類型、使用者群組注意事項等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#pre-reqs" text="使用內容轉移工具的重要考量"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#best-practices" text="最佳做法和準則"
 

@@ -126,8 +126,8 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="解讀最佳做法分析工具的報表"
 >abstract="檢視 BPA 報表輸出有兩種選項：UI 和 CSV。在 AEM 執行個體中執行最佳做法分析工具時，UI 報表會在工具視窗中顯示為結果。CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和組織。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="檢閱最佳做法分析報表"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="了解最佳做法分析工具報表類別"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=zh-Hant#analysis-report" text="檢閱最佳做法分析報表"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=zh-Hant" text="了解最佳做法分析工具報表類別"
 
 在 AEM 執行個體中執行最佳做法分析工具時， 報表會在工具視窗中顯示為結果。
 
