@@ -2,24 +2,24 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版發行說明。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
+source-git-commit: a66215277ca83c011f2f4df621d055049c4c93a7
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 11%
+source-wordcount: '1082'
+ht-degree: 30%
 
 ---
 
-# 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# 2022.1.0適用於 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-以下章節概述目前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
-
->[!NOTE]
->
->您可從這裡導覽至舊版的發行說明；例如，2020年、2021年等。
+以下章節概述2022.1.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
->請參閱 [近期檔案更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 如需與版本不直接相關的檔案更新詳細資訊。
+>從這裡，您可以瀏覽至舊版的發行說明；例如，2020、2021 等版本。
+
+>[!NOTE]
+>
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -36,7 +36,7 @@ ht-degree: 11%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 中的新功能 [!DNL Assets] {#assets-features}
+### [!DNL Assets] 中的新功能 {#assets-features}
 
 * [!DNL Dynamic Media]  — 您現在可以使用AEM Dynamic Media介面來設定「一般設定」和「發佈設定」，而不需要透過Dynamic Media Classic案頭應用程式。
 
@@ -76,12 +76,12 @@ ht-degree: 11%
 
 * **記錄檔的自訂字型和使用通訊API建立的PDF檔案**:您現在可以在使用通訊API產生的PDF檔案中使用品牌核准字型，以符合您的組織需求。
 
-### [!DNL Forms] 搶鮮版頻道中可用的新功能 {#prerelease-features-forms}
+### [!DNL Forms] 發行前通道中可用的新功能 {#prerelease-features-forms}
 
 * **[組合器API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**:組合器API，用於組合、重新排列、擴展和獲取有關PDF文檔的資訊。
 
 
-## CIF附加元件 {#cloud-services-cif}
+## CIF 附加元件 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
@@ -99,21 +99,21 @@ ht-degree: 11%
 
 ### 發行日期 {#release-date-cm}
 
-AEMas a Cloud Service的Cloud Manager 2022.01.0的發行日期為2022年1月20日。 下一版預計於2022年2月10日發行。
+AEMas a Cloud Service的Cloud Manager 2022.01.0的發行日期為2022年1月20日。 下一版計劃於 2022 年 2 月 10 日發行。
 
 ### 新增功能 {#what-is-new-cm}
 
-* Cloud Manager將 [偵測到使用相同的git提交時，請避免重建程式碼基底](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 在多個完整堆棧管道執行中。
-* 現在存取AEM環境記錄時，需要 **部署管理員** 產品設定檔。 沒有此設定檔的使用者會在使用者介面中看到「已停用」按鈕。
-* 若程式未啟用Sites作為解決方案，UI將不允許進行前端管道設定。
-* 產生Git密碼時，會顯示到期日。
+* Cloud Manager [在偵測到多個全堆疊管道執行中使用了相同的 Git 認可時，將避免重建計劃碼基底](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)。
+* 現在存取 AEM 環境記錄檔需要 **Deployment Manager** 產品設定檔。沒有此設定檔的使用者將在使用者介面中看到停用按鈕。
+* UI 不允許針對未啟用 Sites 解決方案的計畫設定前端管道。
+* 在產生 Git 密碼時，將立即顯示到期日期。
 
 ### 錯誤修正 {#bug-fixes-cm}
 
-* 某些前端管道部署遇到的Null指標例外狀況已修正。
-* 現在當環境執行過時的AEM版本時，可以新增、更新及刪除環境變數。
-* 在某些罕見情況下，使用排程步驟的管道將不再將建置影像步驟標示為「錯誤」。
-* 對於只有一個存放庫的程式，管道執行畫面現在會顯示存放庫名稱。
+* 已修正部署部分前端管道時發生的空指針異常。
+* 現在可以在環境執行過時版本的 AEM 時新增、更新和刪除環境變數。
+* 對於在某些極少數情況下使用計畫步驟的管道，建置影像步驟將不再標記為錯誤。
+* 對於僅有一個存放庫的計畫，管道執行畫面現在將顯示存放庫名稱。
 
 ## 內容轉移工具 {#ctt-release}
 
@@ -129,7 +129,7 @@ AEMas a Cloud Service的Cloud Manager 2022.01.0的發行日期為2022年1月20�
 
 * 有些使用者未對應，因為「使用者對應」須區分大小寫。 此問題已修正。 使用者對應不再區分大小寫。
 
-## Best Practices Analyzer {#bpa-release}
+## 最佳做法分析工具 {#bpa-release}
 
 ### 發行日期 {#release-date-bpa}
 

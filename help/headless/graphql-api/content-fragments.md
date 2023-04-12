@@ -3,10 +3,10 @@ title: 與內容片段搭配使用的 AEM GraphQL API
 description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現無周邊內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: cda6d7e382b090fd726b27e565da08c8b1c80008
+source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
 workflow-type: tm+mt
-source-wordcount: '4203'
-ht-degree: 100%
+source-wordcount: '4768'
+ht-degree: 88%
 
 ---
 
@@ -703,6 +703,208 @@ query {
 >* 由於內部技術限制，如果對巢狀欄位套用排序和篩選，效能會降低。因此，建議使用儲存在根層級的篩選/排序欄位。如果要查詢大型已分頁結果集，同樣也建議使用此方法。
 
 
+## GraphQL 查詢中的 Web 最佳化影像傳遞 {#web-optimized-image-delivery-in-graphql-queries}
+
+Web優化的映像傳送允許您使用Graphql查詢：
+
+* 請求AEM資產影像的URL
+
+* 使用查詢傳遞參數，以便自動產生並傳回影像的特定轉譯
+
+   >[!NOTE]
+   >
+   >指定的轉譯不會儲存在AEM Assets中。 該格式副本被生成並保存在快取中，時間很短。
+
+* 在JSON傳送中傳回URL
+
+您可以使用AEM:
+
+* 通過 [Web最佳化影像傳送](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 進入GraphQL查詢。
+
+這表示在查詢執行期間會套用命令，方式與這些影像之GET要求的URL參數相同。
+
+這可讓您動態建立影像轉譯以供JSON傳送，如此可避免手動建立這些轉譯並將其儲存在存放庫中。
+
+GraphQL中的解決方案表示您可以：
+
+* use `_dynamicUrl` 在 `ImageRef` 參考
+
+* 新增 `_assetTransform` 到定義篩選器的清單標題
+
+### 轉換請求的結構 {#structure-transformation-request}
+
+`AssetTransform` (`_assetTransform`)來提出URL轉換請求。
+
+結構和語法為：
+
+* `format`:擴充功能可列舉所有支援的格式：GIF、PNG、PNG8、JPG、PJPG、BJPG、WEBP、WEBPLL或WEBPLY
+* `seoName`:將用作檔案名而非節點名的字串
+* `crop`:框架子結構，如果省略寬度或高度，則使用高度或寬度作為相同的值
+   * `xOrigin`:框架的x原點，是強制的
+   * `yOrigin`:框架的y原點，是強制的
+   * `width`:框架的寬度
+   * `height`:框架的高度
+* `size`:尺寸子結構，如果省略寬度或高度，則使用高度或寬度作為相同值
+   * `width`:維度的寬度
+   * `height`:維度的高度
+* `rotation`:列出所有支援的輪轉：R90、R180、R270
+* `flip`:水準、垂直、水準和垂直列舉
+* `quality`:介於1到100之間的整數，表示影像質量百分比
+* `width`:一個整數，定義輸出影像的寬度，但將被影像生成器忽略
+* `preferWebp`:指示webp是否為首選值的布爾值（預設值為false）
+
+URL轉換適用於所有查詢類型：依路徑、清單或編頁。
+
+### 使用完整參數進行Web最佳化的影像傳送 {#web-optimized-image-delivery-full-parameters}
+
+以下是包含完整參數集的範例查詢：
+
+```graphql
+{
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:"test"
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### 使用單一查詢變數進行Web最佳化的影像傳送 {#web-optimized-image-delivery-single-query-variable}
+
+下列範例說明如何使用單一查詢變數：
+
+```graphql
+query ($seoName: String!) {
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### 具有多個查詢變數的Web最佳化影像傳送 {#web-optimized-image-delivery-multiple-query-variables}
+
+下列範例說明如何使用多個查詢變數：
+
+```graphql
+query ($seoName: String!, $format: AssetTransformFormat!) {
+  articleList(
+    _assetTransform: {
+      format:$format
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### 依URL的Web最佳化影像傳送請求 {#web-optimized-image-delivery-request-url}
+
+如果您將查詢儲存為持續查詢(例如，具有名稱 `dynamic-url-x`)，然後 [直接執行保存的查詢](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
+
+例如，若要直接執行先前的範例（儲存為持續查詢），請使用下列URL:
+
+* [單一參數](#dynamic-image-delivery-single-specified-parameter);持續查詢已命名 `dynamic-url-x`
+
+   * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
+
+      回應如下所示：
+
+      ![使用參數進行影像傳送](assets/cfm-graphiql-sample-image-delivery.png "使用參數進行影像傳送")
+
+* [多個參數](#dynamic-image-delivery-multiple-specified-parameters);持續查詢已命名 `dynamic`
+
+   * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
+
+      >[!CAUTION]
+      >
+      >結尾 `;`必須完全終止參數清單。
+
+### 影像傳送限制 {#image-delivery-limitations}
+
+存在下列限制：
+
+* 應用於查詢的所有影像部分的修飾符（全局參數）
+
+* 快取標題
+
+   * 製作無快取
+   * 發佈時快取 — 最長10分鐘（用戶端無法變更）
+
 ## GraphQL for AEM - 擴充功能摘要 {#graphql-extensions}
 
 使用 GraphQL for AEM 進行查詢的基本操作符合標準 GraphQL 規格。使用 GraphQL for AEM 進行查詢，有一些擴充功能：
@@ -761,7 +963,18 @@ query {
          >
          >如果內容片段不存在給定的變化，則主變化將作為 (備援) 預設值傳回。
 
-         * 請參閱[範例查詢 - 所有具有名稱變化的城市](#sample-cities-named-variation)
+         * 請參閱[範例查詢 - 所有具有名稱變化的城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+   * 針對 [影像傳送](#image-delivery):
+
+      * `_dynamicUrl`:在 `ImageRef` 參考
+
+      * `_assetTransform`:在定義篩選器的清單標題上
+
+      * 請參閱：
+
+         * [使用完整參數的影像傳送查詢範例](#image-delivery-full-parameters)
+
+         * [使用單一指定參數的影像傳送查詢範例](#image-delivery-single-specified-parameter)
    * And 操作：
 
       * `_operator`：套用特定的運算子；`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`
@@ -771,6 +984,7 @@ query {
          * 請參閱[範例查詢 - 篩選內含必須至少出現一次之項目的陣列](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`：查詢時忽略大小寫
          * 請參閱[範例查詢 - 所有名稱包含 SAN 的城市，不區分大小寫](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
+
 
 
 

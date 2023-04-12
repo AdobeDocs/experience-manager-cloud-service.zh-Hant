@@ -4,9 +4,9 @@ description: 整合 Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 9df5c3326d80e1a6c1726395722d86556af1ee29
+source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1047'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,9 @@ ht-degree: 1%
 * 使用觸控式UI在AEMas a Cloud Service中建立Target設定（需要IMS設定）。
 * 將Adobe Target新增及設定為 [Adobe啟動](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
-AdobeLaunch是管理AEM頁面（JS程式庫/標籤）中Analytics和Target的用戶端屬性的必要。 也就是說，「體驗鎖定目標」需要與Launch整合。 若要將體驗片段匯出至Target，您只需要Adobe Target設定和IMS。
+AdobeLaunch是管理AEM頁面（JS程式庫/標籤）中Analytics和Target的用戶端屬性的必要。 也就是說，「體驗鎖定目標」需要與Launch整合。
+
+若要將體驗片段和/或內容片段匯出至Target，您只需 [Adobe Target設定和IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
 >[!NOTE]
 >

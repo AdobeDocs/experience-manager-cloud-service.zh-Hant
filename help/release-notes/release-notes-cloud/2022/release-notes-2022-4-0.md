@@ -2,16 +2,16 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.4.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.4.0 版發行說明。'
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
+source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 20%
+source-wordcount: '570'
+ht-degree: 18%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 目前發行說明 {#release-notes}
+# 2022.4.0適用於 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的一般發行說明。
+以下章節概述2022.4.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -78,8 +78,8 @@ AEMas a Cloud ServiceSDK建置Analyzer Maven外掛程式會偵測Maven專案中�
 
 ## Cloud Manager {#cloud-manager}
 
-您可以找到Cloud Manager每月發行的完整清單 [這裡。](/help/implementing/cloud-manager/release-notes/current.md)
+您可以在[此處](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
 
 ## 移轉工具 {#migration-tools}
 
-您可以在[這裡](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。
+您可以在[此處](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到移轉工具版本的完整清單。

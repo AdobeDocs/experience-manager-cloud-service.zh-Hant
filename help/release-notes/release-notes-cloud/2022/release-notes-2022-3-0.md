@@ -2,16 +2,16 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
+source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1150'
 ht-degree: 14%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 目前發行說明 {#release-notes}
+# 2022.3.0適用於 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的一般發行說明。
+以下章節概述2022.3.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -62,9 +62,9 @@ ht-degree: 14%
 
 * **[!DNL Communications - Document Generation APIs]**: [檔案產生API](/help/forms/aem-forms-cloud-service-communications.md) 幫助組合、重新排列和驗證PDF文檔。 此服務可讓您以同步模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
 
-   * 組合PDF文檔。
-   * 拆解PDF文檔。
-   * 轉換為並驗證PDF/A相容的文檔。
+   * 組合 PDF 文件.
+   * 分解 PDF 文件.
+   * 轉換為 PDF/A 相容文件並進行驗證.
 
 * **自動將大於15頁的PDF forms轉換為最適化表單**:您現在可以使用automated forms conversion服務，將最多40頁的PDF forms轉換為最適化表單。 此服務現在提供將超過15頁的表單區段轉換為最適化表單片段的選項。 有助於改善轉換表單的轉譯速度，並讓您在最適化表單編輯器中輕鬆載入大型表單。
 
@@ -103,7 +103,7 @@ ht-degree: 14%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以找到Cloud Manager每月發行的完整清單 [這裡。](/help/implementing/cloud-manager/release-notes/current.md)
+您可以在[此處](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月發行的完整清單。
 
 ## 內容轉移工具 {#ctt-release}
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前版本注意事項。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前版本注意事項。'
 mini-toc-levels: 1
-source-git-commit: 411de178588ca94a0bdb60567b3c0a6b718edce1
-workflow-type: ht
-source-wordcount: '1032'
-ht-degree: 100%
+source-git-commit: 085ce15ebe4d48d32a437f13e728f60cfc57d0fa
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 34%
 
 ---
 
@@ -26,86 +26,70 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.1.0) 的發行日期是 2023 年 2 月 9 日。 下一個功能版本 (2023.2.0) 已計劃於 2023 年 4 月 12 日發行。
+發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前的功能版本(2023.2.0)為2023年4月12日。 下一個功能版本 (2023.4.0) 已計劃於 2023 年 4 月 27 日發行。
 
 ## 發行影片 {#release-video}
 
-請觀看 2023 年 1 月發行概觀影片，了解 2023.1.0 版本新增功能摘要：
+請觀看2023年2月版本概述影片，以取得2023.2.0版本中新增功能的摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3413479/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3416885/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites] 中的新功能 預先發佈 {#prerelease-features-sites}
+### [!DNL Experience Manager Sites] 中的新功能 預租 {#prerelease-sites}
 
-* AEM GraphQL 內容傳遞 API 現在支援 GraphQL [分頁](/help/headless/graphql-api/content-fragments.md#paging)和[排序](/help/headless/graphql-api/content-fragments.md#sorting)，以提高擷取和呈現大型內容集的效率。GraphQL 分頁允許以子集傳回結果而非一次全部傳回來縮短查詢回應時間。GraphQL 排序允許按所需順序放置內容集，進而讓使用戶端應用程式更容易處理內容。AEM GraphQL 引擎中的混合篩選可進一步改進查詢回應時間。現在以與查詢篩選器相對應的較小集合的形式從 JCR 讀取內容。
+* 從AEM as a cloud service匯出內容片段，以JSON選件Adobe目標。
+* 支援GraphQL分頁和排序，以及內部快取增強功能，現在可協助您使用複雜的GraphQL查詢和篩選器從AEM擷取大型內容集時，改善去耦用戶端應用程式的效能。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* 資產報告現在可讓管理員從 Experience Manager Assets as a Cloud Service 部署[產生資產下載報告](/help/assets/asset-reports.md)。此資料可進一步讓管理員從關鍵成功量度取得深入見解，以衡量企業內和客戶對資產的採用程度。
+* 針對Dynamic Media視訊傳送中的最適化串流（已啟用CMAF）推出全新通訊協定（DASH — 透過HTTP動態最適化串流）支援：
+   * 最適化串流(DASH/HLS)可確保提供更佳的視訊使用者檢視體驗
+   * DASH是自適應視頻流的國際標準協定，在業界得到廣泛採用
+   * 適用於NA，即將在EMEA的APAC中推出支援票證，支援票證將予啟用
 
-   ![其他格式的 PDF 轉譯](/help/release-notes/assets/choose_report.png)
-
-* 除了在連接到 Azure Blob 儲存體資料來源以使用大量匯入工具擷取資產時支援用於驗證的存取金鑰之外，Experience Manager Assets 現在還[支援 SAS 權杖](/help/assets/add-assets.md#asset-bulk-ingestor)。
-
-* 改進 Asset Compute 中 CMYK 影像的管理，可讓您為 CMYK 影像產生智慧型裁切和智慧型標記。
-
-### [!DNL Assets] 發行前版本的新功能 {#prerelease-features-assets}
-
-* Experience Manager 資產現在支援使用大量匯入工具[從 Google Cloud Platform 大規模擷取資產](/help/assets/add-assets.md#asset-bulk-ingestor)。
+* 新增WebP影像支援，以自動擷取中繼資料、產生縮圖及自訂轉譯。 這些檔案現在也支援智慧標籤和智慧裁切功能。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 中可用的新功能 {#new-features-available-in-channel}
 
-* **[可產生非互動式 PDF 文件和可列印輸出的工作流程步驟](/help/forms/aem-forms-workflow-step-reference.md)**：使用 AEM 工作流程步驟，將業務流程的非互動式 PDF 文件和可列印輸出建立工作自動化，簡化您文件產生程序並節省時間。
-* **[使用腳註在調適型表單中提供引述或額外資訊](/help/forms/footnotes-richtextsupport.md)**：在調適型表單中使用腳註來顯示有關如何完成或使用表單的資訊。您還可以使用它來提供附加資訊、版權許可和其他有用的資訊。
-
-### [!DNL Forms] 發行前版本的新功能 {#prerelease-features-forms}
-
 * **[使用資料擷取核心元件以建置調適型表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)**：[使用調適型表單編輯器](/help/forms/creating-adaptive-form-core-components.md)根據標準化的資料擷取元件 (核心元件) 建立表單。這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。
-* **[前端管道支援設計以核心元件為基礎之調適型表單的樣式](/help/forms/using-themes-in-core-components.md)**：通過使用前端部署管道部署，為以核心元件為基礎之調適型表單使用易於自訂的 BEM 型主題，以增強表單的外觀和風格。
-* **[為以核心元件為基礎之調適型表單產產生記錄文件](/help/forms/generate-document-of-record-core-components.md)**：為以核心元件為基礎之調適型表單建立記錄，以提交供長期封存，採列印或文件格式。
+
+* **[基於樣式核心元件的前端管道支援自適應Forms](/help/forms/using-themes-in-core-components.md)**:透過前端部署管道部署核心元件適用性Forms，運用標準化的BEM型主題，增強表單的外觀和風格，並符合貴組織品牌認可的設計准則。
+
+* **[產生核心元件適用性Forms的記錄檔案](/help/forms/generate-document-of-record-core-components.md)**:建立記錄檔案，其中包含使用核心元件建立的適用性Forms的已提交資料，以供封存或參考給使用者、列印或檔案格式。
 
 ![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **[將調適型表單提交到 Microsoft SharePoint 和 Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**：簡化資料提交作業，能夠將調適型表單直接傳送到 Microsoft SharePoint 和 Microsoft OneDrive。您可以提交具結構描述的資料和無結構描述的資料。這些提交動作是對已經可用的提交動作的補充。
-* **[使用將調適型表單另存為模板功能來提升表單建置效率](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**：將調適型表單另存為模板，並在建置下一個調適型表單時重複使用模板，藉此簡化表單建置程序。
-* **[連接 AEM Forms 到支援 JDBC 的資料庫](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**：輕鬆將 AEM Forms 資料模式連接到支援 JDBC 的資料庫，讓您順暢讀寫資料。
-* **[使用 Open API 3.0 與 REST 端點相整合](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**：將 AEM Forms as a Cloud Service 表單資料模式連接到支援 Open API 規格版格 3.0 的 REST 端點，讓您輕鬆傳送和接收資料。
+* **[以「儲存最適化表單為範本」功能有效建立表單](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**:將現有品牌認可的表單儲存為表單範本，以便快速重複使用，借此加快表單開發並標準化。
+
+* **[將AEM Forms連接到JDBC支援的資料庫](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**:使用JDBC通訊協定，直接從AEM雲端服務連線至企業資料庫，而無須透過REST API公開。
+
+* **[使用Open API 3.0與REST端點整合](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**:無縫整合至支援Open API 3.0的記錄系統，以使用表單資料模型儲存和擷取資料。
+
 * **[共用調適型表單以供審閱](/help/forms/create-reviews-forms.md)**：使用調適型表單審閱機制讓一個或多個審核者審閱表單。
 
 
-## CIF 附加元件 {#cloud-services-cif}
+### 中的功能 [!DNL Forms] 預發行 {#prerelease-features-forms}
 
-### 新增功能 {#what-is-new-cif}
+* **[將適用性Forms提交至Microsoft SharePoint和Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**:提高商務使用者的靈活性，以快速啟動新表單，並將提交的資料儲存在他們使用的日常工具中，如Microsoft SharePoint網站或OneDrive資料夾。
 
-* 作者可以使用體驗片段以動態的方式豐富產品清單 (例如：在產品列表之間放置橫幅)。
-* 清單元件現在支援相關聯產品/類別頁面以動態顯示相關頁面。
-* 已新增 Peregrine 12.5 元件的支援。
-* 已新增對產品預告和輪播中用戶端價格載入的支援。
+![將適用性Forms提交至Microsoft SharePoint和Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
 
-## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
-### 新增功能 {#what-is-new-foundation}
+## 無頭式適應性Forms早期採用者計畫 {#forms-early-adopter}
 
-* [快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE 可讓開發人員可以快速解決問題並在 AEM as a Cloud Service 部署新功能。
+使用無頭式適用性Forms，讓開發人員可建立、發佈及管理可透過API存取及互動的互動式表單，而非透過傳統的圖形使用者介面。 無頭式最適化表單可協助您：
 
-   快速開發環境是一種新型雲端環境，用於以快速、一致和可擴展的方式來驗證在本機運作的程式碼在雲端是否也能正常運作。使用命令列工具，可以快速將內容套件、套件組合、內容檔案、OSGI 設定或 Dispatcher 設定同步到 RDE。在下面的視訊中看到這個動作：
+* 以您所選擇的程式設計語言建立高品質的多管道表單
+* 將表單與您的案頭和行動應用程式、網站和聊天應用程式進行原生整合
+* 在表單應用程式中重複使用專有的UI元件
+* 運用Adobe Experience Manager Forms的力量
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
-
-   在 RDE 中成功驗證代碼後，鼓勵部署到雲端開發環境以執行 Cloud Manager 品質關卡，然後再透過生產管道部署到階段和生產環境。
-
-   每個程序包括一個 RDE，並且可以選擇授權更多。
-
-   >[!NOTE]
-   >
-   >RDE 將在接下來幾週內逐步推出；您可以發送電子郵件至 aemcs-rde-support@adobe.com 以跳到該行的前面。
-
-* [擴展對伺服器端 API 存取代號的支援](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) – 您現在可以產生多個憑證，這有助於 API 具有不同特性的使用案例。現在也能以自助式方式撤銷憑證。
+您可以從官方電子郵件ID發送電子郵件至aem-forms-headless@adobe.com，以加入早期採用者計畫。
 
 ## 維護版本注意事項 {#maintenance}
 

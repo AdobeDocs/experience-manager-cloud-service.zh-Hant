@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
-workflow-type: ht
-source-wordcount: '4013'
-ht-degree: 100%
+source-git-commit: af3b5950a36bbd4a8d1e0de9591d31c50fa774c8
+workflow-type: tm+mt
+source-wordcount: '4023'
+ht-degree: 99%
 
 ---
 
@@ -34,6 +34,8 @@ ht-degree: 100%
    + [發行資訊](/help/release-notes/home.md)
    + AEMaaCS 功能版本注意事項{#release-notes}
       + [最新版本注意事項](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2023 {#2023}
+         + [2023.1.0 版版本注意事項](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
       + 2022 {#2022}
          + [2022.10.0 版版本注意事項](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
          + [2022.8.0 版版本注意事項](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -367,6 +369,7 @@ ht-degree: 100%
       + [與 Adobe Learning Manager 整合](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [整合 Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [與 Adobe Target 整合時使用的 IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
+      + [將內容片段匯出至Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
 + 資產 {#assets}
