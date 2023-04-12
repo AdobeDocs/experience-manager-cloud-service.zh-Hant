@@ -2,10 +2,10 @@
 title: 將內容內嵌至目標
 description: 將內容內嵌至目標
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1687'
+ht-degree: 12%
 
 ---
 
@@ -20,8 +20,6 @@ ht-degree: 0%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="追加擷取"
 
 請依照下列步驟，從「內容轉移工具」中擷取您的移轉集：
->[!NOTE]
->您可以執行選用的預先複製步驟，大幅加快擷取階段。 預複製步驟對於第1次完全擷取和擷取最有效。 請參閱 [使用AzCopy擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以取得更多詳細資訊。
 
 >[!NOTE]
 >您是否記得記錄此擷取的支援票證？ 請參閱 [使用內容轉移工具前的重要考量](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 以及其他考量事項，協助讓擷取成功。
@@ -29,7 +27,6 @@ ht-degree: 0%
 1. 前往Cloud Acceleration Manager。 按一下您的專案卡，然後按一下「內容轉移」卡。 導覽至 **擷取工作** 按一下 **新擷取**
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
-
 
 1. 檢閱擷取檢查清單，並確保所有步驟皆已完成。 這些是確保成功擷取的必要步驟。 您可以繼續 **下一個** 步驟（僅在檢查清單已完成時執行）。
 
