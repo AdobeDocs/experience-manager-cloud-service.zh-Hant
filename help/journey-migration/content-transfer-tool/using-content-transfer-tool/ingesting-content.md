@@ -2,9 +2,9 @@
 title: 將內容內嵌至目標
 description: 將內容內嵌至目標
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
+source-git-commit: b0723faa23d77ac6b747f189e0643db59ddb2802
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1702'
 ht-degree: 12%
 
 ---
@@ -39,30 +39,19 @@ ht-degree: 12%
    * 選取目標環境。 這是將擷取移轉集內容的位置。 選擇層。 （製作/發佈）。 不支援快速開發環境。
 
    >[!NOTE]
-   >
-   >如果來源為「作者」，建議將其內嵌至目標上的「作者」階層。 同樣地，如果來源為「發佈」，則target也應為「發佈」。
-
-   >[!NOTE]
-   >
-   >如果目標層為 `Author`，則擷取期間會關閉author例項，且使用者無法使用（例如，作者或執行維護的任何人等）。 這是為了保護系統，並防止任何可能遺失或導致擷取衝突的變更。 請確保您的團隊了解這一事實。 另請注意，環境在製作擷取期間會顯示為休眠。
-
-   >[!NOTE]
-   >
-   >您可以執行選用的預先複製步驟，大幅加快擷取階段。 請參閱 [使用AzCopy擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以取得更多詳細資訊。
-   > 
-   >如果使用預復本擷取（適用於S3或Azure資料存放區），建議您先單獨執行製作擷取。 這會在稍後執行時加速發佈擷取。
-
-   >[!NOTE]
-   >
-   >擷取不支援快速開發環境(RDE)目的地。 即使使用者有存取權，它們也不會顯示為可能的目的地選項。
+   >下列附註適用於內嵌內容：
+   * 如果來源為「作者」，建議將其內嵌至目標上的「作者」階層。 同樣地，如果來源為「發佈」，則target也應為「發佈」。
+   * 如果目標層為 `Author`，則擷取期間會關閉author例項，且使用者無法使用（例如，作者或執行維護的任何人等）。 這是為了保護系統，並防止任何可能遺失或導致擷取衝突的變更。 請確保您的團隊了解這一事實。 另請注意，環境在製作擷取期間會顯示為休眠。
+   * 您可以執行選用的預先複製步驟，大幅加快擷取階段。 請參閱 [使用AzCopy擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以取得更多詳細資訊。
+   * 如果使用預復本擷取（適用於S3或Azure資料存放區），建議您先單獨執行製作擷取。 這會在稍後執行時加速發佈擷取。
+   * 擷取不支援快速開發環境(RDE)目的地。 即使使用者有存取權，它們也不會顯示為可能的目的地選項。
 
    >[!IMPORTANT]
-   >
-   >只有在您屬於本機 **AEM管理員** 群組(在目標Cloud Service作者服務上)。 如果您無法開始擷取，請參閱 [無法開始擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以取得更多詳細資訊。
+   > 下列重要通知適用於擷取內容：
+   * 只有在您屬於本機 **AEM管理員** 群組(在目標Cloud Service作者服務上)。 如果您無法開始擷取，請參閱 [無法開始擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以取得更多詳細資訊。
+   * 若設定 **擦去** 系統會在擷取前啟用，而會刪除整個現有存放庫，並建立新存放庫以將內容擷取至中。 這表示會重設所有設定，包括目標Cloud Service例項的權限。 對於新增至 **管理員** 群組。 您需要重新新增至管理員群組，才能開始擷取。
 
-   >[!IMPORTANT]
-   >
-   >若設定 **擦去** 系統會在擷取前啟用，而會刪除整個現有存放庫，並建立新存放庫以將內容擷取至中。 這表示會重設所有設定，包括目標Cloud Service例項的權限。 對於新增至 **管理員** 群組。 您需要重新新增至管理員群組，才能開始擷取。
+
 
 1. 按一下 **內嵌**
 
