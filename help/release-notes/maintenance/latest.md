@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本注意事項。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本注意事項。'
-source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
+source-git-commit: fb9b735c44dddda9572d3a1f90d49452c6ddc094
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '436'
+ht-degree: 92%
 
 ---
 
@@ -19,11 +19,16 @@ ht-degree: 0%
 
 此維護版本的功能啟用將為您提供完整的功能集。 如需完整詳情，請參閱[最新版本注意事項](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
+>[!IMPORTANT]
+>
+> CloudManager UI顯示「2023.3.11382」，而官方發行版本為「2023.02」時，會指出不一致。 這是因為2023.02功能的延遲激活。
+> 我們正致力於修正此問題，以因應即將發行的版本。
+
 ### 已知問題 {#known-issues-11382}
 
 - SITES-12573 - 如果有一個變數未指定，在篩選條件中使用變數的 GraphQL 查詢將會失敗。如果您搭配 AEM as a Cloud Service 使用 GraphQL，請勿更新到這個版本。
-- SKYOPS-51970 — 識別buildImage步驟中使用的FACT版本回歸，導致使用者對應不相符。
-- GRANITE-44542 — 針對未為封裝篩選器中包含的資料夾指定封裝nodetype（透過提供.content.xml與jcr:primaryType）的客戶，回報問題。 這會將這些資料夾視為nt:folder，在各種情況下會造成問題。
+- SKYOPS-51970 - 識別出 buildImage 步驟所使用之 FACT 版本的迴歸，導致使用者對應不相符。
+- GRANITE-44542 - 已針對部分客戶回報問題，這些客戶沒有為內含在套件篩選器中的資料夾指定套件 nodetype (透過提供具有 jcr:primaryType 的 .content.xml 指定)。這會讓這些資料夾被視為 nt:folder，在多種情況下會產生問題。
 
 ### 已修正的問題 {#fixed-issues-11382}
 
