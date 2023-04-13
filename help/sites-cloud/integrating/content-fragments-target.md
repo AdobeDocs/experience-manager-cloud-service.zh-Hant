@@ -1,9 +1,9 @@
 ---
 title: 將內容片段匯出至Adobe Target
 description: 將內容片段匯出至Adobe Target
-source-git-commit: 78840c83d91d6e4f35ec7ca8d14f52024d3535ff
+source-git-commit: 61266ca2caf4cbc02b79a14349c73dced456b5a3
 workflow-type: tm+mt
-source-wordcount: '2193'
+source-wordcount: '2228'
 ht-degree: 0%
 
 ---
@@ -321,7 +321,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. 導覽至 **資產** 控制台。
 1. 選取您要匯出至目標的內容片段。
 
-1. 點選/按一下 **匯出至Adobe Target**.
+1. 點選/按一下 **匯出至Adobe Target選件**.
 
    ![匯出至 Adobe Target](assets/cfm-export-target-01.png)
 
@@ -339,7 +339,13 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >選取 **發佈** 會立即發佈內容片段並傳送至Target。
+   >顯示的實際動作取決於片段和相關資產的狀態。
+   >
+   >如果所有項目皆已發佈，且此後未修改任何項目，則會傳遞此步驟。
+
+   >[!NOTE]
+   >
+   >選取 **發佈** 會立即發佈內容片段，並將其傳送至Target。
 
 1. 點選/按一下 **確定** 在確認對話方塊中。
 
