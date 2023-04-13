@@ -1,19 +1,15 @@
 ---
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
-source-git-commit: 95787669581c906a9cdc35a0ac450adf17b0b402
+source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3304'
 ht-degree: 5%
 
 ---
 
 
 # 快速開發環境 {#rapid-development-environments}
-
->[!AVAILABILITY]
->
->此功能預計會逐步推出給客戶使用。
 
 為了部署變更，目前的雲端開發環境需要使用採用廣泛程式碼安全性和品質規則的程式，稱為CI/CD管道。 對於需要快速和迭代更改的情況，Adobe引入了快速開發環境（簡稱RDE）。
 
