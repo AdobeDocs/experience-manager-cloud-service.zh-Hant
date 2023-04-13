@@ -5,9 +5,9 @@ landing-page-description: 了解如何從內容片段主控台管理內容片段
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
+source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '1028'
 ht-degree: 7%
 
 ---
@@ -162,6 +162,22 @@ ht-degree: 7%
 * 檢索保存的搜索篩選器以重複使用的選項
 
 ![內容片段主控台 — 篩選](assets/cfc-console-filter.png)
+
+### 快速篩選 {#fast-filtering}
+
+您也可以按一下清單中的特定欄值，以選取謂語。 您可以選取一或多個值來組合謂語。
+
+例如，選取 **已發佈** 在 **狀態** 欄：
+
+>[!NOTE]
+>
+>僅支援 **模型**, **狀態**, **修改者**，和 **發佈者** 欄。
+
+![內容片段主控台 — 篩選](assets/cfc-console-fast-filter-01.png)
+
+選取後，此項目會顯示為篩選述詞，並據此篩選清單：
+
+![內容片段主控台 — 篩選](assets/cfc-console-fast-filter-02.png)
 
 ## 搜尋片段 {#searching-fragments}
 
