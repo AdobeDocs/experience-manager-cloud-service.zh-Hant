@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本注意事項。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本注意事項。'
-source-git-commit: fb9b735c44dddda9572d3a1f90d49452c6ddc094
+source-git-commit: 3378322c16f12c5ec4a741b912bbe0833f68d8e4
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 92%
+source-wordcount: '470'
+ht-degree: 85%
 
 ---
 
@@ -29,6 +29,7 @@ ht-degree: 92%
 - SITES-12573 - 如果有一個變數未指定，在篩選條件中使用變數的 GraphQL 查詢將會失敗。如果您搭配 AEM as a Cloud Service 使用 GraphQL，請勿更新到這個版本。
 - SKYOPS-51970 - 識別出 buildImage 步驟所使用之 FACT 版本的迴歸，導致使用者對應不相符。
 - GRANITE-44542 - 已針對部分客戶回報問題，這些客戶沒有為內含在套件篩選器中的資料夾指定套件 nodetype (透過提供具有 jcr:primaryType 的 .content.xml 指定)。這會讓這些資料夾被視為 nt:folder，在多種情況下會產生問題。
+- SKYOPS-56928 - Apache HTTPD回歸可能造成404錯誤。 如果您遇到這些問題，基於安全原因，建議您回復至舊版，並避免在該時段期間執行任何管道。
 
 ### 已修正的問題 {#fixed-issues-11382}
 
