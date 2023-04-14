@@ -4,9 +4,9 @@ description: 了解如何使用內容片段主控台管理您的AEM內容片段�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: b351582a405f5c419f3aa386faddccd6ecef3a43
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1907'
 ht-degree: 2%
 
 ---
@@ -244,7 +244,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 如果您的片段以模型為基礎，則應確定 [模型已發佈](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 如果您發佈的內容片段尚未發佈模型，則選取清單會指出此點，且模型將會隨片段發佈。
 
-內容片段必須發佈以便在發佈環境中使用。 這是使用標準「資產」功能完成
+內容片段必須發佈以便在發佈環境中使用。
 
 * 從 **發佈** 選項 [內容片段主控台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
    * **現在**  — 確認後，片段將立即發佈
