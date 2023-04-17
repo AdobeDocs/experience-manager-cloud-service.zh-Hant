@@ -2,8 +2,8 @@
 title: 為 AEM as a Cloud Service 設定進階網路
 description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，例如 VPN 或彈性或專用輸出 IP 地址等
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 8ca2340bf6d39248ed3596828f27745dcaff2c75
-workflow-type: ht
+source-git-commit: 67e801cc22adfbe517b769e829e534eadb1806f5
+workflow-type: tm+mt
 source-wordcount: '3053'
 ht-degree: 100%
 
@@ -494,7 +494,7 @@ API 應該在幾秒鐘內做出回應，表明 `updating` 的狀態，大約 10 
     <td>AEM 端 VPN 閘道的 IP。 客戶的網路工程團隊可以使用此項，僅允許從特定 IP 位址的 VPN 連線到他們的 VPN 閘道。 </td>
   </tr>
   <tr>
-    <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
+    <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
     <td>來自 VPN 的 AEM 端到客戶端之流量的 IP。 這可以在客戶的設定中加入允許清單，以確保只能從 AEM 建立連線。</td>
     <td>如果客戶想要允許 VPN 存取 AEM，他們應該設定 CNAME DNS 項目，將他們的自訂網域和/或 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 和/或 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 對應至此。</td>
   </tr>
