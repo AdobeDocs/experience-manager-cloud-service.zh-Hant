@@ -2,9 +2,9 @@
 title: 為Adobe Experience Manager Forms as a Cloud Service設定本機開發環境
 description: 為Adobe Experience Manager Forms as a Cloud Service設定本機開發環境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: dea6c266e5c10135a320f923dc77d0fd2050988e
+source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
 workflow-type: tm+mt
-source-wordcount: '2960'
+source-wordcount: '3020'
 ht-degree: 2%
 
 ---
@@ -333,7 +333,7 @@ Dispatcher上的快取允許 [!DNL AEM Forms] 在用戶端預填適用性Forms�
 
 ## 為現有的AEM原型專案啟用適用性Forms核心元件 {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
 
-如果您針對AEM Formsas a Cloud Service使用AEM原型40版或更新版本型程式，核心元件會針對您的環境自動啟用。
+如果您針對AEM Formsas a Cloud Service使用AEM原型40版或更新版本型程式，核心元件會針對您的環境自動啟用。 若要為您的環境啟用核心元件，請 **適用性Forms（核心元件）** 範本和畫布主題會新增至您的環境。 如果您的AEM SDK版本早於2023.02.0, [確保您 `prerelease` 在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) 因為最適化Forms核心元件是2023.02.0版之前的預先發行。
 
 若要根據舊版原型為您的AEM Formsas a Cloud Service環境啟用適用性Forms核心元件，請在專案中內嵌WCM核心元件範例成品和Forms核心元件成品（包括範例）:
 

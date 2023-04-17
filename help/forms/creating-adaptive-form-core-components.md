@@ -4,10 +4,10 @@ description: 了解如何使用 [!DNL Experience Manager Forms]. 適用性Forms�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
+source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 0%
+source-wordcount: '1496'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 開始之前，請先了解可用的Forms元件類型：
 
-* [適用性Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en):這些是標準化的資料捕獲元件。 這些元件為您的數位註冊體驗提供自訂功能、縮短開發時間並降低維護成本。 開發人員可輕鬆自訂和設定這些元件的樣式。 Adobe建議運用這些現代且可擴充的元件來開發最適化Forms。
+* [適用性Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant):這些是標準化的資料捕獲元件。 這些元件為您的數位註冊體驗提供自訂功能、縮短開發時間並降低維護成本。 開發人員可輕鬆自訂和設定這些元件的樣式。 Adobe建議運用這些現代且可擴充的元件來開發最適化Forms。
 
 * [適用性Forms Foundation元件](creating-adaptive-form.md):這些是傳統（舊）資料捕獲元件。 您可以繼續使用這些元件來編輯現有的基礎元件（以最適化表單為基礎）。 如果您要建立新表單，Adobe建議使用  [適用性Forms核心元件](creating-adaptive-form-core-components.md) 來建立適用性Forms。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 您需要下列項目才能建立最適化表單：
 
-* **為您的環境啟用適用性Forms核心元件**:建立新方案時，您的環境已啟用適用性Forms核心元件。 如果您有以原型39或更舊版本為基礎的Formsas a Cloud Service環境， [為您的環境啟用適用性Forms核心元件](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). 若要為您的環境啟用核心元件，請 **適用性Forms（核心元件）** 範本和畫布主題會新增至您的環境。
+* **為您的環境啟用適用性Forms核心元件**:建立新方案時，您的環境已啟用適用性Forms核心元件。 如果您有以原型39或更舊版本為基礎的Formsas a Cloud Service環境， [為您的環境啟用適用性Forms核心元件](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). 若要為您的環境啟用核心元件，請 **適用性Forms（核心元件）** 範本和畫布主題會新增至您的環境。 如果您的AEM SDK版本早於2023.02.0, [確保您 `prerelease` 在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) 因為最適化Forms核心元件是2023.02.0版之前的預先發行。
 
 * **最適化表單範本**:範本提供基本結構並定義最適化表單的外觀（配置和樣式）。 它具有包含特定屬性和內容結構的預格式化元件。 它還提供定義主題和提交動作的選項。 主題定義外觀和風格，並定義提交動作，以便在提交最適化表單時採取動作。 例如，將收集的資料傳送至資料來源。 雲端服務提供OOTB範本，命名為空白：
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 ## 可用適用性Forms核心元件
 
-適用性Forms核心元件是標準化的資料擷取元件。 這些元件提供自訂功能，有助於縮短開發時間，並降低數位註冊體驗的維護成本。 [適用性Forms核心元件檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) 有詳細的可用元件清單，以及每個元件功能的詳細資訊。 您也可以造訪 [https://aemcomponents.dev/](https://aemcomponents.dev/) 檢視可用的核心元件。
+適用性Forms核心元件是標準化的資料擷取元件。 這些元件提供自訂功能，有助於縮短開發時間，並降低數位註冊體驗的維護成本。 [適用性Forms核心元件檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant) 有詳細的可用元件清單，以及每個元件功能的詳細資訊。 您也可以造訪 [https://aemcomponents.dev/](https://aemcomponents.dev/) 檢視可用的核心元件。
 
 ## 編輯最適化表單的表單模型屬性 {#edit-form-model}
 
