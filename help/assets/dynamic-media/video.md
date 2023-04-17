@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 57666d474cd2ae41048e2d30eb27b0719a447005
+source-git-commit: 13a1915e9aca812024e8eb27c131500cdc8e01b2
 workflow-type: tm+mt
-source-wordcount: '5899'
+source-wordcount: '5887'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,6 @@ ht-degree: 2%
 
       * 使用網頁上的內嵌程式碼整合視訊：
          [將視訊檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md).
-   * [將影片發佈至YouTube](#publishing-videos-to-youtube).
    * [產生視訊報表](#viewing-video-reports).
 
    * [向視頻添加字幕](#adding-captions-to-video).
@@ -273,7 +272,7 @@ DASH是國際標準，HLS是Apple標準。 兩者皆用於最適化視訊串流�
 
 ## 編碼視訊的最佳作法 {#best-practices-for-encoding-videos}
 
-此 **Dynamic Media編碼視訊** 如果您已啟用Dynamic Media並設定視訊Cloud Services，工作流程會對視訊進行編碼。 此工作流程會擷取工作流程處理歷程記錄和失敗資訊。請參閱 [監視視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress). 如果您已啟用Dynamic Media並設定視訊Cloud Services，則 **[!UICONTROL Dynamic Media編碼視訊]** 上傳視訊時，工作流程會自動生效。 (如果您未使用Dynamic Media, **[!UICONTROL DAM更新資產]** 工作流程生效。)
+此 **Dynamic Media編碼視訊** 如果您已啟用Dynamic Media並設定視訊Cloud Services，工作流程會對視訊進行編碼。 此工作流程會擷取工作流程處理歷程記錄和失敗資訊。如果您已啟用Dynamic Media並設定視訊Cloud Services，則 **[!UICONTROL Dynamic Media編碼視訊]** 上傳視訊時，工作流程會自動生效。 (如果您未使用Dynamic Media, **[!UICONTROL DAM更新資產]** 工作流程生效。)
 
 以下是編碼來源視訊檔案的最佳實務提示。
 
