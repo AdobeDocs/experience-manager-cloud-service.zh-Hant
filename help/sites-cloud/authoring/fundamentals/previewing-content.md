@@ -2,10 +2,10 @@
 title: 預覽內容
 description: 了解如何使用AEM預覽服務在上線前預覽內容。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 5a804895013e19592f918341bbc7921261b26945
+source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 0%
+source-wordcount: '277'
+ht-degree: 2%
 
 ---
 
@@ -16,11 +16,7 @@ AEM提供網站預覽服務，讓開發人員和內容作者在到達發佈環�
 
 它有助於預覽原本無法從製作環境看到的頁面體驗，例如頁面轉變和其他僅發佈端內容。
 
-如需預覽環境的詳細資訊，請參閱本檔案 [管理環境。](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
-
->[!NOTE]
->
->將體驗片段發佈至預覽基本上遵循與頁面相同的程式，不過可從體驗片段主控台或編輯器進行。
+如需預覽環境的詳細資訊，請參閱本檔案 [管理環境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## 發佈要預覽的內容 {#publishing-content-to-preview}
 
@@ -52,26 +48,10 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 
 唯一的差異是您可以選取 **目的地** 為 **預覽**.
 
-## 為預覽層配置OSGi設定 {#configuring-osgi-settings-for-the-preview-tier}
+## 更多資訊 {#further-information}
 
-預覽層級的OSGi屬性值繼承自發佈層級。 不過，透過設定 `service` 參數 `preview`. 下列OSGi屬性的範例決定整合端點的URL。
+另請參閱:
 
-```
-[
-{
-"name":"INTEGRATION_URL",
-"type":"string",
-"value":"http://s2.integrationvendor.com",
-"service": "preview"
-}
-]
-```
+* [為預覽層配置OSGi設定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
 
-如需詳細資訊，請參閱 [本節](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration) 填入OSGi設定檔案。
-
-## 使用開發人員控制台進行除錯預覽 {#debugging-preview-using-the-developer-console}
-
-請依照下列步驟，使用「開發人員控制台」對預覽層層除錯：
-
-* 在 [開發人員控制台](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)選取 **— 全部預覽 —** 或生產環境，包括 **prev** 在
-* 生成預覽實例的相關資訊請參閱 [管理環境](/help/implementing/cloud-manager/manage-environments.md) 以取得環境URL的詳細資訊。
+* [使用開發人員控制台進行除錯預覽](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
