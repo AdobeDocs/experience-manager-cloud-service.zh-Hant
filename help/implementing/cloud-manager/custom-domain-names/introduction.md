@@ -2,9 +2,9 @@
 title: 自訂網域名稱簡介
 description: Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 5649f083c55cd84296f38acbff3f395e77a7e422
+source-git-commit: cc6910bad0d0a62232bd66e0080b6802b9a1110b
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 82%
 
 ---
@@ -42,7 +42,7 @@ Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一�
 * 當有一個當前正在運行的管道連接到這些環境時，無法將域名添加到環境中。
 * 同一個域名不能用於多個環境。
 * 一次只能新增一個網域名稱。
-* AEMas a Cloud Service不支援這類萬用字元網域 `*.example.com`.
+* AEMas a Cloud Service不支援萬用字元網域，例如 `*.example.com`.
 * 添加自定義域名之前，必須為程式安裝包含自定義域名（通配符證書有效）的有效SSL證書。 請參閱 [新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 了解更多。
 
 >[!NOTE]
