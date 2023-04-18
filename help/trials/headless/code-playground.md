@@ -1,31 +1,31 @@
 ---
-title: 使用JavaScript擷取JSON內容
-description: 探索使用CodePen應用程式和AEM Headless Client for JavaScript從試用環境擷取JSON內容。
+title: 使用 JavaScript 擷取 JSON 內容
+description: 探索使用 CodePen 應用程式和適用於 JavaScript 的 AEM Headless 用戶端，從您的試用環境擷取 JSON 內容。
 hidefromtoc: true
 index: false
 source-git-commit: 3aff5ef2fb9ecdd815f0bc1a813d3a3982b4e0ed
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '800'
+ht-degree: 17%
 
 ---
 
 
-# 使用JavaScript擷取JSON內容 {#fetch-json}
+# 使用 JavaScript 擷取 JSON 內容 {#fetch-json}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
->title="使用JavaScript擷取JSON內容"
->abstract="探索使用CodePen應用程式和AEM Headless Client for JavaScript從試用環境擷取JSON內容。"
+>title="使用 JavaScript 擷取 JSON 內容"
+>abstract="探索使用 CodePen 應用程式和適用於 JavaScript 的 AEM Headless 用戶端，從您的試用環境擷取 JSON 內容。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
->title="啟動CodePen應用程式範例"
->abstract="我們已整合最簡單的CodePen應用程式，導入使用GraphQL持續查詢從試用環境擷取JSON資料的功能。<br><br>按一下下方啟動CodePen範例，然後依照本指南了解詳細資訊。"
+>title="啟動範例 CodePen 應用程式"
+>abstract="我們已經放入一個最小的 CodePen 應用程式來介紹使用 GraphQL 持續性查詢從您的試用環境擷取 JSON 資料。<br><br>點選下方以啟動 CodePen 範例，然後按照本指南操作以進一步了解。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
->title="在本模組中，您已了解如何使用AEM Headless Client for JavaScript，使用GraphQL持續查詢從試用環境擷取JSON資料。<br><br>現在，您已了解如何使用此用戶端來使用您自己Web應用程式中的資料。"
+>title="在本單元中，您會了解如何使用適用於 JavaScript 的 AEM Headless 用戶端，透過 GraphQL 持續性查詢從您的試用環境擷取 JSON 資料。<br><br>現在您已了解如何使用此用戶端在您自己的 Web 應用程式中的取用資料。"
 >abstract=""
 
 ## 簡介 {#intro}
