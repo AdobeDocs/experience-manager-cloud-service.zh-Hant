@@ -2,10 +2,10 @@
 title: 沙箱程序簡介
 description: 了解沙箱程序與生產程序有何不同。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 18c5d2ba77a97413d0d83235ad2baec9fe4b0238
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -69,3 +69,9 @@ AEM 更新不會自動推送到沙箱程序，但可以手動應用於沙箱程�
 沙箱程序在處於連續休眠模式 6 個月後被刪除，之後可以重新建立它們。
 
 如需了解詳細資訊，請參閱：[休眠和去休眠沙箱環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)。
+
+### 無技術支援 {#no-support}
+
+由於沙箱方案的建立通常是為了提供訓練、執行示範、啟用或概念驗證(POC)，因此沙箱方案中遇到的問題無法提供技術支援。
+
+如果您在建立和管理沙箱方案時遇到問題，仍屬於技術支援範圍。
