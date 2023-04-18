@@ -5,10 +5,10 @@ landing-page-description: 了解如何從內容片段主控台管理內容片段
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
+source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 7%
+source-wordcount: '1051'
+ht-degree: 6%
 
 ---
 
@@ -68,22 +68,33 @@ ht-degree: 7%
       * 在欄標題上使用滑鼠移至，將會顯示下拉式動作選取器和寬度滑桿。 這些功能可讓您：
          * 排序 — 為升序或降序選擇適當的操作。這將根據該列對整個表進行排序。 排序僅適用於適當的欄。
          * 調整列大小 — 使用操作或寬度滑塊
-      * 您可以 [選取一或多個內容片段以顯示可用動作](#actions-selected-content-fragment)
-   * **[建立](#creating-new-content-fragment)** 新內容片段
-   * [篩選](#filtering-fragments) 內容片段會根據謂語的選取，並儲存篩選器以供日後使用
-   * [搜尋](#searching-fragments) 內容片段
-   * [自訂表格檢視以顯示選取的資訊欄](#select-available-columns)
-   * 使用 **在資產中開啟** 以直接開啟 **資產** 主控台
 
-      >[!NOTE]
-      >
-      >此 **資產** console可用來存取資產，例如影像、影片等。  此主控台可供存取：
-      >
-      >* 使用 **在資產中開啟** 連結（在內容片段主控台中）
-      >* 直接從全域導覽窗格
+## 動作 {#actions}
+
+在主控台中，您可以直接使用，或在選取特定片段後使用的動作範圍：
+
+* 各種動作都直接 [可從主控台取得](#available-actions)
+* 您可以 [選取一或多個內容片段以顯示適當的動作](#actions-selected-content-fragment)
+
+### 動作（未選取） {#actions-unselected}
+
+某些動作可從主控台使用 — 不需選取特定內容片段：
+
+* **[建立](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** 新內容片段
+* [篩選](#filtering-fragments) 內容片段會根據謂語的選取，並儲存篩選器以供日後使用
+* [搜尋](#searching-fragments) 內容片段
+* [自訂表格檢視以顯示選取的資訊欄](#select-available-columns)
+* 使用 **在資產中開啟** 以直接開啟 **資產** 主控台
+
+   >[!NOTE]
+   >
+   >此 **資產** console可用來存取資產，例如影像、影片等。  此主控台可供存取：
+   >
+   >* 使用 **在資產中開啟** 連結（在內容片段主控台中）
+   >* 直接從全域導覽窗格
 
 
-## （選取的）內容片段的動作 {#actions-selected-content-fragment}
+### （選取的）內容片段的動作 {#actions-selected-content-fragment}
 
 選取特定片段會開啟工具列，專注於該片段可用的動作。 您也可以選取多個片段 — 動作的選取將會據此調整。
 
@@ -146,12 +157,6 @@ ht-degree: 7%
 這會顯示可隱藏或顯示的欄清單：
 
 ![內容片段主控台 — 欄設定](assets/cfc-console-column-selection.png)
-
-## 正在建立新內容片段 {#creating-new-content-fragment}
-
-選取 **建立** 開啟了緊湊型 **新內容片段** 對話框：
-
-![內容片段主控台 - 建立新片段](assets/cfc-console-create.png)
 
 ## 篩選片段 {#filtering-fragments}
 
