@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 968cf51b3c13ecba7230a222edf695fdef69450d
+source-git-commit: d6242e12f650845c778a0cc0850dacdd18dc7a0e
 workflow-type: tm+mt
-source-wordcount: '4047'
+source-wordcount: '4051'
 ht-degree: 99%
 
 ---
@@ -72,6 +72,7 @@ ht-degree: 99%
    + AEMaaCS 維護版本注意事項{#maintenance}
       + [目前維護版本注意事項](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [2023.2.0 維護版本注意事項](/help/release-notes/maintenance/2023/2023.2.0.md)
          + [2023.1.0 維護版本注意事項](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Cloud Manager 版本注意事項 {#cloud-manager}
       + [最新版本注意事項](/help/implementing/cloud-manager/release-notes/current.md)
@@ -178,7 +179,7 @@ ht-degree: 99%
       + [為您的應用程式建立內容結構](/help/trials/headless/content-structure.md)
       + [建立 Headless 內容](/help/trials/headless/create-content.md)
       + [通過 GraphQL API 擷取內容](/help/trials/headless/extract-content.md)
-      + [使用JavaScript擷取JSON內容](/help/trials/headless/code-playground.md)
+      + [使用 JavaScript 擷取 JSON 內容](/help/trials/headless/code-playground.md)
 + AEM as a Cloud Service 移轉歷程 {#migration-journey}
    + [移動 AEM as a Cloud Service 快速入門](/help/journey-migration/getting-started.md)
    + [整備階段](/help/journey-migration/readiness.md)
