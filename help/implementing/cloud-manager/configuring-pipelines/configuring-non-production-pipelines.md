@@ -3,10 +3,10 @@ title: 設定非生產管道
 description: 了解如何設定非生產管道以在部署到生產環境之前測試程式碼的品質。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: aac397310babe1aa1e950c176459beaf665b72ce
-workflow-type: ht
-source-wordcount: '1369'
-ht-degree: 100%
+source-git-commit: 0dd1cfba81eb8dfab3e002333868ec79ebc5e96c
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -94,6 +94,12 @@ ht-degree: 100%
 管道已儲存，您現在可以在&#x200B;**計劃總覽**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
 ### 完整堆疊程式碼 {#full-stack-code}
+
+>[!NOTE]
+>
+>* 此功能目前尚未正式推出。 預計於2023年6月推出。
+>* 如果您想要試用此功能並提供改善意見，請聯絡您的Adobe代表。
+
 
 完整堆疊程式碼管道同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端程式碼構建。有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)。
 
