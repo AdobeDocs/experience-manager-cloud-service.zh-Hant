@@ -1,17 +1,17 @@
 ---
-title: 製作概念
+title: 編寫概念
 description: AEM中的製作概念
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b407765438086bb2f7fb720fb7f1dd05699cb48f
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 2%
+source-wordcount: '385'
+ht-degree: 4%
 
 ---
 
-# 製作概念 {#authoring-concepts}
+# 編寫概念 {#authoring-concepts}
 
-AEM安裝通常至少包含兩個環境：
+AEM 安裝通常至少包含兩個環境：
 
 * 作者
 * 發佈
@@ -51,6 +51,12 @@ AEM安裝通常至少包含兩個環境：
 >[!NOTE]
 >
 >AEM也可從製作環境中管理。
+
+## 預覽內容 {#previewing-content}
+
+AEM也提供網站預覽服務，讓開發人員和內容作者在到達發佈環境且可供公開使用之前，先預覽網站的最終體驗。
+
+請參閱 [預覽內容](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 以取得詳細資訊。
 
 ## 發佈環境 {#publish-environment}
 
