@@ -2,9 +2,9 @@
 title: 記錄AEMas a Cloud Service
 description: 了解如何使用AEMas a Cloud Service記錄功能，為中央記錄服務設定全域參數、個別服務的特定設定，或如何要求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: 9e67b4f68fe450e80249c3959e3517c6cba3275d
 workflow-type: tm+mt
-source-wordcount: '2351'
+source-wordcount: '2382'
 ht-degree: 3%
 
 ---
@@ -55,7 +55,7 @@ AEM as a Cloud Service提供對Java日誌陳述式的訪問。 AEM應用程式�
 當DEBUG記錄處於作用中狀態時，會記錄提供發生活動之清楚畫面的陳述式，以及任何影響處理的關鍵參數。</td>
 <td>
 <ul>
-<li> 地方開發</li>
+<li> 本機開發</li>
 <li>開發</li>
 </ul></td>
 </tr>
@@ -69,7 +69,7 @@ AEM as a Cloud Service提供對Java日誌陳述式的訪問。 AEM應用程式�
 當WARN日誌記錄處於活動狀態時，只記錄指示接近子最優性的條件語句。</td>
 <td>
 <ul>
-<li> 地方開發</li>
+<li> 本機開發</li>
 <li>開發</li>
 <li>測試</li>
 </ul></td>
@@ -84,7 +84,7 @@ AEM as a Cloud Service提供對Java日誌陳述式的訪問。 AEM應用程式�
 當ERROR日誌記錄處於活動狀態時，僅記錄指示失敗的語句。 錯誤日誌語句表示應盡快解決的嚴重問題。</td>
 <td>
 <ul>
-<li> 地方開發</li>
+<li> 本機開發</li>
 <li>開發</li>
 <li>測試</li>
 <li>生產</li>
@@ -111,7 +111,7 @@ AEM記錄層級是透過OSGi設定，依環境類型而設定，而OSGi設定則
 <table>
 <tbody>
 <tr>
-<td>日期時間</td>
+<td>日期和時間</td>
 <td>29.04.2020 21:50:13.398</td>
 </tr>
 <tr>
@@ -208,7 +208,7 @@ AEM  as a Cloud Service的HTTP要求記錄功能可依時序深入分析對AEM�
 <table>
 <tbody>
 <tr>
-<td>日期時間</td>
+<td>日期和時間</td>
 <td>2020年4月29日:19:14:21 +000</td>
 </tr>
 <tr>
@@ -257,7 +257,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 |---|---|
 | 客戶端的IP地址 | - |
 | 使用者 | myuser@adobe.com |
-| 日期時間 | 2020年4月30日:17:37:14 +000 |
+| 日期和時間 | 2020年4月30日:17:37:14 +000 |
 | HTTP方法 | GET |
 | URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | 通訊協定 | HTTP/1.1 |
@@ -313,7 +313,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>-</td>
 </tr>
 <tr>
-<td>日期時間</td>
+<td>日期和時間</td>
 <td>2020年5月01日:00:09:46 +000</td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <table>
 <tbody>
 <tr>
-<td>日期時間</td>
+<td>日期和時間</td>
 <td>星期五7月17日02:16:42.608913 2020</td>
 </tr>
 <tr>
@@ -432,7 +432,7 @@ Define REWRITE_LOG_LEVEL debug
 <table>
 <tbody>
 <tr>
-<td>日期時間</td>
+<td>日期和時間</td>
 <td>[2020年7月17日:23:48:16 +000]</td>
 </tr>
 <tr>
@@ -494,6 +494,10 @@ Define DISP_LOG_LEVEL debug
   ...
 </IfDefine>
 ```
+
+>[!NOTE]
+>
+>對於AEMas a Cloud Service環境，除錯是詳細程度的最高層級。 不支援追蹤記錄層級，因此在雲端環境中工作時，請避免加以設定。
 
 ## 如何存取記錄檔 {#how-to-access-logs}
 
