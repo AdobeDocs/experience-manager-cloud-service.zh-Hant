@@ -3,10 +3,10 @@ title: 使用 Dispatcher 工具進行驗證和偵錯
 description: 使用 Dispatcher 工具進行驗證和偵錯
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: 614834961c23348cd97e367074db0a767d31bba9
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 1%
+source-wordcount: '2732'
+ht-degree: 2%
 
 ---
 
@@ -177,7 +177,7 @@ ht-degree: 1%
 
 適用於標準專案的預設主機全域。 如果需要自定義，請修改 `virtualhosts.any`. 在您的自訂中，不應包含預設的全域主機，因為它符合 **ever** 傳入的請求。
 
-## 支援的Apache模組 {#apache-modules}
+## 支援的 Apache 模組 {#apache-modules}
 
 請參閱 [支援的Apache模組](/help/implementing/dispatcher/disp-overview.md#supported-directives).
 
@@ -344,7 +344,7 @@ Include conf.d/includes/mynewdirectory/myincludefile.conf
 
 此訊息指出您的設定已棄用第1版配置，包含完整的Apache設定和具有 `ams_` 前置詞。 雖然回溯相容性仍支援此功能，但您應切換至新版面。
 
-請注意，第一階段也可 **單獨運行**，而非來自包裝函式 `validate.sh` 指令碼。
+請注意，第一階段也可以 **單獨運行**，而非來自包裝函式 `validate.sh` 指令碼。
 
 當對你的瑪文藏物或 `dispatcher/src` 子目錄，它會報告驗證失敗：
 
@@ -438,6 +438,10 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 在本機執行Dispatcher時，記錄會直接列印至終端輸出。 大部分情況下，您會希望這些記錄處於DEBUG中，這可透過在執行Docker時將Debug層級傳遞為參數來完成。 例如：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`。
 
 雲端環境的記錄檔會透過Cloud Manager中可用的記錄服務公開。
+
+>[!NOTE]
+>
+>對於AEMas a Cloud Service環境，除錯是詳細程度的最高層級。 不支援追蹤記錄層級，因此在雲端環境中工作時，請避免加以設定。
 
 ### 自動重新載入和驗證 {#automatic-reloading}
 
