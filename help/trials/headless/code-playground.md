@@ -6,7 +6,7 @@ index: false
 source-git-commit: 3aff5ef2fb9ecdd815f0bc1a813d3a3982b4e0ed
 workflow-type: tm+mt
 source-wordcount: '800'
-ht-degree: 17%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 17%
 
 ## 簡介 {#intro}
 
-您從CodePen應用程式開始，此應用程式只是使用擷取JSON資料的簡單範例， [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js). 範例應用程式的設計目的，是要轉譯任何傳回的JSON內容，無論基礎內容片段模型的結構為何。 CodePen應用程式會嘗試詳細列出所遇到的任何錯誤，因此您可能會看到下列錯誤訊息列印至應用程式的底部窗格：
+您從 CodePen 應用程式開始，此應用程式是使用[適用於 JavaScript 的 AEM Headless 用戶端](https://github.com/adobe/aem-headless-client-js)擷取 JSON 資料的最精簡範例。此範例應用程式旨在轉譯傳回的任何 JSON 內容，不論基礎內容片段模型的結構為何。CodePen 應用程式會嘗試詳述發生的任何錯誤，因此您可能會在應用程式的底部窗格中看到以下錯誤訊息：
 
 ```
 {
@@ -39,19 +39,19 @@ ht-degree: 17%
 }
 ```
 
-此錯誤是預期會出現的情況，因為應用程式尚未設定為使用您儲存並發佈於先前模組中的持續查詢。 您將透過下列步驟，設定應用程式以從您的特定查詢擷取資料。
+這是預期中的錯誤，因為應用程式尚未設定為使用您在前一個單元中儲存和發佈的持續性查詢。在以下步驟中，您將設定此應用程式以從您的特定查詢中擷取資料。
 
-## CodePen逐步說明 {#code-walkthrough}
+## CodePen 逐步解說 {#code-walkthrough}
 
-CodePen上的JS(Javascript)窗格包含範例應用程式的大腦。 從第2行開始，我們會從Skypack CDN匯入AEM Headless Client for JavaScript。 Skypack可用來促進開發而不需進行建置步驟，但您也可以在自己的專案中使用AEM Headless Client搭配NPM或Hayr。 查看 [讀我檔案](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) 以了解更多詳情。
+CodePen 上的 JS (Javascript) 窗格包含範例應用程式的大腦。從第 2 行開始，我們從 Skypack CDN 匯入適用於 JavaScript 的 AEM Headless 用戶端。Skypack 用於在沒有建置步驟的情況下方便開發，但您也可以在自己的專案中將 AEM Headless 用戶端搭配 NPM 或 Yarn 使用。如需更多詳細資訊，請參閱 [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) 中的使用說明。
 
 ```
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.2.0';
 ```
 
-在第6行，我們會從 `publishHost` 查詢參數。 這是AEM無頭用戶端將從中擷取資料的主機。 這通常會編碼到您的應用程式中，但我們使用查詢參數，讓CodePen應用程式可更輕鬆地搭配不同環境運作。
+在第 6 行，我們從 `publishHost` 查詢參數讀取您的發佈主機詳細資料。這是 AEM Headless 用戶端將從中擷取資料的主機。這通常會編碼到您的應用程式中，但我們使用查詢參數來使 CodePen 應用程式輕鬆搭配不同環境運作。
 
-我們在第12行設定AEM無頭式用戶端，以使用代理AdobeIO執行階段功能，以避免CORS問題。 這對於您自己的專案並非必要操作，但是CodePen應用程式使用您的試用環境是必要操作。 代理函式配置為使用 `publishHost` 查詢參數中提供的值。
+我們在第 12 行將 AEM Headless 用戶端設定為使用 Proxy Adobe IO 執行階段函數來避免 CORS 問題。您自己的專案不需要這麼做，但 CodePen 應用程式需要才能搭配您的試用環境運作。Proxy 函數設定為使用查詢參數中提供的 `publishHost` 值。
 
 ```
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -63,13 +63,13 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 });
 ```
 
-最後，函式 `fetchJsonFromGraphQL()` 用於使用AEM無頭用戶端執行擷取請求。 每次變更程式碼時都會呼叫，或透過按「重新擷取」連結來觸發。 實際 `aemHeadlessClient.runPersistedQuery(..)` 34線上發生呼叫。 稍後，我們會變更此JSON資料的呈現方式，但目前我們只會將它列印至 `#output` div使用 `resultToPreTag(queryResult)` 函式。
+最後，函數 `fetchJsonFromGraphQL()` 用於使用 AEM Headless 用戶端執行擷取要求。每次變更程式碼時都會呼叫它，或者可以透過按下「重新擷取」連結來觸發。實際的 `aemHeadlessClient.runPersistedQuery(..)` 呼叫在第 34 行發生。稍後我們將變更此 JSON 資料的轉譯方式，但現在我們只需使用 `resultToPreTag(queryResult)` 函數將其列印到 `#output` div。
 
-## 從持續查詢擷取資料 {#use-persisted-query}
+## 從持續性查詢中擷取資料 {#use-persisted-query}
 
-在第25行中，我們會指出應用程式應從中擷取資料的持續存在的GraphQL查詢。 持續的查詢名稱是專案名稱（即）的組合。 `your-project`)，後面接著正斜線，然後是查詢的名稱。
+在第 25 行，我們指示應用程式應從哪個 GraphQL 持續性查詢中擷取資料。持續性查詢名稱是專案名稱的組合 (即 `your-project`)，後面接著正斜線，然後是查詢名稱。
 
-更新 `persistedQueryName` 變數，以使用您在上一個模組中建立的持續查詢。 如果您確實遵循命名建議，則會建立一個持續存在的查詢，命名為 `adventures` 在 `your-project` 專案，然後您 `persistedQueryName` 變數 `your-project/adventures`:
+更新 `persistedQueryName` 變數以使用您在前一個單元建立的持續性查詢。如果您完全按照命名建議，您將在 `your-project` 專案中建立名稱為 `adventures` 的持續性查詢，並且將 `persistedQueryName` 變數設定為 `your-project/adventures`：
 
 ```
 //
@@ -78,15 +78,15 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 persistedQueryName = 'your-project/adventures';
 ```
 
-進行此變更後，應用程式應會自動重新整理，並將原始JSON回應從您保存的查詢列印至 `#output` div. 如果您看到錯誤訊息，請查看主控台以取得其他詳細資訊。
+完成此變更後，此應用程式將自動重新整理，並將來自持續性查詢的原始 JSON 回應列印到 `#output` div。如果出現錯誤訊息，請查看主控台以取得更多詳細資訊。
 
-此JSON是否包含您的應用程式需要的確切屬性？ 否則，請返回您的AEM製作環境、工具、GraphQL查詢編輯器(或導覽至 `/aem/graphiql.html` 路徑)，並對持續存在的查詢進行變更。 完成後，別忘了儲存並發佈查詢。
+此 JSON 是否包含應用程式所需的確切屬性？如果沒有，請返回您的 AEM Author 環境、工具、GraphQL 查詢編輯器 (或導覽至`/aem/graphiql.html`路徑) 並變更您的持續性查詢。完成後不要忘記儲存並發佈查詢。
 
-## 變更JSON呈現 {#change-rendering}
+## 變更 JSON 轉譯 {#change-rendering}
 
-目前，JSON會依原樣呈現至 `pre` 標籤，這不太有創意。 我們可以切換CodePen，使用 `resultToDom()` 函式來說明如何反覆運算JSON回應，以建立更有趣的結果。
+目前，JSON 按原狀轉譯為 `pre` 標籤，這不是很有創意。可以改變我們的 CodePen 來改用 `resultToDom()` 函數，以說明如何疊代 JSON 回應以產生更有趣的結果。
 
-要進行此更改，請注釋第37行，並從第40行中刪除注釋：
+若要進行此改變，請註解掉第 37 行並刪除第 40 行的註解：
 
 ```
 // Output the results to a pre tag
@@ -96,12 +96,12 @@ persistedQueryName = 'your-project/adventures';
 resultToDom(queryResult);
 ```
 
-此函式也會將JSON回應中包含的任何影像轉譯為 `img` 標籤。 如果您建立的「冒險」內容片段不包含任何影像，您可以嘗試切換以使用 `aem-demo-assets/adventures-all` 修改第25行以保存查詢：
+此函數也會轉譯包含在 JSON 回應中的任何影像作為 `img` 標籤。如果您建立的「冒險」內容片段不包含任何影像，您可以嘗試透過修改第 25 行來改用 `aem-demo-assets/adventures-all` 持續性查詢：
 
 ```
 persistedQueryName = 'aem-demo-assets/adventures-all';
 ```
 
-此查詢會產生包含影像的JSON回應，以及 `resultToDom()` 函式會將它們內嵌。
+此查詢將產生一個包含影像的 JSON 回應，`resultToDom()` 函數將使它們內嵌轉譯。
 
-![歷險結果 — all查詢和resultToDom轉譯函式](assets/do-not-localize/adventures-all-query-result.png)
+![adventures-all 查詢的結果和 resultToDom 轉譯函數](assets/do-not-localize/adventures-all-query-result.png)
