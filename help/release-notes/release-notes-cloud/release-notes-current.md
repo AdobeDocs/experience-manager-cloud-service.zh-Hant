@@ -1,22 +1,22 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前版本注意事項。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前版本注意事項。'
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
 mini-toc-levels: 1
 source-git-commit: 34313a984b8ddb76211ed97dd11c437cbefa90c2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '733'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 目前版本注意事項 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 目前發行說明 {#release-notes}
 
-以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能版本注意事項。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能發行說明。
 
 >[!NOTE]
 >
->從這裡，您可以瀏覽至舊版的版本注意事項；例如，2021、2022 等版本。
+>從這裡，您可以瀏覽至舊版的發行說明；例如，2021、2022 等版本。
 >
 >查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
 
@@ -26,74 +26,74 @@ ht-degree: 33%
 
 ## 發行日期 {#release-date}
 
-發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前的功能版本(2023.2.0)為2023年4月12日。 下一個功能版本(2023.4.0)預計於2023年5月4日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.2.0) 的發行日期是 2023 年 4 月 12 日。下一個功能版本 (2023.4.0) 計畫於 2023 年 5 月 4 日發行。
 
 ## 發行影片 {#release-video}
 
-請觀看2023年2月版本概述影片，以取得2023.2.0版本中新增功能的摘要：
+請觀看 2023 年 2 月發行概觀影片，了解 2023.2.0 版本新增功能摘要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416885/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Experience Manager Sites] 中的新功能 預租 {#prerelease-sites}
+### [!DNL Experience Manager Sites] 中的新功能 預先發佈 {#prerelease-sites}
 
-* 從AEM as a cloud service匯出內容片段，以JSON選件Adobe目標。
-* 支援GraphQL分頁和排序，以及內部快取增強功能，現在可協助您使用複雜的GraphQL查詢和篩選器從AEM擷取大型內容集時，改善去耦用戶端應用程式的效能。
+* 將 AEM as a Cloud Service 中的內容片段匯出到 Adobe Target 作為 JSON 選件。
+* 支援 GraphQL 分頁和排序，以及內部快取增強功能，現在可協助提升分離的用戶端應用程式在使用複雜 GraphQL 查詢和篩選器從 AEM 擷取大型內容集時的工作效能。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* 針對Dynamic Media視訊傳送中的最適化串流（已啟用CMAF）推出全新通訊協定（DASH — 透過HTTP動態最適化串流）支援：
-   * 最適化串流(DASH/HLS)可確保提供更佳的視訊使用者檢視體驗
-   * DASH是自適應視頻流的國際標準協定，在業界得到廣泛採用
-   * 適用於NA，即將在EMEA的APAC中推出支援票證，支援票證將予啟用
+* 為 Dynamic Media 影片傳遞 (啟用 CMAF) 中的自適應串流推出的新通訊協定 (DASH - 基於 HTTP 的動態自適應串流) 支援：
+   * 自適應串流 (DASH/HLS) 可確保更好的一般使用者觀看影片體驗
+   * DASH 是自適應影片串流的國際標準通訊協定，在業界被廣泛採用
+   * 在 NA 可使用，透過支援票證啟用，即將在 APAC、EMEA 推出
 
-* 新增WebP影像支援，以自動擷取中繼資料、產生縮圖及自訂轉譯。 這些檔案現在也支援智慧標籤和智慧裁切功能。
+* 已新增對 WebP 影像的支援以自動擷取中繼資料、產生縮圖和自訂轉譯。這些檔案現在也支援智慧標記和智慧型裁切功能。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 中可用的新功能 {#new-features-available-in-channel}
 
-* **[使用資料擷取核心元件以建置調適型表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)**：[使用調適型表單編輯器](/help/forms/creating-adaptive-form-core-components.md)根據標準化的資料擷取元件 (核心元件) 建立表單。這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。
+* **[使用資料擷取核心元件以建置最適化表單](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)**：[使用最適化表單編輯器](/help/forms/creating-adaptive-form-core-components.md)根據標準化的資料擷取元件 (核心元件) 建立表單。這些元件為您的數位註冊體驗提供自訂功能、縮短的開發時間並降低維護成本。
 
-* **[基於樣式核心元件的前端管道支援自適應Forms](/help/forms/using-themes-in-core-components.md)**:透過前端部署管道部署核心元件適用性Forms，運用標準化的BEM型主題，增強表單的外觀和風格，並符合貴組織品牌認可的設計准則。
+* **[前端管道支援設計以核心元件為基礎之最適化表單的樣式](/help/forms/using-themes-in-core-components.md)**：通過使用前端部署管道部署，為以核心元件為基礎之最適化表單使用標準化的 BEM 型主題，以增強表單的外觀和風格並符合您組織認可的品牌設計方針。
 
-* **[產生核心元件適用性Forms的記錄檔案](/help/forms/generate-document-of-record-core-components.md)**:建立記錄檔案，其中包含使用核心元件建立的適用性Forms的已提交資料，以供封存或參考給使用者、列印或檔案格式。
+* **[為以核心元件為基礎的最適化表單產生記錄文件](/help/forms/generate-document-of-record-core-components.md)**：為使用核心元件建置的最適化表單，建立包含提交之資料的記錄文件，供一般使用者封存或參考，採列印或文件格式。
 
 ![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **[以「儲存最適化表單為範本」功能有效建立表單](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**:將現有品牌認可的表單儲存為表單範本，以便快速重複使用，借此加快表單開發並標準化。
+* **[使用儲存最適化表單做為範本功能高效建置表單](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**：透過將現有的品牌認可表單儲存為表單範本以快速重複使用，促進和標準化表單開發工作。
 
-* **[將AEM Forms連接到JDBC支援的資料庫](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**:使用JDBC通訊協定，直接從AEM雲端服務連線至企業資料庫，而無須透過REST API公開。
+* **[將 AEM Forms 連接至支援 JDBC 的資料庫](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**：使用 JDBC 通訊協定直接從 AEM Cloud 服務連接至企業資料庫，而不需透過 REST API 公開它們。
 
-* **[使用Open API 3.0與REST端點整合](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**:無縫整合至支援Open API 3.0的記錄系統，以使用表單資料模型儲存和擷取資料。
+* **[使用 Open API 3.0 整合 REST 端點](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**：順暢地整合到支援 Open API 3.0 的記錄系統，以使用表單資料模型擷取資料。
 
-* **[共用調適型表單以供審閱](/help/forms/create-reviews-forms.md)**：使用調適型表單審閱機制讓一個或多個審核者審閱表單。
-
-
-### 中的功能 [!DNL Forms] 預發行 {#prerelease-features-forms}
-
-* **[將適用性Forms提交至Microsoft SharePoint和Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**:提高商務使用者的靈活性，以快速啟動新表單，並將提交的資料儲存在他們使用的日常工具中，如Microsoft SharePoint網站或OneDrive資料夾。
-
-![將適用性Forms提交至Microsoft SharePoint和Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
+* **[共用最適化表單以供審閱](/help/forms/create-reviews-forms.md)**：使用最適化表單審閱機制讓一個或多個審核者審閱表單。
 
 
-## 無頭式適應性Forms早期採用者計畫 {#forms-early-adopter}
+### [!DNL Forms] 發行前版本的功能 {#prerelease-features-forms}
 
-使用無頭式適用性Forms，讓開發人員可建立、發佈及管理可透過API存取及互動的互動式表單，而非透過傳統的圖形使用者介面。 無頭式最適化表單可協助您：
+* **[將最適化表單提交至 Microsoft SharePoint 和 Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**：提高商業使用者的敏捷性，可快速啟動新表單並將提交的資料儲存在他們日常使用的工具中，例如 Microsoft SharePoint 網站或 OneDrive 資料夾。
 
-* 以您所選擇的程式設計語言建立高品質的多管道表單
-* 將表單與您的案頭和行動應用程式、網站和聊天應用程式進行原生整合
-* 在表單應用程式中重複使用專有的UI元件
-* 運用Adobe Experience Manager Forms的力量
+![將最適化表單提交至 Microsoft SharePoint 和 Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
 
-您可以從官方電子郵件ID發送電子郵件至aem-forms-headless@adobe.com，以加入早期採用者計畫。
 
-## 維護版本注意事項 {#maintenance}
+## Headless 最適化表單早期採用者計劃 {#forms-early-adopter}
 
-您可以在[此處](/help/release-notes/maintenance/latest.md)找到最新的維護版本注意事項。
+使用 Headless 最適化表單讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
+
+* 使用您選擇的程式語言建置高品質的多管道表單
+* 以原生方式將表單整合到您的桌面和行動應用程式、網站和聊天應用程式
+* 在表單應用程式中重複使用您的專屬 UI 元件
+* 利用 Adobe Experience Manager Forms 的強大功能
+
+您可以使用您的官方電子郵件 ID 寄送電子郵件至 aem-forms-headless@adobe.com 以加入早期採用者計劃。
+
+## 維護發行說明 {#maintenance}
+
+您可以在[此處](/help/release-notes/maintenance/latest.md)找到最新的維護發行說明。
 
 ## Cloud Manager {#cloud-manager}
 
