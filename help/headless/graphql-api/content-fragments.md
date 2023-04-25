@@ -3,10 +3,10 @@ title: 與內容片段搭配使用的 AEM GraphQL API
 description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現無周邊內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
-workflow-type: ht
-source-wordcount: '4768'
-ht-degree: 100%
+source-git-commit: 1d7cbec55c5f3fcfbc217bf53d006a56bdf37f4e
+workflow-type: tm+mt
+source-wordcount: '4746'
+ht-degree: 99%
 
 ---
 
@@ -698,7 +698,7 @@ query {
 
 >[!NOTE]
 >
->* 依預設，分頁使用代表片段的存放庫節點 UUID 進行排序，以確保結果的順序始終相同。使用 `sort` 時，會以隱含的方式使用 UUID 以確保唯一排序；即使是排序鍵相同的兩個項目也一樣。
+>* 依預設，分頁會使用存放庫節點的UUID來表示要排序的片段，以確保結果的順序一律相同。 使用 `sort` 時，會以隱含的方式使用 UUID 以確保唯一排序；即使是排序鍵相同的兩個項目也一樣。
 >
 >* 由於內部技術限制，如果對巢狀欄位套用排序和篩選，效能會降低。因此，建議使用儲存在根層級的篩選/排序欄位。如果要查詢大型已分頁結果集，同樣也建議使用此方法。
 
@@ -909,6 +909,9 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
 使用 GraphQL for AEM 進行查詢的基本操作符合標準 GraphQL 規格。使用 GraphQL for AEM 進行查詢，有一些擴充功能：
 
+* 如果您需要單一結果：
+   * 使用模型名稱，例如城市
+
 * 如果您期望結果清單：
    * 新增 `List` 到模型名稱，例如 `cityList`
    * 請參閱[範例查詢 - 所有城市的所有資訊](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
@@ -926,13 +929,6 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
    * 請參閱[範例查詢 - 所有城市的所有資訊](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 
-
-* 如果您需要單一結果：
-   * 使用模型名稱，例如城市
-
-* 如果您期望結果清單：
-   * 新增 `List` 到模型名稱，例如 `cityList`
-   * 請參閱[範例查詢 - 所有城市的所有資訊](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 * 如果要使用邏輯 OR：
    * 使用 ` _logOp: OR`
