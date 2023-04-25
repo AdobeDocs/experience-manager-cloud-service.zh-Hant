@@ -2,13 +2,13 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
 mini-toc-levels: 1
-source-git-commit: 34313a984b8ddb76211ed97dd11c437cbefa90c2
-workflow-type: ht
+exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+source-git-commit: eb42c39af65f1e10417d855e5ad476cafc97da45
+workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 目前發行說明 {#release-notes}
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.2.0) 的發行日期是 2023 年 4 月 12 日。下一個功能版本 (2023.4.0) 計畫於 2023 年 5 月 4 日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.2.0) 的發行日期是 2023 年 4 月 12 日。下一個功能版本 (2023.4.0) 計畫於 2023 年 5 月 18 日發行。
 
 ## 發行影片 {#release-video}
 
