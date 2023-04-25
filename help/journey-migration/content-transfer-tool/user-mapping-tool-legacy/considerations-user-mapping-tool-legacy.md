@@ -4,14 +4,14 @@ description: 使用者對應工具的重要考量事項（舊版）
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
-source-git-commit: 69dfe7f98628ab67cc3a994c32b1530550ec6a01
+source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
 
-# 使用者對應工具的重要考量 {#important-considerations}
+# 使用者對應工具的重要考量事項（舊版） {#important-considerations}
 
 
 ## 例外案例 {#exceptional-cases}

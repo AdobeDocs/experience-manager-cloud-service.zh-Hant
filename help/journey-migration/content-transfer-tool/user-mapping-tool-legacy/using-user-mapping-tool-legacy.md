@@ -4,14 +4,14 @@ description: 使用使用者對應工具（舊版）
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: fb961ee6c369f5488deb794892caf9785d6b3068
+source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 使用使用者對應工具 {#using-user-mapping-tool}
+# 使用使用者對應工具（舊版） {#using-user-mapping-tool}
 
 使用者對應工具使用API，可透過電子郵件查詢AdobeIdentity Management系統(IMS)使用者並傳回其IMS ID。 此API需要使用者為其組織、用戶端密碼和存取或承載權杖建立用戶端ID。
 
