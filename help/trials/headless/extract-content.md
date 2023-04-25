@@ -4,10 +4,10 @@ description: 了解如何將內容片段和 GraphQL API 用作 Headless 內容�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
-workflow-type: ht
-source-wordcount: '755'
-ht-degree: 100%
+source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+workflow-type: tm+mt
+source-wordcount: '1092'
+ht-degree: 72%
 
 ---
 
@@ -34,10 +34,6 @@ ht-degree: 100%
 您先從新分頁中的 GraphQL Explorer 開始。 您可以針對 Headless 內容建置和驗證查詢，再使用它們為您的應用程式或網站中的內容提供支援。
 
 1. 您的 AEM Headless 試用版附有一個預先載入了內容片段的端點，您可以從中擷取內容以進行測試。 記得選取「**AEM 示範資產**」端點 (從編輯器右上方的「**端點**」下拉式清單中選取)。
-
-1. 已知問題：如果 **AEM 示範資產**&#x200B;端點不在下拉選單中，請導覽至封裝管理員 (您環境中的 `/crx/packmgr` 路徑) 並重新安裝 `aem-demo-assets.ui.content-{VERSION}.zip` 封裝：
-
-   ![重新安裝封裝](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. 為預先載入的 **AEM 示範資產**&#x200B;端點的清單查詢複製以下程式碼片段。清單查詢將傳回使用特定內容片段模式的所有內容清單。 詳細目錄和類別頁面通常使用這種查詢格式。
 
@@ -71,6 +67,10 @@ ht-degree: 100%
    ![清單查詢](assets/do-not-localize/list-query-1-3-4-5.png)
 
 您剛剛驗證了所有內容片段完整清單的清單查詢。 此過程有助於確保查詢的回應符合您應用程式的預期，且結果會說明您的應用程式和網站將如何擷取在 AEM 建立的內容。
+
+>[!NOTE]
+>
+>如果您無法選取 **AEM示範資產** 從下拉式清單中的端點，請聯絡Adobe客戶服務，或前往 [AEM試用Slack管道。](https://adobe-dx-support.slack.com/)
 
 ## 查詢範例內容指定片段 {#bypath-query}
 
@@ -132,3 +132,64 @@ ht-degree: 100%
    ![執行自訂查詢](assets/do-not-localize/custom-query-3-4-5-6.png)
 
 這就是將您的內容傳送至全管道數位體驗的方式。
+
+## 持續查詢 {#persisted-queries}
+
+持續查詢是將GraphQL API公開給用戶端應用程式的偏好機制。 保存查詢後，可使用GET請求進行請求，並快取以便快速檢索。
+
+您將建立一個持續查詢，其中包含您要從用戶端應用程式使用的資料。
+
+1. 您將使用先前建立為內容片段的資料，因此請確定 **您的專案** 在中選取端點 **端點** 編輯器右上角的下拉式功能表。
+
+1. 複製下列程式碼片段。
+
+   ```text
+      {
+      adventureList {
+       items {
+         title
+         description {
+           plaintext
+         }
+         title
+         price
+         image {
+           ... on ImageRef {
+             _publishUrl
+             mimeType
+           }
+         }
+       }
+     }
+   }
+   ```
+
+1. 貼上複製的程式碼，以取代查詢編輯器中的現有內容。
+
+   >[!NOTE]
+   >
+   >如果您使用的欄位說明與先前模組中所述的不同，則需要更新此查詢中的欄位名稱。
+   >
+   >如先前所述，使用GraphQL自動完成（Ctrl+空格鍵或Option+空格鍵）功能，以協助識別可用屬性。
+
+1. 貼上後，在查詢編輯器左上方按一下「**播放**」按鈕以執行查詢。
+
+1. 結果將顯示在右側面板中 (在查詢編輯器旁邊)。 如果查詢不正確，右側面板中會出現錯誤。
+
+   ![建立自己的查詢](assets/do-not-localize/own-query.png)
+
+1. 對您的查詢滿意後，按一下 **另存新檔** 按鈕，以保留查詢。
+
+1. 在 **查詢名稱** 快顯視窗，將查詢命名為 `adventure-list`.
+
+1. 點選或按一下 **另存新檔**.
+
+   ![保留查詢](assets/do-not-localize/persist-query.png)
+
+1. 查詢會持續保存，如畫面底部的橫幅訊息所確認。 查詢現在也會顯示在視窗中持續存在的查詢的左側面板中。
+
+1. 為了讓持續存在的查詢可以公開使用，它需要發佈，很像需要發佈內容片段的方式。 按一下 **發佈** 按鈕，以發佈查詢。
+
+1. 橫幅通知會確認發佈。
+
+您現在有新的持續查詢，其將僅包含您定義的特定屬性和格式。
