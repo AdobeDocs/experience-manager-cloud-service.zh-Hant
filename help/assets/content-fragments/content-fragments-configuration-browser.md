@@ -2,10 +2,10 @@
 title: 內容片段 — 設定瀏覽器（資產 — 內容片段）
 description: 了解如何在設定瀏覽器中啟用內容片段功能。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 14%
+ht-degree: 28%
 
 ---
 
@@ -43,14 +43,14 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->[子配置](/help/implementing/developing/introduction/configurations.md#configuration-resolution) 完全支援搭配內容片段、內容片段模型和GraphQL查詢使用（巢狀配置內的配置）。
+>[子配置](/help/implementing/developing/introduction/configurations.md#configuration-resolution) （巢狀配置在其他設定中）完全支援搭配內容片段、內容片段模型和GraphQL查詢使用。
 >
 >請注意：
 >
 >
 >* 在子配置中建立模型後，不可將模型移動或複製到另一個子配置。
 >
->* GraphQL端點將（仍然）基於父（根）配置。
+>* GraphQL端點將（仍然）以父（根）組態為基礎。
 >
 >* 保存的查詢將（仍）與父（根）配置相關地保存。
 
@@ -61,21 +61,21 @@ ht-degree: 14%
 1. 使用 **建立** 開啟對話框，其中：
 
    1. 指定 **標題**.
-   1. 此 **名稱** 會成為存放庫中的節點名稱。
-      * 根據標題自動產生並根據 [AEM命名慣例。](/help/implementing/developing/introduction/naming-conventions.md)
+   1. **名稱**&#x200B;將成為存放庫中的節點名稱。
+      * 它會根據標題自動產生，並根據[AEM 命名慣例](/help/implementing/developing/introduction/naming-conventions.md)進行調整
       * 您可以視需要加以調整。
    1. 啟用其使用選擇
       * **內容片段模型**
-      * **GraphQL持續查詢**
+      * **GraphQL 持續性查詢**
 
-      ![定義配置](assets/cfm-conf-01.png)
+      ![定義設定](assets/cfm-conf-01.png)
 
 
 1. 選擇 **建立** 以儲存定義。
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### 將設定套用至資產資料夾 {#apply-the-configuration-to-your-assets-folder}
+### 套用設定到資產資料夾 {#apply-the-configuration-to-your-assets-folder}
 
 設定時 **全球** 已啟用內容片段功能，然後套用至任何「資產」資料夾。
 
