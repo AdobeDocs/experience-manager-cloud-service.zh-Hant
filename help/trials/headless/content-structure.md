@@ -4,9 +4,9 @@ description: 了解如何使用AEM內容片段模型建立內容結構，作為�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 49301c21e3b97b4bdf29fdccc53339149ac5a63b
+source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1062'
 ht-degree: 37%
 
 ---
@@ -68,11 +68,9 @@ ht-degree: 37%
 
 1. 定義欄位的屬性後，您可以切換回 **資料類型** 標籤，並拖放以新增其他欄位。
 
-1. 點選或按一下 **儲存** 來保存模型。
-
 這樣，您就可以視需要新增多個欄位至模型，以支援您可能需要的任何資料結構。 資料欄位的類型各不相同，但將其新增至模型的程式保持不變。
 
-繼續前往下一節，新增完成 **冒險** 模型。
+繼續前往下一節，新增完成並儲存 **冒險** 模型
 
 ![在模式中新增欄位的第一步、第二步和第三步](assets/do-not-localize/define-model-fields.png)
 
@@ -104,4 +102,3 @@ ht-degree: 37%
 1. 新增內容片段模式所需的所有欄位後，在視窗右上方按一下「**儲存**」。
 
 1. 模式已保存，您將回到內容片段模式控制台。
-

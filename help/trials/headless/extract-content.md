@@ -4,10 +4,10 @@ description: 了解如何將內容片段和 GraphQL API 用作 Headless 內容�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 72%
+source-wordcount: '1114'
+ht-degree: 69%
 
 ---
 
@@ -117,19 +117,19 @@ ht-degree: 72%
 
 1. 若要針對您自己的內容片段進行查詢，請將端點從「**AEM 示範資產**」資料夾變更為「**您的專案**」資料夾。
 
-1. 刪除查詢編輯器中的所有現有內容。然後，輸入左方括號 `{` 並按 Ctrl+Space 或 Option+Space，可獲得端點中定義的模式自動完成清單。 從選項中選取您建立且以 `List` 結尾的模式。
+1. 刪除查詢編輯器中的所有現有內容。然後，輸入左方括號 `{` 並按 Ctrl+Space 或 Option+Space，可獲得端點中定義的模式自動完成清單。 從選項中選取您建立且以 `List` 結尾的模式。如果您遵循先前模組中的範例，應會找到 `adventureList` 在自動完成清單中。
 
-   ![開始自訂查詢](assets/do-not-localize/custom-query-1-2.png)
+   ![開始自訂查詢](assets/do-not-localize/custom-query-1.png)
 
 1. 為您選取的內容片段模式定義查詢應包含的項目。 再次輸入左方括號 `{`，然後按 Ctrl+Space 或 Option+Space 以獲得自動完成清單。從選項中選取 `items`。
 
 1. 在工作時，您可以點選或按一下「**修飾**」按鈕，自動格式化您的程式碼以便更易於閱讀。
 
-1. 完成後，在查詢編輯器左上方點選或按一下「**播放**」按鈕以進行查詢。編輯器會自動完成`items`並執行查詢。
+1. 完成後，在查詢編輯器左上方點選或按一下「**播放**」按鈕以進行查詢。編輯器會自動完成 `items`，此欄會以黃色短暫地強調顯示，且查詢會執行。
 
 1. 結果將顯示在右側面板中 (在查詢編輯器旁邊)。
 
-   ![執行自訂查詢](assets/do-not-localize/custom-query-3-4-5-6.png)
+   ![執行自訂查詢](assets/do-not-localize/custom-query-2.png)
 
 這就是將您的內容傳送至全管道數位體驗的方式。
 
@@ -151,7 +151,6 @@ ht-degree: 72%
          description {
            plaintext
          }
-         title
          price
          image {
            ... on ImageRef {
