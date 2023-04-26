@@ -3,9 +3,9 @@ title: 沙箱程序簡介
 description: 了解沙箱程序與生產程序有何不同。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: e43dd379169b4048347ecce6d10652e9f8835333
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '514'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 81%
 沙箱程序具有自動建立功能。每當您自動建立新的沙箱程序 Cloud Manager 時：
 
 * 在您的程序中新增 AEM Sites 和 AEM Assets 作為解決方案。
-* 使用基於範例項目的範例項目設定項目 git 存放庫[AEM Project 原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)
+* 使用基於範例項目的範例項目設定項目 git 存放庫 [AEM Project 原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)
 * 建立開發環境。
 * 建立部署到開發環境的非生產管道。
 
@@ -37,7 +37,7 @@ ht-degree: 81%
 
 ### 沒有即時流量 {#live-traffic}
 
-沙箱程序並不意味著承載實時流量，因此不受[AEM as a Cloud Service 承諾。](https://www.adobe.com/tw/legal/service-commitments.html)
+沙箱程序並不意味著承載實時流量，因此不受 [AEM as a Cloud Service 承諾。](https://www.adobe.com/tw/legal/service-commitments.html)
 
 ### 沒有自動縮放 {#auto-scaling}
 
@@ -66,16 +66,16 @@ AEM 更新不會自動推送到沙箱程序，但可以手動應用於沙箱程�
 
 沙箱計劃內的環境在八小時不活動後自動休眠。一旦休眠，它們可以手動解除休眠。
 
-沙箱環境會在連續6個月休眠後刪除，之後可重新建立。
+沙箱環境在連續休眠六個月後會刪除，之後可以重新建立它們。
 
 >[!NOTE]
 >
->6個月持續休眠後，只會自動刪除沙箱環境。 沙箱方案及其存放庫和程式碼會保留。
+>只有沙箱環境會在連續休眠六個月後自動刪除。保留沙箱程式及其存放庫和程式碼。
 
 如需了解詳細資訊，請參閱：[休眠和去休眠沙箱環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)。
 
 ### 無技術支援 {#no-support}
 
-由於沙箱方案的建立通常是為了提供訓練、執行示範、啟用或概念驗證(POC)，因此沙箱方案中遇到的問題無法提供技術支援。
+由於建立沙箱程式的目的通常是要培訓、執行範例、啟用或概念驗證 (POC)，因此無法為沙箱程式中發生的問題提供技術支援。
 
-如果您在建立和管理沙箱方案時遇到問題，仍屬於技術支援範圍。
+如果您在建立和管理沙箱程式時發生問題，這仍在技術支援範圍內。
