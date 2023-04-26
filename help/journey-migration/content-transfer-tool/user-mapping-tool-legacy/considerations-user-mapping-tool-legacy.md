@@ -4,7 +4,7 @@ description: 使用者對應工具的重要考量事項（舊版）
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
-source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
+source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->本檔案說明此工具的淘汰版本。 如需最新版本的詳細資訊，請參閱 [用戶映射和主體遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>本檔案說明已棄用的工具版本。 如需最新版本的詳細資訊，請參閱 [用戶映射和主體遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ## 例外案例 {#exceptional-cases}
 
