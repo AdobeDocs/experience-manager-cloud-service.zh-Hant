@@ -1,29 +1,29 @@
 ---
-title: 為預覽層配置OSGi設定
-description: 了解如何設定AEM預覽服務以在上線前預覽內容。
+title: 設定預覽階層的 OSGi 設定
+description: 了解如何設定 AEM 預覽服務，以在上線前預覽內容。
 source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# 為預覽層配置OSGi設定 {#configure-osgi-preview-tier}
+# 設定預覽階層的 OSGi 設定 {#configure-osgi-preview-tier}
 
-AEM提供網站預覽服務，讓開發人員和內容作者在到達發佈環境且可供公開使用之前，先預覽網站的最終體驗。
+AEM 提供 Sites 預覽服務，可讓開發人員和內容作者在網站到達發佈環境並正式推出之前，預覽網站的最終體驗。
 
-它有助於預覽從製作環境中看不到的體驗範圍。 例如，頁面轉變、體驗片段，以及其他僅發佈端內容。
+這有助於預覽在作者環境中看不見的一系列體驗。例如，頁面轉換、體驗片段和其他僅發佈端的內容。
 
-預覽層級的OSGi屬性值繼承自發佈層級。 不過，透過設定 `service` 參數 `preview`.
+預覽階層的 OSGi 屬性值是從發佈層繼承的。但是，透過將 `service` 參數設為值 `preview`，預覽階層的值可以與發佈階層不同
 
 >[!NOTE]
 >
->如需預覽環境的詳細資訊，請參閱本檔案 [管理環境。](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>有關預覽環境的更多詳細資料，請參閱文件[管理環境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)。
 
-## 為預覽層配置OSGi設定 {#configuring-osgi-settings-for-the-preview-tier}
+## 設定預覽階層的 OSGi 設定 {#configuring-osgi-settings-for-the-preview-tier}
 
-下列OSGi屬性的範例決定整合端點的URL。
+以下 OSGi 屬性範例確定整合端點的 URL。
 
 ```
 [
@@ -36,11 +36,12 @@ AEM提供網站預覽服務，讓開發人員和內容作者在到達發佈環�
 ]
 ```
 
-如需詳細資訊，請參閱 [本節](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration) 填入OSGi設定檔案。
+如需詳細資訊，請參閱 OSGi 設定文件的[此節](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration)。
 
-## 使用開發人員控制台進行除錯預覽 {#debugging-preview-using-the-developer-console}
+## 使用 Developer Console 偵錯預覽 {#debugging-preview-using-the-developer-console}
 
-請依照下列步驟，使用「開發人員控制台」對預覽層層除錯：
+請按照以下步驟使用 Developer Console 偵錯預覽階層：
 
-* 在 [開發人員控制台](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)選取 **— 全部預覽 —** 或生產環境，包括 **prev** 在
-* 生成預覽實例的相關資訊請參閱 [管理環境](/help/implementing/cloud-manager/manage-environments.md) 以取得環境URL的詳細資訊。
+* 在 [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) 中，選取&#x200B;**-- 全部預覽 --**&#x200B;或其名稱包含&#x200B;**預覽**&#x200B;的生產環境
+* 產生預覽執行個體的相關資訊
+請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)，了解如何取得環境 URL 的更多資訊。
