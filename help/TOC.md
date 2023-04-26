@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: 91b8fe48d72da9ef764732e5188bb8340b7a660a
 workflow-type: tm+mt
-source-wordcount: '4062'
+source-wordcount: '4068'
 ht-degree: 99%
 
 ---
@@ -147,7 +147,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 的 IMS 支援](/help/security/ims-support.md)
    + [AEM as a Cloud Service 的相同網站 Cookie 支援](/help/security/same-site-cookie-support.md)
    + [郵件服務的 OAuth2 支援](/help/security/oauth2-support-for-mail-service.md)
-   + [AEMas a Cloud Service安全性考量事項](/help/security/security-considerations.md)
+   + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
 + 入門 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 入門歷程 {#journey}
@@ -789,8 +789,10 @@ ht-degree: 99%
          + [概觀](/help/implementing/cloud-manager/overview-test-results.md)
          + [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)
          + [自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)
-         + [功能測試](/help/implementing/cloud-manager/functional-testing.md)
-         + [UI 測試](/help/implementing/cloud-manager/ui-testing.md)
+         + 功能測試 {#functional-testing}
+            + [功能測試概述](/help/implementing/cloud-manager/functional-testing.md)
+            + [Java功能測試](/help/implementing/cloud-manager/java-functional-testing.md)
+            + [UI 測試](/help/implementing/cloud-manager/ui-testing.md)
          + [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA 報告](/help/implementing/cloud-manager/sla-reporting.md)
@@ -935,8 +937,8 @@ ht-degree: 99%
    + 編寫階層 {#author-tier}
       + [存取編寫階層](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [保護編寫階層](/help/implementing/author-tier/securing-the-author-tier.md)
-   + 預覽層 {#preview-tier}
-      + [為預覽層配置OSGi設定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
+   + 預覽階層 {#preview-tier}
+      + [設定預覽階層的 OSGi 設定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + 內容傳遞概覽 {#content-delivery}
       + [內容傳遞流程](/help/implementing/dispatcher/overview.md)
       + [雲端中的 Dispatcher](/help/implementing/dispatcher/disp-overview.md)

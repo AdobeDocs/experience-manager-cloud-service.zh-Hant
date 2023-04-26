@@ -2,10 +2,10 @@
 title: 功能測試
 description: 了解內建在 AEM as a Cloud Service 部署流程中的三種不同類型的功能測試，以確保程式碼的品質和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: cd0b40ffa54eac0d7488b23329c4d2666c992da7
+source-git-commit: 7d15440159a8e24314753acd5b37fcd2c5e8ec4c
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 100%
+source-wordcount: '554'
+ht-degree: 83%
 
 ---
 
@@ -18,6 +18,14 @@ ht-degree: 100%
 >abstract="了解內置在 AEM as a Cloud Service 部署過程中的三種不同類型的功能測試，以確保程式碼的品質和可靠性。"
 
 了解內建在 [AEM as a Cloud Service 部署流程](/help/implementing/cloud-manager/deploy-code.md)中的三種不同類型的功能測試，以確保程式碼的品質和可靠性。
+
+## 範圍
+
+Cloud Manager管道中功能測試步驟的目的，是確保應用程式的基本功能如預期般運作。
+
+此測試階段是將程式碼部署至生產環境之前，自動化測試的最後一個層級。
+
+功能測試不應取代，而應補充並延伸其他測試策略，例如單元測試、整合測試，或在Cloud Manager中管道執行之外執行的功能測試。
 
 ## 總覽 {#overview}
 
@@ -48,127 +56,12 @@ AEM as a Cloud Service 中有三種不同類型的功能測試。
 
 自訂功能測試會針對自訂程式碼部署和推送升級執行，這對於編寫良好的功能測試，以防止 AEM 程式碼變更而破壞應用程式碼尤為重要。自訂功能測試步驟一律存在且不能跳過。
 
+請參閱 [Java功能測試](/help/implementing/cloud-manager/java-functional-testing.md) 以取得更多資訊。
+
+
 ### 自訂 UI 測試 {#custom-ui-testing}
 
 自訂 UI 測試是一項選擇性功能，可讓您為應用計劃建立和自動執行 UI 測試。UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。
 
-如需更多詳細資訊，請參閱文件：[自訂 UI 測試](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)。
+請參閱 [自訂UI測試](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) 以取得更多資訊。
 
-## 功能測試快速入門 {#getting-started-functional-tests}
-
-在 Cloud Manager 中建立新程式碼存放庫後，系婌將自動建立一個包含範例測試案例的 `it.tests` 資料夾。
-
->[!NOTE]
->
->如果您的存放庫是在 Cloud Manager 自動建立 `it.tests` 資料夾之前所建立，您還可以使用 [AEM 專案原型產生最新版本。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
-
-獲得 `it.tests` 資料夾的內容後，您可以將其用作自己測試的基礎，然後：
-
-1. [開發您的測試案例。](#writing-functional-tests)
-1. [在本機執行測試。](#local-test-execution)
-1. 將您的程式碼提交到 Cloud Manager 存放庫並執行 Cloud Manager 管道。
-
-## 寫入自訂功能測試 {#writing-functional-tests}
-
-Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功能測試。使用 GitHub 中的[產品功能測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)作為寫入測試的範例。
-
-自訂功能測試的程式碼是位於專案 `it.tests` 檔案夾中的 Java 程式碼。它應該產生一個包含所有功能測試的 JAR。如果建置產生多個測試 JAR，則無法確定要選擇哪個 JAR。如果產生零個測試 JAR，則測試步驟預設透過。如需測試範例，[請參閱 AEM 專案原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)。
-
-這些測試會在 Adobe 維護的測試基礎結構上執行，包括至少兩個編寫執行個體、兩個發佈執行個體和一個 Dispatcher 設定。這代表您的自訂功能測試針對整個 AEM 堆疊執行。
-
-### 功能測試結構 {#functional-tests-structure}
-
-自訂功能測試必須封裝為單獨的 JAR 檔案，該檔案由與要部署到 AEM 的成品相同的 Maven 組建產生。通常這將是一個單獨的 Maven 模組。產生的 JAR 檔案必須包含所有必要的相依性，通常使用 `maven-assembly-plugin` 和 `jar-with-dependencies` 描述項建立。
-
-此外，JAR 必須將 `Cloud-Manager-TestType` 資訊清單標頭設為 `integration-test`。
-
-以下為 `maven-assembly-plugin` 的設定範例。
-
-```java
-<build>
-    <plugins>
-        <!-- Create self-contained jar with dependencies -->
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-assembly-plugin</artifactId>
-            <version>3.1.0</version>
-            <configuration>
-                <descriptorRefs>
-                    <descriptorRef>jar-with-dependencies</descriptorRef>
-                </descriptorRefs>
-                <archive>
-                    <manifestEntries>
-                        <Cloud-Manager-TestType>integration-test</Cloud-Manager-TestType>
-                    </manifestEntries>
-                </archive>
-            </configuration>
-            <executions>
-                <execution>
-                    <id>make-assembly</id>
-                    <phase>package</phase>
-                    <goals>
-                        <goal>single</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-    </plugins>
-```
-
-在這個 JAR 檔案中，要執行的實際測試的類別名稱必須以 `IT` 結尾。
-
-例如，將執行名為 `com.myco.tests.aem.it.ExampleIT` 的類別，但不會執行名為 `com.myco.tests.aem.it.ExampleTest` 的類別。
-
-此外，要從程式碼掃描的覆蓋檢查中排除測試程式碼，測試程式碼必須位於名為`it` 的套件之下 (覆蓋排除篩選是`**/it/**/*.java`)。
-
-測試類別必須是一般的 JUnit 測試。測試基礎結構的設計和設定與 `aem-testing-clients` 測試庫使用的慣例相容。強烈鼓勵開發人員使用此計劃庫並遵循其最佳實務。
-
-如需更多詳細資訊，請參閱 [`aem-testing-clients`GitHub 存放庫](https://github.com/adobe/aem-testing-clients)。
-
->[!TIP]
->
->[觀看此影片](https://www.youtube.com/watch?v=yJX6r3xRLHU)，了解如何使用自訂功能測試來提高您對 CI/CD 管道的信心。
-
-### 本機測試執行 {#local-test-execution}
-
-在 Cloud Manager 管道啟用功能測試之前，建議在本機使用 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 或實際的 AEM as a Cloud Service 執行個體中執行功能測試。
-
-#### 必備條件 {#prerequisites}
-
-Cloud Manager 中的測試將使用技術管理員使用者來執行。
-
-若要從本機電腦執行功能測試，請建立一個具備類似管理員權限的使用者來達到相同的行為。
-
-#### 在 IDE 中執行 {#running-in-an-ide}
-
-由於測試類別是 JUnit 測試，所以它們可以從主流的 Java IDE (如 Eclipse、IntelliJ 和 NetBeans) 執行。因為產品功能測試和自訂功能測試都基於相同的技術，所以兩者都可以透過將產品測試複製到自訂測試中，以在本機執行。
-
-但是，在執行這些測試時，需要設定 `aem-testing-clients` (和底層 Sling 測試用戶端) 計劃庫應有的各種系統屬性。
-
-系統屬性如下。
-
-* `sling.it.instances - should be set to 2`
-* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
-* `sling.it.instance.runmode.1 - should be set to author`
-* `sling.it.instance.adminUser.1 - should be set to the author admin user, for example, admin`
-* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
-* `sling.it.instance.url.2 - should be set to the publish URL, for example, http://localhost:4503`
-* `sling.it.instance.runmode.2 - should be set to publish`
-* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
-* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
-
-#### 使用 Maven 執行所有測試 {#using-maven}
-
-1. 打開 shell 並瀏覽至存放庫中的 `it.tests` 資料夾。
-
-1. 執行以下命令，提供必要的參數以使用 Maven 啟動測試。
-
-```shell
-mvn verify -Plocal \
-    -Dit.author.url=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
-    -Dit.author.user=<user> \
-    -Dit.author.password=<password> \
-    -Dit.publish.url=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
-    -Dit.publish.user=<user> \
-    -Dit.publish.password=<password>
-```
