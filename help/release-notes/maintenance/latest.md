@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護發行說明。'
-source-git-commit: 4aa4954f214545dcd768fdf955f1fc2f776da939
+exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
-
 
 # 維護發行說明 {#maintenance-release-notes}
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 ## 11835 版 {#release-11835}
 
-以下摘要為2023年4月19日公開發行之維護版本11835的持續改善。 此維護版本是針對先前 11382 維護版本的更新。
+下面是 11835 維護版本的持續改善內容，該版本於 2023 年 4 月 19 日公開發布。此維護版本是針對先前 11382 維護版本的更新。
 
 此維護版本的功能啟用將為您提供完整的功能集。如需完整詳情，請參閱[最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 

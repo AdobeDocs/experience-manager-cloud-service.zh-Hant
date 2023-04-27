@@ -10,8 +10,8 @@ user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 91b8fe48d72da9ef764732e5188bb8340b7a660a
 workflow-type: tm+mt
-source-wordcount: '4068'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
