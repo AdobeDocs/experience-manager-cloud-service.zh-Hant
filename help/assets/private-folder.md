@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 0%
+source-wordcount: '599'
+ht-degree: 3%
 
 ---
 
@@ -75,3 +75,18 @@ ht-degree: 0%
 >如果您使用上述方法從使用者介面中刪除資料夾，則也會刪除相關的使用者群組。
 >
 >不過，您可以使用從存放庫中移除現有的備援、未使用和自動產生的使用者群組 `clean` 方法（在Author例項中）`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`)。
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

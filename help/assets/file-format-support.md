@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 8cacd31d6db387b3525b17649a93047acad81ee3
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 7%
+source-wordcount: '1026'
+ht-degree: 9%
 
 ---
 
@@ -230,7 +230,7 @@ ht-degree: 7%
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md), [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)，和 [回轉](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md), [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)，和 [回轉](/help/assets/dynamic-media/spin-sets.md) |
-| PSD協定 | ✓ | - | - | - | - | - |
+| PSD   ‡ | ✓ | - | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [影像](/help/assets/dynamic-media/image-sets.md), [混合媒體](/help/assets/dynamic-media/mixed-media-sets.md)，和 [回轉](/help/assets/dynamic-media/spin-sets.md) |
 
 *從PSD檔案擷取合併的影像。 這是由 [!DNL Adobe Photoshop] 和包含在PSD檔案中。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
@@ -256,6 +256,20 @@ ht-degree: 7%
 | OBJ | WaveFront 3D對象檔案 | application/x-tgif |  |
 | STL | 光固化成形 | application/vnd.ms-pki.stl |  |
 | USDZ | 通用場景描述Zip封存 | model/vnd.usdz+zip | *僅支援擷取；沒有可用的檢視或互動。* USDZ是專屬的3D格式，可由Safari或iOS以原生方式檢視。 |
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

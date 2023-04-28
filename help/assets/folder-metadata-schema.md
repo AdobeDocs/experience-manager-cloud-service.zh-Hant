@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 7%
+source-wordcount: '1090'
+ht-degree: 9%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 7%
    <td><p> 新增多值文字屬性。 會儲存為字串陣列。</p> </td>
   </tr>
   <tr>
-   <td><p>數量</p> </td>
+   <td><p>數字</p> </td>
    <td><p> 新增數字元件。</p> </td>
   </tr>
   <tr>
@@ -172,3 +172,18 @@ ht-degree: 7%
 在各種欄位中輸入中繼資料值，然後點選/按一下 **[!UICONTROL 儲存]** 來儲存值。 您指定的值會儲存在CRX存放庫的資料夾節點中。
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

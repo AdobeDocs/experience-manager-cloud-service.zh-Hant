@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '4326'
+source-wordcount: '4356'
 ht-degree: 11%
 
 ---
@@ -262,17 +262,17 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 此外，停用使用覆蓋圖的強制刪除按鈕，以禁止使用者刪除參考的資產並留下中斷的連結。
 
-1. 瀏覽至您要刪除的資產所在的位置。
+1. 導覽至您要刪除的資產所在位置。
 
 1. 選取資產，然後按一下 **[!UICONTROL 刪除]** ![delete_icon](assets/do-not-localize/delete-icon.png) 的上界。
 
 1. 在確認對話方塊中，按一下：
 
    * **[!UICONTROL 取消]** 來停止動作
-   * **[!UICONTROL 刪除]**&#x200B;來確認動作：
+   * **[!UICONTROL 刪除]** 若要確認動作：
 
       * 如果資產沒有參考，則會刪除資產。
-      * 如果資產有參考，則會出現錯誤訊息通知您 **[!UICONTROL 參考一或多個資產]**. 您可以選取&#x200B;**[!UICONTROL 強制刪除]**&#x200B;或&#x200B;**[!UICONTROL 取消]**。
+      * 如果資產有參考，則會出現錯誤訊息通知您 **[!UICONTROL 參考一或多個資產]**. 您可以選取 **[!UICONTROL 強制刪除]** 或 **[!UICONTROL 取消]**.
 
    >[!NOTE]
    >
@@ -301,7 +301,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 發佈時，如果資產參考其他資產，其參考會列在精靈中。 系統只會顯示自上次發佈後取消發佈或修改的參照。 選擇要發佈的參照。
 
-1. 取消發佈時，如果資產參考其他資產，請選擇您要取消發佈的參考。 按一下 **[!UICONTROL 取消發佈]**. 在確認對話方塊中，按一下 **[!UICONTROL 取消]** 若要停止動作，或按一下 **[!UICONTROL 取消發佈]** 確認在指定日期取消發佈資產。
+1. 取消發佈時，如果資產參考其他資產，請選擇您要取消發佈的參考。 點擊&#x200B;**[!UICONTROL 取消發佈]**。在確認對話方塊中，按一下 **[!UICONTROL 取消]** 若要停止動作，或按一下 **[!UICONTROL 取消發佈]** 確認在指定日期取消發佈資產。
 
 了解發佈或取消發佈資產或資料夾的相關下列限制和秘訣：
 
@@ -340,7 +340,7 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
 
 ## 快速動作 {#quick-actions}
 
-一次只有一個資產的快速動作圖示可用。視您的裝置而定，執行下列動作以顯示快速動作圖示：
+一次只有一個資產可使用快速動作圖示。 視您的裝置而定，執行下列動作以顯示快速動作圖示：
 
 * 觸摸設備：觸摸並按住。 例如，在iPad上，您可以點選並按住資產，以顯示快速動作。
 * 非接觸裝置：暫留指針。 例如，在案頭裝置上，如果將指標暫留在資產縮圖上，則會顯示快速動作列。
@@ -551,7 +551,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ## 資產版本設定 {#asset-versioning}
 
-版本設定會建立數位資產在特定時間點的快照。版本設定有助於在稍後將資產還原為先前狀態。 例如，如果您想要還原對資產所做的變更，請還原未編輯的資產版本。
+版本設定會在特定時間點建立數位資產的快照。 版本設定有助於在稍後將資產還原為先前狀態。 例如，如果您想要還原對資產所做的變更，請還原未編輯的資產版本。
 
 以下是您建立版本的案例：
 
@@ -662,3 +662,18 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 ```
 
 若要了解更多資訊，請參閱 [使用案頭應用程式瀏覽DAM資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 和 [如何使用Adobe資產連結](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

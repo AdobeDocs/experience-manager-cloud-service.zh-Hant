@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 9%
+source-wordcount: '456'
+ht-degree: 12%
 
 ---
 
@@ -53,3 +53,18 @@ ht-degree: 9%
 
 1. 若要新增命名空間，請按一下或點選 **[!UICONTROL 新增]** 在底部。
 1. 在XML命名空間約定中指定自定義命名空間（以URI的形式指定ID以及ID的關聯前置詞），然後按一下或點選 **[!UICONTROL 儲存]**.
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

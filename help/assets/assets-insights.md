@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 0df4d40cb37ced97dcffaf20adc2132eaadae524
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 7%
+source-wordcount: '883'
+ht-degree: 9%
 
 ---
 
@@ -109,7 +109,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    *圖：在中設定Adobe Analytics for Assets Insights[!DNL Experience Manager]*
 
-1. 成功驗證時，下拉式清單中會列出報表套裝。 選取Adobe Analytics **[!UICONTROL 報表套裝]** 您希望Assets Insights擷取資料的位置。 按一下&#x200B;**[!UICONTROL 「新增」]**。
+1. 成功驗證時，下拉式清單中會列出報表套裝。 選取Adobe Analytics **[!UICONTROL 報表套裝]** 您希望Assets Insights擷取資料的位置。 按一下 **[!UICONTROL 新增]**.
 
 1. 之後 [!DNL Experience Manager] 設定您的報表套裝，按一下 **[!UICONTROL 完成]**.
 
@@ -175,3 +175,18 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
    >The external web page can be in [!DNL Experience Manager] itself.
 
 -->
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

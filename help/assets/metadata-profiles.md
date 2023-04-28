@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 18%
+source-wordcount: '1386'
+ht-degree: 19%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 18%
 | 區段標題 | 欄位標籤，說明 |
 | 單行文字 | 欄位標籤，映射至屬性，預設值 |
 | 多值文字 | 欄位標籤，映射至屬性，預設值 |
-| 數量 | 欄位標籤，映射至屬性，預設值 |
+| 數字 | 欄位標籤，映射至屬性，預設值 |
 | 日期 | 欄位標籤，映射至屬性，預設值 |
 | 標準標記 | 欄位標籤，映射到屬性，預設值，說明 |
 
@@ -124,3 +124,18 @@ ht-degree: 18%
 1. 按一下Experience Manager標誌並導覽 **[!UICONTROL 資產]** 然後，移至您要從中移除中繼資料描述檔的資料夾。
 1. 在資料夾中，按一下核取記號以選取，然後按一下 **[!UICONTROL 屬性]**.
 1. 選擇「元 **[!UICONTROL 資料描述檔]** 」標籤，然後從下拉式選單中選 **[!UICONTROL 擇「無]** 」，然後按一下「 **[!UICONTROL 儲存]**」。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

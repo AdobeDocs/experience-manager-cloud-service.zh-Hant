@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 3761d399de29645ec62cabf50bf6b26a64f3c7be
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2471'
 ht-degree: 7%
 
 ---
@@ -260,7 +260,7 @@ IMS 設定包括兩個步驟：
    * 權限: `jcr:read`
    * 權限類型: `Allow`
 
-   按一下&#x200B;**[!UICONTROL 「新增」]**。
+   按一下 **[!UICONTROL 新增]**.
 
    ![使用者權限](assets/aem-stock-user-permissions.png)
 
@@ -313,7 +313,7 @@ IMS 設定包括兩個步驟：
 
 | 使用者 | 群組 | 權限 | 在用戶首選項中接受庫存配置 | 存取資產 | 存取Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
-| 管理員 | N/A | 全部 | 不適用 | 是 | 是 |
+| 管理員 | N/A | 全部 | N/A | 是 | 是 |
 | test-doc1 | DAM 使用者 | /conf/global/settings/stock/cloud/config | 是 | 是 | 是 |
 | test-doc1 | DAM 使用者 | /conf/global/settings/stock/cloud/config | 否 | 錯誤：無法載入資料 | 否 |
 | test-doc1 | DAM 使用者 | **允許**:/conf/global/settings/stock **拒絕**:/cloud-config | 庫存配置不可見 | 是 | 否 |
@@ -451,6 +451,21 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 * **Reference fields and metadata are not synced**: When a user updates a license reference field, the license reference information is updated in [!DNL Experience Manager] but not on the [!DNL Adobe Stock] website. Similarly, if the user updates the reference fields on the [!DNL Adobe Stock] website, the updates are not synchronized in [!DNL Experience Manager].
 -->
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

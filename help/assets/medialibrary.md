@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 1%
+source-wordcount: '572'
+ht-degree: 4%
 
 ---
 
@@ -71,7 +71,7 @@ Media Library廣泛涵蓋下列使用案例：
 * 為資產加上注釋。
 * 將資產新增至 [!DNL Sites] 頁面。
 * 使用 [!DNL Content Fragments].
-* 請使用HTTP REST和GraphQL API，以執行 [!DNL Content Fragments] 和參考的媒體資產，依照Sites授權。
+* 請使用HTTP REST和GraphQL API，以 [!DNL Content Fragments] 和參考的媒體資產，依照Sites授權。
 * Marketing Cloud整合。
 * 自訂及擴充資產管理使用者介面。
 * 存取查詢產生器(API)以擴充搜尋功能。
@@ -92,6 +92,21 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 請注意，您無法使用智慧標籤， [!DNL Asset] 連結， [!DNL Asset] 選取器、大量標籤、修改資產工作流程或標準 [!DNL Adobe Experience Manager] 使用者介面，不使用 [!DNL Assets] 授權。
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

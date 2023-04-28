@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
-source-git-commit: 7cc0bd5bbd51edb6f3bc2cfcccfa0a35a0d7a790
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 0%
+source-wordcount: '485'
+ht-degree: 3%
 
 ---
 
@@ -56,3 +56,18 @@ Experience Manageras a Cloud Service提供雲端原生資產處理功能，以�
 按一下 **[!UICONTROL FPO轉譯]** 以載入其預覽。 或者，您可以以滑鼠右鍵按一下轉譯，然後儲存至您的檔案系統。 在左側邊欄中檢查可用的轉譯。
 
 ![rendition_list](assets/list-renditions.png)
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

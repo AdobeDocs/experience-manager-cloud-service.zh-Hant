@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a7545f0f2143983a052f272992d5e27b78f271a1
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3768'
+source-wordcount: '3796'
 ht-degree: 15%
 
 ---
@@ -355,3 +355,17 @@ Experience Manager顯示 `expired` 「遠端資產內容尋找器」中資產的
 * 如果未檢索遠程引用並導致錯誤消息，請檢查 [!DNL Sites] 部署可用，並檢查網路連線問題。 稍後重試以檢查。 [!DNL Assets] 部署嘗試兩次建立連接 [!DNL Sites] 部署後報告失敗。
 
    ![無法擷取資產遠端參考](assets/reference-report-failure.png)
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 20d54ccdd116c3dbede8fb20f7169a17a223f7a1
+source-git-commit: 91af800c8b2f83e689e057f304a8e144ae4cc5ed
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 6%
+source-wordcount: '1981'
+ht-degree: 7%
 
 ---
 
@@ -242,6 +242,20 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * 工作流程可檢查影像是否具有標題。 若未這麼做，系統會通知您新增標題。
 * 工作流程可以檢查資產上的版權聲明是否允許發佈。 因此，系統會將資產傳送至一部或另一部伺服器。
 * 工作流程可以檢查沒有預先定義、強制中繼資料的資產，或是具有的資產 *無效* 中繼資料。
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

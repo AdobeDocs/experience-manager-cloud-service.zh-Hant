@@ -1,14 +1,14 @@
 ---
-title: 使用MSM重複使用資產
+title: 使用 MSM 重複使用資產
 description: 在衍生自父資產並連結至父資產的多個頁面/資料夾中使用資產。 資產會與主要副本保持同步，只要按幾下，就會從父資產接收更新。
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3251'
 ht-degree: 10%
 
 ---
@@ -321,3 +321,18 @@ Live Copy是建立原始源時的副本。 即時副本的中繼資料值繼承�
 * 不支援內容片段。 嘗試建立即時副本時，內容片段會照原樣複製，沒有任何關係。 複製的內容片段是及時的快照，當您更新原始內容片段時不會更新。
 
 * MSM無法搭配已啟用的中繼資料回寫運作。 回寫時，繼承會中斷。
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

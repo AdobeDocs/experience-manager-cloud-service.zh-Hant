@@ -4,9 +4,9 @@ description: 本文說明如何在Experience Manager中建立、修改和使用�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2425'
 ht-degree: 20%
 
 ---
@@ -322,6 +322,20 @@ Adobe Experience Manager Assets的整個企業部署能儲存許多資產。 有
 | 編輯 | 對 `/apps` 節點。 |
 | 刪除 | 讀取、寫入和刪除 `/apps` 節點。 |
 | 預覽 | 讀取、寫入和刪除 `/var/dam/content` 節點。 此外，對 `/apps` 節點。 |
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

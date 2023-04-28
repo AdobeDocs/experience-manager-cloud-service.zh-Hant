@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 4edf66127696ce91466811e2ffdcfbbd73f7cc2c
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 0%
+source-wordcount: '1696'
+ht-degree: 1%
 
 ---
 
@@ -166,3 +166,18 @@ ht-degree: 0%
 ## 疑難排解提示 {#troubleshooting}
 
 登入 [!DNL Azure Media Services] 帳戶具有的憑證與您用於設定的憑證相同，可驗證請求狀態。 連絡人 [!DNL Azure] 如果未成功處理您的請求，則支援。
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

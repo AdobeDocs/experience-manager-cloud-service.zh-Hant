@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 0d4db4fc19180cff5e15d58c4506933597ca7cce
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 2%
+source-wordcount: '1322'
+ht-degree: 3%
 
 ---
 
@@ -67,7 +67,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
    * 在 **[!UICONTROL 過期]** 欄位中，使用日期選擇器來指定連結的到期日期和時間。
    * 啟用 **[!UICONTROL 允許下載原始檔案]** 核取方塊，讓收件者下載原始轉譯。
 
-1. 按一下&#x200B;**[!UICONTROL 「共用」]**。訊息會確認連結已與使用者共用。 使用者會收到包含共用連結的電子郵件。
+1. 按一下 **[!UICONTROL 共用]**. 訊息會確認連結已與使用者共用。 使用者會收到包含共用連結的電子郵件。
 
 ![連結共用電子郵件](assets/link-sharing-email-notification.png)
 
@@ -256,3 +256,18 @@ Adobe資產連結可簡化創意人員與行銷人員在內容建立程式中的
 
 <!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

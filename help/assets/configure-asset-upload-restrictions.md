@@ -2,10 +2,10 @@
 title: 設定資產上傳限制
 description: 設定Adobe Experience Manager Assets以根據MIME類型限制使用者可上傳的資產類型。 它有助於防止意外上傳不想要的格式和惡意檔案。
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: d2d0d8b0d484d2e5cd2bf44449e7d71d3da98eea
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 0%
+source-wordcount: '363'
+ht-degree: 8%
 
 ---
 
@@ -56,3 +56,18 @@ ht-degree: 0%
 ![資產限制](assets/asset-restrictions.png)
 
 根據影像中所示的設定，您可以將。JPG、.PNG和。GIF格式的影像上傳至Experience Manager Assets。
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 1%
+source-wordcount: '909'
+ht-degree: 3%
 
 ---
 
@@ -109,6 +109,21 @@ Date24/08/2021
 處理設定檔包含 [!DNL Assets] 處理命令，此命令會套用至上傳至預先定義之資料夾的資產。 設定檔可用來自動處理資料夾或新上傳資產的內容。 您可以使用設定檔來更妥善地組織資產。
 
 標準化中繼資料的使用、檔案命名和資料夾結構，可確保隨著數位資產池的成長，您可以更精確且一致地將處理設定檔套用至資料夾。
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

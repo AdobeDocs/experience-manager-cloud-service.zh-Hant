@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 9%
+source-wordcount: '688'
+ht-degree: 11%
 
 ---
 
@@ -76,6 +76,20 @@ Adobe Experience Manager Assets可讓您使用CSV檔案大量匯入資產中繼�
    ![對話方塊，下載包含大量匯出之中繼資料的CSV檔案](assets/csv_download.png)
 
    *圖：對話方塊，下載包含大量匯出之中繼資料的CSV檔案。*
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
 
 >[!MORELIKETHIS]
 >

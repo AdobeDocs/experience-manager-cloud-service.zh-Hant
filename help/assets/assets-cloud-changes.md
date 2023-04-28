@@ -4,10 +4,10 @@ description: 重大變更 [!DNL Adobe Experience Manager Assets] in [!DNL Experi
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 2e4f57f86346074432996901985671939bcafeb0
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 6%
+source-wordcount: '1034'
+ht-degree: 10%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 6%
 
 ## 開發和測試資產微服務 {#asset-microservices}
 
-資產微服務使用雲端服務提供資產的可擴充且可復原處理功能。 Adobe管理雲端服務，以最佳處理不同資產類型和處理選項。 資產微服務有助於避免需要協力廠商轉譯工具和方法(例如 [!DNL ImageMagick])並簡化設定，同時為常見檔案類型提供現成可用的功能。 您現在可以處理 [檔案類型廣泛](/help/assets/file-format-support.md) 比舊版Experience Manager可能涵蓋的現成格式更多。 例如，現在可以擷取PSD和PSB格式的縮圖，而之前需要的協力廠商解決方案，例如 [!DNL ImageMagick]. 您無法使用 [!DNL ImageMagick] 針對 [!UICONTROL 處理設定檔] 設定。 使用 [!DNL Dynamic Media] 進階FFmpeg影片轉碼，以及使用處理設定檔 [基本MP4影片轉碼](/help/assets/manage-video-assets.md#transcode-video).
+資產微服務使用雲端服務來提供可擴展和具恢復力的資產處理操作。Adobe 管理雲端服務以對不同的資產類型和處理選項進行最佳處理。資產微服務有助於避免需要協力廠商轉譯工具和方法(例如 [!DNL ImageMagick])並簡化設定，同時為常見檔案類型提供現成可用的功能。 您現在可以處理 [檔案類型廣泛](/help/assets/file-format-support.md) 比舊版Experience Manager可能涵蓋的現成格式更多。 例如，現在可以擷取PSD和PSB格式的縮圖，而之前需要的協力廠商解決方案，例如 [!DNL ImageMagick]. 您無法使用 [!DNL ImageMagick] 針對 [!UICONTROL 處理設定檔] 設定。 使用 [!DNL Dynamic Media] 進階FFmpeg影片轉碼，以及使用處理設定檔 [基本MP4影片轉碼](/help/assets/manage-video-assets.md#transcode-video).
 
 資產微服務是雲端原生服務，會自動布建並連線至 [!DNL Experience Manager] 在Cloud Manager中管理的客戶程式和環境中。 延伸或自訂 [!DNL Experience Manager]，開發人員可使用在雲端環境中產生的轉譯現有內容或資產，以使用、顯示、下載資產來測試及驗證其程式碼。
 
@@ -66,6 +66,21 @@ ht-degree: 6%
 | 智慧翻譯 | 不支援 | [智慧翻譯](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) 不支援 [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | WebDAV | 不支援 | 如需其他選項，請參閱 [[!DNL Creative Cloud] 整合](/help/assets/aem-cc-integration-best-practices.md) 或 [顯影劑參考資料](/help/assets/developer-reference-material-apis.md). |
 | 傳統 UI | 不支援 | 僅提供觸控式使用者介面。 |
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

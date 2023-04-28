@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1515'
-ht-degree: 0%
+source-wordcount: '1542'
+ht-degree: 2%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 此 [!DNL Assets] HTTP API允許對數位資產（包括中繼資料、轉譯和註解）以及使用的結構化內容執行建立 — 讀取 — 更新 — 刪除(CRUD)操作 [!DNL Experience Manager] 內容片段。 在 `/api/assets` 並實作為REST API。 包括 [支援內容片段](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -271,6 +271,20 @@ API呼叫會以 `500` 回應代碼（如果提供路徑的父節點不存在）�
 * 資產HTTP API不會傳回完整的中繼資料。 命名空間會以硬式編碼撰寫，且只會傳回那些命名空間。 如需完整的中繼資料，請參閱資產路徑 `/jcr_content/metadata.json`.
 
 * 使用API更新時，資料夾或資產的某些屬性會對應至不同的首碼。 此 `jcr` 前置詞 `jcr:title`, `jcr:description`，和 `jcr:language` 取代為 `dc` 前置詞。 因此，在傳回的JSON中， `dc:title` 和 `dc:description` 包含 `jcr:title` 和 `jcr:description`，分別為。
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

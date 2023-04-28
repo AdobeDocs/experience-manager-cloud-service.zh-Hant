@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3473'
 ht-degree: 15%
 
 ---
@@ -27,7 +27,7 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務生態系統，協
 
 ## 創意人員、行銷人員和DAM使用者的共同作業需求 {#collaboration-need-of-creatives-marketers-and-dam-users}
 
-| 需求 | 使用案例 | 相關曲面 |
+| 要求 | 使用案例 | 相關曲面 |
 |---|---|---|
 | 簡化案頭創意人員的體驗 | 簡化從DAM存取資產([!DNL Assets])，適用於創意專業人員，更廣泛而言，適用於案頭使用者，使用原生資產建立應用程式。 他們需要簡單明瞭的方式來探索、使用（開啟）、編輯和儲存對Experience Manager的變更，以及上傳新檔案。 | Win或Mac案頭；Creative Cloud應用程式 |
 | 提供高品質、現成可用的資產，來自 [!DNL Adobe Stock] | 行銷人員可協助進行資產來源搜尋和探索，協助加速內容建立流程。 創意專業人員可直接在其創意工具中使用已核准的資產。 | [!DNL Assets]; [!DNL Adobe Stock] 市場；中繼資料欄位 |
@@ -38,7 +38,7 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務生態系統，協
 
 | 相關角色的價值主張 | Adobe產品 | 相關曲面 |
 |---|---|---|
-| 創意使用者可從 [!DNL Experience Manager]，開啟並使用這些變更，編輯和上傳變更 [!DNL Experience Manager]，以及將新檔案上傳至 [!DNL Experience Manager]，而無須離開 [!DNL Creative Cloud] 應用程式。 | [Adobe資產連結](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign。 |
+| 創意使用者可從 [!DNL Experience Manager]，開啟並使用這些變更，編輯和上傳變更 [!DNL Experience Manager]，以及將新檔案上傳至 [!DNL Experience Manager]，而無須離開 [!DNL Creative Cloud] 應用程式。 | [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign。 |
 | 業務使用者可簡化開啟和使用資產、編輯和上傳變更至 [!DNL Experience Manager]，以及將新檔案上傳至 [!DNL Experience Manager] 從案頭環境。 他們會使用一般整合來開啟原生案頭應用程式中的任何資產類型，包括非Adobe的資產類型。 | [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Experience ManagerWin案頭應用程式和Mac案頭 |
 | 行銷人員和商務使用者可從Experience Manager中探索、預覽、授權及儲存及管理Adobe Stock資產。 授權和儲存的資產可提供選取的Adobe Stock中繼資料，以改善控管。 | [Experience Manager與Adobe Stock整合](aem-assets-adobe-stock.md) | [!DNL Experience Manager] 網頁介面 |
 | 改善數位產品設計人員和行銷人員之間的協作。 讓設計師在Adobe XD畫布上的設計和線框模型中使用數位資產。 | [[!DNL Adobe Asset Link] 代表 [!DNL Adobe XD]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
@@ -52,7 +52,7 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務生態系統，協
 
 ### 對應使用案例和Adobe解決方案 {#mapping-of-use-cases-and-adobe-solutions}
 
-| 使用案例 | Adobe資產連結 | Experience manager 桌面應用程式 | 注釋或替代方法 |
+| 使用案例 | Adobe Asset Link | Experience manager 桌面應用程式 | 注釋或替代方法 |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Discover — 瀏覽資料夾 | 是 | Experience Manager網頁UI +案頭動作 | 瀏覽網路共用時，關閉縮圖以避免下載資產的二進位檔案。 |
 | Discover — 存取集合 | 是 | Experience Manager網頁UI +案頭動作 |  |
@@ -228,3 +228,18 @@ Experience Manager案頭應用程式為原生應用程式中開啟的資產提�
 如果您使用網路檔案共用來管理數位資產，則只使用Experience Manager案頭應用程式對應的網路共用即可被視為方便的替代項目。 從網路檔案共用轉換時，Experience ManagerWeb介面提供了一組豐富的數位資產管理功能，遠超網路共用（搜尋、集合、元資料、協作、預覽等）所能提供的功能，而Experience Manager案頭應用程式提供了便利的連結，可將伺服器端的DAM存放庫與案頭上的工作連結起來。
 
 避免使用Experience Manager案頭應用程式，直接在Experience Manager Assets的網路共用中管理資產。 例如，請避免使用Experience Manager案頭應用程式來移動/複製多個檔案。 請改為使用Experience Manager Assets Web UI將資料夾從Finder/Explorer拖曳至網路共用，或使用Experience Manager Assets資料夾上傳功能。
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

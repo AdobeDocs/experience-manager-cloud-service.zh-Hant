@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '4897'
+source-wordcount: '4925'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 6%
 | [了解搜尋結果和行為](#searchbehavior) | [修改搜尋刻面](#searchfacets) | [大量中繼資料更新](#metadata-updates) |
 | [搜尋排名和提升](#searchrank) | [自訂述詞](#custompredicates) | [智慧型集合](#collections) |
 | [高級搜索：篩選和搜尋範圍](#scope) |  | [了解並疑難排解非預期的結果](#unexpected-results) |
-| [從其他解決方案和應用程式中搜尋](#search-assets-other-surfaces):<ul><li>[Adobe資產連結](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager案頭應用程式](#desktop-app)</li><li>[Adobe Stock影像](#adobe-stock)</li><li>[Dynamic Media資產](#search-dynamic-media-assets)</li></ul> |  |  |
+| [從其他解決方案和應用程式中搜尋](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager案頭應用程式](#desktop-app)</li><li>[Adobe Stock影像](#adobe-stock)</li><li>[Dynamic Media資產](#search-dynamic-media-assets)</li></ul> |  |  |
 | [資產選擇器](#asset-picker) |  |  |
 | [限制](#limitations) 和 [提示](#tips) |  |  |
 | [插圖範例](#samples) |  |  |
@@ -154,7 +154,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 中繼資料欄位 | Facet值和使用狀況 |
 |---|---|
 | 標題 | 標題：John |
-| 產生器 | 建立者：約翰 |
+| 建立者 | 建立者：約翰 |
 | 位置 | 位置：不適用 |
 | 說明 | 說明：&quot;範例影像&quot; |
 | 建立者工具 | 建立工具：&quot;Adobe Photoshop&quot; |
@@ -463,6 +463,20 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 | 搜尋視覺上類似的影像時，缺少預期的影像。 | <ul><li>影像無法在 [!DNL Experience Manager].</li><li>影像未編列索引。 通常是在最近上傳時。</li><li>影像沒有智慧標籤。</li></ul> | <ul><li>將影像新增至 [!DNL Assets].</li><li>請與管理員聯繫，以重新索引儲存庫。 同時，請確定您使用的是適當的索引。</li><li>請連絡您的管理員以智慧標籤相關資產。</li></ul> |
 | 搜尋視覺上類似的影像時，會顯示不相關的影像。 | 視覺搜尋行為。 | [!DNL Experience Manager] 盡可能顯示多個潛在相關資產。 相關度較低的影像（如果有）會新增至結果，但搜尋排名會較低。 當您向下捲動搜尋結果時，相符項目的品質和所搜尋資產的相關性會降低。 |
 | 選取搜尋結果並對其執行作業時，系統不會對所有搜尋的資產執行作業。 | 此 [!UICONTROL 全選] 選項只會在卡片檢視中選取前100個搜尋結果，在清單檢視中選取前200個搜尋結果。 |  |
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

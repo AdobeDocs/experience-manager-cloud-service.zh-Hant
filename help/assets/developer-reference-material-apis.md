@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 153cc482047c3235b0f62bb94051c884b4cf29d4
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1869'
-ht-degree: 2%
+source-wordcount: '1899'
+ht-degree: 5%
 
 ---
 
@@ -165,12 +165,12 @@ CDN邊緣節點有助於加速請求上傳二進位檔。
 | `fileName` | 字串 | 必要 | 資產名稱，如啟動資料所提供。 |
 | `mimeType` | 字串 | 必要 | 二進位檔的HTTP內容類型，如啟動資料所提供。 |
 | `uploadToken` | 字串 | 必要 | 如啟動資料所提供，上傳二進位的代號。 |
-| `createVersion` | 布林值 | 可選 | 若 `True` 而資產具有指定名稱，則 [!DNL Experience Manager] 會建立資產的新版本。 |
-| `versionLabel` | 字串 | 可選 | 如果已建立新版本，則與資產新版本相關聯的標籤。 |
-| `versionComment` | 字串 | 可選 | 如果建立了新版本，則與該版本關聯的注釋。 |
-| `replace` | 布林值 | 可選 | 若 `True` 而且有指定名稱的資產， [!DNL Experience Manager] 刪除資產，然後重新建立。 |
-| `uploadDuration` | 數量 | 可選 | 檔案完整上傳的總時間量（以毫秒為單位）。 如果指定，則上傳期間會包含在系統的記錄檔中，以用於傳輸率分析。 |
-| `fileSize` | 數量 | 可選 | 檔案的大小（以位元組為單位）。 如果指定，則檔案大小將包含在系統的日誌檔案中，以進行傳輸速率分析。 |
+| `createVersion` | 布林值 | 選用 | 若 `True` 而資產具有指定名稱，則 [!DNL Experience Manager] 會建立資產的新版本。 |
+| `versionLabel` | 字串 | 選用 | 如果已建立新版本，則與資產新版本相關聯的標籤。 |
+| `versionComment` | 字串 | 選用 | 如果建立了新版本，則與該版本關聯的注釋。 |
+| `replace` | 布林值 | 選用 | 若 `True` 而且有指定名稱的資產， [!DNL Experience Manager] 刪除資產，然後重新建立。 |
+| `uploadDuration` | 數字 | 選用 | 檔案完整上傳的總時間量（以毫秒為單位）。 如果指定，則上傳期間會包含在系統的記錄檔中，以用於傳輸率分析。 |
+| `fileSize` | 數字 | 選用 | 檔案的大小（以位元組為單位）。 如果指定，則檔案大小將包含在系統的日誌檔案中，以進行傳輸速率分析。 |
 
 >[!NOTE]
 如果資產存在，且 `createVersion` no `replace` ，則 [!DNL Experience Manager] 使用新二進位檔更新資產的目前版本。
@@ -179,7 +179,7 @@ CDN邊緣節點有助於加速請求上傳二進位檔。
 
 上傳二進位檔的程式要等到為該檔案叫用完整URL後，才會完成。 上傳程式完成後會處理資產。 即使資產的二進位檔案已完整上傳，但上傳程式尚未完成，處理也不會開始。 如果上傳成功，伺服器會以 `200` 狀態代碼。
 
-### 開放原始碼上傳程式庫 {#open-source-upload-library}
+### 開放原始碼上傳庫 {#open-source-upload-library}
 
 若要進一步了解上傳演算法或建立專屬的上傳指令碼和工具，Analytics提供開放原始碼程式庫和工具：
 
@@ -289,6 +289,21 @@ aem上傳程式庫和命令列工具都使用 [node-httptransfer庫](https://git
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 * [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

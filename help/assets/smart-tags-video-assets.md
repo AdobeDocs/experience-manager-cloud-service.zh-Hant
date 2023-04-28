@@ -1,17 +1,17 @@
 ---
-title: 智慧標籤您的視訊資產
+title: 為您視訊資產加上智慧標記
 description: Experience Manager會使用 [!DNL Adobe Sensei].
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 0%
+source-wordcount: '1213'
+ht-degree: 2%
 
 ---
 
-# 智慧標籤您的視訊資產 {#video-smart-tags}
+# 為您視訊資產加上智慧標記 {#video-smart-tags}
 
 對新內容的需求不斷增加，需要減少手動操作，以便不時提供引人入勝的數位體驗。 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 支援使用人工智慧自動標籤視訊資產。 手動標籤視訊可能很耗時。 不過， [!DNL Adobe Sensei] 支援視訊智慧標籤功能使用人工智慧模型來分析視訊內容，並為視訊資產新增標籤。 因此，DAM使用者可縮短向客戶提供豐富體驗的時間。 Adobe的機器學習服務會為視訊產生兩組標籤。 而一組則對應於該影片中的物件、場景和屬性；另一組與飲用、跑步和慢跑等動作有關。
 
@@ -133,6 +133,21 @@ DAM中現有的視訊資產不會自動加上智慧標籤。 您需要 [!UICONTR
 * 只有小於300 MB的影片會自動加上標籤。 此 [!DNL Adobe Sensei] 服務會略過大小較大的視訊檔案。
 
 * 僅提及檔案格式的影片和支援的轉碼器 [智慧標籤](/help/assets/smart-tags.md#smart-tags-supported-file-formats) 標籤。
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

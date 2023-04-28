@@ -1,26 +1,26 @@
 ---
-title: 以多種語言建立和管理數位資產
-description: 了解如何自動將資產（包括二進位檔、中繼資料和標籤）轉譯為多種語言的工作流程。
+title: 如何在AEM中轉譯資產？
+description: 了解如何自動化工作流程，將AEM中的資產（包括二進位檔、中繼資料和標籤）翻譯成多種語言。
 contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 21%
+source-wordcount: '2620'
+ht-degree: 23%
 
 ---
 
-# 多語言資產 {#multilingual-assets}
+# 在AEM中轉換資產 {#multilingual-assets}
 
-多語言資產是指具有多種語言的二進位檔、中繼資料和標籤的資產。 資產的二進位檔、中繼資料和標籤通常以一種語言存在，然後轉譯為其他語言，以用於多語言專案。 Adobe Experience Manager Assets可讓您自動處理資產的翻譯工作流程（包括二進位檔、中繼資料和標籤），以產生其他語言的資產，以用於多語言專案。
+多語言資產是指具有多種語言的二進位檔、中繼資料和標籤的資產。 資產的二進位檔、中繼資料和標籤通常以一種語言存在，然後轉譯為其他語言，以用於多語言專案。 Adobe Experience Manager Assets可讓您自動化工作流程，翻譯資產（包括二進位檔、中繼資料和標籤），以產生其他語言的資產，以用於多語言專案。
 
-為了自動化翻譯工作流程，您整合了翻譯服務提供商與Experience Manager，並建立了將資產翻譯成多種語言的項目。 Experience Manager支援人工和機器翻譯工作流程。
+為了自動執行AEM資產翻譯，您整合了翻譯服務提供者與Experience Manager，並建立專案，將資產翻譯成多種語言。 Experience Manager支援人工和機器翻譯工作流程。
 
-人類翻譯：翻譯的資產會傳回並匯入Experience Manager。 當您的翻譯提供者與Experience Manager整合時，資產會自動在Experience Manager與翻譯提供者之間傳送。
+AEM中的人力資產翻譯：翻譯的資產會傳回並匯入Experience Manager。 當您的翻譯提供者與Experience Manager整合時，資產會自動在Experience Manager與翻譯提供者之間傳送。
 
-機器翻譯：機器翻譯服務會立即轉譯資產的中繼資料和標籤。
+AEM中的機器資產轉譯：機器翻譯服務會立即轉譯資產的中繼資料和標籤。
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
@@ -48,7 +48,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 -->
 
-## 準備翻譯資產 {#prepare-assets-for-translation}
+## 準備轉譯資產 {#prepare-to-translate-assets}
 
 多語言資產是指具有多種語言的二進位檔、中繼資料和標籤的資產。 資產的二進位檔、中繼資料和標籤通常以一種語言存在，然後轉譯為其他語言，以用於多語言專案。
 
@@ -70,7 +70,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
         |- zh
 ```
 
-執行下列步驟準備翻譯資產：
+執行下列步驟以準備轉換資產：
 
 1. 建立語言主要的語言根。 例如，範例資料夾階層中英文副本的語言根為 `/content/dam/en`. 請根據 [建立語言根](#create-a-language-root).
 
@@ -134,7 +134,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 1. 按一下/點選「 **[!UICONTROL 建立]**」。要翻譯的資產會新增至目標資料夾。更新的資料夾會列在「語言復 **[!UICONTROL 本」區段下]** 。
 1. 導覽至「專案」主控台，並開啟您新增至的現有翻譯專案。
 1. 按一下/點選翻譯專案檢視專案詳細資訊頁面。
-1. 按一下/點選 **翻譯工作** 並排，以在翻譯工作流程中檢視資產。 翻譯工作清單也會顯示資產中繼資料和標籤的項目。 這些項目表示資產的中繼資料和標籤也會翻譯。
+1. 按一下/點選 **翻譯工作** 並排，以在翻譯工作流程中檢視資產。 翻譯工作清單也會顯示資產中繼資料和標記項目。這些項目表示資產中繼資料和標記也已翻譯。
 
    >[!NOTE]
    >
@@ -145,7 +145,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 1. 若要開始翻譯資產，請按一下/點選 **[!UICONTROL 翻譯工作]** 拼貼並選取 **[!UICONTROL 開始]** 從清單中。 訊息會通知翻譯工作開始。
 1. 若要檢視翻譯工作的狀態，請按一下/點選 **[!UICONTROL 翻譯工作]** 方塊。 <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
-1. 翻譯完成後，狀態會變更為「準備檢閱」。 導覽至「資產」UI，並開啟每個翻譯資產的「屬性」頁面以檢視翻譯的中繼資料。
+1. 翻譯完成後，狀態會變更為「準備檢閱」。 導覽至「資產」UI，並開啟每個翻譯資產的「屬性」頁面，以檢視翻譯的中繼資料。
 
 ### 更新語言副本 {#update-language-copies}
 
@@ -276,3 +276,17 @@ Adobe Experience Manager可讓您從所選翻譯供應商處獲得雲端式翻�
 1. 在套用自訂連接器後，執行建立翻譯專案中說明的任何翻譯工作流程。驗證「項目」控制台中翻譯項 **[!UICONTROL 目的「翻譯摘要]** 」表徵圖中連接器的詳 **[!UICONTROL 細資訊]** 。
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
+
+**另請參閱**
+
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

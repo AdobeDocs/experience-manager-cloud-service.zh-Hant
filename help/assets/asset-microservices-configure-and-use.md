@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2902'
-ht-degree: 0%
+source-wordcount: '2932'
+ht-degree: 1%
 
 ---
 
@@ -126,7 +126,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 1. 管理員存取 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**. 按一下&#x200B;**[!UICONTROL 建立]**。
 1. 按一下 **[!UICONTROL 自訂]** 標籤。 按一下 **[!UICONTROL 新增]**. 提供所需的轉譯檔案名稱。
-1. 提供下列資訊。
+1. 提供以下資訊。
 
    * 每個轉譯的檔案名和支援的副檔名。
    * [App Builder自訂應用程式的端點URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). 應用程式必須來自與Experience Manager帳戶相同的組織。
@@ -229,8 +229,8 @@ asset compute服務整合可讓Experience Manager使用 [!UICONTROL 服務參數
 
 您可以為無法透過將工作流程套用至資料夾而輕鬆履行的進階設定，設定自訂工作流程執行者服務。 例如，使用規則運算式的工作流程。 Adobe CQ DAM自訂工作流程執行者(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服務。 它提供下列兩個設定選項：
 
-* 依路徑的後置處理工作流程(`postProcWorkflowsByPath`):可以根據不同的存放庫路徑列出多個工作流程模型。 使用冒號分隔路徑和模型。 支援簡單的存放庫路徑。 將這些對應至 `/var` 路徑。 例如： `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* 依運算式的後置處理工作流程(`postProcWorkflowsByExpression`):可以根據不同的規則運算式列出多個工作流程模型。 運算式和模型應以冒號分隔。 規則運算式應直接指向「資產」節點，而非任何一個轉譯或檔案。 例如： `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* 依路徑的後置處理工作流程(`postProcWorkflowsByPath`):可以根據不同的存放庫路徑列出多個工作流程模型。 使用冒號分隔路徑和模型。 支援簡單的存放庫路徑。 將這些對應至 `/var` 路徑。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
+* 依運算式的後置處理工作流程(`postProcWorkflowsByExpression`):可以根據不同的規則運算式列出多個工作流程模型。 運算式和模型應以冒號分隔。 規則運算式應直接指向「資產」節點，而非任何一個轉譯或檔案。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
 
 要了解如何部署OSGi配置，請參閱 [部署至 [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
 
@@ -265,6 +265,21 @@ asset compute服務整合可讓Experience Manager使用 [!UICONTROL 服務參數
 * 設計工作流程時，請考量您對所有轉譯類型的需求。 如果您預計未來不需要轉譯，請從工作流程移除其建立步驟。 之後無法大量刪除轉譯。 長時間使用後，您可能會佔用大量儲存空間 [!DNL Experience Manager]. 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自訂 [!DNL Experience Manager] 刪除特定轉譯或刪除資產，然後再次上傳這些資產。
 * 目前，支援僅限於產生轉譯。 不支援產生新資產。
 * 目前，中繼資料擷取的檔案大小限制約為15 GB。 上傳非常大型的資產時，有時中繼資料擷取作業會失敗。
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

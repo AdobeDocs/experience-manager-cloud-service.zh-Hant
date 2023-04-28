@@ -1,15 +1,15 @@
 ---
-title: 影像的顏色標籤
+title: 影像的顏色標記
 description: Experience Manager Assets可讓您區分影像中的顏色，並自動套用作為標籤。 然後，您可以使用這些標籤來搜尋和篩選影像。
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 3%
+source-wordcount: '1225'
+ht-degree: 5%
 
 ---
 
-# 影像的顏色標籤 {#color-tag-images}
+# 影像的顏色標記 {#color-tag-images}
 
 ![顏色標籤橫幅](assets/banner-image.png)
 
@@ -181,3 +181,18 @@ DAM中現有的影像不會自動加上顏色標籤。 您需要 [!UICONTROL 重
    您可以根據選取的一種顏色來篩選影像。 將所選顏色作為智慧顏色標籤之一且位於 [覆蓋/支配閾值%](#manage-color-tagging-settings) 顯示在右窗格中。
 
 1. 按一下搜尋列中的x以清除篩選器。
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

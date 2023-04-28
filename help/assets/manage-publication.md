@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 8%
+source-wordcount: '1465'
+ht-degree: 9%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 8%
 
 * [!UICONTROL 目的地]
    * `Publish`:將資產和資料夾發佈至 [!DNL Experience Manager Assets] (`AEM`)
-   * `Dynamic Media`:將資產發佈至 [!DNL Dynamic Media]
+   * `Dynamic Media`: 將資產發佈至 [!DNL Dynamic Media]
    * `Brand Portal`:將資產和資料夾發佈至 [!DNL Brand Portal]
 
 * [!UICONTROL 排程]
@@ -183,3 +183,18 @@ Only the selected folder content and references are published.
 * 未發佈空資料夾。
 * 如果您發佈的資產經過處理，則只會發佈原始內容。 遺失轉譯。 等待處理完成，然後在處理完成後發佈或重新發佈資產。
 * 取消發佈複雜資產時，僅取消發佈資產。 請避免取消發佈參考，因為其他已發佈的資產可能會參照這些參考。
+
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)

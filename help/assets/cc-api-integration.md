@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 0%
+source-wordcount: '777'
+ht-degree: 3%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 1. 請連絡您的客戶代表，以授權「內容自動化」附加元件。
 1. 存取Cloud Manager，並使用組織選取器切換至您的組織。
 1. 按一下 **[!UICONTROL 添加程式]** 並指定程式名。
-1. 按一下 **[!UICONTROL 繼續]**.
+1. 按一下&#x200B;**[!UICONTROL 「繼續」]**。
 1. 展開 **[!UICONTROL 資產]** 選取 **[!UICONTROL 內容自動化]**.
 1. 按一下&#x200B;**[!UICONTROL 建立]**。
 1. 將管線運行到 [部署對Cloud Manager的變更](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
@@ -69,7 +69,7 @@ ht-degree: 0%
 1. 選擇 **[!UICONTROL 編輯方案]** 然後選取 **[!UICONTROL 解決方案和附加元件]** 標籤。
 
 1. 展開 **[!UICONTROL 資產]** 選取 **[!UICONTROL 內容自動化]**.
-1. 按一下 **[!UICONTROL 更新]**.
+1. 按一下&#x200B;**[!UICONTROL 更新]**。
 1. 將管線運行到 [部署對Cloud Manager的變更](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 ## 使用處理設定檔大量編輯創意資產 {#process-assets}
@@ -101,9 +101,24 @@ ht-degree: 0%
 * [!DNL Experience Manager] 將資產處理限制為每個環境每分鐘300個請求，以及每個組織每分鐘700個請求。
 * 檔案大小限制為4 GB [!DNL Adobe Photoshop] API操作，1 GB [!DNL Adobe Lightroom] 操作。
 
+**另請參閱**
+
+* [翻譯資產](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets支援的檔案格式](file-format-support.md)
+* [搜尋資產](search-assets.md)
+* [連線資產](use-assets-across-connected-assets-instances.md)
+* [資產報表](asset-reports.md)
+* [中繼資料結構](metadata-schemas.md)
+* [下載資產](download-assets-from-aem.md)
+* [管理中繼資料](manage-metadata.md)
+* [搜尋 Facet](search-facets.md)
+* [管理收藏集](manage-collections.md)
+* [大量中繼資料匯入](metadata-import-export.md)
+
 >[!MORELIKETHIS]
 >
 >* [透過處理設定檔來設定和使用資產微服務](/help/assets/asset-microservices-configure-and-use.md).
->* [整合 [!DNL Experience Manager] with [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+>* [ [!DNL Experience Manager] 與  整合 [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [透過資產微服務擷取和處理資產：概述](/help/assets/asset-microservices-overview.md).
 
