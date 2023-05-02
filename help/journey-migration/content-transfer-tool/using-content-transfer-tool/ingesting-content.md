@@ -2,9 +2,9 @@
 title: 將內容內嵌至目標
 description: 將內容內嵌至目標
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: cab182a7998be6a569cf16e4000184f7235082da
+source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1722'
 ht-degree: 12%
 
 ---
@@ -146,6 +146,10 @@ ht-degree: 12%
 Release Orchestrator通過自動應用更新來使環境保持最新。 如果執行擷取時觸發更新，可能會造成無法預測的結果，包括環境損毀。 這是啟動獲取之前應記錄支援票證的原因之一（請參閱上面的「注意」），以便可以安排臨時禁用Release Orchestrator的時間。
 
 如果開始擷取時Release Orchestrator仍在執行中，UI會顯示此訊息。 您仍然可以選擇繼續操作，接受風險，方法是檢查欄位並再次按按鈕。
+
+>[!NOTE]
+>
+> Release Orchestrator現在已部署到開發環境，因此也應暫停這些環境的更新。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 

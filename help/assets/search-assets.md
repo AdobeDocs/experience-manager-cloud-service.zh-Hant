@@ -1,25 +1,25 @@
 ---
-title: 在中搜尋數位資產和影像 [!DNL Adobe Experience Manager]
-description: 了解如何在 [!DNL Adobe Experience Manager] ，以及如何使用顯示在搜尋中的資產。
+title: 如何在AEM中搜尋資產？
+description: 了解如何使用「篩選」面板在AEM中搜尋資產，以及如何使用顯示在資產搜尋中的結果。
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
 workflow-type: tm+mt
-source-wordcount: '4925'
+source-wordcount: '4931'
 ht-degree: 6%
 
 ---
 
-# 搜尋 [!DNL Adobe Experience Manager] 中的資產 {#search-assets-in-aem}
+# 在AEM中搜尋資產 {#search-assets-in-aem}
 
-[!DNL Adobe Experience Manager Assets] 提供強大的資產探索方法，可協助您達到更高的內容速度。 您的團隊可運用現成可用的功能和自訂方法，提供順暢的智慧型搜尋體驗，縮短上市時間。 搜尋資產是數位資產管理系統使用的核心，無論是供創意人員進一步使用、供業務使用者和行銷人員強大管理資產，還是由DAM管理員管理。 簡單、進階和自訂搜尋，您可透過 [!DNL Assets] 使用者介面或其他應用程式和介面，有助於完成這些使用案例。
+[!DNL Adobe Experience Manager Assets] 提供強大的資產搜尋方法，可協助您達到更高的內容速度。 您的團隊可運用現成可用的功能和自訂方法，提供順暢的智慧型資產搜尋體驗，縮短上市時間。 搜尋資產功能是使用數位資產管理系統的核心，無論是供創意人員進一步使用、供業務使用者和行銷人員強大管理資產，或供DAM管理員管理。 簡單、進階和自訂搜尋，您可透過 [!DNL Assets] 使用者介面或其他應用程式和介面，有助於完成這些使用案例。
 
-[!DNL Experience Manager Assets] 支援下列使用案例，本文說明這些使用案例的使用方式、概念、設定、限制和疑難排解。
+[!DNL Experience Manager Assets] 支援下列使用案例來搜尋資產，本文說明這些使用案例的使用方式、概念、設定、限制和疑難排解。
 
-| 搜尋資產 | 配置和管理搜索功能 | 使用搜索結果 |
+| 搜尋資產 | 配置和管理搜索功能 | 使用資產搜尋結果 |
 |---|---|---|
 | [基本搜尋](#searchbasics) | [搜索索引](#searchindex) | [排序結果](#sort) |
 | [了解搜尋UI](#searchui) | [文字擷取](#extracttextupload) | [檢查資產的屬性和中繼資料](#checkinfo) |
