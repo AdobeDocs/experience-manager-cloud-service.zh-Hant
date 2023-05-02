@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: c419da88ccfe97cf8b80e68ddd402196c2ec58e3
+source-git-commit: 49ffc9ff848a5cca960263d6bcce5c4b6383a6d0
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 27%
+source-wordcount: '1101'
+ht-degree: 24%
 
 ---
 
@@ -29,10 +29,6 @@ AEM管理的CDN將可滿足大部分客戶的效能和安全性需求。 對於�
 
 1. [管理 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [管理客戶網域名稱](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-
->[!NOTE]
->
->Cloud Manager **只會**&#x200B;在您使用 AEM 管理的 CDN 時才支援自訂網域。如果您自備 CDN 並且[將其指向 AEM 管理的 CDN](#point-to-point-CDN)，您將必須使用特定的 CDN 來管理網域而不是 Cloud Manager。
 
 **限制流量**
 
@@ -61,7 +57,7 @@ AEM管理的CDN將可滿足大部分客戶的效能和安全性需求。 對於�
 
 配置說明：
 
-1. 將您的CDN指向AdobeCDN的入口作為其來源網域。 例如, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. 將您的CDN指向AdobeCDN的入口作為其來源網域。 例如， `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. SNI還必須設定為AdobeCDN的入口。
 1. 將Host標題設為來源網域。 例如：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
 1. 設定 `X-Forwarded-Host` 包含網域名稱的標題，以便AEM可判斷主機標題。 例如：`X-Forwarded-Host:example.com`。

@@ -2,10 +2,10 @@
 title: 自訂網域名稱簡介
 description: Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: cc6910bad0d0a62232bd66e0080b6802b9a1110b
-workflow-type: ht
-source-wordcount: '673'
-ht-degree: 100%
+source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
+workflow-type: tm+mt
+source-wordcount: '770'
+ht-degree: 81%
 
 ---
 
@@ -33,21 +33,16 @@ Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一�
 >
 >Cloud Manager 不是網域名稱註冊機構，不提供 DNS 服務。
 
-## 限制 {#limitations}
+## 自訂網域名稱和BYO CDN {#byo-cdn}
 
-搭配 AEMaaCS 使用自訂網域名稱有幾項限制。
+AEM as a Cloud Service提供內建的內容傳遞網路(CDN)服務，也可讓您自攜(BYO)CDN與AEM搭配使用。 您可以在AEM管理的CDN或您管理的CDN中安裝自訂網域。
 
-* Cloud Manager 支援自訂網域名稱用於 Sites 計畫的發佈和預覽服務。不支援作者服務的自訂網域。
-* 每個 Cloud Manager 環境最多可以託管 500 個自訂網域。
-* 當有目前正在執行的管道連線到這些環境時，無法將網域名稱新增到環境中。
-* 同一個網域名稱不能在多個環境中使用。
-* 一次只能新增一個網域名稱。
-* AEM as a Cloud Service 不支援萬用字元網域，例如 `*.example.com`。
-* 在新增自訂網域名稱之前，必須為您的程序安裝包含自訂網域名稱的有效 SSL 憑證 (萬用字元憑證有效)。如需了解更多資訊，請參閱[新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
+* 安裝在AEM管理的CDN中的自訂網域名稱（和憑證）是透過Cloud Manager管理。
+* 在您自己的CDN中安裝的自訂網域名稱（和憑證），會在該特定CDN中進行管理。
 
->[!NOTE]
->
->Cloud Manager **只會**&#x200B;在您使用 AEM 管理的 CDN 時才支援自訂網域。如果您自備 CDN 並且[將其指向 AEM 管理的 CDN](/help/implementing/dispatcher/cdn.md)，您將必須使用特定的 CDN 來管理網域而不是 Cloud Manager。
+在您自己的CDN中管理的網域不需透過Cloud Manager安裝。 這些ID將可透過X-Forwarded-Host提供給AEM，且會符合Dispatcher中定義的主機。 [如需詳細資訊，請參閱CDN檔案。](/help/implementing/dispatcher/cdn.md)
+
+在一個環境中，您可以在AEM管理的CDN中安裝兩個網域，並在您自己的CDN中安裝這兩個網域。
 
 ## 工作流程 {#workflow}
 
@@ -68,3 +63,15 @@ Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一�
 >[!TIP]
 >
 >使用 AEM as a Cloud service 設定自訂網域名稱通常是一個簡單的過程。 但是，有時可能會出現網域委派問題，這可能需要 1-2 個工作日才能解決。出於這個原因，強烈建議在上線日期之前安裝網域。請參閱文件：[檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)以了解詳細資訊。
+
+## 限制 {#limitations}
+
+搭配 AEMaaCS 使用自訂網域名稱有幾項限制。
+
+* Cloud Manager 支援自訂網域名稱用於 Sites 計畫的發佈和預覽服務。不支援作者服務的自訂網域。
+* 每個 Cloud Manager 環境最多可以託管 500 個自訂網域。
+* 當有目前正在執行的管道連線到這些環境時，無法將網域名稱新增到環境中。
+* 同一個網域名稱不能在多個環境中使用。
+* 一次只能新增一個網域名稱。
+* AEM as a Cloud Service 不支援萬用字元網域，例如 `*.example.com`。
+* 在新增自訂網域名稱之前，必須為您的程序安裝包含自訂網域名稱的有效 SSL 憑證 (萬用字元憑證有效)。如需了解更多資訊，請參閱[新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
