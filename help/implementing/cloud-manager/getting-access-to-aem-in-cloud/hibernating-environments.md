@@ -2,10 +2,10 @@
 title: 休眠和去休眠沙箱環境
 description: 了解沙箱程序的環境如何自動進入休眠模式以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
+source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
+source-wordcount: '691'
+ht-degree: 98%
 
 ---
 
@@ -114,5 +114,9 @@ ht-degree: 100%
 
 * 沙箱計劃內的環境在八小時不活動後自動休眠。
    * 不活動被定義為既不創作服務也不預覽或發布服務接收請求。
-   * 一旦休眠，它們可以手動解除休眠。
+   * 一旦休眠，就可以 [手動解除休眠。](#de-hibernation-introduction)
 * 沙箱程序在處於連續休眠模式六個月後被刪除，之後可以重新建立它們。
+
+>[!NOTE]
+>
+>只有沙箱環境會在連續休眠六個月後自動刪除。保留沙箱程式及其存放庫和程式碼。
