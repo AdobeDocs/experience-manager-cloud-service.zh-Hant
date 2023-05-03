@@ -3,10 +3,10 @@ title: 了解搭配使用 GraphQL 與 AEM - 範例內容和查詢
 description: 透過探索範例內容和查詢，了解如何搭配使用 GraphQL 與 AEM 以提供無周邊內容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 100%
+source-wordcount: '1596'
+ht-degree: 97%
 
 ---
 
@@ -1291,16 +1291,40 @@ query {
 
 ### 巢狀內容片段的範例查詢 - 多個模型類型{#sample-wknd-nested-fragment-multiple-model}
 
+#### 單參考模型類型
+
 此查詢會質詢：
 
 * 多個類型為 `bookmark` 的內容片段
-   * 具有片段參考，其會參考特定模型類型 `article` 和 `adventure` 的其他片段。
+   * 與特定模型類型的其他片段的片段參考 `article`
 
 >[!NOTE]
 >
->`fragments` 欄位的資料類型為 `fragment-reference`，並選擇了模型 `Article`、`Adventure`。
+>欄位 `fragments` 具有資料類型 `fragment-reference`，與模型 `Article` 已選取。 查詢傳送 `fragments` 作為 `[Article]`
 
-<!-- need replacement query -->
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### 多個引用的模型類型
+
+此查詢會質詢：
+
+* 多個類型為 `bookmark` 的內容片段
+   * 具有片段參考，其會參考特定模型類型 `Article` 和 `Adventure` 的其他片段。
+
+>[!NOTE]
+>
+>`fragments` 欄位的資料類型為 `fragment-reference`，並選擇了模型 `Article`、`Adventure`。查詢傳送 `fragments` 作為 `[AllFragmentModels]` 會取消引用聯合類型。
 
 ```graphql
 {
