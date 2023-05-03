@@ -270,7 +270,7 @@ ht-degree: 99%
          + [疑難排解](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
          + [鍵盤快速鍵](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
       + 編寫功能 {#features}
-         + [頁面範例](/help/sites-cloud/authoring/features/templates.md)
+         + [頁面範本](/help/sites-cloud/authoring/features/templates.md)
          + [樣式系統](/help/sites-cloud/authoring/features/style-system.md)
          + [頁面版本](/help/sites-cloud/authoring/features/page-versions.md)
          + [頁面差異](/help/sites-cloud/authoring/features/page-diff.md)
@@ -326,7 +326,7 @@ ht-degree: 99%
          + [建立新網站](/help/sites-cloud/administering/site-creation/create-site.md)
          + [啟用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [使用網站滑軌](/help/sites-cloud/administering/site-creation/site-rail.md)
-         + [網站範例](/help/sites-cloud/administering/site-creation/site-templates.md)
+         + [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)
          + AEM 快速網站建立歷程 {#quick-site}
             + [了解 AEM 快速網站建立](/help/journey-sites/quick-site/overview.md)
@@ -546,7 +546,7 @@ ht-degree: 99%
             + [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
             + [為最適化表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
             + [為最適化表單產生記錄文件](/help/forms/generate-document-of-record-core-components.md)
-            + [建立最適化Forms — 在AEM Sites頁面中建立核心元件](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [建立最適化表單 - AEM Sites 頁面的核心元件](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Summit 活頁簿](/help/forms/summit-2023-workbook.md)
       + 編寫最適化表單 - 基礎元件{#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF forms 轉換為最適化表單 {#afcs}
@@ -790,8 +790,8 @@ ht-degree: 99%
          + [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)
          + [自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + 功能測試 {#functional-testing}
-            + [功能測試概述](/help/implementing/cloud-manager/functional-testing.md)
-            + [Java功能測試](/help/implementing/cloud-manager/java-functional-testing.md)
+            + [功能測試概觀](/help/implementing/cloud-manager/functional-testing.md)
+            + [Java 功能測試](/help/implementing/cloud-manager/java-functional-testing.md)
             + [UI 測試](/help/implementing/cloud-manager/ui-testing.md)
          + [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [存取和管理記錄檔](/help/implementing/cloud-manager/manage-logs.md)
@@ -831,7 +831,7 @@ ht-degree: 99%
       + [為伺服器端 API 產生存取權杖 (舊版)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [快速網站建立和前端自訂](/help/implementing/developing/introduction/quick-site-creation.md)
       + [使用前端管道開發 Sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
-      + [自訂網站範例和主題](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
+      + [自訂網站範本和主題](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)
       + 全堆疊 AEM 開發 {#full-stack}
          + [開發 AEM Sites 快速入門 - WKND 教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
@@ -844,9 +844,9 @@ ht-degree: 99%
          + [頁面差異](/help/implementing/developing/introduction/page-diff.md)
          + [編輯器限制](/help/implementing/developing/introduction/editor-limitations.md)
          + [命名慣例](/help/implementing/developing/introduction/naming-conventions.md)
-         + 元件和範例 {#components-templates}
+         + 元件和範本 {#components-templates}
             + [元件概觀](/help/implementing/developing/components/overview.md)
-            + [範例](/help/implementing/developing/components/templates.md)
+            + [範本](/help/implementing/developing/components/templates.md)
             + [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [樣式系統](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
             + [內容服務的 JSON 匯出工具](/help/implementing/developing/components/json-exporter.md)
