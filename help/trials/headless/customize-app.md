@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 97%
 
 ![預覽應用程式](assets/do-not-localize/preview-app-1.png)
 
-## 編輯應用程式中的標題 {#edit-app}
+## 在應用程式中編輯標頭 {#edit-app}
 
 內容片段編輯器會將應用程式的基本版面顯示為頁面內容片段。 **面版**&#x200B;代表應用程式的不同頁面，每個頁面都是自己的內容片段。 透過修訂這些片段，您可以變更應用程式的內容。
 
@@ -65,7 +65,7 @@ ht-degree: 97%
 
 ## 在應用程式中交換影像 {#change-image}
 
-現在您已經修改了應用程式中的標題，請嘗試變更影像。 
+現在您已經修改了應用程式中的標題，請嘗試變更影像。
 
 1. 從預覽返回內容片段編輯器的瀏覽器標籤。
 
@@ -91,7 +91,7 @@ ht-degree: 97%
 
 使用 AEM Headless CMS 可以輕鬆更新應用程式中的影像和資產。
 
-## 將參考新增至應用程式中的新內容片段 {#create-moment}
+## 在應用程式中新增對新內容片段的參考 {#create-moment}
 
 現在您已經更新了騎士的影像，讓我們來看看如何透過建立和參考新的內容片段，來將內容新增到應用程式。您將把由「可購物機會」內容片段管理的產品標註，新增到應用程式的第二個面板。
 
