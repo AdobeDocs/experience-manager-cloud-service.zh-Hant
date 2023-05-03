@@ -2,9 +2,9 @@
 title: 自訂程式碼品質規則
 description: 本頁說明了 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則。它們是根據 Adobe Experience Manager Engineering 的最佳實務。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 0b71e15c956cd39907440be319347bd1a749eb0b
+source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3473'
 ht-degree: 100%
 
 ---
@@ -757,7 +757,7 @@ public class DontDoThis implements Page {
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
-OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 會定義 Experience Manager 中的預設撰寫模式。 由於[從 Experience Manager 6.4 起，Classic UI 就已被取代，](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=zh-Hant)若將預設的撰寫模式設定為 Classic UI，會產生問題。
+OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 會定義 Experience Manager 中的預設撰寫模式。 由於從 Experience Manager 6.4 起，Classic UI 就已被取代，若將預設的撰寫模式設定為 Classic UI，會產生問題。
 
 ### 包含對話框的元件應該有 Touch UI 對話框 {#oakpal-components-dialogs}
 
@@ -860,7 +860,7 @@ Experience Manager 用戶端資料庫可能包含影像和字體之類的靜態�
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-舊版基礎元件 (即 `/libs/foundation` 下的元件) 已在[多個 Experience Manager 版本](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=zh-Hant)中被取代，以支援核心元件。 不建議使用基礎元件作為自訂元件的基礎 (無論是透過覆蓋還是繼承)，並應轉換為相對應的核心元件。
+舊版基礎元件 (即 `/libs/foundation` 下的元件) 已在多個 Experience Manager 版本中被取代，以支援核心元件。 不建議使用基礎元件作為自訂元件的基礎 (無論是透過覆蓋還是繼承)，並應轉換為相對應的核心元件。
 
 [Experience Manager 現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可有助於這種轉換。
 

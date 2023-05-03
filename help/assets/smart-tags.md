@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 9abafe051672de65f042332314445b239f95852b
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2423'
 ht-degree: 5%
 
 ---
@@ -236,7 +236,7 @@ ht-degree: 5%
 
 * 無法識別影像中的細微差異。 例如，纖薄與普通襯衫。
 * 無法根據影像的微小模式或部分識別標籤。 例如，襯衫上的標誌。
-* 支援在 [!DNL Experience Manager] 支援。 如需語言清單，請參閱 [智慧內容服務發行說明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* 支援在 [!DNL Experience Manager] 支援。
 * 未處理的標籤與下列項目相關：
 
    * 非視覺、抽象的方面。 例如，產品的發佈年份或季數、影像所誘發的情緒或情緒，以及視訊的主觀內涵。
