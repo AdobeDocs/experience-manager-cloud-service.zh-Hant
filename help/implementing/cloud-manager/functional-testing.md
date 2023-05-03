@@ -3,9 +3,9 @@ title: 功能測試
 description: 了解內建在 AEM as a Cloud Service 部署流程中的三種不同類型的功能測試，以確保程式碼的品質和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 7d15440159a8e24314753acd5b37fcd2c5e8ec4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 83%
 
 ## 範圍
 
-Cloud Manager管道中功能測試步驟的目的，是確保應用程式的基本功能如預期般運作。
+Cloud Manager 管道中功能測試步驟的目的是確保應用程式的基本功能按預期運作。
 
-此測試階段是將程式碼部署至生產環境之前，自動化測試的最後一個層級。
+此測試階段是將程式碼部署到生產環境之前的最後一層自動化測試。
 
-功能測試不應取代，而應補充並延伸其他測試策略，例如單元測試、整合測試，或在Cloud Manager中管道執行之外執行的功能測試。
+功能測試不應取代，而應補充和擴展其他測試策略，如單元測試、整合測試，或在 Cloud Manager 管道執行之外執行的功能測試。
 
 ## 總覽 {#overview}
 
@@ -56,12 +56,12 @@ AEM as a Cloud Service 中有三種不同類型的功能測試。
 
 自訂功能測試會針對自訂程式碼部署和推送升級執行，這對於編寫良好的功能測試，以防止 AEM 程式碼變更而破壞應用程式碼尤為重要。自訂功能測試步驟一律存在且不能跳過。
 
-請參閱 [Java功能測試](/help/implementing/cloud-manager/java-functional-testing.md) 以取得更多資訊。
+如需詳細資訊，請參閱 [Java 功能測試](/help/implementing/cloud-manager/java-functional-testing.md)。
 
 
 ### 自訂 UI 測試 {#custom-ui-testing}
 
 自訂 UI 測試是一項選擇性功能，可讓您為應用計劃建立和自動執行 UI 測試。UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。
 
-請參閱 [自訂UI測試](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) 以取得更多資訊。
+如需詳細資訊，請參閱[自訂 UI 測試](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)。
 
