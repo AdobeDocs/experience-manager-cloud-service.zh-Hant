@@ -4,9 +4,9 @@ description: 雲端中的 Dispatcher
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: c61cd92acd416b1c463f5359f66be8199acf08c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1009'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Dispatcher 工具是整體 AEM as a Cloud Service SDK 的一部分，提供：
 
 Dispatcher 工具是 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 的一部分，可以在 [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 入口網站下載其壓縮檔。該新的 Dispatcher 工具版本中可用的任何新設定都可用於部署到特定雲端環境，此環境在雲端執行該 AEM 版本或更高版本。
 
-將SDK解壓縮，此SDK捆綁了macOS、Linux和Windows的Dispatcher工具。
+解壓縮 SDK，其包含適用於 macOS、Linux 和 Windows 的 Dispatcher 工具。
 
 **對於 macOS/Linux**，使 Dispatcher 工具成品可執行並執行它。它將於所在目錄下自行擷取 Dispatcher 工具檔案 (其中 `version`是 Dispatcher 工具的版本)。
 
