@@ -4,9 +4,9 @@ description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '4769'
+ht-degree: 100%
 
 ---
 
@@ -241,15 +241,15 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 
 | 內容片段模型 - 資料類型 | GraphQL 類型 | 說明 |
 |--- |--- |--- |
-| 單行文字 | `String`, `[String]` | 用於簡單的字串，例如作者姓名、位置名稱等。 |
-| 多行文字 | `String`, `[String]` | 用於輸出文字，例如文章正文 |
-| 數字 | `Float`, `[Float]` | 用於顯示浮點數和正規數 |
+| 單行文字 | `String`、`[String]` | 用於簡單的字串，例如作者姓名、位置名稱等。 |
+| 多行文字 | `String`、`[String]` | 用於輸出文字，例如文章正文 |
+| 數字 | `Float`、`[Float]` | 用於顯示浮點數和正規數 |
 | 布林值 | `Boolean` | 用於顯示核取方塊 → 簡單的 true/false 陳述式 |
 | 日期和時間 | `Calendar` | 用於以 ISO 8601 格式顯示日期和時間。視所選類型而定，AEM GraphQL 中可使用三種風格：`onlyDate`、`onlyTime`、`dateTime` |
 | 列舉 | `String` | 用於顯示模型建立時定義之選項清單中的選項 |
 | 標記 | `[String]` | 用於顯示字串清單，字串代表 AEM 中使用的標記 |
-| 內容參考 | `String`, `[String]` | 用於顯示 AEM 中另一個資產的路徑 |
-| 片段參考 |  *模型類型* <br><br>單一欄位： `Model`  — 模型類型，直接引用 <br><br>多欄位，其中一個參考型別： `[Model]`  — 類型陣列 `Model`，直接從陣列參照 <br><br>多欄位，包含多個參考類型： `[AllFragmentModels]`  — 所有模型類型的陣列，從具有聯合類型的陣列引用 |  用於參照建立模型時定義的特定模型類型的一或多個內容片段 |
+| 內容參考 | `String`、`[String]` | 用於顯示 AEM 中另一個資產的路徑 |
+| 片段參考 |  *模型類型* <br><br>單一欄位：`Model` - 模型類型，直接參考<br><br>多個欄位，具單一參考類型：`[Model]` - `Model` 類型陣列，從陣列直接參考<br><br>多個欄位，具多個參考類型：`[AllFragmentModels]` - 所有模型類型陣列，從聯合類型的陣列參考 | 用於參考特定模型類型的一個或多個內容片段，在建立模型時定義 |
 
 {style="table-layout:auto"}
 
@@ -700,7 +700,7 @@ query {
 
 >[!NOTE]
 >
->* 依預設，分頁會使用存放庫節點的UUID來表示要排序的片段，以確保結果的順序一律相同。 使用 `sort` 時，會以隱含的方式使用 UUID 以確保唯一排序；即使是排序鍵相同的兩個項目也一樣。
+>* 依預設，分頁使用代表片段的存放庫節點 UUID 進行排序，以確保結果的順序始終相同。使用 `sort` 時，會以隱含的方式使用 UUID 以確保唯一排序；即使是排序鍵相同的兩個項目也一樣。
 >
 >* 由於內部技術限制，如果對巢狀欄位套用排序和篩選，效能會降低。因此，建議使用儲存在根層級的篩選/排序欄位。如果要查詢大型已分頁結果集，同樣也建議使用此方法。
 
