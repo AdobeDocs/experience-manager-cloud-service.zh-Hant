@@ -4,10 +4,10 @@ description: 探索使用 CodePen 範例應用程式和適用於 JavaScript 的 
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 3b64b909996674bcbe36f746bcfd15e1422a8a4b
+source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="啟動範例 CodePen 應用程式"
->abstract="本指南將逐步解說如何查詢試用環境的 JSON 資料並放入基本的 JavaScript 網頁應用程式中。我們將使用您在之前學習單元中建模和建立的內容片段，因此請先閱讀這些指南，然後再進入本指南。<br><br>為了示範如何從 JavaScript 網頁應用程式查詢內容，我們設定了一個 CodePen，您可以按原樣使用它，或者建立您自己的帳戶以進一步自訂。"
+>abstract="本指南將逐步解說如何查詢試用環境的 JSON 資料並放入基本的 JavaScript 網頁應用程式中。我們將使用您在之前學習單元中建模和建立的內容片段，因此請先閱讀這些指南，然後再進入本指南。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
@@ -61,7 +61,7 @@ import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headles
 
 在第 6 行，我們從 `publishHost` 查詢參數讀取您的發佈主機詳細資料。這是 AEM Headless 用戶端將從中擷取資料的主機。這通常會編碼到您的應用程式中，但我們使用查詢參數來使 CodePen 應用程式輕鬆搭配不同環境運作。
 
-我們在第 12 行將 AEM Headless 用戶端設定為使用 Proxy Adobe IO 執行階段函數來避免 CORS 問題。您自己的專案不需要這麼做，但 CodePen 應用程式需要才能搭配您的試用環境運作。Proxy 函數設定為使用查詢參數中提供的 `publishHost` 值。
+我們在第12行設定AEM Headless Client :
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -72,6 +72,10 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
   }
 });
 ```
+
+>[!NOTE]
+>
+>此 **serviceURL** 設定為使用代理AdobeIO運行時函式來避免CORS問題。 您自己的專案不需要這麼做，但 CodePen 應用程式需要才能搭配您的試用環境運作。代理函式配置為使用 **publishHost** 查詢參數中提供的值。
 
 最後，函數 `fetchJsonFromGraphQL()` 用於使用 AEM Headless 用戶端執行擷取要求。每次變更程式碼時都會呼叫它，或者可以透過按一下「**重新擷取**」連結來觸發。實際的 `aemHeadlessClient.runPersistedQuery(..)` 呼叫在第 34 行發生。稍後我們將變更此 JSON 資料的轉譯方式，但現在我們只需使用 `resultToPreTag(queryResult)` 函數將其列印到 `#output` div。
 
