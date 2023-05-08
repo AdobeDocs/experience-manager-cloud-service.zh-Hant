@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
 workflow-type: tm+mt
 source-wordcount: '1596'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -1291,7 +1291,7 @@ query {
 
 ### 巢狀內容片段的範例查詢 - 多個模型類型{#sample-wknd-nested-fragment-multiple-model}
 
-#### 單參考模型類型
+#### 單一參考的模型類型
 
 此查詢會質詢：
 
@@ -1300,7 +1300,7 @@ query {
 
 >[!NOTE]
 >
->欄位 `fragments` 具有資料類型 `fragment-reference`，與模型 `Article` 已選取。 查詢傳送 `fragments` 作為 `[Article]`.
+>`fragments` 欄位的資料類型為 `fragment-reference`，且已選取 `Article` 模型。查詢將 `fragments` 以 `[Article]` 陣列形式傳遞.
 
 ```graphql
 {
@@ -1324,7 +1324,7 @@ query {
 
 >[!NOTE]
 >
->`fragments` 欄位的資料類型為 `fragment-reference`，並選擇了模型 `Article`、`Adventure`。查詢傳送 `fragments` 作為 `[AllFragmentModels]`，會以聯合類型取消參照。
+>`fragments` 欄位的資料類型為 `fragment-reference`，且已選取 `Article`、`Adventure` 模型。查詢傳送 `fragments` 作為 `[AllFragmentModels]`，會以聯合類型取消參照。
 
 ```graphql
 {

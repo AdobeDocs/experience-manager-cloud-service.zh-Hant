@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
 workflow-type: tm+mt
 source-wordcount: '4066'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -420,11 +420,11 @@ ht-degree: 99%
       + [資料夾中繼資料結構](/help/assets/folder-metadata-schema.md)
       + [使用影像和視訊設定檔](/help/assets/dynamic-media/about-image-video-profiles.md)
       + [設定音訊和視訊資產的轉錄](/help/assets/configure-transcription.md)
-      + [轉換資產](/help/assets/translate-assets.md)
+      + [翻譯資產](/help/assets/translate-assets.md)
       + [搜尋 Facet](/help/assets/search-facets.md)
       + [Assets HTTP API](/help/assets/mac-api-assets.md)
       + [Assets HTTP API 中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)
-      + [連線資產](/help/assets/use-assets-across-connected-assets-instances.md)
+      + [連接的資產](/help/assets/use-assets-across-connected-assets-instances.md)
       + [產生「僅供刊登」轉譯](/help/assets/configure-fpo-renditions.md)
       + [資產報表](/help/assets/asset-reports.md)
       + [階層式中繼資料](/help/assets/cascading-metadata.md)
