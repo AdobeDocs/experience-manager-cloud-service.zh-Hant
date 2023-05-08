@@ -4,10 +4,10 @@ description: 了解Adobe Experience Manager(AEM)as a Cloud Service中的內容�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
+source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 3%
+source-wordcount: '2058'
+ht-degree: 4%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 3%
 >* [自訂和擴充內容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [轉譯專用內容片段設定元件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API 內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)
->* [AEM GraphQL API以搭配內容片段使用](/help/headless/graphql-api/content-fragments.md)
+>* [與內容片段搭配使用的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
 
 通信渠道的數量每年都在增加。 通常管道是指傳送機制，如下所示：
@@ -108,10 +108,6 @@ AEM內容片段可用來說明及管理結構化內容。 結構化內容定義�
 >[!NOTE]
 >
 >請參閱 [無頭式與AEM](/help/headless/introduction.md) 以了解AEM Sitesas a Cloud Service的無頭開發。
-
->[!NOTE]
->
->AEM也支援片段內容的翻譯。
 
 >[!NOTE]
 >
@@ -302,8 +298,8 @@ AEM內容片段可用來說明及管理結構化內容。 結構化內容定義�
 
 WKND項目包括：
 
-* 內容片段模型可用於：
+* 內容片段模型可在以下位置取用：
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
-* 下列位置提供內容片段（和其他內容）:
+* 內容片段 (和其他內容) 可在以下位置取用：
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
