@@ -3,9 +3,9 @@ title: 自訂網域名稱簡介
 description: Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '770'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -33,16 +33,16 @@ Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一�
 >
 >Cloud Manager 不是網域名稱註冊機構，不提供 DNS 服務。
 
-## 自訂網域名稱和BYO CDN {#byo-cdn}
+## 自訂網域名稱和 BYO CDN {#byo-cdn}
 
-AEM as a Cloud Service提供內建的內容傳遞網路(CDN)服務，也可讓您自攜(BYO)CDN與AEM搭配使用。 您可以在AEM管理的CDN或您管理的CDN中安裝自訂網域。
+AEM as a Cloud Service 提供內建的內容傳遞網路 (CDN) 服務，但也允許您自攜 (BYO) CDN 以搭配 AEM 使用。自訂網域可以安裝在 AEM 管理的 CDN 或您管理的 CDN 中。
 
-* 安裝在AEM管理的CDN中的自訂網域名稱（和憑證）是透過Cloud Manager管理。
-* 在您自己的CDN中安裝的自訂網域名稱（和憑證），會在該特定CDN中進行管理。
+* 安裝在 AEM 管理的 CDN 中的自訂網域名稱 (和憑證) 是透過 Cloud Manager 進行管理。
+* 安裝在您自己 CDN 中的自訂網域名稱 (和憑證) 是在特定 CDN 中進行管理。
 
-在您自己的CDN中管理的網域不需透過Cloud Manager安裝。 這些ID將可透過X-Forwarded-Host提供給AEM，且會符合Dispatcher中定義的主機。 [如需詳細資訊，請參閱CDN檔案。](/help/implementing/dispatcher/cdn.md)
+在您自己 CDN 中管理的網域不需要透過 Cloud Manager 安裝。它們將透過 X-Forwarded-Host 提供給 AEM，並將與 Dispatcher 中定義的虛擬主機相符。[如需詳細資訊，請參閱 CDN 文件。](/help/implementing/dispatcher/cdn.md)
 
-在一個環境中，您可以在AEM管理的CDN中安裝兩個網域，並在您自己的CDN中安裝這兩個網域。
+在一個環境中，您可以將兩個網域安裝在 AEM 管理的 CDN 中，和安裝在您自己的 CDN 中。
 
 ## 工作流程 {#workflow}
 
@@ -62,7 +62,7 @@ AEM as a Cloud Service提供內建的內容傳遞網路(CDN)服務，也可讓�
 
 >[!TIP]
 >
->使用 AEM as a Cloud service 設定自訂網域名稱通常是一個簡單的過程。 但是，有時可能會出現網域委派問題，這可能需要 1-2 個工作日才能解決。出於這個原因，強烈建議在上線日期之前安裝網域。請參閱文件：[檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)以了解詳細資訊。
+>使用 AEM as a Cloud service 設定自訂網域名稱通常是一個簡單的過程。但是，有時可能會出現網域委派問題，這可能需要 1-2 個工作日才能解決。出於這個原因，強烈建議在上線日期之前安裝網域。請參閱文件：[檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)以了解詳細資訊。
 
 ## 限制 {#limitations}
 
