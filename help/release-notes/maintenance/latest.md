@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '208'
+ht-degree: 65%
 
 ---
 
@@ -13,20 +13,29 @@ ht-degree: 100%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術發行說明。
 
-## 11835 版 {#release-11835}
+## 11873 版 {#release-11873}
 
-下面是 11835 維護版本的持續改善內容，該版本於 2023 年 4 月 19 日公開發布。此維護版本是針對先前 11382 維護版本的更新。
+以下概述於2023年5月3日公開發行的11873版維護持續改善項目。 此維護版本是針對先前 11835 維護版本的更新。
 
 此維護版本的功能啟用將為您提供完整的功能集。如需完整詳情，請參閱[最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
-### 已修正的問題 {#fixed-issues-11835}
+### 增強功能 {#enhancements}
 
-- SITES-12573 - 如果有一個變數未指定，在篩選條件中使用變數的 GraphQL 查詢將會失敗。如果您搭配 AEM as a Cloud Service 使用 GraphQL，請勿更新到這個版本。
-- SKYOPS-51970 - 識別出 buildImage 步驟所使用之 FACT 版本的迴歸，導致使用者對應不相符。
-- GRANITE-44542 - 已針對部分客戶回報問題，這些客戶沒有為內含在套件篩選器中的資料夾指定套件 nodetype (透過提供具有 jcr:primaryType 的 .content.xml 指定)。這會讓這些資料夾被視為 nt:folder，在多種情況下會產生問題。
-- SKYOPS-56928 - Apache HTTPD 回迴歸可能會導致 404 錯誤。如果您遇到這些問題，基於安全理由，建議回復到先前的版本並避免在該期間內執行任何管道。
+- SITES-1200 — 使用標籤型篩選增強搜尋API功能
+- GRANITE-42939 — 將淘汰註解和警告新增至oauth-server程式碼
 
-### 嵌入式技術 {#embedded-tech-11835}
+### 已知問題 {#known-issues-11873}
+
+無.
+
+### 已修正的問題 {#fixed-issues-11873}
+
+- SKYSI-19884/SKYOPS-53745 — 修正PublishPageRenderingErrorsHigh的問題
+- GRANITE-4388 — 修正Mongo上大量DAM資產寫入作業後，輸送量降低的問題
+- SITES-11922 — 修正未移除同步狀態的取消發佈預覽問題
+- ASSETS-21648 — 修正資產相關功能的權限問題
+
+### 嵌入式技術 {#embedded-tech-11873}
 
 | 科技 | 版本 | 連結 |
 |---|---|---|
