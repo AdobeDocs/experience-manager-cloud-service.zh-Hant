@@ -1,16 +1,16 @@
 ---
-title: 如何建立最適化表單？
+title: 如何建立最適化表單
 description: 了解如何使用 [!DNL Experience Manager Forms]. 適用性Forms是回應式HTML5表單，可簡化資訊收集和處理。 進一步了解如何根據表單資料模型和XML或JSON結構建立最適化表單。
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
+exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1495'
 ht-degree: 1%
 
 ---
-
 
 # 建立最適化表單（核心元件） {#creating-an-adaptive-form-core-components}
 

@@ -2,7 +2,7 @@
 title: 產生最適化Forms的記錄檔案
 description: 說明如何為適用性Forms的記錄檔案(DoR)產生範本。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
 source-wordcount: '3109'
 ht-degree: 1%

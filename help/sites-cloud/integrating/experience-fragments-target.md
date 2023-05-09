@@ -1,15 +1,15 @@
 ---
-title: 將體驗片段匯出至Adobe Target
-description: 將體驗片段匯出至Adobe Target
+title: 將體驗片段匯出到 Adobe Target
+description: 將體驗片段匯出到 Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
-source-wordcount: '2249'
-ht-degree: 0%
+source-wordcount: '2250'
+ht-degree: 1%
 
 ---
 
-# 將體驗片段匯出至Adobe Target{#exporting-experience-fragments-to-adobe-target}
+# 將體驗片段匯出到 Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 >[!CAUTION]
 >
@@ -197,7 +197,7 @@ ht-degree: 0%
 
       >[!NOTE]
       >
-      >目標庫檔案， [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html)，是新的Adobe Target實作程式庫，專為典型Web實作和單頁應用程式而設計。
+      >目標庫檔案， [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html)，是新的Adobe Target實作程式庫，專為典型Web實作和單頁應用程式而設計。
       >
       >mbox.js已遭取代，將在稍後階段移除。
       >

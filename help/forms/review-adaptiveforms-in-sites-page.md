@@ -5,7 +5,7 @@ description: 審核是一種機制，可讓審核者使用「指派任務」步�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 4%
@@ -29,8 +29,8 @@ ht-degree: 4%
 1. 點選 ![settings_icon](assets/settings_icon.png) 在動作列上。 此 **[!UICONTROL 分配任務]** 對話框開啟。
 1. 開啟 [!UICONTROL 表單與檔案] 標籤和開啟 [!UICONTROL 預先填入] 下拉式清單並指定：
 
-* 選擇輸入資料檔案，使用
-* 選擇輸入附件，使用
+   * 選擇輸入資料檔案，使用
+   * 選擇輸入附件，使用
 
    ![審核步驟](/help/forms/assets/assigntask-review1.gif)
 

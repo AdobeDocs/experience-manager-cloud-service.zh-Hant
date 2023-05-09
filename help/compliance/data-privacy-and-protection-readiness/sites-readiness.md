@@ -2,10 +2,10 @@
 title: 資料保護和資料隱私權法規 - Adobe Experience Manager as a Cloud Service Sites 整備
 description: 了解對各種資料保護和資料隱私權法規的 Adobe Experience Manager as a Cloud Service Sites 支援；包括歐盟一般資料保護規範 (GDPR)、加州消費者隱私法，以及在實施新的 AEM as a Cloud Service 專案時如何遵守。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: ht
-source-wordcount: '1032'
-ht-degree: 100%
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+workflow-type: tm+mt
+source-wordcount: '1031'
+ht-degree: 99%
 
 ---
 
@@ -81,7 +81,7 @@ AEM Sites 包括與 Analytics Foundation 的選擇性整合，後者使用 Adobe
 
 AEM Sites 包括與 Personalization Foundation by Target 的選擇性整合，後者使用 Adobe Target 隨選服務中的功能。
 
-有關管理與 Adobe Target 相關的資料主體請求的進一步資訊，請參閱 [Adobe Target - 隱私權和一般資料保護規範](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
+有關管理與 Adobe Target 相關的資料主體請求的進一步資訊，請參閱 [Adobe Target - 隱私權和一般資料保護規範](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
 
 ## ContextHub {#contexthub}
 
