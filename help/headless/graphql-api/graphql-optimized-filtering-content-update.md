@@ -3,9 +3,9 @@ title: 更新您的內容片段，以達到最佳化 GraphQL 篩選
 description: 了解如何更新您的內容片段，以便在 Adobe Experience Manager as a Cloud Service 中達到最佳化 GraphQL 篩選，並實現無周邊內容傳遞。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '925'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 80%
 
 ## 必備條件 {#prerequisites}
 
-此任務的先決條件：
+此任務的必備條件：
 
 1. 確保您至少擁有 2023.1.0 版本的 AEM as a Cloud Service。
 
-1. 確保執行任務的用戶具有必需的權限：
+1. 確保執行任務的使用者具有必要權限：
 
-   * 至少 `Deployment Manager` 需要Cloud Manager中的角色。
+   * 至少要有 Cloud Manager `Deployment Manager` 角色。
 
 ## 更新您的內容片段 {#updating-content-fragments}
 
@@ -155,7 +155,7 @@ ht-degree: 80%
          ...
          23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
-   使用Splunk啟用環境記錄存取權限的客戶，可使用下列範例查詢來監控升級程式。 有關啟用Splunk記錄的詳細資訊，請參閱 [調試生產和預備](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) 頁面。
+   使用 Splunk 啟用環境記錄存取權的客戶可以使用下面的範例查詢來監控升級程序。有關啟用 Splunk 記錄的詳細資訊，請參閱[偵錯生產和中繼](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage)頁面。
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
@@ -164,15 +164,15 @@ ht-degree: 80%
 
    其中：
 
-   * `environmentId`  — 客戶環境識別碼；例如， `e1234`
-   * `indexName`  — 客戶索引名稱，收集 `aemerror` 事件
+   * `environmentId`- 客戶環境識別碼；例如，`e1234`
+   * `indexName`- 客戶索引名稱，收集 `aemerror` 事件
 
-   輸出示例：
+   輸出範例：
 
    <table style="table-layout:auto">
      <thead>
        <tr>
-       <th>_次</th>
+       <th>_time</th>
        <th>aem_tier</th>
        <th>pod_name</th>
        <th>msg</th>
@@ -183,13 +183,13 @@ ht-degree: 80%
          <td>2023-04-21 06:00:35.723</td>
          <td>作者</td>
          <td>cm-p1234-e1234-aem-author-76d6dc4b79-8lsb5</td>
-         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-job-thread-pool)-1 — 內容片段升級作業佇列設定(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob已完成內容片段升級， in 391m, slingJobId:2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0，狀態：MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='升級到版本'1'成功。', errors=[], successCount=36756, failedCount=0, skippedCount=0}</td>
+         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 391m, slingJobId: 2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=36756, failedCount=0, skippedCount=0}</td>
        </tr>
        <tr>
          <td>2023-04-21 06:05:48.207</td>
          <td>golden-publish</td>
          <td>cm-p1234-e1234-aem-golden-publish-644487c9c5-lvkv2</td>
-         <td>[sling-threadpool-284b9a9a-8454-461e-9bdb-44866c6ddfb1-(apache-sling-job-thread-pool)-1 — 內容片段升級作業佇列設定(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob已完成211m中的內容片段升級，slingJobId:2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f33394ddfc_0，狀態：MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='升級到版本'1'成功。', errors=[], successCount=19557, failedCount=0, skippedCount=0}</td>
+         <td>[sling-threadpool-284b9a9a-8454-461e-9bdb-44866c6ddfb1-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 211m, slingJobId: 2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f33394ddfc_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=19557, failedCount=0, skippedCount=0}</td>
        </tr>
      </tbody>
    <table>
