@@ -2,9 +2,9 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1406'
 ht-degree: 22%
 
 ---
@@ -91,6 +91,10 @@ ht-degree: 22%
    將顯示以下對話框。 請注意，移轉集將在長時間閒置後過期。 在專案卡片和移轉工作表列顯示一段時間的警告後，移轉集將會過期，且其資料將不再可用。 檢閱 [遷移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+
+   >[!NOTE]
+   >
+   >名稱必須遵循AEM節點的相同慣例，因此不能包含下列任一字元：. / : [ ] | *
 
 1. 您現在應該會在清單檢視中看到您的移轉清單。 按一下三點符號(**...**)以開啟下拉式清單，然後按一下 **複製提取金鑰**. 在提取階段期間，您需要此金鑰。 複製此提取金鑰。
 

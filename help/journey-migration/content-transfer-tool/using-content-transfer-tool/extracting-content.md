@@ -2,10 +2,10 @@
 title: 自來源擷取內容
 description: 自來源擷取內容
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 29%
+source-wordcount: '701'
+ht-degree: 27%
 
 ---
 
@@ -49,13 +49,13 @@ ht-degree: 29%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   您也可以造訪「內容轉移」頁面，監控從Cloud Acceleration Manager提取階段的進度。
+   您也可以造訪「內容轉移」頁面，監控從Cloud Acceleration Manager提取階段的進度，並按一下 **...** 然後 **查看詳細資訊**.
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. 提取一旦完成，請檢閱其他欄，如 **來源** 和 **路徑** 以取得您填入的移轉集詳細資訊，請按一下 **...** 然後 **查看詳細資訊**.
+1. 提取一旦完成，請檢閱其他欄，如 **來源** 和 **路徑** 以取得您填入的移轉集詳細資訊，請按一下 **...** 然後 **查看詳細資訊** 以查看詳細資訊，包括提取每個步驟的持續時間。 在提取期間檢視此對話方塊，以查看步驟的進度。
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)
+   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
 
 ## 追加提取 {#top-up-extraction-process}

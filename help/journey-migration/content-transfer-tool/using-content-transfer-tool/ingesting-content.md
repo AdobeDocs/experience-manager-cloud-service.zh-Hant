@@ -2,9 +2,9 @@
 title: 將內容內嵌至目標
 description: 將內容內嵌至目標
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
+source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1753'
 ht-degree: 12%
 
 ---
@@ -59,7 +59,9 @@ ht-degree: 12%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. 擷取完成後，按一下畫面右上角的(i)按鈕，以取得擷取工作的詳細資訊。
+1. 按一下 **(i)** 按鈕，以取得擷取工作的詳細資訊。 您可以按一下，查看擷取執行或完成時的每個步驟持續時間 **...** 然後 **查看持續時間**. 還顯示來自提取的資訊以實現正在被攝取的內容。
+
+   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 
