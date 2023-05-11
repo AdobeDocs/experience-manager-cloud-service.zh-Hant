@@ -125,8 +125,7 @@ ht-degree: 100%
    >* CF_MIGRATION_LIMIT = 1000
    >* CF_MIGRATION_INTERNAL = 60 (秒)
    >* 完成遷移所需的大約時間 = 60 + (20,000/1000 * 60) = 1260 秒 = 21 分鐘
-      >  在開始時增加的額外「60」秒是由於開始作業時的初始延遲。
-
+   >  在開始時增加的額外「60」秒是由於開始作業時的初始延遲。
    >
    >您還應注意，這只是完成作業所需的&#x200B;*最短*&#x200B;時間，不包括 I/O 時間。實際花費的時間可能遠遠超過這個估計。
 
@@ -155,6 +154,7 @@ ht-degree: 100%
          ...
          23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
+
    使用 Splunk 啟用環境記錄存取權的客戶可以使用下面的範例查詢來監控升級程序。有關啟用 Splunk 記錄的詳細資訊，請參閱[偵錯生產和中繼](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage)頁面。
 
    ```splunk
