@@ -3,9 +3,9 @@ title: 設定RTF編輯器以在中製作內容 [!DNL Adobe Experience Manager] a
 description: 設定RTF編輯器以在中製作內容 [!DNL Adobe Experience Manager] as a Cloud Service。
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1876'
 ht-degree: 0%
 
 ---
@@ -95,20 +95,20 @@ RTE的基本功能會由 `features` 屬性。
 | 外掛程式ID | 功能 | 說明 |
 |--- |--- |--- |
 | 編輯 | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [剪下、複製和三種貼上模式](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [芬德雷普萊斯](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | `find`, `replace` | 查找和替換。 |
-| [格式](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`, `italic`, `underline` | [基本文字格式](configure-rich-text-editor-plug-ins.md#textstyles). |
-| [影像](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | 基本影像支援（從內容或內容尋找器拖曳）。 根據瀏覽器，支援對作者有不同的行為 |
-| [鍵](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | 若要定義此值，請參閱 [標籤大小](configure-rich-text-editor-plug-ins.md#tabsize). |
-| [證明](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | 段落對齊。 |
-| [連結](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [超連結和錨點](configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [清單](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | 此外掛程式可同時控制 [縮排和清單](configure-rich-text-editor-plug-ins.md#indentmargin);包括巢狀清單。 |
-| [miscools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | 其他工具可讓作者輸入 [特殊字元](configure-rich-text-editor-plug-ins.md#spchar) 或編輯HTML來源。 此外，您可以新增 [特殊字元範圍](configure-rich-text-editor-plug-ins.md#definerangechar) 如果您想定義自己的清單。 |
+| 芬德雷普萊斯 | `find`、`replace` | 查找和替換。 |
+| 格式 | `bold`, `italic`, `underline` | [基本文字格式](configure-rich-text-editor-plug-ins.md#textstyles). |
+| 影像 | `image` | 基本影像支援（從內容或內容尋找器拖曳）。 根據瀏覽器，支援對作者有不同的行為 |
+| 鍵 | - | 若要定義此值，請參閱 [標籤大小](configure-rich-text-editor-plug-ins.md#tabsize). |
+| 證明 | `justifyleft`, `justifycenter`, `justifyright` | 段落對齊。 |
+| 連結 | `modifylink`, `unlink`, `anchor` | [超連結和錨點](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| 清單 | `ordered`, `unordered`, `indent`, `outdent` | 此外掛程式可同時控制 [縮排和清單](configure-rich-text-editor-plug-ins.md#indentmargin);包括巢狀清單。 |
+| miscools | `specialchars`、`sourceedit` | 其他工具可讓作者輸入 [特殊字元](configure-rich-text-editor-plug-ins.md#spchar) 或編輯HTML來源。 此外，您可以新增 [特殊字元範圍](configure-rich-text-editor-plug-ins.md#definerangechar) 如果您想定義自己的清單。 |
 | Paraformat | `paraformat` | 預設段落格式為段落、標題1、標題2和標題3(`<p>`, `<h1>`, `<h2>`，和 `<h3>`)。 您可以 [添加更多段落格式](configure-rich-text-editor-plug-ins.md#paraformats) 或擴充清單。 |
 | 拼字檢查 | `checktext` | [語言感知拼寫檢查程式](configure-rich-text-editor-plug-ins.md#adddict). |
 | 樣式 | `styles` | 支援使用CSS類別的樣式。 [新增文字樣式](configure-rich-text-editor-plug-ins.md#textstyles) 如果您想要新增（或擴充）您自己的樣式範圍以搭配文字使用。 |
-| 上標 | `subscript`, `superscript` | 基本格式的擴充功能，新增子指令碼和超指令碼。 |
+| 上標 | `subscript`、`superscript` | 基本格式的擴充功能，新增子指令碼和超指令碼。 |
 | 表格 | `table`, `removetable`, `insertrow`, `removerow`, `insertcolumn`, `removecolumn`, `cellprops`, `mergecells`, `splitcell`, `selectrow`, `selectcolumns` | 請參閱 [配置表格樣式](configure-rich-text-editor-plug-ins.md#tablestyles) 為整個表格或個別儲存格新增您自己的樣式。 |
-| 復原 | `undo`, `redo` | 歷史記錄大小 [還原和重做](configure-rich-text-editor-plug-ins.md#undohistory) 操作。 |
+| 復原 | `undo`、`redo` | 歷史記錄大小 [還原和重做](configure-rich-text-editor-plug-ins.md#undohistory) 操作。 |
 
 >[!NOTE]
 >
