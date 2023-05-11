@@ -4,10 +4,10 @@ description: 設定雲端資源後，您需要使用 AEM 產品設定檔授與�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: fd0716a95d66908e215ed44bc773ed3c26e0382b
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 100%
+source-wordcount: '788'
+ht-degree: 97%
 
 ---
 
@@ -100,6 +100,8 @@ ht-degree: 100%
 * [AEM 使用者任務](aem-users.md) - 您將在其中學習如何存取可以開始建立內容的 AEM 環境。
 
 ## 其他資源 {#additional-resources}
+
+如果您想要超越入門歷程的內容，以下是其他選用資源。
 
 * [在 Admin Console 中管理產品和使用者存取權](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - 了解如何使用 Admin Console 來管理使用存取權。
 * [設定 AEM 存取權逐步說明](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=zh-Hant) - 查看這個簡短的逐步說明，了解如何在 Admin Console 中設定 Adobe IMS 使用者、使用者群組和產品設定檔。

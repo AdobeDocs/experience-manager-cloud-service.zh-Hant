@@ -4,10 +4,10 @@ description: 系統管理員設定必要的雲端資源後，了解 AEM 使用�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
-workflow-type: ht
-source-wordcount: '562'
-ht-degree: 100%
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 96%
 
 ---
 
@@ -80,6 +80,8 @@ ht-degree: 100%
 >現在您已上線，您可以了解如何以最少的 AEM 設定，[輕鬆將 AEM 參考示範附加元件](/help/journey-sites/demos-add-on/overview.md)新增到沙箱環境，並能夠使用根據最佳實務的豐富範例來測試 AEM 的強大功能。
 
 ## 其他資源 {#additional-resources}
+
+如果您想要超越入門歷程的內容，以下是其他選用資源。
 
 [創作頁面的快速入門指南](/help/sites-cloud/authoring/getting-started/quick-start.md) - 從此處開始，快速了解 AEM 中的創作基礎知識。
 [無頭創作之旅](/help/journey-headless/author/overview.md)- 如果您想創作無頭內容，請遵循此引導式介紹。

@@ -4,10 +4,10 @@ description: 他們的系統管理員設定了必要的雲端資源後，了解�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
-workflow-type: ht
-source-wordcount: '1400'
-ht-degree: 100%
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+workflow-type: tm+mt
+source-wordcount: '1419'
+ht-degree: 98%
 
 ---
 
@@ -143,6 +143,8 @@ ht-degree: 100%
 >現在您已入門，您可以了解如何以最少的 AEM 設定，[輕鬆將 AEM 參考示範附加元件](/help/journey-sites/demos-add-on/overview.md)新增到沙箱環境，並能夠使用根據最佳實務的豐富範例來測試 AEM 的強大功能。
 
 ## 其他資源 {#additional-resources}
+
+如果您想要超越入門歷程的內容，以下是其他選用資源。
 
 * [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - 了解如何使用 Cloud Manager 中的自助 Git 帳戶管理存取和管理您的 Git 存放庫。
 * [將 Git 與 Cloud Manager 搭配使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - 了解如何使用 Cloud Manager 的 Git 存放庫以及如何將您內部部署客戶管理的 Git 存放庫與 Cloud Manager 整合。

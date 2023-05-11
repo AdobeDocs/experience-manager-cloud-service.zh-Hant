@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 入門歷程簡介
 description: 從此處開始，逐步引導您了解 AEM as a Cloud Service 的入門流程。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 100%
+source-wordcount: '1228'
+ht-degree: 95%
 
 ---
 
@@ -95,3 +95,9 @@ ht-degree: 100%
 文件歷程根據最佳實務原則而設計，其中包含 Adobe 的最新研究、Adobe 顧問的成熟實作經驗以及客戶專案的意見回饋。
 
 如果您想了解 Adobe 建議讓團隊加入新 AEM as a Cloud Service 應用程式的方法，請從這裡開始！
+
+## 其他資源 {#additional-resources}
+
+如果您想要超越入門歷程的內容，以下是其他選用資源。
+
+* [AEM Champion秘訣與技巧 — Cloud Manager入門手冊](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md)  — 觀看此影片，了解Cloud Manager向AEM冠軍提供入門秘訣和訣竅。

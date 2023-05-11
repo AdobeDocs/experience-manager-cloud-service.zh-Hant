@@ -3,10 +3,10 @@ title: 建立計畫
 description: 了解如何使用 Cloud Manager 來建立您的第一個計畫。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 971ef47b66da6d7e032f6109afb4830d49c00071
-workflow-type: ht
-source-wordcount: '626'
-ht-degree: 100%
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+workflow-type: tm+mt
+source-wordcount: '638'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Cloud Manager 計畫代表一組 Cloud Manager 環境。這些計畫支援業務
 
 ## 其他資源 {#additional-resources}
 
-按照其他資源了解：
+如果您想要超越入門歷程的內容，以下是其他選用資源。
 
 * [程序和程序類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - 了解 Cloud Manager 的階層以及不同類型的程序如何適應其結構以及它們之間的差異。
 * [建立沙箱程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - 了解如何使用 Cloud Manager 建立您自己的沙箱程序，用於培訓、演示、POC 或其他非生產目的。

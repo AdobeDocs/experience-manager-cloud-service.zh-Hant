@@ -3,10 +3,10 @@ title: 存取 Cloud Manager
 description: 了解如何存取 Cloud Manager，以便您可以設定專案資源。
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
-workflow-type: ht
-source-wordcount: '1055'
-ht-degree: 100%
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
+workflow-type: tm+mt
+source-wordcount: '1097'
+ht-degree: 95%
 
 ---
 
@@ -130,7 +130,8 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的
 
 ## 其他資源 {#additional-resources}
 
-按照其他資源了解：
+如果您想要超越入門歷程的內容，以下是其他選用資源。
 
 * [Cloud Manager 簡介](/help/onboarding/cloud-manager-introduction.md) - 了解 Cloud Manager、Cloud Manager 程序和環境。
 * [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md) - 了解 AEM as a Cloud Service 團隊和產品設定檔如何能夠授與和限制您的授權 Adobe 解決方案的存取權。
+* [AEM Champion秘訣與技巧 — Cloud Manager UI](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/cloud-manager-ui.md)  — 觀看此影片，了解AEM冠軍提供的Cloud Manager UI概觀。
