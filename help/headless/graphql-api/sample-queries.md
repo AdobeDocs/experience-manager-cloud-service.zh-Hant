@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
 workflow-type: tm+mt
 source-wordcount: '1596'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -1296,7 +1296,7 @@ query {
 此查詢會質詢：
 
 * 多個類型為 `bookmark` 的內容片段
-   * 具有特定模型類型的其他片段的片段參考 `Article`
+   * 具有片段參考，其會參考特定模型類型 `Article` 的其他片段。
 
 >[!NOTE]
 >
@@ -1315,7 +1315,7 @@ query {
 }
 ```
 
-#### 多個引用模型類型
+#### 多個參考的模型類型
 
 此查詢會質詢：
 
@@ -1324,7 +1324,7 @@ query {
 
 >[!NOTE]
 >
->`fragments` 欄位的資料類型為 `fragment-reference`，且已選取 `Article`、`Adventure` 模型。查詢傳送 `fragments` 作為 `[AllFragmentModels]`，會以聯合類型取消參照。
+>`fragments` 欄位的資料類型為 `fragment-reference`，且已選取 `Article`、`Adventure` 模型。查詢將 `fragments` 以 `[AllFragmentModels]` 陣列形式傳遞，其使用聯合類型取消參考。
 
 ```graphql
 {
