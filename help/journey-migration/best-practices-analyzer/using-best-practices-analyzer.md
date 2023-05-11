@@ -2,7 +2,7 @@
 title: 使用最佳做法分析工具
 description: 使用最佳做法分析工具
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
+source-git-commit: df1fdbe0f3590708e1da44864b6e08075a521b51
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 49%
@@ -28,7 +28,7 @@ ht-degree: 49%
 * 6.1版及更新版本的AEM例項支援BPA。
 
    >[!NOTE]
-   > 請參閱 [在AEM 6.1上安裝](#installing-on-aem61) 在AEM 6.1上安裝BPA的特殊要求。
+   >請參閱 [在AEM 6.1上安裝](#installing-on-aem61) 在AEM 6.1上安裝BPA的特殊要求。
 
 * BPA可在任何環境中運行，但最好在 *階段* 環境。
 
@@ -100,14 +100,14 @@ ht-degree: 49%
    ![影像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-   > 只有當BPA偵測到ACS公域的使用時，左側邊欄圖示才會出現。
+   >只有當BPA偵測到ACS公域的使用時，左側邊欄圖示才會出現。
 
 1. 取消選中該框，以過濾與ACS公域相關的所有結果。 您應會看到 **篩選的結果計數** 如下圖所示。 以逗號分隔值(CSV)格式匯出時，篩選器也會套用至報表。
 
    ![影像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   > 不應忽視ACS公域的調查結果。 請參閱 [檔案](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以判斷與AEMas a Cloud Service的相容性。
+   >不應忽視ACS公域的調查結果。 請參閱 [檔案](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以判斷與AEMas a Cloud Service的相容性。
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
