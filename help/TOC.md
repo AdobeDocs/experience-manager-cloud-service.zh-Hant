@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
+source-git-commit: 6e451739a2d2f9cd045824658fe0f3c5bd1d245b
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4068'
 ht-degree: 100%
 
 ---
@@ -888,6 +888,7 @@ ht-degree: 100%
    + 開發人員工具 {#developer-tools}
       + [開發人員模式](/help/implementing/developing/tools/developer-mode.md)
       + [Eclipse 適用的 AEM 開發人員工具](/help/implementing/developing/tools/eclipse.md)
+      + [內容複製](/help/implementing/developing/tools/content-copy.md)
       + [內容套件 Maven 外掛程式](/help/implementing/developing/tools/maven-plugin.md)
       + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
       + [使用 CRXDE Lite](/help/implementing/developing/tools/crxde.md)
