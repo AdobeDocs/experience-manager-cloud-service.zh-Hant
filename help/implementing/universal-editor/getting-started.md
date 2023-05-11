@@ -1,13 +1,13 @@
 ---
 title: AEM 中 Universal Editor 快速入門
 description: 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
-source-git-commit: 031117db4154dc605ae8b0c95f87b829bb5cacd8
-workflow-type: ht
+exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
+source-git-commit: a933073346e6b7c3b4256269f5796a64a6dfbfa8
+workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 100%
 
 ---
-
 
 # AEM 中 Universal Editor 快速入門 {#getting-started}
 
@@ -109,7 +109,7 @@ Universal Editor 服務需要[統一資源名稱 (URN)](https://en.wikipedia.org
 應用程式中使用的連線會儲存為`<meta>`頁面中的標記`<head>`。
 
 ```html
-<meta name="urn:auecon:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>` - 這是簡短名稱，可在文件中重複使用以標識連線。例如 `aemconnection`
