@@ -2,10 +2,10 @@
 title: UI 測試
 description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
-workflow-type: ht
-source-wordcount: '2238'
-ht-degree: 100%
+source-git-commit: bf3b7286bbf77f5a45884d4d3a40c020fe42411f
+workflow-type: tm+mt
+source-wordcount: '2305'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,9 @@ ht-degree: 100%
 
 AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)整合套件，以確保自訂應用程序順利更新。尤其是 IT 測試門已經支援使用 AEM API 建立和自動化自訂測試。
 
-UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。此外，可以透過使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)輕鬆產生 UI 測試專案。
+UI測試會封裝在Docker影像中，以便在語言和架構（例如Cypress.IO、Selenium、Java和Maven以及Javascript）中有廣泛的選擇。 此外，可以透過使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)輕鬆產生 UI 測試專案。
+
+Adobe鼓勵使用Cypress.IO，因為它提供即時重裝和自動等待功能，有助於節省時間並提高測試期間的生產力。 Cypress.IO還提供簡單而直觀的語法，使學習和使用更為方便，即使是剛接觸過測試的人也是如此。
 
 UI 測試作為每個 Cloud Manager 管道的特定品質閘道的一部分執行，在[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)或選擇性[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)中具有&#x200B;[**自訂 UI 測試**&#x200B;步驟](/help/implementing/cloud-manager/deploy-code.md)。包括回歸和新功能在內的任何 UI 測試都可以檢測和報告錯誤。
 
@@ -203,20 +205,20 @@ UI 測試作為每個 Cloud Manager 管道的特定品質閘道的一部分執�
 
 ### 環境變數 {#environment-variables}
 
-以下環境變量將在執行時傳遞給您的 Docker 影像。
+根據您的架構，下列環境變數將在執行時傳遞至您的Docker影像。
 
-| 變數 | 範例 | 說明 |
-|---|---|---|
-| `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 伺服器的 URL |
-| `SELENIUM_BROWSER` | `chrome` | Selenium 伺服器使用的瀏覽器實作 |
-| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 編寫執行個體的 URL |
-| `AEM_AUTHOR_USERNAME` | `admin` | 用於登入 AEM 編寫執行個體的使用者名稱 |
-| `AEM_AUTHOR_PASSWORD` | `admin` | 用於登入 AEM 編寫執行個體的密碼 |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 發佈執行個體的 URL |
-| `AEM_PUBLISH_USERNAME` | `admin` | 用於登入 AEM 發佈執行個體的使用者名稱 |
-| `AEM_PUBLISH_PASSWORD` | `admin` | 用於登入 AEM 發佈執行個體的密碼 |
-| `REPORTS_PATH` | `/usr/src/app/reports` | 測試結果 XML 報告必須儲存的路徑 |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | 必須將文件上傳到的 URL 使 Selenium 可以存取 |
+| 變數 | 範例 | 說明 | 測試架構 |
+|---|---|---|---|
+| `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 伺服器的 URL | 僅硒 |
+| `SELENIUM_BROWSER` | `chrome` | Selenium 伺服器使用的瀏覽器實作 | 僅硒 |
+| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 編寫執行個體的 URL | 全部 |
+| `AEM_AUTHOR_USERNAME` | `admin` | 用於登入 AEM 編寫執行個體的使用者名稱 | 全部 |
+| `AEM_AUTHOR_PASSWORD` | `admin` | 用於登入 AEM 編寫執行個體的密碼 | 全部 |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 發佈執行個體的 URL | 全部 |
+| `AEM_PUBLISH_USERNAME` | `admin` | 用於登入 AEM 發佈執行個體的使用者名稱 | 全部 |
+| `AEM_PUBLISH_PASSWORD` | `admin` | 用於登入 AEM 發佈執行個體的密碼 | 全部 |
+| `REPORTS_PATH` | `/usr/src/app/reports` | 測試結果 XML 報告必須儲存的路徑 | 全部 |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | 必須上傳檔案的URL，才能讓測試架構存取這些檔案 | 全部 |
 
 Adobe 測試範例提供了幫助函數來存取設定參數：
 
@@ -224,6 +226,10 @@ Adobe 測試範例提供了幫助函數來存取設定參數：
 * Java：參閱 [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 類
 
 ### 等待 Selenium 準備就緒 {#waiting-for-selenium}
+
+>[!NOTE]
+>
+>此部分僅在Selenium是選定的測試基礎架構時適用。
 
 在測試開始之前，Docker 影像負責確保 Selenium 伺服器啟動並執行。等待 Selenium 服務有兩個步驟。
 
@@ -309,14 +315,12 @@ Adobe 提供的測試範例依預設為任何失敗的測試建立螢幕擷圖�
 
    ```shell
    mvn verify -Pui-tests-local-execution \
-   -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
-   -DAEM_AUTHOR_USERNAME=<user> \
-   -DAEM_AUTHOR_PASSWORD=<password> \
-   -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
-   -DAEM_PUBLISH_USERNAME=<user> \
-   -DAEM_PUBLISH_PASSWORD=<password> \
-   -DHEADLESS_BROWSER=true \
-   -DSELENIUM_BROWSER=chrome
+    -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_AUTHOR_USERNAME=<user> \
+    -DAEM_AUTHOR_PASSWORD=<password> \
+    -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_PUBLISH_USERNAME=<user> \
+    -DAEM_PUBLISH_PASSWORD=<password> \
    ```
 
 >[!NOTE]
