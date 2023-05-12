@@ -2,10 +2,10 @@
 title: 編輯計畫
 description: 了解如何編輯您的生產和沙箱計畫，以在建立計畫後調整其選項。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 3e2635ff34f66c9f7504799204091ef921ccd860
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 100%
+source-wordcount: '525'
+ht-degree: 98%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 100%
    ![編輯上線設定](assets/edit-program-go-live.png)
 
    * 此日期僅供參考，並會觸發計畫總覽頁面上的上線小工具，即時提供產品內連結至 AEM as a Cloud Service 最佳實務文件，以符合您的歷程，最終達成成功且順暢的上線體驗。
+   * 此索引標籤不適用於沙箱方案。
 
 1. 按一下&#x200B;**更新**&#x200B;以儲存對計畫的變更。
 

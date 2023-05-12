@@ -2,10 +2,10 @@
 title: 建立沙箱計畫
 description: 了解如何使用 Cloud Manager 建立您自己的沙箱計劃，用於訓練、展示、POC 或其他非生產目的。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 100%
+source-wordcount: '464'
+ht-degree: 67%
 
 ---
 
@@ -21,19 +21,33 @@ ht-degree: 100%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 從 Cloud Manager 的登入頁面單擊&#x200B;**新增程序**&#x200B;在畫面的右上角。
+1. 從 Cloud Manager 的登陸頁面，按一下畫面的右上角的&#x200B;**新增計畫**。
 
-   ![Cloud Manager 登陸頁面](assets/first_timelogin1.png)
+   ![Cloud Manager 登陸頁面](assets/cloud-manager-my-programs.png)
 
-1. 從建立程序嚮導中，選擇&#x200B;**設定沙箱**，提供程序名稱，然後單擊&#x200B;**創造**.
+1. 在建立程式嚮導中，選擇 **設定沙箱** 並提供方案名稱。
 
    ![程序類型建立](assets/create-sandbox.png)
 
+1. （可選）通過將影像檔案拖放到 **添加程式影像** target或按一下它，從檔案瀏覽器中選取影像。 點選或按一下&#x200B;**繼續**。
+
+   * 該影像僅作為程式概述窗口中的表徵圖，有助於識別程式。
+
+1. 在 **設定沙箱** 對話方塊，勾選 **解決方案和附加元件** 表格。
+
+   * 使用解決方案名稱旁的雪佛蘭，顯示解決方案的附加可選附加元件。
+
+   * 此 **網站** 和 **資產** 解決方案一律包含在沙箱方案中，且無法取消選取。
+
+   ![為沙箱選取解決方案和附加元件](assets/sandbox-solutions-add-ons.png)
+
+1. 在您選取沙箱方案的解決方案和附加元件後，點選「 」 **建立**.
+
 隨著設定過程的進行，您將在登入頁面上看到一個帶有狀態指示器的新沙箱程序卡。
 
-![從概覽頁面建立沙箱](assets/program-create-setupdemo2.png)
+![從概覽頁面建立沙箱](assets/sandbox-setup.png)
 
-## 存取您的沙箱 {#access}
+## 沙箱存取 {#access}
 
 您可以透過查看計劃概覽頁面查看沙箱設定的詳細資訊以及存取環境 (一旦可用)。
 

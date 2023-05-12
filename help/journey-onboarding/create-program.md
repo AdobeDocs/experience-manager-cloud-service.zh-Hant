@@ -3,10 +3,10 @@ title: 建立計畫
 description: 了解如何使用 Cloud Manager 來建立您的第一個計畫。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 97%
+source-wordcount: '686'
+ht-degree: 87%
 
 ---
 
@@ -51,11 +51,15 @@ Cloud Manager 計畫代表一組 Cloud Manager 環境。這些計畫支援業務
 
 1. 從 Cloud Manager 的登陸頁面，按一下畫面的右上角的&#x200B;**新增計畫**。
 
-   ![Cloud Manager 登陸頁面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+   ![Cloud Manager 登陸頁面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. 從建立計畫精靈中，選擇&#x200B;**設定沙箱**，提供計畫名稱，然後按一下&#x200B;**建立**。
+1. 在建立程式嚮導中，選擇 **設定沙箱** 並提供程式名稱，點選或按一下 **繼續**.
 
    ![程序類型建立](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
+
+1. 在 **設定沙箱** 對話方塊中，您可以選擇要在沙箱方案中啟用的解決方案。 此 **網站** 和 **資產** 解決方案一律會包含在沙箱方案中，且會自動選取。 這就足以供我們上線範例使用。 按一下&#x200B;**建立**。
+
+   ![解決方案選擇](assets/set-up-sandbox-onboarding.png)
 
 隨著設定過程的進行，您將在登入頁面上看到一個帶有狀態指示器的新沙箱程序卡。
 

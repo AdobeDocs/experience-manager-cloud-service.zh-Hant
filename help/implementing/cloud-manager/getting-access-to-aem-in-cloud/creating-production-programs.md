@@ -2,10 +2,10 @@
 title: 建立生產計劃
 description: 了解如何使用 Cloud Manager 建立您自己的生產計畫來主持即時流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: bfa1b56e5c066557c1b369b5f13335080a965055
-workflow-type: ht
-source-wordcount: '541'
-ht-degree: 100%
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
+workflow-type: tm+mt
+source-wordcount: '582'
+ht-degree: 82%
 
 ---
 
@@ -15,14 +15,6 @@ ht-degree: 100%
 生產計劃適用於熟悉 AEM 和 Cloud Manager 並準備開始編寫、建構和測試計劃碼以將其部署為託管即時流量的使用者。
 
 在文件中了解有關計畫類型的更多資訊[了解計畫和計畫類型。](program-types.md)
-
-## 教學影片 {#video-tutorials}
-
-您可以觀看這兩個教程影片，了解如何在 Cloud Manager 中建立計劃或[遵循我們的書面說明。](#create)
-
->[!VIDEO](https://video.tv.adobe.com/v/334953)
-
->[!VIDEO](https://video.tv.adobe.com/v/334954)
 
 ## 建立生產計劃 {#create}
 
@@ -34,13 +26,11 @@ ht-degree: 100%
 
    ![Cloud Manager 登陸頁面](assets/log-in.png)
 
-1. 在建立計畫精靈中選取&#x200B;**為生產設定**&#x200B;來建立生產計畫。
-
-   1. 您可以接受預設計畫名稱或加以編輯。
-   1. 您可以選擇拖放縮圖影像來識別您的計畫。
-   1. 點選或按一下&#x200B;**繼續**。
+1. 選擇 **為生產環境設定** 在「建立程式」嚮導中建立生產程式並提供程式名。
 
    ![建立計畫精靈](assets/create-production-program.png)
+
+1. （可選）通過將影像檔案拖放到 **添加程式影像** target或按一下它，從檔案瀏覽器中選取影像。 點選或按一下&#x200B;**繼續**。
 
 1. 如果您擁有增強式安全性權限，**增強式安全性**&#x200B;索引標籤將為您的生產計畫提供&#x200B;**啟用增強式安全性**&#x200B;的選項。如有需要，請選取啟用增強式安全性的選項，然後點選或按一下&#x200B;**繼續**。
 
@@ -51,6 +41,7 @@ ht-degree: 100%
 
 1. 在&#x200B;**解決方案和附加元件**&#x200B;索引標籤上，選取要納入計畫中的解決方案。
 
+   * 如果您不確定您是否需要一個或多個程式來處理您可用的各種解決方案，請選取您最感興趣的方案。 您可以透過 [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 稍後。 請參閱 [生產計畫文檔簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 有關更多方案設定建議。
    * 如果您之前選取了&#x200B;**啟用增強式安全性**，您將只能選取可使用 HIPAA 權限的解決方案。
 
    ![選取解決方案](assets/setup-prod-select.png)
