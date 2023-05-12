@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
+source-git-commit: 3823b9369c612058998e265346b3f727001aef4b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 65%
+source-wordcount: '238'
+ht-degree: 56%
 
 ---
 
@@ -26,7 +26,10 @@ ht-degree: 65%
 
 ### 已知問題 {#known-issues-11873}
 
-無.
+- SITES-13253 — 核心元件v2.22.6中的RecursionTooDeepException
+- SITES-13256 — 使用特殊URL設定的核心WCM預告會中斷頁面呈現
+- GRANITE-45462 — 傳訊用戶端多地區設定
+- GRANITE-45562 — 影像組合傳回200而非404的問題
 
 ### 已修正的問題 {#fixed-issues-11873}
 
