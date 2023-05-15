@@ -4,10 +4,10 @@ description: 使用範例 React 應用程式，了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
-workflow-type: ht
-source-wordcount: '1028'
-ht-degree: 100%
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="啟動內容片段編輯器"
->abstract="您的 AEM Headless 試用版與範例 React 應用程式整合在一起，因此大家無需開發時間即可獨立管理內容，這一切就是如此簡單。<br><br>點選下方，在新標籤中啟動此單元，然後按照本指南進行操作。"
+>abstract="現在，讓我們來探索無頭式內容製作的運作方式。 您的 AEM Headless 試用版與範例 React 應用程式整合在一起，因此大家無需開發時間即可獨立管理內容，這一切就是如此簡單。<br><br>點選下方，在新標籤中啟動此單元，然後按照本指南進行操作。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
