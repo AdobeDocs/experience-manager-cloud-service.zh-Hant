@@ -1,13 +1,13 @@
 ---
 title: 快速開發環境
 description: 了解如何善用快速開發環境，在雲端環境上快速反覆開發。
-source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
+exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
+source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
 workflow-type: tm+mt
-source-wordcount: '3304'
+source-wordcount: '3325'
 ht-degree: 5%
 
 ---
-
 
 # 快速開發環境 {#rapid-development-environments}
 
@@ -451,6 +451,8 @@ RDE與其他環境不同，其內容可安裝在/apps底下的install.rde資料�
 
 1. 將範例內容放置並提交至git中/apps底下的install.rde資料夾，然後使用命令列工具將整體內容套件同步至RDE。
 
+1. 使用 [內容複製工具](/help/implementing/developing/tools/content-copy.md) 從prod、stage或dev環境或從其他RDE復制定義的內容集。
+
 1. 使用套件管理器
 
 請注意，同步內容套件時，限制為1GB。
@@ -499,4 +501,3 @@ Forms開發人員可使用AEM FormsCloud Service快速開發環境來快速開�
 ## RDE教學課程
 
 若要了解AEMas a Cloud Service中的RDE，請參閱 [示範如何設定、如何使用及開發生命週期的影片教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
-
