@@ -2,9 +2,9 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
+source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2363'
 ht-degree: 7%
 
 ---
@@ -345,11 +345,3 @@ ht-degree: 7%
       * 當您選取 **完成**.
       * 當欄位為多值時（例如「標籤」），您可以附加新值或移除通用值。
    * 在不同頁面上共有但值不同的欄位，將會以特殊值（例如文字）指出 `<Mixed Entries>`.
-
->[!NOTE]
->
->頁面元件可設定為指定可用於大量編輯的欄位。 請參閱設定頁面以大量編輯頁面屬性。
-
-<!--
->The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
--->
