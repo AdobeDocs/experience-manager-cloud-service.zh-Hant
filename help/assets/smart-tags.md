@@ -5,15 +5,20 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 9abafe051672de65f042332314445b239f95852b
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '2423'
-ht-degree: 5%
+source-wordcount: '2445'
+ht-degree: 6%
 
 ---
 
 
 # 新增智慧標籤至資產並改善搜尋體驗 {#smart-tag-assets-for-faster-search}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=en) |
+| AEM as a Cloud Service  | 本文 |
 
 處理數位資產的組織，在資產中繼資料中越來越多地使用分類法控制的辭匯。 基本上，它包含員工、合作夥伴和客戶通常用來參考和搜尋其數位資產的關鍵字清單。 使用分類控制的辭匯來標籤資產，以確保在搜尋中輕鬆識別及擷取資產。
 
@@ -257,11 +262,11 @@ ht-degree: 5%
 
 * [翻譯資產](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [Assets支援的檔案格式](file-format-support.md)
+* [資產支援的檔案格式](file-format-support.md)
 * [搜尋資產](search-assets.md)
-* [連線資產](use-assets-across-connected-assets-instances.md)
+* [連接的資產](use-assets-across-connected-assets-instances.md)
 * [資產報表](asset-reports.md)
-* [中繼資料結構](metadata-schemas.md)
+* [中繼資料結構描述](metadata-schemas.md)
 * [下載資產](download-assets-from-aem.md)
 * [管理中繼資料](manage-metadata.md)
 * [搜尋 Facet](search-facets.md)

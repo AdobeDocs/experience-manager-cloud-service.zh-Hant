@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 6%
+source-wordcount: '940'
+ht-degree: 8%
 
 ---
 
 # 資產報表 {#asset-reports}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
+| AEM as a Cloud Service  | 本文 |
 
 資產報表可讓您評估 [!DNL Adobe Experience Manager Assets] 部署。 使用 [!DNL Assets]，您可以為數位資產產生各種報表。 這些報表提供有關您系統使用情形、使用者與資產互動方式，以及哪些資產的實用資訊 <!-- downloaded and --> 共用。
 
@@ -190,10 +195,10 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
 
 * [翻譯資產](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [Assets支援的檔案格式](file-format-support.md)
+* [資產支援的檔案格式](file-format-support.md)
 * [搜尋資產](search-assets.md)
-* [連線資產](use-assets-across-connected-assets-instances.md)
-* [中繼資料結構](metadata-schemas.md)
+* [連接的資產](use-assets-across-connected-assets-instances.md)
+* [中繼資料結構描述](metadata-schemas.md)
 * [下載資產](download-assets-from-aem.md)
 * [管理中繼資料](manage-metadata.md)
 * [搜尋 Facet](search-facets.md)

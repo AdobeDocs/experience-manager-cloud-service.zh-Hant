@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 3%
+source-wordcount: '1344'
+ht-degree: 5%
 
 ---
 
 # 共用和分發 [!DNL Experience Manager] {#share-assets-from-aem}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
+| AEM as a Cloud Service  | 本文 |
 
 [!DNL Adobe Experience Manager Assets] 可讓您與組織成員及外部實體（包括合作夥伴和廠商）共用資產、資料夾和集合。 使用下列方法來共用來自 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]:
 
@@ -261,11 +266,11 @@ Adobe資產連結可簡化創意人員與行銷人員在內容建立程式中的
 
 * [翻譯資產](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [Assets支援的檔案格式](file-format-support.md)
+* [資產支援的檔案格式](file-format-support.md)
 * [搜尋資產](search-assets.md)
-* [連線資產](use-assets-across-connected-assets-instances.md)
+* [連接的資產](use-assets-across-connected-assets-instances.md)
 * [資產報表](asset-reports.md)
-* [中繼資料結構](metadata-schemas.md)
+* [中繼資料結構描述](metadata-schemas.md)
 * [下載資產](download-assets-from-aem.md)
 * [管理中繼資料](manage-metadata.md)
 * [搜尋 Facet](search-facets.md)

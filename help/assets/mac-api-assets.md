@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 2%
+source-wordcount: '1564'
+ht-degree: 3%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
+| AEM as a Cloud Service  | 本文 |
 
 ## 概觀 {#overview}
 
@@ -275,11 +280,11 @@ API呼叫會以 `500` 回應代碼（如果提供路徑的父節點不存在）�
 **另請參閱**
 
 * [翻譯資產](translate-assets.md)
-* [Assets支援的檔案格式](file-format-support.md)
+* [資產支援的檔案格式](file-format-support.md)
 * [搜尋資產](search-assets.md)
-* [連線資產](use-assets-across-connected-assets-instances.md)
+* [連接的資產](use-assets-across-connected-assets-instances.md)
 * [資產報表](asset-reports.md)
-* [中繼資料結構](metadata-schemas.md)
+* [中繼資料結構描述](metadata-schemas.md)
 * [下載資產](download-assets-from-aem.md)
 * [管理中繼資料](manage-metadata.md)
 * [搜尋 Facet](search-facets.md)

@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 3%
+source-wordcount: '1367'
+ht-degree: 5%
 
 ---
 
 # Digital Rights Management數位資產 {#digital-rights-management-in-assets}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
+| AEM as a Cloud Service  | 本文 |
 
 數位資產通常與指定使用條款和持續時間的授權相關聯。 使用 [!DNL Experience Manager] 平台，您就可以有效管理資產到期資訊和授權資訊。
 
@@ -154,11 +159,11 @@ DRM功能會強制您接受授權合約，之後您才能從下載授權資產 [
 
 * [翻譯資產](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [Assets支援的檔案格式](file-format-support.md)
+* [資產支援的檔案格式](file-format-support.md)
 * [搜尋資產](search-assets.md)
-* [連線資產](use-assets-across-connected-assets-instances.md)
+* [連接的資產](use-assets-across-connected-assets-instances.md)
 * [資產報表](asset-reports.md)
-* [中繼資料結構](metadata-schemas.md)
+* [中繼資料結構描述](metadata-schemas.md)
 * [下載資產](download-assets-from-aem.md)
 * [管理中繼資料](manage-metadata.md)
 * [搜尋 Facet](search-facets.md)

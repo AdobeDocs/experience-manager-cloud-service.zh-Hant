@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 3%
+source-wordcount: '931'
+ht-degree: 5%
 
 ---
 
 # 組織您的數位資產 {#organize-digital-assets}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
+| AEM as a Cloud Service  | 本文 |
 
 擷取Microsoft® Office和PDF檔案的所有數位資產、中繼資料和內容，並供搜尋。 搜尋可針對資產進行精密的篩選，並完全尊重正確的權限。 數位資產管理的中繼資料將詳細說明中繼資料。
 
@@ -114,11 +119,11 @@ Date24/08/2021
 
 * [翻譯資產](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [Assets支援的檔案格式](file-format-support.md)
+* [資產支援的檔案格式](file-format-support.md)
 * [搜尋資產](search-assets.md)
-* [連線資產](use-assets-across-connected-assets-instances.md)
+* [連接的資產](use-assets-across-connected-assets-instances.md)
 * [資產報表](asset-reports.md)
-* [中繼資料結構](metadata-schemas.md)
+* [中繼資料結構描述](metadata-schemas.md)
 * [下載資產](download-assets-from-aem.md)
 * [管理中繼資料](manage-metadata.md)
 * [搜尋 Facet](search-facets.md)

@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 3%
+source-wordcount: '507'
+ht-degree: 7%
 
 ---
 
 # 僅針對Adobe InDesign產生版位轉譯 {#fpo-renditions}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/configure-fpo-renditions.html?lang=en) |
+| AEM as a Cloud Service  | 本文 |
 
 將大型資產從Experience Manager放入Adobe InDesign檔案時，創意專業人員必須等待一段長時間 [放置資產](https://helpx.adobe.com/indesign/using/placing-graphics.html). 同時，用戶被阻止使用InDesign。 這會中斷創意流程，並對使用者體驗造成負面影響。 Adobe可以暫時將小型格式副本放在InDesign文檔中以開頭。 如果需要最終輸出，例如針對列印和發佈工作流程，原始的全解析度資產會取代背景的暫時轉譯。 背景中的非同步更新可加快設計流程以提高生產力，並且不會阻礙創作流程。
 
@@ -61,11 +66,11 @@ Experience Manageras a Cloud Service提供雲端原生資產處理功能，以�
 
 * [翻譯資產](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [Assets支援的檔案格式](file-format-support.md)
+* [資產支援的檔案格式](file-format-support.md)
 * [搜尋資產](search-assets.md)
-* [連線資產](use-assets-across-connected-assets-instances.md)
+* [連接的資產](use-assets-across-connected-assets-instances.md)
 * [資產報表](asset-reports.md)
-* [中繼資料結構](metadata-schemas.md)
+* [中繼資料結構描述](metadata-schemas.md)
 * [下載資產](download-assets-from-aem.md)
 * [管理中繼資料](manage-metadata.md)
 * [搜尋 Facet](search-facets.md)

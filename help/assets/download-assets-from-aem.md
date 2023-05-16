@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 3%
+source-wordcount: '1239'
+ht-degree: 5%
 
 ---
 
 # 從下載資產 [!DNL Adobe Experience Manager] {#download-assets-from-aem}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
+| AEM as a Cloud Service  | 本文 |
 
 您可以下載資產，包括靜態和動態轉譯。 或者，您也可以直接從傳送包含資產連結的電子郵件 [!DNL Adobe Experience Manager Assets]. 下載的資產會以ZIP檔案整合。 <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
@@ -135,11 +140,11 @@ Experience Manager會根據資產數量和大小來最佳化下載體驗。 從�
 
 * [翻譯資產](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [Assets支援的檔案格式](file-format-support.md)
+* [資產支援的檔案格式](file-format-support.md)
 * [搜尋資產](search-assets.md)
-* [連線資產](use-assets-across-connected-assets-instances.md)
+* [連接的資產](use-assets-across-connected-assets-instances.md)
 * [資產報表](asset-reports.md)
-* [中繼資料結構](metadata-schemas.md)
+* [中繼資料結構描述](metadata-schemas.md)
 * [管理中繼資料](manage-metadata.md)
 * [搜尋 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)

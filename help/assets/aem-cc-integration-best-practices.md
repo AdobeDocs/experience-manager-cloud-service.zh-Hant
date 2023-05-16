@@ -6,14 +6,19 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '3473'
-ht-degree: 15%
+source-wordcount: '3495'
+ht-degree: 16%
 
 ---
 
 # Adobe Experience Manager和Creative Cloud整合最佳實務 {#aem-and-creative-cloud-integration-best-practices}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html?lang=zh-Hant) |
+| AEM as a Cloud Service  | 本文 |
 
 Adobe Experience Manager Assets是數位資產管理(DAM)解決方案，可與Adobe Creative Cloud整合，協助DAM使用者與創意團隊合作，簡化內容建立程式中的協作。
 
@@ -31,7 +36,7 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務生態系統，協
 |---|---|---|
 | 簡化案頭創意人員的體驗 | 簡化從DAM存取資產([!DNL Assets])，適用於創意專業人員，更廣泛而言，適用於案頭使用者，使用原生資產建立應用程式。 他們需要簡單明瞭的方式來探索、使用（開啟）、編輯和儲存對Experience Manager的變更，以及上傳新檔案。 | Win或Mac案頭；Creative Cloud應用程式 |
 | 提供高品質、現成可用的資產，來自 [!DNL Adobe Stock] | 行銷人員可協助進行資產來源搜尋和探索，協助加速內容建立流程。 創意專業人員可直接在其創意工具中使用已核准的資產。 | [!DNL Assets]; [!DNL Adobe Stock] 市場；中繼資料欄位 |
-| 按組織分發和共用資產 | 內部部門/當地分支機構和外部合作夥伴、分銷商和代理使用母公司共用的已核准資產。 該組織希望安全無縫地共用已建立的資產，以便更廣泛地重複使用。 | [!DNL Brand Portal], [!DNL Asset Share Commons] |
+| 按組織分發和共用資產 | 內部部門/當地分支機構和外部合作夥伴、分銷商和代理使用母公司共用的已核准資產。 該組織希望安全無縫地共用已建立的資產，以便更廣泛地重複使用。 | [!DNL Brand Portal]、[!DNL Asset Share Commons] |
 | 自動產生上傳資產的預先定義變數 | 運用Adobe獨特的媒體處理和轉換技術，針對預先定義的動作自動處理資產。 建立自訂邏輯，使用API和資產微服務定義您自己的動作。 | [!DNL Assets] 使用者介面 |
 
 ## Adobe產品以支援協作需求 {#adobe-offerings-to-support-the-collaboration-need}
@@ -233,11 +238,11 @@ Experience Manager案頭應用程式為原生應用程式中開啟的資產提�
 
 * [翻譯資產](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [Assets支援的檔案格式](file-format-support.md)
+* [資產支援的檔案格式](file-format-support.md)
 * [搜尋資產](search-assets.md)
-* [連線資產](use-assets-across-connected-assets-instances.md)
+* [連接的資產](use-assets-across-connected-assets-instances.md)
 * [資產報表](asset-reports.md)
-* [中繼資料結構](metadata-schemas.md)
+* [中繼資料結構描述](metadata-schemas.md)
 * [下載資產](download-assets-from-aem.md)
 * [管理中繼資料](manage-metadata.md)
 * [搜尋 Facet](search-facets.md)

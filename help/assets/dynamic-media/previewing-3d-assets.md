@@ -5,14 +5,19 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 6%
+source-wordcount: '587'
+ht-degree: 8%
 
 ---
 
 # 在Adobe Experience Manager中預覽3D資產{#previewing-3d-assets}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
+| AEM as a Cloud Service  | 本文 |
 
 Experience Manager在製作程式中支援3D資產的上傳、傳送和互動式預覽。
 
@@ -48,7 +53,7 @@ Experience Manager在製作程式中支援3D資產的上傳、傳送和互動式
 
 在資產詳細資訊檢視頁面中開啟3D資產所花的時間，取決於頻寬、影像複雜度和伺服器延遲等數項因素。
 
-此外，當您以互動方式操作相機時，還需要考慮客戶端電腦的功能，例如工作站、筆記型電腦或移動觸摸設備。 具有良好圖形功能的強大系統可讓互動式3D觀看體驗更流暢、更有利。
+此外，當您以交互方式操作攝像機時，還需要考慮客戶端電腦的功能，如工作站、筆記型電腦或移動觸摸設備。 具有良好圖形功能的強大系統可讓互動式3D觀看體驗更流暢、更有利。
 
 **若要預覽3D資產的Experience Manager:**
 
