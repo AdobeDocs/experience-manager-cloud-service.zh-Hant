@@ -3,7 +3,7 @@ title: AEM 版本更新
 description: 了解AEM as a Cloud Service如何使用持續整合和傳送(CI/CD)，讓您的專案保持在最新版本。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 59bc2b5af22ef23775195f098517cec40d98d66b
+source-git-commit: 7cdc7bb56565cccc04a2dcb74a6c8088ed4e7847
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 23%
@@ -51,6 +51,6 @@ AEM更新會經過密集且完全自動化的產品驗證管道，涉及多個�
 
 多數情況下更新都會導致零停機，包括製作執行個體（節點叢集）。 可能會滾動更新，因為 [複合節點存放區功能。](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-此功能可讓AEM同時參考多個存放庫。 滾動 [藍綠色部署，](/help/implementing/deploying/overview.md#index-management-using-blue-green-deployments) 新的綠色AEM版本包含其專屬的 `/libs` （以TarMK為基礎的不可變存放庫），與舊的藍色AEM版本不同，不過兩者都參考共用以DocumentMK為基礎的可變存放庫，其中包含區域如 `/content` , `/conf` , `/etc` 還有其他。
+此功能可讓AEM同時參考多個存放庫。 滾動 [藍綠色部署，](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 新的綠色AEM版本包含其專屬的 `/libs` （以TarMK為基礎的不可變存放庫），與舊的藍色AEM版本不同，不過兩者都參考共用以DocumentMK為基礎的可變存放庫，其中包含區域如 `/content` , `/conf` , `/etc` 還有其他。
 
 因為藍色和綠色都有各自的 `/libs`，則兩者皆可在滾動式更新期間處於作用中狀態，且兩者皆會帶來流量，直到藍色完全取代為綠色為止。
