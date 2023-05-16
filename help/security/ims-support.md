@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
-source-wordcount: '2022'
-ht-degree: 100%
+source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
+workflow-type: tm+mt
+source-wordcount: '2054'
+ht-degree: 97%
 
 ---
 
@@ -142,11 +142,15 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 在每個產品內容執行個體下，將有跨生產、階段或開發環境的編寫或發佈服務的執行個體。每個執行個體都將關聯到產品設定檔或 Cloud Manager 角色。這些產品設定檔的主要功用在於指派存取權限給具有必要權限的使用者和群組。
 
-**Administrator_xxx** 設定檔可授與相關聯 AEM 執行個體的管理員權限，而 **User_xxx** 設定檔則可新增一般使用者。
+此 **AEM Administrators_xxx** 設定檔將用來授與相關聯AEM例項的管理員權限，而 **AEM Users_xxx** 設定檔可用來新增一般使用者。
 
 此產品設定檔中新增的任何使用者和群組都可以登入該特定執行個體，如以下範例所示：
 
 ![產品設定檔](/help/security/assets/ims8.png)
+
+>[!WARNING]
+>
+>此 **AEM管理員** 不得變更產品設定檔名稱。 變更名稱 **AEM管理員** 產品設定檔會從指派給該設定檔的所有使用者中移除管理員權限。
 
 ### 登入 Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
