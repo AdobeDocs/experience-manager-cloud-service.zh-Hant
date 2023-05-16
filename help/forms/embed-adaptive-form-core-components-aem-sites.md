@@ -5,9 +5,10 @@ description: 您可以在AEM Sites頁面中使用適用性表單（核心元件�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
+source-git-commit: 0d21b4ba2e7ce7592e3f2c57e4d320adc0af1008
 workflow-type: tm+mt
-source-wordcount: '2185'
+source-wordcount: '2207'
 ht-degree: 2%
 
 ---
@@ -22,22 +23,16 @@ ht-degree: 2%
 
 * **將表單元件拖放至適用性Forms容器元件，以建立適用性表單**:使用 [適用性Forms容器](#af-container-component) 元件，在網頁內建立托管最適化表單的空間。 您可以在此空間拖放適用性表單元件以建立表單。 例如，請觀看以下影片，了解如何使用 [!UICONTROL 適用性Forms容器] 元件：
 
->[!VIDEO](/help/forms/assets/formcreationbyadaptiveformcontainer.mp4)
-
 此 [適用性表單容器](#af-container-component) 元件可讓您直接在AEM Sites編輯器中利用適用性Forms元件來建立數位註冊體驗。 此整合可為想在AEM Sites頁面中建立和管理表單的AEM Sites作者提供順暢的體驗。
 
-* **內嵌現有的最適化表單**:此 [適用性Forms — 內嵌](#embed-existing-af) 元件可讓您輕鬆將預先存在的適用性表單整合至AEM Sites中的頁面。 例如，使用 [!UICONTROL 適用性Forms — 內嵌] 元件，如下列影片所示：
-
->[!VIDEO](/help/forms/assets/embednewform_embed.mp4)
+* **內嵌現有的最適化表單**:此 [適用性Forms — 內嵌(V2)](#embed-existing-af) 元件可讓您輕鬆將預先存在的適用性表單整合至AEM Sites中的頁面。 例如，使用 [!UICONTROL 適用性Forms — 內嵌] 元件，如下列影片所示：
 
 這一功能增強了自適應Forms的適應性和可重用性。 此整合為客戶重複使用已建立的適用性Forms提供了便利的方式。
 
 * **使用適用性Forms精靈建立表單**:
 
-   使用 [適用性Forms — 內嵌](#embed-new-af) 元件，使用「表單建立」精靈從AEM Sites編輯器中建立最適化表單。 表單會儲存為外部實體。 您也可以在其他Sites頁面和獨立表單中重複使用此表單。
+   使用 [適用性Forms — 內嵌(v2)](#embed-new-af) 元件，使用「表單建立」精靈從AEM Sites編輯器中建立最適化表單。 表單會儲存為外部實體。 您也可以在其他Sites頁面和獨立表單中重複使用此表單。
 例如，請觀看以下影片，了解如何使用 [!UICONTROL 適用性Forms — 內嵌] 元件。
-
->[!VIDEO](/help/forms/assets/createnewform_embed.mp4)
 
 ### 考量 {#considerations}
 
@@ -52,11 +47,12 @@ ht-degree: 2%
 +++ 啟用 **[!UICONTROL 適用性Forms容器]** 元件（在關聯模板的策略中）。
 
 啟用 [!UICONTROL 適用性Forms容器] 元件，請執行下列步驟：
-1. 前往 [!UICONTROL 頁面資訊] > [!UICONTROL 編輯範本]
-1. 按一下 [!UICONTROL 原則] ，然後選取 **核心元件範例 — 最適化表單** 核取方塊。
-1. 按一下 [!UICONTROL 完成].
 
->[!VIDEO](/help/forms/assets/adaptiveformcontainer.mp4)
+1. 前往 [!UICONTROL 頁面資訊] > [!UICONTROL 編輯範本]
+1. 按一下 [!UICONTROL 原則] ，然後選取 **[!UICONTROL 適用性Forms容器]**  核取方塊下方的 **[AEM原型專案名稱]  — 適用性表單**.
+1. 按一下 **[!UICONTROL 完成]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
 +++
 
@@ -104,7 +100,7 @@ ht-degree: 2%
 1. 使用適用性Forms元件建立適用性表單。
 1. 儲存設定。
 
->[!VIDEO](/help/forms/assets/af-container.mp4)
+>[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 你的表格準備好了。 當您發佈AEM Sites頁面時，它會自動發佈適用性表單及其相關的參考資產。
 
@@ -148,11 +144,11 @@ ht-degree: 2%
 * **顯示訊息**
    * **訊息內容**:使用RTF編輯器撰寫訊息，以在表單提交時顯示。 只有在您選擇顯示感謝訊息時，才可使用此選項。
 
-## 內嵌現有的最適化表單  {#aem-container-component}
+## 內嵌最適化表單  {#aem-container-component}
 
-使用 **[!UICONTROL 適用性Forms — 內嵌]** 元件，您可以內嵌新的適用性表單，或在網站的頁面中內嵌現有的適用性表單。 此 [!UICONTROL 適用性Forms — 內嵌] 元件可讓您：
+使用 **[!UICONTROL 適用性Forms — 內嵌(V2)]** 元件，您可以內嵌新的適用性表單，或在網站的頁面中內嵌現有的適用性表單。 此 [!UICONTROL 適用性Forms — 內嵌] 元件可讓您：
 
-* [Embe現有適用性表單](#embed-new-af)
+* [內嵌現有的最適化表單](#embed-new-af)
 
 * [建立和內嵌新的最適化表單](#embed-existing-af)
 
@@ -160,12 +156,14 @@ ht-degree: 2%
 
 +++ 啟用 **適用性Forms — 內嵌** 元件（在關聯模板的策略中）。
 
-啟用 [!UICONTROL 適用性Forms — 內嵌] 元件，請執行下列步驟：
-1. 前往 [!UICONTROL 頁面資訊] > [!UICONTROL 編輯範本]
-1. 按一下 [!UICONTROL 原則] ，然後選取 **核心內容** 核取方塊。
-1. 按一下 [!UICONTROL 完成].
+啟用 [!UICONTROL 適用性Forms — 內嵌(v2)] 元件，請執行下列步驟：
 
->[!VIDEO](/help/forms/assets/enableadaptiveform-embedtemplate.mp4)
+1. 前往 [!UICONTROL 頁面資訊] > [!UICONTROL 編輯範本]
+
+1. 按一下 [!UICONTROL 原則] ，然後選取 **[!UICONTROL 適用性表單 — 內嵌(v2)]** 核取方塊下方的 **[!UICONTROL [AEM原型專案名稱] -Forms]** 群組。
+1. 按一下 **[!UICONTROL 完成]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
 +++
 
@@ -212,7 +210,7 @@ ht-degree: 2%
 ### 內嵌新的最適化表單 {#embed-new-af}
 
 1. 在編輯模式中開啟AEM Sites頁面。
-1. 從「元件」瀏覽器面板，拖放 [!UICONTROL 適用性Forms — 內嵌] 元件。
+1. 從「元件」瀏覽器面板，拖放 [!UICONTROL 適用性Forms — 內嵌(v2)] 元件。
 1. 按一下 **加號** 圖示，系統就會將您重新導向至表單建立精靈。
 
    ![適用性Forms — 內嵌元件](/help/forms/assets/aemformcontainer.png)
@@ -220,6 +218,8 @@ ht-degree: 2%
 1. 從 [!UICONTROL 表單建立] 嚮導。
 1. 此 [!UICONTROL 資產路徑] 已包含已建立適用性表單的路徑
 1. 儲存設定。 適用性表單現已內嵌於頁面中。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
 
 ### 內嵌現有適用性表單 {#embed-existing-af}
 
@@ -229,9 +229,12 @@ ht-degree: 2%
 1. 瀏覽並選取要內嵌於 [!UICONTROL 資產路徑].
 1. 儲存設定。 適用性表單現已內嵌於頁面中。
 
+>[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
+
 #### 配置適用性表單_內嵌屬性
 
-您可以自訂 [!UICONTROL 適用性表單 — 內嵌] 元件。 在 [!UICONTROL 編輯適用性Forms — 內嵌] 對話框，可以指定以下內容。
+您可以自訂 [!UICONTROL 適用性表單 — 內嵌(v2)] 元件。 在 [!UICONTROL 編輯適用性Forms — 內嵌(v2)] 對話框，可以指定以下內容。
+
 * **資產路徑**:瀏覽並選取要內嵌的適用性表單。 如果您從「資產」瀏覽器中拖放，則會自動填入。
 * **貼文提交** :選取要在表單提交時觸發的動作。 您可以選擇顯示感謝訊息或感謝頁面。
    * **顯示感謝消息**:使用RTF編輯器撰寫訊息，以在表單提交時顯示。 只有在您選擇顯示感謝訊息時，才可使用此選項。
@@ -272,4 +275,3 @@ ht-degree: 2%
 ![AF-layout-support](/help/forms/assets/afsite-layoutsupport.gif)
 
 AEM網站頁面會維護最適化表單的參考。 翻譯AEM Sites頁面時，會使用 [翻譯專案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) 其他語言。
-
