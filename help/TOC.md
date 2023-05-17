@@ -9,7 +9,7 @@ breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: a29ef2aa19d37a56e521524b931818a08cf0cb75
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4071'
 ht-degree: 100%
 
@@ -69,17 +69,17 @@ ht-degree: 100%
          + [2020.4.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [2020.3.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [2020.2.0 版發行說明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-   + AEMaaCS 維護發行說明{#maintenance}
-      + [目前維護發行說明](/help/release-notes/maintenance/latest.md)
+   + AEMaaCS 維護版本發行說明{#maintenance}
+      + [目前維護版本發行說明](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [2023.2.0 維護發行說明](/help/release-notes/maintenance/2023/2023.2.0.md)
-         + [2023.1.0 維護發行說明](/help/release-notes/maintenance/2023/2023.1.0.md)
+         + [2023.2.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.2.0.md)
+         + [2023.1.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Cloud Manager 發行說明 {#cloud-manager}
       + [最新發行說明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
-         + [2023.4.0 版本注意事項](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
+         + [2023.4.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
          + [2023.3.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
-         + [2023.2.0 版本注意事項](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
+         + [2023.2.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [2023.1.0 版發行說明](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
          + [2022.12.0 版發行說明](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
