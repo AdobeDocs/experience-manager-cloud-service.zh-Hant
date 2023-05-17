@@ -4,7 +4,7 @@ description: 整合 Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
+source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 1%
@@ -150,7 +150,7 @@ AEM提供立即可用的與Experience Platform Launch整合。 將Adobe Target�
   <tr>
     <td>目標配置的位置。</td>
     <td>/etc/cloudservices/testandtarget/</td>
-    <td>/conf/tenant/settings/cloudservices/target/</td>
+    <td>/conf/tenant/settings/cloudconfigs/target/</td>
     <td> 先前的/etc/cloudservices/testandtarget下有多個設定，但現在租用戶下有單一設定。</td>
   </tr>
 </table>
