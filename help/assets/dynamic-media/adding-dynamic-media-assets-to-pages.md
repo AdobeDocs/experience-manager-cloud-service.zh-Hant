@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: da4174929e1eb8e15447f936dc89a67391c72209
+source-git-commit: ec3939e34028d1dbadbd2b855796ca63e049b814
 workflow-type: tm+mt
-source-wordcount: '3216'
-ht-degree: 5%
+source-wordcount: '3218'
+ht-degree: 4%
 
 ---
 
 # 將Dynamic Media Assets新增至頁面{#adding-dynamic-media-assets-to-pages}
 
-若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增 **Dynamic Media**、 **Interactive Media**、 **Media**&#x200B;或 **** Video 360全景媒體元件。您可以進入「配置」模式並啟用Dynamic Media元件。 接著，您將這些元件新增至頁面，並新增資產至元件。 動態媒體元件是智慧型的——他們知道您是新增影像還是視訊，而可用的設定選項也會隨之變更。
+若要將Dynamic Media功能新增至您在網站上使用的資產，您可以新增 **Dynamic Media**, **互動式媒體**, **全景媒體**，或 **影片360媒體** 元件。 您可以進入「配置」模式並啟用Dynamic Media元件。 接著，您將這些元件新增至頁面，並新增資產至元件。 動態媒體元件是智慧型的——他們知道您是新增影像還是視訊，而可用的設定選項也會隨之變更。
 
 如果您使用，請直接將Dynamic Media資產新增至頁面 [!DNL Adobe Experience Manager] 作為WCM。 如果您使用協力廠商來處理WCM, [連結](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 或 [內嵌](/help/assets/dynamic-media/embed-code.md) 您的資產。 如需回應式第三方網站，請參閱 [將最佳化的影像傳送至回應式網站](/help/assets/dynamic-media/responsive-site.md).
 
@@ -221,7 +221,7 @@ Dynamic Media元件可讓您新增動態影像，包括影像集、回轉集和�
 
 使用Dynamic Media元件將智慧型裁切影像資產新增至網頁。 編輯元件時，您可以選擇使用預先定義的視訊檢視器預設集來在頁面上播放視訊。
 
-請參閱 [搭配Experience Manager Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html#dynamic-media)
+請參閱 [搭配Experience Manager Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html)
 
 另請參閱 [影像設定檔](/help/assets/dynamic-media/image-profiles.md).
 
@@ -356,10 +356,10 @@ HTTP/2是全新、更新的Web通訊協定，可改善瀏覽器和伺服器的�
 
 >[!MORELIKETHIS]
 >
->* [在Experience ManagerDynamic Media中使用視訊播放器](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html#dynamic-media)
->* [使用互動式影片與Experience ManagerDynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
->* [透過Experience ManagerDynamic Media了解資產檢視器](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html#dynamic-media)
->* [使用自訂視訊縮圖與Experience ManagerDynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html#dynamic-media)
->* [透過Experience ManagerDynamic Media了解色彩管理](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
->* [使用影像銳利化搭配Experience ManagerDynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)
+>* [在Experience ManagerDynamic Media中使用視訊播放器](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html)
+>* [使用互動式影片與Experience ManagerDynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html)
+>* [透過Experience ManagerDynamic Media了解資產檢視器](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html)
+>* [使用自訂視訊縮圖與Experience ManagerDynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [透過Experience ManagerDynamic Media了解色彩管理](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
+>* [使用影像銳利化搭配Experience ManagerDynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html)
 
