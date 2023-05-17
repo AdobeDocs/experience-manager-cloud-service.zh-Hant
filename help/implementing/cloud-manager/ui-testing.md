@@ -3,9 +3,9 @@ title: UI 測試
 description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: bf3b7286bbf77f5a45884d4d3a40c020fe42411f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2305'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI 測試"
->abstract="自訂 UI 測試是一項選擇性功能，可讓您為應用程式建立和自動執行 UI 測試。UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。"
+>abstract="自訂 UI 測試是一項選擇性功能，可讓您為應用程式建立和自動執行 UI 測試。UI 測試是封裝在 Docker 映像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。"
 
 自訂 UI 測試是一項選擇性功能，可讓您為應用程式建立和自動執行 UI 測試。
 
@@ -23,13 +23,13 @@ ht-degree: 94%
 
 AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)整合套件，以確保自訂應用程序順利更新。尤其是 IT 測試門已經支援使用 AEM API 建立和自動化自訂測試。
 
-UI測試會封裝在Docker影像中，以便在語言和架構（例如Cypress.IO、Selenium、Java和Maven以及Javascript）中有廣泛的選擇。 此外，可以透過使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)輕鬆產生 UI 測試專案。
+UI 測試是封裝在 Docker 映像中，以便在語言和架構 (例如 Cypress.IO、Selenium、Java 和 Maven 以及 Javascript) 方面提供廣泛的選擇。此外，可以透過使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)輕鬆產生 UI 測試專案。
 
-Adobe鼓勵使用Cypress.IO，因為它提供即時重裝和自動等待功能，有助於節省時間並提高測試期間的生產力。 Cypress.IO還提供簡單而直觀的語法，使學習和使用更為方便，即使是剛接觸過測試的人也是如此。
+Adobe 鼓勵使用 Cypress.IO，因為它提供即時重新載入和自動等待功能，這有助於節省時間並提高測試期間的工作效率。Cypress.IO 也提供簡單直覺的語法，使其易於學習和使用，即使對於那些剛接觸測試的人也是如此。
 
 UI 測試作為每個 Cloud Manager 管道的特定品質閘道的一部分執行，在[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)或選擇性[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)中具有&#x200B;[**自訂 UI 測試**&#x200B;步驟](/help/implementing/cloud-manager/deploy-code.md)。包括回歸和新功能在內的任何 UI 測試都可以檢測和報告錯誤。
 
-與使用 Java 編寫的 HTTP 測試的自訂功能測試不同，UI 測試可以是 Docker 影像，其中包含以任何語言編寫的測試，只要它們遵循本節中定義的約定[構建 UI 測試](#building-ui-tests)。
+與使用 Java 編寫的 HTTP 測試的自訂功能測試不同，UI 測試可以是 Docker 映像，其中包含以任何語言編寫的測試，只要它們遵循本節中定義的約定[構建 UI 測試](#building-ui-tests)。
 
 >[!TIP]
 >
@@ -61,7 +61,7 @@ UI 測試作為每個 Cloud Manager 管道的特定品質閘道的一部分執�
 
 ## 構建 UI 測試 {#building-ui-tests}
 
-一個 Maven 項目會產生一個 Docker 建置內容。此 Docker 建置內容旨在說明如何建立包含 UI 測試的 Docker 影像，Cloud Manager 會用來透過該影像產生包含實際 UI 測試的 Docker 影像。
+一個 Maven 項目會產生一個 Docker 建置內容。此 Docker 建置內容旨在說明如何建立包含 UI 測試的 Docker 映像，Cloud Manager 會用來透過該影像產生包含實際 UI 測試的 Docker 映像。
 
 本節介紹將 UI 測試項目新增到存放庫所需的步驟。
 
@@ -73,7 +73,7 @@ UI 測試作為每個 Cloud Manager 管道的特定品質閘道的一部分執�
 
 為了產生 Docker 建置內容，您需要一個 Maven 模組：
 
-* 產生一個包含`Dockerfile`以及使用您的測試構建 Docker 影像所需的所有其他文件。
+* 產生一個包含`Dockerfile`以及使用您的測試構建 Docker 映像所需的所有其他文件。
 * 用`ui-test-docker-context`分類器。
 
 最簡單的方法是配置 [Maven 組裝插件](https://maven.apache.org/plugins/maven-assembly-plugin/)建立 Docker 建置內容封存並為其指派正確的分類器。
@@ -152,7 +152,7 @@ UI 測試作為每個 Cloud Manager 管道的特定品質閘道的一部分執�
 
 程序集描述符還排除了在本機執行 UI 測試時可能產生的一些文件。這保證了更小的封存和更快的建構。
 
-包含 Docker 建置內容的封存由 Cloud Manager 自動獲取，它將在其部署管道期間構建包含您的測試的 Docker 影像。最終，Cloud Manager 將執行 Docker 影像以針對您的應用程序執行 UI 測試。
+包含 Docker 建置內容的封存由 Cloud Manager 自動獲取，它將在其部署管道期間構建包含您的測試的 Docker 映像。最終，Cloud Manager 將執行 Docker 映像以針對您的應用程序執行 UI 測試。
 
 建構應產生零個或一個封存。如果產生零個封存，則測試步驟預設透過。如果建置產生多個封存，則無法確定要選擇哪個封存。
 
@@ -201,16 +201,16 @@ UI 測試作為每個 Cloud Manager 管道的特定品質閘道的一部分執�
 
 ## 編寫 UI 測試 {#writing-ui-tests}
 
-本節介紹包含 UI 測試的 Docker 影像必須遵循的約定。Docker 影像是根據上一節中描述的 Docker 建置內容建構的。
+本節介紹包含 UI 測試的 Docker 映像必須遵循的約定。Docker 映像是根據上一節中描述的 Docker 建置內容建構的。
 
 ### 環境變數 {#environment-variables}
 
-根據您的架構，下列環境變數將在執行時傳遞至您的Docker影像。
+以下環境變數將在執行階段傳遞給您的 Docker 映像，視您的架構而定。
 
 | 變數 | 範例 | 說明 | 測試架構 |
 |---|---|---|---|
-| `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 伺服器的 URL | 僅硒 |
-| `SELENIUM_BROWSER` | `chrome` | Selenium 伺服器使用的瀏覽器實作 | 僅硒 |
+| `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 伺服器的 URL | 僅限 Selenium |
+| `SELENIUM_BROWSER` | `chrome` | Selenium 伺服器使用的瀏覽器實作 | 僅限 Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 編寫執行個體的 URL | 全部 |
 | `AEM_AUTHOR_USERNAME` | `admin` | 用於登入 AEM 編寫執行個體的使用者名稱 | 全部 |
 | `AEM_AUTHOR_PASSWORD` | `admin` | 用於登入 AEM 編寫執行個體的密碼 | 全部 |
@@ -218,20 +218,20 @@ UI 測試作為每個 Cloud Manager 管道的特定品質閘道的一部分執�
 | `AEM_PUBLISH_USERNAME` | `admin` | 用於登入 AEM 發佈執行個體的使用者名稱 | 全部 |
 | `AEM_PUBLISH_PASSWORD` | `admin` | 用於登入 AEM 發佈執行個體的密碼 | 全部 |
 | `REPORTS_PATH` | `/usr/src/app/reports` | 測試結果 XML 報告必須儲存的路徑 | 全部 |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | 必須上傳檔案的URL，才能讓測試架構存取這些檔案 | 全部 |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | 必須將文件上傳到的 URL，以便測試架構可以存取 | 全部 |
 
 Adobe 測試範例提供了幫助函數來存取設定參數：
 
 * JavaScript：參閱 [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) 模組
-* Java：參閱 [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 類
+* Java：參閱 [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 類別
 
 ### 等待 Selenium 準備就緒 {#waiting-for-selenium}
 
 >[!NOTE]
 >
->此部分僅在Selenium是選定的測試基礎架構時適用。
+>本節僅在選擇 Selenium 為測試基礎結構時適用。
 
-在測試開始之前，Docker 影像負責確保 Selenium 伺服器啟動並執行。等待 Selenium 服務有兩個步驟。
+在測試開始之前，Docker 映像負責確保 Selenium 伺服器啟動並執行。等待 Selenium 服務有兩個步驟。
 
 1. 從 `SELENIUM_BASE_URL` 環境變數中讀取 Selenium 服務的 URL。
 1. 定期輪詢 Selenium API 公開的[狀態端點](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)。
@@ -244,7 +244,7 @@ Adobe UI 測試範例使用指令碼 `wait-for-grid.sh` 處理此問題，該指
 
 Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。JUnit XML 格式是一種廣泛使用的報告測試結果的格式。如果 Docker 鏡像使用 Java 和 Maven，標準測試模組如 [Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和 [Maven 故障安全插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)可以開箱即用地產生此類報告。
 
-如果 Docker 影像是使用其他編程語言或測試執行計劃實現的，請查看所選工具的文件以了解如何產生 JUnit XML 報告。
+如果 Docker 映像是使用其他編程語言或測試執行計劃實現的，請查看所選工具的文件以了解如何產生 JUnit XML 報告。
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 
 ### 擷取螢幕擷圖和視訊 {#capture-screenshots}
 
-Docker 影像必須產生額外的測試輸出 (例如，螢幕擷圖或影片)，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。在 `REPORTS_PATH` 下找到的任何檔案都包含在測試結果封存檔中。
+Docker 映像必須產生額外的測試輸出 (例如，螢幕擷圖或影片)，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。在 `REPORTS_PATH` 下找到的任何檔案都包含在測試結果封存檔中。
 
 Adobe 提供的測試範例依預設為任何失敗的測試建立螢幕擷圖。
 
@@ -273,10 +273,10 @@ Adobe 提供的測試範例依預設為任何失敗的測試建立螢幕擷圖�
    * 上傳必須在一個帶有多部分表單的 POST 要求中執行。
    * 多部分表單必須有一個檔案欄位。
    * 這相當於 `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`。
-   * 請查閱 Docker 影像中使用的編程語言的檔案和資料庫，以了解如何執行此類 HTTP 要求。
+   * 請查閱 Docker 映像中使用的編程語言的檔案和資料庫，以了解如何執行此類 HTTP 要求。
    * Adobe 測試範本提供了用於上傳文件的輔助函數：
       * JavaScript：請參閱 [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) 命令。
-      * Java：參閱 [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) 類。
+      * Java：參閱 [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) 類別。
 1. 如果上傳成功，請求傳回一個`200 OK`類型響應 `text/plain`。
    * 回應的內容是一個不透明的檔案。
    * 您可以使用此句柄代替文件路徑`<input>`在您的應用程序中測試文件上傳的元素。
