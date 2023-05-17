@@ -3,9 +3,9 @@ title: 自訂程式碼品質規則
 description: 本頁說明了 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則。它們是根據 Adobe Experience Manager Engineering 的最佳實務。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3508'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->由於Adobe的專有資訊，無法下載完整的SonarQube規則。 若要下載完整的規則清單，可[使用此連結。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) 請繼續閱讀本檔案，以取得規則的說明和範例。
+>由於 Adobe 專屬資訊，完整的 SonarQube 規則無法下載。若要下載完整的規則清單，可[使用此連結。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)繼續閱讀本文件以取得規則的說明和範例。
 
 >[!NOTE]
 >
