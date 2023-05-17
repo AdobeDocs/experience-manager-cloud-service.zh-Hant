@@ -1,17 +1,17 @@
 ---
-title: 建立和同步Live Copy
+title: 建立和同步 Live Copy
 description: 了解如何建立和同步Live Copy，以在整個網站上重複使用您的內容。
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
 workflow-type: tm+mt
-source-wordcount: '4274'
-ht-degree: 1%
+source-wordcount: '4322'
+ht-degree: 2%
 
 ---
 
-# 建立和同步Live Copy {#creating-and-synchronizing-live-copies}
+# 建立和同步 Live Copy {#creating-and-synchronizing-live-copies}
 
 您可以從頁面或Blueprint設定建立即時副本，以便在您的網站上重複使用該內容。 管理繼承和同步，您可以控制內容的變更傳播方式。
 
@@ -136,6 +136,10 @@ Blueprint設定視為不可修改的資料，因此在執行階段無法編輯�
 
 1. （選用）若要指定要用於即時副本的一或多個轉出設定，請使用 **轉出設定** 下拉式清單中選取。 選取的設定會顯示在下拉式選取器下方。
 1. 按一下或點選 **建立**. 將會顯示確認訊息，您可從此處選取 **開啟** 或 **完成**.
+
+   >[!NOTE]
+   >
+   >錯誤對話方塊可能會出現，並出現「無法提交表單」訊息。 這會因網路逾時而發生。 不過，建立即時副本的程式會在背景執行。 請等候幾分鐘，並檢查即時副本的頁面已正確建立。
 
 ### 從Blueprint設定建立網站的即時副本 {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
@@ -353,11 +357,11 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 
 建立Live Copy時，Live Copy設定會儲存在複製頁面的根頁面上。 根頁面的所有子頁面都會繼承Live Copy設定。 Live Copy頁面上的元件也會繼承Live Copy設定。
 
-您可以暫停「即時副本」頁面的「即時副本」繼承，以便變更頁面屬性和元件。 暫停繼承時，頁面屬性和元件不再與源同步。
+您可以暫停「即時副本」頁面的「即時副本」繼承，以便變更頁面屬性和元件。 當您暫停繼承時，頁面屬性和元件將不再與來源同步。
 
 >[!TIP]
 >
->您也可以 [分離即時副本](#detaching-a-live-copy) 從其藍圖中刪除所有連接。 與暫停繼承不同，分離操作是永久的且不可逆的。
+>您也可以從其藍圖[分離 Live Copy](#detaching-a-live-copy) 以移除所有連接。與暫停繼承不同，分離操作是永久的且不可逆的。
 
 #### 暫停頁面屬性的繼承 {#suspending-inheritance-from-page-properties}
 
@@ -380,7 +384,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份Live Copy頁面�
 1. 選擇 **暫停** 的上界。
 1. 從以下項目中選取適當的選項：
 
-   * **擱置**
+   * **暫停**
    * **暫停子項**
 
    ![暫停子項](../assets/suspend-with-children.png)
@@ -574,8 +578,8 @@ Live Copy頁面的頁面屬性預設會繼承自來源頁面，且無法編輯�
 1. 在 **網站** 主控台， [導覽至Blueprint或「即時副本」頁面，並加以選取。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 1. 開啟 **[參考](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 面板，並視內容選取其中一項：
 
-   * **Blueprint**
-   * **即時副本**
+   * **藍圖**
+   * **Live Copy**
 
 1. 根據上下文選擇以下任一選項，選擇您的特定即時副本：
 
@@ -590,9 +594,9 @@ Live Copy頁面的頁面屬性預設會繼承自來源頁面，且無法編輯�
 
    如需使用比較功能的完整資訊，請參閱 [頁面差異](/help/sites-cloud/authoring/features/page-diff.md).
 
-## 分離即時副本 {#detaching-a-live-copy}
+## 分離 Live Copy {#detaching-a-live-copy}
 
-分離動作會永久移除即時副本與其來源/藍圖頁面之間的即時關係。 所有與MSM相關的屬性會從Live Copy中移除，而Live Copy頁面會變成獨立副本。
+分離動作會永久移除即時副本與其來源/藍圖頁面之間的即時關係。 Live Copy 中與 MSM 相關的所有屬性都會移除，Live Copy 頁面會成為獨立副本。
 
 >[!CAUTION]
 >
@@ -646,4 +650,4 @@ Live Copy頁面的頁面屬性預設會繼承自來源頁面，且無法編輯�
 1. 選擇 **分離** 的上界。
 1. 確認 **分離** 中的動作 **分離即時副本** 對話框：
 
-   ![分離即時副本](../assets/detach-live-copy.png)
+   ![分離 Live Copy](../assets/detach-live-copy.png)
