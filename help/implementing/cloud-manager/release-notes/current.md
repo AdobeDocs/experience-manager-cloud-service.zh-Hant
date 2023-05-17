@@ -4,9 +4,9 @@ description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.5.0 的發�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4340b957cea86452f916ab615b383aabacc21676
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '206'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 41%
 
 ## 發行日期 {#release-date}
 
-AEMas a Cloud Service中Cloud Manager 2023.5.0版的發行日期為2023年5月11日。 下一版本計劃於 2023 年 6 月 8 日發行。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2023.5.0 發行日期是 2023 年 5 月 11 日。下一版本計劃於 2023 年 6 月 8 日發行。
 
 ## 新增功能 {#what-is-new}
 
-* 產品、功能和UI測試支援已擴充至 [非生產管道測試。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-* 除了啟用上游測試外， [UI測試支援已擴充至Cypress測試。](/help/implementing/cloud-manager/ui-testing.md)
-* [自助服務內容副本](/help/implementing/developing/tools/content-copy.md) 現在可透過Cloud Manager UI從更高到更低的環境使用。
-* 已增強管道執行驗證步驟，以在執行程式早期驗證復寫佇列的狀態。 這可確保部署步驟不受應由AEM管理員用戶直接在創作環境中處理的已阻止隊列的影響。
+* 產品、功能和 UI 測試支援已擴展到[非生產管道測試](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
+* 除了啟用上游測試之外，[ UI 測試支援已擴展到 Cypress 測試](/help/implementing/cloud-manager/ui-testing.md)。
+* 現在可以透過 Cloud Manager UI 從較高環境向較低環境執行[自助內容複製](/help/implementing/developing/tools/content-copy.md)。
+* 管道執行驗證步驟已增強，可以在執行程序早期驗證複寫佇列的狀態。這可確保部署步驟不受阻塞的佇列影響，阻塞的佇列應由 AEM 管理員使用者直接在編寫環境中解決。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 環境名稱中使用多位元組字元時，環境建立不再失敗。
+* 在環境名稱中使用多字元組字元時，環境建立作業不再失敗。
