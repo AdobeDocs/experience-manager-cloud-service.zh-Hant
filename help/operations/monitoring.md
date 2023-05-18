@@ -1,15 +1,15 @@
 ---
-title: AEMas a Cloud Service的基礎架構與服務監控
-description: AEMas a Cloud Service的基礎架構與服務監控
-source-git-commit: 8121d2e9cd98b4cc6e848f6cd6c3fa4359988053
+title: AEM as a Cloud Service 中的基礎結構和服務監視
+description: AEM as a Cloud Service 中的基礎結構和服務監視
+exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
+source-git-commit: 34fed4e64b49ab32e7025c9654d930e3fa362a52
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 0%
+source-wordcount: '600'
+ht-degree: 5%
 
 ---
 
-
-# AEMas a Cloud Service的基礎架構與服務監控 {#monitoring-in-aem-as-a-cloud-service}
+# AEM as a Cloud Service 中的基礎結構和服務監視 {#monitoring-in-aem-as-a-cloud-service}
 
 Adobe Experience Manager as a Cloud Service提供可觀察性和監控：基礎架構、服務和使用者體驗。 由於使用了各種解決方案，而且有數個監控層，因此本頁面會組織為三個區段：
 
@@ -33,6 +33,10 @@ AEM as a Cloud Service每年會使用數百個雲端原生監視器，持續報�
 
 透過自訂監控，客戶可以選擇在之前提供最多五個不同的Web屬性URL [正式啟用](/help/journey-migration/go-live.md). 這些URL應有效，並傳回HTTP 200回應代碼。 這些監視器可支援 [自攜CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) 在AdobeCDN之前，以及AEMas a Cloud Service之前採用且不受Adobe控制的任何外部流量路由。 自訂監控檢查產生的警報將吸引Adobe的支援團隊和程式。
 
+>[!NOTE]
+>
+> 此功能僅適用於具有進階雲端支援的客戶。 若您有任何疑問，請透過Admin Console提出支援案例。
+
 ## 內部模組監控 {#module-monitoring}
 
 雖然外部可用性主要集中在最終用戶監控上，但內部模組監控會觀察體系結構子系統是否在名義上運行，而沒有功能或效能降低。 在出現問題時，會觸發警報，以便自動或通過運營團隊的參與進行修復，以防止損壞的可用性。 監視器有不同類別，以下是一些示例檢查：
@@ -49,10 +53,10 @@ AEM as a Cloud Service每年會使用數百個雲端原生監視器，持續報�
 
 ## 客戶可觀察性 {#customer-observability}
 
-客戶可使用 [新的Relic應用程式效能監控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) 提供即時效能資料的套裝，可收集資料並繪製圖表以進行分析和疑難排解。 透過使用監控套裝，客戶可以直接觀察各種量度，例如：JVM效能度量、Java的事務時間、後台外部調用和資料庫調用。
+客戶可使用 [New Relic應用程式效能監控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) 提供即時效能資料的套裝，可收集資料並繪製圖表以進行分析和疑難排解。 透過使用監控套裝，客戶可以直接觀察各種量度，例如：JVM效能度量、Java的事務時間、後台外部調用和資料庫調用。
 
 ## 其他資源 {#resources}
 
-* [新的Relic應用程式效能監控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
+* [New Relic應用程式效能監控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
 * [記錄AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
 * [監視環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)
