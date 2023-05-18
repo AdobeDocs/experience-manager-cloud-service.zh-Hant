@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 96d11aad425ba7c78a685b3509cd96749d938229
+source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
 workflow-type: tm+mt
-source-wordcount: '5887'
+source-wordcount: '5868'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 2%
          [編輯視訊屬性](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [管理數位資產的中繼資料](/help/assets/manage-metadata.md)
-      * [中繼資料結構](/help/assets/metadata-schemas.md)
+      * [中繼資料結構描述](/help/assets/metadata-schemas.md)
    * 檢閱、核准及註解影片，並維護完整版本控制
 
       * [為影片加上註解](/help/assets/manage-video-assets.md#annotate-video-assets) 或 [為資產加上註解](/help/assets/manage-digital-assets.md#annotating)
@@ -424,10 +424,6 @@ DASH(Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，在�
 * 有助於讓客戶更容易存取視訊傳送。
 * 也可透過API取得串流URL。
 
-   >[!IMPORTANT]
-   >
-   >目前僅亞太地區和北美提供您帳戶的啟用DASH;即將在歐洲 — 中東 — 非洲推出。
-
 您可以啟動使用DASH的請求；不會在您的帳戶上自動啟用。
 
 若要在您的帳戶上啟用DASH，請建立客戶支援案例，如下所述。 在您的支援案例中，請指定您要在Dynamic Media帳戶和Experience Manager上啟用DASH。
@@ -435,7 +431,7 @@ DASH(Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，在�
 **要啟用帳戶上的DASH，請執行以下操作：**
 
 1. [使用Admin Console開始建立新的支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html).
-1. 請依照指示建立支援案例，同時確保您提供下列資訊：
+1. 若要建立支援案例，請依照指示操作，同時確保您提供下列資訊：
 
    * 主要聯繫人姓名、電子郵件、電話。
    * 您的Dynamic Media帳戶名稱。
