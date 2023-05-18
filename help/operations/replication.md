@@ -1,15 +1,15 @@
 ---
-title: 複寫
+title: 複製
 description: 發佈和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1a42cfaa1010686279bc11ca92f50afc75d89e9d
+source-git-commit: 6b2ce7a4fb355e9ce78fbd7e0efee65c09fed932
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1381'
 ht-degree: 1%
 
 ---
 
-# 複寫 {#replication}
+# 複製 {#replication}
 
 Adobe Experience Manager as a Cloud Service使用 [Sling內容分送](https://sling.apache.org/documentation/bundles/content-distribution.html) 能夠將要複製的內容移動到AEM執行階段以外Adobe I/O上執行的管道服務。
 
@@ -70,7 +70,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling內容分送](https://sl
    ![程序步驟](/help/operations/assets/processstep.png)
 
 1. 按一下流程中的「處理」步驟，然後選取 **設定** 按扳手錶徵圖
-1. 按一下 **程式** 索引標籤和選取 `Publish Content Tree` 從下拉式清單
+1. 按一下 **程式** 索引標籤和選取 `Publish Content Tree` 從下拉式清單中，然後檢查 **處理常式進階** 核取方塊
 
    ![樹狀激活](/help/operations/assets/newstep.png)
 
