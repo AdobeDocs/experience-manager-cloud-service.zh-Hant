@@ -3,9 +3,9 @@ title: 適用於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: 使用資產選擇器在您的應用程式中搜尋、尋找及擷取資產的中繼資料和轉譯。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: 22d2a2235c8696fce76369d3ffe369bcbaa3f6f2
+source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2378'
 ht-degree: 3%
 
 ---
@@ -30,6 +30,8 @@ Micro-Frontend Asset Selector提供可輕鬆與 [!DNL Experience Manager Assets 
 * 可切換IMS組織內的存放庫以選擇資產。
 
 * 能夠依名稱、維度和大小排序資產，並在「清單」、「網格」、「圖庫」或「瀑布圖」檢視中檢視資產。
+
+本文旨在示範如何搭配 [!DNL Adobe] 「統一殼層」下的應用程式，或您已為驗證產生imsToken時。 本文將這些工作流程稱為非SUSI流程。
 
 執行下列工作，將Asset Selector與您的 [!DNL Experience Manager Assets as a Cloud Service] 存放庫：
 
@@ -361,8 +363,8 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 |---|---|---|---|---|
 | *邊欄* | 布林值 | 否 | false | 如果已標籤 `true`，資產選擇器會以左側邊欄檢視呈現。 如果已標籤 `false`，資產選取器會以強制回應檢視呈現。 |
 | *imsOrg* | 字串 | 是 |  | Adobe布建時指派的Identity Management系統(IMS)ID [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 貴組織。 此 `imsOrg` 驗證您存取的組織是否位於Adobe IMS之下時，需要金鑰。 |
-| *imsToken* | 字串 | 否 |  | 用於驗證的IMS承載權杖。 `imsToken` 如果您使用SUSI流，則不需要。 不過，如果您使用非SUSI流，則此為必要項目。 |
-| *apiKey* | 字串 | 否 |  | 用於存取AEM Discovery服務的API金鑰。 `apiKey` 如果您使用SUSI流，則不需要。 但是，它在非SUSI流中是必需的。 |
+| *imsToken* | 字串 | 否 |  | 用於驗證的IMS承載權杖。 `imsToken` 如果您使用非SUSI流程，則此為必要項目。 |
+| *apiKey* | 字串 | 否 |  | 用於存取AEM Discovery服務的API金鑰。 `apiKey` 如果您使用非SUSI流程，則此為必要項目。 |
 | *rootPath* | 字串 | 否 | /content/dam/ | 「資產選擇器」顯示資產的資料夾路徑。 `rootPath` 也可以以封裝的形式使用。 例如，在下列路徑中， `/content/dam/marketing/subfolder/`，資產選取器不允許您周遊任何父資料夾，但只會顯示子資料夾。 |
 | *路徑* | 字串 | 否 |  | 呈現資產選擇器時用於導覽至特定資產目錄的路徑。 |
 | *filterSchema* | 陣列 | 否 |  | 用於配置篩選器屬性的模型。 如果您想要限制「資產選擇器」中的特定篩選選項，此功能會相當實用。 |
