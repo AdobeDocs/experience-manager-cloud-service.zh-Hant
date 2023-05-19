@@ -6,7 +6,7 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 72%
+ht-degree: 74%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 72%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispoverview"
 >title="雲端中的 Dispatcher"
->abstract="本頁說明如何下載和擷取Dispatcher工具（支援的Apache模組），並提供舊版和彈性模式的概觀。"
+>abstract="本頁面說明如何下載和擷取 Dispatcher 工具、受支援的 Apache 模組，並提供對傳統模式和靈活模式的概略介紹。"
 
 ## 簡介 {#apache-and-dispatcher-configuration-and-testing}
 

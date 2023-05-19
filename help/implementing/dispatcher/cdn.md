@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 15%
+ht-degree: 25%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 15%
 
 AEM as Cloud Service 會隨附內建的 CDN。 其主要用途，就是透過從瀏覽器附近的邊緣 CDN 節點傳遞可快取的內容，以便減少延遲的情形。它已完全受管理，並且已設定為提供最佳的 AEM 應用程式效能。
 
-AEM管理的CDN可滿足大部分客戶的效能和安全需求。 對於發佈層級，客戶可選擇從自己必須管理的CDN指向該層級。 您可根據符合特定必要條件，逐個允許此情境，包括但不限於與其CDN廠商進行舊版整合且難以放棄的客戶。
+AEM管理的CDN可滿足大部分客戶的效能和安全需求。 對於發佈層級，客戶可以選擇從他們自己必須管理的 CDN 指向它。依不同個案可允許此情況，以滿足特定先決條件為基礎，包括但不限於客戶和他們的 CDN 供應商有一個難以放棄的舊版整合。
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
@@ -45,7 +45,7 @@ AEM管理的CDN可滿足大部分客戶的效能和安全需求。 對於發佈�
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
 >title="客戶 CDN 會指向 AEM 管理的 CDN"
->abstract="AEM as Cloud Service 為客戶提供了使用其現有 CDN 的選項。對於發佈層級，客戶可選擇從自己必須管理的CDN指向該層級。 您可根據符合特定必要條件，逐個允許此情境，包括但不限於與其CDN廠商進行舊版整合且難以放棄的客戶。"
+>abstract="AEM as Cloud Service 為客戶提供了使用其現有 CDN 的選項。對於發佈層級，客戶可以選擇從他們自己必須管理的 CDN 指向它。依不同個案可允許此情況，以滿足特定先決條件為基礎，包括但不限於客戶和他們的 CDN 供應商有一個難以放棄的舊版整合。"
 
 如果客戶必須使用其現有的CDN，他們可以管理CDN並將其指向AEM管理的CDN，但須符合下列條件：
 
