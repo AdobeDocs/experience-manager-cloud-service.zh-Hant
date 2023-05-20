@@ -3,7 +3,7 @@ title: AEM Headless as a Cloud Service 快速入門
 description: 在 AEM Headless 開發人員歷程的這一部分，了解 AEM Headless 先決條件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 100%
 

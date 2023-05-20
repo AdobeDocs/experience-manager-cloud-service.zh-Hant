@@ -105,7 +105,7 @@ AEM as a Cloud Service預配置了 Adobe Identity Management 系統 (也稱為 I
 
 ## 其他資源 {#additional-resources}
 
-如果您想要超越入門歷程的內容，以下是其他選用資源。
+如果您想超越登機旅程的內容，請選擇以下附加資源。
 
 * [Admin Console 總覽](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)- Admin Console 的全面總覽
 * [建立或更新您的 Adobe ID](https://helpx.adobe.com/tw/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - 了解如何建立、更改和管理多個 Adobe ID。

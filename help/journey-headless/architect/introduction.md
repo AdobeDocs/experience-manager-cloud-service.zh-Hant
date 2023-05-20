@@ -3,7 +3,7 @@ title: AEM as a Headless CMS 內容模型 - 簡介
 description: 介紹使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能為您的專案建立內容模型。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 100%
 

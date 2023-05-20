@@ -2,50 +2,50 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 版發行說明。'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 24%
+ht-degree: 38%
 
 ---
 
-# 的最新發行說明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 目前發行說明 {#release-notes}
 
-以下章節概述目前（最新）版本的一般發行說明 [!DNL Experience Manager] as a Cloud Service。
-
->[!NOTE]
->
->您可從這裡導覽至舊版的發行說明；例如，2020年、2021年等。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的一般發行說明。
 
 >[!NOTE]
 >
->請參閱 [近期檔案更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 如需與版本不直接相關的檔案更新詳細資訊。
+>從這裡，您可以瀏覽至舊版的發行說明；例如，2020、2021 等版本。
+
+>[!NOTE]
+>
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
-發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新發行(2021.9.0)為2021年10月6日。
-下列版本(2021.10.0)將於2021年11月4日發行。
+發佈日期 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] 當前版本(2021.9.0)為2021年10月6日。
+以下版本(2021.10.0)是2021年11月4日。
 
 ## 發行影片 {#release-video}
 
-查看 [2021年9月發行概述](https://video.tv.adobe.com/v/337381) 視訊，以取得新增功能的摘要。
+看看 [2021年9月發佈概述](https://video.tv.adobe.com/v/337381) 視頻，瞭解添加的功能的摘要。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 中的新功能 [!DNL Sites] 預發行管道 {#sites-prerelease-features}
+### 中的新功能 [!DNL Sites] 預釋放通道 {#sites-prerelease-features}
 
-* 內容片段模型現在會在發佈後自動設為唯讀狀態，以避免重新發佈已編輯的模型後，無意中中斷即時API查詢。 嘗試編輯已發佈的模型時，系統會提示使用者警告。 接受警告後即可進行編輯。
+* 內容片段模型在發佈後將自動設定為只讀狀態，以避免在重新發佈已編輯的模型後無意中中斷即時API查詢。 嘗試編輯已發佈模型時，系統會提示用戶出現警告。 接受警告後可進行編輯。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 中的新功能 [!DNL Assets] {#assets-features}
+### [!DNL Assets] 中的新功能 {#assets-features}
 
-* 使用者現在可以在「欄」和「卡片」檢視中，對搜尋結果中顯示的資產進行排序。 排序適用於「名稱」、「已建立」、「已修改」或「無」欄。
+* 用戶現在可以對搜索結果中顯示的「列」和「卡」視圖中的資產進行排序。 排序在「名稱」(Name)、「已建立」(Created)、「已修改」(Modified)或「無」(None)列上工作。
 
-   ![在中排序搜尋結果 [!DNL Assets] 欄和卡片檢視中](/help/assets/assets/sort-searched-assets.png)
-   *圖：在中排序搜尋結果 [!DNL Assets] 欄和卡片檢視。*
+   ![對搜索結果排序 [!DNL Assets] 列和卡視圖中](/help/assets/assets/sort-searched-assets.png)
+   *圖：對搜索結果排序 [!DNL Assets] 的子菜單。*
 
-* 為了利用資產微服務以程式設計方式叫用處理，引入了新的API。 開發人員現在可以對資料夾中的一或多個特定資產套用現有的資料夾層級處理設定檔。 系統會根據自訂中繼資料屬性更新套用處理設定檔。 請參閱 `AssetProcessor` 在 [[!DNL Experience Manager] API參考](https://www.adobe.io/experience-manager/reference-materials/). 和以前一樣， [從使用者介面使用資產微服務](/help/assets/asset-microservices-configure-and-use.md).
+* 為了用資產微服務寫程式調用處理，引入了新的API。 開發人員現在可以將現有資料夾級處理配置檔案應用於資料夾中的一個或多個特定資產。 基於自定義元資料屬性更新應用處理配置檔案。 請參閱 `AssetProcessor` 的 [[!DNL Experience Manager] API引用](https://www.adobe.io/experience-manager/reference-materials/)。 和以前一樣， [從用戶介面使用asset microservices](/help/assets/asset-microservices-configure-and-use.md)。
 
 <!-- Leave this commented.
 
@@ -70,7 +70,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **輕鬆地將 AEM Forms 連線到 Microsoft Dynamics 和 Salesforce**：此服務會提供 Microsoft Dynamics 和 Salesforce 適用的資料模型，好讓[開發人員更快且更輕鬆地將 Microsoft Dynamics 和 Salesforce 設定為最適化表單的資料來源](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en)。
 
-* **使用 DocuSign 在最適化表單上進行電子簽名：** 您可以使用 DocuSign 在最適化表單上進行電子簽名。此服務會提供自訂提供動作，以搭配最適化表單使用 DocuSign。您可以安裝Software Distribution上可用的套件，以匯入提交動作。
+* **使用 DocuSign 在最適化表單上進行電子簽名：** 您可以使用 DocuSign 在最適化表單上進行電子簽名。此服務會提供自訂提供動作，以搭配最適化表單使用 DocuSign。您可以安裝軟體分發上可用的軟體包以導入提交操作。
 
 ### [!DNL Forms]的 Beta 版功能 {#sep-what-is-new-forms-prerelease}
 
@@ -85,134 +85,133 @@ CQ-4328183 was not reported on CS so not documented here.
 
 您可以寫信寄到 [!DNL formscsbeta@adobe.com] 來註冊 beta 版計劃。
 
-## CIF附加元件 {#cloud-services-cif}
+## CIF 附加元件 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* Sites編輯器中新的「關聯商務內容」索引標籤可快速存取目前內容的相關AEM產品內容，進而提高作者效率
+* 「站點」編輯器中新的「關聯商業內容」頁籤通過快速訪問當前上下文的AEM相關產品內容而提高了作者效率
 
-   ![關聯商務內容](/help/assets/CIF/associated-commerce-content.png)
+   ![關聯的商務內容](/help/assets/CIF/associated-commerce-content.png)
 
-* 改善產品選擇器UI，提供更佳的使用者體驗、更高的效率，以及對複雜產品目錄的支援
+* 改進了產品選取器UI，以獲得更好的用戶體驗、提高效率和支援複雜產品目錄
 
-   ![新產品選擇器](/help/assets/CIF/product-picker.png)
+   ![新產品選取器](/help/assets/CIF/product-picker.png)
 
-* 在導航元件中遵循「include_in_menu」屬性
+* 在導航元件中尊重&quot;include_in_menu&quot;屬性
 
 ### 錯誤修正 {#bug-fixes-cif}
 
-* 菜單快取刷新未如預期工作
+* 菜單快取刷新未按預期工作
 
-* AEM CS部署步驟期間和不使用clientside元件時的JS錯誤
+* CS部署步驟AEM和不使用客戶端元件時的JS錯誤
 
-* 無法在具有sling:configs節點的資料夾中建立CIF雲端設定
+* 無法在具有sling:configs節點的資料夾中建立CIF雲配置
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
 ### 新增功能 {#what-is-new-screens}
 
-* Screens as a Cloud Service現在支援基本播放監控。 播放器現在會報告各種播放量度，每次偵測（預設為30秒）。 它可根據量度偵測各種邊緣案例（停滯體驗、空白畫面、排程問題等）。 此功能可讓團隊遠端監視播放器是否正確播放內容，改善對空白畫面或欄位中中斷體驗的再活動，並降低向使用者顯示中斷體驗的風險。
-請參閱 [基本播放監控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) 以取得更多詳細資訊。
+* 螢幕as a Cloud Service現在支援基本的回放監視。 播放器現在將報告各種播放度量（預設為30秒）。 基於這些指標，它提供了檢測各種邊緣情況（停滯體驗、空白螢幕、調度問題等）的能力。 此功能允許團隊遠程監視玩家是否正確播放內容，提高對空白螢幕或現場中的中斷體驗的反應性，並降低向最終用戶顯示中斷體驗的風險。
+請參閱 [基本播放監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) 的子菜單。
 
-* Screens as a Cloud Service現在支援的視訊縮圖支援。 內容作者可以定義視訊的縮圖，以便影像可作為預留位置，並在適當團隊完成實際視訊時，正確測試內容播放和鎖定目標。 當視訊播放失敗時，也可以使用影像。
-請參閱 [影片的縮圖支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) 以取得更多詳細資訊。
+* 螢幕as a Cloud Service中現在支援的視頻縮略圖支援。 內容作者可以定義視頻的縮略圖，以便影像可以用作佔位符並正確地test內容回放和目標，同時由適當的團隊最終確定實際視頻。 在視頻回放失敗時，也可以使用影像。
+請參閱 [視頻縮略圖支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) 的子菜單。
 
 ### 錯誤修正 {#bug-fixes-screens}
 
-* 播放器無法顯示內嵌頁面的內容，此問題現已修正。
+* Player無法顯示嵌入頁面的內容，此問題現已解決。
 
-* 成功登入後，導覽至預設頁面（管道）最後會顯示「內部伺服器錯誤」頁面。
+* 成功登錄後，導航到預設頁（通道）後，將出現在「內部伺服器錯誤」頁。
 
-* 移除播放清單時，未移除相關的標籤項目。
+* 刪除播放清單時未刪除關聯的標籤項。
 
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
-### 中的新功能 [!DNL Experience Manager as a Cloud Service] {#foundation-features}
+### [!DNL Experience Manager as a Cloud Service] 中的新功能 {#foundation-features}
 
 **高級網路**
 
 >[!INFO]
 >
->進階網路功能是2021.9.0版的一部分，將於10月中旬為客戶啟用。
+>高級網路功能是2021.9.0版的一部分，將在10月中旬為客戶啟用。
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在提供多種類型的進階網路功能，包括：
+[!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] 現在提供多種類型的高級網路功能，包括：
 
-* 靈活的埠輸出，以將流量從非標準埠導出。 現在無需聯絡Adobe支援即可。
-* 專用的輸出IP位址，可從唯一IP將流量從AEMas a Cloud Service輸出，現在支援所有埠。
-* VPN以保護基礎架構與AEMas a Cloud Service之間的流量。
+* 靈活的埠出口，以將流量從非標準埠中排出。 現在可以不聯繫Adobe支援。
+* 專用出口IP地址，用於將通信從與AEM唯一IPas a Cloud Service的出口，現在支援所有埠。
+* VPN以保護基礎架構和AEMas a Cloud Service之間的通信。
 
-閱讀 [檔案](/help/security/configuring-advanced-networking.md) 如需詳細資訊，包括如何使用Cloud Manager API自助服務布建進階網路。
+閱讀 [文檔](/help/security/configuring-advanced-networking.md) 詳細資訊，包括如何使用Cloud Manager API自助配置高級網路。
 
-**索引最佳化**
+**索引優化**
 
-為了改善搜尋查詢和索引的效能，全文索引lucene-2不再於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 從此版本。 為了根據AEM客戶在AEM環境上移除此全文索引，Adobe工程部門會與客戶個別且主動地合作，以緩慢且持續地移除Lucene全文索引。 請造訪 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [檔案](/help/operations/indexing.md#index-optimizations) 如需詳細資訊，如有任何疑問，請直接聯絡我們的支援。
+為了提高搜索查詢和索引的效能，在中不再使用全文索引lucene-2 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] 從這個版本。 為了根據客戶刪除有關環境的AEM全文索引AEM,Adobe工程部門單獨和主動地與客戶合作，以溫和、可持續地刪除Lucene全文索引。 請訪問 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] [文檔](/help/operations/indexing.md#index-optimizations) 如有任何疑問，請直接聯繫我們的支援人員。
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述AEM 2021.9.0和2021.8.0as a Cloud Service中Cloud Manager的發行說明。
+本節概述了as a Cloud Service和中的Cloud ManagerAEM的2021.9.0行說2021.8.0。
 
 ## 發行日期 {#release-date-cm-sept}
 
-AEM 2021.9.0中的Cloud Manageras a Cloud Service日期為2021年9月9日。
-下一版預計於2021年10月7日發行。
+AEM as a Cloud Service 2021.9.0 中的 Cloud Manager 發行日期是 2021 年 9 月 09 日。下一版計畫於2021年10月7日發行。
 
 ### 新增功能 {#what-is-new-cm-sept}
 
-* Cloud Manager使用的AEM專案原型版本已更新為30版。
+* Cloud Manager 使用的 AEM 專案原型版本已更新至版本 30。
 
-* Cloud Manager登陸頁面上的方案卡片和相關聯的體驗已重新整理。
+* Cloud Manager 登陸頁面上的計劃卡片及關聯的體驗現在都已更新。
 
-* 程式碼品質步驟記錄現在包含OakPal掃描程式的詳細記錄資訊。
+* 計劃碼品質步驟記錄現在包含有關 OakPal 掃描程序的詳細記錄資訊。
 
-* 「活動」頁面功能表選項現在包含 **下載記錄檔** 完成的代碼生成器執行。 選取此選項將下載建置步驟的記錄檔。
+* 活動頁面選單將包含一個選項，用於&#x200B;**下載已完成的計劃碼產生器執行的記錄**。選取此項將下載建置步驟的記錄。
 
-* 直接按一下「方案」卡片，現在會導覽至「Cloud Manager概觀」頁面。
+* 直接按一下程式卡將立即導航至Cloud Manager概述頁。
 
 ### 錯誤修正 {#bug-fixes-sept}
 
-* 在程式中新增IP允許清單時，使用者現在會看到更容易理解的訊息，此程式已達到可設定的IP允許清單允許數量上限。
+* 現在，當嘗試在程序中新增新的 IP 允許清單時，使用者將看到一條更易於理解的消息，該程序已達到可配置的 IP 允許清單的最大允許數量。
 
-* 從「儲存庫」螢幕選擇「複製URL」菜單選項時，複製了錯誤的URL。
+* 從存放庫畫面選擇複製 URL 選單選項時復制了錯誤的 URL。
 
 ## Cloud Acceleration Manager {#cam}
 
 ### 發行日期 {#release-date-october-cam}
 
-Cloud Acceleration Manager的發行日期為2021年10月4日。
+Cloud Acceleration Manager的發佈日期為2021年10月4日。
 
 ### 新增功能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager現在讓使用者能以可列印的預覽方式檢視BPA報表，輕鬆列印或列印至PDF，以方便共用。 請參閱 [使用最佳實務分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Cloud Acceleration Manager現在允許用戶在可打印預覽中查看BPA報告，從而允許簡單打印或打印到PDF，以便於共用。 請參閱中的步驟6和7 [使用最佳做法分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis)。
 
 ## 內容轉移工具 {#content-transfer-tool}
 
 ### 發行日期 {#release-date-ctt-latest}
 
-內容轉移工具1.6.0版的發行日期為2021年10月4日。
+內容傳輸工具v1.6.0的發佈日期為2021年10月4日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 透過簡化的使用者體驗改善使用者對應，包括下列功能。 如需詳細資訊，請參閱 [使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
-   * 在執行使用者對應之前，測試與使用者管理API的連線
-   * 適度略過錯誤，並繼續進行「使用者對應」活動
-   * 如果存取權杖過期（24小時後），使用者對應不再失敗。 可以從上次停止的位置重新運行用戶映射。
+* 通過簡化的用戶體驗改進了用戶映射，包括下面列出的以下功能。 有關詳細資訊，請參閱 [使用用戶映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=zh-Hant#using-user-mapping-tool)。
+   * Test到用戶管理API的連接，然後運行用戶映射
+   * 順利跳過錯誤並繼續「用戶映射」活動
+   * 如果訪問令牌過期（24小時後），用戶映射不再失敗。 可以從上次停止的位置重新運行用戶映射。
 
-* 為了提高CTT的健全性，一次可將內容擷取至「製作」例項或「發佈」例項。
+* 為了增強CTT的健壯性，可以一次將內容攝取到Author實例或Publish實例。
 
-* 包含版本時，路徑 `/var/audit` 會自動納入，以移轉稽核事件。
+* 包含版本時，路徑 `/var/audit` 自動包含以遷移審核事件。
 
-## Best Practices Analyzer {#best-practices-analyzer}
+## 最佳做法分析工具 {#best-practices-analyzer}
 
 ### 發行日期 {#release-date-bpa-latest}
 
-Best Practices Analyzer v2.1.18的發行日期為2021年9月2日。
+最佳做法分析器2.1.18版的發佈日期為2021年9月2日。
 
 ### 新增功能 {#what-is-new}
 
-* 偵測和報告總節點計數的功能。
+* 能夠檢測並報告節點總數。
 
-* 偵測及報告節點存放區類型和大小的功能。
+* 能夠檢測並報告節點儲存類型和大小。
 
 ### 錯誤修正 {#bug-fixes-bpa}
 
-* BPA錯誤偵測是否存在商務整合架構。
+* BPA錯誤地檢測了Commerce Integration Framework的存在。

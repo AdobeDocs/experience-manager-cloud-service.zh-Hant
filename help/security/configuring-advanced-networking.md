@@ -3,7 +3,7 @@ title: 為 AEM as a Cloud Service 設定進階網路
 description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，例如 VPN 或彈性或專用輸出 IP 地址等
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 67e801cc22adfbe517b769e829e534eadb1806f5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3053'
 ht-degree: 100%
 

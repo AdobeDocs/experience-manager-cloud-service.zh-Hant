@@ -1,17 +1,17 @@
 ---
-title: Cloud Acceleration Manager中的實作階段
-description: 本頁概述Cloud Acceleration Manager的實作階段。
+title: 雲加速管理器的實施階段
+description: 本頁概述了Cloud Acceleration Manager中的實施階段。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 source-git-commit: cba5dccd3b66220bbcd6d3b4dd5298702902b0e5
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
-# Cloud Acceleration Manager中的實作階段 {#implementation-phase-cam}
+# 雲加速管理器的實施階段 {#implementation-phase-cam}
 
-實作階段包括：
+實施階段包括：
 
 * [本機開發](#local-development)
 * [程式碼重構](#code-refactoring)
@@ -19,97 +19,97 @@ ht-degree: 3%
 * [內容轉移](#content-transfer)
 
 
-按一下您的專案卡，開啟專案登陸頁面並導覽至 **實作** 部分，如下圖所示。
+按一下項目卡以開啟項目登錄頁並導航到 **實施** 的下界。
 
 ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->請參閱 [在Cloud Acceleration Manager中建立和管理專案](getting-started-cam.md#create-project) 了解更多。
+>請參閱 [在雲加速管理器中建立和管理項目](getting-started-cam.md#create-project) 來瞭解更多資訊。
 
 
-## 使用本機開發卡 {#local-development}
+## 使用本地開發卡 {#local-development}
 
-「本機開發」卡提供所有相關內容，可協助您在開始移轉歷程的「實作」階段時，設定本機AEM開發環境。
+「本地開發」卡提供所有相關內容，這些內容將幫助您AEM在開始遷移過程的「實施」階段時設定本地開發環境。
 
-請依照本節，探索「本機開發」活動卡：
+按照本節介紹「本地開發」活動卡：
 
-1. 按一下 **檢視** 按鈕 **地方開發** 卡片。
+1. 按一下 **視圖** 按鈕 **地方發展** 卡。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
-1. 內容輪播會顯示移轉歷程這個階段的相關資訊。
+1. 內容傳送器顯示遷移過程的這一階段的相關資訊。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
 
 
-## 使用程式碼重構卡 {#code-refactoring}
+## 使用代碼重構卡 {#code-refactoring}
 
-「程式碼重構」活動卡片提供所有相關資訊，並反白顯示移至AEM as a Cloud Service時，您需要檢閱和解決的程式碼重構區域。
+「代碼重構」活動卡提供了所有相關資訊，並突出顯示了在轉到AEMas a Cloud Service時需要檢查和解決的代碼重構區域。
 
-請依照以下小節來探索「程式碼重構」活動卡：
+按照本節瀏覽「代碼重構」活動卡：
 
-1. 按一下 **檢閱** 按鈕 **程式碼重構** 活動卡。
+1. 按一下 **審閱** 按鈕 **代碼重構** 活動卡。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
-1. 頁面顯示依嚴重性層級組織的程式碼重構活動清單。 您可以按一下兩個醒目提示的圖示，以深入了解。
+1. 此頁顯示按嚴重性級別組織的代碼重構活動的清單。 按一下兩個突出顯示的表徵圖可瞭解更多資訊。
 
-   頁面會在三個不同的標籤中顯示程式碼重構考量事項：
+   該頁在三個不同的頁籤中顯示代碼重構注意事項：
 
    * 概觀
    * Dispatcher
    * 測試
 
 >[!NOTE]
->請查看這些頁簽中的內容，了解Best Practices Analyzer未涵蓋的其他部分。
+>請查看這些頁籤中的內容，瞭解最佳做法分析器未涵蓋的其他部分。
 
-此 **Dispatcher** 標籤提供如何構建AEMas a Cloud ServiceApache和Dispatcher設定的資訊，以及如何在部署至雲端環境之前，在本機驗證和執行設定。 此外，也說明在雲端環境中進行除錯的方式。
+的 **調度程式** 頁籤提供有關如何構AEM造as a Cloud ServiceApache和Dispatcher配置的資訊，以及在部署到雲環境之前如何在本地驗證和運行它。 還介紹了在雲環境中的調試。
 
 ![影像](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-此 **測試** 索引標籤提供功能、體驗稽核和UI測試的相關資訊。
+的 **測試** 頁籤提供有關功能、體驗審核和UI測試的資訊。
 
 ![影像](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## 使用AEMas a Cloud Service部署卡 {#aem-as-a-cloud-service-deployment}
 
-AEMas a Cloud Service部署卡提供所有相關內容，可協助您將程式碼部署至AEMas a Cloud Service。
+AEMas a Cloud Service部署卡提供所有相關內容，幫助您將代碼部署到AEMas a Cloud Service。
 
-請依照本節所述，探索AEMas a Cloud Service部署卡活動卡：
+按照本部分瀏覽AEMas a Cloud Service部署卡活動卡：
 
-1. 按一下 **檢視** 按鈕 **AEMas a Cloud Service部署** 活動卡。
+1. 按一下 **視圖** 按鈕 **AEMas a Cloud Service部署** 活動卡。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
-1. 內容輪播會顯示移轉歷程這個階段的相關資訊。
+1. 內容傳送器顯示遷移過程的這一階段的相關資訊。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
-## 使用內容轉移卡 {#content-transfer}
+## 使用內容傳輸卡 {#content-transfer}
 
-「內容轉移」卡片可讓您開始及管理從目前的AEM例項到AEMas a Cloud Service的內容轉移。
+內容傳輸卡允許您啟動和管理從當前實例到AEMas a Cloud Service的內AEM容傳輸。
 
-請依照以下章節，探索「內容轉移」活動卡：
+按照本節來瀏覽內容傳輸活動卡：
 
-1. 按一下 **檢閱** 按鈕 **內容轉移** 活動卡。
+1. 按一下 **審閱** 按鈕 **內容傳輸** 活動卡。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. 若要開始內容轉移，您需要建立移轉集。 按一下 **建立移轉集**. 移轉集可讓內容轉移至AEMas a Cloud Service。
+1. 要啟動內容傳輸，您需要建立遷移集。 按一下 **建立遷移集**。 遷移集允許內容傳輸到AEMas a Cloud Service。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
-   >請注意，移轉集將在長時間閒置後過期。 請查閱 [遷移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
+   >請注意，遷移集將在長時間處於非活動狀態後過期。 請查看 [遷移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 的雙曲餘切值。
 
    >[!NOTE]
-   >請查看 [必要條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) 和 [最佳實務與准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 內容轉移工具前，請先確認。
+   >請查看 [先決條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) 和 [最佳做法和准則](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 使用內容傳輸工具之前。
 
-1. 您需要下載並安裝「內容轉移工具」，以填入移轉集並完成內容轉移的提取階段。 檢閱 [內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) 了解如何使用「內容轉移工具」。
+1. 您需要下載並安裝內容傳輸工具以填充遷移集並完成內容傳輸的提取階段。 審閱 [內容傳輸工具入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) 瞭解如何使用內容傳輸工具。
 
-1. 若要從AEMas a Cloud Service的移轉集擷取內容至環境，您需要開始擷取。 導覽至 **擷取工作** 按一下 **新擷取**. 檢閱 [將內容擷取至Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) 了解如何完成內容轉移的擷取階段。
+1. 要將遷移集中的內容從as a Cloud Service上的AEM環境中攝取，您需要開始攝取。 導航到 **攝取作業** 按一下 **新攝取**。 審閱 [將內容插入目標](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) 瞭解如何完成內容傳輸的接收階段。
 
    ![影像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
@@ -128,4 +128,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## 下一步 {#whats-next}
 
-一旦您了解如何登入Cloud Acceleration Manager以及如何運用實作階段，現在就可以開始檢閱 [上線階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html).
+一旦您學會了如何登錄到Cloud Acceleration Manager以及如何利用實施階段，您現在就可以繼續查看中的下一步 [上線階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html)。

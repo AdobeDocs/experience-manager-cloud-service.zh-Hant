@@ -26,11 +26,11 @@ ht-degree: 82%
 
    ![Cloud Manager 登陸頁面](assets/log-in.png)
 
-1. 選擇 **為生產環境設定** 在「建立程式」嚮導中建立生產程式並提供程式名。
+1. 選擇 **為生產設定** 在「建立程式」嚮導中建立生產程式並提供程式名稱。
 
    ![建立計畫精靈](assets/create-production-program.png)
 
-1. （可選）通過將影像檔案拖放到 **添加程式影像** target或按一下它，從檔案瀏覽器中選取影像。 點選或按一下&#x200B;**繼續**。
+1. （可選）通過將影像檔案拖放到 **添加程式映像** 目標，或按一下它從檔案瀏覽器中選擇影像。 點選或按一下&#x200B;**繼續**。
 
 1. 如果您擁有增強式安全性權限，**增強式安全性**&#x200B;索引標籤將為您的生產計畫提供&#x200B;**啟用增強式安全性**&#x200B;的選項。如有需要，請選取啟用增強式安全性的選項，然後點選或按一下&#x200B;**繼續**。
 
@@ -41,7 +41,7 @@ ht-degree: 82%
 
 1. 在&#x200B;**解決方案和附加元件**&#x200B;索引標籤上，選取要納入計畫中的解決方案。
 
-   * 如果您不確定您是否需要一個或多個程式來處理您可用的各種解決方案，請選取您最感興趣的方案。 您可以透過 [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 稍後。 請參閱 [生產計畫文檔簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 有關更多方案設定建議。
+   * 如果您不確定是否需要一個或多個程式來處理您可用的各種解決方案，請選擇您最感興趣的方案。 您可以通過 [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 再說。 查看 [生產計畫文檔簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 的子菜單。
    * 如果您之前選取了&#x200B;**啟用增強式安全性**，您將只能選取可使用 HIPAA 權限的解決方案。
 
    ![選取解決方案](assets/setup-prod-select.png)

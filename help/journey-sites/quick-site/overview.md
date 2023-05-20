@@ -3,7 +3,7 @@ title: AEM 快速網站建立歷程
 description: 從這裡開始，此歷程會逐步引導您了解簡單易用的 AEM 快速網站建立工具，以簡化 AEM 網站的前端開發，並在沒有 AEM 後端知識的情況下快速自訂您的網站。
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1030'
 ht-degree: 100%
 

@@ -12,44 +12,44 @@ ht-degree: 58%
 
 # 入門歷程 {#onboarding-journey}
 
-恭喜您選擇了 AEM as a Cloud Service！本文件將逐步引導您了解入門流程。無論您是部署新應用程式還是移轉現有應用程式，此入門歷程都能確保您的團隊已完成設定，且可存取AEMas a Cloud Service。
+恭喜您選擇了 AEM as a Cloud Service！本文件將逐步引導您了解入門流程。無論您是部署新應用程式還是遷移現有應用程式，此入門過程都可確保您的團隊已建立並可以訪問AEMas a Cloud Service。
 
 ## 簡介 {#introduction}
 
-入門是指指定系統管理員為您的組織設定 AEM as a Cloud Service 的過程。此程式包括初始布建雲端資源，並根據使用者的工作職責指派使用者至角色。 因此，每個成員都能登入並存取其AEMas a Cloud Service的資源。
+入門是指指定系統管理員為您的組織設定 AEM as a Cloud Service 的過程。此過程包括初始配置雲資源和根據用戶的工作職責將用戶分配給角色。 因此，每個成員都能夠登錄並訪問其資源在AEMas a Cloud Service。
 
 ![入門歷程](/help/journey-onboarding/assets/onboarding-journey.png)
 
-本指南會引導您了解最重要的入門主題，以便您在完成時能有下列內容：
+本指南引導您瞭解最重要的登機主題，以便完成後您可以執行以下操作：
 
 * 充分了解入門流程中涉及的不同條款、服務和使用者。
 * 使您的團隊能夠啟動和執行，並邁出學習如何為您的 AEM as a Cloud Service 應用程式編寫和開發內容的第一步。
 
 因此：
 
-* 您的團隊已設定且可存取雲端資源。
-* AEM作者可存取AEMas a Cloud Service，並可開始建立內容。
-* AEM開發人員和部署管理員可存取AEMas a Cloud Service，並可開始建立和部署自訂應用程式。
+* 您的團隊已建立並有權訪問雲資源。
+* 作AEM者可以訪AEM問as a Cloud Service並開始建立內容。
+* 開AEM發人員和部署經理可以訪AEM問as a Cloud Service，並可以開始建立和部署自定義應用程式。
 
 ## 概念和目標 {#concepts}
 
 儘管在開始使用 AEM as a Cloud Service 時可能需要學習很多東西，但從概念的角度來看，這只分為幾個邏輯部分。
 
-* **合同**  — 您必須熟悉Adobe合約，因為合約會定義上線程的各個方面。
-* **Admin Console**  — 管理使用者並指派角色的位置。
-* **Cloud Manager**  — 設定資源（如方案和環境）的工具。 您也可在此處存取 Git 和建立管道，以管理和部署自訂程式碼。
+* **合同**  — 您必須熟悉您的Adobe合同，因為合同定義了登機過程的各個方面。
+* **Admin Console**  — 管理用戶和分配角色的位置。
+* **雲管理器**  — 設定資源（如方案和環境）的工具。 您也可在此處存取 Git 和建立管道，以管理和部署自訂程式碼。
 
-這些概念在入門歷程中會詳細說明。 目標是在歷程結束時，您：
+這些概念在登機旅程中作了詳細闡述。 目標是在歷程結束時，您：
 
-* 已授予必要使用者AEM as a Cloud Service的存取權。
+* 已授予必要用戶訪問AEMas a Cloud Service。
 * 已為您的專案設定了第一個雲端資源.
 * 知道如何部署您的第一個程式碼並製作您的第一個內容。
 
-基本上，您的新AEMas a Cloud Service專案已順利展開！
+基本上，你用你的新as a Cloud Service項目AEM開始了！
 
 ## 對象 {#audience}
 
-入門歷程是專門為剛接觸 AEM as a Cloud Service 和一般 AEM 客戶的&#x200B;**系統管理員**&#x200B;編寫的。系統管理員是在簽署AEMas a Cloud Service合約後，Adobe首次聯絡的個人。 他們通常是第一個在AEM as a Cloud Service上存取和設定您資源的人。 如果您正在閱讀本主題，則可能是系統管理員。
+入門歷程是專門為剛接觸 AEM as a Cloud Service 和一般 AEM 客戶的&#x200B;**系統管理員**&#x200B;編寫的。系統管理員是在您的as a Cloud Service合同簽訂後，Adobe首次聯繫AEM到的個人。 他們通常是第一個訪問和設定您的資源的AEMas a Cloud Service。 如果您正在閱讀本主題，則可能是系統管理員。
 
 系統管理員會管理其組織 AEMaaCS 使用者的各個方面，從存取權到權限都是。但是，系統管理員必須在此過程中與其他角色進行互動。
 
@@ -64,11 +64,11 @@ ht-degree: 58%
 
 >[!TIP]
 >
->若您是初次接觸AEM as a Cloud Service並熟悉AEM，且要從內部部署或Adobe Managed Services移轉，請務必查看 [AEMas a Cloud Service移轉歷程](/help/journey-migration/getting-started.md).
+>如果您對as a Cloud ServiceAEM和熟悉AEM有新的瞭解，並且要從內部或Adobe托管服務進行遷移，請務必簽出 [AEMas a Cloud Service遷移](/help/journey-migration/getting-started.md)。
 
 ## 入門歷程總覽 {#overview}
 
-以下文章詳細介紹了核心入門概念，並為您提供了 AEM as a Cloud Service 的基礎知識。儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。因此，如果您剛上線，Adobe建議您從頭開始，並依序進行。
+以下文章詳細介紹了核心入門概念，並為您提供了 AEM as a Cloud Service 的基礎知識。儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。因此，如果您是新入職者，Adobe建議您從開始開始按順序開始。
 
 | # | 文章 | 說明 | 對象 |
 |---|---|---|---|
@@ -80,21 +80,21 @@ ht-degree: 58%
 | 5 | [存取 Cloud Manager](cloud-manager.md) | 了解如何存取 Cloud Manager，以便您可以設定專案資源。 | 系統管理員 |
 | 6 | [建立計畫](create-program.md) | 了解如何使用 Cloud Manager 建立計畫。 | 系統管理員 |
 | 7 | [建立環境](create-environments.md) | 了解如何使用 Cloud Manager 建立環境。 | 系統管理員 |
-| 8 | [指派 AEM 產品設定檔](assign-profiles-aem.md) | 了解系統管理員如何在AEM as a Cloud Service中將您的團隊成員指派給產品設定檔。 | 系統管理員 |
-| 9 | [開發人員和部署管理員工作](developers.md) | 選用 — 身為開發人員，了解如何存取和管理Cloud Manager Git，以及身為部署管理員，如何在Cloud Manager中設定管道和部署程式碼。 | 開發人員和部署管理員 |
-| 10 | [AEM 使用者工作](aem-users.md) | 選用 — 身為AEM作者，了解如何存取AEMas a Cloud Service例項，並熟悉AEMas a Cloud Service的編寫內容。 | AEM 使用者 |
+| 8 | [指派 AEM 產品設定檔](assign-profiles-aem.md) | 瞭解系統管理員如何將團隊成員分配到as a Cloud Service的產品配置AEM檔案。 | 系統管理員 |
+| 9 | [開發人員和部署管理員工作](developers.md) | 可選 — 作為開發人員，瞭解如何訪問和管理Cloud Manager Git，以及如何作為部署管理器在Cloud Manager中設定管道和部署代碼。 | 開發人員和部署管理員 |
+| 10 | [AEM 使用者工作](aem-users.md) | 可選 — 作為AEM作者，瞭解如何訪AEM問as a Cloud Service實例並熟悉as a Cloud Service的創作AEM內容。 | AEM 使用者 |
 
 ## 下一步 {#what-is-next}
 
-您現在已準備好開始您的 AEM as a Cloud Service 入門歷程。我們鼓勵您繼續前往歷程的下一個部分並閱讀文章 [入門準備](preparation.md)
+您現在已準備好開始您的 AEM as a Cloud Service 入門歷程。我們鼓勵您繼續下一段旅程，閱讀文章 [登機準備](preparation.md)
 
 ## AEM 文件歷程 {#documentation-journeys}
 
-[檔案歷程](/help/journey-documentation/documentation-journeys.md) 將許多不同、複雜的主題和特徵聯繫在一起。 它提供一種敘述，幫助剛接觸AEM的讀者從頭到尾了解並解決業務問題，同時假定先前主題或AEM知識最少。
+[文檔旅程](/help/journey-documentation/documentation-journeys.md) 將許多不同、複雜的主題和特徵聯繫起來。 它提供一種敘事，幫助新讀者從AEM頭到尾瞭解並解決業務問題，同時假定最少的先前主題或AEM知識。
 
 文件歷程根據最佳實務原則而設計，其中包含 Adobe 的最新研究、Adobe 顧問的成熟實作經驗以及客戶專案的意見回饋。
 
-如果您想了解Adobe建議如何讓您的團隊上線至新的AEMas a Cloud Service應用程式，請從這裡開始！
+如果您想瞭解Adobe建議如何將團隊裝入新as a Cloud Service應用程式，請AEM從此處開始！
 
 <!-- ERROR: Not Found (HTTP error 404)
 ## Additional Resources {#additional-resources}

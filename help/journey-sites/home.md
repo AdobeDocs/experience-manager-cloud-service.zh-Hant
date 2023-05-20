@@ -3,7 +3,7 @@ title: AEM Sites 歷程
 description: 從這裡開始，概要描述可用於了解 AEM 強大網站功能的引導式歷程。
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 100%
 

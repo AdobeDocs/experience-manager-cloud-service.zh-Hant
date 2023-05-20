@@ -1,13 +1,13 @@
 ---
 title: 使用 Universal Visual Editor 發佈內容
 description: 了解 Universal Visual Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
-source-git-commit: 7eeebade0255263a240476bc32f9530574495751
-workflow-type: ht
+exl-id: aee34469-37c2-4571-806b-06c439a7524a
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 100%
 
 ---
-
 
 # 使用 Universal Visual Editor 發佈內容 {#publishing}
 

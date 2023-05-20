@@ -3,7 +3,7 @@ title: 建立內容片段 - Headless 設定
 description: 了解如何使用 AEM 的內容片段來設計、建立、規劃和使用每頁自主的內容以進行無周邊傳遞。
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 100%
 

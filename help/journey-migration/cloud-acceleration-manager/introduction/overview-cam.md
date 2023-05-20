@@ -1,18 +1,18 @@
 ---
-title: Cloud Acceleration Manager概述
-description: 本頁概述Cloud Acceleration Manager。
+title: 雲加速管理器概述
+description: 本頁提供Cloud Acceleration Manager的概述。
 exl-id: 0b851eac-fdce-470c-9a14-15b41106086b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '85'
-ht-degree: 0%
+ht-degree: 30%
 
 ---
 
-# Cloud Acceleration Manager概述 {#overview-cam}
+# 雲加速管理器概述 {#overview-cam}
 
-Cloud Acceleration Manager是雲端型應用程式，旨在引導您的IT團隊完成從規劃到上線的整個轉換過程。Cloud Service 透過Adobe建議的最佳實務、提示、檔案和工具，為您的團隊設定成功的移轉作業，以協助您在前往AEM作為Cloud Service的歷程的每個階段。
+Cloud Acceleration Manager 是雲端型應用程式，旨在引導您的 IT 團隊進行從規劃到在 Cloud Service 上線的轉換歷程。通過Adobe建議的最佳實踐、提示、文檔和工具，為成功遷移建立團隊，以便在遷移過程的每個階段都提供AEMCloud Service幫助。
 
-觀看此影片以快速了解Cloud Acceleration Manager:
+觀看此視頻，快速瞭解Cloud Acceleration Manager的概述：
 
 >[!VIDEO](https://video.tv.adobe.com/v/335547)

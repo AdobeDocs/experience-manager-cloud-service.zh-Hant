@@ -11,49 +11,49 @@ ht-degree: 5%
 
 # AEM as a Cloud Service 中的基礎結構和服務監視 {#monitoring-in-aem-as-a-cloud-service}
 
-Adobe Experience Manager as a Cloud Service提供可觀察性和監控：基礎架構、服務和使用者體驗。 由於使用了各種解決方案，而且有數個監控層，因此本頁面會組織為三個區段：
+Adobe Experience Manager as a Cloud Service提供可觀察性和監控：基礎架構、服務和用戶體驗。 由於使用了各種解決方案，並且有多個監控層，因此本頁分為三部分：
 
 * [外部可用性](#external-availability)
 * [內部模組監控](#module-monitoring)
-* [客戶可觀察性](#customer-observability)
+* [客戶可觀性](#customer-observability)
 
-AEM as a Cloud Service每年會使用數百個雲端原生監視器，持續報告每(24/7)環境的狀態365天。 監視器定義不是靜態的，會持續審查，以改善早期偵測功能。 此外，Adobe還設定了應對警報的呼叫過程。
+AEMas a Cloud Service使用數百個雲本地監視器連續報告每個環境的狀態(24/7)，每年365天。 監視器定義不是靜態的，它們會不斷被審查以改進早期檢測能力。 此外，Adobe還設定了響應警報的呼叫過程。
 
-如果您需要其他監視類型的相關資訊，例如透過Cloud Manager進行記錄或監視，請參閱 [其他資源](#resources) 區段。
+如果您需要有關其他類型的監視（如通過雲管理器進行日誌記錄或監視）的資訊，請參閱 [其他資源](#resources) 的子菜單。
 
 ## 外部可用性 {#external-availability}
 
-外部可用性由兩部分組成：服務邊緣和自訂監控。
+外部可用性由兩部分組成：服務邊緣和自定義監視。
 
 ### 服務邊緣 {#service-edge}
 
-所有AEMas a Cloud Service環境都會受到監控以取得可用性。 不過，服務邊緣監控僅針對生產環境設定，而量度則用於計算客戶的SLA。 這會考量環境執行階段和AEMas a Cloud ServiceCDN。 「服務邊緣監控」採用五個與您所選區域相鄰的不同位置，並定期檢查可用性。 網站無法使用會觸發警報，並吸引Adobe的電話支援團隊和流程。
+您的所有AEMas a Cloud Service環境都受到可用性監控。 但是，服務邊緣監控僅針對生產環境設定，並且度量用於計算客戶的SLA。 它考慮了環境運行AEM時和as a Cloud ServiceCDN。 服務邊緣監控採用五個與您所選區域相鄰的不同位置，並定期檢查可用性。 站點的不可用將觸發警報，並會與Adobe的呼叫支援團隊和流程接洽。
 
-### 自訂監視 {#custom-monitoring}
+### 自定義監視 {#custom-monitoring}
 
-透過自訂監控，客戶可以選擇在之前提供最多五個不同的Web屬性URL [正式啟用](/help/journey-migration/go-live.md). 這些URL應有效，並傳回HTTP 200回應代碼。 這些監視器可支援 [自攜CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) 在AdobeCDN之前，以及AEMas a Cloud Service之前採用且不受Adobe控制的任何外部流量路由。 自訂監控檢查產生的警報將吸引Adobe的支援團隊和程式。
+通過自定義監視，客戶可以選擇在以前最多提供五個不同的Web屬性URL [活](/help/journey-migration/go-live.md)。 這些URL應有效並返回HTTP 200響應代碼。 這些顯示器支援客戶 [自帶CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) 在AdobeCDN前面，以及在不受Adobe控制的AEMas a Cloud Service前面使用的任何外部流量路由。 自定義監控檢查產生的警報將與Adobe的支援團隊和流程接洽。
 
 >[!NOTE]
 >
-> 此功能僅適用於具有進階雲端支援的客戶。 若您有任何疑問，請透過Admin Console提出支援案例。
+> 此功能僅面向具有高級雲支援的客戶。 如果您有任何問題，請通過管理控制台提出支援案例。
 
-## 內部模組監控 {#module-monitoring}
+## 內部模組監視 {#module-monitoring}
 
-雖然外部可用性主要集中在最終用戶監控上，但內部模組監控會觀察體系結構子系統是否在名義上運行，而沒有功能或效能降低。 在出現問題時，會觸發警報，以便自動或通過運營團隊的參與進行修復，以防止損壞的可用性。 監視器有不同類別，以下是一些示例檢查：
+雖然外部可用性側重於最終用戶監控，但內部模組監控會觀察體系結構子系統在名義上是否運行而沒有功能或效能降級。 在出現問題時，會觸發警報，以便可以自動或通過操作團隊的參與進行維修，以防止損壞的可用性。 監視器有多種類別，下面是一些示例檢查：
 
-* CPU超時百分比未超過某個閾值。
-* 執行個體重新部署不會超過特定頻率。
-* 磁碟使用量低於某個閾值。
-* 製作存放庫大小在特定範圍內。
+* CPUiowait百分比未超過某個閾值。
+* 實例重新部署不超過特定頻率。
+* 磁碟使用率低於某個閾值。
+* 作者儲存庫大小在一定範圍內。
 * 備份操作已成功完成。
-* 監控資料庫運行狀況和效能。
-* AEM雲端服務的運作如預期，包括未封鎖的復寫佇列、一致的資料和效能查詢。
+* 監視資料庫運行狀況和效能。
+* AEM雲服務的運行情況如預期，包括沒有阻止的複製隊列、一致的資料和效能查詢。
 
-已新增其他檢查至針對Forms布建的環境。 請記住，檢查定義不是靜態的，且可能會有所變更和更新。
+為Forms預配的環境添加了其他檢查。 請記住，檢查定義不是靜態的，會隨著更改和更新而改變。
 
-## 客戶可觀察性 {#customer-observability}
+## 客戶可觀性 {#customer-observability}
 
-客戶可使用 [New Relic應用程式效能監控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) 提供即時效能資料的套裝，可收集資料並繪製圖表以進行分析和疑難排解。 透過使用監控套裝，客戶可以直接觀察各種量度，例如：JVM效能度量、Java的事務時間、後台外部調用和資料庫調用。
+客戶可以 [New Relic應用程式效能監控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) 提供即時效能資料收集和圖表以便分析和故障排除的套件。 通過使用監控套件，客戶可以直接觀察各種指標，如：JVM效能度量、Java的事務時間、後台外部調用和資料庫調用。
 
 ## 其他資源 {#resources}
 

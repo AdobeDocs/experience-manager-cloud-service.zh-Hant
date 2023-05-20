@@ -3,7 +3,7 @@ title: 自訂程式碼品質規則
 description: 本頁說明了 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則。它們是根據 Adobe Experience Manager Engineering 的最佳實務。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3508'
 ht-degree: 100%
 

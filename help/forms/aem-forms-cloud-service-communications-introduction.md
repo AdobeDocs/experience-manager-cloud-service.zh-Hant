@@ -3,7 +3,7 @@ title: Forms as a Cloud Service 通訊簡介
 description: 自動將資料與 XDP 和 PDF 範本合併，或產生 PCL、ZPL 和 PostScript 格式的輸出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 100%
 

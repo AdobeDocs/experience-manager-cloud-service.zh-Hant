@@ -1,6 +1,6 @@
 ---
 title: 部署App Builder應用程式
-description: 了解如何部署App Builder應用程式。
+description: 瞭解如何部署App Builder應用程式。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 部署App Builder應用程式
 
-了解App Builder的部署意義，以及如何使用Adobe I/OCLI部署App Builder應用程式。
+瞭解部署對App Builder意味著什麼，以及如何使用Adobe I/OCLI部署App Builder應用程式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)

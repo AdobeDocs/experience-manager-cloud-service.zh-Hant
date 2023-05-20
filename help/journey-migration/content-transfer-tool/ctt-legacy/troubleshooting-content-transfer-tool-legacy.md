@@ -1,17 +1,17 @@
 ---
-title: 疑難排解內容轉移工具（舊版）
-description: 疑難排解內容轉移工具
+title: 排除內容傳輸工具故障（舊版）
+description: 內容轉移工具疑難排解
 hide: true
 hidefromtoc: true
 exl-id: b99f8f2b-b1b7-4ec1-b1d2-0efe83e17e91
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '182'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
-# 疑難排解內容轉移工具（舊版） {#troubleshoot-content-transfer-tool}
+# 排除內容傳輸工具故障（舊版） {#troubleshoot-content-transfer-tool}
 
 
 ## 遺失 Blob ID {#missing-blobs}

@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 中的視訊
-description: 了解如何在Dynamic Media中使用影片。 檢閱對視訊編碼、將視訊發佈至YouTube、檢視視訊報表，以及將隱藏式字幕、字幕或章節標籤新增至視訊的最佳實務。
+description: 瞭解如何在Dynamic Media使用視頻。 查看對視頻進行編碼、向YouTube發佈視頻、查看視頻報告以及向視頻添加隱藏字幕、字幕或章節標籤的最佳做法。
 contentOwner: Rick Brough
 feature: Video Profiles
 role: User
@@ -14,244 +14,244 @@ ht-degree: 2%
 
 # 影片 {#video}
 
-本節說明如何在Dynamic Media中使用影片。
+本節介紹在Dynamic Media使用視頻。
 
-## 快速入門：影片 {#quick-start-videos}
+## 快速啟動：視頻 {#quick-start-videos}
 
-下列逐步工作流程說明旨在協助您透過Dynamic Media中的最適化視訊集快速上手並執行。 在每個步驟之後，都會有主題標題的交叉參考，您可在其中找到詳細資訊。
+下面的逐步工作流描述旨在幫助您快速啟動並運行Dynamic Media的自適應視頻集。 在每個步驟之後，都會交叉引用主題標題，您可以在其中查找詳細資訊。
 
 >[!NOTE]
 >
->在Dynamic Media中處理視訊之前，請確定您的Adobe Experience Manager管理員已啟用並設定Dynamic MediaCloud Services。
+>在Dynamic Media處理視頻之前，請確保您的Adobe Experience Manager管理員已啟用並配置了Dynamic MediaCloud Services。
 >
->* 請參閱 [設定Dynamic MediaCloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) 在設定Dynamic Media和 [疑難排解Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
+>* 請參閱 [配置Dynamic MediaCloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) 配置Dynamic Media和 [排除Dynamic Media故障](/help/assets/dynamic-media/troubleshoot-dm.md)。
 >
 
 
-1. **上傳您的Dynamic Media影片** 執行下列操作：
+1. **上傳你的Dynamic Media視頻** 執行以下操作：
 
-   * 建立您自己的視訊編碼設定檔。 或者，您只需使用預先定義的 _最適化視訊編碼_ 隨附的設定檔Dynamic Media。
+   * 建立您自己的視頻編碼配置檔案。 或者，您只需使用預定義的 _自適應視頻編碼_ Dynamic Media的檔案。
 
-      * [建立視訊編碼設定檔](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
-      * 深入了解 [視訊編碼最佳作法](#best-practices-for-encoding-videos).
-   * 將視訊處理設定檔關聯至您要上傳主要來源視訊的一或多個資料夾。
+      * [建立視頻編碼配置檔案](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
+      * 瞭解有關 [視頻編碼的最佳做法](#best-practices-for-encoding-videos)。
+   * 將視頻處理配置檔案關聯到一個或多個資料夾，以上載主源視頻。
 
-      * [將視訊描述檔套用至資料夾](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-      * 深入了解 [組織數位資產](/help/assets/organize-assets.md).
-   * 將您的主要來源影片上傳至資料夾。 將視訊新增至資料夾時，會根據您指派給資料夾的視訊處理設定檔進行編碼。
+      * [將視頻配置檔案應用於資料夾](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
+      * 瞭解有關 [組織數字資產](/help/assets/organize-assets.md)。
+   * 將主源視頻上載到資料夾。 將視頻添加到資料夾時，會根據分配給資料夾的視頻處理配置檔案對它們進行編碼。
 
-      * Dynamic Media主要支援長度上限30分鐘、解析度大於25 x 25的短片影片。
-      * 您可以上傳每個高達15 GB的視訊檔案。
-      * [上傳您的影片](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
-      * 深入了解 [支援的輸入檔案格式](/help/assets/file-format-support.md).
-   * 監視方式 [視頻編碼正在進行](#monitoring-video-encoding-and-youtube-publishing-progress) 從資產或工作流程檢視。
-
-
+      * Dynamic Media主要支援長度最長為30分鐘、解析度最低大於25 x 25的短格式視頻。
+      * 您可以上傳每個高達15 GB的視頻檔案。
+      * [上傳視頻](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
+      * 瞭解有關 [支援的輸入檔案格式](/help/assets/file-format-support.md)。
+   * 監視方式 [視頻編碼正在進行](#monitoring-video-encoding-and-youtube-publishing-progress) 從資產或工作流視圖。
 
 
-1. **管理您的Dynamic Media影片** 執行下列任一操作：
 
-   * 組織、瀏覽及搜尋影片資產
 
-      * [組織數位資產](/help/assets/organize-assets.md)
-      * [搜尋視訊資產](/help/assets/search-assets.md#custompredicates) 或 [搜尋資產](/help/assets/manage-digital-assets.md#search-assets)
-   * 預覽和發佈視訊資產
+1. **管理您的Dynamic Media視頻** 執行下列任一操作：
 
-      * 檢視來源視訊和編碼的視訊轉譯及其相關縮圖：
-         [預覽影片](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 或 [預覽資產](/help/assets/dynamic-media/previewing-assets.md)
-         [管理視訊轉譯](/help/assets/manage-digital-assets.md#managing-renditions)
+   * 組織、瀏覽和搜索視頻資產
 
-      * [管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)
+      * [組織數字資產](/help/assets/organize-assets.md)
+      * [搜索視頻資產](/help/assets/search-assets.md#custompredicates) 或 [搜索資產](/help/assets/manage-digital-assets.md#search-assets)
+   * 預覽和發佈視頻資產
+
+      * 查看視頻的源視頻和編碼格式副本及其關聯的縮略圖：
+         [預覽視頻](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 或 [預覽資產](/help/assets/dynamic-media/previewing-assets.md)
+         [管理視頻格式副本](/help/assets/manage-digital-assets.md#managing-renditions)
+
+      * [管理查看器預設](/help/assets/dynamic-media/managing-viewer-presets.md)
       * [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-   * 使用視訊中繼資料
+   * 使用視頻元資料
 
-      * 編輯視訊的屬性，例如標題、說明和標籤、自訂中繼資料欄位：
-         [編輯視訊屬性](/help/assets/manage-digital-assets.md#editing-properties)
+      * 編輯視頻的屬性，如標題、說明和標籤、自定義元資料欄位：
+         [編輯視頻屬性](/help/assets/manage-digital-assets.md#editing-properties)
 
-      * [管理數位資產的中繼資料](/help/assets/manage-metadata.md)
+      * [管理數字資產的元資料](/help/assets/manage-metadata.md)
       * [中繼資料結構描述](/help/assets/metadata-schemas.md)
-   * 檢閱、核准及註解影片，並維護完整版本控制
+   * 查看、批准和注釋視頻，並維護完整的版本控制
 
-      * [為影片加上註解](/help/assets/manage-video-assets.md#annotate-video-assets) 或 [為資產加上註解](/help/assets/manage-digital-assets.md#annotating)
+      * [注釋視頻](/help/assets/manage-video-assets.md#annotate-video-assets) 或 [注釋資產](/help/assets/manage-digital-assets.md#annotating)
 
       * [建立版本](/help/assets/manage-digital-assets.md#asset-versioning)
-      * [在資產上啟動工作流程](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+      * [啟動資產的工作流](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
-      * [檢閱資料夾資產](/help/assets/bulk-approval.md)
+      * [審閱資料夾資產](/help/assets/bulk-approval.md)
       * [專案](/help/sites-cloud/authoring/projects/overview.md)
 
 
 
 
-1. **發佈您的Dynamic Media影片** 執行下列其中一項操作：
+1. **發佈你的Dynamic Media視頻** 執行下列操作之一：
 
-   * 如果您使用Experience Manager作為WCM（Web內容管理）系統，則可以直接將視訊新增至網頁。
+   * 如果將Experience Manager用作WCM（Web內容管理）系統，則可以直接將視頻添加到網頁。
 
-      * [將視訊新增至您的網頁](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
-   * 如果您使用協力廠商網頁內容管理系統，您可以將視訊連結或內嵌至您的網頁。
+      * [將視頻添加到網頁](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+   * 如果您使用第三方Web內容管理系統，則可以將視頻連結或嵌入到您的網頁。
 
-      * 使用URL整合視訊：
+      * 使用URL整合視頻：
          [將 URL 連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
-      * 使用網頁上的內嵌程式碼整合視訊：
-         [將視訊檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md).
-   * [產生視訊報表](#viewing-video-reports).
+      * 使用網頁上的嵌入代碼整合視頻：
+         [將視頻查看器嵌入網頁](/help/assets/dynamic-media/embed-code.md)。
+   * [生成視頻報告](#viewing-video-reports)。
 
-   * [向視頻添加字幕](#adding-captions-to-video).
+   * [將字幕添加到視頻](#adding-captions-to-video)。
 
 
 
-## 在Dynamic Media中使用影片 {#working-with-video-in-dynamic-media}
+## 在Dynamic Media使用視頻 {#working-with-video-in-dynamic-media}
 
-Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品質的最適化視訊，以在多個螢幕（包括桌上型電腦、平板電腦和行動裝置）上串流。 適用性視訊集將以不同位速率和格式（如400 kbps、800 kbps和1000 kbps）編碼的相同視訊的版本分組。 台式電腦或行動裝置會偵測可用頻寬。
+Dynamic Media的視頻是一種端到端解決方案，它使發佈高質量自適應視頻在多個螢幕（包括台式機、平板電腦和移動設備）上流動變得輕鬆。 自適應視頻集將以不同比特率和格式（如400 kbps、800 kbps和1000 kbps）編碼的同一視頻的版本分組。 台式電腦或移動設備檢測可用頻寬。
 
-例如，在iOS行動裝置上，會偵測頻寬，例如3G、4G或Wi-Fi。 然後，它自動從自適應視訊集內的各種視訊位速率中選取正確編碼的視訊。 視訊會串流至桌上型電腦、行動裝置或平板電腦。
+例如，在iOS移動設備上，它檢測3G、4G或Wi-Fi等頻寬。 然後，自動從自適應視頻集內的各種視頻比特率中選擇正確編碼的視頻。 視頻被流式傳輸到台式機、移動設備或平板電腦。
 
-此外，如果案頭或行動裝置上的網路條件改變，視訊品質會自動動態切換。 此外，如果客戶在桌上型電腦上進入全螢幕模式，適用性視訊集會使用更佳的解析度來回應，改善客戶的觀看體驗。 使用最適化視訊集，可讓客戶在多個畫面和裝置上播放Dynamic Media視訊，獲得最佳的播放效果。
+此外，如果案頭或移動設備上的網路狀況發生變化，則自動切換視頻質量。 此外，如果客戶在案頭上進入全屏模式，自適應視頻集會通過使用更好的解析度來響應，從而改善客戶的觀看體驗。 使用自適應視頻集為客戶在多個螢幕和設備上播放Dynamic Media視頻提供了最佳的可回放。
 
-視訊播放器用來判斷播放或播放期間要選取的編碼視訊的邏輯，是根據下列演算法：
+視頻播放器用於確定在回放期間播放或選擇哪些編碼視頻的邏輯基於以下算法：
 
-1. 視訊播放器會根據最接近播放器本身中為「初始位元速率」所設定的值的位元速率，載入初始視訊片段。
-1. 視訊播放器會根據頻寬速度的變更，使用下列條件進行切換：
+1. 視頻播放器基於與在播放器本身中為「初始比特率」設定的值最接近的比特率來載入初始視頻片段。
+1. 視頻播放器根據頻寬速度的更改使用以下標準進行切換：
 
-   1. 播放器會選擇低於或等於估計頻寬的最高頻寬流。
-   1. 播放器僅考慮可用頻寬的80%。 然而，如果它在轉換，則只有70%會更為保守，以避免高估，並立即重新轉換。
+   1. 播放器選擇低於或等於估計頻寬的最高頻寬流。
+   1. 玩家只考慮80%的可用頻寬。 但是，如果換了，就比較保守，只有70%，避免高估，立即換回。
 
-如需演算法的詳細技術資訊，請參閱 [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
+有關算法的詳細技術資訊，請參見 [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-若要管理單一視訊和最適化視訊集，支援下列項目：
+對於管理單個視頻和自適應視頻集，支援以下操作：
 
-* 從多種支援的視訊格式和音訊格式上傳視訊，並將視訊編碼為MP4 H.264格式，以便在多個畫面間播放。 您可以使用預先定義的最適化視訊預設集、單一視訊編碼預設集，或自訂自己的編碼以控制視訊的品質和大小。
+* 從多種支援的視頻格式和音頻格式上傳視頻，並將視頻編碼為MP4 H.264格式，以便在多個螢幕上播放。 可以使用預定義的自適應視頻預設、單個視頻編碼預設或自定義自己的編碼來控制視頻的質量和大小。
 
-   * 產生最適化視訊集時，會包含MP4視訊。
-   * **附註**:主要/來源視訊不會新增至最適化視訊集。
+   * 當生成自適應視頻集時，它包括MP4視頻。
+   * **注釋**:主/源視頻未添加到自適應視頻集。
 
-* 所有HTML5個視訊檢視器中的視訊字幕。
-* 透過完整的中繼資料支援，組織、瀏覽和搜尋視訊，以有效管理視訊資產。
-* 將最適化視訊集提供至網路和桌上型電腦、平板電腦和行動裝置。
+* 所有HTML5個視頻查看器中的視頻字幕。
+* 利用完整的元資料支援組織、瀏覽和搜索視頻，以有效管理視頻資產。
+* 向Web和台式機、平板電腦和移動設備提供自適應視頻集。
 
-各種iOS平台均支援最適化視訊串流。 請參閱 [Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+各種iOS平台支援自適應視頻流。 請參閱 [Dynamic Media觀眾參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)。
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that support this video format at the following [Supported video formats on Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
-* 使用Dynamic Media視訊檢視器預設集播放視訊，包括下列內容：
+* 使用Dynamic Media視頻查看器預設回放視頻，包括：
 
-   * 單一影片檢視器。
-   * 混合媒體檢視器，可結合視訊和影像內容。
+   * 單個視頻觀看器。
+   * 將視頻和影像內容組合在一起的混合媒體查看器。
 
-* 設定視訊播放器以符合您的品牌需求。
-* 將視訊與您的網站、行動網站或行動應用程式整合，並使用簡單的URL或內嵌程式碼。
+* 配置視頻播放器以滿足您的品牌推廣需求。
+* 將視頻與您的網站、移動站點或移動應用程式整合，並使用簡單的URL或嵌入代碼。
 
-請參閱 [動態視訊播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) 範例。
+請參閱 [動態視頻播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) 樣式。
 
-另請參閱 [Experience Manager Assets和Dynamic Media Classic的檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) 和 [僅限Experience Manager Assets的檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) 在 [Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+另請參閱 [Experience Manager Assets和Dynamic Media Classic觀眾](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) 和 [僅Experience Manager Assets觀眾](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) 的 [Dynamic Media觀眾參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)。
 
-## 最佳實務：使用HTML5視訊檢視器 {#best-practice-using-the-html-video-viewer}
+## 最佳做法：使用HTML5視頻查看器 {#best-practice-using-the-html-video-viewer}
 
-Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可以使用它們來避免許多與HTML5視訊播放相關的常見問題，以及與行動裝置相關的問題。 例如，缺乏最適化位元速率串流傳送，且案頭瀏覽器觸及範圍有限。
+Dynamic MediaHTML5視頻查看器預設是強大的視頻播放器。 您可以使用它們來避免許多與HTML5視頻播放相關的常見問題和與移動設備相關的問題。 例如，缺少自適應比特率流傳輸和案頭瀏覽器訪問限制。
 
-在播放器的設計端，您可以使用標準網頁開發工具來設計視訊播放器的功能。 例如，您可以使用HTML5和CSS來設計按鈕、控制項和自訂海報影像背景，以協助您以自訂外觀觸及客戶。
+在播放器的設計端，您可以使用標準Web開發工具設計視頻播放器的功能。 例如，您可以使用HTML5和CSS設計按鈕、控制項和自定義海報影像背景，以幫助您以自定義外觀接觸客戶。
 
-在檢視器的播放端，會自動偵測瀏覽器的視訊功能。 接著，它會使用HLS或DASH（也稱為最適化視訊串流）提供視訊。 或者，如果這些傳送方法不存在，則會改用HTML5漸進式。
+在查看器的播放端，它自動檢測瀏覽器的視頻功能。 然後，它使用HLS或DASH（也稱自適應視頻流）為視頻服務。 或者，如果這些傳遞方法不存在，則改用HTML5累進。
 
 >[!NOTE]
 >
->若要對您的影片使用DASH，必須先由您的帳戶上的Adobe技術支援啟用。 請參閱 [在您的帳戶上啟用DASH](#enable-dash).
+>要將DASH用於視頻，必須先通過帳戶上的Adobe技術支援來啟用它。 請參閱 [啟用帳戶上的DASH](#enable-dash)。
 
-您可以結合為單一播放器，使用HTML5和CSS來設計播放元件。 它可以有內嵌播放，並根據瀏覽器的功能使用最適化和漸進式串流。 所有這些功能都表示您可以將多媒體內容的觸及範圍擴展至案頭和行動使用者，並確保簡化視訊體驗。
+可以將使用HTML5和CSS設計回放元件的功能組合到單個播放器中。 它可以有嵌入式回放，並根據瀏覽器的功能使用自適應和漸進式流。 所有這些功能都意味著您可以將您的富媒體內容擴展到案頭用戶和移動用戶，並確保簡化的視頻體驗。
 
-另請參閱 [僅限Experience Manager Assets的檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) 在 [Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+另請參閱 [僅Experience Manager Assets觀眾](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) 的 [Dynamic Media觀眾參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)。
 
 
-### 使用HTML5視訊檢視器在桌上型電腦和行動裝置上播放視訊 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### 使用HTML5視頻查看器在台式電腦和移動設備上回放視頻 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
-針對案頭和行動最適化視訊串流，用於位元速率切換的視訊是以最適化視訊集中的所有MP4視訊為基礎。
+對於案頭和移動自適應視頻流，用於比特率切換的視頻基於自適應視頻集中的所有MP4視頻。
 
-使用HLS或DASH或漸進式視訊下載時，會發生視訊播放。 在舊版Experience Manager（例如6.0、6.1和6.2）中，視訊是透過HTTP串流。
+使用HLS或DASH或漸進式視頻下載進行視頻回放。 在以前的Experience Manager版本中，如6.0、6.1和6.2，視頻通過HTTP流式傳輸。
 
-不過，在Experience Manager6.3和上，視訊現在會透過HTTPS（即HLS或DASH）串流，因為DM閘道服務URL一律使用HTTPS。 此預設行為不會有客戶影響。 也就是說，除非瀏覽器不支援，否則視訊串流一律會透過HTTPS進行。 （請參閱下表）。
+但是，在Experience Manager6.3和ON中，視頻現在通過HTTPS（即HLS或DASH）流式傳輸，因為DM網關服務URL也始終使用HTTPS。 此預設行為不會對客戶產生影響。 即，除非瀏覽器不支援HTTPS，否則視頻流始終會通過HTTPS進行。 （見下表）。
 
-因此，
+所以，
 
-* 如果您的HTTPS網站採用HTTPS視訊串流，則串流沒問題。
-* 如果您的HTTP網站採用HTTPS視訊串流，串流沒問題，且網頁瀏覽器沒有混合的內容問題。
+* 如果您有一個HTTPS網站，其中包含HTTPS視頻流，則流處理是正常的。
+* 如果HTTP網站具有HTTPS視頻流，則流處理是正常的，並且Web瀏覽器中不存在混合內容問題。
 
-DASH是國際標準，HLS是Apple標準。 兩者皆用於最適化視訊串流。 而且，這兩種技術都會根據網路頻寬容量自動調整播放。 它也可讓客戶「搜尋」視訊中的任何點，而不需等待視訊的其餘部分下載。
+DASH是國際標準，HLS是Apple標準。 兩者都用於自適應視頻流。 而且，這兩種技術都可根據網路頻寬容量自動調整回放。 它還讓客戶可以「查找」到視頻中的任何點，而無需等待視頻的其餘部分下載。
 
-通過在用戶的案頭系統或移動設備上本地下載和儲存視頻來傳送漸進式視頻。
+通過在用戶的案頭系統或移動設備上本地下載和儲存視頻來傳送漸進視頻。
 
-下表說明使用的桌上型電腦和行動裝置上的視訊裝置、瀏覽器和播放方法 [Dynamic MediaHTML5視訊檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video).
+下表介紹了在台式電腦和移動設備上使用 [Dynamic MediaHTML5視頻查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video)。
 
 <table>
  <tbody>
   <tr>
    <td><strong>裝置</strong></td>
    <td><strong>瀏覽器</strong></td>
-   <td><strong>視訊播放模式</strong></td>
+   <td><strong>視頻播放模式</strong></td>
   </tr>
   <tr>
    <td>桌面</td>
    <td>Internet Explorer 9和10</td>
-   <td>漸進式下載。</td>
+   <td>逐步下載。</td>
   </tr>
   <tr>
    <td>桌面</td>
    <td>Internet Explorer 11+</td>
-   <td>在Windows® 8和Windows® 10上 — 每當請求DASH或HLS時，強制使用HTTPS。 已知限制：在此瀏覽器/作業系統組合中，HTTP on DASH或HLS無法運作<br /> <br /> 在Windows® 7上 — 漸進式下載。 使用標準邏輯來選取HTTP與HTTPS通訊協定。</td>
+   <td>在Windows® 8和Windows® 10上 — 只要請求DASH或HLS，就強制使用HTTPS。 已知限制：DASH或HLS上的HTTP在此瀏覽器/作業系統組合中不工作<br /> <br /> 在Windows® 7上 — 漸進式下載。 使用標準邏輯選擇HTTP與HTTPS協定。</td>
   </tr>
   <tr>
    <td>桌面</td>
-   <td>Firefox 23-44</td>
-   <td>漸進式下載。</td>
+   <td>火狐23-44</td>
+   <td>逐步下載。</td>
   </tr>
   <tr>
    <td>桌面</td>
-   <td>Firefox 45或更新版本</td>
-   <td>HLS或DASH*適用位元速率串流</td>
+   <td>Firefox 45或更高版本</td>
+   <td>HLS或DASH*自適應比特率流</td>
   </tr>
   <tr>
    <td>桌面</td>
-   <td>鉻黃</td>
-   <td>HLS或DASH*適用位元速率串流</td>
+   <td>鉻</td>
+   <td>HLS或DASH*自適應比特率流</td>
   </tr>
   <tr>
    <td>桌面</td>
-   <td>Safari(Mac)</td>
-   <td>HLS自適應位元速率串流</td>
+   <td>薩法里(Mac)</td>
+   <td>HLS自適應比特率流</td>
   </tr>
   <tr>
    <td>行動</td>
-   <td>Chrome(Android™ 6或更舊版本)</td>
-   <td>漸進式下載。</td>
+   <td>Chrome（Android™ 6或更早版本）</td>
+   <td>逐步下載。</td>
   </tr>
   <tr>
    <td>行動</td>
-   <td>Chrome(Android™ 7或更新版本)</td>
-   <td>HLS或DASH*適用位元速率串流/td&gt;
+   <td>Chrome（Android™ 7或更高版本）</td>
+   <td>HLS或DASH*自適應比特率流/td&gt;
   </tr>
   <tr>
    <td>行動</td>
    <td>Android™（預設瀏覽器）</td>
-   <td>漸進式下載。</td>
+   <td>逐步下載。</td>
   </tr>
   <tr>
    <td>行動</td>
-   <td>Safari(iOS)</td>
-   <td>HLS自適應位元速率串流</td>
+   <td>薩法里(iOS)</td>
+   <td>HLS自適應比特率流</td>
   </tr>
   <tr>
    <td>行動</td>
-   <td>Chrome(iOS)</td>
-   <td>HLS自適應位元速率串流</td>
+   <td>克羅姆語(iOS)</td>
+   <td>HLS自適應比特率流</td>
   </tr>
  </tbody>
 </table>
 
 >[!IMPORTANT]
 >
->*若要使用視訊的DASH，必須先由您的帳戶上的Adobe技術支援啟用。 請參閱 [在您的帳戶上啟用DASH](#enable-dash).)
+>*要將DASH用於視頻，必須先通過帳戶上的Adobe技術支援來啟用它。 請參閱 [啟用帳戶上的DASH](#enable-dash)。)
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
@@ -260,21 +260,21 @@ DASH是國際標準，HLS是Apple標準。 兩者皆用於最適化視訊串流�
   </tr>
  -->
 
-## Dynamic Media視訊解決方案架構 {#architecture-of-dynamic-media-video-solution}
+## Dynamic Media視頻解決方案的體系結構 {#architecture-of-dynamic-media-video-solution}
 
-下圖顯示影片的整體製作工作流程，這些影片會透過DMGateway上傳和編碼(在Dynamic Media混合模式中)，並可供公眾使用。
+下圖顯示了通過DMGateway(在Dynamic Media混合模式下)上傳和編碼並供公眾使用的視頻的總體創作工作流程。
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
-## 影片的混合發佈架構 {#hybrid-publishing-architecture-for-videos}
+## 用於視頻的混合發佈體系結構 {#hybrid-publishing-architecture-for-videos}
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
-## 編碼視訊的最佳作法 {#best-practices-for-encoding-videos}
+## 編碼視頻的最佳做法 {#best-practices-for-encoding-videos}
 
-此 **Dynamic Media編碼視訊** 如果您已啟用Dynamic Media並設定視訊Cloud Services，工作流程會對視訊進行編碼。 此工作流程會擷取工作流程處理歷程記錄和失敗資訊。如果您已啟用Dynamic Media並設定視訊Cloud Services，則 **[!UICONTROL Dynamic Media編碼視訊]** 上傳視訊時，工作流程會自動生效。 (如果您未使用Dynamic Media, **[!UICONTROL DAM更新資產]** 工作流程生效。)
+的 **Dynamic Media編碼視頻** 如果啟用了Dynamic Media並設定視頻Cloud Services，則工作流會對視頻進行編碼。 此工作流程會擷取工作流程處理歷程記錄和失敗資訊。如果您啟用了Dynamic Media並設定視頻Cloud Services, **[!UICONTROL Dynamic Media編碼視頻]** 當您上載視頻時，工作流將自動生效。 (如果你不用Dynamic Media, **[!UICONTROL DAM更新資產]** 工作流生效。)
 
-以下是編碼來源視訊檔案的最佳實務提示。
+以下是對源視頻檔案進行編碼的最佳做法提示。
 
 <!-- For advice about video encoding, see the following:
 
@@ -283,36 +283,36 @@ DASH是國際標準，HLS是Apple標準。 兩者皆用於最適化視訊串流�
 
 ### 源視頻檔案 {#source-video-files}
 
-為視訊檔案編碼時，請使用盡可能高品質的來源視訊檔案。 請避免使用先前編碼的視訊檔案，因為這些檔案已經壓縮，而進一步編碼會造成品質欠佳的視訊。
+對視頻檔案進行編碼時，請使用盡可能高質量的源視頻檔案。 避免使用以前編碼的視頻檔案，因為這些檔案已經壓縮，而進一步編碼會造成質量欠佳的視頻。
 
-* Dynamic Media主要支援長度上限30分鐘、解析度大於25 x 25的短片影片。
-* 您可以上傳最多15 GB的主要來源視訊檔案。
+* Dynamic Media主要支援長度最長為30分鐘、解析度最低大於25 x 25的短格式視頻。
+* 您可以上載每個高達15 GB的主源視頻檔案。
 
-下表說明了源視頻檔案編碼前必須具有的建議大小、外觀比例和最小比特率：
+下表介紹了在對源視頻檔案進行編碼之前必須具有的建議大小、長寬比和最小比特率：
 
 | 大小 | 外觀比例 | 最小比特率 |
 |--- |--- |--- |
-| 1024 X 768 | 4:3 | 大部分視訊為4500 kbps。 |
-| 1280 X 720 | 16:9 | 3000 - 6000 kbps，視訊中的運動量而定。 |
-| 1920 X 1080 | 16:9 | 6000 - 8000 kbps，視訊中的運動量而定。 |
+| 1024 X 768 | 4:3 | 4500 kbps，用於大多數視頻。 |
+| 1280 X 720 | 16:9 | 3000 - 6000 kbps，具體取決於視頻中的運動量。 |
+| 1920 X 1080 | 16:9 | 6000 - 8000 kbps，具體取決於視頻中的運動量。 |
 
-### 取得檔案的中繼資料 {#obtaining-a-file-s-metadata}
+### 獲取檔案的元資料 {#obtaining-a-file-s-metadata}
 
-您可以使用視訊的編輯工具檢視其中繼資料，或使用為取得中繼資料而設計的應用程式，以取得檔案的中繼資料。 以下是使用協力廠商應用程式MediaInfo來取得視訊檔案中繼資料的指示：
+您可以通過使用視頻編輯工具查看檔案的元資料或使用旨在獲取元資料的應用程式來獲取檔案的元資料。 以下是使用第三方應用程式MediaInfo獲取視頻檔案元資料的說明：
 
-1. 前往 [MediaInfo下載](https://mediaarea.net/en/MediaInfo/Download).
-1. 選擇並下載GUI版本的安裝程式，並按照安裝說明操作。
-1. 安裝後，按一下右鍵視頻檔案(僅限Windows®)並選擇MediaInfo，或開啟MediaInfo並將視頻檔案拖入應用程式。 您會看到與視訊檔案相關聯的所有中繼資料，包括其寬度、高度和fps。
+1. 轉到 [MediaInfo下載](https://mediaarea.net/en/MediaInfo/Download)。
+1. 選擇並下載GUI版本的安裝程式，並按照安裝說明進行操作。
+1. 安裝後，按一下右鍵視頻檔案（僅限Windows®）並選擇「MediaInfo」，或開啟MediaInfo並將視頻檔案拖到應用程式中。 您可以看到與視頻檔案關聯的所有元資料，包括其寬度、高度和fps。
 
 ### 外觀比例 {#aspect-ratio}
 
-當您選擇或建立主要來源視訊檔案的視訊編碼預設集時，請確定預設集與主要來源視訊檔案的外觀比例相同。 長寬比是視訊寬度與高度的比率。
+選擇或為主源視頻檔案建立視頻編碼預設時，請確保預設具有與主源視頻檔案相同的長寬比。 縱橫比是視頻寬度與高度的比值。
 
-若要確定視訊檔案的長寬比，請取得檔案的中繼資料，並記下檔案的寬度和高度（請參閱上方取得檔案的中繼資料）。 然後使用此公式來確定外觀比例：
+要確定視頻檔案的長寬比，請獲取檔案的元資料並記錄檔案的寬度和高度（請參閱上面的獲取檔案的元資料）。 然後使用此公式確定縱橫比：
 
-寬/高=長寬比
+寬高=寬高比
 
-下表說明公式結果如何轉換為通用外觀比例選擇：
+下表說明公式結果如何轉換為通用縱橫比選擇：
 
 | 公式結果 | 外觀比例 |
 |--- |--- |
@@ -321,169 +321,169 @@ DASH是國際標準，HLS是Apple標準。 兩者皆用於最適化視訊串流�
 | 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
-例如，寬度為1440 x 1080的視頻的長寬比為1440/1080，即1.33。在這種情況下，選擇寬寬比為4:3的視頻編碼預設集來編碼視頻檔案。
+例如，寬度為1440 x 1080的視頻的寬高比為1440/1080或1.33。在這種情況下，您選擇具有4:3長寬比的視頻編碼預設來編碼視頻檔案。
 
 ### 位元速率 {#bitrate}
 
-位元速率是經過編碼，組成視訊播放一秒的資料量。 位元速率以千比特/秒（每秒位元組數）測量。
+比特率是編碼的資料量，它構成視頻回放的一秒鐘。 比特率以千位每秒(Kbps)為單位。
 
 >[!NOTE]
 >
->因為所有轉碼器都使用有損壓縮，所以位元速率是視訊品質中最重要的因素。 有損壓縮越是壓縮視頻檔案，質量就越降低。 因此，所有其他特性相等（解析度、幀速率和編解碼器），位元速率越低，壓縮檔案的質量就越低。
+>由於所有編解碼器都使用有損壓縮，因此比特率是視頻質量中最重要的因素。 在有損壓縮中，對視頻檔案的壓縮越多，質量就越降低。 因此，所有其它特性（解析度、幀速率和編解碼器）相等，比特率越低，壓縮檔案的質量越低。
 
-選取位元速率編碼時，可以選擇兩種類型：
+選擇比特率編碼時，可以選擇兩種類型：
 
-* **[!UICONTROL 常數位元速率編碼]** (CBR) — 在CBR編碼期間，位元速率或每秒位數在整個編碼過程中保持不變。 CBR編碼在整個視頻中將設定的資料速率保存為設定。 此外，CBR編碼不會為質量優化介質檔案，但會節省儲存空間。
-如果視頻在整個視頻中包含類似的運動級別，則使用CBR。 CBR最常用於流式視頻內容。 另請參閱 [使用自訂新增的視訊編碼參數](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
+* **[!UICONTROL 恆定比特率編碼]** (CBR) — 在CBR編碼期間，比特率或每秒的比特數在整個編碼過程中保持相同。 CBR編碼在整個視頻上將設定的資料速率保留為您的設定。 此外，CBR編碼不會為質量優化媒體檔案，而會節省儲存空間。
+如果視頻在整個視頻中包含類似的運動級別，則使用CBR。 CBR是流視頻內容最常用的算法。 另請參閱 [使用自定義添加的視頻編碼參數](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters)。
 
-* **[!UICONTROL 變數位元速率編碼]** (VBR)- VBR編碼會根據壓縮程式所需的資料，將資料速率調低至您設定的上限。 此功能表示在VBR編碼過程中，媒體檔案的位元速率會根據媒體檔案的位元速率需求，以動態方式增加或減少。
-VBR編碼需要較長的時間，但會產生最有利的結果；媒體檔案的品質優越。 VBR最常用於http漸進式傳送視訊內容。
+* **[!UICONTROL 可變比特率編碼]** (VBR)- VBR編碼根據壓縮器所需的資料，將資料速率調低並調整到您設定的上限。 此功能意味著在VBR編碼過程中，媒體檔案的比特率會根據媒體檔案的比特率需求動態地增加或減少。
+VBR編碼時間較長，但效果最好；媒體檔案的質量優越。 VBR最常用於視頻內容的http漸進傳送。
 
-何時使用VBR或CRB?
-選擇VBR或CBR時，幾乎總是建議您將VBR用於介質檔案。 VBR以競爭性位元速率提供高品質的檔案。 使用VBR時，請務必使用兩遍編碼，並將最大位元速率設為目標視訊位元速率的1.5倍。
+您何時使用VBR與CRB?
+選擇VBR與CBR時，幾乎總是建議您將VBR用於媒體檔案。 VBR以競爭比特率提供更高質量的檔案。 使用VBR時，請確保使用兩遍編碼，並將最大比特率設定為目標視頻比特率的1.5倍。
 
-選擇視訊編碼預設集時，請務必說明目標使用者的連線速度。 選擇資料速率為該速度80%的預設集。 例如，如果目標最終用戶的連接速度為1000 Kbps，則最佳預設是視頻資料速率為800 Kbps的預設。
+選擇視頻編碼預設時，請確保考慮目標最終用戶的連接速度。 選擇資料速率為該速度80%的預設。 例如，如果目標最終用戶的連接速度是1000 Kbps，則最佳預設值是視頻資料速率為800 Kbps。
 
-此表描述了典型連接速度的資料速率。
+此表介紹了典型連接速度的資料速率。
 
-| 速度(Kbps) | 連線類型 |
+| 速度(Kbps) | 連接類型 |
 |--- |--- |
 | 256 | 撥號連接。 |
-| 800 | 典型的行動連線。 對於此連線，若為3G體驗，將資料速率定位在400到最大800的範圍內。 |
-| 2000 | 典型的寬頻案頭連接。 對於此連接，目標資料速率為800-2000 Kbps，大多數目標平均為1200-1500 Kbps。 |
-| 5000 | 典型的高寬頻連接。 不建議使用此上限的編碼，因為大多數消費者無法使用此速度的視訊傳送。 |
+| 800 | 典型的移動連接。 對於此連接，針對3G體驗，將資料速率定為400到最大800。 |
+| 2000 | 典型寬頻案頭連接。 對於此連接，以800-2000 Kbps範圍內的資料速率為目標，大多數目標的平均速率為1200-1500 Kbps。 |
+| 5000 | 典型的高寬頻連接。 建議不要在此上限範圍內進行編碼，因為大多數消費者無法以此速度進行視頻傳輸。 |
 
 ### 解析度 {#resolution}
 
-**解析度** 以像素說明視訊檔案的高度和寬度。 大部分的源視頻都以高解析度儲存（例如1920 x 1080）。 為了串流目的，來源視訊會壓縮為較小的解析度（640 x 480或更小）。
+**解決** 描述視頻檔案的高度和寬度（以像素為單位）。 大多數源視頻都以高解析度儲存（例如，1920 x 1080）。 為了流式傳輸，源視頻被壓縮到更小的解析度（640 x 480或更小）。
 
-解析度和資料速率是決定視訊品質的兩個整體連結因素。 若要維持相同的視訊品質，視訊檔案中的像素數目越多（解析度越高），資料速率就必須越高。 例如，請考慮解析度為320 x 240和解析度為640 x 480的視頻檔案中每幀的像素數：
+解析度和資料速率是決定視頻質量的兩個整體聯繫的因素。 要保持相同的視頻質量，視頻檔案中的像素數越多（解析度越高），資料速率就越高。 例如，請考慮320 x 240解析度和640 x 480解析度視頻檔案中每幀的像素數：
 
 | 解析度 | 每幀像素 |
 |--- |--- |
 | 320 x 240 | 76,800 |
 | 640 x 480 | 307,200 |
 
-640 x 480檔案的像素是每幀的4倍。 若要針對這兩個範例解析度取得相同的資料速率，您可對640 x 480檔案套用4倍的壓縮，以降低視訊品質。 因此，250 Kbps的視頻資料速率以320 x 240解析度產生高質量的觀看，而不是以640 x 480解析度產生。
+640 x 480檔案每幀的像素數是原來的四倍。 為了對這兩個示例解析度實現相同的資料速率，對640 x 480檔案應用四倍的壓縮，這會降低視頻質量。 因此，250 Kbps的視頻資料速率可以以320 x 240的解析度而不是以640 x 480的解析度來提供高質量的觀看。
 
-一般而言，您使用的資料速率越高，視訊的顯示效果越好，使用的解析度越高，您必須維持檢視品質的資料速率就越高（與解析度較低相比）。
+通常，您使用的資料速率越高，視頻顯示越好，解析度越高，您必須保持查看質量的資料速率越高（解析度越低）。
 
-由於解析度和資料速率是連結的，因此在對視訊進行編碼時有兩個選項：
+由於解析度和資料速率是連結的，因此在編碼視頻時有兩個選項：
 
-* 選擇資料速率，然後以最高解析度編碼，該解析度與您選擇的資料速率一致。
-* 選擇解析度，然後按照所需的資料速率進行編碼，以按您選擇的解析度實現高質量視頻。
+* 選擇資料速率，然後以最高解析度進行編碼，該解析度在您選擇的資料速率上看起來良好。
+* 選擇解析度，然後按所需的資料速率進行編碼，以便以您選擇的解析度獲得高質量視頻。
 
-當您為主要來源視訊檔案選擇（或建立）視訊編碼預設集時，請使用下表來鎖定正確的解析度：
+為主源視頻檔案選擇（或建立）視頻編碼預設時，請使用此表以正確的解析度為目標：
 
 | 解析度 | 高度 (像素) | 螢幕大小 |
 |--- |--- |--- |
 | 240p | 240 | 小螢幕 |
-| 300p | 300 | 小螢幕，通常用於行動裝置 |
+| 300p | 300 | 通常用於移動設備的小螢幕 |
 | 360p | 360 | 小螢幕 |
-| 480p | 480 | 中螢幕 |
+| 480p | 480 | 中屏 |
 | 720p | 720 | 大螢幕 |
 | 1080p | 1080 | 高清大螢幕 |
 
 ### Fps（每秒幀數） {#fps-frames-per-second}
 
-在美國和日本，大多數視頻以每秒29.97幀(fps)拍攝；在歐洲，大多數視頻以25幀/秒的速度拍攝。 以24 fps拍攝。
+在美國和日本，大多數視頻的拍攝速度是每秒29.97幀(fps);在歐洲，大多數視頻的拍攝速度是25 fps。 影片以24幀/秒的速度拍攝。
 
-選擇符合主要來源視訊檔案之fps速率的視訊編碼預設集。 例如，如果您的主要來源視訊為25 fps，請選擇編碼預設集(25 fps)。 依預設，所有自訂編碼都使用主要來源視訊檔案的fps。 因此，建立視訊編碼預設集時，您不需要明確指定fps設定。
+選擇與主源視頻檔案的fps速率匹配的視頻編碼預設。 例如，如果主源視頻為25 fps，請選擇一個25 fps的編碼預設。 預設情況下，所有自定義編碼都使用主源視頻檔案的fps。 因此，建立視頻編碼預設時不需要顯式指定fps設定。
 
-### 視訊編碼維度 {#video-encoding-dimensions}
+### 視頻編碼維度 {#video-encoding-dimensions}
 
-為獲得最佳結果，請選取編碼維度，使來源視訊是所有已編碼視訊的整數倍。
+為獲得最佳結果，請選擇編碼尺寸，使源視頻是所有編碼視頻的整倍。
 
-要計算此比率，可將源寬度除以編碼寬度以獲得寬比。 然後，將源高度除以編碼高度以得到高度比。
+要計算此比率，請將源寬度除以編碼寬度，以獲得寬度比。 然後，將源高度除以編碼高度，得到高度比。
 
-如果產生的比率是整數，則表示視訊已最佳縮放。 如果產生的比率不是整數，它會在顯示器上保留剩餘的像素偽影，以影響視訊品質。 當視訊有文字時，此效果最顯著。
+如果得到的比率是整整數，則表示視頻被最優縮放。 如果結果比率不是整數，則它會通過將剩餘像素偽像留在顯示器上而影響視頻質量。 當視頻有文本時，此效果最為明顯。
 
-例如，假設您的來源視訊為1920 x 1080。 在下表中，三個已編碼的視訊可提供要使用的最佳編碼設定。
+例如，假設源視頻為1920 x 1080。 在下表中，三個編碼視頻提供了要使用的最佳編碼設定。
 
-| 視訊類型 | 寬x高 | 寬度比例 | 高度比 |
+| 視頻類型 | 寬x高 | 寬度比例 | 高度比 |
 |--- |--- |--- |--- |
 | 來源 | 1920x1080 | 1 | 1 |
 | 編碼 | 960 x 540 | 2 | 2 |
 | 編碼 | 640 x 360 | 3 | 3 |
 | 編碼 | 480 x 270 | 4 | 4 |
 
-### 編碼視訊檔案格式 {#encoded-video-file-format}
+### 編碼視頻檔案格式 {#encoded-video-file-format}
 
-Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用H.264視訊轉碼器，因此可提供高品質的視訊，但檔案大小壓縮。
+Dynamic Media建議使用MP4 H.264視頻編碼預設。 由於MP4檔案使用H.264視頻編解碼器，因此它提供高質量的視頻，但檔案大小是壓縮的。
 
-### 在您的帳戶上啟用DASH {#enable-dash}
+### 啟用帳戶上的DASH {#enable-dash}
 
-DASH(Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，在不同的視訊觀看者中廣泛採用。 在帳戶上啟用「破折號」時，您可以選擇使用「破折號」或HLS進行最適化視訊串流。 或者，您可以選擇兩者，並在 **[!UICONTROL 自動]** 在檢視器預設集中，已選取為播放類型。
+DASH(Digital Adaptive Streaming over HTTP)是視頻流的國際標準，在不同的視頻觀看者中被廣泛採用。 在您的帳戶上啟用DASH後，您可以選擇從DASH或HLS中選擇自適應視頻流。 或者，您可以選擇兩者，在 **[!UICONTROL 自動]** 在「查看器」預設中選擇為播放類型。
 
-在您的帳戶上啟用DASH的一些主要優點包括：
+在您的帳戶上啟用DASH的一些主要好處包括：
 
-* 封裝DASH串流視訊，以進行最適化位元速率串流。 此方法可提高傳送效率。 最適化串流可確保為客戶提供最佳的檢視體驗。
-* 使用Dynamic Media播放器在HLS和DASH串流之間切換，以最佳化服務品質，進行瀏覽器最佳化串流。 使用Safari瀏覽器時，視訊播放器會自動切換至HLS。
-* 您可以編輯視訊檢視器預設集，以設定您偏好的串流方法（HLS或DASH）。
-* 最佳化的視訊編碼可確保在啟用DASH功能時不會使用其他儲存空間。 為HLS和DASH建立一組視訊編碼，以最佳化視訊儲存成本。
-* 有助於讓客戶更容易存取視訊傳送。
-* 也可透過API取得串流URL。
+* 用於自適應比特率流的包DASH流視頻。 該方法提高了輸送效率。 自適應流式處理可確保您的客戶獲得最佳的觀看體驗。
+* 瀏覽器優化了流式傳輸，Dynamic Media播放器在HLS和DASH流之間切換，以確保最佳服務質量。 當使用Safari瀏覽器時，視頻播放器自動切換到HLS。
+* 可以通過編輯視頻查看器預設來配置首選流式處理方法（HLS或DASH）。
+* 優化的視頻編碼可確保在啟用DASH功能時不使用其他儲存。 為HLS和DASH建立一組視頻編碼以優化視頻儲存成本。
+* 幫助讓客戶更容易訪問視頻交付。
+* 也通過API獲取流URL。
 
-您可以啟動使用DASH的請求；不會在您的帳戶上自動啟用。
+您啟動使用DASH的請求；不會在您的帳戶上自動啟用它。
 
-若要在您的帳戶上啟用DASH，請建立客戶支援案例，如下所述。 在您的支援案例中，請指定您要在Dynamic Media帳戶和Experience Manager上啟用DASH。
+要在您的帳戶上啟用DASH，請建立客戶支援案例，如下所述。 在支援案例中，指定要在Dynamic Media帳戶和Experience Manager上啟用DASH。
 
-**要啟用帳戶上的DASH，請執行以下操作：**
+**要啟用帳戶上的DASH:**
 
-1. [使用Admin Console開始建立新的支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html).
-1. 若要建立支援案例，請依照指示操作，同時確保您提供下列資訊：
+1. [使用Admin Console開始建立新支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
+1. 要建立支援案例，請按照說明操作，同時確保提供以下資訊：
 
-   * 主要聯繫人姓名、電子郵件、電話。
-   * 您的Dynamic Media帳戶名稱。
-   * 指定您要在Dynamic Media帳戶和Experience Manager上啟用DASH。
+   * 主要聯繫人姓名，電子郵件，電話。
+   * 你的Dynamic Media帳戶的名稱。
+   * 指定希望在Dynamic Media帳戶和Experience Manager上啟用DASH。
 
-1. Adobe客戶支援會根據提交請求的順序將您新增至DASH客戶等待清單。
-1. 當Adobe準備好處理您的請求時，客戶支援會聯絡您，協調並設定啟用破折號的目標日期。
-1. 客戶支援在完成後通知您。
-1. 建立 [視訊檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) 照常。
+1. Adobe客戶支援根據請求提交的順序將您添加到DASH客戶等待清單。
+1. 當Adobe準備好處理您的請求時，客戶支援會聯繫您，以協調並設定啟用DASH的目標日期。
+1. 完成後，客戶支援會通知您。
+1. 建立 [視頻查看器預設](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) 像往常一樣。
 
-## 檢視視訊報表 {#viewing-video-reports}
+## 查看視頻報告 {#viewing-video-reports}
 
 >[!NOTE]
 >
->只有在執行Dynamic Media — 混合模式時，才可使用視訊報表。
+>視頻報告僅在您運行Dynamic Media — 混合模式時可用。
 
-視訊報表會顯示指定期間的數個匯總量度，以協助您監控 *已發佈* 個別和匯總影片如預期般執行。 系統會針對整個網站上所有發佈的視訊匯總下列排名在前的量度資料：
+視頻報告在指定的時段內顯示多個聚合度量，以幫助您監視 *出版* 單個視頻和聚合視頻正在按預期執行。 以下頂級度量資料將聚合到整個網站中所有已發佈的視頻：
 
 * 視訊開始
 * 完成率
-* 視訊平均逗留時間
-* 視訊總逗留時間
-* 每次造訪的影片
+* 視頻上的平均時間
+* 視頻總時間
+* 每次訪問的視頻
 
-全部表格 *已發佈* 也會列出影片，讓您能夠根據總影片開始次數追蹤網站上最常觀看的影片。
+全部表 *出版* 還列出視頻，以便您可以根據總視頻開始時間跟蹤網站上最熱門的已查看視頻。
 
-當您在清單中選取視訊名稱時，該名稱會以折線圖的形式顯示視訊的對象保留（下拉式）報表。 圖表會顯示視訊播放期間任何指定時刻的檢視次數。 當您播放視訊時，垂直條會與播放器中的時間指示器同步追蹤。 折線圖資料中斷，指出您的受眾從不感興趣的位置下降。
+在清單中選擇視頻名稱時，它將以折線圖的形式顯示視頻的觀眾保留（下拉）報告。 該圖表顯示視頻回放期間任意給定時間刻度的視圖數。 播放視頻時，竪條與播放器中的時間指示器同步跟蹤。 在折線圖資料中出現，表示您的受眾從不感興趣的位置。
 
-如果視訊在Adobe Experience Manager Dynamic Media外部編碼，就無法使用對象保留率（下拉式清單）圖表和表格中的播放百分比資料。
+如果視頻是在Adobe Experience ManagerDynamic Media之外編碼的，則表中的觀眾保留（下拉）圖和播放百分比資料不可用。
 
 >[!NOTE]
 >
->追蹤和報表資料僅以使用Dynamic Media自己的視訊播放器和相關的視訊播放器預設集為基礎。 因此，您無法追蹤並報告透過其他視訊播放器播放的視訊。
+>跟蹤和報告資料完全基於使用動態媒體自己的視頻播放器和相關的視頻播放器預設。 因此，您無法跟蹤和報告通過其他視頻播放器播放的視頻。
 
-依預設，當您首次輸入視訊報表時，報表會顯示從當月的第一個開始，到當月的日期結束的視訊資料。 不過，您可以指定自己的日期範圍來覆寫預設日期範圍。 下次輸入視訊報表時，會使用您指定的日期範圍。
+預設情況下，在您首次輸入視頻報告時，該報告將顯示從當月的第一個開始到當月日期結束的視頻資料。 但是，您可以通過指定自己的日期範圍來覆蓋預設日期範圍。 下次輸入視頻報表時，將使用指定的日期範圍。
 
-為了讓視訊報表正常運作，設定Dynamic MediaCloud Services時，會自動建立報表套裝ID。 同時，報表套裝ID會推送至發佈伺服器，以便您在預覽資產時能使用「複製URL」功能。 不過，此功能需要已設定發佈伺服器。 如果未設定發佈伺服器，您仍可以發佈以查看視訊報表。 不過，您必須返回Dynamic Media雲端設定，並選取 **[!UICONTROL 確定]**.
+為使視頻報告正常工作，在配置Dynamic MediaCloud Services時會自動建立報表套件ID。 同時，將「報告套件ID」推送到「發佈」伺服器，以便在預覽資產時可以使用「複製URL」功能。 但是，此功能要求已設定發佈伺服器。 如果未設定「發佈」伺服器，您仍可以發佈以查看視頻報告。 但是，您必須返回Dynamic Media雲配置並選擇 **[!UICONTROL 確定]**。
 
-**若要檢視視訊報表：**
+**要查看視頻報告：**
 
-1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側邊欄中導覽至 **[!UICONTROL 工具]** （錘子表徵圖）> **[!UICONTROL 資產]** > **[!UICONTROL 視訊報表]**.
-1. 在視訊報表頁面上，執行下列其中一項作業：
+1. 在Experience Manager的左上角，選擇Experience Manager徽標，然後在左滑軌中導航至 **[!UICONTROL 工具]** （錘子表徵圖）> **[!UICONTROL 資產]** > **[!UICONTROL 視頻報告]**。
+1. 在「視頻報告」頁上，執行下列操作之一：
 
-   * 在右上角附近，選取 **[!UICONTROL 重新整理視訊報表]** 表徵圖。
-只有在報表的結束日期為當天時，才使用「重新整理」。 此功能可確保您查看自您上次執行報表以來發生的視訊追蹤。
+   * 在右上角處，選擇 **[!UICONTROL 刷新視頻報告]** 表徵圖
+僅當報表的結束日期為當前日期時，才使用「刷新」。 此功能可確保您查看自上次運行報告以來發生的視頻跟蹤。
 
-   * 在右上角附近，選取 **[!UICONTROL 日期選擇器]** 表徵圖。
-指定您要視訊資料的開始和結束日期範圍，然後選取 **[!UICONTROL 執行報表]**.
+   * 在右上角處，選擇 **[!UICONTROL 日期選取器]** 表徵圖
+指定要獲取視頻資料的開始和結束日期範圍，然後選擇 **[!UICONTROL 運行報告]**。
 
-   「排名在前的量度」群組方塊會識別所有 *已發佈* 視訊。
+   「頂級度量」組框標識所有的各種聚合度量 *出版* 視頻。
 
-1. 在列出最熱門發佈影片的表格中，選取影片名稱以播放影片，並查看影片的對象保留率（下拉式清單）報表。
+1. 在列出頂級發佈視頻的表中，選擇視頻名稱來播放視頻，並查看視頻的觀眾保留（下拉）報告。
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT - SDK ONLY AVAILABLE INTERNALLY NOW 
 ### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
@@ -549,82 +549,82 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## 在視頻中添加隱藏字幕或字幕 {#adding-captions-to-video}
+## 將隱藏字幕或字幕添加到視頻 {#adding-captions-to-video}
 
-您可以將隱藏式字幕新增至單一影片或最適化影片集，將影片觸及範圍擴展至全球市場。 通過添加隱藏式字幕，您可以避免對音頻進行重複播放，或者使用母語者為每種語言重新錄制音頻。 影片以錄制的語言播放。 外語字幕出現，使不同語言的人仍然能夠理解音頻部分。
+通過將隱藏字幕添加到單個視頻或自適應視頻集，您可以將視頻的觸角擴展到全球市場。 通過添加隱藏字幕，您不必對音頻進行調音，也不必使用母語人士為每種不同的語言重新錄制音頻。 視頻以錄制的語言播放。 外文字幕出現，使不同語言的人仍然能夠理解音頻部分。
 
-隱藏式字幕也讓聾人或聽力障礙人士更容易使用。
+閉式字幕還使聾啞或聽力障礙的人更容易獲得。
 
 >[!NOTE]
 >
->您使用的視訊播放器必須支援隱藏式字幕的顯示。
+>您使用的視頻播放器必須支援隱藏字幕的顯示。
 
-另請參閱 [Dynamic Media中的協助工具](/help/assets/dynamic-media/accessibility-dm.md).
+另請參閱 [Dynamic Media無障礙](/help/assets/dynamic-media/accessibility-dm.md)。
 
-Dynamic Media可將註解檔案轉換為JSON（JavaScript物件標籤法）格式。 這種轉換表示您可以將JSON文字內嵌至網頁，作為視訊的隱藏但完整的記錄。 然後，搜尋引擎可對內容進行編目/索引，讓影片更容易找到，並提供客戶有關影片內容的詳細資訊。
+Dynamic Media可以將字幕檔案轉換為JSON（JavaScript對象表示法）格式。 此轉換意味著您可以將JSON文本嵌入到網頁中，作為視頻的隱藏但完整的記錄。 然後，搜索引擎可以對內容進行爬網/索引，以使視頻更容易被發現，並為客戶提供有關視頻內容的更多詳細資訊。
 
-請參閱 [為靜態（非影像）內容提供服務](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) 如需在URL中使用JSON函式的詳細資訊。
+請參閱 [服務靜態（非影像）內容](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) 的子菜單。
 
 **向視頻添加字幕或字幕：**
 
-1. 使用第三方應用程式或服務建立視頻字幕/字幕檔案。
+1. 使用第三方應用程式或服務建立視頻字幕/副標題檔案。
 
-   請確定您建立的檔案符合WebVTT（Web視訊文字追蹤）標準。 字幕副檔名為.VTT。 您可以了解有關WebVTT字幕標準的更多資訊。
+   確保您建立的檔案遵循WebVTT（Web視頻文本軌道）標準。 字幕檔案名副檔名為.VTT。 您可以瞭解有關WebVTT字幕標準的更多資訊。
 
-   請參閱 [WebVTT:網路視訊文字追蹤格式](https://w3c.github.io/webvtt/).
+   請參閱 [WebVTT:Web視頻字幕資訊格式](https://w3c.github.io/webvtt/)。
 
-   您可以使用免費和優質的工具和服務，在Dynamic Media之外製作字幕/字幕檔案。 例如，要建立不帶樣式的簡單視頻字幕檔案，可以使用以下免費線上字幕創作和編輯工具：
+   您可以使用免費和高級工具和服務來製作Dynamic Media以外的字幕/字幕檔案。 例如，要建立沒有樣式的簡單視頻標題檔案，可以使用以下免費聯機標題創作和編輯工具：
 
-   [WebVTT字幕製作器](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   [WebVTT字幕製作](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   為獲得最佳結果，請使用Internet Explorer 9或更新版本、Google Chrome或Safari中的工具。
+   為獲得最佳結果，請在Internet Explorer 9或更高版本、GoogleChrome或Safari中使用該工具。
 
-   在工具中， **[!UICONTROL 輸入視訊檔案的URL]** 欄位，貼上視訊檔案的複製URL，然後選取 **[!UICONTROL 載入]**. 請參閱 [取得資產的URL](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) 以取得視訊檔案本身的URL，然後您可將其貼入 **[!UICONTROL 輸入視訊檔案欄位的URL]**. 然後，Internet Explorer、Chrome或Safari就可以原生播放視訊。
+   在工具中，在 **[!UICONTROL 輸入視頻檔案的URL]** 欄位，貼上視頻檔案的複製URL，然後選擇 **[!UICONTROL 載入]**。 請參閱 [獲取資產的URL](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) 獲取視頻檔案本身的URL，然後可以貼上到 **[!UICONTROL 輸入視頻檔案欄位的URL]**。 然後，Internet Explorer、Chrome或Safari就可以原生播放視訊。
 
-   現在請依照網站的螢幕指示製作和儲存您的WebVTT檔案。 完成後，複製字幕檔案內容並貼到純文字編輯器中，然後以VTT副檔名儲存。
+   現在，請按照網站的螢幕說明編寫並保存WebVTT檔案。 完成後，複製標題檔案內容並將其貼上到純文字檔案編輯器中，並使用VTT檔案副檔名將其保存。
 
    >[!NOTE]
    >
-   >為全球支援多種語言的視頻字幕，WebVTT標準要求您為要支援的每種語言分別建立.vtt檔案和調用。
+   >為全局支援多語言視頻字幕，WebVTT標準要求您為要支援的每種語言建立單獨的.vtt檔案和調用。
 
-   通常，您想將字幕VTT檔案命名為與視頻檔案相同的名稱，並將其附加到語言區域設定，如 — EN、-FR或 — DE。 如此一來，您就能透過現有的網頁內容管理系統，協助您自動產生視訊URL。
+   通常，您希望將標題VTT檔案命名為與視頻檔案同名，並使用語言區域設定（如 — EN、-FR或 — DE）附加它。 通過這樣做，它可以幫助您使用現有的Web內容管理系統自動生成視頻URL。
 
-1. 在Experience Manager中，將WebVTT註解檔案上傳至DAM。
-1. 導覽至 *已發佈* 您要與上傳的標題檔案相關聯的視訊資產。
+1. 在Experience Manager中，將WebVTT標題檔案上載到DAM。
+1. 導航到 *出版* 要與上載的標題檔案關聯的視頻資產。
 
    請記住，URL僅可在您首次發 *布資產* 後 *複製* 。
 
-   請參閱 [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+   請參閱 [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 1. 執行下列任一項作業：
 
-   * 若為快顯視訊檢視器體驗，請選取 **[!UICONTROL URL]**. 在「URL」對話方塊中，選取URL並將其複製到剪貼簿，然後將URL移至簡單文字編輯器中。 使用下列語法附加視訊的複製URL:
+   * 要獲得彈出式視頻查看器體驗，請選擇 **[!UICONTROL URL]**。 在「URL」對話框中，選擇URL並將其複製到剪貼簿，然後將URL傳到簡單文本編輯器中。 使用以下語法追加視頻的複製URL:
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      請注意 `,1` 標題路徑的結尾。 緊接在路徑中的VTT副檔名後面，您可以選擇啟用（開啟）或停用（關閉）視訊播放器列上的隱藏式字幕按鈕，方法是將設為 `,1` 或 `,0`，分別為。
+      注意 `,1` 標題路徑的末尾。 緊隨路徑中的VTT檔案副檔名後，您可以選擇啟用（開啟）或禁用（關閉）視頻播放器欄上的隱藏字幕按鈕，方法是將設定為 `,1` 或 `,0`的下界。
 
-   * 針對內嵌的視訊檢視器體驗，請選取 **[!UICONTROL 內嵌程式碼]**. 在「內嵌程式碼」對話方塊中，選取內嵌程式碼，並將其複製到剪貼簿，然後將程式碼貼到簡單的文字編輯器中。 使用下列語法附加複製的內嵌程式碼：
+   * 對於嵌入式視頻查看器體驗，請選擇 **[!UICONTROL 嵌入代碼]**。 在「嵌入代碼」對話框中，選擇嵌入代碼並將其複製到剪貼簿，然後將代碼貼上到簡單的文本編輯器中。 使用以下語法追加複製的嵌入代碼：
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      請注意 `,1` 標題路徑的結尾。 緊接在路徑中的VTT副檔名後面，您可以選擇啟用（開啟）或停用（關閉）視訊播放器列上的隱藏式字幕按鈕，方法是將設為 `,1` 或 `,0`，分別為。
+      注意 `,1` 標題路徑的末尾。 緊隨路徑中的VTT檔案副檔名後，您可以選擇啟用（開啟）或禁用（關閉）視頻播放器欄上的隱藏字幕按鈕，方法是將設定為 `,1` 或 `,0`的下界。
 
-## 新增章節標籤至視訊 {#adding-chapter-markers-to-video}
+## 將章節標籤添加到視頻 {#adding-chapter-markers-to-video}
 
-您可以將章節標籤新增至單一視訊或最適化視訊集，讓您更輕鬆觀看和導覽長型視訊。 當使用者播放視訊時，可以選取視訊時間軸上的章節標籤（也稱為視訊清除程式）。 他們可輕鬆導覽至其興趣點，或立即跳至新內容、訓練和示範。
+通過向單個視頻或自適應視頻集添加章節標籤，您可以更輕鬆地觀看和導航長格式視頻。 當用戶播放視頻時，他們可以選擇視頻時間軸上的章節標籤（也稱為視頻掃描器）。 他們可以輕鬆找到自己的興趣點，或立即跳到新內容、培訓和演示中。
 
 >[!NOTE]
 >
->使用的視訊播放器必須支援使用章節標籤。 Dynamic Media視訊播放器確實支援章節標籤，但使用協力廠商視訊播放器則否。
+>使用的視頻播放器必須支援使用章節標籤。 Dynamic Media視頻播放器確實支援章節標籤，但使用第三方視頻播放器可能不支援。
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-您為視訊建立章節清單的方式與建立字幕的方式大致相同。 即，建立WebVTT檔案。 但請注意，此檔案必須與任何WebVTT標題檔案分開。 不能將字幕和章節合併為一個WebVTT檔案。
+您為視頻建立章節清單的方式與建立字幕的方式大致相同。 即，建立WebVTT檔案。 但請注意，此檔案必須與任何WebVTT標題檔案分開。 不能將字幕和章節合併為一個WebVTT檔案。
 
-您可以使用下列範例，作為建立具有章節導覽的WebVTT檔案時所使用格式的範例：
+您可以使用以下示例作為建立WebVTT檔案時使用章節導航的格式的示例：
 
-### 具有視訊章節導覽的WebVTT檔案 {#webvtt-file-with-video-chapter-navigation}
+### 具有視頻章節導航的WebVTT檔案 {#webvtt-file-with-video-chapter-navigation}
 
 ```xml {.line-numbers}
 WEBVTT
@@ -642,47 +642,47 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-在上述範例中， `Chapter 1` 是提示識別碼，且為選用。 提示時間 `00:00:000 --> 01:04:364` 指定章節的開始時間和結束時間，位於 `00:00:000` 格式。 最後三位數是毫秒，可以保留為 `000`，如果偏好。 的章節標題 `The bicycle store behind it all` 是章節內容的實際說明。 當使用者將滑鼠指標暫留在時間軸的視覺提示點上時，提示識別碼、開始提示時間和章節標題都會顯示在視訊播放器的快顯視窗中。
+在上例中， `Chapter 1` 是提示標識符，是可選的。 的提示時間 `00:00:000 --> 01:04:364` 指定本章的開始時間和結束時間，在 `00:00:000` 的子菜單。 最後三位數是毫秒，可以保留為 `000`，也請參見Wiki頁。 章標題 `The bicycle store behind it all` 是本章內容的實際描述。 當用戶將滑鼠指針懸停在時間軸中的視覺提示點上時，提示標識符、開始提示時間和章節標題都顯示在視頻播放器的彈出窗口中。
 
-因為您使用的是HTML5視訊檢視器，請確定您建立的章節檔案遵循WebVTT（Web視訊文字追蹤）標準。 章節副檔名為.VTT。 您可以了解有關WebVTT字幕標準的更多資訊。
+由於您使用的是HTML5視頻查看器，因此請確保您建立的章節檔案遵循WebVTT（Web視頻文本軌道）標準。 章檔案名副檔名為.VTT。 您可以瞭解有關WebVTT字幕標準的更多資訊。
 
-請參閱 [WebVTT:網路視訊文字追蹤格式](https://w3c.github.io/webvtt/).
+請參閱 [WebVTT:Web視頻字幕資訊格式](https://w3c.github.io/webvtt/)。
 
-**若要將章節標籤新增至視訊：**
+**要將章節標籤添加到視頻：**
 
-1. 以UTF8編碼儲存VTT檔案，以避免章節標題文字的字元轉譯問題。
+1. 以UTF8編碼保存VTT檔案，以避免在章節標題文本中出現字元格式副本問題。
 
-   一般來說，您會想要將章節VTT檔案命名為與視訊檔案相同的名稱，並附加章節。 如此一來，您就能透過現有的網頁內容管理系統，協助您自動產生視訊URL。
-1. 在Experience Manager中，上傳您的WebVTT章節檔案。
+   通常，您希望將VTT章檔案命名為與視頻檔案同名，並在其後添加章節。 通過這樣做，它可以幫助您使用現有的Web內容管理系統自動生成視頻URL。
+1. 在Experience Manager中，上載WebVTT章節檔案。
 
-   請參閱 [上傳資產](/help/assets/manage-digital-assets.md#uploading-assets).
+   請參閱 [上載資產](/help/assets/manage-digital-assets.md#uploading-assets)。
 
 1. 執行下列任一項作業：
 
    <table>
      <tbody>
       <tr>
-       <td>快顯視訊檢視器體驗</td>
+       <td>用於彈出式視頻查看器體驗</td>
        <td>
        <ol>
-       <li>導覽至 <i>已發佈 </i>您要與您上傳之章節檔案建立關聯的視訊資產。 請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。請參閱 <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">發佈資產。</a></li>
-       <li>從下拉式功能表中，然後選取 <strong>檢視器</strong>.</li>
-       <li>在左側邊欄中，選取視訊檢視器預設集名稱。 視訊的預覽會在個別頁面中開啟。</li>
-       <li>在左側邊欄的底部，選取 <strong>URL</strong>.</li>
-       <li>在「URL」對話方塊中，選取URL並將其複製到剪貼簿，然後將URL移至簡單文字編輯器中。</li>
-       <li>使用下列語法附加視訊的複製URL，以便將其與複製的URL關聯至您的章節檔案：<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
+       <li>導航到 <i>出版 </i>要與上載的章節檔案關聯的視頻資產。 請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。請參閱 <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">發佈資產。</a></li>
+       <li>從下拉菜單中，選擇 <strong>查看者</strong>。</li>
+       <li>在左滑軌中，選擇視頻查看器預設名稱。 視頻的預覽在單獨的頁面中開啟。</li>
+       <li>在左滑軌底部，選擇 <strong>URL</strong>。</li>
+       <li>在「URL」對話框中，選擇URL並將其複製到剪貼簿，然後將URL傳到簡單文本編輯器中。</li>
+       <li>使用以下語法添加視頻的複製URL，以便您可以將其與複製的URL關聯到章節檔案：<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
       </tr>
       <tr>
-       <td>針對內嵌的視訊檢視器體驗<br /> </td>
+       <td>嵌入式視頻查看器體驗<br /> </td>
        <td>
        <ol>
-       <li>導覽至 <i>已發佈 </i>您要與您上傳之章節檔案建立關聯的視訊資產。 請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。請參閱 <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">發佈資產。</a></li>
-       <li>從下拉式功能表中，然後選取 <strong>檢視器</strong>.</li>
-       <li>在左側邊欄中，選取視訊檢視器預設集名稱。 視訊的預覽會在個別頁面中開啟。</li>
-       <li>在左側邊欄的底部，選取 <strong>內嵌</strong>.</li>
-       <li>在「內嵌程式碼」對話方塊中，選取整個程式碼，並複製到剪貼簿，然後貼到簡單的文字編輯器中。</li>
-       <li>使用下列語法附加視訊的內嵌程式碼，以便將它與複製的URL建立關聯至章節檔案：<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt>"</code></li>
+       <li>導航到 <i>出版 </i>要與上載的章節檔案關聯的視頻資產。 請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。請參閱 <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">發佈資產。</a></li>
+       <li>從下拉菜單中，選擇 <strong>查看者</strong>。</li>
+       <li>在左滑軌中，選擇視頻查看器預設名稱。 視頻的預覽在單獨的頁面中開啟。</li>
+       <li>在左滑軌底部，選擇 <strong>嵌入</strong>。</li>
+       <li>在「嵌入代碼」對話框中，選擇整個代碼並將其複製到剪貼簿，然後將其貼上到簡單的文本編輯器中。</li>
+       <li>使用以下語法添加視頻的嵌入代碼，以便您可以將其與複製的URL關聯到章節檔案：<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt>"</code></li>
        </ol> </td>
       </tr>
      </tbody>
@@ -823,13 +823,13 @@ T**o add a custom video thumbnail**,
 
 -->
 
-## 變更Dynamic Media資產的Dynamic Media URL
+## 更改Dynamic Media資產的URL
 
-在Dynamic Media中處理的影片可透過現成可用的檢視器，以及直接存取資訊清單URL，並透過您自己的自訂檢視器播放。 以下是擷取視訊資訊清單URL的API。
+在Dynamic Media處理的視頻可以通過現成觀看者使用，也可以通過直接訪問清單URL並通過您自己的自定義觀看者播放。 以下是用於獲取視頻的清單URL的API。
 
 ### 關於getVideoManifestURI API
 
-此 `getVideoManifestURI`API透過c公開`q-scene7-api:com.day.cq.dam.scene7.api` 和可用來產生下列資訊清單URL:
+的 `getVideoManifestURI`API通過c公開`q-scene7-api:com.day.cq.dam.scene7.api` 並可用於生成以下清單URL:
 
 ```java
 /**   
@@ -847,30 +847,30 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 
 #### getVideoManifestURI API參數
 
-此API會採用下列三個參數：
+此API採用以下三個參數：
 
 | 參數 | 說明 |
 | --- | --- |
-| `resource` | 與Dynamic Media已擷取的視訊相對應的資源。 |
+| `resource` | 與Dynamic Media攝入的視頻相對應的資源。 |
 | `manifestType` | 可以是 `ManifestType.DASH` 或 `ManifestType.HLS` |
-| `onlyIfPublished` | 若資訊清單uri僅在已發佈且可在傳送層級上使用時，才產生，則設為true。 |
+| `onlyIfPublished` | 如果僅當清單URI發佈且在交付層上可用時，才會將其設定為true。 |
 
-若要使用上述方法擷取影片的資訊清單URL，請新增 [視訊編碼設定檔](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 上傳影片資料夾。 Dynamic Media會根據指派給資料夾的視訊編碼檔案中的編碼來處理這些視訊。 現在您可以叫用上述API，擷取已上傳影片的資訊清單URL。
+要使用上述方法獲取視頻的清單URL，請添加 [視頻編碼配置檔案](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 到「上傳視頻」資料夾。 Dynamic Media根據在分配給資料夾的視頻編碼檔案中找到的編碼來處理這些視頻。 現在，您可以調用上述API來獲取上載視頻的清單URL。
 
-### 錯誤情況
+### 錯誤方案
 
-如果有錯誤，API會傳回null。 Experience Manager錯誤記錄中記錄異常。 所有此類記錄錯誤的開頭皆為 `Could not generate Video Manifest URI`. 在下列情況下，可能會發生此類錯誤：
+如果存在錯誤，API將返回空值。 異常記錄在Experience Manager錯誤日誌中。 所有此類記錄錯誤都以 `Could not generate Video Manifest URI`。 以下情形可能導致此類錯誤：
 
-* 安 `IllegalArgumentException` 會針對下列任一項目進行記錄：
+* 安 `IllegalArgumentException` 將記錄以下任一項：
 
-   * 此 `resource` 傳遞的參數為null。
-   * 此 `resource` 傳遞的參數不是視訊。
-   * 此 `manifestType` 傳遞的參數為null。
-   * 此 `onlyIfPublished` 參數會以true傳遞，但視訊不會發佈。
-   * 未使用Dynamic Media的最適化視訊集擷取視訊。
+   * 的 `resource` 傳遞的參數為null。
+   * 的 `resource` 傳遞的參數不是視頻。
+   * 的 `manifestType` 傳遞的參數為null。
+   * 的 `onlyIfPublished` 參數傳遞為true，但視頻未發佈。
+   * 該視頻沒有使用Dynamic Media的自適應視頻集攝取。
 
-* `IOException` 當連線至Dynamic Media時發生問題時會被記錄。
-* `UnsupportedOperationException` 在 `manifestType` 傳遞的參數 `ManifestType.DASH`，而未使用DASH格式處理視訊。
+* `IOException` 連接到Dynamic Media時記錄。
+* `UnsupportedOperationException` 在 `manifestType` 傳遞的參數 `ManifestType.DASH`，但視頻未使用DASH格式處理。
 
 <!-- THE REMAINING SECTION IS FOR 6.5 ONLY 
 

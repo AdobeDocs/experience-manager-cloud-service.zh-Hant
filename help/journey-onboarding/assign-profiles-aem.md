@@ -101,7 +101,7 @@ ht-degree: 97%
 
 ## 其他資源 {#additional-resources}
 
-如果您想要超越入門歷程的內容，以下是其他選用資源。
+如果您想超越登機旅程的內容，請選擇以下附加資源。
 
 * [在 Admin Console 中管理產品和使用者存取權](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - 了解如何使用 Admin Console 來管理使用存取權。
 * [設定 AEM 存取權逐步說明](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=zh-Hant) - 查看這個簡短的逐步說明，了解如何在 Admin Console 中設定 Adobe IMS 使用者、使用者群組和產品設定檔。

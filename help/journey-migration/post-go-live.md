@@ -1,6 +1,6 @@
 ---
 title: 上線後
-description: 了解如何監控問題並改善效能
+description: 瞭解如何監控問題並提高效能
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -18,15 +18,15 @@ ht-degree: 39%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="存取和管理記錄檔"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 開發工具"
 
-這是歷程的最後一個部分，讓您了解如何在移轉完成後監控問題並改善效能。 您應確保清理臨時檔案、審查最佳作法以持續開發及管理記錄。
+這是遷移的最後一部分，因此您將學習如何在遷移完成後監控問題並提高效能。 您應確保清理臨時檔案，審查持續開發的最佳做法並管理日誌。
 
 ## 到目前為止 {#story-so-far}
 
-在歷程的上一步中，您學習了如何執行移轉， [上線](/help/journey-migration/go-live.md) 當程式碼和內容準備好移至AEMas a Cloud Service時。
+在上一步中，您學習了如何執行遷移和 [上線](/help/journey-migration/go-live.md) 一旦代碼和內容準備好移到AEMas a Cloud Service。
 
 ## 目標 {#objective}
 
-本檔案說明可用於疑難排解AEMas a Cloud Service環境的工具：
+本文檔介紹了用於診斷as a Cloud Service環境的AEM工具：
 
 * **開發人員控制台**
 * **CRXDE Lite**
@@ -34,7 +34,7 @@ ht-degree: 39%
 
 ## 開發人員控制台 {#developer-console}
 
-開發、預備和生產環境的開發人員控制台中提供對AEMas a Cloud Service開發人員環境進行偵錯的功能。
+在開發AEM人員控制台中，可以調試as a Cloud Service的開發人員環境，用於開發、階段和生產環境。
 
 請參考[實作 AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)，深入了解開發工具。
 
@@ -43,7 +43,7 @@ ht-degree: 39%
 身為使用者，您可以在開發環境中存取 CRXDE Lite，但不能在預備或生產環境中存取。
 
 >[!IMPORTANT]
->寫入不可變的儲存庫，例如 `/libs` 和 `/apps` 在執行階段會導致錯誤。 此外，您無法存取預備和生產環境的開發人員工具。
+>寫入不可變的儲存庫，如 `/libs` 和 `/apps` 運行時會導致錯誤。 此外，您無權訪問用於暫存和生產環境的開發人員工具。
 
 請參考[使用 CRXDE Lite 開發](/help/implementing/developing/tools/crxde.md)，了解如何使用 CRXDE Lite 開發您的 AEM 應用程式。
 
@@ -53,7 +53,7 @@ ht-degree: 39%
 
 請參考[存取和管理記錄](/help/implementing/cloud-manager/manage-logs.md)，了解如何透過 UI 或 Cloud Manager 的 API 存取和管理記錄。
 
-## 聯絡支援 {#contacting-support}
+## 聯繫支援 {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
@@ -61,24 +61,24 @@ ht-degree: 39%
 >abstract="如需澄清或解決任何疑慮，請和我們的 AEM 支援團隊聯絡。"
 >additional-url="https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 的支援"
 
-如果您對存取Cloud Service有任何疑問，請連絡您的Adobe代表，或 [支援Experience Cloud](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 以取得更多詳細資訊。
+如果您對訪問Cloud Service有疑問，請與Adobe代表聯繫或 [支援Experience Cloud](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) 的子菜單。
 
-## 檔案學習 {#document-learnings}
+## 文檔學習 {#document-learnings}
 
-完成移轉後，您應記錄此程式中獲得的知識。 可能有助於說明檔案程式的問題包括：
+遷移完成後，您應記錄在此過程中獲得的知識。 一些可能有助於文檔處理的問題包括：
 
-* 什麼管用，什麼管用不？
+* 什麼管用，什麼管用？
 * 主要的痛點是什麼？
-* Recommendations，以備日後移轉時使用。
+* Recommendations，以防未來移民。
 
-接著，您應該與組織內的利害關係人和團隊分享這些移轉後的學習經驗。
+然後，您應與組織內的利益相關方和團隊共用這些遷移後學習。
 
 ## 歷程結束 - 還是結束了？ {#journey-ends}
 
-恭喜！您已完成AEMas a Cloud Service移轉歷程！ 您應了解如何：
+恭喜！您已完成AEMas a Cloud Service遷移之旅！ 您應該瞭解如何：
 
-* 開始移至AEMas a Cloud Service
-* 判斷您的部署是否已準備好移至AEMas a Cloud Service
-* 讓您的程式碼和內容雲端準備就緒
-* 執行移轉
-* 監控問題並改善效能
+* 開始轉到AEMas a Cloud Service
+* 確定您的部署是否已準備好移動到AEMas a Cloud Service
+* 使您的代碼和內容雲準備就緒
+* 執行遷移
+* 監控問題並提高效能

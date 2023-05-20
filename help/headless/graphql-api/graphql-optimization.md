@@ -1,13 +1,13 @@
 ---
 title: 最佳化 GraphQL 查詢
 description: 了解如何為了提供無周邊內容在 Adobe Experience Manager as a Cloud Service 中進行內容片段篩選、分頁和排序時進行 GraphQL 查詢最佳化。
-source-git-commit: cda6d7e382b090fd726b27e565da08c8b1c80008
+exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 100%
 
 ---
-
 
 # 最佳化 GraphQL 查詢 {#optimizing-graphql-queries}
 

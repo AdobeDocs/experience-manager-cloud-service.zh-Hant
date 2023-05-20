@@ -3,7 +3,7 @@ title: AEM Commerce 內容作者歷程
 description: 從這裡開始，此歷程會逐步引導您了解 AEM Commerce 編寫
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 100%
 

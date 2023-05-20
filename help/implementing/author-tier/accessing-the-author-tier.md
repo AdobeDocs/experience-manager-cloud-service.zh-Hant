@@ -17,4 +17,4 @@ AEM as a Cloud Service 環境的作者階層可透過標準且不可自訂的 UR
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
-不支援AEM作者階層的自訂網域名稱。
+不支援作者層AEM的自定義域名。

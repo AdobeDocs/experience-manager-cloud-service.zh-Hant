@@ -1,7 +1,7 @@
 ---
-title: 在AEM Sites頁面中新增或建立最適化表單（核心元件）
+title: 在AEM Sites頁中添加或建立自適應表單（核心元件）
 seo-title: How to add or create an Adaptive Form (Core Components) to an AEM Sites page?
-description: 您可以在AEM Sites頁面中使用適用性表單（核心元件）來填寫和提交表單，而不需離開AEM Sites頁面。
+description: 您可以在AEM Sites頁中使用自適應表單（核心元件）來填寫和提交表單，而無需離開AEM Sites頁。
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
@@ -13,55 +13,55 @@ ht-degree: 2%
 
 ---
 
-# 使用AEM Sites編輯器建立或新增適用性表單 {#add-an-adaptive-form-to-aem-sites-page}
+# 使用AEM Sites編輯器建立或添加自適應表單 {#add-an-adaptive-form-to-aem-sites-page}
 
-您可以順暢地在AEM Sites頁面中撰寫或內嵌適用性Forms，讓使用者無需離開Sites頁面即可填寫及提交表單。 它可協助使用者停留在網頁的其他元素上，同時與表單互動。
+您可以無縫地在AEM Sites頁面中編寫或嵌入Adaptive Forms，以便您的用戶無需離開「站點」頁面即可填寫和提交表單。 它幫助用戶保持在網頁的其它元素的上下文中，並同時與表單交互。
 
-您可以選擇下列其中一種方法，以建立適用性表單或將其新增至AEM Sites頁面：
+您可以選擇以下方法之一來建立自適應表單或將自適應表單添加到AEM Sites頁：
 
-* **使用適用性Forms容器元件建立適用性表單**:此 [適用性表單容器](#af-container-component) 元件可讓您直接在AEM Sites編輯器中利用適用性Forms元件來建立數位註冊體驗。 此整合可為想在AEM Sites頁面中建立和管理表單的AEM Sites作者提供順暢的體驗。
+* **使用自適應Forms容器元件建立自適應窗體**:的 [自適應窗體容器](#af-container-component) 元件允許您直接在AEM Sites編輯器中利用自適應Forms元件構建數字註冊體驗。 這一整合為希望在其AEM Sites頁面中建立和管理表單的AEM Sites作者提供了無縫體驗。
 
-* **新增現有的最適化表單**:此 [適用性Forms — 內嵌(v2)](#embed-existing-af) 元件可讓您輕鬆將預先存在的適用性表單新增至AEM Sites中的頁面。 這一功能增強了自適應Forms的適應性和可重用性。 此整合為客戶重複使用已建立的適用性Forms提供了便利的方式。
+* **添加現有自適應表單**:的 [自適應Forms — 嵌入(v2)](#embed-existing-af) 元件允許您輕鬆地將預先存在的自適應表單添加到AEM Sites內的頁面中。 該特徵增強了自適應Forms的適應性和可重用性。 此整合為客戶重新使用他們已建立的自適應Forms提供了一種方便的方法。
 
-* **使用適用性Forms精靈建立表單**:使用 [適用性Forms — 內嵌(v2)](#embed-new-af) 元件，使用「表單建立」精靈從AEM Sites編輯器中建立最適化表單。 表單會儲存為外部實體。 您也可以在其他Sites頁面和獨立表單中重複使用此表單。
+* **使用自適應Forms嚮導建立表單**:使用 [自適應Forms — 嵌入(v2)](#embed-new-af) 元件，使用「建立表單」嚮導從AEM Sites編輯器中建立自適應表單。 窗體另存為外部實體。 您也可以在其他「站點」頁面和獨立表單中重複使用此表單。
 
-* **在AEM Sites頁面中新增多個適用性Forms**:若要在AEM Sites頁面中新增多個適用性Forms，請使用AEM Forms容器元件 —  [適用性Forms — 內嵌(v2)](#embed-new-af) 和 [適用性表單容器](#af-container-component). 如果您需要在AEM Sites頁面中新增多個適用性表單作為div，則可以使用適用性表單容器元件。
+* **在AEM Sites頁中添加多個自適應Forms**:要在AEM Sites頁中添加多個自適應Forms，請使用AEM Forms容器元件 —  [自適應Forms — 嵌入(v2)](#embed-new-af) 和 [自適應窗體容器](#af-container-component)。 在這種情況下，您需要在AEM Sites頁中將多個自適應表單作為div添加，您可以使用自適應表單容器元件。
 
-您可以使用規則編輯器來新增或控制最適化表單元件的動態行為。 例如，隱藏或顯示元件。 規則編輯器無法用於非適用性表單元件。 因此，在AEM Forms容器元件中使用非最適化表單元件時，請盡量使用您的注意事項。
+可以使用規則編輯器添加或控制自適應表單元件的動態行為。 例如，隱藏或顯示元件。 規則編輯器不可用於非自適應表單元件。 因此，在使用AEM Forms集裝箱元件中的非自適應表單元件時，請使用您的勤勉。
 
-## 使用適用性Forms容器元件建立適用性表單 {#af-container-component}
+## 使用自適應Forms容器元件建立自適應窗體 {#af-container-component}
 
-此 [!UICONTROL 適用性表單容器] 元件可讓您使用AEM Sites編輯器中的適用性Forms元件來建立數位註冊體驗。 您可以拖放表單元件，以建立最適化表單。
+的 [!UICONTROL 自適應窗體容器] 元件允許在AEM Sites編輯器中使用自適應Forms元件構建數字註冊體驗。 可以通過拖放表單元件來建立自適應表單。
 
 ### 必備條件 {#prerequisites-af-container}
 
-+++ 啟用 **[!UICONTROL 適用性Forms容器]** 元件。
++++ 啟用 **[!UICONTROL 自適應Forms集裝箱]** 元件。
 
-啟用 [!UICONTROL 適用性Forms容器] 元件，請執行下列步驟：
+啟用 [!UICONTROL 自適應Forms集裝箱] 的子模組，請執行以下步驟：
 
-1. 前往 [!UICONTROL 頁面資訊] > [!UICONTROL 編輯範本]
-1. 按一下 [!UICONTROL 原則] ，然後選取 **[!UICONTROL 適用性Forms容器]**  核取方塊下方的 **[AEM原型專案名稱]  — 適用性表單**.
-1. 按一下 **[!UICONTROL 完成]**.
+1. 轉到 [!UICONTROL 頁面資訊] > [!UICONTROL 編輯模板]
+1. 按一下 [!UICONTROL 策略] 的 **[!UICONTROL 自適應Forms集裝箱]**  複選框 **[原型AEM項目名稱]  — 自適應窗體**。
+1. 按一下 **[!UICONTROL 完成]**。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
 +++
 
-+++ 將適用性Forms用戶端程式庫包含至AEM Sites頁面
++++ 將AdaptiveForms客戶端庫包括到AEM Sites頁
 
-若要在AEM Sites頁面中使用適用性Forms元件，請使用AEM原型/Git存放庫和部署管道，將Customheaderlibs和Customfooterlibs用戶端程式庫包含至AEM Sites頁面。
+要在AEM Sites頁中使用自適應Forms元件，請使用Archetype/Git儲存庫和部署管道將Customheaderlibs和Customfooterlibs客戶端庫包AEM括到AEM Sites頁。
 
-1. 開啟 [AEM Forms原型或複製的Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 專案（在文字編輯器中）。 例如Visual Studio Code。
+1. 開啟 [AEM Forms原型或克隆的Git儲存庫](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 在文本編輯器中。 例如，Visual Studio代碼。
 1. 導覽至 `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`。
-1. 複製 `sling:resourceSuperType`. 例如，值為 `core/wcm/components/page/v3/page`.
+1. 複製的值 `sling:resourceSuperType`。 例如，值為 `core/wcm/components/page/v3/page`。
 
    ![sling資源](/help/forms/assets/slingresource.png)
 
-1. 在位置建立類似結構 `ui.apps/src/main/content/jcr_root/apps` 與 `core/wcm/components/page/v3/page`.
+1. 在位置建立類似結構 `ui.apps/src/main/content/jcr_root/apps` 相同 `core/wcm/components/page/v3/page`。
 
    ![覆蓋結構](/help/forms/assets/overlaystructure.png)
 
-1. 新增 `customheaderlibs.html` 和 `customfooterlibs.html` 檔案。
+1. 添加 `customheaderlibs.html` 和 `customfooterlibs.html` 的子菜單。
 
    ```
    //Customheaderlibs.html
@@ -75,111 +75,111 @@ ht-degree: 2%
    </sly> 
    ```
 
-   customfooterlibs.html用於JavaScript，而customheaderlibs.html用於CSS。
+   customfooterlibs.html用於JavaScript,customheaderlibs.html用於css。
 
-1. [執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) 來部署變更。
+1. [運行管線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) 以部署更改。
 
 +++
 
-### 使用適用性Forms容器元件建立適用性表單 {#create-af-using-af-container}
+### 使用自適應Forms容器元件建立自適應窗體 {#create-af-using-af-container}
 
 
-若要建立最適化表單，請使用 [!UICONTROL 適用性Forms容器] 元件：
+使用 [!UICONTROL 自適應Forms集裝箱] 元件：
 
-1. 在編輯模式中開啟AEM Sites頁面。
-1. 從「元件」瀏覽器面板，拖放 **[!UICONTROL 適用性Forms容器]** 元件。
-1. 使用適用性Forms元件建立適用性表單。
-1. 儲存設定。
+1. 以編輯模式開啟AEM Sites頁面。
+1. 在「元件」瀏覽器面板中，拖放 **[!UICONTROL 自適應Forms集裝箱]** 元件。
+1. 使用自適應Forms元件建立自適應窗體。
+1. 保存設定。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-你的表格準備好了。 當您發佈AEM Sites頁面時，頁面會自動發佈適用性表單及其相關的參考資產。
+你的表格準備好了。 當您發佈AEM Sites頁面時，它會自動發佈自適應表單及其關聯的引用資產。
 
-#### 設定最適化表單容器屬性 {#configure-additional-settings-container}
+#### 配置自適應表單容器屬性 {#configure-additional-settings-container}
 
-您可以自訂 [!UICONTROL 適用性表單容器] 元件。 例如，
+可以自定義 [!UICONTROL 自適應窗體容器] 元件。 例如，
 
-* 您可以設定預填服務，在網站的頁面上載入具有預填值的適用性表單。
-* 您可以配置「資料模型」設定，將適用性表單與資料來源關聯。
-* 您可以設定提交動作，在提交表單時在Microsoft® OneDrive、Microsoft® OneDrive或其他資料來源上傳送資料。 您也可以建立並選取適用性Forms的自訂提交動作。
+* 您可以配置預填充服務，以在站點的頁面上載入具有預填充值的自適應表單。
+* 可以配置「資料模型」設定，以將「自適應表單」與資料源關聯。
+* 您可以配置提交操作，以便在提交表單時發送Microsoft® OneDrive、Microsoft® OneDrive或其他資料源上的資料。 您還可以為自適應Forms建立和選擇自定義提交操作。
 
-若要設定 **[!UICONTROL 適用性Forms容器]** 元件，按一下 ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) 在動作列上。 此 **[!UICONTROL 編輯適用性Forms容器]** 對話框開啟。
+設定 **[!UICONTROL 自適應Forms集裝箱]** 元件，按一下 ![設定表徵圖](/help/forms/assets/Smock_Wrench_18_N.svg) 按鈕。 的 **[!UICONTROL 編輯自適應Forms容器]** 對話框。
 
-![編輯對話方塊](/help/forms/assets/adaptiveformcontainer-editdialog.png)
+![編輯對話框](/help/forms/assets/adaptiveformcontainer-editdialog.png)
 
-在 [!UICONTROL 編輯適用性Forms容器] 對話框，可以指定以下內容。
+在 [!UICONTROL 編輯自適應Forms容器] 對話框，可以指定以下內容。
 * **基本標籤**
-   * **預填服務**:您可以使用預填服務，使用現有資料自動填寫適用性表單的欄位。 使用者開啟表單時，會預填這些欄位的值。 有關預填服務的資訊，請參見 [預填最適化表單欄位](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
-   * **客戶端庫類別**:指定 [JavaScript函式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) 用於運算式中，且受適用性Forms支援。
-* **資料模型**:資料模型可讓您將不同資料來源的實體和服務整合至最適化表單。 選擇 **[!UICONTROL 表單資料模型]** 如果您要建立的適用性表單涉及從多個資料來源擷取和寫入資料。
-   * **表單資料模型**:表單資料模型可讓適用性表單與不同的資料來源通訊。 如需設定資料來源的相關資訊，請參閱 [設定資料來源。](/help/forms/configure-data-sources.md)
-   * **結構**:結構表示組織中後端系統產生或使用資料的結構。 您可以 [將結構關聯至適用性表單](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) 並使用其元素將動態內容新增至最適化表單。
+   * **預填充服務**:可以使用預填充服務使用現有資料自動填充自適應表單的欄位。 當用戶開啟表單時，這些欄位的值將預先填充。 有關預填服務的資訊，請參見 [預填充自適應表單域](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
+   * **客戶端庫類別**:指定 [JavaScript函式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) 在表達式中使用且受Adaptive Forms支援。
+* **資料模型**:資料模型允許您將不同資料源中的實體和服務整合到自適應表單。 選擇 **[!UICONTROL 窗體資料模型]** 如果要建立的自適應表單涉及從多個資料源讀取資料和將資料寫入多個資料源。
+   * **窗體資料模型**:表單資料模型允許自適應表單與不同的資料源通信。 有關配置資料源的資訊，請參見 [配置資料源。](/help/forms/configure-data-sources.md)
+   * **架構**:架構表示組織中後端系統生成或使用資料的結構。 你可以 [將模式與自適應表單關聯](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) 並使用其元素將動態內容添加到自適應表單。
 
       >[!NOTE]
       >
-      > 配置表單資料模型後，您無法更改關聯的表單模型。 但是，可以修改與表單資料模型相關聯的架構。
+      > 配置表單資料模型後，無法更改關聯的表單模型。 但是，可以修改與表單資料模型關聯的架構。
 
-* **提交標籤**
+* **提交頁籤**
 
    * **重新導向至 URL**
-      * **重新導向URL/路徑**:指定在提交後最適化表單重新導向的URL或路徑。
+      * **重定向URL/路徑**:指定在提交後自適應表單重定向到的URL或路徑。
 
-      * **提交動作**:當使用者按一下適用性表單上的「提交」按鈕時，會觸發提交動作。 您可以 [在適用性表單上設定提交動作](/help/forms/configuring-submit-actions.md). 適用性表單可立即提供下列提交動作：
-         * 提交到REST端點
+      * **提交操作**:當用戶按一下自適應表單上的「提交」按鈕時，將觸發提交操作。 你可以 [在Adaptive Form上配置提交操作](/help/forms/configuring-submit-actions.md)。 自適應表單提供了以下現成的提交操作：
+         * 提交到REST終結點
          * 傳送電子郵件
          * 使用表單資料模型提交
-         * 叫用AEM工作流程
+         * 調用工AEM作流
          * 提交至 SharePoint
          * 提交至 OneDrive
          * 提交到 Azure Blob 儲存體
 
-   您也可以 [擴展預設的提交操作](custom-submit-action-form.md) 建立自訂提交動作。
+   您也可以 [擴展預設提交操作](custom-submit-action-form.md) 建立您自己的自定義提交操作。
 
 * **顯示訊息**
-   * **訊息內容**:使用RTF編輯器撰寫訊息，以在表單提交時顯示。 只有在您選擇顯示感謝訊息時，才可使用此選項。
+   * **消息內容**:使用富格文本編輯器編寫消息，以便在提交表單時顯示。 此選項僅在您選擇顯示感謝信時可用。
 
-## 內嵌最適化表單  {#aem-container-component}
+## 嵌入自適應表單  {#aem-container-component}
 
-使用 **[!UICONTROL 適用性Forms — 內嵌(V2)]** 元件，您可以內嵌新的適用性表單，或在網站的頁面中內嵌現有的適用性表單。 此 [!UICONTROL 適用性Forms — 內嵌(v2)] 元件可讓您：
+使用 **[!UICONTROL 自適應Forms — 嵌入(V2)]** 元件，您可以在網站的頁面中嵌入新的Adaptive Form，或嵌入現有的Adaptive Form。 的 [!UICONTROL 自適應Forms — 嵌入(v2)] 元件允許您：
 
-* [新增現有的最適化表單](#embed-new-af)
+* [添加現有自適應表單](#embed-new-af)
 
-* [建立並新增最適化表單](#embed-existing-af)
+* [建立並添加新的自適應表單](#embed-existing-af)
 
 ### 必備條件 {#prerequisites}
 
-+++ 啟用 **適用性Forms — 內嵌** 元件。
++++ 啟用 **自適應Forms — 嵌入** 元件。
 
-啟用 [!UICONTROL 適用性Forms — 內嵌(v2)] 元件，請執行下列步驟：
+啟用 [!UICONTROL 自適應Forms — 嵌入(v2)] 的子模組，請執行以下步驟：
 
-1. 前往 [!UICONTROL 頁面資訊] > [!UICONTROL 編輯範本]
+1. 轉到 [!UICONTROL 頁面資訊] > [!UICONTROL 編輯模板]
 
-1. 按一下 [!UICONTROL 原則] ，然後選取 **[!UICONTROL 適用性表單 — 內嵌(v2)]** 核取方塊下方的 **[!UICONTROL [AEM原型專案名稱] -Forms]** 群組。
-1. 按一下 **[!UICONTROL 完成]**.
+1. 按一下 [!UICONTROL 策略] 的 **[!UICONTROL 自適應表單 — 嵌入(v2)]** 複選框 **[!UICONTROL [原型AEM項目名稱] -Forms]** 組
+1. 按一下 **[!UICONTROL 完成]**。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
 +++
 
-+++ 將適用性Forms用戶端程式庫包含至AEM Sites頁面
++++ 將AdaptiveForms客戶端庫包括到AEM Sites頁
 
-當 **[!UICONTROL 表單覆蓋頁面的整個寬度時]** 選項 **[!UICONTROL 表單容器]** 配置對話框和 **使用核心元件的適用性Forms** ，則必須在您對應網站的頁面上包含clientlib。
+當 **[!UICONTROL 當表單覆蓋頁面的整個寬度時]** 的子菜單。 **[!UICONTROL 窗體容器]** 配置對話框和 **使用核心元件的自適應Forms** ，則必須在相應站點的頁面上包含客戶端。
 
 ![覆蓋Gif](/help/forms/assets/overlaycorecomponent.gif)
 
-若要在AEM Sites頁面中使用適用性Forms元件，請包含 `Customheaderlibs` 和 `Customfooterlibs` 使用AEM原型/Git存放庫和部署管道將用戶端程式庫導向至AEM Sites頁面。
+要在AEM Sites頁中使用自適應Forms元件，請包括 `Customheaderlibs` 和 `Customfooterlibs` 使用Archetype/Git儲存庫和部AEM署管道將客戶端庫連接到AEM Sites頁。
 
-1. 開啟 [AEM Forms原型或複製的Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 專案（在文字編輯器中）。 例如Visual Studio Code。
+1. 開啟 [AEM Forms原型或克隆的Git儲存庫](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 在文本編輯器中。 例如，Visual Studio代碼。
 1. 導覽至 `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`。
-1. 複製 `sling:resourceSuperType`. 例如，值為 `core/wcm/components/page/v3/page`.
+1. 複製的值 `sling:resourceSuperType`。 例如，值為 `core/wcm/components/page/v3/page`。
 
    ![sling資源](/help/forms/assets/slingresource.png)
 
-1. 在位置建立類似結構 `ui.apps/src/main/content/jcr_root/apps` 與 `core/wcm/components/page/v3/page`.
+1. 在位置建立類似結構 `ui.apps/src/main/content/jcr_root/apps` 相同 `core/wcm/components/page/v3/page`。
 
    ![覆蓋結構](/help/forms/assets/overlaystructure.png)
 
-1. 新增 `customheaderlibs.html` 和 `customfooterlibs.html` 檔案。
+1. 添加 `customheaderlibs.html` 和 `customfooterlibs.html` 的子菜單。
 
    ```
    //Customheaderlibs.html
@@ -195,77 +195,77 @@ ht-degree: 2%
    </sly>
    ```
 
-   此 `customfooterlibs.html` 用於JavaScript，而 `customheaderlibs.html` （針對CSS）。
+   的 `customfooterlibs.html` 用於JavaScript和 `customheaderlibs.html` 的下界。
 
-1. [執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) 來部署變更。
+1. [運行管線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) 以部署更改。
 
 +++
 
-### 將現有的適用性表單新增至AEM Sites頁面 {#embed-existing-af}
+### 將現有的自適應表單添加到AEM Sites頁 {#embed-existing-af}
 
-1. 在編輯模式中開啟AEM Sites頁面。
-1. 從「元件」瀏覽器面板，拖放 [!UICONTROL 適用性Forms — 內嵌] 元件。
-1. 點選 [!UICONTROL 適用性Forms — 內嵌] 元件，然後點選 ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) 在動作列上。 此 **[!UICONTROL 編輯適用性Forms — 內嵌]** 對話框開啟。
-1. 瀏覽並選取要內嵌於 [!UICONTROL 資產路徑].
-1. 儲存設定。 適用性表單現已內嵌於頁面中。
+1. 以編輯模式開啟AEM Sites頁面。
+1. 在「元件」瀏覽器面板中，拖放 [!UICONTROL 自適應Forms — 嵌入] 元件。
+1. 點擊 [!UICONTROL 自適應Forms — 嵌入] 「站點」頁中的元件，然後點擊 ![設定表徵圖](/help/forms/assets/Smock_Wrench_18_N.svg) 按鈕。 的 **[!UICONTROL 編輯自適應Forms — 嵌入]** 對話框。
+1. 瀏覽並選擇要嵌入到 [!UICONTROL 資產路徑]。
+1. 保存設定。 「自適應表單」現在嵌入到頁面中。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
 
 
 
-### 建立新的最適化表單並新增至AEM Sites頁面 {#embed-new-af}
+### 建立並將新的自適應表單添加到AEM Sites頁 {#embed-new-af}
 
-1. 在編輯模式中開啟AEM Sites頁面。
-1. 從「元件」瀏覽器面板，拖放 [!UICONTROL 適用性Forms — 內嵌(v2)] 元件。
-1. 按一下 **加號** 圖示，系統就會將您重新導向至表單建立精靈。
+1. 以編輯模式開啟AEM Sites頁面。
+1. 在「元件」瀏覽器面板中，拖放 [!UICONTROL 自適應Forms — 嵌入(v2)] 元件。
+1. 按一下 **加** 表徵圖，您將被重定向到窗體建立嚮導。
 
-   ![適用性Forms — 內嵌元件](/help/forms/assets/aemformcontainer.png)
+   ![自適應Forms — 嵌入元件](/help/forms/assets/aemformcontainer.png)
 
-1. 從 [!UICONTROL 表單建立] 嚮導。
-1. 此 [!UICONTROL 資產路徑] 已包含已建立適用性表單的路徑
-1. 儲存設定。 適用性表單現已內嵌於頁面中。
+1. 從 [!UICONTROL 窗體建立] 的子菜單。
+1. 的 [!UICONTROL 資產路徑] 已包括已建立的自適應表單的路徑
+1. 保存設定。 「自適應表單」現在嵌入到頁面中。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
 
-#### 設定適用性表單 — 內嵌(v2)屬性 {#configure-adaptive-form-embed}
+#### 配置自適應表單 — 嵌入(v2)屬性 {#configure-adaptive-form-embed}
 
-您可以自訂 [!UICONTROL 適用性表單 — 內嵌(v2)] 元件。 在 [!UICONTROL 編輯適用性Forms — 內嵌(v2)] 對話框，可以指定以下內容。
+可以自定義 [!UICONTROL 自適應表單 — 嵌入(v2)] 元件。 在 [!UICONTROL 編輯自適應Forms — 嵌入(v2)] 對話框，可以指定以下內容。
 
-* **資產路徑**:瀏覽並選取要內嵌的適用性表單。 如果您從「資產」瀏覽器中拖放，則會自動填入。
-* **貼文提交** :選取要在表單提交時觸發的動作。 您可以選擇顯示感謝訊息或感謝頁面。
-   * **顯示感謝消息**:使用RTF編輯器撰寫訊息，以在表單提交時顯示。 只有在您選擇顯示感謝訊息時，才可使用此選項。
-   * **顯示感謝頁**:瀏覽並選取要在表單提交時顯示的頁面。 只有在您選擇顯示感謝頁面時，才可使用此選項。
-   * **重新導向至感謝頁面**:啟用選項，將包含內嵌適用性表單的頁面取代為感謝頁面。 否則，感謝頁面會取代 [!UICONTROL 適用性Forms — 內嵌] 元件，而不會重新整理頁面的基礎網站。 只有在您選擇顯示感謝頁面時，才可使用此選項。
-* **使用頁面語言**:使用AEM Sites頁面的本機區域設定，而非適用性表單。
-* **將焦點置於表單上**:選取「 」，將焦點設定在最適化表單的第一個欄位上。
-* **表單覆蓋框架的整個寬度**:如果勾選此選項，則不會使用iframe來轉譯表單。
-* **高度**:指定容器的高度。 保留為空白以自動調整容器大小。
-* **CSS用戶端程式庫**:指定CSS用戶端程式庫的路徑。
+* **資產路徑**:瀏覽並選擇要嵌入的自適應表單。 如果從「資產」瀏覽器中刪除它，則會自動填充它。
+* **提交後** :選擇要在表單提交時觸發的操作。 您可以選擇顯示感謝信或感謝頁。
+   * **顯示感謝信**:使用富格文本編輯器編寫消息，以便在提交表單時顯示。 此選項僅在您選擇顯示感謝信時可用。
+   * **顯示「感謝」頁**:瀏覽並選擇要在表單提交時顯示的頁面。 此選項僅在您選擇顯示感謝頁時可用。
+   * **重定向至「感謝」頁**:啟用此選項可將包含嵌入式自適應表單的頁面替換為感謝頁。 否則，感謝頁將替換 [!UICONTROL 自適應Forms — 嵌入] 元件，而不刷新頁面的基礎站點。 此選項僅在您選擇顯示感謝頁時可用。
+* **使用頁面語言**:使用AEM Sites頁的本地語言環境，而不是自適應窗體。
+* **將焦點設定在窗體上**:選擇以在「自適應表單」的第一個欄位上設定焦點。
+* **窗體覆蓋框架的整個寬度**:如果選中，則不使用iframe來呈現表單。
+* **高度**:指定容器的高度。 將其留空，以自動調整容器大小。
+* **CSS客戶端庫**:指定CSS客戶端庫的路徑。
 
-### 使用適用性表單 — 內嵌(v2)元件發佈新增的適用性Forms  {#publish-embedded-adaptive-form}
+### 使用Adaptive Form - Embed(v2)元件發佈添加的自適應Forms  {#publish-embedded-adaptive-form}
 
-若要使用發佈新增的適用性Forms，請考量下列案例 **[!UICONTROL 適用性表單 — 內嵌(v2)]** 元件：
+請考慮以下方案，使用 **[!UICONTROL 自適應表單 — 嵌入(v2)]** 元件：
 
-* 第一次發佈AEM Sites頁面時，新增至Sites頁面的表單會自動發佈。
-* 修改新增至已發佈之Sites頁面的適用性表單時，請手動發佈對應的適用性Forms。
-* 修改Sites頁面和對應的適用性Forms時，請重新發佈Sites頁面以及新增至Sites頁面的所有適用性Forms。
+* 首次發佈AEM Sites頁面時，添加到「站點」頁面的表單將自動發佈。
+* 修改添加到已發佈的「站點」頁面的自適應表單時，請手動發佈相應的自適應Forms。
+* 修改「站點」頁面和相應的「自適應Forms」時，重新發佈「站點」頁面和添加到「站點」頁面的所有「自適應Forms」。
 
-### 使用適用性表單 — 內嵌(v2)元件修改新增的適用性Forms  {#modifying-embedded-adaptive-form}
+### 使用Adaptive Form - Embed(v2)元件修改添加的自適應Forms  {#modifying-embedded-adaptive-form}
 
-要修改適用性表單的任何配置或屬性，請執行以下操作之一：
+要修改自適應表單的任何配置或屬性，請執行以下操作之一：
 
-* 在個別編輯器的適用性表單中開啟原始表單並加以修改。
-* 以編輯模式從網站頁麵點選最適化表單，然後點選 **[!UICONTROL 在新視窗中編輯]**. 原始表單會以可修改的編輯模式開啟。
+* 在相應編輯器的「自適應表單」中開啟原始表單並修改它們。
+* 在編輯模式下從網站頁中按一下「Adaptive Form（自適應表單）」 ，然後按一下 **[!UICONTROL 在新窗口中編輯]**。 原始窗體在可修改的編輯模式下開啟。
 
-## 變更新增至AEM Sites頁面的最適化表單版面 {#change-layout-af-aem-sites-page}
+## 更改添加到AEM Sites頁的自適應表單的佈局 {#change-layout-af-aem-sites-page}
 
-在AEM Sites頁面中， [版面模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/responsive-layout.html?#defining-layouts-layout-mode) 可讓您調整已建立或新增至AEM Sites頁面的適用性表單大小。
+在AEM Sites版 [佈局模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/responsive-layout.html?#defining-layouts-layout-mode) 允許您調整建立或添加到AEM Sites頁面的自適應表單的大小。
 
-![AF-layout-support](/help/forms/assets/afsite-layoutsupport.gif)
+![AF佈局支援](/help/forms/assets/afsite-layoutsupport.gif)
 
-AEM網站頁面會維護最適化表單的參考。 翻譯AEM Sites頁面時，會使用 [翻譯專案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) 其他語言。
+「站AEM點」頁維護對「自適應表單」的引用。 當您翻譯AEM Sites頁面時，它會使用 [翻譯項目](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) 換成其他語言。
 
-## 最佳實務 {#best-practices}
+## 最佳做法 {#best-practices}
 
-* 原始表單中的頁首和頁尾不包含在嵌入表單中。
-* 支援使用者草稿和提交內嵌表單，且可顯示在Forms Portal的「草稿」和「已提交Forms」標籤中。
+* 原始表單中的頁眉和頁腳不包括在嵌入表單中。
+* 在Forms門戶的「草稿」和「已提交的Forms」頁籤中，支援和可以看到嵌入表單的用戶草稿和提交。

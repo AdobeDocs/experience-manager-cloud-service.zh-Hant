@@ -81,7 +81,7 @@ ht-degree: 96%
 
 ## 其他資源 {#additional-resources}
 
-如果您想要超越入門歷程的內容，以下是其他選用資源。
+如果您想超越登機旅程的內容，請選擇以下附加資源。
 
 [創作頁面的快速入門指南](/help/sites-cloud/authoring/getting-started/quick-start.md) - 從此處開始，快速了解 AEM 中的創作基礎知識。
 [無頭創作之旅](/help/journey-headless/author/overview.md)- 如果您想創作無頭內容，請遵循此引導式介紹。

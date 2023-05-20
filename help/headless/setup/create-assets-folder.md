@@ -3,7 +3,7 @@ title: 建立資產資料夾 - Headless 設定
 description: 使用 AEM 內容片段模型定義內容片段的結構，這是無周邊內容的基礎。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 

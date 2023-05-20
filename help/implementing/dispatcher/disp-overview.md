@@ -19,23 +19,23 @@ ht-degree: 74%
 
 ## 簡介 {#apache-and-dispatcher-configuration-and-testing}
 
-本頁說明Dispatcher工具，以及如何下載和擷取工具、支援的Apache模組，並提供舊版和彈性模式的概觀。 此外，也有進一步的驗證和除錯參考，以及將Dispatcher設定從AMS移轉至AEMas a Cloud Service。 <!-- ERROR: NOT FOUND (HTTP ERROR 404) Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment. -->
+本頁介紹Dispatcher工具以及如何下載和提取它們以及受支援的Apache模組，並提供了對傳統和靈活模式的高級概述。 此外，還有關於驗證和調試以及將Dispatcher配置從AMS遷移到AEMas a Cloud Service的參考。 <!-- ERROR: NOT FOUND (HTTP ERROR 404) Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment. -->
 
 ## Dispatcher 工具 {#dispatcher-sdk}
 
 Dispatcher 工具是整體 AEM as a Cloud Service SDK 的一部分，提供：
 
 * 普通文件檔案，其包含要放入 Dispatcher 之 maven 專案中的設定檔案。
-* 客戶驗證Dispatcher設定是否僅包含AEMas a Cloud Service支援的指令的工具。 此外，工具也會驗證語法是否正確，以便Apache能成功啟動。
+* 用於驗證Dispatcher配置是否只包括as a Cloud Service支AEM持的指令的客戶工具。 此外，該工具還驗證了語法是否正確，以便Apache能夠成功啟動。
 * 可在本機啟動 Dispatcher 的 Docker 影像。
 
 ## 下載並解壓縮工具 {#extracting-the-sdk}
 
 Dispatcher 工具是 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 的一部分，可以在 [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 入口網站下載其壓縮檔。該新的 Dispatcher 工具版本中可用的任何新設定都可用於部署到特定雲端環境，此環境在雲端執行該 AEM 版本或更高版本。
 
-將SDK解壓縮，此SDK捆綁了macOS、Linux®和Windows的Dispatcher工具。
+解壓SDK，該SDK捆綁了用於macOS、Linux®和Windows的Dispatcher Tools。
 
-**對於 macOS/Linux**，使 Dispatcher 工具成品可執行並執行它。它會自行擷取您儲存該檔案的目錄下的Dispatcher工具檔案(其中 `version` 是Dispatcher工具的版本)。
+**對於 macOS/Linux**，使 Dispatcher 工具成品可執行並執行它。它會自行提取您儲存到的目錄下的Dispatcher Tools檔案(其中 `version` 是Dispatcher Tools的版本)。
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -48,17 +48,17 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 ## 使用 Dispatcher 工具進行驗證和偵錯 {#validation-debug}
 
-Dispatcher工具可用來驗證專案的Dispatcher設定並除錯。 進一步了解如何根據專案的Dispatcher組態是以彈性模式還是舊式模式建構，在以下參考的頁面中使用這些工具：
+Dispatcher工具用於驗證和調試項目的Dispatcher配置。 瞭解有關如何在下面引用的頁面中使用這些工具的更多資訊，具體取決於項目的Dispatcher配置是以靈活模式還是傳統模式構建的：
 
-* **靈活模式** - 建議使用的模式，也是 [AEM 原型 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 及更高版本的預設模式，Cloud Manager 也將其用於 Cloud Manager 2021.7.0 版本之後建立的新環境。客戶可以透過新增資料夾和檔案 `opt-in/USE_SOURCES_DIRECTLY` 來啟動此模式。透過使用這種更靈活的模式，重寫資料夾下的檔案結構沒有限制，而在傳統模式下需要單一 `rewrite.rules` 檔案。此外，可以新增的規則數量也沒有限制。如需資料夾結構和本機驗證的詳細資訊，請參閱 [使用Dispatcher工具進行驗證和除錯](/help/implementing/dispatcher/validation-debug.md).
+* **靈活模式** - 建議使用的模式，也是 [AEM 原型 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 及更高版本的預設模式，Cloud Manager 也將其用於 Cloud Manager 2021.7.0 版本之後建立的新環境。客戶可以透過新增資料夾和檔案 `opt-in/USE_SOURCES_DIRECTLY` 來啟動此模式。透過使用這種更靈活的模式，重寫資料夾下的檔案結構沒有限制，而在傳統模式下需要單一 `rewrite.rules` 檔案。此外，可以新增的規則數量也沒有限制。有關資料夾結構和本地驗證的詳細資訊，請參閱 [使用Dispatcher工具驗證和調試](/help/implementing/dispatcher/validation-debug.md)。
 
-* **舊式模式**  — 如需Dispatcher設定舊式模式的資料夾結構和本機驗證的詳細資訊，請參閱 [使用Dispatcher工具（舊版）進行驗證和除錯](/help/implementing/dispatcher/validation-debug-legacy.md)
+* **舊模式**  — 有關Dispatcher配置舊模式的資料夾結構和本地驗證的詳細資訊，請參見 [使用Dispatcher Tools（舊版）驗證和調試](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 如需進一步了解如何從舊設定模型移轉到更靈活的模型 (隨 AEM 原型 28 提供)，請參閱[此文件](/help/implementing/dispatcher/validation-debug.md#migrating)。
 
 ## 內容處置 {#content-disposition}
 
-對於發佈層級，用於提供 Blob 的預設值是作為附件。使用標準覆寫此設定 [內容處置標題](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) 在Dispatcher中。
+對於發佈層級，用於提供 Blob 的預設值是作為附件。使用標準 [內容處置標題](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) 調度器。
 
 以下是設定看起來的樣子的範例：
 
@@ -71,7 +71,7 @@ Dispatcher工具可用來驗證專案的Dispatcher設定並除錯。 進一步�
 
 ## 支援的 Apache 模組 {#supported-directives}
 
-下表顯示支援的Apache模組：
+下表顯示了支援的Apache模組：
 
 | 模組名稱 | 參考頁面 |
 |---|---|
@@ -119,7 +119,7 @@ Allowlisted directives:
 
 ## 資料夾結構 {#folder-structure}
 
-專案的Apache和Dispatcher資料夾結構會因專案使用的模式而稍有不同，如 [使用Dispatcher工具進行驗證和除錯](#validation-debug) 一節。
+項目的Apache和Dispatcher資料夾結構因項目使用的模式而略有不同，如中所述 [使用Dispatcher Tools進行驗證和調試](#validation-debug) 的上界。
 
 ## 從 AMS 移轉 Dispatcher 設定 {#ams-aem}
 

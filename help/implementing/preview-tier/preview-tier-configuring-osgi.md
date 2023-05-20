@@ -1,13 +1,13 @@
 ---
 title: 設定預覽階層的 OSGi 設定
 description: 了解如何設定 AEM 預覽服務，以在上線前預覽內容。
-source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
-workflow-type: ht
+exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 100%
 
 ---
-
 
 # 設定預覽階層的 OSGi 設定 {#configure-osgi-preview-tier}
 

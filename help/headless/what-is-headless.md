@@ -3,7 +3,7 @@ title: 什麼是 Headless CMS？
 description: 了解 Headless CMS。它們如何運作？有哪些替代選項和差異？為什麼要使用 Headless CMS？
 exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
 source-git-commit: 3306bde7b94b9f863b57d36542e8822df38c79ba
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 100%
 

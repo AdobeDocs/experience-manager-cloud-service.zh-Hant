@@ -3,7 +3,7 @@ title: 如何將 Headless 應用程式上線
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何從 Git 取出本機程式碼並移至 Cloud Manager Git 以用於 CI/CD 管道，藉此來部署無周邊應用程式。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 100%
 

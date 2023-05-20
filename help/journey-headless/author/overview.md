@@ -3,7 +3,7 @@ title: AEM Headless 內容作者歷程
 description: 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的無周邊特性、其功能，以及如何為您的專案編寫內容。
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 100%
 

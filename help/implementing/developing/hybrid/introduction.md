@@ -3,7 +3,7 @@ title: SPA 簡介和逐步解說
 description: 本文章介紹 SPA 的概念，並逐步解說如何使用基本 SPA 應用程式進行編寫，說明它與基礎 AEM SPA 編輯器的關係。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2076'
 ht-degree: 100%
 

@@ -1,13 +1,13 @@
 ---
 title: Universal Visual Editor 簡介
 description: 了解透過 Universal Visual Editor (即 Universal Editor) 如何實現所見即所得 (WYSIWYG) 編輯任何無周邊和有周邊體驗。了解它如何幫助內容作者提供卓越的體驗、提高其內容速度，以及如何提供最先進的開發人員體驗。
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 100%
 
 ---
-
 
 # Universal Visual Editor 簡介 {#introduction}
 

@@ -21,19 +21,19 @@ ht-degree: 47%
 
 此工具也會自動轉移主體 (使用者或群組)。
 
-新版「內容轉移工具」已推出，其整合了內容轉移程式與Cloud Acceleration Manager。 強烈建議您切換至此新版本，以充分運用其提供的所有優點：
+新版內容傳輸工具可將內容傳輸過程與Cloud Acceleration Manager整合。 強烈建議切換到此新版本，以利用它提供的所有好處：
 
-* 自助式方式，只需擷取一次移轉集，並同時內嵌至多個環境
-* 透過更好的載入狀態、護欄和錯誤處理改善使用者體驗
-* 擷取記錄會持續存在，且隨時都可用於疑難排解
+* 自助式方法，一次提取遷移集並將其並行接收到多個環境中
+* 通過更好的載入狀態、護欄和錯誤處理改進用戶體驗
+* 攝取日誌被保留，始終可用於故障排除
 
-若要開始使用新版本，您需要解除安裝舊版「內容轉移工具」，因為工具的架構有重大變更。
+若要開始使用新版本，您需要卸載舊版本的內容傳輸工具，因為該工具中發生了重大體系結構更改。
 
 >[!NOTE]
 >
-> 若移轉作業已在進行中，您可以繼續使用舊版CTT，直到移轉完成為止。 如需與舊版CTT相關的檔案，請參閱 [舊版檔案](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
+> 對於已在進行遷移的情況，您可以繼續使用CTT的以前版本，直到遷移完成。 有關與CTT的上一版本相關的文檔，請參閱 [舊文檔](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)。
 
-## 內容轉移工具中的階段 {#phases-content-transfer-tool}
+## 內容傳輸工具中的階段 {#phases-content-transfer-tool}
 
 有兩個階段與內容轉移相關聯：
 
@@ -42,17 +42,17 @@ ht-degree: 47%
    如需詳細資訊，請參考[內容轉移中的提取程序](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)。
 
    >[!NOTE]
-   >使用者對應現在會在製作的提取階段期間自動執行（但可選擇在製作時停用，或在發佈時啟用）。 請參閱 [用戶映射和主體遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以取得更多詳細資訊。
+   >用戶映射現在作為作者抽取階段的一部分自動運行（但可以選擇在作者上禁用或在發佈時啟用）。 請參閱 [用戶映射和主遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 的子菜單。
 
 1. **擷取**：擷取指的是從&#x200B;*移轉集*&#x200B;擷取內容，並存放至目標雲端服務例項。
 
-   請參閱 [內容轉移中的擷取程式](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 以取得更多詳細資訊。
+   請參閱 [內容傳輸中的攝取過程](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 的子菜單。
 
-## 移轉集的屬性 {#attributes-migration-set}
+## 遷移集的屬性 {#attributes-migration-set}
 
 移轉集有下列屬性：
 
-* 透過新版本，您可以在Cloud Acceleration Manager中建立的專案中，最多建立5個移轉集。
+* 使用新版本，您可以在在Cloud Acceleration Manager中建立的項目中最多建立五個遷移集。
 * 每個移轉集的名稱必須是唯一的。
 
 「內容轉移工具」具備支援追加差異內容的功能，可以只轉移在上一次內容轉移活動後所進行的變更。
@@ -71,18 +71,18 @@ ht-degree: 47%
 >title="移轉集到期"
 >abstract="了解移轉集到期。"
 
-所有移轉集最終將在長時間閒置約90天後過期。 在一段時間的專案卡和移轉工作表列上顯示指標後，移轉集即會過期，且其資料將不再可用。 可借由下列方式依移轉集操作，輕鬆延長到期時間：
+所有遷移集在長時間不活動約90天後最終將過期。 在項目卡和遷移作業表行上顯示指示器一段時間後，遷移集將過期，其資料將不再可用。 通過對遷移設定的操作，可以容易地延長到期時間：
 
 * 編輯說明
 * 獲取提取密鑰
-* 執行擷取
-* 從中執行擷取
+* 對其執行提取
+* 從中攝取
 
-可在「遷移集」行上監視遷移集的到期。 移轉集即將到期的實用視覺指標也會新增專案的卡片。
+可以在遷移集行上監視遷移集的到期。 一個有用的視覺指示器，即遷移集即將到達其到期日期，還添加了項目卡。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
 
 
 ## 下一步 {#whats-next}
 
-了解「內容轉移工具」及其概觀（說明此工具）後，您就必須檢閱，才能將現有內容從來源AEM例項（內部部署或AMS）移至目標AEM Cloud Service例項 [內容轉移工具的必要條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).
+瞭解內容傳輸工具及其描述此工具的概述後，您就可以將現有內容從源實例AEM（本地或AMS）移到目標AEM Cloud Service實例，您必須查看 [內容傳輸工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)。

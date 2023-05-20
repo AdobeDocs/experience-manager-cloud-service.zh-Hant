@@ -1,6 +1,6 @@
 ---
 title: App Builder SDK和CLI
-description: 了解用於開發App Builder應用程式的SDK和CLI。
+description: 瞭解用於開發App Builder應用程式的SDK和CLI。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -20,12 +20,12 @@ ht-degree: 0%
 
 ## SDK
 
-了解Adobe I/OSDK，以及如何用來開發App Builder應用程式。
+瞭解Adobe I/OSDK及其如何用於開發App Builder應用程式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339166/?quality=12&learn=on)
 
 ## CLI
 
-了解Adobe I/OCLI，以及如何將其用於App Builder開發。
+瞭解Adobe I/OCLI，以及如何將其用於App Builder開發。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339167/?quality=12&learn=on)

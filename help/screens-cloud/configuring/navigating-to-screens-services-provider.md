@@ -1,56 +1,56 @@
 ---
-title: 導覽至Screens Services Provider
-description: 本頁面說明如何導覽至Screens Services Provider。
+title: 瀏覽至 Screens 服務提供者
+description: 此頁介紹如何導航到螢幕服務提供程式。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
-# 導覽至Screens Services Provider {#setup-screens-services-provider}
+# 瀏覽至 Screens 服務提供者 {#setup-screens-services-provider}
 
 ## 簡介 {#introduction}
 
-**Screens服務提供商**，可讓內容作者、開發人員和管理員在內容新增至頻道後，管理內容播放的顯示器和播放器。 取得AEM Cloud Service的存取權後，使用者應該就能登入Screens服務提供者。
+**螢幕服務提供程式**，允許內容作者、開發人員和管理員在內容添加到頻道後管理內容播放的顯示器和播放器。 一旦用戶獲得訪問AEM Cloud Service的權限，他們應能登錄到螢幕服務提供商。
 
-本節介紹如何設定Screens Services Provider。
+本節介紹如何設定螢幕服務提供程式。
 
 
 ## 目標 {#objective}
 
-以下章節如何配置和設定Screens Services Provider。
+以下一節如何配置和設定螢幕服務提供程式。
 
-## 設定Screens Services Provider的步驟 {#screens-services-provider}
+## 設定螢幕服務提供程式的步驟 {#screens-services-provider}
 
-請按照以下步驟設定Screens服務提供商：
+按照以下步驟設定螢幕服務提供程式：
 
-1. 從導覽至Screens Services Provider [此處](https://experience.adobe.com/screens).
+1. 導航至螢幕服務提供程式(從 [這裡](https://experience.adobe.com/screens)。
 
    >[!CAUTION]
-   >如果您有多個組織的存取權，請確定您已登入正確的組織。 若要變更組織，請按一下畫面右上角的組織名稱，然後選擇您需要存取的必要組織。
+   >如果您有訪問多個組織的權限，請確保您已登錄到正確的組織。 要更改組織，請按一下螢幕右上角的「組織名稱」，然後選擇需要訪問的所需組織。
 
-2. 按一下「專案」旁的齒輪圖示（左上角）
+2. 按一下「項目」(Project)旁邊的齒輪表徵圖（左上角）
 
    ![影像](/help/screens-cloud/assets/configure/configure-screens0.png)
 
-3. 在「編輯設定」對話方塊中輸入下列詳細資訊。
-   * **發佈Url** - AEM發佈URL(例如 `https://publish-p12345-e12345.adobeaemcloud.com`)
-   * **作者Url** - AEM作者URL(例如 `https://author-p12345-e12345.adobeaemcloud.com`)
+3. 在「編輯設定」(Edit Settings)對話框中輸入以下詳細資訊。
+   * **發佈URL**  — 發AEM布URL(例如， `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * **作者URL**  — 作AEM者URL(例如， `https://author-p12345-e12345.adobeaemcloud.com`)
 
    ![影像](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. 按一下 **儲存** 連接到Screens內容提供程式
+4. 按一下 **保存** 連接到螢幕內容提供程式
 
-5. 選擇 **管道** 按一下左側導覽列中的 **在內容提供者中開啟**.
+5. 選擇 **頻道** 按一下左導航欄 **開啟內容提供程式**。
 
    ![影像](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. 螢幕內容提供者會在另一個標籤中開啟，讓您建立內容。
+6. 螢幕內容提供程式將在另一個頁籤中開啟，該頁籤允許您建立內容。
 
    ![影像](/help/screens-cloud/assets/configure/configure-screens2.png)
 
 ## 下一步 {#whats-next}
 
-學會如何設定Screens Services Provider後，可導航至 [使用Screens內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) 以取得更多詳細資訊。
+學會了如何設定螢幕服務提供程式後，您可以導航到， [使用螢幕內容提供程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) 的子菜單。

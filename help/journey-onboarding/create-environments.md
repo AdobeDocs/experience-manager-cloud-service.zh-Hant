@@ -12,7 +12,7 @@ ht-degree: 53%
 
 # 建立環境 {#create-environments}
 
-在 [入門旅程，](overview.md) 您可以了解如何使用Cloud Manager建立您的第一個環境。
+在 [登機之旅，](overview.md) 您將學習如何使用Cloud Manager建立第一個環境。
 
 ## 目標 {#objective}
 
@@ -28,23 +28,23 @@ ht-degree: 53%
 
 環境位於 Cloud Manager 層次結構中的程序之下。雖然程序允許您組織您的解決方案並授予特定團隊成員對這些程序的存取權限，但環境屬於特定程序並且是這些程序中 Adobe 解決方案的各個實例。環境用於特定目的，例如創作內容或測試新開發。Cloud Manager 的 CI/CD 管道有助於將計劃碼從 git 存放庫部署到這些環境。
 
-如果您回想一下WKND旅遊和探險企業理論的範例，他們是專注於旅遊相關媒體的租戶，他們可能有兩個計畫。 即WKND雜誌部的一個Sites計畫， WKND媒體部的一個Assets計畫。 每個程序都可能有幾個環境，例如一個為網站的實際流量提供服務的生產環境和一個用於測試新應用程序計劃碼的開發環境。
+如果你回想一下WKND旅遊和冒險企業理論的例子，它們可能有兩個節目。 即，其WKND雜誌部門的一個網站方案和WKND媒體部門的一個資產方案。 每個程序都可能有幾個環境，例如一個為網站的實際流量提供服務的生產環境和一個用於測試新應用程序計劃碼的開發環境。
 
-環境有四種類型：
+有四種不同的環境類型：
 
 * **生產與暫存** - 生產環境和暫存環境組成一組使用，分別用於生產和測試目的。
-* **開發**  — 可建立開發環境以用於開發和測試，且僅能與非生產管道相關聯。
-* **快速發展**  — 快速開發環境(RDE)使開發人員能夠快速部署和審核更改，將經過驗證可在本地開發環境中工作的功能的測試時間減至最少。
+* **開發**  — 開發環境可用於開發和測試目的，且僅可與非生產管道關聯。
+* **快速發展**  — 快速開發環境(RDE)允許開發人員快速部署和審查更改，從而最大限度地減少test已證明可在本地開發環境上工作的功能的時間。
 
-為了進行入門歷程，您需建立開發環境，以便探索AEM as a Cloud Service的功能。
+為了完成本入門旅程，為了以最小的速度開始，您建立了一個開發環境，可以用於AEM探索as a Cloud Service的功能。
 
 ## 建立環境 {#creating-environments}
 
-1. 登入Cloud Manager，網址為 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選取適當的組織。
+1. 登錄到Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選擇相應的組織。
 
 1. 選擇要為其添加環境的程式。
 
-1. 若要新增環境，請從 **計畫概述** 頁面上 **環境** 卡片，選取 **新增環境**.
+1. 要添加環境，請從 **計畫概述** 頁，在 **環境** 卡，選擇 **添加環境**。
 
    ![環境卡](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -76,17 +76,17 @@ ht-degree: 53%
 * 了解不同環境之間的區別。
 * 能夠建立自己的環境。
 
-您的雲端資源已建立並可供您的團隊存取。身為系統管理員，您必須先將團隊成員指派給Adobe Admin Console中AEM as a Cloud Service中的產品設定檔，讓他們能夠存取這些資源。
+您的雲端資源已建立並可供您的團隊存取。作為系統管理員，您必須首先將團隊成員分配給與Adobe Admin ConsoleAEMas a Cloud Service的產品配置檔案，以便他們可以訪問這些資源。
 
-因此，您應繼續進行上線歷程，繼續檢閱此檔案 [指派團隊成員給AEMas a Cloud Service產品設定檔](assign-profiles-aem.md). 在該文檔中，您將學習如何授予團隊成員訪問新環境的權利。
+因此，您應繼續登機旅程，下次查看文檔 [為as a Cloud Service產品配置AEM檔案分配團隊成員](assign-profiles-aem.md)。 在該文檔中，您將學習如何授予團隊成員訪問新環境的權限。
 
 ## 其他資源 {#additional-resources}
 
-如果您想要超越入門歷程的內容，以下是其他選用資源。
+如果您想超越登機旅程的內容，請選擇以下附加資源。
 
-* [管理環境](/help/implementing/cloud-manager/manage-environments.md)  — 了解您可建立的環境類型，以及如何為Cloud Manager專案建立環境
-* [使用AdobeCloud Manager — 環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=zh-Hant) - Cloud Manager環境由AEM製作、發佈和Dispatcher服務組成。 了解不同的環境可支援角色，並使用不同的 CI/CD 管道與其互動。
-* [快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md)  — 請參閱本檔案，了解如何使用RDE的詳細資訊
+* [管理環境](/help/implementing/cloud-manager/manage-environments.md)  — 瞭解您可以建立的環境類型以及如何為Cloud Manager項目建立這些環境
+* [使用Adobe雲管理器 — 環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=zh-Hant) - Cloud Manager環境由創作、發AEM布和Dispatcher服務組成。 了解不同的環境可支援角色，並使用不同的 CI/CD 管道與其互動。
+* [快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md)  — 有關如何使用RDE的詳細資訊，請參閱本文檔
 
 <!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
 

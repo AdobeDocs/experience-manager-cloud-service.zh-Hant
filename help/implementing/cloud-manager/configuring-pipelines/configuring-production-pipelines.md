@@ -4,7 +4,7 @@ description: 了解如何設定生產管道以建置計劃碼並將其部署到�
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 100%
 
@@ -59,14 +59,14 @@ ht-degree: 100%
 1. 在&#x200B;**原始計劃碼**&#x200B;索引標籤上，您必須定義管道應在何處擷取其計劃碼以及它是什麼類型的計劃碼。
 
    * **[前端計劃碼](#front-end-code)**
-   * **[完整堆疊計劃碼](#full-stack-code)**
+   * **[完整堆疊程式碼](#full-stack-code)**
    * **[Web 層設定](#web-tier-config)**
 
 完成建立生產流水線的步驟因所選&#x200B;**原始計劃碼**&#x200B;選項而異。按照上面的連結跳到本文件的下一部分以完成管道的設定。
 
-### 前端計劃碼 {#front-end-code}
+### 前端程式碼 {#front-end-code}
 
-前端計劃碼管道部署包含一個或多個用戶端 UI 應用計劃的前端計劃碼建置。有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)。
+前端程式碼管道部署包含一個或多個用戶端 UI 應用計劃的前端程式碼建置。有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)。
 
 若要完成前端計劃碼生產管道的設定，請按照以下步驟操作。
 
@@ -77,7 +77,7 @@ ht-degree: 100%
    > 
    >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件：[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)。
 
-   * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取計劃碼。
+   * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能將會尋找相符的分支以幫助您進行選擇。
    * **計劃碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取計劃碼的路徑。
    * **在部署到生產之前暫停** - 此選項會在部署到生產之前暫停管道。
@@ -88,9 +88,9 @@ ht-degree: 100%
 
 管道已儲存，您現在可以在&#x200B;**計畫總覽**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
-### 完整堆疊計劃碼 {#full-stack-code}
+### 完整堆疊程式碼 {#full-stack-code}
 
-完整堆疊計劃碼管道同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端計劃碼構建。有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)。
+完整堆疊程式碼管道同時部署包含一個或多個 AEM 伺服器應用程序以及 HTTPD/Dispatcher 配置的後端和前端程式碼構建。有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)。
 
 >[!NOTE]
 >
@@ -105,7 +105,7 @@ ht-degree: 100%
    > 
    >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件：[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)。
 
-   * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取計劃碼。
+   * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能將會尋找相符的分支以幫助您進行選擇。
    * **計劃碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取計劃碼的路徑。
    * **在部署到生產之前暫停** - 此選項會在部署到生產之前暫停管道。
@@ -141,7 +141,7 @@ ht-degree: 100%
 
 ### Web 層設定 {#web-tier-config}
 
-Web 層設定管道部署 HTTPD/Dispatcher 設定。有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline)。
+Web 層設定管道部署 HTTPD/ Dispatcher 設定。有關此類管道的更多資訊，請參閱文件 [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline)。
 
 若要完成完整堆疊計劃碼生產管道的設定，請按照以下步驟操作。
 
@@ -152,7 +152,7 @@ Web 層設定管道部署 HTTPD/Dispatcher 設定。有關此類管道的更多�
    > 
    >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件：[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)。
 
-   * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取計劃碼。
+   * **Git 分支** - 此選項會定義管道應該選取哪個分支來擷取程式碼。
       * 輸入分支名稱的前幾個字元，該欄位的自動完成功能將會尋找相符的分支以幫助您進行選擇。
    * **計劃碼位置** - 此選項會定義管道應從所選存放庫的分支中擷取計劃碼的路徑。
       * 如果是 Web 層設定管道，這通常是包含 `conf.d`、`conf.dispatcher.d` 和 `opt-in`目錄的路徑。

@@ -3,7 +3,7 @@ title: 建立 API 要求 - Headless 設定
 description: 了解如何使用 GraphQL API 無周邊傳遞內容片段，以及如何使用 AEM Assets REST API 管理內容片段。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 100%
 

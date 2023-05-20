@@ -1,6 +1,6 @@
 ---
-title: Adobe Developer Console for App Builder
-description: 了解Adobe Developer Console和App Builder專案。
+title: Adobe Developer應用程式生成器控制台
+description: 瞭解Adobe Developer控制台和App Builder項目。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -16,26 +16,26 @@ ht-degree: 0%
 
 ---
 
-# Adobe Developer Console for App Builder
+# Adobe Developer應用程式生成器控制台
 
-了解Adobe Developer Console的功能，以及如何存取和導覽。
+瞭解Adobe Developer控制台是什麼，以及如何訪問和導航它。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
 
-## 使用專案和範本
+## 使用項目和模板
 
-了解如何使用Adobe Developer Console的App Builder範本建立App Builder專案。
+瞭解如何使用Adobe Developer控制台的App Builder模板建立App Builder項目。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339163/?quality=12&learn=on)
 
-## 專案憑證
+## 項目憑據
 
-了解如何使用Adobe Developer Console的認證功能表和核准程式中的選項。
+瞭解如何使用Adobe Developer控制台的憑據菜單和批准過程中的選項。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339164/?quality=12&learn=on)
 
-## 分析和配額使用
+## 見解和配額使用情況
 
-了解App Builder應用程式分析和配額使用情況。
+瞭解App Builder應用程式洞察力和配額使用情況。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339165/?quality=12&learn=on)

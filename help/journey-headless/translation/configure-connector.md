@@ -3,7 +3,7 @@ title: 為 Headless 內容設定翻譯連接器
 description: 了解如何將 AEM 連接到翻譯服務。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1234'
 ht-degree: 100%
 

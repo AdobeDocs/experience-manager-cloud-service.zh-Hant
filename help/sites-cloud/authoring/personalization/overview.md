@@ -3,7 +3,7 @@ title: 個人化和內容目標鎖定
 description: 了解如何使用 AEM 建立個人化、鎖定目標的內容
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 100%
 

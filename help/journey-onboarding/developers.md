@@ -144,7 +144,7 @@ ht-degree: 98%
 
 ## 其他資源 {#additional-resources}
 
-如果您想要超越入門歷程的內容，以下是其他選用資源。
+如果您想超越登機旅程的內容，請選擇以下附加資源。
 
 * [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - 了解如何使用 Cloud Manager 中的自助 Git 帳戶管理存取和管理您的 Git 存放庫。
 * [將 Git 與 Cloud Manager 搭配使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - 了解如何使用 Cloud Manager 的 Git 存放庫以及如何將您內部部署客戶管理的 Git 存放庫與 Cloud Manager 整合。

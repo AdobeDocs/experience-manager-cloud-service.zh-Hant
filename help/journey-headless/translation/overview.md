@@ -3,7 +3,7 @@ title: AEM Headless 翻譯歷程
 description: 從這裡開始，此歷程會逐步引導您了解如何使用 AEM 強大的翻譯工具來翻譯您的無周邊內容。
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 100%
 

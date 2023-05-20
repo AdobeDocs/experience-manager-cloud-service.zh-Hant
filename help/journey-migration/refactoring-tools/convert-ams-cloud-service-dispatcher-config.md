@@ -1,7 +1,7 @@
 ---
 title: 將 AMS 轉換為 Adobe Experience Manager as a Cloud Service Dispatcher 設定
 description: 將 AMS 轉換為 Adobe Experience Manager as a Cloud Service Dispatcher 設定
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 95%
@@ -36,7 +36,7 @@ ht-degree: 95%
 
 1. 移除或註解未引用連接埠 80 的虛擬主機區段
 
-   如果您的虛擬主機檔案中仍有區段專門引用埠80以外的其他埠，例如，
+   如果虛擬主機檔案中仍有專門引用埠80以外的其他埠的部分，例如，
 
    `<VirtualHost *:443>`
    `...`
@@ -89,7 +89,7 @@ ht-degree: 95%
 
 1. **重新命名伺服器陣列檔案**
 
-   必須重新命名「conf.dispatcher.d/enabled_farms」中的所有伺服器陣列，以符合模式「*.farm」，因此，例如，名為「customerX_farm.any」的伺服器陣列檔案應重新命名為「customerX.farm」。
+   必須更名conf.dispatcher.d/enabled_farms中的所有場以匹配模式*.farm，因此，例如，名為customerX_farm.any的場檔案應更名customerX.farm。
 
 1. **檢查快取**
 

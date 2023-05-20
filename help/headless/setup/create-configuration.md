@@ -3,7 +3,7 @@ title: 建立設定 - Headless 設定
 description: 建立設定是在 AEM as a Cloud Service 中開始使用無周邊的第一步。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 100%
 

@@ -1,21 +1,21 @@
 ---
-title: 在內容轉移工具（舊版）中檢視移轉集記錄
-description: 在內容轉移工具中檢視移轉集記錄
+title: 在內容傳輸工具（舊版）中查看遷移集的日誌
+description: 在內容傳輸工具中查看遷移集的日誌
 hide: true
 hidefromtoc: true
 exl-id: 01c8afd3-c594-4a41-b905-8c3a2d74db6f
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '181'
-ht-degree: 64%
+ht-degree: 74%
 
 ---
 
-# 檢視移轉集記錄（舊版） {#view-logs-content-transfer-tool}
+# 查看遷移集的日誌（舊版） {#view-logs-content-transfer-tool}
 
-完成每個步驟（擷取和擷取）後，請檢查記錄並尋找錯誤。  您應處理所回報的問題，或聯絡Adobe支援，以立即解決任何錯誤。
+完成每個步驟（提取和攝取）後，檢查日誌並查找錯誤。  如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 支援人員。
 
-## 檢視記錄檔的步驟 {#viewing-logs}
+## 查看日誌的步驟 {#viewing-logs}
 
 您可以在&#x200B;*綜覽*頁面中檢視現有移轉集記錄。
 請遵循下列步驟：

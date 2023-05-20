@@ -53,11 +53,11 @@ Cloud Manager 計畫代表一組 Cloud Manager 環境。這些計畫支援業務
 
    ![Cloud Manager 登陸頁面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. 在建立程式嚮導中，選擇 **設定沙箱** 並提供程式名稱，點選或按一下 **繼續**.
+1. 在建立程式嚮導中，選擇 **設定沙盒** 並提供程式名稱，點擊或按一下 **繼續**。
 
    ![程序類型建立](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. 在 **設定沙箱** 對話方塊中，您可以選擇要在沙箱方案中啟用的解決方案。 此 **網站** 和 **資產** 解決方案一律會包含在沙箱方案中，且會自動選取。 這就足以供我們上線範例使用。 按一下&#x200B;**建立**。
+1. 在 **設定沙盒** 對話框，您可以選擇要在沙盒程式中啟用的解決方案。 的 **站點** 和 **資產** 解決方案始終包含在沙盒程式中，並自動選擇。 這就足以供我們舉例。 按一下&#x200B;**建立**。
 
    ![解決方案選擇](assets/set-up-sandbox-onboarding.png)
 
@@ -73,7 +73,7 @@ Cloud Manager 計畫代表一組 Cloud Manager 環境。這些計畫支援業務
 
 ## 其他資源 {#additional-resources}
 
-如果您想要超越入門歷程的內容，以下是其他選用資源。
+如果您想超越登機旅程的內容，請選擇以下附加資源。
 
 * [程序和程序類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - 了解 Cloud Manager 的階層以及不同類型的程序如何適應其結構以及它們之間的差異。
 * [建立沙箱程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - 了解如何使用 Cloud Manager 建立您自己的沙箱程序，用於培訓、演示、POC 或其他非生產目的。

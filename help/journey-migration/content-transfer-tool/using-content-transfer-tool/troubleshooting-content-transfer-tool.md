@@ -1,15 +1,15 @@
 ---
-title: 疑難排解內容轉移工具
-description: 疑難排解內容轉移工具
+title: 內容轉移工具疑難排解
+description: 內容轉移工具疑難排解
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# 疑難排解內容轉移工具 {#troubleshoot-content-transfer-tool}
+# 內容轉移工具疑難排解 {#troubleshoot-content-transfer-tool}
 
 
 ## 遺失 Blob ID {#missing-blobs}

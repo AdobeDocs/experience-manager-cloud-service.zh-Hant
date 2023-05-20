@@ -3,7 +3,7 @@ title: 專案
 description: 專案可讓您將資源群組到一個實體中，其共同的共用環境使您的專案容易管理
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: Java 功能測試
 description: 了解如何針對 AEM as a Cloud Service 編寫 Java 功能測試。
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
 source-git-commit: cda1f51c89a98cfb75d63f8bd9b54e76ee745aa7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 100%
 

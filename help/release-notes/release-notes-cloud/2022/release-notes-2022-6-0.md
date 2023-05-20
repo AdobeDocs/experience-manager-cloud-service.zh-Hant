@@ -5,13 +5,13 @@ exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
 source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
-# 2022.6.0適用於 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版發行說明 {#release-notes}
 
-以下章節概述2022.6.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述2022.6.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -23,13 +23,13 @@ ht-degree: 18%
 
 ## 發行日期 {#release-date}
 
-發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新發行(2022.6.0)為2022年6月30日。
+發佈日期 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] 本版本(2022.6.0)為2022年6月30日。
 
-下一版(2022.7.0)預計於2022年8月8日發行。
+下一版(2022.7.0)計畫於2022年8月8日發行。
 
 ## 發行影片 {#release-video}
 
-查看2022年6月版本概述影片，以取得2022.6.0版本中新增功能的摘要：
+查看2022年6月版本概述視頻，瞭解2022.6.0版中添加的功能的摘要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/344308/?quality=12)
 
@@ -37,64 +37,64 @@ ht-degree: 18%
 
 ### [!DNL Sites] 中的新功能 {#sites-features}
 
-* 新 [使用者介面](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 內容管理員和內容作者現在可以有效管理（執行動作，例如發佈、取消發佈、複製、移動等）、搜尋/篩選，以及建立無頭使用案例的內容片段。
+* 新 [用戶介面](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 現在，內容管理員和內容作者可以高效地管理（採取諸如發佈、取消發佈、複製、移動等操作）、搜索/篩選，以及為無頭使用案例建立內容片段。
 
-   ![內容片段主控台](/help/release-notes/assets/cf-ui.png)
+   ![內容片段控制台](/help/release-notes/assets/cf-ui.png)
 
-* 新 [目錄元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) 不僅可搭配核心元件使用，也可搭配所有元件使用，自動在內容頁面上轉譯ToC。 而且，由於Dispatcher會在伺服器端轉譯並完全快取，因此載入的效率也會很高。
+* 新 [目錄元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) 不僅適用於核心元件，而且適用於所有元件，可自動在內容頁面上呈現ToC。 而且，由於它由調度程式在伺服器端呈現並完全快取，因此它還可以高效地載入。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-Experience Manager Assets目前使用Adobe Sensei AI功能 [區分影像中的顏色，並在擷取時自動將這些顏色套用為標籤](/help/assets/color-tag-images.md). 這些標籤可根據影像色彩構成啟用增強的搜尋體驗。 您可以配置在1到40之間的範圍內被標籤到影像的顏色數，以便以後可以根據這些顏色搜索影像。
+Experience Manager Assets目前使用Adobe SenseiAI功能 [區分影像中的顏色，並在攝取時自動將這些顏色作為標籤應用](/help/assets/color-tag-images.md)。 這些標籤基於影像顏色合成，支援增強的搜索體驗。 您可以配置標籤到影像的顏色數量，以便以後可以根據這些顏色搜索影像。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 中的新功能 {#forms-features}
 
-* **[整合適用性Forms與Microsoft®電源自動化](/help/forms/forms-microsoft-power-automate-integration.md)**:您現在可以設定適用性表單，在提交時執行Microsoft® Power Automate Cloud Flow。 配置的適用性表單會將捕獲的資料、附件和記錄文檔發送到Power Automate Cloud Flow進行處理。 它可協助您建立自訂資料擷取體驗，同時運用Microsoft® Power Automate的強大功能，圍繞擷取的資料建立業務邏輯，並自動化客戶工作流程。
+* **[將自適應Forms與Microsoft® Power Automate整合](/help/forms/forms-microsoft-power-automate-integration.md)**:您現在可以配置自適應表單，在提交時運行Microsoft® Power自動化雲流。 配置的自適應表單將捕獲的資料、附件和記錄文檔發送到Power Automate Cloud Flow進行處理。 它幫助您構建自定義資料捕獲體驗，同時利用Microsoft® Power Automate的強大功能，圍繞捕獲的資料構建業務邏輯並自動化客戶工作流。
 
-* **建立最適化表單的精靈**:您可以使用商務使用者易記精靈，快速撰寫適用性Forms。 精靈提供快速的索引標籤導覽，讓您輕鬆選取預先設定的範本、樣式、欄位和提交選項，以建立最適化表單。
+* **用於建立自適應表單的嚮導**:您可以使用業務用戶友好嚮導快速編寫AdaptiveForms。 該嚮導提供快速頁籤導航，以便輕鬆選擇預先配置的模板、樣式、欄位和提交選項以建立自適應表單。
 
-   ![建立最適化表單的精靈](/help/release-notes/assets/wizard.png)
+   ![用於建立自適應表單的嚮導](/help/release-notes/assets/wizard.png)
 
 ## CIF 附加元件 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* 新產品座艙屬性頁面，提供更佳和簡化的概觀
+* 新產品座艙屬性頁面，以便更好、更簡化的概述
 
 ![產品座艙屬性概述](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* 改善I/O Runtime上第三方連接器的相容性和健全性
+* I/O運行時上第三方連接器的相容性和健壯性得到提高
 
-* 改善對GQL用戶端配置覆寫的支援（例如設定自訂快取行為）
+* 改進了對GQL客戶端配置覆蓋的支援（例如，設定自定義快取行為）
 
-* 現在支援多個商務端點立即可用，並可透過Cloud Manager進行設定。 您可以在CIF部落格中找到詳細資訊 [此處](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
+* 現在支援開箱即用的多個商業端點，並可通過雲管理器進行配置。 您可以在CIF部落格中查找詳細資訊 [這裡](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554)。
 
 
 ### 錯誤修正 {#bug-fixes-cif}
 
-* 多值產品選擇器欄位將第2個和其他產品顯示為無效
+* 多值產品選取器欄位顯示第二個和其他產品無效
 
-* 產品選擇器偶爾會隱藏在元件後面
+* 產品選取器偶爾隱藏在元件後面
 
-## 參考示範附加元件 {#cloud-services-demos}
+## 參考演示附件 {#cloud-services-demos}
 
 ### 新增功能 {#what-is-new-demos}
 
-* 新的WKND內容與商務範本，透過E2E購物體驗來擴充WKND，其中包含產品目錄、購物車、結帳和myAccount。 此範本使用CIF及其CIF核心元件，因此您也需安裝CIF附加元件。 您可以在CIF部落格中找到詳細資訊 [此處](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
+* 新的WKND內容和商業模板，通過E2E購物體驗擴展了WKND，產品目錄、購物車、結帳和myAccount。 此模板使用CIF及其CIF核心元件，因此您還需要安裝CIF附加元件。 您可以在CIF部落格中查找詳細資訊 [這裡](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e)。
 
 ![WKND商店](/help/assets/CIF/wknd_shop.png)
 
 ![WKND PDP](/help/assets/CIF/wknd_pdp.png)
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] 作為 [!DNL Cloud Service] 基礎 {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 如5月(2022.5.0)發行說明所述，復寫代理管理畫面下的「新增樹狀結構」選項位於 **分發** 標籤已移除。 應改為使用複製具有內容樹層次的包 [管理出版物](/help/operations/replication.md#manage-publication) 或 [發佈內容樹](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) 工作流程。
+* 如5月(2022.5.0)發行說明中所述，複製代理管理螢幕下的「添加樹」選項 **分發** 頁籤。 應使用樹層次結構複製內容的包 [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) 工作流。
 
 ## Cloud Manager {#cloud-manager}
 

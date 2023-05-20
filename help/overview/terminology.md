@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service 簡介 - 術語
 description: Adobe Experience Manager as a Cloud Service 簡介 - 術語。
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
 source-git-commit: e83ce89aedb3c5ea22243d0f86a528286e994338
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 100%
 
