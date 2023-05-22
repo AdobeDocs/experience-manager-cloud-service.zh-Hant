@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的基礎結構和服務監視
 description: AEM as a Cloud Service 中的基礎結構和服務監視
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: 34fed4e64b49ab32e7025c9654d930e3fa362a52
+source-git-commit: f55439552e253b8b71b40525454130c6f163e6d4
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '607'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ AEMas a Cloud Service使用數百個雲本地監視器連續報告每個環境�
 
 >[!NOTE]
 >
-> 此功能僅面向具有高級雲支援的客戶。 如果您有任何問題，請通過管理控制台提出支援案例。
+> 此功能僅面向具有 [高級雲支援。](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) 如果您有任何問題，請通過管理控制台提出支援案例。
 
 ## 內部模組監視 {#module-monitoring}
 
