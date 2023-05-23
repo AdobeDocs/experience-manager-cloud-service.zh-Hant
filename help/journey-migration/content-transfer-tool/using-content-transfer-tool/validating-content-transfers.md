@@ -2,9 +2,9 @@
 title: 驗證內容轉移
 description: 使用內容傳輸工具驗證內容傳輸
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
+source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '1070'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 2%
 一旦接收完成並驗證開始，將在接收日誌中記錄以下日誌條目：
 
 ```
-Gathering artifacts for migration validation...  
+Gathering artifacts for migration validation...
 ```
 
 驗證的詳細資訊將跟隨此條目。 從以下大型遷移中查找示例：
@@ -131,6 +131,24 @@ Migration validation took 0 minutes
 
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+
+## 如何驗證主遷移 {#how-to-validate-principal-migration}
+
+請參閱 [用戶映射和主遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 閱讀主遷移詳細資訊以及需要遷移的原因。
+
+一旦提取和攝取成功完成，將提供主遷移的摘要和報告。 此資訊可用於驗證哪些用戶和組已成功遷移，或許還可用於確定為什麼沒有遷移。
+
+要查看此資訊，請轉至Cloud Acceleration Manager。 按一下項目卡，然後按一下內容傳輸卡。 導航到 **攝取作業** 找到要驗證的攝取。 按一下三點(**...**)，然後按一下 **查看主體摘要** 中。
+
+![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
+
+您將看到一個包含摘要資訊的對話框。 使用幫助表徵圖可閱讀更完整的說明。 按一下 **下載報告** 按鈕來下載完整的逗號分隔(CSV)報告。
+
+![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
+
+>[!NOTE]
+>
+>如果禁用用戶映射，則將顯示此對話框的另一個變體。 它將指示禁用了用戶映射，並且不會顯示提供用戶映射值的3個欄位。
 
 ## 疑難排解 {#troubleshooting}
 

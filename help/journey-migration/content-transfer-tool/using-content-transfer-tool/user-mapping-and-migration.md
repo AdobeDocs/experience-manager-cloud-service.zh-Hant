@@ -2,9 +2,9 @@
 title: 使用者對應和主體移轉
 description: 用戶映射和主遷移概述
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '788'
 ht-degree: 11%
 
 ---
@@ -53,3 +53,7 @@ AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存�
 * 如果設定 **在接收之前擦除雲實例上的現有內容** 設定，Cloud Service實例上已傳輸的用戶將與整個現有儲存庫一起刪除，並將建立新儲存庫以將內容插入。 這還會重置所有設定，包括對目標Cloud Service實例的權限，對於添加到 **管理員** 組。 必須將管理員用戶重新添加到 **管理員** 組以檢索CTT的訪問令牌。
 * 當執行內容補充時，如果內容自上次傳輸後未發生更改而未傳輸，則與該內容關聯的用戶和組也不會傳輸，即使與此同時用戶和組發生了更改。 這是因為用戶和組與其關聯的內容一起遷移。
 * 如果目標AEM Cloud Service實例具有與源實例上的某個用戶具有不同用戶名但電子郵件地址相同的用戶AEM，並且啟用了「用戶映射」，則會在日誌中寫入錯誤消息，並且源用戶不會被傳輸，因為目標系統上只允許一個具有給定電子郵件地址的用戶。
+
+## 最終摘要和報告 {#final-report}
+
+一旦提取和接收成功完成，將生成顯示主遷移詳細資訊的報告。 請參閱 [如何驗證主遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-principal-migration) 的上界。

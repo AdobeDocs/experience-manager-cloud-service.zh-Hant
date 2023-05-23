@@ -2,10 +2,10 @@
 title: 內容轉移工具綜覽
 description: 內容轉移工具綜覽
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 47%
+source-wordcount: '717'
+ht-degree: 46%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 47%
 
 「內容轉移工具」是 Adobe 開發的工具，可用來將現有內容從來源 AEM 例項 (內部部署或 AMS) 移至目標 AEM 雲端服務例項。
 
-此工具也會自動轉移主體 (使用者或群組)。
+此工具也會自動轉移主體 (使用者或群組)。請參閱 [用戶映射和主遷移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 的子菜單。
 
 新版內容傳輸工具可將內容傳輸過程與Cloud Acceleration Manager整合。 強烈建議切換到此新版本，以利用它提供的所有好處：
 
@@ -71,7 +71,7 @@ ht-degree: 47%
 >title="移轉集到期"
 >abstract="了解移轉集到期。"
 
-所有遷移集在長時間不活動約90天後最終將過期。 在項目卡和遷移作業表行上顯示指示器一段時間後，遷移集將過期，其資料將不再可用。 通過對遷移設定的操作，可以容易地延長到期時間：
+所有遷移集在長時間不活動約90天後最終將過期。 在項目卡和遷移作業表行上顯示指示符一段時間後，遷移集將過期，其資料將不再可用。 通過對遷移設定的操作，可以容易地延長到期時間：
 
 * 編輯說明
 * 獲取提取密鑰
