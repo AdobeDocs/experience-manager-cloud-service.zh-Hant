@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 42927eec458553121f70b74a54f0f26eb616a13e
 workflow-type: tm+mt
 source-wordcount: '2530'
 ht-degree: 9%
@@ -410,7 +410,7 @@ IMS 設定包括兩個步驟：
 | **區域** | **出口IP** |
 |--- |--- |
 | 不適用 | 130.248.160.68, 20.94.203.130 |
-| 歐洲、中東和非洲 | 185.34.189.3, 51.132.146.75 |
+| 歐洲、中東和非洲 | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212 |
 | APAC | 63.140.44.54 |
 
 <!--
