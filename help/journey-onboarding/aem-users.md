@@ -7,7 +7,7 @@ exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 96%
 
 作為 AEM 作者，您需要登入 AEM 才能開始建立內容。
 
-1. 瀏覽至 [`https://my.cloudmanager.adobe.com` Cloud Manager 登入頁面的概覽頁面。](https://my.cloudmanager.adobe.com/)
+1. 瀏覽至 [`https://my.cloudmanager.adobe.com` Cloud Manager 登陸頁面的概覽頁面。](https://my.cloudmanager.adobe.com/)
 
 1. 從 Cloud Manager 中選擇程序&#x200B;**程序和產品**&#x200B;頁面啟動&#x200B;**總覽**&#x200B;頁。如果您不確定要存取哪個程序，請諮詢您的系統管理員。
 
@@ -81,7 +81,7 @@ ht-degree: 96%
 
 ## 其他資源 {#additional-resources}
 
-如果您想超越登機旅程的內容，請選擇以下附加資源。
+如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
 [創作頁面的快速入門指南](/help/sites-cloud/authoring/getting-started/quick-start.md) - 從此處開始，快速了解 AEM 中的創作基礎知識。
 [無頭創作之旅](/help/journey-headless/author/overview.md)- 如果您想創作無頭內容，請遵循此引導式介紹。

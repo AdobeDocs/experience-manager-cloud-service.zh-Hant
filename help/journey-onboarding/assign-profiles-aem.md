@@ -7,17 +7,17 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
 source-wordcount: '788'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # 指派 AEM 產品設定檔 {#assign-profiles-aem}
 
-在[入門歷程](overview.md)的這一部分，您將了解如何使用 AEM 產品設定檔向您的團隊授與對 AEM 的存取權。
+在[上線歷程](overview.md)的這一部分，您將了解如何使用 AEM 產品設定檔向您的團隊授與對 AEM 的存取權。
 
 ## 目標 {#objective}
 
-閱讀此入門歷程[建立環境](create-environments.md)中的上一個文件並設定雲端資源後，您將需要使用 AEM 產品設定檔授與您的團隊對 AEM 的存取權。作為系統管理員，您可以透過指派 AEM 產品設定檔來執行此操作。
+閱讀此上線歷程[建立環境](create-environments.md)中的上一個文件並設定雲端資源後，您將需要使用 AEM 產品設定檔授與您的團隊對 AEM 的存取權。作為系統管理員，您可以透過指派 AEM 產品設定檔來執行此操作。
 
 閱讀本文件後，您應會了解：
 
@@ -29,7 +29,7 @@ ht-degree: 97%
 
 若要使用 AEM，您的團隊成員必須獲指派至少一個 AEM 產品設定檔。存取 Cloud Manager 的權限是不夠的。使用者必須屬於以下兩個產品設定檔之一：
 
-* `AEM Users` - 該群組包括執行日常內容製作任務的一般使用者。
+* `AEM Users` - 該群組包括執行日常內容編寫任務的一般使用者。
 * `AEM Administrators` - 該群組包括負責進階功能或 AEM 的使用者。
 
 指派給 AEM 產品設定檔的每個使用者也將取得對 Cloud Manager 的唯讀存取權。可以透過其他產品設定檔授與對 Cloud Manager 的寫入權限。
@@ -48,7 +48,7 @@ ht-degree: 97%
 
 >[!TIP]
 >
->出於入門目的，建議您先新增將參與即時任務的使用者，例如管理員、開發人員和內容作者。您可以在不新增所有使用者的情況下繼續其他的入門流程。完成入門後，稍後您可以擴展到更多使用者。
+>基於上線目的，建議您先新增將參與即時任務的使用者，例如管理員、開發人員和內容作者。您可以在不新增所有使用者的情況下繼續其他的上線流程。完成上線後，稍後您可以擴展到更多使用者。
 
 ## 檢視 AEM 產品設定檔 {#view-profiles}
 
@@ -72,7 +72,7 @@ ht-degree: 97%
 
 現在您已經熟悉了可用的設定檔，您可以根據需要將它們指派給您的團隊成員。
 
-這些工作要求您是擁有&#x200B;**業務負責人** Cloud Manager 產品設定檔的系統管理員。
+這些工作要求您是擁有&#x200B;**業務所有者** Cloud Manager 產品設定檔的系統管理員。
 
 1. 從 Cloud Manager 瀏覽到您的計劃，然後從感興趣的環境內容中選取&#x200B;**管理存取權**&#x200B;按鈕。
 
@@ -92,16 +92,16 @@ ht-degree: 97%
 
 ## 歷程結尾？ {#the-end}
 
-恭喜！您指派給 AEM as a Cloud Service 產品設定檔的使用者現在可以存取 AEM 製作環境，並開始使用 AEM as a Cloud Service 建立內容。同樣，開發人員現在可以存取 Cloud Manager 以使用 Git 儲存自訂應用計劃計劃碼並進行部署。從這個角度來看，您的入門歷程已經完成，您的使用者現在可以使用 AEMaaCS。
+恭喜！您指派給 AEM as a Cloud Service 產品設定檔的使用者現在可以存取 AEM 編寫環境，並開始使用 AEM as a Cloud Service 建立內容。同樣，開發人員現在可以存取 Cloud Manager 以使用 Git 儲存自訂應用計劃計劃碼並進行部署。從這個角度來看，您的上線歷程已經完成，您的使用者現在可以使用 AEMaaCS。
 
-但是，如果您想更了解作者和開發人員如何使用該系統，您可以選擇繼續此入門歷程的兩個部分：
+但是，如果您想更了解作者和開發人員如何使用該系統，您可以選擇繼續此上線歷程的兩個部分：
 
 * [開發人員和部署管理員任務](developers.md) - 您將了解開發人員如何存取 Git 以儲存他們的自訂計劃碼，並使用 Cloud Manager 管道進行部署。
 * [AEM 使用者任務](aem-users.md) - 您將在其中學習如何存取可以開始建立內容的 AEM 環境。
 
 ## 其他資源 {#additional-resources}
 
-如果您想超越登機旅程的內容，請選擇以下附加資源。
+如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
 * [在 Admin Console 中管理產品和使用者存取權](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - 了解如何使用 Admin Console 來管理使用存取權。
 * [設定 AEM 存取權逐步說明](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=zh-Hant) - 查看這個簡短的逐步說明，了解如何在 Admin Console 中設定 Adobe IMS 使用者、使用者群組和產品設定檔。

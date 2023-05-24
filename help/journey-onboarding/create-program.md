@@ -6,7 +6,7 @@ exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Cloud Manager 計畫代表一組 Cloud Manager 環境。這些計畫支援業務
 * **生產計畫**&#x200B;是為啟用網站的即時流量而建立的。這是您的「真實」環境。
 * **沙箱計畫**&#x200B;通常建立的目的是提供培訓、執行示範、培訓、POC 或文件。
 
-由於它們服務於不同的目的，不同的環境有不同的選擇。但是建立它們的過程是相似的。對於此入門之旅，我們將建立一個沙箱環境。
+由於它們服務於不同的目的，不同的環境有不同的選擇。但是建立它們的過程是相似的。對於此上線歷程，我們將建立一個沙箱環境。
 
 >[!TIP]
 >
@@ -53,15 +53,15 @@ Cloud Manager 計畫代表一組 Cloud Manager 環境。這些計畫支援業務
 
    ![Cloud Manager 登陸頁面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. 在建立程式嚮導中，選擇 **設定沙盒** 並提供程式名稱，點擊或按一下 **繼續**。
+1. 從建立程序精靈中，選取&#x200B;**設定沙箱**，提供程序名稱，然後點選或按一下&#x200B;**繼續**。
 
    ![程序類型建立](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. 在 **設定沙盒** 對話框，您可以選擇要在沙盒程式中啟用的解決方案。 的 **站點** 和 **資產** 解決方案始終包含在沙盒程式中，並自動選擇。 這就足以供我們舉例。 按一下&#x200B;**建立**。
+1. 在&#x200B;**設定沙箱**&#x200B;對話框中，您可以選擇要在沙箱程序中啟用的解決方案。沙箱程序中一律包含並自動選取 **Sites** 和 **Assets** 解決方案。這對於我們的上線範例來說已經足夠了。按一下&#x200B;**建立**。
 
-   ![解決方案選擇](assets/set-up-sandbox-onboarding.png)
+   ![解決方案選取](assets/set-up-sandbox-onboarding.png)
 
-隨著設定過程的進行，您將在登入頁面上看到一個帶有狀態指示器的新沙箱程序卡。
+隨著設定過程的進行，您將在登陸頁面上看到一個帶有狀態指示器的新沙箱程序卡。
 
 ![從概覽頁面建立沙箱](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/program-create-setupdemo2.png)
 
@@ -73,7 +73,7 @@ Cloud Manager 計畫代表一組 Cloud Manager 環境。這些計畫支援業務
 
 ## 其他資源 {#additional-resources}
 
-如果您想超越登機旅程的內容，請選擇以下附加資源。
+如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
 * [程序和程序類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - 了解 Cloud Manager 的階層以及不同類型的程序如何適應其結構以及它們之間的差異。
 * [建立沙箱程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - 了解如何使用 Cloud Manager 建立您自己的沙箱程序，用於培訓、演示、POC 或其他非生產目的。

@@ -7,20 +7,20 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
 source-wordcount: '1419'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # 開發人員和部署管理員工作 {#developer-deployment-manager}
 
-在[入門歷程](overview.md)的這個選擇性部分中，您將了解開發人員和部署管理員如何存取 Git 來開發應用計劃，並使用管道來部署它們。
+在[上線歷程](overview.md)的這個選擇性部分中，您將了解開發人員和部署管理員如何存取 Git 來開發應用計劃，並使用管道來部署它們。
 
 ## 到目前為止 {#story-so-far}
 
-您已在上線歷程中走了很長一段路！恭喜！系統管理員已透過設定必要的雲端資源，並在[指派 AEM 產品設定檔](assign-profiles-aem.md)文件中授與存取權，來完成入門歷程。
+您已在上線歷程中走了很長一段路！恭喜！系統管理員已透過設定必要的雲端資源，並在[指派 AEM 產品設定檔](assign-profiles-aem.md)文件中授與存取權，來完成上線歷程。
 
-此時，您的開發人員和部署管理員可以開始建立您自己的應用計劃，而您的 AEM 使用者可以開始建立內容。從這個角度上說，您的入門已經完成，現在是時候使用您的新 AEM as a Cloud Service 系統了，本文件將對此進行說明。
+此時，您的開發人員和部署管理員可以開始建立您自己的應用計劃，而您的 AEM 使用者可以開始建立內容。從這個角度上說，您的上線工作已經完成，現在是時候使用您的新 AEM as a Cloud Service 系統了，本文件將對此進行說明。
 
 ## 對象 {#audience}
 
@@ -30,7 +30,7 @@ ht-degree: 98%
 
 ## 目標 {#objective}
 
-本文件是對入門歷程的補充，用於示範在系統管理員入門所有使用者並建立必要的雲端資源後開發人員和部署管理員的基本任務。
+本文件是對上線歷程的補充，用於示範在系統管理員讓所有使用者上線並建立必要的雲端資源後開發人員和部署管理員的基本任務。
 
 閱讀本文件後，您應該：
 
@@ -39,7 +39,7 @@ ht-degree: 98%
 
 ## 開發人員和部署管理員 {#roles}
 
-系統管理員完成建立使用者和設定雲端資源的主要入門任務後，通常最急於存取系統的使用者是開發人員和部署管理員。這是因為他們是負責在 AEM as a Cloud Service 之上建置您自訂應用計劃的使用者。
+系統管理員完成建立使用者和設定雲端資源的主要上線任務後，通常最急於存取系統的使用者是開發人員和部署管理員。這是因為他們是負責在 AEM as a Cloud Service 之上建置您自訂應用計劃的使用者。
 
 * **開發者** - 這些使用者存取 Cloud Manager Git 存放庫，他們將在其中管理您的 AEM 自訂應用計劃的計劃碼。
 * **部署管理員** - 這些使用者會使用 Cloud Manager 建立和執行將計劃碼從 Git 存放庫部署到您正在執行 AEM 環境的管道。
@@ -48,7 +48,7 @@ ht-degree: 98%
 
 ## 必備條件 {#prerequisites}
 
-在您作為開發人員或部署管理員開始本文件中描述的任務之前，請確保您的系統管理員已完成此入門歷程中的所有步驟。這表示：
+在您作為開發人員或部署管理員開始本文件中描述的任務之前，請確保您的系統管理員已完成此上線歷程中的所有步驟。這表示：
 
 * 您的系統管理員已將開發人員和部署管理員指派給他們各自的產品設定檔。
 * 開發人員必須另外指派到 **AEM 使用者**&#x200B;或 **AEM 管理員**&#x200B;產品設定檔，才能使用 AEM。
@@ -136,15 +136,15 @@ ht-degree: 98%
 
 作為開發人員或部署管理員，您不僅具備 Cloud Manager 的工作知識，還具備工作環境、存放庫和管道的知識！但 AEM as a Cloud Service 的強大 CI/CD 工具還有許多值得深入了解之處。如需更多詳細資訊，請參閱[其他資源](#additional-resources)一節。
 
-如果您對內容作者如何存取和使用 AEM as a Cloud Service 感興趣，請繼續進行入門歷程的最後一部分，[AEM 使用者任務。](aem-users.md)
+如果您對內容作者如何存取和使用 AEM as a Cloud Service 感興趣，請繼續進行上線歷程的最後一部分，[AEM 使用者任務。](aem-users.md)
 
 >[!TIP]
 >
->現在您已入門，您可以了解如何以最少的 AEM 設定，[輕鬆將 AEM 參考示範附加元件](/help/journey-sites/demos-add-on/overview.md)新增到沙箱環境，並能夠使用根據最佳實務的豐富範例來測試 AEM 的強大功能。
+>現在您已上線，您可以了解如何以最少的 AEM 設定，[輕鬆將 AEM 參考示範附加元件](/help/journey-sites/demos-add-on/overview.md)新增到沙箱環境，並能夠使用根據最佳實務的豐富範例來測試 AEM 的強大功能。
 
 ## 其他資源 {#additional-resources}
 
-如果您想超越登機旅程的內容，請選擇以下附加資源。
+如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
 * [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - 了解如何使用 Cloud Manager 中的自助 Git 帳戶管理存取和管理您的 Git 存放庫。
 * [將 Git 與 Cloud Manager 搭配使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - 了解如何使用 Cloud Manager 的 Git 存放庫以及如何將您內部部署客戶管理的 Git 存放庫與 Cloud Manager 整合。

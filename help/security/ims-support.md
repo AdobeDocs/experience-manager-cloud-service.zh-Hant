@@ -5,7 +5,7 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
 workflow-type: tm+mt
 source-wordcount: '2054'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 客戶成為 IMS 組織後，即可依以下摘要內容設定其系統：
 
-![IMS 入門](/help/security/assets/ims2.png)
+![IMS 上線](/help/security/assets/ims2.png)
 
 1. 指定的系統管理員會收到 Cloud Manager 的登入邀請函。登入 Cloud Manager 後，系統管理員可以選擇佈建 AEM 程序和環境，或導覽至 Admin Console 執行管理任務。
 1. 系統管理員需先宣告網域，以確認各別網域的所有權 (例如 acme.com)
@@ -142,7 +142,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 在每個產品內容執行個體下，將有跨生產、階段或開發環境的編寫或發佈服務的執行個體。每個執行個體都將關聯到產品設定檔或 Cloud Manager 角色。這些產品設定檔的主要功用在於指派存取權限給具有必要權限的使用者和群組。
 
-的 **管AEM理員_xxx** 配置檔案將用於在關聯實例中授予管理員AEM權限，而 **用AEM戶_xxx** 配置檔案用於添加常規用戶。
+**AEM Administrators_xxx** 設定檔可授予相關聯 AEM 執行個體的管理員權限，而 **AEM Users_xxx** 設定檔則用於新增使用者。
 
 此產品設定檔中新增的任何使用者和群組都可以登入該特定執行個體，如以下範例所示：
 
@@ -150,7 +150,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 >[!WARNING]
 >
->的 **管AEM理員** 不能更改產品配置檔案名稱。 更改名稱 **管AEM理員** product配置檔案將從分配給該配置檔案的所有用戶中刪除管理員權限。
+>**AEM 管理員**&#x200B;產品設定檔名稱不得變更。如果變更 **AEM 管理員**&#x200B;產品設定檔名稱，會將所有指派到該設定檔之使用者的管理員權限移除。
 
 ### 登入 Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 

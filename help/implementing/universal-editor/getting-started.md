@@ -5,7 +5,7 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: de33ea3efed87170b081ea467f12a997e0d41a83
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ Universal Editor 服務需要[統一資源名稱 (URN)](https://en.wikipedia.org
 * `<protocol>` - 這代表要使用 Universal Editor 持續性服務的哪個持續性外掛程式。例如 `aem`
 * `<url>` - 這是儲存變更之系統的 URL。例如 `http://localhost:4502`
 
-標識符 `adobe:aem:editor` 表示Adobe通用編輯器的連接。
+識別碼 `adobe:aem:editor` 表示 Adobe Universal Editor 連線。
 
 `itemid` 將使用 `urn` 首碼來縮短識別碼。
 

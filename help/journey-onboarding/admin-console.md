@@ -5,7 +5,7 @@ exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
 source-wordcount: '1111'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ AEM as a Cloud Service預配置了 Adobe Identity Management 系統 (也稱為 I
 
 透過使用 IMS，AEM as a Cloud Service整合了 AEM 與 Adobe Experience Cloud 其餘部分之間的登入體驗。擁有多個 Adobe 產品的組織尤其受益於在 Admin Console 中建立基於角色的組，然後透過 IMS 指派對多個產品 (包括 AEM as a Cloud Service) 的存取權限。
 
-您將在此入門歷程的下一部分中了解有關產品設定檔和指派使用者的更多資訊。
+您將在此上線歷程的下一部分中了解有關產品設定檔和指派使用者的更多資訊。
 
 ## 連絡 Adobe 支援人員 {#support}
 
@@ -105,7 +105,7 @@ AEM as a Cloud Service預配置了 Adobe Identity Management 系統 (也稱為 I
 
 ## 其他資源 {#additional-resources}
 
-如果您想超越登機旅程的內容，請選擇以下附加資源。
+如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
 * [Admin Console 總覽](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)- Admin Console 的全面總覽
 * [建立或更新您的 Adobe ID](https://helpx.adobe.com/tw/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - 了解如何建立、更改和管理多個 Adobe ID。

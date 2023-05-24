@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -26,22 +26,22 @@ ht-degree: 82%
 
    ![Cloud Manager 登陸頁面](assets/log-in.png)
 
-1. 選擇 **為生產設定** 在「建立程式」嚮導中建立生產程式並提供程式名稱。
+1. 在「建立程序」精靈中選取&#x200B;**為生產設定**&#x200B;以建立生產程序並提供程序名稱。
 
-   ![建立計畫精靈](assets/create-production-program.png)
+   ![建立程序精靈](assets/create-production-program.png)
 
-1. （可選）通過將影像檔案拖放到 **添加程式映像** 目標，或按一下它從檔案瀏覽器中選擇影像。 點選或按一下&#x200B;**繼續**。
+1. 或者，您可以將影像檔拖放到&#x200B;**新增程序影像**&#x200B;目標或按一下它從檔案瀏覽器選取影像，藉此新增影像到程序。點選或按一下&#x200B;**繼續**。
 
 1. 如果您擁有增強式安全性權限，**增強式安全性**&#x200B;索引標籤將為您的生產計畫提供&#x200B;**啟用增強式安全性**&#x200B;的選項。如有需要，請選取啟用增強式安全性的選項，然後點選或按一下&#x200B;**繼續**。
 
    * 增強式安全性無法在計畫建立後啟用或停用。
-   * [深入了解](https://www.adobe.com/go/hipaa-ready) Adobe 的 HIPAA 就緒解決方案實作方式。
+   * [深入了解](https://www.adobe.com/go/hipaa-ready_tw) Adobe 的 HIPAA 就緒解決方案實作方式。
 
    ![增強式安全性選項](assets/create-production-program-enhanced.png)
 
 1. 在&#x200B;**解決方案和附加元件**&#x200B;索引標籤上，選取要納入計畫中的解決方案。
 
-   * 如果您不確定是否需要一個或多個程式來處理您可用的各種解決方案，請選擇您最感興趣的方案。 您可以通過 [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 再說。 查看 [生產計畫文檔簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 的子菜單。
+   * 如果您不確定是否需要一個或多個程序以使用各種您可用的解決方案，請選取您最感興趣的一個。您之後可以[編輯程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)來啟用其他解決方案。如需更多程序設定建議，請參閱[生產程序簡介文件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)。
    * 如果您之前選取了&#x200B;**啟用增強式安全性**，您將只能選取可使用 HIPAA 權限的解決方案。
 
    ![選取解決方案](assets/setup-prod-select.png)
@@ -83,4 +83,4 @@ ht-degree: 82%
 
 >[!NOTE]
 >
->不像一個[沙箱計劃](introduction-sandbox-programs.md#auto-creation)，生產計劃將要求具有相應 Cloud Manager 角色的使用者建立項目並透過自助服務 UI 新增環境。
+>不像一個[沙箱計劃](introduction-sandbox-programs.md#auto-creation)，生產計劃將要求具有相應 Cloud Manager 角色的使用者建立專案並透過自助服務 UI 新增環境。
