@@ -11,34 +11,34 @@ ht-degree: 18%
 
 # [!DNL Adobe Experience Manager]as a Cloud Service 版發行說明 {#release-notes}
 
-以下部分概述了有關 [!DNL Experience Manager] as a Cloud Service。
+以下區段會概述以下專案的一般發行說明： [!DNL Experience Manager] as a Cloud Service。
 
 ## 發行日期 {#release-date}
 
-發放日期 [!DNL Adobe Experience Manager] as a Cloud Service2020.12.0是2020年12月17日。
-以下版本(2021.1.0)將於2021年1月28日發佈。
+的發行日期 [!DNL Adobe Experience Manager] as a Cloud Service2020.12.0為2020年12月17日。
+下列版本(2021.1.0)將於2021年1月28日發行。
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* **[內容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:添加使用HTTP API添加/更新和刪除內容片段變體的功能。
+* **[內容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**：新增使用HTTP API新增/更新和刪除內容片段變體的功能。
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-* 與 [!DNL Adobe InDesign Server] 現在可供使用 [!DNL Experience Manager] 作為 [!DNL Cloud Service]。 它為流程提供自動化 [!DNL Adobe InDesign] 檔案使用 [!DNL Adobe InDesign Server] 指令碼編寫和允許用戶使用 [!DNL Assets] 模板用戶介面以建立手冊或廣告。 僅 [!DNL InDesign Server] 托管 [!DNL Adobe Managed Services] 支援 [!DNL Experience Manager as a Cloud Service]。 <!-- TBD: Add link to article. -->
+* 與整合 [!DNL Adobe InDesign Server] 現在已適用於 [!DNL Experience Manager] as a [!DNL Cloud Service]. 如此一來，流程便能自動化處理 [!DNL Adobe InDesign] 檔案使用 [!DNL Adobe InDesign Server] 指令碼並允許使用者使用 [!DNL Assets] 建立手冊或廣告的範本使用者介面。 僅限 [!DNL InDesign Server] 託管者 [!DNL Adobe Managed Services] 支援 [!DNL Experience Manager as a Cloud Service]. <!-- TBD: Add link to article. -->
 
-* [!DNL Experience Manager] 在遠程中使用資產時，將增強以跟蹤和顯示資產引用 [!DNL Experience Manager Sites] 部署。 新 [!UICONTROL 引用] 頁籤 [!UICONTROL 屬性] 頁面現在列出資產的本地和遠程引用。 這些引用使DAM用戶能夠跟蹤 [!DNL Sites] 頁面和複合資產 [!DNL Assets]。 請參閱 [配置和使用連接的資產](/help/assets/use-assets-across-connected-assets-instances.md)。
+* [!DNL Experience Manager] 增強功能，可在遠端使用資產時追蹤及顯示資產參考資料 [!DNL Experience Manager Sites] 使用「連線資產」功能部署。 新 [!UICONTROL 引用] 索引標籤在資產的 [!UICONTROL 屬性] 頁面現在會列出資產的本機與遠端參考。 參考資料可供DAM使用者追蹤中的資產使用情況 [!DNL Sites] 頁面和在中的複合資產 [!DNL Assets]. 另請參閱 [設定及使用「連線資產」](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* [!DNL Dynamic Media] 現在可通過 [!DNL Sites] 基於影像的核心元件。 作者可以在建立網頁時快速配置元件以使用「影像預設」、「智慧裁剪」和「影像修飾符」。 請參閱 [核心元件2.13.0版](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0)。
+* [!DNL Dynamic Media] 功能現在可透過 [!DNL Sites] 影像型核心元件。 作者可在建立網頁時快速設定元件，以使用影像預設集、智慧型裁切和影像修飾元。 另請參閱 [核心元件2.13.0版](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* [!DNL Experience Manager] 案頭應用允許用戶通過從案頭應用介面上的Windows資源管理器或Mac查找器拖動檔案來上載檔案和資料夾。 請參閱 [使用案頭應用程式添加資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* [!DNL Experience Manager] 案頭應用程式可讓使用者從案頭應用程式介面上的Windows檔案總管或Mac Finder拖放檔案，即可上傳檔案和資料夾。 另請參閱 [使用案頭應用程式新增資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-## Adobe Experience Manager商業as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 已發佈CIF Venia參考站點 — 2020.12.01，包括最新的CIF核心元件版本v1.6.0。請參閱 [CIF Venia參考站點](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) 的子菜單。
+* 已發行CIF Venia Reference Site - 2020.12.01，其中包含最新CIF Core Components v1.6.0版。請參閱 [CIF Venia參考網站](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) 以取得更多詳細資料。
 
-* 已發佈CIF核心元件v1.6.0。請參閱 [CIF核心元件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) 的子菜單。
+* 已發行CIF Core Components v1.6.0。請參閱 [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) 以取得更多詳細資料。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -64,26 +64,26 @@ AEM as a Cloud Service 2020.12.0 中的 Cloud Manager 發行日期是 2020 年 1
 
 ### [!DNL Code Refactoring Tools]的新增功能 {#what-is-new-crt}
 
-* 已發佈新版本的AIO-CLI插件。 此插件的最新版本包括Dispatcher Converter和Repository Modernizer的AEM錯誤修復程式，並且還支援新的實用程式 — 索引轉換器。 請參閱 [統一體驗](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 瞭解有關此插件的詳細資訊。
+* 新版AIO-CLI外掛程式已發行。 此外掛程式的最新版本包含AEM Dispatcher Converter和Repository Modernizer的錯誤修正，並支援新的公用程式Index Converter。 請參閱 [整合式體驗](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 以進一步瞭解此外掛程式。
 
-* 索引轉換器是一種實用程式，可用於將客戶的自定義OAK索引定義轉換為AEMas a Cloud Service相容的OAK索引定義。 請參閱 [索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 的子菜單。
+* Index Converter公用程式可將客戶的自訂OAK索引定義轉換為與AEMas a Cloud Service相容的OAK索引定義。 請參閱 [索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 以取得更多詳細資料。
 
-* 添加到的新功能 [儲存庫現代化器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 建立單獨的包 `ui.config` 包含所有OSGi配置。
+* 新增功能至 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 會建立個別的封裝 `ui.config` 以包含所有OSGi設定。
 
 ### 錯誤修正 {#crt-bug-fixes}
 
-* 在Dispatcher Converter和Repository Modernizer工具上執AEM行了幾個錯誤修復。 請參閱 [調度AEM器轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 和 [儲存庫現代化器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)。
+* 對AEM Dispatcher Converter和Repository Modernizer工具進行的多項錯誤修正。 請參閱 [AEM Dispatcher轉換工具](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 和 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ### 發行日期 {#release-date-ctt}
 
-內容傳輸工具v1.1.20的發佈日期為2021年1月8日。
+內容轉移工具v1.1.20的發行日期為2021年1月8日。
 
 ### [!DNL Content Transfer Tool]的新增功能 {#what-is-new-ctt}
 
-* 用戶現在可以通過懸停在內容傳輸工具(CTT)用戶介面中的狀態表徵圖上來瞭解其訪問令牌是否已過期。 在「遷移集詳細資訊」UI中，還會通知他們無法連接到其Cloud Service實例。
+* 使用者現在可以透過將滑鼠游標停留在內容轉移工具(CTT)使用者介面的狀態圖示上來瞭解其存取Token是否已過期。 移轉集詳細資訊UI也會通知他們，他們無法連線到其Cloud Service執行個體。
 
 ### 錯誤修正 {#ctt-bug-fixes}
 
-* 遷移集的內容傳輸工具(CTT)用戶介面狀態在一段不活動時間後未持續並更改。 這個已經修復了。
-* 如果日誌不可用，則禁用了查看日誌的選項。 此問題已修復，並且已添加消息來通知用戶日誌丟失的原因。
-* 顯示內容傳輸工具用戶介面狀態 *失敗* 當用戶停止攝取時。 此項已固定為顯示 *已停止* 的雙曲餘切值。
+* 移轉集的內容轉移工具(CTT)使用者介面狀態在一段閒置時間後沒有持續存在且已變更。 此問題已修正。
+* 如果記錄無法使用，則會停用檢視記錄的選項。 此問題已修正，且已新增傳訊功能，以通知使用者日誌遺失的原因。
+* 內容轉移工具使用者介面狀態已顯示 *失敗* 使用者停止內嵌時。 此問題已修正為顯示 *已停止* 而非。

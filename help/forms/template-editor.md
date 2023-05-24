@@ -1,6 +1,6 @@
 ---
-title: 如何建立自適應表單模板？
-description: 建立自適應表單模板以使用模板編輯器定義基本結構和初始內容。
+title: 如何建立最適化表單範本？
+description: 使用範本編輯器建立最適化表單範本，以定義基本結構和初始內容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 source-git-commit: c101ed97388b06dc71edfc9e13fac8a3e889c249
 workflow-type: tm+mt
@@ -9,170 +9,170 @@ ht-degree: 1%
 
 ---
 
-# 建立自適應表單模板 {#adaptive-form-templates}
+# 建立最適化表單範本 {#adaptive-form-templates}
 
-建立表單時，將添加欄位和元件以在編輯器中定義表單結構、內容和操作。 在 `guideRootPanel` 形式容器的。 使用模板編輯器，可以建立包含基本結構和初始內容的模板，作者可以使用這些結構和初始內容建立表單。
+當您編寫表單時，可在編輯器中新增欄位和元件以定義表單結構、內容和動作。 您可以在「 」中新增欄位和元件 `guideRootPanel` 表單容器的。 使用範本編輯器，您可以建立包含作者可用來建立表單的基本結構和初始內容的範本。
 
-例如，您希望所有表單作者在註冊表單中都具有某些文本框、導航按鈕和提交按鈕。 您可以建立模板，其中包含作者可用於建立與其它登記表單一致的表單的元件。 當作者使用模板建立自適應表單時，新表單將繼承您在模板中指定的結構和元件。 模板編輯器允許您：
+例如，您希望所有表單作者在登錄檔單中都擁有某些文字方塊、導覽按鈕和提交按鈕。 您可以使用作者可用來建立與其他登錄檔單一致的表單的元件，來建立範本。 作者使用範本建立最適化表單時，新表單會繼承您在範本中指定的結構和元件。 範本編輯器可讓您：
 
-* 在結構層中添加表單的頁眉和頁腳元件。
-* 提供窗體的初始內容。
-* 指定主題「提交操作」。
+* 在結構層中新增表單的頁首與頁尾元件。
+* 提供表單的初始內容。
+* 指定主題「提交動作」。
 
-您可以下載並安裝 [!DNL AEM Forms] 引用內容包 [軟體分發](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 門戶，用於將參考主題和模板導入到您的環境。
+您可以下載並安裝 [!DNL AEM Forms] 引用內容包來自 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 入口網站，將參考主題和範本匯入您的環境。
 
-## 使用模板 {#working-with-templates}
+## 使用範本 {#working-with-templates}
 
-通過導航至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL 常規]** > **[!UICONTROL 模板]**。 在此，這些模板按為可編輯模板啟用的資料夾進行組織。
+您可以導覽至「 」，從「工具」選單存取範本編輯器 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL 一般]** > **[!UICONTROL 範本]**. 在此處，範本會整理在啟用可編輯範本的資料夾中。
 
-Experience Manager提供一個全局資料夾來組織模板。 但是，預設情況下未啟用它。 您可以請求管理員啟用全局資料夾或為模板建立資料夾。 有關如何建立資料夾的詳細資訊，請參見 [模板資料夾](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)。
+Experience Manager提供用來組織範本的全域資料夾。 不過，預設不會啟用。 您可以要求管理員啟用全域資料夾或建立範本資料夾。 如需如何建立資料夾的詳細資訊，請參閱 [範本資料夾](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).
 
 ### 建立範本 {#create-template}
 
-建立資料夾後，開啟該資料夾並執行以下步驟以建立模板：
+建立資料夾後，請開啟資料夾，然後執行下列步驟來建立範本：
 
-1. 點擊 **[!UICONTROL 建立]** 資料夾中。
-1. 在「選取模板類型」(Pick a Template Type)部分，選擇 **[!UICONTROL 自適應表單模板]** 點擊 **[!UICONTROL 下一個]**。
+1. 點選 **[!UICONTROL 建立]** 在您建立的資料夾內。
+1. 在「挑選範本型別」區段中，選取 **[!UICONTROL 自適應表單範本]** 並點選 **[!UICONTROL 下一個]**.
 
-1. 在「模板詳細資訊」部分，提供模板標題並點擊 **[!UICONTROL 建立]**。
-您還可以提供說明。
+1. 在「範本詳細資訊」區段中，提供範本標題並點選 **[!UICONTROL 建立]**.
+您也可以提供說明。
 
-1. 點擊 **[!UICONTROL 完成]** 返回控制台，或點擊 **[!UICONTROL 開啟]** 開啟編輯器中的模板。
+1. 點選 **[!UICONTROL 完成]** 以返回主控台，或點選 **[!UICONTROL 開啟]** 以在編輯器中開啟範本。
 
-### 模板編輯器UI {#template-editor-ui}
+### 範本編輯器UI {#template-editor-ui}
 
-開啟模板進行編輯時，可以看到以下編輯AEM器元件：
+開啟範本進行編輯時，您可以看到下列AEM Editor元件：
 
-* **頁面工具欄**
-包含以下選項：
+* **頁面工具列**
+包含下列選項：
 
-   * **切換側面板**:用於顯示或隱藏邊欄。
-   * **頁面資訊**:用於指定資訊，如發佈/取消發佈時間、縮略圖、客戶端庫、頁面策略和頁面設計客戶端庫。
+   * **切換側面板**：可讓您顯示或隱藏側欄。
+   * **頁面資訊**：可讓您指定發佈/取消發佈時間、縮圖、使用者端資料庫、頁面原則和頁面設計使用者端資料庫等資訊。
       <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **模式選擇器：** 允許您更改模式。您可以選擇 **[!UICONTROL 結構]** 模式， **[!UICONTROL 初始內容]**。 **[!UICONTROL 佈局控制項]** 的子菜單。 「結構」模式允許您添加和自定義頁眉和頁腳。 「初始內容」模式允許您自定義表單內容。
-   * **預覽：** 用於預覽模板在發佈時的外觀。 可以使用「圖層選擇器」和「預覽」切換編輯和預覽模式。
-* **提要欄：** 提供內容、屬性、資產和元件瀏覽器。
-* **元件工具欄：** 選擇元件時，將看到一個工具欄，它允許您自定義元件。
-* **頁面**:添加內容以建立模板的區域。
+   * **模式選擇器：** 可讓您變更模式。您可以選擇 **[!UICONTROL 結構]** 模式， **[!UICONTROL 初始內容]**， **[!UICONTROL 版面配置控制]** 模式。 「結構」模式可讓您新增及自訂頁首與頁尾。 初始內容模式可讓您自訂表單內容。
+   * **預覽：** 可讓您預覽範本在發佈時的外觀。 您可以使用「圖層選取器」和「預覽」來切換編輯和預覽模式。
+* **側欄：** 提供內容、屬性、資產和元件瀏覽器。
+* **元件工具列：** 選取元件時，您會看到可讓您自訂元件的工具列。
+* **頁面**：新增內容以建立範本的區域。
 
 <!-- See [Introduction to authoring Adaptive Forms](introduction-forms-authoring.md) to understand the Touch UI editor. -->
 
-### 編輯模板 {#editing-a-template}
+### 編輯範本 {#editing-a-template}
 
-使用兩個層建立「自適應表單」模板：
+最適化表單範本是使用兩層來建立：
 
 * 結構
 * 初始內容
 
-圖層選擇器位於螢幕右上角的「預覽」選項旁。
+圖層選取器位於熒幕右上角的「預覽」選項旁。
 
 ### 結構 {#structure}
 
-在「模板編輯器」中選擇結構層時，可以在「自適應表單容器」的上下看到佈局容器。 作者可以將這些佈局容器用於頁眉和頁腳。 您可以添加、編輯或自定義頁眉和頁腳。 在「自適應表單容器」上方的佈局容器中拖放「自適應表單標題」元件，以自定義模板標題。 在「自適應表單容器」下的佈局容器中拖放「自適應表單頁腳」元件，以自定義模板頁腳。
+在範本編輯器中選取結構圖層時，您可以看到最適化表單容器上方和下方的版面容器。 作者可以將這些配置容器用於頁首和頁尾。 您可以新增、編輯或自訂頁首與頁尾。 將調適型表單標題元件拖放至版面容器中的調適型表單容器上方，以自訂範本標題。 將調適型表單頁尾元件拖放至版面容器中的調適型表單容器下方，以自訂範本頁尾。
 
-![結構層中的佈局容器](assets/header-layer-selector.png)
+![結構圖層中的版面配置容器](assets/header-layer-selector.png)
 
-在結構層中佈局容器
+在結構圖層中配置容器
 
-**答：** 標題元件的佈局容器 **B** 頁腳元件的佈局容器
+**答：** 頁首元件的佈局容器 **B.** 頁尾元件的配置容器
 
-在「自適應表單容器」上方的佈局容器中拖放「自適應表單標題」元件。 添加元件後，可以指定其屬性，以便添加徽標並提供其標題。
+將版面容器中的最適化表單標題元件拖放到最適化表單容器上方。 新增元件後，您可以指定其屬性，讓您新增標誌並提供其標題。
 
-同樣，在「自適應表單容器」下的佈局容器中拖放頁腳元件時，可以提供版權資訊和公司詳細資訊。
+同樣地，將頁尾元件拖放至最適化表單容器下方的版面容器時，可以提供版權資訊和公司詳細資訊。
 
-![在「結構」層中添加頁眉和頁腳](assets/header-and-footer.png)
+![在「結構」圖層新增頁首與頁尾](assets/header-and-footer.png)
 
-在「結構」層中添加頁眉和頁腳
+在「結構」圖層新增頁首與頁尾
 
-#### 在結構層中鎖定/解鎖部件 {#locking-unlocking-components-in-the-structure-layer}
+#### 鎖定/解除鎖定結構層中的元件 {#locking-unlocking-components-in-the-structure-layer}
 
-在編輯選定結構層的模板時，可以解鎖模板的頁眉和頁腳。 如果在模板中解鎖了元件，則表單作者可以在使用該模板的「自適應表單」中編輯該元件。 鎖定元件會阻止表單作者在「自適應表單」中編輯它。 「鎖定」選項在元件工具欄中可用。
+當您在選取了結構圖層的情況下編輯範本時，可以解鎖範本的頁首和頁尾。 如果範本中的元件已解除鎖定，表單作者可以在使用該範本的最適化表單中編輯元件。 鎖定元件會使表單作者無法在最適化表單中編輯該元件。 元件工具列中有鎖定選項。
 
-例如，在模板中添加標題元件。 選擇元件時，可以在元件工具欄中看到鎖定選項。 通常，標題包括公司名稱和徽標，您不希望表單作者更改模板中的徽標和標題。 在使用模板建立並鎖定標題元件的自適應表單中，表單作者無法更改徽標和公司名稱。
+例如，在範本中新增標題元件。 選取元件時，您會在元件工具列中看到鎖定選項。 通常頁首包含公司名稱和標誌，您不希望表單作者變更範本中的標誌和頁首。 在使用範本建立的最適化表單中，標題元件已鎖定，表單作者無法變更標誌和公司名稱。
 
 >[!NOTE]
 >
->不建議單獨鎖定或解鎖頭元件中的影像或徽標。 可以解除標頭元件的鎖定。
+>不建議個別鎖定或解除鎖定頁首元件中的影像或標誌。 您可以解鎖標頭元件。
 
 ### 初始內容 {#initial-content}
 
-選擇「初始內容」選項後，模板的「自適應表單容器」(Adaptive Form Container)將像「自適應表單」(Adaptive Form)一樣開啟以進行編輯。 與創作自適應表單一樣，您可以指定初始設定，如選擇主題和提交操作。
+選取「初始內容」選項時，範本的「最適化表單」容器會像要編輯的最適化表單一樣開啟。 如同製作最適化表單，您可以指定初始設定，例如選取主題和提交動作。
 
-表單作者將其用作建立表單的基。 內容流結構在模板的「初始內容」層中指定。 要切換到編輯表單模板的初始內容，請在頁面工具欄的「預覽」之前，點擊 ![畫布下拉清單](assets/canvas-drop-down.png) **>** **[!UICONTROL 初始內容]**。
+表單作者可將其用作建立表單的基礎。 內容流程結構會在範本的「初始內容」層指定。 若要切換到編輯表單範本的初始內容，在頁面工具列中的「預覽」之前，點選 ![畫佈下拉式清單](assets/canvas-drop-down.png) **>** **[!UICONTROL 初始內容]**.
 
 
-在「初始內容」層中，建立作者用作基礎的「自適應表單」模板。 建立模板與建立表單類似，您使用「提要欄」中可用的選項。 Sidebar提供內容、屬性、資產和元件瀏覽器。
+在初始內容層中，您會建立作者用作基礎的最適化表單範本。 製作範本類似於製作表單，您會使用側邊欄中的可用選項。 側欄提供內容、屬性、資產和元件瀏覽器。
 
 <!-- See [Sidebar](introduction-forms-authoring.md#sidebar). -->
 
 >[!NOTE]
 >
->選擇「儲存內容」或「儲存PDF」作為「提交操作」時，您將獲得一個選項來指定儲存路徑。 如果在模板中指定路徑，則根據該路徑建立的所有表單都具有相同的路徑。 您可以指定正確的儲存路徑，或確保表單作者更新該路徑以防止每個表單中的資料儲存在同一位置。
+>當您選取「儲存內容」或「儲存PDF」作為「提交動作」時，您會看到一個可指定「儲存」路徑的選項。 如果您在範本中指定路徑，則根據該範本建立的所有表單都會有相同的路徑。 您可以指定正確的儲存路徑，或確保表單作者更新路徑，以防止每個表單中的資料儲存於相同位置。
 
-#### 建立帶制表符和面板的自適應表單模板 {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
+#### 建立具有索引標籤和面板的最適化表單範本 {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
-例如，要建立具有以下頁籤的模板：
+例如，您想要建立具有下列標籤的範本：
 
 * 一般資訊
 * 專業資訊
 
-您已在結構層中添加了徽標、提供了標題和頁腳。 鎖定頁眉和頁腳，以阻止表單作者在使用模板建立表單時編輯它們。
+您已新增標誌、提供標題，並在結構圖層中新增頁尾。 鎖定頁首和頁尾，以防止表單作者在使用範本建立表單時編輯它們。
 
-將圖層從「結構」更改為「初始內容」，然後開始向表單添加內容。 要建立頁籤式結構，請在「自適應表單」容器的guideRootPanel中添加子面板。 要添加面板：
+將圖層從「結構」變更為「初始內容」，並開始將內容新增至表單。 若要建立索引標籤結構，請在「最適化表單」容器的guideRootPanel中新增子面板。 若要新增面板：
 
-* 可通過按一下 **[!UICONTROL +]** 按鈕 **[!UICONTROL 將元件拖動到此處]** 的雙曲餘切值。
+* 您可以點選「 」 **[!UICONTROL +]** 按鈕(當您選取 **[!UICONTROL 將元件拖曳到這裡]** 選項。
 
-* 您可以從邊欄的元件瀏覽器拖放面板元件。
-* 可以添加 `guideRootPanel` 的子菜單。
+* 您可以從側欄中的元件瀏覽器拖放面板元件。
+* 您可以新增的子面板 `guideRootPanel` 元件工具列中的。
 
-要建立「一般資訊」和「專業資訊」頁籤，請在子面板中添加兩個面板 `guideRootPanel`。 選擇面板並點擊 ![招商](assets/configure-icon.svg) 開啟提要欄中的屬性。 將元素名稱更改為 `general-info` 和 `professional-info`及「一般資料」及「專業資料」。 在提要欄中，點擊內容以開啟內容瀏覽器。 在「表單對象」頁籤中，選擇 `guideRootPanel`。 在編輯器中，將選擇guideRootPanel。 點擊 ![招商](assets/configure-icon.svg) 的子菜單。 在「面板佈局」欄位中，選擇 **[!UICONTROL 頂部的頁籤]** 點擊 **[!UICONTROL 完成]**。 將應用頁籤式模板結構。
+若要建立「一般資訊」和「專業資訊」標籤，請在 `guideRootPanel`. 選取面板並點選 ![cmppr](assets/configure-icon.svg) 以開啟側邊欄中的屬性。 將元素名稱變更為 `general-info` 和 `professional-info`和標題分別作為「一般資訊」和「專業資訊」。 在側邊欄中，點選內容以開啟內容瀏覽器。 在「表單物件」標籤中，選取 `guideRootPanel`. 在編輯器中，選取guideRootPanel。 點選 ![cmppr](assets/configure-icon.svg) 以開啟其屬性。 在「面板配置」欄位中，選取 **[!UICONTROL 索引標籤在頂端]** 並點選 **[!UICONTROL 完成]**. 標籤式範本結構即會套用。
 
-#### 在頁籤中添加內容 {#adding-content-in-tabs}
+#### 在索引標籤中新增內容 {#adding-content-in-tabs}
 
-添加面板並將其結構為頁籤後，可在頁籤內添加欄位。 在編輯器中選擇頁籤時，可以 **[!UICONTROL 將元件拖動到此處]** 的雙曲餘切值。 可以拖放元件，如文本框、清單項和按鈕。 您可以從邊欄的元件瀏覽器拖放元件。
+新增面板並將其建構為標籤後，您可以在標籤內新增欄位。 在編輯器中選取索引標籤時，您可以看到 **[!UICONTROL 將元件拖曳到這裡]** 選項。 您可以拖放元件，例如文字方塊、清單專案和按鈕。 您可以從側欄中的元件瀏覽器拖放元件。
 
-每個元件都具有增強資料捕獲和操作的屬性。 例如，您可以 **[!UICONTROL 必填欄位]** 元件的屬性。 您的作者可以指定客戶跳過填寫必填欄位時看到的消息。 在中指定消息 **[!UICONTROL 必填欄位消息]** 屬性。
+每個元件都有可增強資料擷取和操控的屬性。 例如，您可以啟用 **[!UICONTROL 必要欄位]** 元件的屬性。 您的作者可以指定客戶在略過填寫必填欄位時看到的訊息。 在中指定訊息 **[!UICONTROL 必要欄位訊息]** 屬性。
 
-在示例模板中，「一般資訊」頁籤中添加了「名稱」、「電話號碼」和「出生日期」欄位。 在「專業資訊」標籤中，添加「當前聘用」、「雇傭類型」、「教育資格」欄位。
+在範例範本中，「一般資訊」索引標籤中會新增「名稱」、「電話號碼」和「出生日期」欄位。 在「專業資訊」標籤中，新增「目前僱用」、「僱用型別」、「教育資格」欄位。
 
-添加欄位後，可以添加按鈕，如提交和重置。
+新增欄位後，您可以新增「提交」和「重設」等按鈕。
 
-### 啟用模板 {#enabling-the-template}
+### 啟用範本 {#enabling-the-template}
 
-建立模板時，它將添加為草稿。 啟用模板以用於建立自適應Forms。 要啟用模板：
+當您建立範本時，它會新增為草稿。 啟用範本以使用它來建立最適化Forms。 若要啟用範本：
 
-1. 導航到 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL 模板]**，然後開啟在其中建立模板的資料夾。
+1. 導覽至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL 範本]**，然後開啟您建立範本的資料夾。
 
-1. 您建立的模板標籤為「草稿」。
-1. 選擇模板並點擊 **[!UICONTROL 啟用]** 的子菜單。
-在建立自適應表單時，您可以在被要求選擇模板時看到列出的模板。
+1. 您建立的範本會標示為「草稿」。
+1. 選取範本並點選 **[!UICONTROL 啟用]** （在工具列中）。
+建立最適化表單時，系統要求您選擇範本時，您會看到範本列出。
 
-## 導入或導出模板 {#importing-or-exporting-a-template}
+## 匯入或匯出範本 {#importing-or-exporting-a-template}
 
-表單與其模板一起使用。 下載使用自定義模板建立的自適應表單時，不會下載該模板。 在其他窗體上導入 [!DNL AEM Forms] 實例，導入時沒有模板。 如果導入了表單，但其模板不可用，則不呈現該表單。 可以將自定義模板打包為 `/conf` 節點 `https://<server>:<port>/crx/packmgr`，並將其插入 [!DNL AEM Forms] 要上載表單的實例。 您也可以 [使用原型創AEM建模板並將其部署到Cloud Services實例](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites)。
+表單可與其範本搭配使用。 下載使用自訂範本建立的最適化表單時，範本未下載。 當您匯入其他表單時 [!DNL AEM Forms] 例如，會匯入而不包含範本。 如果表單已匯入，但其範本無法使用，則不會轉譯表單。 您可以封裝自訂範本，從 `/conf` 中的節點 `https://<server>:<port>/crx/packmgr`，並將其連線至 [!DNL AEM Forms] 您要上傳表單的執行個體。 您也可以 [使用AEM Archype建立範本並將其部署至您的Cloud Services執行個體](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >
-> * 您還可以配置 [!UICONTROL 記錄文檔] 直接從「自適應表單」編輯器或「自適應表單」模板編輯器中獲取模板。 有關詳細資訊，請參見 [生成適應性Forms的記錄文檔](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)。
+> * 您也可以設定 [!UICONTROL 記錄檔案] 直接從最適化表單編輯器或最適化表單範本編輯器存取範本。 如需詳細資訊，請參閱 [產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 
 
-## 將表單資料模型架構與模板關聯 {#associating-form-data-model-schema-in-template}
+## 建立表單資料模型結構描述與範本的關聯 {#associating-form-data-model-schema-in-template}
 
-作者可以關聯 [!UICONTROL 表單資料模型架構] 到模板編輯器中的「自適應表單」模板。 它允許作者從模板編輯器中選擇架構。 將架構與模板關聯，並且表單作者基於模板建立表單時，會為表單預選該架構。 它有助於表單作者規範模式的使用，並為表單作者節省時間。 要在模板編輯器中選擇表單資料模型架構：
+作者可以關聯 [!UICONTROL 表單資料模型結構描述] 至範本編輯器中的調適型表單範本。 它可讓作者從範本編輯器選取結構描述。 當您將結構描述與範本建立關聯，且表單作者根據範本建立表單時，系統會為表單預先選取結構描述。 它有助於表單作者規範結構描述的使用，並節省表單作者的時間。 若要在範本編輯器中選取表單資料模型結構描述：
 
-1. 點擊 **[!UICONTROL 內容瀏覽器]** 位於左側。
-1. 轉到窗體容器 **[!UICONTROL 設定]**。
-1. 選擇 **[!UICONTROL 資料模型]**。
-1. 通過 **[!UICONTROL 選擇表單資料模型]** 並保存配置。
+1. 點選 **[!UICONTROL 內容瀏覽器]** 位於左側。
+1. 前往表單容器 **[!UICONTROL 設定]**.
+1. 選取 **[!UICONTROL 資料模型]**.
+1. 選擇您的表單資料模型，透過 **[!UICONTROL 選取表單資料模型]** 並儲存設定。
 
-![形式 — 資料 — 模型 — 關聯 — Forms](/help/forms/assets/select-form-data-model-img.png)
+![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img.png)
 
 
 
-## 使用模板建立自適應表單 {#creating-an-adaptive-form-using-the-template}
+## 使用範本建立最適化表單 {#creating-an-adaptive-form-using-the-template}
 
-建立並啟用模板後，在建立「自適應表單」時，該模板在表單管理器中可用。 要使用模板並建立自適應表單，請參見 [建立自適應窗體](creating-adaptive-form.md)。
+建立並啟用範本後，當您建立最適化表單時，可在表單管理員中使用範本。 若要使用範本並建立調適型表單，請參閱 [建立最適化表單](creating-adaptive-form.md).
 
 
 <!--
@@ -195,25 +195,25 @@ Perform the following steps to show and hide templates:
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
 
-## 將自適應表單另存為模板 {#saving-adaptive-form-as-template}
+## 將最適化表單另存為範本 {#saving-adaptive-form-as-template}
 
-您還可以將自適應表單另存為模板，以備將來使用。 要將自適應表單另存為模板：
+您也可以將最適化表單儲存為範本，以供日後使用。 將最適化表單另存為範本：
 
-1. 選擇「自適應表單」將其另存為模板。
-1. 按一下 **[!UICONTROL 另存為模板]**。 對話方塊隨即顯示。
-1. 指定 **[!UICONTROL 標題]** (必填欄位， **[!UICONTROL 位置]** （必填欄位）和 **[!UICONTROL 說明]** （可選欄位）。
+1. 選取最適化表單以儲存為範本。
+1. 按一下 **[!UICONTROL 另存為範本]**. 對話方塊隨即顯示。
+1. 指定 **[!UICONTROL 標題]** （必要欄位）， **[!UICONTROL 位置]** （必填欄位）和 **[!UICONTROL 說明]** （選擇性欄位）。
 1. 按一下&#x200B;**[!UICONTROL 建立]**。
 
-   ![另存為模板](/help/forms/assets/saveformastemplate.png)
+   ![另存為表單為範本](/help/forms/assets/saveformastemplate.png)
 
 
 
 >[!NOTE]
 >
->要使用與源自適應表單相同的容器策略，建議將模板保存到與源自適應表單相同的資料夾中。 在這種情況下，模板將保存在任何其它資料夾中，而建立的模板使用預設容器策略。
+>若要使用與來源調適型表單相同的容器原則，建議將範本儲存在與來源調適型表單相同的資料夾中。 如果範本儲存在任何其他資料夾中，則建立的範本不會使用預設容器原則。
 
 ## 建議 {#recommendations}
 
-* 在模板編輯器中修改表單的屬性時，不要使用BindReference屬性。
-* 如果要添加斷點，請在建立Adaptive Form模板時建立它。
-有關斷點的詳細資訊，請參見 [響應佈局](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring)。
+* 在範本編輯器中修改表單的屬性時，請勿使用BindReference屬性。
+* 如果您想要新增中斷點，請在編寫最適化表單範本時建立中斷點。
+如需中斷點的詳細資訊，請參閱 [回應式佈局](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).

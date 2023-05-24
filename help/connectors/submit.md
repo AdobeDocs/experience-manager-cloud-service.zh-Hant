@@ -14,17 +14,17 @@ ht-degree: 11%
 
 以下提供有用的AEM連接器提交資訊，並應與實作與維護連接器的相關文 [章一](implement.md) 起 [閱讀](maintain.md) 。
 
-連AEM接器列在 [AdobeExchange](https://partners.adobe.com/exchangeprogram/experiencecloud)。
+AEM聯結器列於 [Adobe交換](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
-在以前的AEM解決方案中， [包管理器](/help/implementing/developing/tools/package-manager.md) 用於在各種實例上安裝連AEM接器。 但是，在AEMas a Cloud Service的情況下，在Cloud Manager的CI/CD過程中部署連接器。 為了部署連接器，需要在maven項目的pom.xml中引用連接器。
+在舊版AEM解決方案中， [封裝管理員](/help/implementing/developing/tools/package-manager.md) 用來在各種AEM執行個體上安裝聯結器。 不過，透過AEMas a Cloud Service，聯結器是在Cloud Manager中的CI/CD程式期間部署。 為了部署聯結器，需要在maven專案的pom.xml中引用聯結器。
 
-在項目中如何包括軟體包有多種選項：
+關於如何將套件包含在專案中，有多種選項：
 
-1. 合作夥伴的公共儲存庫 — 合作夥伴將將內容包托管在可公開訪問的主儲存庫中
-1. 合作夥伴的受密碼保護的儲存庫 — 合作夥伴將將內容包托管在受密碼保護的主儲存庫中。 請參閱 [受密碼保護的maven主要儲存庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) 的雙曲餘切值。
-1. 捆綁的項目 — 在本例中，連接器軟體包包含在客戶的主項目中。
+1. 合作夥伴的公共存放庫 — 合作夥伴將在可公開存取的maven存放庫中託管內容包
+1. 合作夥伴的受密碼保護的存放庫 — 合作夥伴將在受密碼保護的maven存放庫中託管內容包。 另請參閱 [受密碼保護的maven存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) 以取得指示。
+1. 隨附的成品 — 在此情況下，聯結器套件會本機包含在客戶的maven專案中。
 
-無論包的托管位置如何，都需要按照供應商提供的方法，在pom.xml中將包作為依賴項引用。
+無論套件託管於何處，套件都需要在pom.xml中參照為相依性，如供應商所提供。
 
 ```xml
 <!-- UberJAR Dependency to be added to the project's Reactor pom.xml -->
@@ -37,7 +37,7 @@ ht-degree: 11%
 </dependency>
 ```
 
-如果ISV合作夥伴將連接器托管在可訪問網際網路（如可訪問雲管理器）的主儲存庫上，則ISV應提供可放置pom.xml的儲存庫配置，以便在生成時（本地和雲管理器）解決連接器依賴項（以上）。
+如果ISV合作夥伴將聯結器託管在網際網路可存取（例如可存取的Cloud Manager）的maven存放庫上，則ISV應提供可放置pom.xml的存放庫設定，以便在建置時（本機和Cloud Manager）解析聯結器相依性（上文）。
 
 ```xml
 <repository>
@@ -54,4 +54,4 @@ ht-degree: 11%
 </repository>
 ```
 
-如果ISV合作夥伴選擇將Connector作為可下載檔案分發，則ISV應提供有關如何將檔案部署到本地檔案系統主儲存庫的說明AEM，該儲存庫需要作為項目的一部分簽入Git，以便Cloud Manager能夠解決這些依賴項。
+如果ISV合作夥伴選擇將聯結器作為可下載檔案分發，則ISV應提供有關如何將檔案部署到本地檔案系統maven存放庫的說明，該存放庫需要作為AEM專案的一部分簽入Git，以便Cloud Manager能夠解析這些依賴項。

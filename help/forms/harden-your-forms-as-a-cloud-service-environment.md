@@ -14,4 +14,4 @@ ht-degree: 0%
 
 # 強化您的 [!DNL AEM Forms] as a Cloud Service環境 {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
-Lorem Ipsum只是印刷和排版行業的虛文。 自19世紀以來，Lorem Ipsum一直是業界標準的虛擬文本。當時，一台未知的打印機走進了一條類型的巷子，並把它攪亂，以製作一本類型的標本書。 它不僅活了500年，還挺過了電子排版的飛躍，基本上沒有改變。 它在20世紀60年代隨著Letraset頁面的發佈而流行起來，其中包含Lorem Ipsum段落，最近則通過案頭發佈軟體如AldusPageMaker，包括Lorem Ipsum版本。
+Lorem Ipsum只是印刷與排版產業的虛設文字。 Lorem Ipsum從15世紀開始就一直是業界標準的虛擬文字，當時不明的印表機將一種型別的校稿拖曳起來，製成一種型別樣本書。 它不但存活了五個世紀，還跨越了電子排版，基本保持不變。 在1960年代，隨著Letraset工作表包含Lorem Ipsum段落的發行而流行起來，最近則隨著AldusPageMaker等案頭出版軟體包含Lorem Ipsum版本而流行起來。

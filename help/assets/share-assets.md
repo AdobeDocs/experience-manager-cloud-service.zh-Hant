@@ -1,6 +1,6 @@
 ---
-title: 分發和共用資產、資料夾和收集
-description: 使用共用作為連結、下載和通過 [!DNL Brand Portal]。 [!DNL desktop app], [!DNL Asset Link]。
+title: 分發和共用資產、資料夾和集合
+description: 使用共用作為連結、下載和透過之類的方法散發您的數位資產 [!DNL Brand Portal]， [!DNL desktop app]、和 [!DNL Asset Link].
 contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
@@ -12,24 +12,24 @@ ht-degree: 5%
 
 ---
 
-# 分享及分派於中國管理之資產 [!DNL Experience Manager] {#share-assets-from-aem}
+# 共用和發佈在中管理的資產 [!DNL Experience Manager] {#share-assets-from-aem}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
 | AEM as a Cloud Service  | 本文 |
 
-[!DNL Adobe Experience Manager Assets] 允許您與組織成員和外部實體（包括合作夥伴和供應商）共用資產、資料夾和集合。 使用以下方法共用資產 [!DNL Experience Manager Assets] 作為 [!DNL Cloud Service]:
+[!DNL Adobe Experience Manager Assets] 可讓您和組織成員及外部實體（包括合作夥伴和廠商）共用資產、資料夾和集合。 使用下列方法共用資產： [!DNL Experience Manager Assets] as a [!DNL Cloud Service]：
 
-* [作為連結共用](#sharelink)。
-* [下載資產](/help/assets/download-assets-from-aem.md) 分享。
-* 共用使用 [[!DNL Experience Manager] 案頭應用](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。
-* 共用使用 [[!DNL Adobe Asset Link]](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)。
-* 共用使用 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)。
+* [以連結形式共用](#sharelink).
+* [下載資產](/help/assets/download-assets-from-aem.md) 並分別分享。
+* 分享方式： [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
+* 分享方式： [[!DNL Adobe Asset Link]](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html).
+* 分享方式： [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
 ## 以連結方式共用資產 {#sharelink}
 
-通過連結共用資產是讓外部方、營銷人員和其他人員能夠獲得資源的一種便捷方式 [!DNL Experience Manager] 。 該功能允許匿名用戶訪問和下載與他們共用的資產。 從共用連結下載資產時， [!DNL Experience Manager Assets] 使用非同步服務，提供更快且不間斷的下載。 要下載的資產在後台排隊到可管理檔案大小的ZIP存檔中。 對於大型下載，下載內容捆綁到多個檔案中，每個檔案大小為100 GB。
+透過連結共用資產，是讓外部對象、行銷人員和其他人可以使用資源的便利方式 [!DNL Experience Manager] 使用者。 功能可讓匿名使用者存取及下載與其共用的資產。 從共用連結下載資產時， [!DNL Experience Manager Assets] 使用非同步服務，提供更快速且無中斷的下載。 要下載的資產會在背景排入可管理檔案大小的ZIP封存檔中。 對於大型下載，下載會整合到多個檔案中，每個檔案大小為100 GB。
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -37,64 +37,64 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 >[!NOTE]
 >
->* 您需要對要作為連結共用的資料夾或資產的「編輯ACL」權限。
->* [啟用出站電子郵件](/help/implementing/developing/introduction/development-guidelines.md#sending-email) 與用戶共用連結。
+>* 您需要對要以連結形式共用的資料夾或資產具有「編輯ACL」許可權。
+>* [啟用傳出電子郵件](/help/implementing/developing/introduction/development-guidelines.md#sending-email) 與使用者共用連結之前。
 
 
-使用連結共用功能共用資產有兩種方法：
+使用連結共用功能共用資產的方式有兩種：
 
-1. 生成共用連結， [複製並共用資產連結](#copy-and-share-assets-link) 與其他用戶。 連結的預設過期時間為一天。 無法在與其他用戶共用複製的連結時更改過期時間。
+1. 產生共用連結， [複製並共用資產連結](#copy-and-share-assets-link) 與其他使用者整合。 連結的預設到期時間為一天。 與其他使用者共用複製的連結時，您無法變更到期時間。
 
-1. 生成共用連結並 [通過電子郵件共用資產連結](#share-assets-link-through-email)。 在這種情況下，您可以修改預設值，如到期日期和時間，並允許下載原始資產及其格式副本。 您可以通過添加多個用戶的電子郵件地址向其發送電子郵件。
+1. 產生共用連結並 [透過電子郵件共用資產連結](#share-assets-link-through-email). 在此情況下，您可以修改預設值（例如到期日和時間），並允許下載原始資產及其轉譯。 您可以新增使用者的電子郵件地址，以傳送電子郵件給多位使用者。
 
-![連結共用對話框](assets/link-sharing-dialog.png)
+![連結共用對話方塊](assets/link-sharing-dialog.png)
 
-### 複製和共用資產連結{#copy-and-share-asset-link}
+### 複製並共用資產連結{#copy-and-share-asset-link}
 
-要將資產作為公共URL共用：
+若要以公用URL形式共用資產：
 
-1. 登錄到 [!DNL Experience Manager Assets] 導航 **[!UICONTROL 檔案]**。
-1. 選擇包含資產的資產或資料夾。 在工具欄中，按一下 **[!UICONTROL 共用連結]**。
-1. 的 **[!UICONTROL 連結共用]** 對話框，其中包含自動生成的資產連結 **[!UICONTROL 共用連結]** 的子菜單。
-1. 複製資產連結並與用戶共用。
+1. 登入 [!DNL Experience Manager Assets] 並導覽至 **[!UICONTROL 檔案]**.
+1. 選取資產或包含資產的檔案夾。 在工具列中按一下 **[!UICONTROL 共用連結]**.
+1. 此 **[!UICONTROL 連結共用]** 對話方塊隨即出現，其中包含中自動產生的資產連結 **[!UICONTROL 共用連結]** 欄位。
+1. 複製資產連結並與使用者共用。
 
-### 通過電子郵件通知共用資產連結 {#share-assets-link-through-email}
+### 透過電子郵件通知共用資產連結 {#share-assets-link-through-email}
 
-要通過電子郵件共用資產：
+若要透過電子郵件共用資產：
 
-1. 選擇包含資產的資產或資料夾。 在工具欄中，按一下 **[!UICONTROL 共用連結]**。
-1. 的 **[!UICONTROL 連結共用]** 對話框，其中包含自動生成的資產連結 **[!UICONTROL 共用連結]** 的子菜單。
+1. 選取資產或包含資產的檔案夾。 在工具列中按一下 **[!UICONTROL 共用連結]**.
+1. 此 **[!UICONTROL 連結共用]** 對話方塊隨即出現，其中包含中自動產生的資產連結 **[!UICONTROL 共用連結]** 欄位。
 
-   * 在電子郵件地址框中，鍵入要與其共用連結的用戶的電子郵件ID。 您可以與多個用戶共用該連結。 如果用戶是您組織的成員，請從下拉清單中顯示的建議中選擇其電子郵件ID。 如果用戶是外部用戶，請鍵入完整的電子郵件ID並按 **[!UICONTROL 輸入]**;電子郵件ID將添加到用戶清單。
+   * 在電子郵件地址方塊中，輸入您要共用連結之使用者的電子郵件ID。 您可以與多位使用者共用連結。 如果使用者是您組織的成員，請從下拉式清單中顯示的建議中選取其電子郵件ID。 如果使用者是外部使用者，請輸入完整的電子郵件ID並按 **[!UICONTROL 輸入]**；電子郵件ID會新增至使用者清單。
 
-   * 在 **[!UICONTROL 主題]** 框中，鍵入主題以指定共用資產的用途。
-   * 在 **[!UICONTROL 消息]** 框中，鍵入消息。
-   * 在 **[!UICONTROL 到期]** 欄位，使用日期選取器指定連結的到期日期和時間。
-   * 啟用 **[!UICONTROL 允許下載原始檔案]** 複選框，以允許收件人下載原始格式副本。
+   * 在 **[!UICONTROL 主旨]** 方塊中，輸入主旨以指定共用資產的用途。
+   * 在 **[!UICONTROL 訊息]** 方塊，視需要輸入訊息。
+   * 在 **[!UICONTROL 有效期]** 欄位中，使用日期選擇器來指定連結的到期日和時間。
+   * 啟用 **[!UICONTROL 允許下載原始檔案]** 核取方塊可允許收件者下載原始轉譯。
 
-1. 按一下 **[!UICONTROL 共用]**。 一條消息確認該連結已與用戶共用。 用戶接收包含共用連結的電子郵件。
+1. 按一下 **[!UICONTROL 共用]**. 訊息會確認此連結已與使用者共用。 使用者會收到包含共用連結的電子郵件。
 
 ![連結共用電子郵件](assets/link-sharing-email-notification.png)
 
 ### 使用資產連結下載資產
 
-任何有權訪問共用資產連結的用戶都可以下載綁定在zip資料夾中的資產。 下載過程相同，用戶是訪問複製的資產連結，還是使用通過電子郵件共用的資產連結。
+任何有權存取共用資產連結的使用者都可以下載zip資料夾中隨附的資產。 無論使用者是存取複製的資產連結，還是使用透過電子郵件共用的資產連結，下載過程都相同。
 
-* 按一下資產連結或在瀏覽器中貼上URL。 的 [!UICONTROL 連結共用] 介面開啟，您可以在其中切換到 [!UICONTROL 卡視圖] 或 [!UICONTROL 清單視圖]。
+* 按一下資產連結或在瀏覽器中貼上URL。 此 [!UICONTROL 連結共用] 介面會開啟，您可在其中切換至 [!UICONTROL 卡片檢視] 或 [!UICONTROL 清單檢視].
 
-* 在 [!UICONTROL 卡視圖]，可以將滑鼠懸停在共用資產或共用資產資料夾上，以選擇資產或將其排隊以供下載。
+* 在 [!UICONTROL 卡片檢視]，您可以將滑鼠停留在共用資產或共用資產資料夾上，以選取資產或將它們排入下載佇列。
 
-* 預設情況下，用戶介面顯示 **[!UICONTROL 下載收件箱]** 的雙曲餘切值。 它反映排隊等待下載的所有共用資產或資料夾的清單及其狀態。
+* 依預設，使用者介面會顯示 **[!UICONTROL 下載收件匣]** 選項。 它反映所有排入下載佇列的共用資產或資料夾的清單及其狀態。
 
-* 選擇資產或資料夾時， **[!UICONTROL 隊列下載]** 選項。 按一下 **[!UICONTROL 隊列下載]** 選項啟動下載進程。
+* 選取資產或資料夾時， **[!UICONTROL 將下載排入佇列]** 選項隨即顯示在畫面上。 按一下 **[!UICONTROL 將下載排入佇列]** 啟動下載程式的選項。
 
-   ![隊列下載](assets/queue-download.png)
+   ![將下載排入佇列](assets/queue-download.png)
 
-* 準備下載檔案時，按一下 **[!UICONTROL 下載收件箱]** 的子菜單。 對於大型下載，請按一下 **[!UICONTROL 刷新]** 按鈕來更新狀態。
+* 當下載檔案準備就緒時，按一下 **[!UICONTROL 下載收件匣]** 選項以檢視下載狀態。 若下載次數較多，請按一下 **[!UICONTROL 重新整理]** 按鈕以更新狀態。
 
-   ![下載收件箱](assets/link-sharing-download-inbox.png)
+   ![下載收件匣](assets/link-sharing-download-inbox.png)
 
-* 處理完成後，按一下 **[!UICONTROL 下載]** 按鈕下載zip檔案。
+* 處理完成後，按一下 **[!UICONTROL 下載]** 按鈕以下載zip檔案。
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -102,7 +102,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 
 >[!NOTE]
 >
->如果共用資產被移動到其他位置，則其連結將停止工作。 重新建立連結並與用戶重新共用。
+>如果共用資產移至其他位置，其連結會停止運作。 重新建立連結，並與使用者重新共用。
 
 
 <!--
@@ -172,31 +172,31 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## 單獨下載資產和共用 {#download-and-share-assets}
+## 分別下載資產和共用 {#download-and-share-assets}
 
-用戶可以下載所需資產並在外部共用這些資產 [!DNL Experience Manager]。 有關詳細資訊，請參見 [如何搜索資產](/help/assets/search-assets.md)。 [如何下載資產](/help/assets/download-assets-from-aem.md), [如何下載收藏](manage-collections.md#download-a-collection)
+使用者可以下載所需的資產，並在以下位置之外共用這些資產： [!DNL Experience Manager]. 如需詳細資訊，請參閱 [如何搜尋資產](/help/assets/search-assets.md)， [如何下載資產](/help/assets/download-assets-from-aem.md)、和 [如何下載集合](manage-collections.md#download-a-collection)
 
-## 與創意專業人員共用資產 {#share-with-creatives}
+## 與創意專業人士共用資產 {#share-with-creatives}
 
-營銷人員和業務線用戶可以輕鬆地與他們的創造性專業人員共用批准的資產，
+行銷人員和業務線使用者可以輕鬆地與他們的創意專業人員共用已核准的資產，使用
 
-* **Experience Manager案頭應用**:該應用在Windows和Mac上運行。 請參閱 [案頭應用概述](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 要瞭解任何授權案頭用戶如何輕鬆訪問共用資產，請參閱 [瀏覽、搜索和預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 案頭用戶可以建立資產，並與Experience Manager用戶的對應用戶共用資產，例如，通過上傳新映像。 請參閱 [使用案頭應用上載資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* **Experience Manager案頭應用程式**：應用程式可在Windows和Mac上運作。 另請參閱 [案頭應用程式總覽](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). 若要瞭解任何授權案頭使用者如何輕鬆存取共用資產，請參閱 [瀏覽、搜尋和預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). 桌上型電腦使用者可以建立資產，並與Experience Manager使用者的對應人員共用資產，例如透過上傳新影像。 另請參閱 [使用案頭應用程式上傳資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **Adobe資產連結**:創意專業人士可以直接從內部搜索和使用資產 [!DNL Adobe InDesign]。 [!DNL Adobe Illustrator], [!DNL Adobe Photoshop]。
+* **Adobe資產連結**：創意專業人士可直接從中搜尋和使用資產 [!DNL Adobe InDesign]， [!DNL Adobe Illustrator]、和 [!DNL Adobe Photoshop].
 
 ## 設定資產共用 {#configure-sharing}
 
-共用資產的不同選項需要特定的配置，並具有特定的先決條件。
+共用資產的不同選項需要特定設定，且有特定先決條件。
 
-### 配置資產連結共用 {#asset-link-sharing}
+### 設定資產連結共用 {#asset-link-sharing}
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-要為要與用戶共用的資產生成URL，請使用「連結共用」對話框。 具有管理員權限或具有讀取權限的用戶 `/var/dam/share` 位置可以查看與它們共用的連結。 通過連結共用資產是使外部各方無需首先登錄即可獲得資源的一種便捷方式 [!DNL Assets]。
+若要產生您要與使用者共用之資產的URL，請使用連結共用對話方塊。 具有管理員許可權或讀取許可權的使用者： `/var/dam/share` 位置可檢視與其共用的連結。 透過連結共用資產是讓外部對象無需先登入即可使用資源的便利方式 [!DNL Assets].
 
 >[!NOTE]
 >
->如果要共用從「作者」實例到外部實體的連結，請確保僅公開以下URL `GET` 請求。 阻止其他URL以確保「作者」實例安全。
+>如果您想要將來自Author例項的連結分享至外部實體，請確定您只公開下列URL `GET` 要求。 封鎖其他URL以確保您的Author執行個體安全無虞。
 >
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
@@ -235,24 +235,24 @@ When you download assets from the link shared using the Link Sharing feature, Ex
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### 啟用案頭應用使用的案頭操作 {#desktop-actions}
+### 啟用案頭動作以搭配案頭應用程式使用 {#desktop-actions}
 
-從 [!DNL Assets] 用戶介面，您可以瀏覽資產位置或簽出並開啟資產以在案頭應用程式中進行編輯。 這些選項稱為案頭操作，要啟用它，請參見 [啟用案頭操作 [!DNL Assets] Web介面](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
+從 [!DNL Assets] 使用者介面在瀏覽器中，您可以瀏覽資產位置或取出資產，然後在您的案頭應用程式中開啟資產進行編輯。 這些選項稱為案頭動作，要啟用案頭動作，請參閱 [在中啟用案頭動作 [!DNL Assets] 網頁介面](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
-![啟用案頭操作以在使用案頭應用時用作快捷方式](assets/enable_desktop_actions.png)
+![啟用案頭動作，以便在使用案頭應用程式時作為捷徑使用](assets/enable_desktop_actions.png)
 
-### 要使用的配置 [!DNL Adobe Asset Link] {#configure-asset-link}
+### 要使用的設定 [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe資產連結優化了內容建立流程中創意人員和營銷人員之間的協作。 它連接 [!DNL Adobe Experience Manager Assets] 與 [!DNL Creative Cloud] 案頭應用 [!DNL Adobe InDesign]。 [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]。 的 [!DNL Adobe Asset Link] 面板允許創意人員訪問和修改儲存在 [!DNL Assets] 不留下他們最熟悉的創意應用。
+「Adobe資產連結」可簡化創意人員與行銷人員在內容建立過程中的共同作業。 它會連線 [!DNL Adobe Experience Manager Assets] 替換為 [!DNL Creative Cloud] 案頭應用程式 [!DNL Adobe InDesign]， [!DNL Adobe Photoshop]、和 [!DNL Adobe Illustrator]. 此 [!DNL Adobe Asset Link] 面板可讓創意人員存取及修改中儲存的內容 [!DNL Assets] 而不用離開他們最熟悉的創意應用程式。
 
-請參閱 [如何配置 [!DNL Assets] 與 [!DNL Adobe Asset Link]](https://helpx.adobe.com/tw/enterprise/using/configure-aem-assets-for-asset-link.html)。
+另請參閱 [如何設定 [!DNL Assets] 以搭配使用 [!DNL Adobe Asset Link]](https://helpx.adobe.com/tw/enterprise/using/configure-aem-assets-for-asset-link.html).
 
-## 最佳實踐和故障排除 {#bestpractices}
+## 最佳作法和疑難排解 {#bestpractices}
 
-* 名稱中包含空白的資產資料夾或集合可能無法共用。
-* 如果用戶無法下載共用資產，請與Experience Manager管理員確認下載限制。 預設值為100 MB。
-* 要讓用戶預覽使用連結共用共用的視頻，該視頻必須具有靜態視頻格式副本，位於 `/jcr:content/renditions` 在儲存庫中視頻節點中的位置。 預覽不取決於 [!DNL Dynamic Media] 格式副本。
-* 通過連結共用下載視頻資產時， [!DNL Dynamic Media] 下載的存檔中不包括格式副本。
+* 名稱中包含空白字元的資產資料夾或集合可能無法共用。
+* 如果使用者無法下載共用資產，請向您的Experience Manager管理員查詢下載限制是什麼。 預設值為100 MB。
+* 若要讓使用者預覽使用連結共用所共用的視訊，該視訊必須具備靜態視訊轉譯，位於 `/jcr:content/renditions` 在存放庫中視訊節點中的位置。 預覽不取決於的可用性 [!DNL Dynamic Media] 轉譯。
+* 透過連結共用下載視訊資產時， [!DNL Dynamic Media] 轉譯不會包含在下載的封存檔中。
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your Experience Manager administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 

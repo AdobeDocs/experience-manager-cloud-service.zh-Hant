@@ -1,6 +1,6 @@
 ---
 title: 與 Adobe Campaign 整合
-description: AEMas a Cloud Service不支AEM持活動整合。
+description: AEMas a Cloud Service不支援AEM-Campaign整合。
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
@@ -14,4 +14,4 @@ ht-degree: 15%
 
 # 與 Adobe Campaign 整合 {#integrating-campaign}
 
-AEM因為雲服務不支援與 [Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html) 或 [Adobe Campaign Standard。](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignstandard.html)
+AEM as a Cloud Service不支援與整合 [Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html) 或 [Adobe Campaign Standard。](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignstandard.html)

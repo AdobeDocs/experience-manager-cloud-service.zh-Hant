@@ -1,6 +1,6 @@
 ---
 title: MSM 最佳做法
-description: 瞭解Adobe工程和咨詢團隊編製的最佳做法，以幫助多站點管理AEM器啟動和運行。
+description: 瞭解Adobe工程和諮詢團隊編譯的最佳實務，協助您啟動並執行AEM多網站管理員。
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
@@ -15,136 +15,136 @@ ht-degree: 3%
 
 ## 一般 {#general}
 
-MSM是一個可配置的框架，用於自動化內容部署。 實施通常涉及網站的主要部分，並跨組織和地理區域。 因此，強烈建議您像規劃網站一樣仔細規劃MSM實施：
+MSM是可設定的架構，用於自動化內容部署。 實作通常涉及網站的主要部分，且橫跨多個組織和地區。 因此，強烈建議您在規劃MSM實作時，如同規劃網站一樣謹慎：
 
-* 小心 **規劃結構和內容流** 開始實施。
-* **盡量定製，但盡可能少。** 雖然MSM支援高度的定製（例如，部署配置），但通常在您網站的效能、可靠性和可升級性方面的最佳做法是最大限度地減少定制。
-* 建立 **治理** 及早建模，並據此培訓用戶，確保成功。 從治理角度來看，最佳做法是 **盡量減少本地內容製作者的權威** 將內容分配/連接到其他本地用戶及其相應的即時拷貝。 這是因為未管理的、鏈式的繼承可以顯著增加MSM結構的複雜性並損害其效能和可靠性。
-* 一旦您的結構、內容流、自動化和治理制定了計畫， **原型並徹底test系統** 開始即時實施。
-* 記住 **Adobe咨詢和領先的系統整合商** 擁有與MSM一起規劃和實施內容自動化的豐富經驗，因此他們可以幫助您開始實施MSM項目，並幫助您完成整個實施過程。
+* 小心 **計畫結構和內容流程** 開始實作之前。
+* **儘可能多地自訂，但越少越好。** 雖然MSM支援高度自訂（例如轉出設定），但通常網站效能、可靠性和可升級性的最佳實務就是將自訂降至最低。
+* 建立 **治理** 及早建立模型，並據此訓練使用者，以確保成功。 從治理的角度來看，最佳實務是 **將本機內容製作者擁有的許可權降至最低** 來配置/連線內容給其他本機使用者及其各自的即時副本。 這是因為不受控管、鏈結的繼承會大幅增加MSM結構的複雜性，並損害其效能和可靠性。
+* 在針對您的結構、內容流程、自動化和控管制定計畫後， **建立原型並徹底測試您的系統** 開始即時實作之前。
+* 請記住 **Adobe諮詢與領先的系統整合業者** 擁有透過MSM規劃和實作內容自動化的豐富經驗，因此他們可以協助您開始使用MSM專案並完成整個實作。
 
-## 即時拷貝源和藍圖配置 {#live-copy-sources-and-blueprint-configurations}
+## 即時副本來源和Blueprint設定 {#live-copy-sources-and-blueprint-configurations}
 
-請記住，可以使用 [常規頁面](creating-live-copies.md#creating-a-live-copy-of-a-page) 或 [藍圖配置](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)。 兩者都是有效的使用案例。
+請記住，可使用以下任一方式建立即時副本： [一般頁面](creating-live-copies.md#creating-a-live-copy-of-a-page) 或 [Blueprint設定](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). 兩者都是有效的使用案例。
 
-使用藍圖配置的額外好處是：
+使用Blueprint設定的其他優點包括：
 
-* 允許作者使用 **推廣** 的子菜單。
-* 允許作者使用 **建立站點** 以便輕鬆選擇語言並配置即時拷貝的結構。
+* 允許作者使用 **轉出** Blueprint上的選項，以明確推送修改至繼承自此Blueprint的即時副本。
+* 允許作者使用 **建立網站** 以輕鬆選取語言及設定即時副本的結構。
 * 為與藍圖具有關係的 Live Copy 定義預設推出設定。
 
-如果未引用藍圖配置，則只能從「即時副本」本身啟動部署，實際上是從源中提取內容。
+如果未參考Blueprint設定，轉出只能從即時副本本身啟動，基本上是從來源提取內容。
 
-使用Live Copy建立新站點時，建立藍圖配置是有利的，可確保完整MSM功能集的可用性。
+使用即時副本建立新網站時，建立Blueprint設定以確保完整MSM功能集的可用性是有利的。
 
 >[!NOTE]
 >
-> 請注意，「權限」頁籤中的CUG無法從「藍圖」中展開為「即時副本」。 配置Live Copy時，請圍繞此進行規劃。
+> 請注意，許可權標籤中的CUG無法從Blueprint轉出至即時副本。 請在設定即時副本時對此進行規劃。
 
 ## 元件和容器同步 {#components-and-container-synchronization}
 
-通常，MSM中關於元件同步的展示規則是：
+一般而言，MSM中有關元件同步的轉出規則是：
 
-* 已推出元件，以同步藍圖中包含的所有資源。
-* 容器僅同步當前資源。
+* 元件會同步處理Blueprint中包含的任何資源轉出。
+* 容器僅同步目前資源。
 
-這意味著元件被視為一個集合，在部署中，元件本身及其所有子代都被藍圖中的元件所取代。 這意味著如果資源在本地添加到此元件中，將丟失到部署時藍圖的內容中。
+這表示會將元件視為彙總，在轉出時，元件本身及其所有子項都會取代為Blueprint中的元件。 這表示如果在本機將資源新增至這類元件，轉出時它會遺失至Blueprint的內容。
 
-為了支援元件的嵌套，以便在部署中維護本地添加的元件，必須將元件聲明為容器。
+若要支援巢狀元件，以便在轉出中維護本機新增的元件，必須將元件宣告為容器。
 
 >[!NOTE]
 >
->添加屬性 `cq:isContainer` 將其指定為容器。
+>新增屬性 `cq:isContainer` 至元件，以將其指定為容器。
 
 ## 建立網站 {#create-site}
 
-請注意，AEM建立即時副本的主要方法有兩種：
+請注意，AEM有兩個建立即時副本的主要方法：
 
-* 當 [建立即時副本](creating-live-copies.md#creating-a-live-copy-of-a-page)  — 這可以視為更一般的方法，允許您從任何頁面建立即時副本。 即時拷貝的內容結構與源完全匹配。
+* 時間 [建立即時副本](creating-live-copies.md#creating-a-live-copy-of-a-page)  — 這可以視為較通用的方法，可讓您從任何頁面建立即時副本。 即時副本的內容結構與來源完全相符。
 
-* 當 [建立站點](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)  — 這是一種更為專業的方法，主要用於建立具有多語言結構的網站。
+* 時間 [建立網站](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)  — 這是一種更專業的方法，主要用於建立具有多語言結構的網站。
 
-在建立站點時，需要注意以下幾點：
+建立網站時，請謹記以下一些考量事項：
 
-* 要建立新站點，您需要 [藍圖配置](creating-live-copies.md#managing-blueprint-configurations)。
-* 要允許選擇要在新站點中建立的語言路徑，藍圖（源）中必須存在相應的語言根。
-* 一次 [新網站已建立為Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (使用 **建立**，則 **站點**)，此Live Copy的前兩個級別是 *淺*。 頁面的子級不屬於即時關係，但如果找到與觸發器匹配的即時關係，則仍會下拉展開。
+* 若要建立新網站，您需要 [Blueprint設定](creating-live-copies.md#managing-blueprint-configurations).
+* 若要允許選取要在新網站中建立的語言路徑，對應的語言根必須存在於Blueprint （來源）中。
+* 一次a [新網站已建立為即時副本](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (使用 **建立**，則 **網站**)，此即時副本的前兩個層級為 *淺*. 頁面的子系不屬於即時關係，但如果找到符合觸發器的即時關係，轉出仍會下降。
 
-避免：
+這有助於避免：
 
-* 在藍圖中手動添加語言（在第一級以下）。
-* 手動將內容直接添加到語言根目錄下，因為這樣不會導致在部署時自動將此新內容傳輸到即時拷貝。
+* 在Blueprint中手動新增語言（第一個層級以下）。
+* 直接在語言根下手動新增內容，因為這不會導致在轉出時自動將此新內容傳送到即時副本。
 
 ## MSM和多語言網站 {#msm-and-multilingual-websites}
 
-MSM可通過兩種方式協助建立多語言網站：
+MSM可透過兩種方式協助建立多語言網站：
 
-建立語言母版時，請牢記以下內容：
+建立語言主版時，請記住以下事項：
 
-* 而MSM本身 **不提供內容翻譯**，它可與第三方翻譯連接器整合。 請注意：
-   * MSM允許您在頁面和/或元件級別取消繼承。 這有助於防止在下次部署時覆蓋已翻譯的內容（從即時拷貝，以及藍圖中尚未翻譯的內容）。
-      * 某些第三方翻譯連接器可自動管理MSM遺產。
-      * 有關詳細資訊，請咨詢翻譯服務提供商。
-      * 建立和翻譯語言母版的另一種方法是將語言副本AEM與現成翻譯整合框架結合使用。
+* 而MSM本身 **不提供內容翻譯**，可與第三方翻譯聯結器整合。 請注意：
+   * MSM可讓您取消頁面和/或元件層級的繼承。 這有助於防止在下一次轉出時覆寫已翻譯內容（來自即時副本，以及來自Blueprint的尚未翻譯內容）。
+      * 某些協力廠商翻譯聯結器會自動管理MSM繼承。
+      * 如需詳細資訊，請洽詢您的翻譯服務供應商。
+      * 建立及翻譯語言母版的另一種方法是將語言副本與AEM現成的翻譯整合架構搭配使用。
 
-有關詳細資訊，請參閱 [翻譯多語言站點的內容](/help/sites-cloud/administering/translation/overview.md) 和 [翻譯最佳實踐。](/help/sites-cloud/administering/translation/best-practices.md)
+如需詳細資訊，請參閱 [翻譯多語言網站的內容](/help/sites-cloud/administering/translation/overview.md) 和 [翻譯最佳實務。](/help/sites-cloud/administering/translation/best-practices.md)
 
-## 結構更改和展開 {#structure-changes-and-rollouts}
+## 結構變更和轉出 {#structure-changes-and-rollouts}
 
-藍圖/源樹中對內容結構的修改在即時拷貝中的反映不同。 這取決於修改類型：
+對Blueprint/來源樹狀結構中內容結構的修改會以不同方式反映在即時副本中。 這取決於修改型別：
 
-* **建立** 藍圖中的新頁面將導致在使用標準部署配置進行部署後在即時拷貝中建立相應頁面。
-* **刪除** 藍圖中的頁面將導致在使用標準部署配置進行部署後從即時拷貝中刪除相應的頁面。
-* **移動** 藍圖中的頁面 **不** 使用標準部署配置部署後，將相應的頁面移入Live Copies:
-   * 此行為的原因是頁面移動隱式包含頁面刪除。 這可能會導致發佈時出現意外行為，因為刪除作者上的頁面會自動在發佈時停用相應內容。 這還可對相關項目（如連結、書籤和其他）產生附加影響。
-      * 將更新各Live Copy頁中的內容繼承，以反映其源在藍圖中的新位置。
-      * 要完全實現從藍圖到即時副本的頁面移動，請考慮 [頁面移動最佳實踐。](#page-move)
+* **建立** Blueprint中的新頁面將導致在使用標準轉出設定轉出後，在即時副本中建立對應的頁面。
+* **正在刪除** 使用標準轉出設定進行轉出後，Blueprint中的頁面將導致對應的頁面從即時副本中刪除。
+* **移動** Blueprint中的頁面將 **not** 使用標準轉出設定進行轉出後，導致對應的頁面在即時副本中移動：
+   * 此行為的原因是頁面移動隱含包含頁面刪除。 這可能會導致發佈時出現非預期的行為，因為刪除作者上的頁面會自動停用發佈上的對應內容。 這也可能對相關專案（例如連結、書籤等）產生其他影響。
+      * 個別Live Copy頁面中的內容繼承已更新，以反映其來源在Blueprint中的新位置。
+      * 若要完全實現從Blueprint到即時副本的頁面移動，請考慮 [頁面移動最佳實務。](#page-move)
 
-### 頁面移動最佳實踐 {#page-move}
+### 頁面移動最佳實務 {#page-move}
 
-在考慮在即時拷貝中移動頁面時，請考慮以下最佳做法。
+考慮在即時副本中移動頁面時，請考慮以下最佳實務。
 
 >[!NOTE]
 >
->以下內容僅適用於 [On Roult觸發器](live-copy-sync-config.md#rollout-triggers)。
+>以下僅適用於 [在轉出觸發時](live-copy-sync-config.md#rollout-triggers).
 
-1. 建立自定義部署配置。
-   * 此新配置必須包括操作 `PageMoveAction`。
-   * 請勿將此配置添加其他操作。
-1. 定位新配置。
-   * 要在刪除Live Copy中舊位置的相應頁面時完全展開頁面移動，請執行以下操作：
-      * 在標準部署配置之前定位新建立的配置。 標準部署配置將負責刪除其舊位置中的頁面。
-      * 在將各頁保留在即時副本的舊位置（實質上是複製內容）時，展開頁面移動：
-         * 在標準部署配置後定位新建立的配置。 這將確保Live Copy中未刪除任何內容或從發佈中停用任何內容。
+1. 建立自訂轉出設定。
+   * 此新設定必須包含動作 `PageMoveAction`.
+   * 請勿將其他動作新增至此設定。
+1. 定位新設定。
+   * 若要完全轉出頁面移動，同時在即時副本中的舊位置刪除個別頁面：
+      * 將新建立的設定放置在標準轉出設定之前。 標準轉出設定會負責刪除舊位置中的頁面。
+      * 若要轉出頁面移動，同時將個別頁面保留在即時副本中的舊位置（基本上是重複內容），請執行下列動作：
+         * 將新建立的設定放置在標準轉出設定之後。 這將確保即時副本中不會刪除內容或從發佈中停用。
 
-## 自定義部署 {#customizing-rollouts}
+## 自訂轉出 {#customizing-rollouts}
 
-MSM部署配置可高度定制。 您應該知道，自動實施可能會產生深遠的影響。 作為最佳做法，您應在進行以下活動之前仔細規劃：
+MSM轉出設定可高度自訂。 您應注意，自動化轉出可能會產生深遠的影響。 最佳實務是，在從事下列活動之前，應非常仔細地規劃：
 
-* 自動實施，例如 [onModify觸發器](#onmodify)
-* 自定義 [節點類型/屬性](#node-types-properties)
-* 啟動後續工作流
-* 激活內容作為部署的一部分
+* 自動化轉出，例如使用 [onModify觸發程式](#onmodify)
+* 自訂 [節點型別/屬性](#node-types-properties)
+* 開始後續工作流程
+* 在轉出時啟用內容
 
-### 修改 {#onmodify}
+### onModify {#onmodify}
 
-使用 [調用觸發](live-copy-sync-config.md#rollout-triggers) `onModify` 您應考慮：
+使用時 [轉出觸發器](live-copy-sync-config.md#rollout-triggers) `onModify` 您應考慮：
 
-* 自動執行部署 `onModify` 觸發器在每次修改頁面後觸發執行時，可能會對創作效能產生負面影響。
-* 展出結果可能與預期結果不同：
-   * 不能指定結果修改事件的順序。
-   * 基於事件的體系結構無法保證傳遞到部署管理器的事件的順序。
-* 如果同一資源的併發更新發生，則使用這種部署配置可能會導致提交衝突。
+* 使用自動化轉出 `onModify` 觸發器可能會對編寫效能產生負面影響，因為它們會在每次修改頁面後觸發轉出。
+* 轉出結果可能與預期結果不同：
+   * 您無法指定產生修改事件的順序。
+   * 事件型架構無法保證傳遞至轉出管理器的事件順序。
+* 如果同時更新相同的資源，使用這類轉出設定可能會導致認可衝突。
 
-因此，建議您僅使用 `onModify` 觸發器。
+因此，建議您只使用 `onModify` 如果自動轉出啟動的好處多於任何潛在的效能問題，則會觸發。
 
-### 節點類型/屬性 {#node-types-properties}
+### 節點型別/屬性 {#node-types-properties}
 
-除了自定義推廣操作外，MSM還允許您自定義正在推廣的節點屬性。 的 [MSM OSGi配置允許您排除節點類型](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) 從源複製到即時拷貝。
+除了自訂轉出動作之外，MSM也可讓您自訂正在轉出的節點屬性。 此 [MSM OSGi設定可讓您排除節點型別](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) 從來源複製到即時副本。
 
 ## 更多資訊 {#further-information}
 
-有關MSM和Live Copy的詳細資訊，請參閱以下文章。
+請參閱下列文章，瞭解有關MSM和Live Copy的詳細資訊。
 
 * [建立和同步 Live Copy](creating-live-copies.md)
 * [Live Copy 概觀主控台](live-copy-overview.md)

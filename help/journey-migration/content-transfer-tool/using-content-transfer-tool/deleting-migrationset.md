@@ -1,6 +1,6 @@
 ---
-title: 在內容傳輸工具中刪除遷移集
-description: 在內容傳輸工具中刪除遷移集
+title: 在內容轉移工具中刪除移轉集
+description: 在內容轉移工具中刪除移轉集
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
 source-git-commit: c61407d70fb65a7fdc72174881b23db4deca556a
 workflow-type: tm+mt
@@ -16,26 +16,26 @@ ht-degree: 8%
 >title="刪除移轉集"
 >abstract="了解如何刪除移轉集。"
 
-可以從雲加速管理器中刪除遷移集。
+可以從Cloud Acceleration Manager中刪除移轉集。
 
-## 刪除遷移集的步驟 {#deleting-migration-set}
+## 刪除移轉集的步驟 {#deleting-migration-set}
 
-要刪除遷移集，請執行以下步驟：
+若要刪除移轉集，請遵循下列步驟：
 
-1. 導航到Cloud Acceleration Manager中的「遷移集」清單視圖，然後按一下三點(**...**)。 的 **刪除** 操作應可見，如下所示。
+1. 導覽至Cloud Acceleration Manager中的移轉集清單檢視，然後按一下三個點(**...**)，位於您要刪除的移轉集旁。 此 **刪除** 動作應該會顯示，如下所示。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
-1. 按一下後 **刪除** 您將看到一個對話框來確認刪除操作。
+1. 一旦您按一下 **刪除** 您將會看到確認刪除動作的對話方塊。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
 
 >[!NOTE]
 >
->從Cloud Acceleration Manager(CAM)刪除遷移集不會從內容傳輸工具中刪除它。 從CAM中刪除遷移集後，用戶將無法從「內容傳輸」嚮導中對該遷移集運行提取。 但是，如果遷移集已從「內容傳輸」嚮導中刪除，則只要遷移集在雲加速管理器中仍然可用，用戶就可以重新建立。
+>從Cloud Acceleration Manager (CAM)中刪除移轉集並不會從「內容轉移工具」中刪除它。 一旦從CAM中刪除移轉集，使用者將無法從「內容轉移精靈」對該移轉集執行擷取。 不過，如果移轉集已從「內容轉移」精靈中刪除，只要移轉集仍可在Cloud Acceleration Manager中使用，使用者就可以重新建立。
 >
->要使內容傳輸工具與雲加速管理器保持同步，用戶還可以從內容傳輸工具中刪除遷移集。
+>若要讓「內容轉移工具」與Cloud Acceleration Manager保持同步，使用者也可以從「內容轉移工具」中刪除移轉集。
 
-要從「內容傳輸」嚮導中刪除遷移集，請選擇遷移集，然後按一下 **刪除** 的子菜單。
+若要從「內容轉移精靈」刪除移轉集，請選取移轉集，然後按一下 **刪除** 在動作列中。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)

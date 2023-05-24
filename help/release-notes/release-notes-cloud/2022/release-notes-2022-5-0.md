@@ -11,7 +11,7 @@ ht-degree: 17%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版發行說明 {#release-notes}
 
-以下部分概述2022.5.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
+以下章節概述2022.5.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -23,12 +23,12 @@ ht-degree: 17%
 
 ## 發行日期 {#release-date}
 
-發佈日期 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] 本版本(2022.5.0)為2022年6月9日。
-下一版(2022.6.0)計畫於2022年6月30日發行。
+的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前版本(2022.5.0)為2022年6月9日。
+下一個版本(2022.6.0)計畫於2022年6月30日發行。
 
 ## 發行影片 {#release-video}
 
-查看2022年5月版本概述視頻，瞭解2022.5.0版中添加的功能的摘要：
+請觀看2022年5月版本概觀影片，瞭解2022.5.0版本新增功能摘要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/343321/?quality=12)
 
@@ -37,63 +37,63 @@ ht-degree: 17%
 ### [!DNL Sites] 發行前通道中可用的新功能 {#prerelease-features-sites}
 
 * 各種GraphQL功能
-* A [新控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 為無頭使用內容片段而優化
+* A [新增主控台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 針對無周邊使用內容片段進行最佳化
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* [Dynamic Media智慧成像](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) 現在支援AVIF檔案格式 — 進一步改進Google核心網關重要性（最大內容塗料）,AVIF比WebP提供20%的額外尺寸縮減。 總的來說，AVIF比JPEG（在某些影像中甚至高達76%）提供了41%的平均尺寸縮減率。
+* [Dynamic Media智慧型影像](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) 現在支援AVIF檔案格式 — 進一步改善Google Core Web Vital （最大內容繪製），與WebP相比，AVIF提供20%的額外大小縮減。 與JPEG相比，AVIF的平均大小縮減率高達41% （在某些影像中甚至高達76%）。
 
-* [!UICONTROL Experience Manager AssetsBrand Portal] 現在每十二小時執行一次自動作業，以刪除發佈到的所有Brand PortalAEM資產。 因此，您不需要手動刪除「貢獻」資料夾中的資產，以使資料夾大小低於閾值限制。 請參閱 [Experience Manager Assets·Brand Portal有什麼新聞嗎](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
+* [!UICONTROL Experience Manager Assets Brand Portal] 現在每十二小時執行一次自動工作，以刪除發佈至AEM的所有Brand Portal資產。 因此，您不需要手動刪除「貢獻」資料夾中的資產，以將資料夾大小保持在臨界值限制以下。 另請參閱 [Experience Manager Assets Brand Portal的新功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
 ### [!DNL Assets] 發行前通道中可用的新功能 {#prerelease-features-assets}
 
-Experience Manager Assets目前使用Adobe SenseiAI功能 [區分影像中的顏色，並在攝取時自動將這些顏色作為標籤應用](/help/assets/color-tag-images.md)。 這些標籤基於影像顏色合成，支援增強的搜索體驗。 您可以配置標籤到影像的顏色數量，以便以後可以根據這些顏色搜索影像。
+Experience Manager Assets現在使用Adobe Sensei AI功能 [區分影像中的顏色，並在擷取時自動將這些顏色套用為標籤](/help/assets/color-tag-images.md). 這些標籤會根據影像顏色組合來增強搜尋體驗。 您可以設定標籤到影像的顏色數量（範圍在1到40之間），以便日後可以根據這些顏色搜尋影像。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 發行前通道中可用的新功能 {#prerelease-features-forms}
 
-* **將自適應Forms與Microsoft® Power Automate整合**:您現在可以配置自適應表單，在提交時運行Microsoft® Power自動化雲流。 配置的自適應表單將捕獲的資料、附件和記錄文檔發送到Power Automate Cloud Flow進行處理。 它幫助您構建自定義資料捕獲體驗，同時利用Microsoft® Power Automate的強大功能，圍繞捕獲的資料構建業務邏輯並自動化客戶工作流。
+* **整合Adaptive Forms與Microsoft® Power Automate**：您現在可以設定最適化表單，在提交時執行Microsoft® Power Automate Cloud Flow。 設定的最適化表單會將擷取的資料、附件和記錄檔案傳送到Power Automate Cloud Flow進行處理。 它可幫助您建立自訂資料擷取體驗，同時利用Microsoft® Power Automate的強大功能，圍繞擷取的資料建立商業邏輯，並自動化客戶工作流程。
 
-* **用於建立自適應表單的嚮導**:您可以使用業務用戶友好嚮導快速編寫AdaptiveForms。 該嚮導提供快速頁籤導航，以便輕鬆選擇預先配置的模板、樣式、欄位和提交選項以建立自適應表單。
+* **建立最適化表單的精靈**：您可以使用業務使用者友善的精靈來快速撰寫最適化Forms。 精靈提供快速索引標籤導覽，以輕鬆選取預先設定的範本、樣式、欄位和提交選項來建立調適型表單。
 
-   ![用於建立自適應表單的嚮導](/help/release-notes/assets/wizard.png)
+   ![建立最適化表單的精靈](/help/release-notes/assets/wizard.png)
 
 ## CIF 附加元件 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* 快速訪問產品駕駛艙：在站點編輯器中按一下一次即可輕鬆訪問完整的詳細產品資訊
+* 快速存取產品駕駛艙：在Sites Editor中按一下即可輕鬆存取完整詳細的產品資訊
 
    ![啟用願望清單](/help/assets/CIF/enable-wishlist.png)
 
-* 支援其他營銷商務元件：可將元件配置為顯示附加購物車和附加清單的行動要求
+* 支援其他行銷商務元件：元件可設定為顯示加入購物車和加入願望清單的號召性用語
 
-   ![產品駕駛艙的站點編輯器快捷方式](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+   ![網站編輯器到產品駕駛艙的捷徑](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 
-## [!DNL Experience Manager] 作為 [!DNL Cloud Service] 基礎 {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 複製代理管理螢幕下的「添加樹」選項 **分發頁籤**&#x200B;此前已宣佈為棄用的，將於2022年6月20日或不久後刪除。 應使用樹層次結構複製內容的包 [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹工作流](/help/operations/replication.md#publish-content-tree-workflow)。
+* 復寫代理程式管理畫面下方的「新增樹狀結構」選項 **分發索引標籤**&#x200B;先前宣佈已棄用的URL將於2022年6月20日或隨後不久移除。 應改用復寫具有樹狀階層內容的套件 [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹狀工作流程](/help/operations/replication.md#publish-content-tree-workflow).
 
-* 不建議使用複製代理管理螢幕或複製API來分發大於10 MB（具有屬性的節點，不包括二進位檔案）的內容包，並將在2022年9月12日或之後立即實施。 相反， [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹工作流](/help/operations/replication.md#publish-content-tree-workflow) 必須用於複製這些大型內容包。 在7月，複製代理管理螢幕的 **分發頁籤** 如果嘗試複製這些大型內容包，則無論何時AEM使用複製API複製這些大型內容包，都會在錯誤日誌中進行複製。 9月，警告將替換為錯誤。 請相應地調整您的流程。
+* 不建議使用復寫代理程式管理畫面或復寫API來分發大於10 MB的內容套件（具有屬性的節點，不包括二進位檔案），並將於2022年9月12日或隨後不久強制棄用。 而是 [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹狀工作流程](/help/operations/replication.md#publish-content-tree-workflow) 必須用來復寫這些大型內容套件。 7月時，復寫代理程式管理畫面中會出現警告訊息 **分發索引標籤** 如果嘗試復寫這些大型內容套件，並且每當使用復寫API復寫這些大型內容套件時，也會在AEM錯誤記錄檔中復寫。 在9月，警告將取代為錯誤。 請據以調整您的流程。
 
 ### [!DNL Experience Manager] 發行前通道中可用的新功能 {#prerelease-features-foundation}
 
-* 現AEM在as a Cloud Service與Unified Shell整合，以改進用戶體驗，並將其與所有其它Experience Cloud應用程式統一。 請參閱 [統一AEMShell上的as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 的子菜單。
+* AEMas a Cloud Service現在與Unified Shell整合，以改進使用者體驗，並將其與所有其他Experience Cloud應用程式統一。 請參閱 [統一命令介面上的AEMas a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以取得更多詳細資料。
 
-## [!DNL Experience Manager] 作為 [!DNL Cloud Service] 基礎安全 {#foundation-security}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎安全性 {#foundation-security}
 
-### TLS 1.0、1.1棄用
+### 不再使用TLS 1.0、1.1
 
-從2022年6月30日起，Experience Manageras a Cloud Service將要求與用戶系統進行更加安全的網路通信和資料交換。 將AEM只使用傳輸層安全性(TLS)1.2協定。 舊版TLS 1.0和1.1版將被棄用。
+從2022年6月30日開始，Experience Manageras a Cloud Service將需要與使用者系統進行更安全的網路通訊和資料交換。 AEM將僅使用傳輸層安全性(TLS) 1.2通訊協定。 舊版TLS 1.0和1.1將被棄用。
 
-如果繼續將舊版本的TLS用作1.0、1.1，則可能會失去對Experience Manageras a Cloud Service的訪問權限。
+如果您繼續將舊版TLS用作1.0、1.1，則可能無法存取Experience Manageras a Cloud Service。
 
 ## Cloud Manager {#cloud-manager}
 

@@ -1,6 +1,6 @@
 ---
-title: 開發人員引用 [!DNL Assets]
-description: "[!DNL Assets] API和開發人員參考內容允許您管理資產，包括二進位檔案、元資料、格式副本、注釋和 [!DNL Content Fragments]"
+title: 以下專案的開發人員參考： [!DNL Assets]
+description: '"[!DNL Assets] API和開發人員參考內容可讓您管理資產，包括二進位檔案、中繼資料、轉譯、註解和 [!DNL Content Fragments].」'
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
@@ -12,45 +12,45 @@ ht-degree: 6%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] 開發人員使用案例、 API和參考材料 {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] 開發人員使用案例、API和參考資料 {#assets-cloud-service-apis}
 
-文章包含為開發商提供的建議、參考資料和資源 [!DNL Assets] 作為 [!DNL Cloud Service]。 它包括新的資產上載模組、API參考以及有關後處理工作流中提供的支援的資訊。
+本文包含適用於開發人員之建議、參考資料和資源， [!DNL Assets] as a [!DNL Cloud Service]. 其中包括新的資產上傳模組、API參考資料，以及有關後處理工作流程中提供的支援資訊。
 
-## [!DNL Experience Manager Assets] API和操作 {#use-cases-and-apis}
+## [!DNL Experience Manager Assets] API和作業 {#use-cases-and-apis}
 
-[!DNL Assets] 作為 [!DNL Cloud Service] 提供了幾個API以寫程式方式與數字資產交互。 每個API都支援特定的使用案例，如下表所述。 的 [!DNL Assets] 用戶介面， [!DNL Experience Manager] 案頭應用和 [!DNL Adobe Asset Link] 支援所有或部分行動。
+[!DNL Assets] as a [!DNL Cloud Service] 提供數個API，以程式設計方式與數位資產互動。 每個API都支援特定使用案例，如下表所述。 此 [!DNL Assets] 使用者介面， [!DNL Experience Manager] 案頭應用程式和 [!DNL Adobe Asset Link] 支援所有或部分作業。
 
 >[!CAUTION]
 >
->某些API繼續存在，但不受活動支援（用×表示）。 盡可能不要使用這些API。
+>有些API持續存在，但主動不受支援(以×表示)。 請儘量不要使用這些API。
 
-| 支援級別 | 說明 |
+| 支援等級 | 說明 |
 | ------------- | --------------------------- |
 | ✓ | 支援 |
-| × | 不支援. 別用。 |
+| × | 不支援. 請勿使用。 |
 | - | 不可用 |
 
-| 用例 | [aem上載](https://github.com/adobe/aem-upload) | [Experience Manager/吊具/JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset compute服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | 吊帶 [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servel | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
+| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [asset compute服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **原始二進位** |  |  |  |  |  |  |
-| 建立原始 | ✓ | × | - | × | × | - |
-| 讀取原件 | - | × | ✓ | ✓ | ✓ | - |
-| 更新原始 | ✓ | × | ✓ | × | × | - |
-| 刪除原始 | - | ✓ | - | ✓ | ✓ | - |
-| 複製原始 | - | ✓ | - | ✓ | ✓ | - |
-| 移動原始 | - | ✓ | - | ✓ | ✓ | - |
+| 建立原始檔案 | ✓ | × | - | × | × | - |
+| 讀取原始檔案 | - | × | ✓ | ✓ | ✓ | - |
+| 更新原始檔案 | ✓ | × | ✓ | × | × | - |
+| 刪除原始檔案 | - | ✓ | - | ✓ | ✓ | - |
+| 複製原始檔案 | - | ✓ | - | ✓ | ✓ | - |
+| 移動原始檔案 | - | ✓ | - | ✓ | ✓ | - |
 | **中繼資料** |  |  |  |  |  |  |
-| 建立元資料 | - | ✓ | ✓ | ✓ | ✓ | - |
-| 讀取元資料 | - | ✓ | - | ✓ | ✓ | - |
+| 建立中繼資料 | - | ✓ | ✓ | ✓ | ✓ | - |
+| 讀取中繼資料 | - | ✓ | - | ✓ | ✓ | - |
 | 更新中繼資料 | - | ✓ | ✓ | ✓ | ✓ | - |
-| 刪除元資料 | - | ✓ | ✓ | ✓ | ✓ | - |
-| 複製元資料 | - | ✓ | - | ✓ | ✓ | - |
-| 移動元資料 | - | ✓ | - | ✓ | ✓ | - |
+| 刪除中繼資料 | - | ✓ | ✓ | ✓ | ✓ | - |
+| 複製中繼資料 | - | ✓ | - | ✓ | ✓ | - |
+| 移動中繼資料 | - | ✓ | - | ✓ | ✓ | - |
 | **內容片段(CF)** |  |  |  |  |  |  |
 | 建立CF | - | ✓ | - | ✓ | - | - |
-| 閱讀CF | - | ✓ | - | ✓ | - | ✓ |
+| 讀取CF | - | ✓ | - | ✓ | - | ✓ |
 | 更新CF | - | ✓ | - | ✓ | - | - |
-| 刪除CF | - | ✓ | - | ✓ | - | - |
+| 刪除Cf | - | ✓ | - | ✓ | - | - |
 | 複製CF | - | ✓ | - | ✓ | - | - |
 | 移動CF | - | ✓ | - | ✓ | - | - |
 | **版本** |  |  |  |  |  |  |
@@ -62,41 +62,41 @@ ht-degree: 6%
 | 讀取資料夾 | - | ✓ | - | ✓ | - | - |
 | 刪除資料夾 | ✓ | ✓ | - | ✓ | - | - |
 | 複製資料夾 | ✓ | ✓ | - | ✓ | - | - |
-| 移動資料夾 | ✓ | ✓ | - | ✓ | - | - |
+| 行動資料夾 | ✓ | ✓ | - | ✓ | - | - |
 
-## 資產上載 {#asset-upload}
+## 資產上傳 {#asset-upload}
 
-在 [!DNL Experience Manager] 作為 [!DNL Cloud Service]，您可以使用HTTP API直接將資產上載到雲儲存。 下面是上載二進位檔案的步驟。 在外部應用程式中執行這些步驟，而不是在 [!DNL Experience Manager] JVM。
+在 [!DNL Experience Manager] as a [!DNL Cloud Service]，即可使用HTTP API直接將資產上傳至雲端儲存空間。 上傳二進位檔案的步驟如下。 在外部應用程式中執行這些步驟，而不是在 [!DNL Experience Manager] JVM。
 
-1. [提交HTTP請求](#initiate-upload)。 它通知 [!DNL Experience Manage]r部署您上載新二進位檔案的意圖。
-1. [PUT二進位檔案的內容](#upload-binary) 到由啟動請求提供的一個或多個URI。
-1. [提交HTTP請求](#complete-upload) 通知伺服器已成功上載二進位檔案的內容。
+1. [提交HTTP要求](#initiate-upload). 它會通知 [!DNL Experience Manage]或部署您打算上傳新二進位檔的動作。
+1. [PUT二進位檔的內容](#upload-binary) 初始化請求提供的一或多個URI。
+1. [提交HTTP要求](#complete-upload) 通知伺服器已成功上傳二進位檔的內容。
 
-![直接二進位上載協定概述](assets/add-assets-technical.png)
+![直接二進位上傳通訊協定概觀](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
-在外部應用程式中執行以上步驟，而不是在 [!DNL Experience Manager] JVM。
+在外部應用程式中而不是在內部執行上述步驟 [!DNL Experience Manager] JVM。
 
-該方法提供了對資產上載的可擴展和更高效能的處理。 與現時比較之 [!DNL Experience Manager] 6.5是：
+方法提供可擴充且效能更高的資產上傳處理方式。 相較於的差異 [!DNL Experience Manager] 6.5為：
 
-* 二進位檔案不通過 [!DNL Experience Manager]，現在只需將上載過程與為部署配置的二進位雲儲存進行協調。
-* 二進位雲儲存可與內容分發網路(CDN)或邊緣網路配合使用。 CDN選擇對客戶機更近的上載終結點。 當資料傳輸到附近端點的距離較短時，上載效能和用戶體驗將得到改善，特別是對於地理位置分散的團隊。
+* 二進位檔不會通過 [!DNL Experience Manager]，現在只需使用為部署設定的二進位雲端儲存空間，來協調上傳程式。
+* 二進位雲端儲存空間可與內容傳遞網路(CDN)或Edge網路搭配使用。 CDN會選取距離使用者端較近的上傳端點。 當資料傳輸至附近端點的距離較短時，上傳效能和使用者體驗會有所改善，尤其是地理上分散的團隊。
 
 >[!NOTE]
-請參見在開源中實現此方法的客戶端代碼 [aem上載庫](https://github.com/adobe/aem-upload)。
+請參閱使用者端代碼，以在開放原始碼中實作此方法 [aem-upload資料庫](https://github.com/adobe/aem-upload).
 [!IMPORTANT]
-在某些情況下，由於儲存在Experience Manager中的最終一致性，更改可能不會在對Cloud Service的請求之間完全傳播。 這會導致404個響應以啟動或完成上載呼叫，因為所需的資料夾建立未被傳播。 客戶端應預期有404個響應，並通過使用回退策略實施重試來處理這些響應。
+在某些情況下，由於Cloud Service中的儲存最終具有一致的性質，變更可能不會在對Experience Manager的請求之間完全傳播。 這會導致404個回應起始或完成上傳呼叫，因為必要的資料夾建立未傳播。 使用者端應該會收到404個回應，並透過實作附有後退策略的重試來處理這些回應。
 
-### 啟動上載 {#initiate-upload}
+### 啟動上傳 {#initiate-upload}
 
-將HTTPPOST請求提交到所需資料夾。 在此資料夾中建立或更新資產。 包括選擇器 `.initiateUpload.json` 指示請求是啟動二進位檔案的上載。 例如，應建立資產的資料夾的路徑是 `/assets/folder`。 POST請求為 `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`。
+將HTTPPOST請求提交到所需的資料夾。 在此資料夾中建立或更新資產。 包含選取器 `.initiateUpload.json` 表示要求要開始上傳二進位檔案。 例如，應建立資產的資料夾的路徑為 `/assets/folder`. POST請求是 `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
-請求正文的內容類型應為 `application/x-www-form-urlencoded` 表單資料，包含以下欄位：
+請求內文的內容型別應為 `application/x-www-form-urlencoded` 表單資料，包含下列欄位：
 
-* `(string) fileName`: 必要. 中顯示的資產名稱 [!DNL Experience Manager]。
-* `(number) fileSize`: 必要. 正在上載的資產的檔案大小（以位元組為單位）。
+* `(string) fileName`: 必要. 資產出現的名稱 [!DNL Experience Manager].
+* `(number) fileSize`: 必要. 正在上傳之資產的檔案大小（位元組）。
 
-只要每個二進位檔案包含必填欄位，就可以使用單個請求啟動多個二進位檔案的上載。 如果成功，請求將以 `201` 狀態代碼和包含以下格式的JSON資料的主體：
+只要每個二進位檔案都包含必要欄位，就可以使用單一要求來起始多個二進位檔案的上傳。 如果成功，請求會以回應 `201` 狀態代碼和包含JSON資料的內文，格式如下：
 
 ```json
 {
@@ -117,104 +117,104 @@ ht-degree: 6%
 }
 ```
 
-* `completeURI` （字串）:在二進位檔案完成上載後調用此URI。 URI可以是絕對URI或相對URI，客戶端應能夠處理兩者之一。 即，值可以是 `"https://[aem_server]:[port]/content/dam.completeUpload.json"` 或 `"/content/dam.completeUpload.json"` 請參閱 [完成上載](#complete-upload)。
-* `folderPath` （字串）:上載二進位檔案的資料夾的完整路徑。
-* `(files)` （陣列）:其長度和順序與初始化請求中提供的二進位資訊清單的長度和順序相匹配的元素清單。
-* `fileName` （字串）:相應二進位檔案的名稱，如啟動請求中提供的。 此值應包括在完整請求中。
-* `mimeType` （字串）:相應二進位檔案的MIME類型，如啟動請求中提供的。 此值應包括在完整請求中。
-* `uploadToken` （字串）:相應二進位檔案的上載令牌。 此值應包括在完整請求中。
-* `uploadURIs` （陣列）:值為二進位內容應上載到的完整URI的字串清單（請參見） [上載二進位](#upload-binary))。
-* `minPartSize` （數）:可提供給以下任一資料的最小長度（以位元組為單位） `uploadURIs`，如果有多個URI。
-* `maxPartSize` （數）:可提供給以下任一資料的最大長度（以位元組為單位） `uploadURIs`，如果有多個URI。
+* `completeURI` （字串）：當二進位檔完成上傳時，呼叫此URI。 URI可以是絕對URI或相對URI，使用者端應該能夠處理任一個。 也就是說，值可以是 `"https://[aem_server]:[port]/content/dam.completeUpload.json"` 或 `"/content/dam.completeUpload.json"` 另請參閱 [完成上傳](#complete-upload).
+* `folderPath` （字串）：上傳二進位檔案的資料夾完整路徑。
+* `(files)` （陣列）：其長度和順序符合起始請求中提供的二進位資訊清單長度和順序的元素清單。
+* `fileName` （字串）：對應二進位檔的名稱，如起始請求中所提供。 此值應包含在完整請求中。
+* `mimeType` （字串）：對應二進位檔的mime型別，如起始請求中所提供。 此值應包含在完整請求中。
+* `uploadToken` （字串）：對應二進位檔的上傳權杖。 此值應包含在完整請求中。
+* `uploadURIs` （陣列）：字串清單，其值是二進位內容應上傳到的完整URI (請參閱 [上傳二進位檔](#upload-binary))。
+* `minPartSize` （數字）：可提供給任一項的資料長度（位元組），以位元組為單位。 `uploadURIs`，如果有超過一個URI。
+* `maxPartSize` （數字）：可提供給任一個的資料長度上限（位元組）。 `uploadURIs`，如果有超過一個URI。
 
-### 上載二進位 {#upload-binary}
+### 上傳二進位檔 {#upload-binary}
 
-啟動上載的輸出包括一個或多個上載URI值。 如果提供了多於一個URI，則客戶機可以將二進位檔案拆分成多個部件，並按順序向提供的上載URI發出每個部件的PUT請求。 如果選擇將二進位檔案拆分為零件，請遵循以下准則：
+起始上傳的輸出包含一或多個上傳URI值。 如果提供了多個URI，使用者端可以依序將二進位檔分割成多個部分，並向提供的上傳URI提出每個部分的PUT請求。 如果您選擇將二進位檔案分割成零件，請遵循下列准則：
 
-* 除最後一個部件外，每個部件的大小必須大於或等於 `minPartSize`。
-* 每個零件的大小必須小於或等於 `maxPartSize`。
-* 如果二進位大小超過 `maxPartSize`，將二進位檔案拆分為多個部分以上載。
-* 您不必使用所有URI。
+* 除了最後一個零件外，每個零件的大小都必須大於或等於 `minPartSize`.
+* 每個零件的大小必須小於或等於 `maxPartSize`.
+* 如果二進位檔案的大小超過 `maxPartSize`，將二進位檔分割為多個部分以上傳。
+* 您不需要使用所有URI。
 
-如果二進位檔案的大小小於或等於 `maxPartSize`，您可以將整個二進位檔案上載到單個上載URI。 如果提供了多個上載URI，請使用第一個上載URI，然後忽略其餘的上載URI。 您不必使用所有URI。
+如果二進位檔的大小小於或等於 `maxPartSize`，您可以改為將整個二進位檔案上傳至單一上傳URI。 如果提供了多個上傳URI，請使用第一個上傳URI並忽略其餘上傳URI。 您不需要使用所有URI。
 
-CDN邊緣節點有助於加速請求的二進位檔案上載。
+CDN邊緣節點有助於加速要求的二進位檔上傳。
 
-最簡單的方法是使用 `maxPartSize` 作為零件尺寸。 如果將此值用作部件大小，則API合同將確保有足夠的上載URI來上載二進位檔案。 為此，將二進位檔案拆分為大小部分 `maxPartSize`，按順序為每個部件使用一個URI。 最後部分的大小可以小於或等於 `maxPartSize`。 例如，假設二進位檔案的總大小為20,000位元組， `minPartSize` 是5,000位元組， `maxPartSize` 為8,000位元組，上載URI的數量為5。 執行以下步驟：
+最簡單的方法是使用 `maxPartSize` 作為零件尺寸。 如果您使用此值作為零件大小，API合約可確保有足夠的上傳URI來上傳您的二進位檔。 若要這麼做，請將二進位分割成大小部分 `maxPartSize`，依序為每個零件使用一個URI。 最終零件的大小可小於或等於 `maxPartSize`. 例如，假設二進位檔案的總大小為20,000個位元組， `minPartSize` 為5,000位元組， `maxPartSize` 為8,000位元組，而且上傳URI的數量為5。 執行以下步驟：
 
-* 使用第一個上載URI上載二進位檔案的前8,000位元組。
-* 使用第二個上載URI上載二進位檔案的第二個8,000位元組。
-* 使用第三個上載URI上載二進位檔案的最後4,000位元組。 因為這是最後一部分，所以它不必大於 `minPartSize`。
-* 您不需要使用最後兩個上載URI。 你可以忽略它們。
+* 使用第一個上傳URI上傳二進位的前8,000個位元組。
+* 使用第二個上傳URI上傳第二個8,000位元組的二進位檔案。
+* 使用第三個上傳URI上傳二進位檔的最後4,000個位元組。 由於這是最後部分，因此它不必大於 `minPartSize`.
+* 您不需要使用最後兩個上傳URI。 您可以忽略它們。
 
-常見錯誤是根據API提供的上載URI數計算部件大小。 API合同不保證此方法有效，並且實際上可能導致部件大小超出範圍 `minPartSize` 和 `maxPartSize`。 這可能導致二進位上載失敗。
+常見的錯誤是根據API提供的上傳URI數量計算零件大小。 API合約無法保證此方法有效，而且實際上可能會導致零件大小超出兩者之間的範圍 `minPartSize` 和 `maxPartSize`. 這可能會導致二進位上傳失敗。
 
-同樣，最簡單和最安全的方法是簡單地使用尺寸等於 `maxPartSize`。
+同樣地，最簡單且最安全的方法是隻使用大小等於 `maxPartSize`.
 
-如果上載成功，伺服器將用 `201` 狀態代碼。
+如果上傳成功，伺服器會以回應每個要求 `201` 狀態代碼。
 
 >[!NOTE]
-有關上載算法的詳細資訊，請參見 [官方特徵文檔](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) 和 [API文檔](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) Apache Jackrabbit Oak項目。
+如需上傳演演算法的詳細資訊，請參閱 [正式功能檔案](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) 和 [API檔案](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) Apache Jackrabbit Oak專案中的。
 
-### 完成上載 {#complete-upload}
+### 完成上傳 {#complete-upload}
 
-在上載二進位檔案的所有部分後，將HTTPPOST請求提交到由啟動資料提供的完整URI。 請求正文的內容類型應為 `application/x-www-form-urlencoded` 表單資料，包含以下欄位。
+上傳二進位檔案的所有部分後，將HTTPPOST請求提交至初始化資料提供的完整URI。 請求內文的內容型別應為 `application/x-www-form-urlencoded` 表單資料，包含下列欄位。
 
-| 欄位 | 類型 | 需要或不需要 | 說明 |
+| 欄位 | 類型 | 必要與否 | 說明 |
 |---|---|---|---|
-| `fileName` | 字串 | 必要 | 資產名稱，如初始資料所提供。 |
-| `mimeType` | 字串 | 必要 | 啟動資料提供的二進位檔案的HTTP內容類型。 |
-| `uploadToken` | 字串 | 必要 | 正如啟動資料提供的那樣，為二進位檔案上載令牌。 |
-| `createVersion` | 布林值 | 選用 | 如果 `True` 並且存在具有指定名稱的資產， [!DNL Experience Manager] 建立資產的新版本。 |
-| `versionLabel` | 字串 | 選用 | 如果建立了新版本，則與資產的新版本關聯的標籤。 |
-| `versionComment` | 字串 | 選用 | 如果建立了新版本，則與該版本關聯的注釋。 |
-| `replace` | 布林值 | 選用 | 如果 `True` 並且存在指定名稱的資產， [!DNL Experience Manager] 刪除該資產，然後重新建立它。 |
-| `uploadDuration` | 數字 | 選用 | 檔案完整上載的總時間（毫秒）。 如果指定，則上載持續時間將包含在系統日誌檔案中以用於傳輸速率分析。 |
-| `fileSize` | 數字 | 選用 | 檔案的大小（以位元組為單位）。 如果指定，則檔案大小將包含在系統日誌檔案中以用於傳輸速率分析。 |
+| `fileName` | 字串 | 必要 | 資產名稱，由初始資料提供。 |
+| `mimeType` | 字串 | 必要 | 起始資料所提供的二進位檔的HTTP內容型別。 |
+| `uploadToken` | 字串 | 必要 | 上傳二進位的Token，如起始資料所提供。 |
+| `createVersion` | 布林值 | 選用 | 若 `True` 且具有指定名稱的資產存在，則 [!DNL Experience Manager] 建立資產的新版本。 |
+| `versionLabel` | 字串 | 選用 | 如果建立了新版本，則會提供與資產新版本相關聯的標籤。 |
+| `versionComment` | 字串 | 選用 | 如果建立了新版本，則會有與該版本相關聯的註解。 |
+| `replace` | 布林值 | 選用 | 若 `True` 而且具有指定名稱的資產已存在， [!DNL Experience Manager] 刪除資產，然後重新建立資產。 |
+| `uploadDuration` | 數字 | 選用 | 檔案完整上傳的總時間，以毫秒為單位。 如果指定，上傳持續時間會包含在系統的記錄檔中，以進行傳輸率分析。 |
+| `fileSize` | 數字 | 選用 | 檔案的大小（位元組）。 如果已指定，檔案大小會包含在系統的記錄檔中，以進行傳輸速率分析。 |
 
 >[!NOTE]
-如果資產存在且 `createVersion` 無 `replace` 指定，然後 [!DNL Experience Manager] 使用新的二進位檔案更新資產的當前版本。
+如果資產存在，但兩者皆非 `createVersion` 也不 `replace` 已指定，則 [!DNL Experience Manager] 以新的二進位檔案更新資產的目前版本。
 
-與啟動過程一樣，完整請求資料可能包含多個檔案的資訊。
+如同初始程式，完整的請求資料可能包含多個檔案的資訊。
 
-在為檔案調用完整的URL之前，不會完成上載二進位檔案的過程。 在上載過程完成後處理資產。 即使資產的二進位檔案已完全上載但上載過程未完成，處理也不會啟動。 如果上載成功，伺服器將以 `200` 狀態代碼。
+直到叫用檔案的完整URL後，才會完成上傳二進位檔的程式。 資產會在上傳程式完成後處理。 即使資產的二進位檔案已完全上傳，但上傳程式尚未完成，處理作業也不會開始。 如果上傳成功，伺服器會以回應 `200` 狀態代碼。
 
 ### 開放原始碼上傳庫 {#open-source-upload-library}
 
-要瞭解有關上載算法的更多資訊或構建您自己的上載指令碼和工具，Adobe提供了開源庫和工具：
+若要進一步瞭解上傳演演算法或建立您自己的上傳指令碼和工具，Adobe提供開放原始碼程式庫和工具：
 
-* [開源aem-upload庫](https://github.com/adobe/aem-upload)。
+* [開放原始碼aem-upload資料庫](https://github.com/adobe/aem-upload).
 * [開放原始碼命令列工具](https://github.com/adobe/aio-cli-plugin-aem).
 
 >[!NOTE]
-aem-upload庫和命令行工具都使用 [節點 — http傳輸庫](https://github.com/adobe/node-httptransfer/)
+aem-upload程式庫和命令列工具都會使用 [node-httptransfer程式庫](https://github.com/adobe/node-httptransfer/)
 
-### 棄用的資產上載API {#deprecated-asset-upload-api}
+### 過時的資產上傳API {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-僅支援新上載方法 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service]。 來自的API [!DNL Adobe Experience Manager] 不建議使用6.5。 以下API中不建議使用與上載或更新資產或格式副本（任何二進位上載）相關的方法：
+只有以下專案才支援新的上傳方法 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. 來自的API [!DNL Adobe Experience Manager] 6.5已過時。 下列API已棄用與上傳或更新資產或轉譯（任何二進位上傳）相關的方法：
 
-* [Experience Manager AssetsHTTP API](mac-api-assets.md)
-* `AssetManager` Java API，例如 `AssetManager.createAsset(..)`
+* [EXPERIENCE MANAGER ASSETS HTTP API](mac-api-assets.md)
+* `AssetManager` Java API，類似 `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
-* [開源aem-upload庫](https://github.com/adobe/aem-upload)。
+* [開放原始碼aem-upload資料庫](https://github.com/adobe/aem-upload).
 * [開放原始碼命令列工具](https://github.com/adobe/aio-cli-plugin-aem).
-* [Apache Jackrabbit Oak文檔，用於直接上載](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload)。
+* [直接上傳的Apache Jackrabbit Oak檔案](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 
-## 資產處理和後處理工作流 {#post-processing-workflows}
+## 資產處理和後續處理工作流程 {#post-processing-workflows}
 
-在 [!DNL Experience Manager]，資產處理基於 **[!UICONTROL 處理配置檔案]** 使用的配置 [資產微服務](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)。 處理不需要開發人員擴展。
+在 [!DNL Experience Manager]，資產處理會根據 **[!UICONTROL 處理設定檔]** 使用的設定 [資產微服務](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). 處理不需要開發人員擴充功能。
 
-對於後處理工作流配置，請使用帶有擴展的標準工作流和自定義步驟。
+對於後處理工作流程設定，請使用帶有擴充功能的標準工作流程以及自訂步驟。
 
-## 後處理工作流中工作流步驟的支援 {#post-processing-workflows-steps}
+## 後處理工作流程中工作流程步驟的支援 {#post-processing-workflows-steps}
 
-如果從以前的版本升級 [!DNL Experience Manager]，您可以使用資產微服務處理資產。 雲本地資產微服務的配置和使用更簡單。 中使用的幾個工作流步驟 [!UICONTROL DAM更新資產] 不支援以前版本中的工作流。 有關受支援類的詳細資訊，請參見 [Java API引用或Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html)。
+如果您從舊版升級 [!DNL Experience Manager]，您可以使用資產微服務來處理資產。 雲端原生資產微服務設定及使用都較為簡單。 中使用的幾個工作流程步驟 [!UICONTROL DAM更新資產] 不支援舊版的工作流程。 如需支援類別的詳細資訊，請參閱 [Java API參考或Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
-以下技術工作流模型將被資產微服務替換，或者沒有支援：
+以下技術工作流程模型已由資產微服務取代，或無法提供支援：
 
 * `com.day.cq.dam.cameraraw.process.CameraRawHandlingProcess`
 * `com.day.cq.dam.core.process.CommandLineProcess`

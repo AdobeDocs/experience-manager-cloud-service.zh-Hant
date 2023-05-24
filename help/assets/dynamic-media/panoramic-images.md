@@ -1,6 +1,6 @@
 ---
 title: 全景影像
-description: 學習如何處理Dynamic Media的全景影像。
+description: 瞭解如何在Dynamic Media中使用全景影像。
 contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
@@ -14,25 +14,25 @@ ht-degree: 2%
 
 # 全景影像{#panoramic-images}
 
-本節介紹如何與全景影像查看器一起渲染球形全景影像，以便在房間、屬性、位置或景觀中享受360°的沈浸式觀看體驗。
+本節說明如何使用「全景影像」檢視器來轉譯球面全景影像，以獲得房間、屬性、位置或橫向的360度沈浸式檢視體驗。
 
-另請參閱 [管理查看器預設](/help/assets/dynamic-media/managing-viewer-presets.md)。
+另請參閱 [管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
-## 上載用於全景影像查看器的資源 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## 上傳資產以與全景影像檢視器搭配使用 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
-要使上載的資產符合球形全景影像的要求，您要在全景影像查看器中使用該資產，該資產必須具有以下一項或兩項：
+若要讓上傳的資產符合您要與全景影像檢視器一起使用的球面全景影像資格，資產必須具備下列其中一項或兩項條件：
 
-* 縱橫比為2。
+* 外觀比例為2。
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* 用關鍵字標籤 `equirectangular`或 `spherical`和 `panorama`或 `spherical` 和 `panoramic`。 請參閱 [使用標籤](/help/sites-cloud/authoring/features/tags.md)。
+* 以關鍵字標籤 `equirectangular`，或 `spherical`和 `panorama`，或 `spherical` 和 `panoramic`. 另請參閱 [使用標籤](/help/sites-cloud/authoring/features/tags.md).
 
-縱橫比和關鍵字條件都適用於資產詳細資訊頁面和 `Panoramic Media` WCM元件。
+外觀比例和關鍵字條件都適用於資產詳細資訊頁面和 `Panoramic Media` wcm元件。
 
-要上載用於全景影像查看器的資產，請參閱 [上載資產](/help/assets/manage-digital-assets.md#uploading-assets)。
+若要上傳資產以與全景影像檢視器搭配使用，請參閱 [上傳資產](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -79,8 +79,8 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 ## 預覽全景影像 {#previewing-panoramic-images}
 
-請參閱 [預覽資產](/help/assets/dynamic-media/previewing-assets.md)。
+另請參閱 [預覽資產](/help/assets/dynamic-media/previewing-assets.md).
 
 ## 發佈全景影像 {#publishing-panoramic-images}
 
-請參閱 [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+另請參閱 [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

@@ -23,30 +23,30 @@ ht-degree: 69%
 
 ## 發行日期 {#release-date}
 
-發佈日期 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] 本期(2021.10.0)是2021年11月4日。
-以下版本(2021.11.0)是2021年12月2日。
+的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前版本(2021.10.0)為2021年11月4日。
+以下版本(2021.11.0)將於2021年12月2日發行。
 
 ## 發行影片 {#release-video}
 
-看看 [2021年10月發佈概述](https://video.tv.adobe.com/v/338253) 視頻，瞭解添加的功能的摘要。
+請檢視 [2021年10月版本總覽](https://video.tv.adobe.com/v/338253) 影片以瞭解新增功能的摘要。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### 中的新功能 [!DNL Sites] {#sites-features}
 
-* 內容片段模型在發佈後將自動設定為只讀狀態，以避免在重新發佈編輯的模型後無意中中斷即時API查詢。 嘗試編輯已發佈模型時，系統會提示用戶出現警告。 接受警告後可進行編輯。
+* 內容片段模型現在會在發佈後自動設定為唯讀狀態，以避免重新發佈已編輯的模型後意外中斷即時API查詢。 嘗試編輯已發佈的模型時，系統會提示使用者警告。 接受警告後即可進行編輯。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* [!DNL Experience Manager] 現在支援使用內置連接器從支援的音頻和視頻資產自動生成文本記錄 [!DNL Azure Media Services]。 的 [支援的檔案類型](/help/assets/file-format-support.md#audio-video-transcription-formats) 文本以WebVTT格式儲存。 WebVTT字幕用於更有效的搜索、字幕或翻譯。 此外，該功能還改進了資產的可訪問性、可發現性和本地化。
+* [!DNL Experience Manager] 現在支援使用內建聯結器從支援的音訊和視訊資產自動產生文字記錄，用於 [!DNL Azure Media Services]. 此 [支援的檔案型別](/help/assets/file-format-support.md#audio-video-transcription-formats) 會自動轉譯，且文字會以WebVTT格式儲存。 WebVTT註解可用於更有效的搜尋、註解或翻譯。 此外，功能可改善資產的協助工具、可發現性和本地化。
 
-### 中的新功能 [!DNL Assets] 預釋放通道 {#assets-prerelease-features}
+### 中的新功能 [!DNL Assets] 發行前通道 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Image Smart Crop and Swatch現在由最新的Sensei服務提供支援，該服務可生成改良的作物和色板。 此外，已啟動增強，以生成不同的作物內容，對於相同的長寬比，但跨不同的解析度。 此外，如果「影像配置檔案」中的寬度和高度沒有變化，則在重新處理時將保留任何手動編輯。
+* [!DNL Dynamic Media] 「影像智慧型裁切和色票」現在由最新的Sensei服務提供支援，可產生改良的裁切和色票。 此外，已啟動增強功能，針對相同縱橫比但跨不同解析度產生不同的裁切內容。 此外，如果「影像設定檔」中的寬度和高度沒有變更，則在重新處理時將保留任何手動編輯。
 
-* 智慧標籤將自動應用於使用資產微服務（而不是Smart Content Services）的資產。 更新基礎模型以改進標籤結果並減少偏差。 <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
+* 智慧標籤會自動套用至使用資產微服務的資產，而非智慧內容服務。 基礎模型已更新，以改善標籤結果並減少偏差。 <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
 <!-- Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
@@ -77,19 +77,19 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### 新增功能 {#what-is-new-cif}
 
-* CIF附加模組支援最新的Commerce v2.4.3和新的GraphQLAPI和架構
+* CIF附加元件支援最新的Commerce v2.4.3，其中包含新的GraphQL API和結構描述
 
-* 作者可以使用富格文本編輯器(RTE)在文本欄位中添加到產品和目錄頁面的連結。 CIF表徵圖已添加到RTE工具欄，該工具欄將開啟選擇者以快速搜索和選擇產品或類別而不離開上下文。
+* 作者可使用RTF編輯器(RTE)，在文字欄位中新增產品與目錄頁面的連結。 RTE工具列已新增CIF圖示，可開啟選擇器，以快速搜尋和選取產品或類別，而不需離開內容。
 
-* 現有的彈出式購物車和結帳已替換為專用的購AEM物車和結帳頁。 這些頁面上的元件是使用Adobe Commerce的可擴展Peregrine元件構建的
+* 現有的彈出式購物車和結帳頁面已替換為專用的AEM購物車和結帳頁面。 這些頁面上的元件是使用Adobe Commerce的可擴充Peregrine元件所建置
 
-* 商家可以使用Commerce後端在導航中隱藏某些產品目錄類別。 CIF導航核心元件尊重商業後端配置「包括在菜單中」以顯示/隱藏導航中的類別
+* 商家可以使用Commerce後端在導覽中隱藏某些產品目錄類別。 CIF導覽核心元件遵循商務後端設定「包含在功能表中」以在導覽中顯示/隱藏類別
 
-* 如AEM果找不到類別或產品頁，Storefront Venia將返回HTTP 404錯誤
+* 如果找不到類別或產品頁面，AEM Storefront Venia會傳回HTTP 404錯誤
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述了as a Cloud Service2021.10.0中Cloud Manager的發行說明AEM。
+本節概述AEMas a Cloud Service2021.10.0中Cloud Manager的發行說明
 
 ### 發行日期 {#release-date-cm-nov}
 
@@ -175,12 +175,12 @@ AEM as a Cloud Service 2021.10.0 中的 Cloud Manager 發行日期是 2021 年 1
 
 ### 發行日期 {#release-date-bpa-latest}
 
-最佳做法分析器2.1.20版的發佈日期為2021年10月5日。
+Best Practices Analyzer v2.1.20的發行日期為2021年10月5日。
 
 ### 新增功能 {#what-is-new}
 
-* 能夠檢測並報告節點名稱長度。
+* 能夠偵測並報告節點名稱長度。
 
-* 能夠檢測並報告總索引大小。
+* 能夠偵測及報告索引總大小。
 
-* 能夠檢測並報告丟失原始格式副本的資產。
+* 能夠偵測並報告缺少原始轉譯的資產。

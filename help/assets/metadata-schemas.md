@@ -1,6 +1,6 @@
 ---
-title: 元資料架構定義元資料屬性頁的佈局
-description: 元資料架構定義屬性頁的佈局和為資產顯示的元資料屬性。 瞭解如何建立自定義元資料架構、編輯元資料架構以及如何將元資料架構應用於資產。
+title: 中繼資料結構描述會定義中繼資料屬性頁面的版面
+description: 中繼資料結構描述會定義屬性頁面的版面，以及為資產顯示的中繼資料屬性。 瞭解如何建立自訂中繼資料結構、編輯中繼資料結構，以及如何將中繼資料結構套用至資產。
 contentOwner: AG
 feature: Metadata
 role: User,Admin
@@ -19,246 +19,246 @@ ht-degree: 9%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=en) |
 | AEM as a Cloud Service  | 本文 |
 
-組織提出了一種元資料模型，可增強資產發現、使用、互操作性等。 正確的元資料應用程式是維護元資料驅動的工作流和進程的神聖不可侵犯的。 要遵守組織範圍的元資料策略和標準，可以使用元資料架構來幫助DAM用戶協調。 [!DNL Adobe Experience Manager] 允許建立、維護和應用元資料架構的簡單而靈活的方法。
+組織會提出中繼資料模型，藉以加強資產探索、使用、互用性等。 正確的中繼資料應用程式對於維護中繼資料導向的工作流程與程式至關重要。 若要遵循組織範圍的中繼資料策略和標準，您可以使用中繼資料結構來協助DAM使用者調整。 [!DNL Adobe Experience Manager] 可讓您以簡單且靈活的方法建立、維護和套用中繼資料結構。
 
-在 [!DNL Adobe Experience Manager Assets]，架構包含要填寫的特定資訊的特定欄位。 它還包含佈局資訊，以用戶友好的方式顯示元資料欄位。 元資料屬性包括標題、說明、MIME類型、標籤等。 您可以使用 [!UICONTROL 元資料架構Forms] 編輯器以修改現有架構或添加自定義元資料架構。
+在 [!DNL Adobe Experience Manager Assets]，結構描述包含要填寫的特定資訊的特定欄位。 它也包含版面資訊，以方便使用者使用的方式顯示中繼資料欄位。 中繼資料屬性包括標題、說明、MIME型別、標籤等。 您可以使用 [!UICONTROL 中繼資料結構Forms] 編輯器以修改現有結構或新增自訂中繼資料結構。
 
-要查看和編輯資產的屬性頁，請執行以下步驟：
+若要檢視和編輯資產的屬性頁面，請遵循下列步驟：
 
-1. 按一下 **[!UICONTROL 查看屬性]** 選項。 或者，選擇一個資產，然後按一下 **[!UICONTROL 屬性]** ![查看屬性](assets/do-not-localize/info-circle-icon.png) 的子菜單。
+1. 按一下 **[!UICONTROL 檢視屬性]** 卡片檢視中資產圖磚上的快速動作選項。 或者，選取資產，然後按一下 **[!UICONTROL 屬性]** ![檢視屬性](assets/do-not-localize/info-circle-icon.png) （從工具列）。
 
-1. 可以編輯可用頁籤下的各種可編輯元資料屬性。 但是，您不能修改資產 [!UICONTROL 類型] 的 [!UICONTROL 基本] 頁籤。
+1. 您可以在可用的標籤下編輯各種可編輯的中繼資料屬性。 但是，您無法修改資產 [!UICONTROL 型別] 在 [!UICONTROL 基本] 屬性頁面的索引標籤。
 
-   ![資產屬性的基本標籤，其中不能更改資產類型](assets/asset-properties-basic-tab.png)
+   ![資產屬性的基本索引標籤，無法變更資產型別](assets/asset-properties-basic-tab.png)
 
-   *圖：資產的「基本」頁籤 [!UICONTROL 屬性]。*
+   *圖：資產上的基本索引標籤 [!UICONTROL 屬性].*
 
-   要修改資產的MIME類型，請使用自定義元資料架構表單或修改現有表單。 請參閱 [編輯元資料架構Forms](#edit-metadata-schema-forms) 的子菜單。 如果修改MIME類型的元資料架構，則會修改資產和所有子類型的屬性頁佈局。 例如，修改jpeg架構 `default/image` 僅修改MIME類型資產的元資料佈局（資產屬性） `image/jpeg`。 但是，如果編輯預設架構，則所做的更改將修改所有類型資產的元資料佈局。
+   若要修改資產的MIME型別，請使用自訂中繼資料結構表單或修改現有表單。 另請參閱 [編輯中繼資料結構Forms](#edit-metadata-schema-forms) 以取得詳細資訊。 如果您修改MIME型別的中繼資料結構，則會修改資產和所有子型別的屬性頁面配置。 例如，修改 `default/image` 僅修改MIME型別資產的中繼資料配置（資產屬性） `image/jpeg`. 不過，如果您編輯預設架構，您所做的變更會修改所有資產型別的中繼資料配置。
 
-## 元資料架構表單 {#default-metadata-schema-forms}
+## 中繼資料結構表單 {#default-metadata-schema-forms}
 
-要查看表單或模板清單，請在 [!DNL Experience Manager] 介面導航 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 元資料架構]**。
+若要檢視表單或範本的清單，請 [!DNL Experience Manager] 介面導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料結構]**.
 
-[!DNL Experience Manager] 提供了以下元資料架構表單模板。
+[!DNL Experience Manager] 提供下列中繼資料結構表單範本。
 
 | 範本 |  | 說明 |
 |---|---|---|
-| [!UICONTROL 預設] |  | 資產的基元資料架構窗體。 |
-|  | 以下子窗體繼承 [!UICONTROL 預設] 表格： |  |
-|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media視頻的架構窗體。 |
-|  | <ul><li>[!UICONTROL 影像]</li></ul> | 具有MIME類型的映像的架構窗體，如 `image/jpeg` 和 `image/png`。 <br> 的 [!UICONTROL 影像] 表單具有以下子表單模板： <ul><li> [!UICONTROL jpeg]:子類型資產的架構窗體 [!UICONTROL jpeg]。</li> <li>[!UICONTROL 原告]:具有子類型TIFF的資產的架構窗體。</li></ul> |
-|  | <ul><li>[!UICONTROL 應用]</li></ul> | 具有MIME類型的資產的架構表單，如 `application/pdf` 和 `application/zip`。 <br>[!UICONTROL pdf]:具有子類型PDF的資產的架構窗體。 |
-|  | <ul><li>[!UICONTROL 視訊]</li></ul> | MIME類型的視頻資產的架構表單，如 `video/avi` 和 `video/mp4`。 |
-| [!UICONTROL 集合] |  | 集合的架構窗體。 |
-| [!UICONTROL 內容片段] |  | 內容片段的架構窗體。 |
-| [!UICONTROL 表] |  | 此架構窗體與 [!DNL Adobe Experience Manager Forms]。 |
-| [!UICONTROL ugc_contentfragment] |  | 用於用戶生成的內容片段和資產的模式表單，這些內容和資產整合到從社交媒體Experience Manager中。 |
+| [!UICONTROL 預設] |  | 資產的基本中繼資料結構表單。 |
+|  | 下列子表單會繼承 [!UICONTROL 預設] 表單： |  |
+|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media影片的結構描述表單。 |
+|  | <ul><li>[!UICONTROL 影像]</li></ul> | 具有MIME型別的影像的結構描述表單，例如 `image/jpeg` 和 `image/png`. <br> 此 [!UICONTROL 影像] 表單具有下列子表單範本： <ul><li> [!UICONTROL jpeg]：具有子型別的資產的結構描述表單 [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]：具有子型別TIFF的資產的結構描述表單。</li></ul> |
+|  | <ul><li>[!UICONTROL 應用計畫]</li></ul> | 具有MIME型別的資產的結構描述表單，例如 `application/pdf` 和 `application/zip`. <br>[!UICONTROL pdf]：具有子型別PDF的資產結構表單。 |
+|  | <ul><li>[!UICONTROL 視訊]</li></ul> | 具有MIME型別的視訊資產的結構描述表單，例如 `video/avi` 和 `video/mp4`. |
+| [!UICONTROL 集合] |  | 集合的結構描述表單。 |
+| [!UICONTROL contentfragment] |  | 內容片段的結構描述表單。 |
+| [!UICONTROL 表單] |  | 此結構表單與 [!DNL Adobe Experience Manager Forms]. |
+| [!UICONTROL ugc_contentfragment] |  | 使用者產生的內容片段和資產的結構描述表單，可從社群媒體整合至Experience Manager。 |
 
 >[!NOTE]
 >
->要查看架構表單的子窗體，請按一下架構表單名稱。
+>若要檢視方案表單的子表單，請按一下方案表單名稱。
 
-## 添加元資料架構窗體 {#add-a-metadata-schema-form}
+## 新增中繼資料結構表單 {#add-a-metadata-schema-form}
 
-要添加元資料架構表單，請執行以下步驟：
+若要新增中繼資料結構表單，請遵循下列步驟：
 
-1. 要將自定義模板添加到清單，請按一下 **[!UICONTROL 建立]** 的子菜單。
+1. 若要新增自訂範本至清單，請按一下 **[!UICONTROL 建立]** （從工具列）。
 
    >[!NOTE]
    >
-   >鎖定符號隨未編輯的模板一起顯示。 如果自定義模板，則不會鎖定 ![鎖定](assets/do-not-localize/lock_closed_icon.svg)。
+   >鎖定符號會與未編輯的範本一起顯示。 如果您自訂範本，範本並不會被鎖定 ![鎖定已關閉](assets/do-not-localize/lock_closed_icon.svg).
 
-1. 在對話框中，提供架構表單的標題，然後按一下 **[!UICONTROL 建立]** 的子菜單。
+1. 在對話方塊中，提供結構表單的標題並按一下 **[!UICONTROL 建立]** 以完成表單建立程式。
 
-## 編輯元資料架構表單 {#edit-metadata-schema-forms}
+## 編輯中繼資料結構表單 {#edit-metadata-schema-forms}
 
-可以編輯新添加的或現有的元資料架構表單。 元資料架構表單包含頁籤和制表符內的表單項。 您可以將這些表單項映射到/配置到CRX儲存庫的元資料節點中的欄位。 可以將頁籤或表單項添加到元資料架構表單中。 從父級派生的制表符和表單項處於鎖定狀態。 不能在子級更改它們。
+您可以編輯新新增或現有的中繼資料結構表單。 中繼資料結構表單包含索引標籤和索引標籤內的表單專案。 您可以將這些表單專案對應/設定到CRX存放庫中中繼資料節點內的欄位。 您可以將索引標籤或表單專案新增到中繼資料結構表單。 從父項衍生的標籤和表單專案處於鎖定狀態。 您無法在子層級變更它們。
 
-1. 在 [!UICONTROL 元資料架構Forms] 的子菜單。 **[!UICONTROL 編輯]** 的子菜單。
+1. 於 [!UICONTROL 中繼資料結構Forms] 頁面，選取表單並按一下 **[!UICONTROL 編輯]** （在工具列中）。
 
-1. 在 **[!UICONTROL 元資料架構窗體編輯器]** 的子菜單。 從 **[!UICONTROL 生成窗體]** 的子菜單。
+1. 於 **[!UICONTROL 中繼資料結構表單編輯器]** 頁面，自訂中繼資料表單。 從下列位置拖曳所需的元件： **[!UICONTROL 建置表單]** 定位至其中一個定位點。
 
-   ![「元資料架構編輯器：自定義資產屬性」頁](assets/metadata-schema-editor.png)
+   ![用於自訂資產屬性頁面的中繼資料結構編輯器](assets/metadata-schema-editor.png)
 
-   *圖：A [!UICONTROL 元資料架構窗體編輯器] 的子菜單。*
+   *圖：A [!UICONTROL 中繼資料結構表單編輯器] 具有可用索引標籤的頁面。*
 
-1. 要配置元件，請選擇它並在 **[!UICONTROL 設定]** 頁籤。
+1. 若要設定元件，請選取該元件，並在下列位置修改其屬性： **[!UICONTROL 設定]** 標籤。
 
-### 元件 [!UICONTROL 生成窗體] 頁籤 {#components-within-the-build-form-tab}
+### 內的元件 [!UICONTROL 建置表單] 標籤 {#components-within-the-build-form-tab}
 
-的 **[!UICONTROL 生成窗體]** 頁籤列出在架構窗體中使用的窗體項。 的 **[!UICONTROL 設定]** 頁籤提供您在 **[!UICONTROL 生成窗體]** 頁籤。 下表列出了 **[!UICONTROL 生成窗體]** 頁籤：
+此 **[!UICONTROL 建置表單]** 索引標籤會列出您在結構描述表單中使用的表單專案。 此 **[!UICONTROL 設定]** 索引標籤會提供您在「 」中選取的每個專案的屬性。 **[!UICONTROL 建置表單]** 標籤。 下表列出 **[!UICONTROL 建置表單]** 標籤：
 
 | 元件名稱 | 說明 |
 | -------------------------------- | ----------------------------------------------------------------------------------- |
-| [!UICONTROL 區段標題] | 為公用元件清單添加節標題。 |
-| [!UICONTROL 單行文字] | 添加單行文本屬性。 它儲存為字串。 |
-| [!UICONTROL 多值文字] | 添加多值文本屬性。 它儲存為字串陣列。 |
-| [!UICONTROL 數字] | 添加數字元件。 |
-| [!UICONTROL 日期] | 添加日期元件。 |
-| [!UICONTROL 下拉式] | 添加下拉清單。 |
+| [!UICONTROL 區段標題] | 為常見元件清單新增區段標題。 |
+| [!UICONTROL 單行文字] | 新增單行文字屬性。 它會儲存為字串。 |
+| [!UICONTROL 多值文字] | 新增多值文字屬性。 它會儲存為字串陣列。 |
+| [!UICONTROL 數字] | 新增數字元件。 |
+| [!UICONTROL 日期] | 新增日期元件。 |
+| [!UICONTROL 下拉式] | 新增下拉式清單。 |
 | [!UICONTROL 標準標記] | 新增標記. |
-| [!UICONTROL 智慧標記] | 通過自動添加元資料標籤添加以增強搜索功能。 |
-| [!UICONTROL 隱藏欄位] | 添加隱藏欄位。 保存資產時，它將作為POST參數發送。 |
-| [!UICONTROL 資產引用者] | 添加此元件以查看資產引用的資產清單。 |
-| [!UICONTROL 資產引用] | 添加以顯示引用資產的資產清單。 |
-| [!UICONTROL 產品參考] | 添加以顯示與資產連結的產品清單。 |
-| [!UICONTROL 關聯式中繼資料] | 添加以控制資產屬性頁中其他元資料頁籤的顯示。 |
+| [!UICONTROL 智慧標記] | 新增以透過自動新增中繼資料標籤來增強搜尋功能。 |
+| [!UICONTROL 隱藏欄位] | 新增隱藏欄位。 儲存資產時，這會傳送為POST引數。 |
+| [!UICONTROL 資產引用者] | 新增此元件以檢視資產所參考的資產清單。 |
+| [!UICONTROL 資產引用] | 新增以顯示參照資產的資產清單。 |
+| [!UICONTROL 產品參考] | 新增以顯示與資產連結的產品清單。 |
+| [!UICONTROL 關聯式中繼資料] | 新增以控制其他中繼資料索引標籤在資產屬性頁面的顯示。 |
 
 <!-- TBD: Ratings are not available in Experience Manager as a Cloud Service. Removed via cqdoc-18089 ticket. 
 | [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
 -->
 
-#### 編輯元資料元件 {#edit-the-metadata-component}
+#### 編輯中繼資料元件 {#edit-the-metadata-component}
 
-要編輯表單上元資料元件的屬性，請按一下該元件以編輯表單中以下屬性的全部或子集 **[!UICONTROL 設定]** 頁籤。 建議只將一個欄位映射到元資料架構中的給定屬性。 否則，系統將選取映射到該屬性的最新添加欄位。
+若要編輯表單上中繼資料元件的屬性，請按一下該元件，編輯下列屬性的全部或子集： **[!UICONTROL 設定]** 標籤。 建議只將一個欄位對應到中繼資料結構描述中的指定屬性。 否則，系統會挑選對應至屬性的最新新增欄位。
 
-**欄位標籤**:顯示在資產屬性頁上的元資料屬性的名稱。
+**欄位標籤**：在資產的屬性頁面上顯示的中繼資料屬性名稱。
 
-**映射到屬性**:此屬性指定保存在CRX儲存庫中的資產節點的相對路徑或名稱。 開始於 `./` 以指示路徑位於資產的節點下。
+**對應至屬性**：此屬性會指定儲存於CRX存放庫中的資產節點相對路徑或名稱。 開始於 `./` 以指出路徑在資產的節點下。
 
-以下是屬性有效值的示例：
+以下是屬性的有效值範例：
 
 * `./jcr:content/metadata/dc:title`:將值儲存在資產的中繼資料節點，做為屬性 `dc:title`。
 
-* `./jcr:created`:儲存資產的建立日期和時間。 它是受保護的屬性。 如果配置這些屬性，Adobe建議將其標籤為「禁用編輯」。 否則，當您儲存資產的屬性時，會出現「資產無法修改」錯誤。
+* `./jcr:created`：儲存資產的建立日期和時間。 這是受保護的屬性。 如果您設定這些屬性，Adobe建議您將其標示為「停用編輯」。 否則，當您儲存資產的屬性時，會出現「資產無法修改」錯誤。
 
-為了確保元件在元資料架構表單中正確顯示，屬性路徑不應包含任何空格。
+為確保元件在中繼資料結構表單中正確顯示，屬性路徑不應包含任何空格。
 
-* **佔位符**:使用此屬性可指定與元資料屬性相關的佔位符文本。
-* **必需**:使用此屬性可在屬性頁上將元資料屬性標籤為必需屬性。
-* **禁用編輯**:使用此屬性可禁止對屬性頁面上的屬性進行任何編輯。
-* **以只讀方式顯示空欄位**:將此屬性標籤為在屬性頁上顯示元資料屬性，即使它沒有值。 預設情況下，當元資料屬性沒有值時，該屬性不會列在屬性頁上。
-* **按順序顯示清單**:使用此屬性可顯示有序的選項清單。
-* **選擇**:使用此屬性可指定清單中的選項。
-* **說明** :使用此屬性可為元資料元件添加簡短說明。
-* **類**:屬性與關聯的對象類。
-* **刪除**:按一下 [!UICONTROL 刪除] 從架構窗體中刪除元件。
+* **預留位置**：使用此屬性可指定與中繼資料屬性相關的預留位置文字。
+* **必填**：使用此屬性可將中繼資料屬性標示為屬性頁面上的必要屬性。
+* **停用編輯**：使用此屬性可禁止對屬性頁面上的屬性進行任何編輯。
+* **以唯讀方式顯示空白欄位**：標示此屬性以在屬性頁面上顯示中繼資料屬性，即使該屬性沒有值亦然。 根據預設，當中繼資料屬性沒有值時，它不會列在屬性頁面上。
+* **顯示排序清單**：此屬性用於顯示排序的選擇清單。
+* **選擇**：使用此屬性可指定清單中的選項。
+* **說明** ：使用此屬性為中繼資料元件新增簡短說明。
+* **類別**：與屬性相關聯的物件類別。
+* **刪除**：按一下 [!UICONTROL 刪除] 以從結構表單中刪除元件。
 
 >[!NOTE]
 >
->的 [!UICONTROL 隱藏欄位] 元件不包括這些屬性。 而是包括屬性，如屬性名稱、值、欄位標籤和說明。 每次保存資產時，「隱藏欄位」元件的值都作為POST參數發送。 它不會保存為資產的元資料。
+>此 [!UICONTROL 隱藏欄位] 元件不包含這些屬性。 而是包含屬性（例如「名稱」、「值」、「欄位標籤」和「說明」）。 每當儲存資產時，「隱藏欄位」元件的值都會以POST引數的形式傳送。 不會儲存為資產的中繼資料。
 
 如果您選取「必 **[!UICONTROL 要]** 」選項，可以搜尋遺失必要中繼資料的資產。從「篩 **[!UICONTROL 選器]** 」面板中，展開「中繼資料 **[!UICONTROL 驗證謂語]** 」並選取「 **[!UICONTROL 無效]** 」選項。搜尋結果會顯示遺失您透過結構表單設定之必要中繼資料的資產。
 
-如果將上下文元資料元件添加到任何架構表單的任何頁籤，則該元件將作為清單出現在應用特定架構的資產的屬性頁中。 該清單包括除您應用上下文元資料元件的頁籤之外的所有其它頁籤。 當前，此功能提供了基本功能，用於根據上下文控制元資料的顯示。
+如果您將「內容中繼資料」元件新增至任何結構描述表單的任何索引標籤中，該元件會在套用特定結構描述的資產屬性頁面中顯示為清單。 清單包含所有其他標籤，除了您套用內容中繼資料元件的標籤以外。 目前，此功能提供基本功能，可根據內容控制中繼資料的顯示。
 
-要在屬性頁中顯示除應用上下文元資料元件的頁籤之外的任何頁籤，請從清單中選擇該頁籤。 該頁籤將添加到屬性頁。
+除了套用內容中繼資料元件的索引標籤之外，若要在屬性頁面中顯示任何索引標籤，請從清單中選取索引標籤。 標籤會新增至屬性頁面。
 
-### 在JSON檔案中指定屬性 {#specify-properties-in-json-file}
+### 指定JSON檔案中的屬性 {#specify-properties-in-json-file}
 
 您不必在「設定」標籤中指定選項的屬 **[!UICONTROL 性]** ，而是可以透過指定對應的索引鍵值配對，來定義JSON檔案中的選項。在「 **[!UICONTROL JSON路徑」欄位中指定JSON檔案的]** 路徑。
 
-#### 在架構表單中添加或刪除頁籤 {#add-delete-a-tab-in-the-schema-form}
+#### 在結構表單中新增或刪除索引標籤 {#add-delete-a-tab-in-the-schema-form}
 
-架構編輯器可讓您新增或刪除標籤。預設架構窗體包括 **[!UICONTROL 基本]**。 **[!UICONTROL 高級]** 。 **[!UICONTROL IPTC]**, **[!UICONTROL IPTC擴展]** 頁籤。
+架構編輯器可讓您新增或刪除標籤。預設結構表單包括 **[!UICONTROL 基本]**， **[!UICONTROL 進階]** ， **[!UICONTROL IPTC]**、和 **[!UICONTROL IPTC延伸模組]** 索引標籤。
 
-![元資料架構窗體中的預設頁籤](assets/metadata-schema-form-tabs.png)
+![中繼資料結構表單中的預設標籤](assets/metadata-schema-form-tabs.png)
 
-按一下 `+` 在架構窗體上添加頁籤。 預設情況下，新頁籤具有 `Unnamed-1`。 可以從 **[!UICONTROL 設定]** 頁籤。 按一下 `X` 按鈕
+按一下 `+` 在結構表單上新增索引標籤。 依預設，新標籤具有名稱 `Unnamed-1`. 您可以修改名稱，從 **[!UICONTROL 設定]** 標籤。 按一下 `X` 刪除索引標籤。
 
-![使用元資料架構編輯器添加或刪除頁籤](assets/metadata-schema-form-new-tab.png)
+![使用中繼資料結構編輯器新增或刪除索引標籤](assets/metadata-schema-form-new-tab.png)
 
-## 刪除元資料架構表單 {#deleting-metadata-schema-forms}
+## 刪除中繼資料結構表單 {#deleting-metadata-schema-forms}
 
-Experience Manager允許您僅刪除自定義架構表單。 它不允許您刪除預設架構表單/模板。 但是，您可以刪除這些表單中的任何自定義更改。
+Experience Manager僅可讓您刪除自訂結構表單。 它不允許您刪除預設結構表單/範本。 不過，您可以刪除這些表單中的任何自訂變更。
 
-要刪除表單，請選擇一個表單，然後按一下刪除表徵圖。
-
->[!NOTE]
->
->刪除對預設表單的自定義更改後，在元資料架構介面上，鎖定表徵圖會重新出現在預設表單之前，以指示表單已恢復到其預設狀態。
+若要刪除表單，請選取表單並按一下刪除圖示。
 
 >[!NOTE]
 >
->* 刪除對預設表單的自定義更改後，鎖 ![鎖定](assets/do-not-localize/lock_closed_icon.svg) 重新出現在窗體之前。 它表示表單已恢復為預設狀態。
->* 無法刪除中的預設元資料架構表單 [!DNL Assets]。
+>刪除預設表單的自訂變更後，「中繼資料結構」介面上會重新顯示鎖定圖示，在此之前表示表單已恢復為預設狀態。
+
+>[!NOTE]
+>
+>* 刪除預設表單的自訂變更後，鎖定 ![鎖定已關閉](assets/do-not-localize/lock_closed_icon.svg) 會在表單前重新出現。 它表示表單將恢復為預設狀態。
+>* 您無法刪除中的預設中繼資料結構表單 [!DNL Assets].
 
 
-## MIME類型的架構表單 {#schema-forms-for-mime-types}
+## MIME型別的結構表單 {#schema-forms-for-mime-types}
 
-[!DNL Experience Manager] 為各種MIME類型提供了預設表單。 但是，您可以為各種MIME類型的資產添加自定義表單。
+[!DNL Experience Manager] 為各種現成的MIME型別提供預設表單。 不過，您可以為各種MIME型別的資產新增自訂表單。
 
-### 為MIME類型添加新表單 {#adding-new-forms-for-mime-types}
+### 為MIME型別新增表單 {#adding-new-forms-for-mime-types}
 
-在相應的窗體類型下建立窗體。 例如，要為 `image/png` 子類型，在「image」窗體下建立窗體。 方案表單的標題是子類型名稱。在本例中，標題是 `png`。
+在適當的表單型別下建立表單。 例如，若要為新增範本 `image/png` 子型別，在「影像」表單下建立表單。 方案表單的標題是子類型名稱。在此案例中，標題為 `png`.
 
-#### 將現有架構模板用於各種MIME類型 {#use-an-existing-schema-template-for-various-mime-types}
+#### 針對各種MIME型別使用現有結構描述範本 {#use-an-existing-schema-template-for-various-mime-types}
 
-您可以將現有模板用於其他MIME類型。 例如，使用 `image/jpeg` MIME類型資產的窗體 `image/png`。
+您可以將現有範本用於不同的MIME型別。 例如，使用 `image/jpeg` MIME型別資產的表單 `image/png`.
 
-在這種情況下，在 `/etc/dam/metadataeditor/mimetypemappings` 的下界。 指定節點的名稱並定義以下屬性：
+在此情況下，請在以下位置建立節點： `/etc/dam/metadataeditor/mimetypemappings` 在CRX存放庫中。 指定節點名稱並定義下列屬性：
 
 | 名稱 | 說明 | 類型 | 值 |
 |------|-------------|------|-------|
-| `exposedmimetype` | 要映射的現有窗體的名稱 | `String` | `image/jpeg` |
-| `mimetypes` | 使用中定義的表單的MIME類型清單 `exposedmimetype` 屬性 | `String` | `image/png` |
+| `exposedmimetype` | 要對應的現有表單名稱 | `String` | `image/jpeg` |
+| `mimetypes` | 使用中定義之表單的MIME型別清單 `exposedmimetype` 屬性 | `String` | `image/png` |
 
-[!DNL Assets] 映射以下MIME類型和架構表單：
+[!DNL Assets] 對應下列MIME型別和結構表單：
 
-| 架構窗體 | MIME類型 |
+| 結構表單 | MIME型別 |
 |---|---|
 | image/jpeg | image/pjpeg |
-| image/tiff | 影像/x-tiff |
+| image/tiff | image/x-tiff |
 | application/pdf | application/postscript |
-| 應用程式/x-ImageSet | Multipart/Related; type=application/x-ImageSet |
-| 應用程式/x-SpinSet | Multipart/Related; type=application/x-SpinSet |
+| application/x-ImageSet | Multipart/Related; type=application/x-ImageSet |
+| application/x-SpinSet | Multipart/Related; type=application/x-SpinSet |
 | application/x-MixedMediaSet | Multipart/Related; type=application/x-MixedMediaSet |
-| video/quicktime | 視頻/x快速時間 |
-| 視頻/mpeg4 | video/mp4 |
-| 視頻/avi | 視頻/avi、視頻/msvideo、視頻/xmsvideo |
-| 視頻/wmv | video/x-ms-wmv |
-| 視頻/flv | video/x-flv |
+| video/quicktime | video/x-quicktime |
+| video/mpeg4 | video/mp4 |
+| video/avi | video/avi， video/msvideo， video/x-msvideo |
+| video/wmv | video/x-ms-wmv |
+| video/flv | video/x-flv |
 
-## 授予對元資料架構的訪問權 {#grant-access-to-metadata-schemas}
+## 授予對中繼資料結構的存取權 {#grant-access-to-metadata-schemas}
 
-元資料架構功能僅供管理員使用。 但是，管理員可以通過修改某些權限來提供對非管理員的訪問權限。 提供非管理員用戶對 `/conf` 的子菜單。
+「中繼資料結構」功能僅供管理員使用。 不過，管理員可以修改部分許可權，與非管理員提供存取權。 為非管理員使用者提供建立、修改和刪除許可權。 `/conf` 資料夾。
 
-## 應用特定於資料夾的元資料 {#applying-folder-specific-metadata}
+## 套用資料夾專屬的中繼資料 {#applying-folder-specific-metadata}
 
-[!DNL Assets] 用於定義元資料架構的變型並將其應用於特定資料夾。
+[!DNL Assets] 可讓您定義中繼資料結構的變體，並將其套用至特定資料夾。
 
-例如，可以定義預設元資料架構的變型並將其應用於資料夾。 應用修改的架構時，它將覆蓋應用於資料夾內資產的原始預設元資料架構。
+例如，您可以定義預設中繼資料結構的變體，並將其套用至資料夾。 當您套用修改過的結構描述時，它會覆寫套用至資料夾內資產的原始預設中繼資料結構。
 
-只有上載到應用此架構的資料夾的資產才符合變數元資料架構中定義的修改元資料。 [!DNL Assets] 在應用原始架構的其他資料夾中，繼續遵循原始架構中定義的元資料。
+只有上傳到套用此結構描述的資料夾的資產才符合變體中繼資料結構描述中定義的修改後中繼資料。 [!DNL Assets] 在套用原始結構描述的其他資料夾中，會繼續符合原始結構描述中定義的中繼資料。
 
-按資產列出的元資料繼承基於應用於層次結構中頂層資料夾的架構。 同一架構將應用於子資料夾或由子資料夾繼承。 如果在子資料夾級別應用了其他模式，則繼承將停止。
+資產的中繼資料繼承是根據套用至階層中頂層資料夾的結構描述。 子資料夾會套用或繼承相同結構。 如果在子資料夾層級套用不同的結構描述，繼承就會停止。
 
-1. 在 [!DNL Experience Manager] 介面，導航至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 元資料架構]**。 此時會顯示&#x200B;**[!UICONTROL 「中繼資料結構描述表單」]**&#x200B;頁面。
-1. 選中表單前的複選框，然後按一下 **[!UICONTROL 複製]** 並將其保存為自定義窗體。 指定表單的自定義名稱，例如 `my_default`。 或者，可以建立自定義表單。
+1. 在 [!DNL Experience Manager] 介面，瀏覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料結構]**. 此時會顯示&#x200B;**[!UICONTROL 「中繼資料結構描述表單」]**&#x200B;頁面。
+1. 選取表單前面的核取方塊（例如預設中繼資料表單），然後按一下 **[!UICONTROL 複製]** 並儲存為自訂表格。 指定表單的自訂名稱，例如 `my_default`. 或者，您也可以建立自訂表單。
 
-1. 在 **[!UICONTROL 元資料架構Forms]** ，選擇 `my_default` ，然後按一下 **[!UICONTROL 編輯]**。
-1. 在 **[!UICONTROL 元資料架構編輯器]** 的子菜單。 例如，添加帶標籤的欄位 **[!UICONTROL 類別]**。
-1. 按一下「**[!UICONTROL 儲存]**」。已修改的表單列在 **[!UICONTROL 元資料架構Forms]** 的子菜單。
-1. 按一下/點擊 **[!UICONTROL 應用於資料夾]** 的子菜單。
-1. 選擇要應用修改的架構的資料夾，然後按一下/點擊 **[!UICONTROL 應用]**。
-1. 如果資料夾應用了其他元資料架構，則會顯示一條警告消息，指出您將覆蓋現有元資料架構。 按一下 **覆蓋**。
-1. 按一下 **確定** 關閉成功消息。
-1. 導航到應用已修改元資料架構的資料夾。
+1. 在 **[!UICONTROL 中繼資料結構Forms]** 頁面，選取 `my_default` 表單，然後按一下 **[!UICONTROL 編輯]**.
+1. 在 **[!UICONTROL 中繼資料結構編輯器]** 頁面，新增文字欄位至結構描述表單。 例如，新增帶有標籤的欄位 **[!UICONTROL 類別]**.
+1. 按一下「**[!UICONTROL 儲存]**」。修改後的表單會列於 **[!UICONTROL 中繼資料結構Forms]** 頁面。
+1. 按一下/點選 **[!UICONTROL 套用至資料夾]** 將自訂中繼資料套用至資料夾。
+1. 選取要套用修改後之結構描述的資料夾，然後按一下/點選 **[!UICONTROL 套用]**.
+1. 如果資料夾套用了其他中繼資料結構，系統會顯示一則訊息，警告您即將覆寫現有的中繼資料結構。 按一下 **覆寫**.
+1. 按一下 **確定** 以關閉成功訊息。
+1. 導覽至您套用修改後中繼資料結構的資料夾。
 
-## 定義強制元資料 {#defining-mandatory-metadata}
+## 定義必要中繼資料 {#defining-mandatory-metadata}
 
-您可以在資料夾級別定義強制欄位，該欄位對上載到資料夾的資產強制執行。 如果上載具有先前定義的必需欄位的缺失元資料的資產，則「卡」視圖中的資產上會顯示缺失元資料的直觀指示。
+您可以在檔案夾層級定義必填欄位，這會在上傳至檔案夾的資產上強制執行。 如果您上傳的資產，缺少先前定義之必要欄位的中繼資料，卡片檢視的資產上會顯示缺少中繼資料的視覺指示。
 
 >[!NOTE]
 >
->元資料欄位可以基於另一個欄位的值被定義為強制欄位。 在「卡」視圖中，Experience Manager不顯示有關此類強制元資料欄位缺少元資料的警告消息。
+>中繼資料欄位可以根據其他欄位的值定義為必填欄位。 在「卡片」檢視中，Experience Manager不會針對這類必要中繼資料欄位，顯示有關遺失中繼資料的警告訊息。
 
-1. 按一下Experience Manager徽標，然後導航至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 元資料架構]**。 此時會顯示&#x200B;**[!UICONTROL 「中繼資料結構描述表單」]**&#x200B;頁面。
-1. 將預設元資料表單另存為自定義表單。 例如，將其另存為 `my_default`。
-1. 編輯自定義窗體。 添加必填欄位。 例如，添加 **[!UICONTROL 類別]** 欄位，並使欄位成為必填項。
-1. 按一下「**[!UICONTROL 儲存]**」。已修改的表單列在 **[!UICONTROL 元資料架構Forms]** 的子菜單。 選擇表單，然後按一下或點擊 **[!UICONTROL 應用於資料夾]** 的子菜單。
-1. 導航到資料夾並上載一些資產，其中缺少添加到自定義表單的必需欄位的元資料。 該資產的「卡」視圖中顯示該必需欄位缺少的元資料的消息。
-1. （可選）訪問 `https://[server]:[port]/system/console/components/`。 配置和啟用 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 預設禁用的元件。 設定Experience Manager檢查資產上元資料有效性的頻率。
+1. 按一下Experience Manager標誌，然後導覽至 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料結構]**. 此時會顯示&#x200B;**[!UICONTROL 「中繼資料結構描述表單」]**&#x200B;頁面。
+1. 將預設中繼資料表單儲存為自訂表單。 例如，將其儲存為 `my_default`.
+1. 編輯自訂表單。 新增必要欄位。 例如，新增 **[!UICONTROL 類別]** 欄位，並將欄位設為必填。
+1. 按一下「**[!UICONTROL 儲存]**」。修改後的表單會列於 **[!UICONTROL 中繼資料結構Forms]** 頁面。 選取表單，然後按一下或點選 **[!UICONTROL 套用至資料夾]** 將自訂中繼資料套用至資料夾。
+1. 導覽至資料夾，並針對您新增至自訂表單的必要欄位，上傳缺少中繼資料的部分資產。 資產的「卡片」檢視上會顯示訊息，指出必填欄位缺少中繼資料。
+1. （可選）存取 `https://[server]:[port]/system/console/components/`. 設定和啟用 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 預設為停用的元件。 設定Experience Manager檢查資產中繼資料有效性的頻率。
 
-   此配置添加屬性 `hasValidMetadata` 至 `jcr:content` 資產。 使用此屬性，Experience Manager可以篩選搜索結果。
+   此設定會新增屬性 `hasValidMetadata` 至 `jcr:content` 個資產。 使用此屬性，Experience Manager可以篩選搜尋的結果。
 
    >[!NOTE]
    >
-   >如果在計畫的檢查後添加了資產，則資產不會標籤為 `hasValidMetadata` 直到下次計畫檢查。 這些資產不會顯示在中間搜索結果中。
+   >如果在排程的檢查後新增資產，資產不會以下列專案標籤 `hasValidMetadata` 直到下一次排定的檢查。 資產未出現在中繼搜尋結果中。
 
    >[!CAUTION]
    >
-   >元資料驗證檢查佔用大量資源，可能會影響系統效能。 相應地安排檢查。 如果伺服器無法處理負載，請嘗試禁用此作業
+   >中繼資料驗證檢查需要大量資源，可能會影響系統效能。 相應地排程檢查。 如果伺服器無法應付負載，請嘗試停用此工作
 
 **另請參閱**
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## SDK
 
-瞭解Adobe I/OSDK及其如何用於開發App Builder應用程式。
+瞭解Adobe I/O SDK以及如何用它來開發App Builder應用程式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339166/?quality=12&learn=on)
 

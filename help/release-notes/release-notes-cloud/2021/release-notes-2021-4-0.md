@@ -14,7 +14,7 @@ ht-degree: 46%
 以下章節概述 [!DNL Adobe Experience Manager] as a Cloud Service 目前 (最新) 版本的一般發行說明。
 
 >[!NOTE]
->從此處，您可以導航到以前版本的發行說明；比如2020年，2021年等等。
+>您可以在此處瀏覽至舊版的發行說明；例如，2020、2021等版本。
 
 >[!NOTE]
 >
@@ -22,72 +22,72 @@ ht-degree: 46%
 
 ## 發行日期 {#release-date}
 
-發放日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.4.0是2021年5月6日。
-以下版本(2021.5.0)將於2021年5月27日發佈。
+的發行日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.4.0是2021年5月6日。
+下列版本(2021.5.0)將於2021年5月27日發行。
 
-## AEMas a Cloud Service{#aem-as-a-cloud-service-foundation}
+## AEMas a Cloud Service基礎{#aem-as-a-cloud-service-foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* [發佈內容樹工作流](/help/operations/replication.md#publish-content-tree-workflow)  — 新的工作流模型和步驟在發佈深層內容層次結構時提供了更高的效能。
+* [發佈內容樹狀工作流程](/help/operations/replication.md#publish-content-tree-workflow)  — 新的工作流程模型和步驟可在發佈深層內容時提高效能。
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites]的新增功能 {#what-is-new-sites}
 
-* GraphQL終端節點 — 現在可以為單個AEM Sites配置啟AEM用GraphQLAPI，並通過使用新的GraphQL控制台UI為這些配置建立自定義GraphQL終端節點。 UI還允許管理GraphQL端點。
+* GraphQL端點 — 現在可以為個別AEM Sites設定啟用AEM GraphQL API，並使用新的GraphQL Console UI為這些設定建立自訂GraphQL端點。 UI也可讓您管理GraphQL端點。
 
-* 內容模型，增強的日期和時間資料類型 — 現在可以將日期和時間日期類型配置為僅允許創作日期、僅時間或日期和時間資訊。
+* 內容模型、增強型日期和時間資料型別 — 現在可以設定日期和時間資料型別，以允許撰寫僅限日期、僅限時間或是日期和時間的資訊。
 
-* 內容模型、增強的標籤資料類型 — 現在可以配置標籤資料類型以允許創作單個或多個標籤。
+* 內容模型、增強型標籤資料型別 — 現在可以設定標籤資料型別，以允許撰寫單一或多個標籤。
 
-* 「內容模型」、新的「制表符佔位符」資料類型 — 新的「制表符佔位符」資料類型允許將資料類型分組到內容片段編輯器中頁籤下將呈現的部分中。
+* 內容模型、新索引標籤預留位置資料型別 — 新索引標籤預留位置資料型別允許將資料型別分組到多個區段中，這些區段將會在內容片段編輯器中的索引標籤底下呈現。
 
 ### [!DNL Sites]中的錯誤修正 {#bug-fixes-sites}
 
-* 內容片段 — 移動內容片段或資料夾現在會更新片段內的嵌套引用(CQ-4320815)
+* 內容片段 — 移動內容片段或資料夾現在會更新片段內的巢狀參考(CQ-4320815)
 
-* GraphQL — 永續查詢現在支援特定於AEM Sites配置的用戶定義端點(CQ-4315928)
+* GraphQL — 持續查詢現在支援特定於AEM Sites設定的使用者定義端點(CQ-4315928)
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]的新增功能 {#what-is-new-assets}
 
-* [!DNL Experience Manager] 不存檔下載原始檔案的單個資產下載。 此增強功能可加快下載速度。
+* [!DNL Experience Manager] 不會封存下載原始檔案的單一資產下載。 此增強功能可加快下載速度。
 
-* 通過連結共用選項下載資產時，您現在可以選擇下載或不下載格式副本。 以前，已下載所有資產格式副本。
+* 透過linkshare選項下載資產時，您現在可以選擇下載或不下載轉譯。 之前則會下載所有資產轉譯。
 
-* 管理員可以配置 [!DNL Experience Manager] 執行批量資產提取後刪除資產源。 請參閱 [批量資產消耗](/help/assets/add-assets.md#asset-bulk-ingestor)。
+* 管理員可以設定 [!DNL Experience Manager] 若要在執行大量資產擷取後刪除資產來源，請執行下列動作。 另請參閱 [大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* 當執行運行狀況檢查以批量導入資產時，Experience Manager現在提供了失敗的更多資訊原因。 請參閱 [批量資產消耗](/help/assets/add-assets.md#asset-bulk-ingestor)。
+* 在執行狀況檢查以大量匯入資產時，Experience Manager現在會提供失敗原因的更多資訊。 另請參閱 [大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* 使用批量導入工具導入資產時，管理員現在可以選擇在導入成功後刪除源檔案。 請參閱 [批量資產消耗](/help/assets/add-assets.md#asset-bulk-ingestor)。
+* 使用大量匯入工具匯入資產時，管理員現在可以選擇在匯入成功後刪除來源檔案。 另請參閱 [大量資產擷取](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* 在編輯元資料架構時，新的根路徑選擇器欄位允許管理員快速而輕鬆地進行選擇，從而減少配置時間。
+* 編輯中繼資料結構描述時，新的根路徑選擇器欄位可讓管理員快速輕鬆地做出選擇，進而縮短設定時間。
 
-* 在編輯元資料模式時，會添加在元資料編輯器中提供自由格式文本區域的資料類型。 用戶可以使用此文本區域輸入自由格式文本作為資產的元資料。 請參閱 [元資料架構編輯器](/help/assets/metadata-schemas.md)。
+* 編輯中繼資料結構描述時，會新增一個資料型別，在中繼資料編輯器中提供自由格式的文字區域。 使用者可以使用此文字區域輸入自由格式文字作為資產的中繼資料。 另請參閱 [中繼資料結構編輯器](/help/assets/metadata-schemas.md).
 
-* 許多資產的元資料可以使用CSV檔案批量導入，並可以導出到CSV檔案。 預設日期格式現在為 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`。 用戶可以通過更新列標題來利用不同的格式。 例如，添加 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 作為CSV檔案中的列標題，而不是 `Date`。
+* 許多資產的中繼資料可以使用CSV檔案大量匯入，也可以匯出到CSV檔案。 預設日期格式現在為 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. 使用者可以更新欄標題來運用不同的格式。 例如，新增 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 做為CSV檔案中的欄標題，而不是單字 `Date`.
 
-* 在「列」視圖中瀏覽資產時，可視指示器會顯示每個資產的已批准或已拒絕狀態。
+* 在「欄」檢視中瀏覽資產時，視覺指示器會顯示每個資產的已核准或已拒絕狀態。
 
-* 在「列」視圖中瀏覽資產時，將顯示過期資產的可視指示器。
+* 在「欄」檢視中瀏覽資產時，視覺指示器會顯示已到期的資產。
 
 ### [!DNL Assets]中的錯誤修正 {#bug-fixes-assets}
 
-* 嘗試移動多個資產或資料夾時，控制台中會記錄錯誤，移動操作未完成。 如果無法更新標題，則移動操作將失敗。 (CQ-4322080)
+* 嘗試移動多個資產或資料夾時，控制檯中會記錄錯誤，且移動作業未完成。 如果無法更新標題，移動作業會失敗。 (CQ-4322080)
 
-* 元資料欄位可以基於規則被隱藏，使得當滿足預定義條件時元資料不是必需的。 但是，此類隱藏的元資料欄位會顯示為必填欄位。 (CQ-4321285)
+* 中繼資料欄位可以根據規則隱藏，以便在滿足預先定義的條件時，中繼資料不是強制性的。 不過，此類隱藏的中繼資料欄位會顯示為必填欄位。 (CQ-4321285)
 
-* 由於日期格式不正確，批量元資料導入失敗。 (CQ-4319014)
+* 大量中繼資料匯入失敗，因為日期格式不正確。 (CQ-4319014)
 
-* 當在「屬性」頁中選擇更新元資料時，當架構提供了許多選項時，介面響應速度較慢。 (CQ-4318538)
+* 在「屬性」頁面中選取要更新中繼資料時，如果結構描述提供了許多選項，介面的回應會很緩慢。 (CQ-4318538)
 
-* 在單行文本欄位中更新和保存元資料值時，即使在下拉菜單中禁用了編輯，下拉菜單中的值也會被刪除。 (CQ-4317077)
+* 在單行文字欄位中更新和儲存中繼資料值時，即使下拉式選單上的編輯功能已停用，下拉式選單中的值也會被刪除。 (CQ-4317077)
 
-* 可以使用省略號作為注釋來查看資產。 使用小橢圓時，該橢圓與打印版本中注釋的數量重疊。 (CQ-4316792)
+* 您可以使用省略符號作為註解來檢閱資產。 使用小橢圓時，橢圓與列印版本中的註釋編號重疊。 (CQ-4316792)
 
-* 在搜索後從搜索結果中選擇資產時，不顯示快速發佈選項。 (CQ-4317748)
+* 在搜尋資產後，若從搜尋結果中選取資產，快速發佈選項不會顯示。 (CQ-4317748)
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -121,30 +121,30 @@ ht-degree: 46%
 
 ### 其他更新 {#misc-2021-04-0-forms}
 
-* 為便於識別內容，服務現在會為XDP、動態PDF和架構檔案生成即時縮略圖。
-* 添加將PDF檔案移動到AEM FormsUI上的資料夾的功能。
+* 為了更方便識別內容，該服務現在會為XDP、動態PDF和結構描述檔案產生即時縮圖。
+* 新增將PDF檔案移動到放置在AEM Forms UI上的資料夾的功能。
 
-## Adobe Experience Manager商業as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 支援類別UID — 此操作可解除鎖定使用字串進行類別ID的系統的第三方商務整合
+* 類別UID的支援 — 針對使用字串作為類別ID的系統，這可解除鎖定第三方商業整合
 
-* 擴展AEMPWA Studio，包括 示例整合
+* PWA Studio的AEM擴充功能，包括 整合範例
 
-* 擴展WCM導航核心元件的新CIF導航核心元件
+* 可擴充WCM導覽核心元件的新CIF導覽核心元件
 
-* 庫面中暫存目錄資料的可視指AEM示器
+* AEM店面中暫存目錄資料的視覺指示器
 
-* 現在可通過Cloud Manager UI配置Commerce終結點
+* 現在可透過Cloud Manager UI設定商務端點
 
 ### 錯誤修正 {#bug-fixes-commerce}
 
-* 根類別欄位未顯示在類別頁的頁面屬性中的commerce頁籤下
+* 根類別欄位未顯示在類別頁面的頁面屬性中的商務索引標籤下
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述了as a Cloud Service2021.4.0中Cloud Manager的發行說明AEM。
+本節概述AEMas a Cloud Service2021.4.0中Cloud Manager的發行說明
 
 ### 發行日期 {#release-date-cm-april}
 
@@ -186,9 +186,9 @@ AEM as a Cloud Service 2021.4.0 中 Cloud Manager 的發行日期為 2021 年 4 
 
 ### 發行日期 {#release-date-bpa}
 
-最佳做法分析器2.1.12版的發佈日期為2021年4月12日。
+Best Practices Analyzer v2.1.12的發行日期為2021年4月12日。
 
 ### 錯誤修正 {#bug-fixes-bpa-april}
 
-* 報告的BPA中出現重複行。 這個已經修復了。
-* 6.4.2版中的BPA AEM UI引發了禁用「生成報告」按鈕的JS錯誤。 已修復
+* 在報告的BPA中看到重複列。 此問題已修正。
+* AEM 6.4.2版上的BPA UI擲回停用產生報告按鈕的JS錯誤。 此問題已修正

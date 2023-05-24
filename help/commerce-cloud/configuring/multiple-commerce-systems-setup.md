@@ -1,6 +1,6 @@
 ---
-title: 使用多AEM個商務系統設定
-description: 瞭解如何使用Multiple Commerce SystemsAEM進行設定。 這使項目能夠支援與多品牌、多區域店面的多Adobe或第三方商務後台連接的單一體驗管理層。
+title: 使用多個商務系統設定AEM
+description: 瞭解如何使用多個商務系統設定AEM。 如此一來，專案便可支援連線至多個Adobe的單一體驗管理層，或是多品牌、多區域店面的協力廠商商務後端。
 sub-product: Commerce
 version: Cloud Service
 doc-type: technical-video
@@ -21,8 +21,8 @@ ht-degree: 0%
 
 # 設定多個商務系統
 
-單個AEMCIF系統可用於連接到多個Adobe或第三方商務系統以支援高級部署。 這在多區域、多品牌店面中是有用的，其中單一體驗管理層簡化了商務內容的建立和傳遞過程。 這還有助於組織加快實現價值(TTV)並降低總體擁有成本(TCO)。
+單一AEM CIF系統可用來連線至多個Adobe或協力廠商商務系統，以支援進階部署。 對於多區域、多品牌店面，單一體驗管理層可簡化商務內容的建立與傳送程式，這個方法就十分實用。 這也有助於企業加速實現價值(TTV)並降低總擁有成本(TCO)。
 
-一個視頻演示，詳細說明如AEM何設定多個Adobe商務環境。 多站AEM點管理(MSM)功能（如即時拷貝和語言拷貝）與商業整合框架(CIF)一起使用，以建立多區域店面，其中 __歐盟地區店面__ 連接 __歐盟Adobe Commerce__ 和 __北美(NA)地區店面__ 連接 __納Adobe Commerce__ 系統。
+一段逐步解說影片，詳述如何使用多個Adobe商務環境設定AEM。 Live Copy和Language Copy等AEM多網站管理(MSM)功能與Commerce Integration Framework (CIF)搭配使用，建立多區域店面，其中 __歐盟區域店面__ 連線到 __歐盟Adobe Commerce__ 和 __北美(NA)區域店面__ 連線到 __NA ADOBE COMMERCE__ 系統。
 
 >[!VIDEO](https://video.tv.adobe.com/v/346811/?quality=12&learn=on)

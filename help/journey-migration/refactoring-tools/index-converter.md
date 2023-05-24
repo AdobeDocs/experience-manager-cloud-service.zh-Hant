@@ -11,33 +11,33 @@ ht-degree: 2%
 
 # 索引轉換器 {#index-converter}
 
-Index Converter是為遷移客戶的索引定義而開發的實用程式，用於準備遷移到AEMas a Cloud Service。
+Index Converter是開發的公用程式，用來移轉客戶的索引定義，為移轉到AEMas a Cloud Service做準備。
 
 ## 簡介 {#introduction}
 
-索引轉換器使開AEM發人員能夠將現有的自定義Oak索引定義遷AEM移到as a Cloud Service相容的自定義Oak索引定義。
+索引轉換器可讓AEM開發人員將現有的自訂Oak索引定義移轉至AEMas a Cloud Service相容的自訂Oak索引定義。
 
 >[!NOTE]
->僅索引轉換器轉換 *苜蓿* 類型下存在的自定義橡樹索引定義 `/apps` 或 `/oak:index`。 它不會轉換 *苜蓿* 為建立的類型索引 `nt:base`。
+>僅索引轉換工具 *lucene* 輸入自訂Oak索引定義，這些定義位於 `/apps` 或 `/oak:index`. 它不會轉換 *lucene* 為建立的型別索引 `nt:base`.
 
-建立自定義Oak索引定義有兩種方法：
+建立自訂Oak索引定義有兩個方法：
 
-* `under /apps` （通過任何自定義內容包）
-* 直接 `/oak:index` 路徑
+* `under /apps` （透過任何自訂內容套件）
+* 直接在 `/oak:index` 路徑
 
-如果 [確保Oak索引](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) 已使用，請注意，確保定義在AEMas a Cloud Service上不受支援，因此需要先將其轉換為Oak索引定義，然後需要遷移到與as a Cloud Service相容的自定義Oak索引定義，如下面的指AEM南所述：
+若 [確保Oak索引](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) 請注意，AEMas a Cloud Service不支援「確定定義」，因此需要先將其轉換為Oak索引定義，然後需要移轉至與AEMas a Cloud Service相容的自訂Oak索引定義，如下所示：
 
-* 如果屬性ignore設定為 `true`、忽略或跳過「確保定義」
+* 如果屬性忽略設為 `true`，忽略或略過確保定義
 * 更新 `jcr:primaryType` 至 `oak:QueryIndexDefinition`
-* 刪除OSGi配置中提到的要忽略的所有屬性
-* 刪除子樹 `/facets/jcr:content` 從確保定義
+* 移除任何要忽略的屬性，如OSGi設定中所述
+* 移除子樹狀結構 `/facets/jcr:content` 從確認定義
 
 ## 使用索引轉換器 {#using-index-converter}
 
-* 通過Adobe I/OCLI :建議使用索引轉換器， `aio-cli-plugin-aem-cloud-service-migration` (AEMAdobe I/OCLI的as a Cloud Service代碼重構插件)。
+* 透過Adobe I/OCLI ：建議透過以下方式使用索引轉換工具： `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/OCLI的AEMas a Cloud Service程式碼重構外掛程式)。
 
-   請參閱 **[Git資源：aio-cli-plugin-aem — 雲服務 — 遷移](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 瞭解如何安裝和使用插件。
+   請參閱 **[Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 瞭解如何安裝及使用外掛程式。
 
-* 作為獨立實用程式：索引轉換器也可以作為獨立實用程式執行。
+* 作為獨立公用程式： Index Converter也可以作為獨立公用程式執行。
 
-   請參閱 **[Git資源：aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** 瞭解如何使用此工具。
+   請參閱 **[Git資源：aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** 以瞭解如何使用此工具。

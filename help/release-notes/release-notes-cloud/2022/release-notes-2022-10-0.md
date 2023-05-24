@@ -11,7 +11,7 @@ ht-degree: 98%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 版發行說明 {#release-notes}
 
-以下部分概述2022.10.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
+以下章節概述2022.10.0版的 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >

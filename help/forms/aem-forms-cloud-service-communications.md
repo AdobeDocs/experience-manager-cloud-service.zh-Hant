@@ -1,5 +1,5 @@
 ---
-title: AEM Formsas a Cloud Service — 通信
+title: AEM Formsas a Cloud Service — 通訊
 description: 自動將資料與 XDP 和 PDF 範本合併，或產生 PCL、ZPL 和 PostScript 格式的輸出
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
@@ -12,24 +12,24 @@ ht-degree: 7%
 
 # 使用同步處理 {#sync-processing-introduction}
 
-Formsas a Cloud Service — 通信API允許您建立、匯編和提供面向品牌的個性化通信，如業務信函、文檔、報表、理賠信函、利益通知、理賠信函、每月帳單和歡迎套件。 您可以使用Communications API將模板(XFA或PDF)與客戶資料組合，以PDF、PS、PCL、DPL、IPL和ZPL格式生成文檔。
+Formsas a Cloud Service- Communications API可讓您建立、彙編及提供品牌導向和個人化的通訊，例如商業往來函、檔案、報表、索賠處理信函、利益通知、索賠處理信函、每月帳單和歡迎套件。 您可以使用Communications API將範本(XFA或PDF)與客戶資料結合，以產生PDF、PS、PCL、DPL、IPL和ZPL格式的檔案。
 
-請考慮一個方案，其中每個模板有一個或多個模板和多個XML資料記錄。 可以使用Communications API為每條記錄生成打印文檔。 <!-- You can also combine the records into a single document. --> 結果是非互動式PDF文檔。 非互動式PDF文檔不允許用戶在其欄位中輸入資料。
+假設您有一或多個範本，且每個範本有多個XML資料記錄。 您可以使用Communications API為每筆記錄產生列印檔案。 <!-- You can also combine the records into a single document. --> 結果會產生非互動式PDF檔案。 非互動式PDF檔案不允許使用者在其欄位中輸入資料。
 
-Formsas a Cloud Service — 通信提供按需和批處理API（非同步API），用於計畫文檔生成：
+Formsas a Cloud Service — 通訊功能提供隨選和批次API （非同步API），用於產生排程檔案：
 
-* 同步API適用於按需、低延遲和單記錄文檔生成使用情形。 這些 API 更適合根據使用者動作的使用案例。例如，在用戶填寫表單後生成文檔。
+* 同步API適用於隨選、低延遲和單一記錄檔案產生使用案例。 這些 API 更適合根據使用者動作的使用案例。例如，在使用者填寫表單後產生檔案。
 
-* 批處理API（非同步API）適用於計畫的高吞吐量多文檔生成使用情形。 這些 API 批次產生文件。例如，每月產生的電話帳單、信用卡報表和福利報表。
+* 批次API （非同步API）適用於排程的高輸送量多檔案產生使用案例。 這些 API 批次產生文件。例如，每月產生的電話帳單、信用卡報表和福利報表。
 
-## 使用同步操作 {#batch-operations}
+## 使用同步作業 {#batch-operations}
 
-同步操作是以線性方式生成文檔的過程。 這些API被分類為單租戶API和多租戶API:
+同步作業是以線性方式產生檔案的程式。 這些API分類為單一租使用者API和多租使用者API：
 
-### 單租戶API
+### 單一租使用者API
 
-* 文檔生成API
-* 文檔處理API
+* 檔案產生API
+* 檔案操作API
 
 <!-- 
 ### Multi-tenant APIs
@@ -37,23 +37,23 @@ Formsas a Cloud Service — 通信提供按需和批處理API（非同步API）�
 * Document utility APIs -->
 
 
-### 驗證單租戶API
+### 驗證單一租使用者API
 
-單租戶API操作支援兩種身份驗證類型：
+單一租使用者API操作支援兩種型別的驗證：
 
-* **基本身份驗證**:基本身份驗證是內置在HTTP協定中的簡單身份驗證方案。 客戶端發送HTTP請求，其Authorization標頭包含Basic後跟空格和base64編碼的字串username:password。 例如，要授權為admin/admin ，客戶端將發送基本 [base64編碼的字串用戶名]: [base64編碼的字串密碼]。
+* **基本驗證**：基本驗證是內建在HTTP通訊協定中的簡單驗證配置。 使用者端傳送的HTTP要求具有Authorization標頭，其中包含字詞Basic，後跟空格和base64編碼的字串username：password。 例如，若要以管理員/管理員身分授權，使用者端會傳送「基本」 [base64編碼字串使用者名稱]： [base64編碼字串密碼].
 
-* **基於令牌的身份驗證：** 基於令牌的Experience Manager使用訪問令牌（承載驗證令牌）來請求as a Cloud Service。 AEM Formsas a Cloud Service提供API以安全地檢索訪問令牌。 要檢索並使用令牌來驗證請求，請執行以下操作：
+* **權杖型驗證：** 權杖型驗證使用存取權杖（持有者驗證權杖）來向as a Cloud ServiceExperience Manager發出請求。 AEM Formsas a Cloud Service提供API來安全地擷取存取Token。 若要擷取並使用權杖來驗證請求：
 
-   1. [從開發人員控制台檢索Experience Manageras a Cloud Service憑據](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
-   1. [在Experience Manager上安裝as a Cloud Service憑據](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。 (應用程式伺服器、Web伺服器或其AEM他非伺服器)，配置為向雲服務發送請求。
-   1. [生成JWT令牌，並與Adobe IMS API交換該令牌以獲取訪問令牌](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
-   1. 使用訪問令牌作為承載身份驗證令牌運行Experience ManagerAPI。
-   1. [在Experience Manager環境中為技術帳戶用戶設定適當的權限](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)。
+   1. [從開發人員控制檯擷取Experience Manageras a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [在您的環境中安裝Experience Manageras a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (應用程式伺服器、Web伺服器或其他非AEM伺服器)設定為傳送要求給（進行呼叫）雲端服務。
+   1. [產生JWT權杖並與Adobe IMS API交換存取權杖](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. 以存取權杖作為持有者驗證權杖執行Experience ManagerAPI。
+   1. [在Experience Manager環境中為技術帳戶使用者設定適當的許可權](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
    >[!NOTE]
    >
-   >Adobe建議在生產環境中使用基於令牌的身份驗證。
+   >Adobe建議在生產環境中使用權杖型驗證。
 
 <!-- 
 
@@ -117,28 +117,28 @@ While it is possible to do the entire JWT generation and exchange process in cus
 
 -->
 
-### （僅適用於文檔生成API）配置資產和權限
+### （僅適用於Document Generation API）設定資產和許可權
 
-要使用同步API，需要執行以下操作：
+若要使用同步API，需具備下列條件：
 
-* 具有Experience Manager管理員權限的用戶
-* 將模板和其他資產上載到您的Experience Manager FormsCloud Service實例
+* 具有Experience Manager管理員許可權的使用者
+* 將範本和其他資產上傳至您的Experience Manager FormsCloud Service執行個體
 
-### （僅用於文檔生成API）將模板和其他資產上載到您的Experience Manager實例
+### （僅適用於Document Generation API）上傳範本和其他資產至您的Experience Manager執行個體
 
-組織通常具有多個模板。 例如，信用卡對帳單、福利對帳單和索賠申請各有一個模板。 將所有此類XDP和PDF模板上載到您的Experience Manager實例。 要上載模板，請執行以下操作：
+組織通常有多個範本。 例如，信用卡對帳單、福利對帳單及索賠申請各一個範本。 將所有此類XDP和PDF範本上傳到您的Experience Manager執行個體。 若要上傳範本：
 
-1. 開啟Experience Manager實例。
-1. 轉到Forms>Forms和文檔
-1. 按一下「建立」>「資料夾」並建立資料夾。 開啟資料夾。
-1. 按一下「建立」(Create)>「檔案上載」(File Upload)並上載模板。
+1. 開啟您的Experience Manager執行個體。
+1. 前往「Forms > Forms和檔案」
+1. 按一下「建立>資料夾」並建立資料夾。 開啟資料夾。
+1. 按一下「建立>檔案上傳」並上傳範本。
 
-### 調用API
+### 叫用API
 
-的 [API參考文檔](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) 提供了有關API提供的所有參數、驗證方法和各種服務的詳細資訊。 API參考文檔還提供.yaml格式的API定義檔案。 您可以下載.yaml檔案並將其上載到 [Postman](https://www.postman.com/) 檢查API的功能。
+此 [API參考檔案](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) 提供API所提供的所有引數、驗證方法及其他各種服務的詳細資訊。 API參考檔案也提供.yaml格式的API定義檔案。 您可以下載.yaml檔案並將其上傳到 [Postman](https://www.postman.com/) 檢查API的功能。
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
 >[!NOTE]
 >
->只有表單用戶組的成員才能訪問通信API。
+>只有Forms-users群組的成員可以存取Communications API。

@@ -1,6 +1,6 @@
 ---
 title: 快速開發環境
-description: 瞭解如何利用快速開發環境在雲環境中快速開發迭代。
+description: 瞭解如何善用快速開發環境在雲端環境中進行快速開發反複專案。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
 workflow-type: tm+mt
@@ -11,38 +11,38 @@ ht-degree: 5%
 
 # 快速開發環境 {#rapid-development-environments}
 
-為了部署更改，當前雲開發環境需要使用採用廣泛代碼安全和質量規則的流程，稱為CI/CD管道。 對於需要快速、反複更改的情況，Adobe引入了快速開發環境（簡稱RDE）。
+為了部署變更，目前的雲端開發環境需要使用採用廣泛計畫碼安全性和品質規則的程式，稱為CI/CD管道。 對於需要快速和反複變更的情況，Adobe已引入快速開發環境（簡稱RDE）。
 
-RDE允許開發人員快速部署和審查更改，從而最大限度地減少test經過驗證可以在本地開發環境中工作的功能所需的時間。
+RDE可讓開發人員快速部署和檢閱變更，將測試經證實可在本機開發環境中運作的功能所需的時間減至最少。
 
-在RDE中測試更改後，可以通過Cloud Manager管道將其部署到常規雲開發環境中。
+在RDE中測試變更後，可以透過Cloud Manager管道將它們部署到常規雲端開發環境。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-您可以參閱其他視頻演示 [如何設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html)。 [如何使用](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)的 [開發生命週期](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) 使用RDE。
+您可以參考其他示範影片 [如何設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html)， [使用方式](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)，以及 [開發生命週期](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) 使用RDE。
 
 ## 簡介 {#introduction}
 
-RDE可用於代碼、內容和Apache或Dispatcher配置。 與常規雲開發環境不同，開發人員可以使用本地命令行工具將本地構建的代碼同步到RDE。
+RDE可用於程式碼、內容，以及Apache或Dispatcher設定。 與一般雲端開發環境不同，開發人員可以使用本機命令列工具，將本機建置的程式碼同步到RDE。
 
-每個程式都配有RDE。 對於沙盒帳戶，在幾小時不使用後它們將被休眠。
+每個方案都布建了RDE。 若是沙箱帳戶，則會在閒置數小時後休眠。
 
-建立時，RDE將設定為最新可用AEM版本。 RDE重置（可使用雲管理器執行）將循環RDE並將其設定為最新可用AEM版本。
+建立後，RDE會設定為最新可用的AEM版本。 RDE重設（可使用Cloud Manager執行）將循環RDE並將其設定為最新可用的AEM版本。
 
-通常，RDE將由單個開發人員在指定時間用於測試和調試特定功能。 完成開發會話後，RDE可重置為預設狀態以用於下次使用。
+通常，單一開發人員在指定時間會使用RDE來測試和偵錯特定功能。 完成開發工作階段後，RDE可以重設為預設狀態以供下次使用。
 
-可以為生產（非沙盒）程式授予其他RDE許可。
+其他RDE可授權給生產（非沙箱）計畫。
 
 ## 在程式中啟用RDE {#enabling-rde-in-a-program}
 
-按照以下步驟使用Cloud Manager為程式建立RDE。
+按照以下步驟使用Cloud Manager為您的計畫建立RDE。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 按一下要添加RDE的程式以顯示其詳細資訊。
+1. 按一下要新增RDE的計畫以顯示其詳細資訊。
 
-   * RDE可添加到兩者 [沙盒程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 和 [製作程式。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+   * RDE可新增至兩者 [沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 和 [生產計畫。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
 
 1. 在&#x200B;**計畫總覽**&#x200B;頁面，按一下&#x200B;**環境**&#x200B;卡上的&#x200B;**新增環境**&#x200B;以新增環境。
 
@@ -56,10 +56,10 @@ RDE可用於代碼、內容和Apache或Dispatcher配置。 與常規雲開發環
 
 1. 在出現的&#x200B;**新增環境**&#x200B;對話框中：
 
-   * 選擇 **快速發展** 下 **選擇環境類型** 的子菜單。
-      * 可用/已用環境的數量顯示在環境類型後面的括弧中。
-   * 提供 **名稱** 環境。
-   * 提供可選 **說明** 環境。
+   * 選取 **快速開發** 在 **選取環境型別** 標題。
+      * 可用/已使用環境的數量會顯示在環境型別後面的括弧中。
+   * 提供 **名稱** 適用於環境。
+   * 提供選填 **說明** 適用於環境。
    * 選取&#x200B;**雲端區域**。
 
    ![新增環境對話框](/help/implementing/cloud-manager/assets/add-environment-wizard.png)
@@ -68,47 +68,47 @@ RDE可用於代碼、內容和Apache或Dispatcher配置。 與常規雲開發環
 
 現在&#x200B;**總覽**&#x200B;畫面會在&#x200B;**環境**&#x200B;卡中顯示您的新環境。
 
-建立時，RDE將設定為最新可用AEM版本。 RDE重置（也可使用雲管理器執行）將循環RDE並將其設定為最新可用AEM版本。
+建立後，RDE會設定為最新可用的AEM版本。 RDE重設（也可以使用Cloud Manager執行）將循環RDE並將其設定為最新可用的AEM版本。
 
-有關使用雲管理器建立環境、管理誰有權訪問環境以及分配自定義域的詳細資訊，請參閱 [雲管理器文檔。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+如需有關使用Cloud Manager建立環境、管理誰有權存取環境以及指派自訂網域的詳細資訊，請參閱 [Cloud Manager檔案。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
-## 安裝RDE命令行工具 {#installing-the-rde-command-line-tools}
+## 安裝RDE命令列工具 {#installing-the-rde-command-line-tools}
 
-使用雲管理器為程式添加RDE後，您可以通過設定命令行工具與其進行交互，如以下步驟所述：
+使用Cloud Manager為您的計畫新增RDE後，您可以透過設定命令列工具與其互動，如以下步驟所述：
 
 >[!IMPORTANT]
 >
->確保您有最新版本 [已安裝節點和NPM](https://nodejs.org/en/download/) Adobe I/OCLI和相關插件可正常工作。
+>請確定您擁有最新版本的 [節點和NPM已安裝](https://nodejs.org/en/download/) Adobe I/OCLI和相關外掛程式才能正常運作。
 
 
-1. 按照以下步驟安裝Adobe I/OCLI工具 [這裡](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)。
-1. 安裝Adobe I/OCLI工具雲管理器插件，並按說明配置它們 [這裡](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
-1. 通過運行以下命AEM令安裝Adobe I/OCLI工具RDE插件：
+1. 依照下列程式安裝Adobe I/OCLI工具 [此處](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+1. 安裝Adobe I/OCLI工具Cloud Manager外掛程式，並依照說明進行設定 [此處](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+1. 執行下列命令，安裝Adobe I/OCLI工具AEM RDE外掛程式：
 
    ```
    aio plugins:install @adobe/aio-cli-plugin-aem-rde
    aio plugins:update
    ```
 
-1. 為組織ID配置雲管理器插件：
+1. 為組織ID設定Cloud Manager外掛程式：
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   並用您自己的組織ID替換字母數字字串，可使用策略查找 [這裡](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)。
+   和將英數字串取代為您自己的組織ID，您可透過策略查詢此組織ID [此處](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
-1. 接下來，配置程式ID:
+1. 接下來，設定您的程式id：
 
    `aio config:set cloudmanager_programid 12345`
 
-1. 然後，配置RDE將附加到的環境ID:
+1. 然後，設定要將RDE附加到的環境ID：
 
    `aio config:set cloudmanager_environmentid 123456`
 
-1. 配置完插件後，通過執行
+1. 完成外掛程式的設定後，請透過以下方式登入：
 
    `aio login`
 
-   成功登錄時的響應應與下面的輸出類似，但您可以忽略顯示的值。
+   成功登入時的回應應該類似於下面的輸出，但您可以忽略顯示的值。
 
    ```
    ...
@@ -118,128 +118,128 @@ RDE可用於代碼、內容和Apache或Dispatcher配置。 與常規雲開發環
    3. Workspace: <no workspace selected>
    ```
 
-   請注意，此步驟要求您成為雲管理器的成員 **開發人員 — Cloud Service** 產品配置檔案。 請參閱 [此頁](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) 的子菜單。
+   注意：此步驟需要您是Cloud Manager的成員 **開發人員 — Cloud Service** 產品設定檔。 另請參閱 [此頁面](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) 以取得更多詳細資料。
 
-   或者，如果可以通過運行以下命令登錄到開發人員控制台，則可以確認您具有此開發人員角色：
+   或者，如果您可以透過執行此命令登入開發人員主控台，則可以確認您擁有此開發人員角色：
 
    `aio cloudmanager:environment:open-developer-console`
 
    >[!TIP]
    >
-   >如果你看到 `Warning: cloudmanager:list-programs is not a aio command.` 錯誤，您需要安裝 [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 運行以下命令：
+   >如果您看到 `Warning: cloudmanager:list-programs is not a aio command.` 錯誤，您必須安裝 [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 透過執行以下命令：
    >
    >
    ```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
-1. 通過運行驗證登錄是否成功完成
+1. 執行以驗證登入是否成功完成
 
    `aio cloudmanager:list-programs`
 
-   這應列出您所配置組織下的所有程式。
+   這應該會列出您設定之組織下的所有程式。
 
 
-有關詳細資訊和演示，請參見 [如何設定RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) 視頻教程。
+如需詳細資訊和示範，請參閱 [如何設定RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) 教學影片。
 
-## 在開發新特徵時使用RDE {#using-rde-while-developing-a-new-feature}
+## 開發新功能時使用RDE {#using-rde-while-developing-a-new-feature}
 
-Adobe建議使用以下工作流來開發新功能：
+Adobe建議使用下列工作流程來開發新功能：
 
-* 當使用AEMas a Cloud ServiceSDK到達中間里程碑並在本地成功驗證時，應將代碼提交到尚未成為主行一部分的git功能分支，儘管提交git是可選的。 &quot;中間里程碑&quot;的構成因團隊習慣而異。 示例包括幾行新代碼、半天工作或完成子功能。
+* 當達到中繼里程碑並透過AEMas a Cloud ServiceSDK在本機成功驗證時，程式碼應提交到尚未成為主行一部分的Git功能分支，儘管提交到是Git的選擇性。 構成「中繼里程碑」的要素因團隊習慣而異。 範例包括幾行程式碼、半天的工作或完成子功能。
 
-* 如果RDE已被其他特徵使用，並且您希望 [將其重置為預設狀態](#reset-rde)。 <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->重置將需要幾分鐘時間，所有現有內容和代碼都將被刪除。 可以使用RDE狀態命令確認RDE已就緒。 RDE將提供最新版本AEM。
+* 如果RDE已由其他功能使用，且您想重設RDE [將其重設為預設狀態](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->重設將需要幾分鐘的時間，且所有現有內容和程式碼都會被刪除。 您可以使用RDE狀態指令來確認RDE已就緒。 RDE將隨最新的AEM發行版本一起更新。
 
    >[!IMPORTANT]
    >
-   > 如果您的暫存和生產環境未收到自動AEM發佈更新，並且遠遠落後於最新的發AEM布版本，請注意，在RDE上運行的代碼可能與代碼在暫存和生產上的運行方式不匹配。 在這種情況下，在將代碼部署到生產環境之前，對代碼執行徹底的轉移測試尤為重要。
+   > 如果您的測試和生產環境未收到自動AEM版本更新，並且遠低於最新的AEM版本版本，請留意，在RDE上執行的程式碼可能與程式碼在測試和生產環境中的運作方式不符。 在這種情況下，將程式碼部署到生產環境之前，在測試環境中對程式碼執行徹底測試尤為重要。
 
 
-* 使用RDE命令行介面將本地代碼同步到RDE。 選項包括安裝Apache/Dispatcher配置的內容包、特定包、OSGI配置檔案、內容檔案和zip檔案。 也可以引用遠程內容包。 查看 [RDE命令行工具](#rde-cli-commands) 的子菜單。 您可以使用status命令驗證部署是否成功。 （可選）使用包管理器安裝內容包。
+* 使用RDE命令列介面，將本機程式碼同步到RDE。 選項包括安裝內容套件、特定套件、OSGI設定檔案、內容檔案和Apache/Dispatcher設定的zip檔案。 也可以參考遠端內容套件。 請參閱 [RDE命令列工具](#rde-cli-commands) 區段以取得詳細資訊。 您可以使用status命令來驗證部署是否成功。 或者，使用封裝管理員來安裝內容封裝。
 
-* TestRDE中的代碼。 Cloud Manager中提供作者和發佈URL。
+* 在RDE中測試程式碼。 Cloud Manager中有提供作者和發佈URL。
 
-* 如果代碼的行為不如預期，請使用標準調試技術來瞭解問題並做出適當的更改。 不將代碼修改提交到git（因為這些修改尚未驗證），請使用本地CLI將代碼同步到RDE。 繼續迭代直到問題解決。
+* 如果程式碼的行為與預期不符，請使用標準偵錯技術來瞭解問題並做出適當的變更。 若未將程式碼修改提交至Git （因尚未驗證），請使用本機CLI將程式碼同步至RDE。 持續反複運算，直到問題解決為止。
 
-* 一旦代碼按預期的方式運行，將代碼提交到git功能分支。
+* 程式碼如預期運作後，將程式碼提交到Git功能分支。
 
-* 同步到RDE的代碼不使用Cloud Manager管道，因此現在您應使用Cloud Manager非生產管道將git功能分支部署到雲開發環境。 這將驗證代碼是否通過Cloud Manager質量門，並讓您確信稍後將使用Cloud Manager生產管道成功部署代碼。
+* 同步至RDE的程式碼不會使用Cloud Manager管道，因此現在您應該使用Cloud Manager非生產管道將Git功能分支部署至雲端開發環境。 這將驗證計畫碼是否通過Cloud Manager品質關卡，並讓您確信稍後將使用Cloud Manager生產管道成功部署計畫碼。
 
-* 對每個中間里程碑重複上述步驟，直到該功能的所有代碼都準備就緒，並且在RDE和雲開發環境上都運行良好。
+* 對每個中繼里程碑重複上述步驟，直到功能的所有程式碼都準備就緒為止，並在RDE和雲端開發環境中正常運作。
 
-* 通過Cloud Manager生產管道將代碼部署到生產環境。
+* 透過Cloud Manager生產管道將計畫碼部署到生產環境。
 
-## 使用RDE調試現有特徵 {#use-rde-to-debug-an-existing-feature}
+## 使用RDE偵錯現有功能 {#use-rde-to-debug-an-existing-feature}
 
-工作流類似於開發新功能。 區別在於，與RDE同步的代碼將反映已推送到發現問題的環境的任何內容的git標籤。 此外，部署與上游環境匹配的內容可能很有用。 這可以通過導出和導入內容包來實現。
+工作流程類似於開發新功能。 差異在於，同步至RDE的程式碼會反映推送至發現問題之環境的任何專案的Git標籤。 此外，部署符合上游環境的內容可能會有幫助。 這可透過匯出和匯入內容套件來完成。
 
-## 多個開發人員在同一RDE上協作 {#multiple-developers-collaborating-on-the-same-rde}
+## 多位開發人員在相同RDE上共同作業 {#multiple-developers-collaborating-on-the-same-rde}
 
-RDE一次支援單個項目。 由於代碼從本地開發環境同步到RDE環境，因此在給定時間由一個開發人員自己使用代碼是最自然的。
+RDE一次支援一個專案。 由於程式碼會從本機開發環境同步至RDE環境，因此開發人員在指定時間自行使用程式碼是最自然的做法。
 
-但是，通過謹慎的協調，多個開發人員可以驗證特定功能或調試特定問題。 關鍵是每個開發人員都保持其本地項目的同步，這樣特定開發人員所做的代碼更改就會被其他開發人員吸收，否則某個開發人員可能會無意中覆蓋另一開發人員的代碼。 建議的策略是，每個開發人員在同步到RDE之前將其更改提交到共用的Git分支，以便其他開發人員在進行自己的更改之前先提取更改。
+不過，在仔細協調後，多位開發人員可以驗證特定功能或偵錯特定問題。 關鍵是每個開發人員都會保持其本機專案的同步，以便特定開發人員所做的程式碼變更被其他開發人員吸收，否則一個開發人員可能會無意中覆寫另一個開發人員的程式碼。 建議的策略是讓每位開發人員在同步至RDE之前，將其變更提交至共用Git分支，讓其他開發人員在自行進行變更之前先提取變更。
 
-## RDE命令行工具命令 {#rde-cli-commands}
+## RDE指令行工具指令 {#rde-cli-commands}
 
-### 幫助/一般資訊 {#help}
+### 說明/一般資訊 {#help}
 
-* 對於命令清單，鍵入：
+* 如需命令清單，請鍵入：
 
    `aio aem:rde`
 
-* 有關命令的詳細幫助，請鍵入：
+* 如需命令的詳細說明，請輸入：
 
    `aio aem rde <command> --help`
 
-### 部署到RDE {#deploying-to-rde}
+### 部署至RDE {#deploying-to-rde}
 
-本節介紹使用RDE CLI部署、安裝或更新捆綁包、OSGI配置、內容包、單個內容檔案以及Apache或Dispatcher配置。
+本節說明如何使用RDE CLI來部署、安裝或更新套件組合、OSGI設定、內容套件、個別內容檔案以及Apache或Dispatcher設定。
 
-一般使用模式是 `aio aem:rde:install <artifact>`。
+一般使用模式為 `aio aem:rde:install <artifact>`.
 
-您可以找到以下一些示例：
+您可以在下方找到一些範例：
 
-<u>部署內容包</u>
+<u>部署內容封裝</u>
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
-成功部署的響應如下所示：
+成功部署的回應類似於以下內容：
 
 ```
 ...
 #1: deploy completed for content-package sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip on author,publish - done by 9E072FC75D54FE1A2B49431C@AdobeID at 2022-09-13T11:32:06.229Z
 ```
 
-（可選）您可以引用遠程儲存庫：
+或者，您可以參考遠端存放庫：
 
 `aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
-預設情況下，對象會部署到作者層和發佈層，但「 — s」標誌可用於針對特定層。
+依預設，成品會同時部署至製作和發佈層級，但「 — s」標幟可用於鎖定特定層級。
 
-可以AEM部署任何包，如包含代碼、內容或 [容器包裝](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) （也稱為「全部」包）。
+可以部署任何AEM套件，例如包含程式碼、內容或 [容器封裝](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) （也稱為「全部」套件）。
 
 >[!IMPORTANT]
 >
->WKND項目的調度程式配置未通過上述內容包安裝進行部署。 您需要按照「部署Apache/Dispatcher配置」步驟單獨部署它。
+>不會透過上述內容套件安裝來部署WKND專案的Dispatcher設定。 您將需要在「部署Apache/Dispatcher設定」步驟之後單獨部署它。
 
-<u>部署OSGI配置</u>
+<u>部署OSGI設定</u>
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
-其中成功部署的響應如下所示：
+其中成功部署的回應類似於以下內容：
 
 ```
 ...
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u>部署捆綁包</u>
+<u>部署套件組合</u>
 
-要部署捆綁包，請使用：
+若要部署套件組合，請使用：
 
 `aio aem:rde:install ~/.m2/repository/org/apache/felix/org.apache.felix.gogo.jline/1.1.8/org.apache.felix.gogo.jline-1.1.8.jar`
 
-其中成功部署的響應如下所示：
+其中成功部署的回應類似於以下內容：
 
 ```
 ...
@@ -248,22 +248,22 @@ RDE一次支援單個項目。 由於代碼從本地開發環境同步到RDE環�
 
 <u>部署內容檔案</u>
 
-要部署內容檔案，請使用：
+若要部署內容檔案，請使用：
 
 `aio aem:rde:install world.txt -p /apps/hello.txt`
 
-其中成功部署的響應如下所示：
+其中成功部署的回應類似於以下內容：
 
 ```
 ..
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u>部署Apache/Dispatcher配置</u>
+<u>部署Apache/Dispatcher設定</u>
 
-對於此類配置，整個資料夾結構需要採用zip檔案的形式。
+對於此類設定，整個資料夾結構都必須採用zip檔案的形式。
 
-從 `dispatcher` 模組，可AEM以通過運行以下maven命令來壓縮調度程式配置：
+從 `dispatcher` AEM專案的模組，您可以透過執行以下maven命令來壓縮Dispatcher設定：
 
 `mvn clean package`
 
@@ -271,19 +271,19 @@ RDE一次支援單個項目。 由於代碼從本地開發環境同步到RDE環�
 
 `zip -y -r dispatcher.zip .`
 
-然後，通過以下命令部署配置：
+然後使用此命令部署設定：
 
 `aio aem:rde:install target/aem-guides-wknd.dispatcher.cloud-X.X.X-SNAPSHOT.zip`
 
 >[!TIP]
 >
->以上命令假定您正在部署 [WKND](https://github.com/adobe/aem-guides-wknd) 項目的調度程式配置。 請確保替換 `X.X.X` 在部署項目的調度程式配置時使用相應的WKND項目版本號或項目特定的版本號。
+>上述命令假設您部署的是 [WKND](https://github.com/adobe/aem-guides-wknd) 專案的Dispatcher設定。 請務必取代 `X.X.X` 以及對應的WKND專案版本號碼或專案特定版本號碼，部署專案的Dispatcher設定時。
 
 >[!NOTE]
 >
->RDE支援「靈活模式」調度程式配置，但不支援「傳統模式」調度程式配置。 請參閱 [調度程式文檔](/help/implementing/dispatcher/disp-overview.md#validation-debug) 的子菜單。 您還可以查閱 [遷移到靈活模式](/help/implementing/dispatcher/validation-debug.md#migrating)的雙曲餘切值。
+>RDE支援「彈性模式」 Dispatcher設定，但不支援「舊版模式」 Dispatcher設定。 另請參閱 [dispatcher檔案](/help/implementing/dispatcher/disp-overview.md#validation-debug) 以取得這兩種模式的相關資訊。 您也可以參閱以下檔案： [移轉至彈性模式](/help/implementing/dispatcher/validation-debug.md#migrating)，如果尚未這麼做的話。
 
-成功部署將生成如下響應：
+成功部署將產生類似於以下內容的回應：
 
 ```
 ..
@@ -294,7 +294,7 @@ Logs:
   Syntax OK
 ```
 
-部署到RDE的代碼不會經歷Cloud Manager管道及其關聯的質量門，但該代碼確實會經過一些分析，這些分析將報告錯誤，如下面的代碼示例所示：
+部署到RDE的程式碼不會經歷Cloud Manager管道及其相關品質閘道，但程式碼會經過一些分析，這些分析會報告錯誤，如下列程式碼範例所示：
 
 ```
 $ aio aem:rde:install ~/.m2/repository/org/apache/felix/org.apache.felix.gogo.jline/1.1.8/org.apache.felix.gogo.jline-1.1.8.jar
@@ -309,17 +309,17 @@ The analyser found the following errors for publish :
 [api-regions-exportsimports] com.adobe.aem.temp:org.apache.felix.gogo.jline:1.1.8: Bundle org.apache.felix.gogo.jline:1.1.8 is importing package(s) [org.jline.builtins, org.jline.utils, org.apache.felix.service.command, org.apache.felix.service.threadio, org.jline.terminal, org.jline.reader, org.apache.felix.gogo.runtime, org.jline.reader.impl] in start level 20 but no bundle is exporting these for that start level.
 ```
 
-上面的代碼示例說明了如果捆綁包未解析，則該行為是「轉移」的，只有在通過安裝其他代碼滿足其要求（在本例中缺少導入）時才會安裝。
+上述程式碼範例說明套件無法解析時的行為，在此情況下，套件為「暫存」，且只有在透過安裝其他程式碼滿足需求（在此情況下為缺少匯入）時才會安裝。
 
 ### 檢查RDE的狀態 {#checking-rde-status}
 
-您可以使用RDE CLI檢查環境是否已準備好部署到，因為已通過RDE插件進行了哪些部署。
+您可以使用RDE CLI來檢查環境是否已準備好部署到，以及已透過RDE外掛程式進行了哪些部署。
 
 正在執行:
 
 `aio aem:rde:status`
 
-將返回：
+將會傳回：
 
 ```
 Info for cm-p12345-e987654
@@ -334,27 +334,27 @@ Environment: Ready
  com.adobe.granite.demo.MyServlet
 ```
 
-如果命令返回有關實例部署的注釋，您仍然可以繼續執行下一次更新，但您的最後一次更新可能尚未在實例上顯示。
+如果命令傳回部署執行個體的相關備註，您仍可執行下一次更新，但您的最後一次更新可能尚未顯示在執行個體上。
 
 ### 顯示部署歷史記錄 {#show-deployment-history}
 
-您可以通過運行以下命令來檢查對RDE的部署歷史：
+您可以透過執行以下專案來檢查對RDE進行的部署歷史記錄：
 
 `aio aem:rde:history`
 
-返回以下形式的響應：
+會以下列形式傳回回應：
 
 `#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
 
 ### 從RDE刪除 {#deleting-from-rde}
 
-您可以通過CLI工具刪除以前部署到RDE的配置和捆綁包。 使用 `status` 命令，列出可刪除的內容，其中包括 `bsn` 用於捆綁和 `pid` 以在delete命令中引用配置。
+您可以透過CLI工具刪除先前部署至RDE的組態和套件組合。 使用 `status` 可刪除專案清單的命令，包括 `bsn` 適用於套件組合和 `pid` 供設定在delete指令中參照。
 
-例如，如果 `com.adobe.granite.demo.MyServlet.cfg.json` 已安裝， `bsn` 只是 `com.adobe.granite.demo.MyServlet`的 **cfg.json** 尾碼。
+例如，如果 `com.adobe.granite.demo.MyServlet.cfg.json` 已安裝， `bsn` 只是 `com.adobe.granite.demo.MyServlet`，不含 **cfg.json** 字尾。
 
-不支援刪除內容包或內容檔案。 為了刪除它們，應重置RDE，這將使RDE返回預設狀態。
+不支援刪除內容套件或內容檔案。 為了移除它們，應重設RDE，這會使其恢復到預設狀態。
 
-有關詳細資訊，請參閱以下示例：
+如需更多詳細資訊，請參閱以下範例：
 
 ```
 aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
@@ -362,13 +362,13 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-有關詳細資訊和演示，請參見 [如何使用RDE命令](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html) 視頻教程。
+如需詳細資訊和示範，請參閱 [如何使用RDE指令](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html) 教學影片。
 
 ## 重設 {#reset-rde}
 
-重置RDE將從作者和發佈實例中刪除所有自定義代碼、配置和內容。 這很有用，例如，如果RDE已用於test特定特徵，並且您希望將其重置為預設狀態以test其他特徵，則可以。
+重設RDE會移除製作和發佈執行個體中的所有自訂程式碼、設定和內容。 例如，如果已使用RDE來測試特定功能，而且您想要將其重設為預設狀態以測試不同功能，則此選項會很有用。
 
-重置將將RDE設定為最新可用AEM版本。
+重設會將RDE設定為最新可用的AEM版本。
 
 <!-- Alexandru: hiding for now, please don't delete
 
@@ -388,11 +388,11 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 
 ### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager} -->
 
-您可以通過以下步驟使用Cloud Manager重置RDE:
+您可以使用Cloud Manager透過以下步驟重設您的RDE：
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 按一下要重置RDE的程式。
+1. 按一下要重設RDE的程式。
 
 1. 在&#x200B;**總覽**&#x200B;頁面，按一下畫面頂端的&#x200B;**環境**&#x200B;索引標籤。
 
@@ -402,103 +402,103 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 
       ![顯示全部選項](/help/implementing/cloud-manager/assets/environment-showall.png)
 
-1. 的 **環境** 開啟並列出程式的所有環境。
+1. 此 **環境** 視窗會開啟並列出該計畫的所有環境。
 
    ![環境索引標籤](/help/implementing/cloud-manager/assets/environments-tab-populated.png)
 
-1. 按一下要重置的RDE的省略號按鈕，然後選擇 **重置**。
+1. 按一下要重設的RDE的省略符號按鈕，然後選取 **重設**.
 
    ![檢視環境詳細資訊](/help/implementing/cloud-manager/assets/rde-reset.png)
 
-1. 通過按一下 **重置** 的子菜單。
+1. 按一下以確認您要重設RDE **重設** 在對話方塊中。
 
-   ![確認重置](/help/implementing/cloud-manager/assets/rde-reset-confirm.png)
+   ![確認重設](/help/implementing/cloud-manager/assets/rde-reset-confirm.png)
 
-1. 雲管理器通過標題通知確認重置進程已啟動。
+1. Cloud Manager會透過橫幅通知確認重設程式已開始。
 
-   ![重置標題通知](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
+   ![重設橫幅通知](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-RDE重置過程一旦啟動，通常需要幾分鐘才能完成並將環境返回到其預設狀態。 可以在中的任何時間查看重置進程的狀態 **狀態** 列 **環境** 或 **環境** 的子菜單。
+RDE重設程式啟動後，通常需要幾分鐘才能完成，並讓環境恢復到其預設狀態。 您可以隨時在中檢視重設程式的狀態 **狀態** 的欄 **環境** 卡片或 **環境** 視窗。
 
-![RDE重置狀態](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
+![RDE重設狀態](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
-也可以直接從 **環境** 卡 **概述** 的子菜單。
+您也可以使用省略符號按鈕直接從重設RDE **環境** 卡在上 **概觀** 頁面。
 
-![從環境卡重置RDE](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
+![從環境卡重設RDE](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-有關如何使用雲管理器管理環境的詳細資訊，請參閱 [雲管理器文檔。](/help/implementing/cloud-manager/manage-environments.md)
+有關如何使用Cloud Manager管理環境的詳細資訊，請參閱 [Cloud Manager檔案。](/help/implementing/cloud-manager/manage-environments.md)
 
 ## 執行模式 {#runmodes}
 
-RDE特定的OSGI配置可通過在資料夾名稱上使用尾碼來應用，如下例所示：
+您可以在資料夾名稱上使用尾碼來套用RDE特定的OSGI設定，如下面的範例所示：
 
 * `config.rde`
 * `config.author.rde`
 * `config.publish.rde`
 
-查看 [運行模式文檔](/help/implementing/deploying/overview.md#runmodes) 的子菜單。
+請參閱 [runmode檔案](/help/implementing/deploying/overview.md#runmodes) 以取得關於執行模式的一般資訊。
 
 >[!NOTE]
 >
->RDE OSGI配置是唯一的，因為它繼承了捆綁包聲明的任何OSGI屬性的值 `dev` 運行模式。
+>RDE OSGI設定是唯一的，因為它會繼承套件所宣告的任何OSGI屬性的值， `dev` 執行模式。
 
-RDE與其他環境不同，因為內容可以安裝在/apps下的install.rde資料夾（或install.author.rde或install.publish.rde）中。 這允許您使用命令行工具將內容提交到git並將其提交到RDE。
+RDE與其他環境不同，因為其內容可以安裝在/apps下的install.rde資料夾（或install.author.rde或install.publish.rde）中。 這可讓您使用命令列工具將內容提交到Git並將其傳送到RDE。
 
-## 填充內容 {#populating-content}
+## 填入內容 {#populating-content}
 
-重置RDE時，所有內容都會被刪除，因此，如果需要，必須採取顯式操作來添加內容。 作為最佳做法，請考慮組裝一組內容，以用作RDE中驗證或調試功能的test內容。 在RDE中填充該內容有幾種可能的策略：
+重設RDE時，會移除所有內容，因此如有需要，必須執行明確動作以新增內容。 作為最佳實務，請考慮組合一組內容以用作在RDE中驗證或偵錯功能的測試內容。 有幾種可能的策略可將該內容填入RDE：
 
-1. 使用命令行工具將內容包顯式同步到RDE
+1. 使用命令列工具將內容套件明確同步到RDE
 
-1. 將示例內容放在/apps下的install.rde資料夾中，並提交到git中，然後使用命令行工具將總體內容包同步到RDE。
+1. 將範例內容放入/apps下的install.rde資料夾內並提交Git中，然後使用命令列工具將整體內容套件同步到RDE。
 
-1. 使用 [內容拷貝工具](/help/implementing/developing/tools/content-copy.md) 從prod、stage或dev環境或從其他RDE復制定義的內容集。
+1. 使用 [內容複製工具](/help/implementing/developing/tools/content-copy.md) 從prod、stage或dev環境，或從其他RDE複製已定義的內容集。
 
-1. 使用包管理器
+1. 使用封裝管理員
 
-請注意，同步內容包時，限制為1GB。
+請注意，同步內容套件時限製為1GB。
 
 ## 記錄 {#logging}
 
-可以通過修改OSGi配置來設定日誌級別。 檢查 [文檔](/help/implementing/developing/introduction/logging.md) 的子菜單。
+記錄層級可藉由修改OSGi設定來設定。 檢查 [檔案](/help/implementing/developing/introduction/logging.md) 以取得詳細資訊。
 
-## RDE與雲開發環境有何不同？ {#how-are-rds-different-from-cloud-development-environments}
+## RDE與雲端開發環境有何不同？ {#how-are-rds-different-from-cloud-development-environments}
 
-雖然RDE在很多方面與雲開發環境類似，但是為了允許快速同步代碼，RDE還存在一些較小的體系結構差異。 將代碼傳輸到RDE的機制不同 — 對於RDE，一個從本地開發環境中同步代碼，而對於雲開發環境，一個通過雲管理器部署代碼。
+雖然RDE在許多方面類似於雲端開發環境，但為了允許快速同步程式碼，有一些細微的架構差異。 將程式碼傳入RDE的機制不同 — 對於RDE，一個會從本機開發環境同步程式碼，而對於雲端開發環境，一個會透過Cloud Manager部署程式碼。
 
-出於這些原因，建議在驗證RDE環境上的代碼後，您應使用非生產管道將代碼部署到雲開發環境。 最後，在使用生產流水線部署之前test代碼。
+基於這些原因，建議您在RDE環境中驗證程式碼後，使用非生產管道將程式碼部署到雲端開發環境。 最後，在使用生產管道部署之前測試計畫碼。
 
-另請注意以下注意事項：
+另請注意下列考量事項：
 
-* RDE不包括預覽層
-* RDE當前不支援使用Cloud Manager前端管道部署的查看和調試前端代碼。
-* RDE當前不支援預發行通道。
+* RDE不包含預覽階層
+* RDE目前不支援檢視和偵錯使用Cloud Manager前端管道部署的前端計畫碼。
+* RDE目前不支援發行前通道。
 
 
-## 我需要多少RDE? {#how-many-rds-do-i-need}
+## 我需要多少個RDE？ {#how-many-rds-do-i-need}
 
-RDE適用於每個許可的解決方案，Adobe還提供額外的RDE，這些RDE可用於生產（非沙盒）程式。
+RDE適用於每個已授權的解決方案，而Adobe也提供其他RDE，這些可授權用於生產（非沙箱）計畫。
 
-需要的RDE數量取決於組織的組成和流程。 最靈活的模型是組織為其每個AEM Cloud Service開發人員購買專用RDE。 在此模型中，每個開發人員都可以在RDE上test其代碼，而無需與其他團隊成員協調RDE環境是否可用。
+所需的RDE數目取決於組織的組成與處理。 最具彈性的模式是組織為每位AEM Cloud Service開發人員購買專屬的RDE。 在此模型中，每個開發人員都可以在RDE上測試他們的計畫碼，而無需與其他團隊成員就RDE環境是否可用進行協調。
 
-在另一個極端，具有單個RDE的團隊可以使用內部流程來協調哪些開發人員可以在給定時間使用環境。 這可能是開發人員在達到中間功能里程碑並準備在雲環境中驗證時所做的，在雲環境中他們可以快速進行所需的更改。
+在另一個極端，具有單一RDE的團隊可以使用內部流程來協調哪些開發人員可以在給定時間使用環境。 這有可能是當開發人員達到中繼功能里程碑，並準備好在雲端環境中進行驗證時，他們可以快速進行所需的變更。
 
-中間模型是組織購買多個RDE的模型，因此使用未使用的RDE的可能性更大。 一種策略是分配RDE/scrum團隊或主要功能。 內部進程可用於協調環境的使用。
+中間模式是指組織購買多個RDE，因此使用未使用RDE的可能性較大。 一種策略可能是針對每個Scrum團隊或主要功能分配RDE。 內部程式可用於協調環境的使用。
 
 ## AEM FormsCloud Service快速開發環境(RDE)與其他環境有何不同？ {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Forms開發人員可以使用AEM FormsCloud Service快速開發環境快速開發自適應Forms、工作流和定制，如定制核心元件、與第三方系統的整合等。 AEM FormsCloud Service快速開發環境(RDE)不支援通信API以及需要記錄文檔的特性和功能，例如在提交自適應表單時生成記錄文檔。 以下列出的AEM Forms功能在快速開發環境(RDE)中不可用：
+Forms開發人員可以使用AEM FormsCloud Service快速開發環境來快速開發最適化Forms、工作流程和自訂專案，例如自訂核心元件、與協力廠商系統的整合等等。 AEM FormsCloud Service快速開發環境(RDE)不支援通訊API和需要記錄檔案的功能，例如產生提交調適型表單的記錄檔案。 下列列出的AEM Forms功能不適用於快速開發環境(RDE)：
 
-* 為自適應表單配置記錄文檔
-* 在提交自適應表單或使用工作流步驟時生成記錄文檔
-* 將記錄文檔作為附件發送，並在工作流中執行「電子郵件提交」操作或「電子郵件」步驟
-* 在自適應表單或工作流步驟中使用Adobe Sign
-* 通信API
+* 設定最適化表單的記錄檔案
+* 在提交最適化表單時或透過工作流程步驟產生記錄檔案
+* 透過電子郵件提交動作或工作流程中的電子郵件步驟將記錄檔案作為附件傳送
+* 在最適化表單或工作流程步驟中使用Adobe Sign
+* 通訊API
 
 >[!NOTE]
 >
-> 快速開發環境(RDE)的UI與Forms的其他Cloud Service環境沒有區別。 所有與「記錄文檔」相關的選項（如為自適應表單選擇記錄模板的文檔）繼續顯示在UI中。 這些環境沒有通信API和記錄文檔功能來test這些選項。 因此，當您選擇需要通信API或記錄文檔功能的任何選項時，不執行任何操作，並且顯示或返回錯誤消息。
+> 快速開發環境(RDE)的UI和Forms的其他Cloud Service環境之間沒有差異。 所有與記錄檔案相關的選項（例如為最適化表單選擇記錄檔案範本）會繼續出現在UI中。 這些環境沒有通訊API和記錄檔案功能來測試這些選項。 因此，當您選擇需要通訊API或記錄檔案功能的任何選項時，不會執行任何動作，且會顯示或傳回錯誤訊息。
 
-## RDE教程
+## rde教學課程
 
-要瞭解RDE在AEMas a Cloud Service中的資訊，請參閱 [視頻教程，演示如何設定它、如何使用它以及開發生命週期](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
+若要瞭解AEMas a Cloud Service中的RDE，請參閱 [示範如何設定、使用及開發生命週期的影片教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)

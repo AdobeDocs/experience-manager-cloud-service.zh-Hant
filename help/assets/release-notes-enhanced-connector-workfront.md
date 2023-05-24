@@ -11,65 +11,65 @@ ht-degree: 1%
 
 #  版發行說明[!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
 
-以下部分概述了有關 [!DNL Workfront for Experience Manager enhanced connector]。
+以下區段會概述以下專案的一般發行說明： [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.10的發佈日期 [!DNL Workfront for Experience Manager enhanced connector] 是2023年5月18日。
+最新版本1.9.10的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 是2023年5月18日。
 
-## 發佈亮點 {#release-highlights}
+## 發行重點說明 {#release-highlights}
 
-的最新版本 [!DNL Workfront for Experience Manager enhanced connector] 包括以下更新：
+最新版本的 [!DNL Workfront for Experience Manager enhanced connector] 包含下列更新：
 
-* Workfront基於從Experience Manager到Workfront的REST調用，為重複事件訂閱返回409 HTTP響應，這會導致空指針異常。
+* Workfront會根據從Experience Manager到Workfront的REST呼叫，針對重複事件訂閱傳回409 HTTP回應，這會導致Null指標例外狀況。
 
 
 >[!IMPORTANT]
 >
->Adobe建議您 [升級到最新1.9.10版](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector]。
+>Adobe建議您 [升級至最新的1.9.10版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知問題 {#known-issues}
 
-* 在使用6.4配置項AEM目連結資料夾時，Experience Manager不保存 **[!UICONTROL 子資料夾]** 和 **[!UICONTROL 在具有項目組合的項目中建立連結資料夾]** 的子菜單。 的值 **[!UICONTROL 子資料夾]** 欄位更新 **[!UICONTROL 未定義]** 和 **[!UICONTROL 在具有項目組合的項目中建立連結資料夾]** 欄位更新 **[!UICONTROL 預設Portfolio]** 自動保存配置。
+* 使用AEM 6.4設定專案連結資料夾時，Experience Manager不會儲存值 **[!UICONTROL 子資料夾]** 和 **[!UICONTROL 在具有投資組合的專案中建立連結資料夾]** 欄位。 的值 **[!UICONTROL 子資料夾]** 欄位更新至 **[!UICONTROL 未定義]** 和的值 **[!UICONTROL 在具有投資組合的專案中建立連結資料夾]** 欄位更新至 **[!UICONTROL 預設Portfolio]** 在儲存設定後自動執行。
 
-* 當你用經典Workfront經驗時， **[!UICONTROL 發送到]** 的 **[!UICONTROL 更多]** 下拉清單不允許您在Experience Manager中選擇目標目標。 的 **[!UICONTROL 發送到]** 選項使用 **[!UICONTROL 文檔操作]** 下拉清單。 的 **[!UICONTROL 發送到]** 選項正確工作 **[!UICONTROL 更多]** 下拉清單以及 **[!UICONTROL 文檔操作]** 新Workfront體驗中提供的下拉清單。
+* 當您使用傳統Workfront體驗時， **[!UICONTROL 傳送至]** 中可用的選項 **[!UICONTROL 更多]** 下拉式清單不允許您在Experience Manager中選取目標目的地。 此 **[!UICONTROL 傳送至]** 選項可透過以下方式正常運作： **[!UICONTROL 檔案動作]** 下拉式清單。 此 **[!UICONTROL 傳送至]** 選項正確運作於 **[!UICONTROL 更多]** 下拉式清單及 **[!UICONTROL 檔案動作]** 新Workfront Experience中可用的下拉式清單。
 
-## 以前的版本 {#previous-releases}
+## 舊版 {#previous-releases}
 
-### 2023年4月發行 {#april-2023-release}
+### 2023年4月發行版本 {#april-2023-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 2023年4月10日發佈的1.9.9版包含以下更新：
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.9版（於2023年4月10日發行）包含下列更新：
 
-* Experience Manager顯示 `DateTimeParseException` 在連結資料夾建立期間從Workfront接收上次修改日期時例外。
+* Experience Manager顯示 `DateTimeParseException` 連結資料夾建立期間從Workfront收到上次修改日期時發生例外狀況。
 
-* 在短時間內建立多個連結項目資料夾時出現問題。
+* 在短時間內建立多個連結的專案資料夾時出現問題。
 
-* 無法配置新項目連結資料夾集數的閾值限制。
+* 無法設定一組新專案連結資料夾的臨界值限制。
 
-### 2023年3月發行 {#march-2023-release}
+### 2023年3月發行版本 {#march-2023-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 2023年3月03日發佈的1.9.8版包含以下更新：
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.8版（於2023年3月3日發行）包含下列更新：
 
-* 在Workfront建立項目連結資料夾時，Experience Manager效能得到改善。
+* 改善在Workfront中建立專案連結資料夾時的Experience Manager效能。
 
-* Workfront的評論刪除現在反映在Experience Manager。
+* Workfront中的評論刪除現在會反映在Experience Manager中。
 
-* 能夠在as a Cloud Service於配置連接器的Experience Manager上管理阻止新客戶。
+* 在as a Cloud Service於設定聯結器的Experience Manager上管理封鎖全新客戶的功能。
 
 
-### 2023年1月發行 {#january-2022-release}
+### 2023年1月發行版本 {#january-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 2023年2月02日發佈的1.9.7版包含以下更新：
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.7版（於2023年2月2日發行）包含下列更新：
 
-* 在安裝1.9.6版之後，元資料編輯器不會列出Workfront自定義表單屬性。
+* 安裝1.9.6版後，中繼資料編輯器沒有列出Workfront自訂表單屬性。
 
-* 設備控制台顯示 `/content/dam/jcr:content/metadata/wfProjectURL not found` 安裝Workfront增強連接器並開啟Assets首頁後出現錯誤消息。
+* 開發主控台隨即顯示 `/content/dam/jcr:content/metadata/wfProjectURL not found` 安裝Workfront增強型聯結器並開啟Assets首頁後的錯誤訊息。
 
-### 2022年12月發行 {#december-2022-release}
+### 2022年12月發行版本 {#december-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 1.9.6版，於2009年12月發佈，包括以下更新：
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.6版（於2009年12月發行）包含下列更新：
 
-**增強**
+**增強功能**
 
 <!--
 
@@ -77,116 +77,116 @@ ht-degree: 1%
 
 -->
 
-* Workfront增強連接器現在支援對資產和資料夾執行全文搜索。
+* Workfront增強型聯結器現在支援對資產和資料夾執行全文搜尋。
 
 **錯誤修正**
 
-* 文檔版本元資料在Workfront和Experience Manager之間無法正確同步。
-* 建立連結到WorkfrontExperience Manager的資料夾時，當資料夾使用全局配置中缺少定義的架構時出現問題。
-* 由於載入時間比預期長，當您按一下任何欄位時，元資料架構編輯器表單將停止響應。 為自定義表單添加了特定OSGi配置以解決此問題。 添加到元資料架構編輯器的自定義表單的名稱在日誌中可用。
+* 檔案版本中繼資料未在Workfront和Experience Manager之間正確同步。
+* 當資料夾使用的結構描述在全域設定中缺少定義時，建立連結到Workfront中Experience Manager的資料夾時出現問題。
+* 由於載入時間比預期長，當您按一下任何欄位時，中繼資料結構描述編輯器表單會停止回應。 已新增自訂表單的特定OSGi設定以解決問題。 您新增至中繼資料結構描述編輯器的自訂表單名稱可在紀錄中取得。
 
-### 2022年11月發行 {#november-2022-release}
+### 2022年11月發行版本 {#november-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 11月11日發佈的1.9.5版包括以下更新：
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.5版（於11月11日發行）包含下列更新：
 
-* 如果在Workfront中只為多值欄位定義一個值，則欄位值不會適當映射到Experience Manager。
+* 當您在Workfront中只為多值欄位定義一個值時，該欄位值未正確對應到Experience Manager。
 
-* Experience Manager顯示 `SERVER_ERROR` 的 **[!UICONTROL 連結外部檔案和資料夾]** 訪問資產資料夾時進行螢幕顯示，因為 `/content/dam/collections`。
+* Experience Manager顯示 `SERVER_ERROR` 於 **[!UICONTROL 連結外部檔案和資料夾]** 存取資產資料夾時因為對的無效許可權而出現畫面 `/content/dam/collections`.
 
-* 啟用 **[!UICONTROL 將資產發佈到Brand Portal]** 「Workfront增強的連接器配置」頁上的選項會建立錯誤事件。 即使禁用該選項後，也不會刪除該事件。
+* 啟用 **[!UICONTROL 將資產發佈至Brand Portal]** Workfront增強型聯結器設定頁面上的選項會建立不正確的事件。 停用選項後，事件也不會被刪除。
 
-   要解決此問題：
+   若要解決問題：
 
-   1. 升級到1.9.5版的增強連接器。
+   1. 升級至增強型聯結器1.9.5版。
 
-   1. 禁用 **[!UICONTROL 將資產發佈到Brand Portal]** 的子菜單。
+   1. 停用 **[!UICONTROL 將資產發佈至Brand Portal]** 選項（在進階設定下）。
 
-   1. 啟用 **[!UICONTROL 將資產發佈到Brand Portal]** 的雙曲餘切值。
+   1. 啟用 **[!UICONTROL 將資產發佈至Brand Portal]** 選項。
 
    1. 刪除錯誤的事件訂閱。
 
-      1. 執行GET呼叫 `/attask/eventsubscription/api/v1/subscriptions?page=<page-number>`
+      1. 執行GET呼叫至 `/attask/eventsubscription/api/v1/subscriptions?page=<page-number>`
 
-         對每個頁碼執行一個API調用。
+         為每個頁碼執行一個API呼叫。
 
-      1. 搜索以下文本以查找與以下URL匹配且沒有 `objId`:
+      1. 搜尋下列文字以尋找符合下列URL且沒有的事件訂閱 `objId`：
 
          ```
               "objId": "",
              "url": "<your-aem-domain>/bin/workfront-tools/events/linkedfolderprojectupdate<your-aem-domain>/
          ```
 
-         確保 `"objId": "",` 和 `"url"` 與JSON響應匹配。 建議的方法是從具有 `objId` 然後刪除該號碼。
+         確保內容介於 `"objId": "",` 和 `"url"` 符合JSON回應。 建議方法是從任何具有下列專案的「事件訂閱」複製： `objId` 然後刪除數字。
 
-      1. 注意事件訂閱ID。
+      1. 記下事件訂閱ID。
 
-      1. 刪除錯誤的事件訂閱。 將刪除API調用 `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
+      1. 刪除錯誤的事件訂閱。 對進行Delete API呼叫 `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
 
-         `200` 因為響應代碼表示成功刪除錯誤事件訂閱。
+         `200` 因為回應代碼表示成功刪除了錯誤的事件訂閱。
    >[!NOTE]
    >
-   >如果在執行此過程中提到的步驟之前已刪除了錯誤的事件預訂，則可以跳過此過程的最後一步。
+   >如果您在執行此程式中所提及的步驟之前刪除了錯誤的事件訂閱，則可以跳過此程式的最後一個步驟。
 
-### 2022年10月發行 {#october-2022-release}
+### 2022年10月發行版本 {#october-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 1.9.4版，於10月7日發佈，包括以下更新：
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.4版（於2007年10月發行）包含下列更新：
 
-* 由於發生大量事件，無法查看增強的連接器配置頁上的「事件訂閱」頁籤。
+* 由於大量事件，無法在增強型聯結器設定頁面上檢視「事件訂閱」索引標籤。
 
-* Workfront無法獲取項目中現有資料夾的清單，這將導致建立重複資料夾。
+* Workfront無法擷取專案中現有資料夾的清單，因此會建立重複的資料夾。
 
-### 2022年9月發行 {#september-2022-release}
+### 2022年9月發行版本 {#september-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 9月16日發佈的1.9.3版包括以下更新：
+[!DNL Workfront for Experience Manager enhanced connector] 版本1.9.3於9月16日發行，包含下列更新：
 
-* 無法上載大小超過8 GB的檔案。
-* 自動發佈從Workfront發送到的資產時AEM出現問題。
-* 編輯預設的元資料架構表單時，根路徑欄位不可用於「標籤」欄位。
-* 使用工作流在Workfront添加新版本AEM時出現問題。
-* 當您執行搜索AEMWorkfront可用的資AEM產時，將顯示錯誤消息。
-* 在從資產創AEM建任務建立工作流且未定義父任務名稱時，不會在Workfront建立該任務。
+* 無法上傳大小超過8 GB的檔案。
+* 自動發佈從Workfront傳送至AEM的資產時發生問題。
+* 編輯預設中繼資料結構表單時，根路徑欄位不可用於標籤欄位。
+* 使用AEM工作流程在Workfront中新增新版本時發生問題。
+* 當您執行AEM搜尋Workfront中可用的資產時，AEM會顯示錯誤訊息。
+* 當您從資產建立用於任務建立的AEM工作流程，但未定義父任務名稱時，任務不會在Workfront中建立。
 
-### 2022年8月發行 {#august-2022-release}
+### 2022年8月發行版本 {#august-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 1.9.2版，於8月3日發佈，包括以下更新：
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.2版（於2003年8月發行）包含下列更新：
 
-* 的 **[!UICONTROL 上載文檔]** 工作流步驟無法將文檔附加到Workfront。
+* 此 **[!UICONTROL 上傳檔案]** 工作流程步驟無法將檔案附加至Workfront。
 
-* 的 **[!UICONTROL 上載文檔]** 工作流步驟無法將文檔附加到Workfront的任務和問題。 工作流步驟將文檔成功附加到項目。
+* 此 **[!UICONTROL 上傳檔案]** 工作流程步驟無法將檔案附加到Workfront中的任務和問題。 工作流程步驟已成功將檔案附加到專案。
 
-### 2022年7月發行 {#july-2022-release}
+### 2022年7月發行版本 {#july-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 1.9.1版包含以下更新：
+[!DNL Workfront for Experience Manager enhanced connector] 1.9.1版包含下列更新：
 
-* 為遷移到Adobe IMS的實例增加了對使用WorkfrontAPI密鑰的Experience Manager和Workfront應用程式之間身份驗證的支援。
+* 針對移轉至Adobe IMS的執行個體，新增對Experience Manager與Workfront應用程式之間使用Workfront API金鑰進行驗證的支援。
 
-* 連結外部檔案或資料夾時，Workfront應用程式將顯示 `SERVER_ERROR` 錯誤消息。 錯誤消息引用由於API鍵不匹配而導致的未授權異常。
+* 當您連結外部檔案或資料夾時，Workfront應用程式會顯示 `SERVER_ERROR` 錯誤訊息。 錯誤訊息會因API金鑰不符而提及未經授權的例外狀況。
 
-* 為資產執行「建立任務」工作流時，日誌消息中將顯示「空指針」例外。
+* 當您執行資產的「建立工作」工作流程時，「Null指標」例外會顯示在記錄訊息中。
 
-* 啟用 `Replace Spaces with DASH` Experience Manager中的「高級設定」下的配置選項，將導致在Workfront建立重複的資料夾。
+* 當您啟用 `Replace Spaces with DASH` 「Experience Manager中的進階設定」底下的組態選項，會導致在Workfront中建立重複的資料夾。
 
-### 2022年6月發行 {#june-2022-release}
+### 2022年6月發行版本 {#june-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 現在包括以下更新：
+[!DNL Workfront for Experience Manager enhanced connector] 現在包含下列更新：
 
-* 通過連結資料夾上載或使用 `Send To` 在Workfront可以執行的將資產上載到Experience Manageras a Cloud Service的操作，這些資產會損壞，無法在Adobe Photoshop開啟。
+* 當您透過連結的資料夾上傳或使用 `Send To` Workfront中可供上傳資產至Experience Manageras a Cloud Service的動作，資產會損毀，無法在Adobe Photoshop中開啟。
 
-### 2022年3月發行 {#march-2022-release}
+### 2022年3月發行版本 {#march-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 現在包括以下更新：
+[!DNL Workfront for Experience Manager enhanced connector] 現在包含下列更新：
 
-* 現在，即使存在多個項目連結資料夾配置，您也可以在Adobe Workfront和AEM Assetsas a Cloud Service之間建立連結資料夾。
+* 您現在可以在Adobe Workfront和AEM Assetsas a Cloud Service之間建立連結資料夾，即使有多個專案連結資料夾設定亦然。
 
-* 已添加對事件訂閱分頁的支援。
+* 新增對事件訂閱分頁的支援。
 
-* 增加了AEM對6.4.x的支援。
+* 新增AEM 6.4.x支援。
 
-* 增加了對代理環境的支援。
+* 新增對Proxy環境的支援。
 
-* 根據合作夥伴和客戶反饋修復幾個錯誤。
+* 根據合作夥伴和客戶的意見回應進行多項錯誤修正。
 
 >[!MORELIKETHIS]
 >
->* [整合 [!DNL Workfront for Experience Manager enhanced connector] Experience Manager6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
+>* [整合 [!DNL Workfront for Experience Manager enhanced connector] 搭配Experience Manager6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
 

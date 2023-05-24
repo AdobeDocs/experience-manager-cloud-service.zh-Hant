@@ -1,7 +1,7 @@
 ---
 title: 開發人員模式
 seo-title: Developer Mode
-description: 開發者模式開啟帶有多個頁籤的側面板，這些頁籤為開發者提供有關當前頁面的資訊
+description: 開發人員模式會開啟一個側面板，其中包含數個標籤，為開發人員提供有關目前頁面的資訊
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
@@ -13,84 +13,84 @@ ht-degree: 1%
 
 # 開發人員模式 {#developer-mode}
 
-在中編輯頁AEM面時 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 可用，包括開發人員模式。 開發者模式開啟帶有多個頁籤的側面板，這些頁籤為開發者提供有關當前頁面的技術資訊。
+在AEM中編輯頁面時，有數個 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 可用，包括開發人員模式。 開發人員模式會開啟一個側面板，其中包含數個標籤，為開發人員提供有關目前頁面的技術資訊。
 
-有兩個頁籤：
+有兩個標籤：
 
-* **[元件](#components)** 查看結構和效能資訊。
-* **[錯誤](#errors)** 看到任何問題。
+* **[元件](#components)** 以檢視結構和效能資訊。
+* **[錯誤](#errors)** 檢視發生的任何問題。
 
-這些幫助開發人員：
+這些功能可協助開發人員：
 
-* **發現** 頁面的構成。
-* **調試：** 在何處何時發生什麼，這反過來又有助於解決問題。
+* **探索** 頁面的構成方式。
+* **偵錯：** 隨時隨地發生的狀況，進而協助解決問題。
 
 >[!NOTE]
 >
 >開發人員模式:
 >
->* 移動設備或案頭上的小窗口上不可用（由於空間限制）。
->  * 當寬度小於1024px時出現此情況。
->* 僅適用於 `administrators` 組。
+>* 不適用於行動裝置或桌上型電腦上的小型視窗（因為空間限制）。
+>  * 當寬度小於1024畫素時，就會發生這種情況。
+>* 僅適用於屬於以下群組的使用者： `administrators` 群組。
 
 
 ## 開啟開發人員模式 {#opening-developer-mode}
 
-開發者模式被實現為頁面編輯器的側面板。 要開啟面板，請選擇 **開發人員** 從頁面編輯器工具欄中的模式選擇器：
+開發人員模式會實作為頁面編輯器的側面板。 若要開啟面板，請選取 **開發人員** 從頁面編輯器工具列中的模式選取器：
 
-![開啟顯影模式](assets/developer-mode.png)
+![開啟開發人員模式](assets/developer-mode.png)
 
-該面板分為兩個頁籤：
+面板分為兩個標籤：
 
-* **[元件](#components)**  — 顯示與 [內容樹](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) 作者
-* **[錯誤](#errors)**  — 出現問題時，將顯示每個元件的詳細資訊。
+* **[元件](#components)**  — 這個選項會顯示元件樹，類似於 [內容樹狀結構](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) 作者
+* **[錯誤](#errors)**  — 發生問題時，會顯示每個元件的詳細資料。
 
-### 元件頁籤 {#components}
+### 元件標籤 {#components}
 
-![「元件」頁籤](assets/developer-mode-components-tab.png)
+![元件標籤](assets/developer-mode-components-tab.png)
 
-這顯示一個元件樹，它：
+這顯示一個元件樹狀結構，其中：
 
-* 概述在頁面上呈現的元件和模板鏈。 樹可以展開，以在層次中顯示上下文。
-* 顯示呈現元件所需的伺服器端計算時間。
-* 允許您展開樹並在樹中選取特定元件。 選擇提供對元件詳細資訊的訪問；例如：
-   * 儲存庫路徑
-   * 指向指令碼的連結(在CRXDE Lite中訪問)
-   * 元件詳細資訊，如 [元件控制台](/help/sites-cloud/authoring/features/components-console.md)
-* 樹中選定的元件由編輯器中的藍色邊框指示。
+* 概述在頁面上呈現的元件和範本鏈。 可展開樹狀結構以顯示階層內的前後關聯。
+* 顯示轉譯元件所需的伺服器端運算時間。
+* 可讓您展開樹狀結構並選取樹狀結構中的特定元件。 選取範圍可讓您存取元件詳細資訊，例如：
+   * 存放庫路徑
+   * 指令碼連結(以CRXDE Lite存取)
+   * 元件詳細資訊，如 [元件主控台](/help/sites-cloud/authoring/features/components-console.md)
+* 在編輯器中選取的元件會以藍色邊框表示。
 
-此元件頁籤有助於：
+此元件標籤有助於：
 
-* 確定並比較每個元件的渲染時間。
-* 查看並瞭解層次結構。
-* 通過查找慢速元件瞭解並改進頁面載入時間。
+* 決定並比較每個元件的演算時間。
+* 檢視並瞭解階層。
+* 找出緩慢的元件，瞭解並改善頁面載入時間。
 
-每個元件條目可能具有以下選項：
+每個元件專案都可能有以下選項：
 
-![開發者模式元件示例](assets/developer-mode-component-example.png)
+![開發人員模式元件範例](assets/developer-mode-component-example.png)
 
-* **查看詳細資訊：** 指向清單的連結，其中顯示：
-   * 用於呈現該元件的所有元件指令碼。
-   * 此特定元件的儲存庫內容路徑。
+* **檢視詳細資料：** 清單的連結，其中顯示：
+   * 用於呈現元件的所有元件指令碼。
+   * 此特定元件的存放庫內容路徑。
 
       ![檢視詳情](assets/developer-mode-view-details.png)
 
-* **編輯指令碼：** 在CRXDE Lite中開啟元件指令碼的連結。
+* **編輯指令碼：** 以CRXDE Lite開啟元件指令碼的連結。
 
-* **查看元件詳細資訊：** 在 [元件控制台。](/help/sites-cloud/authoring/features/components-console.md)
+* **檢視元件詳細資訊：** 在中開啟元件的詳細資訊 [元件主控台。](/help/sites-cloud/authoring/features/components-console.md)
 
-通過輕擊或按一下Chevron展開元件條目還可顯示：
+點選或按一下>形箭號來展開元件專案也可顯示：
 
-    *選定元件內的層次結構。
-    *將選定元件的呈現時間、嵌套在其中的任何單個元件以及組合總數。
+    *所選元件內的階層。
+    *所選元件的單獨呈現時間、任何巢狀內嵌的個別元件以及合併總數。
 
-### 「錯誤」頁籤 {#errors}
+### 錯誤標籤 {#errors}
 
-![錯誤頁籤](assets/developer-mode-errors-tab.png)
+![錯誤標籤](assets/developer-mode-errors-tab.png)
 
-但願 **錯誤** 頁籤將始終為空（如上所示），但當出現問題時，可能會為每個元件顯示以下詳細資訊：
+希望 **錯誤** 索引標籤一律為空白（如上所述），但是當發生問題時，可能會為每個元件顯示以下詳細資料：
 
-* 如果元件將條目寫入錯誤日誌，以及錯誤的詳細資訊，並直接連結到CRXDE Lite中的相應代碼，則會出現警告。
-* 如果元件開啟管理會話，則出現警告。
+* 如果元件將專案寫入錯誤記錄檔，連同錯誤的詳細資訊以及指向CRXDE Lite內適當程式碼的直接連結，會出現警告。
+* 如果元件開啟管理員工作階段，會出現警告。
 
-例如，如果調用了未定義的方法，將在 **錯誤** 的子目錄中 **元件** 頁籤將在出錯時用指示符標籤。
+例如，如果呼叫未定義的方法，則產生的錯誤將顯示在 **錯誤** 標籤與的樹狀結構中的元件專案 **元件** 索引標籤也會在錯誤發生時標示一個指標。

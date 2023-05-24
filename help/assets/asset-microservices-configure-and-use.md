@@ -1,6 +1,6 @@
 ---
-title: 配置和使用資產微服務
-description: 配置和使用雲本地資產微服務以按規模處理資產。
+title: 設定和使用資產微服務
+description: 設定並使用雲端原生資產微服務，以大規模處理資產。
 contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
@@ -12,79 +12,79 @@ ht-degree: 2%
 
 ---
 
-# 使用資產微服務和處理配置檔案 {#get-started-using-asset-microservices}
+# 使用資產微服務和處理設定檔 {#get-started-using-asset-microservices}
 
-資產微服務使用雲本機應用程式（也稱為工作程式）提供可擴展和彈性的資產處理。 Adobe管理服務，以便優化對不同資產類型和處理選項的處理。
+資產微服務可使用雲端原生應用程式（也稱為背景工作），提供可擴充及具彈性的資產處理功能。 Adobe會管理服務，以最佳方式處理各種資產型別和處理選項。
 
-資產微服務允許您處理 [各種檔案類型](/help/assets/file-format-support.md) 比以前版本的 [!DNL Experience Manager]。 例如，現在可以對PSD和PSB格式進行縮略圖提取，但以前需要的第三方解決方案，如 [!DNL ImageMagick]。
+資產微服務可讓您處理 [廣泛的檔案型別](/help/assets/file-format-support.md) 比舊版更豐富的現成可用格式 [!DNL Experience Manager]. 例如，現在可以提取PSD和PSB格式的縮圖，但之前需要第三方解決方案，例如 [!DNL ImageMagick].
 
-資產處理取決於中的配置 **[!UICONTROL 處理配置檔案]**。 Experience Manager提供基本預設設定，並讓管理員添加更具體的資產處理配置。 管理員建立、維護和修改後處理工作流的配置，包括可選的自定義。 自定義工作流使開發人員可以擴展預設產品。
+資產處理方式取決於中的設定 **[!UICONTROL 處理設定檔]**. Experience Manager提供基本的預設設定，並可讓管理員新增更具體的資產處理設定。 管理員可建立、維護和修改後處理工作流程的設定，包括可選的自訂。 自訂工作流程可讓開發人員擴充預設選件。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![資產處理的高級視圖](assets/asset-microservices-flow.png "資產處理的高級視圖")
+![資產處理的高層級檢視](assets/asset-microservices-flow.png "資產處理的高層級檢視")
 
 >[!NOTE]
 >
->此處介紹的資產處理取代了 `DAM Update Asset` 早期版本的工作流模型 [!DNL Experience Manager]。 大多數標準格式副本生成和與元資料相關的步驟被資產微服務處理替換，而剩餘的步驟（如果有）可被後處理工作流配置替換。
+>此處說明的資產處理會取代 `DAM Update Asset` 舊版中存在的工作流程模型 [!DNL Experience Manager]. 大多數標準轉譯產生和中繼資料相關步驟已由資產微服務處理取代，而其餘步驟（如有）可由後處理工作流程設定取代。
 
 ## 瞭解資產處理選項 {#get-started}
 
-[!DNL Experience Manager] 允許以下處理級別。
+[!DNL Experience Manager] 允許進行下列層級的處理。
 
 | 選項 | 說明 | 涵蓋的使用案例 |
 |---|---|---|
-| [預設設定](#default-config) | 它原樣可用，無法修改。 此配置提供了非常基本的格式副本生成功能。 | <ul> <li>標準縮略圖 [!DNL Assets] 用戶介面（48、140和319像素） </li> <li> 大預覽（Web格式副本 — 1280像素） </li><li> 元資料和文本提取。</li></ul> |
-| [自定義配置](#standard-config) | 由管理員通過用戶介面配置。 通過擴展預設選項為生成格式副本提供更多選項。 擴展現成選項以提供不同的格式和格式副本。 | <ul><li>FPO格式副本。 </li> <li>更改影像的檔案格式和解析度</li> <li> 有條件地應用於已配置的檔案類型。 </li> </ul> |
-| [自定義配置檔案](#custom-config) | 由管理員通過用戶介面配置以通過自定義應用程式使用自定義代碼來調用 [asset compute服務](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)。 支援雲本地和可擴展方法中更複雜的要求。 | 請參閱 [允許的使用案例](#custom-config)。 |
+| [預設設定](#default-config) | 目前可用，無法修改。 此設定提供非常基本的轉譯產生功能。 | <ul> <li>使用的標準縮圖 [!DNL Assets] 使用者介面（48、140和319畫素） </li> <li> 大型預覽（網頁轉譯 — 1280畫素） </li><li> 中繼資料和文字擷取。</li></ul> |
+| [自訂設定](#standard-config) | 由管理員透過使用者介面設定。 延伸預設選項，為產生轉譯提供更多選項。 擴充現成的選項，以提供不同的格式和轉譯。 | <ul><li>FPO轉譯。 </li> <li>變更檔案格式和影像解析度</li> <li> 有條件地套用至已設定的檔案型別。 </li> </ul> |
+| [自訂設定檔](#custom-config) | 管理員透過使用者介面設定為透過自訂應用程式使用自訂程式碼來呼叫 [asset compute服務](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html). 以雲端原生且可擴充的方法支援更複雜的需求。 | 另請參閱 [允許的使用案例](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
 
 ## 支援的檔案格式 {#supported-file-formats}
 
-Asset Microservices支援多種檔案格式以處理、生成格式副本或提取元資料。 請參閱 [支援的檔案格式](file-format-support.md) MIME類型的完整清單以及每種類型支援的功能。
+資產微服務可支援多種檔案格式來處理、產生轉譯或擷取中繼資料。 另請參閱 [支援的檔案格式](file-format-support.md) 以取得MIME型別的完整清單，以及每種型別支援的功能。
 
 ## 預設設定 {#default-config}
 
-已預配置某些預設設定，以確保Experience Manager中所需的預設格式副本可用。 預設配置還確保元資料提取和文本提取操作可用。 用戶可以立即開始上載或更新資產，並且預設情況下基本處理可用。
+已預先設定一些預設值，以確保Experience Manager中所需的預設轉譯可供使用。 預設設定也會確保中繼資料擷取和文字擷取作業可供使用。 使用者可以立即開始上傳或更新資產，且預設可使用基本處理。
 
-使用預設配置時，只配置最基本的處理配置檔案。 這種處理配置檔案在用戶介面上不可見，您無法修改它。 它始終執行以處理上載的資產。 這樣的預設處理配置檔案可確保滿足 [!DNL Experience Manager] 完成。
+使用預設設定時，只會設定最基本的處理設定檔。 使用者介面上看不到此類處理設定檔，且您無法對其進行修改。 它一律會執行以處理上傳的資產。 此類預設處理設定檔可確保以下專案所需的基本處理： [!DNL Experience Manager] 在所有資產上完成。
 
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
-## 標準配置 {#standard-config}
+## 標準設定 {#standard-config}
 
-[!DNL Experience Manager] 根據用戶的需要，提供為通用格式生成更具體格式副本的功能。 管理員可以建立其他 [!UICONTROL 處理配置檔案] 以便建立此格式副本。 然後，用戶將一個或多個可用配置檔案分配給特定資料夾以完成附加處理。 例如，附加處理可以生成Web、Mobile和Tablet的格式副本。 以下視頻說明了如何建立和應用 [!UICONTROL 處理配置檔案] 以及如何訪問已建立的格式副本。
+[!DNL Experience Manager] 根據使用者的需求，提供可針對常見格式產生更特定轉譯的功能。 管理員可以建立其他 [!UICONTROL 處理設定檔] 以方便這類轉譯的建立。 然後，使用者將一個或多個可用的設定檔指派給特定資料夾，以完成其他處理。 舉例來說，其他處理可產生網頁、行動裝置和平板電腦的轉譯。 以下影片說明如何建立和套用 [!UICONTROL 處理設定檔] 以及如何存取建立的轉譯。
 
-* **格式副本寬度和高度**:格式副本寬度和高度規範提供了所生成輸出影像的最大大小。 Asset Microservices嘗試生成最大可能的格式副本，其寬度和高度分別不大於指定的寬度和高度。 保留長寬比，即與原件相同。 空值表示資產處理假定原始影像的像素尺寸。
+* **轉譯寬度和高度**：轉譯寬度和高度規格提供所產生輸出影像的最大大小。 資產微服務會嘗試產生最大可能的轉譯，其寬度和高度分別不會大於指定的寬度和高度。 外觀比例會保留，與原始外觀比例相同。 空白值表示資產處理會假設原始畫面的畫素尺寸。
 
-* **MIME類型包含規則**:處理具有特定MIME類型的資產時，首先根據格式副本規範的排除的MIME類型值檢查MIME類型。 如果與該清單匹配，則不會為資產（阻止的清單）生成此特定格式副本。 否則，將根據包含的MIME類型檢查MIME類型，如果它與清單匹配，則生成格式副本（允許清單）。
+* **MIME型別包含規則**：處理具有特定MIME型別的資產時，會先根據轉譯規格的排除MIME型別值檢查MIME型別。 如果它符合該清單，則不會為資產（封鎖清單）產生此特定轉譯。 否則，會根據包含的MIME型別檢查MIME型別，如果它符合清單，則會產生轉譯（允許清單）。
 
-* **特殊FPO格式副本**:將大型資產 [!DNL Experience Manager] 入 [!DNL Adobe InDesign] 文檔，一個有創意的專業人士，等到他們 [放置資產](https://helpx.adobe.com/indesign/using/placing-graphics.html)。 同時，用戶被阻止使用 [!DNL InDesign]。 這會中斷創意流，並對用戶體驗造成負面影響。 Adobe允許臨時將小型格式副本放在 [!DNL InDesign] 文檔開始，稍後可以用全解析度資產按需替換。 [!DNL Experience Manager] 提供僅用於放置的格式副本(FPO)。 這些FPO格式副本的檔案大小較小，但長寬比相同。
+* **特殊FPO轉譯**：從放置大型資產時 [!DNL Experience Manager] 到 [!DNL Adobe InDesign] 檔案，之後創意專業人士會等待相當長的時間 [放置資產](https://helpx.adobe.com/indesign/using/placing-graphics.html). 同時，已封鎖該使用者，不允許使用 [!DNL InDesign]. 這會中斷創意流程，並對使用者體驗產生負面影響。 Adobe可暫時將小型轉譯置於 [!DNL InDesign] 開始使用的檔案，稍後可隨選以完整解析度資產取代。 [!DNL Experience Manager] 提供僅用於放置的轉譯(FPO)。 這些FPO轉譯檔案大小雖小，但外觀比例相同。
 
-處理配置檔案可以包括FPO（僅用於放置）格式副本。 請參閱 [!DNL Adobe Asset Link] [文檔](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 瞭解是否需要開啟處理配置檔案。 有關詳細資訊，請參見 [Adobe資產連結完成文檔](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。
+處理設定檔可包含FPO （僅供刊登）轉譯。 另請參閱 [!DNL Adobe Asset Link] [檔案](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 以瞭解您是否必須為處理設定檔開啟此功能。 如需詳細資訊，請參閱 [AdobeAsset Link完整檔案](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html).
 
-### 建立標準配置檔案 {#create-standard-profile}
+### 建立標準設定檔 {#create-standard-profile}
 
-要建立標準處理配置檔案，請執行以下步驟：
+若要建立標準處理設定檔，請遵循下列步驟：
 
-1. 管理員訪問 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理配置檔案]**。 按一下&#x200B;**[!UICONTROL 建立]**。
-1. 提供一個名稱，幫助您在應用到資料夾時唯一標識配置檔案。
-1. 要生成FPO格式副本，請在 **[!UICONTROL 影像]** 頁籤，啟用 **[!UICONTROL 建立FPO格式副本]**。 輸入a **[!UICONTROL 質量]** 值介於1和100之間。
-1. 要生成其他格式副本，請按一下 **[!UICONTROL 添加新]** 並提供以下資訊：
+1. 管理員存取權 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**. 按一下&#x200B;**[!UICONTROL 建立]**。
+1. 提供可協助您在套用至資料夾時唯一識別設定檔的名稱。
+1. 若要產生FPO轉譯，請前往 **[!UICONTROL 影像]** 標籤，啟用 **[!UICONTROL 建立FPO轉譯]**. 輸入 **[!UICONTROL 品質]** 值介於1到100之間。
+1. 若要產生其他轉譯，請按一下 **[!UICONTROL 新增]** 並提供下列資訊：
 
-   * 每個格式副本的檔案名。
-   * 每個格式副本的檔案格式(PNG、JPEG、GIF或WebP)。
-   * 每個格式副本的寬度和高度（以像素為單位）。 如果未指定這些值，則使用原始影像的全像素大小。
-   * 每個JPEG和WebP格式副本的質量百分比。
-   * 包含和排除的MIME類型以定義配置檔案的適用性。
+   * 每個轉譯的檔案名稱。
+   * 每個轉譯的檔案格式(PNG、JPEG、GIF或WebP)。
+   * 每個轉譯的寬度和高度（畫素）。 如果未指定值，則會使用原始影像的完整畫素大小。
+   * 每個JPEG和WebP轉譯的品質（百分比）。
+   * 包含和排除MIME型別以定義設定檔的適用性。
 
-   ![處理配置檔案添加](assets/processing-profiles-image.png)
+   ![processing-profiles-adding](assets/processing-profiles-image.png)
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
@@ -99,172 +99,172 @@ The following video demonstrates the usefulness and usage of standard profile.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
-## 自定義配置檔案和使用案例 {#custom-config}
+## 自訂設定檔和使用案例 {#custom-config}
 
-的 [!DNL Asset Compute Service] 支援各種使用情形，如預設處理、處理特定於Adobe的格式(如Photoshop檔案)，以及實施自定義或特定於組織的處理。 過去需要的DAM更新資產工作流自定義，可以自動處理，也可以通過處理配置檔案配置進行處理。 如果這些處理選項不能滿足業務需求，Adobe建議開發和使用 [!DNL Asset Compute Service] 擴展預設功能。 有關概述，請參閱 [瞭解可擴充性以及何時使用](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)。
-
->[!NOTE]
->
->Adobe建議僅在無法使用預設配置或標準配置檔案完成業務需求時使用自定義應用程式。
-
-它可以將影像、視頻、文檔和其他檔案格式轉換為不同的格式副本，包括縮略圖、提取的文本和元資料，以及存檔。
-
-開發人員可以 [!DNL Asset Compute Service] 至 [建立自定義應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) 支援的使用案例。 [!DNL Experience Manager] 可以使用管理員配置的自定義配置檔案從用戶介面調用這些自定義應用程式。 [!DNL Asset Compute Service] 支援以下調用外部服務的使用情形：
-
-* 使用 [!DNL Adobe Photoshop]`s [ImageCutout API](https://developer.adobe.com/photoshop/photoshop-api-docs/) 並將結果另存為格式副本。
-* 調用第三方系統以更新資料，例如PIM系統。
-* 使用 [!DNL Photoshop] API，用於根據Photoshop模板生成各種格式副本。
-* 使用 [Adobe LightroomAPI](https://developer.adobe.com/photoshop/photoshop-api-docs/) 以優化所攝取的資產，並將其另存為格式副本。
+此 [!DNL Asset Compute Service] 支援各種使用案例，例如預設處理、處理Adobe專用格式(如Photoshop檔案)以及實作自訂或組織專用處理。 過去需要的DAM更新資產工作流程自訂可自動處理，或透過處理設定檔設定來處理。 如果這些處理選項無法滿足業務需求，Adobe建議開發並使用 [!DNL Asset Compute Service] 以延伸預設功能。 如需概覽，請參閱 [瞭解擴充功能及使用時機](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
->無法使用自定義應用程式編輯標準元資料。 您只能修改自定義元資料。
+>Adobe建議只有在無法使用預設設定或標準設定檔滿足業務需求時，才使用自訂應用程式。
 
-### 建立自定義配置檔案 {#create-custom-profile}
+它可以將影像、視訊、檔案和其他檔案格式轉換為不同的轉譯專案，包括縮圖、擷取的文字和中繼資料以及封存。
 
-要建立自定義配置檔案，請執行以下步驟：
+開發人員可使用 [!DNL Asset Compute Service] 至 [建立自訂應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) 適用於支援的使用案例。 [!DNL Experience Manager] 可使用管理員設定的自訂設定檔，從使用者介面呼叫這些自訂應用程式。 [!DNL Asset Compute Service] 支援以下叫用外部服務的使用案例：
 
-1. 管理員訪問 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理配置檔案]**。 按一下&#x200B;**[!UICONTROL 建立]**。
-1. 按一下 **[!UICONTROL 自定義]** 頁籤。 按一下 **[!UICONTROL 添加新]**。 提供所需的格式副本檔案名。
+* 使用 [!DNL Adobe Photoshop]的 [ImageCutout API](https://developer.adobe.com/photoshop/photoshop-api-docs/) 並將結果儲存為轉譯。
+* 呼叫第三方系統以更新資料，例如PIM系統。
+* 使用 [!DNL Photoshop] 根據Photoshop範本產生多種轉譯的API。
+* 使用 [ADOBE LIGHTROOM API](https://developer.adobe.com/photoshop/photoshop-api-docs/) 以最佳化所擷取的資產，並將它們儲存為轉譯。
+
+>[!NOTE]
+>
+>您無法使用自訂應用程式編輯標準中繼資料。 您只能修改自訂中繼資料。
+
+### 建立自訂設定檔 {#create-custom-profile}
+
+若要建立自訂設定檔，請遵循下列步驟：
+
+1. 管理員存取權 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**. 按一下&#x200B;**[!UICONTROL 建立]**。
+1. 按一下 **[!UICONTROL 自訂]** 標籤。 按一下 **[!UICONTROL 新增]**. 提供所需的轉譯檔案名稱。
 1. 提供以下資訊。
 
-   * 每個格式副本的檔案名和支援的檔案副檔名。
-   * [App Builder自定義應用的端點URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html)。 應用必須與Experience Manager帳戶來自同一組織。
-   * 將服務參數添加到 [將額外資訊或參數傳遞給自定義應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend)。
-   * 包含和排除的MIME類型可將處理限制為少數特定的檔案格式。
+   * 每個轉譯的檔案名稱和支援的副檔名。
+   * [App Builder自訂應用程式的端點URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). 應用程式必須來自與Experience Manager帳戶相同的組織。
+   * 將服務引數新增至 [將額外的資訊或引數傳遞至自訂應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend).
+   * 包含和排除MIME型別，以將處理限製為一些特定的檔案格式。
 
    按一下「**[!UICONTROL 儲存]**」。
 
-定制應用程式是無頭的 [項目應用生成器](https://developer.adobe.com/app-builder/docs/overview/) 。 如果您的自定義應用程式使用處理配置檔案進行設定，則會獲取所有提供的檔案。 應用程式必須篩選檔案。
+自訂應用程式為Headless [Project App Builder](https://developer.adobe.com/app-builder/docs/overview/) 應用程式。 如果您的自訂應用程式設定了處理設定檔，則會取得所有提供的檔案。 應用程式必須篩選檔案。
 
 >[!CAUTION]
 >
->如果應用生成器應用和 [!DNL Experience Manager] 帳戶不來自同一組織，整合無效。
+>如果App Builder應用程式和 [!DNL Experience Manager] 帳戶並非來自相同組織，整合無法運作。
 
-### 自定義配置檔案的示例 {#custom-profile-example}
+### 自訂設定檔的範例 {#custom-profile-example}
 
-要說明自定義配置檔案的用法，讓我們考慮使用案例將一些自定義文本應用於市場活動影像。 您可以建立利用PhotoshopAPI編輯映像的處理配置檔案。
+為了說明自訂設定檔的使用情況，讓我們考慮使用案例，將一些自訂文字套用至行銷活動影像。 您可以建立處理設定檔，以利用Photoshop API來編輯影像。
 
-asset compute服務整合允許Experience Manager使用 [!UICONTROL 服務參數] 的子菜單。 然後，自定義應用程式調用PhotoshopAPI並將這些值傳遞給API。 例如，您可以傳遞字型名稱、文本顏色、文本粗細和文本大小，以將自定義文本添加到市場活動影像。
+asset compute服務整合可讓Experience Manager使用這些引數傳遞給自訂應用程式。 [!UICONTROL 服務引數] 欄位。 自訂應用程式接著會呼叫Photoshop API，並將這些值傳遞至API。 例如，您可以傳遞字型名稱、文字顏色、文字粗細和文字大小，以將自訂文字新增至行銷活動影像。
 
 <!-- TBD: Check screenshot against the interface. -->
 
-![自定義處理配置檔案](assets/custom-processing-profile.png)
+![custom-processing-profile](assets/custom-processing-profile.png)
 
-*圖：使用 [!UICONTROL 服務參數] 欄位，將添加的資訊傳遞給構建到自定義應用程式中的預定義參數。 在此示例中，當上載市場活動映像時，映像將更新為 `Jumanji` 文本 `Arial-BoldMT` 字型。*
+*圖：使用 [!UICONTROL 服務引數] 將新增資訊傳遞至預先定義引數（內建至自訂應用程式）的欄位。 在此範例中，上傳行銷活動影像時，影像會以下列專案更新： `Jumanji` 文字輸入 `Arial-BoldMT` 字型。*
 
-## 使用處理配置檔案處理資產 {#use-profiles}
+## 使用處理設定檔來處理資產 {#use-profiles}
 
-建立附加的自定義處理配置檔案並將其應用到特定資料夾，以便Experience Manager處理上載到這些資料夾或在這些資料夾中更新的資產。 預設的內置標準處理配置檔案始終執行，但在用戶介面上不可見。 如果添加自定義配置檔案，則兩個配置檔案都用於處理上載的資產。
+建立其他自訂處理設定檔並套用至特定資料夾，以便Experience Manager處理上傳至這些資料夾或更新之資產。 系統會一律執行預設的內建標準處理設定檔，但不會顯示在使用者介面上。 如果您新增自訂設定檔，則會使用兩個設定檔來處理上傳的資產。
 
-使用以下方法之一將處理配置檔案應用於資料夾：
+使用下列其中一種方法，將處理設定檔套用至資料夾：
 
-* 管理員可以在中選擇處理配置檔案定義 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理配置檔案]**，使用 **[!UICONTROL 將配置檔案應用到資料夾]** 操作。 它開啟一個內容瀏覽器，允許您導航到特定資料夾，選擇它們並確認配置檔案的應用程式。
-* 用戶可以在「資產」用戶介面中選擇資料夾，使用 **[!UICONTROL 屬性]** 操作以開啟資料夾屬性螢幕，按一下 **[!UICONTROL 資產處理]** 的 [!UICONTROL 處理配置檔案] 清單中，選擇該資料夾的相應處理配置檔案。 要保存更改，請按一下 **[!UICONTROL 保存並關閉]**。
-   ![將處理配置檔案應用到「資產屬性」頁籤中的資料夾](assets/folder-properties-processing-profile.png)
+* 管理員可以在以下位置選擇處理設定檔定義： **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**，並使用 **[!UICONTROL 將設定檔套用至資料夾]** 動作。 它會開啟內容瀏覽器，讓您導覽至特定資料夾、選取資料夾並確認設定檔的應用。
+* 使用者可以在Assets使用者介面中選取資料夾，使用 **[!UICONTROL 屬性]** 動作若要開啟資料夾屬性畫面，請按一下 **[!UICONTROL 資產處理]** 標籤，然後在 [!UICONTROL 處理設定檔] 清單中，為該資料夾選取適當的處理設定檔。 若要儲存變更，請按一下 **[!UICONTROL 儲存並關閉]**.
+   ![從「資產屬性」索引標籤將處理設定檔套用至資料夾](assets/folder-properties-processing-profile.png)
 
-* 用戶可以在「資產」用戶介面中選擇資料夾或特定資產以應用處理配置檔案，然後選擇 ![資產重新處理表徵圖](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL 重新處理資產]** 的上界。
+* 使用者可以在Assets使用者介面中選取資料夾或特定資產，以套用處理設定檔，然後選取 ![資產重新處理圖示](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL 重新處理資產]** 從上方可用的選項中選取。
 
 >[!TIP]
 >
->只能將一個處理配置檔案應用於資料夾。 要生成更多格式副本，請將更多格式副本定義添加到現有處理配置檔案。
+>一個資料夾只能套用一個處理設定檔。 若要產生更多轉譯，請將更多轉譯定義新增至現有的處理設定檔。
 
-在將處理配置檔案應用到資料夾後，使用此資料夾或其任何子資料夾中上載（或更新）的所有新資產都使用配置的附加處理配置檔案進行處理。 此處理是標準預設配置檔案的補充。
+在處理設定檔套用至資料夾後，系統會使用設定的其他處理設定檔來處理此資料夾或其任何子資料夾中上傳（或更新）的所有新資產。 此處理是在標準預設設定檔之外進行的。
 
 >[!NOTE]
 >
->應用於資料夾的處理配置檔案適用於整個樹，但可以使用應用於子資料夾的其他配置檔案進行過載。 將資產上載到資料夾時，Experience Manager會檢查包含資料夾的屬性以查找處理配置檔案。 如果未應用任何檔案，則會檢查層次結構中的父資料夾以應用處理配置檔案。
+>套用至資料夾的處理設定檔適用於整個樹狀結構，但可以覆寫套用至子資料夾的其他設定檔。 將資產上傳至資料夾時，Experience Manager會檢查包含資料夾的屬性以取得處理設定檔。 如果未套用任何設定檔，則會檢查階層中的父資料夾以套用處理設定檔。
 
-要驗證是否處理了資產，請在 [!UICONTROL 格式副本] 左欄。 開啟資產預覽並開啟左滑軌以訪問 **[!UICONTROL 格式副本]** 的子菜單。 處理配置檔案中的特定格式副本應可見且可訪問，該特定資產的類型與MIME類型包含規則匹配。
+若要確認資產已處理，請在以下位置預覽產生的轉譯： [!UICONTROL 轉譯] 在左側邊欄中檢視。 開啟資產預覽並開啟左側邊欄以存取 **[!UICONTROL 轉譯]** 檢視。 處理設定檔中的特定轉譯（其特定資產型別符合MIME型別包含規則）應是可見且可存取的。
 
-![附加格式副本](assets/renditions-additional-renditions.png)
+![其他轉譯](assets/renditions-additional-renditions.png)
 
-*圖：由應用於父資料夾的處理配置檔案生成的兩個附加格式副本的示例。*
+*圖：由套用至父資料夾的處理設定檔產生的兩個額外轉譯範例。*
 
-## 後處理工作流 {#post-processing-workflows}
+## 後處理工作流程 {#post-processing-workflows}
 
-對於需要額外處理無法使用處理配置檔案實現的資產的情況，可以將附加的後處理工作流添加到配置中。 後期處理允許您在使用資產微服務的可配置處理之上添加完全定製的處理。
+若是需要額外處理無法使用處理設定檔實現的資產，可將其他後處理工作流程新增到設定。 後處理可讓您在使用資產微服務的可設定處理之上新增完全自訂的處理作業。
 
-後處理工作流，或 [自動啟動工作流](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html)，如果已配置，則自動執行 [!DNL Experience Manager] 在微服務處理完成後。 無需手動添加工作流啟動程式來觸發工作流。 示例包括：
+後處理工作流程，或 [自動啟動工作流程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html)，如果已設定，則會自動執行 [!DNL Experience Manager] 微服務處理完成後。 不需要手動新增工作流程啟動器來觸發工作流程。 範例包括：
 
-* 處理資產的自定義工作流步驟。
-* 將元資料或屬性添加到外部系統資產的整合，例如產品或流程資訊。
-* 外部服務完成的附加處理。
+* 處理資產的自訂工作流程步驟。
+* 整合以將中繼資料或屬性從外部系統新增至資產，例如產品或程式資訊。
+* 外部服務完成的其他處理。
 
-將後處理工作流配置添加到 [!DNL Experience Manager]，請執行以下步驟：
+若要將後處理工作流程設定新增至 [!DNL Experience Manager]，請遵循下列步驟：
 
-* 建立一個或多個工作流模型。 這些定制模型稱為 *後處理工作流模型* 在文檔中。 這些是常規的 [!DNL Experience Manager] 工作流模型。
-* 將所需的工作流步驟添加到這些模型。 查看預設工作流中的步驟，並將所有必需的預設步驟添加到自定義工作流。 基於工作流模型配置對資產執行這些步驟。 例如，如果希望在資產上載時自動執行智慧標籤，請將該步驟添加到自定義後處理工作流模型。
-* 添加 [!UICONTROL DAM更新資產工作流已完成流程] 最後一步。 添加此步驟可確保Experience Manager知道處理何時結束以及資產可標籤為已處理，即 *新建* 的子菜單。
-* 為自定義工作流運行程式服務建立配置，該配置允許通過路徑（資料夾位置）或規則運算式配置後處理工作流模型的執行。
+* 建立一或多個工作流程模型。 這些自訂模型稱為 *後處理工作流程模型* 在本檔案內。 這些是正常的 [!DNL Experience Manager] 工作流程模型。
+* 將所需的工作流程步驟新增至這些模型。 檢閱預設工作流程的步驟，並將所有必要的預設步驟新增至自訂工作流程。 這些步驟會根據工作流程模型設定在資產上執行。 例如，如果您想在資產上傳時自動進行智慧標籤，請將步驟新增至自訂後處理工作流程模型。
+* 新增 [!UICONTROL DAM更新資產工作流程已完成程式] 在結尾處步驟。 新增此步驟可確保Experience Manager知道處理何時結束，且資產可標示為已處理，即 *新增* 會顯示在資產上。
+* 建立「自訂工作流程執行器」服務的設定，允許透過路徑（資料夾位置）或規則運算式設定後置處理工作流程模型的執行。
 
-有關在後處理工作流中可以使用哪些標準工作流步驟的詳細資訊，請參閱 [後處理工作流中的工作流步驟](developer-reference-material-apis.md#post-processing-workflows-steps) 的子菜單。
+如需後處理工作流程中可以使用哪些標準工作流程步驟的詳細資訊，請參閱 [後處理工作流程中的工作流程步驟](developer-reference-material-apis.md#post-processing-workflows-steps) （在開發人員參考中）。
 
-### 建立後處理工作流模型 {#create-post-processing-workflow-models}
+### 建立後處理工作流程模型 {#create-post-processing-workflow-models}
 
-後處理工作流模型是常規的 [!DNL Experience Manager] 工作流模型。 如果您需要針對不同的儲存庫位置或資產類型進行不同的處理，請建立不同的模型。
+後處理工作流程模型為一般模型 [!DNL Experience Manager] 工作流程模型。 如果您需要對不同的存放庫位置或資產型別進行不同的處理，請建立不同的模型。
 
-根據需要添加處理步驟。 您可以同時使用兩個步驟，即可用的支援步驟，以及任何自定義實施的工作流步驟。
+處理步驟會視需要新增。 您可以使用這兩者、可用的支援步驟，以及任何自訂實作的工作流程步驟。
 
-確保每個後處理工作流的最後一步是 `DAM Update Asset Workflow Completed Process`。 最後一步有助於確保Experience Manager知道何時完成資產處理。
+確定每個後處理工作流程的最後一步為 `DAM Update Asset Workflow Completed Process`. 最後一步有助於確保Experience Manager知道資產處理何時完成。
 
-### 配置後處理工作流執行 {#configure-post-processing-workflow-execution}
+### 設定後處理工作流程執行 {#configure-post-processing-workflow-execution}
 
-在資產微服務完成上載資產的處理後，您可以定義後處理工作流以進一步處理資產。 要使用工作流模型配置後處理，可以執行以下操作之一：
+資產微服務完成上傳資產的處理之後，您可以定義後續處理工作流程以進一步處理資產。 若要使用工作流程模型設定後續處理，您可以執行下列任一項作業：
 
-* [在資料夾屬性中應用工作流模型](#apply-workflow-model-to-folder)。
-* [配置自定義工作流運行程式服務](#configure-custom-workflow-runner-service)。
+* [在資料夾屬性中套用工作流程模型](#apply-workflow-model-to-folder).
+* [設定自訂工作流程執行器服務](#configure-custom-workflow-runner-service).
 
-#### 將工作流模型應用於資料夾 {#apply-workflow-model-to-folder}
+#### 將工作流程模型套用至資料夾 {#apply-workflow-model-to-folder}
 
-對於典型的後處理使用案例，請考慮使用方法將工作流應用到資料夾。 在資料夾中應用工作流模型 [!UICONTROL 屬性]，請執行以下步驟：
+對於典型的後續處理使用案例，請考慮使用將工作流程套用至資料夾的方法。 若要在資料夾中套用工作流程模型 [!UICONTROL 屬性]，請遵循下列步驟：
 
-1. 建立工作流模型。
-1. 選擇資料夾，按一下 **[!UICONTROL 屬性]** ，然後按一下 **[!UICONTROL 資產處理]** 頁籤。
-1. 下 **[!UICONTROL 自動啟動工作流]**，選擇所需的工作流，提供工作流的標題，然後保存更改。
+1. 建立工作流程模型。
+1. 選取資料夾，按一下 **[!UICONTROL 屬性]** ，然後按一下 **[!UICONTROL 資產處理中]** 標籤。
+1. 下 **[!UICONTROL 自動啟動工作流程]**，選取所需的工作流程、提供工作流程的標題，然後儲存變更。
 
-   ![將後處理工作流應用於其「屬性」中的資料夾](assets/post-processing-profile-workflow-for-folders.png)
+   ![將後處理工作流程套用至其屬性中的資料夾](assets/post-processing-profile-workflow-for-folders.png)
 
-#### 配置自定義工作流運行程式服務 {#configure-custom-workflow-runner-service}
+#### 設定自訂工作流程執行器服務 {#configure-custom-workflow-runner-service}
 
-您可以為無法通過將工作流應用到資料夾而輕鬆實現的高級配置配置自定義工作流運行程式服務。 例如，使用規則運算式的工作流。 Adobe CQDAM自定義工作流運行程式(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服務。 它提供了以下兩個配置選項：
+您可以為無法透過將工作流程套用至資料夾來輕鬆完成的進階設定設定設定自訂工作流程執行器服務。 例如，使用規則運算式的工作流程。 Adobe CQ DAM自訂工作流程執行器(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是一項OSGi服務。 它提供下列兩個設定選項：
 
-* 按路徑(`postProcWorkflowsByPath`):可以根據不同的儲存庫路徑列出多個工作流模型。 使用冒號分隔路徑和模型。 支援簡單的儲存庫路徑。 將這些映射到 `/var` 路徑。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
-* 按表達式(`postProcWorkflowsByExpression`):可以根據不同的規則運算式列出多個工作流模型。 表達式和模型應用冒號分隔。 規則運算式應直接指向「資產」節點，而不是任何格式副本或檔案。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
+* 依路徑分類的處理後工作流程(`postProcWorkflowsByPath`)：可以根據不同的存放庫路徑列出多個工作流程模型。 使用冒號分隔路徑和模型。 支援簡單的存放庫路徑。 將這些專案對應至中的工作流程模型 `/var` 路徑。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
+* 依據運算式的後處理工作流程(`postProcWorkflowsByExpression`)：可根據不同的規則運算式列出多個工作流程模型。 運算式和模型應以冒號分隔。 規則運算式應直接指向Asset節點，而非轉譯或檔案之一。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
 
-要瞭解如何部署OSGi配置，請參見 [部署 [!DNL Experience Manager]](/help/implementing/deploying/overview.md)。
+若要瞭解如何部署OSGi設定，請參閱 [部署至 [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
 
-#### 禁用後處理工作流執行
+#### 停用後處理工作流程執行
 
-當不需要後處理時，在中建立和使用「空」工作流模型 __自動啟動工作流__ 的子菜單。
+當不需要後期處理時，請在中建立並使用「空」工作流程模型 __自動啟動工作流程__ 選取。
 
-##### 建立禁用的自動啟動工作流模型
+##### 建立停用的自動啟動工作流程模型
 
-1. 導航到 __工具>工作流>模型__
-1. 選擇 __建立>建立模型__ 按鈕
-1. 提供新工作流模型的標題和名稱，例如：
-   * 標題：禁用自動啟動工作流
-   * 名稱：禁用自動啟動工作流
-1. 選擇 __完成__ 建立工作流模型
-1. __選擇__ 和 __編輯__ 新建立的工作流模型
-1. 在「工作流模型」編輯器中，選擇 __步驟1__ 從模型定義中刪除它
-1. 開啟 __側面板__，然後選擇 __步驟__
-1. 拖動 __DAM更新資產工作流已完成__ 進入模型定義
-1. 選擇 __頁面資訊__ 按鈕(在 __側面板__ 切換)，然後選擇 __開啟屬性__
-1. 在 __基本__ 頁籤 __臨時工作流__
-1. 選擇 __保存並關閉__ 從頂部操作欄
-1. 選擇 __同步__ 的子菜單。
-1. 關閉工作流模型編輯器
+1. 導覽至 __「工具」>「工作流程」>「模型」__
+1. 選取 __「建立」>「建立模型」__ 形成頂端動作列
+1. 提供新工作流程模型的標題和名稱，例如：
+   * 標題：停用自動啟動工作流程
+   * 名稱： disable-auto-start-workflow
+1. 選取 __完成__ 建立工作流程模型的方式
+1. __選取__ 和 __編輯__ 新建立的工作流程模型
+1. 在工作流程模型編輯器中，選擇 __步驟1__ 從模型定義中刪除它
+1. 開啟 __側面板__，並選取 __步驟__
+1. 拖曳 __DAM更新資產工作流程已完成__ 逐步執行模型定義
+1. 選取 __頁面資訊__ 按鈕(在 __側面板__ 切換)，然後選取 __開啟屬性__
+1. 在 __基本__ 索引標籤，選取 __暫時性工作流程__
+1. 選取 __儲存並關閉__ 從頂端動作列
+1. 選取 __同步__ 在頂端動作列中
+1. 關閉工作流程模型編輯器
 
-##### 應用禁用的自動啟動工作流模型
+##### 套用停用的自動啟動工作流程模型
 
-按照中概述的步驟操作 [將工作流模型應用到資料夾](#apply-workflow-model-to-folder) 並設定 __禁用自動啟動工作流__ 的 __自動啟動工作流__ 資料夾不需要對資產進行後處理。
+請依照中概述的步驟操作 [將工作流程模型套用至資料夾](#apply-workflow-model-to-folder) 並設定 __停用自動啟動工作流程__ 作為 __自動啟動工作流程__ 資料夾不需要資產後處理。
 
-## 最佳做法和限制 {#best-practices-limitations-tips}
+## 最佳作法和限制 {#best-practices-limitations-tips}
 
-* 在設計工作流時考慮您對所有類型的格式副本的需求。 如果您預計將來不需要格式副本，請從工作流中刪除其建立步驟。 之後無法批量刪除格式副本。 長期使用後，不希望的格式副本可能佔用大量儲存空間 [!DNL Experience Manager]。 對於單個資產，您可以從用戶介面手動刪除格式副本。 對於多個資產，您可以自定義 [!DNL Experience Manager] 刪除特定格式副本或刪除資產並重新上載這些資產。
-* 目前，支援僅限於生成格式副本。 不支援生成新資產。
-* 當前，元資料提取的檔案大小限制約為15 GB。 上載超大資產時，有時元資料提取操作會失敗。
+* 在設計工作流程時，請考慮您對所有型別轉譯的需求。 如果您預計未來不需要轉譯，請從工作流程中移除其建立步驟。 之後無法大量刪除轉譯。 長時間使用後，不需要的轉譯可能會佔用大量儲存空間 [!DNL Experience Manager]. 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自訂 [!DNL Experience Manager] 以刪除特定轉譯或刪除資產，然後再次上傳這些資產。
+* 目前，支援僅限於產生轉譯。 不支援產生新資產。
+* 目前，中繼資料擷取的檔案大小限制約為15 GB。 上傳超大型資產時，有時中繼資料擷取作業會失敗。
 
 **另請參閱**
 
@@ -283,10 +283,10 @@ asset compute服務整合允許Experience Manager使用 [!UICONTROL 服務參數
 
 >[!MORELIKETHIS]
 >
->* [asset compute服務簡介](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)。
->* [瞭解可擴充性以及何時使用](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)。
->* [如何建立自定義應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)。
->* [支援用於各種使用情形的MIME類型](/help/assets/file-format-support.md)。
+>* [asset compute服務簡介](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html).
+>* [瞭解擴充功能及使用時機](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
+>* [如何建立自訂應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html).
+>* [各種使用案例支援的MIME型別](/help/assets/file-format-support.md).
 
 
 <!-- TBD: 

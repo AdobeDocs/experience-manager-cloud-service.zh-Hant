@@ -1,6 +1,6 @@
 ---
-title: 瞭解AEM Sites內容以及如何將其翻AEM譯
-description: 學習AEM Sites概念和翻AEM譯理論。
+title: 瞭解AEM Sites內容以及如何在AEM中翻譯
+description: 瞭解AEM Sites概念和AEM翻譯理論。
 index: true
 hide: false
 hidefromtoc: false
@@ -14,32 +14,32 @@ ht-degree: 18%
 
 # 了解網站內容與如何在 AEM 翻譯網站內容 {#learn-about}
 
-學習AEM Sites概念和翻AEM譯理論。
+瞭解AEM Sites概念和AEM翻譯理論。
 
 ## 目標 {#objective}
 
-本文檔可幫助您瞭解AEM Sites內容的建立以及如何翻譯此類內容。 閱讀本文件後，您應該：
+本檔案可協助您瞭解AEM Sites內容的建立以及這類內容的翻譯方式。 閱讀本文件後，您應該：
 
-* 瞭解在AEM Sites建立內容的基本概念。
-* 熟悉如何支AEM持翻譯。
+* 瞭解AEM Sites內容建立的基本概念。
+* 熟悉AEM支援翻譯的方式。
 
-## AEM Sites概述 {#aem-sites}
+## AEM Sites概觀 {#aem-sites}
 
-AEM Sites是建立、管理和提供數字型驗的綜合平台。 內容作者使用簡單的WYSIWYG拖放工具在直觀編輯器中建立頁面，該編輯器將呈現內容，就像您的觀眾將使用它一樣。
+AEM Sites是建立、管理和提供數位體驗的完整平台。 內容作者可使用簡單的WYSIWYG拖放工具，在直覺式編輯器中建立頁面，如此一來，內容就會如同您的對象使用內容一樣呈現。
 
-在站點控制台中，您可以輕鬆管理構成您體驗的頁面，從而以易於理解的層次結構概括了您的內容，從而可以輕鬆地重新安排、複製和發佈您的內容。
+您可在網站主控台中輕鬆管理構成您體驗的頁面，以易於理解的階層提供內容的概觀，並允許輕鬆重新排列、複製和發佈內容。
 
 >[!TIP]
 >
->本文檔僅介紹網站功能的AEM基本知識，因此您作為翻譯專家瞭解您需要翻譯的內容。
+>本檔案歷程僅涵蓋AEM Sites功能的基本知識，以便您作為翻譯專家瞭解您需要翻譯的內容。
 >
->有關AEM Sites及其所有強大功能的詳細資訊，請參閱 [附加資訊部分](#additional-information) 在本文的結尾，爭取更多AEM Sites資源。
+>如需AEM Sites的詳細資訊及其所有強大功能的詳細資訊，請參閱 [其他資訊區段](#additional-information) 如需更多AEM Sites資源，請參閱本文章末尾。
 
-## 翻譯網站內AEM容 {#translating-in-aem}
+## 在AEM中翻譯網站內容 {#translating-in-aem}
 
-不僅AEM使建立和管理內容變得簡單，而且還使您能夠輕鬆地將內容翻譯給您的受眾，無論他們在何處。
+AEM不僅可讓您輕鬆建立和管理內容，也可讓您輕鬆為對象翻譯內容，無論對象身在何處。
 
-在高級別上，翻譯中AEM包括四個簡單步驟：
+概略來說，AEM中的翻譯包含四個簡單步驟：
 
 1. 透過設定整合框架來定義對翻譯服務的連接。
 1. 使用翻譯規則定義應翻譯的內容。
@@ -47,20 +47,20 @@ AEM Sites是建立、管理和提供數字型驗的綜合平台。 內容作者�
 1. 審查和發佈已翻譯內容。
 
 
-在此過程中，您將瞭解有關如何逐AEM步翻譯內容的詳細資訊。
+在此歷程中，您將瞭解有關AEM如何逐步翻譯內容的詳細資訊。
 
 ## 下一步 {#what-is-next}
 
-感謝您開始AEM Sites翻譯之旅！ 閱讀了本文件後，您應該：
+感謝您開始您的AEM Sites翻譯歷程！ 閱讀了本文件後，您應該：
 
 * 瞭解AEM Sites內容建立的基本概念。
-* 熟悉如何支AEM持翻譯。
+* 熟悉AEM支援翻譯的方式。
 
-在此知識基礎上，繼續您的AEM Sites翻譯之旅，下一步查看文檔 [開始AEM Sites翻譯](getting-started.md) 您將在其中概述如何管AEM理內容和瞭解其翻譯工具。
+在此知識的基礎上繼續您的AEM Sites翻譯歷程，接下來檢視檔案 [開始使用AEM Sites翻譯](getting-started.md) 在這裡，您可以概要瞭解AEM管理內容的方式，並瞭解其翻譯工具。
 
 ## 其他資源 {#additional-resources}
 
-雖然建議您通過查看文檔轉到網站翻譯過程的下一部分 [開始AEM Sites翻譯，](getting-started.md) 下面是一些附加的可選資源，這些資源對本文檔中提到的一些概念進行了更深入的瞭解，但不需要繼續旅行。
+我們建議您檢閱檔案，繼續網站翻譯歷程的下一部分 [開始使用AEM Sites翻譯，](getting-started.md) 以下是一些其他可選資源，這些資源對本文檔中提到的一些概念進行了更深入的探究，但並非繼續此歷程所必需的。
 
-* [創作頁面快速入門手冊](/help/sites-cloud/authoring/getting-started/quick-start.md)  — 快速概述使用AEM Sites建立內容的最重要概念
+* [製作頁面的快速入門手冊](/help/sites-cloud/authoring/getting-started/quick-start.md)  — 使用AEM Sites建立內容的最重要概念快速概覽
 * [MSM 和翻譯](/help/sites-cloud/administering/msm-and-translation.md) - 詳細說明 AEM 多網站管理員以及它如何與其翻譯工具一起工作

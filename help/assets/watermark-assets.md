@@ -1,6 +1,6 @@
 ---
-title: 加水印
-description: 將水印添加到數字資產。
+title: 為資產加上浮水印
+description: 為您的數位資產新增浮水印。
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
@@ -12,21 +12,21 @@ ht-degree: 12%
 
 ---
 
-# 加水印 {#watermark-assets}
+# 為您的資產加上浮水印 {#watermark-assets}
 
-[!DNL Adobe Experience Manager Assets] 允許您向影像添加數字水印。 [!DNL Assets] 支援將影像作為水印應用於其他影像檔案。 水印可以幫助用戶驗證資產的真實性和版權所有權。 此外，水印可以用於表示文檔的狀態，如機密、草稿、有效性等。
+[!DNL Adobe Experience Manager Assets] 可讓您新增數位浮水印至影像。 [!DNL Assets] 支援將影像套用為其他影像檔案的浮水印。 浮水印可協助使用者驗證資產的真實性和版權所有權。 此外，浮水印可用於表示檔案的狀態，如機密性、草稿、有效性等。
 
-配置 [!DNL Experience Manager] 到水印資產：
+進行設定 [!DNL Experience Manager] 若要為資產加上浮水印：
 
-1. 將PNG檔案應用為水印。 將此檔案上載到DAM儲存庫。
+1. PNG檔案會套用為浮水印。 將此檔案上傳至您的DAM存放庫。
 
-1. 導航到 **[!UICONTROL 工具>資產>資產配置]**。
+1. 導覽至 **[!UICONTROL 「工具>資產>資產設定」]**.
 
-1. 按一下 **[!UICONTROL 系統水印配置檔案]**。
+1. 按一下 **[!UICONTROL 系統浮水印設定檔]**.
 
-1. 在 [!UICONTROL 「系統水印配置檔案」頁]，在步驟1中指定上載到DAM儲存庫的映像路徑。
+1. 於 [!UICONTROL 系統浮水印設定檔頁面]，請指定在步驟1上傳至DAM存放庫的影像路徑。
 
-1. 在 **[!UICONTROL 縮放]** 的子菜單。
+1. 在中，指定相對於轉譯寬度的浮水印比例，範圍從0.0到1.0 **[!UICONTROL 縮放]** 欄位。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
@@ -34,22 +34,22 @@ ht-degree: 12%
 
    >[!NOTE]
    >
-   >如果已使用 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 配置檔案（OSGi配置），您可以繼續使用它，但是，Adobe建議使用新方法。
+   >如果您已設定系統浮水印設定檔，使用 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 設定檔案（OSGi設定），您可以繼續使用，但Adobe建議使用新方法。
 
 
-1. [建立處理配置檔案](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 利用資產微服務來應用水印。
+1. [建立處理設定檔](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 以利用資產微服務來套用浮水印。
 
-   ![用於建立水印的資產處理配置檔案](assets/watermark-processing-profile.png)
+   ![用於建立浮水印的資產處理設定檔](assets/watermark-processing-profile.png)
 
-   確保啟用 **[!UICONTROL 水印]** 建立處理配置檔案時切換。
+   確保您啟用 **[!UICONTROL 浮水印]** 在建立處理設定檔時切換。
 
-1. [將處理配置檔案應用到資料夾](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 建立帶水印的資產。
+1. [將處理設定檔套用至資料夾](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 以建立含水印的資產。
 
 ## 提示和限制 {#tips-limitations-bestpractices}
 
-* 可以使用單個配置來對所有資產進行水印。 只有一幅影像用於水印，其寬度固定。
-* 可以將水印放在中心，而不進行平鋪。
-* 不支援基於文本的水印。
+* 您可以使用單一設定來浮水印顯示所有資產。 只有一個影像用於浮水印，而且其寬度是固定的。
+* 您可將浮水印放在中央而不需平鋪。
+* 不支援文字型浮水印。
 
 **另請參閱**
 
@@ -68,6 +68,6 @@ ht-degree: 12%
 
 >[!MORELIKETHIS]
 >
->* [資產微服務概述](/help/assets/asset-microservices-overview.md)。
->* [將資產微服務與處理配置檔案一起使用](/help/assets/asset-microservices-configure-and-use.md)。
+>* [資產微服務概覽](/help/assets/asset-microservices-overview.md).
+>* [搭配處理設定檔使用資產微服務](/help/assets/asset-microservices-configure-and-use.md).
 

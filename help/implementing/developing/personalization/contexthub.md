@@ -1,6 +1,6 @@
 ---
 title: ContextHub
-description: ContextHub是用於儲存、操作和呈現上下文資料的框架
+description: ContextHub是一種用於儲存、操控和呈現內容資料的架構
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -11,39 +11,39 @@ ht-degree: 1%
 
 # ContextHub {#contexthub}
 
-ContextHub是用於儲存、操作和呈現上下文資料的框架。 它的主要功能是提供 [在模擬和切換各種角色時查看上下文資料。](/help/sites-cloud/authoring/personalization/contexthub.md)
+ContextHub是一種用於儲存、操控和呈現內容資料的架構。 其主要功能是提供 [在模擬和切換各種角色時檢視內容資料。](/help/sites-cloud/authoring/personalization/contexthub.md)
 
 ContextHub允許您：
 
-* [呈現、查看、切換角色和模擬用戶體驗](#presentation) 使用上下文資料建立頁面時。
-* [保留上下文資料](#persistence) 作為資料層表示。
-* [管理段](#segmentation) 的子菜單。
+* [呈現、檢視、切換角色和模擬使用者體驗](#presentation) 使用內容資料製作頁面時。
+* [保留內容資料](#persistence) 以資料層呈現方式在您的網站上。
+* [管理區段](#segmentation) 所選前後關聯的。
 
-客戶端Javascript API使您能夠訪問資料以個性化內容。
+使用者端Javascript API可讓您存取個人化內容的資料。
 
 ## 簡報 {#presentation}
 
-的 [ContextHub工具欄](/help/sites-cloud/authoring/personalization/contexthub.md) 使營銷人員和作者能夠查看和操作儲存資料，以在創作頁面時模擬用戶體驗。 工具欄由UI模組組組成，這些模組提供對 [ContextHub儲存，](#persistence) 將ContextHub資料保留在客戶端上。
+此 [contexthub工具列](/help/sites-cloud/authoring/personalization/contexthub.md) 可讓行銷人員和作者檢視並操控存放區資料，以便在編寫頁面時模擬使用者體驗。 工具列由提供存取許可權的UI模組群組組成 [ContextHub存放區，](#persistence) 會將ContextHub資料儲存在使用者端上。
 
-每個ContextHub UI模組都是預定義模組類型的實例：
+每個ContextHub UI模組都是預先定義模組型別的例項：
 
-* ContextHub提供了 [示例模組類型](sample-modules.md)。
-* 使用控AEM制台 [添加UI模組](configuring-contexthub.md#adding-a-ui-module), [在UI模式下對它們進行分組](configuring-contexthub.md#adding-a-ui-mode)。
-* 開發人員可以 [建立自定義模組類型](extending-contexthub.md#creating-contexthub-ui-module-types)。
+* ContextHub提供數種 [範例模組型別](sample-modules.md).
+* 使用AEM主控台 [新增使用者介面模組](configuring-contexthub.md#adding-a-ui-module)，並至 [在UI模式下將其分組](configuring-contexthub.md#adding-a-ui-mode).
+* 開發人員可以 [建立自訂模組型別](extending-contexthub.md#creating-contexthub-ui-module-types).
 
-開發人員需要 [將ContextHub元件添加到頁面](configuring-contexthub.md)。
+開發人員需要 [將ContextHub元件新增至頁面](configuring-contexthub.md).
 
-## 持久性 {#persistence}
+## 持續性 {#persistence}
 
-ContextHub在客戶端上儲存持續的上下文資料。 ContextHub Javascript API使您能夠訪問儲存，以根據需要建立、更新和刪除資料。 因此，ContextHub表示頁面上的資料層。
+ContextHub會儲存持續存在於使用者端上的內容資料。 ContextHub Javascript API可讓您存取存放區，以視需要建立、更新和刪除資料。 因此，ContextHub代表頁面上的資料層。
 
-每個ContextHub儲存都是預定義儲存類型的實例：
+每個ContextHub存放區都是預先定義存放區型別的例項：
 
-* ContextHub提供了 [示例儲存類型](sample-stores.md)。
-* 使用控AEM制台 [建立儲存](configuring-contexthub.md#creating-a-contexthub-store)。
-* 開發人員可以 [建立自定義儲存類型](extending-contexthub.md#creating-custom-store-candidates)。
-* 開發人員可以 [訪問儲存資料](adding-contexthub.md#interacting-with-contexthub-stores) 通過Javascript。
+* ContextHub提供數種 [範例存放區型別](sample-stores.md).
+* 使用AEM主控台 [建立存放區](configuring-contexthub.md#creating-a-contexthub-store).
+* 開發人員可以 [建立自訂商店型別](extending-contexthub.md#creating-custom-store-candidates).
+* 開發人員可以 [存取存放區資料](adding-contexthub.md#interacting-with-contexthub-stores) 透過Javascript。
 
 ## Segmentation {#segmentation}
 
-ContextHub包括分段引擎，用於管理段並確定為當前上下文解析哪些段。 定義了若干段。 可以使用Javascript API [確定已解析的段](adding-contexthub.md#determining-resolved-contexthub-segments)。
+ContextHub包含區段引擎，可管理區段並決定針對目前內容解析哪些區段。 已定義數個區段。 您可以使用Javascript API來 [決定已解析的區段](adding-contexthub.md#determining-resolved-contexthub-segments).

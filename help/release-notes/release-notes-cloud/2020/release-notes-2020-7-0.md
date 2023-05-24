@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版發行說明。'
-description: '"[!DNL Adobe Experience Manager] as a Cloud Service2020.7.0發行說明。」'
+description: '"[!DNL Adobe Experience Manager] 2020.7.0版as a Cloud Service發行說明」。'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
@@ -33,7 +33,7 @@ ht-degree: 77%
 
 ### [!DNL Assets]的新增功能 {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] 是可擴充的資產處理服務。管理員可以配置 [!DNL Experience Manager] 調用使用 [!DNL Asset Compute Service]。 開發人員可以使用該服務建立專門的定製應用程式，以滿足複雜的使用情形。 此Web服務可以為不同檔案類型生成縮略圖，從Adobe檔案格式生成高質量影像呈現，對視頻（將來）進行編碼，提取元資料，提取全文作為索引的前奏，以及通過所有可用的檔案運行資產 [!DNL Sensei] 服務。 見 [使用資產微服務和處理配置檔案](/help/assets/asset-microservices-configure-and-use.md)。
+* [!DNL Asset Compute Service] 是可擴充的資產處理服務。管理員可以設定 [!DNL Experience Manager] 以叫用使用建立的自訂應用程式 [!DNL Asset Compute Service]. 開發人員可使用此服務建立專門的自訂應用程式，以配合複雜的使用案例。 此網站服務可針對不同檔案型別產生縮圖、以Adobe檔案格式製作高品質的影像轉譯、影片編碼（未來推出）、擷取中繼資料、擷取全文作為索引的前導，以及透過所有可用功能執行資產 [!DNL Sensei] 服務。 另請參閱 [使用資產微服務和處理設定檔](/help/assets/asset-microservices-configure-and-use.md).
 
 * [!DNL Experience Manager] as a Cloud Service 中 [!DNL Dynamic Media] 的初始設定經過改良，更加健全。現在可為管理員提供處理程序的進度。
 
@@ -41,21 +41,21 @@ ht-degree: 77%
 
 * 若工作流程步驟與雲端服務部署不相容，系統會在[!UICONTROL 工作流程模型]編輯器中標示警告。此外，在雲端服務環境中執行現有工作流程時，系統會略過不相容的工作流程步驟。
 
-* 由部署到的客戶建立的工作流模型 `/conf/global` 與中的環境關聯的Git項目 [!DNL Cloud Manager] 自動部署到 `/var` 因此， [!DNL Experience Manager]。 `/libs` 底下經客戶變更的產品工作流程模型則不會自動部署至 `/var`。
+* 客戶建立的工作流程模型已部署至 `/conf/global` 中與環境相關聯的Git專案中的 [!DNL Cloud Manager] 會自動部署至 `/var` 因此可在 [!DNL Experience Manager]. `/libs` 底下經客戶變更的產品工作流程模型則不會自動部署至 `/var`。
 
-### 修復的錯誤 {#assets-bugs-fixed}
+### 錯誤已修正 {#assets-bugs-fixed}
 
-* 「移動資產」嚮導不會按預期方式載入「收集」中包含的資產。 (CQ-4296756)
-* 值 `dam:size` 和 `dam:sha1` 不寫回XMP。 (CQ-4237355)
-* 批量取消發佈資產時， [!DNL Brand Portal] 生成一個錯誤，表明請求URI太長。 (CQ-4299474)
+* 「移動資產」精靈未如預期載入「集合」中包含的資產。 (CQ-4296756)
+* 的值 `dam:size` 和 `dam:sha1` 會從XMP回寫中排除。 (CQ-4237355)
+* 大量取消發佈資產時， [!DNL Brand Portal] 會產生一個錯誤，指出請求URI太長。 (CQ-4299474)
 
-## Adobe Experience Manager商業as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-現AEM在，Cloud Service上提供商務。
+AEM Commerce現在可在Cloud Service上使用。
 
-請參閱 [Commerce AEMas a Cloud Service入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 的子菜單。
+請參閱 [AEM Commerceas a Cloud Service快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 以取得更多詳細資料。
 
 ## 核心元件 {#core-components}
 

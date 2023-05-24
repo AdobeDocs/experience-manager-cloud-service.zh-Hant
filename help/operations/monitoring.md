@@ -11,52 +11,52 @@ ht-degree: 5%
 
 # AEM as a Cloud Service 中的基礎結構和服務監視 {#monitoring-in-aem-as-a-cloud-service}
 
-Adobe Experience Manager as a Cloud Service提供可觀察性和監控：基礎架構、服務和用戶體驗。 由於使用了各種解決方案，並且有多個監控層，因此本頁分為三部分：
+Adobe Experience Manager as a Cloud Service提供基礎架構、服務和使用者體驗的可觀察性和監控功能。 由於使用了各種解決方案，且監控層數眾多，因此本頁面分為三個區段：
 
 * [外部可用性](#external-availability)
 * [內部模組監控](#module-monitoring)
-* [客戶可觀性](#customer-observability)
+* [客戶可觀察性](#customer-observability)
 
-AEMas a Cloud Service使用數百個雲本地監視器連續報告每個環境的狀態(24/7)，每年365天。 監視器定義不是靜態的，它們會不斷被審查以改進早期檢測能力。 此外，Adobe還設定了響應警報的呼叫過程。
+AEMas a Cloud Service使用數百部雲端原生監視器，每年365天持續報告每個環境的狀態(24/7)。 監視器定義不是靜態的，會持續檢閱以改進早期偵測能力。 此外，Adobe已設定待命程式來回應警示。
 
-如果您需要有關其他類型的監視（如通過雲管理器進行日誌記錄或監視）的資訊，請參閱 [其他資源](#resources)。
+如果您需要其他監視型別（例如透過Cloud Manager的記錄或監視）的資訊，請參閱 [其他資源](#resources).
 
 ## 外部可用性 {#external-availability}
 
-外部可用性由兩部分組成：服務邊緣和自定義監視。
+外部可用性由兩部分組成：服務邊緣和自訂監視。
 
 ### 服務邊緣 {#service-edge}
 
-您的所有as a Cloud ServiceAEM環境都受到可用性監控。 但是，服務邊緣監控僅針對生產環境設定，並且度量用於計算客戶的SLA。 它考慮了環境運行AEM時和as a Cloud ServiceCDN。 服務邊緣監控採用五個與您所選區域相鄰的不同位置，並定期檢查可用性。 站點不可用會觸發警報，並參與Adobe的呼叫支援團隊和流程。
+您所有的AEMas a Cloud Service環境都會受到監控以取得可用性。 不過， Service Edge Monitoring僅適用於生產環境，而且會使用量度來計算客戶的SLA。 這會考量到環境執行階段和AEMas a Cloud ServiceCDN。 Service Edge Monitoring會採用靠近您所選區域的五個不同位置，並定期檢查可用性。 網站無法使用時會觸發警報，並吸引Adobe的隨叫隨到支援團隊和流程。
 
-### 自定義監視 {#custom-monitoring}
+### 自訂監視 {#custom-monitoring}
 
-通過自定義監視，客戶可以選擇在以前提供最多五個不同的Web屬性URL [活](/help/journey-migration/go-live.md)。 這些URL應有效並返回HTTP 200響應代碼。 這些顯示器支援客戶 [自帶CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) 在AdobeCDN前面，以及在不受Adobe控制的AEMas a Cloud Service前面使用的任何外部流量路由。 「自定義監視」檢查產生的警報與Adobe的支援團隊和流程相聯繫。
+透過自訂監視，客戶可以選擇提供之前最多五個不同的Web屬性URL [上線](/help/journey-migration/go-live.md). 這些URL應有效並傳回HTTP 200回應代碼。 這些顯示器支援以下客戶： [自備CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) 在AdobeCDN之前以及在AEMas a Cloud Service之前採用且非Adobe控制的任何外部流量路由。 自訂監控檢查產生的警報會與Adobe的支援團隊和流程互動。
 
 >[!NOTE]
 >
-> 此功能僅面向具有 [高級雲支援。](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) 如有任何疑問，請通過Admin Console提出支援案。
+> 此功能僅提供給具有下列專案的客戶： [進階雲端支援。](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) 如果您有任何問題，請透過Admin Console提出支援案例。
 
-## 內部模組監視 {#module-monitoring}
+## 內部模組監控 {#module-monitoring}
 
-雖然外部可用性側重於最終用戶監控，但內部模組監控會觀察體系結構子系統在名義上是否運行，而沒有特性或效能下降。 如果出現問題，將觸發警報，以便可以自動或通過運營團隊的參與進行修復，以防止損壞的可用性。 監視器有多種類別，下面是一些示例檢查：
+雖然外部可用性側重於一般使用者監控，但內部模組監控會觀察架構子系統是否名義上運作且功能或效能並未降低。 如果發生問題，就會觸發警報，因此可自動進行修復，或透過營運團隊的參與進行修復，以防止可用性受損。 有各種不同的監視器類別，下面顯示了一些檢查範例：
 
-* CPUiowait百分比未超過某個閾值。
-* 實例重新部署不超過特定頻率。
-* 磁碟使用率低於某個閾值。
-* 作者儲存庫大小在一定範圍內。
-* 備份操作已成功完成。
-* 監視資料庫運行狀況和效能。
-* AEM雲服務的運行情況如預期，包括沒有阻止的複製隊列、一致資料和效能查詢。
+* CPU iowait百分比未超過特定臨界值。
+* 執行個體重新部署不會超過特定頻率。
+* 磁碟使用量低於某個臨界值。
+* 作者存放庫大小在特定範圍內。
+* 已成功完成備份作業。
+* 資料庫健康狀況和效能受到監視。
+* AEM Cloud Services如預期般運作，包括沒有封鎖的復寫佇列、一致的資料和效能查詢。
 
-為Forms預配的環境添加了其他檢查。 檢查定義不是靜態的，並且會隨更改和更新而變化。
+為Forms布建的環境會新增其他檢查。 檢查定義不是靜態的，可能會變更和更新。
 
-## 客戶可觀性 {#customer-observability}
+## 客戶可觀察性 {#customer-observability}
 
-客戶可以 [New Relic應用程式效能監控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) 提供即時效能資料收集和圖表以便進行分析和故障排除的套件。 通過使用監控套件，客戶可以直接觀察各種指標，如：JVM效能度量、Java™的事務時間、後台外部調用和資料庫調用。
+客戶可以使用 [New Relic應用程式效能監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) 提供即時效能資料的套裝，收集並繪製圖表以供分析和疑難排解。 客戶可以使用監控套裝直接觀察各種量度，例如：JVM效能量度、Java™交易時間、背景外部呼叫和資料庫呼叫。
 
 ## 其他資源 {#resources}
 
-* [New Relic應用程式效能監控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
-* [記錄AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
+* [New Relic應用程式效能監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
+* [AEMas a Cloud Service記錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
 * [監視環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)

@@ -36,7 +36,7 @@ ht-degree: 95%
 
 1. 移除或註解未引用連接埠 80 的虛擬主機區段
 
-   如果虛擬主機檔案中仍有專門引用埠80以外的其他埠的部分，例如，
+   例如，如果您的虛擬主機檔案中仍有區段專門參照連線埠80以外的連線埠，
 
    `<VirtualHost *:443>`
    `...`
@@ -89,7 +89,7 @@ ht-degree: 95%
 
 1. **重新命名伺服器陣列檔案**
 
-   必須更名conf.dispatcher.d/enabled_farms中的所有場以匹配模式*.farm，因此，例如，名為customerX_farm.any的場檔案應更名customerX.farm。
+   所有在「conf.dispatcher.d/enabled_farms」中的伺服器陣列都必須重新命名，以符合模式「*.farm」，例如，名為「customerX_farm.any」的伺服器陣列檔案應該重新命名為「customerX.farm」。
 
 1. **檢查快取**
 

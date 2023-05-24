@@ -12,7 +12,7 @@ ht-degree: 89%
 
 # 為 Experience Manager as a Cloud Service 實作連接器 {#aem-connectors-guide}
 
-瞭解Experience Manageras a Cloud Service的連接器、它們可以做什麼，以及如何在Experience Manager中實施這些重要工具。
+瞭解適用於Experience Manageras a Cloud Service的聯結器、其功用，以及如何在Experience Manager中實作這些寶貴工具。
 
 ## Experience Manager as a Cloud Service 連接器重要文章 {#key-articles}
 
@@ -24,7 +24,7 @@ ht-degree: 89%
 
 | 使用手冊 | 說明 |
 |---|---|
-| [概觀](/help/overview/home.md) | 本指南提供了Experience Manager為雲服務的介紹性概述，包括介紹、術語、體系結構等。 |
+| [概觀](/help/overview/home.md) | 本指南提供Experience Manager雲端服務的簡介性總覽，包括簡介、術語、架構等。 |
 | [發行說明](/help/release-notes/home.md) | 本指南提供 Experience Manager as a Cloud Service 最新版本的重要資訊，包括新增、過時和移除的功能，以及已知問題。 |
 | [安全性使用手冊](/help/security/home.md) | 了解 Experience Manager as a Cloud Service 與安全性相關的重要主題。 |
 | [入門歷程](/help/journey-onboarding/overview.md) | 本指南簡單扼要地說明如何開始使用 Experience Manager as a Cloud Service，包括如何取得存取權限和重要的資料保護資訊。 |

@@ -15,7 +15,7 @@ ht-degree: 48%
 
 >[!NOTE]
 >
->從此處，您可以導航到以前版本的發行說明；比如2020年，2021年等等。
+>從這裡，您可以瀏覽至舊版的發行說明；例如，2020、2021等版本。
 
 >[!NOTE]
 >
@@ -23,27 +23,27 @@ ht-degree: 48%
 
 ## 發行日期 {#release-date}
 
-發放日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.6.0是2021年6月28日。
-以下版本(2021.7.0)將於2021年7月29日發佈。
+的發行日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.6.0為2021年6月28日。
+下列版本(2021.7.0)將於2021年7月29日發行。
 
 ## 發行影片 {#release-video}
 
-看看 [2021年6月發佈概述](https://video.tv.adobe.com/v/334296) 視頻，瞭解添加的功能的摘要。
+請檢視 [2021年6月版本總覽](https://video.tv.adobe.com/v/334296) 影片以瞭解新增功能的摘要。
 
-## XML DocumentationAEM作為雲服務 {#xml-documentation}
+## AEM as a Cloud Service的XML Documentation {#xml-documentation}
 
 ### 新增功能 {#what-is-new-xml-documentation}
 
-* XML DocumentationAEM的as a Cloud Service已正式上市。
-* 這將使現有的AEM Cloud Service客戶能夠購買XML Documentation的附加資訊，以便跨多個渠道（包括站點）導入、建立、管理和提供技AEM術內容
+* 適用於AEMas a Cloud Service的XML Documentation現已正式推出。
+* 這可讓現有AEM Cloud Service客戶取得XML Documentation附加元件，以便跨多個管道(包括AEM網站)匯入、建立、管理和傳遞技術內容
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述了as a Cloud Service和中的Cloud ManagerAEM的2021.6.0行說2021.5.0。
+本節概述AEMas a Cloud Service2021.6.0和2021.5.0中Cloud Manager的發行說明
 
 ### 發行日期 {#release-date-june-cm}
 
-AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 月 10 日。下一版計畫於2021年7月15日發行。
+AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 月 10 日。下一版本計畫於2021年7月15日發行。
 
 ### 新增功能 {#what-is-new-junecm}
 
@@ -87,34 +87,34 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 
 ### [!DNL Assets] 中的新功能 {#ga-features-assets}
 
-* 內容自動化功能允許 [!DNL Experience Manager Assets] 利用 [!DNL Adobe Creative Cloud] API，可實現資產生產的自動化。 它通過顯著減少建立相同資產變體所需的時間和迭代來提高內容速度。 該功能不需要任何代碼，並可從DAM中運行。
-* [!DNL Adobe Asset Link] v3.0 [!DNL Adobe Photoshop]。 [!DNL Adobe Illustrator], [!DNL Adobe InDesign] 和 [!DNL Adobe Asset Link] v2.0 [!DNL Adobe XD] 的子菜單。 它提供：
+* 內容自動化功能可讓 [!DNL Experience Manager Assets] 善用 [!DNL Adobe Creative Cloud] API可大規模自動化資產的製作。 它大幅減少建立相同資產變體所需的時間和反複工作，進而加快內容速度。 此功能不需要任何程式碼，並且可在DAM內運作。
+* [!DNL Adobe Asset Link] v3.0用於 [!DNL Adobe Photoshop]， [!DNL Adobe Illustrator]、和 [!DNL Adobe InDesign] 和 [!DNL Adobe Asset Link] v2.0用於 [!DNL Adobe XD] 已發行。 它提供：
 
-   * 支援 [!DNL Assets Essentials]。
-   * 能夠自動連接到 [!DNL Experience Manager] 作為 [!DNL Cloud Service] 或 [!DNL Assets Essentials]。
+   * 支援 [!DNL Assets Essentials].
+   * 能夠自動連線到 [!DNL Experience Manager] as a [!DNL Cloud Service] 或 [!DNL Assets Essentials].
 
 <!-- TBD: Checking with PMs if AAE release should be mentioned here.
 -->
 
-### 中提供的新功能 [!DNL Assets] 預釋放通道 {#beta-features-assets}
+### 中可用的新功能 [!DNL Assets] 發行前通道 {#beta-features-assets}
 
-* 視圖設定將得到增強，以便用戶選擇預設視圖和預設排序參數。
-* Linkshare下載功能使用提高下載速度的非同步下載。
-* 用戶可以根據屬性謂詞搜索和篩選資料夾。
-* [!DNL Experience Manager Assets] 嵌入了PDF查看器 [!DNL Adobe Document Cloud] 預覽支援的文檔。 此功能允許用戶預覽PDF和其他多頁檔案，而無需任何複雜處理。 這改進了功能奇偶校驗 [!DNL Experience Manager] 6.5
+* 已增強檢視設定，讓使用者可選擇預設檢視和預設排序引數。
+* Linkshare下載功能會使用可提高下載速度的非同步下載。
+* 使用者可以根據屬性述詞搜尋和篩選資料夾。
+* [!DNL Experience Manager Assets] 內嵌由提供支援的PDF檢視器 [!DNL Adobe Document Cloud] 以預覽支援的檔案。 此功能可讓使用者預覽PDF和其他多頁檔案，而不需要任何複雜的處理。 這可改善以下專案的功能對等性： [!DNL Experience Manager] 6.5.
 
 ### 修正在[!DNL Assets]中的錯誤 {#bugs-fixed-assets}
 
-* 將所有者添加到子資料夾時， [!DNL Assets] 還會添加與父資料夾所有者相同的用戶。 (CQ-4323737)
-* 在將資產添加到收集時，如果用戶對「收集」搜索應用篩選器，則用戶無法查看「清單中的收集」視圖。 (CQ-4323181)
-* 搜索檔案和資料夾時，如果用戶應用篩選器並選擇 [!UICONTROL 檔案和資料夾]，只顯示檔案，而不顯示資料夾。 (CQ-4319543)
+* 將擁有者新增至子資料夾時， [!DNL Assets] 也會將相同的使用者新增為父資料夾的擁有者。 (CQ-4323737)
+* 將資產新增至集合時，如果使用者對集合搜尋套用篩選器，則使用者無法在清單檢視中檢視集合。 (CQ-4323181)
+* 搜尋檔案和資料夾時，如果使用者套用篩選器並選取 [!UICONTROL 檔案與資料夾]，只會顯示檔案，不會顯示資料夾。 (CQ-4319543)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites] 中的新功能 {#ga-features-sites}
 
-* 「發佈到預覽層」現在在「站點管理UI」中顯示為頁面狀態
-* 現在，發佈到預覽層將在操作結束時呈現預覽URL，並將URL保留在頁面屬性中以供以後參考
+* 發佈到預覽層級現在會在網站管理UI中顯示為頁面狀態
+* 「發佈至預覽層」現在會在動作結束時顯示預覽URL，並將該URL儲存在頁面屬性中以供稍後參考
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -139,7 +139,7 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 ### 修正在[!DNL Forms]中的錯誤 {#forms-bugs-fixed}
 
 * 當欄位在透過表單資料模型 (FDM) 提交資料到後端服務前驗證時，雖然會成功驗證，但表單資料模型無法叫用發佈驗證。
-* 從 Apple iOS 裝置提交包含標準 HTML 上傳欄位的表單時，有時不會傳送檔案內容並在另一端收到 0 位元組檔案。這是AppleiOS的一個已知問題。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* 從 Apple iOS 裝置提交包含標準 HTML 上傳欄位的表單時，有時不會傳送檔案內容並在另一端收到 0 位元組檔案。這是Apple iOS中的已知問題。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
@@ -147,64 +147,64 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 
 ### 發行日期 {#release-date-june-screens}
 
-AEM Screensas a Cloud Service發佈日期為2021年6月24日。
+AEM Screensas a Cloud Service的發行日期為2021年6月24日。
 
 ### 新增功能 {#what-is-new-screens-june}
 
 >[!NOTE]
->請參閱 [AEM Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) 有關成功安裝、配置和運行螢幕as a Cloud Service所需的基礎知識的指南，並連結到詳細概念技術文檔。
+>另請參閱 [AEM Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) 成功安裝、設定和執行Screensas a Cloud Service所需的基礎知識指南，以及指向詳細概念技術檔案的連結。
 
-* 批量設備註冊管理意味著提供大量播放器設備更快、更高效。
+* 大量裝置註冊管理表示布建大量播放器裝置更快且更有效率。
 
-* 改進了設備、顯示和渠道清單視圖的搜索和篩選選項。
+* 改善每個裝置、顯示和管道詳細目錄檢視的搜尋和篩選選項。
 
-* 設備運行狀況快照通過提供關鍵狀態即可節省時間。
+* 裝置運作狀況快照藉由提供一目瞭然的關鍵狀態來節省時間。
 
-* 「對象詳細資訊」頁面提供了項目中每個對象最相關資訊的摘要。
+* 「物件詳細資訊」頁面提供專案中每個物件最相關資訊的摘要。
 
 ## CIF 附加元件 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* 內容片段的新CIF產品和類別引用資料類型(包括 產品/類別選取器UI支援)
-* 新商務內容片段核心元件
-* 後端支援全文商務搜AEM索
-* Commerce核心元件支援Adobe CommerceSenseiRecs資料收集
-* 類別頁的SEO友好型URL的改進
-* 支援每個站點/配置的自定義HTTP標頭
+* 內容片段的新CIF產品和類別參考資料型別(包括 產品/類別選擇器UI支援)
+* 新的Commerce內容片段核心元件
+* AEM後端支援全文檢索商務搜尋
+* Commerce核心元件支援Adobe Commerce Sensei Recs資料收集
+* 改善類別頁面的SEO易記URL
+* 支援每個網站/設定的自訂HTTP標頭
 
 ## 內容轉移工具 {#content-transfer-tool}
 
 ### 發行日期 {#release-date-ctt-latest}
 
-內容傳輸工具v1.5.4的發佈日期為2021年6月28日。
+內容轉移工具v1.5.4的發行日期為2021年6月28日。
 
 ### 新增功能 {#what-is-new-ctt-latest}
 
-* 支援可選 [預拷貝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 添加到CTT中。 當源實例配置為使用AmazonS3或Azure Blob儲存資料儲存時，預拷貝步驟可用於顯著加快內容傳輸活動的提取和接收階段AEM。
+* 支援選購的 [預先複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 新增以搭配CTT使用的步驟。 當來源AEM例項設定為使用Amazon S3或Azure Blob儲存體資料存放區時，預先複製步驟可用來大幅加快內容轉移活動的擷取和擷取階段。
 
-* Guardrail已添加到CTT中，以防止用戶在資料在接收階段到達臨界點時停止接收並可能損壞資料。
+* CTT新增了護欄，以防止使用者停止擷取，並在資料在擷取階段達到關鍵點後可能損毀資料。
 
-* 提取日誌的描述性更強，有助於進行故障排除。
+* 擷取記錄檔的描述性更高，以協助疑難排解。
 
-* 在UI中添加了更多描述性接收狀態消息。
+* 在UI中新增更多描述性擷取狀態訊息。
 
 ### 錯誤修正 {#bug-fixes-ctt-latest}
 
-* 在停止Author實例上的攝取時，UI將先前在Publish實例上完成的攝取改寫為 `STOPPED` 從 `FINISHED`。 這個已經修復了。
+* 在製作執行個體上停止內嵌時，UI會覆寫發佈執行個體上先前完成的內嵌至 `STOPPED` 從 `FINISHED`. 此問題已修正。
 
 ## 最佳做法分析工具 {#best-practices-analyzer}
 
 ### 發行日期 {#release-date-bpa}
 
-最佳做法分析器2.1.16版的發佈日期為2021年6月30日。
+Best Practices Analyzer v2.1.16的發行日期為2021年6月30日。
 
 ### 新增功能 {#what-is-new-bpa-latest}
 
-* 能夠檢測並報告資料夾中缺少的子節點 `/content/dam`。
+* 能夠偵測及報告下資料夾中缺少的子節點 `/content/dam`.
 
-* 能夠檢測並報告所使用的最佳做法分析器版本。
+* 可偵測和報告所使用Best Practices Analyzer版本。
 
 ### 錯誤修正 {#bug-fixes-bpa-latest}
 
-* 與已修復的不受支援的儲存庫結構(URS)相關的日誌記錄錯誤。
+* 已修正與不支援的存放庫結構(URS)相關的記錄錯誤。

@@ -11,7 +11,7 @@ ht-degree: 31%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版發行說明 {#release-notes}
 
-以下部分概述2022.1.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
+以下章節概述2022.1.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -23,45 +23,45 @@ ht-degree: 31%
 
 ## 發行日期 {#release-date}
 
-發佈日期 [!DNL Adobe Experience Manager] 作為 [!DNL Cloud Service] 當前版本(2022.1.0)為2022年2月3日。
-以下版本(2022.3.0)為2022年3月31日。
+的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前版本(2022.1.0)為2022年2月3日。
+以下版本(2022.3.0)將於2022年3月31日發行。
 
 ## 發行影片 {#release-video}
 
-看看 [2022年1月發佈概述](https://video.tv.adobe.com/v/340120) 視頻，瞭解2022.1.0版中添加的功能摘要。
+請檢視 [2022年1月版本總覽](https://video.tv.adobe.com/v/340120) 2022.1.0版新增功能摘要影片。
 
 ## Adobe Experience Manager Sites as a Cloud Service {#sites}
 
-* 的 **[啟用前端管線](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** 按鈕 **站點** 對使用頁核心元件v2的站點的站點控制台進行連結。 此按鈕將站點配置為載入與現有客戶端庫上的前端管道一起部署的主題。
+* 此 **[啟用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** 按鈕可在 **網站** 使用v2頁面核心元件的網站的Sites主控台邊欄。 此按鈕會將網站設定為載入使用前端管道部署在現有使用者端資料庫之上的主題。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* [!DNL Dynamic Media]  — 現在，您可以使AEM用Dynamic Media介面配置常規設定和發佈設定，而不必通過Dynamic Media Classic案頭應用程式。
+* [!DNL Dynamic Media]  — 您現在可以使用AEM Dynamic Media介面進行設定，包括一般設定和發佈設定，而不必透過Dynamic Media Classic案頭應用程式來進行。
 
-* [!DNL Dynamic Media] 現在支援MXF視頻的接收、預覽、播放和發佈。 尚不支援MXF視頻的注釋和可購物視頻。
+* [!DNL Dynamic Media] 現在支援MXF影片的擷取、預覽、播放和發佈。 尚不支援MXF影片的附註和可訂購影片。
 
-* 在配置遠程DAM和站點部署之間的連接後，遠程DAM上的資產可在站點部署中使用。 您現在可以執行 [更新、刪除、更名和移動操作](/help/assets/use-assets-across-connected-assets-instances.md) 資料夾。 這些更新在站點部署中自動可用，但有一些延遲。
+* 在設定遠端DAM與Sites部署之間的連線後，遠端DAM上的資產便可在Sites部署中使用。 您現在可以執行 [更新、刪除、重新命名和移動作業](/help/assets/use-assets-across-connected-assets-instances.md) 位於遠端DAM資產或資料夾上。 這些更新會在Sites部署中自動提供，但會有一些延遲。
 
-### 中的新功能 [!DNL Assets] 預釋放通道 {#assets-prerelease-features}
+### 中的新功能 [!DNL Assets] 發行前通道 {#assets-prerelease-features}
 
-* [!DNL AEM Dynamic Media] 現在提供了靈活性 [配置一個別名帳戶](/help/assets/dynamic-media/dm-alias-account.md) 在用戶介面中，從而確保更新出廠設定的Dynamic MediaURL和Viewer Embed代碼。 這對SEO產生了積極影響，以反映對您的業務環境所做的更新，如品牌重塑。
+* [!DNL AEM Dynamic Media] 現在提供下列作業的彈性： [設定一個別名帳戶](/help/assets/dynamic-media/dm-alias-account.md) ，以確保更新開箱即用的Dynamic Media URL和檢視器內嵌程式碼。 這會對SEO產生正面影響，以反映對企業內容所做的更新，例如品牌重塑。
 
-* 您現在可以使用 [!DNL Experience Manager Assets] 用戶介面：
+* 您現在可以使用 [!DNL Experience Manager Assets] 使用者介面至：
 
-   * 配置儲存庫中重複資產的檢測。
+   * 設定存放庫中重複資產的偵測。
 
-   * 配置向影像添加數字水印。
+   * 設定新增數位浮水印至影像。
 
-* 管理員現在可以配置電子郵件服務以進行大下載。 它允許用戶 [啟用大量下載的電子郵件通知](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) 從 [!DNL Experience Manager Assets] 。 用戶在完成下載過程後接收包含存檔的zip資料夾的下載連結的電子郵件通知。
+* 管理員現在可以設定電子郵件服務以進行大量下載。 它可讓使用者 [啟用大型下載的電子郵件通知](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) 從 [!DNL Experience Manager Assets] 介面。 下載程式完成後，使用者會收到電子郵件通知，其中包含封存zip資料夾的下載連結。
 
 
-* 的 [管理發布](/help/assets/manage-publication.md) 利用改進的用戶介面增強特徵。 用戶可以將內容發佈或取消發佈到選定目標， [添加內容](/help/assets/manage-publication.md#add-content) 從DAM儲存庫到發佈清單， [包括資料夾設定](/help/assets/manage-publication.md#include-folder-settings) 發佈所選資料夾的內容並應用篩選器， [計畫發佈](/help/assets/manage-publication.md#publish-assets-later) 到更晚的日期或時間。
+* 此 [管理發布](/help/assets/manage-publication.md) 功能已透過改良的使用者介面來增強。 使用者可以將內容發佈或取消發佈到所選目的地，或從所選目的地取消發佈內容， [新增內容](/help/assets/manage-publication.md#add-content) 至整個DAM存放庫的發佈清單， [包含資料夾設定](/help/assets/manage-publication.md#include-folder-settings) 以發佈所選資料夾的內容並套用篩選器，以及 [排程發佈](/help/assets/manage-publication.md#publish-assets-later) 到更晚的日期或時間。
 
 ### 錯誤修正 {#bug-fixes}
 
-* 將沒有原始格式副本的未處理資產發送到Asset compute進行處理，同時將資產從本AEM地遷移到雲服務。
+* 將資產從AEM內部部署移轉至雲端服務時，沒有原始轉譯的未處理資產會傳送至Asset compute進行處理。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -70,15 +70,15 @@ ht-degree: 31%
 * **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生文件。 這些 API 可讓您建立以下用途的應用程式：
 
    * 使用 XML 資料填寫範本檔案來產生文件。
-   * 以各種格式生成表單，包括非互動式PDF打印流。
+   * 產生各種格式的表單，包括非互動式PDF列印資料流。
    * 從 XFA 表單 PDF 產生列印 PDF。
-   * 通過將多組資料與源模板合併，批量生成PDF、PostScript、PCL和ZPL文檔。
+   * 將多組資料與來源範本合併，以大量產生PDF、PostScript、PCL和ZPL檔案。
 
-* **記錄文檔的自定義字型和使用Communications API建立的PDF文檔**:現在，您可以在使用Communications API生成的PDF文檔中使用品牌批准的字型，以符合您的組織要求。
+* **使用Communications API建立的記錄檔案和PDF檔案的自訂字型**：您現在可以在使用Communications API產生的PDF檔案中使用品牌核准的字型，以符合您的組織要求。
 
 ### [!DNL Forms] 發行前通道中可用的新功能 {#prerelease-features-forms}
 
-* **[匯編程式API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**:匯編器API，用於組合、重新排列、增大和獲取有關PDF文檔的資訊。
+* **[組合器API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**：組合器API用於組合、重新排列、擴充和取得有關PDF檔案的資訊。
 
 
 ## CIF 附加元件 {#cloud-services-cif}
@@ -86,12 +86,12 @@ ht-degree: 31%
 ### 新增功能 {#what-is-new-cif}
 
 * 增強的myAccount元件
-* 產品建議元件支援其他頁面類型（首頁、購物車、訂單確認）
+* 產品推薦元件支援其他頁面型別（首頁、購物車、訂單確認）
 * **希望清單**
-   * 已登錄的訪問者可以將產品添加到願望清單
-   * 通過myAccount管理願望清單及其產品是可能的
-   * 可以通過策略在元件級別上啟用/禁用「添加到願望清單」按鈕（例如，產品預告、產品詳細資訊）
-   * 可作為核心元件在Venia StorefrontAEM中使用
+   * 登入的訪客可將產品新增至願望清單
+   * 您可以透過myAccount管理願望清單及其產品
+   * 可以透過原則（例如產品Teaser、產品詳細資訊）在元件層級上啟用/停用「新增到願望清單」按鈕
+   * 可作為核心元件提供給AEM Venia Storefront
 
 ![希望清單](/help/assets/CIF/wishlist.png)
 
@@ -99,7 +99,7 @@ ht-degree: 31%
 
 ### 發行日期 {#release-date-cm}
 
-Cloud Manager在as a Cloud Service2022.01.0中的發AEM布日期為2022年1月20日。 下一版計劃於 2022 年 2 月 10 日發行。
+AEMas a Cloud Service2022.01.0中的Cloud Manager發行日期是2022年1月20日。 下一版計劃於 2022 年 2 月 10 日發行。
 
 ### 新增功能 {#what-is-new-cm}
 
@@ -119,29 +119,29 @@ Cloud Manager在as a Cloud Service2022.01.0中的發AEM布日期為2022年1月20
 
 ### 發行日期 {#release-date-ctt}
 
-內容傳輸工具v1.8.6的發佈日期為2022年2月3日。
+內容轉移工具v1.8.6的發行日期為2022年2月3日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 內容驗證 — 用戶能夠可靠地確定內容傳輸工具提取的所有內容是否已成功地被引入目標實例。 要使用此功能，您需要在 `System Console` 來源環AEM境。 請參閱 [驗證內容傳輸 — 入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) 的子菜單。
+* 內容驗證 — 使用者能夠可靠地判斷「內容轉移工具」擷取的所有內容是否已成功內嵌至目標例項。 若要使用此功能，您需要在 `System Console` 來源AEM環境的。 請參閱 [驗證內容轉移 — 快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) 以取得更多詳細資料。
 
 ### 錯誤修正 {#bug-fixes-ctt}
 
-* 某些用戶未映射，因為用戶映射區分大小寫。 這個已經修復了。 用戶映射不再區分大小寫。
+* 部分使用者未對應，因為使用者對應區分大小寫。 此問題已修正。 使用者對應不再區分大小寫。
 
 ## 最佳做法分析工具 {#bpa-release}
 
 ### 發行日期 {#release-date-bpa}
 
-最佳做法分析器2.1.24版的發佈日期為2022年2月1日。
+Best Practices Analyzer v2.1.24的發行日期為2022年2月1日。
 
 ### 新增功能 {#what-is-new-bpa}
 
-* 能夠檢測和報告具有和不具有智慧標籤的資產數。
-* 能夠檢測和報告所使用的核心元件版本。
-* 能夠檢測並報告執行BPA的源層（作者或發佈）的類型。
+* 能夠偵測及報告使用和不使用智慧標籤的資產數量。
+* 能夠偵測並報告所使用的核心元件版本。
+* 能夠偵測並報告BPA執行所在的來源層級型別（製作或發佈）。
 
 ### 錯誤修正 {#bug-fixes-bpa}
 
-* BPA規模邏輯的製作更快、更高效。
-* 在某些情況下，BPA在運行時未增加分析計數。 這個已經修復了。
+* BPA大小調整邏輯變得更快速、更有效率。
+* 在某些情況下，BPA在執行時不會增加分析的計數。 此問題已修正。

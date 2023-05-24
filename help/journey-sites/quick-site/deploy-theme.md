@@ -1,6 +1,6 @@
 ---
-title: 部署自定義主題
-description: 瞭解如何使用管道部署站點主題。
+title: 部署您的自訂主題
+description: 瞭解如何使用管道部署網站主題。
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
@@ -9,112 +9,112 @@ ht-degree: 14%
 
 ---
 
-# 部署自定義主題 {#deploy-your-customized-theme}
+# 部署您的自訂主題 {#deploy-your-customized-theme}
 
-瞭解如何使用管道部署站點主題。
+瞭解如何使用管道部署網站主題。
 
 ## 到目前為止 {#story-so-far}
 
-在快速建立站AEM點的上一文檔中， [自定義網站主題，](customize-theme.md) 您瞭解了主題是如何構建的、如何自定義主題以及如何使用即時內容test主題AEM，現在您應該：
+在AEM快速網站建立歷程的上一個檔案中， [自訂網站主題](customize-theme.md) 您已瞭解如何建置主題、如何自訂主題，以及如何使用即時AEM內容來測試主題，您現在應：
 
-* 瞭解網站主題的基本結構以及如何編輯它。
-* 瞭解如何通過本地代理使用真實內容AEMtest主題自定義。
-* 瞭解如何將更改提交到AEMGit儲存庫。
+* 瞭解網站主題的基本結構以及如何進行編輯。
+* 瞭解如何透過本機Proxy使用真實的AEM內容測試您的主題自訂。
+* 瞭解如何將變更提交至AEM Git存放庫。
 
-現在，您可以執行最後一步，並使用管道來部署它們。
+您現在可以執行最後一個步驟，並使用管道來部署它們。
 
 ## 目標 {#objective}
 
-本文檔介紹如何使用管道部署主題。 閱讀本文件後，您應該：
+本檔案說明如何使用管道部署主題。 閱讀本文件後，您應該：
 
 * 瞭解如何觸發管道部署。
-* 請參閱如何檢查部署狀態。
+* 瞭解如何檢查部署狀態。
 
-## 責任角色 {#responsible-role}
+## 負責角色 {#responsible-role}
 
-這部分行程適用於前端開發商。
+此歷程的這一部分適用於前端開發人員。
 
-## 啟動管線 {#start-pipeline}
+## 啟動管道 {#start-pipeline}
 
-將主題自定義更改提交到AEMGit儲存庫後，可以運行 [管理員建立的管道](pipeline-setup.md) 以部署更改。
+一旦您將主題自訂變更認可到AEM Git存放庫，您就可以執行 [管理員建立的管道](pipeline-setup.md) 以部署變更。
 
-1. 登錄雲管理器 [就像你檢索git訪問資訊](retrieve-access.md) 並訪問你的程式。 在 **概述** 頁籤 **管線**。
+1. 登入Cloud Manager [就像您擷取Git存取資訊時所做的那樣](retrieve-access.md) 並存取您的程式。 於 **概觀** 索引標籤您會看到一張卡片 **管道**.
 
-   ![雲管理器概述](assets/cloud-manager-overview.png)
+   ![Cloud Manager概觀](assets/cloud-manager-overview.png)
 
-1. 點擊或按一下需要啟動的管線旁的省略號。 從下拉菜單中，選擇 **運行**。
+1. 點選或按一下您需要啟動的管道旁的省略符號。 從下拉式選單中選取 **執行**.
 
-   ![運行管道](assets/run-pipeline.png)
+   ![執行管道](assets/run-pipeline.png)
 
-1. 在 **運行管道** 確認對話框，點擊或按一下 **是**。
+1. 在 **執行管道** 確認對話方塊，點選或按一下 **是**.
 
-   ![確認管道運行](assets/pipeline-confirm.png)
+   ![確認管道執行](assets/pipeline-confirm.png)
 
-1. 在管道清單中，狀態列指示管道正在運行。
+1. 在管道清單中，狀態列表示您的管道目前正在執行。
 
-   ![管道運行狀態](assets/pipeline-running.png)
+   ![管道執行狀態](assets/pipeline-running.png)
 
 ## 檢查管道狀態 {#pipeline-status}
 
-您可以隨時檢查管道的狀態以查看其進度的詳細資訊。
+您可以隨時檢查管道的狀態以檢視其進度的詳細資訊。
 
-1. 點擊或按一下管道旁的省略號。
+1. 點選或按一下您的管道旁的省略符號。
 
-   ![查看管道詳細資訊](assets/view-pipeline-details.png)
+   ![檢視管道詳細資料](assets/view-pipeline-details.png)
 
-1. 管道詳細資訊窗口顯示管道進度的細分。
+1. 管道詳細資訊視窗會顯示管道進度的劃分。
 
    ![管道詳情](assets/pipeline-details.png)
 
 >[!TIP]
 >
->在管線詳細資訊窗口中，可點擊或按一下 **下載日誌** 如果任何步驟都會失敗，則可用於管線的任何步驟以進行調試。 調試管線超出了此行的範圍。 請參閱 [其他資源](#additional-resources) 的子菜單。
+>在管道詳細資訊視窗中，您可以點選或按一下 **下載記錄** 用於偵錯用途之管道的任何步驟（如果任何步驟應失敗）。 管道偵錯超出了此歷程的範圍。 請參閱中的Cloud Manager技術檔案 [其他資源](#additional-resources) 區段。
 
-## 驗證已部署的自定義項 {#view-customizations}
+## 驗證已部署的自訂 {#view-customizations}
 
-管道完成後，可通知管理員驗證更改。 然後，管理員將：
+管道完成後，您可以通知管理員驗證變更。 之後，管理員將：
 
-1. 開啟創AEM作環境。
-1. 導航到 [管理員先前建立的站點。](create-site.md)
+1. 開啟AEM編寫環境。
+1. 導覽至 [管理員先前建立的網站。](create-site.md)
 1. 編輯其中一個內容頁面。
-1. 請參閱應用的更改。
+1. 檢視套用的變更。
 
-![應用的更改](assets/changes-applied.png)
+![已套用變更](assets/changes-applied.png)
 
 ## 歷程結尾？ {#end-of-journey}
 
-恭喜！您已完成快速AEM站點建立過程！ 您現在應該：
+恭喜！您已完成AEM快速網站建立歷程！ 您現在應該：
 
-* 瞭解Cloud Manager和前端管道如何管理和部署前端定制。
-* 瞭解如何根據模AEM板建立網站以及如何下載網站主題。
-* 如何裝載前端開發人員以便他們能夠訪問AEMGit儲存庫。
-* 如何使用代理內容自定義和test主AEM題，並將這些更改提交AEM到git。
-* 如何使用管道部署前端定制。
+* 瞭解Cloud Manager和前端管道如何管理和部署前端自訂。
+* 瞭解如何根據範本建立AEM網站，以及如何下載網站主題。
+* 如何載入前端開發人員，以便他們可以存取AEM Git存放庫。
+* 如何使用代理的AEM內容自訂和測試主題，並將這些變更提交到AEM Git。
+* 如何使用管道部署前端自訂。
 
-您現在已準備好自定義自己網站的AEM主題。 但是，在開始使用多個前端管道建立不同的工作流之前，請查看文檔 [使用前端管道開發站點。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 它通過以下方式幫助您充分利用前端開發：
+您現在已準備好自訂您自己的AEM網站的主題。 但在您開始使用多個前端管道建立不同的工作流程之前，請檢視檔案 [使用前端管道開發Sites。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 它可協助您透過以下方式充分利用前端開發：
 
-* 保持單一的真相來源。
-* 保持關注的分離。
+* 維護單一信任來源。
+* 維護關注點分離。
 
-是AEM一種強大的工具，並有許多其他選項。 查看[其他資源章節](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
+AEM是一個功能強大的工具，並且有許多其他可用選項。 查看[其他資源章節](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
 
 ## 其他資源 {#additional-resources}
 
 以下是一些其他資源，它們對本文件提到的一些概念有更深入的探討。
 
-* [使用站點導軌管理站點主題](/help/sites-cloud/administering/site-creation/site-rail.md)  — 瞭解「站點」欄的強大功能，幫助您輕鬆定制和管理站點主題，包括下載主題源和管理主題版本。
+* [使用網站邊欄管理網站主題](/help/sites-cloud/administering/site-creation/site-rail.md)  — 瞭解網站邊欄的強大功能，協助您輕鬆自訂和管理網站主題，包括下載主題來源和管理主題版本。
 * [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 有深入的了解，您可能想要直接查閱深入的技術文件。
 * [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想要直接查閱深入的技術文件。
-* [基於角色的權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html)  — 雲管理器具有預配置的具有適當權限的角色。 有關這些角色以及如何管理這些角色的詳細資訊，請參閱本文檔。
-* [Cloud Manager資料庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)  — 如果您需要有關如何為AEMaaCS項目設定和管理Git儲存庫的詳細資訊，請參閱此文檔。
-* [配置CI/CD管道 — Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)  — 瞭解有關在本文檔中設定管道（完整堆棧和前端）的詳細資訊。
-* [標AEM準站點模板](https://github.com/adobe/aem-site-template-standard)  — 這是「標準站點」模板的GitHubAEM儲存庫。
-* [網AEM站主題](https://github.com/adobe/aem-site-template-standard-theme-e2e)  — 這是網站主題的GitHubAEM儲存庫。
-* [npm](https://www.npmjs.com)  — 用AEM於快速構建站點的主題基於npm。
-* [網路包](https://webpack.js.org)  — 用AEM於快速構建網站的主題依賴webpack。
-* [建立和組織頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)  — 本指南詳細說明了在從模板建立網站AEM後，如果您希望進一步自定義網站的頁面，如何管理網站頁面。
-* [如何使用包](/help/implementing/developing/tools/package-manager.md)  — 包允許導入和導出儲存庫內容。 本文檔介紹了如何處理6.5AEM中的包，該軟體包也適用於AEMaaCS。
-* [登機之旅](/help/journey-onboarding/overview.md)  — 本指南是您的出發點，可確保您的團隊已建立並能夠訪問AEMas a Cloud Service。
-* [Adobe Experience Manager雲管理器文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant)  — 瀏覽Cloud Manager文檔以瞭解其功能的全部詳細資訊。
+* [角色型許可權](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager已預先設定角色，賦予適當許可權。 請參閱本檔案以瞭解這些角色的詳細資訊及管理方法。
+* [Cloud Manager存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)  — 如果您需要有關如何為您的AEMaaCS專案設定和管理Git存放庫的更多資訊，請參閱本檔案。
+* [設定CI/CD管道 — Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)  — 在本檔案中瞭解有關設定完整棧疊和前端管道的更多詳細資訊。
+* [AEM標準網站範本](https://github.com/adobe/aem-site-template-standard)  — 這是AEM標準網站範本的GitHub存放庫。
+* [AEM網站主題](https://github.com/adobe/aem-site-template-standard-theme-e2e)  — 這是AEM網站主題的GitHub存放庫。
+* [npm](https://www.npmjs.com)  — 用來快速建立網站的AEM主題是以npm為基礎。
+* [webpack](https://webpack.js.org)  — 用於快速建立網站的AEM主題依賴webpack。
+* [建立及組織頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)  — 如果您想要在從範本建立AEM網站後進一步自訂，本指南會詳細說明如何管理您的網站頁面。
+* [如何使用套件](/help/implementing/developing/tools/package-manager.md)  — 套件可匯入和匯出存放庫內容。 本檔案說明如何在AEM 6.5中使用套件（同樣適用於AEMaaCS）。
+* [入門歷程](/help/journey-onboarding/overview.md)  — 本指南可作為您的起點，確保您的團隊已建立並擁有AEMas a Cloud Service的存取權。
+* [Adobe Experience Manager Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant)  — 探索Cloud Manager檔案以取得其功能的完整詳細資訊。
 * [網站管理文件](/help/sites-cloud/administering/site-creation/create-site.md) - 查看關於建立網站的技術文件，了解快速網站建立工具功能的更多詳細資訊。
-* [利用前端管道開發站點](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)  — 本文檔介紹了一些需要注意的注意事項，以便利用前端管道從前端開發過程中充分挖掘潛力。
+* [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)  — 本檔案說明一些需注意的事項，以使用前端管道充分發揮前端開發流程的潛力。

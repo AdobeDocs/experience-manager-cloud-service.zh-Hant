@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0 版發行說明。'
-description: '"[!DNL Adobe Experience Manager] as a Cloud Service2020.8.0發行說明。」'
+description: '"[!DNL Adobe Experience Manager] 2020.8.0版as a Cloud Service發行說明」。'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
@@ -18,61 +18,61 @@ ht-degree: 39%
 
 ### [!DNL Sites]的新增功能 {#what-is-new-sites}
 
-* 能夠 [將頁面和子頁（頁面樹）還原到早期版本](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)。
+* 能夠 [將頁面和子頁面（頁面樹狀結構）還原為舊版](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
-* 能夠 [建立啟動](/help/sites-cloud/authoring/launches/overview.md) AEM [編SPA輯器。](/help/implementing/developing/hybrid/introduction.md)
+* 能夠 [建立啟動](/help/sites-cloud/authoring/launches/overview.md) 在AEM中 [SPA編輯器。](/help/implementing/developing/hybrid/introduction.md)
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### [!DNL Assets]的新增功能 {#what-is-new-assets}
 
-* 現在資產微服務支援視頻轉碼。 中的新節 [!UICONTROL 處理配置檔案] 配置允許您設定視頻比特率和尺寸。 輸出格式為MP4,H.264編解碼器。 有關詳細資訊，請參閱 [管理視頻資產](/help/assets/manage-video-assets.md#transcode-video)。 要獲得更多轉碼選項和視頻交付，請使用 [!DNL Dynamic Media] 附件。
+* 資產微服務現在支援視訊轉碼。 中的新區段 [!UICONTROL 處理設定檔] 設定可讓您設定視訊位元速率和維度。 輸出格式為使用H.264轉碼器的MP4。 如需詳細資訊，請參閱 [管理視訊資產](/help/assets/manage-video-assets.md#transcode-video). 如需更多轉碼選項及視訊傳送，請使用 [!DNL Dynamic Media] 附加元件。
 
-* 新建 [!DNL Experience Manager Assets] 部署時，現在預設配置了智慧標籤功能。 無需手動整合 [!DNL Adobe Developer Console]。 在現有部署中，管理員會像以前一樣配置智慧標籤整合。
+* 新增 [!DNL Experience Manager Assets] 部署，現在預設會設定智慧標籤功能。 無需手動整合 [!DNL Adobe Developer Console]. 在現有部署中，管理員會像之前一樣設定智慧標籤整合。
 
 * 新 [資產下載體驗](/help/assets/download-assets-from-aem.md) 允許，
 
-   * 非同步下載用於大型下載，因此用戶不必等待。
-   * 一種新的模組化API，用於開發人員擴展性。
+   * 非同步下載大量內容，讓使用者不需等待。
+   * 適用於開發人員擴充性的新模組化API。
 
-* 用於資產微服務的元資料提取具有改進的效能。 它提高了總的資產攝取吞吐量。
+* 資產微服務的中繼資料擷取已改善效能。 這可增加整體資產擷取輸送量。
 
-* 使用處理配置檔案使用計算服務生成自定義元資料。 請參閱 [使用處理配置檔案的自定義元資料](/help/assets/manage-metadata.md#metadata-compute-service)。
+* 使用處理設定檔，以使用計算服務產生自訂中繼資料。 另請參閱 [使用處理設定檔的自訂中繼資料](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* 管理員可以配置的更簡單的Brand Portal用戶下載體驗。 請參閱 [下載體驗概述](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
+* 管理員可設定的Brand Portal使用者更簡單的下載體驗。 另請參閱 [下載體驗概述](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
-* 本機和高保真PDF文檔預覽現已在Brand Portal提供。 請參閱 [文檔查看器概述](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
+* Brand Portal現在提供原始和高保真PDF檔案預覽。 另請參閱 [檔案檢視器概觀](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* 現在，您可以直接從中使CDN（內容分發網路）快取失效 [!DNL Dynamic Media] 在AEMas a Cloud Service [!DNL Dynamic Media Classic])。 它確保在幾分鐘內而不是幾小時內就能提供最新的資產。 請參閱 [通過Dynamic Media使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)。
+* 您現在可以直接從「 」使CDN （內容傳遞網路）快取失效 [!DNL Dynamic Media] 在AEMas a Cloud Service中(與使用 [!DNL Dynamic Media Classic])。 這可確保在幾分鐘內提供最新資產，而非數小時。 另請參閱 [透過Dynamic Media使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
-* 增強的輔助功能支援將添加到中的用戶介面控制項、導航、瀏覽和搜索體驗 [!DNL Assets]。
+* 使用者介面控制項、導覽、瀏覽和搜尋體驗新增了增強的協助工具支援 [!DNL Assets].
 
-   * 如果在選擇 [!UICONTROL 添加格式副本] 選項。 <!-- via CQ-4293594-->
-   * 使用「電子郵件」組合框時，鍵盤焦點按預期工作。 <!-- via CQ-4286215 -->
-   * 搜索濾波器部分中的accordions元素被解釋為標準可擴展的accordion。 <!-- via CQ-4273103 -->
-   * 將標籤應用於資產時，對話框將標籤顯示為樹元素。 ARIA屬性適當應用於樹元素，以便現在可訪問這些元素。 <!-- via CQ-4272964 -->
+   * 如果您在選取後按Escape鍵 [!UICONTROL 新增轉譯] 選項時，焦點會回到工具列。 <!-- via CQ-4293594-->
+   * 使用「電子郵件」下拉式方塊時，鍵盤焦點可如預期運作。 <!-- via CQ-4286215 -->
+   * 搜尋篩選區段中的摺疊式功能表元素會解譯為標準可展開的摺疊式功能表。 <!-- via CQ-4273103 -->
+   * 將標籤套用至資產時，對話方塊會將標籤顯示為樹狀元素。 ARIA屬性已適當套用至樹狀元素，現在即可供存取。 <!-- via CQ-4272964 -->
 
-* [!DNL AEM Desktop app] 2.0.3版本現已提供。 它提高了與 [!DNL Experience Manager] 6.5.5 service pack ，並且具有更新的客戶端作業系統相容性清單。 [!DNL Windows] 7和 [!DNL macOS] 不支援10.14以前的版本。
+* [!DNL AEM Desktop app] 2.0.3版現已推出。 它改善了與的相容性 [!DNL Experience Manager] 6.5.5 service pack和更新的使用者端作業系統相容性清單。 [!DNL Windows] 7和 [!DNL macOS] 不支援10.14之前的版本。
 
 ### 修正在[!DNL Assets]中的錯誤 {#bugs-fixed}
 
-* 首次按一下「相關」和「取消關聯」選項時，不會響應。 (CQ-4299022)
-* 下載資產時，如果您選擇通過電子郵件接收該資產的選項，則不會發送電子郵件。 (CQ-4299146)
+* 「關聯和取消關聯」選項在第一次點按時未回應。 (CQ-4299022)
+* 下載資產時，如果您選取透過電子郵件接收資產的選項，則不會傳送電子郵件。 (CQ-4299146)
 
-## Adobe Experience Manager商業as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 產品控制台功能現在可用。 這允許中的營銷商/作AEM者查看和導航儲存在商業後端中的類別和產品。 還提供了對產品控制台中類別和產品屬性的支援。
+* 產品主控台功能現已推出。 這可讓AEM中的行銷人員/作者檢視和導覽儲存於商務後端的類別和產品。 此外，產品主控台也支援類別和產品屬性。
 
-* 產品和類別選擇器經過改進，使營銷商能夠通過SKU選擇產品或通過類別ID選擇類別。
+* 產品和類別選擇器經過改良，行銷人員可透過SKU選取產品，或透過類別ID選取類別。
 
 ## Cloud Manager {#cloud-manager}
 
 ### 發行日期 {#release-date-cm}
 
-發放日期 [!UICONTROL 雲管理器] 版本2020.8.0為2020年8月6日。
+的發行日期 [!UICONTROL Cloud Manager] 2020.8.0版為2020年8月6日。
 
 ### 新增功能 {#what-is-new-cloud-manager}
 
@@ -120,26 +120,26 @@ ht-degree: 39%
 
 ## 內容轉移工具 {#content-transfer-tool}
 
-請按照本部分瞭解內容傳輸工具1.0.4版的新增內容和更新。
+請詳閱本節，瞭解「內容轉移工具」版本1.0.4的新增功能和更新。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 內容傳輸工具現在支援共用S3資料儲存。
+* 「內容轉移工具」現在支援共用的S3資料存放區。
 
 ### 錯誤修正 {#ctt-bug-fixes}
 
-* 為工具添加了完成操作的額外超時。
+* 工具完成動作已新增其他逾時。
 
-* 早期版本的UI有時顯示成功的提取，即使日誌顯示錯誤。
+* 即使記錄顯示錯誤，舊版UI有時仍會顯示成功擷取。
 
 ## 程式碼重構工具 {#code-refactoring-tools}
 
-請按照本部分瞭解代碼重構工具的新增功能和更新。
+請詳閱本節，瞭解程式碼重構工具的新增功能和更新。
 
 ### 新增功能 {#what-is-new-refactoring}
 
-* AIO-CLI插件已發佈，用於統一代碼重構工具，使開發人員能夠從一個位置調用和執行代碼重構工具。 請參閱 [Git資源：aio-cli-plugin-aem — 雲服務 — 遷移](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 的子菜單。
+* 推出AIO-CLI增效模組，整合了程式碼重構工具，讓開發人員得以從單一位置叫用及執行程式碼重構工具。 請參閱 [Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 以取得更多詳細資料。
 
-* AEM Dispatcher Converter擴展為支援將內部和Adobe Managed Services Dispatcher配置轉換為as a Cloud Service兼AEM容的Dispatcher配置。 請參閱 [Git資源：AEM Cloud Service調度器轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 的子菜單。
+* 已擴充的AEM Dispatcher Converter可支援將內部部署和Adobe Managed Services Dispatcher設定轉換為與AEMas a Cloud Service相容的Dispatcher設定。 請參閱 [Git資源： AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 以取得更多詳細資料。
 
-* 重新AEM寫入的Dispatcher Converter ` node.js ` 與AIO-CLI插件整合。
+* AEM Dispatcher Converter重新寫入 ` node.js ` 並與AIO-CLI外掛程式整合。

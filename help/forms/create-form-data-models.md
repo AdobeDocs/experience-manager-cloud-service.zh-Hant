@@ -1,6 +1,6 @@
 ---
 title: 如何建立表單資料模型？
-description: Experience Manager Forms資料整合提供了一個直觀的用戶介面，用於建立和使用表單資料模型。 瞭解如何使用或不使用配置的資料源建立表單資料模型。
+description: Experience Manager Forms資料整合提供直覺式使用者介面，用於建立和使用表單資料模型。 瞭解如何使用或不使用已設定的資料來源來建立表單資料模型。
 feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
@@ -16,122 +16,122 @@ ht-degree: 0%
 
 ![資料整合](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] 資料整合提供了一個直觀的用戶介面，用於建立和使用表單資料模型。 表單資料模型依賴資料源來交換資料；但是，可以建立包含或不包含資料源的表單資料模型。 根據您是否配置了資料源，有兩種方法可以從資料模型建立：
+[!DNL Experience Manager Forms] 資料整合提供直覺式使用者介面，可建立和使用表單資料模型。 表單資料模型仰賴資料來源交換資料；不過，您可以建立具有或不具有資料來源的表單資料模型。 根據您是否已設定資料來源，從資料模型建立有兩個方法：
 
-* **使用預配置的資料源**:如中所述，如果已配置資料源 [配置資料源](configure-data-sources.md)，可在建立表單資料模型時選擇它們。 它將從選定資料源中提供的所有資料模型對象、屬性和服務都可用於表單資料模型中。
+* **使用預先設定的資料來源**：如果您已如所述設定資料來源 [設定資料來源](configure-data-sources.md)，您可在建立表單資料模型時選取它們。 它會從選定的資料來源帶入所有資料模型物件、屬性和服務，以供表單資料模型使用。
 
-* **沒有資料源**:如果尚未為表單資料模型配置資料源，則仍然可以在沒有資料源的情況下建立它。 可以使用表單資料模型來建立自適應Forms <!--and interactive communication--> 用樣本資料test。 當資料源可用時，您可以將表單資料模型與資料源綁定，這些資料源會自動反映在關聯的自適應Forms中<!--and interactive communications-->。
+* **沒有資料來源**：如果您尚未為表單資料模型設定資料來源，您仍可以在沒有資料來源的情況下建立它。 您可以使用表單資料模型來撰寫最適化Forms <!--and interactive communication--> 並使用範例資料加以測試。 當資料來源可用時，您可以將表單資料模型與資料來源繫結，這會自動反映在關聯的Adaptive Forms中<!--and interactive communications-->.
 
 >[!NOTE]
 >
->您必須是兩者的成員 **fdm作者** 和 **表單用戶** 組以便能夠建立和使用表單資料模型。 聯繫您 [!DNL Experience Manager] 管理員成為組的成員。
+>您必須同時為兩者 **fdm-author** 和 **forms-user** 群組，以便能夠建立和使用表單資料模型。 聯絡您的 [!DNL Experience Manager] 成為群組成員的管理員。
 
 ## 建立表單資料模型 {#data-sources}
 
-確保已配置了要在表單資料模型中使用的資料源，如中所述 [配置資料源](configure-data-sources.md)。 執行以下操作以基於已配置的資料源建立表單資料模型：
+請確定您已依照中的說明，設定您要用於表單資料模型中的資料來源 [設定資料來源](configure-data-sources.md). 執行下列動作，根據已設定的資料來源建立表單資料模型：
 
-1. 在 [!DNL Experience Manager] 作者實例，導航 **[!UICONTROL Forms>資料整合]**。
-1. 點擊 **[!UICONTROL 建立>表單資料模型]**。
-1. 在「建立表單資料模型」對話框中：
+1. 在 [!DNL Experience Manager] 作者執行個體，導覽至 **[!UICONTROL Forms >資料整合]**.
+1. 點選 **[!UICONTROL 建立>表單資料模型]**.
+1. 在建立表單資料模型對話方塊中：
 
    * 指定表單資料模型的名稱。
    * (**可選**)指定表單資料模型的標題、說明和標籤。
-   * (**只有配置了資料源時才可選和適用**)按一下 **[!UICONTROL 資料源配置]** 欄位，並選擇要使用的資料源的雲服務所在的配置節點。 它將下一頁上可供選擇的資料源清單限制為所選配置節點中可用的資料源清單。 但是， [!DNL Experience Manager] 預設情況下會列出用戶配置檔案資料源。 如果未選擇配置節點，則會列出來自所有配置節點的資料源。
+   * (**選填，且僅在資料來源已設定時適用**)點選「 」旁的勾選圖示 **[!UICONTROL 資料來源組態]** 欄位並選取您要使用之資料來源的cloud service所在的設定節點。 它會將下一頁可供選取的資料來源清單，限制在所選設定節點中可供選取的資料來源。 但是，任何 [!DNL Experience Manager] 預設會列出使用者設定檔資料來源。 如果您未選取設定節點，則會列出所有設定節點的資料來源。
 
-1. 點擊 **[!UICONTROL 下一個]**。
+1. 點選 **[!UICONTROL 下一個]**.
 
-1. (**僅在配置資料源時適用**) **[!UICONTROL 選擇資料源]** 螢幕列出可用資料源（如果有）。 選擇要在表單資料模型中使用的資料源。
-1. 點擊 **[!UICONTROL 建立]** 在確認對話框中，點擊 **[!UICONTROL 開啟]** 開啟「表單資料模型」編輯器。
+1. (**僅適用於已設定資料來源時**) **[!UICONTROL 選取資料來源]** 畫面會列出可用的資料來源（若有）。 選取您要在表單資料模型中使用的資料來源。
+1. 點選 **[!UICONTROL 建立]** 在確認對話方塊上，點選 **[!UICONTROL 開啟]** 以開啟表單資料模型編輯器。
 
-   讓我們查看表單資料模型編輯器UI的不同元件。
+   讓我們檢閱表單資料模型編輯器UI的不同元件。
 
-   ![一個包含三個資料源的表單資料模型 — REST風格服務， [!DNL Experience Manager] 用戶配置檔案和RDBMS](assets/fdm-ui.png)
+   ![具有三個資料來源的表單資料模型 — RESTful服務、 [!DNL Experience Manager] 使用者設定檔和RDBMS](assets/fdm-ui.png)
 
-   答： **[!UICONTROL 資料源]** 在表單資料模型中列出資料源。 展開資料源以查看其資料模型對象和服務。
+   答： **[!UICONTROL 資料來源]** 列出表單資料模型中的資料來源。 展開資料來源以檢視其資料模型物件與服務。
 
-   B **[!UICONTROL 刷新資料源定義]** 從配置的資料源中讀取資料源定義中的任何更改，並在表單資料模型編輯器的「資料源」頁籤中更新這些更改。
+   B. **[!UICONTROL 重新整理資料來源定義]** 從已設定的資料來源擷取資料來源定義的任何變更，並在表單資料模型編輯器的「資料來源」標籤中更新這些變更。
 
-   C. **[!UICONTROL 模型]** 顯示添加的資料模型對象的內容區域。
+   C. **[!UICONTROL 模型]** 新增的資料模型物件出現的內容區域。
 
-   D **[!UICONTROL 服務]** 顯示添加的資料源操作或服務的內容區域。
+   D. **[!UICONTROL 服務]** 新增的資料來源作業或服務出現的內容區域。
 
-   E. **[!UICONTROL 工具欄]** 使用表單資料模型的工具。 工具欄顯示更多選項，具體取決於窗體資料模型中選定的對象。
+   E. **[!UICONTROL 工具列]** 使用表單資料模型的工具。 工具列會根據表單資料模型中選取的物件顯示更多選項。
 
-   F. **[!UICONTROL 添加選定項]** 將所選資料模型對象和服務添加到表單資料模型。
+   F. **[!UICONTROL 新增選取專案]** 將選取的資料模型物件和服務新增至表單資料模型。
 
-有關表單資料模型編輯器以及如何使用它編輯和配置表單資料模型的詳細資訊，請參見 [使用表單資料模型](work-with-form-data-model.md)。
+如需表單資料模型編輯器以及如何使用它來編輯和設定表單資料模型的詳細資訊，請參閱 [使用表單資料模型](work-with-form-data-model.md).
 
-## 更新資料源 {#update}
+## 更新資料來源 {#update}
 
-執行以下操作可將資料源添加到現有表單資料模型或將其更新。
+執行下列動作，將資料來源新增或更新至現有表單資料模型。
 
-1. 轉到 **[!UICONTROL Forms>資料整合]**，選擇要添加或更新資料源的表單資料模型，然後點擊 **[!UICONTROL 屬性]**。
-1. 在「表單資料模型」屬性中，轉到 **[!UICONTROL 更新源]** 頁籤。
+1. 前往 **[!UICONTROL Forms >資料整合]**，選取您要新增或更新資料來源的表單資料模型，然後點選 **[!UICONTROL 屬性]**.
+1. 在表單資料模型屬性中，前往 **[!UICONTROL 更新來源]** 標籤。
 
-   在 **[!UICONTROL 更新源]** 頁籤：
+   在 **[!UICONTROL 更新來源]** 標籤：
 
-   * 按一下 **[!UICONTROL 上下文感知配置]** 欄位，並選擇要添加的資料源的雲配置所在的配置節點。 如果未選擇節點，則僅駐留在 `global` 點擊時列出節點 **[!UICONTROL 添加源]**。
+   * 點選「 」中的「 」瀏覽圖示 **[!UICONTROL 內容感知設定]** 欄位並選取您要新增之資料來源的雲端設定所在的設定節點。 如果您未選取節點，則雲端設定僅駐留在 `global` 點選時列出節點 **[!UICONTROL 新增來源]**.
 
-   * 要添加新資料源，請點擊 **[!UICONTROL 添加源]** 並選擇要添加到表單資料模型的資料源。 配置的所有資料源 `global` 並顯示選定的配置節點（如果有）。
+   * 若要新增資料來源，請點選 **[!UICONTROL 新增來源]** 並選取要新增至表單資料模型的資料來源。 所有資料來源均設定於 `global` 和選取的設定節點（如果有的話）會顯示出來。
 
-   * 要將現有資料源替換為同一類型的另一個資料源，請點擊 **[!UICONTROL 編輯]** 表徵圖，並從可用資料源清單中選擇。
-   * 要刪除現有資料源，請點擊 **[!UICONTROL 刪除]** 表徵圖。 如果在表單資料模型中添加資料源中的資料模型對象，則「刪除」表徵圖將被禁用。
+   * 若要以相同型別的另一個資料來源取代現有資料來源，請點選 **[!UICONTROL 編輯]** 圖示並選取可用資料來源清單中的「 」。
+   * 若要刪除現有的資料來源，請點選 **[!UICONTROL 刪除]** 資料來源的圖示。 如果將資料來源中的資料模型物件新增至表單資料模型，則會停用「刪除」圖示。
 
-      ![fdm屬性](assets/fdm-properties.png)
+      ![fdm-properties](assets/fdm-properties.png)
 
-1. 點擊 **[!UICONTROL 保存並關閉]** 來保存更新。
+1. 點選 **[!UICONTROL 儲存並關閉]** 以儲存更新。
 
 >[!NOTE]
 >
->在表單資料模型中添加新資料源或更新現有資料源後，請確保在Adaptive Forms中更新綁定引用<!--and interactive communications--> 使用更新的表單資料模型。
+>在表單資料模型中新增資料來源或更新現有資料來源後，請務必視需要在Adaptive Forms中更新繫結參考<!--and interactive communications--> 使用更新後表單資料模型的使用者。
 
-## 特定運行模式的上下文感知配置 {#runmode-specific-context-aware-config}
+## 特定執行模式的內容感知設定 {#runmode-specific-context-aware-config}
 
-[!UICONTROL 窗體資料模型] 利用 [吊帶上下文感知配置](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) 支援不同的資料源參數，以便與不同的資料源連接 [!DNL Experience Manager] 運行模式。
+[!UICONTROL 表單資料模型] 利用 [Sling內容感知設定](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) 支援不同的資料來源引數，以連線不同的資料來源 [!DNL Experience Manager] 執行模式。
 
-當 [!UICONTROL 窗體資料模型] 使用雲配置來儲存參數，當通過原始碼管理（Cloud-Manager GIT儲存庫）簽入和部署時，這些參數將為所有運行模式（開發、階段和生產）建立具有相同參數的雲配置。 但是，對於需要為test和生產環境提供不同資料集的使用情形，則我們使用不同資料源參數（例如資料源URL） [!DNL Experience Manager] 運行模式。
+時間 [!UICONTROL 表單資料模型] 使用雲端設定來儲存引數，這些引數在登入和透過原始檔控制（Cloud-Manager GIT存放庫）部署時，會為所有執行模式（開發、測試和生產）使用相同的引數來建立雲端設定。 不過，在測試和生產環境需要不同資料集的使用案例中，我們會針對不同使用資料來源引數（例如資料來源URL） [!DNL Experience Manager] 執行模式。
 
-要實現此目標，您需要建立包含資料源參數 — 值對的OSGi配置。 這將覆蓋來自 [!UICONTROL 窗體資料模型] 運行時的雲配置。 由於OSGi配置預設支援這些運行模式，因此您可以根據運行模式將資料源參數覆蓋到不同的值。
+為此，您需要建立包含資料來源引數 — 值配對的OSGi設定。 這會覆寫來自的相同配對 [!UICONTROL 表單資料模型] 執行階段的雲端設定。 由於OSGi設定預設支援這些執行模式，因此您可以根據執行模式將資料來源引數覆寫為不同的值。
 
-在中啟用特定於部署的雲配置 [!UICONTROL 窗體資料模型]:
+若要在中啟用部署專用雲端設定 [!UICONTROL 表單資料模型]：
 
-1. 在本地開發實例上建立雲配置。 有關詳細步驟，請參見 [如何配置資料源](/help/forms/configure-data-sources.md)。
+1. 在本機開發執行個體上建立雲端設定。 如需詳細步驟，請參閱 [如何設定資料來源](/help/forms/configure-data-sources.md).
 
-1. 將雲配置儲存到檔案系統。
-   1. 使用篩選器建立包 `/conf/{foldername}/settings/cloudconfigs/fdm`。 使用相同 `{foldername}` 按 替換 `fdm` 與 `azurestorage` 用於Azure儲存配置。
-   1. 生成和下載包。 有關詳細資訊，請參閱 [包操作](/help/implementing/developing/tools/package-manager.md)。
+1. 將您的雲端設定儲存至檔案系統。
+   1. 使用篩選器建立封裝 `/conf/{foldername}/settings/cloudconfigs/fdm`. 使用相同的 `{foldername}` 如步驟1所示。 和取代 `fdm` 替換為 `azurestorage` 用於Azure儲存體設定。
+   1. 建置和下載套件。 如需詳細資訊，請參閱 [套件動作](/help/implementing/developing/tools/package-manager.md).
 
-1. 將雲配置整合到 [!DNL Experience Manager] 原型計畫。
-   1. 解壓縮下載的包。
-   1. 複製 `jcr_root` 資料夾 `ui.content` > `src` > `main` > `content`。
-   1. 更新 `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` 包含篩選器 `/conf/{foldername}/settings/cloudconfigs/fdm`。 有關詳細資訊，請參閱 [項目原型的ui.AEMcontent模組](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)。 當通過CM管道部署此原型項目時，所有環境（或運行模式）上都會安裝相同的雲配置。 要根據環境更改雲配置的欄位（如URL）的值，請使用以下步驟中討論的OSGi配置。
+1. 在中整合雲端設定 [!DNL Experience Manager] 原型專案。
+   1. 將下載的套件解壓縮。
+   1. 複製 `jcr_root` 資料夾並將其放在您的 `ui.content` > `src` > `main` > `content`.
+   1. 更新 `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` 以包含篩選器 `/conf/{foldername}/settings/cloudconfigs/fdm`. 如需詳細資訊，請參閱 [AEM專案原型的ui.content模組](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). 透過CM管道部署此原型專案時，相同的雲端設定會安裝在所有環境（或執行模式）上。 若要根據環境變更雲端設定的欄位值（例如URL），請使用以下步驟中討論的OSGi設定。
 
-1. 建立Apache Sling上下文感知配置。 要建立OSGi配置：
-   1. **在中設定OSGi配置檔案 [!DNL Experience Manager] 原型計畫。**
-使用PID建立OSGi工廠配置檔案 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`。在每個運行模式資料夾下建立具有相同名稱的檔案，其中每個運行模式需要更改值。 有關詳細資訊，請參閱 [為配置OSGi [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations)。
+1. 建立Apache Sling內容感知設定。 若要建立OSGi設定：
+   1. **在中設定OSGi設定檔 [!DNL Experience Manager] 原型專案。**
+使用PID建立OSGi Factory設定檔 
+`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`。在每個執行模式資料夾下建立名稱相同的檔案，其中值需在每個執行模式中變更。 如需詳細資訊，請參閱 [設定OSGi用於 [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
-   1. **設定OSGI配置json。** 要使用Apache Sling上下文感知配置覆蓋提供程式：
-      1. 論地方發展實例 `/system/console/configMgr`，選擇具有名稱的工廠OSGi配置 **[!UICONTROL Apache Sling上下文感知配置覆蓋提供程式：OSGi配置]**。
+   1. **設定OSGI設定json。** 若要使用Apache Sling內容感知設定覆寫提供者：
+      1. 在本機開發執行個體上 `/system/console/configMgr`，選取名稱為的工廠OSGi設定 **[!UICONTROL Apache Sling內容感知設定覆寫提供者： OSGi設定]**.
       1. 提供說明。
-      1. 選擇 **[!UICONTROL 啟用]**。
-      1. 在覆蓋下，提供需要根據sling覆蓋語法中的環境更改的欄位。 有關詳細資訊，請參閱 [Apache Sling上下文感知配置 — 覆蓋](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax)。 比如說， `cloudconfigs/fdm/{configName}/url="newURL"`。
-通過選擇 **[!UICONTROL +]**。
+      1. 選取 **[!UICONTROL 已啟用]**.
+      1. 在覆寫下，根據sling覆寫語法中的環境，提供需要變更的欄位。 如需詳細資訊，請參閱 [Apache Sling內容感知設定 — 覆寫](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 例如， `cloudconfigs/fdm/{configName}/url="newURL"`.
+選取「 」，可新增多個覆寫 **[!UICONTROL +]**.
       1. 選取&#x200B;**[!UICONTROL 儲存]**。
-      1. 要獲取OSGi配置JSON，請按照中的步驟操作 [使用SDK快速啟動生成AEMOSGi配置](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)。
-      1. 將JSON放在上一步中建立的OSGi工廠配置檔案中。
-      1. 更改 `newURL` 基於環境（或運行模式）。
-      1. 要根據運行模式更改機密值，可以使用 [雲管理器API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 以後可以在 [OSGi配置](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values)。
-當此原型項目通過CM管道部署時，覆蓋將在不同的環境（或運行模式）上提供不同的值。
+      1. 若要取得OSGi Configuration JSON，請遵循中的步驟 [使用AEM SDK快速入門產生OSGi設定](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
+      1. 將JSON放在上一步建立的OSGi Factory設定檔案中。
+      1. 變更值 `newURL` 根據環境（或runmode）。
+      1. 若要根據runmode變更密碼值，可以使用以下專案建立密碼變數 [cloud manager API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 和更新版本可在以下連結中參照： [OSGi設定](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
+透過CM管道部署此原型專案時，覆寫將在不同的環境（或執行模式）上提供不同的值。
 
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] 用戶可以使用加密支援加密密鑰值(有關詳細資訊，請參閱 [配置屬性的加密支援](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) 並將加密文本放在 [上下文感知配置在service pack 6.5.13.0中提供](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config)。
+      >[!DNL Adobe Managed Service] 使用者可使用加密支援來加密加密加密值(如需詳細資訊，請參閱 [設定屬性的加密支援](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) 並將加密的文字放在之後的值中 [上下文感知設定在service pack 6.5.13.0中提供](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
 
-1. 使用選項刷新中的資料源定義來刷新資料源定義 [表單資料模型編輯器](#data-sources) 通過FDM UI刷新FDM快取並獲取最新配置。
+1. 使用選項重新整理資料來源定義，以重新整理 [表單資料模型編輯器](#data-sources) 以透過FDM UI重新整理FDM快取並取得最新設定。
 
 ## 後續步驟 {#next-steps}
 
-現在，您有一個表單資料模型，其中添加了資料源。 接下來，您可以編輯表單資料模型以添加和配置資料模型對象和服務、添加資料模型對象之間的關聯、編輯屬性、添加自定義資料模型對象和屬性、生成示例資料等。
+您現在擁有已新增資料來源的表單資料模型。 接下來，您可以編輯「表單資料模型」以新增及設定資料模型物件與服務、新增資料模型物件之間的關聯、編輯屬性、新增自訂資料模型物件與屬性、產生範例資料等。
 
-有關詳細資訊，請參見 [使用表單資料模型](work-with-form-data-model.md)。
+如需詳細資訊，請參閱 [使用表單資料模型](work-with-form-data-model.md).

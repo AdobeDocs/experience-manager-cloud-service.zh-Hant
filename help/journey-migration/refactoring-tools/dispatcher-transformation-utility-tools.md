@@ -35,17 +35,17 @@ Dispatcher 是 Adobe Experience manager 的快取和/或負載平衡工具。使
 
 ## AEM Dispatcher 轉換工具 {#aem-dispatcher-converter}
 
-AEM Dispatcher Converter提供了將現有的本地或Adobe Managed Services Dispatcher配置重構為as a Cloud Service相容的AEMDispatcher配置的功能。
+AEM Dispatcher Converter可將現有的內部部署或Adobe Managed Services Dispatcher設定重構成與AEMas a Cloud Service相容的Dispatcher設定。
 
 ## 使用 AEM Dispatcher 轉換工具 {#using-dispatcher-converter}
 
-* 通過Adobe I/OCLI :建議使用Dispatcher Converter(AEMDispatcher Converter) `aio-cli-plugin-aem-cloud-service-migration` (AEMAdobe I/OCLI的as a Cloud Service代碼重構插件)。
+* 透過Adobe I/OCLI ：建議透過以下方式使用AEM Dispatcher Converter： `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/OCLI的AEMas a Cloud Service程式碼重構外掛程式)。
 
-   請參閱 **[Git資源：aio-cli-plugin-aem — 雲服務 — 遷移](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 瞭解如何安裝和使用插件。
+   請參閱 **[Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 瞭解如何安裝及使用外掛程式。
 
-* 作為獨立實用程式：Dispatcher Converter工AEM具也可以作為獨立實用程式執行。
+* 作為獨立公用程式： AEM Dispatcher Converter工具也可以作為獨立公用程式執行。
 
-   請參閱 **[Git資源：AEM Cloud Service調度器轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** 瞭解此工具的用法和故障排除。
+   請參閱 **[Git資源： AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** 以瞭解此工具的使用和疑難排解。
 
 >[!IMPORTANT]
->Dispatcher ConverterAEM是使用NodeJS開發的。 建議安裝NodeJS 10.0+。
+>AEM Dispatcher Converter是使用NodeJS開發。 建議安裝NodeJS 10.0+。

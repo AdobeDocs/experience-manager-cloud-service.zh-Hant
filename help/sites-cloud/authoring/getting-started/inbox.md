@@ -1,6 +1,6 @@
 ---
 title: 您的收件匣
-description: 使用收件箱管理任務
+description: 使用收件匣管理您的工作
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -11,154 +11,154 @@ ht-degree: 18%
 
 # 您的收件匣 {#your-inbox}
 
-您可以從各個領域(包括工作流和AEM項目)接收通知。 例如，您可能會收到有關以下內容的通知：
+您可以從AEM的各個區域接收通知，包括工作流程和專案。 例如，您可能會收到下列相關通知：
 
 * 任務:
-   * 也可在UI內的各個點建立AEM，例如，在 **項目**。
+   * 這些也可在AEM UI中的不同時間點建立，例如 **專案**.
    * 這些可以是工作流「建立任務」 **或「建立****項目任務」步驟的產品** 。
 * 工作流程:
-   * 表示需要對頁面內容執行的操作的工作項
-      * 這些是工作流的產品 **參與者** 的子菜單。
-   * 失敗項，允許管理員重試失敗的步驟
+   * 代表您需要對頁面內容執行之動作的工作專案
+      * 這些是工作流程的產物 **參與者** 步驟。
+   * 失敗專案，可讓管理員重試失敗的步驟
 
-您可以在自己的收件箱中接收這些通知，您可以在此查看這些通知並採取行動。
+您會在自己的收件匣中收到這些通知，您可以在其中檢視通知並採取行動。
 
 >[!NOTE]
 >
->有關項目類型的詳細資訊，另請參閱：
+>如需有關料號型態的進一步資訊，另請參閱：
 >
 >* [專案](/help/sites-cloud/authoring/projects/overview.md)
->* [項目 — 使用任務](/help/sites-cloud/authoring/projects/tasks.md)
+>* [專案 — 使用任務](/help/sites-cloud/authoring/projects/tasks.md)
 >* [工作流程](/help/sites-cloud/authoring/workflows/overview.md)
 
 
-## 標題中的收件箱 {#inbox-in-the-header}
+## 標題中的收件匣 {#inbox-in-the-header}
 
-在任何控制台中，收件箱中的當前項目數都顯示在標題中。 還可以開啟指示器，以便快速訪問需要操作的頁面或訪問收件箱：
+從任何控制檯中，收件匣中目前的專案數量會顯示在標題中。 指標也可以開啟，以提供對需要動作的頁面的快速存取權或收件匣的存取權：
 
-![標題中的收件箱概述](/help/sites-cloud/authoring/assets/inbox-header.png)
+![標題中的收件匣概觀](/help/sites-cloud/authoring/assets/inbox-header.png)
 
 >[!NOTE]
 >
->某些操作也將顯示在 [相應資源的卡視圖](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)。
+>某些動作也會顯示於 [適當資源的卡片檢視](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
-## 開啟收件箱 {#opening-the-inbox}
+## 開啟收件匣 {#opening-the-inbox}
 
-要開啟通知收AEM件箱：
+若要開啟AEM通知收件匣：
 
-1. 按一下/點擊工具欄中的指示器。
+1. 按一下/點選工具列中的指標。
 
 1. 選擇「 **全部查看**」。「 **AEM收件匣** 」將會開啟。收件匣會顯示工作流程、專案和工作中的項目。
 1. 預設視圖是「列 [表視圖](#inbox-list-view)」，但您也可以切換到「日 [歷視圖」](#inbox-calendar-view)。這是使用檢視選取器 (工具列，右上方) 完成。
 
-   對於這兩個視圖，您還可以定義 [查看設定](#inbox-view-settings)。 可用選項取決於當前視圖。
+   對於這兩個檢視，您也可以定義 [檢視設定](#inbox-view-settings). 可用的選項取決於目前檢視。
 
-   ![收件箱視圖設定](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
+   ![收件匣檢視設定](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
 
 >[!NOTE]
 >
 >收件箱作為控制台運行，因此，在您完成 [後，使用全局導航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)[](/help/sites-cloud/authoring/getting-started/search.md) 或搜索導航到其他位置。
 
-### 收件箱 — 清單視圖 {#inbox-list-view}
+### 收件匣 — 清單檢視 {#inbox-list-view}
 
-此視圖列出所有項目及相關資訊：
+此檢視會列出所有專案，以及相關資訊：
 
-![收件箱清單視圖](/help/sites-cloud/authoring/assets/inbox-list-view.png)
+![收件匣清單檢視](/help/sites-cloud/authoring/assets/inbox-list-view.png)
 
-### 收件箱 — 日曆視圖 {#inbox-calendar-view}
+### 收件匣 — 行事曆檢視 {#inbox-calendar-view}
 
-此視圖根據項目在日曆中的位置顯示項目：
+此檢視會根據專案在行事曆中的位置顯示專案：
 
-![收件箱日曆視圖](/help/sites-cloud/authoring/assets/inbox-calendar-view.png)
+![收件匣行事曆檢視](/help/sites-cloud/authoring/assets/inbox-calendar-view.png)
 
 您可以：
 
-* 選擇特定視圖： **時間軸**。 **列**。 **清單**
+* 選取特定檢視： **時間表**， **欄**， **清單**
 * 指定要根據「計畫」顯示的 **任務**:所有 **計畫中**&#x200B;的， **進行中**, **即將到**，過 ******去的,**
-* 深入查看有關物料的詳細資訊
-* 選擇日期範圍以聚焦視圖：
+* 向下追溯料號的詳細資訊
+* 選取日期範圍以集中檢視：
 
-![收件箱日曆視圖日期範圍](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
+![收件匣行事曆檢視日期範圍](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
 
-### 收件箱 — 查看設定 {#inbox-view-settings}
+### 收件匣 — 檢視設定 {#inbox-view-settings}
 
-對於兩個視圖（「清單」和「日曆」），可以定義設定：
+對於這兩個檢視（「清單」和「行事曆」），您可以定義設定：
 
 * **日曆檢視**
 
-   對於 **日曆視圖** 您可以配置：
+   對象 **行事曆檢視** 您可以設定：
 
    * **分組依據**
    * **排程** 或無 ****
-   * **卡大小**
+   * **卡片大小**
 
-   ![收件箱日曆視圖設定](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+   ![收件匣行事曆檢視設定](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **清單檢視**
 
-   對於 **清單視圖** 可以配置排序機制：
+   對象 **清單檢視** 您可以設定排序機制：
 
-   * **排序**
+   * **排序依據**
    * **排序順序**
 
-   ![收件箱清單視圖設定](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+   ![收件匣清單檢視設定](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   您還可以將日曆委託給其他用途，以及從其他用戶請求委託並管理委託。
+   您也可以將行事曆委派給其他使用者，以及請求其他使用者的委派和管理您的委派。
 
-   ![收件箱清單視圖委派設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+   ![收件匣清單檢視委派設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
-## 對物料執行操作 {#taking-action-on-an-item}
+## 對專案採取動作 {#taking-action-on-an-item}
 
 >[!NOTE]
 >
->雖然可以選擇多個項，但一次只能對一個項執行操作。
+>雖然可以選取多個專案，但一次只能對一個專案執行動作。
 
-1. 要對項目執行操作，請為相應項目選擇縮略圖。 適用於該項目的操作的表徵圖將顯示在工具欄中：
+1. 若要對專案執行動作，請選取適當專案的縮圖。 適用於該專案的動作圖示將顯示在工具列中：
 
-   ![選擇收件箱項](/help/sites-cloud/authoring/assets/inbox-select-item.png)
+   ![選取收件匣專案](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
-   這些操作適用於項目，包括：
+   這些動作適用於該專案，包括：
 
    * **完成** 動作
-   * **委託** 物料
-   * **開啟** 項，根據項類型，此操作可以：
+   * **委派** 專案
+   * **開啟** 料號，視料號型態而定，此動作可以：
 
-      * 顯示項屬性
-      * 開啟適當的儀表板或嚮導以執行進一步操作
-      * 開啟相關文檔
-   * **後退** 到上一步
-   * 查看工作流的負載
-   * 從物料建立項目
+      * 顯示專案屬性
+      * 開啟適當的儀表板或精靈以進一步操作
+      * 開啟相關檔案
+   * **後退** 至上一步
+   * 檢視工作流程的裝載
+   * 從專案建立專案
 
    >[!NOTE]
    >
    >如需進一步詳細資訊，請參閱：
    >
-   >* 工作流項 —  [參與工作流](/help/sites-cloud/authoring/workflows/participating.md)
+   >* 工作流程專案 —  [參與工作流程](/help/sites-cloud/authoring/workflows/participating.md)
 
 
-2. 將根據選定的項啟動操作，例如：
+2. 視選取的專案而定，將會啟動動作，例如：
 
-   * 將開啟與操作相適應的對話框
-   * 將啟動操作嚮導
-   * 將開啟文檔頁面
+   * 將會開啟適用於此動作的對話方塊
+   * 將啟動動作精靈
+   * 將會開啟檔案頁面
 
-   比如說， **委託** 將開啟對話框：
+   例如， **委派** 將會開啟一個對話方塊：
 
-   ![委派收件箱任務](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
+   ![委派收件匣任務](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 
-   根據是否開啟了對話框、嚮導和文檔頁，您可以：
+   視是否已開啟對話方塊、精靈、檔案頁面而定，您可以：
 
-   * 確認相應的操作，例如重新分配。
-   * 取消操作
-   * 選擇後箭頭以返回到收件箱，例如，如果操作嚮導或文檔頁面已開啟，則可以返回到收件箱。
+   * 確認適當的動作，例如重新指派。
+   * 取消動作
+   * 選取「上一步」箭頭可返回收件匣，例如，如果已開啟動作精靈或檔案頁面，則可返回「收件匣」。
 
 
 ## 建立任務 {#creating-a-task}
 
-在收件箱中，您可以建立任務：
+您可以從收件匣建立任務：
 
-1. 選擇 **建立**，則 **任務**。
+1. 選取 **建立**，則 **任務**.
 1. 填寫「基本」和「進階 **」標籤中的必要欄位** (只有「 **標題****** 」是必填的，其他所有欄位都是選用的):
 
    * **基本**:
@@ -166,37 +166,37 @@ ht-degree: 18%
       * **標題**
       * **專案**
       * **被指派者**
-      * **內容**&#x200B;與負載類似，這是從任務到儲存庫中某個位置的引用
+      * **內容**，與「裝載」類似，這是從任務到存放庫中位置的參考
       * **說明**
       * **任務優先順序**
       * **開始日期**
       * **到期日期**
 
-   ![收件箱添加任務](/help/sites-cloud/authoring/assets/inbox-create-task.png)
+   ![收件匣新增任務](/help/sites-cloud/authoring/assets/inbox-create-task.png)
 
    * **進階**
 
-      * **名稱**：這將用於形成URL，如果為空，則基於 **標題**。
+      * **名稱**：這將用於形成URL，如果留空，它將根據 **標題**.
 
-   ![收件箱添加任務高級選項](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
+   ![收件匣新增任務進階選項](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
-1. 選擇 **提交**。
+1. 選取 **提交**.
 
-## 建立項目 {#creating-a-project}
+## 建立專案 {#creating-a-project}
 
-對於某些任務，您可以建立 [項目](/help/sites-cloud/authoring/projects/overview.md) 基於該任務：
+您可以針對特定工作建立 [專案](/help/sites-cloud/authoring/projects/overview.md) 根據該任務：
 
-1. 按一下/按一下縮略圖，選擇相應的任務。
+1. 點選/按一下縮圖，選取適當的工作。
 
    >[!NOTE]
    >
-   >僅使用 **建立** 選項 **收件箱** 可用於建立項目。
+   >僅限使用建立的任務 **建立** 的選項 **收件匣** 可用來建立專案。
    >
-   >無法使用工作流中的工作項建立項目。
+   >工作專案（來自工作流程）無法用於建立專案。
 
 1. 從工 **具列選擇** 「建立專案」以開啟精靈。
-1. 選擇相應模板，然後 **下一個**。
-1. 指定所需的屬性：
+1. 選取適當的範本，然後 **下一個**.
+1. 指定必要的屬性：
 
    * **基本**
 
@@ -204,30 +204,30 @@ ht-degree: 18%
       * **說明**
       * **開始日期**
       * **到期日期**
-      * **用戶** 角色
+      * **使用者** 和角色
    * **進階**
 
       * **名稱**
    >[!NOTE]
    >
-   >請參閱 [建立項目](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) 的雙曲餘切值。
+   >另請參閱 [建立專案](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) 以取得完整資訊。
 
-1. 選擇 **建立** 確認操作。
+1. 選取 **建立** 以確認動作。
 
-## 篩選收件箱中的AEM項 {#filtering-items-in-the-aem-inbox}
+## 篩選AEM收件匣中的專案 {#filtering-items-in-the-aem-inbox}
 
-您可以篩選列出的項：
+您可以篩選列出的專案：
 
-1. 開啟 **收件箱AEM**。
+1. 開啟 **AEM收件匣**.
 
-1. 開啟篩選器選擇器：
+1. 開啟篩選選擇器：
 
-   ![收件箱搜索](/help/sites-cloud/authoring/assets/inbox-search.png)
+   ![收件匣搜尋](/help/sites-cloud/authoring/assets/inbox-search.png)
 
-1. 您可以根據一系列標準篩選列出的項目，其中許多可以細化。 例如：
+1. 您可以根據一系列條件篩選列出的專案，其中許多條件可以細化。 例如：
 
-   ![收件箱搜索篩選器](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
+   ![收件匣搜尋篩選器](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
 
    >[!NOTE]
    >
-   >與 [查看設定](#inbox-view-settings) 也可以在使用 [清單視圖](#inbox-list-view)。
+   >替換為 [檢視設定](#inbox-view-settings) 您也可以在使用時設定排序順序 [清單檢視](#inbox-list-view).

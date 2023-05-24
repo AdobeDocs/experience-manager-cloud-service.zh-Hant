@@ -1,6 +1,6 @@
 ---
 title: 提升 Launch
-description: 在發佈之前，您需要升級啟動頁面，以將內容移回源（生產）。
+description: 您必須提升啟動頁面，才能在發佈前將內容移回來源（生產環境）。
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
@@ -11,128 +11,128 @@ ht-degree: 6%
 
 # 提升 Launch {#promoting-launches}
 
-在發佈之前，您需要升級啟動頁面，以將內容移回源（生產）。 當啟動頁面被升級時，源頁面的相應頁面被升級頁面的內容替換。 升級啟動頁時可使用以下選項：
+您必須提升啟動頁面，才能在發佈前將內容移回來源（生產環境）。 提升啟動頁面時，來源頁面的對應頁面會取代為提升頁面的內容。 提升啟動頁面時，有以下選項可供使用：
 
-* 是僅升級當前頁面還是整個啟動。
-* 是否提升當前頁的子頁。
-* 是升級完整啟動，還是僅升級已更改的頁面。
-* 是否在升級後刪除啟動。
-
->[!NOTE]
->
->將啟動頁提升到目標(**生產**)，您可以激活 **生產** 頁面作為實體（以加快流程）。 將頁面添加到工作流包，並將其用作激活頁麵包的工作流的負載。 在升級啟動之前，需要建立工作流包。 請參閱 [使用工作流處理已升級AEM頁](#processing-promoted-pages-using-aem-workflow)。
-
->[!CAUTION]
->
->不能同時升級單個啟動。 這意味著在同一次啟動上同時執行兩個升級操作可能導致錯誤 —  `Launch could not be promoted` （以及日誌中的衝突錯誤）。
-
->[!CAUTION]
->
->在為 *修改* 頁面，將考慮源分支和啟動分支中的修改。
-
-## 升級啟動頁 {#promoting-launch-pages}
+* 僅提升目前頁面還是整個啟動。
+* 是否要升級目前頁面的子頁面。
+* 是提升完整啟動項，還是僅提升已變更的頁面。
+* 升級後是否要刪除啟動。
 
 >[!NOTE]
 >
->這包括在只有一個發射級別時升級發射頁面的手動操作。 請參閱：
+>將啟動頁面升級至目標之後(**生產**)，則您可啟動 **生產** 以圖元形式顯示頁面（以加快處理速度）。 將頁面新增至Workflow封裝，並當做啟動頁面封裝的Workflow的裝載。 在提升啟動項之前，您需要建立工作流程套件。 另請參閱 [使用AEM工作流程處理提升頁面](#processing-promoted-pages-using-aem-workflow).
+
+>[!CAUTION]
 >
->* [升級嵌套啟動](#promoting-a-nested-launch) 當結構中有多個發射時。
->* [啟動 — 事件順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) 的子菜單。
+>無法同時提升單一啟動。 這表示對同一個啟動項同時執行兩個提升動作可能會導致錯誤 —  `Launch could not be promoted` （連同記錄檔中的衝突錯誤）。
+
+>[!CAUTION]
+>
+>提升啟動時 *已修改* 頁面，會同時考慮來源分支和啟動分支中的修改。
+
+## 提升啟動頁面 {#promoting-launch-pages}
+
+>[!NOTE]
+>
+>當只有一個啟動層級時，這會涵蓋提升啟動頁面的手動動作。 請參閱：
+>
+>* [提升巢狀啟動](#promoting-a-nested-launch) 當結構中有多個啟動項時。
+>* [啟動 — 事件順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) 以取得有關自動促銷和發佈的更多詳細資訊。
 >
 
 
-您可以從以下任一 **站點** 控制台或 **啟動** 控制台：
+您可以透過以下任一項提升啟動： **網站** 主控台或 **啟動** 主控台：
 
 1. 開啟:
-   * 的 **站點** 控制台在瀏覽源頁時：
-      1. 開啟 [參考軌](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 並使用 [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md) （或選擇並開啟參照滑軌，訂單不重要）。 將顯示所有引用。
-      1. 選擇 **啟動** (例如，啟動(1))以顯示特定啟動的清單。
-      1. 選擇特定啟動以顯示可用操作。
-      1. 選擇 **促進啟動** 的子菜單。
-   * 的 **站點** 導航啟動頁時控制台：
-      1. 使用 [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md)。
-      1. 的 **提升** 操作將在工具欄中可用。
-   * 的 **啟動** 控制台：
-      1. 選擇啟動（點擊/按一下縮略圖）。
-      1. 選擇 **提升**。
-1. 在第一步中，您可以指定：
+   * 此 **網站** 主控台導覽來源頁面時：
+      1. 開啟 [參考邊欄](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 並使用以下方式選取所需的來源頁面 [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md) （或是選取並開啟參照邊欄，順序並不重要）。 將顯示所有參考。
+      1. 選取 **啟動** (例如，「啟動」(1))會顯示特定啟動的清單。
+      1. 選取特定啟動項以顯示可用的動作。
+      1. 選取 **提升啟動** 以開啟精靈。
+   * 此 **網站** 導覽啟動頁面時的Console：
+      1. 選擇所需的啟動頁面，使用 [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+      1. 此 **提升** 動作將位於工具列中。
+   * 此 **啟動** 主控台：
+      1. 選取您的啟動項（點選/按一下縮圖）。
+      1. 選取 **提升**.
+1. 在第一個步驟中，您可以指定：
    * **目標**
       * **刪除促銷活動後啟動**
    * **範圍**
       * **提升完整啟動項**
       * **提升已修改頁面**
-      * **升級已批准的頁面**  — 取決於啟動審批工作流
+      * **提升已核准的頁面**  — 取決於啟動核准工作流程
       * **升級目前頁面**
       * **升級目前頁面與子頁面**
 
-      例如，當選擇僅升級修改的頁面時：
+      例如，當選取僅提升已修改的頁面時：
 
-      ![啟動促銷](/help/sites-cloud/authoring/assets/launches-promote.png)
+      ![啟動促銷活動](/help/sites-cloud/authoring/assets/launches-promote.png)
 
       >[!NOTE]
       >
-      >這包括單次啟動，如果已嵌套啟動，請參閱 [升級嵌套啟動](#promoting-a-nested-launch)。
-1. 選擇 **下一個** 繼續。
-1. 您可以查看要升級的頁面；這取決於您選擇的頁面範圍：
+      >這涵蓋單一啟動（如果您有巢狀啟動），請參閱 [提升巢狀啟動](#promoting-a-nested-launch).
+1. 選取 **下一個** 以繼續進行。
+1. 您可以檢閱要提升的頁面，具體取決於您選擇的頁面範圍：
 
-   ![審查促銷](/help/sites-cloud/authoring/assets/launches-promote-review.png)
+   ![檢閱促銷活動](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
-1. 選擇 **提升**。
+1. 選取 **提升**.
 
-## 編輯時升級啟動頁面 {#promoting-launch-pages-when-editing}
+## 編輯時提升啟動頁面 {#promoting-launch-pages-when-editing}
 
-編輯啟動頁面時， **升級啟動** 操作也可從 **頁面資訊**。 這將開啟嚮導以收集所需資訊。
+編輯啟動頁面時， **提升啟動** 動作也可從 **頁面資訊**. 這會開啟精靈，以收集所需的資訊。
 
-![從站點資訊升級啟動](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
+![從網站資訊提升啟動](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 
 >[!NOTE]
 >
->這適用於單個和 [嵌套啟動](#promoting-a-nested-launch)。
+>這適用於單一和 [巢狀啟動](#promoting-a-nested-launch).
 
-## 升級嵌套啟動 {#promoting-a-nested-launch}
+## 提升巢狀啟動 {#promoting-a-nested-launch}
 
-建立嵌套啟動後，您可以將其升級回任何源，包括根源（生產）。
+建立巢狀啟動後，您可以將其升級回任何來源，包括根來源（生產）。
 
 ![巢狀 Launch](/help/sites-cloud/authoring/assets/launches-promoting-nested.png)
 
-1. 與建立嵌套啟動一樣，導航到並選擇 **啟動** 控制台或 **引用** 鐵軌。
-1. 選擇 **促進啟動** 的子菜單。
-1. 輸入所需的詳細資訊：
+1. 與建立巢狀啟動一樣，請導覽至並選取 **啟動** 主控台或 **引用** 邊欄。
+1. 選取 **提升啟動** 以開啟精靈。
+1. 輸入必要的明細：
    * **目標**
-      * **升級目標**  — 您可以向任何來源提升。
-      * **升級後刪除啟動**  — 升級後，將刪除選定的啟動以及嵌套在其中的任何啟動。
-   * **範圍**  — 在此，您可以選擇是升級整個啟動，還是僅升級實際已編輯的頁面。 如果是後者，則可以選擇包括/排除子頁。 預設配置是僅升級當前頁面的頁面更改：
+      * **促銷目標**  — 您可以升級至任何來源。
+      * **促銷活動後刪除啟動**  — 提升後，選取的啟動項以及巢狀內嵌的任何啟動項都會被刪除。
+   * **範圍**  — 您可在此處選取是提升整個啟動，還是僅提升已實際編輯的頁面。 如果是後者，您就可以選取包含/排除子頁面。 預設設定為僅提升目前頁面的頁面變更：
       * **提升完整啟動項**
       * **提升已修改頁面**
-      * **升級已批准的頁面**  — 取決於啟動審批工作流
+      * **提升已核准的頁面**  — 取決於啟動核准工作流程
       * **升級目前頁面**
       * **升級目前頁面與子頁面**
 
-   ![升級啟動設定](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
+   ![提升啟動設定](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
-1. 選擇 **下一個**。
-1. 在選擇之前查看升級詳細資訊 **提升**:
+1. 選取 **下一個**.
+1. 請先檢閱促銷詳細資訊，再選取 **提升**：
 
-   ![查看升級設定](/help/sites-cloud/authoring/assets/launches-promote-review-2.png)
+   ![檢閱促銷活動設定](/help/sites-cloud/authoring/assets/launches-promote-review-2.png)
 
    >[!NOTE]
    >
-   >列出的頁面將取決於 **範圍** 已定義，可能是已實際編輯的頁面。
+   >列出的頁面取決於 **範圍** 已定義，且可能包括實際編輯的頁面。
 
-1. 您的更改將在 **啟動** 控制台：
+1. 您的變更將會提升並反映在 **啟動** 主控台：
 
-   ![在啟動控制台](/help/sites-cloud/authoring/assets/launches-console.png)
+   ![在啟動主控台中](/help/sites-cloud/authoring/assets/launches-console.png)
 
 ## 使用 AEM 工作流程處理提升頁面 {#processing-promoted-pages-using-aem-workflow}
 
-使用工作流模型對已升級的「啟動」頁執行批量處理：
+使用工作流程模型來大量處理提升的「啟動」頁面：
 
-1. 建立工作流包。
-1. 當作者升級「啟動」頁面時，他們會將其儲存在工作流包中。
-1. 使用包作為負載啟動工作流模型。
+1. 建立工作流程封裝。
+1. 作者提升Launch頁面時，會將頁面儲存在Workflow套件中。
+1. 使用封裝作為裝載啟動工作流程模型。
 
-要在升級頁面時自動啟動工作流，請為包節點配置工作流啟動程式。 <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
+若要在提升頁面時自動啟動工作流程，請為封裝節點設定工作流程啟動器。 <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
 
-例如，當作者提升「啟動」頁面時，可以自動生成頁面激活請求。 配置工作流啟動程式以在修改包節點時啟動請求激活工作流。
+例如，您可以在作者提升啟動頁面時自動產生頁面啟用請求。 設定工作流程啟動器，以便在修改封裝節點時啟動「請求啟用」工作流程。
 
-![升級工作流](/help/sites-cloud/authoring/assets/launches-create-workflow.png)
+![推進工作流程](/help/sites-cloud/authoring/assets/launches-create-workflow.png)

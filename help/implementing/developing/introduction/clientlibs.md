@@ -1,6 +1,6 @@
 ---
-title: 在as a Cloud Service上使用客戶端庫AEM
-description: 提AEM供客戶端庫資料夾，這些資料夾允許您將客戶端代碼（客戶端代碼）儲存在儲存庫中，將其組織成類別，並定義將每類代碼提供給客戶端的時間和方式
+title: 在AEMas a Cloud Service上使用使用者端資料庫
+description: AEM提供使用者端程式庫資料夾，可讓您將使用者端程式碼(clientlibs)儲存在存放庫中、將其組織成類別，以及定義每個類別程式碼何時及如何提供給使用者端
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 source-git-commit: 906fbefdbd100a7874b6f58ef23b7aaa46ac4ba3
 workflow-type: tm+mt
@@ -10,38 +10,38 @@ ht-degree: 1%
 ---
 
 
-# 在as a Cloud Service上使用客戶端庫AEM {#using-client-side-libraries}
+# 在AEMas a Cloud Service上使用使用者端資料庫 {#using-client-side-libraries}
 
-數字型驗在很大程度上依賴於由複雜的JavaScript和CSS代碼驅動的客戶端處理。 客AEM戶端庫（客戶端庫）允許您在儲存庫中組織和集中儲存這些客戶端庫。 與 [在項目原型中AEM,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) 管理項目的前端代碼AEM變得簡單。
+數位體驗重度依賴由複雜JavaScript和CSS程式碼驅動的使用者端處理。 AEM使用者端程式庫(clientlibs)可讓您整理這些使用者端程式庫並將其集中儲存在存放庫中。 搭配 [AEM專案原型中的前端建置流程，](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) AEM專案的前端程式碼管理變得簡單。
 
-在中使用客戶端的優AEM點包括：
+在AEM中使用clientlibs的優點包括：
 
-* 客戶端代碼與所有其他應用程式碼和內容一樣儲存在儲存庫中
-* 中的客戶端AEM可以將所有CSS和JS聚合到一個檔案中
-* 通過可通過以下路徑訪問的路徑公開客戶端 [調度](/help/implementing/dispatcher/disp-overview.md)
-* 允許重寫被引用的檔案或影像的路徑
+* 使用者端程式碼會像其他所有應用程式程式碼和內容一樣儲存在存放庫中
+* AEM中的Clientlibs可將所有CSS和JS彙總到一個檔案中
+* 透過可存取的路徑公開clientlibs [dispatcher](/help/implementing/dispatcher/disp-overview.md)
+* 允許重寫參照檔案或影像的路徑
 
-客戶端是用於從中提供CSS和Javascript的內置解決AEM方案。
+Clientlibs是內建的解決方案，可從AEM傳遞CSS和Javascript。
 
 >[!TIP]
 >
->為項目建立CSS和Javascript的前AEM端開發人員也應熟悉 [AEMProject Archetype及其自動前端構建流程。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>為AEM專案建立CSS和Javascript的前端開發人員也應熟悉 [AEM專案原型及其自動化前端建置流程。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
 
-## 什麼是客戶端庫 {#what-are-clientlibs}
+## 什麼是使用者端資料庫 {#what-are-clientlibs}
 
-站點要求在客戶端處理JavaScript和CSS以及靜態資源（如表徵圖和Web字型）。 客戶端庫是AEM參考（如果需要，按類別）和為此類資源提供服務的機制。
+網站需要在使用者端處理JavaScript和CSS以及靜態資源（例如圖示和網頁字型）。 clientlib是用來參照（視需要依類別）及提供這類資源的AEM機制。
 
-將站AEM點的CSS和Javascript收集到一個位於中央位置的單個檔案中，以確保在HTML輸出中只包含任何資源的一個副本。 這將最大限度地提高交付效率，並允許通過代理將此類資源集中維護在儲存庫中，從而保持訪問安全。
+AEM會將網站的CSS和Javascript收集到一個位於中央位置的檔案中，以確保在HTML輸出中只會包含任何資源的一個副本。 這樣可最大化傳送效率，並透過Proxy將這類資源集中維護在存放庫中，確儲存取安全。
 
-## 前端開發，用於AEMas a Cloud Service {#fed-for-aemaacs}
+## AEMas a Cloud Service的前端開發 {#fed-for-aemaacs}
 
-所有JavaScript、CSS和其他前端資產應在 [項目原型的ui.AEMfronted模組。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) 原型的靈活性允許您使用您選擇的現代Web工具建立和管理這些資源。
+所有JavaScript、CSS和其他前端資產都應在 [AEM專案原型的ui.frontend模組。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) 原型的靈活性可讓您使用所選擇的現代化網頁工具來建立和管理這些資源。
 
-然後，原型可以將資源編譯為單個CSS和JS檔案，並將它們自動嵌入到 `cq:clientLibraryFolder` 的下界。
+然後，原型可以將資源編譯為單一CSS和JS檔案，並自動將其嵌入到 `cq:clientLibraryFolder` 存放庫中。
 
-## 客戶端庫資料夾結構 {#clientlib-folders}
+## 使用者端程式庫資料夾結構 {#clientlib-folders}
 
-客戶端庫資料夾是類型的儲存庫節點 `cq:ClientLibraryFolder`。 其定義 [CND表示法](https://jackrabbit.apache.org/node-type-notation.html) 是
+使用者端程式庫資料夾是型別的存放庫節點 `cq:ClientLibraryFolder`. 其定義於 [CND標籤法](https://jackrabbit.apache.org/node-type-notation.html) 是
 
 ```text
 [cq:ClientLibraryFolder] > sling:Folder
@@ -51,81 +51,81 @@ ht-degree: 1%
   - channels (string) multiple
 ```
 
-* `cq:ClientLibraryFolder` 節點可以放在任意位置 `/apps` 儲存庫的子樹。
-* 使用 `categories` 用於標識其所屬庫類別的節點的屬性。
+* `cq:ClientLibraryFolder` 節點可放置於 `/apps` 存放庫的子樹狀結構。
+* 使用 `categories` 節點的屬性，用來識別其所屬的程式庫類別。
 
-每個 `cq:ClientLibraryFolder` 將填充一組JS和/或CSS檔案，以及幾個支援檔案（請參閱下面）。 的重要屬性 `cq:ClientLibraryFolder` 配置如下：
+每個 `cq:ClientLibraryFolder` 會填入一組JS和/或CSS檔案，以及一些支援檔案（請參閱下文）。 的重要屬性 `cq:ClientLibraryFolder` 的設定如下：
 
-* `allowProxy`:因為所有客戶端必須儲存在 `apps`，此屬性允許通過代理servlet訪問客戶端庫。 請參閱一節 [查找客戶端庫資料夾並使用代理客戶端庫Servlet](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) 下。
-* `categories`:標識此內的JS和/或CSS檔案集的類別 `cq:ClientLibraryFolder` 摔倒。 的 `categories` 屬性是多值的，它允許庫資料夾成為多個類別的一部分（有關此類別可能有用的資訊，請參閱下面）。
+* `allowProxy`：由於所有clientlibs都必須儲存在 `apps`，此屬性可讓您透過Proxy servlet存取使用者端程式庫。 請參閱區段 [找到使用者端程式庫資料夾並使用Proxy使用者端程式庫Servlet](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) 下方的。
+* `categories`：識別這個JS和/或CSS檔案集所屬的類別 `cq:ClientLibraryFolder` 秋天。 此 `categories` 屬性是多值屬性，可讓程式庫資料夾屬於多個類別（請參閱下方以瞭解其用處）。
 
-如果客戶端庫資料夾包含一個或多個在運行時合併到單個JS和/或CSS檔案的源檔案。 生成的檔案的名稱是節點名稱，其中 `.js` 或 `.css` 檔案副檔名。 例如，名為 `cq.jquery` 生成名為 `cq.jquery.js` 或 `cq.jquery.css`。
+如果使用者端程式庫資料夾包含一或多個來源檔案，在執行階段會將它們合併至單一JS和/或CSS檔案中。 產生檔案的名稱是節點名稱，帶有 `.js` 或 `.css` 副檔名。 例如，程式庫節點命名為 `cq.jquery` 產生的檔案中的結果命名為 `cq.jquery.js` 或 `cq.jquery.css`.
 
-客戶端庫資料夾包含以下項：
+使用者端程式庫資料夾包含下列專案：
 
-* JS和/或CSS源檔案
-* 支援CSS樣式的靜態資源，如表徵圖、Web字型等。
-* 一 `js.txt` 檔案和/或一個 `css.txt` 標識要合併到生成的JS和/或CSS檔案中的源檔案的檔案
+* JS和/或CSS來源檔案
+* 支援CSS樣式的靜態資源，例如圖示、網頁字型等。
+* 一 `js.txt` 檔案和/或一個 `css.txt` 可識別在產生的JS和/或CSS檔案中要合併之來源檔案的檔案
 
-![客戶端庫體系結構](assets/clientlib-architecture.drawio.png)
+![Clientlib架構](assets/clientlib-architecture.drawio.png)
 
-## 建立客戶端庫資料夾 {#creating-clientlib-folders}
+## 建立使用者端資料庫資料夾 {#creating-clientlib-folders}
 
-客戶端庫必須位於 `/apps`。 這是為了更好地將代碼與內容和配置隔離開來。
+使用者端程式庫必須位於 `/apps`. 這是為了將程式碼與內容和設定更好地隔離。
 
-為了在 `/apps` 若要訪問，請使用代理伺服器。 ACL仍在客戶端庫資料夾上強制實施，但Servlet允許通過 `/etc.clientlibs/` 的 `allowProxy` 屬性設定為 `true`。
+用於下的使用者端程式庫的順序 `/apps` 為了可存取，會使用proxy servelt。 ACL仍會在使用者端程式庫資料夾上強制執行，但servlet允許透過讀取內容 `/etc.clientlibs/` 如果 `allowProxy` 屬性已設定為 `true`.
 
-1. 在Web瀏覽器中開啟CRXDE Lite(`https://<host>:<port>/crx/de`)。
-1. 選擇 `/apps` 資料夾，按一下 **「建立」>「建立節點」**。
-1. 在 **類型** 清單選擇 `cq:ClientLibraryFolder`。 按一下 **確定** 然後按一下 **全部保存**。
-1. 要指定庫所屬的類別或類別，請選擇 `cq:ClientLibraryFolder` 節點，添加以下屬性，然後按一下 **全部保存**:
+1. 在網頁瀏覽器中開啟CRXDE Lite(`https://<host>:<port>/crx/de`)。
+1. 選取 `/apps` 資料夾並按一下 **建立>建立節點**.
+1. 輸入程式庫資料夾的名稱，然後在 **型別** 清單選取 `cq:ClientLibraryFolder`. 按一下 **確定** 然後按一下 **全部儲存**.
+1. 若要指定程式庫所屬的類別，請選取 `cq:ClientLibraryFolder` 節點，新增以下屬性，然後按一下 **全部儲存**：
    * 名稱: `categories`
-   * 類型：字串
+   * 型別：字串
    * 值：類別名稱
-   * 多：已選擇
-1. 以便客戶端庫可通過代理訪問 `/etc.clientlibs`，選擇 `cq:ClientLibraryFolder` 節點，添加以下屬性，然後按一下 **全部保存**:
+   * 多個：已選取
+1. 若要透過下方的Proxy存取使用者端程式庫 `/etc.clientlibs`，選取 `cq:ClientLibraryFolder` 節點，新增以下屬性，然後按一下 **全部儲存**：
    * 名稱: `allowProxy`
-   * 類型：布爾型
+   * 型別：布林值
    * 值: `true`
-1. 如果需要管理靜態資源，請建立一個名為 `resources` 位於客戶端庫資料夾下。
-   * 如果將靜態資源儲存在資料夾下以外的任何位置 `resources`，無法在發佈實例上引用它們。
-1. 將源檔案添加到庫資料夾。
-   * 這通常由 [原型AEM計畫。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
-   * 如果需要，可以在子資料夾中組織源檔案。
-1. 選擇客戶端庫資料夾，然後按一下 **建立>建立檔案**。
-1. 在檔案名框中，鍵入以下檔案名之一，然後按一下「確定」：
-   * **`js.txt`:** 使用此檔案名生成JavaScript檔案。
-   * **`css.txt`:** 使用此檔案名可生成級聯樣式表。
-1. 開啟檔案並鍵入以下文本以標識源檔案路徑的根：
+1. 如果您需要管理靜態資源，請建立名為的子資料夾 `resources` 位於使用者端資料庫資料夾下方。
+   * 如果您將靜態資源儲存在資料夾下以外的任何位置 `resources`，無法在發佈執行個體上參考這些變數。
+1. 將來源檔案新增至程式庫資料夾。
+   * 這通常是由以下專案的前端建置流程完成： [AEM專案原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+   * 您可以視需要在子資料夾中組織來源檔案。
+1. 選取使用者端程式庫資料夾，然後按一下 **「建立」>「建立檔案」**.
+1. 在「檔案名稱」方塊中，鍵入下列其中一個檔案名稱，然後按一下「確定」：
+   * **`js.txt`：** 使用此檔案名稱來產生JavaScript檔案。
+   * **`css.txt`：** 使用此檔案名稱來產生階層式樣式表。
+1. 開啟檔案並輸入下列文字，以識別來源檔案的根路徑：
    * `#base=*[root]*`
-   * 替換 `[root]` 與TXT檔案相對的資料夾路徑。 例如，當源檔案與TXT檔案位於同一資料夾中時，請使用以下文本：
+   * Replace `[root]` 相對於TXT檔案，包含來源檔案的資料夾路徑。 例如，當來源檔案與TXT檔案位於相同的資料夾時，請使用以下文字：
       * `#base=.`
-   * 以下代碼將根目錄設定為位於以下位置的名為mobile的資料夾 `cq:ClientLibraryFolder` 節點：
+   * 下列程式碼會將根設定為名為mobile的資料夾，位於 `cq:ClientLibraryFolder` 節點：
       * `#base=mobile`
-1. 在下面的行上 `#base=[root]`，鍵入源檔案相對於根目錄的路徑。 將每個檔案名置於單獨的行上。
-1. 按一下 **全部保存**。
+1. 在以下行上 `#base=[root]`，鍵入相對於根的來源檔案路徑。 將每個檔案名稱放在單獨的一行上。
+1. 按一下 **全部儲存**.
 
-## 服務客戶端庫 {#serving-clientlibs}
+## 服務使用者端程式庫 {#serving-clientlibs}
 
-一旦客戶端庫資料夾 [根據需要配置，](#creating-clientlib-folders) 客戶端可通過代理請求。 例如：
+一旦您的使用者端程式庫資料夾 [視需要設定，](#creating-clientlib-folders) 您可以透過proxy請求您的clientlibs。 例如：
 
-* 您在 `/apps/myproject/clientlibs/foo`
-* 您在 `/apps/myprojects/clientlibs/foo/resources/icon.png`
+* 您在中有clientlib `/apps/myproject/clientlibs/foo`
+* 您有一個靜態影像，位於 `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
-的 `allowProxy` 屬性允許您請求：
+此 `allowProxy` 屬性可讓您要求：
 
-* 客戶端庫通過 `/etc.clientlibs/myprojects/clientlibs/foo.js`
-* 靜態映像通過 `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
+* clientlib透過 `/etc.clientlibs/myprojects/clientlibs/foo.js`
+* 靜態影像透過 `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
 
-### 通過HTL載入客戶端庫 {#loading-via-htl}
+### 透過HTL載入使用者端資料庫 {#loading-via-htl}
 
-一旦客戶端在其客戶端庫資料夾中成功儲存和管理，就可以通過HTL訪問它們。
+一旦您的clientlibs成功儲存和管理在其使用者端資料庫資料夾中，即可透過HTL存取。
 
-客戶端庫通過由提供的幫助模板加AEM載，可通過 `data-sly-use`。 幫助程式模板在此檔案中可用，可通過 `data-sly-call`。
+使用者端程式庫會透過AEM提供的helper範本載入，該範本可透過以下方式存取： `data-sly-use`. 此檔案中提供Helper範本，您可以透過來呼叫此範本 `data-sly-call`.
 
 每個 helper 範本都需要 `categories` 選項來參照所需的用戶端程式庫。 這個選項可以是字串值陣列，或是包含逗號分隔值清單的字串。
 
-[請參閱HTL文檔](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) 的子菜單。
+[請參閱HTL檔案](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) 以取得透過HTL載入clientlibs的詳細資訊。
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
@@ -133,104 +133,104 @@ ht-degree: 1%
 This is possible. Still need detail.
 -->
 
-## 作者與發佈上的客戶端庫 {#clientlibs-author-publish}
+## 作者與發佈的使用者端資料庫 {#clientlibs-author-publish}
 
-發佈實例上需要大AEM多數客戶端。 也就是說，大多數客戶端的目的是提供內容的最終用戶體驗。 對於發佈實例上的客戶端， [前端構建工具](#fed-for-aemaacs) 可通過 [客戶端庫資料夾，如上所述。](#creating-clientlib-folders)
+AEM發佈執行個體上需要大部分的clientlibs。 也就是說，大部分clientlibs的目的是產生內容的一般使用者體驗。 對於發佈執行個體上的clientlibs， [前端建置工具](#fed-for-aemaacs) 可透過以下方式使用和部署： [如上所述的client library資料夾。](#creating-clientlib-folders)
 
-但有時可能需要客戶端庫來自定義創作體驗。 例如，自定義對話框可能需要將CSS或JS的小位部署到創AEM作實例。
+不過，有時可能需要使用者端程式庫來自訂編寫體驗。 例如，自訂對話方塊可能需要將少量CSS或JS部署至AEM編寫執行個體。
 
-### 在作者上管理客戶端庫 {#clientlibs-on-author}
+### 管理作者上的使用者端程式庫 {#clientlibs-on-author}
 
-如果需要在作者中使用客戶端庫，可以在 `/apps` 使用與發佈相同的方法，但直接將其寫入 `/apps/.../clientlibs/foo` 而不是建立整個項目來管理它。
+如果您需要在作者上使用使用者端資料庫，可以在下方建立使用者端資料庫 `/apps` 使用與publish相同的方法，但直接寫在 `/apps/.../clientlibs/foo` ，而不需建立整個專案來管理。
 
-然後，通過將客戶端庫添加到現成的客戶端庫類別中，可以「掛接」到創作JS中。
+然後，您可以將使用者端程式庫新增至現成可用的使用者端程式庫類別，以「連結」至編寫JS中。
 
-## 調試工具 {#debugging-tools}
+## 偵錯工具 {#debugging-tools}
 
-提AEM供了幾種調試和測試客戶端庫資料夾的工具。
+AEM提供數種用於偵錯和測試使用者端程式庫資料夾的工具。
 
-### 發現客戶端庫 {#discover-client-libraries}
+### 探索使用者端資料庫 {#discover-client-libraries}
 
-的 `/libs/cq/granite/components/dumplibs/dumplibs` 元件生成關於系統上所有客戶端庫資料夾的資訊頁面。 的 `/libs/granite/ui/content/dumplibs` 節點將元件作為資源類型。 要開啟該頁，請使用以下URL（根據需要更改主機和埠）:
+此 `/libs/cq/granite/components/dumplibs/dumplibs` 元件會產生系統上所有使用者端程式庫資料夾的資訊頁。 此 `/libs/granite/ui/content/dumplibs` 節點將元件作為資源型別。 若要開啟頁面，請使用下列URL （視需要變更主機和連線埠）：
 
 `https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
-該資訊包括庫路徑和類型（CSS或JS）以及庫屬性的值，如類別和依賴項。 該頁上的後續表顯示了每個類別和通道中的庫。
+資訊包括程式庫路徑和型別（CSS或JS），以及程式庫屬性的值，例如類別和相依性。 頁面上的後續表格會顯示每個類別和管道中的程式庫。
 
-### 請參閱生成的輸出 {#see-generated-output}
+### 檢視產生的輸出 {#see-generated-output}
 
-的 `dumplibs` 元件包括test選擇器，該選擇器顯示為 `ui:includeClientLib` 標籤。 該頁包括js、css和主題屬性的不同組合的代碼。
+此 `dumplibs` 元件包含測試選擇器，顯示產生的原始程式碼 `ui:includeClientLib` 標籤之間。 此頁面包含js、css和主題屬性之不同組合的程式碼。
 
-1. 使用以下方法之一開啟「Test輸出」頁：
-   * 從 `dumplibs.html` 中，按一下 **按一下這裡進行輸出測試** 的子菜單。
-   * 在Web瀏覽器中開啟以下URL（根據需要使用其他主機和埠）:
+1. 使用下列其中一種方法開啟「測試輸出」頁面：
+   * 從 `dumplibs.html` 頁面上，按一下 **按一下這裡進行輸出測試** 文字。
+   * 在網頁瀏覽器中開啟下列URL （視需要使用不同的主機和連線埠）：
       * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
-   * 預設頁顯示類別屬性沒有值的標籤的輸出。
-1. 要查看類別的輸出，請鍵入客戶端庫的 `categories` 屬性，按一下 **提交查詢**。
+   * 預設頁面顯示沒有categories屬性值的標籤的輸出。
+1. 若要檢視類別的輸出，請輸入使用者端程式庫的 `categories` 屬性並按一下 **提交查詢**.
 
-## 其他客戶端庫資料夾功能 {#additional-features}
+## 其他使用者端資料庫資料夾功能 {#additional-features}
 
-中的客戶端庫資料夾支援許多其他功AEM能。 但是，在as a Cloud Service上不AEM需要這些，因此不鼓勵使用。 這裡列出了它們以實現完整性。
+AEM中的使用者端程式庫資料夾支援許多其他功能。 不過，在AEMas a Cloud Service上不需要這些字元，因此不建議使用。 為了完整起見，此處列出它們。
 
 >[!WARNING]
 >
->as a Cloud Service上不需要客戶端庫資料夾的這些附AEM加功能，因此不鼓勵使用。 這裡列出了它們以實現完整性。
+>AEMas a Cloud Service上並不需要這些使用者端資料庫資料夾的其他功能，因此不建議使用。 為了完整起見，此處列出它們。
 
-### Adobe花崗岩HTML庫經理 {#html-library-manager}
+### AdobeGraniteHTMLLibrary Manager {#html-library-manager}
 
-可以通過 **Adobe花崗岩HTML庫經理** 位於的系統控制檯面板 `https://<host>:<port>/system/console/configMgr`)。
+其他使用者端程式庫設定可透過 **AdobeGraniteHTML程式庫管理員** 位於的系統主控台面板 `https://<host>:<port>/system/console/configMgr`)。
 
 ### 其他資料夾屬性 {#additional-folder-properties}
 
-其他資料夾屬性包括允許控制依賴項和嵌入，但通常不再需要這些屬性，也不鼓勵使用它們：
+其他資料夾屬性包括允許控制相依性和內嵌，但通常不再需要它們，不建議使用：
 
-* `dependencies`:這是此庫資料夾所依賴的其他客戶端庫類別的清單。 例如，給出兩個 `cq:ClientLibraryFolder` 節點 `F` 和 `G`，如果檔案在 `F` 需要另一個檔案 `G` 為了能正常工作，那麼 `categories` 共 `G` 應該是 `dependencies` 共 `F`。
-* `embed`:用於從其他庫中嵌入代碼。 如果節點 `F` 嵌入節點 `G` 和 `H`，生成的HTML將是節點中內容的連接 `G` 和 `H`。
+* `dependencies`：這是此程式庫資料夾所相依的其他使用者端程式庫類別清單。 例如，假設有兩個 `cq:ClientLibraryFolder` 節點 `F` 和 `G`，如果檔案位於 `F` 需要在下列位置有另一個檔案： `G` 為了正常運作，至少一個 `categories` 之 `G` 應該屬於 `dependencies` 之 `F`.
+* `embed`：用來內嵌其他程式庫中的程式碼。 If節點 `F` 嵌入節點 `G` 和 `H`，產生的HTML會是來自節點的內容串連 `G` 和 `H`.
 
-### 連結到依賴項 {#linking-to-dependencies}
+### 連結至相依性 {#linking-to-dependencies}
 
-當客戶端庫資料夾中的代碼引用其他庫時，將其他庫標識為依賴項。 的 `ui:includeClientLib` 引用客戶端庫資料夾的標籤會導致HTML代碼包含到生成的庫檔案的連結以及依賴關係。
+當使用者端程式庫資料夾中的程式碼參考其他程式庫時，請將其他程式庫識別為相依性。 此 `ui:includeClientLib` 參照使用者端程式庫資料夾的標籤會讓HTML程式碼包含所產生程式庫檔案的連結以及相依性。
 
-依賴項必須是另一個 `cq:ClientLibraryFolder`。 要確定依賴項，請向 `cq:ClientLibraryFolder` 具有以下屬性的節點：
+相依性必須是另一個 `cq:ClientLibraryFolder`. 若要識別相依性，請將屬性新增至 `cq:ClientLibraryFolder` 具有下列屬性的節點：
 
-* **名稱：** 依賴
-* **類型：** 字串[]
-* **值：** 當前庫資料夾所依賴的cq:ClientLibraryFolder節點的categories屬性的值。
+* **名稱：** 相依性
+* **型別：** 字串[]
+* **值：** 目前程式庫資料夾所依賴之cq：ClientLibraryFolder節點的categories屬性值。
 
-例如， `/etc/clientlibs/myclientlibs/publicmain` 對 `cq.jquery` 的下界。 引用主客戶端庫的頁面生成包含以下代碼的HTML:
+例如， `/etc/clientlibs/myclientlibs/publicmain` 有相依於 `cq.jquery` 資料庫。 參考主要使用者端程式庫的頁面會產生HTML，其中包含下列程式碼：
 
 ```xml
 <script src="/etc/clientlibs/foundation/cq.jquery.js" type="text/javascript">
 <script src="/etc/clientlibs/mylibs/publicmain.js" type="text/javascript">
 ```
 
-### 從其他庫中嵌入代碼 {#embedding-code-from-other-libraries}
+### 從其他程式庫內嵌程式碼 {#embedding-code-from-other-libraries}
 
-您可以將代碼從客戶端庫嵌入到另一個客戶端庫。 在運行時，嵌入庫的生成JS和CSS檔案包括嵌入庫的代碼。
+您可以將使用者端程式庫的程式碼內嵌到另一個使用者端程式庫中。 在執行階段中，內嵌程式庫產生的JS和CSS檔案會包含內嵌程式庫的程式碼。
 
-嵌入代碼對於提供對儲存在儲存庫的安全區域中的庫的訪問是有用的。
+內嵌程式碼對於存取儲存在存放庫的安全區域中的資料庫很有用。
 
-#### 特定於應用的客戶端庫資料夾 {#app-specific-client-library-folders}
+#### 應用程式專屬的使用者端程式庫資料夾 {#app-specific-client-library-folders}
 
-最好將所有與應用程式相關的檔案保留在以下應用程式資料夾中 `/apps`。 拒絕網站訪問者訪問 `/apps` 的子菜單。 要滿足這兩種最佳做法，請在 `/etc` 位於下面的客戶端庫中的資料夾 `/apps`。
+最佳實務是將所有應用程式相關檔案保留在以下應用程式資料夾中 `/apps`. 拒絕網站訪客存取 `/apps` 資料夾。 若要同時滿足這兩個最佳實務，請在下方建立使用者端程式庫資料夾 `/etc` 嵌入以下使用者端資料庫的資料夾 `/apps`.
 
-使用categories屬性標識要嵌入的客戶端庫資料夾。 要嵌入庫，請向嵌入添加屬性 `cq:ClientLibraryFolder` 節點，使用以下屬性屬性：
+使用categories屬性來識別要內嵌的使用者端程式庫資料夾。 若要內嵌程式庫，請在內嵌中新增屬性 `cq:ClientLibraryFolder` 節點，使用下列屬性屬性：
 
-* **名稱：** 嵌入
-* **類型：** 字串[]
-* **值：** 的類別屬性的值 `cq:ClientLibraryFolder` 要嵌入的節點。
+* **名稱：** 內嵌
+* **型別：** 字串[]
+* **值：** 的categories屬性的值 `cq:ClientLibraryFolder` 要內嵌的節點。
 
-#### 使用嵌入最小化請求 {#using-embedding-to-minimize-requests}
+#### 使用內嵌將請求最小化 {#using-embedding-to-minimize-requests}
 
-在某些情況下，您可能會發現發佈實例為典型頁面生成的最終HTML包含相對大量 `<script>` 元素。
+在某些情況下，您可能會發現發佈執行個體針對典型頁面產生的最終HTML包含相對大量的 `<script>` 元素。
 
-在這種情況下，將所有所需的客戶端庫代碼合併到單個檔案中是非常有用的，因此減少了頁面負載上來回請求的數量。 為此，您可以 `embed` 使用應用程式的embed屬性將所需的庫放入特定於應用程式的客戶端庫 `cq:ClientLibraryFolder` 的下界。
+在這種情況下，將所有必要的使用者端程式庫程式碼合併為單一檔案會很有用，這樣就能減少頁面載入時的來回請求數量。 若要這麼做，您可以 `embed` 必要的程式庫會使用「 」的內嵌屬性，將您的應用程式專屬的使用者端程式庫中 `cq:ClientLibraryFolder` 節點。
 
 #### CSS檔案中的路徑 {#paths-in-css-files}
 
-嵌入CSS檔案時，生成的CSS代碼使用與嵌入庫相關的資源的路徑。 例如，可公開訪問的庫 `/etc/client/libraries/myclientlibs/publicmain` 嵌入 `/apps/myapp/clientlib` 客戶端庫：
+內嵌CSS檔案時，產生的CSS程式碼會使用與內嵌程式庫相關的資源路徑。 例如，可公開存取的程式庫 `/etc/client/libraries/myclientlibs/publicmain` 內嵌 `/apps/myapp/clientlib` 使用者端資源庫：
 
-的 `main.css` 檔案包含以下樣式：
+此 `main.css` 檔案包含下列樣式：
 
 ```javascript
 body {
@@ -241,7 +241,7 @@ body {
 }
 ```
 
-CSS檔案 `publicmain` 節點使用原始影像的URL生成包含以下樣式：
+CSS檔案會 `publicmain` 節點會使用原始影像的URL產生包含以下樣式：
 
 ```javascript
 body {
@@ -252,56 +252,56 @@ body {
 }
 ```
 
-#### 請參閱HTML輸出中的嵌入檔案 {#see-embedded-files}
+#### 請參閱HTML輸出中的內嵌檔案 {#see-embedded-files}
 
-要跟蹤嵌入式代碼的源，或確保嵌入式客戶端庫生成預期結果，可以查看運行時嵌入的檔案的名稱。 要查看檔案名，請追加 `debugClientLibs=true` 的URL。 生成的庫包含 `@import` 語句而不是嵌入代碼。
+若要追蹤內嵌程式碼的來源，或確保內嵌使用者端程式庫產生預期的結果，您可以檢視執行階段內嵌的檔案名稱。 若要檢視檔案名稱，請附加 `debugClientLibs=true` 網頁URL的引數。 產生的程式庫包含 `@import` 陳述式，而非內嵌程式碼。
 
-在上一個示例中 [從其他庫中嵌入代碼](#embedding-code-from-other-libraries) 的子菜單。 `/etc/client/libraries/myclientlibs/publicmain` 客戶端庫資料夾嵌入 `/apps/myapp/clientlib` 客戶端庫資料夾。 將參數附加到網頁會在網頁的原始碼中生成以下連結：
+在上一個範例中 [從其他程式庫內嵌程式碼](#embedding-code-from-other-libraries) 區段， `/etc/client/libraries/myclientlibs/publicmain` client library資料夾內嵌 `/apps/myapp/clientlib` 使用者端資料庫資料夾。 將引數附加至網頁會在網頁的原始程式碼中產生下列連結：
 
 ```xml
 <link rel="stylesheet" href="/etc/clientlibs/mycientlibs/publicmain.css">
 ```
 
-開啟 `publicmain.css` 檔案顯示以下代碼：
+開啟 `publicmain.css` file會顯示下列程式碼：
 
 ```javascript
 @import url("/apps/myapp/clientlib/styles/main.css");
 ```
 
-1. 在Web瀏覽器的地址框中，將以下文本添加到HTML的URL:
+1. 在網頁瀏覽器的位址方塊中，將下列文字附加至HTML的URL：
    * `?debugClientLibs=true`
-1. 載入頁面時，查看頁面源。
-1. 按一下作為連結元素的href提供的連結以開啟檔案並查看原始碼。
+1. 頁面載入時，檢視頁面來源。
+1. 按一下提供為連結元素href的連結，開啟檔案並檢視原始程式碼。
 
-### 使用預處理器 {#using-preprocessors}
+### 使用前置處理器 {#using-preprocessors}
 
-允AEM許可插拔的預處理器，並支援 [YUI壓縮機](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) 用於CSS和JavaScript和 [Google關閉編譯器(GCC)](https://developers.google.com/closure/compiler/) 將UIY設定為預設預AEM處理器的JavaScript。
+AEM支援可插拔的前處理器，並隨附以下支援 [YUI壓縮程式](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) 適用於CSS和JavaScript及 [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) YUI設為AEM預設前置處理器的JavaScript。
 
-可插拔預處理器允許靈活使用，包括：
+可插拔的前處理器可彈性使用，包括：
 
-* 定義可處理指令碼源的ScriptProcessor
-* 處理器可配置為選項
-* 處理器可用於微型化，也可用於非微型化案例
-* 客戶端庫可以定義要使用的處理器
+* 定義可以處理指令碼來源的ScriptProcessors
+* 處理器可設定選項
+* 處理器可用於縮制，也可用於非縮制的情況
+* clientlib可以定義要使用的處理器
 
 >[!NOTE]
 >
->預設情況下，AEM使用YUI壓縮程式。 查看 [UIY壓縮程式GitHub文檔](https://github.com/yui/yuicompressor/issues) 清單。 切換到特定客戶端的GCC壓縮器可解決使用UYI時觀察到的一些問題。
+>依預設，AEM會使用YUI壓縮程式。 請參閱 [YUI Compressor GitHub檔案](https://github.com/yui/yuicompressor/issues) 以取得已知問題的清單。 切換至特定clientlibs的GCC壓縮程式可以解決使用YUI時觀察到的一些問題。
 
 >[!CAUTION]
 >
->不要在客戶端庫中放置精簡庫。 而是提供原始庫，如果需要進行精簡，則使用預處理器的選項。
+>請勿將縮制的程式庫放入使用者端程式庫中。 改為提供原始程式庫，如果需要縮制，請使用前置處理器的選項。
 
 #### 使用狀況 {#usage}
 
-您可以選擇按客戶端庫或系統範圍配置預處理器配置。
+您可以選擇針對每個clientlibrary或系統範圍設定前置處理器組態。
 
-* 添加多值屬性 `cssProcessor` 和 `jsProcessor` 在客戶端庫節點上
-* 或通過 **HTML庫管理器** OSGi配置
+* 新增多值屬性 `cssProcessor` 和 `jsProcessor` 在clientlibrary節點上
+* 或透過以下方式定義系統預設設定： **HTML程式庫管理員** OSGi設定
 
-客戶端庫節點上的預處理程式配置優先於OSGI配置。
+clientlib節點上的前置處理器設定優先於OSGI設定。
 
-#### 格式和示例 {#format-and-examples}
+#### 格式與範例 {#format-and-examples}
 
 ##### 格式 {#format}
 
@@ -313,14 +313,14 @@ options := ";" option;
 option := name "=" value;
 ```
 
-##### UYI壓縮機用於CSS縮小和GCC用於JS {#yui-compressor-for-css-minification-and-gcc-for-js}
+##### CSS縮制的YUI壓縮程式和JS的GCC {#yui-compressor-for-css-minification-and-gcc-for-js}
 
 ```javascript
 cssProcessor: ["default:none", "min:yui"]
 jsProcessor: ["default:none", "min:gcc;compilationLevel=advanced"]
 ```
 
-##### Typescript預處理，然後GCC細化和模糊處理 {#typescript-to-preprocess-and-then-gcc-to-minify-and-obfuscate}
+##### 輸入指令碼以預先處理，然後使用GCC以縮小和模糊化 {#typescript-to-preprocess-and-then-gcc-to-minify-and-obfuscate}
 
 ```javascript
 jsProcessor: [
@@ -339,15 +339,15 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-有關GCC選項的詳細資訊，請參見 [GCC文檔](https://developers.google.com/closure/compiler/docs/compilation_levels)。
+如需GCC選項的詳細資訊，請參閱 [GCC檔案](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
-#### 設定系統預設迷你器 {#set-system-default-minifier}
+#### 設定系統預設縮制器 {#set-system-default-minifier}
 
-UIY在中設定為預設管理符AEM。 要將此更改為GCC，請執行以下步驟。
+YUI已設定為AEM中的預設縮制器。 若要將此變更為GCC，請按照以下步驟操作。
 
-1. 轉至Apache Felix Config Manager(`http://<host>:<portY/system/console/configMgr`)
-1. 查找和編輯 **Adobe花崗岩HTML庫經理**。
-1. 啟用 **微型** 選項（如果尚未啟用）。
-1. 設定值 **JS處理器預設配置** 至 `min:gcc`。
-   * 如果用分號分隔，則可以傳遞選項，例如， `min:gcc;obfuscate=true`。
-1. 按一下 **保存** 的子菜單。
+1. 前往Apache Felix設定管理員，網址為(`http://<host>:<portY/system/console/configMgr`)
+1. 尋找並編輯 **AdobeGraniteHTML程式庫管理員**.
+1. 啟用 **最小化** 選項（如果尚未啟用）。
+1. 設定值 **JS處理器預設設定** 至 `min:gcc`.
+   * 例如，如果以分號分隔，則可以傳遞選項， `min:gcc;obfuscate=true`.
+1. 按一下 **儲存** 以儲存變更。

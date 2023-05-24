@@ -1,6 +1,6 @@
 ---
 title: 管理預備產品目錄體驗
-description: 瞭解如何管理分階段的產品目錄體驗。
+description: 瞭解如何管理分階段產品目錄體驗。
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -11,60 +11,60 @@ ht-degree: 10%
 
 # 建立分階段產品目錄體驗 {#building-experiences}
 
-瞭解如何管理分階段的產品目錄體驗。
+瞭解如何管理分階段產品目錄體驗。
 
 ## 到目前為止 {#story-so-far}
 
-在上一篇內容和AEM商務旅程中， [管理產品目錄頁和模板](catalog-templates.md)，您學習了如何基於模板管理和構建產品目錄體驗。
+在AEM Content and Commerce歷程的上一個檔案中， [管理產品目錄頁面和範本](catalog-templates.md)，您已瞭解如何根據範本管理和建立產品目錄體驗。
 
-本文基於這些基本原理。
+本文基於這些基礎之上。
 
 ## 目標 {#objective}
 
-本文檔幫助您瞭解如何根據已轉移的產品資料和啟動管理產品目AEM錄體驗。 很多時候，作者必須同時準備即將推出的產品（例如新服裝系列）。 這需要訪問分階段產品資料（尚未生存）和準備內容的能力。 此新內容將隨產品發佈而直播。
+本檔案可協助您瞭解如何根據分階段產品資料和AEM啟動來管理產品目錄體驗。 許多時候，作者必須同時準備即將推出的產品（例如新的服裝系列）。 這需要存取階段性產品資料（尚未上線）和準備內容的能力。 此新內容將在產品上市時上線。
 
-    >[！注釋]
+    >[！NOTE]
     >
-    >此功能僅適用於支援基於令牌的身份驗證的Adobe Commerce或雲版和第三方連接器。 有關其他資訊，請參閱[入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
+    >此功能僅適用於Adobe Commerce或Cloud Edition，以及支援權杖式驗證的第三方聯結器。 如需詳細資訊，請參閱[快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
 
-首先，讓我們看看作者如何使用CIF訪問分階段產品資料。
+首先，讓我們看看作者如何使用CIF存取分階段產品資料。
 
-## 使用分段產品資料 {#staged-product-data}
+## 使用階段產品資料 {#staged-product-data}
 
-訪問分階段產品資料的一種方法是使用產品駕駛艙。 按一下主菜單中的「商業」表徵圖開啟產品目AEM錄。 這將允許您訪問即時產品資料。 開啟左側的篩選器頁籤並展開 **暫存目錄**。 使用預覽資料，您現在可以訪問任何時間點的已提貨產品資料。 分段資料包括新類別、產品或更新的欄位（如價格）。
+存取分階段產品資料的一種方法是使用產品駕駛艙。 按一下AEM主功能表中的Commerce圖示，開啟產品目錄。 這可讓您存取即時產品資料。 開啟左側的篩選標籤並展開 **暫存目錄**. 您現在可以使用預覽資料存取任何時間點的階段產品資料。 階段資料包括新的類別、產品或更新的欄位，例如價格。
 
-![座艙](assets/staged-cockpit.png)
+![中繼駕駛艙](assets/staged-cockpit.png)
 
-使用時間曲線視圖可以使用暫存資料預覽儲存庫。 開啟編輯器並將模式切換為時間曲線。 選擇任何將來日期。 請注意編輯器頂部的資訊，您正在查看某一日期的頁面。
+您可以使用時間扭曲檢視來預覽包含分段資料的店面。 開啟編輯器並將模式切換為時間扭曲。 選取任何未來的日期。 請注意編輯器頂端的資訊，表示您正在檢視特定日期的頁面。
 
-![階段時間曲線](assets/staged-timewarp.png)
+![階段時間扭曲](assets/staged-timewarp.png)
 
-現在，您可以使用暫存資料瀏覽目錄。 如果開啟已轉移的類別或產品頁面，編輯器將顯示可視指示器。
+您現在可以瀏覽包含分段資料的目錄。 如果您開啟階段類別或產品頁面，編輯器將顯示視覺指示器。
 
-![階段pl](assets/staged-plp.png)
+![階段計畫](assets/staged-plp.png)
 
-    >[！注釋]
+    >[！NOTE]
     >
-    >Omnisearch沒有上下文，因此將只返回即時產品目錄資料
+    >Omnisearch沒有內容，因此只會傳回即時產品目錄資料
 
 ## AEM Launches {#launches}
 
-啟AEM動使您能夠為已轉移的產品資料建立內容。 如果您不熟悉啟動，請按照 [「其他資源」部分](#additional-resources)。 然後使用「啟動日期」(Launch Date)訪問已提貨的產品資料。
+AEM Launches可讓您建立分段產品資料的內容。 如果您不熟悉Launch，請依照 [其他資源區段](#additional-resources). 然後會使用「啟動日期」來存取階段產品資料。
 
-![階段發射](assets/staged-launch.png)
+![中繼啟動](assets/staged-launch.png)
 
-請注意，選擇者在右側使用已提貨指示符來尊重啟動日期。
+請注意，選擇器會遵循啟動日期，並在右側加上分段指示器。
 
-![舞台選取器](assets/staged-picker.png)
+![階段選取器](assets/staged-picker.png)
 
 ## 下一步 {#what-is-next}
 
-現在，您已完成了此部分的旅程，您應：
+現在您已完成歷程的這一部分，您應：
 
-* 瞭解產品發佈時分階段產品目錄和內容的概念
-* 能夠通過產品駕駛艙和編輯器訪問分階段的產品目錄資料
+* 透過Launch瞭解分階段產品目錄和內容的概念
+* 能夠透過產品駕駛艙和編輯器存取分階段產品目錄資料
 
-您現在已準備好管理 [產品體驗](product-experience-management.md)。 但是，AEM Content and Commerce有許多其他選項。 查看[其他資源章節](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
+您現在已準備好管理 [產品體驗](product-experience-management.md). 不過，AEM Content and Commerce有許多其他可用選項。 查看[其他資源章節](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
 
 ## 其他資源 {#additional-resources}
 

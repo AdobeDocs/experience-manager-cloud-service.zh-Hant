@@ -1,5 +1,5 @@
 ---
-title: XFA在基於XDP的自適應Forms中的支援
+title: XDP型最適化Forms中的XFA支援
 seo-title: XFA support in XDP-based Adaptive Forms
 description: 列出Adaptive Forms中支援的XFA事件、屬性、指令碼和驗證。
 seo-description: Lists supported XFA events, properties, scripts, and validation in Adaptive Forms.
@@ -16,31 +16,31 @@ ht-degree: 5%
 ---
 
 
-# XFA在基於XDP的自適應Forms中的支援{#xfa-support-in-xdp-based-adaptive-forms}
+# XDP型最適化Forms中的XFA支援{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## 簡介 {#introduction}
 
-自適應Forms支援在XDP檔案中定義的各種XFA事件、屬性、指令碼和驗證，包括：
+Adaptive Forms可支援XDP檔案中定義的多種XFA事件、屬性、指令碼和驗證，包括：
 
 * 執行在XDP檔案中的事件上定義的指令碼。
-* 捕獲XDP檔案中欄位的預設值和行為屬性。
+* 擷取XDP檔案中欄位的預設值和行為屬性。
 * 執行XDP檔案中定義的驗證指令碼。
 
-當基於XDP檔案建立自適應表單時，屬性、事件和驗證將在創作UI表單中自動填充。 但是，表單作者可以覆蓋其中的一些元素以建立替代體驗。
+根據XDP檔案建立最適化表單時，屬性、事件和驗證會自動填入表單編寫UI中。 不過，表單作者可以覆寫其中某些元素來建立替代體驗。
 
-本文列出了在自適應Forms中獲得支援的XFA事件、屬性和驗證，並說明了如何在自適應Forms中覆蓋這些事件、屬性和驗證。
+本文列出Adaptive Forms中支援的XFA事件、屬性和遵循的驗證，並說明如何在Adaptive Forms中覆寫這些事件、屬性和驗證。
 
-## 自適應Forms中支援的XFA元素及其映射 {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
+## 最適化Forms中支援的XFA元素及其對應 {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### 欄位 {#fields}
 
-使用XDP檔案建立自適應表單時，可將XFA欄位拖放到自適應表單上。 下表列出了XFA欄位如何映射到「自適應表單」欄位。
+使用XDP檔案建立調適型表單時，您可以將XFA欄位拖放至調適型表單上。 下表列出XFA欄位如何對應至最適化表單欄位。
 
 <table>
  <tbody>
   <tr>
    <td><p><strong>XFA欄位或容器</strong></p> </td>
-   <td><p><strong>相應的自適應表單元件</strong></p> </td>
+   <td><p><strong>對應的最適化表單元件</strong></p> </td>
   </tr>
   <tr>
    <td><p>按鈕 </p> </td>
@@ -51,7 +51,7 @@ ht-degree: 5%
    <td><p>核取方塊</p> </td>
   </tr>
   <tr>
-   <td><p>清單框 </p> </td>
+   <td><p>清單方塊 </p> </td>
    <td><p>下拉式清單</p> </td>
   </tr>
   <tr>
@@ -59,11 +59,11 @@ ht-degree: 5%
    <td><p>日期挑選器</p> </td>
   </tr>
   <tr>
-   <td><p>簽名Scribble</p> </td>
+   <td><p>手寫簽名</p> </td>
    <td><p>草寫簽名</p> </td>
   </tr>
   <tr>
-   <td><p>數字欄位 </p> </td>
+   <td><p>數值欄位 </p> </td>
    <td><p>數值方塊</p> </td>
   </tr>
   <tr>
@@ -87,15 +87,15 @@ ht-degree: 5%
    <td><p>文字</p> </td>
   </tr>
   <tr>
-   <td><p>子窗體 </p> </td>
+   <td><p>子表單 </p> </td>
    <td><p>面板</p> </td>
   </tr>
   <tr>
-   <td><p>區域（組）</p> </td>
+   <td><p>區域（群組）</p> </td>
    <td><p>面板</p> </td>
   </tr>
   <tr>
-   <td><p>子窗體集 </p> </td>
+   <td><p>子表單集 </p> </td>
    <td><p>面板</p> </td>
   </tr>
  </tbody>
@@ -103,168 +103,168 @@ ht-degree: 5%
 
 ### 屬性 {#properties}
 
-下表捕獲了在XDP檔案中定義的各種XFA指令碼在AdaptiveForms中的行為。
+下表擷取XDP檔案中定義的各種XFA指令碼在Adaptive Forms中的行為。
 
 <table>
  <tbody>
   <tr>
    <td><p><strong>XFA元件屬性</strong></p> </td>
-   <td><p><strong>自適應Forms中的對應行為</strong></p> </td>
+   <td><p><strong>Adaptive Forms中的對應行為</strong></p> </td>
   </tr>
   <tr>
-   <td><p>som表達式 </p> </td>
-   <td><p>映射到Adaptive Form中的Bind引用(bindRef)屬性。</p> </td>
+   <td><p>somexpression </p> </td>
+   <td><p>對應至最適化表單中的繫結參考(bindRef)屬性。</p> </td>
   </tr>
   <tr>
-   <td><p>存在 </p> </td>
-   <td><p>映射到自適應表單中的可見屬性。 可以使用「可見性」(Visibility)表達式覆蓋它。</p> </td>
+   <td><p>是否存在 </p> </td>
+   <td><p>對應至最適化表單中的可見屬性。 您可以使用「可見性」運算式來覆寫它。</p> </td>
   </tr>
   <tr>
-   <td><p>訪問 </p> </td>
-   <td><p>映射到Adaptive Form中的enabled屬性。 可以使用Access表達式覆蓋它。</p> </td>
+   <td><p>存取 </p> </td>
+   <td><p>對應至最適化表單中已啟用的屬性。 您可以使用Access運算式來覆寫它。</p> </td>
   </tr>
   <tr>
-   <td><p>輔助功能：角色 </p> </td>
-   <td><p>映射到自適應表單中的角色屬性。</p> </td>
+   <td><p>協助工具：角色 </p> </td>
+   <td><p>對應至最適化表單中的角色屬性。</p> </td>
   </tr>
   <tr>
-   <td><p>輔助功能：講話優先順序 </p> </td>
-   <td><p>映射到Adaptive Form中的speakPriority屬性。</p> </td>
+   <td><p>協助工具： speakPriority </p> </td>
+   <td><p>對應至最適化表單中的speakPriority屬性。</p> </td>
   </tr>
   <tr>
-   <td><p>輔助功能：講話文本</p> </td>
-   <td><p>映射到自適應表單中的自定義輔助功能文本。</p> </td>
+   <td><p>協助工具： speakText</p> </td>
+   <td><p>對應至最適化表單中的自訂協助工具文字。</p> </td>
   </tr>
   <tr>
-   <td><p>輔助功能：工具提示 </p> </td>
-   <td><p>映射到Adaptive Form中的簡短說明屬性。</p> </td>
+   <td><p>協助工具：工具提示 </p> </td>
+   <td><p>對應至最適化表單中的簡短說明屬性。</p> </td>
   </tr>
   <tr>
-   <td><p>字幕<em> （所有欄位類型）</em></p> </td>
-   <td><p>映射到自適應表單中的Title屬性。</p> </td>
+   <td><p>註解<em> （所有欄位型別）</em></p> </td>
+   <td><p>對應至最適化表單中的Title屬性。</p> </td>
   </tr>
   <tr>
-   <td><p>displayFormat<em> （所有欄位類型）</em></p> </td>
-   <td><p>映射到「自適應」窗體中的「顯示模式」。</p> </td>
+   <td><p>displayformat<em> （所有欄位型別）</em></p> </td>
+   <td><p>對應至最適化表單的顯示模式。</p> </td>
   </tr>
   <tr>
-   <td><p>原始值<em> （所有欄位類型）</em></p> </td>
-   <td><p>映射到自適應表單中的值屬性。</p> </td>
+   <td><p>rawValue<em> （所有欄位型別）</em></p> </td>
+   <td><p>對應至最適化表單中的值屬性。</p> </td>
   </tr>
   <tr>
-   <td><p>項目<em> （清單框，複選框）</em></p> </td>
-   <td><p>映射到Adaptive Form中的選項屬性。 可以使用「選項」表達式覆蓋它。</p> </td>
+   <td><p>個專案<em> （清單方塊、核取方塊）</em></p> </td>
+   <td><p>對應至最適化表單中的options屬性。 您可以使用「選項」運算式來覆寫它。</p> </td>
   </tr>
   <tr>
-   <td><p>最大字元<em> （文本欄位）</em></p> </td>
-   <td><p>映射到自適應表單中允許的最大字元數屬性。</p> </td>
+   <td><p>maxChar<em> （文字欄位）</em></p> </td>
+   <td><p>對應至最適化表單中允許的最大字元數屬性。</p> </td>
   </tr>
   <tr>
-   <td><p>多線<em> （文本欄位）</em></p> </td>
-   <td><p>映射到「自適應表單」中的「允許多行」屬性。</p> </td>
+   <td><p>多行<em> （文字欄位）</em></p> </td>
+   <td><p>對應至最適化表單中的允許多行屬性。</p> </td>
   </tr>
   <tr>
-   <td><p>frac數字<em> （數字欄位、小數欄位）</em></p> </td>
-   <td><p>映射到自適應表單中的Frac數字屬性。</p> </td>
+   <td><p>fracDigit<em> （數值欄位，小數欄位）</em></p> </td>
+   <td><p>對應至最適化表單中的Frac數字屬性。</p> </td>
   </tr>
   <tr>
-   <td><p>leadDigit<em> （數字欄位、小數欄位）</em></p> </td>
-   <td><p>映射到Adaptive Form中的Lead digits屬性。</p> </td>
+   <td><p>leadDigit<em> （數值欄位，小數欄位）</em></p> </td>
+   <td><p>對應至最適化表單中的前導位數屬性。</p> </td>
   </tr>
   <tr>
-   <td><p>多選擇<em> （清單框）</em></p> </td>
-   <td><p>映射到「自適應表單」中的「允許多個選擇」屬性。</p> </td>
+   <td><p>multiSelect<em> （清單方塊）</em></p> </td>
+   <td><p>對應至允許最適化表單中的多選屬性。</p> </td>
   </tr>
  </tbody>
 </table>
 
 ### 指令碼 {#scripts}
 
-下表說明了在XDP檔案中定義的各種XFA指令碼在AdaptiveForms中的行為。
+下表擷取XDP檔案中定義的各種XFA指令碼在Adaptive Forms中的行為。
 
 <table>
  <tbody>
   <tr>
    <td><p><strong>XFA指令碼事件</strong></p> </td>
-   <td><p><strong>自適應Forms中的對應行為</strong></p> </td>
+   <td><p><strong>Adaptive Forms中的對應行為</strong></p> </td>
   </tr>
   <tr>
    <td><p>初始化 </p> </td>
-   <td><p>此指令碼在運行時執行，無法在自適應表單中覆蓋。</p> </td>
+   <td><p>此指令碼在執行階段執行，且無法在最適化表單中覆寫。</p> </td>
   </tr>
   <tr>
    <td><p>計算</p> </td>
-   <td><p>映射到自適應表單中的計算表達式。</p> </td>
+   <td><p>對應至最適化表單中的計算運算式。</p> </td>
   </tr>
   <tr>
    <td><p>驗證 </p> </td>
-   <td><p>映射到自適應表單中的驗證表達式。</p> </td>
+   <td><p>對應至最適化表單中的驗證運算式。</p> </td>
   </tr>
   <tr>
-   <td><p>驗證狀態 </p> </td>
-   <td><p>此指令碼在運行時執行，無法在自適應表單中覆蓋。<br /> </p> </td>
+   <td><p>validationState </p> </td>
+   <td><p>此指令碼在執行階段執行，且無法在最適化表單中覆寫。<br /> </p> </td>
   </tr>
   <tr>
    <td><p>退出 </p> </td>
-   <td><p>此指令碼在運行時執行，無法在自適應表單中覆蓋。</p> </td>
+   <td><p>此指令碼在執行階段執行，且無法在最適化表單中覆寫。</p> </td>
   </tr>
   <tr>
    <td><p>按一下（按鈕欄位）</p> </td>
-   <td><p>映射到按鈕的「按一下」表達式。</p> </td>
+   <td><p>對應至按鈕的Click運算式。</p> </td>
   </tr>
   <tr>
    <td><p>支援伺服器端指令碼</p> </td>
-   <td><p>此指令碼在運行時執行，無法在自適應表單中覆蓋。</p> </td>
+   <td><p>此指令碼在執行階段執行，且無法在最適化表單中覆寫。</p> </td>
   </tr>
   <tr>
-   <td><p>支援Web服務</p> </td>
-   <td><p>此指令碼在運行時執行，無法在自適應表單中覆蓋。</p> </td>
+   <td><p>支援網站服務</p> </td>
+   <td><p>此指令碼在執行階段執行，且無法在最適化表單中覆寫。</p> </td>
   </tr>
   <tr>
-   <td><p>更改（Scribble欄位、單選按鈕、複選框）</p> </td>
-   <td><p>此指令碼在運行時執行，無法在自適應表單中覆蓋。</p> </td>
+   <td><p>變更（塗鴉欄位、選項按鈕、核取方塊）</p> </td>
+   <td><p>此指令碼在執行階段執行，且無法在最適化表單中覆寫。</p> </td>
   </tr>
  </tbody>
 </table>
 
 ### 驗證 {#validations}
 
-下表捕獲了XFA驗證如何映射到Adaptive Forms中的驗證。
+下表擷取XFA驗證如何對應到Adaptive Forms中的驗證。
 
 <table>
  <tbody>
   <tr>
    <td><p><strong>XFA驗證</strong></p> </td>
-   <td><p><strong>自適應表單中的相應驗證</strong></p> </td>
+   <td><p><strong>最適化表單中的對應驗證</strong></p> </td>
   </tr>
   <tr>
    <td><p>驗證模式(formatTest)</p> </td>
    <td><p>validatePictureClause</p> </td>
   </tr>
   <tr>
-   <td><p>驗證模式消息(formatTestMessage)</p> </td>
-   <td><p>驗證圖片消息</p> </td>
+   <td><p>驗證模式訊息(formatTestMessage)</p> </td>
+   <td><p>validatePictureMessage</p> </td>
   </tr>
   <tr>
-   <td><p>必需（空測試）</p> </td>
+   <td><p>必要(nullTest )</p> </td>
    <td><p>強制 </p> </td>
   </tr>
   <tr>
-   <td><p>空消息(nullTestMessage) </p> </td>
-   <td><p>強制消息</p> </td>
+   <td><p>空訊息(nullTestMessage) </p> </td>
+   <td><p>mandatoryMessage</p> </td>
   </tr>
   <tr>
    <td><p>驗證指令碼(scriptTest)</p> </td>
    <td><p>validateExp</p> </td>
   </tr>
   <tr>
-   <td><p>驗證指令碼消息(scriptTestMessage)</p> </td>
-   <td><p>驗證消息</p> </td>
+   <td><p>驗證指令碼訊息(scriptTestMessage)</p> </td>
+   <td><p>validateMessage</p> </td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->不能覆蓋綁定到XFA複選框的Adaptive Form單選按鈕和複選框組的強制屬性。
+>您無法覆寫與XFA核取按鈕繫結的最適化表單選項按鈕和核取方塊群組的強制屬性。
 
