@@ -1,21 +1,21 @@
 ---
-title: 智慧型影像常見問題集
+title: 智慧型影像
 description: 瞭解Adobe Sensei AI的智慧型影像處理如何套用每位使用者獨特的檢視特性，以自動提供最適合其體驗的正確影像，進而提高效能和參與度。
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
 mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: b5c887d6a6ad1db5094609a8bc1b738c9ba5e8d6
+source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
 workflow-type: tm+mt
-source-wordcount: '3541'
+source-wordcount: '3531'
 ht-degree: 1%
 
 ---
 
 # 智慧型影像常見問題集 {#smart-imaging}
 
-+++**什麼是「智慧型影像」？**
+## 關於智慧型影像
 
 智慧型影像技術可套用Adobe Sensei AI功能，並搭配現有的「影像預設集」運作。 它會根據使用者端瀏覽器功能自動最佳化影像格式、大小和品質，藉此增強影像傳送效能。
 
@@ -60,9 +60,7 @@ ht-degree: 1%
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-+++
-
-+++**最新的智慧型影像處理有哪些主要優點？**
+**智慧型影像處理的優點**
 
 智慧型影像處理會根據使用者端使用的瀏覽器、裝置顯示和網路狀況，自動最佳化影像檔案大小，以提供更優異的影像傳遞效能。 由於影像佔據了頁面的大部分載入時間，因此任何效能改善都會對業務KPI產生深遠影響，例如更高的轉換率、在網站上逗留的時間以及較低的網站跳出率。
 
@@ -70,11 +68,11 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 * 現在支援下一代AVIF格式。
 * PNG到WebP和AVIF現在支援有損轉換。 由於PNG是無損格式，因此先前傳送的WebP和AVIF是無損的。
-* 瀏覽器格式轉換(`bfc`)
-* 裝置畫素比率(`dpr`)
-* 網路頻寬(`network`)
+* [瀏覽器格式轉換](#bfc)
+* [裝置畫素比率](#dpr)
+* [網路頻寬](#bandwidth)
 
-**關於瀏覽器格式轉換(bfc)**
+### 關於瀏覽器格式轉換 {#bfc}
 
 透過附加來開啟瀏覽器格式轉換 `bfc=on` 至影像URL會自動將JPEG和PNG轉換為有損的AVIF、有損的WebP、有損的JPEGXR、有損的JPEG2000 （針對不同的瀏覽器）。 對於不支援這些格式的瀏覽器，智慧型影像會繼續提供JPEG或PNG。 除了格式之外，新格式的品質也會由「智慧型影像」重新計算。
 
@@ -82,7 +80,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 另請參閱 [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) 在Dynamic Media影像提供與轉譯API中。
 
-**關於裝置畫素比率(dpr)** 最佳化
+### 關於裝置畫素比最佳化** {#dpr}
 
 裝置畫素比率(DPR) （也稱為CSS畫素比率）是指裝置的實體畫素與邏輯畫素之間的關係。 特別是隨著Retina熒幕的出現，現代行動裝置的畫素解析度正以快速的速度增長。
 
@@ -108,7 +106,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 另請參閱 [使用影像時](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) 和 [使用智慧型裁切時](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-**關於網路頻寬最佳化**
+### 關於網路頻寬最佳化 {#bandwidth}
 
 開啟網路頻寬會自動根據實際網路頻寬調整影像品質。 因為網路頻寬太低，DPR （裝置畫素比）最佳化功能即使已經開啟，也會自動關閉。
 
@@ -128,8 +126,6 @@ DPR和網路頻寬值是根據偵測到的套裝CDN使用者端值而定。 這�
 * TTL （存留時間）獨立。 以前，智慧型影像處理至少必須有12小時的TTL才能運作。
 * 先前，原始影像和衍生影像都會經過快取，快取失效的程式分兩步。 在最新的智慧型影像處理中，只會快取衍生專案，執行單一步驟的快取失效程式。
 * 在規則集中使用自訂標題的客戶可受益於最新的智慧型影像，因為這些標題不會遭到封鎖，不像舊版的智慧型影像。 例如，「計時允許來源」、「X-Robot」，如中所建議 [新增自訂標頭值至影像回應|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
-
-+++
 
 +++**智慧型影像是否有相關的授權成本？**
 
@@ -153,6 +149,26 @@ DPR和網路頻寬值是根據偵測到的套裝CDN使用者端值而定。 這�
 * 對於不支援這些格式的瀏覽器，會提供最初請求的影像格式。
 
 如果原始影像大小小於智慧型影像產生的大小，則會提供原始影像。
+
++++
+
++++**是否可以針對任何要求關閉智慧型影像？**
+
+可以。您可以新增下列任何修飾元來關閉「智慧型影像」：
+
+* `bfc=off` 關閉瀏覽器格式轉換。 另請參閱 [瀏覽器格式轉換](#bfc).
+* `dpr=off` 以關閉「裝置畫素比例」。 另請參閱 [裝置畫素比率](#dpr).
+* `network=off` 關閉網路頻寬。 另請參閱 [網路頻寬](#network).
+
++++
+
++++**是否可以「調整」智慧型影像處理？**
+
+可以。「智慧型影像處理」有三個選項，您可以啟用或停用。
+
+* [瀏覽器格式轉換](#bfc)
+* [裝置畫素比率](#dpr)
+* [網路頻寬](#network)
 
 +++
 
@@ -338,26 +354,6 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 +++**我可以在智慧型影像中停用AVIF最佳化嗎？**
 
 可以。如果您想要依預設切換回提供WebP，請建立相同專案的支援案例。 如同往常，您可以新增引數來關閉智慧型影像 `bfc=off` 至影像的URL。 不過，您無法在智慧型影像的URL修飾元中選取WebP或AVIF。 此功能在您的公司帳戶層級進行維護。
-
-+++
-
-+++**是否可以針對任何要求關閉智慧型影像？**
-
-可以。您可以新增下列任何修飾元來關閉「智慧型影像」：
-
-* `bfc=off` 關閉瀏覽器格式轉換。 另請參閱 [瀏覽器格式轉換](#bfc).
-* `dpr=off` 以關閉「裝置畫素比例」。 另請參閱 [裝置畫素比率](#dpr).
-* `network=off` 關閉網路頻寬。 另請參閱 [網路頻寬](#network).
-
-+++
-
-+++**是否可以「調整」智慧型影像處理？**
-
-可以。「智慧型影像處理」有三個選項，您可以啟用或停用。
-
-* [瀏覽器格式轉換](#bfc)
-* [裝置畫素比率](#dpr)
-* [網路頻寬](#network)
 
 +++
 
