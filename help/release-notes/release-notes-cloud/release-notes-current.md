@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 11e0a0872e5bd0ce18043e227fdcd3e609cf28d8
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.2.0) 的發行日期是 2023 年 4 月 12 日。下一個功能版本 (2023.4.0) 計畫於 2023 年 5 月 31 日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.2.0) 的發行日期是 2023 年 4 月 12 日。預計於 2023 年 5 月 31 日發行下一個功能版本 (2023.4.0)。
 
 ## 發行影片 {#release-video}
 
@@ -50,7 +50,7 @@ ht-degree: 98%
    * DASH 是自適應影片串流的國際標準通訊協定，在業界被廣泛採用
    * 在 NA 可使用，透過支援票證啟用，即將在 APAC、EMEA 推出
 
-* 已新增對 WebP 影像的支援以自動擷取中繼資料、產生縮圖和自訂轉譯。這些檔案現在也支援智慧標籤功能。
+* 已新增對 WebP 影像的支援以自動擷取中繼資料、產生縮圖和自訂轉譯。這些檔案現在也支援智慧標記功能。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -91,9 +91,9 @@ ht-degree: 98%
 
 您可以使用您的官方電子郵件 ID 寄送電子郵件至 aem-forms-headless@adobe.com 以加入早期採用者計劃。
 
-## 維護發行說明 {#maintenance}
+## 維護版本發行說明 {#maintenance}
 
-您可以在[此處](/help/release-notes/maintenance/latest.md)找到最新的維護發行說明。
+您可以在[此處](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
 ## Cloud Manager {#cloud-manager}
 
