@@ -4,14 +4,19 @@ description: 安裝 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 648f0d4899237484f24faa003a796bdd1f508cb2
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 1%
+source-wordcount: '655'
+ht-degree: 2%
 
 ---
 
 # 安裝 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
+| AEM as a Cloud Service  | 本文 |
 
 在中擁有管理員存取許可權的使用者 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 安裝增強型聯結器。 安裝之前，請先檢閱平台支援及其他 [聯結器的先決條件](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 

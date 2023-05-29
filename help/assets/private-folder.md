@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 5%
+source-wordcount: '621'
+ht-degree: 6%
 
 ---
 
 # 中的私人資料夾 [!DNL Adobe Experience Manager Assets] {#private-folder}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=en) |
+| AEM as a Cloud Service  | 本文 |
 
 您可以在中建立私人資料夾 [!DNL Adobe Experience Manager Assets] 您專屬的使用者介面。 您可以與其他使用者共用此私人資料夾，並為其指派各種許可權。 根據您指派的許可權層級，使用者可以在資料夾上執行各種工作，例如檢視資料夾內的資產或編輯資產。
 

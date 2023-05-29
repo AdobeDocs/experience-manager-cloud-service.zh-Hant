@@ -6,14 +6,19 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 33baeea93c1fa2b74946699e53d2f428e77aee77
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '4934'
-ht-degree: 6%
+source-wordcount: '4954'
+ht-degree: 7%
 
 ---
 
 # 在AEM中搜尋資產 {#search-assets-in-aem}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
+| AEM as a Cloud Service  | 本文 |
 
 [!DNL Adobe Experience Manager Assets] 提供強大的資產搜尋方法，協助您實現更高的內容速度。 您的團隊可使用開箱即用的功能和自訂方法，透過順暢的智慧型資產搜尋體驗縮短上市時間。 搜尋資產功能是使用數位資產管理系統的核心，無論是供創意人員進一步使用、供業務使用者和行銷人員健全管理資產，還是DAM管理員管理。 您可以透過執行簡單、進階和自訂搜尋 [!DNL Assets] 使用者介面或其他應用程式和介面有助於完成這些使用案例。
 

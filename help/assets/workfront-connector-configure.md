@@ -4,14 +4,19 @@ description: 設定 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 109f07c7273cc9a4890e41bf29a1509f738d130b
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1723'
 ht-degree: 0%
 
 ---
 
 # 設定 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
+| AEM as a Cloud Service  | 本文 |
 
 在中擁有管理員存取許可權的使用者 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 在安裝增強型聯結器後進行設定。 如需安裝指示，請參閱 [安裝聯結器](/help/assets/workfront-integrations.md).
 
@@ -124,14 +129,14 @@ Adobe Workfront檔案與資產之間的中繼資料對應是在AEM中繼資料�
    * AEM屬性。 此參考應相對於工作流程裝載。
    * 具名值。 這些字元應括在方括弧中。
    * 上述3個專案的串連。 指定它使用 `{+}`.
-   * 將值周圍加上，即可對上述3個專案進行變更 `{replace(<value>,”old-char”,”new-char”)}`.
+   * 將值周圍加上，即可對上述3個專案進行變更 `{replace(<value>,"old-char","new-char")}`.
 
 * 部分範例包括：
 
    * `status="INP"`
    * `DE:Asset Type=jcr:content/metadata/assetType`
    * `DE:Path={path}`
-   * `URL=”https://my-aem-author/assets.html”{+}{path}`
+   * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![對應屬性的設定](/help/assets/assets/wf-map-property-config.png)
 
