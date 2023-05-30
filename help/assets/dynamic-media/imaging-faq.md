@@ -4,11 +4,11 @@ description: 瞭解Adobe Sensei AI的智慧型影像處理如何套用每位使�
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: null
+mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
+source-git-commit: c7555ef31d7657b4a90764224f4c8c58a6228157
 workflow-type: tm+mt
-source-wordcount: '3531'
+source-wordcount: '3539'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 另請參閱 [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) 在Dynamic Media影像提供與轉譯API中。
 
-### 關於裝置畫素比最佳化** {#dpr}
+### 關於裝置畫素比最佳化 {#dpr}
 
 裝置畫素比率(DPR) （也稱為CSS畫素比率）是指裝置的實體畫素與邏輯畫素之間的關係。 特別是隨著Retina熒幕的出現，現代行動裝置的畫素解析度正以快速的速度增長。
 
@@ -127,17 +127,7 @@ DPR和網路頻寬值是根據偵測到的套裝CDN使用者端值而定。 這�
 * 先前，原始影像和衍生影像都會經過快取，快取失效的程式分兩步。 在最新的智慧型影像處理中，只會快取衍生專案，執行單一步驟的快取失效程式。
 * 在規則集中使用自訂標題的客戶可受益於最新的智慧型影像，因為這些標題不會遭到封鎖，不像舊版的智慧型影像。 例如，「計時允許來源」、「X-Robot」，如中所建議 [新增自訂標頭值至影像回應|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-+++**智慧型影像是否有相關的授權成本？**
-
-否. 智慧型影像包含於您現有的授權中。 此規則適用於Dynamic Media Classic或Experience Manager - Dynamic Media (內部部署、AMS和Experience Manageras a Cloud Service)。
-
->[!IMPORTANT]
->
->智慧型影像不適用於Dynamic Media — 混合型客戶。
-
-+++
-
-+++**智慧型影像如何運作？**
+## 智慧型影像如何運作**
 
 當消費者要求影像時，「智慧型影像處理」會檢查使用者特性，並根據使用的瀏覽器，將其轉換為適當的影像格式。 這些格式轉換是以不會降低視覺逼真度的方式進行。 智慧型影像會根據瀏覽器功能，以下列方式自動將影像轉換為不同格式。
 
@@ -149,6 +139,30 @@ DPR和網路頻寬值是根據偵測到的套裝CDN使用者端值而定。 這�
 * 對於不支援這些格式的瀏覽器，會提供最初請求的影像格式。
 
 如果原始影像大小小於智慧型影像產生的大小，則會提供原始影像。
+
+## 智慧型影像處理中支援的影像格式
+
+智慧型影像支援下列影像格式：
+
+* JPEG
+* PNG
+
+對於JPEG影像檔案格式，新格式的品質會由「智慧型影像」重新計算。
+
+對於支援PNG等透明度的影像檔案格式，您可以設定「智慧型影像處理」以傳送有損的AVIF和WebP。 針對有損格式轉換，「智慧型影像處理」會使用影像URL中所述的品質，或是使用Dynamic Media公司帳戶中設定的品質。
+
+## 智慧型影像處理忽略並支援的影像伺服命令
+
+智慧型影像唯一會忽略的「影像伺服」命令是 `fmt` 和 `qlt`. 支援所有剩餘的命令。
+
+
++++**智慧型影像是否有相關的授權成本？**
+
+否. 智慧型影像包含於您現有的授權中。 此規則適用於Dynamic Media Classic或Experience Manager - Dynamic Media (內部部署、AMS和Experience Manageras a Cloud Service)。
+
+>[!IMPORTANT]
+>
+>智慧型影像不適用於Dynamic Media — 混合型客戶。
 
 +++
 
@@ -169,19 +183,6 @@ DPR和網路頻寬值是根據偵測到的套裝CDN使用者端值而定。 這�
 * [瀏覽器格式轉換](#bfc)
 * [裝置畫素比率](#dpr)
 * [網路頻寬](#network)
-
-+++
-
-+++**支援哪些影像格式？**
-
-智慧型影像支援下列影像格式：
-
-* JPEG
-* PNG
-
-對於JPEG影像檔案格式，新格式的品質會由「智慧型影像」重新計算。
-
-對於支援PNG等透明度的影像檔案格式，您可以設定「智慧型影像處理」以傳送有損的AVIF和WebP。 針對有損格式轉換，「智慧型影像處理」會使用影像URL中所述的品質，或是使用Dynamic Media公司帳戶中設定的品質。
 
 +++
 
@@ -390,12 +391,6 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 +++**智慧型影像是否可調整百分比品質輸出設定？**
 
 可以。智慧型影像會自動調整品質百分比。 此品質百分比由Adobe開發的機器學習演演算法決定。 此百分比不限範圍。
-
-+++
-
-+++**支援或忽略哪些影像伺服命令？**
-
-唯一被忽略的命令是 `fmt` 和 `qlt`. 支援所有剩餘的命令。
 
 +++
 
