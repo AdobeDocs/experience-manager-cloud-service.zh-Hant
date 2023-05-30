@@ -3,8 +3,8 @@ title: AEM Headless CMS 開發人員歷程
 description: 了解如何使用 Adobe Experience Manager (AEM) as a Headless CMS 進行無周邊開發。了解如何使用內容模型、內容片段和 GraphQL API 等功能來增強無周邊內容傳遞。
 landing-page-description: 了解無周邊內容傳遞和實作。了解更多如何在制定您的業務策略。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: d4edec4448fd1b044875271cdcef3c7ada56cfe5
-workflow-type: tm+mt
+source-git-commit: e86f28afbd45270a89e43de0d42540ac5dd296cb
+workflow-type: ht
 source-wordcount: '1083'
 ht-degree: 100%
 
@@ -15,6 +15,8 @@ ht-degree: 100%
 歡迎使用專為初學 Adobe Experience Manager Headless CMS 的開發人員製作的文件！
 
 了解強大且靈活的無周邊特性、其功能，以及如何在您的第一個無周邊開發專案中運用這些功能。此歷程為您提供了開發第一個無周邊應用程式所需的所有資訊。
+
+{{headless-trials-promotion}}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
