@@ -3,7 +3,7 @@ title: AEM Headless 簡介
 description: 了解關於 Adobe Experience Manager (AEM) 內的 Headless，以及了解詳細文件和 Headless 歷程。 了解如何使用內容片段模式、內容片段和 GraphQL API 等功能來增強無周邊體驗。
 landing-page-description: 了解如何使用及管理 Adobe Experience Manager as a Cloud Service 內的 Headless。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 6d8d75cd0b01154f420dd3d5f14589bb8a2b8297
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 100%
@@ -20,6 +20,8 @@ ht-degree: 100%
 >[!NOTE]
 >
 >另請參閱[什麼是 Headless？](/help/headless/what-is-headless.md)了解 Headless 概念和術語。
+
+{{headless-trials-promotion}}
 
 ## 概觀 {#overview}
 

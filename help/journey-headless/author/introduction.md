@@ -2,7 +2,7 @@
 title: 為 AEM as a Headless CMS 編寫內容 - 簡介
 description: 介紹使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能為您的專案編寫內容。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 # 為 AEM as a Headless CMS 編寫內容 - 簡介 {#author-headless-introduction}
 
 在 [AEM Headless 內容作者歷程](overview.md)的這一部分中，您可以學習必要的 (基本) 概念和術語，以了解如何使用 Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS 編寫內容。這涉及架構和建立內容以進行無周邊內容傳遞。
+
+{{headless-trials-promotion}}
 
 ## 目標 {#objective}
 
