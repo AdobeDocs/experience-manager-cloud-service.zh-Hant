@@ -4,7 +4,7 @@ description: 了解如何使用 Adobe Experience Manager (AEM) as a Headless CMS
 landing-page-description: 了解無周邊內容傳遞和實作。了解更多如何在制定您的業務策略。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: e86f28afbd45270a89e43de0d42540ac5dd296cb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 100%
 
