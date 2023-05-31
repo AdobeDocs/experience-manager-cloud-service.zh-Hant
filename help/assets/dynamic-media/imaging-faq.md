@@ -6,16 +6,16 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: c48885dc11b0162f0288962a53e1d95574a3d406
+source-git-commit: 6f9ddcf31a1869bb8bebb566d05c371e996fe354
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3535'
 ht-degree: 1%
 
 ---
 
-# 智慧型影像常見問題集 {#smart-imaging}
+# 智慧型影像 {#smart-imaging}
 
-## 關於智慧型影像
+## 關於智慧型影像{#about-smart-imaging}
 
 智慧型影像技術可套用Adobe Sensei AI功能，並搭配現有的「影像預設集」運作。 它會根據使用者端瀏覽器功能自動最佳化影像格式、大小和品質，藉此增強影像傳送效能。
 
@@ -127,7 +127,7 @@ DPR和網路頻寬值是根據偵測到的套裝CDN使用者端值而定。 這�
 * 先前，原始影像和衍生影像都會經過快取，快取失效的程式分兩步。 在最新的智慧型影像處理中，只會快取衍生專案，執行單一步驟的快取失效程式。
 * 在規則集中使用自訂標題的客戶可受益於最新的智慧型影像，因為這些標題不會遭到封鎖，不像舊版的智慧型影像。 例如，「計時允許來源」、「X-Robot」，如中所建議 [新增自訂標頭值至影像回應|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## 智慧型影像如何運作
+## 智慧型影像如何運作{#how-smart-imaging-works}
 
 當消費者要求影像時，「智慧型影像處理」會檢查使用者特性，並根據使用的瀏覽器，將其轉換為適當的影像格式。 這些格式轉換是以不會降低視覺逼真度的方式進行。 智慧型影像會根據瀏覽器功能，以下列方式自動將影像轉換為不同格式。
 
@@ -140,7 +140,7 @@ DPR和網路頻寬值是根據偵測到的套裝CDN使用者端值而定。 這�
 
 如果原始影像大小小於智慧型影像產生的大小，則會提供原始影像。
 
-## 智慧型影像處理中的影像格式支援
+## 智慧型影像處理中的影像格式支援{#image-format-support}
 
 智慧型影像支援下列影像格式：
 
@@ -151,11 +151,11 @@ DPR和網路頻寬值是根據偵測到的套裝CDN使用者端值而定。 這�
 
 對於支援PNG等透明度的影像檔案格式，您可以設定「智慧型影像處理」以傳送有損的AVIF和WebP。 針對有損格式轉換，「智慧型影像處理」會使用影像URL中所述的品質，或是使用Dynamic Media公司帳戶中設定的品質。
 
-## 智慧型影像處理中的影像伺服命令支援
+## 智慧型影像處理中的影像伺服命令支援{#imaging-serving-command-support}
 
 「影像伺服」命令 `fmt` 和 `qlt` 不支援；支援所有其餘的命令。
 
-## 關於智慧型影像的常見問題
+## 關於智慧型影像的常見問題{#smart-imaging-faq}
 
 +++**智慧型影像是否有相關的授權成本？**
 
