@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
 workflow-type: tm+mt
 source-wordcount: '1495'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 您需要下列專案才能建立最適化表單：
 
-* **為您的環境啟用最適化Forms核心元件**：建立新程式時，最適化Forms核心元件已為您的環境啟用。 如果您有以Archetype 39或更舊版本為基礎的Formsas a Cloud Service環境， [為您的環境啟用最適化Forms核心元件](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). 為您的環境啟用核心元件時， **最適化Forms （核心元件）** 範本和畫布主題會新增至您的環境。 如果您的AEM SDK版本比2023.02.0舊， [確定您擁有 `prerelease` 在您的環境中啟用的標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) as Adaptive Forms核心元件屬於2023.02.0版之前的預先租賃。
+* **為您的環境啟用最適化Forms核心元件**：建立新程式時，最適化Forms核心元件已為您的環境啟用。 如果您有以Archetype 39或更舊版本為基礎的Formsas a Cloud Service環境， [為您的環境啟用最適化Forms核心元件](enable-adaptive-forms-core-components.md). 為您的環境啟用核心元件時， **最適化Forms （核心元件）** 範本和畫布主題會新增至您的環境。 如果您的AEM SDK版本比2023.02.0舊， [確定您擁有 `prerelease` 在您的環境中啟用的標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) as Adaptive Forms核心元件屬於2023.02.0版之前的預先租賃。
 
 * **自適應表單範本**：範本提供基本結構，並定義調適型表單的外觀（版面配置和樣式）。 它有預先格式化的元件，包含特定屬性和內容結構。 它還提供定義主題和提交動作的選項。 主題定義外觀，提交動作定義提交最適化表單時要採取的動作。 例如，將收集的資料傳送至資料來源。 雲端服務提供名為空白的OOTB範本：
 
