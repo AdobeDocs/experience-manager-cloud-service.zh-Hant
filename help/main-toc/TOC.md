@@ -8,7 +8,7 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
+source-git-commit: 493a2bae1d97424b4a1664e9f421d3f19b0cb477
 workflow-type: tm+mt
 source-wordcount: '4027'
 ht-degree: 99%
@@ -945,7 +945,7 @@ ht-degree: 99%
    + [維護 AEM 連接器](/help/connectors/maintain.md)
 + 運作 {#operations}
    + [AEM as a Cloud Service 之運作與維護](/help/operations/home.md)
-   + [通知中心](/help/operations/notification-center.md)
+   + [動作中心](/help/operations/actions-center.md)
    + [內容搜尋與索引](/help/operations/indexing.md)
    + [內容複寫服務](/help/operations/replication.md)
    + [AEM as a Cloud Service 中的基礎結構和服務監視](/help/operations/monitoring.md)
