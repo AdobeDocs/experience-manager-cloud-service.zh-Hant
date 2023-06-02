@@ -3,7 +3,7 @@ title: AEM Headless 內容架構師歷程
 description: 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的無周邊特性、其功能，以及如何在您的第一個無周邊專案中建立內容模型。
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '789'
 ht-degree: 100%
 
