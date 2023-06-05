@@ -2,9 +2,8 @@
 title: AEMas a Cloud Service的目的地選擇器
 description: 使用AEM目的地選擇器來顯示和選取您可以用來作為原始資產副本的資產。
 contentOwner: Adobe
-feature: destination selector
 role: Admin,User
-source-git-commit: fc156b95ebbdb0546f9fb334b0cb6f599f5f2692
+source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 37%
