@@ -2,9 +2,9 @@
 title: 內容搜尋與索引
 description: 內容搜尋與索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6fd5f8e7a9699f60457e232bb3cfa011f34880e9
+source-git-commit: 34189fd264d3ba2c1b0b22c527c2c5ac710fba21
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2491'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 1. 客戶將能夠根據自己的需求設定警報。
 1. SRE全天候監控系統健康狀況，並會視需要及早採取行動。
 1. 索引設定已透過部署變更。 索引定義變更的設定方式與其他內容變更相同。
-1. 概略說明AEMas a Cloud Service，並匯入 [藍綠色部署模式](#index-management-using-blue-green-deployments) 將存在兩組索引：一組用於舊版本（藍色），另一組用於新版本（綠色）。
+1. 概略說明AEMas a Cloud Service，並匯入 [滾動部署模型](#index-management-using-rolling-deployments) 將存在兩組索引：一組用於舊版本，另一組用於新版本。
 1. 客戶可以在Cloud Manager建置頁面上檢視索引工作是否完成，並將在新版本準備好接收流量時收到通知。
 
 限制:
@@ -143,7 +143,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 <filter><root>/oak:index</root></filter>
 ```
 
-新增索引定義後，需要透過Cloud Manager部署新應用程式。 部署後會啟動兩個工作，負責將索引定義分別新增（及視需要合併）至MongoDB和Azure區段存放區，以供編寫及發佈。 在切換藍綠之前，基礎存放庫會使用新的索引定義重新編制索引。
+新增索引定義後，需要透過Cloud Manager部署新應用程式。 部署後，會啟動兩個工作，負責將索引定義分別新增（及視需要合併）至MongoDB和Azure區段存放區，以供編寫和發佈。 在切換開始之前，基礎存放庫會使用新的索引定義重新編制索引。
 
 ### 注意
 
@@ -207,19 +207,19 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 >
 >如需AEMas a Cloud Service所需套件結構的進一步詳細資訊，請參閱本檔案 [AEM專案結構。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
-## 使用藍綠色部署的索引管理 {#index-management-using-blue-green-deployments}
+## 使用滾動式部署進行索引管理 {#index-management-using-rolling-deployments}
 
 ### 索引管理是什麼 {#what-is-index-management}
 
 索引管理是關於新增、移除和變更索引。 變更 *定義* 索引的建立速度很快，但套用變更（通常稱為「建立索引」，或對於現有索引稱為「重新索引」）需要時間。 這不是立即發生的：必須掃描存放庫才能為資料編制索引。
 
-### 藍綠色部署是什麼 {#what-is-blue-green-deployment}
+### 什麼是滾動式部署 {#what-are-rolling-deployments}
 
-藍綠色部署可減少停機時間。 此外，它還可實現零停機升級並提供快速回覆。 應用程式的舊版本（藍色）與應用程式的新版本（綠色）同時執行。
+滾動式部署可減少停機時間。 此外，它還可實現零停機升級並提供快速回覆。 應用程式的舊版本與應用程式的新版本同時執行。
 
 ### 唯讀和讀寫區域 {#read-only-and-read-write-areas}
 
-存放庫的某些區域（存放庫的唯讀部分）在應用程式的舊版（藍色）和新版（綠色）中可能不同。 存放庫的唯讀區域通常為「`/app`「和」`/libs`「。 在下列範例中，斜體是用來標籤唯讀區域，而粗體則是用來標籤讀寫區域。
+存放庫的某些區域（存放庫的唯讀部分）在舊版本和新版本的應用程式中可能不同。 存放庫的唯讀區域通常是 `/app` 和 `/libs`. 在下列範例中，斜體是用來標籤唯讀區域，而粗體則是用來標籤讀寫區域。
 
 * **/**
 * */apps （唯讀）*
@@ -233,13 +233,13 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 存放庫的讀寫區域會在所有版本的應用程式之間共用，而每個版本的應用程式都有一組特定的讀寫區域 `/apps` 和 `/libs`.
 
-### 沒有藍綠色部署的索引管理 {#index-management-without-blue-green-deployment}
+### 索引管理（不進行滾動部署） {#index-management-without-rolling-deployments}
 
 在開發期間或使用內部部署時，可在執行階段新增、移除或變更索引。 索引一有可用就會立即使用。 如果舊版應用程式中尚未使用索引，則通常會在排程的停機期間建立索引。 移除索引或變更現有索引時，也會發生相同的情況。 移除索引時，一旦被移除，就無法使用索引。
 
-### 使用藍綠色部署的索引管理 {#index-management-with-blue-green-deployment}
+### 使用滾動式部署進行索引管理 {#index-management-with-rolling-deployments}
 
-藍綠色部署不會造成停機時間。 在升級過程中，應用程式的舊版本（例如，版本1）和新版本（版本2）會針對相同的存放庫同時執行，這種情況持續了一段時間。 如果版本1要求某個索引可用，則不得在版本2中移除此索引：應稍後移除該索引，例如在版本3中，此時可以保證應用程式的版本1不再執行。 此外，應用程式應編寫得即使版本2正在執行以及有版本2的索引可用，版本1也能正常運作。
+滾動式部署不會造成停機時間。 在更新期間，應用程式的舊版本（例如，版本1）和新版本（版本2）會針對相同的存放庫同時執行。 如果版本1要求某個索引可用，則不得在版本2中移除此索引。 稍後應該移除索引，例如在版本3中，此時可以保證應用程式版本1不再執行。 此外，應用程式應編寫得即使版本2正在執行以及有版本2的索引可用，版本1也能正常運作。
 
 升級到新版本完成後，系統可以對舊索引進行垃圾回收。 舊索引可能仍會保留一段時間，以加速回滾（如果需要回滾）。
 
