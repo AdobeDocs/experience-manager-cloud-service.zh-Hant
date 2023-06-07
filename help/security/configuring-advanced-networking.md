@@ -2,10 +2,10 @@
 title: 為 AEM as a Cloud Service 設定進階網路
 description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，例如 VPN 或彈性或專用輸出 IP 地址等
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 67e801cc22adfbe517b769e829e534eadb1806f5
+source-git-commit: 7d74772bf716e4a818633a18fa17412db5a47199
 workflow-type: tm+mt
-source-wordcount: '3053'
-ht-degree: 100%
+source-wordcount: '3595'
+ht-degree: 84%
 
 ---
 
@@ -538,3 +538,34 @@ Header always set Cache-Control private
 > 此程序將導致進階網路服務在刪除和重新建立之間停機
 
 如果停機導致顯著的業務衝擊，請聯絡客戶支援以尋求協助，描述已經建立的內容和變更的原因。
+
+## 適用於其他發佈區域的進階網路設定 {#advanced-networking-configuration-for-additional-publish-regions}
+
+將其他區域新增到已設定進階網路的環境時，來自符合進階網路規則的其他發佈區域的流量預設會路由通過主要區域。 但是，如果主要區域無法使用，則如果未在其他區域啟用進階網路，則會捨棄進階網路流量。 如果您希望當其中一個區域發生中斷時，最佳化延遲並提高可用性，則必須為其他發佈區域啟用進階網路。 以下各節將說明兩種不同的情況。
+
+>[!NOTE]
+>
+>所有區域共用相同的 [環境進階網路設定](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration)，所以無法根據流量流出地區將流量路由到不同的目的地。
+
+### 專用輸出IP位址 {#additional-publish-regions-dedicated-egress}
+
+#### 主要區域已啟用進階網路 {#already-enabled}
+
+如果主要區域已啟用進階網路設定，請遵循下列步驟：
+
+1. 如果您已鎖定基礎架構，讓專用AEM IP位址列入允許清單，建議暫時停用該基礎架構中的任何拒絕規則。 如果不這樣做，您自己的基礎結構將會在短時間內拒絕來自新區域IP位址的請求。 請注意，如果您已透過完整網域名稱(FQDN)鎖定基礎架構，則不需要這樣做，(`p1234.external.adobeaemcloud.com`例如)，因為所有AEM區域都會從相同的FQDN輸出進階網路流量
+1. 透過對Cloud Manager建立網路基礎結構API的POST呼叫，為次要區域建立程式範圍的網路基礎結構，如進階網路檔案中所述。 有效負載的JSON設定相對於主要區域的唯一差異將是區域屬性
+1. 如果您的基礎結構必須被IP鎖定以允許AEM流量，請新增符合的IP `p1234.external.adobeaemcloud.com`. 每個區域應該有一個。
+
+#### 尚未在任何地區設定進階網路 {#not-yet-configured}
+
+此程式大多與先前的指示類似。 但是，如果尚未針對進階網路啟用生產環境，則有機會先在中繼環境中啟用設定以測試設定：
+
+1. 透過POST呼叫建立所有地區的網路基礎結構 [Cloud Manager建立網路基礎結構API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). 有效負載的JSON設定相對於主要區域的唯一差異將是region屬性。
+1. 對於中繼環境，請透過執行來啟用和設定環境範圍的進階網路 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. 如需詳細資訊，請參閱API檔案 [此處](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. 如有必要，最好透過FQDN鎖定外部基礎架構(例如 `p1234.external.adobeaemcloud.com`)。 否則，您可以依IP位址執行此操作
+1. 如果中繼環境如預期般運作，請為生產環境啟用並設定範圍環境的進階網路設定。
+
+#### VPN {#vpn-regions}
+
+此程式幾乎與專用輸出IP位址指示相同。 唯一的差異在於，除了設定與主要區域不同的區域屬性外， `connections.gateway` 欄位可選擇性設定為路由至您的組織所操作的不同VPN端點，可能在地理上更接近新區域。

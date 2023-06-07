@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
+source-git-commit: 344013ed479f72b7097177cce911fc683f1dbed9
 workflow-type: tm+mt
-source-wordcount: '4030'
+source-wordcount: '4033'
 ht-degree: 99%
 
 ---
@@ -510,7 +510,7 @@ ht-degree: 99%
    + 設定和移轉{#setup-configure-migrate}
       + [Cloud Service 環境入門](/help/forms/setup-forms-cloud-service.md)
       + [設定本機開發環境](/help/forms/setup-local-development-environment.md)
-      + [在AEM Formsas a Cloud Service和本機開發環境中啟用最適化Forms核心元件](/help/forms/enable-adaptive-forms-core-components.md)
+      + [在 AEM Forms as a Cloud Service 和本地開發環境中啟用調適型表單核心元件](/help/forms/enable-adaptive-forms-core-components.md)
       + [設定統一的儲存連接器](/help/forms/configure-unified-storage-connector.md)
       + [從  [!DNL AEM 6.5 Forms]  或更早版本移轉至  [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
@@ -946,9 +946,10 @@ ht-degree: 99%
    + [維護 AEM 連接器](/help/connectors/maintain.md)
 + 運作 {#operations}
    + [AEM as a Cloud Service 之運作與維護](/help/operations/home.md)
-   + [動作中心](/help/operations/actions-center.md)
+   + [行動中心](/help/operations/actions-center.md)
    + [內容搜尋與索引](/help/operations/indexing.md)
    + [內容複寫服務](/help/operations/replication.md)
+   + [其他發佈區域](/help/operations/additional-publish-regions.md)
    + [AEM as a Cloud Service 中的基礎結構和服務監視](/help/operations/monitoring.md)
    + [維護任務](/help/operations/maintenance.md)
    + [備份和還原](/help/operations/backup.md)
@@ -972,4 +973,3 @@ ht-degree: 99%
    + [Universal Editor 架構](/help/implementing/universal-editor/architecture.md)
    + [屬性和類型](/help/implementing/universal-editor/attributes-types.md)
    + [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md)
-

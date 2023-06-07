@@ -2,12 +2,13 @@
 title: 管理環境
 description: 了解您可以建立的環境類型，以及如何為您的 Cloud Manager 專案建立環境類型。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4631ab86ae1b4405e31d8bb8eae8edbbe2272c2c
+source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 100%
+source-wordcount: '2302'
+ht-degree: 78%
 
 ---
+
 
 # 管理環境 {#managing-environments}
 
@@ -56,14 +57,67 @@ ht-degree: 100%
       * 可用/已使用環境的數量會顯示在環境類型名稱後面的括號中。
    * 提供環境&#x200B;**名稱**。
    * 提供環境&#x200B;**說明**。
+   * 如果您要新增 **生產+中繼** 環境，您需要提供生產和中繼環境的環境名稱和說明。
    * 從下拉清單中選取一個&#x200B;**主要區域**。
       * 請注意，這在建立後無法改變。
-   * 如果要新增 **生產 + 階段** 環境，則需要為生產環境和中繼環境提供環境名稱和描說明。
-      ![新增環境對話框](assets/add-environment2.png)
+      * 根據您可用的權益，您或許可以設定 [多個區域。](#multiple-regions)
+
+   ![新增環境對話框](assets/add-environment2.png)
 
 1. 按一下&#x200B;**儲存**，以新增指定的環境。
 
 現在&#x200B;**總覽**&#x200B;畫面會在&#x200B;**環境**&#x200B;卡中顯示您的新環境。現在您可以設定新環境的管道。
+
+## 多個發佈區域 {#multiple-regions}
+
+使用者具有 **業務負責人** 角色可以設定prod和staging環境，以便在主要區域之外包含最多三個額外的發佈區域。 其他發佈區域可提高可用性。 請參閱 [其他發佈區域檔案](/help/operations/additional-publish-regions.md) 以取得更多詳細資料。
+
+>[!TIP]
+>
+>您可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) 以查詢目前可用的區域清單。
+
+### 將多個發佈區域新增至新環境 {#add-regions}
+
+新增環境時，您可以選擇設定主要區域以外的其他區域。
+
+1. 選取 **主要區域**.
+   * 請注意，這在環境建立後無法變更。
+1. 選取選項 **新增其他發佈區域** 和新的 **其他發佈區域** 下拉式清單隨即顯示。
+1. 在 **其他發佈區域** 下拉式清單，選取其他區域。
+1. 選取的區域會新增至下拉式清單下方，以指示其選取範圍。
+   * 點選或按一下所選區域旁的X以取消選取該區域。
+1. 從「 」中選取其他區域 **其他發佈區域** 下拉式清單以新增其他區域。
+1. 點選或按一下 **儲存** 當您準備好建立環境時。
+
+![選取多個區域](assets/select-multiple-regions.png)
+
+所選區域將同時套用至生產和中繼環境。
+
+如果您未指定任何額外區域， [您可以在稍後建立環境後執行此操作。](#edit-regions)
+
+如果您想要布建 [進階網路](/help/security/configuring-advanced-networking.md) 對於計畫，建議在使用Cloud Manager API將其他發佈區域新增到環境之前執行此操作。 否則，其他發佈區域的流量將流經主要區域的Proxy。
+
+### 編輯多個發佈區域 {#edit-regions}
+
+如果您最初沒有指定任何附加區域，您可以在環境建立後指定（如果您有必要的權益）。
+
+您也可以移除其他發佈區域。 不過，您只能在一個交易中新增或移除區域。 如果您需要新增一個區域並移除一個區域，請先新增、儲存變更，然後移除（反之亦然）。
+
+1. 從計畫的計畫總覽控制檯，按一下生產環境的省略符號按鈕並選擇 **編輯** 功能表中的。
+
+   ![編輯環境](assets/select-edit-environment.png)
+
+1. 在 **編輯生產環境** 對話方塊中，對其他發佈區域進行必要的變更。
+   * 使用 **其他發佈區域** 下拉式清單，以選取其他區域。
+   * 按一下所選其他發佈區域旁的X以取消選取它們。
+
+   ![編輯環境](assets/edit-environment.png)
+
+1. 點選或按一下 **儲存** 以儲存變更。
+
+對生產環境所做的變更將同時套用至生產環境和測試環境。 對多個發佈區域的變更只能在生產環境中編輯。
+
+如果您想要布建 [進階網路](/help/security/configuring-advanced-networking.md) 針對程式，建議在將其他發佈區域新增到環境之前執行此動作。 否則，其他發佈區域的流量將流經主要區域的Proxy。
 
 ## 環境詳細資訊 {#viewing-environment}
 

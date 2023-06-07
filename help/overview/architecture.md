@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 架構簡介
 description: Adobe Experience Manager as a Cloud Service 架構簡介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
+source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 100%
+source-wordcount: '1827'
+ht-degree: 97%
 
 ---
 
@@ -124,7 +124,15 @@ AEM as a Cloud Service 最初提供兩種類型的方案：
       * Assets 整合與處理作業會使用專屬的 Assets Compute Service。
    * 預覽層級是由單一預覽節點所組成。這用於在發佈到發佈層級之前，確保內容的品質。
 
-   * 發佈層級是由單一發佈伺服器陣列中兩個以上節點所組成：節點可獨立運作。每個節點均包含 AEM 發佈者和具備 AEM Dispatcher 模組的網頁伺服器，而節點會根據網站流量需求自動調整規模。
+   * 發佈層級是由單一發佈伺服器陣列中兩個或多個節點所組成。
+
+      * 節點可以獨立運作。
+
+      * 每個節點均包含 AEM 發佈者和具備 AEM Dispatcher 模組的網頁伺服器，
+
+      * 而節點會根據網站流量需求自動調整規模。
+
+      * 然而，預設情況下，主要區域中有一個發佈陣列 [其他發佈區域](/help/operations/additional-publish-regions.md) 可能獲得授權。
 
       * 一般使用者或網站訪客能透過 AEM Publish Service 造訪網站。
 
