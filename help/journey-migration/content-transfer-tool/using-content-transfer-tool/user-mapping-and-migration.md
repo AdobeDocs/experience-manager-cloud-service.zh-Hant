@@ -2,10 +2,10 @@
 title: 使用者對應和主體移轉
 description: 使用者對應和主體移轉概要
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: caa04391077d594a828a42a1a5a6a03daa107168
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 11%
+source-wordcount: '832'
+ht-degree: 10%
 
 ---
 
@@ -25,9 +25,13 @@ ht-degree: 11%
 
 AEM as a Cloud Service 最重大的變更是完全整合使用 Adobe ID 以存取作者層。此程式需要使用 [Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 用於管理使用者和使用者群組。 使用者設定檔資訊集中在AdobeIdentity Management系統(IMS)中，可在所有Adobe雲端應用程式中提供單一登入。 如需詳細資訊，請參閱 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). 由於此變更，現有使用者必須對應至其IMS ID，以避免在Cloud Service作者執行個體上出現重複使用者。 由於傳統AEM中的群組與IMS中的群組完全不同，群組不會對應，但在移轉完成後必須協調兩組群組。
 
-## 使用者對應和移轉細節 {#user-mapping-detail}
+## 使用者移轉詳細資料 {#user-migration-detail}
 
-內容轉移工具和Cloud Acceleration Manager會移轉與正在移轉的內容相關聯的任何使用者。 此對應會自動完成，並且可以在提取開始前透過切換控制是否完成。 使用者在開始擷取時，可覆寫切換的預設設定。
+內容轉移工具和Cloud Acceleration Manager會將與正在移轉的內容相關聯的任何使用者移轉至雲端系統。
+
+## 使用者對應詳細資訊 {#user-mapping-detail}
+
+AEM使用者可以對應至具有相同電子郵件地址的對應Adobe IMS使用者。  此對應可在CTT中自動完成，是否完成可在提取開始前透過切換控制。 使用者在開始擷取時，可覆寫切換的預設設定。
 
 * 如果來源系統是Author例項，則預設情況下，執行對應的選擇為 _於_，因為這是建議的流程。
 * 如果來源系統是發佈執行個體，則預設情況下，執行對應的選擇為 _關閉_，因為使用者通常不會移轉或用於發佈執行個體。
