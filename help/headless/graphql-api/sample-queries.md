@@ -3,10 +3,10 @@ title: 了解搭配使用 GraphQL 與 AEM - 範例內容和查詢
 description: 透過探索範例內容和查詢，了解如何搭配使用 GraphQL 與 AEM 以提供無周邊內容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
+source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 100%
+source-wordcount: '1760'
+ht-degree: 92%
 
 ---
 
@@ -356,6 +356,58 @@ query {
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### 範例查詢 - 所有城市的名稱 已標籤為分行符號 {#sample-names-all-cities-tagged-city-breaks}
+
+如果您：
+
+* 建立各種標籤，已命名 `Tourism` ： `Business`， `City Break`， `Holiday`
+* 並將它們指派給各種變數的主變數 `City` 執行個體
+
+然後，您可以使用查詢來傳回 `name` 和 `tags`中所有標示為「城市分隔符號」的專案 `city`結構描述。
+
+**範例查詢**
+
+```xml
+query {
+  cityList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "tourism:city-break", _operator: CONTAINS}]}}
+  ){
+    items {
+      name,
+      _tags
+    }
+  }
+}
+```
+
+**範例結果**
+
+```xml
+{
+  "data": {
+    "cityList": {
+      "items": [
+        {
+          "name": "Berlin",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
+          ]
+        },
+        {
+          "name": "Zurich",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
           ]
         }
       ]
@@ -1533,6 +1585,62 @@ query {
 }
 ```
 
+### 給定模型的多個內容片段及其變體的範例查詢 {#sample-wknd-multiple-fragment-variations-given-model}
+
+此查詢會質詢：
+
+* 型別為的內容片段 `article` 和所有變數
+
+**範例查詢**
+
+```xml
+query {
+  articleList(
+    includeVariations: true  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
+### 附加特定標籤之指定模型的內容片段變體範例查詢{#sample-wknd-fragment-variations-given-model-specific-tag}
+
+此查詢會質詢：
+
+* 型別為的內容片段 `article` 一或多個具有標籤的變數 `WKND : Activity / Hiking`
+
+**範例查詢**
+
+```xml
+{
+  articleList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "wknd:activity/hiking", _operator: CONTAINS}]}}
+  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
 ### 給定地區設定的多個內容片段的範例查詢 {#sample-wknd-multiple-fragments-given-locale}
 
 此查詢會質詢：
@@ -1610,6 +1718,84 @@ query {
         }
     }
 }
+```
+
+### 依_tags ID篩選並排除變數的範例查詢 {#sample-filtering-tag-not-variations}
+
+此查詢會質詢：
+
+* 型別為的內容片段 `vehicle` 擁有標籤 `big-block`
+* 排除變數
+
+**範例查詢**
+
+```graphql
+query {
+  vehicleList(
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    items {
+      _variation
+      _path
+      type
+      name
+      model
+      fuel
+      _tags
+    }
+  }
+} 
+```
+
+### 依_tags ID篩選並包含變數的範例查詢 {#sample-filtering-tag-with-variations}
+
+此查詢會質詢：
+
+* 型別為的內容片段 `vehicle` 擁有標籤 `big-block`
+* 包含變數
+
+**範例查詢**
+
+```graphql
+{
+  enginePaginated(after: "SjkKNmVkODFmMGQtNTQyYy00NmQ4LTljMzktMjhlNzQwZTY1YWI2Cmo5", first: 9 ,includeVariations:true, sort: "name",
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    edges{
+    node {
+        _variation
+        _path
+        name
+        type
+        size
+        _tags
+        _metadata {
+          stringArrayMetadata {
+            name
+            value
+          }
+        }
+    }
+      cursor
+    }
+  }
+} 
 ```
 
 ## 範例內容片段結構 (與 GraphQL 搭配使用) {#content-fragment-structure-graphql}

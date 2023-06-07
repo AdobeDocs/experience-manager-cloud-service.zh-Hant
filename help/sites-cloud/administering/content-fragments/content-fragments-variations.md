@@ -4,10 +4,10 @@ description: 瞭解變數如何讓您為片段撰寫內容，然後根據用途�
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 0361ae6e7de7b92f8c3ebbf531e9382df44c246f
+source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 13%
+source-wordcount: '2480'
+ht-degree: 12%
 
 ---
 
@@ -40,24 +40,37 @@ ht-degree: 13%
 
 ## 製作您的內容 {#authoring-your-content}
 
-當您開啟內容片段進行編輯時， **變數** 標籤預設為開啟。 您可以在此處為主要或任何變數創作內容。 結構化片段包含內容模型中定義的各種欄位，其資料型別也各不相同。
+當您開啟內容片段進行編輯時， **變數** 標籤預設為開啟。 您可以在此處為主要或任何變數創作內容。 結構化片段包含內容模型中定義的各種欄位，其資料型別各異。
 
 例如：
 
 ![全熒幕編輯器](assets/cfm-variations-02.png)
+
 您可以：
 
-* 直接在中編輯 **變數** 標籤
+* 直接在中編輯您的內容 **變數** 標籤；每個資料型別提供不同的編輯選項，例如：
 
-   * 每種資料型別提供不同的編輯選項
+   * 的 **多行文字** 欄位您也可以開啟 [全熒幕編輯器](#full-screen-editor) 至：
 
-* 的 **多行文字** 欄位您也可以開啟 [全熒幕編輯器](#full-screen-editor) 至：
+      * 選取 [格式](#formats)
+      * 檢視更多編輯選項(適用於 [RTF文字](#rich-text) format)
+      * 存取範圍 [動作](#actions)
+   * 對象 **片段參考** 欄位 [編輯內容片段](#fragment-references-edit-content-fragment) 選項是否可用，取決於模型定義。
 
-   * 選取 [格式](#formats)
-   * 檢視更多編輯選項(適用於 [RTF文字](#rich-text) format)
-   * 存取範圍 [動作](#actions)
 
-* 對象 **片段參考** 欄位 **[編輯內容片段](#fragment-references-edit-content-fragment)** 選項是否可用，取決於模型定義。
+* 指派 **標籤** 至目前的變數；標籤可以新增、更新和移除
+
+   * [標籤](/help/sites-cloud/authoring/features/tags.md) 在組織片段時特別強大，因為它們可用於內容分類和分類法。 標籤可用於尋找內容（依標籤）及套用大量作業。
+
+      * 搜尋標籤將傳回片段，並反白標示標籤的變數。
+      * 變數標籤也可用來將特定內容傳遞網路(CDN)設定檔的變數分組（用於CDN快取），而不是使用變數名稱。
+
+      例如，您可以將相關片段標籤為「聖誕節啟動」，以僅允許作為子集瀏覽這些片段，或複製它們以供日後在新資料夾中再次啟動時使用。
+   >[!NOTE]
+   >
+   >**標籤** 也可以新增(至 **主版** 變數)，作為 [中繼資料](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+
+* [建立和管理變數](#managing-variations) 的 **主版** 內容。
 
 ### 全熒幕編輯器 {#full-screen-editor}
 
@@ -391,6 +404,10 @@ additional-url="https://video.tv.adobe.com/v/333295" text="內容片段變化"
    >[!NOTE]
    建立新變數時，一律會進行 **主版** 而不是目前開啟的變數。
 
+
+   >[!NOTE]
+   當您建立新的變數時，所有 **標籤** 目前指派給 **主版** 變數會複製到您的新變數中。
+
 ### 編輯變數 {#editing-a-variation}
 
 您可以在下列任一情況後變更變數內容：
@@ -437,7 +454,7 @@ additional-url="https://video.tv.adobe.com/v/333295" text="內容片段變化"
 >[!CAUTION]
 同步僅可用於將更改從 *主&#x200B;**版複製**到變化*。
 只會同步變數的目前元素。
-同步只適用於多 **行文本** -資料類型。
+同步僅適用於 **多行文字** 資料型別。
 將變 *更從變更傳輸&#x200B;**至Master*** ，不提供選項。
 
 1. 在片段編輯器中開啟您的內容片段。 確保 **主版** 已編輯。

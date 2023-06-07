@@ -3,10 +3,10 @@ title: 與內容片段搭配使用的 AEM GraphQL API
 description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現無周邊內容傳遞。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
+source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
 workflow-type: tm+mt
-source-wordcount: '4769'
-ht-degree: 100%
+source-wordcount: '4934'
+ht-degree: 96%
 
 ---
 
@@ -134,12 +134,16 @@ AEM 提供將查詢 (兩種類型) 轉換為[持續性查詢的功能，可由 D
 
 您可以使用 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 測試和偵錯 GraphQL 查詢。
 
-## 作者和發佈環境的使用案例 {#use-cases-author-publish-environments}
+## 創作、預覽和發佈的使用案例 {#use-cases-author-preview-publish}
 
 使用案例取決於 AEM as a Cloud Service 環境的類型：
 
 * 發佈環境：用於：
    * 為 JS 應用程式查詢資料 (標準使用案例)
+
+* 預覽環境；用於：
+   * 在發佈環境中部署之前預覽查詢
+      * 為 JS 應用程式查詢資料 (標準使用案例)
 
 * 作者環境：用於：
    * 為「內容管理目的」查詢資料：
@@ -932,6 +936,13 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
 
 
+
+* 篩選器 `includeVariations` 包含在 `List` 和 `Paginated` 查詢型別。  若要擷取查詢結果中的內容片段變數，請 `includeVariations` 篩選器必須設定為 `true`.
+
+   * 另請參閱 [給定模型的多個內容片段及其變體的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   >[!CAUTION]
+   >篩選器 `includeVariations` 和系統產生的欄位 `_variation` 不能在同一查詢定義中一起使用。
+
 * 如果要使用邏輯 OR：
    * 使用 ` _logOp: OR`
    * 請參閱[範例查詢 - 姓名為「Jobs」或「Smith」的所有人員](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
@@ -961,6 +972,10 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
          >
          >如果內容片段不存在給定的變化，則主變化將作為 (備援) 預設值傳回。
 
+         >[!CAUTION]
+         >
+         >系統產生的欄位 `_variation` 無法與篩選器搭配使用 `includeVariations`.
+
          * 請參閱[範例查詢 - 所有具有名稱變化的城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
    * 對於[影像傳遞](#image-delivery)：
 
@@ -973,6 +988,17 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
          * [具有完整參數的影像傳遞範例查詢](#image-delivery-full-parameters)
 
          * [具有單一特定參數的影像傳遞範例查詢](#image-delivery-single-specified-parameter)
+   * `_tags` ：顯示包含標籤的內容片段或變體ID；這是一個陣列 `cq:tags` 識別碼。
+
+      * 另請參閱 [範例查詢 — 所有標籤為分行符號的城市名稱](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+      * 另請參閱 [附加特定標籤之指定模型的內容片段變體範例查詢](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+      * 另請參閱 [依_tags ID篩選並排除變數的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * 另請參閱 [依_tags ID篩選並包含變數的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+
+      >[!NOTE]
+      >
+      >也可以透過列出內容片段的中繼資料來查詢標籤。
+
    * And 操作：
 
       * `_operator`：套用特定的運算子；`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`
@@ -982,6 +1008,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
          * 請參閱[範例查詢 - 篩選內含必須至少出現一次之項目的陣列](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`：查詢時忽略大小寫
          * 請參閱[範例查詢 - 所有名稱包含 SAN 的城市，不區分大小寫](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
+
 
 
 
