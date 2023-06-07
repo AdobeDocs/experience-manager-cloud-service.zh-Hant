@@ -2,9 +2,9 @@
 title: 使用內容片段（資產 — 內容片段）
 description: 瞭解Adobe Experience Manager (AEM)as a Cloud Service中的內容片段如何讓您設計、建立、組織和使用獨立於頁面的內容，非常適合頁面製作和headless傳送。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: ca41657057211cb0736a866771253b166fa139b4
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2063'
+source-wordcount: '2135'
 ht-degree: 4%
 
 ---
@@ -46,6 +46,7 @@ ht-degree: 4%
 * [使用關聯內容](/help/assets/content-fragments/content-fragments-assoc-content.md)  — 新增關聯內容
 * [中繼資料 — 片段屬性](/help/assets/content-fragments/content-fragments-metadata.md)  — 檢視和編輯片段屬性
 * 使用 [內容片段，搭配GraphQL一起提供內容](/help/assets/content-fragments/content-fragments-graphql.md) 供您的應用程式使用。 若要協助處理此專案，您可以預覽 [JSON輸出](/help/assets/content-fragments/content-fragments-json-preview.md).
+* [使用MSM對資產重複使用內容片段](#reusing-content-fragments-with-msm-assets)
 
 >[!NOTE]
 >
@@ -109,6 +110,16 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 >[!NOTE]
 >
 >AEM也支援翻譯片段內容。 另請參閱 [翻譯資產](/help/assets/translate-assets.md) 以取得進一步資訊。
+
+## 透過資產的MSM重複使用內容片段 {#reusing-content-fragments-with-msm-assets}
+
+當透過 **資產** 主控台，您可以使用MSM和建立片段的即時副本。
+
+如需詳細資訊，請參閱 [使用MSM對資產重複使用內容片段](/help/assets/reuse-assets-using-msm.md).
+
+>[!CAUTION]
+>
+>如果您想使用MSM （這會建立內容片段的復本），則任何 **獨特** 限制應從個別資料型別中使用的任何資料型別中移除 [內容片段模型](/help/assets/content-fragments/content-fragments-models.md).
 
 ## 內容類型 {#content-type}
 

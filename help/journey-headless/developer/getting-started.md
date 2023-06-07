@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 快速入門
 description: 在 AEM Headless 開發人員歷程的這一部分，了解 AEM Headless 先決條件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
 workflow-type: tm+mt
-source-wordcount: '3058'
-ht-degree: 100%
+source-wordcount: '3090'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +45,10 @@ ht-degree: 100%
 ### 發佈執行個體 {#publish}
 
 在作者執行個體中建立內容後，必須將其發佈以供其他服務取用。發佈執行個體包含所有已發佈的內容。
+
+### 預覽服務 {#preview}
+
+在發佈到發佈執行個體之前，您也可以將內容片段發佈到 **預覽服務** 以進行測試和檢閱。 這是從以下位置完成的： **內容片段** 主控台。
 
 ### 複製 {#replication}
 

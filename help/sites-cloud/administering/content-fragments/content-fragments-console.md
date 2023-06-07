@@ -5,10 +5,10 @@ landing-page-description: 瞭解如何從內容片段控制檯管理內容片段
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
+source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 6%
+source-wordcount: '1106'
+ht-degree: 5%
 
 ---
 
@@ -101,11 +101,11 @@ ht-degree: 6%
 ![內容片段控制檯 — 所選片段的工具列](assets/cfc-fragment-toolbar.png)
 
 * **開啟**
-* **發佈** (和&#x200B;**取消發佈**)
+* **[發佈](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)** (和&#x200B;**[取消發佈](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#unpublishing-a-fragment)**)
 * **複製**
 * **移動**
 * **重新命名**
-* **刪除**
+* **[刪除](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#deleting-a-fragment)**
 
 >[!NOTE]
 >
@@ -124,6 +124,11 @@ ht-degree: 6%
 將游標停留在資料夾名稱上將顯示 JCR 路徑。
 * **狀態**
    * 僅供參考
+* **預覽**
+   * 僅供參考：
+      * **同步中**：內容片段在上同步 **作者** 和 **預覽** 服務。
+      * **不同步**：內容片段在上的不同步 **作者** 和****預覽** 服務。 您需要 **發佈** 至 **預覽** 以確保兩個執行個體恢復同步。
+      * 空白：內容片段不存在於 **預覽** 服務。
 * **修改時間**
    * 僅供參考
 * **修改者:**

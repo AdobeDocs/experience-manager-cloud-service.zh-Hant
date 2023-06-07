@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
 workflow-type: tm+mt
-source-wordcount: '4954'
+source-wordcount: '5094'
 ht-degree: 7%
 
 ---
@@ -411,6 +411,10 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 * 下載一或多個資產。
 * 使用「案頭動作」在案頭應用程式中開啟這些資產。
 * 建立智慧型集合。
+* 建立版本
+* 啟動工作流程
+* 建立資產關聯或取消關聯
+* 使用執行搜尋後自動顯示的「篩選器」面板，套用篩選器以縮小搜尋結果的範圍。
 
 ### 排序搜尋結果 {#sort}
 
@@ -450,6 +454,18 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 * 根據搜尋條件填入集合中資產的動態清單（智慧型集合）。
 
 您可以根據搜尋准則建立智慧型系列。從「濾鏡 **[!UICONTROL 器]** 」面板中，選 **[!UICONTROL 擇「檔案]** 」並單 **[!UICONTROL 擊「保存智慧集」]**。請參閱 [管理系列](/help/assets/manage-collections.md)。
+
+### 建立版本 {#create-version}
+
+建立顯示在搜尋結果中的資產版本。 選取資產並按一下 **[!UICONTROL 建立]** > **[!UICONTROL 版本]**. 新增選用標籤或註解，然後按一下 **[!UICONTROL 建立]**. 您也可以選取多個資產，並同時為其建立版本。
+
+### 建立工作流程 {#create-workflow}
+
+與建立版本功能類似，您也可以為搜尋結果中顯示的資產建立工作流程。 選取資產並按一下 **[!UICONTROL 建立]** > **[!UICONTROL 工作流程]**. 選取工作流程模型，指定工作流程的標題，然後按一下 **[!UICONTROL 開始]**.
+
+### 建立資產關聯和取消關聯 {#relate-unrelate-assets}
+
+關聯和取消關聯搜尋結果中顯示的資產。 選取資產並按一下 **[!UICONTROL 相關]** 或 **[!UICONTROL 取消關聯]**.
 
 ## 未預期的搜尋結果和問題 {#unexpected-results}
 

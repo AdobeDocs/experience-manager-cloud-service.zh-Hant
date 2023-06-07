@@ -2,9 +2,9 @@
 title: 內容片段模型（資產 — 內容片段）
 description: 瞭解內容片段模型如何作為AEM中Headless內容的基礎，以及如何使用結構化內容建立內容片段。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2887'
+source-wordcount: '2917'
 ht-degree: 8%
 
 ---
@@ -179,6 +179,10 @@ AEM中的內容片段模型為您的定義了內容結構 [內容片段，](/hel
    >[!NOTE]
    >
    >變數可以有相同的 *獨特* 值代表相同片段的變數，但與其他片段變數中使用的值不同。
+
+   >[!CAUTION]
+   >
+   >如果您想使用MSM （這會建立內容片段的復本），則任何 **獨特** 限制應從各個內容片段模式中使用的任何資料型別中移除。
 
 * 另請參閱 **[內容參考](#content-reference)** 以取得該特定資料型別及其屬性的詳細資訊。
 

@@ -4,9 +4,9 @@ description: 瞭解Adobe Experience Manager (AEM)as a Cloud Service中的內容�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2127'
 ht-degree: 4%
 
 ---
@@ -59,6 +59,7 @@ ht-degree: 4%
 >* [轉譯專用內容片段設定元件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API 內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [與內容片段搭配使用的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
+>* [使用MSM對資產重複使用內容片段](/help/assets/reuse-assets-using-msm.md) (僅可透過 **資產** console)
 
 
 通訊管道的數量每年都在增加。 通常，管道是指傳遞機制，例如：
@@ -112,6 +113,16 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 >[!NOTE]
 >
 >AEM也支援翻譯片段內容。 另請參閱 [翻譯資產](/help/assets/translate-assets.md) 以取得進一步資訊。
+
+## 發佈並預覽 {#publish-and-preview}
+
+與所有內容一樣，您最終將會想要將您的內容片段發佈到 **[發佈服務](/help/overview/architecture.md#runtime-architecture)**.
+
+在此之前，您還可以透過以下方式預覽使用內容片段傳送的體驗 [發佈您的內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) 前往AEM **[預覽服務](/help/overview/architecture.md#runtime-architecture)**.
+
+>[!CAUTION]
+>
+>發佈至 **預覽服務** 只能從 **內容片段** 主控台。
 
 ## 內容類型 {#content-type}
 

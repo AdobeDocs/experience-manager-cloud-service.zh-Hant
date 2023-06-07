@@ -4,9 +4,9 @@ description: 瞭解內容片段模型如何作為AEM中內容片段的基礎。 
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2898'
+source-wordcount: '2939'
 ht-degree: 8%
 
 ---
@@ -181,6 +181,10 @@ AEM中的內容片段模型會定義 [內容片段](/help/sites-cloud/administer
    >[!NOTE]
    >
    >變數可以有相同的 *獨特* 值代表相同片段的變數，但與其他片段變數中使用的值不同。
+
+   >[!CAUTION]
+   >
+   >如果您想使用MSM （這會建立內容片段的復本），則任何 **獨特** 限制應從各個內容片段模式中使用的任何資料型別中移除。 內容片段的MSM只能從 **資產** 主控台。
 
 * 另請參閱 **[內容參考](#content-reference)** 以取得該特定資料型別及其屬性的詳細資訊。
 

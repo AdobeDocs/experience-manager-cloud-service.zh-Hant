@@ -1,21 +1,20 @@
 ---
 title: 管理發佈
 description: 將資產發佈或取消發佈至Experience Manager Assets、Dynamic Media和Brand Portal
-contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 10%
+source-wordcount: '1630'
+ht-degree: 6%
 
 ---
 
 # 在Experience Manager Assets中管理發布 {#manage-publication-in-aem}
 
-作為 [!DNL Adobe Experience Manager Assets] 管理員，您可以將包含資產的資產和資料夾從作者執行個體發佈到 [!DNL Experience Manager Assets]， [!DNL Dynamic Media]、和 [!DNL Brand Portal]. 此外，您也可以將資產或資料夾的發佈工作流程安排在之後的日期或時間。發佈後，使用者可以存取資產，並進一步將資產發佈給其他使用者。 依預設，您可以將資產和資料夾發佈到 [!DNL Experience Manager Assets]. 不過，您可以設定 [!DNL Experience Manager Assets] 啟用發佈至 [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) 和 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+作為 [!DNL Adobe Experience Manager Assets] 管理員，您可以將包含資產的資產和資料夾從作者執行個體發佈到 [!DNL Experience Manager Assets]， [!DNL Dynamic Media]、和 [!DNL Brand Portal]. 您也可以排程在稍後的日期或時間發佈資產或資料夾。 發佈後，使用者可以存取資產，並進一步將資產發佈給其他使用者。 依預設，您可以將資產和資料夾發佈到 [!DNL Experience Manager Assets]. 不過，您可以設定 [!DNL Experience Manager Assets] 啟用發佈至 [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) 和 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
 您可以使用以下其中一種方式，在資產或資料夾層級發佈或取消發佈資產 **[!UICONTROL 快速發佈]** 或 **[!UICONTROL 管理發布]** 中可用的選項 [!DNL Experience Manager Assets] 介面。 如果您對中的原始資產或資料夾進行後續修改 [!DNL Experience Manager Assets]，在您從重新發佈前，變更不會反映在發佈執行個體中 [!DNL Experience Manager Assets]. 它可確保進行中的變更不會出現在發佈執行個體中。 發佈執行個體中只能使用管理員發佈的已核准變更。
 
@@ -24,6 +23,7 @@ ht-degree: 10%
 * [稍後發佈資產](#publish-assets-later)
 * [將資產發佈至Dynamic Media](#publish-assets-to-dynamic-media)
 * [將資產發佈至 Brand Portal](#publish-assets-to-brand-portal)
+* [要求發佈](#request-publication)
 * [限制與秘訣](#limitations-and-tips)
 
 ## 使用快速發佈功能發佈資產 {#quick-publish}
@@ -177,24 +177,27 @@ Only the selected folder content and references are published.
 * [將資料夾發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-folders-to-brand-portal)
 * [將集合發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-collections-to-brand-portal)
 
+## 要求發佈 {#request-publication}
+
+此 `Request Publication` 選項有助於在發佈資產之前驗證資產的工作流程 [!DNL AEM] 資產環境。 [!DNL AEM] 為不同使用者提供不同等級的許可權。 您可以是 *投稿人* 正在上傳資產，但在驗證上傳後才能發佈這些資產。 此外，身為 *管理員* 您可以管理資產的讀取和寫入工作流程。
+
+請求發佈選項可供下列使用者使用：
+* **投稿人：** 如果您是可協助撰寫的使用者 [!DNL AEM] Assets，則您對的存取權有限 [!DNL AEM] 資產工作流程。 `Manage publication` 按鈕已為您隱藏。 身為投稿人，您只能透過新增資產來投稿，但無法發佈資產或擁有工作流程的讀取存取權。
+
+* **工作流程使用者：** 此使用者無法發佈資產，但擁有工作流程的讀取存取權。 身為工作流程使用者，您可以：
+   * 要求發佈
+   * 檢視 `Manage publication` 按鈕
+   * 排程工作流程並檢視選項 `schedule now` 和 `schedule later`
+
+* **管理員：** 身為使用者的管理員型別，您可以管理資產的整體工作流程步驟。 `Manage publication` 您看得見按鈕。 如果目的地 `publish` ，則您可稍後為工作流程步驟排程資產。
+
+>[!NOTE]
+>
+>若 [!DNL Dynamic Media] ，則會針對以下專案停用工作流程步驟： **工作流程使用者** 和 **管理員** 使用者。
+
 ## 限制與秘訣 {#limitations-and-tips}
 
-* 的選項 [!UICONTROL 管理發布] 僅適用於具有復寫許可權的使用者帳戶。
+* `Manage publication` 至少擁有工作流程讀取許可權的使用者可以使用。
 * 未發佈空白資料夾。
 * 如果您發佈正在處理的資產，只會發佈原始內容。 缺少轉譯。 請等候處理完成，然後在處理完成時發佈或重新發佈資產。
 * 取消發佈複雜資產時，請僅取消發佈資產。 請避免取消發佈引用，因為它們可能會被其他已發佈的資產引用。
-
-**另請參閱**
-
-* [翻譯資產](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [資產支援的檔案格式](file-format-support.md)
-* [搜尋資產](search-assets.md)
-* [連接的資產](use-assets-across-connected-assets-instances.md)
-* [資產報表](asset-reports.md)
-* [中繼資料結構描述](metadata-schemas.md)
-* [下載資產](download-assets-from-aem.md)
-* [管理中繼資料](manage-metadata.md)
-* [搜尋 Facet](search-facets.md)
-* [管理收藏集](manage-collections.md)
-* [大量中繼資料匯入](metadata-import-export.md)

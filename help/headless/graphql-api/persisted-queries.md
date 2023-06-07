@@ -3,10 +3,10 @@ title: 持續性 GraphQL 查詢
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保留 GraphQL 查詢，以期將效能最佳化。用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
+source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 100%
+source-wordcount: '1687'
+ht-degree: 90%
 
 ---
 
@@ -355,7 +355,11 @@ curl -u admin:admin -X POST \
 
 >[!NOTE]
 >
->OSGi 設定僅適用於發佈執行個體。設定存在於編寫執行個體，但被忽略。
+>對於快取控制，OSGi設定僅適用於發佈執行個體。 設定存在於編寫執行個體，但被忽略。
+
+>[!NOTE]
+>
+>此 **持久查詢服務設定** 也用於 [設定查詢回應代碼](#configuring-query-response-code).
 
 發佈執行個體的預設 OSGi 設定：
 
@@ -371,6 +375,26 @@ curl -u admin:admin -X POST \
    {style="table-layout:auto"}
 
 * 如果沒有，OSGi 設定會使用[發佈執行個體的預設值](#publish-instances)。
+
+## 設定查詢回應代碼 {#configuring-query-response-code}
+
+根據預設 `PersistedQueryServlet` 傳送 `200` 會在執行查詢時回應，無論實際結果為何。
+
+您可以 [設定OSGi設定](/help/implementing/deploying/configuring-osgi.md) 的 **持久查詢服務設定** 控制由傳回的狀態碼 `/execute.json/persisted-query` 端點（當持續查詢中發生錯誤時）。
+
+>[!NOTE]
+>
+>此 **持久查詢服務設定** 也用於 [管理快取](#cache-osgi-configration).
+
+欄位 `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`)可依需求定義：
+
+* `false` （預設值）：持續查詢是否成功無關緊要。 此 `/execute.json/persisted-query` 將傳回狀態代碼 `200` 和 `Content-Type` 傳回的標頭將是 `application/json`.
+
+* `true`：端點會傳回 `400` 或 `500` 執行持續查詢時若有任何形式的錯誤則視為適當。 也傳回 `Content-Type` 將為 `application/graphql-response+json`.
+
+   >[!NOTE]
+   >
+   >如需詳細資訊，請參閱https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## 編碼查詢 URL 以供應用程式使用 {#encoding-query-url}
 

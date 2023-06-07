@@ -4,10 +4,10 @@ description: 瞭解如何使用內容片段控制檯來管理您的AEM內容片�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: b351582a405f5c419f3aa386faddccd6ecef3a43
+source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 2%
+source-wordcount: '2071'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->內容片段儲存為 **資產**. 這些許可權的管理主要透過 **內容片段** 主控台，但也可從 **資產** 主控台。
+>內容片段儲存為 **資產**. 這些許可權的管理主要透過 **內容片段** 主控台，但也可從 [資產](/help/assets/content-fragments/content-fragments-managing.md) 主控台。
 
 ## 內容片段主控台 {#content-fragments-console}
 
@@ -166,8 +166,8 @@ ht-degree: 2%
 * 三個點(**...**)下拉式清單可讓您存取其他動作：
    * **更新頁面參考**
       * 這會更新任何頁面引用。
-   * **[快速發佈](#publishing-and-referencing-a-fragment)**
-   * **[管理發佈](#publishing-and-referencing-a-fragment)**
+   * **[快速發佈](/help/assets/manage-publication.md#quick-publish)**
+   * **[管理發佈](/help/assets/manage-publication.md#manage-publication)**
 
 <!--
 This updates any page references and ensures that the Dispatcher is flushed as required. -->
@@ -238,36 +238,62 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 您可以使用檢視和編輯片段的屬性。 [中繼資料](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md) 標籤。
 
-## 發佈和參考片段 {#publishing-and-referencing-a-fragment}
+## 發佈和預覽片段 {#publishing-and-previewing-a-fragment}
+
+您可以將內容片段發佈至：
+
+* 此 **[發佈服務](/help/overview/architecture.md#runtime-architecture)**  — 完整公開存取
+
+* 此 **[預覽服務](/help/overview/architecture.md#runtime-architecture)**  — 在內容完全可用之前進行預覽
+
+   >[!CAUTION]
+   發佈內容片段至 **預覽服務** 只能從 [內容片段主控台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)；使用 **發佈** 動作。
+
+   >[!NOTE]
+   如需預覽環境的詳細資訊，請參閱：
+   * [管理環境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+   * [設定預覽階層的 OSGi 設定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+   * [使用 Developer Console 偵錯預覽](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+
+
+若要使用發佈您的內容片段 **發佈** 的工具列中的選項 [內容片段主控台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)：
 
 >[!CAUTION]
 如果您的片段是根據模型，則您應確保 [模型已發佈](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 如果您發佈的內容片段尚未發佈模型，選擇清單將指出這一點，模型將隨片段一起發佈。
 
-必須發佈內容片段才能在發佈環境中使用。
+1. 從清單中選取一或多個片段。
 
-* 從 **發佈** 的工具列中的選項 [內容片段主控台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
-   * **現在**  — 確認後，片段將立即發佈
-   * **排程**  — 您可以選取片段的發佈日期和時間
+1. 從工具列中選取 **發佈** 然後執行下列任一項以開啟適當的對話方塊：
 
-   必要時，您需要指定 **啟用日期** 以及要發佈的參考。 例如：
+   * **現在**  — 選取 **發佈服務**，或 **預覽服務**；確認後，片段將立即發佈
+   * **排程**  — 除了必要的服務之外，您還可以選擇片段的發佈日期和時間
+
+   必要時，您需要指定要發佈的參考。 依預設，參考也會發佈至預覽服務，以確保內容中沒有中斷。
+例如，對於已排程的發佈請求：
    ![發佈對話方塊](assets/cfm-publish-01.png)
 
-* 從 [內容片段編輯器](#toolbar-actions-in-the-content-fragment-editor)
-   * [**快速發佈**](/help/assets/manage-publication.md#quick-publish)
-   * [**管理發佈**](/help/assets/manage-publication.md#manage-publication)
+1. 確認發佈動作。
 
-此外，當您 [發佈使用片段的頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)；片段將會列在頁面參考中。
+您也可以發佈至 **發佈服務** 從 [內容片段編輯器](#toolbar-actions-in-the-content-fragment-editor) 使用：
+* **快速發佈**
+* **管理發佈**
+
+>[!NOTE]
+在您之後 [發佈使用片段的頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)；片段將會列在頁面參考中。
 
 >[!CAUTION]
 片段發佈和/或參考後，當作者再次開啟片段進行編輯時，AEM將顯示警告。 這是為了警告，片段的變更也會影響參照的頁面。
 
 ## 取消發佈片段 {#unpublishing-a-fragment}
 
-若要取消發佈內容片段，請選取一或多個片段，然後 **取消發佈**.
+若要取消發佈內容片段，請選取一或多個片段，然後 **取消發佈** 在的工具列中 [內容片段主控台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). 您可以選取 **現在** 或 **已排程**.
+
+當相關對話方塊開啟時，您可以選取適當的服務：
+![取消發佈對話方塊](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
-此 **取消發佈** 可用已發佈的片段時，動作將可見。
+此 **取消發佈** 動作只有在已發佈的片段可用時才會顯示。
 
 >[!CAUTION]
 如果片段已從其他片段或頁面引用，您將看到警告訊息，並需要確認您要繼續。

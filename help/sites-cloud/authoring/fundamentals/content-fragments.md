@@ -2,7 +2,7 @@
 title: 內容片段
 description: Adobe Experience Manager as a Cloud Service內容片段可讓您設計、建立、組織和使用獨立於頁面的內容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 7ce05d282d553c5552cd828d08aaf6b7b5fb4e05
+source-git-commit: 3f7c9240a81062c335c33b0e59971de43cacf87b
 workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 7%
@@ -183,7 +183,7 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 
 片段必須發佈，才能用於您已發佈的網頁：
 
-* 片段可以在以下時間後發佈： [在內容片段控制檯中建立片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment).
+* 片段可以在以下時間後發佈： [在內容片段控制檯中建立片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment).
 * 如果 *未發佈的片段* 用於正在發佈的頁面上，此時也可以發佈片段。
 
 ## 匯出內容片段 {#exporting-content-fragments}
