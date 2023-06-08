@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7823f35e0b78584cfb17f0efed7f36e3a2cb408d
+source-git-commit: 0ef684cde1fe4fa47214fddf2c2a75d1743943e2
 workflow-type: tm+mt
-source-wordcount: '4049'
+source-wordcount: '4055'
 ht-degree: 99%
 
 ---
@@ -203,6 +203,9 @@ ht-degree: 99%
       + 最佳做法分析工具 {#best-practices-analyzer}
          + [概觀](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [使用最佳做法分析工具](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
+      + 內容轉換器 {#content-transformer}
+         + [概觀](/help/journey-migration/content-transformer/overview.md)
+         + [使用內容轉換器](/help/journey-migration/content-transformer/using.md)
       + 內容轉移工具 {#content-transfer-tool}
          + [概觀](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [內容轉移工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
