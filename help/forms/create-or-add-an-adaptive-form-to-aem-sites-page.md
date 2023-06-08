@@ -4,9 +4,9 @@ description: 探索如何輕鬆建立或無縫新增調適型表單至您的 AEM
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3182'
 ht-degree: 31%
 
 ---
@@ -277,4 +277,4 @@ AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 �
 * [根據最適化Forms設計核心元件的樣式](using-themes-in-core-components.md)
 * [使用規則編輯器將動態行為新增至最適化Forms](rule-editor.md)
 * [變更調適型表單的版面](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [產生記錄檔案](generate-document-of-record-core-components.md)
+

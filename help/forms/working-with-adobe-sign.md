@@ -5,9 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '3073'
+source-wordcount: '3097'
 ht-degree: 1%
 
 ---
@@ -194,11 +194,7 @@ Adobe Sign協定可以有一或多個收件者。 新增收件者時，您也可
       >
       >確保第一個收件者或唯一收件者（如果有單一收件者）的電子郵件地址與 [!DNL Adobe Sign] 用來設定AEM Cloud Services的帳戶。
 
-   * **[!UICONTROL 收件者驗證方法]：** 指定在開啟Adobe Sign合約之前驗證收件者的方法。 您可以在電話、知識庫、以社交身分為基礎的驗證和以下之間選擇： [政府ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) 的 [!DNL Adobe Acrobat Sign].
-
-      <!-- 
-      For [!DNL Adobe Acrobat Sign for Government] you can choose between phone and knowledge-based authentication.
-      -->
+   * **[!UICONTROL 收件者驗證方法]：** 指定在開啟Adobe Sign合約之前驗證收件者的方法。 您可以在電話、知識庫、以社交身分為基礎的驗證和以下之間選擇： [政府ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) 的 [!DNL Adobe Acrobat Sign]. 對象 [!DNL Adobe Acrobat Sign for Government] 您可以在電話和知識型驗證之間選擇。
    >[!NOTE]
    >
    >    * 依預設，社交身分型驗證會提供使用Facebook、Google和LinkedIn驗證的選項。 您可以聯絡 [!DNL Adobe Sign] 支援啟用其他社交驗證服務提供者。
@@ -314,11 +310,9 @@ Adobe Sign合約ID (agreementId)包含在最適化表單的提交資料中。 �
    * 雲端簽名：使用 [數位ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) 由信任服務提供者代管。
    * Adobe Acrobat或Reader：使用Adobe Acrobat或Reader下載並開啟檔案，以使用智慧卡、USB權杖或檔案式數位ID簽名。
 
-      <!-- 
       >[!NOTE]
       >
-      > * [!DNL Adobe Acrobat Sign for Government] can use Digitial Signature but can not use Cloud Signatures in the current version.
-      -->
+      > 數位簽名也適用於 [!DNL Adobe Acrobat Sign for Government] 但您無法使用雲端簽名來套用它。
    將雲端簽名欄位新增至最適化表單後，執行以下步驟以完成設定程式：
 
    * [為最適化表單啟用Adobe Sign](#enableadobsignforanadaptiveform)
