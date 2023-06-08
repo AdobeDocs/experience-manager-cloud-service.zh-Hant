@@ -3,10 +3,9 @@ title: 管理工作流程例項
 description: 瞭解如何管理工作流程例項
 feature: Administering
 role: Admin
-exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 0a87842923298be1a801a85519ac85fae5ef7933
+source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -27,10 +26,19 @@ ht-degree: 0%
 ## 監控工作流程例項狀態 {#monitoring-the-status-of-workflow-instances}
 
 1. 使用導覽選取 **工具**，則 **工作流程**.
-1. 選取 **執行個體** 以顯示目前進行中的工作流程例項清單。
+1. 選取 **執行個體** 以顯示目前進行中的執行中工作流程例項清單。
+1. 在頂端欄的右角，工作流程例項顯示 **執行中的工作流程**， **狀態**、和 **詳細資料**.
+1. **執行中的工作流程** 顯示執行中的工作流程數目及其狀態。 例如，在指定的影像中，顯示的數字為 **執行中的工作流程** 和 **狀態** AEM執行個體的。
+   ![status-health](/help/sites-cloud/administering/assets/status-healthy.png)
+   ![status-unhealth](/help/sites-cloud/administering/assets/status-unhealthy.png)
+1. 對象 **狀態詳細資料** 在工作流程例項中，按一下 **詳細資料**，以顯示 **執行中的工作流程例項數目**， **已完成的工作流程例項**， **中止的工作流程例項**， **失敗的工作流程執行個體**、等等。 例如，底下是指定的影像，顯示 **狀態詳細資料** 替換為 **狀態：狀況良好** 和 **狀態：不正常**.
+   ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
-   ![wf-97](/help/sites-cloud/administering/assets/wf-97.png)
+   ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
+   >[!NOTE]
+   >
+   > 若要維持工作流程執行個體正常運作，請遵循以下的最佳實務： [定期清除工作流程例項](#regular-purging-of-workflow-instances) 或 [工作流程最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=en).
 
 ## 搜尋工作流程例項 {#search-workflow-instances}
 
@@ -66,7 +74,7 @@ ht-degree: 0%
    >[!NOTE]
    >
    >
-   >為了終止或中止工作流程，工作流程必須處於等待使用者介入的狀態，例如在「參與者步驟」中。 嘗試中止目前正在執行工作的工作流程（執行中的作用中執行緒）可能不會產生預期的結果。
+   >若要終止或中止工作流程，工作流程必須處於等待使用者介入的狀態，例如「參與者步驟」。 嘗試中止目前正在執行工作的工作流程（執行中的作用中執行緒）可能不會產生預期的結果。
 
 
 ## 檢視已封存的工作流程 {#viewing-archived-workflows}
@@ -75,14 +83,15 @@ ht-degree: 0%
 
 1. 選取 **封存** 顯示成功完成的工作流程例項清單。
 
-   ![wf-98](/help/sites-cloud/administering/assets/wf-98.png)
+   ![archived-instances](/help/sites-cloud/administering/assets/archived-instances.png)
 
    >[!NOTE]
+   >
+   >
    >中止狀態會被視為成功終止，因為它是使用者動作的結果；例如：
    >
    >* 使用 **終止** 動作
-   >* 當受工作流程約束的頁面被（強制）刪除時，工作流程將終止
-
+   >* 當受工作流程約束的頁面被（強制）刪除時，工作流程即終止。
 
 
 1. 選取特定專案，然後 **開啟歷史記錄** 若要檢視更多詳細資料：
@@ -95,7 +104,7 @@ ht-degree: 0%
 
 * **失敗詳細資料**
 開啟視窗以顯示 
-**失敗訊息**， **步驟** 和 **失敗棧疊**.
+**失敗訊息**、 **步驟和 **失敗棧疊**.
 
 * **開啟歷史記錄**
 顯示工作流程記錄的詳細資訊。
@@ -111,7 +120,7 @@ ht-degree: 0%
 1. 選取 **失敗** 以顯示未成功完成的工作流程例項清單。
 1. 選取特定專案，然後選取適當的動作：
 
-   ![wf-47](/help/sites-cloud/administering/assets/wf-47.png)
+![工作流程失敗](/help/sites-cloud/administering/assets/workflow-failure.png)
 
 ## 定期清除工作流程例項 {#regular-purging-of-workflow-instances}
 
@@ -119,7 +128,7 @@ ht-degree: 0%
 
 設定 **AdobeGranite工作流程清除設定** 若要根據工作流程執行個體的年齡和狀態來永久刪除工作流程執行個體，請執行下列步驟： 您也可以清除所有模型或特定模型的工作流程例項。
 
-您也可以建立服務的多個組態，以清除滿足不同條件的工作流程執行個體。 例如，建立一個設定，當特定工作流程模型的執行個體執行時間比預期時間長很多時，清除這些執行個體。 建立另一個設定，在特定天數後清除所有已完成的工作流程，以將存放庫的大小降至最低。
+您也可以建立服務的多個組態，以清除滿足不同條件的工作流程執行個體。 例如，建立一個設定，當特定工作流程模型的執行個體執行時間比預期時間長很多時，清除這些執行個體。 建立另一個設定，在幾天後清除所有已完成的工作流程，以將存放庫的大小降至最低。
 
 若要設定服務，您可以設定OSGi組態檔，請參閱 [OSGi設定檔案](/help/implementing/deploying/configuring-osgi.md). 下表說明這兩種方法所需的特性。
 
@@ -191,7 +200,7 @@ ht-degree: 0%
 
 ### 外部儲存空間中中繼資料的API {#apis-for-metadata-external-storage}
 
-若要在外部儲存變數，您必須實作工作流程公開的API。
+若要將變數儲存在外部，您必須實作工作流程公開的API。
 
 UserMetaDataPersistenceContext
 
