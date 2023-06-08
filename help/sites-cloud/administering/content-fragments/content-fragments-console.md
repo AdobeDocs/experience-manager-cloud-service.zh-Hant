@@ -5,7 +5,7 @@ landing-page-description: 瞭解如何從內容片段控制檯管理內容片段
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
+source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 5%
@@ -127,7 +127,7 @@ ht-degree: 5%
 * **預覽**
    * 僅供參考：
       * **同步中**：內容片段在上同步 **作者** 和 **預覽** 服務。
-      * **不同步**：內容片段在上的不同步 **作者** 和****預覽** 服務。 您需要 **發佈** 至 **預覽** 以確保兩個執行個體恢復同步。
+      * **不同步**：內容片段在上的不同步 **作者** 和 **預覽** 服務。 您需要 **發佈** 至 **預覽** 以確保兩個執行個體恢復同步。
       * 空白：內容片段不存在於 **預覽** 服務。
 * **修改時間**
    * 僅供參考
