@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.6.0 �
 description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.6.0 的發行說明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 80a5f58119dc304161d324491cd65c50e981ccd4
+source-git-commit: 6dac8611cba8d924eb4509e699350be5b159e3d2
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 37%
+source-wordcount: '238'
+ht-degree: 33%
 
 ---
 
@@ -25,6 +25,7 @@ AEMas a Cloud Service中的Cloud Manager版本2023.6.0發行日期是2023年6月
 
 ## 新增功能 {#what-is-new}
 
+* 除了主要區域之外，客戶還可以購買額外的次要發佈區域，從而帶來減少延遲和提高可用性的好處。 注意：某些限制可能適用。
 * 建立新時 [程式或環境，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 名稱現在限製為僅接受英數字元和一組有限的特殊字元。
 * 恢復時 [生產管道，](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 確認對話方塊現在顯示在核准步驟中。
 * 對於 **[客戶功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)** 和 **[自訂UI測試](/help/implementing/cloud-manager/ui-testing.md)** 管道步驟，新的 `INCOMPLETE` status現在為可能，這表示此類測試不存在，因此未執行。
