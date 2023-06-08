@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 66c77dd90fb220993e113fb3c4cfbaec879c1dee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '181'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -29,8 +29,8 @@ ht-degree: 85%
 
 ### 已修正的問題 {#fixed-issues-12142}
 
-- SITES-13636 — 修正影像和輪播網站clientlib的clientlib相依性遺失的問題。
-- SITES-13475 — 修正2.22.10核心元件版本中PanelContainer.js的回溯相容性中斷問題。
+- SITES-13636 - 修正圖像的 clientlib 相依性和輪播網站 clientlib 缺失的問題。
+- SITES-13475 - 修正 2.22.10 核心元件版本中 PanelContainer.js 的回溯相容性中斷問題。
 
 ### 內嵌技術 {#embedded-tech-12142}
 
