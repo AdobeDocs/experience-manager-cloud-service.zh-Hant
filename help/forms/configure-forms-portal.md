@@ -2,7 +2,7 @@
 title: 如何在Experience Manager Sites頁面上建立Forms入口網站
 description: 瞭解如何在AEM Sites頁面上建立Forms入口網站，並使用現成可用的核心元件。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: a243664302c75fcb3125d68838353bd87cf24de3
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 0%
@@ -39,8 +39,11 @@ AEM Forms提供下列立即可用的入口網站元件：
 * 連結：此元件可讓您建立頁面上任何位置的表單連結。
 
 您可以 [匯入現成的Forms Portal元件](#import-forms-portal-components-aem-archetype) 從AEM專案原型。 匯入之後，請執行下列設定：
+
 * [設定外部儲存裝置](#configure-azure-storage-adaptive-forms)
+
 * [啟用Forms Portal元件](#enable-forms-portal-components)
+
 * [設定Forms Portal元件](#configure-forms-portal-components)
 
 ## 匯入Forms入口網站元件 {#import-forms-portal-components-aem-archetype}

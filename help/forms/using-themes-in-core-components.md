@@ -2,7 +2,7 @@
 title: 建立和使用主題
 description: 您可以使用主題來風格化最適化表單，並使用核心元件提供視覺身分。 您可以在任何數量的Adaptive Forms中共用主題。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 0%
@@ -49,6 +49,7 @@ ht-degree: 0%
 * 您應擁有 [Git基本知識](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git) 和Cloud ServiceGit存放庫。
 
 若要自訂畫布主題：
+
 1. [原地複製畫布主題](#1-download-canvas-theme-download-canvas-theme)
 1. [瞭解主題的結構](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [變更package.json和package_lock.json中的名稱](#changename-packagelock-packagelockjson)
