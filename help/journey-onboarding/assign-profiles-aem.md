@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: fd14d9f88fed4ef0f90b5dd0c92c53b1a298bd76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '805'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
->title="指派AEM產品設定檔"
->abstract="您無權使用Experience Manager Assets。 請連絡您的管理員。"
+>title="指派 AEM 產品設定檔"
+>abstract="您無權使用 Experience Manager Assets。 請連絡您的管理員。"
 
 在[上線歷程](overview.md)的這一部分，您將了解如何使用 AEM 產品設定檔向您的團隊授與對 AEM 的存取權。
 
