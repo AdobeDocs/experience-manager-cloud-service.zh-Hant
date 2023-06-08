@@ -4,15 +4,18 @@ description: 探索如何輕鬆建立或無縫新增調適型表單至您的 AEM
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3196'
 ht-degree: 31%
 
 ---
 
 
 # 建立或新增調適型表單至 AEM Sites 頁面 {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+|警告|[!BADGE 搶鮮版檔案]{type=Caution tooltip="黃色狀態"}
+<span class="preview"> 這是搶鮮版說明檔案，可能會有變動。</span>
 
 透過 AEM Forms，您可以將調適型表單無縫整合到您的網頁中。 這可讓您的訪客方便填寫和提交表單，而無需離開他們所在的頁面。 這麼，他們便可毫不費力地使用網站的其他元素，同時積極與表單進行互動。
 
@@ -122,7 +125,7 @@ AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 �
 
 +++
 
-+++ 啟用 **[!UICONTROL 調適型表單容器]
++++ 啟用最適化Forms容器
 
 若要啟用範本原則中的[!UICONTROL 調適型表單容器]元件，需執行以下步驟：
 
@@ -246,7 +249,7 @@ AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 �
 
 ### 使用Forms入口網站草稿預填服務 {#forms-portal-prefill-service}
 
-您可以使用Forms Portal草稿預填服務，使用已儲存的最適化表單草稿預填表單的欄位。 使用Forms入口網站草稿預填服務前，請確定 [最適化Forms Portal元件已啟用和設定 ](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) 為您的環境而設計。
+您可以使用Forms Portal草稿預填服務，使用已儲存的最適化表單草稿預填表單的欄位。 使用Forms Portal草稿預填服務前，請確定 [最適化Forms Portal元件已啟用和設定](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) 為您的環境而設計。
 
 1. 開啟包含最適化表單的AEM Sites頁面編輯器或體驗片段。
 1. 開啟頁面的屬性並設定雲端設定。
