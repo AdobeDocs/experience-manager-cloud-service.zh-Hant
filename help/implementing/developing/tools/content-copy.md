@@ -1,13 +1,13 @@
 ---
 title: 內容複製工具
 description: 內容複製工具可讓使用者根據需求將可變內容從其AEMas a Cloud Service生產環境複製到較低環境，以用於測試目的。
-source-git-commit: 4a5470ae8fe5a8e7f615009bf5f6b180aee4669b
+exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
+source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 64%
+source-wordcount: '1227'
+ht-degree: 60%
 
 ---
-
 
 # 內容複製工具 {#content-copy}
 
@@ -55,7 +55,7 @@ ht-degree: 64%
 
    ![內容集](assets/content-sets.png)
 
-1. 於 **詳細資料** 標籤中，為內容集提供名稱和說明，然後點選或按一下 **繼續**.
+1. 在精靈的&#x200B;**詳細資訊**&#x200B;索引標籤上，為內容集提供名稱和描述，然後按下或點擊&#x200B;**繼續**。
 
    ![內容詳細資料](assets/add-content-set-details.png)
 
@@ -102,6 +102,9 @@ ht-degree: 64%
 
 建立內容集後，您可以使用它來複製內容。依照下列步驟複製內容。
 
+>[!NOTE]
+> 不應在環境上起始內容複製 [內容轉移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 作業正在該環境中執行。
+
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和程序。
 
 1. 從「**概觀**」頁面瀏覽到「**環境**」畫面。
@@ -110,7 +113,7 @@ ht-degree: 64%
 
 1. 從控制台選擇一個內容集，然後從省略號選單選擇&#x200B;**複製內容**。
 
-   ![內容副本](assets/copy-content.png)
+   ![內容複製](assets/copy-content.png)
 
    >[!NOTE]
    >
@@ -159,7 +162,7 @@ ht-degree: 64%
 | 完成 | 內容複製作業成功完成 |
 | 已取消 | 使用者在啟動內容複製操作後將其取消 |
 
-### 取消復製程式 {#cancelling}
+### 取消復製程式 {#canceling}
 
 如果您在啟動內容復製作業後需要中止該作業，您可以選擇取消該作業。
 
@@ -182,7 +185,7 @@ ht-degree: 64%
 * 跨程序內容複製是不可能的。
 * 在同一環境中運行並發內容複製作業是不可能的。
 * 每個內容集最多可以指定 50 個路徑。排除的路徑沒有限制。
-* 內容複製工具不應用作複製或鏡像工具，因為它無法追蹤來源上移動或刪除的內容。
-* 內容複製工具沒有版本控制能力，不能自動檢測自上次內容複製作業以來在內容集來源環境上修改的內容或新建立的內容。
+* 內容複製工具不應作為複製或映象工具使用，因為它無法追蹤來源上已移動或刪除的內容。
+* 內容複製工具沒有版本設定功能，且自上次內容復製作業以來，無法自動在內容集中的來源環境中偵測修改的內容或新建立的內容。
    * 如果您只想使用自上次內容復製作業以來發生的內容變更來更新目標環境，則需要建立內容集，並在自上次內容復製作業以來進行變更的來源執行個體上指定路徑。
 * 版本資訊不包含在內容副本中。
