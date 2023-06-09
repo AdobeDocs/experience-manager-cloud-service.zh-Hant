@@ -4,10 +4,10 @@ description: 探索如何輕鬆建立或無縫新增調適型表單至您的 AEM
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
 workflow-type: tm+mt
-source-wordcount: '3061'
-ht-degree: 27%
+source-wordcount: '3073'
+ht-degree: 24%
 
 ---
 
@@ -136,14 +136,15 @@ AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 �
 
 ## 建立最適化表單 {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
-您可以直接在 AEM Sites 頁面或體驗片段中從頭開始建立全新的表單，根據您的要求和設計偏好進行專門定制。對於單次使用的表單，建議直接撰寫到 AEM Sites 頁面，而體驗片段非常適合需要在網站多個頁面上重複使用的表單。
+您可以直接在AEM Sites頁面或體驗片段中，從頭開始建立全新的表單，根據您的需求和設計偏好設定進行量身打造。 對於單次使用的表單，建議直接撰寫到AEM Sites頁面，而體驗片段則適用於需要跨網站上多個頁面重複使用的表單。
 
 * [在 AEM Sites 頁面建立表單](#create-an-adaptive-form-in-sites-editor)
 * [在體驗片段中建立表單](#create-an-adaptive-form-in-experience-fragment)
+* [將AEM Sites頁面中的自適應表單轉換為體驗片段](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)
 
 ### 在 AEM Sites 頁面建立表單 {#create-an-adaptive-form-in-sites-editor}
 
-您可以使用 AEM Sites 編輯器中的調適型表單容器元件來建立自訂表單。 該元件允許您以拖放表單元件的方式來建立表單。 表單元件是以核心元件為主。 您可以根據組織的要求輕鬆自訂這一些。
+您可以使用AEM頁面編輯器中的調適型表單容器元件來建立自訂表單。 該元件允許您以拖放表單元件的方式來建立表單。 表單元件是以核心元件為主。 您可以根據組織的要求輕鬆自訂這一些。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -169,7 +170,7 @@ AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 �
 
 接下來，您 [設定提交動作](#configure-submit-action-for-form) 和進階屬性。
 
-### 將AEM Sites頁面中的自適應表單轉換為體驗片段
+### 將AEM Sites頁面中的自適應表單轉換為體驗片段 {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
 您可以將網站頁面編輯器中的現有最適化表單轉換為體驗片段，以便在多個頁面或網站中重複使用表單。
 

@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 39%
@@ -76,10 +76,6 @@ ht-degree: 39%
 
 ### [!DNL Forms] 發行前版本的功能 {#prerelease-features-forms}
 
-* [增強的Adobe Acrobat Sign整合與合規性](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms現在與適用於政府的Adobe Acrobat Sign整合，針對政府相關帳戶（政府部門及機構）提交的最適化表格內容，提供電子簽章高階的合規與安全性。
-
-  與適用於政府的Adobe Acrobat Sign整合可讓我們的合作夥伴和政府客戶在Adaptive Forms中使用電子簽章，處理某些最關鍵和敏感的業務線。 此額外的安全層可確保所有電子簽章完全符合FedRAMP Moderate合規性，讓我們的政府客戶高枕無憂。
-
 * [AEM頁面編輯器中的最適化Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您現在可以使用AEM頁面編輯器快速建立多個表單並新增至您的網站頁面。 此功能可讓內容作者運用最適化表單元件的功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面內建立順暢的資料擷取體驗。 您可以：
 
    * 建立最適化表單，方法是拖放表單元件至AEM Sites編輯器或體驗片段中的最適化Forms容器元件。
@@ -87,6 +83,10 @@ ht-degree: 39%
    * 新增多個表單至Sites頁面，精簡使用者體驗並提供更大的彈性。
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+
+* [增強的Adobe Acrobat Sign整合與合規性](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms現在與適用於政府的Adobe Acrobat Sign整合，針對政府相關帳戶（政府部門及機構）提交的最適化表格內容，提供電子簽章高階的合規與安全性。
+
+  與適用於政府的Adobe Acrobat Sign整合可讓我們的合作夥伴和政府客戶在Adaptive Forms中使用電子簽章，處理某些最關鍵和敏感的業務線。 此額外的安全層可確保所有電子簽章完全符合FedRAMP Moderate合規性，讓我們的政府客戶高枕無憂。
 
 * 增強規則編輯器中自訂錯誤處理常式的錯誤處理功能：您現在可以叫用自訂函式（使用使用者端程式庫）來回應外部服務傳回的錯誤，並為一般使用者提供量身打造的回應，或針對服務傳回的錯誤採取特定動作。 例如，您可以在後端叫用自訂工作流程來取得特定錯誤代碼，或通知客戶服務已關閉。
 
