@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 39%
@@ -57,7 +57,7 @@ ht-degree: 39%
    * 建立新版本
    * 建立資產關聯或取消關聯
 
-      您不需要導覽至資產位置並檢視其屬性，即可執行這些作業。
+     您不需要導覽至資產位置並檢視其屬性，即可執行這些作業。
 
 * 色彩搜尋Facet可用性改善 — 現在可編輯色彩值的輸入欄位，且搜尋結果僅會在您退出檢色器時更新。
 
@@ -78,21 +78,21 @@ ht-degree: 39%
 
 * [增強的Adobe Acrobat Sign整合與合規性](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms現在與適用於政府的Adobe Acrobat Sign整合，針對政府相關帳戶（政府部門及機構）提交的最適化表格內容，提供電子簽章高階的合規與安全性。
 
-   與適用於政府的Adobe Acrobat Sign整合可讓我們的合作夥伴和政府客戶在Adaptive Forms中使用電子簽章，處理某些最關鍵和敏感的業務線。 此額外的安全層可確保所有電子簽章完全符合FedRAMP Moderate合規性，讓我們的政府客戶高枕無憂。
+  與適用於政府的Adobe Acrobat Sign整合可讓我們的合作夥伴和政府客戶在Adaptive Forms中使用電子簽章，處理某些最關鍵和敏感的業務線。 此額外的安全層可確保所有電子簽章完全符合FedRAMP Moderate合規性，讓我們的政府客戶高枕無憂。
 
-* [AEM Sites編輯器中的最適化Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您現在可以使用AEM Sites編輯器快速建立多個表單並新增至您的網站頁面。 此功能可讓內容作者運用最適化表單元件的功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面內建立順暢的資料擷取體驗。 您可以：
+* [AEM頁面編輯器中的最適化Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您現在可以使用AEM頁面編輯器快速建立多個表單並新增至您的網站頁面。 此功能可讓內容作者運用最適化表單元件的功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面內建立順暢的資料擷取體驗。 您可以：
 
    * 建立最適化表單，方法是拖放表單元件至AEM Sites編輯器或體驗片段中的最適化Forms容器元件。
    * 在AEM Sites編輯器中使用最適化Forms精靈來建立獨立於任何Sites頁面的表單，為您提供在多個頁面中重複使用這類表單的自由。
    * 新增多個表單至Sites頁面，精簡使用者體驗並提供更大的彈性。
 
-      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 * 增強規則編輯器中自訂錯誤處理常式的錯誤處理功能：您現在可以叫用自訂函式（使用使用者端程式庫）來回應外部服務傳回的錯誤，並為一般使用者提供量身打造的回應，或針對服務傳回的錯誤採取特定動作。 例如，您可以在後端叫用自訂工作流程來取得特定錯誤代碼，或通知客戶服務已關閉。
 
-   這有助於改善整體錯誤處理能力，因為引進了標準化的錯誤回應，可回溯相容於OOTB錯誤處理常式，並擁有更大的彈性和控制能力。
+  這有助於改善整體錯誤處理能力，因為引進了標準化的錯誤回應，可回溯相容於OOTB錯誤處理常式，並擁有更大的彈性和控制能力。
 
-## Headless 最適化表單早期採用者計劃 {#forms-early-adopter}
+### Headless 最適化表單早期採用者計劃 {#forms-early-adopter}
 
 使用 Headless 最適化表單讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
 
