@@ -2,10 +2,10 @@
 title: 存取存放庫
 description: 了解如何使用 Cloud Manager 中的自助 Git 帳戶管理存取和管理您的 Git 存放庫。
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager 可以使用管道卡上顯眼的&#x200B;**存取存放庫資訊**
    * Git 使用者名稱。
    * Git 密碼，其值在按一下&#x200B;**產生密碼**&#x200B;按鈕時顯示。
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
+   ![存放庫資訊檢視](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
 使用這些憑證，使用者可以複製存放庫的本機副本，並在該本機存放庫中進行變更，且在準備好後可以將任何計劃碼變更提交回 Cloud Manager 中的遠端計劃碼存放庫。
 

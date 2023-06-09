@@ -2,9 +2,9 @@
 title: 複製
 description: 散佈和疑難排解復寫。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1341'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling內容發佈](https://sl
 
 您可以透過選擇來觸發樹狀結構復寫 **工具 — 工作流程 — 模型** 並複製 **發佈內容樹狀結構** 現成的工作流程模型，如下所示：
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![發佈內容樹狀工作流程卡片](/help/operations/assets/publishcontenttreeworkflow.png)
 
 請勿修改或叫用原始模型。 相反，請確保先複製模型，然後修改或呼叫該副本。
 

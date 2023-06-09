@@ -2,10 +2,10 @@
 title: 郵件服務的 OAuth2 支援
 description: Adobe Experience Manager as a Cloud Service 對郵件服務的 Oauth2 支援
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 4997c506e1cd467255fe11cb596fb64d74a511af
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '695'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 1. 在搜尋列中搜尋 **Azure Active Directory**，然後按一下結果。或者，您可以直接瀏覽到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. 按一下「**應用程式註冊** - **新註冊**」
 
-   ![](assets/oauth-outlook1.png)
+   ![開始應用程式註冊程式](assets/oauth-outlook1.png)
 
 1. 根據您的要求填寫資訊，然後按一下「**註冊**」
 1. 前往新建的應用程式，然後選取「**API 權限**」
@@ -135,8 +135,7 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
    * `email`
    * `profile`
 1. 建立 OSGI 屬性檔案 `called com.day.cq.mailer.DefaultMailService.cfg.json`
-(在 
-`/apps/<my-project>/osgiconfig/config` 下)，並使用下列語法：
+(在`/apps/<my-project>/osgiconfig/config` 下)，並使用下列語法：
 
    ```
    {
