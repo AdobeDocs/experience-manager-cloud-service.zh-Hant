@@ -2,9 +2,9 @@
 title: 與 Adobe Target 整合時使用的 IMS 設定
 description: 瞭解與Adobe Target整合時使用的IMS設定
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '863'
 ht-degree: 5%
 
 ---
@@ -72,9 +72,9 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
 1. 將會顯示您擁有的任何專案。 選取 **建立新專案**  — 位置和使用將取決於：
 
    * 如果您還沒有任何專案， **建立新專案** 將會是底部中心。
-      ![建立新專案 — 第一個專案](assets/integration-target-ims-02.png)
+     ![建立新專案 — 第一個專案](assets/integration-target-ims-02.png)
    * 如果您已有專案，這些專案將會列示於 **建立新專案** 將位於右上方。
-      ![建立新專案 — 多個專案](assets/integration-target-ims-03.png)
+     ![建立新專案 — 多個專案](assets/integration-target-ims-03.png)
 
 
 1. 選取 **新增至專案** 後面接著 **API**：
@@ -87,7 +87,7 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
    >
    >如果您已訂閱Adobe Target，但未看到它列出，則應檢視 [必要條件](#prerequisites).
 
-   ![](assets/integration-target-ims-12.png)
+   ![選取Adobe Target](assets/integration-target-ims-12.png)
 
 1. **上傳您的公開金鑰**，完成後，請繼續 **下一個**：
 
@@ -105,7 +105,6 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
    >
    >* Adobe Target Standard — 僅限 **預設工作區** 可用
    >* Adobe Target Premium — 列出所有可用的工作區，如下所示
-
 
    ![選取產品設定檔並儲存設定的API](assets/integration-target-ims-16.png)
 
@@ -185,7 +184,6 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
    例如：
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
-
 
 1. 選取您的設定。
 1. 選取 **檢查健康狀態** （從工具列），後面接著 **Check**.
