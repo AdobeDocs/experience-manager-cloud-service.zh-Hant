@@ -7,7 +7,7 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
 source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1017'
 ht-degree: 100%
 
@@ -193,8 +193,7 @@ ht-degree: 100%
    >
    >  若要尋找你的 `${appId}` (在 `[AEM Repository Folder]/all/pom.xml` 檔案內)，搜尋 `-packages/application/install` 一詞。在 `-packages/application/install` 一詞以前的文字是您的 `${appId}`。 例如，以下程式碼 `myheadlessform` 是 `${appId}`。
    >
-   >   
-   ```
+   >   ```
    >             <embedded>
    >                     <groupId>com.myheadlessform</groupId>
    >                     <artifactId>myheadlessform.ui.apps<artifactId>
