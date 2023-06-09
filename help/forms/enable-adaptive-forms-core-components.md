@@ -7,7 +7,7 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
 source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 100%
 

@@ -68,7 +68,7 @@ AEM as a Cloud Service 有多種類型的通知，但只有一部分出現在行
 |---|---|---|---|
 | 操作事件 | 需要立即採取行動的嚴重事件 | 指派給「事件通知 - Cloud Service」產品設定檔的使用者 | X |
 | 主動建議 | 應該計劃的最佳化 | 指派給「主動通知 - Cloud Service」產品設定檔的使用者 | X |
-| Cloud Manager 管道狀態 | 有關管道狀態的資訊 | 具有企業所有者、方案管理員或部署管理員角色的使用者，[Experience Cloud 偏好設定](https://experience.adobe.com/preferences)中的「其他」核取方塊已選取，如[這裡所描述](/help/implementing/cloud-manager/notifications.md)。 |  |
+| Cloud Manager 管道狀態 | 有關管道狀態的資訊 | 具有企業所有者、方案管理員或部署管理員角色的使用者，[Experience Cloud 偏好設定](https://experience.adobe.com/preferences)中的「其他」核取方塊已選取，如[這裡所描述](/help/implementing/cloud-manager/notifications.md)。 |   |
 
 ## 支援的通知類型 {#supported-notification-types}
 
