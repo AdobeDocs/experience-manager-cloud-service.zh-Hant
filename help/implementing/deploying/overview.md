@@ -3,10 +3,10 @@ title: 部署至 AEM as a Cloud Service
 description: 部署至 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
+source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
 workflow-type: tm+mt
-source-wordcount: '3541'
-ht-degree: 89%
+source-wordcount: '3542'
+ht-degree: 88%
 
 ---
 
@@ -115,7 +115,7 @@ ht-degree: 89%
 >[!NOTE]
 >內容套件部署到所有環境類型 (開發、預備、生產)。不可能將部署限制在特定環境中。此限制的目的是在確保可以選擇對自動執行進行測試執行。特定於環境的內容需要透過 [套件管理員](/help/implementing/developing/tools/package-manager.md) 手動安裝
 
-此外，在應用可變內容套件變更後，也沒有回復這些變更的機制。如果客戶偵測到問題，他們可以選擇在下一個程代碼版本中進行修復，或者採取最後手段，將整個系統還原到部署前的某個時間點。
+此外，在套用可變內容套件變更後，沒有機制可復原這些變更。 如果客戶偵測到問題，他們可以選擇在下一個程代碼版本中進行修復，或者採取最後手段，將整個系統還原到部署前的某個時間點。
 
 任何包含的第 3 方套件都必須驗證為與 AEM as a Cloud Service 相容，否則包含該套件會導致部署失敗。
 
@@ -130,9 +130,9 @@ ht-degree: 89%
 * 建立/刪除使用者
 * 新增 ACL
 
-   >[!NOTE]
-   >
-   >ACL 的定義要求已存在的節點結構。因此，前面必須要有建立路徑陳述式。
+  >[!NOTE]
+  >
+  >ACL 的定義要求已存在的節點結構。因此，前面必須要有建立路徑陳述式。
 
 * 新增路徑 (例如根資料夾結構)
 * 新增 CND (節點類型定義)

@@ -2,10 +2,10 @@
 title: 企業開發團隊設定
 description: 了解如何設定和擴展您的企業開發團隊，並了解 AEM as a Cloud Service 如何支援您的開發流程。
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: a31c3693c9b2af9bd7f9d7f1f6fb0a61a4411df0
+source-git-commit: f19c4c71cf3b70331b9ccc56adf0bfd31e7edb2c
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 100%
+source-wordcount: '1445'
+ht-degree: 97%
 
 ---
 
@@ -98,7 +98,7 @@ Cloud Manager 的 Git 存放庫中的設定有兩個分支。
 
 相反，如果沒有這樣的系統，因為每個團隊都可以單獨部署，所以單個團隊的更新可能會導致生產穩定性問題。此外，它需要協調和規劃停機時間來推出更新。隨著團隊數量增加，協調工作將變得更加複雜且很快會變得難以管理。
 
-如果在品質門檻中偵測到問題則不會影響生產，且無需 Adobe 人員介入即可偵測和修復問題。如果沒有 Cloud Service 且沒有總是測試整個部署，部分部署可能會造成中斷，需要要求復原甚至從備份中完全還原。部分測試還可能導致其他問題，而這些問題需要在事後由 Adobe 人員協調和支援來解決。
+如果在品質門檻中偵測到問題則不會影響生產，且無需 Adobe 人員介入即可偵測和修復問題。如果沒有Cloud Service且沒有總是測試整個部署，部分部署可能會導致中斷，需要請求復原甚至從備份中完全還原。 部分測試還可能導致其他問題，而這些問題需要在事後由 Adobe 人員協調和支援來解決。
 
 >[!TIP]
 >

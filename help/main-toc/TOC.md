@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
+source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
 workflow-type: tm+mt
-source-wordcount: '4064'
+source-wordcount: '4079'
 ht-degree: 99%
 
 ---
@@ -73,6 +73,7 @@ ht-degree: 99%
    + AEMaaCS 維護版本發行說明{#maintenance}
       + [目前維護版本發行說明](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [2023.4.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [2023.2.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.2.0.md)
          + [2023.1.0 維護版本發行說明](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Cloud Manager 發行說明 {#cloud-manager}
@@ -546,6 +547,7 @@ ht-degree: 99%
             + [為最適化表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
             + [為最適化表單產生記錄文件](/help/forms/generate-document-of-record-core-components.md)
             + [建立最適化表單 - AEM Sites 頁面的核心元件](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [使用機器翻譯或人工翻譯來翻譯最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [設定重新導向頁面或感謝訊息](/help/forms/configure-redirect-page-or-thank-you-message.md)
       + 編寫最適化表單 - 基礎元件{#authoring-adaptive-forms-foundation-components}
          + 將您的 PDF forms 轉換為最適化表單 {#afcs}
