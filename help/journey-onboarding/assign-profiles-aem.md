@@ -4,10 +4,10 @@ description: 設定雲端資源後，您需要使用 AEM 產品設定檔授與�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: fd14d9f88fed4ef0f90b5dd0c92c53b1a298bd76
+source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 100%
+source-wordcount: '899'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,12 @@ ht-degree: 100%
 * `AEM Users` - 該群組包括執行日常內容編寫任務的一般使用者。
 * `AEM Administrators` - 該群組包括負責進階功能或 AEM 的使用者。
 
-指派給 AEM 產品設定檔的每個使用者也將取得對 Cloud Manager 的唯讀存取權。可以透過其他產品設定檔授與對 Cloud Manager 的寫入權限。
+>[!NOTE]
+>
+>指派給 AEM as a Cloud Service 產品設定檔的每個使用者透過&#x200B;**雲端管理員使用者**&#x200B;角色具有對 Cloud Manager 的唯讀存取權。
+>
+>使用者具有 **Cloud Manager** 使用者角色只能使用「程式」選單選項登入Cloud Manager並瀏覽至AEM作者環境（如果存在）。 **雲端管理員使用者**角色不足以存取程序詳細資料。 如果需要此類存取權，系統管理員必須授予使用者其他角色。
+>請參閱 [下方的「其他資源」區段](#additional-resources) 以取得Cloud Manager使用者角色的詳細資訊。
 
 >[!CAUTION]
 >
@@ -108,6 +113,7 @@ ht-degree: 100%
 
 如果您想要此上線歷程以外的內容，以下是您可選擇的其他資源。
 
+* [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md) - 了解 AEM as a Cloud Service 團隊和產品設定檔如何能夠授與和限制您的授權 Adobe 解決方案的存取權。
 * [在 Admin Console 中管理產品和使用者存取權](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - 了解如何使用 Admin Console 來管理使用存取權。
-* [設定 AEM 存取權逐步說明](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=zh-Hant) - 查看這個簡短的逐步說明，了解如何在 Admin Console 中設定 Adobe IMS 使用者、使用者群組和產品設定檔。
+* [設定 AEM 存取權逐步說明](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - 查看這個簡短的逐步說明，了解如何在 Admin Console 中設定 Adobe IMS 使用者、使用者群組和產品設定檔。
 
