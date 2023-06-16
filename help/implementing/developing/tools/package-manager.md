@@ -4,9 +4,9 @@ description: 瞭解AE的基本知識；使用封裝管理器管理封裝。
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
 workflow-type: tm+mt
-source-wordcount: '3585'
+source-wordcount: '3788'
 ht-degree: 4%
 
 ---
@@ -44,6 +44,37 @@ ht-degree: 4%
 >如果您看到此類錯誤，請不要重試安裝。安裝作業正在背景正確進行。如果您真的重新啟動安裝，則多個並行匯入流程可能會造成一些衝突。
 
 如需有關如何管理AEMaaCS套件的詳細資訊，請檢視此檔案 [部署至AEMas a Cloud Service](/help/implementing/deploying/overview.md) （位於部署使用手冊中）。
+
+## 封裝大小 {#package-size}
+
+Adobe建議不要建立大型套件。 這是為了避免上傳和下載套件時發生逾時問題。
+
+一般而言，套件應在60秒內傳輸完整。 提供下列公式作為指引。
+
+```text
+MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
+```
+
+由於網路流量是可變的，且一律小於宣告的理論最大值，請嘗試使用線上網際網路連線速度測試工具。
+
+網際網路速度在上傳和下載時幾乎總是不同的。 假設您將需要上傳和下載套件，則計算時應使用較低的值（通常是上傳速度）。
+
+### 範例 {#example}
+
+使用網際網路速度測試工具時，我發現目前的上傳速度約為100 Mbps。
+
+```text
+100 Mbps = 12.5 MB/s
+12.5 MB/s * 60 s = 750 MB
+```
+
+因此，我建立的任何套件都應小於750 MB。
+
+>[!NOTE]
+>
+>網路速度取決於目前的本機狀況。 即使使用最近的速度測試，您的實際輸送量也可能有所不同。
+>
+>因此，所提供的公式僅供參考，實際建議的最大封裝大小可能會有所不同。
 
 ## 封裝管理員 {#package-manager}
 
@@ -237,6 +268,10 @@ ht-degree: 4%
 
 建立套件後，不必立即建置套件。 未建置的套件不包含任何內容，且僅由套件的篩選資料和其他中繼資料組成。
 
+>[!TIP]
+>
+>為避免逾時，Adobe建議 [不要建立大型套件。](#package-size)
+
 ### 建置套件 {#building-a-package}
 
 套件通常會在您建立時同時建置 [建立套件](#creating-a-new-package)，但您稍後可以返回以建置或重新建置套件。 如果存放庫中的內容已變更或封裝篩選條件已變更，此功能會很有用。
@@ -248,6 +283,10 @@ ht-degree: 4%
 1. 按一下 **建置**. 對話方塊會要求您確認是否要建置封裝，因為任何現有的封裝內容都會被覆寫。
 
 1. 按一下&#x200B;**「確定」**。AEM會建置套件，並在活動清單中列出新增至套件的所有內容。 完成時，AEM會顯示確認封裝已建置，且（當您關閉對話方塊時）會更新封裝清單資訊。
+
+>[!TIP]
+>
+>為避免逾時，Adobe建議 [不要建立大型套件。](#package-size)
 
 ### 編輯套裝 {#edit-package}
 
@@ -313,6 +352,10 @@ ht-degree: 4%
 
 1. AEM會將套件下載至您的電腦。
 
+>[!TIP]
+>
+>為避免逾時，Adobe建議 [不要建立大型套件。](#package-size)
+
 ### 從您的檔案系統上傳套件 {#uploading-packages-from-your-file-system}
 
 1. [存取封裝管理員。](#accessing)
@@ -331,6 +374,10 @@ ht-degree: 4%
 1. 按一下 **確定** 則會上傳選取的封裝，並相應地更新封裝清單。
 
 套件內容現在存在於AEM上，但若要讓內容可供使用，請確定 [安裝套件](#installing-packages).
+
+>[!TIP]
+>
+>為避免逾時，Adobe建議 [不要建立大型套件。](#package-size)
 
 ### 驗證套件 {#validating-packages}
 
