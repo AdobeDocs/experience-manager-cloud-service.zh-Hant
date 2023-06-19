@@ -3,9 +3,9 @@ title: AEM Headless as a Cloud Service 快速入門
 description: 在 AEM Headless 開發人員歷程的這一部分，了解 AEM Headless 先決條件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3090'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 98%
 
 ### 預覽服務 {#preview}
 
-在發佈到發佈執行個體之前，您也可以將內容片段發佈到 **預覽服務** 以進行測試和檢閱。 這是從以下位置完成的： **內容片段** 主控台。
+在發佈到發佈執行個體之前，您還可以將內容片段發佈到&#x200B;**預覽服務**，以進行測試和檢閱。這會從&#x200B;**內容片段**&#x200B;主控台完成。
 
 ### 複製 {#replication}
 
