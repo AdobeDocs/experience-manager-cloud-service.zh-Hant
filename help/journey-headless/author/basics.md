@@ -3,9 +3,9 @@ title: 了解編寫基本知識
 description: 了解使用內容片段為 Headless CMS 編寫內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1711'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,9 @@ ht-degree: 95%
 
 在您掌握內容片段之前，對於如何使用 AEM，這裡有 (非常) 快速的介紹......但沒有什麼能真正取代登入和嘗試使用系統的體驗。
 
-### 編寫、預覽和發佈 {#author-preview-publish}
+### 作者、預覽和發佈 {#author-preview-publish}
 
-AEM安裝通常包含三個環境：
+AEM 安裝通常至少包含三個環境：
 
 * 作者
 * 發佈
@@ -40,7 +40,7 @@ AEM安裝通常包含三個環境：
 
 如需詳細資訊，請參閱編寫概念。
 
-從 **內容片段** 主控台，您也可以發佈至 **預覽服務**，以測試和預覽，在發佈之前。 請參閱發佈和預覽片段。
+在發佈之前，您還可以從&#x200B;**內容片段**&#x200B;主控台發佈至&#x200B;**預覽服務**，以進行測試和預覽。請參閱「發佈和預覽片段」。
 
 ### 登入 {#signing-in}
 
@@ -135,9 +135,9 @@ You can view additional information about items using the Rail Selector. This al
 
 ![建立資料夾選項](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-對話方塊隨即開啟，您可以在其中輸入詳細資料，然後使用&#x200B;**建立**&#x200B;加以確認：
+對話框隨即開啟，您可以在其中輸入詳細資料，然後使用&#x200B;**建立**&#x200B;加以確認：
 
-![建立資料夾對話方塊](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
+![建立資料夾對話框](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
 #### 使用路徑和標記限制資料夾中可用的內容片段模型 {#tags-paths-for-models-in-folder}
 
@@ -215,11 +215,11 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * 只需要多個資訊的片段，其中一些具有特定類型。對於無周邊內容，參考是關鍵，歷程的後續部分將會說明。
 
-   ![內容片段編輯器 - 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
+  ![內容片段編輯器 - 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
 * 允許您編寫一長段文字的片段。這裡有用於管理和格式化文字的其他選項。您甚至可以在全螢幕編輯器中開啟各個文字欄位 (使用右側外觀像螢幕的小圖示)
 
-   ![內容片段編輯器 - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![內容片段編輯器 - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 >[!NOTE]
 >
@@ -239,26 +239,26 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * **內容片段模型**
 
-   您將在編輯器頂端看到內容片段模型的名稱 - 就在片段名稱下方。這也是一個將您帶到模型編輯器的連結。
+  您將在編輯器頂端看到內容片段模型的名稱 - 就在片段名稱下方。這也是一個將您帶到模型編輯器的連結。
 內容片段模型實際上對您的內容片段至關重要，因為它們定義了您使用的結構。然而，建立和編輯模型 (通常) 是另一個角色的責任，即內容架構師。
 
-   >[!NOTE]
-   >
-   >如果想進一步了解，請參閱「AEM Headless 內容架構師歷程」。
+  >[!NOTE]
+  >
+  >如果想進一步了解，請參閱「AEM Headless 內容架構師歷程」。
 
 * **相關聯的內容**
 
-   這個非常明顯，因為它是編輯器中的索引標籤。
+  這個非常明顯，因為它是編輯器中的索引標籤。
 
-   內容片段已在多個版本的 AEM 中使用。最初，它們在編寫頁面時可用於「傳統」用途……並且它們仍用於此種情況。這可能涉及關聯資產 (影像)，這些資產雖然未嵌入片段中，但作者在編寫頁面時仍需要使用。
+  內容片段已在多個版本的 AEM 中使用。最初，它們在編寫頁面時可用於「傳統」用途……並且它們仍用於此種情況。這可能涉及關聯資產 (影像)，這些資產雖然未嵌入片段中，但作者在編寫頁面時仍需要使用。
 
 * **預覽**
 
-   這是編輯器中的另一個索引標籤，提供技術檢視，主要供開發人員使用。
+  這是編輯器中的另一個索引標籤，提供技術檢視，主要供開發人員使用。
 
 * **更新頁面參考**
 
-   **...** (省略符號) 下拉式清單可提供此動作。對於無周邊作者來說這並不有趣，因為它與頁面編寫有關。
+  **...** (省略符號) 下拉式清單可提供此動作。對於無周邊作者來說這並不有趣，因為它與頁面編寫有關。
 
 ### 發佈 {#publishing}
 
@@ -266,13 +266,13 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 完成片段後，您可以&#x200B;**發佈**&#x200B;以供無周邊應用程式使用。
 
-編輯器中提供發佈動作：
+可在編輯器中使用發佈動作：
 
 ![內容片段編輯器 - 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
 >[!NOTE]
 >
->您也可以從以下任一頁面發佈您的片段： **資產** 或 **內容片段** 主控台。
+>您還可以從&#x200B;**資產**&#x200B;或者&#x200B;**內容片段**&#x200B;主控台發佈片段。
 
 ## 下一步 {#whats-next}
 
@@ -308,14 +308,16 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
    * 發佈
 
-      * 從編輯器中，或 **資產** 主控台
+      * 從編輯器，或&#x200B;**資產**&#x200B;主控台
 
          * [快速發佈](/help/assets/manage-publication.md#quick-publish)
 
          * [管理發佈](/help/assets/manage-publication.md#manage-publication)
-      * 從 **內容片段** 主控台
+
+      * 從&#x200B;**內容片段**&#x200B;主控台
 
          * [發佈和預覽內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
+
    * [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [內容片段模型 - 資料類型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
@@ -323,8 +325,6 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
       * [內容片段模型 - 屬性](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
       * [內容片段模型 - 允許內容片段模型在資產資料夾上](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
-
-
 
 * 快速入門指南
    * [建立資產資料夾 - Headless 設定](/help/headless/setup/create-assets-folder.md)
