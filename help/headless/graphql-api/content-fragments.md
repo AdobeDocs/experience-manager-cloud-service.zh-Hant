@@ -4,9 +4,9 @@ description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4934'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,22 +30,21 @@ ht-degree: 96%
 >* [AEM Commerce 透過 GraphQL 取用來自 Commerce 平台的資料](/help/commerce-cloud/integrating/magento.md)。
 >* AEM 內容片段與 AEM GraphQL API (基於標準 GraphQL 的自訂實作) 搭配運作，以傳遞結構化內容以供您的應用程式使用。
 
-
 ## GraphQL API {#graphql-api}
 
 GraphQL 是：
 
 * 「*...API 的查詢語言和使用現有資料完成這些查詢的執行階段。GraphQL 可完整清楚地描述 API 中的資料，使用戶端能夠準確地要求所需內容，別無其他，如此可輕鬆地隨著時間發展 API，造就強大的開發人員工具。*」。
 
-   請參閱 [GraphQL.org](https://graphql.org)
+  請參閱 [GraphQL.org](https://graphql.org)
 
 * 「*...靈活 API 層的開放規格。將 GraphQL 置於現有後端之上，可比以往更快速地建置產品....*」。
 
-   請參閱[探索 GraphQL](https://www.graphql.com)。
+  請參閱[探索 GraphQL](https://www.graphql.com)。
 
 * *「...一種資料查詢語言和規格，由 Facebook 於 2012 年在內部開發，然後於 2015 年公開原始碼。它提供了 REST 式架構的替代方案，目的是提高開發人員的生產力並盡量減少傳輸的資料量。GraphQL 用於生產環境，數百個各種規模的組織都在使用...」*
 
-   請參閱 [GraphQL 基礎](https://foundation.graphql.org/)。
+  請參閱 [GraphQL 基礎](https://foundation.graphql.org/)。
 
 <!--
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
@@ -79,15 +78,15 @@ GraphQL 使用以下項目：
 
 * **[查詢](https://graphql.org/learn/queries/)**
 
-* **[結構描述和類型](https://graphql.org/learn/schema/)**：
+* **[綱要和類型](https://graphql.org/learn/schema/)**：
 
-   * 結構描述是由 AEM 根據內容片段模型所產生。
-   * 使用您的結構描述，GraphQL 呈現 GraphQL for AEM 實作可用的類型和操作。
+   * 綱要是由 AEM 根據內容片段模型所產生。
+   * 使用您的綱要，GraphQL 呈現 GraphQL for AEM 實作可用的類型和操作。
 
 * **[欄位](https://graphql.org/learn/queries/#fields)**
 
 * **[GraphQL 端點](graphql-endpoint.md)**
-   * AEM 中回應 GraphQL 查詢並提供 GraphQL 結構描述存取權的路徑。
+   * AEM 中回應 GraphQL 查詢並提供 GraphQL 綱要存取權的路徑。
 
    * 如需詳細資訊，請參閱[啟用 GraphQL 端點](graphql-endpoint.md)。
 
@@ -125,7 +124,6 @@ AEM 提供將查詢 (兩種類型) 轉換為[持續性查詢的功能，可由 D
 >* 建立稱為 `ENABLE_GRAPHQL_ENDPOINT` 的 [Cloud Manager 環境變數](/help/implementing/cloud-manager/environment-variables.md)
 >* 值為 `true`
 
-
 >[!NOTE]
 >
 >執行直接查詢的功能可能會在未來的某個時間被淘汰。
@@ -134,7 +132,7 @@ AEM 提供將查詢 (兩種類型) 轉換為[持續性查詢的功能，可由 D
 
 您可以使用 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 測試和偵錯 GraphQL 查詢。
 
-## 創作、預覽和發佈的使用案例 {#use-cases-author-preview-publish}
+## 作者、預覽和發佈的使用案例 {#use-cases-author-preview-publish}
 
 使用案例取決於 AEM as a Cloud Service 環境的類型：
 
@@ -142,7 +140,7 @@ AEM 提供將查詢 (兩種類型) 轉換為[持續性查詢的功能，可由 D
    * 為 JS 應用程式查詢資料 (標準使用案例)
 
 * 預覽環境；用於：
-   * 在發佈環境中部署之前預覽查詢
+   * 部署在發佈環境中之前預覽查詢
       * 為 JS 應用程式查詢資料 (標準使用案例)
 
 * 作者環境：用於：
@@ -158,17 +156,17 @@ GraphQL 查詢是在基礎要求之 AEM 使用者的許可下執行的。如果�
 
 此外，使用者必須可以存取 GraphQL 端點才能執行 GraphQL 查詢。
 
-## 結構描述產生 {#schema-generation}
+## 綱要產生 {#schema-generation}
 
 GraphQL 是強式類型 API，這表示資料必須結構明確並按類型組織。
 
-GraphQL 規格提供了一系列指南，說明如何建立健全的 API 來查詢特定執行個體上的資料。為此，用戶端需要擷取[結構描述](#schema-generation)，其中包含查詢所需的所有類型。
+GraphQL 規格提供了一系列指南，說明如何建立健全的 API 來查詢特定執行個體上的資料。為此，用戶端需要擷取[綱要](#schema-generation)，其中包含查詢所需的所有類型。
 
-對於內容片段，GraphQL 結構描述 (結構和類型) 是以&#x200B;**啟用的**[內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)及其資料類型為基礎。
+對於內容片段，GraphQL 綱要 (結構和類型) 是以&#x200B;**啟用的**[內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)及其資料類型為基礎。
 
 >[!CAUTION]
 >
->所有 GraphQL 結構描述 (衍生自已&#x200B;**啟用**&#x200B;的內容片段模型) 都可透過 GraphQL 端點讀取。
+>所有 GraphQL 綱要 (衍生自已&#x200B;**啟用**&#x200B;的內容片段模型) 都可透過 GraphQL 端點讀取。
 >
 >這表示您必須確保沒有敏感資料，因為它可能會以這種方式洩露；例如，這包括可以在模型定義中做為欄位名稱出現的資訊。
 
@@ -178,8 +176,8 @@ GraphQL 規格提供了一系列指南，說明如何建立健全的 API 來查�
 
    ![與 GraphQL 搭配使用的內容片段模型](assets/cfm-graphqlapi-01.png "與 GraphQL 搭配使用的內容片段模型")
 
-1. 對應的 GraphQL 結構描述 (來自 GraphiQL 自動文件的輸出)：
-   ![根據內容片段模型的 GraphQL 結構描述](assets/cfm-graphqlapi-02.png "根據內容片段模型的 GraphQL 結構描述")
+1. 對應的 GraphQL 綱要 (來自 GraphiQL 自動文件的輸出)：
+   ![根據內容片段模型的 GraphQL 綱要](assets/cfm-graphqlapi-02.png "根據內容片段模型的 GraphQL 綱要")
 
    此顯示產生的類型 `ArticleModel` 包含多個[欄位](#fields)。
 
@@ -189,13 +187,13 @@ GraphQL 規格提供了一系列指南，說明如何建立健全的 API 來查�
 
 1. 使用者根據文章模型建立內容片段後，就可以透過 GraphQL 對其進行查詢。例如，請參閱[範例查詢](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries) (根據[與 GraphQL 搭配使用的範例內容片段結構](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql))。
 
-在 GraphQL for AEM 中，結構描述是靈活的。這表示著每次建立、更新或刪除內容片段模型時都會自動產生它。當您更新內容片段模型時，資料結構描述快取也會重新整理。
+在 GraphQL for AEM 中，綱要是靈活的。這表示著每次建立、更新或刪除內容片段模型時都會自動產生它。當您更新內容片段模型時，資料綱要快取也會重新整理。
 
 <!-- move the following to a separate "in depth" page -->
 
-當您更新內容片段模型時，資料結構描述快取也會重新整理。
+當您更新內容片段模型時，資料綱要快取也會重新整理。
 
-Sites GraphQL 服務偵聽 (在背景) 對內容片段模型所做的任何修改。當偵測到更新時，只有該部分的結構描述會重新產生。這種最佳化作業可以節省時間並提供穩定性。
+Sites GraphQL 服務偵聽 (在背景) 對內容片段模型所做的任何修改。當偵測到更新時，只有該部分的綱要會重新產生。這種最佳化作業可以節省時間並提供穩定性。
 
 例如，您可以：
 
@@ -213,11 +211,11 @@ Sites GraphQL 服務偵聽 (在背景) 對內容片段模型所做的任何修�
 >
 >如果您想透過 REST API 或其他方式對內容片段模型進行大量更新，請務必注意這一點。
 
-結構描述透過與 GraphQL 查詢相同的端點提供服務，用戶端處理以 `GQLschema` 副檔名呼叫結構描述這一事實。例如，對 `/content/cq:graphql/global/endpoint.GQLschema` 執行簡單的 `GET` 要求，將導致內容類型為 `text/x-graphql-schema;charset=iso-8859-1` 的結構描述輸出。
+綱要透過與 GraphQL 查詢相同的端點提供服務，用戶端處理以 `GQLschema` 副檔名呼叫綱要這一事實。例如，對 `/content/cq:graphql/global/endpoint.GQLschema` 執行簡單的 `GET` 要求，將導致內容類型為 `text/x-graphql-schema;charset=iso-8859-1` 的綱要輸出。
 
 <!-- move through to here to a separate "in depth" page -->
 
-### 結構描述產生 - 未發佈的模型 {#schema-generation-unpublished-models}
+### 綱要產生 - 未發佈的模型 {#schema-generation-unpublished-models}
 
 巢狀內嵌內容片段時，可能會發佈父內容片段模型，但不會發佈被參考的模型。
 
@@ -225,15 +223,15 @@ Sites GraphQL 服務偵聽 (在背景) 對內容片段模型所做的任何修�
 >
 >AEM UI 可防止這種情況發生，但如果以程式設計方式或使用內容套件進行發佈，則可能會發生這種情況。
 
-發生這種情況時，AEM 會為父內容片段模型產生&#x200B;*不完整*&#x200B;結構描述。這表示相依於未發佈模型的片段參考已從結構描述中刪除。
+發生這種情況時，AEM 會為父內容片段模型產生&#x200B;*不完整*&#x200B;綱要。這表示相依於未發佈模型的片段參考已從綱要中刪除。
 
 ## 欄位 {#fields}
 
-在結構描述中有個別欄位，分成兩個基本類別：
+在綱要中有個別欄位，分成兩個基本類別：
 
 * 產生的欄位。
 
-   一系列[資料類型](#Data-types)用於根據內容片段模型的設定方式建立欄位。欄位名稱取自&#x200B;**資料類型**&#x200B;索引標籤的&#x200B;**屬性名稱**&#x200B;欄位。
+  一系列[資料類型](#Data-types)用於根據內容片段模型的設定方式建立欄位。欄位名稱取自&#x200B;**資料類型**&#x200B;索引標籤的&#x200B;**屬性名稱**&#x200B;欄位。
 
    * 也必須考慮&#x200B;**呈現為**&#x200B;設定，因為使用者可以設定某些資料類型。例如，從下拉選單中選擇 `multifield`，可以將單行文字欄位設定為包含多個單行文字。
 
@@ -302,7 +300,7 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 
 透過 GraphQL，AEM 還公開內容片段的中繼資料。中繼資料是描述內容片段的資訊，例如內容片段的標題、縮圖路徑、內容片段的描述、建立日期等。
 
-由於中繼資料是透過結構描述編輯器產生的，因此沒有特定的結構，所以實作 `TypedMetaData` GraphQL 類型來公開內容片段的中繼資料。`TypedMetaData` 公開依以下純量類型群組的資訊：
+由於中繼資料是透過綱要編輯器產生的，因此沒有特定的結構，所以實作 `TypedMetaData` GraphQL 類型來公開內容片段的中繼資料。`TypedMetaData` 公開依以下純量類型群組的資訊：
 
 | 欄位 |
 |--- |
@@ -338,7 +336,7 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 }
 ```
 
-如果檢視產生的 GraphQL 結構描述，則可以檢視所有中繼資料 GraphQL 類型。所有模型類型都具有相同的 `TypedMetaData`。
+如果檢視產生的 GraphQL 綱要，則可以檢視所有中繼資料 GraphQL 類型。所有模型類型都具有相同的 `TypedMetaData`。
 
 >[!NOTE]
 >
@@ -670,7 +668,6 @@ query {
 >
 >* 偏移量越高，從完整的 JCR 查詢結果集中略過項目所需的時間就越多。針對大型結果集的替代解決方案是使用已分頁查詢搭配 `first` 和 `after` 方法。
 
-
 ### 已分頁查詢 - first 和 after {#paginated-first-after}
 
 `...Paginated` 查詢類型重複使用大部分的 `...List` 查詢類型功能 (篩選、排序)，但沒有使用 `offset`/`limit` 引數，而是使用 `first`/`after`，如 [GraphQL 游標連接規格](https://relay.dev/graphql/connections.htm) 所定義。您可以在 [GraphQL 簡介](https://graphql.org/learn/pagination/#pagination-and-edges)中找到不太正式的簡介。
@@ -708,7 +705,6 @@ query {
 >
 >* 由於內部技術限制，如果對巢狀欄位套用排序和篩選，效能會降低。因此，建議使用儲存在根層級的篩選/排序欄位。如果要查詢大型已分頁結果集，同樣也建議使用此方法。
 
-
 ## GraphQL 查詢中的網頁最佳化影像傳遞 {#web-optimized-image-delivery-in-graphql-queries}
 
 網頁最佳化影像傳遞可讓您使用 Graphql 查詢進行以下作業：
@@ -717,9 +713,9 @@ query {
 
 * 透過查詢傳遞參數，以便自動產生並傳回特定的影像轉譯
 
-   >[!NOTE]
-   >
-   >指定的轉譯未存儲在 AEM Assets 中。轉譯會在快取中產生並保留一小段時間。
+  >[!NOTE]
+  >
+  >指定的轉譯未存儲在 AEM Assets 中。轉譯會在快取中產生並保留一小段時間。
 
 * 將 URL 作為 JSON 傳遞的一部分傳回
 
@@ -888,17 +884,17 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
 
-      回應如下所示：
+     回應如下所示：
 
-      ![使用參數的影像傳遞](assets/cfm-graphiql-sample-image-delivery.png "使用參數的影像傳遞")
+     ![使用參數的影像傳遞](assets/cfm-graphiql-sample-image-delivery.png "使用參數的影像傳遞")
 
 * [多個參數](#dynamic-image-delivery-multiple-specified-parameters)；名稱為 `dynamic` 的持續性查詢
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
-      >[!CAUTION]
-      >
-      >若要乾淨地終止參數清單，結尾必須加上 `;`。
+     >[!CAUTION]
+     >
+     >若要乾淨地終止參數清單，結尾必須加上 `;`。
 
 ### 影像傳遞的限制 {#image-delivery-limitations}
 
@@ -922,26 +918,26 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
    * 新增 `List` 到模型名稱，例如 `cityList`
    * 請參閱[範例查詢 - 所有城市的所有資訊](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-   然後，您可以：
+  然後，您可以：
 
    * [排序結果](#sorting)
 
       * `ASC`：遞增
       * `DESC`：遞減
+
    * 使用以下任一方法傳回一頁結果：
 
       * [清單查詢，使用 offset 和 limit](#list-offset-limit)
       * [已分頁查詢，使用 first 和 after](#paginated-first-after)
+
    * 請參閱[範例查詢 - 所有城市的所有資訊](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
+* 篩選器 `includeVariations` 會包含在 `List` 和 `Paginated` 的查詢類型中。若要在查詢結果中擷取內容片段變化，則 `includeVariations` 篩選器必須設定為 `true`。
 
+   * 請參閱[特定模式的多個內容片段與其變化的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
-
-* 篩選器 `includeVariations` 包含在 `List` 和 `Paginated` 查詢型別。  若要擷取查詢結果中的內容片段變數，請 `includeVariations` 篩選器必須設定為 `true`.
-
-   * 另請參閱 [給定模型的多個內容片段及其變體的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
-   >[!CAUTION]
-   >篩選器 `includeVariations` 和系統產生的欄位 `_variation` 不能在同一查詢定義中一起使用。
+  >[!CAUTION]
+  >篩選器 `includeVariations` 和系統產生的欄位 `_variation` 無法同時用於同一個查詢定義中。
 
 * 如果要使用邏輯 OR：
    * 使用 ` _logOp: OR`
@@ -958,25 +954,31 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
       * `_locale`：顯示語言，根據語言管理員
          * 請參閱[範例查詢：給定地區設定的多個內容片段](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
+
       * `_metadata`：顯示片段的中繼資料
          * 請參閱[中繼資料的範例查詢 - 列出 GB 獎項的中繼資料](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+
       * `_model`：允許查詢內容片段模型 (路徑和標題)
          * 請參閱[從模型進行的內容片段模型範例查詢](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)
+
       * `_path`：存放庫中內容片段的路徑
          * 請參閱[範例查詢 - 單一特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+
       * `_reference`：顯示參考；包含 RTF 編輯器中的內聯參考
          * 請參閱[預先擷取參考之多個內容片段的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
+
       * `_variation`：顯示內容片段中的特定變化
 
-         >[!NOTE]
-         >
-         >如果內容片段不存在給定的變化，則主變化將作為 (備援) 預設值傳回。
+        >[!NOTE]
+        >
+        >如果內容片段不存在給定的變化，則主變化將作為 (備援) 預設值傳回。
 
-         >[!CAUTION]
-         >
-         >系統產生的欄位 `_variation` 無法與篩選器搭配使用 `includeVariations`.
+        >[!CAUTION]
+        >
+        >系統產生的欄位 `_variation` 不能和篩選器 `includeVariations` 同時使用。
 
          * 請參閱[範例查詢 - 所有具有名稱變化的城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+
    * 對於[影像傳遞](#image-delivery)：
 
       * `_dynamicUrl`：在 `ImageRef` 參考上
@@ -988,36 +990,29 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
          * [具有完整參數的影像傳遞範例查詢](#image-delivery-full-parameters)
 
          * [具有單一特定參數的影像傳遞範例查詢](#image-delivery-single-specified-parameter)
-   * `_tags` ：顯示包含標籤的內容片段或變體ID；這是一個陣列 `cq:tags` 識別碼。
 
-      * 另請參閱 [範例查詢 — 所有標籤為分行符號的城市名稱](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
-      * 另請參閱 [附加特定標籤之指定模型的內容片段變體範例查詢](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
-      * 另請參閱 [依_tags ID篩選並排除變數的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
-      * 另請參閱 [依_tags ID篩選並包含變數的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+   * `_tags`：顯示包含標記的內容片段或變化的 ID；這是一個 `cq:tags` 識別碼的陣列。
 
-      >[!NOTE]
-      >
-      >也可以透過列出內容片段的中繼資料來查詢標籤。
+      * 請參閱[範例查詢 - 所有標記為 City Breaks 的城市名稱](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+      * 請參閱[對附加了特定標記的特定模式之內容片段變化的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+      * 請參閱[依 _tags ID 進行篩選並排除變化的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * 請參閱[依 _tags ID 進行篩選並包含變化的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+
+     >[!NOTE]
+     >
+     >對標記的查詢還能透過列出內容片段的中繼資料進行。
 
    * And 操作：
 
       * `_operator`：套用特定的運算子；`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`
          * 請參閱[範例查詢 - 所有姓名沒有「Jobs」的人員](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
          * 請參閱[範例查詢 - 所有 `_path` 以特定前置詞開頭的冒險](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
+
       * `_apply`：套用特定條件；例如，`AT_LEAST_ONCE`
          * 請參閱[範例查詢 - 篩選內含必須至少出現一次之項目的陣列](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
+
       * `_ignoreCase`：查詢時忽略大小寫
          * 請參閱[範例查詢 - 所有名稱包含 SAN 的城市，不區分大小寫](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
-
-
-
-
-
-
-
-
-
-
 
 * 支援 GraphQL 聯合類型：
 
