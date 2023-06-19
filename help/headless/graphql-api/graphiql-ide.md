@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1147'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 87%
 * 執行查詢以立即查看結果
 * 管理&#x200B;**查詢變數**
 * 儲存和管理&#x200B;**持續性查詢**
-* 發佈或取消發佈， **持久查詢**，傳送至 **發佈** 或 **預覽** 服務；例如，至/自 `dev-publish`
+* 發佈或取消發佈，**持續性查詢**，至您的&#x200B;**發佈**&#x200B;或&#x200B;**預覽**&#x200B;服務；例如，至/從 `dev-publish`
 * 查看您之前查詢的&#x200B;**歷史記錄**
 * 使用&#x200B;**文件總管**&#x200B;以存取文件；協助您學習並了解可用的方法。
 
@@ -130,27 +130,27 @@ GraphiQL IDE 也可讓您管理[查詢變數](/help/headless/graphql-api/content
 
 1. 選取&#x200B;**儲存**&#x200B;以保留變更。
 
-## 發佈和預覽持續查詢 {#publishing-previewing-persisted-queries}
+## 發佈和預覽持續性查詢 {#publishing-previewing-persisted-queries}
 
-一旦從清單（左側面板）中選取了持久查詢，您就可以使用 **發佈** 動作。
+從清單 (左側面板) 選取持續性查詢後，您即可使用&#x200B;**發佈**&#x200B;動作。
 
-這會針對您選取的環境啟動查詢。 您可以選擇 **發佈** 環境(例如， `dev-publish`)，或您的 **預覽** 環境，方便您的應用程式在測試時存取。
+這會啟動對您選取的環境的查詢。您可以選擇&#x200B;**發佈**&#x200B;環境 (例如，`dev-publish`) 或是&#x200B;**預覽**&#x200B;環境，讓您的應用程式在測試時可輕鬆存取。
 
-![GraphiQL — 已發佈的持續查詢](assets/cfm-graphiql-publish.png "GraphiQL — 發佈持久查詢")
-
->[!NOTE]
->
->持續性查詢快取 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} 之定義的預設值為 2 小時 (7200 秒)。
-
-## 正在取消發佈持續查詢 {#unpublishing-persisted-queries}
-
-如同發佈一樣，一旦從清單（左側面板）中選取了持續查詢，您就可以使用 **取消發佈** 動作。
-
-這將會從您選取的環境停用查詢；您可以 **發佈** 環境，或您的 **預覽** 環境。
+![GraphiQL - 已發佈的持續性查詢](assets/cfm-graphiql-publish.png "GraphiQL - 發佈持續性查詢")
 
 >[!NOTE]
 >
->您也應確保已對使用者端應用程式進行必要的變更，以避免潛在問題。
+>持續性查詢快取 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} 定義的預設值為 2 小時 (7200 秒)。
+
+## 取消發佈持續性查詢 {#unpublishing-persisted-queries}
+
+發佈時，從清單 (左側面板) 選取持續性查詢後，您即可使用&#x200B;**發佈**&#x200B;和取消發佈動作。
+
+這會停用您選取環境中的查詢；您的&#x200B;**發佈**&#x200B;環境，或是您的&#x200B;**預覽**&#x200B;環境。
+
+>[!NOTE]
+>
+>您還應確保已對用戶端應用程式進行了必要的變更，以避免潛在的問題。
 
 ## 複製 URL 以直接存取查詢 {#copy-url}
 
