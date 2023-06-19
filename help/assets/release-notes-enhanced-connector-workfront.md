@@ -2,9 +2,9 @@
 title: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版發行說明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 3a00faaf285be693243e3fb55159149520293610
+source-git-commit: 0cc57a144b69799cfabc8baae2051e9ac8701d49
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1167'
 ht-degree: 1%
 
 ---
@@ -15,18 +15,22 @@ ht-degree: 1%
 
 ## 發行日期 {#release-date}
 
-最新版本1.9.10的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 是2023年5月18日。
+最新版本1.9.11的發行日期 [!DNL Workfront for Experience Manager enhanced connector] 為2023年6月19日。
 
 ## 發行重點說明 {#release-highlights}
 
 最新版本的 [!DNL Workfront for Experience Manager enhanced connector] 包含下列更新：
 
-* Workfront會根據從Experience Manager到Workfront的REST呼叫，針對重複事件訂閱傳回409 HTTP回應，這會導致Null指標例外狀況。
+* 當您設定進階網路時，將內容從Adobe Workfront傳送到AEMas a Cloud Service時出現問題。
+
+>[!NOTE]
+>
+>AEM 6.4已終止延伸支援。 如需更多詳細資訊，請參閱我們的 [技術支援期間](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/?lang=en).
 
 
 >[!IMPORTANT]
 >
->Adobe建議您 [升級至最新的1.9.10版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建議您 [升級至最新的1.9.11版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知問題 {#known-issues}
 
@@ -35,6 +39,10 @@ ht-degree: 1%
 * 當您使用傳統Workfront體驗時， **[!UICONTROL 傳送至]** 中可用的選項 **[!UICONTROL 更多]** 下拉式清單不允許您在Experience Manager中選取目標目的地。 此 **[!UICONTROL 傳送至]** 選項可透過以下方式正常運作： **[!UICONTROL 檔案動作]** 下拉式清單。 此 **[!UICONTROL 傳送至]** 選項正確運作於 **[!UICONTROL 更多]** 下拉式清單及 **[!UICONTROL 檔案動作]** 新Workfront Experience中可用的下拉式清單。
 
 ## 舊版 {#previous-releases}
+
+### 2023年5月發行版本 {#may-2023-release}
+
+* Workfront會根據從Experience Manager到Workfront的REST呼叫，針對重複事件訂閱傳回409 HTTP回應，這會導致Null指標例外狀況。
 
 ### 2023年4月發行版本 {#april-2023-release}
 
@@ -95,7 +103,7 @@ ht-degree: 1%
 
 * 啟用 **[!UICONTROL 將資產發佈至Brand Portal]** Workfront增強型聯結器設定頁面上的選項會建立不正確的事件。 停用選項後，事件也不會被刪除。
 
-   若要解決問題：
+  若要解決問題：
 
    1. 升級至增強型聯結器1.9.5版。
 
@@ -123,9 +131,9 @@ ht-degree: 1%
       1. 刪除錯誤的事件訂閱。 對進行Delete API呼叫 `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
 
          `200` 因為回應代碼表示成功刪除了錯誤的事件訂閱。
-   >[!NOTE]
-   >
-   >如果您在執行此程式中所提及的步驟之前刪除了錯誤的事件訂閱，則可以跳過此程式的最後一個步驟。
+  >[!NOTE]
+  >
+  >如果您在執行此程式中所提及的步驟之前刪除了錯誤的事件訂閱，則可以跳過此程式的最後一個步驟。
 
 ### 2022年10月發行版本 {#october-2022-release}
 
@@ -189,4 +197,3 @@ ht-degree: 1%
 >[!MORELIKETHIS]
 >
 >* [整合 [!DNL Workfront for Experience Manager enhanced connector] 搭配Experience Manager6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
-
