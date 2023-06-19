@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 版發行說明。'
 source-git-commit: 937921e0310a659f52803de3d6895db8fcac4d2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '732'
 ht-degree: 100%
 
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.2.0 版發行說明 {#release-notes}
 
-以下章節概述 [!DNL Experience Manager] as a Cloud Service 2023.2.0 版的功能發行說明。
+以下章節會概述 [!DNL Experience Manager] as a Cloud Service 2023.2.0 版的功能發行說明。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.2.0) 的發行日期是 2023 年 4 月 12 日。下一個功能版本 (2023.4.0) 計畫預計於 2023 年 6 月 7 日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2023.2.0) 的發行日期是 2023 年 4 月 12 日。下一個功能版本 (2023.4.0) 預計於 2023 年 6 月 7 日發行。
 
 ## 發行影片 {#release-video}
 
@@ -49,7 +49,7 @@ ht-degree: 100%
    * DASH 是自適應影片串流的國際標準通訊協定，在業界被廣泛採用
    * 在 NA 可使用，透過支援票證啟用，即將在 APAC、EMEA 推出
 
-* 已新增對 WebP 影像的支援以自動擷取中繼資料、產生縮圖和自訂轉譯。這些檔案現在也支援智慧標記和智慧型裁切功能。
+* 已新增對 WebP 影像的支援以自動擷取中繼資料、產生縮圖和自訂轉譯。這些檔案現在也支援智慧型標記和智慧型裁切功能。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -88,7 +88,7 @@ ht-degree: 100%
 * 在表單應用程式中重複使用您的專屬 UI 元件
 * 利用 Adobe Experience Manager Forms 的強大功能
 
-您可以使用您的官方電子郵件 ID 寄送電子郵件至 aem-forms-headless@adobe.com 以加入早期採用者計劃。
+使用您的官方電子郵件 ID 寄送電子郵件至 aem-forms-headless@adobe.com，即可加入早期採用者計劃。
 
 ## 維護版本發行說明 {#maintenance}
 
