@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保�
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ AEM 有提供 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)，可�
 例如，如果有一個名為 `my-query` 的特定查詢，它使用 Sites 設定 `my-conf` 中的模型 `my-model`：
 
 * 您可以使用 `my-conf` 專屬端點建立查詢，然後查詢將儲存為：
-   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+  `/conf/my-conf/settings/graphql/persistentQueries/my-query`
 * 您可以使用 `global` 端點建立相同查詢，然後查詢將儲存為：
-   `/conf/global/settings/graphql/persistentQueries/my-query`
+  `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
@@ -274,9 +274,9 @@ query getAdventuresByActivity($activity: String!) {
 
 {style="table-layout:auto"}
 
-### 編寫執行個體 {#author-instances}
+### 作者執行個體 {#author-instances}
 
-對於編寫執行個體，預設值為：
+對於作者執行個體，預設值為：
 
 * `max-age`  : 60
 * `s-maxage` : 60
@@ -355,46 +355,46 @@ curl -u admin:admin -X POST \
 
 >[!NOTE]
 >
->對於快取控制，OSGi設定僅適用於發佈執行個體。 設定存在於編寫執行個體，但被忽略。
+>對於快取控制，OSGi 設定僅適用於發佈執行個體。設定存在於作者執行個體，但受到忽略。
 
 >[!NOTE]
 >
->此 **持久查詢服務設定** 也用於 [設定查詢回應代碼](#configuring-query-response-code).
+>此&#x200B;**持續性查詢服務設定**&#x200B;也用於[設定查詢回應代碼](#configuring-query-response-code)。
 
 發佈執行個體的預設 OSGi 設定：
 
 * 讀取 Cloud Manager 變數 (若有)：
 
-   | OSGi 設定屬性 | 讀取此 | Cloud Manager 變數 |
-   |--- |--- |--- |
-   | `cacheControlMaxAge` | 讀取 | `graphqlCacheControl` |
-   | `surrogateControlMaxAge` | 讀取 | `graphqlSurrogateControl` |
-   | `surrogateControlStaleWhileRevalidate` | 讀取 | `graphqlStaleWhileRevalidate` |
-   | `surrogateControlStaleIfError` | 讀取 | `graphqlStaleIfError` |
+  | OSGi 設定屬性 | 讀取此 | Cloud Manager 變數 |
+  |--- |--- |--- |
+  | `cacheControlMaxAge` | 讀取 | `graphqlCacheControl` |
+  | `surrogateControlMaxAge` | 讀取 | `graphqlSurrogateControl` |
+  | `surrogateControlStaleWhileRevalidate` | 讀取 | `graphqlStaleWhileRevalidate` |
+  | `surrogateControlStaleIfError` | 讀取 | `graphqlStaleIfError` |
 
-   {style="table-layout:auto"}
+  {style="table-layout:auto"}
 
 * 如果沒有，OSGi 設定會使用[發佈執行個體的預設值](#publish-instances)。
 
 ## 設定查詢回應代碼 {#configuring-query-response-code}
 
-根據預設 `PersistedQueryServlet` 傳送 `200` 會在執行查詢時回應，無論實際結果為何。
+預設情況下，`PersistedQueryServlet` 執行查詢時，會傳送 `200` 回應，無論實際結果如何。
 
-您可以 [設定OSGi設定](/help/implementing/deploying/configuring-osgi.md) 的 **持久查詢服務設定** 控制由傳回的狀態碼 `/execute.json/persisted-query` 端點（當持續查詢中發生錯誤時）。
+您可以[設定 OSGi 設定](/help/implementing/deploying/configuring-osgi.md) (針對&#x200B;**持續性查詢服務設定)**，以控制持續性查詢中出現錯誤時 `/execute.json/persisted-query` 端點會傳回哪個狀態代碼。
 
 >[!NOTE]
 >
->此 **持久查詢服務設定** 也用於 [管理快取](#cache-osgi-configration).
+>此&#x200B;**持續性查詢服務設定**&#x200B;也用於[管理快取](#cache-osgi-configration)。
 
-欄位 `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`)可依需求定義：
+欄位 `Respond with application/graphql-response+json`(`responseContentTypeGraphQLResponseJson`) 可依要求定義：
 
-* `false` （預設值）：持續查詢是否成功無關緊要。 此 `/execute.json/persisted-query` 將傳回狀態代碼 `200` 和 `Content-Type` 傳回的標頭將是 `application/json`.
+* `false` (預設值)：持續性查詢成功與否並不重要。此 `/execute.json/persisted-query` 會傳回狀態代碼 `200`，而傳回的 `Content-Type` 標頭會是 `application/json`。
 
-* `true`：端點會傳回 `400` 或 `500` 執行持續查詢時若有任何形式的錯誤則視為適當。 也傳回 `Content-Type` 將為 `application/graphql-response+json`.
+* `true`：在執行持續性查詢時若出現任何形式的錯誤，此端點會傳回 `400` 或 `500` (視情況而定)。此外，傳回的 `Content-Type` 會是 `application/graphql-response+json`。
 
-   >[!NOTE]
-   >
-   >如需詳細資訊，請參閱https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >[!NOTE]
+  >
+  >如需更多詳細資訊，請參閱 https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes。
 
 ## 編碼查詢 URL 以供應用程式使用 {#encoding-query-url}
 
