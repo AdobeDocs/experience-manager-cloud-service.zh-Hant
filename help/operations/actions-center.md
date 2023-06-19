@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '705'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as Cloud Service 在發生需要立即採取行動的嚴重事件時會傳�
 
 ## 詳細的使用者流程 {#detailed-user-flow}
 
-按一下電子郵件即可進入「動作中心」，出現快顯視窗，顯示您按一下之通知的前後關聯，在某些情況下，還會顯示其他資訊的連結，說明如何採取更正動作。
+按一下電子郵件會將您帶往行動中心，顯示您點擊的通知內容的快顯視窗會隨即出現，在某些情況下，還會顯示說明如何採取糾正措施的其他資訊連結。
 
 ![事件詳細資料](/help/operations/assets/incident-details.png)
 
@@ -64,7 +64,7 @@ AEM as Cloud Service 在發生需要立即採取行動的嚴重事件時會傳�
 
 AEM as a Cloud Service 有多種類型的通知，但只有一部分出現在行動通知中心，如下表所示。
 
-| 通知類型 | 說明 | 如何設定 | 出現在動作中心 |
+| 通知類型 | 說明 | 如何設定 | 出現在行動中心 |
 |---|---|---|---|
 | 操作事件 | 需要立即採取行動的嚴重事件 | 指派給「事件通知 - Cloud Service」產品設定檔的使用者 | X |
 | 主動建議 | 應該計劃的最佳化 | 指派給「主動通知 - Cloud Service」產品設定檔的使用者 | X |
