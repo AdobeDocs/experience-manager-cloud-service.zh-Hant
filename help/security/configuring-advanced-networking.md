@@ -3,9 +3,9 @@ title: 為 AEM as a Cloud Service 設定進階網路
 description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，例如 VPN 或彈性或專用輸出 IP 地址等
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 7d74772bf716e4a818633a18fa17412db5a47199
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3595'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 84%
 
 >[!INFO]
 >
->您還可以在這個[位置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en)找到一系列旨在向您逐步解釋每個進階網路選項的文章。
+>您還可以在這個[位置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=zh-Hant)找到一系列旨在向您逐步解釋每個進階網路選項的文章。
 
 ## 概觀 {#overview}
 
@@ -95,7 +95,7 @@ HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
 HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 ```
 
-如果使用非標準 Java 網路程式庫，請使用上述屬性為所有流量設定 Proxy。
+如果使用非標準 Java 網路資料庫，請使用上述屬性為所有流量設定 Proxy。
 
 目標流經 `portForwards` 參數中宣告的連接埠的非 http/s 流量應該參照一個名為 `AEM_PROXY_HOST` 的屬性，以及對應的連接埠。 例如：
 
@@ -251,21 +251,21 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr>
   <tr>
     <td></td>
-    <td>流經 http proxy 設定，預設針對使用標準 Java HTTP 用戶端程式庫的 http/s 流量所設定</td>
+    <td>流經 http proxy 設定，預設針對使用標準 Java HTTP 用戶端資料庫的 http/s 流量所設定</td>
     <td>任何</td>
     <td>流經專用輸出 IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>忽略 http proxy 設定 (例如，如果從標準 Java HTTP 用戶端程式庫中明確移除，或者如果使用忽略標準 Proxy 設定的 Java 程式庫)</td>
+    <td>忽略 http proxy 設定 (例如，如果從標準 Java HTTP 用戶端資料庫中明確移除，或者如果使用忽略標準 Proxy 設定的 Java 資料庫)</td>
     <td>80 或 443</td>
     <td>流經共用叢集 IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>忽略 http proxy 設定 (例如，如果從標準 Java HTTP 用戶端程式庫中明確移除，或者如果使用忽略標準 Proxy 設定的 Java 程式庫)</td>
+    <td>忽略 http proxy 設定 (例如，如果從標準 Java HTTP 用戶端資料庫中明確移除，或者如果使用忽略標準 Proxy 設定的 Java 資料庫)</td>
     <td>80 或 443 之外的連接埠</td>
     <td>已封鎖</td>
     <td></td>
@@ -289,7 +289,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 
 ## 功能使用情況 {#feature-usage}
 
-功能與導致輸出流量的 Java 程式碼或程式庫相容，前提是它們使用標準 Java 系統屬性進行 Proxy 設定。實際上，這應該包括最常見的程式庫。
+功能與導致輸出流量的 Java 程式碼或資料庫相容，前提是它們使用標準 Java 系統屬性進行 Proxy 設定。實際上，這應該包括最常見的資料庫。
 
 以下是程式碼範例：
 
@@ -307,7 +307,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-一些程式庫需要明確設定才能使用標準 Java 系統屬性進行 Proxy 設定。
+一些資料庫需要明確設定才能使用標準 Java 系統屬性進行 Proxy 設定。
 
 使用 Apache HttpClient 的範例，需要明確呼叫
 [`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) 或使用 
@@ -417,21 +417,21 @@ API 應該在幾秒鐘內做出回應，表明 `updating` 的狀態，大約 10 
   </tr>
   <tr>
     <td></td>
-    <td>如果 IP 在 <i>VPN 閘道位址</i>空間範圍內，並透過 http proxy 設定 (預設針對使用標準 Java HTTP 用戶端程式庫的 http/s 流量所設定)</td>
+    <td>如果 IP 在 <i>VPN 閘道位址</i>空間範圍內，並透過 http proxy 設定 (預設針對使用標準 Java HTTP 用戶端資料庫的 http/s 流量所設定)</td>
     <td>任何</td>
     <td>流經 VPN</td>
-    <td><code>10.0.0.1:443</code>它也可以是主機名稱。</td>
+    <td><code>10.0.0.1:443</code><br>它也可以是主機名稱。</td>
   </tr>
   <tr>
     <td></td>
-    <td>如果 IP 不在 <i>VPN 閘道位址</i>空間範圍內，並透過 http proxy 設定 (預設針對使用標準 Java HTTP 用戶端程式庫的 http/s 流量所設定)</td>
+    <td>如果 IP 不在 <i>VPN 閘道位址</i>空間範圍內，並透過 http proxy 設定 (預設針對使用標準 Java HTTP 用戶端資料庫的 http/s 流量所設定)</td>
     <td>任何</td>
     <td>流經專用輸出 IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>忽略 http proxy 設定 (例如，如果從標準 Java HTTP 用戶端程式庫中明確移除，或者如果使用忽略標準 Proxy 設定的 Java 程式庫)
+    <td>忽略 http proxy 設定 (例如，如果從標準 Java HTTP 用戶端資料庫中明確移除，或者如果使用忽略標準 Proxy 設定的 Java 資料庫)
 </td>
     <td>80 或 443</td>
     <td>流經共用叢集 IP</td>
@@ -439,7 +439,7 @@ API 應該在幾秒鐘內做出回應，表明 `updating` 的狀態，大約 10 
   </tr>
   <tr>
     <td></td>
-    <td>忽略 http proxy 設定 (例如，如果從標準 Java HTTP 用戶端程式庫中明確移除，或者如果使用忽略標準 Proxy 設定的 Java 程式庫)</td>
+    <td>忽略 http proxy 設定 (例如，如果從標準 Java HTTP 用戶端資料庫中明確移除，或者如果使用忽略標準 Proxy 設定的 Java 資料庫)</td>
     <td>80 或 443 之外的連接埠</td>
     <td>已封鎖</td>
     <td></td>
@@ -449,7 +449,7 @@ API 應該在幾秒鐘內做出回應，表明 `updating` 的狀態，大約 10 
     <td>如果 IP 在 <i>VPN 閘道位址空間</i>範圍內，並且用戶端連線到 <code>AEM_PROXY_HOST</code> 環境變數 (使用 <code>portOrig</code> 在 <code>portForwards</code>API 參數中宣告)</td>
     <td>任何</td>
     <td>流經 VPN</td>
-    <td><code>10.0.0.1:3306</code>它也可以是主機名稱。</td>
+    <td><code>10.0.0.1:3306</code><br>它也可以是主機名稱。</td>
   </tr>
   <tr>
     <td></td>
@@ -523,6 +523,7 @@ Header always set Cache-Control private
 >[!NOTE]
 >
 > 如果所有環境都停用了進階網路，則刪除作業只會刪除基礎結構。
+> 
 
 ## 在進階網路類型之間轉換 {#transitioning-between-advanced-networking-types}
 
@@ -536,36 +537,37 @@ Header always set Cache-Control private
 >[!WARNING]
 >
 > 此程序將導致進階網路服務在刪除和重新建立之間停機
+> 
 
 如果停機導致顯著的業務衝擊，請聯絡客戶支援以尋求協助，描述已經建立的內容和變更的原因。
 
-## 適用於其他發佈區域的進階網路設定 {#advanced-networking-configuration-for-additional-publish-regions}
+## 額外發佈區域的進階網路設定 {#advanced-networking-configuration-for-additional-publish-regions}
 
-將其他區域新增到已設定進階網路的環境時，來自符合進階網路規則的其他發佈區域的流量預設會路由通過主要區域。 但是，如果主要區域無法使用，則如果未在其他區域啟用進階網路，則會捨棄進階網路流量。 如果您希望當其中一個區域發生中斷時，最佳化延遲並提高可用性，則必須為其他發佈區域啟用進階網路。 以下各節將說明兩種不同的情況。
+將額外區域新增到已設定進階網路的環境時，來自和進階網路規則相符的額外發佈區域的流量會依預設路由通過主要區域。但是，如果主要區域變成無法使用，並且在額外區域中尚未啟用進階網路，則進階網路流量會下降。如果您希望在其中一個區域發生中斷時將延遲最佳化並提高可用性，則有必要啟用額外發佈區域的進階網路。以下章節會說明兩種不同的案例。
 
 >[!NOTE]
 >
->所有區域共用相同的 [環境進階網路設定](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration)，所以無法根據流量流出地區將流量路由到不同的目的地。
+>所有區域都共用相同的[環境進階網路設定](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration)，因此無法根據流量輸出的區域將流量路由至不同的目標。
 
-### 專用輸出IP位址 {#additional-publish-regions-dedicated-egress}
+### 專用的輸出 IP 位址 {#additional-publish-regions-dedicated-egress}
 
-#### 主要區域已啟用進階網路 {#already-enabled}
+#### 進階網路已在主要區域中啟用 {#already-enabled}
 
-如果主要區域已啟用進階網路設定，請遵循下列步驟：
+如果已在主要區域中啟用進階網路設定，請依照下列步驟進行：
 
-1. 如果您已鎖定基礎架構，讓專用AEM IP位址列入允許清單，建議暫時停用該基礎架構中的任何拒絕規則。 如果不這樣做，您自己的基礎結構將會在短時間內拒絕來自新區域IP位址的請求。 請注意，如果您已透過完整網域名稱(FQDN)鎖定基礎架構，則不需要這樣做，(`p1234.external.adobeaemcloud.com`例如)，因為所有AEM區域都會從相同的FQDN輸出進階網路流量
-1. 透過對Cloud Manager建立網路基礎結構API的POST呼叫，為次要區域建立程式範圍的網路基礎結構，如進階網路檔案中所述。 有效負載的JSON設定相對於主要區域的唯一差異將是區域屬性
-1. 如果您的基礎結構必須被IP鎖定以允許AEM流量，請新增符合的IP `p1234.external.adobeaemcloud.com`. 每個區域應該有一個。
+1. 如果您已鎖定基礎結構，以便將專用的 AEM IP 位址加入允許清單，則建議暫時停用該基礎結構中的任何否決規則。如果不這樣做，有一小段時間您自己的基礎結構會拒絕來自新區域的 IP 位址的請求。請注意，如果您已透過完整網域名稱 (FQDN) 鎖定基礎結構，(例如，`p1234.external.adobeaemcloud.com`)，則沒有必要這麼做，因為所有 AEM 區域都會從相同的 FQDN 輸出進階網路流量
+1. 根據進階網路文件中的說明，可透過對 Cloud Manager Create Network Infrastructure API 的 POST 呼叫為次要區域建立計畫範圍的網路基礎結構。承載的 JSON 設定相對於主要區域的唯一差異是區域屬性
+1. 如果您的基礎結構需要由 IP 鎖定以允許 AEM 流量，請新增和 `p1234.external.adobeaemcloud.com` 相符的 IPS。每個區域都應該有一個。
 
-#### 尚未在任何地區設定進階網路 {#not-yet-configured}
+#### 尚未在任何區域中設定進階網路 {#not-yet-configured}
 
-此程式大多與先前的指示類似。 但是，如果尚未針對進階網路啟用生產環境，則有機會先在中繼環境中啟用設定以測試設定：
+此程序和先前的說明大部分類似。但是，如果尚未啟用進階網路的生產環境，則有機會先在中繼環境中啟用以測試該設定：
 
-1. 透過POST呼叫建立所有地區的網路基礎結構 [Cloud Manager建立網路基礎結構API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). 有效負載的JSON設定相對於主要區域的唯一差異將是region屬性。
-1. 對於中繼環境，請透過執行來啟用和設定環境範圍的進階網路 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. 如需詳細資訊，請參閱API檔案 [此處](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
-1. 如有必要，最好透過FQDN鎖定外部基礎架構(例如 `p1234.external.adobeaemcloud.com`)。 否則，您可以依IP位址執行此操作
-1. 如果中繼環境如預期般運作，請為生產環境啟用並設定範圍環境的進階網路設定。
+1. 透過對 [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) 的 POST 呼叫建立所有區域的網路基礎結構。 承載的 JSON 設定相對於主要區域的唯一差異是區域屬性。
+1. 若是中繼環境，可透過執行 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` 以啟用和設定環境範圍的進階網路。如需詳細資訊，請參考[這裡](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)的 API 文件。
+1. 如有必要，可鎖定外部基礎結構，最好透過 FQDN (例如`p1234.external.adobeaemcloud.com`)。不然可透過 IP 位址進行
+1. 如果中繼環境按預期運作，請啟用並設定環境範圍的進階網路設定以進行生產。
 
 #### VPN {#vpn-regions}
 
-此程式幾乎與專用輸出IP位址指示相同。 唯一的差異在於，除了設定與主要區域不同的區域屬性外， `connections.gateway` 欄位可選擇性設定為路由至您的組織所操作的不同VPN端點，可能在地理上更接近新區域。
+該程序和專用的輸出 IP 位址說明幾乎相同。唯一的差異是，除了區域屬性的設定和主要區域不同之外，可選擇將 `connections.gateway` 欄位設定為路由至由貴組織操作的不同 VPN 端點，地理位置也許會更接近新區域。
