@@ -3,9 +3,9 @@ title: 新增自訂網域名稱
 description: 了解如何使用 Cloud Manager 新增自訂網域名稱。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -84,9 +84,9 @@ CDN 部署需要有效的 SSL 憑證和成功的 TXT 驗證。這由狀態指示
 
    ![新增自訂網域名稱](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. 檢查在&#x200B;**新增網域名稱**&#x200B;對話框並單擊&#x200B;**繼續**。
+1. 檢查在&#x200B;**新增網域名稱**&#x200B;對話框中選取的值並按一下「**繼續**」。
 
-   ![網域名稱視窗](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+   ![網路名稱視窗](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
    >[!NOTE]
    >
