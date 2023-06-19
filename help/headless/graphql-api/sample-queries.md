@@ -4,9 +4,9 @@ description: 透過探索範例內容和查詢，了解如何搭配使用 GraphQ
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1760'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 92%
 >* [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 >* [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [與內容片段搭配使用的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
-
 
 若要開始使用 GraphQL 查詢，及了解它們如何與 AEM 內容片段搭配使用，查看一些實際範例會有所幫助。
 
@@ -49,14 +48,13 @@ ht-degree: 92%
 >* **工具** -> **一般** -> **GraphQL 查詢編輯器**
 >* 直接；例如 `http://localhost:4502/aem/graphiql.html`
 
-
 >[!NOTE]
 >
 >範例查詢是根據[與 GraphQL 搭配使用的範例內容片段結構](#content-fragment-structure-graphql)
 
-### 範例查詢 - 所有可用的結構描述和資料類型 {#sample-all-schemes-datatypes}
+### 範例查詢 - 所有可用的綱要和資料類型 {#sample-all-schemes-datatypes}
 
-這將傳回所有可用結構描述的所有 `types`。
+這將傳回所有可用綱要的所有 `types`。
 
 **範例查詢**
 
@@ -232,7 +230,7 @@ ht-degree: 92%
 
 ### 範例查詢 - 所有城市的名稱 {#sample-names-all-cities}
 
-這是簡單查詢可傳回 `city` 結構描述中所有項目的 `name`。
+這是簡單查詢可傳回 `city` 綱要中所有項目的 `name`。
 
 **範例查詢**
 
@@ -364,14 +362,14 @@ query {
 }
 ```
 
-### 範例查詢 - 所有城市的名稱 已標籤為分行符號 {#sample-names-all-cities-tagged-city-breaks}
+### 範例查詢 - 所有城市的名稱 標記為「City Breaks」 {#sample-names-all-cities-tagged-city-breaks}
 
 如果您：
 
-* 建立各種標籤，已命名 `Tourism` ： `Business`， `City Break`， `Holiday`
-* 並將它們指派給各種變數的主變數 `City` 執行個體
+* 建立了名為 `Tourism` 的各種標記：`Business`、`City Break`、`Holiday`
+* 並將這些標記指派給各種 `City` 執行個體的主版變化
 
-然後，您可以使用查詢來傳回 `name` 和 `tags`中所有標示為「城市分隔符號」的專案 `city`結構描述。
+接著您可以使用查詢傳回在 `city` 綱要中標記為「City Breaks」之所有項目的 `name` 和 `tags` 的詳細資料。
 
 **範例查詢**
 
@@ -1157,12 +1155,11 @@ query {
 這些是根據 WKND 專案的範例查詢。其：
 
 * 內容片段模型可在以下位置取用：
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * 內容片段 (和其他內容) 可在以下位置取用：
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
-
-   `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
 
 >[!NOTE]
 >
@@ -1585,11 +1582,11 @@ query {
 }
 ```
 
-### 給定模型的多個內容片段及其變體的範例查詢 {#sample-wknd-multiple-fragment-variations-given-model}
+### 對指定模式的多個內容片段及其變化的範例查詢 {#sample-wknd-multiple-fragment-variations-given-model}
 
 此查詢會質詢：
 
-* 型別為的內容片段 `article` 和所有變數
+* 類型為 `article` 的內容片段和所有變化
 
 **範例查詢**
 
@@ -1612,11 +1609,11 @@ query {
 }
 ```
 
-### 附加特定標籤之指定模型的內容片段變體範例查詢{#sample-wknd-fragment-variations-given-model-specific-tag}
+### 對附加了特定標記的指定模式的內容片段變化的範例查詢{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 此查詢會質詢：
 
-* 型別為的內容片段 `article` 一或多個具有標籤的變數 `WKND : Activity / Hiking`
+* 類型為 `article` 的內容片段以及具有 `WKND : Activity / Hiking` 標記的一或多種變化
 
 **範例查詢**
 
@@ -1720,12 +1717,12 @@ query {
 }
 ```
 
-### 依_tags ID篩選並排除變數的範例查詢 {#sample-filtering-tag-not-variations}
+### 依 _tags ID 進行篩選並排除變化的範例查詢 {#sample-filtering-tag-not-variations}
 
 此查詢會質詢：
 
-* 型別為的內容片段 `vehicle` 擁有標籤 `big-block`
-* 排除變數
+* 類型為 `vehicle` 且具有 `big-block` 標記的內容片段
+* (排除變化)
 
 **範例查詢**
 
@@ -1755,12 +1752,12 @@ query {
 } 
 ```
 
-### 依_tags ID篩選並包含變數的範例查詢 {#sample-filtering-tag-with-variations}
+### 依 _tags ID 進行篩選並包含變化的範例查詢 {#sample-filtering-tag-with-variations}
 
 此查詢會質詢：
 
-* 型別為的內容片段 `vehicle` 擁有標籤 `big-block`
-* 包含變數
+* 類型為 `vehicle` 且具有 `big-block` 標記的內容片段
+* (包含變化)
 
 **範例查詢**
 
@@ -1802,11 +1799,11 @@ query {
 
 這些範例查詢是根據以下結構，該結構使用：
 
-* 一個或多個[範例內容片段模型](#sample-content-fragment-models-schemas) - 構成 GraphQL 結構描述的基礎
+* 一個或多個[範例內容片段模型](#sample-content-fragment-models-schemas) - 構成 GraphQL 綱要的基礎
 
 * 根據上述模型的[範例內容片段](#sample-content-fragments)
 
-### 範例內容片段結構 (結構描述) {#sample-content-fragment-models-schemas}
+### 範例內容片段結構 (綱要) {#sample-content-fragment-models-schemas}
 
 對於範例查詢，我們將使用以下內容模型及其相互關係 (參考 ->)：
 
@@ -1822,7 +1819,7 @@ query {
 
 | 欄位名稱 | 資料類型 | 參考 |
 |--- |--- |--- |
-| 公司名稱 | 單行文字 |  |
+| 公司名稱 | 單行文字 | |
 | CEO | 片段參考 (單一) | [人員](#model-person) |
 | 員工 | 片段參考 (多個欄位) | [人員](#model-person) |
 
@@ -1832,8 +1829,8 @@ query {
 
 | 欄位名稱 | 資料類型 | 參考 |
 |--- |--- |--- |
-| 名稱 | 單行文字 |  |
-| 名字 | 單行文字 |  |
+| 名稱 | 單行文字 | |
+| 名字 | 單行文字 | |
 | 獎項 | 片段參考 (多個欄位) | [獎項](#model-award) |
 
 #### 獎項 {#model-award}
@@ -1842,8 +1839,8 @@ query {
 
 | 欄位名稱 | 資料類型 | 參考 |
 |--- |--- |--- |
-| 快速鍵/ID | 單行文字 |  |
-| 標題 | 單行文字 |  |
+| 快速鍵/ID | 單行文字 | |
+| 標題 | 單行文字 | |
 
 #### 城市 {#model-city}
 
@@ -1851,10 +1848,10 @@ query {
 
 | 欄位名稱 | 資料類型 | 參考 |
 |--- |--- |--- |
-| 名稱 | 單行文字 |  |
-| 國家/地區 | 單行文字 |  |
-| 人口 | 數字 |  |
-| 類別 | 標記 |  |
+| 名稱 | 單行文字 | |
+| 國家/地區 | 單行文字 | |
+| 人口 | 數字 | |
+| 類別 | 標記 | |
 
 ### 範例內容片段 {#sample-content-fragments}
 
@@ -1872,14 +1869,14 @@ query {
 
 | 名稱 | 名字 | 獎項 |
 |--- |--- |--- |
-| Lincoln | Abe |  |
-| Smith | Adam |  |
+| Lincoln | Abe | |
+| Smith | Adam | |
 | Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke |  |
-| Smith | Joe |  |
+| Marsh | Duke | |
+| Smith | Joe | |
 | Croft | Lara | Gamestar |
 | Caulfield | 最大值 | Gameblitz |
-| 工作 | Steve |  |
+| 工作 | Steve | |
 
 #### 獎項 {#fragment-award}
 
