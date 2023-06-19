@@ -4,9 +4,9 @@ description: 安裝 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 21f33c0b8710dd9d9db30543defff7dae9942c06
+source-git-commit: aa183901e80ba414fc3db5af01fbc49d082af7b6
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '779'
 ht-degree: 2%
 
 ---
@@ -30,14 +30,28 @@ ht-degree: 2%
 >
 >* 另請參閱 [適用於Experience Manager Assets增強型聯結器的Workfront合作夥伴認證考試](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 如需有關考試的資訊，請參閱 [考試指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 在安裝聯結器之前，請遵循下列預先安裝步驟：
 
-1. [設定防火牆](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html). 若要瞭解中的IP叢集 [!DNL Workfront]，導覽至 [!UICONTROL 設定] > [!UICONTROL 系統] > [!UICONTROL 客戶資訊].
+1. 如果您的AEMas a Cloud Service程式已設定進階網路並啟用IP允許清單，則您需要將Workfront IP新增至此允許清單，以允許事件訂閱和各種API呼叫傳遞到AEM。
 
-1. 在Dispatcher上，允許名為的HTTP標頭 `authorization`， `username`、和 `apikey`. 允許 `GET`， `POST`、和 `PUT` 要求 `/bin/workfront-tools`.
+   * [Workfront叢集IP](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). 若要瞭解中的IP叢集 [!DNL Workfront]，導覽至 **[!UICONTROL 設定]** > **[!UICONTROL 系統]** > **[!UICONTROL 客戶資訊]**.
 
-1. 請確定以下路徑不存在於 [!DNL Experience Manager] 存放庫：
+   * [Workfront事件訂閱API IP](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
+
+   >[!IMPORTANT]
+   >
+   >* 如果您已為方案設定進階網路，且正在使用IP允許清單，則由於增強Workfront聯結器架構的限制，您還需要將方案輸出IP新增到Cloud Manager中的允許清單。
+   >
+   >* p{PROGRAM_ID}.external.adobeaemcloud.com
+   >
+   >* 若要尋找程式的IP，請開啟終端機視窗並執行命令，例如：
+   >
+   >    ```TXT
+   >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
+   >
+   >    ```
+
+1. 確定下列覆蓋圖不存在於 [!DNL Experience Manager] 存放庫。 如果您在這些路徑上預先存在覆蓋圖，則需要移除覆蓋圖，或合併兩者之間的變更差異：
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`
