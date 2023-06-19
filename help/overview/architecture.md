@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 架構簡介
 description: Adobe Experience Manager as a Cloud Service 架構簡介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1827'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service 提供三種類型的環境：
 
 * **開發環境**：開發人員可在與預備和生產環境相同的執行階段條件下，實作 AEM 應用程式。
 
-   如需詳細資訊，請參閱[管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant#using-cloud-manager)。
+  如需詳細資訊，請參閱[管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant#using-cloud-manager)。
 
 * **快速開發環境**：允許快速開發疊代進行全新或現有程式碼的除錯。
 
@@ -122,20 +122,20 @@ AEM as a Cloud Service 最初提供兩種類型的方案：
       * 製作層級的登入活動由 Adobe Identity Management Services (IMS) 管理。
 
       * Assets 整合與處理作業會使用專屬的 Assets Compute Service。
+
    * 預覽層級是由單一預覽節點所組成。這用於在發佈到發佈層級之前，確保內容的品質。
 
-   * 發佈層級是由單一發佈伺服器陣列中兩個或多個節點所組成。
+   * 發佈層級會由單一發佈伺服器陣列中兩個或更多節點組成。
 
-      * 節點可以獨立運作。
+      * 這些節點可以彼此獨立運作。
 
-      * 每個節點均包含 AEM 發佈者和具備 AEM Dispatcher 模組的網頁伺服器，
+      * 每個節點皆包含 AEM 發佈者和具備 AEM Dispatcher 模組的網頁伺服器。
 
-      * 而節點會根據網站流量需求自動調整規模。
+      * 節點會根據網站流量需求自動調整規模。
 
-      * 然而，預設情況下，主要區域中有一個發佈陣列 [其他發佈區域](/help/operations/additional-publish-regions.md) 可能獲得授權。
+      * 預設情況下，主要區域中只有單一發佈伺服器陣列，但可能授權[額外發佈區域](/help/operations/additional-publish-regions.md)。
 
       * 一般使用者或網站訪客能透過 AEM Publish Service 造訪網站。
-
 
 * AEM Assets as a Cloud Service：
 
@@ -151,9 +151,9 @@ AEM as a Cloud Service 最初提供兩種類型的方案：
 
    * 內容從作者層級核准後，即表示可啟動內容，因此內容會推送至發佈層級的持續層，或選擇推送至預覽層級。此過程會透過複製服務 (一種中介管道) 來實現。此管道會接收新內容，而個別發佈服務 (或預覽服務) 節點會訂閱推送至管道的內容。
 
-      >[!NOTE]
-      >
-      >如需詳細資訊，請參閱[複製](/help/operations/replication.md)。
+     >[!NOTE]
+     >
+     >如需詳細資訊，請參閱[複製](/help/operations/replication.md)。
 
    * 開發人員和管理員能使用 Continuous Integration/Continuous Delivery (CI/CD) 服務 (可透過 [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager) 取得) 管理 AEM as a Cloud Service，包括使用 Cloud Manager 的 CI/CD 管道來部署程式碼和設定。任何與監控、維護和疑難排解相關的項目 (例如記錄檔)，都會向 Cloud Manager 中的客戶公開。
 
