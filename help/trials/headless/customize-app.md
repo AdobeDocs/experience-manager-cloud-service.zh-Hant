@@ -4,10 +4,10 @@ description: 使用範例 React 應用程式，了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 469ebc7c3cae6dbfc38077e841db3c61ca16c680
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 100%
+source-wordcount: '1038'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 1. 在編輯器畫面的右上方，點選或按一下「**預覽**」按鈕。
 
-1. 示範應用程式會在新標籤中開啟。該應用程式適用於虛構的 WKND 戶外生活方式品牌。按一下不同內容，以導覽範例內容。
+1. 示範應用程式會在新標籤中開啟。該應用程式適用於虛構的 WKND 戶外生活方式品牌。向下捲動頁面以導覽範例內容。
 
 1. 返回內容片段編輯器的瀏覽器標籤，並且繼續。
 
