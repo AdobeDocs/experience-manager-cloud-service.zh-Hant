@@ -382,7 +382,7 @@ ht-degree: 99%
    + [ [!DNL Assets] 中的協助工具](/help/assets/accessibility.md)
    + 管理數位資產 {#manage}
       + [微前端資產選擇器](/help/assets/asset-selector.md)
-      + [微前端目的地選擇器](/help/assets/destination-selector.md)
+      + [微前端目標選擇器](/help/assets/destination-selector.md)
       + [共用資產](/help/assets/share-assets.md)
       + [監控活動和 DAM 任務](/help/assets/assets-activity-history.md)
       + [開始使用資產微服務](/help/assets/asset-microservices-configure-and-use.md)
@@ -391,8 +391,8 @@ ht-degree: 99%
       + [資產管理常見任務](/help/assets/manage-digital-assets.md)
       + [管理出版物](/help/assets/manage-publication.md)
       + [預覽 3D 資產](/help/assets/dynamic-media/previewing-3d-assets.md)
-      + [影像的智慧標記](/help/assets/smart-tags.md)
-      + [為您視訊資產加上智慧標記](/help/assets/smart-tags-video-assets.md)
+      + [影像的智慧型標記](/help/assets/smart-tags.md)
+      + [為您視訊資產加上智慧型標記](/help/assets/smart-tags-video-assets.md)
       + [如何組織資產](/help/assets/organize-assets.md)
       + [使用 [!DNL Adobe Stock] 資產](/help/assets/aem-assets-adobe-stock.md)
       + [管理收藏集](/help/assets/manage-collections.md)
@@ -518,7 +518,7 @@ ht-degree: 99%
    + 設定和移轉{#setup-configure-migrate}
       + [Cloud Service 環境入門](/help/forms/setup-forms-cloud-service.md)
       + [設定本機開發環境](/help/forms/setup-local-development-environment.md)
-      + [在 AEM Forms as a Cloud Service 和本地開發環境中啟用調適型表單核心元件](/help/forms/enable-adaptive-forms-core-components.md)
+      + [在 AEM Forms as a Cloud Service 和本地開發環境中啟用最適化表單核心元件](/help/forms/enable-adaptive-forms-core-components.md)
       + [設定統一的儲存連接器](/help/forms/configure-unified-storage-connector.md)
       + [從  [!DNL AEM 6.5 Forms]  或更早版本移轉至  [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [群組與權限](/help/forms/forms-groups-privileges-tasks.md)
@@ -530,7 +530,7 @@ ht-degree: 99%
          + [將 AEM Forms as a Cloud Service 與 Adobe Analytics 整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [建立或新增調適型表單至 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+         + [建立或新增最適化表單至 AEM Sites 頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 表單資料模式 {#use-form-data-model}
          + [將資料來源連線到 Cloud Service](/help/forms/data-integration.md)
          + [設定資料來源](/help/forms/configure-data-sources.md)
@@ -841,7 +841,7 @@ ht-degree: 99%
          + [使用 Sling 介面卡](/help/implementing/developing/introduction/sling-adapters.md)
          + [在 AEM as a Cloud Service 中使用 Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md)
          + [AEM as a Cloud Service 中的覆蓋](/help/implementing/developing/introduction/overlays.md)
-         + [使用用戶端程式庫](/help/implementing/developing/introduction/clientlibs.md)
+         + [使用用戶端資料庫](/help/implementing/developing/introduction/clientlibs.md)
          + [頁面差異](/help/implementing/developing/introduction/page-diff.md)
          + [編輯器限制](/help/implementing/developing/introduction/editor-limitations.md)
          + [命名慣例](/help/implementing/developing/introduction/naming-conventions.md)
@@ -914,7 +914,7 @@ ht-degree: 99%
          + [SDK 和 CLI ](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
          + [建立應用程式](/help/implementing/developing/extending/app-builder/videos/create.md)
          + [動作](/help/implementing/developing/extending/app-builder/videos/actions.md)
-         + [儲存程式庫](/help/implementing/developing/extending/app-builder/videos/storage-libraries.md)
+         + [儲存資料庫](/help/implementing/developing/extending/app-builder/videos/storage-libraries.md)
          + [事件驅動的應用程式](/help/implementing/developing/extending/app-builder/videos/event-driven-applications.md)
          + [前端應用程式](/help/implementing/developing/extending/app-builder/videos/front-end-applications.md)
          + [安全性](/help/implementing/developing/extending/app-builder/videos/security.md)
@@ -936,9 +936,9 @@ ht-degree: 99%
       + [為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md)
       + [OSGi 設定 API](/help/implementing/deploying/osgi-configuration-api.md)
       + [資源對應](/help/implementing/deploying/resource-mapping.md)
-   + 編寫階層 {#author-tier}
-      + [存取編寫階層](/help/implementing/author-tier/accessing-the-author-tier.md)
-      + [保護編寫階層](/help/implementing/author-tier/securing-the-author-tier.md)
+   + 作者階層 {#author-tier}
+      + [存取作者階層](/help/implementing/author-tier/accessing-the-author-tier.md)
+      + [保護作者階層](/help/implementing/author-tier/securing-the-author-tier.md)
    + 預覽階層 {#preview-tier}
       + [設定預覽階層的 OSGi 設定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + 內容傳遞概覽 {#content-delivery}
@@ -959,7 +959,7 @@ ht-degree: 99%
    + [行動中心](/help/operations/actions-center.md)
    + [內容搜尋與索引](/help/operations/indexing.md)
    + [內容複寫服務](/help/operations/replication.md)
-   + [其他發佈區域](/help/operations/additional-publish-regions.md)
+   + [額外發佈區域](/help/operations/additional-publish-regions.md)
    + [AEM as a Cloud Service 中的基礎結構和服務監視](/help/operations/monitoring.md)
    + [維護任務](/help/operations/maintenance.md)
    + [備份和還原](/help/operations/backup.md)

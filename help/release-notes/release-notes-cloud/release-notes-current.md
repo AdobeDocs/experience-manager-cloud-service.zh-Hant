@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
 workflow-type: tm+mt
 source-wordcount: '1095'
-ht-degree: 30%
+ht-degree: 62%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 30%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本(2023.4.0)為2023年6月7日。 下一個功能版本 (2023.6.0) 計畫預計於 2023 年 6 月 29 日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2023.4.0) 的發行日期為 2023 年 6 月 7 日。下一個功能版本 (2023.6.0) 預計於 2023 年 6 月 29 日發行。
 
 ## 發行影片 {#release-video}
 
-請觀看2023年4月版本概觀影片，瞭解2023.4.0版本新增功能摘要：
+請觀看 2023 年 4 月發行概觀影片，以了解 2023.4.0 版本新增功能摘要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418681/?quality=12)
 
@@ -41,32 +41,32 @@ ht-degree: 30%
 * 將 AEM as a Cloud Service 中的內容片段匯出到 Adobe Target 作為 JSON 選件。
 * 支援 GraphQL 分頁和排序，以及內部快取增強功能，現在可協助提升分離的用戶端應用程式在使用複雜 GraphQL 查詢和篩選器從 AEM 擷取大型內容集時的工作效能。
 
-### 中的新功能 [!DNL Experience Manager Sites] 預約 {#prerelease-sites}
+### [!DNL Experience Manager Sites] 預先發佈的新功能 {#prerelease-sites}
 
-* 內容片段及其參考現已可發佈至 [AEM預覽服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) 使用 [內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en)，可讓使用者在離線的預覽應用程式上線前預覽最終體驗。
+* 內容片段及其參考資料現在可以發佈到 [AEM 預覽服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant#access-preview-service) (使用[內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hant))，讓使用者在上線前可在分離的預覽應用程式上先預覽最終體驗。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* 已新增對 WebP 影像的支援以自動擷取中繼資料、產生縮圖和自訂轉譯。這些檔案現在也支援智慧標籤功能。 WebP不支援Dynamic Media功能作為輸入格式。
+* 已新增對 WebP 影像的支援以自動擷取中繼資料、產生縮圖並自訂轉譯。這些檔案現在也支援智慧型標記功能。WebP 不支援將 Dynamic Media 功能用為輸入格式。
 
-* [搜尋體驗增強功能](/help/assets/search-assets.md#aftersearch)  — 您現在可以對搜尋結果中顯示的資產快速執行下列操作：
+* [搜尋體驗增強功能](/help/assets/search-assets.md#aftersearch) - 您現在可以對搜尋結果中顯示的資產快速執行以下作業：
 
    * 建立工作流程
    * 建立版本
    * 建立資產關聯或取消關聯
 
-     您不需要導覽至資產位置並檢視其屬性，即可執行這些作業。
+     若要執行這些作業，您並不需要瀏覽至資產位置及檢視其屬性。
 
-* 色彩搜尋Facet可用性改善 — 現在可編輯色彩值的輸入欄位，且搜尋結果僅會在您退出檢色器時更新。
+* 顏色搜尋面向的可用性改進 - 顏色值的輸入欄位現在為可編輯，搜尋結果只在您退出檢色器時才會更新。
 
 * 推出新的通訊協定支援(DASH - Dynamic Adaptive Streaming over HTTP)，適用於Dynamic Media影片傳送中的最適化資料流（已啟用CMAF）：
    * 自適應串流 (DASH/HLS) 可確保更好的一般使用者觀看影片體驗
    * DASH 是自適應影片串流的國際標準通訊協定，在業界被廣泛採用
-   * 可在所有區域使用，透過支援票證啟用
+   * 「在所有區域提供」將透過支援票證啟用
 
-* Dynamic Media _快照_  — 實驗測試影像或Dynamic Media URL，以檢視不同影像修飾元的輸出，並評估檔案大小（使用WebP和AVIF傳送）、網路頻寬和裝置畫素比的智慧型影像最佳化。 另請參閱 [Dynamic Media快照](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* Dynamic Media _快照_  — 實驗測試影像或Dynamic Media URL，以檢視不同影像修飾元的輸出，並評估檔案大小（使用WebP和AVIF傳送）、網路頻寬和裝置畫素比的智慧型影像最佳化。 請參閱 [Dynamic Media 快照](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html)。
 
 ### 中的功能 [!DNL Assets] 發行前 {#prerelease-feature-assets}
 
@@ -80,11 +80,11 @@ ht-degree: 30%
 
 ### [!DNL Forms] 發行前版本的功能 {#prerelease-features-forms}
 
-* [AEM頁面編輯器中的最適化Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您現在可以使用AEM頁面編輯器快速建立多個表單並新增至您的網站頁面。 此功能可讓內容作者運用最適化表單元件的功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面內建立順暢的資料擷取體驗。 您可以：
+* [AEM 頁面編輯器中的最適化表單](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您現在可以使用 AEM 頁面編輯器快速建立多個表單，並將這些表單新增至您的 Sites 頁面。 此功能讓內容作者可使用最適化表單元件 (包括動態行為、驗證、資料整合、產生記錄文件和業務流程自動化) 的強大功能，在 Sites 頁面內建立順暢的資料擷取體驗。 您可以：
 
-   * 建立最適化表單，方法是拖放表單元件至AEM Sites編輯器或體驗片段中的最適化Forms容器元件。
+   * 將表單元件拖放到 AEM Sites 編輯器或體驗片段中的最適化表單容器元件，即可建立最適化表單。
    * 在AEM Sites編輯器中使用最適化Forms精靈，以便您可以建立獨立於任何Sites頁面的表單，讓您自由地在多個頁面中重複使用此類表單。
-   * 新增多個表單至Sites頁面，精簡使用者體驗並提供更大的彈性。
+   * 將多個表單新增到 Sites 頁面，簡化使用者體驗並提供更大的靈活性。
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -105,13 +105,13 @@ ht-degree: 30%
 * 在表單應用程式中重複使用您的專屬 UI 元件
 * 運用Adobe Experience Manager Forms的強大功能
 
-您可以傳送電子郵件至 `aem-forms-headless@adobe.com` 從您的正式電子郵件ID加入早期採用者計畫。
+使用您的官方電子郵件 ID 寄送電子郵件至 `aem-forms-headless@adobe.com`，即可加入早期採用者計劃。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 其他發佈區域：除了主要區域外，客戶最多可授權三個發佈區域。 流量會路由至其他發佈陣列，以降低特定請求的延遲，並增強抵禦區域中斷的能力。 如需授權的相關資訊，請聯絡您的Adobe客戶經理 [其他發佈區域](/help/operations/additional-publish-regions.md) 您的程式。
+* 額外發佈區域：除了主要區域外，Sites 客戶最多可授權三個發佈區域。流量會路由至其他發佈陣列，以降低特定請求的延遲，並增強抵禦區域中斷的能力。 如需授權您的計畫[額外發佈區域](/help/operations/additional-publish-regions.md)的資訊，請和您的 Adob&#x200B;&#x200B;e 客戶經理聯絡。
 
 ## 維護版本發行說明 {#maintenance}
 

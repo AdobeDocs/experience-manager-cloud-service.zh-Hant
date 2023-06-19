@@ -4,7 +4,7 @@ description: 以下是 AEM as a Cloud Service 中 Cloud Manager 2023.6.0 的發�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: deef27dd90be22669b2328f6e394b8d3df99b4b9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 100%
 
