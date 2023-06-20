@@ -4,7 +4,7 @@ description: 以下專案之間的整合簡介： [!DNL Assets] 和 [!DNL Workfr
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 4%
@@ -34,13 +34,14 @@ ht-degree: 4%
 
 請參閱 [以下支援的功能可供比較](#feature-parity-matrix) 原生整合或兩個解決方案之間使用聯結器的整合之間的關聯。
 
-
+>[!IMPORTANT]
+>
+>自2022年6月起，Adobe已發行新的原生整合，用於將Workfront與Adobe Experience Manager Assetsas a Cloud Service連線。 此整合已成為連線這兩個解決方案的必要方法。 日後任何新實施的增強型聯結器（1.9.8及更新版本）都會遭到封鎖，而無法連線Workfront與AEM Assetsas a Cloud Service。 如需如何設定此整合的詳細資訊，請參閱 [設定Experience Manager Assetsas a Cloud Service整合](workfront-connector-configure.md).
+>
 
 請參閱平台支援和 [增強型聯結器的先決條件](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
->
->* 自2022年6月起，Adobe已發行新的原生整合，用於將Workfront與Adobe Experience Manager Assetsas a Cloud Service連線。 此整合已成為連線這兩個解決方案的必要方法。 日後任何新實施的增強型聯結器（1.9.8及更新版本）都會遭到封鎖，而無法連線Workfront與AEM Assetsas a Cloud Service。 如需如何設定此整合的詳細資訊，請參閱 [設定Experience Manager Assetsas a Cloud Service整合](workfront-connector-configure.md).
 >
 >* Adobe需要部署和設定 [!DNL Adobe Workfront for Experience Manager enhanced connector] 僅透過認證合作夥伴或 [!DNL Adobe Professional Services]. 如果部署與設定沒有認證合作夥伴或 [!DNL Adobe Professional Services]，Adobe不支援。
 >
