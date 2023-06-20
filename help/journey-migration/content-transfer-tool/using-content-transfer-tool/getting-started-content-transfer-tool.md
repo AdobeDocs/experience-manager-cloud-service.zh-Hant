@@ -2,10 +2,10 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 22%
+source-wordcount: '1439'
+ht-degree: 21%
 
 ---
 
@@ -52,6 +52,8 @@ ht-degree: 22%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
+>[!NOTE]
+>此標幟僅適用於偵錯SSL問題。 在執行擷取之前，請確定旗標已停用，因為它可能需要大量的磁碟空間。 這可能會填滿磁碟機容量，導致擷取程式失敗。
 
 ## 執行「內容轉移工具」  {#running-tool}
 
