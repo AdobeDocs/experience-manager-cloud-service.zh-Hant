@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: beb6ac3dbb036559510e6a2e2700b28c433ef98d
+source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 38%
+source-wordcount: '372'
+ht-degree: 37%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 38%
 
 - ASSETS-25729 — 檢視切換器功能表被切斷
 - ASSETS-25728 — 重新處理資產選項在搜尋檢視中無法使用
+- ASSETS-22603 — 某些下載型別的資產報表欄在UI中顯示「null」值。 可下載的CSV不受影響。
 
 ### 已修正的問題 {#fixed-issues-12255}
 
