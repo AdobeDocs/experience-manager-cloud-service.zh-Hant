@@ -4,9 +4,9 @@ description: 瞭解如何在AEM中使用語言複製精靈。
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '285'
 ht-degree: 16%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 16%
 
    >[!NOTE]
    >
-   >如果您在上一步選取了多種語言，將會建立多個翻譯專案。
+   >如果您在上一個步驟中選取了多種語言，則會建立多個翻譯專案。
 
    ![精靈的翻譯步驟](../assets/language-copy-wizard-translate.png)
 

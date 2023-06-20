@@ -2,9 +2,9 @@
 title: 您的收件匣
 description: 使用收件匣管理您的工作
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '909'
 ht-degree: 18%
 
 ---
@@ -30,7 +30,6 @@ ht-degree: 18%
 >* [專案](/help/sites-cloud/authoring/projects/overview.md)
 >* [專案 — 使用任務](/help/sites-cloud/authoring/projects/tasks.md)
 >* [工作流程](/help/sites-cloud/authoring/workflows/overview.md)
-
 
 ## 標題中的收件匣 {#inbox-in-the-header}
 
@@ -86,26 +85,26 @@ ht-degree: 18%
 
 * **日曆檢視**
 
-   對象 **行事曆檢視** 您可以設定：
+  對象 **行事曆檢視** 您可以設定：
 
    * **分組依據**
    * **排程** 或無 ****
    * **卡片大小**
 
-   ![收件匣行事曆檢視設定](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+  ![收件匣行事曆檢視設定](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **清單檢視**
 
-   對象 **清單檢視** 您可以設定排序機制：
+  對象 **清單檢視** 您可以設定排序機制：
 
    * **排序依據**
    * **排序順序**
 
-   ![收件匣清單檢視設定](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+  ![收件匣清單檢視設定](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   您也可以將行事曆委派給其他使用者，以及請求其他使用者的委派和管理您的委派。
+  您也可以將行事曆委派給其他使用者，以及請求其他使用者的委派和管理您的委派。
 
-   ![收件匣清單檢視委派設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+  ![收件匣清單檢視委派設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## 對專案採取動作 {#taking-action-on-an-item}
 
@@ -126,6 +125,7 @@ ht-degree: 18%
       * 顯示專案屬性
       * 開啟適當的儀表板或精靈以進一步操作
       * 開啟相關檔案
+
    * **後退** 至上一步
    * 檢視工作流程的裝載
    * 從專案建立專案
@@ -135,7 +135,6 @@ ht-degree: 18%
    >如需進一步詳細資訊，請參閱：
    >
    >* 工作流程專案 —  [參與工作流程](/help/sites-cloud/authoring/workflows/participating.md)
-
 
 2. 視選取的專案而定，將會啟動動作，例如：
 
@@ -152,7 +151,6 @@ ht-degree: 18%
    * 確認適當的動作，例如重新指派。
    * 取消動作
    * 選取「上一步」箭頭可返回收件匣，例如，如果已開啟動作精靈或檔案頁面，則可返回「收件匣」。
-
 
 ## 建立任務 {#creating-a-task}
 
@@ -176,7 +174,7 @@ ht-degree: 18%
 
    * **進階**
 
-      * **名稱**：這將用於形成URL，如果留空，它將根據 **標題**.
+      * **名稱**：用於組成URL，如果留空，則會根據 **標題**.
 
    ![收件匣新增任務進階選項](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
@@ -205,9 +203,11 @@ ht-degree: 18%
       * **開始日期**
       * **到期日期**
       * **使用者** 和角色
+
    * **進階**
 
       * **名稱**
+
    >[!NOTE]
    >
    >另請參閱 [建立專案](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) 以取得完整資訊。

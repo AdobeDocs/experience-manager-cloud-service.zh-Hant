@@ -2,9 +2,9 @@
 title: 編輯器限制
 description: 觸控式UI中的編輯器會使用覆蓋來與限制在iframe中的內容互動。 這個互動會對編輯器的使用以及開發人員造成一些限制。
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 10%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 10%
 
 頁面的內文元素不支援100%高度。
 
-* 您可以透過以下方式「拉伸」body元素，實作全熒幕內文：
+* 暫行解決方法是透過「拉伸」body元素來實作全熒幕內文，如下所示：
 
 ```xml
 body {

@@ -2,10 +2,10 @@
 title: 了解 Headless  內容以及如何在 AEM 中翻譯
 description: 了解無周邊概念、它們如何對應到 AEM 以及 AEM 翻譯理論。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 全堆疊內容傳遞 {#full-stack}
 
-自從易於使用的大型內容管理系統 (CMS) 興起以來，組織就將其作為管理訊息、品牌和通訊的中心位置。使用 CMS 做為管理體驗的中心點可以提升效率，因為就不需要在各個不同系統重複任務。
+自易於使用的大型內容管理系統(CMS)興起以來，組織便將其用作管理傳訊、品牌和通訊的中心位置。 使用 CMS 做為管理體驗的中心點可以提升效率，因為就不需要在各個不同系統重複任務。
 
 ![傳統的全堆疊 CMS](/help/journey-headless/developer/assets/full-stack.png)
 

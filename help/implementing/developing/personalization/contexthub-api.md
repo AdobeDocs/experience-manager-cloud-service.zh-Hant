@@ -2,9 +2,9 @@
 title: ContextHub Javascript API參考
 description: 將ContextHub元件新增至頁面後，您的指令碼即可使用ContextHub Javascript API
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4622'
+source-wordcount: '4620'
 ht-degree: 2%
 
 ---
@@ -697,7 +697,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 當 `triggerForPastEvents` 引數為 `true`，此函式傳回 `boolean` 指出事件是否過去發生的值：
 
-* `true`：此事件發生在過去，且將會呼叫處理常式。
+* `true`：此事件發生在過去，且系統會呼叫處理常式。
 * `false`：此事件過去未發生。
 
 若 `triggerForPastEvents` 是 `false`，此函式不會傳回任何值。
@@ -737,7 +737,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 當 `triggerForPastEvents` 引數為 `true`，此函式傳回 `boolean` 指出事件是否過去發生的值：
 
-* `true`：此事件發生在過去，且將會呼叫處理常式。
+* `true`：此事件發生在過去，且系統會呼叫處理常式。
 * `false`：此事件過去未發生。
 
 若 `triggerForPastEvents` 是 `false`，此函式不會傳回任何值。

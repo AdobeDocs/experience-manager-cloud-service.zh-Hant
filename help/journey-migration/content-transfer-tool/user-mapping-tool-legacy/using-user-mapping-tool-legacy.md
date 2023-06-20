@@ -4,9 +4,9 @@ description: 使用使用者對應工具（舊版）
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '831'
 ht-degree: 3%
 
 ---
@@ -61,17 +61,17 @@ ht-degree: 3%
 
    * **組織ID**：輸入要移轉使用者之組織的AdobeIdentity Management System (IMS)組織ID。
 
-      >[!NOTE]
-      >若要取得組織ID，請登入 [Admin Console](https://adminconsole.adobe.com/) 和選擇您的組織（在右上角區域），如果您屬於多個組織。 組織ID會位於該頁面的URL中，格式如下 `xx@AdobeOrg`，其中xx為IMS組織ID。  或者，您也可以在以下位置找到組織ID： [Adobe Developer主控台](https://console.adobe.io) 產生存取Token的頁面。
+     >[!NOTE]
+     >若要取得組織ID，請登入 [Admin Console](https://adminconsole.adobe.com/) 和選擇您的組織（在右上角區域），如果您屬於多個組織。 組織ID會位於該頁面的URL中，格式如下 `xx@AdobeOrg`，其中xx為IMS組織ID。  或者，您也可以在以下位置找到組織ID： [Adobe Developer主控台](https://console.adobe.io) 產生存取Token的頁面。
 
    * **使用者端ID**：輸入您在設定步驟中儲存的使用者端ID。
 
    * **存取Token**：輸入您從設定步驟儲存的存取Token。
 
-      >[!NOTE]
-      >存取Token每24小時過期一次，且需要建立新的Token。 若要建立新Token，請返回 [Adobe Developer主控台](https://console.adobe.io)，選擇您的專案，然後按一下 **使用者管理API** 並將相同的私密金鑰貼入方塊中。
+     >[!NOTE]
+     >存取Token每24小時過期一次，且需要建立新的Token。 若要建立新Token，請返回 [Adobe Developer主控台](https://console.adobe.io)，選擇您的專案，按一下 **使用者管理API**，並將相同的私密金鑰貼入方塊。
 
-1. 填入欄位後，按一下 **測試設定** 測試與使用者管理API服務的連線。 如果連線成功，您就可以按一下 **儲存** 以儲存設定。
+1. 填入欄位後，按一下 **測試設定** 測試與使用者管理API服務的連線。 如果連線成功，您可以按一下 **儲存** 以儲存設定。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
@@ -88,13 +88,12 @@ ht-degree: 3%
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
 
 
-1. 使用者對應完成後，請按一下 **結果** 以檢視摘要。
+1. 使用者對應完成後，按一下 **結果** 以檢視摘要。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
    >* 使用者對應完成後，您可以使用階層連結導覽回「內容移轉」頁面。 「使用者對應」卡片會顯示狀態和時間戳記。 按一下 **內容轉移** 建立移轉集以執行擷取。 請參閱 [執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) 以取得更多詳細資料。
-
 
 ### 繼續使用者對應程式 {#resume-user-mapping-process}
 
@@ -104,8 +103,8 @@ ht-degree: 3%
 * 存取Token在程式期間過期，或
 * 一些其他原因
 
-   >[!NOTE]
-   >進度會從程式停止的位置儲存。
+  >[!NOTE]
+  >進度會從程式停止的位置儲存。
 
 請依照下列步驟繼續使用者對應程式：
 
@@ -124,6 +123,6 @@ ht-degree: 3%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   「使用者對應」程式完成後，您將檢視 **狀態** 作為 **已完成** 的特定設定。
+   在「使用者對應」程式完成後，您可以檢視 **狀態** 作為 **已完成** 的特定設定。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)

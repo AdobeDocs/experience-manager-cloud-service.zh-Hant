@@ -2,9 +2,9 @@
 title: 實作 AEM 連接器
 description: 實作 AEM 連接器
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '966'
 ht-degree: 8%
 
 ---
@@ -28,7 +28,7 @@ AEM是尖端的Web體驗管理解決方案，提供許多潛在的整合領域�
 * 設定和呈現自訂UI元件。 例如，允許作者拖放視訊元件，並設定要在即時網站上播放的特定視訊。
 * 使用合作夥伴服務對資產採取行動。 例如，在發佈頁面時將資產傳送至視訊平台。
 * 在AEM Admin Console中分析網站、頁面或資產。 例如，針對現有或未發佈的頁面提出SEO建議。
-* 對由外部服務維護的使用者資料的頁面層級存取。 例如，運用人口統計資訊來個人化網站體驗。 閱讀ContextHub，這是一個用來儲存、操控和呈現內容資料的架構。
+* 對由外部服務維護的使用者資料的頁面層級存取。 例如，使用人口統計資訊來個人化網站體驗。 閱讀ContextHub，這是一個用來儲存、操控和呈現內容資料的架構。
 * 翻譯網站副本或資產中繼資料。 請參閱 [AEM Translation FrameworkBootstrap聯結器](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector) 適用於使用AEM Translation Framework的範常式式碼，這是翻譯聯結器的慣用實作。
 
 
@@ -74,7 +74,7 @@ Cloud Services設定
 內容感知設定
 -----------------------------
 
-[內容感知設定](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) 允許跨不同資料夾分層設定，包括 `/libs`， `/apps`， `/conf` 和下的子資料夾 `/conf`. 它支援繼承，因此客戶可以設定全域設定，同時對每個微網站進行特定變更。 由於可以在Cloud Services設定中善用此功能，聯結器程式碼應使用內容感知設定API來參照設定，而不是參照特定設定節點。
+[內容感知設定](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) 允許跨不同資料夾分層設定，包括 `/libs`， `/apps`， `/conf` 和下的子資料夾 `/conf`. 它支援繼承，因此客戶可以設定全域設定，同時對每個微網站進行特定變更。 由於此功能可用於Cloud Services設定，聯結器程式碼應使用內容感知設定API來參照設定，而不是參照特定設定節點。
 
 如果在聯結器中使用修改後的設定，則架構聯結器以處理包含/合併聯結器提供的預設設定與任何客戶設定的任何未來更新。 請記住，在沒有客戶警告和同意的情況下變更自訂（如客戶變更的）內容或設定可能會破壞其聯結器（或產生非預期的行為）。
 

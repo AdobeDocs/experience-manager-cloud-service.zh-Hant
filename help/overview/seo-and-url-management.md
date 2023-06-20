@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳作法
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3714'
-ht-degree: 100%
+source-wordcount: '3709'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ URL 中有一些公認的最佳做法。
 
 在評估 AEM 專案的 URL 時，請先自問以下問題：
 
-*「使用者能在尚未過目任何網頁內容之下，光是看到此 URL 就能描述頁面內容嗎？」*
+*「如果使用者看到此URL但頁面上沒有任何內容，他們能否說明此頁面的內容？」*
 
 如果答案是可以，則此 URL 在搜尋引擎中很可能成效良好。
 
@@ -46,9 +46,8 @@ URL 中有一些公認的最佳做法。
    * 在網頁上使用選擇器時，建議使用提供語意值的選取器。
    * 如果使用者無法透過字面理解您的 URL，則搜尋引擎也無法。
    * 例如：
-      `mybrand.com/products/product-detail.product-category.product-name.html`
-優先於 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`
+比 `mybrand.com/products/product-detail.1234.html` 更適合
 
 * 盡可能避免子網域，因為搜尋引擎會將子網域視為不同的實體，進而分割網站的 SEO 值。
 
@@ -78,9 +77,9 @@ URL 中有一些公認的最佳做法。
 
 * 每個網頁都必須只經由一個通訊協定來提供。
 
-   * 有時，網站會透過 `http` 提供，直到使用者以結帳或登入形式抵達網頁後，才會切換為透過 `https` 提供。從這個頁面連結時，如果使用者可返回 `http` 頁面並透過 `https` 存取，搜尋引擎會將這些頁面當成兩個獨立頁面來追蹤。
+   * 有時候，網站會透過 `http` 直到使用者到達包含結帳或登入表單的頁面為止，此時會切換為 `https`. 從這個頁面連結時，如果使用者可返回 `http` 頁面並透過 `https` 存取，搜尋引擎會將這些頁面當成兩個獨立頁面來追蹤。
 
-   * 目前 Google 偏好使用 `https` 頁面，而非 `http` 頁面。因為這個原因，透過 `https` 提供整個網站通常才能讓每個人的生活更便利。
+   * 目前 Google 偏好使用 `https` 頁面，而非 `http` 頁面。因此，透過提供整個網站，往往會給每個人的生活帶來便利 `https`.
 
 ### 伺服器設定 {#server-configuration}
 
@@ -151,7 +150,7 @@ String myParam = req.getParameter("myParam");
 此類 servlet 的 SCR 注釋如下所示：
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 ```
 
 在這種情況下，URL 所處理的資源 (`myPageType` 資源的執行個體) 可在 servlet 中自動供訪客存取。如要存取該資源，請呼叫：
@@ -186,20 +185,20 @@ Resource myPage = req.getResource();
 建議向翻譯內容的使用者顯示本地化的網頁名稱。例如：
 
 * 與其讓講西班牙語的使用者導覽至：
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * 建議讓 URL 顯示為：
-   `www.mydomain.com/es/casa.html`。
+  `www.mydomain.com/es/casa.html`。
 
-本地化網頁名稱時會面對的困難是，許多 AEM 平台上可用的本地化工具都需要不同位置的網頁有相符的名稱，才能讓內容保持同步。
+本地化頁面名稱的挑戰在於AEM平台上許多可用的本地化工具，都仰賴讓不同地區設定的頁面名稱相符，以保持內容同步。
 
 `sling:alias` 屬性不僅讓您看得到好處，也享用得到好處。您可以在任何資源中將 `sling:alias` 新增為屬性，允許資源使用別名。在上一個範例中：
 
 * 原本在 JCR 的網頁是：
-   `…/es/home`
+  `…/es/home`
 
 * 新增屬性後變成：
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 這樣一來，AEM 翻譯工具 (例如多網站管理員) 就能繼續維護以下兩者的關聯性：
 
@@ -218,12 +217,11 @@ Resource myPage = req.getResource();
 在標準的 AEM 配置中：
 
 * OSGi 設定為
-   **Apache Sling Resource Resolver Factory**
-( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Apache Sling Resource Resolver Factory**
+( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * 屬性為
-   **對應位置** ( `resource.resolver.map.location`)
+  **對應位置** ( `resource.resolver.map.location`)
 
 * 預設為 `/etc/map`。
 
@@ -252,8 +250,8 @@ Resource myPage = req.getResource();
    您可以使用 Web 控制台 (例如 localhost:4502/system/console/configMgr) 設定 Sling Resource Resolver：
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`。
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`。
    建議您建置所需對應來將 URL 縮短為規則運算式，然後在包含在您所建置項目的 OsgiConfignode `config.publish` 下定義這些設定。
 
    您不必在 `/etc/map` 定義對應，因為這些對應可以直接指派給屬性&#x200B;**URL 對應** ( `resource.resolver.mapping`)：
@@ -315,7 +313,7 @@ Resource myPage = req.getResource();
 兩者都會在網頁開頭套用下列標籤：
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 ```
 
 `href` 可以是相對或絕對的值。程式碼應包含在網頁標記中，以便判斷網頁的標準 URL 並輸出此標籤。
@@ -373,7 +371,7 @@ Apache Sling Sitemap 模組會區分頂層 Sitemap 和巢狀 Sitemap，這兩者
 
 在預設設定中，頁面屬性對話框提供了一個選項來將頁面標記為 Sitemap 根，因此，如上所述，產生它本身 Sitemap 和其子系。此行為由 `SitemapGenerator` 的實作來實作，並且可以透過新增替代實作來擴展。但是，由於重新產生 XML Sitemap 的頻率高度依賴內容編寫工作流程和工作負載，因此該產品不提供任何 `SitemapScheduler` 設定。這使得該功能有效率地選擇加入。
 
-為了啟用產生 XML Sitemap 的背景作業，必須設定 `SitemapScheduler`。若要這麼做，請為 PID `org.apache.sling.sitemap.impl.SitemapScheduler` 建立 OSGI 設定。排程器運算式 `0 0 0 * * ?` 可作為每天午夜一次重新產生所有 XML Sitemap 的起點。
+啟用產生XML Sitemap的背景工作 `SitemapScheduler` 必須設定。 若要這麼做，請為 PID `org.apache.sling.sitemap.impl.SitemapScheduler` 建立 OSGI 設定。排程器運算式 `0 0 0 * * ?` 可作為每天午夜一次重新產生所有 XML Sitemap 的起點。
 
 ![Apache Sling Sitemap - 排程器](assets/sling-sitemap-scheduler.png)
 

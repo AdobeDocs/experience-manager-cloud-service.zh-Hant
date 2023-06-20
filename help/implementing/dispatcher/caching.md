@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的快取
 description: AEM as a Cloud Service 中的快取
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2819'
 ht-degree: 2%
 
 ---
@@ -33,56 +33,56 @@ Define DISABLE_DEFAULT_CACHING
 * 可透過定義「 」以覆寫所有HTML/文字內容 `EXPIRATION_TIME` 中的變數 `global.vars` 使用AEMas a Cloud ServiceSDK Dispatcher工具。
 * 可在較精細的層級上覆寫，包括獨立控制CDN和瀏覽器快取，且搭配下列Apache `mod_headers` 指令：
 
-   ```
-   <LocationMatch "^/content/.*\.(html)$">
-        Header set Cache-Control "max-age=200"
-        Header set Surrogate-Control "max-age=3600"
-        Header set Age 0
-   </LocationMatch>
-   ```
+  ```
+  <LocationMatch "^/content/.*\.(html)$">
+       Header set Cache-Control "max-age=200"
+       Header set Surrogate-Control "max-age=3600"
+       Header set Age 0
+  </LocationMatch>
+  ```
 
-   >[!NOTE]
-   >Surrogate-Control標頭會套用至Adobe管理的CDN。 若使用 [客戶管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN)，視您的CDN提供者而定，可能需要不同的標頭。
+  >[!NOTE]
+  >Surrogate-Control標頭會套用至Adobe管理的CDN。 若使用 [客戶管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN)，視您的CDN提供者而定，可能需要不同的標頭。
 
-   設定全域快取控制標頭或符合寬規則運算式的標頭時，請務必小心，以免這些標頭套用至需要設為私密的內容。 請考慮使用多個指示詞，以確保以微調的方式套用規則。 話雖如此，如果AEMas a Cloud Service偵測到快取標頭已套用至偵測到Dispatcher無法快取的內容，則會移除快取標頭，如Dispatcher檔案所述。 為了強制AEM一律套用快取標頭，您可以新增 **一律** 選項如下所示：
+  設定全域快取控制標頭或符合寬規則運算式的標頭時，請務必小心，以免這些標頭套用至需要設為私密的內容。 請考慮使用多個指示詞，以確保以微調的方式套用規則。 話雖如此，如果AEMas a Cloud Service偵測到快取標頭已套用至偵測到Dispatcher無法快取的內容，則會移除快取標頭，如Dispatcher檔案所述。 若要強制AEM一律套用快取標頭，您可以新增 **一律** 選項如下所示：
 
-   ```
-   <LocationMatch "^/content/.*\.(html)$">
-        Header unset Cache-Control
-        Header unset Expires
-        Header always set Cache-Control "max-age=200"
-        Header set Age 0
-   </LocationMatch>
-   ```
+  ```
+  <LocationMatch "^/content/.*\.(html)$">
+       Header unset Cache-Control
+       Header unset Expires
+       Header always set Cache-Control "max-age=200"
+       Header set Age 0
+  </LocationMatch>
+  ```
 
-   您必須確保檔案位於 `src/conf.dispatcher.d/cache` 擁有下列規則（在預設設定中）：
+  您必須確保檔案位於 `src/conf.dispatcher.d/cache` 擁有下列規則（在預設設定中）：
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+  ```
+  /0000
+  { /glob "*" /type "allow" }
+  ```
 
 * 防止快取特定內容 **在CDN**，將Cache-Control標頭設為 *私人*. 例如，下列專案會防止在名為的目錄下有html內容 **secure** 從CDN快取：
 
-   ```
-      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
-      Header unset Cache-Control
-      Header unset Expires
-      Header always set Cache-Control "private"
-     </LocationMatch>
-   ```
+  ```
+     <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
+     Header unset Cache-Control
+     Header unset Expires
+     Header always set Cache-Control "private"
+    </LocationMatch>
+  ```
 
 * 雖然設定為私密的HTML內容將不會在CDN上快取，但可以在以下情況下在Dispatcher上快取 [許可權敏感型快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hant) 已設定，確保只能向授權使用者提供內容。
 
-   >[!NOTE]
-   >其他方法，包括 [dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，將不會成功覆寫值。
+  >[!NOTE]
+  >其他方法，包括 [dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，將不會成功覆寫值。
 
-   >[!NOTE]
-   >請注意，Dispatcher可能仍會根據自己的快取內容 [快取規則](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 若要讓內容真正成為私人，您應該確保Dispatcher不會快取該內容。
+  >[!NOTE]
+  >請注意，Dispatcher可能仍會根據自己的快取內容 [快取規則](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 若要讓內容真正成為私人，您應該確保Dispatcher不會快取該內容。
 
 ### 使用者端資料庫(js，css) {#client-side-libraries}
 
-* 使用AEM使用者端程式庫架構時，JavaScript和CSS程式碼的產生方式會讓瀏覽器無限期快取，因為任何變更都會顯示為具有唯一路徑的新檔案。  換言之，將會視需要產生參考使用者端資料庫的HTML，以便客戶在發佈新內容時體驗這些內容。 若舊版瀏覽器不遵循「不可變」值，則cache-control會設為「不可變」或30天。
+* 使用AEM使用者端程式庫架構時，JavaScript和CSS程式碼的產生方式會讓瀏覽器無限期快取，因為任何變更都會顯示為具有唯一路徑的新檔案。  換言之，會視需要產生參考使用者端資料庫的HTML，以便客戶在發佈新內容時體驗這些內容。 若舊版瀏覽器不遵循「不可變」值，則cache-control會設為「不可變」或30天。
 * 請參閱區段 [使用者端程式庫和版本一致性](#content-consistency) 以取得其他詳細資訊。
 
 ### 影像和任何足夠大以儲存在blob儲存空間中的內容 {#images}
@@ -102,7 +102,7 @@ Define DISABLE_DEFAULT_CACHING
 
 #### 新的預設快取行為 {#new-caching-behavior}
 
-AEM層會根據是否已設定快取標頭及請求型別的值來設定快取標頭。 請注意，如果尚未設定快取控制標頭，則會快取公開內容，且已驗證的流量會設定為私人。 如果已設定快取控制標頭，則快取標頭將保持不變。
+AEM層會根據是否已設定快取標頭及請求型別的值來設定快取標頭。 請注意，如果尚未設定快取控制標頭，則會快取公開內容，且已驗證的流量會設定為私人。 如果已設定快取控制標頭，則快取標頭保持不變。
 
 | 快取控制標頭是否存在？ | 請求類型 | AEM將快取標頭設為 |
 |------------------------------|---------------|------------------------------------------------|
@@ -142,68 +142,68 @@ AEM層預設不會快取blob內容。
 
    * 快取可變使用者端程式庫資源12h及12h後背景重新整理。
 
-      ```
-      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
-         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+        Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * 透過背景重新整理來快取不可變的使用者端程式庫資源長期（30天），以避免遺漏。
 
-      ```
-      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
-         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+        Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * 在瀏覽器上快取HTML頁面5分鐘，背景重新整理1小時，在CDN上快取12小時。 將一律新增Cache-Control標頭，因此請務必確保將/content/*下相符的html頁面設為公開。 如果沒有，請考慮使用更具體的規則運算式。
 
-      ```
-      <LocationMatch "^/content/.*\.html$">
-         Header unset Cache-Control
-         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
-         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.html$">
+        Header unset Cache-Control
+        Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+        Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * 在瀏覽器上快取內容服務/Sling模型匯出程式json回應達5分鐘，背景重新整理為1小時，在CDN上為12小時。
 
-      ```
-      <LocationMatch "^/content/.*\.model\.json$">
-         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
-         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.model\.json$">
+        Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+        Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * 透過背景重新整理來長期（30天）快取核心影像元件中的不可變URL，以避免遺漏。
 
-      ```
-      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
-         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+        Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * 快取來自DAM的可變資源（例如影像和視訊）24h，並在12h後重新整理背景以避免遺漏
 
-      ```
-      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
-         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+        Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
 ### HEAD要求行為 {#request-behavior}
 
-在AdobeCDN收到資源的HEAD要求時，該資源 **not** 快取後，請求會進行轉換，然後由Dispatcher和/或AEM執行個體接收為GET請求。 如果回應可快取，則會從CDN提供後續HEAD請求。 如果回應無法快取，則後續的HEAD請求將會在一段時間內傳遞給Dispatcher和/或AEM執行個體，具體時間取決於 `Cache-Control` 總計
+在AdobeCDN收到資源的HEAD要求時，該資源 **not** 快取後，請求會進行轉換，然後由Dispatcher和/或AEM執行個體接收為GET請求。 如果回應可快取，則會從CDN提供後續HEAD請求。 如果回應無法快取，則會將後續HEAD請求傳遞給Dispatcher或AEM執行個體（或兩者），持續時間取決於 `Cache-Control` 總計
 
 ### 行銷活動引數 {#marketing-parameters}
 
-網站URL經常包含用來追蹤促銷活動成功的行銷活動引數。 為了有效使用Dispatcher快取，建議您配置Dispatcher設定的 `ignoreUrlParams` 屬性為 [在此處記錄](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+網站URL經常包含用來追蹤促銷活動成功的行銷活動引數。 若要有效使用Dispatcher快取，建議您設定Dispatcher設定的 `ignoreUrlParams` 屬性為 [在此處記錄](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
 
 此 `ignoreUrlParams` 區段必須取消註解，並應參考檔案 `conf.dispatcher.d/cache/marketing_query_parameters.any`. 您可取消註解行銷管道相關引數的對應行，以修改檔案。 您也可以新增其他引數。
 
@@ -454,11 +454,11 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## 使用者端程式庫和版本一致性 {#content-consistency}
 
-頁面由HTML、Javascript、CSS和影像組成。 建議客戶善用 [使用者端資料庫(clientlibs)架構](/help/implementing/developing/introduction/clientlibs.md) 以將Javascript和CSS資源匯入HTML頁面，同時考量JS程式庫之間的相依性。
+頁面由HTML、Javascript、CSS和影像組成。 我們鼓勵客戶使用 [使用者端資料庫(clientlibs)架構](/help/implementing/developing/introduction/clientlibs.md) 以將Javascript和CSS資源匯入HTML頁面，同時考量JS程式庫之間的相依性。
 
-clientlibs架構提供自動版本管理，這表示開發人員可以在原始檔控制中籤入JS程式庫的變更，而且當客戶推送其版本時，將可使用最新版本。 若沒有此專案，開發人員將需要手動變更HTML，並參考新版本的程式庫，而如果許多HTML範本共用相同的程式庫，則這項作業會特別繁重。
+clientlibs架構提供自動版本管理，這表示開發人員可以在原始檔控制中籤入JS程式庫的變更，而且當客戶推送其版本時，就可以使用最新版本。 若沒有此專案，開發人員將需要手動變更HTML，並參考新版本的程式庫，而如果許多HTML範本共用相同的程式庫，則這項作業會特別繁重。
 
-將程式庫的新版本發佈到生產環境時，會更新參考HTML頁面，並包含這些已更新程式庫版本的新連結。 指定HTML頁面的瀏覽器快取過期後，就不必擔心系統會從瀏覽器快取載入舊程式庫，因為重新整理的頁面(來自AEM)現在保證會參照新版本的程式庫。 換言之，重新整理的HTML頁面將包含所有最新程式庫版本。
+將程式庫的新版本發佈到生產環境時，會更新參考HTML頁面，並包含這些已更新程式庫版本的新連結。 特定HTML頁面的瀏覽器快取過期後，無需擔心舊程式庫會從瀏覽器快取載入，因為重新整理的頁面(來自AEM)現在保證會參考新版本的程式庫。 換言之，重新整理的HTML頁面將包含所有最新程式庫版本。
 
 其機制是序列化雜湊，這會附加至使用者端程式庫連結，確保瀏覽器有唯一、版本化的URL來快取CSS/JS。 只有在使用者端程式庫的內容變更時，才會更新序列化雜湊。 換句話說，即使使用新部署，如果發生不相關的更新（即使用者端程式庫的基礎css/js沒有變更），參照仍會維持不變，可確保對瀏覽器快取的中斷較少。
 
@@ -481,8 +481,8 @@ clientlibs架構提供自動版本管理，這表示開發人員可以在原始�
 若要在本機SDK快速入門中啟用嚴格的clientlib版本設定，請執行下列動作：
 
 1. 導覽至OSGi Configuration Manager `<host>/system/console/configMgr`
-1. 尋找AdobeGraniteHTML程式庫管理員的OSGi設定：
+1. 尋找AdobeGraniteHTML庫管理員的OSGi設定：
    * 勾選核取方塊以啟用嚴格版本設定
    * 在標示為長期使用者端快取金鑰的欄位中，輸入/的值。*；雜湊
 1. 儲存變更。不需要在原始檔控制中儲存此設定，因為AEMas a Cloud Service會自動在開發、中繼和生產環境中啟用此設定。
-1. 每次變更使用者端程式庫的內容時，都會產生新的雜湊金鑰，且會更新HTML參考。
+1. 只要變更使用者端資料庫的內容，就會產生新的雜湊金鑰並更新HTML參考。

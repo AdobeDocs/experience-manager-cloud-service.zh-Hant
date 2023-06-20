@@ -4,10 +4,10 @@ description: 他們的系統管理員設定了必要的雲端資源後，了解�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 100%
+source-wordcount: '1417'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 在您作為開發人員或部署管理員開始本文件中描述的任務之前，請確保您的系統管理員已完成此上線歷程中的所有步驟。這表示：
 
 * 您的系統管理員已將開發人員和部署管理員指派給他們各自的產品設定檔。
-* 開發人員必須另外指派到 **AEM 使用者**&#x200B;或 **AEM 管理員**&#x200B;產品設定檔，才能使用 AEM。
+* 開發人員必須額外指派至 **AEM使用者** 或 **AEM管理員** 產品設定檔也使用AEM。
 * 雲端資源已設定完畢。
 
 ## 存取 Git {#accessing-git}

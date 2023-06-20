@@ -2,10 +2,10 @@
 title: 應用和取消應用 IP 允許清單
 description: 了解如何對環境應用和取消應用 IP 允許清單。
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 100%
+source-wordcount: '269'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 1. 從&#x200B;**總覽**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 1. 從計劃總覽畫面的&#x200B;**環境**&#x200B;瀏覽到特定環境，然後瀏覽到 **IP 允許清單**&#x200B;資料表。
 1. 使用 IP 允許清單表頂端的輸入欄位來選擇，和您希望將其套用到的作者或發佈服務。
-   * IP 允許清單必須存在於 Cloud Manager 中才能將其套用於環境。
+   * IP允許清單必須存在於Cloud Manager中才能套用它。
 1. 按一下&#x200B;**套用**，然後確認您的訂閱。
 
 ## 取消套用允許清單 {#un-applying}

@@ -2,9 +2,9 @@
 title: AEM 技術基礎
 description: AEM技術基礎的概觀，包括AEM的結構和基本技術，如JCR、Sling和OSGi。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2180'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 * 對應會使用從請求中擷取的內容路徑來尋找資源。
 * 找到適當的資源時，就會擷取sling資源型別，並用來找出要用於轉譯內容的指令碼。
 
-下圖說明了所使用的機制，將在以下各節中更詳細地討論。
+下圖說明了所使用的機制，以下各節將對此進行更詳細的討論。
 
 ![URL對應機制](assets/url-mapping.png)
 
@@ -142,7 +142,7 @@ Sling也可讓JCR節點以外的專案成為資源，但這是進階功能。
 >
 >由於相對路徑會增加可移植性，因此Adobe會建議使用相對路徑。
 
-所有Sling指令碼都儲存在下列任一專案的子資料夾中： `/apps` （可變，使用者指令碼）或 `/libs` （不可變，系統指令碼），將依此順序搜尋。
+所有Sling指令碼都儲存在下列任一專案的子資料夾中： `/apps` （可變，使用者指令碼）或 `/libs` （不可變，系統指令碼），依此順序搜尋。
 
 其他需要注意的要點包括：
 
@@ -154,21 +154,21 @@ Felix管理主控台會列出指定AEM執行個體支援的指令碼引擎清單
 使用上一個範例，如果 `sling:resourceType` 是 `hr/jobs` 然後針對：
 
 * 以「 」結尾的GET/HEAD請求和URL `.html` （預設請求型別、預設格式）
-   * 指令碼會是 `/apps/hr/jobs/jobs.esp`；的最後一個區段 `sling:resourceType` 形成檔案名稱。
+   * 指令碼為 `/apps/hr/jobs/jobs.esp`；的最後一個區段 `sling:resourceType` 形成檔案名稱。
 * POST請求(除GET/HEAD以外的所有請求型別，方法名稱必須為大寫)
-   * 指令碼名稱中將使用POST。
-   * 指令碼會是 `/apps/hr/jobs/jobs.POST.esp`.
+   * 指令碼名稱會使用POST。
+   * 指令碼為 `/apps/hr/jobs/jobs.POST.esp`.
 * 其他格式的URL，結尾不是 `.html`
    * 例如 `../content/corporate/jobs/developer.pdf`
-   * 指令碼會是 `/apps/hr/jobs/jobs.pdf.esp`；字尾會新增至指令碼名稱。
+   * 指令碼為 `/apps/hr/jobs/jobs.pdf.esp`；字尾會新增至指令碼名稱。
 * 具有選取器的URL
    * 選取器可用來以替代格式顯示相同的內容。 例如，適合印表機的版本、RSS摘要或摘要。
    * 如果檢視印表機易記版本，選擇器可能是 `print`；如在 `../content/corporate/jobs/developer.print.html`
-   * 指令碼會是 `/apps/hr/jobs/jobs.print.esp`；選取器會新增至指令碼名稱。
+   * 指令碼為 `/apps/hr/jobs/jobs.print.esp`；選取器會新增至指令碼名稱。
 * 若否 `sling:resourceType` 已定義，則：
-   * 內容路徑將用於搜尋適當的指令碼(如果路徑以 `ResourceTypeProvider` （非作用中）。
+   * 內容路徑可用來搜尋適當的指令碼(如果路徑以 `ResourceTypeProvider` （非作用中）。
    * 例如，的指令碼 `../content/corporate/jobs/developer.html` 會在下列位置產生搜尋： `/apps/content/corporate/jobs/`.
-   * 將使用主要節點型別。
+   * 使用主要節點型別。
 * 如果完全找不到指令碼，則會使用預設指令碼。
    * 目前支援以純文字格式呈現預設轉譯(`.txt`)，HTML(`.html`)和JSON (`.json`)，所有引數都會列出節點的屬性（格式適當）。 擴充功能的預設轉譯 `.res`（或沒有請求擴充功能的請求）會多工緩衝資源（可能的話）。
 * 若為http錯誤處理（程式碼403或404），Sling會在以下其中一個位置尋找指令碼：

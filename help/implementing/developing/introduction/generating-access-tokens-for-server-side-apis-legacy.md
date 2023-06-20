@@ -3,9 +3,9 @@ title: 為伺服器端API產生存取權杖（舊版）
 description: 瞭解如何產生安全JWT權杖，以促進第三方伺服器與AEMas a Cloud Service之間的通訊
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 請參閱 [開發人員指引檔案](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) 以取得使用AEMas a Cloud Service開發人員控制檯所需許可權的相關資訊。
 
 >[!NOTE]
+>
 本機開發存取權杖的有效期最長為24小時，之後必須使用相同方法重新產生。
 
 開發人員可使用此代號，從非AEM測試應用程式呼叫AEMas a Cloud Service環境。 開發人員通常會在自己的筆記型電腦上搭配非AEM應用程式使用此代號。 此外，AEM as a Cloud通常是非生產環境。
@@ -147,9 +148,10 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ![認證重新整理](assets/credential-refresh.png)
 
-按下按鈕後，將會產生一組新的認證。 您可以使用新憑證更新秘密儲存空間，並驗證它們是否如預期般運作。
+按下按鈕後，會產生一組新的認證。 您可以使用新憑證更新秘密儲存空間，並驗證它們是否如預期般運作。
 
 >[!NOTE]
+>
 按一下 **重新整理服務認證** 按鈕，舊認證會保持註冊狀態直到過期，但在任何時候，開發人員控制檯中只能檢視最新的認證集。
 
 ## 服務認證撤銷 {#service-credentials-revocation}

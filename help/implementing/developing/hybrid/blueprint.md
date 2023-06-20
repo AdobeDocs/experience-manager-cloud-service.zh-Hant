@@ -1,10 +1,10 @@
 ---
 title: SPA 藍圖
-description: 本檔案說明任何SPA架構都應該履行的一般且獨立於架構的合約，以便在AEM中實作可編輯的SPA元件。
+description: 本檔案說明任何SPA架構都應該履行的一般且獨立於架構的合約，以便您在AEM中實作可編輯的SPA元件。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2056'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 簡介 {#introduction}
 
-本檔案說明任何SPA架構應履行的一般合約(即AEM支援層的型別)，以便在AEM中實作可編輯的SPA元件。
+本檔案說明任何SPA架構應履行的一般合約(即AEM支援層的型別)，以便您在AEM中實作可編輯的SPA元件。
 
 若要讓作者能使用AEM頁面編輯器來編輯單頁應用程式架構所公開的資料，專案必須能夠解譯代表為AEM存放庫中應用程式儲存之資料語意的模型結構。 為達成此目標，我們提供兩個與架構無關的程式庫： `PageModelManager` 和 `ComponentMapping`.
 
@@ -67,7 +67,7 @@ SPA元件必須與頁面模型同步，並隨其內容的任何變更而更新�
 
 ### 中繼欄位 {#meta-fields}
 
-頁面模型會利用JSON模型匯出程式，其本身會根據 [Sling模型](https://sling.apache.org/documentation/bundles/models.html) API。 可匯出Sling模型會公開下列欄位清單，以啟用基礎程式庫來解譯資料模型：
+頁面模型使用JSON模型匯出程式，其本身以 [Sling模型](https://sling.apache.org/documentation/bundles/models.html) API。 可匯出Sling模型會公開下列欄位清單，以啟用基礎程式庫來解譯資料模型：
 
 * `:type`：AEM資源的型別（預設=資源型別）
 * `:children`：目前資源的階層子系。 子系不屬於目前資源的內部內容（可在代表頁面的專案上找到）
@@ -175,7 +175,6 @@ SPA元件會對應至圖形容器（例如回應式格線），且必須在編�
 >* `"aem-Grid-newComponent"`：標準化配置編寫的元件
 >
 
-
 #### 元件對應 {#component-mapping}
 
 基礎 [`Component Mapping`](#componentmapping) 程式庫及其 `MapTo` 函式可以封裝和延伸，以提供與目前元件類別旁提供的編輯設定相關的功能。
@@ -204,7 +203,7 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 
 ```javascript
 /**
- * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
+ * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data is decorating the associated component
  *
  * @typedef {{}} EditConfig
  * @property {String} [dragDropName]       If defined, adds a specific class name enabling the drag and drop functionality

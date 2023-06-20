@@ -2,10 +2,10 @@
 title: Launch
 description: Launches 可讓您有效率地開發未來版本的內容。可讓您完成變更以供未來發佈，同時維護目前的頁面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 100%
+source-wordcount: '906'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Launches 可讓您：
    * 頂層來源頁面稱為&#x200B;**生產**。
       * 來源頁面可以取自多個 (獨立的) 分支。
 
-   ![Launch 操作順序](/help/sites-cloud/authoring/assets/launches-order.png)
+  ![Launch 操作順序](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * 編輯 Launch 設定：
    * 在 Launch 中新增或移除頁面和/或分支。
@@ -65,22 +65,22 @@ Launches 可讓您：
       * **Launch** (**上線**) **日期**&#x200B;欄位：這可在建立或編輯 Launch 時設定。
       * **生產就緒**&#x200B;標幟：這只能在編輯 Launch 時設定。
       * 如果&#x200B;**生產就緒**&#x200B;標幟已設定，Launch 將於 **Launch** (**上線**) **日期**&#x200B;自動提升至生產頁面。提升後，生產頁面會自動發佈。\
-         如果未設定日期，則該標幟將無效。
+        如果未設定日期，則該標幟將無效。
 * 並行更新來源頁面和 Launch 頁面：
    * 對來源頁面的變更會自動實作在 Launch 副本 (如果設定為繼承，即為 Live Copy)。
    * 可以在不中斷這些自動更新或來源頁面的情況下，對 Launch 副本進行變更。
 
-   ![並行動作](/help/sites-cloud/authoring/assets/launches-parallel.png)
+  ![並行動作](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [建立巢狀 Launch](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - Launch 中的 Launch：
    * 來源是現有的 Launch。
    * 您可以[將巢狀 Launch](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) 提升到任何目標，這可以是父 Launch 或頂層來源頁面 (生產)。
 
-   ![巢狀 Launch](/help/sites-cloud/authoring/assets/launches-nested.png)
+  ![巢狀 Launch](/help/sites-cloud/authoring/assets/launches-nested.png)
 
-   >[!CAUTION]
-   >
-   >刪除 Launch 將移除 Launch 本身和所有子系巢狀 Launch。
+  >[!CAUTION]
+  >
+  >刪除 Launch 將移除 Launch 本身和所有子系巢狀 Launch。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Launches 可讓您：
 
    ![網站主控台中的 Launch 參考](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. 點選/按一下適當的 Launch，將顯示可用動作清單：
+1. 點選/按一下適當的啟動，會顯示可能的動作清單：
 
    ![網站主控台中對 Launch 執行的動作](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
@@ -108,11 +108,11 @@ Launches 主控台可提供您 Launch 的概觀，並允許您對列出的 Launc
 
 * 在 Sites 主控台瀏覽來源內容時，**Launches 主控台**&#x200B;位於&#x200B;**參考**&#x200B;邊欄 **Launch** 區段的底部。
 
-   ![Launches 主控台位於 Sites 主控台的 Launch 參考中](/help/sites-cloud/authoring/assets/launches-references.png)
+  ![Launches 主控台位於 Sites 主控台的 Launch 參考中](/help/sites-cloud/authoring/assets/launches-references.png)
 
 * 在 Sites 主控台導覽 Launch 內容時，**Launch** 按鈕位於右上角：
 
-   ![Sites 主控台中的 Launch 選項](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![Sites 主控台中的 Launch 選項](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
 * 或直接，例如使用：
-   `https://<host>:<port>/libs/launches/content/launches.html`
+  `https://<host>:<port>/libs/launches/content/launches.html`

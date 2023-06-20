@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 強大的 Live Copy 和多網站管理員功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
-workflow-type: ht
-source-wordcount: '2710'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '2705'
+ht-degree: 96%
 
 ---
 
@@ -148,7 +148,7 @@ MSM 可以使用相關主控台的各種選項直接在 UI 中存取 MSM。
 
 ### 使用的術語 {#terms-used}
 
-出於介紹目的，下表概述與 MSM 一起使用的主要術語。這些術語將在後續章節和頁面中進行更詳細的介紹。
+出於介紹目的，下表概述與 MSM 一起使用的主要術語。後續章節和頁面將更詳細地說明這些內容。
 
 | 術語 | 定義 | 進一步詳細資訊 |
 |---|---|---|
@@ -161,7 +161,7 @@ MSM 可以使用相關主控台的各種選項直接在 UI 中存取 MSM。
 | 章節 | 要包含在 Live Copy 中的藍圖部分 | 這些通常是根的子頁面 |
 | 同步 | 來源和 Live Copy 之間內容同步的通用術語 (使用&#x200B;**推出**&#x200B;和&#x200B;**同步**&#x200B;選項進行同步) |  |
 | 推出 | 從來源同步到 Live Copy | 可以由作者 (在藍圖頁面上) 或系統事件 (由推出設定定義) 觸發 |
-| 推出設定 | 決定哪些屬性將被同步、如何同步以及何時同步的規則 |  |
+| 推出設定 | 決定要同步哪些屬性、同步方式和時間的規則 |  |
 | 同步 | 從 Live Copy 頁面發出的手動同步要求 |  |
 | 繼承 | 同步發生時，Live Copy 頁面/元件從其來源頁面/元件繼承內容 |  |
 | 暫停 | 暫時移除 Live Copy 與其藍圖頁面之間的即時關係 |  |
@@ -231,15 +231,15 @@ Live Copy 的基本形式有：
 當您 (或流程) [在現有 Live Copy 內建立新頁面](#live-copy-with-non-live-copy-pages)時，也可將此新頁面建立成不同藍圖的 Live Copy。這稱為巢狀 Live Copy。在巢狀 Live Copy 中，第二個或內部 Live Copy 的行為受第一個或外部 Live Copy 的影響，方式如下：
 
 * 對頂層 Live Copy 觸發的深層推出可以繼續進行到巢狀 Live Copy。
-* 在 Live Copy 中，來源之間的任何連結都將重寫。
+* 來源之間的任何連結會在即時副本中重寫。
 
-例如，從第二個藍圖指向第一個藍圖的連結將重寫為從巢狀/第二個 Live Copy 指向第一個 Live Copy 的連結。
+例如，從第二個指向第一個Blueprint的連結會重寫為從巢狀/第二個即時副本指向第一個即時副本的連結。
 
 ![巢狀 Live Copy](../assets/live-copy-nested.png)
 
 >[!NOTE]
 >
->如果您移動或重命名 Live Copy 分支中的頁面，這將被視為巢狀 Live Copy 以使 AEM 能夠追蹤關係。
+>如果您在即時副本分支內移動或重新命名頁面，系統會將它視為巢狀即時副本，以讓AEM追蹤關係。
 
 #### 堆疊 Live Copy {#stacked-live-copies}
 

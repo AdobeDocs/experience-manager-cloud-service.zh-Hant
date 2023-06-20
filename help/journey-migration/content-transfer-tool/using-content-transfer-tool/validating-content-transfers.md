@@ -2,9 +2,9 @@
 title: 驗證內容轉移
 description: 使用內容轉移工具來驗證內容轉移
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1062'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 在來源AEM環境中啟用移轉驗證後，開始擷取。
 
-若 **在擷取期間覆寫暫存容器** 已啟用，與擷取相關的所有節點將記錄到擷取路徑摘要。 使用此設定時，請務必啟用 **在內嵌之前擦除雲端例項上的現有內容** 在內嵌期間進行設定，否則在內嵌摘要中可能會遺漏節點。 這些是先前擷取中已經存在於目標上的節點。
+若 **在擷取期間覆寫暫存容器** 會啟用，與擷取相關的所有節點都會記錄到擷取路徑摘要中。 使用此設定時，請務必啟用 **在內嵌之前擦除雲端例項上的現有內容** 在內嵌期間進行設定，否則在內嵌摘要中可能會遺漏節點。 這些是先前擷取中已經存在於目標上的節點。
 
 如需圖解說明，請參考以下範例：
 
@@ -44,37 +44,37 @@ ht-degree: 2%
 
 * **擷取（覆寫）**
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
 * **內嵌（擦去）**
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+  ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **附註**
 
-   此「覆寫」和「擦去」的組合會產生一致的驗證結果，即使是重複擷取亦然。
+  此「覆寫」和「擦去」的組合會產生一致的驗證結果，即使是重複擷取亦然。
 
 ### 範例 2 {#example-2}
 
 * **擷取**
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
 * **內嵌**
 
-   ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+  ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **附註**
 
-   此「覆寫」和「擦去」的組合將導致初始內嵌的一致驗證結果。
+  此「覆寫」和「擦去」的組合將導致初始內嵌的一致驗證結果。
 
-   如果重複內嵌，內嵌摘要將會是空的，而驗證將會顯示為失敗。 擷取摘要將為空白，因為此擷取的所有節點都將存在於目標上。
+  如果重複內嵌，內嵌摘要會是空的，驗證似乎已失敗。 擷取摘要是空的，因為此擷取的所有節點都將存在於目標上。
 
 擷取完成後，即可開始內嵌。
 
 內嵌記錄檔的頂端會包含一個專案，類似於 `aem-ethos/tools:1.2.438`. 確定此版本編號為 **1.2.438** 或更新的版本，否則您使用的AEMas a Cloud Service版本不支援驗證。
 
-擷取完成並開始驗證後，將在擷取記錄中記錄以下記錄專案：
+擷取完成並開始驗證後，會在擷取記錄中記錄以下記錄專案：
 
 ```
 Gathering artifacts for migration validation...
@@ -136,7 +136,7 @@ Migration validation took 0 minutes
 
 另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以瞭解主要移轉的詳細資料以及為何需要。
 
-成功完成擷取和內嵌後，即可使用主體移轉的摘要和報告。 此資訊可用於驗證哪些使用者和群組已成功移轉，或許也可用於判斷部分使用者及群組未成功移轉的原因。
+成功完成擷取和內嵌後，即可使用主體移轉的摘要和報表。 此資訊可用於驗證哪些使用者和群組已成功移轉，或許也可用於判斷部分使用者及群組未成功移轉的原因。
 
 若要檢視此資訊，請前往Cloud Acceleration Manager。 按一下您的專案卡，然後按一下「內容轉移」卡。 導覽至 **內嵌工作** 並找到您要驗證的內嵌。 按一下三個點(**...**)，然後按一下 **檢視主體摘要** （在下拉式清單中）。
 

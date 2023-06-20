@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.2.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2021.2.0版as a Cloud Service發行說明」。'
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1237'
-ht-degree: 32%
+source-wordcount: '1234'
+ht-degree: 31%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 32%
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 有權預先設定 [!DNL Brand Portal] 執行個體。 此 [!DNL Cloud Manager] 使用者可以啟動 [!DNL Brand Portal] 於 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. 另請參閱 [啟動Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=zh-Hant).
 
-* 企業現在可以使用以下專案取得資產： [!DNL Brand Portal]. 資產來源功能運用 [!DNL Brand Portal] 協助客戶與代理商使用者互動，以取得資產用於新的行銷活動、攝影和專案。 另請參閱 [中的資產來源 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* 企業現在可以使用以下專案取得資產： [!DNL Brand Portal]. 資產來源功能使用 [!DNL Brand Portal] 協助客戶與代理商使用者互動，以取得資產用於新的行銷活動、攝影和專案。 另請參閱 [中的資產來源 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * 此 [!DNL Brand Portal] 使用情況報告現在僅顯示作用中的使用者。 現在不會顯示非作用中的使用者。 作用中的使用者是指其帳戶已指派至產品設定檔的使用者。 [!DNL Admin Console]. 另請參閱 [[!DNL Brand Portal] 報告](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
@@ -101,7 +101,7 @@ AEM as a Cloud Service 2021.2.0 中 Cloud Manager 的發行日期為 2021 年 2 
 
 * Cloud Manager UI 將通知可能暫時無法新增/更新網域名稱的使用者，因為相關環境已附加執行中的管道，或目前正在等候核准步驟。
 
-* 客戶中設定的屬性 `pom.xml` 前置詞為「聲納」的檔案現在會動態移除，以避免建置和品質掃描失敗。
+* 客戶中設定的屬性 `pom.xml` 帶有sonar首碼的檔案現在會動態移除，以避免建置和品質掃描失敗。
 
 * 如果目前部署的網域名稱正在使用 SSL 憑證，Cloud Manager UI 將通知暫時無法選擇該憑證的使用者。
 

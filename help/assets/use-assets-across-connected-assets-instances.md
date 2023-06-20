@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: dbc6b5c0f11e52b45981cab36381258edcf6c167
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3829'
 ht-degree: 16%
@@ -31,7 +31,7 @@ ht-degree: 16%
 
 ## 連線資產概觀 {#overview-of-connected-assets}
 
-在中編輯頁面時 [!UICONTROL 頁面編輯器] 作為目標目的地，作者可從不同來源順暢地搜尋、瀏覽及內嵌資產 [!DNL Assets] 作為資產來源的部署。 管理員會建立部署的一次性整合 [!DNL Experience Manager] 替換為 [!DNL Sites] 另一個部署的功能 [!DNL Experience Manager] 替換為 [!DNL Assets] 功能。 您也可以透過「連線資產」，在網站的網頁中使用Dynamic Media影像，並利用Dynamic Media的功能，例如智慧型裁切和影像預設集。
+在中編輯頁面時 [!UICONTROL 頁面編輯器] 作為目標目的地，作者可從不同來源順暢地搜尋、瀏覽及內嵌資產 [!DNL Assets] 作為資產來源的部署。 管理員會建立部署的一次性整合 [!DNL Experience Manager] 替換為 [!DNL Sites] 另一個部署的功能 [!DNL Experience Manager] 替換為 [!DNL Assets] 功能。 您也可以透過「連線資產」，在網站的網頁中使用Dynamic Media影像，並使用Dynamic Media功能，例如智慧型裁切和影像預設集。
 
 對於 [!DNL Sites] 作者，遠端資產會以唯讀本機資產形式提供。 此功能可支援順暢搜尋及存取「網站編輯器」上的遠端資產。 若有任何其他使用案例，需要完整的資產語料庫才能在Sites上使用，請考慮大量移轉資產，而非運用連線資產。
 
@@ -42,11 +42,11 @@ ht-degree: 16%
 * 使用者是每個部署中適當使用者群組的一部分。
 * 對象 [!DNL Adobe Experience Manager] 部署型別，即符合其中一個支援的條件。 [!DNL Experience Manager] as a Cloud Service [!DNL Assets] 搭配使用 [!DNL Experience Manager] 6.5.如需此功能如何運作的詳細資訊，請參閱 [!DNL Experience Manager] 6.5，請參閱 [中的連線資產 [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] 在AMS上 | [!DNL Experience Manager] 6.5 [!DNL Sites] 內部部署 |
-   |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 支援 | 支援 | 支援 |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] 在AMS上** | 支援 | 支援 | 支援 |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] 內部部署** | 不支援 | 不支援 | 不支援 |
+  | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] 在AMS上 | [!DNL Experience Manager] 6.5 [!DNL Sites] 內部部署 |
+  |---|---|---|---|
+  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 支援 | 支援 | 支援 |
+  | **[!DNL Experience Manager]6.5 [!DNL Assets] 在AMS上** | 支援 | 支援 | 支援 |
+  | **[!DNL Experience Manager]6.5 [!DNL Assets] 內部部署** | 不支援 | 不支援 | 不支援 |
 
 ### 支援的檔案格式 {#mimetypes}
 
@@ -144,7 +144,7 @@ Experience Manager可讓您將遠端DAM部署作為來源連線到多個Experien
 ## 使用Dynamic Media資產 {#dynamic-media-assets}
 
 
-使用「連線資產」，您可以使用由下列專案處理的影像資產： [!DNL Dynamic Media] 從Sites頁面上的遠端DAM部署，並運用Dynamic Media功能，例如智慧型裁切和影像預設集。
+使用「連線資產」，您可以使用由下列專案處理的影像資產： [!DNL Dynamic Media] 從Sites頁面上的遠端DAM部署，並使用Dynamic Media功能，例如智慧型裁切和影像預設集。
 
 使用 [!DNL Dynamic Media] 連線資產：
 
@@ -356,11 +356,11 @@ Experience Manager顯示 `expired` 遠端Assets內容尋找器中的資產狀態
 
 * 如果您無法從本機存取遠端DAM部署 [!DNL Sites] 部署，確保允許跨網站Cookie，並且 [相同網站Cookie支援](/help/security/same-site-cookie-support.md) 已設定。 如果跨網站Cookie遭到封鎖，部署 [!DNL Experience Manager] 可能無法驗證。 例如， [!DNL Google Chrome] 在無痕模式下，可能會封鎖第三方Cookie。 允許Cookie於 [!DNL Chrome] 瀏覽器，按一下地址列中的「眼睛」圖示，導覽至 **網站無法運作** > **已封鎖**，選取遠端DAM URL，並允許登入權杖Cookie。 或者，請參閱 [如何啟用第三方Cookie](https://support.google.com/chrome/answer/95647).
 
-   ![無痕模式下的Chrome瀏覽器發生Cookie錯誤](assets/chrome-cookies-incognito-dialog.png)
+  ![無痕模式下的Chrome瀏覽器發生Cookie錯誤](assets/chrome-cookies-incognito-dialog.png)
 
 * 如果未擷取遠端參照並產生錯誤訊息，請檢查 [!DNL Sites] 部署可用，並檢查網路連線問題。 請稍後重試以檢查。 [!DNL Assets] 部署嘗試與建立連線兩次 [!DNL Sites] 部署，然後報告失敗。
 
-   ![無法擷取資產遠端參考](assets/reference-report-failure.png)
+  ![無法擷取資產遠端參考](assets/reference-report-failure.png)
 
 **另請參閱**
 

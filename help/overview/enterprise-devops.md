@@ -2,10 +2,10 @@
 title: 企業 DevOps
 description: 了解輕鬆部署、簡化共同作業所需的程序、方法和溝通方式。
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 100%
+source-wordcount: '1000'
+ht-degree: 96%
 
 ---
 
@@ -86,7 +86,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 通常由多個環境組成，
 
 已啟用的內容會封裝並放置在作者環境的複製佇列中。接著，複製程序會將內容傳輸至發佈環境。
 
-為了將發佈環境中產生的資料反向複製回製作環境，製作環境中的複製接聽程式將輪詢發佈環境，並從發佈環境的反向複製寄件匣中擷上述內容。
+若要將發佈環境中產生的資料反向復寫回製作環境，製作環境中的復寫接聽程式將會輪詢發佈環境，並從發佈環境的反向復寫寄件匣中擷取此類內容。
 
 #### 發佈 {#publish}
 

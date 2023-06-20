@@ -2,9 +2,9 @@
 title: 從範本建立網站
 description: 瞭解如何使用網站範本快速建立新的AEM網站。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1485'
 ht-degree: 2%
 
 ---
@@ -85,7 +85,7 @@ ht-degree: 2%
 
    ![選取範本](assets/select-site-template.png)
 
-1. 提供您網站的標題。 可以提供網站名稱，如果省略，則將從標題產生網站名稱。
+1. 提供您網站的標題。 若省略，可提供網站名稱或從標題產生網站名稱。
 
    * 網站標題會顯示在瀏覽器標題列中。
    * 網站名稱會成為URL的一部分。

@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1238'
 ht-degree: 5%
 
 ---
@@ -79,7 +79,7 @@ Experience Manager會根據資產數量和大小最佳化下載體驗。 從使�
 
    | 下載選項 | 說明 |
    |---|---|
-   | **[!UICONTROL 為每一個資產建立個別的資料夾]** | 選取此選項，為每個資產建立一個資料夾，其中包含資產的所有已下載轉譯。 如果取消選取，每個資產（以及如果選取下載其轉譯）都會包含在所產生封存檔的父資料夾中。 |
+   | **[!UICONTROL 為每一個資產建立個別的資料夾]** | 選取此選項，為每個資產建立一個資料夾，其中包含資產的所有已下載轉譯。 如果未選取，每個資產（以及若選取下載其轉譯）都會包含在所產生封存檔的父資料夾中。 |
    | **[!UICONTROL 電子郵件]** | 選取此選項可將電子郵件通知（包含下載連結）傳送給其他使用者。 收件者使用者必須是 `dam-users` 群組。 標準電子郵件範本可在下列位置取得：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 您部署期間自訂的範本可在下列位置使用： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以將租使用者特定的自訂範本儲存在下列位置：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
    | **[!UICONTROL 資產]** | 選取此選項，即可以原始格式下載資產。<br>如果原始資產有子資產，則可以使用子資產選項。 |
    | **[!UICONTROL 轉譯]** | 轉譯是資產的二進位表示法。 資產具有主要代表性 — 上傳檔案的主要代表性。 它們可以有任意數量的表示。 <br> 使用此選項，您可以選取要下載的轉譯。 可用的轉譯取決於您選取的資產。 |
@@ -155,4 +155,3 @@ Experience Manager會根據資產數量和大小最佳化下載體驗。 從使�
 >* [下載受DRM保護的資產](drm.md)
 >* [在Win或Mac案頭上使用Experience Manager案頭應用程式下載資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 >* [使用支援的Adobe Creative Cloud應用程式中的Adobe資產連結下載資產](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
-

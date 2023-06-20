@@ -2,9 +2,9 @@
 title: 維護 AEM 連接器
 description: 維護 AEM 連接器
 exl-id: 8122a8c8-6577-4907-8f6e-52711eed3970
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '162'
 ht-degree: 20%
 
 ---
@@ -16,4 +16,4 @@ ht-degree: 20%
 
 即使在初次提交後，合作夥伴也可能有理由更新其AEM聯結器，可能是因為AEM的新版本或與此無關 — 例如，新增功能或修正錯誤。 本文會概述這兩種情況的程式，並說明客戶在升級AEM時驗證聯結器的典型程式。
 
-AEMas a Cloud Service應用程式每天都會以AEM維護修補程式更新，而功能發行期間每月會啟動較大的變更。 雖然AEM更新旨在回溯相容，因此不會中斷應用程式，但建議廠商合作夥伴定期驗證其聯結器的行為是否符合預期。 對AEM方案/環境的存取權將由合作夥伴團隊決定。
+AEMas a Cloud Service應用程式每天都會以AEM維護修補程式更新，而功能發行期間每月會啟動較大的變更。 雖然AEM更新旨在回溯相容，因此不會中斷應用程式，但建議廠商合作夥伴定期驗證其聯結器的行為是否符合預期。 對AEM方案/環境的存取權由合作夥伴團隊決定。

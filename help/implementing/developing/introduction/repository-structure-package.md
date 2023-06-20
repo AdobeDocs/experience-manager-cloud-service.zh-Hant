@@ -2,9 +2,9 @@
 title: AEM 專案存放庫結構套件
 description: Adobe Experience Manager as a Cloud Service Maven專案需要存放庫結構子套件定義，其唯一用途是定義專案的程式碼子套件部署到的JCR存放庫根目錄。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '525'
 ht-degree: 9%
 
 ---
@@ -69,12 +69,12 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                     <cloudManagerTarget>none</cloudManagerTarget>
                 </properties>
                 <configuration>
                     <properties>
-                        <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                        <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
                     <filters>
@@ -171,7 +171,7 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
 
 ## 錯誤與偵錯
 
-如果存放庫結構套件未正確設定，在Maven構建將報告錯誤：
+如果存放庫結構套件未正確設定，在Maven會報告錯誤：
 
 ```
 1 error(s) detected during dependency analysis.

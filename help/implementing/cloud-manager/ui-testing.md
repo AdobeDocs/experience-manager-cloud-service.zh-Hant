@@ -2,10 +2,10 @@
 title: UI 測試
 description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用程式建立和自動執行 UI 測試。
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2411'
-ht-degree: 99%
+source-wordcount: '2401'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI 測試"
->abstract="自訂 UI 測試是一項選擇性功能，可讓您為應用程式建立和自動執行 UI 測試。UI 測試是封裝在 Docker 映像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。"
+>abstract="自訂 UI 測試是一項選擇性功能，可讓您為應用程式建立和自動執行 UI 測試。UI 測試是封裝在 Docker 影像中的 Selenium 型測試，以便在語言和架構 (例如 Java 和 Maven、Node 和 WebDriver.io 或任何其他根據 Selenium 建置的架構和技術) 中提供廣泛的選擇。"
 
 自訂 UI 測試是一項選擇性功能，可讓您為應用程式建立和自動執行 UI 測試。
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)整合套件，以確保自訂應用程序順利更新。尤其是 IT 測試門已經支援使用 AEM API 建立和自動化自訂測試。
 
-UI 測試是封裝在 Docker 映像檔中，提供廣泛的語言和架構 (例如 Cypress、Selenium、Java 和 Maven 以及 JavaScript) 選擇。此外，可以透過使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)輕鬆產生 UI 測試專案。
+UI測試會封裝在Docker影像中，以便在語言和架構（例如Cypress、Selenium、Java和Maven以及JavaScript）中提供廣泛的選擇。 此外，可以透過使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)輕鬆產生 UI 測試專案。
 
 Adobe 鼓勵使用 Cypress，因為它提供即時重新載入和自動等待功能，有助於節省時間及提高測試期間的工作效率。Cypress 也提供簡單直覺的語法，容易學習和使用，即使是測試的初學者也能輕易上手。
 
@@ -47,9 +47,9 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 
    * 若為 JavaScript 和 WDIO，請使用在 Cloud Manager 存放庫 `ui.tests` 資料夾中自動產生的範例程式碼。
 
-      >[!NOTE]
-      >
-      >如果您的存放庫是在 Cloud Manager 自動建立 `ui.tests` 資料夾之前所建立，您還可以使用 [AEM 專案原型產生最新版本](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)。
+     >[!NOTE]
+     >
+     >如果您的存放庫是在 Cloud Manager 自動建立 `ui.tests` 資料夾之前所建立，您還可以使用 [AEM 專案原型產生最新版本](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)。
 
    * 若是 Java 和 WebDriver，請使用 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)中的範例程式碼。
 
@@ -167,7 +167,7 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 * 該文件必須位於 maven 子模組下，用於 UI 測試`pom.xml`UI 測試子模組的文件。
 * 該文件必須位於構建的根目錄`tar.gz`文件。
 
-如果此文件不存在，將跳過 UI 測試構建和執行。
+如果此檔案不存在，則會跳過UI測試構建和執行。
 
 包括一個`testing.properties`在構建工件中的文件，新增一個`include`中的聲明`assembly-ui-test-docker-context.xml`文件。
 
@@ -191,13 +191,13 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 
 * 若是基於來自 [AEM 專案原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) 產生以 JavaScript 為主的 `ui.tests` 資料夾，您可以執行以下命令以新增所需的設定。
 
-   ```shell
-   echo "ui-tests.version=1" > testing.properties
-   
-   if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
-     awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
-   fi
-   ```
+  ```shell
+  echo "ui-tests.version=1" > testing.properties
+  
+  if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
+    awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
+  fi
+  ```
 
 * Adobe 所提供的 Cypress 與 Java Selenium 測試範例已經設定好選擇加入的標幟。
 
@@ -207,7 +207,7 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 
 ### 環境變數 {#environment-variables}
 
-以下環境變數將在執行階段傳遞給您的 Docker 映像，視您的架構而定。
+以下環境變數會根據您的框架在執行階段傳遞到Docker映像。
 
 | 變數 | 範例 | 說明 | 測試架構 |
 |---|---|---|---|
@@ -220,7 +220,7 @@ UI 測試是每個 Cloud Manager 管道特定品質把關程序的一環，在[�
 | `AEM_PUBLISH_USERNAME` | `admin` | 用於登入 AEM 發佈執行個體的使用者名稱 | 全部 |
 | `AEM_PUBLISH_PASSWORD` | `admin` | 用於登入 AEM 發佈執行個體的密碼 | 全部 |
 | `REPORTS_PATH` | `/usr/src/app/reports` | 測試結果 XML 報告必須儲存的路徑 | 全部 |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | 必須將文件上傳到的 URL，以便測試架構可以存取 | 全部 |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | 必須上傳檔案才能讓測試框架存取的URL | 全部 |
 
 Adobe 測試範例提供輔助函數以存取設定參數：
 
@@ -242,7 +242,7 @@ Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 
 ### 必備條件 {#prerequisites}
 
-* Cloud Manager 中的測試將使用技術管理員使用者來執行。
+* Cloud Manager中的測試是使用技術管理員使用者執行。
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | 每次測試執行保留的 CPU 時間量 |
 | 記憶體 | 1Gi | 分配給測試的記憶體數量，其值以 GiB 為單位 |
-| 逾時 | 30m | 測試持續時間。 |
+| 逾時 | 30m | 測試結束的持續時間。 |
 | 建議的持續時間 | 15m | Adobe 建議所編寫的測試不應花費超過這個時間。 |
 
 >[!NOTE]
@@ -343,7 +343,7 @@ Adobe 提供的測試範例依預設為任何失敗的測試建立螢幕擷圖�
 
 >[!NOTE]
 >
->記錄檔案將儲存在您的存放庫的 `target/` 資料夾中。
+>記錄檔案會儲存在您的存放庫的 `target/` 資料夾中.
 >
 >如需詳細資訊，請參閱 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md)。
 
@@ -390,6 +390,6 @@ Adobe 提供的測試範例依預設為任何失敗的測試建立螢幕擷圖�
 
 >[!NOTE]
 >
->記錄檔案將儲存在您的存放庫的 `target/reports` 資料夾中。
+>記錄檔案會儲存在您的存放庫的 `target/reports` 資料夾中.
 >
 >如需詳細資訊，請參閱 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)。

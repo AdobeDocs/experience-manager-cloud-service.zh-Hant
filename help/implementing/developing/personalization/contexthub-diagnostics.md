@@ -2,9 +2,9 @@
 title: ContextHub 診斷
 description: ContextHub提供診斷頁面，您可在其中檢視ContextHub架構的概觀
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ContextHub提供診斷頁面，您可在其中檢視ContextHub架構的概觀。
 
 >[!NOTE]
 >
->為了傳回診斷資訊，必須啟用偵錯模式，否則診斷頁面將為空白。 請參閱 [本檔案](configuring-contexthub.md#debugging-contexthub) 以取得如何啟用偵錯模式的詳細資訊。
+>為了傳回診斷資訊，必須啟用偵錯模式，否則診斷頁面為空白。 請參閱 [本檔案](configuring-contexthub.md#debugging-contexthub) 以取得如何啟用偵錯模式的詳細資訊。
 
 ## 商店 {#stores}
 

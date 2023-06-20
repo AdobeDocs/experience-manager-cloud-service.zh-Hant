@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: ac525d2500177229221a5d6f79d2a8feeefe3f06
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 2%
@@ -78,7 +78,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties will be available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -131,10 +131,11 @@ RESTful Web服務可使用以下方式描述： [Swagger規格](https://swagger.
    * 選取URL或檔案，從 [!UICONTROL Swagger來源] 下拉式清單，並據此指定 [!DNL Swagger URL] 至[!DNL  Swagger] 定義檔案或上傳 [!DNL Swagger] 從您的本機檔案系統取得的檔案。
    * 根據[!DNL  Swagger] 來源輸入。下列欄位已預先填入值：
 
-      * 配置： REST API使用的傳輸通訊協定。 下拉式清單中所顯示的配置型別數目，取決於 [!DNL Swagger] 來源。
+      * 配置： REST API使用的傳輸通訊協定。 下拉式清單中所顯示的配置型別數目，取決於中定義的配置 [!DNL Swagger] 來源。
       * 主機：提供REST API之主機的網域名稱或IP位址。 它是必填欄位。
       * 基本路徑：所有API路徑的URL首碼。 此為選用欄位。\
-         如有需要，請編輯這些欄位的預先填入值。
+        如有需要，請編輯這些欄位的預先填入值。
+
    * 選取驗證型別 — 無、OAuth2.0([授權代碼](https://oauth.net/2/grant-types/authorization-code/)， [使用者端認證](https://oauth.net/2/grant-types/client-credentials/))、基本驗證、API金鑰或自訂驗證 — 存取RESTful服務，並相應地提供驗證的詳細資訊。
 
    如果您選取 **[!UICONTROL API金鑰]** 由於是驗證型別，請指定API金鑰的值。 API金鑰可作為請求標頭或查詢引數傳送。 從以下選項中選取其中一個選項： **[!UICONTROL 位置]** 下拉式清單，並在 **[!UICONTROL 引數名稱]** 欄位中輸入。
@@ -232,10 +233,10 @@ RESTful服務Open API Specification 3.0版不支援的部分操作包括：
    * 服務端點. 在此欄位中指定值，以覆寫WSDL中提到的服務端點。
    * 選取驗證型別 — 無、OAuth2.0([授權代碼](https://oauth.net/2/grant-types/authorization-code/)， [使用者端認證](https://oauth.net/2/grant-types/client-credentials/))、基本驗證或自訂驗證 — 存取SOAP服務，並相應地提供驗證的詳細資訊。
 
-      <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
-      <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
+     <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
+     <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
 
-      <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
+     <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. 點選 **[!UICONTROL 建立]** 建立SOAP Web服務的雲端設定。
 
@@ -277,6 +278,7 @@ OData服務由其服務根URL識別。 若要在中設定OData服務 [!DNL Exper
    如果您選取 **[!UICONTROL API金鑰]** 由於是驗證型別，請指定API金鑰的值。 API金鑰可作為請求標頭或查詢引數傳送。 從以下選項中選取其中一個選項： **[!UICONTROL 位置]** 下拉式清單，並在 **[!UICONTROL 引數名稱]** 欄位中輸入。
 
    >[!NOTE]
+   >
    您必須選取要連線的OAuth 2.0驗證型別 [!DNL Microsoft® Dynamics] 使用OData端點作為服務根的服務。
 
 1. 點選 **[!UICONTROL 建立]** 以建立OData服務的雲端設定。

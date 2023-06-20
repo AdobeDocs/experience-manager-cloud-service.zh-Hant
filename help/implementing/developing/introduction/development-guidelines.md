@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 開發指導方針
 description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及它和內部部署的 AEM 以及 AMS 中的 AEM 的重要區別。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 6a26006a20ed2f1d18ff376863b3c8b149de1157
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2591'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 在AEMas a Cloud Service中執行的程式碼必須注意它一律在叢集中執行的事實。 這表示執行中的例項永遠多於一個。程式碼必須是可復原的，尤其是因為例項可能隨時停止。
 
-在AEMas a Cloud Service更新期間，會有執行個體同時執行舊程式碼和新程式碼。 因此，舊程式碼不得中斷新程式碼建立的內容，且新程式碼必須能夠處理舊內容。
+在AEMas a Cloud Service更新期間，有些執行個體會同時執行舊程式碼和新程式碼。 因此，舊程式碼不得中斷新程式碼建立的內容，且新程式碼必須能夠處理舊內容。
 
 如果需要識別叢集中的主要節點，可以使用Apache Sling Discovery API來偵測它。
 
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 ## 檔案系統上的狀態 {#state-on-the-filesystem}
 
-執行個體的檔案系統不應在AEMas a Cloud Service中使用。 磁碟是暫時性的，當執行個體回收時會加以處置。 可以限制將檔案系統用於與處理單一請求相關的臨時儲存，但不應濫用在大型檔案中。 這是因為這可能會對資源使用配額產生負面影響，並遇到磁碟限制。
+執行個體的檔案系統不應在AEMas a Cloud Service中使用。 磁碟是短暫的，當執行個體回收時會加以處置。 可以限制將檔案系統用於與處理單一請求相關的臨時儲存，但不應濫用在大型檔案中。 這是因為這可能會對資源使用配額產生負面影響，並遇到磁碟限制。
 
 舉例來說，若不支援使用檔案系統，發佈層級應確保任何需要儲存的資料都會運送至外部服務，以供長期儲存之用。
 
 ## 觀察 {#observation}
 
-同樣地，由於所有非同步發生的事（例如對觀察事件採取行動）無法保證會在本機執行，因此必須謹慎使用。 JCR事件和Sling資源事件都是如此。 發生變更時，可能會移除執行個體，並由其他執行個體取代。 拓撲中當時處於作用中的其他執行個體將能夠對該事件做出反應。 但在這種情況下，這不會是本機事件，在發佈事件時甚至可能沒有活動中的領導者，因為正在進行領導人選舉。
+同樣地，由於所有非同步發生的事（例如對觀察事件採取行動）無法保證會在本機執行，因此必須謹慎使用。 JCR事件和Sling資源事件都是如此。 發生變更時，可能會移除執行個體，並由其他執行個體取代。 拓撲中當時處於作用中的其他執行個體能夠對該事件做出反應。 但在這種情況下，這不會是本機事件，在發佈事件時甚至可能沒有活動中的領導者，因為正在進行領導人選舉。
 
 ## 背景任務和長時間執行的工作 {#background-tasks-and-long-running-jobs}
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 為了將問題降至最低，應儘可能避免長時間執行工作，並且這些工作應至少可恢復。 若要執行這類作業，請使用Sling作業，此作業有至少一次的保證，因此如果中斷，將會儘快重新執行。 但是他們或許不應該從頭開始。 若要排程這類工作，最好使用 [Sling工作](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler as this again successful the least-one execution.
 
-Sling Commons Scheduler不應用於排程，因為無法保證執行。 只是更有可能將其排程。
+Sling Commons Scheduler不應用於排程，因為無法保證執行。 只是更有可能已排程。
 
 同樣地，對於非同步發生的所有事情，例如對觀察事件執行操作（無論是JCR事件或Sling資源事件），無法保證執行，因此必須謹慎使用。 目前的AEM部署已經是如此。
 
@@ -105,7 +105,7 @@ AEMas a Cloud Service不支援從發佈到製作的反向復寫。 如果需要�
 
 >[!NOTE]
 >
->若要執行下面列出的設定變更，您需要在本機開發環境中建立它們，然後將它們推送到AEMas a Cloud Service執行個體。 如需如何執行此動作的詳細資訊，請參閱 [部署至AEMas a Cloud Service](/help/implementing/deploying/overview.md).
+>若要執行下列設定變更，您可在本機開發環境中建立變更，然後將變更推送至AEMas a Cloud Service執行個體。 如需如何執行此動作的詳細資訊，請參閱 [部署至AEMas a Cloud Service](/help/implementing/deploying/overview.md).
 
 **啟動DEBUG記錄層級**
 
@@ -194,7 +194,7 @@ Developer Console有一個「說明查詢」工具的連結，對偵錯也很有
 
 ![開發主控台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-對於生產計畫，開發人員控制檯的存取權由Admin Console中的「Cloud Manager — 開發人員角色」定義，而對於沙箱計畫，開發人員控制檯則可供任何擁有產品設定檔的使用者使用，這些使用者可存取AEMas a Cloud Service。 對於所有程式，狀態傾印需要「Cloud Manager — 開發人員角色」，存放庫瀏覽器和使用者也必須在AEM使用者或AEM管理員產品設定檔中定義作者和發佈服務，以便檢視來自這兩個服務的資料。 如需設定使用者許可權的詳細資訊，請參閱 [Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+對於生產計畫，開發人員控制檯的存取權由Admin Console中的「Cloud Manager — 開發人員角色」定義，而對於沙箱計畫，開發人員控制檯則可供任何擁有產品設定檔的使用者使用，這些使用者可存取AEMas a Cloud Service。 對於所有計畫，狀態傾印需要「Cloud Manager — 開發人員角色」，存放庫瀏覽器和使用者也必須在AEM使用者或AEM管理員產品設定檔中定義作者和發佈服務，以檢視來自這兩個服務的資料。 如需設定使用者許可權的詳細資訊，請參閱 [Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### 效能監控 {#performance-monitoring}
 

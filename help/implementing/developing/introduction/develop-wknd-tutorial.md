@@ -2,10 +2,10 @@
 title: 開發 AEM Sites 快速入門 - WKND 教學課程
 description: 第一次開發 AEM？需要複習最佳做法？這是開始的地方！這個由多個部分組成的教學課程的目標是指導 AEM 新手開發人員如何使用最新的標準和技術在 AEM 中實作網站。
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 100%
+source-wordcount: '241'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 核心概念 {#core-concepts}
 
-教學課程實作利用 AEM 的許多強大功能。此網站將使用以下項目實作：
+本教學課程實作使用AEM的許多強大功能。 使用下列專案實作網站：
 
 * [Maven AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)
 * [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)

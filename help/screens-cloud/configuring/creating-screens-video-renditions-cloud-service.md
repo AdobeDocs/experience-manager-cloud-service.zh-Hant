@@ -2,9 +2,9 @@
 title: 在Screens中建立視訊轉譯as a Cloud Service
 description: 本頁面說明如何在Screensas a Cloud Service中建立視訊轉譯。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ ht-degree: 0%
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >請務必使用以「screens — 」開頭的編碼名稱，只有這些視訊轉譯會被視為在Screens中以as a Cloud Service播放視訊體驗。 輸入適合您視訊的位元速率（720px視訊為2500kbps，1080px為5000 kbps）。
+   >請務必使用以「screens — 」開頭的編碼名稱，只有這些視訊轉譯會被視為在Screensas a Cloud Service播放視訊體驗。 輸入適合您視訊的位元速率（720px視訊為2500kbps，1080px為5000 kbps）。
 
    >[!NOTE]
-   >您可以新增具有不同寬度/高度/位元速率的多個視訊轉譯，以使用您的視訊。 請記住，即使裝置只播放視訊轉譯，所有熒幕 — 轉譯都將由Screens裝置下載。
+   >您可以新增具有不同寬度/高度/位元速率的多個視訊轉譯，以使用您的視訊。 即使裝置只播放視訊轉譯，所有熒幕和轉譯都會由Screens裝置下載。
 
 1. 按一下 **儲存**.
 
@@ -66,4 +66,3 @@ ht-degree: 0%
    >[!NOTE]
    >* 您可以建立多個處理設定檔，並將其套用至對應的資料夾，以便這些資料夾中的影片取得特定的影片轉譯。
    >* 當您上傳任何影片至套用處理設定檔的資料夾時，系統會處理影片並建立已設定的轉譯，Screens裝置會進一步使用這些轉譯來播放影片。
-

@@ -2,10 +2,10 @@
 title: 自訂程式碼品質規則
 description: 本頁說明了 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則。它們是根據 Adobe Experience Manager Engineering 的最佳實務。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '3508'
-ht-degree: 100%
+source-wordcount: '3504'
+ht-degree: 98%
 
 ---
 
@@ -112,7 +112,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **嚴重度**：嚴重
 * **始自**：2018.6.0 版本
 
-從 Experience Manager 應用程式內部執行 HTTP 要求時，需確保設定適當的逾時以避免不必要的執行緒消耗，這點極為重要。不幸的是，Java™ 的預設 HTTP 用戶端 (`java.net.HttpUrlConnection`) 和常用的 Apache HTTP 元件用戶端的預設行為是永不逾時，因此必須明確設定逾時。此外，依據最佳做法的要求，上述逾時不應超過 60 秒。
+從Experience Manager應用程式內部執行HTTP要求時，請務必確保設定適當的逾時以避免不必要的執行緒消耗。 不幸的是，Java™ 的預設 HTTP 用戶端 (`java.net.HttpUrlConnection`) 和常用的 Apache HTTP 元件用戶端的預設行為是永不逾時，因此必須明確設定逾時。此外，依據最佳做法的要求，上述逾時不應超過 60 秒。
 
 #### 不符合規範的程式碼 {#non-compliant-code-2}
 
@@ -811,7 +811,7 @@ Cloud Service 部署中不支援反向複寫，如 Experience Manager as a Cloud
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-Experience Manager 用戶端資料庫可能包含影像和字體之類的靜態資源。如[使用前置處理器](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)文件中所述，使用透過 Proxy 的用戶端資料庫時，這些靜態資源必須包含在名為 `resources` 的子資料夾中，以便在發佈執行個體上有效地參考。
+Experience Manager 用戶端資料庫可能包含影像和字體之類的靜態資源。如檔案所述 [使用前置處理器，](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) 使用代理使用者端程式庫時，這些靜態資源必須包含在名為的子資料夾中 `resources` 以便在發佈執行個體上有效參考。
 
 #### 不符合規範的程式碼 {#non-compliant-proxy-enabled}
 

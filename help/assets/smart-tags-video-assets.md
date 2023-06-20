@@ -1,17 +1,17 @@
 ---
-title: 為您視訊資產加上智慧標記
+title: 為您視訊資產加上智慧型標記
 description: Experience Manager會使用自動將內容與描述性智慧標籤新增至影片 [!DNL Adobe Sensei].
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 3%
 
 ---
 
-# 為您視訊資產加上智慧標記 {#video-smart-tags}
+# 為您視訊資產加上智慧型標記 {#video-smart-tags}
 
 對新內容的需求日益增長，需要減少手動工作，以迅速提供引人入勝的數位體驗。 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 支援使用人工智慧自動標籤視訊資產。 手動標籤影片可能很耗時。 不過， [!DNL Adobe Sensei] powered video smart tagging功能會使用人工智慧模型來分析視訊內容，並將標籤新增至視訊資產。 因此可縮短DAM使用者為客戶提供豐富體驗的時間。 Adobe的機器學習服務為影片產生兩組標籤。 而其中一組對應於該視訊中的物件、場景和屬性；另一組則與飲酒、跑步和慢跑等動作相關。
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 上傳時智慧型標籤影片 {#smart-tag-assets-on-ingestion}
 
-當您 [上傳視訊資產](add-assets.md#upload-assets) 至 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]，則會處理視訊。 處理完成後，請參閱 [!UICONTROL 基本] 資產索引標籤 [!UICONTROL 屬性] 頁面。 智慧型標籤會自動新增至底下的視訊 [!UICONTROL 智慧標籤]. 資產微服務運用 [!DNL Adobe Sensei] 以建立這些智慧標籤。
+當您 [上傳視訊資產](add-assets.md#upload-assets) 至 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]，則會處理視訊。 處理完成後，請參閱 [!UICONTROL 基本] 資產索引標籤 [!UICONTROL 屬性] 頁面。 智慧型標籤會自動新增至底下的視訊 [!UICONTROL 智慧標籤]. 資產微服務使用 [!DNL Adobe Sensei] 以建立這些智慧標籤。
 
 ![智慧標籤會新增至視訊，並在資產屬性的基本標籤中顯示](assets/smart-tags-added-to-videos.png)
 
@@ -153,4 +153,3 @@ DAM中現有的視訊資產不會自動加上智慧標籤。 您需要 [!UICONTR
 >
 >* [管理智慧標籤和資產搜尋](smart-tags.md#manage-smart-tags-and-searches)
 >* [訓練智慧標籤服務並標籤您的影像](smart-tags.md)
-

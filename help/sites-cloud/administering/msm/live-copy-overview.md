@@ -1,13 +1,13 @@
 ---
 title: Live Copy 概觀主控台
-description: 了解 Live Copy 概觀主控台的基本知識，以快速了解您的 Live Copy 狀態，以便同步內容。
+description: 瞭解Live Copy概述控制檯的基本概念，以快速瞭解要同步內容的即時副本的狀態。
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 **Live Copy 概觀**&#x200B;可以在檢視藍圖頁面的屬性時開啟：
 
 1. 開啟相關藍圖頁面的&#x200B;**屬性**。
-1. 開啟&#x200B;**藍圖**&#x200B;索引標籤 - **Live Copy 概觀** 選項將顯示在頂端工具列中：
+1. 開啟 **Blueprint** 標籤 —  **即時副本概觀** 選項會顯示在頂端工具列中：
 
    ![藍圖屬性索引標籤](../assets/live-copy-blueprint-tab.png)
 
@@ -72,7 +72,7 @@ ht-degree: 100%
 **Live Copy 概觀**&#x200B;也可用於對 Live Copy 執行動作：
 
 1. 開啟 **Live Copy 概觀**。
-1. 選擇所需的藍圖或 Live Copy 頁面，工具列將更新以顯示可用的動作。可用的[動作](overview.md#terms-used)取決於您選擇的是[藍圖](#actions-for-a-blueprint-page)還是 [Live Copy](#actions-for-a-live-copy-page) 頁面。
+1. 選取所需的Blueprint或即時副本頁面，然後工具列會更新以顯示可用的動作。 可用的[動作](overview.md#terms-used)取決於您選擇的是[藍圖](#actions-for-a-blueprint-page)還是 [Live Copy](#actions-for-a-live-copy-page) 頁面。
 
 ### 藍圖頁面的動作 {#actions-for-a-blueprint-page}
 

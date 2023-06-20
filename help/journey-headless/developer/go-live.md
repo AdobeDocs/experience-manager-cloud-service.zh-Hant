@@ -2,10 +2,10 @@
 title: 如何將 Headless 應用程式上線
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何從 Git 取出本機程式碼並移至 Cloud Manager Git 以用於 CI/CD 管道，藉此來部署無周邊應用程式。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 100%
+source-wordcount: '1067'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 100%
    * 盡可能使用持續性查詢。
    * 提供 600 秒以上的 CDN TTL，以便 CDN 可以快取。
    * AEM 可以計算模型變更對現有查詢的影響。
-* 在低內容更改率和高內容變更改率之間分割 JSON 檔案/GraphQL 查詢，以減少流到 CDN 的用戶端流量並指派更高的 TTL。這將 CDN 使用原始伺服器重新驗證 JSON 的需要降至最低。
+* 在低和高內容變更率之間分割JSON檔案/GraphQL查詢，因此您可以減少到CDN的使用者端流量並指派更高的TTL。 這將 CDN 使用原始伺服器重新驗證 JSON 的需要降至最低。
 * 要主動使來自 CDN 的內容無效，請使用軟清除 (Soft Purge)。這允許 CDN 重新下載內容而不會導致快取遺漏。
 
 ## 縮短下載 Headless 內容的時間 {#improve-download-time}
@@ -101,7 +101,7 @@ ht-degree: 100%
 
 ### 向支援團隊記錄錯誤 {#logging-a-bug-with-support}
 
-為了在需要進一步協助時，可以有效率地向支援團隊記錄錯誤，請按照以下步驟操作：
+若要在您需要進一步協助時，以有效率的方式向支援服務記錄錯誤，請執行下列動作：
 
 * 如有必要，將問題進行螢幕截圖
 * 記錄重現問題的方法

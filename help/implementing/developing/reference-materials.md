@@ -1,8 +1,8 @@
 ---
 title: API 參考資料
-description: AEM具有廣泛且強大的API，您可將這些API用於數位體驗專案。
+description: AEM具有廣泛而強大的API，可用於您的數位體驗專案。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 8%
@@ -11,7 +11,7 @@ ht-degree: 8%
 
 # API 參考資料 {#api-reference-materials}
 
-Adobe Experience Manager (AEM)提供許多API來開發應用程式和擴充AEM。 AEM是以許多開放原始碼技術為基礎所建置，這也可供運用。
+Adobe Experience Manager (AEM)提供許多API來開發應用程式和擴充AEM。 AEM是以許多開放原始碼技術為基礎所建置，這些技術也可以使用。
 
 ## AEM Core API {#core-aem-apis}
 

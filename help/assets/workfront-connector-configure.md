@@ -4,9 +4,9 @@ description: 設定 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,9 @@ ht-degree: 0%
 >
 >* 另請參閱 [適用於Experience Manager Assets增強型聯結器的Workfront合作夥伴認證考試](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 如需有關考試的資訊，請參閱 [考試指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 ## 設定事件訂閱 {#event-subscriptions}
 
-事件訂閱是用來通知AEM中發生的事件 [!DNL Adobe Workfront]. 共有三種 [!DNL Workfront for Experience Manager enhanced connector] 需要事件訂閱才能運作的功能包括：
+事件訂閱是用來通知AEM中發生的事件 [!DNL Adobe Workfront]. 共有三種 [!DNL Workfront for Experience Manager enhanced connector] 需要事件訂閱才能運作的功能，包括：
 
 * 自動建立專案連結資料夾。
 * 同步Workfront檔案自訂表單值與AEM資產中繼資料的變更。
@@ -45,7 +44,7 @@ ht-degree: 0%
 * 選取 [!UICONTROL Workfront自訂整合] 您已在第6節中建立。
 * 按一下 [!UICONTROL 啟用Workfront事件訂閱].
 
-   ![事件訂閱](/help/assets/assets/event-subs.png)
+  ![事件訂閱](/help/assets/assets/event-subs.png)
 
 ## 設定連結的資料夾 {#linked-folders}
 
@@ -60,11 +59,11 @@ ht-degree: 0%
 1. 前往雲端服務中的專案連結資料夾索引標籤。
 1. 連結資料夾父路徑：在DAM中選取您要建立連結資料夾的資料夾。 如果留空，則預設為/content/dam。 請確定Workfront工具中繼資料結構描述和Workfront連結資料夾中繼資料結構描述已套用至選取的資料夾。
 1. 連結的資料夾結構：輸入逗號分隔值。 每個值都應該是 `DE:<some-project-custom-form-field>`、Portfolio、方案、年份、名稱或某些「常值字串值」（最後一項帶有引號）。 目前設定為Portfolio、方案、年、DE：專案型別、名稱。
-1. 如果Workfront中的資料夾標題應包含結構中的所有資料夾，則應核取使用資料夾結構名稱在Workfront中建立連結資料夾標題。 否則，這將是最後一個資料夾的標題。
+1. 如果Workfront中的資料夾標題應包含結構中的所有資料夾，則應核取使用資料夾結構名稱在Workfront中建立連結資料夾標題。 否則，它是最後一個資料夾的標題。
 1. 子資料夾多欄位可讓您指定應建立為連結資料夾的子資料夾的資料夾清單。
-1. 專案狀態：選取專案必須設定為的狀態，才能建立連結的資料夾。
-1. 在具有投資組合的專案中建立連結資料夾：專案必須屬於的Portfolio清單以便建立連結資料夾。 將此清單留空將為所有專案組合建立連結資料夾。
-1. 使用自訂表單欄位在專案中建立連結資料夾：自訂表單欄位及其專案必須具有的對應值，才能建立連結資料夾。 如果留空，將忽略此設定。 選取 `CUSTOM FORMS: Create DAM Linked Folder` 欄位和輸入 `Yes` ，以取得值。
+1. 專案狀態：選取專案必須設定的狀態，才能建立連結的資料夾。
+1. 在具有投資組合的專案中建立連結資料夾：專案必須屬於的Portfolio清單，以便您可以建立連結資料夾。 將此清單留空將為所有專案組合建立連結資料夾。
+1. 使用自訂表單欄位在專案中建立連結資料夾：自訂表單欄位及其專案必須具有的對應值，以便您可以建立連結資料夾。 如果留空，則會忽略此設定。 選取 `CUSTOM FORMS: Create DAM Linked Folder` 欄位和輸入 `Yes` ，以取得值。
 1. 按一下啟用自動建立連結資料夾。 如果您返回「事件訂閱」標籤，現在會看到有一個建立事件。
 
 ![連結的資料夾組態](/help/assets/assets/wf-linked-folder-config.png)
@@ -170,7 +169,7 @@ Adobe Workfront檔案與資產之間的中繼資料對應是在AEM中繼資料�
 
 1. 在Experience Manager中，存取 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront工具設定]**，然後開啟 **[!UICONTROL 進階]** 標籤。
 
-1. 選取選項 **[!UICONTROL 以與現有資產版本相同的名稱儲存資產]**. 勾選此選項後，即可儲存以相同名稱上傳的資產，並存放至與現有資產版本相同的位置。 如果未勾選，則會以不同名稱建立新資產(例如 `asset-name.pdf` 和 `asset-name-1.pdf`)。
+1. 選取選項 **[!UICONTROL 以與現有資產版本相同的名稱儲存資產]**. 勾選此選項後，即可儲存以相同名稱上傳的資產，並存放至與現有資產版本相同的位置。 如果未勾選，則會以不同名稱建立新資產(例如， `asset-name.pdf` 和 `asset-name-1.pdf`)。
 
 1. 選取選項 **[!UICONTROL 建立新版本時更新資產中繼資料]**. 如果勾選，此選項會在每次建立新版本的資產時更新資產中繼資料。 如果取消勾選，資產將保留建立新版本之前擁有的中繼資料。
 
@@ -182,7 +181,7 @@ Adobe Workfront檔案與資產之間的中繼資料對應是在AEM中繼資料�
 
 ## 附加自訂表單 {#attach-custom-forms}
 
-此工作流程步驟可讓使用者將自訂表單附加至 [!DNL Workfront] 成品。 此工作流程步驟可新增至任何工作流程模型。 此 [!DNL Workfront] 此步驟影響的成品將使用來自承載的相對路徑來查詢。
+此工作流程步驟可讓使用者將自訂表單附加至 [!DNL Workfront] 成品。 此工作流程步驟可新增至任何工作流程模型。 此 [!DNL Workfront] 此步驟影響的成品會使用裝載中的相對路徑來查閱。
 
 在Experience Manager的工作流程編輯器中，編輯 [!UICONTROL Workfront — 附加自訂表單] 工作流程步驟。
 

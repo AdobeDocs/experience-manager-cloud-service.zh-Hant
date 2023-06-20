@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0 版發行說明。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: a2c844d6f72c22ed085690ff98572a52e97de40d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 46%
+source-wordcount: '1533'
+ht-degree: 40%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 46%
 
 * 內容模型、增強型標籤資料型別 — 現在可以設定標籤資料型別，以允許撰寫單一或多個標籤。
 
-* 內容模型、新索引標籤預留位置資料型別 — 新索引標籤預留位置資料型別允許將資料型別分組到多個區段中，這些區段將會在內容片段編輯器中的索引標籤底下呈現。
+* 內容模型、新索引標籤預留位置資料型別 — 新索引標籤預留位置資料型別允許將資料型別分組到多個區段中，這些區段會呈現在內容片段編輯器中的索引標籤底下。
 
 ### [!DNL Sites]中的錯誤修正 {#bug-fixes-sites}
 
@@ -67,7 +67,7 @@ ht-degree: 46%
 
 * 編輯中繼資料結構描述時，會新增一個資料型別，在中繼資料編輯器中提供自由格式的文字區域。 使用者可以使用此文字區域輸入自由格式文字作為資產的中繼資料。 另請參閱 [中繼資料結構編輯器](/help/assets/metadata-schemas.md).
 
-* 許多資產的中繼資料可以使用CSV檔案大量匯入，也可以匯出到CSV檔案。 預設日期格式現在為 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. 使用者可以更新欄標題來運用不同的格式。 例如，新增 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 做為CSV檔案中的欄標題，而不是單字 `Date`.
+* 許多資產的中繼資料可以使用CSV檔案大量匯入，也可以匯出到CSV檔案。 預設日期格式現在為 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. 使用者可以更新欄標題來使用不同的格式。 例如，新增 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 做為CSV檔案中的欄標題，而不是單字 `Date`.
 
 * 在「欄」檢視中瀏覽資產時，視覺指示器會顯示每個資產的已核准或已拒絕狀態。
 
@@ -95,25 +95,25 @@ ht-degree: 46%
 
 * **在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法**
 
-   在先進的機器學習演算法的支援下，Adobe Sign 的政府機關身分證件流程讓全球的公司能夠確保對其接收者身分進行高品質的驗證。 現在，您可以在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法。
+  在先進的機器學習演演算法的支援下，Adobe Sign的政府機關身分證件流程讓全球的公司能夠確保對其接收者身分進行高品質的驗證。 現在，您可以在啟用 Adobe Sign 的最適化表格中使用政府機關身分證件驗證方法。
 
-   政府機關身分證件是優質的身分驗證方法，會指示接收者[上傳政府機構簽發的身分證件 (駕照、國民身分證、護照) 的影像](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)，然後評估該證件以確保其真實性。
+  Government ID是進階的身分驗證方法，會指示收件者 [上傳政府機構簽發的身分證件（駕照、國民身分證、護照）的影像](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)，然後評估該檔案以確保其真實性。
 
 * **支援使用表格中的簽名體驗來提交非同步的最適化表格**
 
-   您現在可以使用表格中的簽名體驗來提交非同步的最適化表格。 您也可以將最適化表格內嵌到 [!DNL Experience Manager Sites] 頁面上，並使用表格中的簽名體驗來提交最適化表格。
+  您現在可以使用表格中的簽名體驗來提交非同步的最適化表格。 您也可以將最適化表格內嵌到 [!DNL Experience Manager Sites] 頁面上，並使用表格中的簽名體驗來提交最適化表格。
 
 * **為指派工作步驟預先填寫最適化表格時，支援使用變數來指定附件**
 
-   為指派工作步驟預先填寫最適化表格時，您現在可以使用文件類型變數為最適化表格選取輸入附件。
+  為指派工作步驟預先填寫最適化表格時，您現在可以使用文件類型變數為最適化表格選取輸入附件。
 
 * **支援使用常值選項來設定 JSON 類型變數的值**
 
-   您可以在 AEM 工作流程的設定變數步驟中，使用常值選項來設定 JSON 類型變數的值。 此常值選項可讓您使用字串形式來指定 JSON。
+  您可以在 AEM 工作流程的設定變數步驟中，使用常值選項來設定 JSON 類型變數的值。 此常值選項可讓您使用字串形式來指定 JSON。
 
 * **使用本機開發環境來建立記錄文件 (DoR)**
 
-   您可以在雲端服務實例及 AEM Forms as a Cloud Service SDK (本機開發環境) 中使用 XDP 當做記錄文件範本。 在過去，支援僅限於雲端服務實例。
+  您可以在雲端服務實例及 AEM Forms as a Cloud Service SDK (本機開發環境) 中使用 XDP 當做記錄文件範本。 在過去，支援僅限於雲端服務實例。
 
 ### [!DNL Forms]中的錯誤修正 {#bug-fixes-forms}
 
@@ -164,7 +164,7 @@ AEM as a Cloud Service 2021.4.0 中 Cloud Manager 的發行日期為 2021 年 4 
 
 * 在 Adobe I/O Developer Console 中由 Cloud Manager 建立的專案不再可無意編輯或刪除。
 
-* 使用者新增環境時，便會告知使用者，在建立環境後，即無法將環境移至不同區域。
+* 當使用者新增環境時，他們被告知在建立環境後，它不能移動到不同的區域。
 
 * 環境變數現在可以將範圍限定至特定服務，即作者或發佈。需要 AEM 版本 2021.03.5104.20210328T185548Z 或更高版本
 

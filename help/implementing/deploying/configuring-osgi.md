@@ -3,9 +3,9 @@ title: 為Adobe Experience Manager as a Cloud Service設定OSGi
 description: 具有機密值和環境特定值的OSGi設定
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3318'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ OSGi設定檔案定義於：
 
 如果適用於同一PID的多個設定，則會套用符合執行模式數量最多的設定。
 
-此規則的詳細程度為PID層級。 這表示您無法在中為相同的PID定義某些屬性 `/apps/example/config.author/` 以及中更具體的專案 `/apps/example/config.author.dev/` 相同PID的。 符合執行模式數量最多的設定將在整個PID中生效。
+此規則的詳細程度為PID層級。 這表示您無法在中為相同的PID定義某些屬性 `/apps/example/config.author/` 以及中更具體的專案 `/apps/example/config.author.dev/` 相同PID的。 匹配執行模式數量最多的設定對整個PID有效。
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ AEM SDK快速入門Jar的AEM Web主控台可用於設定OSGi元件，以及將OS
 
 >[!NOTE]
 >
->AEM Web主控台的設定UI不會寫入 `.cfg.json` 檔案放入存放庫。 因此，請注意這一點，以避免在本機開發期間潛在的意外行為，當AEM專案定義的OSGi設定可能與產生的設定不同時。
+>AEM Web主控台的設定UI不會寫入 `.cfg.json` 檔案放入存放庫。 因此，請注意此工作流程，以避免在本機開發期間，當AEM專案定義的OSGi設定可能與產生的設定不同時，出現潛在的非預期行為。
 
 1. 登入AEM SDK快速入門Jar的AEM Web主控台，網址為 `https://<host>:<port>/system/console` 作為管理員使用者
 1. 導覽至 **osgi** > **設定**
@@ -260,7 +260,7 @@ use $[secret:SECRET_VAR_NAME]
 >
 >有些規則與變數名稱的特定首碼使用方式相關：
 >
->1. 前置詞為的變數名稱 `INTERNAL_`， `ADOBE_`，或 `CONST_` 由Adobe保留。 任何以這些首碼開頭的客戶設定變數將會被忽略。
+>1. 前置詞為的變數名稱 `INTERNAL_`， `ADOBE_`，或 `CONST_` 由Adobe保留。 任何以這些首碼開頭的客戶設定變數都會被忽略。
 >
 >1. 客戶不得參考前置詞為的變數 `INTERNAL_` 或 `ADOBE_` 兩者皆有。
 >
@@ -480,7 +480,7 @@ config.dev
 
 ### 透過API設定值 {#setting-values-via-api}
 
-呼叫API會將新變數和值部署至雲端環境，類似於典型的客戶程式碼部署管道。 作者和發佈服務將重新啟動並參考新值，通常需要幾分鐘的時間。
+呼叫API會將新變數和值部署至雲端環境，類似於典型的客戶程式碼部署管道。 作者和發佈服務會重新啟動並參考新值，通常需要幾分鐘的時間。
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -558,7 +558,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 由於秘密和環境特定的設定值位於Git之外，因此不屬於正式的Adobe Experience Manager as a Cloud Service部署機制，因此客戶應該管理、控管並整合到Adobe Experience Manager as a Cloud Service部署流程中。
 
-如上所述，呼叫API會將新變數和值部署到雲端環境，類似於典型客戶程式碼部署管道。 作者和發佈服務將重新啟動並參考新值，通常需要幾分鐘的時間。 請注意，Cloud Manager在常規計畫碼部署期間執行的品質閘道和測試不會在此過程中執行。
+如上所述，呼叫API會將新變數和值部署到雲端環境，類似於典型客戶程式碼部署管道。 作者和發佈服務會重新啟動並參考新值，通常需要幾分鐘的時間。 請注意，Cloud Manager在常規計畫碼部署期間執行的品質閘道和測試不會在此過程中執行。
 
 通常，客戶在部署在Cloud Manager中依賴環境變數的程式碼之前，會呼叫API來設定環境變數。 在某些情況下，您可能想要在部署程式碼後修改現有變數。
 

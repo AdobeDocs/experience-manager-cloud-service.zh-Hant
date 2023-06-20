@@ -3,10 +3,10 @@ title: 持續性 GraphQL 查詢
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保留 GraphQL 查詢，以期將效能最佳化。用戶端應用程式可以使用 HTTP GET 方法要求持續性查詢，回應可以在 Dispatcher 和 CDN 層快取，最終提高用戶端應用程式的效能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
-workflow-type: ht
-source-wordcount: '1687'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '1681'
+ht-degree: 96%
 
 ---
 
@@ -38,9 +38,9 @@ AEM 有提供 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)，可�
 
 例如，如果有一個名為 `my-query` 的特定查詢，它使用 Sites 設定 `my-conf` 中的模型 `my-model`：
 
-* 您可以使用 `my-conf` 專屬端點建立查詢，然後查詢將儲存為：
+* 您可以使用建立查詢 `my-conf` 特定的端點，然後查詢會儲存如下：
   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* 您可以使用 `global` 端點建立相同查詢，然後查詢將儲存為：
+* 您可以使用以下專案建立相同的查詢 `global` 端點，但接著查詢會儲存如下：
   `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
@@ -388,9 +388,9 @@ curl -u admin:admin -X POST \
 
 欄位 `Respond with application/graphql-response+json`(`responseContentTypeGraphQLResponseJson`) 可依要求定義：
 
-* `false` (預設值)：持續性查詢成功與否並不重要。此 `/execute.json/persisted-query` 會傳回狀態代碼 `200`，而傳回的 `Content-Type` 標頭會是 `application/json`。
+* `false` (預設值)：持續性查詢成功與否並不重要。此 `/execute.json/persisted-query` 傳回狀態代碼 `200` 和 `Content-Type` 傳回的標頭是 `application/json`.
 
-* `true`：在執行持續性查詢時若出現任何形式的錯誤，此端點會傳回 `400` 或 `500` (視情況而定)。此外，傳回的 `Content-Type` 會是 `application/graphql-response+json`。
+* `true`：在執行持續性查詢時若出現任何形式的錯誤，此端點會傳回 `400` 或 `500` (視情況而定)。此外，傳回的 `Content-Type` 是 `application/graphql-response+json`.
 
   >[!NOTE]
   >
@@ -440,7 +440,7 @@ URL 可以分解成以下幾個部分：
 1. 點選&#x200B;**建立套件**&#x200B;來建立新套件。這將開啟一個對話框來定義套件。
 1. 在套件定義對話框中，在 **一般**&#x200B;下輸入&#x200B;**名稱**，例如「wknd-persistent-queries」。
 1. 輸入版本號碼，例如「1.0」。
-1. 在&#x200B;**篩選器**&#x200B;下加入新&#x200B;**篩選器**。使用路徑尋找工具選取設定下方的 `persistentQueries` 資料夾。例如，對於 `wknd` 設定，完整路徑將為 `/conf/wknd/settings/graphql/persistentQueries`。
+1. 在&#x200B;**篩選器**&#x200B;下加入新&#x200B;**篩選器**。使用路徑尋找工具選取設定下方的 `persistentQueries` 資料夾。例如，對於 `wknd` 設定，完整路徑為 `/conf/wknd/settings/graphql/persistentQueries`.
 1. 點選&#x200B;**儲存**&#x200B;以儲存新的套件定義並關閉對話框。
 1. 點選新建立之套件定義中的&#x200B;**建置**&#x200B;按鈕。
 

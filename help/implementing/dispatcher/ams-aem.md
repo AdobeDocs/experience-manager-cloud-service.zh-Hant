@@ -3,9 +3,9 @@ title: 將 Dispatcher 設定從 AMS 移轉到 AEM as a Cloud Service
 description: 將 Dispatcher 設定從 AMS 移轉到 AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1445'
 ht-degree: 16%
 
 ---
@@ -18,7 +18,7 @@ AEMas a Cloud Service中的Apache和Dispatcher設定相當類似於AMS設定。 
 
 * 在AEMas a Cloud Service中，可能不使用某些Apache指示詞(例如 `Listen` 或 `LogLevel`)
 * 在AEMas a Cloud Service中，只能將Dispatcher設定的某些片段放入包含檔案中，其命名很重要。 例如，您要在不同主機上重複使用的篩選規則必須放在名為的檔案中 `filters/filters.any`. 如需詳細資訊，請參閱參考頁面。
-* AEMas a Cloud Service中有額外的驗證，不允許使用撰寫篩選規則 `/glob` 以防止安全性問題。 從 `deny *` 將使用，而不是 `allow *` （無法使用），客戶將受益於在本機執行Dispatcher並進行試用和錯誤，檢視記錄以確切瞭解Dispatcher篩選器阻止了哪些路徑以便可以新增。
+* AEMas a Cloud Service中有額外的驗證，不允許使用撰寫篩選規則 `/glob` 以防止安全性問題。 因為 `deny *` 已使用，而非 `allow *` （無法使用），客戶可以從本機執行Dispatcher並執行試用和錯誤、檢視記錄以確切瞭解Dispatcher篩選器阻止了哪些路徑以便可以新增這些路徑而受益。
 
 ## 將Dispatcher設定從AMS移轉至AEMas a Cloud Service的准則
 

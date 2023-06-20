@@ -2,10 +2,10 @@
 title: 入門準備
 description: 在開始入門流程之前，系統管理員在登入系統前必須了解一些準備步驟。
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ AEM as a Cloud Service 是一種功能強大且靈活的工具，具有眾多可
 * 該合約如何影響入門流程。
 * 如何準備您的入門諮詢電話服務。
 
-如果您不熟悉此頁面上使用的所有術語，請不要擔心。他們將在歷程的下一部分進行解釋。
+如果您不熟悉此頁面上使用的所有術語，請不要擔心。這些術語將在歷程的下一部分進行說明。
 
 ## 影片 {#video}
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service 入門由您的組織與 Adobe 之間簽署合約開始�
 
 ## 系統佈建 {#provisioning}
 
-合約簽署後，合約涵蓋的所有 AEM 雲端環境將由 Adobe 自動佈建。這些環境也同樣會連結到您在 Cloud Manager 中的計畫 (稍後將詳細介紹此主題)。每個 AEM as a Cloud Service 訂閱中都會包含這些 AEM 雲端環境，並通常會由至少一個生產環境、一個測試環境以及一個或多個開發或測試環境 (可選) 組成。
+簽署合約後，合約涵蓋的所有AEM雲端環境都會由Adobe自動布建。 這些環境也同樣會連結到您在 Cloud Manager 中的計畫 (稍後將詳細介紹此主題)。每個 AEM as a Cloud Service 訂閱中都會包含這些 AEM 雲端環境，並通常會由至少一個生產環境、一個測試環境以及一個或多個開發或測試環境 (可選) 組成。
 
 ## 入門諮詢電話服務 {#onboarding-call}
 
@@ -60,7 +60,7 @@ AEM as a Cloud Service 入門由您的組織與 Adobe 之間簽署合約開始�
 * 技術從業者
 * 您的實作合作夥伴
 
-Adobe 代表人員包括：
+Adobe由以下專案表示：
 
 * 入門專家
 * 您的技術客戶管理員 (如適用)

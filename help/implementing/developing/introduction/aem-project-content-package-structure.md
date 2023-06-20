@@ -2,9 +2,9 @@
 title: AEM 專案結構
 description: 瞭解如何定義套件結構以部署至Adobe Experience ManagerCloud Service。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2927'
 ht-degree: 12%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 12%
 
 >[!TIP]
 >
->熟悉基本知識 [AEM專案原型使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，以及 [FileVault Content Maven外掛程式](/help/implementing/developing/tools/maven-plugin.md) 因為本文章是以這些學問和概念為基礎而建立。
+>熟悉基本知識 [AEM專案原型使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，以及 [FileVault Content Maven外掛程式](/help/implementing/developing/tools/maven-plugin.md) 因為本文章是以這些學問和概念為基礎而建立。
 
 本文概述Adobe Experience Manager Maven專案為與AEMas a Cloud Service相容所需的變更，確保專案遵守可變和不可變內容的分割，建立相依性以建立無衝突、確定性的部署，並封裝成可部署的結構。
 
@@ -74,7 +74,7 @@ Oak索引(`/oak:index`)會由AEMas a Cloud Service部署程式專門管理。 �
 
 >[!NOTE]
 >
->所有環境都必須部署相同的程式碼。 這是為了確保中繼環境上的信賴驗證層級也用於生產環境所需。 如需詳細資訊，請參閱以下章節： [執行模式](/help/implementing/deploying/overview.md#runmodes).
+>所有環境都必須部署相同的程式碼。 需要此程式碼來確保中繼環境上的信賴驗證層級也用於生產環境中。 如需詳細資訊，請參閱以下章節： [執行模式](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### 內容套件
@@ -93,11 +93,11 @@ Oak索引(`/oak:index`)會由AEMas a Cloud Service部署程式專門管理。 �
 
 + 此 `all` 套件是容器套件，僅包含可部署的成品、OSGI套件Jar檔案、 `ui.apps`， `ui.config` 和 `ui.content` 套件作為內嵌。 此 `all` 套件不得具有 **任何內容或程式碼** 將其本身部署，而是將所有部署委派給存放庫的子包或OSGi捆綁Jar檔案。
 
-   套件現在包含使用Maven [FileVault Package Maven外掛程式的內嵌設定](#embeddeds)，而非 `<subPackages>` 設定。
+  套件現在包含使用Maven [FileVault Package Maven外掛程式的內嵌設定](#embeddeds)，而非 `<subPackages>` 設定。
 
-   對於複雜的Experience Manager部署，最好建立多個 `ui.apps`， `ui.config` 和 `ui.content` 代表AEM中特定網站或租使用者的專案/套件。 如果這樣做，請確保遵循可變和不可變內容之間的拆分，並將所需的內容包和OSGi捆綁Jar檔案嵌入到中的子包中 `all` 容器內容封裝。
+  對於複雜的Experience Manager部署，最好建立多個 `ui.apps`， `ui.config` 和 `ui.content` 代表AEM中特定網站或租使用者的專案/套件。 如果這樣做，請確保遵循可變和不可變內容之間的拆分，並將所需的內容包和OSGi捆綁Jar檔案嵌入到中的子包中 `all` 容器內容封裝。
 
-   例如，複雜的部署內容套件結構可能如下所示：
+  例如，複雜的部署內容套件結構可能如下所示：
 
    + `all` 內容套件內嵌下列套件，以建立單一部署成品
       + `common.ui.apps` 部署所需的程式碼 **兩者** 網站A和網站B
@@ -231,12 +231,12 @@ Repo Init指令碼的完整辭彙表可在以下網址取得： [Apache Sling Re
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
 
-   >[!WARNING]
-   >
-   >根據慣例，子包嵌入資料夾的名稱為尾碼為 `-packages`。這可確保部署代碼和內容包 **未部署** ，而是不會部署任何子包的目標資料夾， `/apps/<app-name>/...` 從而導致破壞性和循環安裝行為。
+  >[!WARNING]
+  >
+  >根據慣例，子包嵌入資料夾的名稱為尾碼為 `-packages`。這可確保部署代碼和內容包 **未部署** ，而是不會部署任何子包的目標資料夾， `/apps/<app-name>/...` 從而導致破壞性和循環安裝行為。
 
 + 第3層資料夾必須是
-   `application`, `content` 或 `container`
+  `application`, `content` 或 `container`
    + 此 `application` 資料夾內含程式碼套件
    + 此 `content` 資料夾內含內容封裝
    + 此 `container` 資料夾保留任何 [額外的應用程式套件](#extra-application-packages) AEM應用程式可能包含的資訊。
@@ -549,7 +549,7 @@ scripts=["
 
 >[!WARNING]
 >
->由於會檢查其他Maven存放庫的相依性，因此新增更多Maven存放庫可能會延長Maven構建時間。
+>新增更多Maven存放庫可能會延長Maven構建時間，因為會檢查其他Maven存放庫是否依賴關係。
 
 在Reactor專案的 `pom.xml`，新增任何必要的第三方公用Maven存放庫指示。 完整 `<repository>` 應該可以從第三方存放庫提供者取得設定。
 

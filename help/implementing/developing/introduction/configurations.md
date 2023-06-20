@@ -2,10 +2,10 @@
 title: 設定和設定瀏覽器
 description: 瞭解AEM設定，以及這些設定如何管理AEM中的工作區設定。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 3be936be09f205a73dd053ac28df936d58e50919
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 6%
+source-wordcount: '1492'
+ht-degree: 4%
 
 ---
 
@@ -62,7 +62,7 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
 
 >[!NOTE]
 >
->只有在您的使用者擁有 `admin` 權利。 `admin` 為了指派存取權給設定或修改設定，也需要許可權。
+>只有在您的使用者擁有 `admin` 權利。 `admin` 指派存取許可權給設定或修改設定也需要許可權。
 
 #### 建立設定 {#creating-a-configuration}
 
@@ -75,8 +75,8 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
    ![建立設定](assets/configuration-create.png)
 
    * **標題** 應該是描述性的。
-   * **名稱**&#x200B;將成為存放庫中的節點名稱。
-      * 它會根據標題自動產生，並根據[AEM 命名慣例](naming-conventions.md)進行調整
+   * 此 **名稱** 會成為存放庫中的節點名稱。
+      * 系統會根據標題自動產生，並根據 [AEM命名慣例。](naming-conventions.md)
       * 如有需要，可加以調整。
 1. 檢查您要允許的設定型別。
    * [上下文中心區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -91,7 +91,7 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
 
 #### 編輯設定及其存取許可權 {#access-rights}
 
-如果您將設定視為工作區，可以對這些設定設定設定存取許可權，以強制誰可以存取這些工作區，誰則不能存取。
+如果您將設定視為工作區，則可以在這些設定上設定存取權，以強制執行誰可以存取這些工作區，誰不可以存取這些工作區。
 
 1. 登入AEMas a Cloud Service，並從主功能表選取 **工具** -> **一般** -> **設定瀏覽器**.
 1. 選取您要修改的設定，然後點選或按一下 **屬性** 工具列中的。

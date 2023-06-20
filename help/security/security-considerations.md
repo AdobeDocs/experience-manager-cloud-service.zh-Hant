@@ -4,10 +4,10 @@ description: 了解使用 AEM as a Cloud Service 時的重要安全性注意事�
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '229'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## AEM Trust Store {#aem-trust-store}
 
-為了支援非對稱式加密作業，AEM 將憑證儲存在內容存放庫的全域 trust-store 中。其內容是公開的，根據預設，發佈者執行個體上的所有人都可以匿名存取。
+為了支援非對稱的密碼編譯操作，AEM會將憑證儲存在全域信任存放區的內容存放庫中。 其內容是公開的，根據預設，發佈者執行個體上的所有人都可以匿名存取。
 
 ### Trust Store 的特色 {#truststore-characteristics}
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 * 客戶可以透過 [keystore API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-) 在自己的程式碼中使用它
 * 可透過&#x200B;**工具** - **安全性** - **Trust Store**，或存取 *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`* 來管理 trust-store，如下所示：
 
-   ![Trust Store 管理](/help/security/assets/global-trust-store-modified.png)
+  ![Trust Store 管理](/help/security/assets/global-trust-store-modified.png)
 
 * 根據使用案例，可以透過存放庫存取控制進一步限制對 trust-store 的存取權。
 

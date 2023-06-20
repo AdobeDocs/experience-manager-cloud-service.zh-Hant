@@ -4,9 +4,9 @@ description: 瞭解AE的基本知識；使用封裝管理器管理封裝。
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3782'
 ht-degree: 4%
 
 ---
@@ -445,7 +445,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 **檢查內容**
 
-此驗證會檢查要新增哪些許可權、如何處理這些許可權（合併/取代），以及目前的許可權是否會受到影響。
+此驗證會檢查要新增哪些許可權、其處理方式（合併/取代），以及目前的許可權是否受到影響。
 
 **回報方式**
 
@@ -522,13 +522,13 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 ### 安裝套件 {#installing-packages}
 
-上傳套件只會將套件內容新增至存放庫，但無法存取。 您必須安裝上傳的套件，才能使用套件的內容。
+上傳套件只會將套件內容新增至存放庫，但無法存取。 您必須安裝上傳的套件才能使用套件的內容。
 
 >[!CAUTION]
 >
 >安裝套件可能會覆寫或刪除現有內容。 只有在您確定套件不會刪除或覆寫您需要的內容時，才會上傳套件。
 
-在安裝套件之前，封裝管理程式會自動建立包含將被覆寫之內容的快照套件。 如果您解除安裝套裝軟體，將會重新安裝此快照。
+在安裝套件之前，封裝管理程式會自動建立包含被覆寫內容的快照套件。 如果您解除安裝套裝軟體，則會重新安裝此快照。
 
 1. [存取封裝管理員。](#accessing)
 

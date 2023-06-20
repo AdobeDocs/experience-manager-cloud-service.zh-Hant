@@ -2,10 +2,10 @@
 title: 建立 API 要求 - Headless 設定
 description: 了解如何使用 GraphQL API 無周邊傳遞內容片段，以及如何使用 AEM Assets REST API 管理內容片段。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ## 使用 GraphQL 和 GraphiQL 查詢內容
 
-資訊架構師需要為他們的管道端點設計查詢，以便傳遞內容。通常只需要為每個模型的每個端點考慮一次這些查詢。出於本快速入門指南的目的，我們只需要建立一個。
+資訊架構師需要為其通道端點設計查詢來傳遞內容。 通常只需要為每個模型的每個端點考慮一次這些查詢。出於本快速入門指南的目的，我們只需要建立一個。
 
 GraphiQL 是包含在您 AEM 環境中的 IDE，在[設定您的端點](#enable-graphql-endpoint)後，即可存取/看見它。
 

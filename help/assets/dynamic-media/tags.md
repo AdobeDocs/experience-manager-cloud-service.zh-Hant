@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6679'
+source-wordcount: '6666'
 ht-degree: 7%
 
 ---
@@ -292,7 +292,7 @@ Dynamic Media檢視器擴充功能可讓您使用Dynamic Media檢視器的事件
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -487,7 +487,7 @@ Adobe建議您仔細檢閱本節之前的所有檔案，以瞭解完整的整合
 
 ## 設定整合的Experience Platform標籤 {#configuring-adobe-launch-for-the-integration}
 
-設定Experience Platform標籤後，系統會針對整合設定下列專案：
+設定Experience Platform標籤後，系統會針對整合進行下列設定：
 
 * 建立新屬性以將您的所有設定放在一起。
 * 擴充功能的安裝和設定。 屬性中安裝的所有擴充功能的使用者端程式碼會一起編譯至程式庫中。 此程式庫稍後會由網頁使用。
@@ -748,7 +748,7 @@ Experience Manager設定包含下列兩個主要步驟：
    * **[!UICONTROL 標題]**  — 輸入描述性科目標題。
    * **[!UICONTROL 授權伺服器]**  — 返回您先前開啟的整合詳細資訊頁面。 選取 **[!UICONTROL JWT]** 標籤。 複製伺服器名稱（不含路徑），如下所示。
 
-（範例伺服器名稱僅供說明之用）   返回「帳 **[!UICONTROL 戶]** 」頁面，然後將名稱貼到相應欄位。例如， `https://ims-na1.adobelogin.com/`
+   返回「帳 **[!UICONTROL 戶]** 」頁面，然後將名稱貼到相應欄位。例如， `https://ims-na1.adobelogin.com/`
 （範例伺服器名稱僅供說明之用）
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)

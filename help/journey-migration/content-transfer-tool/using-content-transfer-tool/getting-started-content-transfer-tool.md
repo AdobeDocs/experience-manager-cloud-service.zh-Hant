@@ -2,9 +2,9 @@
 title: 內容轉移工具快速入門
 description: 內容轉移工具快速入門
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1396'
 ht-degree: 22%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 22%
 
 內容轉移工具可以從 Software Distribution 入口網站下載其 zip 檔。您可以透過以下方式安裝套件 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 在您的來源Adobe Experience Manager (AEM)例項上。 確保下載最新版本。有關最新版本的詳細資訊，請參閱 [發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
-僅支援2.0.0版及更新版本，建議您使用最新版本。
+僅支援2.0.0版及更高版本，建議使用最新版本。
 
 >[!NOTE]
 >從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)入口網站下載內容轉移工具。
@@ -34,7 +34,7 @@ ht-degree: 22%
 >
 >如果從Cloud Acceleration Manager中刪除移轉集，也可能會發生連線錯誤。
 
-來源AEM執行個體可能在防火牆後面執行，而防火牆只能連線至已新增至允許清單的特定主機。 為了成功執行擷取，需要從執行AEM的執行個體存取以下端點：
+來源AEM執行個體可能在防火牆後面執行，而防火牆只能連線至已新增至允許清單的特定主機。 若要成功執行擷取，需要從執行AEM的執行個體存取以下端點：
 
 * Azure Blob儲存服務： `casstorageprod.blob.core.windows.net`
 
@@ -88,7 +88,7 @@ ht-degree: 22%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   將會顯示下列對話方塊。 請注意，移轉集將在長時間不活動後過期。 在專案卡片和移轉工作表格列上顯示警告一段時間後，移轉集將過期，其資料將不再可用。 檢閱 [移轉集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
+   下列對話方塊隨即顯示。 請注意，移轉集將在長時間不活動後過期。 在專案卡片和移轉工作表格列上顯示警告一段時間後，移轉集將過期，其資料將不再可用。 檢閱 [移轉集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -120,7 +120,7 @@ ht-degree: 22%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. 將先前從CAM複製的擷取金鑰貼到的「擷取金鑰」輸入欄位 **建立移轉集** 表單。 執行此操作後，將會自動填入移轉集名稱和Cloud Acceleration Manager (CAM)專案名稱欄位。 這些名稱應與CAM中的「移轉集」名稱及您建立的CAM專案名稱相符。 您現在可以新增內容路徑。 新增內容路徑後，即可儲存移轉集。 您可以包含或排除的版本來執行擷取。
+1. 將先前從CAM複製的擷取金鑰貼到的「擷取金鑰」輸入欄位 **建立移轉集** 表單。 執行此操作後，會自動填入移轉集名稱和Cloud Acceleration Manager (CAM)專案名稱欄位。 這些名稱應與CAM中的「移轉集」名稱及您建立的CAM專案名稱相符。 您現在可以新增內容路徑。 新增內容路徑後，請儲存移轉集。 您可以包含或排除的版本來執行擷取。
 
    >[!NOTE]
    >
@@ -147,7 +147,6 @@ ht-degree: 22%
       >* `/home`
       >* `/etc` (部分 `/etc` 允許在CTT中選取路徑)
 
-
 1. 按一下 **儲存** 填入 **建立移轉集** 詳細資訊畫面。
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
@@ -167,7 +166,8 @@ ht-degree: 22%
 ### 決定移轉集大小 {#migration-set-size}
 
 建立移轉集後，強烈建議您在開始提取程式之前，對移轉集執行大小檢查。
-透過對移轉集執行大小檢查，您將能夠：
+透過對移轉集執行大小檢查，您可以：
+
 * 判斷磁碟空間是否足夠 `crx-quickstart` 子目錄以成功完成擷取。
 * 判斷移轉集大小是否在支援的產品限制內，並避免失敗的內容擷取。
 
@@ -185,11 +185,11 @@ ht-degree: 22%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. 一次 **檢查大小** 程式已完成，狀態將變更為 **已完成**. 選取相同的移轉集，然後按一下 **檢查大小** 以檢視結果。 以下是 **檢查大小** 沒有警告的結果。
+1. 晚於 **檢查大小** 程式已完成，狀態會變更為 **已完成**. 選取相同的移轉集，然後按一下 **檢查大小** 以檢視結果。 以下是 **檢查大小** 沒有警告的結果。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. 如果 **檢查大小** 結果指出磁碟空間不足和/或移轉集超過產品限制， **警告** 將顯示狀態。
+1. 如果 **檢查大小** 結果指出磁碟空間不足，或移轉集超過產品限制，或兩者皆超過。 **警告** 狀態會顯示。
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    

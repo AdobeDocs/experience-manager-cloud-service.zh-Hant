@@ -1,10 +1,10 @@
 ---
 title: 快取與效能
 description: 瞭解可啟用GraphQL和內容快取的各種設定，以最佳化商務實作的效能。
-exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ venia/components/structure/navigation:true:10:600
 
 為了確保CIF頁面可以在AEM Dispatcher中的有限時間內快取，我們建議使用 [基於時間的快取失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) （也稱為TTL型快取）在AEM Dispatcher中快取CIF頁面時。 此功能可在AEM中設定，使用額外的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) 封裝。
 
-透過TTL型快取，開發人員通常會為選取的AEM頁面定義一或多個快取持續時間。 這可確保AEM Dispatcher中僅快取CIF頁面，直到設定的持續時間為止，並且內容將經常更新。
+透過TTL型快取，開發人員通常會為選取的AEM頁面定義一或多個快取持續時間。 這可確保AEM Dispatcher中僅快取CIF頁面，直到設定的持續時間為止，並且經常更新內容。
 
 >[!NOTE]
 >

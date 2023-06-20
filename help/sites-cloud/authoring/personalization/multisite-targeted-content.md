@@ -2,9 +2,9 @@
 title: 在多個網站中使用目標內容
 description: 如果您需要管理目標內容，例如網站之間的活動、體驗和選件，您可以利用AEM針對目標內容的內建多網站支援
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2891'
 ht-degree: 5%
 
 ---
@@ -49,7 +49,6 @@ ht-degree: 5%
 >* 當您使用轉出或即時副本時，需要MSM授權。
 >* 當您使用與Adobe Target的同步時，需要Adobe Target授權。
 >
-
 
 ## 使用案例 {#use-cases}
 
@@ -235,7 +234,6 @@ ht-degree: 5%
 >* 您只能暫停或分離活動中的即時副本。
 >* 您不需要暫停或分離即時副本，即可擴充繼承的活動。 您可以隨時建立 **新** 該活動的本機體驗和選件。 如果您想要修改現有活動，則需要暫停繼承。
 >
-
 
 ### 暫停繼承 {#suspending-inheritance}
 

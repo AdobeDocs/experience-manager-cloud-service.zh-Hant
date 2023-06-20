@@ -10,10 +10,10 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
-exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2550'
+source-wordcount: '2544'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 ## 您將建置的內容
 
-在本教學課程中，將會針對類似卡片的Product Teaser元件實作新樣式。 在本教學課程中吸取的經驗教訓，可套用至其他CIF核心元件。
+在本教學課程中，將針對類似卡片的Product Teaser元件實作新樣式。 在本教學課程中吸取的經驗教訓，可套用至其他CIF核心元件。
 
 ![您將建置的內容](../assets/style-cif-component/what-you-will-build.png)
 
@@ -192,7 +192,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   > 只有基底程式庫在頁面指令碼中會加上「硬式編碼」。 `venia.site` 不會包含在這些檔案中，而是包含在頁面範本中，以提供更大的彈性。 稍後將檢查此專案。
+   > 只有基底程式庫在頁面指令碼中會加上「硬式編碼」。 `venia.site` 不會包含在這些檔案中，而是包含在頁面範本中，以提供更大的彈性。 稍後會檢查此程式。
 
 1. 從終端機，建置並部署整個專案到AEM的本機執行個體：
 
@@ -277,14 +277,14 @@ ht-degree: 2%
 
    ![頁面原則 — 登陸頁面](../assets/style-cif-component/page-policy-properties.png)
 
-   在右側，您可以看到使用者端程式庫的清單 **類別** 此範本會包含在使用此範本的所有頁面上。
+   在右側，您可以看到使用者端程式庫的清單 **類別** 包含在使用此範本的所有頁面上的資訊。
 
    * `venia.dependencies`  — 提供符合以下條件的任何廠商程式庫： `venia.site` 取決於。
    * `venia.site`  — 這是的類別 `clientlib-site` 此 `ui.frontend` 模組產生。
 
    請注意，其他範本使用相同的原則， **內容頁面**， **登陸頁面**&#x200B;等……透過重複使用相同的原則，我們可以確保在所有頁面上包含相同的使用者端程式庫。
 
-   使用範本和頁面原則來管理使用者端程式庫包含的好處是，您可以根據範本變更原則。 例如，您可能在同一個AEM執行個體中管理兩個不同的品牌。 每個品牌都有其獨特的樣式或 *主題* 但基礎程式庫和程式碼將會相同。 另一個範例，如果您有一個較大的使用者端程式庫，而您只想顯示在某些頁面上，您可以為該範本制定唯一的頁面原則。
+   使用範本和頁面原則來管理使用者端程式庫包含的好處是，您可以根據範本變更原則。 例如，您可能在同一個AEM執行個體中管理兩個不同的品牌。 每個品牌都有其獨特的樣式或 *主題* 但基礎程式庫和程式碼是相同的。 另一個範例，如果您有一個較大的使用者端程式庫，而您只想顯示在某些頁面上，您可以為該範本制定唯一的頁面原則。
 
 ## 本機Webpack開發 {#local-webpack-development}
 
@@ -317,7 +317,7 @@ webpack-dev-server可代理來自AEM本機例項的影像和部分CSS/JavaScript
    </body>
    ```
 
-   這些檔案會被移除，因為它們代表產生的CSS和JavaScript編譯版本。 `ui.frontend` 模組。 保留其他使用者端程式庫，因為它們會代理自執行中的AEM執行個體。
+   這些檔案會被移除，因為它們代表產生的CSS和JavaScript編譯版本。 `ui.frontend` 模組。 將其他使用者端程式庫保留為將要從執行中的AEM執行個體代理的位置。
 
 1. 開啟新的終端機視窗並瀏覽至 `ui.frontend` 資料夾。 執行命令 `npm start`：
 
@@ -336,11 +336,11 @@ webpack-dev-server可代理來自AEM本機例項的影像和部分CSS/JavaScript
 
    ![連線埠80上的Webpack開發伺服器](../assets/style-cif-component/webpack-dev-server-port80.png)
 
-   讓webpack-dev-server繼續執行。 它將在下一個練習中使用。
+   讓webpack-dev-server繼續執行。 它會在下一個練習中使用。
 
 ## 實作產品Teaser的卡片樣式 {#update-css-product-teaser}
 
-接下來，修改中的Sass檔案 `ui.frontend` 模組，實作類似卡片樣式的Product Teaser。 webpack-dev-server將用於快速檢視變更。
+接下來，修改中的Sass檔案 `ui.frontend` 模組，實作類似卡片樣式的Product Teaser。 webpack-dev-server用於快速檢視變更。
 
 返回IDE和產生的專案。
 
@@ -455,7 +455,7 @@ webpack-dev-server可代理來自AEM本機例項的影像和部分CSS/JavaScript
 
    ![更新產品Teaser樣式](../assets/style-cif-component/product-teaser-new-style.png)
 
-1. 新增其他產品Teaser以進行實驗。 使用「版面模式」來變更元件的寬度和位移，以便在一列中顯示多個Teaser。
+1. 新增其他產品Teaser以進行實驗。 使用「版面模式」來變更元件的寬度和位移，以一列顯示多個Teaser。
 
    ![多個產品Teaser](../assets/style-cif-component/multiple-teasers-final.png)
 

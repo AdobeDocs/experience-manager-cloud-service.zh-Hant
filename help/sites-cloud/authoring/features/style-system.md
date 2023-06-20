@@ -2,9 +2,9 @@
 title: 樣式系統
 description: 樣式系統可讓範本作者在元件的內容原則中定義樣式類別，讓內容作者在編輯頁面上的元件時能夠選取這些類別。 這些樣式可作為元件的替代視覺變體，使其更靈活。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1320'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 樣式系統針對範本作者與內容作者的需求，提供統一的解決方案：
 
 * 範本作者可以在元件的內容原則中定義樣式類別。
-* 內容作者接著可在編輯頁面上的元件時，從下拉式清單中選取這些類別，以套用對應的樣式。
+* 內容作者接著可以在編輯頁面上的元件時，從下拉式清單中選取這些類別，以便套用對應的樣式。
 
 然後，樣式類別會插入至元件的裝飾包裝函式元素上，如此一來，元件開發人員就不需要在提供CSS規則以外的方式處理樣式。
 
@@ -104,7 +104,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->設定為元件原則的樣式屬性的CSS類別（以及任何必要的Javascript）必須部署為 [使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md) 才能順利運作。
+>CSS類別（以及任何必要的Javascript）若設定為元件原則的樣式屬性，則必須部署為 [使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md) 才能運作。
 
 ## 設定 {#setup}
 
@@ -120,9 +120,9 @@ ht-degree: 2%
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->此使用 [覆蓋](/help/implementing/developing/introduction/overlays.md)，透過 [Sling資源合併](/help/implementing/developing/introduction/sling-resource-merger.md).
+此使用 [覆蓋](/help/implementing/developing/introduction/overlays.md)，透過 [Sling資源合併](/help/implementing/developing/introduction/sling-resource-merger.md).
 
-設定好元件後，AEM會自動將頁面作者設定的樣式插入裝飾元素上，AEM會自動將該裝飾元素包裝在每個可編輯的元件周圍。 元件本身不需執行任何其他動作，即可讓此情況發生。
+在設定元件後，頁面作者設定的樣式會由AEM自動插入裝飾元素上，AEM會自動將其包裝在每個可編輯的元件周圍。 元件本身不需執行任何其他動作，即可讓此情況發生。
 
 ### 在「編輯」對話方塊中啟用樣式索引標籤 {#enable-styles-tab-edit}
 
@@ -134,11 +134,11 @@ ht-degree: 2%
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->此使用 [覆蓋](/help/implementing/developing/introduction/overlays.md)，透過 [Sling資源合併](/help/implementing/developing/introduction/sling-resource-merger.md).
+此使用 [覆蓋](/help/implementing/developing/introduction/overlays.md)，透過 [Sling資源合併](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
->依預設，「編輯」對話方塊上的「樣式」索引標籤未啟用。
+依預設，「編輯」對話方塊上的「樣式」索引標籤未啟用。
 
 ### 具有元素名稱的樣式 {#styles-with-element-names}
 
@@ -150,15 +150,13 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->請避免為可組合的樣式定義元素名稱。 定義多個元素名稱時，優先順序為：
+請避免為可組合的樣式定義元素名稱。 定義多個元素名稱時，優先順序為：
 >
->1. HTL優先於所有內容： `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
->1. 然後，在多個作用中樣式中，會採用元件原則中設定的樣式清單中的第一個樣式。
->1. 最後，元件的 `cq:htmlTag`/ `cq:tagName` 將被視為遞補值。
-
+1. HTL優先於所有內容： `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+1. 然後，在多個作用中樣式中，會採用元件原則中設定的樣式清單中的第一個樣式。
+1. 最後，元件的 `cq:htmlTag`/ `cq:tagName` 將被視為遞補值。
 >
 
-
-這種定義樣式名稱的功能對於非常一般的元件（例如佈局容器或內容片段元件）非常有用，可為它們提供額外的含義。
+這種定義樣式名稱的功能對於一般元件（例如佈局容器或內容片段元件）非常有用，可為它們提供額外的含義。
 
 例如，這可讓版面配置容器獲得如下的語意 `<main>`， `<aside>`， `<nav>`等。

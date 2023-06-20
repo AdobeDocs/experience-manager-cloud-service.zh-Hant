@@ -4,9 +4,9 @@ description: 在AEM中定義內容片段刪除原則之前，請先檢閱這些�
 feature: Content Fragments
 role: User
 exl-id: f6698dd8-3e2a-44ac-b00f-df578aa85ffe
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '469'
 ht-degree: 10%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 10%
 >
 >編輯/更新內容片段所需的刪除許可權包含在透過使用者和/或群組管理指派的刪除許可權中。 <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-編輯/更新片段所需的許可權需要套用至包含內容片段的節點或適當的父節點（在下的任何層級）。 `/content/dam`)。 指派給此類父節點時，許可權將套用至該分支內的所有節點。
+編輯/更新片段所需的許可權需要套用至包含內容片段的節點或適當的父節點（在下的任何層級）。 `/content/dam`)。 指派給此類父節點時，許可權會套用至該分支內的所有節點。
 
 例如，將包含所有內容片段的資料夾，例如：
 

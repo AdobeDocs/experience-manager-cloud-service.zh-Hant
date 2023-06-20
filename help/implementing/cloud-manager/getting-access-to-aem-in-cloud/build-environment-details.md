@@ -2,10 +2,10 @@
 title: 組建環境
 description: 了解 Cloud Manager 的構建環境以及它如何構建和測試您的程式碼。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '994'
+ht-degree: 95%
 
 ---
 
@@ -94,7 +94,7 @@ Cloud Manager 使用專門的構建環境構建和測試您的程式碼。
 
 >[!NOTE]
 >
->從 2022 年 4 月開始，Oracle JDK 將成為 AEM 應用程式開發和操作的預設 JDK。Cloud Manager 的建置流程將自動切換成使用 Oracle JDK，即使在 Maven 工具鏈中明確選取了替代選項。如需進一步詳細資訊，請參閱四月發行說明。
+>從2022年4月開始，OracleJDK成為AEM應用程式開發和操作的預設JDK。 Cloud Manager的建置流程會自動切換為使用OracleJDK，即使在Maven工具鏈中明確選取了替代選項。 請參閱2022年4月發行說明。
 
 #### 備用 Maven 執行 JDK 版本 {#alternate-maven-jdk-version}
 

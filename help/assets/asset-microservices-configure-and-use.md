@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2932'
 ht-degree: 2%
@@ -143,7 +143,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ### 自訂設定檔的範例 {#custom-profile-example}
 
-為了說明自訂設定檔的使用情況，讓我們考慮使用案例，將一些自訂文字套用至行銷活動影像。 您可以建立處理設定檔，以利用Photoshop API來編輯影像。
+為了說明自訂設定檔的使用情況，讓我們考慮使用案例，將一些自訂文字套用至行銷活動影像。 您可以建立使用Photoshop API編輯影像的處理設定檔。
 
 asset compute服務整合可讓Experience Manager使用這些引數傳遞給自訂應用程式。 [!UICONTROL 服務引數] 欄位。 自訂應用程式接著會呼叫Photoshop API，並將這些值傳遞至API。 例如，您可以傳遞字型名稱、文字顏色、文字粗細和文字大小，以將自訂文字新增至行銷活動影像。
 
@@ -161,7 +161,7 @@ asset compute服務整合可讓Experience Manager使用這些引數傳遞給自�
 
 * 管理員可以在以下位置選擇處理設定檔定義： **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 處理設定檔]**，並使用 **[!UICONTROL 將設定檔套用至資料夾]** 動作。 它會開啟內容瀏覽器，讓您導覽至特定資料夾、選取資料夾並確認設定檔的應用。
 * 使用者可以在Assets使用者介面中選取資料夾，使用 **[!UICONTROL 屬性]** 動作若要開啟資料夾屬性畫面，請按一下 **[!UICONTROL 資產處理]** 標籤，然後在 [!UICONTROL 處理設定檔] 清單中，為該資料夾選取適當的處理設定檔。 若要儲存變更，請按一下 **[!UICONTROL 儲存並關閉]**.
-   ![從「資產屬性」索引標籤將處理設定檔套用至資料夾](assets/folder-properties-processing-profile.png)
+  ![從「資產屬性」索引標籤將處理設定檔套用至資料夾](assets/folder-properties-processing-profile.png)
 
 * 使用者可以在Assets使用者介面中選取資料夾或特定資產，以套用處理設定檔，然後選取 ![資產重新處理圖示](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL 重新處理資產]** 從上方可用的選項中選取。
 
@@ -287,7 +287,6 @@ asset compute服務整合可讓Experience Manager使用這些引數傳遞給自�
 >* [瞭解擴充功能及使用時機](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 >* [如何建立自訂應用程式](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html).
 >* [各種使用案例支援的MIME型別](/help/assets/file-format-support.md).
-
 
 <!-- TBD: 
 * How/where can admins check what's already configured and provisioned.

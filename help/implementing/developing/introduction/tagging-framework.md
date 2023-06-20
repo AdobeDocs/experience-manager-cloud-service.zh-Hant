@@ -1,10 +1,10 @@
 ---
 title: AEM 標記框架
-description: 標籤內容並運用AEM標籤基礎架構，以便將其分類並組織。
+description: 標籤內容，並使用AEM標籤基礎結構來分類及組織內容。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1568'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 * 另請參閱 [使用標籤](/help/sites-cloud/authoring/features/tags.md) 有關將內容標籤為內容作者的資訊。
 * 請參閱管理標籤，以取得管理員對於建立和管理標籤以及已對哪些內容套用的觀點。
 
-本文將著重於支援AEM中標籤的基本架構，以及如何以開發人員的身分加以運用。
+本文主要說明在AEM中支援標籤的基本架構，以及如何作為開發人員使用它。
 
 ## 簡介 {#introduction}
 
-若要標籤內容並運用AEM標籤基礎結構：
+若要標籤內容並使用AEM標籤基礎結構：
 
 * 標籤必須作為型別的節點存在 [`cq:Tag`](#cq-tag-node-type) 在 [分類根節點。](#taxonomy-root-node)
 * 標籤的內容節點的 `NodeType` 必須包括 [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin.
@@ -128,7 +128,6 @@ A `TagID` 會識別解析成存放庫中的標籤節點的路徑。
 >* 頁面(`cq:Page`)其中 `jcr:content`節點屬於型別 `cq:PageContent`，其中包括 `cq:Taggable` mixin.
 >* 資產(`cq:Asset`)其中 `jcr:content/metadata` 節點一律具有 `cq:Taggable` mixin.
 
-
 ### 節點型別標籤法(CND) {#node-type-notation-cnd}
 
 節點型別定義以CND檔案的形式存在於存放庫中。 CND標籤法定義為 [JCR檔案。](https://jackrabbit.apache.org/node-type-notation.html).
@@ -156,7 +155,7 @@ AEM中包含的「節點型別」的基本定義如下：
 
 >[!NOTE]
 >
->若要運用AEM標籤功能，自訂開發的應用程式不應定義以外的標籤屬性 `cq:tags`.
+>若要使用AEM標籤功能，自訂開發的應用程式不應定義以外的標籤屬性 `cq:tags`.
 
 ## 移動和合併標籤 {#moving-and-merging-tags}
 
@@ -171,25 +170,22 @@ AEM中包含的「節點型別」的基本定義如下：
    * 標籤A因此會隱藏，並只會保留在存放庫中，以解析指向標籤A的內容節點中的標籤ID。
    * 標籤垃圾回收器會移除標籤A之類的標籤，而內容節點不再指向這些標籤。
    * 的特殊值 `cq:movedTo` 屬性為 `nirvana`，此專案會在刪除標籤時套用，但無法從存放庫中移除，因為有子標籤具有 `cq:movedTo` 必須保留。
-
-      >[!NOTE]
-      >
-      >此 `cq:movedTo` 只有在符合下列任一條件時，屬性才會新增至移動或合併的標籤：
-      >
-      > 1. 標籤用於內容中（這表示它有參考）。 或
-      > 1. 標籤具有已移動的子系。
-
+     >[!NOTE]
+     >
+     >此 `cq:movedTo` 只有在符合下列任一條件時，屬性才會新增至移動或合併的標籤：
+     >
+     > 1. 標籤用於內容中（這表示它有參考）。 或
+     > 1. 標籤具有已移動的子系。
+     >
 * 標籤B已建立（發生移動時）並接收 `cq:backlinks` 屬性。
    * `cq:backlinks` 會將參照保持在另一個方向，即會保留所有已移至標籤B或與標籤B合併的標籤清單。
    * 這通常需要保留 `cq:movedTo` 屬性是當標籤B移動/合併/刪除或是當標籤B啟動時的最新狀態，在這種情況下，其所有反向連結標籤也必須啟動。
-
-      >[!NOTE]
-      >
-      >此 `cq:backlinks` 只有在符合下列任一條件時，屬性才會新增至移動或合併的標籤：
-      >
-      > 1. 標籤用於內容中（這表示它有參考）。 或
-      > 1. 標籤具有已移動的子系。
-
+     >[!NOTE]
+     >
+     >此 `cq:backlinks` 只有在符合下列任一條件時，屬性才會新增至移動或合併的標籤：
+     >
+     > 1. 標籤用於內容中（這表示它有參考）。 或
+     > 1. 標籤具有已移動的子系。
 
 讀取 `cq:tags` 內容節點的屬性涉及以下解析度：
 

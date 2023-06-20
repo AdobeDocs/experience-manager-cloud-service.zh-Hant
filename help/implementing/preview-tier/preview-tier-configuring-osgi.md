@@ -2,10 +2,10 @@
 title: 設定預覽階層的 OSGi 設定
 description: 了解如何設定 AEM 預覽服務，以在上線前預覽內容。
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -40,7 +40,7 @@ AEM 提供 Sites 預覽服務，可讓開發人員和內容作者在網站到達
 
 ## 使用 Developer Console 偵錯預覽 {#debugging-preview-using-the-developer-console}
 
-請按照以下步驟使用 Developer Console 偵錯預覽階層：
+請依照以下步驟操作，以便您可以使用開發人員控制檯對預覽層進行偵錯：
 
 * 在 [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) 中，選取&#x200B;**-- 全部預覽 --**&#x200B;或其名稱包含&#x200B;**預覽**&#x200B;的生產環境
 * 產生預覽執行個體的相關資訊

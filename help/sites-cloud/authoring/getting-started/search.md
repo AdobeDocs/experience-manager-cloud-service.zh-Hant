@@ -2,9 +2,9 @@
 title: 搜尋
 description: 透過完整的搜尋更快找到您的內容
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '492'
 ht-degree: 8%
 
 ---
@@ -33,11 +33,11 @@ AEM的製作環境提供多種搜尋內容的機制，視資源型別而定。
 
 若要搜尋和篩選資源：
 
-1. 開啟 **搜尋** （使用工具列中的放大鏡）並輸入搜尋字詞。 將會提出建議並可加以選取：
+1. 開啟 **搜尋** （使用工具列中的放大鏡）並輸入搜尋字詞。 提出建議並可加以選取：
 
    ![搜尋期限](/help/sites-cloud/authoring/assets/search-term.png)
 
-   依預設，搜尋結果將限於您目前的位置（即主控台和相關資源型別）：
+   依預設，搜尋結果僅限於您目前的位置（即主控台和相關資源型別）：
 
    ![搜尋位置](/help/sites-cloud/authoring/assets/search-term-location.png)
 
@@ -67,7 +67,6 @@ AEM的製作環境提供多種搜尋內容的機制，視資源型別而定。
    >
    >* 根據您選取的資源型別，例如Assets和Communities條件具有專業化是可以理解的。
    >* 您可以自訂執行個體(當作「搜尋Forms」) (適用於AEM內的位置)。
-
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).

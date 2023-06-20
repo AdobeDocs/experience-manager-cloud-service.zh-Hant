@@ -2,9 +2,9 @@
 title: 體驗片段概觀
 description: 擴充Adobe Experience Manager as a Cloud Service體驗片段。
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1648'
 ht-degree: 0%
 
 ---
@@ -85,8 +85,7 @@ HTML轉譯是使用Sling重寫程式管道產生的。 管道定義於 `/libs/ex
 
    1. 範本名稱的開頭必須是：
       `experience-fragments`
-這可讓使用者在/content/experience-fragments中建立體驗片段，作為 
-`cq:allowedTemplates` 此資料夾的屬性包含名稱開頭為的所有範本 `experience-fragment`. 客戶可以更新此屬性，以包含自己的命名配置或範本位置。
+這可讓使用者在/content/experience-fragments中建立體驗片段，作為 `cq:allowedTemplates` 此資料夾的屬性包含名稱開頭為的所有範本 `experience-fragment`. 客戶可以更新此屬性，以包含自己的命名配置或範本位置。
 
 1. [允許的範本](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) 可在體驗片段主控台中設定。
 
@@ -160,7 +159,7 @@ Link Externalizer可用來判斷建立Target選件的HTML版本時所需的正�
    >
    >在大多數情況下，HTML中的內部連結是相對連結，但自訂元件在HTML中可能會提供完整URL的情況。 依預設，AEM會忽略這些完整的URL且不會進行任何修改。
 
-   這些屬性中的連結會透過AEM Link Externalizer執行 `publishLink()` 以便將URL重新建立為在已發佈的例項上，而且是公開可用的。
+   這些屬性中的連結會透過AEM Link Externalizer執行 `publishLink()` 將URL重新建立為在已發佈的例項上，如此便可公開使用。
 
 使用現成可用的實作時，上述流程應足以從體驗片段產生Target選件，然後將其匯出至Adobe Target。 不過，此程式並未說明部分使用案例，其中包括：
 
@@ -201,7 +200,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 若要使用介面，您首先需要建立包含實作連結重寫程式提供者介面的新服務元件的組合。
 
-此服務將用於插入Experience Fragment Export to Target重新寫入，以便存取各種連結。
+此服務用於插入Experience Fragment Export to Target重新寫入，以便能夠存取各種連結。
 
 例如， `ComponentService`：
 
@@ -266,7 +265,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 * `href` 僅限屬性
 
 * 針對特定體驗片段：
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 任何透過「匯出至目標」系統的其他體驗片段會遭忽略，且不會受到此服務中實作的變更影響。
 
@@ -278,8 +277,8 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 
 作為輸入，方法會接收引數：
 
-* `link`  
-`String` 表示目前處理中的連結。 這通常是指向作者執行個體上資源的相對URL。
+* `link`
+此 `String` 表示目前處理中的連結。 這通常是指向作者執行個體上資源的相對URL。
 
 * `tag`
 目前處理中的HTML元素名稱。

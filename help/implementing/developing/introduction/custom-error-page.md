@@ -2,9 +2,9 @@
 title: 自訂錯誤頁面
 description: AEM隨附處理HTTP錯誤的標準錯誤處理常式，且可自訂。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: b20d40a9f5f4bda51c67cda1164d0c4d74943aa1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '572'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ AEM隨附處理HTTP錯誤的標準錯誤處理常式；例如，顯示：
 
 ## 如何自訂錯誤處理常式顯示的頁面 {#how-to-customize-pages-shown-by-the-error-handler}
 
-您可以開發自己的指令碼，以便在發生錯誤時自訂錯誤處理常式顯示的頁面。 為此，您將運用 [AEM標準覆蓋機制](/help/implementing/developing/introduction/overlays.md) 以便您的自訂頁面建立在 `/apps` 和覆蓋下的預設頁面 `/libs`.
+您可以開發自己的指令碼，以便在發生錯誤時自訂錯誤處理常式顯示的頁面。 若要這麼做，請使用 [AEM標準覆蓋機制](/help/implementing/developing/introduction/overlays.md) 以便您的自訂頁面建立在 `/apps` 和覆蓋下的預設頁面 `/libs`.
 
 1. 在存放庫中，複製預設指令碼：
 
@@ -70,7 +70,7 @@ HTTP [500內部伺服器錯誤](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
 
 >[!NOTE]
 >
->在AEM as Cloud Service中，從後端收到5XX錯誤時，CDN會提供一般錯誤頁面。 為了允許後端的實際回應通過，您需要將以下標頭新增到回應中： `x-aem-error-pass: true`.
+>在AEM as Cloud Service中，從後端收到5XX錯誤時，CDN會提供一般錯誤頁面。 若要允許後端的實際回應通過，您需要將以下標頭新增至回應： `x-aem-error-pass: true`.
 >這僅適用於來自AEM或Apache/Dispatcher層的回應。 其他來自中繼基礎結構層的非預期錯誤仍會顯示一般錯誤頁面。
 
 >[!CAUTION]

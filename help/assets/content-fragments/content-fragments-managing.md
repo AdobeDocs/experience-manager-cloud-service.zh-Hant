@@ -2,10 +2,10 @@
 title: 管理內容片段（資產 — 內容片段）
 description: 瞭解如何使用Assets控制檯來管理您的AEM內容片段，這是Headless內容的基礎。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 9%
+source-wordcount: '1754'
+ht-degree: 8%
 
 ---
 
@@ -31,7 +31,6 @@ ht-degree: 9%
 >
 >* 編寫頁面時；請參閱 [使用內容片段編寫頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* 的 [透過GraphQL使用內容片段的Headless內容傳送](/help/assets/content-fragments/content-fragments-graphql.md).
-
 
 >[!NOTE]
 >
@@ -65,21 +64,21 @@ ht-degree: 9%
 
       * **標題**
 
-         片段標題。
+        片段標題。
 
-         必要.
+        必要.
 
       * **說明**
 
       * **標記**
+
    * **進階**
 
       * **名稱**
 
-         名稱；將用於組成URL。
+        用來組成URL的名稱；。
 
-         必要；將自動從標題衍生，但可以更新。
-
+        必要；自動衍生自標題，但可更新。
 
 1. 選擇 **Create**  (建立) 以完成操作，然後選擇 **Open** the fragment for editing (開啟片段以進行編輯) 或返回控制 **台完成**。
 
@@ -176,7 +175,7 @@ ht-degree: 9%
 
 ![模式](assets/cfm-managing-top-toolbar.png)
 
-* 當內容頁面上已引用片段時，將顯示訊息。 您可以 **關閉** 訊息。
+* 當片段已在內容頁面上參考時，會顯示訊息。 您可以 **關閉** 訊息。
 
 * 可以使用隱藏/顯示側面板 **切換側面板** 圖示。
 
@@ -216,23 +215,23 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **儲存** 將會儲存最新變更並保留在編輯器中。
    * **儲存並關閉** 將會儲存最新的變更並退出編輯器。
 
-   >[!CAUTION]
-   >
-   >若要編輯內容片段，您需要 [適當的許可權](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 如果您遇到問題，請聯絡您的系統管理員。
+  >[!CAUTION]
+  >
+  >若要編輯內容片段，您需要 [適當的許可權](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 如果您遇到問題，請聯絡您的系統管理員。
 
-   >[!NOTE]
-   >
-   >在儲存之前，您可以保留在編輯器中進行一系列變更。
+  >[!NOTE]
+  >
+  >在儲存之前，您可以保留在編輯器中進行一系列變更。
 
-   >[!CAUTION]
-   >
-   >除了只是儲存您的變更，這些動作也會更新任何參考，並確保Dispatcher會依需求排清。 這些變更可能需要一些時間才能處理。 因此，大型/複雜/過載系統可能會受到效能影響。
-   >
-   >使用時，請記住這一點 **儲存並關閉** 然後快速重新進入片段編輯器以進行並儲存進一步的變更。
+  >[!CAUTION]
+  >
+  >除了只是儲存您的變更，這些動作也會更新任何參考，並確保Dispatcher會依需求排清。 這些變更可能需要一些時間才能處理。 因此，大型/複雜/過載系統可能會受到效能影響。
+  >
+  >使用時，請記住這一點 **儲存並關閉** 然後快速重新進入片段編輯器以進行並儲存進一步的變更。
 
 * **關閉**
 
-   將退出編輯器而不儲存最新變更（即自上次更新以來所做的變更） **儲存**)。
+  將退出編輯器而不儲存最新變更（即自上次更新以來所做的變更） **儲存**)。
 
 編輯您的內容片段時，AEM會自動建立版本，以確保如果您取消變更(使用 **關閉** 而不儲存)：
 
@@ -289,16 +288,18 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **刪除**
 
 >[!NOTE]
+>
 註解包括：
+>
 * 所有資產的標準功能
 * 在時間軸中製作
 * 與片段資產相關
 >
 註解（適用於內容片段）包括：
+>
 * 在片段編輯器中輸入
 * 特定於片段中選取的文字區段
 >
-
 
 例如：
 
@@ -327,6 +328,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * **完成** 將帶您返回主控台
 
 >[!NOTE]
+>
 比較片段時無法編輯片段內容。
 
 ![比較](assets/cfm-managing-06.png)
@@ -337,15 +339,17 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * 直接從 [時間表](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-   選取所需的版本，然後 **還原為此版本** 動作。
+  選取所需的版本，然後 **還原為此版本** 動作。
 
 * 當 [比較版本與目前版本](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) 您可以 **回覆** 至選取的版本。
 
 ## 發佈和參考片段 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
+>
 如果您的片段是根據模型，則您應確保 [模型已發佈](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
-如果您發佈的內容片段尚未發佈模型，選擇清單將指出這一點，模型將隨片段一起發佈。
+>
+如果您發佈的內容片段尚未發佈模型，選擇清單會指出這一點，模型會與片段一起發佈。
 
 必須發佈內容片段才能在發佈環境中使用。 這是使用標準Assets功能完成：
 
@@ -357,9 +361,10 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 建立之後；使用 [Assets控制檯中可用的動作](#actions-for-a-content-fragment-assets-console).
 * 從 [內容片段編輯器](#toolbar-actions-in-the-content-fragment-editor).
 
-此外，當您 [發佈使用片段的頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)；片段將會列在頁面參考中。
+此外，當您 [發佈使用片段的頁面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)；片段會列在頁面參考中。
 
 >[!CAUTION]
+>
 片段發佈和/或參考後，當作者再次開啟片段進行編輯時，AEM將顯示警告。 這是為了警告，片段的變更也會影響參照的頁面。
 
 ## 刪除片段 {#deleting-a-fragment}
@@ -370,10 +375,12 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 2. 選取片段。
 
    >[!NOTE]
+   >
    此 **刪除** 動作無法當作快速動作使用。
 
 3. 選取 **刪除** （從工具列）。
 4. 確認 **刪除** 動作。
 
    >[!CAUTION]
-   如果片段已在頁面中參考，您會看到警告訊息，並需要確認您要繼續執行強制刪 **除**。片段及其內容片段元件將會從任何內容頁面中刪除。
+   >
+   如果片段已在頁面中參考，您會看到警告訊息，並需要確認您要繼續執行強制刪 **除**。片段及其內容片段元件會從任何內容頁面中刪除。

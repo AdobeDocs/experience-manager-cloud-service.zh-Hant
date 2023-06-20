@@ -2,10 +2,10 @@
 title: AEM Headful 和 Headless 技術
 description: AEM 專案可以在有周邊和無周邊模型中實作，但這不必是二選一。AEM 提供了在一個專案中利用兩種模型優勢的靈活性。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 100%
+source-wordcount: '1007'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ AEM 還可用於簡單地管理內容，允許由另一個平台管理內容的�
 
 ## 網路商店範例 {#web-shop-example}
 
-假設您的公司有一個網路商店 SPA。其中包含所有產品詳細資料和影像。然後，您導入 AEM 以推動您的行銷工作，例如促銷網站、部落格和活動內容。如何整合這兩者？AEM 提供一系列選項：
+假設您的公司有一個網路商店 SPA。其中包含所有產品詳細資料和影像。接著，您需介紹AEM以強化行銷工作，例如促銷網站、部落格和行銷活動內容。 如何整合這兩者？AEM 提供一系列選項：
 
 * **允許系統獨立運作。**
 * **透過 GraphQL 從 AEM 向網路商店提供有限的內容。**&#x200B;內容可以由作者在 AEM 中建立，但只能通過網路商店 SPA 查看。

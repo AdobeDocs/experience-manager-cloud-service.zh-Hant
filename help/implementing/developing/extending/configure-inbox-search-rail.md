@@ -2,9 +2,9 @@
 title: 如何設定收件匣的搜尋篩選器？
 description: 瞭解如何設定收件匣專案的搜尋篩選器。
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->本文列出最新的使用者介面選項。 在即將發行的版本中，使用者介面上的選項名稱將會更新。
+>本文列出最新的使用者介面選項。 即將發行的版本會在使用者介面上更新選項名稱。
 
 ## 設定文字述詞 {#text-predicate}
 

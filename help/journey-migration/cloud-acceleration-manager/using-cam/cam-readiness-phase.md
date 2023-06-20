@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager中的整備階段
 description: 本頁提供Cloud Acceleration Manager整備階段的概觀。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1055'
 ht-degree: 5%
 
 ---
@@ -83,7 +83,6 @@ ht-degree: 5%
    >* 選項 **另存為PDF** 上述功能建議並支援。
    >* 如果使用瀏覽器的列印按鈕，它將只列印一頁。
 
-
    ![影像](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### 使用檢視趨勢線 {#trendline-view-cam}
@@ -121,7 +120,6 @@ ht-degree: 5%
    >您會看到兩個顯示下列專案趨勢的圖表：
    >1. **報告發現趨勢**
    >1. **自訂元件和範本趨勢**
-
    >
    >您可以透過下拉式清單新增或變更圖形檢視，如下圖所示：
    >![影像](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
@@ -138,7 +136,6 @@ ht-degree: 5%
 >* 按一下每個卡片以開啟其相關標籤
 >* 將所有報表標籤（包括篩選）加入書籤，以便共用或日後擷取
 >* 使用詳細資訊圖示可檢視每個報告發現的詳細資訊
-
 
 #### 報表屬性 {#report-properties}
 
@@ -183,7 +180,7 @@ ht-degree: 5%
 * 評估
 * 內容移轉考量事項
 
-   ![影像](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+  ![影像](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## 使用Planning and Setup卡 {#planning-setup}
 

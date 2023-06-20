@@ -2,9 +2,9 @@
 title: 為 Screens as a Cloud Service 開發自訂元件
 description: 下列教學課程會逐步引導您完成建立AEM Screens自訂元件的步驟。 AEM Screens會重複使用其他AEM產品的許多現有設計模式與技術。 本教學課程著重說明針對AEM Screens進行開發時的差異和特殊考量事項。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2106'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ Screens專案的原始程式碼通常作為多模組Maven專案來管理。 為�
 
    以CRXDE Lite表示ui.apps程式碼
 
-   此 **地獄世界** 元件目前只是預留位置。 在教學課程中，將會新增功能，讓作者可更新元件顯示的訊息。
+   此 **地獄世界** 元件目前只是預留位置。 在教學課程中新增功能，讓作者可更新元件顯示的訊息。
 
 1. 此 **screens-weretail-run.ui.content** 套件會在下方安裝程式碼：
 
@@ -242,7 +242,7 @@ AEM Screens有一些有趣的限制，對傳統WCM Sites元件不一定成立。
                                    jcr:primaryType="nt:unstructured"
                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
                                    defaultValue=""
-                                   fieldDescription="Amount of time the image will be shown in the sequence, in milliseconds"
+                                   fieldDescription="Amount of time the image is shown in the sequence, in milliseconds"
                                    fieldLabel="Duration (ms)"
                                    min="0"
                                    name="./duration"/>
@@ -255,7 +255,7 @@ AEM Screens有一些有趣的限制，對傳統WCM Sites元件不一定成立。
    </jcr:root>
    ```
 
-   訊息的文字欄位將儲存到名為的屬性 `message` 且Duration的數字欄位將儲存至名為的屬性 `duration`. 這兩個屬性都在 `/apps/weretail-run/components/content/helloworld/production.html` 由HTL做為 `${properties.message}` 和 `${properties.duration}`.
+   訊息的文字欄位會儲存至名為的屬性 `message` 且Duration的數字欄位會儲存至名為的屬性 `duration`. 這兩個屬性都在 `/apps/weretail-run/components/content/helloworld/production.html` 由HTL做為 `${properties.message}` 和 `${properties.duration}`.
 
    ![Hello World — 完成的對話方塊](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
@@ -265,7 +265,7 @@ AEM Screens有一些有趣的限制，對傳統WCM Sites元件不一定成立。
 
 使用者端資料庫提供一種機制，可整理和管理AEM實施所需的CSS和JavaScript檔案。
 
-AEM Screens元件在編輯模式與預覽/生產模式中的轉譯方式不同。 將會建立兩個使用者端程式庫，一個用於編輯模式，另一個用於預覽/生產模式。
+AEM Screens元件在編輯模式和預覽/生產模式的呈現方式不同。 已建立兩個使用者端程式庫：一個用於編輯模式，另一個用於預覽/生產模式。
 
 1. 為Hello World元件的使用者端資料庫建立資料夾。
 
@@ -281,7 +281,7 @@ AEM Screens元件在編輯模式與預覽/生產模式中的轉譯方式不同�
 
    * `allowProxy` | 布林值 | `true`
 
-   * `categories`| 字串[] | `cq.screens.components`
+   * `categories`|字串[] | `cq.screens.components`
 
    ![/apps/weretail-run/components/content/helloworld/clientlibs/shared的屬性](/help/screens-cloud/developing/assets/2018-05-03_at_1026pm.png)
 
@@ -411,6 +411,7 @@ Hello World元件的用途為序列頻道。 若要測試元件，則會建立�
 1. 範本步驟 — 選擇 **序列頻道**
 
    1. 屬性步驟
+
    * 基本標籤>標題= **閒置頻道**
    * 管道標籤>檢查 **讓頻道上線**
 
@@ -446,7 +447,7 @@ Hello World元件的用途為序列頻道。 若要測試元件，則會建立�
 
 如果您的自訂元件使用外部資源，例如資產（影像、影片、字型、圖示等）、特定資產轉譯或使用者端資料庫（css、js等），則這些不會自動新增到離線設定，因為預設情況下我們只會捆綁HTML標籤。
 
-為了讓您自訂並最佳化下載至播放器的確切資產，我們為自訂元件提供擴充機制，以向Screens中的離線快取邏輯公開其相依性。
+為了讓您自訂和最佳化下載至播放器的確切資產，我們為自訂元件提供擴充機制，以在Screens中向離線快取邏輯公開其相依性。
 
 以下區段會示範自訂離線資源處理常式的範本，以及 `pom.xml` 特定專案的URL。
 

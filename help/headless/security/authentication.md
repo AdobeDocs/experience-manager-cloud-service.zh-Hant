@@ -1,18 +1,18 @@
 ---
 title: 針對內容片段之遠端 AEM GraphQL 查詢的驗證
-description: 了解必須對遠程 AEM GraphQL 查詢執行的驗證，以確保無周邊內容傳遞的安全。
+description: 瞭解遠端AEM GraphQL查詢所需的驗證，以確保Headless內容傳送的安全。
 feature: Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
-source-git-commit: 4e37db128aa31d6e8e950be0d077eae921a27468
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 100%
+source-wordcount: '235'
+ht-degree: 88%
 
 ---
 
 # 針對內容片段之遠端 AEM GraphQL 查詢的驗證 {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-[用於內容片段傳遞的 Adobe Experience Manager as a Cloud Service (AEM) GraphQL API](/help/headless/graphql-api/content-fragments.md) 的主要使用案例是接受協力廠商應用程式或服務的遠端查詢。這些遠端查詢可能需要經驗證的 API 存取權，以確保無周邊內容傳遞的安全。
+[用於內容片段傳遞的 Adobe Experience Manager as a Cloud Service (AEM) GraphQL API](/help/headless/graphql-api/content-fragments.md) 的主要使用案例是接受協力廠商應用程式或服務的遠端查詢。這些遠端查詢可能需要經過驗證的API存取，以保護Headless內容傳送。
 
 >[!NOTE]
 >

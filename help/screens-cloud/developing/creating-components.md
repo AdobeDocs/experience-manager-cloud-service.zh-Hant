@@ -2,9 +2,9 @@
 title: 建立元件
 description: AEM元件可用來保留、格式化及轉譯可在您的網頁上使用的內容。 請依照本頁所述操作，瞭解製作管道和演算元件的相關資訊。
 exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '288'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ AEM元件可用來保留、格式化及轉譯可在您的網頁上使用的內�
 
 色版是傳送至一組顯示器的內容中心物件。 因此，內容作者通常會在編輯器中開啟管道，以新增或修改內容。 由於頻道是 ***cq：Page*** 它會遵循相同的傳統UX模式，在通道上新增和變更元件。
 
-不過，由於管道中的元件通常會在全熒幕上呈現，因此在嘗試編輯單一元件或撰寫新訂單時，編寫體驗會受到影響。 因此，管道將依賴選取器來呈現元件的不同檢視。 製作環境將利用編輯選擇器來啟動自訂管道呈現。
+不過，由於管道中的元件通常會在全熒幕上呈現，因此在嘗試編輯單一元件或撰寫新訂單時，編寫體驗會受到影響。 因此，管道將依賴選取器來呈現元件的不同檢視。 製作環境會使用編輯選擇器來啟動自訂色版轉譯。
 
 例如 `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
@@ -32,7 +32,7 @@ AEM元件可用來保留、格式化及轉譯可在您的網頁上使用的內�
 | *my-component/my-component.html* | 生產呈現 |
 | *my-component/edit.html* | 在較小的檢視中編輯演算 |
 
-內建元件會運用下列使用者端程式庫類別：
+內建元件使用下列使用者端程式庫類別：
 
 | **Component** | **客戶庫** |
 |---|---|

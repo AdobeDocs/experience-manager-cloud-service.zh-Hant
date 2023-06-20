@@ -2,9 +2,9 @@
 title: 製作環境和工具
 description: AEM的製作環境提供各種機制來組織和編輯您的內容
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2154'
 ht-degree: 12%
 
 ---
@@ -46,7 +46,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
 ## 元件瀏覽器 {#components-browser}
 
-元件是AEM內容的建置組塊。 您可以將多個元件放在頁面上並設定其選項，以便使用AEM建置您的內容頁面。
+元件是AEM內容的建置組塊。 您可以將多個元件放在頁面上並設定其選項，以使用AEM建置您的內容頁面。
 
 元件瀏覽器會顯示可在目前頁面上使用的所有元件。 這些檔案可以拖曳至適當位置，然後編輯以新增您的內容。
 
@@ -60,21 +60,21 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
 * **行動裝置(例如iPad)**
 
-   元件瀏覽器會完整涵蓋正在編輯的頁面。
+  元件瀏覽器會完整涵蓋正在編輯的頁面。
 
-   若要新增元件至頁面，請按住所需元件並向右移動，元件瀏覽器將關閉並重新顯示頁面 — 您可以在此處放置元件。
+  若要新增元件至頁面，請按住所需元件並向右移動，元件瀏覽器將關閉並重新顯示頁面 — 您可以在此處放置元件。
 
-   ![行動裝置上的元件瀏覽器](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
+  ![行動裝置上的元件瀏覽器](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
 * **案頭裝置**
 
-   元件瀏覽器會在視窗左側開啟。
+  元件瀏覽器會在視窗左側開啟。
 
-   若要新增元件至頁面，請按一下所需元件，然後將其拖曳至所需位置。
+  若要新增元件至頁面，請按一下所需元件，然後將其拖曳至所需位置。
 
-   ![案頭上的元件瀏覽器](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
+  ![案頭上的元件瀏覽器](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
-   元件表示方式：
+  元件表示方式：
 
    * 元件名稱
    * 元件群組（灰色）
@@ -82,16 +82,16 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
       * 標準元件的圖示為單色。
       * 縮寫一律為元件名稱的前兩個字元。
 
-   從頂部工具列中的 **元件** 瀏覽器您可以：
+  從頂部工具列中的 **元件** 瀏覽器您可以：
 
    * 依名稱篩選元件。
    * 使用下拉式選取範圍將顯示限製為特定群組。
 
-   如需元件的詳細說明，您可以在「元件」瀏覽器中按一下或點選元件旁的資訊圖示(如果 **有** )。例如，對於 **內容片段**：
+  如需元件的詳細說明，您可以在「元件」瀏覽器中按一下或點選元件旁的資訊圖示(如果 **有** )。例如，對於 **內容片段**：
 
-   ![元件瀏覽器資訊](/help/sites-cloud/authoring/assets/component-browser-information.png)
+  ![元件瀏覽器資訊](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
-   如需有關可用元件的詳細資訊，請參閱 [元件主控台](/help/sites-cloud/authoring/features/components-console.md).
+  如需有關可用元件的詳細資訊，請參閱 [元件主控台](/help/sites-cloud/authoring/features/components-console.md).
 
 >[!NOTE]
 >
@@ -136,19 +136,19 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
 * **行動裝置**
 
-   資產瀏覽器會完整涵蓋正在編輯的頁面。
+  資產瀏覽器會完整涵蓋正在編輯的頁面。
 
-   若要將資產新增至頁面，請觸控並按住所需資產，然後將其向右移動 — 資產瀏覽器將關閉並重新顯示頁面，您可以在其中將資產新增至所需元件。
+  若要將資產新增至頁面，請觸控並按住所需資產，然後將其向右移動 — 資產瀏覽器將關閉並重新顯示頁面，您可以在其中將資產新增至所需元件。
 
-   ![行動裝置上的資產瀏覽器](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
+  ![行動裝置上的資產瀏覽器](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
 * **案頭裝置**
 
-   資產瀏覽器會在視窗左側開啟。
+  資產瀏覽器會在視窗左側開啟。
 
-   若要將資產新增至頁面，請按一下所需的資產，並將其拖曳至所需的元件或位置。
+  若要將資產新增至頁面，請按一下所需的資產，並將其拖曳至所需的元件或位置。
 
-   ![案頭上的資產瀏覽器](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
+  ![案頭上的資產瀏覽器](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
 頁面可以輕鬆地由許多相同型別的元件組成，因此內容（元件）樹狀結構會在元件型別名稱（黑色）之後顯示描述性文字（灰色）。 描述性文字來自元件的常見屬性，例如標題或文字。
 
-元件型別將以使用者語言顯示，而元件說明文字則來自頁面語言。
+元件型別會以使用者語言顯示，而元件說明文字則來自頁面語言。
 
 按一下元件旁的>形箭號將會收合或展開該層級。
 
@@ -182,13 +182,13 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 
 * 例如，基本頁面：
 
-   ![內容樹狀結構醒目提示](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
+  ![內容樹狀結構醒目提示](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
-   基本頁面的元件會有常用選項。
+  基本頁面的元件會有常用選項。
 
-   如果您在樹狀結構中點選的元件可編輯，則名稱右側會出現扳手圖示。 按一下此圖示將直接啟動元件的編輯對話方塊。
+  如果您在樹狀結構中點選的元件可編輯，則名稱右側會出現扳手圖示。 按一下此圖示將直接啟動元件的編輯對話方塊。
 
-   ![內容樹編輯按鈕](/help/sites-cloud/authoring/assets/content-tree-edit.png)
+  ![內容樹編輯按鈕](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
 * 屬於的頁面 [即時副本](/help/sites-cloud/administering/msm/overview.md)，會從其他頁面繼承元件。
 
@@ -285,7 +285,6 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 >* 有一個 [鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`)以在 **預覽** 和目前選取的模式(例如， **編輯**， **版面**、等)。
 >
 
-
 ## 路徑選擇 {#path-selection}
 
 通常在製作時，需要選取其他資源，例如定義指向其他頁面或資源的連結，或選取影像時。 若要輕鬆選取路徑， [路徑欄位](#path-fields) 優惠自動完成和 [路徑瀏覽器](#path-browser) 允許更強大的選擇。
@@ -316,7 +315,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 * 您可以隨時使用對話方塊頂端的搜尋欄位。 按一下 **X** 以清除搜尋。
 * 若要縮小搜尋範圍，您可以顯示篩選選項並根據特定路徑篩選結果。
 
-   ![篩選器選項](/help/sites-cloud/authoring/assets/filters-option.png)
+  ![篩選器選項](/help/sites-cloud/authoring/assets/filters-option.png)
 
 ## 鍵盤快速鍵 {#keyboard-shortcuts}
 

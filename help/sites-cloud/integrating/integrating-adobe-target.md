@@ -4,9 +4,9 @@ description: 整合 Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1046'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,6 @@ ht-degree: 1%
 > 1. 重新輸入租使用者ID。
 > 2. 重新連線至Target。
 > 3. 儲存設定。
-
 
 ### 編輯Target設定 {#edit-target-configuration}
 
@@ -157,4 +156,4 @@ AEM提供與Experience Platform Launch的現成整合。 將Adobe Target擴充�
 
 >[!NOTE]
 >
->現有客戶仍支援舊版設定（無法編輯或建立新設定）。 舊版設定將成為客戶使用VSTS上傳的內容套件的一部分。
+>現有客戶仍支援舊版設定（無法編輯或建立新設定）。 舊版設定是客戶使用VSTS上傳的內容套件的一部分。

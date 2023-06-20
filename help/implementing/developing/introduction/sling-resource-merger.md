@@ -2,9 +2,9 @@
 title: 在Adobe Experience Manager as a Cloud Service中使用Sling Resource Merger
 description: Sling Resource Merger提供存取和合併資源的服務
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1158'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 * 確保不會在中進行自訂變更 `/libs`.
 * 減少復寫來源的結構 `/libs`.
 
-   使用Sling Resource Merger時，不建議從複製整個結構 `/libs` 因為這會導致自訂中保留太多資訊(通常是 `/apps`)。 當系統以任何方式升級時，不必要地複製資訊會增加發生問題的機會。
+  使用Sling Resource Merger時，不建議從複製整個結構 `/libs` 因為這會導致自訂中保留太多資訊(通常是 `/apps`)。 當系統以任何方式升級時，不必要地複製資訊會增加發生問題的機會。
 
 >[!CAUTION]
 >
@@ -56,23 +56,23 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
 * `sling:hideProperties` ( `String` 或 `String[]`)
 
-   指定要隱藏的屬性或屬性清單。
+  指定要隱藏的屬性或屬性清單。
 
-   萬用字 `*` 隱藏所有。
+  萬用字 `*` 隱藏所有。
 
 * `sling:hideResource` ( `Boolean`)
 
-   指出資源是否應該完全隱藏，包括其子項。
+  指出資源是否應該完全隱藏，包括其子項。
 
 * `sling:hideChildren` ( `String` 或 `String[]`)
 
-   包含要隱藏的子節點或子節點清單。 將會保留節點的屬性。
+  包含要隱藏的子節點或子節點清單。 會維護節點的屬性。
 
-   萬用字 `*` 隱藏所有。
+  萬用字 `*` 隱藏所有。
 
 * `sling:orderBefore` ( `String`)
 
-   包含同層級節點的名稱，目前節點應位於該節點的前面。
+  包含同層級節點的名稱，目前節點應位於該節點的前面。
 
 這些屬性會影響對應/原始資源/屬性(來自 `/libs`)由覆蓋/覆寫使用(通常用於 `/apps`)。
 
@@ -84,23 +84,23 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
    * Sites主控台的導覽專案定義（如邊欄中所示）的定義定義位於：
 
-      `/libs/cq/core/content/nav/sites/jcr:title`
+     `/libs/cq/core/content/nav/sites/jcr:title`
 
    * 若要覆蓋此節點，請建立下列節點：
 
-      `/apps/cq/core/content/nav/sites`
+     `/apps/cq/core/content/nav/sites`
 
-      然後更新屬性 `jcr:title` 視需要。
+     然後更新屬性 `jcr:title` 視需要。
 
 * 覆寫
 
    * 文字主控台的觸控式對話方塊的定義定義如下：
 
-      `/libs/foundation/components/text/cq:dialog`
+     `/libs/foundation/components/text/cq:dialog`
 
    * 若要覆寫此節點，請建立下列節點 — 例如：
 
-      `/apps/the-project/components/text/cq:dialog`
+     `/apps/the-project/components/text/cq:dialog`
 
 若要建立其中任何一個，您只需要重新建立骨架結構。 若要簡化重新建立結構，所有中間節點都可以是型別 `nt:unstructured` (它們不必反映原始節點型別；例如，在 `/libs`)。
 
@@ -125,14 +125,14 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
 * **新增屬性**
 
-   屬性不存在於 `/libs` 定義，但在 `/apps` 覆蓋/覆寫。
+  屬性不存在於 `/libs` 定義，但在 `/apps` 覆蓋/覆寫。
 
    1. 在中建立對應的節點 `/apps`
    1. 在此節點上建立新屬性»
 
 * **重新定義屬性（非自動建立的屬性）**
 
-   屬性定義於 `/libs`，但中需要新值 `/apps` 覆蓋/覆寫。
+  屬性定義於 `/libs`，但中需要新值 `/apps` 覆蓋/覆寫。
 
    1. 在中建立對應的節點 `/apps`
    1. 在此節點上建立相符的屬性（在/底下） `apps`)
@@ -140,14 +140,15 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
       * 根據Sling Resource Resolver設定，屬性會有優先順序。
       * 支援變更屬性型別。
 
-         如果您使用的屬性型別與中使用的不同 `/libs`，則會使用您定義的屬性型別。
-   >[!NOTE]
-   >
-   >支援變更屬性型別。
+        如果您使用的屬性型別與中使用的不同 `/libs`，則會使用您定義的屬性型別。
+
+  >[!NOTE]
+  >
+  >支援變更屬性型別。
 
 * **重新定義自動建立的屬性**
 
-   依預設，自動建立的屬性(例如 `jcr:primaryType`)不受覆蓋/覆寫約束，以確保目前位於下的節點型別 `/libs` 已遵守。 若要強制覆蓋/覆寫，您必須在中重新建立節點 `/apps`，明確隱藏屬性並重新定義：
+  依預設，自動建立的屬性(例如 `jcr:primaryType`)不受覆蓋/覆寫約束，以確保目前位於下的節點型別 `/libs` 已遵守。 若要強制覆蓋/覆寫，您必須在中重新建立節點 `/apps`，明確隱藏屬性並重新定義：
 
    1. 在下方建立對應的節點 `/apps` 搭配所需的 `jcr:primaryType`
    1. 建立屬性 `sling:hideProperties` 在該節點上，將值設定為自動建立屬性的值；例如， `jcr:primaryType`
@@ -156,7 +157,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
 * **重新定義節點及其子系**
 
-   節點及其子系定義於 `/libs`，但中需要新設定 `/apps` 覆蓋/覆寫。
+  節點及其子系定義於 `/libs`，但中需要新設定 `/apps` 覆蓋/覆寫。
 
    1. 結合下列動作：
 
@@ -165,7 +166,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
 * **隱藏屬性**
 
-   屬性定義於 `/libs`，但不需要 `/apps` 覆蓋/覆寫。
+  屬性定義於 `/libs`，但不需要 `/apps` 覆蓋/覆寫。
 
    1. 在中建立對應的節點 `/apps`
    1. 建立屬性 `sling:hideProperties` 型別 `String` 或 `String[]`. 使用此選項可指定要隱藏/忽略的屬性。 也可以使用萬用字元。 例如：
@@ -177,7 +178,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
 * **隱藏節點及其子系**
 
-   節點及其子系定義於 `/libs`，但不需要 `/apps` 覆蓋/覆寫。
+  節點及其子系定義於 `/libs`，但不需要 `/apps` 覆蓋/覆寫。
 
    1. 在/apps下建立對應的節點
    1. 建立屬性 `sling:hideResource`
@@ -187,7 +188,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
 * **隱藏節點的子系（同時保留節點的屬性）**
 
-   節點、其屬性及其子系定義於 `/libs`. 節點及其屬性需要在 `/apps` 覆蓋/覆寫，但部分或全部子節點在中並非必要 `/apps` 覆蓋/覆寫。
+  節點、其屬性及其子系定義於 `/libs`. 節點及其屬性需要在 `/apps` 覆蓋/覆寫，但部分或全部子節點在中並非必要 `/apps` 覆蓋/覆寫。
 
    1. 在下方建立對應的節點 `/apps`
    1. 建立屬性 `sling:hideChildren`：
@@ -197,10 +198,9 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
       萬用字元&amp;ast；可用來隱藏/忽略所有子節點。
 
-
 * **重新排序節點**
 
-   節點及其同層級定義於 `/libs`. 需要新位置，才能在中重新建立節點 `/apps` 覆蓋/覆寫，其中新位置是參照中適當的同層級節點來定義 `/libs`.
+  節點及其同層級定義於 `/libs`. 需要新位置，才能在中重新建立節點 `/apps` 覆蓋/覆寫，其中新位置是參照中適當的同層級節點來定義 `/libs`.
 
    * 使用 `sling:orderBefore` 屬性：
 

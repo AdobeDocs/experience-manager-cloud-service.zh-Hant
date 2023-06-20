@@ -2,10 +2,10 @@
 title: 建立設定 - Headless 設定
 description: 建立設定是在 AEM as a Cloud Service 中開始使用無周邊的第一步。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 100%
+source-wordcount: '327'
+ht-degree: 92%
 
 ---
 
@@ -28,8 +28,8 @@ ht-degree: 100%
 1. 登入 AEM as a Cloud Service，然後從主選單中選取&#x200B;**工具 ->一般 -> 設定瀏覽器**。
 1. 提供設定的&#x200B;**標題**&#x200B;和&#x200B;**名稱**。
    * **標題** 應該是描述性的。
-   * **名稱**&#x200B;將成為存放庫中的節點名稱。
-      * 它會根據標題自動產生，並根據[AEM 命名慣例](/help/implementing/developing/introduction/naming-conventions.md)進行調整
+   * 此 **名稱** 會成為存放庫中的節點名稱。
+      * 系統會根據標題自動產生，並根據 [AEM命名慣例。](/help/implementing/developing/introduction/naming-conventions.md)
       * 如有需要，可加以調整。
 1. 檢查以下選項：
    * **內容片段模型**

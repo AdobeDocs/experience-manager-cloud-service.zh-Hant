@@ -9,10 +9,10 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2197'
 ht-degree: 4%
 
 ---
@@ -49,11 +49,11 @@ ht-degree: 4%
 
 若為 [Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia)：
 
-* `{{page}}` 將取代為 `/content/venia/us/en/products/product-page`
-* `{{sku}}` 將由產品的sku取代，例如 `VP09`
-* `{{url_key}}` 將由產品的 `url_key` 屬性，例如， `lenora-crochet-shorts`
-* `{{url_path}}` 將由產品的 `url_path`例如， `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` 將由目前選取的變體取代，例如 `VP09-KH-S`
+* `{{page}}` 取代為 `/content/venia/us/en/products/product-page`
+* `{{sku}}` 由產品的sku取代，例如， `VP09`
+* `{{url_key}}` 由產品的 `url_key` 屬性，例如， `lenora-crochet-shorts`
+* `{{url_path}}` 由產品的 `url_path`例如， `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` 由目前選取的變體取代，例如， `VP09-KH-S`
 
 由於 `url_path` 已過時，預先定義的產品URL格式會使用產品的 `url_rewrites` 並挑選路徑分段最多的路徑作為替代路徑，如果 `url_path` 無法使用。
 
@@ -68,9 +68,9 @@ ht-degree: 4%
 
 若為 [Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia)：
 
-* `{{page}}` 將取代為 `/content/venia/us/en/products/category-page`
-* `{{url_key}}` 將由類別的 `url_key` 屬性
-* `{{url_path}}` 將由類別的 `url_path`
+* `{{page}}` 取代為 `/content/venia/us/en/products/category-page`
+* `{{url_key}}` 由類別的 `url_key` 屬性
+* `{{url_path}}` 由類別的 `url_path`
 
 在上述範例資料中，使用預設URL格式化的類別頁面URL看起來會像 `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
@@ -205,7 +205,7 @@ ht-degree: 4%
 
 ### 與Sling對應結合 {#sling-mapping}
 
-除了 `UrlProvider`，也可以設定 [Sling對應](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 以便重寫及處理URL。 AEM原型專案也提供 [設定範例](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) 為連線埠4503 （發佈）和80 （排程程式）設定一些Sling對應。
+除了 `UrlProvider`，也可以設定 [Sling對應](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 以重寫及處理URL。 AEM原型專案也提供 [設定範例](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) 為連線埠4503 （發佈）和80 （排程程式）設定一些Sling對應。
 
 ### 與AEM Dispatcher結合 {#dispatcher}
 
@@ -229,7 +229,7 @@ _**URL長度和編碼資訊之間的平衡。**_
 
 根據目錄大小，特別是類別樹狀結構的大小和深度，為完整目錄編碼可能不合邏輯 `url_path` 類別匯入URL中。 在這種情況下，可以只包含類別的 `url_key` 而非。 這將支援使用類別時可用的大部分功能 `url_path`.
 
-此外，使用 [Sling對應](#sling-mapping) 以結合sku與產品 `url_key`. 在大多數電子商務系統中，SKU會遵循特定格式，並將SKU與 `url_key` 應該可以輕鬆處理傳入的要求。 考慮到這一點，應該可以將產品頁面URL重寫至 `/p/{{category}}/{{sku}}-{{url_key}}.html`，以及類別URL至 `/c/{{url_key}}.html` 兩者皆有。 此 `/p` 和 `/c` 若要將產品和類別頁面與其他內容頁面區分開來，仍需使用首碼。
+此外，使用 [Sling對應](#sling-mapping) 將sku與產品結合 `url_key`. 在大多數電子商務系統中，SKU會遵循特定格式，並將SKU與 `url_key` 應該可以輕鬆處理傳入的要求。 考慮到這一點，應該可以將產品頁面URL重寫至 `/p/{{category}}/{{sku}}-{{url_key}}.html`，以及類別URL至 `/c/{{url_key}}.html` 兩者皆有。 此 `/p` 和 `/c` 若要將產品和類別頁面與其他內容頁面區分開來，仍需使用首碼。
 
 ### 移轉至新URL格式 {#migrate-url-formats}
 

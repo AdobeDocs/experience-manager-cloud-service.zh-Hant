@@ -1,11 +1,11 @@
 ---
 title: AEM 版本更新
-description: 瞭解AEMas a Cloud Service如何使用持續整合和傳遞(CI/CD)，讓您專案保持在最新版本。
+description: 瞭解AEMas a Cloud Service如何使用持續整合和傳遞(CI/CD)，將您的專案保持在最新版本。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: dd1560aa4d260320f565ad993a8b3650c3ee5288
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '479'
 ht-degree: 23%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 23%
 
 # AEM 版本更新 {#aem-version-updates}
 
-瞭解AEMas a Cloud Service如何使用持續整合和傳遞(CI/CD)，讓您專案保持在最新版本。
+瞭解AEMas a Cloud Service如何使用持續整合和傳遞(CI/CD)，將您的專案保持在最新版本。
 
 ## CI/CD {#ci-cd}
 

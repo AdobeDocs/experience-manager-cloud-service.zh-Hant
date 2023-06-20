@@ -4,9 +4,9 @@ description: 瞭解如何管理和解決多網站管理員轉出衝突。
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 3%
 為確保轉出不被封鎖，可能的定義可包括：
 
 * 轉出期間哪個頁面（Blueprint或即時副本）優先
-* 將重新命名哪些頁面（以及重新命名方式）
+* 哪些頁面會重新命名，以及重新命名方式
 * 這將如何影響任何已發佈的內容
 
 AEM現成可用的預設行為是發佈的內容將不會受到影響。 因此，如果在即時副本分支中手動建立的頁面已發佈，在衝突處理和轉出後，該內容仍會發佈。
@@ -35,11 +35,11 @@ AEM現成可用的預設行為是發佈的內容將不會受到影響。 因此�
 
 * Blueprint： `/b`
 
-   具有1個子頁面的主版頁面， `bp-level-1`
+  具有1個子頁面的主版頁面， `bp-level-1`
 
 * Live Copy: `/b`
 
-   在即時副本分支中手動建立的具有1個子頁面的頁面， `lc-level-1`
+  在即時副本分支中手動建立的具有1個子頁面的頁面， `lc-level-1`
 
    * 發佈時啟用為 `/b`，以及子頁面
 
@@ -83,13 +83,13 @@ AEM提供：
 
 * Live Copy: `/b`
 
-   在即時副本中移至 `/b_msm_moved`. 這會作為備份，並確保不會遺失任何內容。
+  在即時副本中移至 `/b_msm_moved`. 這會作為備份，並確保不會遺失任何內容。
 
    * `lc-level-1` 不會移動。
 
 * 藍圖: `/b`
 
-   轉出至即時副本頁面 `/b`.
+  轉出至即時副本頁面 `/b`.
 
    * `bp-level-1` 轉出至即時副本。
 
@@ -127,11 +127,11 @@ AEM提供：
 
 * 藍圖: `/b`
 
-   完全不會複製，但會忽略。
+  完全不會複製，但會忽略。
 
 * Live Copy: `/b`
 
-   保持不變。
+  保持不變。
 
 #### 轉出後 {#after-rollout-no-conflict}
 

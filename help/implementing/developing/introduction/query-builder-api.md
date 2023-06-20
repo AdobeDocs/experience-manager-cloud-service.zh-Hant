@@ -2,9 +2,9 @@
 title: 查詢產生器 API
 description: Asset Share Query Builder的功能會透過Java API和REST API公開。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2040'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ orderby=path
    * `total=43`， `more=false`  — 表示點選總數為43。 UI可以在第一個頁面中顯示最多十個結果，並為接下來的三個頁面提供分頁。 您也可以使用此實作來顯示描述性文字，例如 **「找到43個結果」**.
    * `total=100`， `more=true`  — 表示點選總數大於100，但不確定確切計數。 UI最多可顯示10個做為第一頁的一部分，並為接下來的10個頁面提供分頁。 您也可以使用此選項來顯示文字，例如 **「找到100個以上的結果」**. 當使用者前往下一頁時，對查詢產生器的呼叫將增加限制 `guessTotal` 以及 `offset` 和 `limit` 引數。
 
-`guessTotal` 當UI需要使用無限捲動時，也應使用，以避免Query Builder判斷確切的點選計數。
+`guessTotal` 當UI需要使用無限捲動以避免Query Builder判斷確切點選計數時，也應使用。
 
 ### 尋找jar檔案並對其進行排序，最新的先排序 {#find-jar-files-and-order-them-newest-first}
 
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## 精簡傳回的專案 {#refining-what-is-returned}
 
-依預設，QueryBuilder JSON Servlet會傳回搜尋結果中每個節點的預設屬性集（例如路徑、名稱、標題等）。 若要取得傳回哪些屬性的控制權，您可以執行下列任一項作業：
+依預設，QueryBuilder JSON Servlet會傳回搜尋結果中每個節點的預設屬性集（例如路徑、名稱和標題）。 若要取得傳回哪些屬性的控制權，您可以執行下列任一項作業：
 
 指定
 
@@ -287,7 +287,7 @@ property.3_value=Whistler Mountain Biking
 p.hits=full
 ```
 
-在這種情況下，每個節點都將包含所有屬性：
+在這種情況下，每個節點都會包含所有屬性：
 
 `http://<host>:<port>/bin/querybuilder.json?p.hits=full&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 
@@ -332,7 +332,7 @@ p.nodedepth=n
 p.hits=full
 ```
 
-範例:
+範例：
 
 `http://<host>:<port>/bin/querybuilder.json?p.hits=full&p.nodedepth=5&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 

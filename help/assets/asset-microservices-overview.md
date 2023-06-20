@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '850'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # 使用資產微服務進行資產擷取和處理的概述 {#asset-microservices-overview}
 
-Adobe Experience Manager as a [!DNL Cloud Service] 提供一種雲端原生方法可利用 Experience Manager 應用程式和功能。這種新架構的關鍵要素之一是由資產微服務提供支援的資產擷取和處理。資產微服務使用雲端服務來提供可擴展和具恢復力的資產處理操作。Adobe 管理雲端服務以對不同的資產類型和處理選項進行最佳處理。雲端原生資產微服務的主要優勢是：
+Adobe Experience Manager as a [!DNL Cloud Service] 提供雲端原生方法，以使用Experience Manager應用程式和功能。 這種新架構的關鍵要素之一是由資產微服務提供支援的資產擷取和處理。資產微服務使用雲端服務來提供可擴展和具恢復力的資產處理操作。Adobe 管理雲端服務以對不同的資產類型和處理選項進行最佳處理。雲端原生資產微服務的主要優勢是：
 
 * 可擴展的架構，可無縫處理資源密集型操作。
 * 有效率地建立索引和擷取文字，不會影響 Experience Manager 環境的效能。
@@ -98,4 +98,3 @@ Adobe Experience Manager 可以設定成在資產處理完成後自動觸發後�
 >* [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
 >* [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [關於直接二進位檔存取的 Apache Oak 文件](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
-

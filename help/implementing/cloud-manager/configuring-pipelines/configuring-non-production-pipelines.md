@@ -3,10 +3,10 @@ title: 設定非生產管道
 description: 了解如何設定非生產管道以在部署到生產環境之前測試程式碼的品質。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 100%
+source-wordcount: '1362'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 100%
 1. 如果您選擇建立&#x200B;**部署管道**，您還需要定義&#x200B;**重要的量度失敗行為**。
 
    * **每次都詢問** - 這是預設設定，要求對任何重要失敗進行手動介入。
-   * **立即失敗** - 如果選取，則每當重要失敗發生時，將取消管道。這基本上是模擬使用者手動拒絕每次失敗。
+   * **立即失敗**  — 如果選取，則只要發生重要失敗，就會取消管道。 這基本上是模擬使用者手動拒絕每次失敗。
    * **立即持續** - 如果選取，則每當重要失敗發生時，管道將自動繼續。這基本上是模擬使用者手動核准每次失敗。
 
 1. 按一下&#x200B;**「繼續」**。
@@ -99,7 +99,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->如果所選環境已存在完整堆疊程式碼管道，則此選項將會停用。
+>如果所選環境已存在完整棧疊計畫碼管道，則會停用此選擇。
 
 若要完成完整堆疊程式碼非生產管道的設定，請按照以下步驟操作。
 
@@ -134,7 +134,7 @@ Web 層設定管道部署 HTTPD/ Dispatcher 設定。有關此類管道的更多
 
 >[!NOTE]
 >
->如果所選環境已存在網頁層級程式碼管道，則此選項將會停用。
+>如果所選環境已存在網頁層級計畫碼管道，則此選擇會停用。
 
 若要完成網頁層級程式碼非生產管道的設定，請按照以下步驟操作。
 
@@ -166,7 +166,7 @@ Web 層設定管道部署 HTTPD/ Dispatcher 設定。有關此類管道的更多
 
 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
 
-請參考文件[使用前端管道開發 Sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此過程的工作原理以及需要注意的一些注意事項，以充分發揮此過程的潛力。
+檢視檔案 [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 瞭解此程式的運作方式，以及一些需要注意的事項，以充分發揮此程式的潛力。
 
 ## 跳過發送器套件 {#skip-dispatcher-packages}
 

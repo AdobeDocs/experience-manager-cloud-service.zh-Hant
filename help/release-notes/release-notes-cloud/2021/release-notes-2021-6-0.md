@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.6.0 版發行說明。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 36b0af857d5b9b179f01a43b5fd36c51b48c795f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 48%
+source-wordcount: '1441'
+ht-degree: 47%
 
 ---
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 
 ### 新增功能 {#what-is-new-junecm}
 
-* 預覽服務將會以滾動方式部署到所有計劃。 當客戶的計劃有啟用預覽服務時，他們會在產品內收到通知。 參考[存取預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)更多細節。
+* 預覽服務將會以滾動方式部署到所有計劃。 當客戶的計畫有啟用預覽服務時，他們會在產品內收到通知。 參考[存取預覽服務](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)更多細節。
 
 * 現在，在建置步驟中所下載的 Maven Dependencies 會在管道執行之間快取。在未來幾週內將會為客戶啟用此功能。
 
@@ -87,7 +87,7 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 發行日期是 2021 年 6 
 
 ### [!DNL Assets] 中的新功能 {#ga-features-assets}
 
-* 內容自動化功能可讓 [!DNL Experience Manager Assets] 善用 [!DNL Adobe Creative Cloud] API可大規模自動化資產的製作。 它大幅減少建立相同資產變體所需的時間和反複工作，進而加快內容速度。 此功能不需要任何程式碼，並且可在DAM內運作。
+* 內容自動化功能可讓 [!DNL Experience Manager Assets] 使用 [!DNL Adobe Creative Cloud] API可大規模自動化資產的製作。 它大幅減少建立相同資產變體所需的時間和反複工作，進而加快內容速度。 此功能不需要任何程式碼，並且可在DAM內運作。
 * [!DNL Adobe Asset Link] v3.0用於 [!DNL Adobe Photoshop]， [!DNL Adobe Illustrator]、和 [!DNL Adobe InDesign] 和 [!DNL Adobe Asset Link] v2.0用於 [!DNL Adobe XD] 已發行。 它提供：
 
    * 支援 [!DNL Assets Essentials].

@@ -4,9 +4,9 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: 中繼資料可讓您更輕鬆地分類及組織資產，並協助尋找特定資產的使用者。
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1658'
 ht-degree: 2%
 
 ---
@@ -178,9 +178,9 @@ ht-degree: 2%
 
    * 按一下 **[!UICONTROL 屬性]** ![屬性](assets/Smock_Info_18_N.svg) 圖示加以檢視。
 
-      >[!NOTE]
-      >
-      >「快速動作」是在滑鼠懸停時顯示在縮圖上的動作專案。
+     >[!NOTE]
+     >
+     >「快速動作」是在滑鼠懸停時顯示在縮圖上的動作專案。
 
    * 選取表單並按一下 **[!UICONTROL 屬性]** ![屬性](assets/Smock_Info_18_N.svg) 圖示顯示。
    * 若未處於選取模式，請按一下表單縮圖，導覽至表單詳細資訊頁面。 現在，按一下 ![屬性](assets/Smock_Info_18_N.svg) 右上角的眼睛圖示，然後按一下下方清單中的「屬性」 。
@@ -234,7 +234,6 @@ ht-degree: 2%
 >* 上傳或產生新影像後，縮圖就會被此影像取代，且無法重設為上一個影像。
 >
 
-
 ## 新增自訂中繼資料 {#add-custom-metadata}
 
 除了現成可用的中繼資料外， [!DNL AEM Forms] 支援新的自訂中繼資料。
@@ -284,7 +283,7 @@ ht-degree: 2%
 
 1. 按一下您剛才拖曳的元件。 在右側面板中開啟的「設定」標籤中，填寫下列欄位的資訊：
 
-   1. 指定欄位標籤，這會作為顯示在結構描述中放置欄位上方的名稱（例如：Department）
+   1. 指定欄位標籤，以在結構描述中放置的欄位上方作為顯示名稱（例如：Department）
    1. 在「對應至屬性」欄位下方，您可以看到預先填入的值 **&#39;./jcr：content/metadata/default&#39;**. 變更&#39;**預設**&#39;至所需的屬性名稱，用於儲存crx存放庫中的屬性(例如： &#39;。/jcr：content/metadata/department&#39;)
 
       >[!NOTE]

@@ -2,10 +2,10 @@
 title: 建立內容片段 - Headless 設定
 description: 了解如何使用 AEM 的內容片段來設計、建立、規劃和使用每頁自主的內容以進行無周邊傳遞。
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 100%
+source-wordcount: '347'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 ## 如何建立內容片段 {#how-to-create-a-content-fragment}
 
-內容作者將建立任意數量的內容片段來表示他們建立的內容。這將是他們在 AEM 中的主要任務。出於本快速入門指南的目的，我們只需要建立一個。
+內容作者將建立任意數量的內容片段來表示他們建立的內容。這是他們在AEM中的主要工作。 出於本快速入門指南的目的，我們只需要建立一個。
 
 1. 登入 AEM as a Cloud Service，然後從主選單中選擇&#x200B;**導覽** -> **內容片段**。
 

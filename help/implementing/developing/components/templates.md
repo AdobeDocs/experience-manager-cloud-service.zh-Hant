@@ -1,10 +1,10 @@
 ---
 title: 頁面範本
-description: 建立頁面時，會使用頁面範本作為新頁面的基礎
+description: 建立作為新頁面基礎的頁面時，會使用頁面範本
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3293'
 ht-degree: 1%
 
 ---
@@ -67,6 +67,7 @@ ht-degree: 1%
    * 內容原則會定義元件的設計屬性。
 
       * 例如，可用的元件或最小/最大尺寸。
+
    * 這些適用於範本（以及使用範本建立的頁面）。
 
    如需範本作者如何定義原則的詳細資訊，請參閱 [建立頁面範本](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -432,11 +433,11 @@ GITHUB上的程式碼
 定義結果頁面的結構：
 
 * 與初始內容合併( `/initial`)建立新頁面時。
-* 對結構所做的變更將反映在使用範本建立的任何頁面中。
+* 對結構所做的變更會反映在使用範本建立的任何頁面中。
 * 此 `root` ( `structure/jcr:content/root`)節點會定義產生頁面中可用的元件清單。
    * 範本結構中定義的元件無法在任何結果頁面上移動或刪除。
    * 解鎖元件後， `editable` 屬性已設定為 `true`.
-   * 解鎖已包含內容的元件後，此內容將移至 `initial` 分支。
+   * 解鎖已包含內容的元件後，此內容會移至 `initial` 分支。
 
 * 此 `cq:responsive` 節點保留回應式佈局的定義。
 
@@ -447,7 +448,7 @@ GITHUB上的程式碼
 * 包含 `jcr:content` 複製到任何新頁面的節點。
 * 與結構合併( `/structure`)建立新頁面時。
 * 如果在建立後變更初始內容，則不會更新任何現有頁面。
-* 此 `root` node會儲存元件清單，以定義結果頁面中可用的元件。
+* 此 `root` node會儲存元件清單，以定義結果頁面中可用的專案。
 * 如果在結構模式下將內容新增到元件，且隨後解鎖該元件（反之亦然），則此內容會用作初始內容。
 
 ### 配置 {#layout}
@@ -461,13 +462,13 @@ GITHUB上的程式碼
 內容原則會定義元件的設計屬性。 例如，可用的元件或最小/最大尺寸。 這些適用於範本（以及使用範本建立的頁面）。 可在範本編輯器中建立和選取內容原則。
 
 * 屬性 `cq:policy`，位於 `root` 節點
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 提供頁面段落系統內容原則的相對參照。
 
 * 屬性 `cq:policy`，於下的元件明確節點上 `root`，提供個別元件原則的連結。
 
 * 實際原則定義儲存在下列位置：
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ GITHUB上的程式碼
    * 在上設定狀態屬性 `jcr:content` 節點。
 
       * 例如，在：
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * 定義屬性：
 
@@ -500,9 +501,9 @@ GITHUB上的程式碼
 
    * [在上定義允許的範本路徑 **頁面屬性**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 子分支的適當頁面或根頁面的URL。
    * 設定屬性：
-      `cq:allowedTemplates`
-於 
-`jcr:content` 必要分支的節點。
+     `cq:allowedTemplates`
+於 `jcr:content` 必要分支的節點。
+
    例如，其值為：
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
@@ -532,13 +533,13 @@ GITHUB上的程式碼
 
 * **範本**:
 
-   * 此 `cq:template` 其屬性 `jcr:content` 節點將被引用，以存取與該頁面對應的範本。
+   * 此 `cq:template` 其屬性 `jcr:content` 會參照節點，以存取對應至該頁面的範本。
 
 * **元件**:
 
    * 頁面元件會合併 `structure/jcr:content` 範本的樹狀結構，具有 `jcr:content` 頁面的樹狀結構。
       * 頁面元件僅可讓作者編輯已標籤為可編輯的範本結構節點（以及任何子系）。
-      * 在頁面上呈現元件時，該元件的相對路徑將取自 `jcr:content` 節點；下方的相同路徑 `policies/jcr:content` 接著會搜尋範本的節點。
+      * 在頁面上呈現元件時，該元件的相對路徑會取自 `jcr:content` 節點；下方的相同路徑 `policies/jcr:content` 接著會搜尋範本的節點。
          * 此 `cq:policy` 此節點的屬性指向實際內容原則（即它儲存該元件的設計設定）。
             * 這可讓您擁有重複使用相同內容原則設定的多個範本。
 

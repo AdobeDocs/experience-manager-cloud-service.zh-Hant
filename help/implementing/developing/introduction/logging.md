@@ -1,17 +1,17 @@
 ---
 title: AEMas a Cloud Service記錄
-description: 瞭解如何使用AEMas a Cloud Service的記錄，以設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
+description: 瞭解如何使用AEM的記錄as a Cloud Service來設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9e67b4f68fe450e80249c3959e3517c6cba3275d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2376'
 ht-degree: 3%
 
 ---
 
 # AEMas a Cloud Service記錄 {#logging-for-aem-as-a-cloud-service}
 
-AEMas a Cloud Service是一個平台，可供客戶加入自訂程式碼，以為其客戶群建立獨特的體驗。 有鑑於此，記錄服務是關鍵功能，可偵錯並瞭解本機開發和雲端環境(特別是AEMas a Cloud Service的開發環境)上的程式碼執行。
+AEMas a Cloud Service是一個平台，可供客戶加入自訂程式碼，以為其客戶群建立獨特的體驗。 有鑑於此，記錄服務對於在本機開發和雲端環境(特別是AEMas a Cloud Service的開發環境)上偵錯和瞭解程式碼執行至關重要。
 
 AEMas a Cloud Service記錄設定和記錄層級在設定檔案中進行管理，這些設定檔案儲存為Git中AEM專案的一部分，並透過Cloud Manager部署為AEM專案的一部分。 在AEMas a Cloud Service登入可以分成兩個邏輯集：
 
@@ -94,7 +94,7 @@ AEMas a Cloud Service提供對Java記錄陳述式的存取。 AEM應用程式的
 
 雖然Java記錄支援其他數個記錄詳細程度層級，但AEMas a Cloud Service建議使用上述三個層級。
 
-AEM記錄層級是透過OSGi設定根據環境型別設定的，而這些設定又會提交到Git，並透過Cloud Manager部署到AEMas a Cloud Service。 因此，最好保持記錄陳述式的一致性並以環境型別聞名，以確保透過AEM as Cloud Service提供的記錄可用在最佳記錄層級，而不需要以更新的記錄層級設定重新部署應用程式。
+AEM記錄層級是透過OSGi設定根據環境型別設定的，而這些設定又會提交到Git，並透過Cloud Manager部署到AEMas a Cloud Service。 因此，最好保持記錄陳述式一致且為環境型別所熟知，以確保透過AEM as Cloud Service提供的記錄可在最佳記錄層級上使用，而不需要以更新的記錄層級設定重新部署應用程式。
 
 **紀錄輸出範例**
 
@@ -545,7 +545,7 @@ Apache層記錄（包括Dispatcher）位於儲存Dispatcher的Docker容器中。
 
 ## Splunk記錄 {#splunk-logs}
 
-擁有Splunk帳戶的客戶可透過客戶支援票證，要求將其AEM Cloud Service記錄轉送至適當的索引。 記錄資料等同於透過Cloud Manager記錄下載提供的資料，但客戶可能會發現利用Splunk產品中提供的查詢功能很方便。
+擁有Splunk帳戶的客戶可透過客戶支援票證，要求將其AEM Cloud Service記錄轉送至適當的索引。 記錄資料等同於透過Cloud Manager記錄下載提供的資料，但客戶可能會發現使用Splunk產品中提供的查詢功能很方便。
 
 與傳送至Splunk的記錄檔相關聯的網路頻寬會視為客戶網路I/O使用量的一部分。
 

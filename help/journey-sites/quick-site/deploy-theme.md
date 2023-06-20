@@ -2,7 +2,7 @@
 title: 部署您的自訂主題
 description: 瞭解如何使用管道部署網站主題。
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 14%
@@ -117,4 +117,4 @@ AEM是一個功能強大的工具，並且有許多其他可用選項。 查看[
 * [入門歷程](/help/journey-onboarding/overview.md)  — 本指南可作為您的起點，確保您的團隊已建立並擁有AEMas a Cloud Service的存取權。
 * [Adobe Experience Manager Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant)  — 探索Cloud Manager檔案以取得其功能的完整詳細資訊。
 * [網站管理文件](/help/sites-cloud/administering/site-creation/create-site.md) - 查看關於建立網站的技術文件，了解快速網站建立工具功能的更多詳細資訊。
-* [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)  — 本檔案說明一些需注意的事項，以使用前端管道充分發揮前端開發流程的潛力。
+* [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)  — 本檔案說明一些需注意的事項，以便您能使用前端管道充分發揮前端開發流程的潛力。

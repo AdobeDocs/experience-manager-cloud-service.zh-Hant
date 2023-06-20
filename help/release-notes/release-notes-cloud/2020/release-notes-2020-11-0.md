@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.11.0版as a Cloud Service發行說明」。'
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 14%
+source-wordcount: '1264'
+ht-degree: 13%
 
 ---
 
@@ -32,15 +32,15 @@ ht-degree: 14%
 
 ### 的新增功能 [!DNL Assets] 和 [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **大量資產擷取**：為客戶提供可擴充的雲端原生擷取服務，並運用 [!DNL Experience Manager] as a Cloud Service架構，包括資產微服務。 主要使用案例包括大規模擷取及監控、報告和排程，同時允許使用通用雲端上傳工具將資產初步轉移至雲端資料存放區。 另請參閱 [資產大量擷取器工具](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **大量資產擷取**：為客戶提供可擴充、雲端原生的內嵌服務，該服務使用 [!DNL Experience Manager] as a Cloud Service架構，包括資產微服務。 主要使用案例包括大規模擷取及監控、報告和排程，同時允許使用通用雲端上傳工具將資產初步轉移至雲端資料存放區。 另請參閱 [資產大量擷取器工具](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-   此工具適用於系統管理員、顧問或實作合作夥伴角色。 此功能允許大規模擷取，最適合用於初始擷取或偶爾的大量擷取。 對於較小的內嵌工作，請使用 [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) 或 [使用Assets使用者介面上傳](/help/assets/add-assets.md#upload-assets).
+  此工具適用於系統管理員、顧問或實作合作夥伴角色。 此功能允許大規模擷取，最適合用於初始擷取或偶爾的大量擷取。 對於較小的內嵌工作，請使用 [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) 或 [使用Assets使用者介面上傳](/help/assets/add-assets.md#upload-assets).
 
-   ![大量匯入工具的設定](/help/assets/assets/bulk-import-config-low-res.png)
+  ![大量匯入工具的設定](/help/assets/assets/bulk-import-config-low-res.png)
 
 * 使用者現在可以在卡片檢視和欄檢視中排序數位資產。
 
-   ![排序資產](/help/assets/assets/asset-sort-options.png)
+  ![排序資產](/help/assets/assets/asset-sort-options.png)
 
 * 下列增強功能針對中的協助工具而完成 [!DNL Experience Manager Assets] 在這個版本中。 如需詳細資訊，請參閱 [中的協助工具功能 [!DNL Assets]](/help/assets/accessibility.md).
 
@@ -54,7 +54,7 @@ ht-degree: 14%
 
 * **Dynamic Media中的批次集預設集**：現在您可以單獨或使用大量擷取將資產檔案上傳至資料夾時，自動建立及組織影像集或迴轉集中的多個資產。
 
-   另請參閱 [關於批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md).
+  另請參閱 [關於批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 * 下列協助工具增強功能現已開放使用 [!DNL Dynamic Media]：
 
@@ -67,7 +67,7 @@ ht-degree: 14%
    * 鍵盤和熒幕助讀程式的使用者可以使用裁切功能。
    * 鍵盤使用者可以更好地管理熱點。
 
-   另請參閱 [中的協助工具 [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
+  另請參閱 [中的協助工具 [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
 ## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
@@ -99,7 +99,7 @@ AEM as a Cloud Service 2020.11.0 中的 Cloud Manager 發行日期是 2020 年 1
 * 在構建執行之前完成的依賴項加載需要下載 Maven 插件。
 * Cloud Manager 頁腳中用於選擇語言的鏈接現在將瀏覽到正確的位置。
 * 有時在計劃碼掃描過程中，SonarQube 進程不會啟動。現在將自動檢測到這並嘗試重新啟動。
-* 所有現有的生產管道都將透過體驗稽核步驟自動啟用。
+* 所有現有的生產管道都會使用體驗稽核步驟自動啟用。
 
 ## Adobe Experience Manager as a Cloud Service 基礎 {#cloud-service-foundation}
 

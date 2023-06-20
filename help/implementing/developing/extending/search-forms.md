@@ -2,9 +2,9 @@
 title: 設定搜尋表單
 description: 設定Adobe Experience Manager as a Cloud Service的「搜尋Forms」。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2037'
 ht-degree: 16%
 
 ---
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
 ## 預設Forms {#default-forms}
 
-當您第一次存取 **搜尋Forms** 控制檯您可以看到所有組態都有掛鎖符號。 這表示對應的設定是預設（現成可用）設定 — 無法刪除。 自訂並儲存設定後，鎖定將會消失。 當您 [刪除您的自訂設定](#deleting-a-configuration-to-reinstate-the-default)，則系統會恢復預設值（和掛鎖指標）。
+當您第一次存取 **搜尋Forms** 控制檯您可以看到所有組態都有掛鎖符號。 這表示對應的設定是預設（現成可用）設定 — 無法刪除。 自訂並儲存設定後，鎖定將會消失。 當您 [刪除您的自訂設定](#deleting-a-configuration-to-reinstate-the-default)，則會恢復預設值（和掛鎖指示器）。
 
 ![設定搜尋表單概觀](assets/csf-overview.png)
 
@@ -495,47 +495,46 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
 * **欄位標籤**
 
-   將顯示為可摺疊標題或述詞欄位標籤的標籤。
+  將顯示為可摺疊標題或述詞欄位標籤的標籤。
 
 * **說明**
 
-   使用者的描述性詳細資料。
+  使用者的描述性詳細資料。
 
 * **預留位置**
 
-   空白文字或述詞的預留位置（若未輸入篩選文字）。
+  空白文字或述詞的預留位置（若未輸入篩選文字）。
 
 * **屬性名稱**
 
-   要搜尋的屬性。 它使用相對路徑和萬用字元 `*/*/*` 指定屬性相對於的深度 `jcr:content` 節點（每個星號代表一個節點層級）。
+  要搜尋的屬性。 它使用相對路徑和萬用字元 `*/*/*` 指定屬性相對於的深度 `jcr:content` 節點（每個星號代表一個節點層級）。
 
-   如果您只想搜尋具有下列專案的資源之第一層子節點： `x` 上的屬性 `jcr:content` 節點使用 `*/jcr:content/x`
+  如果您只想搜尋具有下列專案的資源之第一層子節點： `x` 上的屬性 `jcr:content` 節點使用 `*/jcr:content/x`
 
 * **屬性深度**
 
-   在資源中搜尋該屬性的最大深度。 因此，可針對資源及遞回子系執行該屬性的搜尋，直到子系層級等於指定的深度為止。
+  在資源中搜尋該屬性的最大深度。 因此，可針對資源及遞回子系執行該屬性的搜尋，直到子系層級等於指定的深度為止。
 
 * **屬性值**
 
-   作為絕對字串或作為運算式語言的屬性值；例如， `cq:Page` 或
+  作為絕對字串或作為運算式語言的屬性值；例如， `cq:Page` 或
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
+  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
 
 * **範圍文字**
 
-   中範圍欄位的標籤 **日期範圍** 述詞。
+  中範圍欄位的標籤 **日期範圍** 述詞。
 
 * **選項路徑**
 
-   使用者可以使用述詞設定索引標籤中的路徑瀏覽器來選取路徑。 選取 **+** 圖示可將選取專案新增至有效選項清單(然後 **-** 圖示以視需要移除)。
+  使用者可以使用述詞設定索引標籤中的路徑瀏覽器來選取路徑。 選取 **+** 圖示可將選取專案新增至有效選項清單(然後 **-** 圖示以視需要移除)。
 
-   選項是使用者建立的內容節點，結構如下：
+  選項是使用者建立的內容節點，結構如下：
 
-   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
+  `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **選項節點路徑**
-實際上與 
-**選項路徑**，只有這個在「通用述詞」欄位中，其他則專用於資產。
+實際上與 **選項路徑**，只有這個在「通用述詞」欄位中，其他則專用於資產。
 
 * **單選**
 如果勾選，這些選項會呈現為僅允許單一選取的核取方塊。 若誤選，可取消選取核取方塊。
@@ -563,7 +562,6 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
 
-
 ### 新增/編輯述詞欄位和定義欄位設定 {#add-edit-a-predicate-field-and-define-field-settings}
 
 您可以新增或編輯欄位，以及定義/更新其設定：
@@ -577,11 +575,12 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
    * 您正在新增欄位：
 
-      新增述詞後 **設定** 標籤會開啟並顯示可定義的屬性。
+     新增述詞後 **設定** 標籤會開啟並顯示可定義的屬性。
 
    * 您要更新現有的述詞：
 
-      選取述詞欄位（在右側），然後開啟 **設定** 標籤。
+     選取述詞欄位（在右側），然後開啟 **設定** 標籤。
+
    例如， **日期範圍述詞**：
 
    ![修改述詞](assets/csf-modify-predicate.png)
@@ -594,7 +593,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
    ![預覽圖示](assets/csf-preview-icon.png)
 
-1. 如此將顯示搜尋表單，如同它們在適當主控台的「搜尋」欄中顯示（完全展開）一樣。
+1. 顯示搜尋表單的方式（完全展開）顯示在適當主控台的「搜尋」欄中。
 
    ![預覽表單](assets/csf-preview-form.png)
 
@@ -625,7 +624,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
    ![還原預設值](assets/csf-restore-default.png)
 
-1. 自訂的設定將會刪除並恢復預設設定（這由主控台中掛鎖符號的重新出現表示）。
+1. 自訂的組態會遭到刪除且預設會恢復（這由主控台中掛鎖符號的重新出現所指示）。
 
 ### 新增選項述詞 {#adding-options-predicates}
 
@@ -656,7 +655,6 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. 進行任何變更 `/apps.`
 
-
 1. 開啟 **搜尋Forms** 控制檯並選取您要更新的設定。 例如， **網站管理搜尋邊欄**. 然後選取 **編輯**.
 
 1. 視設定而定，新增 **選項** 或 **Options屬性** 至設定。
@@ -664,19 +662,20 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
    * **屬性名稱**
 
-      指定要在目標節點上搜尋的節點屬性。 例如：
+     指定要在目標節點上搜尋的節點屬性。 例如：
 
-      `jcr:content/cq:template`
+     `jcr:content/cq:template`
 
    * **選項節點路徑**
 
-      選取保留選項的路徑。 例如：
+     選取保留選項的路徑。 例如：
 
-      `/apps/cq/gui/content/common/options/predicates/templatetype`
+     `/apps/cq/gui/content/common/options/predicates/templatetype`
+
    ![選項述詞](assets/csf-options-predicate-02.png)
 
 1. 選取 **完成** 以儲存您的設定。
-1. 導覽至適當的主控台(在此範例中， **網站**)並開啟 **搜尋 — 篩選器** 邊欄。 將顯示新定義的搜尋表單以及各種選項。 選取必要選項以檢視搜尋結果。
+1. 導覽至適當的主控台(在此範例中， **網站**)並開啟 **搜尋 — 篩選器** 邊欄。 會顯示新定義的搜尋表單以及各種選項。 選取必要選項以檢視搜尋結果。
 
    ![使用的選項](assets/csf-options-usage.png)
 

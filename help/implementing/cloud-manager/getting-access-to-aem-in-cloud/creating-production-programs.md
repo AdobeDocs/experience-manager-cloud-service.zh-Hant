@@ -2,10 +2,10 @@
 title: 建立生產計劃
 description: 了解如何使用 Cloud Manager 建立您自己的生產計畫來主持即時流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 1. 在&#x200B;**解決方案和附加元件**&#x200B;索引標籤上，選取要納入計畫中的解決方案。
 
    * 如果您不確定是否需要一個或多個程序以使用各種您可用的解決方案，請選取您最感興趣的一個。您之後可以[編輯程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)來啟用其他解決方案。如需更多程序設定建議，請參閱[生產程序簡介文件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)。
-   * 如果您之前選取了&#x200B;**啟用增強式安全性**，您將只能選取可使用 HIPAA 權限的解決方案。
+   * 如果您已選取 **啟用增強式安全性** 以前，您只能選取可使用HIPAA許可權的解決方案。
 
    ![選取解決方案](assets/setup-prod-select.png)
 

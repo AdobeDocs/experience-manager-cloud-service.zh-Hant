@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 16%
@@ -140,9 +140,9 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，
 
 ### 為何資產儲存在DAM中 {#why-assets-are-stored-in-dam}
 
-將資產儲存在DAM中，可讓您輕鬆存取及找到資產。 它可確保組織或生態系統（包括合作夥伴、客戶等）的眾多使用者都能運用這些資產。
+將資產儲存在DAM中，可讓您輕鬆存取及找到資產。 這可確保組織或生態系統中的多位使用者（包括合作夥伴、客戶等）可以使用資產。
 
-大部分組織會選擇僅儲存與下遊行銷/LOB程式相關的資產(透過Experience Manager Sites發佈至網路頻道等頻道，或由Adobe Experience Cloud提供的其他頻道(Marketing Cloud、Advertising Cloud和Analytics Cloud測量，提供給使用者/合作夥伴等)。 此外，組織會儲存資產，這些資產可能需經過DAM的稽核/核准程式。 如此一來，DAM主要儲存極有可能利用的資產，並避免儲存閒置資產。
+大部分組織會選擇僅儲存與下遊行銷/LOB程式相關的資產(透過Experience Manager Sites發佈至網路頻道等頻道，或由Adobe Experience Cloud提供的其他頻道(Marketing Cloud、Advertising Cloud和Analytics Cloud測量，提供給使用者/合作夥伴等)。 此外，組織會儲存資產，這些資產可能需經過DAM的稽核/核准程式。 如此一來，DAM主要儲存極有可能使用的資產，並避免儲存閒置資產。
 
 儲存資產也受到技術和資源使用率的考量所限制。 DAM提供有關已儲存資產的其他服務，包括擷取中繼資料、版本設定、產生預覽/轉碼、管理參考和新增存取控制資訊。 這些服務會消耗額外的時間和基礎建設資源。
 
@@ -222,7 +222,7 @@ Experience Manager案頭應用程式為在原生應用程式中開啟的資產�
 
 請注意，本說明將檔案上傳作為案頭使用者工作流程的一般部分，以作業方式上傳（例如，每週或每次拍照）。 這裡不涵蓋大型資產移轉。
 
-您可以善用下列上傳功能：
+您可以使用以下上傳功能：
 
 * 若要大量上傳大型/階層式資料夾，請使用提供下列功能的Experience Manager案頭應用程式 [資料夾上傳](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#bulk-upload-assets) 功能。 您也可以上傳階層資料夾結構。 資產會於背景上傳，因此不會繫結至網頁瀏覽器工作階段
 * 若要從單一資料夾上傳一些檔案，請直接將檔案拖曳至網頁介面，或使用Experience Manager Assets網頁介面中的「建立」選項。

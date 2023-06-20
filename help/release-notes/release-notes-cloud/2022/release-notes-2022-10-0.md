@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 版發行說明。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 98%
+source-wordcount: '842'
+ht-degree: 92%
 
 ---
 
@@ -50,14 +50,14 @@ ht-degree: 98%
 
 * Experience Manager Assets 現在允許您上傳其他受支援格式類型的文件並[使用隨附的 Document Cloud 檢視器預覽它們](/help/assets/manage-pdf-documents.md)。支援的格式類型包括 TXT、RTF、DOC、DOCX、PPT、PPTX、XLS 和 XLSX。
 
-   ![其他格式的 PDF 轉譯](/help/release-notes/assets/multi-page-other-formats.png)
+  ![其他格式的 PDF 轉譯](/help/release-notes/assets/multi-page-other-formats.png)
 
 
 ### [!DNL Assets] 發行前版本的新功能 {#prerelease-features-assets}
 
 * Experience Manager Assets 現在為影像智慧標記使用改良的人工智慧框架。 此內容智慧可提高智慧標記的相關性和準確性，在擷取時可用於所有影像資產。此外，`cq:tags` 中會填入方向資訊，而能夠使用方向篩選器獲得更好的搜尋結果。
 
-   如果您有興趣參與 Beta 版測試，請在 11 月 14 日前[填寫本表單](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u)。
+  如果您有興趣參與 Beta 版測試，請在 11 月 14 日前[填寫本表單](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u)。
 
 * 除了在連接到 Azure Blob 儲存體資料來源以使用大量匯入工具擷取資產時支援用於驗證的存取金鑰之外，Experience Manager Assets 現在還[支援 SAS 權杖](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
@@ -87,7 +87,7 @@ ht-degree: 98%
 
 * AEM as a Cloud Service (作者服務) 現在與 Unified Shell 整合，以改進使用者體驗，並將其與所有其他 Experience Cloud 應用程式統一。 請參考 Unified Shell 上的 AEM as a [as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)以取得詳細資料。
 
-* 如先前在發行說明中所述，使用複寫代理程式管理畫面或複寫 API 來散發大於 10 MB 的內容套件 (具有屬性的節點，不包括二進位檔案) 已過時，並將在未來幾天強制棄用。請參考[管理出版物](/help/operations/replication.md#manage-publication)或[發佈內容樹狀工作流程](/help/operations/replication.md#publish-content-tree-workflow)了解複寫這些大型內容套件的建議方法。
+* 如先前在發行說明中所述，使用復寫代理程式管理畫面或復寫API來分發大於10 MB的內容套件（具有屬性的節點，不包括二進位檔案）現在已被棄用和強制執行。 另請參閱 [管理發布](/help/operations/replication.md#manage-publication) 或 [發佈內容樹狀工作流程](/help/operations/replication.md#publish-content-tree-workflow) 瞭解復寫這些大型內容套件的建議方法。
 
 * Dispatcher 設定現在會參照一個列出常見行銷活動查詢參數的檔案。客戶可以選擇取消註釋與其相關的參數，從而促進快取。請參考[行銷活動參數](/help/implementing/dispatcher/caching.md#marketing-parameters)以取得更多詳細資料。
 

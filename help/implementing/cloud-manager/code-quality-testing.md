@@ -2,10 +2,10 @@
 title: 計劃碼品質測試
 description: 了解管道計劃碼品質測試如何運作及如何提高部署品質。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: ae586cc2f576aa4aee4cc611b5184e2bbda6696c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 100%
+source-wordcount: '1175'
+ht-degree: 97%
 
 ---
 
@@ -116,7 +116,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
-如果 `myco-all-1.0.0-SNAPSHOT.zip` 內的項目只有兩個已略過的內容套件，則將掃描這兩個嵌入的套件而不是「全」內容套件。
+如果裡面只有專案 `myco-all-1.0.0-SNAPSHOT.zip` 是兩個已略過的內容套件，則會掃描這兩個內巢狀件而不是「全」內容套件。
 
 對於產生數十個嵌入套件的專案，已證明這種最佳化將在每次管道執行節省 10 分鐘以上的時間。
 
@@ -126,4 +126,3 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >
 >* 此最佳化並不會影響部署到 AEM 的套件。
 >* 由於嵌入的內容套件和已略過的內容套件之間的對應是根據檔案名稱，因此若有多個已略過的內容套件檔案名稱完全相同或嵌入時檔案名稱變更，即無法進行此最佳化。
-

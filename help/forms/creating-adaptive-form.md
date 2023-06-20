@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns. 
 
 * **Using an XML Schema Definition (XSD) or a JSON Schema**
-   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
+   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
    Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
@@ -61,7 +61,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
    * **可編輯的範本**：您可以 [建立新的](template-editor.md) 或 [匯入現有的可編輯範本](migrate-to-forms-as-a-cloud-service.md). 您也可以部署 [最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java型%20integration%20tests。) 以取得一些可編輯範本的範例。
 
-   * **靜態範本**：這些是舊版範本，僅建議從Adobe Managed Services (AMS)和內部部署AEM Forms安裝(AEM 6.5 Forms或更舊版本)的客戶使用。 這些範本可讓您繼續運用靜態範本中的現有投資。 建立新的最適化表單時，建議使用可編輯的範本。
+   * **靜態範本**：這些是舊版範本，僅建議從Adobe Managed Services (AMS)和內部部署AEM Forms安裝(AEM 6.5 Forms或更舊版本)的客戶使用。 這可讓您繼續使用靜態範本中的現有投資。 建立新的最適化表單時，建議使用可編輯的範本。
 
 
 
@@ -78,9 +78,9 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
    * 當您選取可編輯的範本時，範本中指定的主題和提交動作會自動選取，而且 **[!UICONTROL 建立]** 按鈕已啟用。 您可以前往 **[!UICONTROL 樣式]** 或 **[!UICONTROL 提交]** 標籤以選取不同的主題或提交動作。 如果選取的可編輯範本未指定主題，建立按鈕仍會停用。 您可以前往 **[!UICONTROL 樣式]** 標籤以手動選取主題。
 
-      >[!NOTE]
-      >
-      > 您也可以建立 [!UICONTROL 記錄檔案] 使用最適化Forms編輯器的範本。 如需詳細資訊，請參閱 [最適化表單編輯器中的記錄檔案支援](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+     >[!NOTE]
+     >
+     > 您也可以建立 [!UICONTROL 記錄檔案] 使用最適化Forms編輯器的範本。 如需詳細資訊，請參閱 [最適化表單編輯器中的記錄檔案支援](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * 當您選取靜態範本時，無法使用資料、樣式、提交、傳送和預覽選項。 建立新的最適化表單時，建議使用可編輯的範本。
 

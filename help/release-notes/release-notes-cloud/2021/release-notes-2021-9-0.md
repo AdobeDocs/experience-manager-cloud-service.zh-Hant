@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 版發行說明。'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1570'
 ht-degree: 38%
 
 ---
@@ -42,8 +42,8 @@ ht-degree: 38%
 
 * 使用者現在可以在「欄」和「卡片」檢視中排序搜尋結果內所顯示的資產。 排序功能適用於「名稱」、「已建立」、「已修改」或「無」欄。
 
-   ![將搜尋結果排序於 [!DNL Assets] 在欄和卡片檢視中](/help/assets/assets/sort-searched-assets.png)
-   *圖：將搜尋結果排序於 [!DNL Assets] 在欄和卡片檢視中。*
+  ![將搜尋結果排序於 [!DNL Assets] 在欄和卡片檢視中](/help/assets/assets/sort-searched-assets.png)
+  *圖：將搜尋結果排序於 [!DNL Assets] 在欄和卡片檢視中。*
 
 * 為了以程式設計方式使用資產微服務叫用處理，我們引進了新的API。 開發人員現在可以將現有的檔案夾層級處理設定檔套用至檔案夾中一個或多個特定資產。 處理設定檔會根據自訂中繼資料屬性更新而套用。 另請參閱 `AssetProcessor` 在 [[!DNL Experience Manager] API參考](https://www.adobe.io/experience-manager/reference-materials/). 和以前一樣，可以 [從使用者介面使用資產微服務](/help/assets/asset-microservices-configure-and-use.md).
 
@@ -91,11 +91,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * Sites編輯器中新的「相關商務內容」索引標籤透過快速存取目前內容的相關AEM產品內容來提高作者效率
 
-   ![關聯的商務內容](/help/assets/CIF/associated-commerce-content.png)
+  ![關聯的商務內容](/help/assets/CIF/associated-commerce-content.png)
 
 * 改善產品選擇器UI，提供更佳的使用者體驗、更高的效率，以及支援複雜的產品目錄
 
-   ![新的產品選取器](/help/assets/CIF/product-picker.png)
+  ![新的產品選取器](/help/assets/CIF/product-picker.png)
 
 * 在導覽元件中遵循「include_in_menu」屬性
 
@@ -145,7 +145,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 **索引最佳化**
 
-為了改善搜尋查詢和索引的效能，全文檢索lucene-2不再用於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 此版本中的。 為了根據AEM客戶在AEM環境中移除此全文索引，Adobe工程團隊會與客戶個別並主動合作，以溫和且可持續的方式移除Lucene全文索引。 請造訪 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [檔案](/help/operations/indexing.md#index-optimizations) 若您有任何問題，請直接連絡我們的支援以取得詳細資訊。
+為了改善搜尋查詢和索引的效能，全文檢索lucene-2不再用於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 此版本中的。 為了根據AEM客戶在AEM環境中移除此全文索引，Adobe工程團隊會與客戶個別並主動合作，以溫和、可持續的方式移除Lucene全文索引。 請造訪 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [檔案](/help/operations/indexing.md#index-optimizations) 若您有任何問題，請直接連絡我們的支援以取得詳細資訊。
 
 ## Cloud Manager {#cloud-manager}
 

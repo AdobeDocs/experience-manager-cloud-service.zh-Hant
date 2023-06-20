@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: 存放庫瀏覽器為作者、發佈和預覽層級上的所有環境提供存放庫的唯讀檢視。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 43429562ea4292f38d3459e03185270ec950a58a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '885'
 ht-degree: 2%
 
 ---
@@ -29,14 +29,14 @@ ht-degree: 2%
 
 ### 存取必要條件 {#access-prerequisites}
 
-若要存取開發人員控制檯或存放庫瀏覽器，以下條件必須滿足
+必須符合下列條件才能存取開發人員控制檯或存放庫瀏覽器
 
 若要存取開發人員主控台：
 
 * 對於生產計畫，使用者必須具有 **Cloud Manager — 開發人員角色** 在Admin Console中
 * 對於沙箱計畫，它可供任何具有產品設定檔的使用者使用，以讓他們存取AEMas a Cloud Service。
 
-若要存取「存放庫瀏覽器」：
+若要存取存放庫瀏覽器：
 
 * 使用者必須具備 **Cloud Manager — 開發人員** 在Admin Console中檢視「作者」和「發佈」例項的角色。
 * 此外，對於作者，具有AEM使用者產品設定檔的使用者能夠以最低的讀取存取權檢視存放庫瀏覽器；瀏覽存放庫時會考量使用者的許可權。 具有AEM管理員產品設定檔的使用者可以完整讀取許可權檢視存放庫瀏覽器。
@@ -76,7 +76,7 @@ ht-degree: 2%
 
 對於發佈，依預設，存放庫瀏覽器將只會顯示公開內容，因此某些資料夾 `/conf` 或 `/home` 將不可見。
 
-為了讓這些位置可見，您需要遵循以下程式。
+若要使這些位置可見，請執行下列動作。
 
 1. 按一下所選環境旁的三個點，然後選取 **管理存取權**
 

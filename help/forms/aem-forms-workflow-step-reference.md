@@ -3,9 +3,9 @@ title: 如何將工作流程指派給其他使用者、傳送電子郵件、在�
 description: 以Forms為中心的工作流程可讓您快速建立最適化Forms工作流程。 您可以使用Adobe Sign以電子方式簽署檔案、建立表單式業務流程、擷取資料並傳送至多個資料來源，以及傳送電子郵件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '7190'
+source-wordcount: '7189'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 
 * **[!UICONTROL 使用最適化表單]**：指定尋找輸入的最適化表單的方法。 如果您從「型別」下拉式清單中選取「最適化表單」或「唯讀最適化表單」，即可使用此選項。 您可以使用提交至工作流程的最適化表單、在絕對路徑下提供的表單，或在變數中的路徑下提供的表單。 您可以使用字串型別的變數來指定路徑。\
-   您可以將多個最適化Forms與工作流程建立關聯。 因此，您可以使用可用的輸入法，在執行階段指定最適化表單。
+  您可以將多個最適化Forms與工作流程建立關聯。 因此，您可以使用可用的輸入法，在執行階段指定最適化表單。
 
 <!-- 
 
@@ -80,7 +80,7 @@ ht-degree: 1%
    * **[!UICONTROL 選擇輸入資料檔案，使用]**：輸入資料檔案的路徑（.json、.xml、.doc或表單資料模型）。 您可以使用相對於承載的路徑來擷取輸入資料檔案，或擷取儲存在Document、XML或JSON資料型別變數中的檔案。 例如，檔案包含透過AEM收件匣應用程式為表單提交的資料。 範例路徑為 [Payload_Directory]/workflow/data.
    * **[!UICONTROL 選擇輸入附件，使用]**：此位置可用的附件會附加至與任務相關聯的表單。 路徑可以是相對於承載或擷取儲存在檔案變數中的附件。 範例路徑為 [Payload_Directory]/attachments/. 您可以指定相對於承載放置的附件，或使用檔案型別（「陣列清單」>「檔案」）變數來指定最適化表單的輸入附件。
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
    * **[!UICONTROL 請求屬性對應]**：使用請求屬性對應區段來定義 [要求屬性的名稱和值](work-with-form-data-model.md#bindargument). 根據請求中指定的屬性名稱和值，從資料來源擷取詳細資訊。 您可以使用常值或String資料型別的變數來定義請求屬性值。
 
-   <!--  
+  <!--  
      
      The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
      
@@ -104,7 +104,7 @@ ht-degree: 1%
    * **[!UICONTROL 儲存附件，使用]**：儲存任務中提供的表單附件。 您可以使用相對於承載的路徑來儲存附件，或將其儲存在「檔案」資料型別的陣列清單中。
    * **[!UICONTROL 儲存記錄檔案，使用]**：儲存記錄檔案檔案的路徑。 例如， [Payload_Directory]/DocumentofRecord/credit-card.pdf. 您可以使用相對於承載的路徑來儲存記錄檔案，或將其儲存在Document資料型別的變數中。 如果您選取 **[!UICONTROL 相對於裝載]** 選項，如果路徑欄位留空，則不會產生記錄檔案。 只有當您從「型別」下拉式清單中選取「最適化表單」時，此選項才可用。
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
@@ -122,7 +122,7 @@ ht-degree: 1%
 * **[!UICONTROL 引數]**：在「參與者選擇器」欄位中選取RandomParticipantChoose指令碼以外的指令碼時，該欄位可用。 欄位可讓您為「參與者選擇器」欄位中選取的指令碼提供逗號分隔引數清單。
 
 * **[!UICONTROL 使用者或群組]**：任務已指派給所選的使用者或群組。 選項適用於 **[!UICONTROL 至特定使用者或群組選項]** 已選取以下專案中的 **[!UICONTROL 指派選項]** 欄位。 欄位會列出以下專案的所有使用者和群組： [!DNL workflow-users] 群組。\
-   此 **[!UICONTROL 使用者或群組]** 下拉式功能表會列出登入使用者有權存取的使用者和群組。 使用者名稱的顯示取決於您是否擁有 **[!UICONTROL 使用者]** crx-repository中該特定使用者的節點。
+  此 **[!UICONTROL 使用者或群組]** 下拉式功能表會列出登入使用者有權存取的使用者和群組。 使用者名稱的顯示取決於您是否擁有 **[!UICONTROL 使用者]** crx-repository中該特定使用者的節點。
 
 * **[!UICONTROL 傳送通知電子郵件]**：選取此選項以傳送電子郵件通知給受指派人。 這些通知會在任務指派給使用者或群組時傳送。 您可以使用 **[!UICONTROL 收件者電子郵件地址]** 用於指定擷取電子郵件地址的機制的選項。
 
@@ -135,7 +135,7 @@ ht-degree: 1%
    * 當 **[!UICONTROL 允許受分派者透過收件匣共用進行共用]** 選項已選取，且使用者共用其收件匣專案或允許其他使用者存取其收件匣專案，只有先前提及的選項已啟用的任務才會與其他使用者共用。
    * 當 **[!UICONTROL 允許受分派者使用「休假中」設定進行委派]** 「 」已選取。 受指派人可以啟用將任務委派給其他使用者的選項以及其他外出選項。 任何指派給休假使用者的新任務都會自動委派（指派）給休假設定中提到的使用者。
 
-   它可讓其他使用者在休假時挑選受指派人任務，並且無法處理受指派任務。
+  它可讓其他使用者在休假時挑選受指派人任務，並且無法處理受指派任務。
 
 * **[!UICONTROL 動作]** > **[!UICONTROL 預設動作]**：立即可用「提交」、「儲存」和「重設」動作。 預設會啟用所有預設動作。
 * **[!UICONTROL 路由變數]**：路由變數的名稱。 路由變數會擷取使用者在AEM收件匣中選擇的自訂動作。
@@ -354,7 +354,7 @@ PDF/A是一種封存格式，用於透過嵌入字型和解壓縮檔案來長期
 
    * **[!UICONTROL 相對於裝載]**：使用選項來擷取儲存在相對於承載路徑中的檔案附件。 選取選項並指定包含檔案附件的資料夾名稱，或在文字方塊中指定檔案附件名稱。
 
-      例如，如果CRX存放庫中的「相對於裝載」資料夾在 `attachment\attachment-folder` 位置，指定 `attachment\attachment-folder` 在文字方塊中選取 **[!UICONTROL 相對於裝載]** 選項。
+     例如，如果CRX存放庫中的「相對於裝載」資料夾在 `attachment\attachment-folder` 位置，指定 `attachment\attachment-folder` 在文字方塊中選取 **[!UICONTROL 相對於裝載]** 選項。
 
    * **[!UICONTROL JSON點標籤法]**：使用的值位於JSON檔案中時，請使用選項。 例如，insurance.customerDetails.emailAddress。 JSON點標籤法選項僅在選取了從輸入JSON對應輸入欄位選項時可用。
    * **[!UICONTROL 從輸入JSON對應輸入欄位]**：指定JSON檔案的路徑，以從JSON檔案取得某些服務引數的輸入值。 JSON檔案的路徑可以是相對於裝載、絕對路徑，或者您可以使用JSON或表單資料模型型別的變數來選取輸入JSON檔案。
@@ -526,7 +526,7 @@ Send a document directly to a printer. It supports the following printing access
 
 * **[!UICONTROL 選擇內容根目錄位置，使用]**：內容根是字串值，可指定存放庫中的URI、絕對參照或位置，以擷取表單設計使用的相對資產。 例如，如果表單設計相對參照影像，例如 `../myImage.gif`， `myImage.gif` 必須位於 `repository://`. 預設值為 `repository://`，指向存放庫的根層級。
 
-   當您從應用程式中挑選資產時，內容根URI路徑必須具有正確的結構。 例如，如果從名為SampleApp的應用程式中挑選表單，並將表單放在 `SampleApp/1.0/forms/Test.xdp`，內容根URI必須指定為 `repository://administrator@password/Applications/SampleApp/1.0/forms/`，或 `repository:/Applications/SampleApp/1.0/forms/` （當授權為空）。 以這種方式指定內容根URI時，表單中所有參考資產的路徑都將針對此URI進行解析。
+  當您從應用程式中挑選資產時，內容根URI路徑必須具有正確的結構。 例如，如果從名為SampleApp的應用程式中挑選表單，並將表單放在 `SampleApp/1.0/forms/Test.xdp`，內容根URI必須指定為 `repository://administrator@password/Applications/SampleApp/1.0/forms/`，或 `repository:/Applications/SampleApp/1.0/forms/` （當授權為空）。 以這種方式指定內容根URI時，表單中所有參考資產的路徑都會針對此URI解析。
 
 * **[!UICONTROL 選擇XCI檔案，使用]**：XCI檔案用於說明用於表單設計元素的字型和其他屬性。 您可以相對於承載將XCI檔案保留在絕對路徑上，或使用Document資料型別的變數。
 

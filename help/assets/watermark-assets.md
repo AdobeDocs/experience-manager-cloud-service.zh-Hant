@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 14%
@@ -42,7 +42,7 @@ ht-degree: 14%
    >如果您已設定系統浮水印設定檔，使用 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 設定檔案（OSGi設定），您可以繼續使用，但Adobe建議使用新方法。
 
 
-1. [建立處理設定檔](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 以利用資產微服務來套用浮水印。
+1. [建立處理設定檔](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 以使用資產微服務來套用浮水印。
 
    ![用於建立浮水印的資產處理設定檔](assets/watermark-processing-profile.png)
 
@@ -75,4 +75,3 @@ ht-degree: 14%
 >
 >* [資產微服務概覽](/help/assets/asset-microservices-overview.md).
 >* [搭配處理設定檔使用資產微服務](/help/assets/asset-microservices-configure-and-use.md).
-

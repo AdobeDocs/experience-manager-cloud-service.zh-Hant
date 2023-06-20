@@ -5,9 +5,9 @@ landing-page-description: 瞭解如何從內容片段控制檯管理內容片段
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1103'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,6 @@ ht-degree: 5%
 >
 >* 此 **內容片段** 主控台
 >* 此 **資產** 主控台 — 請參閱 [管理內容片段](/help/assets/content-fragments/content-fragments-managing.md)
-
 
 >[!NOTE]
 >
@@ -60,12 +59,12 @@ ht-degree: 5%
 * 主要/右側面板 — 從這裡，您可以：
    * 檢視樹狀結構所選分支中的所有內容片段清單：
       * 階層連結會指出位置，也可用來變更位置
-      * 所選資料夾的內容片段，以及所有子資料夾都會顯示：
+      * 所選資料夾的內容片段和所有子資料夾都會顯示：
          * [各種資訊欄位](#selectuse-available-columns) 關於內容片段提供連結；根據欄位，這些連結可以：
             * 在編輯器中開啟適當的片段
             * 顯示參考的相關資訊
             * 顯示片段語言版本的相關資訊
-      * 在欄標題上使用滑鼠游標時，下拉式動作選擇器和寬度滑桿隨即顯示。 這些功能可讓您：
+      * 在欄標題上使用滑鼠游標時，會顯示下拉式動作選擇器和寬度滑桿。 這些功能可讓您進行下列工作：
          * 排序 — 選取適當的遞增或遞減動作。這將根據該欄排序整個表格。 排序功能僅適用於適當的欄。
          * 調整欄大小 — 使用動作或寬度滑桿
 
@@ -86,17 +85,16 @@ ht-degree: 5%
 * [自訂表格檢視以顯示選取的資訊欄](#select-available-columns)
 * 使用 **在Assets中開啟** 直接開啟中的目前位置 **資產** 主控台
 
-   >[!NOTE]
-   >
-   >此 **資產** 控制檯是用來存取資產，例如影像、影片等。  此主控台可以存取：
-   >
-   >* 使用 **在Assets中開啟** 連結（在內容片段主控台中）
-   >* 直接從全域導覽窗格
-
+  >[!NOTE]
+  >
+  >此 **資產** 控制檯是用來存取資產，例如影像、影片等。  此主控台可以存取：
+  >
+  >* 使用 **在Assets中開啟** 連結（在內容片段主控台中）
+  >* 直接從全域導覽窗格
 
 ### （所選）內容片段的動作 {#actions-selected-content-fragment}
 
-選取特定片段將開啟一個工具列，其中聚焦在該片段可用的動作。 您也可以選擇多個片段 — 動作的選擇將據此調整。
+選取特定片段將開啟一個工具列，其中聚焦在該片段可用的動作。 您也可以選擇多個片段 — 動作的選擇會相應調整。
 
 ![內容片段控制檯 — 所選片段的工具列](assets/cfc-fragment-toolbar.png)
 
@@ -141,17 +139,17 @@ ht-degree: 5%
 
    * 提供開啟對話方塊的連結，其中列出該片段的所有父參照，包括參照內容片段、體驗片段和頁面。 若要開啟特定參照，請按一下 **標題** 在對話方塊中。
 
-      ![內容片段主控台 — 「參考」對話方塊](assets/cfc-console-references-dialog.png)
+     ![內容片段主控台 — 「參考」對話方塊](assets/cfc-console-references-dialog.png)
 
 * **語言**
 
    * 表示內容片段的地區設定，以及與內容片段相關的地區設定/語言副本總數。
 
-      ![內容片段主控台 — 語言指標](assets/cfc-console-language-indicator.png)
+     ![內容片段主控台 — 語言指標](assets/cfc-console-language-indicator.png)
 
       * 按一下/點選計數，開啟顯示所有語言副本的對話方塊。 若要開啟特定語言副本，請按一下 **標題** 在對話方塊中。
 
-         ![內容片段主控台 — 「語言」對話方塊](assets/cfc-console-languages-dialog.png)
+        ![內容片段主控台 — 「語言」對話方塊](assets/cfc-console-languages-dialog.png)
 
 ## 選取可用的欄 {#select-available-columns}
 
@@ -185,7 +183,7 @@ ht-degree: 5%
 
 ![內容片段主控台 — 篩選](assets/cfc-console-fast-filter-01.png)
 
-選取後，將顯示為篩選述詞，並據此篩選清單：
+選取後，該清單會顯示為篩選述詞，並據此篩選清單：
 
 ![內容片段主控台 — 篩選](assets/cfc-console-fast-filter-02.png)
 

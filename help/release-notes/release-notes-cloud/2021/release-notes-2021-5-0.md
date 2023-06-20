@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.5.0 版發行說明。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 47%
+source-wordcount: '1352'
+ht-degree: 46%
 
 ---
 
@@ -47,19 +47,19 @@ ht-degree: 47%
 
 * 您可以使用「連結共用」功能下載共用的資產。 此下載現在使用非同步服務，提供更快速且無中斷的下載，即使對於非常大型的下載亦然。 另請參閱 [下載資產](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![下載收件匣](/help/assets/assets/download-inbox.png)
+  ![下載收件匣](/help/assets/assets/download-inbox.png)
 
 ### 發行前管道中可用的新功能 {#what-is-new-assets-prerelease}
 
 * 中繼資料結構描述可直接套用至資料夾屬性。
 
-   ![從資料夾屬性新增中繼資料結構](/help/assets/assets/metadata-schema-folder-properties.png)
+  ![從資料夾屬性新增中繼資料結構](/help/assets/assets/metadata-schema-folder-properties.png)
 
 * 資產大量擷取工具可讓您在大量擷取期間新增中繼資料。
 
 * 使用者體驗增強功能會顯示資料夾中存在的資產數量。 若資料夾中有超過1000個資產， [!DNL Assets] 顯示1000+。
 
-   ![介面中顯示的資料夾資產數量](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![介面中顯示的資料夾資產數量](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### 修正在[!DNL Assets]中的錯誤 {#assets-bugs-fixed}
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 發行日期是 2021 年 5 
 
 * 公用 API 中的存放庫端點現在包含 Git URL。
 
-* Cloud Manager 使用者下載的部署記錄有更深刻的見解，而且現在包含有關失敗和成功情境的細節。
+* Cloud Manager使用者下載的部署記錄有更深刻的見解，並包括失敗和成功情境的細節。
 
 * 將計劃碼推送到 Adobe Git 時所發生的間歇性失敗狀況現在已經解決了。
 
@@ -147,7 +147,7 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 發行日期是 2021 年 5 
 
 * 如果使用者沒有Java可執行檔的執行許可權，則會將新的記錄陳述式新增至快速入門的錯誤記錄檔。
 
-* 當使用者從執行擷取的CTT UI刪除移轉集時， `tmp` 將會刪除與該移轉集相關聯的資料夾以節省空間。
+* 當使用者從CTT使用者介面（已執行擷取）刪除移轉集時， `tmp` 會刪除與該移轉集相關聯的資料夾以節省空間。
 
 ### 錯誤修正 {#bug-fixes-ctt-latest}
 

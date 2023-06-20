@@ -2,10 +2,10 @@
 title: 發佈翻譯的 Headless 內容
 description: 了解如何發佈翻譯的內容，並在內容更新時更新翻譯。
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 100%
+source-wordcount: '1392'
+ht-degree: 98%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->您可以在發佈時選取多個項目 (即多個語言資料夾)，以便一次發佈多個翻譯。
+>您可以在發佈時選取多個專案（即多個語言資料夾），以便一次發佈多個翻譯。
 
 發佈內容時還有其他選項可用，例如排程發佈時間，這不在本歷程的討論範圍內。如需更多資訊息，請參閱文件結尾處的[其他資源](#additional-resources)章節。
 

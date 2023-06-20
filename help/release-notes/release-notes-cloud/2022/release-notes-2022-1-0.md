@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 版發行說明。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: a66215277ca83c011f2f4df621d055049c4c93a7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 31%
+source-wordcount: '1081'
+ht-degree: 30%
 
 ---
 
@@ -106,7 +106,7 @@ AEMas a Cloud Service2022.01.0中的Cloud Manager發行日期是2022年1月20日
 * Cloud Manager [在偵測到多個全堆疊管道執行中使用了相同的 Git 認可時，將避免重建計劃碼基底](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)。
 * 現在存取 AEM 環境記錄檔需要 **Deployment Manager** 產品設定檔。沒有此設定檔的使用者將在使用者介面中看到停用按鈕。
 * UI 不允許針對未啟用 Sites 解決方案的計畫設定前端管道。
-* 在產生 Git 密碼時，將立即顯示到期日期。
+* 在產生Git密碼時，會顯示到期日。
 
 ### 錯誤修正 {#bug-fixes-cm}
 

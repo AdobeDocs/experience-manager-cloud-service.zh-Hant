@@ -3,10 +3,10 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道以及如何使用它們來有效地部署您的程式碼。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 100%
+source-wordcount: '1358'
+ht-degree: 87%
 
 ---
 
@@ -97,10 +97,10 @@ Cloud Manager 提供兩種類型的管道：
 
 以下限制適用。
 
-* 使用者必須使用&#x200B;**部署管理器**&#x200B;角色以配置或執行管道。
+* 使用者必須使用 **部署管理員** 設定或執行管道的角色。
 * 在任何時候，每個環境只能有一個完整堆疊管道。
 
-此外，如果您選擇引入一個 [Web 層配置管道。](#web-tier-config-pipelines)
+此外，如果您選擇引入 [Web層設定管道。](#web-tier-config-pipelines)
 
 * 如果存在相應的 Web 層配置管道，則環境的完整堆疊管道將忽略 Dispatcher 配置。
 * 如果環境對應的 Web 層配置管道不存在，使用者可以配置完整堆疊管道包括或忽略 Dispatcher 配置。
@@ -115,7 +115,7 @@ Cloud Manager 提供兩種類型的管道：
 
 >[!IMPORTANT]
 >
->您必須使用 AEM 版本 `2021.10.5933.20211012T154732Z ` 或更高版本，並啟用 AEM Sites 以利用前端管道。
+>您必須使用AEM版本 `2021.10.5933.20211012T154732Z ` 或更高版本並啟用AEM Sites以使用前端管道。
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Cloud Manager 提供兩種類型的管道：
 
 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
 
-請參考文件[使用前端管道開發 Sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此過程的工作原理以及需要注意的一些注意事項，以充分發揮此過程的潛力。
+請參考檔案 [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 瞭解此程式的運作方式，以及一些需要注意的事項，以充分發揮此程式的潛力。
 
 ### 正在設定完整堆疊管道 {#configure-full-stack}
 
@@ -160,18 +160,18 @@ Web 層配置管道透過將 HTTPD/Dispatcher 配置與其他程式碼更改分�
 
 以下限制適用。
 
-* 您必須使用 AEM 版本`2021.12.6151.20211217T120950Z`或更新以利用 Web 層配置管道。
-* 你必須[選擇使用調度工具的靈活模式](/help/implementing/dispatcher/disp-overview.md#validation-debug)利用 Web 層配置管道。
-* 使用者必須使用&#x200B;**部署管理器**&#x200B;角色以配置或執行管道。
+* 您必須使用AEM版本 `2021.12.6151.20211217T120950Z` 或更新以使用Web層配置管道。
+* 您必須 [選擇加入Dispatcher工具的彈性模式](/help/implementing/dispatcher/disp-overview.md#validation-debug) 以使用Web層設定管道。
+* 使用者必須使用 **部署管理員** 設定或執行管道的角色。
 * 在任何時候，每個環境只能有一個完整堆疊設定管道。
 * 當相應的完整堆疊管道正在執行時，使用者無法配置 Web 層配置管道。
 * Web 層結構必須遵循文件中定義的靈活模式結構[雲端中的 Dispatcher。](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
-此外，如果您選擇引入一個[Web 層配置管道。](#full-stack-pipeline)
+此外，請瞭解 [完整棧疊管道](#full-stack-pipeline) 在引入網頁層級管道時採取行動。
 
 * 如果尚未為環境配置 Web 層配置管道，則使用者可以在配置其對應的完整堆疊管道時進行選擇，以在執行和部署期間包括或忽略 Dispatcher 配置。
 * 為環境配置了 Web 層設定管道後，對應的全堆疊管道 (如果存在) 將在執行和部署期間忽略 Dispatcher 設定。
-* 一旦 Web 層配置管道被刪除，它對應的完整堆疊管道將被重置以在其執行期間部署 Dispatcher 配置。
+* 刪除Web層配置管道後，其對應的完整棧疊管道將重置為在執行期間部署Dispatcher配置。
 
 Web 層配置管道可以是程式碼品質或部署類型。
 

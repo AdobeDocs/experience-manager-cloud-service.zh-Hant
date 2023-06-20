@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '789'
 ht-degree: 49%
 
 ---
@@ -67,7 +67,7 @@ AEM會自動為所有內容建立翻譯規則。 若要檢視這些規則：
 
    ![翻譯規則編輯器](assets/translation-rules-editor.png)
 
-1. 將翻譯的頁面屬性位於 **一般** 區段。 您可以新增或更新要明確包含在翻譯中的現有屬性名稱。
+1. 已翻譯的頁面屬性位於 **一般** 區段。 您可以新增或更新要明確包含在翻譯中的現有屬性名稱。
    1. 在&#x200B;**新屬性**&#x200B;欄位中輸入屬性名稱。
    1. 選項&#x200B;**翻譯**&#x200B;和&#x200B;**繼承**&#x200B;會自動勾選。
    1. 點選或按一下&#x200B;**新增**。

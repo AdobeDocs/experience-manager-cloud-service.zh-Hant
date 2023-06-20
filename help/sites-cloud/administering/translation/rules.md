@@ -4,10 +4,10 @@ description: 瞭解翻譯規則如何識別需要翻譯的內容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 5%
+source-wordcount: '1294'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 >[!TIP]
 >
->如果您不熟悉翻譯內容，請參閱我們的 [Sites 翻譯歷程](/help/journey-sites/translation/overview.md)，此路徑會逐步引導您了解如何使用 AEM 強大的翻譯工具翻譯 AEM Sites 內容，非常適合那些沒有 AEM 或翻譯經驗的使用者。
+>如果您不熟悉翻譯內容，請參閱我們的 [網站翻譯歷程，](/help/journey-sites/translation/overview.md) 將引導您使用AEM強大的翻譯工具來翻譯AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 ## 內容片段和翻譯規則 {#content-fragments}
 
@@ -125,11 +125,11 @@ ht-degree: 5%
 
 ```xml
 <nodelist>
-     <node path="/content”>
+     <node path="/content">
            <property name="text" />
      </node>
-     <node path=“/content/mysite/en”>
-          <property name=“text” translate=“false" />
+     <node path="/content/mysite/en">
+          <property name="text" translate="false" />
      </node>
 <nodelist>
 ```
@@ -142,7 +142,7 @@ ht-degree: 5%
 
 ```xml
 <nodelist>
-    <node path="/content”>
+    <node path="/content">
      <filter>
    <node containsProperty="draft" propertyValue="true" />
      </filter>
@@ -186,7 +186,7 @@ ht-degree: 5%
 
 **`isDeep`**  適用於節點篩選器，預設為true。 它會檢查節點（或其上階）是否包含該屬性，且該屬性在篩選器中具有指定的屬性值。 若為false，則只會檢查目前節點。
 
-例如，即使父節點具有屬性，子節點也會新增至翻譯作業 `draftOnly` 設為true以標幟草稿內容。 此處 `isDeep` 就會發揮作用，並檢查父節點是否具有屬性 `draftOnly` 為true並排除這些子節點。
+例如，即使父節點具有屬性，子節點也會新增至翻譯作業 `draftOnly` 設為true可標幟草稿內容。 此處 `isDeep` 就會發揮作用，並檢查父節點是否具有屬性 `draftOnly` 為true並排除這些子節點。
 
 在編輯器中，您可以核取/取消核取 **深入** 在 **篩選器** 標籤。
 

@@ -2,10 +2,10 @@
 title: 自訂網域名稱簡介
 description: Cloud Manager 的 UI 可讓您新增自訂網域，以自助方式使用唯一的品牌名稱來識別您的網站。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 100%
+source-wordcount: '768'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service 提供內建的內容傳遞網路 (CDN) 服務，但也�
 * 安裝在 AEM 管理的 CDN 中的自訂網域名稱 (和憑證) 是透過 Cloud Manager 進行管理。
 * 安裝在您自己 CDN 中的自訂網域名稱 (和憑證) 是在特定 CDN 中進行管理。
 
-在您自己 CDN 中管理的網域不需要透過 Cloud Manager 安裝。它們將透過 X-Forwarded-Host 提供給 AEM，並將與 Dispatcher 中定義的虛擬主機相符。[如需詳細資訊，請參閱 CDN 文件。](/help/implementing/dispatcher/cdn.md)
+在您自己的CDN中管理的網域不需要透過Cloud Manager安裝。 AEM可透過X-Forwarded-Host取得這些變數，並比對Dispatcher中定義的vhost。 請參閱 [CDN檔案](/help/implementing/dispatcher/cdn.md).
 
 在一個環境中，您可以將兩個網域安裝在 AEM 管理的 CDN 中，和安裝在您自己的 CDN 中。
 

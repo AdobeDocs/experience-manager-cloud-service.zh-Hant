@@ -2,16 +2,16 @@
 title: 元件參考指南
 description: 開發人員參考指南，瞭解元件及其結構的詳細資訊
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3659'
+source-wordcount: '3649'
 ht-degree: 1%
 
 ---
 
 # 元件參考指南 {#components-reference-guide}
 
-元件是在AEM中建立體驗的核心。 此 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 使用一組現成且強大的元件，輕鬆開始使用。 此 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 帶開發人員瞭解如何使用這些工具，以及如何建立自訂元件，以建立新的AEM網站。
+元件是在AEM中建立體驗的核心。 此 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 使用一組現成且強大的元件，輕鬆開始使用。 此 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 帶開發人員瞭解如何使用這些工具，以及如何建立自訂元件來建立AEM網站。
 
 >[!TIP]
 >
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 ### 內容邏輯和演算標籤  {#content-logic-and-rendering-markup}
 
-您的元件將會呈現為 [HTML。](https://www.w3schools.com/htmL/html_intro.asp) 您的元件需要定義取得所需內容所需的HTML，然後視需要在製作和發佈環境中轉譯。
+您的元件呈現方式 [HTML](https://www.w3schools.com/htmL/html_intro.asp). 您的元件需要定義取得所需內容所需的HTML，然後視需要在製作和發佈環境中轉譯。
 
 建議將負責標籤和轉譯的程式碼，與控制用來選取元件內容的邏輯的程式碼分開。
 
@@ -123,11 +123,11 @@ AEM元件的結構既強大又靈活。 主要部分為：
    * 縮寫應限製為兩個字元。
    * 提供空字串將會建置的前兩個字元中的縮寫 `jcr:title` 屬性。
       * 例如，&quot;Im&quot;代表&quot;Image&quot;
-      * 當地語系化標題將用於建置縮寫。
+      * 系統會使用當地語系化的標題來建置縮寫。
    * 只有元件具備以下條件時，才會轉譯縮寫： `abbreviation_commentI18n` 屬性，然後用作翻譯提示。
 1. `cq:icon.png` 或 `cq:icon.svg`  — 此元件的圖示，會顯示在元件瀏覽器中
    * 20 x 20畫素是標準元件的圖示大小。
-      * 較大的圖示將會縮小（使用者端）。
+      * 較大的圖示會縮小（使用者端）。
    * 建議的色彩為rgb(112， 112， 112) > #707070
    * 標準元件圖示的背景是透明的。
    * 僅限 `.png` 和 `.svg` 檔案受到支援。
@@ -173,7 +173,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 | `cq:editConfig` | `cq:EditConfig` | 這會定義 [編輯元件的設定。](#edit-behavior) |
 | `cq:htmlTag` | `nt:unstructured` | 這會傳回新增至周圍HTML標籤的其他標籤屬性。 啟用向自動產生的div新增屬性。 |
 | `cq:noDecoration` | `Boolean` | 如果為true，則元件不會使用自動產生的div和css類別轉譯。 |
-| `cq:template` | `nt:unstructured` | 如果找到，從元件瀏覽器新增元件時，此節點將用作內容範本。 |
+| `cq:template` | `nt:unstructured` | 如果找到，從元件瀏覽器新增元件時，會使用此節點作為內容範本。 |
 | `jcr:created` | `Date` | 這是建立元件的日期。 |
 | `jcr:description` | `String` | 這是元件的說明。 |
 | `jcr:title` | `String` | 這是元件的標題。 |
@@ -272,7 +272,7 @@ Content not found
 
 ## 使用元件 {#using-components}
 
-建立元件後，您需要啟用它才能使用它。 使用它會顯示元件的結構與存放庫中結果內容的結構有何關係。
+建立元件後，必須啟用它才能使用。 使用它會顯示元件的結構與存放庫中結果內容的結構有何關係。
 
 ### 將元件新增至範本 {#adding-your-component-to-the-template}
 
@@ -415,7 +415,6 @@ AEM中有許多現有設定。 您可以使用中的查詢工具輕鬆搜尋特�
 >
 >* `aftermove`
 >* `aftercopy`
-
 
 事件處理常式可使用自訂實施來實施。 例如(其中 `project.customerAction` 是靜態方法)：
 

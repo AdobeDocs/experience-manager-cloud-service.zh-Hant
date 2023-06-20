@@ -4,9 +4,9 @@ description: 瞭解如何使用AEM網站範本來預先定義網站結構和初�
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '572'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 >
 >不應混淆AEM網站範本 [頁面範本。](/help/sites-cloud/authoring/features/templates.md) 網站範本定義網站的整體結構。 頁面範本會定義個別頁面的結構和初始內容。
 >
->不應混淆AEM網站範本 [AEM網站主題。](site-themes.md) AEM網站主題僅包含AEM網站的樣式資訊。 AEM網站範本定義網站結構和初始內容，並包含AEM網站主題，以便 [快速建立網站。](create-site.md)
+>不應混淆AEM網站範本 [AEM網站主題。](site-themes.md) AEM網站主題僅包含AEM網站的樣式資訊。 AEM網站範本定義網站結構和初始內容，並包含要允許的AEM網站主題 [快速建立網站。](create-site.md)
 
 ## 新增網站範本至AEM {#adding}
 

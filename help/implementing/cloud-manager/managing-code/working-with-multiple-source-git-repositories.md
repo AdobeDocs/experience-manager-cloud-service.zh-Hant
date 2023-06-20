@@ -2,10 +2,10 @@
 title: 使用多個存放庫
 description: 了解如何在使用 Cloud Manager 時管理多個 Git 存放庫。
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: 5ea5c3f03642ae2f7471165d4d0ee33c2cc31b6b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 以下是兩個客戶自有 Git 存放庫的範例 `pom.xml` 檔案。
 
-* 第一個專案將放入名為 `project-a` 的目錄中。
+* 第一個專案會放入名為的目錄中 `project-a`.
 * 第二個專案會放入名為 `project-b` 的目錄中。
 
 ```xml

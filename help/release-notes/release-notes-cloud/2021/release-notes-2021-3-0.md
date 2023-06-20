@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2021.3.0版as a Cloud Service發行說明」。'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 38%
+source-wordcount: '1295'
+ht-degree: 34%
 
 ---
 
@@ -89,7 +89,7 @@ AEM as a Cloud Service 2021.3.0 中的 Cloud Manager 發行日期是 2021 年 3 
 
 ### 新增功能 {#what-is-new-march}
 
-* 如果客戶的環境中已有 [IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)、[SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn)和[自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)的現有自訂網域名稱設定，將看到有關其先前現有設定的訊息，也可透過 UI 進行自助服務。
+* 客戶的環境中具有的現有自訂網域名稱設定 [IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)， [SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) 和 [自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 檢視有關其先前現有設定的訊息，並可透過使用者介面進行自助服務。
 
 * 擁有必要權限的使用者現在可以編輯方案，好讓他們以自助方式執行以下作業：
 
@@ -127,7 +127,7 @@ AEM as a Cloud Service 2021.3.0 中的 Cloud Manager 發行日期是 2021 年 3 
 
 * 有時，即使未部署該設定，使用者也可能會在 IP 允許清單旁邊看到綠色的「活動」狀態。
 
-* 所有現有的生產管道都將透過體驗稽核步驟自動啟用。
+* 所有現有的生產管道都會使用體驗稽核步驟自動啟用。
 
 ## 內容轉移工具 {#content-transfer-tool}
 

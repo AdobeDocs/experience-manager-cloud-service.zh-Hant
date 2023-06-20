@@ -2,10 +2,10 @@
 title: Cloud Manager 存放庫
 description: 了解如何在 Cloud Manager 中建立、檢視和刪除 Git 存放庫。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 100%
+source-wordcount: '580'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
    ![新增存放庫對話框](/help/implementing/cloud-manager/assets/repos/repo-1.png)
 
-當精靈關閉時，您的新存放庫將顯示在表格中。
+當精靈關閉時，您的新存放庫會顯示在表格中。
 
 您可以在資料表中選取存放庫，然後按一下省略符號按鈕，然後選取&#x200B;**複製存放庫 URL**、**檢視和更新**&#x200B;或&#x200B;**刪除**&#x200B;您的存放庫。
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 刪除存放庫將：
 
 * 使已刪除的存放庫名稱無法用於將來可能建立的新存放庫。
-   * 在這種情況下將顯示錯誤訊息 `Repository name should be unique within organization.`。
+   * 錯誤訊息 `Repository name should be unique within organization.` 便會顯示在此類情況下。
 * 讓已刪除的存放庫在 Cloud Manager 中無法使用，並且無法連結到管道。
 
 按照這些步驟即可刪除 Cloud Manager 中的存放庫。

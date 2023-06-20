@@ -2,10 +2,10 @@
 title: 企業開發團隊設定
 description: 了解如何設定和擴展您的企業開發團隊，並了解 AEM as a Cloud Service 如何支援您的開發流程。
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: f19c4c71cf3b70331b9ccc56adf0bfd31e7edb2c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 97%
+source-wordcount: '1444'
+ht-degree: 85%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager 中提供了三種類型的環境。
 
 生產管道會先將計劃碼和設定部署到測試環境、測試應用計劃，最後部署到生產環境。
 
-雲端服務 SDK 一律使用最新的 AEM as a Cloud Service 改善進行更新，允許直接利用開發人員的本機硬體進行本機開發。這可以在極短的返回時間內實現快速開發。因此，開發人員可以留在他們熟悉的本機環境中，並從各種開發工具中進行選擇，以在他們認為合適的時候推動開發環境或生產。
+Cloud Service SDK一律會以最新的AEMas a Cloud Service改良進行更新，允許直接利用開發人員的本機硬體進行本機開發。 這可以在極短的返回時間內實現快速開發。因此，開發人員可以留在他們熟悉的本機環境中，並從各種開發工具中進行選擇，以在他們認為合適的時候推動開發環境或生產。
 
 Cloud Manager 支援靈活的多團隊設定，可以根據企業的需求進行調整。為了確保多個團隊的穩定部署，同時避免一個團隊影響所有團隊的生產情況，Cloud Manager 教條式管道總是一起驗證和測試來自所有團隊的計劃碼。
 
@@ -45,7 +45,7 @@ Cloud Manager 支援靈活的多團隊設定，可以根據企業的需求進行
 
 為本專案貢獻內容的團隊應遵循以下流程。
 
-每個團隊都使用自己的開發工作流程並擁有單獨的 Git 存放庫。額外的共用 Git 存放庫用於入門專案。此 Git 存放庫包含 Cloud Manager 之 Git 存放庫的根結構，包括共用 Dispatcher 設定。
+每個團隊都使用自己的開發工作流程並擁有單獨的 Git 存放庫。額外的共用 Git 存放庫用於入門專案。此Git存放庫包含Cloud Manager的Git存放庫的根結構，包括共用Dispatcher設定。
 
 加入新專案需要在共用 Git 存放庫根目錄下的反應器 Maven 專案檔案中列出。對於 Dispatcher 設定，在 Dispatcher 專案中建立一個新的設定檔。然後此檔案會包含在主要 Dispatcher 設定中。每個團隊負責自己的 Dispatcher 設定檔。並不常對共用 Git 存放庫進行變更，通常僅在新專案入門時才需要。主要工作由每個專案團隊在自己的 Git 存放庫中完成。
 
@@ -70,13 +70,13 @@ Cloud Manager 的 Git 存放庫中的設定有兩個分支。
 * 穩定發行分支包含自所有團隊的生產計劃碼。
 * 開發分支包含來自所有團隊的開發計劃碼。
 
-在開發或穩定分支中，每次推送到團隊的 Git 存放庫都會觸發 [GitHub 動作。](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
+在開發或穩定分支中，每次推送到團隊的Git存放庫都會觸發 [GitHub動作。](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
 
 所有專案都遵循相同的穩定分支設定。推送到專案的穩定分支會自動推送到 Cloud Manager Git 存放庫中的穩定分支。Cloud Manager 中的生產管道設定為透過推送到穩定分支來觸發。因此，生產管道由任何團隊每次推送到穩定分支來執行，如果所有品質門檻都透過，生產部署就會更新。
 
 ![推送圖](/help/implementing/cloud-manager/assets/team-setup2.png)
 
-推送到開發分支的處理方式不同。雖然推送到團隊 Git 存放庫中的開發人員分支也會觸發 GitHub 動作，且計劃碼會自動推送到 Cloud Manager Git 存放庫中的開發分支，但計劃碼推送不會自動觸發非生產管道。它由呼叫 Cloud Manager 的 API 觸發。
+推送到開發分支的處理方式不同。雖然推送到團隊Git存放庫中的開發人員分支也會觸發GitHub動作，並且程式碼會自動推送到Cloud Manager Git存放庫中的開發分支，但非生產管道不會由程式碼推送自動觸發。 它由呼叫Cloud Manager的API觸發。
 
 執行生產管道包括透過提供的品質門檻檢查所有團隊的計劃碼。將計劃碼部署到階段後，將執行測試和稽核以確保一切如期運作。透過了所有的門檻後，這些變更就會在沒有任何中斷或停機的情況下推廣到生產中。
 
@@ -86,7 +86,7 @@ Cloud Manager 的 Git 存放庫中的設定有兩個分支。
 
 ![本機簽出和 SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
-這種現實世界的設定可以作為藍圖，然後根據企業的需求進行自訂。Git 靈活的分支和合併概念能容許上述工作流程的變化，並根據每個團隊的需求進行自訂。AEM as a Cloud Service 支援這些變化，而不會犧牲教條式 Cloud Manager 管道的核心價值。
+這種現實世界的設定可以作為藍圖，然後根據企業的需求進行自訂。Git靈活的分支和合併概念容許上述工作流程的變化，並根據每個團隊的需求進行自訂。 AEM as a Cloud Service 支援這些變化，而不會犧牲教條式 Cloud Manager 管道的核心價值。
 
 >[!TIP]
 >
@@ -94,9 +94,9 @@ Cloud Manager 的 Git 存放庫中的設定有兩個分支。
 
 ### 多團隊設定的注意事項 {#considerations}
 
-藉由 Cloud Manager 的 Git 存放庫和生產管道，完整的生產計劃碼一律透過所有品質門檻執行，並將其視為一個部署單位。這樣，生產系統一律處於執行狀態而不會中斷或停機。
+有了Cloud Manager的Git存放庫和生產管道，完整的生產計畫碼總是透過所有品質門檻執行，並將其視為一個部署單位。 這樣，生產系統一律處於執行狀態而不會中斷或停機。
 
-相反，如果沒有這樣的系統，因為每個團隊都可以單獨部署，所以單個團隊的更新可能會導致生產穩定性問題。此外，它需要協調和規劃停機時間來推出更新。隨著團隊數量增加，協調工作將變得更加複雜且很快會變得難以管理。
+相反，如果沒有這樣的系統，因為每個團隊都可以單獨部署，所以單個團隊的更新可能會導致生產穩定性問題。此外，它需要協調和規劃停機時間來推出更新。隨著團隊數量增加，協調工作會變得更加複雜且很快就無法管理。
 
 如果在品質門檻中偵測到問題則不會影響生產，且無需 Adobe 人員介入即可偵測和修復問題。如果沒有Cloud Service且沒有總是測試整個部署，部分部署可能會導致中斷，需要請求復原甚至從備份中完全還原。 部分測試還可能導致其他問題，而這些問題需要在事後由 Adobe 人員協調和支援來解決。
 

@@ -2,9 +2,9 @@
 title: 通用Lucene索引移除
 description: 瞭解計畫移除的一般Lucene索引以及您會如何受到影響。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe打算移除「一般Lucene」索引(`/oak:index/lucene-*`)從Adobe Experie
 
 若不使用索引，這類查詢就無法傳回結果。 與只包含路徑或屬性限制的查詢不同，包含找不到索引（因而執行周遊）的全文限制查詢將始終返回零結果。
 
-通用Lucene索引(`/oak:index/lucene-*`)自AEM 6.0 / Oak 1.0起便已存在，以便在大部分存放庫階層中提供全文搜尋，不過有些路徑可能會 `/jcr:system` 和 `/var` 已一律從此排除。 不過，此索引在很大程度上已被更特定節點型別的索引取代(例如 `damAssetLucene-*` 的 `dam:Asset` 節點型別)，支援全文檢索和屬性搜尋。
+通用Lucene索引(`/oak:index/lucene-*`)自AEM 6.0 / Oak 1.0起便已存在，可在大部分存放庫階層中提供全文搜尋，不過有些路徑是如 `/jcr:system` 和 `/var` 已一律從此排除。 不過，此索引在很大程度上已被更特定節點型別的索引取代(例如 `damAssetLucene-*` 的 `dam:Asset` 節點型別)，支援全文檢索和屬性搜尋。
 
 在AEM 6.5中，通用Lucene索引被標籤為已棄用，這表示它將在未來版本中移除。 此後，當使用索引時，會記錄WARN，如下列記錄程式碼片段所示：
 
@@ -38,15 +38,15 @@ org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-為了支援較大的客戶資料量，Adobe將不再在新的AEMas a Cloud Service環境中建立通用的Lucene索引。 此外，Adobe將開始從現有存放庫中移除索引。 [檢視時間表](#timeline) 於本檔案末尾瞭解更多詳情。
+為了支援較大的客戶資料量，Adobe不再在新的AEMas a Cloud Service環境中建立通用的Lucene索引。 此外，Adobe會從現有存放庫移除索引。 [檢視時間表](#timeline) 於本檔案末尾瞭解更多詳情。
 
 Adobe已透過以下方式調整指數成本： `costPerEntry` 和 `costPerExecution` 屬性以確保其他索引，例如 `/oak:index/pathreference` 會儘可能優先使用。
 
-若客戶應用程式使用的查詢仍依賴此索引，則應立即更新以利用其他現有索引，以便視需要自訂。 或者，也可以將新的自訂索引新增到客戶應用程式。 AEMas a Cloud Service索引管理的完整指示可在以下網址找到： [索引檔案。](/help/operations/indexing.md)
+若客戶應用程式使用的查詢仍相依於此索引，則應立即更新以使用其他現有索引，如有需要可自訂。 或者，也可以將新的自訂索引新增到客戶應用程式。 AEMas a Cloud Service索引管理的完整指示可在以下網址找到： [索引檔案。](/help/operations/indexing.md)
 
 ## 您有受到影響嗎？ {#are-you-affected}
 
-如果沒有其他全文檢索索引可以為查詢提供服務，則通用Lucene索引目前會用作遞補。 使用此過時的索引時，類似以下的訊息將會記錄在WARN層級：
+如果沒有其他全文檢索索引可以為查詢提供服務，則通用Lucene索引目前會用作遞補。 使用此已棄用的索引時，會在WARN層級記錄類似下列的訊息：
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
@@ -61,7 +61,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak
 移除通用Lucene索引後，如果全文檢索查詢找不到任何合適的索引定義，則會在WARN層級記錄如下所示的訊息：
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -117,7 +117,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 >
 >**需要客戶動作**
 >
->標示 `jcr:content/metadata/@cq:tags` 在自訂版本中分析的屬性 `damAssetLucene` 索引將導致此查詢由此索引處理，並且不會記錄任何WARN。
+>標示 `jcr:content/metadata/@cq:tags` 在自訂版本中分析的屬性 `damAssetLucene` 索引導致此查詢正由此索引處理，並且未記錄任何WARN。
 
 ### 作者執行個體 {#author-instance}
 
@@ -157,7 +157,6 @@ AEM包含具有Sling資源型別的自訂對話方塊元件 `granite/ui/componen
 > * 目前，這些執行查詢時未指定節點型別，導致由於使用通用Lucene索引而記錄WARN。
 > * 這些元件的例項很快就會自動預設為使用 `cq:Page` 和 `dam:Asset` 節點型別，無需客戶進一步操作。
 > * 此 `nodeTypes` 可以新增屬性來覆寫這些預設節點型別。
-
 
 ## 一般Lucene移除的時間表 {#timeline}
 

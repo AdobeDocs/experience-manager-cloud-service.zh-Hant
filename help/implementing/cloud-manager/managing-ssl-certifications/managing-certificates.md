@@ -2,10 +2,10 @@
 title: 管理 SSL 憑證
 description: 了解如何使用 Cloud Manager 檢查 SSL 憑證的狀態以及如何編輯、取代、更新和刪除它們。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '634'
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 * **綠色** - 此狀態代表您的憑證從目前日期起至少 60 天有效。
 
 * **橘色** - 此狀態代表您的憑證將在 60 天內到期。
-   * 現在是時候確保您有計畫透過 Cloud Manager UI 更新並取代憑證，以避免可能的網站存取或中斷。
+   * 現在是時候確保您有計畫更新憑證，並透過Cloud Manager使用者介面取代憑證，以避免可能的網站存取或中斷。
    * Cloud Manager 將在 UI 中定期發送通知，提醒您憑證即將到期。
 
 * **紅色** - 此狀態代表 SSL 憑證已過期。
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->使用者必須是&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的成員才能更新 Cloud Manager 中的 SSL 憑證。
+>使用者必須是 **業務負責人** 或 **部署管理員** 角色以更新Cloud Manager中的SSL憑證。
 
 ## 取代 SSL 憑證 {#replace-ssl-certificate}
 
@@ -59,11 +59,11 @@ Cloud Manager 不允許您刪除與一個或多個網域相關聯的 SSL 憑證�
 
 >[!NOTE]
 >
->使用者必須是&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的成員才能刪除 Cloud Manager 中的 SSL 憑證。
+>使用者必須是 **業務負責人** 或 **部署管理員** 角色以刪除Cloud Manager中的SSL憑證。
 
 ## 既有的 CDN 設定 {#pre-existing-cdn}
 
-如果您的 SSL 憑證存在既有 CDN 設定，則 **SSL 憑證**&#x200B;頁面上將顯示一則資訊訊息，鼓勵您透過 UI 新增這些設定，以便在 Cloud Manager 中顯示和設定它們。
+如果您的SSL憑證存在既有CDN設定，則 **SSL憑證** 頁面，鼓勵您透過UI新增這些設定，以便在Cloud Manager中顯示和設定它們。
 
 使用 UI 移轉所有預先存在的環境設定後，該訊息就會消失。訊息可能需要 1-2 個工作日才能消失。
 

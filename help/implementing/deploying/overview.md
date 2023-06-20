@@ -3,10 +3,10 @@ title: 部署至 AEM as a Cloud Service
 description: 部署至 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3542'
-ht-degree: 99%
+source-wordcount: '3523'
+ht-degree: 90%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 與 AEM On Premise 和 Managed Services 解決方案相比，AEM as a Cloud Service 的程式碼開發基礎相似。開發人員編寫程式碼並在本機進行測試，然後將程式碼推送到遠端 AEM as a Cloud Service 環境。需要有 Cloud Manager，這是 Managed Services 的選用內容傳遞工具。現在，這是將程式碼部署到 AEM as a Cloud Service 環境、階段和生產環境的唯一機制。為了在部署上述環境之前進行快速功能驗證和除錯，可以將程式碼從本機環境同步到[快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md)。
 
-[AEM 版本](/help/implementing/deploying/aem-version-updates.md) 的更新始終是獨立於推送[自訂程式碼](#customer-releases) 的部署事件。從另一個角度來看，自訂程式碼版本應該針對 AEM 生產版本進行測試，因為它將部署在頂端。之後發生的 AEM 版本更新會很頻繁並自動套用。它們旨在可回溯相容於已部署的客戶程式碼。
+[AEM 版本](/help/implementing/deploying/aem-version-updates.md) 的更新始終是獨立於推送[自訂程式碼](#customer-releases) 的部署事件。換個角度來看，自訂程式碼發行版本應該根據生產環境中的AEM版本進行測試，因為這是部署在頂端的功能。 之後會經常發生AEM版本更新，且會自動套用。 它們旨在可回溯相容於已部署的客戶程式碼。
 
 本文件的其餘部分將描述開發人員應如何調整他們的做法，以便他們同時使用 AEM as a Cloud Service 的版本更新和客戶更新。
 
@@ -31,12 +31,12 @@ ht-degree: 99%
 
 對於以前的 AEM 解決方案，最新的 AEM 版本很少更改 (大約每年更換每季的 Service Pack)，客戶會根據自己的時間將生產執行個體更新到最新的快速啟動，參考 API Jar。但是，AEM as a Cloud Service 應用程式會更頻繁地自動更新到最新版本 AEM，因此應針對最新版本 AEM 建置內部版本的自訂程式碼。
 
-與現有的非雲端 AEM 版本一樣，以特定快速入門為基礎的本機離線開發將受支援，並有望成為大多數情況下偵錯的首選工具。
+如同現有非雲端AEM版本，支援以特定快速入門為基礎的本機離線開發，且預期在大多數情況下會成為除錯的首選工具。
 
 >[!NOTE]
 >應用程式在本機電腦的行為與在 Adobe Cloud 上的行為有細微差異。在本機開發過程中必須考慮這些架構差異，在雲端基礎結構上部署時可能會導致不同的行為。由於這些差異，在生產環境中推出新的自訂程式碼之前，在開發和預備環境中執行詳盡的測試非常重要。
 
-若要為內部版本開發自訂程式碼，應下載並安裝相關版本的 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。如需有關使用 AEM as a Cloud Service Dispatcher 工具的詳細資訊，請參閱[此頁面](/help/implementing/dispatcher/disp-overview.md)。
+若要開發內部版本的自訂程式碼，需使用內部版本的相關版本， [AEMAS A CLOUD SERVICESDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 應下載並安裝。 如需有關使用 AEM as a Cloud Service Dispatcher 工具的詳細資訊，請參閱[此頁面](/help/implementing/dispatcher/disp-overview.md)。
 
 以下影片提供了有關如何將程式碼部署到 AEM as a Cloud Service 的概略說明：
 
@@ -86,7 +86,7 @@ ht-degree: 99%
 
 在某些情況下，在原始檔碼管理中準備內容變更可能很有用，如此在環境更新時 Cloud Manager 就可以部署。例如，合理的做法可以是植入特定根資料夾結構或排列可編輯範例中的變更，以為應用程式部署作業所更新的元件啟用政策。
 
-有兩種策略可用來描述 Cloud Manager 部署到可變存放庫的內容、可變內容套件和 repoinit 陳述式。
+有兩種策略可說明Cloud Manager部署至可變存放庫的內容、可變內容套件和repoinit陳述式。
 
 ### 可變內容套件 {#mutable-content-packages}
 
@@ -140,9 +140,9 @@ ht-degree: 99%
 由於以下好處，repoinit 更適合這些受支援的內容修改使用案例：
 
 * repoinit 在啟動時會建立資源，因此邏輯可以視這些資源的存在是理所當然的。在可變內容套件方法中，資源是在啟動後建立的，因此依賴它們的應用程式的程式碼可能會失敗。
-* repoinit 是一個相對安全的指令集，因為您可以明確控制要進行的動作。此外，除了一些允許刪除使用者、服務使用者和群組的安全相關情況外，唯一支援的操作是相加。相反，在可變內容套件方法中刪除某些內容是明確的；當您定義篩選器時，篩選器涵蓋的任何內容都將被刪除。儘管如此，仍應謹慎，因為對於任何內容，在某些情況下，新內容的存在可能會改變應用程式的行為。
+* repoinit 是一個相對安全的指令集，因為您可以明確控制要進行的動作。此外，除了一些允許刪除使用者、服務使用者和群組的安全相關情況外，唯一支援的操作是相加。相反地，在可變內容套件方法中移除某些內容是很明確的；當您定義篩選器時，篩選器覆蓋的任何內容都會被刪除。 儘管如此，仍應謹慎，因為對於任何內容，在某些情況下，新內容的存在可能會改變應用程式的行為。
 * repoinit 執行快速和不可部分完成作業。相反地，可變內容套件在效能上高度依賴於篩選器涵蓋的結構。即使您更新單一節點，也可能會建立大型樹狀的快照。
-* 可以在執行階段於本機開發環境中驗證 repoinit 陳述式，因為它們將在 OSGi 設定註冊時執行。
+* 因為會在OSGi設定註冊時執行，所以可在執行階段驗證本機開發環境上的repoinit陳述式。
 * repoinit 陳述式是不可部分完成和明確的，如果狀態已相符將跳過。
 
 當 Cloud Manager 部署應用程式時，它會獨立於任何內容套件的安裝，執行這些陳述式。
@@ -174,12 +174,12 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="套件管理員 - 移轉可變內容套件"
->abstract="探索套件管理員在這些使用案例的使用情況：內容套件應安裝為「一次性」，包括將特定內容從生產環境匯入至預備環境以偵錯生產問題，將小型內容套件從內部部署環境轉移至 AEM 雲端環境等。"
+>abstract="探索套件管理器的使用案例，其中內容套件應安裝為「一次性」使用，包括將特定內容從生產環境匯入至測試環境，以偵錯生產問題、將小型內容套件從內部部署環境傳輸至AEM雲端環境等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hant#cloud-migration" text="內容轉移工具"
 
-在某些使用案例中，內容套件應做為「一次性」安裝。例如，將特定內容從生產環境匯入至預備環境以偵錯生產問題。對於這些情況，[套件管理員](/help/implementing/developing/tools/package-manager.md) 可以用在 AEM as a Cloud Service 環境。
+在某些使用案例中，內容套件應做為「一次性」安裝。例如，將特定內容從生產環境匯入到中繼環境，以偵錯生產問題。 對於這些情況，[套件管理員](/help/implementing/developing/tools/package-manager.md) 可以用在 AEM as a Cloud Service 環境。
 
-由於套件管理員是一個執行階段概念，不可能將內容或程式碼安裝到不可變存放庫中，因此這些內容套件應該只包含可變內容 (主要是 `/content` 或 `/conf`)。如果內容套件包含混合內容 (可變內容和不可變內容)，則只會安裝可變內容。
+由於套件管理員是一個執行階段概念，不可能將內容或程式碼安裝到不可變存放庫中，因此這些內容套件應該只包含可變內容 (主要是 `/content` 或 `/conf`)。如果內容套件包含混合的內容（可變和不可變內容），則只會安裝可變內容。
 
 >[!IMPORTANT]
 >
@@ -239,7 +239,7 @@ above appears to be internal, to confirm with Brian -->
 
 ## 滾動部署的工作原理 {#how-rolling-deployments-work}
 
-如同 AEM 更新，客戶版本使用滾動部署策略進行部署，以便在適當的情況下消除作者叢集停機時間。事件的一般序列如下所述，其中新舊版本客戶代碼的節點正在執行相同版本的 AEM 程式碼。
+和AEM更新一樣，客戶版本是使用滾動部署策略來部署，以便在適當的情況下消除作者叢集停機時間。 事件的一般序列如下所述，其中新舊版本客戶代碼的節點正在執行相同版本的 AEM 程式碼。
 
 * 舊版本的節點處於使用中狀態，且新版本的候選發佈版本已建置並可供使用。
 * 如果有任何新的或更新的索引定義，即會處理對應的索引。請注意，舊版本的節點會一律使用舊索引，而新版本的節點則一律使用新索引。
@@ -263,7 +263,7 @@ above appears to be internal, to confirm with Brian -->
 
 發佈機制可回溯相容於 [AEM Replication Java API](https://helpx.adobe.com/tw/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html)。
 
-為了使用 cloud ready AEM 快速入門來開發和測試複製，傳統複製功能需要與作者/發佈設定一起使用。如果 AEM Author 的 UI 進入點已針對雲端刪除，使用者將移至 `http://localhost:4502/etc/replication` 進行設定。
+若要使用雲端就緒AEM快速入門開發和測試復寫，傳統復寫功能需要與製作/發佈設定搭配使用。 如果 AEM Author 的 UI 進入點已針對雲端刪除，使用者將移至 `http://localhost:4502/etc/replication` 進行設定。
 
 ## 回溯相容程式碼以進行滾動部署 {#backwards-compatible-code-for-rolling-deployments}
 
@@ -281,7 +281,7 @@ above appears to be internal, to confirm with Brian -->
 
 ### 針對回復作業的保守編碼 {#conservative-coding-for-rollbacks}
 
-如果部署後有回報或偵測到故障，則可能需要回復至舊版本。建議需確保新程式碼和新版本建立的任何新結構相容，因為新結構 (任何可變內容) 將不會回復。如果舊程式碼不相容，則需要在後續的客戶版本中套用修正。
+如果在部署後報告或偵測到失敗，則可能需要復原到舊版本。 建議需確保新程式碼和新版本建立的任何新結構相容，因為新結構 (任何可變內容) 將不會回復。如果舊程式碼不相容，則需要在後續的客戶版本中套用修正。
 
 ## 快速開發環境 (RED) {#rde}
 

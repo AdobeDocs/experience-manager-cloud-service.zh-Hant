@@ -1,19 +1,19 @@
 ---
 title: 啟用前端管道
-description: 瞭解如何啟用現有網站的前端管道，以利用網站主題來更快地自訂您的網站。
+description: 瞭解如何啟用現有網站的前端管道，以使用網站主題，更快速地自訂您的網站。
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
 
 # 啟用前端管道 {#enable-front-end-pipeline}
 
-瞭解如何啟用現有網站的前端管道，以利用網站主題來更快地自訂您的網站。
+瞭解如何啟用現有網站的前端管道，以使用網站主題，更快速地自訂您的網站。
 
 ## 概觀 {#overview}
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 此管道僅處理前端計畫碼，而不是部署完整棧疊，這可讓流程更快速，並允許前端開發人員輕鬆快速地自訂您的網站，而無需瞭解AEM。
 
-根據網站範本的網站預設可以利用前端管道。 本檔案說明如何調整現有網站以利用前端管道。
+根據網站範本的網站預設可以使用前端管道。 本檔案說明如何調整現有網站以利用前端管道。
 
 >[!TIP]
 >
@@ -56,7 +56,7 @@ AEM可以自動調整您的現有網站以使用前端管道。 若要這麼做�
 
    ![啟用前端管道](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)
 
-1. AEM會提示您確認將進行的變更概述。 確認並調整您的網站。
+1. AEM會提示您確認將進行的變更概覽。 確認並調整您的網站。
 
 現在您的網站已準備好使用前端管道。 若要進一步瞭解前端管道和管理您的網站主題，請參閱：
 

@@ -1,10 +1,10 @@
 ---
 title: 整備階段
-description: 瞭解您需要採取的步驟，以確保您的AEM安裝已準備好移至雲端
+description: 瞭解您需要採取的步驟，以便確保AEM安裝已準備好移至雲端
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2074'
 ht-degree: 8%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 8%
 
 ## 到目前為止 {#story-so-far}
 
-上一份檔案， [開始使用AEMas a Cloud Service](/help/journey-migration/getting-started.md)，概述移轉至AEMas a Cloud Service所需的階段清單，以及移轉的好處。
+上一份檔案， [開始使用AEMas a Cloud Service](/help/journey-migration/getting-started.md)，概述您可以移轉至AEMas a Cloud Service所需的階段清單，以及移轉的好處。
 
 ## 目標 {#objective}
 
-本檔案可協助您瞭解您必須考量哪些因素，才能確保AEM安裝已準備好移至雲端：
+本檔案可協助您瞭解必須考量的因素，以便確定AEM安裝已準備好移至雲端：
 
 * 瞭解重大變更和已棄用的功能
 * 瞭解如何規劃移轉至AEMas a Cloud Service
@@ -90,7 +90,7 @@ AEM as a Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許�
   <tr>
     <td>切換至非同步作業</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">設定非同步操作</a></td>
-    <td>為了改善環境的整體效能，某些作業會以非同步模式執行。 當系統資源可用時，非同步作業將排入佇列並執行。</td>
+    <td>為了改善環境的整體效能，某些作業會以非同步模式執行。 當系統資源可用時，非同步工作會排入佇列並執行。</td>
   </tr>
   <tr>
     <td>權杖型驗證和整合策略</td>
@@ -150,7 +150,7 @@ AEM as a Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許�
   <tr>
     <td>驗證變更</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=zh-Hant">AEM as a Cloud Service 的 IMS 支援</td>
-    <td>如果您先前在移至Cloud Service之前在作者和發佈上使用SAML 2.0整合，主要變更為AEMas a Cloud Service作者僅與Adobe IMS整合。 不過，AEMas a Cloud Service發佈層級仍可運用SAML或其他驗證整合。 AEM as a Cloud Service 僅針對「作者」、「管理員」和「開發」使用者提供 IMS 驗證支援。IMS驗證不支援客戶網站的外部一般使用者，例如網站訪客。</td>
+    <td>如果您先前在移至Cloud Service之前在作者和發佈上使用SAML 2.0整合，主要變更為AEMas a Cloud Service作者僅與Adobe IMS整合。 不過，AEMas a Cloud Service發佈層級仍可使用SAML或其他驗證整合。 AEM as a Cloud Service 僅針對「作者」、「管理員」和「開發」使用者提供 IMS 驗證支援。IMS驗證不支援客戶網站的外部一般使用者，例如網站訪客。</td>
   </tr>
 </tbody>
 </table>
@@ -163,7 +163,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ## 規劃檢閱AEM安裝 {#review-planning}
 
-一旦您已經習慣了AEMas a Cloud Service引進的變更，您就可以開始規劃審查現有安裝，以衡量將它移動到雲端所需的變更等級。
+在您習慣了AEMas a Cloud Service的變更後，現在應該開始規劃檢閱現有的安裝。 這麼做可協助您評估將它移至雲端所需的變更等級。
 
 下圖將展示稽核階段中涉及的關鍵步驟：
 
@@ -173,7 +173,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ### 評定雲端服務整備 {#assess-cloud-readiness}
 
-第一步是評估您從現有AEM版本移至Cloud Service的準備程度，並判斷需要重構以便與AEMas a Cloud Service相容的區域。
+第一步是評估您是否已整備完畢，可從現有的AEM版本移至Cloud Service，並判斷需要重構才能與AEMas a Cloud Service相容的區域。
 
 您必須根據重大變更和過時的功能，對目前的AEM原始程式碼進行全面的評估，以判斷轉換歷程中預期的投入程度。
 
@@ -198,7 +198,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 **使報表社會化**
 
-Best Practices Analyzer報告完成後，請與相關團隊共用這些報告，以確認您的發現並規劃後續步驟。 您也可以使用來分配報表的列印版本（視偏好設定而定） [列印預覽](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
+Best Practices Analyzer報表完成之後，請與相關團隊共用這些報表，以便您可以確認結果並規劃後續步驟。 您也可以使用來分配報表的列印版本（視偏好設定而定） [列印預覽](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
 
 ### 檢視資源規劃 {#review-resource-planning}
 

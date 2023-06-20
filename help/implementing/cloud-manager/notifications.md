@@ -2,10 +2,10 @@
 title: 通知
 description: 了解如何使用 Adobe Experience Cloud 通知系統接收有關管道部署的資訊。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 6f390df560e9eeb76a8c4f1904e500aa5ed2bd65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 100%
+source-wordcount: '558'
+ht-degree: 96%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 ### 優先順序 {#priority}
 
-優先警示將標示&#x200B;**高**&#x200B;標記，並可設定為僅接收警示。在&#x200B;**優先順序**&#x200B;區段中，您可以定義哪些類別符合優先通知的條件。
+優先警示標有 **高** 標籤進行標籤，並可設定為僅以警報形式接收。 在&#x200B;**優先順序**&#x200B;區段中，您可以定義哪些類別符合優先通知的條件。
 
 ![通知優先順序](assets/notifications-priority.png)
 

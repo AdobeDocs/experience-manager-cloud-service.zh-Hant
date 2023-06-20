@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: aa7b9daba4242965baf20a77af356952cd7bc279
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1092'
 ht-degree: 3%
 
 ---
@@ -59,7 +59,7 @@ CIF附加元件僅適用於Adobe Commerce Enterprise/Cloud，選擇性支援為A
 
 ![CM商務端點](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-在設定分段目錄支援的端點及選擇性授權標頭後，端點將顯示在詳細資訊頁面上。 按一下「編輯」圖示會開啟相同的對話方塊，您可視需要在此修改端點。
+設定了分段目錄支援的端點及授權標頭（可選）後，端點會顯示在詳細資訊頁面上。 按一下「編輯」圖示會開啟相同的對話方塊，您可視需要在此修改端點。
 
 ![CM環境資訊](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
@@ -120,17 +120,17 @@ CIF附加元件和 [CIF Core Components](https://github.com/adobe/aem-core-cif-c
 - GraphQL使用者端 — 選取已設定的GraphQL使用者端以進行商務後端通訊。 這通常應該保持在預設值。
 - 存放區檢視 — 存放區檢視識別碼。 如果為空，則使用預設存放區檢視。
 - GraphQL Proxy路徑 — AEM中的GraphQL Proxy用來將請求代理至商務後端GraphQL端點的URL路徑。
-   >[!NOTE]
-   >
-   > 在大多數設定中，預設值 `/api/graphql` 不可變更。 只有不使用所提供的GraphQL Proxy的進階設定才應變更此設定。
+  >[!NOTE]
+  >
+  > 在大多數設定中，預設值 `/api/graphql` 不可變更。 只有不使用所提供的GraphQL Proxy的進階設定才應變更此設定。
 - 啟用目錄UID支援 — 在商務後端GraphQL呼叫中啟用UID而非ID支援。
-   >[!NOTE]
-   >
-   > Adobe Commerce 2.4.2匯入UID支援。只有在您的Commerce後端支援2.4.2版或更新版本的GraphQL結構描述時，才會啟用此功能。
+  >[!NOTE]
+  >
+  > Adobe Commerce 2.4.2匯入UID支援。只有在您的Commerce後端支援2.4.2版或更新版本的GraphQL結構描述時，才會啟用此功能。
 - 目錄根類別識別碼 — 商店目錄根的識別碼（UID或ID）
-   >[!CAUTION]
-   >
-   > 從CIF Core Components 2.0.0版開始，支援 `id` 已移除並取代為 `uid`. 如果您的專案使用CIF核心元件2.0.0版，您必須啟用目錄UID支援，並使用有效的類別UID作為「目錄根類別識別碼」。
+  >[!CAUTION]
+  >
+  > 從CIF Core Components 2.0.0版開始，支援 `id` 已移除並取代為 `uid`. 如果您的專案使用CIF核心元件2.0.0版，您必須啟用目錄UID支援，並使用有效的類別UID作為「目錄根類別識別碼」。
 
 以上所示的設定僅供參考。 專案應提供自己的設定。
 

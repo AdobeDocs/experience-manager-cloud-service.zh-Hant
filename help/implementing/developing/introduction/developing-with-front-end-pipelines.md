@@ -2,9 +2,9 @@
 title: 使用前端管道開發 Sites
 description: 有了前端管道，前端開發人員可獲得更多獨立性，且開發流程可獲得大幅度的速度。 本檔案說明應予說明的前端建置流程的一些特定考量事項。
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: a6b228023d7bd2a40e4db3a1d2c3900a5c24031c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1154'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # 使用前端管道開發 Sites {#developing-site-with-front-end-pipeline}
 
-[透過前端管道，](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 前端開發人員可獲得更多獨立性，且開發流程可獲得大幅度的速度。 本檔案說明此程式的運作方式，以及一些需要注意的事項，以便充分發揮此程式的潛力。
+[透過前端管道，](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 前端開發人員可獲得更多獨立性，且開發流程可獲得大幅度的速度。 本檔案說明此程式的運作方式，以及一些需要注意的事項，以便您能夠充分發揮此程式的潛力。
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 類似於 [完整棧疊組建環境，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 前端管道有其自己的環境。 只要遵循以下前端建置合約，開發人員就可以在此管道中擁有一些彈性。
 
-前端管道需要前端Node.js專案使用 `build` 指令碼指示詞，用於產生將由前端管道部署的建置。 即Cloud Manager使用命令 `npm run build` 將可部署的專案產生至 `dist` 資料夾。
+前端管道需要前端Node.js專案使用 `build` 指令碼指示詞，用於產生由前端管道部署的組建。 即Cloud Manager使用命令 `npm run build` 將可部署的專案產生至 `dist` 資料夾。
 
 的內容 `dist` 資料夾是最終部署到AEM的內容，與Cloud Manager管道as a Cloud Service。
 
@@ -68,7 +68,7 @@ ht-degree: 1%
    1. 如往常一樣，若要在本機開發：
       1. 此 `npx aem-site-theme-builder proxy` 在前端模組內執行的命令會啟動向AEM環境請求內容的Proxy伺服器，同時將前端模組的CSS和JS檔案替換為來自本機的檔案 `dist` 資料夾。
       1. 設定 `AEM_URL` 變數 `.env` 檔案可控制本機Proxy伺服器使用內容的AEM環境。
-      1. 變更此專案的值 `AEM_URL` 因此，允許在生產環境和開發環境之間切換，以便調整CSS和JS，使其適合這兩個環境。
+      1. 變更此專案的值 `AEM_URL` 因此，可讓您在生產環境和開發環境之間切換以調整CSS和JS，使其適合這兩個環境。
       1. 它必須與呈現新輸出的開發環境以及呈現舊輸出的生產環境搭配使用。
    1. 前端工作是在更新的前端模組適用於兩個環境時完成，並部署至兩個環境。
 1. 然後，後端團隊可以透過部署程式碼來更新生產環境，該程式碼會透過完整棧疊管道來呈現新HTML和/或JSON輸出。

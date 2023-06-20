@@ -3,9 +3,9 @@ title: 管理工作流程例項
 description: 瞭解如何管理工作流程例項
 feature: Administering
 role: Admin
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,6 @@ ht-degree: 0%
    ![status-unhealth](/help/sites-cloud/administering/assets/status-unhealthy.png)
 1. 對象 **狀態詳細資料** 在工作流程例項中，按一下 **詳細資料**，以顯示 **執行中的工作流程例項數目**， **已完成的工作流程例項**， **中止的工作流程例項**， **失敗的工作流程執行個體**、等等。 例如，底下是指定的影像，顯示 **狀態詳細資料** 替換為 **狀態：狀況良好** 和 **狀態：不正常**.
    ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-
    ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -93,7 +92,6 @@ ht-degree: 0%
    >* 使用 **終止** 動作
    >* 當受工作流程約束的頁面被（強制）刪除時，工作流程即終止。
 
-
 1. 選取特定專案，然後 **開啟歷史記錄** 若要檢視更多詳細資料：
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
@@ -103,8 +101,7 @@ ht-degree: 0%
 當工作流程失敗時，AEM會提供 **失敗** 主控台，可讓您在原始原因處理完畢後，立即進行調查並採取適當的動作：
 
 * **失敗詳細資料**
-開啟視窗以顯示 
-**失敗訊息**、 **步驟和 **失敗棧疊**.
+開啟視窗以顯示 **失敗訊息**、 **步驟和 **失敗棧疊**.
 
 * **開啟歷史記錄**
 顯示工作流程記錄的詳細資訊。
@@ -192,7 +189,7 @@ ht-degree: 0%
 
 在工作流程模型的層級，會提供一個旗標，指出模型（及其執行階段執行個體）具有中繼資料的外部儲存。 針對標籤為外部儲存的模型的工作流程例項，工作流程變數不會儲存在JCR中。
 
-屬性 *userMetadataPersistenceEnabled* 將會儲存在 *jcr：content節點* 工作流程模型的URL。 此標幟將持續保留在工作流程中繼資料中為 *cq：userMetaDataCustomPersistenceEnabled*.
+屬性 *userMetadataPersistenceEnabled* 儲存在 *jcr：content節點* 工作流程模型的URL。 此旗標會持續保留在工作流程中繼資料中為 *cq：userMetaDataCustomPersistenceEnabled*.
 
 下圖顯示必須在工作流程上設定標幟。
 

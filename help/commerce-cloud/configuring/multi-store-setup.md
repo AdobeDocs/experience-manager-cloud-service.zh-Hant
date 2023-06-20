@@ -9,10 +9,10 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
-exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '384'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ AEM CIF核心元件可用於多個AEM網站結構，且底層GraphQL使用者端
    * 選取您建立的基本組態
    * 使用上述第2點所述的步驟建立新設定
 
-   此新設定將建立為基本設定的子設定。 您現在可以前往「工具 — >一般 — >組態瀏覽器」並建立組態設定。
+   此新組態會建立為基底組態的子組態。 您現在可以前往「工具 — >一般 — >組態瀏覽器」並建立組態設定。
 
    >[!TIP]
    >

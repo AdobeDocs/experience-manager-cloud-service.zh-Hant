@@ -2,10 +2,10 @@
 title: AEM Headless 內容作者歷程
 description: 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的無周邊特性、其功能，以及如何為您的專案編寫內容。
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 100%
+source-wordcount: '865'
+ht-degree: 92%
 
 ---
 
@@ -39,11 +39,11 @@ Headless 內容不是以傳統的頁面和元件結構為基礎。相反，是�
 
 ## 對象 {#audience}
 
-此歷程專為內容作者角色所設計。作為內容作者，您將在內容片段中建立實際內容。
+此歷程專為內容作者角色所設計。作為內容作者，您會在內容片段中建立實際內容。
 
 此歷程闡述 AEM Headless 專案內容編寫的要求、步驟和方法。此歷程將定義內容作者必須與之互動專案才能成功的其他角色，但歷程是以內容作者的角度出發。
 
-此歷程提供的資訊當然對其他角色有用，但某些資訊對某些角色來說是多餘的。請密切注意即將到來、涵蓋其他角色的歷程。
+此歷程中的資訊當然對其他角色很有用，但某些資訊對特定角色來說是多餘的。 請密切注意即將到來、涵蓋其他角色的歷程。
 
 ## Headless 內容作者歷程 {#the-journey}
 
@@ -79,7 +79,7 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 因為這樣的歷程是設計成獨立的。然而，其中一些可以相互關聯。查看這些額外的歷程，進一步了解 AEM 的強大功能如何協同工作。
 
 * [AEM Headless 翻譯歷程](/help/journey-headless/translation/overview.md) - 此文件歷程讓您對無周邊技術、AEM 如何提供無周邊內容以及如何翻譯它，有廣泛的了解。
-* [AEM Headless 開發人員歷程](/help/journey-headless/developer/overview.md) - 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的無周邊特性、其功能，以及如何在您的第一個開發專案中運用這些功能。
+* [AEM Headless開發人員歷程](/help/journey-headless/developer/overview.md)  — 從這裡開始，逐步引導您瞭解AEM強大且有彈性的無周邊功能、其功能，以及如何在您的第一個開發專案中使用這些功能。
 * [Headless 架構師歷程](/help/journey-headless/architect/overview.md) - 從這裡開始介紹 Adobe Experience Manager as a Cloud Service 的強大、靈活、無周邊功能，以及如何為您的專案建立內容模型。
 * [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 和無周邊技術有深入的了解，您可能想要直接查閱我們深入的技術文件。
 * [AEM Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 如果您偏好做中學並為傾向技術，請加入我們的由 API 和框架組織的實作教學課程，其在探究如何建立和使用 AEM Headless 應用程式。

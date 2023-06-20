@@ -2,9 +2,9 @@
 title: 查詢產生器述詞參考
 description: 查詢產生器API的述詞參考。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 14aafcb6c4acc798b0f0e0c51ecb0726f8d567aa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2280'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 * **`p.hits`** - （僅適用於JSON servlet）選取點選寫入為JSON的方式，並包含標準點選（可透過ResultHitWriter服務擴充）：
    * **`simple`**  — 最小專案，例如 `path`， `title`， `lastmodified`， `excerpt` （若已設定）
    * **`full`**  — 節點的sling JSON轉譯，使用 `jcr:path` 指出點選的路徑：預設只會列出節點的直接屬性，包含更深入的樹狀結構 `p.nodedepth=N`，0表示整個、無限子樹；新增 `p.acls=true` 在指定的結果專案上包含目前工作階段的JCR許可權(對應： `create` = `add_node`， `modify` = `set_property`， `delete` = `remove`)
-   * **`selective`**  — 僅指定屬性 `p.properties`，以空格分隔(使用 `+` 在URL中)相對路徑清單；如果相對路徑有深度 `>1` 這些物件將表示為子物件；特殊物件 `jcr:path` 屬性包含點選的路徑
+   * **`selective`**  — 僅指定屬性 `p.properties`，以空格分隔(使用 `+` 在URL中)相對路徑清單；如果相對路徑有深度 `>1` 它們表示為子物件；特殊的 `jcr:path` 屬性包含點選的路徑
 
 ### 群組 {#group}
 
@@ -108,7 +108,7 @@ group.2_group.type=dam:Asset
 
 此述詞會比較兩個JCR日期屬性。 可以測試它們是否相等、不相等、大於或大於或等於。
 
-這是僅限篩選的述詞，無法運用搜尋索引。
+這是僅篩選述詞，無法使用搜尋索引。
 
 #### 屬性 {#properties-2}
 
@@ -143,7 +143,7 @@ group.2_group.type=dam:Asset
 
 此述詞會從結果中排除其路徑符合規則運算式的節點。
 
-這是僅限篩選的述詞，無法運用搜尋索引。
+這是僅篩選述詞，無法使用搜尋索引。
 
 不支援多面向擷取。
 
@@ -168,7 +168,7 @@ group.2_group.type=dam:Asset
 
 此述詞將結果限製為目前工作階段具有指定值的專案 [JCR許可權。](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
-這是僅限篩選的述詞，無法運用搜尋索引。 不支援多面向擷取。
+這是僅篩選述詞，無法使用搜尋索引。 不支援多面向擷取。
 
 #### 屬性 {#properties-7}
 
@@ -178,7 +178,7 @@ group.2_group.type=dam:Asset
 
 此述詞尋找特定語言的AEM頁面。 這會同時檢視頁面語言屬性和頁面路徑，後者通常包含頂層網站結構中的語言或地區設定。
 
-這是僅限篩選的述詞，無法運用搜尋索引。
+這是僅篩選述詞，無法使用搜尋索引。
 
 它支援Facet擷取，並為每個唯一語言程式碼提供貯體。
 
@@ -190,7 +190,7 @@ group.2_group.type=dam:Asset
 
 此述詞檢查節點是否為DAM主要資產而不是子資產。 這基本上是子資產節點以外的每個節點。 請注意，這不會檢查 `dam:Asset` 節點型別。 若要使用此述詞，只需設定 `mainasset=true` 或 `mainasset=false`. 沒有其他屬性。
 
-這是僅限篩選的述詞，無法運用搜尋索引。
+這是僅篩選述詞，無法使用搜尋索引。
 
 它支援Facet擷取，並為主要和子資產提供兩個貯體。
 
@@ -202,7 +202,7 @@ group.2_group.type=dam:Asset
 
 此述詞尋找屬於特定成員的專案 [sling資源集合](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
-這是僅限篩選的述詞，無法運用搜尋索引。
+這是僅篩選述詞，無法使用搜尋索引。
 
 不支援多面向擷取。
 
@@ -233,7 +233,7 @@ group.2_group.type=dam:Asset
 * **`notexpired`**  — 布林值， `true` 對於尚未過期（未來日期或相等）， `false` （過期日期） （必填）
 * **`property`**  — 相對路徑 `DATE` 要檢查的屬性（必要）
 
-### 路徑 {#path}
+### path {#path}
 
 此述詞在指定路徑內搜尋。
 
@@ -244,8 +244,7 @@ group.2_group.type=dam:Asset
 * **`path`**  — 這會定義路徑模式。
    * 根據 `exact` 屬性，則整個子樹狀結構會相符(例如附加 `//*` 在xpath中，但請注意，這不包括基本路徑)或只有完全相符的路徑，其中可包含萬用字元(`*`)。
       * 預設為 `true`
-&lt;!— *若 
-`self`屬性已設定，則會搜尋包含基本節點的整個子樹狀結構。—>
+&lt;!— *若 `self`屬性已設定，則會搜尋包含基本節點的整個子樹狀結構。—>
 * **`exact`** - if `exact` 是 `true`，確切路徑必須相符，但可包含簡單萬用字元(`*`)，則名稱相符，但不符合 `/`；如果是 `false` （預設）包含所有子代（選擇性）
 * **`flat`**  — 僅搜尋直接子項(如附加 `/*` 在xpath中) (僅用於 `exact` 不為true，選填)
 * **`self`**  — 搜尋子樹狀結構，但包含指定為路徑的基本節點（無萬用字元）。
@@ -267,7 +266,7 @@ group.2_group.type=dam:Asset
    * `equals` 完全符合（預設）
    * `unequals` 不等式比較
    * `like` 使用 `jcr:like` xpath函式（選擇性）
-   * `not` 找不到相符專案(例如， `not(@prop)` 在xpath中，值引數將被忽略)
+   * `not` 找不到相符專案(例如， `not(@prop)` 在xpath中，會忽略value引數)
    * `exists` 是否存在檢查
       * `true` 屬性必須存在
       * `false` 與 `not` 且為預設值

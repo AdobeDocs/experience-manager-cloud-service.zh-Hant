@@ -4,9 +4,9 @@ description: 瞭解HTTP2內容傳送。
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
@@ -46,9 +46,9 @@ Adobe自己的測試產生以下結果：
 * 使用Adobe隨附的CDN （內容傳遞網路），作為Dynamic Media Classic授權的一部分。
 * 使用專用網域(即 `images.company.com` 或 `mycompany.scene7.com`)，而不是通用的Dynamic Media網域(也就是說， `s7d1.scene7.com`， `s7d2.scene7.com`，或 `s7d13.scene7.com`)。
 
-   若要尋找您的網域，請開啟 [Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
+  若要尋找您的網域，請開啟 [Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
-   前往 **[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**. 尋找標示為的欄位 **已發佈的伺服器名稱**. 如果您目前使用一般Dynamic Media網域，您可以在此轉變中要求移至您自己的自訂網域。
+  前往 **[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**. 尋找標示為的欄位 **已發佈的伺服器名稱**. 如果您目前使用一般Dynamic Media網域，您可以在此轉變中要求移至您自己的自訂網域。
 
 ## 為我的Dynamic Media帳戶啟用HTTP/2的程式為何？ {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -73,9 +73,7 @@ Adobe自己的測試產生以下結果：
 
    1. 客戶支援會根據提交請求的順序，將您新增至HTTP/2客戶輪候清單。
    1. 當Adobe準備好處理您的請求時，客戶支援會聯絡您以協調轉變並設定目標日期。
-   1. 完成後，您將會收到通知，並且可以驗證是否成功轉換到HTTP2。
-
-
+   1. 完成後您會收到通知，並可以驗證是否成功轉換到HTTP2。
 
 ## 我何時可以轉換為HTTP/2？ {#when-can-i-expect-to-be-transitioned-over-to-http}
 

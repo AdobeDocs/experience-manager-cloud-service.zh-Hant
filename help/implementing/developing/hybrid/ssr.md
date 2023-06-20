@@ -2,9 +2,9 @@
 title: SPA和伺服器端轉譯
 description: 在SPA中使用伺服器端轉譯(SSR)可以加速頁面的初始載入，然後將進一步的轉譯傳遞給使用者端。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: a9eb03d4db478a4db8e6d2436bd06dcde70a3eeb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1498'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ AEM必須知道可以在哪裡擷取遠端呈現的內容。 不論 [您選擇�
 
 下列欄位可供設定使用：
 
-* **內容路徑模式**  — 規則運算式，以符合部分內容（如有必要）
+* **內容路徑模式**  — 必要時，比對部分內容的規則運算式
 * **遠端端點URL**  — 負責產生內容的端點URL
    * 若不在本機網路中，請使用安全的HTTPS通訊協定。
 * **其他請求標頭**  — 要新增至傳送至遠端端點的請求的其他標頭
@@ -72,7 +72,7 @@ AEM必須知道可以在哪裡擷取遠端呈現的內容。 不論 [您選擇�
 
 >[!NOTE]
 >
->此設定會利用 [遠端內容轉譯器、](#remote-content-renderer) 提供其他擴充功能和自訂選項。
+>此設定使用 [遠端內容轉譯器、](#remote-content-renderer) 提供其他擴充功能和自訂選項。
 
 ## AEM導向的通訊流程 {#aem-driven-communication-flow}
 
@@ -130,15 +130,15 @@ AEM必須知道可以在哪裡擷取遠端呈現的內容。 不論 [您選擇�
 
 ## 規劃SSR {#planning-for-ssr}
 
-通常只需要將部分應用程式呈現在伺服器端。 常見的範例是在伺服器端轉譯頁面初始載入時，顯示在摺頁上方的內容。 這可傳送給使用者端已演算的內容，以節省時間。 當使用者與SPA互動時，其他內容會由使用者端轉譯。
+一般而言，只有部分應用程式需要呈現在伺服器端。 常見的範例是顯示在頁面初始載入時摺頁上方內容在伺服器端呈現。 這可傳送給使用者端已演算的內容，以節省時間。 當使用者與SPA互動時，其他內容會由使用者端轉譯。
 
 當您考慮為SPA實作伺服器端轉譯時，需要檢閱應用程式的哪些部分有必要。
 
 ## 使用SSR開發SPA {#developing-an-spa-using-ssr}
 
-SPA元件可由使用者端（在瀏覽器中）或伺服器端轉譯。 呈現伺服器端時，視窗大小和位置等瀏覽器屬性不存在。 因此，SPA元件應同構，不對其呈現的位置做任何假設。
+SPA元件可由使用者端（在瀏覽器中）或伺服器端轉譯。 呈現伺服器端時，視窗大小和位置等瀏覽器屬性不存在。 因此，SPA元件應同構，不對其演算位置做任何假設。
 
-若要運用SSR，您需要在AEM以及負責伺服器端轉譯的Adobe I/O Runtime上部署程式碼。 大部分的程式碼都會相同，但伺服器特定的工作會有所不同。
+若要使用SSR，您必須將程式碼部署在AEM和Adobe I/O Runtime上，由後者負責伺服器端轉譯。 大部分的程式碼都相同，但伺服器特定的工作有所不同。
 
 ## AEM中SPA的SSR {#ssr-for-spas-in-aem}
 
@@ -160,7 +160,7 @@ AEM中適用於SPA的SSR需要Adobe I/O Runtime，此模組會在轉譯應用程
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-此 `RemoteContentRendererRequestHandlerServlet` 可用於以程式設計方式設定請求設定。 `DefaultRemoteContentRendererRequestHandlerImpl`提供的預設要求處理常式實作)可讓您建立多個OSGi設定，以將內容結構中的位置對應至遠端端點。
+此 `RemoteContentRendererRequestHandlerServlet` 可用於以程式設計方式設定請求設定。 `DefaultRemoteContentRendererRequestHandlerImpl`（提供的預設要求處理常式實作）可讓您建立多個OSGi設定，以便將內容結構中的位置對應至遠端端點。
 
 若要新增自訂請求處理常式，請實作 `RemoteContentRendererRequestHandler` 介面。 請務必設定 `Constants.SERVICE_RANKING` component屬性至大於100的整數，也就是排序方式 `DefaultRemoteContentRendererRequestHandlerImpl`.
 
@@ -194,4 +194,4 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 ### 要求 {#requirements}
 
-此servlet會利用Sling模型匯出工具來序列化元件資料。 根據預設，兩者皆會 `com.adobe.cq.export.json.ContainerExporter` 和 `com.adobe.cq.export.json.ComponentExporter` 支援作為Sling模型介面卡。 如有必要，您可以使用 `RemoteContentRendererServlet` 並實作 `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. 其他類別必須擴充 `ComponentExporter`.
+此servlet會使用Sling模型匯出程式來序列化元件資料。 根據預設，兩者皆會 `com.adobe.cq.export.json.ContainerExporter` 和 `com.adobe.cq.export.json.ComponentExporter` 支援作為Sling模型介面卡。 如有必要，您可以使用 `RemoteContentRendererServlet` 並實作 `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. 其他類別必須擴充 `ComponentExporter`.

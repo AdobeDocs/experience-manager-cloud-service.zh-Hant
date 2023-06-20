@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2598'
+source-wordcount: '2594'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 ## 您將建置的內容
 
-Venia品牌最近開始使用永續性材料製造一些產品，而企業想要展示 **環保型** 徽章作為產品Teaser的一部分。 將在Adobe Commerce中建立新的自訂屬性，以指出產品是否使用 **環保型** 材質。 然後，此自訂屬性將新增為GraphQL查詢的一部分，並顯示在指定產品的產品Teaser上。
+Venia品牌最近開始使用永續性材料製造一些產品，而企業想要展示 **環保型** 徽章作為產品Teaser的一部分。 在Adobe Commerce中建立新的自訂屬性，以指出產品是否使用 **環保型** 材質。 然後，此自訂屬性將新增為GraphQL查詢的一部分，並顯示在指定產品的產品Teaser上。
 
 ![環保徽章最終實作](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -69,7 +69,7 @@ Venia品牌最近開始使用永續性材料製造一些產品，而企業想要
 
 ## 編寫產品Teaser {#author-product-teaser}
 
-產品Teaser元件將在本教學課程中不斷擴展。 第一步，將產品Teaser的新執行個體新增到首頁，以瞭解基準線功能。
+產品Teaser元件已在本教學課程中擴充。 第一步，將產品Teaser的新執行個體新增到首頁，以瞭解基準線功能。
 
 1. 導覽至 **首頁** 網站的： [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
@@ -436,7 +436,7 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 這是透過覆�
 
 此時，顯示「 」的時機邏輯 **環保型** 徽章正在運作，但純文字可以使用某些樣式。 接下來，將圖示和樣式新增至 `ui.frontend` 完成實作的模組。
 
-1. 下載 [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) 檔案。 這將用作 **環保型** 徽章。
+1. 下載 [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) 檔案。 這用作 **環保型** 徽章。
 1. 返回IDE並瀏覽至 `ui.frontend` 資料夾。
 1. 新增 `eco_friendly.svg` 檔案到 `ui.frontend/src/main/resources/images` 資料夾：
 
@@ -496,7 +496,7 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 這是透過覆�
 
 ## 其他資源 {#additional-resources}
 
-- [AEM原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)
+- [AEM原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components)
 - [自訂AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [自訂核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)

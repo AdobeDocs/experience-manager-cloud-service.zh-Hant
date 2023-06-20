@@ -2,10 +2,10 @@
 title: 建立資產資料夾 - Headless 設定
 description: 使用 AEM 內容片段模型定義內容片段的結構，這是無周邊內容的基礎。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 93%
 
 ---
 
@@ -29,15 +29,14 @@ ht-degree: 100%
 1. 點選或按一下&#x200B;**建立 -> 資料夾**。
 1. 為您的資料夾提供 **標題**&#x200B;和&#x200B;**名稱**。
    * **標題** 應該是描述性的。
-   * **名稱**&#x200B;將成為存放庫中的節點名稱。
-      * 它會根據標題自動產生，並根據[AEM 命名慣例](/help/implementing/developing/introduction/naming-conventions.md)進行調整
+   * 此 **名稱** 會成為存放庫中的節點名稱。
+      * 系統會根據標題自動產生，並根據 [AEM命名慣例。](/help/implementing/developing/introduction/naming-conventions.md)
       * 如有需要，可加以調整。
 
    ![建立資料夾](../assets/assets-folder-create.png)
 1. 透過將游標停留並點選核取記號來選擇剛建立的資料夾。然後從工具列中選擇&#x200B;**屬性** (或使用 `p`[ 鍵盤快速鍵。](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md))
 1. 在&#x200B;**屬性**&#x200B;視窗中，選擇&#x200B;**雲端服務**&#x200B;索引標籤。
 1. 對於&#x200B;**雲端設定**，選擇您之前建立的[設定。](create-configuration.md)
-
    ![設定資產資料夾](../assets/assets-folder-configure.png)
 1. 點選或按一下&#x200B;**儲存並關閉**。
 1. 點選或按一下&#x200B;**確定**。

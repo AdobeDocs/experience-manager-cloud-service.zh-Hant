@@ -4,10 +4,10 @@ description: 利用行動中心可輕鬆對事件和其他重要資訊採取行�
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
-workflow-type: ht
-source-wordcount: '705'
-ht-degree: 100%
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+workflow-type: tm+mt
+source-wordcount: '703'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ AEM as Cloud Service 在發生需要立即採取行動的嚴重事件時會傳�
 
 點擊&#x200B;**了解更多**&#x200B;連結可讓使用者導覽至本文，在該處參考下面[支援的通知類型表](#supported-notification-types) (提供採取何種動作的指引) 中的通知類型。
 
-在行動通知中心，您可以看到其他最近通知的清單。 建議您使用「動作」清單確認通知，以便向 Adobe 表明您的組織已了解該任務，並在稍後採取糾正措施後解決該通知。
+在行動通知中心，您可以看到其他最近通知的清單。 建議您使用「動作」清單，認可通知，以示出您的組織已知道此工作，並在之後採取更正動作時解決此通知。Adobe
 
 ![通知清單](/help/operations/assets/notification-list.png)
 

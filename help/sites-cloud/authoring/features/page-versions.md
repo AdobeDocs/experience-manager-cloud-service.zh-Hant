@@ -2,10 +2,10 @@
 title: 使用頁面版本
 description: 建立、比較和還原頁面的版本
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 5%
+source-wordcount: '1512'
+ht-degree: 4%
 
 ---
 
@@ -64,17 +64,17 @@ ht-degree: 5%
 
 * 此 **還原為此版本** 選項來自 [時間表](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) 邊欄
 
-   復原所選頁面的先前版本。
+  復原所選頁面的先前版本。
 
 * 此 **還原** 自上方的選項 [動作工具列](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
 
    * **還原版本**
 
-      在目前選取的資料夾中復原指定頁面的版本；這也可以包括復原先前已刪除的頁面。
+     在目前選取的資料夾中復原指定頁面的版本；這也可以包括復原先前已刪除的頁面。
 
    * **還原樹狀結構**
 
-      將整個樹狀結構恢復到指定的日期和時間的版本；這可以包括先前已刪除的頁面。
+     將整個樹狀結構恢復到指定的日期和時間的版本；這可以包括先前已刪除的頁面。
 
 >[!NOTE]
 >
@@ -83,11 +83,10 @@ ht-degree: 5%
 >舉例說明：
 >
 >1. 建立任何頁面的版本。
->1. 初始標籤和版本節點名稱將為1.0、1.1、1.2等。
+>1. 初始標籤和版本節點名稱是1.0、1.1、1.2等。
 >1. 恢復第一個版本；即1.0。
 >1. 再次建立新版本。
->1. 產生的標籤和節點名稱現在將為1.0.0、1.0.1、1.0.2等。
-
+>1. 產生的標籤和節點名稱現在是1.0.0、1.0.1、1.0.2，以此類推。
 
 ### 還原為版本 {#revert-to-a-version}
 
@@ -95,8 +94,8 @@ ht-degree: 5%
 
 1. 導覽以顯示您要回覆至先前版本的頁面。
 1. 選取中的頁面 [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. 開啟「時 **間軸** 」欄，然後選 **取「全部顯示** 」 **或「版本**」。將列出所選頁面的頁面版本。
-1. 選取您要還原的版本。 將顯示可能的選項：
+1. 開啟「時 **間軸** 」欄，然後選 **取「全部顯示** 」 **或「版本**」。系統會列出所選頁面的頁面版本。
+1. 選取您要還原的版本。 可能的選項如下所示：
 
    ![還原為此版本](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -115,11 +114,10 @@ ht-degree: 5%
    >如果：
    >* 您已選取從未有任何子頁面的單一頁面，
    >* 或資料夾中的任何頁面都沒有版本，
-
    >
    >則顯示將為空白，因為沒有適用的版本。
 
-1. 將會列出可用的版本：
+1. 列出可用的版本：
 
    ![還原版本 — 資料夾中所有頁面的清單](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
@@ -151,7 +149,7 @@ ht-degree: 5%
 
 1. 設定標幟 **保留的非版本化頁面** 視需要：
 
-   * 如果啟用（已選取），則任何非版本化頁面都將受到維護且不受還原影響。
+   * 如果啟用（選取），則會維護任何非版本化頁面，且不受還原影響。
 
    * 如果停用（未選取），則會移除任何非版本化頁面，因為這些頁面不存在於版本化樹狀結構中。
 
@@ -164,7 +162,7 @@ ht-degree: 5%
 1. 導覽以顯示您要比較的頁面。
 1. 選取中的頁面 [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. 開啟「時 **間軸** 」欄，然後選 **取「全部顯示** 」 **或「版本**」。
-1. 將會列出頁面版本。 選取您要預覽的版本：
+1. 會列出頁面版本。 選取您要預覽的版本：
 
    ![預覽版本](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -183,7 +181,7 @@ ht-degree: 5%
 1. 導覽以顯示您要比較的頁面。
 1. 選取中的頁面 [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. 開啟「時 **間軸** 」欄，然後選 **取「全部顯示** 」 **或「版本**」。
-1. 將會列出頁面版本。 選取您要比較的版本：
+1. 會列出頁面版本。 選取您要比較的版本：
 
    ![比較版本](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -197,7 +195,7 @@ ht-degree: 5%
 >
 >[時間扭曲也可以與啟動項搭配使用，以預覽未來情況。](/help/sites-cloud/authoring/launches/preview.md)
 
-由於內容建立是一項持續且協同合作的程式，因此時間扭曲的用途是讓作者追蹤已發佈網站在一段時間內的變化，以瞭解內容有何變更。 此功能使用頁面版本來判斷發佈環境的狀態。
+由於內容建立是一項持續且協同合作的程式，因此時間扭曲的用途是讓作者追蹤已發佈網站在一段時間內的變化，以便瞭解內容的變更。 此功能使用頁面版本來判斷發佈環境的狀態。
 
 若要這麼做：
 

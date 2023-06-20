@@ -2,9 +2,9 @@
 title: 建立和管理選件 (選件主控台)
 description: 使用「選件」主控台來建立您可在活動體驗中使用的選件
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: c27870c39da80d664f208d658994eec83a19589f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1393'
+source-wordcount: '1392'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,6 @@ A **轉換為體驗片段變數** 選項和工作流程已實作，以幫助您�
 >
 >* 此 **選件** 主控台將無法再使用。
 >* 任何其他受影響元件的工具列內的目標圖示將不再出現。
-
 
 1. 開啟包含優惠方案的頁面以進行編輯。
 
@@ -102,7 +101,7 @@ A **轉換為體驗片段變數** 選項和工作流程已實作，以幫助您�
 >
 >因此，建議的選項是使用體驗片段，而非此選項。
 
-若客戶已有舊版優惠方案，您可以 **使用優惠範本** 鎖定目標元件時，選項會顯示 **not** 體驗片段：
+若客戶已有舊版優惠方案，您可以 **使用優惠範本** 鎖定目標元件時，選項是可見的 **not** 體驗片段：
 
 ![轉換為體驗片段變數對話方塊](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 

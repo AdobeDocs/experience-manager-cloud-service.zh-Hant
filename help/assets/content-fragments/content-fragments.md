@@ -2,9 +2,9 @@
 title: 使用內容片段（資產 — 內容片段）
 description: 瞭解Adobe Experience Manager (AEM)as a Cloud Service中的內容片段如何讓您設計、建立、組織和使用獨立於頁面的內容，非常適合頁面製作和headless傳送。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2132'
 ht-degree: 4%
 
 ---
@@ -57,7 +57,6 @@ ht-degree: 4%
 >* [轉譯專用內容片段設定元件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API 內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [與內容片段搭配使用的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
-
 
 通訊管道的數量每年都在增加。 通常，管道是指傳遞機制，例如：
 
@@ -157,9 +156,9 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
    * 定義資產位置。
    * 另請參閱 [將資產插入片段](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) 在片段編輯器以瞭解更多資訊。
 
-   >[!NOTE]
-   >
-   >插入內容片段本身的視覺資產會附加至前段落。 將片段新增到頁面時，在新增中間內容時，這些資產會相對於該段落移動。
+  >[!NOTE]
+  >
+  >插入內容片段本身的視覺資產會附加至前段落。 將片段新增到頁面時，在新增中間內容時，這些資產會相對於該段落移動。
 
 * **相關聯的內容**
 
@@ -202,13 +201,13 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
    * 只能新增到多行文字元素（任何片段型別）。
    * 附於前文（段落）。
 
-      >[!CAUTION]
-      >
-      >切換為純文字格式，可以（無意中）從片段中移除資產。
+     >[!CAUTION]
+     >
+     >切換為純文字格式，可以（無意中）從片段中移除資產。
 
-      >[!NOTE]
-      >
-      >資產也可新增為 [其他（中間）內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) 在頁面上使用片段時；使用「資產」瀏覽器中的「關聯內容」或「資產」。
+     >[!NOTE]
+     >
+     >資產也可新增為 [其他（中間）內容](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) 在頁面上使用片段時；使用「資產」瀏覽器中的「關聯內容」或「資產」。
 
 * **相關聯的內容**
 
@@ -231,9 +230,9 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
          * 透過檢視/編輯片段 **屬性** 從主控台
          * 透過編輯 **中繼資料** 在片段編輯器中時
 
-   >[!CAUTION]
-   >
-   >中繼資料處理設定檔不適用於內容片段。
+  >[!CAUTION]
+  >
+  >中繼資料處理設定檔不適用於內容片段。
 
 * **主版**
 
@@ -241,9 +240,9 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
       * 每個內容片段都有一個Master例項。
       * 無法刪除主版。
+
    * 主版可在下的片段編輯器中存取 **[變數](/help/assets/content-fragments/content-fragments-variations.md)**.
    * 主版本身不是變數，而是所有變數的基礎。
-
 
 * **變數**
 
@@ -296,7 +295,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 ## 使用範例 {#example-usage}
 
-片段及其元素和變體可用於為多個管道建立一致的內容。 在設計片段時，您需要考慮將在何處使用的內容。
+片段及其元素和變體可用於為多個管道建立一致的內容。 在設計片段時，請考慮使用內容和位置。
 
 ### WKND範例 {#wknd-sample}
 
@@ -305,7 +304,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 WKND專案包括：
 
 * 內容片段模型可在以下位置取用：
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * 內容片段 (和其他內容) 可在以下位置取用：
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`

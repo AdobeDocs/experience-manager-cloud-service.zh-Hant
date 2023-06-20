@@ -2,9 +2,9 @@
 title: 為您的示範網站啟用AEM Screens
 description: 瞭解在您的示範網站上啟用完整AEM Screensas a Cloud Service體驗的步驟。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 8ee3de944290a917c320ad9aa4205b28ad1620bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2699'
+source-wordcount: '2696'
 ht-degree: 2%
 
 ---
@@ -90,7 +90,7 @@ We.Cafe位置有下列配置。
 
 ## 部署示範Screens專案 {#deploy-project}
 
-為了使用您在中建立的沙箱中的示範內容 [建立計畫](create-program.md) 步驟，必須根據範本建立網站。
+若要在您於建立的沙箱中使用示範內容 [建立計畫](create-program.md) 步驟，必須根據範本建立網站。
 
 如果您尚未建立We.Cafe示範網站，只需依照中的相同步驟操作 [建立示範網站](create-site.md) 區段。 選取範本時，只要選擇 **We.Cafe網站範本**.
 
@@ -207,7 +207,7 @@ We.Cafe位置有下列配置。
    }
    ```
 
-AEM Screens可使用此相同服務來存取模擬的天氣資料。 這將在下一個步驟中設定。
+AEM Screens可使用此相同服務來存取在下個步驟中設定的模擬天氣資料。
 
 ### 設定ContextHub {#configure-contexthub}
 

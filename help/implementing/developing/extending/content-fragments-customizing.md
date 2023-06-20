@@ -2,9 +2,9 @@
 title: 自訂和擴充內容片段
 description: 內容片段可擴充標準資產。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1808'
 ht-degree: 2%
 
 ---
@@ -32,13 +32,13 @@ ht-degree: 2%
 * 模型是資料型別的建置模型。
 * 新增新變數的函式等必須相應地更新片段。
 
-   >[!NOTE]
-   >
-   >若要顯示/轉譯內容片段，您的帳戶必須具備 `read` 模型的許可權。
+  >[!NOTE]
+  >
+  >若要顯示/轉譯內容片段，您的帳戶必須具備 `read` 模型的許可權。
 
-   >[!CAUTION]
-   >
-   >對現有內容片段模式所做的任何變更都可能影響相依片段，都可能導致這些片段中出現孤立屬性。
+  >[!CAUTION]
+  >
+  >對現有內容片段模式所做的任何變更都可能影響相依片段，都可能導致這些片段中出現孤立屬性。
 
 ### Sites與資產的整合 {#integration-of-sites-with-assets}
 
@@ -61,15 +61,14 @@ ht-degree: 2%
 * 所有內容都儲存在 `jcr:content/data` 資產節點：
 
    * 元素資料儲存在主子節點下：
-      `jcr:content/data/master`
+     `jcr:content/data/master`
 
    * 變數會儲存在具有變數名稱的子節點下：例如， `jcr:content/data/myvariation`
 
    * 每個元素的資料都會儲存在個別子節點中，作為具有元素名稱的屬性：例如element的內容 `text` 儲存為屬性 `text` 於 `jcr:content/data/master`
 
 * 中繼資料和相關內容儲存在下方 `jcr:content/metadata`
-除了標題和說明之外，這些不會視為傳統中繼資料並儲存在 
-`jcr:content`
+除了標題和說明之外，這些不會視為傳統中繼資料並儲存在 `jcr:content`
 
 #### 資產位置 {#asset-location}
 
@@ -129,24 +128,25 @@ ht-degree: 2%
 
 * **翻譯**
 
-   內容片段已完全與整合 [AEM翻譯工作流程](/help/sites-cloud/administering/translation/overview.md). 在架構層級，這表示：
+  內容片段已完全與整合 [AEM翻譯工作流程](/help/sites-cloud/administering/translation/overview.md). 在架構層級，這表示：
 
    * 內容片段的個別翻譯實際上是個別的片段；例如：
 
       * 它們位於不同的語言根下；但在相關語言根下共用完全相同的相對路徑：
 
-         `/content/dam/<path>/en/<to>/<fragment>`
+        `/content/dam/<path>/en/<to>/<fragment>`
 
-         與
+        與
 
-         `/content/dam/<path>/de/<to>/<fragment>`
+        `/content/dam/<path>/de/<to>/<fragment>`
+
    * 除了規則型路徑以外，內容片段的不同語言版本之間沒有進一步的連線；這些版本會作為兩個獨立的片段處理，雖然UI提供了在語言變體之間導覽的方法。
-   >[!NOTE]
-   >
-   >AEM翻譯工作流程適用於 `/content`：
-   >
-   >* 由於內容片段模型存放在 `/conf`，這些不會包含在這類翻譯中。 您可以國際化UI字串。
 
+  >[!NOTE]
+  >
+  >AEM翻譯工作流程適用於 `/content`：
+  >
+  >* 由於內容片段模型存放在 `/conf`，這些不會包含在這類翻譯中。 您可以國際化UI字串。
 
 * **中繼資料結構描述**
 
@@ -154,9 +154,9 @@ ht-degree: 2%
 
    * CFM提供專屬的特定結構描述：
 
-      `/libs/dam/content/schemaeditors/forms/contentfragment`
+     `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-      如有需要，可加以擴充。
+     如有需要，可加以擴充。
 
    * 個別結構表單已與片段編輯器整合。
 
@@ -176,9 +176,9 @@ ht-degree: 2%
 
 * **內容片段** ([內容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-   此介面可讓您以抽象方式處理內容片段。
+  此介面可讓您以抽象方式處理內容片段。
 
-   介面可讓您執行下列動作：
+  介面可讓您執行下列動作：
 
    * 管理基本資料（例如，取得名稱、取得/設定標題/說明）
    * 存取中繼資料
@@ -189,6 +189,7 @@ ht-degree: 2%
       * 建立新元素(請參閱 [注意事項](#caveats))
 
       * 存取元素資料(請參閱 `ContentElement`)
+
    * 為片段定義的清單變數
    * 建立全域的新變數
    * 管理關聯內容：
@@ -196,9 +197,10 @@ ht-degree: 2%
       * 清單集合
       * 新增集合
       * 移除集合
+
    * 存取片段的模型
 
-   代表片段主要元素的介面包括：
+  代表片段主要元素的介面包括：
 
    * **內容元素** ([內容元素](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
@@ -211,24 +213,20 @@ ht-degree: 2%
          * 建立新的變數(請參閱 [注意事項](#caveats))
          * 移除變數(請參閱 [注意事項](#caveats))
          * 存取變數資料(請參閱 `ContentVariation`)
+
       * 解決變異的捷徑（如果指定的變異不適用於某個元素，則套用一些其他實作特有的遞補邏輯）
+
    * **內容變數** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * 取得基本資料（名稱、標題、說明）
       * 取得/設定內容
       * 根據上次修改資訊的簡單同步處理
 
-   所有三個介面( `ContentFragment`， `ContentElement`， `ContentVariation`)擴充 `Versionable` 介面，新增內容片段所需的版本設定功能：
+  所有三個介面( `ContentFragment`， `ContentElement`， `ContentVariation`)擴充 `Versionable` 介面，新增內容片段所需的版本設定功能：
 
    * 建立元素的新版本
    * 列出元素的版本
    * 取得版本化元素的特定版本內容
-
-
-
-
-
-
 
 ### 調整 — 使用adaptTo() {#adapting-using-adaptto}
 
@@ -258,7 +256,7 @@ ht-degree: 2%
 
 * 可能需要額外努力的任務：
 
-   * 強烈建議從以下位置建立新的變數： `ContentFragment`. 這可確保所有元素都會共用此變數，並視需要更新適當的全域資料結構，以反映內容結構中新建立的變數。
+   * 強烈建議從以下位置建立新的變數： `ContentFragment`. 這可確保所有元素都共用此變數，並視需要更新適當的全域資料結構，以反映內容結構中新建立的變數。
 
    * 透過元素移除現有變數，使用 `ContentElement.removeVariation()`，不會更新指派給變數的全域資料結構。 若要確保這些資料結構保持同步，請使用 `ContentFragment.removeVariation()` 而是會從全域移除變數。
 
@@ -274,7 +272,7 @@ ht-degree: 2%
 
 * `filter.xml`
 
-   此 `filter.xml` 用於內容片段管理的設定使其不會與資產核心內容套件重疊。
+  此 `filter.xml` 用於內容片段管理的設定使其不會與資產核心內容套件重疊。
 
 ## 編輯工作階段 {#edit-sessions}
 

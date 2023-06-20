@@ -2,10 +2,10 @@
 title: 管理 SSL 憑證的簡介
 description: 了解 Cloud Manager 如何提供自助服務工具以安裝 SSL 憑證。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 79%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="管理 SSL 憑證"
->abstract="了解 Cloud Manager 如何提供自助服務工具來安裝和管理 SSL 憑證，從而為您的使用者保護您的網站。Cloud Manager 使用平台 TLS 服務來管理客戶擁有並從第三方憑證授權單位獲得的 SSL 憑證和私密金鑰。"
+>abstract="瞭解Cloud Manager如何提供自助服務工具來安裝和管理SSL憑證，從而為您的使用者保護您的網站。 Cloud Manager 使用平台 TLS 服務來管理客戶擁有並從第三方憑證授權單位獲得的 SSL 憑證和私密金鑰。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=zh-Hant" text="檢視、更新和取代 SSL 憑證"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=zh-Hant" text="檢查 SSL 憑證狀態"
 
-Cloud Manager 提供自助服務工具來安裝和管理 SSL 憑證，從而為您的使用者保護您的網站。Cloud Manager 使用平台 TLS 服務來管理客戶擁有並從第三方憑證授權單位 (例如 Let’s Encrypt) 獲得的 SSL 憑證和私密金鑰。
+Cloud Manager提供自助服務工具來安裝和管理SSL憑證，以便您能夠為使用者保護您的網站。 Cloud Manager使用平台TLS服務來管理客戶擁有並從第三方憑證授權單位（例如Let&#39;s Encrypt）獲得的SSL憑證和私密金鑰。
 
 ## 憑證簡介 {#certificates}
 
-企業使用 SSL 憑證來保護他們的網站，並讓他們的客戶信任他們。為了使用 SSL 協議，Web 伺服器需要使用 SSL 憑證。
+企業使用 SSL 憑證來保護他們的網站，並讓他們的客戶信任他們。若要使用SSL通訊協定，網頁伺服器需要使用SSL憑證。
 
-當實體向憑證授權單位要求憑證時，CA 會完成驗證計畫。這範圍包含從驗證網域名稱控制到收集公司註冊文件和訂閱協議。實體的資訊獲得驗證後，CA 將使用 CA 的私密金鑰簽署其公開金鑰。由於所有主要的憑證授權單位在 Web 瀏覽器中都有根憑證，因此實體的憑證將透過&#x200B;*信任鏈*&#x200B;連結，且網路瀏覽器會將其識別為受信任的憑證。
+當實體向憑證授權單位要求憑證時，CA 會完成驗證計畫。這範圍包含從驗證網域名稱控制到收集公司註冊文件和訂閱協議。實體的資訊獲得驗證後，CA 將使用 CA 的私密金鑰簽署其公開金鑰。由於所有主要的憑證授權單位在Web瀏覽器中都有根憑證，因此實體的憑證會透過 *信任鏈* 而且網頁瀏覽器會將其識別為受信任的憑證。
 
 >[!IMPORTANT]
 >
@@ -47,7 +47,7 @@ Cloud Manager 支援以下客戶 SSL 憑證使用選項。
 AEM as a Cloud Service 僅支援安全的 `https` 網站。
 
 * 擁有多個自訂網域的客戶不希望每次新增網域時都上傳憑證。
-* 這類客戶將能因獲得具有多個網域的憑證而受益。
+* 這類客戶可透過取得具有多個網域的憑證而獲益。
 
 ## 要求 {#requirements}
 

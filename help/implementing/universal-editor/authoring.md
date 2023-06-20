@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直觀。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 84%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## 簡介 {#introduction}
 
-Universal Editor 支援在任意實施中編輯任何方面的內容，以提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
+通用編輯器可讓您編輯任何實作中任何內容的任何方面，因此您可以提供卓越的體驗、提高內容速度，並提供一流的開發人員體驗。
 
 為此，它為內容作者提供了直觀的 UI，只需要一點培訓就能立即開始編輯內容。
 
@@ -29,7 +29,7 @@ Universal Editor 支援在任意實施中編輯任何方面的內容，以提供
 
 ## 準備應用程式 {#prepare-app}
 
-為了使用 Universal Editor 編寫應用程式的內容，應用程式必須由開發人員進行檢測以支援編輯器。
+若要使用通用編輯器為應用程式編寫內容，應用程式必須由開發人員檢測以支援編輯器。
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Universal Editor 支援在任意實施中編輯任何方面的內容，以提供
 
 一旦檢測到應用程式與 Universal Editor 一起使用，您將需要登入 Universal Editor。您需要 Adobe ID 才能登入和[存取 Universal Editor。](getting-started.md#request-access)
 
-登入後，請在[網址列中輸入要編輯頁面的 URL。](#address-bar)以開始[編輯內容。](#edit-content)
+登入後，請在中輸入您要編輯之頁面的URL [位址列。](#address-bar) 以便您開始 [編輯內容。](#edit-content)
 
 ## 了解 UI {#ui}
 
@@ -84,13 +84,13 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### 通知 {#notifications}
 
-此圖示將標有目前已分配的未完成[通知](/help/implementing/cloud-manager/notifications.md)數目。
+此圖示會加上目前指派的未完成專案之數目 [通知。](/help/implementing/cloud-manager/notifications.md)
 
 ![通知](assets/notifications.png)
 
 #### 使用者屬性 {#user-properties}
 
-點選或點擊代表您使用者的圖示以存取您的使用者設定。如果您沒有設定使用者圖片，則會隨機分配圖示。
+點選或點擊代表您使用者的圖示以存取您的使用者設定。如果您未設定使用者圖片，則會隨機指派圖示。
 
 ![使用者屬性](assets/user-properties.png)
 
@@ -132,7 +132,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 #### 發佈 {#publish}
 
-點選或點擊發佈按鈕，以即時發佈內容變更以供讀者使用。
+點選或按一下「發佈」按鈕，這樣您就可以將變更發佈到即時內容，以供讀者使用。
 
 ![發佈按鈕](assets/publish.png)
 
@@ -172,7 +172,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 ## 編輯內容 {#editing-content}
 
-編輯內容很簡單又直觀。在[編輯模式下](#edit-mode)，當您將滑鼠懸停在編輯器中的內容上時，可編輯的內容將以藍色框醒目顯示。
+編輯內容很簡單又直觀。在 [編輯模式，](#edit-mode) 當您將滑鼠移至編輯器中的內容時，可編輯的內容會以藍色方塊醒目提示。
 
 ![可編輯的內容會用藍色框醒目顯示](assets/editable-content.png)
 
@@ -192,7 +192,7 @@ Universal Editor 標頭始終顯示在畫面頂端，就在 [Experience Cloud �
 
 若要了解有關 Universal Editor 的詳細資訊，請參閱以下文件。
 
-* [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實施中編輯任何方面的內容，以提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
+* [通用編輯器簡介](introduction.md)  — 瞭解通用編輯器如何讓您編輯任何實作中任何內容的任何方面，以便提供卓越的體驗、提高內容速度並提供一流的開發人員體驗。
 * [使用 Universal Editor 發佈內容](publishing.md) - 了解 Universal Visual Editor 如何發佈內容，和您的應用程式如何處理發佈的內容。
 * [AEM 中 Universal Editor 快速入門](getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。

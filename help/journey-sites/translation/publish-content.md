@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 85%
+source-wordcount: '1361'
+ht-degree: 84%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 85%
 
 >[!TIP]
 >
->您可以在發佈時選取多個項目 (即多個語言資料夾)，以便一次發佈多個翻譯。
+>在發佈以一次發佈多個翻譯時，您可以選取多個專案（即多個語言資料夾）。
 
 發佈內容時還有其他選項可用，例如排程發佈時間，這不在本歷程的討論範圍內。如需更多資訊息，請參閱文件結尾處的[其他資源](#additional-resources)章節。
 

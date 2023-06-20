@@ -2,16 +2,16 @@
 title: SPA 中的複合元件
 description: 瞭解如何建立自己的複合元件，也就是由AEM單頁應用程式(SPA)編輯器運作的其他元件所組成的元件。
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '782'
 ht-degree: 1%
 
 ---
 
 # SPA 中的複合元件 {#composite-components-in-spas}
 
-複合元件可藉由將多個基本元件結合為單一元件，以運用AEM元件的模組化特性。 常見的複合元件使用案例是卡片元件，由影像和文字元件組合而成。
+複合元件可藉由將多個基本元件結合為單一元件，來使用AEM元件的模組化特性。 常見的複合元件使用案例是卡片元件，由影像和文字元件組合而成。
 
 在AEM單頁應用程式(SPA)編輯器架構中正確實作複合元件時，內容作者可以像拖放任何其他元件一樣拖放此類元件，但還是可以個別編輯組成複合元件的每個元件。
 
@@ -56,7 +56,7 @@ ht-degree: 1%
    export const AEMText = withMappable(Text, TextEditConfig); 
    ```
 
-文字元件將類似於以下內容。
+文字元件類似於以下內容。
 
 ```javascript
 import React from 'react';

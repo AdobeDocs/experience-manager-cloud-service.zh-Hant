@@ -2,9 +2,9 @@
 title: 為Adobe Experience Manager as a Cloud Service建立無障礙內容（符合WCAG 2.1）
 description: 使用AEMas a Cloud Service協助讓身心障礙人士存取及使用網路內容
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '13870'
+source-wordcount: '13864'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,6 @@ ht-degree: 3%
 >* 此 [WCAG 2.1指引的簡稱](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* 此 [WCAG 2.1指引中使用的編號](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) 以協助與WCAG網站進行交叉參照。
 
-
 ## 准則1：可感知 {#principle-perceivable}
 
 [准則1：可感知 — 資訊和使用者介面元件必須以使用者可感知的方式呈現給使用者。](https://www.w3.org/TR/WCAG/#perceivable)
@@ -73,6 +72,7 @@ ht-degree: 3%
 >[!NOTE]
 >
 >部分現成可用的核心元件 — 例如 **[輪播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)**  — 不提供 **替代文字** 用於新增替代文字說明至個別影像的欄位，不過 **標籤** 欄位(**[協助工具](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab)** 標籤)。
+>
 當針對您的AEM執行個體實作這些版本時，您的開發團隊必須設定這些元件以支援 `alt` 屬性。 這麼做可確保作者將其新增至內容(請參閱 [新增對其他HTML元素和屬性的支援](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
 
 AEM需要 **替代文字** 預設要填寫的欄位。 如果影像是純粹的裝飾且不需要替代文字，則 **裝飾性影像** 選項時可核取。
@@ -109,6 +109,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * 背景影像：這些影像是使用階層式樣式表(CSS)而不是HTML取得。 這表示無法指定替代文字值。 因此，背景影像不應提供重要的文字資訊，即便提供，頁面文字中也必須提供此資訊。 不過，當影像無法顯示時，請務必顯示替代背景。
 
 >[!NOTE]
+>
 背景和前景文字之間應該要有適當等級的對比，詳情請參閱 [對比（最小） (1.4.3)](#contrast-minimum).
 
 #### 更多資訊 — 非文字內容(1.1.1) {#more-information-non-text-content}
@@ -156,12 +157,15 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
    * 或是常用的音訊格式（例如MP3）中的對等音訊描述。
 
 >[!NOTE]
+>
 如果音訊或視訊內容是作為相同網頁上其他格式內容的替代內容提供，則可能不需要額外的替代內容。
+>
 准則， [瞭解WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)，提供進一步資訊。
 
 在AEM網頁中插入多媒體內容與插入影像類似。 不過，由於多媒體內容遠不止是靜態影像，因此有各種不同的設定和選項來控制多媒體的播放方式。
 
 >[!NOTE]
+>
 當您使用包含資訊內容的多媒體時，也必須建立替代內容的連結。 例如，若要包含文字記錄，請建立HTML頁面以顯示記錄，然後在音訊內容旁邊或下方新增連結。
 
 #### 更多資訊 — 純音訊和純視訊（預先錄製）(1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
@@ -297,7 +301,7 @@ c
 
 #### 用途 — 資訊和關係(1.3.1) {#purpose-info-and-relationships}
 
-殘障人士使用的許多輔助技術都仰賴結構資訊才能有效顯示或 *瞭解* 內容。 此結構資訊可以採用頁面標題、表格列和欄標題以及清單型別的形式。 例如，熒幕助讀程式可讓使用者在標題之間導覽頁面。 但是，當頁面內容似乎只有透過視覺樣式而非基礎HTML的結構時，則沒有可用於輔助技術的結構資訊，限制其支援更輕鬆瀏覽的能力。
+殘障人士使用的許多輔助技術都仰賴結構資訊來有效顯示或 *瞭解* 內容。 此結構資訊可以採用頁面標題、表格列和欄標題以及清單型別的形式。 例如，熒幕助讀程式可讓使用者在標題之間導覽頁面。 但是，當頁面內容似乎只有透過視覺樣式而非基礎HTML的結構時，則沒有可用於輔助技術的結構資訊，限制其支援更輕鬆瀏覽的能力。
 
 此成功標準旨在確保透過HTML或其他編碼技術以程式設計方式提供此類結構資訊，以便瀏覽器和輔助技術可存取並利用這些資訊。
 
@@ -313,9 +317,9 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
    * 元素 `<ul>` 用於無序 *列*  (項目符號) 清單。識別個別清單專案時，會使用 `<li>` 元素。 在RTE中，使用 **專案符號清單** 圖示。
    * 此 `<ol>` 元素用於 *編號* 清單。 識別個別清單專案時，會使用 `<li>` 元素。 在RTE中，使用 **編號清單** 圖示。
 
-   如果您想要將現有內容變更為特定清單型別，請反白適當的文字並選取適當的清單型別。 如同先前顯示如何輸入段落文字的範例一樣，適當的清單元素會自動新增至您的HTML。
+  如果您想要將現有內容變更為特定清單型別，請反白適當的文字並選取適當的清單型別。 如同先前顯示如何輸入段落文字的範例一樣，適當的清單元素會自動新增至您的HTML。
 
-   在全螢幕模式中，會顯示個別 **的「項目符號清單** 」和「 **** 編號清單」圖示。當未處於全螢幕模式時，單一「清單」圖示後面會提供這兩個 **選項** 。
+  在全螢幕模式中，會顯示個別 **的「項目符號清單** 」和「 **** 編號清單」圖示。當未處於全螢幕模式時，單一「清單」圖示後面會提供這兩個 **選項** 。
 
 * **表格**：資料表格必須使用HTML表格元素來識別：
    * 一 `<table>` 元素
@@ -323,71 +327,76 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
    * a `<th>` 每個列和欄標題的元素
    * a `<td>` 每個資料儲存格的元素
 
-   此外，可存取的表格會使用下列元素和屬性：
+  此外，可存取的表格會使用下列元素和屬性：
 
    * 此 `<caption>` 元素用於為表格提供可見的標題。 字幕預設會顯示在表格上方的中央，但可以使用CSS適當地放置字幕。 註解以程式設計方式與表格相關聯，因此是一種提供內容簡介的有用方法。
    * 此 `<summary>` 元素透過提供視力正常使用者可看到的內容的摘要，協助失明使用者更輕鬆地瞭解表格中顯示的資訊。 此工作流程在使用複雜或非常規表格佈局時相當實用（此屬性不會顯示在瀏覽器中，只會由輔助技術讀取）。
    * 此 `scope` 的屬性 `<th>` element用於指示儲存格是代表特定列的標題，還是代表特定欄的標題。 在複雜的表格中使用標題和ID屬性也是類似的方法，資料儲存格可能會與一個或多個標題相關聯。
 
-   >[!NOTE]
-   依預設，這些元素和屬性不直接可用，但系統管理員可以在以下位置新增對這些值的支援： **表格屬性** 對話方塊(請參閱 [新增對其他HTML元素和屬性的支援](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
+  >[!NOTE]
+  >
+  依預設，這些元素和屬性不直接可用，但系統管理員可以在以下位置新增對這些值的支援： **表格屬性** 對話方塊(請參閱 [新增對其他HTML元素和屬性的支援](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
 
-   若要開啟 **表格** 對話方塊，您可在其中選取 **表格屬性** 標籤：
+  若要開啟 **表格** 對話方塊，您可在其中選取 **表格屬性** 標籤：
 
    * 定義適當的 **註解**.
    * 理想情況下，請移除「寬 **度」、「邊框高度」、「邊框高度」、「邊框高度**」、「單元格間距」、「單元格間距 **」、「單元格**************&#x200B;間距」的預設值。因為這些屬性可以在全局樣式表中設定。
 
-   然後，您可以使用 **儲存格屬性** 若要選擇儲存格是資料或標題儲存格：
+  然後，您可以使用 **儲存格屬性** 若要選擇儲存格是資料或標題儲存格：
 
 * **強調**：使用 `<strong>` 或 `<em>` 表示強調的元素。 請勿使用標題來反白標示段落中的文字。
    * 反白您要強調的文字；
    * 按一下「屬性」面板中顯示的 **B** 表徵圖( `<strong>`for)或「屬性」面板中顯示 **的「I** 」表徵圖(for `<em>`)(請確定已選 **** 中HTML)。
 
-      >[!NOTE]
-      標準AEM安裝中的RTE設定為使用：
-      * `<b>` 代表 `<strong>`
-      * `<i>` 代表 `<em>`
-
-      兩者皆為有效相同，但 `<strong>` 和 `<em>` 比較好，因為它們的語義是正確的html。 您的開發團隊可以設定要使用的RTE `<strong>` 和 `<em>` (而非 `<b>` 和 `<i>`)。
+     >[!NOTE]
+     >
+     標準AEM安裝中的RTE設定為使用：
+     >
+     * `<b>` 代表 `<strong>`
+     * `<i>` 代表 `<em>`
+     >
+     兩者皆為有效相同，但 `<strong>` 和 `<em>` 比較好，因為它們的語義是正確的html。 您的開發團隊可以設定要使用的RTE `<strong>` 和 `<em>` (而非 `<b>` 和 `<i>`)。
 
 * **複雜資料表**：有時候，如果有具有兩個或多個標題層級的複雜表格，基本表格屬性可能不足以提供所有必要的結構資訊。 對於這些類型的複雜表格，需要使用header和 **id屬性在標題及其相關儲存格之間建** 立直 **接** 關係。
 
-   >[!NOTE]
-   ID屬性無法在現成可用的安裝中使用。 可透過設定HTML規則和RTE中的序列化程式來啟用。
+  >[!NOTE]
+  >
+  ID屬性無法在現成可用的安裝中使用。 可透過設定HTML規則和RTE中的序列化程式來啟用。
 
-   例如，在下表的標題和ID中，會對輔助技術使用者進行程式化關聯。
+  例如，在下表的標題和ID中，會對輔助技術使用者進行程式化關聯。
 
-   ```xml
-     <table>
-       <tr>
-         <th rowspan="2" id="h">Homework</th>
-         <th colspan="3" id="e">Exams</th>
-         <th colspan="3" id="p">Projects</th>
-       </tr>
-       <tr>
-         <th id="e1" headers="e">1</th>
-         <th id="e2" headers="e">2</th>
-         <th id="ef" headers="e">Final</th>
-         <th id="p1" headers="p">1</th>
-         <th id="p2" headers="p">2</th>
-         <th id="pf" headers="p">Final</th>
-       </tr>
-       <tr>
-         <td headers="h">15%</td>
-         <td headers="e e1">15%</td>
-         <td headers="e e2">15%</td>
-         <td headers="e ef">20%</td>
-         <td headers="p p1">10%</td>
-         <td headers="p p2">10%</td>
-         <td headers="p pf">15%</td>
-       </tr>
-     </table>
-   ```
+  ```xml
+    <table>
+      <tr>
+        <th rowspan="2" id="h">Homework</th>
+        <th colspan="3" id="e">Exams</th>
+        <th colspan="3" id="p">Projects</th>
+      </tr>
+      <tr>
+        <th id="e1" headers="e">1</th>
+        <th id="e2" headers="e">2</th>
+        <th id="ef" headers="e">Final</th>
+        <th id="p1" headers="p">1</th>
+        <th id="p2" headers="p">2</th>
+        <th id="pf" headers="p">Final</th>
+      </tr>
+      <tr>
+        <td headers="h">15%</td>
+        <td headers="e e1">15%</td>
+        <td headers="e e2">15%</td>
+        <td headers="e ef">20%</td>
+        <td headers="p p1">10%</td>
+        <td headers="p p2">10%</td>
+        <td headers="p pf">15%</td>
+      </tr>
+    </table>
+  ```
 
-   若要在AEM中達到此目的，請使用來源編輯模式直接新增標籤。
+  若要在AEM中達到此目的，請使用來源編輯模式直接新增標籤。
 
-   >[!NOTE]
-   在標準安裝中，此功能無法立即使用。 它需要設定RTE、HTML規則和序列化程式。
+  >[!NOTE]
+  >
+  在標準安裝中，此功能無法立即使用。 它需要設定RTE、HTML規則和序列化程式。
 
 #### 更多資訊 — 資訊和關係(1.3.1) {#more-information-info-and-relationships}
 
@@ -426,6 +435,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 同樣地，如果音訊內容沒有反映在任何替代文字中，需要區分不同聲音（例如，男性或女性講話的內容）的資訊會讓有聽覺障礙的人遇到協助工具障礙。
 
 >[!NOTE]
+>
 有關替代顏色的需求，請參閱 [使用顏色](#use-of-color).
 
 #### 如何達到標準 — 感官特性(1.3.3) {#how-to-meet-sensory-characteristics}
@@ -436,6 +446,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 * 請勿依賴文字樣式（例如粗體或斜體文字）作為傳遞資訊的唯一方式。
 
 >[!NOTE]
+>
 如果在非視覺內容中理解描述性辭彙的含義，則可以使用描述性詞語。 例如，使用 *以上* 和 *以下* 通常可以接受，因為它們分別表示特定內容專案之前和之後的內容；當朗讀內容時，這仍然有意義。
 
 #### 更多資訊 — 感官特性(1.3.3) {#more-information-sensory-characteristics}
@@ -454,6 +465,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 * 使用色彩：色彩不是傳達資訊、指示動作、提示回應或區分視覺元素的唯一視覺方式。
 
 >[!NOTE]
+>
 此成功標準特別針對色彩感知。 其他形式的認知包含在 [可調整(1.3)](#adaptable)；包括程式化存取顏色和其他視覺化簡報編碼。
 
 #### 用途 — 使用顏色(1.4.1) {#purpose-use-of-color}
@@ -492,6 +504,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 因此，使用者必須關閉背景音效。
 
 >[!NOTE]
+>
 控制音量包括能夠將音量減少到零。
 
 #### 如何達到標準 — 音訊控制(1.4.2) {#how-to-meet-audio-control}
@@ -512,8 +525,9 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
    * 附屬專案：文字或文字影像屬於非使用中使用者介面元件的一部分，也就是 [純裝飾](https://www.w3.org/TR/WCAG/#dfn-pure-decoration)對於任何人不可見，或屬於包含其他重要視覺內容之圖片的一部分的內容，則沒有對比度要求。
    * 圖志型別：屬於圖志或品牌名稱的文字沒有最低對比要求。
 
-   >[!NOTE]
-   另請參閱 [瞭解非文字對比](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) 如需進一步資訊，有助於確保內容作者瞭解非文字元素（包括圖示、介面元素等）的其他需求。
+  >[!NOTE]
+  >
+  另請參閱 [瞭解非文字對比](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) 如需進一步資訊，有助於確保內容作者瞭解非文字元素（包括圖示、介面元素等）的其他需求。
 
 #### 用途 — 對比（最小） (1.4.3) {#purpose-contrast-minimum}
 
@@ -523,6 +537,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 * 文字（例如連結文字和非連結文字）的色彩編碼對於辨別資訊非常重要。
 
 >[!NOTE]
+>
 純粹用於裝飾目的的文字會從此成功標準中排除。
 
 #### 如何達到標準 — 對比（最小） (1.4.3) {#how-to-meet-contrast-minimum}
@@ -534,15 +549,18 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 * 如果陣列化背景，則任何文字周圍的背景都應著色，以保持4.5:1或3:1的比例。
 
 >[!NOTE]
+>
 請記住，字型在呈現等同的PT/PX/EM大小的方式上可能有所不同。
+>
 為網頁內容選擇適當的字型和大小時，請在可讀性和可用性方面做出良好的判斷和錯誤。
 
 >[!NOTE]
+>
 對下列短語執行網路搜尋，以尋找可協助您轉換為其他單位的工具：
+>
 * Px到Em電腦 <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
 * 字型大小轉換： pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
 * 畫素至EM轉換器 <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
-
 
 若要檢查對比率，請使用顏色對比工具，例如 [Paciello Group色彩對比分析器](https://www.tpgi.com/resources/contrast-analyser.html) 或 [WebAIM色彩對比檢查程式](https://webaim.org/resources/contrastchecker/). 這些工具可讓您檢查顏色配對，並報告任何對比問題。
 
@@ -583,6 +601,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
    * 基本：文字的特定呈現方式對於傳遞的資訊至關重要。
 
 >[!NOTE]
+>
 標誌型別（屬於標誌或品牌名稱的文字）被認為是必要的。
 
 #### 用途 — 文字影像(1.4.5) {#purpose-images-of-text}
@@ -641,7 +660,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 如何達到標準 — 無鍵盤陷阱(2.1.2) {#how-to-meet-no-keyboard-trap}
 
-請遵循以下准則： [如何達到成功標準2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap).
+遵循以下准則： [如何達到成功標準2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap).
 
 #### 更多資訊 — 無鍵盤陷阱(2.1.2) {#more-information-no-keyboard-trap}
 
@@ -666,7 +685,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 如何達到標準 — 計時可調(2.2.1) {#how-to-meet-timing-adjustable}
 
-遵循以下准則： [如何達到成功標準2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable).
+請遵循以下准則： [如何達到成功標準2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable).
 
 #### 更多資訊 — 計時可調(2.2.1) {#more-information-timing-adjustable}
 
@@ -718,6 +737,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 * 三次Flash或低於臨界值：網頁不包含任何在任何一秒期間內閃光超過三次的內容，或是閃光低於一般閃光和紅色閃光臨界值。
 
 >[!NOTE]
+>
 由於任何不符合此成功標準的內容都會干擾使用者使用整個頁面的能力，因此網頁上的所有內容（無論是否用於滿足其他成功標準）都必須符合此成功標準。 另請參閱 [一致性需求5：不干涉](https://www.w3.org/TR/WCAG/#cc5).
 
 #### 用途 — 三個Flash或低於臨界值(2.3.1) {#purpose-three-flashes-or-below-threshold}
@@ -754,7 +774,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 如何達到標準 — 略過區塊(2.4.1) {#how-to-meet-bypass-blocks}
 
-遵循以下准則： [如何達到成功標準2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks).
+請遵循以下准則： [如何達到成功標準2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks).
 
 #### 更多資訊 — 略過區塊(2.4.1) {#more-information-bypass-blocks}
 
@@ -844,6 +864,7 @@ John Smith's publications
 ```
 
 >[!NOTE]
+>
 以上代碼片段僅供說明之用，建議您使用 **影像** 元件。
 
 雖然建議您提供不需要額外內容即可識別連結目的的連結文字，但您並不一定能達成此目的。 與上下文無關的連結可用於以下情況，其HTML範例可在以下網址找到： [如何達到成功標準2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
@@ -900,7 +921,7 @@ John Smith's publications
 
 #### 如何達到標準 — 標題和標籤(2.4.6) {#how-to-meet-headings-and-labels}
 
-遵循以下准則： [如何達到成功標準2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels).
+請遵循以下准則： [如何達到成功標準2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels).
 
 #### 更多資訊 — 標題和標籤(2.4.6) {#more-information-headings-and-labels}
 
@@ -923,7 +944,7 @@ John Smith's publications
 
 #### 如何達到標準 — 焦點可見(2.4.7) {#how-to-meet-focus-visible}
 
-請遵循以下准則： [如何達到成功標準2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible).
+遵循以下准則： [如何達到成功標準2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible).
 
 #### 更多資訊 — 焦點可見(2.4.7) {#more-information-focus-visible}
 
@@ -953,14 +974,15 @@ John Smith's publications
 為達到此成功標準，可使用以下識別網頁的預設語言 `lang` 內的屬性 `<html>` 元素。 例如：
 
 * 如果頁面是以英文撰寫， `<html>` 元素應為：
-   `<html lang = "en">`
+  `<html lang = "en">`
 
 * 而要以西班牙文轉譯的頁面應採用下列標準：
-   `<html lang = "es">`
+  `<html lang = "es">`
 
 在AEM中，您的頁面預設語言是在建立頁面時設定，但在編輯時也可以變更 [頁面屬性](/help/sites-cloud/authoring/fundamentals/page-properties.md).
 
 >[!NOTE]
+>
 AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-us、英式英文 — en-gb和加拿大英文 — en-ca。 這種詳細程度對於輔助型技術來說通常是多餘的，不過可用於頁面內容中的區域變異。
 
 #### 更多資訊 — 頁面語言(3.1.1) {#more-information-language-of-page}
@@ -996,6 +1018,7 @@ AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-
 ```
 
 >[!NOTE]
+>
 現成可用的執行個體不支援區塊引號。 可開發自訂元件以支援該功能。
 
 同樣地，如果 `span` 元素的使用方式如下：
@@ -1005,6 +1028,7 @@ AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-
 ```
 
 >[!NOTE]
+>
 納入不同語言的人名或城市，或使用在預設語言中變得常見的外來字詞或短語時(例如 *幸災樂禍* （英文版）。
 
 若要使用適當的語言新增span元素，您可以在RTE的來源編輯模式中手動編輯HTML標籤，使其顯示如上所示。 或者 `lang` 屬性可由系統管理員包含在RTE中(請參閱 [新增對其他HTML元素和屬性的支援](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
@@ -1038,7 +1062,7 @@ AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-
 
 #### 如何達到標準 — 聚焦(3.2.1) {#how-to-meet-on-focus}
 
-遵循以下准則： [如何達到成功標準3.2.1](https://www.w3.org/WAI/WCAG21/quickref/#on-focus).
+請遵循以下准則： [如何達到成功標準3.2.1](https://www.w3.org/WAI/WCAG21/quickref/#on-focus).
 
 #### 更多資訊 — 聚焦(3.2.1) {#more-information-on-focus}
 
@@ -1057,7 +1081,7 @@ AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-
 
 #### 如何達到標準 — 輸入(3.2.2) {#how-to-meet-on-input}
 
-遵循以下准則： [如何達到成功標準3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input).
+請遵循以下准則： [如何達到成功標準3.2.2](https://www.w3.org/WAI/WCAG21/quickref/#on-input).
 
 #### 更多資訊 — 輸入(3.2.2) {#more-information-on-input}
 
@@ -1138,7 +1162,7 @@ AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-
 
 #### 如何達到標準 — 錯誤識別(3.3.1) {#how-to-meet-error-identification}
 
-遵循以下准則： [如何達到成功標準3.3.1](https://www.w3.org/WAI/WCAG21/quickref/#error-identification).
+請遵循以下准則： [如何達到成功標準3.3.1](https://www.w3.org/WAI/WCAG21/quickref/#error-identification).
 
 #### 更多資訊 — 錯誤識別(3.3.1) {#more-information-error-identification}
 
@@ -1265,7 +1289,7 @@ AEM針對根語言的變體提供進一步微調；例如，美式英文 — en-
 
 #### 如何達到標準 — 剖析(4.1.1) {#how-to-meet-parsing}
 
-遵循以下准則： [如何達到成功標準4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing).
+請遵循以下准則： [如何達到成功標準4.1.1](https://www.w3.org/WAI/WCAG21/quickref/#parsing).
 
 #### 更多資訊 — 剖析(4.1.1) {#more-information-parsing}
 

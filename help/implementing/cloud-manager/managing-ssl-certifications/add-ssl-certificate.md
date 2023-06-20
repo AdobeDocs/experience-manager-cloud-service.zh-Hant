@@ -2,10 +2,10 @@
 title: 正在新增 SSL 憑證
 description: 了解如何使用 Cloud Manager 的自助服務工具新增您自己的 SSL 憑證。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: d0d4b22cdca02d81ca755e4045ffccb110739303
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 100%
+source-wordcount: '574'
+ht-degree: 86%
 
 ---
 
@@ -25,21 +25,21 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM �
 
 * 將 PFX 轉換為 PEM
 
-   ```shell
-   openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
-   ```
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
 
 * 將 P7B 轉換為 PEM
 
-   ```shell
-   openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
-   ```
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
 
 * 將 DER 轉換為 PEM
 
-   ```shell
-   openssl x509 -inform der -in certificate.cer -out certificate.pem
-   ```
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## 正在新增憑證 {#adding-a-cert}
 
@@ -49,7 +49,7 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM �
 
 1. 從&#x200B;**概覽**&#x200B;頁面瀏覽&#x200B;**環境**&#x200B;畫面。
 
-1. 從瀏覽面板點擊 **SSL 憑證**。包含任何現有 SSL 憑證詳細資訊的表格將顯示在主畫面上。
+1. 從瀏覽面板點擊 **SSL 憑證**。包含任何現有SSL憑證詳細資訊的表格會顯示在主畫面上。
 
    ![新增 SSL 憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
@@ -61,10 +61,9 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM �
 
    ![新增憑證對話方塊](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * 將顯示偵測到的任何錯誤。
+   * 系統會顯示偵測到的任何錯誤。
       * 您必須先解決所有錯誤，然後才能保存您的憑證。
       * 請參閱[憑證錯誤](#certificate-errors)部分以了解有關解決常見錯誤的更多資訊。
-
 
 1. 點擊&#x200B;**儲存**&#x200B;來儲存您的憑證。
 
@@ -74,7 +73,7 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM �
 
 >[!NOTE]
 >
->使用者必須是 **商務擁有者** 的成員或&#x200B;**部署管理員**&#x200B;職務，在 Cloud Manager 中安裝 SSL 憑證。
+>使用者必須是 **業務負責人** 或 **部署管理員** 在Cloud Manager中安裝SSL憑證的角色。
 
 ## 憑證錯誤 {#certificate-errors}
 
@@ -154,7 +153,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->這兩個命令的輸出必須完全相同。如果您找不到匹配的私鑰`main/server`憑證，您將需要透過生成新的 CSR 和/或向您的 SSL 供應商請求更新的憑證來重新加密憑證。
+>這兩個命令的輸出必須完全相同。如果您找不到符合的私密金鑰， `main/server` 憑證，您需要透過產生新的CSR和/或向SSL供應商請求更新的憑證來重新加密憑證。
 
 ### 憑證有效期 {#certificate-validity-dates}
 

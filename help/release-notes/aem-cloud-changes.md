@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 description: Adobe Experience Manager (AEM) as a Cloud Service 重大變更
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 100%
+source-wordcount: '845'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,6 @@ AEM Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許多可
 >* [AEM Sites as a Cloud Service 重大變更](/help/sites-cloud/sites-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 
-
 主要差異在於以下方面：
 
 * [/apps 和 /libs 在執行階段不可修改](#apps-libs-immutable)
@@ -50,7 +49,7 @@ AEM Cloud Service 提供許多管理 AEM 專案的新功能，並帶來許多可
 
 ## /apps 和 /libs 在執行階段不可修改 {#apps-libs-immutable}
 
-`/apps` 和 `/libs` 中的所有內容和子資料夾均為唯讀。任何預期能變更的功能或自訂程式碼都將無法變更。系統會傳回此類內容為唯讀、寫入作業無法完成的錯誤。AEM 的許多地方都會受到影響：
+`/apps` 和 `/libs` 中的所有內容和子資料夾均為唯讀。任何預期能變更的功能或自訂程式碼都將無法變更。傳回此類內容為唯讀且寫入作業無法完成的錯誤。 AEM 的許多地方都會受到影響：
 
 * 完全禁止變更 `/libs`。
    * 這不是新規則，但內部部署的舊版 AEM 並未強制執行此規則。

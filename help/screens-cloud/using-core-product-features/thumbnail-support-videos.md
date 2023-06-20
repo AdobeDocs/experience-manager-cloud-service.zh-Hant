@@ -3,9 +3,9 @@ title: Screensas a Cloud Service提供影片的縮圖支援
 description: 本頁面說明如何在Screensas a Cloud Service新增影片的縮圖支援。
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -62,13 +62,13 @@ ht-degree: 1%
 
 1. 按一下 **預覽**.
 
-1. 如果元件上設定了視訊，則視訊將會播放。 如果沒有，且縮圖已設定，則會播放縮圖。 否則，會視為未設定元件，並將略過該元件。
+1. 如果元件上設定了視訊，則會播放視訊。 如果沒有，且已設定縮圖，則會播放縮圖。 否則，會視為未設定元件並略過該元件。
 
 ## 在視訊中使用縮圖時支援的使用案例 {#understand-use-case}
 
 影片中的縮圖支援下列使用案例：
 
-* 未設定任何專案的視訊元件將被跳過。
+* 未設定任何專案的視訊元件會跳過。
 
 * 只有縮圖集的視訊元件將會播放縮圖。
 

@@ -2,9 +2,9 @@
 title: 實施階段
 description: 確定您的程式碼和內容已準備好移轉至雲端
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2353'
+source-wordcount: '2337'
 ht-degree: 9%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 9%
 
 * 向您介紹Cloud Manager，AEM持續整合和傳送架構，用於部署計畫碼到AEMas a Cloud Service
 * 透過內容轉移工具，讓您快速上手
-* 說明為了將您的程式碼現代化，以便用於AEMas a Cloud Service而必須使用的程式碼重構工具
+* 說明您必須使用的程式碼重構工具，以便針對AEMas a Cloud Service匯入最新的程式碼
 
 ## 使用 Cloud Manager {#using-cloud-manager}
 
@@ -49,7 +49,7 @@ Cloud Manager 可讓組織在雲端中自行管理 AEM。其內容包含持續�
 
 ![影像](/help/journey-migration/assets/exec-image1.png)
 
-我們將在以下章節中開始詳細說明您需要使用的工具，以便達成此目標。
+我們將在以下章節開始詳細說明您必須使用的工具，以便您達成此目標。
 
 ## 內容移轉 {#content-migration}
 
@@ -67,7 +67,7 @@ Cloud Manager 可讓組織在雲端中自行管理 AEM。其內容包含持續�
 
 現在應該開始重構現有功能，使其與Cloud Services相容。
 
-為了執行此操作，您需要檢視檔案，詳細說明您將需要開始重構程式碼的基本工具：
+首先，檢視詳細說明基本刀具的檔案，然後開始重構您的程式碼：
 
 
 * 在規劃期間，建議您列出必須重構才能與AEMas a Cloud Service相容的區域。 您可以檢閱 [開發准則](/help/implementing/developing/introduction/development-guidelines.md) 瞭解更多有關如何重構和最佳化程式碼以進行Cloud Service的詳細資訊。
@@ -79,11 +79,11 @@ Cloud Manager 可讓組織在雲端中自行管理 AEM。其內容包含持續�
 
 * 觀看此影片以瞭解如何在本機安裝Dispatcher SDK：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+  >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * 觀看此影片以瞭解如何設定Dispatcher SDK：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### 心態改變 {#a-change-in-mindset}
 
@@ -163,7 +163,7 @@ Cloud Manager管道支援執行針對預備環境執行的測試。
 
 <!-- Alexandru: hiding this for now
 
-One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 
 -->
 
@@ -177,8 +177,8 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 | 移轉反複專案 | 開始日期 | 預估結束日期 | 相依性 | 估計持續時間（以天為單位） | 其他明細/行動專案 |
 |---|---|---|---|---|---|
-| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |  |  |  |  |  |
-| PRDCLONE-PUBLISH-TOP-UP-CSSTAGE-AUTHOR |  |  |  |  |  |
+| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
+| PRDCLONE-PUBLISH-TOP-UP-CSSTAGE-AUTHOR |   |   |   |   |   |
 
 如上表所示，遵循特定命名格式來識別移轉反複專案很有幫助，例如： **PRDCLONE** 對於來源AEM環境， **AUTHOR/PUBLISH** 針對AEMas a Cloud Service環境， **CSSTAGE-AUTHOR** AEMas a Cloud Service執行個體，依此類推。
 
@@ -209,7 +209,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 | 來源（環境/執行個體/URL） | 目的地（環境/執行個體/URL） | 移轉集名稱、型別（初始或追加） | 移轉集大小(MB) | 使用者對應（是/否） | 擷取持續時間（開始、結束、所用時間） | 擷取持續時間（開始、結束、花費時間） | 問題/解決方案/詳細資料 |
 |---|---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |  |
+|   |   |   |   |   |   |   |   |
 
 ## 內容移轉策略和時間表 {#content-strategyand-timeline}
 
@@ -241,7 +241,7 @@ One more important datapoint is the amount of time it takes to complete the [use
    * 位於相同的網路區域
    * 將提供使用者和群組等生產內容
    * 復製作者和發佈 — 若是叢集或發佈伺服器陣列，則各一個節點
-* 選擇要移轉的內容子集，以便：
+* 選擇已移轉內容的子集，以便：
    * 它是所有可用內容型別的組合
    * 包含所有使用者和群組
 * 包含25%的內容或最高1 TB的內容（以較少者為準）。

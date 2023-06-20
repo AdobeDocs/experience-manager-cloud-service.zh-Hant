@@ -2,10 +2,10 @@
 title: 了解如何在 AEM 中建立內容片段模型
 description: 了解使用內容片段模型建立 Headless CMS 內容模型的概念和機制。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 選取此選項後，導覽到模型的位置並選取&#x200B;**建立**。您可以在此處輸入各種關鍵詳細資料。
 
-依預設，**啟用模型**&#x200B;會啟動。這表示模型儲存後立即可供使用 (用於建立內容片段)。如果需要可以停用 - 之後有機會可啟用 (或停用) 現有模型。
+依預設，**啟用模型**&#x200B;會啟動。這表示儲存模型後，您就可以立即使用（在建立內容片段中）。 如果需要可以停用 - 之後有機會可啟用 (或停用) 現有模型。
 
 ![建立內容片段模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -96,7 +96,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 >[!NOTE]
 >
->如果作者嘗試發佈模型尚未發佈的內容片段，選取清單將指出此情況，並且模型將與片段一起發佈。
+>如果作者嘗試發佈模型尚未發佈的內容片段，選擇清單會指出這一點，模型會與片段一起發佈。
 
 一旦模型發佈，就會被&#x200B;*鎖定*&#x200B;成作者的唯讀模式。這旨在防止可能導致現有 GraphQL 模式和查詢錯誤的變更，尤其是在發佈環境。它在主控台中顯示為&#x200B;**鎖定**。
 

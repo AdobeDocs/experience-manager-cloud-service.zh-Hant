@@ -2,10 +2,10 @@
 title: 編輯頁面屬性
 description: 定義頁面的必要屬性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2363'
-ht-degree: 7%
+source-wordcount: '2357'
+ht-degree: 6%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 7%
 
 * **品牌化**
 
-   藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 若要使用此功能，需使用2.14.0版或更新版本的頁面元件， [核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+  藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 若要使用此功能，需使用2.14.0版或更新版本的頁面元件， [核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
    * **品牌概要**
 
@@ -57,42 +57,40 @@ ht-degree: 7%
 
 * **開啟/關閉時間**
 
-   >[!NOTE]
-   >
-   > 另請參閱 [開啟和關閉時間 — 觸發器設定](/help/operations/replication.md#on-and-off-times-trigger-configuration) 以取得如何設定相關自動復寫功能的詳細資訊。
+  >[!NOTE]
+  >
+  > 另請參閱 [開啟和關閉時間 — 觸發器設定](/help/operations/replication.md#on-and-off-times-trigger-configuration) 以取得如何設定相關自動復寫功能的詳細資訊。
 
-   >[!NOTE]
-   >如果 **準時** 或 **關閉時間** 是過去的時間，且已設定自動復寫，則會立即觸發相關動作。
+  >[!NOTE]
+  >如果 **準時** 或 **關閉時間** 是過去的時間，且已設定自動復寫，則會立即觸發相關動作。
 
    * **準時**  — 已發佈頁面在發佈環境中可見（轉譯）的日期和時間。 頁面必須以手動方式或預先設定的自動復寫方式發佈。
 
       * 若已 [已發佈（手動）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 此頁面將保持隱匿（隱藏）狀態，直到在指定時間才呈現。
       * 如果未發佈並設定為自動復寫，則頁面將在指定的時間自動發佈，然後呈現。
       * 如果未發佈且未設定為自動復寫，則不會自動發佈頁面，因此在嘗試存取該頁面時將會顯示404。
+
    * **關閉時間**  — 類似於，且經常與 **準時**，這會定義發佈頁面在發佈環境中隱藏的時間。
 
    * 保留這些欄位(**準時** 和 **關閉時間**)空白適用於您要立即發佈的頁面，且可在發佈環境中使用，直到頁面停用（一般情況）。
-
 
 * **虛名 URL**
 
    * 可讓您輸入此頁面的虛名URL，這可以讓您有較短和/或較具表現力的URL。
    * 例如，如果虛名URL設為 `welcome` 至路徑所識別的頁面 `/v1.0/startpage` 適用於網站 `http://example.com`，則 `http://example.com/welcome` 會是虛名URL `http://example.com/content/v1.0/startpage`
 
-   >[!CAUTION]
-   >
-   >虛名 URL:
-   >
-   >* 必須是唯一的，因此您應該注意該值尚未被其他頁面使用。
-   >* 不支援規則運算式模式。
-   >* 不應設定為現有頁面。
-
+  >[!CAUTION]
+  >
+  >虛名 URL:
+  >
+  >* 必須是唯一的，因此您應該注意該值尚未被其他頁面使用。
+  >* 不支援規則運算式模式。
+  >* 不應設定為現有頁面。
 
    * **新增**  — 點選或按一下以顯示欄位，以定義頁面的虛名URL。
       * 再點選或按一下以新增多個。
       * 點選或按一下 **移除** 圖示來刪除虛名URL。
    * **重新導向虛名URL**  — 指出您是否希望頁面使用虛名URL。
-
 
 ### 進階 {#advanced}
 
@@ -123,9 +121,9 @@ ht-degree: 7%
 
    * **啟用**  — 允許使用驗證來存取頁面
 
-      >[!NOTE]
-      >
-      >已關閉的使用者群組定義於 **[許可權](#permissions)** 標籤。
+     >[!NOTE]
+     >
+     >已關閉的使用者群組定義於 **[許可權](#permissions)** 標籤。
 
    * **登入頁面**  — 用於登入的頁面
 
@@ -139,9 +137,9 @@ ht-degree: 7%
 
    * **Robots標籤**  — 選取robots標籤來控制搜尋引擎編目程式的行為。
 
-      >[!NOTE]
-      >
-      >有些選項會相互衝突。 發生衝突時，以更寬鬆的選項優先。
+     >[!NOTE]
+     >
+     >有些選項會相互衝突。 發生衝突時，以更寬鬆的選項優先。
 
    * **產生Sitemap**  — 選取後，將會為此頁面及其子系產生sitemap.xml
 
@@ -149,11 +147,11 @@ ht-degree: 7%
 
 * **精選影像**
 
-   選取並設定要精選的影像。 這用於參考頁面的元件中；例如，Teaser、頁面清單等。
+  選取並設定要精選的影像。 這用於參考頁面的元件中；例如，Teaser、頁面清單等。
 
    * **影像**
 
-      您可以 **選取** 資產，或瀏覽要上傳的檔案，然後 **編輯**，或 **清除**.
+     您可以 **選取** 資產，或瀏覽要上傳的檔案，然後 **編輯**，或 **清除**.
 
    * **替代文字**  — 用來代表影像含義和/或功能的文字；例如，供熒幕閱讀器使用。
 
@@ -161,7 +159,7 @@ ht-degree: 7%
 
 * **縮圖**
 
-   設定頁面縮圖
+  設定頁面縮圖
 
    * **產生預覽**  — 產生頁面預覽以用作縮圖
    * **上傳影像**  — 上傳要當作縮圖的影像
@@ -184,8 +182,9 @@ ht-degree: 7%
 * **定位組態**
 
    * **品牌**  — 定義 [品牌以指定目標定位的範圍](/help/sites-cloud/authoring/personalization/targeted-content.md).
-   >[!NOTE]
-   >此選項要求使用者帳戶位於 `Target Administrators`群組。
+
+  >[!NOTE]
+  >此選項要求使用者帳戶位於 `Target Administrators`群組。
 
 ### 權限 {#permissions}
 
@@ -224,7 +223,7 @@ ht-degree: 7%
 
    * **即時副本繼承**  — 如果勾選，即時副本設定將在所有子項上都有效
    * **從父項繼承轉出設定**  — 如果勾選，轉出設定會繼承自頁面的父頁面
-   * **選擇轉出設定**  — 定義從Blueprint傳播修改的情況，且僅在以下情況下可用 **從父項繼承轉出設定** 未選取
+   * **選擇轉出設定**  — 定義從Blueprint傳播修改的情況，且僅適用於 **從父項繼承轉出設定** 未選取
 
 ### 預覽 {#preview}
 
@@ -277,7 +276,7 @@ ht-degree: 7%
 1. 選取 **屬性** 選項供需要的頁面使用，請使用：
    * [快速動作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
-   * 將會使用適當的索引標籤來顯示頁面屬性。
+   * 頁面屬性會使用適當的索引標籤顯示。
 1. 視需要檢視或編輯屬性。
 1. 然後使用 **儲存** 儲存您的更新，然後按 **關閉** 以返回主控台。
 
@@ -313,7 +312,7 @@ ht-degree: 7%
 * 瀏覽 **網站** 主控台
 * 使用後 **搜尋** 尋找一組頁面
 
-選取頁面，然後按一下或點選「屬 **性」選項**，就會顯示大量屬性：
+選取頁面，然後按一下或點選 **屬性選項**，則會顯示大量屬性：
 
 ![大量編輯頁面屬性](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -342,6 +341,6 @@ ht-degree: 7%
 * **編輯**
 
    * 您可以更新可用欄位中的值。
-      * 當您選取時，新值將會套用至所有選取的頁面 **完成**.
+      * 當您選取時，新值會套用至所有選取的頁面 **完成**.
       * 當欄位有多個值時（例如「標籤」），您可以附加新值或移除通用值。
-   * 如果欄位很常見，但不同頁面中的值不同，則會以特殊值（例如文字）標示 `<Mixed Entries>`.
+   * 不同頁面中通用但值不同的欄位會以特殊值（例如文字）表示 `<Mixed Entries>`.

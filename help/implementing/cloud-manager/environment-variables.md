@@ -2,10 +2,10 @@
 title: Cloud Manager 環境變數
 description: 標準環境變數可以透過 Cloud Manager 進行設定和管理，並提供給執行階段環境，用於 OSGi 設定。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 774a27e78abf091d96978911deea945ac35b7a44
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 100%
+source-wordcount: '1016'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->您必須是 [**Deployment Manager** 角色](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)的成員才能新增或修改環境變數。
+>您必須是 [**部署管理員** 角色](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) 以新增或修改環境變數。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Adobe Cloud Manager。
 1. Cloud Manager 列出了可用的各種計畫。選擇您要管理的計畫。
@@ -59,7 +59,7 @@ ht-degree: 100%
 
 1. 選取「**儲存**」以儲存變數。
 
-具有&#x200B;**更新**&#x200B;狀態的指示器會顯示在表格頂端和新增的變數旁邊，表示正在使用設定更新環境。完成後，新的環境變數將顯示在表格中。
+具有&#x200B;**更新**&#x200B;狀態的指示器會顯示在表格頂端和新增的變數旁邊，表示正在使用設定更新環境。完成後，新的環境變數會顯示在表格中。
 
 ![更新變數](assets/updating-variables.png)
 
@@ -90,7 +90,7 @@ ht-degree: 100%
 
 1. 完成所有必需的設定變更後，選擇&#x200B;**儲存**。
 
-[新增變數時](#add-variables)，具有&#x200B;**更新**&#x200B;狀態的指示器會顯示在表格頂端和更新的變數旁邊，表示正在使用設定更新環境。完成後，更新的環境變數將顯示在表格中。
+[新增變數時](#add-variables)，具有&#x200B;**更新**&#x200B;狀態的指示器會顯示在表格頂端和更新的變數旁邊，表示正在使用設定更新環境。完成後，更新的環境變數會顯示在表格中。
 
 >[!TIP]
 >

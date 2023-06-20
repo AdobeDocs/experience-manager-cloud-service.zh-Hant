@@ -4,9 +4,9 @@ seo-title: Developer Mode
 description: 開發人員模式會開啟一個側面板，其中包含數個標籤，為開發人員提供有關目前頁面的資訊
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,6 @@ ht-degree: 1%
 >* 不適用於行動裝置或桌上型電腦上的小型視窗（因為空間限制）。
 >  * 當寬度小於1024畫素時，就會發生這種情況。
 >* 僅適用於屬於以下群組的使用者： `administrators` 群組。
-
 
 ## 開啟開發人員模式 {#opening-developer-mode}
 
@@ -73,7 +72,7 @@ ht-degree: 1%
    * 用於呈現元件的所有元件指令碼。
    * 此特定元件的存放庫內容路徑。
 
-      ![檢視詳情](assets/developer-mode-view-details.png)
+     ![檢視詳情](assets/developer-mode-view-details.png)
 
 * **編輯指令碼：** 以CRXDE Lite開啟元件指令碼的連結。
 
@@ -93,4 +92,4 @@ ht-degree: 1%
 * 如果元件將專案寫入錯誤記錄檔，連同錯誤的詳細資訊以及指向CRXDE Lite內適當程式碼的直接連結，會出現警告。
 * 如果元件開啟管理員工作階段，會出現警告。
 
-例如，如果呼叫未定義的方法，則產生的錯誤將顯示在 **錯誤** 標籤與的樹狀結構中的元件專案 **元件** 索引標籤也會在錯誤發生時標示一個指標。
+例如，如果呼叫未定義的方法，則產生的錯誤會顯示在 **錯誤** 標籤與的樹狀結構中的元件專案 **元件** 索引標籤也會在錯誤發生時標示一個指標。

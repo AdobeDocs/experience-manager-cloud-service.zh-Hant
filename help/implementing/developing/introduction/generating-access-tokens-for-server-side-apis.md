@@ -2,9 +2,9 @@
 title: 為伺服器端 API 產生存取權杖
 description: 瞭解如何產生安全JWT權杖，以促進第三方伺服器與AEMas a Cloud Service之間的通訊
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: dd869397feca593f93ee8ed5030828e01cc45c4d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2123'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 有權存取AEMas a Cloud Service開發人員控制檯的使用者將在開發人員控制檯中看到給定環境的整合索引標籤。 具有AEMas a Cloud Service環境管理員角色的使用者可以建立、檢視或管理認證。
 
-按一下 **建立新的技術帳戶** 按鈕，將會建立一組新的認證，其中包含使用者端id、使用者端密碼、私密金鑰、憑證，以及環境製作和發佈層級的設定，不論pod選取範圍為何。
+按一下 **建立新的技術帳戶** 按鈕，會建立一組新的認證，其中包含使用者端id、使用者端密碼、私密金鑰、憑證，以及環境製作和發佈層級的設定，而不論是否選取pod。
 
 ![建立新的技術帳戶](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ### 產生JWT權杖並將其交換為存取權杖 {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-在呼叫Adobe的IMS服務中使用憑證來建立JWT權杖，以擷取有效期為24小時的存取權杖。
+在呼叫Adobe的IMS服務中使用憑證建立JWT權杖以擷取存取權杖，該權杖的有效期限為24小時。
 
 可以使用為此目的而設計的使用者端程式庫，將AEM CS服務認證交換為存取權杖。 使用者端程式庫可從以下位置取得： [Adobe的公開GitHub存放庫](https://github.com/adobe/aemcs-api-client-lib)，其中包含更詳細的指引和最新資訊。
 
@@ -162,7 +162,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 <u>**設定適當的群組許可權**</u>
 
-最後，以所需的適當許可權設定群組，以適當叫用或鎖定API。 您可以透過以下方式執行此操作：
+最後，以適當叫用或鎖定API所需的適當許可權設定群組。 您可以透過以下方式執行此操作：
 
 1. 登入適當的作者執行個體並前往 **設定** - **安全性** - **許可權**
 1. 在左側窗格中，搜尋與產品設定檔對應的群組名稱（在此案例中是唯讀API），然後按一下它：
@@ -217,9 +217,9 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 * 使用 **新增憑證** 按鈕於 **整合** - **技術帳戶** 在開發人員控制檯中，如下所示
 
-   ![認證重新整理](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
+  ![認證重新整理](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
-* 按下按鈕後，將會產生一組憑證，其中包含新的憑證。 在off-AEM伺服器上安裝新憑證，並確保如預期般連線，而不移除舊憑證 
+* 按下按鈕後，會產生一組憑證，其中包含新的憑證。 在off-AEM伺服器上安裝新憑證，並確保如預期般連線，而不移除舊憑證 
 * 產生存取權杖時，請務必使用新憑證而非舊憑證
 * 選擇性地撤銷（然後刪除）先前的憑證，使其無法再用來向AEMas a Cloud Service進行驗證。
 
@@ -229,7 +229,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 您可以按照以下步驟執行此操作：
 
-1. 首先，新增金鑰。 這將會產生具有新私密金鑰和新憑證的認證。 新的私密金鑰將在UI中標籤為 **目前** 因此，和將用於此技術帳戶日後的所有新憑證。 請注意，與舊版私密金鑰相關聯的認證在撤銷前仍有效。 若要完成此操作，請按三個點(**...**)，然後按 **新增私人金鑰**：
+1. 首先，新增金鑰。 此金鑰會產生具有新私密金鑰和新憑證的認證。 新的私密金鑰在UI中標籤為 **目前** 因此，和將用於此技術帳戶日後的所有新憑證。 請注意，與舊版私密金鑰相關聯的認證在撤銷前仍有效。 若要完成此操作，請按三個點(**...**)，然後按 **新增私人金鑰**：
 
    ![新增私人金鑰](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
@@ -237,7 +237,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
    ![確認新增新的私密金鑰](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   將會開啟具有新憑證的新瀏覽標籤，且將會更新UI以顯示兩個私密金鑰，而新私密金鑰會標籤為 **目前**：
+   具有新憑證的新瀏覽標籤隨即開啟，使用者介面也會更新，以顯示具有標籤為的新私密金鑰的兩個私密金鑰 **目前**：
 
    ![UI中的私密金鑰](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 

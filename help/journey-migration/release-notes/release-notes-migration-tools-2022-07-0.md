@@ -3,9 +3,9 @@ title: AEMas a Cloud Service2022.7.0版中移轉工具的發行說明
 description: AEMas a Cloud Service2022.7.0版中移轉工具的發行說明
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: cc52dfac1e7495d6a792bc7525720695022db8eb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '429'
 ht-degree: 5%
 
 ---
@@ -42,7 +42,7 @@ Best Practices Analyzer v2.1.30的發行日期為2022年7月27日。
 * 為了協助在擷取期間偵錯SSL/TLS連線問題，使用者現在可以啟用SSL記錄。
 * 為協助偵錯來源連線問題，現在當與Azure的連線失敗時，子網域名稱會列印在記錄中。
 * 為協助偵錯預先複製期間的問題，現在會在預先複製失敗時，將AzCopy記錄檔附加至擷取記錄檔。
-* 為避免過時的「檢查大小」結果，使用者只能在先前「檢查大小」完成後重新執行「檢查大小」。
+* 為了避免過時的「檢查大小」結果，使用者只能在先前「檢查大小」完成後重新執行「檢查大小」。
 
 ### 錯誤修正 {#bug-fixes-ctt}
 

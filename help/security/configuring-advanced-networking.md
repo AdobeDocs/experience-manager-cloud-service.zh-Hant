@@ -2,10 +2,10 @@
 title: 為 AEM as a Cloud Service 設定進階網路
 description: 了解如何為 AEM as a Cloud Service 設定進階網路功能，例如 VPN 或彈性或專用輸出 IP 地址等
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 7d74772bf716e4a818633a18fa17412db5a47199
-workflow-type: ht
-source-wordcount: '3595'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '3579'
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service 提供多種類型的進階網路功能，客戶可以使
 
 呼叫後，通常需要大約 15 分鐘的時間來佈建網路基礎結構。對 Cloud Manager 的[網路基礎結構 GET 端點](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)的呼叫會顯示「就緒」狀態。
 
-如果程式範圍的彈性連接埠輸出設定準備就緒，則必須對每個環境叫用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點，以在環境層級啟用網路以及選擇性地宣告任何連接埠轉送規則。參數可根據環境設定，以提供靈活性。
+如果程式範圍的彈性連接埠輸出設定準備就緒，則必須對每個環境叫用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點，以在環境層級啟用網路以及選擇性地宣告任何連接埠轉送規則。引數可根據環境設定，以提供靈活性。
 
 應透過指定目標主機集 (名稱或 IP，以及使用連接埠) 為 80/443 以外的任何目標連接埠宣告連接埠轉送規則，但前提是不使用 http 或 https 通訊協定：對於每個目標主機，客戶必須將預期的目標連接埠對應到 30000 到 30999 之間的連接埠。
 
@@ -70,7 +70,7 @@ API 應該在幾秒鐘內回應，指示更新狀態，大約 10 分鐘後，端
 
 ### 停用彈性連接埠輸出 {#disabling-flexible-port-egress-provision}
 
-為了&#x200B;**停用**&#x200B;來自特定環境的彈性連接埠輸出，請叫用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
+至 **disable** 彈性連線埠從特定環境輸出，叫用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 如需關於 API 的詳細資訊，請參閱 [Cloud Manager API 文件](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
 
@@ -195,7 +195,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 設定專用輸出 IP 位址與[彈性連接埠輸出](#configuring-flexible-port-egress-provision)同出一轍。
 
-主要區別在於流量一律從專用的、唯一的 IP 輸出。要尋找該 IP，請使用 DNS 解析器識別與 `p{PROGRAM_ID}.external.adobeaemcloud.com` 相關聯的 IP 位址。 該 IP 位址預期不會變更，但如果將來需要變更，將提供事先通知。
+主要區別在於流量一律從專用的、唯一的 IP 輸出。要尋找該 IP，請使用 DNS 解析器識別與 `p{PROGRAM_ID}.external.adobeaemcloud.com` 相關聯的 IP 位址。 該IP位址預計不會變更，但如果未來需要變更，則會提供進階通知。
 
 除了 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點中的彈性連接埠輸出支援的路由規則之外，專用輸出 IP 位址還支援 `nonProxyHosts` 參數。這允許您宣告一組應該路由經過共用 IP 位址範圍而不是專用 IP 的主機，這可能很有用，因為經過共用 IPS 輸出的流量可能得到進一步最佳化。`nonProxyHost` URL 可能遵循 `example.com` 或`*.example.com` 的模式，其中僅在網域開頭支援萬用字元。
 
@@ -203,7 +203,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ### 停用專用輸出 IP 位址 {#disabling-dedicated-egress-IP-address}
 
-為了&#x200B;**停用**&#x200B;來自特定環境的專用輸出 IP 位址，請叫用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
+至 **disable** 來自特定環境的專用輸出IP位址，叫用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 如需關於 API 的詳細資訊，請參閱 [Cloud Manager API 文件](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
 
@@ -331,7 +331,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### 偵錯考量 {#debugging-considerations}
 
-為了驗證流量確實在預期的專用 IP 位址上傳出，請檢查目標服務中的記錄 (如果可用)。否則，呼叫偵錯服務可能會有幫助，例如 [https://ifconfig.me/IP](https://ifconfig.me/IP)，這將傳回呼叫的 IP 位址。
+若要驗證流量是否確實在預期的專用IP位址上傳出，請檢查目的地服務中的記錄（如果可用）。 否則，呼叫偵錯服務可能會有幫助，例如 [https://ifconfig.me/IP](https://ifconfig.me/IP)，這將傳回呼叫的 IP 位址。
 
 ## 舊版專用輸出位址客戶 {#legacy-dedicated-egress-address-customers}
 
@@ -357,7 +357,7 @@ VPN 允許從著作、發佈或預覽連線到內部部署基礎結構或資料�
 
 呼叫後，通常需要 45 到 60 分鐘的時間來佈建網路基礎結構。可以呼叫 API 的 GET 方法傳回目前狀態，這最終會從 `creating` 轉成 `ready`。請參閱 API 文件以了解各種狀態。
 
-如果程式範圍的 VPN 設定準備就緒，則必須對每個環境叫用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點，以在環境層級啟用網路以及宣告任何連接埠轉送規則。參數可根據環境設定，以提供靈活性。
+如果程式範圍的 VPN 設定準備就緒，則必須對每個環境叫用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點，以在環境層級啟用網路以及宣告任何連接埠轉送規則。引數可根據環境設定，以提供靈活性。
 
 請參閱 [API 文件](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration)以取得詳細資訊。
 
@@ -543,7 +543,7 @@ Header always set Cache-Control private
 
 ## 額外發佈區域的進階網路設定 {#advanced-networking-configuration-for-additional-publish-regions}
 
-將額外區域新增到已設定進階網路的環境時，來自和進階網路規則相符的額外發佈區域的流量會依預設路由通過主要區域。但是，如果主要區域變成無法使用，並且在額外區域中尚未啟用進階網路，則進階網路流量會下降。如果您希望在其中一個區域發生中斷時將延遲最佳化並提高可用性，則有必要啟用額外發佈區域的進階網路。以下章節會說明兩種不同的案例。
+將額外區域新增到已設定進階網路的環境時，來自和進階網路規則相符的額外發佈區域的流量會依預設路由通過主要區域。但是，如果主要區域無法使用，則如果未在其他區域啟用進階網路，則會捨棄進階網路流量。 如果您希望在其中一個區域發生中斷時將延遲最佳化並提高可用性，則有必要啟用額外發佈區域的進階網路。以下章節會說明兩種不同的案例。
 
 >[!NOTE]
 >
@@ -555,15 +555,15 @@ Header always set Cache-Control private
 
 如果已在主要區域中啟用進階網路設定，請依照下列步驟進行：
 
-1. 如果您已鎖定基礎結構，以便將專用的 AEM IP 位址加入允許清單，則建議暫時停用該基礎結構中的任何否決規則。如果不這樣做，有一小段時間您自己的基礎結構會拒絕來自新區域的 IP 位址的請求。請注意，如果您已透過完整網域名稱 (FQDN) 鎖定基礎結構，(例如，`p1234.external.adobeaemcloud.com`)，則沒有必要這麼做，因為所有 AEM 區域都會從相同的 FQDN 輸出進階網路流量
-1. 根據進階網路文件中的說明，可透過對 Cloud Manager Create Network Infrastructure API 的 POST 呼叫為次要區域建立計畫範圍的網路基礎結構。承載的 JSON 設定相對於主要區域的唯一差異是區域屬性
+1. 如果您已鎖定基礎結構，以便將專用的 AEM IP 位址加入允許清單，則建議暫時停用該基礎結構中的任何否決規則。如果不這樣做，您自己的基礎結構會在短時間內拒絕來自新區域IP位址的請求。 請注意，如果您已透過完整網域名稱(FQDN)鎖定基礎架構，則不需要這樣做，(`p1234.external.adobeaemcloud.com`例如)，因為所有AEM區域都會從相同的FQDN輸出進階網路流量
+1. 根據進階網路文件中的說明，可透過對 Cloud Manager Create Network Infrastructure API 的 POST 呼叫為次要區域建立計畫範圍的網路基礎結構。有效負載的JSON設定相對於主要區域的唯一差異是region屬性
 1. 如果您的基礎結構需要由 IP 鎖定以允許 AEM 流量，請新增和 `p1234.external.adobeaemcloud.com` 相符的 IPS。每個區域都應該有一個。
 
 #### 尚未在任何區域中設定進階網路 {#not-yet-configured}
 
 此程序和先前的說明大部分類似。但是，如果尚未啟用進階網路的生產環境，則有機會先在中繼環境中啟用以測試該設定：
 
-1. 透過對 [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) 的 POST 呼叫建立所有區域的網路基礎結構。 承載的 JSON 設定相對於主要區域的唯一差異是區域屬性。
+1. 透過對 [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) 的 POST 呼叫建立所有區域的網路基礎結構。 有效負載的JSON設定相對於主要區域的唯一差異是region屬性。
 1. 若是中繼環境，可透過執行 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` 以啟用和設定環境範圍的進階網路。如需詳細資訊，請參考[這裡](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)的 API 文件。
 1. 如有必要，可鎖定外部基礎結構，最好透過 FQDN (例如`p1234.external.adobeaemcloud.com`)。不然可透過 IP 位址進行
 1. 如果中繼環境按預期運作，請啟用並設定環境範圍的進階網路設定以進行生產。

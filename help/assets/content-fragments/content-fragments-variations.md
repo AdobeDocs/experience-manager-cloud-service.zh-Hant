@@ -2,10 +2,10 @@
 title: 變化 — 編寫片段內容（資產 — 內容片段）
 description: 瞭解變數如何讓您為片段撰寫內容，然後根據用途建立該內容的變數，從而使您在AEM中的Headless內容更加靈活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2455'
-ht-degree: 12%
+source-wordcount: '2446'
+ht-degree: 11%
 
 ---
 
@@ -53,8 +53,8 @@ ht-degree: 12%
       * 選取 [格式](#formats)
       * 檢視更多編輯選項(適用於 [RTF文字](#rich-text) format)
       * 存取範圍 [動作](#actions)
-   * 對象 **片段參考** 欄位 [編輯內容片段](#fragment-references-edit-content-fragment) 選項是否可用，取決於模型定義。
 
+   * 對象 **片段參考** 欄位 [編輯內容片段](#fragment-references-edit-content-fragment) 選項是否可用，取決於模型定義。
 
 * 指派 **標籤** 至目前的變數；標籤可以新增、更新和移除
 
@@ -63,10 +63,11 @@ ht-degree: 12%
       * 搜尋標籤將傳回片段，並反白標示標籤的變數。
       * 變數標籤也可用來將特定內容傳遞網路(CDN)設定檔的變數分組（用於CDN快取），而不是使用變數名稱。
 
-      例如，您可以將相關片段標籤為「聖誕節啟動」，以僅允許作為子集瀏覽這些片段，或複製它們以供日後在新資料夾中再次啟動時使用。
-   >[!NOTE]
-   >
-   >**標籤** 也可以新增(至 **主版** 變數)，作為 [中繼資料](/help/assets/content-fragments/content-fragments-metadata.md)
+     例如，您可以將相關片段標籤為「聖誕節啟動」，以僅允許作為子集瀏覽這些片段，或複製它們以供日後在新資料夾中再次啟動時使用。
+
+  >[!NOTE]
+  >
+  >**標籤** 也可以新增(至 **主版** 變數)，作為 [中繼資料](/help/assets/content-fragments/content-fragments-metadata.md)
 
 * [建立和管理變數](#managing-variations) 的 **主版** 內容。
 
@@ -226,14 +227,16 @@ RTF編輯可讓您設定格式：
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
+>
 英文是現成可用的。
+>
 Software Distribution提供其他語言作為語言模型套件：
+>
 * [French(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 * [German(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 * [Italian(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [Spanish(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
-
 
 1. 選取 **主版** 或必要的變數。
 1. 開啟全熒幕編輯器。
@@ -299,14 +302,15 @@ Software Distribution提供其他語言作為語言模型套件：
 
 * 在編輯器的全熒幕和正常模式中，由文字上的反白顯示指示。 接著，您可以按一下醒目提示的文字，以檢視、編輯和/或刪除註解的完整詳細資料，該文字將會重新開啟對話方塊。
 
-   >[!NOTE]
-   如果有一段文字套用了多個註解，則會提供下拉式選擇器。
+  >[!NOTE]
+  >
+  如果有一段文字套用了多個註解，則會提供下拉式選擇器。
 
 * 當您刪除套用了註解的整個文字時，註解也會一併刪除。
 
 * 可透過選取 **註解** 索引標籤進行標籤。
 
-   ![附註](assets/cfm-variations-08.png)
+  ![附註](assets/cfm-variations-08.png)
 
 * 可以在以下位置檢視和刪除： [時間表](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) 用於選取的片段。
 
@@ -314,13 +318,16 @@ Software Distribution提供其他語言作為語言模型套件：
 
 若要簡化編寫內容片段的程式，您可以新增 [資產](/help/assets/manage-digital-assets.md) （影像）直接放入片段。
 
-它們將被新增到片段的段落序列中，沒有任何格式；可以在以下情況下進行格式設定： [在頁面上使用/參考片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+將它們新增到片段的段落序列中，且不加任何格式；格式設定可在 [在頁面上使用/參考片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
+>
 無法在引用頁面上移動或刪除這些資產，這必須在片段編輯器中完成。
+>
 不過，資產的格式（例如大小）必須在以下位置完成： [頁面編輯器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 資產在片段編輯器中的呈現方式僅供編寫內容流程之用。
 
 >[!NOTE]
+>
 有多種新增方法 [影像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 至片段和/或頁面。
 
 1. 將游標置於要添加影像的位置。
@@ -338,10 +345,10 @@ Software Distribution提供其他語言作為語言模型套件：
 1. 使用 **「選取** 」將資產新增至目前位置之內容片段的段落系統。
 
    >[!CAUTION]
+   >
    如果新增資產後，您將格式變更為：
-   * **純文字檔案**:資產將完全從碎片中丟失。
+   * **純文字**：資產從片段中完全遺失。
    * **Markdown**:資產將不可見，但當您返回 **Rich Text時，資產仍會存在**。
-
 
 ### 將內容片段插入片段 {#inserting-content-fragment-into-your-fragment}
 
@@ -350,13 +357,17 @@ Software Distribution提供其他語言作為語言模型套件：
 它們將作為參考新增到片段中的目前位置。
 
 >[!NOTE]
+>
 當您符合以下條件時，即可使用此選項： **多行文字** 已設定為 **允許片段參考**.
 
 >[!CAUTION]
+>
 無法在引用頁面上移動或刪除這些資產，這必須在片段編輯器中完成。
+>
 不過，資產的格式（例如大小）必須在以下位置完成： [頁面編輯器](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 資產在片段編輯器中的呈現方式僅供編寫內容流程之用。
 
 >[!NOTE]
+>
 有多種新增方法 [影像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 至片段和/或頁面。
 
 1. 將游標置於您要新增片段的位置。
@@ -374,10 +385,10 @@ Software Distribution提供其他語言作為語言模型套件：
 1. 使用 **選取** 將所選內容片段的參考新增至您目前內容片段（在目前位置）。
 
    >[!CAUTION]
+   >
    如果在新增對其他片段的引用後，您將格式變更為：
-   * **純文字**：參照將會從片段中完全遺失。
+   * **純文字**：參考從片段中完全遺失。
    * **Markdown**：會保留參考。
-
 
 ## 管理變數 {#managing-variations}
 
@@ -391,12 +402,14 @@ Software Distribution提供其他語言作為語言模型套件：
 1. 選取 **變數** 從側面板的圖示列。
 1. 選取 **建立變數**.
 1. 將會開啟對話方塊，指定新變 **數的****「標題」(Title)和「說明」(Description** )。
-1. 選擇 **添加**;片段 **Master** 將會複製到新的變數，現在會開啟供編 [輯](#editing-a-variation)。
+1. 選取 **新增**；片段 **主版** 會複製到新的變數，該變數現在會針對 [編輯](#editing-a-variation).
 
    >[!NOTE]
+   >
    建立新變數時，一律會進行 **主版** 而不是目前開啟的變數。
 
    >[!NOTE]
+   >
    當您建立新的變數時，所有 **標籤** 目前指派給 **主版** 變數會複製到您的新變數中。
 
 ### 編輯變數 {#editing-a-variation}
@@ -421,6 +434,7 @@ Software Distribution提供其他語言作為語言模型套件：
 1. 確認 **重新命名** 動作。
 
 >[!NOTE]
+>
 這只會影響變數 **標題**.
 
 ### 刪除變數 {#deleting-a-variation}
@@ -434,6 +448,7 @@ Software Distribution提供其他語言作為語言模型套件：
 1. 確認 **刪除** 動作。
 
 >[!NOTE]
+>
 您無法刪除 **主版**.
 
 ### 與主版同步 {#synchronizing-with-master}
@@ -443,9 +458,13 @@ Software Distribution提供其他語言作為語言模型套件：
 編輯變數時，您有權存取動作，以將變數的目前元素與主版同步。 這可讓您自動將對主版所做的變更複製到所需的變數。
 
 >[!CAUTION]
+>
 同步僅可用於將更改從 *主&#x200B;**版複製**到變化*。
-只會同步變數的目前元素。
+>
+只同步變數的目前元素。
+>
 同步只適用於多 **行文本** -資料類型。
+>
 將變 *更從變更傳輸&#x200B;**至Master*** ，不提供選項。
 
 1. 在片段編輯器中開啟您的內容片段。 確保 **主版** 已編輯。
@@ -454,11 +473,11 @@ Software Distribution提供其他語言作為語言模型套件：
 
    * 此 **動作** 下拉式選擇器 —  **將目前元素與主元素同步**
 
-      ![與主版同步](assets/cfm-variations-11a.png)
+     ![與主版同步](assets/cfm-variations-11a.png)
 
    * 全熒幕編輯器的工具列 —  **與主版同步**
 
-      ![與主版同步](assets/cfm-variations-11b.png)
+     ![與主版同步](assets/cfm-variations-11b.png)
 
 1. 主版和變數會並排顯示：
 

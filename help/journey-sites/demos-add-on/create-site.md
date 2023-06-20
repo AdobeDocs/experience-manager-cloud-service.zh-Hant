@@ -2,9 +2,9 @@
 title: 建立示範網站
 description: 根據預先設定的範本庫在 AEM 中建立示範網站。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '842'
 ht-degree: 11%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 11%
 
    ![網站建立精靈](assets/site-creation-wizard.png)
 
-1. 在下一個畫面中，為您的網站或Screens專案提供標題。 可以提供網站名稱，如果省略，則將從標題產生網站名稱。 點選或按一下&#x200B;**建立**。
+1. 在下一個畫面中，為您的網站或Screens專案提供標題。 若省略，可提供網站名稱或從標題產生網站名稱。 點選或按一下&#x200B;**建立**。
 
    * 網站標題會顯示在瀏覽器標題列中。
    * 網站名稱會成為URL的一部分。

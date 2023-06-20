@@ -2,9 +2,9 @@
 title: Adobe內容套件Maven外掛程式
 description: 使用Content Package Maven外掛程式來部署AEM應用程式
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1847'
 ht-degree: 6%
 
 ---
@@ -29,14 +29,13 @@ ht-degree: 6%
 >* 此 `content-package-maven-plugin` 不再支援1.0.2版的封裝。
 >* 本文會說明 **部署** AEM的建構套件由Adobe內容套件Maven外掛程式執行。
 
-
 ## 套件和AEM專案結構 {#aem-project-structure}
 
 AEMas a Cloud Service會遵循由最新AEM專案原型實作的套件管理和專案結構的最新最佳實務。
 
 >[!TIP]
 >
->如需詳細資訊，請參閱 [AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEMas a Cloud Service檔案中的文章以及 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 說明檔案。 AEM 6.5完全支援這兩項功能。
+>如需詳細資訊，請參閱 [AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEMas a Cloud Service檔案中的文章以及 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 說明檔案。 AEM 6.5完全支援這兩項功能。
 
 ## 取得內容套件Maven外掛程式 {#obtaining-the-content-package-maven-plugin}
 
@@ -87,7 +86,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 下表中的引數對所有目標都是通用的，除非在 **目標** 欄。
 
-| 名稱 | 類型 | 必要 | 預設值 | 說明 | 目標 |
+| 名稱 | 類型 | 必要 | 預設 值 | 說明 | 目標 |
 |---|---|---|---|---|---|
 | `failOnError` | `boolean` | 否 | `false` | 值 `true` 發生錯誤時導致建置失敗。 值 `false` 導致組建忽略錯誤。 | 所有目標，但 `package` |
 | `name` | `String` | `build`：是， `install`：否， `rm`：是 | `build`：無預設值， `install`：的值 `artifactId` Maven專案的屬性 | 要對其採取動作的套件的名稱 | 所有目標，但 `ls` |
@@ -95,7 +94,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 | `serverId` | `String` | 否 | 要從中擷取使用者名稱和密碼以進行驗證的伺服器ID | 所有目標，但 `package` |
 | `targetURL` | `String` | 是 | `http://localhost:4502/crx/packmgr/service.jsp` | AEM套件管理員的HTTP服務API的URL | 所有目標，但 `package` |
 | `timeout` | `int` | 否 | `5` | 與封裝管理程式服務通訊的連線逾時（以秒為單位） | 所有目標，但 `package` |
-| `useProxy` | `boolean` | 否 | `true` | 值 `true` 會讓Maven使用找到的第一個作用中Proxy設定，以將請求代理至封裝管理員。 | 所有目標，但 `package` |
+| `useProxy` | `boolean` | 否 | `true` | 值 `true` 會讓Maven使用找到的第一個作用中Proxy設定，將請求代理至封裝管理員。 | 所有目標，但 `package` |
 | `userId` | `String` | 是 | `admin` | 要向AEM驗證的使用者名稱 | 所有目標，但 `package` |
 | `verbose` | `boolean` | 否 | `false` | 啟用或停用詳細記錄 | 所有目標，但 `package` |
 
@@ -119,7 +118,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 除了下列引數外，請參閱 [常見引數](#common-parameters) 區段。
 
-| 名稱 | 類型 | 必要 | 預設值 | 說明 |
+| 名稱 | 類型 | 必要 | 預設 值 | 說明 |
 |---|---|---|---|---|
 | `artifact` | `String` | 否 | 的值 `artifactId` Maven專案的屬性 | 表單的字串 `groupId:artifactId:version[:packaging]` |
 | `artifactId` | `String` | 否 | 無 | 要安裝的成品的ID |
@@ -166,7 +165,7 @@ RM目標的所有引數都說明於 [常見引數](#common-parameters) 區段。
 
 除了下列引數外，請參閱 `name` 中的引數 [常見引數](#common-parameters) 區段。
 
-| 名稱 | 類型 | 必要 | 預設值 | 說明 |
+| 名稱 | 類型 | 必要 | 預設 值 | 說明 |
 |---|---|---|---|---|
 | `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | 否 | 無 | 要使用的封存設定 |
 | `builtContentDirectory` | `java.io.File` | 是 | Maven組建的輸出目錄值 | 包含要包含在封裝中的內容的目錄 |
@@ -182,7 +181,7 @@ RM目標的所有引數都說明於 [常見引數](#common-parameters) 區段。
 | `prefix` | `java.lang.String` | 否 | 無 |  |
 | `project` | `org.apache.maven.project.MavenProject` | 是 | 無 | Maven專案 |
 | `properties` | `java.util.Map` | 否 | 無 | 這些引數定義您可在下列位置設定的其他屬性： `properties.xml` 檔案。 這些屬性無法覆寫下列預先定義的屬性： `group` (使用 `group` 要設定的引數)， `name` (使用 `name` 要設定的引數)， `version` (使用 `version` 要設定的引數)， `description` （從專案說明設定）， `groupId` (`groupId` Maven專案描述項的)， `artifactId` (`artifactId` Maven專案描述項的)， `dependencies` (使用 `dependencies` 要設定的引數)， `createdBy` (的值 `user.name` 系統屬性)， `created` （目前系統時間）、 `requiresRoot` (使用 `requiresRoot` 要設定的引數)， `packagePath` （從群組和封裝名稱自動產生） |
-| `requiresRoot` | `boolean` | 是 | false | 定義套件是否需要root。 這將會成為 `requiresRoot` 的屬性 `properties.xml` 檔案。 |
+| `requiresRoot` | `boolean` | 是 | false | 定義套件是否需要root。 成為 `requiresRoot` 的屬性 `properties.xml` 檔案。 |
 | `subPackages` | `java.util.List` | 否 | 無 |  |
 | `version` | `java.lang.String` | 是 | Maven專案中定義的版本 | 內容套件的版本 |
 | `workDirectory` | `java.io.File` | 是 | Maven專案（建置階段）中定義的目錄 | 包含要包含在封裝中的內容的目錄 |
@@ -221,7 +220,7 @@ RM目標的所有引數都說明於 [常見引數](#common-parameters) 區段。
 
 #### 參數 {#parameters-6}
 
-| 名稱 | 類型 | 必要 | 預設值 | 說明 |
+| 名稱 | 類型 | 必要 | 預設 值 | 說明 |
 |---|---|---|---|---|
 | `detail` | `boolean` | 否 | `false` | 決定是否顯示每個目標的所有可設定屬性 |
 | `goal` | `String` | 否 | 無 | 此引數會定義要顯示其說明的目標名稱。 如果未指定任何值，則會顯示所有目標的說明。 |
@@ -268,4 +267,4 @@ RM目標的所有引數都說明於 [常見引數](#common-parameters) 區段。
 
 >[!TIP]
 >
->如需詳細資訊，請參閱 [AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEMas a Cloud Service檔案中的文章以及 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 說明檔案。 AEM 6.5完全支援這兩項功能。
+>如需詳細資訊，請參閱 [AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEMas a Cloud Service檔案中的文章以及 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 說明檔案。 AEM 6.5完全支援這兩項功能。

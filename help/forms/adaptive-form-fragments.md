@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -75,9 +75,9 @@ ht-degree: 0%
 1. 在「片段建立」對話方塊中，指定下列資訊：
 
    * **名稱**：片段名稱。 預設值為面板的元素名稱。 它是必填欄位。
-      >[!NOTE]
-      >
-      >請確定您為片段指定唯一的名稱。 如果已經有另一個相同名稱的片段，則無法建立片段。
+     >[!NOTE]
+     >
+     >請確定您為片段指定唯一的名稱。 如果已經有另一個相同名稱的片段，則無法建立片段。
 
    * **標題**：片段的標題。 預設值為面板的標題。
 
@@ -230,7 +230,7 @@ ht-degree: 0%
 ## 使用片段時要記住的關鍵點 {#key-points-to-remember-when-working-with-fragments}
 
 * 確保片段名稱是唯一的。 如果存在具有相同名稱的現有片段，則片段無法建立。
-* 在XDP型最適化表單中，如果您將面板儲存為包含其他XDP片段的片段，則產生的片段將自動與子XDP片段繫結。 如果是XSD型最適化表單，產生的片段將繫結至結構描述根。
+* 在XDP型最適化表單中，如果您將面板儲存為包含其他XDP片段的片段，則產生的片段會自動與子XDP片段繫結。 如果是XSD型最適化表單，產生的片段會與結構描述根繫結。
 * 當您建立最適化表單片段時，會建立片段節點，這類似於CRXDe Lite中最適化表單的guideContainer節點。
 * 不支援使用不同表單資料模型的最適化表單中的片段。 例如，XSD型最適化表單不支援XDP型片段，反之亦然。
 * 最適化表單片段可透過AEM內容尋找器中的最適化表單片段標籤使用。
@@ -240,7 +240,7 @@ ht-degree: 0%
 * 當您重新發佈更新的Adaptive Form片段時，變更會反映在使用片段的Adaptive Form的已發佈例項中。
 * 包含Verify元件的調適型表單不支援匿名使用者。 此外，不建議在自適應表單片段中使用驗證元件。
 * (**僅限Mac**)為確保表單片段功能在所有情況下都完全運作，請將以下專案新增至/private/etc/hosts檔案：
-   `127.0.0.1 <Host machine>` **主機**：搭載的Apple Mac電腦 [!DNL AEM Forms] 已部署。
+  `127.0.0.1 <Host machine>` **主機**：搭載的Apple Mac電腦 [!DNL AEM Forms] 已部署。
 
 ## 參考片段 {#reference-fragments}
 

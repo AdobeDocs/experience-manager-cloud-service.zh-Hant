@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.7.0版as a Cloud Service發行說明」。'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 77%
+ht-degree: 76%
 
 ---
 
@@ -88,7 +88,7 @@ AEM Commerce現在可在Cloud Service上使用。
 
 * Cloud Manager 管道現在支援客戶設定變數和機密。
 
-   如需詳細資訊，請參閱管道變數。
+  如需詳細資訊，請參閱管道變數。
 
 * 現在支援身份驗證綁定的私有 Maven 存放庫。
 
@@ -120,7 +120,7 @@ AEM Commerce現在可在Cloud Service上使用。
 
 ### 新增功能 {#what-is-new-foundations}
 
-* [記錄檔可以轉送至 Splunk 帳戶](/help/implementing/developing/introduction/logging.md#splunk-logs)，方便組織運用 Splunk 投資。
+* [記錄檔可轉送至Splunk帳戶](/help/implementing/developing/introduction/logging.md#splunk-logs)，可讓組織使用其Splunk投資。
 
 * 可為以 Java 程式碼編寫的傳出流量指派[靜態的專屬輸出 IP 位址](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address)，這對某些整合功能可能會相當實用。
 
@@ -136,7 +136,7 @@ AEM Commerce現在可在Cloud Service上使用。
 
 * CRA 較早版本無法在 Adobe Experience Manager (AEM) 6.1 上執行。新增明確支援，讓管理員群組中的使用者使用。
 
-   如需詳細資訊，請參閱[在 AEM 6.1 上安裝CRA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)。
+  如需詳細資訊，請參閱[在 AEM 6.1 上安裝CRA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)。
 
 * 摘要報告顯示的到期時間戳記不正確。
 

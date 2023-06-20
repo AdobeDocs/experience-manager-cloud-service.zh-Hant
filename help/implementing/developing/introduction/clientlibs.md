@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service上使用使用者端資料庫
 description: AEM提供使用者端程式庫資料夾，可讓您將使用者端程式碼(clientlibs)儲存在存放庫中、將其組織成類別，以及定義每個類別程式碼何時及如何提供給使用者端
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 906fbefdbd100a7874b6f58ef23b7aaa46ac4ba3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2562'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ AEM會將網站的CSS和Javascript收集到一個位於中央位置的檔案中�
 
 ## 建立使用者端資料庫資料夾 {#creating-clientlib-folders}
 
-使用者端程式庫必須位於 `/apps`. 這是為了將程式碼與內容和設定更好地隔離。
+使用者端程式庫必須位於 `/apps`. 此規則是更好地將程式碼與內容和設定隔離所必需的。
 
 用於下的使用者端程式庫的順序 `/apps` 為了可存取，會使用proxy servelt。 ACL仍會在使用者端程式庫資料夾上強制執行，但servlet允許透過讀取內容 `/etc.clientlibs/` 如果 `allowProxy` 屬性已設定為 `true`.
 
@@ -135,7 +135,7 @@ This is possible. Still need detail.
 
 ## 作者與發佈的使用者端資料庫 {#clientlibs-author-publish}
 
-AEM發佈執行個體上需要大部分的clientlibs。 也就是說，大部分clientlibs的目的是產生內容的一般使用者體驗。 對於發佈執行個體上的clientlibs， [前端建置工具](#fed-for-aemaacs) 可透過以下方式使用和部署： [如上所述的client library資料夾。](#creating-clientlib-folders)
+大部分的clientlibs在AEM發佈執行個體上都是必要的。 也就是說，大部分clientlibs的目的是產生內容的一般使用者體驗。 對於發佈執行個體上的clientlibs， [前端建置工具](#fed-for-aemaacs) 可透過以下方式使用和部署： [如上所述的client library資料夾。](#creating-clientlib-folders)
 
 不過，有時可能需要使用者端程式庫來自訂編寫體驗。 例如，自訂對話方塊可能需要將少量CSS或JS部署至AEM編寫執行個體。
 
@@ -184,8 +184,8 @@ AEM中的使用者端程式庫資料夾支援許多其他功能。 不過，在A
 
 其他資料夾屬性包括允許控制相依性和內嵌，但通常不再需要它們，不建議使用：
 
-* `dependencies`：這是此程式庫資料夾所相依的其他使用者端程式庫類別清單。 例如，假設有兩個 `cq:ClientLibraryFolder` 節點 `F` 和 `G`，如果檔案位於 `F` 需要在下列位置有另一個檔案： `G` 為了正常運作，至少一個 `categories` 之 `G` 應該屬於 `dependencies` 之 `F`.
-* `embed`：用來內嵌其他程式庫中的程式碼。 If節點 `F` 嵌入節點 `G` 和 `H`，產生的HTML會是來自節點的內容串連 `G` 和 `H`.
+* `dependencies`：這是此程式庫資料夾所相依的其他使用者端程式庫類別清單。 例如，假設有兩個 `cq:ClientLibraryFolder` 節點 `F` 和 `G`，如果檔案位於 `F` 需要在下列位置有另一個檔案： `G` 若要正常運作，則至少須執行下列其中一項： `categories` 之 `G` 應該屬於 `dependencies` 之 `F`.
+* `embed`：用來內嵌其他程式庫中的程式碼。 If節點 `F` 嵌入節點 `G` 和 `H`，產生的HTML是來自節點的內容串連 `G` 和 `H`.
 
 ### 連結至相依性 {#linking-to-dependencies}
 

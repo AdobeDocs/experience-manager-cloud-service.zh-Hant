@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 版發行說明。'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 69%
+source-wordcount: '1438'
+ht-degree: 67%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 69%
 
 ### 中的新功能 [!DNL Assets] 發行前通道 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] 「影像智慧型裁切和色票」現在由最新的Sensei服務提供支援，可產生改良的裁切和色票。 此外，已啟動增強功能，針對相同縱橫比但跨不同解析度產生不同的裁切內容。 此外，如果「影像設定檔」中的寬度和高度沒有變更，則在重新處理時將保留任何手動編輯。
+* [!DNL Dynamic Media] 「影像智慧型裁切和色票」現在由最新的Sensei服務提供支援，可產生改良的裁切和色票。 此外，已啟動增強功能，針對相同縱橫比但跨不同解析度產生不同的裁切內容。 此外，如果「影像設定檔」中的寬度和高度沒有變化，則在重新處理時會保留任何手動編輯。
 
 * 智慧標籤會自動套用至使用資產微服務的資產，而非智慧內容服務。 基礎模型已更新，以改善標籤結果並減少偏差。 <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -97,10 +97,10 @@ AEM as a Cloud Service 2021.11.0 中的 Cloud Manager 發行日期是 2021 年 1
 
 ### 新增功能 {#what-is-new-cm-nov}
 
-* 使用者現在可以善用新的前端管道以加速的方式專門部署前端計劃碼。 請參閱 [Cloud Manager 前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)來了解更多資訊。
+* 使用者現在可以使用新的前端管道以加速的方式專門部署前端計畫碼。 請參閱 [Cloud Manager 前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)來了解更多資訊。
 
-   >[!IMPORTANT]
-   >您必須使用 AEM 版本 `2021.10.5933.20211012T154732Z` 才可使用最新的前端管道。
+  >[!IMPORTANT]
+  >您必須使用AEM版本 `2021.10.5933.20211012T154732Z` 使用新的前端管道。
 
 * 透過以更有效的方式執行計劃碼分析來顯著減少計劃碼品質管道期限，而不需要建置整個 AEM 影像。此變更會在發佈後的未來幾週內逐步展開。
 

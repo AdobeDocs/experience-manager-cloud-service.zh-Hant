@@ -3,9 +3,9 @@ title: 查詢和編製索引最佳實務
 description: 瞭解如何根據Adobe的最佳實務准則最佳化您的索引和查詢。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: afeff7cfb8606eb58126a4ca62ce9e6e58c44215
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1558'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ AEMas a Cloud Service提供查詢效能工具，其設計可支援實作有效�
 
 每個查詢都應該使用索引來提供最佳效能。 在大多數情況下，現有的現成索引應足以處理查詢。
 
-有時需要將自訂屬性新增到現有索引，以便使用該索引查詢其他限制。 檢視檔案 [內容搜尋與索引](/help/operations/indexing.md#changing-an-index) 以取得更多詳細資料。 此 [JCR查詢速查表](#jcr-query-cheatsheet) 本節說明索引上的屬性定義外觀如何才能支援特定的查詢型別。
+有時需要將自訂屬性新增到現有索引，以便使用該索引查詢其他限制。 檢視檔案 [內容搜尋與索引](/help/operations/indexing.md#changing-an-index) 以取得更多詳細資料。 此 [JCR查詢速查表](#jcr-query-cheatsheet) 本節說明索引上的屬性定義必須如何支援特定查詢型別。
 
 ### 使用正確的條件 {#use-the-right-criteria}
 

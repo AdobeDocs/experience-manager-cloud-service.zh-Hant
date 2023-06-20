@@ -2,10 +2,10 @@
 title: 專案設定
 description: 了解如何使用 Maven 構建 AEM 項目，以及在建立自己的項目時必須遵守的標準。
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 100%
+source-wordcount: '1404'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## 專案設定詳細資料 {#project-setup-details}
 
-為了使用 Cloud Manager 成功構建和部署，AEM 項目需要遵循以下準則：
+為了使用Cloud Manager成功建置和部署，AEM專案需要遵循以下准則：
 
 * 必須使用 [Apache Maven](https://maven.apache.org) 建置專案。
 * 在 Git 存放庫的根目錄中必須有一個 `pom.xml` 檔案。如有必要，此 `pom.xml` 檔案可參照的子模組 (這些子模組又可能有其他子模組) 數量並無限制。視需求。
@@ -112,14 +112,14 @@ ht-degree: 100%
 >
 >對於來自受密碼保護的 Maven 存放庫的成品，應極為謹慎地使用，因為透過此機制部署的計劃碼不會透過 Cloud Manager 品質閘道中實作的所有[計劃碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。因此，它只應在極少數情況下用於不與 AEM 綁定的計劃碼。建議同時部署 Java 原始計劃碼以及整個專案的原始計劃碼還有二進位。
 
-為了在 Cloud Manager 中使用受密碼保護的 Maven 存放庫：
+若要在Cloud Manager中使用受密碼保護的Maven存放庫：
 
 1. 將密碼 (以及可選的使用者名) 指定為機密[管道變數。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
 1. 然後在一個名為`.cloudmanager/maven/settings.xml`在 git 存放庫中，它遵循[Maven 設定檔案](https://maven.apache.org/settings.html)架構。
 
 當 Cloud Manager 建置過程開始時：
 
-* `<servers>` 元素合併至由 Cloud Manager 提供的預設 `settings.xml` 檔案中。
+* 此 `<servers>` 此檔案中的元素會合併至預設值 `settings.xml` Cloud Manager提供的檔案。
    * 以 `adobe` 和 `cloud-manager` 開頭的伺服器 ID 會視為是保留的，不應由自訂伺服器使用。
    * Cloud Manager 對於和這些首碼中的任何一個或預設 ID `central` 都不相符的伺服器 ID 將無法進行鏡像。
 * 備妥這個檔案後，將從 `<repository>` 內部和/或 `<pluginRepository>` 元素 (在 `pom.xml` 檔案內) 參照伺服器 ID。
@@ -240,9 +240,9 @@ ht-degree: 100%
 
 ## 略過內容套件 {#skipping-content-packages}
 
-在 Cloud Manager 中，組建可能會產生任何數量的內容套件。 由於各種原因，可能需要產生內容套件但不將其部署。一個例子可能是當建置僅用於測試的內容套件或將由建置流程中的另一個步驟重新封裝的內容套件時 (即成為另一個套件的子套件)。
+在 Cloud Manager 中，組建可能會產生任何數量的內容套件。 由於各種原因，可能需要產生內容套件但不將其部署。例如，當建置僅用於測試的內容套件或建置流程中由另一個步驟重新封裝的內容套件時。 亦即，另一個套件的子套裝。
 
-為了適應這些情況，Cloud manager將在內建內容包的屬性中查找名為 `cloudManagerTarget` 的屬性。如果此屬性設定為 `none`，則會略過該套件且不部署。
+為了適應這些情況，Cloud Manager會尋找名為的屬性 `cloudManagerTarget` 在建置內容套件的屬性中。 如果此屬性設定為 `none`，則會略過該套件且不部署。
 
 設定此屬性的機制取決於建立內容封裝的方式。例如，使用時，您可以像這樣設定外掛計劃：`filevault-maven-plugin`
 
@@ -322,11 +322,11 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 1. 會建置開發管道並執行 `foo`。
 1. 隨後會建置生產管道並執行 `bar`。
 
-在這種情況下，由於識別出相同的認可雜湊，會將來自 `foo` 的成品重複用於生產管道。
+在此案例中，來自的成品 `foo` 由於已識別相同的認可雜湊，因此會重複用於生產管道。
 
 ### 退出 {#opting-out}
 
-如有需要，可透過將管道變數 `CM_DISABLE_BUILD_REUSE` 設定為 `true` 來停用特定管道的重複使用行為。 如果設定此變數，則仍會擷取認可雜湊，並將儲存所產生的成品以供稍後使用，但不會重複使用之前儲存的任何成品。若要了解此行為，請思考以下案例。
+如有需要，可透過將管道變數 `CM_DISABLE_BUILD_REUSE` 設定為 `true` 來停用特定管道的重複使用行為。 如果設定此變數，則仍會擷取認可雜湊，並儲存所產生的成品以供稍後使用，但不會重複使用任何先前儲存的成品。 若要了解此行為，請思考以下案例。
 
 1. 已建立新管道。
 1. 執行管道 (執行 #1)，且目前的 HEAD 認可為 `becdddb`。此執行成功完成，並儲存產生的成品。
@@ -340,6 +340,6 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 * 無論認可雜湊是否相同，都不會在不同的方案中重新使用組建成品。
 * 即使分支和/或管道不同，在相同方案中會重新使用組建成品。
-* [Maven 版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)只有在生產管道中才會取代專案版本。因此，如果在開發部署執行和生產管道執行上都使用相同的認可，並且先執行開發部署管道，則會在不變更版本的情況下將版本部署到中繼和生產環境。但在這種情況下，仍將會建立標記。
-* 如果未成功擷取已儲存的成品，則將執行建置步驟，彷彿尚未儲存任何成品一樣。
+* [Maven 版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)只有在生產管道中才會取代專案版本。因此，如果在開發部署執行和生產管道執行上都使用相同的認可，並且先執行開發部署管道，則會在不變更版本的情況下將版本部署到中繼和生產環境。 但在這種情況下，仍將會建立標記。
+* 如果無法擷取已儲存的成品，則會執行建置步驟，就像未儲存任何成品一樣。
 * 當 Cloud Manager 決定重新使用之前已建立的組件成品時，不會考慮 `CM_DISABLE_BUILD_REUSE` 以外的管道變數。

@@ -3,7 +3,7 @@ title: 如何將資料庫連線至 [!DNL AEM Forms] as a Cloud Service？
 seo-title: AEM Forms Data Integration
 description: 您可以從以下位置擷取資料並儲存至RESTful Web服務、以SOAP為基礎的Web服務和OData服務 [!DNL AEM Forms] as a Cloud Service。 此服務提供專用的工具，可擷取、測試、驗證資料並將其傳送至各種型別的資料來源。
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 1%
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ## 開始使用資料整合 {#get-started-with-data-integration}
 
-實作資料整合的第一步是識別並設定資料來源，以儲存您要在Adaptive Forms和互動式通訊使用案例中運用的資訊。 接下來，您會建立表單資料模型，此模型會使用來自一或多個資料來源的資料模型物件、屬性及服務。 您可以根據表單資料模型建立最適化Forms和互動式通訊，其中互動式通訊中的最適化表單欄位或預留位置會繫結至各自的資料來源屬性。
+實作資料整合的第一步是識別並設定資料來源，以儲存您要在Adaptive Forms和互動式通訊使用案例中使用的資訊。 接下來，您會建立表單資料模型，此模型會使用來自一或多個資料來源的資料模型物件、屬性及服務。 您可以根據表單資料模型建立最適化Forms和互動式通訊，其中互動式通訊中的最適化表單欄位或預留位置會繫結至各自的資料來源屬性。
 
 [!DNL AEM Forms] 也可讓您建立獨立於資料來源的表單資料模型，並在稍後將表單資料模型中的資料模型物件和屬性與資料來源建立關聯或繫結。 當您處理表單資料模型時，它可消除對資料來源的任何相依性。
 

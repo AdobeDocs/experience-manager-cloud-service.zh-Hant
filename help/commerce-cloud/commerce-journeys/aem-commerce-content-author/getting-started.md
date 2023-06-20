@@ -2,9 +2,9 @@
 title: CIF 編寫快速入門
 description: CIF 編寫快速入門
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '804'
 ht-degree: 2%
 
 ---
@@ -89,7 +89,7 @@ CIF擴充了Universal Editor，提供在不離開內容的情況下存取即時�
 使用Omnisearch是一種透過全文搜尋來尋找AEM內容的簡單方法。 CIF延伸Omnisearch，以全文搜尋產品目錄及其相關AEM內容。
 ![商務功能表專案](assets/omnisearch.png)
 
-Omnisearch會在商務後端執行全文檢索搜尋，以尋找所有相關產品。 結果會列在底下 **檢視所有產品**. Omnisearch也會搜尋AEM中與搜尋到的產品相關聯的內容。 結果將列在各自的AEM類別下。 在此範例中，一個內容片段與產品相關。
+Omnisearch會在商務後端執行全文檢索搜尋，以尋找所有相關產品。 結果會列在底下 **檢視所有產品**. Omnisearch也會搜尋AEM中與搜尋到的產品相關聯的內容。 結果會列在個別AEM類別下。 在此範例中，一個內容片段與產品相關。
 
 ## 下一步 {#what-is-next}
 

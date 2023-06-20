@@ -4,10 +4,10 @@ description: 瞭解如何在AEM中建立和管理機器翻譯專案和人工翻�
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: d3194e646b326009dc204838ac74fc880952f286
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4086'
-ht-degree: 2%
+source-wordcount: '4085'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->如果您不熟悉翻譯內容，請參閱我們的 [Sites 翻譯歷程](/help/journey-sites/translation/overview.md)，此路徑會逐步引導您了解如何使用 AEM 強大的翻譯工具翻譯 AEM Sites 內容，非常適合那些沒有 AEM 或翻譯經驗的使用者。
+>如果您不熟悉翻譯內容，請參閱我們的 [網站翻譯歷程，](/help/journey-sites/translation/overview.md) 將引導您使用AEM強大的翻譯工具來翻譯AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 將資源新增至翻譯專案時，系統會為其建立翻譯工作。 工作會提供相關命令和狀態資訊，您可用來管理在資源上執行的人工翻譯和機器翻譯工作流程。
 
@@ -374,7 +374,7 @@ AEM中的翻譯專案使用標準 [AEM專案主控台。](/help/sites-cloud/auth
 
 1. 在專案主控台中，選取翻譯專案。
 1. 在工具列中，點選或按一下 **開始翻譯工作**.
-1. 在對話方塊中，檢閱將啟動的工作清單，然後透過確認 **開始** 或中止使用 **取消**.
+1. 在對話方塊中，檢閱已啟動的工作清單，然後透過確認 **開始** 或中止使用 **取消**.
 
 ### 取消翻譯工作 {#canceling-a-translation-job}
 
@@ -390,7 +390,7 @@ AEM中的翻譯專案使用標準 [AEM專案主控台。](/help/sites-cloud/auth
 
 如果您選取 **拒絕翻譯**，您可以選擇新增註解。
 
-拒絕內容會將內容傳回翻譯廠商，以便他們檢視評論。
+拒絕內容會將其傳回翻譯廠商，以便他們檢視註解。
 
 ### 完成並封存翻譯工作 {#completing-and-archiving-translation-jobs}
 
@@ -443,7 +443,7 @@ AEM中的翻譯專案使用標準 [AEM專案主控台。](/help/sites-cloud/auth
 
    ![比較語言副本](../assets/language-copy-compare.png)
 
-1. 兩個頁面（啟動項和來源）將並排開啟。
+1. 兩個頁面（啟動項和來源）並排開啟。
    * 如需關於使用此功能的完整資訊，請參閱 [頁面差異](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## 移動或重新命名來源頁面 {#move-source}

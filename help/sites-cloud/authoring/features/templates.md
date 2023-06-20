@@ -2,9 +2,9 @@
 title: 建立頁面範本
 description: 範本會定義結果頁面的結構，而且使用範本編輯器，建立和維護範本不再是開發人員專屬的工作
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4595'
 ht-degree: 12%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 12%
 >
 >切勿在範本中輸入任何需要國際化的資訊。 <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->對於必須本地化的範本元素（例如頁首和頁尾），請善用 [核心元件的本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
+>對於必須本地化的範本元素（例如頁首和頁尾），請使用 [核心元件的本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
 ### 建立範本資料夾 — 管理員 {#creating-a-template-folder-admin}
 
@@ -202,7 +202,7 @@ ht-degree: 12%
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
-   路徑順序無關，所有路徑都將掃描，所有範本都將擷取。
+   路徑的順序不相關。 會掃描所有路徑並擷取任何範本。
 
    >[!NOTE]
    >
@@ -513,18 +513,18 @@ ht-degree: 12%
 
 * 可編輯的已解除鎖定元件會加上標籤。 選取時，它們具有藍色邊框：
 
-   ![初始內容模式](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
+  ![初始內容模式](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
 
 * 已解鎖的元件有一個工具列，可讓您編輯和設定內容：
 
-   ![已解鎖的元件](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
+  ![已解鎖的元件](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
 * 如果容器元件已解除鎖定(在「結 **構** 」模式中)，則您可以在「初始內容 **** 」模式中新增元件至容器。在「初始內 **容」模式中新增的元件** ，可在產生的頁面上移動或從中刪除。
 
-   您可以使用「拖曳元件到此處 **」區域，或從適當容器的工具列** 中使用「插入新元件 **** 」選項來新增元件。
+  您可以使用「拖曳元件到此處 **」區域，或從適當容器的工具列** 中使用「插入新元件 **** 」選項來新增元件。
 
-   ![新增元件](/help/sites-cloud/authoring/assets/templates-add-component.png)
-   ![新增元件](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
+  ![新增元件](/help/sites-cloud/authoring/assets/templates-add-component.png)
+  ![新增元件](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
 
 * 如果在根據範本建立頁面後更新範本的初始內容，則範本中初始內容的變更不會影響這些頁面。
 
@@ -566,24 +566,24 @@ ht-degree: 12%
 
 * 您可以從以下位置為頁面選取現有原則： **選取原則** 下拉式清單。
 
-   ![原則選擇器](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
+  ![原則選擇器](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-   選取「 」旁邊的「新增」按鈕，即可新增一項原則。 **選取原則** 下拉式清單。 之後，新的標題應會在 **原則標題** 欄位。
+  選取「 」旁邊的「新增」按鈕，即可新增一項原則。 **選取原則** 下拉式清單。 之後，新的標題應會在 **原則標題** 欄位。
 
-   ![「新增原則」按鈕](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+  ![「新增原則」按鈕](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-   中選取的現有原則 **選取原則** 下拉式清單可使用下拉式清單旁邊的複製按鈕復製為新原則。 之後，新的標題應會在 **原則標題** 欄位。 依預設，複製的原則標題為 **X的副本**，其中X是複製原則的標題。
+  中選取的現有原則 **選取原則** 下拉式清單可使用下拉式清單旁邊的複製按鈕復製為新原則。 之後，新的標題應會在 **原則標題** 欄位。 依預設，複製的原則標題為 **X的副本**，其中X是複製原則的標題。
 
-   ![「複製原則」按鈕](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+  ![「複製原則」按鈕](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 * 在中定義原則的標題 **原則標題** 欄位。 原則必須有標題，才能輕鬆地在 **選取原則** 下拉式清單。
 
-   ![原則標題](/help/sites-cloud/authoring/assets/templates-policy-title.png)
+  ![原則標題](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * 原則說明是選擇性的，可在 **原則說明** 欄位。
 * 在 **其他範本也使用選取的原則** 區段中，您可以輕鬆檢視哪些其他範本使用了在以下專案中選擇的原則： **選取原則** 下拉式清單。
 
-   ![原則使用方式](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+  ![原則使用方式](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### 頁面內容 {#page-properties}
 
@@ -593,17 +593,17 @@ ht-degree: 12%
 
 * 指定您要套用至使用此範本建立之頁面的使用者端程式庫。 在的文字欄位中輸入程式庫名稱 **使用者端資源庫** 區段。
 
-   ![使用者端程式庫](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
+  ![使用者端程式庫](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * 如果需要多個程式庫，請按一下「新增」按鈕，為程式庫名稱新增其他文字欄位。
 
-   ![新增按鈕](/help/sites-cloud/authoring/assets/templates-add-button.png)
+  ![新增按鈕](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-   視需要為您的使用者端資料庫新增任意數目的文字欄位。
+  視需要為您的使用者端資料庫新增任意數目的文字欄位。
 
 * 使用拖曳操作框拖曳欄位，視需要定義物件庫的相對位置。
 
-   ![拖曳控點](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
+  ![拖曳控點](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
 
 >[!NOTE]
 >
@@ -633,13 +633,16 @@ ht-degree: 12%
 
       * 這些會立即套用至產生的頁面。
       * 訪客仍需發佈已變更的範本，才能檢視變更。
+
    * 內容原則和設計設定的變更：
 
       * 這些會立即套用至產生的頁面。
       * 訪客需要發佈變更才能檢視變更。
+
    * 初始內容的變更：
 
       * 這些僅適用於範本變更後建立的頁面。
+
    * 配置圖變更取決於修改的元件是否屬於下列專案：
 
       * 僅限結構 — 立即套用

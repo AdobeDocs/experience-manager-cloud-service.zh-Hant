@@ -2,10 +2,10 @@
 title: 選擇性 - 如何使用 AEM 建立單頁應用程式 (SPA)
 description: 在 AEM Headless 開發人員歷程的此延續部分 (選擇性)，您將了解 AEM 如何將無周邊傳遞與傳統的全堆疊 CMS 功能相結合，以及如何使用 AEM 的 SPA 編輯器框架建立可編輯的 SPA。
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 100%
+source-wordcount: '1274'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 * 使用 React 或 Angular 框架建立 SPA 的開發經驗
 * 建立內容片段和使用編輯器的基本 AEM 技能
-* 務必檢閱 [AEM Headful 和 Headless 技術](/help/implementing/developing/headful-headless.md)以了解可能的各種 SPA 整合層級。
+* 請務必檢閱此檔案 [AEM中的Headful和Headless](/help/implementing/developing/headful-headless.md) 以便瞭解各種SPA整合層級。
 
 ### 工具 {#tools}
 
@@ -72,7 +72,7 @@ AEM SPA 編輯器允許前端開發人員建立可整合到 AEM 網站的 SPA，
 
 ## AEM 如何處理 SPA
 
-在 AEM 開發單頁應用程式是假設前端開發人員在建立 SPA 時有遵守標準最佳做法。如果作為前端開發人員，您遵循這些一般最佳做法以及一些 AEM 的特定原則，您的 SPA 將可透過 AEM 及其內容編寫功能運作。
+在 AEM 開發單頁應用程式是假設前端開發人員在建立 SPA 時有遵守標準最佳做法。如果您身為前端開發人員，遵循這些一般最佳實務以及一些AEM特定原則，您的SPA將可透過AEM及其內容製作功能運作。
 
 * **可攜性** - 如同任何元件，SPA 元件應盡可能建置為具可攜性。SPA 應該使用可攜帶和可重複使用的元件建置。
 * **AEM 促成網站結構** - 前端開發人員建立元件並擁有其內部結構，但依賴 AEM 來定義網站的內容結構。
@@ -93,7 +93,7 @@ AEM 中的 SPA 支援帶入一個薄 JS 層，在頁面編輯器中載入內容�
 
 ## 容納現有的 SPA {#existing-spas}
 
-如果您已有 SPA，AEM 支援將其內嵌到 AEM，以便您的內容作者可在 AEM 編輯器看到它。對於透過內容片段建立的內容，此舉可大力協助在終端應用程式 (其會取用該內容) 的情境下檢視該內容。
+如果您已有 SPA，AEM 支援將其內嵌到 AEM，以便您的內容作者可在 AEM 編輯器看到它。這對於檢視他們透過內容片段在使用的最終應用程式內容中建立的內容非常有用。
 
 此外，只需少量變更，您就可以在 AEM 編輯器中對外部 SPA 進行特定編輯。
 

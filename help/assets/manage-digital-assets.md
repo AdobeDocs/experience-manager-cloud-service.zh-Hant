@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4378'
+source-wordcount: '4377'
 ht-degree: 12%
 
 ---
@@ -30,7 +30,6 @@ ht-degree: 12%
 >
 >* 共用型別的資產資料夾 `sling:OrderedFolder`，在共用至Experience Cloud時不受支援。 如果要共用資料夾，請勿選取 [!UICONTROL 已訂購] 建立資料夾時。
 >* Experience Manager不允許使用 `subassets` word做為資料夾的名稱。 這是為包含複合資產之子資產的節點保留的關鍵字
-
 
 1. 導覽至數位資產資料夾中您要建立新資料夾的位置。 在功能表中，按一下 **[!UICONTROL 建立]**. 選取 **[!UICONTROL 新增資料夾]**.
 1. 在 **[!UICONTROL 標題]** 欄位中，提供資料夾名稱。 根據預設，DAM會使用您提供的標題作為資料夾名稱。 建立資料夾後，您可以覆寫預設值並指定另一個資料夾名稱。
@@ -184,11 +183,11 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    * 指定資產移動後的名稱。 然後點選/按一下 **[!UICONTROL 下一個]** 以繼續進行。
 
    * 點選/按一下 **[!UICONTROL 取消]** 以停止程式。
+
    >[!NOTE]
    >
    >* 如果新位置沒有同名的資產，您可以為該資產指定相同的名稱。 不過，如果您將資產移至有相同名稱的資產存在的位置，則應使用不同的名稱。 如果您使用相同的名稱，系統會自動產生名稱的變數。 例如，如果資產的名稱為Square，則系統會為其副本產生名稱Square1。
    >* 重新命名時，檔案名稱中不允許有空格。
-
 
 1. 於 **[!UICONTROL 選取目的地]** 對話方塊，請執行下列任一項作業：
 
@@ -486,7 +485,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 >[!NOTE]
 >
->如果您選取多個註解，最新的註解將顯示在使用者介面上。
+>如果您選取多個註解，最新的註解會顯示在使用者介面上。
 >
 >僅支援將註解資產列印為PDF的多重選取。
 

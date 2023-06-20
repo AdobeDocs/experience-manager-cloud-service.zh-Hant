@@ -2,10 +2,10 @@
 title: 處理大型內容存放庫
 description: 本節說明如何處理大型內容存放庫
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1846'
-ht-degree: 8%
+source-wordcount: '1837'
+ht-degree: 6%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_precopy"
 >title="處理大型內容存放庫"
->abstract="為了顯著加快內容轉移活動的提取和攝入階段以將內容移至 AEM as a Cloud Service，CTT 可以利用 AzCopy 作為預複製步驟 (選用)。設定此預先步驟後，在提取階段，AzCopy 會從 Amazon S3 或 Azure Blob 儲存空間將 blob 複製到移轉集 blob 存放區。在攝入階段，AzCopy 將 blob 會從移轉集 blob 存放區將 blob 複製到目的地 AEM as a Cloud Service blob 存放區。"
+>abstract="為了大幅加快內容轉移活動的擷取和擷取階段，以將內容移至AEMas a Cloud Service，CTT可以使用AzCopy作為選用的預先複製步驟。 設定此預先步驟後，在提取階段，AzCopy 會從 Amazon S3 或 Azure Blob 儲存空間將 blob 複製到移轉集 blob 存放區。在攝入階段，AzCopy 將 blob 會從移轉集 blob 存放區將 blob 複製到目的地 AEM as a Cloud Service blob 存放區。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="開始使用 AzCopy 作為預複製步驟"
 
 使用內容轉移工具(CTT)複製大量Blob可能需要幾天時間。
-為了大幅加快內容轉移活動的擷取和擷取階段，以將內容移至AEMas a Cloud Service，CTT可以善用 [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 作為選擇性預先複製步驟。 當來源AEM執行個體設定為使用Amazon S3、Azure Blob儲存體資料存放區或檔案資料存放區時，可使用此預先複製步驟。 預先複製步驟對第1次完整擷取和擷取最為有效。 不過，不建議對後續追加使用預先複製（如果追加大小小於200GB），因為這樣可能會增加整個程式的時間。 設定此預先步驟後，在擷取階段，AzCopy會將Blob從Amazon S3、Azure Blob儲存體或檔案資料存放區複製至移轉集Blob存放區。 在攝入階段，AzCopy 將 blob 會從移轉集 blob 存放區將 blob 複製到目的地 AEM as a Cloud Service blob 存放區。
+為了大幅加快內容轉移活動的擷取和擷取階段，以將內容移至AEMas a Cloud Service，CTT可以使用 [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 作為選擇性預先複製步驟。 當來源AEM執行個體設定為使用Amazon S3、Azure Blob儲存體資料存放區或檔案資料存放區時，可使用此預先複製步驟。 預先複製步驟對第1次完整擷取和擷取最為有效。 不過，不建議對後續追加使用預先複製（如果追加大小小於200GB），因為這樣可能會增加整個程式的時間。 設定此預先步驟後，在擷取階段，AzCopy會將Blob從Amazon S3、Azure Blob儲存體或檔案資料存放區複製至移轉集Blob存放區。 在攝入階段，AzCopy 將 blob 會從移轉集 blob 存放區將 blob 複製到目的地 AEM as a Cloud Service blob 存放區。
 
 ## 開始前的重要考量 {#important-considerations}
 
@@ -81,10 +81,10 @@ ht-degree: 8%
 #### 檔案資料存放區 {#file-data-store-determine-size}
 
 * 對於mac、UNIX系統，請在資料存放區目錄上執行du命令以取得其大小：
-   `du -sh [path to datastore on the instance]`。例如，如果您的資料存放區位於 `/mnt/author/crx-quickstart/repository/datastore`，下列命令會為您取得其大小： `du -sh /mnt/author/crx-quickstart/repository/datastore`.
+  `du -sh [path to datastore on the instance]`。例如，如果您的資料存放區位於 `/mnt/author/crx-quickstart/repository/datastore`，下列命令會為您取得其大小： `du -sh /mnt/author/crx-quickstart/repository/datastore`.
 
 * 對於Windows，請使用資料存放區目錄上的dir命令來取得其大小：
-   `dir /a/s [location of datastore]`。
+  `dir /a/s [location of datastore]`。
 
 ### 1.安裝AzCopy {#install-azcopy}
 
@@ -109,7 +109,7 @@ ht-degree: 8%
 在來源AEM例項中 `crx-quickstart/cloud-migration`，建立名為的新檔案 `azcopy.config`.
 
 >[!NOTE]
->此設定檔案的內容會因您的來源AEM執行個體使用Azure、Amazon S3資料存放區或檔案資料存放區而有所不同。
+>此設定檔案的內容會因您的來源AEM執行個體使用Azure或Amazon S3資料存放區或檔案資料存放區而有所不同。
 
 #### Azure Blob儲存體資料存放區 {#azure-blob-storage-data}
 
@@ -152,7 +152,7 @@ repository.home=/mnt/crx/author/crx-quickstart/repository/datastore
 
 azCopyPath屬性必須包含azCopy命令列工具安裝在來源AEM執行個體上的位置的完整路徑。 如果缺少azCopyPath屬性，將不會執行blob預先複製步驟。
 
-若 `repository.home` azcopy.config中缺少屬性，則為預設資料存放區位置 `/mnt/crx/author/crx-quickstart/repository/datastore` 將用於執行預先複製。
+若 `repository.home` azcopy.config中缺少屬性，則為預設資料存放區位置 `/mnt/crx/author/crx-quickstart/repository/datastore` 用於執行預先複製。
 
 ### 4.使用AzCopy擷取 {#extracting-azcopy}
 
@@ -172,7 +172,7 @@ c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy p
 
 恭喜！此記錄專案表示您的設定被視為有效，且AzCopy目前正在將所有blob從來源容器複製到移轉容器。
 
-來自AzCopy的記錄專案會出現在擷取記錄中，且會加上前置詞c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy預先複製]
+來自AzCopy的記錄專案會顯示在擷取記錄中，並加上前置詞c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy預先複製]
 
 >[!CAUTION]
 >
@@ -189,11 +189,11 @@ c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy p
 
 在發生AzCopy問題的情況下，擷取將立即失敗，而擷取記錄將包含失敗的詳細資訊。
 
-AzCopy在後續執行時將自動略過在錯誤發生前複製的任何Blob，而且不需要再次複製。
+AzCopy會在後續執行時自動略過在錯誤發生前複製的任何Blob，而且不需要再次複製。
 
 #### 針對檔案資料存放區 {#file-data-store-extract}
 
-當針對來源檔案dataStore執行AzCopy時，您應該會在記錄中看到類似這些的訊息，指出正在處理資料夾：
+為來源檔案dataStore執行AzCopy時，您應該會在記錄中看到類似這些的訊息，指出正在處理資料夾：
 `c.a.g.s.m.c.a.AzCopyFileSourceBlobPreCopy - [AzCopy pre-copy] Processing folder (1/24) crx-quickstart/repository/datastore/5d`
 
 ### 5.使用AzCopy擷取 {#ingesting-azcopy}

@@ -2,10 +2,10 @@
 title: 新增自訂網域名稱
 description: 了解如何使用 Cloud Manager 新增自訂網域名稱。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
-workflow-type: ht
-source-wordcount: '577'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '574'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->具有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的使用者可以使用 Cloud Manager 刪除自訂網域名稱。
+>使用者必須具備 **業務負責人** 或 **部署管理員** 在Cloud Manager中新增自訂網域名稱的角色
 
 ## 從域設定頁面新增自訂網域名稱 {#adding-cdn-settings}
 
@@ -42,7 +42,7 @@ ht-degree: 100%
    >
    >不包括`http://`,`https://`, 或輸入您的域時的空格。
 
-1. 選擇&#x200B;**環境**&#x200B;其服務將與網域名稱相關聯。
+1. 選取 **環境** 其服務與網域名稱相關聯。
 
 1. 選擇任一&#x200B;**發布**&#x200B;或者&#x200B;**預習**&#x200B;服務。
 

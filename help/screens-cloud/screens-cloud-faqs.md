@@ -2,7 +2,7 @@
 title: Screens as a Cloud Service 常見問題集
 description: 本頁說明Screensas a Cloud Service常見問答。
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 02c9cbff56399ea2ca1baad7d2289d5d4c17c1c5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 2%
@@ -43,7 +43,7 @@ scripts=[
 
 ## 如果處於開發人員模式（線上）的管道未在AEM Screens Player上呈現，怎麼辦？{#screens-cloud-online-channel-blank-iframe}
 
-建議您運用AEM Screens快取功能，但如果您需要在開發人員模式下執行頻道，而AEM Screens Player顯示空白畫面，請檢查您的Player開發人員工具，並尋找 `X-Frame-Options` 或 `frame-ancestors` 錯誤。 解決方法是將Dispatcher設定為允許內容在iFrame中執行。 通常以下設定將可運作：
+建議您使用AEM Screens快取功能，但如果您需要在開發人員模式下執行頻道，而AEM Screens Player顯示空白畫面，請檢查您的Player開發人員工具，並尋找 `X-Frame-Options` 或 `frame-ancestors` 錯誤。 解決方法是將Dispatcher設定為允許內容在iFrame中執行。 通常以下設定將可運作：
 
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"

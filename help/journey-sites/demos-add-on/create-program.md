@@ -2,9 +2,9 @@
 title: 建立計畫
 description: 了解如何設定新方案和管道以部署附加元件。
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '713'
 ht-degree: 13%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->您的使用者必須是 **業務負責人** 在您組織的Cloud Manager中角色以便建立計畫。
+>您的使用者必須是 **業務負責人** 在您組織的Cloud Manager中角色以建立計畫。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Adobe Cloud Manager。
 

@@ -2,7 +2,7 @@
 title: 與 Adobe Analytics 整合時使用的 IMS 設定
 description: 瞭解與Adobe Analytics整合時使用的IMS設定
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 5%
@@ -74,9 +74,9 @@ ht-degree: 5%
 1. 將會顯示您擁有的任何專案。 選取 **建立新專案**  — 位置和使用將取決於：
 
    * 如果您還沒有任何專案， **建立新專案** 將會是底部中心。
-      ![建立新專案 — 第一個專案](assets/integration-analytics-ims-02.png)
+     ![建立新專案 — 第一個專案](assets/integration-analytics-ims-02.png)
    * 如果您已有專案，這些專案將會列示於 **建立新專案** 將位於右上方。
-      ![建立新專案 — 多個專案](assets/integration-analytics-ims-03.png)
+     ![建立新專案 — 多個專案](assets/integration-analytics-ims-03.png)
 
 
 1. 選取 **新增至專案** 後面接著 **API**：
@@ -176,7 +176,6 @@ ht-degree: 5%
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
 
-
 1. 選取您的設定。
 1. 選取 **檢查健康狀態** （從工具列），後面接著 **Check**.
 
@@ -198,7 +197,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
    The **Create Configuration** dialog will open.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
    You can also select the required template (if more than one is available).
 

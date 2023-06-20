@@ -2,10 +2,10 @@
 title: 設定 Headless 內容的翻譯規則
 description: 了解如何定義翻譯規則以識別要翻譯的內容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,6 @@ ht-degree: 100%
 >* **可翻譯**&#x200B;標幟會自動為您建立翻譯規則，不需任何介入。
 >* 只有當翻譯整合框架設定設為&#x200B;**[為翻譯啟用內容模型欄位](/help/sites-cloud/administering/translation/integration-framework.md)**&#x200B;時，才能使用&#x200B;**可翻譯**&#x200B;標幟。
 >* 在 TIF 設定中啟用此選項將取代任何手動建立的翻譯規則。|
-
 
 ## 目標 {#objective}
 
@@ -77,7 +76,7 @@ ht-degree: 100%
 1. AEM 儲存設定。
 1. 您必須選取剛剛建立的內容，然後點選或單一下&#x200B;**編輯**。這將開啟&#x200B;**翻譯規則編輯器** 以設定屬性。
    ![翻譯規則編輯器](assets/translation-rules-editor.png)
-1. 依預設，所有設定都繼承自父路徑，在此案例中為 `/content/dam`。取消勾選&#x200B;**繼承自`/content/dam`** 選項，以新增其他欄位至設定。
+1. 依預設，所有設定都繼承自父路徑，在此案例中為 `/content/dam`。取消核取選項 **繼承自`/content/dam`** 以便您將其他欄位新增到設定。
 1. 取消勾選後，在清單的&#x200B;**一般**&#x200B;部分下，新增您[先前識別為翻譯欄位](getting-started.md#content-models)之內容片段模型的屬性名稱。
    1. 在&#x200B;**新屬性**&#x200B;欄位中輸入屬性名稱。
    1. 選項&#x200B;**翻譯**&#x200B;和&#x200B;**繼承**&#x200B;會自動勾選。

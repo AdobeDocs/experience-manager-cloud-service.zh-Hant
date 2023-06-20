@@ -2,10 +2,10 @@
 title: 如何在 AEM Headless 中將您的應用程式和內容組合在一起
 description: 在 AEM Headless 開發人員歷程的這一部分中，了解如何使用您的 AEM 專案 (包含內容片段)、GraphQL 呼叫、REST API 呼叫和您的應用程式，並為上線做好準備。
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 100%
+source-wordcount: '1065'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 ## AEM SDK {#the-aem-sdk}
 
-AEM SDK 用於建置和部署自訂程式碼。它是您在上線前開發和測試無周邊應用程式所需的主要工具。它都包含下列成品：
+AEM SDK 用於建置和部署自訂程式碼。這是您所需的主要工具，因此您可以在Headless應用程式上線前開發和測試。 它都包含下列成品：
 
 * Quickstart jar - 這是可執行的 jar 檔案，可用於設定作者和發佈執行個體
 * Dispatcher 工具 - Dispatcher 模組及其對基於 Windows 和 Unix® 系統的相依性
@@ -64,7 +64,7 @@ Node.js 是 JavaScript 執行階段環境，用於處理 AEM 專案 `ui.frontend
 
 接下來，讓我們看看 AEM 環境的組成部分。
 
-完整的 AEM 環境由作者、發佈和 Dispatcher 組成。這些相同的元件在本機開發執行階段中可用，以方便您在上線前預覽您的程式碼和內容。
+完整的 AEM 環境由作者、發佈和 Dispatcher 組成。這些相同的元件在本機開發執行階段中可供使用，讓您能夠更輕鬆地在上線前預覽程式碼和內容。
 
 * **作者服務**&#x200B;是內部使用者建立、管理和預覽內容的地方。
 
@@ -74,7 +74,7 @@ Node.js 是 JavaScript 執行階段環境，用於處理 AEM 專案 `ui.frontend
 
 ## 本機開發工作流程 {#the-local-development-workflow}
 
-本機開發專案以 Apache Maven 為基礎建置，並使用 Git 進行原始檔控制。為了更新專案，開發人員可以使用偏好的整合式開發環境，例如 Eclipse、Visual Studio Code 或 IntelliJ 等。
+本機開發專案以 Apache Maven 為基礎建置，並使用 Git 進行原始檔控制。若要更新專案，開發人員可以使用他們偏好的整合式開發環境，例如Eclipse、Visual Studio Code或IntelliJ等。
 
 若要測試無周邊應用程式取用的程式碼或內容更新，您必須將更新部署到本機 AEM 執行階段，其中包括 AEM 作者和發佈服務的本機執行個體。
 
@@ -84,7 +84,7 @@ Node.js 是 JavaScript 執行階段環境，用於處理 AEM 專案 `ui.frontend
 
 ## 使用本機開發環境在本機預覽程式碼和內容 {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-為了讓 AEM 無周邊專案準備好開始，您需要確保專案的所有組成部分都正常運作。
+若要準備您的AEM Headless專案以進行啟動，您必須確保專案的所有組成部份皆正常運作。
 
 為此，您必須將所有項目放在一起：程式碼、內容和設定，並在本機開發環境中測試以準備好上線。
 

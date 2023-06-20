@@ -3,9 +3,9 @@ title: 使用內容片段搭配GraphQL （Assets — 內容片段）的Headless�
 description: 瞭解透過GraphQL使用內容片段實現AEM Headless CMS以進行Headless內容傳送的基本概念。
 feature: Content Fragments, GraphQL API
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '733'
 ht-degree: 29%
 
 ---
@@ -24,14 +24,12 @@ ht-degree: 29%
 >
 >* [Headless和AEM](/help/headless/introduction.md) 介紹AEM Sites的Headless開發as a Cloud Service。
 
-
 >[!NOTE]
 >
 >GraphQL 目前在 Adobe Experience Manager (AEM) as a Cloud Service 中用於兩個 (獨立) 情況：
 >
 >* [AEM Commerce透過GraphQL使用來自Commerce平台的資料](/help/commerce-cloud/integrating/magento.md).
 >* [AEM內容片段與AEM GraphQL API (根據標準GraphQL的自訂實施)搭配使用，提供結構化內容用於您的應用程式](/help/headless/graphql-api/content-fragments.md).
-
 
 ## Headless CMS {#headless-cms}
 
@@ -41,15 +39,15 @@ Headless內容管理系統(CMS)是僅用於後端的內容管理系統，其明�
 
 * 您可以使用內容片段來撰寫主要不打算在格式化頁面上直接發佈(1:1)的內容。
 
-* 您的內容片段內容將以預先決定的方式建構 — 根據內容片段模式。 這可簡化應用程式的存取，進而處理您的內容。
+* 您的內容片段的內容以預先決定的方式建構 — 根據內容片段模式。 這可簡化應用程式的存取，進而處理您的內容。
 
 ## GraphQL — 概觀 {#graphql-overview}
 
 GraphQL 是：
 
-* &quot;*...一種API和執行階段的查詢語言，可使用您的現有資料滿足這些查詢。*「。
+* &quot;*...一種用於API和執行階段的查詢語言，可使用您的現有資料滿足這些查詢。*「。
 
-   請參閱 [GraphQL.org](https://graphql.org)
+  請參閱 [GraphQL.org](https://graphql.org)
 
 此 [AEM GRAPHQL API](#aem-graphql-api) 可讓您對執行（複雜）查詢 [內容片段](/help/assets/content-fragments/content-fragments.md)；每個查詢都根據特定的模型型別。 然後，您的應用程式可以使用傳回的內容。
 

@@ -2,9 +2,9 @@
 title: 建立和使用主題
 description: 您可以使用主題來風格化最適化表單，並使用核心元件提供視覺身分。 您可以在任何數量的Adaptive Forms中共用主題。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1664'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->最適化表單主題不應與 [最適化表單範本。](/help/forms/template-editor.md) 最適化表單主題僅包含最適化表單的樣式資訊。 最適化表單範本定義表單結構和初始內容，並包含主題以允許建立新的 [最適化表單。](/help/forms/creating-adaptive-form.md)
+>最適化表單主題不應與 [最適化表單範本。](/help/forms/template-editor.md) 最適化表單主題僅包含最適化表單的樣式資訊。 最適化表單範本定義表單結構和初始內容，並包含允許建立新表單的主題 [最適化表單。](/help/forms/creating-adaptive-form.md)
 
 ## 使用核心元件在Adaptive Forms中使用畫布主題 {#using-theme-in-adaptive-form}
 
@@ -131,7 +131,6 @@ AEM_PROXY_PORT=7000
    > * 建立本機使用者以登入本機。 為主題設計者提供投稿人角色。
    > * 如果您將AEM URL指定為 `http://localhost:[port]/` 在 `.env` 畫布布主題的檔案，系統會將您直接重新導向至瀏覽器。
 
-
 1. 登入後，請變更瀏覽器中的URL，使其指向AEM管理員提供給您的範例內容路徑。
 
    * 例如，如果提供的路徑為 `/content/formname.html?wcmmode=disabled`，將URL變更為 `http://localhost:[port]/content/forms/af/formname.html?wcmmode=disabled`
@@ -200,8 +199,7 @@ AEM_PROXY_PORT=7000
 
 1. 使用類似於的命令將您正在編輯的主題存放庫檔案移動到雲端存放庫中
    `cp -r [source-theme-folder]/* [destination-cloud-repo]`
-例如，使用此命令 
-`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+例如，使用此命令 `cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
 1. 在雲端存放庫的目錄中，使用下列命令提交您移動到的主題檔案。
 
    ```text
@@ -246,15 +244,15 @@ AEM_PROXY_PORT=7000
 
 * **避免使用其他主題的資產**
 
-   編輯主題時，您可以瀏覽並新增其他主題中的資產（例如影像）。 例如，您正在編輯頁面的背景。 例如，當您選取 **[!UICONTROL 頁面]** ![編輯按鈕](assets/edit-button.png)> **[!UICONTROL 背景]** > **[!UICONTROL 新增]** > **[!UICONTROL 影像]**，您會看到對話方塊，可讓您瀏覽並新增其他主題中的影像。
+  編輯主題時，您可以瀏覽並新增其他主題中的資產（例如影像）。 例如，您正在編輯頁面的背景。 例如，當您選取 **[!UICONTROL 頁面]** ![編輯按鈕](assets/edit-button.png)> **[!UICONTROL 背景]** > **[!UICONTROL 新增]** > **[!UICONTROL 影像]**，您會看到對話方塊，可讓您瀏覽並新增其他主題中的影像。
 
-   如果從其他主題新增資產，而另一個主題被移動或刪除，則您可能會遇到目前主題的問題。 建議您避免瀏覽和新增其他主題中的資產。
+  如果從其他主題新增資產，而另一個主題被移動或刪除，則您可能會遇到目前主題的問題。 建議您避免瀏覽和新增其他主題中的資產。
 
 * **變更容器面板配置寬度**
 
-   不建議變更容器面板配置寬度。 當您指定容器面板的寬度時，它會變成靜態，不會適應不同的顯示。
+  不建議變更容器面板配置寬度。 當您指定容器面板的寬度時，它會變成靜態，不會適應不同的顯示。
 
 * **使用表單編輯器或主題編輯器來處理頁首和頁尾**
 
-   如果要使用字型樣式、背景和透明度等樣式選項來設定頁首和頁尾的樣式，請使用主題編輯器。
+  如果要使用字型樣式、背景和透明度等樣式選項來設定頁首和頁尾的樣式，請使用主題編輯器。
 如果您想在頁尾中提供標誌影像、公司名稱和版權資訊等資訊，請使用表單編輯器選項。

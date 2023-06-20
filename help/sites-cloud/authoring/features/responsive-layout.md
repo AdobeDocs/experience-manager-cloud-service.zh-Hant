@@ -2,9 +2,9 @@
 title: 回應式版面
 description: AEM可讓您為頁面實現回應式佈局
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1764'
 ht-degree: 7%
 
 ---
@@ -28,11 +28,11 @@ AEM使用多種機制組合，為您的頁面實現回應式佈局：
 
 * [**配置容器**](#adding-a-layout-container-and-its-content-edit-mode) 元件
 
-   此元件位於 [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 和提供了一個格點段落系統，可讓您在回應式格點內新增和定位元件。 它也可以設定為您的頁面上的預設段落系統。
+  此元件位於 [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 和提供了一個格點段落系統，可讓您在回應式格點內新增和定位元件。 它也可以設定為您的頁面上的預設段落系統。
 
 * [**佈局模式**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
-   將版面容器放置到頁面上後，您就可以使用 **版面** 在回應式格線中定位內容的模式。
+  將版面容器放置到頁面上後，您就可以使用 **版面** 在回應式格線中定位內容的模式。
 
 * [**模擬器**](#selecting-a-device-to-emulate)
 這可讓您建立並編輯回應式網站，這些網站可透過以互動方式調整元件大小，根據裝置/視窗大小重新安排版面。 之後，使用者便可使用模擬器檢視內容的呈現方式。
@@ -124,7 +124,6 @@ AEM可讓您根據裝置的寬度來定義版面：
    * 如果模擬的裝置高度高於熒幕大小，則不會顯示折線。
    * 顯示摺頁是為了方便作者，不會顯示在已發佈的頁面上。
 
-
 ## 新增版面容器及其內容 (編輯模式) {#adding-a-layout-container-and-its-content-edit-mode}
 
 A **配置容器** 是段落系統，具備以下功能：
@@ -160,7 +159,7 @@ A **配置容器** 是段落系統，具備以下功能：
 
 1. 如果配置元件為巢狀，請選取 **父級** 選項會顯示下拉式選取專案，讓您選取巢狀配置容器或其父項。
 
-   當您將滑鼠移至下拉式清單中的容器名稱上時，其外框將顯示在頁面上。
+   將滑鼠移至下拉式清單中的容器名稱上時，其外框會顯示在頁面上。
 
    * 最低的巢狀配置容器將以藍色外框。
    * 每個後續容器都會以較淺的藍色陰影顯示。
@@ -190,53 +189,54 @@ A **配置容器** 是段落系統，具備以下功能：
 
 * 使用藍點調整內容元件的大小。 調整大小一律靠齊格點。 當調整背景格點大小時，將顯示以協助對齊：
 
-   ![調整元件大小](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+  ![調整元件大小](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
-   >[!NOTE]
-   >
-   >當元件(例如 **影像** 都會重新調整大小。
+  >[!NOTE]
+  >
+  >當元件(例如 **影像** 都會重新調整大小。
 
 * 按一下/點選內容元件，工具列可讓您：
    * **父級**  — 可讓您選取整個版面容器元件，以便對整體執行動作。
    * **浮動至新行**  — 元件會移至新的一行，視格線內的可用空間而定。
    * **隱藏元件**  — 元件將變得不可見（可從版面配置容器的工具列還原）。
 
-   ![隱藏元件](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
+  ![隱藏元件](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
 * 在 **版面** 模式：您可以點選/按一下 **將元件拖曳到這裡** 以選取整個元件。 這將會顯示此模式的工具列。
 
-   根據版面配置元件和屬於它的元件的狀態，工具列會有不同的選項。 例如：
+  根據版面配置元件和屬於它的元件的狀態，工具列會有不同的選項。 例如：
 
    * **父級**  — 選取父元件。
 
-      ![父按鈕](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+     ![父按鈕](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
    * **顯示隱藏的元件**  — 顯示所有或個別元件。 數字表示目前有多少個隱藏元件。 計數器會顯示已隱藏的元件數。
 
-      ![顯示隱藏的元件按鈕](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
+     ![顯示隱藏的元件按鈕](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
    * **還原中斷點配置**  — 還原至預設版面。 這表示不會強制使用自訂版面。
 
-      ![還原中斷點配置按鈕](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
+     ![還原中斷點配置按鈕](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 
    * **浮動至新行**  — 如果間距允許，將元件向上移動一個位置。
 
-      ![浮動至新行按鈕](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
+     ![浮動至新行按鈕](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
 
    * **隱藏元件**  — 隱藏目前的元件。
 
-      ![隱藏元件按鈕](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
-   >[!NOTE]
-   >
-   >在上述範例中，浮動和隱藏動作可供使用，因為此配置容器巢狀內嵌於上層配置容器中。
+     ![隱藏元件按鈕](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
+
+  >[!NOTE]
+  >
+  >在上述範例中，浮動和隱藏動作可供使用，因為此配置容器巢狀內嵌於上層配置容器中。
 
    * **取消隱藏元件**
-選取父元件以顯示包含「 」的動作工具列 
-**顯示隱藏的元件** 選項。 在此示例中，隱藏了兩個元件。
+選取父元件以顯示包含「 」的動作工具列 **顯示隱藏的元件** 選項。 在此示例中，隱藏了兩個元件。
 
-      ![取消隱藏元件](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
-   選取「顯 **示隱藏的元件** 」(Show hidden components)選項，會以藍色顯示目前隱藏在原始位置的元件。
+     ![取消隱藏元件](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
 
-   ![全部還原按鈕](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+  選取「顯 **示隱藏的元件** 」(Show hidden components)選項，會以藍色顯示目前隱藏在原始位置的元件。
 
-   選取 **全部還原** 將取消隱藏所有隱藏的元件。
+  ![全部還原按鈕](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+
+  選取 **全部還原** 將取消隱藏所有隱藏的元件。

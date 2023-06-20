@@ -2,10 +2,10 @@
 title: 最佳化 GraphQL 查詢
 description: 了解如何為了提供無周邊內容在 Adobe Experience Manager as a Cloud Service 中進行內容片段篩選、分頁和排序時進行 GraphQL 查詢最佳化。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 100%
+source-wordcount: '1193'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ AEM 提供兩種方式進行 GraphQL 查詢最佳化：
 
 >[!NOTE]
 >
->出於技術原因 (例如靈活性、片段嵌套)，AEM 無法將整個篩選作業交委託至 JCR。
+>由於技術原因（例如，靈活性、片段的巢狀），AEM無法將整個篩選委派給JCR。
 
 這種技術保留了 GraphQL 篩選器提供的靈活性，同時將盡可能多將篩選作業委託給 JCR。
 
@@ -49,21 +49,20 @@ AEM 提供兩種方式進行 GraphQL 查詢最佳化：
 AEM 中的 GraphQL 支援兩種類型的分頁：
 
 * [限制式/位移式分頁](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-這是用於列表查詢；這些結尾是 
-`List`；例如， `articleList`。
+這是用於列表查詢；這些結尾是`List`；例如， `articleList`。
 若要使用，您必須提供第一個要返回項目的位置 (`offset`) 和要返回的項目數 (`limit`，或頁面大小)。
 
 * [游標式分頁](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (以 `first` 和 `after` 表示)
 這為每個項目提供了唯一 ID；也稱為游標。
 在查詢中，您要指定上一頁最後一項的游標，加上頁面大小 (要返回的最大項目數)。
 
-   由於游標式分頁不適合列表式查詢的資料結構，AEM 引入了 `Paginated` 查詢類型；例如，`articlePaginated`。使用的資料結構和參數需依 [GraphQL 游標連接規格](https://relay.dev/graphql/connections.htm)訂定。
+  由於游標式分頁不適合列表式查詢的資料結構，AEM 引入了 `Paginated` 查詢類型；例如，`articlePaginated`。使用的資料結構和參數需依 [GraphQL 游標連接規格](https://relay.dev/graphql/connections.htm)訂定。
 
-   >[!NOTE]
-   >
-   >AEM 目前支援前向分頁 (使用 `after`/`first` 參數)。
-   >
-   >不支援向後分頁 (使用 `before`/`last` 參數)。
+  >[!NOTE]
+  >
+  >AEM 目前支援前向分頁 (使用 `after`/`first` 參數)。
+  >
+  >不支援向後分頁 (使用 `before`/`last` 參數)。
 
 ## 排序 {#sorting}
 
@@ -130,7 +129,7 @@ AEM 中的 GraphQL 支援兩種類型的分頁：
 
 ### 篩選器運算式中的邏輯運算 {#logical-operations-in-filter-expressions}
 
-如果您在嵌套片段上進行篩選，您仍然可以透過在使用 `AND` 運算元來組合的頂層欄位上提供隨附的篩選器來利用 JCR 篩選。
+如果您正在篩選巢狀片段，您仍然可以套用JCR篩選，方法是在使用 `AND` 運運算元。
 
 一個典型使用案例是在頂層片段的 `_path` 欄位上使用篩選器來限制查詢的範圍，然後篩選可能位於頂層的其他欄位，或者篩選可能在嵌套片段上的欄位。
 

@@ -2,10 +2,10 @@
 title: 合適的人，合適的角色
 description: 合適的人，合適的角色
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -78,4 +78,4 @@ ht-degree: 100%
 
 >[!TIP]
 >
-> 進一步了解 Adobe Experience Cloud 並利用 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 上的資源，並透過 [Adobe 數位學習](https://learning.adobe.com/certification.html)獲得認證。
+> 進一步瞭解Adobe Experience Cloud並使用資源 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 並透過取得認證 [Adobe數位學習](https://learning.adobe.com/certification.html).

@@ -2,9 +2,9 @@
 title: 以as a Cloud Service方式在Screens中發佈頻道
 description: 本頁面說明如何以Screensas a Cloud Service發佈管道。
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '300'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 您可以從AEM Screens發佈內容。 「管理發布」功能可讓您傳遞內容更新，從作者更新至發佈至播放器。 您可以為整個AEM Screens專案或只有其中一個頻道、位置、播放器或應用程式發佈或取消發佈內容。
 
 >[!IMPORTANT]
->在專案中建立一個或多個管道後，必須發佈管道，才能在AEM Screens服務提供者的詳細目錄清單檢視中顯示管道/管道。
+>在專案中建立一個或多個管道後，必須發佈管道才能在AEM Screens Services Provider的詳細目錄清單檢視中顯示管道/管道。
 
 ## 目標 {#objective}
 
@@ -40,7 +40,7 @@ ht-degree: 1%
    ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >按一下 **+包含子項** 從動作列中，取消勾選所有選項以發佈專案中的所有模組，然後按一下「新增」以發佈。 依預設，所有方塊都會勾選，您必須手動取消勾選方塊才能發佈專案中的所有模組。
+   >按一下 **包含子項** 從動作列中，取消勾選所有選項以發佈專案中的所有模組，然後按一下「新增」以發佈。 預設會勾選所有方塊，您必須手動取消勾選方塊才能發佈專案中的所有模組。
 
 1. 從選取管道後 **管理發布** 精靈，按一下 **發佈** 以發佈頻道。
 

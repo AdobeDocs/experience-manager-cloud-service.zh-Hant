@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 26f697dab03e0a3387669304b7f7f14dc2182a6d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3481'
 ht-degree: 3%
 
 ---
@@ -89,7 +89,7 @@ Dynamic Media發佈設定適用於有經驗的網站開發人員和程式設計�
 | **[!UICONTROL 回覆影像大小限制]** | 必要.<br>僅對於新的Dynamic Media帳戶，預設大小限制會自動設定為寬度： `3000` 和高度： `3000` 兩者 **[!UICONTROL 影像伺服]** 和 **[!UICONTROL 測試影像伺服]**.<br>指定傳回給使用者端的回覆影像寬度與高度上限。 如果要求造成回覆影像的寬度或（或）高度大於此設定，則伺服器會傳回錯誤。<br>另請參閱 [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) Dynamic Media檢視器參考指南中的引數。 |
 | **[!UICONTROL 要求混淆模式]** | 若要將base64編碼套用至有效的請求，請啟用。<br>另請參閱 [要求模糊化](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) Dynamic Media檢視器參考指南中的引數。 |
 | **[!UICONTROL 要求鎖定模式]** | 如果您想要在要求中包含簡單的雜湊鎖定，請啟用。<br>另請參閱 [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) Dynamic Media檢視器參考指南中的引數。 |
-| **[!UICONTROL 預設要求屬性]** |  |
+| **[!UICONTROL 預設要求屬性]** | |
 | **[!UICONTROL 預設影像檔案字尾]** | 必要.<br>路徑不包含檔案字尾時，附加至目錄Path和MaskPath欄位值的預設資料檔案副檔名。<br>另請參閱 [預設分機](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) Dynamic Media檢視器參考指南中的引數。 |
 | **[!UICONTROL 預設字體名稱]** | 指定如果文字圖層要求未提供任何字型時，使用哪種字型。 如果已指定，它必須是此影像目錄的字型地圖或預設目錄的字型地圖中的有效字型名稱值。<br>另請參閱 [預設字型](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html) Dynamic Media檢視器參考指南中的引數。 |
 | **[!UICONTROL 預設影像]** | 提供預設影像，以便在找不到所要求的影像時傳回。<br>另請參閱 [預設影像](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) Dynamic Media檢視器參考指南中的引數。<br>**注意**：如果您的Dynamic Media Classic帳戶已有 **[!UICONTROL 預設影像]** 已選取（如下所設定） **[!UICONTROL 設定]** > **[!UICONTROL 應用]** > **[!UICONTROL 發佈設定]**，下 **[!UICONTROL 預設請求屬性]** 群組)，則您的Dynamic Media帳戶(在Experience Manager上)會從Dynamic Media Classic擷取檔案。 然後檔案會儲存並在您開啟 **[!UICONTROL Dynamic Media發佈設定]** 第一次瀏覽頁面。 |
@@ -195,13 +195,13 @@ Secure Testing服務目前支援下列資產型別和功能：
 * 網頁列印
 * UGC （使用者產生的內容）服務
 
-   >[!IMPORTANT]
-   >
-   >自2023年5月1日起，Dynamic Media中的UGC資產最多可在上傳日期後60天內使用。 60天後，資產將會移除。
+  >[!IMPORTANT]
+  >
+  >自2023年5月1日起，Dynamic Media中的UGC資產在上傳日期後60天內皆可使用。 60天後，資產會移除。
 
-   >[!NOTE]
-   >
-   >Adobe Dynamic Media已於2021年9月30日停止支援新的或現有的UGC向量影像資產。
+  >[!NOTE]
+  >
+  >Adobe Dynamic Media已於2021年9月30日停止支援新的或現有的UGC向量影像資產。
 
 ### 測試Secure Testing service {#test-secure-testing-service}
 

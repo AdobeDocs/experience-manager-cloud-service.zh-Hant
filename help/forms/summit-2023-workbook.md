@@ -7,9 +7,9 @@ topic-tags: develop
 hide: true
 hidefromtoc: true
 exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3359'
 ht-degree: 99%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 99%
 
 1. 打開瀏覽器並輸入 Cloud Service 編寫環境的 URL。
 
-1. 登入 Cloud Service 編寫環境。您編寫環境的登入認證將在使用實驗室期間與您共用。
+1. 登入 Cloud Service 編寫環境。您創作環境的登入憑證會在實驗期間與您共用。
 
 1. 登入後，瀏覽至 AEM Forms UI。點擊 **Forms**。
 
@@ -267,7 +267,6 @@ ht-degree: 99%
    > * 如果您收到要求透過 `npm notice Run npm nstall -g npm@9.6.0` 命令更新 npm 的訊息，請忽略該訊息。
    > * 除非活頁簿中有指示，否則不要執行其他 npm 命令。
 
-
 1. 現在執行以下命令來預覽表單。
 
    ```Shell
@@ -366,7 +365,7 @@ ht-degree: 99%
 
    * **AEM_FORM_PATH**：指定上節課程所建最適化表單的路徑。例如 `/content/forms/af/registration/`
 
-      ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
+     ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
 
 1. 打開命令視窗，確認您位於 react-starter-kit-aem-headless-forms 目錄中，然後執行以下命令：
 
@@ -515,7 +514,7 @@ ht-degree: 99%
 
    * **AEM_FORM_PATH**：指定上節課程所建最適化表單的路徑。例如 /content/forms/af/registration/
 
-      ![](/help/forms/assets/screenshot2028126929.png)
+     ![](/help/forms/assets/screenshot2028126929.png)
 
 1. 打開命令視窗，確認您位於 **react-starter-kit-aem-headless-forms** 目錄中，然後執行以下命令：
 

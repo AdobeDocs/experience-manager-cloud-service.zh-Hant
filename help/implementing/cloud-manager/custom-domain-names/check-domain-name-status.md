@@ -2,10 +2,10 @@
 title: 檢查網域名稱狀態
 description: 了解如何確定您的自訂網域名稱是否已透過 Cloud Manager 成功驗證。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 357c1b9c29b3a79ee7322f7f2176b6ae41fc9c2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 100%
+source-wordcount: '662'
+ht-degree: 93%
 
 ---
 
@@ -82,7 +82,7 @@ Fastly 會將網域鎖定到註冊它的初始帳戶，在未經許可的情況�
 
 ## 自訂網域名稱的預先存在 CDN 設定 {#pre-existing-cdn}
 
-如果您有自訂網域名稱的預先存在 CDN 設定，則&#x200B;**自訂網域名稱**&#x200B;和&#x200B;**環境**&#x200B;頁面上將顯示一則資訊訊息，鼓勵您透過 UI 新增這些設定，以便在 Cloud Manager 中顯示和設定它們。
+如果您有自訂網域名稱的既有CDN設定，則 **自訂網域名稱** 和 **環境** 頁面，鼓勵您透過UI新增這些設定，以便在Cloud Manager中顯示和設定它們。
 
 使用 UI 移轉所有預先存在的環境設定後，該訊息就會消失。訊息可能需要 1-2 個工作日才能消失。
 

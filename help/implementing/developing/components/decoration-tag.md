@@ -2,10 +2,10 @@
 title: 裝飾標記
 description: 轉譯網頁中的元件時可產生 HTML 元素，將轉譯的元件圍在其中。對於開發人員來說，AEM 提供簡單清晰的邏輯，可控制圍住所含元件的裝飾標記。
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 10%
+source-wordcount: '787'
+ht-degree: 11%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 10%
 * **`cq:htmlTag`節點：** 此節點可新增至元件下，並可擁有下列屬性：
    * **`cq:tagName {String}`：** 這可用來指定用於包住元件的自訂HTML標籤，而非預設DIV元素。
    * **`class {String}`：** 這可用來指定要新增至包裝函式的css類別名稱。
-   * 其他屬性名稱將會新增為HTML屬性，其字串值與提供的值相同。
+   * 其他屬性名稱會新增為HTML屬性，其字串值與提供的值相同。
 
 ## 指令碼控制項 {#script-controls}
 
@@ -89,7 +89,7 @@ ht-degree: 10%
 
 #### 使用案例1：包含程式碼重複使用的元件 {#use-case-include-a-component-for-code-reuse}
 
-最典型的使用案例是當一個元件包含另一個元件來重複使用程式碼時。 在這種情況下，包含的元件不需要使用其本身的工具列和對話方塊進行編輯，因此不需要包裝函式，以及元件的 `cq:htmlTag` 將被忽略。 這可以視為預設行為。
+最典型的使用案例是當一個元件包含另一個元件來重複使用程式碼時。 在這種情況下，包含的元件不需要使用其本身的工具列和對話方塊進行編輯，因此不需要包裝函式，以及元件的 `cq:htmlTag` 會忽略。 這可以視為預設行為。
 
 `one.html: <sly data-sly-resource="child"></sly>`
 

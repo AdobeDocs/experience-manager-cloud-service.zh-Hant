@@ -4,9 +4,9 @@ description: 使用Dispatcher工具進行驗證和偵錯（舊版）
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2345'
+source-wordcount: '2337'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-您可以有一或多個這些檔案。 它們包含 `<VirtualHost>` 與主機名稱相符的專案，並允許Apache使用不同規則處理每個網域流量。 檔案建立於 `available_vhosts` 目錄，並透過中的符號連結啟用 `enabled_vhosts` 目錄。 從 `.vhost` 檔案、其他檔案（例如重寫程式和變數）都會包含在內。
+您可以有一或多個這些檔案。 它們包含 `<VirtualHost>` 與主機名稱相符的專案，並允許Apache使用不同規則處理每個網域流量。 檔案建立於 `available_vhosts` 目錄，並透過中的符號連結啟用 `enabled_vhosts` 目錄。 從 `.vhost` 包括檔案、其他檔案（例如重寫程式和變數）。
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-您可以有一或多個這些檔案，而且它們包含陣列以符合主機名稱，並允許Dispatcher模組使用不同規則處理每個陣列。 檔案建立於 `available_farms` 目錄，並透過中的符號連結啟用 `enabled_farms` 目錄。 從 `.farm` 檔案、其他檔案（例如篩選器、快取規則等）都會包含在內。
+您可以有一或多個這些檔案，而且它們包含陣列以符合主機名稱，並允許Dispatcher模組使用不同規則處理每個陣列。 檔案建立於 `available_farms` 目錄，並透過中的符號連結啟用 `enabled_farms` 目錄。 從 `.farm` 包括檔案、其他檔案（例如篩選器、快取規則等）。
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 這些檔案是基本框架的一部分，可強制實施標準和最佳實務。 這些檔案被視為不可變，因為在本機修改或刪除它們將不會對您的部署造成影響，因為它們將不會傳輸到您的雲端執行個體。
 
-建議上述檔案參考下列不可變檔案，然後加上任何其他陳述式或覆寫。 將Dispatcher設定部署到雲端環境時，將會使用不可變檔案的最新版本，無論本機開發中使用的版本為何。
+建議上述檔案參考下列不可變檔案，然後加上任何其他陳述式或覆寫。 將Dispatcher設定部署到雲端環境時，無論本機開發中使用了哪個版本，都會使用最新版本的不可變檔案。
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -355,7 +355,7 @@ Cloud manager validator 2.0.xx
 
 此階段也可以獨立執行 `validator full -d out src/dispatcher`，會產生out目錄，為下一個命令所需 `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
-在Cloud Manager部署期間， `httpd -t` 語法檢查也會執行，所有錯誤都將包含在Cloud Manager建置影像步驟失敗記錄中。
+在Cloud Manager部署期間， `httpd -t` 語法檢查會執行，並且所有錯誤都包含在Cloud Manager建置影像步驟失敗記錄中。
 
 ### 階段3 {#third-phase}
 

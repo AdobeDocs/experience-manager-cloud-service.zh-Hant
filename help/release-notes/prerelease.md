@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 發行前通道
 description: 了解如何使用發行前通道來取得即將推出的 AEM as a Cloud Service 功能預覽。
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 100%
+source-wordcount: '1305'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Adobe Experience Manager as a Cloud Service 會根據 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)定期提供新功能。
 
-若要熟悉排定在下個功能發行上線的功能，您可以訂閱發行前通道，您可藉由設定您的開發環境或任何沙箱環境來存取該通道。客戶可以預覽可透過 AEM UI 存取的變更，也可以針對任何新的發行前 API 建置程式碼。
+若要熟悉排定在下個功能版本中上線的功能，您可以訂閱發行前通道，您可藉由設定您的開發環境或任何沙箱環境來存取該通道。 客戶可以預覽可透過 AEM UI 存取的變更，也可以針對任何新的發行前 API 建置程式碼。
 
 特定功能發行的發行前功能清單會在[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)中發佈。
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service 有兩種發行。
 
 此模式可確保持續發行而不會中斷服務。
 
-發行前通道可讓您預覽即將到來的功能發行中預定推出的功能，以便評估即將推出的功能，並針對其可能在您自己專案中的實作方式進行規劃。它可讓您提前規劃下個功能發行。
+發行前管道可讓您預覽為即將推出的功能發行排程的功能，以便您可以評估即將推出的功能，並針對其可能在您自己的專案中實作的可能性進行規劃。 它可讓您提前規劃下一個功能的發行。
 
 例如，假設現在是五月，而且您訂閱了發行前通道，您可以評估即將推出的六月發行中的功能。
 
@@ -97,22 +97,22 @@ AEM as a Cloud Service 有兩種發行。
 
 * 使用 [Cloud Manager API 的環境變數端點](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)，將 `AEM_RELEASE_CHANNEL` 環境變數設定為值 `prerelease`。
 
-   ```text
-   PATCH /program/{programId}/environment/{environmentId}/variables
-   [
-           {
-                   "name" : "AEM_RELEASE_CHANNEL",
-                   "value" : "prerelease",
-                   "type" : "string"
-           }
-   ]
-   ```
+  ```text
+  PATCH /program/{programId}/environment/{environmentId}/variables
+  [
+          {
+                  "name" : "AEM_RELEASE_CHANNEL",
+                  "value" : "prerelease",
+                  "type" : "string"
+          }
+  ]
+  ```
 
 * 也可以使用 [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
 
-   ```shell
-   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease
-   ```
+  ```shell
+  aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
+  ```
 
 如果您希望環境還原為一般 (非發行前) 通道的行為，可以刪除該變數或將其設回不同的值。
 
@@ -157,7 +157,7 @@ Javadoc 會發佈到 Maven Central。
      </dependency>
    ```
 
-   為了變更為發行前 SDK，只需將相依性從 `com.adobe.aem:aem-sdk-api` 變更為 `com.adobe.aem:aem-prerelease-sdk-api`，如下所述：
+   若要變更為發行前SDK，只需將相依性從 `com.adobe.aem:aem-sdk-api` 至 `com.adobe.aem:aem-prerelease-sdk-api` 如下所述：
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ Javadoc 會發佈到 Maven Central。
 
 ## 訓練您的使用者 {#train-users}
 
-一旦您在發行前通道中測試了新功能，並已決定在您的專案中利用這些功能後，您就需要訓練您的使用者。
+一旦您在發行前通道中測試了新功能，並決定在您的專案中使用它們，您就需要訓練您的使用者。
 
 Adobe Experience League 提供了用來學習 AEMaaCS 的大量資源。
 

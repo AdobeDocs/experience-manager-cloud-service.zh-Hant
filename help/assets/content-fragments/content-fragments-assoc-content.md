@@ -2,9 +2,9 @@
 title: 關聯內容（資產 — 內容片段）
 description: 瞭解AEM關聯內容功能如何提供連線，以便可以選擇將資產與片段一起使用。
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '231'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ AEM關聯內容功能提供連線，以便在將資產新增到內容頁面時�
 
 1. 根據是否已關聯任何集合，選取：
 
-   * **關聯內容**  — 這將是第一個關聯的集合
+   * **關聯內容**  — 這是第一個關聯的集合
    * **關聯集合**  — 已設定關聯的集合
 
 1. 選取所需的集合。
@@ -36,7 +36,7 @@ AEM關聯內容功能提供連線，以便在將資產新增到內容頁面時�
 
    ![選取集合](assets/cfm-assoc-content-02.png)
 
-1. 確認(使用 **選取**)。 集合將列為關聯的。
+1. 確認(使用 **選取**)。 集合會列為相關聯的。
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 

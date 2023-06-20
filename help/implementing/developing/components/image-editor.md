@@ -1,8 +1,8 @@
 ---
 title: 影像編輯器
-description: 影像編輯器是AEM的一項核心功能，元件可運用它來協助內容作者操控影像。
+description: 影像編輯器是AEM的一項核心功能，元件可使用它來協助內容作者操作影像。
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 2%
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # 影像編輯器 {#image-editor}
 
-影像編輯器是AEM的一項核心功能，元件可運用它來協助內容作者操控影像。
+影像編輯器是AEM的一項核心功能，元件可使用它來協助內容作者操作影像。
 
 ## 影像地圖的相對單位 {#relative-units-for-image-map}
 
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 `[SHAPE(COORDINATES)"HREF"|"TARGET"|"ALT"|(RELATIVE_COORDINATES)]`
 
-範例:
+範例：
 
 `[rect(0,0,10,10)"https://www.adobe.com"|"_self"|"alt"|(0,0,0.8,0.8)]`
 `[circle(10,10,10)"https://www.adobe.com"|"_self"|"alt"|(0.8,0.8,0.8)]`

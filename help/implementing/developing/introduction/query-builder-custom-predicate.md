@@ -2,9 +2,9 @@
 title: 為查詢產生器實作自訂述詞求值器
 description: AEM中的查詢產生器提供簡單且可自訂的方式來查詢內容存放庫
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,6 @@ ht-degree: 0%
 >
 >* [在GitHub上開啟aem-search-custom-predicate-evaluator專案](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 >* 將專案下載為 [ZIP檔案](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
-
 
 >[!NOTE]
 >
@@ -106,7 +105,7 @@ replic.action=Activate
 
 >[!NOTE]
 >
->範圍 `cq-search` 相依性已設定為 `provided` 因為 `cq-search` 將由 `OSGi` 容器。
+>範圍 `cq-search` 相依性已設定為 `provided` 因為 `cq-search` 由 `OSGi` 容器。
 
 以下程式碼片段顯示 `pom.xml` 檔案，在 [統一的差異格式](https://en.wikipedia.org/wiki/Diff#Unified_format)
 

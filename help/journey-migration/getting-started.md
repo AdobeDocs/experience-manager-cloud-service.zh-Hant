@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service移轉歷程快速入門
 description: 熟悉 AEM as a Cloud Service 移轉的基本知識，開始您的移轉歷程
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '585'
 ht-degree: 19%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 19%
 本檔案可協助您瞭解為何應使用雲端原生AEM版本，以及移轉至AEMas a Cloud Service的不同階段。 閱讀本檔案後，您應該：
 
 * 瞭解as a Cloud Service移動AEM的好處
-* 熟悉轉換至雲端所需完成的主要步驟
+* 熟悉您必須採取的主要步驟，以便能夠轉換至雲端
 
 ## 轉移至 AEM as a Cloud Service 的好處 {#benefits-of-moving-to-aem-as-a-cloud-service}
 
@@ -30,9 +30,9 @@ AEMas a Cloud Service為Experience Manager Assets、Forms和Screens提供可擴�
 
 移轉至Cloud Service的歷程涉及以下階段：
 
-* 首先，判斷您的部署是否已準備好使用as a Cloud Service移至AEM [整備階段](/help/journey-migration/readiness.md). 在此階段中，您也應熟悉AEMas a Cloud Service所引入的變更
-* 接下來，使用讓您的程式碼和內容雲端做好準備 [實作階段](/help/journey-migration/implementation.md). 在此階段中，您將探索提供的工具Adobe以輕鬆移動到雲端
-* 一切準備就緒後，您就可以使用 [上線階段](/help/journey-migration/go-live.md)
+* 首先，判斷您的部署是否已準備好使用as a Cloud Service移至AEM [整備階段](/help/journey-migration/readiness.md). 在此階段中，您也應熟悉AEMas a Cloud Service所引入的變更。
+* 接下來，使用讓您的程式碼和內容雲端做好準備 [實作階段](/help/journey-migration/implementation.md). 在此階段中，您會探索提供的工具Adobe以輕鬆移動到雲端。
+* 一切準備就緒後，您可使用以下執行移轉： [上線階段](/help/journey-migration/go-live.md).
 * 最後，請務必在移轉完成後監控問題並改善效能，位置在 [上線後階段](/help/journey-migration/post-go-live.md).
 
 下圖顯示建議的AEMas a Cloud Service轉換歷程的高層級表示。

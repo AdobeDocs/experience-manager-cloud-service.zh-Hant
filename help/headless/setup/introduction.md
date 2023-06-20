@@ -2,10 +2,10 @@
 title: Headless 設定
 description: 透過此快速入門指南，了解 AEM as a Cloud Service 強大無周邊功能的基本知識，例如內容模型、內容片段和 GraphQL API。
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '286'
+ht-degree: 94%
 
 ---
 
@@ -30,12 +30,11 @@ ht-degree: 100%
 >* [Headless 內容作者歷程](/help/journey-headless/author/overview.md)
 >* [Headless 翻譯歷程](/help/journey-headless/translation/overview.md)。
 
-
 ## 對象 {#audience}
 
 所描述的任務對於 AEM 無周邊功能的基本完整示範是必要的。任何人如果對測試用 AEM 執行個體具有管理員存取權，都可以按照這些指南來了解 AEM 無周邊傳遞，而具有開發人員經驗的人更為理想。
 
-然而，在生產情況下，將由不同角色以不同次數來執行任務。例如：
+但在生產環境中，任務會由不同角色執行不同的次數。 例如：
 
 * **管理員**&#x200B;將需要為內容設定初始設定和資料夾結構，通常只需一次或偶爾。
 * **資訊架構師**&#x200B;通常會隨著組織需求的發展而加入新模型。

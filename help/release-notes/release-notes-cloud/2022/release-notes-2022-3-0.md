@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 版發行說明。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -93,11 +93,11 @@ ht-degree: 14%
 
 * 為了更有效率並有效地疑難排解雲端環境中的自訂功能，我們發佈了一款新的開發人員工具 —  [存放庫瀏覽器](/help/implementing/developing/tools/repository-browser.md). 它是輕量、唯讀的HTML瀏覽器，您可以從開發人員控制檯啟動。 瞭解發佈者、作者和預覽層以及所有環境（包括生產、暫存和開發）中的內容存放庫。 瀏覽內容結構、檢視屬性，以及預覽和下載二進位檔案。
 
-   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+  ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
 * 現在，用於驗證伺服器對伺服器API呼叫(例如，GraphQL API請求)的認證，可在過期前從開發人員控制檯以自助服務方式重新整理。 請參閱 [檔案](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 以取得更多資訊。
 
-* 版本清除和稽核記錄清除維護任務（以前未啟用）將為新環境啟用。 請參閱以下檔案中的相關值： [維護任務](/help/operations/maintenance.md) 文章。
+* 版本清除和稽核記錄清除維護任務（以前未啟用）現在已為新環境啟用。 請參閱以下檔案中的相關值： [維護任務](/help/operations/maintenance.md) 文章。
 
 * AEMas a Cloud ServiceSDK Dispatcher工具現在支援配備M1晶片的Mac電腦
 

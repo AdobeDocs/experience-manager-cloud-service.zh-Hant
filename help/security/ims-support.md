@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 description: Adobe Experience Manager as a Cloud Service 的 IMS 支援
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 100%
+source-wordcount: '2035'
+ht-degree: 80%
 
 ---
 
@@ -31,14 +31,14 @@ AEM as a Cloud Service 僅針對「作者」、「管理員」和「開發」使
 
 * Admin Console 會在產品內容執行個體環境中，將客戶顯示為 IMS 組織、作者和發佈執行個體。這樣一來，系統和產品管理員就能妥善管理執行個體的存取權限。
 * Admin Console 中的產品設定檔能決定使用者可存取的執行個體。
-* 客戶可使用符合 SAML 2 的身分服務供應商 (簡稱 IDP)，完成單一登入程序。
-* 僅支援客戶以 Enterprise ID 或 Federated ID 進行單一登入，不支援個人 Adobe ID。
+* 客戶可使用符合SAML 2的身分識別服務提供者（簡稱IDP）進行單一登入。
+* 僅支援客戶單一登入的Enterprise ID或Federated ID，不支援個人AdobeID。
 
 ## 架構 {#architecture}
 
 IMS 驗證採用 OAuth 通訊協定，能在 AEM 和 Adobe IMS 端點之間運作。使用者加入 IMS 並擁有 Adobe 身分後，就能使用 IMS 憑證登入 AEM 作者服務。
 
-使用者登入流程如下所示，系統會將使用者重新導向至 IMS，並可選擇重新導向至客戶 IDP 以進行 SSO，然後重新導向回 AEM。
+使用者登入流程如下所示，系統會將使用者重新導向至IMS，並可選擇重新導向至客戶IDP以進行SSO，然後重新導向回AEM。
 
 ![IMS 架構](/help/security/assets/ims1.png)
 
@@ -50,7 +50,7 @@ IMS 驗證採用 OAuth 通訊協定，能在 AEM 和 Adobe IMS 端點之間運�
 
 首先，客戶需有佈建於 Adobe IMS 的組織。Adobe 企業客戶在 [Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 中會顯示為 IMS 組織。Adobe 客戶可使用此入口網站管理使用者和群組的產品權益。
 
-AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admin Console 中使用客戶執行個體，管理使用者權益和存取權限。
+AEM客戶應先布建組織，而在IMS布建過程中，客戶執行個體可在Admin Console中管理使用者權益和存取許可權。
 
 客戶成為 IMS 組織後，即可依以下摘要內容設定其系統：
 
@@ -59,7 +59,7 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 1. 指定的系統管理員會收到 Cloud Manager 的登入邀請函。登入 Cloud Manager 後，系統管理員可以選擇佈建 AEM 程序和環境，或導覽至 Admin Console 執行管理任務。
 1. 系統管理員需先宣告網域，以確認各別網域的所有權 (例如 acme.com)
 1. 系統管理員設定使用者目錄
-1. 系統管理員在 Admin Console 中執行 IDP 設定，以設定單一登入。
+1. 系統管理員在Admin Console中執行IDP設定以設定單一登入。
 1. AEM 管理員可照常管理本機群組和權限。
 
 [此文件](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)說明 Adobe 身分管理基本知識，包括 IDP 設定。
@@ -84,11 +84,11 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 **使用者同步工具**
 
-使用者同步工具 (簡稱 UST) 可方便我們的企業客戶使用 Active Directory 建立及管理 Adobe 使用者。此工具也適用於其他通過測試的 OpenLDAP 目錄服務。目標使用者是 IT 身分管理員 (企業目錄或系統管理員)，我們能協助他們安裝及設定此工具。此開放原始碼工具可供自訂，客戶可依自身的特定需求加以修改。
+使用者同步工具 (簡稱 UST) 可方便我們的企業客戶使用 Active Directory 建立及管理 Adobe 使用者。此工具也適用於其他通過測試的 OpenLDAP 目錄服務。目標使用者是IT身分管理員（企業目錄或系統管理員），他們能夠安裝和設定此工具。 此開放原始碼工具可供自訂，客戶可依自身的特定需求加以修改。
 
-執行「使用者同步」時，系統會從組織的 Active Directory 擷取使用者清單，比對 Admin Console 中的使用者清單。接著，系統會呼叫 Adobe User Management API，將 Admin Console 與組織的目錄同步。此變更流程無法復原。在 Admin Console 中完成的任何編輯都不會推送至目錄。
+「使用者同步」執行時，會從組織的Active Directory擷取使用者清單，並與Admin Console內的使用者清單進行比較。  然後它會呼叫Adobe使用者管理API，以便Admin Console與組織的目錄同步。 此變更流程無法復原。在 Admin Console 中完成的任何編輯都不會推送至目錄。
 
-此工具可協助系統管理員將客戶目錄中的使用者群組，與 Admin Console 中的產品設定和使用者群組相互對應。
+此工具可讓系統管理員將客戶目錄中的使用者群組與Admin Console中的產品設定和使用者群組對應。
 
 若要設定「使用者同步」，組織需先透過與 [User Management API](https://www.adobe.io/apis/experienceplatform/umapi-new.html) 相同的使用方式，建立一組憑證。
 
@@ -118,13 +118,13 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 >[!NOTE]
 >
->佈建 AEM 環境和執行個體時，系統會自動設定所需的 AEM IMS 設定。不過，管理員可透過[此處](/help/implementing/deploying/overview.md)所述方法，依需求適度修改。
+>布建AEM環境和執行個體時，系統會自動設定所需的AEM IMS設定。 不過，管理員可透過[此處](/help/implementing/deploying/overview.md)所述方法，依需求適度修改。
 
-佈建 AEM 環境和執行個體時，系統會自動設定所需的 AEM IMS 設定。客戶管理員可依需求適度修改部分設定
+布建AEM環境和執行個體時，系統會自動設定所需的AEM IMS設定。  客戶管理員可依需求適度修改部分設定
 
 整體方式是將 Adobe IMS 設為 OAuth 提供者，並像處理 LDAP 同步作業一樣，修改 **Apache Jackrabbit Oak Default Sync Handler**。
 
-以下提供需修改的重要 OSGI 設定，以變更「使用者自動成員資格」或「群組對應」等屬性。
+以下是需要修改以變更「使用者自動成員資格」或「群組對應」等屬性的重要OSGI設定。
 
 <!-- Arun to provide list of osgi configs -->
 
@@ -140,11 +140,11 @@ AEM 客戶應先佈建組織，而在 IMS 佈建過程中，客戶即可在 Admi
 
 ![執行個體登入 2](/help/security/assets/ims7.png)
 
-在每個產品內容執行個體下，將有跨生產、階段或開發環境的編寫或發佈服務的執行個體。每個執行個體都將關聯到產品設定檔或 Cloud Manager 角色。這些產品設定檔的主要功用在於指派存取權限給具有必要權限的使用者和群組。
+在每個產品內容例項下，都有例項橫跨生產、階段或開發環境的作者或發佈服務。 每個執行個體都與產品設定檔或Cloud Manager角色相關聯。 這些產品設定檔的主要功用在於指派存取權限給具有必要權限的使用者和群組。
 
-**AEM Administrators_xxx** 設定檔可授予相關聯 AEM 執行個體的管理員權限，而 **AEM Users_xxx** 設定檔則用於新增使用者。
+此 **AEM管理員_xxx** 設定檔是用來授與相關聯AEM執行個體的管理員許可權，而 **AEM使用者_xxx** 設定檔用於新增一般使用者。
 
-此產品設定檔中新增的任何使用者和群組都可以登入該特定執行個體，如以下範例所示：
+在此產品設定檔中新增的任何使用者和群組都可以登入該特定執行個體，如以下範例所示：
 
 ![產品設定檔](/help/security/assets/ims8.png)
 
@@ -179,11 +179,11 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 
 ![IMS 登入 3](/help/security/assets/ims12.png)
 
-如果在初始 Admin Console 設定期間就已設定同盟 IDP，系統會將使用者重新導向至客戶 IDP，以執行 SSO：
+如果在初始Admin Console設定期間設定了同盟IDP，則會將使用者重新導向至客戶IDP以進行SSO：
 
 ![IMS 登入 4](/help/security/assets/ims13.png)
 
-驗證完成後，系統會將使用者重新導向回 AEM 並登入：
+驗證完成後，系統會將使用者重新導向回AEM並登入：
 
 ![IMS 登入 5](/help/security/assets/ims14.png)
 
@@ -241,7 +241,7 @@ AEM 可繼續為管理員使用者支援本機登入。從登入畫面可選擇�
 >[!IMPORTANT]
 >您必須先完成前述章節所提及的步驟，才能取得 AEM as a Cloud Service 執行個體的存取權限。
 
-若要在 **Admin Console** 中存取 AEM 執行個體，您應該會在 **Admin Console** 的產品清單中看見 Cloud Manager 程式和程式內的環境。
+若要在中存取AEM執行個體 **Admin Console**，您應該會在的產品清單中看見Cloud Manager計畫和計畫內的環境 **Admin Console**.
 
 舉例來說，在下方螢幕擷圖中，您會看到兩個可供使用的環境，即 *dev author* 和 *publish*。
 

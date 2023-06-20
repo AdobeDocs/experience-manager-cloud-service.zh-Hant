@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0 版發行說明。'
 description: '"[!DNL Adobe Experience Manager] 2020.8.0版as a Cloud Service發行說明」。'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 39%
+source-wordcount: '1041'
+ht-degree: 33%
 
 ---
 
@@ -76,13 +76,13 @@ ht-degree: 39%
 
 ### 新增功能 {#what-is-new-cloud-manager}
 
-* 內容稽核是 Cloud Manager Sites Production Pipelines 上啟用的一項功能。具有 Sites 的程序的生產管道配置現在包括名為的第三個索引標籤&#x200B;**內容稽核**。每當執行生產管道時，在自訂功能測試之後將在管道中包含一個新的內容稽核步驟，該步驟將根據多個維度評估網站，包括性能、SEO (搜索引擎優化)、可存取性、最佳做法和 PWA (漸進式網路應用程序)。
+* 內容稽核是 Cloud Manager Sites Production Pipelines 上啟用的一項功能。具有 Sites 的程序的生產管道配置現在包括名為的第三個索引標籤&#x200B;**內容稽核**。生產管道執行期間，只要自訂功能完成測試，管道中就會增加新的內容稽核步驟，以根據多項維度評估網站，包括效能、SEO （搜尋引擎最佳化）、協助工具、最佳實務和PWA（漸進式網頁應用程式）。
 
 
-   >[!NOTE]
-   >此後，內容稽核已重命名為體驗稽核。
+  >[!NOTE]
+  >此後，內容稽核已重命名為體驗稽核。
 
-   如需更多詳細資訊，請參考[體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
+  如需更多詳細資訊，請參考[體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
 * Assets 程序中新建立的環境現在將自動配置智慧內容服務。
 
@@ -116,7 +116,7 @@ ht-degree: 39%
 
 * 內容稽核索引標籤使用作者域而不是發布域錯誤地顯示了 BASE URL。
 
-* 為了激活內容稽核步驟，使用者必須編輯管道並 (可選) 新增頁面。如果沒有新增任何頁面，則將稽核主頁。
+* 若要啟用「內容稽核」步驟，使用者必須編輯管道，並可選擇新增頁面。 如果未新增任何頁面，則會稽核首頁。
 
 ## 內容轉移工具 {#content-transfer-tool}
 

@@ -2,10 +2,10 @@
 title: 體驗稽核測試
 description: 了解體驗稽核如何驗證您的部署過程，並幫助確保部署的變更符合效能、協助工具、最佳實務和 SEO 的基準標準。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: c8bfeda015962d3f327057a375b4edd3d80c6316
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 100%
+source-wordcount: '551'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 Cloud Manager 中的體驗稽核可確保一般使用者的網站體驗達到最高標準。
 
-稽核結果會提供資訊，可讓部署管理員查看目前和先前分數之間的分數和變更。此深入分析對於判斷是否有將於目前部署引入的迴歸十分有用。
+稽核結果會提供資訊，可讓部署管理員查看目前和先前分數之間的分數和變更。此深入分析對於判斷是否有現行部署所引入的回歸非常有用。
 
 Experience Audit 由 Google Lighthouse 提供技術支援，Lighthouse 是 Google 的開放原始碼工具，可在所有 Cloud Manager 生產管道中啟用。
 

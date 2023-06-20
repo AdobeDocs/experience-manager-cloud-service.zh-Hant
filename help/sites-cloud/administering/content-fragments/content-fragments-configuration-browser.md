@@ -1,13 +1,13 @@
 ---
 title: 內容片段 — 設定瀏覽器
-description: 瞭解如何在設定瀏覽器中啟用內容片段和GraphQL功能，以利用AEM Headless傳送功能。
+description: 瞭解如何在設定瀏覽器中啟用內容片段和GraphQL功能，以使用AEM Headless傳送功能。
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 26%
+source-wordcount: '362'
+ht-degree: 19%
 
 ---
 
@@ -28,7 +28,6 @@ ht-degree: 26%
 >
 >* 此 **建立** 選項將不可用於建立新模型。
 >* 您將無法 [選取Sites設定以建立相關的端點](/help/headless/graphql-api/graphql-endpoint.md).
-
 
 若要啟用內容片段功能，您需要：
 
@@ -57,21 +56,19 @@ ht-degree: 26%
 >* 將（仍）儲存與父（根）設定相關的持續查詢。
 
 
-
 1. 導覽至「 **工具**」、「 **一般**」，然後開啟「 **設定瀏覽器**」。
 
 1. 使用 **建立** 若要開啟對話方塊，您可以：
 
    1. 指定 **標題**.
-   1. **名稱**&#x200B;將成為存放庫中的節點名稱。
-      * 它會根據標題自動產生，並根據[AEM 命名慣例](/help/implementing/developing/introduction/naming-conventions.md)進行調整
+   1. 此 **名稱** 會成為存放庫中的節點名稱。
+      * 系統會根據標題自動產生，並根據 [AEM命名慣例。](/help/implementing/developing/introduction/naming-conventions.md)
       * 您可以視需要加以調整。
    1. 若要啟用其使用，請選取
       * **內容片段模型**
       * **GraphQL 持續性查詢**
 
       ![定義設定](assets/cfm-conf-01.png)
-
 
 1. 選取 **建立** 以儲存定義。
 

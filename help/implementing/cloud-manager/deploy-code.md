@@ -2,10 +2,10 @@
 title: 部署您的程式碼
 description: 了解如何在 AEM as a Cloud Service 中使用 Cloud Manager 管道來將程式碼部署。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 63e38485e2f15c6947c7fba1848d47eda4cc900e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 100%
+source-wordcount: '1215'
+ht-degree: 94%
 
 ---
 
@@ -82,14 +82,14 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 * **體驗稽核** - 步驟一律存在且不能跳過。在執行生產管道時，在執行檢查的自訂功能測試之後會包含一個體驗稽核步驟。
    * 配置的頁面將提交給服務並進行評估。
    * 結果是資訊性的，並顯示分數以及當前和以前分數之間的變化。
-   * 此深入分析對於判斷是否有將於目前部署引入的迴歸十分有用。
+   * 此深入分析對於判斷目前部署是否引入回歸非常有用。
    * 如需更多詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
 ![階段測試](assets/stage-testing.png)
 
 ## 生產部署階段 {#deployment-production}
 
-為了對 AEM 網站訪客的影響降至最低，部署到生產拓撲的流程會略有不同。
+部署到生產拓撲的流程略有不同，以將對訪客AEM網站的影響降至最低。
 
 生產部署通常會遵循和前述相同的步驟，但採用滾動方式。
 
@@ -149,7 +149,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 ### 識別重新執行的執行
 
-若要識別是否為重新執行的執行，可檢查觸發程序欄位。它的價值將是&#x200B;*RE_EXECUTE*.
+若要識別是否為重新執行的執行，可檢查觸發程序欄位。其值為 *RE_EXECUTE*.
 
 ### 觸發新執行
 
@@ -193,4 +193,4 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 _href_ 值的語法並非打算用作參考點。應總是從 HAL 連結讀取實際值，而不是將其產生。
 
-如果成功，則向此端點提交 *PUT* 請求將導致 *201* 回應，而且該回應主體將是新執行的表示方式。這類似於透過 API 啟動常規執行。
+提交 *PUT* 對此端點的請求會導致 *201* 如果成功，則會回應，而回應主體是新執行的表示方式。 這類似於透過 API 啟動常規執行。

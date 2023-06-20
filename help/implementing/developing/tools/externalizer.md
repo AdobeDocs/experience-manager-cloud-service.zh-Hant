@@ -2,9 +2,9 @@
 title: 將URL外部化
 description: Externalizer是一種OSGi服務，可讓您以程式設計方式將資源路徑轉換為外部和絕對URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,8 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
    * **`scheme`** 通常為http或https，但可以是其他通訊協定。
 
       * 建議使用https來強制執行https連結。
-      * 若使用者端代碼在要求外部化URL時未覆寫配置，則會使用它。
+      * 如果要求外部化URL時，使用者端代碼未覆寫配置，則會使用它。
+
    * **`server`** 是主機名稱（網域名稱或ip位址）。
    * **`port`** （選用）是連線埠號碼。
    * **`contextpath`** （選用）只有當AEM安裝為Webapp且位於不同的內容路徑下時，才會設定。
@@ -102,11 +103,11 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
 
 * **若要使用「發佈」網域外部化路徑：**
 
-   ```java
-   String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
+  ```
 
-   假設網域對應：
+  假設網域對應：
 
    * `publish https://www.website.com`
 
@@ -116,11 +117,11 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
 
 * **若要使用「作者」網域外部化路徑：**
 
-   ```java
-   String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
+  ```
 
-   假設網域對應：
+  假設網域對應：
 
    * `author https://author.website.com`
 
@@ -130,11 +131,11 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
 
 * **若要使用「本機」網域外部化路徑：**
 
-   ```java
-   String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
+  ```
 
-   假設網域對應：
+  假設網域對應：
 
    * `local https://publish-3.internal`
 

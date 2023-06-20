@@ -2,9 +2,9 @@
 title: as a Cloud Service在Screens中建立和管理頻道
 description: 本頁面說明如何在Screens中以as a Cloud Service方式建立和管理頻道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,7 @@ ht-degree: 1%
 
 ### 指派給顯示區時，使用預設指派詳細資料 {#default-display}
 
-可將具有預設指派詳細資料的管道指派給以與一般管道相同的顯示方式，新增的選項可運用預設指派詳細資訊，而不是每次都手動定義自訂指派詳細資訊。
+可將具有預設指派詳細資料的管道指派給以與一般管道相同的顯示方式，新增選項以使用預設指派詳細資訊，而不是每次都手動定義自訂指派詳細資訊。
 
 1. 導覽至您要指派該頻道的顯示詳細資訊頁面，然後按一下 **指派管道**.
 或者，在「詳細目錄檢視」中選取所需的顯示，然後按一下 **指派管道**.
@@ -154,7 +154,7 @@ ht-degree: 1%
 
    ![影像](/help/screens-cloud/assets/display/Assignments9.png)
 
-1. 確認對話方塊將會顯示，詳細資訊將會符合以下條件之一：
+1. 確認對話方塊隨即顯示，且詳細資訊符合下列條件之一：
    **答：** 管道未用於任何顯示區。
 
    ![影像](/help/screens-cloud/assets/display/Assignments10.png)

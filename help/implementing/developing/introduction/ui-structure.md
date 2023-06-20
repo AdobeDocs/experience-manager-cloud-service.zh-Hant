@@ -2,9 +2,9 @@
 title: AEM UI 的結構
 description: AEM UI具有數個基本原則，且由數個關鍵元素組成
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '915'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ UI同時適用於行動裝置和桌上型裝置，不過AEM並非建立兩種樣
 
 版面配置會遵循回應式設計樣式，並配合您所使用的裝置/視窗大小。
 
-例如，當解析度低於1024px （如同在行動裝置上）時，顯示器將會相應地調整：
+例如，當解析度低於1024px （如同在行動裝置上）時，顯示器會據此調整：
 
 ![網站主控台行動裝置檢視](assets/ui-sites-mobile.png)
 

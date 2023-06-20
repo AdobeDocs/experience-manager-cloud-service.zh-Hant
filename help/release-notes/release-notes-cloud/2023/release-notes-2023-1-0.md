@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0 版發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0 版發行說明。'
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 100%
+source-wordcount: '976'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ ht-degree: 100%
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* 資產報告現在可讓管理員從 Experience Manager Assets as a Cloud Service 部署[產生資產下載報告](/help/assets/asset-reports.md)。此資料可進一步讓管理員從關鍵成功量度取得深入見解，以衡量企業內和客戶對資產的採用程度。
+* 資產報告現在可讓管理員從 Experience Manager Assets as a Cloud Service 部署[產生資產下載報告](/help/assets/asset-reports.md)。此資料可進一步讓管理員從關鍵成功量度取得見解，以衡量企業內和客戶對資產的採用程度。
 
-   ![其他格式的 PDF 轉譯](/help/release-notes/assets/choose_report.png)
+  ![其他格式的 PDF 轉譯](/help/release-notes/assets/choose_report.png)
 
 * 除了在連接到 Azure Blob 儲存體資料來源以使用大量匯入工具擷取資產時支援用於驗證的存取金鑰之外，Experience Manager Assets 現在還[支援 SAS 權杖](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
@@ -82,23 +82,23 @@ ht-degree: 100%
 
 * [快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE 可讓開發人員可以快速解決問題並在 AEM as a Cloud Service 部署新功能。
 
-   快速開發環境是一種新型雲端環境，用於以快速、一致和可擴展的方式來驗證在本機運作的程式碼在雲端是否也能正常運作。使用命令列工具，可以快速將內容套件、套件組合、內容檔案、OSGI 設定或 Dispatcher 設定同步到 RDE。在下面的視訊中看到這個動作：
+  快速開發環境是一種新型雲端環境，用於以快速、一致和可擴展的方式來驗證在本機運作的程式碼在雲端是否也能正常運作。使用命令列工具，可以快速將內容套件、套件組合、內容檔案、OSGI 設定或 Dispatcher 設定同步到 RDE。在下面的視訊中看到這個動作：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-   在 RDE 中成功驗證代碼後，鼓勵部署到雲端開發環境以執行 Cloud Manager 品質關卡，然後再透過生產管道部署到階段和生產環境。
+  在 RDE 中成功驗證代碼後，鼓勵部署到雲端開發環境以執行 Cloud Manager 品質關卡，然後再透過生產管道部署到階段和生產環境。
 
-   每個程序包括一個 RDE，並且可以選擇授權更多。
+  每個程序包括一個 RDE，並且可以選擇授權更多。
 
-   >[!NOTE]
-   >
-   >RDE 將在接下來幾週內逐步推出；您可以發送電子郵件至 aemcs-rde-support@adobe.com 以跳到該行的前面。
+  >[!NOTE]
+  >
+  >RDE 將在接下來幾週內逐步推出；您可以發送電子郵件至 aemcs-rde-support@adobe.com 以跳到該行的前面。
 
 * [擴展對伺服器端 API 存取代號的支援](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) – 您現在可以產生多個憑證，這有助於 API 具有不同特性的使用案例。現在也能以自助式方式撤銷憑證。
 
 ## 維護發行說明 {#maintenance}
 
-您可以在[此處](/help/release-notes/maintenance/latest.md)找到最新的維護發行說明。
+您可以在[此處](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
 ## Cloud Manager {#cloud-manager}
 

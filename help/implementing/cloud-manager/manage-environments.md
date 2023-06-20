@@ -2,10 +2,10 @@
 title: 管理環境
 description: 了解您可以建立的環境類型，以及如何為您的 Cloud Manager 專案建立環境類型。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 98%
+source-wordcount: '2325'
+ht-degree: 93%
 
 ---
 
@@ -153,11 +153,11 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 使用該服務，您可以在網站到達實際發佈環境並公開使用之前預覽網站的最終體驗。
 
-建立後，預覽服務將套用預設的 IP 允許清單，標記為 `Preview Default [<envId>]`，其會封鎖所有流向預覽服務的流量。您必須主動從預覽服務中取消套用預設的 IP 允許清單才能啟用存取。
+建立後，預覽服務將套用預設的 IP 允許清單，標記為 `Preview Default [<envId>]`，其會封鎖所有流向預覽服務的流量。您必須主動從預覽服務中取消套用預設的IP允許清單以啟用存取。
 
 ![預覽服務和其允許清單](assets/preview-ip-allow.png)
 
-擁有必要權限的用戶必須在共用預覽服務 URL 之前完成以下步驟，以確保可以存取該 URL。
+具有必要許可權的使用者必須在共用預覽服務URL之前完成以下步驟，以確儲存取它。
 
 1. 建立適當的 IP 允許清單，將其套用於預覽服務，然後立即取消套用 `Preview Default [<envId>]` 允許清單。
 
@@ -216,7 +216,7 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 ## 刪除開發環境 {#deleting-environment}
 
-具有必要權限的使用者將能夠刪除開發環境。
+具有必要許可權的使用者可以刪除開發環境。
 
 在&#x200B;**環境**&#x200B;卡上計畫的&#x200B;**總覽**&#x200B;畫面中，按一下要刪除的開發環境的省略符號按鈕。
 
@@ -290,9 +290,9 @@ Cloud Manager 支援 IP 允許清單，用於 Sites 計畫的作者、發佈和�
 
 ### 套用 IP 允許清單 {#apply-ip-allow-list}
 
-套用 IP 允許清單會將允許清單定義中包含的所有 IP 範圍與環境中的作者或發佈服務相關聯。擁有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的使用者必須登入才能套用 IP 允許清單。
+套用 IP 允許清單會將允許清單定義中包含的所有 IP 範圍與環境中的作者或發佈服務相關聯。中的使用者 **業務負責人** 或 **部署管理員** 角色必須登入才能套用IP允許清單。
 
-IP 允許清單必須存在於 Cloud Manager 中才能將其套用於環境。要了解有關 Cloud Manager 中 IP 允許清單的更多資訊，請參閱文件：[Cloud Manager 中的 IP 允許清單簡介。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+IP允許清單必須存在於Cloud Manager中才能將其套用至環境。 要了解有關 Cloud Manager 中 IP 允許清單的更多資訊，請參閱文件：[Cloud Manager 中的 IP 允許清單簡介。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 
 請按照以下步驟套用 IP 允許清單。
 
@@ -302,7 +302,7 @@ IP 允許清單必須存在於 Cloud Manager 中才能將其套用於環境。�
 
 ### 取消套用 IP 允許清單 {#unapply-ip-allow-list}
 
-取消套用 IP 允許清單將取消包含在允許清單定義中的所有 IP 範圍與環境中的作者或發佈者服務的關聯。擁有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的使用者必須登入才能取消套用 IP 允許清單。
+取消套用 IP 允許清單將取消包含在允許清單定義中的所有 IP 範圍與環境中的作者或發佈者服務的關聯。中的使用者 **業務負責人** 或 **部署管理員** 角色必須登入才能取消套用IP允許清單。
 
 請按照以下步驟取消套用 IP 允許清單。
 

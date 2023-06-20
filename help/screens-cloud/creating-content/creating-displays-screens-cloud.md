@@ -2,9 +2,9 @@
 title: as a Cloud Service建立和管理熒幕中的顯示區
 description: 此頁面說明如何建立及管理Screensas a Cloud Service顯示。
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '663'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 發佈管道後，您就可以在Screens Services Provider中建立顯示區。
 
-「顯示器」是通常位於彼此相鄰位置的虛擬熒幕群組。 顯示通常是永久性的安裝。 這將是內容作者將搭配使用的物件，並一律參照為邏輯顯示，而不是其實體計數器部分。
+「顯示器」是通常位於彼此相鄰位置的虛擬熒幕群組。 顯示通常是永久性的安裝。 此物件內容是作者搭配使用且一律參照為邏輯顯示（而非其實體計數器部分）的內容。
 
 ## 目標 {#objective}
 
@@ -128,7 +128,7 @@ ht-degree: 3%
 
 1. 在詳細目錄檢視中，選取您要刪除的子資料夾，並確定它是空的。
 
-1. 按一下 **刪除** 動作。 如果資料夾不是空的，動作將會停用。
+1. 按一下 **刪除** 動作。 如果資料夾不是空的，則會停用動作。
 
 
 ## 下一步 {#whats-next}

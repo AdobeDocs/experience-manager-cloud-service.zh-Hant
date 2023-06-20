@@ -2,7 +2,7 @@
 title: 啟用漸進式網頁應用程式功能
 description: AEM Sites可讓內容作者透過簡易設定（而非編碼）為任何網站啟用漸進式網頁應用程式功能。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 1%
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 ### 使用核心元件 {#adjust-components}
 
-核心元件2.15.0版及更新版本完全支援AEM網站的PWA功能。 由於AEMaaCS一律包含最新版本的核心元件，因此您可以運用現成的PWA功能。 您的AEMaaCS專案會自動滿足此要求。
+核心元件2.15.0版及更新版本完全支援AEM網站的PWA功能。 由於AEMaaCS一律包含最新版本的核心元件，因此您可以使用現成的PWA功能。 您的AEMaaCS專案會自動滿足此要求。
 
 >[!NOTE]
 >
@@ -122,7 +122,6 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
       * `/etc/clientlibs/<sitename>`
 
       ![定義PWA離線路徑](../assets/pwa-offline.png)
-
 
 1. 點選或按一下&#x200B;**儲存並關閉**。
 

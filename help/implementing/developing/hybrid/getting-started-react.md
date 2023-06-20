@@ -2,10 +2,10 @@
 title: 開始在 AEM 中使用 React 建立 SPA
 description: 本文介紹了一個SPA應用計畫範例，說明它是如何組合在一起的，並可讓您使用React框架快速啟動並執行您自己的SPA。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 10%
+source-wordcount: '1142'
+ht-degree: 8%
 
 ---
 
@@ -31,7 +31,7 @@ SPA製作功能提供全方位的解決方案，可支援AEM中的SPA。 本文�
 
 >[!NOTE]
 >
->為了能夠在SPA內製作內容，內容必須儲存在AEM中，並由內容模型公開。
+>若要能夠在SPA內製作內容，內容必須儲存在AEM中，並由內容模型公開。
 >
 >若在SPA外部開發的AEM不遵守內容模型合約，將無法編寫。
 
@@ -39,7 +39,7 @@ SPA製作功能提供全方位的解決方案，可支援AEM中的SPA。 本文�
 
 ## 相依性、設定和建置 {#dependencies-configuration-and-building}
 
-除了預期的React相依性外，範例SPA還可以運用其他程式庫，以更有效率地建立SPA。
+除了預期的React相依性外，範例SPA還可以使用其他程式庫，以更有效率地建立SPA。
 
 ### 相依性 {#dependencies}
 
@@ -60,7 +60,7 @@ SPA製作功能提供全方位的解決方案，可支援AEM中的SPA。 本文�
  react-dom
 ```
 
-此 `aem-clientlib-generator` 會運用，以便在建置流程中自動建立使用者端程式庫。
+此 `aem-clientlib-generator` 用於自動建立使用者端程式庫，作為建置流程的一部分。
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -97,7 +97,7 @@ module.exports = {
 
 ### 正在建置 {#building}
 
-實際建立應用程式運用 [網頁元件](https://webpack.js.org/) 用於整合，以及用於自動建立使用者端程式庫的aem-clientlib-generator。 因此， build指令將類似於：
+實際建立應用程式使用 [網頁元件](https://webpack.js.org/) 用於整合，以及用於自動建立使用者端程式庫的aem-clientlib-generator。 因此， build指令將類似於：
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -105,7 +105,7 @@ module.exports = {
 
 ### AEM 專案原型 {#aem-project-archetype}
 
-任何 AEM 專案都應利用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，它支援使用 React 或 Angular 的 SPA 專案並利用 SPA SDK。
+任何AEM專案都應該使用 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，支援使用React或Angular的SPA專案，並使用SPA SDK。
 
 ## 應用程式結構 {#application-structure}
 
@@ -134,7 +134,7 @@ ReactDOM.render(
 });
 ```
 
-的主要功能 `index.js` 就是利用 `ReactDOM.render` 函式來判斷DOM中要插入應用程式的位置。
+的主要功能 `index.js` 是使用 `ReactDOM.render` 函式來判斷DOM中要插入應用程式的位置。
 
 這是此函式的標準用法，並非此範例應用程式所特有。
 

@@ -2,10 +2,10 @@
 title: SPA 編輯器概觀
 description: 本文全面概述了 SPA 編輯器及其運作原理，包括 SPA 編輯器在 AEM 中互動的詳細工作流程。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 100%
+source-wordcount: '1630'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ SPA 的頁面元件不會透過 JSP 或 HTL 檔案提供其子元件的 HTML 元
 
 ### 頁面模型管理 {#page-model-management}
 
-頁面模型的解析和管理委託給提供的 `PageModel` 庫。SPA 必須使用頁面模型庫才能由 SPA 編輯器初始化和編寫。頁面模型庫透過 `aem-react-editable-components` npm 間接提供給 AEM 頁面元件。頁面模型是 AEM 和 SPA 之間的解譯器，因此必須存在。編寫頁面時，必須新增額外的程式庫 `cq.authoring.pagemodel.messaging` 才能與頁面編輯器通訊。
+頁面模型的解析和管理委託給提供的 `PageModel` 庫。SPA必須使用頁面模型程式庫，才能由SPA編輯器初始化和編寫。 頁面模型庫透過 `aem-react-editable-components` npm 間接提供給 AEM 頁面元件。頁面模型是 AEM 和 SPA 之間的解譯器，因此必須存在。編寫頁面時，會新增一個程式庫 `cq.authoring.pagemodel.messaging` 必須新增才能啟用與頁面編輯器的通訊。
 
 如果 SPA 頁面元件從頁面核心元件繼承，則有兩個方式可以使 `cq.authoring.pagemodel.messaging` 用戶端程式庫類別可用：
 
@@ -78,7 +78,7 @@ SPA 的頁面元件不會透過 JSP 或 HTL 檔案提供其子元件的 HTML 元
 1. SPA 載入到單獨的框架中。
 1. SPA 要求 JSON 內容並在用戶端呈現元件。
 1. SPA 編輯器偵測到呈現的元件並產生覆蓋。
-1. 作者按一下覆蓋，顯示元件的編輯工具列。
+1. 作者按一下「覆蓋」，顯示元件的編輯工具列。
 1. SPA 編輯器透過向伺服器發出 POST 要求來保留編輯。
 1. SPA 編輯器要求 SPA 編輯器的已更新 JSON，該更新透過 DOM 事件傳送到 SPA。
 1. SPA 重新呈現相關元件，更新其 DOM。
@@ -90,7 +90,6 @@ SPA 的頁面元件不會透過 JSP 或 HTL 檔案提供其子元件的 HTML 元
 >* SPA 一律負責其顯示作業。
 >* SPA 編輯器與 SPA 本身隔離。
 >* 在生產 (發佈) 中，SPA 編輯器從不載入。
-
 
 ### 用戶端-伺服器頁面編輯工作流程 {#client-server-page-editing-workflow}
 
@@ -161,7 +160,7 @@ SPA Editor SDK 支援以下最低版本：
 
 ### 其他的框架 {#additional-frameworks}
 
-可以實作其他 SPA 框架以與 AEM SPA Editor SDK 搭配運作。請參閱 [SPA 藍圖](blueprint.md) 文件，了解框架必須滿足的要求，以便建立由模組、元件和服務組成的框架特定層，以與 AEM SPA 編輯器搭配運作。
+可以實作其他 SPA 框架以與 AEM SPA Editor SDK 搭配運作。請參閱 [SPA Blueprint](blueprint.md) 說明框架必須滿足的需求，才能建立包含模組、元件和服務的framework特定層，以便與AEM SPA編輯器搭配使用。
 
 ### 使用多個選擇器 {#multiple-selectors}
 

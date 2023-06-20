@@ -2,9 +2,9 @@
 title: Eclipse 適用的 AEM 開發人員工具
 description: Eclipse 適用的 AEM 開發人員工具
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1184'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ _Experience ManagerEclipse開發者工具_ 是Eclipse外掛程式，根據 [Apac
 
 >[!NOTE]
 >
->在macOS上，您需要按一下右鍵 **Eclipse.app** 然後選取 **顯示封裝內容** 以尋找 `eclipse.ini`**.**
+>在macOS上，您需要按一下右鍵 **Eclipse.app**，然後選取 **顯示封裝內容** 尋找您的 `eclipse.ini`**.**
 
 ## 如何安裝適用於Eclipse的AEM開發人員工具 {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -165,27 +165,27 @@ _Eclipse的Experience Manager開發工具_ 提供AEM Perspective ，讓您能夠
    1. 取代 `<workspaceFilter>` 元素的開頭為您的套件規則 `/apps` 和 `/etc`
       * 例如：
 
-         ```xml
-         <?xml version="1.0" encoding="UTF-8"?>
-         <workspaceFilter version="1.0">
-            <filter root="/apps/foo"/>
-            <filter root="/apps/foundation/components/bar"/>
-            <filter root="/etc/designs/foo"/>
-         </workspaceFilter>
-         ```
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/apps/foo"/>
+           <filter root="/apps/foundation/components/bar"/>
+           <filter root="/etc/designs/foo"/>
+        </workspaceFilter>
+        ```
+
    1. 然後開啟 `PROJECT.ui.content/src/main/content/META-INF/filter.xml`.
    1. 將規則取代為您的套件中以開頭的規則 `/content`.
       * 例如：
 
-         ```xml
-         <?xml version="1.0" encoding="UTF-8"?>
-         <workspaceFilter version="1.0">
-            <filter root="/content/foo"/>
-            <filter root="/content/dam/foo"/>
-            <filter root="/content/usergenerated/content/foo"/>
-         </workspaceFilter>
-         ```
-
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/content/foo"/>
+           <filter root="/content/dam/foo"/>
+           <filter root="/content/usergenerated/content/foo"/>
+        </workspaceFilter>
+        ```
 
 1. 請務必儲存所有變更。 您現在可以將新內容同步至您的AEM執行個體。
 

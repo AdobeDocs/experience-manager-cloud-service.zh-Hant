@@ -2,10 +2,10 @@
 title: 授權儀表板
 description: Cloud Manager 提供了一個儀表板，用於輕鬆查看您的組織或租使用者可用的 AEMaaCS 產品權利。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: d5e0ca924dee50d7dd4f9057010b1a39780b4352
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 97%
 
 ---
 
@@ -79,7 +79,7 @@ AEM 還制定了排除知名機器人的規則，包括定期存取該網站以�
 | 報表套裝 | 屬於同一 AEM 實例和域的頁面可能會將數據發送到不同的 Analytics 報表包。 |
 | 第三方監控和安全工具 | 監控和安全掃描工具可能會為 AEM 生成未在 Analytics 報告中跟踪的內容請求。 |
 | 預取請求 | 使用預取服務來預加載頁面以提高速度可能會導致內容請求流量顯著增加。 |
-| DDOS | 儘管 Adobe 盡一切努力自動檢測和過濾來自 DDOS 攻擊的流量，但不能保證會檢測到所有可能的 DDOS 攻擊 |
+| DDOS | 雖然Adobe會盡一切努力自動偵測並篩選掉來自DDOS攻擊的流量，但無法保證偵測到所有可能的DDOS攻擊 |
 | 流量攔截器 | 在瀏覽器中使用跟踪器阻止程序可能會選擇不跟踪某些請求。 |
 | 防火牆 | 防火牆可能會阻止 Analytics 跟踪。這在企業防火牆中更為常見。 |
 

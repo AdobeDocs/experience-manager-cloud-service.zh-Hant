@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具進行驗證和偵錯
 description: 使用 Dispatcher 工具進行驗證和偵錯
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a56b0ed1efff7b8d04e65921ee9dd25ae7030dbd
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2859'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-您可以有一或多個這些檔案。 它們包含 `<VirtualHost>` 與主機名稱相符的專案，並允許Apache使用不同規則處理每個網域流量。 檔案建立於 `available_vhosts` 目錄，並透過中的符號連結啟用 `enabled_vhosts` 目錄。 從 `.vhost` 檔案、其他檔案（例如重寫程式和變數）都會包含在內。
+您可以有一或多個這些檔案。 它們包含 `<VirtualHost>` 與主機名稱相符的專案，並允許Apache使用不同規則處理每個網域流量。 檔案建立於 `available_vhosts` 目錄，並透過中的符號連結啟用 `enabled_vhosts` 目錄。 從 `.vhost` 包括檔案、其他檔案（例如重寫程式和變數）。
 
 >[!NOTE]
 >
@@ -92,17 +92,17 @@ ht-degree: 1%
 
 ```
 <VirtualHost *:80>
-	ServerName	"example.com"
-	# Put names of which domains are used for your published site/content here
-	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
-	# Use a document root that matches the one in conf.dispatcher.d/default.farm
-	DocumentRoot "${DOCROOT}"
-	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
-	AllowEncodedSlashes NoDecode
-	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
-	<IfModule mod_headers.c>
-		Header add X-Vhost "publish-example-com"
-	</IfModule>
+    ServerName    "example.com"
+    # Put names of which domains are used for your published site/content here
+    ServerAlias     "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+    # Use a document root that matches the one in conf.dispatcher.d/default.farm
+    DocumentRoot "${DOCROOT}"
+    # URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+    AllowEncodedSlashes NoDecode
+    # Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+    <IfModule mod_headers.c>
+        Header add X-Vhost "publish-example-com"
+    </IfModule>
   ...
 </VirtualHost>
 ```
@@ -121,7 +121,7 @@ ht-degree: 1%
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-您可以有一或多個這些檔案，而且它們包含陣列以符合主機名稱，並允許Dispatcher模組使用不同規則處理每個陣列。 檔案建立於 `available_farms` 目錄，並透過中的符號連結啟用 `enabled_farms` 目錄。 從 `.farm` 檔案、其他檔案（例如篩選器、快取規則等）都會包含在內。
+您可以有一或多個這些檔案，而且它們包含陣列以符合主機名稱，並允許Dispatcher模組使用不同規則處理每個陣列。 檔案建立於 `available_farms` 目錄，並透過中的符號連結啟用 `enabled_farms` 目錄。 從 `.farm` 包括檔案、其他檔案（如篩選器、快取規則等）。
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -149,7 +149,7 @@ ht-degree: 1%
 
 這些檔案是基本框架的一部分，可強制實施標準和最佳實務。 這些檔案被視為不可變，因為在本機修改或刪除它們將不會對您的部署造成影響，因為它們將不會傳輸到您的雲端執行個體。
 
-建議上述檔案參考下列不可變檔案，然後加上任何其他陳述式或覆寫。 將Dispatcher設定部署到雲端環境時，將會使用不可變檔案的最新版本，無論本機開發中使用的版本為何。
+建議上述檔案參考下列不可變檔案，然後加上任何其他陳述式或覆寫。 將Dispatcher設定部署到雲端環境時，無論本機開發中使用了哪個版本，都會使用最新版本的不可變檔案。
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -262,7 +262,7 @@ Phase 3 finished
 
 如果指示詞未列入允許清單，工具會記錄錯誤並傳回非零的退出代碼。 此外，它會進一步掃描所有具有模式的檔案 `conf.dispatcher.d/enabled_farms/*.farm` 並檢查：
 
-* 不存在允許使用的篩選規則 `/glob` (請參閱 [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) 以取得更多詳細資料。
+* 不存在允許使用的篩選規則 `/glob` (請參閱 [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957))以取得更多詳細資料。
 * 未公開任何管理功能。 例如，存取路徑，例如 `/crx/de or /system/console`.
 
 請注意，驗證工具只會報告未列入允許清單的Apache指示詞被禁止使用的情況。 不會報告您的Apache設定的語法或語義問題，因為此資訊僅適用於執行環境中的Apache模組。
@@ -400,7 +400,7 @@ Cloud manager validator 2.0.xx
 
 此階段也可以獨立執行 `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
-在Cloud Manager部署期間， `httpd -t` 語法檢查也會執行，所有錯誤都將包含在Cloud Manager建置影像步驟失敗記錄中。
+在Cloud Manager部署期間， `httpd -t` 語法檢查也會執行，所有錯誤都會包含在Cloud Manager建置影像步驟失敗記錄中。
 
 ### 階段3 {#third-phase}
 
@@ -530,7 +530,7 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
 }
 ```
 
-或者，您可以在httpd/dispatcher設定中使用Cloud Manager環境變數，但不是環境秘密。 如果程式有多個開發環境，而且其中一些開發環境的httpd/dispatcher設定值不同，此方法就特別重要。 系統會使用與上述範例相同的${VIRTUALHOST}語法，但不會使用上述變數檔案中的Define宣告。 閱讀 [Cloud Manager檔案](/help/implementing/cloud-manager/environment-variables.md) 以取得設定Cloud Manager環境變數的指示。
+或者，您可以在httpd/dispatcher設定中使用Cloud Manager環境變數，但不是環境秘密。 如果程式有多個開發環境，而且其中一些開發環境的httpd/dispatcher設定值不同，此方法就特別重要。 相同的${VIRTUALHOST} 語法會如上述範例一樣使用，但不會使用上述變數檔案中的Define宣告。 閱讀 [Cloud Manager檔案](/help/implementing/cloud-manager/environment-variables.md) 以取得設定Cloud Manager環境變數的指示。
 
 在本機測試您的設定時，您可以傳遞變數來模擬不同的環境型別 `DISP_RUN_MODE` 至 `docker_run.sh` 直接編寫指令碼：
 
@@ -573,7 +573,6 @@ $ docker exec d75fbd23b29 httpd-test
    * 提交檔案 `opt-in/USE_SOURCES_DIRECTLY` 非生產管道部署到雲端開發環境的Git分支。
    * 使用Cloud Manager來部署至雲端開發環境。
    * 徹底測試。 在將變更部署到更高層環境之前，請務必驗證Apache和Dispatcher設定的行為是否符合您的預期。 檢查與您的自訂設定相關的所有行為！ 如果您認為部署的Dispatcher設定未反映您的自訂設定，請提交客戶支援票證。
-
    >[!NOTE]
    >
    >在彈性模式中，您應該使用相對路徑，而不是絕對路徑。

@@ -2,10 +2,10 @@
 title: 資料保護和資料隱私權法規 - Adobe Experience Manager as a Cloud Service Sites 整備
 description: 了解對各種資料保護和資料隱私權法規的 Adobe Experience Manager as a Cloud Service Sites 支援；包括歐盟一般資料保護規範 (GDPR)、加州消費者隱私法，以及在實施新的 AEM as a Cloud Service 專案時如何遵守。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 100%
+source-wordcount: '1028'
+ht-degree: 93%
 
 ---
 
@@ -56,15 +56,16 @@ Adobe Experience Manager 受用於管理使用者選擇加入/選擇退出的 co
 
 1. 選擇參照的連結；目前標題在&#x200B;**這裡**。
 
-1. 您將看到以下詳細資料，以及選擇退出或加入的選項：
+1. 畫面會顯示下列詳細資料，以及選擇退出或加入的選項：
 
    * 要選擇退出有關您造訪本網站的資料的彙總和分析，必須在您的瀏覽器上安裝 cookie。此 cookie 表明您已選擇退出。
 
-      如果您刪除選擇退出 cookie，或者如果您變更電腦或網頁瀏覽器，您將需要再次選擇退出。
+     如果您刪除選擇退出 cookie，或者如果您變更電腦或網頁瀏覽器，您將需要再次選擇退出。
 
-      選擇退出 - 將我從訪客工作階段彙總和分析中排除 (安裝`amcglobal.sc.omtrdc.net`選擇退出 cookie) - 按一下這裡。
+     選擇退出 - 將我從訪客工作階段彙總和分析中排除 (安裝`amcglobal.sc.omtrdc.net`選擇退出 cookie) - 按一下這裡。
 
-      選擇加入 - 將我包含在訪客工作階段彙總和分析中 (不安裝`amcglobal.sc.omtrdc.net`選擇退出 cookie) - 按一下這裡。
+     選擇加入 - 將我包含在訪客工作階段彙總和分析中 (不安裝`amcglobal.sc.omtrdc.net`選擇退出 cookie) - 按一下這裡。
+
    按照上述步驟來存取實際連結。
 
    >[!NOTE]
@@ -108,22 +109,22 @@ AEM 透過 ContextHub 提供一個選用資料層。這會將訪客特定的資�
 
 * 如果網站訪客接受網站的條款與條件，則應移除 ContextHub 選擇退出 cookie：
 
-   ```
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   ```
+  ```
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  ```
 
 * 如果網站訪客不接受網站的條款與條件，則應設定 ContextHub 選擇退出 cookie：
 
-   ```
-   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
-   ```
+  ```
+  ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
+  ```
 
 * 要檢查 ContextHub 是否以選擇退出模式執行，應在瀏覽器的主控台中進行以下呼叫：
 
-   ```
-   var isOptedOut = ContextHub.isOptedOut(true) === true;
-   // if isOptedOut is true, ContextHub is running in opt-out mode
-   ```
+  ```
+  var isOptedOut = ContextHub.isOptedOut(true) === true;
+  // if isOptedOut is true, ContextHub is running in opt-out mode
+  ```
 
 ### 預覽 ContextHub 的持續性 {#previewing-persistence-of-contexthub}
 
@@ -138,6 +139,7 @@ AEM 透過 ContextHub 提供一個選用資料層。這會將訪客特定的資�
          * 「本機儲存」> (網站) > ContextHubPersistence
          * 「工作階段儲存」> (網站) > ContextHubPersistence
          * 「Cookie」> (網站) > SessionPersistence
+
    * Firefox：
 
       * 開啟「開發人員工具」>「儲存」：
@@ -145,6 +147,7 @@ AEM 透過 ContextHub 提供一個選用資料層。這會將訪客特定的資�
          * 「本機儲存」> (網站) > ContextHubPersistence
          * 「工作階段儲存」> (網站) > ContextHubPersistence
          * 「Cookie」> (網站) > SessionPersistence
+
    * Safari：
 
       * 開啟「偏好設定」>「進階」> 在選單列中顯示「開發」選單
@@ -153,6 +156,7 @@ AEM 透過 ContextHub 提供一個選用資料層。這會將訪客特定的資�
          * 「主控台」>「儲存」>「本機儲存」> (網站) > ContextHubPersistence
          * 「主控台」>「儲存」>「工作階段儲存」> (網站) > ContextHubPersistence
          * 「主控台」>「儲存」>「Cookie」> (網站) > ContextHubPersistence
+
    * Internet Explorer：
 
       * 開啟「開發人員工具」>「主控台」
@@ -160,9 +164,6 @@ AEM 透過 ContextHub 提供一個選用資料層。這會將訪客特定的資�
          * `localStorage.getItem('ContextHubPersistence')`
          * `sessionStorage.getItem('ContextHubPersistence')`
          * `document.cookie`
-
-
-
 
 * 在瀏覽器的主控台中使用 ContextHub API：
 
@@ -173,8 +174,7 @@ AEM 透過 ContextHub 提供一個選用資料層。這會將訪客特定的資�
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      ContextHub 存放區會定義將使用哪個持續層，因此要檢視持續性的目前狀態，應檢查所有層。
-
+     ContextHub存放區會定義使用哪個持續層，因此若要檢視持續性的目前狀態，應檢查所有層。
 
 例如，檢視儲存在 localStorage 中的資料：
 
@@ -187,12 +187,12 @@ AEM 透過 ContextHub 提供一個選用資料層。這會將訪客特定的資�
       * 「本機儲存」> (網站) > ContextHubPersistence
       * 「工作階段儲存」> (網站) > ContextHubPersistence
       * 「Cookie」> (網站) > SessionPersistence
+
    * Firefox - 開啟「開發人員工具」>「儲存」：
 
       * 「本機儲存」> (網站) > ContextHubPersistence
       * 「工作階段儲存」> (網站) > ContextHubPersistence
       * 「Cookie」> (網站) > SessionPersistence
-
 
 * 在瀏覽器的主控台中使用 ContextHub API：
 
@@ -203,8 +203,7 @@ AEM 透過 ContextHub 提供一個選用資料層。這會將訪客特定的資�
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      ContextHub 存放區會定義將使用哪個持續層，因此要檢視持續性的目前狀態，應檢查所有層。
-
+     ContextHub存放區會定義使用哪個持續層，因此若要檢視持續性的目前狀態，應檢查所有層。
 
 例如，檢視儲存在 localStorage 中的資料：
 
@@ -219,27 +218,27 @@ console.log(storage.getTree());
 
 * 要清除目前載入之存放區的持續性：
 
-   ```
-   // in order to be able to fully access persistence layer, Opt-Out must be turned off
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   
-   // following call asks all currently loaded stores to clear their data
-   ContextHub.cleanAllStores();
-   
-   // following call asks all currently loaded stores to set back default values (provided in their configs)
-   ContextHub.resetAllStores();
-   ```
+  ```
+  // to be able to fully access persistence layer, Opt-Out must be turned off
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  
+  // following call asks all currently loaded stores to clear their data
+  ContextHub.cleanAllStores();
+  
+  // following call asks all currently loaded stores to set back default values (provided in their configs)
+  ContextHub.resetAllStores();
+  ```
 
 * 要清除特定的持續層；例如，sessionStorage：
 
-   ```
-   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
-   storage.setItem('/store', null);
-   storage.setItem('/_', null);
-   
-   // to confirm that nothing is stored:
-   console.log(storage.getTree());
-   ```
+  ```
+  var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
+  storage.setItem('/store', null);
+  storage.setItem('/_', null);
+  
+  // to confirm that nothing is stored:
+  console.log(storage.getTree());
+  ```
 
 * 要清除所有 ContextHub 持續層，必須為所有層呼叫適當的程式碼：
 

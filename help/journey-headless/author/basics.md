@@ -2,10 +2,10 @@
 title: 了解編寫基本知識
 description: 了解使用內容片段為 Headless CMS 編寫內容的概念和機制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
-workflow-type: ht
-source-wordcount: '1711'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '1708'
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ AEM 安裝通常至少包含三個環境：
 
 ### 登入 {#signing-in}
 
-如同大部分系統，需要登入。作為作者，您將取得：
+和大多數系統一樣，您需要登入。 身為作者，您會獲得：
 
 * 使用者 (帳戶) 名稱
 * 密碼
@@ -56,7 +56,7 @@ AEM 安裝通常至少包含三個環境：
 
 首次登入小型線上教學課程，將會重點介紹使用者介面的一些主要功能。
 
-然後，您可以使用導覽面板存取 AEM 的關鍵區域。對於內容片段，您將使用&#x200B;**內容片段**&#x200B;主控台 (對於某些動作，您也將使用&#x200B;**資產**&#x200B;主控台)。
+然後，您可以使用導覽面板存取 AEM 的關鍵區域。對於內容片段，請使用 **內容片段** 主控台(針對某些動作，您也會使用 **資產** 主控台)。
 
 可以透過選擇左上角的 Adobe 圖示，然後選擇小羅盤圖示來開啟導覽面板。
 
@@ -188,7 +188,7 @@ Creating a Content Fragment is very similar - you just use the **Content Fragmen
 
 ![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
-This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment is based on:
 
 ![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 

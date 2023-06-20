@@ -2,9 +2,9 @@
 title: 將內容內嵌至目標
 description: 將內容內嵌至目標
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1732'
 ht-degree: 12%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 12%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. 檢閱擷取檢查清單，並確保已完成所有步驟。 這些是確保成功擷取的必要步驟。 您將能夠繼續前往 **下一個** 只有在檢查清單完成時才會執行此步驟。
+1. 檢閱擷取檢查清單，並確保已完成所有步驟。 這些是確保成功擷取的必要步驟。 繼續前往 **下一個** 只有在檢查清單完成時才會執行此步驟。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
@@ -36,19 +36,19 @@ ht-degree: 12%
 
    * 選取包含擷取資料的移轉集作為來源。
       * 移轉集將在長時間不活動後過期，因此預期擷取會在執行擷取後不久發生。 檢閱 [移轉集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以取得詳細資訊。
-   * 選取目標環境。 這是將會擷取移轉集內容的位置。 選取階層。 （作者/發佈）。 不支援快速開發環境。
+   * 選取目標環境。 此環境是擷取移轉集內容的地方。 選取階層。 （作者/發佈）。 不支援快速開發環境。
 
    >[!NOTE]
    >下列附註適用於擷取內容：
    > 如果來源是Author，建議將其擷取到目標上的Author層級。 同樣地，如果來源是Publish，則目標也應該是Publish。
-   > 如果目標層為 `Author`，作者執行個體會在擷取期間關閉，且將讓使用者（例如，作者或執行維護的任何人等）無法使用。 這是為了保護系統，並防止任何可能遺失或造成內嵌衝突的變更。 請確定您的團隊知道這個事實。 另請注意，環境在作者擷取期間似乎處於休眠狀態。
+   > 如果目標層為 `Author`，作者例項會在擷取期間關閉，且無法供使用者（例如作者或執行維護的任何人）使用。 原因是為了保護系統，並防止任何可能遺失或造成內嵌衝突的變更。 確保您的團隊知道這個事實。 另請注意，環境在作者擷取期間似乎處於休眠狀態。
    > 您可以執行選用的預先複製步驟，以大幅加快擷取階段。 請參閱 [使用AzCopy擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以取得更多詳細資料。
-   > 如果使用預先複製擷取（用於S3或Azure資料存放區），建議先單獨執行作者擷取。 稍後執行發佈擷取時，這會加快擷取速度。
-   > 內嵌不支援快速開發環境(RDE)目的地。 它們不會顯示為可能的目的地選擇，即使使用者擁有存取權。
+   > 如果使用預先複製擷取（用於S3或Azure資料存放區），建議先單獨執行作者擷取。 如此一來，稍後執行發佈內嵌時即可加速該內嵌。
+   > 內嵌不支援快速開發環境(RDE)目的地，即使使用者擁有存取權，也不會顯示為可能的目的地選擇。
 
    >[!IMPORTANT]
    > 下列重要通知適用於擷取內容：
-   > 只有當您屬於本機時，才能起始內嵌至目的地環境的作業 **AEM管理員** 目的地Cloud Service作者服務上的群組。 如果您無法開始內嵌，請參閱 [無法開始內嵌](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以取得更多詳細資料。
+   > 只有當您屬於本機時，才能起始內嵌至目的地環境 **AEM管理員** 目的地Cloud Service作者服務上的群組。 如果您無法開始內嵌，請參閱 [無法開始內嵌](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以取得更多詳細資料。
    > 如果設定 **擦去** 在內嵌之前啟用，會刪除整個現有存放庫並建立新存放庫以內嵌內容。 這表示它會重設所有設定，包括目標Cloud Service執行個體的許可權。 對於新增至的管理員使用者也是如此 **管理員** 群組。 您必須重新新增至管理員群組，才能開始內嵌。
 
 1. 按一下 **擷取**
@@ -118,11 +118,11 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->權杖將可供屬於本機的使用者使用 **AEM管理員** 目的地Cloud Service作者服務上的群組。
+>屬於本機的使用者可以使用權杖 **AEM管理員** 目的地Cloud Service作者服務上的群組。
 
 ### 無法開始內嵌 {#unable-to-start-ingestion}
 
-只有當您屬於本機時，才能起始內嵌至目的地環境的作業 **AEM管理員** 目的地Cloud Service作者服務上的群組。 如果您不屬於AEM管理員群組，當您嘗試開始內嵌時，將會看到如下所示的錯誤。 您可以要求管理員將您新增至本機 **AEM管理員** 或要求代號本身，然後您可將它貼到 **移轉權杖輸入** 欄位。
+只有當您屬於本機時，才能起始內嵌至目的地環境 **AEM管理員** 目的地Cloud Service作者服務上的群組。 如果您不屬於AEM管理員群組，當您嘗試開始內嵌時，將會看到如下所示的錯誤。 您可以要求管理員將您新增至本機 **AEM管理員** 或要求代號本身，然後您可將它貼到 **移轉權杖輸入** 欄位。
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -138,7 +138,7 @@ ht-degree: 12%
 > 
 > 顯示「移轉權杖」欄位，因為在少數情況下，實際上不允許擷取該權杖。 透過允許手動提供，這可讓使用者無需任何其他協助即可快速開始內嵌。 如果提供Token，但訊息仍會顯示，則擷取Token不是問題。
 
-* AEMas a Cloud Service會維護環境狀態，偶爾可能由於一些正常原因需要重新啟動移轉服務。 如果服務正在重新啟動，則無法連線，但很快便可使用。
+* AEMas a Cloud Service會維護環境狀態，偶爾可能由於一些正常原因需要重新啟動移轉服務。 如果服務正在重新啟動，則無法連線，但通常很快就能使用。
 * 執行個體上可能正在執行另一個處理序。 例如，如果Release Orchestrator套用更新，系統可能會忙碌中，移轉服務會定期無法使用。 再加上可能會損毀中繼或生產執行個體，因此強烈建議在內嵌期間暫停更新。
 * 如果 [已套用IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 透過Cloud Manager，它會封鎖Cloud Acceleration Manager，使其無法到達移轉服務。 無法新增用於內嵌的IP位址，因為其位址非常動態。 目前，唯一的解決方案是在執行內嵌時停用IP允許清單。
 * 可能有其他原因需要調查。 如果內嵌仍持續失敗，請聯絡Adobe客戶服務。

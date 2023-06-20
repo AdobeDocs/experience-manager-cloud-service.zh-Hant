@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2308'
 ht-degree: 3%
@@ -24,7 +24,7 @@ CSS和LESS架構的知識。
 
 ## 可自訂的專案 {#what-can-be-customized}
 
-本文列出開放使用的Adaptive Forms css類別。 您可以利用這些類別來設定最適化表單各種元件的樣式。 製作元件（例如顯示警告的對話方塊和狀態列）的樣式超出本文章的範圍。 只有在您無法使用下列專案來樣式元件時，才使用這些樣式建構來建立樣式（使用CSS或更少）： [主題編輯器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+本文列出開放使用的Adaptive Forms css類別。 您可以使用這些類別來設定最適化表單各種元件的樣式。 製作元件（例如顯示警告的對話方塊和狀態列）的樣式超出本文章的範圍。 只有在您無法使用下列專案來樣式元件時，才使用這些樣式建構來建立樣式（使用CSS或更少）： [主題編輯器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## 在Adaptive Forms中自訂樣式 {#customizing-styles-in-adaptive-forms}
 

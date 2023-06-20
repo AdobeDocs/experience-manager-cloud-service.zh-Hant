@@ -2,9 +2,9 @@
 title: 提升 Launch
 description: 您必須提升啟動頁面，才能在發佈前將內容移回來源（生產環境）。
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '816'
 ht-degree: 6%
 
 ---
@@ -40,12 +40,11 @@ ht-degree: 6%
 >* [啟動 — 事件順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) 以取得有關自動促銷和發佈的更多詳細資訊。
 >
 
-
 您可以透過以下任一項提升啟動： **網站** 主控台或 **啟動** 主控台：
 
 1. 開啟:
    * 此 **網站** 主控台導覽來源頁面時：
-      1. 開啟 [參考邊欄](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 並使用以下方式選取所需的來源頁面 [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md) （或是選取並開啟參照邊欄，順序並不重要）。 將顯示所有參考。
+      1. 開啟 [參考邊欄](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 並使用以下方式選取所需的來源頁面 [選擇模式](/help/sites-cloud/authoring/getting-started/basic-handling.md) （或是選取並開啟參照邊欄，順序並不重要）。 所有參照都會顯示。
       1. 選取 **啟動** (例如，「啟動」(1))會顯示特定啟動的清單。
       1. 選取特定啟動項以顯示可用的動作。
       1. 選取 **提升啟動** 以開啟精靈。
@@ -65,13 +64,13 @@ ht-degree: 6%
       * **升級目前頁面**
       * **升級目前頁面與子頁面**
 
-      例如，當選取僅提升已修改的頁面時：
+     例如，當選取僅提升已修改的頁面時：
 
-      ![啟動促銷活動](/help/sites-cloud/authoring/assets/launches-promote.png)
+     ![啟動促銷活動](/help/sites-cloud/authoring/assets/launches-promote.png)
 
-      >[!NOTE]
-      >
-      >這涵蓋單一啟動（如果您有巢狀啟動），請參閱 [提升巢狀啟動](#promoting-a-nested-launch).
+     >[!NOTE]
+     >
+     >這涵蓋單一啟動（如果您有巢狀啟動），請參閱 [提升巢狀啟動](#promoting-a-nested-launch).
 1. 選取 **下一個** 以繼續進行。
 1. 您可以檢閱要提升的頁面，具體取決於您選擇的頁面範圍：
 
@@ -119,7 +118,7 @@ ht-degree: 6%
    >
    >列出的頁面取決於 **範圍** 已定義，且可能包括實際編輯的頁面。
 
-1. 您的變更將會提升並反映在 **啟動** 主控台：
+1. 您的變更會提升並反映在 **啟動** 主控台：
 
    ![在啟動主控台中](/help/sites-cloud/authoring/assets/launches-console.png)
 

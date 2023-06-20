@@ -2,10 +2,10 @@
 title: 針對 AEM 開發 SPA
 description: 本文介紹當請前端開發人員為AEM開發SPA時應考慮的重要問題，並概述AEM關於SPA的架構，以在在AEM上部署開發的SPA時牢記這一點。
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 13%
+source-wordcount: '2072'
+ht-degree: 12%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 13%
 
 ## AEM的SPA開發原則 {#spa-development-principles-for-aem}
 
-在 AEM 開發單頁應用程式是假設前端開發人員在建立 SPA 時有遵守標準最佳做法。如果您身為前端開發人員，遵循這些一般最佳實務以及少數AEM特定原則，您的SPA將能透過 [AEM及其內容製作功能](introduction.md#content-editing-experience-with-spa).
+在 AEM 開發單頁應用程式是假設前端開發人員在建立 SPA 時有遵守標準最佳做法。如果您身為前端開發人員，遵循這些一般最佳實務以及一些AEM特定原則，則您的SPA可透過以下方式運作 [AEM及其內容製作功能](introduction.md#content-editing-experience-with-spa).
 
 * **[可攜性](#portability)** - 如同任何元件， 元件應盡可能建置為具可攜性。SPA 應該使用可攜帶和可重複使用的元件建置。
 * **[AEM 促成網站結構](#aem-drives-site-structure)** - 前端開發人員建立元件並擁有其內部結構，但依賴 AEM 來定義網站的內容結構。
 * **[動態呈現](#dynamic-rendering)** - 所有呈現都應該是動態的。
 * **[動態路由](#dynamic-routing)** - SPA 負責路由，AEM 會偵聽並據此進行擷取。任何路由也應該是動態的。
 
-如果您在開發SPA時牢記這些原則，在啟用所有支援的AEM編寫功能時，將會儘可能靈活且經得起未來考驗。
+如果您在開發SPA時牢記這些原則，在啟用所有支援的AEM編寫功能時，它會儘可能地靈活且經得起未來考驗。
 
 如果您不需要支援AEM編寫功能，您可能需要考慮其他功能 [SPA設計模型](#spa-design-models).
 
@@ -54,11 +54,11 @@ SPA應該僅依賴內容的動態呈現。 這是AEM擷取並轉譯內容結構�
 
 ## AEM 專案原型 {#aem-project-archetype}
 
-任何 AEM 專案都應利用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，它支援使用 React 或 Angular 的 SPA 專案並利用 SPA SDK。
+任何AEM專案都應該使用 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，支援使用React或Angular的SPA專案，並使用SPA SDK。
 
 ## SPA設計模型 {#spa-design-models}
 
-如果 [在AEM中開發SPA的原則](#spa-development-principles-for-aem) 之後，您的SPA將可使用所有支援的AEM內容製作功能。
+如果 [在AEM中開發SPA的原則](#spa-development-principles-for-aem) ，則您的SPA可透過所有支援的AEM內容製作功能運作。
 
 不過，在某些情況下，這並非完全必要。 下表概述各種設計模型、其優點和缺點。
 
@@ -72,7 +72,7 @@ SPA應該僅依賴內容的動態呈現。 這是AEM擷取並轉譯內容結構�
   <tr>
    <td>AEM用作Headless CMS，而不使用 <a href="/help/implementing/developing/hybrid/reference-materials.md">SPA Editor SDK架構。</a></td>
    <td>前端開發人員可完全控制應用程式。</td>
-   <td><p>內容作者無法運用AEM內容製作體驗。</p> <p>如果程式碼包含靜態參照或路由，則無法移植或重複使用。</p> <p>不允許使用範本編輯器，因此前端開發人員必須透過JCR維護可編輯的範本。</p> </td>
+   <td><p>內容作者無法使用AEM內容製作體驗。</p> <p>如果程式碼包含靜態參照或路由，則無法移植或重複使用。</p> <p>不允許使用範本編輯器，因此前端開發人員必須透過JCR維護可編輯的範本。</p> </td>
   </tr>
   <tr>
    <td>前端開發人員使用SPA Editor SDK架構，但只對內容作者開啟某些區域。</td>
@@ -80,7 +80,7 @@ SPA應該僅依賴內容的動態呈現。 這是AEM擷取並轉譯內容結構�
    <td><p>內容作者受限於有限的AEM內容製作體驗。</p> <p>如果程式碼包含靜態參考或路由，則可能無法移植或重複使用。</p> <p>不允許使用範本編輯器，因此前端開發人員必須透過JCR維護可編輯的範本。</p> </td>
   </tr>
   <tr>
-   <td>專案完全運用SPA編輯器SDK，前端元件會開發為程式庫，而應用程式的內容結構會委派給AEM。</td>
+   <td>專案完全使用SPA編輯器SDK，前端元件會開發為程式庫，而應用程式的內容結構會委派給AEM。</td>
    <td><p>應用程式可重複使用且可移植。</p> <p>內容作者可使用AEM內容製作體驗來編輯應用程式。<br /> </p> <p>SPA與範本編輯器相容。</p> </td>
    <td><p>開發人員無法控制應用程式的結構和委派給AEM的內容部分。</p> <p>開發人員仍可保留應用程式的區域，以供不應使用AEM編寫的內容使用。</p> </td>
   </tr>
@@ -119,7 +119,7 @@ SPA應該僅依賴內容的動態呈現。 這是AEM擷取並轉譯內容結構�
 
 1. **實作元件的 `render()` 方法**
 
-   前端開發人員實作 `render()` 方法以適合的方式呈現，而且可以使用 `cqModel` 屬性。 這會輸出將插入頁面的DOM和HTML片段。 這是在React中建立應用程式的標準方式。
+   前端開發人員實作 `render()` 方法以適合的方式呈現，而且可以使用 `cqModel` 屬性。 這會輸出插入到頁面中的DOM和HTML片段。 這是在React中建立應用程式的標準方式。
 
 1. **透過以下方式將元件對應到AEM資源型別`MapTo()`**
 
@@ -172,16 +172,16 @@ AEM的一般架構，包括開發、製作和發佈環境，在使用SPA時不�
 
 * **組建環境**
 
-   這是SPA應用程式來源和元件來源出庫的位置。
+  這是SPA應用程式來源和元件來源出庫的位置。
 
    * NPM clientlib產生器會從SPA專案建立使用者端程式庫。
-   * 該程式庫將由Maven取得，並由Maven Build外掛程式與元件部署到AEM作者。
+   * 該程式庫由Maven取得，並由Maven Build外掛程式與元件部署到AEM作者。
 
 * **AEM 作者**
 
-   內容是在AEM作者上建立的，包括編寫SPA。
+  內容是在AEM作者上建立的，包括編寫SPA。
 
-   在製作環境中使用SPA編輯器編輯SPA時：
+  在製作環境中使用SPA編輯器編輯SPA時：
 
    1. SPA要求外部HTML。
    1. CSS已載入。
@@ -191,11 +191,11 @@ AEM的一般架構，包括開發、製作和發佈環境，在使用SPA時不�
 
 * **AEM 發佈**
 
-   這是發佈編寫的內容和編譯的程式庫(包括SPA應用程式人工因素、clientlibs和元件)以供公眾使用的位置。
+  這是發佈編寫的內容和編譯的程式庫(包括SPA應用程式人工因素、clientlibs和元件)以供公眾使用的位置。
 
 * **Dispatcher / CDN**
 
-   Dispatcher是網站訪客的AEM快取階層。
+  Dispatcher是網站訪客的AEM快取階層。
    * 請求的處理方式與它們在AEM作者上的處理方式類似，但不會請求頁面資訊，因為編輯器只需要它。
    * 快取Javascript、CSS、JSON和HTML，最佳化頁面以快速傳送。
 

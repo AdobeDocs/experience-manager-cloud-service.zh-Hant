@@ -2,9 +2,9 @@
 title: 為元件啟用 JSON 匯出
 description: 元件可調整為根據模型程式框架產生其內容的JSON匯出。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '472'
 ht-degree: 9%
 
 ---
@@ -66,7 +66,7 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 對應的Sling模型介面(`MyComponent`)之後會使用進行註解 [Jackson附註](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) 以定義應如何匯出（序列化）。
 
-需要正確註解模型介面，以定義應序列化哪些方法。 依預設，所有遵守getter一般命名慣例的方法都將序列化，並且從getter名稱自然衍生出其JSON屬性名稱。 這可以使用防止或覆寫 `@JsonIgnore` 或 `@JsonProperty` 重新命名JSON屬性。
+需要正確註解模型介面，以定義應序列化哪些方法。 依預設，所有遵守getter一般命名慣例的方法都會序列化，且會從getter名稱自然衍生其JSON屬性名稱。 這可以使用防止或覆寫 `@JsonIgnore` 或 `@JsonProperty` 重新命名JSON屬性。
 
 ## 範例 {#example}
 

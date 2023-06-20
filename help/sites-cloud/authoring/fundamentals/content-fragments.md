@@ -2,10 +2,10 @@
 title: 內容片段
 description: Adobe Experience Manager as a Cloud Service內容片段可讓您設計、建立、組織和使用獨立於頁面的內容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 3f7c9240a81062c335c33b0e59971de43cacf87b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 7%
+source-wordcount: '1226'
+ht-degree: 4%
 
 ---
 
@@ -73,7 +73,6 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
    >* [回應式版面](/help/sites-cloud/authoring/features/responsive-layout.md)
    >* [編輯頁面內容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
-
 ### 選取元素或變數 {#selecting-the-element-or-variation}
 
 開啟片段的 **設定** 對話方塊來設定片段以便在目前頁面上使用。 此對話方塊取決於所使用的元件。
@@ -92,9 +91,9 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 * **元素**
    * 可用選取範圍取決於所使用的模型。
 
-   >[!NOTE]
-   >
-   >可用的元素視使用的模型而定。
+  >[!NOTE]
+  >
+  >可用的元素視使用的模型而定。
 
 * **變異**
    * 預設主 **版** (Master)將始終可用。
@@ -147,10 +146,9 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 >  這可能使其看起來像是相對位置已變更，因為中間段落與它們旁邊的（片段）段落沒有上下文關係。
 >* 除非兩個段落結構衝突；在這種情況下，不會顯示中間內容（儘管它仍然存在於內部）。
 
-
 ### 使用關聯內容 {#using-associated-content}
 
-如果您有 [與內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)[相關的內容](/help/sites-cloud/administering/content-fragments/content-fragments.md) ，這些資產將可從側面板使用 (在您將片段放在內容頁面後)。關聯內容實際上是的特殊內容來源 [中間內容](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+如果您有 [關聯內容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) 使用 [內容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) 這些資產可從側面板使用（在您將片段放在內容頁面後）。 關聯內容實際上是的特殊內容來源 [中間內容](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >

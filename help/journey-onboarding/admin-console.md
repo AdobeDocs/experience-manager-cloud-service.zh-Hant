@@ -2,10 +2,10 @@
 title: 存取 Admin Console
 description: 一旦您了解了上線所需的準備工作和 AEMaaCS 結構的基礎知識，您就可以首次登入 Admin Console 了。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 100%
+source-wordcount: '1109'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Admin Console 是管理您的 Adobe 產品授權和使用者的中心位�
 
 若要登入 Admin Console，您需要一個 Adobe ID。Adobe ID 是與特定電子郵件地址綁定的帳戶，需要登入和存取 AEM as a Cloud Service 或您的任何 Adobe 解決方案。透過使用您的 Adobe ID，您可以將所有 Adobe 計劃和產品與一個帳戶相關聯。
 
-當您作為系統管理員在 Admin Console 中設定您的團隊時，您指定將用作 Adobe ID 的電子郵件地址。
+當您作為系統管理員在Admin Console中設定您的團隊時，您會指定用作Adobe ID的電子郵件地址。
 
 有三種不同類型的 Adobe ID：
 

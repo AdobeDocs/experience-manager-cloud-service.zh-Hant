@@ -3,10 +3,10 @@ title: 設定生產管道
 description: 了解如何設定生產管道以建置計劃碼並將其部署到生產環境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1520'
-ht-degree: 100%
+source-wordcount: '1513'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 100%
    **重要量度失敗行為** - 在管道設定或編輯期間，**部署管理員**&#x200B;可選擇對任何品質閘道中遭遇重要失敗時的管道行為進行定義。可使用的選項包括：
 
    * **每次都詢問** - 這是預設設定，要求對任何重要失敗進行手動介入。
-   * **立即失敗** - 如果選取，則每當重要失敗發生時，將取消管道。這基本上是模擬使用者手動拒絕每次失敗。
+   * **立即失敗**  — 如果選取，則只要發生重要失敗，就會取消管道。 這基本上是模擬使用者手動拒絕每次失敗。
    * **立即持續** - 如果選取，則每當重要失敗發生時，管道將自動繼續。這基本上是模擬使用者手動核准每次失敗。
 
    ![生產管道設定](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -73,6 +73,7 @@ ht-degree: 100%
 1. 在&#x200B;**原始計劃碼**&#x200B;索引標籤上，您必須定義以下選項。
 
    * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取計劃碼。
+
    >[!TIP]
    > 
    >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件：[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)。
@@ -94,13 +95,14 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->如果所選環境已存在完整堆疊計劃碼管道，則此選項將會停用。
+>如果所選環境已存在完整棧疊計畫碼管道，則會停用此選擇。
 
 若要完成完整堆疊計劃碼生產管道的設定，請按照以下步驟操作。
 
 1. 在&#x200B;**原始計劃碼**&#x200B;索引標籤上，您必須定義以下選項。
 
    * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取計劃碼。
+
    >[!TIP]
    > 
    >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件：[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)。
@@ -124,18 +126,18 @@ ht-degree: 100%
 
    ![定義體驗稽核的路徑](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. 按一下&#x200B;**新增頁面**，路徑將使用您的環境地址自動完成並新增到路徑表中。
+1. 按一下 **新增頁面** 而且路徑會使用您環境的地址自動完成，並新增至路徑表中。
 
    ![儲存表格的路徑](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
 1. 重複前兩個步驟根據需要繼續新增路徑。
 
    * 您最多可以新增 25 個路徑。
-   * 如果您未定義任何路徑，則預設情況下該網站的首頁將包含在體驗稽核中。
+   * 如果您未定義任何路徑，則預設情況下網站首頁會包含在體驗稽核中。
 
 1. 按一下&#x200B;**儲存**，即可儲存您的管道。
 
-為體驗稽核設定的路徑將提交給服務，並在管道執行時根據效能、協助工具、SEO (搜尋引擎最佳化)、最佳實務和 PWA (漸進式 Web 應用計劃) 測試進行評估。如需更多詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
+為體驗稽核設定的路徑會提交至服務，並在管道執行時根據效能、協助工具、SEO （搜尋引擎最佳化）、最佳實務和PWA（漸進式Web應用程式）測試進行評估。 如需更多詳細資訊，請參閱[了解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
 管道已儲存，您現在可以在&#x200B;**計畫總覽**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
@@ -148,6 +150,7 @@ Web 層設定管道部署 HTTPD/ Dispatcher 設定。有關此類管道的更多
 1. 在&#x200B;**原始計劃碼**&#x200B;索引標籤上，您必須定義以下選項。
 
    * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取計劃碼。
+
    >[!TIP]
    > 
    >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件：[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)。
@@ -174,7 +177,7 @@ Web 層設定管道部署 HTTPD/ Dispatcher 設定。有關此類管道的更多
 
 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
 
-請參考文件[使用前端管道開發 Sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此過程的工作原理以及需要注意的一些注意事項，以充分發揮此過程的潛力。
+請參考檔案 [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 瞭解此程式的運作方式，以及一些需要注意的事項，以充分發揮此程式的潛力。
 
 ## 跳過發送器套件 {#skip-dispatcher-packages}
 
