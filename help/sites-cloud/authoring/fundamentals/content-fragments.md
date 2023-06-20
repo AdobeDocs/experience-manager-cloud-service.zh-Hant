@@ -2,9 +2,9 @@
 title: 內容片段
 description: Adobe Experience Manager as a Cloud Service內容片段可讓您設計、建立、組織和使用獨立於頁面的內容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1222'
 ht-degree: 4%
 
 ---
@@ -62,7 +62,7 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
    >
    >另一種方法是直接將特定內容片段拖曳至頁面上。 這會自動建立關聯的元件（內容片段）。
 
-4. 最初，來自 **主要** 元素和 **主版** （變數）將會顯示。 您可以 [選取其他元素和/或變數](#selecting-the-element-or-variation) 視需要。
+4. 最初，內容來自 **主要** 元素和 **主版** （變數）會顯示。 您可以 [選取其他元素和/或變數](#selecting-the-element-or-variation) 視需要。
 
    ![資產瀏覽器中的內容片段](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -89,15 +89,15 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
    * **單文字元素**
    * **多文字元素**
 * **元素**
-   * 可用選取範圍取決於所使用的模型。
+   * 可用的選取範圍取決於所使用的模型。
 
   >[!NOTE]
   >
   >可用的元素視使用的模型而定。
 
 * **變異**
-   * 預設主 **版** (Master)將始終可用。
-   * 如果變數是為片段而建立，則可使用選取範圍。
+   * 預設 **主版** 一律可用。
+   * 如果變數是針對片段建立的，則可使用選取範圍。
 
 * **ID**
 
@@ -160,7 +160,7 @@ Adobe Experience Manager (AEM)as a Cloud Service中的內容片段包括 [已建
 
 將具有關聯內容的片段新增到頁面後，會出現新索引標籤(**關聯內容**)會在側面板中開啟。
 
-從這裡，您可以將資產拖曳至所需位置（或是拖曳至現有元件，或是拖曳至將建立適當元件的所需位置）：
+從這裡，您可以將資產拖曳至所需位置（或是拖曳至現有元件，或是拖曳至建立適當元件的所需位置）：
 
 ![插入影像](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 

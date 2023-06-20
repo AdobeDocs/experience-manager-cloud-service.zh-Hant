@@ -4,9 +4,9 @@ description: 整合 Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1042'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 * 依預設，使用者端代碼（如果先新增）也會自動複製到「租使用者ID」欄位中。
 * 您可以選擇變更預設的租使用者ID集。
-* 因此，對Target進行的後端呼叫將以租使用者ID為基礎，而對Target進行的使用者端呼叫將以使用者端代碼為基礎。
+* 因此，對Target進行的後端呼叫是根據租使用者ID，而對Target進行的使用者端呼叫是根據使用者端代碼。
 
 如前所述，第一種情況最常用於AEMas a Cloud Service。 無論是哪一種方式，請確定 **兩者** 欄位包含正確的資訊，具體取決於您的需求。
 
@@ -112,7 +112,7 @@ AEM提供與Experience Platform Launch的現成整合。 將Adobe Target擴充�
 3. 選取 **設定** 按鈕。 請注意已匯入Target帳戶憑證的設定視窗，以及此擴充功能的at.js版本。
 4. 選取 **儲存** 新增Target擴充功能至您的Launch屬性。 您應該能夠看到Target擴充功能列在 **已安裝的擴充功能** 清單。
    ![儲存擴充功能](assets/configure_extension1.png "儲存擴充功能")
-5. 重複上述步驟以搜尋 **AdobeContextHub** 擴充功能並安裝（這是與contexthub引數整合的必要步驟，會根據要完成的鎖定目標來進行）。
+5. 重複上述步驟以搜尋 **AdobeContextHub** 擴充功能並安裝（這是與contexthub引數整合的必要步驟，視目標定位完成而定）。
 
 ### 建立資料元素 {#data-element}
 
@@ -130,7 +130,7 @@ AEM提供與Experience Platform Launch的現成整合。 將Adobe Target擴充�
 
 1. 新增一組動作，如熒幕擷圖所示。
    ![動作](assets/rules1.png "動作")
-2. 在Add Params to All Mboxes中，將先前設定的資料元素（請參閱上述資料元素）新增至將在mbox呼叫中傳送的引數。
+2. 在Add Params to All Mboxes中，將先前設定的資料元素（請參閱上述資料元素）新增至在mbox呼叫中傳送的引數。
    ![Mbox](assets/map_data1.png "動作")
 
 ### 建置和發佈 {#build-publish}

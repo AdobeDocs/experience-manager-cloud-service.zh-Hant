@@ -2,9 +2,9 @@
 title: 您的收件匣
 description: 使用收件匣管理您的工作
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '905'
 ht-degree: 18%
 
 ---
@@ -112,7 +112,7 @@ ht-degree: 18%
 >
 >雖然可以選取多個專案，但一次只能對一個專案執行動作。
 
-1. 若要對專案執行動作，請選取適當專案的縮圖。 適用於該專案的動作圖示將顯示在工具列中：
+1. 若要對專案執行動作，請選取適當專案的縮圖。 適用於該專案的動作圖示會顯示在工具列中：
 
    ![選取收件匣專案](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -136,11 +136,11 @@ ht-degree: 18%
    >
    >* 工作流程專案 —  [參與工作流程](/help/sites-cloud/authoring/workflows/participating.md)
 
-2. 視選取的專案而定，將會啟動動作，例如：
+2. 視選取的專案而定，會啟動動作，例如：
 
-   * 將會開啟適用於此動作的對話方塊
-   * 將啟動動作精靈
-   * 將會開啟檔案頁面
+   * 會開啟適合該動作的對話方塊
+   * 動作精靈已啟動
+   * 檔案頁面已開啟
 
    例如， **委派** 將會開啟一個對話方塊：
 

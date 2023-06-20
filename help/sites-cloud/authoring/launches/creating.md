@@ -2,9 +2,9 @@
 title: 建立 Launch
 description: 您可以建立啟動，以更新現有網頁的新版本，以供日後啟用。
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1042'
 ht-degree: 13%
 
 ---
@@ -28,7 +28,6 @@ ht-degree: 13%
 >無法編輯這些頁面。 您會看到訊息：
 >
 >* **此頁面不是啟動項的一部分。前往生產頁面**
-
 
 ## 建立啟動 {#creating-a-launch}
 
@@ -80,7 +79,7 @@ ht-degree: 13%
 1. 在 **屬性** 您可以指定的精靈步驟：
 
    * **啟動項標題**：啟動項的名稱。 此名稱對作者應有意義。
-   * **使用現有內容**：原始內容將用於建立啟動。
+   * **使用現有內容**：原始內容會用於建立啟動。
    * **使用新範本取代頁面**：請參閱 [使用新範本建立啟動項](#create-launch-with-new-template) 以取得更多詳細資料。
    * **繼承來源頁面即時資料**：選取此選項，可在來源頁面變更時自動更新啟動頁面的內容。 此選項可讓啟動成為 [即時副本](/help/sites-cloud/administering/msm/overview.md). 依預設，會選取此選項。—>
    * **啟動日期**：啟動副本的啟用日期和時間(取決於 **生產就緒** 標幟；請參閱 [啟動 — 事件順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events))。
@@ -113,7 +112,7 @@ ht-degree: 13%
 
 >[!CAUTION]
 >
->當使用不同的範本時，新頁面將是空的。 由於頁面結構不同，將不會複製任何內容。
+>當使用不同的範本時，新頁面會是空的。 由於頁面結構不同，系統不會複製任何內容。
 >
 >此機制可用於變更 [現有頁面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)  — 雖然必須考量內容遺失。
 

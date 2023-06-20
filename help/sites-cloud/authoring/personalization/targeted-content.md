@@ -2,9 +2,9 @@
 title: 使用定位模式編寫目標內容
 description: 目標定位模式和Target元件提供建立體驗內容的工具
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 41027653bffb064b3c313d6512b0314336f6c8dc
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '5414'
+source-wordcount: '5412'
 ht-degree: 6%
 
 ---
@@ -262,7 +262,7 @@ ht-degree: 6%
 
    ![目標按鈕](../assets/targeted-target-button.png)
 
-   元件內容是預設體驗的選件。 鎖定元件為目標時，其預設節點會針對每個體驗進行復寫。 在體驗特定撰寫期間，需要此屬性才能編輯正確的內容節點。 對於這些非預設體驗，可以 [新增自訂優惠方案](#adding-a-custom-offer) 或 [新增資料庫選件](#adding-an-offer-from-an-offer-library).
+   元件內容是預設體驗的選件。 將元件設為目標時，會針對每個體驗復寫其預設節點。 在體驗特定撰寫期間，需要此屬性才能編輯正確的內容節點。 對於這些非預設體驗，可以 [新增自訂優惠方案](#adding-a-custom-offer) 或 [新增資料庫選件](#adding-an-offer-from-an-offer-library).
 
 #### 透過新增Target元件建立選件 {#creating-an-offer-by-adding-a-target-component}
 

@@ -2,9 +2,9 @@
 title: 參與工作流程
 description: 工作流程通常包括需要人員在頁面或資產上執行活動的步驟。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1542'
 ht-degree: 1%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 1%
 
 當您被指派工作項目時(例如「核准內 **容**」)，會出現各種警報和/或通知：
 
-* 您的 [通知](/help/sites-cloud/authoring/getting-started/inbox.md) 指標（工具列）將遞增：
+* 您的 [通知](/help/sites-cloud/authoring/getting-started/inbox.md) 指示器（工具列）會增加：
 
-   ![通知工具列](/help/sites-cloud/authoring/assets/workflows-notifications.png)
+  ![通知工具列](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* 此專案將列在您的通知中 [收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)：
+* 此專案會列在您的通知中 [收件匣](/help/sites-cloud/authoring/getting-started/inbox.md)：
 
-   ![收件匣中的通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
+  ![收件匣中的通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * 使用頁面編輯器時，狀態列將顯示：
    * 套用至頁面的工作流程名稱；例如「請求啟用」。
@@ -39,18 +39,18 @@ ht-degree: 1%
       * 使用左/右箭頭，導覽各種工作流程的狀態資訊。
       * 按一下/點選實際數字，以開啟所有適用工作流程的下拉式清單，然後選取您要顯示在狀態列中的工作流程。
 
-   ![具有多個工作流程的頁面](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+  ![具有多個工作流程的頁面](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
-   >[!NOTE]
-   >
-   >狀態列僅對具有工作流程許可權的使用者可見；例如， `workflow-users` 群組。
-   >
-   >
-   >當目前使用者直接參與工作流程的目前步驟時，會顯示動作。
+  >[!NOTE]
+  >
+  >狀態列僅對具有工作流程許可權的使用者可見；例如， `workflow-users` 群組。
+  >
+  >
+  >當目前使用者直接參與工作流程的目前步驟時，會顯示動作。
 
-* 時間 **時間表** 已為資源開啟，將會顯示工作流程步驟。 當您按一下/點選警報橫幅時，也會顯示可用的動作：
+* 時間 **時間表** 會針對資源開啟，且會顯示工作流程步驟。 當您按一下/點選警報橫幅時，也會顯示可用的動作：
 
-   ![時間軸中的工作流程](/help/sites-cloud/authoring/assets/workflows-timeline.png)
+  ![時間軸中的工作流程](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
 ### 完成參與者步驟 {#completing-a-participant-step}
 
@@ -219,19 +219,19 @@ ht-degree: 1%
 
 * **工作專案** 標籤：
 
-   ![工作專案標籤](/help/sites-cloud/authoring/assets/workflows-work-item.png)
+  ![工作專案標籤](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
 * **工作流程資訊** 標籤：
 
-   ![工作流程標籤](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+  ![工作流程標籤](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-   如果已經為模型配置了「工作流程階段」，您可以根據以下內容檢視進度： <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
+  如果已經為模型配置了「工作流程階段」，您可以根據以下內容檢視進度： <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
-   ![工作流程階段](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
+  ![工作流程階段](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
 * **註解** 標籤：
 
-   ![評論索引標籤](/help/sites-cloud/authoring/assets/workflows-comments.png)
+  ![評論索引標籤](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 您可以透過下列任一方式開啟工作專案詳細資料：
 

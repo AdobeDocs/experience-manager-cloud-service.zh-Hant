@@ -2,9 +2,9 @@
 title: 新增頁面註解
 description: 使用註解模式，像使用註解一樣在頁面上留下註解和草圖，以協助您的內容檢閱程式
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 64d801b108229866394e993811a67f983be5df6c
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 1. 按一下或點選「新增註釋」圖示（工具列左側的加號）以開始新增註釋。
 
-1. 按一下或點選所需的元件（可加上註解的元件將以藍色邊框反白顯示）以新增註解，然後開啟對話方塊：
+1. 按一下或點選所需的元件（可加上註解的元件會以藍色邊框反白）以新增註解，然後開啟對話方塊：
 
    ![新增註解](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -66,13 +66,13 @@ ht-degree: 0%
    * 輸入註釋文字。
    * 建立草繪（線條和形狀）以反白元件的某個區域。
 
-      ![註釋草圖按鈕](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+     ![註釋草圖按鈕](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      建立草繪時，游標會變成十字線。 您可以繪製多條不同的線條。 草繪線會反映註釋顏色，可以是箭頭、圓圈或橢圓形。
+     建立草繪時，游標會變成十字線。 您可以繪製多條不同的線條。 草繪線會反映註釋顏色，可以是箭頭、圓圈或橢圓形。
 
    * 選擇或變更色彩：
 
-      ![附注色票按鈕](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
+     ![附注色票按鈕](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
 1. 您可以按一下或點選註釋對話方塊，關閉對話方塊。 隨即顯示截斷的註釋檢視及任何草圖：
 

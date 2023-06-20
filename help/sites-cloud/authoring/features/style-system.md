@@ -2,9 +2,9 @@
 title: 樣式系統
 description: 樣式系統可讓範本作者在元件的內容原則中定義樣式類別，讓內容作者在編輯頁面上的元件時能夠選取這些類別。 這些樣式可作為元件的替代視覺變體，使其更靈活。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1319'
 ht-degree: 2%
 
 ---
@@ -154,7 +154,7 @@ ht-degree: 2%
 >
 1. HTL優先於所有內容： `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 1. 然後，在多個作用中樣式中，會採用元件原則中設定的樣式清單中的第一個樣式。
-1. 最後，元件的 `cq:htmlTag`/ `cq:tagName` 將被視為遞補值。
+1. 最後，元件的 `cq:htmlTag`/ `cq:tagName` 視為遞補值。
 >
 
 這種定義樣式名稱的功能對於一般元件（例如佈局容器或內容片段元件）非常有用，可為它們提供額外的含義。

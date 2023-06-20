@@ -2,9 +2,9 @@
 title: 編輯 Launch
 description: 為您的頁面（或一組頁面）建立啟動後，您可以編輯頁面啟動副本中的內容。
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '552'
 ht-degree: 18%
 
 ---
@@ -54,7 +54,7 @@ livecopy可用來將來源 *分支的內容*** 同步到啟動分支 (以便讓�
 
    ![比較啟動項和來源](/help/sites-cloud/authoring/assets/launches-compare.png)
 
-1. 兩個頁面（啟動項和來源）將並排開啟。
+1. 兩個頁面（啟動項和來源）並排開啟。
 
    如需關於使用此功能的完整資訊，請參閱 [頁面差異](/help/sites-cloud/authoring/features/page-diff.md).
 

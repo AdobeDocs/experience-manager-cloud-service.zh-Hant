@@ -2,9 +2,9 @@
 title: 發佈頁面
 description: 如何使用AEM發佈和取消發佈頁面
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1804'
 ht-degree: 6%
 
 ---
@@ -46,10 +46,9 @@ ht-degree: 6%
 >
 >如果您沒有發佈特定頁面所需的許可權：
 >
->* 系統會觸發工作流程，將您要發佈的請求通知適當人員。
+>* 系統會觸發一個工作流程，將您要發佈的請求通知給適當的人。
 >* 您的開發團隊可能已自訂此工作流程。
 >* 系統會顯示簡短的訊息，通知您工作流程已觸發。
-
 
 >[!NOTE]
 >
@@ -66,13 +65,13 @@ ht-degree: 6%
 1. 視頁面是否有需要發佈的參照而定：
 
    * 如果沒有可發佈的引用，則會直接發佈頁面。
-   * 如果頁面含有需要發佈的引用，這些引用將會列在 **發佈** 精靈，您可在其中執行以下任一操作：
+   * 如果頁面含有需要發佈的參考，這些參考會列在 **發佈** 精靈，您可在其中執行以下任一操作：
       * 指定哪些資產/標籤/等。 您要與頁面一起發佈，然後使用 **發佈** 以完成程式。
       * 使用 **取消** 以中止動作。
 
    ![使用頁面發佈參考](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. 選取 **發佈** 會將頁面復寫至發佈環境。 在頁面編輯器中，將顯示確認發佈動作的資訊橫幅。
+1. 選取 **發佈** 會將頁面復寫至發佈環境。 在頁面編輯器中，會顯示確認發佈動作的資訊橫幅。
 
    ![發佈狀態資訊橫幅](/help/sites-cloud/authoring/assets/publishing-info.png)
 
@@ -129,17 +128,18 @@ ht-degree: 6%
 
    * **動作**
 
-      選擇發佈或取消發佈選取的頁面。
+     選擇發佈或取消發佈選取的頁面。
 
    * **排程**
 
-      選擇現在或稍後採取該動作。
+     選擇現在或稍後採取該動作。
 
-      稍後發佈會啟動工作流程，以在指定時間發佈選取的一個或多個頁面。 反之，稍後取消發佈會啟動工作流程，以在特定時間取消發佈所選的一或多個頁面。
+     稍後發佈會啟動工作流程，以在指定時間發佈選取的一個或多個頁面。 反之，稍後取消發佈會啟動工作流程，以在特定時間取消發佈所選的一或多個頁面。
 
-      >[!NOTE]
-      >
-      >如果您要稍後取消發佈/取消發佈，請前往 [工作流程主控台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) 以終止對應的工作流程。
+     >[!NOTE]
+     >
+     >如果您要稍後取消發佈/取消發佈，請前往 [工作流程主控台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) 以終止對應的工作流程。
+
    ![管理發布選項](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. 按一下 **下一個** 以繼續。
@@ -168,11 +168,11 @@ ht-degree: 6%
 
    ![管理發布選項](/help/sites-cloud/authoring/assets/publishing-manage-publication-references.png)
 
-   此 **已發佈引用** 對話方塊會顯示所選內容的參照。 依預設，這些區段都處於選取狀態，且將會發佈/取消發佈，但您可以取消勾選以取消選取它們，以便它們不會包含在動作中。
+   此 **已發佈引用** 對話方塊會顯示所選內容的參照。 依預設，它們都是已選取且已發佈/取消發佈，但您可以取消勾選以取消選取，以便它們不會包含在動作中。
 
    按一下 **完成** 儲存變更或 **取消** 以取消選取範圍並返回精靈。
 
-   回到精靈中， **引用** 欄將會更新，以反映您選取的要發佈或取消發佈的參考。
+   回到精靈中， **引用** 欄會更新，以反映您選取的要發佈或取消發佈的參考。
 
    ![管理出版物選取頁面](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
@@ -203,7 +203,7 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >此 **工作流程** 將根據使用者可能擁有也可能沒有的許可權顯示步驟。 請參閱本頁先前關於發佈許可權及管理工作流程存取許可權的附註。 [將工作流程套用至頁面](/help/sites-cloud/authoring/workflows/applying.md) 以取得詳細資訊。
+   >此 **工作流程** 步驟是根據使用者可能擁有也可能沒有的許可權顯示。 請參閱本頁先前關於發佈許可權及管理工作流程存取許可權的附註。 [將工作流程套用至頁面](/help/sites-cloud/authoring/workflows/applying.md) 以取得詳細資訊。
 
    資源會依觸發的工作流程及每個指定選項分組，以便：
 
@@ -287,14 +287,14 @@ ht-degree: 6%
 
 * 在 [sites console上的資源概觀資訊](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 
-   ![卡片檢視中的發佈狀態](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
+  ![卡片檢視中的發佈狀態](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
-   發佈狀態會顯示在 [網站主控台](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)[的卡片](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)、欄和 [清單檢視中](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) 。
+  發佈狀態會顯示在 [網站主控台](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)[的卡片](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)、欄和 [清單檢視中](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) 。
 
 * 在 [時間表](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
 
-   ![時間軸檢視中的發佈狀態](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
+  ![時間軸檢視中的發佈狀態](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 
 * 在 [頁面資訊功能表](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) 編輯頁面時
 
-   ![「頁面資訊」選單中的發佈狀態](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)
+  ![「頁面資訊」選單中的發佈狀態](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)

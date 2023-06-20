@@ -2,9 +2,9 @@
 title: 註冊、登入和使用者個人資料
 description: 瞭解AEMas a Cloud Service的註冊、登入、使用者資料和群組同步
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1168'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Web應用程式通常提供帳戶管理功能，讓使用者在網站上註冊�
 
 ### 粘性工作階段和封裝權杖 {#sticky-sessions-and-encapsulated-tokens}
 
-AEMas a Cloud Service已啟用Cookie型粘性工作階段，可確保將一般使用者路由至每個請求上的相同發佈節點。 為了提高效能，封裝權杖功能預設為啟用，因此存放庫中的使用者記錄不需要在每次請求時參考。 如果取代一般使用者與其相似性的發佈節點，則其使用者ID記錄將在新發佈節點上可用，如下面的資料同步區段所述。
+AEMas a Cloud Service已啟用Cookie型粘性工作階段，可確保將一般使用者路由至每個請求上的相同發佈節點。 為了提高效能，封裝權杖功能預設為啟用，因此存放庫中的使用者記錄不需要在每次請求時參考。 如果取代一般使用者與其相似性的發佈節點，則其使用者ID記錄可在新發佈節點上使用，如以下資料同步一節中所述。
 
 ## 使用者設定檔 {#user-profile}
 

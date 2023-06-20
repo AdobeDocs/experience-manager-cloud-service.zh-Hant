@@ -2,16 +2,16 @@
 title: 整合 Adobe Target
 description: 整合 Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: f40a2db6616aeaaf13f8ae19ab429a7301e6c05a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '726'
 ht-degree: 2%
 
 ---
 
 # 整合 Adobe Target{#integrating-with-adobe-target}
 
-身為Adobe Marketing Cloud的一部分， [Adobe Target](https://www.adobe.com/solutions/testing-targeting/testandtarget.html) 可讓您透過所有管道的目標定位和測量，提高內容關聯性。 行銷人員使用Adobe Target來設計和執行線上測試、建立即時受眾區段（根據行為）以及自動化內容和線上體驗的鎖定目標。 AEMas a Cloud Service已採用Adobe Target Standard中使用的目標定位工作流程。 如果您使用Target，您將熟悉AEMas a Cloud Service中的目標定位編輯環境。
+身為Adobe Marketing Cloud的一部分， [Adobe Target](https://www.adobe.com/solutions/testing-targeting/testandtarget.html) 可讓您透過所有管道的目標定位和測量，提高內容關聯性。 行銷人員使用Adobe Target來設計和執行線上測試、建立即時受眾區段（根據行為）以及自動化內容和線上體驗的鎖定目標。 AEMas a Cloud Service已採用Adobe Target Standard中使用的目標定位工作流程。 如果您使用Target，則很熟悉AEMas a Cloud Service中的目標定位編輯環境。
 
 將AEM網站與Adobe Target整合，以個人化頁面中的內容：
 
@@ -54,7 +54,6 @@ ht-degree: 2%
 >* 4.x已設定為 [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
-
 >[!CAUTION]
 >
 >您必須保護活動設定節點 **cq：ActivitySettings** ，讓一般使用者無法存取。 活動設定節點應該只能由處理活動同步至Adobe Target的服務存取。
@@ -83,4 +82,3 @@ ht-degree: 2%
 >* 2,000個體驗
 >* 50個量度
 >* 50個報表區段
-

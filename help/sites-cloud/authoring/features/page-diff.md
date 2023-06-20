@@ -2,9 +2,9 @@
 title: 頁面差異
 description: 頁面差異功能可方便並排比較兩個頁面，並反白顯示其差異。
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '616'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果瀏覽器寬度無法同時容納全熒幕檢視中的兩個頁面名稱，則只會顯示所顯示頁面的名稱，而另一個名稱則會顯示在省略符號後面。
+>如果瀏覽器寬度無法同時容納全熒幕檢視中的兩個頁面名稱，則只會顯示所顯示頁面的名稱，而另一個名稱會顯示在省略符號後面。
 
 您也可以選擇按一下退出全熒幕圖示來關閉全熒幕檢視。
 

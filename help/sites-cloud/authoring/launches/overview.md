@@ -2,10 +2,10 @@
 title: Launch
 description: Launches 可讓您有效率地開發未來版本的內容。可讓您完成變更以供未來發佈，同時維護目前的頁面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 98%
+source-wordcount: '903'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ Launches 可讓您：
    * 自動 - 這涉及以下項目：
       * **Launch** (**上線**) **日期**&#x200B;欄位：這可在建立或編輯 Launch 時設定。
       * **生產就緒**&#x200B;標幟：這只能在編輯 Launch 時設定。
-      * 如果&#x200B;**生產就緒**&#x200B;標幟已設定，Launch 將於 **Launch** (**上線**) **日期**&#x200B;自動提升至生產頁面。提升後，生產頁面會自動發佈。\
+      * 如果 **生產就緒** 旗標已設定，啟動會自動升級至指定上的生產頁面 **Launch**(**即時**) **日期**. 提升後，生產頁面會自動發佈。\
         如果未設定日期，則該標幟將無效。
 * 並行更新來源頁面和 Launch 頁面：
    * 對來源頁面的變更會自動實作在 Launch 副本 (如果設定為繼承，即為 Live Copy)。
@@ -92,7 +92,7 @@ Launches 可讓您：
 
 1. 在 **Sites** 主控台中，導覽至 Launch 來源。
 1. 開啟&#x200B;**參考**&#x200B;邊欄並選取來源頁面。
-1. 選取 **Launches**，將列出現有的 Launch，以及 **Launches 主控台**&#x200B;的存取權：
+1. 選取 **啟動**，則會列出現有啟動項，以及對 **啟動主控台**：
 
    ![網站主控台中的 Launch 參考](/help/sites-cloud/authoring/assets/launches-references.png)
 

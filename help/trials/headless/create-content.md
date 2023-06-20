@@ -4,10 +4,10 @@ description: 使用您先前建立的內容片段模式來建立可用來編寫�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 1. 在主控台右上方，點選或按一下&#x200B;**建立**&#x200B;按鈕。
 
-1. **新內容片段**&#x200B;對話框隨即開啟，您可以在此處開始建立新的內容片段。**位置**&#x200B;會自動填入新內容的儲存位置。
+1. 此 **新內容片段** 對話方塊開啟，您可以在其中開始建立新的內容片段。 **位置** 會自動填入新內容的儲存位置。
 
 1. 在「**內容片段模型**」下拉式清單中，選取您先前建立的「**冒險**」內容片段模型。
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 1. 貼上以下文字，為您的片段提供&#x200B;**描述**。
 
    ```text
-   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
+   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour are rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality. Tuscany's natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
    ```
 
 1. 輸入 `$700`，為您的片段提供&#x200B;**價格**。

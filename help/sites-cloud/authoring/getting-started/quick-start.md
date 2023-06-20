@@ -2,9 +2,9 @@
 title: 編寫頁面的快速入門手冊
 description: 快速的高階指南，協助您開始編寫頁面內容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1572'
 ht-degree: 6%
 
 ---
@@ -90,11 +90,11 @@ ht-degree: 6%
 
 1. 欄檢視:
 
-   * 點選/按一下所需資源的縮圖 — 縮圖上將覆蓋一個勾號，表示已選取該縮圖。
+   * 點選/按一下所需資源的縮圖 — 縮圖上覆蓋有勾號，表示已選取該縮圖。
 
 1. 清單檢視:
 
-   * 點選/按一下所需資源的縮圖 — 縮圖上將覆蓋一個勾號，表示已選取該縮圖。
+   * 點選/按一下所需資源的縮圖 — 縮圖上覆蓋有勾號，表示已選取該縮圖。
 
 1. 卡片檢視:
 
@@ -103,7 +103,7 @@ ht-degree: 6%
       * 在行動裝置上：點選並按住卡片
       * 在桌上型電腦裝置上：使用 [快速動作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) 以勾號圖示表示：
 
-   * 卡片上將覆蓋一個勾號，表示已選取該頁面。
+   * 卡片上覆蓋有一個勾號，表示已選取頁面。
 
    ![範例卡片](/help/sites-cloud/authoring/assets/card.png)
 
@@ -319,8 +319,8 @@ ht-degree: 6%
 
    * **還原為此版本**
 
-      * 將還原版本。
+      * 版本已還原。
 
    * **顯示差異**
 
-      * 開啟頁面時，會醒目提示（兩個版本之間的）差異。
+      * 開啟頁面時，會反白顯示（兩個版本之間的）差異。

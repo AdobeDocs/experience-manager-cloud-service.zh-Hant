@@ -4,10 +4,10 @@ description: 探索使用 CodePen 範例應用程式和適用於 JavaScript 的 
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 100%
+source-wordcount: '986'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 ## 從持續性查詢擷取資料 {#use-persisted-query}
 
-在第 25 行，我們指示應用程式應從哪個 GraphQL 持續性查詢中擷取資料。持續性查詢名稱是端點名稱的組合 (即 `your-project` 或 `aem-demo-assets`)，後面接著正斜線，然後是查詢名稱。如果您完全按照前面單元的指示操作，您建立的持續性查詢將位於 `your-project` 端點。
+在第 25 行，我們指示應用程式應從哪個 GraphQL 持續性查詢中擷取資料。持續性查詢名稱是端點名稱的組合 (即 `your-project` 或 `aem-demo-assets`)，後面接著正斜線，然後是查詢名稱。如果您完全按照之前的模組指示進行，則您建立的持久查詢位在 `your-project` 端點。
 
 1. 更新 `persistedQueryName` 變數以使用您在前一個單元建立的持續性查詢。如果您按照命名建議，您將在 `adventure-list` 端點中建立名稱為 `your-project` 的持續性查詢，並且將 `persistedQueryName` 變數設定為 `your-project/adventure-list`：
 

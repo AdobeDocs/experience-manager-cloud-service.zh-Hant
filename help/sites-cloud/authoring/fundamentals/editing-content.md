@@ -2,9 +2,9 @@
 title: 編輯頁面內容
 description: 建立頁面後，您可以編輯內容以進行您所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 81d58f25af8b023774ce8653154597d92a7ac70b
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '3019'
+source-wordcount: '3004'
 ht-degree: 6%
 
 ---
@@ -42,51 +42,51 @@ ht-degree: 6%
 
 * **切換側面板**
 
-   這會開啟/關閉側面板，側面板中會包含 [資產瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)， [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)、和 [內容樹狀結構](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree).
+  這會開啟/關閉側面板，側面板中會包含 [資產瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)， [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)、和 [內容樹狀結構](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree).
 
-   ![側面板切換](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+  ![側面板切換](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
 * **頁面資訊**
 
-   提供對的存取 [頁面資訊](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) 功能表，其中包含頁面詳細資訊以及可在頁面上採取的動作，包括檢視和編輯頁面資訊、檢視頁面屬性，以及發佈/取消發佈頁面。
+  提供對的存取 [頁面資訊](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) 功能表，其中包含頁面詳細資訊以及可在頁面上採取的動作，包括檢視和編輯頁面資訊、檢視頁面屬性，以及發佈/取消發佈頁面。
 
-   ![頁面資訊按鈕](/help/sites-cloud/authoring/assets/page-information-icon.png)
+  ![頁面資訊按鈕](/help/sites-cloud/authoring/assets/page-information-icon.png)
 
 * **模擬器**
 
-   切換 [模擬器工具列](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)，用來模擬頁面在其他裝置上的外觀。 這會在版面配置模式中自動切換。
+  切換 [模擬器工具列](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)，用來模擬頁面在其他裝置上的外觀。 這會在版面配置模式中自動切換。
 
-   ![模擬器按鈕](/help/sites-cloud/authoring/assets/emulator.png)
+  ![模擬器按鈕](/help/sites-cloud/authoring/assets/emulator.png)
 
 * **ContextHub**
 
-   開啟 [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). 僅適用於預覽模式。
+  開啟 [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). 僅適用於預覽模式。
 
-   ![Context Hub按鈕](/help/sites-cloud/authoring/assets/context-hub.png)
+  ![Context Hub按鈕](/help/sites-cloud/authoring/assets/context-hub.png)
 
 * **頁面標題**
 
-   這僅供參考。
+  這僅供參考。
 
-   ![頁面標題](/help/sites-cloud/authoring/assets/page-title.png)
+  ![頁面標題](/help/sites-cloud/authoring/assets/page-title.png)
 
 * **模式選擇器**
 
-   顯示目前的 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 並可讓您選取其他模式，例如編輯、版面、時間扭曲或定位。
+  顯示目前的 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 並可讓您選取其他模式，例如編輯、版面、時間扭曲或定位。
 
-   ![模式選擇器按鈕](/help/sites-cloud/authoring/assets/mode-selector.png)
+  ![模式選擇器按鈕](/help/sites-cloud/authoring/assets/mode-selector.png)
 
 * **預覽**
 
-   啟用 [預覽模式](#preview-mode). 這會顯示發佈時所顯示的頁面。
+  啟用 [預覽模式](#preview-mode). 這會顯示發佈時所顯示的頁面。
 
-   ![預覽按鈕](/help/sites-cloud/authoring/assets/preview.png)
+  ![預覽按鈕](/help/sites-cloud/authoring/assets/preview.png)
 
 * **注釋**
 
-   可讓您新增 [註解](/help/sites-cloud/authoring/fundamentals/annotations.md) 在檢閱頁面時跳至頁面。 第一個註解後，圖示會切換為數字，指出頁面上的註解數量。
+  可讓您新增 [註解](/help/sites-cloud/authoring/fundamentals/annotations.md) 在檢閱頁面時跳至頁面。 第一個註解後，圖示會切換為數字，指出頁面上的註解數量。
 
-   ![註解按鈕](/help/sites-cloud/authoring/assets/annotations.png)
+  ![註解按鈕](/help/sites-cloud/authoring/assets/annotations.png)
 
 ### 狀態通知 {#status-notification}
 
@@ -112,21 +112,21 @@ ht-degree: 6%
 
 ## 元件預留位置 {#component-placeholder}
 
-元件預留位置是一個指示器，可顯示將元件拖曳至目前暫留的元件上方時元件的放置位置。
+元件預留位置是一個指示器，可顯示您將元件放置於何處 — 位於目前暫留的元件上方。
 
 * 將新元件新增至頁面時（從元件瀏覽器拖曳）：
 
-   ![將新元件新增至頁面時的預留位置](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
+  ![將新元件新增至頁面時的預留位置](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
 
 * 移動現有元件時：
 
-   ![在頁面上移動現有元件時的預留位置](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
+  ![在頁面上移動現有元件時的預留位置](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
 
 ## 插入元件 {#inserting-a-component}
 
 ### 從元件瀏覽器插入元件 {#inserting-a-component-from-the-components-browser}
 
-您可以使用 [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). 此 [元件預留位置](#component-placeholder) 顯示元件將放置的位置：
+您可以使用 [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). 此 [元件預留位置](#component-placeholder) 顯示元件的放置位置：
 
 1. 確定您的頁面位於 [**編輯** 模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. 開啟 [元件瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
@@ -146,15 +146,15 @@ ht-degree: 6%
 
    * 選取 **插入元件** 選項(+)(位於現有元件的工具列或 **將元件拖曳到這裡** 方塊。
 
-      ![插入元件](/help/sites-cloud/authoring/assets/editing-insert-component.png)
+     ![插入元件](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
    * 如果您使用桌上型電腦裝置，您可以連按兩下 **將元件拖曳到這裡** 方塊。
 
    * 此 **插入新元件** 將會開啟對話方塊，讓您選取所需的元件：
 
-      ![插入新元件對話方塊](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
+     ![插入新元件對話方塊](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
-1. 選取的元件將新增至頁面底部。 [編輯](#edit-content) 元件視需要。
+1. 選取的元件會新增至頁面底部。 [編輯](#edit-content) 元件視需要。
 
 ### 使用「資產瀏覽器」插入元件 {#inserting-a-component-using-the-assets-browser}
 
@@ -166,9 +166,9 @@ ht-degree: 6%
 
 1. 確定您的頁面位於 [**編輯** 模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. 開啟 [資產瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
-1. 將所需資產拖曳至所需位置。 此 [元件預留位置](#component-placeholder) 顯示元件將放置的位置。
+1. 將所需資產拖曳至所需位置。 此 [元件預留位置](#component-placeholder) 顯示元件的位置。
 
-   將在所需位置建立適合資產型別的元件 — 它將包含所選資產。
+   適合資產型別的元件會在所需位置建立，其中包含所選資產。
 
 1. [編輯](#edit-content) 元件（若有需要）。
 
@@ -184,83 +184,83 @@ ht-degree: 6%
 
 選取元件將會開啟工具列。 這可讓您存取可對元件執行的各種動作。
 
-使用者可用的實際動作會視情況顯示，此處並未說明所有動作。
+使用者可用的實際動作會視情況顯示，並非所有動作都可在此處說明。
 
 ![元件工具列](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
 * **編輯**
 
-   [取決於元件型別](/help/sites-cloud/authoring/fundamentals/components.md) 這可讓您 [編輯元件的內容](#edit-content). 通常會提供工具列。
+  [取決於元件型別](/help/sites-cloud/authoring/fundamentals/components.md)，如此可讓您 [編輯元件的內容](#edit-content). 通常會提供工具列。
 
-   ![編輯按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
+  ![編輯按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
 * **設定**
 
-   [取決於元件型別](/help/sites-cloud/authoring/fundamentals/components.md) 這可讓您編輯及設定元件的屬性。 通常會開啟一個對話方塊。
+  [取決於元件型別](/help/sites-cloud/authoring/fundamentals/components.md)，即可編輯和設定元件的屬性。 通常會開啟一個對話方塊。
 
-   ![設定按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
+  ![設定按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
 
 * **複製**
 
-   這會將元件複製到剪貼簿。 貼上動作後，原始元件將保留。
+  這會將元件複製到剪貼簿。 貼上動作後，原始元件將保留。
 
-   ![「複製」按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
+  ![「複製」按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
 
 * **剪下**
 
-   這會將元件複製到剪貼簿。 貼上動作後，原始元件將被移除。
+  這會將元件複製到剪貼簿。 貼上動作後，會移除原始元件。
 
-   ![「剪下」按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
+  ![「剪下」按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
 
 * **刪除**
 
-   這將會從含有您確認的頁面中刪除元件。
+  這將會從含有您確認的頁面中刪除元件。
 
-   ![刪除按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
+  ![刪除按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
 
 * **插入元件**
 
-   這將開啟對話方塊，以 [新增元件](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  這將開啟對話方塊，以 [新增元件](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-   ![插入按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
+  ![插入按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
 
 * **貼上**
 
-   這會將元件從剪貼簿貼到頁面上。 原始物件是否保留，取決於您是使用複製還是切削。
+  這會將元件從剪貼簿貼到頁面上。 原始物件是否保留，取決於您是使用複製還是切削。
 
    * 您可以貼到相同頁面或不同頁面。
-   * 貼上的專案將會貼在您選取貼上動作的專案上方。
+   * 貼上的專案會貼在您選取貼上動作的專案上方。
    * 唯有剪貼簿上有內容時，才會顯示「貼上」動作。
 
-   ![貼上按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
+  ![貼上按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
-   >[!NOTE]
-   >
-   >如果您在剪下/復製作業之前貼到已開啟的其他頁面，則必須重新整理頁面以檢視貼上的內容。
+  >[!NOTE]
+  >
+  >如果您在剪下/復製作業之前貼到已開啟的其他頁面，則必須重新整理頁面以檢視貼上的內容。
 
 * **群組**
 
-   這可讓您一次選取多個元件。 桌上型電腦裝置也可以透過以下步驟達到相同目的： **Control+按一下** 或 **Command+按一下**.
+  這可讓您一次選取多個元件。 桌上型電腦裝置也可以透過以下步驟達到相同目的： **Control+按一下** 或 **Command+按一下**.
 
-   ![群組按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
+  ![群組按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **父級**
 
-   這可讓您選取所選元件的父元件。
+  這可讓您選取所選元件的父元件。
 
-   ![父按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
+  ![父按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **配置**
 
-   這可讓您修改 [版面](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 所選元件的ID。 這僅適用於選取的元件，不會啟動 [版面模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 整個頁面。
+  這可讓您修改 [版面](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 所選元件的ID。 這僅適用於選取的元件，不會啟動 [版面模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 整個頁面。
 
-   ![「配置」按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+  ![「配置」按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **轉換為體驗片段變數**
 
-   這可讓您建立新的 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 或將其新增至現有的體驗片段。
+  這可讓您建立新的 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 或將其新增至現有的體驗片段。
 
-   ![「轉換為體驗片段」按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
+  ![「轉換為體驗片段」按鈕](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
 ## 編輯內容 {#edit-content}
 
@@ -277,23 +277,23 @@ ht-degree: 6%
 
 * 文字元件
 
-   ![文字元件的工具列](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
+  ![文字元件的工具列](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
 
 * 影像元件
 
-   ![影像元件的工具列](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
+  ![影像元件的工具列](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
 
-   >[!NOTE]
-   >
-   >編輯無法在空白影像元件上運作。
-   >
-   >您必須先將影像拖曳或上傳至元件，才能開始編輯。
+  >[!NOTE]
+  >
+  >編輯無法在空白影像元件上運作。
+  >
+  >您必須先將影像拖曳或上傳至元件，才能開始編輯。
 
 * 影像元件 — 全熒幕
 
-   [進入影像元件的全螢幕模式](#edit-content-full-screen-mode) ，可讓您有更多空間編輯影像，並顯示額外的編輯選項，例如「啟動地圖」和「重設縮放」 ********。此外，全螢幕還允許選取裁切預設集。
+  [進入影像元件的全螢幕模式](#edit-content-full-screen-mode) ，可讓您有更多空間編輯影像，並顯示額外的編輯選項，例如「啟動地圖」和「重設縮放」 ********。此外，全螢幕還允許選取裁切預設集。
 
-   ![影像元件的全熒幕模式](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
+  ![影像元件的全熒幕模式](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
 * 由多個基本元件所建構的元件會先要求您確認所要的編輯選項集：
 
@@ -377,15 +377,15 @@ ht-degree: 6%
 
 * 取消繼承
 
-   ![取消繼承按鈕](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
+  ![取消繼承按鈕](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
 
 * 重新啟用繼承（如果繼承已取消）
 
-   ![「重新啟用繼承」按鈕](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
+  ![「重新啟用繼承」按鈕](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
 
 * Blueprint或即時副本來源中也提供轉出動作
 
-   ![轉出按鈕](/help/sites-cloud/authoring/assets/editing-rollout.png)
+  ![轉出按鈕](/help/sites-cloud/authoring/assets/editing-rollout.png)
 
 ## 編輯頁面範本 {#editing-the-page-template}
 
@@ -420,7 +420,6 @@ ht-degree: 6%
 >* 內容中的連結是可見的，但在編輯模式下無法存取。
 >* 如果您想要使用連結來導覽，請使用任一預覽選項。
 >* 使用 [鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` 在預覽和上次選取的模式之間切換。
-
 
 >[!NOTE]
 >
@@ -511,7 +510,6 @@ AEM可讓您鎖定頁面，讓其他人無法修改內容。 當您對某個特�
 >* 此 [鍵盤快速鍵](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` 也可用來還原頁面編輯動作。
 >* 鍵盤快速鍵 `Ctrl-Y` 也可用於重做頁面編輯動作。
 
-
 >[!NOTE]
 >
 >另請參閱 [還原和重做頁面編輯 — 理論](#undoing-and-redoing-page-edits-the-theory) 以取得復原和重做頁面編輯時可行功能的完整細節。
@@ -541,5 +539,4 @@ AEM會儲存您執行動作的歷史記錄，以及執行動作的順序，如�
 >* 需要特殊許可權才能復原和重做檔案和影像的變更。
 >* 檔案和影像的變更歷史記錄至少會持續10小時。 然而，在這段時間之後，無法保證會復原變更。 您的管理員可以變更十小時的預設時間。
 >* 您的系統管理員可以根據您執行個體的需求，設定「復原/重做」功能的各個方面。
-   <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->
-
+<!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

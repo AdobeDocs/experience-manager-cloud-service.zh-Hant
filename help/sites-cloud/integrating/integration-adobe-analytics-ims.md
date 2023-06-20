@@ -2,9 +2,9 @@
 title: 與 Adobe Analytics 整合時使用的 IMS 設定
 description: 瞭解與Adobe Analytics整合時使用的IMS設定
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '887'
 ht-degree: 5%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 5%
 
    >[!CAUTION]
    >
-   >保持此設定開啟，以下情況下將再次需要它： [完成AEM中的IMS設定](#completing-the-ims-configuration-in-aem).
+   >將此設定保持開啟，以下情況需要再次使用： [完成AEM中的IMS設定](#completing-the-ims-configuration-in-aem).
 
    ![下載憑證](assets/integrate-analytics-ims-02.png)
 
@@ -71,11 +71,11 @@ ht-degree: 5%
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. 將會顯示您擁有的任何專案。 選取 **建立新專案**  — 位置和使用將取決於：
+1. 系統會顯示您擁有的任何專案。 選取 **建立新專案**  — 位置和使用將取決於：
 
-   * 如果您還沒有任何專案， **建立新專案** 將會是底部中心。
+   * 如果您還沒有任何專案， **建立新專案** 是中下。
      ![建立新專案 — 第一個專案](assets/integration-analytics-ims-02.png)
-   * 如果您已有專案，這些專案將會列示於 **建立新專案** 將位於右上方。
+   * 如果您已有現有的專案，則會列出這些專案和 **建立新專案** 右上方。
      ![建立新專案 — 多個專案](assets/integration-analytics-ims-03.png)
 
 
@@ -107,7 +107,7 @@ ht-degree: 5%
 
    ![選取所需的產品設定檔](assets/integration-analytics-ims-16.png)
 
-1. 將會確認設定。
+1. 設定已確認。
 
 ### 指派許可權給整合 {#assigning-privileges-to-the-integration}
 
@@ -160,7 +160,7 @@ ht-degree: 5%
 
 1. 使用&#x200B;**建立**&#x200B;確認。
 
-1. 您的Adobe Analytics設定將顯示在AEM主控台中。
+1. 您的Adobe Analytics設定會顯示在AEM主控台中。
 
    ![IMS 設定](assets/integrate-analytics-ims-11.png)
 
@@ -219,5 +219,5 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Complete other parameters as required, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that will be sent to Adobe Analytics. 
+1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that are sent to Adobe Analytics. 
 -->

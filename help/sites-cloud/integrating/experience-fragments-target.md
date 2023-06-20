@@ -2,7 +2,7 @@
 title: 將體驗片段匯出到 Adobe Target
 description: 將體驗片段匯出到 Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
 source-wordcount: '2250'
 ht-degree: 1%
@@ -15,7 +15,6 @@ ht-degree: 1%
 >
 >* AEM體驗片段會匯出至Adobe Target的預設工作區。
 >* AEM必須根據下的指示與Adobe Target整合 [與Adobe Target整合](/help/sites-cloud/integrating/integrating-adobe-target.md).
-
 
 您可以匯出 [體驗片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)，在Adobe Experience Manager as a Cloud Service (AEM)中建立，重新命名為Adobe Target (Target)。 然後，可將量度用作Target活動中的選件，以大規模測試並個人化體驗。
 
@@ -56,7 +55,6 @@ ht-degree: 1%
 >* [Adobe Target — 如何使用Adobe Experience Manager (AEM)體驗片段？](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en)
 >* [AEM 6.5 — 手動設定與Adobe Target的整合 — 建立Target雲端設定](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
 
-
 ## 必備條件 {#prerequisites}
 
 需要執行各種動作：
@@ -77,7 +75,7 @@ ht-degree: 1%
 * 選取Target工作區作為目的地
 * 選取外部化器網域以重寫體驗片段中的參照（選用）
 
-您可在以下位置選取所需選項： **頁面屬性** 所需資料夾和/或片段的URL名稱；必要時，會繼承規格。
+您可在以下位置選取所需選項： **頁面屬性** 所需的資料夾或/和/或片段；會視需要繼承規格。
 
 1. 導覽至 **體驗片段** 主控台。
 
@@ -185,7 +183,7 @@ ht-degree: 1%
 
    * **A4T Analytics Cloud設定**：選取用於Target活動目標和量度的Analytics雲端設定。 如果您在鎖定目標內容時使用Adobe Analytics作為報表來源，則需要此專案。
 
-      <!-- Is this needed?
+     <!-- Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
@@ -195,37 +193,36 @@ ht-degree: 1%
 
    * **使用者端資源庫：** 此預設為AT.js （已棄用mbox.js）
 
-      >[!NOTE]
-      >
-      >目標程式庫檔案， [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html)是新的Adobe Target實作程式庫，專為典型Web實作和單頁應用程式而設計。
-      >
-      >mbox.js已過時，並將在稍後階段移除。
-      >
-      >Adobe建議您使用AT.js而非mbox.js作為使用者端程式庫。
-      >
-      >AT.js對mbox.js資料庫有幾項改善：
-      >
-      >* 改善Web實施的頁面載入時間
-      >* 提升安全性
-      >* 改善單頁應用程式的實作選項
-      >* AT.js包含target.js中所包含的元件，因此不再需要呼叫target.js
-
-      >
-      >您可以選取「 」 **使用者端資源庫** 下拉式功能表。
+     >[!NOTE]
+     >
+     >目標程式庫檔案， [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html)是新的Adobe Target實作程式庫，專為典型Web實作和單頁應用程式而設計。
+     >
+     >mbox.js已過時，並將在稍後階段移除。
+     >
+     >Adobe建議您使用AT.js而非mbox.js作為使用者端程式庫。
+     >
+     >AT.js對mbox.js資料庫有幾項改善：
+     >
+     >* 改善Web實施的頁面載入時間
+     >* 提升安全性
+     >* 改善單頁應用程式的實作選項
+     >* AT.js包含target.js中所包含的元件，因此不再需要呼叫target.js
+     >
+     >您可以選取「 」 **使用者端資源庫** 下拉式功能表。
 
    * **使用Tag Management系統來提供使用者端資源庫**  — 選取此選項，即可使用AdobeLaunch或其他標籤管理系統(或DTM （已棄用）的使用者端程式庫。
 
    * **自訂AT.js**：瀏覽以上傳您的自訂AT.js。 留空將使用預設程式庫。
 
-      >[!NOTE]
-      >
-      >依預設，當您選擇加入Adobe Target設定精靈時，會啟用「準確定位」。
-      >
-      >準確定位意味著Cloud Service設定會等待內容載入後再載入內容。 因此，就效能而言，準確定位可能會在載入內容前造成幾毫秒的延遲。
-      >
-      >作者例項上一律會啟用「準確定位」。 不過，在發佈執行個體上，您可以清除雲端服務設定中「準確定位」旁的勾號(**http://localhost:4502/etc/cloudservices.html**)。 無論您在雲端服務設定中的設定為何，您仍可開啟和關閉個別元件的準確定位。
-      >
-      >如果您有 ***已經*** 已建立目標元件，而您變更此設定，您的變更不會影響這些元件。 您必須直接對這些元件進行任何變更。
+     >[!NOTE]
+     >
+     >依預設，當您選擇加入Adobe Target設定精靈時，會啟用「準確定位」。
+     >
+     >準確定位意味著Cloud Service設定會等待內容載入後再載入內容。 因此，就效能而言，準確定位可能會在載入內容前造成幾毫秒的延遲。
+     >
+     >作者例項上一律會啟用「準確定位」。 不過，在發佈執行個體上，您可以清除雲端服務設定中「準確定位」旁的勾號(**http://localhost:4502/etc/cloudservices.html**)。 無論您在雲端服務設定中的設定為何，您仍可開啟和關閉個別元件的準確定位。
+     >
+     >如果您有 ***已經*** 已建立目標元件，而您變更此設定，您的變更不會影響這些元件。 您必須直接對這些元件進行任何變更。
 
 1. 按一下 **連線至Adobe Target** 以初始化與Target的連線。 如果連線成功，則訊息會 **連線成功** 隨即顯示。 按一下 **確定** 在訊息上，然後 **確定** 在對話方塊上。
 
@@ -374,10 +371,11 @@ When you associate a page with the framework, the child pages inherit the associ
 * 如果體驗片段目前未用於活動中，AEM可讓使用者刪除片段而不顯示警告訊息。
 * 如果Target中的活動目前正在使用體驗片段，則會出現錯誤訊息，警告AEM使用者刪除片段可能會對活動造成的後果。
 
-   AEM中的錯誤訊息不會禁止使用者（強制）刪除體驗片段。 如果刪除體驗片段：
+  AEM中的錯誤訊息不會禁止使用者（強制）刪除體驗片段。 如果刪除體驗片段：
 
    * 具有AEM體驗片段的Target選件可能會顯示不良行為
 
       * 選件很可能仍會呈現，因為體驗片段HTML已推送至Target
       * 如果也在AEM中刪除了參照的資產，體驗片段中的任何參照都可能無法正常運作。
+
    * 當然，由於體驗片段在AEM中不再存在，因此無法對體驗片段進行任何進一步修改。

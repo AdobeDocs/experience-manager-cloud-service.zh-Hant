@@ -2,9 +2,9 @@
 title: 將工作流程套用至頁面
 description: 編寫時，您可以叫用工作流程以在頁面上採取行動；也可以套用多個工作流程。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '661'
 ht-degree: 15%
 
 ---
@@ -31,7 +31,6 @@ ht-degree: 15%
 >
 >* 如何將工作流程套用至DAM資產。
 >* [使用專案工作流程](/help/sites-cloud/authoring/projects/workflows.md).
-
 
 <!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
@@ -104,6 +103,7 @@ ht-degree: 15%
    * **封裝標題**
 
       * 您可以指定封裝的標題，以協助識別。
+
    >[!NOTE]
    >
    >當為「 **** 多資源支援」配置了工作流且已選擇多個資源時，「保留工作流包」選項可用。
@@ -122,14 +122,14 @@ ht-degree: 15%
 
    * 檢視其他動作的現有資源：
 
-      * **包含子項** 以指定該資源的子項將包含在工作流程中。
+      * **包含子項** 以指定將該資源的子項包含在工作流程中。
 將會開啟一個對話方塊，讓您根據以下條件調整選取範圍：
 
          * 僅包含直接子項.
          * 僅包含修改過的頁面.
          * 僅包含已發佈的頁面.
 
-         任何指定的子項都會新增至將套用工作流程的資源清單中。
+        任何指定的子項都會新增至將套用工作流程的資源清單中。
 
       * **移除選取專案** 以從工作流程中移除該資源。
 

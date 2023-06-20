@@ -4,9 +4,9 @@ description: Experience Cloud設定自動化透過簡單的UI精靈介面，提�
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: f91885a7d15c0ff927c6e10f65852f787cf26eb3
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Experience Cloud設定自動化透過簡單的UI精靈介面，提供簡單且�
 
 ## 要求
 
-自動化設定旨在透過以下方式建立的AEM網站，立即運作： [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 使用 [Adobe使用者端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 已啟用。 您可以使用產生已自動啟用這些功能的新網站 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 或透過使用建立網站 [網站範本](/help/journey-sites/quick-site/create-site.md).
+自動化設定旨在透過以下方式建立的AEM網站，立即運作： [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 使用 [Adobe使用者端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 已啟用。 您可以使用產生已自動啟用這些功能的新網站 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 或透過使用建立網站 [網站範本](/help/journey-sites/quick-site/create-site.md).
 
 ## 必備條件 {#prerequisites}
 
@@ -50,7 +50,7 @@ Experience Cloud設定自動化透過簡單的UI精靈介面，提供簡單且�
 1. 點選 **整合Analytics** 按鈕。
 1. 在產生的對話方塊中，提供 **報表套裝ID**.
 
-   此字串將用來建立新的 [報表套裝ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) 在Adobe Analytics中作為所選AEM網站分析資料的資料存放區。 提供的字串將會附加環境和層級識別碼以確保唯一性。
+   此字串用於建立新的 [報表套裝ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) 在Adobe Analytics中作為所選AEM網站分析資料的資料存放區。 提供的字串會附加環境和層級識別碼以確保唯一性。
 
 1. 重新整理頁面和面板，然後點選 **檢查整合狀態** 以檢查自動化狀態。
 

@@ -2,9 +2,9 @@
 title: 製作環境和工具
 description: AEM的製作環境提供各種機制來組織和編輯您的內容
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2153'
 ht-degree: 12%
 
 ---
@@ -270,7 +270,7 @@ Sites **** Console可讓您使用標題列、工具列、動作圖示 (適用於
 * [時間扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp)  — 可讓您檢視特定時間點的頁面狀態。
 * [即時副本狀態](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status)  — 可讓您快速概覽即時副本狀態以及不會繼承哪些元件。
 * [開發人員模式](/help/implementing/developing/tools/developer-mode.md)
-* [預覽](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)  — 用於檢視將在發佈環境中顯示的頁面；或使用內容中的連結導覽。
+* [預覽](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)  — 用於檢視發佈環境中顯示的頁面；或使用內容中的連結導覽。
 * [註釋](/help/sites-cloud/authoring/fundamentals/annotations.md)  — 用於在頁面上新增或檢視註解。
 
 您可以使用右上角的圖示來存取這些專案。 實際圖示會變更，以反映您目前使用的模式：

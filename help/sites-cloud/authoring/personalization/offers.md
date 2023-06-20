@@ -2,7 +2,7 @@
 title: 建立和管理選件 (選件主控台)
 description: 使用「選件」主控台來建立您可在活動體驗中使用的選件
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 1%
@@ -64,7 +64,7 @@ A **轉換為體驗片段變數** 選項和工作流程已實作，以幫助您�
 
    ![將舊版優惠方案轉換為體驗片段](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 
-1. 將會顯示對話方塊。 您可以在此處選取所需的 **動作**：
+1. 隨即顯示對話方塊。 您可以在此處選取所需的 **動作**：
 
    * 建立新的體驗片段
    * 新增內容至現有的體驗片段

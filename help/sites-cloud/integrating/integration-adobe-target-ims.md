@@ -2,9 +2,9 @@
 title: 與 Adobe Target 整合時使用的 IMS 設定
 description: 瞭解與Adobe Target整合時使用的IMS設定
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '856'
 ht-degree: 5%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 5%
 
    >[!CAUTION]
    >
-   >保持此設定開啟，以下情況下將再次需要它： [完成AEM中的IMS設定](#completing-the-ims-configuration-in-aem).
+   >將此設定保持開啟，以下情況需要再次使用： [完成AEM中的IMS設定](#completing-the-ims-configuration-in-aem).
 
    ![下載憑證](assets/integrate-target-ims-02.png)
 
@@ -69,11 +69,11 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. 將會顯示您擁有的任何專案。 選取 **建立新專案**  — 位置和使用將取決於：
+1. 系統會顯示您擁有的任何專案。 選取 **建立新專案**  — 位置和使用將取決於：
 
-   * 如果您還沒有任何專案， **建立新專案** 將會是底部中心。
+   * 如果您還沒有任何專案， **建立新專案** 是中下。
      ![建立新專案 — 第一個專案](assets/integration-target-ims-02.png)
-   * 如果您已有專案，這些專案將會列示於 **建立新專案** 將位於右上方。
+   * 如果您已有現有的專案，則會列出這些專案和 **建立新專案** 右上方。
      ![建立新專案 — 多個專案](assets/integration-target-ims-03.png)
 
 
@@ -108,10 +108,10 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
 
    ![選取產品設定檔並儲存設定的API](assets/integration-target-ims-16.png)
 
-1. 將會確認建立。
+1. 已確認建立。
 
 <!--
-1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
+1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
    ![](assets/integrate-target-ims-07.png)
 -->
@@ -169,7 +169,7 @@ Adobe Developer Console專案（整合）與AEM將使用的Adobe Target，然後
 
 1. 使用&#x200B;**建立**&#x200B;確認。
 
-1. 您的Adobe Target設定將顯示在AEM主控台中。
+1. 您的Adobe Target設定會顯示在AEM主控台中。
 
    ![IMS設定](assets/integrate-target-ims-11.png)
 
@@ -265,7 +265,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Select **OK** on the message, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that will be sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
+1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that are sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
 
 ### Tenant ID and Client Code {#tenant-client}
 
@@ -281,7 +281,7 @@ In both cases, be aware that:
 
 * By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
 * You have the option to change the default Tenant ID set.
-* Accordingly, the backend calls to Target will be based on the **Tenant ID** and the client side calls to Target will be based on the **Client Code**.
+* Accordingly, the backend calls to Target are based on the **Tenant ID** and the client side calls to Target are based on the **Client Code**.
 
 As stated previously, the default case is the most common for AEM as a Cloud Service. Either way, make sure **both** fields contain the correct information depending on your requirements.
 
