@@ -193,7 +193,7 @@ AzCopy會在後續執行時自動略過在錯誤發生前複製的任何Blob，�
 
 #### 針對檔案資料存放區 {#file-data-store-extract}
 
-為來源檔案dataStore執行AzCopy時，您應該會在記錄中看到類似這些的訊息，指出正在處理資料夾：
+當針對來源檔案dataStore執行AzCopy時，您應該會在記錄中看到類似這些的訊息，指出正在處理資料夾：
 `c.a.g.s.m.c.a.AzCopyFileSourceBlobPreCopy - [AzCopy pre-copy] Processing folder (1/24) crx-quickstart/repository/datastore/5d`
 
 ### 5.使用AzCopy擷取 {#ingesting-azcopy}
