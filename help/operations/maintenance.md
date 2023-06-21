@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '1105'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 10%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
 >title="維護任務"
->abstract="維護任務是按排程執行以最佳化存放庫的程式。 使用 AEM as a Cloud Service，客戶設定維護任務的操作屬性的需求會降至最低。客戶可以將他們的資源集中在應用程式層級的問題上，將基礎結構的操作交由 Adobe 進行。"
+>abstract="維護任務是依據排程執行以將存放庫最佳化的程序。使用 AEM as a Cloud Service，客戶設定維護任務的操作屬性的需求會降至最低。客戶可以將他們的資源集中在應用程式層級的問題上，將基礎結構的操作交由 Adobe 進行。"
 
-維護任務是按排程執行以最佳化存放庫的程式。 使用 AEM as a Cloud Service，客戶設定維護任務的操作屬性的需求會降至最低。客戶可以將他們的資源集中在應用程式層級的問題上，將基礎結構的操作交由 Adobe 進行。
+維護任務是依據排程執行以將存放庫最佳化的程序。使用 AEM as a Cloud Service，客戶設定維護任務的操作屬性的需求會降至最低。客戶可以將他們的資源集中在應用程式層級的問題上，將基礎結構的操作交由 Adobe 進行。
 
 ## 設定維護任務 {#maintenance-tasks-configuring}
 
