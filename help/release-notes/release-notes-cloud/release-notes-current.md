@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 目前發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
+source-git-commit: ca4046a94301cebae9e7a46e055977419fedd14e
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 62%
@@ -41,7 +41,7 @@ ht-degree: 62%
 * 將 AEM as a Cloud Service 中的內容片段匯出到 Adobe Target 作為 JSON 選件。
 * 支援 GraphQL 分頁和排序，以及內部快取增強功能，現在可協助提升分離的用戶端應用程式在使用複雜 GraphQL 查詢和篩選器從 AEM 擷取大型內容集時的工作效能。
 
-### [!DNL Experience Manager Sites] 預先發佈的新功能 {#prerelease-sites}
+### [!DNL Experience Manager Sites] 發行前版本的新功能 {#prerelease-sites}
 
 * 內容片段及其參考資料現在可以發佈到 [AEM 預覽服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant#access-preview-service) (使用[內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hant))，讓使用者在上線前可在分離的預覽應用程式上先預覽最終體驗。
 
