@@ -2,9 +2,9 @@
 title: 如何在AEM Workflow步驟中新增變數？
 description: 瞭解如何建立變數、設定變數的值，以及將其用於 [!DNL AEM Forms] 工作流程步驟。
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 若要建立變數：
 
-1. 在AEM執行個體上，導覽至工具 ![](assets/hammer-icon.svg) >工作流程>模型。
+1. 在AEM執行個體上，導覽至工具 ![槌子圖示](assets/hammer-icon.svg) >工作流程>模型。
 1. 點選 **[!UICONTROL 建立]** 和指定工作流程模型的標題和選用名稱。 選取模型並點選 **[!UICONTROL 編輯]**.
 1. 點選工作流程模型Sidekick中可用的變數圖示，然後點選 **[!UICONTROL 新增變數]**.
 

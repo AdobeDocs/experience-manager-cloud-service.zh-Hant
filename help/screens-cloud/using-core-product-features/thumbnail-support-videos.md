@@ -3,9 +3,9 @@ title: Screensas a Cloud Service提供影片的縮圖支援
 description: 本頁面說明如何在Screensas a Cloud Service新增影片的縮圖支援。
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '503'
 ht-degree: 1%
 
 ---
@@ -42,19 +42,19 @@ ht-degree: 1%
 
 1. 選取管道並按一下 **編輯** 以開啟編輯器。
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![開啟編輯器](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
 1. 新增或編輯現有的視訊元件，如下圖所示。
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![編輯元件](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
 1. 選取視訊並按一下 *扳手* 圖示以開啟視訊屬性。
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![按一下扳手](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
 1. 此 **視訊** 對話方塊開啟，您將在其中檢視 **縮圖** 拖放區域。
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![檢視縮圖](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
 1. 將影像從資產選擇器拖放至 **縮圖** 拖放區域並按一下 **完成**.
 

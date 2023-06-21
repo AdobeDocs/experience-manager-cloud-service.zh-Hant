@@ -2,9 +2,9 @@
 title: 以as a Cloud Service方式在Screens中發佈頻道
 description: 本頁面說明如何以Screensas a Cloud Service發佈管道。
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '308'
 ht-degree: 1%
 
 ---
@@ -31,20 +31,20 @@ ht-degree: 1%
 
 1. 從專案導覽並選取頻道，例如 **第一數位體驗** —> **頻道** —> **LoopingChannelOne**.
 
-   ![](/help/screens-cloud/assets/create-content/managepub-1.png)
+   ![選擇頻道](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. 按一下 **管理發布** 動作列中的。
 
 1. 選取 **動作** 作為 **發佈** 和 **排程** 作為 **現在** 從 **管理出版物精靈** 並按一下 **下一個**.
 
-   ![](/help/screens-cloud/assets/create-content/managepub-2.png)
+   ![選取發佈動作](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
    >按一下 **包含子項** 從動作列中，取消勾選所有選項以發佈專案中的所有模組，然後按一下「新增」以發佈。 預設會勾選所有方塊，您必須手動取消勾選方塊才能發佈專案中的所有模組。
 
 1. 從選取管道後 **管理發布** 精靈，按一下 **發佈** 以發佈頻道。
 
-   ![](/help/screens-cloud/assets/create-content/managepub-3.png)
+   ![發佈頻道](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## 下一步 {#whats-next}

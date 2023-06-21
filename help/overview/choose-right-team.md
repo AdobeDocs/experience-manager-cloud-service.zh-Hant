@@ -2,9 +2,9 @@
 title: 合適的人，合適的角色
 description: 合適的人，合適的角色
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '829'
 ht-degree: 97%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 97%
 
 <br>
 
-![](assets/team_involvement.png)
+![檢閱實作的角色](assets/team_involvement.png)
 
 **與您的實作團隊一起審查此清單**，並確保每個角色中都有相關資格的人員擔任。團隊成若不熟悉 Adobe Experience Cloud 可以使用 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 學習資源來透過 [Adobe 數位學習](https://learning.adobe.com/certification.html)取得認證。
 

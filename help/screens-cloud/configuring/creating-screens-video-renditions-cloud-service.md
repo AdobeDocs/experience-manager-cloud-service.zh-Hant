@@ -2,9 +2,9 @@
 title: 在Screens中建立視訊轉譯as a Cloud Service
 description: 本頁面說明如何在Screensas a Cloud Service中建立視訊轉譯。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 1. 從左側導覽列按一下工具區段，然後按一下 **資產** 然後按一下 **處理設定檔**.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![按一下處理設定檔](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. 按一下 **建立** 以建立新的處理設定檔。
 
-   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+   ![按一下建立](/help/screens-cloud/assets/configure/screens-video-2.png)
 
 1. 輸入 **名稱**，例如 **ScreensProcessingProfile**.
 
@@ -57,11 +57,11 @@ ht-degree: 0%
 
 1. 選取處理設定檔，然後按一下 **將設定檔套用至資料夾**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
+   ![將設定檔套用至資料夾](/help/screens-cloud/assets/configure/screens-video-5.png)
 
 1. 選取保留Screens影片的資料夾，然後按一下 **套用**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+   ![按一下套用](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
    >* 您可以建立多個處理設定檔，並將其套用至對應的資料夾，以便這些資料夾中的影片取得特定的影片轉譯。
