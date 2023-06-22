@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維護版本發行說明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
+source-git-commit: 46f0f8ba51b328bef1061d574b0d378a510fcf38
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 37%
+source-wordcount: '382'
+ht-degree: 31%
 
 ---
 
@@ -17,17 +17,11 @@ ht-degree: 37%
 
 以下摘要說明2023年6月13日公開發佈的維護版本資12255的持續改善。 此維護版是先前 12142 維護版的更新。
 
-此維護版本的功能啟用將為您提供完整的功能集。如需完整詳情，請參閱[最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+此維護版本的功能啟用將為您提供功能啟用2023.6.0的完整功能集。請參閱 [Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) 以取得詳細資訊。
 
 ### 增強功能 {#enhancements-12255}
 
 無。
-
-### 已知問題 {#known-issues-12255}
-
-- ASSETS-25729 — 檢視切換器功能表被切斷
-- ASSETS-25728 — 重新處理資產選項在搜尋檢視中無法使用
-- ASSETS-22603 — 某些下載型別的資產報表欄在UI中顯示「null」值。 可下載的CSV不受影響。
 
 ### 已修正的問題 {#fixed-issues-12255}
 
@@ -49,6 +43,12 @@ ht-degree: 37%
 - ASSETS-23981 — 標題排序功能在集合連結中無法運作
 - ASSETS-24723 — 已發佈的資產再次重新處理，使用者無需干預
 - GRANITE-45385 — 移轉樹狀結構啟動以使用Sling工作而非工作流程
+
+### 已知問題 {#known-issues-12255}
+
+- ASSETS-25729 — 檢視切換器功能表被切斷
+- ASSETS-25728 — 重新處理資產選項在搜尋檢視中無法使用
+- ASSETS-22603 — 某些下載型別的資產報表欄在UI中顯示「null」值。 可下載的CSV不受影響。
 
 ### 內嵌技術 {#embedded-tech-12255}
 
