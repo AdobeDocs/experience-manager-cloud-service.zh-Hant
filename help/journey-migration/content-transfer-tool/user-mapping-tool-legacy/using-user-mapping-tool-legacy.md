@@ -4,10 +4,10 @@ description: 使用使用者對應工具（舊版）
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -21,18 +21,18 @@ ht-degree: 3%
 
 ## 設定使用者對應工具 {#setting-up-user-mapping}
 
-**先決條件：** 使用者對應要求對應到其IMS ID的每個使用者在其AEM和IMS中的設定檔中都有一個電子郵件地址。  請注意，即使使用者使用電子郵件地址作為使用者ID登入，除非該電子郵件地址也位於設定檔以及IMS中，否則對應無法用於該使用者。
+**先決條件：** 使用者對應要求對應到其IMS ID的每個使用者在其AEM和IMS中的設定檔中都有一個電子郵件地址。 即使使用者使用電子郵件地址作為使用者ID登入，除非該電子郵件地址也位於設定檔以及IMS中，否則對應對該使用者無效。
 
 請依照下列步驟進行設定：
 
-1. 導覽至 [Adobe Developer主控台](https://console.adobe.io) 使用您的Adobe ID。
-1. 建立新專案或開啟現有專案。
+1. 導覽至 [Adobe Developer主控台](https://developer.adobe.com/console/) 使用您的Adobe ID。
+1. 建立專案或開啟現有專案。
 1. 新增API — 按一下 **新增至專案** 並選取 **API**
-1. 選擇使用者管理API。  您必須擁有系統管理員許可權才能使用此選項。
+1. 選擇使用者管理API。 您必須擁有系統管理員許可權才能使用此選項。
 1. 建立JWT認證。
-1. 產生金鑰組，或上傳公開金鑰（rsa沒有用）。  有一個按鈕， **產生公開/私密金鑰組**，會為您執行此操作。  請務必儲存公開金鑰和私密金鑰。
+1. 產生金鑰組，或上傳公開金鑰（rsa沒有用）。 有一個按鈕， **產生公開/私密金鑰組** 會為您建立此金鑰組。 請務必儲存公開金鑰和私密金鑰。
 1. 導覽至「使用者管理API」。
-1. 將您的私密金鑰內容貼入文字方塊並按一下，產生存取權杖（或持有人權杖） **產生Token**.
+1. 將私密金鑰內容貼入文字方塊並按一下，產生存取權杖（或持有人權杖） **產生Token**.
 1. 儲存所有這些資訊，例如 **使用者端ID**， **使用者端密碼**， **技術帳戶ID**， **技術帳戶電子郵件**， **組織ID**、和 **存取Token** 安全。
 
 ## 存取使用者對映工具的使用者介面 {#user-interface}
@@ -50,7 +50,7 @@ ht-degree: 3%
 1. 按一下 **建立使用者對應設定**.
 
    >[!NOTE]
-   >如果您略過此步驟，在擷取階段將會略過使用者和群組對應。
+   >如果您略過此步驟，在擷取階段會略過使用者和群組對應。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access5.png)
 
@@ -62,14 +62,14 @@ ht-degree: 3%
    * **組織ID**：輸入要移轉使用者之組織的AdobeIdentity Management System (IMS)組織ID。
 
      >[!NOTE]
-     >若要取得組織ID，請登入 [Admin Console](https://adminconsole.adobe.com/) 和選擇您的組織（在右上角區域），如果您屬於多個組織。 組織ID會位於該頁面的URL中，格式如下 `xx@AdobeOrg`，其中xx為IMS組織ID。  或者，您也可以在以下位置找到組織ID： [Adobe Developer主控台](https://console.adobe.io) 產生存取Token的頁面。
+     >若要取得組織ID，請登入 [Admin Console](https://adminconsole.adobe.com/) 如果您隸屬於多個組織，請選擇您的組織（位於右上角區域）。 組織ID位於該頁面的URL中，格式如下 `xx@AdobeOrg`，其中xx為IMS組織ID。 或者，您也可以在以下位置找到組織ID： [Adobe Developer主控台](https://developer.adobe.com/console/) 產生存取Token的頁面。
 
    * **使用者端ID**：輸入您在設定步驟中儲存的使用者端ID。
 
    * **存取Token**：輸入您從設定步驟儲存的存取Token。
 
      >[!NOTE]
-     >存取Token每24小時過期一次，且需要建立新的Token。 若要建立新Token，請返回 [Adobe Developer主控台](https://console.adobe.io)，選擇您的專案，按一下 **使用者管理API**，並將相同的私密金鑰貼入方塊。
+     >存取Token每24小時過期一次，且必須建立新的Token。 若要建立Token，請返回 [Adobe Developer主控台](https://developer.adobe.com/console/)，選擇您的專案，按一下 **使用者管理API**，並將相同的私密金鑰貼入方塊。
 
 1. 填入欄位後，按一下 **測試設定** 測試與使用者管理API服務的連線。 如果連線成功，您可以按一下 **儲存** 以儲存設定。
 
@@ -79,7 +79,7 @@ ht-degree: 3%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
-1. 按一下 **開始** 從對話方塊開始「使用者對應」程式。
+1. 按一下 **開始** 從對話方塊中，以啟動「使用者對應」程式。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
@@ -93,22 +93,23 @@ ht-degree: 3%
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >* 使用者對應完成後，您可以使用階層連結導覽回「內容移轉」頁面。 「使用者對應」卡片會顯示狀態和時間戳記。 按一下 **內容轉移** 建立移轉集以執行擷取。 請參閱 [執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) 以取得更多詳細資料。
+   >
+   >* 使用者對應完成後，您可以使用階層連結導覽回「內容移轉」頁面。 「使用者對應」卡片會顯示狀態和時間戳記。 按一下 **內容轉移** 以便建立移轉集來執行擷取。 另請參閱 [執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) 以取得更多詳細資料。
 
 ### 繼續使用者對應程式 {#resume-user-mapping-process}
 
 如果「使用者對應」程式由於下列任何原因而停止：
 
-* 選取的使用者 **停止使用者對應**
-* 存取Token在程式期間過期，或
-* 一些其他原因
+* 選項 **停止使用者對應** 已由使用者選取。
+* 該存取Token在程式期間過期。
+* 或是其他原因。
 
   >[!NOTE]
   >進度會從程式停止的位置儲存。
 
 請依照下列步驟繼續使用者對應程式：
 
-1. 按一下 **檢視記錄** 檢閱使用者對應記錄以檢查儲存的進度。
+1. 按一下 **檢視記錄** 檢閱使用者對應記錄，以便檢視儲存的進度。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
 
@@ -119,7 +120,7 @@ ht-degree: 3%
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
 
-1. 按一下 **開始** 從對話方塊中繼續使用者對應程式。
+1. 按一下 **開始** 以繼續使用者對映程式。
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 

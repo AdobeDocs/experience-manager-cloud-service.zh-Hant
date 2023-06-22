@@ -2,10 +2,10 @@
 title: 內容片段 — 設定瀏覽器（資產 — 內容片段）
 description: 瞭解如何在設定瀏覽器中啟用內容片段功能。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 21%
+source-wordcount: '358'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 21%
 
 ## 為您的執行個體啟用內容片段功能 {#enable-content-fragment-functionality-instance}
 
-在使用內容片段之前，您需要使用 **設定瀏覽器** 若要啟用：
+在使用內容片段之前，您必須使用 **設定瀏覽器** 若要啟用：
 
 * **內容片段模型**  — 必要
 * **GraphQL持續查詢**  — 選擇性
@@ -24,34 +24,34 @@ ht-degree: 21%
 >
 >如果您未啟用 **內容片段模型**：
 >
->* 此 **建立** 選項將不可用於建立新模型。
->* 您將無法 [選取Sites設定以建立相關的端點](/help/headless/graphql-api/graphql-endpoint.md).
+>* 此 **建立** 選項無法用於建立模型。
+>* 您無法 [選取Sites設定以建立相關的端點](/help/headless/graphql-api/graphql-endpoint.md).
 
-若要啟用內容片段功能，您需要：
+若要啟用內容片段功能，您必須執行下列動作：
 
 * 透過設定瀏覽器啟用內容片段功能
 * 將設定套用至您的資產資料夾
 
 ### 在設定瀏覽器中啟用內容片段功能 {#enable-content-fragment-functionality-in-configuration-browser}
 
-至 [使用特定內容片段功能](#creating-a-content-fragment-model) 您 **必須** 首先透過 **設定瀏覽器**：
+若要使用特定 [內容片段功能](#creating-a-content-fragment-model)，您 **必須** 首先透過 **設定瀏覽器**：
 
 >[!NOTE]
 >
->如需詳細資訊，另請參閱 [設定瀏覽器：](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>如需詳細資訊，請參閱 [設定瀏覽器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
->[子設定](/help/implementing/developing/introduction/configurations.md#configuration-resolution) （巢狀內嵌於其他設定的設定）完全支援與內容片段、內容片段模型和GraphQL查詢搭配使用。
+>[子組態](/help/implementing/developing/introduction/configurations.md#configuration-resolution) （巢狀內嵌於其他設定的設定）完全支援與內容片段、內容片段模型和GraphQL查詢搭配使用。
 >
 >請注意：
 >
 >
 >* 在子組態中建立模型後，無法將模型移動或複製到另一個子組態。
 >
->* GraphQL端點將（仍然）以父（根）設定為基礎。
+>* GraphQL端點（仍然）以父（根）設定為基礎。
 >
->* 將（仍）儲存與父（根）設定相關的持續查詢。
+>* 與父（根）設定相關的持續查詢（依然）已儲存。
 
 
 1. 導覽至「 **工具**」、「 **一般**」，然後開啟「 **設定瀏覽器**」。
@@ -76,6 +76,6 @@ ht-degree: 21%
 
 設定時 **全域** 已啟用內容片段功能，然後套用至任何資產資料夾。
 
-若要搭配可比的「資產」檔案夾使用其他設定 (例如排除全域)，您必須定義連線。若要這麼做，請在適當資 **料夾的「資料夾屬性** 」的「雲端服務 **」標籤** 中選取適當的「設定 **** 」。
+若要搭配可比的「資產」資料夾使用其他設定（即不包括全域），您必須定義連線。 此連線可透過選取適當的 **設定** 在 **Cloud Services** 的標籤 **資料夾屬性** 適當資料夾的URL。
 
 ![套用設定](assets/cfm-conf-02.png)
