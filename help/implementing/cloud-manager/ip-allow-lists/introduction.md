@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 18%
+ht-degree: 44%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 18%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
->title="管理IP允許清單"
->abstract="AEM as a cloud service可透過網際網路存取，並透過使用者驗證和授權受到保護。 Cloud Manager的IP允許清單可用於限制和控制對受信任IP地址的訪問。 具有適當許可權的Cloud Manager使用者可以建立受信任IP地址的允許清單，其網站的使用者可以從這些地址存取其AEM網域。"
+>title="管理 IP 允許清單"
+>abstract="AEM as a Cloud Service 可透過網際網路存取，並透過使用者身份驗證和授權得到保護。Cloud Manager 的 IP 允許清單可用於限制和控制對受信任 IP 地址的存取。具有適當權限的 Cloud Manager 使用者可以就受信任的 IP 位址建立允許清單，其網站的使用者可以從這些位址存取其 AEM 網域。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html" text="新增 IP 允許清單"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists.html" text="檢視和更新 IP 允許清單"
 
