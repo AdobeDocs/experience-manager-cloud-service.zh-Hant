@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 9%
+source-wordcount: '631'
+ht-degree: 6%
 
 ---
 
@@ -19,15 +19,27 @@ ht-degree: 9%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文 |
 
-Experience Manager支援3D資產的上傳、傳送和互動式預覽，這是製作程式的一部分。
+Experience Manager Assets支援3D資產的擷取、管理、預覽和傳送。
 
-您可從Experience Manager的資產詳細資訊頁面使用互動式3D檢視器。 這個檢視器還包含一系列互動式相機控制項，可用來環繞、縮放和平移 3D 資產。
+您可以使用自動產生的縮圖轉譯或互動式3D檢視器來預覽3D資產。 您可從Experience Manager的資產詳細資訊頁面使用互動式3D檢視器。 檢視器包含一系列互動式相機控制項，可供您旋轉、縮放和平移3D場景。
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## 支援的Experience Manager3D預覽格式{#supported-3d-previewing-assets}
+## 支援的Experience Manager縮圖預覽格式{#supported-thumbnail-previewing-assets}
 
-Experience Manager中的互動式3D預覽支援下列檔案格式：
+Experience Manager預設會產生下列檔案格式的縮圖：
+
+| 3D副檔名 | 檔案格式 | MIME型別 | 附註 |
+|---|---|---|---|
+| GLB | 二進位GL傳輸 | model/gltf-binary |  |
+| FBX | Autodesk FBX | application/octet-stream |  |
+| 物件 | WaveFront 3D物件檔案 | application/x-tgif |  |
+| 3DS | 3D Studio模型 | application/x-3ds |  |
+| USDz | 通用場景說明 | model/vnd.usdz+zip |  |
+
+## 支援的Experience Manager互動式3D預覽格式{#supported-3d-previewing-assets}
+
+Experience Manager本身支援下列檔案格式的Interactive 3D預覽：
 
 | 3D副檔名 | 檔案格式 | MIME型別 | 附註 |
 |---|---|---|---|
@@ -35,8 +47,7 @@ Experience Manager中的互動式3D預覽支援下列檔案格式：
 | GLTF | 總帳傳輸格式 | model/gltf+json | 請參閱 **注意** 下方的。 |
 | 物件 | WaveFront 3D物件檔案 | application/x-tgif |  |
 | STL | 立體光刻 | application/vnd.ms-pki.stl |  |
-| DN | Adobe Dimension | model/x-adobe-dn | 僅支援內嵌；無法預覽。 |
-| USDZ | Universal Scene說明Zip封存 | model/vnd.usdz+zip | 僅支援內嵌；無法預覽。 |
+
 
 >[!NOTE]
 >
@@ -80,7 +91,7 @@ Experience Manager中的互動式3D預覽支援下列檔案格式：
    | **平移相機** | 向左、向右、向上或向下平移檢視。 | 按一下滑鼠右鍵+拖曳。 | 兩指按下+拖曳。 |
    | **縮放相機** | 移入和移出3D場景區域。 | 滾輪。 | 兩指捏合。 |
    | **重新將相機置中** | 將相機重新置中至3D場景中物件上的一點。 | 按兩下。 | 點兩下。 |
-   | **重設** | 在頁面的右下角附近，選取「重設」圖示，將檢視目標點恢復到3D資產的中心。 重設也會將相機移到更近或更遠的位置，以完整的方式顯示資產，並維持合理的檢視大小。 |  |  |
-   | **全熒幕模式** | 若要進入全熒幕模式，請在頁面的右下角，選取「全熒幕」圖示。 |  |  |
+   | **重設** | 在頁面的右下角附近，選取「重設」圖示，將檢視目標點恢復到3D資產的中心。 重設也會將相機移到更近或更遠的位置，以完整的方式顯示資產，並維持合理的檢視大小。 |   |   |
+   | **全熒幕模式** | 若要進入全熒幕模式，請在頁面的右下角，選取「全熒幕」圖示。 |   |   |
 
 1. 完成後，在頁面的右上角附近，選取 **[!UICONTROL 關閉]**.

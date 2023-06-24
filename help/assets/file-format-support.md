@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1032'
 ht-degree: 9%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 9%
 * 金鑰 [Adobe檔案格式](#adobe-formats) 由Adobe應用程式和服務所產生，包括 [!DNL Adobe Photoshop]， [!DNL Adobe InDesign]， [!DNL Adobe Illustrator]， [!DNL Adobe XD]， [!DNL Adobe Dimension]、和 [!DNL Adobe Acrobat] 或PDF。
 * 金鑰 [影像檔案格式](#image-formats).
 * [Camera Raw檔案格式](#camera-raw-formats) 適用於多種相機，包括Canon、Nikon、Fujifilm、Olympus和其他製造商(由Adobe Camera Raw提供)。
-* 通用 [檔案格式](#document-formats)，包括Microsoft Office和Open Document格式。
+* 通用 [檔案格式](#document-formats)，包括Microsoft® Office和Open Document格式。
 * 各種視訊 [和音訊](#video-formats)[格式.](#audio-formats)
 
 下列圖例說明每種格式的支援等級。
@@ -41,6 +41,7 @@ ht-degree: 9%
 | AI | ✓ | - | ✓ | ✓ |
 | 拼貼 | - | - | ✓ | - |
 | DN | ✓ | - | ✓ | ✓ |
+| SBSAR | ✓ | - | ✓ | ✓ |
 | 構思 | - | - | ✓ | - |
 | INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
@@ -63,7 +64,7 @@ ht-degree: 9%
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | RGB | ✓ | ✓ | ✓ | ✓ |
 | RGBA | ✓ | ✓ | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
+| SGI™ | ✓ | ✓ | ✓ | ✓ |
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 | WebP | ✓ | ✓ | ✓ | ✓ |
@@ -77,13 +78,16 @@ ht-degree: 9%
 | 格式 | 儲存空間 | 版本設定 | 工作流程 | 發佈 | 存取控制 | 縮圖預覽 | 3D預覽 | Dynamic Media傳遞 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| 物件 | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| 物件 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| FBX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| 3DS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 
-## [!DNL Camera RAW] 格式 {#camera-raw-formats}
+## [!DNL Camera Raw] 格式 {#camera-raw-formats}
 
 | 檔案格式 | 產生縮圖 | 中繼資料擷取 | 寬度/高度 |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -181,20 +185,20 @@ ht-degree: 9%
 * Windows Media Video (WMV)/ASF (.wmv、.asf)
 * AVI （未壓縮8位元/10位元） (.avi)
 * MP4 (.mp4， .m4a， .m4v)
-* Microsoft數位視訊錄製(DVR-MS) (.dvr-ms)
+* Microsoft®數位視訊錄製(DVR-MS) (.dvr-ms)
 * Matroska/WebM (.mkv)
 * WAVE/WAV (.wav)
 * QuickTime (.mov)
 
 ## 提示和限制 {#limitations-and-tips}
 
-* 目前，中繼資料擷取的檔案大小限制約為15 GB。 上傳超大型資產時，有時中繼資料擷取作業會失敗。
+* 目前，中繼資料擷取的檔案大小限制約為15 GB。 上傳大型資產時，有時中繼資料擷取作業會失敗。
 
 ## Dynamic Media — 支援的輸入視訊格式可轉碼 {#video-dynamic-media-transcoding}
 
 | 視訊副檔名 | 容器 | 建議的視訊轉碼器 | 不支援的視訊轉碼器 |
 | --- | --- | --- | --- |
-| AVI | A/V交錯 | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft Video 1 (MS-CRAM) |
+| AVI | A/V交錯 | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft®Video 1 (MS-CRAM) |
 | FLV、F4V | AdobeFlash | H264/AVC、Flix VP6、H263、Sorenson | SWF（向量動畫檔案） |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
@@ -202,9 +206,9 @@ ht-degree: 9%
 | MP4 | MPEG-4 | H264/AVC （所有設定檔） | − |
 | MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | − |
 | MXF‡案 | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | − |
-| OGV， OGG | Ogg | Theora， VP3， Dirac | − |
+| OGV， OGG | OGG | Theora， VP3， Dirac | − |
 | WebM | WebM | Google VP8 | − |
-| WMV | Windows Media 9 | WMV3 (v9)、WMV2 (v8)、WMV1 (v7)、GoToMeeting (G2M2、G2M3、G2M4) | Microsoft畫面(MSS2)、Microsoft像片故事(WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9)、WMV2 (v8)、WMV1 (v7)、GoToMeeting (G2M2、G2M3、G2M4) | Microsoft®畫面(MSS2)、Microsoft®像片故事(WVP2) |
 
 ‡目前尚不支援將此視訊格式用於Dynamic Media中的互動式視訊，或用於Experience Manager Assets中的註解。
 
@@ -253,9 +257,9 @@ ht-degree: 9%
 | 3D副檔名 | 檔案格式 | MIME型別 | 附註 |
 |---|---|---|---|
 | GLB | 二進位GL傳輸 | model/gltf-binary | 將材質和紋理納入為單一資產。 |
-| 物件 | WaveFront 3D物件檔案 | application/x-tgif |  |
-| STL | 立體光刻 | application/vnd.ms-pki.stl |  |
-| USDZ | Universal Scene說明Zip封存 | model/vnd.usdz+zip | *僅支援內嵌；不提供檢視或互動。* USDZ是專屬的3D格式，可由Safari或iOS以原生方式檢視。 |
+| 物件 | WaveFront 3D物件檔案 | application/x-tgif | |
+| STL | 立體光刻 | application/vnd.ms-pki.stl | |
+| USDZ | Universal Scene說明Zip封存 | model/vnd.usdz+zip | *支援擷取和縮圖產生；尚不支援3D預覽。* USDZ是3D格式，可由Safari或iOS以原生方式檢視。 |
 
 **另請參閱**
 
@@ -275,4 +279,3 @@ ht-degree: 9%
 >
 >* [使用資產微服務進行資產處理](asset-microservices-overview.md)
 >* [文字型資產的智慧型標籤支援的檔案格式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
-
